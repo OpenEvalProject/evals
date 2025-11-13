@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Section on Sensory Cell Development and Function, National Institute on Deafness and Other Communication Disorders, National Institutes of Health Bethesda United States
-2. https://ror.org/00za53h95 Department of Biology, Johns Hopkins University Baltimore United States
+1. Section on Sensory Cell Development and Function, National Institute on Deafness and Other Communication Disorders, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Department of Biology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -23,6 +23,18 @@ Sensory hair cells are a highly active cell type present in the inner ear of all
 
 To convert sensory stimuli into neuronal signals, hair cells rely on two critical, metabolically demanding processes: mechanosensation and synaptic transmission (McPherson, 2018). At the apical end of hair cells, mechanosensory bundles detect sensory stimuli (Figure 1). Deflection of the mechanosensory bundle opens nonspecific cation channels known as mechanoelectrical transducer (MET) channels which allows potassium and calcium into the cell. MET channel function requires a calcium gradient in the mechanosensory bundle; maintenance of this gradient requires the plasma-membrane calcium-ATPase (PMCA) and is thought to pose a large energy demand (Dumont and Gillespie, 2000). MET channel-dependent cationic influx depolarizes the cell and triggers synaptic transmission at the base of the hair cell. Depolarization leads to the opening of basal, voltage-gated Cav1.3 calcium channels at the hair-cell presynapse (Brandt et al., 2003). This calcium influx is detected by the calcium sensor Otoferlin (Roux et al., 2006). Otoferlin is required to couple calcium influx with exocytosis and ultimately mediate the release of glutamate-containing vesicles onto the afferent neurons (Figure 1D). Although the metabolic demands of mechanosensation have been implicated in increased susceptibility to ototoxic insults (Pickett et al., 2018), the contribution of neurotransmission to this process is unclear.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon drawing of 5 dpf zebrafish larva with the posterior lateral line (LL) highlighted. The LL is made up of clusters of hair cell clusters called neuromasts (green dots). Neuromasts are innervated by neurons that project from the posterior LL ganglion (pLLg). (B–C) Side view (B) and top-down view (C) of neuromast from Tg[myo6b:memGCaMP6s]idc1 fish where the hair-cell membrane is labeled. White dotted line demarcates a single hair cell in each image. (D-D’) Cartoon schematic of a side view of a hair cell. At the apex is the mechanosensory hair bundle. The primary pathway of entry of neomycin, gentamicin, and FM 4–64 is through mechanotransduction channels in the mechanosensory hair bundle. At the base of the hair cell is the ribbon synapse. The presynapse or ribbon (magenta) is surrounded by synaptic vesicles (SV, white circles). When mechanotransduction channels are activated, an influx of cations including calcium enters the hair bundle. Hair bundle activation leads to opening of Cav1.3 voltage-gated calcium channels (blue) and presynaptic calcium influx. The calcium sensor Otoferlin (orange) facilitates fusion by coupling calcium influx with the exocytosis of SVs and the release of glutamate onto the innervating postsynaptic afferent terminal (gray). (E-E’) The spatial patterns of the evoked calcium influx (GCaMP6s ΔF, indicated via the heatmaps) into sibling hair bundles (E’) compared to prestimulus (C). (F-F’) Average traces (F) and dot plots show that the average magnitude of apical (F’) ΔF/F GCaMP6s signals in mechanosensory hair bundles is not different in cav1.3a-/- and otofb-/- mutants compared to siblings. (G-G’) The spatial patterns of the evoked calcium influx (GCaMP6s ΔF, indicated via the heatmaps) at wildtype presynapses (G’) compared to prestimulus (G). (H-H’) Average traces (H) and dot plots show that the average magnitude of presynaptic (H’) ΔF/F GCaMP6s signals is absent in cav1.3a-/- but unaltered in otofb-/- mutants compared to siblings. (I-I’) The spatial patterns of evoked exocytosis (SypHy ΔF, indicated via the heatmaps) at sibling presynapses (I’) compared to prestimulus (I). (J-J’) Averaged traces (J) and dot plots show that presynaptic (J’) ΔF/F SypHy signals are absent in cav1.3a-/- and in otofb-/- mutants. The fluid-jet stimulus depicted as a gray box in F, H, and J. Each point in the dot plots represents one neuromast. All measurements were performed in mature neuromasts at 5–6 dpf on 3 animals and 9 neuromasts per genotype. Error bars: SEM. A one-way AVOVA with a Dunnett’s correction for multiple tests was used in F’ and J’, and a Kruskal-Wallis test with a Dunn’s correction for multiple tests was used in H’. ** p<0.01, **** p<0.0001. Scale bar = 5 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Hair cells in neuromasts of wildtype (A), otofa-/- (B), otofb-/- (C), and otofa-/-/otofb-/- mutants (D) immunostained for Otoferlin. Loss of Otofb is sufficient to eliminate Otoferlin in lateral line neuromasts (C). (E) Average dot plots of spontaneous afferent spikes per minute recorded from posterior lateral line ganglion cell bodies in cav1.3a-/- (blue) and otofb-/- (orange) mutants or siblings (black) show that spontaneous afferent activity in both mutants is essentially absent. (F) Representative example traces of 60 second loose-patch recordings of spontaneous afferent spiking activity in sibling, cav1.3a-/- and otofb-/- mutants. Each point in the dot plot in E represents a recording from one afferent neuron. A minimum of 6 animals at 5–6 dpf were examined per group. Error bars: SEM. A Kruskal-Wallis test with a Dunn’s correction for multiple comparisons was used in E. ** p<0.01, *** p<0.001. Scale bar = 5 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Resting memGCaMP6s intensity in apical hair bundles trends higher in cav1.3a-/- mutants but is similar to controls in otofb-/- mutants. (B–D) In response to a 500 ms stimulus, the slope (B) and duration (C) of the GCaMP6s response are not different compared to sibling controls. When fitted with an exponential decay, on average, the half-life of the signal to reach baseline after the 500 ms stimulus is faster in cav1.3a-/- mutants but similar to controls in otofb-/- mutants (D). (E–H) In response to a 200 ms stimulus, the average magnitude of apical ΔF/F GCaMP6s signals in mechanosensory hair bundles is not different in cav1.3a-/- and otofb-/- mutants compared to siblings (E). The slope (F) and duration (G) of the GCaMP6s response are also no different compared to sibling controls. When fitted with an exponential decay, on average, the half-life of the signal to reach baseline after the 200 ms stimulus is faster in cav1.3a-/- mutants but similar to controls in otofb-/- mutants (D). (I) Resting memGCaMP6s intensity at the base or presynaptic region is lower in cav1.3a-/- mutants but similar to controls in otofb-/- mutants. (J–L) In response to a 500 ms stimulus, the slope (J), duration (L) and the half-life of the decay (L) are unchanged in otofb-/- mutants compared to controls. No caV1.3a mutant data is included in J-L due to lack of presynaptic responses. For GCaMP6s measurements 3 animals and 9 neuromasts were examined per genotype. A Kruskal-Wallis test with a Dunn’s correction for multiple comparisons was used in A, C, E, and G. A one-way ANOVA with a Dunnett’s correction for multiple comparisons was used in B, D, F, H-I. An unpaired t-test was used in J-K. A Mann-Whitney test was used in L. * p<0.05, ***p<0.001.
+
 In hair cells, studies have shown that both MET channel function and presynaptic calcium influx promote mitochondrial-calcium uptake (Pickett et al., 2018; Wong et al., 2019). This link is relevant to metabolism as mitochondrial-calcium uptake can stimulate mitochondrial respiration and ATP production (Tarasov et al., 2012). Thus, mitochondrial-calcium uptake may serve to promote the ATP production required to maintain both MET channel function and neurotransmission. Furthermore, work in neurons has shown that the recycling and recruitment of vesicle components consumes a significant portion of the ATP needed to sustain neurotransmission (Pulido and Ryan, 2021). Therefore, it is possible that vesicle endo- and exo-cytosis may pose similarly high energy demands in hair cells. These energy demanding processes and the resulting ROS byproducts produced by activity-driven ATP synthesis could ultimately prove to be cytotoxic.
 
 To study the energy demands and metabolic impact of hair-cell neurotransmission we examined hair cells in the lateral line of larval zebrafish (Figure 1A–C). Zebrafish allow us to study hair cells that are genetically, functionally, and morphologically similar to mammalian hair cells in vivo (Sheets et al., 2021). For example, in both zebrafish and mammals, Cav1.3 calcium channels and Otoferlin are essential for proper hair-cell function (Figure 1D–D’; Brandt et al., 2003; Chatterjee et al., 2015; Roux et al., 2006; Sidi et al., 2004). Furthermore, because zebrafish are transparent, hair cells can be easily visualized using dyes or genetically encoded indicators (GEIs) to study cellular health and integrity. GEIs can also be used for measurements of evoked activity including: mechanosensitive-, presynaptic-, or mitochondrial-calcium signals as well as exocytosis (Lukasz and Kindt, 2018). In addition to these tools and advantages, a large body of work has reinforced the utility of the larval zebrafish model to study hair-cell stressors, including ototoxic aminoglycosides (reviewed in: Coffin et al., 2010).
@@ -31,7 +43,7 @@ In this study we find that, in hair cells, chronic neurotransmission is associat
 
 ## Results
 
-## Cav1.3a and otofb mutations impair overlapping aspects of hair-cell neurotransmission
+### Cav1.3a and otofb mutations impair overlapping aspects of hair-cell neurotransmission
 
 In sensory hair cells, the opening of presynaptic Cav1.3 channels enables calcium influx that initiates neurotransmission (Figure 1D–D’). This process is aided by the calcium sensor Otoferlin which couples calcium influx with vesicle exocytosis. Our work uses zebrafish models lacking functional CaV1.3 channels or Otoferlin to understand how neurotransmission impacts the hair cell’s ability to respond to cellular stressors. Prior to examining cellular stressors in this system, we first thoroughly characterized how the lack of CaV1.3 channels or Otoferlin impacts neurotransmission in lateral-line hair cells.
 
@@ -45,11 +57,23 @@ We next measured evoked exocytosis at the hair-cell presynapse in caV1.3a and ot
 
 Together our comprehensive functional assessment of caV1.3a and otofb mutants revealed that both mutants have relatively normal mechanosensitive function. In lateral-line hair cells Cav1.3 channels are required for both presynaptic calcium influx and exocytosis while Otoferlin is only required for exocytosis. Importantly, caV1.3a and otofb mutants impair overlapping aspects of hair-cell neurotransmission and are useful models to explore the relationship between neurotransmission and metabolic stress.
 
-## Chronic loss of neurotransmission protects hair cells against the ototoxin neomycin
+### Chronic loss of neurotransmission protects hair cells against the ototoxin neomycin
 
 In neurons, the energy demands of neurotransmission can lead to a buildup of cytotoxic metabolic byproducts and render cells more susceptible to insults (Singh et al., 2019). Our functional results demonstrate that loss of CaV1.3a or Otofb function impairs overlapping aspects of neurotransmission in hair cells. How these particular aspects of neurotransmission impact hair-cell health and response to stressors is not known. Hair cells are acutely susceptible to many stressors, including ototoxins such as aminoglycoside antibiotics (Bitner-Glindzicz and Rahman, 2007; Coffin et al., 2010). We used caV1.3a or otofb mutants to explore how neurotransmission impacts the susceptibility of hair cells to a known stressor, the aminoglycoside antibiotic neomycin.
 
 For our study, we challenged CaV1.3a and Otofb-deficient hair cells in larvae with functional lateral-line systems (at 5 or 6 days post fertilization (dpf)) with varying concentrations of neomycin: 75, 100, and 200 µM. Prior to neomycin treatment, we immobilized larvae and used a fluorescent reporter line (GCaMP6s) to quantify the total number of hair cells in each neuromast (Figure 2A). We then incubated larvae with neomycin for 30 min. After this incubation, we washed off the neomycin and used the styryl dye FM 4–64 to label and help identify surviving cells (Figure 2A’–C). Using both our fluorescent reporter and FM 4–64 label to reliably identify surviving hair cells per neuromast, we found that overall, in both cav1.3a and otofb mutants, hair-cell survival was augmented relative to sibling controls (Figure 2A–E). At all concentrations tested, the mean % hair-cell survival for cav1.3a and otofb mutants was significantly higher compared to sibling controls. These results indicate that the neurotransmission defects in cav1.3a and otofb mutants impart resistance to neomycin.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig2-v2.jpg)
+
+**Figure 2.:** (A-A’) Hair cells in siblings before (A) and after a 30-min treatment with 75 µM neomycin (A’). GCaMP6s outlines hair cells. The presence of FM 4–64 in hair cells reveals surviving cells (A’). (B-C’) After a 30-min treatment with 75 µM neomycin GCaMP6s and FM 4–64 more surviving hair cells are found in cav1.3a-/- (B), and otofb-/- (C) mutants. (D–E) A higher percentage of CaV1.3- and Otof-deficient hair cells survive a 30 min treatment with three different neomycin concentrations (75, 100, and 200 µM) compared to sibling controls. For quantification in D-E, neuromasts were examined at 5 or 6 dpf immediately after washout of neomycin solution and application of FM 4–64. (F) Percentage of hair cells per neuromast surviving is not altered when hair cells in wildtype larvae are co-incubated with 0.1% DMSO (control), 10 µM isradipine, or 2.5 µM Dynole 34–2 during the 30-min 100 µM neomycin treatment. (G–H) When wildtype hair cells are incubated with 10 µM isradipine or 2.5 µM Dynole 34–2 for 24 hr (G, 4 to 5 dpf) or for 48 hr (H, 3 to 5 dpf) prior to neomycin treatment significantly more hair cells survive compared to DMSO controls. Each point in the dot plots in D-H represents one neuromast. A minimum of five animals were examined per treatment group. Error bars: SEM. For comparisons, a two-way ANOVA with a Sidak’s correction for multiple comparisons was used in D-E. A one-way AVOVA with a Dunnett’s correction for multiple comparisons was used in F, G and H. * p<0.05, ** p<0.01, *** p<0.001. Scale bar = 5 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Average dot plots of evoked MET (A–B) and presynaptic (C–D) calcium influx (GCaMP6s ΔF/F) in wildtype neuromasts before and after a 10-min mock treatment in 0.1% DMSO (A) or a 10-min incubation in 2.5 µM Dynole 34–2 (B). These data show that Dynole 34–2 treatment does not affect calcium influx. (E–F) Average dot plots of spontaneous afferent spikes/min before (solid circles) and after (empty circles) a 10-min mock treatment in 0.1% DMSO (E) or a 10 min incubation in 2.5 µM Dynole 34–2 (F). These plots show that Dynole 34–2 significantly reduces afferent spiking activity in spikes/min. Each point in the dot plots represents one neuromast (A–D) or one afferent neuron (E–F). A minimum of four animals and eight neuromasts were examined in A-D at 5 dpf. Twelve animals were examined in C-D at 5–6 dpf. Error bars: SEM. For comparisons, a paired t-test (A–E) or a Wilcoxon test (F) were used. ** p<0.01.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Outline of gentamicin treatment protocol. Mutants and siblings are treated with 200 µM gentamicin solution for 2 hr followed by three washes in embryo medium then allowed to recover for 24 hr. At 6 dpf, neuromasts are imaged and analyzed to obtain cell counts both in treated and untreated mutants and siblings. (B–C) Hair cells in a representative untreated wildtype neuromast (B) and gentamicin-treated wildtype (D), cav1.3a-/- (E), and otofb-/- (F) neuromasts at 6 dpf. Cells are stained with FM 4–64 to aid in cell counting and assessing cell maturity. GCaMP6s outlines hair cells. (C) Average dot plots of % of cells present in gentamicin-treated neuromasts normalized to the number of cells present in untreated neuromasts in cav1.3a-/- mutants (blue) and siblings (black) as well as otofb-/- mutants (orange) and siblings (grey) show that more cells survive in mutants than in siblings. Each dot in C represents one neuromast. A minimum of five animals were examined per treatment group. Error bars = SEM. For comparisons, a Mann-Whitney test was used to compare cav1.3a-/- mutants and siblings, and an unpaired t-test was used to compare otofb-/- mutants and siblings in D. ** p<0.01, *** p<0.001. Scale bar = 5 µm.
 
 The resistance to neomycin observed in cav1.3a and otofb mutants occurred after a chronic loss of neurotransmission. Therefore, we investigated whether transient block of neurotransmission could also augment hair-cell survival. For this work we used a pharmacological approach. We first blocked CaV1.3 channels with the L-type calcium channel antagonist isradipine (Fitton and Benfield, 1990). Previous work has demonstrated that isradipine blocks presynaptic calcium influx without impairing mechanotransduction (Zhang et al., 2018). For this experiment we preincubated larvae in 10 µM isradipine for 10 min, followed by a 30 min co-incubation with neomycin. After acute isradipine treatment, we observed no change in survival with a mean % hair-cell survival comparable to DMSO-treated controls (Figure 2F, 5-6 dpf). After we observed no protection using an acute isradipine application, we decided to switch to longer incubations. Here, we applied 10 µM isradipine to larvae at 4 dpf for 24 hr or at 3 dpf for 48 hrs prior to 100 µM neomycin treatment at 5 dpf. In contrast to our acute isradipine application, both of the longer 24 and 48 hr isradipine incubations significantly augmented hair-cell survival after neomycin treatment (Figure 2G-H, 5 dpf). This indicates that a relatively long (~24 hr) block of presynaptic calcium influx can confer significant resistance to neomycin.
 
@@ -57,27 +81,43 @@ Similar to the genetic disruption in caV1.3a mutants, isradipine treatment block
 
 Taken together, analysis of our mutant models and our pharmacology experiments suggest that prolonged loss (~24 hr) of neurotransmission reduces neomycin susceptibility. Surprisingly, impairing the synaptic vesicle cycle even in the presence of normal calcium currents results in a level of neomycin resistance comparable to that observed in the absence of both calcium influx and exocytosis. This suggests that it is the synaptic vesicle cycle contributes to hair-cell neomycin susceptibility.
 
-## Chronic loss of Cav1.3a or Otofb protects hair cells against the ototoxin gentamicin
+### Chronic loss of Cav1.3a or Otofb protects hair cells against the ototoxin gentamicin
 
 Neomycin is just one of many cytotoxic stressors that can be acutely damaging to hair cells. Although they belong to the same family of antibiotics, neomycin and gentamicin induce hair-cell death along distinct time courses (Hailey et al., 2017; Owens et al., 2009). In hair cells, gentamicin-induced cell death occurs over a period of hours, whereas neomycin-induced cell death can begin within minutes. Based on these divergent timescales it has been proposed that these two antibiotics may also work through different cellular pathways to induce cell death. To understand if neurotransmission contributes more generally to ototoxin susceptibility, we tested whether hair cells in cav1.3a and otofb mutants are also less susceptible to the aminoglycoside antibiotic gentamicin.
 
 Previous studies have indicated that gentamicin-induced hair-cell loss may continue to occur even up to 24 hr post exposure (Owens et al., 2009). Due to this longer time course of gentamicin ototoxicity (and inability to keep the animals restrained for the entire duration), we used a different method to quantify hair-cell survival compared to our neomycin experiments. For our gentamicin experiments, we treated cav1.3a and otofb mutants and siblings with 200 µM gentamicin for 2 hr at 5 dpf. We then washed off the gentamicin, waited 24 hr, and assessed hair-cell survival at 6 dpf (Figure 2—figure supplement 2A). Before assessing cell survival at 6 dpf, we stained with FM 4–64 to identify surviving cells (Figure 2—figure supplement 2B, D-F). We then quantified the number of hair cells present in gentamicin-treated mutants and sibling controls. We also quantified the number of hair cells present in untreated mutants and sibling controls. We then normalized the number of cells present in treated animals to the number of cells present in untreated animals for each genotype to obtain the % of surviving hair cells. Using this approach, after gentamicin treatment, we found significantly more surviving cells in both cav1.3a and otofb mutants relative to controls (Figure 2—figure supplement 2B-F). Together, our neomycin and gentamicin assays indicate that neurotransmission may impact the susceptibility of hair cells to a diverse range of ototoxins.
 
-## Cav1.3a and otofb mutant hair cells have normal neomycin uptake and clearance
+### Cav1.3a and otofb mutant hair cells have normal neomycin uptake and clearance
 
 To exert their toxicity, aminoglycoside antibiotics such as neomycin and gentamicin enter hair cells primarily via mechanosensitive ion channels in hair bundles (Figure 1D; Alharazneh et al., 2011). Our functional assessment of caV1.3a and otofb mutants did not reveal any major defects in hair-cell mechanosensation (Figure 1E–F’). Regardless of this assessment, we wanted to ensure that the impaired neurotransmission in caV1.3a or otofb mutant hair cells did not impact neomycin or gentamicin uptake sufficiently to confer protection.
 
 Therefore, we examined neomycin uptake in CaV1.3a- or Otofb-deficient hair cells. To investigate neomycin uptake in hair cells, we conjugated neomycin to the fluorophore Texas Red (Neo-TR) as described previously (Stawicki et al., 2014). We examined the kinematics of neomycin uptake by collecting Z-stacks of hair cells every 60 s during a 10-min incubation in 25 µM Neo-TR. We quantified Neo-TR fluorescence at each time point. We observed no significant difference in the Neo-TR intensity between CaV1.3a- or Otofb-deficient hair cells and their respective sibling controls at the 10-min endpoint (Figure 3A–B). We also observed no significant difference between mutants and siblings at any timepoint during Neo-TR uptake (Figure 3C and E). These results indicate that lack of CaV1.3 channels or Otoferlin does not impair the ability of neomycin to enter hair cells.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig3-v2.jpg)
+
+**Figure 3.:** (A-A’) Example of hair cells in a wildtype neuromast after incubation in 25 µM neomycin-Texas Red solution (Neo-TR) for 10 min. GCaMP6s outlines hair cells in A. (B) Average dot plots of Neo-TR fluorescence intensity in neuromasts from cav1.3a-/- (blue) and otofb-/- (orange) mutants and siblings (black and grey, respectively) after a 10-min incubation in 25 µM Neo-TR. No differences in overall neomycin uptake are seen between mutants and siblings. (C–E) Average Neo-TR fluorescence intensity over the course of 10 min 25 µM exposure in cav1.3a-/- mutant neuromasts (blue) and siblings (black) (C) and otofb-/- mutant neuromasts (orange) and siblings (grey) (E). No differences are seen between mutants and siblings in the time course of neomycin uptake. (D–F) Average Neo-TR fluorescence intensity over the course of 30 min following Neo-TR washout in cav1.3a-/- mutant neuromasts (blue) and siblings (black) (D) and otofb-/- mutant neuromasts (orange) and siblings (grey) (F). No significant differences were detected in neomycin clearance or retention between mutants and siblings. Each point in B represents one neuromast. A minimum of 14 neuromasts are averaged for the plots in C-F. A minimum of five animals at 5 dpf were examined per treatment group. Error bars: SEM. For comparisons, unpaired t-tests were used in B, and a two-way ANOVA with a Sidak’s correction for multiple comparisons was used in C-F. Scale bar = 5 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Representative examples of hair cells in wildtype (A), cav1.3a mutant (B), and otofb mutant (C) during Neo-TR uptake and clearance. Shown at t=0 are neuromasts immediately following application of a 25 µM Neo-TR solution. These images are followed by images taken at 5 and 10 min after application. After 10 min, the Neo-TR solution was washed out, images were acquired from each neuromast (in embryo media) at 17.5, 25, and 40 min from the initial addition of Neo-TR solution. Scale bar = 5 µm.
+
 Although uptake of Neo-TR was unaffected in caV1.3a or otofb mutants, it is possible that defects in neurotransmission could offer protection via the augmented clearance of neomycin. Previous studies have found that neomycin preferentially accumulates within hair cells and is not rapidly cleared (Hailey et al., 2017; Steyger et al., 2003). We tested whether increased clearance of neomycin could account for a reduced susceptibility in our mutants. At the end of the 10-min Neo-TR uptake period, we washed out the Neo-TR. After washout, we collected Z-stacks every 90 s for 30 min to visualize Neo-TR clearance from hair cells. While we did observe a decrease in Neo-TR signal in both caV1.3a and otofb mutant hair cells, this decrease was not significantly different compared to sibling controls (Figure 3D and F). Similar Neo-TR clearance trajectories indicate that the protection in in caV1.3a or otofb mutants is not due to augmented neomycin clearance.
 
 After uptake into hair cells, Neo-TR rapidly forms puncta. Previous work in the lateral line has shown that these puncta co-label with the lysosomal markers LysoTracker green and GFP-Rab7 (Hailey et al., 2017). Loading of neomycin into these lysosomes is proposed to be a protective measure. Therefore, it is possible that caV1.3a or otofb mutants may show differences in lysosomal loading. Close examination of Neo-TR label during uptake did not reveal any striking differences in lysosomal loading. The presence of bright puncta, indicative of Neo-TR sequestration within lysosomes, is apparent in both caV1.3a and otofb mutants (Figure 3—figure supplement 1). The lack of gross differences in the observed pattern of formation of Neo-TR lysosomal puncta suggests that lack of CaV1.3 channels or Otoferlin does not offer protection through differential lysosomal loading. Taken together, our assays using Neo-TR indicate that the neomycin protection observed in CaV1.3- or Otofb-deficient hair cells is not due to altered Neo-TR uptake, clearance, or trafficking into lysosomes.
 
-## Hair cells that exhibit evoked neurotransmission are younger and more resistant to neomycin
+### Hair cells that exhibit evoked neurotransmission are younger and more resistant to neomycin
 
 Previous work by our group demonstrated while all hair cells in each lateral-line neuromast are mechanosensitive, only a subset of cells exhibit neurotransmission when depolarized by mechanical stimuli (Figure 1E–E’, G–G’1–I’; Zhang et al., 2018). Our current study indicates that a loss of neurotransmission may offer protection against hair-cell stressors such as neomycin. Therefore, we sought to investigate whether the presence or absence of neurotransmission within neuromasts of wildtype hair cells correlates with neomycin susceptibility.
 
 For these experiments, we first used functional calcium imaging to identify hair cells with (active) and without (inactive) evoked presynaptic calcium influx (Figure 4A–A’; stars indicate active cells exhibiting evoked neurotransmission). After identifying cells based on presynaptic function, we then applied 75 or 100 µM neomycin for 30 min. Surprisingly, after neomycin treatment, we observed that active hair cells exhibit significantly higher survival compared to inactive hair cells (example: Figure 4A–A’’’, quantification: Figure 4B). This indicates that within wildtype neuromasts, the presence of neurotransmission is associated with protection from neomycin.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig4-v2.jpg)
+
+**Figure 4.:** (A-A’) Hair cells from wildtype 5 dpf fish before and during a 2 s fluid-jet stimulus. The spatial patterns of the evoked calcium influx during stimulation (A’ GCaMP6s ΔF, indicated via the heatmaps) compared to prestimulus (A) reveal synaptically active cells (white stars). (A”-A’’’) Hair cells depicted in A and A’ after a 30-min treatment with 75 µM neomycin solution. Magenta star demarcates an active cell that did not survive neomycin treatment. (B) A higher percentage of active hair cells survive a 30-min treatment with two different neomycin concentrations (75 and 100 µM) compared to inactive cells. Neuromasts were examined at 5 dpf immediately after washout of neomycin solution and application of FM 4–64. (C) Outline of DAPI labeling protocol used to differentiate between older and younger cells within a given neuromast. DAPI is used to label mature hair cells at 3 dpf. At 5 dpf, the hair cells are assessed. (D-D’) Hair cells from wildtype 5 dpf fish before and during a 2 second fluid-jet stimulus. The spatial patterns of the evoked calcium influx during stimulation (D’ GCaMP6s ΔF, indicated via the heatmaps) compared to prestimulus (D) reveal synaptically active cells (white stars). (D’’-D’’’) Hair cells depicted in D and D’ showing DAPI-positive older and DAPI-negative younger cells. (E) DAPI-positive older cells make up a much greater percentage of the inactive cell population than the active cell population. A minimum of five animals were examined per experimental group at 5 dpf. Each dot in B and E represents one neuromast. Error bars: SEM. For comparisons, a two-way ANOVA with a Sidak’s correction for multiple comparisons was used in B. A Mann-Whitney test was used in E. **** p<0.0001. Scale bar = 5 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Overview of procedure to label hair cells and monitor development over time. (B) Example image of functionally mature hair cells in wildtype larvae labeled with DAPI at 3 dpf. (B’) The same neuromast in B reimaged 2 days later at 5 dpf. DAPI-positive cells at 5 dpf represent relatively older hair cells compared to DAPI-negative hair cells. (C) Kinocilial height measurements in DAPI-positive and DAPI-negative hair cells at 5 dpf. The height of the kinocilium in all DAPI-positive hair cells was above 20 µm. In contrast, there is a spread of kinocilial heights in DAPI-negative hair cells from 1 to 23.5 µm. (D) Overview of procedure to relate hair cell survival to age based on kinocilial height. Hair cells with a kinocilial height above 20 µm were classified as older and below 20 µm are relatively younger. (E) After treatment with 100 µM neomycin ~one third of hair cells survived per neuromast. (E’) Of the cells that survive in E, significantly more are older with a kinocilial height >20 µm. 8 neuromasts were examined in C and E-E’. Each dot in C represents one hair cell and each dot in E-E’ represents one neuromast. Error bars: SEM. For comparisons, a Mann-Whitney test was used in E’. * p<0.05. Scale bar in B’=5 µm.
 
 This observation presented an unexpected complexity in our current study. On one hand, we found that perturbations that result in chronic loss of neurotransmission in all hair cells confer protection from ototoxins. On the other hand, within wildtype hair cells, the presence of evoked neurotransmission correlates with protection from ototoxins compared to cells without evoked neurotransmission. Moving forward we explored what could explain this discrepancy. Numerous studies have shown that neuromasts rapidly acquire new cells over the course of development (2–4 dpf). By the time the lateral-line system becomes functional around 5 dpf, each neuromast contains cells of different ages. In addition, previous work has suggested that hair cells of different ages show differences in susceptibility to neomycin–namely that older hair cells are thought to exhibit higher susceptibility (Murakami et al., 2003; Pickett et al., 2018). Based on this evidence we directly tested whether surviving hair cells with evoked neurotransmission at 5 dpf were in fact younger.
 
@@ -85,13 +125,29 @@ To differentiate hair cells based on age, we used two approaches: DAPI labeling 
 
 Next, we investigated whether cells that exhibit evoked neurotransmission are more resistant to neomycin because they are relatively younger. For this work we labeled hair cells with DAPI at 3 dpf and then used functional calcium imaging at 5 dpf to identify hair cells with (active) and without (inactive) evoked presynaptic calcium influx. We found that significantly more inactive cells were older and DAPI-positive compared to active cells (Figure 4D–D’’’, Figure 4E; active: 22.5%, inactive 87.5% cells per neuromast DAPI-positive). Overall, our DAPI experiments revealed that within a given neuromast, active hair cells exhibiting evoked neurotransmission represent a younger population of hair cells compared to inactive hair cells. Furthermore, their relative youth helps to explain how hair cells with evoked neurotransmission are more resistant to neomycin despite our evidence that chronic loss of neurotransmission is protective against neomycin.
 
-## Cav1.3a and otofb mutants exhibit lower baseline mitochondrial oxidation
+### Cav1.3a and otofb mutants exhibit lower baseline mitochondrial oxidation
 
 The lack of neurotransmission we observed in older hair cells was intriguing (Figure 4C–E). It is also consistent with the hypothesis that over time, activity-driven ATP synthesis in hair cells can lead to the accumulation of reactive oxygen species (ROS) and induce cellular damage. If neurotransmission is a driver of these metabolic demands, synaptic silencing in older cells could be a way to prevent ROS accumulation and associated pathology. But whether neurotransmission correlates with an increase in ROS in hair cells is not known.
 
 To investigate the relationship between ROS accumulation and neurotransmission, we applied the ROS indicator dyes CellROX Orange and MitoSOX Red to caV1.3a or otofb mutant hair cells. CellROX Orange is a general indicator of cellular oxidation and ROS levels, while MitoSOX Red is an indicator used to specifically detect mitochondrial superoxide. We found significantly lower CellROX Orange baseline fluorescence in both caV1.3a and otofb mutant hair cells relative to controls (Figure 5A–D). Likewise, labeling using MitoSOX Red revealed significantly lower MitoSOX Red baseline fluorescence in caV1.3a and otofb mutant hair cells relative to controls (Figure 5E–H). Together our CellROX Orange and MitoSOX Red measurements suggest that the loss of neurotransmission in CaV1.3a or Otofb-deficient hair cells results in a lower baseline level of ROS accumulation and lower oxidative stress. ROS are known to impart damage to DNA, lipids, proteins, and many other molecules throughout the cell, rendering cells overall more susceptible to insults (Yang and Lian, 2020). Therefore, lower levels of baseline ROS could explain why caV1.3a and otofb mutant hair cells exhibit resistance to neomycin-induced cell death.
 
-## Cav1.3a and otofb mutants show relatively normal maturation and no hair-cell loss
+![Figure 5.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) Hair cells in a wildtype, cav1.3a-/- or otofb-/- neuromast (labeled with GCaMP6s) after 30-min incubation with 12.5 µM CellROX. (B) Average dots plots show that CellROX Orange fluorescence intensity is lower in cav1.3a-/- (blue) and otofb-/- (orange) mutants compared to wildtype siblings (black, gray). (E–G) Hair cells in a wildtype, cav1.3a-/- or otofb-/- neuromast (labeled with GCaMP6s) after a 15-min incubation with 5 µM MitoSOX. (H) Average dots plots show that MitoSOX Red fluorescence intensity is lower in cav1.3a-/- (blue) and otofb-/- (orange) mutants compared to wildtype siblings (black, gray). (I–K) Hair cells in a wildtype, cav1.3a-/- or otofb-/- neuromast (labeled with GCaMP6s) following a 30-min incubation with 10 nM TMRE. (L) Average dots plots show that the TMRE fluorescence intensity is reduced in both cav1.3a-/- (blue) and otofb-/- (orange) mutants compared to respective siblings (black, gray). Each dot in D, H, and L represents one neuromast. A minimum of 5 animals were examined at 6 dpf per treatment group. Error bars: SEM. For comparisons, an unpaired t-test was used. i in A-C are not hair cells but ionocytes labeled by CellROX. * p<0.05, ** p<0.01, *** p<0.001. Scale bar = 5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overview of procedure to label hair cells and monitor development and turnover overtime. (B, E) At both 3 and 5 dpf, caV1.3a-/- and otofb-/- mutants have the same number of hair cells per neuromast. A hair cell is defined as any hair cell with DAPI labeling. (C, F) Using the average height of the kinocilium (tallest part of the hair bundle) to assess the maturity of hair cells reveals no difference in caV1.3a-/- and otofb-/- mutants compared to controls. In mature neuromasts at 5 dpf, quantification reveals that the average height of the kinocilium in all hair cells, young hair cells and mature hair cells is not significantly different in caV1.3a-/- and otofb-/- mutants compared to controls. (D, G) After labeling mature hair cells with DAPI at 3 dpf, a high percentage of these DAPI + cells remain at 5 dpf in all genotypes. This indicates no significant loss of hair cells in caV1.3a-/- and otofb-/- mutants compared to controls. 8 neuromasts were examined per genotype in B-C and E-F. In D and G at least 11 neuromast were examined per genotype. Each dot in B, D, E, and G represents one neuromast. In C and F, each dot represents a single hair cell. Error bars: SEM. In D and G, a Mann-Whitney test was used, and in B-C and E-F a two-way ANOVA with a Sidak’s correction for multiple comparisons was used to compare differences.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A-A’) Hair cells from a wildtype neuromast expressing mitoGCaMP3 at 5 dpf before and during a 4 second fluid-jet stimulus. The heat map indicates spatial increases in mitochondrial calcium influx (mitoGCaMP3 ΔF) during stimulation (A’) compared to prestimulus (A). (B-B’) Average traces (B) and dot plot (B’) show that presynaptic mitoGCaMP3 signals are absent in cav1.3a-/- mutants. (C-C’) Average traces (C) and dot plot (C’) show that the average magnitude of presynaptic mitoGCaMP3 signals are not different in otofb-/- mutants compared to siblings. In B and C, the fluid-jet stimulus is depicted as a gray box. Each dot in B’ and C’ represents one hair cell. A minimum of 10 neuromasts and 5 animals were examined per treatment group. Error bars = SEM. For comparisons a Mann-Whitney test was used in B’ and C’. **** p<0.0001. Scale bar = 5 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A-A’) Hair cells in a wildtype neuromast after 5-min incubation with 1.5 µM of JC-1. JC-1 is a ratiometric indicator of mitochondrial membrane potential that shifts from green (A) to an aggregated red form (A’) in more active mitochondria. (B) Although the average dots plots show that JC-1 fluorescence intensity is lower in caV1.3a-/- (blue) and otofb-/- (orange) mutants compared to wildtype siblings (black), the reduction did not reach significance. Each dot represents one neuromast. A minimum of 18 neuromasts were examined at 6 dpf per group. Error bars: SEM. A one-way ANOVA with a Dunnett’s correction for multiple comparisons was used to compare between genotypes.
+
+### Cav1.3a and otofb mutants show relatively normal maturation and no hair-cell loss
 
 Our ROS measurements indicate that cav1.3a and otofb mutants are less susceptible to neomycin due to less accumulated ROS. Work in mice has shown that CaV1.3a-deficient auditory hair cells in mice retain immature characteristics (Brandt et al., 2003; Eckrich et al., 2019). Our results indicate that in the lateral line, younger hair cells are less susceptible to neomycin (Figure 4—figure supplement 1E’). In addition, mutations that impact hair-cell function in mice can not only impair development, but also lead to cell death (Schwander et al., 2009). In the lateral line, hair cells regenerate after cell death, and the death of many hair cells may result in higher rates of cell turnover (Harris et al., 2003). Therefore, it is possible that in the lateral line, CaV1.3a or Otofb-deficient hair cells may appear to accumulate less ROS because they are younger–either due to incomplete maturation or higher rates of turnover.
 
@@ -99,7 +155,7 @@ To examine whether CaV1.3a or Otofb-deficient hair cells have more turnover we f
 
 Lastly, we examined the developmental progression of hair cells in caV1.3a and otofb mutants at 5 dpf using the height of the tallest part of the hair bundle, the kinocilium, to assess maturation (Figure 5—figure supplement 1A; Kindt et al., 2012). We found that the average kinocilial height was not different between caV1.3a or otofb mutants compared to controls (Figure 5—figure supplement 1C,F). In addition, using the kinocilial height measurements, we split the cells into young and mature hair-cell populations (young <20 µm; mature ≥20 µm). After this split, we found that the average height of the kinocilium in young and mature hair cell populations was not different in caV1.3a or otofb mutants compared to controls (Figure 5—figure supplement 1C, F). Our measurements of hair-bundle height suggest that hair cells in caV1.3a and otofb mutants develop at a normal rate. Overall, our assessment revealed that CaV1.3a or Otofb-deficient hair cells mature at a relatively normal rate and show no evidence of increased cell death or turnover. These results support the conclusion that CaV1.3a or Otofb-deficient hair cells accumulate less ROS due to the loss of neurotransmission rather than due to cellular immaturity.
 
-## Reduced mitochondrial potential but not reduced mitochondrial-calcium uptake is associated with neomycin resistance in cav1.3a and otofb mutants
+### Reduced mitochondrial potential but not reduced mitochondrial-calcium uptake is associated with neomycin resistance in cav1.3a and otofb mutants
 
 In both neurons and hair cells, presynaptic calcium influx can drive calcium into mitochondria (Marland et al., 2016; Wong et al., 2019). Furthermore, in neurons, calcium influx into mitochondria has been shown to stimulate oxidative phosphorylation in mitochondria and contribute to metabolic stress (Brookes et al., 2004; Tarasov et al., 2012). Previous work has shown that when the lateral-line system matures (5 dpf), hair-cell stimulation drives calcium into mitochondria (Pickett et al., 2018; Wong et al., 2019). Therefore, we sought to investigate whether alterations in evoked mitochondrial calcium influx could explain why caV1.3a or otofb mutants are less susceptible to neomycin-induced cell death.
 
@@ -107,7 +163,7 @@ We measured evoked mitochondrial-calcium uptake using a mitochondria-localized G
 
 Although calcium influx into mitochondria can stimulate oxidative phosphorylation in mitochondria, it is just one factor that contributes to mitochondrial function. Therefore, we used TMRE and JC-1, vital dyes that have been used previously in neurons and hair cells to study mitochondrial membrane potential–this potential is the main driver of oxidative phosphorylation (Esterberg et al., 2016; Joshi and Bakowska, 2011). After labeling mature hair cells with TMRE at 6 dpf, we found a significant reduction in TMRE baseline fluorescence in both caV1.3a and otofb mutant hair cells relative to their respective sibling controls (Figure 5I–L). We also labeled mature hair cells using JC-1, a ratiometric indicator of mitochondrial membrane potential. Using this indicator, we also observed a reduction in baseline JC-1 ratio in caV1.3a and otofb mutant hair cells, although this reduction did not reach statistical significance (Figure 5—figure supplement 3A-B). Overall, our TMRE and JC-1 labeling indicates that mitochondrial membrane potential is potentially lower in hair cells with impaired neurotransmission. A lower mitochondrial potential could explain the reduced oxidative stress detected in both caV1.3a and otofb mutant hair cells.
 
-## Cav1.3a and otofb mutants exhibit reduced mitochondrial oxidation over time
+### Cav1.3a and otofb mutants exhibit reduced mitochondrial oxidation over time
 
 Our TMRE measurements reflect mitochondrial activity at a single moment in time (Figure 5I–L). In contrast our CellROX Orange and MitoSOX Red measurements likely reflect ROS that have accrued over time (Figure 5A–H). One drawback to using these single wavelength vital dyes (TMRE, CellROX and MitoSOX) is that they rely on comparable dye uptake between our mutants and controls. Although we observed normal Neo-TR entry into hair cells in our mutants, it is possible that vital dye entry is impaired. Therefore, we examined how mitochondrial activity relates to ROS production over time using a genetically encoded indicator of oxidative stress, MitoTimer. Using a stable transgenic line expressing MitoTimer ensures that the indicator is present at comparable levels in both mutants and controls. MitoTimer localizes to mitochondria and exhibits an oxidation-dependent shift in fluorescence signal from green to red. MitoTimer has previously been used in lateral-line hair cells to detect the accumulation of oxidative stress (Hernandez et al., 2013; Pickett et al., 2018). For example, Pickett et al. demonstrated that historically older hair cells exhibit a higher red to green fluorescence ratio and are more susceptible to neomycin-induced cell death.
 
@@ -115,11 +171,11 @@ We used MitoTimer to measure differences in mitochondrial oxidation with age in 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig6-v2.jpg)
 
-**Figure 6.:** ca and v1.3aotofb mutants.(A–C) Hair cells in wildtype (A), cav1.3a mutant (-/-B), and otofb mutant (-/-C) Tg[myosin6b:mitoTimer] neuromasts at 5 dpf. (w208D–E) Average dot plots of the ratio of red/green MitoTimer fluorescence intensity at 3, 5, and 6 dpf in cav1.3a mutant fish (blue) (-/-D) and otofb mutant fish (orange) (-/-E) and respective siblings (black, gray) show that mutants exhibit reduced mitochondrial oxidation over time. Each dot in D and E represents one neuromast. A minimum of 3 animals and 10 neuromasts were examined per treatment group. Error bars: SEM. For comparisons, a two-way ANOVA with a Sidak’s correction for multiple comparisons was used in D-E. * p<0.05, *** p<0.001, **** p<0.0001. Scale bar = 5 µm.Figure 6—source data 1.
+**Figure 6.:** (A–C) Hair cells in wildtype (A), cav1.3a-/- mutant (B), and otofb-/- mutant (C) Tg[myosin6b:mitoTimer]w208 neuromasts at 5 dpf. (D–E) Average dot plots of the ratio of red/green MitoTimer fluorescence intensity at 3, 5, and 6 dpf in cav1.3a-/- mutant fish (blue) (D) and otofb-/- mutant fish (orange) (E) and respective siblings (black, gray) show that mutants exhibit reduced mitochondrial oxidation over time. Each dot in D and E represents one neuromast. A minimum of 3 animals and 10 neuromasts were examined per treatment group. Error bars: SEM. For comparisons, a two-way ANOVA with a Sidak’s correction for multiple comparisons was used in D-E. * p<0.05, *** p<0.001, **** p<0.0001. Scale bar = 5 µm.
 
 Overall, examining mitochondrial oxidation in younger and older hair cells revealed additional insights into the relationship between neurotransmission and mitochondrial oxidation. Our MitoTimer measurements also show that in controls, hair cells accumulate significant mitochondrial oxidation as they mature and age. Importantly, hair cells in both cav1.3a and otofb mutants both exhibit and maintain a reduction in mitochondrial oxidation as they age. Less mitochondrial oxidation is in line with the lower mitochondrial membrane potential in cav1.3a and otofb mutants (Figure 5I–L). Therefore, a reduction in ROS production in cav1.3a and otofb mutant hair cells is what augments resistance to cellular stressors such as neomycin.
 
-## The synaptic vesicle cycle modulates hair-cell neomycin susceptibility
+### The synaptic vesicle cycle modulates hair-cell neomycin susceptibility
 
 Our results indicate that in mature hair cells, either genetic or pharmacological disruption of neurotransmission results in resistance to ototoxic aminoglycosides. Our manipulations target either CaV1.3-channel function (caV1.3a mutants or isradipine) or exo- and endo-cytosis (otofb mutants or Dynole 34–2). While these manipulations are specific for their respective targets, their functional outcomes overlap. For example, while disruption of exo- and endo-cytosis leaves presynaptic calcium influx intact, disruption of CaV1.3-channel function blocks not only presynaptic calcium influx but also downstream exocytosis. Therefore, it is possible that exo- and endo-cytosis rather than presynaptic calcium influx promotes susceptibility to ototoxins. Alternatively, it is possible that presynaptic calcium influx and exo- and endo-cytosis each independently promote ototoxin susceptibility.
 
@@ -127,13 +183,13 @@ To distinguish between these possibilities, we disrupted Cav1.3 channel function
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/77775/elife-77775-fig7-v2.jpg)
 
-**Figure 7.:** (A) Average dot plots show the percentage of cells surviving neomycin treatment per neuromast. A significantly higher percentage of cells survive in otofb mutants (orange) compared to siblings (black) when animals are treated with 0.1% DMSO for 24 hr from 4 to 5 dpf. No additional protection is observed in -/-otofb mutants (open orange) compared to siblings (open black) when animals are treated with 10 µM isradipine for 24 hr from 4 to 5 dpf prior to neomycin challenge. (-/-B) Cartoon schematic of a hair cell with black box around the ribbon (magenta) synapse. (C) Close up of synapse demarcated in (B). Both presynaptic calcium influx (blue) and otoferlin (orange) function consume ATP (red stars) and stimulate ROS (yellow box) production. Blocking calcium influx inhibits both processes and reduces ROS levels. Blocking the synaptic vesicle cycle alone reduces ROS levels to a similar extent as the calcium channel block. Each dot in A represents one neuromast. A minimum of three animals were examined per treatment group. Error bars: SEM. For comparisons, a two-way ANOVA with a Sidak’s correction for multiple comparisons was used in A. * p<0.05.Figure 7—source data 1.
+**Figure 7.:** (A) Average dot plots show the percentage of cells surviving neomycin treatment per neuromast. A significantly higher percentage of cells survive in otofb-/- mutants (orange) compared to siblings (black) when animals are treated with 0.1% DMSO for 24 hr from 4 to 5 dpf. No additional protection is observed in otofb-/- mutants (open orange) compared to siblings (open black) when animals are treated with 10 µM isradipine for 24 hr from 4 to 5 dpf prior to neomycin challenge. (B) Cartoon schematic of a hair cell with black box around the ribbon (magenta) synapse. (C) Close up of synapse demarcated in (B). Both presynaptic calcium influx (blue) and otoferlin (orange) function consume ATP (red stars) and stimulate ROS (yellow box) production. Blocking calcium influx inhibits both processes and reduces ROS levels. Blocking the synaptic vesicle cycle alone reduces ROS levels to a similar extent as the calcium channel block. Each dot in A represents one neuromast. A minimum of three animals were examined per treatment group. Error bars: SEM. For comparisons, a two-way ANOVA with a Sidak’s correction for multiple comparisons was used in A. * p<0.05.
 
 ## Discussion
 
 In our study we investigated whether the metabolic demands of neurotransmission contribute to the susceptibility of hair cells to ototoxic aminoglycosides. We targeted two critical components of hair-cell neurotransmission: presynaptic calcium influx and the synaptic vesicle cycle. Overall, we found that chronic but not transient disruption of neurotransmission can partially protect hair cells from aminoglycosides. Furthermore, our results show that, over time, neurotransmission leads to an accumulation of metabolic stress by modulating cell physiology at multiple levels: mitochondrial activity, levels of cytotoxic ROS byproducts, and oxidation within mitochondria (Figure 7B–C). In line with recent work in neurons, our work suggests that the synaptic vesicle cycle is a strong driver of mitochondrial metabolism and metabolic stress. The accumulation of metabolic stress ultimately renders hair cells more susceptible to cytotoxic insults such as aminoglycoside exposure (Figure 7C).
 
-## Neurotransmission and aminoglycoside uptake, clearance, and packaging
+### Neurotransmission and aminoglycoside uptake, clearance, and packaging
 
 A side effect of aminoglycoside treatment in humans is hair-cell loss that results in permanent hearing and balance impairment (Ariano et al., 2008; Bitner-Glindzicz and Rahman, 2007; Schacht et al., 2012). Since this side effect was first discovered, the susceptibility of hair cells to aminoglycosides has been a topic of intense investigation. Hair cells possess a unique pathway of entry for aminoglycosides, namely MET channels (Alharazneh et al., 2011). After initial entry through MET channels, aminoglycosides accumulate and remain confined inside hair cells where they can exert their pathological effects. Based on this premise, studies have established that blocking the MET channel is an effective method of protecting hair cells from aminoglycoside-induced cell death (Alharazneh et al., 2011; Kenyon et al., 2021). However, in our study we found that neurotransmission-deficient hair cells are protected despite largely normal MET channel function as well as normal levels of neomycin accumulation and rates of neomycin entry (Figures 1 and 3). Furthermore, our data indicates that the protective effects of blocking neurotransmission are not a result of augmented neomycin clearance (Figure 3). Thus, we show that the pathology underlying aminoglycoside exposure extends beyond the kinetics of uptake, accumulation, and clearance.
 
@@ -141,7 +197,7 @@ Consistent with the idea that events downstream of drug entry and accumulation u
 
 Lysosomal packaging is of particular interest because it may explain why neomycin and gentamicin, despite belonging to the same family of antibiotics, exert their effects on very different timescales (Owens et al., 2009). For example, in the lateral-line system, gentamicin treatment takes several hours to kill hair cells, as opposed to minutes in the case of neomycin (Coffin et al., 2013). It has been shown that, compared to neomycin, gentamicin is much more rapidly packaged into lysosomes following its entry into hair cells (Hailey et al., 2017). This rapid packaging is thought to be one reason gentamicin takes longer than neomycin to exert its pathological effects. In addition, studies have shown that these two aminoglycosides may initiate hair-cell death via different pathways (Coffin et al., 2013). In our study we find that chronic loss of neurotransmission results in protection from both neomycin and gentamicin (Figure 2A–E, Figure 2—figure supplement 2A-F), despite different time-courses of pathology, lysosomal packaging and cell-death pathways. This suggests that blocking neurotransmission provides a general form of otoprotection and may broadly protect against differently behaving ototoxic compounds or insults.
 
-## Neurotransmission and cellular metabolism
+### Neurotransmission and cellular metabolism
 
 How could neurotransmission broadly impact susceptibility to a range of ototoxic insults? In order for hair cells to hold up in the face of external insults, in general, it is critical for them to maintain cellular homeostasis. In particular, maintaining metabolic homeostasis is thought to be critical to surviving ototoxin exposure (Chen et al., 2015). ROS are byproducts of cellular metabolism and are normally present in low concentrations in all cell types. In hair cells, excess ROS buildup can lead to mitochondrial oxidation and trigger cell-death pathways – especially when hair cells are challenged with an ototoxin (Huang et al., 2000). Our results indicate that the energy demands of neurotransmission promote cellular metabolism, which leads to a buildup of ROS and more oxidized mitochondria (Figures 5—7). Importantly we show that blocking neurotransmission can lessen metabolic side effects related to these energy demands and protect hair cells from ototoxins.
 
@@ -149,7 +205,7 @@ Like in hair cells, neurotransmission in neurons has also been shown to be energ
 
 In addition to presynaptic calcium channel activity, work in neurons has demonstrated that the synaptic vesicle cycle relies heavily on ATP produced by the mitochondria (Pulido and Ryan, 2021; Rangaraju et al., 2014). Similarly, our work in hair cells also reveals that the metabolic requirements for synaptic vesicle exocytosis – a process downstream of CaV1.3 channel function – may underlie susceptibility to ototoxins (Figure 7). We found that hair cells with intact CaV1.3 channel function but impaired synaptic vesicle exocytosis (Otofb deficient- and Dynole 34–2 treated-hair cells) were protected from aminoglycosides (Figure 2 and Figure 2—figure supplement 2). In addition, hair cells with impaired exocytosis also show a reduction in mitochondrial activity (Figure 5), oxidation (Figure 6) and ROS levels (Figure 5). Furthermore, blocking CaV1.3 channel function in hair cells with impaired exocytosis did not confer any additional protection from neomycin (Figure 7A). Together these results indicate that in hair cells, the majority of the ATP required for neurotransmission is used by the synaptic vesicle cycle. In fact, work in neurons has shown that the synaptic vesicle cycle is an underappreciated consumer of ATP (Pulido and Ryan, 2021; Rangaraju et al., 2014). Within the synaptic vesicle cycle, work in neurons has shown that it is the compensatory endocytosis and synaptic vesicle replenishment following exocytosis that requires significant amounts of ATP. Mechanistically, these ATP demands may arise at least in part from vacuolar-type ATPases (V-ATPases) which reside in synaptic vesicles (Pulido and Ryan, 2021). V-ATPases consume ATP in order to help fill vesicles with neurotransmitters such as glutamate and therefore represent a large metabolic burden. Whether the metabolic demands of V-ATPase function are responsible for the metabolic burden and cellular stress associated with hair-cell neurotransmission is not known and awaits future work. Our work in hair cells and complementary work in neurons indicate that the synaptic vesicle cycle represents a source of metabolic stress that can impact cellular health. It is important to understand the specific mechanisms that generate this stress as they represent important targets for therapies to prevent metabolic stress-associated pathologies.
 
-## Long-term consequences of neurotransmission
+### Long-term consequences of neurotransmission
 
 Many studies on aminoglycoside ototoxicity point to mitochondrial involvement as they are thought to be a target of aminoglycosides (reviewed in: Foster and Tekin, 2016). Our study highlights how hair-cell neurotransmission impacts mitochondria – promoting cellular metabolism, leading to a buildup of ROS and more oxidized mitochondria (Figures 5 and 6). Under these conditions, when hair cells are challenged with aminoglycosides, mitochondrial pathology linked to neurotransmission and the targeting of aminoglycosides to the mitochondria synergize to initiate hair-cell death.
 
@@ -161,21 +217,304 @@ Overall, our study shows that proper management of metabolic stress including RO
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tübingen</td>
+      <td>ZIRC</td>
+      <td>http://zfin.org/ZDB-GENO-990623-3</td>
+      <td>See methods, animals</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myo6b:GCaMP6s-CAAX)idc1;GCaMP6CAAX;</td>
+      <td>Jiang et al., 2017</td>
+      <td>https://zfin.org/ZDB-ALT-170113-3</td>
+      <td>Membrane-localized calcium biosensor</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myo6b:mitoGCaMP3)w119Tg; MitoGCaMP3;</td>
+      <td>Esterberg et al., 2014</td>
+      <td>https://zfin.org/ZDB-ALT-141008-1</td>
+      <td>Mitochondria-localized calcium biosensor</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myo6b:mitoTimer)w208Tg; MitoTimer</td>
+      <td>Pickett et al., 2018</td>
+      <td>https://zfin.org/ZDB-ALT-190708-1</td>
+      <td>Mitochondria-localized ROS biosensor</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myo6b:SypHy)idc6Tg;SypHy</td>
+      <td>Zhang et al., 2018</td>
+      <td>https://zfin.org/ZDB-ALT-171205-5</td>
+      <td>Hair-cell localized vesicle fusion indicator</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>cav1.3atn004 mutants; gemini; cacna1da</td>
+      <td>Sidi et al., 2004</td>
+      <td>https://zfin.org/ZDB-GENE-030616-135</td>
+      <td>Mutants lacking functional Cav1.3 channels</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>otofb</td>
+      <td>This paper</td>
+      <td>https://zfin.org/ZDB-ALT-211124-4</td>
+      <td>Crispr-Cas9 mutant. See Materials and Methods, “Animals”</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>otofa</td>
+      <td>This paper</td>
+      <td>https://zfin.org/ZDB-ALT-211124-3</td>
+      <td>Crispr-Cas9 mutant. See Materials and Methods, “Animals”</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>otofa guide</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’- GGGCACCTTCAAACTAGACG(TGG)–3’, made by IDT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>otofb guide</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-GGAGCTCCACTGAGGTGCAGG(TGG)–3’, made by IDT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OTOFA FWD</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-ATCAAACCTCCATTGGAAACAG-3’, made by Integrated DNA Technologies (IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OTOFA REV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-CCCATTTGTGATGAAACTGATG-3’, made by IDT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OTOFB FWD</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’- CTGGTTCATTCGTAGGCTTTCT-3’, made by IDT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OTOFB REV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-TGCTTACATCAGAGATGTTGGG-3’, made by IDT</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Otoferlin(mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID:AB_10804296HCS-1</td>
+      <td>Use at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488(goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A-11001</td>
+      <td>Use at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prolong Gold</td>
+      <td>ThermoFisher</td>
+      <td>P10144</td>
+      <td>See methods, immunohistochemistry</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>α-bungarotoxin</td>
+      <td>Tocris</td>
+      <td>2133</td>
+      <td>See methods, paralysis and immobilization</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isradipine;Israd</td>
+      <td>Sigma-Aldrich</td>
+      <td>I6658</td>
+      <td>See methods, cell-death assays</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine; MESAB</td>
+      <td>Sigma-Aldrich</td>
+      <td>A5040</td>
+      <td>See methods, paralysis and immobilization</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynole 34–2</td>
+      <td>Tocris Biosciences</td>
+      <td>4222</td>
+      <td>See methods, cell-death assays</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neomycin;Neo</td>
+      <td>Sigma-Aldrich</td>
+      <td>N1142</td>
+      <td>See methods, cell-death assays</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentamicin;Gent</td>
+      <td>Sigma-Aldrich</td>
+      <td>G1272</td>
+      <td>See methods, cell-death assays</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FM 4–64</td>
+      <td>ThermoFisher</td>
+      <td>T3166</td>
+      <td>See methods, cell-death assays</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Texas Red-x-succinimidyl ester</td>
+      <td>ThermoFisher</td>
+      <td>T20175</td>
+      <td>See methods, Neomycin-Texas Red uptake</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellROX Orange</td>
+      <td>ThermoFisher</td>
+      <td>C10444</td>
+      <td>See methods, live imaging</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MitoSOX Red</td>
+      <td>ThermoFisher</td>
+      <td>M36008</td>
+      <td>See methods, live imaging</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TMRE</td>
+      <td>ThermoFisher</td>
+      <td>T669</td>
+      <td>See methods, live imaging</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>ThermoFisher</td>
+      <td>D1306</td>
+      <td>See methods, live imaging</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism (v. 8)</td>
+      <td>Graphpad Software</td>
+      <td>RRID:SCR_002798; https://www.graphpad.com</td>
+      <td>See methods, statistics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014198; https://www.adobe.com</td>
+      <td>See figures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI is just ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070; https://fiji.sc</td>
+      <td>See methods, image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PolyPeak Parser</td>
+      <td>Hill et al., 2014</td>
+      <td>http://yosttools.genetics.utah.edu/PolyPeakParser/</td>
+      <td>See methods, animals</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_01367; https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html</td>
+      <td>See methods, immunohistochemistry</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prairie View</td>
+      <td>Bruker Corporation</td>
+      <td>RRID:SCR_017142; https://www.bruker.com/products/fluorescence-microscopes/ultima-multiphoton-microscopy/ultima-in-vitro/overview.html</td>
+      <td>See methods, functional imaging</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>G*Power</td>
+      <td>Faul et al., 2009</td>
+      <td>RRID:SCR_013726; https://doi.org/10.3758/BRM.41.4.1149 http://www.gpower.hhu.de/</td>
+      <td>See methods, statistics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325; http://www.wavemetrics.com/products/igorpro/igorpro.htm</td>
+      <td>See methods, electrophysiology</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323; http://www.moleculardevices.com/products/software/pclamp.html</td>
+      <td>See methods, electrophysiology</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Zebrafish (Danio rerio) were grown at 28 °C using standard methods. Larvae were raised in E3 embryo medium (5  mM NaCl, 0.17  mM KCl, 0.33  mM CaCl2, and 0.33  mM MgSO4, buffered in HEPES, pH 7.2). Zebrafish work performed at the National Institutes of Health (NIH) was approved by the Animal Use Committee at the NIH under animal study protocol #1362–13. All experiments were performed on larvae aged 3–6 days post fertilization (dpf). Larvae were chosen at random at an age where sex determination is not possible. The following mutant and transgenic lines were used: Tg(myo6b:GCaMP6s-CAAX)idc1 (referred to in this work as memGCaMP6s) (Jiang et al., 2017), Tg(myo6b:SypHy)idc6 (Zhang et al., 2018), Tg(myo6b:mitoGCaMP3)w119 (Esterberg et al., 2014), Tg(myo6b:mitoTimer)w208 (Pickett et al., 2018), cav1.3atn004 mutants (also known as gemini or cacna1da) (Sidi et al., 2004). Unless stated otherwise, Tg(myo6b:memGCaMP6s)idc1 larvae were used in all aminoglycoside experiments to assess hair-cell survival.
 
 Otofaidc19 and otofbidc20 mutants were generated in-house using CRISPR-Cas9 technology as previously described (Varshney et al., 2016). Exon 11 was targeted in each Otoferlin isoform. Guides for otofa and otofb are as follows: 5’- GGGCACCTTCAAACTAGACG(TGG)–3’ and 5’-GGAGCTCCACTGAGGTGCAGG(TGG)–3’. Founder fish were identified using fragment analysis of fluorescent PCR products. Founder fish containing a 5 bp deletion in otofa 5’- CAAACTAC-(TTCAA)-ACGTGGGGA-3’ and an 8 bp deletion in otofb 5’-AACGAAGG-(CCTCGGGG)-AGGGCGTC-3’ were propagated and selected for analysis. Subsequent genotyping was accomplished using standard PCR and sequencing. PolyPeak Parser was used to parse sequences to identify animals with an indel of interest (Hill et al., 2014). Otof genotypes were confirmed with genotyping after imaging. Primers used for genotyping: otofa_FWD 5’-ATCAAACCTCCATTGGAAACAG-3’ and otofa_REV 5’-CCCATTTGTGATGAAACTGATG-3’ and otofb_FWD 5’- CTGGTTCATTCGTAGGCTTTCT-3’ and otofb_REV 5’-TGCTTACATCAGAGATGTTGGG-3’. For ease of identification, otofa;otofb double mutants were used for analyses. Loss of otofb is sufficient to eliminate all Otoferlin immunolabel in lateral line neuromasts (Figure 1—figure supplement 1C). With regard to our neuromast functional imaging, we did not observe any differences between otofa;otofb double and otofb single mutants.
 
-## Immunohistochemistry and confocal imaging of fixed samples
+### Immunohistochemistry and confocal imaging of fixed samples
 
 Immunohistochemistry to label Otoferlin in hair cells was performed on whole zebrafish larvae similar to previous work (Zhang et al., 2018). The primary antibody mouse anti-Otoferlin, 1:1000, (HCS-1, Developmental Studies Hybridoma Bank) along with the secondary antibody Alexa 488 1:1000 (A-11001, ThermoFisher Scientific) were used for immunolabel. Larvae were mounted in Prolong gold (P10144, ThermoFisher Scientific). Fixed larvae were imaged on an inverted Zeiss LSM 780 confocal microscope (Carl Zeiss AG) with a 488 nm laser using an 63x1.4 NA oil objective lens. Confocal z-stacks were acquired every 0.3 µm. Imaged were processed using FIJI (NIH).
 
-## Zebrafish immobilization and paralysis for live imaging
+### Zebrafish immobilization and paralysis for live imaging
 
 Larvae were immobilized for live imaging as described previously (Lukasz and Kindt, 2018). Briefly, larvae were mounted on their side on a thin layer of Sylgard atop a chamber with a coverglass bottom in E3 embryo media containing 0.2% MESAB (tricaine; MS-222; ethyl-m-aminobenzoate methanesulfonate, Western Chemical). Small pins were inserted perpendicularly through the body of the fish behind the ear and into the notochord at the end of the tail. The hearts of pinned larvae were injected with a solution containing α-bungarotoxin (125 µM, 2133, Tocris Biosciences) to paralyze larvae for imaging. After paralysis, larvae were immersed in either CE3 for aminoglycoside experiments (in mM: 14.9 NaCl, 0.503 KCl, 0.986 CaCl2, 0.994 MgSO4, 0.150 KH2PO4, 0.042 Na2HPO4, and 0.714 NaHCO3, pH 7.2) (Coffin et al., 2009) or extracellular imaging solution (in mM: 140 NaCl, 2 KCl, 2 CaCl2, 1 MgCl2, and 10 HEPES, pH 7.3, OSM 310+/-10) for functional imaging experiments and electrophysiology.
 
-## Functional imaging of calcium and vesicle fusion
+### Functional imaging of calcium and vesicle fusion
 
 For the imaging of mechanosensation (memGCaMP6s), presynaptic calcium influx (memGCaMP6s), mitochondrial calcium uptake (mitoGCaMP3), and vesicle fusion (SypHy), we used a Bruker Swept-Field confocal system (Bruker Corporation) equipped with a Rolera EM-C2 CCD camera (Qimaging) and a Nikon CFI Fluor 60×1.0 NA water immersion objective (Nikon Instruments, Inc) as described previously (Zhang et al., 2018). The system includes a band-pass 488/561 nm filter set (59904-ET, Chroma) and is controlled using Prairie View software (Bruker Corporation). For memGCaMP6s and mitoGCaMP3 imaging we used a piezoelectric motor (PICMA P-882.11–888.11 series, PI Instruments) attached to the objective to acquire rapid five-plane Z-stacks. Z-stacks were acquired with a 1 µm interval to image mechanosensation-dependent calcium flux and a 2 µm interval to image presynaptic and mitochondrial calcium flux. Images were acquired using a 70 µm slit at a 50 Hz frame rate with a resulting a 10 Hz volume rate. Z-stacks were average projected into a single plane for analysis. For SypHy imaging, 3 separate synaptic planes were acquired 2 µm apart at a 50 Hz frame for each neuromast.
 
@@ -187,13 +526,13 @@ To visualize changes in GCaMP6s, mitoGCaMP3, and SypHy signals, raw images were 
 
 To quantify the fluorescence intensity changes from our GCaMP6s, mitoGCaMP3, and SypHy functional imaging, registered images were loaded into FIJI (Schindelin et al., 2012). In FIJI we used the Time Series Analyzer V3 plugin to create circular ROIs. For presynaptic GCaMP6s, mitoGCaMP3, and SypHy measurements, a circular region of interest (ROI) with a diameter 3.3 μm (~12 pixels with 268 nm per pixel) was placed at the base of each hair cell within a neuromast. For hair-bundle GCaMP6s measurements, a circular ROI with a 1.7 μm diameter (~6 pixels with 268 nm per pixel) was placed on the center of an individual bundle. We then measured and plotted change in the mean intensity (∆F/F0) within the region during the recording period. The mean intensity within each ROI was computed for each cell. The signal magnitude, defined as the peak value of intensity change upon stimulation was determined for all ROIs. In addition, the duration (time from stimulus onset to peak), and the slope (from stimulus onset to peak) was measured. After the stimulus peak, the half-life of the GCaMP6s signal was fitted using an exponential one-phase decay. To quantify the resting or baseline GCaMP6s in hair bundles or presynaptic compartment, the mean intensity during the pre-stimulus acquisition (2 s interval) was determined. For GCaMP6s hair-bundle measurements, GCaMP6s signals from all hair bundles were averaged to give a value for each neuromast. For GCaMP6s, mitoGCaMP3, and SypHy, and presynaptic measurements, only the signals from synaptically active hair cells were averaged to give a value for each neuromast (Zhang et al., 2018). For mutants without GCaMP6s, mitoGCaMP3, or SypHy signals, a comparable number of cells were chosen at random for analysis.
 
-## Afferent neuron electrophysiology
+### Afferent neuron electrophysiology
 
 Postsynaptic currents from afferent cell bodies of the posterior lateral-line ganglion (pLLg) were recorded as described previously in zebrafish (Trapani and Nicolson, 2011). The pLLg was visualized using an Olympus BX51WI fixed stage microscope equipped with a LumPlanFl/IR 60 X/0.90 W water dipping objective (N2667800, Olympus). To record spontaneous postsynaptic currents, borosilicate glass pipettes were prepared with a long taper and resistances between 5 and 10 MΩ (P-97, Sutter Instruments). A Digidata 1440 A data acquisition board, Axopatch 200B amplifier, and pClamp 10 software (Molecular Devices, LLC) were used to collect signals. A loose-patch configuration with seal resistances ranging from 20 to 80 MΩ was used in combination with voltage-clamp mode, and signals were sampled at 50 μs/pt and filtered at 1 kHz. Cell bodies were selected at random because mutants lack evoked spikes and therefore it is impossible to identify specific neuromasts innervated by a given neuron. Igor Pro (Wavemetrics) was used to analyze afferent electrophysiology recordings. The number of spontaneous events per neuron per minute within a 5-min recording window was quantified.
 
 For the Dynole 34–2 assay, spontaneous baseline afferent signals were recorded from a single cell body from a 4–6 dpf larva for a minimum of 5 min. Then a microloader pipette tip (E5242956003, Eppendorf) was used to carefully deliver 10 µL of 125 µM Dynole 34–2 solution (for a final concentration of 2.5 µM Dynole 34–2 in 0.1% DMSO or 0.1% DMSO alone) over 5 s to avoid disrupting the recording. Recordings were continued for another 10 min to determine if the treatment had an effect on spontaneous afferent spike rate. The number of spontaneous events per neuron within the 5-min pre-treatment window was quantified to obtain a baseline before treatment, and the number of spontaneous events per minute the 10-min window after treatment was quantified for post-treatment quantification.
 
-## Neomycin and gentamicin hair-cell death assays
+### Neomycin and gentamicin hair-cell death assays
 
 Tg(myo6b:memGCaMP6s)idc1 larvae were immobilized for imaging as described above. Larvae were then incubated in neomycin sulfate solution (75, 100, or 200 µM in CE3 media) for 30 min. After neomycin treatment, larvae were washed one time in CE3 media, followed by a 30 -s incubation with the vital dye FM 4–64 (2 µM, T3166, ThermoFisher), and three more washes in CE3 media. Next, fluorescent, two-color 488 and 561 nm Z-stacks were taken at 1.5 µm intervals using a Nikon A1 upright laser-scanning confocal microscope using a 60×1.0 NA water objective (Nikon Instruments, Inc). The number of surviving cells was identified primarily by counting intact GCaMP6s positive cells that also co-labeled with FM 4–64, a vital dye which disappears upon membrane fragmentation. Any very young or immature GCaMP6s-positive cells without visible hair bundles were excluded from analysis. The number of surviving cells was divided by total cells present before treatment to obtain % cells surviving neomycin treatment for a given concentration for each neuromast.
 
@@ -201,11 +540,11 @@ For the short-term isradipine and Dynole 34–2 assays, larvae were immobilized 
 
 For the gentamicin assays, 5 dpf Tg(myo6b:memGCaMP6s)idc1 larvae were incubated in gentamicin sulfate (G1272, Sigma-Aldrich) solution (200 µM in CE3 media) for 2 hr before being washed 3 X in CE3 media and returned to E3 media for 24 hr. After the 24 hr recovery, the 6 dpf larvae were then incubated in 2 µM FM 4–64 for 30 s, followed by two washes in CE3 before imaging. Neuromasts were imaged as described for the neomycin cell death assay. GCaMP6s-positive cell bodies labeled with FM 4–64 were counted for both treated and untreated larvae. The number of surviving cells in the treated group was normalized by the number of cells in the untreated group for each genotype to obtain % cells surviving gentamicin treatment for each neuromast.
 
-## Neomycin-Texas Red uptake and clearance assays
+### Neomycin-Texas Red uptake and clearance assays
 
 To monitor neomycin uptake and clearance, neomycin sulfate (N1142, Sigma-Aldrich) was conjugated to Texas Red-X-succinimidyl ester (T20175, ThermoFisher) as described previously (Stawicki et al., 2014). For imaging of the temporal components of neomycin-Texas Red (Neo-TR) uptake and clearance, an A1 Nikon upright laser-scanning confocal microscope with a 60×1.0 NA water objective was used to acquire images Z-stacks every 1.5 µm. For Neo-TR uptake, Tg(myo6b:memGCaMP6s)idc1 larvae were first imaged using a 488 nm laser in 1 mL CE3 to locate neuromasts then 1 mL of 50 µM Neo-TR was added to the solution for a final concentration of 25 µM. Two-color 488 and 561 nm imaging was begun immediately following the addition of Neo-TR with Z-stacks collected every 1 min for 10 min. Immediately following the collection of the final Z-stack for the uptake portion of imaging, the Neo-TR solution was removed, and larvae were washed 3 X with 1 mL of CE3. After the washout Z-stacks were collected every 90 s for 30 min to track Neo-TR clearance. After imaging, Neo-TR intensity was quantified using FIJI. For both uptake and clearance experiments, the Neo-TR channel was corrected for drift in FIJI. Then Z-stacks were max-projected. Neo-TR and GCaMP6s channels were max-projected, and the Neo-TR channel was background subtracted (rolling ball radius 50 pixels). The GCaMP6s channel was then subjected to mean automatic thresholding to generate a mask. This mask was applied to the maximum projected Neo-TR image and the multi-measure tool in FIJI was used to extract the average Texas Red intensity at each time point. The change in Neo-TR fluorescence intensity (∆F) was plotted over time.
 
-## Live imaging of CellROX Orange, MitoSOX Red, TMRE, JC-1, MitoTimer, and DAPI
+### Live imaging of CellROX Orange, MitoSOX Red, TMRE, JC-1, MitoTimer, and DAPI
 
 For baseline measurements, CellROX Orange (C10444, ThermoFisher), MitoSOX Red (M36008, ThermoFisher), TMRE (T669, ThermoFisher) and JC-1 (T3168, ThermoFischer) dyes were applied at 10 µM, 5 µM, 10 nM, and 1.5 µM respectively, in CE3. Tg(myo6b:memGCaMP6s)idc1 larvae were incubated in CellROX Orange or TMRE for 30 min or MitoSOX for 15 min in darkness. Nontransgenic larvae were incubated in JC-1 for 5 min in darkness. After dye incubation larvae were washed 3 X with CE3, and fluorescent 2-color 488 and 561 nm Z-stacks were taken at 2–2.5 µm intervals using a Nikon A1 upright laser-scanning confocal microscope using a 60×1.0 NA water objective. Laser and Z-stack settings were kept constant across each experiment. After imaging, the two most central slices encompassing the majority of the hair cell bodies were max-projected using FIJI. Mean automatic thresholding applied to the green channel (GCaMP6s) was used to create a mask encompassing all mature neuromast hair cells. This mask was used to create an ROI to measure the average intensity in the red channel (CellROX Orange, MitoSOX Red, or TMRE). For JC-1 measurements the green channel was used to generate a threshold and mask to quantify the intensity in both the green and red channels.
 
@@ -213,6 +552,6 @@ Tg(myo6b:mitoTimer)w208 larvae were immobilized as described above and imaged at
 
 DAPI labeling and kinocilial height measurements were used to differentiate between older and younger cells within a given neuromast at 5 dpf. To measure the height of the tallest part of the hair bundle, the kinocilium, a transmission PMT on a laser-scanning Nikon A1 confocal microscope was used to acquired Z-stacks every 0.5 µm. For DAPI labeling, 14 µM DAPI nuclear dye (D1306, ThermoFisher) in CE3 was applied to Tg(myo6b:memGCaMP6s)idc1 larvae for 30 s at 3 dpf. Larvae were then washed 3 X in CE3 before being returned to E3 solution. After labeling larvae were imaged in 405 and 488 nm channels using a Nikon A1 confocal microscope to identify DAPI-positive and DAPI-negative cells at 3 dpf or placed directly in an incubator at 28 °C. At 5 dpf, DAPI-labeled neuromasts were imaged to identify DAPI-positive and DAPI-negative cells. For calcium imaging experiments, after identifying DAPI-positive cells, presynaptic calcium imaging was performed using 2 s anterior and posterior step fluid-jet stimuli on the Bruker Swept-Field confocal microscope as described above.
 
-## Statistics
+### Statistics
 
 All data shown are mean ± standard error of the mean (SEM). All experiments were replicated at least twice on two independent days from different clutches. All replicates were biological-distinct animals and cells. Wildtype animals were selected at random for drug pre-treatments. When possible, control animals and drug treated or mutant animals were treated and examined simultaneously (same imaging chamber). Datasets were excluded only when control experiments failed. For experiments relying on single wavelength vital dyes (MitoSOX, CellROX and TMRE) trends were confirmed in a minimum of 3 independent experiments. In all datasets dot plots represent the ‘n’. N represents either the number of neuromasts, hair cells or the number of afferent neurons as stated in the legends. For all experiments a minimum of 3 animals and 6 neuromasts or afferent neurons were examined. Exact numbers are listed in the Source Data Files for each figure. Power analyses to determine appropriate sample sizes were performed using G*Power 3.1 (Faul et al., 2009). Sample sizes with adequate size were used to avoid Type 2 error. All statistical analysis was performed using Prism 8.0 software (GraphPad). A D’Agostino-Pearson normality test was used to test for normal distributions and F test was used to compare variances. To test for statistical significance between two samples, either paired or unpaired t-tests (normally distributed data), or Wilcoxon or Mann-Whitney tests (not normally distributed data) were used. For multiple comparisons a one-way ANOVA (normally distributed) with a Tukey or Dunnett’s correction, a two-way AVOVA (normally distributed data) with a Sidak’s correction or a Kruskal-Wallis test (not normally distributed data) with a Dunn’s correction was used as appropriate. A p-value less than 0.05 was considered significant. Raw data represented in dot plots, along with the mean, SEM, statistical test used, and exact p values are lists in the Source Data files.

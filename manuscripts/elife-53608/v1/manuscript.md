@@ -33,7 +33,7 @@
 
 ## Abstract
 
-The body plan along the anteroposterior axis and regional identities are specified by the spatiotemporal expression of Hox genes. Multistep controls are required for their unique expression patterns; however, the molecular mechanisms behind the tight control of Hox genes are not fully understood. In this study, we demonstrated that the Lin28a / let-7 pathway is critical for axial elongation. Lin28a –/– mice exhibited axial shortening with mild skeletal transformations of vertebrae, which were consistent with results in mice with tail bud-specific mutants of Lin28a. The accumulation of let-7 in Lin28a –/– mice resulted in the reduction of PRC1 occupancy at the Hox cluster loci by targeting Cbx2 . Consistently, Lin28a loss in embryonic stem-like cells led to aberrant induction of posterior Hox genes, which was rescued by the knockdown of let-7 . These results suggest that the Lin28 / let-7 pathway is involved in the modulation of the ‘ Hox code’ via Polycomb regulation during axial patterning.
+The body plan along the anteroposterior axis and regional identities are specified by the spatiotemporal expression of Hox genes. Multistep controls are required for their unique expression patterns; however, the molecular mechanisms behind the tight control of Hox genes are not fully understood. In this study, we demonstrated that the Lin28a/let-7 pathway is critical for axial elongation. Lin28a–/– mice exhibited axial shortening with mild skeletal transformations of vertebrae, which were consistent with results in mice with tail bud-specific mutants of Lin28a. The accumulation of let-7 in Lin28a–/– mice resulted in the reduction of PRC1 occupancy at the Hox cluster loci by targeting Cbx2. Consistently, Lin28a loss in embryonic stem-like cells led to aberrant induction of posterior Hox genes, which was rescued by the knockdown of let-7. These results suggest that the Lin28/let-7 pathway is involved in the modulation of the ‘Hox code’ via Polycomb regulation during axial patterning.
 
 ## Introduction
 
@@ -51,23 +51,121 @@ In this work, we generated Lin28a knockout (Lin28a–/–) mice and analyzed the
 
 ## Results
 
-## Lin28a–/– mice exhibit skeletal patterning defects
+### Lin28a–/– mice exhibit skeletal patterning defects
 
 Lin28a exhibits unique spatiotemporal expression changes during early development (Figure 1A; Yang and Moss, 2003; Yokoyama et al., 2008; Yokoyama et al., 2009). At E9.5, Lin28a is expressed ubiquitously; and subsequently, its expression disappears from head to tail at around E10.5 and E11.5 (Yokoyama et al., 2008; Yokoyama et al., 2009). To examine the potential significance of these dynamic expression changes and of the developmental function of Lin28a in mice, we generated Lin28a–/– mice (Figure 1—figure supplement 1). The normal Mendelian ratio of genotypes was observed for Lin28a–/– mice during early to mid embryogenesis. However, the frequency of Lin28a–/– mice decreased from E17.5 and after birth. Most of the Lin28a–/– mice died perinatally or within a few days after birth (Supplementary file 1). Lin28a–/– mice exhibited short stature compared with wild-type (Wt) mice and showed severe growth defects (Figure 1—figure supplement 2). These findings are consistent with previous reports that Lin28a is necessary for normal growth (Shinoda et al., 2013); however, our Lin28a–/– mice showed severe phenotypes that might have been caused by differences in gene targeting construct and genetic background.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig1-v1.jpg)
+
+**Figure 1.:** (A) Whole-mount in situ hybridization of Lin28a in E9.5–11.5 embryos. (B) Lateral views of Wt (left panel) and Lin28a–/– mice (right panel) at E16.5. White arrow, the tip of the tail; white arrowhead, forelimb position; asterisk, hindlimb position. (C) Whole-mount in situ hybridization of Myog and FGF8 in E10.5 embryos. The numbers indicate the expression domains of Myog. White arrowhead, the starting position of the hindlimb bud; black arrowhead, the ending position of the hindlimb bud. (D–H) Representative skeletal preparations of Wt (left panels) and Lin28a–/– mice (right panels). Abbreviations/marks are described below. Lateral views of cervical and upper thoracic vertebrae (D); anterior views of the atlas and the axis (E); ventral views of the ribcage (F); dorsal views of thoracic vertebrae and ribs (G); and dorsal views of lumbar and sacral vertebrae (H) are shown. (I) Schematic diagram of skeletal phenotypes in Lin28a-/- mice. Each abbreviation in (D–I) indicates as follows: C1–C7, 1st to 7th cervical vertebrae; T1-T13, 1st and 13th thoracic vertebrae; R1–R13, 1st to 13th ribs; L1–L6, 1st to 6th lumbar vertebrae; S1–S4, 1st to 4th sacral vertebrae; Ca1, 1st caudal vertebrae. Black arrows in (D–E) indicate anterior arch of the atlas. Asterisks in (F–I) indicate the sites where skeletal deformations occurred.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic diagram of the Lin28a gene-targeting construct. The small light-blue box indicates the 5’ and 3’ untranslated regions (UTRs), and the large light-blue box indicates the coding region. Arrows (1–3) show the genomic PCR primers used for genotyping. 5’ and 3’ arms, 5’ and 3’ homology arms; Neo, PGK promoter and neomycin-resistance gene; DTA, diphtheria toxin A chain. (B) Genotyping via PCR of Lin28a mutants. The Wt allele produced PCR products of about 400 bp, whereas the targeted allele yielded products of about 750 bp. (C) Western blot analysis of Lin28a in E9.5 whole embryos. β-actin is shown as a loading control.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) Appearance of Wt and Lin28a–/– mice. Representative Wt (left) and Lin28a–/– (right) pups at P0 (A) and P7 (B) are shown. (C) Body weight of Wt and Lin28a–/– mice. Data are expressed as the mean ± SEM (n = 4). *p<0.05.
 
 We then examined anteroposterior axis formation in Lin28a–/– mice since Lin28a–/– mice showed a slight anterior shift of the hindlimbs and shortened tails (Figure 1B). To define the details of these phenotypes, whole-mount in situ hybridization of Myog and Fgf8 was performed to outline somites and limb buds. The hindlimbs of Lin28a–/– mice shifted anteriorly by one somite (from the 23rd to the 28th expression domains of Myog), whereas the position of the forelimb buds of Lin28a–/– mice were not altered (Figure 1C). These results are supported by previous reports that tail bud-specific overexpression or knockout of Lin28a affects the number of caudal vertebrae (Aires et al., 2019; Robinton et al., 2019).
 
 To analyze the potential functions of Lin28a in skeletal patterning, Alcian blue and Alizarin red S staining were applied to the skeletal preparations. Although bone and cartilage development was normal, skeletal patterning defects were observed in Lin28a–/– mice (Figure 1D–H). In Lin28a–/– mice, the anterior arch of the atlas was formed from the second cervical vertebra (C2) (Figure 1D), and not from C1, as normally observed, or from the fusion of C1 and C2 (Figure 1E). These transformations were observed in 64.3% of Lin28a–/– mice and in 21.1% of Lin28a+/– mice; in contrast, they were never found in Wt mice (Table 1). There were only six pairs of true ribs attached to the sternum in Lin28a–/– mice, whereas Wt and Lin28a+/– mice had seven pairs (Figure 1F). Furthermore, an abnormal number of ribs was observed in Lin28a–/– mice at 100% penetrance, whereas Wt and Lin28a+/– mice exhibited the normal 13 pairs of ribs (Figure 1G and Table 1). These results suggest that posterior transformations of vertebral identity occur in the 7th and 13th thoracic vertebrae during skeletal patterning. Moreover, partial transformations were observed in the first sacral vertebra (S1), producing a morphological feature of lumbar vertebrae on only one side (Figure 1H). The frequency of these observations was significantly higher in Lin28a–/– mice (Table 1). Finally, Lin28a–/– mice showed various skeletal transformations (Figure 1I), suggesting that Lin28a plays a critical role in the specification of vertebrae along the anteroposterior axis.
 
-## Hox genes are dysregulated in Lin28a–/– mice
+**Table 1.**
+ Summary of skeletal abnormalities in Lin28a mutant mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Anterior arch of the atlas*</th>
+      <th colspan="2">Ribs†</th>
+      <th colspan="2">Sternum attachment‡</th>
+      <th colspan="3">Lumbar§</th>
+    </tr>
+    <tr>
+      <th>13</th>
+      <th>12</th>
+      <th>7</th>
+      <th>61</th>
+      <th>6</th>
+      <th>5</th>
+      <th>L6/S1*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wt(n = 16)</td>
+      <td>0</td>
+      <td>16 (100%)</td>
+      <td>0</td>
+      <td>16 (100%)</td>
+      <td>0</td>
+      <td>7 (43.8%)</td>
+      <td>8 (50%)</td>
+      <td>1 (6.2%)</td>
+    </tr>
+    <tr>
+      <td>Lin28a+/-(n = 19)</td>
+      <td>4 (21.1%)</td>
+      <td>19 (100%)</td>
+      <td>0</td>
+      <td>19 (100%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18 (94.7%)</td>
+      <td>1 (5.3%)</td>
+    </tr>
+    <tr>
+      <td>Lin28a-/- (n = 14)</td>
+      <td rowspan="2">9 (64.3%)</td>
+      <td rowspan="2">0</td>
+      <td rowspan="2">14 (100%)</td>
+      <td rowspan="2">0</td>
+      <td rowspan="2">14 (100%)</td>
+      <td rowspan="2">0</td>
+      <td rowspan="2">9 (64.3%)</td>
+      <td rowspan="2">5 (35.7%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_The percentages of each phenotype are shown in parenthesis.* The anterior arch of the atlas was formed from C2 or via fusion.† Total number of pairs of ribs.‡ Total number of pairs of true ribs that were attached to the sternum.§ Total number of lumbar vertebrae. L6/S1* indicates an abnormal sacral vertebra that had morphological features of a lumbar vertebra on only one side._
+
+### Hox genes are dysregulated in Lin28a–/– mice
 
 The morphologies and characteristics of each vertebra are specified by the spatiotemporal expression of Hox genes (Wellik, 2007). It was remarkable that Lin28a–/– mice exhibited global transformations with high penetration, whereas mutants of Hox genes showed abnormalities in a limited region of vertebrae. To test if Hox genes are involved in the phenotypes found in Lin28a–/– mice, we examined Hox gene expression during embryogenesis. Quantitative real-time polymerase chain reaction (q-PCR) analyses of Hox genes were performed at E9.5, a time at which Lin28a was ubiquitously expressed in Wt mice (Figure 1A). Lin28a–/– mice exhibited global dysregulation of Hox genes, which was most remarkable for the 5’ (posterior) Hox genes (Figure 2A). Whole-mount in situ hybridization analyses revealed that the expression domain of Hoxc13 and Hoxd12 was enlarged anteriorly (Figure 2B and C, and Figure 2—figure supplement 1). In contrast, there were no significant changes in the expression domain of the other Hox genes upregulated in Lin28a–/– mice (Hoxa3, d3, b8, c8, a11, and a13) (Figure 2—figure supplement 1). These results suggest that the short-tailed phenotype in Lin28a–/– mice might be caused by the anteriorization of Hox paralogous group 12 and 13 expression.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig2-v1.jpg)
+
+**Figure 2.:** (A) q-PCR analyses of all Hox genes. All data are expressed as the mean ± standard error of the mean (SEM) (n = 3). *p<0.05. (B) Whole-mount in situ hybridization of Hox genes in E11.5 embryos. Lateral views (top panels) and dorsal views (bottom panels) of hindlimb and tail region are shown. Black arrowhead, anterior domain of Hox gene; HL, hindlimb; dashed line, hindlimb position; two-way arrow, distance from the hindlimb to the anterior domain of Hoxc13. (C) Histological analysis of E12.5 animals. Alcian blue staining (top panels) and in situ hybridization of Hoxc13 (bottom panels) are shown. (D) Skeletal preparations of Wt (left panel) and Lin28a+/– mice (right panel) that received RA treatment. R1–R13, 1st to 13th ribs; asterisk, the ablation of the 13th rib. See also Figure 2—figure supplement 2. (E) Summary of Hox gene dysregulation in Lin28a mutants.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Figure 2B). Whole-mount in situ hybridization of Wt and Lin28a–/– mice embryos at E9.5 (using Hoxa3, Hoxd3, Hoxb8, Hoxc8, Hoxa11, Hoxd12 and Hoxa13 probes), at E10.5 (using Hoxc13 probe) and at E11.5 (using Hoxc5, Hoxc8, Hoxa11 and Hoxa13 probes).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Dorsal views of thoracic vertebrae and ribs of RA-treated Lin28a–/– mice. R1–R12, 1st to 12th ribs. The asterisk indicates the ablation of the 13th rib. (B–F) Lateral view of cervical and upper thoracic vertebrae of each genotype treated with RA. C1–C7, 1st to 7th cervical vertebrae; T1, 1st thoracic vertebra. The dotted lines from left to right show the exoccipital bone and C1 and C2, respectively. C1’ and C2’ show fusion and morphological changes of C1 and C2, respectively. C1′‘indicates an additional C1 vertebra.
+
 We next focused on the skeletal patterning defects from the cervical to sacral region. It is known that Hox genes are modulated by retinoic acid (RA) signaling, and that RA exposure causes posterior transformations of vertebrae via global anteriorization of Hox gene expression (Kessel and Gruss, 1991). Since Hox genes were dysregulated in Lin28a-/- embryos, we hypothesized that the patterning defects of vertebrae observed in Lin28a–/– mice are caused by the perturbation of Hox gene expression. To test this, we investigated the effects of perturbation of Hox gene expression by RA on skeletal pattern formation in Lin28a mutants. RA was injected intraperitoneally at 7.5 days postcoitum (dpc) and the skeletal patterning of each fetus was analyzed. We found that Lin28a mutant embryos showed RA sensitivity. Lin28a+/– mice that received RA treatment showed loss of the 13th pair of ribs, which coincided with the findings observed in Lin28a–/– mice, whereas no obvious defects were observed in Wt littermates (Figure 2D). In contrast, no additional defects in the thoracic region were observed in the Lin28a–/– embryos that natively had only 12 pairs of ribs (Figure 2—figure supplement 2A). In the cervical region, the severity of skeletal patterning defects correlated with the genotype of Lin28a (Figure 2—figure supplement 2B–2F). After RA treatment, some Lin28a+/– embryos exhibited the C1/C2 fusion phenotype (Figure 2—figure supplement 2D), whereas Lin28a–/– embryos showed more severe defects that were characterized by fusion of the exoccipital bone with C1 and C2 (Figure 2—figure supplement 2E and F). These results show that perturbation of Hox genes by RA administration enhances the Lin28a+/- and -/- phenotypes. In particular, since RA administration in Lin28a+/- mice results in the same phenotype as untreated Lin28a-/-, it is possible that dysregulation of Hox genes is responsible for the skeletal patterning defects in Lin28a–/– mice (Figure 2E).
 
-## Lin28a regulates Cbx2 expression via let-7 repression
+### Lin28a regulates Cbx2 expression via let-7 repression
 
 We examined the molecular mechanism underlying the Lin28a-mediated regulation of Hox gene expression during embryogenesis. Since Lin28a is known as a negative regulator of let-7 biogenesis by interfering with Drosha processing of pri-let-7 (Newman et al., 2008; Viswanathan et al., 2008), and by TUT4-mediated terminal uridylation and inhibition of Dicer processing (Heo et al., 2009; Chang et al., 2013), we examined the microRNA expression profile of Lin28a–/– mice. TaqMan microRNA array analyses were performed on E9.5 embryos. Consistent with previous reports (Viswanathan et al., 2008; Rybak et al., 2008), we found that mature microRNAs of let-7-family members were significantly accumulated in Lin28a–/– mice (Figure 3A). These results were also confirmed by q-PCR analysis of let-7-family members (Figure 3B). There was no difference between Wt and Lin28a–/– mice with regards to the expression of either mir-10 and mir-196 family microRNAs, which are regulators of the spatial expression of Hox genes and of vertebral specification (Woltering and Durston, 2008; Yekta et al., 2004; Hornstein et al., 2005; Figure 3C). Consistent with previous reports (Heo et al., 2009; Chang et al., 2013), these results imply that the ablation of Lin28a promotes the specific accumulation of let-7 family microRNAs during embryogenesis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig3-v1.jpg)
+
+**Figure 3.:** (A) Comparison of microRNA expression in Wt and Lin28a–/– embryos at E9.5. (B, C) q-PCR analyses of let-7-family members (B) and Hox-embedded microRNAs (C). In (B), data are expressed as the mean (n = 3), and the relative amount of total let-7 microRNAs is shown. (D) let-7 target search with TargetScan and Phenotype Browser. (E) The let-7 target site in the 3’UTR sequence of candidate genes. The let-7 seed-matched sequence and mutated sequence are shown in red and blue, respectively. (F) Luciferase reporter activity in the presence/absence of the let-7 target site in 3’UTR sequence. (G–H) qPCR and western blot analyses of candidate genes. (I) Dorsal views of thoracic vertebrae and ribs. Single heterozygous mutants (left and middle panels) and a double heterozygous mutant (right panel) are shown. R1–R13, 1st to 13th ribs; asterisk, the ablation or truncation of the 13th rib. See also Figure 3—figure supplement 1. (J) Frequency of rib defects in mutant mice. All data are expressed as the mean ± SEM (n = 3). *p<0.05. n.s., not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cbx2 targeting and the sequence of Cbx2 mutants. The start codon of Cbx2 is highlighted in red and the PAM sequence for hCas9 is highlighted in yellow. Targeting sequences are underlined. The predicted stop codons in mutants are highlighted in gray. (B–E) Skeletal preparations of Wt and Cbx2–/– mice. Lateral views of cervical and upper thoracic vertebrae (B, C) and dorsal views of thoracic vertebrae and ribs (D, E) are shown. C1–C7, 1st to 7th cervical vertebrae; T1 and T2, 1 st and 2nd thoracic vertebrae; R1–R13, 1st to 13th ribs; C1/C2, fusion of C1 and C2; the asterisks indicate the posterior transformation of vertebrae.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Change in the expression of Cbx2 in Lin28a+/– and Lin28a–/– mice E9.5 embryos were detected by western blot analyses. β-actin is shown as a loading control. All data are expressed as the mean ± SEM (n = 3).
 
 We then sought a potential target gene for let-7, which may be involved in the skeletal transformations observed in Lin28a–/– mice. We performed comprehensive screening for the let-7 target candidate genes using the following criteria; 1) let-7 target genes, computationally predicted using TargetScan (856 genes), and 2) annotated genes responsible for posterior transformations and of which knockout mice show vertebrae that are similar to those observed in Lin28a-/- mice, as screened by Mouse Genome Informatics (115 genes). We found that five of the genes (Arl4d, Cbx2, Cbx5, Dusp4, and E2f6) satisfied both criteria (Figure 3D). Arl4d and E2f6 have been identified as potential let-7 target genes (Johnson et al., 2007; Li et al., 2015), suggesting that this screening successfully extracted candidate genes. Three of the five genes (Cbx2, Cbx5, and E2f6) are PcG genes or Polycomb-associated genes (Core et al., 1997; Nielsen et al., 2001; Courel et al., 2008), suggesting that Cbx5 and E2f6, as well as Cbx2, might be involved in Hox gene dysregulation via histone modifications and chromatin structural changes in Lin28a-/- mice. Based on this screening, we examined if those five genes are true targets of let-7 by Luciferase assay. We generated reporter constructs of luciferase-let-7 target site-mutated 3’UTR sequence of each gene, and quantified let-7-dependent reporter activity in comparison with a Luciferase-wild type 3’UTR sequence construct (Figure 3E). We found that three of the five genes, Cbx2, Cbx5, and E2f6, were down-regulated in a let-7-dependent manner, whereas this down-regulation effect was not observed in the let-7 target site mutated construct. In contrast, the potential let-7 target sequence of Arl4d and Dusp4 did not affect the expression of luciferase. While these results in HEK293T cells with partial 3’UTR sequences do not completely exclude the possibility that Dusp4 and Arl4d are not target genes of let-7, they do suggest that Cbx2, Cbx5 and E2f6 are direct targets of let-7 (Figure 3F).
 
@@ -75,23 +173,23 @@ To confirm that these genes are affected by the Lin28/let-7 axis in vivo, we per
 
 Cbx2 is one of the PcG genes that regulates Hox genes via histone modification, and ablation of Cbx2 shows skeletal patterning defects in mice (Core et al., 1997; Nielsen et al., 2001; Courel et al., 2008). We considered that decreased expression of Cbx2 might cause the abnormal skeletal formation found in Lin28a-/- mice. Therefore, we examined whether decreasing the expression level of Cbx2 in Lin28a+/-could induce a similar phenotype as Lin28a-/- mice. We generated Cbx2 mutant mice using CRISPR/Cas9 and interbred the Cbx2 mutant with Lin28a+/– mice (Figure 3—figure supplement 1A). The Cbx2 homozygous mutants exhibited skeletal patterning defects (Figure 3—figure supplement 1B–1E): fusion of C1 and C2 vertebrae, additional rib formation from the 7th cervical vertebra, T1 to T2 transformation of the spinous process, and 13th rib truncation. Similar observations were reported for Cbx2-null mice (Core et al., 1997; Katoh-Fukui et al., 1998). We generated double heterozygous mutants of Lin28a and Cbx2 (Lin28a+/–; Cbx2+/–) and analyzed their skeletal patterning. The double heterozygous mice showed ablation or truncation of the 13th pair of ribs, although the Lin28+/– and Cbx2+/– single mutants did not show any obvious phenotypic irregularities (Figure 3I and J). These results show that decreased expression of Cbx2 enhances the Lin28a+/- phenotypes. In particular, since Lin28a+/-;Cbx2+/- double mutant mice showed the deformation of the 13th pair of ribs, which was similar to the phenotype observed in Lin28a-/- mice, it was possible that dysregulation of Cbx2 is responsible for the phenotype of Lin28a–/– mice. Together, these results indicate that let-7 directly regulates Cbx2, and that genetic interactions exist between Lin28a and Cbx2. Furthermore, they suggest that Lin28a/let-7 reciprocal feedback regulates Cbx2 expression, and that this pathway contributes to the regulation of proper skeletal patterning during embryogenesis.
 
-## The Lin28a/let-7 pathway modulates PRC1 occupancy at posterior Hox loci
+### The Lin28a/let-7 pathway modulates PRC1 occupancy at posterior Hox loci
 
 Hox gene expression is epigenetically restricted to unique spatiotemporal patterns during embryogenesis by PcG genes (Soshnikova and Duboule, 2009). To determine if the Lin28a/let-7/Cbx2 axis regulates skeletal patterning via Hox gene expression, we analyzed histone modifications and PcG occupancy at the Hox loci. We performed chromatin immunoprecipitation (ChIP) and q-PCR analyses on E9.5 somites and neural tubes (Figure 4A). For each assay, ChIP was performed on a pool of dissected somites and neural tubes from ten embryos (as n = 1). First of all, we analyzed the repressive histone modification (H3K27me3) at Hoxa cluster loci of Wt. We found the promoter regions of Hoxa3, Hoxa9, Hoxa10, Hoxa11, and Hoxa13 exhibited a high concentration of histone H3K27me3 (Figure 4B). Intriguingly, the same genes were upregulated in Lin28a–/– mice (Figure 2A), suggesting that these genes are tightly regulated epigenetically and that the loss of repressive histone modifications leads to the upregulation of these Hox genes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig4-v1.jpg)
 
-**Figure 4.:** Hox loci in Lin28a-/- mice.(A) Schematic diagram of the experimental procedure for ChIP analysis. (B) ChIP and q-PCR analyses of H2K27me3 in Hox A cluster genes in Wt embryos. (C–G) ChIP and q-PCR analyses of H3K27me3 (C), H3K4me3 (D), Cbx2 (E), Ring1b (F), and H2AK119ub (G). Percentages of immunoprecipitated DNA compared with the input are shown. (H) Summary of the chromatin state of Hox loci in Wt and Lin28a–/– embryos. All data are expressed as the mean ± SEM (n = 3). *p<0.05. n.s., not significant.Figure 4—source data 1.
+**Figure 4.:** (A) Schematic diagram of the experimental procedure for ChIP analysis. (B) ChIP and q-PCR analyses of H2K27me3 in Hox A cluster genes in Wt embryos. (C–G) ChIP and q-PCR analyses of H3K27me3 (C), H3K4me3 (D), Cbx2 (E), Ring1b (F), and H2AK119ub (G). Percentages of immunoprecipitated DNA compared with the input are shown. (H) Summary of the chromatin state of Hox loci in Wt and Lin28a–/– embryos. All data are expressed as the mean ± SEM (n = 3). *p<0.05. n.s., not significant.
 
 Based on the analysis of phenotype of the Lin28a–/– skeletal transformation (Figure 1B–I) and Hox cluster gene expression pattern of Lin28a–/– embryos (Figure 2A–C), we focused on Hoxa3 and Hoxd3, which are involved in C1-C2 malformation and partial fusion in knockout mice (Condie and Capecchi, 1994). In addition, we focused on Hoxa11, which has been reported as the responsible gene for T13 to L1 skeletal transformation in mutated mice (Small and Potter, 1993), Hoxd12 and Hoxc13, which were upregulated in Lin28a–/– embryos, and Hoxa1 as a representative of the anterior Hox genes (Figure 4C–G). Subsequently, we performed ChIP and q-PCR analyses using anti-H3K27me3 and anti-H3K4me3 antibodies in Wt and Lin28a–/– embryos (Figure 4C and D). We found that for histone H3 modifications, both K27me4 and K4me3 were not altered in Lin28a–/– embryos compared with Wt (Figure 4C and D). We also performed ChIP using antibodies against PRC1 components to test their occupancy at Hox loci (Figure 4E and F). Consistent with the expression level of Cbx2 (Figure 3G), we found at least a two-fold reduction of its binding at posterior Hox regions in Lin28a–/– mice (Figure 4E). Intriguingly, the occupancy of Ring1b, another component of PRC1 (Suzuki et al., 2002), and H2AK119 ubiquitination (H2AK119ub) which is catalyzed by Ring1b (Suzuki et al., 2002), were also reduced in Lin28a–/– mice (Figure 4F–G). Because each posterior Hox gene (Hoxa11, Hoxc13, and Hoxd12) is located on distinct chromosomes, these results indicate a critical role for the Lin28a/let-7 axis in PcG-mediated Hox gene repression. Taken together, these findings suggest that Cbx2 repression by let-7 leads to the reduction of PRC1 occupancy at the Hox loci and the transcriptional initiation of posterior Hox genes (Figure 4H).
 
-## Let-7 knockdown rescues Hox gene dysregulation in Lin28a–/– cells
+### Let-7 knockdown rescues Hox gene dysregulation in Lin28a–/– cells
 
 To further elucidate the importance of the direct regulation of let-7 by Lin28a during Hox gene regulation, we tested whether Hox gene dysregulation could be rescued by knockdown of let-7-family microRNAs. To accomplish this, Lin28a–/–embryonic stem (ES)-like cells were established from mutant blastocysts. Each Lin28a–/– clone resembled Wt cells (Figure 5A), and we confirmed that the Lin28a protein was not detected in Lin28a–/– ES cells (Figure 5B). These colonies showed high alkaline phosphatase activity (Figure 5A) and also expressed pluripotent factors (Figure 5C). As observed in Lin28a–/– embryos (Figure 3B), global accumulation of let-7-family microRNAs was observed in the mutant cells (Figure 5D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53608/elife-53608-fig5-v1.jpg)
 
-**Figure 5.:** let-7 can reverse Hox gene dysregulation.(A) Morphology (top panels) and alkaline phosphatase activity (bottom panels) of Wt and Lin28a–/– ES-like cells. (B) Western blot analysis of Lin28a in ES-like cells. β-actin is shown as a loading control. (C) q-PCR analysis of stemness factors. (D) q-PCR analysis of let-7-family members. The level of expression relative to total let-7 amount in Wt is shown. (E) q-PCR analyses of Hoxa11 and Hoxd12 over a time course of 3, 6, 9, 12 days following embryoid body formation. (F) Precursor sequences of let-7-family members and guide RNAs for let-7 targeting Let-7 mature microRNAs are shown in red. The protospacer adjacent motif (PAM) sequence for hCas9 is highlighted in yellow, and targeting sequences are underlined. (G) Let-7 expression in Wt, Lin28a–/– and Lin28a–/–; let-7 KD cells. The level of expression relative to total let-7 amount in Wt is shown. (H) Let-7 knockdown rescues Hox gene dysregulation in Lin28a–/– cells. (I) Cbx2 expression level of Wt, Lin28a–/– and Lin28a–/–; let-7 KD derived EBs. β-actin is shown as a loading control. (J) Schematic diagram of let-7 target site deletion from Cbx2 3’UTR and genotyping via PCR of mutant clones. (K) q-PCR analyses of Hoxa11 and Hoxd12 following embryoid body formation. (L) Schematic diagram of Lin28a/let-7 mediated Hox gene regulation. All data are expressed as the mean ± SEM (n = 3). n.s., not significant.Figure 5—source data 1.
+**Figure 5.:** (A) Morphology (top panels) and alkaline phosphatase activity (bottom panels) of Wt and Lin28a–/– ES-like cells. (B) Western blot analysis of Lin28a in ES-like cells. β-actin is shown as a loading control. (C) q-PCR analysis of stemness factors. (D) q-PCR analysis of let-7-family members. The level of expression relative to total let-7 amount in Wt is shown. (E) q-PCR analyses of Hoxa11 and Hoxd12 over a time course of 3, 6, 9, 12 days following embryoid body formation. (F) Precursor sequences of let-7-family members and guide RNAs for let-7 targeting Let-7 mature microRNAs are shown in red. The protospacer adjacent motif (PAM) sequence for hCas9 is highlighted in yellow, and targeting sequences are underlined. (G) Let-7 expression in Wt, Lin28a–/– and Lin28a–/–; let-7 KD cells. The level of expression relative to total let-7 amount in Wt is shown. (H) Let-7 knockdown rescues Hox gene dysregulation in Lin28a–/– cells. (I) Cbx2 expression level of Wt, Lin28a–/– and Lin28a–/–; let-7 KD derived EBs. β-actin is shown as a loading control. (J) Schematic diagram of let-7 target site deletion from Cbx2 3’UTR and genotyping via PCR of mutant clones. (K) q-PCR analyses of Hoxa11 and Hoxd12 following embryoid body formation. (L) Schematic diagram of Lin28a/let-7 mediated Hox gene regulation. All data are expressed as the mean ± SEM (n = 3). n.s., not significant.
 
 In the following experiments, we differentiated ES cells to embryoid bodies. ES cells and embryoid bodies require different PRC1 components to maintain their state. ES cells are maintained in an undifferentiated state, using Cbx7 containing PRC1. On the other hand, when ES cells exit the pluripotent state and differentiate into embryoid bodies, Cbx2 is expressed and becomes a component of PRC1 (Morey et al., 2012). Thus, we utilized embryoid bodies as an appropriate model to analyze Hox genes via Lin28/Let-7/Cbx2 axis. Embryoid bodies were produced from each clone and expression changes of Hox genes were analyzed. Hox genes were upregulated upon differentiation in these embryoid bodies, suggesting that a recapitulation of the Hox gene upregulation observed in Lin28a–/– mice occurred in Lin28a–/– ES-like cells (Figure 5E).
 
@@ -117,54 +215,505 @@ Taken together, our results suggest that the negative feedback between Lin28a an
 
 ## Materials and methods
 
-## Generation of mutant mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Arl4d</td>
+      <td>Santa Cruz</td>
+      <td>SC-271274</td>
+      <td>mouse monoclonal antibody, for western blot, at 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-b-actin</td>
+      <td>Sigma</td>
+      <td>A5316</td>
+      <td>mouse monoclonal antibody, for western blot, at 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cbx2</td>
+      <td>Abcam</td>
+      <td>ab80044</td>
+      <td>Rabbit polyclonal antibody, for western blot, at 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CBX2</td>
+      <td>Bethyl Laboratories</td>
+      <td>A302-524A</td>
+      <td>Rabbit polyclonal antibody, for ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cbx5</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2616S</td>
+      <td>Rabbit polyclonal antibody, for western blot, at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DIG-AP Fab fragment antibody</td>
+      <td>Roche</td>
+      <td>1-093-274</td>
+      <td>sheep polyclonal antibody, for in situ hybridization</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Dusp4 (MKP-2)</td>
+      <td>Santa Cruz</td>
+      <td>SC-1200</td>
+      <td>Rabbit polyclonal antibody, for western blot, at 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-E2f6</td>
+      <td>Santa Cruz</td>
+      <td>SC-8366</td>
+      <td>goat polyclonal antibody, for western blot, at 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lin28a</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3978S</td>
+      <td>Rabbit polyclonal antibody, for western blot, at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG HRP-conjugated</td>
+      <td>Sigma</td>
+      <td>A2304</td>
+      <td>goat affinity isolated antibody, for western blot, at 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG HRP-conjugated</td>
+      <td>Sigma</td>
+      <td>A6154</td>
+      <td>goat affinity isolated antibody, for western blot, at 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-trimethyl-histone H3 (Lys27)</td>
+      <td>Millipore</td>
+      <td>#07–449</td>
+      <td>Rabbit Polyclonal Antibody, for ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-trimethyl-histone H3 (Lys4)</td>
+      <td>Millipore</td>
+      <td>#07–473</td>
+      <td>Rabbit Polyclonal Antibody,for ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>normal rabbit IgG</td>
+      <td>Santa Cruz</td>
+      <td>SC-2027</td>
+      <td>Rabbit Polyclonal Antibody, for ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RING1B (D22F2) XP rabbit monoclonal antibody (mAb)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#5694S</td>
+      <td>rabbit monoclonal antibody, for ChiP</td>
+    </tr>
+    <tr>
+      <td>Cell Lines</td>
+      <td>HEK293T cells</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Lines</td>
+      <td>Wt or Lin28a-/-ES like cells</td>
+      <td>Materials and methods section</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-mercaptoethanol</td>
+      <td>Gibco</td>
+      <td>#21985023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>acetic anhydride</td>
+      <td>Wako</td>
+      <td>#011–00276</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alcian Blue</td>
+      <td>Sigma</td>
+      <td>A5268-10G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alizarin Red S</td>
+      <td>Sigma</td>
+      <td>A5533-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chaps</td>
+      <td>Dojindo Molecular Technologies</td>
+      <td>349–04722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR 99021</td>
+      <td>Wako</td>
+      <td>034–23103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fast Green FCF</td>
+      <td>Sigma</td>
+      <td>F7258-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fast Red Violet LB Salt</td>
+      <td>Sigma</td>
+      <td>F3381-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>formamide</td>
+      <td>Sigma</td>
+      <td>SIGF5786</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G-418 Sulfate</td>
+      <td>Wako</td>
+      <td>074–05963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>glycine</td>
+      <td>Wako</td>
+      <td>#077–00735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparin</td>
+      <td>Nacalai Tesque</td>
+      <td>17513–96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBT/BCIP</td>
+      <td>Roche</td>
+      <td>#1697471</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD0325901</td>
+      <td>Wako</td>
+      <td>162–25291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PFA</td>
+      <td>Wako</td>
+      <td>#162–16065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinoic acid (all-trans)</td>
+      <td>Wako</td>
+      <td>182–01111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sodium pyruvate</td>
+      <td>Gibco</td>
+      <td>#11360070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>triethanolamine</td>
+      <td>Wako</td>
+      <td>142–05625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Chemi-Lumi One</td>
+      <td>Nacalai Tesque</td>
+      <td>#07880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>DirectPCR Lysis reagent</td>
+      <td>Viagen Biotech</td>
+      <td>#102 T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ExoSAP-IT Express PCR Cleanup Reagents</td>
+      <td>ThermoFisher scientific</td>
+      <td>#75001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>FugeneHD</td>
+      <td>Promega</td>
+      <td>E2312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GoTaq Flexi DNA Polymerase</td>
+      <td>Promega</td>
+      <td>M8298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>#11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MegaClear Transcription Clean-Up Kit</td>
+      <td>Invitrogen</td>
+      <td>AM1908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>mMESSAGE mMACHINE T7 Kit</td>
+      <td>Invitrogen</td>
+      <td>AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SuperSignal West Femto Maximum Sensitivity Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#34095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SYBR Green PCR Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>#4309155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TaqMan MicroRNA Assays</td>
+      <td>Applied Biosystems</td>
+      <td>let-7a (#000377), let-7b (#002619), let-7c (#000379), let-7d (#002283), let-7e (#002406), let-7f (#000382), let-7g (#002282), let-7i (#002221), mir-98 (#000577), mir-10a (#000387), mir-10b (#002218), mir-196a (#241070), mir-196b (#002215),  RNU6B (#001093)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TaqMan Rodent MicroRNA Array A and B</td>
+      <td>Applied Biosystems</td>
+      <td>#4398979</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TaqMan Rodent MicroRNA Array B</td>
+      <td>Applied Biosystems</td>
+      <td>#4398980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TaqMan Universal Master Mix II, no UNG</td>
+      <td>Applied Biosystems</td>
+      <td>#4440040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>the TaqMan MicroRNA Reverse Transcription kit</td>
+      <td>Applied Biosystems</td>
+      <td>#4366597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ESGRO Recombinant Mouse LIF Protein</td>
+      <td>Merck Millipore</td>
+      <td>ESG1107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K recombinant PCR Grade</td>
+      <td>Roche</td>
+      <td>03-115-887-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strains</td>
+      <td>Cbx2 deficient mice</td>
+      <td>Materials and methods section</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strains</td>
+      <td>Lin28a deficient mice</td>
+      <td>Materials and methods section</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strains</td>
+      <td>Meox2 Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s Modified Eagle’s medium (DMEM)</td>
+      <td>Sigma</td>
+      <td>D5796</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutamax</td>
+      <td>Gibco</td>
+      <td>#35050061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon</td>
+      <td>Millipore</td>
+      <td>WBKLS0100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>nonessential amino acids (NEAAs)</td>
+      <td>Gibco</td>
+      <td>#11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>sheep serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>535–81301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>skim milk</td>
+      <td>Wako</td>
+      <td>#190–12865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>tRNA</td>
+      <td>Roche</td>
+      <td>109–495</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of mutant mice
 
 All animal experiments were performed in accordance with protocols approved by the Institutional Animal Care and Use Committee of the National Research Institute for Child Health and Development (permit numbers: 2004–003, 2014–001). To accomplish the Lin28a knockout, the targeting vector was constructed to replace the endogenous Lin28a locus with the Venus gene and PGK-neo cassette by homologous recombination in ES cells. The 5’ and 3’ sequences flanking the endogenous Lin28a locus were amplified by PCR from a C57BL/6N genomic bacterial artificial chromosome (BAC) clone (BACPAC Resource Center). The primer sequences used for homology arm cloning were as follows: 5’ homology arm forward primer (Fp) NotI, 5′–TTGCGGCCGCGGCTCCCTTGCCTGGTCCTCCTGCCGATTC–3′; 5’ homology arm reverse primer (Rp) SalI, 5′–GCGTCGACGGTCGTCTGCTGAGCCCGTGGCCCCGGG–3′; 3’ homology arm Fp ClaI, 5′–GGATCGATTCGAGCTTGCGATTCAGCGGGCACACCTTAGG–3′; and 3’ homology arm Rp AscI, 5′–AAGGCGCGCCAGGGTCTGGCAGCTGAGGAAGTTCCCCTAA–3′. These homology arms were cloned into a vector that incorporated both a neomycin-resistance cassette for positive selection and a diphtheria toxin A (DT-A) gene for negative selection. The targeting vector was linearized and electroporated into TT2F ES cells. Recombinant ES clones were isolated after culture in medium containing the G418 antibiotic and screened for proper integration by Southern blotting using the 5’ probe, 3’ probe, and neo cassette sequence. Two clones exhibited proper integration, as validated by genomic sequencing, and were chosen for microinjection into 8 cell stage embryos. The resulting chimeric offspring were crossed to C57BL/6N mice and germ-line transmission was confirmed by Southern blotting and PCR. The floxed PGK-neo cassette was removed by crossing with Meox2-Cre mice (The Jackson Laboratory). Genotyping of Lin28a mutant mice was performed by PCR analysis. Genomic DNA was isolated from mouse tail snips. Each tail snip was incubated at 50°C with DirectPCR Lysis reagent with Proteinase K for more than 6 hr, followed by heating at 80°C for 1 hr, to inactivate Proteinase K. The tail lysate (1 μL) was used as a PCR template. Genotyping PCR was carried out using GoTaq Flexi DNA Polymerase, according to the manufacturer’s protocol. The primer sequences used for Lin28a genotyping PCR were as follows: Lin28a KO genotyping 1, 5′–TACAAGCCACTGGAACACCA–3′; Lin28a KO genotyping 2, 5′–GGGGGTTGGGTCATTGTCTTT–3′; and Lin28a KO genotyping 3, 5′–GTTCTGCTGGTAGTGGTCGG–3′.
 
 For CRISPR/Cas9-mediated gene targeting via nonhomologous end joining (Wang et al., 2013; Inui et al., 2015), the guide RNA containing the target sequence of the Cbx2 CDS (CTGAGCAGCGTGGGCGAGC) was synthesized in vitro using mMESSAGE mMACHINE T7 Kit and was purified using MegaClear Transcription Clean-Up kit, according to the manufacturer’s instructions. A mixture containing 250 ng/μL of guide RNA and hCas9 mRNA was microinjected into the cytoplasm of a 1 cell stage embryo (C57BL/6N background). For genotyping, genomic DNA was isolated from mouse tail snips. Genotyping PCR was carried out using GoTaq Flexi DNA Polymerase, according to the manufacturer’s protocol. The primer sequences used for Cbx2 genotyping PCR were as follows: Cbx2 CDS genotyping Fp, 5′–CCCTCTGGCCAAACAATAGCTTTCCGCAGGGACC–3′; and Cbx2 CDS genotyping Rp, 5′–GCGCCACTTGACCAGGTACTCCAGCTTGCCCTGC–3′. The PCR products were treated with ExoSAP-IT and were then used as a template for direct sequencing. Sequence analysis of the Cbx2 CDS locus was performed using F0 offspring, and mice that carried frameshift mutations were selected for further analysis.
 
-## HEK293T culture
+### HEK293T culture
 
 HEK293T cells were purchased from the American Type Culture Collection (ATCC). Cells were maintained in Dulbecco’s Modified Eagle’s medium (DMEM) supplemented with 10% FBS and antibiotics. There is no mycoplasma contamination in this cell line.
 
-## Establishment of ES-Like cells
+### Establishment of ES-Like cells
 
 Lin28a–/– blastocysts were harvested and cultured on mouse embryonic fibroblasts (MEFs) in ES culture medium (15% FBS, 4.5 g/L of d-glucose, 1 × Glutamax, 1 mM sodium pyruvate, 1 × nonessential amino acids (NEAAs), 0.1 mM 2-mercaptoethanol, and 1 × 104 units/mL of LIF in DMEM) with 3 μM of CHIR 99021 and 1 μM of PD0325901. Each colony was isolated and expanded, followed by genotyping PCR. Wt and Lin28a–/– ES-like cells were stained with NBT/BCIP solution to test for alkaline phosphatase activity. There is no mycoplasma contamination in these cells. Western blotting and q-PCR analyses were performed for each genotype, as described below.
 
-## Western blotting
+### Western blotting
 
 Whole-protein extracts from the somites and neural tubes of E9.5 embryos were prepared for western blotting. Samples were separated using 10% SDS–PAGE and blotted onto PVDF membranes. The membranes were first incubated with blocking solution (5% skim milk in TBST) and then incubated with the primary antibody in blocking solution. Membranes were washed in TBST three times for 15 min and incubated with a horseradish peroxidase (HRP)-conjugated secondary antibody in blocking solution. The blots were visualized using Chemi-Lumi One, Immobilon, SuperSignal West Femto Maximum Sensitivity Substrate, and LAS-3000 (Fujifilm), followed by analysis using the Multi Gauge Ver3.2 software. β-actin was measured as an internal control. The antibodies used and their dilutions were listed in Key Resources Table.
 
-## In situ hybridization
+### In situ hybridization
 
 Lin28a–/– embryos and Wt littermates were obtained by intercrossing Lin28a+/– mice. Whole-mount in situ hybridization was performed as described previously (Yokoyama et al., 2009); the details of the probe sequence can be obtained from the ‘EMBRYS’ website (http://embrys.jp/embrys/html/MainMenu.html). Briefly, embryos were fixed in 4% PFA/PBT and dehydrated in a series of increasing MetOH concentrations. Rehydrated samples were bleached with 6% H2O2 in PBT and treated with 10 μg/mL of Protease K for 10 min at room temperature (RT), stopped with 0.2% glycine, and refixed with 4% PFA/0.2% glutaraldehyde in PBT for 20 min at RT. RNA hybridization was performed at 70°C for more than 14 hr, after prehybridization for 1 hr in hybridization buffer (50% formamide, 5 × SSC, 1% SDS, 50 μg/mL of tRNA, and 50 μg/mL of heparin in RNase-free H2O). Subsequently, embryos were washed three times in wash buffer 1 (50% formamide, 5 × SSC, and 1% SDS in RNase-free H2O) and twice in wash buffer 2 (50% formamide, 2 × SSC, and 5% Chaps in RNase-free H2O). After blocking with 10% sheep serum in TBST for 1 hr at RT, samples were incubated with an anti-DIG-AP Fab fragment antibody and 1% sheep serum in TBST overnight (O/N) at 4°C. After a series of washes with TBST, embryos were equilibrated in alkaline phosphatase buffer (NTMT) and developed with NBT/BCIP solution (Roche). After the color reaction, the embryos were rinsed in TBST several times and postfixed in 4% PFA/PBT at 4°C.
 
 In situ hybridization of sections was performed on Wt and Lin28a–/– embryos at E12.5, as described previously (Uchibe et al., 2012). Embryos were fixed in 4% PFA/PBT, dehydrated in a series of increasing MetOH concentrations, and embedded in paraffin. Sagittal sections (10 μm) were stained with Alcian Blue and Fast Red to outline the pre-vertebrae. Deparaffinized and rehydrated sections were treated with 8 μg/mL of Proteinase K (Roche) in PBS for 10 min, and the reaction was stopped with 0.2% glycine in PBS. After postfixation with 4% PFA, samples were acetylated in acetylation buffer (100 mM triethanolamine, 2.5 mM acetic anhydride; pH was adjusted to 8.0 using HCl). Sections were incubated in prehybridization buffer (50% formamide, 5 × SSC) for 1 hr at 65°C. Subsequently, hybridization was performed O/N at 65°C using an RNA probe for Hoxc13 in hybridization buffer (50% formamide, 5 × SSC, 10% dextran sulfate, 5 × Denhardt’s solution, 0.1 mg/mL of salmon sperm DNA, and 0.25 mg/mL of tRNA). The sections were washed with 0.2 × SSC for 3 hr at 65°C and rinsed with neutralize tagment (NT) buffer (100 mM Tris-HCl, pH 7.5, 150 mM NaCl) for 5 min. After blocking with 10% sheep serum in NT buffer, samples were incubated with an anti-DIG-AP Fab fragment antibody and 1% sheep serum O/N at 4°C. After a series of washes with NT buffer, samples were equilibrated in NTM (100 mM NaCl, 100 mM Tris-HCl, pH 9.5, and 50 mM MgCl2) and developed using an NBT/BCIP solution. After the color reaction, the embryos were counterstained with Fast green.
 
-## Skeletal preparation
+### Skeletal preparation
 
 Whole-mount skeletal preparations of neonatal mice of each genotype were performed using Alcian Blue and Alizarin Red S staining. For RA treatment, 1 mg/kg of RA was injected intraperitoneally at 7.5 dpc, and the skeletal patterning of each genotype was analyzed at E15.5. The samples were fixed in 100% ethanol (EtOH) for 1–2 days after the majority of the skin and internal organs were removed. The 100% EtOH wash was changed several times. After fixation, the samples were incubated in Alcian Blue solution (0.03% Alcian Blue 8GX, 80% EtOH, and 20% acetic acid) for up to 2 days. The samples were rinsed in distilled water three times and incubated in Alizarin Red Solution (0.01% Alizarin Red S, 1% KOH in H2O) O/N. The samples were treated with discoloring solution (1% KOH, 20% glycerol in H2O) for 4–7 days. The samples were soaked in a series of glycerol/EtOH solutions (20% glycerol, 20% EtOH; 50% glycerol, 50% EtOH) and stored in 100% glycerol.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Total RNA was isolated from whole embryos (Figure 3A and B), or from dissected somites and neural tubes (Figures 2A, 3C and G) at E9.5 using ISOGEN (Nippon Gene), according to the manufacturer’s instructions. For SYBR green q-PCR, a complementary DNA (cDNA) was produced using Superscript II reverse transcriptase, 1 μg of total RNA, and an oligo(dT)18 primer. q-PCR analysis was performed using the SYBR Green PCR Master Mix and an ABI 7900HT instrument (Applied Biosystems). Gapdh was measured as an internal control to normalize sample differences. The primer sets used for all Hox genes were described by Kondrashov et al., 2011. The primer sequences used for other genes were as follows: Lin28a Fp1, 5′–CTCGGTGTCCAACCAGCAGT–3′; Lin28a Rp1, 5′–CACGTTGAACCACTTACAGATGC–3′; Lin28a Fp2, 5′–AGGCGGTGGAGTTCACCTTTAAGA–3′; Lin28a Rp2, 5′–AGCTTGCATTCCTTGGCATGATGG–3′; Cbx2 Fp, 5′–AGGCCGAGGAAACACACAGT–3′; Cbx2 Rp, 5′–GGAGGAAGAGGACGAACTGC–3′; Oct3/4 Fp, 5′–GTTTCTGAAGTGCCCGAAGC–3′; Oct3/4 Rp, 5′–GCGCCGGTTACAGAACCATA–3′; Nanog Fp, 5′–ACCTCAGCCTCCAGCAGATG–3′; Nanog Rp, 5′–ACCGCTTGCACTTCATCCTT–3′; Sox2 Fp, 5′–GGCAGCTACAGCATGATGCAGGAGC–3′; Sox2 Rp, 5′–CTGGTCATGGAGTTGTACTGCAGG–3′; Gapdh Fp, 5′–CCTGGTCACCAGGGCTGC–3′; and Gapdh Rp, 5′–CGCTCCTGGAAGATGGTGATG–3′.
 
 For microRNAs, cDNAs were produced using the TaqMan MicroRNA Reverse Transcription kit according to the manufacturer’s protocol. q-PCR was performed using TaqMan Rodent MicroRNA Array A and B and TaqMan MicroRNA Assays for let-7a, let-7b, let-7c, let-7d, let-7e, let-7f, let-7g, let-7i, mir-98, mir-10a, mir-10b, mir-196a, mir-196b, and RNU6B. RNU6B was measured as an internal control to normalize sample differences.
 
-## Luciferase assay
+### Luciferase assay
 
 The pLuc2 reporter vector was as described previously (Miyaki et al., 2010). To create the let-7 sensor vector, the chemically synthesized let-7 complementary sequence was annealed and inserted between the EcoRI and XhoI sites. To create the pLuc2-candidate gene 3′UTR vector, the predicted let-7 target sequence of each genes of 3′UTR was cloned into pLuc2. Fragment containing mutation in let-7 target sequence were also cloned in pLux2. The miRNA precursor sequence (40 bp) was cloned into pcDNA3.1 and used as an miRNA-expressing vector. Transfection into HEK293T cells was performed using Lipofectamine 2000 or FugeneHD. The transfected cells were incubated for 48 hr, and luciferase activity was determined using the Dual-Glo Luciferase Assay System.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Harvested E9.5 embryos were dissected into somites and neural tubes. Genomic DNA was isolated from the yolk sac and genotyping PCR was performed. Samples were cryopreserved until use. For each assay, ChIP was performed on a pool of 10 embryos. Each antibody (5 μg) was used for immunoprecipitation. The antibodies used for ChIP were listed in Key Resources Table. The frozen samples were cross-linked with 1% formaldehyde in PBS for 10 min at RT. Cross-linking was stopped by adding 100 μL of 1.25 M glycine for 5 min at RT. Samples were washed with PBS and suspended in cell lysis buffer (10 mM Tris-HCl (pH 7.5), 10 mM NaCl, 3 mM MgCl2, 0.5% NP-40, and 1 mM PMSF). Nuclei were collected by centrifugation and resuspended in cell lysis buffer twice. Samples were suspended in 130 μL of nucleus lysis buffer (50 mM Tris-HCl (pH 8.0), 10 mM EDTA (pH 8.0), 1% SDS, and 1 mM PMSF) and transferred into Covaris microTUBEs. The chromatin was sheared by sonication (peak power, 105; duty factor, 5.0; cycles/burst, 200; duration, 10 min). The sheared DNA was diluted in IP dilution buffer (20 mM Tris-HCl (pH 8.0), 2 mM EDTA (pH 8.0), 150 mM NaCl, 1% Triton X-100, 0.1% SDS, and 1 mM PMSF), added to antibody beads, and rotated O/N at 4°C. Precipitated beads with chromatin were washed four times with ChIP wash buffer 1 (20 mM Tris-HCl (pH 8.0), 2 mM EDTA (pH 8.0), 150 mM NaCl, 1% Triton X-100, 0.1% SDS, and 1 mM PMSF) and twice with ChIP wash buffer 2 (20 mM Tris-HCl (pH 8.0), 2 mM EDTA (pH 8.0), 500 mM NaCl, 1% Triton X-100, 0.1% SDS, and 1 mM PMSF). After washing with TE, chromatin was isolated using nucleus lysis buffer at 65°C. The isolated chromatin was de-cross-linked for 6 hr at 65°C. After Proteinase K treatment, DNA was purified using a PCR purification kit (elute in 50 μL of H2O). q-PCR was performed on immunoprecipitated DNA and input DNA and analyzed for the efficiency of immunoprecipitation by each antibody. The primer sequences used for ChIP q-PCR were as follows: ChIP Hoxa1 Fp, 5′–TGAGAAAGTTGGCACGGTCA–3′; ChIP Hoxa1 Rp, 5′–CACTGCCAAGGATGGGGTAT–3′; ChIP Hoxa2 Fp, 5′–CTCCAAGGAGAAGGCCATGA–3′; ChIP Hoxa2 Rp, 5′–CGACAGGGGGAAAAGATGTC–3′; ChIP Hoxa3 Fp, 5′–GTTGTCGCTGGAGGTGGAG–3′; ChIP Hoxa3 Rp, 5′–GCCAGAGGACGCAGGAAAT–3′; ChIP Hoxa4 Fp, 5′–AACGACACCGCGAGAAAAAT–3′; ChIP Hoxa4 Rp, 5′–GGGAACTTGGGCTCGATGTA–3′; ChIP Hoxa5 Fp, 5′–TCCCCCGAATCCTCTGTATC–3′; ChIP Hoxa5 Rp, 5′–ATTGCATTTCCCTCGCAGTT–3′; ChIP Hoxa6 Fp, 5′–GTTCGGCCATCCAGAAACA–3′; ChIP Hoxa6 Rp, 5′–CCCCTCTGCAGGACTGTGAT–3′; ChIP Hoxa7 Fp, 5′–AGCCTTCACCCGACCTATCA–3′; ChIP Hoxa7 Rp, 5′–AGCACAGCCTCGTTCTCTCC–3′; ChIP Hoxa9 Fp, 5′–CCTCCCGGGTTAATTTGTAGC–3′; ChIP Hoxa9 Rp, 5′–CCCCTGCCTTGGTTATCCTT–3′; ChIP Hoxa10 Fp, 5′–CCTAGACTCCACGCCACCAC–3′; ChIP Hoxa10 Rp, 5′–GGCTGGAGACAGCTCCTCA–3′; ChIP Hoxa11 Fp, 5′–AGAGCTCGGCCAACGTCTAC–3′; ChIP Hoxa11 Rp, 5′–AACTGGTCGAAAGCCTGTGG–3′; ChIP Hoxa13 Fp, 5′–ACTTCGGCAGCGGCTACTAC–3′; ChIP Hoxa13 Rp, 5′–CATGTACTTGTCGGCGAAGG–3′; ChIP Hoxc13 Fp, 5′–CAGGAGACCCAGGCTTAGCA–3′; ChIP Hoxc13 Rp, 5′–GCATGCGGACACACTTCATT–3′; ChIP Hoxd12 Fp, 5′–GGAGATGTGTGAGCGCAGTC–3′; ChIP Hoxd12 Rp, 5′–CTGCCATTGGCTCTCAGGTT–3′.
 
-## Knockdown of let-7 in ES-like cells
+### Knockdown of let-7 in ES-like cells
 
 To knockdown let-7 expression, guide-RNAs targeting the let-7 family members were constructed. The target sequences of let-7 family members were as follows: let-7a-1, TAGTAGGTTGTATAGTTTT; let-7a-2 and let-7c-1, GGTTGAGGTAGTAGGTTGT; let-7b, TAGTAGGTTGTGTGGTTTC; let-7c-2, TAGTAGGTTGTATGGTTTT; let-7d, TAGTAGGTTGCATAGTTTT; let-7e, GTAGGAGGTTGTATAGTTG; let-7f-1, TAGTAGATTGTATAGTTGT; let-7f-2, TAGTAGATTGTATAGTTTT; let-7g, TAGTAGTTTGTACAGTTTG; and let-7i, AGGTAGTAGTTTGTGCTGT (see also Figure 5H). Four guide-RNA-expressing plasmid vectors and an hCas9 vector (500 ng each) were transfected into 1 × 106 cells using the Neon transfection system, according to the manufacturer’s instructions. Transfected cells were cultured in ES medium containing 0.5 μg/mL of puromycin for 2 days. Each colony was isolated and expanded, followed by PCR and sequence analysis. The primer sequences used for let-7 genotyping PCR were as follows: let-7a-1 Fp, 5′–GGCTTATAGCCCAGGTGTATCAT–3′; let-7a-1 Rp, 5′–ACTTGCCCATTCCCATCATC–3′; let-7a-2 Fp, 5′–TTCTTATGAACGGCCCGAGT–3′; let-7a-2 Rp, 5′–CCGTTGATCACCTGTGTTGC–3′; let-7c-1 Fp, 5′–TGGTAGGCACAGGCCTTTCT–3′; let-7c-1 Rp, 5′–CAATGTGTGGTTGGCGATCT–3′; let-7b Fp, 5′–TTTGCTCGCTGCTAATGGAA–3′; let-7b Rp, 5′–GGCCTCATGGACTCATGACA–3′; let-7c-2 Fp, 5′–GTCTCCCCGTCTCCCCTTAC–3′; let-7c-2 Rp, 5′–AGGTGCCCTGAAAATGCTGT–3′; let-7d Fp, 5′–TTTGGCTTTTGCCAAGATCA–3′; let-7d Rp, 5′–TGCTTTCCAAAACTTCCCAGT–3′; let-7e Fp, 5′–TGAATTCCTGGGTTCCTTGG–3′; let-7e Rp, 5′–TCAAGATGGCATAGAGACTGCAA–3′; let-7f-1 Fp, 5′–GATGATGGGAATGGGCAAGT–3′; let-7f-1 Rp, 5′–CCAAAAGGCCTGGTCCTAGA–3′; let-7f-2 Fp, 5′–TCTTGTGTGCTTGTCTCCCATT–3′; let-7f-2 Rp, 5′–CTGAGAACCACTGCCACCAG–3′; let-7g Fp, 5′–TGGTGTATTTCTTTTGTTGGGTTG–3′; let-7g Rp, 5′–TGAACAACTCCAAGCCTCTCA–3′; let-7i Fp, 5′–GGGCCCCGGATGTAAGATGG–3′; and let-7i Rp, 5′–CCTCGAGAACGAAACCCAAC–3′. The PCR products were treated with ExoSAP-IT (Affimetrix) and used as templates for direct sequencing. Clones of let-7 family members with deletions of several nucleotides were selected for further analysis.
 
 Embryoid bodies were produced from each clone, and expression changes of Hox genes were analyzed over 3 days. Cells (1 × 106) were suspended in 1 mL of DMEM with 10% FBS and plated in low-adhesion culture dishes. After several hours, self-aggregated ES-like cells were resuspended in 10 mL of medium. The medium was changed every other day. RNA isolation and q-PCR analysis are described above.
 
-## Statistical analyses
+### Statistical analyses
 
 Two-tailed independent Student’s t-tests were used to determine all P values. Asterisks indicate statistically significant differences (at p<0.05), whereas n.s. indicates an absence of significance.

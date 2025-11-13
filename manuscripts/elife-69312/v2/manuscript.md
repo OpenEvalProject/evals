@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Ca 2+ entry into mitochondria is through the mitochondrial calcium uniporter complex (MCU cx ), a Ca 2+ -selective channel composed of five subunit types. Two MCU cx subunits (MCU and EMRE) span the inner mitochondrial membrane, while three Ca 2+ -regulatory subunits (MICU1, MICU2, and MICU3) reside in the intermembrane space. Here, we provide rigorous analysis of Ca 2+ and Na + fluxes via MCU cx in intact isolated mitochondria to understand the function of MICU subunits. We also perform direct patch clamp recordings of macroscopic and single MCU cx currents to gain further mechanistic insights. This comprehensive analysis shows that the MCU cx pore, composed of the EMRE and MCU subunits, is not occluded nor plugged by MICUs during the absence or presence of extramitochondrial Ca 2+ as has been widely reported. Instead, MICUs potentiate activity of MCU cx as extramitochondrial Ca 2+ is elevated. MICUs achieve this by modifying the gating properties of MCU cx allowing it to spend more time in the open state.
+Ca2+ entry into mitochondria is through the mitochondrial calcium uniporter complex (MCUcx), a Ca2+-selective channel composed of five subunit types. Two MCUcx subunits (MCU and EMRE) span the inner mitochondrial membrane, while three Ca2+-regulatory subunits (MICU1, MICU2, and MICU3) reside in the intermembrane space. Here, we provide rigorous analysis of Ca2+ and Na+ fluxes via MCUcx in intact isolated mitochondria to understand the function of MICU subunits. We also perform direct patch clamp recordings of macroscopic and single MCUcx currents to gain further mechanistic insights. This comprehensive analysis shows that the MCUcx pore, composed of the EMRE and MCU subunits, is not occluded nor plugged by MICUs during the absence or presence of extramitochondrial Ca2+ as has been widely reported. Instead, MICUs potentiate activity of MCUcx as extramitochondrial Ca2+ is elevated. MICUs achieve this by modifying the gating properties of MCUcx allowing it to spend more time in the open state.
 
 ## Introduction
 
@@ -31,17 +31,49 @@ For Ca2+ to enter the matrix, Ca2+ must first permeate the outer mitochondrial m
 
 ## Results
 
-## Quantitative assessment of the MCUcx and its subunits
+### Quantitative assessment of the MCUcx and its subunits
 
 A whole mitoplast patch clamp method was used to measure whole IMM current to assess MCUcx function (Fieni et al., 2012; Garg and Kirichok, 2019; Kirichok et al., 2004) and determine how the subunits contribute to the measured MCUcx current. Mitochondria were isolated from DRP1 knockout (KO) mouse embryonic fibroblasts (MEFs) (Ishihara et al., 2009). DRP1 is encoded by the Dnm1l. The DRP1-KO MEFs were used to prepare mitoplasts using a French Press. This cell line was chosen as the source for many experiments because it provided a significantly higher proportion of large isolated mitoplasts and enabled the recording of stable MCUcx currents with a favorable signal-to-noise ratio. We confirmed that this cell line expresses all principal subunits of the MCU complex (Figure 1—figure supplement 1). Importantly, the MCUcx was intact in isolated mitoplasts, and its composition was the same as in intact mitochondria (Figure 1—figure supplement 2F). We also generated gene knockouts for all principal subunits of the MCU complex (MCU, EMRE, and MICU1−3) using CRISPR-Cas9 in this cell line (Figure 1—figure supplement 1). MCU, EMRE, and MICU1−3 are encoded by the Mcu, Smdt1 and Micu1−3 genes, respectively.
 
 Figure 1A shows the [Ca2+]i dependence of the MCUcx current in mitoplasts from WT DRP1-KO MEFs, and shows the absence of Ca2+ current (ICa) in MCU-KO or EMRE-KO. Additionally, it shows an important feature of the MCUcx; in the absence of extramitochondrial Ca2+ (control trace), there is outward current at positive potentials resulting from the efflux of Na+ through the MCUcx due to the 110 mM Na+ gluconate in the matrix from the patch pipette (Figure 1A, Figure 1—figure supplement 2D and E). When extramitochondrial Ca2+ is present, Ca2+ enters the selectivity filter of the MCUcx channel to block Na+ permeation (Fieni et al., 2012; Garg and Kirichok, 2019; Kirichok et al., 2004) and no outward current is seen. Importantly, MCUcx currents can be rescued by the ectopic expression of the MCU and EMRE subunits in their corresponding knockout cell lines (Figure 1B and C, Figure 1—figure supplement 2G and H). From these results, the DRP1-KO MEFs recapitulate key findings in previous publications (Chaudhuri et al., 2013; Fieni et al., 2012; Kirichok et al., 2004; Sancak et al., 2013). We show an additional novel observation, important to our later experiments, that when Na+ is used to replace Ca2+ in the cytosolic compartment (i.e. the bath solution), an MCU-mediated Na+ current (INa) is observed, and this current also depends on the presence of MCU and EMRE (Figure 1D and E, Figure 1—figure supplement 2D and E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig1-v2.jpg)
+
+**Figure 1.:** (A) Inward ICa elicited by a voltage ramp in WT, MCU-KO and EMRE-KO mitoplasts exposed to [Ca2+]i of 30 μM, 100 μM, and 1 mM. In WT, also note an outward Na+ current via MCU at positive voltages in Ca2+-free bath solution (Control). Voltage protocol is indicated on the top. All superimposed current traces in a single panel are from the same mitoplast. (B) ICa is rescued by the recombinant expression of MCU and EMRE in their respective knockout cell lines. (C) ICa density measured at −160 mV at different [Ca2+]i in indicated cell lines; n = 4–5. (D) Representative INa in WT, MCU-KO and EMRE-KO mitoplasts at 110 mM [Na+]i. (E) INa density measured at −80 mV in WT, MCU-KO, and EMRE-KO mitoplasts; n = 3–20. (F and G) Representative [Ca2+]m (black, left ordinate) and [Ca2+]i (blue, right ordinate) in an individual cell with (F) WT MCUcx, and (G) MICU1 knockout before and after application of 300 nM thapsigargin (Tg, arrow). Dashed red lines indicate the [Ca2+]i at which the [Ca2+]m starts to increase (‘Threshold’). (H) [Ca2+]i threshold for [Ca2+]m elevation in WT and indicated knockout cell lines; n = 3–4 dishes, total cells = ~150 each group. Data shown as mean ± SEM; one-way ANOVA with post-hoc Tukey test. Statistics was run on number of dishes. (I) Ca2+ conductance (G) of the IMM plotted as a function of [Ca2+]i. Right panel shows the zoomed-in region for [Ca2+]i between 0 and 3 μM; n = 64–75 independent experiments, N = 4–7 independent preparations, all data is shown. All superimposed current traces in a single panel are from the same mitoplast. Data shown as mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A schematic arrangement of various subunits in the MCUcx. Four MCU and four EMRE subunits form the pore of the MCUcx (only two MCU and two EMRE subunits are shown for simplicity). EMRE also tethers MICU1 subunit to the pore on the cytosolic side of the IMM. MICU1 forms homodimers or hetero-dimerizes with MICU2. Each MICU subunit has two EF hands that bind cytosolic Ca2+. (B–F) CRISPR-mediated indels in various MCUcx genes and the resulting mutant alleles. The CRISPR binding sites (for sgRNA) are highlighted in yellow, and their PAM sequences are highlighted in green. The translational initiation codon (ATG) is shown in bold where applicable. (B) Overview of the Mcu gene and indels in the knockout. A sgRNA was used to target exon 3. The sequence of targeted region in Mcu gene is shown; exon 3 is underlined. Targeted sequencing indicates frame-shift indels (red) in both alleles (Al-1 and Al-2). (C) Overview of the Smdt1 gene and the truncated region in the knockout. Two sgRNAs were used for CRISPR-Cas9–mediated deletion in the exon-2 (underlined) and the flanking region. Targeted sequencing indicates same 259 bp deletion (red) in both alleles. (D) Overview of the Micu1 gene and the truncated region in the knockout. Two sgRNAs were used for CRISPR-Cas9–mediated deletion in the exon-3 (underlined) and the flanking region. Targeted sequencing indicates that almost all of exon-3 is deleted along with a portion of the flanking region (red) in both alleles (Al-1 and Al-2). (E) Overview of the Micu2 gene and the truncated region in the knockout. Two sgRNAs were used for CRISPR-Cas9–mediated deletion in the exon-1 (underlined) and the flanking region. Targeted sequencing indicates that almost all of exon-1 is deleted (red) in both alleles. (F) Overview of the Micu3 gene and the truncated region in the knockout. Two sgRNAs were used for CRISPR-Cas9-mediated deletion in the exon-1 (underlined). Targeted sequencing indicates a 73 bp deletion in the expected cut area (red) in both alleles. (G–I) Western blots show expression of various MCUcx subunits in the respective knockout cells. For MICU1 (G), samples were prepared without reducing agent, β-mercaptoethanol. The MICU1 band is near the expected molecular weight (~100 kDa) for the homo- or heterodimer (with MICU2 or 3). Multiple bands were observed with anti-MICU2 (H) and anti-MICU3 (I) antibodies, which were absent in knockout cell lines. This is likely due to the presence of different oligomeric states of the protein, as well as the mature and nascent (before truncation of the mitochondrial targeting signal) forms of the protein. Arrows mark the mature (m) and nascent (n) proteins near the expected molecular weight. (J) PCR showing the mRNA expression of various MCU subunits in Dnm1l-/- MEFs. Hprt was used as the reference.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Representative [Ca2+]m (black, left ordinate) and [Ca2+]i (blue, right ordinate) in an individual cell with WT MCUcx (A), MCU-KO (B), and EMRE-KO (C) before and after application of 300 nM Tg (arrow). (D) Diagram of patch-clamp recording from a vesicle of the whole IMM (mitoplast). After formation of a gigaohm seal between the patch pipette and the mitoplast, the IMM patch under the pipette is broken by applying short pulses of high voltage (200–500 mV, 2–8 ms), to gain access into the mitoplast through the pipette. In this configuration, called the ‘whole-IMM’ configuration, the interior of the mitoplast (mitochondrial matrix) is perfused with the pipette solution. The bath is also perfused to control the experimental solution on the cytosolic side of the IMM. The voltage across the IMM is set to the desired value (V), and the currents (I) are measured using the patch-clamp amplifier. Directions of currents flowing across the IMM: inward currents (flowing into the mitoplast) are negative, while outward currents are positive. (E) Left panel: Example MCUcx current traces recorded in the whole-IMM configuration. The voltage protocol used to elicit the currents is shown above. All indicated voltages are within the mitochondrial matrix relative to the bath (cytosol). The voltage of the bath solution is defined to be zero. The zero current level is shown by the dashed line and an arrow. The directions of the currents are indicated as negative (inward) and positive (outward). Control current (Ca2+-free bath solution) is shown in grey. In Control, the outward current at positive voltages is mediated by Na+ ions permeating through MCUcx channel in the Ca2+-free bath solution (INa, pipette solution contains Na-gluconate). After application of 1 mM Ca2+ on the cytosolic face of the IMM (bath), we observe an inward Ca2+ current (ICa, blue) via MCUcx, while the outward INa is inhibited by the bath Ca2+. Right panel, When [Ca2+]i is brought to virtual zero by addition of Ca2+ chelators (1 mM EGTA and 5 mM EDTA), we observe INa via MCUcx (red) in both inward and outward directions (both bath and pipette solution contain Na-gluconate). (F) Co-immunoprecipitation of the MCUcx proteins from mitochondrial and mitoplast fractions. Anti-FLAG beads were used to immunoprecipitate MCU-FLAG (expressed in MCU-KO cells) from mitochondrial and mitoplast fractions. Mitochondria isolated from WT cells (No FLAG tag) were used as negative control. Left three lanes are protein-complexes immunoprecipitated with anti-FLAG beads. Lane-1: immunoprecipitate (IP) from MCU-FLAG mitochondrial lysate, lane-2: IP from MCU-FLAG mitoplast lysate, lane-3: IP from WT mitochondrial lysate. Right three lanes correspond to samples from the flow-through fraction after immunoprecipitation. Lane-1*: mitochondrial lysate from MCU-FLAG, lane-2*: mitoplast lysate from MCU-FLAG, lane-3*: mitochondrial lysate from WT. Upper (MICU1, MCU, and EMRE) and lower (MICU2 and TOM20) boxes are from the same samples run on different gels. (G) Western blots of protein lysates from cells with WT MCUcx (WT), MCU-KO cells, and MCU-KO cells overexpressing MCU (MCU-OE) using anti-MCU and anti-TOM20 (the mitochondrial loading control) antibodies. (H) Western blots of protein lysates from WT cells, EMRE-KO cells, and EMRE-KO cells overexpressing EMRE (EMRE-OE) using anti-EMRE, anti-TOM20 and anti-HSP60 (the mitochondrial loading controls) antibodies.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A and B) Representative [Ca2+]m (black, left ordinate) and [Ca2+]i (blue, right ordinate) in an individual cell with MICU2 (A) and MICU3 (B) knockouts before and after application of 300 nM Tg (arrow). Dashed red lines indicate the [Ca2+]i at which [Ca2+]m starts to increase (‘Threshold’). (C and D), Resting [Ca2+]i (C) and peak [Ca2+]i after addition of Tg (D) in WT and indicated knockout cell lines. Data shown as mean ± SEM; one-way ANOVA with post-hoc Tukey test, n = 3–5 dishes, total = ~150 cells per group. (E) Net Ca2+ flux (J) into mitochondria isolated from MEFs plotted as a function of [Ca2+]i. Right panel shows the zoomed-in region for [Ca2+]i between 0 and 3 μM; n = 64–75 independent experiments, N = 4–7 independent preparations, all data is shown.
+
 In intact WT cells, the [Ca2+]i increase (elicited by SERCA inhibitor thapsigargin) was followed, after a short delay, by [Ca2+]m elevation as detected by a genetically-encoded Ca2+ indicator Cepia targeted to mitochondria (Suzuki et al., 2014; Figure 1—figure supplement 2A). However, as expected, in MCU-KO or EMRE-KO cell lines that have no functional MCUcx (Baughman et al., 2011; De Stefani et al., 2011; Sancak et al., 2013), no significant [Ca2+]m elevation was observed (Figure 1—figure supplement 2B and C).
 
 One of the controversial elements in previously published experiments is the explanation of the cause of the ‘threshold’ of the MCUcx Ca2+ influx into the matrix (Csordás et al., 2013; Tomar et al., 2019; Foskett and Madesh, 2014; Hoffman et al., 2013; Mallilankaraman et al., 2012b; Perocchi et al., 2010; Tufi et al., 2019). It was noted initially (Mallilankaraman et al., 2012b) that there is a cytosolic concentration of Ca2+ ([Ca2+]i) below which there is no MCUcx-medicated Ca2+ influx. Figure 1F shows that such a threshold for DRP1-KO WT MEF is indeed found at around 400 nM Ca2+. This threshold is largely gone in MICU1-KO cells (Figure 1G). In MICU2-KO and MICU3-KO cells, the changes in the threshold levels are shown in Figure 1H, and Figure 1—figure supplement 3A–D. Past studies of other investigators have used similar information from their MICU1-KO cells to argue that MICU1 forms a ‘plug’ or an occlusion in the channel pore. This implies that in MICU1-KO cells, the MCUcx conductance should be greater due to the removal of the plug. This conclusion, however, is challenged by the Ca2+ conductance studies shown here in isolated mitochondria from WT MEFs shown in Figure 1I and Figure 1—figure supplement 3E. While the Figure shows increased conductance of MCUcx at low [Ca2+]i in the MICU1-KO mitochondria consistent with the removal of a putative MCUcx‘plug’, there is decreased conductance at high [Ca2+]i (~8 μM or higher), an observation that is inconsistent with the plug hypothesis (Mallilankaraman et al., 2012b). Additional recent modifications of this hypothesis add the prediction that allosteric actions of MICU1 on MCUcx account for any inconsistencies or contradictions of the plug hypothesis (Csordás et al., 2013). Moreover, new findings suggest that there may be broad actions of MICU1 on non-MCUcx targets within the mitochondria (Tomar et al., 2019; Gottschalk et al., 2019; Tufi et al., 2019). These findings and the unrefined and untested modifications of the plug hypothesis motivate additional investigations. We have carried out new quantitative experiments and analysis that may help us better understand how MICU1 works in the context of the MCUcx as is shown in Figure 2.
 
-## MICUs are [Ca2+]i-dependent MCUcx potentiators
+![Figure 2.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig2-v2.jpg)
+
+**Figure 2.:** (A) Inward ICa in WT, MICU1-KO, MICU2-KO, and MICU3-KO mitoplasts exposed to 10 μM, 100 μM and 1 mM [Ca2+]i. (B) ICa densities measured at −160 mV and [Ca2+]i of 10 μM, 100 μM, and 1 mM (upper), as well as 5 mM and 25 mM (lower). Data shown as mean ± SEM; one-way ANOVA with post-hoc Tukey test, n = 8–17. (C) Representative ICa (blue) and INa (red) recorded from the same WT and MICU1-KO mitoplasts exposed to 1 mM [Ca2+]i or 110 mM [Na+]i in the absence of Ca2+. (D–F) Amplitudes of INa (D) and ICa (E), as well as the ICa/INa ratio (F) in the same WT and MICU1-KO mitoplasts. Currents were measured at −80 mV. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 18–27. (G and H) ΔΨ depolarization induced by application of 5 mM EDTA in suspension of isolated mitochondria from mouse liver (G) and MEF (H). The degree of depolarization is expressed as percentage of the full depolarization induced by 1 µM FCCP. Both WT and MCU-KO mitochondria were assessed. Data shown as mean ± SEM; one-way ANOVA with Tukey test, n = 4–9. (I) ΔΨ depolarization induced by application of 5 mM EDTA in suspension of isolated mitochondria from MEF with WT and MICU1-deficient MCUcx. WT data in panel I is the same as in panel H. The degree of depolarization is expressed as percentage of the full depolarization induced by 1 µM FCCP. Data shown as mean ± SEM; one-way ANOVA with Tukey test, n = 4–5. All superimposed current traces in a single panel are from the same mitoplast.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) ICa amplitude in WT and MICU1–3 knockouts measured at −160 mV using 10 μM [Ca2+]i. The data is same as in Figure 3B, but presented with an enlarged Y-axis. Data shown as mean ± SEM; one-way ANOVA with post-hoc Tukey test, n = 8–13. (B) Representative inward ICa in WT, MICU1-KO, MICU2-KO, and MICU3-KO mitoplasts exposed to 5 mM, and 25 mM [Ca2+]i. All superimposed current traces in a single panel are from the same mitoplast. (C) ICa amplitude measured at −80 mV in WT, MICU1-KO, MICU2-KO, and MICU3-KO mitoplasts at 10 μM, 100 μM, and 1000 μM [Ca2+]i (Upper panel, for ICa traces see Figure 3A) and at 5 mM and 25 mM [Ca2+]i (Lower panel, for ICa traces see B). Data shown as mean ± SEM; one-way ANOVA with post-hoc Tukey test, n = 8–14. (D–F) Western blots showing the expression levels of EMRE (D), MCU (E), and MCUb (F) in cells with WT MCU complex and MICU1-KO (n = three independent samples each). (G) Upper panel: Western blots showing EMRE protein level in WT and MICU1-KO (before and after EMRE overexpression). Lower panel: Bar-graph shows the quantification of EMRE protein levels normalized to TOM20. Data shown as mean ± SEM, one-way ANOVA with post-hoc Tukey test, n = four independent samples each. (H) Representative inward ICa in WT, MICU1-KO, and MICU1-KO with EMRE overexpression (MICU1-KO + EMRE) upon exposure to 100 μM and 1000 μM [Ca2+]i. All superimposed current traces in a single panel are from the same mitoplast. (I) ICa amplitudes measured at −160 mV in MICU1-KO with EMRE overexpression (MICU1-KO + EMRE) as well as in MICU1-KO and WT. WT and MICU1-KO data are the same as in Figure 3B. Data shown as mean ± SEM, one-way ANOVA with post-hoc Tukey test, n = 7–16.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Inward INa recorded in the absence of cytosolic Ca2+ (blue) and subsequently at 2 nM [Ca2+]i (red) in WT (left) and MICU1-KO (right) mitoplasts exposed to 110 mM [Na+]i. All superimposed current traces in a single panel are from the same mitoplast. (B) Inhibition of INa by 2 nM [Ca2+]i in WT and MICU1-KO. Data shown as mean ± SEM, n = 4 each.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) ICa amplitudes at −160 mV (left) and −80 mV (right) in mitoplasts from MEFs with DRP1 (Dnm1l+/+) and without DRP1 (Dnm1l-/-). Data shown as mean ± SEM, n = 17–19. (B) INa amplitudes at −160 mV (left) and −80 mV (right) in mitoplasts from MEFs with DRP1 (Dnm1l+/+) and without DRP1 (Dnm1l-/-). Data shown as mean ± SEM, n = 7–25. (C–F) Current phenotypes of MICU1-KO in mitoplasts isolated from MEFs with an intact DRP1. (C) Representative ICa (blue) and INa (red) recorded in the same WT and MICU1-KO mitoplasts exposed to 1 mM [Ca2+]i or 110 mM [Na+]i. All superimposed current traces in a single panel are from the same mitoplast. Amplitudes of INa (D) and ICa (E) measured at −80 mV. (F) Ratio between ICa and INa measured in the same mitoplast. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 7–12.
+
+### MICUs are [Ca2+]i-dependent MCUcx potentiators
 
 To investigate how MICU1 works, ICa was measured in mitoplasts at five extramitochondrial [Ca2+]i levels, 10 μM, 100 μM, 1 mM, 5 mM, and 25 mM (Figure 2A and B, and Figure 2—figure supplement 1A–C). WT mitoplasts show ICa records similar to the current density measurements from MICU2-KO and MICU3-KO mitoplasts. In contrast, WT mitoplasts have ICa current densities that are roughly twice the size of the current densities from the MICU1-KO mitoplasts. This finding is like the conductance measurements at elevated [Ca2+]i in Figure 1I and thus inconsistent with the plug hypothesis that posits that MICU1 is an obstructing plug of MCUcx.
 
@@ -55,9 +87,21 @@ The lack of the MCUcx occlusion by MICU1 at low [Ca2+]i was further tested in in
 
 Since in MICU1-KO, all MICUs are removed from the MCUcx complex, we conclude that MICUs do not plug the MCUcx channel when [Ca2+]i is low. Instead, the function of MICUs is to potentiate MCUcx activity at elevated [Ca2+]i.
 
-## Role of the Ca2+-binding EF hands of MICUs
+### Role of the Ca2+-binding EF hands of MICUs
 
 The Ca2+-dependent potentiation of MCUcx imparted by the MICU subunits is likely to be mediated by Ca2+ binding to their EF hands. To test this hypothesis, we recombinantly expressed MICU1–3 or MICU1–3 with mutated EF hands (mut-EF-MICU, to disable Ca2+ binding Kamer et al., 2017) in their respective knockout cell lines [Figure 3A] and examined the changes in ICa. Expression levels of both the recombinant WT and mut-EF-MICU proteins were significantly higher as compared to endogenous MICUs expression in each case (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blots showing overexpression of MICU subunits or MICU subunits with non-functional EF hands (mut-EF-MICU) in their respective knockout background (left, MICU1-KO; middle, MICU2-KO and; right, MICU3-KO). For MICU1 (left panel), samples were prepared without reducing agent, β-mercaptoethanol. The MICU1 band is near the expected molecular weight for the homo- or heterodimer (with MICU2 or 3). (B–D) Upper panels: ICa in MICU1-KO (B), MICU2-KO (C), and MICU3-KO (D) before and after overexpression of a corresponding MICU subunit or its EF hand mutant, as compared to WT. Representative ICa traces recorded from the mitoplasts of different backgrounds in 1 mM [Ca2+]i are shown together in a single panel. Lower panels: quantification of ICa amplitudes from the upper panel at −160 mV. The same WT and knockout data were used as in Figure 2B. All superimposed current traces in a panel are compiled from multiple mitoplasts. Data shown as mean ± SEM; one-way ANOVA with post-hoc Tukey test. n = 7–26. (E) Left panel: ICa measured at a holding voltage of −100 mV while [Ca2+]i was rapidly (τ ~0.4 ms, see Materials and methods) switched from virtual zero to 1 mM and then back to virtual zero in WT (gray) and MICU1-KO (purple) mitoplasts. Right panel, ICa kinetics within ~10 ms after the fast [Ca2+]i elevation and subsequent decrease in WT (gray) and MICU1-KO (purple) mitoplasts from the left panel. ICa traces were normalized to the maximal amplitude to facilitate comparison of kinetics in WT and MICU1-KO. (F) Left: ICa activation time constant (τactivation) in WT and MICU1-KO; Right: ICa deactivation time constant (τdeactivation) in WT and MICU1-KO. Data shown as mean ± SEM, n = 3. (G) ICa at [Ca2+]m = 2 mM and indicated [Ca2+]i in WT and MICU1-KO. Black arrows point out where the amplitude of outward ICa was measured. Bar-graph shows the amplitude of outward ICa measured at +80 mV. All superimposed current traces in a single panel are from the same mitoplast. Data shown as mean ± SEM, n = 3, each [Ca2+]i.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blots showing the expression levels of MICU1 (upper panel), as well as MCU, MICU3, and EMRE (lower panel) in WT and MICU2-KO cells. For detection of MICU1 near the expected molecular weight for a dimer (with or without MICU2), samples were prepared in Laemmli buffer without β-mercaptoethanol. n = 3–6 independent samples. (B) ICa amplitudes at 0, 400 nM or 400 μM [Ca2+]m. ICa was measured at −160 mV, and in different [Ca2+]i as indicated. Data shown as mean ± SEM; one-way ANOVA with post-hoc Tukey test, n = 3–5. (C) Inward ICa in the presence of 0 (left), 400 nM (middle), and 400 μM (right) [Ca2+]m (pipette solution). [Ca2+]i was 100 μM, 1 mM, or 5 mM. All superimposed current traces in a single panel are from the same mitoplast.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Changes in current when the solution perfusing the mouth of an open patch pipette (filled with 1M KCl) is switched from 20 mM NaCl (low ionic strength) to a solution with 100 mM NaCl (high ionic strength). These solutions were perfused via adjacent barrels of a thinly pulled theta style capillary tubing. The time constant for the change in current amplitude is of the order of 0.4 ms.
 
 In MICU1-KO, expression of MICU1 was able to restore ICa to the WT level, but mut-EF-MICU1 expression failed to do so (Figure 3B). This confirms our hypothesis that Ca2+ binding to the EF hands of MICU1 is indispensable for the ICa potentiation.
 
@@ -73,13 +117,13 @@ Recently published work suggested that MCUcx might be inhibited by matrix [Ca2+]
 
 Taken together, these data indicate that binding of cytosolic Ca2+ to EF hands of MICU subunits allosterically potentiates MCUcx currents.
 
-## MICUs regulate the open state probability of MCUcx channel
+### MICUs regulate the open state probability of MCUcx channel
 
 To investigate the mechanism by which Ca2+-bound MICU subunits potentiate ICa, we examined the activity of single MCUcx channels in inside-out (matrix-side out) IMM patches (Figure 4). Because the unitary MCUcx current (iCa via a single MCUcx channel) is very small if measured in physiological [Ca2+]i, it must be recorded at high [Ca2+]i = 105 mM to enable proper resolution (Kirichok et al., 2004). As desired for this experiment, using this [Ca2+]i, the EF hand domains of the MICU subunits are fully saturated with Ca2+.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig4-v2.jpg)
 
-**Figure 4.:** 2+ is decreased in MICU1-KO.(A and B) MCU single-channel Ca2+ currents (iCa) from inside-out IMM patches in WT (A) and MICU1-KO (B), recorded at indicated potentials in symmetrical 105 mM Ca2+, and low-pass filtered at 0.3 kHz for display purposes. Arrows indicate closed-state level, and downward deflections are the open-state events. Multiple subconductance levels are clearly visible at −80 and −120 mV. (C–E) Single-channel amplitudes (C), open probability (Po) (D), and time-averaged unitary current (E) (see Methods) in WT and MICU1-KO at indicated potentials. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 5–6.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A and B) MCU single-channel Ca2+ currents (iCa) from inside-out IMM patches in WT (A) and MICU1-KO (B), recorded at indicated potentials in symmetrical 105 mM Ca2+, and low-pass filtered at 0.3 kHz for display purposes. Arrows indicate closed-state level, and downward deflections are the open-state events. Multiple subconductance levels are clearly visible at −80 and −120 mV. (C–E) Single-channel amplitudes (C), open probability (Po) (D), and time-averaged unitary current (E) (see Methods) in WT and MICU1-KO at indicated potentials. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 5–6.
 
 MCUcx exhibits multiple levels of single channel conductance (Figure 4A–C; Kirichok et al., 2004). The sub-conductances can be observed at all tested voltages (−40,–80, and −120 mV), but their resolution improves as the transmembrane voltage, and the amplitude of single-channel currents increase. It is clear that the open probability (Po) of the MCUcx is increased by the hyperpolarization of the IMM as was also shown previously (Kirichok et al., 2004). At −120 mV there are full-sized stochastic openings of MCUcx as well as sub-conductance openings at ~80% and ~60% of the amplitude of the fully open iCa (Figure 4A–C). Because similar amplitude levels were observed in all the patches, we conclude that these events represent genuine sub-conductances in the MCUcx channel.
 
@@ -89,11 +133,11 @@ We next recorded MCUcx single channel activity using Na+ as the permeating ion (
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig5-v2.jpg)
 
-**Figure 5.:** 2+ remains unchanged in MICU1-KO.(A and B) MCU single-channel Na+ currents (iNa) from inside-out IMM patches in WT (A) and MICU1-KO (B), recorded at indicated potentials in symmetrical 150 mM Na+, and low-pass filtered at 0.3 kHz for display purposes. Arrows indicate closed-state level, and downward deflections are the open-state events. Multiple subconductance levels are clearly visible at all potentials. (C–E) Single-channel amplitudes (C), open probability (Po) (D), and time-averaged unitary current (E) (see Methods) in WT and MICU1-KO at indicated potentials. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 6–7.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A and B) MCU single-channel Na+ currents (iNa) from inside-out IMM patches in WT (A) and MICU1-KO (B), recorded at indicated potentials in symmetrical 150 mM Na+, and low-pass filtered at 0.3 kHz for display purposes. Arrows indicate closed-state level, and downward deflections are the open-state events. Multiple subconductance levels are clearly visible at all potentials. (C–E) Single-channel amplitudes (C), open probability (Po) (D), and time-averaged unitary current (E) (see Methods) in WT and MICU1-KO at indicated potentials. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 6–7.
 
 These results demonstrate that in the Ca2+-bound state, the MICUs potentiate MCU current by increasing the open probability of the MCU/EMRE pore. In the absence of Ca2+, the MICUs do not appear to affect the pore activity.
 
-## MCUcx Mn2+ conductance
+### MCUcx Mn2+ conductance
 
 While manganese (Mn2+) is essential for the proper function of several mitochondrial enzymes, its excessive accumulation inhibits oxidative phosphorylation and causes toxicity (Gunter and Pfeiffer, 1990). MCUcx appears to be the primary entry pathway for Mn2+ entry into mitochondria (Gunter et al., 2010). Recently, it has been suggested that MICU1 is responsible for the relatively low permeability of MCUcx for Mn2+ as compared to Ca2+, and when MICU1 deficiency or loss-of-function occurs, it can lead to excessive mitochondrial Mn2+ accumulation and cellular toxicity (Kamer et al., 2018; Wettmarshausen et al., 2018).
 
@@ -101,13 +145,13 @@ We recorded the current carried by Mn2+ through MCUcx (IMn) in the presence of 5
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig6-v2.jpg)
 
-**Figure 6.:** IMn is reduced in MICU1-KO to the similar extent as ICa.(A and B) Representative inward IMn in WT (A), MCU-KO (upper panel) and EMRE-KO (lower panel, B) mitoplasts at 5 mM [Mn2+]i. All superimposed current traces in a single panel are from the same mitoplast. (C) IMn measured at −160 mV from WT, MCU-KO and EMRE-KO mitoplasts. Data shown as mean ± SEM. (n = 3–6). (D) MCU current amplitude (IMCU) in the presence of 5 mM [Ca2+]i and 5 mM [Mn2+]i in WT mitoplasts. Currents were measured at −160 mV. Data shown as mean ± SEM; unpaired t-test, two-tailed. n = 6–14. (E and F) Representative ICa (blue, [Ca2+]I = 1 mM), IMn (green, [Mn2+]I = 5 mM) and inhibition of ICa by Mn2+ (red, [Ca2+]I = 1 mM and [Mn2+]I = 1 mM) as recorded from the same mitoplast in WT (E) and MICU1-KO (F). All superimposed current traces in a single panel are from the same mitoplast. (G–J) IMn (G), ICa (H), IMn/ICa ratio (I, measured in the same mitoplast), and inhibition of ICa by 1 mM [Mn2+]i (J) in WT and MICU1-KO. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 3–11. (K) Proposed model of the MCU complex gating and the role of MICU subunits in Ca2+-dependent potentiation of the MCU current. The MCU complex is a constitutively active channel and the level of its activity is determined by the probability of open state (Po). At resting [Ca2+]i, Po is low. As [Ca2+]i is increased and Ca2+ binds to the EF hands of MICU subunits, MICUs increase Po, resulting in the increase in the MCU activity.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A and B) Representative inward IMn in WT (A), MCU-KO (upper panel) and EMRE-KO (lower panel, B) mitoplasts at 5 mM [Mn2+]i. All superimposed current traces in a single panel are from the same mitoplast. (C) IMn measured at −160 mV from WT, MCU-KO and EMRE-KO mitoplasts. Data shown as mean ± SEM. (n = 3–6). (D) MCU current amplitude (IMCU) in the presence of 5 mM [Ca2+]i and 5 mM [Mn2+]i in WT mitoplasts. Currents were measured at −160 mV. Data shown as mean ± SEM; unpaired t-test, two-tailed. n = 6–14. (E and F) Representative ICa (blue, [Ca2+]I = 1 mM), IMn (green, [Mn2+]I = 5 mM) and inhibition of ICa by Mn2+ (red, [Ca2+]I = 1 mM and [Mn2+]I = 1 mM) as recorded from the same mitoplast in WT (E) and MICU1-KO (F). All superimposed current traces in a single panel are from the same mitoplast. (G–J) IMn (G), ICa (H), IMn/ICa ratio (I, measured in the same mitoplast), and inhibition of ICa by 1 mM [Mn2+]i (J) in WT and MICU1-KO. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 3–11. (K) Proposed model of the MCU complex gating and the role of MICU subunits in Ca2+-dependent potentiation of the MCU current. The MCU complex is a constitutively active channel and the level of its activity is determined by the probability of open state (Po). At resting [Ca2+]i, Po is low. As [Ca2+]i is increased and Ca2+ binds to the EF hands of MICU subunits, MICUs increase Po, resulting in the increase in the MCU activity.
 
 We further sought to explain why IMn via MCUcx is smaller than ICa. In the presence of Mn2+, ICa was decreased (Figure 6E). This decrease was the same in MICU1-KO demonstrating that it was a pore effect (Figure 6F and J). This suggests that Mn2+ slows down Ca2+ permeation simply because it dwells in the pore longer than Ca2+ due to tighter binding (Lansman et al., 1986). The higher affinity of Mn2+ to the pore and the longer dwell time also explains why IMn is smaller than ICa.
 
 Thus, the ICa and IMn phenotypes of MICU1-KO are the same, and MICU1 does not determine the preference of MCUcx for Ca2+ over Mn2+. Permeation of both Ca2+ and Mn2+ is enhanced, rather than inhibited by MICU1.
 
-## Mg2+ occludes the MCUcx pore independently of MICU1
+### Mg2+ occludes the MCUcx pore independently of MICU1
 
 Mg2+, the most abundant cytosolic divalent ion, is an important negative regulator of MCUcx-mediated mitochondrial Ca2+ uptake (Gunter et al., 2010; Hutson et al., 1976). However, the mechanism of the inhibitory action of Mg2+ on MCUcx is poorly understood. Our previous study suggested that in Ca2+-free conditions, Mg2+ occludes the MCUcx pore for Na+ permeation (Kirichok et al., 2004). Here, we investigate how Mg2+ affects Ca2+ conduction through MCUcx.
 
@@ -115,7 +159,7 @@ We first studied how cytosolic Mg2+ affects activation of ICa by [Ca2+]i (Figure
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69312/elife-69312-fig7-v2.jpg)
 
-**Figure 7.:** 2+ on MCUcx does not depend on MICU1.(A) Inward ICa elicited at indicated [Ca2+]i in the presence of 0 (left) and 1000 μM (right) [Mg2+]i in WT mitoplasts. (B) ICa elicited at indicated [Ca2+]i in the presence of 0 and 1000 μM [Mg2+]i. ICa amplitudes were measured at −160 mV in WT mitoplasts and normalized per ICa at [Mg2+]i = 0. Mean ± SEM; unpaired t-test, two-tailed. (C) Quantification of ICa elicited at 30 μm [Ca2+]i in the presence of 0 and 200 μM [Mg2+]i in WT and MICU1-KO. Currents were measured at −160 mV. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 5–6. (D) Dose-response curve of ICa inhibition by [Mg2+]i in WT (IC50 = 149 ± 20 μM, nH = 0.9 ± 0.1; n = 5) and MICU1-KO (IC50 = 156 ± 21 μM, nH = 0.7 ± 0.1; n = 4). Mean ± SEM; unpaired t-test, two-tailed.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Inward ICa elicited at indicated [Ca2+]i in the presence of 0 (left) and 1000 μM (right) [Mg2+]i in WT mitoplasts. (B) ICa elicited at indicated [Ca2+]i in the presence of 0 and 1000 μM [Mg2+]i. ICa amplitudes were measured at −160 mV in WT mitoplasts and normalized per ICa at [Mg2+]i = 0. Mean ± SEM; unpaired t-test, two-tailed. (C) Quantification of ICa elicited at 30 μm [Ca2+]i in the presence of 0 and 200 μM [Mg2+]i in WT and MICU1-KO. Currents were measured at −160 mV. Data shown as mean ± SEM; unpaired t-test, two-tailed, n = 5–6. (D) Dose-response curve of ICa inhibition by [Mg2+]i in WT (IC50 = 149 ± 20 μM, nH = 0.9 ± 0.1; n = 5) and MICU1-KO (IC50 = 156 ± 21 μM, nH = 0.7 ± 0.1; n = 4). Mean ± SEM; unpaired t-test, two-tailed.
 
 In conclusion, Mg2+ is an MCUcx pore blocker that at the resting [Ca2+]i, would strongly compete with Ca2+ for binding to the selectivity filter, limiting Ca2+ permeation. The Mg2+ occlusion of the MCUcx pore can at least partially explain low mitochondrial Ca2+ uptake at resting [Ca2+]i.
 
@@ -123,7 +167,7 @@ In conclusion, Mg2+ is an MCUcx pore blocker that at the resting [Ca2+]i, would 
 
 In summary, we demonstrate that the primary function of MICU subunits is to potentiate the activity of the MCUcx as cytosolic Ca2+ is elevated and binds to MICU’s EF hands. This potentiation would result in efficient stimulation of the mitochondrial ATP production in response to cytosolic Ca2+ signaling events, when energy demand is increased as shown in neurons (Ashrafi et al., 2020) and heart (Wescott et al., 2019). Although at low [Ca2+]i, MICU1-KO mitochondria appear to have higher Ca2+ uptake in comparison to WT, we find no evidence of a plug that blocks ion permeation via MCUcx. On the other hand, at high [Ca2+]i, the uptake was lower in MICU1-KO, which we demonstrate by the patch clamp analysis is due to loss of MICU-mediated potentiation of MCUcx. Mechanistically, at low [Ca2+]i the MCUcx channel is open in a lower open probability mode, but as [Ca2+]i is elevated, MICUs increase MCUcx open state probability, potentiating its activity (Figure 6K). MICUs are likely to achieve this effect by interacting with EMRE that is predicted to control the gating of the MCU pore (Wang et al., 2019; Fan et al., 2020; Wang et al., 2020b; Zhuo et al., 2021). We also show that the inward rectification property of MCUcx is independent of MICUs. Lastly, in contrast to the previous report (Vais et al., 2016), we found no evidence for the regulation of MCUcx activity by matrix [Ca2+].
 
-## Regulation of MCUcx function by cytosolic [Ca2+]
+### Regulation of MCUcx function by cytosolic [Ca2+]
 
 Assuming that Kd for Ca2+ binding to MICU EF hands is ~600 nM (Kamer et al., 2017), MICUs would exert their potentiating effect over a broad range of physiological [Ca2+]i that range from resting to low micromolar. By doing so, MICUs can help the MCUcx to overcome the mitochondrial Ca2+ efflux machinery and to elevate [Ca2+]m to achieve adequate stimulation of the mitochondrial ATP production. In previous reports, there has been significant inconsistency as to the proposed effect of MICU1 on mitochondrial Ca2+ uptake at high [Ca2+]i (Supplementary file 1a and b). For example, mitochondrial Ca2+ uptake rate appears to be decreased in isolated liver mitochondria from mice following siRNA-mediated knockdown of MICU1 or MICU2 in an earlier study (Plovanich et al., 2013). Another study (Csordás et al., 2013) also showed decreased uptake rates when MICU1 was knocked down in HeLa cells and hepatocytes leading authors to propose that MICU1 contributes to the cooperative activation of MCUcx, but the effect was mild and it disappeared in the absence of Mg2+. On the other hand, many reports (Kamer et al., 2018; Logan et al., 2014; Mallilankaraman et al., 2012a; Vais et al., 2016) showed no change in MCU activity upon MICU1 loss at high [Ca2+]i but only alteration in the threshold for mitochondrial Ca2+ uptake. However, a recent study again showed a decrease in Ca2+ uptake in isolated liver mitochondria in MICU1-KO mouse relative to WT (Liu et al., 2016). This correlates well with our data showing direct potentiation of the MCUcx activity by MICU1. Thus, the potentiating effect of MICUs on the MCUcx was discernible in the previous research but was largely rejected due to the predominant view that the primary function of MICUs is to occlude the MCUcx pore.
 
@@ -131,13 +175,13 @@ Our data is incompatible with the model in which MICUs occlude the MCU pore at l
 
 Because these multiple factors can be affected by MICU1-KO differently in different experimental system and conditions, the change in the threshold can vary from one system to another. In Trypanosoma cruzi, where the composition of the MCU complex (including EMRE and MICU1) is similar to mammals, MICU1 knockout causes an increase in the Ca2+ uptake ‘threshold’ and a marked decrease in Ca2+ uptake capacity at all [Ca2+]i (Bertolini et al., 2019). A recent report also found no apparent [Ca2+]i threshold for MCU in isolated mitochondria from heart and skeletal muscle (Wescott et al., 2019). Similarly sympathetic neurons lack a discernible threshold and mitochondria were shown to accumulate small amount of Ca2+ at [Ca2+]i levels as low as 200 nM (Colegrove et al., 2000a; Colegrove et al., 2000b). Finally, interpretation of the MICU1-KO phenotypes can be further complicated by possible functional roles of MICU1 outside of the MCU complex (Gottschalk et al., 2019; Tomar et al., 2019; Tufi et al., 2019). In particular, MICU1 was proposed to interact with the MICOS complex, affecting the cristae structure (Tomar et al., 2019).
 
-## Examination of the conduction pathway of the MCUCX
+### Examination of the conduction pathway of the MCUCX
 
 To circumvent the problem of isolating the MCUcx activity from the other mitochondrial Ca2+ homeostatic mechanisms, we leveraged the capacity of MCUcx to conduct Na+. The Na+ permeation via MCUcx is observed not only in isolated mitoplasts but also in intact mitochondria. Na+ permeates via MCUcx because Ca2+ and Na+ ions have the same ionic diameter, and Na+ can pass through Ca2+ channels when Ca2+ is removed from the selectivity filter (Hess and Tsien, 1984; Hess et al., 1986; Tang et al., 2014). Ca2+ binds to the MCUcx selectivity filter with an exceptionally high affinity (Kd ≤2 nM) (Kirichok et al., 2004), and re-addition of cytosolic Ca2+ leads to INa inhibition upon Ca2+ binding to this site. Importantly, MICUs are not involved in this inhibition, as it is not affected by MICU1-KO (Figure 2—figure supplement 2). In intact mitochondria, Na+ uptake via WT or MICU1-deficient MCUcx causes the same ΔΨ depolarization, demonstrating that at low [Ca2+]i MCUcx is not occluded regardless of its association with MICUs. Moreover, using mitochondrial patch-clamp under Ca2+-free conditions, we recorded a robust INa via MCU, and the amplitude of this INa was not affected in MICU1-KO. This demonstrates that MCU pore is not occluded by MICUs at low [Ca2+]i.
 
 The complexity of the MCUcx presents formidable difficulties even for the direct electrophysiological analysis. The electrophysiological phenotypes observed may be associated with altered expression levels of other subunits rather than the loss of MICU1. We not only analyzed the expression levels of all MCU complex subunits (Figure 2—figure supplement 1D–F) but also measured ICa/INa ratio in the same mitoplast (Figure 2C–F) to ensure that we correctly capture the role of MICU1 in the MCU complex.
 
-## Cryo-EM studies and the dynamic function of MICUs
+### Cryo-EM studies and the dynamic function of MICUs
 
 Recently, cryo-EM structures of the MCUcx holocomplex reveal that it is composed of two conjoined MCU/EMRE pores with a MICU1/MICU2 heterodimer attached to each of them (Fan et al., 2020; Wang et al., 2020b; Zhuo et al., 2021). Based on molecular weight of the MCUcx as observed on the Blue native PAGE (Sancak et al., 2013), this structure likely represents the complete MCUcx of intact mitochondria. This is the primary structural form of MCUcx in the mitochondrial inner membrane.
 
@@ -149,35 +193,269 @@ In conclusion, we find no evidence for the occlusion of the MCUcx pore by MICUs 
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>DRP1-KO (Dnm1l-/-) (Mouse embryonic fibroblast)</td>
+      <td>Ishihara et al., 2009</td>
+      <td></td>
+      <td>Cell line maintained in D. Chan and K. Mihara lab; Dnm1l-/- background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>WT (Dnm1l+/+) (Mouse embryonic fibroblast)</td>
+      <td>Liu et al., 2016</td>
+      <td></td>
+      <td>Cell line maintained in T. Finkel lab; Dnm1l+/+ background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MICU1-KO (Micu1-/-) (Mouse embryonic fibroblast)</td>
+      <td>Liu et al., 2016</td>
+      <td></td>
+      <td>Cell line maintained in T. Finkel lab; Dnm1l+/+ background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MCU-KO (Mcu-/-) (Mouse embryonic fibroblast)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Y. Kirichok and V. Garg lab. Dnm1l-/- background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>EMRE-KO (Smdt1-/-) (Mouse embryonic fibroblast)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Y. Kirichok and V. Garg lab. Dnm1l-/- background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MICU1-KO (Micu1-/-) (Mouse embryonic fibroblast)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Y. Kirichok and V. Garg lab. Dnm1l-/- background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MICU2-KO (Micu2-/-) (Mouse embryonic fibroblast)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Y. Kirichok and V. Garg lab. Dnm1l-/- background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MICU3-KO (Micu3-/-) (Mouse embryonic fibroblast)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in Y. Kirichok and V. Garg lab. Dnm1l-/- background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>MCU-KO (Mcu-/-) mouse</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mouse line maintained in T. Finkel lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>Mcu (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>Smdt1 (alias Emre) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>Micu1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>Micu2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>Micu3 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>mut-EF-Micu1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>mut-EF-Micu2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>mut-EF-Micu3 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral Construct (Y. Kirichok and V. Garg lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>Cepia2mt (plasmid)</td>
+      <td>Suzuki et al., 2014. Lentiviral construct was made in this paper.</td>
+      <td></td>
+      <td>Lentiviral construct</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MCU antibody (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>HPA016480; RRID:AB_2071893</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EMRE antibody (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-86337; RRID:AB_2250685</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MICU1 antibody (rabbit polyclonal)</td>
+      <td>Cell Signalling</td>
+      <td>D4P8Q (12524S); RRID:AB_2797943</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MICU2 antibody (mouse monoclonal)</td>
+      <td>Bethyl laboratories</td>
+      <td>A300-BL19212</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MICU3 antibody (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>HPA024779; RRID:AB_1848023</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VDAC antibody (rabbit monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>ab15895; RRID:AB_2214787</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TOM20 antibody (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-11415; RRID:AB_2207533</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP60 antibody (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-1052; RRID:AB_631683</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ANTI-FLAG M2 Affinity Gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2220; RRID:AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PClamp 10</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td>https://www.moleculardevices.com/systems/conventional-patch-clamp/pclamp-10-software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 7.5</td>
+      <td>OriginLab</td>
+      <td></td>
+      <td>http://www.originlab.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ Software</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>https://imagej.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>[Ca2+]m threshold detection algorithm</td>
+      <td>Custom-made</td>
+      <td></td>
+      <td>https://github.com/ishanparanjpe/upstroke (Paranjpe et al., 2019)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for reagents may be directed to and will be fulfilled by Lead Contact Yuriy Kirichok (yuriy.kirichok@ucsf.edu).
 
-## Experimental model
+### Experimental model
 
-## Cell culture and recombinant gene expression
+#### Cell culture and recombinant gene expression
 
 All mouse embryonic fibroblast (MEF) cells with (Liu et al., 2016) or without Drp1 (Ishihara et al., 2009), and all knockout clones were grown in low glucose (5.6 mM) Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% FBS, 100 U/ml penicillin, and 100 U/ml streptomycin at 37°C, 5% CO2. Cells were maintained by splitting every 48–72 hr at a ratio of 1:5 to 1:10. The MEF cell lines were authenticated by short tandem repeat profiling conducted by Labcorp. The cell lines were free of mycoplasma as determined by PCR based detection (Dreolini et al., 2020).
 
 We used third-generation lentiviral (bi-cistronic) vectors containing the ORF for gene of interest with or without a selection marker (EGFP, mCherry or puromycin). The vectors were generated by VectorBuilder, Inc (Chicago, IL, USA), and their sequences were confirmed independently by the company and by us. Recombinant cDNA expressing cells were enriched using multiple rounds of FACS or antibiotic selection. In some cases, EGFP was targeted to mitochondria (using a mitochondrial targeting sequence from COX8) to identify mitoplasts expressing the recombinant protein of interest during patch clamp experiments.
 
-## Animals
+### Animals
 
 Mice were maintained on a standard rodent chow diet under 12 hr light and dark cycles. All animal experiments were performed with male mice (2–5 month old) according to procedures approved by the UCSF Institutional Animal Care and Use Committee and adhered to NIH standards. C57BL/6J were obtained from the Jackson laboratory. MCU-KO mice were obtained from Dr. Torren Finkel and have been used previously (Pan et al., 2013).
 
-## Method details
+### Method details
 
 Gene expression analysis (qRT-PCR) qPCR was performed by Syd Labs (Natick, MA, USA). Total RNA was isolated from cells using the RNAeasy Minikit (QIAGEN), and reverse transcribed using the First Strand cDNA Synthesis Kit (Syd Labs). qPCR reactions were performed with the following gene-specific primers (generated by Integrated DNA Technologies):
 
 cDNA (100 ng, calculated from initial RNA) samples were pre-amplified for 12 cycles using ABsolute qPCR SYBR Green Low ROX Mix (ThermoFisher). qPCR reactions were performed using an Agilent MX3000 (Fluidigm) with 40 cycles of amplification (15 s at 95°C, 5 s at 70°C, and 60 s at 60°C). Ct values were calculated by the Real-Time PCR Analysis Software (Fluidigm). Relative gene expression was determined by the ΔCt method. Hprt was selected as the reference gene.
 
-## Generation of knockout cell lines by the CRISPR/Cas9 method
+### Generation of knockout cell lines by the CRISPR/Cas9 method
 
 Knockout MEF cell lines were generated using the CRISPR/Cas9 method (Ran et al., 2013). All knockouts (except the MCU-KO line) were generated by Alstem LLC (Richmond, CA, USA). Either one sgRNA or a pair of two adjacent sgRNAs were used to create a point indel or a truncate indel, respectively (Figure S1).
 
 MEFs were transfected with the Cas9 gRNA vector (Addgene: PX459) via electroporation (Invitrogen Neon transfection system) using the following parameters: 1×106 cells and 1 µg of two different gRNA-Cas9 plasmids. Puromycin was used for enrichment of transfected cells, and serial dilution was performed to select single-cell clones. A stable homozygous knockout cell line was confirmed by PCR amplification of the targeted region, cloning into a pUC19 vector, and sequencing showing that either a frameshift or large deletion had occurred in the targeted region of the gene (Figure 1—figure supplement 1). All knockout clones were further validated by western blotting (Figure 1—figure supplement 1). The primers used for amplification of genomic sites and cloning into pUC19 sequencing vector were as follows:
 
-## Isolation of mitochondria and mitoplasts
+### Isolation of mitochondria and mitoplasts
 
 Mitoplasts were isolated from MEFs using methodology previously described (Garg and Kirichok, 2019). Briefly, MEFs were homogenized in ice-cold medium (Initial medium) containing 250 mM sucrose, 10 mM HEPES, 1 mM EGTA, and 0.1% bovine serum albumin (BSA) (pH adjusted to 7.2 with Trizma base) using a glass grinder with six slow strokes of a Teflon pestle rotating at 280 rpm. The homogenate was centrifuged at 700× g for 10 min to create a pellet of nuclei and unbroken cells. The first nuclear pellet was resuspended in the fresh Initial medium and homogenized again to increase the mitochondrial yield. Mitochondria were collected by centrifugation of the supernatant at 8500× g for 10 min.
 
@@ -185,7 +463,7 @@ Mitoplasts were produced from mitochondria using a French press. Mitochondria we
 
 Mitochondria and mitoplasts were prepared at 0–4°C and stored on ice for up to 5 hr. Immediately before the electrophysiological experiments, 15–50 μl of the mitoplast suspension was added to 500 μl solution containing 150 mM KCl, 10 mM HEPES, and 1 mM EGTA (pH adjusted to 7.0 with Trizma base) plating on 5 mm coverslips pretreated with 0.1% gelatin to reduce mitoplast adhesion.
 
-## Patch-clamp recording
+### Patch-clamp recording
 
 Whole mitoplast currents were measured as described previously (Garg and Kirichok, 2019). Gigaohm seals with mitoplasts were formed in the bath solution containing 150 mM KCl, 10 mM HEPES and 1 mM EGTA, pH 7.2 (adjusted with KOH). Voltage steps of 350–500 mV for 2–8 ms were applied to rupture the IMM and obtain the whole-mitoplast conFiguration. Typically, pipettes had resistances of 20–40 MΩ, and the access resistance was 35–65 MΩ. The membrane capacitances of mitoplasts range from 0.2 to 0.6 pF.
 
@@ -205,7 +483,7 @@ A rapid exchange of [Ca2+]i from virtual zero (control solution) to 1 mM was ach
 
 Currents were recorded using an Axopatch 200B amplifier (Molecular Devices). Data acquisition and analyses were performed using PClamp 10 (Molecular Devices) and Origin 9.6 (OriginLab). All data were acquired at 10 kHz and filtered at 1 kHz.
 
-## Single-channel recordings and analysis
+### Single-channel recordings and analysis
 
 All single-channel data were acquired from inside–out patches excised from isolated mitoplasts (Kirichok et al., 2004). For Ca2+ single channel (iCa) recordings, patches were excised in a bath solution containing 150 mM KCl, 10 mM HEPES and 1 mM EGTA, pH 7.2 (adjusted with KOH). Recordings were performed under symmetrical conditions (the same bath and pipette solutions): 105 mM CaCl2 and 40 mM HEPES, pH 7.0 with Tris base. Signals were sampled at 50 kHz and low-pass filtered at 1 kHz. Fire-polished, borosilicate pipettes (Sutter QF-150–75) coated with Silguard (Dow Corning Corp., Midland, MI) and having a tip resistance of 50–70 MΩ were used for low noise recordings.
 
@@ -213,19 +491,23 @@ For Na+ single channel (iNa) recordings, patches were excised in a bath solution
 
 To characterize the single-channel conductance and subconductance levels and their occupancy probabilities, we used the MLab version of the QuB software, freely available from the Milescu lab at: https://milesculabs.biology.missouri.edu/QuB_Downloads.html. The data were first resampled at 2.5 kHz and then were idealized with the Baum-Welch and Viterbi algorithms, as implemented in QuB, which classify each point in the data to a conductance level and produce estimates of current amplitudes and occupancy probabilities. The time-averaged single-channel current can be calculated as the product between occupancy probability and current amplitude, summated over all conductance levels (main open state and substates).
 
-## Time-lapse Ca2+ imaging in intact cells
+### Time-lapse Ca2+ imaging in intact cells
 
 For imaging experiments, MEFs were plated on collagen type-I-coated glass-bottom 35 mm dishes (P35G-1.5–14 C, Matek), 48–72 hr before imaging. Cells were imaged at the interval of 3 s on a Nikon Ti-E microscope using a 40× objective (NA 1.30, oil, CFI Plan Fluor, Nikon), Lambda 421 LED light source (Sutter) and ORCA Flash 4.0 CMOS camera (Hamamatsu Photonics) at room temperature (25°C). The following excitation/emission filter settings were used: 340±13/525±25 nm and 389±19/510±40 nm for cytosolic Ca2+ imaging using fura-2 (Kd=224 nM) and 480±40/525±15 nm for mitochondrially targeted cepia2 (CEPIA2mt, Kd=160 nM (Suzuki et al., 2014), cloned into a lentiviral vector). Cells were loaded with 3 μM fura-2 AM (Life Tech., USA) in DMEM/FBS at room temperature for 30 min. After three washes with physiological salt solution (PSS) containing (in mM) 150 NaCl, 4 KCl, 2 CaCl2, 1 MgCl2, 5.6 glucose, and 25 HEPES (pH 7.4), each dish was placed on the stage for imaging. Imaging was performed in PSS within 1 hr of dye staining. Baseline fluorescence was taken for 1–2 min after which thapsigargin (Tg) (final [Tg] = 300 nM) was added while imaging was continued for another 10–15 min.
 
-## Fura-2 calibration
+#### Fura-2 calibration
 
-Baseline measurements were taken, and cells were incubated in PSS (No CaCl2) containing 3 mM EGTA, 1 μM ionomycin and 1 μM Tg for 5–10 min. After 2–3 washes with PSS (No CaCl2) containing 0.3 mM EGTA, cells were imaged for 5 min (average of last 10 frames was used for calculation) to obtain the Rmin and F380max values. Finally, PSS containing 10 mM CaCl2 (no EGTA), 1 μM ionomycin and 1 μM Tg was added and cells were imaged for 10 min. After the signal reached saturation (~3 min), the average value from 10 frames was used to calculate Rmax and F380min values. Using these obtained values, the fura-2 ratio was calibrated by the following equation (Grynkiewicz et al., 1985):[Ca2+]free=Kd∗([R−Rmin][Rmax])∗(F380max/F380min)
+Baseline measurements were taken, and cells were incubated in PSS (No CaCl2) containing 3 mM EGTA, 1 μM ionomycin and 1 μM Tg for 5–10 min. After 2–3 washes with PSS (No CaCl2) containing 0.3 mM EGTA, cells were imaged for 5 min (average of last 10 frames was used for calculation) to obtain the Rmin and F380max values. Finally, PSS containing 10 mM CaCl2 (no EGTA), 1 μM ionomycin and 1 μM Tg was added and cells were imaged for 10 min. After the signal reached saturation (~3 min), the average value from 10 frames was used to calculate Rmax and F380min values. Using these obtained values, the fura-2 ratio was calibrated by the following equation (Grynkiewicz et al., 1985):
+
+$$
+[Ca^{2^{+}}]_{free}=K_{d}∗(\frac{[R−R_{min}]}{[R_{max}]})∗(F_{380max}/F_{380min})
+$$
 
 All image analyses were done with ImageJ (NIH). Briefly, mitochondrial and cytosolic regions were manually determined for each cell. The average fluorescence intensity in the regions was measured and the background intensity was subtracted. For analysis of the cepia2 signal, we normalized the fluorescence intensity by the baseline fluorescence. For analysis of the fura-2 signal, we calculated the fluorescence ratio (F340/F380 for fura-2).
 
 The time point for increase in mitochondrial [Ca2+] (upstroke) was detected using a script written in Python and manually checked afterwards. Briefly, the fluorescence signal was smoothed by applying a second-order zero phase digital Butterworth filter with an optimal cutoff frequency as previously described (Winter, 2009). From the smoothed signal, the upstroke frame was defined as the earliest point between the baseline and signal peak that was greater than 80% of the maximal time derivative. The time-point for change in mitochondrial signal was time-matched with the fura-2 reading to determine the threshold [Ca2+]i.
 
-## Measurements of mitochondrial Ca2+ influx in isolated mitochondria
+### Measurements of mitochondrial Ca2+ influx in isolated mitochondria
 
 Briefly, mitochondria were isolated from MEF cells using differential centrifugation as described above. The mitochondrial pellet was resuspended in resuspension buffer (RB) supplemented with 2 mM EGTA and 2 μM of Fura-2-acetoxymethyl ester (Fura-2 AM) and kept at room temperature for 10 min to allow loading of Fura-2 into the mitochondrial matrix. The RB buffer contained: 100 mM KCl, 50 mM MOPS, 1 mM MgCl2. Mitochondria were pelleted at 3200 g, and further incubated on ice for 50 min to allow de-esterification of Fura-2 AM in RB supplemented with 2 mM EGTA. Mitochondria were pelleted at 3200 g and resuspended in RB supplemented with 10 μM EGTA. Mitochondria were further pelleted and resuspended twice in RB supplemented with 40 μM Fluo-4 pentapotassium salt (for measurements carried out below 3 μM [Ca2+]i), or RB supplemented with 40 μM EGTA (for measurements carried out above 3 μM [Ca2+]i). After final centrifugation step at 3200 g, protein concentration was determined by Lowry assay.
 
@@ -233,18 +515,18 @@ Measurements of mitochondrial Ca2+ influx were carried out using a BMG LABTECH C
 
 I = G (ΔΨm – ECa2+) where ECa2+ is the Nernst reversal potential for Ca2+ obtained from simultaneously measured [Ca2+]i, and [Ca2+]m. Measured J was converted to I using the Faraday constant (Wescott et al., 2019).
 
-## Measurements of mitochondrial Na+ influx in isolated mitochondria
+### Measurements of mitochondrial Na+ influx in isolated mitochondria
 
 Membrane potentials in intact mitochondria were evaluated with TMRE using previously described method (Scaduto and Grotyohann, 1999). Mitochondria isolated from mouse liver or MEF cells were suspended in ice-cold initial medium. These mitochondria were mixed in 50–100 μl of an uptake assay buffer (liver: 150 mM NaCl, 10 mM HEPES, 1 mM EGTA, 2 mM glutamate, 2 mM malate, and 2 mM succinate, pH 7.2 with Trizma base; MEF: 30 mM NaCl, 120 mM TrisCl, 10 mM HEPES, 1 mM EGTA, 1 μM MgCl2, 5 mM glutamate, 5 mM malate, and 5 mM succinate, pH 7.2 with Trizma base) with 200 nM TMRE. Mitochondrial concentration in the assay buffer was 0.25 mg/ml. TMRE fluorescence were measured at 550/570 nm and 570/589 nm (excitation/emission, 9 nm band width) with using a Biotek Synergy H4 plate reader, and the fluorescence ratio between two fluorescence was calculated. After 5 min incubation of mitochondria in the assay medium, assays were initiated by injection of 0.5–1 μl of EDTA (5 mM final), RuR (1–3 μM final) or FCCP (1 μM final), and the ratio change within 5 min after the injection was evaluated. The ratio change induced by EDTA and/or RuR was normalized with that by FCCP.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Mitochondria or mitoplasts were isolated from MEFs deficient in the MCU subunit but stably expressing Flag-tagged MCU. Mitochondrial fraction from wild type cells (without MCU-FLAG) was used as negative control. Isolated mitoplasts (but not mitochondria) were incubated in 750 mM KCl for 30 min before solubilization. Briefly, 300 µg of protein lysate was solubilized with 500 µl of lysis buffer (50 mM HEPES pH 7.4, 150 mM NaCl, 1 mM EGTA, 0.2% DDM and Halt protease inhibitor cocktail [Thermo Fisher]) for 30 min at 4°C. Lysates were cleared by spinning at 20,000× g for 10 min at 4°C. Cleared lysates were incubated with anti-Flag M2 affinity gel (Sigma A2220) for 2 hr at 4°C. Immunoprecipitates were washed with 1 ml of lysis buffer three times and boiled in 20 μl of Laemmli buffer (without β-mercaptoethanol). One-third of the immunoprecipitate was loaded onto a 4–20% gradient SDS-PAGE gel for detection of the indicated proteins by Western blotting. Flow-through fraction was also collected and analyzed in the same gel.
 
-## Immunoblots
+### Immunoblots
 
 For western blot analysis, MEFs or isolated mitochondria/mitoplasts were lysed in radioimmunoprecipitation assay (RIPA) buffer (1% IGEPAL, 0.1% sodium dodecyl sulfate, 0.5% sodium deoxycholate, 150 mM NaCl, 1 mM EDTA, 50 mM Tris-HCl (pH 7.4) and a cocktail of proteases inhibitors). Lysates were resolved by SDS-PAGE; transferred to PVDF membrane (Millipore); and probed with anti-MCU (Sigma, HPA016480, 1:2000), anti-EMRE (Santa Cruz, sc-86337, 1:200), anti-HSP60 (Santa Cruz, sc-1052, 1:3000), anti-VDAC (Abcam, ab15895, 1:2000), anti-MICU1 (Cell Signaling Technology, 12524S, 1:2000), anti-MICU2 (Bethyl, A300-BL19212, 1:500), anti-MICU3 (Sigma, HPA024779, 1:1000), and anti-TOM20 (Santa Cruz, sc-11415, 1:2000). Anti-MICU1 antibody produced a non-specific band near its monomeric molecular weight (~50 kDa), so samples were prepared in Laemmli buffer without β-mercaptoethanol to detect MICU1 homo- or heterodimers (~100 kDa).
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± standard error of the mean (SEM), as specified in the Figure legend. Statistical analysis was completed in Excel or Origin 9.6. All experiments were performed in triplicate or more. Statistical significance at an exact p-value was determined with the methods as indicated in the corresponding Figure legends.

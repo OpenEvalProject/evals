@@ -26,9 +26,7 @@ Reviewer #1:
 
 The reviewer makes an excellent point here. To ascertain whether the iron in the assays forms ‘balls of rust’ we performed transmission electron microscopy on the ferroxidase reaction mixtures after completion of the reaction to assess the formation of free, or encapsulated iron minerals. We provide an additional supplemental figure (Figure 8—figure supplement 1) and discuss the observation of iron mineral crystals and nanoparticles in the main text, subsection “Ferroxidase activity”, last paragraph. We also attempted to use a commercial luminescence-based ROS detection kit on the reactions to address the possibility that H2O2 is produced as a reaction intermediate by the EncFtn protein. We found that the results from this particular kit were inconsistent between repeats, but for the benefit of the reviewer we provide a graph of the results obtained (see Author response image 1). These results show the production of ROS by apoferritin, which is consistent with the published data on the reaction mechanism of certain ferritins; however, no significant ROS were detected for the EncFtn or encapsulin proteins.
 
-We acknowledge that the reaction mechanism of the EncFtn merits further investigation in a follow up study.10.7554/eLife.18972.037Author Response Image 1.DOI: http://dx.doi.org/10.7554/eLife.18972.037
-
-DOI: http://dx.doi.org/10.7554/eLife.18972.037
+We acknowledge that the reaction mechanism of the EncFtn merits further investigation in a follow up study.10.7554/eLife.18972.037Author Response Image 1.
 
 2) Results:
 

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.27215.001 Continuous contact with self-major histocompatibility complex ligands is essential for the survival of naive CD4 T cells. We have previously shown that the resulting tonic TCR signaling also influences their fate upon activation by increasing their ability to differentiate into induced/peripheral regulatory T cells. To decipher the molecular mechanisms governing this process, we here focus on the TCR signaling cascade and demonstrate that a rise in intracellular calcium levels is sufficient to modulate the phenotype of mouse naive CD4 T cells and to increase their sensitivity to regulatory T-cell polarization signals, both processes relying on calcineurin activation. Accordingly, in vivo calcineurin inhibition leads the most self-reactive naive CD4 T cells to adopt the phenotype of their less self-reactive cell-counterparts. Collectively, our findings demonstrate that calcium-mediated activation of the calcineurin pathway acts as a rheostat to shape both the phenotype and effector potential of naive CD4 T cells in the steady-state.
+Continuous contact with self-major histocompatibility complex ligands is essential for the survival of naive CD4 T cells. We have previously shown that the resulting tonic TCR signaling also influences their fate upon activation by increasing their ability to differentiate into induced/peripheral regulatory T cells. To decipher the molecular mechanisms governing this process, we here focus on the TCR signaling cascade and demonstrate that a rise in intracellular calcium levels is sufficient to modulate the phenotype of mouse naive CD4 T cells and to increase their sensitivity to regulatory T-cell polarization signals, both processes relying on calcineurin activation. Accordingly, in vivo calcineurin inhibition leads the most self-reactive naive CD4 T cells to adopt the phenotype of their less self-reactive cell-counterparts. Collectively, our findings demonstrate that calcium-mediated activation of the calcineurin pathway acts as a rheostat to shape both the phenotype and effector potential of naive CD4 T cells in the steady-state.
 
 ## Introduction
 
@@ -42,27 +42,55 @@ With the aim of deciphering the molecular mechanisms involved in the tonic TCR-s
 
 ## Results
 
-## Cell-intrinsic enhanced ability of Ly-6C- CD4 TN cells to commit into iTreg cells
+### Cell-intrinsic enhanced ability of Ly-6C- CD4 TN cells to commit into iTreg cells
 
 We have recently shown that CD4 TN cells with the highest avidity for self-MHC (Ly-6C- CD4 TN cells) have a biased commitment toward the iTreg/pTreg-cell lineage (Martin et al., 2013). As TH1- and TH2-cell-derived cytokines are known to inhibit iTreg-cell induction in vitro (Henderson et al., 2015), we first wondered whether Ly-6C- and Ly-6C+ CD4 TN cells had the same ability to produce such cytokines after stimulation. Ly-6C- and Ly-6C+ CD4 TN cells were thus stimulated with αCD3- and αCD28-coated antibodies in the presence or absence of TGFβ. Interferon-gamma (IFN-γ) and interleukins (IL) -4, -17 and -10 were assayed in the supernatants collected 24 hr after the beginning of the culture. We found that, whatever the presence or absence of TGFβ in the culture medium, Ly-6C- and Ly-6C+ CD4 TN cells produced similar amounts of these cytokines (Figure 1—figure supplement 1A,B). To further characterize the enhanced ability of Ly-6C- CD4 TN cells to commit into iTregs in vitro, we asked whether this feature was cell-intrinsic. To this end, Ly-6C- and Ly-6C+ CD4 TN cells were isolated from peripheral LNs of C57BL/6 Foxp3-GFP mice by flow cytometry sorting, barcoded with CTv or CTv and CTfr proliferation dyes, and stimulated with αCD3- and αCD28-coated antibodies in the presence of graded doses of TGFβ. These cells were cultured separately or together (Figure 1A,B). The percentages of Foxp3+ cells among the progeny of both naive cell-subsets were assessed on day 4. For suboptimal doses of exogenous TGFβ,Ly-6C- CD4 TN cells gave rise to a twofold higher proportion of iTreg cells than their Ly-6C+-cell counterparts in both culture conditions (Figure 1C,D). The concentration of TGFβ needed to obtain 50% of the maximal percentage of iTreg cells (effective concentration, EC50) was calculated by fitting the dose-response curves of both CD4 TN-cell subsets in the different culture conditions (Figure 1D,E). EC50 values for TGFβ were statistically different between the 2 CD4 TN-cell subsets whether they were cultured separately or together. Of note, and in line with their similar ability to produce TH1- and TH2-cell-derived cytokines, blocking IFN-γ and IL-4 during in vitro iTreg-cell polarization did not abolish the difference in the ability of Ly-6C- and Ly-6C+ CD4 TN cells to differentiate into iTreg cells. (Figure 1—figure supplement 1C–E). These results suggest strongly that the greater sensibility of Ly-6C- CD4 TN cells to iTreg-cell polarization signals is cell-intrinsic.
 
-## Ly-6C- CD4 TN-cell transcriptomic signature reveals both their TCR signaling activity and their bias toward iTreg-cell polarization
+![Figure 1.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig1-v2.jpg)
+
+**Figure 1.:** (A–E) Flow-cytometry sorted Ly-6C- and Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were stained with CTv (Ly-6C-) or CTv and CTfr (Ly-6C+) and stimulated separately or together for 4 days with coated αCD3 and αCD28 Abs (4 µg/mL), in the presence of graded doses of TGFβ1. (A) Diagram illustrating the experimental protocol. (B) Representative CTv/CTfr dot-plots for gated CD4+ cells recovered after 4 days of culture. Ly-6C- and Ly-6C+ CD4 TN cells were either cultured separately (top left and right panels, respectively) or together (bottom panel) (C) Representative Foxp3/CD4 contour-plots and proportions of Foxp3+ cells for gated CD4+ cells are shown at a dose of 0.25 ng/mL TGFβ1. (D) Proportions of Foxp3+ cells among CD4+ cells are shown as a function of TGFβ1 concentration. Mean ± s.e.m of four independent experiments are shown. (E) Concentrations of TGFβ1 needed to obtain 50% of the maximal percentages of iTreg-cell polarization (EC50) were calculated for each CD4 TN cell subset in separated or mixed cultures. Each dot represents an independent experiment. Significance of differences were assessed using a two-tailed paired Student’s t-test. Values of p<0.05 were considered as statistically significant (**p<0.01; ns, not significant).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Flow-cytometry sorted Ly-6C- and Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were stimulated separately with coated αCD3 and αCD28 Abs (4 µg/mL), in the presence of TGFβ1 (4 ng/mL) or not. 24 hr later, culture supernatants were collected and analyzed for the presence of interferon-gamma (IFN-γ) and interleukins (IL) −4, −17A/F and −10. (A) Diagram illustrating the experimental protocol. (B) IFN-γ, IL-4, IL-17A/F and IL-10 concentrations in the culture supernatants of both Ly-6C- and Ly-6C+ CD4 TN cells after 24 hr culture are shown. (C–E) Flow-cytometry sorted Ly-6C- and Ly-6C+ CD4 TN cells from C57BL/6 mice were stimulated separately with coated αCD3 and αCD28 Abs (4 µg/mL), in the presence of αIFN-γ and αIL-4 blocking antibodies and graded doses of TGFβ1. (C) Diagram illustrating the experimental protocol. (D) Proportions of Foxp3+ cells among CD4+ cells are shown as a function of TGFβ1 concentration. Mean ± s.e.m of two independent experiments are shown. (E) Concentrations of TGFβ1 needed to obtain 50% of the maximal percentages of iTreg-cell polarization (EC50) were calculated for each CD4 TN-cell subset in separated or mixed cultures. Each dot represents an independent experiment. Significance of differences were assessed using a two-tailed paired Student’s t-test. Values of p<0.05 were considered as statistically significant (**p<0.01; ns, not significant).
+
+### Ly-6C- CD4 TN-cell transcriptomic signature reveals both their TCR signaling activity and their bias toward iTreg-cell polarization
 
 To further compare Ly-6C- and Ly-6C+ CD4 TN cells, we obtained Affymetrix gene expression profiles from both CD4 TN-cell subsets directly isolated from peripheral LNs of C57BL/6 Foxp3-GFP mice by flow cytometry sorting (Figure 2). Only few genes were significantly differentially expressed between the two types of CD4 TN cells (at a 1.3-fold cutoff, 167 genes over-expressed and 164 under-expressed in Ly-6C- CD4 TN cells when compared to Ly-6C+ CD4 TN cells; Figure 2A). This set of differentially expressed genes between Ly-6C- and Ly-6C+ CD4 TN cells was compiled into a comprehensive signature that we named 6CSign (Figure 2B,C). The differential expression of several genes by Ly-6C- and Ly-6C+ CD4 TN cells was then validated at the protein level by flow-cytometry (Figure 2—figure supplement 1). In line with our microarray analysis, Ly-6C- CD4 TN cells were expressing higher amounts of CD5, CD73, CD122, CD200, Ikzf3 and Izumo1r and lower levels of Sca-1 and IL18Rα than their Ly-6C+ CD4 TN-cell counterparts (Figure 2—figure supplement 1A,B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig2-v2.jpg)
+
+**Figure 2.:** (A–E) Microarray analysis was performed on Ly-6C- and Ly-6C+ CD4 TN cells sorted from LNs of C57BL/6 Foxp3-GFP mice. (A) ‘Volcano plot’ representation (Log2 (ratio) versus Log10 (t test p-value)). Genes expressed >1.3 fold higher or lower in Ly-6C- CD4 TN cells compared to Ly-6C+ CD4 TN cells with a p-value of <0.05 are highlighted in red. The number of genes up- or down-regulated (1.3-fold cut-off) for each comparison is indicated. (B) Scheme depicting the selection of genes that were included in the 6CSign (list of the genes differentially expressed between Ly-6C- and Ly-6C+ CD4 TN cells, at a 1.3-fold cut-off). (C) Heat map of selected differentially expressed genes between Ly-6C- and Ly-6C+ CD4 TN cells. The scaled expression of each replicate, denoted as the row z-score, is plotted in yellow-blue color scale with yellow indicating high expression and blue indicating low expression.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) CD5, CD73, CD122, CD200, Ikzf3, IL18Rα, Izumo1r and Sca-1 expression at the cell surface of Ly-6C- and Ly-6C+ CD4 TN cells was analysed by FACS. (A) Fluorescence histograms of gated Ly-6C- and Ly-6C+ CD4 TN (CD4+ CD8α- TCRβ+ CD44lo CD25lo Foxp3-GFP-) cells recovered from pLNs are shown for a representative C57BL/6 Foxp3-GFP mouse. (B) Mean fluorescence intensities (MFIs) are shown as means ± s.e.m. for a representative experiment. Each dot represents an individual mouse.
 
 We have previously shown that Ly-6C- CD4 TN cells were more self-reactive than Ly-6C+ CD4 TN cells (Martin et al., 2013). Accordingly, among the 6CSign, several genes such as Ctla4, Cd5, Tnfrsf4, Tnfrsf9 and Nr4a1 were previously shown to belong to activation-induced or -repressed gene families (Figure 2C; [Wakamatsu et al., 2013]). We thus compared more precisely our signature, the 6CSign, with several public Geo Datasets comparing various ‘activated’ CD4 TN cells to their non-activated cell counterparts (Figure 3A,B). CD5 expression levels on CD4 TN cells are actively maintained by interactions with self-MHC and rapidly decline in their absence (for example in the blood, [Stefanová et al., 2002]). In agreement with a greater self-reactivity of Ly-6C- CD4 TN cells, the 6CSign correlated significantly with the CD5hi versus CD5lo CD4 TN-cell signature (Richards et al., 2015). Interestingly, whereas the 6CSign genes also correlated with the transcriptional signature of αCD3-activated CD4 TN cells (compared to unstimulated cells) (Wakamatsu et al., 2013), there was no significant correlation with the signature of Phorbol 12-Myristate 13-Acetate (PMA)-activated CD4 TN cells (Bevington et al., 2016).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig3-v2.jpg)
 
-**Figure 3.:** - CD4 TN cells reveals both their active TCR signaling and their bias toward iTreg-cell polarization.(A–E) 6CSign was compared to several public Geo Datasets. (A) Diagram illustrating the analysis protocol. (B) Ratio vs ratio representation comparing gene expression ratio between Ly-6C- CD4 TN cells and Ly-6C+ CD4 TN cells (6CSign) with either CD5hi cell signature (vsloRichards et al., 2015) (ratio of CD5hi CD4 TN cells to CD5lo CD4 TN cells, left panel), anti-CD3 activated CD4 TN-cell signature (Wakamatsu et al., 2013) (ratio of CD4 TN cells stimulated for 24–48 hr with anti-CD3 coated Ab to unstimulated CD4 TN cells, middle panel) and PMA-activated CD4 TN-cell signature (Bevington et al., 2016) (ratio of CD4 TN cells stimulated for 2 hr with PMA to unstimulated CD4 TN cells, right panel). (C) Ratio vs ratio representation comparing gene expression ratio between Ly-6C- CD4 TN cells and Ly-6C+ CD4 TN cells (6CSign) with in-vitro-induced TH1, TH2, TH17, iTreg and ex vivo purified Treg cell signatures that have been identified by Wei et al. (2009) (ratio of CD4 TH-cell subsets to CD4 TN cells). (D) Ratio vs ratio representation comparing gene expression ratio between Ly-6C- CD4 TN cells and Ly-6C+ CD4 TN cells (6CSign) with TCR-signaling-dependent CD4-Treg-specific signature (Vahl et al., 2014) (ratio between TCR+ Treg cells and TCR-ablated (TCR-) Treg cells). (B–D) Correlation analyses were performed using Pearson’s correlation test. (E) ‘Volcano plot’ representation (Log2 (ratio) versus Log10 (t-test p-value)) between TCR+ Treg cells and TCR-ablated (TCR-) Treg cells (Vahl et al., 2014), for 6CSign genes upregulated (upper panel) or downregulated (lower panel) in Ly-6C- CD4 TN cells. (B–E) Datasets were filtered to common probes between the two arrays.
+**Figure 3.:** (A–E) 6CSign was compared to several public Geo Datasets. (A) Diagram illustrating the analysis protocol. (B) Ratio vs ratio representation comparing gene expression ratio between Ly-6C- CD4 TN cells and Ly-6C+ CD4 TN cells (6CSign) with either CD5hivslo cell signature (Richards et al., 2015) (ratio of CD5hi CD4 TN cells to CD5lo CD4 TN cells, left panel), anti-CD3 activated CD4 TN-cell signature (Wakamatsu et al., 2013) (ratio of CD4 TN cells stimulated for 24–48 hr with anti-CD3 coated Ab to unstimulated CD4 TN cells, middle panel) and PMA-activated CD4 TN-cell signature (Bevington et al., 2016) (ratio of CD4 TN cells stimulated for 2 hr with PMA to unstimulated CD4 TN cells, right panel). (C) Ratio vs ratio representation comparing gene expression ratio between Ly-6C- CD4 TN cells and Ly-6C+ CD4 TN cells (6CSign) with in-vitro-induced TH1, TH2, TH17, iTreg and ex vivo purified Treg cell signatures that have been identified by Wei et al. (2009) (ratio of CD4 TH-cell subsets to CD4 TN cells). (D) Ratio vs ratio representation comparing gene expression ratio between Ly-6C- CD4 TN cells and Ly-6C+ CD4 TN cells (6CSign) with TCR-signaling-dependent CD4-Treg-specific signature (Vahl et al., 2014) (ratio between TCR+ Treg cells and TCR-ablated (TCR-) Treg cells). (B–D) Correlation analyses were performed using Pearson’s correlation test. (E) ‘Volcano plot’ representation (Log2 (ratio) versus Log10 (t-test p-value)) between TCR+ Treg cells and TCR-ablated (TCR-) Treg cells (Vahl et al., 2014), for 6CSign genes upregulated (upper panel) or downregulated (lower panel) in Ly-6C- CD4 TN cells. (B–E) Datasets were filtered to common probes between the two arrays.
 
 Interestingly, the 6CSign contained several genes characteristically expressed in Treg cells such as Ctla4, Izumo1r, Cd200, Lag3 or Il2rb. All these genes were upregulated in Ly-6C- CD4 TN cells when compared to Ly-6C+ CD4 TN cells (Figure 2C). By comparing CD4 T-cell effectors with naive CD4 T cells, Wei et al. (2009) have recently defined the transcriptional signature of the main CD4 TH-cell subsets such as in-vitro-induced Treg cells, TH1, TH2 and TH17 cells. Comparison of the 6CSign with these cell signatures revealed that the differences in gene expression observed between Ly-6C- and Ly-6C+ CD4 TN cells correlated significantly with the in-vitro-induced Treg-cell signature, and to a lesser extent with the TH17 one but not with the TH1 or TH2 transcriptional signatures (Figure 3C).
 
 Similarities were also observed between the transcriptional profiles of Ly-6C- CD4 TN cells and ex vivo purified peripheral Treg cells (Figure 3C) (Wei et al., 2009). One common characteristic shared by Ly-6C- CD4 TN cells and CD4 Treg cells is their high degree of self-reactivity. Recent studies have highlighted a continuous requirement of self-MHC recognition and of the associated TCR-mediated signaling for maintaining both the function and transcriptional signature of CD4 Treg cells (Delpoux et al., 2012; Levine et al., 2014; Vahl et al., 2014). Whereas self-deprivation or TCR-ablation did not impair the expression of the transcription factor Foxp3, they induced major transcriptional changes (Delpoux et al., 2012; Levine et al., 2014; Vahl et al., 2014). Interestingly, 6CSign genes strongly correlated with the transcriptional signature of TCR+ CD4 Treg cells (compared to TCR- CD4 Treg cells, Figure 3D) (Vahl et al., 2014). More precisely, most genes upregulated in Ly-6C- CD4 TN cells when compared to their Ly-6C+-cell counterparts were positively regulated by steady-state TCR signaling in CD4 Treg cells (such as Cd5, Cd200, Il2rb, Itih5, Maf and Myb; Figure 3E). Conversely, an important proportion of the genes downregulated in Ly-6C- CD4 TN cells were also down-regulated by steady-state interactions with self-MHC in CD4 Treg cells (Figure 3E). Altogether, these data point to a role for the TCR signaling pathway in the installation and maintenance of the 6CSign.
 
-## Ly-6C- CD4 TN-cell phenotype relies on the Ca2+ signaling pathway in vitro
+### Ly-6C- CD4 TN-cell phenotype relies on the Ca2+ signaling pathway in vitro
 
 The transcriptional signature of Ly-6C- CD4 TN cells revealed some similarities between these cells and αCD3-stimulated CD4 TN cells. We therefore decided to analyze the effect of TCR signaling on Ly-6C expression. Ly-6C+ CD4 TN cells were isolated from peripheral LNs of C57BL/6 Foxp3-GFP mice by flow cytometry sorting and incubated with various stimulating agents mimicking all or part of TCR-induced signals (Figure 4A). As expected from our transcriptomic analysis and previous work (Martin et al., 2013), Ly-6C expression was clearly downregulated when cells were stimulated with αCD3 and αCD28-coated antibodies for 5 days (Figure 4A,B). To decipher which TCR-induced signals led to Ly-6C down-regulation, we roughly dichotomized the TCR signaling cascade into its two main components, for example the Ca2+ signaling pathway that can be elicited by Thapsigargin (TG) and the PKC and ERK signaling pathways activated by PMA. When combined, PMA and TG, induced complete Ly-6C down-regulation, whereas, when separated, each drug had an opposite effect on Ly-6C expression. Indeed, whereas PMA alone upregulated Ly-6C expression, TG alone induced a near-complete disappearance of Ly-6C protein at the surface of Ly-6C+ CD4 TN cells. Interestingly, while in all other conditions, CD4 TN cells were proliferating, this phenotypic conversion of Ly-6C+ CD4 TN cells into Ly-6C- CD4 TN cells induced by TG alone occurred without any proliferation (Figure 4A,B). Importantly, to avoid TG-induced cell death, a sub-optimal dose (4 nM) was used in these culture conditions. 4 nM TG induced a reproducible increase in intracellular calcium levels, although to a lesser extent than the classical dose of 200 nM (Figure 4C). Accordingly, by analyzing basal Ca2+ contents at the end of the culture period (5 days), we observed that 4 nM TG treated Ly-6C+ CD4 TN cells exhibited higher cytoplasmic Ca2+ levels than control cells cultured in IL-7 alone (Figure 4D,E). To further characterize the long-term effect of this low-dose TG, subcellular localization of the nuclear factor of activated T-cell protein 1 (NFAT1) was assessed in Ly-6C+ CD4 TN cells in the presence or absence of 4 nM TG at various time points along the culture. Indeed, increases in intracellular Ca2+ levels result in the activation of calcineurin that dephosphorylates members of the NFAT family, leading to their translocation into the nucleus. NFAT1 localization was quantified by high-resolution imaging flow-cytometry using the ImageStreamX technology (Figure 4F). In line with the Ca2+ increase induced by 4 nM TG treatment, NFAT was translocated into the nucleus of Ly-6C+ CD4 TN cells in the presence of TG while it remained cytoplasmic in its absence. NFAT translocation into the nucleus peaked on day 1 and remained significantly higher in TG-treated cells than in control cells throughout the culture.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Flow-cytometry sorted Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were labelled with CTv and cultured in IL-7 (10 ng/ml) in the presence of either coated αCD3/28 (4µg/ml), PMA and TG (1.25 ng/ml and 4 nM, respectively), PMA alone (1.25 ng/ml) or TG (4 nM). Cells were recovered and analyzed after 5 days of culture. (A) Representative Ly-6C/CTv contour-plots are shown. (B) Ly-6C Mean fluorescence intensities (MFIs), for gated CD4+ TCR+ cells, are shown as means ± s.e.m. for a representative experiment with three mice per group (upper panel). Mean cell cycle numbers were calculated (lower panel). (C) Ex-vivo-purified CD4 T cells from C57BL/6 Foxp3-GFP mice were stained with Indo-1 and cell surface molecules CD44, Ly-6C and lineage markers (CD11c, CD11b, CD8β, CD25, TCRγδ and NK1.1). Intracellular calcium concentration was assessed before and after stimulation with 4 or 200 nM TG to the extracellular medium and monitored by flow cytometry for 20 min; results are presented as normalized ratio of Indo-1 emission at 405 nm to that at 510 nm (405/510) for gated Ly-6C+ CD4 TN cells (Lineage- Foxp3-GFP- CD44lo Ly-6C+ cells). Normalized Indo-1 ratio at the Plateau are shown as means ± s.e.m. for a representative experiment (out of two independent experiments) with three mice per group (Each dot represents an individual mouse). (D–G) Flow-cytometry sorted Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were cultured in the presence of IL-7 (10 ng/mL) with TG (4 nM) or not. (D) Diagram illustrating the experimental protocol. (E) Basal intracellular calcium concentration was assessed, as in C, after 5 days of culture. Raw Indo-1 ratio are shown as means ± s.e.m. for a representative experiment (out of two independent experiments) with three mice per group (each dot represents an individual mouse). (F) After 1, 3 and 5 days of culture, cells were analyzed by imaging flow cytometry. NFAT1 nuclear localization was calculated as similarity score between NFAT1 and DRAQ5 intensities. Data are representative of one of two independent experiments. (G) Cells were analyzed after 0, 1, 2, 3, 4 and 7 days of culture. Representative Ly-6C contour plots are shown for gated CD4 TN cells (CD4+ CD44lo CD25lo Foxp3-GFP-) are shown. (H, I) LN cells were isolated from C57BL/6 mice and fixed in 4% paraformaldehyde immediately (Ex vivo) or after 30 min of culture in the presence of 200 nM of TG (TG) or not (Resting). Ly-6C- and Ly-6C+ CD4 TN cells (CD4+ CD44lo CD25lo Foxp3-) were sorted by flow cytometry and stained for NFAT1, and DNA (DRAQ5). (H) Cells were analyzed by confocal microscopy; CD4 (Red), Ly-6C (Magenta), NFAT1 (pseudocolor) and DNA (DRAQ5, cyan) fluorescence are shown for ‘ex vivo’ purified Ly-6C- (upper panel) and Ly-6C+ (lower panel) CD4 TN cells. Original magnification ×63. (I) Cells were analyzed by imaging flow cytometry and NFAT1 nuclear localization assessed as in F. Data are representative of one of three independent experiments. (B, C, E, F, I) Significance of differences were assessed using a two-tailed unpaired Student’s t-test. Values of p<0.05 were considered as statistically significant (**p<0.01; ***p<0.001; ns, not significant).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Flow-cytometry sorted Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were cultured in IL-7 (10 ng/mL) alone or in the presence of TG (4 nM) or αCD3 and αCD28 coated antibodies (4 µg/mL). After 5 days, cells were analyzed for their forward scatter profile (FSC) and their expression of CD44 and CD62L.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** LN cells were isolated from C57BL/6 mice and fixed in 4% paraformaldehyde immediately (Ex vivo) or after 30 min of culture alone (Resting) or in the presence of 200 nM of TG (TG). Ly-6C- and Ly-6C+ CD4 TN cells (CD4+ CD44lo CD25lo Foxp3-) were sorted by flow cytometry and stained for NFAT2, and DNA (DRAQ5). Cells were then analyzed by imaging flow cytometry. (A) Scheme depicting the experimental procedure. (B) NFAT2 nuclear localization was calculated as similarity score between NFAT2 and DRAQ5 intensities. Data are representative of one of three independent experiments.
 
 Finally, in agreement with their resting status, Ly-6C+ CD4 TN cells cultured in TG alone for 5 days maintained a naive phenotype according to their low forward scatter profile and expression of CD44 and CD62L (Figure 4—figure supplement 1). We then studied the kinetic aspect of the TG-mediated conversion of Ly-6C+ CD4 TN cells into Ly-6C- CD4 TN cells and found that it occurred in 3–4 days of culture (Figure 4G).
 
@@ -70,23 +98,43 @@ Altogether, our results suggest that the Ca2+ signaling pathway is sufficient to
 
 Altogether, our data demonstrate that increasing in vitro intracellular Ca2+ levels is sufficient to down-modulate Ly-6C expression at the cell surface of Ly-6C+ CD4 TN cells without inducing any significant proliferation or activation. Accordingly, the greater nuclear-cytoplasmic ratio of NFAT proteins observed in Ly-6C- CD4 TN cells, when compared to their Ly-6C+ CD4 TN-cell counterparts, might reflect differences in the intensity of the Ca2+/Calcineurin signaling induced in vivo in these cells. Such differences could result from the differential ability of these cells to regularly interact with self-MHC/self-peptide complexes in the steady-state.
 
-## The Ca2+-calcineurin signaling pathway shapes the phenotype of the CD4 TN-cell compartment
+### The Ca2+-calcineurin signaling pathway shapes the phenotype of the CD4 TN-cell compartment
 
 We have identified several proteins differentially expressed between Ly-6C- and Ly-6C+ CD4 TN cells (Figure 2—figure supplement 1) and have showed that TG induced Ly-6C downregulation at the cell surface of Ly-6C+ CD4 TN cells. We next studied whether proteins of the 6CSign other than Ly-6C, were also modulated by an increase in intracellular Ca2+. To go further, we examined in parallel the involvement of the calcineurin phosphatase in these processes. To this aim, Ly-6C+ CD4 TN cells were isolated from peripheral LNs of C57BL/6 Foxp3-GFP mice by flow cytometry sorting and cultured with IL-7 in the presence or absence of TG and calcineurin-inhibitors (Cyclosporin A, CsA and Tacrolimus, FK506, FK). Ly-6C- CD4 TN cells cultured in IL-7 were added as control. After 5 days of culture in these conditions, the expression of Ly-6C, CD5, CD73, CD122, CD200 and Izumo1r was analyzed by flow-cytometry (Figure 5A). For all these proteins, TG induced changes in their expression at the cell surface of Ly-6C+ CD4 TN cells. More precisely, their level of expression reached those observed in Ly-6C- CD4 TN cells. Blocking calcineurin activation with either CsA or FK506 led to the complete inhibition of this phenotypic conversion of Ly-6C+ (CD5lo, CD73int, CD122lo, CD200lo, Izumo1rlo) CD4 TN cells into Ly-6C- (CD5hi, CD73hi, CD122int, CD200int, Izumo1rhi) CD4 TN cells. This Ca2+-induced phenotypic conversion thus depends on the activity of the canonical Ca2+-calcineurin signaling pathway.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig5-v2.jpg)
+
+**Figure 5.:** (A) Flow-cytometry sorted Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were cultured in IL-7 (10 ng/mL) alone or in the presence of either TG (4 nM), TG and Cyclosporin A (CsA; 50 nM) or TG and FK506 (FK; 200 nM). Flow-cytometry sorted Ly-6C- CD4 TN cells rested in IL-7 were used as control. After 5 days, cells were analyzed for their expression of Ly-6C, CD5, CD73, CD122, CD200 and Izumo1r. Representative contour-plots of cell surface markers are shown for gated CD4 TN cells (CD4+ TCRβ+ CD44lo CD25lo Foxp3-GFP-) as a function of culture condition. (B–F) C57BL/6 Foxp3-GFP mice were daily injected intraperitoneally with Prograf (FK506; 2.5 mg/kg) or diluent (PBS). Two weeks after treatment LNs (pooled pLNs and mLNs) and spleen were recovered and CD4 T cells were analyzed. (B) Diagram illustrating the experimental procedure. (C) Ly-6C and Izumo1r fluorescence histograms for gated CD4 TN cells (CD4+ TCRβ+ CD44lo CD25lo Foxp3-GFP-) recovered from LNs of PBS (white) and FK506 (grey) treated mice. (D) Percentage of Ly-6C+ cells among CD4 TN (CD4+ TCRβ+ CD44lo CD25lo Foxp3-GFP-) cells are shown for LNs and spleens of PBS (white) and FK506 (grey) treated mice. (E) Ly-6C Mean fluorescence intensities (MFIs), for gated Ly-6C+ CD4 TN (Ly-6C+ CD4+ TCRβ+ CD44lo CD25lo Foxp3-GFP-) cells recovered from LNs of PBS (white) and FK506 (grey) treated mice, are shown as means ± s.e.m. for two independent experiments with three mice per group. (F) Izumo1r and CD200 mean fluorescence intensities (MFIs), for gated Ly-6C+ CD4 TN (Ly-6C+ CD4+ TCRβ+ CD44lo CD25lo Foxp3-GFP-) cells recovered from LNs of PBS (white) and FK506 (grey) treated mice, are shown as means ± s.e.m. for a representative experiment with three mice per group. (G–I) 1 × 106 flow-cytometry sorted Ly-6C- CD4 TN cells from CD45.1+ C57BL/6 Foxp3-GFP mice were adoptively transferred into sex-matched CD45.2+ C57BL/6 Foxp3-GFP recipient mice daily injected intraperitoneally with Prograf (FK506; 2.5 mg/kg) or diluent (PBS). Two weeks after transfer and treatment, LNs (pooled pLNs and mLNs) and spleen were recovered and donor-derived CD45.1+ CD4 T cells were analyzed. (G) Diagram illustrating the experimental model. (H) Absolute numbers of donor-derived CD4 TN (CD45.1+ CD45.2- CD4+ TCRβ+ CD44lo CD25lo Foxp3-GFP-) cells recovered from LNs and spleen of recipient mice are shown as means ± s.e.m. for two independent experiments with three mice per group. (I) Percentage of Ly-6C+ among donor-derived CD4 TN (CD45.1+ CD45.2- CD4+ TCRβ+ CD44lo CD25lo Foxp3-GFP-) cells recovered from LNs and spleen of recipient mice are shown as means ± s.e.m. for two independent experiments with three mice per group. (D, H, I) Each dot represents an individual mouse. (D-F; H, I) Significance of differences were assessed using a two-tailed unpaired Student’s t-test. Values of p<0.05 were considered as statistically significant (**p<0.01; ***p<0.001; ns, not significant).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) C57BL/6 Foxp3-GFP mice were injected intraperitoneally with Prograf (FK506; 2.5 mg/kg; two times) or diluent (PBS). 18 hr later LN cells were isolated from C57BL/6 mice and fixed in 4% paraformaldehyde immediately. CD4 TN cells (CD4+ CD44lo CD25lo Foxp3-) were sorted by flow cytometry and stained for Ly-6C, NFAT1, and DNA (DRAQ5). Cells were then analyzed by imaging flow cytometry. (A) Scheme depicting the experimental procedure. (B) NFAT1 nuclear localization was calculated as similarity score between NFAT1 and DRAQ5 intensities. Data are representative of one of two independent experiments.
 
 We then investigated whether this in vitro observation could be mimicked in vivo. We first confirmed that the Ca2+-calcineurin signaling cascade was active in vivo in Ly-6C- CD4 TN cells by showing that blocking calcineurin activation for 18 hr with FK506 was sufficient to abrogate the nuclear localization of NFAT in these cells (Figure 5—figure supplement 1). We then wondered whether a longer treatment with this calcineurin inhibitor would affect the phenotype of CD4 TN cells in vivo.To this aim, C57BL/6 Foxp3-GFP mice were injected daily with FK506 or PBS for 2 weeks (Figure 5B). After 14 days, CD4 TN cells from peripheral LNs and the spleen were analyzed for their expression of Ly-6C, Izumo1r and CD200. In line with our in vitro experiments, both the percentage of Ly-6C+ cells among CD4 TN cells and the MFI of Ly-6C at the cell surface of Ly-6C+ CD4 TN cells increased in treated mice when compared to control mice (Figure 5C–E). Moreover, FK506 induced significant decreases of Izumo1r and CD200 surface levels in CD4 TN cells (Figure 5C,F). Such changes in the phenotype of the bulk of CD4 TN cells could result from either the conversion of Ly-6C- CD4 TN cells into Ly-6C+ CD4 TN cells or the disappearance of the Ly-6C--cell subset. We therefore decided to compare the behavior of adoptively transferred Ly-6C- CD4 TN cells in FK506 or PBS-treated mice (Figure 5G). 106 Ly-6C- CD4 TN cells purified from LNs of CD45.1+ Foxp3-GFP donor mice were adoptively transferred into CD45.2+ Foxp3-GFP-recipient mice. Host mice were then daily injected with FK506 or PBS for 2 weeks (Figure 5G). After 14 days, donor-derived CD4 TN cells from peripheral LNs and the spleen were analyzed. Although similar numbers of donor-derived CD4 TN cells were recovered from both FK506 and PBS -treated mice (Figure 5H), these cells were still greatly enriched in Ly-6C-expressing cells in FK506-treated recipients (Figure 5I).
 
 Altogether, our data demonstrate that the activation of the Ca2+-calcineurin signaling pathway drives the phenotypic conversion of Ly-6C+ CD4 TN cells into Ly-6C- CD4 TN cells both in vitro and in vivo.
 
-## Ca2+-mediated shaping of the CD4 TN-cell iTreg-cell differentiation potential
+### Ca2+-mediated shaping of the CD4 TN-cell iTreg-cell differentiation potential
 
 As a rise in intracellular Ca2+ level converts phenotypically Ly-6C+ CD4 TN cells into Ly-6C- CD4 TN cells, we then tested whether the in vitro iTreg-cell polarization potential of these ex-Ly-6C+ CD4 TN cells (referred thereafter as ‘Ca2+-converted’ Ly-6C+ CD4 TN cells) was also modified. Ly-6C- and Ly-6C+ CD4 TN cells were recovered from C57BL/6 Foxp3-GFP mice and cultured in vitro with or without TG. After 5 days of culture, viable cells were FACS-sorted and stimulated with αCD3- and αCD28-coated antibodies in the presence of graded doses of TGFβ for 4 days (Figure 6A). Of note, even after 5 days of resting in the presence of IL-7, Ly-6C- CD4 TN cells were keeping a greater sensitivity to iTreg-cell polarization signals, than Ly-6C+ CD4 TN cells cultured in the same conditions. Importantly, the iTreg-cell polarization potential of Ly-6C+ CD4 TN cells rose up when these cells were pre-incubated in the presence of TG and became similar to the one observed for Ly-6C- CD4 TN cells (Figure 6B,C). In agreement with the fact that calcineurin inhibitors blocked the TG-mediated phenotypic conversion of Ly-6C+ CD4 TN cells into Ly-6C- CD4 TN cells (Figure 5A), adding CsA at the time of TG pre-incubation also abrogated the sensitization of Ly-6C+ CD4 TN cells to iTreg-cell polarization signals (Figure 6B). EC50 values for TGFβ were calculated in these conditions and were statistically different between the 2 CD4 TN-cell subsets when cells were pre-incubated in IL-7 alone but dropped to similar levels when TG was added in the pre-culture medium (Figure 6C). Of note, pre-incubating Ly-6C+ CD4 TN cells with TG and CsA further limit their ability to commit into iTreg cells as reflected by a significant increase in EC50 (Figure 6C). Altogether, our data demonstrate that an increase in intracellular Ca2+ levels not only shapes the phenotype of the CD4 TN-cell compartment but also sensitizes in vitro these cells to iTreg-cell polarization signals, both processes occurring through a calcineurin-dependent pathway.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig6-v2.jpg)
 
-**Figure 6.:** - CD4 TN-cell sensitization to iTreg-cell polarization signals relies upon calcium signaling pathway in vitro.Flow-cytometry sorted Ly-6C- and Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were cultured in IL-7 (10 ng/mL) with or without TG (4 nM) and CsA (50 nM). After 5 days, live cells were flow-cytometry sorted and stimulated with coated αCD3 and αCD28 Abs (4 µg/ml) in the presence of graded doses of TGFβ1. Cells were analyzed after 4 days of stimulation. (A) Diagram illustrating the experimental procedure. (B) Representative Foxp3/CD4 contour-plots and proportions of Foxp3+ cells for gated CD4+ cells are shown at a dose of 0.25 ng/mL TGFβ1, as a function of pre-culture condition. (C) Concentrations of TGFβ1 needed to obtain 50% of the maximal percentage of iTreg-cell polarization (EC50) were calculated for each CD4 TN-cell subset and each pre-culture condition. Each dot represents an independent experiment. Significance of differences were assessed using a two-tailed paired Student’s t-test. Values of p<0.05 were considered as statistically significant (*p<0.05; **p<0.01; ***p<0.001; ns, not significant).
+**Figure 6.:** Flow-cytometry sorted Ly-6C- and Ly-6C+ CD4 TN cells from C57BL/6 Foxp3-GFP mice were cultured in IL-7 (10 ng/mL) with or without TG (4 nM) and CsA (50 nM). After 5 days, live cells were flow-cytometry sorted and stimulated with coated αCD3 and αCD28 Abs (4 µg/ml) in the presence of graded doses of TGFβ1. Cells were analyzed after 4 days of stimulation. (A) Diagram illustrating the experimental procedure. (B) Representative Foxp3/CD4 contour-plots and proportions of Foxp3+ cells for gated CD4+ cells are shown at a dose of 0.25 ng/mL TGFβ1, as a function of pre-culture condition. (C) Concentrations of TGFβ1 needed to obtain 50% of the maximal percentage of iTreg-cell polarization (EC50) were calculated for each CD4 TN-cell subset and each pre-culture condition. Each dot represents an independent experiment. Significance of differences were assessed using a two-tailed paired Student’s t-test. Values of p<0.05 were considered as statistically significant (*p<0.05; **p<0.01; ***p<0.001; ns, not significant).
 
 To confirm these data in vivo, we used the well-known model of antigen-specific pTreg-cell development induced by oral tolerance (Coombes et al., 2007; Sun et al., 2007). This protocol studies the behavior of CD4 TN cells from ovalbumin-specific TCR transgenic OT-II mice adoptively transferred into wild-type mice fed with ovalbumin (OVA). Indeed, in these conditions, a significant proportion of OT-II cells rapidly differentiate into pTreg cells in the mesenteric lymph nodes and Peyer Patches of recipient mice. Most OT-II CD4 TN cells expressed Ly-6C ex vivo (Figure 7—figure supplement 1A). FACS-sorted CD45.1/2+ OT-II CD4 TN cells were first cultured in IL-7 in the presence or absence of TG (Figure 7A). After 5 days of culture, TG led to a marked downregulation of Ly-6C (Figure 7—figure supplement 1B). Living cells were then FACS-sorted and 0.5–1.106 cells were adoptively transferred into CD45.1 Foxp3-GFP mice. Finally, recipient mice were fed or not for 7 days with OVA in their drinking water. As expected, OVA administration led to the activation of OT-II cells, as reflected by a significant CD44 upregulation at their cell surface (Figure 7—figure supplement 1C). Similar numbers of OT-II CD4 T cells were recovered from the secondary lymphoid organs of OVA-fed mice whether they were initially injected with ‘Ca2+-converted’ or not OT-II CD4 TN cells (Figure 7B). In all secondary lymphoid organs, Ca2+-converted OT-II CD4 TN cells gave rise to greater proportions and absolute numbers of Foxp3-expressing cells than OT-II CD4 TN cells cultured with IL-7 alone prior to injection (Figure 7C–E). Specifically, a total of 1.16 ± 0.22×104 pTreg (Foxp3-expressing) cells were recovered from the whole periphery of recipient mice injected with Ly-6C+ OT-II CD4 TN cells compared to 2.26 ± 0.32×104 pTreg cells when mice were injected with Ca2+-converted OT-II CD4 TN cells(p<0.05).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig7-v2.jpg)
+
+**Figure 7.:** Purified CD4 T cells from CD45.1/.2+ C57BL/6 Foxp3-GFP OT-II mice were cultured in IL-7 (10 ng/ml) with or without TG (4 nM). After 5 days live CD4 TN (CD44lo CD25lo CD8β- CD11b- CD11c- NK1.1- TCRγδ- Foxp3-GFP-) cells were flow-cytometry sorted and injected intravenously (0.5−1 × 106 cells) into sex-matched CD45.1+ C57BL/6 Foxp3-GFP recipient mice fed with Ovalbumin (OVA; 1.5% w/v) in the drinking water. One week after transfer, peripheral and mesenteric LNs (pLNs and mLNs, respectively), Peyer’s Patches (PPs) and spleen were recovered separately and donor-derived CD4 T cells were analyzed. (A) Diagram illustrating the experimental model. (B) Absolute numbers of donor-derived OT-II CD4 T (CD45.1+ CD45.2+ CD4+ TCRβ+ Vβ5+) cells recovered from pLNs, mLNs, PPs and spleen of recipient mice are shown as means ± s.e.m. for three independent experiments with two or three mice per group. (C) Representative Foxp3/Vβ5 contour-plots and proportions of Foxp3-GFP+ cells for gated donor-derived OT-II CD4 T (CD45.1+ CD45.2+ CD4+ TCRβ+ Vβ5+) cells recovered from mLNs are shown. (D–E) Percentages (D) and absolute numbers (E) of Foxp3-GFP+ among donor-derived OT-II CD4 T (CD45.1+ CD45.2+ CD4+ TCRβ+ Vβ5+) cells recovered from pLNs, mLNs, PPs and spleen of recipient mice are shown as means ± s.e.m. for three independent experiments with two or three mice per group. (B, D, E) Significance of differences were assessed using a two-tailed unpaired Student’s t-test. Values of p<0.05 were considered as statistically significant (*p<0.05; ns, not significant). figure supplement legends.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Ly-6C fluorescence histograms of gated CD4 TN (CD4+ CD8α- TCRβ+ CD44lo CD25lo Foxp3-GFP-) cells recovered from LNs of C57BL/6 Foxp3-GFP and C57BL/6 Foxp3-GFP OT-II mice are shown. (B, C) Purified CD4 T cells from CD45.1/.2+ C57BL/6 Foxp3-GFP OT-II mice were cultured in IL-7 (10 ng/ml) with or without TG (4 nM). After 5 days, live CD4 TN (CD44lo CD25lo CD8β- CD11b- CD11c- NK1.1- TCRγδ- Foxp3-GFP-) cells were flow-cytometry sorted, analyzed for their cell surface expression of Ly-6C (B) and injected intravenously (0.5−1 × 106 cells) into sex-matched CD45.2+ C57BL/6 Foxp3-GFP recipient mice fed with Ovalbumin (+OVA; 1.5% w/v) or not (-OVA) in the drinking water (C). One week after transfer, mesenteric LNs (mLNs) were recovered and donor-derived CD4 T cells were analyzed. (C) Gating strategy and representative CD44/Foxp3 dot-plots for gated donor-derived OT-II CD4 T (CD45.1+ CD45.2+ CD4+ TCRβ+ Vβ5+) cells recovered from mLNs are shown. Percentages of Foxp3-GFP+ cells are indicated.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/27215/elife-27215-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Purified CD4 T cells from CD45. 2+ and CD45.1/.2+ C57BL/6 Foxp3-GFP OT-II mice were cultured in IL-7 (10 ng/ml) without or with TG (4 nM), respectively. After 5 days live CD4 TN (CD44lo CD25lo CD8β- CD11b- CD11c- NK1.1- TCRγδ- Foxp3-GFP-) cells were flow-cytometry sorted, mixed at a 1:1 ratio and injected intravenously (0.5−1 × 106 cells) into sex-matched CD45.1+ C57BL/6 Foxp3-GFP-recipient mice gavaged with Ovalbumin (OVA; 50 mg) 4 and 24 hr later. 10 days after transfer, peripheral and mesenteric LNs (pLNs and mLNs, respectively), Peyer’s Patches (PPs) and spleen were recovered separately and donor-derived CD4 T cells were analyzed. (A) Diagram illustrating the experimental model and Ly-6C surface expression of transferred cells. (B) Representative CD45.1/Foxp3 dot-plots for gated donor-derived OT-II CD4 T (CD45.2+ CD4+ TCRβ+) cells recovered from Spleen, pLNs, mLNs and PP of recipient mice are shown. Absolute numbers of donor-derived Foxp3-GFP+ OT-II CD4 T cells recovered from pLNs, mLNs, PPs and spleen of recipient mice are shown as means ± s.e.m. for a representative experiment with four mice per group. (C) Total (pool of Spleen, pLNs, mLNs and PPs cells) absolute numbers of Foxp3-GFP+ OT-II CD4 T cells recovered from recipient mice are shown as means ± s.e.m. (D) Percentages of CD45.1+ cells among donor-derived Foxp3-GFP+ OT-II CD4 T (CD45.2+ CD4+ TCRβ+) cells recovered from pLNs, mLNs, PPs and spleen of recipient mice are shown as means ± s.e.m. (B, C) Significance of differences were assessed using a two-tailed paired Student’s t-test. Values of p<0.05 were considered as statistically significant (**p<0.01; ***p<0.001; ns, not significant).
 
 These latter results were confirmed by using a second protocol of oral administration of OVA. In this setting, ‘Ca2+-converted’ OT-II CD4 TN cells were co-transferred with OT-II CD4 TN cells cultured in IL-7 alone in order to compare their ability to convert into pTreg in the same recipient mice. FACS-sorted CD45. 2+ and CD45.1/2+ OT-II CD4 TN cells were first cultured in IL-7 in the absence or presence of TG, respectively (Figure 7—figure supplement 1A). After 5 days of culture, living cells were FACS-sorted, mixed at a 1:1 ratio and 1.106 cells were adoptively transferred into CD45.1 Foxp3-GFP mice. Finally, recipient mice were fed with OVA by gavage (4 and 24 hr after the transfer of OT-II cells). Nine days later, secondary lymphoid organs were recovered and the phenotype of donor-derived OT-II T cells was analyzed. In this setting, ‘Ca2+-converted’ OT-II CD4 TN cells were also giving rise to greater absolute numbers of Foxp3-expressing cells than OT-II CD4 TN cells cultured with IL-7 alone prior to injection (Figure 7—figure supplement 1B,C). More precisely, more than three quarters of the Foxp3+ OT-II cells arising in these conditions derived from ‘Ca2+-converted’ cells (Figure 7—figure supplement 1D).
 
@@ -104,23 +152,387 @@ tTreg and pTreg cells have complementary roles in immune-mediated tolerance (Har
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.Cg-Foxp3tm1Mal/J</td>
+      <td>Wang et al. (2008) (PMID: 18209052)</td>
+      <td>IMSR Cat# JAX:018628, RRID:IMSR_JAX:018628</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.Cg-Tg(TcraTcrb)425Cbn/J</td>
+      <td>Barnden et al., 1998(PMID: 9553774)</td>
+      <td>IMSR Cat# JAX:004194, RRID:IMSR_JAX:004194</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700-conjugated anti CD45.2 (104)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 560693</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Allophycocyanin (APC)-conjugated anti-CD25 (PC61)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 561048</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Allophycocyanin (APC)-conjugated anti-CD44 (IM7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 561862</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet (BV) 421-conjugated anti Ly-6C (AL-21)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 562727</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV 510-conjugated anti-CD4 (RM4-5)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 563106</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV 786-conjugated anti-CD25 (PC61)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 564023</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phycoerythrin (PE)-conjugated anti-CD25 (PC61)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 561065</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phycoerythrin (PE)-conjugated anti-CD69 (H1.2F3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553237</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phycoerythrin (PE)-conjugated anti-Izumo1r (TH6)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 560320</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phycoerythrin (PE)-conjugated anti-TCRgd (GL3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553178</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phycoerythrin (PE)-conjugated anti-Vb5.1/5.2 (MR9-4)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553190</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7-conjugated anti-CD44 (IM7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 560569</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7-conjugated anti-CD45.1 (A20)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 560578</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-CD5 (53–7,3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553019</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-CD62L (MEL14)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553149</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-Ly-6C (AL-21)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 557359</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-Sca1 (E13-161.7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553334</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647-conjugated anti-IL18ra (BG/IL18ra)</td>
+      <td>BioLegend</td>
+      <td>Cat# 132903</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated streptavidin</td>
+      <td>BioLegend</td>
+      <td>Cat# 405207</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV 421-conjugated anti-Ly-6C (HK1.4)</td>
+      <td>BioLegend</td>
+      <td>Cat# 128032</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-Ly-6C (HK1.4)</td>
+      <td>BioLegend</td>
+      <td>Cat# 128008</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 448-conjugated anti-NFAT2 (7A6)</td>
+      <td>BioLegend</td>
+      <td>Cat# 649603</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 448-conjugated anti-NFAT1 (D43B1)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 14324</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-CD200 (OX-90)</td>
+      <td>eBioscience</td>
+      <td>Cat# 12-5200-82</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-Ikzf3 (8B2)</td>
+      <td>eBioscience</td>
+      <td>Cat# 12-5789-80</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-Nur77 (12.14)</td>
+      <td>eBioscience</td>
+      <td>Cat# 12-5965-82</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5-conjugated anti-TCRb (H57-597)</td>
+      <td>eBioscience</td>
+      <td>Cat# 45-5961-82</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-CD73 (eBioTY/11.8)</td>
+      <td>eBioscience</td>
+      <td>Cat# 14-0731-82</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-Foxp3 (FJK-165)</td>
+      <td>eBioscience</td>
+      <td>Cat# 12-5773-82</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-Foxp3 (FJK-165)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-5773-82</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pacific Blue-conjugated streptavidin</td>
+      <td>Invitrogen</td>
+      <td>Cat# S11222</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Vio770-conjugated anti-CD8a (53–6.7)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-102-305</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-CD122 (TM-b1)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-102-569</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>Calbiochem</td>
+      <td>CAS 16561-29-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FK506 (tacrolimus)</td>
+      <td>Sigma Aldrich</td>
+      <td>CAS 109581-93-3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellTrace Violet</td>
+      <td>Invitrogen</td>
+      <td>Cat# C34557</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellTrace Far Red</td>
+      <td>Invitrogen</td>
+      <td>Cat# C34564</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Mouse IL-7</td>
+      <td>R and D Systems</td>
+      <td>Cat# 407 ML-025</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Calbiochem</td>
+      <td>CAS 67526-95-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TGFβ1</td>
+      <td>Invitrogen</td>
+      <td>Cat# PHG9204</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DRAQ5</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4084</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indo-1, AM</td>
+      <td>Invitrogen</td>
+      <td>Cat# I1223</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator CS5</td>
+      <td>Adobe Systems Inc.</td>
+      <td>http://www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeneChip Scanner 3000 7G</td>
+      <td>Affymetrix</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Expression Console</td>
+      <td>Affymetrix</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DIVA8.0.1</td>
+      <td>BD Biosciences</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>Bioconductor</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://www.bioconductor.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Partek Genomics Suite</td>
+      <td>Partek</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Deposited data</td>
+      <td>GSE14308</td>
+      <td>Wei et al. (2009), PMID: 19144320</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14308</td>
+    </tr>
+    <tr>
+      <td>Deposited data</td>
+      <td>GSE42276</td>
+      <td>Wakamatsu et al. (2013), PMID: 23277554</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42276</td>
+    </tr>
+    <tr>
+      <td>Deposited data</td>
+      <td>GSE67464</td>
+      <td>Bevington et al., 2016, PMID: 26796577</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67464</td>
+    </tr>
+    <tr>
+      <td>Deposited data</td>
+      <td>GSE70154</td>
+      <td>Richards et al. (2015), PMID: 26195815</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70154</td>
+    </tr>
+    <tr>
+      <td>Deposited data</td>
+      <td>GSE62532</td>
+      <td>Vahl et al. (2014), PMID: 25464853</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62532</td>
+    </tr>
+    <tr>
+      <td>Deposited data</td>
+      <td>GSE97477</td>
+      <td>This paper</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE97477</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 mice (CD45.2) were obtained from Charles River Laboratories. C57BL/6 CD45.1 mice were maintained in our own animal facilities, under specific pathogen-free conditions. C57BL/6 Foxp3-GFP CD45.2 mice (Wang et al., 2008), initially obtained from Dr Bernard Malissen, Centre d’Immunologie de Marseille-Luminy, France, were crossed with C57BL/6 CD45.1 mice to generate C57BL/6 Foxp3-GFP CD45.1 and CD45.1/.2 mice. C57BL/6 OT-II mice were obtained from Charles River Laboratories and crossed with C57BL/6 Foxp3-GFP CD45.1 (or CD45.2) mice to generate C57BL/6 Foxp3-GFP CD45.1/.2 (or CD45.2) OT-II mice. Four- to 12-week-old mice were used for all experiments. Experiments were carried out in accordance with the guidelines of the French Veterinary Department. All procedures performed were approved by the Paris-Descartes Ethical Committee for Animal Experimentation (decision CEEA34.CA.080.12). Sample sizes were chosen to ensure the reproducibility of the experiments and according to the 3Rs of animal ethics regulation.
 
-## Cell suspensions
+### Cell suspensions
 
 Peripheral Lymph Nodes (pLNs), mesenteric Lymph Nodes (mLNs), Peyer’s patches, spleen and thymus were homogenized and passed through a nylon cell strainer (BD Falcon) in PBS supplemented with 10% FCS (Biochrom) for adoptive transfer or cell culture (LNs only), or in 5% FCS and 0.1% NaN3 (Merck-Sigma-Aldrich, Lyon, France) in PBS for flow cytometry.
 
-## Adoptive transfer of Ly-6C- CD4 TN cells
+### Adoptive transfer of Ly-6C- CD4 TN cells
 
 CD4 T cells were purified from LNs (pooled superficial cervical, axillary, brachial, inguinal and mLNs) of C57BL/6 Foxp3-GFP CD45.1 mice by incubating cell suspensions on ice for 15 min with a mixture of anti-CD8 (53–6.7), anti-CD19 (1D3) and anti-Ter-119 antibodies (Abs) obtained from hybridoma supernatants, and then with magnetic beads coupled to anti-rat immunoglobulins (Invitrogen, Cergy-Pontoise, France). Ly-6C- CD4 TN cells were sorted as Foxp3-GFP- Lineage (CD25, TCRγδ, CD8β, CD11b, CD11c)-PE- CD44-/lo Ly-6C- cells using a FACS-ARIA3 flow cytometer (BD Biosciences, Le Pont de Claix, France) and injected intravenously into sex-matched recipient mice whose then were injected intraperitoneally every day for two weeks with 2.5 mg/kg of Prograf (Tacrolimus; Astellas Pharma Inc., Tokyo, Japan).
 
-## Adoptive transfer of OT-II CD4 TN cells
+### Adoptive transfer of OT-II CD4 TN cells
 
 CD4 T cells were purified from LNs of C57BL/6 Foxp3-GFP OT-II CD45.2 or CD45.1/.2 mice by using Dynabeads Untouched Mouse CD4 Cells Kit (Invitrogen) and cultivated with recombinant mouse IL-7 (10 ng/ml; R and D Systems, Minneapolis, MN) with or without Thapsigargin (4 nM; Merck-Sigma-Aldrich) into 96-well round-bottom treated cell culture microplate (Corning; 1 × 105 cells per well). After 5 days of culture, cells were recovered and labelled with PE-conjugated anti-TCRγδ (GL3), anti-CD8.b2 (53–5.8), anti-NK-1.1 (PK136) and APC-conjugated anti-CD44 (IM7), all from BD Biosciences. OT-II CD4 TN cells were sorted as GFP- Lineage-PE- CD44-/lo cells using a FACS-ARIA3 flow cytometer (BD Biosciences) and 0.5 to 1 × 106 cells were injected intravenously into sex-matched C57BL/6 Foxp3-GFP CD45.1 mice. Recipient mice were then continuously fed with Albumin from chicken egg white (OVA; 1.5% w/v; Merck-Sigma-Aldrich) in the drinking water or not. LNs and spleens were collected at day seven and CD45.2+ CD4 T cells analyzed. In a second protocol, sorted CD4 TN cells from CD45. 2+ and CD45.1/.2+ C57BL/6 Foxp3-GFP OT-II mice were cultured in IL-7 (10 ng/ml) without or with TG (4 nM), respectively. After 5 days live CD4 TN (CD44lo CD25lo CD8β- CD11b- CD11c- NK1.1- TCRγδ- Foxp3-GFP-) cells were flow-cytometry sorted, mixed at a 1:1 ratio and injected intravenously (0.5−1 × 106 cells) into sex-matched CD45.1+ C57BL/6 Foxp3-GFP recipient mice gavaged with Ovalbumin (OVA; 50 mg) 4 and 24 hr later. LNs and spleens were collected at day 10 and donor-derived CD4 T cells were analyzed.
 
-## Cell surface staining and flow cytometry
+### Cell surface staining and flow cytometry
 
 Cell suspensions were collected and dispensed into 96-well round-bottom microtiter plates (Greiner Bioscience; 6 × 106 cells per well). Surface staining was performed by incubating the cells on ice, for 15 min per step, with Abs in 5% FCS and 0.1% NaN3 in PBS. Each cell-staining reaction was preceded by a 15 min incubation with a purified anti-mouse CD16/32 Abs (FcγRII/III block; 2.4G2) obtained from hybridoma supernatants.
 
@@ -128,28 +540,28 @@ Alexa Fluor 700-conjugated anti CD45.2 (104), Allophycocyanin (APC)-conjugated a
 
 Multi-colour immunofluorescence was analyzed using BD-LSR2 and BD-FORTESSA (BD Biosciences) flow-cytometers. List-mode data files were analyzed using Diva software (BD Biosciences). Data acquisition and cell sorting were performed on the Cochin Immunobiology facility.
 
-## Intracellular calcium measurement
+### Intracellular calcium measurement
 
 Ex vivo purified CD4 T cells or cells recovered after 5 days of culture were loaded for 30 min at 37°C with the membrane-permeable fluorescent Ca2+ indicator dye Indo-1 AM (Invitrogen) at a concentration of 1 µM. Cells were stained either in HBSS (for ex-vivo-purified CD4 T cells) or directly in the culture medium (cultured cells). Thereafter, ex-vivo-purified CD4 T cells were stained for surface markers and kept on ice. Before acquisition, cell aliquots were allowed to equilibrate to 37°C for 5 min and then were analyzed by flow cytometry. After acquisition of background intracellular Ca2+ concentrations for 2 min, cells were stimulated with Thapsigargin (at a concentration of 4 or 200 nM).
 
-## Cell culture and in vitro polarization assays
+### Cell culture and in vitro polarization assays
 
 Flow-cytometry sorted Ly-6C- and Ly-6C+ CD4 TN cells from LNs of C57BL/6 Foxp3-GFP mice were stained with CellTrace Violet (CTv; 5 µM; Life Technologies) and cultured with IL-7 (10 ng/ml) alone or in combination with Thapsigargin (TG; 4 nM), Phorbol 12-myristate 13-acetate (PMA; 1.25 ng/ml), PMA +TG (1.25 ng/ml and 4 nM, respectively) and immobilized anti-CD3 (clone 145.2C11; 4 µg/ml; obtained from hybridoma supernatants) and anti-CD28 (clone 37.51; eBioscience; 4 µg/ml) Abs. For in vitro polarization assays Ly-6C+ CD4 TN cells were additionally stained with CellTrace Far Red (CTfr; 1.25 µM; Life Technologies). Cells were then stimulated separately or together for 4 days with coated anti-CD3 and anti-CD28 Abs, in the presence of graded concentrations of exogenous recombinant human TGFβ1 (Invitrogen). In some experiments, anti-IFN-γ (clone R4-6A2; 10 µg/mL) and anti-IL-4 (clone 11B11; 10 µg/mL) blocking antibodies were added in the culture.
 
 The concentration of TGFβ needed to obtain 50% of the maximal percentage of iTreg cells (Effective Concentration, EC50) was calculated by fitting the dose-response curves of CD4 TN-cell subsets in the different culture conditions. To this end, the means of 3 to 5 independent experiments were used to build dose response curves using nonlinear least-squares regression to the Hill equation. The model used for this function was Y=[B+(T–B)] / [1 + 10([LogEC50-X]*HillSlope)], where ‘Y’ represents Foxp3+ cells as a percentage among CD4+ cells, ‘T’ and ‘B’ represent the plateaus at the beginning and end of the curve, respectively, and ‘X’ represents the concentration of TGFβ added at the beginning of the culture. The absolute EC50 was calculated to interpolate X at 50% with 95% confidence intervals.
 
-## Cytokine multiplex assay
+### Cytokine multiplex assay
 
 Flow-cytometry sorted Ly-6C- and Ly-6C+ CD4 TN cells from LNs of C57BL/6 Foxp3-GFP mice were stimulated as described above with immobilized anti-CD3 and anti-CD28 Abs in the presence or absence of exogenous recombinant human TGFβ1 (Invitrogen, 4 µg/mL). Supernatants were recovered 24 hr later and cytokines were quantified by MSD multi-array U-PLEX assays (IFN-γ, IL-4, IL-17A/F and IL-10; Meso Scale Discovery, Rockville, MD) according to the manufacturer’s instructions.
 
-## Imaging flow cytometry
+### Imaging flow cytometry
 
 LNs cells of C57BL/6 mice were harvested and fixed in 4% paraformaldehyde, immediately or after 30 min of resting or stimulation with 200 nM of Thapsigargin in RPMI 1640 Glutamax (Gibco). Cells were washed in 1% FCS and 0.1% NaN3 in PBS and incubated in glycine (0.1M) for 10 min. Cell surface was stained with biotinylated anti-Ly-6C (AL-21), BV 510-conjugated anti-CD4 (RM4-5), PE-conjugated anti-CD25 (PC61), anti-TCRγδ (GL3), anti-CD8.β2 (53–5.8), anti-NK-1.1 (PK136), anti-CD11b (M1/70), PE-Cy7-conjugated anti-CD44 (IM7) and PerCp-Cy5.5-conjugated streptavidin, all from BD Biosciences. Intracellular stainings were performed using Foxp3 Staining kit (eBioscience) and Alexa 448-conjugated anti-NFAT1 (D43B1; Cell Signaling, Leiden, The Netherlands) or anti-NFAT2 (7A6; BioLegend) and APC-conjugated anti-Foxp3 (FJK-165; eBioscience) Abs were used. Ly-6C- and Ly-6C+ CD4 TN cells were sorted as CD4-BV510+ Lineage-PE- CD44-/lo Foxp3-APC- Ly-6C+/- cells using a FACS-ARIA3 flow cytometer (BD Biosciences). After sort, DRAQ5 (Cell Signaling) was used to stain nuclei. Cells were acquired with ImageStreamX (Amnis; EMD Millipore) and analyzed with IDEAS software. NFAT1 and NFAT2 nuclear localization was calculated as the similarity score between NFAT and DRAQ5 intensities.
 
-## Microarray
+### Microarray
 
 CD4 T cells from LNs of C57BL/6 Foxp3-GFP mice were enriched as described above. Then, Ly-6C- and Ly-6C+ CD4 TN cells were flow-cytometry sorted as CD4+ CD8α- TCRβ+ GFP- CD25- CD44-/lo cells using a FACS-ARIA3 flow cytometer. Total RNA was extracted using the RNeasy Mini kit (QIAGEN, Courtaboeuf, France). RNA quality was validated with Bioanalyzer 2100 (using Agilent RNA6000 nano chip kit). Experimental and analytical part of the microarray analysis was performed according to the MIAME standards. Amplified, fragmented and biotinylated sense-strand DNA targets were synthesized from 50 ng total RNA according to the manufacturer’s protocol (Ovation PicoSL WTA System V2 and Encore Biotin Module kit (Nugen, Leek, The Netherlands)) and hybridized to a mouse gene 2.0 ST array (Affymetrix, Paris, France). The stained chips were read and analysed with a GeneChip Scanner 3000 7G and Expression Console software (Affymetrix). Raw data (.cel files) were then processed and normalized using the quantile normalization method in RMA with R package (Bioconductor). Statistical analysis was then performed with Partek Genomics Suite software (Partek). Gene expression was z-transformed, for visualization, using the following formula: z=(X-μ)/τ, with X = normalized intensity, μ = mean of the normalized intensity across replicates and τ = s.d. of mean of the normalized intensity across replicates. Experimental and analytical part of the microarray was performed on the Cochin Genomic facility. Raw and processed data microarray data are provided in the Gene Expression Omnibus (GEO) under accession number GSE97477.
 
-## Comparison with public GEO datasets
+### Comparison with public GEO datasets
 
 Normalized microarray datasets (GSE14308, GSE42276, GSE67464, GSE70154 and GSE62532) were recovered from NCBIs Gene Expression Omnibus (GEO, http://www.ncbi.nlm.nih.gov/geo/). For each datasets the values mean of Probset with the same Gene-id was performed to generate a file (.xlsx) with a unique value per Gene-id for each sample. These files were then statistical analyzed as described above. The newly created public GEO Datasets were then aligned with our microarray data by keeping only the commons Gene-id. Finally, these alignment files were filtered on our data for a p-value<0.05 and a fold change >1.3 and the differential expression of genes was compared between our and public GEO microarray.

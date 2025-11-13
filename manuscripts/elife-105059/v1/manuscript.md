@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Psychology, University of Michigan Ann Arbor United States
-2. https://ror.org/00jmfr291 Kresge Hearing Research Institute and Department of Otolaryngology, Head and Neck Surgery, University of Michigan Ann Arbor United States
+1. Department of Psychology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Kresge Hearing Research Institute and Department of Otolaryngology, Head and Neck Surgery, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -35,6 +35,14 @@ The hypothesis that hippocampal SWRs have a metabolic function raises testable p
 ## Results
 
 To determine whether food consumption modulates SWRs during subsequent sleep, we recorded the local field potential (LFP) from the dorsal CA1 region of the hippocampus, along with electroencephalographic (EEG) and electromyographic (EMG) signals, in food-restricted mice during sleep sessions before and after food intake (Figure 1A and B). Similar to previous studies investigating learning-dependent changes in hippocampal dynamics (Grosmark and Buzsáki, 2016; Oliva et al., 2020; Rothschild et al., 2017), our experimental procedure consisted of three sessions: a 2-hour sleep session (‘Pre-sleep’), a subsequent food consumption session of roughly 1 hour (‘Meal’), and an additional 2-hour sleep session (‘Post-sleep’). Within the sleep sessions, the ongoing sleep stages were determined (wake, rapid eye movement [REM], and non-rapid eye movement [NREM], see ‘Materials and methods’), and only NREM periods were included in further SWR analysis. There was no significant difference in the amount of time spent in NREM sleep in the pre and post sessions (p=0.1759, paired t-test, Figure 1—figure supplement 1). During the Meal sessions, mice received varying amounts of chow (0.3–1.5 g) in their home cage without being subjected to any instructive learning paradigm. Given that mice typically consume 4–5 g of chow per day (Bachmanov et al., 2002), the largest amount corresponded to about one-third of their daily food intake. In the control condition, the Meal session was replaced with a waking session of similar duration with no food delivery (‘No-food’). Each mouse was tested in the Meal condition 3–12 times with varying amounts of chow and at least once in the No-food condition.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental design. (B) A representative recording showing broadband hippocampal local field potential (LFP) (black), ripple-filtered LFP (150–250 Hz, green), ripple power (red), and detected SWRs (purple dots). (C–E) The effect of chow intake on ripple power (C), ripple rate (D), and ripple duration (E). Red bars represent the changes observed following delivery of equal or more than 0.5 g of chow, while the green bars represent the changes observed following delivery of less than 0.5 g. (F–I) Correlations between food amount and fold change in ripple power (F, R = 0.66, p<0.001), fold change in ripple rate (G, R = 0.44, p<0.001), fold change in ripple duration (H, NS) and fold change in delta power (I, R = 0.45, p<0.001). (J) Correlation between fold change in ripple power and fold change in delta power (R = 0.65. p<0.001). Panels (F–J) include both the experimental and control animals—the control animals appearing as having received 0 food amount. (K) A mediation analysis, indicating that the effect of food intake on ripple power was significant after accounting for sleep-dependent effects (correlation between the changes in delta power and ripple power: B = 0.16, SE = 0.03, p<0.001; the effect of meal size on the change in delta power: B = 0.28, SE = 0.07, p<0.001; the indirect effect of the change in delta power mediating the relationship between meal size and ripple power: B = 0.04, SE = 0.01, p<0.05, the direct effect of meal size on the change in ripple power: B = 0.10, SE = 0.02, p<0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Included are all session pairs in which animals were food restricted and received 0–1.5 g chow between the pre and post sleep sessions. Depicted is the total amount of time spent in NREM sleep within the 2-hour sleep session (wake and REM sleep excluded, all NREM bouts concatenated). NREM sleep amounts did not significantly differ in the pre and post sessions (p=0.1759, paired t-test).
 
 To assess whether food intake modulates SWRs, we calculated the fold change in SWR statistics from pre-sleep to post-sleep in paired sessions. We found that consuming larger meals (0.5–1.5 g) significantly increased the ripple power of SWRs in all 38 session pairs, whereas smaller meals and the No-food condition did not result in a similar effect (Figure 1C). We observed a similar modulation in ripple rate, which was increased in 31 of 38 sessions following consumption of larger meals (Figure 1D), but not in ripple duration (Figure 1E). Smaller meals and No-food condition did not induce a consistent change in ripple rate or duration (Figure 1D and E). We then examined whether there is a relationship between meal size and the magnitude of change in ripple attributes. We found that the magnitude of increase in ripple power and rate, but not duration, was positively correlated with meal size (Figure 1F–H). These findings suggest that the power and rate of SWRs increase following feeding in a dose-dependent manner.
 
@@ -60,6 +68,14 @@ We next tested whether feeding-associated hormones contribute to the meal enhanc
 
 Lastly, as our findings reveal that SWRs are modulated by food-related signals, we tested the hypothesis that SWRs can, in turn, influence brain regions involved in feeding regulation. Among the hypothalamic nuclei that participate in feeding regulation (Anand and Brobeck, 1951; Stuber and Wise, 2016), the lateral hypothalamus (LH) receives the densest di-synaptic input from the dorsal hippocampus via the lateral septum (Risold and Swanson, 1997; Tingley and Buzsáki, 2020). To test whether SWRs affect neuronal activity in the LH, we combined LFP recordings from the hippocampus with optical recordings from GABAergic neurons in the LH using fiber photometry. We used Vgat-IRES-Cre mice (n = 5) and transduced LH neurons with the pGP-AAV5-syn-FLEX-jGCaMP8f-WPRE vector (Figure 5A and B). We found that LH GABAergic neurons exhibit a robust and consistent increase in activity, peaking approximately 320 ms after SWR onset (Figure 5C–J, Figure 5—figure supplement 1). These findings strongly suggest that SWRs, which we found to be modulated by feeding, are also associated with a consistent and robust increase in population activity in the LH, a central brain region for metabolic regulation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental design. (B) A representative recording showing broadband hippocampal local field potential (LFP) (black), ripple-filtered LFP (150–250 Hz, green), ripple power (red), detected SWRs (purple dots), and the fiber photometry signal from lateral hypothalamus (LH) GABAergic neurons (FP, blue). (C) Example traces of LH GABAergic neuronal activity around SWRs. (D) Mean trace of peri-SWR LH GABAergic activity from one session. (E) Mean SWR-triggered LH GABAergic activity profiles per session. (F) The mean of the SWR-triggered LH GABAergic activity profiles across sessions. (G, H) Similar to (E, F) but for normalized traces. (I) Statistical significance of LH GABAergic activity within 0.5 s before and after SWRs per session. (J) Peak time of LH GABAergic activity relative to SWR onset. Shaded error bars (pink) indicate standard deviation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Integrated fluorescence immediately before (‘pre’) and after (‘post’) SWRs. Each gray line corresponds to fluorescence magnitudes before and after a single SWR. Black line and bars indicate the pre/post average (means and standard error of the mean). Panels correspond to single sleep session in different animals. The p-value in the title of each plot corresponds to the significance of the SWR-triggered increase (corresponding to the values in main Figure 5I). (B) The SWR-averaged activity before and after SWRs from all sessions (each gray line represents the SWR-averaged values from one session). There was a significant SWR-triggered increase in LH GABA activity across sessions (p=5.3337e-05, paired t-test).
+
 ## Discussion
 
 Regulation of energy intake and expenditure is vital for animals. While food intake provides essential fuel for the organism, it can also elevate plasma glucose and other nutrient levels above optimal ranges for physiological functions. This elevation triggers coordinated neural and peripheral responses that lower glucose levels by promoting glucose uptake in peripheral tissues and inhibiting further food intake (Chen et al., 2015; López-Gambero et al., 2019; Steculorum et al., 2016; Woods et al., 2006). Here, we show that hippocampal SWRs, previously linked to reductions in peripheral glucose levels (Tingley et al., 2021), are enhanced after food intake. Specifically, we compared SWRs occurring during sleep before and after meals and found a calorie-dependent increase in the ripple power and SWR rate. This enhancement exceeded the increase in sleep quality and was evident under both ad libitum and food-restricted conditions. Our caloric vs. non-caloric Jello experiments further revealed that the enhancement in SWRs was driven by caloric intake rather than the experience of eating. Moreover, we found that GABAergic neurons in the LH, a region implicated in the regulation of both food intake and peripheral metabolism (Anand and Brobeck, 1951; López-Gambero et al., 2019; Shimazu, 1987), exhibit a robust and consistent SWR-triggered increase in activity.
@@ -84,11 +100,11 @@ In summary, our study demonstrates that SWRs are sensitive to the body’s hunge
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All experimental procedures followed the US National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the University of Michigan’s Institutional Animal Care and Use Committee. We used C57BL/6 wild-type mice (n = 8, seven male and one female) and Vgat-IRES-Cre (n = 9 male mice; The Jackson laboratory, #016962) heterozygous mice bred in-house. The mice were housed under a 12:12 light-dark cycle.
 
-## Surgeries
+### Surgeries
 
 Mice (7–16 weeks old) were anesthetized with a ketamine-xylazine mixture (100 and 10 mg/kg, respectively; administered via intraperitoneal injection [IP]) and received lidocaine and carprofen (4 mg/kg and 5 mg/kg, respectively) prior to being placed in a stereotaxic frame (David Kopf Instruments, Tujunga, CA). During the surgery, the mice were kept under isoflurane anesthesia (∼1% in O2).
 
@@ -98,7 +114,7 @@ Fiber photometry procedures were done as described previously (Eban-Rothschild e
 
 Mice were given several days to recover from surgery. They were then habituated to handing and individually housed in custom Plexiglas recording cages (39.4 cm × 28.6 cm × 19.3 cm) with open tops to ensure that the LFP cable could reach the mice and allow them to be freely behaving without restricted movements. We recorded mice until 1 year of age.
 
-## Data processing, analyses, and sleep scoring
+### Data processing, analyses, and sleep scoring
 
 Electrophysiological and optical recordings were conducted using the Tucker Davis Technology system, sampled at 3 kHz and 1 kHz respectively. Data was visualized with Synapse or SynapseLite software. Sleep scoring was done manually using the AccuSleep toolbox (https://github.com/zekebarger/AccuSleep; Barger and Frye, 2025) using the EEG and EMG signals. NREM periods were detected based on high EEG delta power and low EMG power, REM periods were detected based on high EEG theta power and low EMG power, and wake periods were detected based on high EMG power. Only NREM periods were included for subsequent SWR detection, quantification, and analyses (in particular, reported SWR rates reflect the number of SWRs per second of NREM sleep). Sessions with less than 30 minutes of sleep were excluded from further analyses.
 
@@ -108,12 +124,12 @@ For pre-sleep and post-sleep comparisons, we calculated average ripple power, ri
 
 For SWR-LH interaction analyses, we interpolated the fiber photometry signal to match its length to the length of the LFP. For each SWR, we extracted the surrounding 4 second windows of the fiber photometry signal and centered the fiber photometry signal at the ripple onset to zero. We detected the SWR-triggered peaks in fiber photometry signal within the 1 second following SWRs. For statistical comparisons, we calculated the integrals of the 0.5-second windows before and after each SWR and performed a paired t-test on these integrals. For the summary plots, we normalized each session by its own maximum value.
 
-## Food restriction and experimental procedures
+### Food restriction and experimental procedures
 
 All experiments were conducted during the light phase. Chow experiments were conducted under food-restricted conditions in which animals did not have access to food for 20–24 hours preceding the experiments. Experimental steps were as follows: mice were left to sleep for 2 hours (pre-sleep). Then they were woken up and given a piece of regular chow (Meal). The amount of chow varied between 0.3 and 1.5 g. To calculate the exact amount of consumption, we removed and weighed any remaining chow pieces before the start of the post-sleep session which lasted for another 2 hours. Each gram of chow contained 4.1 kcal. For chocolate experiments, mice went through the same experimental procedure except that they had ad libitum food access throughout the experiment and received varying amounts (0.1–1 g) of Reese’s Peanut Butter Cups instead of chow. Each gram of chocolate contained 5 kcal.
 
 Jello experiments were performed under food-restricted conditions by using regular or sugar-free strawberry flavored Jello. Each 10 g of Jell-O gelatin mix was dissolved in 13 mL water for regular Jello meals, and each 10 g of sugar-free strawberry flavored Jell-o gelatin mix was dissolved in 111 mL water for sugar-free meals. The mixtures were refrigerated (4ºC) until firm. 1 g of regular and sugar-free Jello meals contained 1.7 and 0 kcals, respectively. The sugar-free Jello contained artificial sweeteners (aspartame and acesulfame potassium). The Jello meals were given on plastic weighing boats and weighed before and after the trial to calculate the exact amount of consumption.
 
-## Hormone experiments
+### Hormone experiments
 
 The experiments were conducted under 24-hour food restriction or ad libitum food access conditions. No food pieces were present in the cages during the recordings. Before pre-sleep sessions, mice received a subcutaneous injection of 0.1 mL saline. Before post-sleep sessions, they were administered with either 0.1 mL saline or various doses of hormones, including ghrelin (0.1, 0.167, or 0.5 mg/kg body weight, GenScript), leptin (0.3, 3, 6.67 mg/kg, Peprotech), insulin (0.5, 1, or 2 u/kg body weight, Sigma-Aldrich, I5500), or GLP-1 (0.33, 0.67, 1.67, or 2.67 mg/kg body weight, Tocris, Cat# 2082), all dissolved in 0.1 mL saline.

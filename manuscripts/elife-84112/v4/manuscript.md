@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Neurology, Massachusetts General Hospital, Harvard Medical School Boston United States
-2. https://ror.org/03vek6s52 Harvard Medical School Boston United States
-3. https://ror.org/05tb9de28 Massachusetts Alzheimer’s Disease Research Center Charlestown United States
-4. https://ror.org/00f54p054 Department of Chemical Engineering, Stanford University Stanford United States
-5. https://ror.org/03vek6s52 Department of Chemistry and Chemical Biology, Harvard University Cambridge United States
-6. https://ror.org/03vek6s52 Department of Molecular and Cellular Biology and Harvard Center for Biological Imaging, Harvard University Cambridge United States
+1. Department of Neurology, Massachusetts General Hospital, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Massachusetts Alzheimer’s Disease Research Center Charlestown United States ([ROR:05tb9de28](https://ror.org/05tb9de28))
+4. Department of Chemical Engineering, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. Department of Chemistry and Chemical Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+6. Department of Molecular and Cellular Biology and Harvard Center for Biological Imaging, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ Inspired by our previous experience troubleshooting IHC in large volumes of mous
 
 ## Results
 
-## Strategy to rapidly assess the optimization of protocols
+### Strategy to rapidly assess the optimization of protocols
 
 Our workflow for determining an optimal IHC protocol is inspired by the success of quantitative structure-activity relationship (QSAR) modeling for drug discovery. QSAR models are used to predict the biological activities of untested drugs by first testing a library of drugs with similar but varied structures, measuring how each drug affects the activity, then creating a model that relates the structural changes to the observed activities (Muratov et al., 2020). Borrowing from this strategy and making a library of tissues that all went through similar processing steps but for a few key changes allows for us to predict the optimal staining protocol without needing to test every possible combination of conditions.
 
@@ -56,7 +56,7 @@ The use of large intact organs such as whole mouse brains is unnecessary and imp
 
 Using QSAR modeling as a guide, we selected 17 conditions to test in our proof-of-principle studies (Figure 1). These conditions were divided across four standard IHC/tissue clearing steps: fixation, blocking/unmasking, delipidation, and antibody incubation. Five conditions were later omitted, and multiple 0.5–1.0 mm thick tissue sections were assigned to 12 protocols to create the final tissue library (Figure 1). With the library complete, a tissue sections from each condition could be selected for further head-to-head analysis in our image analysis pipeline that outputs a quantifiable metric of quality (see below). Using these metrics, we were able to predict the optimal combination of IHC conditions for each antibody we tested from initial fixation through to final labeling. During this proof-of-principle study, we only tested high-quality antibodies that were already known to have high specificity and limited off-target binding for IHC in thin tissue slices.
 
-## Measuring IHC quality in cleared tissue
+### Measuring IHC quality in cleared tissue
 
 To compare the quality of IHC in the cleared tissue libraries we developed a data analysis pipeline to quickly extract the distribution of fluorescence in multiple samples and derive performance parameters. First, we used one of two different software (Imaris or Ilastik) to generate image segmentation masks. For analysis with Imaris, we isolated objects based on the intensity of fluorescence relative to nearby background (Figure 2). For analysis with Ilastik, we leveraged machine learning algorithms that allow users to classify pixels and supervise the generation of the segmentation mask (Berg et al., 2019). Either of these segmentation masks are then run through code in Matlab that extracts the signal, noise, signal-noise ratio, area of staining, and the distance into the tissue at which the staining intensity drops by half. IHC quality can then be made by comparing these features across samples. It should be noted that simply relying on depth to half-max staining does not separate the issues of free antibody penetration speed through the tissue nor the extent of antibody depletion along the way, and it is possible that conditions that reduce the antigenicity may significantly enhance the apparent penetration rate.
 
@@ -64,25 +64,121 @@ This analysis does not require staining of images to be perfect nor precise but 
 
 After acquiring segmentation results, turning it into an ideal figure of merit will vary depending on the antigen of interest and its distribution in tissue. For antigens that have relatively constant distribution over the depth of imaging, the area of each plane within a Z-stack that is segmented could be used as a figure of merit for staining quality across conditions. However, if the antigen distribution does not have a constant distribution, it is better to use a figure of merit that is normalized based on the area of segmentation, such as the average staining intensity at each depth plane.
 
-## Conditions that influence antibody and epitope preservation
+### Conditions that influence antibody and epitope preservation
 
 Starting from a comprehensive collection of published IHC protocols (Richardson et al., 2021; Kim et al., 2016; Scardigli et al., 2021; Richardson and Lichtman, 2015), we selected a subset of commonly varied conditions to create 12 test protocols for proof of principle. Each protocol is nearly identical, only varying by a single condition from at least one other protocol to allow for a complete understanding of how each change influences staining. The baseline protocol involved minimal processing and gentle conditions. Specifically, the tissue was fixed in 4% paraformaldehyde (PFA) for 2 days post-perfusion, embedded in hydrogel made of 4% acrylamide, delipidated in sodium dodecyl sulfate (SDS) for 1 day at 37°C, rinsed in phosphate-buffered saline (PBS) with 0.2% Triton X-100 (PBST) at 4°C, and incubated with antibodies at 4°C for 18 hr. We then created a library of tissue that was processed using small changes to this baseline protocol, so we could compare how each of these changes influenced IHC quality. This library included changes in the composition of the hydrogel (with and without 4% PFA), changes in delipidation time (1, 2, 3 days), additional steps before antibody incubation (such as unmasking with 50°C or incubation with glycine), and differential changes in antibody incubation temperature (4°C or room temperature). In addition to this library, we also examined the effects of boiling samples in citrate buffer before or after delipidation, heating to temperatures above 70°C before immunolabeling, and removal or decrease of PFA concentration in the transcardial perfusion or post-perfusion fixing step (Figure 1). However, these conditions were universally observed to negatively impact IHC or tissue integrity, so they were excluded from our final library.
 
 We chose two antibodies commonly used in neuroscience studies of cleared volumes (Glut1 and NeuN) and performed IHC on the same tissue sections from a mouse cortex that were processed according to the 12 protocols (Figure 1, Figure 3). Each antibody was directly conjugated to a fluorophore: Glut1 to Alexa Fluor 488 and NeuN to Alexa Fluor 568. Increasing delipidation time to 2 days had a positive influence on NeuN staining, and no influence on Glut1 staining, but both showed worse IHC when increasing the delipidation time further. Incubation of tissue at 50°C for 1 hr prior to antibody incubation improved staining for Glut1 and NeuN. Glycine treatment had no significant effect on NeuN staining, but inhibited Glut1 staining. Incubating antibodies at room temperature improved NeuN staining and on Glut1 staining. Intriguingly, staining with DAPI appears insensitive to the different protocols (Figure 4). Inclusion of PFA in the hydrogel resulted in decreased IHC quality for both Glut1 and NeuN, however this significantly improved IHC of dopamine receptor 2 (Figure 4—figure supplement 1). Therefore, we ascertained the optimal protocol for simultaneously staining Glut1, NeuN, and DAPI was to delipidate for 2 days, place the tissue at 50°C for 1 hr before incubating with antibodies, and incubating the antibodies at room temperature. Importantly, these same conditions would result in no staining of dopamine receptor 2 (Figure 4—figure supplement 1). Instead, an IHC protocol is required to use PFA in the hydrogel step to show adequate staining of dopamine receptor 2, which can still allow for simultaneous staining of NeuN, Glut1, and DAPI if the tissue is only delipidated for 1 day and incubated with antibodies at 4°C. Together, these results show that different conditions can have opposite effects on the quality of staining and depth of antibody penetration and reinforce the importance of optimizing sample preparation conditions for each antibody.
 
-## Comparison of IHC conditions for different antibodies directed against a single protein
+![Figure 3.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-v4.jpg)
+
+**Figure 3.:** (a) Representative maximum intensity projection views from the top and side of 500 µm thick, 5 mm wide tissue sections. C57Bl/6J mouse isocortex was processed, stained, and imaged simultaneously with NeuN (green, left panels) and Glut1 (purple, right panels). (b) Quantitative comparison of immunohistochemistry labeling across conditions using Imaris. A rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. The proportion of indexed voxels in each plane was then divided by the maximum value across all conditions to generate a normalized staining quality score, which allows for quick visual assessment of staining quality differences with depth and between conditions. (c) Quantitative comparison of the depth at which the immunohistochemistry (IHC) staining intensity becomes half of the maximum, using segmentation results from Ilastik. Error bars represent standard error. Two-tailed t-test comparing results to baseline were represented with p<0.05 = *, p<0.01 = **, and no significance = unlabeled. N=3 for all samples.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** Average signal intensity of immunohistochemistry labeling with NeuN-A568 in mouse cortex tissue prepared using baseline conditions, with antibodies incubated at room temperature (left) and 4°C (right) with gentle shaking. For each time point, n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp2-v4.jpg)
+
+**Figure 3—figure supplement 2.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with NeuN-A568 in mouse cleared tissue library with three independently prepared sections from different mice for each condition.For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp3-v4.jpg)
+
+**Figure 3—figure supplement 3.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with Glut1-A568 in mouse cleared tissue library with three independently prepared sections from different mice for each condition.For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp4-v4.jpg)
+
+**Figure 3—figure supplement 4.:** Quantitative comparison of immunohistochemistry labeling across conditions. N=3 independently prepared tissue sections from different mice for each condition. All conditions were tested with one section each from the same three mice. (Left) For the Imaris analysis, a rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. (Right) For the Ilastik analysis, the staining was segmented using their pixel classifier workflow. In short, a paintbrush was used to draw over the signal and background to help train the classifier on how to segment each image. Real-time segmentation results were then improved using a minimum of 600 image planes from six different staining conditions that reflect the distribution of staining quality in the entire set. All images were then batch processed through the trained pixel classifier.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp5-v4.jpg)
+
+**Figure 3—figure supplement 5.:** Quantitative comparison of immunohistochemistry labeling across conditions. N=3 independently prepared tissue sections from different mice for each condition. All conditions were tested with one section each from the same three mice, with each condition having every condition having. (Left) For the Imaris analysis, a rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. (Right) For the Ilastik analysis, the staining was segmented using their pixel classifier workflow. In short, a paintbrush was used to draw over the signal and background to help train the classifier on how to segment each image. Real-time segmentation results were then improved using a minimum of 600 image planes from six different staining conditions that reflect the distribution of staining quality in the entire set. All images were then batch processed through the trained pixel classifier.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp6-v4.jpg)
+
+**Figure 3—figure supplement 6.:** Segmentation results from ilastik were used to determine the signal within the segmented area as well as the noise outside of the segmented area. The noise values were subtracted from the signal value to visually represent the staining intensity value over noise. These change with depth in a notably different way than the segmented area (Figure 3—figure supplements 4 and 5) which suggests that conditions differentially influence the amount of staining and the intensity of staining.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp7-v4.jpg)
+
+**Figure 3—figure supplement 7.:** Quantitative comparison of immunohistochemistry labeling across conditions using Imaris analysis. A rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. The total area in each plane with fluorescence above the threshold value was then summed to reduce the dimensionality of comparison and allow for a comparison between conditions with a single number as the figure of merit. This comparison in staining quality is only appropriate when the target antigen is consistently distributed throughout the tissue, which may not always be the case. For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp8-v4.jpg)
+
+**Figure 3—figure supplement 8.:** Average signal intensity of immunohistochemistry labeling with NeuN-A568 in ~500 µm thick mouse cortex tissue prepared using optimized conditions and incubated with antibodies for 3 days. n=6 independently prepared longitudinal sections from three different mice. Error bars represent standard error of the mean. Each section was imaged at the hippocampus (blue), posterior cortex (gray), and anterior cortex (orange).
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp9-v4.jpg)
+
+**Figure 3—figure supplement 9.:** Average signal intensity of immunohistochemistry labeling with Glut1-A488 in ~500 µm thick mouse cortex tissue prepared using optimized conditions and incubated with antibodies for 3 days. n=6 independently prepared longitudinal sections from three different mice.Error bars represent standard error of the mean. Each section was imaged at the hippocampus (blue), posterior cortex (gray), and anterior cortex (orange).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig4-v4.jpg)
+
+**Figure 4.:** Representative maximum intensity projection views from the top and side of 500 µm thick, 5 mm wide tissue sections of C57Bl/6J mouse isocortex stained with DAPI.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** Representative maximum intensity projection views from the top and side of 1 mm thick sagittal slices of C57Bl/6J mouse brain. Dopamine receptor 2 (green) shows significantly better fluorescent labeling in both the cortex (CTX) and hippocampus (HIPP) when the tissue is prepared with paraformaldehyde (PFA) in hydrogel.
+
+### Comparison of IHC conditions for different antibodies directed against a single protein
 
 A common strategy following unsuccessful IHC in tissue is to test antibodies from different suppliers or antibodies raised against different epitopes in the desired target. To better understand whether optimal IHC protocols may be shared for antibodies against the same target, we compared the staining of a monoclonal GFAP directly conjugated to a fluorophore and a polyclonal GFAP that was detected with a fluorophore conjugated to a secondary antibody. To enable a direct comparison, both sets of antibodies were used to label the same tissue sections. Immunolabeling GFAP with different antibodies shows that the trends in staining quality are similar for both antibodies across all conditions (Figure 5). This suggests that conditions that enhance GFAP stability and prevent denaturation of its epitopes have a positive effect on all GFAP antibodies provided the antibodies are of high quality, have high specificity and limited off-target binding. This also suggests that IHC of GFAP with these antibodies is limited more by denaturation of the epitope than the antibody itself. We found that both GFAP antibodies successfully labeled their target under similar conditions (Figure 5), and both showed similar conditions where no labeling occurred (Figure 5—figure supplement 1). Some differences in labeling quality are apparent between antibodies, however it is not clear whether the differences in labeling quality are due to the conjugation of the fluorophore or other differences between the monoclonal and polyclonal antibodies. As this approach also reduces the length of the staining protocol, it is recommended to use primary antibodies directly conjugated to fluorophores whenever possible.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig5-v4.jpg)
+
+**Figure 5.:** Representative maximum intensity projection views from the top and side of 500 µm thick, 5 mm wide tissue sections of C57Bl/6J mouse isocortex stained with two different antibodies for GFAP. Monoclonal GA5 conjugated to Alexa Fluor 488 (green) was stained and imaged in the same tissue as a polyclonal antibody using a goat anti-rabbit secondary conjugated to Alexa Fluor 647 (red). Other protocols show no significant labeling (Figure 5—figure supplement 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig5-figsupp1-v4.jpg)
+
+**Figure 5—figure supplement 1.:** Representative maximum intensity projection views from the top and side of 500 µm thick, 5 mm wide tissue sections of C57Bl/6J mouse isocortex stained with two different antibodies for GFAP. Monoclonal GA5 conjugated to Alexa Fluor 488 (green) was stained and imaged in the same tissue as a polyclonal antibody using a goat anti-rabbit secondary conjugated to Alexa Fluor 647 (red).
 
 Multiple antibodies that recognize tau protein were also compared including AT8 anti-tau, HT7 anti-tau, and DAKO total tau antibodies. Tau is a microtubule associated protein that is primarily expressed by neurons and is the main component of neurofibrillary tangles in Alzheimer’s disease (AD). We chose three commonly used antibodies against tau and tested them first in tissue from a transgenic mouse model, hTau (Andorfer et al., 2003), that expresses normal human tau isoforms.
 
 There was significantly more variability between tau antibodies than seen with GFAP antibodies, primarily due to the inability for DAKO total tau antibody to effectively penetrate beyond the tissue’s surface (Figure 6, Figure 6—figure supplement 1). However, as the DAKO total tau antibody was not directly conjugated to a fluorophore, we cannot exclude the possibility that the inability to image DAKO-stained tau beyond the surface may be an effect of poor penetration and diffusion of the secondary antibody. Importantly, when used in traditional IHC in microtome slices of human tissue, all three of these antibodies labeled similar structures (Figure 6—figure supplement 2). As expected, similar trends in optimal IHC protocols were observed for AT8 and HT7 anti-tau antibodies in mouse tissue expressing human tau (Figure 6—figure supplement 3) and showed no labeling in a negative control; mice without tau expression (Figure 6—figure supplement 4).
 
-## Mouse brain tissue as a model system for optimizing IHC in cleared human tissue
+![Figure 6.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-v4.jpg)
+
+**Figure 6.:** Representative maximum intensity projection views from the top and side of 500 µm thick, 5 mm wide tissue sections. Other protocols showed worse staining quality (Figure 6—figure supplement 2).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp1-v4.jpg)
+
+**Figure 6—figure supplement 1.:** Representative maximum intensity projection views from the top and side of 500 µm thick, 5 mm wide tissue sections from frozen human tissue samples.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp2-v4.jpg)
+
+**Figure 6—figure supplement 2.:** Human tissue was stained with Dako, AT8, and HT7 to confirm the presence of their target tau prior to testing large-volume immunohistochemistry (IHC) conditions.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp3-v4.jpg)
+
+**Figure 6—figure supplement 3.:** Representative maximum intensity projection views from the top of 500 µm thick, 5 mm wide tissue sections of HTau mouse isocortex AT8 (blue) and HT7 (red) show labeling of tau in mice expressing human tau in the same conditions that show staining in human tissue.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp4-v4.jpg)
+
+**Figure 6—figure supplement 4.:** Representative maximum intensity projection views from the top of 500 µm thick, 5 mm wide tissue sections of Htau knockout mouse isocortex. AT8 (blue) and HT7 (red) show no labeling of tau in knockout mice using the same baseline conditions where they show labeling in Htau mice expressing human tau.
+
+### Mouse brain tissue as a model system for optimizing IHC in cleared human tissue
 
 Optimizing IHC in human tissue is especially difficult due to the limited amount of tissue available for experimentation. Therefore, we performed IHC optimization in both mouse and human brain tissue for individual antibodies and analyzed their similarities. Surprisingly, our testing of IHC protocols for NeuN and Glut1 in human tissue showed similar changes in staining quality and depth when compared to mouse tissue (Figure 7, Figure 7—figure supplements 1 and 2). Both human and mouse tissue showed decreases in staining quality with increasing clearing time and fixation with PFA. Room temperature antibody incubation as well as epitope unmasking at 50°C for 1 hr prior to antibody incubation improved Glut1 and NeuN staining in both mouse and human tissue. It is also worth noting that this NeuN antibody appears to accumulate off-target in the human tissue, which is not observed in the mouse tissue.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig7-v4.jpg)
+
+**Figure 7.:** (a) Representative maximum intensity projection views from the top and side of 500 µm thick, 5 mm wide tissue sections. Tissue was processed, stained, and imaged simultaneously with NeuN (green, left panels) and Glut1 (purple, right panels). (b) Quantitative comparison of immunohistochemistry labeling across conditions using Imaris. A rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. The area in each plane was then divided by the maximum value across all conditions to provide a staining quality score, which allows for quick visual assessment of staining quality differences with depth and between conditions. (c) Quantitative comparison of the depth at which the immunohistochemistry (IHC) staining intensity becomes half of the maximum, using segmentation results from Ilastik. Error bars represent standard error. Two-tailed t-test comparing results to baseline were represented with p<0.05 = *, p<0.01 = **, and no significance = unlabeled. N=3 for all samples.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig7-figsupp1-v4.jpg)
+
+**Figure 7—figure supplement 1.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with NeuN-A568 in human cleared tissue library with three independently prepared sections from different donors for each condition. For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig7-figsupp2-v4.jpg)
+
+**Figure 7—figure supplement 2.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with Glut1-A488 in human cleared tissue library with three independently prepared sections from different donors for each condition. For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.
+
 The optimal protocol that allows NeuN, Glut1, and AT8-tau staining was then determined by finding the conditions that allow for the simultaneous IHC of all three antibodies in a single tissue section, and then finding the combination of conditions among those that maximizing the staining quality. It is worth noting that this was not necessarily the best protocol for each individual antibody. It is more important to have adequate staining of each epitope than to have fantastic staining of one at the cost of another. As described above, we determined the optimal protocol for multiplexed labeling by combining the protocol changes that quantitatively improve the staining quality, defined by half-max depth, for each antibody above the baseline protocol and do not significantly degrade performance of other antibodies. For NeuN, Glut1, and AT8 antibodies this protocol involves clearing for 2 days, using 50°C to unmask epitopes, and incubation of antibodies at room temperature. The optimal protocol was then validated in 1 mm thick pieces of human brain tissue, approximately 100-fold thicker than typical paraffin embedded sections. Antibodies for tau in mice expressing human tau show similar variability across conditions for the labeling of labeling tau in human tissue (Figure 6). We concurrently incubated the human tissue with three antibodies conjugated to three different fluorophores (NeuN-A568, Glut1-A488, and AT8-A647). These antibodies were used to stain tissue that was first embedded in a 4% acrylamide hydrogel, cleared for 2 days and thoroughly washed. The antibodies were incubated with the tissue for 14 days to ensure complete staining through the whole sample in both humans (Figure 8) and mice (Figure 8—figure supplement 1). It should be noted that we found 3 days of antibody incubation sufficient for consistent and thorough staining across brain regions in 500 µm mouse tissue (Figure 3—figure supplements 8 and 9), and there were no notable downsides to leaving the antibody incubating longer. By carefully following the optimal IHC protocol determined in this work, we were able to achieve complete penetration and simultaneous labeling of the 1 mm thick human tissue with all three antibodies. Both the Glut1-labeled vasculature and AT8-labeled tau are extremely well defined and could be easily quantitated. The NeuN reflects the same quality that it had during the troubleshooting but does not appear to be an ideal antibody for assessment of human neurons under these conditions.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig8-v4.jpg)
+
+**Figure 8.:** The tissue was crosslinked without paraformaldehyde (PFA), cleared for 2 days, rinsed, then the antibodies NeuN-A568 (red), Glut1-A488 (green), and AT8-A647 (white) were incubated with the tissue for 14 days. (a) Top-down view of fluorescence from 1 mm section human brain. (b) Side view of each antibody fluorescence through entire section depth. (c) A 200 µm virtual section of human tissue, from a 1 mm thick sample. (d) Zoomed-in regions from the full images show that AT8-labeled tau tangles are present at multiple locations throughout the human brain sections.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig8-figsupp1-v4.jpg)
+
+**Figure 8—figure supplement 1.:** The tissue was crosslinked without paraformaldehyde (PFA), cleared for 2 days, rinsed, then the antibodies NeuN-A568 (red), Glut1-A488 (green), and AT8-A647 (blue) were incubated with the tissue for 14 days. A small section of the total stained tissue was imaged and shows complete staining throughout the entire thickness of the sample.
 
 ## Discussion
 
@@ -98,70 +194,70 @@ Our methodology enables rapid optimization of IHC protocols, including protocols
 
 ## Materials and methods
 
-## Human tissue samples
+### Human tissue samples
 
 Human tissue was provided by the Massachusetts Alzheimer’s Disease Research Center (ADRC) with approval from the Mass General Brigham IRB (1999P009556). Three human participants with AD were selected from the Massachusetts Alzheimer’s Disease Research Center. Sex, age at death, Braak staging, which hemisphere, and comorbidities are listed in Supplementary file 1. Autopsy tissue from human brains were collected at Massachusetts General Hospital, with informed consent of patients or their relatives and approval of local institutional review boards. Human tissue was received unfrozen immediately after autopsy and fixed (sample 2620) or frozen immediately after autopsy then thawed prior to fixation (samples 1581 and 1762). Tissue was placed in 4% PFA for 48 hr at 4°C, transferred to PBS for 24 hr at 4°C before slicing. This tissue was treated identically to the mouse tissue described below in the tissue slicing procedure and onward.
 
-## Mice strains
+### Mice strains
 
 Male and female C57Bl/6J mice (Jackson Laboratory 000664) were used for most tissue experiments. For tissue to test IHC of tau, 10- to 12-month-old male hTau mice bred from a local colony (B6.Cg-Mapttm1(EGFP)Klt Tg(MAPT)8cPdav/J, Jackson Laboratory 005491) that express only human tau isoforms were used. hTau knockout mice bred from a local colony (Mapttm1(EGFP)Klt/J, Jackson Laboratory 004779) were used as controls for tau IHC experiments. Mouse experiments were performed with approval of local institutional review boards (IACUC protocol # 2019N000026).
 
-## Perfusion
+### Perfusion
 
 Mice were transcardially perfused with ice-cold 40 ml PBS, followed by 40 ml 4% PFA (Electron Microscopy Sciences). Brains were removed from the cranium and placed in 4% PFA for 48 hr at 4°C. Brains were then transferred to PBS for 24 hr at 4°C before slicing.
 
-## Tissue slicing
+### Tissue slicing
 
 Brains were embedded in 4% agarose hydrogel. To do this, extracted brains were placed individually in a small Petri dish and let dry slightly. The agarose solution was dissolved by boiling in a microwave, then left on the counter to cool before pouring. Agarose was poured to completely cover the top of the brain, which allows it to provide a solid support to prevent deformation during cutting. A block of agarose containing the brain was placed in a vibratome (VT1000S vibrating blade microtome, Leica, Wetzlar, Germany) then cut into 500 or 1000 µm coronal or sagittal slices. Each slice was then removed from the agarose through gentle manipulation with blunt forceps or paintbrushes before crosslinking.
 
-## Tissue hydrogel crosslinking
+### Tissue hydrogel crosslinking
 
 Each slice was incubated with a hydrogel crosslinking solution for 1 day at 4°C to let the molecules diffuse through the tissue. Solutions should be kept cold before and after the addition of VA-044 to prevent premature initiation of polymerization. Different crosslinking solutions were used to determine the effect of including PFA on IHC. Crosslinking solution 1: PBS with 4% (wt/vol) acrylamide (Sigma-Aldrich, St Louis, MO) and 0.25% (wt/vol) VA-044 thermal polymerization initiator (Thermo Fisher Scientific, Pittsburgh, PA). Crosslinking solution 2: PBS with 4% (wt/vol) acrylamide, 0.25% (wt/vol) VA-044 thermal polymerization initiator, and 4% PFA. After incubation with the crosslinking solution for 1 day, the tissue was left in solution and placed in vacuum at 37°C for 3 hr. After polymerization with X-CLARITY polymerization system (Logos Biosystems, South Korea), the slices were rinsed with 50 ml PBS three times over 3 hr. Each slice was then cut into small pieces with width and length at least twice the thickness. This was done to increase the number of conditions that could be tested with small amounts of tissue.
 
-## Delipidation
+### Delipidation
 
 After hydrogel crosslinking, the tissue was placed in a delipidation solution (SDS 200 mM, sodium sulfite 20 mM, sodium borate 20 mM, sodium hydroxide to pH 8.5–9, filtered if necessary) at 37°C for different amounts of time (1, 2, or 3 days), to determine the effect of delipidation in IHC. After delipidation, the brain slices were rinsed with 50 ml PBST (PBS with 0.2% Triton X-100, Thermo Fisher Scientific) five times over 1 day.
 
-## Pre-IHC tissue processing
+### Pre-IHC tissue processing
 
 Different conditions were tested at this step to determine their influence on IHC. Each tissue section was tested using only one of the following conditions. Baseline: Tissue was left at 4°C in PBST. 50°C Condition: Tissue was heated to 50°C for 1 hr in PBST. Glycine: Tissue was incubated with 0.1 M glycine at 4°C for 12–18 hr. Glycerol: Tissue was placed in a low osmolarity solution of 80% glycerol/20% water for 12–18 hr. Blocking: Tissue was placed in 5% BSA in PBS for 12–18 hr.
 
-## Storage of tissue library
+### Storage of tissue library
 
 The tissue library was then used immediately or stored at 4°C in PBS with 0.02% (wt/vol) sodium azide. Mouse and human tissue was processed following all of the steps above and then used up to 3 months later. Additional mouse and human tissue was stored following delipidation, then successfully used up to 6 months later by resuming from the pre-IHC tissue processing state. IHC conditions for a given antibody were always compared using batches of tissue that were stored for the same amount of time.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Each brain slice was placed in a 2 ml Eppendorf tube (or similar vessel) that could hold the slice so its large, flat sides could be exposed to solution. PBST was added to just cover the top of the samples (~300 µl). One to 5 µl of stock antibody solution was added, depending on the concentration of the stock. The final concentration of each antibody in solution was 5 µg/ml. Fluorophores or host species were chosen so multiple different antibodies could be tested at the same time in a single slice of tissue. The tissue was then incubated with the antibodies at 4°C or room temperature for 18 hr. The tissue was then rinsed in PBST 3×50 ml overnight (18–24 hr) at room temperature. If using unconjugated primary antibodies, the secondary antibodies were then added to give a final concentration of 5 µg/ml and incubated for 48 hr at 4°C. The tissue was then rinsed in PBST 3×50 ml overnight at room temperature.
 
-## IHC of human microtome sections
+### IHC of human microtome sections
 
 Prior to preparation of cleared tissue volumes, fresh/frozen human samples were tested for the presence of AT8, HT7, and DAKO. Microtome sections were fixed in 4% PFA for 15 min, rinsed in Tris-buffered saline (TBS) three times, then blocked in TBS with 5% bovine serum albumin. Primary antibodies were incubated at a concentration of 1:500 overnight. Tissue was rinsed in TBS 3×, then incubated in secondaries at room temperature for 60 min, and rinsed in TBS 3×. Immumount was then used to seal the tissue prior to imaging.
 
-## Refractive index matching
+### Refractive index matching
 
 The samples were incubated with 80% glycerol, 15% DI water, 5% PBS (RI-matching solution) for at least 3 hr at room temperature with gentle shaking. The RI-matching solution was then replaced with fresh solution and left to incubate for at least 3 more hr before imaging. Samples were stable stored in this solution at room temperature and could be re-imaged for at least 3 months.
 
-## Imaging
+### Imaging
 
 Samples were imaged using Olympus Inverted Confocal FV3000 with a 10× objective except for samples using dopamine receptor antibodies which were imaged using the Zeiss Lightsheet Z.1. Image Z-stacks were then reconstructed and visualized using Imaris microscopy image analysis software.
 
-## Post-imaging analysis
+### Post-imaging analysis
 
 Prior to analysis, images were assigned a random number so the analyzing scientist was blind to tissue clearing conditions but still aware of the antibodies used in the tissue, which was necessary to identify staining.
 
-## Analysis with Imaris
+### Analysis with Imaris
 
 Imaris software was used to assess the staining quality score. First, the distribution of fluorescence values across all slices in the Z-stack were normalized. Then, a rolling-ball algorithm was applied to define the edges of fluorescent shapes with signal intensity greater than background by a threshold value. The area within each slice of a Z-stack that contained staining above this threshold was then divided by the maximum across all tissue stained with that fluorophore to determine the staining quality throughout the tissue. This metric was only applied to stains like NeuN or Glut1 in the cortex where we can make the assumption that there is a uniform and consistent distribution of these cells across sections. All samples that were imaged as part of the library described in Figure 1 were included in this study, with at least three independent samples per condition to determine reproducibility.
 
-## Analysis with Ilastik
+### Analysis with Ilastik
 
 Raw data was converted to HDF5 format using ilastik’s ImageJ plugin plus custom macro to batch convert. The staining was then segmented using their pixel classifier workflow (Berg et al., 2019). In short, a paintbrush was used to draw over the signal and background to help train the classifier on how to segment each image. Real-time segmentation results were then improved using a minimum of 600 image planes from six different staining conditions that reflect the distribution of staining quality in the entire set. All images were then batch processed through the trained pixel classifier and exported as multipage tiff.
 
-## Post-image segmentation analysis in Matlab
+### Post-image segmentation analysis in Matlab
 
 The image segmentation output from either Imaris or Matlab was saved as a single-channel multipage Tiff and placed into a folder, and all the raw images were saved as a single-channel multipage Tiff and placed into a different folder. Image conversion was done using ImageJ macros. Quantification and generation of data for plotting can then be done by specifying the data path, ensuring the Matlab code is on the path, then running the code. The main code ‘QuantifyIHC.mat’ should be run first, which goes through the files in each folder in order and determines the segmentation area, staining within the segmentation, and noise outside of the segmentation. Next, running the ‘FindHalfHax.mat’ code will find the starting plane for plotting, the half-max depth, place all data for plotting into arrays, allow for the re-ordering of blinded data, and plotting of the heatmaps.
 
-## Code availability
+### Code availability
 
 All Matlab code and ImageJ macros used to quantify data can be accessed at https://github.com/tjzwang/IHC, (copy archived at swh:1:rev:64acafda08ebdda1021edfe47e3d328b21218aa6; Zwang, 2022).

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Cornell Lab of Ornithology, Cornell University Ithaca United States
+1. Cornell Lab of Ornithology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
 
 † Corresponding author
 

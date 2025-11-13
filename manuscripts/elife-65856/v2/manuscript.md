@@ -37,9 +37,33 @@ To address these limitations, we developed a CRISPR-Cas9 strategy to construct t
 
 ## Results
 
-## A CRISPR-Cas9 strategy for functional genomics in human moDCs
+### A CRISPR-Cas9 strategy for functional genomics in human moDCs
 
 To enable introduction of specific knockouts in human moDCs, we developed a non-viral genome editing strategy based on electroporation of in vitro-assembled Cas9-sgRNA complexes (Cas9 ribonucleoprotein particles, RNPs), an approach that has been validated in other immune cell types (Freund et al., 2020; Hiatt et al., 2020; Riggan et al., 2020; Roth et al., 2018; Schumann et al., 2015). Briefly, our strategy entails isolating monocytes from human donor blood, differentiating them into moDCs in the presence of GM-CSF and IL-4, and electroporating these moDCs with Cas9 RNPs to induce double-strand breaks at the targeted locus (Figure 1a). Such double-strand breaks trigger error-prone DNA repair and subsequent formation of insertions or deletions (indels) that, with a certain frequency, cause frameshift mutations and thus knockout of the targeted gene. We monitor the efficiency of this process by genotyping using next-generation sequencing and by phenotyping using functional assays.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic outline of the strategy. (b) Flow chart delineating optimization. (c) Percentage of genomic DNA reads assigned to different classes of outcomes after targeting each locus with Cas9 RNPs in condition P1, CB-150. Labeled values indicate total percentage of reads with a non-WT sequence. (d) Individual editing outcomes at the AAVS1 locus accounting for at least 0.15% of on-target reads. Horizontal gray bars denote deletions. Vertical dashed line denotes Cas9 cut site. (e) Outcome classification, as in (c), after targeting indicated loci with single or multi-sgRNA Cas9 RNPs. (f) Outcome classification, as in (c), after targeting seven loci with multi-sgRNA Cas9 RNPs in moDCs from two independent donors. (g) Production of TNF-α and CXCL10 by knockout moDCs challenged with 100 ng/mL E. coli O55 LPS, normalized to cell numbers and to cytokine production in moDCs with knockout of RPE65. Data represent mean and standard deviation of two independent treatments for both TNF-α and CXCL10 levels. See also Figure 1—figure supplement 1, Figure 1—figure supplement 2, Figure 1—figure supplement 3, Figure 1—figure supplement 4, and Figure 1—figure supplement 5.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Cell counts relative to no pulse control cells determined by two methods 3 days (flow cytometry) or 5 days (luminescence) after electroporation of moDCs in indicated conditions. (b) Comparison of indel fraction and cell counts measured in different electroporation conditions, identifying condition P1, CB-150 as a condition with low toxicity and high editing efficiency. (c) Individual editing outcomes at the TNF locus accounting for at least 0.15% of on-target reads after editing in condition P1, CB-150. Horizontal gray bars denote deletions. Vertical dashed line denotes Cas9 cut site. Superscripted bases denote insertions. Due to the presence of a C homopolymer at the cut site, the location of some short deletions and insertions cannot be unambiguously inferred; the most likely location is denoted. (d) Percentage of genomic DNA reads assigned to different classes of outcomes after targeting each locus with single or multi-sgRNA Cas9 RNPs in condition P1, CB-150. Cas9 RNPs were formed either with sgRNAs (left) or crRNA:tracrRNA complexes (right). Labeled values indicate total percentage of reads with a non-WT sequence. (e) Distribution of amplicon lengths for moDCs electroporated with multi-sgRNA Cas9 RNPs (in the sgRNA format). Observed amplicons correspond to deletions of regions between sgRNA cut sites, as indicated by the diagrams. Amplicons are depicted with the primer binding sequences in orange and sgRNA cut sites as vertical dashed lines.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic outline of strategy. See Materials and methods for details. (b) Comparison of calculated observation efficiencies and fragment size for each fragment with each of the 11 reaction ratios. Dotted line represents fit derived from a linear regression, with coefficients indicated.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Results from two successive grid searches of electroporation conditions. Ideal conditions have high indel fraction at all loci, high cell counts, low TNF-α secretion in response to 10 ng/mL E. coli LPS with knockout of TNF and TLR4, and high TNF-α secretion with knockout of CXCR4. TNF-α secretion was normalized to cell counts. Indel fractions represent data from a single measurement. Cell counts represent mean count ± standard deviation from two independent wells. TNF-α secretion values represent mean ± standard deviation of two independent treatments, normalized to cell counts. (*) indicates signal below detection limit. (b) Left: Percentage of genomic DNA reads assigned to different classes of outcomes after targeting each locus with multi-sgRNA Cas9 RNPs. Labeled values indicate total percentage of reads with a non-WT sequence. Right: Production of TNF-α by knockout moDCs challenged with 10 ng/mL E. coli O55 LPS or 100 ng/mL Pam3CSK4, normalized to cell counts. Data represent two independent treatments, normalized to cell count obtained from replicate measurements. (c) Production of TNF-α by knockout moDCs challenged with indicated concentrations of E. coli O55 LPS, normalized to cell counts and to TNF-α production by moDCs with knockout of RPE65 and treated with the highest concentration of E. coli O55 LPS. All samples were treated with identical LPS concentrations, but x-values are slightly offset by sample for clarity. Data represent two independent treatments, normalized to cell count obtained from replicate measurements. (*) indicates sample saturated during measurement of TNF-α secretion. Data from treatment with 100 ng/mL E. coli O55 LPS are also plotted in Figure 1g.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** LPS binding to TLR4 at the cell surface initially activates the MYD88-dependent signaling pathway, which results in activation of NF-κB and production of pro-inflammatory cytokines such as TNF-α. Endocytosis of the LPS-TLR4 complex leads to activation of the TRIF-dependent signaling pathway, which both further activates NF-κB and initiates an interferon response. Labels of genes mentioned in the main text are bolded. For genes with mismatched protein and gene names, protein names are indicated with gene names in parentheses.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Expression profiles of indicated markers in edited and unedited moDCs from two independent donors, measured by flow cytometry. DCs were stained 5 days after electroporation. No electroporation control DCs that had been handled and cultured alongside the edited DCs in 96-well plates as well as control DCs that had been cultured in flasks were also stained. Background fluorescence was estimated using fluorescence-minus-one control-stained unedited moDCs, shown at the top. (b) Gating strategy applied to the flow cytometry data. (c) Ratio of median fluorescence signal in indicated populations versus no electroporation control moDCs for indicated markers. (d) Percentage of genomic DNA reads assigned to different classes of outcomes after targeting each locus with multi-sgRNA Cas9 RNPs. Labeled values indicate total percentage of reads with a non-WT sequence.
 
 We first electroporated moDCs with Cas9 RNPs targeting AAVS1, using a validated sgRNA sequence (Mali et al., 2013), as well as TNF and TLR4 with sgRNA sequences from the Brunello library (Supplementary file 1; Doench et al., 2016). By testing a grid of electroporation conditions, we identified conditions with efficient genome editing of AAVS1 and TNF and limited toxicity, but editing of TLR4 was inefficient (Figure 1b,c, Figure 1—figure supplement 1a,b, Supplementary file 2). The large majority of observed indels were 1 or 2 bp deletions (Figure 1d, Figure 1—figure supplement 1c), which are frameshift mutations that eliminate the function of the gene.
 
@@ -49,11 +73,27 @@ In parallel, we challenged knockout moDCs from two donors with E. coli LPS, a TL
 
 To evaluate if our editing strategy leads to nonspecific changes in DC state, we measured expression levels of the markers CD11c, HLA-DR, CD83, and TLR4 as well as of B2M in knockout moDCs and unedited control moDCs by antibody staining. Staining patterns were qualitatively indistinguishable for moDCs with knockout of B2M or RPE65, moDCs electroporated with a non-targeting control sgRNA, or unedited moDCs (no electroporation/no RNP control) that had been cultured alongside the knockout moDCs in 96-well plates (Figure 1—figure supplement 5). Both knockout and unedited moDCs from 96-well plates had mildly elevated levels of HLA-DR and B2M compared to unedited moDCs that had been cultured in flasks, indicating that culture conditions can affect DC state independent of editing. Although our antibody panel was not designed for precise measurements of B2M levels, B2M staining was reduced 72% and 65% in B2M knockout moDCs for the two donors, consistent with protein depletion. Together, these data provide evidence that our editing strategy does not perturb DC state.
 
-## DC responses to LPSs are specific to bacterial species and vary across individuals
+### DC responses to LPSs are specific to bacterial species and vary across individuals
 
 We next sought to apply our genome editing strategy to investigate a central question in innate immunity. Despite LPS being a classic inflammatory molecule, humans are colonized by trillions of Gram-negative microbes that generate milligram to gram quantities of LPS in the intestinal tracts without tonic inflammation. This observation has been attributed in part to the different chemical structures and immunomodulatory activities of LPSs from commensal Bacteroidetes, among the most common Gram-negative phyla in the guts of western individuals (Wexler and Goodman, 2017), compared to the canonical inflammatory LPSs from E. coli and related Proteobacteria (Coats et al., 2011; Tan et al., 2015; Vatanen et al., 2016; d'Hennezel et al., 2017). Indeed, the Bacteroidetes-to-Proteobacteria LPS ratio in the gut microbiome has been associated with the incidence of type 1 diabetes (Vatanen et al., 2016), suggesting that LPSs from the human microbiome contribute to shaping immune function. The biological activities of LPSs from gut Bacteroidetes, however, have remained controversial as they have been reported to be both TLR4 antagonists and agonists (d'Hennezel et al., 2017; Steimle et al., 2019; Vatanen et al., 2016). We set out to establish how human DCs respond to LPS from Bacteroidetes and more broadly how DCs discriminate different LPSs and initiate specific immune responses.
 
 We focused on LPS from B. theta, an abundant member of the human gut microbiota whose LPS biosynthetic machinery has been characterized, allowing us to genetically manipulate its structure (Coats et al., 2011; Cullen et al., 2015; Jacobson et al., 2018). (B. theta LPS formally is a lipooligosaccharide, but we refer to it as LPS for clarity.) We purified LPS from a B. theta strain carrying deletions of all eight capsular polysaccharide (CPS) biosynthetic gene clusters (Porter et al., 2017; Rogers et al., 2013) to obtain LPS without other contaminating glycolipids, hereafter referred to as B. theta WT LPS (ΔCPS) or just B. theta LPS. Human moDCs stimulated with B. theta LPS secreted moderate levels of TNF-α as quantified by ELISA; this response was weaker than that elicited by E. coli LPS both in magnitude and apparent EC50 but substantially stronger than that elicited by Rhodobacter sphaeroides LPS, a well-characterized TLR4 antagonist (Figure 2a; Golenbock et al., 1991). (We note that we cannot calculate EC50’s in terms of molar concentrations due to the heterogeneity of LPS molecules. Nonetheless, because E. coli O55 LPS contains an O-antigen and thus has a greater average molecular weight than B. theta WT LPS, the trends we observe hold at the level of molar concentrations.) Although the pattern was consistent across moDCs from independent donors, response magnitude and EC50 varied by sixfold and >20-fold, respectively (Figure 2—figure supplement 1a), even for moDCs processed in parallel, suggesting that donor-specific factors shape immune responses. Analysis of the transcriptional responses of moDCs by RT-qPCR and RNA-seq confirmed that B. theta LPS activated both MYD88 and TRIF signaling more weakly than E. coli LPS, with a more pronounced difference for TRIF signaling, again with donor-to-donor variation (Figure 2b, Figure 2—figure supplement 1b,c).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig2-v2.jpg)
+
+**Figure 2.:** (a) TNF-α secretion after stimulation of moDCs from four independent donors with titration series of the indicated LPSs. Cells from donor e were not treated with R. sphaeroides LPS. Each data point represents an independent treatment of 20,000 moDCs. Lines denote a Hill curve fit. ‡ indicates moDCs that were processed in parallel (donors f and g). (b) Expression levels of selected genes after stimulation of moDCs from two donors with 10 ng/mL E. coli O55 LPS, 100 ng/mL B. theta WT LPS, or 100 ng/mL B. theta 4PP LPS, as determined by RNA-seq. Log2 fold-changes compared to PBS-treated control cells or transcript counts per million are shown for the 25 protein-coding genes with the largest log2 fold-changes after treatment with E. coli O55 LPS. B. theta WT LPS elicits weaker upregulation of genes than E. coli O55 LPS, with a more pronounced difference for genes downstream of TRIF such as IFNB1. B. theta 4PP LPS elicits even weaker upregulation of genes. Data represent means obtained from three independent treatment replicates for each treatment and donor. See also Figure 2—figure supplement 1, Figure 2—figure supplement 2, and Figure 2—figure supplement 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Responses to individual LPSs from Figure 2a plotted by donor to highlight differences in response magnitude and EC50. ‡ indicates moDCs that were processed in parallel (donors f and g). (b) Fold-changes in gene expression for TNF (activated by MYD88 and TRIF), IFNB1, and CXCL10 (both activated only by TRIF) upon treatment with B. theta WT LPS or E. coli O55 LPS for moDCs derived from three independent donors, measured by qPCR as 2–ΔΔCp, calculated as the difference in Cp of the target gene compared to ACTB (ΔCp) and normalized to the same quantity for PBS-treated cells (ΔΔCp). Data represent two independent treatments and RNA extractions. Each data point represents the mean of three technical replicates. (c) Comparison of log2 fold-changes from RNA-seq data for all protein-coding genes (annotated in Ensembl release 103) differentially expressed with p<0.01 with any treatment, as determined by DeSeq2 (Love et al., 2014). B. theta WT LPS elicits weaker upregulation of genes than E. coli O55 LPS, although the difference is weaker for donor s. B. theta 4PP LPS elicits weaker upregulation of genes than B. theta WT LPS. Data represent means obtained from three independent treatment replicates for each treatment and donor. Lines denote fit from a linear regression, with slope indicated. LPS concentrations used to stimulate cells for RNA-seq: E. coli O55 LPS: 10 ng/mL; B. theta WT LPS: 100 ng/mL; B. theta 4PP LPS: 100 ng/mL.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Percentage of genomic DNA reads assigned to different classes of outcomes after targeting each locus with multi-sgRNA Cas9 RNPs. Labeled values indicate total percentage of reads with a non-WT sequence. (b) Production of TNF-α by moDCs with knockout of TLR4 or RPE65 stimulated with indicated concentrations of E. coli O55 LPS or B. theta LPS, normalized to cell counts. Data represent two independent treatments, normalized to cell count obtained from replicate measurements. (c) Production of TNF-α by knockout moDCs, as in (b), with data from additional knockouts also shown. All samples were treated with identical LPS concentrations, but x-values are slightly offset by sample for clarity. Lines denote means of two independent treatments. (d) Percentage of genomic DNA reads assigned to different classes of outcomes after targeting each locus with multi-sgRNA Cas9 RNPs. Labeled values indicate total percentage of reads with a non-WT sequence. (e) Expression levels of selected genes after stimulation of knockout moDCs from two donors with 3 ng/mL E. coli O55 LPS and 100 ng/mL B. theta WT LPS (donor p) or 10 ng/mL E. coli O55 LPS and 30 ng/mL B. theta WT LPS (donor q). Treatment concentrations were chosen based on similar transcriptional upregulation observed by qPCR (Figure 2—figure supplement 1b). Log2 fold-changes compared to control cells (PBS-treated, knockout of RPE65) or the ratio of transcript counts (transcripts per million, TPM) in moDCs with knockout of TLR4 and moDCs with knockout of RPE65 are shown for the 25 genes with the largest summed log2 fold-changes after treatment with E. coli O55 LPS and B. theta WT LPS in moDCs with knockout of RPE65. MoDCs with TLR4 knockout exhibit almost no transcriptional changes in response to E. coli LPS but upregulate many genes in response to B. theta WT LPS, with the exception of genes downstream of TRIF, such as IFNB1. Data represent means obtained from two independent treatment replicates for each treatment and donor.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Clustered correlation heatmap of transcriptional profiles from different edited and unedited moDC populations. Crosswise squared Pearson correlations (r2) of TPM counts of all protein-coding genes with TPM > 0 in at least one sample (15,787 genes, protein-coding genes annotated in Ensembl release 103) were clustered by the Ward variance minimization algorithm implemented in scipy. (b) Expression levels (in TPM) of DC and myeloid cell markers in different edited and unedited moDC populations. (c) Assessment of transcript abundance and transcript structure for targeted genes in knockout moDC populations, suggesting both reduced transcript levels for targeted genes and further disruption of transcript structure (reduced mRNA coverage around sgRNA cut sites). We note that transcript levels of CRISPR-edited genes are not predictive of protein depletion (Smits et al., 2019). The data in Figure 2—figure supplement 2e, however, provide evidence for a reduction in TLR4 function, for which either transcript level reduction or transcript structure disruption is a necessary requirement. Left: Transcript counts (transcripts per million) for targeted genes in different PBS-treated (control) knockout moDC populations. Data represent measurements from independent replicates. Right: Transcript read coverage for targeted genes in different PBS-treated (control) knockout moDC populations. sgRNA cut sites are indicated by vertical dashed lines. Only exons with the sgRNA cut sites are shown.
 
 To further establish if B. theta LPS is a partial agonist of TLR4 rather than an antagonist, we turned to genetic engineering of B. theta LPS. LPSs of Bacteroidetes generally contain pentaacylated, monophosphorylated lipid A as opposed to the hexaacylated, diphosphorylated lipid A of Proteobacteria (Coats et al., 2011; Weintraub et al., 1989), in addition to other differences including lipid A acyl group structures and LPS glycan composition. A previous study had established that B. theta LPS modified to contain pentaacylated, diphosphorylated lipid A has increased capacity to stimulate TLR4 signaling via the endocytotic pathway (Tan et al., 2015). Hypothesizing that B. theta lipid A further lacking an acyl group would resemble known TLR4 antagonists (Golenbock et al., 1991) and thus have decreased immunostimulatory activity, we stimulated moDCs with LPS purified from a B. theta strain genetically engineered to produce tetraacylated, diphosphorylated lipid A (B. theta 4PP LPS) (Jacobson et al., 2018). B. theta 4PP LPS elicited substantially lower levels of TNF-α production and smaller transcriptional responses than B. theta WT LPS, with barely detectable responses in some donors (Figure 2a,b, Figure 2—figure supplement 1c). (Note that we purified B. theta 4PP LPS from a CPS-producing B. theta strain; we nonetheless attribute the difference to the lipid A modification because in preliminary work we observed similar qualitative differences when comparing B. theta 4PP LPS to B. theta WT LPS purified from a CPS-producing strain.) Thus, B. theta LPS is a partial TLR4 agonist whose immunostimulatory activity can be tuned by rational engineering.
 
@@ -65,9 +105,37 @@ Next, we assessed how TLR4 knockout cells responded to B. theta WT LPS and E. co
 
 We confirmed that transcript levels were reduced in knockout cells, and transcript coverage was further reduced between sgRNA cut sites, indicating that the structures of most remaining transcripts were disrupted (Figure 2—figure supplement 3c). We note that transcript levels are generally not predictive of protein levels in CRISPR-edited cells (Smits et al., 2019), and thus these analyses only confirm that a necessary condition for TLR4 depletion is satisfied but are not sufficient to infer TLR4 depletion. Nonetheless, our observations of reduced TLR4 signaling in TLR4 knockout cells (Figure 2—figure supplement 2e) suggest that the protein was also depleted.
 
-## A genetic screen implicates receptors for B. theta LPS and drivers of inter-individual variation
+### A genetic screen implicates receptors for B. theta LPS and drivers of inter-individual variation
 
 To identify additional factors that contribute to recognition of B. theta LPS, we leveraged our moDC editing strategy to conduct an arrayed genetic screen (Figure 3a). We designed a focused library targeting ~300 genes including known and predicted pattern recognition receptors and multiple nodes of signaling pathways downstream of each receptor class (Materials and methods). We targeted each gene with two to three sgRNAs whenever multiple unique sgRNAs could be designed and distributed the sgRNAs over four 96-well plates, each of which also included four types of controls (Figure 3—figure supplement 1, Materials and methods). After electroporating moDCs from two independent donors with this library, we assayed editing efficiency and TNF-α secretion in response to 100 ng/mL B. theta WT LPS (Materials and methods, Supplementary files 3, 4). Editing efficiency was high in both donors, with median efficiencies of 94.2% and 97.6% (Figure 3b, Figure 3—figure supplements 2–4). TNF-α secretion was generally unaffected for genes with editing efficiency <75%, suggesting a low false-positive rate (Figure 3—figure supplement 4b); we did not exclude such genes from further analysis. We identified 37 genes for which knockout altered TNF-α secretion for one donor (‘donor h’) and 41 genes for the second donor (‘donor i’), with altered secretion defined as an absolute log2 fold-change in TNF-α levels ≥2 standard deviations from 0 (Figure 3c, Figure 3—figure supplement 5a–c, standard deviations calculated based on the log2 fold-changes for all neutral genes, see Materials and methods for details). For each donor, we observed altered TNF-α secretion for all four wells targeting the positive control gene TNF and one well targeting a neutral control gene (of 36 such wells).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig3-v2.jpg)
+
+**Figure 3.:** (a) Schematic of genetic screen. (b) Observed editing efficiencies for loci targeted in the screen. Efficiencies were not obtained for one locus for donor h and three loci for donor i due to PCR failures; no locus failed for both donors. (c) TNF-α secretion of knockout moDC populations from two independent donors after stimulation with 100 ng/mL B. theta WT LPS, displayed as log2 fold-changes compared to neutral controls within each of the four 96-well plates and normalized to cell counts. Each data point represents the mean of two treatment replicates and two cell count replicates. Vertical dashed lines denote mean and two standard deviations of the phenotypes from all neutral gene controls. Distributions of all phenotypes are plotted in the stacked histograms, colored by category, at the top. (d) Comparison of TNF-α secretion from (c) for the two donors. (e) TNF-α secretion after stimulation of unedited moDCs (from no pulse/no RNP wells) from both donors with different concentrations of the indicated LPSs. Each data point represents an independent treatment. (f) TNF-α secretion for selected moDC knockout populations including moDCs with simultaneous knockout of TLR4 and TLR2 after stimulation with 100 ng/mL B. theta WT LPS. Data are shown as individual measurements (×) and mean of all treatment replicates (bars). (g) Comparison of TNF-α and IL-10 secretion from knockout moDC populations for moDCs derived from donor i after stimulation with 100 ng/mL B. theta WT LPS. Each data point represents the mean of two treatment replicates and two cell count replicates for TNF-α secretion and data from a single treatment replicate and two cell count replicates for IL-10 secretion. See also Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4, Figure 3—figure supplement 5, and Figure 3—figure supplement 6.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Non-targeting controls and sgRNAs targeting neutral controls, essential controls, and TNF (positive control) were included on each plate in randomized positions.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Labeled values indicate total percentage of on-target reads with a non-WT sequence. For loci with percentages labeled as ‘nd’, sequencing library preparation failed and editing efficiency was not quantified. For genes targeted on each plate, editing efficiency was estimated for each plate individually. Loci are denoted as locus-# with # indicating the plate number.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Labeled values indicate total percentage of on-target reads with a non-WT sequence. For loci with percentages labeled as ‘nd’, sequencing library preparation failed and editing efficiency was not quantified. For genes targeted on each plate, editing efficiency was estimated for each plate individually. Loci are denoted as locus-# with # indicating the plate number.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Comparison of editing efficiencies observed in two independent donors for 335 loci. r2 denotes squared Pearson correlation. (b) Comparison of screen phenotype (absolute value of log2 fold-change in TNF-α secretion after stimulation with 100 ng/mL B. theta WT LPS, mean of two treatment replicates) and editing efficiency, suggesting that high editing efficiency is required for a strong screen phenotype. Horizontal dashed lines denote two standard deviations of the log2 fold-changes in TNF-α secretion from all neutral gene controls. (c) Comparison of editing efficiencies observed for two sequencing libraries prepared and sequenced independently, suggesting that the sequencing library preparation protocol and correction for size bias result in reproducible editing efficiencies. The second replicate was only performed for 211 loci. (d) Percentage of genomic DNA reads assigned to different classes of outcomes after targeting indicated loci with Cas9 RNPs. Labeled values indicate total percentage of reads with a non-WT sequence. (e) Distributions of fraction of reads with a net size difference to the WT locus that is not a multiple of 3, which are potential frameshift-containing reads. Distributions are grouped by indel category, and only loci with >100 reads in that category were included (numbers of loci considered for each category are indicated). Horizontal dashed line indicates a fraction of 0.667. (f) Distributions as shown in (e) for all indel-containing reads and all on-target reads for each locus. Note that the simple metric applied here (net size difference to the WT locus that is not a multiple of 3) underestimates the true rate of frameshift mutations, for at least two reasons: First, for some genes, one of three targeting sgRNAs targets an intronic region; thus, some indels disrupt intron-exon boundaries, which is more likely to result in a frameshift. Second, some loci contain separate indels at each sgRNA cut site that together restore the reading frame, but the intervening, frameshifted regions may contain stop codons. We did not give special treatment to such cases. Note also that many in-frame deletions that remove 50–200 nucleotides of a gene may ablate function in the absence of a frameshift.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) Comparison of phenotypes derived from replicate treatments for each donor. Each data point represents data from treatment with 100 ng/mL B. theta WT LPS and two cell count replicates. r2 denotes squared Pearson correlation. (b) Screen phenotypes (log2 fold-changes in TNF-α secretion after treatment with 100 ng/mL B. theta WT LPS relative to neutral controls) stratified by plate position. Each data point represents the average of two replicate treatments and two cell count replicates. Horizontal dashed lines denote two standard deviations of the phenotypes from all neutral gene controls. (c) Screen phenotypes (log2 fold-changes in TNF-α secretion) ordered by magnitude. Solid points represent the average of all replicate treatments; lower saturation points represent individual treatment measurements. Horizontal dashed lines denote two standard deviations of the phenotypes from all neutral gene controls. Up to 15 genes with the strongest phenotypes greater than two standard deviations (neutral gene controls) in either direction are listed.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/65856/elife-65856-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (a) Percentage of genomic DNA reads assigned to different classes of outcomes after targeting indicated loci in cells from two independent donors. Labeled values indicate total percentage of reads with a non-WT sequence. Editing efficiency was not quantified for RHOA. (b) Log2 fold-change in TNF-α production by knockout moDCs challenged with 10 ng/mL E. coli O55 LPS or 100 ng/mL B. theta WT LPS relative to production in moDCs with knockout of neutral genes, normalized to cell counts. For donor j, knockout of TLR2 decreased the response to B. theta WT LPS but not E. coli LPS. Other genes with large log2 fold-changes are also labeled. Each data point represents data from two treatment replicates and a single cell count measurement. (c) Log2 fold-change in TNF-α production by knockout moDCs challenged with 100 ng/mL B. theta WT LPS from four independent donors, relative to production in moDCs with knockout of neutral genes. Data for donors h and i are derived from the arrayed screen. Genes with |log2fold-change| > 1.8 or Δlog2 fold change > 1.3 are labeled.
 
 Knockout of 15 genes (including TNF) impacted TNF-α secretion in response to B. theta WT LPS in both donors. Knockouts in the TLR4 signaling pathway strongly reduced TNF-α secretion, including TLR4 and its co-receptor MD2 (LY96), CD14 (which delivers LPS to TLR4 and initiates TLR4 endocytosis [Zanoni et al., 2011]), as well as genes involved in MYD88 signaling, the branch of TRIF signaling involved in NF-κB activation, and the NF-κB factor RELA (Figure 3c). Indeed, 6 and 7 of the 10 targeted genes in MYD88 signaling reduced TNF-α secretion in the two donors, with knockout of most of the remaining genes causing a less substantial reduction in TNF-α secretion (Figure 3c). Other knockouts also caused expected phenotypes; for example, moDCs with knockout of A20 (TNFAIP3), which inhibits LPS- and TNF-α-induced NF-κB signaling, secreted more TNF-α (Figure 3c, Figure 3—figure supplement 5c). Thus, our genetic screen accurately captured the genetic requirements for the response to B. theta LPS.
 
@@ -93,33 +161,260 @@ Beyond LPS recognition, the availability of functional genomics tools for human 
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Bacteroides thetaiotaomicron)</td>
+      <td>VPI-5482 Δtdk ΔCPS</td>
+      <td>Rogers et al., 2013</td>
+      <td>Referred to as ‘B. theta’ in the text</td>
+      <td>Acapsular mutant provided by Eric Martens’s lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides thetaiotaomicron)</td>
+      <td>VPI-5482 Δtdk ΔBT1854 ΔBT2152</td>
+      <td>Jacobson et al., 2018</td>
+      <td>Referred to as ‘B. theta 4PP’ in the text</td>
+      <td>Mutant producing tetra-acylated, di-phosphorylated lipid A in a capsule-producing background</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>PBMCs</td>
+      <td>AllCells</td>
+      <td></td>
+      <td>Freshly isolated from de-identified healthy individuals and shipped overnight</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD14 (clone HCD14, mouse monoclonal), PE, PerCP-Cy5.5, or BV421</td>
+      <td>BioLegend</td>
+      <td>PE: Cat#: 325605; RRID:AB_830678 PerCP-Cy5.5: Cat#:325621; RRID:AB_893252 BV421: 325627; RRID:AB_2561342</td>
+      <td>Flow cytometry (2 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD80 (clone 2D10, mouse monoclonal), APC</td>
+      <td>BioLegend</td>
+      <td>Cat#: 305219; RRID:AB_2291403</td>
+      <td>Flow cytometry (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD83 (clone HB15e, mouse monoclonal), APC-Cy7</td>
+      <td>BioLegend</td>
+      <td>Cat#: 305329; RRID:AB_2566392</td>
+      <td>Flow cytometry (4 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD86 (clone BU63, mouse monoclonal), FITC or BV605</td>
+      <td>BioLegend</td>
+      <td>FITC: Cat#: 374203; RRID:AB_2721573 BV605: Cat#: 374213; RRID:AB_2734429</td>
+      <td>Flow cytometry (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human HLA-DR (clone L243, mouse monoclonal), PE or FITC</td>
+      <td>BioLegend</td>
+      <td>PE: Cat#: 307605; RRID:AB_314683 FITC: Cat#: 307603; RRID:AB_314681</td>
+      <td>Flow cytometry (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD11b (clone LM2, mouse monoclonal), PE-Cy7</td>
+      <td>BioLegend</td>
+      <td>Cat#: 393103; RRID:AB_2734450</td>
+      <td>Flow cytometry (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD11c (clone Bu15, mouse monoclonal), Pacific Blue, FITC, or PerCP-Cy5.5</td>
+      <td>BioLegend</td>
+      <td>Pacific Blue: Cat#: 337212; RRID:AB_1595430 FITC: Cat#: 337213; RRID:AB_1877174 PerCP-Cy5.5: Cat#: 337209; RRID:AB_1279071</td>
+      <td>Flow cytometry (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD205 (clone HD30, mouse monoclonal), PE</td>
+      <td>BioLegend</td>
+      <td>Cat#: 342203; RRID:AB_1626209</td>
+      <td>Flow cytometry (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human B2M (clone 2M2, mouse monoclonal), PE</td>
+      <td>BioLegend</td>
+      <td>Cat#: 316306; RRID:AB_492839</td>
+      <td>Flow cytometry (2 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human TLR4 (clone HTA125, mouse monoclonal), APC</td>
+      <td>BioLegend</td>
+      <td>Cat#: 312815; RRID:AB_2562486</td>
+      <td>Flow cytometry (4 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Purified sgRNAs</td>
+      <td>This paper/Synthego</td>
+      <td>Library available from Synthego as ‘Pattern Recognition Receptors and Signaling Pathway arrayed library’</td>
+      <td>Sequences and genomic binding locations listed in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genomic locus amplification primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences listed in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers against ACTB, IFNB1, TNF, CXCL10</td>
+      <td>Universal Probe Library (Roche)</td>
+      <td></td>
+      <td>Sequences included in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human GM-CSF</td>
+      <td>Gemini Bio</td>
+      <td>Cat#: 300–124P</td>
+      <td>Used at 50 ng/mL in DC differentiation medium</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human IL-4</td>
+      <td>Gemini Bio</td>
+      <td>Cat#: 300–154P</td>
+      <td>Used at 20 ng/mL in DC differentiation medium</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptococcus pyogenes Cas9 2xNLS</td>
+      <td>Synthego</td>
+      <td>Available via Synthego as an ‘Add-On Product’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep human monocyte enrichment kit (with or without CD16 depletion)</td>
+      <td>Stemcell Technologies</td>
+      <td>With CD16 depletion: Cat# 19059 Without CD16 depletion: Cat# 19058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimpleStep human TNF alpha ELISA kit</td>
+      <td>Abcam</td>
+      <td>Cat#: ab181421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimpleStep human IP-10 ELISA kit</td>
+      <td>Abcam</td>
+      <td>Cat#: ab173194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimpleStep human IL-10 ELISA kit</td>
+      <td>Abcam</td>
+      <td>Cat#: ab185986</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Stranded mRNA prep ligation kit</td>
+      <td>Illumina</td>
+      <td>Cat#: 20040534/20040532</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ultrapure E. coli O55:B5 LPS</td>
+      <td>Invivogen</td>
+      <td>Cat#: TLRL-PB5LPS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodobacter sphaeroides LPS</td>
+      <td>Invivogen</td>
+      <td>Cat#: TLRL-RSLPS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bacteroides thetaiotaomicron WT LPS (ΔCPS)</td>
+      <td>Jacobson et al., 2018 this paper</td>
+      <td>Referred to as ‘B. theta LPS’ or ‘B. theta WT LPS (ΔCPS)’ in the text</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bacteroides thetaiotaomicron 4PP LPS</td>
+      <td>Jacobson et al., 2018 this paper</td>
+      <td>Referred to as ‘B. theta 4PP LPS’ in the text</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Knock-knock v0.3</td>
+      <td>https://github.com/jeffhussmann/knock-knock and Canaj et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ghost Dye Violet 510</td>
+      <td>Tonbio Biosciences</td>
+      <td>Cat#: 13–0870 T100</td>
+      <td>Flow cytometry viability stain (0.1 µL per 100 µL cells)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 Complete RPMI medium was generated by supplementing RPMI 1640 medium containing 25 mM HEPES, 2 mM l-glutamine, 2 g/L NaHCO3 (Gibco, Dublin, Ireland) with 10% (v/v) standard fetal bovine serum (VWR, Wayne, PA), 100 units/mL penicillin, 100 µg/mL streptomycin, and 2 mM l-glutamine (Gibco). Lyophilized recombinant human GM-CSF (Gemini Bio, Sacramento, CA) and recombinant human IL-4 (Gemini Bio) were reconstituted to 100 µg/mL and 40 µg/mL, respectively, in sterile ddH2O, aliquoted into 40–100 µL aliquots, and frozen at –30°C until use. Fluorescently labeled antibodies against human CD14 (clone HCD14, PE-, PerCP-Cy5.5-, or BV421-labeled), CD80 (clone 2D10, APC-labeled), CD83 (clone HB15e, APC-Cy7-labeled), CD86 (clone BU63, FITC- or BV605-labeled), HLA-DR (clone L243, PE- or FITC-labeled), CD11b (clone LM2, PE-Cy7-labeled), CD11c (clone Bu15, Pacific Blue-, FITC-, or PerCP-Cy5.5-labeled), CD205/DEC205 (clone HD30, PE-labeled), B2M (clone 2M2, PE-labeled), and TLR4 (clone HTA125, APC-labeled) were obtained from BioLegend (San Diego, CA). Ghost Dye Violet 510 was obtained from Tonbo Biosciences (San Diego, CA). Ultrapure LPS from E. coli O55:B5 and Rhodobacter sphaeroides, along with Pam3CSK4, were obtained from Invivogen (San Diego, CA). Solid medium used for bacterial growth was BHI/blood agar, made from Brain Heart Infusion Agar (BD Biosciences, San Jose, CA) with 10% defibrinated horse blood (Hemostat Laboratories, Dixon, CA). Liquid medium used for bacterial growth was supplemented BHI broth, made by preparing 1 L Brain Heart Infusion Broth (BD), and immediately before starting cultures adding 1 mL bovine hemin stock (Sigma, St. Louis, MO), 5 mg/mL in 1 N sodium hydroxide and filter sterilized, and 10 mL l-cysteine hydrochloride (Sigma), 50 mg/mL in Milli-Q water and filter sterilized. Sources of sgRNAs and Cas9 are listed below.
 
-## Bacterial culture
+### Bacterial culture
 
 B. theta strains were stored at –80°C in growth medium mixed in equal volume with 50% glycerol in water. Strains were streaked from glycerol stocks onto BHI/blood agar using plastic inoculating loops. Strains were allowed to grow 24–48 hr in an anaerobic chamber. Single colonies were used to inoculate 4 10 mL aliquots of supplemented BHI broth per strain, and after 24 hr the 10 mL cultures were expanded to 1 L each in glass bottles, producing 4 L total culture volume per strain. Cultures were allowed to grow to stationary phase (24–36 hr) and were pelleted at 3400 × g for 1 hr at 4°C. Pellets were washed in PBS and shipped frozen to the UCSD GlycoAnalytics Core for LPS purification.
 
-## B. theta strains
+### B. theta strains
 
 Both the acapsular B. theta strain (ΔCPS) and the B. theta 4PP strain have been previously reported (Porter et al., 2017; Rogers et al., 2013; Jacobson et al., 2018). Briefly, the mutants were created using homologous recombination, creating scarless knockouts of the target genes/gene clusters with no remaining antibiotic resistance markers. The acapsular strain has had all known B. theta capsular polysaccharide gene clusters deleted (eight clusters in total), and the 4PP strain has had only lipid A acyltransferase BT2152 and lipid A phosphatase BT1854 deleted, not the CPS gene clusters.
 
-## LPS purification
+### LPS purification
 
 B. theta LPS preparations were performed by Biswa P. Choudhury at the UCSD GlycoAnalytics Core. A cell pellet from 4 L confluent culture of each B. theta strain was suspended in Milli-Q water and mixed with an equal volume of 90% phenol solution (Sigma, 328111). The suspension was stirred continuously and maintained at 68°C ± 2°C for 30 min. After cooling in an ice bath, suspensions were centrifuged at 3500 rpm at 10°C for 45 min and the upper layer removed to a clean Falcon tube. The remaining layers were extracted again with an equal volume of water for 30 min, cooled, and centrifuged as before. The upper layers were pooled and dialyzed (1000 MWCO, regenerated cellulose tubing) against 4 L of water for 4 days, replacing the water twice per day. The dialysate was lyophilized, resuspended in water, and subjected to ultracentrifugation at 105,000 × g for 4 hr. The pellet was resuspended in water, treated with DNase I, RNase A, and proteinase K, followed by another round of ultracentrifugation as above. The resulting pellet was resuspended in water and lyophilized.
 
-## Differentiation of monocyte-derived DCs
+### Differentiation of monocyte-derived DCs
 
 Human moDCs were differentiated from monocytes isolated from commercially sourced fresh peripheral blood mononuclear cells (PBMCs) from de-identified healthy human donors (AllCells, Alameda, CA). The authors did not obtain identifiable private information on donors. The commercial vendor obtained informed consent from all donors covering all experiments and data reported in this manuscript. Monocytes were isolated from PBMCs by negative magnetic selection using the EasySep human monocyte enrichment kit without CD16 depletion (StemCell) following the manufacturer’s instructions and using a Big Easy magnet or Easy 50 magnet (StemCell Technologies, Vancouver, Canada). Enriched monocytes were generally >80% CD14-positive, as assessed by flow cytometry on an LSR-II flow cytometer (BD BioSciences) or an Attune NxT flow cytometer (Thermo Fisher Scientific, Waltham, MA). Cell counts were determined in duplicate using a Countess II automated hemocytometer (Thermo Fisher Scientific). The isolated monocytes were cultured in complete RPMI medium, supplemented with 50 ng/mL GM-CSF and 20 ng/mL IL-4 immediately prior to use, at a density of 1 × 106 to 1.3 × 106 per mL at 37°C and 5% CO2 for 7 days. Medium was exchanged every 2 or 3 days during this period (twice total). moDCs on day 7 were generally positive for CD80, CD83, HLA-DR, CD11b, CD11c, and CD205 and expressed intermediate levels of CD86 and low to intermediate levels of CD14 with some donor-to-donor variation, as assessed by flow cytometry on an LSR-II flow cytometer (BD BioSciences) or an Attune NxT flow cytometer (Thermo Fisher Scientific). All manipulations were performed in polystyrene conical tubes.
 
 All experiments reported in this manuscript were conducted using the methods described above. Preliminary experiments were also performed after isolation of monocytes using the EasySep human monocyte enrichment kit with CD16 depletion (StemCell Technologies) and the EasySep human monocyte isolation kit (StemCell Technologies) with equivalent results. Analogous experiments were also performed with cells cultured in RPMI 1640 medium without supplementation of penicillin/streptomycin/l-glutamine, with equivalent results. RNA-seq data from moDCs from the same donor differentiated in parallel with and without penicillin/streptomycin/l-glutamine were virtually identical (not shown).
 
-## Harvesting of moDCs
+### Harvesting of moDCs
 
 For all assays, both non-attached and loosely attached moDCs were harvested and then combined. The culture supernatant containing the non-attached cells was first transferred to a conical tube. The remaining attached cells were then detached by addition of CellStripper (Corning, Corning, NY), a non-enzymatic dissociation solution, to the flask (3 mL for a T-150 flask, 1.5 mL for a T-75 flask, 0.5 mL for a T-25 flask) and incubation at 37°C and 5% CO2 for 15 min. The cells were further detached by pipetting and gently tapping the flasks. The suspension was aspirated into a new conical tube and another round of detachment with CellStripper was performed for 5 min. The detached cells were combined, centrifuged at 100 × g for 10 min, resuspended in RPMI medium, and combined with the non-attached cells. Cell counts were determined in duplicate using a Countess II automated hemocytometer (Thermo Fisher Scientific); at least two squares were counted for each replicate. All manipulations were performed in polystyrene conical tubes.
 
-## Treatments of moDCs
+### Treatments of moDCs
 
 To prepare moDCs for treatments, an aliquot of cells containing an appropriate cell number was centrifuged at 100 × g for 10 min. The cells were resuspended in complete RPMI medium without cytokines. For readout by ELISA, cells were dispensed into flat-bottom 96-well plates in aliquots of 20,000 cells in 200 µL and incubated at 37°C and 5% CO2 for 2–4 hr. Each experiment contained medium-only (no cells) and PBS treatment (unstimulated/no treatment control) negative controls. For subsequent RNA isolation, cells were dispensed into flat-bottom 24-well plates in aliquots of 200,000–250,000 cells at 1 × 106 cells/mL, as indicated for each experiment, and incubated at 37°C and 5% CO2 for 2–4 hr. To initiate the stimulation, purified LPS or PBS (no treatment control) was added to each well to the final desired concentration. LPS stocks were generally prepared at a 20× concentration such that all wells received an equivalent volume of stimulant.
 
@@ -127,35 +422,35 @@ For readout by ELISA, the cells were incubated with the stimuli at 37°C and 5% 
 
 For RNA purifications, the cells were incubated with the stimuli at 37°C and 5% CO2 for 2 hr. To harvest RNA from treated cells, a 3× volume of TRIzol LS reagent (Ambion, Naugatuck, CT) or TRI Reagent (Zymo Research, Irvine, CA) was added directly to the cells. The suspension was mixed by pipetting to lyse the cells, followed by RNA isolation using the Direct-zol RNA Miniprep kit (Zymo Research) including an on-column DNase I digestion step. Purified RNA was quantified using a Qubit Fluorometer (Thermo Fisher Scientific) and stored at –80°C until use.
 
-## Quantification of cytokine concentrations by ELISA
+### Quantification of cytokine concentrations by ELISA
 
 TNF-α concentrations in undiluted or appropriately diluted supernatants were determined by ELISA using the SimpleStep human TNF alpha ELISA kit (Abcam, Cambridge, MA), performed following the manufacturer’s instructions and with endpoint absorbance measurements at 450 nm on an Infinite M200 Pro plate reader (Tecan, Männedorf, Switzerland). For each experiment, absorbance measurements from wells containing a twofold dilution series of purified TNF-α (31.25 pg/mL to 2000 pg/mL, in duplicate) were used to calculate a calibration curve using a four-parameter logistic fit, which in turn was used to calculate TNF-α concentrations in all sample wells. Concentrations of CXCL10 and IL-10 were determined equivalently using SimpleStep human IP-10 ELISA kit (Abcam) and the SimpleStep human IL-10 ELISA kit (Abcam), respectively, following the manufacturer’s instructions. When handling multiple 96-well plates simultaneously, plates were staggered in 3-min intervals starting with the last wash step to ensure that incubation times with the development solution and stop solution were constant.
 
-## RT-qPCR
+### RT-qPCR
 
 To generate cDNA, purified RNA was reverse-transcribed using SuperScript III Reverse Transcriptase (Thermo Fisher Scientific) with oligo(dT) primers in the presence of RNaseOUT Recombinant Ribonuclease Inhibitor (Thermo Fisher Scientific) or using SuperScript IV VILO Master Mix (Thermo Fisher Scientific). All reactions in a given experiment were normalized to contain the same amount of RNA (250–600 ng depending on the experiment). cDNA was diluted 1:10 and stored at –30°C until use. qPCR was performed using the KAPA SYBR FAST qPCR Master Mix (Roche, Basel, Switzerland) in 20 µL reactions containing 3 µL diluted cDNA and 200 nM of each primer. Reactions were run on a LightCycler 480 Instrument (Roche). All reactions were performed in technical triplicates. RT-qPCR primers were chosen as intron-spanning primers, when possible, from the Universal ProbeLibrary (Roche), with the following sequences:
 
-## Preparation of sequencing libraries for RNA-seq and data analysis
+### Preparation of sequencing libraries for RNA-seq and data analysis
 
 RNA-seq libraries were prepared from purified RNA using the Stranded mRNA Prep Ligation kit (Illumina, San Diego, CA) in 96-well format, following the manufacturer’s instructions. Input RNA amounts were held constant for all samples for a given donor, between 300 and 600 ng per reaction depending on the experiment. Final libraries were validated and quantified using the 2100 Bioanalyzer (Agilent, Santa Clara, CA) using the High Sensitivity DNA kit (Agilent). Paired-end 100 or paired-end 150 sequencing was performed on a HiSeq 4000 (Illumina). Reads were aligned strand-specifically to the human genome (GRCh38) using the spliced read aligner STAR (Dobin et al., 2013), version 2.6.0, against an index containing features from Gencode release 34. Quantification of gene counts was carried out with featureCounts (Liao et al., 2014), version 1.6.2, using only uniquely mapped reads to the reverse strand. Differential expression analysis was carried out on gene counts using DESeq2 (Love et al., 2014), including only genes with an average count >2 across all conditions. Transcript counts per million were calculated by dividing gene counts by effective transcript length, using transcript length from Gencode annotations and an average fragment length of 160 (the expected fragment size from the kit and consistent with estimates determined by Kallisto [Bray et al., 2016]), followed by normalization to total transcript counts. All other analyses were performed in python3.6.
 
-## sgRNA sequences
+### sgRNA sequences
 
 For initial experiments, an sgRNA sequence for AAVS1 was chosen from a previous report (Mali et al., 2013) and sgRNA sequences for TNF and TLR4 were chosen as the top predicted guides from the Brunello library (Doench et al., 2016). All other sgRNAs were purchased from or provided by Synthego (Menlo Park, CA), designed according to their multi-guide RNA strategy (Stoner et al., 2019). Briefly, two or three sgRNAs are bioinformatically designed to work in a cooperative manner to generate small, knockout-causing, fragment deletions in early exons. These fragment deletions are larger than standard indels generated from single guides. The genomic repair patterns from a multi-guide approach are highly predictable based on the guide-spacing and design constraints to limit off-targets, resulting in a higher probability protein knockout phenotype. For the genetic screen, a Pattern Recognition Receptors and Signaling Pathway arrayed library was provided by Synthego. All sgRNA sequences used in this manuscript are listed in Supplementary file 1.
 
-## RNP assembly
+### RNP assembly
 
 RNPs were assembled by complexing purified recombinant Cas9 from Streptococcus pyogenes (Synthego) with chemically synthesized sgRNAs (Synthego). Lyophilized sgRNAs targeting each gene (individual or multiple sgRNAs) were resuspended to 100 µM (total sgRNA concentration) in RNase-free TE buffer (10 mM Tris, 1 mM EDTA, pH 8) for 15 min at 25°C or overnight at 4°C with intermittent vortexing. Prior to use, sgRNA stocks were diluted to 25 µM in RNase-free H2O. Both stocks were stored at –30°C and freeze-thawed up to five times. To assemble RNP for electroporation of 4 × 105 cells, 50 pmol sgRNA and 20 pmol Cas9 were combined and diluted to 20 µL with nucleofection solution P1 or P3 (with supplement added, Lonza, Basel, Switzerland). The mixture was incubated at 25°C for 10 min or up to 2 hr and immediately used to electroporate moDCs. For double knockouts, 50 pmol of sgRNA against each gene and 40 pmol Cas9 were combined in a total volume of 23 µL.
 
 For experiments with guide RNAs in the crRNA:tracrRNA format (Figure 1—figure supplement 1d), lyophilized crRNAs and tracrRNA (Integrated DNA Technologies, Coralville, Iowa) were resuspended to 400 µM and 100 µM, respectively, in RNase-free TE buffer. crRNA:tracrRNA duplexes were generated by mixing equimolar amounts of crRNA and tracrRNA at a final concentration of 50 µM each, incubating the mixture at 95°C for 5 min, and allowing the mixture to cool to room temperature on the benchtop. To assemble RNP for electroporation of 4 × 105 cells, 50 pmol crRNA:tracrRNA duplex and 20 pmol Cas9 v3 (Integrated DNA Technologies, stock diluted to 20 µM in sterile PBS) were combined and diluted to 5 µL in PBS, following the manufacturer’s instructions.
 
-## moDC genome editing by electroporation of Cas9 RNPs
+### moDC genome editing by electroporation of Cas9 RNPs
 
 Genome editing was performed by electroporation of moDCs with pre-formed Cas9 RNPs. moDCs were detached as described above. A suspension containing an appropriate number of moDCs (4 × 105 cells per electroporation +5% excess) was transferred to a new conical tube and centrifuged at 90 × g for 10 min. The cells were resuspended in 1–5 mL PBS and centrifuged again at 90 × g for 10 min. For electroporation with RNPs assembled with sgRNAs (all experiments in this paper except for Figure 1—figure supplement 1d, right), the cells were resuspended in 5 µL nucleofection solution P1 or P3 (with supplement added, Lonza) per 4 × 105 cells. Aliquots of 4 × 105 cells were transferred into individual wells of 16-well or 96-well nucleofection cuvettes (Lonza), combined with 20 µL pre-formed RNP or nucleofector solution (no RNP control), and immediately electroporated using pulse code DJ-108 (solution P3) or other pulse codes, as described, using a Nucleofector-4D (Lonza) or a 96-well shuttle (Amaxa/Lonza) attached to a Nuclefector-4D. For electroporation with RNPs assembled with crRNA:tracrRNA duplexes Figure 1—figure supplement 1d, right, the cells were resuspended in 20 µL nucleofection solution P1 or P3 (with supplement added, Lonza) per 4 × 105 cells and 5 µL pre-formed RNP or nucleofector solution (no RNP control) was added. For no electroporation control cells, cells were treated identically, except that the corresponding cuvette well was not subjected to an electroporation pulse. Immediately after electroporation, 75 µL pre-warmed complete RPMI medium supplemented with 50 ng/mL GM-CSF and 20 ng/mL IL-4 were added to each well without disturbing the cells by letting the medium run down the side of the cuvette. After incubation at 37°C and 5% CO2 for 1 hr, the cells were mixed by pipetting and then split into two wells of a flat-bottom 96-well plate filled with 50 µL pre-warmed complete RPMI medium supplemented with 50 ng/mL GM-CSF and 20 ng/mL IL-4. The cells were incubated at 37°C and 5% CO2 for 5 days, with medium replenished after 2 or 3 days and then used for assays.
 
 The final electroporation condition (solution P3, pulse code DJ-108, 4 × 105 cells electroporated with 10 pmol Cas9 and 25 pmol sgRNA) was obtained through iterative grid searches of different conditions. In the process, several other conditions were also found to yield good results, including nucleofection solution P1 with pulse code CB-128 (Figure 1—figure supplement 3a). In initial experiments, we also used solution P1 with pulse code CB-150 (Figure 1c, Figure 1—figure supplement 1). Reducing the amount of Cas9 RNP led to a reduction in editing efficiency.
 
-## Phenotyping of edited moDCs and DNA extraction
+### Phenotyping of edited moDCs and DNA extraction
 
 For all experiments in this manuscript, electroporated moDCs were harvested for phenotyping and genotyping 5 days post-electroporation, with the exception of data presented in Figure 1—figure supplement 1a, for which some moDCs were harvested 3 days post-electroporation. Both non-attached and attached cells were harvested and then combined, largely as described above. Briefly, the culture supernatants containing non-attached cells were first transferred to V-bottom 96-well plates. The remaining attached cells were then detached by addition of 25 µL CellStripper solution (Corning) per well and incubation at 37°C and 5% CO2 for 15 min. The cells were further detached by gentle pipetting and tapping of the plate and the suspension was combined with the cell supernatant. Another round of detachment with CellStripper was performed for 5 min and the suspension was combined with the suspension containing the remaining cells. The cell suspensions were centrifuged at 100 × g for 10 min and resuspended in 100 µL complete RPMI medium without cytokines. Cells with the same knockout were combined (cells from each electroporation had been split over two separate wells of a 96-well plate) and used for phenotyping and genotyping.
 
@@ -167,31 +462,59 @@ During the incubation prior to stimulation, aliquots of the remaining cell suspe
 
 To isolate genomic DNA from each sample for genotyping, aliquots of harvested moDCs were transferred to a 96-well V-bottom plate, centrifuged at 300 × g for 10 min, and resuspended in 50 µL QuickExtract DNA extraction solution (LuciGen, Middleton, WI). The suspensions were transferred to 96-well PCR plates and incubated at 65°C for 20 min and then at 98°C for 5 min using a thermocycler. The extracted genomic DNA was stored at –30°C until use.
 
-## Flow cytometry of edited moDCs
+### Flow cytometry of edited moDCs
 
 DCs were differentiated and edited as described above. For each condition, moDCs electroporated in 3 wells of a 16-well cuvette (each well containing 4 × 105 cells at the time of electroporation) were harvested as described above and combined. After setting aside cells for genomic DNA extraction, the remaining cells were used for antibody staining. In parallel, moDCs from the same donors that had not been subjected to the electroporation procedure and had instead been cultured in T-25 flasks were also harvested and stained. Stains were performed in 96-well V-bottom plates. Aliquots of 3 × 105 to 5 × 105 cells per well were first stained with the amine-reactive viability dye Ghost Dye Violet 510 (Tonbo) by washing the cells twice in PBS (without protein additives) followed by incubation with 0.1 µL dye in 100 µL PBS on ice for 30 min in the dark. The cells were then washed twice in PBS containing 10% FBS, resuspended in PBS containing 10% FBS, and stained in a total volume of 100 µL with an antibody mix containing the following antibodies at the indicated final concentrations: anti-CD11c (Pacific Blue-labeled, clone Bu15, 20 µg/mL), anti-HLA-DR (FITC-labeled, clone L243, 6 µg/mL), anti-CD83 (APC-Cy7-labeled, clone HB15e, 8 µg/mL), anti-B2M (PE-labeled, clone 2M2, 1 µg/mL), anti-TLR4 (APC-labeled, clone HTA125, 8 µg/mL). Fluorescence-minus-one controls for each of the five antibodies were included for unedited cells from each donor. Cells were incubated with the antibody mixes on ice for 30 min in the dark, washed three times in PBS containing 10% FBS, and finally resuspended in 200 µL PBS containing 10% FBS. To set compensation, an aliquot of 2 × 105 heat-killed moDCs (incubated at 65°C for 15 min) was stained with Ghost Dye Violet 510 in the same fashion and then mixed with 2 × 105 live moDCs and washed as described above, and 1:1 mixtures of CompBead anti-mouse Ig, κ beads (BD Biosciences) and CompBead negative control beads (BD Biosciences) were stained with each individual antibody at the same concentrations and washed as described above. Flow cytometry data were recorded on an Attune NxT flow cytometer (Thermo Fisher Scientific) and analyzed using FlowCytometryTools 0.5.0 (Friedman and Yurtsev, 2013) and python 3.6. The gating strategy is illustrated in Figure 1—figure supplement 5b.
 
-## Genotyping of edited moDCs (measurements of editing outcomes)
+### Genotyping of edited moDCs (measurements of editing outcomes)
 
 Genomic regions surrounding each cut site were PCR-amplified using a two-step protocol, largely as described (Leenay et al., 2019). Briefly, primer pairs were designed for each cut site using Primer-BLAST (Ye et al., 2012) to amplify a 200- to 450-base pair region, ensuring that all cut sites targeted by the pooled sgRNAs as well as a 50-base pair flanking region on each side of the cut sites were included, with a targeted Tm of 60°C. Constant adapters (forward: 5′-CTCTTTCCCTACACGACGCTCTTCCGATCT-3′; reverse: 5′-CTGGAGTTCAGACGTGTGCTCTTCCGATCT-3′) were appended to the designed primer pairs. First-round PCRs of targeted sites were performed in 96-well format using at least 4000 genomic copies for each sample, 0.5 µM of each primer, and Q5 Hot Start High-Fidelity 2X master mix (NEB, Ipswich, MA) and the following protocol: 98°C for 30 s; 35 cycles of 98°C for 10 s, 60°C for 30 s, and 72°C for 30 s; and a final extension at 72°C for 2 min. Products from the first PCR were diluted 1:100 in ddH2O and subjected to a second round of PCR using the constant adapters as annealing sites, appending Illumina P5 and P7 adapters and two eight-base barcodes on both ends that together uniquely identified each sample. Twelve cycles of PCR were performed using the same conditions described above. After the second PCR, all samples were pooled and the combined samples were purified using a 0.8× AMPure XP purification (Beckman Coulter, Brea, CA). Final libraries were validated and quantified using the 2100 Bioanalyzer (Agilent) using the High Sensitivity DNA kit (Agilent) and sequenced in a 600-cycle paired-end run on a MiSeq Instrument (Illumina) using MiSeq v3 Reagent kits.
 
-Sequencing data of editing outcomes were analyzed and quantified using knock-knock v0.3 (https://github.com/jeffhussmann/knock-knock) (Canaj et al., 2019). For a few loci, some amplicons contained large deletions with boundaries >20 bp from an sgRNA cut site that were classified as ‘large deletions’ by knock-knock but likely instead reflect amplification of partially complementary fragments, given in particular the rare occurrence of large deletions with individual sgRNAs. To avoid overestimating editing efficiency, reads with at least one alignment boundary >40 bp from an sgRNA cut site or both alignment boundaries > 20 bp from sgRNA cut sites were reclassified into the ‘malformed layout’ category. For all experiments in which a gene was targeted with multiple sgRNAs, sequencing counts were adjusted by the size difference to the WT locus, using the following formula:countcorr=count*2-0.014356*(lWT-lread)where count is the raw count, lWT the length in bp of the WT locus, and lread the length in bp of the edited locus. See below for a description of how the coefficient was derived. Results from outcome classification, after correction for size, for all experiments except for the screen are listed in Supplementary file 2. Results for the screen, after correction for size, are listed in Supplementary file 4.
+Sequencing data of editing outcomes were analyzed and quantified using knock-knock v0.3 (https://github.com/jeffhussmann/knock-knock) (Canaj et al., 2019). For a few loci, some amplicons contained large deletions with boundaries >20 bp from an sgRNA cut site that were classified as ‘large deletions’ by knock-knock but likely instead reflect amplification of partially complementary fragments, given in particular the rare occurrence of large deletions with individual sgRNAs. To avoid overestimating editing efficiency, reads with at least one alignment boundary >40 bp from an sgRNA cut site or both alignment boundaries > 20 bp from sgRNA cut sites were reclassified into the ‘malformed layout’ category. For all experiments in which a gene was targeted with multiple sgRNAs, sequencing counts were adjusted by the size difference to the WT locus, using the following formula:
 
-## Empirical assessment of amplicon size bias
+$$
+count_{corr}=count*2^{-0.014356*(l_{WT}-l_{read})}
+$$
+
+where count is the raw count, lWT the length in bp of the WT locus, and lread the length in bp of the edited locus. See below for a description of how the coefficient was derived. Results from outcome classification, after correction for size, for all experiments except for the screen are listed in Supplementary file 2. Results for the screen, after correction for size, are listed in Supplementary file 4.
+
+### Empirical assessment of amplicon size bias
 
 To measure how amplicon size affects amplification and sequencing efficiency in our genotyping approach, we subjected pools of purified amplicons of defined sizes to our sequencing library preparation protocol and determined the resulting sequencing counts (Figure 1—figure supplement 2a). Briefly, we designed the strategy based on the following criteria:
 
 Briefly, we generated five amplicons with final lengths of 146 bp, 249 bp, 349 bp, 447 bp, and 539 bp and with constant annealing sites at the ends by PCR-amplifying different fragments of a gene encoding BFP with a constant forward primer and reverse primers positioned at the appropriate distances. Forward and reverse primers contained overhangs (identical for all reverse primers) to create annealing sites for sequencing library preparation. Following the PCR, each individual amplicon was gel-purified and quantified using a Qubit Fluorometer (Thermo Fisher Scientific). The five amplicons were then mixed into pools at 11 different molar ratios. For increased accuracy, the abundance of each fragment in these pools was measured using the 2100 Bioanalyzer (Agilent) using the High Sensitivity DNA kit (Agilent). Each pool was then diluted to 33 fM (about 20,000 template molecules per µL, equivalent to genomic DNA isolated from 10,000 cells) and 1 µL of diluted pool was used as template for the first-round PCR as described above, using a primer pair complementary to the constant overhangs on each fragment, designed with the same criteria as our other amplicon primers. The PCRs additionally contained 4 µL of genomic DNA from unedited DCs as excess non-productive template. The remainder of the sequencing library preparation was carried out as described above, with unique sequencing indices appended to each pool in the second-round PCR. The final libraries were sequenced on a MiSeq (Illumina) and counts for each fragment were determined by aligning reads to the expected amplicons.
 
-To infer observation efficiency (amplification + sequencing) for each fragment, we reasoned that the starting and the final composition of the pool should be related by the specific observation efficiency of each amplicon, which should shift the abundance of each fragment based on its specific observation efficiency:mi=eisi∑j=1nejsjwhere mi is the measured fractional abundance, si the starting abundance, and ei the fragment-specific observation efficiency. Note that the equation takes this form because we can measure only fractional rather than absolute abundances of each amplicon at the end; thus∑j=1nmj=1
+To infer observation efficiency (amplification + sequencing) for each fragment, we reasoned that the starting and the final composition of the pool should be related by the specific observation efficiency of each amplicon, which should shift the abundance of each fragment based on its specific observation efficiency:
 
-To compute the efficiencies, we arbitrarily set the efficiency e of the 447 bp fragment (which was included in all pools) to 1 (en = 1) and then solved the resulting linear equation systemmi∑j=1nejsj=eisimi-1eisi+mi∑j≠in-1ejsj=-misnto obtain the observation efficiencies (amplification + sequencing) ei for each fragment in each pool. Because we expected per-cycle PCR amplification efficiency to be a major contributor to these efficiencies, we compared log2 e to fragment size and found it to be approximately linearly correlated (Figure 1—figure supplement 2b). We therefore estimated the contribution of each bp in size difference to observation efficiency using a linear regression of log2 e against length in bp; we used the slope of this regression to correct sequencing counts as described above. We note that size bias appears to be less evident when small amplicons are already overrepresented in the input (Figure 1—figure supplement 2b), perhaps because under these conditions primers rather than nucleotides are the limiting component in PCR. Because our editing efficiencies are generally high and thus smaller fragments are more abundant at the outset than longer fragments, our correction approach is (intentionally) conservative and should not cause us to overestimate editing efficiency.
+$$
+m_{i}=\frac{e_{i}s_{i}}{\sumj=1ne_{j}s_{j}}
+$$
 
-## RNA-seq of edited moDCs
+where mi is the measured fractional abundance, si the starting abundance, and ei the fragment-specific observation efficiency. Note that the equation takes this form because we can measure only fractional rather than absolute abundances of each amplicon at the end; thus
+
+$$
+\sum_{j=1}^{n}m_{j}=1
+$$
+
+To compute the efficiencies, we arbitrarily set the efficiency e of the 447 bp fragment (which was included in all pools) to 1 (en = 1) and then solved the resulting linear equation system
+
+$$
+m_{i}\sum_{j=1}^{n}e_{j}s_{j}=e_{i}s_{i}
+$$
+
+
+
+$$
+m_{i}-1e_{i}s_{i}+m_{i}\sum_{j\neqi}^{n-1}e_{j}s_{j}=-m_{i}s_{n}
+$$
+
+to obtain the observation efficiencies (amplification + sequencing) ei for each fragment in each pool. Because we expected per-cycle PCR amplification efficiency to be a major contributor to these efficiencies, we compared log2 e to fragment size and found it to be approximately linearly correlated (Figure 1—figure supplement 2b). We therefore estimated the contribution of each bp in size difference to observation efficiency using a linear regression of log2 e against length in bp; we used the slope of this regression to correct sequencing counts as described above. We note that size bias appears to be less evident when small amplicons are already overrepresented in the input (Figure 1—figure supplement 2b), perhaps because under these conditions primers rather than nucleotides are the limiting component in PCR. Because our editing efficiencies are generally high and thus smaller fragments are more abundant at the outset than longer fragments, our correction approach is (intentionally) conservative and should not cause us to overestimate editing efficiency.
+
+### RNA-seq of edited moDCs
 
 RNA-seq libraries were prepared from purified RNA as described above. Input RNA amounts were held constant for all samples for a given donor (250 ng for donor p and 400 ng for donor q). For donor p, the RNA extraction for one replicate sample with knockout of RPE65 and treated with 100 ng/mL B. theta LPS failed. Reads were aligned strand-specifically to the human genome, gene counts were quantified, and differential gene expression analysis was conducted as described above. Read coverage along transcripts was quantified using plastid (Dunn and Weissman, 2016). All other analyses were performed in python3.6.
 
-## Design of library for arrayed genetic screen
+### Design of library for arrayed genetic screen
 
 To select genes to target in our arrayed genetic screen, we first included all genes from the following categories of pattern recognition receptors (PRRs): Toll-like receptors, NOD-like receptors, RIG-I-like receptors, C-type lectin receptors, Galectins, and SIGLECs. We then assembled a list of all genes encoding relevant signaling proteins downstream of these PRRs, including immediate adaptor proteins, kinases and ubiquitin ligases, the downstream transcription factors, as well as a limited subset of effector cytokines and cytokine receptors. Finally, we completed the gene list with additional genes of interest by surveying our RNA-seq data from human moDCs for expressed potential pattern recognition receptors such as predicted surface/membrane proteins, carbohydrate-binding proteins, and proteins containing a V-set domain using searches for Pfam domains, and by browsing the list of genes with the GO term ‘innate immune response’ that we had not yet included. This process ultimately resulted in a list of >400 genes. To narrow the list down to ~300 genes to enable screening in four 96-well plates, we first eliminated pseudogenes and a few PRR-like genes with well-established functions. We then eliminated many genes involved in linear signaling pathways while ensuring that each pathway was targeted at multiple nodes in the final library. In total, we targeted 291 unique genes of interest.
 
@@ -199,7 +522,7 @@ The library additionally included four classes of controls: (1) non-targeting ne
 
 Finally, all selected genes were arrayed into 96-well format, with the following design principles: each of the four 96-well plates contained each of the 14 controls in randomized positions on each plate; column 12 was left empty for no pulse electroporation controls and media-only ELISA controls; the remaining 74 positions on each 96-well plate were randomly filled with sgRNAs targeting genes of interest. The final plate layouts are depicted in Figure 3—figure supplement 1 and listed in Supplementary file 3.
 
-## Arrayed genetic screen
+### Arrayed genetic screen
 
 The Pattern Recognition Receptors and Signaling Pathway arrayed library targeting all selected genes with up to three sgRNAs per gene was provided by Synthego. For a few genes, high homology to other loci precluded selection of three unique sgRNAs within a 200 bp window; in those cases one or two sgRNAs were used. Purified, lyophilized sgRNAs were resuspended to 25 µM in 0.25× TE for 16 hr at 4°C, aliquotted into 96-well plates, and frozen at –80°C until use.
 
@@ -213,16 +536,16 @@ To assess editing efficiency at all loci, amplification primer design and sequen
 
 Amplicon PCRs and sequencing sequencing library preparation were performed largely as described above, with the following modifications: (1) PCRs were performed in 384-well format; (2) first-round PCRs were set up using a Biomek FX liquid handling system with a 96-well head (Beckman Coulter); (3) first-round PCR products were diluted into Echo Qualified 384-Well Polypropylene Microplates using the Biomek FX; (4) PCR mastermix for the second-round PCR was dispensed into 384-well PCR plates using the Biomek FX; and (5) diluted first-round PCR products and indexing PCR primers were dispensed into the 384-well PCR plate using an Echo 525 acoustic liquid handler (Labcyte, San Jose, CA). Purification and validation of sequencing libraries, sequencing, classification of sequencing outcomes, and correction for amplicon size were performed as described above. For donor h, a small set of samples did not produce aligning sequencing reads in a first PCR attempt. These samples were repeated manually as described above, after which all but one sample produced aligning sequencing reads. Only successfully prepared samples were included for analysis. For donor i, the sequencing library preparation was repeated independently for >200 loci, which produced near-identical results (Figure 3—figure supplement 4c), validating that the sequencing library preparation strategy is robust and reproducible and that size-dependent amplification efficiency is consistent across PCRs. Samples with >100 size-corrected on-target reads (generally corresponding to >500 raw on-target reads) were included to estimate editing efficiencies. For some pairs of highly homologous loci (e.g. SFTPA1 and SFTPA2), amplicons for both loci were detected with primer pairs designed to amplify each individual locus because it was impossible to design completely specific primer pairs with the criteria used. These amplicons were not excluded when calculating editing efficiency, such that editing efficiency is slightly underestimated for these loci. Results from outcome classification, after correction for size, are listed in Supplementary file 4.
 
-## Sample sizes and sample size estimation
+### Sample sizes and sample size estimation
 
 No sample-size calculation was performed in advance. All results were reproduced in cells from multiple independent donors, following conventions of the field. Within independent experiments, assays were performed in duplicate or triplicate following conventions of the field.
 
-## Replication and data exclusion
+### Replication and data exclusion
 
 All main findings were derived from experiments with cells from at least two independent donors. The main hits from the genetic screen were validated in cells from two additional, independent donors. All treatments were performed in duplicate for readout by ELISA and qPCR and in duplicate or triplicate for readout by RNA-seq. Cell counts were generally conducted in duplicate. Information on number of replicates is contained in the figure legends.
 
 For identification of differentially expressed genes in RNA-seq, only genes with an average count >2 across all conditions were included for analysis. Exclusion criteria for editing analysis are described in the corresponding methods sections.
 
-## Code
+### Code
 
 Amplicon sequencing data were processed using the publicly available pipeline knock-knock (https://github.com/jeffhussmann/knock-knock) (Canaj et al., 2019). RNA-seq data were processed using STAR (Dobin et al., 2013), featureCounts (Liao et al., 2014), and DESeq2 (Love et al., 2014).

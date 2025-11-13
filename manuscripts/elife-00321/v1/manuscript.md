@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.00321.001 The hippocampal system appears to be critically important in establishing episodic memory of both internal and external events within contexts as well as spatial memory, which enables flexible spatial navigation. However, the neuronal substrates that function across different memories in the hippocampal system are poorly understood. I monitored large-scale activity patterns of hippocampal neuronal ensembles in rats performing a novel, continuous task that combined one visually guided and two memory-guided types of navigations in a constant environment. I found that the activity patterns of the hippocampal ensemble represent spatiotemporal contexts (journeys) constructed by temporally ordered past, present and expected future places in tandem with visually or mnemonically guided non-spatial contexts (task-demands) to form episodes. This finding therefore suggests that the hierarchical organization of contexts based on pattern separation and completion enables the hippocampus to play a dual role in spatial navigation and recall of episodic memory. DOI: http://dx.doi.org/10.7554/eLife.00321.001
+The hippocampal system appears to be critically important in establishing episodic memory of both internal and external events within contexts as well as spatial memory, which enables flexible spatial navigation. However, the neuronal substrates that function across different memories in the hippocampal system are poorly understood. I monitored large-scale activity patterns of hippocampal neuronal ensembles in rats performing a novel, continuous task that combined one visually guided and two memory-guided types of navigations in a constant environment. I found that the activity patterns of the hippocampal ensemble represent spatiotemporal contexts (journeys) constructed by temporally ordered past, present and expected future places in tandem with visually or mnemonically guided non-spatial contexts (task-demands) to form episodes. This finding therefore suggests that the hierarchical organization of contexts based on pattern separation and completion enables the hippocampus to play a dual role in spatial navigation and recall of episodic memory.
 
 ## Introduction
 
@@ -22,73 +22,165 @@ There have been two frameworks suggested for the principal role of the hippocamp
 
 ## Results
 
-## A continuous task with one visually guided and two memory-guided decisions
+### A continuous task with one visually guided and two memory-guided decisions
 
-Rats were trained to navigate their way through a figure ‘8' maze in a continuous task that incorporated both visual discrimination and two types of memory-guided responses (see ‘Materials and methods',
+Rats were trained to navigate their way through a figure ‘8' maze in a continuous task that incorporated both visual discrimination and two types of memory-guided responses (see ‘Materials and methods', Figure 1). The task was divided into three subtasks: visual discrimination (VD), non-delayed spatial alternation (SA) and delayed spatial alternation (DA). In the VD subtask, a cue light on the left or right side was illuminated to indicate which direction to turn at a decision point (DP, Figure 1A) to receive a reward (medial forebrain bundle [MFB] electrical stimulation). In both the SA and DA subtasks, cue lights on both sides were illuminated and the rats had to alternate between left and right at the decision point (Figure 1B). The difference between the SA and DA subtasks was that in the DA subtask, a barrier appeared at the middle of the central stem for 5 s to interpose a delay period. During the delay period, the rats paused steadily in the forward direction in front of the barrier. Some lines of evidence suggest that the SA-type task is often affected by hippocampal lesions (O'Keefe and Nadel, 1978). By contrast, a recent study implied that the SA-type task is independent on the hippocampus (Ainge et al., 2007b). Unlike the visually cued VD and procedural memory-guided SA subtasks, the episodic-like memory-guided DA type of task is critically dependent on the hippocampus (Ainge et al., 2007b; Ferbinteanu et al., 2011). The rats continuously performed these subtasks at least twice in a task over the course of approximately 1 hr (Figure 1D). This task allowed for examinations of the influence of internal and external events on hippocampal neuronal activity and hippocampus-dependence both between and within different journeys and task-demands.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig1-v1.jpg)
 
-**Figure 1.:** (A) The rat has to decide which direction to turn at the decision point (DP). If correct, the rat gets reward signals (MFB stimulations) at one of the reward zones (RZ). In the DA subtask, a barrier appears for 5 s in the central stem (blue line) so that the rat has to wait in the delay zone (DZ). An example of a running trajectory of a rat (G111125) is superimposed on the maze. (B) Possible journeys for three subtasks. For the VD subtask, one of the light cues is illuminated to indicate a direction. For the memory-guided (SA and DA) subtasks, both of the light cues are illuminated to alternate the direction based on memory. (C) Examples of running trajectories of the rat (G111125). The red dots indicate the location of the onset of the estimated turn for each lap. (D) The subtask sequence in a task. Each subtask consisted of 20 laps, except the second VD subtask in each session, which only consisted of 10 laps.DOI: http://dx.doi.org/10.7554/eLife.00321.003
+**Figure 1.:** (A) The rat has to decide which direction to turn at the decision point (DP). If correct, the rat gets reward signals (MFB stimulations) at one of the reward zones (RZ). In the DA subtask, a barrier appears for 5 s in the central stem (blue line) so that the rat has to wait in the delay zone (DZ). An example of a running trajectory of a rat (G111125) is superimposed on the maze. (B) Possible journeys for three subtasks. For the VD subtask, one of the light cues is illuminated to indicate a direction. For the memory-guided (SA and DA) subtasks, both of the light cues are illuminated to alternate the direction based on memory. (C) Examples of running trajectories of the rat (G111125). The red dots indicate the location of the onset of the estimated turn for each lap. (D) The subtask sequence in a task. Each subtask consisted of 20 laps, except the second VD subtask in each session, which only consisted of 10 laps.
 
-## Coding of place, journey and task-demand in the hippocampal place cells
+### Coding of place, journey and task-demand in the hippocampal place cells
 
-Ensemble activity was recorded from a total of 1119 pyramidal cells in the CA1 of the dorsal hippocampus using arrays of 10 extracellular dodecatrodes (Takahashi and Sakurai, 2005) in five rats running in the maze. All rats were familiarized with the task before recording, and performed the task with a high level of accuracy (overall: 99 ± 2%, VD: 99 ± 1%, SA: 97 ± 3%, DA: 99 ± 1% correctly performed [mean ± SEM]; Table 1). Laps containing errors of cue interpretation were excluded from the following analyses.10.7554/eLife.00321.004Table 1.Variability between rats: behavioral and electrophysiological measurementsDOI: http://dx.doi.org/10.7554/eLife.00321.004Rat No.B120303F120112G111125K120224L120221TotalNo. of erroneous laps01051Errors (%)00.703.50.7Running speed (cm/sec ± SD) in the central stem33.13 ± 6.1745.61 ± 11.7322.09 ± 15.0841.77 ± 11.7752.03 ± 16.95No. of pyramidal cells238744121932021119No. of place cells (spatial information > 1.0 bits/spike)1272119959116522Spatial information (bits/spike, mean ± SEM)2.39 ± 0.211.26 ± 0.362.47 ± 0.211.21 ± 0.182.50 ± 0.24Unit isolation quality (isolation distance, mean ± SEM)22.42 ± 1.7027.69 ± 2.8145.41 ± 7.8623.26 ± 1.5933.60 ± 2.11No. of interneurons19524151073
+Ensemble activity was recorded from a total of 1119 pyramidal cells in the CA1 of the dorsal hippocampus using arrays of 10 extracellular dodecatrodes (Takahashi and Sakurai, 2005) in five rats running in the maze. All rats were familiarized with the task before recording, and performed the task with a high level of accuracy (overall: 99 ± 2%, VD: 99 ± 1%, SA: 97 ± 3%, DA: 99 ± 1% correctly performed [mean ± SEM]; Table 1). Laps containing errors of cue interpretation were excluded from the following analyses.
 
-Several studies suggest that the hippocampal place code is influenced by running speed and head direction (
+**Table 1.**
+ Variability between rats: behavioral and electrophysiological measurements
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rat No.</th>
+      <th>B120303</th>
+      <th>F120112</th>
+      <th>G111125</th>
+      <th>K120224</th>
+      <th>L120221</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No. of erroneous laps</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Errors (%)</td>
+      <td>0</td>
+      <td>0.7</td>
+      <td>0</td>
+      <td>3.5</td>
+      <td>0.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Running speed (cm/sec ± SD) in the central stem</td>
+      <td>33.13 ± 6.17</td>
+      <td>45.61 ± 11.73</td>
+      <td>22.09 ± 15.08</td>
+      <td>41.77 ± 11.77</td>
+      <td>52.03 ± 16.95</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of pyramidal cells</td>
+      <td>238</td>
+      <td>74</td>
+      <td>412</td>
+      <td>193</td>
+      <td>202</td>
+      <td>1119</td>
+    </tr>
+    <tr>
+      <td>No. of place cells (spatial information &gt; 1.0 bits/spike)</td>
+      <td>127</td>
+      <td>21</td>
+      <td>199</td>
+      <td>59</td>
+      <td>116</td>
+      <td>522</td>
+    </tr>
+    <tr>
+      <td>Spatial information (bits/spike, mean ± SEM)</td>
+      <td>2.39 ± 0.21</td>
+      <td>1.26 ± 0.36</td>
+      <td>2.47 ± 0.21</td>
+      <td>1.21 ± 0.18</td>
+      <td>2.50 ± 0.24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unit isolation quality (isolation distance, mean ± SEM)</td>
+      <td>22.42 ± 1.70</td>
+      <td>27.69 ± 2.81</td>
+      <td>45.41 ± 7.86</td>
+      <td>23.26 ± 1.59</td>
+      <td>33.60 ± 2.11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of interneurons</td>
+      <td>19</td>
+      <td>5</td>
+      <td>24</td>
+      <td>15</td>
+      <td>10</td>
+      <td>73</td>
+    </tr>
+  </tbody>
+</table>
+
+Several studies suggest that the hippocampal place code is influenced by running speed and head direction (McNaughton et al., 1983; Wiener et al., 1989; Muller et al., 1994; Czurko et al., 1999). In addition, even small differences in location on a maze can strongly influence firing rates (Muller et al., 1994). Although in the present work, these factors were considered to be minimized in the central stem of the maze because the running speed, head direction, and lateral position appeared highly consistent, an analysis of the place cells was employed between different journeys within a given subtask or between different task-demands within a journey in order to quantitatively account for any remaining effects of these potentially confounding factors. In this analysis, for each place cell in which the spatial information in at least one trial type was above 1.0 bits/spike, differences in firing rates associated with those differences in the central stem were analyzed using a one-way ANCOVA. Running speed, head direction and lateral position were included as covariates in the ANCOVA model. Firing rates of over 268 of the 522 place cells in the central stem differed significantly between different journeys within a given subtask or between different task-demands within a journey (p<0.05; Figure 2). To quantitatively examine the remapping of place fields without influences of the running speed, head direction, and lateral position, only place cells which fired at significantly different rates in the central stem on different journeys within a given subtask or different task-demands within a journey, even when all of these factors were taken into account, were examined in the following analyses.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig2-v1.jpg)
 
-**Figure 2.:** The proportion of place cells showing significantly different firing rates between different journeys within a given subtask and between different task-demands within a journey when running speed, head direction and lateral position were taken into account. Numbers indicate percentages.DOI: http://dx.doi.org/10.7554/eLife.00321.005
+**Figure 2.:** The proportion of place cells showing significantly different firing rates between different journeys within a given subtask and between different task-demands within a journey when running speed, head direction and lateral position were taken into account. Numbers indicate percentages.
 
-The place codes could be changed in terms of firing rates (rate remapping) or both firing rates and location (global/complete remapping;
+The place codes could be changed in terms of firing rates (rate remapping) or both firing rates and location (global/complete remapping; Bostock et al., 1991; Leutgeb et al., 2005). For each place cell, I independently compared the firing location and rate of the place fields during task performance. The spatial similarity was measured by calculating the spatial correlation between a pair of maps. The rate similarity was measured as one minus the normalized difference between the firing rates. Thus, the spatial similarity measurement was independent of rate similarity. In an identical trial type (i.e., combination of journey and task-demand), the distributions of the measurements between first and second exposures (i.e., first vs second exposure in the right-to-left or left-to-right journey in the VD, SA or DA subtasks) were highly similar (median Spearman correlations [rs] > 0.67; median rate similarity indices [rr] > 0.80; Figures 3A, 4B,C), suggesting that, as in numerous previous studies on the hippocampal place code (O'Keefe and Dostrovsky, 1971; McNaughton and Morris, 1987; Muller et al., 1987), the pyramidal cells are place-specific during identical visually or mnemonically guided behaviors in a constant environment. Within a given task-demand, the distributions of the spatial correlation and the change in firing rates in the place fields in the central stem between different journeys (i.e., a right-to-left vs left-to-right journey in the VD, SA, or DA subtasks) were significantly lower than those seen under control conditions (repeated exposures to identical trial types) (median rs < 0.45, Z < −22.04, p<0.001; median rr < 0.68, Z < −8.96, p<0.001, Wilcoxon rank sum test; Figures 3B and 4B,C), suggesting that place-specific activity is strongly dependent on the journey (Frank et al., 2000; Wood et al., 2000; Ferbinteanu and Shapiro, 2003; Bower et al., 2005; Ainge et al., 2007a). In contrast, in an identical journey, the distributions of the spatial correlations among the VD, SA and DA subtasks (i.e., VD vs SA subtask, VD vs DA subtask, SA vs DA subtask in the right-to-left or left-to-right journey) were similar or higher than under control conditions (median rs > 0.75, Z > 1.07, n.s. or p<0.001, Wilcoxon rank sum test; Figures 3B and 4B); however, the distributions of the change in firing rates in the place fields were clearly lower (median rr < 0.80, Z < −2.79, p<0.01, Wilcoxon rank sum test; Figures 3B and 4C), indicating that only the rate of a place-specific activity is modulated with a given task-demand (Smith and Mizumori, 2006). Taken together, the results suggest that irrespective of hippocampus-dependence (Morris and Frey, 1997; Ainge et al., 2007b; Ferbinteanu et al., 2011), the hippocampal pyramidal cells in the maze were not only activated by a specific location, but also by the experienced past and expected future places accompanied by the visually guided or memory-guided task-demands (see Figure 3—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig3-v1.jpg)
 
-**Figure 3.:** Representative color-coded rate maps for eight possible trial types. (A) The rate maps with the first cell in (B) show stable place-specific activity in repeated sessions of an identical journey within a given task-demand. The rate was coded on a color scale from blue (silent) to red (maximum rate). The pixels that were not sampled are white. The symbols above the map indicate the journey, task-demand and illuminated light-cue. For each cell, the rate scale corresponds to the peak firing rate in Hz in that condition (indicated to the right of the rate maps). (B) The rate maps for six CA1 pyramidal cells. The maps are averages for repeated sessions. Each row shows the data from one pyramidal cell. Note that different journeys in the same place resulted in place fields similar in locations, but different task-demands caused different firing intensities in those place fields.DOI: http://dx.doi.org/10.7554/eLife.00321.006
+**Figure 3.:** Representative color-coded rate maps for eight possible trial types. (A) The rate maps with the first cell in (B) show stable place-specific activity in repeated sessions of an identical journey within a given task-demand. The rate was coded on a color scale from blue (silent) to red (maximum rate). The pixels that were not sampled are white. The symbols above the map indicate the journey, task-demand and illuminated light-cue. For each cell, the rate scale corresponds to the peak firing rate in Hz in that condition (indicated to the right of the rate maps). (B) The rate maps for six CA1 pyramidal cells. The maps are averages for repeated sessions. Each row shows the data from one pyramidal cell. Note that different journeys in the same place resulted in place fields similar in locations, but different task-demands caused different firing intensities in those place fields.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** A schematic showing remapping of the place fields that occurred between journeys (spatiotemporal contexts) and task-demands (non-spatial contexts) at the single cell level. Changes in both firing location and rates in the place field (global remapping) occurred between the different journeys. By contrast, only changes in the firing rates (rate remapping) occurred between the task-demands.DOI: http://dx.doi.org/10.7554/eLife.00321.007
+**Figure 3—figure supplement 1.:** A schematic showing remapping of the place fields that occurred between journeys (spatiotemporal contexts) and task-demands (non-spatial contexts) at the single cell level. Changes in both firing location and rates in the place field (global remapping) occurred between the different journeys. By contrast, only changes in the firing rates (rate remapping) occurred between the task-demands.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig4-v1.jpg)
 
-**Figure 4.:** (A) The similarities were measured between a pair of trial types (VD1, VD2, VD3, VD4, SA1, SA2, DA1, and DA2) or between repeated exposures to an identical trial type. Because the central stem of the maze was the common running route among the different journeys within a given subtask, the region of interest (ROI) was set at the region highlighted in the green shaded box. Box plots of the spatial (B) and rate (C) similarities between repeated exposures to an identical journey and task-demand (red), between different journeys within a given task-demand (green), and between different task-demands within a journey (blue) (median, first and third quartiles, minimum, and maximum indicated). Repeated exposures are marked with an apostrophe.DOI: http://dx.doi.org/10.7554/eLife.00321.008
+**Figure 4.:** (A) The similarities were measured between a pair of trial types (VD1, VD2, VD3, VD4, SA1, SA2, DA1, and DA2) or between repeated exposures to an identical trial type. Because the central stem of the maze was the common running route among the different journeys within a given subtask, the region of interest (ROI) was set at the region highlighted in the green shaded box. Box plots of the spatial (B) and rate (C) similarities between repeated exposures to an identical journey and task-demand (red), between different journeys within a given task-demand (green), and between different task-demands within a journey (blue) (median, first and third quartiles, minimum, and maximum indicated). Repeated exposures are marked with an apostrophe.
 
-## Episode-specific neuronal trajectory of the hippocampal ensemble activity
+### Episode-specific neuronal trajectory of the hippocampal ensemble activity
 
-The activity patterns relative to the place, journey and task-demand during tasks suggested that the dynamics of the ensemble activity pattern rather than just the firing pattern of single cells should be considered. The dynamics of neuronal ensemble activity as a trajectory through a state space were therefore analyzed (neuronal trajectory; see ‘Materials and methods';
+The activity patterns relative to the place, journey and task-demand during tasks suggested that the dynamics of the ensemble activity pattern rather than just the firing pattern of single cells should be considered. The dynamics of neuronal ensemble activity as a trajectory through a state space were therefore analyzed (neuronal trajectory; see ‘Materials and methods'; Figure 5) (Briggman et al., 2005; Mazor and Laurent, 2005; Harvey et al., 2012). At each specific location, the activity state of the ensemble containing n simultaneously recorded neurons was defined as a point in an n-dimensional space, with each dimension representing the activity of a single neuron. In the trajectory of a journey within a given subtask, the neuronal ensemble activity tended to move in similar orbits that started and ended at similar positions. Moreover, the trajectories of different journeys exhibited unique orbits (Figure 6A,B). To quantify the trajectory specificity, I used a classifier based on the distance from an individual lap trajectory to the mean right-to-left/left-to-right trajectories at single locations. In each subtask, the neuronal trajectory, consisting of all of the simultaneously recorded place cells, was sufficient to separate the left-to-right journey from the right-to-left journey with high accuracy, and vice versa (Figure 6C; p<0.001, binomial test, chance = 0.5). Surprisingly, even in visually guided situations in which memory-guided decisions could not be utilized (i.e., left-to-left/right-to-right journey in the VD subtask), the accuracy was sufficiently better than chance levels before the rat behaviorally chose its next direction (prospective coding; Figure 6D; p<0.001, chance = 0.5; turn onset: Figure 1C). Furthermore, this trajectory could be used to predict all possible trial types (i.e., eight possibilities; VD1, VD2, VD3, VD4, SA1, SA2, DA1 and DA2) on single laps at better than chance levels even during periods of running through the central stem of the maze in which the head direction, speed and place factors were almost constant for each rat (Figure 7, p<0.001, binomial test, chance = 0.125; Table 1). Thus, the activity in the hippocampus could be considered to be divergent, episode-specific trajectories through a state space of neuronal ensemble activity (see Figure 7—figure supplement 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig5-v1.jpg)
 
-**Figure 5.:** At each location, the Euclidian distance from the trajectory on a single lap (black) to the mean trial type trajectories (red and blue) was calculated (dA, dB). If dA was less than dB, the lap at the location bin was classified as trial type A, and vice versa for trial type B.DOI: http://dx.doi.org/10.7554/eLife.00321.009
+**Figure 5.:** At each location, the Euclidian distance from the trajectory on a single lap (black) to the mean trial type trajectories (red and blue) was calculated (dA, dB). If dA was less than dB, the lap at the location bin was classified as trial type A, and vice versa for trial type B.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig6-v1.jpg)
 
-**Figure 6.:** (A) An example time course of mean, journey-specific trajectories for right-to-left (red) and left-to-right (blue) laps in the SA subtask, plotted on the first to third principal component space (Rat #: B120303, n = 91 cells). The points marked 1, 2 and 3 correspond to the mean locations where the rat entered the lower arm, and turned and entered the reward zone, respectively. (B) Example individual trajectories for laps in the subtask in (A). (C) The classification accuracy of determining the journeys (shown in right) at different locations in the VD, SA, and DA subtasks (thin black line, n = 5 rats; solid black line, mean; blue dashed line, p=0.001, binomial test; black dashed line, chance level; red vertical line, mean turn onset). The classifier was based on a distance-dependent classification scheme. (D) As (C), except that the subtask condition under which the future direction is not predictable until arriving at the decision point. A high level of accuracy can be observed even before the onset of the turn (arrow heads).DOI: http://dx.doi.org/10.7554/eLife.00321.010
+**Figure 6.:** (A) An example time course of mean, journey-specific trajectories for right-to-left (red) and left-to-right (blue) laps in the SA subtask, plotted on the first to third principal component space (Rat #: B120303, n = 91 cells). The points marked 1, 2 and 3 correspond to the mean locations where the rat entered the lower arm, and turned and entered the reward zone, respectively. (B) Example individual trajectories for laps in the subtask in (A). (C) The classification accuracy of determining the journeys (shown in right) at different locations in the VD, SA, and DA subtasks (thin black line, n = 5 rats; solid black line, mean; blue dashed line, p=0.001, binomial test; black dashed line, chance level; red vertical line, mean turn onset). The classifier was based on a distance-dependent classification scheme. (D) As (C), except that the subtask condition under which the future direction is not predictable until arriving at the decision point. A high level of accuracy can be observed even before the onset of the turn (arrow heads).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig7-v1.jpg)
 
-**Figure 7.:** The classification accuracy for determining a trial type from all of the possible trial types (episodes) (thin line, n = 5 rats; thick black line, mean; blue dashed line, p=0.001, binomial test; black dashed line, chance level). The classifier was based on a distance-dependent classification scheme. The average accuracy for each rat was significantly higher than chance at the respective specific locations.DOI: http://dx.doi.org/10.7554/eLife.00321.011
+**Figure 7.:** The classification accuracy for determining a trial type from all of the possible trial types (episodes) (thin line, n = 5 rats; thick black line, mean; blue dashed line, p=0.001, binomial test; black dashed line, chance level). The classifier was based on a distance-dependent classification scheme. The average accuracy for each rat was significantly higher than chance at the respective specific locations.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** A schematic of the hypothetical, episode-specific neuronal trajectories of an individual trial type (red lines: VD subtask, green lines: SA subtask, blue lines: DA subtask; red dashed lines: same origin and destination) in the first to third PC space. As expected from the place field properties, the same right-to-left/left-to-right journey produces a similar neuronal trajectory at the ensemble level. However, the trajectories are shifted between the task-demands in certain spaces (PC2 in this schematic), thereby generalizing a journey over task-demands. When the future direction changes from the expectation at the decision point, the trajectory shifts to the corresponding one (red dashed lines, VD2, VD4). The trajectory shift can be triggered not only by external events (the light-cues) but also by internal events (expected future direction) before the behavioral choicesDOI: http://dx.doi.org/10.7554/eLife.00321.012
+**Figure 7—figure supplement 1.:** A schematic of the hypothetical, episode-specific neuronal trajectories of an individual trial type (red lines: VD subtask, green lines: SA subtask, blue lines: DA subtask; red dashed lines: same origin and destination) in the first to third PC space. As expected from the place field properties, the same right-to-left/left-to-right journey produces a similar neuronal trajectory at the ensemble level. However, the trajectories are shifted between the task-demands in certain spaces (PC2 in this schematic), thereby generalizing a journey over task-demands. When the future direction changes from the expectation at the decision point, the trajectory shifts to the corresponding one (red dashed lines, VD2, VD4). The trajectory shift can be triggered not only by external events (the light-cues) but also by internal events (expected future direction) before the behavioral choices
 
-## Relative ability for distinguishing journeys, task-demands, and trial types in the hippocampal episodic code
+### Relative ability for distinguishing journeys, task-demands, and trial types in the hippocampal episodic code
 
-The above results suggest that hippocampal ensemble activity contains sufficient information concerning journey, task-demand and trial type. To compare the relative information content among them for neuronal ensemble activity of each rat, I quantitatively assessed the performances of the binary classification of neuronal trajectories in the central stem of the maze between a pair of journeys irrespective of subtask, between a pair of task-demands irrespective of journey, and between a pair of trial types. For all categories, the average output of the binary classifiers showed a high level of accuracy at the ensemble level (
+The above results suggest that hippocampal ensemble activity contains sufficient information concerning journey, task-demand and trial type. To compare the relative information content among them for neuronal ensemble activity of each rat, I quantitatively assessed the performances of the binary classification of neuronal trajectories in the central stem of the maze between a pair of journeys irrespective of subtask, between a pair of task-demands irrespective of journey, and between a pair of trial types. For all categories, the average output of the binary classifiers showed a high level of accuracy at the ensemble level (Figure 8, p <0.001, binomial test, chance = 0.5) and no significant differences among them (p >0.05, Kruskal–Wallis test with Turkey honestly significant difference [HSD] post-hoc test). The results suggest that the abilities of the hippocampal ensemble to identify journeys, task-demands, and trial types are sufficiently high and relatively similar to each other.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig8-v1.jpg)
 
-**Figure 8.:** Average binary classification accuracies of distinguishing pairs of journeys (i.e., VD1, SA1, and DA1 vs VD3, SA2, and DA2), pairs of task-demands (i.e., VD vs SA, VD vs DA, and SA vs DA), and pairs of trial types (i.e., all possible pairings of VD1, VD2, VD3, VD4, SA1, SA2, DA1, and DA2). For each rat, the accuracy was calculated based on the most frequently classified choices in the central stem. The error bars indicate SD.DOI: http://dx.doi.org/10.7554/eLife.00321.013
+**Figure 8.:** Average binary classification accuracies of distinguishing pairs of journeys (i.e., VD1, SA1, and DA1 vs VD3, SA2, and DA2), pairs of task-demands (i.e., VD vs SA, VD vs DA, and SA vs DA), and pairs of trial types (i.e., all possible pairings of VD1, VD2, VD3, VD4, SA1, SA2, DA1, and DA2). For each rat, the accuracy was calculated based on the most frequently classified choices in the central stem. The error bars indicate SD.
 
-## Hierarchical representation of journey and task-demand in hippocampal ensemble activity
+### Hierarchical representation of journey and task-demand in hippocampal ensemble activity
 
-The results obtained showing the similarities of the place fields may imply the pattern completion/generalization of the journey represented in the hippocampal ensemble activity in the spatial domain. If this assumption is correct, knowing the neuronal trajectories for right-to-left and left-to-right journeys in one subtask should allow classification into right-to-left and left-to-right journeys in the other subtasks. To test this, the similarities between the ensemble activity patterns in the central stem of the maze were quantitatively analyzed using a distance-dependent classification scheme. As expected, based on the mean right-to-left/left-to-right trajectories in any one of three subtasks, the classifier outputs could predict the corresponding individual journeys within the other remaining two subtasks at a high level of accuracy at the ensemble level (see ‘Materials and methods';
+The results obtained showing the similarities of the place fields may imply the pattern completion/generalization of the journey represented in the hippocampal ensemble activity in the spatial domain. If this assumption is correct, knowing the neuronal trajectories for right-to-left and left-to-right journeys in one subtask should allow classification into right-to-left and left-to-right journeys in the other subtasks. To test this, the similarities between the ensemble activity patterns in the central stem of the maze were quantitatively analyzed using a distance-dependent classification scheme. As expected, based on the mean right-to-left/left-to-right trajectories in any one of three subtasks, the classifier outputs could predict the corresponding individual journeys within the other remaining two subtasks at a high level of accuracy at the ensemble level (see ‘Materials and methods'; Figure 9, p<0.001, binomial test, chance = 0.5, n = 128 cells). These results suggest that hippocampal ensemble activity generalizes a journey over the given task-demands.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/00321/elife-00321-fig9-v1.jpg)
 
-**Figure 9.:** (A) Schematic of a classification scheme for estimating generalization accuracy. At each location, the distance from the trajectory in two target subtasks on a single trial to the mean right-to-left (R-L) and left-to-right (L-R) journey trajectories in a reference subtask was measured (d-to-RL and d-to-LR). If the actual journey was R-L, and d-to-RL was less than d-to-LR, the lap at that location was classified as a correct generalization, and vice versa. The figure shows an example in which a reference subtask is VD and a neuronal trajectory in the R-L journey of an SA subtask was examined. (B) The generalization accuracy for determining a R-L/L-R journey from the neuronal trajectory in each lap in two of the three subtasks based on the distance to the mean neuronal trajectories in a remaining reference subtask as a function of the number of cells (red: reference: VD, target: SA and DA; green: reference: SA, target: VD and DA; blue: reference DA, target: VD and SA). Cells recorded from five rats were combined. The accuracy was calculated based on the most frequently classified journeys in the central stem. The error bars show the SD for 1000 random choices of the cells used; the dashed line shows the chance level, and the bar next to the dashed line shows the range of accuracies using random shuffling (control).DOI: http://dx.doi.org/10.7554/eLife.00321.014
+**Figure 9.:** (A) Schematic of a classification scheme for estimating generalization accuracy. At each location, the distance from the trajectory in two target subtasks on a single trial to the mean right-to-left (R-L) and left-to-right (L-R) journey trajectories in a reference subtask was measured (d-to-RL and d-to-LR). If the actual journey was R-L, and d-to-RL was less than d-to-LR, the lap at that location was classified as a correct generalization, and vice versa. The figure shows an example in which a reference subtask is VD and a neuronal trajectory in the R-L journey of an SA subtask was examined. (B) The generalization accuracy for determining a R-L/L-R journey from the neuronal trajectory in each lap in two of the three subtasks based on the distance to the mean neuronal trajectories in a remaining reference subtask as a function of the number of cells (red: reference: VD, target: SA and DA; green: reference: SA, target: VD and DA; blue: reference DA, target: VD and SA). Cells recorded from five rats were combined. The accuracy was calculated based on the most frequently classified journeys in the central stem. The error bars show the SD for 1000 random choices of the cells used; the dashed line shows the chance level, and the bar next to the dashed line shows the range of accuracies using random shuffling (control).
 
 ## Discussion
 
@@ -98,70 +190,82 @@ Previous studies have reported that hippocampal neurons might convey information
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Five male Wister rats (300–400 g) were housed individually in cages (20 × 25 × 23 cm). All of them were implanted with a custom-made microdrive with 10 dodecatrodes and 2 reference electrodes. The rats were kept at 80% of free-feeding body weight. All rats were maintained on a 12-hr light/12-hr dark schedule. Testing occurred in the light phase.
 
-## Surgery, electrode preparation and recording
+### Surgery, electrode preparation and recording
 
 Under isoflurane anesthesia, two stimulation electrodes were inserted into the MFB in the right lateral hypothalamus (AP 2.5, ML 1.0, DV 9.5); a custom-made microdrive with 10 independently movable 12-wire bundled dodecatrodes and 2 tetrodes were fixed to the skull above the left hippocampus (AP 3.8, ML 3.0, DV 0.5). Two tetrodes were used to record a reference signal. Each stimulation electrode consisted of two insulated stainless steel wires (coated diameter, 0.2 mm) together with ∼0.5 mm of insulation removed from one tip. The 10 dodecatrodes were lowered into the hippocampal CA1 pyramidal layer within 2 weeks of surgery. In all cases, the unit-recording dodecatrodes and reference tetrodes were constructed from 8 μm and 12.5 μm HML-coated tungsten (99.95%) wires, respectively.
 
 After the rats had made a full recovery (∼2 weeks after surgery), they were allowed to explore the task maze and identify the reward zones (Figure 1A, RZ). During the physiological recording, the data from all channels of the dodecatrodes were unity-gain buffered, filtered (600 Hz–6 kHz), amplified (gain = 5000) and continuously sampled at 25 kHz on a 128-channel custom-made recording system with Lynx-8 amplifiers (Neuralynx, Bozeman, MT) and AD converters (16-bit resolution, National Instruments, Austin, TX). One channel of each dodecatrode was branched away, filtered (0.1 Hz–6 kHz) and amplified (gain = 500) to detect local field potentials (LFP). The recordings were included in the data analysis if sharp wave ripple events in the LFP in the corresponding dodecatrode were identified during the immobility period. Two sets of small red and green light-emitting diodes (10-cm separation), mounted above the headstage amplifier, were recorded by an overhead digital video camera and sampled at 60 Hz to track the rat's head position and direction. The neuronal data were recorded on a single recording day for each rat.
 
-## MFB stimulation
+### MFB stimulation
 
 After the surgery, the optimal stimulation parameters were obtained when the rat performed nose poke responses. The optimal MFB stimulation consisted of a train of 2 ms wide, 100–200 μA, biphasic current pulses, delivered at 100 Hz for 200 ms. In the correct laps, the optimal MFB simulation was obtained 5–10 times in the reward zone. The neuronal recordings during the stimulation period were removed prior to analysis.
 
-## Task and behavioral training
+### Task and behavioral training
 
 The task demanded a visually or memory-guided decision in VD, SA and DA at a decision point in the figure 8-shaped maze (overall: 100 cm by 140 cm, 20 cm height; path: 20 cm width; matte black acryl resin, Figure 1A). To prevent the rats from accessing unnecessary distal room cues, the task was performed under dim light. Initially, two barriers were put into the maze to construct an O-shaped track. After electrode implantation, the rats were trained to run along the left/right O-shaped track unidirectionally for reward signals (MFB stimulation) at a reward zone (Figure 1A, RZ). Once the rats were running smoothly along both left and right O-shaped tracks (∼3 to 7 days), all of them were trained to run in the VD subtask for a reward in the figure 8-shaped maze. In the VD subtask, one of the two visual cues (LED-lights at the right and left corners; Figure 1A) was illuminated randomly; the visual cue at the decision point of the maze (Figure 1A, DP) indicated which direction to turn to receive reward signals. The rats did not access the visual cue until reaching the decision point (Figure 1A) because the height of the walls of the maze (20 cm) was much higher than the level of the rat's eyes (∼5 cm) and the rats did not stand up during the experiment. The rats were trained for ∼3 to 7 days until they achieved a threshold of 80% decisions correct for >20 laps at a constant running speed (>20 cm/s). Next, they were trained to run in the SA subtask for >20 laps. In the SA subtask, both LEDs were illuminated so that the rats could not rely on the visual cue. Instead, the rat had to choose a direction opposite to the previous one. Those alternating behaviors spontaneously occurred and the rats easily achieved the threshold of 80% decisions correct for >20 laps (∼1 to 3 days). Finally, the rats were trained to run in the DA subtask for 20 laps. The DA subtask was almost identical to the SA subtask, except that a 5-s delay period was incorporated. During the delay period, a barrier appeared for 5 s, 20 cm ahead of the entrance to the central stem (Figure 1A, blue line). Because the rats initially tended to move back from the barrier during the first few laps of the DA subtask, two other barriers were set at both sides of the return rail to prevent such behavior until it ceased. The rats achieved a threshold of 90% decisions correct for >20 laps (1 day).
 
 After the rats correctly performed all three subtasks, they continuously performed all the subtasks within about 1 hr in the following sequence—VD (20 laps), SA (20 laps), VD (10 laps), DA (20 laps), VD (20 laps), SA (20 laps), VD (10 laps), and DA (20 laps)—and were rewarded each time they arrived at the reward zone at the correct return rail. The unit-recordings were made within 2–6 training days after each rat conducted this final sequence of subtasks. The number of possible journeys in the VD subtask was twice that of the other subtasks. Thus, to increase the sample size for the VD subtask for analysis, and to clearly distinguish the behaviorally similar SA and DA subtasks, 10 laps of the VD subtask were interpolated between the SA and DA subtasks. The rats achieved a 95% correct decision rating from the beginning of the continuous task.
 
-## Spike sorting
+### Spike sorting
 
 Spike sorting was performed offline using an automatic spike sorting software program with KlustaKwik (Harris et al., 2000) and FastICA (Hyvarinen, 1999) called ‘ICSort', which is a custom-made program using Matlab and the C++ programming language. ICSort completed two steps: clustering and separation. Initially, in the clustering step, ICSort automatically sorted the first, second and third principal components' feature vectors of all the extracted spikes in the high-dimensional clustering space using KlustaKwik. Then, the extracted spike waveforms in each sorted cluster were concatenated. Next, in the separation step, ICSort used FastICA to find spatial filters to separate the spike waveforms into spatially fixed and distinct, maximally independent components (ICs). To determine which ICs were indicative of neuronal activity, spikes of >50 μV were extracted from each IC and checked to determine whether there was a clear refractory period in the inter-spike interval (ISI) histogram. Finally, the ICSort aggregated these distributed ICs into single units based on each ICA basis vector, which represents the relative distance between the source of the IC and the tip of the electrode. This approach has been previously described in detail (Takahashi et al., 2003a, 2003b; Takahashi and Sakurai, 2007, 2009a, 2009b).
 
-## Place maps
+### Place maps
 
-The spatial firing rate distributions (‘place fields') for each cell were constructed in the standard manner by summing the total number of spikes that occurred in a given location bin (5 cm by 5 cm), dividing by the amount of time that the rat spent in that location, and smoothing with a Gaussian centered on each bin (Leutgeb et al., 2005). The firing rate at a point, x, was calculated as:f(x)=∑i=1nw(si−xh)/∫0Tw(y(t)−xh)dt,where n is the number of spikes, si the position of the i-th spike, y(t) the position of the rat at time t, and (0, T) the period of the recording. The kernel function, w, was a Gaussian of h = 5 cm width. Positions more than 5 cm away from the tracked path were regarded as unvisited.
+The spatial firing rate distributions (‘place fields') for each cell were constructed in the standard manner by summing the total number of spikes that occurred in a given location bin (5 cm by 5 cm), dividing by the amount of time that the rat spent in that location, and smoothing with a Gaussian centered on each bin (Leutgeb et al., 2005). The firing rate at a point, x, was calculated as:
 
-## Cell identification and recording periods
+$$
+f(x)=\sumi=1nw(\frac{s_{i}−x}{h})/\int0Tw(\frac{y(t)−x}{h})dt,
+$$
+
+where n is the number of spikes, si the position of the i-th spike, y(t) the position of the rat at time t, and (0, T) the period of the recording. The kernel function, w, was a Gaussian of h = 5 cm width. Positions more than 5 cm away from the tracked path were regarded as unvisited.
+
+### Cell identification and recording periods
 
 After spike sorting, putative pyramidal cells were distinguished from putative fast spiking interneurons by the spike width (0.4 ms) and the average firing rate (5 Hz). The low rate cells (<0.1 Hz) were excluded. Only cells identified as pyramidal were used in the analyses outlined below.
 
 It is well known that during immobility periods, including delay periods, hippocampal activity is not place-specific (McNaughton et al., 1983; Pastalkova et al., 2008). Thus, spikes during immobility periods in the maze were excluded.
 
-## Spatial information
+### Spatial information
 
-The spatial information was calculated as the number of bits per spike according to the formula (Skaggs et al., 1993):Spatial Information=∑iPi(Ri/R)log2(Ri/R),where i indexes over the position bins in the trial type, Pi is the probability that the rat was in bin i, Ri the mean firing rate in bin i, and R the overall mean firing rate over the trial type. More spatially specific firing leads to a larger value for this measurement.
+The spatial information was calculated as the number of bits per spike according to the formula (Skaggs et al., 1993):
 
-## Statistical comparison of firing rates using ANCOVA
+$$
+Spatial Information=\sumiP_{i}(R_{i}/R)log_{2}(R_{i}/R),
+$$
+
+where i indexes over the position bins in the trial type, Pi is the probability that the rat was in bin i, Ri the mean firing rate in bin i, and R the overall mean firing rate over the trial type. More spatially specific firing leads to a larger value for this measurement.
+
+### Statistical comparison of firing rates using ANCOVA
 
 To analyze the activity of cells in the central stem of the maze, the central stem was divided into spatial bins of equal length (approximately 0.35 cm). The following parameters were calculated for each traversal through each of the bins: (1) firing rate was calculated as the spike count in the bin divided by the time spent in the bin, and convolved with the Gaussian (SD = 5 cm); (2) running speed was measured as the time to traverse the constant length bin; (3) head direction was calculated as the mean of the animal's head directions (in degrees) within the bin; (4) lateral position was represented by the mean of the x coordinates of the rat's head within the bin. For each cell, a one-way ANCOVA was performed between different journeys within a given subtask or between different task-demands within a journey as independent (fixed) variables, firing rate as the dependent measure, and with running speed, head direction and lateral position as covariates (R version 2.15.2; The R Project for Statistical Computing, Vienna, Austria).
 
-## Spatial similarity
+### Spatial similarity
 
 The spatial similarity of the place fields between two trial types or repeated exposures was calculated using the spatial correlation between the maps (Leutgeb et al., 2005). The region of interest (ROI) is defined along a common running route (i.e., the central stem; Figure 4A) between the trial types or sessions.
 
-## Rate similarity
+### Rate similarity
 
 Changes in the firing rates between two trial types were expressed by calculating a modified difference/sum score (Leutgeb et al., 2005). The score for a pair of trial types or repeated exposures was obtained by calculating the unsigned difference between the rates in the two trial types or repeated exposures and dividing the difference by the sum of the two rates. To maintain consistency across spatial similarity, the rate similarity was obtained by subtracting the score from one. The possible scores ranged from an asymptotic value of 0–1. The ROI is defined in the same way as spatial similarity.
 
-## Neuronal trajectory analysis
+### Neuronal trajectory analysis
 
 The dynamics of the neuronal ensemble activity were analyzed as a trajectory through a state space (neuronal trajectory; Figure 5) (Briggman et al., 2005; Mazor and Laurent, 2005; Harvey et al., 2012). Initially, the path of the rat was linearlized for each journey by projecting the actual trajectory followed by the rat on that lap onto a user-defined idealized path using nearest neighbor Delaunay triangulation. Spatial bins had a resolution of approximately 0.35 cm. At each location on the linearized path, the spike count that convolved with the Gaussian (SD = 5 cm) of the ensemble containing n simultaneously monitored cells was defined as a point in an n-dimensional space, with each dimension representing the activity of a single neuron. Since the neuronal trajectory is in n-dimensional space, to visualize the neuronal trajectory in three-dimensional space, principal component analysis (PCA) was used as a dimension-reduction technique. The data were organized into m locations by an n-cell data set.
 
 The distances between the trajectories were measured as Euclidian distances between the corresponding locations. The classification was performed for individual laps based on the distances to the mean lap trajectories. If the distance to the mean target trajectory was less than the distance to the other mean trajectories, the location for that lap was classified as the targeted choice. Classification accuracy was calculated at each location by averaging across laps for the individual trial types. In all of the distance classifications, the mean trajectories were calculated excluding the test trajectory (i.e., leave-one-out cross validation). In Figure 8, the classification accuracy was measured for each rat based on the most frequently classified choices at the central stem of the maze. The target cells were all simultaneously monitored place cells in each rat. In Figure 9, the classification accuracy for generalization was calculated based on the most frequently classified choices at the central stem of the maze; the combination of target cells for the classification were randomly chosen 1000 times. For control conditions, shuffling was performed by randomizing the sequence of laps 1000 times.
 
-## Behavior analysis
+### Behavior analysis
 
 The rats could make a decision as soon as the visual cue was detected. However, the exact point where the rats mentally detect the visual cue cannot be estimated because measuring the awareness of the visual cue for rats is difficult to perform. Instead, the timing of the behavioral output was estimated based on the location of turn onset. The turn onset was defined as the last location when the rat was in the central stem or the upper junction of the maze (i.e., DP in Figure 1A) and when the angular velocity was below a threshold value (0.12 rev/s) (Harvey et al., 2012) (Figure 1C). These locations of turn onset were considered the signature of the rats' behavioral decision in the analyses.
 
-## Statistical analysis
+### Statistical analysis
 
 The spatial and rate similarities, behavior analysis and neuronal trajectory analysis were performed using custom-made programs based on Matlab functions (Matlab 7.14; MathWorks, Natic, MA). All comparisons for the spatial and rate similarities were completed using the Wilcoxon rank sum test. The statistical test for classifier accuracy was performed using the binomial test. The statistical ANCOVA comparison was performed using Matlab functions in conjunction with R (R version 2.15.2; The R Project for Statistical Computing).
 
-## Histology
+### Histology
 
 After the task was performed, the rats were sacrificed by pentobarbital sodium overdose and perfused with formalin. The brains were cut coronally at 30 μm and stained with cresyl violet. Each section through the relevant part of the hippocampus was retained for analysis. All dodecatrodes were identified and the tip of each electrode was found by comparing it with the adjacent sections. The recordings from a given dodecatrode were included in the data analysis if its deepest position was under the CA1 pyramidal cell layer.

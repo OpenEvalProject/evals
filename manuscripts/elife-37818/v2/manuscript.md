@@ -16,13 +16,21 @@
 
 ## Abstract
 
-10.7554/eLife.37818.001 Poly(ADP-ribose) polymerase 1 (PARP1) is both a first responder to DNA damage and a chromatin architectural protein. How PARP1 rapidly finds DNA damage sites in the context of a nucleus filled with undamaged DNA, to which it also binds, is an unresolved question. Here, we show that PARP1 association with DNA is diffusion-limited, and release of PARP1 from DNA is promoted by binding of an additional DNA molecule that facilitates a ‘monkey bar’ mechanism, also known as intersegment transfer. The WGR-domain of PARP1 is essential to this mechanism, and a point mutation (W589A) recapitulates the altered kinetics of the domain deletion. Demonstrating the physiological importance of the monkey bar mechanism for PARP1 function, the W589A mutant accumulates at sites of DNA damage more slowly following laser micro-irradiation than wild-type PARP1. Clinically relevant inhibitors of PARP1 did not alter the rate or mechanism of the release of PARP1 from DNA.
+Poly(ADP-ribose) polymerase 1 (PARP1) is both a first responder to DNA damage and a chromatin architectural protein. How PARP1 rapidly finds DNA damage sites in the context of a nucleus filled with undamaged DNA, to which it also binds, is an unresolved question. Here, we show that PARP1 association with DNA is diffusion-limited, and release of PARP1 from DNA is promoted by binding of an additional DNA molecule that facilitates a ‘monkey bar’ mechanism, also known as intersegment transfer. The WGR-domain of PARP1 is essential to this mechanism, and a point mutation (W589A) recapitulates the altered kinetics of the domain deletion. Demonstrating the physiological importance of the monkey bar mechanism for PARP1 function, the W589A mutant accumulates at sites of DNA damage more slowly following laser micro-irradiation than wild-type PARP1. Clinically relevant inhibitors of PARP1 did not alter the rate or mechanism of the release of PARP1 from DNA.
 
 ## Introduction
 
 Poly(ADP-ribose) polymerase 1 (PARP1) serves as a first responder to DNA damage and is the founding member and most abundant representative of the large family of diphtheria toxin-like ADP-ribosyltransferases (ARTDs) (Bai, 2015; Bock and Chang, 2016; Beck et al., 2014; Daniels et al., 2015; De Vos et al., 2012; Mashimo et al., 2014; Morales et al., 2014). Binding to either single or double-strand DNA breaks (SSBs or DSBs) enzymatically activates PARP1 to use NAD+ in polymerizing long chains of poly(ADP)-ribose (PAR) onto itself and other nuclear acceptor proteins such as histones and DNA repair proteins. These PAR chains then recruit the appropriate DNA repair machinery containing PAR-binding motifs (Karlberg et al., 2013; Teloni and Altmeyer, 2016). PARP1 is of special interest because it is a validated target for cancer therapy (Tangutoori et al., 2015; Liu et al., 2014). Most notably, olaparib and rucaparib are in clinical use for treatment of ovarian and/or breast cancer in BRCA1/2 negative patients, and there are many on-going phase III clinical trials for inhibitors of PARPs either as monotherapy or in combination with chemo- or radiotherapy.
 
 Overall, the domain structures of the 16 members of the ARTD family are quite diverse, but they all share a common catalytic core domain (~40 kDa) (Barkauskaite et al., 2015). Clinically relevant inhibitors of PARP1 bind in the catalytic domain. The N-terminal region of PARP1 contains five additional domains; three Zn-finger domains, an automodification domain that contains a BRCT-fold, and a WGR domain (Figure 1A). Seminal work from the Pascal laboratory has provided a molecular understanding of how Zn1, Zn2, Zn3, and the WGR domain collaborate to recognize DNA strand breaks in a structure-specific and sequence-independent manner, and subsequently activate the catalytic activity of PARP1. Zn1 and Zn2 separately (Langelier et al., 2011a), and together in the context of an SSB (Eustermann et al., 2015), bind one DNA end each using two points of contact, termed the phosphate backbone grip and the base stacking loop. In the context of a DSB, this grip-loop interaction mode is maintained by Zn1, while the Zn3 and WGR domains make additional contacts to the DNA (Figure 1B) (Langelier et al., 2012). Importantly, stepwise assembly of the different domains of PARP1 on DNA leads to the destabilization of the helical subdomain (HD) of the catalytic domain, which results in activation of its ADP-ribosyl transferase activity (Eustermann et al., 2015; Langelier et al., 2018; Dawicki-McKenna et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the domains of PARP1; (B) DNA-binding domains (Zn1, green, Zn3 gray, and WGR, blue) of PARP1 engaging a DNA DSB (red). Residues R34 and F44 of the phosphate backbone grip and the base stacking loop in the Zn1 domain are shown in yellow and W589 in the WGR domain is shown in light blue. Coordinates were taken from 1dqy.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each construct was also assayed for activity in the presence (+) of NAD+ (200 µM) and one equivalent of p18mer DNA. Higher molecular weight smears are seen for WT and ΔZn2, indicating auto-PARylation.
 
 In cells, PARP1 is known to contribute to many types of DNA repair mechanisms, including base excision repair, homologous recombination, nucleotide excision repair, and alternative non-homologous end-joining (de Murcia et al., 1997). In vitro, PARP1 is activated by a wide variety of DNA damage models including nicks, gaps, blunt ends, 5’- or 3’- extensions, all with or without a 5’-phosphate (Langelier et al., 2014). There is now clear evidence from multiple laboratories that PARP1 also binds tightly to undamaged DNA. For example, the Kraus laboratory has shown that PARP1 binds to and condenses intact chromatin, represses Pol II-dependent transcription, and is activated for auto-PARylation (Kim et al., 2004). We have previously shown that PARP1 serves as a chromatin architectural protein and interacts tightly (Kd ~nM) with and is activated by various nucleosome constructs (Clark et al., 2012; Muthurajan et al., 2014). Additionally, atomic force microscopy has shown that PARP1 binds not only to DNA ends or specific nicks, but also has significant affinity for undamaged DNA (Sukhanova et al., 2016). Most recently, single molecule tightrope assays have demonstrated that PARP1 interacts with and moves along undamaged DNA (Liu et al., 2017).
 
@@ -34,13 +42,120 @@ Here, we report on the kinetics of association and dissociation of PARP1 with DN
 
 ## Results
 
-## Association of PARP1 with DNA is extremely fast
+### Association of PARP1 with DNA is extremely fast
 
 We began our investigations by measuring the rate of association of PARP1 with DNA. Varying concentrations of PARP1 (60–250 nM) were mixed in a stopped-flow apparatus with fixed concentrations (30 nM) of a fluorescently labeled model of a double-strand break with a 5’-phosphate (p18mer*). Addition of protein results in an increase in fluorescence anisotropy that is not observed by addition of buffer alone (Figure 2A). The data at all concentrations of PARP1 could be fitted with a single exponential to yield kobs with very good residuals (Figure 2A). Under idealized experimental conditions wherein the concentration of PARP1 greatly exceeds the concentration of p18mer*, one would expect a replot of kobs vs. the concentration of PARP1 to yield a straight line, as was indeed observed here (Figure 2A, inset). The slope of such a line equals the apparent second order rate constant of association, whereas the y-intercept equals the first-order rate constant of dissociation. To analyze the data more rigorously, we used Kintek Explorer, a powerful fitting program that allows for global model-dependent fitting that does not require adherence to limiting conditions (Figure 2B). Our analysis yields a k1 of 3.1 nM−1s−1 (Scheme 1, Table 1), which is significantly greater than previously reported for PARP1 associating with DNA as measured using surface plasmon resonance (Jorgensen et al., 2009). The rate of dissociation (k-1) could not be determined from this experiment since no significant dissociation occurs over the 25 ms time course of the experimental observation. Using global fitting, we could derive an upper bound for k-1 of 10 s−1. Thus, the true equilibrium dissociation constant (KD) of a double-strand break under these conditions is <3 nM (Figure 4—figure supplement 2), lower than the previously reported KDs of 31 nM (Clark et al., 2012), 14 nM (Langelier et al., 2010), and 97 nM (Langelier et al., 2018) (see Discussion).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative measurement of PARP1 association with DNA as monitored by fluorescence anisotropy. Shown are the data in the absence of PARP1 (blue) and in the presence of 83 nM PARP1 (red). The black line shows a first-order exponential fit to the data and the residuals (r) from this fit are shown above. The inset shows a replot of kobs vs. varying concentrations of PARP1. (B) Global fitting of three representative concentrations of PARP1 using the mechanism in Scheme 1: 50 nM in blue, 83 nM in green and 133 nM in red. Residuals (r) for the three concentrations are shown in the corresponding colors above.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Global fits of the kinetic model in Scheme 1 for three representative protein concentrations: 42 nM in blue, 72 nM in green, 120 nM in red. Residuals for the three concentrations are shown overlaid in the corresponding colors above.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Global fits of the kinetic model in Scheme 1 for three representative protein concentrations: 35 nM in blue, 52 nM in green, 95 nM in red. Residuals for the three concentrations are shown overlaid in the corresponding colors above.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Global fits of the kinetic model in Scheme 1 for three representative protein concentrations 50 nM in blue, 83 nM in green, 133 nM in red. Residuals for the three concentrations are shown overlaid in the corresponding colors above.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Global fits of the kinetic model in Scheme 1 for three representative protein concentrations: 37 nM in blue, 74 nM in green, 129 nM in red. Residuals for the three concentrations are shown overlaid in the corresponding colors above.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** A global fit of the kinetic model in Scheme 1 to three representative protein concentrations is shown (38 nM in blue, 51 nM in green, and 63 nM in red).
+
 ![Scheme 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig9-v2.jpg)
 
-## Dissociation of PARP1 from DNA requires binding of a second DNA molecule
+**Table 1.**
+ Kinetic parameters for DNA association and dissociationAll values (mean and standard deviation) were derived from global fitting in Kintek Explorer of data from at least three independent experiments performed on different days and using at least two independent preparations of protein. All k1 rate constants were derived using the kinetic model in Scheme 1. All other rate constants came from using the kinetic model in Scheme 3, except for the k-1 values for ΔWGR and W589A, which were derived using Scheme 2. *The value of k2 assumes the full range of 5–450 possible binding sites per 4.5 kb plasmid (see Results).Table 1–source data 1.Kinetic parameters for DNA association and dissociation
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>k1 (nM−1s−1)</th>
+      <th>k-1 (s−1)</th>
+      <th>k2 (nM−1s−1)</th>
+      <th>k-2 (s−1)</th>
+      <th>k3 (s−1)</th>
+      <th>k-3 (nM−1s−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>3.1 ± 0.2</td>
+      <td>&lt;10</td>
+      <td>0.043 ± 0.019</td>
+      <td>102 ± 22</td>
+      <td>9.7 ± 0.8</td>
+      <td>0.013 ± 0.002</td>
+    </tr>
+    <tr>
+      <td>ΔZn1</td>
+      <td>3.7 ± 0.4</td>
+      <td>&lt;10</td>
+      <td>0.018 ± 0.012</td>
+      <td>97 ± 19</td>
+      <td>21 ± 5</td>
+      <td>0.027 ± 0.009</td>
+    </tr>
+    <tr>
+      <td>ΔZn2</td>
+      <td>4.0 ± 1.3</td>
+      <td>&lt;10</td>
+      <td>0.073 ± 0.015</td>
+      <td>145 ± 66</td>
+      <td>15 ± 4</td>
+      <td>0.023 ± 0.007</td>
+    </tr>
+    <tr>
+      <td>ΔZn3</td>
+      <td>5.5 ± 0.3</td>
+      <td>&lt;10</td>
+      <td>0.034 ± 0.013</td>
+      <td>76 ± 66</td>
+      <td>19 ± 7</td>
+      <td>0.050 ± 0.016</td>
+    </tr>
+    <tr>
+      <td>ΔWGR</td>
+      <td>2.4 ± 1.1</td>
+      <td>18.7 ± 2.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>W589A</td>
+      <td>4.2 ± 0.5</td>
+      <td>20.2 ± 2.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WT (with intact plasmid)</td>
+      <td></td>
+      <td></td>
+      <td>0.041–3.7</td>
+      <td>161 ± 8</td>
+      <td>9 ± 3</td>
+      <td>0.032 ± 0.006</td>
+    </tr>
+  </tbody>
+</table>
+
+### Dissociation of PARP1 from DNA requires binding of a second DNA molecule
 
 Because we were unable to determine the rate of DNA dissociation from PARP1 in the previous experiment, we designed an experiment to explicitly measure this rate using competition. Here, we pre-form a complex between PARP1 and fluorescently labeled DNA and use an excess of unlabeled DNA to compete away the labeled DNA and prevent its re-association with PARP1. We began these investigations by first performing a label-swap experiment to ensure that unlabeled p18mer behaves similarly to fluorescein labeled p18mer*. Since the experimental read-out is based on the change in fluorescence anisotropy of p18mer*, we used a fixed and limiting concentration of total labeled DNA such that no excess p18mer* is present. PARP1 (37 nM), pre-bound to either p18mer or p18mer* (25 nM) was mixed with 25 nM p18mer* or p18mer (respectively) in a stopped-flow apparatus. Dissociation of p18mer or p18mer* (followed by binding of the competitor) was monitored by an increase or decrease in fluorescence anisotropy, respectively (Figure 3—figure supplement 1). The similarity of these two experiments is best visualized by plotting the sum of the signal to generate a flat line equal to the probe concentration (25 nM), a pseudo-residual indicating that p18mer and p18mer* are kinetically indistinguishable in our assay.
 
@@ -48,13 +163,45 @@ In order to probe the mechanism of DNA dissociation from PARP1, we next varied t
 
 ![Scheme 2.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig10-v2.jpg)
 
+![Figure 3.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig3-v2.jpg)
+
+**Figure 3.:** Shown are the data in the absence of competitor DNA (in blue) and in the presence of 2.2 µM (green) and 4 µM DNA (red). The black line shows a first-order exponential fit to the data and the residuals from these fits are shown in the corresponding colors above. The inset shows a replot of kobs vs. varying concentrations of competitor DNA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The pseudo-residuals generated by addition of the two signals are centered at the total concentration of the probe DNA (25 nM).
+
 The simplest model to explain active participation of a competitor DNA in the dissociation of an already bound DNA is formation of a ternary complex wherein the competing DNA binds to PARP1 prior to the dissociation of the pre-bound DNA (Scheme 3). This model consists of four rate constants: k2, (formation of the ternary complex), k-2 (release of the competing DNA to regenerate the pre-bound complex), k3 (release of the pre-bound DNA to generate PARP1 only bound to the competing DNA), and k-3 (re-formation of the ternary complex). Experimentally, both the starting pre-bound complex and the ternary complex are assigned a high anisotropy, whereas the final complex bound only to competing, unlabeled DNA is assigned a low anisotropy. In order to best constrain the four rate constants required to describe Scheme 3, we used a broader range of competing DNA concentrations (50 nM – 4000 nM). Also, each concentration series was independently determined and fitted using Kintek Explorer at least three times. Representative fits of this model to the data are shown in Figure 4, and the residuals indicate very good agreement between the data and this model, even at low concentrations of competitor DNA where kobs does not fit to a simple exponential and the apparent extent of exchange is significantly lower than at high concentrations. The aggregated rate constants are shown in Table 1 and the derived dissociation constants are shown in Figure 4—figure supplement 1. The quality of the fits with the kinetic model in Scheme 3 provides strong support for the requisite formation of a ternary complex in the dissociation of DNA from PARP1.
 
 ![Scheme 3.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig11-v2.jpg)
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig4-v2.jpg)
+
+**Figure 4.:** Global fitting of six representative concentrations of competitor p18mer DNA using the mechanism in Scheme 3: 76 nM (light green), 149 nM (blue), 225 nM (red), 398 nM (violet), 1 µM (dark green), and 4 µM (brown). Residuals for the seven concentrations are shown overlaid in the corresponding colors above.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** All values (mean and standard deviation) were derived from the kinetic parameters in Table 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Global fitting of six representative concentrations of competitor DNA using the mechanism in Scheme 2: 76 nM (light green), 149 nM (blue), 225 nM (red), 398 nM (violet), 1 µM (dark green), and 4 µM (brown). Residuals for the seven concentrations are shown overlaid in the corresponding colors above.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Global fits of five representative concentrations of competitor DNA are shown: 0.15 µM (blue), 0.4 µM (light green), 1 µM (violet), 2 µM (dark green), and 4 µM (red) to the kinetic mechanism in Scheme 3. Residuals for the five concentrations are shown overlaid in the corresponding colors above each plot.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Global fits of five representative concentrations of competitor DNA are shown: 0.15 µM (blue), 0.4 µM (light green), 1 µM (violet), 2 µM (dark green), and 4 µM (red) to the kinetic mechanism in Scheme 3. Residuals for the five concentrations are shown overlaid in the corresponding colors above each plot.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Global fits of five representative concentrations of competitor DNA are shown: 0.15 µM (blue), 0.4 µM (light green), 1 µM (violet), 2 µM (dark green), and 4 µM (red) to the kinetic mechanism in Scheme 3. Residuals for the five concentrations are shown overlaid in the corresponding colors above each plot.
+
 The second order rate constant of association for the second DNA molecule is 0.043 nM−1s−1 is almost two orders of magnitude lower than that for association of the first DNA oligomer. The KD for the second DNA strand is 2600 nM, explaining why this complex would be rarely if ever detected under typical experimental conditions performed at nanomolar concentrations of PARP1. Note that the rates of association and dissociation for the second DNA are not ‘symmetrical’ (i.e. k2 ≠ k-3 and k-2 ≠ k3). This asymmetry is most pronounced in the comparison between k-2 and k3: the pre-bound DNA is less likely to dissociate than the second competitor DNA. This observation makes intuitive sense in that the newly incoming DNA presumably binds to a different (weaker) site than the originally more tightly bound DNA. Although there is a lack of symmetry in the rate constants, the kinetically derived dissociation constants (KDs) are quite similar (Figure 4—figure supplement 1).
 
-## The WGR domain provides the binding site for the second DNA molecule
+### The WGR domain provides the binding site for the second DNA molecule
 
 Formation of a ternary complex with two different DNA molecules bound simultaneously requires two separate DNA binding sites. PARP1 has four domains that are known to contribute to DNA binding: Zn1, Zn2, Zn3, and WGR (Figure 1). In order to identify if one or more of these domains selectively contributes to the formation of the ternary complex required for efficient DNA release, we generated constructs of PARP1 lacking each of these individual domains. To facilitate proper assembly of the remaining domains, we inserted a flexible 30 amino acid linker into each deletion, except for the N-terminal deletion of Zn1. All mutants were purified to near homogeneity and were tested for DNA-dependent PARylation activity (Figure 1—figure supplement 1). As previously reported (Langelier et al., 2012), Zn1, Zn3, and WGR are essential for catalytic activity, and thus deletion of these domains disrupts PARylation activity. On the other hand, the deletion of the non-essential Zn2 domain does not affect PARylation activity.
 
@@ -62,21 +209,68 @@ We next measured the rates of association to, and dissociation from p18mer* for 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig5-v2.jpg)
 
-**Figure 5.:** Global fitting of three representative concentrations of competitor p18mer DNA using the mechanism in Scheme 2: 0.4 µM in blue, 1.3 µM in green, and 4 µM in red for (A) ΔWGR and (B) W589A. Residuals for the three concentrations are shown overlaid in the corresponding colors above.10.7554/eLife.37818.040Figure 5—source data 1.10.7554/eLife.37818.041Figure 5—source data 2.
+**Figure 5.:** Global fitting of three representative concentrations of competitor p18mer DNA using the mechanism in Scheme 2: 0.4 µM in blue, 1.3 µM in green, and 4 µM in red for (A) ΔWGR and (B) W589A. Residuals for the three concentrations are shown overlaid in the corresponding colors above.
 
-## Undamaged DNA also facilitates the monkey-bar mechanism
+### Undamaged DNA also facilitates the monkey-bar mechanism
 
 If PARP1 movement around the nucleus is indeed facilitated by the monkey-bar mechanism, then undamaged DNA, not just a short oligomer, should also promote release of pre-bound DNA. To address this question, we used plasmid DNA as a competitor of p18mer* pre-bound to PARP1. Intact plasmid (4.5 kb;~90% supercoiled and 10% nicked) at 5 nM is a surprisingly effective competitor of a pre-formed 25 nM complex, yielding a kobs comparable to what is observed with 1 µM p18mer (Figure 6A). For comparison, 5 nM of p18mer yields no observable release of p18mer (Figure 6A). These results demonstrate that undamaged DNA is an effective trigger for the release of pre-bound p18mer*. To validate these results further, we prepared increasing numbers of free ends (models for DSBs) by restriction digests of the plasmid with different enzymes (Figure 6—figure supplement 1). If DNA ends are the actual triggers for release of pre-bound p18mer*, we would expect the purposeful increase in the numbers of ends (using the same amount of total plasmid) to yield increasing rates of release (see insert to Figure 3). Instead, we observe an unchanged kobs, regardless of whether the concentration of ends is 10 nM (cut once), 20 nM (cut twice), 30 nM (cut thrice), or 240 nM (cut 24 times) (Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig6-v2.jpg)
+
+**Figure 6.:** (A) The observed rate of dissociation triggered by 5 nM of intact or variably cut plasmid is compared to 5 nM and 1 µM p18mer. (B) Global fitting of three representative concentrations of competitor intact plasmid DNA using the mechanism in Scheme 3: 0.7 nM in blue, 2.0 nM in green, and 5.8 µM in red. Residuals for the three concentrations are shown overlaid in the corresponding colors above.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Note the characteristic faster migration of supercoiled DNA compared to singly-cut plasmid. Also note that digest with EcoRV yields the parent plasmid and 12 copies of the 147 bp inserts.
+
 In the hallmark experiment of inter-strand transfer, we demonstrate the concentration-dependence of intact competitor plasmid on the apparent rate of release of p18mer*, wherein the data were analyzed using global fitting in Kintek Explorer. As seen for p18mer, increasing competitor DNA concentrations of plasmid DNA yielded increasing kobs, and the data were best described by global fitting of the kinetic model of Scheme 3 with the formation of a ternary complex (Figure 6B). In fact, the k-2, k3, and k-3 are all similar to the values seen previously using p18mer (Table 1). In order to have 5 nM plasmid release all the 25 nM pre-bound p18mer*, we can assume there are minimally five binding sites per plasmid. At the other extreme, estimating that one can place one PARP1 every 10 bp, there are maximally ~450 binding sites. Thus, one can place limits on the true value for k2 of 0.04–3.7 nM−1s−1. Interestingly, the lower limit of this rate of association is similar to that measured for p18mer (Table 1), suggesting that undamaged DNA is a very effective competitor of damaged DNA. We conclude that intact DNA can also engage the monkey-bar mechanism to facilitate the movement of PARP1 around the nucleus.
 
-## The W589A mutant shows reduced accumulation at sites of DNA damage in cells
+### The W589A mutant shows reduced accumulation at sites of DNA damage in cells
 
 In order to test the physiological relevance of the mechanism of DNA-dependent release of DNA from PARP1 revealed in our in vitro experiments with p18mer and intact plasmid, we compared the rate and magnitude of accumulation of wild-type PARP1 with the W589A mutant at sites of DNA damage in cells. Mouse embryo fibroblasts were transiently transfected with GFP-tagged PARP1 (wild-type or W589A), and DNA damage was induced by laser microirradiation at a designated region of interest (ROI) within the nucleus. Accumulation of PARP1 in the ROI was monitored by confocal microscopy for 1–5 min and the diffusion coefficient (Deff) and magnitude of PARP1 accumulation (F) were derived as recently described (Mahadevan and Rudolph, 2018). As seen in Table 2, the W589A mutant accumulated to a lower level and with a significantly slower diffusion coefficient than wild-type PARP1.
 
-## High affinity inhibitors of PARP1 do not alter the rate or mechanism of DNA dissociation
+**Table 2.**
+ Fluorescence accumulation after DNA damage.The differences in values of Deff and F (mean and standard error of the mean) were determined to be statistically significant using an unpaired t-test with p=0.0094 and p=0.016, respectively. The raw data for all the nuclei are provided as source data.Table 2–source data 1.Fluorescence accumulation after DNA damage; values from the table.Table 2–source data 2.Normalized values for amount of fluorescence detected after DNA damage for each of 28 nuclei of WT PARP1.Table 2–source data 3.Normalized values for amount of fluorescence detected after DNA damage for each of 30 nuclei of W589A mutant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Wild-type</th>
+      <th>W589A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Deff (µm2/s)</td>
+      <td>3.7 ± 0.6</td>
+      <td>2.1 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>44 ± 3</td>
+      <td>33 ± 3</td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>28</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
+### High affinity inhibitors of PARP1 do not alter the rate or mechanism of DNA dissociation
 
 Given the uncertain experimental basis for PARP1 trapping on DNA in cells treated with clinically relevant inhibitors of PARP1 (Shen et al., 2015), we used the rigorous in vitro assay described above to investigate whether these inhibitors lead to a change in the rate or mechanism of DNA dissociation. We monitored the dissociation of p18mer* from PARP1 by fluorescence anisotropy in the presence of four different tight-binding inhibitors of PARP1, using 1 µM competitor p18mer, conditions which lead to the inhibition of auto-PARylation (Figure 7—figure supplement 1). The observed dissociation curves were fit with a first-order exponential and the calculated rates were essentially identical to the DMSO control for olaparib, veliparib, niraparib, and talazoparib (Figure 7A). To ensure that in the presence of inhibitor, DNA dissociation was still dependent on binding of competitor DNA (Scheme 3), we investigated the DNA concentration dependence of p18mer* dissociation in the presence of talazoparib, the most potent PARP1-trapping compound (Shen et al., 2015). The dissociation of p18mer* in the presence of talazoparib (50 nM) was measured at varying concentrations of competitor p18mer (1–4 µM) and a concentration-dependent increase in kobs was observed just as for the control without inhibitor (Figure 7B). We conclude that these inhibitors do not change the rate or mechanism of DNA dissociation from PARP1.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig7-v2.jpg)
+
+**Figure 7.:** (A) Apparent kobs at 1 µM competitor DNA using four different inhibitors (50 nM) (ola = olaparib, veli = veliparib, nira = niraparib, tala = talazoparib). (B) Apparent kobs at 1–4000 nM competitor DNA for PARP1 alone (red) and PARP1 the presence of 50 nM talazoparib (blue).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37818/elife-37818-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Each inhibitor was added at 1 µM final concentration in the presence of 0.5 µM PARP1, 1 µM p18mer, and 500 µM NAD+, and the reactions were allowed to proceed for 5 min at room temperature.
 
 ## Discussion
 
@@ -96,30 +290,145 @@ Finally, our results also provide further insight into the much-discussed topic 
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Mouse embryo fibroblasts (MEF)</td>
+      <td>Dantzer Lab, University of Strasbourg, France</td>
+      <td></td>
+      <td>cells routinely tested negative for Mycoplasma contamination by Cell Culture Facilities</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEGFP-C3-PARP1</td>
+      <td>Dantzer Lab, University of Strasbourg, France</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PARP1</td>
+      <td>Pascal Lab, University of Montreal</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAD+</td>
+      <td>Sigma</td>
+      <td>N1511</td>
+      <td>34 mM stock solution; pH'd to ~ 7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>olaparib</td>
+      <td>Selleck</td>
+      <td>S1060</td>
+      <td>10 mM stock solution in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>veliparib</td>
+      <td>Selleck</td>
+      <td>S1004</td>
+      <td>10 mM stock solution in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>niraparib</td>
+      <td>Selleck</td>
+      <td>S2741</td>
+      <td>10 mM stock solution in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>talazoparib</td>
+      <td>Selleck</td>
+      <td>S7048</td>
+      <td>10 mM stock solution in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JetPei</td>
+      <td>Polyplus Transfection</td>
+      <td>101–40N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>InVitrogen</td>
+      <td>H1399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatLab code</td>
+      <td>doi.org/10.1101/373043</td>
+      <td>DNA Repair Analysis Toolbox.mltbx</td>
+      <td>for conversion of microscope data to text files</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatLab code</td>
+      <td>doi.org/10.1101/373043</td>
+      <td>Bioformats Toolbox (v1.0.4b).mltbx</td>
+      <td>need as an accessory for the DNA Repair Analysis Toolbox</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mathematica code</td>
+      <td>doi.org/10.1101/373043</td>
+      <td></td>
+      <td>for analysis of microscope text files by free diffusion model</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kintek Explorer</td>
+      <td>http://kintek-corp.com/</td>
+      <td></td>
+      <td>for analysis of kinetic data</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 NAD+ was obtained from Sigma. Olaparib, veliparib, niraparib, and talazoparib were obtained from Selleck. DNA oligonucleotides and their complementary strands were obtained from IDT: p18mer: 5’-phosphate-GGGTTGCGGCCGCTTGGG-3’. Labeled oligonucleotides with a 5’-fluorescein dye (*) were also obtained from IDT. Double-stranded fragments were prepared by annealing at 100 µM DNA in 10 mM Tris-HCl (pH 7.5), 100 mM NaCl, and 0.1 mM EDTA. The DNA was heated to 95°C for 5 min and then slowly cooled at 0.1 °C/second to 4°C. Annealing was confirmed by 10% (wt/vol) native TBE-PAGE at 200 V for 30 min. Intact supercoiled plasmid (pUC19-601-147-12copy) is a pUC derivative that was prepared as described (Dyer et al., 2004). Restriction enzymes were obtained from New England Biolabs.
 
-## Cloning of deletion constructs ΔZn1, ΔZn2, ΔZn3, and ΔWGR of PARP1
+### Cloning of deletion constructs ΔZn1, ΔZn2, ΔZn3, and ΔWGR of PARP1
 
 The pET28a vector encoding cDNA of full-length human PARP1 was used to design constructs lacking various domains of PARP1 following the method outlined in Hansson et al (Hansson et al., 2008). Briefly, primer one was designed as a reverse complement of the sequence that corresponds to 20–25 bases upstream of the DNA sequence to be deleted, followed by 20–25 bases corresponding to the downstream sequence. Primer two corresponds to the complementary strand. These primers were used in a PCR reaction to loop out the DNA encoding individual domains of PARP1: ΔZn1 (M1-K97), ΔZn2 (G96-linker-K207), Δn3 (G215-linker-A367), and ΔWGR (N517-linker-L655). After PCR, DpnI digestion was used to degrade the template plasmid and was then transformed to generate clones. Next, a linker DNA sequence encoding amino acids LLA(GS)4GAAL was inserted in place of the deleted domain using partially overlapping primers comprising the entire sequence of the insert followed by 20–25 bases of the downstream sequence. Thereafter, another step of insertion of linker DNA sequence encoding amino acids ALA (GS)5GLAL upstream of the previous insert was performed in a similar manner. The plasmids used to express various domain deletion PARP1 mutants eventually all contained the 30 amino acid linker ALA (GS)5GLALLLA(GS)4GAAL in place of the deleted PARP1 domain. The W589A mutant of PARP1 was generated using QuikChange Mutagenesis (Agilent) following the manufacturer’s instructions. All constructs were verified by DNA sequencing of the entire PARP1 gene.
 
-## Expression and purification of PARP1
+### Expression and purification of PARP1
 
 Wild-type PARP1, all deletion constructs, and the W589A mutant of PARP1 were expressed and purified from E. coli as previously described (Clark et al., 2012; Langelier et al., 2011b) with the minor modification that PARP1 was eluted from the nickel-NTA column using a gradient from 20 to 400 mM imidazole.
 
-## Activity and stability measurements of PARP1
+### Activity and stability measurements of PARP1
 
 PARylation activity was evaluated by incubating 0.5 µM PARP1 with 1 µM p18mer and 500 µM NAD+ in 50 mM Tris- HCl (pH 7.5), 50 mM NaCl, and 1 mM MgCl2, for 5 min. Reactions were quenched in Laemmli buffer, boiled for 5 min, and then resolved on SDS-PAGE (4–20%). PARP1 stability was evaluated using the Protein Thermal Shift Dye Kit from Applied Biosystems and a BioRad C1000 ThermalCycler with a CFX96 RealTime module.
 
-## Stopped-flow fluorescence anisotropy
+### Stopped-flow fluorescence anisotropy
 
 A SX20 Stopped-Flow Spectrometer (Applied Photophysics) was used for measuring fluorescence anisotropy using an excitation wavelength of 485 nm and cut-off filters in the parallel and perpendicular detectors at 515 nm. Association reactions were measured by mixing equal volumes of p18mer* (60 nM) with three to eight different concentrations of PARP1 (60–250 nM) and monitoring the anisotropy at 20°C for 25 ms. All indicated concentrations are after mixing. Although PARP1 can bind to both ends of p18mer* (and p18mer) simultaneously (Langelier et al., 2012), we treat each DNA oligomer as one equivalent (not two) because fluorescence anisotropy detects only the first binding event. Control reactions used for determining background signal lacked PARP1. For measuring dissociation, a pre-formed complex of PARP1 (37 nM) and p18mer* (25 nM) was mixed with 5–15 different concentrations of p18mer (100 nM – 8 µM) and anisotropy was monitored at 20°C for 1–5 s. Control reactions for determining background signal lacked p18mer. All reactions were performed in 50 mM Tris-HCl (pH 7.5), 50 mM NaCl, 1 mM MgCl2, 0.1 mM EDTA, and 0.01% IGEPAL. For all stopped-flow reactions, data were collected in log mode, and 10–12 shots were averaged for each different concentration of reagents. All experiments consisting of series of different concentrations of PARP1 (for association) or of p18mer (for dissociation) were performed on at least three different days with a least two different preparations of protein. Plasmids for dissociation experiments were either untreated or digested at 0.25 mg/mL using 50–1000 U of the appropriate restriction enzyme at 37°C overnight. SacI, DrdI, EarI, and EcoRV were used to generate 1, 2, 3, and 24 cuts, respectively. (Digestion with EcoRV yields the parent plasmid and 12 identical inserts of 147 bp DNA). Dissociation experiments in the presence of inhibitors (50 nM) of PARP1 were compared to DMSO controls (<2 %v/v).
 
-## Data fitting
+### Data fitting
 
 Data were initially analyzed for fitting to single exponential kinetics using the software from Applied Photophysics (ProDataTSV). Global analysis incorporating multiple different concentrations of protein or competing DNA were performed using KinTek Explorer (KinTek Corporation). For association kinetics, control reactions in the absence of protein were used to determine the baseline, and the maximum anisotropy signal (identical at all protein concentrations) was used to convert anisotropy units to concentration values. For dissociation kinetics, control reactions in the absence of DNA were used to determine the baseline, and the maximum anisotropy signal at high concentrations of p18mer (1–4 µM) were used to convert anisotropy units to concentration values. For dissociation kinetics using plasmid, global fitting was performed by assuming 5–450 binding sites/4.5 kb plasmid, which as consequence implies that the value of k2 is subject to this assumption (Scheme 3). However, values for k-2, k3, and k-3 are independent of this assumption. For clarity, only a subset of the concentrations used experimentally are shown in the figures.
 
-## Quantitation of fluorescence accumulation of GFP-PARP1 after laser microirradiation
+### Quantitation of fluorescence accumulation of GFP-PARP1 after laser microirradiation
 
 Mammalian expression plasmid (pEGFP-C3, 250 ng/20,000 cells) encoding full-length GFP-tagged human PARP1 was transfected using jetPEI (Polyplus Transfection) into wild-type mouse embryo fibroblasts (MEFs) cultured in DMEM supplemented with 50 μg/ml of gentamicin and 10% FBS, as previously described (Mahadevan et al, in preparation). Cells were sensitized with Hoechst 33342 (Invitrogen) (10 μg/ml) for 10 min prior to induction of DNA damage using a 405 nm diode laser (100% power for 1 s). Cells were imaged for 1–5 min using excitation at 488 nm within a heated environmental chamber set to 37°C and 5% CO2 (Nikon A1R confocal laser scanning; frame size of 512 × 512). Analysis of the fluorescent images was carried out using custom codes in MATLAB and Mathematica to allow derivation of the diffusion coefficient (Deff) and mobile fraction of PARP1 (F) (Mahadevan and Rudolph, 2018). These codes are provided as DNA Repair Analysis Toolbox.mtlbx (Source code 1), Bioformats Image Toolbox (v1.0.4b).mltbx (Source code 2), and Q-FADD 0.13.nb (Source code 3).

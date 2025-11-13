@@ -14,21 +14,21 @@
 
 ### Affiliations
 
-1. https://ror.org/03njmea73 Department of Molecular Genetics and Microbiology, Duke University Medical Center Durham United States
-2. https://ror.org/029gmnc79 Centre for Functional Genomics, Human Technopole Milan Italy
-3. https://ror.org/029gmnc79 Centre for Computational Biology, Human Technopole Milan Italy
-4. https://ror.org/03njmea73 Department of Cell Biology, Duke University Medical Center Durham United States
-5. https://ror.org/03njmea73 Duke Regeneration Center, Duke University Medical Center Durham United States
-6. https://ror.org/05yndxy10 Department of Cell and Tissue Biology, UCSF San Francisco United States
-7. https://ror.org/032h4fk17 Helen Diller Family Comprehensive Cancer Center San Francisco United States
-8. https://ror.org/03njmea73 Department of Neurobiology, Duke University Medical Center Durham United States
-9. https://ror.org/03njmea73 Duke Institute for Brain Sciences, Duke University Medical Center Durham United States
+1. Department of Molecular Genetics and Microbiology, Duke University Medical Center Durham United States ([ROR:03njmea73](https://ror.org/03njmea73))
+2. Centre for Functional Genomics, Human Technopole Milan Italy ([ROR:029gmnc79](https://ror.org/029gmnc79))
+3. Centre for Computational Biology, Human Technopole Milan Italy ([ROR:029gmnc79](https://ror.org/029gmnc79))
+4. Department of Cell Biology, Duke University Medical Center Durham United States ([ROR:03njmea73](https://ror.org/03njmea73))
+5. Duke Regeneration Center, Duke University Medical Center Durham United States ([ROR:03njmea73](https://ror.org/03njmea73))
+6. Department of Cell and Tissue Biology, UCSF San Francisco United States ([ROR:05yndxy10](https://ror.org/05yndxy10))
+7. Helen Diller Family Comprehensive Cancer Center San Francisco United States ([ROR:032h4fk17](https://ror.org/032h4fk17))
+8. Department of Neurobiology, Duke University Medical Center Durham United States ([ROR:03njmea73](https://ror.org/03njmea73))
+9. Duke Institute for Brain Sciences, Duke University Medical Center Durham United States ([ROR:03njmea73](https://ror.org/03njmea73))
 
 † Corresponding author
 
 ## Abstract
 
-Mutations in the RNA helicase, DDX3X , are a leading cause of Intellectual Disability and present as DDX3X syndrome, a neurodevelopmental disorder associated with cortical malformations and autism. Yet, the cellular and molecular mechanisms by which DDX3X controls cortical development are largely unknown. Here, using a mouse model of Ddx3x loss-of-function we demonstrate that DDX3X directs translational and cell cycle control of neural progenitors, which underlies precise corticogenesis. First, we show brain development is sensitive to Ddx3x dosage; complete Ddx3x loss from neural progenitors causes microcephaly in females, whereas hemizygous males and heterozygous females show reduced neurogenesis without marked microcephaly. In addition, Ddx3x loss is sexually dimorphic, as its paralog, Ddx3y , compensates for Ddx3x in the developing male neocortex. Using live imaging of progenitors, we show that DDX3X promotes neuronal generation by regulating both cell cycle duration and neurogenic divisions. Finally, we use ribosome profiling in vivo to discover the repertoire of translated transcripts in neural progenitors, including those which are DDX3X-dependent and essential for neurogenesis. Our study reveals invaluable new insights into the etiology of DDX3X syndrome, implicating dysregulated progenitor cell cycle dynamics and translation as pathogenic mechanisms.
+Mutations in the RNA helicase, DDX3X, are a leading cause of Intellectual Disability and present as DDX3X syndrome, a neurodevelopmental disorder associated with cortical malformations and autism. Yet, the cellular and molecular mechanisms by which DDX3X controls cortical development are largely unknown. Here, using a mouse model of Ddx3x loss-of-function we demonstrate that DDX3X directs translational and cell cycle control of neural progenitors, which underlies precise corticogenesis. First, we show brain development is sensitive to Ddx3x dosage; complete Ddx3x loss from neural progenitors causes microcephaly in females, whereas hemizygous males and heterozygous females show reduced neurogenesis without marked microcephaly. In addition, Ddx3x loss is sexually dimorphic, as its paralog, Ddx3y, compensates for Ddx3x in the developing male neocortex. Using live imaging of progenitors, we show that DDX3X promotes neuronal generation by regulating both cell cycle duration and neurogenic divisions. Finally, we use ribosome profiling in vivo to discover the repertoire of translated transcripts in neural progenitors, including those which are DDX3X-dependent and essential for neurogenesis. Our study reveals invaluable new insights into the etiology of DDX3X syndrome, implicating dysregulated progenitor cell cycle dynamics and translation as pathogenic mechanisms.
 
 ## Introduction
 
@@ -38,13 +38,21 @@ De novo mutations in the RNA helicase, DDX3X, are one of the leading causes of I
 
 Remarkably, over 100 de novo mutations have been identified in DDX3X syndrome, equally composed of nonsense/frameshift and missense (Johnson-Kerner et al., 1993). The former class likely results in DDX3X haploinsufficiency and/or hypomorphic loss-of-function (LoF) (Figure 1A). Consistent with this, in female mice, Ddx3x germline haploinsufficiency impairs postnatal brain architecture and causes behavioral deficits phenocopying aspects of human DDX3X syndrome (Boitnott et al., 2021). In addition, using transient CRISPR approaches we previously showed that acute Ddx3x depletion in a subset of cells perturbed progenitor and neuron number (Lennox et al., 2020). While these studies highlight the requirement of Ddx3x for cortical development, how it controls neurogenesis at the cellular and molecular level is unclear (Figure 1B). Indeed, the temporal and spatial requirements for DDX3X during cortical development are unknown, as are the dosage and sex-specific requirements.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of DDX3X protein with human missense and nonsense mutations noted, along with helicase/RNA binding domains (red, blue). Nonsense mutations, highlighted in yellow, are predicted to act in a LoF manner. (B) (Left) DDX3X protein bound to an mRNA undergoing translation. (Right) Mouse embryo and corticogenesis showing neuroepithelial cells (light green), radial glial cells (RGCs, orange), intermediate progenitors (IPs, light blue), and neurons (multi-colored); Figure 1B adapted from Figure 1A and B from Hoye and Silver, 2021. This study asks how does Ddx3x LoF impair mouse embryonic cortical development at a cellular and molecular level? (C) Representative sections of smFISH for Ddx3x in control, cHet female, and cKO male and female E12.5 cortices. (D) Quantification of Ddx3x smFISH signal in respective genotypes at E12.5. n=2–3 embryos/condition (E, F) Validation of Ddx3x mRNA knockdown in Tdtomato + cells from female (F) (control, cHet, cKO) and male (M) (control, cKO) brains sorted via FACS at E11.5 (E) and E14.5 (F). n=3–7 embryos/condition. (G) Quantification of Ddx3x levels in Tdtomato + cells from control female and male brains. n=8–10 embryos/condition. (H) Representative whole mount images of control, cHet female, and cKO male and female brains at P0. (I) Quantification of cortical area at P0. n=5–12 embryos/condition. (J) Representative sections of E14.5 brains stained with Sox2 (green), CC3 (magenta) and Hoechst (blue) showing low-magnification on left panel, and high magnification on 4 panels to the right. (K) Quantification of CC3 + cells in E14.5 control and cKO female cortices. n=4–5 embryos/condition. Scale bars, indicated. Error bars, S.D. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. One-way ANOVA with Tukey’s (D, E, F, I), Student’s unpaired, two-tailed t-test (G, K).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative western blot of indicated genotypes probed for DDX3X (top) and β-actin loading control (bottom). Densitometric quantification of bands is shown below each lane. These data also indicate this antibody is specific to DDX3X and does not cross react with DDX3Y. n=2–4 embryos/condition. (B) Temporal quantification of cortical area in control, cHet F, and cKO F at E14.5, E16.5 and P0. n=3–12 embryos/condition. (C) Quantification of CC3 + cells in control and cKO F at E12.5. n=4 embryos/condition. (D) Representative coronal sections from control, cHet F, and cKO F at E12.5 immunostained with CC3 (magenta) and Hoechst. (E) Representative coronal sections from control and cKO F at E12.5 immunostained with CC3 (green), Tuj1 (red) and Hoechst. (F) Representative coronal sections of smiFISH for Ddx3x mRNA in Nex-Cre control and cKO female cortices at P0 showing the ventricular zone (VZ) and cortical plate (CP). (G) Representative whole mount images of Nex-Cre control and cKO male and female brains at P0. (H) Quantification of Nex-Cre cortical area at P0. n=2–9 embryos/condition. (I) Representative coronal sections from Nex-Cre control and cKO F at P0 immunostained with CC3 (green), L1 (magenta) and Hoechst. One-way ANOVA with Tukey’s (B, H), Student’s unpaired, two-tailed t-test (C).
+
 DDX3X is a cytoplasmic RNA helicase that promotes translation of mRNAs with highly structured 5′ UTRs (Calviello et al., 2021; Oh et al., 2016). Thus, an intriguing possibility is that DDX3X controls cortical development by regulating translation. Although DDX3X translational targets have been characterized in immortalized cells (Calviello et al., 2021; Oh et al., 2016), they have not been identified in the developing brain in vivo. This hinders an understanding of how DDX3X molecularly controls brain development. Further, while translational control is essential for corticogenesis (Blair et al., 2017; Hoye and Silver, 2021; Kraushar et al., 2014; Yang et al., 2014; Zahr et al., 2018), there is limited genome-wide assessment of translation in the developing cortex, which restricts our understanding of this important layer of post-transcriptional regulation.
 
 In this study, we use mouse genetics, live imaging of neural progenitors, and ribosome profiling to discover new underlying cellular and molecular mechanisms by which Ddx3x controls cortical development. Our study further reveals essential roles for translational regulation in directing cell fate decisions of the developing brain.
 
 ## Results
 
-## Conditional knockout of Ddx3x in neural progenitors causes microcephaly and profound apoptosis
+### Conditional knockout of Ddx3x in neural progenitors causes microcephaly and profound apoptosis
 
 To understand how Ddx3x LoF impairs cortical development in vivo, we employed a previously generated floxed Ddx3x mouse (Chen et al., 2016a) and crossed it to Emx1-Cre (Gorski et al., 2002). This strategy removes Ddx3x from neural progenitors beginning at E9.5, as well as their progeny. As Ddx3x is X-linked, we generated Emx1-Cre conditional knockout (cKO) females (Ddx3xlox/lox) and males (Ddx3xlox/Y) and conditional heterozygous (cHet) females (Ddx3xlox/+). To verify Ddx3x mRNA levels were reduced, we performed single molecule inexpensive fluorescence in situ hybridization (smiFISH) (Tsanov et al., 2016) at E12.5 (Figure 1C). There were less Ddx3x mRNA puncta in cHet females than in controls and significantly less Ddx3x mRNA puncta in cKO males and females (Figure 1D), demonstrating that Ddx3x levels are reduced.
 
@@ -58,29 +66,45 @@ As microcephaly is often associated with massive cell death, we assessed apoptos
 
 The extensive apoptosis in cKO females could be due to Ddx3x requirements in neural precursors, or alternatively independent requirements in newborn neurons. To understand how Ddx3x loss impacts neuronal survival, we used Neurod6-Cre (herein referred to by alias, Nex-Cre), which is active in post-mitotic excitatory neurons beginning at E12.5, to generate Nex-Cre, cKO females (Nex-Cre;Ddx3xlox/lox) (Goebbels et al., 2006). Ddx3x depletion was validated using smFISH, which showed specific reduction in the cortical plate where neurons reside (Figure 1—figure supplement 1F). Unlike Emx1-Cre cKO females, we did not observe microcephaly or apoptosis in Nex-Cre, cKO females across cortical development (E13.5, E15.5, E17.5 (not shown) and P0; Figure 1—figure supplement 1G-I). This suggests that apoptosis of newborn neurons in the Emx1-Cre model is due to defects in neural precursors. Taken together, these data reinforce the significant role of Ddx3x in neural progenitors.
 
-## Ddx3x loss is sexually dimorphic and DDX3Y can compensate for loss of DDX3X
+### Ddx3x loss is sexually dimorphic and DDX3Y can compensate for loss of DDX3X
 
 While the vast majority of individuals with DDX3X syndrome are females, males can harbor either maternally inherited or de novo DDX3X mutations (Kellaris et al., 2018; Nicola et al., 2019). Thus, as males only have a single copy of Ddx3x, we predicted that loss of Ddx3x in males would phenocopy cKO females. Surprisingly, cKO males did not display profound microcephaly or apoptosis (Figure 1H–K). Notably, males have a Ddx3x paralog, Ddx3y, on the Y chromosome which can compensate for Ddx3x at the translational level in immortalized cells (Venkataramanan et al., 2021). Thus, we postulated that Ddx3y may offset the loss of Ddx3x in the neocortex. We first examined if Ddx3y levels were altered following Ddx3x reduction. In E11.5 Ddx3x cKO male cortices, Ddx3y mRNA levels were significantly elevated 1.4 fold on average (Figure 2A). This suggests there is a transcriptional adaptation of Ddx3y in response to reduced Ddx3x in the embryonic cortex, consistent with findings in Ddx3x cKO hindbrains (Patmore et al., 2020).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig2-v1.jpg)
 
-**Figure 2.:** Ddx3x knockout is sexually dimorphic and Ddx3y phenocopies Ddx3x loss.(A) RT-qPCR quantification of Ddx3x and Ddx3y mRNA levels in FACS-isolated Tdtomato + cells from cKO male E11.5 cortices. n=5–8 embryos/condition. (B) Schematic of Ddx3y CRISPR sgRNA electroporation of E14.5 brain. (C) RT-qPCR quantification of Ddx3y and Ddx3x levels in GFP +FACS-isolated cells from E17.5 male and female mice electroporated with pCAG-GFP and either no sgRNA or Ddx3y sgRNA. n=2–5 embryos/condition. (D) Representative sections of E17.5 male brains electroporated at E14.5 with pCAG-GFP and either no sgRNA or Ddx3y sgRNA and stained with anti-GFP (grey). Dotted lines, ventricular and pial surfaces; brackets delineate equivalently sized bins. (E) Quantification of distribution of GFP + cells. n=3–5 embryos/condition. (F) Same as (D), but sections were stained with anti-GFP (grey), Sox2 (magenta), and Neurod2 (green). (G, H) Quantification of GFP co-localization with Sox2 (G) or Neurod2 (H). n=3–5 embryos/condition. Scale bars, indicated. Error bars, S.D. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Student’s paired, two-tailed t-test (A), Two-way ANOVA with Sidak’s (E), Student’s unpaired, two-tailed t-test (G, H).
+**Figure 2.:** (A) RT-qPCR quantification of Ddx3x and Ddx3y mRNA levels in FACS-isolated Tdtomato + cells from cKO male E11.5 cortices. n=5–8 embryos/condition. (B) Schematic of Ddx3y CRISPR sgRNA electroporation of E14.5 brain. (C) RT-qPCR quantification of Ddx3y and Ddx3x levels in GFP +FACS-isolated cells from E17.5 male and female mice electroporated with pCAG-GFP and either no sgRNA or Ddx3y sgRNA. n=2–5 embryos/condition. (D) Representative sections of E17.5 male brains electroporated at E14.5 with pCAG-GFP and either no sgRNA or Ddx3y sgRNA and stained with anti-GFP (grey). Dotted lines, ventricular and pial surfaces; brackets delineate equivalently sized bins. (E) Quantification of distribution of GFP + cells. n=3–5 embryos/condition. (F) Same as (D), but sections were stained with anti-GFP (grey), Sox2 (magenta), and Neurod2 (green). (G, H) Quantification of GFP co-localization with Sox2 (G) or Neurod2 (H). n=3–5 embryos/condition. Scale bars, indicated. Error bars, S.D. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Student’s paired, two-tailed t-test (A), Two-way ANOVA with Sidak’s (E), Student’s unpaired, two-tailed t-test (G, H).
 
 We next probed the functional redundancy of DDX3X and DDX3Y by investigating requirements for Ddx3y during cortical development. To this end, we performed in utero electroporation (IUE) of E14.5 brains with Ddx3y sgRNA + Cas9 and pCAG-GFP to deplete Ddx3y in males (Figure 2B). Using FACS to isolate GFP+ cells from E17.5 brains, we quantified an average 53% reduction in Ddx3y mRNA levels following Ddx3y CRISPR-based depletion; there was no effect upon Ddx3x mRNA expression (Figure 2C). This indicates that Ddx3y sgRNAs are specific and effective.
 
 We next assessed the requirement of Ddx3y for neurogenesis. In control E17.5 male brains (no sgRNA) GFP-positive cells were distributed fairly evenly across cortical bins (Figure 2D, E). Conversely, Ddx3y knockdown led to the accumulation of GFP+ cells in the VZ, with few GFP+ cells in the CP (Figure 2D, E). This defect could be due to impaired migration and/or altered production of neurons. Quantification of GFP+Sox2+ progenitors and GFP+Neurod2+ neurons showed that Ddx3y depletion led to significantly more progenitors and fewer neurons, as compared to control (Figure 2F–H). Importantly, these findings phenocopy acute Ddx3x knockdown by IUE in the embryonic brain (Lennox et al., 2020). This demonstrates that Ddx3x and Ddx3y have similar requirements for neurogenesis, suggesting that Ddx3y partially compensates for Ddx3x in cKO males. This finding may explain the divergent phenotypes of cKO male and female mice, as well as why some DDX3X mutations in human males are tolerated.
 
-## Ddx3x cHet female and cKO male brains have more progenitors and fewer neurons
+### Ddx3x cHet female and cKO male brains have more progenitors and fewer neurons
 
 Because DDX3X syndrome females are heterozygous and males are hemizygous, we focused our analyses on cHet females and cKO males. Importantly, both genotypes have similar 30–40% reduction in Ddx3x mRNA relative to their sex-matched controls and normal brain size (Figure 1). Moreover, redundant functions of DDX3X and DDX3Y, along with transcriptional upregulation of Ddx3y in cKO males likely equalizes total DDX3 levels in cHet females and cKO males. This provides a rationale for evaluating both sexes to investigate requirements of Ddx3x in cortical development. For simplicity, going forward we collectively refer to the cHet females and cKO males as Ddx3x depleted.
 
 Our data using both Emx1- and Nex-Cre drivers suggests that Ddx3x LoF impairs cortical development by specifically controlling progenitors. We thus quantified progenitors in Emx1-Cre, Ddx3x depleted brains at E13.5 and E14.5, stages at which both RGCs and IPs are abundant (Figure 3; Figure 3—figure supplement 1). Compared to E13.5 control mice, Ddx3x depleted brains showed similar numbers of mature IPs (Tbr2+Sox2-), although RGCs (Sox2+) trended higher (Figure 3—figure supplement 1A–C). However, by E14.5, the number of RGCs and mature IPs was significantly increased in Ddx3x depleted brains (Figure 3A–C). Moreover, there was a concomitant trend towards fewer Tbr2-Sox2- cells following Ddx3x depletion at both E13.5 and E14.5, suggesting potentially fewer neurons (Figure 3—figure supplement 1D, E). These alterations in cell composition did not significantly impact overall cortical thickness at E14.5, although there was a slight trend in reduced medial thickness (Figure 3—figure supplement 1F). These results are overall consistent with the lack of microcephaly in these mice (Figure 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative sections from E14.5 cortices stained with Sox2 (magenta) and Tbr2 (green) (control M and cKO M shown). (B, C) Quantification of density of Sox2+ (RGCs) (B) and Tbr2 +Sox2- (mature IPs) (C) cells relative to all cells (Hoechst) at E14.5. n=7–8 embryos/condition. (D) Representative sections stained with Ctip2 (green), Tbr1 (red), and Lhx2 (green) from P0 control and cHet F/cKO M cortices (control M and cKO M shown). (E–G) Quantification of laminar marker density for Tbr1 (E), Ctip2 (F), and Lhx2 (G) relative to all cells (Hoechst). n=8–10 embryos/condition. Scale bars, indicated. Error bars, S.D. *p<0.05, **p<0.01. Student’s unpaired, two-tailed t-test (B, C, E–G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative coronal sections from control and cHet F/cKO M at E13.5 immunostained with Sox2 (green), Tbr2 (magenta) and Hoechst (control M and cKO M shown). (B–E) Quantification of RGCs (Sox2+) (B), mature IPs (Sox2-,Tbr2+) (C), putative neurons (Sox2-Tbr2-), density relative to Hoechst in control and cHet F/cKO M at E13.5 (D). n=6–9 embryos/condition. Sox2-Tbr2- density relative to Hoechst in control and cHet F/cKO M at E14.5. n=7–8 embryos/condition (E). (F) Quantification of cortical thickness at E14.5 in control and cHet F/cKO M measured medially and laterally (total) or just medially. n=12–17 embryos/condition. (G, H) Quantification of the distribution of Tbr1+ (G) and Ctip2+ (H) cells in control and cHet F/cKO M at P0. Student’s unpaired, two-tailed t-test (B–F), Two-way ANOVA with Sidak’s (G, H).
+
 We next assessed how these cell composition differences ultimately impact excitatory neuron number and laminar organization in P0 brains. The number of Tbr1 (Layer VI) and Ctip2 (Layer V) neurons was significantly reduced in Ddx3x depleted mice, and there was a trend towards reduced Lhx2 (Layer II/III) (P=0.078) (Figure 3D–G). However, laminar distribution was unaffected, suggesting that Ddx3x is largely dispensable for neuronal migration (Figure 3—figure supplement 1G, H). These data indicate that Ddx3x is essential for proper neuron number and suggests it is required across all stages of corticogenesis.
 
-## Ddx3x conditional heterozygous progenitors exhibit a longer cell cycle and undergo less neurogenic divisions
+### Ddx3x conditional heterozygous progenitors exhibit a longer cell cycle and undergo less neurogenic divisions
 
 We next aimed to understand the cell biological mechanisms by which Ddx3x depletion impairs progenitor and neuron number. One possibility is that Ddx3x depleted progenitors re-enter the cell cycle rather than exiting and terminally differentiating. To investigate this, we quantified cell cycle exit in E14.5 Ddx3x depleted embryos, using a 24-hr pulse of the nucleotide analog, EdU, at E13.5. EdU+Ki67- cells have exited the cell cycle and terminally differentiated, whereas EdU+Ki67+ cells are still progressing through the cell cycle. At E14.5, there were significantly more EdU+Ki67+ cells in Ddx3x depleted brains relative to control (Figure 4A–C), indicating that Ddx3x is required for progenitor cell cycle exit.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative sections stained with Ki67 (green) and EdU (magenta) from E14.5 control and cHet F/cKO M mice (control F and cHet F shown) pulsed with EdU at E13.5, and higher magnification insets (A1, A2). (B, C) Quantification of Ki67 +EdU + relative to EdU + cells (B) and all cells (Hoechst, C). n=3–5 embryos/condition. (D, E) Quantification of EdU +Sox2+ (D) and EdU +Sox2-Tbr2- cells (E) relative to all EdU + cells. n=3–5 embryos/condition. (F) Schematic illustrating the semi-cumulative labeling paradigm and cell cycle formulas. Figure 4F has been adapted from Figure 4J from Boyd et al., 2015. (G) Representative medial sections of E14.5 control and cHet F/cKO M brains stained with Ki67 (green), EdU (red) and BrdU (magenta) and pulsed with EdU and BrdU (control M and cKO M shown). Arrows indicate EdU +BrdU cells (i.e: leaving cells). (H) Quantification of cell cycle duration (Tc) in control and cHet F/cKO M. n=5–7 embryos/condition. (I) Quantification of Ts/Tc in control and cHet F/cKO M. n=5–7 embryos/condition. Scale bars, indicated. Error bars, S.D. *p<0.05, **p<0.01. Student’s unpaired, two-tailed t-test (B–E, H, I).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative coronal sections from control and cHet F/cKO M at E14.5 immunostained with Sox2 (green), Tbr2 (red), EdU (magenta) and Hoechst (control F and cHet F shown). (B) Quantification of density of mature IPs (EdU+Sox2-Tbr2+) relative to total EdU in control and cHet F/cKO M at E14.5. n=3–5 embryos/condition. (C) Representative coronal sections from control and cHet F/cKO M at E14.5 immunostained with Sox2 (green), PH3 (magenta), and Hoechst (control M and cKO M shown). (D) Quantification of PH3+Sox2+/Sox2+ in control and cHet F/cKO M. n=8–9 embryos/condition. (E) Quantification of mitosis duration in control and cHet F/cKO M at E14.5 from live imaging analysis. n=>100 cells/condition/trial with three trials. Student’s unpaired, two-tailed t-test (B, D, E).
 
 In order to investigate whether Ddx3x depletion specifically impaired cell cycle exit of RGCs, IPs, or both, we quantified EdU+RGCs and IPs using Sox2 and Tbr2, respectively. We measured significantly more EdU+Sox2+ cells in Ddx3x depleted brains compared to control, indicating reduced cell cycle exit of RGCs (Figure 4D). We did not observe a change in mature IPs (Figure 4—figure supplement 1A, B). Moreover, there was a significant concomitant decrease in EdU+Sox2-Tbr2- cells (putative neurons) in Ddx3x depleted brains relative to control (Figure 4E), suggesting that Ddx3x depletion perturbs generation of neurons. Overall, these data demonstrate that Ddx3x depletion impairs cell cycle exit, predominantly in RGCs, resulting in generation of fewer excitatory neurons.
 
@@ -90,21 +114,33 @@ We next employed clonal live imaging to monitor both progenitor cell cycle durat
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig5-v1.jpg)
 
-**Figure 5.:** Ddx3x-depleted progenitors exhibit prolonged cell division and more proliferative divisions at the expense of neurogenic divisions.(A) Live imaging paradigm for monitoring cell fate. Figure 5A has been adapted from Figure 3A and E from Pilaz et al., 2016. (B) Live imaging DIC snapshots at indicated t=minutes or hours, and fixed images stained with indicated markers. (C) Quantification of re-divisions (black) and 1 division (white) in control and cHet F/cKO M. n=304 (control) and 539 (cHet F/cKO M) total cells. (D) Schematic illustrating an example of a re-division. (E) Quantification of cell fate for P,P divisions (2 Sox2+ RGCs, or 2 Tbr2+ IPs, or 1 Sox2+ RGC and 1 Tbr2+Tuj1- IP); P, N divisions (1 Tuj1+ neuron and either 1 Sox2+ RGC or 1 Tbr2+ IP); N, N divisions (2 Tuj1+ neurons). n=>70 cells/condition/trial with three trials. Scale bars, indicated. Error bars, S.D. *p<0.05, ****p<0.0001. Two-tailed Fisher’s exact test (C), Two-way ANOVA with Sidak’s correction (E).
+**Figure 5.:** (A) Live imaging paradigm for monitoring cell fate. Figure 5A has been adapted from Figure 3A and E from Pilaz et al., 2016. (B) Live imaging DIC snapshots at indicated t=minutes or hours, and fixed images stained with indicated markers. (C) Quantification of re-divisions (black) and 1 division (white) in control and cHet F/cKO M. n=304 (control) and 539 (cHet F/cKO M) total cells. (D) Schematic illustrating an example of a re-division. (E) Quantification of cell fate for P,P divisions (2 Sox2+ RGCs, or 2 Tbr2+ IPs, or 1 Sox2+ RGC and 1 Tbr2+Tuj1- IP); P, N divisions (1 Tuj1+ neuron and either 1 Sox2+ RGC or 1 Tbr2+ IP); N, N divisions (2 Tuj1+ neurons). n=>70 cells/condition/trial with three trials. Scale bars, indicated. Error bars, S.D. *p<0.05, ****p<0.0001. Two-tailed Fisher’s exact test (C), Two-way ANOVA with Sidak’s correction (E).
 
 Because Ddx3x depleted brains have a modest reduction in neurons, we also used live imaging to determine whether Ddx3x loss independently impairs the ability of progenitors to directly produce neurons. Following live imaging, cells were immunostained with Sox2, Tbr2, Tuj1 and Hoechst to discriminate between proliferative, asymmetric neurogenic, and symmetric neurogenic divisions (Figure 5A, B). Ddx3x depleted progenitors underwent significantly more proliferative (P,P) divisions and significantly fewer symmetric neurogenic (N,N) divisions relative to controls (Figure 5E). Asymmetric neurogenic (N,P) divisions were unchanged. Consistent with CC3 staining at E14.5, there were virtually no apoptotic progeny in cHet females/cKO males and controls. These data demonstrate that, in addition to prolonged cell cycle, Ddx3x-deficient progenitors undergo more proliferative divisions and fewer symmetric neurogenic divisions.
 
 Overall, these findings reveal that DDX3X controls neuron generation by acting in progenitors via two mechanisms. First, progenitor cell cycle duration is increased and progenitors are delayed in cell cycle exit, and second, progenitors that do exit the cell cycle tend to produce progenitors rather than neurons. This provides a mechanistic explanation for how Ddx3x controls cortical neuron generation.
 
-## Ribosome profiling uncovers the translatome of E11.5 neural progenitors
+### Ribosome profiling uncovers the translatome of E11.5 neural progenitors
 
 We next sought to understand molecular mechanisms by which Ddx3x alters progenitor fate decisions and impairs neurogenesis. DDX3X is an RNA helicase with canonical requirements for translation initiation, particularly for mRNAs with structured 5′ UTRs (Calviello et al., 2021). Neural progenitors can be transcriptionally primed which is thought to promote generation of specific cell fates (Hoye and Silver, 2021; Li et al., 2020). However, a lack of genome-wide translational data in the developing cortex has limited our understanding of how translational control influences neurogenesis. To investigate translation at the earliest stages of cortical development and to identify which mRNAs require DDX3X for their translation, we performed ribosome profiling (Ribo-seq) (Ingolia, 2016) and RNA-seq using E11.5 microdissected cortices from cKO and control males and females (Figure 6A). To ensure maximal Ddx3x depletion and have the highest sensitivity for identifying DDX3X-dependent translation targets, we focused on cKO females and males. Further, we employed Ribo-seq at E11.5 to avoid confounds due to apoptosis in the cKO females. At this stage, the brain is also largely homogenous composed of mainly neural progenitors. We optimized Ribo-seq on E11.5 cortices (see Materials and methods) and performed extensive quality control to ensure that ribosome-protected fragments (RPFs) were the correct size (Figure 6—figure supplement 1A, B), mapped to the coding region as expected (Figure 6—figure supplement 1C), and were in the correct reading frame (Figure 6—figure supplement 1D; see Materials and methods).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig6-v1.jpg)
+
+**Figure 6.:** (A) Experimental paradigm for Ribo-seq and RNAseq of E11.5 cortices from control and cKO mice. n=3/sex/condition with four embryos pooled per n. (B) TE of transcripts enriched in RGCs, IPs, deep layer neurons (VI-V) and superficial layer neurons (IV-II) relative to all other mRNAs (TPM >10). Birthdates for laminar layers are indicated below. See Supplementary file 3 for exact transcripts. (C) ORFquant analysis of wildtype Ribo-seq data showing identification of annotated ORFs and uORFs in protein-coding and non-coding isoforms. (D) Schematic illustrating how DDX3X-dependent targets were prioritized. (E) Scatter plot of RPFs log2FC versus RNA log2FC for 59 DDX3X-dependent targets with significantly lower TE. Putative Ribo-seq targets selected for validation are highlighted in blue. (F) IGV screenshots illustrating RNAseq reads (gray) and RPFs (Ribo-seq; purple) for Topbp1 in cKO mice relative to control. (G) Representative trace from polysome fractionation of E14.5 cortical lysate. (H–M) RT-qPCR quantification of mRNA levels for Ribo-seq candidates in input samples at E11.5 (H) and at E14.5 (I), and monosome and polysome fractions at E11.5 (J) and E14.5 (K–M). n=5–7/condition (H, J) and 4/condition (I, K–M) with two embryos pooled per n. Error bars, S.D. *p<0.05, **p<0.01. Two-sided Wilcoxon test (B), Student’s unpaired, two-tailed t-test (H–M).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative denaturing urea gel of embryonic cortices treated with RNase I illustrating RPFs (red box). (B–D) RibosomeProfilingQC assessment of deep sequencing of cDNA libraries showing read length distribution (B), percent of reads mapping to CDS and UTRs, etc (C), and reading frame (D). (E) Comparison of RNAseq cpm and Riboseq cpm using all reads from all transcripts from WT data (excluding non-polyA histone and multi-mapping ribosomal genes); Spearman r=0.9676. Five transcripts were omitted when reducing axes for readability. (F) De novo identification of translated ORFs, including number of detected ORFs with their length (in nucleotides) for different ORF categories and annotated biotypes. (G) A novel translated ORF in the lncRNA Rab26os showing the P-sites position colored by frame (middle), and ORF quant-derived annotation (bottom).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) RT-qPCR quantification of mRNA levels for Ribo-seq candidates in input samples, monosome and polysome fractions at E11.5 for Topbp1 (A) and Setd3 (B) and at E14.5 for Hax1 (C). (D) Representative gels of RNA immunoprecipitation of DDX3X translation targets, Rcor2, Setd3, and Topbp1. n=5–7 embryos/condition (A, B), 4 embryos/condition (C), 3 biological replicates (D). Student’s unpaired, two-tailed t-test (A–C).
 
 We first examined translational regulation of wildtype progenitors. Overall, we observed a correlation between RNA and RPF abundance (Spearman r=0.9676) (Figure 6—figure supplement 1E). Using translation efficiency (TE, a metric reflecting translation per mRNA), taking into account both transcript levels (RNA-seq) and ribosome occupancy (Ribo-seq) (see Materials and methods), we assessed whether transcripts are translationally regulated in wildtype E11.5 progenitors. Towards this, we focused on TE of canonical mRNAs known to be enriched in RGCs, IPs, and deep (VI-V) and superficial layer (IV-II) neurons (Di Bella et al., 2021; Telley et al., 2019) (see Supplementary file 3) as compared to all other genes. We expected that RGC-enriched genes would be highly expressed and translated since RGCs are a predominant cell type at E11.5. IPs and deep layer neurons are produced beginning at E11.5 and E12.5, respectively. In contrast, superficial layer neurons are born later (E13.5-E17.5), and thus, we expected lower translation of these genes. To our surprise we found that at E11.5, RGC-, IP-, and deep layer neuron-enriched transcripts all had significantly higher TE than the average transcript expressed at this stage (other genes), consistent with translational upregulation (Figure 6B). Moreover, there was a notable divergence between deep (positive TE) and superficial (negative TE) layer neuron transcripts (Figure 6B), suggesting superficial layer neuron transcripts are translationally repressed. This suggests that in addition to transcriptional priming, early progenitors also use translational priming to direct cell fate. Moreover, these results indicate that observed differences in TE might reflect developmental stepwise translational repression.
 
 Ribo-seq can also reveal the use of upstream open reading frames (uORFs), which frequently cause translational repression of the downstream, canonical ORF (Johnstone et al., 2016). We thus used ORFquant to assess canonical ORFs and uORFs in cortical progenitors (Calviello et al., 2020). This revealed ~14,000 annotated ORFs and ~2500 uORFs, including a prominent uORF in the lissencephaly gene, Pafah1b1 or Lis1 (Figure 6C). We also identified ~1200 ORFs in non-coding RNAs, including a novel ORF in the Rab26os lncRNA (Figure 6C; Figure 6—figure supplement 1F, G). Thus, this rich dataset provides a valuable resource to interrogate the use of uORFs during cortical development and suggests an important mode of gene expression regulation in the developing cortex. Overall, these high-quality Ribo-seq data will enable the generation of novel hypotheses regarding translational control and cortical development.
 
-## DDX3X-dependent translation targets are critical for neurogenesis
+### DDX3X-dependent translation targets are critical for neurogenesis
 
 We then turned to our Ddx3x cKO data to discover DDX3X-dependent translation targets and identified 147 targets that had differential TE (p-adjusted <0.05) (Figure 6D). The low number of DDX3X translation targets is on-par with translational studies of DDX3X in immortalized cells and reinforces that DDX3X is not a general translation factor (Calviello et al., 2021). Virtually all targets (144 of 147) had a lower TE in cKO mice, consistent with DDX3X promoting translation. About half of these TE changes were driven by changes in the input RNA levels while the other half had significantly lower TE with little to no change in the corresponding input RNA. We thus focused on the 59 targets in which the input RNA was <0.5 log2FC, as these are most likely to be bona fide DDX3X translation targets (Figure 6D, E). Rcor2, Setd3, and Topbp1, were amongst those targets showing a general decrease in RPFs along the mRNA, adjusted p<0.05 (Figure 6E, F).
 
@@ -120,19 +156,19 @@ Another DDX3X-dependent target, Setd3, is expressed in the developing cortex (Te
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/78203/elife-78203-fig7-v1.jpg)
 
-**Figure 7.:** Setd3, is required for neurogenesis.(A) RT-qPCR quantification of Setd3 knockdown in N2A cells. n=4/condition with two independent trials. (B) Representative sections of E17.5 brains from mice electroporated at E14.5 with pCAG-GFP and scrambled or Setd3 siRNAs and immunostained with GFP (grey), Sox2 (magenta), Neurod2 (green). (C) Quantification of distribution of GFP-positive cells in 5 even bins of cortex. n=4 embryos/condition. (D, E) Quantification of GFP co-localization with Sox2+ (D) and Neurod2+ (E) cells. n=4 embryos/condition. (F) Schematic model summarizing how loss of DDX3X-dependent translation impairs neurogenesis. Scale bars, indicated. Error bars, S.D. *p<0.05, ****p<0.0001. Student’s unpaired, two-tailed t-test (A, D, E), Two-way ANOVA with Sidak’s correction (C).
+**Figure 7.:** (A) RT-qPCR quantification of Setd3 knockdown in N2A cells. n=4/condition with two independent trials. (B) Representative sections of E17.5 brains from mice electroporated at E14.5 with pCAG-GFP and scrambled or Setd3 siRNAs and immunostained with GFP (grey), Sox2 (magenta), Neurod2 (green). (C) Quantification of distribution of GFP-positive cells in 5 even bins of cortex. n=4 embryos/condition. (D, E) Quantification of GFP co-localization with Sox2+ (D) and Neurod2+ (E) cells. n=4 embryos/condition. (F) Schematic model summarizing how loss of DDX3X-dependent translation impairs neurogenesis. Scale bars, indicated. Error bars, S.D. *p<0.05, ****p<0.0001. Student’s unpaired, two-tailed t-test (A, D, E), Two-way ANOVA with Sidak’s correction (C).
 
 ## Discussion
 
 Mutations in DDX3X are a leading cause of ID, as well as other developmental phenotypes, which are classified as DDX3X syndrome (Beal et al., 2019; Johnson-Kerner et al., 1993; Lennox et al., 2020; Snijders Blok et al., 2015; Wang et al., 2018). Half of the over 100 known DDX3X mutations are nonsense, predicted to act in a LoF manner. Yet, the molecular and cellular mechanisms by which Ddx3x LoF perturbs cortical development have been largely unknown. Here, we leveraged a new genetic model of Ddx3x LoF to discover that DDX3X promotes neuronal generation by regulating the length and fate of progenitor divisions, namely RGCs and IPs. We further use in vivo Ribo-seq to define the repertoire of transcripts whose translation depends upon DDX3X, many of which are critical for neurogenesis. Our results provide invaluable new insights into the underpinnings of DDX3X syndrome and biology, and highlight candidate targets and possible pathways for therapeutic intervention.
 
-## Ddx3x dosage underlies cell fate and sexually dimorphic phenotypes
+### Ddx3x dosage underlies cell fate and sexually dimorphic phenotypes
 
 While the vast majority of DDX3X syndrome individuals are female, an increasing number of male individuals have been identified (Kellaris et al., 2018; Nicola et al., 2019), comprising ~5% of all cases (ddx3x.org). Using our conditional mouse model, we interrogated phenotypic overlap in males and females, as well as the role of the paralog Ddx3y. Complete loss of Ddx3x led to microcephaly in females, but not in hemizygous males, suggesting that brain development is sexually dimorphic. We posit that Ddx3y expression explains why cKO male mice are phenotypically milder than cKO females; we found that Ddx3y loss phenocopies Ddx3x neurogenesis defects. Likewise, in both the hindbrain and hematopoietic system, Ddx3y can also compensate for loss of Ddx3x in vivo (Patmore et al., 2020; Szappanos et al., 2018). The ability of Ddx3y to compensate for Ddx3x loss may be due in part to redundant translational regulation (Venkataramanan et al., 2021), as well as transcriptional adaptation of Ddx3y in response to Ddx3x loss (Figure 2). Taken together these data provide a possible explanation for why males carrying DDX3X mutations are viable (Kellaris et al., 2018; Lennox et al., 2020; Nicola et al., 2019). Because Ddx3x partially escapes XCI in females (Figure 1), we hypothesize that DDX3Y normalizes total DDX3 levels between males and females; this may explain why cHet females and cKO males have comparable phenotypes.
 
 In addition to being sexually dimorphic, we discover that neural cells of the developing cortex are sensitive to Ddx3x knockout, as loss of one versus two copies causes vastly different corticogenesis phenotypes. In the case of cKO females, there is profound apoptosis in progenitors and neurons, whereas cHet females and cKO males have impaired neurogenesis without cell death. This sensitivity of the developing brain to Ddx3x is highly relevant for interpreting the spectrum of mutations annotated as nonsense. For example, there may be nonsense mutations that act as a pure LoF (i.e.: an N-terminal mutation that undergoes NMD) as well as mutations that are hypomorphic (i.e.: a C-terminal mutation that escapes NMD and might have some functional protein activity).
 
-## Ddx3x is required for neural progenitor cell division which underlies cortical abnormalities
+### Ddx3x is required for neural progenitor cell division which underlies cortical abnormalities
 
 We show that DDX3X controls the function of neural progenitors and generation of excitatory neurons throughout cortical development through two key mechanisms. First, Ddx3x depletion increases progenitor cell cycle duration by 1.4-fold. It does so without altering any specific phase, consistent with a study of DDX3X in cancer cells using FUCCI (Heerma van Voss et al., 2018). Additionally, Ddx3x depleted progenitors in vitro underwent fewer re-divisions in a 24-hr period; if this increase in cell cycle duration were sustained over the course of neurogenesis, we predict it would result in overall fewer progenitor divisions, and ultimately fewer neurons (Takahashi et al., 1995). Consistent with this, neurons were modestly reduced across laminar layers at P0 in Ddx3x mutants. Second, Ddx3x controls the balance of proliferative versus neurogenic divisions, resulting in reduced generation of neurons. This is particularly fascinating as it demonstrates that DDX3X functions in progenitors to direct neural fates of daughter progeny. Our Ribo-seq suggests that these cellular mechanisms might be influenced by translational control in progenitors.
 
@@ -142,7 +178,7 @@ Using a conditional mouse model provided distinct advantages to propel our under
 
 We also gained new insights into cell-autonomous Ddx3x requirements in brain development. Using a Nex-Cre cKO mouse model, we found that Ddx3x is largely dispensable in newborn neurons for their migration and survival, indicating that observed neuronal loss largely arises from impairments in neural progenitors. However, Ddx3x does control neurite outgrowth (Chen et al., 2016b) and is a component of neuronal transport granules (Elvira et al., 2006; Kanai et al., 2004), suggesting it could function in mature neurons. DDX3X likely functions in other CNS cell types, as well, as 50% of DDX3X syndrome individuals present with white matter loss (Lennox et al., 2020), which could arise from impaired gliogenesis. Indeed, Perturb-seq of 30 ASD-risk genes found that Ddx3x depletion alters oligodendrocyte gene expression (Jin et al., 2020). Moreover, DDX3X also regulates innate immunity (Szappanos et al., 2018), raising the intriguing idea that Ddx3x could function in microglia to influence cortical development. Thus, roles for Ddx3x in glial cells and mature neurons should be explored further.
 
-## Translation during cortical development and DDX3X-dependent translational control of progenitors
+### Translation during cortical development and DDX3X-dependent translational control of progenitors
 
 In the neurodevelopment field there is a wealth of transcriptomic data, but far less translation/proteomic data for embryonic mouse cortex. Using Ribo-seq, we have generated a valuable new resource for understanding translation at the onset of neurogenesis. To our knowledge, this is one of the first reports to assess wildtype translation using Ribo-seq at the onset of neurogenesis, with exception of a recent pre-print which examined later stages of development (Harnett et al., 2021). scRNAseq studies have revealed that transcripts important for deep and superficial layer neuronal fates are expressed in RGCs Telley et al., 2019; however, it’s generally thought that these are translationally repressed until neurons are born. Intriguingly, our data show that deep layer transcripts have a higher TE than superficial layer transcripts, approaching that of RGCs and IPs. This suggests that there could be translational priming of progenitors, in addition to transcriptional priming. Given the instrumental role that translational factors play in cortical development (Hoye and Silver, 2021; Kraushar et al., 2014; Yang et al., 2014; Zahr et al., 2018), our data thus provides valuable targets which can be functionally tested at neuroepithelial stages and beyond.
 
@@ -152,7 +188,7 @@ We speculate that reduced TE of DDX3X-dependent transcripts collectively contrib
 
 Interestingly, DDX3X-dependent translation targets were shifted from polysomes to monosomes, consistent with reduced TE and a role for DDX3X in translational initiation. However, the basal RNA expression of DDX3X targets was also higher at E14.5 compared to E11.5. This could be explained by developmental differences in DD3X levels. Alternatively, it could suggest that reduced TE of DDX3X-dependent targets leads to a feedback mechanism whereby these mRNAs are transcriptionally upregulated over time. This potential feedback loop is relevant for those pursuing Ribo-seq experiments to consider, as putative targets are typically defined by RPF density changes but not the input RNA (Ingolia, 2016).
 
-## The landscape of DDX3X mutations with divergent phenotypes
+### The landscape of DDX3X mutations with divergent phenotypes
 
 Our work further substantiates the importance of post-transcriptional RNA regulation in cortical development and disease. There is a strong association between mutations in translation regulators and neurodevelopmental disorders (Chen et al., 2019; Hoye and Silver, 2021). As we have shown, investigation of DDX3X and translational regulators can give valuable insights into the etiology of these disorders by discovering networks of neurogenesis regulation including crucial factors such as SETD3.
 
@@ -160,64 +196,683 @@ Our work also provides a mechanistic understanding of how Ddx3x LoF impairs embr
 
 ## Materials and methods
 
-## Mouse husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Ddx3x</td>
+      <td>NA</td>
+      <td>MGI:103064; NCBI Gene: 13,205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Ddx3y</td>
+      <td>NA</td>
+      <td>MGI:1349406; NCBI Gene: 26,900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Rcor2</td>
+      <td>NA</td>
+      <td>MGI:1859854; NCBI Gene: 104,383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Setd3</td>
+      <td>NA</td>
+      <td>MGI:1289184; NCBI Gene: 52,690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Topbp1</td>
+      <td>NA</td>
+      <td>MGI:1920018; NCBI Gene: 235,559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Emx1-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #005628; RRID:IMSR_JAX:005628; MGI:2684610</td>
+      <td>MGI symbol: Emx1 tm1(cre)Krj</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26Ai14</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #007914; RRID:IMSR_JAX:007914</td>
+      <td>MGI symbol: Gt(ROSA)26Sor tm14(CAG-tdTomato)Hze</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Neurod6-Cre (NEX-Cre)</td>
+      <td>PMID:17146780</td>
+      <td>MGI:2668659</td>
+      <td>MGI symbol: Neurod6 tm1(cre)Kan</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ddx3xlox/lox</td>
+      <td>PMID:27179789</td>
+      <td>MGI:5774968</td>
+      <td>MGI symbol: Ddx3x tm1.1Lyou</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ddx3y sgRNAs</td>
+      <td>this paper</td>
+      <td>NCBI gene: 26,900</td>
+      <td>generated with Benchling for depleting Ddx3y; see Figure 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>smFISH probes for Ddx3x</td>
+      <td>this paper</td>
+      <td>NCBI gene: 13,205</td>
+      <td>generated with script from Tsanov et al., 2016 for monitoring Ddx3x RNA; see Figure 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Scrambled siRNAs</td>
+      <td>Qiagen</td>
+      <td>Qiagen:1022076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Setd3 siRNAS</td>
+      <td>Qiagen</td>
+      <td>Qiagen:1027416</td>
+      <td>Gene ID: 52,690</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus, male)</td>
+      <td>Neuro-2a</td>
+      <td>ATCC</td>
+      <td>ATCC:CCL-131; RRID:CVCL_0470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>NEB 5-alpha Competent E. coli (High Efficiency)</td>
+      <td>New England Biolabs</td>
+      <td>NEB:C2987H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus)</td>
+      <td>Rcor2 qPCR primers</td>
+      <td>Harvard PrimerBank; PMID:22086960</td>
+      <td></td>
+      <td>Harvard PrimerBank ID: 154147710 c2; Forward 5'-TGCTTCTGTGGCATAAACACG-3'; Reverse 5'-GGCTGGGAATCACCTTGTCAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus)</td>
+      <td>Setd3 qPCR primers</td>
+      <td>Harvard PrimerBank; PMID:22086960</td>
+      <td></td>
+      <td>Harvard PrimerBank ID: 21312266a1; Forward 5'-AAATCAGGTACTGGGGCTACA-3'; Reverse 5'-GGCCCATTTCATTAGATCAGGGA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus)</td>
+      <td>Topbp1 qPCR primers</td>
+      <td>Harvard PrimerBank; PMID:22086960</td>
+      <td></td>
+      <td>Harvard PrimerBank ID: 118130322 c1; Forward 5'-CAGGATTGTTGGTCCTCAAGTG-3'; Reverse 5'-ACAGGATACAGTTACGTCAGACA-3'</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX2 (rat monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:14-9811-82; RRID:AB_11219471</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab6326</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TUJ1 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Biolegend:801202; RRID:AB_10063408</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CTIP2 (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:AB18465</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TBR2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:AB23345; RRID:AB_778267</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CC3 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling:9661; RRID:AB_2341188</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NEUROD2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:AB104430; RRID:AB_10975628</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling:12,202</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PH3 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore:06–570</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TBR1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology:49,661 S</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DDX3X (rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich:HPA001648; RRID:AB_1078635</td>
+      <td>(IF, 1:500; western, 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:Ab13970; RRID:AB_300798</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-B-actin (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Santa Cruz:sc-47778</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse HRP (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:32430; RRID:AB_1185566</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit HRP (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:A16110; RRID:AB_2534782</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Santa Cruz:sc9996</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor-conjugated secondary antibodies (488, 555, 568, 594, 647)</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-U6-Chimeric_BB-CBh-hSpCas9</td>
+      <td>Addgene</td>
+      <td>AddGene:42230; RRID:Addgene_42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-U6-Chimeric_BB-CBh-hSpCas9+Ddx3y guides</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloned for depletion of Ddx3y; see Figure 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-GFP</td>
+      <td>PMID:32135084</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-GFP-human DDX3X</td>
+      <td>PMID:32135084</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-it EdU AlexaFluor 594 imaging kit</td>
+      <td>Life Technologies</td>
+      <td>Life Technologies:c10339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen RNAeasy kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen:74,034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen miRNA library prep kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen:331,502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboMinus Eukaryote kit v2</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:A15020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Analysis Kit (15 nt)</td>
+      <td>Agilent</td>
+      <td>Agilent:DNF-471</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kapa mRNA HyperPrep kit with mRNA capture</td>
+      <td>KapaBiosystems</td>
+      <td>KapaBiosystems:KR1352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>BioRad</td>
+      <td>BioRad:1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal Sybr Green Supermix</td>
+      <td>BioRad</td>
+      <td>BioRad:1725121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein quantification</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:23,227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:32,106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EdU</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:A10044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BrdU</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma:B5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Calbiochem</td>
+      <td>Sigma:239,764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>PMID:22743772</td>
+      <td></td>
+      <td>v1.52i</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuPATH</td>
+      <td>PMID:29203879</td>
+      <td></td>
+      <td>v0.3.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2</td>
+      <td>PMID:22388286</td>
+      <td></td>
+      <td>v2.4.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>PMID:23104886</td>
+      <td></td>
+      <td>v2.7.9a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RibosomeProfilingQC</td>
+      <td>DOI:10.18129/B9.bioc.ribosomeProfilingQC</td>
+      <td></td>
+      <td>v1.8.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ribo-seQC</td>
+      <td>DOI:10.1101/601468</td>
+      <td></td>
+      <td>v0.99</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>PMID:25516281</td>
+      <td></td>
+      <td>v1.34.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ORFquant</td>
+      <td>PMID:33765284</td>
+      <td></td>
+      <td>v1.02</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td></td>
+      <td>v4.1.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield</td>
+      <td>Vector Labs</td>
+      <td>Vector Labs:H-1000–10</td>
+      <td>See immunoflourescence section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:D1306</td>
+      <td>See FACS section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium iodide stain</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:P3566</td>
+      <td>See FACS section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst stain</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:H3570</td>
+      <td>See immunoflourescence section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Turbo DNase I</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:AM2238</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superase In</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:AM2694</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRIzol</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:15596026</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GlycoBlue</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: AM9515</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PNK enzyme</td>
+      <td>New England Biolabs</td>
+      <td>NEB:M0247S</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>15% acrylamide denaturing urea-gel</td>
+      <td>BioRad</td>
+      <td>BioRad:4566053</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 X sample dye</td>
+      <td>Novex</td>
+      <td>Novex:LC6876</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>dsDNA ladder</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:10488023</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>miRNA ladders</td>
+      <td>New England Biolabs</td>
+      <td>NEB:N2102S</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYBR gold</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:S11494</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SpinX column</td>
+      <td>Corning</td>
+      <td>Corning:CLS8162</td>
+      <td>See RNAseq and ribosome footprinting section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRIzol LS reagent</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:10296010</td>
+      <td>See RNA Immunoprecipitation section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:11668019</td>
+      <td>See RNA Immunoprecipitation section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G-coated Dynabeads</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:0003D</td>
+      <td>See RNA Immunoprecipitation section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GoTaq Green Master Mix</td>
+      <td>Promega</td>
+      <td>Promega:M712</td>
+      <td>See RNA Immunoprecipitation section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1 X RIPA buffer</td>
+      <td>Pierce</td>
+      <td>Pierce:89,900</td>
+      <td>See SDS-PAGE and western blot analysis section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 X sample buffer</td>
+      <td>BioRad</td>
+      <td>BioRad:1610737</td>
+      <td>See SDS-PAGE and western blot analysis section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>protease inhibitors</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma:78,429</td>
+      <td>See SDS-PAGE and western blot anlaysis section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>12% polyacrylamide gel</td>
+      <td>BioRad</td>
+      <td>BioRad:4568046</td>
+      <td>See SDS-PAGE and western blot anlaysis section in methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PVDF membrane</td>
+      <td>BioRad</td>
+      <td>Biorad:1704157</td>
+      <td>See SDS-PAGE and western blot anlaysis section in methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse husbandry
 
 All animal use was approved by the Duke Division of Laboratory Animal Resources and the Institutional Animal Care and Use Committee. The following lines were used and genotyped as described, all on C57BL/6 J background: Emx1-Cre (005628) (Gorski et al., 2002) and Rosa26Ai14 (007914) (Madisen et al., 2010) (Jackson Laboratory); Neurod6-Cre (Nex-Cre) (Goebbels et al., 2006) (gift, Klaus-Nave); Ddx3xlox/lox (Chen et al., 2016a) (gift, Li-Ru You). Plug dates were defined as E0.5 on the morning the plug was identified.
 
-## Statistical methods and rigor
+### Statistical methods and rigor
 
 Exact statistical tests, p-values, and n for each analysis are reported in Supplementary file 1. For each experiment, both male and female mice were used and littermates were used when possible. All analyses were performed by 1 or more blinded investigators.
 
-## Primary cultures and live imaging
+### Primary cultures and live imaging
 
 Primary cortical cultures were derived from E14.5 embryonic dorsal cortices, as described (Mitchell-Dick et al., 2019), but with minor modifications: (1) cortices were trypsinized for 6 min and (2) 150,000 cells were plated on poly-D-lysine-coated glass-bottom 24-well culture plates (MatTek). Images were captured every 10 min and mitosis duration and cell division were identified as previously (Pilaz et al., 2016). Fate determination was performed post-imaging by immunostaining for Tuj1, Sox2, and Tbr2, as described (Mitchell-Dick et al., 2019).
 
-## Plasmids, subcloning, and qRT-PCR analysis
+### Plasmids, subcloning, and qRT-PCR analysis
 
 Ddx3y sgRNAs were designed using Benchling and cloned into the pX330-U6-Chimeric_BB-CBh-hSpCas9 plasmid (AddGene # 42230) as described (http://www.addgene.org/crispr/zhang/). cDNA synthesis and qPCR were performed using the iScript Reverse Transcriptase and the iTaq Universal SYBR Green supermix (BioRad), respectively, per manufacturer’s instructions. The primers for qRT-PCR all had an annealing temperature of 60 °C and relative expression was normalized to β-actin. See Supplementary file 2 for sgRNAs and primers.
 
-## Immunofluorescence
+#### Immunofluorescence
 
 Embryonic brains were fixed and sectioned as previously (Mao et al., 2015). Coronal 20 μm sections from the somatosensory cortex were permeabilized with 1 X PBS/0.25% TritonX-100 and blocked with 5% NGS/PBS for 1 hr at room temperature. Sections were incubated with primary antibodies overnight at 4 °C, and secondary antibodies at room temperature for 1 hr (Alexa Fluor-conjugated, Thermo Fisher, 1:500). EdU staining was performed as previously (Mitchell-Dick et al., 2019). The following primary antibodies were used, rat: anti-SOX2 (Thermo Fisher, 14-9811-82, 1:1000), anti-BrdU (Abcam, ab6326, 1:200); mouse: anti-TUJ1 (Biolegend, 801202, 1:2000), anti-CTIP2 (Abcam, c8035, 1:500); rabbit: anti-TBR2 (Abcam, AB23345, 1:1000), anti-CC3 (Cell Signaling, 9661, 1:250), anti-NEUROD2 (Abcam, AB104430, 1:500), anti-Ki67 (Cell Signaling Technology, 12202, 1:1000), anti-PH3 (Millipore, 06–570, 1:500), anti-TBR1 (Cell Signaling Technology, 49,661 S, 1:1000), anti-Lhx2 (Millipore, ABE1402, 1:500), anti-DDX3X (Sigma Aldrich, HPA001648, 1:500); chicken anti-GFP (Abcam, Ab13970, 1:1000). Slides were mounted with Vectashield (Vector Labs, H-1000–10).
 
-## Imaging and analysis
+### Imaging and analysis
 
 Images were captured using a Zeiss Axio Observer Z.1 equipped with an Apotome for optical sectioning at 10X, 20X, and/or 63X. For each experiment, 2–3 sections were imaged/embryo; images were captured with identical exposures, cropped (200 or 300 μm radial columns), and brightness was equivalently adjusted across all images in Fiji. Cells were either manually (Fiji cell counter) or automatically (QuPath) counted. For QuPath, the following parameters were adjusted: requested pixel size = 0.1 µm, background radius = 5 µm, minimum area = 10 µm2, maximum area = 200 µm2, cell expansion = 2 µm, include cell nucleus and smooth boundaries were unchecked. The threshold was set for each individual channel, but equivalently across all sections (generally between 25 and 100). For binning analysis, 200 or 300 μm wide radial columns were divided into 5 or 10 evenly spaced bins spanning from the ventricular (bin 1) to the pial (bin 5 or 10) surface. Each cell was assigned to a bin to calculate the distribution.
 
-## In utero electroporation
+#### In utero electroporation
 
 Plasmids were delivered to embryonic brains and IUEs were performed as previously (Lennox et al., 2020). Plasmids were used at the following concentrations: pCAG-GFP (1.0 μg/μL), pX330 empty or pX330-Ddx3y Ex2 sgRNA (2.4 μg/μL). Scrambled (Qiagen, 1022076) or Setd3 siRNAs (Qiagen 1027416, Gene ID: 52690) were injected at 2.5 μM.
 
-## EdU and BrdU injections
+#### EdU and BrdU injections
 
 For cell cycle exit, EdU was administered by IP injection at 10 mg/kg to pregnant dams at E13.5 and embryos were harvested exactly 24 hr later. For semi-cumulative labeling, EdU was administered by IP injection at 10 mg/kg at t=0 followed by BrdU (30 mg/kg) at t=1.5 hr. The following calculations were used to derive Tc and Ts: S cells = BrdU + ; P cells = Ki67+; L cell fraction = EdU + BrdU- (ie: EdU +minus BrdU+); Ts=(S cells/L cells) * 1.5; Tc=(P cells/S cells) *Ts.
 
 Single molecule fluorescence in situ hybridization (smFISH) smFISH probes against Mus musculus Ddx3x were designed and prepared as described (Tsanov et al., 2016). All solutions and buffers were prepared with diethyl pyrocarbonate, including PFA and sucrose, to quench RNAse activity. Twenty µm coronal sections were permeabilized in 0.5% Triton X-100 in PBS for 30 min at room temperature and rinsed twice with buffer containing 10% formamide and 2 x SCC buffer (Thermo, 15557044). smFISH probes were diluted 1:200 in buffer containing 10% formamide, 2 x SCC buffer and 10% dextran sulfate; 200 µL of diluted probes were added to each slide and incubated overnight at 37 °C. The next day, samples were washed two times at 37 °C and Hoechst was included in second wash. Slides were mounted with Vectashield (Vector Labs, H-1000–10). Slides were imaged at 63X. Puncta were counted in QuPath (Bankhead et al., 2017) in a 75 µm2 box in the ventricular zone using a detection threshold of 0.2 and an expected detection size of 0.5 µm with the minimum being 0.4 and the maximum being 2.
 
-## FACS
+### FACS
 
 Samples were processed for FACS as described (Mitchell-Dick et al., 2019) and sorted at 6 °C using a B-C Astrios cell sorter with gates for forward scatter (FSC), side scatter (SSC), DAPI or Propidium Iodide (PI), GFP or TdTomato, and were sorted directly into RLT buffer and RNA was extracted (Qiagen RNAeasy kit; Qiagen, 74034).
 
-## RNAseq and ribosome footprinting
+#### RNAseq and ribosome footprinting
 
 Embryonic cortices were flash-frozen in liquid nitrogen and stored at –80 °C. For each n, four E11.5 microdissected cortices were thawed on ice and lysed in 400 μL of polysome buffer (20 mM Tris-HCl) pH 7.5, 150 mM NaCl, 5 mM MgCl2, 1 mM DTT, 100 μg/ml cycloheximide (CHX; Calbiochem, CAS 66-81-9), 25 U/ml Turbo DNase I (Invitrogen, AM2238) using a hand-blender. Lysates were pelleted at 2000 g for 10 min and titurated with a 26-gauge needle before adding TritonX-100% to 1%. Lysates were then clarified at 20,000 g for 10 min. A total of 100 μL of lysate was taken for RNA, to which 300 μL of RLT buffer was added and RNA was extracted using the RNAeasy kit (Qiagen, 74034). The remaining lysate was treated with 1 μL of RNase I (Ambion, AM2294) and incubated for 30 min at RT. After nuclease digestion, 1 μL of Superase In (Invitrogen, AM2694) was added, followed by 1 ml of TRIzol (Invitrogen, 15596026) and 200 μL of chloroform. The samples were vigorously shaken for 30 s and incubated for 3 min at RT before centrifugation at 12,000 g for 10 min at 4 °C. Approximately 750 μL of supernatant was mixed with 750 μL of isopropanol, 2 μL of glycoblue (Invitrogen AM9515), and 30 μL of sodium acetate (NaOAc) and frozen at –20 °C overnight. The next day, samples were spun (20,000 g, 15 mins, 4 °C) and the pellet was washed 2 X with 80% ethanol and allowed to air-dry before resuspending the pellet in 7 μL of RNase-free water. A PNK reaction was then performed at 37 °C for 30 min on digested RNA by adding 1 μL of PNK buffer, 1 μL of 100 mM ATP, and 1 μL of PNK enzyme (NEB, M0247S). During the incubation, a 15% acrylamide denaturing urea-gel (Biorad, 4566053) was pre-run (200 V, 15 min, 1 X TBE buffer). Samples (containing 2 X sample dye Novex, LC6876) were run (~45 min, 200 V), along with dsDNA (Thermo, 10488023) and miRNA ladders (NEB, N2102S). Afterwards, the gel was incubated with SYBR gold (Invitrogen S11494) for 5 min and the RPFs (~25–30 nt) were isolated and frozen in 400 mM NaOAc at –80 °C. The following day, frozen gel fragments were thawed (95 °C, 5 min) and vortexed (20 min, 3 X). The supernatant was spun through a SpinX column (Corning, CLS8162) (max speed,10 mins) and 500 μL isopropanol and 2 μL glycoblue were added before freezing (–20 °C, 1 hr). The samples were centrifuged (max speed, 15 min, 4 °C) and washed 2 X with 80% EtOH. The pellet was resuspended in 5 μL of water and libraries were prepared using the Qiagen miRNA library prep kit (331502; followed protocol for 100 ng input and did 15 cycles of PCR amplification). Ribosomal RNA depletion was performed after the 3′ adapter ligation step using the RiboMinus Eukaryote kit v2 (Thermo Fisher, A15020). For RNAseq cDNA library preparation, RNA concentrations were measured using a NanoDrop spectrophotometer (Thermo Scientific) and the quality of RNA was assessed using an Agilent fragment analyzer and the RNA Analysis Kit (15 nt; Agilent, DNF-471). cDNA libraries were generated using the Kapa mRNA HyperPrep kit with mRNA capture (KapaBiosystems, KR1352) using 50 ng input RNA.
 
-## Sequencing and bioinformatic analysis
+#### Sequencing and bioinformatic analysis
 
 Three samples per condition per sex (WT and cKO) were sequenced, but one WT F had to be removed due to inefficient library prep. RNAseq and Ribo-seq libraries were sequenced on the NovaSeq 6,000 S-Prime with 150 bp paired-end reads and 75 bp single end reads, respectively. For RNAseq, libraries were sequenced to a depth of ~40–60 million total reads per sample. For Ribo-seq, libraries were sequenced to a depth of 50–70 million reads and only reads that uniquely mapped were retained. After adapter removal, reads were mapped to rRNA (Langmead and Salzberg, 2012) using bowtie2 v2.4.4, the remaining reads were mapped to GENCODE22 using STAR v2.7.9a (Dobin et al., 2013). Quality control of mapped reads and count matrices, using uniquely mapping reads only, were obtained using RibosomeProfilingQC (Jianghong Ou, 2021) and Ribo-seQC (Calviello et al., 2019). Changes in TE were calculated using DESeq2 by using assay type (RNA-seq or Ribo-seq) as an additional covariate. Translationally regulated genes were defined using an FDR <0.05 from a likelihood ratio test, using a reduced model without the assay type covariate, for example assuming no difference between RNA-seq and Ribo-seq counts (Calviello et al., 2021). ORFquant (Calviello et al., 2020) v1.02 was used to de novo identify translated ORFs using the pooled Ribo-seq data and Gencode M22 annotation as reference. Inputs to ORFquant were obtained using RiboseQC (Calviello et al., 2019). Only ATG-starting ORFs were detected using uniquely mapping reads only.
 
-## Polysome profiling
+#### Polysome profiling
 
 Embryonic cortices were dissected and lysed identically to those used for Ribo-seq. Cortices from 2 embryos were pooled per n. Following clarification at 20,000 g, 50 μL of lysate was taken for RNA input. Clarified lysates were added to prepared 15–50% sucrose gradients (in the lysis buffer above, except lacking CHX and DNase) and ultracentrifuged (35,000 X g, 2 or 3.5 hr, 4 °C) using a SW41 Ti rotor. Following ultracentrifugation, 12 fractions (~1 ml each) were collected from each sample using a BioComp Piston Gradient Fractionator instrument fitted with a TRIAX flow cell to measure absorbance. RNA was extracted from 300 μL of each fraction or pooled fractions using TRIzol LS reagent (Thermo Fisher, 10296010). cDNA was synthesized from 250 ng of RNA using the iScript cDNA synthesis kit (Bio-Rad) (40 min, 46 °C), followed by RT-qPCR using gene-specific primers. Gene expression across different fractions was normalized to B-actin and then set relative to the corresponding expression from input.
 
-## RNA immunoprecipitation (RIP)
+#### RNA immunoprecipitation (RIP)
 
 Neuro2A cells were seeded into a six-well plate and transfected at confluency with Lipofectamine 2000 (ThermoFisher, 11668019) alone or with pCAG-GFP-human DDX3X per manufacturer protocol; after 4 hr, transfection media was exchanged for fresh media. At 24 hr post-transfection, cells were subjected to RNA immunoprecipitation as previously (Keene et al., 2006) with modifications as listed here. Cells were scraped from the plate surface, washed twice in cold PBS, and lysed via trituration with a p200 pipette in 100 µL of lysis buffer (10 mM HEPES pH 7, 100 mM KCl, 5 mM MgCl2, 1 mM DTT, 0.5% NP-40). Following a 5-min centrifugation at 6500 g at 4 °C, 50 μL of supernatant was transferred to each of two tubes for immunoprecipitation, with the remaining ~10 µl of supernatant kept as input. A total of 193 µl of ice-cold NT2 buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 1 mM MgCl2, 0.05% NP-40) supplemented with 1 μL RNaseOUT (Invitrogen, 10777019) was added to the immunoprecipitation tubes together with 3.4 µg of anti-GFP (Santa Cruz, sc9996). This mix was incubated overnight at 4 °C with rotation. Fifty µl of magnetic beads solution (Protein G-coated Dynabeads, ThermoFisher Scientific, 0003D) were washed with 1 mL NT2 for each immunoprecipitation condition. Lysates were subsequently added to the washed beads and incubated for 4 hr at 4 °C with rotation. Beads were then washed five times with 1 mL NT2 buffer per wash. To prepare RNA for PCR analysis, 1 mL of TRIzol (ThermoFisher Scientific) was added to the beads and RNA was purified per the manufacturer’s instructions. cDNA was prepared from 250 ng of RNA per condition using the iScript cDNA synthesis kit (Bio-Rad) according to the manufacturer’s instructions. Resulting cDNAs were diluted 1:5, and 1 µL of this dilution was used as a PCR template for amplification using GoTaq Green Master Mix (Promega). Products were run on a 2% agarose gel and imaged using a BioRad GelDoc system.
 
-## Cell lines
+#### Cell lines
 
 Neuro2A cells were obtained from ATCC, and their identity was authenticated based on imaging for morphology and qPCR analyses of mouse genes. Freshly purchased vials are used for these experiments. These cells were only used for transfection of siRNAs or constructs and confirmation of knockdown and expression. No cellular phenotypic assays were performed with these cells.
 
-## SDS-PAGE and western blot analysis
+#### SDS-PAGE and western blot analysis
 
 The dorsal telencephalon of cortices from E14.5 mice were micro-dissected and flash frozen in liquid nitrogen and stored at –80 °C. Samples were lysed in 1 X RIPA buffer (Pierce, 89900) supplemented with protease inhibitors (Sigma, 78429) and titurated with a p1000 pipette and then spun at 15,000 g for 5 min at +4 °C. A BCA protein quantification was performed (Thermo, 23227) and 15 µg of protein was mixed with 2 X sample buffer (Biorad, 1610737) and heated at 95 °C for 10 min. Fifteen µL of sample was separated on a 12% polyacrylamide gel (Biorad, 4568046). The gel was transferred to a PVDF membrane (Biorad, 1704157) using the Trans-Blot Turbo system (Biorad). The membrane was then blocked in 5% milk/PBS-T for 1 hr at room temperature and then incubated overnight with anti-DDX3X (Sigma, HPA001648, 1:1000) and anti-B-actin (Santa Cruz, sc-47778, 1:500) in 5% milk/PBS-T at +4 °C. The membranes were washed 5 X with 1 X PBS-T and then incubated with anti-mouse and anti-rabbit HRP (Thermo, 32,430 and A16110, 1:2000) for 1 hr at room temperature in 5% milk/PBS-T. The membranes were again washed with 1 X PBS-T and then exposed using ECL (Thermo, 32106) and imaged on a ChemiDoc XRS+ (Biorad). Densitometry analysis was performed as previously described.

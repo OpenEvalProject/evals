@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03gnh5541 Institute of Science and Technology Austria Klosterneuburg Austria
+1. Institute of Science and Technology Austria Klosterneuburg Austria ([ROR:03gnh5541](https://ror.org/03gnh5541))
 
 † Corresponding author
 
 ## Abstract
 
-Together, copy-number and point mutations form the basis for most evolutionary novelty, through the process of gene duplication and divergence. While a plethora of genomic data reveals the long-term fate of diverging coding sequences and their cis -regulatory elements, little is known about the early dynamics around the duplication event itself. In microorganisms, selection for increased gene expression often drives the expansion of gene copy-number mutations, which serves as a crude adaptation, prior to divergence through refining point mutations. Using a simple synthetic genetic reporter system that can distinguish between copy-number and point mutations, we study their early and transient adaptive dynamics in real time in Escherichia coli . We find two qualitatively different routes of adaptation, depending on the level of functional improvement needed. In conditions of high gene expression demand, the two mutation types occur as a combination. However, under low gene expression demand, copy-number and point mutations are mutually exclusive; here, owing to their higher frequency, adaptation is dominated by copy-number mutations, in a process we term amplification hindrance. Ultimately, due to high reversal rates and pleiotropic cost, copy-number mutations may not only serve as a crude and transient adaptation, but also constrain sequence divergence over evolutionary time scales.
+Together, copy-number and point mutations form the basis for most evolutionary novelty, through the process of gene duplication and divergence. While a plethora of genomic data reveals the long-term fate of diverging coding sequences and their cis-regulatory elements, little is known about the early dynamics around the duplication event itself. In microorganisms, selection for increased gene expression often drives the expansion of gene copy-number mutations, which serves as a crude adaptation, prior to divergence through refining point mutations. Using a simple synthetic genetic reporter system that can distinguish between copy-number and point mutations, we study their early and transient adaptive dynamics in real time in Escherichia coli. We find two qualitatively different routes of adaptation, depending on the level of functional improvement needed. In conditions of high gene expression demand, the two mutation types occur as a combination. However, under low gene expression demand, copy-number and point mutations are mutually exclusive; here, owing to their higher frequency, adaptation is dominated by copy-number mutations, in a process we term amplification hindrance. Ultimately, due to high reversal rates and pleiotropic cost, copy-number mutations may not only serve as a crude and transient adaptation, but also constrain sequence divergence over evolutionary time scales.
 
 ## Introduction
 
@@ -35,21 +35,45 @@ To fill the knowledge gap that exists at around ‘time zero’ of the duplicati
 
 The motivation for this work was sparked by an evolution experiment conducted in E. coli at a locus exhibiting high rates of gene amplification (Steinrueck and Guet, 2017), which failed to produce any evolved clones with point mutations and thus lead us to hypothesize that copy-number mutations may interfere with the evolution by point mutations under certain conditions.
 
-## An experimental system that distinguishes copy-number and point mutations
+### An experimental system that distinguishes copy-number and point mutations
 
 To study the interplay between copy-number and point mutations during adaptation, we follow the fate of a barely expressed gene during its evolution towards higher expression. Our experimental system consists of an intact endogenous galK gene of E. coli that harbours a random promoter sequence (P0) that replaces its endogenous promoter. By growing E. coli in the presence of the sugar galactose, we are selecting for increased galK expression. Adaptation to selection for increased expression can happen by two different, non-mutually exclusives ways: through increased copy-number (duplication or amplification) or through point mutations in the P0 promoter region of galK (divergence) (Tomanek et al., 2020).
 
 Importantly, our genetic reporter system allows us to distinguish between the two mutation types. GalK is part of a chromosomal reporter gene cassette and is transcriptionally fused to a yfp gene (Figure 1A). Hence, any increases in galK expression – be it by copy-number or point mutations – can be detected as increases in YFP expression. However, only mutations to the copy-number of the entire galK locus lead to an additional increase in the expression of an independently transcribed cfp gene downstream of galK-yfp (Steinrueck and Guet, 2017; Tomanek et al., 2020; Figure 1A, Figure 1—figure supplement 1A–C). Hence, increases in yfp alone indicate the divergence of the galK promoter sequence P0 by point mutations, while increases of both fluorophores indicate copy-number mutations of the whole locus. Finally, clones with increased yfp but without point mutations in P0 would indicate the presence of a trans-acting mutation at a different locus on the chromosome or a rare amplification event occurring independent of the repeated IS elements and excluding CFP (Steinrueck and Guet, 2017; Tomanek et al., 2020). Moreover, while in principle possible, an adaptive mutation in the coding sequence of galK itself is extremely unlikely to be selected under our experimental conditions given that growth is limited only by expression of the endogenous and fully functional galactokinase enzyme.
 
-## Different substrate levels result in different enzyme expression demands
+![Figure 1.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig1-v3.jpg)
+
+**Figure 1.:** (A) Cartoon of chromosomal selection and reporter cassette. The galK-yfp gene fusion does not have a functional promoter, but instead a random sequence, P0 (thin arrow), drives very low levels of baseline gene expression. Cfp expression is driven by a constitutive promoter (black arrow). Light bulbs symbolize fluorescence. Two fundamentally different kinds of adaptive mutations are shown on the right: (i) point mutations in P0 lead to increases in GalK-YFP while CFP remains at ancestral single-copy levels (top), (ii) mutations to the copy-number of the whole reporter cassette will increase both YFP and CFP expression (bottom). (B) Growth rate (as a proxy for fitness) as a function of different induction levels of galK expression in four different concentrations of galactose. Expression of a synthetic para-galK cassette (schematic below the figure) is induced by the addition of arabinose. Growth rate increases along with increasing galK expression, but it plateaus at different values for different gene expression levels depending on galactose concentration (low, intermediate, and high gene expression demand). (C–D) Experimental layout. The adaptive dynamics and sequence divergence in P0 is compared between two otherwise isogenic strains (IS- and IS+) that differ in their rate of forming duplications. For IS- the second endogenous copy of IS1C located 12 kb downstream of the selection and reporter cassette has been deleted (C). Ninety-six replicate populations of each strain are evolved in three different levels of galactose, which select for increasing levels of gene expression improvement for 12 days, respectively. Throughout, fluorescence is analysed in bulk and on a single-cell level to analyse evolutionary dynamics, and relevant clones are sequenced (D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Fluorescence phenotype and copy-number as measured by qPCR of bacterial clones with different levels of galK expression and copy-number grown on LB agar. Point colour indicates P0 sequence of clones (black = ancestral, green = promoter mutation ‘H5’ [–30T>A and –37C>T]). (A) Colony CFP fluorescence plotted against copy-number relative to a single-copy control strain as determined by qPCR. Error bars represent the standard deviation of three and four replicates for copy-number and CFP fluorescence, respectively. Linear fit: Adjusted R-squared=0.956, p-value = 3.35e-06. (B) Colony YFP fluorescence plotted against copy-number relative to a single-copy control strain as determined by qPCR. Linear model fitted to all data points with ancestral P0 sequence. Adjusted R-squared=0.97, p-value = 3.57e-06. (C) Colony YFP fluorescence plotted against CFP fluorescence. Linear model fitted to all data points with ancestral P0 sequence. Adjusted R-squared=0.97, p-value = 7.6e-06.
+
+### Different substrate levels result in different enzyme expression demands
 
 Our experimental environment consists of liquid minimal medium containing amino acids as a basic carbon and energy source, such that cells can grow even in the absence of galK expression (Figure 1B – grey line). Adding galactose to this basic medium renders galK expression highly beneficial. To characterize the relation between fitness and galK expression, we engineered a construct where the expression of galK is induced by the addition of arabinose. Growth rate increased along with galK expression and saturated at a certain expression level, which depended on the galactose medium used (Figure 1B). Thus, our system allows studying adaptation in environments with different gene expression demands: low concentrations of galactose demand a low level of galK expression (and increasing expression above this level does not add any extra benefit), while high concentrations of galactose demand a higher level of galK expression to obtain maximum growth rate. In other words, our experimental system allows selecting for different levels of improvement of a biological function (in our case increased galK expression) by growing cells in different galactose concentrations.
 
-## Evolution of galK expression in IS+ and IS- strains
+### Evolution of galK expression in IS+ and IS- strains
 
 Given the vast range of duplication rates observed at different chromosomal loci in bacteria (Roth, 1988; Andersson and Hughes, 2009; Elez et al., 2010; Reams and Roth, 2015), our objective was to experimentally manipulate the ability of galK to form duplications and study its effect on evolutionary dynamics. A common way to manipulate the duplication rate is by deleting the recA gene involved in homologous recombination (Goldberg and Mekalanos, 1986; Reams et al., 2010; Dhar et al., 2014). However, given its role in DNA repair, comparing recA and ΔrecA strains will be strongly influenced by the growth defects that such a mutation entails. In order to not have to consider pleiotropic effects caused by a difference in the genome-wide duplication rate, we instead compare two identical strains whose difference in duplication rate is restricted to a single genomic locus. To this end, we take advantage of a chromosomal location that is characterized by high rates of duplication and amplification due to homologous recombination occurring between two endogenous identical insertion sequences (IS) elements that flank this specific locus (Steinrueck and Guet, 2017; Tomanek et al., 2020). By deleting one copy of IS1, we generated two otherwise isogenic strains of E. coli that differ solely by the presence of one IS1 element approximately 10 kb downstream of galK (Figure 1C), and are thus predicted to show strong differences in their rates of duplication formation at this locus. In the following, we will refer to these strains as IS+ and IS-.
 
 To understand how the duplication rate affects adaptive dynamics, we conducted an evolution experiment with 96 replicate populations of the IS+ and IS- strains (Figure 1D). Growing these populations in minimal medium containing only amino acids (control) or supplemented with three different galactose concentrations enabled us to follow adaptation to different gene expression demands (levels of selective pressure) (Figure 2A). Daily measurements of population fluorescence prior to dilution (1:820) allowed us to monitor population phenotypes roughly every 10 generations over 12 days.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig2-v3.jpg)
+
+**Figure 2.:** (A) Daily measurements of normalized CFP fluorescence as a proxy for gene copy-number of 96 populations of IS+ (black) and IS- (red) strains growing in three different galactose concentrations (% indicated in the plot), respectively, as well as 33 replicates of IS+ and IS- strain, respectively, growing in the absence of galactose (control, black). (B) Logarithmic plots for an overview of fold changes in YFP and CFP fluorescence of populations from (A) (YFP and CFP were normalized to the mean fluorescence of ancestral populations (anc.) evolved in 0% galactose [top panel]). Lines connect measurements of each population. Populations’ fluorescence phenotypes occupy three different areas: increased YFP only (YFP+), increased CFP and YFP (YFP+CFP+ , i.e. amplified) and increased CFP with an additional elevation in YFP above the YFP+CFP+ fraction (mixed). The number of populations for IS- (red) and IS+ (black) in the respective fractions are indicated (see Figure 1—figure supplement 1A and Figure 3A–B). (C) Representative flow cytometry plots showing single-cell YFP and CFP fluorescence for populations from the YFP+ (left), mixed (middle), and YFP+CFP+ (right) fraction (indicated in panel B), respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Data replotted from Figure 2A. Green line indicates threshold to classify as population as amplified (CFP/OD600 exceeds the mean ancestral CFP/OD600 by four standard deviations). (B) Using the same threshold, mean CFP/ OD600 fluorescence as a proxy for copy-number of all evolved populations is shown for 0.01%, 0.1%, and 1% galactose (68, 19, and 34 populations for low, intermediate, and high galactose, respectively). p-Values (two-sided t-test): 3.6*10–6 (between 0.01% and 1% gal) and 3*10–2 (between 0.01% and 0.1% galactose).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Additional evolution experiment with daily measurements of normalized CFP fluorescence as a proxy for gene copy-number of 96 populations of the IS+ strain growing in three different galactose concentrations (% indicated next to the plots), as well as in the absence of galactose (control). (B) Growth rate in M9 minimal medium with increasing concentrations of galactose (left panel) as well as glycerol (control, right panel) of strain H5 with two SNPs in P0 (–30T>A and –37C>T) and the ancestral strain. Error bars represent the standard deviation of four (galactose) and five (glycerol) replicates, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Normalized YFP fluorescence as a proxy for galK expression of 96 populations in the IS- strain growing in 0.1% galactose. Populations with increased YFP fluorescence are highlighted. (B) GalK copy-number of the YFP+IS- populations evolved in 0.1% galactose shown in (A) as estimated by qPCR. For each population, genomic DNA of one colony with ancestral (black bars) and one with increased YFP (yellow bars) fluorescence was analysed. (C) Scheme of galk-yfp-only amplification with a duplication junction upstream of the cfp gene.
 
 The evolution experiment confirmed that the two strains differ strongly in their rate of copy-number mutations of the galK locus. The strain lacking one of the flanking IS1 elements (IS-) showed a drastic reduction in the ability to undergo galK amplification. In contrast to the IS+ strain, very few IS- populations evolved increased CFP expression (Figure 2A – red traces). Interestingly, in the IS+ strain, the number of populations amplified by the end of the experiment depended on the environment. At least twice as many populations were amplified in the low (0.01%) galactose environment compared to the other two environments (68, 19, and 34 populations for low, intermediate, and high galactose, respectively) (Figure 2—figure supplement 1A). Not only the number of amplified populations, but also the maximum CFP fluorescence attained by IS+ populations differed significantly between the low (0.01%) and higher (0.1% and 1%) galactose environments (Figure 2—figure supplement 1B). Populations, which evolved increases in CFP fluorescence, did so within 2 days and maintained this level relatively stably for the duration of the experiment. (See Figure 2—figure supplement 2A for an independent evolution experiment confirming the environment-dependent patterns of amplification.) The observed difference in the number of galK copies is consistent with the observation that the three environments select for different levels of increasing gene expression (‘levels of improvement’) (Figure 1B) and confirms that amplifications are an efficient way of tuning gene expression (Tomanek et al., 2020).
 
@@ -61,45 +85,262 @@ While increased CFP still reliably reports on increased copy-number, the yfp-onl
 
 In the high (1%) and intermediate (0.1%) galactose environment, data points occupy an additional space (‘mixed fraction’ in Figure 2B) between the other two fractions, where both YFP and CFP are increased, but the YFP increase is larger than in the YFP+CFP+ fraction. Based on these population-level data, we hypothesized that this phenotypic space is occupied either by a population of double mutants carrying a combination of point and copy-number mutations, or by populations consisting of cells with only promoter mutations and cells with only copy-number mutations (i.e. the two mutations being mutually exclusive). Knowing the single-cell phenotype is therefore crucial for distinguishing between the two cases. Importantly, single-cell fluorescence (using FACS) recapitulated the population measurements with the YFP-CFP phenotype falling into three distinct fractions (Figure 2C).
 
-## Copy-number and point mutations occur as a combination in the intermediate and high demand environment
+### Copy-number and point mutations occur as a combination in the intermediate and high demand environment
 
 To understand whether copy-number and point mutations are mutually exclusive or if they occur as a combination in the IS+ strain after evolution in intermediate (0.1%) and high (1%) galactose, we determined the single-cell fluorescence of all mixed fraction populations using flow cytometry (Figure 3A–B). It is worth noting that after 12 days of evolution, cells with ancestral YFP and CFP fluorescence were still present in every single amplified population. While some populations consisted of a high fraction of cells with elevated CFP fluorescence, mutants did not yet spread to complete fixation in any of them, highlighting the fact that our experiments are capturing the transient adaptive dynamics.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig3-v3.jpg)
 
-**Figure 3.:** (A–B) Log plot of YFP and CFP fluorescence of all 96 IS+ populations during evolution in 0.1% (A) and 1% (B) galactose (black points), respectively. Data replotted from Figure 2B for an overview of population fluorescence of all mixed fraction populations (coloured points). Time points of measurements are indicated by the degree of shading. (C–D) Single-cell fluorescence phenotypes as measured by flow cytometry of all mixed fraction populations identified in (A–B) after 12 days of evolution, respectively, indicate the presence of combination mutations (an increase of both YFP and CFP within a single cell as opposed to a mixed population of cells with either an increase in YFP or an increase in CFP, compare to Figure 2C). (E) Sanger sequencing of individual colonies allows to determine the genotype of an evolved clone of any fluorescence phenotype. Images of CFP (left) and YFP (right) fluorescence of individual colonies from a representative IS+ population (A10) streaked onto LB agar after having evolved in 0.1% galactose for 12 days. Sanger sequencing of the P0 sequence revealed a T>A point mutation in an amplified (red arrow) but not an ancestral colony (grey arrow). Scalebars: 1cm.Figure 3—source data 1.Figure 3E.
+**Figure 3.:** (A–B) Log plot of YFP and CFP fluorescence of all 96 IS+ populations during evolution in 0.1% (A) and 1% (B) galactose (black points), respectively. Data replotted from Figure 2B for an overview of population fluorescence of all mixed fraction populations (coloured points). Time points of measurements are indicated by the degree of shading. (C–D) Single-cell fluorescence phenotypes as measured by flow cytometry of all mixed fraction populations identified in (A–B) after 12 days of evolution, respectively, indicate the presence of combination mutations (an increase of both YFP and CFP within a single cell as opposed to a mixed population of cells with either an increase in YFP or an increase in CFP, compare to Figure 2C). (E) Sanger sequencing of individual colonies allows to determine the genotype of an evolved clone of any fluorescence phenotype. Images of CFP (left) and YFP (right) fluorescence of individual colonies from a representative IS+ population (A10) streaked onto LB agar after having evolved in 0.1% galactose for 12 days. Sanger sequencing of the P0 sequence revealed a T>A point mutation in an amplified (red arrow) but not an ancestral colony (grey arrow). Scalebars: 1cm.
 
 Flow cytometry results showed that IS+ populations of the mixed fraction from intermediate (0.1%) galactose (Figure 3A) consisted of a single type of mutant with increased YFP/CFP fluorescence relative to the ancestral values (Figure 3C). If instead a population consisted of two mutually exclusive mutants, we would expect cells to fall into two distinct phenotypic clusters, one with only increased YFP (corresponding to the ‘YFP+’ fraction) and one with only amplifications (corresponding to the ‘YFP+CFP+’ fraction). Moreover, YFP fluorescence of the mixed fraction cells was greater than YFP for pure amplification mutants, which falls along the diagonal axis (Figure 2C – right panel), again indicating a combination of copy-number and promoter mutations. To confirm the presence of combination mutants, we randomly picked three populations of the mixed fraction. Sequencing revealed that within these populations, only amplified clones, but not clones with single-copy cfp harboured an SNP (–30T>A) in P0 (Figure 3E).
 
 Similar to intermediate galactose, IS+ populations from the high (1%) galactose mixed fraction (Figure 3B) harboured cells with the combination mutation phenotype and, in addition, cells with pure amplifications (Figure 3D). Taken together, these data indicate that copy-number and point mutations can occur as a combination in environments with sufficiently high gene expression demand.
 
-## Copy-number and point mutations are mutually exclusive in the low demand environment
+### Copy-number and point mutations are mutually exclusive in the low demand environment
 
 After finding combination mutants in the high galactose environments, we analysed the single-cell fluorescence of all IS+ populations from the low (0.01%) galactose environment. Surprisingly, and in contrast to the intermediate and high galactose environments, in low galactose adaptive amplification of IS+ populations happened more rapidly with the majority of populations (68/96) showing increases in CFP fluorescence during the course of the experiment (Figure 4A – left top and bottom panel, Figure 4—figure supplement 1A–B). Notably, cells of those few populations that did not follow this general trend (Figure 4A – right top and bottom panel) showed an increase in YFP without a concomitant increase in CFP. As this small increase in YFP was not visible in the initial population measurements of liquid cultures (Figure 2B), we turned to patching populations onto LB agar, a potentially more sensitive method, which alleviates changes in fluorescence related to growth rate. Imaging populations confirmed the increase in YFP for all populations with elevated YFP in single-cell measurements (Figure 4—figure supplement 2A). We first examined population B1 with clearly increased YFP more carefully by re-streaking it on LB agar (Figure 4C). Consistent with flow cytometry results (Figure 4B), we found colonies with three different fluorescence phenotypes: ancestral, increased YFP (‘YFP+’), and a small subpopulation with both, increased YFP and CFP (amplified). Sequencing of the amplified colony type confirmed it to be a bona fide amplification without additional promoter SNPs. Sequencing of the YFP+ colony type uncovered two adaptive SNPs in P0 (–30T>A and –37C>T), which were identical to a previously identified promoter mutation ‘H5’ (Figure 2—figure supplement 2B; Steinrueck and Guet, 2017; Tomanek et al., 2020).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig4-v3.jpg)
+
+**Figure 4.:** (A) Representative flow cytometry density plot showing YFP fluorescence (upper left and right panel) and CFP fluorescence (lower left and right panel) of IS+ populations B3 (left panels) and B1 (right panels) over time (grey – ancestral, black – day 4, dark blue – day 8, purple – day 12). The small YFP+CFP+ subpopulation is indicated by a magenta arrow (see corresponding arrow in B – right panel). (B) YFP versus CFP plot of populations B3 (left panel, black) and B1 (right panel, magenta) at day 12 together with an ancestral population (grey) in order to better visualize the two distinct subpopulations in B1 (magenta arrows indicate YFP+ and YFP+CFP+ subpopulation, respectively). Data is replotted from A in order to visualize subpopulations. (C) Images of CFP (left) and YFP (right) fluorescence of individual colonies from IS+ population B1 (shown in B) streaked onto LB agar after 12 days of evolution in 0.01% galactose. The population consists of amplified colonies with increased CFP and YFP fluorescence (grey arrows) and single-copy colonies with a promoter mutation (red arrows). Scalebars: 1cm. (D) Quantitative analysis of patched populations indicates that promoter mutants (YFP+) evolve only in single-copy backgrounds. YFP-CFP plot of median colony fluorescence intensity of populations patched onto agar (as shown in B) on days 1, 4, 8, and 12 of evolution in 0.01% galactose. Populations were classified as YFP+ if their YFP but not CFP fluorescence intensity values exceeded ancestral fluorescence (red triangles, confirmed by flow cytometry). In all these populations, the YFP+ phenotype evolved from an ancestral phenotype. Blue triangle represents an amplified population, which was classified as YFP+ in the previous time point (flow cytometry showed that this population became dominated by copy-number mutations later). Black triangle marks population incorrectly classified as YFP+ (ancestral fluorescence according to flow cytometry). See also Table 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Flow cytometry density plot showing YFP fluorescence and (B) CFP fluorescence of IS+ populations over time (grey – ancestral, black – day 4, dark blue – day 8, purple – day 12).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative images of CFP (left panel) and YFP (middle panel) fluorescence of populations patched onto LB agar, which allows comparing population fluorescence in the absence of galactose-dependent growth effects. Magenta arrows indicate population B1, which exhibits increased YFP but ancestral CFP fluorescence (quantification of patch fluorescence intensity in Figure 4D). Scalebars: 1cm.
+
 As we failed to find combination mutants (i.e. a mixed fraction) in population measurements from the low galactose environment (Figure 2B), we used agar patches from four different time points of the evolution experiment (Figure 4—figure supplement 2A) to screen IS+ populations more comprehensively (Figure 4D). Re-streaking, sequencing and flow cytometry analysis revealed that all populations with elevated YFP and ancestral CFP (Figure 4D – red triangles) harboured either only promoter mutants or a mixed population of a few amplified cells and a majority of promoter mutants (Table 1). As opposed to high and intermediate galactose, we did not find a single population with combination mutants in low galactose. Moreover, the fact that mutations were mutually exclusive within populations was also reflected when we analysed their fate over time. Quantitative analysis of the fluorescence intensity of patched populations (Figure 4D) confirmed that populations with a significant fraction of promoter mutants (i.e. visibly YFP+ on the agar patch) did not become amplified later in the experiment. As a single exception, population F6 gained the YFP+ phenotype early, but became dominated by gene amplifications by the end of the experiment (Figure 4D – right panel, blue triangle). Nevertheless, also in this case, copy-number and point mutations did not occur in the same genetic background. Conversely, all YFP+ populations evolved exclusively from those with ancestral phenotype; no single amplified population gained a functional promoter within the time frame of the experiment (Figure 4D).
+
+**Table 1.**
+ Sequencing and phenotypic analysis of all YFP+IS+ populations evolved in 0.01% galactose (Figure 4D – red triangles).Increase in fluorescence relative to ancestral (anc) phenotype indicated by YFP+ and CFP+. Results shown for day 12 populations unless otherwise noted (d4, d8).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Population</th>
+      <th>Seq (all YFP+)</th>
+      <th>Flow cytometry phenotype</th>
+      <th>Agar streak</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A6</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+, v. few CFP+ (mixed populations)</td>
+      <td>YFP+, few CFP+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>–30T&gt;A, –37C&gt;T (“mutation H5”)</td>
+      <td>YFP+, CFP+ (mixed populations)</td>
+      <td>Few YFP+, few CFP+, mixed pop</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+</td>
+      <td>YFP+, v. few CFP+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C1</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+ (d12)</td>
+      <td>YFP+, v. few CFP+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C9</td>
+      <td>–</td>
+      <td>Ancestral YFP (d8), only CFP+(d12)</td>
+      <td>Few CFP+</td>
+      <td>Incorrectly classified as YFP+ (Figure 4D – grey triangle)</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+ (d12)</td>
+      <td>YFP+ only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D9</td>
+      <td>anc</td>
+      <td>YFP+ (d8, d12)</td>
+      <td>YFP+ only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E10</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+ (d12)</td>
+      <td>YFP+ only</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F6</td>
+      <td>–</td>
+      <td>YFP+ (d4), CFP+(d12)</td>
+      <td>CFP+ subpopulation</td>
+      <td>YFP+ at d8, then amplified population (Figure 5D – blue triangle)</td>
+    </tr>
+    <tr>
+      <td>F10</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+, CFP+, anc(mixed populations)</td>
+      <td>YFP+, CFP+, mixed pop</td>
+      <td>qPCR confirmed</td>
+    </tr>
+    <tr>
+      <td>G1</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+(d4–8), v. few CFP+ (d12)</td>
+      <td>YFP+, v. few CFP+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G12</td>
+      <td>–30T&gt;A</td>
+      <td>YFP+ (d8)</td>
+      <td>YFP+, no CFP+ (d12)</td>
+      <td>FACS CFP+ carry over</td>
+    </tr>
+  </tbody>
+</table>
 
 The complete absence of combination mutants in the low demand environment is consistent with the fact that only a modest increase in galK expression is necessary to reach maximal fitness (Figure 1B). Thus, while a combination of amplification and promoter point mutation evolves in response to selection for a strong increase in galK expression (intermediate and high demand environments), either mutation alone might provide a sufficient increase in gene expression to allow for maximal growth in the low demand environment. This would mean that the fitness benefit of either mutation does not add up when combined. In other words, we hypothesize that negative epistasis precludes the evolution of combination mutants in the low demand environment. Alternatively, the lack of combination mutants could be explained by clonal interference between competing adaptive amplifications and point mutations (a possibility we discuss in the last section of Results).
 
-## An increased fraction of adaptive promoter mutations is found in IS- populations evolved in the low demand environment
+### An increased fraction of adaptive promoter mutations is found in IS- populations evolved in the low demand environment
 
 If copy-number mutations are more frequent than point mutations and their combination does not spread to observable frequencies in the low demand environment, we would expect divergence to proceed more slowly as compared to an intermediate or high demand environment.
 
 To directly test this hypothesis, we estimated the level of divergence between all of the IS+ and IS- populations evolved in the low demand (0.01% galactose) environment. We pooled all 96 populations into pools of 32 and quantified the fraction of SNPs in P0 previously known to be adaptive (Tomanek et al., 2020). To do so, we subjected PCR amplicons of the pooled populations to next-generation sequencing (Figure 5A, Figure 5—figure supplement 1A). We designed our sequencing experiment such that we were able to analyse 39 bp upstream and downstream of the galK start codon. We calculated the fraction of sequence reads carrying either one or both most frequently observed adaptive SNPs at position –30 and –37 upstream of the galK start codon (Table 1). As a control, we also compared the fraction of SNPs within the galK gene of the IS+ and IS- evolved under different galactose conditions. In our experimental system, galactose selection is not expected to lead to adaptive mutations anywhere in the coding region of galK, as the enzyme itself is fully functional despite lacking a functional promoter sequence. Comparing the fraction of reads with SNPs (i.e. reads with a single SNP in galK divided by the number of reads with ancestral galK) allowed us to compare across samples with different absolute numbers of sequencing reads (Figure 5—figure supplement 1A). Consistent with our expectation, the fraction of sequencing reads with a single SNP at any position in galK was similar in populations evolved in different galactose concentrations and in the control populations evolved in the absence of galactose (Figure 5A–B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig5-v3.jpg)
+
+**Figure 5.:** (A) (Left panel) Number of reads carrying a P0 sequence with two adaptive SNPs 30 and 37 bp upstream of galK, respectively (‘T>A + C>T’ in blue) or its respective single SNPs (‘T>A’ in green, ‘C>T’ in cyan). Values are normalized to the number of reads with ancestral P0 for IS- and IS+ populations evolved in 0.01% galactose. The mean fraction of reads with any single SNP in galK is shown as a control (grey). Error bars represent the standard deviation of three replicates, consisting each of 32 pooled evolved populations. (Right panel) Read fractions of the same respective SNPs shown for a pool of all 96 IS+ and IS- populations evolved in the absence of galactose. (B) Mean read fractions as in (A) shown for three replicates of each 32 pooled populations evolved in intermediate (0.1%) galactose.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Log plot of total read numbers showing contamination of P0 amplicons with P02 amplicons stemming from pooled samples of the 0.1% galactose populations of both promoter sequences (blue rectangles; see Methods).
+
 We then compared the fraction of reads with the two adaptive SNPs in P0 previously known to confer increased galK expression (Figure 5A). While the fraction of reads carrying SNPs in galK is similar in all media, SNPs in P0 were more frequent in media containing galactose than in the control (Figure 5A – left and right panels) in agreement with strains adapting to galactose selection. Intriguingly, in low galactose, we found a higher fraction of reads carrying both adaptive single SNPs (–30T>A and –37C>T) in IS- populations than in the IS+ populations. This is consistent with our hypothesis that the more frequent amplification mutants effectively out-compete point mutations in the low demand environment.
 
 We are here using the fraction of sequencing reads (‘alleles’) with adaptive SNPs divided by the number of ancestral reads as a simple metric of divergence. However, this normalization leads to an underestimation of SNPs if they occur in an amplified background. For instance, a SNP within a cell with four P0-galK copies, where one carries an SNP, counts less than a cell with one copy of P0-galK carrying one SNP. The rationale for using the fraction of adaptive alleles as our metric of divergence as opposed to the alternative, which is the number of SNPs per cell, is twofold: First, the methodology used here does not allow comparing absolute read counts between samples. Second, and more importantly, due to the random nature of deletion mutations, a single SNP in an amplified array of four copies has a one in four chance of being retained as a lasting divergent copy in the process of amplification and divergence. Hence, the dilution of SNPs by additional amplified copies is not simply a counting artefact, but reflects a biological reality relevant to the very process that we are studying. Therefore, we conclude that in the low demand environment a strain which cannot adapt by gene amplification exhibits a higher level of divergence than a strain which frequently adapts by gene amplification.
 
-## Evolutionary dynamics between mutation types differ for different initial random promoter sequences
+### Evolutionary dynamics between mutation types differ for different initial random promoter sequences
 
 Given the paucity of point mutations that we observed for the evolution of the random P0 sequence (either a combination of –30T>A and –37C>T or each SNP alone), we wondered whether a greater variety of mutations could be obtained when using a different random promoter sequence as a starting point for evolution. Therefore, we repeated our evolution experiment in the intermediate (0.1%) galactose environment with three additional random promoter sequences (P0-1, P0-2, P0-3).
 
 After 10 days of evolution, only two out of the four random P0 sequences evolved increased galK-yfp expression (Figure 6A). This is roughly consistent with the fact that approximately 60–80% of random sequences are one point mutation away from a functional constitutive promoter (Yona et al., 2018; Lagator et al., 2022). Interestingly, P0-1 and P0-3 did not gain any gene duplications or amplifications. At first glance, this drastic difference in gene amplification was unexpected, since the IS+ strains only differ in their P0 sequence, and not in their gene duplication rate. However, random sequences have different abilities to recruit RNA-polymerase, and as a result, different baseline expression levels (Yona et al., 2018; Lagator et al., 2022). Given that a plateau exists in the expression growth relation for low levels of expression (Figure 1B), the initial expression level conferred by P0-1 and P0-3 might be too low to yield a selective benefit upon gene duplication alone. According to this hypothesis, these random (non-)promoters are not only two (or more) point mutations away from a beneficial sequence, but also two (or more) copy-number mutations.
 
-## Copy-number and point mutations are mutually exclusive in the intermediate demand environment for P0-2
+![Figure 6.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig6-v3.jpg)
+
+**Figure 6.:** (A) YFP versus CFP fluorescence normalized to the ancestral value of 96 populations of IS+ (black) and IS- (red) strain each harbouring a different random sequence upstream of galK (‘P0’, ‘P0-1’, ‘P0-2’, ‘P0-3’) grown in 0.1% galactose and without galactose (grey lines, control), respectively. Time points are indicated by the degree of shading. The number of populations for IS- (red) and IS+ (black) in the respective fractions are indicated. (B) YFP/CFP fluorescence to visualize increases in galK-YFP expression not caused by copy-number increases plotted for the duration of the evolution experiment for P0-2 populations of IS+ (left panel) and IS- (right panel). Here, gene amplifications (see Figure 6—figure supplement 1A) are visible as slight decrease in YFP/CFP relative to the 0% galactose control (grey), putative promoter mutations are visible as an increase in YFP/CFP. (C) Distribution of P0-2 mutants in IS+ and IS- populations after 12 days of evolution in 0.1% galactose. Mutations in P0-2 are exclusively found in populations with increased YFP and ancestral CFP fluorescence (YFP+). IS+ clones from all six YFP+ populations were sequenced, while IS- clones from a random subsample of 21 YFP+ populations were sequenced. (D) Mean normalized YFP fluorescence of reconstituted P0-2 mutants and the P0-2 ancestor strain (grey) grown in control medium (0% galactose). (E) Mean growth rate of reconstituted P0-2 mutants and the ancestor strain (grey) in 0.01% galactose, 0.1% galactose, and control medium (0% galactose). Error bars represent the standard deviation of four replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) CFP/OD600 as a proxy for copy-number plotted over the course of the evolution experiment for IS+ with P0-2 populations in 0.1% galactose and control populations in 0% galactose (grey). Green line indicates threshold to classify population as amplified (day 8 CFP/OD600 exceeds the mean ancestral CFP/OD600 by four standard deviations). (B) YFP/OD600 plotted versus CFP/OD600 of evolved IS+ populations with P0 (black) and P0-2 (blue) (data replotted from Figure 6A). (C) Flow cytometry measurement of YFP fluorescence intensity as a proxy for galK expression of IS- strains harbouring the four random promoter sequences as well as a P0 with adaptive SNPs as a comparison (‘H5’; indicated at the bottom of the figure), respectively, normalized to a strain without fluorescence marker. Error bars represent the standard deviation of three biological replicates. (D) End-point OD600 (‘yield’) of IS- populations carrying P0, P0-1, P0-2, and P0-3 after 24 hr of growth in 0.1% galactose (left panel) and in the absence of galactose (right panel). Boxes indicate the mean and standard deviation of 96 populations (left panel) and 12 populations (right panel), respectively. Asterisks indicate a significant difference between mean OD600 (two-sided t-test, p<0.0001).
+
+### Copy-number and point mutations are mutually exclusive in the intermediate demand environment for P0-2
 
 For P0, the evolution experiment in intermediate galactose reproduced our previous findings, namely a YFP+CFP+ (amplified) and a mixed (amplified with increased YFP) fraction for IS+ populations and a YFP+ fraction for IS- populations (compare Figure 6A with Figure 2B), which corresponds to an amplification of YFP, but not CFP (Table 2).
+
+**Table 2.**
+ Mutations of P0-2 underlying increased YFP fluorescence in IS+ and IS- populations evolved in 0.1% galactose.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">IS+ clones</th>
+      <th colspan="2">IS- clones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P02-A11</td>
+      <td>–131_–144del</td>
+      <td>P02-A7</td>
+      <td>–100C&gt;T</td>
+    </tr>
+    <tr>
+      <td>P02-B10</td>
+      <td>–122_–134del</td>
+      <td>P02-H12</td>
+      <td>–100C&gt;T</td>
+    </tr>
+    <tr>
+      <td>P02-F4</td>
+      <td>–100C&gt;T</td>
+      <td>P02-C3</td>
+      <td>–100C&gt;T</td>
+    </tr>
+    <tr>
+      <td>P02-F4</td>
+      <td>–100C&gt;T, poor quality read</td>
+      <td>P02-H9</td>
+      <td>–122_–134del</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P02-F2</td>
+      <td>–122_–134del</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P02-D1</td>
+      <td>–100C&gt;T</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P02-E2</td>
+      <td>–100C&gt;T</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P02-A1</td>
+      <td>Bigger band, maps to insD1 coding sequence</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P02-E5</td>
+      <td>–41del</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P02-C5</td>
+      <td>201 bp deletion leaving 20 bp of P02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P02-H5</td>
+      <td>201 bp deletion leaving 20 bp of P02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(seven different kinds of mutations)</td>
+    </tr>
+  </tbody>
+</table>
 
 For P0-2, the evolutionary dynamics differed from P0. In the IS+ strain, almost every single population evolved amplifications within the first 2 days of the evolution experiment (Figure 6B, Figure 6—figure supplement 1A). Moreover, only two fractions are visible in the YFP-CFP plots of P0-2. The first fraction is occupied by YFP+ populations carrying a single copy of cfp. The second fraction along the diagonal between YFP and CFP is occupied by amplified populations (YFP+CFP+). Moreover, it is shifted towards higher values of YFP/CFP relative to values found for P0 (Figure 6—figure supplement 1B), suggesting that P0-2 exhibits a higher baseline expression level than all the other three random promoter sequences. In contrast to the population-level measurements, single-cell measurements were not sufficiently sensitive to corroborate any difference in leaky expression amongst the four random promoter sequences (Figure 6—figure supplement 1C). However, in line with the observed evolutionary dynamics, P0 and even more so P0-2 confers a significant growth advantage over the other two promoters (Figure 6—figure supplement 1D). As mentioned above, this suggests that the observed growth advantage of P0-2 populations can explain their rapid amplification dynamics. In agreement with the evolution experiments with P0, the YFP+CFP+ (amplification) fraction is also strongly reduced in the IS- strain for P0-2.
 
@@ -111,9 +352,17 @@ To confirm that the 12 bp deletion mutation, the 13 bp deletion mutation and the
 
 Taken together, the facts that (i) the majority of IS+ populations become rapidly amplified, (ii) with few promoter mutations arising exclusively in the first day in non-amplified populations (mutations are mutually exclusive), and (iii) many more promoter mutations occur in IS- populations throughout the evolution experiment strongly suggest that negative epistasis between frequent copy-number mutation and point mutations hinder fixation of the latter.
 
-## Amplification hinders divergence by point mutations in the low demand environment
+### Amplification hinders divergence by point mutations in the low demand environment
 
 The experimental results we presented this far suggest that the evolutionary dynamics of duplication/amplification and divergence depend on the level of gene expression increase selected for (Figure 7). In both environments, promoter point mutations evolve at a low rate in a single-copy background. However, if rates of copy-number mutation are high, evolutionary dynamics are dominated by amplification. Irrespective of the environment, this amplification increases the mutational target size for rarer adaptive point mutations to occur. However, only if a strong increase in galK expression is selected for (high demand environment), the beneficial effects of both types of mutation add up, and we observe a combination of amplifications and point mutations to occur, in agreement with the IAD model (Bergthorsson et al., 2007; Näsvall et al., 2012; Andersson et al., 2015; Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig7-v3.jpg)
+
+**Figure 7.:** Genotype-fitness map (‘fitness landscape’) illustrating the difference between adaptive trajectories of a high demand (A) and low demand (B) environment, which differ solely by the increase in gene expression they select for. The dashed line indicates the level of gene expression sufficient to reach maximal growth rate (‘fitness’) (see also Figure 1B). Right panels show the experimentally observed genotypes for each environment. (A) For an environment selecting for a large increase in gene expression (high demand), more than one adaptive mutation is necessary to reach maximal fitness. If copy-number mutations are frequent (as in the IS+ strain), adaptation by amplification is most likely (bold arrow). Alternatively, at a lower frequency, adaptation occurs via a point mutation in the promoter sequence (thin arrow). Due to an increased mutational target size, cells with gene amplfications are more likely to gain a beneficial point mutation than cells with a single copy of galK. Alternatively, rare promoter mutants can become amplified, in either case leading to the combination mutant observed in experiments. (B) For an environment selecting for only a modest increase in gene expression (low demand), maximal growth rate is attained either by gene amplification (more frequent, bold arrow) or by point mutations (less frequent, thin arrow). Therefore, combination mutants do not provide an additional fitness benefit and would only increase in frequency due to drift (horizontal faint dashed lines), not selection. Combination mutants are not observed in the experiment (right panel).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82240/elife-82240-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A). Maximal OD600 (‘yield’) as a function of different induction levels of galK expression in four different concentrations of galactose. Expression of a synthetic para-galK cassette is induced by the addition of arabinose (see Figure 1B for a plot of growth rate data). At the lowest level of galK expression yield as a proxy for population size is similar across all environments. (B) OD600 of evolved strains is plotted over time for the evolution medium supplemented with three different galactose concentrations and glucose (control; indicated on top of figure panels). For each galactose concentration, two amplified strains (blue), which have evolved in this environment for 7 days, respectively, are compared to two strong promoter mutants (‘H5r’, ‘D8c’, green, see Tomanek et al., 2020) grown in the same environment. (C) Yield (max OD600) and (D) maximal growth rate of the data shown in A.
 
 The IAD model assumes that amplification and point mutations only occur in the same genetic background. However, whether the two different types of mutation fix consecutively in the same genetic background or in different competing clones depends on the effective population size and the respective mutation rates (Gerrish and Lenski, 1998). High rates of duplication and amplification may cause clonal interference between competing mutants, slowing down the fixation of either. Moreover, there needs to be sufficient selective benefit (‘demand’) for two consecutive selective sweeps to occur. If, however, only a modest level of gene expression increase is selected for (low demand environment) (Figure 1B), a single mutational event may be sufficient to provide it. Therefore, adaptation is dominated by the more frequent type of mutation, namely copy-number mutation. In other words, amplifications effectively hinder divergence in the low demand environment due to their negative epistatic interaction with point mutations. Thus, in a process, which we term amplification hindrance, the high rate of amplification results in evolutionary dynamics that slow down divergence via two different non-mutually exclusive mechanisms: clonal interference and negative epistasis.
 
@@ -145,77 +394,268 @@ Amplification hindrance is in agreement with the observation that gene duplicati
 
 ## Methods
 
-## Bacterial strain construction
+### Bacterial strain construction
 
 To construct the IS- strain, we replaced the second copy of IS1 downstream of the selection and reporter cassette in IT030 (Tomanek et al., 2020) with a kanamycin cassette using pSIM6-mediated recombineering (Datta et al., 2006). Recombinants were selected on 25 µg/ml kanamycin to ensure single-copy integration.
 
 To generate the additional random promoters sequences P0-1, P0-2, and P0-3, we generated 189 nucleotides using the ‘Random DNA sequence generator’ (https://faculty.ucr.edu/~mmaduro/random.htm) with the same GC content as P0 (55%). We synthesized these three sequences as gBlocks (Integrated DNA Technology, BVBA, Leuven, Belgium) with attached XmaI and XhoI restriction sites, which we used to clone P0-1, P0-2, and P0-3 into plasmid pMS6* (Tomanek et al., 2020) by replacing P0. We used pMS6* with the respective P0 sequence as a template to amplify the selection and reporter cassette and integrate it into MS022 (IS+) and IT049 (IS-) as described previously (Tomanek et al., 2020).
 
-## >P0
+#### >P0
 
 ACCGGAAAGACGGGCTTCAAAGCAACCTGACCACGGTTGCGCGTCCGTATCAAGATCCTCTTAATAAGCCCCCGTCACTGTTGGTTGTAGAGCCCAGGACGGGTTGGCCAGATGTGCGACTATATCGCTTAGTGGCTCTTGGGCCGCGGTGCGTTACCTTGCAGGAATTGAGGCCGTCCGTTAATTTCC.
 
-## >P0_1
+#### >P0_1
 
 GTAGGCCCGCACGCAAGACAAACTGCTGGGGAACCGCGTTTCCACGACCGGTGCACGATTTAACTTCGCCGACGTGACGACATTCCAGGCAGTGCCTCCGCCGCCGGACCCCCCTCGTGATCGGGTAGCTGGGCATGCCCTTGTGAGATATAACGAGAGCCTGCCTGTCTAATGATCTCACGGCGAAAG.
 
-## >P0_2
+#### >P0_2
 
 TCGGGGGGACAGCAGCGGCTGCAGACATTATACCGCAACAACACCAAGGTGAGATAACTCCGTAGTTGACTACGCGTCCCTCTAGGCCTTACTTGACCGGATACAGTGTCTTTGACACGTTTGTGGGCTACAGCAATCACATCCAAGGCTGGCTATGCACGAAGCAACTCTTGGGTGTTAGAATGTTGA.
 
-## >P0_3
+#### >P0_3
 
 CCCCTGTATTTGGGATGCGGGTAGTAGATGAGCGCAGGGACTCCGAGGTCAAGTACACCACCCTCTCGTAGGGGGCGTTCCAGATCACGTTACCACCATACCATTCGAGCATGGCACCATCTCCGCTGTGCCCATCCTGGTAGTCATCATCCCTATCACGCTTTCGAGTGTCTGGTGGCGGATATCCCC.
 
-## Reconstitution of P0-2 mutants in the ancestral strain
+### Reconstitution of P0-2 mutants in the ancestral strain
 
 The reconstituted P0-2 mutant strains were obtained using pSIM6-mediated oligo recombineering (Sawitzke et al., 2011) of the ancestral strain and selecting recombinants on M9 0.1% galactose agar. The sequence of the oligonucleotides used is listed below. Successful recombinants were confirmed by Sanger sequencing of P0-2. Amongst the recombinants transformed with the –122_–134del construct, we also recovered one colony with higher YFP fluorescence intensity than the other recombinants. Sequencing showed an additional single deletion (–118del) in addition to the –122_–134del created by recombineering. Fluorescence and growth rate of the serendipitously obtained mutant is shown in Figure 6D–E along with the three intended mutants.
 
-## >A11 oligo (–131_–144del)
+#### >A11 oligo (–131_–144del)
 
 ACCGCAACAACACCAAGGTGAGATAACTCCGTAGTTGACTGGCCTTACTTGACCGGATACAGTGTCTTTGACACGTTTGTGGG.
 
-## >H12 oligo (–100C>T)
+#### >H12 oligo (–100C>T)
 
 CTAGGCCTTACTTGACCGGATACAGTGTCTTTGATACGTTTGTGGGCTACAGCAATCACATCCAAGGCTG.
 
-## >F2 oligo (–122_–134del)
+#### >F2 oligo (–122_–134del)
 
 CAACACCAAGGTGAGATAACTCCGTAGTTGACTACGCGTCCCTTGACCGGATACAGTGTCTTTGACACGTTTGTGGGCTACAGCA.
 
-## List of strains used
+### List of strains used
 
-## List of primers used
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Genotype</th>
+      <th>Purpose</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MG1655</td>
+      <td>F- λ- ilvG- rfb-50 rph-1</td>
+      <td>Strain background for all evolution experiments</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>IT013-TCD</td>
+      <td>BW27784, JA23100::galP, mglBAC::FRT, galK::FRT, locus1::pBAD-galK</td>
+      <td>Strain with pBAD-galK for testing expression-growth relation</td>
+      <td>Tomanek et al., 2020</td>
+    </tr>
+    <tr>
+      <td>BW25142</td>
+      <td>lacIq rrnB3 ∆lacZ4787 hsdR514 ∆(araBAD)567 ∆(rhaBAD)568 ∆phoBR580 rph-1 galU95 ∆endA9 uidA(∆MluI)::pir-116 recA1</td>
+      <td>Host for pir plasmid pMS6*</td>
+      <td>Khlebnikov et al., 2001</td>
+    </tr>
+    <tr>
+      <td>MS022</td>
+      <td>MG1655, JA23100::galP, mglBAC::FRT, galK::FRT</td>
+      <td>IS+ background for ancestor strain construction</td>
+      <td>Lab collection</td>
+    </tr>
+    <tr>
+      <td>IT030</td>
+      <td>MS022 locus2::P0-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS+ ancestor strain</td>
+      <td>Tomanek et al., 2020</td>
+    </tr>
+    <tr>
+      <td>IT049</td>
+      <td>MS022 deleted for IS1C</td>
+      <td>IS- background for ancestor strain construction</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IT049-P0</td>
+      <td>IT049 locus2::P0-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS- ancestor strain P0</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IT049-P0-1</td>
+      <td>IT049 locus2::P0-1-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS- ancestor strain P0-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IT049-P0-2</td>
+      <td>IT049 locus2::P0-2-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS- ancestor strain P0-2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IT049-P0-3</td>
+      <td>IT049 locus2::P0-3-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS- ancestor strain P0-3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MS022-P0</td>
+      <td>MS022 locus2::P0-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS+ ancestor strain P0</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MS022-P-01</td>
+      <td>MS022 locus2::P0-1-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS+ ancestor strain P0-1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MS022-P0-2</td>
+      <td>MS022 locus2::P0-2-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS+ ancestor strain P0-2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MS022-P0-3</td>
+      <td>MS022 locus2::P0-3-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>IS+ ancestor strain P0-3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IT030-H5r</td>
+      <td>MS022 locus2::pconst-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>Strain with constitutive galK expression conferred by two SNPs in P0</td>
+      <td>Tomanek et al., 2020</td>
+    </tr>
+    <tr>
+      <td>IT030-D8c</td>
+      <td>MS022 locus2::pconst-RBS-galK -RBS-yfp -FRT-pR-cfp</td>
+      <td>Strain with constitutive galK expression conferred by one SNP in P0</td>
+      <td>Tomanek et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
 
-## Culture conditions
+### List of primers used
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E_flank_f</td>
+      <td>GCTGGAGCCACTTGTAGCC</td>
+      <td>cassette integration test locus 2, sequencing P0s</td>
+    </tr>
+    <tr>
+      <td>E_flank_r</td>
+      <td>TCCTTGCTGAATCATTTTGTTC</td>
+      <td>cassette integration test locus 2</td>
+    </tr>
+    <tr>
+      <td>P0_check_Fw</td>
+      <td>GTGTGAGTGGCAGGGTAG</td>
+      <td>sequencing P0s (together with E_flank_f)</td>
+    </tr>
+    <tr>
+      <td>qPCR_galK _Fw</td>
+      <td>GCTACCCTGCCACTCACA</td>
+      <td>estimating galK copy number</td>
+    </tr>
+    <tr>
+      <td>qPCR_galK _Rv</td>
+      <td>CGCAGGGCAGAACGAAAC</td>
+      <td>estimating galK copy number</td>
+    </tr>
+    <tr>
+      <td>rbsB_qPCR_Fw</td>
+      <td>GGCACAAAAATTCTGCTGATTAA</td>
+      <td>qPCR control locus</td>
+    </tr>
+    <tr>
+      <td>rbsB_qPCR_Rv</td>
+      <td>GCAGCTCGATAACTTTGGC</td>
+      <td>qPCR control locus</td>
+    </tr>
+    <tr>
+      <td>P1_P0-1</td>
+      <td>GCCTTAGTTGTAAGTGTCTACCAT GTCCCCGAACAAGTGTTCACTATG TCTAGGCCCGCACGCAAGAC</td>
+      <td>integration of the selection and reporter cassette with P0-1 (Fw primer)</td>
+    </tr>
+    <tr>
+      <td>P1_P0-2</td>
+      <td>GCCTTAGTTGTAAGTGTCTACCAT GTCCCCGAACAAGTGTTCACTATG TCTCGGGGGGACAGCAGCG</td>
+      <td>integration of the selection and reporter cassette with P0-2 (Fw primer)</td>
+    </tr>
+    <tr>
+      <td>P1_P0-3</td>
+      <td>GCCTTAGTTGTAAGTGTCTACCAT GTCCCCGAACAAGTGTTCACTATG TCTGTATTTGGGATGCGGGTAGTAGA</td>
+      <td>integration of the selection and reporter cassette with P0-3 (Fw primer)</td>
+    </tr>
+    <tr>
+      <td>E_int_Rv</td>
+      <td>TCGGAAGGGAAGAGGGAGTGCGGG AAATTTAAGCTGGATCACATATTGCC GAGGCCTTATGCTAGCTTC</td>
+      <td>integration of the selection and reporter cassette (Rv primer)</td>
+    </tr>
+    <tr>
+      <td>E_int_Fw</td>
+      <td>GCCTTAGTTGTAAGTGTCTACCATGTC CCCGAACAAGTGTTCACTATGTCACCG GAAAGACGGGCTTC</td>
+      <td>integration of the selection and reporter cassette with P0 (Fw primer)</td>
+    </tr>
+    <tr>
+      <td>deep_seq_Fw</td>
+      <td>TCGTCGGCAGCGTCAGATGTGTATAAG AGACAGACGGGTTCTTATGCCTTAGTT</td>
+      <td>1st step PCR for amplicon deep sequencing (with 5´nextera anchor for Illumina sequencing)</td>
+    </tr>
+    <tr>
+      <td>deep_seq_Rv</td>
+      <td>GTCTCGTGGGCTCGGAGATGTGTATAA GAGACAGGTGTGAGTGGCAGGGTAG</td>
+      <td>1st step PCR for amplicon deep sequencing (with 5´nextera anchor for Illumina sequencing)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Culture conditions
 
 Bacterial strains were grown at 37°C. All evolution experiments, as well as growth experiments with the purpose of measuring OD600 and fluorescence, were conducted in M9 medium supplemented with 2 mM MgSO4, 0.1 mM CaCl2, 0.1% casaminoacids (‘evolution medium’), and carbon source (galactose, glucose, or glycerol) at the concentration indicated in the respective figures (Sigma-Aldrich, St Louis, MO), with the exception of Figure 2—figure supplement 2B, where bacteria were grown in M9 medium without casaminoacids (carbon sources as indicated in the figure).
 
-## Evolution experiments
+### Evolution experiments
 
 Evolution experiments were inoculated with ancestral colonies of IS+ and IS- strains grown in 3 ml of LB medium over night, after two washing steps in M9 medium without carbon source (M9 buffer) and a dilution of 1:200.
 
 Bacterial cultures were grown in 200 µl liquid evolution medium with the indicated galactose concentrations in clear flat-bottom 96-well plates and shaken in a Titramax plateshaker at 750 rpm (Heidolph, Schwabach, Germany), allowing for a total population size of ~108 colony forming units for the ancestral strain. Every day, populations were transferred to fresh plates using a VP408 pin replicator (V&P SCIENTIFIC, Inc, San Diego, CA) resulting in a dilution of ~1:820 (Steinrueck and Guet, 2017), corresponding to ~10 generations. Immediately after the transfer, growth and fluorescence measurements were performed in the overnight plates using a Biotek H1 plate reader (Biotek, Vinooski, Vermont). Thus, population phenotypes were measured every 10 generations.
 
-## Growth rate measurements in liquid cultures
+### Growth rate measurements in liquid cultures
 
 To measure the growth rate in a 2D gradient of arabinose and galactose (Figure 1B), an overnight culture of strain IT013 (Tomanek et al., 2020) grown in M9 supplemented with 1% glycerol and 0.1% casaminoacids was diluted 1:200 into 96-well plates containing 200 µl of M9 supplemented with 0.1% casaminoacids, with concentrations of galactose and the inducer arabinose as indicated in Figure 1B. For the full duration of the experiment, cultures were grown in the plate reader with continuous orbital shaking and OD600 and fluorescence was measured in 10 min intervals.
 
 Growth rate was calculated using a custom R script. Briefly, the script applies a linear model (base R function lm()) to a 20-datapoint sliding window of log(OD600) as a function of time. The script then outputs the steepest slope (maximal growth rate) amongst all possible sliding windows (Figure 1—source data 1). The growth rates plotted in Figure 6E and Figure 2—figure supplement 2B were obtained in the same manner (see Figure 6—source data 2 and Figure 2—figure supplement 2—source data 1), with strains and carbon sources as indicated in the respective figures.
 
-## Flow cytometry experiments
+### Flow cytometry experiments
 
 Frozen evolved populations (–80°C, 15% glycerol) from day 4, day 8, or day 12 (as indicated in the figures) were pinned (1:820) into M9 buffer and put on ice until the measurement. Fluorescence was measured using a BD FACSCanto II system (BD Biosciences, San Jose, CA) equipped with FACSDiva software. CFP fluorescence was collected with a 450/50 nm bandpass filter by exciting with a 405 nm laser. YFP fluorescence was collected with a 510/50 bandpass filter by exciting with a 488 nm laser. The bacterial population was gated on the FSC and SSC signal resulting in approximately 6000 events analysed per sample, out of 10,000 recorded events.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 For qPCR, gDNA was isolated from overnight cultures grown in the respective evolution medium inoculated by single evolved colonies using Wizard Genomic DNA purification kit (Promega, Madison, WI). We performed qPCR using Promega qPCR 2× Mastermix (Promega, Madison, WI) and a C1000 instrument (Bio-Rad, Hercules, CA). To quantify the copy-number of samples of an evolving population, we designed one primer pair within galK (target) and one primer within rbsB as a reference, which lies outside the amplified region. We compared the ratios of the target and the reference loci to the ratio of the same two loci in the single-copy control. Using dilution series of one of the gDNA extracts as template, we calculated the efficiency of primer pairs and quantified the copy-number of galK in each sample employing the Pfaffl method, which takes amplification efficiency into account (Pfaffl, 2001). qPCR was performed in three technical replicates.
 
-## Measurement of colony fluorescence
+### Measurement of colony fluorescence
 
 Evolving populations were pinned onto LB agar supplemented with 1% charcoal and imaged using a macroscope setup (https://openwetware.org/wiki/Macroscope) (Chait et al., 2010). To obtain median colony YFP and CFP fluorescence intensity, a region of interest was determined using the ImageJ plugin ‘Analyze Particles’ (settings: 200px-infinity, 0.5–1.0 roundness) to identify colonies on 16-bit images with threshold adjusted according to the default value. The region of interest including all colonies was then used to measure intensity and plotted using a custom R script (Figure 4—source data 1).
 
-## Amplicon deep sequencing of P0
+### Amplicon deep sequencing of P0
 
 Frozen samples of evolved populations were diluted 1:10 into 100 µl of LB and grown for 5 hr (37°C, shaking) to increase cell numbers prior to DNA extractions. Columns 1–4 (populations A1, B1, C1, …, F4, G4, H4), 5–8 (populations A5, B5, C5, …, F8, G8, H8), and 9–12 (populations A9, B9, C9, …, F12, G12, H12) of each 96-well plate were pooled prior to DNA extraction using Wizard Genomic DNA purification kit (Promega, Madison, WI). The P0 region including the beginning of galK was amplified for 25 PCR cycles using primers deep_seq_Fw and deep_seq_Rv carrying 5′ adaptors for Illumina sequencing. In parallel, PCRs were performed for 35 cycles to confirm bands on a gel. Illumina sequencing was carried out by Microsynth (Balgach, Switzerland).
 

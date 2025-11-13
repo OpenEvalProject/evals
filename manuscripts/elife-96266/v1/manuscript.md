@@ -11,18 +11,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00rcxh774 Cluster of Excellence on Plant Sciences (CEPLAS), Institute for Plant Sciences, University of Cologne Cologne Germany
-2. https://ror.org/00rcxh774 Cologne Excellence Cluster for Cellular Stress Responses in Aging-Associated Diseases (CECAD), University of Cologne Cologne Germany
-3. https://ror.org/00rcxh774 Center for Molecular Medicine Cologne (CMMC), University of Cologne Cologne Germany
-4. https://ror.org/05mxhda18 Faculty of Medicine, University Hospital Cologne Cologne Germany
-5. https://ror.org/00cv9y106 Department of Plant Biotechnology and Bioinformatics, Ghent University Ghent Belgium
-6. https://ror.org/03xrhmk39 VIB Center for Plant Systems Biology Ghent Belgium
+1. Cluster of Excellence on Plant Sciences (CEPLAS), Institute for Plant Sciences, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+2. Cologne Excellence Cluster for Cellular Stress Responses in Aging-Associated Diseases (CECAD), University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+3. Center for Molecular Medicine Cologne (CMMC), University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+4. Faculty of Medicine, University Hospital Cologne Cologne Germany ([ROR:05mxhda18](https://ror.org/05mxhda18))
+5. Department of Plant Biotechnology and Bioinformatics, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
+6. VIB Center for Plant Systems Biology Ghent Belgium ([ROR:03xrhmk39](https://ror.org/03xrhmk39))
 
 † Corresponding author
 
 ## Abstract
 
-Programmed cell death occurring during plant development (dPCD) is a fundamental process integral for plant growth and reproduction. Here, we investigate the connection between developmentally controlled PCD and fungal accommodation in Arabidopsis thaliana roots, focusing on the root cap-specific transcription factor ANAC033/SOMBRERO (SMB) and the senescence-associated nuclease BFN1. Mutations of both dPCD regulators increase colonization by the beneficial fungus Serendipita indica , primarily in the differentiation zone. smb-3 mutants additionally exhibit hypercolonization around the meristematic zone and a delay of S. indica -induced root-growth promotion. This demonstrates that root cap dPCD and rapid post-mortem clearance of cellular corpses represent a physical defense mechanism restricting microbial invasion of the root. Additionally, reporter lines and transcriptional analysis revealed that BFN1 expression is downregulated during S. indica colonization in mature root epidermal cells, suggesting a transcriptional control mechanism that facilitates the accommodation of beneficial microbes in the roots.
+Programmed cell death occurring during plant development (dPCD) is a fundamental process integral for plant growth and reproduction. Here, we investigate the connection between developmentally controlled PCD and fungal accommodation in Arabidopsis thaliana roots, focusing on the root cap-specific transcription factor ANAC033/SOMBRERO (SMB) and the senescence-associated nuclease BFN1. Mutations of both dPCD regulators increase colonization by the beneficial fungus Serendipita indica, primarily in the differentiation zone. smb-3 mutants additionally exhibit hypercolonization around the meristematic zone and a delay of S. indica-induced root-growth promotion. This demonstrates that root cap dPCD and rapid post-mortem clearance of cellular corpses represent a physical defense mechanism restricting microbial invasion of the root. Additionally, reporter lines and transcriptional analysis revealed that BFN1 expression is downregulated during S. indica colonization in mature root epidermal cells, suggesting a transcriptional control mechanism that facilitates the accommodation of beneficial microbes in the roots.
 
 ## Introduction
 
@@ -36,9 +36,17 @@ Here, we show that the accumulation of uncleared LRC cell corpses on the roots o
 
 ## Results
 
-## The SMB-mediated clearance of dead cells protects the root meristem and regulates symbiosis
+### The SMB-mediated clearance of dead cells protects the root meristem and regulates symbiosis
 
 dPCD and corpse clearance are the final steps in LRC differentiation, maintaining root cap organ size in Arabidopsis root tips. This process is orchestrated by the LRC-specific transcription factor SMB and executed by its direct and indirect downstream targets (Figure 1A). To characterize the role of disrupted dPCD in Arabidopsis LRCs, we analyzed the phenotypic implications of the SMB loss-of-function allele smb-3 (Willemsen et al., 2008). We employed two staining methods to visualize the extent of cell death and protein aggregation in the smb-3 T-DNA insertion line. We first used Evans blue staining, a viability dye that penetrates damaged/dying cells (Vijayaraghavareddy et al., 2017). In smb-3 mutants, this staining revealed uncleared LRC cell corpses along the surface of primary roots, starting at the distal border of the meristematic zone (Figure 1B and C and Figure 1—figure supplement 1). We further characterized smb-3 mutants with Proteostat staining, a fluorescent dye that binds to quaternary protein structures typically found in misfolded and/or aggregated and condensed proteins (hereafter referred to as protein aggregates; Llamas et al., 2021). In smb-3 mutants, Proteostat staining showed an accumulation of protein aggregates in uncleared dead LRC cells attached to the roots (Figure 1D–F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of lateral root cap (LRC) development in WT and smb-3 mutant plants, impaired in dPCD. (B) Evans blue staining of 10-day-old WT and smb-3 mutant roots, showing an overview of the meristematic, elongation and differentiation zone. Evans blue highlights the accumulation of LRC cell corpses on smb-3 mutant roots starting at the transition into the elongation zone. Scale indicates 150 μm. (C) Relative quantification of Evans blue staining of the differentiation zone of 14-day-old WT and smb-3 mutant roots (refers to image shown in B). Five plants per genotype were used. All data points were normalized to the mean of the WT control. Statistical relevance was determined by unpaired, two-tailed Student’s t test (F [4, 4]=3.596; p<0.001). (D) Confocal Scanning Laser Microscopy (CLSM) images of 10-day-old WT and smb-3 mutant roots stained with Proteostat (red) showing the meristematic- and the beginnings of the elongation-zone. Scale indicates 100 μm. (E) Magnification of the differentiation zone of WT and smb-3 mutant roots, both stained with Proteostat (red) and Hoechst (blue). WT roots do not show any Proteostat signal, while smb-3 mutants display extensive protein aggregate accumulation in uncleared LRC cell corpses. Scale indicates 50 μm. (F) Quantification of relative Proteostat fluorescence levels, comparing the differentiation and meristematic zones of WT and smb-3 mutants. Five 10-day-old plants were used for each genotype. All data points were normalized to the mean of the WT control, analyzing differentiation and meristematic zone separately. Statistical significance was determined by one-way ANOVA and Tukey’s post hoc test (F [3, 16]=8,314; p<0.01). (G) Filter trap and SDS-PAGE analysis with anti-poly-glutamine (polyQ) antibodies of 15-day-old WT and smb-3 mutant roots. The images are representative of two independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Evans blue staining of 14-day-old WT and smb-3 mutant roots under mock conditions, showcasing the accumulation of LRC cell corpses along the differentiation zone caused by the SMB loss-of-function mutation. Scale indicates 100 µm. (B) Microscopy images of S. indica colonized WT and smb-3 mutant roots visualizing the hypercolonization of the meristematic zone of smb-3 mutant root tips at 10 dpi, stained with Evans blue. Scale indicates 100 µm. (C) Quantification of cell death via Evans blue staining, showing a clearing of LRC cell corpses on smb-3 mutant roots during S. indica colonization. Five plants were imaged for each mock and S. indica treatment at 10 dpi. Statistical significance was determined using an unpaired, two-tailed Student’s t-test before normalization (F [4, 4]=46.19; p<0.05). Microscopy images show corresponding mock and S. indica-treatments of smb-3 mutant roots. Scale indicates 100 µm.
 
 The transcription factor SMB promotes the expression of various putative dPCD executor genes, including proteases that break down and clear cellular debris and protein aggregates following cell death induction. In the LRCs of smb-3 mutants, the absence of induction of these proteases potentially explains the accumulation of protein aggregates in uncleared dead LRC cells.
 
@@ -50,21 +58,45 @@ To assess the effects of impaired dPCD processes in the LRC of smb-3 mutants on 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig2-v1.jpg)
 
-**Figure 2.:** smb-3 mutants display extraradical hypercolonization and increased intraradical colonization by S. indica.(A) Representative images show extraradical colonization of 10-day-old WT and smb-3 mutant seedlings (seed inoculated). S. indica was stained with WGA-AF 488. Roots were scanned and captured with a LI-COR Odyssey M imager using the bright field (BF) and Alexa Fluor 488 channel (green). White arrowheads indicate colonization of the root tip in the smb-3 mutant background. Scale indicates 5 mm. (B) Relative quantification of WGA-AF 488 signal as proxy for extraradical colonization on smb-3 mutants and WT roots (refers to image shown in A). The statistical comparison was made by two-tailed Student’s t test for unpaired samples (F [9, 9]=11.85; p<0.001) using 10 plants. (C) Measurement of intraradical colonization in WT and smb-3 mutant roots at 10dpi were performed by qPCR. Roots from seven biological replicates were collected and washed to remove extra-radical hyphae, pooling approximately 30 seedlings for each genotype per replicate. The graph is normalized to WT. Statistical analysis was done via two-tailed Student’s t test for unpaired samples (F [6, 6]=8.905; p<0.05). (D) Root length measurements of WT plants and smb-3 mutant plants, during S. indica colonization (seed inoculated) or mock treatment. 50 plants for each genotype and treatment combination were observed and individually measured over a time period of two weeks. WT roots show S. indica-induced growth promotion, while growth promotion of smb-3 mutants was delayed and only observed at later stages of colonization. This experiment was performed three times, with fresh fungal material, showing similar results. Statistical analysis was performed via one-way ANOVA and Tukey’s post hoc test (F [11, 1785]=1149; p<0.001). For visual representation of statistical relevance each time point was additionally evaluated via one-way ANOVA and Tukey’s post hoc test at 8 dpi (F [3, 593]=69.24; p<0.001), 10dpi (F [3, 596]=47.59; p<0.001) and 14dpi (F [3, 596]=154.3; p<0.001).
+**Figure 2.:** (A) Representative images show extraradical colonization of 10-day-old WT and smb-3 mutant seedlings (seed inoculated). S. indica was stained with WGA-AF 488. Roots were scanned and captured with a LI-COR Odyssey M imager using the bright field (BF) and Alexa Fluor 488 channel (green). White arrowheads indicate colonization of the root tip in the smb-3 mutant background. Scale indicates 5 mm. (B) Relative quantification of WGA-AF 488 signal as proxy for extraradical colonization on smb-3 mutants and WT roots (refers to image shown in A). The statistical comparison was made by two-tailed Student’s t test for unpaired samples (F [9, 9]=11.85; p<0.001) using 10 plants. (C) Measurement of intraradical colonization in WT and smb-3 mutant roots at 10dpi were performed by qPCR. Roots from seven biological replicates were collected and washed to remove extra-radical hyphae, pooling approximately 30 seedlings for each genotype per replicate. The graph is normalized to WT. Statistical analysis was done via two-tailed Student’s t test for unpaired samples (F [6, 6]=8.905; p<0.05). (D) Root length measurements of WT plants and smb-3 mutant plants, during S. indica colonization (seed inoculated) or mock treatment. 50 plants for each genotype and treatment combination were observed and individually measured over a time period of two weeks. WT roots show S. indica-induced growth promotion, while growth promotion of smb-3 mutants was delayed and only observed at later stages of colonization. This experiment was performed three times, with fresh fungal material, showing similar results. Statistical analysis was performed via one-way ANOVA and Tukey’s post hoc test (F [11, 1785]=1149; p<0.001). For visual representation of statistical relevance each time point was additionally evaluated via one-way ANOVA and Tukey’s post hoc test at 8 dpi (F [3, 593]=69.24; p<0.001), 10dpi (F [3, 596]=47.59; p<0.001) and 14dpi (F [3, 596]=154.3; p<0.001).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig3-v1.jpg)
 
-**Figure 3.:** S. indica-colonized smb-3 mutants and WT roots.For CLSM analyses, 7-day-old seedlings were inoculated with S. indica spores and roots were analyzed at 10 dpi. (A) Representative images of the meristematic zone of Arabidopsis WT and smb-3 mutants during S. indica colonization. WGA-AF 488 stain (green) was used to visualize fungal structures. Transmitted light (TL) images are also shown. Scale indicates 100 μm (B) Magnification of a smb-3 mutant root tip colonized with S. indica. Asterisks indicate penetration of hyphae into dead cells stained with propidium iodide (PI, Sigma-Aldrich) shown in magenta. Scale indicates 100 μm. (C) Representative images of the differentiation zone of WT and smb-3 mutants colonized with S. indica and stained with WGA-AF 488 and PI. Scale indicates 100 μm. (D) Representative images of the meristematic zone of WT and smb-3 mutant root tips inoculated with S. indica, stained with WGA-AF 488 and Proteostat (red). Scale indicates 100 μm (E) Magnification of the root differentiation zone of smb-3 mutants showing S. indica colonization, stained with WGA-AF 488, Hoechst and Proteostat. Penetration of fungal hyphae into uncleared cell corpses is marked with asterisks. Dotted yellow line indicates lateral root cap (LRC) cell corpse. Scale indicates 50 µm. (F) Representative images of the differentiation zone of S. indica-colonized WT and smb-3 roots at 10 dpi, stained with Evans blue. Scale indicates 100 μm.
+**Figure 3.:** For CLSM analyses, 7-day-old seedlings were inoculated with S. indica spores and roots were analyzed at 10 dpi. (A) Representative images of the meristematic zone of Arabidopsis WT and smb-3 mutants during S. indica colonization. WGA-AF 488 stain (green) was used to visualize fungal structures. Transmitted light (TL) images are also shown. Scale indicates 100 μm (B) Magnification of a smb-3 mutant root tip colonized with S. indica. Asterisks indicate penetration of hyphae into dead cells stained with propidium iodide (PI, Sigma-Aldrich) shown in magenta. Scale indicates 100 μm. (C) Representative images of the differentiation zone of WT and smb-3 mutants colonized with S. indica and stained with WGA-AF 488 and PI. Scale indicates 100 μm. (D) Representative images of the meristematic zone of WT and smb-3 mutant root tips inoculated with S. indica, stained with WGA-AF 488 and Proteostat (red). Scale indicates 100 μm (E) Magnification of the root differentiation zone of smb-3 mutants showing S. indica colonization, stained with WGA-AF 488, Hoechst and Proteostat. Penetration of fungal hyphae into uncleared cell corpses is marked with asterisks. Dotted yellow line indicates lateral root cap (LRC) cell corpse. Scale indicates 50 µm. (F) Representative images of the differentiation zone of S. indica-colonized WT and smb-3 roots at 10 dpi, stained with Evans blue. Scale indicates 100 μm.
 
 Interestingly, Evans blue cell death staining of S. indica-inoculated smb-3 mutants displayed a clearing of LRC cell corpses from the surface of smb-3 mutant roots over time, while mock-treated smb-3 mutant roots remained littered with LRC cell corpses (Figure 3F and Figure 1—figure supplement 1). This observation indicates that S. indica is able to degrade uncleared cell corpses, which likely provide additional nutrients that fuel fungal hypercolonization in the smb-3 mutant background.
 
-## The senescence associated plant nuclease BFN1 is exploited by beneficial microbes to facilitate root accommodation
+### The senescence associated plant nuclease BFN1 is exploited by beneficial microbes to facilitate root accommodation
 
 To further explore the role of root dPCD during S. indica accommodation in Arabidopsis, we performed transcriptome analysis, tracking developmental cell death-marker gene expression during different colonization stages (Olvera-Carrillo et al., 2015). The major regulator in LRCs, SMB, showed no significant changes in expression during fungal colonization (Figure 4A and C). However, in Arabidopsis colonized by S. indica, there was a significant decrease in BFN1 expression observed after 6 dpi (Figure 4B and C). To validate the RNA-Seq analysis, we performed whole-root qPCR of WT mock- and colonized-roots, confirming BFN1 downregulation at the onset of cell death in S. indica-colonized plants (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig4-v1.jpg)
+
+**Figure 4.:** RNA-Seq expression profiles of (A) SMB and (B) BFN1 in Arabidopsis roots mock-treated or inoculated with S. indica at 3, 6, and 10 dpi. The log2-transformed Transcript per Kilobase million (TPM) values are shown and the lines indicate average expression values among the 3 biological replicates. Asterisk indicates significantly different expression (adjusted p-value <0.05) (C) The heat map shows the expression values (TPM) of Arabidopsis dPCD marker genes with at least an average of 1 TPM across Arabidopsis roots mock-treated or inoculated with S. indica at 3, 6, and 10 dpi. The TPM expression values are log2 transformed and row-scaled. Genes are clustered using spearman correlation as distance measure. Each treatment displays the average of three biological replicates. The dPCD gene markers were previously defined (Olvera-Carrillo et al., 2015). (D) BFN1 expression in WT Arabidopsis roots during S. indica colonization at 8 and 11 dpi. RNA was isolated from three biological replicates, pooling 30 plants per conditions for qPCR analysis, comparing BFN1 expression with an Arabidopsis ubiquitin marker gene. Statistical significance was determined by one-way ANOVA and Tukey’s post hoc test (F [3, 8]=7263; p<0.05). (E) Representative CLSM images of the differentiation zone of mock- and S. indica- colonized pBFN1::NLS-tdTOMATO reporter roots at 7 dpi. The tdTOMATO signal (magenta) represents BFN1 expression and S. indica was stained with WGA-AF 488 (green). Scale indicates 100 µm. (F) Whole seedling scans of mock- and S. indica-treated pBFN1::NLS-tdTOMATO plants taken with a LI-COR Odyssey M imager at 7 dpi. Images show BFN1 expression via tdTOMATO signal in mock conditions and BFN1 expression in presence of S. indica (stained with WGA-AF 488). Scale indicates 5 mm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** CLSM images showing Z-stacks of the BFN1 promoter reporter line pBFN1::NLS-tdTOMATO show BFN1 expression via tdTOMATO signal (purple) accumulation in the nucleus of LRC cells and xylem cells. No significant changes in BFN1 expression in the root cap and xylem were observed in mock treated (A) and S. indica colonized (B) roots at 7dpi. Scale indicates 100 µm. (C) Mosaic scan of a mock-treated pBFN1::NLS-tdTOMATO reporter plant. Overview shows single planes of the primary root axis. White arrows indicate BFN1 expression in intact young epidermal cells, black arrows indicate BFN1 expression in mature epidermal cells post nuclear rupture of a 2-week-old seedling.
 
 While SMB expression is restricted to the LRC, BFN1 exhibits a broader expression pattern across various cell types and tissues, such as root cap cells, cells adjacent to emerging lateral root primordia, differentiating xylem tracheary elements, as well as senescent leaves, and abscission zones of flowers and seeds (Escamez et al., 2020; Farage-Barhom et al., 2008). This widespread expression establishes BFN1 as a key player in the general regulation of dPCD and senescence processes in various tissues in Arabidopsis. To visualize the extent of BFN1 downregulation upon S. indica colonization in different zones of the root, we used a transgenic BFN1 promoter-reporter line (pBFN1::NLS-tdTOMATO) (Huysmans et al., 2018). In agreement with the previously described GUS reporter lines (Farage-Barhom et al., 2008), we detected activation of the BFN1 promoter via accumulation of the fluorescent tdTOMATO signal in the nuclei of root cap and xylem cells in mock-treated roots (Figure 4—figure supplement 1). Additionally, we observed promoter activation in epidermal root cells of the differentiation zone (Figure 4E). In the distal region of the differentiation zone in young epidermal cells, the tdTOMATO signal was observed in nuclei, while in the basal region of the differentiation zone in older epidermal cells, the tdTOMATO signal appeared to be dispersed (Figure 4E, Figure 4—figure supplement 1). These findings indicate ongoing nuclear envelope breakdown as a hallmark of cell death (Wang et al., 2024) in the older part of the root, independent of fungal colonization and suggest activation of BFN1 during root epidermal cell aging/senescence. Next, we inoculated the pBFN1 reporter lines with S. indica and observed a reduction in promoter activity in epidermal cells that were in contact with the fungus compared with mock-treated roots (Figure 4E and F). BFN1 expression and nuclear localization in the root cap or xylem was not affected by S. indica colonization (Figure 4—figure supplement 1). This indicates that the downregulation of BFN1 by S. indica occurs mainly in epidermal cells of the differentiation zone and is regulated independently of SMB and its activity in the root cap.
 
 To assess the phenotypic effects of BFN1 downregulation, we analyzed Arabidopsis bfn1-1 null mutants (Fendrych et al., 2014) using the cell death and protein aggregates markers, Evans blue and Proteostat. Staining of bfn1-1 mutants with Evans blue showed an increase of cell remnants in the epidermal cell layer of the differentiation zone (Figure 5A and B), consistent with a proposed delay of dPCD and cell corpse clearance by BFN1 activity. Furthermore, while WT roots were devoid of protein aggregates, bfn1-1 mutants exhibited aggregates along the primary root axis, starting at the transition between elongation and differentiation zone. The meristematic zone remained free of protein aggregates (Figure 5C and D). These data suggest that the lack of BFN1 activity in the root cap, xylem, and senescent epidermis creates a general cellular stress in the roots that affects proteostasis in the differentiation zone (Figure 5—figure supplement 1). Similar to bfn1-1, WT roots colonized by S. indica showed increased Evans blue and Proteostat signal in the differentiation zone. Aggregated proteins were detected in colonized and adjacent non-colonized cells along the differentiation zone, suggesting a non-cell autonomous host response to the fungus (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig5-v1.jpg)
+
+**Figure 5.:** (A) Microscopy images of the differentiation zone of 14-day-old WT and bfn1-1 mutant roots, stained with Evans blue. Scale indicates 100 μm. (B) Relative quantification of Evans blue staining (refers to image shown in A), comparing 14-day-old WT and bfn1-1 mutants. Ten plants were used for each genotype. Data were normalized to the WT control. Statistical significance was determined using an unpaired, two-tailed Student’s t test (F [9, 9]=2.033; p<0.001). (C) Proteostat staining of 10-day-old WT and bfn1-1 mutant root tips. Scale indicates 100 μm. (D) Quantification of Proteostat staining (refers to image shown in C) using 4–5 10-day-old WT and bfn1-1 mutants. Statistical analysis was performed via one-way ANOVA and Tukey’s post hoc test (F [3, 14]=33,55; p<0.001). (E) Extraradical colonization of 10-day-old WT and bfn1-1 mutant plants, seed-inoculated with S. indica and stained with WGA-AF 488 (green). Roots were scanned with a LI-COR Odyssey M imager. Arrowheads indicate the position of the uncolonized root tips. Scale indicates 5 mm. (F) Relative quantification of extraradical colonization of bfn1-1 mutant and WT roots, using WGA-AF 488 signal as a proxy for fungal biomass (refers to image shown in E). Data were normalized to the WT control. Statistical comparisons were made by unpaired, two-tailed Student’s t test for unpaired samples (F [5, 5]=3.597; p<0.01). (G) Intraradical colonization of WT and bfn1-1 mutants was measured via qPCR. Roots from seven biological replicates were collected and washed to remove outer extraradical mycelium, pooling approximately 30 plants per time point and replicate for each genotype. Each time point was normalized to WT for relative quantification of colonization. Statistical analysis was performed via one-way ANOVA and Tukey’s post hoc test (F [5, 33]=5.358; p<0.01).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Images show Proteostat staining (red) of 10-day-old WT and bfn1-1 seedlings. Roots were scanned and captured with a LI-COR Odyssey M imager using the bright field (BF) and the 520 nm wavelength channel. Scale bar indicates 5 mm. (B) Relative quantification of Proteostat signal in WT and bfn1-1 roots. The statistical comparison was made by two-tailed Student’s t-test for unpaired samples (F [5, 5] = 1.005; p<0.001). (C) CLSM of differentiated cells of WT and bfn1-1 roots. Proteostat (red) and Hoechst (blue) channels are shown. Scale indicates 50 µm. (D) CLSM images of the differentiation zone of Arabidopsis WT and bfn1-1 roots inoculated with S. indica and stained with WGA-AF 488. Scale represents 50 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Evans blue staining of WT roots visualize S. indica-induced cell death in the differentiation zone at 12 dpi. Scale indicates 100 µm. (B) Quantification of S. indica induced cell death in WT Arabidopsis, measuring relative Evans blue staining intensity (representative images shown in A). Ten plants at 12 dpi were evaluated. Statistical analysis was performed with a two-tailed Student’s t test for unpaired samples (F [9, 8] = 2.248; p<0.05). (C) Representative images of S. indica-colonized WT seedlings stained with Proteostat (red) and WGA-AF 488 (green), showing S. indica-induced protein aggregation/misfolding. Magnification panel shows Proteostat staining in zones of the root where S. indica is not present (white arrowheads). Scale indicates 5 mm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/96266/elife-96266-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) qRT-PCR shows downregulation of BFN1 in Arabidopsis during colonization by S. vermifera and bacterial SynComs from H. vulgare (Hv) and A. thaliana. RNA was harvested from four replicates at 6 dpi, pooling 30 plants per replicate for each treatment. BFN1 expression levels are normalized to mock conditions. Statistical evaluation was performed via one-way ANOVA and Tukey’s post hoc test (F [43, 12] = 10.84; p<0.001). (B) Heatmap shows RNA-Seq expression of dPCD marker genes (Olvera-Carrillo et al., 2015) in mock-treated and S. vermifera-colonized Arabidopsis roots at 3, 6, and 10 dpi. TPM expression values are log2 transformed and row-scaled, showing an average of three biological replicates. Genes are clustered using Spearman correlation as distance measure. (C) BFN1 and SMB expression profiles corresponding to RNA-Seq expression. Asterisk indicates significantly different expression (adjusted p-value <0.05).
 
 To investigate the biological relevance of BFN1 downregulation during S. indica root colonization, we quantified extraradical fungal growth using the WGA-AF 488 stain. When comparing staining intensities of S. indica-inoculated bfn1-1 mutants and WT seedlings, we observed a significantly stronger fluorescence signal at the roots of bfn1-1 mutants, indicating a higher extraradical fungal colonization along the differentiation zone (Figure 5E and F and Figure 5—figure supplement 1). However, similar to WT roots, bfn1-1 mutants did not exhibit fungal colonization around the meristematic zone as observed in smb-3-colonized roots (Figure 5E). Quantification of intraradical colonization by qPCR, after removal of outer fungal mycelium, showed a significant increase of S. indica biomass in bfn1-1 mutants at later stages of interaction (Figure 5G). Together, these results emphasize that downregulation of BFN1 during colonization is beneficial for intra- and extraradical fungal accommodation in the differentiation zone.
 
@@ -90,52 +122,251 @@ In conclusion, our data show that tight regulation of host dPCD in epidermal- an
 
 ## Materials and methods
 
-## Fungal strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Serendipita indica)</td>
+      <td>DSM11827</td>
+      <td>German 362 Collection of Microorganisms and Cell Cultures, Braunschweig, Germany</td>
+      <td>DSM11827</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Arabidopsis thaliana)</td>
+      <td>WT Col-0</td>
+      <td>N-60000</td>
+      <td>Col-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>bfn1-1</td>
+      <td>Fendrych et al., 2014</td>
+      <td>GK-197G12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>smb-3</td>
+      <td>Fendrych et al., 2014</td>
+      <td>SALK_143526 C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pBFN1::NLS-tdTOMATO</td>
+      <td>Huysmans et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Proteostat Aggresome detection kit</td>
+      <td>Enzo Life Sciences</td>
+      <td>CAT# ENZ-51035–0025</td>
+      <td>0.5 µl/ml Proteostat and 0.5 µl/ml Hoechst 33342</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-polyQ(Mouse monoclonal)</td>
+      <td>Merck</td>
+      <td>MAB1574</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Actin(Rabbit polyclonal)</td>
+      <td>Agrisera</td>
+      <td>AS132640</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism8</td>
+      <td>https://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.net/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EmpiriaStudio Software</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:SCR_022512</td>
+      <td>v. 3.2.0.186</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LASX</td>
+      <td>https://www.leica-microsystems.com/</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AtUBI_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAAGCCGAAGAAGATCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AtUBI_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTCCTTCCTCAAACGCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FW_BFN1-A_qPCR</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCGTCAAGTCTGGTGAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RV_BFN1-A_qPCR</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACCCGGTTTAGTATCATGGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TEF_S. indica qPCR_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCAAGTTCTCCGAGCTCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TEF_S. indica qPCR_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAAGTGGTGGGTACTCGTT</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Odyssey M Imaging System</td>
+      <td>LI-COR Biosciences</td>
+      <td></td>
+      <td>Equipment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FV1000 confocal laser scanning microscope</td>
+      <td>Olympus</td>
+      <td></td>
+      <td>Equipment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSM Meta 710</td>
+      <td>Carl Zeiss Technology</td>
+      <td></td>
+      <td>Equipment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica M165 FC Microscope</td>
+      <td>Leica Microsystems</td>
+      <td></td>
+      <td>Equipment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CFX connect real time system</td>
+      <td>BioRad</td>
+      <td></td>
+      <td>Equipment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488 conjugated with Wheat Germ Agglutinin(WGA-AF) stain</td>
+      <td>Invitrogen</td>
+      <td>CAT# 11261</td>
+      <td>5 µl/mL from 1 mg/ml stock</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium iodide (PI) stain</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Evans blue stain</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS# 314-13-6</td>
+      <td>2 mM Evans blue staining concentration</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fungal strains and growth conditions
 
 Fungal experiments were performed with Serendipita indica strain DSM11827 (German Collection of Microorganisms and Cell Cultures, Braunschweig, Germany). S. indica was grown on complete medium (CM) containing 2% (w/v) glucose and 1.5% (w/v) agar (Hilbert et al., 2012). Fungal material was grown at 28 °C in the dark for 4 weeks before spore preparation. For additional experiments, S. vermifera (MAFF305830) was used and grown on MYP medium 7 g/l malt extract (Sigma-Aldrich), 1 g/l peptone (Sigma-Aldrich), 0.5 g/l yeast extract (Carl Roth) containing 1.5% agar at 28 °C in darkness for 3 weeks before mycelium preparation for root inoculation.
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 Seeds of Arabidopsis thaliana wild-type (WT) ecotype Columbia 0 (Col-0) and T-DNA insertion mutants (bfn1-1 [GK-197G12] and smb-3 [SALK_143526 C]) in Col-0 background were used for experiments. Seeds were surface sterilized in 70% ethanol for 15 min and 100% ethanol for 12 min, stratified at 4 °C in the dark for 3 days and germinated and grown on ½ MS medium (Murashige-Skoog Medium, with vitamins, pH 5.7, Duchefa Biochemie) containing 1% (w/v) sucrose and 0.4% (w/v) Gelrite (Duchefa Biochemie) under short-day conditions (8 hr light, 16 hr dark) with 130 μmol m-2 s-1 light and 22 °C/18 °C.
 
-## Fungal inoculation
+### Fungal inoculation
 
 One-week-old seedlings were transferred to 1/10 PNM (Plant minimal Nutrition Medium, 0.5 mM KNO3, 0.367 mM KH2PO4, 0.144 mM K2HPO4, 2 mM MgSO4 x H2O, 0.2 mM Ca(NO3)2, 0.25% (v/v) Fe-EDTA (0.56% w/v FeSO4 x7H2 O and 0.8% w/v Na2EDTA x 2H2O), 0.428 mM NaCl; pH-adjusted to 5.7 and buffered with 10 mM MES. For solid media, 0.4% (w/v) Gelrite (Duchefa Biochemie) was added) plates without sucrose, using 15–20 seedlings per plate. Under sterile conditions, spores of S. indica were scraped from agar CM plates using 0.002% Tween water (Roth), washed two times with ddH2O and pipetted in a volume of 2 ml on plant roots and surrounding area in a concentration of 5x105 spores per plate. ddH2O was used for inoculation of mock plants. For S. vermifera inoculation, mycelium was scrapped from plates in ddH2O, washed and added to Arabidopsis roots in a volume of 1 ml of a stock solution of 1 g / 50 ml.
 
 In case of experiments using seeds inoculation with S. indica, Arabidopsis seeds were surface sterilized, incubated with fungal spore solution at 5x105 concentration for 1 hr and plated on ½ MS plates (without sucrose).
 
-## Evans blue staining
+### Evans blue staining
 
 For the visualization of cell death in Arabidopsis roots, a modified protocol by Vijayaraghavareddy et al., 2017 was used. Roots were washed three times in ddH2O to remove loose external fungal mycelium and then stained for 15 min in 2 mM Evans blue (Sigma-Aldrich) dissolved in 0.1 M CaCl2 pH 5.6. Subsequently, roots were washed extensively with ddH2O for 1 hr and a Leica M165 FC microscope was used for imaging. Four pictures were taken along the main root axis of each plant and averaged together, for an overview of cell death in the differentiation zone of one root. To quantify Evans blue staining intensity, ImageJ was used to invert the pictures, draw out individual roots and measure and compare mean grey values.
 
-## Extraradical colonization assays
+### Extraradical colonization assays
 
 To quantify extraradical colonization of S. indica on Arabidopsis, seed-inoculated plants were grown for 10 days. Inoculated and mock-treated seedlings were stained directly on agar plate by pipetting 2 ml of 1 X Phosphate-buffered saline (PBS, 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4) solution containing Alexa Fluor 488 conjugated with Wheat Germ Agglutinin (5 µl/mL from 1 mg/ml stock; WGA-AF 488, Invitrogen). After 2 min of incubation, the roots were washed twice on the plate with 1 X PBS solution. The stained seedlings were transferred to a fresh ½ MS square plate (Greiner Bio-One). In order to perform a correct and focused scan of the agar plate with the roots, it was checked that the solid MS medium was flat and even and had no unevenness. To scan the agar plate, we used an Odyssey M Imaging System (LI-COR Biosciences) and the LI-COR Acquisition Software 1.1 (LI-COR Biosciences). In the software, we selected custom assay and then membrane. We selected the area in the agar plate to be scanned and selected the channels 488 (for WGA-Alexa Flour 488) and RGB trans (for bright field). We defined the focus offset between 3.5 mm and 4.0 mm (depending on the thickness of the MS medium). For resolution we selected 10 µm when scanning two plants or 100 µm when scanning several plants. Quantification of WGA-AF 488 fluorescence was performed using EmpiriaStudio Software (LI-COR Biosciences).
 
-## RNA extraction (intraradical colonization assay)
+### RNA extraction (intraradical colonization assay)
 
 To measure intraradical colonization via RNA extraction and PCR, plants were harvested at three time points around 7, 10, and 14 dpi. The roots were extensively washed with ddH2O and tissue paper was used to carefully wipe off mycelium on the surface of the roots. After cleaning, the roots were shock frozen in liquid nitrogen and RNA was extracted with TRIzol (Invitrogen, Thermo Fisher Scientific, Schwerte, Germany). After a DNase I (Thermo Fisher Scientific) treatment according to the manufacturer’s instructions to remove DNA, RNA was used to generate cDNA through the utilization of the Fermentas First Strand cDNA Synthesis Kit (Thermo Fisher Scientific).
 
-## Quantitative RT-PCR analysis
+### Quantitative RT-PCR analysis
 
 The quantitative real-time PCR (qRT-PCR) was performed using a CFX connect real time system (BioRad) with the following program: 95 °C 3 min, 95 °C 15 s, 59 °C 20 s, 72 °C 30 s, 40 cycles and melting curve analysis. Relative expression was calculated using the 2- ΔΔCT method (Livak and Schmittgen, 2001). qRT-PCR primers can be found in the Key Resources Table.
 
-## Filter trap analysis
+### Filter trap analysis
 
 Filter trap assays were performed as previously described (Llamas et al., 2023; Llamas et al., 2021). Protein extracts were obtained using native lysis buffer (300 mM NaCl, 100 mM HEPES pH 7.4, 2 mM EDTA, 2% Triton X-100) supplemented with 1 x plant protease inhibitor (Merck). Cell debris was removed by several centrifugation steps at 8000 x g for 10 min at 4 °C. The supernatant was separated, and protein concentration determined using the Pierce BCA Protein Assay Kit (Thermo Fisher). A cellulose acetate membrane filter (GE Healthcare Life Sciences) and 3 filter papers (BioRad, 1620161) were immersed in 1 x PBS and placed in a slot blot apparatus (Bio-Rad) connected to a vacuum system. The membrane was equilibrated by 3 washes with equilibration buffer (native buffer containing 0.5% SDS). 300, 200, and 100 µg of the protein extract were mixed with SDS at a final concentration of 0.5% and filtered through the membrane. The membrane was then washed with 0.2% SDS and blocked with 3% BSA in Tris-Buffered Saline 0.1% Tween (TBST, 50 mM Tris-CL, 150 mM NaCl, pH 7.5) for 30 minutes, followed by three washes with TBST. Incubation was performed with anti-polyQ [1:1000] (Merck, MAB1574). The membrane was washed 3 times for 5 min and incubated with secondary antibodies in TBST 3% BSA for 30 min. The membrane was developed using the Odyssey M Imaging System (LI-COR Biosciences). Extracts were also analyzed by SDS-PAGE and western blotting against anti-Actin [1:5000] (Agrisera, AS132640) to determine loading controls.
 
-## Confocal laser scanning microscopy (CLSM) and proteostat staining quantification
+### Confocal laser scanning microscopy (CLSM) and proteostat staining quantification
 
 CLSM images were acquired using either the FV1000 confocal laser scanning microscope (Olympus) or a Meta 710 confocal microscope with laser ablation 266 nm (Zeiss). All images were acquired using the same parameters between experiments. Excitation of WGA-AF 488 was done with an argon laser at 488 nm and the emitted light was detected with a hybrid detector at 500–550 nm. Proteostat was excited at 561 nm and the signal was detected between 590 and 700 nm. Hoechst was excited with a diode laser at 405 nm and the emitted light was detected with a hybrid detector at 415–460 nm.
 
-## Proteostat staining
+### Proteostat staining
 
 For the detection of aggregated proteins, we used the Proteostat Aggresome detection kit (Enzo Life Sciences). Seedlings were stained according to the manufacturer’s instructions. Seedlings were incubated with permeabilizing solution (0.5% Triton X-100, 3 mM EDTA, pH 8.0) for 30 minutes at 4 °C with gentle shaking. The seedlings were washed twice with 1 X PBS. Then the plants were incubated in the dark with 1 x PBS supplemented with 0.5 µl/ml Proteostat and 0.5 µl/ml Hoechst 33342 (nuclear stain) for 30 min at room temperature. Finally, the seedlings were washed twice with 1 x PBS and mounted on a slide for CLSM analysis or in mounted in fresh MS phytoagar plates for LI-COR analysis. Quantification of Proteostat fluorescence was performed using Fiji software or EmpiriaStudio Software (LI-COR Biosciences).
 
-## Transcriptomic analysis
+### Transcriptomic analysis
 
 Arabidopsis Col-0 WT roots were inoculated with S. indica. Arabidopsis roots were harvested from mock-treated plants and inoculated plants at four different time points post inoculation: 1, 3, 6, and 10 dpi. Three biological replicates were used for each condition. The RNA-seq libraries were generated and sequenced at US Department of Energy Joint Genome Institute (JGI) under a project proposal (Proposal ID: 505829) (Eichfeld et al., 2024; Zuccaro and Langen, 2020). For each sample, stranded RNA-Seq libraries were generated and quantified by qRT-PCR. RNA-Seq libraries were sequenced with Illumina sequencer. Raw reads were filtered and trimmed using the JGI QC pipeline. Filtered reads from each library were aligned to the Arabidopsis genome (TAIR10) using HISAT2 (Kim et al., 2015) and the reads mapped to each gene were counted using featureCounts (Liao et al., 2014). Samples harvested at 1 dpi were omitted from the analysis because we decided to focus on the time points at which the interaction between Arabidopsis and S. indica is well established. Differential gene expression analysis was performed using the R package DESeq2 (Love et al., 2014). Genes with an FDR adjusted p-value <0.05 were considered as differentially expressed genes (DEGs). The adjusted p-value refers to the transformation of the p-value obtained with the Wald test after considering multiple testing. To visualize gene expression, genes expression levels were normalized as Transcript Per kilobase million (TPM).
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses, except for the transcriptomic analysis, were performed using Prism8. Individual figures state the applied statistical methods, as well as p and F values. p-values and corresponding asterisks are defined as following, p<0.05 *, p<0.01**, p<0.001***.

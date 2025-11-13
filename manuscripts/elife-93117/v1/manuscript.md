@@ -23,17 +23,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03tgsfw79 Biosignal Research Center, Kobe University Kobe Japan
-2. https://ror.org/03tgsfw79 Department of Bioresource Science, Graduate School of Agricultural Science, Kobe University Kobe Japan
-3. https://ror.org/02kpeqv85 Department of Biophysics, Graduate School of Science, Kyoto University Kyoto Japan
-4. https://ror.org/03tgsfw79 Graduate School of Science, Kobe University Kobe Japan
-5. https://ror.org/04mb6s476 Proteome Homeostasis Research Unit, RIKEN Center for Integrative Medical Sciences Kanagawa Japan
-6. https://ror.org/024exxj48 Laboratory of Glycobiochemistry, Institute for Glyco-core Research (iGCORE), Gifu University Gifu Japan
-7. https://ror.org/03t78wx29 Division of Integrated Sciences for Life, Graduate School of Integrated Sciences for Life, Hiroshima University Hiroshima Japan
-8. https://ror.org/04wn7wc95 Graduate School of Pharmaceutical Sciences, Nagoya City University Nagoya Japan
-9. https://ror.org/055n47h92 Exploratory Research Center on Life and Living Systems (ExCELLS), National Institutes of Natural Sciences Okazaki Japan
-10. https://ror.org/055n47h92 Institute for Molecular Science (IMS), National Institutes of Natural Sciences Okazaki Japan
-11. https://ror.org/02kpeqv85 Institute for Advanced Study, Kyoto University Kyoto Japan
+1. Biosignal Research Center, Kobe University Kobe Japan ([ROR:03tgsfw79](https://ror.org/03tgsfw79))
+2. Department of Bioresource Science, Graduate School of Agricultural Science, Kobe University Kobe Japan ([ROR:03tgsfw79](https://ror.org/03tgsfw79))
+3. Department of Biophysics, Graduate School of Science, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+4. Graduate School of Science, Kobe University Kobe Japan ([ROR:03tgsfw79](https://ror.org/03tgsfw79))
+5. Proteome Homeostasis Research Unit, RIKEN Center for Integrative Medical Sciences Kanagawa Japan ([ROR:04mb6s476](https://ror.org/04mb6s476))
+6. Laboratory of Glycobiochemistry, Institute for Glyco-core Research (iGCORE), Gifu University Gifu Japan ([ROR:024exxj48](https://ror.org/024exxj48))
+7. Division of Integrated Sciences for Life, Graduate School of Integrated Sciences for Life, Hiroshima University Hiroshima Japan ([ROR:03t78wx29](https://ror.org/03t78wx29))
+8. Graduate School of Pharmaceutical Sciences, Nagoya City University Nagoya Japan ([ROR:04wn7wc95](https://ror.org/04wn7wc95))
+9. Exploratory Research Center on Life and Living Systems (ExCELLS), National Institutes of Natural Sciences Okazaki Japan ([ROR:055n47h92](https://ror.org/055n47h92))
+10. Institute for Molecular Science (IMS), National Institutes of Natural Sciences Okazaki Japan ([ROR:055n47h92](https://ror.org/055n47h92))
+11. Institute for Advanced Study, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
 
 † Corresponding author
 
@@ -49,13 +49,41 @@ The structure of N-glycans plays a key role in protein folding and degradation i
 
 If glycoproteins with M9 are not folded correctly within a certain period, mannose residues are trimmed from M9 first by EDEM2-S-S-TXNDC11 complex to M8B (George et al., 2020; Ninagawa et al., 2014) and then by EDEM3/1 to M7A, M6 and M5 exposing α1,6-bonded mannose on the glycoproteins (George et al., 2021; Hirao et al., 2006; Ninagawa et al., 2014), which are recognized by OS9 or XTP3B lectins for degradation (van der Goot et al., 2018). They are recruited to the HRD1-SEL1L complex on the ER membrane, retrotranslocated back to the cytosol, and degraded via the ubiquitin-proteasome system (Figure 1A). The series of these processes is collectively designated gpERAD (Ninagawa et al., 2021; Smith et al., 2011).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic presentation of N-glycan processing and glycoprotein ER-associated degradation (gpERAD). (B) Immunoblotting to determine endogenous protein expression of UGGT1 and UGGT2 in UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells using anti-UGGT1, anti-UGGT2, and anti-Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) antibodies. (C) Doubling time of wild-type (WT), UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells (n=3). (D) Cycloheximide chase (50 μg/ml) and subsequent immunoblotting experiments to determine the degradation rate of endogenous ATF6α in WT, EDEM-TKO and SEL1L-KO HCT116 cells treated with or without 0.5 mM 1-deoxynojirimycin (DNJ) treatment. DNJ was added 2 hr before the addition of CHX. Endogenous ATF6α was detected by immunoblotting using anti-ATF6α antibody. The means from three independent experiments with standard deviations (error bars) are plotted against the chase period (n=3). p-value: *<0.05, **<0.01. (E) Cycloheximide chase (50 μg/ml) and subsequent immunoblotting experiments to determine the degradation rate of endogenous ATF6α in WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells (n=3), as in (D) # denotes a non-specific band. p-value: *<0.05, **<0.01. (F) Cycloheximide chase (50 μg/ml) and subsequent immunoblotting experiments to determine the degradation rate of endogenous ATF6α in WT and UGGT-DKO HCT116 cells treated with or without 10 μg/ml kifunensine (Kif) (n=3), as in (D). Kif was added 1 hr before the addition of CHX. p-value: *<0.05, **<0.01. (G) Cycloheximide chase (50 μg/ml) and subsequent immunoblotting experiments to determine the degradation rate of endogenous ATF6α in WT and UGGT-DKO HCT116 cells treated with or without 0.5 mM DNJ (n=3), as in (D). DNJ was added 2 hr before the addition of cycloheximide (CHX). p-value: *<0.05, **<0.01. (H) Cycloheximide chase (50 μg/ml) and subsequent immunoblotting experiments to determine the degradation rate of endogenous ATF6α in WT and UGGT-DKO HCT116 cells treated with or without 1 mM castanospermine (CST) (n=3), as in (D). CST was added 2 hr before the addition of CHX. p-value: *<0.05, **<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Strategy for obtaining UGGT1-KO, UGGT2-KO, and UGGT-DKO cells from WT HCT116 cells. UGGT1-KO #2, UGGT2-KO #2, and UGGT-DKO #2 were mainly used in this report. (B) Schematic presentation of the UGGT1 and UGGT2 loci. (C) Strategy of the CRISPR/Cas9-mediated targeting of exon 2 of the UGGT1 gene. (D) Strategy of the CRISPR/Cas9-mediated targeting of exon 4 of the UGGT2 gene. (E) Genomic PCR to confirm recombination of the UGGT1 locus. (F) Genomic PCR to confirm recombination of the UGGT2 locus. (G) RT-PCR to amplify cDNA corresponding to full-length UGGT1 mRNA from wild-type (WT) and two independent UGGT1-KO cell lines (#1 and #2). (H) RT-PCR to amplify cDNA corresponding to full-length UGGT2 mRNA from WT and two independent UGGT2-KO cell lines (#1 and #2). (I) Schematic presentation of UGGT1 mRNA expressed in two independent UGGT1-KO cell lines (#1 and #2) and their translational products, based on the determined sequence of the amplified cDNA in (G). (J) Schematic presentation of UGGT2 mRNA expressed from the deleted and targeted alleles in UGGT2-KO cell lines and their translational products, based on the determined sequence of the amplified cDNA in (H).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunoblotting of cell lysates prepared from wild-type (WT) HCT116 and HeLa cells transiently expressing UGGT1-Myc3 or UGGT2-Myc3 by transfection using anti-Myc, anti-UGGT1, anti-UGGT2 and anti-GAPDH antibodies. The intensity of the lower band at the left in each panel is set to 1.00, and relative intensities are shown below. Anti-Myc antibody was used to estimate the ratio of the amounts of UGGT1-Myc3 and UGGT2-Myc3. Anti-UGGT1 antibody was used to estimate the amounts of endogenous UGGT1 and UGGT1-Myc3. Anti-UGGT2 antibody was used to estimate the amounts of endogenous UGGT2 and UGGT2-Myc3. These values were used to calculate the relative amounts of endogenous UGGT1 and UGGT2. Approximate expression level of UGGT2 relative to UGGT1 in HCT116 and HeLa cells is shown as % in the bottom panel. (B) Expression levels of BiP, XBP1(S), the spliced form of XBP1, ATF4, and GAPDH determined by immunoblotting of cell lysates, which were prepared from WT, WT treated with 300 nM Tg for 6 hr, UGGT1-KO, UGGT2-KO, and UGGT-DKO cells. (C) Schematic presentation of UGGT1 and UGGT2 proteins with potential N-glycosylation sites and catalytic domain indicated. Cell lysates were prepared from WT HCT116 cells, treated or not treated with endoglycosidase H (EndoH), and analyzed by immunoblotting using anti-UGGT1 and anti-UGGT2 antibodies. (D, E) Secretion of A1AT (D) and eythropoietin (EPO)-Myc3 (E) by WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells. Cells were transfected with plasmid to express A1AT or EPO-Myc3. Twenty-four hours later, cells were pulse-labeled with 35S-methionine and cysteine for 20 min and then chased for the indicated periods, followed by immunoprecipitation of A1AT or EPO-Myc3 from cells and medium using anti-A1AT or anti-Myc antibody, respectively, and subsequent subjection to reducing SDS-PAGE and autoradiography (n=3). The amount of A1AT or EPO-Myc3 in WT cells at 0 min was set as 100%. The means from three independent experiments with standard deviations (error bars) were plotted against the chase period. (F) Maturation of hemagglutinin (HA) in WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells. Pulse-chase experiments were conducted using various cells transfected with plasmid to express hemagglutinin (HA), followed by immunoprecipitation of HA from cells using anti-HA antibody (n=3), as in (D). The immunoprecipitates were digested with EndoH prior to subjection to reducing SDS-PAGE. The amount of HA with high-mannose type N-glycan at time 0 hr in WT cells was set as 100%.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic presentation of the SEL1L locus. (B) Strategy of the Transcription activator-like effector nuclease (TALEN)-mediated targeting of exon 1 of the SEL1L gene. (C) Genomic PCR to confirm recombination of the SEL1L locus. (D) RT-PCR to amplify cDNA corresponding to full-length SEL1L mRNA from wild-type (WT) and two independent SEL1L-KO cell lines (#1 and #2). (E) Immunoblotting of SEL1L protein in WT and two independent SEL1L-KO cell lines (#1 and #2) using anti-SEL1L antibody. (F) Doubling time of WT and two independent SEL1L-KO cell lines (#1 and #2).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A–C) Elution profiles of N-glycans from amide column prepared from total cellular glycoproteins of wild-type (WT) (A), UGGT1/2-double knockout (DKO) (B), and EDEM-triple knockout (TKO) (C) cells treated with or without 0.5 mM DNJ for 16 hr. Each peak was further analyzed by the ODS column to determine the exact amount of each N-glycan composition.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A–D) Isomer composition of oligomannose-type N-glycans prepared from total cellular glycoproteins of wild-type (WT) cells (A), UGGT-DKO cells (B) and EDEM-TKO cells (C) treated with or without 0.5 mM DNJ for 16 hr, as well as of untreated WT, UGGT-DKO and EDEM-TKO cells (D). This experiment was performed once.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A). Immunoblotting to determine the effect of treatment with 0.5 mM DNJ or 1 mM CST for 6 hr on exogenously expressed CD3δ-ΔTM-HA in wild-type (WT) HCT116 cells. (B, C) Elution profiles of N-glycans from amide column prepared from total cellular glycoproteins of WT (B), and UGGT-DKO (C) cells treated with or without 1mM CST for 16 hr. Each peak was further analyzed by the ODS column to determine the exact amount of each N-glycan composition. (D) Isomer composition of oligomannose-type N-glycans prepared from total cellular glycoproteins of WT and UGGT-DKO cells untreated or treated with 1 mM CST for 16 hr. This experiment was performed once.
+
 However, how the fate (folding versus degradation) of glycoprotein is determined in the ER is not clearly understood, and remains one of the biggest issues in the field of ER protein quality control. UGGTs appear to be among the key enzymes determining this. UGGTs have been shown to contribute to glycoprotein folding through their reglucosylation activity (Helenius and Aebi, 2004; Pearse et al., 2010; Sousa et al., 1992; Tessier et al., 2000), but seem not to affect ERAD, because it was previously reported that the presence of one glucose in the A branch of N-glycans did not change the timing of substrate degradation as follows Tannous et al., 2015: MI8-5 Chinese hamster ovary cells are deficient in the dolichol-P-glucose–dependent glycosyltransferase termed Alg6, and therefore produce only glycoproteins with N-glycans lacking glucoses (M9). In these cells, N-glycans with one glucose are produced only by the action of UGGTs. Accordingly, the monoglucosylated state is maintained by treatment of MI8-5 with the glucosidase inhibitor 1-deoxynojirimycin (DNJ). It was found that such trapping of glycoproteins in a monoglucosylated state delayed their efflux from the ER, as expected, but did not affect their rate of degradation. The selection for the degradation process seemed to progress in a dominant manner that was independent of the glucosylation state of the A-branch on the substrate glycans.
 
 We consider that it has not been directly examined whether UGGT-mediated reglucosylation of N-glycan is involved in the degradation of glycoproteins in the ER. Here, we generated UGGT1-knockout (KO), UGGT2-KO, and UGGT-double KO (DKO) cell lines to investigate this involvement. Surprisingly, we found that the degradation of misfolded and unstable glycoproteins was markedly accelerated in UGGT1-KO and DKO cells. Our work has identified UGGT1 as a regulator of both protein folding and degradation in the ER and thus emphasizes the importance of UGGT1 in ER protein quality control.
 
 ## Results
 
-## Generation of knockout cell lines of UGGTs
+### Generation of knockout cell lines of UGGTs
 
 To explore the roles of UGGT1 and UGGT2 in ERAD, UGGT1-KO, UGGT2-KO, and UGGT-DKO cell lines were generated from HCT116 diploid cells derived from human colonic carcinoma using Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)-Cas9. Gene disruptions of UGGT1 and UGGT2 were confirmed at the genome, mRNA, and protein level (Figure 1B; Figure 1—figure supplement 1A–J). The growth rate of the KO cell population was not significantly altered (Figure 1C).
 
@@ -63,7 +91,7 @@ Previously, the protein level of UGGT2 was estimated to be 4% relative to that o
 
 In UGGT1-KO and UGGT-DKO cells but not in UGGT2-KO cells, the secretion efficiency of α1-antitrypsin (A1AT) and erythropoietin (EPO) determined by pulse-chase experiments using 35S was decreased (Figure 1—figure supplement 2D, E). In UGGTs-KO cells, maturation of hemagglutinin (HA) from oligomannose type to complex type was delayed, as reported previously (Figure 1—figure supplement 2F; Hung et al., 2022). These results confirmed the establishment of KO cells for UGGTs, which show the expected phenotype with UGGT1 involved in the maturation of nascent polypeptides.
 
-## Effect of UGGT1/2 knockout on ERAD
+### Effect of UGGT1/2 knockout on ERAD
 
 We then examined the effect of UGGT1/2 knockout on ERAD. We previously showed that ATF6α functions as an unfolded protein response (UPR) sensor/transducer but is a somewhat unfolded protein that is constitutively subjected to gpERAD (Haze et al., 1999; Horimoto et al., 2013). The half-life of ATF6α in WT HCT116 cells was less than 2 hr and degradation of ATF6α was blocked almost completely in SEL1L-KO cells (the construction and characterization of these KO cells is described in Figure 1—figure supplement 3) and in EDEM1/2/3-triple KO (TKO) HCT116 cells (Figure 1D), as was shown previously (Horimoto et al., 2013; Ninagawa et al., 2014). Strikingly, the degradation of ATF6α was markedly accelerated in UGGT1-KO and UGGT-DKO cells but not in UGGT2-KO cells (Figure 1E). These findings revealed for the first time that UGGT1 is involved in ERAD. The fact that ATF6α was stabilized in UGGT-DKO cells treated with a mannosidase inhibitor, kifunensine, as in WT cells treated with kifunensine, indicated that the acceleration of ATF6α degradation still required mannose trimming (Figure 1F).
 
@@ -75,25 +103,33 @@ We next examined the effect of UGGT1/2 knockout on the degradation of NHK, a sol
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig2-v1.jpg)
 
-**Figure 2.:** (A) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of null hong kong (NHK) in wild-type (WT), UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells transfected with plasmid to express NHK (n=3). The radioactivity of each band was determined and normalized with the value at chase period 0 hr. The means from three independent experiments with standard deviations (error bars) are plotted against the chase period (n=3). p-value: *<0.05, **<0.01. (B) Rescue experiments using WT and UGGT1-KO HCT116 cells transfected with plasmid to express NHK with or without co-transfected plasmid to express Myc-UGGT1 or Myc-UGGT1-D1358A (n=3), as in (A). p-value: *<0.05, **<0.01. (C) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of NHK-QQQ in WT, UGGT1-KO and UGGT2-KO HCT116 cells transfected with plasmid to express NHK-QQQ (n=3), as in (A). (D) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of NHK in WT HCT116 cells transfected with plasmid to express NHK with or without co-transfected plasmid to express Myc-UGGT1 and/or Myc-CNX (n=3), as in (A). p-value: *<0.05, **<0.01. (E) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of NHK in WT HCT116 cells transfected with plasmid to express NHK together with or without co-transfected plasmid to express EDEM2-Flag, EDEM3-Flag, Myc-UGGT1 and/or Myc-CNX (n=3), as in (A). p-value: *<0.05, **<0.01.Figure 2—source data 1.Figure 2A–E.Figure 2—source data 2.Figure 2A–E.
+**Figure 2.:** (A) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of null hong kong (NHK) in wild-type (WT), UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells transfected with plasmid to express NHK (n=3). The radioactivity of each band was determined and normalized with the value at chase period 0 hr. The means from three independent experiments with standard deviations (error bars) are plotted against the chase period (n=3). p-value: *<0.05, **<0.01. (B) Rescue experiments using WT and UGGT1-KO HCT116 cells transfected with plasmid to express NHK with or without co-transfected plasmid to express Myc-UGGT1 or Myc-UGGT1-D1358A (n=3), as in (A). p-value: *<0.05, **<0.01. (C) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of NHK-QQQ in WT, UGGT1-KO and UGGT2-KO HCT116 cells transfected with plasmid to express NHK-QQQ (n=3), as in (A). (D) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of NHK in WT HCT116 cells transfected with plasmid to express NHK with or without co-transfected plasmid to express Myc-UGGT1 and/or Myc-CNX (n=3), as in (A). p-value: *<0.05, **<0.01. (E) Pulse-chase and subsequent immunoprecipitation experiments using anti-α1-PI antibody to determine the degradation rate of NHK in WT HCT116 cells transfected with plasmid to express NHK together with or without co-transfected plasmid to express EDEM2-Flag, EDEM3-Flag, Myc-UGGT1 and/or Myc-CNX (n=3), as in (A). p-value: *<0.05, **<0.01.
 
 We then examined whether the CNX/CRT cycle competes with gpERAD for substrates. We found that simultaneous overexpression of Myc-CNX and Myc-UGGT1 significantly retarded NHK degradation (Figure 2D), while simultaneous overexpression of EDEM2 and EDEM3 accelerated NHK degradation (Figure 2E, right top panel), as previously reported (Hirao et al., 2006; Mast et al., 2005). Importantly, such accelerated degradation of NHK was compromised by co-overexpression of Myc-CNX and Myc-UGGT1 (Figure 2E, right bottom panel), revealing a tug of war between the CNX/CRT cycle and gpERAD.
 
-## Effect of UGGT1/2 knockout on folded and functional proteins
+### Effect of UGGT1/2 knockout on folded and functional proteins
 
 We examined the effect of UGGT1/2 knockout on the stability of ER-localized endogenous proteins and found that they were stable both in WT and in UGGT-DKO cells no matter whether they were glycoproteins (Grp170, Sil1, and ribophorin I) or non-glycoproteins (CRT) (Figure 3A–D and Figure 3—figure supplement 1A, B). Similarly, the activity of the Golgi-resident glycosyltransferase GnT-V (MGAT5) with six putative N-glycosylation sites (Hirata et al., 2023) was similar in WT, UGGT1-KO, UGGT2-KO and UGGT-DKO cells (Figure 3E and Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Cycloheximide chase (50 μg/ml) and subsequent immunoblotting experiments to determine the degradation rate of endogenous Grp170 (A), Sil1 (B) and CRT (C) in wild-type (WT) and UGGT-DKO HCT116 cells using the respective antibody (n=3). (D) [left] Cycloheximide chase and subsequent immunoblotting experiments to determine the degradation rate of endogenous Ribophorin I in WT and UGGT-DKO HCT116 cells using anti-Ribophorin antibody (n=3), as in Figure 1D. [right] Pulse-chase and subsequent immunoprecipitation experiments using anti-Flag antibody to determine the degradation rate of rRI332-Flag in WT, UGGT1-KO, UGGT2-KO and UGGT-DKO HCT116 cells transfected with plasmid to express rRI332-Flag (n=3), as in Figure 2A. p-value: *<0.05, **<0.01. (E) Determination of N-acetylglucosaminyltransferase-V (GnT-V) activity in cell lysates of WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells (n=3). (F) Pulse-chase and subsequent immunoprecipitation experiments using anti-ER membrane protein complex subunit 1 (EMC1) antibody to determine the degradation rate of endogenous EMC1 and EMC1-ΔPQQ-Flag in WT, UGGT1-KO, UGGT2-KO and UGGT-DKO HCT116 cells transfected with plasmid to express EMC1-ΔPQQ-Flag (n=3), as in Figure 2A. p-value: *<0.05, **<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic structures of human Grp170, human Sil1, human CRT, human N-acetylglucosaminyltransferase-V (GnT-V), human Ribophorin I, rat Ribophorin I, human ER membrane protein complex subunit 1 (EMC1), and human EMC1-ΔPQQ-Flag with potential N-glycosylation sites indicated. It has not been confirmed whether two N-glycans are attached to human and rat Ribophorin I. Sequence identities between human and rat Ribophorin I are shown as percentages. rRI332-Flag lacks aa 333–606 of rat Ribophorin I. The positions of PQQ-like and transmembrane domains in EMC1 are indicated. (B) Immunoblotting with respective antibodies of wild-type (WT) HCT116 cell lysates treated with or without endoglycosidase H (EndoH).
 
 Interestingly, a truncated version of rat ribophorin I lacking its C-terminal region (aa333-606), termed rRI332-Flag, (Figure 3—figure supplement 1A; de Virgilio et al., 1998; Mueller et al., 2006) was unstable in WT cells compared with ribophorin I when expressed by transfection, and its degradation rate was accelerated in UGGT1-KO and UGGT-DKO cells but not in UGGT2-KO cells (Figure 3D, right panel), similar to ATF6α and NHK.
 
 EMC1 is a type I transmembrane protein with three N-glycosylation sites, and is involved in the insertion of membrane proteins into the ER membrane (Jonikas et al., 2009; Shurtleff et al., 2018). Endogenous EMC1 was a relatively stable protein in both WT and UGGT-DKO cells; however, when EMC1-ΔPQQ lacking the PQQ domain was expressed by transfection, the degradation rate of EMC1-ΔPQQ was accelerated in UGGT1-KO and UGGT-DKO cells but not in UGGT2-KO cells (Figure 3F), similar to the case of ribophorin I vs rRI332-Flag. Thus, UGGT1-mediated reglucosylation affects the fate of unstable proteins but not stable proteins.
 
-## UGGT1 is required for the proper functioning of ATF6α
+### UGGT1 is required for the proper functioning of ATF6α
 
 Finally, we investigated the physiological significance of the prevention of early degradation of substrates by UGGT1. Upon ER stress (accumulation of unfolded proteins in the ER), a precursor form of ATF6α,designated ATF6α(P), is cleaved at the Golgi to produce the nucleus-localizing form of ATF6α, designated ATF6α(N), which transcriptionally activates promoters containing cis-acting ER stress response element (ERSE) or UPR element (UPRE) (Mori, 2000; Yoshida et al., 1998), but not the ATF4 promoter, which is translationally activated in response to ER stress (Lu et al., 2004). Degradation of ATF6α(P) was accelerated in UGGT1-KO and UGGT-DKO cells but not in UGGT2-KO cells (Figure 1E), and accordingly, the protein expression level of endogenous ATF6α(P) was significantly decreased in UGGT1-KO and UGGT-DKO cells but not in UGGT2-KO cells (Figure 4A). We noticed conformational change in ATF6α(P), as the remaining ATF6α(P) in UGGT1-KO cells tended to have a more rigid structure that averts degradation, as suggested by its slightly lower sensitivity to trypsin (Figure 4B); a trypsin digestion assay can evaluate the rigidity of the protein structure (George et al., 2020; Liu et al., 2016; Ninagawa et al., 2015).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93117/elife-93117-fig4-v1.jpg)
 
-**Figure 4.:** (A) Immunoblotting to determine the protein level of endogenous ATF6α(P) in wild-type (WT), UGGT1-KO, UGGT2-KO, UGGT-DKO, and ATF6α-KO HCT116 cells using anti-ATF6α antibody (n=3). p-value: *<0.05. (B) The same amounts of proteins in cell lysates from WT and UGGT1-KO cells were treated with the indicated concentration of trypsin for 15 min at room temperature. Enzymatic activity of trypsin was terminated by the addition of Laemmli SDS sample buffer containing 100 mM DTT and a 10 x protease inhibitor cocktail. Immunoblotting was conducted as in Figure 1D, using anti-ATF6α and anti-Sil1 antibodies. In electrophoresis for the detection of ATF6α, loaded UGGT1-KO samples contained twice as much protein as loaded WT samples to compensate for the decrease in the level of ATF6α(P). (C–E) WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells were incubated in the presence of 300 nM thapsigargin (Tg) for the indicated periods. The levels of endogenous ATF6α(P), ATF6α(N), and Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) were determined by immunoblotting. Intensity of the unstressed ATF6α(P) band (0 hr) was set to 100%. # indicates a non-specific band. p-value: *<0.05, **<0.01. (F–H) WT, UGGT1-KO, UGGT2-KO, UGGT-DKO, and ATF6α-KO HCT116 cells were transiently transfected with the ER stress responsive element (ERSE) (D), UPR element (UPRE) (E), or activating transcription factor 4 (ATF4) (F) reporters. Twenty-four hours after the transfection, cells were treated with 300 nM thapsigargin (Tg) for 6 hr and then harvested to determine luciferase activity (n=3). Relative activity of Luciferase to Renilla, and fold induction of Tg + relative to Tg – are shown. p-value: *<0.05, **<0.01. (I) Crystal violet assay to determine endoplasmic reticulum (ER) stress sensitivity of WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells. An equal number of cells of each cell line treated with 300 nM or 600 nM Tg for 4 hr were spread on 24-well plates and cultured without Tg for 5 d. Resulting HCT116 cells were stained with crystal violet and photographed, and then stained cells were solubilized with 1% SDS, and absorbance of the resulting solution was measured at 570 nm. Cell viability in ER-stressed cells was calculated as the ratio of A570 relative to that obtained with unstressed cells. p-value: *<0.05, **<0.01.Figure 4—source data 1.Figure 4A–E.Figure 4—source data 2.Figure 4A–E.
+**Figure 4.:** (A) Immunoblotting to determine the protein level of endogenous ATF6α(P) in wild-type (WT), UGGT1-KO, UGGT2-KO, UGGT-DKO, and ATF6α-KO HCT116 cells using anti-ATF6α antibody (n=3). p-value: *<0.05. (B) The same amounts of proteins in cell lysates from WT and UGGT1-KO cells were treated with the indicated concentration of trypsin for 15 min at room temperature. Enzymatic activity of trypsin was terminated by the addition of Laemmli SDS sample buffer containing 100 mM DTT and a 10 x protease inhibitor cocktail. Immunoblotting was conducted as in Figure 1D, using anti-ATF6α and anti-Sil1 antibodies. In electrophoresis for the detection of ATF6α, loaded UGGT1-KO samples contained twice as much protein as loaded WT samples to compensate for the decrease in the level of ATF6α(P). (C–E) WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells were incubated in the presence of 300 nM thapsigargin (Tg) for the indicated periods. The levels of endogenous ATF6α(P), ATF6α(N), and Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) were determined by immunoblotting. Intensity of the unstressed ATF6α(P) band (0 hr) was set to 100%. # indicates a non-specific band. p-value: *<0.05, **<0.01. (F–H) WT, UGGT1-KO, UGGT2-KO, UGGT-DKO, and ATF6α-KO HCT116 cells were transiently transfected with the ER stress responsive element (ERSE) (D), UPR element (UPRE) (E), or activating transcription factor 4 (ATF4) (F) reporters. Twenty-four hours after the transfection, cells were treated with 300 nM thapsigargin (Tg) for 6 hr and then harvested to determine luciferase activity (n=3). Relative activity of Luciferase to Renilla, and fold induction of Tg + relative to Tg – are shown. p-value: *<0.05, **<0.01. (I) Crystal violet assay to determine endoplasmic reticulum (ER) stress sensitivity of WT, UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cells. An equal number of cells of each cell line treated with 300 nM or 600 nM Tg for 4 hr were spread on 24-well plates and cultured without Tg for 5 d. Resulting HCT116 cells were stained with crystal violet and photographed, and then stained cells were solubilized with 1% SDS, and absorbance of the resulting solution was measured at 570 nm. Cell viability in ER-stressed cells was calculated as the ratio of A570 relative to that obtained with unstressed cells. p-value: *<0.05, **<0.01.
 
 The conversion from ATF6α(P) to ATF6α(N) is a hallmark of ATF6α activation. The amount of ATF6α(N) was significantly decreased in UGGT1-KO and UGGT-DKO cells but not in UGGT2-KO cells compared with WT cells after the treatment with thapsigargin (Tg), an inhibitor of the ER calcium pump, which thereby induces ER stress (Figure 4C–E).
 
@@ -117,54 +153,197 @@ Our work focusing on the function of mammalian UGGT1 greatly advances the unders
 
 ## Materials and methods
 
-## Statistics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line</td>
+      <td>Colorectal carcinoma</td>
+      <td>ATCC</td>
+      <td>HCT116;RRID:CVCL_0291</td>
+      <td>Authenticated</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3xFlag-CMV-14</td>
+      <td>Ninagawa et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DT-A-pA/loxP/PGK-Puro-pA/loxP</td>
+      <td>Ninagawa et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DT-A-pA/loxP/PGK-Hygro-pA/loxP</td>
+      <td>Tsuda et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA;Rabbit polyclonal</td>
+      <td>Recenttec</td>
+      <td>Cat#:R4-TP1411100</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA;Mouse polyclonal</td>
+      <td>Recenttec</td>
+      <td>Cat#:R4-TM1422100</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-UGGT1;Rabbit polyclonal</td>
+      <td>Sigma</td>
+      <td>Cat#:HPA015127</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-UGGT2;Rabbit polyclonal</td>
+      <td>GeneTex</td>
+      <td>Cat#:GTX103837;RRID:AB_11164993</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH;Rabbit polyclonal</td>
+      <td>Trevigen</td>
+      <td>Cat#:2275-PC-100</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc;Rabbit polyclonal</td>
+      <td>MBL</td>
+      <td>Cat#:MBL562</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc;Mouse monoclonal</td>
+      <td>Wako</td>
+      <td>Cat#:011–21874</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATF6; Rabbit polyclonal</td>
+      <td>Haze et al., 1999</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-A1AT;Rabbit polyclonal</td>
+      <td>Dako</td>
+      <td>Cat#:A0012</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Flag;Mouse monoclonal</td>
+      <td>Sigma</td>
+      <td>Cat#:F3165</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Grp170; Rabbit polyclonal</td>
+      <td>GeneTex</td>
+      <td>Cat#:GTX102255;RRID:AB_1950534</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sil1;Rabbit polyclonal</td>
+      <td>GeneTex</td>
+      <td>Cat#:GTX116755;RRID:AB_10617803</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ribophorin I; Rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat#:ab198508</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CRT;Rabbit monoclonal</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#:ADI-SPA-600;RRID:AB_10618853</td>
+      <td>WB (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Statistical analysis was conducted using Student’s t-test, with probability expressed as *p<0.05 and **p<0.01 for all figures.
 
-## Construction of plasmids
+### Construction of plasmids
 
 Recombinant DNA techniques were performed using standard procedures (Sambrook et al., 1989) and the integrity of all constructed plasmids was confirmed by extensive sequencing analyses. Using 3xMyc-Fw and 3xMyc-Rv primers, a Myc3 fragment was obtained from ATF6α(C)-TAP2 (Myc3-TEV-ProteinA) (George et al., 2021) and inserted into A p3xFlag-CMV-14 expression vector (Sigma) at the site of BamHI to construct p3xMyc-CMV-14 expression vector. Full-length open reading frame of human UGGT1 or UGGT2 was amplified using PrimeSTAR HS DNA polymerase and a pair of primers, namely, UGGT1-cloningFw and UGGT1-cloningRv for UGGT1, and UGGT2-cloningFw and UGGT2-cloningRv for UGGT2, respectively, from a cDNA library of HCT116 which was prepared using Moloney murine leukemia virus reverse transcriptase (Invitrogen), as described previously (Ninagawa et al., 2014). Site-directed mutagenesis was carried out with DpnI to construct UGGT1-D1358A-Myc3 using UGGT1-D1358AFw and UGGT1-D1358Arv primers and DpnI. A partial open reading frame of Rat Ribophorin I was amplified using a pair of primers, namely, RatRI332-cloningFw and RatRI332-cloningRv, and inserted into p3xFlag-CMV-14 or p3xMyc-CMV-14 between the HindIII and KpnI sites to construct RI332-Flag or RI332-Myc, respectively. Expression vectors of NHK, CD3-δ-ΔTM-HA, CD3-δ-ΔTM-<33–7aa-34>-HA, EMC1-ΔPQQ-Flag, A1AT, and Hemagglutinin were described previously (Ninagawa et al., 2015; Ninagawa et al., 2014; Ninagawa et al., 2020).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HCT116 cells (ATCC CCL-247) and HeLa cells (ATCC CCL-2) were cultured in Dulbecco’s modified Eagle’s medium (glucose 4.5 g/liter) supplemented with 10% fetal bovine serum, 2 mM glutamine, and antibiotics (100 U/ml penicillin and 100 mg/ml streptomycin) at 37 °C in a humidified 5% CO2/95% air atmosphere. Transfection was performed using polyethylenimine max (Polyscience) according to the manufacturer’s instructions. EndoH was obtained from Calbiochem; cycloheximide from Sigma; MG132 from Peptide Institute; and Z-vad-fmk from Promega. Absence of mycoplasma contamination was confirmed using MycoBlue Mycoplasma Detector (Vazyme). STR profiling was conducted.
 
-## Immunological techniques
+### Immunological techniques
 
 Immunoblotting analysis was carried out according to the standard procedure (Sambrook et al., 1989) as described previously (Ninagawa et al., 2011). Chemiluminescence obtained using Western Blotting Luminol Reagent (Santa Cruz Biotechnology) was detected using a LAS-3000 mini Lumino-Image analyzer (Fuji Film). The antibodies used are listed in the Supplemental material. Anti-human ATF6α (Haze et al., 1999) and EMC1 (Ninagawa et al., 2015) antibodies were produced previously. Immunoprecipitation was performed using the described antibodies and protein G- or A-coupled Sepharose beads (GE Healthcare). Beads were washed with high salt buffer (50 mM Tris/Cl, pH 8.0, containing 1% NP-40 and 150 mM NaCl) twice, washed with PBS, and boiled in Laemmli’s sample buffer.
 
-## N-glycan profiling
+### N-glycan profiling
 
 Pyridylamination and structural identification of N-glycans of total cellular glycoproteins were performed as described previously (Horimoto et al., 2013; Ninagawa et al., 2014).
 
-## Pulse-chase experiments
+### Pulse-chase experiments
 
 Pulse-chase experiments using 9.8 Mbq per dish of EASY-TAG EXPRESS Protein labeling mix [35S] (PerkinElmer) and subsequent immunoprecipitation using suitable antibodies and protein G or A-coupled Sepharose beads (GE Healthcare) were performed according to our published procedure (Ninagawa et al., 2014).
 
-## CRISPR/Cas9 method to generate KO cell lines of UGGT1
+### CRISPR/Cas9 method to generate KO cell lines of UGGT1
 
 Using the pair of primers UGGT1sgRNAFw and Rv, the sequence of the BbsI site of px330 (Addgene) was converted to that to express sgRNA for cleavage at exon 2 of the UGGT1 gene. PuroR and backbone fragments were amplified by PCR from DT-A-pA-loxP-PGK-Puro-pA-loxP (Ninagawa et al., 2014) using UGGT1-PuroFw and Rv primers, and UGGT1-BackboneFw and UGGT1-BackboneRv primers, respectively. Left and right arms were amplified by PCR from the human genome originated from HCT116 using UGGT1-LarmFw and Rv, and UGGT1-RarmFw and Rv. Four fragments were built up using an NEBuilder HiFi DNA Assembly Cloning Kit (New England Biolabs) to create pKO-hUGGT1-Puro, which was transfected into HCT116 cells with sgRNA expression vector for UGGT1. Clones with puromycin (0.5 μg/ml) resistance were selected.
 
-## CRISPR/Cas9 method to generate KO cell lines of UGGT2
+### CRISPR/Cas9 method to generate KO cell lines of UGGT2
 
 Using the pair of primers UGGT2sgRNAFw and Rv, the sequence of the BbsI site of px330 (Addgene) was converted to that to express sgRNA for cleavage at exon 4 of the UGGT2 gene. Hygror and backbone fragments were amplified by PCR from DT-A-pA-loxP-PGK-Hygro-pA-loxP (Tsuda et al., 2019) using UGGT2-HygroFw and Rv primers, and UGGT2-BackboneFw and UGGT2-BackboneRv primers, respectively. Left and right arms were amplified by PCR from the human genome originated from HCT116 using UGGT2-LarmFw and Rv primers, and UGGT2-RarmFw and Rv primers, respectively. Four fragments were built up using an NEBuilder HiFi DNA Assembly Cloning Kit to create pKO-hUGGT2-Hygro, which was transfected into HCT116 cells with sgRNA expression vector for UGGT2. Clones with hygromycin (300 μg/ml) resistance were selected.
 
-## TALEN method to generate KO cell lines of SEL1L
+### TALEN method to generate KO cell lines of SEL1L
 
 Platinum TALEN plasmid was constructed as described previously (Ninagawa et al., 2014; Sakuma et al., 2013). In brief, each DNA-binding module was assembled into ptCMV-153/47-VR vectors using the two-step Golden Gate cloning method. The assembled sequence was 5-TGCTGCTGTGTGCGGTGCTgctgagcttggccTCGGCGTCCTCGGGTCA-3, where uppercase and lowercase letters indicate TALEN target sequences and spacer sequences, respectively.
 
-## Reporter assay
+### Reporter assay
 
 Twenty-four hours after transfection, HCT116 cells cultured in a 24-well plate were washed with PBS and lysed in Luciferase Assay Lysis Buffer (Toyo Bnet). Luciferase activity was determined using PicaGene Dual-luciferase reporter assay reagent (Toyo Bnet). Relative luciferase activity was defined as the ratio of firefly luciferase activity to renilla luciferase activity. ERSE, UPRE, and ATF4 reporters were described previously (Saito et al., 2022). Briefly, the ERSE reporter is pGL3-GRP78(–132)-Luc carrying the human BiP promoter, the UPRE reporter carries p5xUPRE-GL3 identical to p5xATF6GL3, and the ATF4 reporter carries the promoter region of murine ATF4 from position –261 to +124 (ORF starts at +1).
 
-## Measurement of glycosyltransferase activities
+### Measurement of glycosyltransferase activities
 
 The experiment was described previously (Hirata et al., 2023). Briefly, 3 μl of the cell lysates was incubated in a total of 10 μl of a reaction buffer [125 mM MES (pH 6.25), 10 mM MnCl2, 200 mM GlcNAc, 0.5% Triton X-100, and 1 mg/ml BSA] supplemented with 20 mM UDP-GlcNAc and 10 μM fluorescence-labeled biantennary acceptor N-glycan substrate GnGnbi-PA (PA, 2-aminopyridine) at 37 °C for 3 hr. After the reaction, the sample was boiled at 99 °C for 2 min to inactivate the enzymes and then 40 μl of water was added. After centrifugation at 21,500 g for 5 min, the supernatants were analyzed by reverse-phase HPLC with an ODS column (4.6×150 mm, TSK gel ODS-80TM; TOSOH Bioscience). HPLC analysis was conducted in the isocratic mode in which 80% buffer A (20 mM ammonium acetic buffer [pH 4.0]) and 20% buffer B (1% butanol in buffer A) were loaded at 1 ml/min.
 
-## Trypsin digestion assay
+### Trypsin digestion assay
 
 The trypsin digestion assay was described previously (Ninagawa and Mori, 2016; Ninagawa et al., 2015).
 
-## Crystal violet assay
+### Crystal violet assay
 
 The crystal violet assay was described previously (Yamamoto et al., 2007). Cells spread in 24-well dishes were photographed.

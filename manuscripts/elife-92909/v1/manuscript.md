@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05tkyf982 Department of Biomedical Engineering, Ben-Gurion University of the Negev Be'er Sheva Israel
-2. https://ror.org/05tkyf982 School of Brain Sciences and Cognition, Ben-Gurion University of the Negev Be'er Sheva Israel
-3. https://ror.org/05tkyf982 Department of Life Sciences, Ben-Gurion University of the Negev Be'er Sheva Israel
+1. Department of Biomedical Engineering, Ben-Gurion University of the Negev Be'er Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))
+2. School of Brain Sciences and Cognition, Ben-Gurion University of the Negev Be'er Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))
+3. Department of Life Sciences, Ben-Gurion University of the Negev Be'er Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))
 
 † Corresponding author
 
@@ -52,7 +52,7 @@ To test the capability of the archerfish for motor adaptation, we examined its a
 
 **Figure 2.:** (A) Water tank with a cover and a target above it. Airflow applied horizontally to the water’s surface deflects the fish’s shot. (B) An example from a video capturing the experiment. The airflow was oriented from right to left. The water jet is visible just before the impact at the target. (C) Experimental timeline of the first experiment: 5–10 shots before the introduction of the airflow, 10–15 shots with the airflow, 5–10 shots after the removal of the airflow. (D) Experimental timeline of the second experiment: 5–10 shots before the introduction of the airflow, 8–12 shots with the airflow in one direction, 15–20 shots with the airflow in the opposite direction, 5–10 shots after the removal of the airflow.
 
-## Archerfish exhibit motor adaptation
+### Archerfish exhibit motor adaptation
 
 In the first experiment the fish had to shoot at the target so that we could obtain a baseline for the accuracy of its shooting. Then, the airflow perturbation was turned on and the fish had to compensate using motor adaptation to the deflection of the jet (Figure 3A and B, see Methods). Finally, there was a washout period where the airflow was turned off. The error for each shot was measured.
 
@@ -72,7 +72,7 @@ After the airflow perturbation stopped (Figure 4, washout), the fish exhibited a
 
 In our examination of the data, we sought out evidence of session-to-session ‘saving’ effect. However, the inherent noise within the collected data prevented us from drawing any definite conclusions.
 
-## Motor adaptation is situated in fish egocentric frame of reference
+### Motor adaptation is situated in fish egocentric frame of reference
 
 Next, we assessed whether archerfish motor adaptation is based on an egocentric or allocentric frame of reference. The experiment was designed to let the fish adapt to airflow in one direction and then force the fish to switch direction by rotating the cover with the slot above the water tank, then shoot with the airflow in the opposite direction. There are no cues about the presence or direction of the airflow perturbation above the water tank; the activation of the air blower is done outside of the fish vision field. But the fish can see the visual landmarks inside the water tank, such as filter, plant décor, and thermostat. And they demonstrate a behavioral indication of position and direction within the tank in their shooting behavior (Ben-Tov et al., 2018; Tsvilling et al., 2012; Dewenter et al., 2017); when the cover with the slot above the water tank is rotated, the fish change their body position to shoot through the slot from the new angle.
 
@@ -112,39 +112,39 @@ Our work also suggests how the archerfish corrects for physical factors such as 
 
 ## Methods
 
-## Animals
+### Animals
 
 Wild-caught adult fish (6–14 cm in length; 10–18 g) were purchased from a local supplier. The fish were kept separately in 100 l aquaria filled with brackish water (salinity 6–8 ppt) at 25–29°C on a 12/12 hr light-dark cycle. Fish care and experimental procedures were approved by the Ben-Gurion University of the Negev Institutional Animal Care and Use Committee and were in accordance with government regulations of the State of Israel (protocol IL-47-08-2021(C)).
 
-## Experimental scenery
+### Experimental scenery
 
 The experiments were conducted in a water tank with a cover above the water that forced the fish to shoot through a slit in the cover such that the shot was aligned with the airflow perturbation when present (Figure 2A and B).
 
 After delivery to the lab, the fish went through a period of acclimatization to the lab environment. Then, the fish were gradually trained to shoot at a black circle on a metal net placed 35–40 cm above the water, depending on the water level in the tank. After the fish were able to make 20–25 shots in 10 min, a plastic cover with a slot was placed above the water tank. The fish were trained to shoot at a target above the water tank to ensure uniform direction of the shot in relation to the direction of the later perturbation. The target was placed at the distance of 10 cm from the air nozzle. The speed of the airflow above the water was measured using an anemometer (SP-82AM, Lutron Electronics, Taiwan) just below the target. The air speed was 7.5 m/s±0.3 m/s.
 
-## Training
+### Training
 
 Overall, 39 candidate fish were tested for the study. We first screened for the ability to persist shooting at least 20 shots per session through a slot in a cover above the water tank and remain accurate throughout the session. This was crucial since it enabled the collection of enough data for statistical analysis. Overall, seven fish passed the screening test and continued to the perturbation experiments.
 
 Two of the seven fish were able to complete the 15 sessions. One fish completed 8 sessions, two fish – 7 sessions, one fish – 2 sessions, and one fish – 1 session in the first experiment. For the second experiment, the fish were required to perform at least 30 consecutive shots through a slot with a change in direction in the middle of the session. Only three fish met this criterion and were used in the experiment: one fish competed 15 sessions, one fish – 4 sessions, and one fish – 8 sessions.
 
-## Experiment 1
+### Experiment 1
 
 The experiment consisted of three stages (Figure 2C). First, the fish performed 5–10 trials with no airflow. The number of trials under baseline conditions was generated from a uniform distribution so that the fish would not anticipate the change in conditions after a fixed number of trials. Then, we introduced a perturbing airflow horizontally to the water’s surface that deflected the fish’s shot trajectory and caused the fish to miss the target. The airflow was either in the direction of the shot or opposite to the direction of the shot. The fish performed 10–15 trials. Then the airflow was removed and the fish shot again under the baseline condition. Thus, the errors in the first and final stage permitted comparisons of fish behavior in normal and post-adaptation conditions in the same physical environment.
 
-## Experiment 2
+### Experiment 2
 
 We tested whether the fish adapt to the airflow perturbation within an egocentric or allocentric frame of reference. In the egocentric frame of reference, any perturbation is perceived as constant regardless of the subject position; e.g., refraction index on the water surface. In the allocentric frame of reference, the perturbation perception changes with the change in position; an example for this scenario is a wind above the water surface that affects the water shot differently depending on the fish position relative to the wind direction. The second experiment consisted of four stages: first, the fish performed 5–10 trials without the airflow to estimate the baseline; then, 10 trials with the airflow in one direction were administered (Figure 2D). Next, the fish were forced to reverse the direction of their shot by rotating the cover with the slot by 180 degrees with no change in the airflow direction. The airflow was turned off after 15–20 trials and the fish performed five additional shots with no perturbation. Throughout the experiments, the fish were given no clues about the initiation or termination of the airflow, nor about its direction.
 
-## Video recording
+### Video recording
 
 The experiments were recorded using three high-resolution cameras (ISG LightWise Allegro, Imaging Solutions, USA) at a frame rate of 190 frames/s. One camera was focused on the target and its immediate surrounding area. Two other cameras recorded the fish from different angles to capture their behavior. The video clips were analyzed offline.
 
-## Measuring shot error
+### Measuring shot error
 
 We characterized the adaptation process in terms of the shooting error measured on each trial shot. The error was defined as the distance between the center of a target and the center of the water jet produced by the fish. The data were extracted from the movie frames of the camera that was focused on the target and its immediate surroundings.
 
-## Statistical analysis
+### Statistical analysis
 
 We used a Bayesian approach to analyze the adaptation process. To analyze the results of the first experiment, we defined six epochs in the timeline of the experiment: 1 – baseline trials; 2 – first two trials after the initiation of the airflow perturbation; 3 – trial from the third up to the two trials preceding the end of the perturbation; 4 – the last two trials before the termination of the perturbation; 5 – the first two trials after the termination of the perturbation; 6 – the remainder of the trials until the end of the session.
 
@@ -152,18 +152,44 @@ To analyze the results of the second experiment we defined nine epochs in the ti
 
 We performed a hierarchical Bayesian analysis to evaluate the behavior of the fish in response to the perturbation. The statistical analysis was conducted using R 4.0.4 programming language (https://www.r-project.org/) and the JAGS 4.3.0 statistical package (https://mcmc-jags.sourceforge.io/) (Plummer, 2003). JAGS was used to produce samples from the posterior probability distribution based on the data for the parameters of the statistical model described below (Kruschke, 2014).
 
-The central parameter of interest was the shooting error of each fish in each time epoch. In our model, this error was drawn from a normal distribution. The mean of this distribution was modeled hierarchically as a linear combination of parameters that depended on the trial epoch, the subject, and the interaction between them. That is, the model of the error was written in the following way:(1)errortrial∼Normal(abaseline+aepoch+asubject+aepoch & subject,σ2)
+The central parameter of interest was the shooting error of each fish in each time epoch. In our model, this error was drawn from a normal distribution. The mean of this distribution was modeled hierarchically as a linear combination of parameters that depended on the trial epoch, the subject, and the interaction between them. That is, the model of the error was written in the following way:
 
-where abaseline is the average of all baseline errors, aepoch is the average contribution to the error during a specific epoch for all fish, asubject is the fish’s unique characteristics, and aepoch & subject is contribution to the error due to the interaction between subject and epoch. Finally, σ2 is the global variance. The model was hierarchical in the sense that the prior distributions of these parameters were themselves modeled using parametric distributions as follows:abaseline∼N(μall trials,σalltrials2)aepoch∼N(μepoch,σepoch2)asubject∼N(μsubject,σsubject2)(2)aepoch&subject∼N(μepoch&subject,σepoch&subject2)
+$$
+error_{trial}∼Normal(a_{baseline}+a_{epoch}+a_{subject}+a_{epoch & subject},\sigma^{2})
+$$
 
-The posterior distributions of the hyper-parameters (µ , σ2) were determined simultaneously and jointly with the posterior distribution of the parameters in the linear model. The priors of the hyper-means were broad normal distributions and the priors of the hyper-variances were broad gamma distributions. The prior for the global variance parameter in the linear model was a broad uniform distribution.
+where $a_{baseline}$ is the average of all baseline errors, $a_{epoch}$ is the average contribution to the error during a specific epoch for all fish, $a_{subject}$ is the fish’s unique characteristics, and $a_{epoch & subject}$ is contribution to the error due to the interaction between subject and epoch. Finally, $\sigma^{2}$ is the global variance. The model was hierarchical in the sense that the prior distributions of these parameters were themselves modeled using parametric distributions as follows:
+
+$$
+a_{baseline}∼N(\mu_{all trials},\sigma_{alltrials}^{2})
+$$
+
+
+
+$$
+a_{epoch}∼N(\mu_{epoch},\sigma_{epoch}^{2})
+$$
+
+
+
+$$
+a_{subject}∼N(\mu_{subject},\sigma_{subject}^{2})
+$$
+
+
+
+$$
+a_{epoch&subject}∼N(\mu_{epoch&subject},\sigma_{epoch&subject}^{2})
+$$
+
+The posterior distributions of the hyper-parameters (µ , $\sigma^{2}$) were determined simultaneously and jointly with the posterior distribution of the parameters in the linear model. The priors of the hyper-means were broad normal distributions and the priors of the hyper-variances were broad gamma distributions. The prior for the global variance parameter in the linear model was a broad uniform distribution.
 
 Bayesian data analysis combines the data and the model to generate samples of the posterior distribution of the parameters given the data. JAGS carries out this sampling using a version of the Markov Chain Monte Carlo (MCMC) algorithm for sampling arbitrary target distributions. We generated three chains of 10,000 MCMC samples from the joint posterior probability distribution of all the parameters. The standard procedure is to use three or four chains to show that they converge to a similar result to verify the robustness of the outcome. Convergence of the algorithm and sampling properties were tested using both graphical and quantitative methods (Kruschke, 2014).
 
-## Testing for significance
+### Testing for significance
 
 We used the 10,000 MCMC samples to calculate the 95% HDI. HDI is the range of values for which there is a 95% posterior probability of finding the parameter and where all the values within the interval are more probable than any value outside of it. By examining the 95% HDI of each fish in each time epoch, we could describe the different stages of the adaptation process in the archerfish. If the 95% HDI of the difference in the error between two epochs was greater than the region of practical equivalence of 5% around zero, the error was considered to be significantly different. For every comparison we report the HDI of the difference between the epochs in mm.
 
-## Determination of effect size
+### Determination of effect size
 
 Effect size was calculated for the difference between transition stages of the experiments: for experiment 1 – for the differences in error between epochs 1 and 2, 2 and 4, 4 and 5. For the second experiment, we compared error between epochs 1 and 2, 2 and 4, 4 and 5, 5 and 7, 7 and 8. For every MCMC sample, Cohen’s d effect size was calculated as the difference between the mean values of the two compared instances divided by the pooled standard deviation. Then, 95% HDI was calculated for the values of effect size. Effect sizes are reported for all comparisons as the HDI of Cohen’s d.

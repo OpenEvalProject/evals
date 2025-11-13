@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/04xx1tc24 Max Planck Institute for Biology of Ageing Cologne Germany
-2. https://ror.org/00rcxh774 University of Cologne Cologne Germany
+1. Max Planck Institute for Biology of Ageing Cologne Germany ([ROR:04xx1tc24](https://ror.org/04xx1tc24))
+2. University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
 
 † Corresponding author
 
 ## Abstract
 
-Aging individuals exhibit a pervasive decline in adaptive immune function, with important implications for health and lifespan. Previous studies have found a pervasive loss of immune-repertoire diversity in human peripheral blood during aging; however, little is known about repertoire aging in other immune compartments, or in species other than humans. Here, we perform the first study of immune-repertoire aging in an emerging model of vertebrate aging, the African turquoise killifish ( Nothobranchius furzeri ). Despite their extremely short lifespans, these killifish exhibit complex and individualized heavy-chain repertoires, with a generative process capable of producing millions of distinct productive sequences. Whole-body killifish repertoires decline rapidly in within-individual diversity with age, while between-individual variability increases. Large, expanded B-cell clones exhibit far greater diversity loss with age than small clones, suggesting important differences in how age affects different B-cell populations. The immune repertoires of isolated intestinal samples exhibit especially dramatic age-related diversity loss, related to an elevated prevalence of expanded clones. Lower intestinal repertoire diversity was also associated with transcriptomic signatures of reduced B-cell activity, supporting a functional role for diversity changes in killifish immunosenescence. Our results highlight important differences in systemic vs. organ-specific aging dynamics in the adaptive immune system.
+Aging individuals exhibit a pervasive decline in adaptive immune function, with important implications for health and lifespan. Previous studies have found a pervasive loss of immune-repertoire diversity in human peripheral blood during aging; however, little is known about repertoire aging in other immune compartments, or in species other than humans. Here, we perform the first study of immune-repertoire aging in an emerging model of vertebrate aging, the African turquoise killifish (Nothobranchius furzeri). Despite their extremely short lifespans, these killifish exhibit complex and individualized heavy-chain repertoires, with a generative process capable of producing millions of distinct productive sequences. Whole-body killifish repertoires decline rapidly in within-individual diversity with age, while between-individual variability increases. Large, expanded B-cell clones exhibit far greater diversity loss with age than small clones, suggesting important differences in how age affects different B-cell populations. The immune repertoires of isolated intestinal samples exhibit especially dramatic age-related diversity loss, related to an elevated prevalence of expanded clones. Lower intestinal repertoire diversity was also associated with transcriptomic signatures of reduced B-cell activity, supporting a functional role for diversity changes in killifish immunosenescence. Our results highlight important differences in systemic vs. organ-specific aging dynamics in the adaptive immune system.
 
 ## Introduction
 
@@ -33,13 +33,49 @@ In this study, we introduce the naturally short-lived turquoise killifish (Notho
 
 ## Results
 
-## Establishing immunoglobulin sequencing in the turquoise killifish
+### Establishing immunoglobulin sequencing in the turquoise killifish
 
 To investigate the effect of age on the B-cell receptor repertoire diversity and composition in turquoise killifish, we implemented an RNA-based repertoire-sequencing protocol based on the published protocol of Turchaninova et al., 2016, using template switching (Zajac et al., 2013) to add unique molecular identifiers (UMIs) to each RNA transcript of the immunoglobulin heavy chain (Figure 1; Bradshaw and Valenzano, 2020) to correct for errors and biases in abundance arising during PCR and Illumina sequencing (Vollmers et al., 2013). To test the validity and replicability of results obtained using this protocol, we performed three replicate library preps on whole-body total RNA samples from four adult (8-week-old) adult male turquoise killifish from the short-lived GRZ strain (Figure 1—figure supplement 1). Independent repertoires from the same individual showed a high degree of similarity in their clonal composition, with an average inter-replicate correlation in clone size of r = 0.89 (Figure 1—figure supplement 2). Inter-repertoire divergences computed with the published repertoire dissimilarity index (RDI) metric (Bolen et al., 2017) consistently identified replicates from the same individual as much more similar than repertoires from different individuals (Figure 1—figure supplement 3), demonstrating that this protocol is capable of accurately and reproducibly reconstructing the expressed heavy-chain repertoires of individual killifish.
 
-## Aging in whole-body killifish repertoires
+![Figure 1.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig1-v2.jpg)
+
+**Figure 1.:** Each sample undergoes reverse transcription with template switching to attach a 5' adaptor sequence and unique molecular identifier (UMI), followed by multiple rounds of PCR amplification and addition of Illumina sequencing adaptors. Libraries are then pooled, undergo size selection, and are sequenced on an Illumina MiSeq sequencing machine.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Four individuals from the 8-week-old group in Supplementary file 2c were each independently sequenced three times: once from a separate whole-body total RNA sample (replicate 1) and twice independently from a second sample (replicates 1 and 2).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Boxplots of inter-replicate correlation in clone sizes across the four individuals in the pilot experiment (Figure 1—figure supplement 1). (B) Example scatter plot for each individual, showing the relationship between the size of a clone in replicate 1 and the same clone in replicate 2.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) UPGMA clustering dendrogram on repertoire pilot replicates (Figure 1—figure supplement 1), based on pairwise repertoire dissimilarity index (RDI) distances computed on the V/J composition of each replicate and colored according to individual origin. (B) Principal coordinate analysis (PCoA) of pairwise VJ-RDI distances between all replicates, colored by individual origin.
+
+### Aging in whole-body killifish repertoires
 
 To investigate the effect of age on the structure and diversity of killifish antibody repertoires, we performed whole-body immunoglobulin sequencing on 32 adult male turquoise killifish from the short-lived GRZ strain (Hu and Brunet, 2018) at four different ages from early adulthood to late life (Figure 2A and Supplementary file 2a-d). The repertoire of each individual comprised some number of unique heavy-chain sequences, each of which could be classified by clonal identity (the ‘clonal repertoire’) and V/J usage (the ‘VJ repertoire’).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental design. Adult male GRZ-strain turquoise killifish were sacrificed at 39, 56, 73, and 128 days post-hatching, flash-frozen and homogenized. (B–E) Alpha-diversity spectra, indicating average within-individual repertoire diversity for each age group and diversity order (*: 0.05 ≤ 0.01, **: 0.01≤ p ≤ 0.001, Kruskal-Wallis permutation test, Appendix 1—note 7). (B) Clonal alpha-diversity spectra. (C) VJ alpha-diversity spectra, all clones. (D) VJ alpha-diversity spectra, large clones (>4 unique sequences) only. (E) VJ alpha-diversity spectra, small clones (<5 unique sequences) only. (F) VJ alpha-diversity ratios for old vs. young killifish at each diversity order, for small (dashed lines) or large (solid lines) clones. Color indicates the older age group being compared to young (39 days) fish. (G) Normalized VJ beta-diversity spectra, indicating between-individual variability in repertoire composition for each age group and diversity order. (H) Distributions of pairwise repertoire dissimilarity index (RDI) distances between individuals in each age group (***: p ≤ 0.001, Mann-Whitney U tests for pairwise age differences), based on the VJ composition of each individual’s repertoire. (I) Principal coordinate analysis (PCoA) of pairwise RDI distances for each age group, visualizing the progressively greater dispersion seen at later ages. Each curve in (B–G) represents the mean across 2000 bootstrap replicates (Appendix 1—note 7); shaded regions indicate 95% confidence intervals over the same.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A clone is a group of B-cells descended from the same naïve ancestor cell. In this figure, a group of 28 unique sequences in an antibody repertoire, each representing a single cell, is partitioned into five groups based on their inferred clonal identity. (B) Each developing B-cell selects a single V, D, and J gene segment from those present in the native immunoglobulin heavy-chain (IGH) locus and recombines them together to produce its antigen-binding sequence. In this figure, the same 28 sequences are instead grouped by the V and J segments their naïve ancestors selected during development. As each developing B-cell selects from the same range of possible gene segments, this results in multiple clones being grouped together in a single V/J category, resulting in only three groups.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Clonal (top row) or VJ (other rows) diversity spectra of individual turquoise killifish of different ages. Each curve represents the mean Hill diversity for that individual across 2000 bootstrap replicates (Appendix 1—note 7); shaded regions indicate 95% confidence intervals over the same.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Color indicates type of diversity (clonal vs. VJ, etc.) being tested; see main text and Appendix 1—note 7 for more details.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Cumulative clone-size distributions for each individual in the aging dataset. (B) V/J combinations present in each individual whole-body repertoire in the dataset, with each point representing a single V/J combination in a single individual, its x-coordinate indicating the number of unique IGH sequences assigned to that V/J combination in that individual, and its y-coordinate indicating the average clone size among those sequences.
 
 The diversity of a population is a measure of the number (a.k.a. the richness) and relative frequency of different subdivisions within that population. For B-cell repertoires, diversity can be calculated over the different clonal lineages detected in a sample, or over different variable-region gene segment combinations.
 
@@ -53,7 +89,7 @@ In contrast with the rapid age-related declines observed in high-order clonal di
 
 In addition to the average within-individual diversity of a population (alpha diversity), the between-individual variation in composition (beta diversity) can provide important insights into repertoire development and evolution. Previous studies of human peripheral blood repertoires have suggested a decrease in alpha diversity but an increase in beta diversity with age (Gibson et al., 2009; de Bourcy et al., 2017). In our dataset, VJ beta-diversity spectra (Appendix 1) indicated a large age-related increase in beta diversity across a wide range of diversity orders (Figure 2G), indicating a similar pattern of progressive individualization in repertoire composition with age. Concordantly, older killifish also exhibited significantly greater pairwise RDI distances (Bolen et al., 2017), indicating progressive divergence in repertoire composition (Figure 2H–I). As in humans, therefore, younger killifish exhibit antibody repertoires that are significantly more similar to one another, which then become increasingly distinct and individualized as the cohort increases in age.
 
-## The killifish generative repertoire
+### The killifish generative repertoire
 
 The naïve sequence diversity of the antibody heavy-chain repertoire depends on the molecular processes underlying the generation of novel sequences in developing B-cells: random selection of V, D, and J segments during VDJ recombination; deletions and palindromic (P-) insertions at the ends of conjoined segments; and nonpalindromic (N-) insertions between segments (Schatz and Swanson, 2011; Schroeder and Cavacini, 2010). Each of these contributes diversity to the overall generative process, increasing the variety of sequences that can be generated. Excluding nonfunctional sequences, the human generative process has an estimated Shannon entropy of roughly 70 bits, corresponding to a first-order Hill diversity of roughly 1021 possible unique sequences (Elhanati et al., 2015). However, little is known about how this generative diversity varies across species, or how it changes during aging.
 
@@ -61,13 +97,29 @@ To gain insight into these generative processes in the turquoise killifish, we u
 
 To model the generative process in its baseline state, we first inferred a model of the killifish generative repertoire from the four 8-week-old adult male individuals used in the pilot study (Figure 1—figure supplement 1). Using this model, we estimated a total raw entropy for the killifish generative repertoire of roughly 33 bits (Figure 3A). Of these 33 bits, roughly 8 arise from variability in VDJ segment choice, 12 from variability in the number and composition of junctional N-insertions, and 11 from P-insertions and deletions. Accounting for convergent production of identical sequences via different recombination events, and for events that give rise to nonfunctional nucleotide sequences (e.g. due to frame shift) reduced this initial raw estimate by 10 bits.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig3-v2.jpg)
+
+**Figure 3.:** (A) Entropy composition of the generative process from four 8-week-old GRZ-strain adult male turquoise killifish. (B) Probability distributions of junctional N-insertions in the same dataset. (C) P-insertions and deletion distributions inferred from the same dataset, with P-insertions modeled as negative deletions. (D) Boxplots of total recombination entropy values for models inferred separately for each individual in the 32-individual aging cohort (p = 0.43, Kruskal-Wallis one-way analysis of variance [ANOVA] for an age effect).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig3-figsupp4-v2.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** The stated p-values are from Kruskal-Wallis one-way analysis-of-variance tests for an age effect.
+
 Before initial selection in the primary lymphoid organs, therefore, the killifish generative process has an estimated Shannon entropy of roughly 23 bits (Figure 3A), corresponding to a first-order Hill diversity of roughly 107 possible unique sequences. While, as in humans, only a small fraction of potential diversity will actually be generated in any single individual, this nevertheless represents a highly complex and sophisticated system capable of generating highly individualized IGH repertoires.
 
 While impressive, the potential generative diversity of the killifish repertoire is nevertheless vastly lower than in humans, with a difference in productive generative entropy of almost 50 bits (Elhanati et al., 2015). While all components of the generative process exhibit lower entropies in killifish than in humans, by far the greatest difference lies in the junctional N-insertions, which contribute almost 40 bits more to the generative entropy of the human repertoire than that of killifish. The difference in the productive generative entropy between killifish and human arises from the distributions of N-insertions inferred from killifish and human data: in humans, these distributions peak at around 5 nt per junction and often yield insertions of 10–20 nt (Elhanati et al., 2015), while in killifish the insertion distribution peaks at 0 nt per junction, and sequences with more than 5 nt of insertions at either junction are very rare (Figure 3B and Figure 3—figure supplement 1). Since N-insertions are the dominant source of sequence diversity in human repertoires, the large reduction in N-insertions in killifish relative to humans unsurprisingly results in a much lower overall generative diversity for the killifish adaptive immune system.
 
 The relative lack of change in the small-clone antibody repertoire in older turquoise killifish (Figure 2B–F) suggested to us that the diversity of the generative process in the primary lymphoid organs might remain relatively intact throughout the killifish lifespan. To test this hypothesis, we trained separate IGoR models for each individual in the 32-fish aging cohort (Figure 2A, Figure 3—figure supplements 3–4) and tested for an effect of age on the generative diversity inferred for each individual. As expected, no age effect was found in either total generative diversity (Figure 3D) or the contributions of different diversification processes (Figure 3—figure supplement 5). It therefore appears that, while some aspects of the killifish antibody repertoire certainly decline with age, the entropy of the generative process is not among them.
 
-## Effect of age and microbiota transfer on killifish intestinal repertoires
+### Effect of age and microbiota transfer on killifish intestinal repertoires
 
 The populations of B-lymphocytes associated with mucosal epithelia play a crucial role in defending the body from pathogenic threats (Magadan et al., 2019), as well as in regulating the composition of resident microbial populations (Belkaid and Hand, 2014). Despite the importance of these distinctive B-cell compartments, relatively little is known about the structure of their antibody repertoires (Magadan et al., 2019), and still less about how these repertoires change with age.
 
@@ -77,15 +129,41 @@ Using intestinal total RNA isolated by Smith et al., 2017, we sequenced the inte
 
 Contrary to our expectations, neither the alpha nor beta diversity of the killifish intestinal repertoire were significantly affected by microbiota transfer, with no significant difference in clonal diversity, VJ diversity, or RDI distance measures (Figure 4—figure supplements 1–3). In sharp contrast to the whole-body data, however, there was a strong and significant decline in both clonal and VJ alpha diversity with age across all diversity orders (Figure 4B–C, Figure 4—figure supplements 2–3), even without partitioning by clone size. This age-related decline in alpha diversity was consistently far more dramatic than that observed in the whole-body samples at any diversity order. The B-cells of the killifish intestine, therefore, exhibit a much stronger age-dependent decline in repertoire diversity than is seen in the killifish body overall.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig4-v2.jpg)
+
+**Figure 4.:** (A) Experimental design. Adult male GRZ-strain turquoise killifish were sacrificed at 6 and 16 weeks’ post-hatching, and total RNA was extracted from the dissected intestine. (B–C) Alpha-diversity spectra, indicating average within-individual repertoire diversity for each age group and diversity order (*: 0.05 ≤ 0.01, **: 0.01≤ p ≤ 0.001, Kruskal-Wallis permutation test, Appendix 1—note 7). (A) Clonal alpha-diversity spectra. (B) VJ alpha-diversity spectra, all clones. (D) Normalized VJ beta-diversity spectra, indicating between-individual variability in repertoire composition for each age group and diversity order. (E) Distribution of pairwise repertoire dissimilarity index (RDI) distances between killifish intestinal repertoires at different ages (***: p ≤ 0.001, Mann-Whitney U tests for pairwise age differences). Each curve in (A–C) represents the mean across 2000 bootstrap replicates (Appendix 1—note 7); shaded regions indicate 95% confidence intervals over the same.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Alpha-diversity spectra, indicating average within-individual repertoire diversity for each treatment group and diversity order (n.s.: p > 0.05 Kruskal-Wallis permutation test, Appendix 1—note 7). (A) Clonal alpha-diversity spectra. (B) VJ alpha-diversity spectra, all clones. (D) Normalized VJ beta-diversity spectra, indicating between-individual variability in repertoire composition for each treatment group and diversity order. (E) Distribution of pairwise repertoire dissimilarity index (RDI) distances between killifish intestinal repertoires of different treatment groups (no significant difference between any two groups, Mann-Whitney U tests for pairwise differences). Each curve in (A–C) represents the mean across 2000 bootstrap replicates (Appendix 1—note 7); shaded regions indicate 95% confidence intervals over the same.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Clonal (top row) or VJ (bottom row) diversity spectra of the intestines of individual turquoise killifish of different ages. Each curve represents the mean Hill diversity for that individual across 2000 bootstrap replicates (Appendix 1—note 7); shaded regions indicate 95% confidence intervals over the same.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Color indicates type of diversity (clonal vs. VJ) being tested; see main text and Appendix 1—note 7 for more details.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig4-figsupp4-v2.jpg)
+
 While results from beta-diversity spectra showed large increases in beta diversity with age at some diversity orders but not at others (Figure 4D), the median pairwise RDI distance between­ individual gut repertoires increased substantially and significantly with age (Figure 4E and Figure 4—figure supplement 4), suggesting that, as in the whole body, killifish intestinal repertoires become increasingly distinct and individualized as they age.
 
 One potential explanation for the stronger age-related drop in alpha diversity of intestinal samples is as a consequence of the constant strong antigen exposure experienced by intestinal B-cells, as a result of their interaction with the gut microbiota. This exposure could drive high levels of antigen-dependent clonal expansion, resulting in a greater loss in repertoire diversity (Caruso et al., 2009). Another explanation, not mutually exclusive with the first, is that the gut has different clone-size distribution relative to the whole body. Unlike the whole-body repertoire, the gut does not include the primary lymphoid organs, and so would be expected to be far less dominated by small, naïve clones. Since the population of large clones appears to be more prone to reductions in diversity with age than that of small clones (Figure 2), the stronger overall age-related diversity loss found in the gut repertoire could be a consequence of this greater relative prevalence of large clones.
 
 Rarefaction analysis of clonal counts in whole-body and intestinal repertoires showed that the latter indeed contained far fewer small clones, resulting in a much higher proportion of large clones (Figure 5A). If this difference in clonal composition, rather than some functional difference between intestinal and other B-cells, is primarily responsible for the apparent difference in aging phenotypes between whole-body and intestinal repertoires, we would expect to find a faster rate of clonal diversity loss during aging in intestinal repertoires at low diversity orders (which are dominated by small clones in whole-body samples), but not at high orders (which are dominated by large clones in both sample types). Similarly, we would expect to find faster loss in intestinal samples of V/J diversity considered over all clones, but not when the V/J diversity calculation is restricted to large clones alone.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig5-v2.jpg)
+
+**Figure 5.:** (A) Rarefaction analysis of clonal composition of antibody repertoires from whole-body and intestinal samples, showing the average number of small (left, <5 unique sequences) and large (middle, 5 unique sequences) clones for each individual across 20 independent replicates at each sample size, as well as the average proportion of all clones in each repertoire which are large (right). Shaded regions around each line show the region within one standard deviation of the mean value. (B) Boxplots of individual diversity measurements of repertoires from each age group in the whole-body and intestinal datasets, divided by the mean diversity of the youngest age group in each dataset. Fitted curves show the maximum-likelihood prediction of a gamma-distributed generalized linear model of diversity vs. age and sample type for the whole-body and intestinal dataset, relative to the average diversity of the youngest age group in each experiment, testing for a significant effect of sample type on the rate of diversity change with age (Student’s t-test,*: 0.01< p 0.05; ***: p 0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Fitted curves show the maximum-likelihood prediction of a gamma-distributed generalized linear model of diversity vs. age and sample type, testing for a significant effect of sample type on the rate of diversity change with age (Student’s t-test,*: 0.01< p ≤ 0.05; **: 0.01< p ≤ 0.001, ***: p < 0.001).
+
 To test these hypotheses, we normalized the diversity measurements from each dataset by the mean diversity of the youngest group in that dataset, then fit generalized linear models for different diversity orders and methods of measuring diversity (Figure 5B and Figure 5—figure supplement 1), testing for a significant interaction between sample type (i.e. gut vs. whole body) and the effect of age on repertoire diversity. Gut samples exhibited significantly higher rates of age-dependent diversity loss under low-order clonal-diversity or total VJ-diversity measures, that is, those metrics for which clones of all sizes were included in the diversity calculation. Conversely, there was no significant difference in rate of diversity loss between sample types for higher-order clonal-diversity measures, nor for V/J-diversity measures restricted to only large clones, indicating that large clones undergo similar rates of age-dependent diversity loss in both sample types. These results closely match the predictions of the clonal-composition model: large clones in both gut and whole-body samples exhibit similarly strong aging phenotypes, but the higher proportions of large clones in gut samples result in these strong phenotypes manifesting more strongly in the behavior of the repertoire as a whole. It therefore appears that, as in whole-body samples, age-dependent diversity loss in killifish intestinal repertoires is primarily a phenomenon of mature, expanded clones.
 
-## Functional correlates of repertoire diversity in killifish
+### Functional correlates of repertoire diversity in killifish
 
 Early work in killifish identified a number of age-associated phenotypes suggestive of immune decline, including thymic degeneration and increased incidence of lymphoma (Cooper et al., 1983). More recently, comparison of young vs. old killifish intestines found a marked age-related increase in the pathogenicity of the killifish gut microbiome, alongside an increase in expression of inflammatory markers, suggesting a decline in the intestinal immune system’s ability to maintain a healthy microbial community (Smith et al., 2017).
 
@@ -94,6 +172,22 @@ These results suggest that the turquoise killifish undergoes rapid functional im
 To investigate the relationship between repertoire diversity and immune function more closely, we utilized previously collected intestinal RNA-seq data from the same cohort of killifish used in our intestinal antibody-repertoire analysis (Smith et al., 2017). Using these data alongside our repertoire diversity calculations, we carried out a differential expression analysis of transcript abundance with respect to repertoire diversity for six different diversity orders, controlling for age (Materials and methods). We then performed gene set enrichment analysis (GSEA) to identify gene ontology (GO) terms associated with higher or lower repertoire diversity, across a variety of diversity orders.
 
 The GSEA identified a number of GO terms related to immune function that were significantly associated with increased repertoire diversity (Figure 6, Figure 6—figure supplements 1–3). Most strikingly, ‘B-cell receptor signaling pathway’ was the most strongly enriched term for all six diversity orders analyzed, often by a substantial margin. ‘B-cell proliferation’ was also consistently highly enriched, showing significant positive enrichment for five diversity orders (all except 1.0) and falling in the top 10 most positively enriched terms for four (Figure 6). Other immune terms that were significantly positively associated with repertoire diversity across at least four diversity orders include ‘leukocyte migration’, ‘lymphocyte activation’, ‘leukocyte differentiation’, and ‘regulation of interleukin-6 production’ (Supplementary file 3a). A decline in repertoire diversity is thus associated with a decline in B-cell immune activity in killifish intestine, supporting a functional role for diversity changes in killifish immunosenescence.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig6-v2.jpg)
+
+**Figure 6.:** Immune terms are highlighted in blue. Terms that are significantly positively enriched for a given diversity order, but not in the top 10, are not shown, even if they fall in the top 10 terms for other orders.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Terms that are significantly negatively enriched for a given diversity order, but not in the top 10, are not shown, even if they fall in the top 10 terms for other orders.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Immune terms are highlighted in blue.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/65117/elife-65117-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Immune terms are highlighted in blue.
 
 ## Discussion
 
@@ -109,13 +203,13 @@ Apart from the nervous system itself, no other system in the vertebrate body exh
 
 ## Materials and methods
 
-## Fish husbandry and sample preparation
+### Fish husbandry and sample preparation
 
 Male turquoise killifish (N. furzeri, GRZ-AD strain) from a single hatching cohort were raised under standard husbandry conditions (Dodzian et al., 2018) and housed from 4 weeks’ post-hatching in individual 2.8 l tanks connected to a water-recirculation system. Fish received 12 hr of light per day on a regular light/dark cycle, and were fed bloodworm larvae and brine shrimp nauplii twice a day during the week and once a day during the weekend (Smith et al., 2017; Dodzian et al., 2018).
 
 After being sacrificed in 1.5 g/l tricaine solution at room temperature tank water (Carter et al., 2010), fish (Supplementary file 2c) were flash-frozen in liquid nitrogen and ground to a homogenous powder with a pestle in a liquid-nitrogen-filled mortar. The powder was mixed thoroughly and stored at –80°C prior to RNA isolation. Intestinal total RNA for the gut experiments was provided by Smith et al., 2017.
 
-## Immunoglobulin sequencing
+### Immunoglobulin sequencing
 
 Total RNA from whole-body killifish samples was isolated using QIAzol lysis reagent (QIAGEN, 1 ml of reagent per 0.1 g of homogenized tissue) and isopropanol precipitation; gut RNA from microbiota-transfer experiments (Smith et al., 2017) was already prepared and available. Quantification of RNA samples was performed with the Qubit 2.0 fluorometer (Thermo Fisher), while quality control and integrity measurement was performed using the TapeStation 4200 (Agilent).
 
@@ -123,11 +217,11 @@ Reverse transcription and template switching for library preparation was perform
 
 The concentration of each library was then quantified and the libraries were pooled in equimolar ratio, concentrated using SeraSure beads, and size-selected with the BluePippin (Sage Science) to obtain a purified amplicon band. Finally, following a final round of quality control, the pooled and size-selected libraries were sequenced on an Illumina MiSeq System (MiSeq Reagent Kit v3, 2 × 300 bp reads, 30% PhiX spike-in), either at the Cologne Center for Genomics (whole-body libraries) or with Admera Health (intestinal libraries).
 
-## Data processing and analysis of repertoire data
+### Data processing and analysis of repertoire data
 
 Pre-processing of raw sequencing data (including quality filtering, consensus-read generation, and clonotyping) was performed using the pRESTO (Vander Heiden et al., 2014) and Change-O (Gupta et al., 2015) suites of command-line tools (Appendix 1—note 7, Appendix 1—figure 1). Downstream analysis of processed data, including diversity-spectrum inference (Appendix 1—note 7), RDI computation, GLM fitting and rarefaction, was performed in R, as was figure generation and all statistical tests. Generative model inference was performed using IGoR (Marcou et al., 2018). Snakemake (Köster and Rahmann, 2012) was used to design and run data-processing pipelines.
 
-## Functional analysis of RNA-seq data
+### Functional analysis of RNA-seq data
 
 Intestinal RNA-seq data for gut cohort killifish (Smith et al., 2017) were obtained from SRA (BioProject accession PRJNA379208, Supplementary file 2d). Reads were mapped to the turquoise-killifish genome (Reichwald et al., 2015) with STAR (Dobin et al., 2013), using standard parameters, to compute raw read counts for each transcript and each individual. Read counts were normalized using DESeq2’s default median-of-ratios method (Love et al., 2014). DESeq2 was then used to carry out differential expression analysis based on a generalized linear model, predicting abundance of each transcript in each individual given that individual’s age and repertoire diversity (as calculated above). This analysis was repeated for each of six diversity orders (0, 1, 1.5, 2, 3, and 4).
 
@@ -135,6 +229,6 @@ Killifish transcripts were mapped to human orthologues with BioMart (Durinck et 
 
 Immune-associated GO terms were identified by descent from one of a small set of high-level immune-associated terms (Supplementary file 3b), which were identified manually. Terms descended from these manually selected ancestor terms were identified using the GO function GOBPOFFSPRING (Gene Ontology Consortium, 2021; Ashburner et al., 2000); any such descendant term was designated as immune-associated.
 
-## Data and code availability
+### Data and code availability
 
 Raw data used in these analyses is available via NCBI (BioProject accession PRJNA662612). Processed data and code are available at https://github.com/willbradshaw/killifish-igseq/, (copy archived at swh:1:rev:2c933de6564c1055cb363389778f86bfa3fe4ab2; Bradshaw, 2022).

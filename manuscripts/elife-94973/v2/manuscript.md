@@ -18,20 +18,20 @@
 
 ### Affiliations
 
-1. https://ror.org/01vjw4z39 Department of Gastroenterology, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University Guangzhou China
-2. https://ror.org/01vjw4z39 The Second School of Clinical Medicine, Southern Medical University Guangzhou China
-3. https://ror.org/02gxych78 Shantou University Medical College Guangdong China
-4. https://ror.org/0530pts50 School of Medicine, South China University of Technology Guangzhou China
-5. https://ror.org/0432p8t34 Guangdong Cardiovascular Institute, Guangdong Provincial People's Hospital, Guangdong Academy of Medical Sciences Guangzhou China
-6. https://ror.org/046rm7j60 David Geffen School of Medicine, University of California Los Angeles Los Angeles United States
-7. https://ror.org/05xcarb80 Sepulveda Ambulatory Care Center, Veterans Affairs Greater Los Angeles Healthcare System North Hills United States
-8. https://ror.org/01vjw4z39 Department of Biostatistics, School of Public Health, Southern Medical University Guangzhou China
+1. Department of Gastroenterology, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+2. The Second School of Clinical Medicine, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+3. Shantou University Medical College Guangdong China ([ROR:02gxych78](https://ror.org/02gxych78))
+4. School of Medicine, South China University of Technology Guangzhou China ([ROR:0530pts50](https://ror.org/0530pts50))
+5. Guangdong Cardiovascular Institute, Guangdong Provincial People's Hospital, Guangdong Academy of Medical Sciences Guangzhou China ([ROR:0432p8t34](https://ror.org/0432p8t34))
+6. David Geffen School of Medicine, University of California Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+7. Sepulveda Ambulatory Care Center, Veterans Affairs Greater Los Angeles Healthcare System North Hills United States ([ROR:05xcarb80](https://ror.org/05xcarb80))
+8. Department of Biostatistics, School of Public Health, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
 
 † Corresponding author
 
 ## Abstract
 
-Adverse effects of proton pump inhibitors (PPIs) have raised wide concerns. The association of PPIs with influenza is unexplored, while that with pneumonia or COVID-19 remains controversial. Our study aims to evaluate whether PPI use increases the risks of these respiratory infections. The current study included 160,923 eligible participants at baseline who completed questionnaires on medication use, which included PPI or histamine-2 receptor antagonist (H2RA), from the UK Biobank. Cox proportional hazards regression and propensity score-matching analyses were used to estimate the hazard ratios (HRs) and 95% confidence intervals (CIs). Comparisons with H2RA users were tested. PPI use was associated with increased risks of developing influenza (HR 1.32, 95% CI 1.12–1.56) and pneumonia (hazard ratio [HR] 1.42, 95% confidence interval [CI] 1.26–1.59). In contrast, the risk of COVID-19 infection was not significant with regular PPI use (HR 1.08, 95% CI 0.99–1.17), while the risks of severe COVID-19 (HR 1.19. 95% CI 1.11–1.27) and mortality (HR 1.37. 95% CI 1.29–1.46) were increased. However, when compared with H2RA users, PPI users were associated with a higher risk of influenza (HR 1.74, 95% CI 1.19–2.54), but the risks with pneumonia or COVID-19-related outcomes were not evident. PPI users are associated with increased risks of influenza, pneumonia, as well as COVID-19 severity and mortality compared to non-users, while the effects on pneumonia or COVID-19-related outcomes under PPI use were attenuated when compared to the use of H2RAs. Appropriate use of PPIs based on comprehensive evaluation is required. This work is supported by the National Natural Science Foundation of China (82171698, 82170561, 81300279, 81741067, 82100238), the Program for High-level Foreign Expert Introduction of China (G2022030047L), the Natural Science Foundation for Distinguished Young Scholars of Guangdong Province (2021B1515020003), the Guangdong Basic and Applied Basic Research Foundation (2022A1515012081), the Foreign Distinguished Teacher Program of Guangdong Science and Technology Department (KD0120220129), the Climbing Program of Introduced Talents and High-level Hospital Construction Project of Guangdong Provincial People’s Hospital (DFJH201923, DFJH201803, KJ012019099, KJ012021143, KY012021183), and in part by VA Clinical Merit and ASGE clinical research funds (FWL).
+Background:Adverse effects of proton pump inhibitors (PPIs) have raised wide concerns. The association of PPIs with influenza is unexplored, while that with pneumonia or COVID-19 remains controversial. Our study aims to evaluate whether PPI use increases the risks of these respiratory infections.Methods:The current study included 160,923 eligible participants at baseline who completed questionnaires on medication use, which included PPI or histamine-2 receptor antagonist (H2RA), from the UK Biobank. Cox proportional hazards regression and propensity score-matching analyses were used to estimate the hazard ratios (HRs) and 95% confidence intervals (CIs).Results:Comparisons with H2RA users were tested. PPI use was associated with increased risks of developing influenza (HR 1.32, 95% CI 1.12–1.56) and pneumonia (hazard ratio [HR] 1.42, 95% confidence interval [CI] 1.26–1.59). In contrast, the risk of COVID-19 infection was not significant with regular PPI use (HR 1.08, 95% CI 0.99–1.17), while the risks of severe COVID-19 (HR 1.19. 95% CI 1.11–1.27) and mortality (HR 1.37. 95% CI 1.29–1.46) were increased. However, when compared with H2RA users, PPI users were associated with a higher risk of influenza (HR 1.74, 95% CI 1.19–2.54), but the risks with pneumonia or COVID-19-related outcomes were not evident.Conclusions:PPI users are associated with increased risks of influenza, pneumonia, as well as COVID-19 severity and mortality compared to non-users, while the effects on pneumonia or COVID-19-related outcomes under PPI use were attenuated when compared to the use of H2RAs. Appropriate use of PPIs based on comprehensive evaluation is required.Funding:This work is supported by the National Natural Science Foundation of China (82171698, 82170561, 81300279, 81741067, 82100238), the Program for High-level Foreign Expert Introduction of China (G2022030047L), the Natural Science Foundation for Distinguished Young Scholars of Guangdong Province (2021B1515020003), the Guangdong Basic and Applied Basic Research Foundation (2022A1515012081), the Foreign Distinguished Teacher Program of Guangdong Science and Technology Department (KD0120220129), the Climbing Program of Introduced Talents and High-level Hospital Construction Project of Guangdong Provincial People’s Hospital (DFJH201923, DFJH201803, KJ012019099, KJ012021143, KY012021183), and in part by VA Clinical Merit and ASGE clinical research funds (FWL).
 
 ## Introduction
 
@@ -45,15 +45,19 @@ By leveraging the large-scale cohort and updated data in the UK Biobank, we aim 
 
 ## Methods
 
-## Study population
+### Study population
 
 The detailed information on study design for the UK Biobank was described previously (Sudlow et al., 2015). Invitations were sent to about 9.2 million people who were aged 40–69, had capacity to consent, registered with the National Health Service (NHS), and lived within 25 miles of one of the assessment centers (Conroy et al., 2023). The participants were free to withdraw at any time (Sudlow et al., 2015). Over 0.5 million participants were recruited from 22 assessment centers in Scotland, England, and Wales (specific locations of assessment centers are available at: https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=54) from 2006 to 2010. Information such as touch screen questionnaire, interview, blood pressure, eye measurements, physical measurements and so on was collected in the assessment centers (detailed content of assessments is available at: https://biobank.ndph.ox.ac.uk/ukb/refer.cgi?id=100241). Written informed consent was acquired from each participant, and ethical approval was obtained from the North West Multi-Center Research Ethics Committee (approval number: 11/NW/0382, 16/NW/0274, and 21/NW/0157). The current study has been approved under the UK Biobank project 83339. In this study, 11,171 participants with missing PPI medication data and 56,907 participants with missing covariate data were excluded, and we further restricted the cohort to the participants with available primary-care data. Among them, 1297 participants without follow-up, which were mainly determined by reported death, departure from the UK, or withdrawn consent, had been removed after initial exclusion. For the evaluation of associations with influenza, pneumonia, and other respiratory infections, those with outcomes occurred before the baseline, or only with self-reported records and diagnoses were further excluded. For the COVID-19 infection and COVID-19-related outcomes, we excluded participants whose COVID-19 testing data were unavailable or who had died before the COVID-19 pandemic (Figure 1).
 
-## Definition of exposure
+![Figure 1.](https://cdn.elifesciences.org/articles/94973/elife-94973-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94973/elife-94973-fig1-figsupp1-v2.jpg)
+
+### Definition of exposure
 
 The exposure of interest was regular use of PPIs. The participants could enter the generic or trade name of the treatment on the touchscreen to match the medications they used (Supplementary file 1a). Verbal interviews were conducted by a trained nurse if participants answered that they were regularly taking prescribed or over-the-counter medication on the touchscreen, in which ‘regular’ was defined as most days of the week for the last 4 weeks, and information on specific types of medications was further recorded, while no response to the question on the interview was considered missing data for PPI use. Short-term medications, for example, a 1 week course of antibiotics, were not recorded in the interview. Types of PPIs available in the UK Biobank included omeprazole, lansoprazole, esomeprazole, rabeprazole, and pantoprazole. The regular use of H2RAs was also defied by the above process. When comparing PPI users with H2RA users, participants who took both medications were excluded. Information on dose or duration of acid suppressant use was not available in the UK Biobank.
 
-## Definition of outcomes
+### Definition of outcomes
 
 The primary outcomes of interest were influenza, pneumonia, COVID-19 infections (Supplementary file 1b). Briefly, the first reported occurrences of respiratory system-related conditions within primary care data and hospital inpatient data defined by the International Classification of Diseases (ICD)- 10 codes were categorized by the UK Biobank (https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=2410). Influenza included those caused by identified influenza virus (J09-J10) and virus not identified (J11). Pneumonia was defined as that caused by viruses (J12), bacteria (J13-15), and other infectious organisms (J16-18).
 
@@ -61,15 +65,15 @@ COVID-19-related data in the UK Biobank (available from January 2020 to Septembe
 
 The secondary outcomes included other upper or lower respiratory infections, COVID-19 mortality, and COVID-19 severity. The definition of other upper respiratory infections contained acute nasopharyngitis, sinusitis, pharyngitis, tonsillitis, laryngitis, tracheitis, obstructive laryngitis, epiglottitis, or upper respiratory infections of multiple and unspecified sites (J00-J06). Other lower respiratory infections included acute bronchitis, bronchiolitis, and other unspecified ones (J20-J22). Severe COVID-19 cases were defined as being hospitalized for COVID-19. COVID-19 mortality was defined as the underlying recorded cause of death due to COVID-19 (ICD-10 U07.1 and U07.2).
 
-## Assessment of covariates
+### Assessment of covariates
 
 The covariates used for adjustments in our study were identified by a directed acyclic graph (DCA, Figure 1—figure supplement 1) based on existing literature and expert knowledge. Baseline data on sociodemographic information (age, sex, ethnicity), socioeconomic status (deprivation index, which was defined using national census information on car ownership, household overcrowding, owner occupation, and unemployment combined for postcode areas of residence), alcohol consumption, smoking status, fresh fruit intake, multivitamin use, and body mass index (BMI) were collected from the UK Biobank, while physical activity was assessed using the International Physical Activity Questionnaire-Short Form. Gastroesophageal reflux disease (GERD), peptic ulcers, and upper gastrointestinal bleeding, were included as they are main indications for the use of PPIs. The comorbidities (hypertension, type 2 diabetes, renal failure, myocardial infarction, stroke, chronic obstructive pulmonary disease [COPD], asthma) were examined using self-reported data and adjusted due to their impact on the risk of respiratory infections. Since PPI and H2RA have highly similar indications, the use of H2RA was also adjusted. Data on medication use including aspirin, non-aspirin non-steroidal anti-inflammatory drugs (NSAIDS, including ibuprofen), and cholesterol-lowering medications were extracted and adjusted. For influenza and COVID-related outcomes, vaccinations were additionally adjusted. The linearity between continuous variables and outcomes was assessed by Martingale residuals plots, while the variables detected with non-linearity were regarded as categorical variables for further analyses.
 
-## CYP2C19 genetic variants
+### CYP2C19 genetic variants
 
 PPIs are mainly cleared by CYP2C19, and therefore their metabolism and effects are affected by different variants of CYP2C19. Genotyped genetic variant data after quality control was available for UK Biobank participants based on the Affymetrix Axiom UKB array and the Affymetrix UKBiLEVE array (Bycroft et al., 2018). According to the Clinical Pharmacogenetics Implementation Consortium Guideline for CYP2C19 and Proton Pump Inhibitor Dosing (Lima et al., 2021), genotypic data of four CYP2C19 variants, including rs12248560 (CYP2C19*17), rs17884712 (CYP2C19*9), rs4986893 (CYP2C19*3), and rs4244285 (CYP2C19*2), were utilized to divide PPI users into three subgroups: (1) CYP2C19 rapid and ultrarapid metabolizers (carried 1 functional allele and 1 increased-function allele [*17]; or carried 2 increased-function alleles); (2) CYP2C19 normal metabolizers (carried 2 functional alleles); (3) CYP2C19 likely intermediate, intermediate and poor metabolizers (carried ≥1 alleles with no/decreased function [*2, *3, and *9]).
 
-## Statistical analysis
+### Statistical analysis
 
 The baseline characteristics were demonstrated by percentages for categorical variables, and mean (standard deviation [SD]), or median (interquartile range [IQR]) for continuous variables according to the distribution of data after evaluating the data distribution.
 
@@ -81,33 +85,513 @@ All statistical analyses were performed using R (R Development Core Team, 2022).
 
 ## Results
 
-## Study population
+### Study population
 
 A total of 160,923 individuals aged 38–71 years who passed the initial selection criteria in the UK Biobank were included in this study (Table 1). The median follow-up was 7.1 (interquartile range [IQR] 6.2–8.5) years. The mean age of the included participants was 56.5 years, and 53.0% of them were women. Evidently, regular PPI users were characterized by higher rates of GERD (32.4% vs 2.7%), peptic ulcer (5.6% vs 0.9%), and upper gastrointestinal bleeding (0.2% vs 0.03%) compared to non-regular PPI users. Higher burdens of comorbidities, as well as increased use of aspirin, H2RA, and cholesterol-lowering medications, were also observed in regular PPI users.
 
-## Proton pump inhibitor use and influenza, pneumonia, and COVID-19 infection
+**Table 1.**
+ Baseline characteristics of the included participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristics</th>
+      <th colspan="2">Regular PPI use</th>
+      <th rowspan="2">Overall</th>
+    </tr>
+    <tr>
+      <th>Yes</th>
+      <th>No</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of participants, n (%)</td>
+      <td>9 997 (6.2)</td>
+      <td>150 926 (93.8)</td>
+      <td>160 923 (100.0)</td>
+    </tr>
+    <tr>
+      <td>Age, years, mean (SD)</td>
+      <td>59.4 (7.4)</td>
+      <td>56.3 (8.2)</td>
+      <td>56.5 (8.1)</td>
+    </tr>
+    <tr>
+      <td>Sex, female, n (%)</td>
+      <td>5 533 (55.4)</td>
+      <td>79 709 (52.8)</td>
+      <td>85 242 (53.0)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity, white, n (%)</td>
+      <td>9 571 (95.7)</td>
+      <td>144 295 (95.6)</td>
+      <td>153 866 (95.6)</td>
+    </tr>
+    <tr>
+      <td>Deprivation index, mean (SD)</td>
+      <td>–0.9 (3.3)</td>
+      <td>–1.4 (3.0)</td>
+      <td>–1.4 (3.0)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Alcohol consumption, n (%)</td>
+    </tr>
+    <tr>
+      <td>Daily or almost daily</td>
+      <td>1 805 (18.1)</td>
+      <td>28 846 (20.5)</td>
+      <td>32 874 (20.4)</td>
+    </tr>
+    <tr>
+      <td>3 or 4 times a week</td>
+      <td>1 923 (19.2)</td>
+      <td>33 533 (23.8)</td>
+      <td>37 570 (23.4)</td>
+    </tr>
+    <tr>
+      <td>1 or 2 times a week</td>
+      <td>2 396 (24.0)</td>
+      <td>37 443 (26.6)</td>
+      <td>42 228 (26.2)</td>
+    </tr>
+    <tr>
+      <td>1–3 times a month</td>
+      <td>1 179 (11.8)</td>
+      <td>15 669 (11.1)</td>
+      <td>17 988 (11.2)</td>
+    </tr>
+    <tr>
+      <td>Special occasions only</td>
+      <td>1 522 (15.2)</td>
+      <td>14 965 (10.6)</td>
+      <td>17 616 (11.0)</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>1 161 (11.6)</td>
+      <td>10 414 (7.4)</td>
+      <td>12 570 (7.8)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Smoking, n (%)</td>
+    </tr>
+    <tr>
+      <td>Never smoker</td>
+      <td>4 572 (45.7)</td>
+      <td>82 998 (55.0)</td>
+      <td>87 570 (54.4)</td>
+    </tr>
+    <tr>
+      <td>Previous smoker</td>
+      <td>4 289 (42.9)</td>
+      <td>52 013 (34.5)</td>
+      <td>56 302 (35.0)</td>
+    </tr>
+    <tr>
+      <td>Current smoker</td>
+      <td>1 136 (11.4)</td>
+      <td>15 915 (10.6)</td>
+      <td>17 051 (10.6)</td>
+    </tr>
+    <tr>
+      <td>Physical activity, MET minutes/week, median (IQR)</td>
+      <td>1 525.5 (2 722.0)</td>
+      <td>1 815.0 (2 848.5)</td>
+      <td>1 794.0 (2 838.5)</td>
+    </tr>
+    <tr>
+      <td>Fresh fruit intake, pieces, mean (SD)</td>
+      <td>2.0 (2.6)</td>
+      <td>1.9 (2.6)</td>
+      <td>1.9 (2.6)</td>
+    </tr>
+    <tr>
+      <td>BMI, kg/m2, mean (SD)</td>
+      <td>29.2 (5.1)</td>
+      <td>27.4 (4.7)</td>
+      <td>27.5 (4.8)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Indication of PPIs, n (%)</td>
+    </tr>
+    <tr>
+      <td>GERD</td>
+      <td>3 235 (32.4)</td>
+      <td>4 015 (2.7)</td>
+      <td>7 250 (4.5)</td>
+    </tr>
+    <tr>
+      <td>Peptic ulcer</td>
+      <td>561 (5.6)</td>
+      <td>1 303 (0.9)</td>
+      <td>1 864 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Upper gastrointestinal bleeding</td>
+      <td>18 (0.2)</td>
+      <td>38 (0.03)</td>
+      <td>56 (0.03)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Comorbidities, n (%)</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>4 116 (41.2)</td>
+      <td>38 162 (25.3)</td>
+      <td>42 278 (26.3)</td>
+    </tr>
+    <tr>
+      <td>Type 2 diabetes</td>
+      <td>124 (1.2)</td>
+      <td>890 (0.6)</td>
+      <td>1 014 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Renal failure</td>
+      <td>60 (0.6)</td>
+      <td>243 (0.2)</td>
+      <td>303 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Myocardial infarction</td>
+      <td>331 (3.3)</td>
+      <td>1 632 (1.1)</td>
+      <td>1 963 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Stoke</td>
+      <td>140 (1.4)</td>
+      <td>943 (0.6)</td>
+      <td>1 083 (0.7)</td>
+    </tr>
+    <tr>
+      <td>COPD</td>
+      <td>46 (0.5)</td>
+      <td>200 (0.1)</td>
+      <td>246 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Asthma</td>
+      <td>841 (8.4)</td>
+      <td>8 471 (5.6)</td>
+      <td>9 312 (5.8)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Medication use, n (%)</td>
+    </tr>
+    <tr>
+      <td>Aspirin</td>
+      <td>2 457 (24.6)</td>
+      <td>21 108 (14.0)</td>
+      <td>23 565 (14.6)</td>
+    </tr>
+    <tr>
+      <td>Non-aspirin NSAIDS</td>
+      <td>1 224 (12.2)</td>
+      <td>22 568 (15.0)</td>
+      <td>23 792 (14.8)</td>
+    </tr>
+    <tr>
+      <td>H2RA</td>
+      <td>297 (3.0)</td>
+      <td>2 956 (2.0)</td>
+      <td>3 253 (2.02)</td>
+    </tr>
+    <tr>
+      <td>Cholesterol lowering medications</td>
+      <td>1 537 (15.4)</td>
+      <td>9 241 (6.1)</td>
+      <td>10 778 (6.70)</td>
+    </tr>
+    <tr>
+      <td>Multivitamin use, n (%)</td>
+      <td>2 227 (22.3)</td>
+      <td>33 201 (22.0)</td>
+      <td>35 428 (22.0)</td>
+    </tr>
+  </tbody>
+</table>
+
+_BMI: body mass index; COPD: chronic obstructive pulmonary disease; GERD: gastroesophageal reflux disease; H2RA: histamine 2 receptor antagonist; IQR: interquartile range; MET: metabolic equivalent of task; PPI: proton pump inhibitor; NSAIDS: non-steroidal anti-inflammatory drugs; SD: standard deviation._
+
+### Proton pump inhibitor use and influenza, pneumonia, and COVID-19 infection
 
 Increased risks of developing influenza, pneumonia, and other respiratory infections were identified in regular users of PPIs compared with non-regular users, and the risk remained raised after adjustments (Table 2). Inclusion of the self-reported cases did not significantly alter the results (Supplementary file 1d). A 32% increased risk of developing influenza (aHR 1.32, 95% CI 1.12–1.56, p=0.001; e-value 1.97) was observed among regular PPI users. In addition, regular use of PPIs was associated with a 42% increased risk of developing pneumonia (fully adjusted HR [aHR] 1.42, 95% CI 1.26–1.59, p<0.001; e-value 2.19). Regular PPI users had lower event-free probabilities for influenza and pneumonia compared to those of non-users (Figure 2—figure supplement 1A-B). The association of PPI use with COVID-19 positivity was further evaluated in our study. Initially, in the non-adjusted model, the susceptibility to COVID-19 positivity was observed with a 18% increase (HR 1.18, 95% CI 1.09–1.26, p<0.001 for non-adjusted model; Table 2) in participants with regular use of PPIs. However, full adjustments for covariates rendered the association nonsignificant (aHR 1.08, 95% CI 0.99–1.17, p=0.101; Table 2).
 
-## Proton pump inhibitor use and other respiratory infections, COVID-19 severity, and COVID-19 mortality
+**Table 2.**
+ Associations of PPI use with the susceptibility to pneumonia, influenza, COVID-19 positivity, and other respiratory infections.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th rowspan="2">Case/person-years</th>
+      <th colspan="2">Non-adjusted model</th>
+      <th colspan="2">Age/sex-adjusted model</th>
+      <th colspan="2">Fully adjusted model*</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>HR (95% CI)</th>
+      <th>p</th>
+      <th>HR (95% CI)</th>
+      <th>p</th>
+      <th>HR (95% CI)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">Influenza</td>
+    </tr>
+    <tr>
+      <td>Non-regular PPI use</td>
+      <td>2 009/6 011</td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>183/539</td>
+      <td>1.38 (1.19–1.62)</td>
+      <td>&lt;0.001</td>
+      <td>1.49 (1.28–1.74)</td>
+      <td>&lt;0.001</td>
+      <td>1.32 (1,12–1.56)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td colspan="8">Pneumonia</td>
+    </tr>
+    <tr>
+      <td>Non-regular PPI use</td>
+      <td>2 904/12 867</td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>378/1 702</td>
+      <td>2.04 (1.83–2.27)</td>
+      <td>&lt;0.001</td>
+      <td>1.74 (1.56–1.94)</td>
+      <td>&lt;0.001</td>
+      <td>1.42 (1.26–1.59)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="8">COVID-19 positivity</td>
+    </tr>
+    <tr>
+      <td>Non-regular PPI use</td>
+      <td>23 989/29 080</td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>1 440/1 702</td>
+      <td>1.18 (1.09–1.26)</td>
+      <td>&lt;0.001</td>
+      <td>1.07 (0.99–1.15)</td>
+      <td>0.058</td>
+      <td>1.08 (0.99–1.17)</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td colspan="8">Other upper respiratory infections</td>
+    </tr>
+    <tr>
+      <td>Non-regular PPI use</td>
+      <td>14 449/52 499</td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>1 118/3 988</td>
+      <td>1.30 (1.22–1.38)</td>
+      <td>&lt;0.001</td>
+      <td>1.31 (1.23–1.39)</td>
+      <td>&lt;0.001</td>
+      <td>1.19 (1.11–1.27)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="8">Other lower respiratory infections</td>
+    </tr>
+    <tr>
+      <td>Non-regular PPI use</td>
+      <td>14 494/55 384</td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+      <td>1.00 (reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>1 486/5 598</td>
+      <td>1.78 (1.67–1.88)</td>
+      <td>&lt;0.001</td>
+      <td>1.65 (1.56–1.74)</td>
+      <td>&lt;0.001</td>
+      <td>1.37 (1.29–1.46)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI: confidence interval; COVID-19: coronavirus disease 2019; HR: hazard ratio; PPI: proton pump inhibitor.*Adjusted for age, sex, ethnicity, deprivation index, smoking, alcohol consumption, physical activity, fresh fruit intake, body mass index, any indication of PPIs (gastroesophageal reflux disease [GERD], peptic ulcer, upper gastrointestinal bleeding), comorbidities (hypertension, type 2 diabetes, renal failure, myocardial infarction, stroke, chronic obstructive pulmonary disease [COPD], asthma), medications (aspirin, non-aspirin non-steroidal anti-inflammatory drugs [NSAIDs, ibuprofen], histamine 2 receptor antagonists (H2RAs), cholesterol lowering medications), multivitamin use, and influenza vaccination (for influenza) or COVID-19 vaccination (for COVID-19-related outcomes)._
+
+### Proton pump inhibitor use and other respiratory infections, COVID-19 severity, and COVID-19 mortality
 
 For other upper and lower respiratory infections, the risks among regular PPI users were increased by 19% (aHR 1.19, 95% CI 1.11–1.27, p<0.001; e-value 1.67) and 37% (aHR 1.37, 95% CI 1.29–1.46, p<0.001; e-value 2.08), respectively. In contrast, the risks of developing severe COVID-19 (aHR 1.33, 95% CI 1.09–1.61, p=0.004; e value 1.99) and mortality due to COVID-19 (aHR 1.46, 95% CI 1.05–2.03, p=0.024; e value 2.03) were significantly increased among PPI users compared to those among PPI non-users (Supplementary file 1e). PPI users had lower event-free probabilities for COVID-19 severity and mortality, but not COVID-19 positivity compared to those of non-users (Figure 2—figure supplement 1C—E).
 
-## Subgroup analysis
+### Subgroup analysis
 
 Stratified analyses were performed in the fully adjusted models for the main outcomes. Overall, no significant evidence of interactions was observed in the subgroup analyses referring to influenza (all p for interaction >0.05, Figure 2). The subgroup analyses for other main outcomes were illustrated in Figure 2 and Figure 2—figure supplement 2.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/94973/elife-94973-fig2-v2.jpg)
+
+**Figure 2.:** Effect estimates were based on age, sex, deprivation index, alcohol consumption, smoking, body mass index (BMI), indications of PPIs, hypertension, type 2 diabetes, chronic obstructive pulmonary disease (COPD), asthma, aspirin, histamine 2 receptor antagonist (H2RA), and cholesterol-lowering medication, using the fully adjusted model. CI: confidence interval; HR: hazard ratio; Pi: P value for interaction.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94973/elife-94973-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94973/elife-94973-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/94973/elife-94973-fig2-figsupp3-v2.jpg)
+
 Among different types of PPIs, regular omeprazole or lansoprazole users were correlated with greater risks of respiratory infections (Supplementary file 1f). The risks of influenza were significant among CYP2C19 normal metabolizers, and the risk estimate increased among CYP2C19 likely intermediate, intermediate and poor metabolizers, while more information and larger sample sizes on PPI subtypes are still needed to increase the statistical power (Supplementary file 1g). The risks of COVID-19 severity and COVID-19 mortality were higher among CYP2C19 likely intermediate, intermediate and poor metabolizers (Supplementary file 1h). The risks of pneumonia were higher among CYP2C19 rapid and ultrarapid metabolizers (Supplementary file 1g).
 
-## Analysis by multiple imputation and propensity score-matching
+### Analysis by multiple imputation and propensity score-matching
 
 After imputation of missing data, we found that individuals with regular use of PPIs were associated with similarly increased trends in the risks of influenza, pneumonia, other upper respiratory infections, and other lower respiratory infections (all p<0.05; Supplementary file 1i). The associations with COVID-19 severity and mortality were also significant (all p<0.05; Supplementary file 1j).
 
 Matching of 9910 regular PPI users and 39,760 non-regular users (1:4 by propensity scores) was also conducted, and the baseline characteristics were much more similar (Supplementary file 1k). The participants regularly exposed to PPIs were observed with increased risks for influenza, pneumonia, other upper respiratory infections, and other lower respiratory infections (all p<0.05; Supplementary file 1l), which were consistent with the results from Cox hazard proportional regression models. The associations with COVID-19 severity and mortality were also significant (all p<0.05; Supplementary file 1m).
 
-## Comparisons with H2RA users
+### Comparisons with H2RA users
 
 To further confirm the results and reduce the effect of confounding by indications, we evaluated the risk of respiratory infections compared to the use of H2RAs, which is a less potent acid-suppressant and contains indications similar to PPI. When compared to regular H2RA users, participants with regular use of PPIs were also associated with an increased risk of influenza (HR 1.74, 95% CI 1.19–2.54, p=0.004; e-value 2.87), other upper respiratory infection (HR 1.28, 95% CI 1.07–1.54, p=0.008; e-value 1.88), and other lower respiratory infection (HR 1.33, 95% CI 1.18–1.50, p<0.001; e-value 1.99; Table 3). However, the associations with pneumonia (HR 1.22. 95% CI 0.96–1.54, p=0.104),COVID-19 infection (HR 1.04. 95% CI 0.87–1.26, p=0.629), COVID-19 severity (HR 0.91. 95% CI 0.64–1.30, p=0.608), or COVID-19 mortality (HR 0.83. 95% CI 0.45–1.56, p=0.745) were not significant (Supplementary file 1n).
+
+**Table 3.**
+ Comparisons of the risks of influenza, pneumonia, and COVID-19 between proton pump inhibitor (PPI) and histamine-2 receptor antagonist (H2RA) users.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cases / Person-years</th>
+      <th>HR (95% Cl)*</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Influenza</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular H2RA use</td>
+      <td>32/102</td>
+      <td>1.00 (Reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>175/524</td>
+      <td>1.74 (1.19–2.54)</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td colspan="4">Pneumonia</td>
+    </tr>
+    <tr>
+      <td>Regular H2RA use</td>
+      <td>86/385</td>
+      <td>1.00 (Reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>368/1653</td>
+      <td>1.22 (0.96–1.54)</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <td colspan="4">COVID-19 positivity</td>
+    </tr>
+    <tr>
+      <td>Regular H2RA use</td>
+      <td>425/506</td>
+      <td>1.00 (Reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>1 409/1 665</td>
+      <td>1.06 (0.90–1.24)</td>
+      <td>0.509</td>
+    </tr>
+    <tr>
+      <td colspan="4">Other upper respiratory infection</td>
+    </tr>
+    <tr>
+      <td>Regular H2RA use</td>
+      <td>146/522</td>
+      <td>1.00 (Reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>602/2099</td>
+      <td>1.28 (1.07–1.54)</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td colspan="4">Other lower respiratory infection</td>
+    </tr>
+    <tr>
+      <td>Regular H2RA use</td>
+      <td>339/1350</td>
+      <td>1.00 (Reference)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regular PPI use</td>
+      <td>1438/5398</td>
+      <td>1.33 (1.18–1.50)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI: confidence interval; COVID-19: coronavirus disease 2019; H2RA: histamine-2 receptor antagonist; HR: hazard ratio; PPI:585 proton pump inhibitor.*Adjusted for age, sex, ethnicity, deprivation index, smoking, alcohol consumption, physical activity, fresh fruit intake, body mass index, any indication of PPIs (gastroesophageal reflux disease [GERD], peptic ulcer, upper gastrointestinal bleeding), comorbidities (hypertension, type 2 diabetes, renal failure, myocardial infarction, stroke, chronic obstructive pulmonary disease [COPD], asthma), medications (aspirin, non-aspirin non-steroidal anti-inflammatory drugs [NSAIDs, ibuprofen], cholesterol lowering medications), multivitamin use, and influenza vaccination (for influenza) or COVID-19 vaccination (for COVID-19-related outcomes)._
 
 ## Discussion
 
@@ -127,6 +611,6 @@ Limitations exist in our study. Information on dose and duration of PPI use, dis
 
 Our findings could have essential implications for the prevention of respiratory infections and the de-prescribing of PPIs in clinical practice. Administration of PPIs can rapidly increase intragastric pH to higher than 6 after 2–4 hours (Laine et al., 2008). Emerging evidence has revealed the inappropriate prescription of PPIs in both the primary and secondary care settings, and 33–67% of the patients did not take the drug according to their countries’ criteria (Forgacs and Loganayagam, 2008). Similarly, the baseline characteristics of the included participants in our study demonstrate that approximately 60% of the regular PPI users do not have main indications. In addition, although influenza is usually self-limiting in healthy individuals, its risk of complications is significantly increased among pregnant women and people with immunosuppression or chronic diseases (Ghebrehewet et al., 2016). Therefore, comprehensive evaluation of PPI use is needed in clinical practice.
 
-## Conclusion
+### Conclusion
 
 In conclusion, compared to non-users, people regularly taking PPIs are associated with increased susceptibility to influenza, pneumonia, as well as COVID-19 severity and mortality, while their association with pneumonia and COVID-19-related outcomes is diminished after comparison with H2RA use and remains to be further explored.

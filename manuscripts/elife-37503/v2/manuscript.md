@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.37503.001 Tryparedoxin peroxidases, distant relatives of glutathione peroxidase 4 in higher eukaryotes, are responsible for the detoxification of lipid-derived hydroperoxides in African trypanosomes. The lethal phenotype of procyclic Trypanosoma brucei that lack the enzymes fulfils all criteria defining a form of regulated cell death termed ferroptosis. Viability of the parasites is preserved by α-tocopherol, ferrostatin-1, liproxstatin-1 and deferoxamine. Without protecting agent, the cells display, primarily mitochondrial, lipid peroxidation, loss of the mitochondrial membrane potential and ATP depletion. Sensors for mitochondrial oxidants and chelatable iron as well as overexpression of a mitochondrial iron-superoxide dismutase attenuate the cell death. Electron microscopy revealed mitochondrial matrix condensation and enlarged cristae. The peroxidase-deficient parasites are subject to lethal iron-induced lipid peroxidation that probably originates at the inner mitochondrial membrane. Taken together, ferroptosis is an ancient cell death program that can occur at individual subcellular membranes and is counterbalanced by evolutionary distant thiol peroxidases.
+Tryparedoxin peroxidases, distant relatives of glutathione peroxidase 4 in higher eukaryotes, are responsible for the detoxification of lipid-derived hydroperoxides in African trypanosomes. The lethal phenotype of procyclic Trypanosoma brucei that lack the enzymes fulfils all criteria defining a form of regulated cell death termed ferroptosis. Viability of the parasites is preserved by α-tocopherol, ferrostatin-1, liproxstatin-1 and deferoxamine. Without protecting agent, the cells display, primarily mitochondrial, lipid peroxidation, loss of the mitochondrial membrane potential and ATP depletion. Sensors for mitochondrial oxidants and chelatable iron as well as overexpression of a mitochondrial iron-superoxide dismutase attenuate the cell death. Electron microscopy revealed mitochondrial matrix condensation and enlarged cristae. The peroxidase-deficient parasites are subject to lethal iron-induced lipid peroxidation that probably originates at the inner mitochondrial membrane. Taken together, ferroptosis is an ancient cell death program that can occur at individual subcellular membranes and is counterbalanced by evolutionary distant thiol peroxidases.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ In the PC insect stage of T. brucei, the presence of either the cytosolic or the
 
 ## Results
 
-## Ferroptosis inhibitors protect Px I-III-deficient PC T. brucei from cell death
+### Ferroptosis inhibitors protect Px I-III-deficient PC T. brucei from cell death
 
 The Px-type tryparedoxin peroxidases protect African trypanosomes against fatal membrane damages (Diechtierow and Krauth-Siegel, 2011; Hiller et al., 2014; Schaffroth et al., 2016). In PC T. brucei, deletion of the px I-III locus is lethal but the mutant cells proliferate like wildtype parasites if the medium is supplemented with either 100 µM of Trolox or Dfx (Schaffroth et al., 2016). The minimum concentration to ensure full viability of the Px I-III KO cells is 50 µM Trolox and 100 µM Dfx, respectively. 10 µM Trolox and 20 µM Dfx alone are not sufficient but in combination, restore cell viability (Figure 1—figure supplement 1). Evidently, partial complexation of iron by Dfx lowers the concentration of Trolox that is required to protect the cells. The concerted action of Dfx and Trolox is probably related to the fact that free iron ions react with hydroperoxides generating highly deleterious alkoxy radicals. The protective effect of radical trapping agents is usually associated with their reactivity towards peroxy radicals (Shah et al., 2018). Yet, this reaction would regenerate hydroperoxides and thus, in peroxidase-deficient cells maintain the vicious cycle. As shown recently, Trolox is a more powerful scavenger of alkoxy radicals compared to peroxy radicals (Alberto et al., 2013). The reaction converts alkoxy radicals into the respective alcohols which more likely explains the protecting effect of Trolox and probably other radical trapping agents as well.
 
@@ -35,25 +35,57 @@ At 1 µM, α-Tocopherol (α-Toc) fully reverts the lethal phenotype of mammalian
 
 The finding that lysis of the Px I-III KO T. brucei was prevented by either a lipophilic antioxidant or an iron chelator was reminiscent of ferroptosis (Dixon et al., 2012; Friedmann Angeli et al., 2014; Doll and Conrad, 2017). Most potent inhibitors of this regulated cell death described so far are ferrostatin-1 (Fer-1) and liproxstatin-1 (Lpx-1) which protect mammalian cells at nanomolar concentrations. Indeed also in trypanosomes, 100 nM Fer-1 or 200 nM Lpx-1 completely abolished the lethality of the Px I-III KO cells (Figure 1A). Mechanistically, the compounds act as radical-trapping agents which in phospholipid bilayers are significantly more potent antioxidants than α-Toc (Zilka et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig1-v2.jpg)
+
+**Figure 1.:** The mutant cells were either kept in Trolox-supplemented medium or transferred into medium containing 100 µM Dfx, 100 nM ferrostatin-1 or 200 nM liproxstatin-1 or no addition. (A) Every hour viable cells were counted. The data are the mean ± SD of three independent experiments. (B) The cells were kept for 2 hr in medium ± Trolox, incubated for 30 min with 10 µM H2DCFDA in medium + Trolox and subjected to flow cytometry measuring DCF fluorescence. (C) BODIPY was added and after 2 hr incubation the cells were analyzed by flow cytometry. (B and C) show representative histograms from two independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The cells were incubated in the presence of (A) different concentrations of Trolox, (B) various concentrations of Dfx, (C) in medium supplemented with 10 µM Trolox or 20 µM Dfx alone or in combination and (D) different concentrations of α-Toc. (E) The cells were pre-cultured for 18 hr in the presence or absence of 10 µM α-Toc in medium containing Trolox, washed with PBS and transferred into medium ± α-Toc. After different times, viable cells were counted and the percentage relative to the start cell density was calculated. The data are the mean ± SD of three independent experiments.
+
 Mammalian ferroptotic cells show a time-dependent increase of both lipid and soluble reactive oxygen species (ROS) production (Dixon et al., 2012; Yang et al., 2014). Thus, the Px I-III KO cells were incubated in medium ± Trolox and treated with H2DCFDA, a broadly used dye for detection of cellular oxidants (Kuznetsov et al., 2011). After 2 hr in Trolox-free medium, DCF fluorescence was strongly increased indicating that the parasites are subject to general oxidative stress (Figure 1B). Next we measured lipid peroxidation using BODIPY 581/591 C11, a redox-sensitive dye that integrates into membranes and shifts its fluorescence from red to green upon oxidation (Pap et al., 1999). Px I-III KO parasites were incubated with BODIPY in medium that was supplemented with Trolox, Dfx, Fer-1 and Lpx-1, respectively, or lacked any protecting agent and analyzed by flow cytometry. Cells that were kept for 2 hr in non-supplemented medium showed strong green fluorescence whereas cells incubated in the presence of the radical scavengers or iron chelator were protected from lipid peroxidation (Figure 1C). Taken together, in trypanosomes, a cell death that is due to impaired removal of lipid-derived hydroperoxides can be prevented by known ferroptosis inhibitors.
 
-## RSL3 has trypanocidal activity and inactivates Tpx
+### RSL3 has trypanocidal activity and inactivates Tpx
 
 RSL3 (RAS-selective lethal) is a ferroptosis-inducing agent. The (1S, 3R)-RSL3 isomer kills RAS-transformed tumorigenic fibroblast cell lines with EC50-values of 10 nM and irreversibly inactivates GPx4. The other three diastereomers display EC50-values of 2.5 to 5 µM (Yang et al., 2014). BS T. brucei were cultured for up to 72 hr in the presence of different concentrations of (1S, 3R)-RSL3 or the racemic mixture and then subjected to ATPlite measurements. After 24 and 48 hr, EC50-values of 2 and 4 µM were obtained which increased about two-fold after 72 hr probably because of long-term instability of the compounds in the medium. Thus, RSL3 was trypanocidal but selectivity for the (1S,3R)-isomer could not be detected (Supplementary file 1). A lack of stereo-specificity and EC-values in the low micromolar range were reported for non-transformed fibroblast cell lines as well (Yang et al., 2014). To further assess a putative interaction of RSL3 with the peroxidases, the analysis was conducted in the presence of Trolox, Lpx-1 or Fer-1. Under these conditions, viability and proliferation of T. brucei is independent of the Px-type enzymes (Figure 1A). The EC50-values obtained in the presence or absence of the radical-trapping antioxidants were virtually the same which implies that the trypanocidal activity of RSL3 is not related to inhibition of the peroxidases. This may, at least partially, be due to the fact that the parasite peroxidases have an active site cysteine instead of the selenocysteine in GPx4. Mammalian mouse embryonic fibroblasts (MEF and PFa1 cells) in which authentic GPx4 is replaced by a Cys-mutant are much less sensitive towards (1S,3R)-RSL3 than the respective wildtype cells (Ingold et al., 2018).
 
 RSL3 carries a chloroacetamido group. In a large scale screen against the peroxidase cascade of T. brucei, several compounds with this substituent proved to be trypanocidal and to inactivate Tpx (Fueller et al., 2012). All protein components of the parasite peroxidase system, TR, Tpx and the Px-type enzymes, are essential and possess reactive cysteine residues. Firstly, RSL3 was studied as putative covalent inhibitor of TR. 1 µM reduced TR was incubated for up to 2 hr with 100 µM RSL3 racemate as described in Materials and methods. The activity of TR remained constant ruling out any inactivation of the reductase. Next, the effect of RSL3 on the peroxidase cascade was studied. The mixture of NADPH, T(SH)2, TR, Tpx and Px was treated with RSL3. After different times, H2O2 was added and NADPH consumption was followed. Finally, a mixture containing all components except the peroxidase was incubated with RSL3 and the reaction started by adding Px and H2O2. In both approaches, RSL3 caused a time-dependent decrease of the activity but the degree of inactivation was identical irrespective of the presence or absence of the peroxidase in the pre-incubation mixture (Supplementary file 1). This strongly suggested that RSL3 is a time-dependent inhibitor of Tpx. The parasite-specific essential oxidoreductase is a distant relative of thioredoxins and glutaredoxins (Comini et al., 2007). Tpx transfers reducing equivalents from trypanothione not only to the peroxidases but also methionine-sulfoxide reductase and, probably most importantly, ribonucleotide reductase (Dormeyer et al., 2001). Thus, inhibition of Tpx likely affects the synthesis of DNA precursors which may be the main reason for the trypanocidal action of RSL3.
 
-## The Px I-III-deficient cells encounter mitochondria-specific membrane damages
+### The Px I-III-deficient cells encounter mitochondria-specific membrane damages
 
 The PC Px I-III KO cells were incubated in medium ± Trolox, treated with the mitochondrial membrane potential-sensitive MitoTracker Red or propidium iodide (PI), as indicator of plasma membrane integrity, and subjected to flow cytometry. When kept for 4 hr in the presence of Trolox or directly after transfer into standard medium (0 hr – Trolox), the majority of cells displayed normal forward scatter (FSC) and side scatter (SSC) (Figure 2—figure supplement 1). After 1 or 2 hr in the absence of a protecting agent, most of the cells had reduced SSC and slightly increased FSC probably due to their reduced motility and altered morphology. From 2 hr onwards, a third population arose that comprised severely damaged or dead cells. In accordance with previous fluorescence microscopy studies (Schaffroth et al., 2016), already 1 hr after Trolox-withdrawal, the MitoTracker Red signal was reduced and after 2 hr had reached the minimal value. In contrast, the PI fluorescence remained at the basal level. Only when the cells were kept for ≥3 hr without the antioxidant the PI staining strongly increased. Taken together, in the Px I-III-deficient cells, loss of the mitochondrial membrane potential clearly precedes plasma membrane disintegration.
 
 To elucidate if/how the loss of the mitochondrial membrane potential affects the morphology of the organelle, the Px I-III KO cells were studied by immunofluorescence microscopy. After 1 hr in Trolox-free medium, many cells still displayed a proper MitoTracker signal but surprisingly weak immune staining for the mitochondrial matrix 2-Cys-peroxiredoxin (mtTXNPx) (Figure 2A). After 2 hr in the absence of Trolox, the majority of cells had lost the MitoTracker signal and the mtTXNPx antibodies visualized some bright spots in addition to the faint mitochondrial staining. Respective observations were made when antibodies against two other matrix proteins, lipoamide dehydrogenase and acetate-succinate-CoA-transferase, were used (not shown). The reasons for the impaired and later punctuated staining of mitochondrial matrix proteins in the fixed and permeabilized cells are not clear. One may speculate that the antibody penetration was hampered and later, upon progressive condensation of the matrix, the proteins became concentrated within distinct areas. When antibodies against the voltage-dependent anion channel (VDAC) were used, this phenomenon was not observed. Instead, cells that after 1 hr in the absence of Trolox had already lost their MitoTracker Red signal, retained the VDAC staining (Figure 2B). Even after 2 hr, when the majority of cells no longer showed MitoTracker staining and had an overall swollen cell body, the antibodies against the outer mitochondrial membrane protein still visualized the tubular mitochondrion.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig2-v2.jpg)
+
+**Figure 2.:** The parasites were incubated for 1 or 2 hr in medium ± Trolox, treated with MitoTracker (red) and subjected to immunofluorescence microscopy using antibodies against (A) mtTXNPx (green) or (B) VDAC (green). Nuclear and kinetoplast DNA were visualized by DAPI staining (blue). Merge, overlay of the respective three signals. Phase, phase contrast image. Scale bare 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The Px I-III KO cells were incubated ± Trolox for up to 4 hr, stained with MitoTracker or propidium iodide and subjected to flow cytometry. (A) Forward- (FSC) and side-scatter (SSC) DotPlots of MitoTracker-treated cells. The cells were gated in three sub-populations (P1-3) representing cells with normal FSC and SSC (P1; green), cells with reduced SSC (P2; magenta), and mainly dead cells (P3; grey). (B) Histograms of MitoTracker and propidium iodide signals of all single cells. The figure shows representative results of two independent experiments.
+
 To get a deeper insight in the morphological changes, the Px I-III KO cells were subjected to transmission electron microscopy. Cells kept in the presence of Trolox or for only 30 min in Trolox-free medium were indistinguishable from wildtype parasites. These cells are characterized by a highly elongated cell body with densely packed cytoplasm and distinguishable subcellular structures such as the nucleus, mitochondrion, Golgi apparatus, ER, acidocalcisomes, glycosomes and lipid droplets. Staining of the mitochondrion and cristae was comparable or even lighter than that of the cytoplasm (Figure 3A). When the Px I-III KO cells were incubated for ≥1 hr in Trolox-free medium, cells appeared that still had an elongated shape, but, compared to the controls, lighter cytoplasm and a more electron-dense mitochondrion (Figure 3B and C, Figure 3—figure supplement 1). Both morphological changes appeared to be linked as cells with darkened mitochondrion but normal cytosol or, vice versa, with normal mitochondrion but lighter cytosol were hardly or not detectable (Figure 3D). Other organelles were unaffected (Figure 3B, Figure 3—figure supplement 1). The lighter cytosol is probably due to the gradual increase of the cell volume. Indeed, upon prolonged incubation in the absence of the antioxidant, light microscopy of the Px I-III KO cells revealed an increase of swollen cells (not shown). The dark mitochondria contained a growing number of less electron-dense area (Figure 3C). These white structures appeared within the organelle but were never found to protrude out into the cytosol. Notably, high magnification revealed three membranes that surrounded the white bleb (Figure 3C, insert). This strongly suggested that the outer mitochondrial membrane remained intact and the blebs were dilated cristae. The phenotype was reminiscent of a condensed matrix and enlarged intermembrane space as observed in isolated mitochondria after transfer into high osmotic medium (Cortese et al., 1991). After 2 hr in Trolox-free medium, single cells were found that showed the release of vesicles from the plasma membrane (Figure 3—figure supplement 1).
 
-## Px I-III-deficient cells generate mitochondrial oxidants and lose ATP
+![Figure 3.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig3-v2.jpg)
+
+**Figure 3.:** Parasites kept in the presence or absence of Trolox were fixed, processed and subjected to transmission electron microscopy as described under Materials and methods. Electron micrographs of representative cells incubated for (A) 2 hr in Trolox-containing medium and (B and C) 2 hr in Trolox-free medium. N, nucleus; LP, lipid droplet; G, glycosome; ER, endoplasmic reticulum; K, kinetoplast; GA, Golgi apparatus; M, mitochondrion; A, acidocalcisome; black arrow heads, normal cristae; white arrow heads, enlarged cristae. The inserts in (A) and (C) show higher magnifications of mitochondria to highlight the normal and altered morphology, respectively. The double white arrow heads point to the three membranes that surround a dilated cristae. Scale bars 500 nm. (D) Quantification of different phenotypes observed. In the presence of Trolox or for ≤0.5 hr without the antioxidant, the mutant cells were indistinguishable from wild type parasites (not shown). The cytosol was densely packed and the mitochondrion had a comparable or even lower electron density, defined as normal. In the absence of Trolox, the Px I-III KO parasites displayed a time-dependent darkening of the mitochondrion and lightening of the cytosol. Only parasites that clearly displayed an elongated cell body in the electron micrographs were incorporated in the analysis. The number of cells inspected at the different time points is given above the columns. The percentage of each phenotype in the total number of inspected cells is depicted.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Electron micrographs of Px I-III KO parasites kept for (A) 1 hr and (B) 2 hr in Trolox-free medium. (A) The intact elongated mitochondrion is darker than the cytosol. Other subcellular structures appear to be unaffected. (B) One of the very few cells that after 2 hr in Trolox-free medium displayed already a plasma membrane damage. The high magnification shows vesicular structures blebbing out of the plasma membrane (double arrow heads). N, nucleus; LP, lipid droplet; G, glycosome; ER, endoplasmic reticulum; M, mitochondrion; A, acidocalcisome. Scale bar 500 nm.
+
+### Px I-III-deficient cells generate mitochondrial oxidants and lose ATP
 
 MitoSOX Red is widely used as indicator for mitochondrial superoxide production. Oxidation of the compound and binding of the oxidation products to nucleic acids is associated with strong red fluorescence. To assess the cellular localization of the sensor, Px I-III KO cells were treated with MitoSOX in Trolox-supplemented medium, incubated in medium ± Trolox, stained with MitoTracker Green and Hoechst 33342 and subjected to fluorescence microscopy. Cells in Trolox-supplemented medium showed a very small single red dot which co-localized with the DAPI signal for the kinetoplast and thus binding of some probably photo-oxidized sensor to the mitochondrial DNA (Figure 4A, upper panel). When kept for 2 hr in Trolox-free medium, most of the MitoSOX-treated Px I-III KO cells had still a normal morphology but many of them displayed a more intense kinetoplast fluorescence (Figure 4A, lower panels). A nuclear staining was not observed. This strongly suggests that at the beginning of the lethal process MitoSOX senses oxidants that are generated within the mitochondrial matrix. Swollen cells that appear upon prolonged incubation without protecting agents revealed an overall week red fluorescence and intense staining of the kinetoplast or nucleus or both structures. Evidently, when the mitochondrial membrane potential is abrogated, MitoSOX leaks out and loses its specificity for the mitochondrial matrix.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig4-v2.jpg)
+
+**Figure 4.:** (A) The cells were pre-loaded with MitoSOX in Trolox-containing medium, transferred into medium ± Trolox, incubated for 2 hr, and stained with MitoTracker Green. Nuclear (large dot) and kinetoplast (small dot) DNA were visualized by Hoechst 33342 staining. Representative fluorescence microscopy images are depicted. Merge, overlay of all three signals. Phase, phase contrast image. Cells kept in the presence of Trolox displayed a very small red MitoSOX signal that co-localized with the kinetoplast (upper panel). After 2 hr in the absence of Trolox, most cells still had normal morphology but many of them displayed a more intense kinetoplast MitoSOX signal (lower two panels). Scale bar 10 µm. (B–D) The cells were incubated ± MitoSOX in Trolox-containing medium, transferred into medium ± Trolox, incubated for up to 5 hr, stained with DAPI, and subjected to flow cytometry. (B) Representative histograms of the 488:585/42 (ex:em) channel (MitoSOX signal of the treated cells and auto-fluorescence of non-treated cells) and DAPI signal of all single cells from samples kept for 5 hr ± Trolox, with or without loading with MitoSOX. (C) MitoSOX fluorescence change between cells kept in the absence and presence of Trolox. The data represent the mean ± error of the mean of two independent experiments. (D) Representative FSC:SSC DotPlots of cells kept for 5 hr in the presence or absence of Trolox, with or without loading with MitoSOX. The cells were gated in three sub-populations (P1-3) representing cells with normal FSC and SSC (P1; green), those with reduced SSC (P2; magenta), and severely damaged or dead cells (P3; grey).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37503/elife-37503-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The Px I-III KO cells were loaded with MitoSOX for 10 min in Trolox-supplemented medium, washed with PBS and re-suspended in medium ± Trolox. After 5 hr incubation, the cells were stained with DAPI and subjected to flow cytometry. The histograms represent overlays of the DAPI (green) and MitoSOX (magenta) fluorescence signals of cells kept in the presence (tinted peak) or absence (transparent peak) of Trolox. The upper, central and lower panels show the fluorescence intensities for the P1, P2, and P3 subsets, representing cells with normal FSC:SSC, decreased SSC and dead cells, respectively, as defined in Figure 4. The percentage of cells with increased signals (black range line) are given in each histogram. The figure shows representative results of one of two independent experiments.
 
 As proof of principle, Px I-III KO cells in Trolox-supplemented medium were loaded for 10 min with MitoSOX, treated with 2 µM antimycin and subjected to flow cytometry. In agreement with data published for other cells (Mukhopadhyay et al., 2007), the treatment resulted in a 5-fold fluorescence increase (not shown). The Px I-III KO cells were then treated ± MitoSOX in Trolox-supplemented medium, transferred into medium ± Trolox, incubated for up to 5 hr and treated with DAPI. When kept in the presence of Trolox, the MitoSOX-loaded cells displayed a basal fluorescence comparable to the auto-fluorescence of entirely untreated cells (-Trolox, - MitoSOX). Incubation in Trolox-free medium resulted in increased red fluorescence (Figure 4B, left). After 3 or 5 hr, the cells displayed a 3-fold higher MitoSOX fluorescence than the Trolox-supplemented control (Figure 4C).
 
@@ -67,7 +99,7 @@ Finally, putative changes in the cellular ATP level were measured. The first ana
 
 **Figure 5.:** The cells were incubated ± Trolox in (A) SDM-79 medium or (B) MEM-Pros medium. After 0 to 4 hr, aliquots of each sample were removed and (A) cells with normal morphology or only highly motile cells were counted, or (B) the cells were treated with PI and the fluorescence was measured by flow cytometry. The remaining cells were treated with ATPlite one-step solution and the luminescence was measured in the plate reader. The data are given as percentage of the respective value at 0 hr that was set as 100%. They represent the mean ± SD of three independent experiments.
 
-## Mitochondrial membrane peroxidation is an early event in the lethal phenotype of the Px I-III-deficient cells
+### Mitochondrial membrane peroxidation is an early event in the lethal phenotype of the Px I-III-deficient cells
 
 As shown in Figure 1, in the absence of a lipophilic antioxidant or iron chelator, Px I-III KO cells undergo lipid peroxidation. This analysis did, however, not allow to identify the subcellular membrane primarily affected. MitoPerOx is a derivative of BODIPY 581/591 C11 that is taken up into mitochondria of living cells where it is targeted to the interior surface of the inner membrane (Prime et al., 2012). To evaluate the subcellular localization of the sensor, Px I-III KO cells in Trolox-supplemented medium were treated with MitoPerOx and stained with MitoTracker Green. Life cell fluorescence microscopy revealed a perfect overlay of both signals confirming a strong enrichment of MitoPerOx in the mitochondrion (Figure 6A). The cells were then incubated in medium ± Trolox that was supplemented with either BODIPY or MitoPerOx. Both sensors revealed a time-dependent fluorescence increase in accordance with lipid peroxidation (Figure 6B). In the MitoPerOx-treated sample, after 30 min in Trolox-free medium, cells with increased fluorescence appeared whereas in the BODIPY-treated cells, the fluorescence started to increase after 60 min (Figure 6C). Differences in the sensitivity of the probes can be ruled out. The use of 2 µM BODIPY and 100 nM MitoPerOx ensured a very similar overall fluorescence. Thus, the mitochondria-targeted probe was slightly faster oxidized than the untargeted sensor reporting on all cellular membranes which suggests that lipid peroxidation starts within the matrix-facing leaflet of the inner mitochondrial membrane.
 
@@ -75,7 +107,7 @@ As shown in Figure 1, in the absence of a lipophilic antioxidant or iron chelato
 
 **Figure 6.:** (A) Px I-III KO parasites in Trolox-supplemented medium were incubated for 1.5 hr with MitoPerOx, stained with MitoTracker Green and subjected to life cell fluorescence microscopy. Representative images are depicted. Merge, overlay of both signals. Phase, phase contrast image. Scale bar 10 µm. (B) The cells were transferred into medium ± Trolox. BODIPY or MitoPerOx was added and after different times cells were analyzed by flow cytometry. Histograms of BODIPY (upper panel) and MitoPerOx (lower panel) fluorescence of all single cells at 520 nm from a representative experiment are depicted. (C) Quantitative analysis of the percentage of cells with increased BODIPY and MitoPerOx signals (gating as depicted in B). The data represent the mean ± SD of three independent experiments.
 
-## Overexpression of a mitochondrial superoxide dismutase attenuates the cell death program of Px I-III-deficient parasites
+### Overexpression of a mitochondrial superoxide dismutase attenuates the cell death program of Px I-III-deficient parasites
 
 As shown in Figure 4, the PC Px I-III KO cells generate mitochondrial oxidants but the precise nature of the products is not known. The red fluorescence measured could arise from reaction of MitoSOX with superoxide but also other oxidants such as iron/H2O2 (Kalyanaraman et al., 2012). African trypanosomes express four iron-superoxide dismutases of which two (SODA and SODC) are mitochondrial proteins. BS T. brucei in which the mRNA of SODA is down-regulated exhibit increased sensitivity towards the superoxide-inducing agent paraquat (Wilkinson et al., 2006).
 
@@ -87,7 +119,7 @@ The coding region of SODA was cloned into a vector that allows the tetracycline 
 
 In medium lacking any protecting agent, the non-induced Px I-III KO/SODA-myc cells died within 4 hr as did the parental Px I-III KO cells. The level of SODA-myc in the non-induced cells was not sufficient for protection. The induced Px I-III KO/SODA-myc cells displayed a slightly delayed lysis (Figure 7C). In the presence of 25 µM Dfx, a concentration that protected the non-induced and parental cell lines only partially, the induced Px I-III KO/SODA-myc cells remained viable. To evaluate the effect of SODA-overexpression in more detail, induced and non-induced Px I-III KO/SODA-myc cells were incubated in medium ± 25 µM Dfx, treated with PI and subjected to flow cytometry. Overexpression of SODA or the presence of 25 µM Dfx partially prevented PI incorporation whereas in combination both treatments caused strong protection, in accordance with the cell counting results. Notably, in the absence and presence of Dfx, expression of SODA had a protecting effect (Figure 7D). Overexpression of the mitochondrial SOD rendered the peroxidase-deficient parasites less sensitive to an iron-induced cell death. Superoxide oxidizes [4Fe4S]-cluster proteins, a process that generates hydrogen peroxide and releases iron (Winterbourn, 2008). The ectopic expression of SODA may lower the concentration of free iron either by diminishing the damage of iron sulfur clusters or because of the overexpression of an iron-containing protein. In any case, the data indicate a crucial role of mitochondrial matrix iron in the cell death of the Px I-III-deficient parasites.
 
-## Mitochondrial iron plays a crucial role in the cell death of Px I-III-deficient parasites
+### Mitochondrial iron plays a crucial role in the cell death of Px I-III-deficient parasites
 
 The involvement of iron is the primary characteristic of cells undergoing ferroptosis, however the subcellular site of iron that triggers the death program is not clear (Doll and Conrad, 2017). RPA is a mitochondria-targeted iron sensor. It is composed of a hydrophobic cationic rhodamine B moiety that mediates the uptake into mitochondria and a phenanthroline part that reacts with Fe (II). Quenching of the RPA fluorescence is a selective indicator of mitochondrial chelatable iron in intact cells (Petrat et al., 2002; Rauen et al., 2007). RPAC has the same fluorophore and linker but lacks iron-chelating capacity and can serve as control. Preliminary experiments revealed that RPAC-treated parasites had a much higher fluorescence than cells loaded with RPA. Therefore, in experiments following the fluorescence, the cells were treated with different concentrations of the fluorophores. Px I-III KO cells were loaded with 150 nM RPA or 10 nM RPAC in PBS, followed by 15 min incubation in Trolox-containing medium to ensure the selective uptake of the sensor into the mitochondrion. Afterwards, the cells were stained with MitoTracker Green and subjected to fluorescence microscopy. The RPA and RPAC fluorescence coincided with the MitoTracker signal confirming a mitochondrial localization (Figure 8A). Next, the cells were loaded with 150 nM RPA or 10 nM RPAC and then incubated in medium ± Trolox (Figure 8B). When the cells were kept in the presence of Trolox, both sensors displayed clear mitochondrial localization. After 2 hr in the absence of Trolox, the RPA-treated cells were virtually unaffected (not shown) whereas the RPAC-treated sample displayed swollen cells with comparably faint and unspecific fluorescence. When kept for 3 hr in Trolox-free medium, most of the RPA-loaded cells appeared swollen and highly fluorescent while the majority of RPAC-treated parasites were rounded up and had lost their fluorescence. This time-dependent increase of RPA fluorescence and decline of RPAC fluorescence probably reflects leakage of the sensors to the extra-mitochondrial space caused by the loss of the mitochondrial membrane potential.
 
@@ -121,56 +153,388 @@ As shown here, ferroptosis is not restricted to mammalian cells (Seiler et al., 
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Trypanosoma brucei brucei)</td>
+      <td>sodA</td>
+      <td></td>
+      <td>TriTrypDatabase ID: Tb427.05.3350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei brucei)</td>
+      <td>WT PC and BS</td>
+      <td>PMID: 9108552</td>
+      <td>WT PC and BS 449 Lister strain 427</td>
+      <td>Culture-adapted T. brucei strains stably expressing the tetracycline repressor</td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei brucei)</td>
+      <td>PC Px I-III KO</td>
+      <td>PMID: 26374473</td>
+      <td></td>
+      <td>PC WT cells in which both alleles of the complete px locus are replaced by resistance casettes (blasticidin and puromycin)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei brucei)</td>
+      <td>PC Px I-III KO/SODA-myc</td>
+      <td>this work</td>
+      <td></td>
+      <td>PC Px I-III KO cells that contain a Tet-inducible construct for SODA-c-myc2 overexpression</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-cTXNPx</td>
+      <td>PMID: 20826821</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-mTXNPx</td>
+      <td>PMID: 29413965</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-aldolase</td>
+      <td>Christine Clayton, Heidelberg, Germany</td>
+      <td></td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-VDAC</td>
+      <td>André Schneider, Bern, Switzerland</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-c-Myc (monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-40, RRID:AB_627268</td>
+      <td>WB, IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-mouse IgGs</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2005, RRID:AB_631736</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-rabbit IgGs</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2004, RRID:AB_631746</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-guinea pig IgGs</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11073, RRID:AB_142018</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-mouse IgGs</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11001, RRID:AB_2534069</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-rabbit IgGs</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11008, RRID:AB_143165</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 goat anti-rabbit IgGs</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11012, RRID:AB_141359</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHD1700/grx2- c-myc2 (plasmid)</td>
+      <td>PMID: 20826822</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHD1700/sodA- c-myc2 (plasmid)</td>
+      <td>this work</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'CGATAAGCTTATG AGGTCTGTCATGATGC3'</td>
+      <td>this work</td>
+      <td></td>
+      <td>Primer for amplification of sodA from genomic T. brucei DNA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'CGATGGATCCCTT CATAGCCTGTTCATAC3'</td>
+      <td>this work</td>
+      <td></td>
+      <td>Primer for amplification of sodA from genomic T. brucei DNA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T. brucei trypanothione reductase (TR)</td>
+      <td>PMID: 24788386</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T. brucei tryparedoxin (Tpx)</td>
+      <td>PMID: 22275351</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T. brucei peroxidase (Px)</td>
+      <td>PMID: 18684708</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>trypanothione and trypanothione disulfide</td>
+      <td>PMID:19477177</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chlorhexidine diacetate Monohydrate</td>
+      <td>Fluka</td>
+      <td>24800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(1S,3R)-RSL3</td>
+      <td>José Pedro Friedmann Angeli and Marcus Conrad, Munich, Germany and Cayman Chemical</td>
+      <td>CAS: 1219810-16-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Racemic mixture of RSL3</td>
+      <td>José Pedro Friedmann Angeli and Marcus Conrad, Munich, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ferrostatin-1</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML0583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Liproxstatin-1</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trolox</td>
+      <td>Sigma-Aldrich</td>
+      <td>238813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iron(III) chloride hexahydrate, FeCl3 × 6H2O</td>
+      <td>Merk</td>
+      <td>31232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deferoxamine mesylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D-9533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>8-Hydroxyquinoline</td>
+      <td>Sigma-Aldrich</td>
+      <td>252565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(±)-α-Tocopherol</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATPlite 1step solution</td>
+      <td>Perkin Elmer</td>
+      <td>6016731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Walter Nickel, Heidelberg, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4’,6-Diamidino-2 -phenylindole (DAPI)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D-8417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodamine B-[(1,10-phenanthroline-5-yl)- aminocarbonyl]benzyl ester (RPA)</td>
+      <td>Squarix Biotechnology</td>
+      <td>ME043.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodamine B-[(phenanthren-9-yl) -aminocarbonyl]- benzylester (RPAC)</td>
+      <td>Squarix Biotechnology</td>
+      <td>ME046.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BODIPY 581/591 C11</td>
+      <td>Molecular Probes</td>
+      <td>D3861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoPerOx</td>
+      <td>Mike Murphy, Cambridge, UK</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Red CMXRos</td>
+      <td>Molecular Probes</td>
+      <td>M7512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Green FM</td>
+      <td>Molecular Probes</td>
+      <td>M7514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoSOX Red</td>
+      <td>Molecular Probes</td>
+      <td>M36008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide (PI)</td>
+      <td>Molecular Probes</td>
+      <td>P3566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2',7'-Dichlorodihydro fluorescein-diacetate (H2DCFDA)</td>
+      <td>Molecular Probes</td>
+      <td>D399</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Tetracycline (Tet), Trolox, α-tocopherol (α-Toc), liproxstatin-1 (Lpx-1), ferrostatin-1 (Fer-1), deferoxamine mesylate (Dfx), DAPI, 8-hydroxyquinoline (HQ), iron (III) chloride x 6 H2O, hemin, penicillin/streptomycin and phleomycin were purchased from Sigma, Munich, Germany. Hygromycin B was from Carl Roth, Karlsruhe, Germany. DCFH-DA and propidium iodide (PI) were purchased from ThermoFisher, Schwerte, Germany. BODIPY 581/591 C11 (BODIPY), MitoSOX Red, MitoTracker CMXRos, and MitoTracker Green were from Life Technologies, Darmstadt, Germany. Rhodamine B-[(1, 10-phenanthroline-5-yl)-aminocarbonyl]benzyl ester (RPA) and rhodamine B-[(phenanthren-9-yl)-aminocarbonyl]-benzylester (RPAC) were from Squarix Biotechnology, Marl, Germany and fetal calf serum (FCS) from Biochrome, Berlin, Germany. A sample of Hoechst 33342 was kindly provided by Dr. Walter Nickel, Heidelberg, Germany. MitoPerOx was a kind gift from Dr. Mike Murphy, Cambridge, UK. Drs José Pedro Friedmann Angeli and Marcus Conrad, Munich, Germany, are kindly acknowledged for samples of (1S, 3R)-RSL3 and the racemic mixture of RSL3 (Yang et al., 2014). Additional (1S, 3R)-RSL3 was purchased from Cayman Chemical, Ann Arbor, Michigan.
 
 Trypanothione and trypanothione disulfide (Comini et al., 2009) as well as tag-free recombinant T. brucei trypanothione reductase (TR) (Persch et al., 2014), tryparedoxin (Tpx) (Fueller et al., 2012) and peroxidase (Px) (Melchers et al., 2008) were prepared as described. Polyclonal rabbit antibodies against the cytosolic T. brucei 2-Cys-peroxiredoxins (cTXNPx) and guinea pig antibodies against the mitochondrial 2-Cys-peroxiredoxin (mtTXNPx) were obtained previously (Ceylan et al., 2010; Ebersoll et al., 2018). Polyclonal rabbit antibodies against T. brucei aldolase and VDAC and T. cruzi SODA were kindly provided by Drs Christine Clayton, Heidelberg, Germany, André Schneider, Bern, Switzerland, and Rafael Radi, Montevideo, Uruguay. Monoclonal mouse antibodies against the c-Myc protein as well as horseradish peroxidase-conjugated goat antibodies against mouse and rabbit immunoglobulins G were purchased from Santa Cruz Biotechnology, Heidelberg, Germany.
 
-## Cultivation and phenotypic analysis of different T. brucei strains
+### Cultivation and phenotypic analysis of different T. brucei strains
 
 The parasites used in this work were all culture-adapted Trypanosoma brucei brucei of the cell line 449, descendants from the Lister strain 427 that stably express the tet repressor (Cunningham and Vickerman, 1962; Biebinger et al., 1997). The cells were kindly provided by Dr Christine Clayton, Heidelberg, Germany. BS cells were grown in HMI-9 medium at 37°C. If not stated otherwise, PC parasites were cultivated at 27°C in MEM-Pros medium as described previously (Schlecker et al., 2005). Distinct experiments were conducted in SDM79-CGGGPPTA medium (GE Healthcare, Munich, Germany). All media were supplemented with 10% heat-inactivated FCS, 50 units/ml penicillin, 50 µg/ml streptomycin and 0.2 µg/ml phleomycin. In addition, both media for PC parasites contained 7.5 µg/ml hemin but no glucose. PC cells lacking the complete Px I-III locus (Px I-III KO cells (Schaffroth et al., 2016) were routinely cultured in the presence of 100 µM Trolox (100 mM stock solution in ethanol). For phenotypic analyses, the parasites were harvested in the logarithmic growth phase, washed with PBS, resuspended in 5 ml medium adjusted to a density of about 5 × 105 cells/ml and subjected to different treatments. Stock solutions of Dfx (10 mM in PBS), Fer-1 (10 mM in DMSO), Lpx-1 (10 mM in DMSO), and α-Toc (10 mM in ethanol) were prepared and various concentrations added to the cells. After different times, viable cells (defined as those with normal, elongated shape) were counted in a Neubauer chamber. The mean and standard deviation (SD) of three independent experiments were calculated using GraphPad Prism software (GraphPad Software, La Jolla, CA).
 
-## Cloning of Px I-III KO cells that overexpress mitochondrial SODA
+### Cloning of Px I-III KO cells that overexpress mitochondrial SODA
 
 The pHD1700 plasmid contains a hygromycin resistance gene and a cassette that allows for Tet-inducible expression of a protein with C-terminal myc2-tag. The coding sequence of sodA without stop codon (714 bp) was amplified from genomic DNA of WT T. brucei by PCR using the primers 5’CGATAAGCTTATGAGGTCTGTCATGATGC3’ and 5’CGATGGATCCCTTCATAGCCTGTTCATAC3’ (restriction sites underlined). The amplicon as well as plasmid pHD1700/grx2-c-myc2 (Ceylan et al., 2010) were digested with HindIII and BamHI, purified and ligated yielding pHD1700/sodA-c-myc2. PC Px I-III KO cells were transfected with the NotI-linearized plasmid. After 24 hr cultivation, hygromycin was added and resistant cells were selected by serial dilutions as described in detail (Musunda et al., 2015).
 
-## EC50-Determination of RSL3 towards bloodstream T. brucei
+### EC50-Determination of RSL3 towards bloodstream T. brucei
 
 The plate reader-based assay was carried out as described previously (Fueller et al., 2012; Latorre et al., 2016). Stock solutions of 10 mM (1S, 3R)-RSL3 and RSL3 racemate were prepared in DMSO. Each well contained 90 μl HMI-9 medium with 2500 cells/ml. The compounds were serially 1:3 diluted in 10 steps and 10 μl of the dilutions added to the cells to give final concentrations between 30 µM and 1 nM. 10% DMSO served as positive control. The highest DMSO concentration added with the compounds was 0.3% (which does not affect parasite viability, negative control). Since the Px-type enzymes are dispensable if the cells are kept in the presence of Trolox (Hiller et al., 2014), a second analysis was done in medium that was supplemented with 100 µM Trolox, 100 nM Fer-1 or 200 nM Lpx-1. After 24 hr, 48 hr and 72 hr cultivation, 50 μl ATPlite one step solution (PerkinElmer, Rodgau, Germany) was added and the luminescence measured in a Victor X4 plate reader (PerkinElmer) at room temperature. The luminescence intensities were plotted against the logarithmic compound concentrations and EC50-values calculated using GraphPad Prism. Chlorhexidine (37 µM to 11 nM), a trypanocidal compound and known TR inhibitor (Meiering et al., 2005; Beig et al., 2015), served as positive control.
 
-## In vitro kinetic analysis of RSL3
+### In vitro kinetic analysis of RSL3
 
 A putative irreversible inhibition of TR was studied essentially as described previously (Otero et al., 2006). In a total volume of 1 ml of 40 mM Hepes, 1 mM EDTA, pH 7.5, 1 µM T. brucei TR was incubated at 25°C with 100 µM RSL3 racemate in the presence of 500 µM NADPH. After different times (0–120 min), 5 µl of the reaction mixture was removed, and the remaining activity measured in a 1 ml standard TR assay. Because of the dilution, reversible inhibition is not recorded under these conditions. Controls contained either buffer, TR and NADPH or buffer, TR and inhibitor in the pre-incubation mixtures.
 
 The effect of RSL3 on the parasite peroxidase system was measured as described previously (Fueller et al., 2012). Shortly, in a total volume of 200 µl of 100 mM Tris, 5 mM EDTA, pH 7.6, 150 µM NADPH, 200 mU TR, 100 µM T(SH)2, 10 µM Tpx, 60 nM Px and 40 µM RSL3 or 5 µl DMSO (control) were incubated at 25°C. After 1, 15, and 40 min, the reaction was started by adding 100 µM H2O2 and the absorption decrease followed at 340 nm. In a second approach, the pre-incubation mixture contained all components except the peroxidase, and the assay was started by adding both Px and H2O2.
 
-## Flow cytometry
+### Flow cytometry
 
 All treatments were performed at 27°C in the dark. Logarithmically growing Px I-III KO cells were harvested, split into samples of about 106 cells, washed with cold PBS and re-suspended in 1 ml medium. For the detection of general cellular ROS, the cells were re-suspended in SDM-79 medium ± Trolox, incubated for 2 hr, washed and stained for 30 min with 10 µM H2DCFDA (10 mM stock solution in DMSO) in medium + Trolox. All following analyses were conducted in MEM-Pros medium. To measure cellular lipid peroxidation, the cells were transferred into medium supplemented with either 100 µM Trolox, 100 µM Dfx, 100 nM Fer-1, 200 nM Lpx-1 or without any addition, containing 2 µM BODIPY 581/591 C11 (BODIPY; 10 mM stock solution in DMSO) and incubated for 2 hr. For the comparison of MitoTracker Red and PI staining, the cells were incubated for 0–4 hr in medium ± Trolox, treated with MitoTracker, as described for the fluorescence microscopy, or for 5 min with 5 µg/ml PI (1 mg/ml stock solution in water) in PBS. For the MitoSOX experiments, the cells were pre-loaded for 10 min with 5 µM of the dye (5 mM stock solution in DMSO) in medium + Trolox and then incubated in medium ± Trolox. As control, the cells were treated for 5 min with 20 ng/ml DAPI (50 µg/ml in water) in PBS. For comparing general and mitochondrial lipid peroxidation, the cells were incubated in medium ± Trolox containing 2 µM BODIPY or 100 nM MitoPerOx (2 mM stock solution in DMSO).
 
 As proof-of-principle for the experiments with RPA, the cells were transferred into medium supplemented with either 100 µM Trolox, 100 µM Dfx, 100 nM Fer-1 or Trolox plus 100 µM Fe(III)/HQ (freshly prepared by mixing equal volumes of 10 mM FeCl3 in water and 10 mM HQ in 50% v/v ethanol in water; [Petrat et al., 2002]) and incubated for 2 hr. Thereafter, the cells were washed, re-suspended in PBS, incubated for 15 min with 50 nM RPA (1 mM stock solution in DMSO), washed and incubated for another 15 min in medium + Trolox to allow optimal enrichment of the dye in the mitochondrion. To follow changes in RPA fluorescence after Trolox withdrawal, starting with the longest time point, the cells were stained with 50 nM RPA or 1 nM RPAC (1 mM stock solution in DMSO) and treated as described above followed by up to 3 hr incubation in medium ± Trolox. To detect possible changes in the mitochondrial iron content due to SODA-overexpression, the Px I-III KO/SODA-myc cells were cultured for about 20 hr ± Tet, and stained with 50 nM RPA. After the respective treatments, the cells were washed with cold PBS, re-suspended in 1 ml cold PBS, transferred into FACS tubes (Sarstedt) and immediately subjected to flow cytometry in a BD FACSCanto or FACSCantoII instrument at the Flow Cytometry and FACS Core Facility (FFCF) of the Center of Molecular Biology (ZMBH) of Heidelberg University. The following excitation lasers and emission filters (ex:em) were applied: BODIPY and MitoPerOx 488:530/30 nm, MitoTracker 561:586/15 nm, PI 488:570 nm, DAPI 405:450/50 nm, MitoSOX 488:585/42 nm, RPA and RPAC 561:610/20. In each experiment 10000 events were recorded. The data were analyzed using FlowJo software (FlowJo, LLC).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 About 1.2 × 106 cells were used per sample. MitoTracker staining, cell fixation, permeabilization and antibody treatment were performed as described previously (Hiller et al., 2014; Schaffroth et al., 2016). Antibodies against mtTXNPx, VDAC, cMyc and cTXNPx were diluted 1:1000, 1:500, 1:200, and 1:1000, respectively. For visualization, Alexa Fluor 488-conjungated goat anti-guinea pig (1:1000), anti-rabbit (1:1000), Alexa Fluor 546 goat anti-rabbit (1:1000) and Alexa Fluor 488-conjungated goat anti-mouse (1:250) (Molecular Probes) antibodies were used. The cells were examined using a Carl Zeiss Axiovert 200 M microscope equipped with an AxioCam MRm digital camera and the AxioVision software (Zeiss, Jena, Germany).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Aliquots of 5 × 107 logarithmically growing Px I-III KO cells were transferred into medium ± Trolox and incubated for 0.5, 1 and 2 hr. The cell fixation and embedding procedures were adapted from (Höög et al., 2010). Briefly, cells were fixed by 2.5% glutaraldehyde and 2% p-formaldehyde in 100 mM cacodylate buffer, pH 7.2 at 4°C overnight. The cells were centrifuged in fixative and the pellet was processed in one piece. After rinsing in buffer the samples were further fixed in 1% osmium tetroxide in cacodylate buffer, washed in water, and incubated with 1% uranyl acetate in water overnight. Dehydration was done in 10 min steps in an aceton gradient followed by Spurr resin embedding and polymerization at 60°C. The blocks were cut in 70 nm thin sections using a Leica UC6 ultramicrotome (Leica Microsystems Vienna, Austria) and collected on pioloform-coated mesh grids. The post-stained sections were imaged on a JEOL JEM-1400 electron microscope (JEOL, Tokyo, Japan) operating at 80 kV and equipped with a 4K TemCam F416 (Tietz Video and Image Processing Systems GmBH, Gautig, Germany). The analysis was performed by the Electron Microscopy Core Facility (EMCF) of Heidelberg University.
 
-## Measurement of cellular ATP
+### Measurement of cellular ATP
 
 Logarithmically growing Px I-III KO cells in SDM-79 or MEM-Pros medium were divided into six aliquots. Starting with the latest time point, the samples were washed with PBS, transferred into 5 ml medium ± Trolox and incubated at 27°C. After 0 to 4 hr, an aliquot was removed and kept on ice for cell counting, another one was treated with PI and subjected to flow cytometry as described above. The remaining cells were centrifuged and re-suspended in 300 µl medium + Trolox. Three aliquots of 100 µl, each containing 2 × 106 cells, were transferred into a 96-well plate, mixed with 50 µl ATPlite one-step solution (PerkinElmer) according to the manufacturer’s protocol and luminescence was measured in a Victor X4 plate reader (PerkinElmer). The luminescence of the cell-free medium was subtracted. All cells that still had an elongated shape or only highly motile cells were counted. All data were analyzed and are presented as percentage of the starting values using GraphPad Prism.
 
-## Western blot analysis of SODA-overexpressing cells
+### Western blot analysis of SODA-overexpressing cells
 
 PC Px I-III KO/SODA-myc cells, cultivated for 18 hr in the presence or absence of 1 µg/ml tet, were harvested, re-suspended in reducing SDS-sample buffer and boiled. Lysates from 5 × 106 cells were loaded per lane onto a 12% gel and subjected to SDS-PAGE. After electrophoresis, the proteins were transferred onto a PVDF membrane and probed with antibodies against c-Myc (1:200) and aldolase (1:20,000), followed by development with HRP-conjugated goat antibodies against mouse (1:5000) and rabbit (1:10,000) IgGs, respectively.
 
-## Live cell imaging
+### Live cell imaging
 
 All sample preparations were performed at 27°C in the dark in a total volume of 1 ml. Per sample, about 106 cells were harvested and washed with cold PBS. Treatment of the cells with MitoSOX or MitoPerOx was done as described above for the flow cytometry. MitoSOX-treated cells were then transferred into medium ± Trolox and incubated for 2 hr. Afterwards the cells were treated for 15 min with 120 nM MitoTracker Green in Trolox-supplemented medium, followed by 30 min incubation in Trolox-containing medium for optimal enrichment of the dye in the mitochondrion. For nuclear and kinetoplast DNA staining, the cells were treated for 15 min with 3 µg/ml Hoechst 33342 in PBS. In the case of RPA and RPAC, the cells were incubated for 15 min with 150 nM RPA or 10 nM RPAC in Trolox-supplemented PBS followed by 15 min in Trolox-supplemented medium. Subsequently, the cells were either stained with MitoTracker Green or transferred into medium ± Trolox and incubated for up to 3 hr at 27°C in the dark. After the respective treatments, the cells were washed with PBS, re-suspended in 20 µl PBS, placed on ice and within ≤30 min inspected under a Carl Zeiss Axiovert 200 M microscope equipped with an AxioCam MRm digital camera and the AxioVision software (Zeiss, Jena).
 
-## Biological data collection and data evaluation
+### Biological data collection and data evaluation
 
 Except where stated otherwise, all experiments were performed three times on separate days as independent biological replicates. The data shown represent the mean ± SD of these replicates. The data were evaluated using GraphPad Prism (GraphPad Software, La Jolla, CA).

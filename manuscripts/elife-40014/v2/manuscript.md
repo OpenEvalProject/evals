@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.40014.001 Sensory deprivation during the post-natal ‘critical period’ leads to structural reorganization of the developing visual cortex. In adulthood, the visual cortex retains some flexibility and adapts to sensory deprivation. Here we show that short-term (2 hr) monocular deprivation in adult humans boosts the BOLD response to the deprived eye, changing ocular dominance of V1 vertices, consistent with homeostatic plasticity. The boost is strongest in V1, present in V2, V3 and V4 but absent in V3a and hMT+. Assessment of spatial frequency tuning in V1 by a population Receptive-Field technique shows that deprivation primarily boosts high spatial frequencies, consistent with a primary involvement of the parvocellular pathway. Crucially, the V1 deprivation effect correlates across participants with the perceptual increase of the deprived eye dominance assessed with binocular rivalry, suggesting a common origin. Our results demonstrate that visual cortex, particularly the ventral pathway, retains a high potential for homeostatic plasticity in the human adult.
+Sensory deprivation during the post-natal ‘critical period’ leads to structural reorganization of the developing visual cortex. In adulthood, the visual cortex retains some flexibility and adapts to sensory deprivation. Here we show that short-term (2 hr) monocular deprivation in adult humans boosts the BOLD response to the deprived eye, changing ocular dominance of V1 vertices, consistent with homeostatic plasticity. The boost is strongest in V1, present in V2, V3 and V4 but absent in V3a and hMT+. Assessment of spatial frequency tuning in V1 by a population Receptive-Field technique shows that deprivation primarily boosts high spatial frequencies, consistent with a primary involvement of the parvocellular pathway. Crucially, the V1 deprivation effect correlates across participants with the perceptual increase of the deprived eye dominance assessed with binocular rivalry, suggesting a common origin. Our results demonstrate that visual cortex, particularly the ventral pathway, retains a high potential for homeostatic plasticity in the human adult.
 
 ## Introduction
 
@@ -37,9 +37,25 @@ This possibility highlights the importance of understanding the neural substrate
 
 ## Results
 
-## Monocular deprivation boosts V1 responses to the deprived eye and shifts BOLD ocular dominance
+### Monocular deprivation boosts V1 responses to the deprived eye and shifts BOLD ocular dominance
 
 To investigate the visual modulation of BOLD signal by short term deprivation, we performed ultra-high field (UHF, 7T) fMRI during the presentation of high contrast dynamic visual stimuli, delivered separately to the two eyes, before and after 2 hr of monocular contrast deprivation (see schematic diagram in Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the methods. The icons show a band-pass noise stimulus shown to either eye through the MR compatible goggles. Before and after the Pre- and Post-deprivation scans, outside the bore, we also measured binocular rivalry. (B) BOLD responses evoked by our band-pass noise stimulus with peak frequency 2.7 cycles per degree (cpd), presented in the deprived eye PRE-deprivation, mapped on the flattened cortical surface, cut at the calcarine sulcus. T-values are obtained by aligning GLM betas for each subject and hemisphere to a left/right symmetric template hemisphere, excluding vertices for which preferred eccentricity was not adequately estimated or smaller than 1 (the same criterion used for al analyses), then evaluating the distribution of betas in each vertex against 0 (one-sample t-test) and FDR correcting across the entire cortical surface. Black dashed lines show the approximate average location of the regions of interest V1 through MT, which were mapped on the individual subject spaces (see Materials and methods); white and blue lines represent the outer limits of the representation of our screen space (24 × 32 deg) and the foveal representation (≤1 deg, where eccentricity could not be mapped accurately) respectively. (C) BOLD modulation during the 3 TRs of stimulus presentation (from 0 to 9 s) and the following four blank TRs, for the 2.7 cpd noise stimuli delivered to the deprived eye before deprivation. The y-axis show the median percent BOLD signal change in V1 vertices relative to the signal at stimulus onset, averaged across subjects. Error bars give s.e. across participants. Note the small between-subject variability of the response (given that the response of each subject was computed for just two blocks of stimulation-blank). D: Average BOLD response to the band-pass noise stimulus with peak frequency 2.7 cpd, in each of the four conditions, computed by taking the median BOLD response across all V1 vertices then averaging these values across participants (after checking that distributions do not deviate from normality, Jarque-Bera hypothesis test of composite normality, all p > 0.06). The top black star indicates the significance of the ANOVA interaction between factors time (PRE, POST deprivation) and eye (deprived, non-deprived); the other stars report the results of post-hoc t-tests: red and green stars give the significance of the difference POST minus PRE, for the deprived and non-deprived eye respectively; bottom black stars give the significance of the difference deprived minus non-deprived eye before and after deprivation. *p < 0.05; **p < 0.01; ***p < 0.001; ns non-significant. E: Histograms of Ocular Drive Index: the difference between the response (GLM beta) to the deprived and non-deprived eye, computed for each vertex, separately before and after deprivation. Yellow and black lines give the median of the distributions, which are non-normal (logistic) due to excess kurtosis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Panels in the top row report responses to the non-deprived eye, those in the bottom row to the deprived eye. The central panels map the average %BOLD response to stimuli presented in either eye, before and after monocular deprivation (isoeccentricty lines are taken from the pRF mapping shown in Figure 5A main text), showing that suppression of the non-deprived eye and enhancement of the deprived eye are largely homogeneous within each ROI. Panel A and G compare % BOLD responses in each of our 19 individual participants (each point shows the average across the two hemispheres), to stimuli in the non-deprived eye, before vs. after deprivation; the majority of points lie below the bisection of the axes, implying a reduction of responses to the non-deprived eye after monocular deprivation. The same comparison for stimuli in the deprived eye in panels B and H shows an increase of BOLD responses: most point lie above the bisection line, implying a boost of responses to the deprived eye after deprivation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Panels (A) and (B) map the difference of the %BOLD response to the Deprived – Non deprived eye, before and after deprivation, respectively. While there is no organized preference for either eye in any visual area before deprivation, there is a clear preference for the deprived eye after deprivation (the net result of the boost of the deprived eye response and the suppression of the non deprived eye response), which spreads across most of the areas activated by our stimulation.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Average V1 BOLD response to the band-pass noise stimulus with peak frequency 2.7 cpd, same as in Figure 1D but computed separately for each of the two stimulus repetitions that occurred in each scan (PRE and POST, to either eye). This essentially splits the dataset in half, and we show that both halves reveal a significant interaction between the factors time (PRE, POST deprivation) and eye (deprived, non-deprived; interaction term: first block F(1,18) = 7.53470, p = 0.01332, second block F(1,18) = 7.11116, p = 0.01572).
 
 The reliability and high signal-to-noise ratio of our system allow us to obtain significant activations with only two blocks of stimulation (Figure 1C shows the profile of V1 BOLD response), thereby targeting the first 10 min after deprivation, when the perceptual effects are strongest (Lunghi et al., 2011; Lunghi et al., 2013). As shown in Figure 1B, the stimulation was sufficient to reliably activate most early visual areas (dashed lines outline ROIs limited by stimulus eccentricity, as detailed in the Materials and method).
 
@@ -69,15 +85,31 @@ We also measured the perceptual effects of short-term monocular deprivation effe
 
 We defined a psychophysical index of the deprivation effect (DIpsycho) by using Equation. 6 in Materials and methods section, where the POST to PRE-deprivation ratio of phase durations for the deprived eye, is divided by the same ratio for the non-deprived eye. Values larger than one imply a relative increase of the deprived eye phase duration, that is the expected effect; a value less than 1 indicates the opposite effect and a value of 1 indicates no change of mean phase duration across eyes. All but two subjects have values larger than 1, indicating a strong effect of deprivation. However, the scatter is large with values ranging from 0.7 to 3, suggesting that susceptibility to visual plasticity varies largely in our pool of participants. Capitalizing on this variability, we tested whether the size of the psychophysical effect correlates with the BOLD effect across participants. Using the same Equation 6 to compute the deprivation effect on BOLD responses (DIBOLD), we observed a strong correlation between the effect of monocular deprivation on psychophysics and BOLD (shown in Figure 3B). Subjects who showed a strong deprivation effect at psychophysics (DIpsycho >2) also showed a strong deprivation effect in BOLD responses (DIBOLD = 1.85 ± 0.42). Given that the psychophysics was measured only for central vision and at two cpd stationary grating, whereas BOLD responses were pooled across a large portion on V1 and were elicited using broadband dynamic stimuli, the correlation suggests that the psychophysical effect may be used as a reliable proxy of a general change of cortical excitability, which can be measured by fMRI.
 
-## Monocular deprivation shifts BOLD spatial frequency tuning for the deprived eye
+#### Monocular deprivation shifts BOLD spatial frequency tuning for the deprived eye
 
 The BOLD measure we use here gives us the chance to measure the effect of Monocular Deprivation across spatial frequencies and as function of eccentricity. We used five band-pass noise (1.25 octaves half-width at half maximum) stimuli with peak spatial frequency selected to have a complete coverage of spatial frequencies from 0.03 to 12.5 cpd (see Figure 4—figure supplement 1). In contrast with the strong and reliable plasticity of responses to the high spatial frequency stimulus (peaking at 2.7 cpd, Figures 1–3), we find that the plasticity effect is absent at low spatial frequencies (interaction index for the highest spatial frequency stimulus: 0.70 ± 0.19; for the lowest spatial frequency stimulus: 0.16 ± 0.15; paired t-test t(18) = −3.441, p = 0.003).
 
 Thus, monocular deprivation produces a change of the spatial frequency selectivity of the V1 BOLD response. Before deprivation, the BOLD response shows a broad band-pass selectivity for our stimuli, with a preference for the stimulus peaking at intermediate spatial frequencies, between 0.4 and 1.1 cpd, and a slight attenuation at higher spatial frequencies, similar for the two eyes (Figure 4A). After deprivation (Figure 4B), the non-deprived eye shows similar selectivity and an overall decrease of responses. For the deprived eye, the shape of the curve changes: from band-pass to high-pass, implying that the enhancement affects primarily the higher spatial frequencies.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig4-v2.jpg)
+
+**Figure 4.:** V1 BOLD responses to all five of our band-pass noise stimuli (with peaks at 0.1, 0.2, 0.4, 1.1 and 2.7 cpd, see spectra in Figure 4—figure supplement 1); (A) response to stimuli in either eye, before deprivation; (B) response to stimuli in either eye, after deprivation. Responses are computed as medians across all V1 vertices (like in Figure 1D), averaged across subjects (error bars report s.e.m.). Continuous lines show the response of the best-fit population Spatial Frequency tuning (with the one parameter, the high spatial frequency cut-off, indicated in the legend), estimated by applying to the average V1 BOLD response the same model used to predict individual vertex responses (fitting procedure illustrated in Figure 5—figure supplement 1)..
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) example time-course of stimulation, showing the blocked presentation of the five spatial frequency stimuli. Blocks were presented in pseudo-random order, twice per run, for a total of 70 TRs. In each run, stimuli were only presented to one eye, while the other was shown a mid-level gray screen. Each eye was tested once, before and after deprivation. (B) example of the 2D bandpass noise stimuli, with their effective RMS contrast. (C) Normalized spectra of the bandpass filter that, multiplied by white noise, generated the five bandpass noise stimuli.
+
 To model this effect, we assume that each vertex on the cortical surface subtends a multitude of neuronal channels, each with narrow tuning for spatial frequency and collectively spanning a large range of spatial frequencies – an approach conceptually similar to the population Receptive Field model for retinotopic mapping (Dumoulin and Wandell, 2008). Independently of the exact bandwidth and peak preference of the neuronal population contributing to the final BOLD selectivity, we find that the shape of all these curves is captured with a simple one-parameter model: what we term the population tuning for Spatial Frequency. This is given by a Difference-of-Gaussians (DoG) function with one free parameter, the spatial constant (while the excitation/inhibition spatial constant ratio is fixed; see Equation 4 in the Materials and method and curves in Figure 5—figure supplement 1). The free parameter sets the high spatial frequency cut-off at half-height of the filter. The continuous lines in Figure 4 show how the model fits the grand-average of V1 responses, with best fit cut-off around five cpd similar for all conditions except for the POST-deprivation deprived eye, where the cut-off is 6.2 cpd (single vertex examples are given in Figure 5—figure supplement 1 panels C-I). The DoG equation has been successfully used in previous studies to model CSF and neural responses at variable stimulus parameters for example illumination levels (Enroth-Cugell and Robson, 1966; Hawken et al., 1988), validating this equation for modeling the overall selectivity of large neuronal ensembles.
 
 Using this model to analyze single vertex responses, we evaluated the best-fit spatial frequency cut-off of the neural population contributing to the vertex BOLD response (see details in the Materials and method and Figure 5—figure supplement 1 panels A-C; briefly, we used the DoG model to predict the response elicited by our five band-pass noise stimuli in populations with different spatial frequency selectivity, that is filters with different cut-off; we then found the cut-off value that maximizes the correlation between the predicted responses and the observed BOLD responses). We used this procedure to fit BOLD responses in each of our four conditions, estimating spatial frequency selectivity in individual vertices in each condition: separately for the two eyes, PRE/POST deprivation. Before deprivation, the spatial frequency cut-off decays with eccentricity as expected. Figure 5A maps both eccentricity (pRF eccentricity estimates from a separate retinotopic mapping scan) and spatial frequency cut-off values, obtained by fitting responses to the deprived eye, before deprivation (averaged across hemispheres and subjects). The cut-off is around 16 in the para-fovea (eccentricity around 1.5 deg) and down to four in the periphery (eccentricity around 8 deg). This relationship between eccentricity and spatial frequency preference is consistent with previous fMRI results (D’Souza et al., 2016; Henriksson et al., 2008) and with psychophysics (Rovamo et al., 1978). The model captures well the selectivity of an example V1 vertex (Figure 5B, goodness of fit better than 0.9), sampled from the mid-periphery (3.4 deg) for the deprived eye, both before and after deprivation. The spatial frequency cut-off after deprivation shifts to higher values, increasing (in this example) by about a factor of three. Figure 5C–D shows that this behavior is systematically observed across V1 vertices, but only for the deprived eye. Here the average cut-off is plotted as function of eccentricity, and the roll-off is consistent with the map in Figure 5A. For the non-deprived eye, there is no effect of deprivation on spatial frequency selectivity (Figure 5C). In contrast, for the deprived eye (Figure 5D), there is a shift towards preferring higher spatial frequencies, at all eccentricities, which is captured by an increased value of the cut-off frequency parameter leading to an increased acuity of the BOLD response to the deprived eye.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig5-v2.jpg)
+
+**Figure 5.:** (A) Maps of pRF eccentricity and best fit spatial frequency cut off (for the deprived eye before deprivation) after aligning the parameter estimates for all hemispheres to a common template and averaging them across subjects and hemispheres, after excluding vertices for which the average preferred eccentricity was not adequately estimated or smaller than 1 (the same exclusion criteria used for analyses). (B) Predicted and observed BOLD activity in one example vertex, elicited in response to our bandpass noise stimuli in the deprived eye PRE (pink) and POST deprivation (red), with best fit spatial frequency cut off (reported in the legend). (C-D) Best fit spatial frequency cut-off, averaged in sub-regions of V1 defined by pRF eccentricity bands, and estimated separately for the two eyes and PRE/POST deprivation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40014/elife-40014-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) family of functions used to model spatial frequency sensitivity in individual vertices. Different curves are generated by manipulating a single parameter, which is linearly related to the high spatial frequency cut-off of the function. (B) spatial frequency tuning curves in A were multiplied by the five spatial frequency spectra defining our band-pass noise stimuli, yielding a five-element vector that predicts the BOLD response to the stimuli. (C-I) The BOLD response observed in each vertex (or pool of vertices, for Figure 4) was fit with the model, by varying the spatial frequency cut-off and finding the value for which the predicted BOLD response correlates best with the observed BOLD response. For the example vertex in panel (C), the best fit cut-off is 0.5 cpd.; panels (D-I) show individual vertices for which the best fit cut-off is 1, 2, 4, 8, 16 or 32 cpd (see text insets).
 
 Note that the change of spatial frequency selectivity for the deprived eye is most evident at eccentricities of 4 deg and higher (see Figure 5D), where vertices have peak sensitivity at mid-to-low spatial frequencies before deprivation. In the fovea, where many vertices already prefer the highest spatial frequency stimulus before deprivation, our fitting procedure is likely to underestimate the change of spatial frequency selectivity. Importantly, the spatial frequency selectivity for the non-deprived eye is unchanged at all eccentricities, corroborating the eye and stimulus specificity of the short-term monocular deprivation effect. These findings are consistent with maps in Figure 1—figure supplement 1 panels C-D showing that deprivation effects are largely homogenous across all V1 eccentricities, with no obvious clustering of effects in the fovea or in the periphery.
 
@@ -87,7 +119,7 @@ To test the significance of these effects, we pooled the best fit cut-off values
 
 **Figure 6.:** (A) Effect of deprivation on spatial frequency cut off values. Average cut-off across all V1 vertices (pooled across eccentricities) for the deprived and non-deprived eye, before and after deprivation, same conventions as in Figure 1D. Distributions of the log-values do not deviate from normality (Jarque-Bera hypothesis test of composite normality, all p > 0.285). (B) Correlation between the POST/PRE ratio (Equation 7 in the Materials and methods) computed for the binocular rivalry mean phase duration and for the spatial frequency cut off for the deprived eye.
 
-## Monocular deprivation affects BOLD responses in the ventral stream areas beyond V1
+### Monocular deprivation affects BOLD responses in the ventral stream areas beyond V1
 
 We measured the effect over the main extra-striate visual cortical areas. The selective boost of the deprived eye response to the high spatial frequency is as strong in V2 as in V1 (Figure 1—figure supplement 1 and Figure 7E). The boost is present also in V3 and V4. In V4 the boost appears to be present also for lower spatial frequencies, but again only for the deprived eye (Figure 7A–B), possibly reflecting the larger spatial frequency bandwidth of V4 neurons compared to V1.
 
@@ -119,37 +151,102 @@ Understanding homeostatic plasticity and its relation to Hebbian plasticity may 
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Human subjects
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Freesurfer v6.0.0</td>
+      <td>(Fischl et al., 2002)</td>
+      <td>SCR_001847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPM</td>
+      <td>(Friston, 2007)</td>
+      <td>SCR_007037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BrainVoyager</td>
+      <td>(Goebel et al., 2006)</td>
+      <td>SCR_006660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FSL</td>
+      <td>(Jenkinson et al., 2012)</td>
+      <td>SCR_002823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PsychToolbox</td>
+      <td>(Brainard, 1997)</td>
+      <td>SCR_002881</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Human subjects
 
 Experimental procedures are in line with the declaration of Helsinki and were approved by the regional ethics committee [Comitato Etico Pediatrico Regionale—Azienda Ospedaliero-Universitaria Meyer—Firenze (FI)] and by the Italian Ministry of Health, under the protocol ‘Plasticità e multimodalità delle prime aree visive: studio in risonanza magnetica a campo ultra alto (7T)’ version #1 dated 11/11/2015. Written informed consent was obtained from each participant, which included consent to process and preserve the data and publish them in anonymous form.
 
 Twenty healthy volunteers with normal or corrected-to-normal visual acuity were examined (8 females and 12 males, mean age = 27 years).
 
-## Method details
+### Method details
 
-## Experimental design
+#### Experimental design
 
 Each participant underwent two scanning sessions separated by two hours, during which they were subject to the short-term monocular deprivation procedure described below. Just before each scanning section, their binocular rivalry was measured psychophysically. One (male) participant was excluded because of strong eye dominance tested with binocular rivalry before the deprivation. This left 19 participants (8 females and 11 males) whose complete datasets were entered all analyses. Sample size was set to enable testing for correlations between neuroimaging and psychophysical data. Previous work (Lunghi et al., 2015b) reveals a correlation between MR spectroscopy data and binocular rivalry measures r = 0.62 (or higher), which implies a minimum of 17 participants to detect a significant correlation at 0.05 significance level, with test power of 80% (Lachin, 1981).
 
-## Short-term monocular deprivation
+### Short-term monocular deprivation
 
 Monocular deprivation was achieved by patching the dominant eye for 2 hr. The operational definition of dominant eye applied to the eye showing the longer phase durations during the baseline binocular rivalry measurements. Like in previous studies (Binda and Lunghi, 2017; Lunghi et al., 2011; Lunghi et al., 2013), we used a translucent eye-patch made of plastic material allowing light to reach the retina (attenuation 0.07 logUnits, at least 3 times smaller than the threshold for discriminating a full-field luminance decrement (Knau, 2000) and more than ten times smaller than the minimum photopic luminance decrement required for shifting the spatial (Van Nes and Bouman, 1967) or temporal contrast sensitivity function (Kelly, 1961). The patch prevents pattern vision, as assessed by the Fourier transform of a natural world image seen through the eye-patch. During the 2 hr of monocular deprivation, observers were either engaged in the retinotopic mapping experiment (about 30’, described below) or they were free to read and use a computer.
 
-## Binocular rivalry
+### Binocular rivalry
 
 Binocular rivalry was measured in two short sessions (each comprising two runs of 3 min each), immediately before the Pre- and Post-deprivation MR sessions, in a quiet space adjacent to the MR control room. Visual stimuli were created in MATLAB running on a laptop (Dell) using PsychToolbox (Brainard, 1997), and displayed on a 15- inch monitor (BenQ). Like in (Lunghi et al., 2015b), observers viewed the visual stimuli presented on the monitor at a distance of 57 cm through anaglyph red-blue goggles (right lens blue, left lens red). Responses were recorded with the computer keyboard by continuous alternate keypresses. Visual stimuli were two oblique orthogonal red and blue gratings (orientation:±45°, size: 3°, spatial frequency: 2 cpd, contrast 50%), surrounded by a white smoothed circle, presented on a black uniform background in central vision. Peak luminance of the red grating was reduced to match the peak luminance of the blue one using photometric measures. All included participants had typical binocular rivalry dynamics, with low percentage of mixed percepts (reported for 8.5 ± 2.04% of time on average). Only one participant experienced of mixed percepts for more than 20% of time (exactly for 31.2%) and his data are in line with the others’.
 
-## Stimuli for fMRI
+### Stimuli for fMRI
 
 Visual stimuli were projected with an MR-compatible goggle set (VisuaStimDigital, Resonance Technologies, Los Angeles, USA), connected to a computer placed in the control room. The goggles covered a visual field of approximately 32 × 24 deg, with a resolution of 800 × 600 pixels, mean luminance 25 cd/m2; the images in the two eyes were controlled independently.
 
-During all functional MRI scans participants were instructed to maintain central fixation on a red point (0.5 degrees) that was constantly visible at the center of the screen. Bandpass noise stimuli were white noise images filtered to match the spatial frequency tuning of neurons in the visual cortex (Morrone and Burr, 1988). We generated a large white noise matrix (8000 × 6000) and filtered it with a two-dimensional circular bandpass filter Bp defined by Equation 1:(1)Bp=e   -ln⁡wP22[q*ln2]2where P is the peak spatial frequency, q is the filter half-width at half maximum in octaves. We generated five band-pass noise stimuli, by setting q = 1.25 octaves and p = 0.1 cpd, 0.2 cpd, 0.4 cpd, 1.1 cpd, 2.7 cpd. Each stimulus was presented for a block of 3 TRs, during which the image was refreshed at 8 Hz (randomly resampling a 800 × 600 window from the original matrix). Stimuli were scaled to exploit the luminance range of the display, and this yielded very similar RMS contrast values (shown in Figure 4—figure supplement 1). Stimulus blocks were separated by 4 TRs blanks, consisting of a mid-level gray screen. The five band-pass noise stimuli blocks were presented in pseudo-random order, twice per run, for a total of 70 TRs. In each run, stimuli were only presented to one eye, while the other was shown a mid-level gray screen. Each eye was tested once, before and after deprivation.
+During all functional MRI scans participants were instructed to maintain central fixation on a red point (0.5 degrees) that was constantly visible at the center of the screen. Bandpass noise stimuli were white noise images filtered to match the spatial frequency tuning of neurons in the visual cortex (Morrone and Burr, 1988). We generated a large white noise matrix (8000 × 6000) and filtered it with a two-dimensional circular bandpass filter Bp defined by Equation 1:
+
+$$
+Bp=e^{\frac{-ln⁡\frac{w}{P}^{2}}{2[q*ln2]^{2}}}
+$$
+
+where P is the peak spatial frequency, q is the filter half-width at half maximum in octaves. We generated five band-pass noise stimuli, by setting q = 1.25 octaves and p = 0.1 cpd, 0.2 cpd, 0.4 cpd, 1.1 cpd, 2.7 cpd. Each stimulus was presented for a block of 3 TRs, during which the image was refreshed at 8 Hz (randomly resampling a 800 × 600 window from the original matrix). Stimuli were scaled to exploit the luminance range of the display, and this yielded very similar RMS contrast values (shown in Figure 4—figure supplement 1). Stimulus blocks were separated by 4 TRs blanks, consisting of a mid-level gray screen. The five band-pass noise stimuli blocks were presented in pseudo-random order, twice per run, for a total of 70 TRs. In each run, stimuli were only presented to one eye, while the other was shown a mid-level gray screen. Each eye was tested once, before and after deprivation.
 
 Immediately upon application of the monocular patch, we performed two additional scans to perform retinotopic mapping of visual areas. Meridian and ring stimuli were presented monocularly (to the non-patched eye) and were defined as apertures of a mid-level gray mask that uncovered a checkerboard pattern, 1 deg at 1 deg eccentricity to 2.5 deg at 9 deg eccentricity, rotating and contracting at a rate of one check per second. Meridians were defined by two 45° wedges centered around 0° or around 90°. The horizontal and vertical meridian were presented interchangeably for 5 TRs each (without blanks) and the sequence was repeated six times for a total of 60 TRs. Rings partitioned screen space into six contiguous eccentricity bands (0–0.9 deg, 0.9–1.8 deg, 1.8–3.3 deg, 3.3–4.7 deg, 4.7–6.48 deg, 6.48–9 deg). Odd and even rings were presented in two separate runs. In each run, the three selected rings and one blank were presented in random order for 5 TRs each, and the sequence was repeated (with different order) 6 times for a total of 120 TRs.
 
-## MR system and sequences
+### MR system and sequences
 
 Scanning was performed on a Discovery MR950 7 T whole body MRI system (GE Healthcare, Milwaukee, WI, USA) equipped with a 2-channel transmit driven in quadrature mode, a 32-channel receive coil (Nova Medical, Wilmington, MA, USA) and a high-performance gradient system (50 mT/m maximum amplitude and 200 mT/m/ms slew rate).
 
@@ -157,13 +254,13 @@ Anatomical images were acquired at 1 mm isotropic resolution using a T1-weighted
 
 Functional images were acquired with spatial resolution 1.5 mm and slice thickness 1.4 mm with slice spacing = 0.1 mm, TR = 3 s, TE = 23 ms, rBW = 250 kHz, ASSET = 2, phase encoding direction AP-PA. No resampling was performed during the reconstruction. For each EPI sequence, we acquired two additional volumes with the reversed phase encoding direction.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## ROI definition
+#### ROI definition
 
 Areas V1, V2 and V3 were manually outlined for all participants using retinotopic data projected on surface models of white matter. The V1/V2 boundary was traced from the vertical/horizontal meridian flip superior/inferior to the calcarine sulcus, and the V2/V3 border and V3 border from the subsequent opposite flips. Areas V4, V3a and hMT+ (merging MT and MST) were defined based on the cortical parcellation atlas by Glasser et al. (Glasser et al., 2016). V1, V2, V3, V4 and V3a ROIs were further restricted to select the representation of our screen space. Specifically, the anterior boundaries were defined based on activation from most peripheral (6.48°−9°) ring stimuli of the retinotopic mapping scans; in addition, vertices were only included in the analysis if their preferred eccentricity (estimated through Population Receptive Field modelling, see below) was larger than 1, since no reliable mapping could be obtained for the central-most part of the visual field.
 
-## Pre-processing of imaging data
+### Pre-processing of imaging data
 
 Analyses were performed mainly with Freesurfer v6.0.0, with some contributions of the SPM12 and BrainVoyager 20.6 and FSL version 5.0.10 (Jenkinson et al., 2012) packages.
 
@@ -171,40 +268,68 @@ Anatomical images were corrected for intensity bias using SPM12 (Friston, 2007) 
 
 Functional images were corrected for subject movements (Goebel et al., 2006) and undistorted using EPI images with reversed phase encoding direction (Brain Voyager COPE plug-in Jezzard and Balaban, 1995). We then exported the preprocessed images from BrainVoyager to NiFTi format. These were aligned to each participant’s anatomical image using a boundary based registration algorithm (Freesurfer bbergister function) and projected to the cortical surface of each hemisphere. All analyses were conducted on data in the individual subject space. In addition, for visualization purposes, we also aligned the results of timecourse analyses (GLM and subsequent pRF and spatial frequency tuning estimates) to the left/right symmetric template hemisphere. Averaged results across the 18 × 2 hemispheres are shown in the maps of Figure 1B, Figure 5A and Figure 1—figure supplement 1.
 
-## GLM analysis of fMRI data
+### GLM analysis of fMRI data
 
-General Linear Model analysis was performed with in-house MATLAB software (D’Souza et al., 2016). We assumed that fMRI timecourses result from the linear combination of N predictors: boxcar functions representing stimulus presence/absence (one per stimulus type) convolved by a standard hemodynamic response function (see Equation 2), plus two nuisance variables (a linear trend and a constant). We modeled the hemodynamic response function as a gamma function h(t):(2)ht=t-δτ(n-1)e-t-δττn-1!with parameters n = 3, t = 1.5 s, and d = 2.25 s (Boynton et al., 1996). Beta weights of the stimuli predictors were taken as estimates of the BOLD response amplitude and normalized by the predictor amplitude to obtain a measure that directly corresponds to % signal change; beta weights were also scaled by an error measure to obtain t-values, following the same procedure as in (Friston et al., 1994). Computing BOLD responses for each individual vertex of the cortical surface leads to up-sampling the functional data (each 1.5 × 1.5 × 1.5 mm functional voxel projecting on an average of 3 vertices). We ensured that this does not affect our statistical analyses by first averaging data from all vertices within a region of interest (e.g. V1), thereby entering all ANOVAs with a single value per subject and region of interest.
+General Linear Model analysis was performed with in-house MATLAB software (D’Souza et al., 2016). We assumed that fMRI timecourses result from the linear combination of N predictors: boxcar functions representing stimulus presence/absence (one per stimulus type) convolved by a standard hemodynamic response function (see Equation 2), plus two nuisance variables (a linear trend and a constant). We modeled the hemodynamic response function as a gamma function h(t):
 
-## Population receptive field mapping
+$$
+ht=\frac{\frac{t-\delta}{\tau}^{(n-1)}e^{-\frac{t-\delta}{\tau}}}{\taun-1!}
+$$
 
-The pRFs of the selected voxels were estimated with custom software in MATLAB, implementing a method related to that described by Dumoulin and Wandell (Dumoulin & Wandell, 2008) and provided as supplementary material. We modeled the pRF with a 1D Gaussian function defined over eccentricity, with parameters ε and σ as mean and standard deviation respectively, and representing the aggregate receptive field of all neurons imaged within the vertex area. We defined the stimulus as a binary matrix S representing the presence of visual stimulation over space (here, eccentricity between 0 and 10 deg with 40 steps per deg) for each of 6 ring stimuli. We used the results of our GLM analysis to estimate the vertex response to each of our 6 rings (as t-values; using beta values yields very similar results). We assumed that each vertex response is the linear sum over space (eccentricity) of the overlap between the pRF of the voxel and the input stimulus, which is mathematically equivalent to the matrix multiplication between the stimulus and the pRF.(3)Ri=Gε,σ*Si where i is the index to ring number and varies between 1 and 6.
+with parameters n = 3, t = 1.5 s, and d = 2.25 s (Boynton et al., 1996). Beta weights of the stimuli predictors were taken as estimates of the BOLD response amplitude and normalized by the predictor amplitude to obtain a measure that directly corresponds to % signal change; beta weights were also scaled by an error measure to obtain t-values, following the same procedure as in (Friston et al., 1994). Computing BOLD responses for each individual vertex of the cortical surface leads to up-sampling the functional data (each 1.5 × 1.5 × 1.5 mm functional voxel projecting on an average of 3 vertices). We ensured that this does not affect our statistical analyses by first averaging data from all vertices within a region of interest (e.g. V1), thereby entering all ANOVAs with a single value per subject and region of interest.
 
-We used this equation to predict the response to our six rings for a large set of initial pRF parameters; for each vertex, we measured the correlation (our goodness-of-fit index) between the predicted response and the observed t-values. If the highest correlation was .7 the vertex was discarded; otherwise, the parameters yielding the highest correlation were used to initialize a nonlinear search procedure (MATLAB simplex algorithm), which manipulated εand σto maximize goodness-of-fit, with the constraint that εcould not exceed 20 deg or be smaller than 1 deg, and σcould not be smaller than. 1 deg. Successful fits were obtained for 72.00 ± 1.86% of V1 vertices, for which the initial coarse grid search gave a correlation > 0.7 and the nonlinear search settled within the constraints. All analyses (on average and distribution of responses and tuning parameters) considered the sub-region of V1 for which a successful fit was obtained. We used εto estimate the preferred eccentricity of each vertex.
+### Population receptive field mapping
+
+The pRFs of the selected voxels were estimated with custom software in MATLAB, implementing a method related to that described by Dumoulin and Wandell (Dumoulin & Wandell, 2008) and provided as supplementary material. We modeled the pRF with a 1D Gaussian function defined over eccentricity, with parameters $\epsilon$ and $\sigma$ as mean and standard deviation respectively, and representing the aggregate receptive field of all neurons imaged within the vertex area. We defined the stimulus as a binary matrix S representing the presence of visual stimulation over space (here, eccentricity between 0 and 10 deg with 40 steps per deg) for each of 6 ring stimuli. We used the results of our GLM analysis to estimate the vertex response to each of our 6 rings (as t-values; using beta values yields very similar results). We assumed that each vertex response is the linear sum over space (eccentricity) of the overlap between the pRF of the voxel and the input stimulus, which is mathematically equivalent to the matrix multiplication between the stimulus and the pRF.
+
+$$
+R_{i}=G\epsilon,\sigma*S_{i}
+$$
+
+where $i$ is the index to ring number and varies between 1 and 6.
+
+We used this equation to predict the response to our six rings for a large set of initial pRF parameters; for each vertex, we measured the correlation (our goodness-of-fit index) between the predicted response and the observed t-values. If the highest correlation was .7 the vertex was discarded; otherwise, the parameters yielding the highest correlation were used to initialize a nonlinear search procedure (MATLAB simplex algorithm), which manipulated $\epsilon$and $\sigma$to maximize goodness-of-fit, with the constraint that $\epsilon$could not exceed 20 deg or be smaller than 1 deg, and $\sigma$could not be smaller than. 1 deg. Successful fits were obtained for 72.00 ± 1.86% of V1 vertices, for which the initial coarse grid search gave a correlation > 0.7 and the nonlinear search settled within the constraints. All analyses (on average and distribution of responses and tuning parameters) considered the sub-region of V1 for which a successful fit was obtained. We used $\epsilon$to estimate the preferred eccentricity of each vertex.
 
 The main modifications of our procedure relative to that described by Dumoulin and Wandell (Dumoulin and Wandell, 2008) are the following: (a) fMRI data were acquired in a block design with only six stimulus types (six eccentricity bands) rather than varying stimulus position at each TR; this allowed us to use a standard GLM approach to estimate each vertex response to the six stimuli (assuming a standard hemodynamic response function) and then use the pRF model to predict these six time-points – much faster than predicting the full fMRI series of 120 × 2 TRs; (b) our stimuli and consequently our pRFs were defined in one dimension (eccentricity) – whereas the standard pRF is defined in 2D, eccentricity and polar angle (or Cartesian x and y); (c) we maximized the correlation between the predicted and observed fMRI response time-courses rather than minimizing the root mean square error; this eliminates the need to estimate a scale factor to account for the unknown units of the BOLD signal.
 
-## Population tuning for spatial frequency
+### Population tuning for spatial frequency
 
-Using a similar logic, we also estimated the population tuning for Spatial Frequency, which represents the aggregate Spatial Frequency tuning of the population of neurons imaged within each vertex area. We modeled the population tuning using a family of functions that includes the psychophysical Contrast Sensitivity Function (CSF) and can be specified by the following one-parameter equation (Difference-of-Gaussians):(4)pSFT=e −v2σ – e −v2σ/50  × σ
+Using a similar logic, we also estimated the population tuning for Spatial Frequency, which represents the aggregate Spatial Frequency tuning of the population of neurons imaged within each vertex area. We modeled the population tuning using a family of functions that includes the psychophysical Contrast Sensitivity Function (CSF) and can be specified by the following one-parameter equation (Difference-of-Gaussians):
+
+$$
+pSFT=e^{ \frac{−v^{2}}{\sigma }}– e^{ \frac{−v^{2}}{\sigma/50 }} \times \sigma
+$$
 
 Like we did for the pRF mapping, we defined a stimulus matrix S representing the Fourier spectra of our five bandpass noise stimuli, that is the energy of visual stimulation in the frequency domain (here, between 0.03 cpd and 12.5 cpd) for each stimulus. We used the results of our GLM analysis to estimate the vertex response to each of our five bandpass noise stimuli (as t-values; using beta values yields very similar results). We assumed that each vertex response is the linear sum over frequency of the overlap between the pSFT of the voxel and the input stimulus, which is mathematically equivalent to the matrix multiplication between the stimulus and the pSFT.
 
-Like for pRFs, we estimated the best-fit σparameter of each vertex pSFT with a two-step procedure: a coarse-grid search followed by the simplex search. We used the matrix multiplication of the pSFT and the stimulus to predict the response to our five bandpass noise stimuli for a large set of initial σvalues (between 1 and 1,000 in 100 logarithmic steps); for each vertex, we measured the correlation (our goodness-of-fit index) between the predicted response and the observed t-values. If the highest correlation was <.5, the voxel was discarded, otherwise the parameter yielding the highest correlation were used to initialize a nonlinear search procedure (MATLAB simplex algorithm), which manipulatedσ to maximize goodness-of-fit, with the constraint that σcould not be smaller than. 3 and larger than 10,000. Successful fits were obtained for 88.84 ± 1.28% of V1 vertices for which we obtained a successful eccentricity fit (86.77 ± 1.25% of all V1 vertices).
+Like for pRFs, we estimated the best-fit $\sigma$parameter of each vertex pSFT with a two-step procedure: a coarse-grid search followed by the simplex search. We used the matrix multiplication of the pSFT and the stimulus to predict the response to our five bandpass noise stimuli for a large set of initial $\sigma$values (between 1 and 1,000 in 100 logarithmic steps); for each vertex, we measured the correlation (our goodness-of-fit index) between the predicted response and the observed t-values. If the highest correlation was <.5, the voxel was discarded, otherwise the parameter yielding the highest correlation were used to initialize a nonlinear search procedure (MATLAB simplex algorithm), which manipulated$\sigma$ to maximize goodness-of-fit, with the constraint that $\sigma$could not be smaller than. 3 and larger than 10,000. Successful fits were obtained for 88.84 ± 1.28% of V1 vertices for which we obtained a successful eccentricity fit (86.77 ± 1.25% of all V1 vertices).
 
-We express the σ parameter in terms of the high-spatial frequency cutoff of the filter (highest spatial frequency at half maximum), SFco for each vertex:σ2
+We express the $\sigma$ parameter in terms of the high-spatial frequency cutoff of the filter (highest spatial frequency at half maximum), $SFco$ for each vertex:
 
-## Indices defining the effect of deprivation
+$$
+\sqrt{\frac{\sigma}{2}}
+$$
+
+### Indices defining the effect of deprivation
 
 We computed the effects of short-term monocular deprivation on both the dynamics of binocular rivalry and our fMRI results, estimating the degree to which the two measures are correlated. In all cases, the same equation was applied to psychophysical and fMRI data.
 
-The first index, called ‘Deprivation Index’ or DIpsycho and DIBOLD is given by Equation 6(6)DI=yDepPOST yDepPRE /yNdepPOST yNdepPRE
+The first index, called ‘Deprivation Index’ or DIpsycho and DIBOLD is given by Equation 6
+
+$$
+DI=\frac{y_{DepPOST}}{y_{DepPRE}}/\frac{y_{NdepPOST}}{y_{NdepPRE}}
+$$
 
 For psychophysics, y = mean duration of Binocular Rivalry phases of the Dep or Ndep eye, during the PRE- or POST deprivation sessions; for fMRI, y = mean BOLD response across V1 vertices to stimuli in the Dep or Ndep eye, during the PRE- or POST-deprivation sessions.
 
-The second index, called ‘Deprived-eye change’ or DepCpsycho and DepCcutoff is given by Equation 7(7)DepC=yDepPOST yDepPRE
+The second index, called ‘Deprived-eye change’ or DepCpsycho and DepCcutoff is given by Equation 7
+
+$$
+DepC=\frac{y_{DepPOST}}{y_{DepPRE}}
+$$
 
 For psychophysics, y = mean duration of Binocular Rivalry phases of the Dep eye, during the PRE- or POST deprivation sessions. For fMRI, y = mean spatial frequency cut-off across V1 vertices estimated for stimuli in the Dep eye, during the PRE- or POST-deprivation sessions.
 
-## Statistics
+### Statistics
 
 Data from individual participants (mean binocular rivalry phase durations or mean BOLD responses/pRF/pST across V1 or V2 vertices) were analyzed with a repeated measure ANOVA approach, after checking that distributions do not systematically deviate from normality by means of the Jarque-Bera test for composite normality (MATLAB jbtest function, p-values given in the relevant figures). F statistics are reported with associated degrees of freedom and p-values in the Results section, in the form: F(df,dferr) = value; p = value. Post-hoc paired t-tests comparing conditions follow the ANOVA results, in the form: t(df)= value, p = value. Associations between variables are assessed with Pearson product-moment correlation coefficient, reported in the form: r(n) = value, p = value. Aggregate subject data (i.e. vertices pooled across participants and hemispheres) were typically non-normally distributed and thereby were analysed with non-parametric tests. The Wilcoxon sign-rank test was used for comparing medians, and results are reported in the form: z = value, p = value.

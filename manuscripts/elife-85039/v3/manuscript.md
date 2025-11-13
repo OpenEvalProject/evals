@@ -30,15 +30,15 @@ Here, we tested a set of RXRα ligands in structure-function assays to determine
 
 ## Results
 
-## RXRα LBD is sufficient for repression of Nurr1 transcription
+### RXRα LBD is sufficient for repression of Nurr1 transcription
 
 To confirm the published observation that RXRα represses Nurr1 transcription (Aarnisalo et al., 2002; Forman et al., 1995), we performed a transcriptional reporter assay where SK-N-BE(2) neuronal cells were transfected with a full-length Nurr1 expression plasmid, with or without full-length or domain-truncation RXRα expression plasmids, along with a 3xNBRE-luciferase plasmid containing three copies of the monomeric NBRE DNA-binding response element sequence upstream of luciferase gene (Figure 1a). Cotransfected RXRα expression plasmid repressed Nurr1 transcription, and RXRα truncation constructs show that the RXRα LBD is both necessary and sufficient for repression of Nurr1 transcription (Figure 1b). A slight decrease in Nurr1 transcription is observed with the ΔLBD construct though the effect is not statistically significant. These findings implicate an LBD-driven PPI mechanism with a negligible or minor role for the RXRα DBD, which is consistent with published studies that showed full-length RXRα does not bind to monomeric NBRE sequences via the RXRα DBD, but does interact with Nurr1 that is bound to NBRE DNA sequences via a PPI (Sacchetti et al., 2002). Furthermore, RXR ligands can activate transcription of a Gal4 DBD-Nurr1 LBD fusion protein, but not a Gal4 DBD-Nurr1 LBD mutant (Nurr1dim) that cannot heterodimerize with RXRα (Aarnisalo et al., 2002; Wallen-Mackenzie et al., 2003), which further implicates the RXRα LBD in repression of Nurr1 LBD-mediated transcription.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig1-v3.jpg)
 
-**Figure 1.:** (a) General scheme of the cellular transcriptional reporter assay. (b) 3xNBRE-luciferase assay performed in SK-N-BE(2)-C cells; see Figure 1—source data 1 for data plotted. Data are normalized to empty vector control (n=9 replicates), shown as a box and whiskers plot with boundaries of the box representing the 25th percentile and the 75th percentile, and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test of the FL Nurr1 + RXRα constructs conditions relative to FL Nurr1 control condition.Figure 1—source data 1.
+**Figure 1.:** (a) General scheme of the cellular transcriptional reporter assay. (b) 3xNBRE-luciferase assay performed in SK-N-BE(2)-C cells; see Figure 1—source data 1 for data plotted. Data are normalized to empty vector control (n=9 replicates), shown as a box and whiskers plot with boundaries of the box representing the 25th percentile and the 75th percentile, and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test of the FL Nurr1 + RXRα constructs conditions relative to FL Nurr1 control condition.
 
-## RXRα ligands display graded Nurr1-RXRα transcriptional activation
+### RXRα ligands display graded Nurr1-RXRα transcriptional activation
 
 We assembled a set of 14 commercially available RXRα-binding ligands (Figure 2) described in the literature as pharmacological RXRα agonists and antagonists; a mixed activity PPARγ-RXR selective modulator (LG100754) that antagonizes RXR homodimers but agonizes PPAR-RXR and RAR-RXR heterodimers (Lala et al., 1996) and two RXRα-binding compounds (BRF110 and HX600) described as selective agonists of Nurr1-RXRα heterodimers (Morita et al., 2005; Spathis et al., 2017). To determine how the ligands influence Nurr1-RXRα transcription, we performed a transcriptional reporter assay where SK-N-BE(2) neuronal cells were transfected with full-length Nurr1 and RXRα expression plasmids and the 3xNBRE-luc plasmid then treated with compound or DMSO control (Figure 3a). Compounds reported as RXRα agonists increase Nurr1-RXRα transcription (Figure 3b), and among the most efficacious agonist ligands includes endogenous metabolite 9-cis-retinoic acid (9cRA) and bexarotene, the latter of which was reported to display biased activation of Nurr1-RXR heterodimers over RXR homodimers (McFarland et al., 2013). RXRα antagonists showed relatively no change or slightly decreased transcription of Nurr1-RXRα. The two Nurr1-RXRα selective agonists, BRF110 and HX600, displayed the highest activity of all compounds tested. Taken together, the transcriptional reporter data obtained indicates this RXRα ligand set influences Nurr1-RXRα transcription via a graded activation mechanism.
 
@@ -48,9 +48,9 @@ We assembled a set of 14 commercially available RXRα-binding ligands (Figure 2)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig3-v3.jpg)
 
-**Figure 3.:** (a) General scheme of the Nurr1-RXRα/3xNBRE-luciferase cellular transcriptional reporter assay. (b) Nurr1-RXRα/3xBNRE-luciferase transcriptional reporter assay performed in SK-N-BE(2)-C cells treated with RXRα ligand (1 µM) or DMSO (dotted line); see Figure 3—source data 1 for data plotted. Data are normalized to DMSO (n=9 replicates), represent the mean ± s.d., and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test relative to DMSO control treated condition.Figure 3—source data 1.
+**Figure 3.:** (a) General scheme of the Nurr1-RXRα/3xNBRE-luciferase cellular transcriptional reporter assay. (b) Nurr1-RXRα/3xBNRE-luciferase transcriptional reporter assay performed in SK-N-BE(2)-C cells treated with RXRα ligand (1 µM) or DMSO (dotted line); see Figure 3—source data 1 for data plotted. Data are normalized to DMSO (n=9 replicates), represent the mean ± s.d., and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test relative to DMSO control treated condition.
 
-## Nurr1-RXRα activation is not correlated with pharmacological RXRα agonism
+### Nurr1-RXRα activation is not correlated with pharmacological RXRα agonism
 
 Agonist binding to the NR LBD stabilizes an active conformation that facilitates coactivator protein interaction at the AF-2 surface via a ‘charge clamp’ mechanism (Savkur and Burris, 2004) that is important for binding LXXLL-containing motifs present within coactivator proteins resulting in an increase in transcription (Kojetin and Burris, 2013). The Nurr1 LBD does not interact with canonical coregulator proteins because it contains a reversed ‘charge clamp’ in its AF-2 surface (Wang et al., 2003), implicating ligand-dependent coactivator interaction with RXRα in the mechanism of Nurr1-RXRα activation.
 
@@ -58,25 +58,359 @@ To determine if there is a correlation between Nurr1-RXRα transcriptional agoni
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig4-v3.jpg)
 
-**Figure 4.:** (a) General scheme of the RXRα ligand-binding domain (LBD) time-resolved fluorescence resonance energy transfer (TR-FRET) coactivator peptide interaction assay. (b) TR-FRET ratio measured in the presence of DMSO (dotted line) or compound (2–4 µM); see Figure 4—source data 1 for data plotted. Data are normalized to DMSO control (n=3 biological replicates), represent the mean ± s.d., representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA tests for multiple comparisons with Dunnett corrections relative to DMSO control treated condition. (c) General scheme of the RXRα/3xDR1-luciferase cellular transcriptional reporter assay. (d) RXRα/3xDR1-luciferase transcriptional reporter assay performed in HEK293T cells treated with compound (1 µM) or DMSO control (dotted line); see Figure 4—source data 2 for data plotted. Data normalized to DMSO (n=6 replicates), represent the mean ± s.d., and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test relative to DMSO control treated condition. (e) Correlation plot of RXRα LBD TR-FRET data vs. Nurr1-RXRα cellular transcription data. (f) Correlation plot of RXRα transcriptional reporter data vs. Nurr1-RXRα cellular transcription data. (g) Correlation plot of RXRα transcriptional reporter data vs. RXRα LBD TR-FRET data. Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plots.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (a) General scheme of the RXRα ligand-binding domain (LBD) time-resolved fluorescence resonance energy transfer (TR-FRET) coactivator peptide interaction assay. (b) TR-FRET ratio measured in the presence of DMSO (dotted line) or compound (2–4 µM); see Figure 4—source data 1 for data plotted. Data are normalized to DMSO control (n=3 biological replicates), represent the mean ± s.d., representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA tests for multiple comparisons with Dunnett corrections relative to DMSO control treated condition. (c) General scheme of the RXRα/3xDR1-luciferase cellular transcriptional reporter assay. (d) RXRα/3xDR1-luciferase transcriptional reporter assay performed in HEK293T cells treated with compound (1 µM) or DMSO control (dotted line); see Figure 4—source data 2 for data plotted. Data normalized to DMSO (n=6 replicates), represent the mean ± s.d., and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test relative to DMSO control treated condition. (e) Correlation plot of RXRα LBD TR-FRET data vs. Nurr1-RXRα cellular transcription data. (f) Correlation plot of RXRα transcriptional reporter data vs. Nurr1-RXRα cellular transcription data. (g) Correlation plot of RXRα transcriptional reporter data vs. RXRα LBD TR-FRET data. Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plots.
 
 We previously showed that ligands displaying graded pharmacological PPARγ agonism show a strong correlation between coactivator peptide recruitment to the LBD in a TR-FRET biochemical assay and cellular transcription of full-length PPARγ (Shang et al., 2019). However, no significant correlation was observed between coactivator peptide recruitment to the RXRα LBD and Nurr1-RXRα transcription for the RXRα ligand set (Figure 4e). Furthermore, no significant correlation is observed between RXRα homodimer transcription and Nurr1-RXRα transcription (Figure 4f). In contrast, a strong correlation is observed between RXRα LBD TR-FRET data and full-length RXRα transcription (Figure 4g) where ligands that increase PGC-1α coactivator peptide interaction to the RXRα LBD activate transcription of full-length RXRα in cells, similar to what we observed for PPARγ agonists with graded agonist transcriptional activity (Shang et al., 2019).
 
 The two selective Nurr1-RXRα activating compounds, BRF110 and HX600, function as a pharmacological antagonist and weak/partial graded agonist in the RXRα homodimer TR-FRET and transcriptional reporter assay, respectively. These findings suggest that the mechanism by which the RXRα ligand set influences Nurr1-RXRα transcription may occur independent of coregulator recruitment to the RXRα LBD and RXRα-mediated transcription—indicating that ligand-dependent RXRα homodimer modulation and Nurr1-RXRα heterodimer modulation may function through distinct mechanisms.
 
-## Nurr1-RXRα activation is correlated with weakening LBD heterodimer affinity
+### Nurr1-RXRα activation is correlated with weakening LBD heterodimer affinity
 
 Although ligand binding to NRs typically influences coregulator interaction to the AF-2 surface in the LBD, studies have reported that ligand binding can also weaken or strengthen NR LBD homodimerization and heterodimerization and confer selectivity (Kilu et al., 2021; Powell and Xu, 2008; Rehó et al., 2020; Tamrazi et al., 2002). To determine how the RXRα ligand set influences Nurr1-RXRα LBD heterodimerization affinity, we performed isothermal titration calorimetry (ITC) studies where we titrated Nurr1 LBD into apo/ligand-free or ligand-bound RXRα LBD (Figure 5a) and fitted the data to a homodimer competition model that incorporates apo-RXRα LBD homodimerization affinity (see Materials and methods) and dissociation of RXRα LBD homodimers to obtain Nurr1-RXRα LBD heterodimerization affinity (Table 1 and Figure 5b). One limitation of this ITC data analysis is the assumption that the RXRα LBD homodimer affinity is the same for apo RXRα LBD and the various ligand-bound states. Determining ligand-bound RXRα LBD homodimer KD values using ITC via the dimer dissociation dilution (McPhail and Cooper, 1997) would likely be confounded by ligand dissociation. It is also possible that RXRα ligands could change RXRα LBD homodimer affinity, or potentially change the RXRα LBD dimer equilibrium toward a tetrameric form where the Nurr1 LBD ITC titration could include a component that dissociates a ligand-bound RXRα LBD homotetramer (Chen et al., 1998; Gampe et al., 2000; Zhang et al., 2011a). Despite these limitations, a significant correlation between Nurr1-RXRα LBD heterodimerization affinity and Nurr1-RXRα transcription where RXRα ligands that weaken heterodimerization affinity show higher Nurr1-RXRα transcription (Figure 5c).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig5-v3.jpg)
 
-**Figure 5.:** (a) General scheme of the Nurr1-RXRα LBD isothermal titration calorimetry (ITC) experiment. (b) Nurr1-RXRα LBD heterodimer affinities (log M) in the presence of DMSO (dotted line) or compound determined from the fit of the ITC data (n=2 replicates, except n=1 for IRX4204 and PA452) and represent the mean ± s.d.; see Table 1 and Figure 5—source data 1 for data plotted. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA relative to DMSO control treated condition. (c) Correlation plot of ITC determined Nurr1-RXRα LBD heterodimer KD log M values vs. Nurr1-RXRα cellular transcription data. (d) Correlation plot of ITC determined Nurr1-RXRα LBD heterodimer KD log M values vs. fitted binding enthalpy (ΔH, which is the ΔHAB component of the homodimer competition model; see Materials and methods section for details). (e) Correlation plot of ITC determined Nurr1-RXRα LBD heterodimer KD log M values vs. calculated binding entropy (TΔS). Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plot.Figure 5—source data 1.
+**Figure 5.:** (a) General scheme of the Nurr1-RXRα LBD isothermal titration calorimetry (ITC) experiment. (b) Nurr1-RXRα LBD heterodimer affinities (log M) in the presence of DMSO (dotted line) or compound determined from the fit of the ITC data (n=2 replicates, except n=1 for IRX4204 and PA452) and represent the mean ± s.d.; see Table 1 and Figure 5—source data 1 for data plotted. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA relative to DMSO control treated condition. (c) Correlation plot of ITC determined Nurr1-RXRα LBD heterodimer KD log M values vs. Nurr1-RXRα cellular transcription data. (d) Correlation plot of ITC determined Nurr1-RXRα LBD heterodimer KD log M values vs. fitted binding enthalpy (ΔH, which is the ΔHAB component of the homodimer competition model; see Materials and methods section for details). (e) Correlation plot of ITC determined Nurr1-RXRα LBD heterodimer KD log M values vs. calculated binding entropy (TΔS). Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plot.
+
+**Table 1.**
+ Fitted and calculated isothermal titration calorimetry (ITC) Nurr1-RXRα binding affinity and thermodynamic parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ligand</th>
+      <th colspan="5">log KD (M)</th>
+      <th colspan="6">ΔH (kcal/mol)</th>
+      <th colspan="6">TΔS (kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Average</td>
+      <td>s.d.</td>
+      <td>n</td>
+      <td colspan="3">Replicates</td>
+      <td>Average</td>
+      <td>s.d.</td>
+      <td>n</td>
+      <td colspan="3">Replicates</td>
+      <td>Average</td>
+      <td>s.d.</td>
+      <td>n</td>
+      <td colspan="2">Replicates</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>–5.335</td>
+      <td>0.118</td>
+      <td>2</td>
+      <td>–5.418</td>
+      <td colspan="2">–5.252</td>
+      <td>2.900</td>
+      <td>0.240</td>
+      <td>2</td>
+      <td>3.070</td>
+      <td colspan="2">2.730</td>
+      <td>10.179</td>
+      <td>0.401</td>
+      <td>2</td>
+      <td>10.462</td>
+      <td>9.895</td>
+    </tr>
+    <tr>
+      <td>BRF110</td>
+      <td>–4.376</td>
+      <td>0.020</td>
+      <td>2</td>
+      <td>–4.390</td>
+      <td colspan="2">–4.362</td>
+      <td>5.365</td>
+      <td>0.361</td>
+      <td>2</td>
+      <td>5.110</td>
+      <td colspan="2">5.620</td>
+      <td>11.335</td>
+      <td>0.334</td>
+      <td>2</td>
+      <td>11.099</td>
+      <td>11.571</td>
+    </tr>
+    <tr>
+      <td>HX600</td>
+      <td>–4.662</td>
+      <td>0.028</td>
+      <td>2</td>
+      <td>–4.681</td>
+      <td colspan="2">–4.642</td>
+      <td>7.695</td>
+      <td>4.320</td>
+      <td>2</td>
+      <td>4.640</td>
+      <td colspan="2">10.750</td>
+      <td>14.054</td>
+      <td>4.283</td>
+      <td>2</td>
+      <td>11.026</td>
+      <td>17.083</td>
+    </tr>
+    <tr>
+      <td>9cRA</td>
+      <td>–5.026</td>
+      <td>0.060</td>
+      <td>2</td>
+      <td>–4.984</td>
+      <td colspan="2">–5.068</td>
+      <td>5.110</td>
+      <td>0.962</td>
+      <td>2</td>
+      <td>5.790</td>
+      <td colspan="2">4.430</td>
+      <td>13.539</td>
+      <td>3.105</td>
+      <td>2</td>
+      <td>12.589</td>
+      <td>11.344</td>
+    </tr>
+    <tr>
+      <td>Bexarotene</td>
+      <td>–4.619</td>
+      <td>0.044</td>
+      <td>2</td>
+      <td>–4.588</td>
+      <td colspan="2">–4.650</td>
+      <td>5.555</td>
+      <td>1.336</td>
+      <td>2</td>
+      <td>4.610</td>
+      <td colspan="2">6.500</td>
+      <td>11.857</td>
+      <td>1.396</td>
+      <td>2</td>
+      <td>10.870</td>
+      <td>12.844</td>
+    </tr>
+    <tr>
+      <td>LG100268</td>
+      <td>–5.044</td>
+      <td>0.106</td>
+      <td>2</td>
+      <td>–5.119</td>
+      <td colspan="2">–4.969</td>
+      <td>5.135</td>
+      <td>0.148</td>
+      <td>2</td>
+      <td>5.240</td>
+      <td colspan="2">5.030</td>
+      <td>12.017</td>
+      <td>0.294</td>
+      <td>2</td>
+      <td>12.224</td>
+      <td>11.809</td>
+    </tr>
+    <tr>
+      <td>CD3254</td>
+      <td>–4.860</td>
+      <td>0.099</td>
+      <td>2</td>
+      <td>–4.930</td>
+      <td colspan="2">–4.790</td>
+      <td>4.865</td>
+      <td>0.389</td>
+      <td>2</td>
+      <td>5.140</td>
+      <td colspan="2">4.590</td>
+      <td>11.495</td>
+      <td>0.524</td>
+      <td>2</td>
+      <td>11.866</td>
+      <td>11.125</td>
+    </tr>
+    <tr>
+      <td>SR11237</td>
+      <td>–5.053</td>
+      <td>0.047</td>
+      <td>2</td>
+      <td>–5.087</td>
+      <td colspan="2">–5.020</td>
+      <td>4.940</td>
+      <td>0.962</td>
+      <td>2</td>
+      <td>5.620</td>
+      <td colspan="2">4.260</td>
+      <td>11.834</td>
+      <td>1.026</td>
+      <td>2</td>
+      <td>12.560</td>
+      <td>11.109</td>
+    </tr>
+    <tr>
+      <td>UVI3003</td>
+      <td>–4.565</td>
+      <td>0.021</td>
+      <td>2</td>
+      <td>–4.580</td>
+      <td colspan="2">–4.550</td>
+      <td>6.125</td>
+      <td>2.638</td>
+      <td>2</td>
+      <td>7.990</td>
+      <td colspan="2">4.260</td>
+      <td>12.353</td>
+      <td>2.666</td>
+      <td>2</td>
+      <td>14.238</td>
+      <td>10.467</td>
+    </tr>
+    <tr>
+      <td>LG100754</td>
+      <td>–5.222</td>
+      <td>0.026</td>
+      <td>2</td>
+      <td>–5.204</td>
+      <td colspan="2">–5.240</td>
+      <td>4.270</td>
+      <td>0.226</td>
+      <td>2</td>
+      <td>4.110</td>
+      <td colspan="2">4.430</td>
+      <td>11.394</td>
+      <td>0.261</td>
+      <td>2</td>
+      <td>11.209</td>
+      <td>11.579</td>
+    </tr>
+    <tr>
+      <td>IRX4204</td>
+      <td>–4.673</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>–4.673</td>
+      <td colspan="2"></td>
+      <td>8.460</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>8.460</td>
+      <td colspan="2"></td>
+      <td>14.835</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>14.835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rhein</td>
+      <td>–5.554</td>
+      <td>0.077</td>
+      <td>2</td>
+      <td>–5.499</td>
+      <td colspan="2">–5.609</td>
+      <td>2.780</td>
+      <td>0.396</td>
+      <td>2</td>
+      <td>3.060</td>
+      <td colspan="2">2.500</td>
+      <td>10.357</td>
+      <td>0.290</td>
+      <td>2</td>
+      <td>10.563</td>
+      <td>10.152</td>
+    </tr>
+    <tr>
+      <td>HX531</td>
+      <td>–6.132</td>
+      <td>0.133</td>
+      <td>2</td>
+      <td>–6.226</td>
+      <td colspan="2">–6.038</td>
+      <td>2.205</td>
+      <td>0.021</td>
+      <td>2</td>
+      <td>2.190</td>
+      <td colspan="2">2.220</td>
+      <td>10.571</td>
+      <td>0.160</td>
+      <td>2</td>
+      <td>10.684</td>
+      <td>10.457</td>
+    </tr>
+    <tr>
+      <td>Danthron</td>
+      <td>–5.524</td>
+      <td>0.043</td>
+      <td>2</td>
+      <td>–5.494</td>
+      <td colspan="2">–5.554</td>
+      <td>2.920</td>
+      <td>0.170</td>
+      <td>2</td>
+      <td>3.040</td>
+      <td colspan="2">2.800</td>
+      <td>10.456</td>
+      <td>0.111</td>
+      <td>2</td>
+      <td>10.535</td>
+      <td>10.378</td>
+    </tr>
+    <tr>
+      <td>PA452</td>
+      <td>–5.417</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>–5.417</td>
+      <td colspan="2"></td>
+      <td>4.120</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>4.120</td>
+      <td colspan="2"></td>
+      <td>11.510</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>11.510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 To gain additional insight into the thermodynamic mechanism of ligand-induced Nurr1-RXRα LBD heterodimer dissociation, we analyzed the thermodynamic parameters from the fitted ITC data (Table 1). The change in binding enthalpy (ΔH) upon heterodimerization generally shows an endothermic (positive) profile for all conditions, whereas the change in entropy (TΔS) component shows a favorable (positive) profile for all conditions. Correlation analysis reveals a more significant correlation between the Nurr1-RXRα LBD heterodimerization binding affinity and the ΔH binding component (Figure 5d) compared to the ΔS binding component (Figure 5e). Moreover, compounds that decrease Nurr1-RXRα LBD heterodimer binding affinity show an increasing (less favorable) ΔH component and an increasing (more favorable) ΔS component.
 
-## Nurr1-RXRα activation is correlated with dissociation of Nurr1 LBD monomer
+### Nurr1-RXRα activation is correlated with dissociation of Nurr1 LBD monomer
 
 To obtain structural insight into the consequence of ligand-induced weakening of Nurr1-RXRα LBD heterodimer and the relationship to transcriptional activation of Nurr1-RXRα, we performed protein NMR structural footprinting analysis. We collected 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled Nurr1 LBD in the monomer form or heterodimerized with RXRα LBD. Among the well-resolved Nurr1 LBD peaks in the 2D NMR data that show clear and discernible shifts going from monomeric Nurr1 LBD to the Nurr1-RXRα LBD heterodimer (Figure 6—figure supplement 1) include the NMR peak for Thr411 (Figure 6a). Addition of compounds that activate Nurr1-RXRα transcription and weaken Nurr1-RXRα LBD heterodimer affinity result in the appearance of two Thr411 NMR peaks with chemical shift values corresponding to the heterodimer and Nurr1 monomer populations. In contrast, compounds that display little to no effect on Nurr1-RXRα transcription and do not significantly alter Nurr1-RXRα LBD heterodimer affinity show either a single NMR peak corresponding to the heterodimer population or a lower Nurr1 monomer population on average. These data indicate that Nurr1-RXRα activating ligands perturb the Nurr1-RXRα LBD heterodimer conformational ensemble toward a monomeric Nurr1 LBD population in slow exchange on the NMR time scale.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-v3.jpg)
+
+**Figure 6.:** (a) 2D [1H,15N]-TROSY HSQC data of 15N-labeled Nurr1 LBD heterodimerized with unlabeled RXRα LBD in the presence of RXRα ligands focused on the NMR peak of Thr411. The upper inset shows an overlay of 15N-labeled Nurr1 LBD monomer (200 µM) vs. 15N-labeled Nurr1 LBD-unlabeled RXRα LBD heterodimer (1:2 molar ratio) to demonstrate the shift of the Thr411 peak between monomer (m) and heterodimer (hd) forms; see Figure 6—figure supplement 1 for full spectral overlays. (b) Simulated 1H NMR lineshape analysis of Nurr1 LBD residue Thr411 showing the influence of ligand-induced weakening of Nurr1-RXRα LBD heterodimerization affinity; see Figure 6—source code 1 for calculation input files. (c) NMR estimated Nurr1 LBD monomer populations from the 2D NMR data (n=2 replicates, except n=1 for IRX4204 and PA452) and lines above the replicate values represent the mean ± s.d.; see Figure 6—source data 1 for data plotted. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA relative to apo/DMSO control treated condition. (d) Correlation plot of Nurr1-RXRα cellular transcription data vs. NMR estimated Nurr1 LBD monomer populations. (e) Correlation plot of ITC determined Nurr1-RXRα LBD heterodimer KD log M values vs. NMR estimated Nurr1 LBD monomer populations. Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plots. (f) Analytical size exclusion chromatography (SEC) analysis of Nurr1-RXRα in the presence of RXRα ligands (solid colored lines) relative to Nurr1 LBD monomer (dotted black line) and Nurr1-RXRα LBD heterodimer (solid black line); see Figure 6—figure supplement 2 for all SEC data organized by ligand.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-figsupp1-v3.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-figsupp2-v3.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** Fractions corresponding to the indicated regions of the SEC chromatography are annotated, as well as the locations of the Nurr1 LBD and RXRα LBD. The bands annotated with ** correspond to a degraded RXRα LBD population that formed when these SEC samples were stored at 4°C for an extended period of time prior to SDS-PAGE analysis. See Figure 6—figure supplement 3—source data 1for raw unedited gel with and without annotation.
 
 To gain additional insight into how ligand-dependent changes in Nurr1-RXRα LBD heterodimerization affinity influences the NMR data, we performed NMR lineshape simulations. Simulated 1D spectra of the 1HN dimension of the Thr411 NMR peaks were calculated using a binding model that accounts for an RXRα LBD homodimer component that dissociates into monomers that are capable of binding Nurr1 LBD (see Materials and methods for details). The simulations show that weakening Nurr1-RXRα LBD heterodimerization affinity, for example upon binding an RXRα ligand, shifts the equilibrium from the Nurr1-RXRα LBD heterodimeric (hd) population to Nurr1 LBD monomer (m) population (Figure 6b), consistent with our experimentally collected 2D NMR data.
 
@@ -86,7 +420,7 @@ To corroborate our ligand-dependent heterodimer dissociation findings, we perfor
 
 The SEC data provide insight into the potential allosteric mechanism(s) by which compounds in the RXRα ligand set influence Nurr1-RXRα heterodimerzation and transcription via effects on RXRα LBD. In the absence of ligand, RXRα exists as a mixture of homodimers and homotetramers (Kersten et al., 1995a), which can be stabilized as dimers upon agonist binding (Kersten et al., 1995b) or tetramers upon antagonist binding (Zhang et al., 2011b). In our SEC data, the most efficacious compounds not only free a Nurr1 LBD monomeric population, but also increase a higher order species with an elution volume consistent with a RXRα LBD homotetramer population. SDS-PAGE analysis confirms this observation and reveals that the higher order species observed when BRF110 is added to Nurr1-RXRα LBD heterodimers contains RXRα LBD only (Figure 6—figure supplement 3). Furthermore, these compounds change the appearance of species in the SEC data with elution properties similar to Nurr1-RXRα heterodimer and RXRα homodimers, suggesting that they may change the homodimer/heterodimer complex conformation and/or species equilibrium. Thus, the allosteric mechanism may involve ligand-induced stabilization of RXRα oligomeric species that inhibit or are less favorable for Nurr1 heterodimerization.
 
-## PCA reveals data features associated with Nurr1-RXRα agonism
+### PCA reveals data features associated with Nurr1-RXRα agonism
 
 Finally, we performed principal component analysis (PCA) using all the experimental data collected as input to determine the data features most associated with transcriptional activation of the 3xNBRE-luciferase reporter by Nurr1-RXRα in an unbiased manner (Figure 7a). Two of the ligands, danthron and rhein, were not included in the analysis because we did not have RXRα LBD TR-FRET and RXRα homodimer transcriptional reporter data (vide infra). Approximately 90% of the variance in the data can be explained by the two PCs (Figure 7b). Several features are notable in the plot of the PCA scores and loadings, the latter of which represent correlation between the experimental data and PCs. The ligands cluster in groups consistent with their known pharmacological phenotypes. The loadings show that Nurr1-RXRα transcription, ITC-determined Nurr1-RXRα heterodimer affinity, and NMR-determined Nurr1 monomeric populations are clustered together and clustered along with the Nurr1-RXRα selective ligands, meaning these features of the data are positively correlated with ligand-dependent Nurr1-RXRα heterodimer dissociation. In contrast, RXRα LBD TR-FRET coactivator interaction and RXRα LBD homodimer transcription is positively correlated with classical RXRα agonists, whereas RXRα antagonists are found opposite to this loading trajectory. Furthermore, the loading projections show that the features of classical RXRα agonism and selective Nurr1-RXRα agonism are uncorrelated since the loadings trajectories associated with these features, and their associated ligand clusters, form a perpendicular (~90°) angle.
 
@@ -110,46 +444,54 @@ In summary, our study shows that RXRα ligands can function as allosteric PPI in
 
 ## Materials and methods
 
-## Ligands, plasmids, and other reagents
+### Ligands, plasmids, and other reagents
 
 All ligands were obtained from commercial vendors including Cayman Chemicals, Sigma, Axon Medchem, MedChemExpress, or Tocris Bioscience; BRF110 (CAS 2095489-35-1), HX600 (CAS 172705-89-4), 9cRA (CAS 5300-03-8), Bexarotene (CAS 153559-49-0), LG100268 (CAS 153559-76-3), CD3254 (CAS 196961-43-0), SR11237 (CAS 146670-40-8), UVI3003 (CAS 847239-17-2), LG100754 (CAS 180713-37-5), IRX4204 (CAS 220619-73-8), Rhein (CAS 478-43-3), HX531 (CAS 188844-34-0), Danthron (CAS 117-10-2), and PA452 (CAS 457657-34-0). FITC-labeled LXXLL-containing peptide derived from human PGC-1α (137-155; EAEEPSLLKKLLLAPANTQ) was synthesized by LifeTein with an N-terminal FITC label and an amidated C-terminus for stability. Bacterial expression plasmids included human Nurr1 (NR4A2) LBD (residues 353–598) (de Vera et al., 2016) and human RXRα (NR2B1) LBD (residues 223–462) (Kojetin et al., 2015) that were inserted into a pET45b(+) plasmid (Novagen) as a TEV-cleavable N-terminal hexahistidine(6xHis)-tag fusion protein. Luciferase reporter plasmids included a 3xNBRE-luciferase plasmid containing three copies of the NGFI-B response element corresponding to the monomeric binding site for Nurr1 de Vera et al., 2016; Wilson et al., 1991; and a 3xDR1-luciferase containing three copies of the optimal direct repeat 1 (DR1) binding site for RXRα (Hughes et al., 2014; Subauste et al., 1994). Mammalian expression plasmids included full-length human Nurr1 (residues 1–598) in pcDNA3.1 plasmid (de Vera et al., 2016) and full-length human RXRα (residues 1–462) in pCMV-Sport6 plasmid (Zhang et al., 2011c). To clone the RXRα ΔLBD construct (residues 1–226), site directed mutagenesis and PCR was used to insert a stop codon before the start of the LBD using the full-length RXRα expression plasmid the following primers: forward primer, CAGCAGCGCCTAAGAGGACATG; reverse primer, CATGTCCTCTTAGGCGCTGCTG. To clone the ΔNTD RXRα construct (residues 127–462), site directed mutagenesis and PCR was used to add a XhoI cut site and an ATG before at the end of the NTD using the following primers: forward primer, CCACCCCTCGAGAAACATGG; reverse primer, CCATGTTTCTCGAGGGGTGG—then restriction enzymes (XhoI and HindIII) were used to cut out the ΔNTD construct (DBD-hinge-LBD) for insertion using T4 ligase into pcDNA3.1 empty vector that had been linearized with XhoI and HindIII. To clone the RXRα LBD construct (200–462), Xhol was used to cut pcDNA3.1 and subsequently Gibson assembly was used to clone the LBD into the linearized vector using the gBlock sequence provided in Supplementary file 1.
 
-## Cell lines for mammalian cell culture
+### Cell lines for mammalian cell culture
 
 All cells were obtained from and authenticated by ATCC and determined to be mycoplasma free. HEK293T (#CRL-11268) and SK-N-BE(2)-C (#CRL-2268) cells were cultured according to ATCC guidelines at low passage number (less than 10 passages; typically passages 2–4). HEK293T cells were grown at 37°C and 5% CO2 in DEME (Gibco) supplemented with 10% fetal bovine serum (Gibco) and 100 units/mL of penicillin, 100 μg/mL of streptomycin, and 0.292 mg/mL of glutamine (Gibco) until 90–95% confluence in T-75 flasks prior to subculture or use. SK-N-BE(2)-C were grown at 37°C and 5% CO2 in a media containing 1:1 mixture of EMEM (ATCC) and F12 medium (Gibco) supplemented with 10% fetal bovine serum (Gibco) until 90–95% confluence in T-75 flasks prior to subculture or use.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Proteins were expressed in Escherichia coli BL21(DE3) cells in autoinduction ZY media (without NMR isotopes) or M9 minimal media (using 15NH4Cl for NMR isotopic labeling). For autoinduction expression, cells were grown for 5 hr at 37°C, then 18 hr at 22°C, then centrifuged for harvesting. For M9 expression, cells were grown at 37°C and induced with 1.0 mM isopropyl β-D-thiogalactoside at OD (600 nm) of 0.6, grown for an additional 18 hr at 22°C, and then centrifuged for harvesting. Cell pellets were lysed using sonication and proteins were purified using Ni-NTA affinity chromatography and gel filtration/SEC. TEV protease was used to cleave the 6xHis-tag for all experiments except protein used for TR-FRET. The purified proteins were verified by SDS-PAGE, then stored in a buffer consisting of 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, and 0.5 mM EDTA. All studies that used RXRα LBD protein used pooled SEC fractions for the apo-homodimeric form except for analytical SEC of the apo-tetrameric form.
 
-## Transcriptional reporter assays
+### Transcriptional reporter assays
 
 SK-N-BE(2)-C cells were seeded in 9.5 cm2 cell culture well (Corning) at 0.5 million for transfection using Lipofectamine 2000 (Thermo Fisher Scientific) and Opti-MEM with an empty vector control or full-length Nurr1 expression plasmid (1 μg), with or without full-length or different RXRα truncation constructs (1 μg), and 3xNBRE-luc (1 μg). HEK293T cells were seeded in 9.5 cm2 cell culture well (Corning) at 0.5 million for transfection using Lipofectamine 2000 (Thermo Fisher Scientific) and Opti-MEM with empty vector control or full-length RXRα expression plasmid (1 μg), and 3xDR1-luc (1 μg). After incubation for 16–20 hr, cells were transferred to white 384-well cell culture plates (Thermo Fisher Scientific) at 0.5 million cells/mL in 20 μL total volume/well. After a 4 hr incubation, cells were treated with 20 μL of vehicle control (DMSO) or 1 μM ligand. After a final 16–20 hr incubation, cells were harvested with 20 μL Britelite Plus (PerkinElmer), and luminescence was measured on a BioTek Synergy Neo multimode plate reader. The luminescence readouts were normalized to cells transfected with the empty vector (truncation construct assay) or cells treated with DMSO (assays with or without ligand treatment). Data were plotted using GraphPad Prism. In Figure 1b, statistical testing was performed and p-values were calculated in GraphPad Prism using the Brown-Forsythe and Welch multiple comparisons test (does not assume equal s.d. values among compared conditions) relative to full-length Nurr1 condition. In Figures 3b and 4d, statistical testing was performed and p-values were calculated in GraphPad Prism using the Brown-Forsythe and Welch multiple comparisons test (does not assume equal s.d. values among compared conditions) relative to DMSO control treated condition. Data are representative of two or more independent experiments (n=6 or 9 biological replicates).
 
-## TR-FRET coactivator interaction assay
+### TR-FRET coactivator interaction assay
 
 Assays were performed in 384-well black plates (Greiner) using 22.5 μL final well volume. Each well contained 4 nM 6xHis-RXRα LBD, 1 nM LanthaScreen Elite Tb-anti-His antibody (Thermo Fisher #PV5895), and 400 nM FITC-labeled PGC1α peptide in a buffer containing 20 mM potassium phosphate (pH 7.4), 50 mM KCl, 5 mM TCEP, and 0.005% Tween 20. Ligand stocks were prepared via serial dilution in DMSO and added to wells (10 µM final concentration) in triplicate. The plates were read using BioTek Synergy Neo multimode plate reader after incubation at 4°C for at least 2 hr. The Tb donor was excited at 340 nm, and its emission was measured at 495 nm; the emission of the acceptor FITC was measured at 520 nm. Data were plotted using GraphPad Prism as TR-FRET ratio (measurement at 520 nm/measurement at 495 nm) at a fixed ligand concentration (2–4 µM depending on the starting compound stock concentration). In Figure 4b, statistical testing was performed and p-values were calculated in GraphPad Prism using the Brown-Forsythe and Welch multiple comparisons test (does not assume equal s.d. values among compared conditions) relative to the DMSO control treated condition. Data are representative of two or more independent experiments (n=3 biological replicates) except for one RXRα ligand (IRX4204) where only one experiment (n=3 biological replicates) was performed.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 Experiments were performed using a MicroCal iTC200. All experiments were solvent-matched and contained 0.25% DMSO (ligand vehicle) final concentration. RXRα LBD homodimerization affinity was measured using a dimer dissociation dilution method (McPhail and Cooper, 1997) by titrating 1 mM RXRα LBD from the syringe into the ITC buffer in the sample cell at 25°C with a 60 s delay between the 2 μL injections using a mixing speed of 1200 rpm for a total of 20 injections. Data were fitted using the dissociation model in MicroCal Origin 6.0 (MicroCal User Manual, section 7.6). RXRα LBD homodimer affinity (KD) and enthalpy were determined to be 16.3 µM and –13.10 kcal/mol, respectively; this information was used in analysis of the interactions between Nurr1 LBD and ligand-bound RXRα LBD to approximate the dissociation step required for Nurr1 LBD to heterodimerize with RXRα LBD. ITC experiments of Nurr1 LBD to RXRα LBD (apo or ligand-bound) was performed by titrating Nurr1 LBD to RXRα LBD in a 10:1 ratio (500 or 1000 μM, and 50 or 100 µM, respectively) incubated with two equivalent of vehicle (DMSO) or ligand, and the run was performed using the same experimental design. Experiments were performed at 25°C in duplicate, except for two RXRα ligands (IRX4204 and PA452) where only one experiment was performed; and one experimental replicate for HX600 was performed at 15°C, which gave a similar KD value to the data collected at 25°C. NITPIC software (Keller et al., 2012) was used to calculate baselines, integrate curves, prepare experimental data for fitting in SEDPHAT (Brautigam et al., 2016), which was used to obtain binding affinities and thermodynamic parameter measurements using a homodimer competition model (A + B + C <-> AB + C <-> AC + B; competing B and C for A, where A and C is RXRα LBD monomer and B is Nurr1 LBD monomer). Final figures were exported using GUSSI (Brautigam, 2015). In Figure 5b, statistical testing was performed and p-values were calculated in GraphPad Prism using ordinary one-way ANOVA relative to DMSO control treated condition.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
-Two-dimensional [1H,15N]-TROSY-HSQC NMR experiments were performed at 298 K on a Bruker 700 MHz NMR instrument equipped with a QCI cryoprobe. Samples were prepared in a buffer containing 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, 0.5 mM EDTA, and 10% D2O. Experiments were collected using 200 μM 15N-labeled Nurr1 LBD with or without two molar equivalents of unlabeled RXRα LBD in the absence or presence of RXRα ligands. Data were processed and analyzed using NMRFx (Norris et al., 2016) using published NMR chemical shift assignments for the Nurr1 LBD (Michiels et al., 2010) that we validated and used previously (de Vera et al., 2019; Munoz-Tello et al., 2020). Relative Nurr1 LBD monomer populations were estimated by the relative peak intensities of the monomeric (Imonomer) and heterodimer (Iheterodimer) species using the following equation:Imonomer_population=ImonomerImonomer+Iheterodimer
+Two-dimensional [1H,15N]-TROSY-HSQC NMR experiments were performed at 298 K on a Bruker 700 MHz NMR instrument equipped with a QCI cryoprobe. Samples were prepared in a buffer containing 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, 0.5 mM EDTA, and 10% D2O. Experiments were collected using 200 μM 15N-labeled Nurr1 LBD with or without two molar equivalents of unlabeled RXRα LBD in the absence or presence of RXRα ligands. Data were processed and analyzed using NMRFx (Norris et al., 2016) using published NMR chemical shift assignments for the Nurr1 LBD (Michiels et al., 2010) that we validated and used previously (de Vera et al., 2019; Munoz-Tello et al., 2020). Relative Nurr1 LBD monomer populations were estimated by the relative peak intensities of the monomeric (Imonomer) and heterodimer (Iheterodimer) species using the following equation:
 
-NMR peak intensity errors for the monomeric (Emonomer) and heterodimeric (Eheterodimer) states were calculated in NMRFx and propagated in the Imonomer_population calculation using the following equation:Emonomer_population=(Imonomer(Iheterodimer+Imonomer)2)+(−Iheterodimer(Imonomer+Iheterodimer)2)
+$$
+I_{monomer_population}=\frac{I_{monomer}}{I_{monomer}+I_{heterodimer}}
+$$
+
+NMR peak intensity errors for the monomeric (Emonomer) and heterodimeric (Eheterodimer) states were calculated in NMRFx and propagated in the Imonomer_population calculation using the following equation:
+
+$$
+E_{monomer_population}=\sqrt{(\frac{I_{monomer}}{(I_{heterodimer}+I_{monomer})2})+(−\frac{I_{heterodimer}}{(I_{monomer}+I_{heterodimer})2})}
+$$
 
 Two replicates per condition were performed, except for two RXRα ligands (IRX4204 and PA452) where only one experiment was performed; average and s.d. calculations of the replicate Imonomer_population and Emonomer_population were performed in GraphPad Prism. In Figure 6c, statistical testing was performed and p-values were calculated in GraphPad Prism using ordinary one-way ANOVA relative to apo/DMSO control treated condition. We distinguished the two replicate measurements in the analysis, which were performed using different protein and ligand stock solutions, because one batch of samples (replicate 1) showed a more significant correlation to transcription than the other batch of samples.
 
-## NMR lineshape simulations
+### NMR lineshape simulations
 
 NMR lineshape analysis was performed using NMR LineShapeKin version 4 (Kovrigin, 2012) and MATLAB R2022a via NMRbox (Maciejewski et al., 2017). 1D NMR lineshapes for Nurr1 LBD residue T411 (1HN dimension), with or without two molar equivalents of RXRα LBD, were simulated using the U_L2 model (ligand binding to a receptor competing with ligand dimerization) where the ligand (RXRα LBD) exists as a homodimer that is dissociated into monomers upon binding to the receptor (15N-labeled Nurr1 LBD). Simulations were performed using several experimentally defined parameters: ITC-determined apo-RXRα LBD homodimer affinity (16 µM); difference in chemical shift in hertz (150 Hz) between the monomer and heterodimer NMR peaks for T411 measured in 2D [1H,15N]-TROSY HSQC NMR data (w0 for R = –150 Hz; w0 for RL = 0 Hz); a receptor concentration of 200 µM (Rtotal = 2e-3); and ligand added at ±2 molar equivalents (LRratio = 1e-3 and 2.0); and relative relaxation rates for the monomer and heterodimer estimated to give peak full width half height (FWHH) line widths in 2D [1H,15N]-TROSY HSQC NMR data (for R, FWHH = 20, R2=10; for RL, FWHH = 40, R2=20 Hz); otherwise default parameters were used.
 
-## Analytical SEC
+### Analytical SEC
 
 To prepare Nurr1-RXRα LBD heterodimer for analytical SEC analysis, purified Nurr1 LBD and RXRα LBD (each 700 μM in 2.5 mL) were incubated together at 4°C in their storage buffer containing 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, and 0.5 mM EDTA for 16 hr, injected (5 mL total) into HiLoad 16/600 Superdex 75 pg (Cytiva) connected to an AKTA FPLC system (GE Healthcare Life Science). Gel filtration was performed using the same buffer to purify Nurr1-RXRα LBD heterodimer for analysis, collecting 2 mL fraction to isolate heterodimer population into 15 samples of 0.5 mL (at a protein concentration of 300 μM) for analytical gel filtration. Additionally, purified Nurr1 LBD and RXRα LBD (pooled gel filtration fractions consisting of the homodimeric and homotetrameric species) were also used. Samples containing RXRα LBD (homodimer or heterodimer with Nurr1 LBD) were incubated with two molar equivalents of each ligand for 16 hr at 4°C before injection onto Superdex 75 Increase 10/300 GL (Cytiva) connected to the same AKTA FPLC system. The UV chromatograms were exported in CSV format and plotted using an in-house Jupyter notebook Python script using matplotlib and seaborn packages.
 
-## Correlation and other statistical analyses
+### Correlation and other statistical analyses
 
 Correlation plots were performed using GraphPad Prism to calculate Pearson (rp) and Spearman (rs) correlation coefficients and two-tailed p-values between two experimental measurements per plot. Statistical testing of control to variable conditions was performed using one-way ANOVA testing as detailed above. PCA was performed in GraphPad Prism; all experimentally determined data were used as variables (method = standardize, PCs selected based on parallel analysis at the 95% percentile level with 1000 simulations). p-Value statistical significance shorthand conforms to GraphPad Prism standards: n.s., p>0.05; *, p≤0.05; **, p≤0.01; ***, p≤0.001; and ****, p≤0.0001.

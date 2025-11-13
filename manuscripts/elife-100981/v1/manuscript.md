@@ -13,19 +13,19 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 University of Zurich, Department of Geography Zürich Switzerland
-2. https://ror.org/02crff812 University of Zurich, Department of Chemistry Zurich Switzerland
-3. https://ror.org/02crff812 University of Zurich, Department of Evolutionary Biology and Environmental Studies Zurich Switzerland
-4. https://ror.org/03qegss47 International Centre of Insect Physiology and Ecology (ICIPE), Plant Health Nairobi Kenya
-5. https://ror.org/009xwd568 University of the Free State, Department of Zoology and Entomology Bloemfontein South Africa
-6. https://ror.org/02w403504 South Eastern Kenya University, Department of Life Sciences Kitui Kenya
-7. https://ror.org/003vg9w96 Université Paris-Saclay, INRAE, AgroParisTech, UMR EcoSys Palaiseau France
+1. University of Zurich, Department of Geography Zürich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+2. University of Zurich, Department of Chemistry Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+3. University of Zurich, Department of Evolutionary Biology and Environmental Studies Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+4. International Centre of Insect Physiology and Ecology (ICIPE), Plant Health Nairobi Kenya ([ROR:03qegss47](https://ror.org/03qegss47))
+5. University of the Free State, Department of Zoology and Entomology Bloemfontein South Africa ([ROR:009xwd568](https://ror.org/009xwd568))
+6. South Eastern Kenya University, Department of Life Sciences Kitui Kenya ([ROR:02w403504](https://ror.org/02w403504))
+7. Université Paris-Saclay, INRAE, AgroParisTech, UMR EcoSys Palaiseau France ([ROR:003vg9w96](https://ror.org/003vg9w96))
 
 † Corresponding author
 
 ## Abstract
 
-Push-pull systems for sustainable pest management combine repellent stimuli from intercrops (‘push’) and attractive stimuli from border plants (‘pull’) to repel herbivorous insects from a main crop and attract the herbivores’ natural enemies. The most widespread implementation, intercropping the legume Desmodium with maize surrounded by border grass, reduces damage from the invasive fall armyworm (FAW) Spodoptera frugiperda . While initial research indicated that Desmodium volatiles can dampen the attraction of FAW to maize, a recent study recovered very low volatile emission from the commonly used D. intortum and found that the D. intortum headspace did not reduce FAW oviposition on maize (Erdei et al., 2024). Here, we detect volatiles from the headspace of two Desmodium species sampled within the activity window of FAW: D. intortum and the more recently adopted D. incanum ; and we present the behavior of gravid FAW moths in bioassays. We detected 25 volatiles from field-grown Desmodium , many in the headspaces of both species, including volatiles previously reported to repel lepidopteran herbivores. In cage oviposition assays, FAW moths preferred to oviposit on maize over Desmodium , but not on maize further from, versus closer to Desmodium plants that were inaccessible to the moths, but sharing headspace. In flight tunnel assays, moths approached the headspace of maize more than shared headspaces of maize and Desmodium , but pairwise differences were often insignificant. Thus, headspaces of Desmodium species include volatiles that could repel FAW moths, and gravid moths were generally more attracted to maize and its headspace than to either Desmodium species or mixed maize- Desmodium headspaces. However, our results suggest that direct effects of Desmodium volatiles on FAW behavior are insufficient to explain reduced FAW infestation of maize under push-pull cultivation.
+Push-pull systems for sustainable pest management combine repellent stimuli from intercrops (‘push’) and attractive stimuli from border plants (‘pull’) to repel herbivorous insects from a main crop and attract the herbivores’ natural enemies. The most widespread implementation, intercropping the legume Desmodium with maize surrounded by border grass, reduces damage from the invasive fall armyworm (FAW) Spodoptera frugiperda. While initial research indicated that Desmodium volatiles can dampen the attraction of FAW to maize, a recent study recovered very low volatile emission from the commonly used D. intortum and found that the D. intortum headspace did not reduce FAW oviposition on maize (Erdei et al., 2024). Here, we detect volatiles from the headspace of two Desmodium species sampled within the activity window of FAW: D. intortum and the more recently adopted D. incanum; and we present the behavior of gravid FAW moths in bioassays. We detected 25 volatiles from field-grown Desmodium, many in the headspaces of both species, including volatiles previously reported to repel lepidopteran herbivores. In cage oviposition assays, FAW moths preferred to oviposit on maize over Desmodium, but not on maize further from, versus closer to Desmodium plants that were inaccessible to the moths, but sharing headspace. In flight tunnel assays, moths approached the headspace of maize more than shared headspaces of maize and Desmodium, but pairwise differences were often insignificant. Thus, headspaces of Desmodium species include volatiles that could repel FAW moths, and gravid moths were generally more attracted to maize and its headspace than to either Desmodium species or mixed maize-Desmodium headspaces. However, our results suggest that direct effects of Desmodium volatiles on FAW behavior are insufficient to explain reduced FAW infestation of maize under push-pull cultivation.
 
 ## Introduction
 
@@ -47,29 +47,311 @@ The protection mechanisms of push-pull systems are assumed to be complex and to 
 
 ## Results
 
-## Desmodium volatile profiles
+### Desmodium volatile profiles
 
 A total of 25 substances were measured in at least 2/3 of field-collected samples from each of the Desmodium species, of which 11 occurred in both species. These substances include (E)-β-ocimene, (Z)–3-hexen-1-ol, (Z)–3-hexen-1-ol acetate, 1-octen-3-ol, 3-octanone, caryophyllene, (3E)–4,8-dimethyl-1,3,7-nonatriene (DMNT), germacrene D, indole, linalool, and (3E,7E)–4,8,12-Trimethyl-1,3,7,11-tridecatetraene (TMTT). Five peaks were not fully identifiable and were categorized based on mass spectra and relative retention times as a benzene derivative, a naphthalene derivative, a monoterpene, and two sesquiterpenes (for feature information, see Table 1). The sesquiterpene (E)-α-bergamotene was detected only in the headspace of D. incanum, while another unidentified sesquiterpene only occurred in D. intortum (see Figure 2 for a heatmap with means, Figure 3 for sample comparison, and Figure 2—figure supplement 1 for a per-sample heatmap). Of these substances, (Z)–1,5-octadien-3-ol, 1,2,3-trimethylbenzene, 3-pentanol, and hexyl acetate are reported here for the first time in connection with the chemical ecology of push-pull cropping systems (for more detailed information on each volatile substance, see Supplementary file 1). Germacrene D and 1-hexanol were not yet reported from Desmodium species but were reported in relation to mixed cropping for pest control (Lang et al., 2022). Germacrene D was detected in elevated levels in maize plants grown in soil from push-pull fields in comparison with those grown in soil from maize monocultures (Mutyambai et al., 2019), while germacrene D and 1-hexanol both were reported to be emitted from bean plants, Vicia faba, and used by the black bean aphid, Aphis fabae, for host detection (Pickett and Khan, 2016; Webster et al., 2008).
 
+**Table 1.**
+ Mass fragments of the unknown features detected by EI-MS in field D. intortum and / or D. incanum.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Retention index</th>
+      <th>Peaks with relative intensity &gt;5% [m/z (height in %)]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monoterpene</td>
+      <td>1229</td>
+      <td>93 (100.0), 121 (29.4), 77 (28.2), 120 (11.6), 105 (10.0), 80 (10.0), 136 (8.8), 107 (8.0), 91 (6.7), 92 (5.7)</td>
+    </tr>
+    <tr>
+      <td>Benzene derivative</td>
+      <td>1356</td>
+      <td>119 (100.0), 117 (54.6), 134 (30.8), 91 (18.9), 118 (18.7), 115 (17.9), 102 (12.4), 120 (8.6), 77 (7.2), 65 (6.0), 51 (5.5), 63 (5.1)</td>
+    </tr>
+    <tr>
+      <td>Sesquiterpene1</td>
+      <td>1477</td>
+      <td>119 (100.0), 105 (94.6), 161 (77.1), 93 (45.7), 91 (39.5), 81 (26.8), 92 (26.3), 120 (23.7), 41 (19.1), 77 (17.7), 79 (15.8), 133 (14.3), 121 (14.0), 204 (13.6), 106 (13.5), 107 (13.3), 55 (12.3), 117 (12.3), 162 (11.1), 43 (10.0), 136 (8.4), 69 (7.3), 115 (7.2), 65 (6.6), 53 (6.4), 94 (6.4), 131 (6.0), 39 (5.8), 67 (5.7)</td>
+    </tr>
+    <tr>
+      <td>Sesquiterpene2</td>
+      <td>1716</td>
+      <td>105 (100.0), 93 (77.0), 119 (49.5), 91 (39.9), 41 (39.1), 107 (32.9), 79 (32.5), 161 (30.8), 94 (30.6), 81 (29.3), 69 (28.4), 55 (24.7), 204 (24.2), 133 (23.2), 77 (22.8), 189 (18.1), 106 (17.4), 121 (17.4), 147 (13.1), 53 (13.1), 92 (12.7), 95 (11.3), 109 (10.5), 39 (10.1), 120 (8.9), 162 (8.5), 67 (8.5), 134 (8.3), 108 (8.3), 82 (8.1), 43 (7.8), 122 (7.6), 65 (7.1), 148 (6.9), 175 (6.6), 123 (6.6), 54 (6.3), 135 (6.0), 80 (6.0), 117 (5.6), 110 (5.3)</td>
+    </tr>
+    <tr>
+      <td>Sesquiterpene3</td>
+      <td>1762</td>
+      <td>81 (100.0), 93 (99.0), 107 (84.5), 91 (74.1), 79 (70.5), 80 (68.5), 55 (56.8), 105 (54.9), 43 (54.3), 95 (53.8), 119 (51.7), 108 (50.6), 41 (50.0), 94 (48.6), 109 (42.8), 67 (41.7), 133 (35.1), 77 (32.9), 70 (28.9), 121 (28.7), 147 (23.9), 189 (22.9), 53 (20.4), 106 (19.3), 59 (18.6), 122 (17.9), 39 (17.8), 123 (17.4), 92 (16.9), 57 (16.6), 134 (16.4), 65 (16.2), 71 (15.3), 161 (15.0), 120 (13.7), 56 (13.5), 175 (13.0), 82 (12.0), 113 (10.9), 78 (10.2), 204 (9.2), 148 (9.0), 117 (8.7), 42 (8.2), 135 (8.1), 149 (7.8), 83 (7.7), 66 (7.5), 68 (7.2), 85 (7.2), 132 (7.2), 126 (6.9), 124 (6.7), 162 (6.5), 96 (6.4), 69 (6.3), 131 (6.1), 97 (5.9), 63 (5.6), 110 (5.3), 111 (5.0), 136 (5.0)</td>
+    </tr>
+    <tr>
+      <td>Naphthalene derivative</td>
+      <td>1834</td>
+      <td>142 (100.0), 141 (81.3), 115 (34.7), 91 (20.4), 143 (11.3), 43 (11.3), 139 (10.9), 105 (8.8), 135 (7.7), 71 (7.3), 63 (5.6), 147 (5.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig2-v1.jpg)
+
+**Figure 2.:** Peak intensity can only be meaningfully compared within the same substance. The x-axis displays the species and their growth conditions (field or pot), and the y-axis shows the target substances in alphabetical order. The color indicates the mean of the log-10 transformed peak area of all samples with the substance present. The gray color indicates that a substance occurs in more than one, but less than 2/3 of the samples from the field. ‘Maize Infested’ refers to maize plants that were exposed to FAW eggs, as moths were allowed to oviposit on the plants two nights prior to volatile sampling. Sample sizes: Ambient Control Field = 4, D. incanum Field = 14, D. incanum Pot = 3, D. intortum Field = 11, D. intortum Pot = 5, Maize infested Pot = 4, Maize Pot = 4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The x-axis displays the species and their growth conditions (field or pot) and the y-axis shows the target substances in alphabetical order. The color indicates mean of the log-10 transformed peak area, whereby transparency indicates that no peak was found. ‘Maize Infested’ refers to maize plants that were exposed to FAW eggs, as moths were allowed to oviposit on the plants two nights prior to volatile sampling. Sample sizes: Ambient Control Field = 4, D. incanum Field = 14, D. incanum Pot = 3, D. intortum Field = 11, D. intortum Pot = 5, Maize infested Pot = 4, Maize Pot = 4.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig3-v1.jpg)
 
-**Figure 3.:** Desmodium spp. versus potted maize.(A) Principal component analysis plot based on the normalized peak areas of the 25 target substances. Sample sizes: Ambient Control Field = 4, D. incanum Field = 14, D. incanum Pot = 3, D. intortum Field = 11, D. intortum Pot = 5, Maize infested Pot = 4, Maize Pot = 4 (B) Loading plot of the projection of the variables on the first two dimensions. The x-axis displays PC1 (Dimension 1) and the y-axis shows PC2 (Dimension 2). The color indicates the cos2, whereby dark and long arrows indicate a better representation of a loading on these first two dimensions.
+**Figure 3.:** (A) Principal component analysis plot based on the normalized peak areas of the 25 target substances. Sample sizes: Ambient Control Field = 4, D. incanum Field = 14, D. incanum Pot = 3, D. intortum Field = 11, D. intortum Pot = 5, Maize infested Pot = 4, Maize Pot = 4 (B) Loading plot of the projection of the variables on the first two dimensions. The x-axis displays PC1 (Dimension 1) and the y-axis shows PC2 (Dimension 2). The color indicates the cos2, whereby dark and long arrows indicate a better representation of a loading on these first two dimensions.
 
-## Oviposition choice bioassays
+### Oviposition choice bioassays
 
 Oviposition choice bioassays were conducted in cages to determine the influence of Desmodium plants and their headspace on the oviposition behavior of FAW moths. A fraction of the potted Desmodium plants used in the oviposition assays was sampled for volatiles the night before the start of trials, and the composition of these samples was compared with the substances and features detected from Desmodium plants sampled in farmers’ fields. In the comparison between field Desmodium plants and potted bioassay plants that were sampled in a smaller number, the majority of substances showed a higher relative abundance in potted D. incanum (bioassay conditions), whereas in D. intortum, some substances detected in field samples occurred in higher concentrations in the potted plants, while others were not detected. Sixteen of the volatiles detected in Desmodium plants in farmers’ fields were also present in either uninfested or infested potted maize plants (see Figure 2). In direct contact treatments, FAW moths were allowed to oviposit directly on Desmodium plants within the cage, and in treatments labeled as ‘indirect’, moths could choose between two maize plants, whereby one was closer to a Desmodium plant placed immediately outside the cage and thus closer to the headspace of that Desmodium plant (see Figure 4). Except for these ‘indirect’ treatments, plants were separated by at least 50 cm within and between cages, and positions were randomized (see Materials and methods).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig4-v1.jpg)
+
+**Figure 4.:** (A) Setup of the control with two maize plants inside the cage. (B) Setup of the treatments with direct contact with one maize and one Desmodium plant inside the cage. (C) Setup of the treatments with indirect contact with two maize plants placed inside the cage and one Desmodium plant placed in proximity to one of the maize plants, but unreachable for the moths. (D) The boxplots display the relative number of eggs (light gray boxes) or egg batches (dark gray boxes) per position (x axis) and treatment (superordinate boxes). The lower and upper hinges correspond to the 25th and 75th percentiles, while the whiskers extend to the largest and smallest non-outlier values, respectively. Outliers are values outside a window of 1.5 x the interquartile range and are plotted individually. Desmodium is abbreviated with ‘Des’ and treatment is abbreviated with ‘treat’. See Table 2 for a model-based statistical analysis and Figure 4—figure supplement 1 for a breakdown of eggs per repetition and batch. Sample sizes (n, replicate units of a given treatment): Control = 21, D. incanum direct = 19, D. intortum direct = 20, D. incanum indirect = 19, D. intortum indirect = 20.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Variance of total egg count per repetition. The x-axis shows the sum of all eggs found in all positions within one repetition. The gray points display the total egg count per repetition, and the black diamonds show the mean value overall data points per treatment. (B) Box plot including individual datapoints of the egg batch size (egg number per batch) per location (x-axis) and per treatment (superordinate boxes). Desmodium is abbreviated with ‘Des’ and treatments are abbreviated with ‘treat’. Sample sizes: Control = 21, D. incanum direct = 19, D. intortum direct = 20, D. incanumin direct = 19, D. intortumin direct = 20.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Upper Line: Schematic drawing of the placement of the plants in the cages according to the treatments. The rectangle represents the cage, the plant in the beige pot represents maize and the plant in the red pot Desmodium. Lower Line: Photos of the experimental setup of three treatments: control (left), D. incanum direct (center), and D. intortumin direct (right).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** This greenhouse provided space for 15 cages in total, whereby three replicates of each treatment could be repeated per cycle. The plants display the placement of the plants in the replicates of the second cycle from 23rd to 26.05.2023. To minimize volatile interference of neighboring setups, the treatments were placed in groups next to each other (represented by letters) with a distance of at least one cage length in between, which corresponded to 60–100 cm. Due to space limitations, the cages of group H were placed slightly closer, with an approximate distance of 50 cm. The positions of the treatments were swapped between each cycle so that each treatment was conducted at each position once. In the treatments where Desmodium plants were placed outside the cages, the Desmodium plants were normally placed between the cages and additionally on the outside of the outermost cage of a group (as can be seen on the cages of G). However, as all treatments were photographed, in retrospect, several misplaced plants were noticed (see cage K2). Therefore, it must be considered that only conclusions about the influence of Desmodium volatiles in proximity versus those at a distance greater than 0.5 m can be made, and any volatiles reaching longer distances might have affected neighboring replications. Light gray squares = tables, dark gray squares = cages, yellow circle = maize plants, green circle = Desmodium plants. The red circle indicated the situation where a plant was misplaced and therefore was closer to the neighboring repetition.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** This greenhouse consisted of 10 cages in total, whereby two replicates of each treatment could be repeated per cycle. The plants display the placement of the plants in the cycle from 23rd to 26.05.2023. To minimize volatile interference of neighboring setups, the treatments were placed in groups next to each other (represented by letters) with the distance of at least one cage length in between, which corresponded to 60–100 cm. Due to space limitations on two tables, the cages of group E were placed slightly closer with an approximate distance of 50 cm. The positions of the treatments were swapped between each cycle, with all treatments being conducted in 4/5 positions. In the treatments where Desmodium plants were placed outside the cages, the Desmodium plants were normally positioned either between the cages or on the outer sides. However, as all treatments were photographed, in retrospect, several misplaced plants were noticed (see Figure 4—figure supplement 3 Figure of Greenhouse 1B, cage K2). Therefore, it must be considered that only conclusions about the influence of Desmodium volatiles in proximity versus those at a distance greater than 0.5 m can be made, and any volatile reaching longer distances might have affected neighboring replications. Light gray squares = tables, dark gray squares = cages, yellow circle = maize plants; green circle = Desmodium plants.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Fall armyworm eggs are small (<1mm), normally laid staggered in clusters and with hair-like scales on the surface, which complicates accurate egg counting (see picture A). Therefore, eggs were collected with sticky tape to separate the layers and spread all eggs out in one dimension (B). The egg batches were taped to white paper, taking care not to squash eggs, and photographed using a UV imaging system (Syngene, Cambridge, England) against UV light (312nm) coming from underneath the paper (C). A script for semiautomatic counts in ImageJ (Version1.54f, National Institutes of Health, USA) was developed and used for counting the exact number of eggs per picture (D).
+
+**Table 2.**
+ Mixed model applied for oviposition bioassays.On maize plant: Comparison of the laid eggs on the maize plants for all treatments with the following formula: RelEggNoMaize ∼ ContrvsTreat + IndvsDir + IncvsInt + Treatment + (1| Greenhouse) + (1| Group:CageNo) + (1| Start.Date) + (1| Rep).On the Desmodium plant: Comparison of the laid eggs on the Desmodium plants for all treatments with the following formula: RelEggNoDesmodium ∼ ContrvsTreat + IndvsDir + IncvsInt + Treatment + (1| Greenhouse) + (1| Group:CageNo) + (1| Start.Date) + (1| Rep).Descriptions of the terms: RelEggNoMaize & RelEggNoDesmodium = The dependent variable was determined by number of eggs laid on maize or Desmodium relative to the total number of eggs laid in one repetition. ContrvsTreat = All Desmodium treatments are compared with the control treatment. IndvsDir = The treatments with direct and indirect contact with Desmodium plants are compared. IncvsInt = D. incanum and D. intortum are compared against each other. Treatment = All treatments are compared against each other to detect effects which are not related to terms used before. Greenhouse = Treatments were carried out equally in two different greenhouses. Group:CageNo = Twenty-five cages were repeatedly used, whereby each cage could be unambiguously identified with the group and cage number. Start.date = Treatments were carried out at five different start dates. Rep = All repetitions of the control were inserted twice with inversion of the values of the left and right maize plants. Any effects of the single repetitions are displayed in this term.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">On Maize plant</th>
+    </tr>
+    <tr>
+      <th>Term</th>
+      <th>Sum Sq</th>
+      <th>Mean Sq</th>
+      <th>Num DF</th>
+      <th>DenDF</th>
+      <th>F value</th>
+      <th>PR (&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ContrvsTreat</td>
+      <td>1.0191</td>
+      <td>1.0191</td>
+      <td>1</td>
+      <td>111.09</td>
+      <td>11.1142</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>IndvsDir</td>
+      <td>0.8722</td>
+      <td>0.8722</td>
+      <td>1</td>
+      <td>111.09</td>
+      <td>9.5117</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>IncvsInt</td>
+      <td>0.0989</td>
+      <td>0.0989</td>
+      <td>1</td>
+      <td>112.10</td>
+      <td>1.0789</td>
+      <td>0.3012</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>0.0634</td>
+      <td>0.0634</td>
+      <td>1</td>
+      <td>111.40</td>
+      <td>0.6915</td>
+      <td>0.4074</td>
+    </tr>
+    <tr>
+      <td colspan="7">On Desmodium plant</td>
+    </tr>
+    <tr>
+      <td>Term</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>DenDF</td>
+      <td>F value</td>
+      <td>PR (&gt;F)</td>
+    </tr>
+    <tr>
+      <td>ContrvsTreat</td>
+      <td>0.3238</td>
+      <td>0.3238</td>
+      <td>1</td>
+      <td>111.27</td>
+      <td>5.3626</td>
+      <td>0.0224</td>
+    </tr>
+    <tr>
+      <td>IndvsDir</td>
+      <td>1.3604</td>
+      <td>1.3604</td>
+      <td>1</td>
+      <td>111.17</td>
+      <td>22.5287</td>
+      <td>6.20e-06</td>
+    </tr>
+    <tr>
+      <td>IncvsInt</td>
+      <td>0.0375</td>
+      <td>0.0375</td>
+      <td>1</td>
+      <td>112.61</td>
+      <td>0.6204</td>
+      <td>0.4325</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>0.0599</td>
+      <td>0.0599</td>
+      <td>1</td>
+      <td>111.61</td>
+      <td>0.9927</td>
+      <td>0.3213</td>
+    </tr>
+  </tbody>
+</table>
+
 The count of eggs and egg batches showed that fewer eggs were laid directly on Desmodium plants, with the egg count on maize plants being 7.9 or 6.8 times higher than on D. incanum or D. intortum, respectively, corresponding to a similar difference in the number of egg batches (Figure 4, Figure 4—figure supplement 1). A mixed model with egg counts on the maize plant as the observed variable and accounting for plant position detected a significant difference between the control (two maize plants, no neighboring Desmodium) and all other treatments (F(1) = 11.11, p=0.0012), as well as for the comparison of direct versus indirect contact with Desmodium plants (F(1) = 9.51, p=0.0026). However, no significant difference was found between the two Desmodium species (F(1) = 1.08, p=0.3012; see Table 2).
 
-## Dual-choice assays
+### Dual-choice assays
 
 Dual-choice assays were conducted to compare short-term effects of plant volatiles on the flight behavior of FAW moths. The setup permitted only low air flow relative to its total volume, and so the possible mixing of stimuli both across trials and within a trial is not well defined and is likely more complex than in most laboratory trials and more similar to field and other less controlled settings. Overpressure was used to ensure the simultaneous transfer of headspaces from both treatments at equal airflow rates and from opposite directions into the setup, and moth movement toward these opposing sources was interpreted as choice. See the description of the methods and materials as well as the no-choice setup, which addresses limitations of this choice setup.
 
 Two-thirds of the moths tested showed ten or fewer segment changes during the 5 min of each experiment. Across all treatments, at least 77% of the moths showed no movement in the last 2 min of the experiment or only little activity, with a maximum of two segment changes in the last 3 min of the experiment, which was interpreted to mean that they had made a decision within the 5-min time frame of the experiment. Overall, moths showed a reduction in segment changes over time, particularly for the comparison of maize vs. maize + D. intortum (see Figure 5). Across all treatments, a few individuals displayed high flight activity of up to 76 segment changes with no indication of decline over time.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig5-v1.jpg)
+
+**Figure 5.:** (A) Line plot displaying the number of segment changes per minute until the experiment ended after 5 min. The line width indicates the number of overlaying lines and the colors indicate the moth activity level: ‘Settled after 2 min’=No segment changes after 2 min. ‘Settled after 3 min’=No segment changes after 3 min. ‘Little Activity’=Moths showed max. 2 segment changes in the last 3 min of the experiment. ‘High Activity’=Moths showed higher activity with at least 6 segment changes in the last 3 min of the experiment. The mean of all repetitions is represented by the black dashed line. (B) Setup of the dual-choice assay for a Desmodium treatment comparing a maize plant (left) vs. a maize and a Desmodium plant (right). The moths are released through an opening in the center (at 0 cm) and observed for 5 min. (C) Violin plot displaying the duration of stays in each segment in treatments with D. incanum and D. intortum (comparison of maize and maize + Desmodium) with the inclusion of the individual data points per repetition (black) and their mean (red): The x-axis displays the location in the dual-choice assay and the y-axis the total duration that each moth stayed in each segment. Below the x-axis, the last position of the moths that were considered settled (settled after <3 min or little activity) is displayed. See Table 3 for the statistical analysis and Figure 5—figure supplement 1 for the set-up and segmentation of the dual-choice assay setup. Sample sizes (n, replicate units of a given treatment: Control = 18, D. incanum = 18, D. intortum = 19).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The photograph was taken in the light, while the experiments were conducted in the dark, using only red light. Yellow marks: Air exhaust at the center of the dual-choice assay covered with a fine-meshed net. Red marks: Two red lightbulbs placed symmetrically approximately 20 cm above the upper rim of the dual-choice assay. White marks: Dual-choice assay body (30 x 30 x 100 cm) and conceptual separation of the length in five segments of 20 cm. Green marks: Air transfer from the top of the plant bags via polytetrafluoroethylene (PTFE) tubing to the dual-choice assay. Blue marks: Air inlet for charcoal-filtered air provided by volatile collection kits via PTFE tubing.
+
+**Table 3.**
+ Mixed model applied for dual-choice assay.Side of Maize: Comparison of the duration of stay in the compartment of the maize plants for all treatments with the following formula: y_logitMaize ∼ (MaizevsDes + Treatment) + PosMaize + (1|Date) + (1|Rep).Side of Desmodium: Comparison of the duration of stay in the compartment of the Desmodium treatment for all treatments with the following formula: y_logitDesmodium ∼ (MaizevsDes + Treatment) + PosMaize + (1|Date) + (1|Rep).Descriptions of the terms: y_logitMaize and y_logitDesmodium = The dependent variable was determined by the logit-transformed accumulated duration of the stays in minutes in the two compartments (10 cm - 50 cm) closer to the maize plant or a maize plant combined with a Desmodium plant. ContrvsTreat = The D. incanum and D. intortum treatments are both compared with the control treatment. Treatment = The two Desmodium species are compared with each other. PosMaize = The position of the maize plant and the maize + Desmodium treatment were equally placed on the left or right side of the dual-choice assay. Rep = All repetitions of the control were inserted twice with inversion of the values of the left and right maize plants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Side of Maize</th>
+    </tr>
+    <tr>
+      <th>Term</th>
+      <th>Sum Sq</th>
+      <th>Mean Sq</th>
+      <th>Num DF</th>
+      <th>DenDF</th>
+      <th>F value</th>
+      <th>PR (&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ContrvsTreat</td>
+      <td>3.2055</td>
+      <td>3.2055</td>
+      <td>1</td>
+      <td>67</td>
+      <td>0.2410</td>
+      <td>0.6251</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>16.8770</td>
+      <td>16.8770</td>
+      <td>1</td>
+      <td>67</td>
+      <td>1.2687</td>
+      <td>0.2640</td>
+    </tr>
+    <tr>
+      <td>PosMaize</td>
+      <td>0.4577</td>
+      <td>0.4577</td>
+      <td>1</td>
+      <td>67</td>
+      <td>0.0344</td>
+      <td>0.8534</td>
+    </tr>
+    <tr>
+      <td colspan="7">Side of Desmodium</td>
+    </tr>
+    <tr>
+      <td>Term</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>DenDF</td>
+      <td>F value</td>
+      <td>PR (&gt;F)</td>
+    </tr>
+    <tr>
+      <td>ContrvsTreat</td>
+      <td>0.8454</td>
+      <td>0.8454</td>
+      <td>1</td>
+      <td>66.777</td>
+      <td>0.0618</td>
+      <td>0.8044</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>13.2919</td>
+      <td>13.2919</td>
+      <td>1</td>
+      <td>64.002</td>
+      <td>0.9719</td>
+      <td>0.3279</td>
+    </tr>
+    <tr>
+      <td>PosMaize</td>
+      <td>6.5060</td>
+      <td>6.5060</td>
+      <td>1</td>
+      <td>48.989</td>
+      <td>0.4757</td>
+      <td>0.4936</td>
+    </tr>
+  </tbody>
+</table>
+
 No significant effects were detected when comparing the stays in the maize segments versus the Desmodium segments across the treatments using a mixed model (see Table 3). However, when comparing maize alone to maize with D. intortum, FAW moths tended to prefer the D. intortum treatment, with 2.5 times more individuals settling in that area and spending, on average, twice as long there. In the comparison between maize and maize with D. incanum, only minor differences were observed in the mean residence time (less than 1 min); however, twice as many moths settled on the D. incanum side (see Figure 5). Fourteen of 19 moths exposed to airflow from maize vs. maize + D. intortum settled in a segment of the dual-choice assay within the first 3 min of the experiment, a larger proportion than in the maize vs. maize or the maize vs. maize + D. incanum treatment.
 
-## No-choice assays
+### No-choice assays
 
 No-choice assays were conducted to assess the short-term effects of plant volatiles on the flight behavior of FAW moths in a setup with higher airflow and conducted in a blocked manner so that no mixing could occur between treatments (see Materials and methods). Treatments included a no-plant control as well as maize or maize + Desmodium for both Desmodium species. Repetitions in which moths exhibited movement in the final 2 min of the trial were considered non-decisive and excluded.
 
@@ -77,7 +359,88 @@ The initial distance, representing the first movement bigger than 5 cm made by a
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/100981/elife-100981-fig6-v1.jpg)
 
-**Figure 6.:** Desmodium.(A) Setup of the no-choice assay for a Desmodium treatment. The moths are released through an opening in the right side (at 0 cm), and their movement is observed for 5 min. The plant odor was released from the outlet at 100 cm, while the moths were allowed to move freely up to 115 cm. All repetitions that showed activity in the last 2 min were excluded, as they are considered to have made no clear decision. (B) Violin plot with the inclusion of the individual data points per repetition displaying the distance flown in the first, initial movement and the final location that was considered the finally chosen position. The x-axis displays the treatment and the y-axis the total distance that a moth moved or flew. See Table 4 for the statistical analysis. The sample sizes corresponded to 19–20 for all samples, whereby all repetitions with activity in the last 2 min of the experiment were removed. Remaining sample sizes (n, replicate units of a given treatment): Control = 17, Maize = 17, Maize + D. incanum = 16, Maize + D. intortum = 17.
+**Figure 6.:** (A) Setup of the no-choice assay for a Desmodium treatment. The moths are released through an opening in the right side (at 0 cm), and their movement is observed for 5 min. The plant odor was released from the outlet at 100 cm, while the moths were allowed to move freely up to 115 cm. All repetitions that showed activity in the last 2 min were excluded, as they are considered to have made no clear decision. (B) Violin plot with the inclusion of the individual data points per repetition displaying the distance flown in the first, initial movement and the final location that was considered the finally chosen position. The x-axis displays the treatment and the y-axis the total distance that a moth moved or flew. See Table 4 for the statistical analysis. The sample sizes corresponded to 19–20 for all samples, whereby all repetitions with activity in the last 2 min of the experiment were removed. Remaining sample sizes (n, replicate units of a given treatment): Control = 17, Maize = 17, Maize + D. incanum = 16, Maize + D. intortum = 17.
+
+**Table 4.**
+ Mixed model applied for no-choice bioassays.Initial Distance: Comparison of the distance flown in the first movement bigger than 5 cm with the following formula: InitialDistance ∼ ContrvsTreat + MaizevsDes + Treatment + (1|Date) + (1|RepNo).Landing Distance: Comparison of the landing distance of the moths that showed no movement for the last 2 min of the experiment with the following formula: LandingDistance ∼ ContrvsTreat + MaizevsDes + Treatment + (1|Date) + (1|RepNo).Descriptions of the terms: InitialDistance = Distance flown of a moth in the first movement bigger than 5 cm from the release point. LandingDistance = Final landing distance of a moth after the last movement. All repetitions with movements in the last 2 min of the experiment were considered as not decisive and excluded from the statistics. ContrvsTreat = All treatments including plants are compared to a control treatment with only an empty bag. MaizevsDes = All Desmodium treatments (maize + Desmodium plant) are compared with the maize (alone) treatment. Date = Date the experiment was conducted. RepNo = Order in which the repetitions were measured. Treatment = All treatments are compared against each other to detect effects which are not related to terms used before.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Initial Distance</th>
+    </tr>
+    <tr>
+      <th>Term</th>
+      <th>Sum Sq</th>
+      <th>Mean Sq</th>
+      <th>Num DF</th>
+      <th>F value</th>
+      <th>PR (&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ContrvsTreat</td>
+      <td>0.46</td>
+      <td>0.46</td>
+      <td>1</td>
+      <td>0.0005</td>
+      <td>0.9867</td>
+    </tr>
+    <tr>
+      <td>MaizevsDes</td>
+      <td>1161.3</td>
+      <td>1161.3</td>
+      <td>1</td>
+      <td>1.3287</td>
+      <td>0.4949</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>155.7</td>
+      <td>155.7</td>
+      <td>1</td>
+      <td>0.1781</td>
+      <td>0.7716</td>
+    </tr>
+    <tr>
+      <td colspan="6">Landing Distance</td>
+    </tr>
+    <tr>
+      <td>Term</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>F value</td>
+      <td>PR (&gt;F)</td>
+    </tr>
+    <tr>
+      <td>ContrvsTreat</td>
+      <td>11.1</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td>0.0085</td>
+      <td>0.9270</td>
+    </tr>
+    <tr>
+      <td>MaizevsDes</td>
+      <td>12771.6</td>
+      <td>12771.6</td>
+      <td>1</td>
+      <td>9.7598</td>
+      <td>0.0028</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>1450.2</td>
+      <td>1450.2</td>
+      <td>1</td>
+      <td>1.1082</td>
+      <td>0.2976</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -89,7 +452,7 @@ Furthermore, all assays were performed in a risk area for malaria and other mosq
 
 We conclude that Desmodium plants in push-pull cultivation emit volatiles that have the potential to repel FAW (and to attract their natural enemies), but our bioassays provide only weak support for the hypothesis that these volatiles repel FAW from maize. While (perhaps subtler) effects of the Desmodium headspace might be more reliably detected using more refined experimental setups, our mixed support of this hypothesis is in line with the reports in literature thus far (Figure 1). We suggest that other features of the maize-Desmodium-border grass push-pull system, including the influence of border grasses as well as below-ground interactions and other traits of Desmodium, are important for protecting maize from FAW moths and their larvae. We furthermore call for field or semi-field bioassays that better capture the choice of moths exposed to push-pull versus non-push-pull fields, in contrast to individual headspace environments presented out of context, or maize plants closer to vs. further from Desmodium plants in pots.
 
-## Emission of volatiles implicated in push-pull by Desmodium intercrops
+### Emission of volatiles implicated in push-pull by Desmodium intercrops
 
 The headspace of Desmodium plants was dynamically sampled on Tenax TA adsorbent directly in push-pull fields, as well as from potted plants used for oviposition bioassays, overnight. Due to limited resources and time, we chose to focus on the volatile profiles of field-grown Desmodium rather than field-grown maize or intercropped edible legumes, as this aligned best with our aim of assessing the role of Desmodium volatiles. Additionally, we opted not to use individual volatile substances in bioassays because the conflicting evidence in the literature made it difficult to select meaningful blends, and testing plant emissions first was crucial for ensuring ecological relevance in our experiments. However, we recommend that future studies sample the volatiles of all plants commonly used in newly developed push-pull systems, including the edible legumes that are now more often intercropped, allowing for a contextualized comparison of volatile profiles.
 
@@ -97,7 +460,7 @@ We excluded all substances found in fewer than two-thirds of the field samples f
 
 Despite these caveats, our samples yielded a variety of volatiles with high signal:noise ratios, of which 13 had been previously reported from sampling the headspace of potted D. intortum plants onto Porapak Q for sampling durations of 24 hr or 48 hr followed by solvent extraction and GC-MS analysis (Sobhy et al., 2022; Peter et al., 2023). In contrast, Erdei et al., 2024 detected fewer volatiles in lower relative abundance from D. intortum using solid-phase microextraction (SPME) and a saturation time of 18–24 hr to sample intact, mechanically damaged, or herbivory-induced potted plants or intact plants in Tanzanian and Ugandan fields. Our study is the only one of these that limited the window of sampling strictly to the nighttime hours corresponding to the reported activity window for the FAW (Sparks, 1979). In pretests, no shorter activity window could be determined as the moths still showed mating behavior and potential oviposition at around midnight (see Appendix 1). Differences may be explained in part by different sampling techniques, as the sensitivity of SPME can be lower in comparison to dynamic headspace collection (Tholl et al., 2006). To our knowledge, the volatile profile of D. incanum was not previously reported. In conclusion, our data are consistent with the hypothesis that D. intortum and D. incanum emit volatiles, many of which have been previously associated with push-pull effects, the repellence of lepidopteran herbivores or the attraction of their natural enemies.
 
-## Oviposition choice bioassays
+### Oviposition choice bioassays
 
 FAW oviposition behavior was observed over three nights in two treatments per Desmodium species. In one treatment, FAW moths had direct contact with Desmodium plants, and in another, they had only indirect contact through aerial exposure to plants outside of, but directly next to a mesh cage. Moths always had direct contact with maize plants.
 
@@ -111,11 +474,11 @@ In our bioassays, no significant effect could be seen in the treatments where mo
 
 In conclusion, we confirm a preference of FAW moths to oviposit on maize rather than on D. intortum or D. incanum when directly offered plants. However, no significant influence of the Desmodium headspace was observed. It is not to be expected that herbivores use all potential host plants equally, and preferences among host plants or for host over non-host plants can be based on different plant traits. Ovipositing FAW moths may also prefer maize over Desmodium due to other traits such as the surface texture, as proposed in the findings from Erdei et al., 2024 that silicate trichomes on D. intortum pose a danger to FAW larvae; or chemical repellents directly on the leaf surface. Belowground interactions or priming between Desmodium and maize plants co-planted in push-pull fields may also change moths’ preference for maize, an effect which could not have been observed with our experimental design, but might explain inconsistencies with findings from Sobhy et al., 2022.
 
-## Dual-choice and no-choice assays
+### Dual-choice and no-choice assays
 
 The short-term flight behavior of FAW moths was tested in a dual-choice assay setup where headspaces of a maize plant vs. maize + Desmodium were compared against each other, and a no-choice assay with a single headspace source upwind of the moth. Flight behavior showed large variation among the individual moths, but three-quarters of the moths had settled after at least 3 min or showed few changes in the last 2 min of each experiment. Although flow rates were measured at the incoming tubing of the dual-choice setup and the exhaust was placed above the center (where the moth was also introduced), this experimental setup allowed no control over the exact flows in the flight arena and the individual flows were low compared to the total arena volume. Therefore, the exact mixing of the opposing treatments is unknown, and cross-contamination between treatments was also possible. Furthermore, moths may behave differently over longer times or when given more space to maneuver, as under normal field conditions. The quarter of the moths that showed high activity indicates the difficulty of quantifying the responses of such active fliers. Interestingly, a larger proportion of moths settled after 2 min when presented with maize versus maize + D. intortum in the dual-choice assay, rather than continuing to fly. While some tendencies were apparent in this setup, none of the treatments showed any significant preference. In contrast, a significant repellent effect of Desmodium added to maize, versus maize alone, was observed in the no-choice assay as judged by final landing position. The combination of maize + D. incanum showed a greater repellent effect than maize + D. intortum. Similar repellence of moths by D. intortum headspace with or without the addition of maize was observed in no-choice assays reported in the literature when the total distance flown upwind at the end of the experiment was used as a metric (Sobhy et al., 2022; Peter et al., 2023).
 
-## Conclusion
+### Conclusion
 
 Several field studies have described positive effects of push-pull systems with the companion crops D. intortum or D. incanum on maize yield (Midega et al., 2015; Midega et al., 2018; Cheruiyot et al., 2021). Here, we show that 17–19 volatile substances, including plant volatiles previously indicated to repel lepidopteran herbivores or attract their natural enemies, were found in the headspaces of both companion crops D. intortum and D. incanum within the temporal activity window of FAW moths. However, we did not observe a repellent effect of Desmodium plant headspaces on FAW moths in most bioassays. FAW moths clearly preferred to oviposit on maize over D. intortum or D. incanum plants. Our results thus indicate that moths prefer maize over Desmodium and that this may be influenced by short-range mechanisms such as an unfavorable leaf surface of Desmodium. However, the main interest in the context of push-pull is how Desmodium contributes to protecting co-planted maize. A reduction of FAW damage on maize under push-pull cultivation has been demonstrated in multiple studies (Midega et al., 2018; Hailu et al., 2018; Cheruiyot et al., 2021; Yeboah et al., 2021; Mutyambai et al., 2022). Based on the literature, effects of border crop volatiles may be important for reducing FAW damage in push-pull fields, in combination with the attraction of parasitoids by Desmodium volatiles and unfavorable host qualities of Desmodium plants for FAW (Figure 1). Furthermore, the Desmodium intercrop may be equally or more important for weed suppression, soil fertility, and improving maize plant health and vigor as for volatile-mediated repellence of FAW in the push-pull system. For example, recent studies showed that planting maize in soil collected from push-pull fields or co-planting it with silverleaf Desmodium uncinatum changed the composition of volatiles and defensive non-volatile substances in maize plants (Mutyambai et al., 2024; Bass et al., 2024). Future studies wishing to test the importance of Desmodium volatiles in the system could best resolve this question by adding and subtracting Desmodium headspace, or manipulating moths’ direct access to Desmodium plants, in experimental push-pull and control fields, thus ensuring relevant context while avoiding experimental artifacts.
 
@@ -123,60 +486,251 @@ Several field studies have described positive effects of push-pull systems with 
 
 All volatile sampling and bioassays were performed with two Desmodium species, Desmodium intortum (greenleaf Desmodium) and Desmodium incanum (often referred to as African Desmodium by the push-pull farmers in Western Kenya), referred to in the methods section collectively as Desmodium for simplicity. All raw data and code used for the statistical analyses can be found on Zenodo (CERN, Geneva, Switzerland, https://doi.org/10.5281/zenodo.11633889) and GitHub (copy archived at Odermatt, 2025).
 
-## Pretest moth activity window
+### Pretest moth activity window
 
 The determination of the activity window of the FAW was relevant for the choice of the duration of the volatile sampling. The FAW is reported to be nocturnal (Sparks, 1979), without reports of a more precise activity window. For a first cycle, two single maize leaves of the landrace ’Jowi white’ were placed in wooden cages with meshed side walls (100 x 60 x 60 cm) in high cylindrical glasses filled with water, but sealed with a piece of cotton to prevent moths from entering the glasses. Moths (3–4 days old) were released in pairs of one female and one male in 10 different cages (resulting in 20 moths in total) and observed from 7 pm to 11:30 pm over two consecutive nights. The moths were re-collected in falcon tubes in the morning after the first night, sealed with a piece of cotton to allow air circulation and stored at a temperature of approximately 25 °C until they were released in the same combinations on the following evening. For the second night, fresh maize leaves were provided for the moths to oviposit. For a second cycle, potted maize plants with multiple leaves of the landrace ’Jowi white’ were placed inside the wooden cages with a piece of cotton soaked with water. Three female and two male moths of different ages were placed each in three cages (resulting in 15 moths in total) and observed from 6 pm - 1 am in two consecutive nights. During the daytime, the moths and the plant were left unaltered in the cage.
 
-## Headspace sampling
+### Headspace sampling
 
 We chose to focus on the volatile profiles of field-grown Desmodium rather than field-grown maize or intercropped edible legumes. This decision was driven by the relative scarcity of literature on the volatile profiles of Desmodium plants in real-world conditions of push-pull fields. To our knowledge, only one study has attempted to measure the volatiles of D. intortum Erdei et al., 2024, and no studies have measured volatiles of D. incanum in fields. Headspace samples of Desmodium were collected from plants in push-pull fields of local smallholder farmers near Mbita in the counties Homa Bay and Siaya, coordinates determined with WGS84 coordinate system (latitude, longitude): D. incanum = (–0.382096, 34.175487), (–0.4298279, 34.207891), (0.189957, 34.36072), D. intortum = (–0.382096, 34.175487), (–0.6302736, 34.494595), (–0.551479, 34.314673). Desmodium headspace samples were collected in three different push-pull fields in May and June 2023 during the long rainy season, selecting four representative and healthy plants per field. As is becoming more common, some of the push-pull fields were mixed with vegetables such as kale or cowpeas. Headspace collections were also performed from potted Desmodium plants, as well as from healthy and infested potted maize plants on the research campus. Five 3-week-old maize plants, later labeled as ‘infested’, were exposed in two cages, each with three female and two male moths, for two nights prior to headspace sampling, which resulted in 1–10 batches per plant. Potted plants were placed in a greenhouse with a glass roof and two glass walls, in which air was able to circulate through netted walls on the opposing longer walls of the greenhouse.
 
 As an adsorbent, commercially available Tenax TA glass tubes (containing 150 mg adsorbent, 35–60 mesh, Markes International Ltd, England or 186 mg adsorbent, 60–80 mesh, Merck, Germany) were used. A handful of leaves was enclosed in a roasting bag (Sainsbury’s, London, UK), which was heated to 200 °C for at least 1 hr to clean the bag, then cooled to room temperature. The inlet tubing pushed 500 mL/min charcoal-filtered air into the bags from the lower bag rim, while the Tenax TA tube was connected to an air outlet tubing through a small hole at the top of the bag. Airflows were regulated by PYE Volatile Collection Kits (B. J. Pye, Kings Walden, UK) as described in Steen et al., 2019. Volatiles were accumulated on the adsorbent by aspirating the air at 200 mL/min (+/-40 mL/min) for 11.75 h (+/-30 min) overnight from 7 pm until 6.45 am on the following day. Under the same conditions, four ambient controls were sampled with an empty roasting bag on two fields with each Desmodium species. Additionally, a Tenax TA storage control was stored with all tubes, but never taken to the fields, and analyzed to check for contamination.
 
-## TD-GC-MS measurement
+#### TD-GC-MS measurement
 
 All samples were measured on a TD-GC-MS instrument (Thermal Desorption – Gas Chromatography – Mass Spectrometry) from Shimadzu (TD30-QP2020NX, Kyoto, Japan). The Tenax TA tubes were desorbed for 15 min at 220 °C under 80 mL/min nitrogen flow. Volatiles were trapped on a Tenax cooling trap at –20 °C and after desorption was completed, the cooling trap was heated rapidly to 230 °C. The sample was injected with a split ratio of 1:5 and separated on a Rtx-Wax column (30 m, 0.25 mmID, 0.25 μm, Restek Corporation, USA) with the following 35 min oven program: holding at 40 °C for 2 min, heating to 150 °C with 10 °C/min, holding at 150 °C for 2 min, heating to 190 °C with 3 °C/min, heating to 230 °C with 10 °C/min and holding at 230 °C for 3 min. Mass fragments from 33 m/z to 400 m/z resulting from electron ionization at 70 eV were recorded with a scan rate of 5 Hz at an ion source temperature of 230 °C from 3 to 30 min.
 
-## Feature detection
+#### Feature detection
 
 A feature list was generated in MZmine (Version 3.9.0, Schmid et al., 2023) from all substances that occurred in at least one-third of the field samples of either Desmodium species and in less than 4/5 of the combined control samples (ambient controls and storage control). Features were numbered and considered as unidentified if there was no corresponding reference substance. After removal of contaminants, the features were added to an existing target list that was composed with commercially available plant volatiles that can be mainly classified as terpenoids and benzenoids, which as a whole contain a large variety of functional groups such as alcohols, aldehydes, ketones, and esters. Additionally, the existing list included four green leaf volatiles ((E)–2-hexen-1-ol acetate, (E)–2-hexenal, (Z)–3-hexen-1-ol, (Z)–3-hexen-1-ol acetate) and a selection of more specific substances reported in push-pull fields such as the norsesquiterpene (E)–4,8–dimethyl–1,3,7-nonatriene (DMNT) and the norditerpene (E,E)–4,8,12-trimethyl-1,3,7,11-tridecatetraene (TMTT). The peak integration for all substances and features was manually checked for all control samples (ambient and storage control) using the LabSolutions Insight GCMS software (Shimadzu corporation, Kyoto, Japan). Peaks for all targets that occurred in at least 1/2 of the Desmodium field samples and in no more than 3/5 of controls were also manually checked for all samples. Finally, all targets that occurred in at least 2/3 of the field samples of D. intortum or D. incanum and in no more than 3/5 of the controls were considered as present. In Table 1 the electron impact ionization (EI)-MS data of the present, unidentified features are displayed, and in Table 5 the origin of the reference standards used to identify the target hits can be found.
 
-## Oviposition choice bioassays
+**Table 5.**
+ Origin of the reference standards of all identified target substances present in field D. intortum and / or D. incanum.RI = Retention index, TMTT = (3E,7E)–4,8,12-Trimethyltrideca-1,3,7,11-tetraene, DMNT = (E)–4,8-Dimethylnona-1,3,7-triene.
 
-## Plants
+
+<table>
+  <thead>
+    <tr>
+      <th>Substance Name</th>
+      <th>Distributor</th>
+      <th>Article No</th>
+      <th>CAS No</th>
+      <th>Quantifier [m/z]</th>
+      <th>Qualifiers [m/z (height in %)]</th>
+      <th>RI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(E)–2-Hexenal</td>
+      <td>Aldrich</td>
+      <td>132659–25 g</td>
+      <td>6728-26-3</td>
+      <td>41</td>
+      <td>55.00 (82.67) 69.00 (72.87)</td>
+      <td>1215</td>
+    </tr>
+    <tr>
+      <td>(E)-α-Bergamotene</td>
+      <td>isobionics</td>
+      <td>-</td>
+      <td>-</td>
+      <td>119</td>
+      <td>93.00 (95.07) 91.00 (38.14)</td>
+      <td>1594</td>
+    </tr>
+    <tr>
+      <td>(E)-β-Ocimene</td>
+      <td>Sigma-Aldrich</td>
+      <td>W353901-SAMPLE</td>
+      <td>13877-91-3</td>
+      <td>93</td>
+      <td>91.00 (47.39) 79.00 (45.35)</td>
+      <td>1248</td>
+    </tr>
+    <tr>
+      <td>(Z)–1,5-octadien-3-ol</td>
+      <td>Givaudan</td>
+      <td>-</td>
+      <td>-</td>
+      <td>57</td>
+      <td>70.00 (45.40) 55.00 (34.19)</td>
+      <td>1473</td>
+    </tr>
+    <tr>
+      <td>(Z)–3-Hexen-1-ol</td>
+      <td>Phyto Technology Laboratories</td>
+      <td>H4000</td>
+      <td>928-96-1</td>
+      <td>67</td>
+      <td>82.00 (46.66) 55.00 (42.27)</td>
+      <td>1378</td>
+    </tr>
+    <tr>
+      <td>(Z)- 3-Hexen-1-ol, acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>74597–1 ml</td>
+      <td>3681-71-8</td>
+      <td>43</td>
+      <td>67.00 (98.54) 82.00 (52.15)</td>
+      <td>1317</td>
+    </tr>
+    <tr>
+      <td>1-Hexanol</td>
+      <td>Fluka</td>
+      <td>52830</td>
+      <td>111-27-3</td>
+      <td>56</td>
+      <td>55.00 (47.00) 69.00 (28.00)</td>
+      <td>1346</td>
+    </tr>
+    <tr>
+      <td>1-Octen-3-ol</td>
+      <td>Sigma-Aldrich</td>
+      <td>05284–25 g</td>
+      <td>3391-86-4</td>
+      <td>57</td>
+      <td>43.00 (24.99) 72.00 (16.88)</td>
+      <td>1446</td>
+    </tr>
+    <tr>
+      <td>1,2,3-Trimethyl-benzene</td>
+      <td>Aldrich</td>
+      <td>T73202-5mL</td>
+      <td>526-73-8</td>
+      <td>105</td>
+      <td>120.00 (50.09) 77.00 (11.00)</td>
+      <td>1333</td>
+    </tr>
+    <tr>
+      <td>3-Octanone</td>
+      <td>Sigma-Aldrich</td>
+      <td>136913–25 g</td>
+      <td>106-68-3</td>
+      <td>57</td>
+      <td>71.00 (70.00) 99.00 (67.00)</td>
+      <td>1255</td>
+    </tr>
+    <tr>
+      <td>3-Pentanol</td>
+      <td>Aldrich</td>
+      <td>P8025</td>
+      <td>584-02-1</td>
+      <td>59</td>
+      <td>41.00 (19.00) 58.00 (9.00)</td>
+      <td>1102</td>
+    </tr>
+    <tr>
+      <td>α\begin{document}$  \alpha$\end{document}-Humulene</td>
+      <td>PhytoLab</td>
+      <td>83351–100 mg</td>
+      <td>6753-98-6</td>
+      <td>93</td>
+      <td>80.00 (32.44) 121.00 (26.27)</td>
+      <td>1679</td>
+    </tr>
+    <tr>
+      <td>β\begin{document}$  \beta$\end{document}-Caryophyllene</td>
+      <td>Sigma-Aldrich</td>
+      <td>22075–5 ml-F</td>
+      <td>87-44-5</td>
+      <td>93</td>
+      <td>133.00 (91.17) 69.00 (87.31)</td>
+      <td>1606</td>
+    </tr>
+    <tr>
+      <td>DMNT</td>
+      <td>trc</td>
+      <td>TRC-D475810</td>
+      <td>19945-61-0</td>
+      <td>69</td>
+      <td>79.00 (14.49) 81.00 (13.76)</td>
+      <td>1310</td>
+    </tr>
+    <tr>
+      <td>Germacrene D</td>
+      <td>Cayman Chemical Company</td>
+      <td>26539</td>
+      <td>62235-06-7</td>
+      <td>161</td>
+      <td>105.00 (78.00) 119.00 (52.00)</td>
+      <td>1710</td>
+    </tr>
+    <tr>
+      <td>Hexyl acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>25539–1 mL</td>
+      <td>142-92-7</td>
+      <td>43</td>
+      <td>56.00 (77.00) 61.00 (34.00)</td>
+      <td>1270</td>
+    </tr>
+    <tr>
+      <td>Linalool</td>
+      <td>Aldrich</td>
+      <td>L2602-5g</td>
+      <td>78-70-6</td>
+      <td>71</td>
+      <td>93.00 (82.13) 121.00 (24.00)</td>
+      <td>1544</td>
+    </tr>
+    <tr>
+      <td>Indole</td>
+      <td>Sigma-Aldrich</td>
+      <td>442619</td>
+      <td>120-72-9</td>
+      <td>117</td>
+      <td>90.00 (45.80) 89.00 (31.87)</td>
+      <td>2483</td>
+    </tr>
+    <tr>
+      <td>TMTT</td>
+      <td>trc</td>
+      <td>TRC-T797630</td>
+      <td>62235-06-7</td>
+      <td>69</td>
+      <td>81.00 (43.14) 79.00 (11.34)</td>
+      <td>1814</td>
+    </tr>
+  </tbody>
+</table>
+
+### Oviposition choice bioassays
+
+#### Plants
 
 All plants were planted in plastic pots in black cotton soil in insect-proof greenhouses in Mbita, Kenya. Maize plants (SC Duma 43, Seed Co Limited, Nairobi, Kenya) were grown from seeds with the addition of fertilizer (3 g DAP 18-46-0, Yara East Africa LTD, Nairobi, Kenya) and used at the age of 2–4 weeks with five to seven fully-grown leaves. Desmodium plants were obtained from a push-pull field on the icipe Mbita campus and kept in pots without fertilizer.
 
-## Fall armyworm moths
+#### Fall armyworm moths
 
 To form the FAW colony, wild individuals were collected in the counties Siaya, Kisumu, Migori, and Vihiga in Western Kenya. Larvae were fed on artificial diet based on soy flour, wheat germ, raw linseed oil, mineral mix, sugar, aureomycin, vitamins, agar, methyl parabene, sorbic acid, and calcium propionate (Article No 870-265-3747, Southland Products Inc, Lake Village AR, USA). Moths were fed on water and, in rare cases after emergence, on 10% honey solution. The colony was occasionally restocked with wild FAW moths. Each day after hatching, moths of both sexes were transferred to a cage to allow mating until the start of the experiment.
 
-## Experimental procedure
+#### Experimental procedure
 
 Cages (100 x 60 x 60 cm) lined with wooden floors and ceilings and netted walls were placed in greenhouses that allowed air circulation through mesh side walls (for pictures of the real setup, see Figure 4—figure supplement 2, for exact positioning in the greenhouses, see Figure 4—figure supplements 3 and 4). Two plants were placed within the cage at the greatest distance possible (approximately 60 cm) in two opposite corners. For the control treatment, two maize plants were placed in the cage, while the direct Desmodium treatment consisted of one maize plant and one Desmodium plant in the cage. In two additional treatments with indirect contact, two maize plants were placed in the cage, while one Desmodium plant was placed outside the cage unreachable for the FAW moths, but in proximity to one maize plant. Three female and two male moths aged 4–5 days were released approximately 1 hr before dusk and allowed to oviposit under natural conditions of L12:D12 for three consecutive nights. Eggs were collected in five different groups depending on the position in which they were laid: either on one of the two plants, close to one of the plants within a maximum of 20 cm distance, or on the cage further than 20 cm from any plant (labeled as ‘No Decision’). Each treatment was repeated 19–21 times in total over five cycles, with up to five replicates per treatment and cycle.
 
-## Egg count
+#### Egg count
 
 Each batch of FAW eggs was collected with sticky tape to separate the layers and spread all eggs out to one dimension. Each egg batch was taped to white paper and photographed in a UV imaging system (Syngene, Cambridge, England) against UV light (312 nm) coming from underneath the paper. A script for semi-automatic counts in ImageJ (Version 1.54 f, National Institutes of Health, USA) was developed and used for counting the exact number of eggs per picture (see Figure 4—figure supplement 5). The code is available in the data and code repository.
 
-## Dual-choice and no-choice assays
+### Dual-choice and no-choice assays
 
-## Plants
+#### Plants
 
 All plants were planted from seeds without the addition of fertilizer in plastic pots in standard red soil mixed with manure (ratio of 2:1) at the icipe campus in insect-proof greenhouses in Nairobi, Kenya. Maize plants (SC Duma 43, Seed Co Limited, Nairobi, Kenya) were used at the age of 3–7 weeks with five to eight fully grown leaves. It was observed that maize plants seemed to grow more slowly in Nairobi than in Mbita, which could be explained by the generally lower temperatures in Nairobi. The seeds of D. intortum and D. incanum were collected from a push-pull field located on the icipe campus in Mbita. These seeds were subsequently propagated through the replanting of cuttings, which were periodically trimmed to ensure healthy growth.
 
-## Fall armyworm moths
+#### Fall armyworm moths
 
 To form the FAW colony, wild individuals were collected in Central Kenya such as in the counties Kiambu, Muranga, and Embu and restocked with wild individuals every three months. Larvae were reared on maize leaves, while moths were only fed with water. The colony was occasionally restocked with wild FAW moths. Each day after hatching, moths of both sexes were transferred to a cage to allow mating until the start of the experiment. At least 2 hr prior to the experiment, female moths were separated from males and placed in the darkened experimental room for adjustment to temperature and humidity.
 
-## Dual-choice assay: experimental procedure
+#### Dual-choice assay: experimental procedure
 
 The five upper leaves of a maize plant were carefully wrapped in a preheated (200 °C for at least 1 hr) and cooled roasting bag (Sainsbury’s, London, UK) with the addition of approximately the same biomass of Desmodium on one side of a dual-choice assay setup (100 x 30 x 30 cm) and compared to a single maize plant wrapped in the same manner on the other side. Maize leaves were carefully curved without damaging them to fit into the bag, while the bag was secured to the bottom edge with little tension using plastic straps supplied with the oven bags. Control treatments were conducted with a single maize plant wrapped in this way on each side. Air was pushed with the help of a Volatile Collection Kit (B. J. Pye, Kings Walden, UK) through activated charcoal filters and into the roasting bag from the lower rim of the bag at a rate of 740–820 mL/min with a PTFE tube with a diameter of approximately 2 mm. A PTFE tube with a diameter of approximately 10 mm and a length of approximately 120 cm conveyed the plant volatiles from the top of the roasting bag to one side of the dual-choice assay. Inside the dual-choice assay, the air was pumped out from the center at the 0 cm mark resulting in an air stream at the air transfer tubing of both sides of the dual-choice assay setup. Airflow was measured each day on both sides using a portable flow meter (Vögtlin Instruments GmbH, Switzerland) and ranged between 480 and 570 mL/min across different days, with a maximum difference of 4 mL/min between the two sides. The higher incoming airflow created overpressure in the bags, which prevented unfiltered air from entering the dual-choice system. One female moth at an age of 4–5 days was released through a hole in the center at 0 cm and her flight behavior was observed for 5 min. The dual-choice assay was separated into five segments of 20 cm each, and a time stamp was set every time the moth changed segments (See Figure 5—figure supplement 1). All experiments were conducted between 7 pm and 1:30 am under red light. Each trial was recorded on video using a mobile phone camera (Fairphone 4, 48 MP), which captured the dual-choice assay from a front view. The videos were re-watched for data acquisition and in cases where moths were barely visible, complemented with notes from the live observation. To simplify the data analysis, the two left segments (50–30 cm left and 30–10 cm left) were combined, as were the two right segments (10–30 cm right, 30–50 cm right). An equal number of repetitions for each treatment was conducted consecutively each night, with the order of treatments randomized. Changing each set of plants took on average 15 min, while the room was ventilated for at least 30 min with ambient air between treatment changes.
 
-## No-choice assay: experimental procedure
+#### No-choice assay: experimental procedure
 
 The five upper leaves of a maize plant were carefully wrapped in a preheated (100 °C for at least 1 hr) and cooled roasting bag (Sealapack, Manchester, UK) with the addition of approximately the same biomass of Desmodium on one side of a no-choice assay setup (115 x 33 x 33 cm). Maize leaves were carefully curved without damaging them to fit into the bag, while the bag was secured to the bottom edge with little tension using plastic straps supplied with the oven bags. Maize treatments were conducted with one maize plant only, and control treatments were performed with an empty roasting bag. Air was drawn through activated charcoal filters and directed into the roasting bag via a PTFE tube (approximately 2 mm in diameter) at a flow rate of 1.5 L/min, with the air entering the bag from its lower rim. This process was facilitated using a Volatile Collection Kit (B. J. Pye, Kings Walden, UK). A PTFE tube was used, with a diameter of approximately 2 mm and a length of 120 cm, to transport plant volatiles from the top of the roasting bag to the source on the side of the no-choice assay. On the opposite side, air was evacuated at the 0 cm mark, creating a uniform air stream that flowed across the entire chamber of the no-choice assay at 30 cm/s. The higher incoming airflow created overpressure in the bags, which prevented unfiltered air from entering the dual-choice system. One female moth aged 4–5 days was released through a hole in the center at 0 cm and its flight behavior was observed for 5 min. The initial and final landing distances were noted, while the last movement was determined by videos that were recorded for each repetition. In cases where moths were not visible or only partially visible, we recorded their last clearly observed position as the final location, assuming any significant movement would have been captured on video. All experiments were carried out between 9 pm and 1 am under red light conditions. The same set of plants was used for five repetitions, with a different moth individual introduced for each repetition. Treatments were carried out on separate evenings to avoid any cross-contamination or carryover effects. All repetitions of a single treatment were conducted on the same evening, except for the maize (alone) treatment, which was carried out across two evenings.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analysis was performed in RStudio (R version 4.5.0, RStudio version 2024.12.1). Mixed models were used to determine significant effects of FAW egg positions in the oviposition bioassays, as well as the behavior of FAW moths in the dual-choice and no-choice assays. In the oviposition and dual-choice bioassays, control treatments with two maize plants were included. Therefore, the control replications were included twice in the dataset, once with the egg count data or the duration of stay of both sides interchanged. For the oviposition bioassay, the egg counts on the maize or the Desmodium plant were compared amongst all treatments, with the inclusion of the greenhouse, the cage (combination of the cage group and the cage number), the start date, and the replication number as random effects. For the dual-choice assay, the duration of stay closer to the maize or the Desmodium plants was compared amongst all treatments, with the inclusion of the date and the replication number as random effects. For the no-choice assay, the initial flight distance and the landing flight distance were compared amongst all treatment, with the inclusion of the date and the replication as random effects.

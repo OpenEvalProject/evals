@@ -35,7 +35,7 @@
 
 ## Abstract
 
-10.7554/eLife.26693.001 Thorough preclinical target validation is essential for the success of drug discovery efforts. In this study, we combined chemical and genetic perturbants, including the development of a novel selective maternal embryonic leucine zipper kinase (MELK) inhibitor HTH-01-091, CRISPR/Cas9-mediated MELK knockout, a novel chemical-induced protein degradation strategy, RNA interference and CRISPR interference to validate MELK as a therapeutic target in basal-like breast cancers (BBC). In common culture conditions, we found that small molecule inhibition, genetic deletion, or acute depletion of MELK did not significantly affect cellular growth. This discrepancy to previous findings illuminated selectivity issues of the widely used MELK inhibitor OTSSP167, and potential off-target effects of MELK-targeting short hairpins. The different genetic and chemical tools developed here allow for the identification and validation of any causal roles MELK may play in cancer biology, which will be required to guide future MELK drug discovery efforts. Furthermore, our study provides a general framework for preclinical target validation.
+Thorough preclinical target validation is essential for the success of drug discovery efforts. In this study, we combined chemical and genetic perturbants, including the development of a novel selective maternal embryonic leucine zipper kinase (MELK) inhibitor HTH-01-091, CRISPR/Cas9-mediated MELK knockout, a novel chemical-induced protein degradation strategy, RNA interference and CRISPR interference to validate MELK as a therapeutic target in basal-like breast cancers (BBC). In common culture conditions, we found that small molecule inhibition, genetic deletion, or acute depletion of MELK did not significantly affect cellular growth. This discrepancy to previous findings illuminated selectivity issues of the widely used MELK inhibitor OTSSP167, and potential off-target effects of MELK-targeting short hairpins. The different genetic and chemical tools developed here allow for the identification and validation of any causal roles MELK may play in cancer biology, which will be required to guide future MELK drug discovery efforts. Furthermore, our study provides a general framework for preclinical target validation.
 
 ## Introduction
 
@@ -49,9 +49,90 @@ Here, we report the discovery of HTH-01-091, a potent and selective MELK inhibit
 
 ## Results
 
-## Discovery of lead scaffold and compound optimization for selective MELK inhibition
+### Discovery of lead scaffold and compound optimization for selective MELK inhibition
 
 Based on biochemical (KINOMEscan) and cellular (KiNativ) kinase profiling of our in-house library of structurally diverse ATP-competitive kinase inhibitors, we identified several chemotypes that were prioritized for further characterization and development. In particular, we focused on JW-7-25-1 (Figure 1A), a benzonaphthyridinone derivative that inhibited MELK pull-down by 100% (KINOMEscan) at 10 μM. Its affinity for MELK was confirmed using the Z’-LYTE enzymatic assay ([ATP]=25 μM near Km of MELK), with a measured IC50 value of 5.0 nM (Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig1-v1.jpg)
+
+**Figure 1.:** (A) The chemical structures of all MELK inhibitors used in this study. (B) Overlaid histograms comparing the percent remaining kinase activities of 140 kinases (ICKP panel) when treated with OTSSP167 (1 μM) versus HTH-01-091 (1 μM). The kinases are ranked and therefore in different orders between the two compounds. See also Figure 1—figure supplement 1, Figure 1—source data 1 and Table 2 for more inhibitor selectivity and potency data. (C) Crystal structure of MELK(2-333) in complex with HTH-01-091. (PDB accession code: 5TWL). (D) Crystal structure of MELK(1-340) in complex with MRT199665. (PDB accession code: 5TX3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Kinase profile of JW-7-25-1 at 10 μM (KINOMEscan, 353 kinases). (B) Kinase profile of HTH-01-091 at 1 μM (KINOMEscan, 456 kinases). (C) Kinase profile of OTSSP167 at 10 μM (KINOMEscan, 456 kinases). The circle that represents MELK is in blue while all other bound kinases are in red. The S(35) score indicates the percentage of kinases within the panel that demonstrate <35% retention on the solid support after inhibitor treatment.
+
+**Table 1.**
+ Biochemical IC50 values of MELK inhibitors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Biochemical IC50 (nM)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>MELK*</th>
+      <th>PIK3CA†</th>
+      <th>mTOR*</th>
+      <th>GSK3A*</th>
+      <th>CDK7†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JW-7-25-1</td>
+      <td>5.0</td>
+      <td></td>
+      <td>5.5</td>
+      <td>12.3</td>
+      <td>63.4</td>
+    </tr>
+    <tr>
+      <td>HTH-01-091</td>
+      <td>10.5</td>
+      <td>962</td>
+      <td>632</td>
+      <td>1740</td>
+      <td>1230</td>
+    </tr>
+    <tr>
+      <td>OTSSP167</td>
+      <td>0.5</td>
+      <td>66.5</td>
+      <td>35.7</td>
+      <td>1.6</td>
+      <td>49.1</td>
+    </tr>
+    <tr>
+      <td>MRT199665</td>
+      <td>1.4–3.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NVS-MELK8a</td>
+      <td>11.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MELK-T1</td>
+      <td>13.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Kinase activity measured by Z’-LYTE assay at [ATP]=apparent Km, in accordance with Z’-LYTE Screening Protocol and Assay Conditions provided by Life Technologies.†Kinase activity measured by Adapta assay at [ATP]=apparent Km, in accordance with Adapta Screening Protocol and Assay Conditions provided by Life Technologies._
 
 Encouraged by the high potency of JW-7-25-1, we initiated a medicinal chemistry campaign focused on improving its kinase selectivity while preserving potency. JW-7-25-1 exhibited a broad kinase selectivity profile with an S(35) score of 0.54 when tested at 10 μM (Figure 1—figure supplement 1). We confirmed potent inhibition of several off-targets and were keen on reducing the inhibition of FRAP1(mTOR), PIK3CA, and CDK7, as these kinases drive proliferation in breast cancer (Liu et al., 2009; Wang et al., 2015; Yu et al., 2001), which would complicate the interpretation of MELK-dependent pharmacology if inhibited. Thus, we monitored inhibition of these off-target kinases throughout the optimization process. After several iterative rounds of compound synthesis and characterization, we arrived at HTH-01-091, which demonstrated significantly improved selectivity (Figure 1A, Figure 1—figure supplement 1).
 
@@ -59,29 +140,275 @@ HTH-01-091 inhibits MELK with an IC50 value of 10.5 nM, which is comparable to M
 
 To further investigate the selectivity profile of HTH-01-091, we used the International Center for Kinase Profiling (ICKP) panel, which measured the activity of 141 kinases using radiometric kinase assays (Hastie et al., 2006). Consistent with our previous result, 1 μM of HTH-01-091 selectively inhibits 4% of the kinases over 90%, whereas 1 μM of OTSSP167 inhibits 67% of the kinases over 90% (Figure 1B and Figure 1—source data 1). HTH-01-091 (1 μM) inhibited seven kinases more strongly than MELK in the ICKP panel, which includes PIM1/2/3, RIPK2, DYRK3, smMLCK and CLK2. Using the radioactive filter-binding assay provided by ICKP (Hastie et al., 2006), we found that HTH-01-091 inhibited MELK activity with an IC50 value of 15.3 nM, in good agreement with the Z’-LYTE assay, while those potential off-target kinases exhibited IC50 values in the range of 42–109 nM (Table 2). In sum, HTH-01-091, a potent MELK inhibitor with a greatly improved selectivity profile relative to the parent compound JW-7-25-1 as well as OTSSP167, is a valuable tool compound to interrogate MELK-dependent pharmacology.
 
-## Crystal structures of HTH-01-091 and MRT199665 with MELK kinase domain
+**Table 2.**
+ Enzymatic IC50 values of the main targets of HTH-01-091 measured by the International Center for Kinase Profiling (ICKP).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Kinase</th>
+      <th>% activity remaining (1 µM)</th>
+      <th>Enzymatic IC50* (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PIM3</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PIM1</td>
+      <td>1</td>
+      <td>60.6</td>
+    </tr>
+    <tr>
+      <td>PIM2</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIPK2</td>
+      <td>3</td>
+      <td>42.5</td>
+    </tr>
+    <tr>
+      <td>DYRK3</td>
+      <td>5</td>
+      <td>41.8</td>
+    </tr>
+    <tr>
+      <td>SmMLCK</td>
+      <td>8</td>
+      <td>108.6</td>
+    </tr>
+    <tr>
+      <td>CLK2</td>
+      <td>11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MELK</td>
+      <td>13</td>
+      <td>15.3</td>
+    </tr>
+    <tr>
+      <td>HIPK2</td>
+      <td>13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAPK1</td>
+      <td>15</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Radioactive filter-binding assay provided by the ICKP._
+
+### Crystal structures of HTH-01-091 and MRT199665 with MELK kinase domain
 
 To better understand the mode of inhibitor binding, we determined crystal structures of MELK in complex with HTH-01-091 and MRT199665. Crystal structures of MELK bound to other inhibitors have been previously reported (Cho et al., 2014; Johnson et al., 2015; Touré et al., 2016). The 2.5 Å structure of MELK in complex with HTH-01-091 revealed a type I binding mode (Figure 1C). The quinoline nitrogen in the tricylic core forms the only hinge interaction with the backbone NH of Cys89. In the deep pocket, the 3,5-dichloro-4-hydroxyphenyl group engages with the catalytic (Lys40) lysine and recruits Glu57 on the αC helix. Toward the solvent, the cyclic urea group forms a hydrogen bond with Ile17 in the P-loop. In addition, the cyclohexyl group of HTH-01-091 is sandwiched between Val25 and Leu139 in a nearly orthogonal orientation with respect to the core, while projecting the (dimethylamino)methyl tail into the negatively-charged catalytic pocket made-up by Glu93, Asp150, and Glu136 (Figure 1C). Many of the corresponding interactions were previously observed in the MELK-OTSSP167 co-crystal structure (Cho et al., 2014). However, in the OTSSP167 structure, the cyclohexyl group occupies the active site in a manner that makes greater van der Waals interactions with the P-loop, causing the N-lobe to be in a slightly more closed conformation reflected by the proximity of Phe22 to the carboxyl end of the αC helix. This could contribute to the higher binding affinity of OTSSP167 to MELK.
 
 The MRT199665 structure also revealed a type I binding mode (Figure 1D). The pyrimidine and aniline nitrogen atoms from the core form dual hydrogen bonds with the backbone NH and carbonyl group of Cys89 in the hinge. Toward the deep pocket, MRT199665 hydrogen bonds with Lys40, while the dimethyl group abuts the gatekeeper L86, promoting a relatively open conformation of the N-lobe. The hydroxy group of the hydroxydihydroindene group forms a hydrogen bond with Glu93, restricting the plane of the indene orthogonoal to the rest of the molecule (Figure 1D). The indene group is in van der Waals contact with Gly18 and Val25, but intervening residues in the P-loop are largely disordered. These co-crystal structures provide insights on how to further optimize the inhibitors.
 
-## HTH-01-091 is cell permeable and induces MELK degradation
+### HTH-01-091 is cell permeable and induces MELK degradation
 
 After confirming HTH-01-091 as a potent MELK inhibitor in biochemical assays, we next investigated whether HTH-01-091 engages MELK in cells. We performed a KiNativ assay to measure HTH-01-091 engagement with the ATP binding pocket of MELK, which would prevent active-site labeling from a lysine-reactive ATP-biotin probe (Patricelli et al., 2007). HTH-01-091 dose-dependently decreased MELK pull-down by streptavidin beads, demonstrating that the compound is cell permeable and binds to MELK in an ATP-competitive fashion. As a control, ERK1/2 pull-down was not affected by HTH-01-091 treatment, consistent with our profiling data showing no binding affinity of HTH-01-091 to ERK1/2 (Figure 2A, Figure 1—source data 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunoblots analyzing the pull-down levels of MELK and ERK1/2 by ATP-biotin probes and streptavidin beads from MDA-MB-468 cells treated with different doses of HTH-01-091 and 10 mM MG132 for 1 hour. (B) Immunoblots for MELK and α-tubulin after treatment of MDA-MB-468 cells with 1 μM of OTSSP167, MRT199665 or 10 μM of HTH-01-091, MELK-T1 and NVS-MELK8a for specified amount of time. See also Figure 2—figure supplement 1 for rescue experiments using carfilzomib and MLN4924. (C) 3-day antiproliferation assays of HTH-01-091 and other MELK inhibitors tested in MDA-MB-468 (basal) and ZR-75-1 (luminal) cells. Values represent two independent experimental mean ±SD. Error bars shorter than the height of the symbol are not drawn. Potency (MELK): ***IC50 <1 nM, **IC50 <5 nM, *IC50 <20 nM, measured by Z’LYTE biochemical assay. See also Tables 3 and 4 for a summary of antiproliferative IC50 values in a panel of breast cancer cell lines at 3 and 7 days post treatment, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Immunoblots for MELK and GAPDH after pretreatment of MDA-MB-468 cells with carfilzomib (400 nM) or MLN4924 (1 μM) for 4 hours, followed by treatment of 1 μM of OTSSP167, MRT199665 or 10 μM of HTH-01-091 for 4 hours.
+
 MELK-T1 was previously reported to induce cell-cycle independent degradation of MELK (Beke et al., 2015). Interestingly, we found that all MELK inhibitors we tested also reduced MELK protein levels in MDA-MB-468 cells, indicating that inhibitor-induced MELK degradation may be general to ATP-competitive MELK inhibitors (Figure 2B). Inhibitor potency generally correlated with the rate and extent of MELK downregulation. However, MRT199665 induced the most rapid degradation of MELK protein despite being less potent than OTSSP167 based on biochemical IC50 values. Consistent with the prior MELK-T1 report, inhibitor-induced MELK degradation requires the ubiquitin-proteasome system, as pretreatment with the proteasome inhibitor carfilzomib prevented degradation (Figure 2—figure supplement 1) (Beke et al., 2015). As the molecular mechanism involved in MELK degradation has not been described, we tried to rescue MELK degradation with the neddylation inhibitor MLN4924. However, this had minimal effect, indicating that the cullin-RING E3 ligase family is not involved in MELK degradation (Figure 2—figure supplement 1).
 
-## Selective MELK inhibitors exhibit minor antiproliferative effects in breast cancer cells
+### Selective MELK inhibitors exhibit minor antiproliferative effects in breast cancer cells
 
 As shRNA-mediated knockdown of MELK was previously reported to inhibit the proliferation of BBC cells, we next tested whether pharmacological inhibition of MELK would have similar effects. We treated a panel of breast cancer cell lines, including MDA-MB-468 and ZR-75-1 cells, with HTH-01-091 and other MELK inhibitors; despite our focus on basal-like breast cancers, we included luminal cell lines for comparison. In 3-day proliferation assays, OTSSP167 demonstrated exceptional antiproliferative effects, exhibiting half maximal killing below 100 nM for most cell lines tested (Figure 2C and Table 3). In contrast, HTH-01-091 and the other selective MELK inhibitors exhibited antiproliferative IC50 values that were at least 300-fold less potent. MRT199665, which exhibited intermediate potency as a biochemical MELK inhibitor, also exhibited intermediate growth inhibition in most cell lines (Figure 2C and Table 3). We evaluated the inhibitors in longer-term (7-day) proliferation assays and still observed the same trend, and no clear difference between the breast cancer subtypes (Table 4). We authenticated our MDA-MB-468 line by short tandem repeat analysis, and repeated the proliferation assays using MDA-MB-468 cells from a second source to confirm the modest antiproliferative effects of the selective inhibitors (Table 4). In brief, the selective MELK inhibitors exhibited weak antiproliferative activities against both basal-like and luminal breast cancer cell lines in vitro, casting doubt on whether MELK inhibition affects viability. However, as the non-selective OTSSP167 and MRT199665 are also more potent inhibitors of MELK, these data alone were not sufficient to allow us to deduce whether their stronger antiproliferative potency stems from on- or off-target effects.
 
-## MELK−/− MDA-MB-468 cells exhibit normal growth and are not less sensitive to MELK inhibitors
+**Table 3.**
+ 3-day antiproliferative activities of MELK inhibitors in a panel of breast cancer cell lines*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">3-day antiproliferative IC50 (μM)</th>
+      <th colspan="2">Note</th>
+    </tr>
+    <tr>
+      <th>Subtype</th>
+      <th colspan="3">Basal-like</th>
+      <th colspan="3">Luminal</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line</td>
+      <td>MDA-MB-468</td>
+      <td>BT-549</td>
+      <td>HCC70</td>
+      <td>ZR-75-1</td>
+      <td>MCF7</td>
+      <td>T-47D</td>
+      <td>MELK IC50 (nM)</td>
+      <td>Selectivity</td>
+    </tr>
+    <tr>
+      <td>HTH-01-091</td>
+      <td>4.00</td>
+      <td>6.16</td>
+      <td>8.80</td>
+      <td>&gt;10</td>
+      <td>8.75</td>
+      <td>3.87</td>
+      <td>10.5</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <td>OTSSP167</td>
+      <td>0.014</td>
+      <td>0.021</td>
+      <td>0.034</td>
+      <td>0.055</td>
+      <td>0.035</td>
+      <td>0.106</td>
+      <td>0.5</td>
+      <td>Poor</td>
+    </tr>
+    <tr>
+      <td>MRT199665</td>
+      <td>0.58</td>
+      <td>0.40</td>
+      <td>0.39</td>
+      <td>4.83</td>
+      <td>0.44</td>
+      <td>5.89</td>
+      <td>1.4–3.3</td>
+      <td>Poor</td>
+    </tr>
+    <tr>
+      <td>NVS-MELK8a</td>
+      <td>5.41</td>
+      <td>8.05</td>
+      <td>5.99</td>
+      <td>&gt;10</td>
+      <td>6.06</td>
+      <td>&gt;10</td>
+      <td>11.9</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <td>MELK-T1</td>
+      <td>&gt;10</td>
+      <td></td>
+      <td></td>
+      <td>&gt;10</td>
+      <td></td>
+      <td></td>
+      <td>13.5</td>
+      <td>Good</td>
+    </tr>
+  </tbody>
+</table>
+
+_*IC50 values were estimated based on ‘log(inhibitor) vs. normalized response -- Variable slope’ using GraphPad Prism 7. Experiments were performed in duplicates._
+
+**Table 4.**
+ 7-day antiproliferative activities of MELK inhibitors in a panel of breast cancer cell lines*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">7-day antiproliferative IC50 (μM)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="4">Basal-like</th>
+      <th colspan="2">Luminal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line</td>
+      <td>MDA-MB-468</td>
+      <td>MDA-MB-468 (second source)</td>
+      <td>BT-549</td>
+      <td>HCC70</td>
+      <td>MCF7</td>
+      <td>T-47D</td>
+    </tr>
+    <tr>
+      <td>HTH-01-091</td>
+      <td>2.71</td>
+      <td>10.7</td>
+      <td>2.82</td>
+      <td>2.43</td>
+      <td>4.13</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>OTSSP167</td>
+      <td>0.012</td>
+      <td>0.033</td>
+      <td>0.009</td>
+      <td>0.021</td>
+      <td>0.027</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>MRT199665</td>
+      <td>0.16</td>
+      <td>0.91</td>
+      <td>0.31</td>
+      <td>0.075</td>
+      <td>0.11</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>NVS-MELK8a</td>
+      <td>2.96</td>
+      <td>8.4</td>
+      <td>4.98</td>
+      <td>4.17</td>
+      <td>2.81</td>
+      <td>4.90</td>
+    </tr>
+  </tbody>
+</table>
+
+_*IC50 values were estimated based on ‘log(inhibitor) vs. normalized response -- Variable slope’ using GraphPad Prism 7. Experiments were performed in duplicates._
+
+### MELK−/− MDA-MB-468 cells exhibit normal growth and are not less sensitive to MELK inhibitors
 
 The difference in antiproliferative effect between OTSSP167 and HTH-01-091 suggested that MELK inhibition might not be the primary contributor to the cellular activity of OTSSP167. To address this question, we used CRISPR/Cas9 to genetically delete MELK in MDA-MB-468 cells. We designed four independent guide sequences targeting exon 4 or 5 of MELK, which are situated in the kinase domain. We selected sgMELK-3 for further assessment due to high efficiency of indels generated and effective loss of MELK protein levels (Figure 3—figure supplement 1A,B). Notably, sgMELK-3 presents desirable target specificity, as there are no sequences within the human genome with 3 or less mismatches based on ZiFit Targeter (Sander et al., 2010). We proceeded with single cell cloning, and out of the 10 clones isolated, 6 clones were completely deficient of MELK protein, as indicated by the use of a rabbit monoclonal antibody raised against an amino-terminal epitope of MELK (EPR3981, Abcam or GeneTex) (Figure 3—figure supplement 1C). Genotyping analysis around the cut site aided by TIDE (Brinkman et al., 2014) further confirmed frame shifts or larger deletions on both alleles (Figure 3—figure supplement 2, Figure 3—source data 1).
 
 We compared a WT clone (clone E9) and a MELK−/− clone (clone C7) with the parental cell line, and observed no significant difference in growth rate or cell cycle distribution (Figure 3A,B,C). We also compared the sensitivity of the WT and the MELK−/− cells to OTSSP167 and the selective MELK inhibitors in 3-day proliferation assays (Figure 3D). If the antiproliferative activity of OTSSP167 was primarily due to MELK inhibition, then we would expect MELK−/− cells to exhibit reduced sensitivity to OTSSP167 treatment. However, we did not observe differences in cell viability after treatment with OTSSP167 or any of the more selective MELK inhibitors, indicating that the activity of MELK inhibitors in MDA-MB-468 cells was driven by inhibition of targets other than MELK.
 
-## dTAG-mediated loss of MELK does not impair growth of MDA-MB-468 cells
+![Figure 3.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig3-v1.jpg)
+
+**Figure 3.:** (A) Immunoblots for MELK and GAPDH in WT (clone E9) and MELK−/− (clone C7) clones isolated from MDA-MB-468 cells transfected with sgMELK-3 and Cas9. See also Figure 3—figure supplements 1 and 2, and Figure 3—source data 1 for the details of the generation of MELK−/− clones. (B) 5-day proliferation curves comparing the growth rates of parental, WT, and MELK−/− MDA-MB-468 cells. Values represent two independent experimental mean ±SD. (C) Cell cycle analysis comparing WT and MELK−/− MDA-MB-468 cells. Values represent triplicate mean ±SD. (D) 3-day proliferation assays comparing the sensitivity of WT and MELK−/− MDA-MB-468 cells to OTSSP167, HTH-01-091 and NVS-MELK8a. Values represent duplicate mean ±SD. Error bars shorter than the height of the symbol are not drawn.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Tracking of Indels by Decomposition (TIDE) analysis (Brinkman et al., 2014) of MDA-MB-468 cells transfected with Cas9/sgMELK-3 and enriched by the transfection marker OFP. (B) Immunoblots for MELK and VINC in MDA-MB-468 cells transfected with PX458 or Cas9/sgMELK-3 and enriched by the transfection marker GFP or OFP, respectively. (C) Immunoblots for MELK and VINC in ten MDA-MB-468 clones selected from MDA-MB-468 cells transfected with Cas9/sgMELK-3. Clone E9 is the WT clone, and clone C7 is the MELK−/− clone shown in Figure 3. For the genotyping results, see also Figure 3—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Trace images of the sequence around exon 5 of MELK and the actual sequences of the PCR amplicons from three clones isolated from MDA-MB-468 cells transfected with Cas9/sgMELK-3, including clone (A) E9, (B) C7 and (C) C9.
+
+### dTAG-mediated loss of MELK does not impair growth of MDA-MB-468 cells
 
 As the process for deriving and isolating clonal lines of MELK−/− MDA-MB-468 cells requires an extended period of time, we were concerned that these clonal lines would be able to compensate for loss of MELK during this process. Thus, to understand the immediate effect of MELK loss, we employed a novel chemical genetic system (the dTAG system) whereby tagged proteins are targeted for degradation by the E3 ubiquitin ligase cereblon (CRL4CRBN) (Erb et al., 2017). In this system, mutant FKBP12 (FKBP12F36V) serves as a degradation tag (dTAG) and is fused to a protein of interest. The F36V mutation introduces a ‘hole’ in the FKBP12 binding site that accommodates a ‘bump’ on the FKBP12F36V-binding ligand, which does not effectively bind to wild-type FKBP12 (Clackson et al., 1998). We synthesized heterobifunctional molecules (dTAG molecules) by conjugating FKBP12F36V binders to thalidomide, which is a potent ligand for CRL4CRBN. These molecules bring the FKBP12F36V-fusion protein and CRL4CRBN into close proximity, thus inducing rapid ubiquitination and subsequent proteasomal degradation of the tagged protein while sparing endogenous FKBP12 (Erb et al., 2017; Winter et al., 2015).
 
@@ -89,15 +416,43 @@ To maintain continuous expression of MELK, we first expressed N-terminally tagge
 
 Four dTAG molecules (7, 13, 36 and 47) that vary in linker length and chemical structure were tested for their efficiency at depleting FKBP12F36V-MELK(sg3R) (Figure 4A, Figure 4—figure supplement 3). All four degraders efficiently depleted FKBP12F36V-MELK(sg3R) within 4 hours (Figure 4B); in particular, dTAG-13, 36, and 47 demonstrated sustained degradation of FKBP12F36V-MELK(sg3R) for up to 72 hours (Figure 4C). A multiplexed quantitative mass spectrometry-based proteomics experiment demonstrated that only FKBP12F36V-MELK was significantly degraded, confirming the selectivity of the system (Figure 4D) (McAlister et al., 2012). In a 9-day proliferation assay, neither of the FKBP12F36V-MELK(sg3R) MELK−/− clones exhibited growth impairment when treated by dTAG-47 (Figure 4E), confirming that MDA-MB-468 cells are not sensitive to acute and sustained loss of MELK in vitro.
 
-## Potential off-target activities of MELK-targeting shRNAs may explain the previous discovery of MELK dependency in BBC
+![Figure 4.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig4-v1.jpg)
+
+**Figure 4.:** (A) Chemical structure of heterobifunctional dTAG molecule dTAG-47. See also Figure 4—figure supplement 3 for the chemical structures of dTAG-7, dTAG-13 and dTAG-36. (B) Immunoblots for MELK and GAPDH after treatment of dTAG-7, 13, 36, and 47 at indicated concentrations in MELK−/− MDA-MB-468-FKBP12F36V-MELK(sg3R) cells for 4 hours. See Figure 4—figure supplement 1 for details of the generation of MELK−/− MDA-MB-468-FKBP12F36V-MELK(sg3R) clones. (C) Same as in 4B, but with treatment at 500 nM and extended treatment times for 14, 24, 48, and 72 hours. (D) Changes in abundance of 7270 proteins (peptide count ≥2) comparing MELK−/− MDA-MB-468-FKBP12F36V-MELK cells treated with dTAG-7 (250 nM) or DMSO for 1 hour, versus p-value (dTAG-7: triplicate, DMSO: duplicate, limma moderated t-test). See also Figure 4—source datas 1 and 2 for the original and the processed data. (E) Crystal violet staining image showing parental MDA-MB-468 cells and MELK−/− MDA-MB-468-FKBP12F36V-MELK(sg3R) cells after treatment with DMSO or 500 nM of dTAG-47 for 9 days. Immunoblots showing MELK and GAPDH from a duplicate plate on Day 9 confirmed sustained depletion of FKBP12F36V-MELK(sg3R). These are representative data from one of two independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Immunoblots for MELK and GAPDH in single cell clones selected from MDA-MB-468-FKBP12F36V-MELK(sg3R) transfected with Cas9/sgMELK-3 to knockout endogenous MELK. Clone 1D4 is clone 1 and clone 1A3 is clone 2 in Figure 4. Clone 1D4 was confirmed with heterozygous −1 and +1 indels; clone 1A3 was confirmed with homozygous −1 deletions.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Immunoblots for MELK, cyclin B1 and GAPDH in asynchronous versus M-phase arrested MDA-MB-468 cells and MDA-MB-468-FKBP12F36V-MELK(sg3R) cells (clone 1). (B) Immunoblots for MELK and GAPDH in MDA-MB-468 cells and MDA-MB-468-FKBP12F36V-MELK(sg3R) cells (clone 1) treated with MRT199665 (1 μM) for the indicated amount of time.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** FKBP12F36V-binding ligands conjugated by variable linkers to thalidomide or pomalidomide, including (A) dTAG-7, (B) dTAG-13 and (C) dTAG-36 are capable of inducing degradation of FKBP12F36V-tagged proteins of interest.
+
+### Potential off-target activities of MELK-targeting shRNAs may explain the previous discovery of MELK dependency in BBC
 
 The lack of antiproliferative response to selective MELK inhibition, genetic deletion, and chemical-induced degradation contradicted previous findings, where MELK-targeting short hairpins impaired BBC proliferation (Touré et al., 2016; Wang et al., 2014). To reconcile this discrepancy, we repeated the proliferation assay, using the same doxycycline-inducible shRNAs from previous reports to knockdown MELK in MDA-MB-468 cells. Indeed, shMELK-1 and shMELK-2 efficiently downregulated MELK mRNA and protein levels and impaired the growth of MDA-MB-468 cells (Figure 5A,B and Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig5-v1.jpg)
+
+**Figure 5.:** (A) Immunoblots for MELK and GAPDH after 2-day treatment with or without doxycycline (100 ng/mL) in MDA-MB-468 cells transduced with doxycycline-inducible shRNA constructs. NT-1 represents a non-targeting control. Hairpins shMELK-1, 2, and 5 target three different regions within MELK’s coding region and 3’-UTR. See also Figure 5—figure supplement 1. (B) A crystal violet staining image of MDA-MB-468 cells transduced with doxycycline-inducible shRNA constructs after treatment with or without doxycycline (100 ng/mL) for 9 days with an initial seeding of 10,000 cells in a 12-well plate. (C) A crystal violet staining image of MELK−/− MDA-MB-468 cells (clone C7) transduced with doxycycline-inducible shRNA constructs after treatment with or without doxycycline (100 ng/mL) for 9 days with an initial seeding of 10,000 cells in a 12-well plate. See also Figure 5—figure supplement 1E. (D) A bar graph quantifying the intensity of crystal violet staining of cells treated as described in B and C. Values from the doxycycline treated groups are normalized to the untreated. Values represent mean ±SD from two independent experiments (*p≤0.05; **p≤0.01; ***p≤0.001, two-tailed Student’s t-Test). (E) A scheme that depicts the guide sequences that target the transcription start site of MELK and were tested in our study. See also Figure 5—figure supplement 2A. (F) An H1-based doxycycline-inducible sgRNA construct was modified from tet-pLKO-puro, which constitutively coexpresses tetR (tet repressor protein). TRE, tet response element. (G) Immunoblots for MELK and GAPDH after 2-day treatment with or without doxycycline (100 ng/mL) in MDA-MB-468-KRAB-dCas9 cells transduced with doxycycline-inducible sgRNA constructs. See also Figure 5—figure supplement 2B. (H) A crystal violet staining image of MDA-MB-468-KRAB-dCas9 cells transduced with doxycycline-inducible sgRNA constructs after treatment with or without doxycycline (100 ng/mL) for 9 days with an initial seeding of 10,000 cells in a 12-well plate. See also Figure 5—figure supplement 2C. (I) A bar graph quantifying the intensity of crystal violet staining of cells treated as described in H. Values from the doxycycline treated groups are normalized to the untreated. Values represent mean ±SD from two independent experiments (for n.s., p>0.05, two-tailed Student’s t-Test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Relative expression of MELK mRNA levels quantified by RT-qPCR in MDA-MB-468 cells after 2-day doxycycline-induced (100 ng/mL) shRNA expression. Values represent triplicate means from a single experiment. NT-1 is a non-targeting control. Hairpins shMELK-1, 2, 3, 4, and 5 (abbreviated as sh1, 2, 3, 4, and 5) target five different regions within the coding region and 3’-UTR of MELK. (B) Immunoblots for MELK and GAPDH after 2-day treatment with or without doxycycline (100 ng/mL) in MDA-MB-468 cells transduced with doxycycline-inducible shRNAs. NT-1 and NT-2 represent two non-targeting controls. (C) Crystal violet staining image of MDA-MB-468 cells transduced with doxycycline-inducible shRNA constructs after treatment with or without doxycycline (100 ng/mL) for 8 days. The bar graph represents quantification of the staining intensities in the doxycycline treated groups relative to the untreated groups. Values came from a single experiment. (D) Relative expression of MELK mRNA levels quantified by RT-qPCR in MDA-MB-468 cells after 8-day doxycycline-induced (100 ng/mL) shRNA expression. After 8-day induced expression of shMELK-1, 2 or 4, MDA-MB-468 cells were mostly dead and no data are shown. Values represent triplicate means from a single experiment. (E) Immunoblots for MELK and GAPDH after 2-day treatment with or without doxycycline (100 ng/mL) in WT and MELK−/− MDA-MB-468 cells transduced with doxycycline-inducible shRNAs.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Relative expression of MELK mRNA levels quantified by RT-qPCR in MDA-MB-468 cells stably expressing KRAB-dCas9 and MELK transcription start site-targeting sgRNAs. Values represent duplicate means from two independent experiments. Short-guide RNA sgNT2 is a non-targeting control that targets EGFP. Primer pair 1 and 2 for RT-qPCR are listed in Supplementary file 2. (B) Relative expression of MELK mRNA levels quantified by RT-qPCR in MDA-MB-468-KRAB-dCas9 cells after 2-day doxycycline-induced (100 ng/mL) sgRNA expression. Values represent duplicate means from two independent experiments. (C) Relative expression of MELK mRNA levels quantified by RT-qPCR in MDA-MB-468-KRAB-dCas9 cells after 9-day doxycycline-induced (100 ng/mL) sgRNA expression. Values represent duplicate means from two independent experiments.
 
 Since off-target activity in RNAi technology is a known issue that is difficult to predict based on target sequences (Jackson and Linsley, 2010), we decided to test 3 additional MELK-targeting shRNAs selected from the RNAi Consortium (TRC) shRNA library—named shMELK-3, 4 and 5. Two days after induction, shMELK-5 resulted in similar levels of MELK knockdown compared with shMELK-1 and 2, while shMELK-3 and 4 induced only about 50% MELK knockdown (Figure 5—figure supplement 1A,B). Similar to previous studies using the same short-hairpin sequence (Touré et al., 2016), shMELK-5 induced cell growth defects, even though the effect was milder than shMELK-1 and 2 (Figure 5B). Interestingly, for the less efficient hairpins shMELK-3 and 4, shMELK-4 also impaired the growth of MDA-MB-468 cells while shMELK-3 did not, further demonstrating that different shRNAs can lead to discrepant phenotypic outcomes (Figure 5—figure supplement 1C). We observed sustained knockdown of MELK by shMELK-3 and 5 after an 8-day treatment, confirming that the growing cells maintained MELK knockdown (Figure 5—figure supplement 1D).
 
 To test out whether off-targets contribute to the antiproliferative effects of shMELK-1, 2, and 5, we studied how these hairpins would affect the growth of MELK−/− MDA-MB-468 cells. Indeed, the MELK-targeting hairpins caused almost identical proliferation phenotypes in a MELK−/− background (Figure 5C,D, and Figure 5—figure supplement 1E), suggesting that off-target effects may contribute to the observed growth defects.
 
-## Doxycycline-inducible MELK knockdown mediated by CRISPR interference does not cause proliferative defects in MDA-MB-468 cells
+### Doxycycline-inducible MELK knockdown mediated by CRISPR interference does not cause proliferative defects in MDA-MB-468 cells
 
 Even though we demonstrated that off-targets may contribute to the antiproliferative effect of the MELK-targeting shRNAs, we were surprised that three independent hairpins all impeded the growth of MDA-MB-468 cells. To improve our understanding of the phenotypic outcomes of MELK knockdown, we decided to apply CRISPR interference, an orthogonal and potentially more specific method than RNA interference to downregulate gene expression (Gilbert et al., 2014).
 
@@ -121,63 +476,61 @@ MELK likely has complex functions in cells including embryonic development, main
 
 ## Materials and methods
 
-## Tissue culture
+### Tissue culture
 
 MDA-MB-468 (RRID: CVCL_0419, ATCC) and MELK−/− MDA-MB-468 cells were authenticated using small tandem repeat (STR) profiling (DFCI Molecular Diagnostics Laboratory, Boston). The second source of MDA-MB-468 cells was a kind gift from Prof. Kun Ping Lu. All cell lines used in this study were routinely examined to be free of mycoplasma using the MycoAlert mycoplasma detection kit (Lonza, LT07-318). Cell lines HEK293T (RRID: CVCL_0063; ATCC) and MCF7 (RRID: CVCL_0031; ATCC) cells were maintained in DMEM (4.5 g/L D-glucose, L-glutamine, 110 mg/mL sodium pyruvate; Thermo Fisher Scientific) supplemented with 10% FBS (Thermo Fisher Scientific) and 100 U/mL penicillin-streptomycin (Thermo Fisher Scientific). Other cell lines including (RRID: CVCL_0419, ATCC), BT-549 (RRID: CVCL_1092; ATCC), HCC70 (RRID: CVCL_1270; ATCC), T-47D (RRID: CVCL_0553; ATCC) and ZR-75-1 (RRID: CVCL_0588; ATCC), were cultured in RPMI medium 1640 (L-glutamine; Thermo Fisher Scientific) supplemented with 10% FBS (Thermo Fisher Scientific) and 100 U/mL penicillin-streptomycin (Thermo Fisher Scientific). All cell lines were cultured at 37°C in a humidified chamber in the presence of 5% CO2.
 
-## Plasmids
+### Plasmids
 
 Tet-pLKO-puro was a gift from Dmitri Wiederschain (Addgene plasmid # 21915). pHR-SFFV-KRAB-dCas9-P2A-mCherry (Addgene plasmid # 60954) and pU6-sgRNA EF1Alpha-puro-T2A-BFP (Addgene plasmid # 60955) were gifts from Jonathan Weissman. All oligonucleotides were ordered from IDT (Coralville, Iowa). To construct a Cas9/sgRNA expression system for MELK deletion, we annealed oligonucleotides targeting exon 4 or 5 of the MELK gene and directly ligated them with a linearized CRISPR nuclease vector (OFP reporter) from the GeneArt CRISPR nuclease vector kit (A21174, Life Technologies, Carlsbad, CA). For the expression of FKBP12F36V-MELK(sg3R), we used a modified pLEX_305 (Addgene #41390) construct that contains a FKBP12F36V-2xHA tag at the N-terminus (Erb et al., 2017). Human MELK or MELK(sg3R) in a pDONR223 vector was cloned into the modified pLEX_305 construct using Gateway cloning (Life Technologies). The mutation in MELK(sg3R) that confers resistance to sgMELK-3 was generated via Q5 site-directed mutagenesis kit (New England Biolabs). To generate doxycycline-inducible shRNA vectors targeting MELK, oligonucleotides selected from the RNAi Consortium shRNA Library or previously reported were annealed, and directly ligated with gel-purified tet-pLKO-puro backbone digested with AgeI and EcoRI. The H1 based doxycycline-inducible sgRNA vector (tet-pLKO-sgRNA-puro) that coexpresses the Tet repressor (TetR) from the hPGK promoter was modified from tet-pLKO-puro (Addgene plasmid # 21915) by replacing the sequences encoding for shRNA with sgRNA. Briefly, a pair of overlapping primers that encodes for an AjuI cloning site and the same sgRNA constant region as in pU6-sgRNA EF1Alpha-puro-T2A-BFP (Addgene plasmid # 60955) was amplified by PCR and digested with AgeI and EcoRI, followed by ligation with tet-pLKO-puro digested with AgeI and EcoRI. To construct doxycycline-inducible sgRNA plasmids that target MELK, oligonucleotides targeting the transcriptional start site of MELK were annealed and directly ligated with gel-purified tet-pLKO-sgRNA-puro backbone digested with AjuI. To complement the cut sites generated by AjuI, the oligonucleotides should contain overhangs as shown: 5’-CNNNN…..NNNNGTTTA-3’ (forward) and 5’-NNNN….NNNNGGTGTC-3’ (reverse). The sequence NNNN….NNNN represents the guide sequence and one base ‘G’ needs to be added at the 5’ end for efficient initiation of Pol III-mediated transcription if it does not already exist. All inserts were verified by Sanger sequencing (Genewiz), and the sequences of all oligonucleotides relevant for cloning are listed in Supplementary file 2. Plasmids were amplified in NEB 10-beta or NEB Stable competent E. coli.
 
-## Lentiviral transduction
+### Lentiviral transduction
 
 Lentiviruses were generated by transfecting 1.2 million HEK293T cells seeded one day prior in a T25 flask, with 2 μg lentiviral transfer plasmid, 0.5 μg packaging plasmid (pMD2.G), and 1.5 μg packaging plasmid (pCMV-dR8.91 or psPAX2). The plasmids were mixed in 400 μl of serum-free DMEM or Opti-MEM, and added with 12 μL of polyethyleneimine (PEI). After 15 minutes of incubation at room temperature, the DNA-PEI solution was added drop-wise to the HEK293T cells. Viral supernatant was collected 48 hours and 72 hours after transfection, filtered through 0.45 μm membrane, and added to target cells in the presence of 8 μg/ml polybrene (Millipore, Billerica, MA). Cells were selected with antibiotics starting 72 hours after initial infection. MDA-MB-468 cells were selected with 0.5 μg/mL of puromycin, and maintained under the same concentration for culture.
 
-## Cell line construction
+### Cell line construction
 
 MDA-MB-468 cells that express KRAB-dCas9-P2A-mCherry were generated by lentiviral transduction and enriched by FACS sorting as a polyclonal population. MDA-MB-468 cells that express N-terminally tagged FKBP12F36V-MELK(sg3R), doxycycline-inducible shRNA, or MDA-MB-468-KRAB-dCas9 cells that express constitutive or doxycycline-inducible sgRNA were generated by lentiviral transduction followed by puromycin selection (0.5 μg/mL). For generating MELK knockout cell clones, we transfected MDA-MB-468 or MDA-MB-468-FKBP12F36V-MELK(sg3R) cells with a Cas9/sgMELK-3 plasmid using the Neon transfection system (1150V, 30 ms, 2 pulses) (Thermo Fisher Scientific). Cells expressing Cas9/sgMELK-3 were isolated by FACS for OFP +cells, and seeded sparsely in 10 cm plates. Single cell clones were selected and transferred to 96-well plates. Cell clones that survived the transfer were further expanded for genotyping and immunoblotting analysis to confirm the status of MELK.
 
-## Genotyping
+### Genotyping
 
 Genomic DNA was extracted from the cells transfected with Cas9/sgMELK-3 or from the expanded clonal cell lines using PureLink Genomic DNA Kits (Thermo Fisher Scientific). The genomic loci of interest were amplified by PCR using the primers listed in Supplementary file 2. Amplified PCR products were purified using QIAquick PCR Purification Kit, and sequenced using the same forward primer that was used for PCR amplification (Genewiz). The genetic status was determined with help of TIDE analysis (Brinkman et al., 2014) and direct interpretation of the ab1 files.
 
-## Antibodies
+### Antibodies
 
 Primary antibodies used in this study include anti-MELK (EPR3981, Abcam or GeneTex), anti-α-tubulin (RRID:AB_1904178; 3873S, Cell Signaling Technology), anti-GAPDH (RRID:AB_561053; 2118S, Cell Signaling Technology), and anti-Vinculin (RRID:AB_10604160; SAB4200080, Sigma). Secondary antibodies used were IRDye680-conjugated goat anti-rabbit IgG (RRID:AB_10956166; Cat# 926–68071, LI-COR Biosciences) and IRDye800-conjugated goat anti-mouse IgG (RRID:AB_621842; Cat# 926–32210, LI-COR Biosciences).
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed with RIPA buffer (50 mM Tris-HCl, 150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate, and 0.1% sodium dodecyl sulfate, pH 7.4) supplemented with EDTA-free protease inhibitor cocktails (cOmplete, Roche) and phosphatase inhibitor cocktails (PhosSTOP, Roche) at 4°C for at least 30 min. Clear lysates were collected after maximal speed centrifugation at 4°C for 10 minutes, and were analyzed for protein concentration using Pierce BCA protein assay (Thermo Fisher Scientific). Lysate concentrations are normalized, mixed with 4X NuPAGE LDS sample buffer (10% 2-mercaptoethanol added freshly; Thermo Fisher Scientific), and denatured at 95°C for 10 min. Equal amount of protein (20–40 μg) was resolved by Bolt 4–12% Bis-Tris Plus gels, and then transferred onto a nitrocellulose membrane. The membrane was blocked with 5% non-fat milk in TBS-T (TBS with 0.1% Tween-20), followed by incubation with primary antibodies at 4°C overnight. Next day, after washing with TBS-T, the membrane was incubated with fluorophore-conjugated secondary antibodies for 1 hour at room temperature. The membrane was then washed and scanned with an Odyssey Infrared scanner (Li-Cor Biosciences, Lincoln, NE). Note that in commercial gradient SDS-PAGE gels (majority of current study), MELK consistently appears as one band. While tested in 8% homemade SDS polyacrylamide gel (EC-890, 30% ProtoGel, National Diagnostics), MELK presents as two sharp bands that are close to each other (e.g. Figure 2A).
 
-## Cellular kinase engagement assay (Kinativ)
+### Cellular kinase engagement assay (Kinativ)
 
 MDA-MB-468 cells on 10 cm plates were treated with HTH-01-091 at indicated concentrations and MG132 (10 μM) for an hour. After washing, each plate was lysed with 500 μL of Pierce IP lysis buffer supplemented with EDTA-free protease inhibitor cocktails (cOmplete, Roche) and phosphatase inhibitor cocktails (PhosSTOP, Roche). For each sample of 500 μL cleared lysate, 10 μL of 1 M MgCl2 was added. Reconstitute ATP-desthibiotin probe with water into 0.25 mM and add 10 μL to each sample. After 10 min, quench the labeling reaction by adding 500 μL of 8 M Urea/IP lysis buffer. To pulldown the labeled proteins, 50 μL of Pierce streptavidin agarose beads were used for each sample. The beads were boiled at 95°C for 10 min and analyzed by immunoblotting.
 
-## Cell proliferation assay
+### Cell proliferation assay
 
 For monitoring the growth rates of MDA-MB-468 cells (parental, a WT clone and a MELK−/− clone), 2000 cells/well were seeded in 96-well plates on Day 0. On Day 1, 3 and 5, the relative number of cells was assessed using CellTiter-Glo (Promega cat# G7571) as described in product manual by luminescence measurements on an Envision plate reader (PerkinElmer). Reagents were warmed up to room temperature and the incubation time was fixed to minimize variations from day to day. For testing the sensitivity of breast cancer cells to MELK inhibitors at different doses, cells were plated in 96-well plates at 2000 (3-day growth) or 1000 (7-day growth) cells/well in fresh media and treated with OTSSP167, MRT199665, HTH-01-091, MELK-T1, NVS-MELK8a or DMSO at the indicated concentrations the next day. Antiproliferative effects of compounds were assessed using CellTiter-Glo (Promega cat# G7571). IC50 values were determined using GraphPad Prism 6 nonlinear regression curve fit. For assessing the effects of FKBP12F36V-MELK(sg3R) degradation or MELK knockdown by doxycycline-inducible shRNA or sgRNA on proliferation, 10,000 cells/well were seeded in 6- or 12-well plates. On the next day, we added dTAG-47 (500 nM) or doxycycline (100 ng/mL) to the treated wells, which are refreshed every 3 or 2 days, respectively. After 9 days, cells were fixed with formaldehyde and stained with crystal violet (0.05% wt/vol). The plates were imaged using the Gel Doc XR + Documentation System (Biorad) and quantified using ColonyArea, an ImageJ plugin that quantifies cell staining areas and intensities (Guzmán et al., 2014).
 
-## Inhibitor-induced MELK degradation
+### Inhibitor-induced MELK degradation
 
 MDA-MB-468 cells (0.25 × 106 cells/well) were seeded in 12-well plates the day before experiment. After treatment with MELK inhibitors, cells were harvested and analyzed by immunoblotting. For the rescue experiments, cells were pretreated with carfilzomib (0.4 μM) or MLN4924 (1 μM) for 4 hours before treatment with MELK inhibitors.
 
-## Cell cycle analysis and mitotic arrest
+### Cell cycle analysis and mitotic arrest
 
 For cell cycle analysis, cells were harvested, washed once in ice-cold phosphate buffered saline (PBS), and fixed overnight at –20°C with 80% ethanol in PBS. Cells were washed three times with PBS, and suspended in PBS containing 0.1% Triton X-100, 25 μg/mL propidium iodide (PI, Molecular Probes), and 0.2 mg/mL RNase A (Sigma). Samples were stained at 4°C overnight and stored at the same temperature until analysis by LSR Fortessa (BD Biosciences) flow cytometer. Results were analyzed using FlowJo (Treestar).
 
 To arrest MDA-MB-468 cells in mitosis, cells underwent a single thymidine block (2 mM thymidine, 16–24 hours), a 3-hour release, followed by treatment with 10 μM S-trityl-L-cysteine for 10 hours. Roughly 50% of MDA-MB-468 cells would float and arrest in mitosis using this method.
 
-## RT-qPCR analysis
+### RT-qPCR analysis
 
 Total RNA was extracted from cultured cells with RNeasy Plus Mini kit (Qiagen). 1 μg of the total RNA was reversely transcribed using iScript Reverse Transcription Supermix (Bio-Rad). cDNA were analyzed quantitatively using Power SYBR Green PCR Master Mix (Applied Biosystems) on an ABI7300 Real-time PCR system. Primers used were listed in Supplementary file 2. Cycling conditions were 95°C for 15 minutes, followed by 40 cycles of 15 seconds at 94°C, 30 seconds at 55°C and 30 seconds at 72°C. Ct values were generated using the default analysis settings. ΔCt was defined as Ct gene of interest − Ct actin. ΔΔCT was defined as ΔCt treated sample − ΔCt control sample. Relative quantification was calculated as 2−ΔΔCT.
 
-## Synthesis of HTH-01-091
+### Synthesis of HTH-01-091
 
 ![Chemical structure 1.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig6-v1.jpg)
 
-**Chemical structure 1.:** trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinoline-3-carboxylate.
-
-## Ethyl 6-chloro-4-((trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinoline-3-carboxylate
+#### Ethyl 6-chloro-4-((trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinoline-3-carboxylate
 
 In a stirring 1,4-dioxane solution (8 ml) of ethyl 4,6-dichloroquinoline-3-carboxylate (1 equiv., 0.716 mmol), trans-4-((dimethylamino)methyl)cyclohexan-1-amine diacetic acid (1 equiv., 0.716 mmol) and N,N-diisopropylethylamine (10 equiv., 7.16 mmol) were added and allowed to dissolve. The resulting solution was heated up to 90°C, and stirred for 12 hours before cooling to room temperature. The solvent was removed under reduced pressure, and the resultant crude was purified by Flash Column Chromatography on silica gel with 0–10% CH2Cl2/methanol (1.75N ammonia) gradient to give the desired product.
 
@@ -185,9 +538,7 @@ MS(ESI) calculated for C21H29ClN3O2 [M + H]+, 390; found 390.
 
 ![Chemical structure 2.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig7-v1.jpg)
 
-**Chemical structure 2.:** trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinolin-3-yl)methanol.
-
-## Preparation of (6-chloro-4-((trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinolin-3-yl)methanol
+#### Preparation of (6-chloro-4-((trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinolin-3-yl)methanol
 
 To a THF (9 mL) solution of ethyl 6-chloro-4-((trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinoline-3-carboxylate (1 equiv., 0.308 mmol) purged with argon and sitting in an ice bath, lithium aluminium hydride (70 mg, 6 equiv., 1.85 mmol) was slowly added in three portions. The reaction mixture was allowed to warm up to room temperature and stirred overnight. The reaction was quenched by an addition of 70 μL of water, followed by 70 μL of 15% NaOH(aq) and 210 μL of water. Filter the crude through Celite. Purification was performed by Flash Column Chromatography on silica gel with 0–20% CH2Cl2/methanol (1.75N ammonia) gradient to give the desired compound.
 
@@ -195,9 +546,7 @@ MS(ESI) calculated for C19H27ClN3O [M + H]+, 348; found 348.
 
 ![Chemical structure 3.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig8-v1.jpg)
 
-**Chemical structure 3.:** N-(trans-4-((dimethylamino)methyl)cyclohexyl)quinolin-4-amine.
-
-## 6-chloro-3-(((2,4-dimethoxybenzyl)amino)methyl)-N-(trans-4-((dimethylamino)methyl)cyclohexyl)quinolin-4-amine
+#### 6-chloro-3-(((2,4-dimethoxybenzyl)amino)methyl)-N-(trans-4-((dimethylamino)methyl)cyclohexyl)quinolin-4-amine
 
 To a dichloromethane (2.5 mL) solution of (6-chloro-4-((trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinolin-3-yl)methanol (89 mg, 1 equiv., 0.256 mmol) was added manganese oxide (445 mg, 5 mass equiv.) and stirred for 3 hours at room temperature. The reaction mixture was filtered and concentrated to afford the crude product, 6-chloro-4-((trans-4-((dimethylamino)methyl)cyclohexyl)amino)quinoline-3-carbaldehyde, which was used in the next step without further purification.
 
@@ -207,9 +556,7 @@ MS(ESI) calculated for C28H38ClN4O2 [M + H]+, 497; found 497.
 
 ![Chemical structure 4.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig9-v1.jpg)
 
-**Chemical structure 4.:** trans-4-((dimethylamino)methyl)cyclohexyl)−3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one.
-
-## Preparation of 9-chloro-3-(2,4-dimethoxybenzyl)−1-(trans-4-((dimethylamino)methyl)cyclohexyl)−3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one
+#### Preparation of 9-chloro-3-(2,4-dimethoxybenzyl)−1-(trans-4-((dimethylamino)methyl)cyclohexyl)−3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one
 
 To a dichloromethane solution containing 6-chloro-3-(((2,4-dimethoxybenzyl)amino)methyl)-N-(trans-4-((dimethylamino)methyl)cyclohexyl)quinolin-4-amine (1.0 equiv., 0.037 mmol) and diisopropylethylamine (3.0 equiv., 0.111 mmol) in ice bath was added triphosgene (1.0 equiv., 0.037 mmol). Stir for 1 hour. Remove the solvent under reduced pressure. Purification was performed by Flash Column Chromatography on silica gel with 0–10% CH2Cl2/methanol (1.75N ammonia) gradient to afford the desired compound.
 
@@ -217,9 +564,7 @@ MS(ESI) calculated for C29H36ClN4O3 [M + H]+, 523; found 523.
 
 ![Chemical structure 5.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig10-v1.jpg)
 
-**Chemical structure 5.:** trans-4-((dimethylamino)methyl)cyclohexyl)−3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one (HTH-01-091).
-
-## Preparation of 9-(3,5-dichloro-4-hydroxyphenyl)-1-(trans-4-((dimethylamino)methyl)cyclohexyl)-3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one (HTH-01-091)
+#### Preparation of 9-(3,5-dichloro-4-hydroxyphenyl)-1-(trans-4-((dimethylamino)methyl)cyclohexyl)-3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one (HTH-01-091)
 
 In a 1,4-dioxane/sat. Na2CO3(aq)(3:1) solution (0.8 mL) containing 9-chloro-3-(2,4-dimethoxybenzyl)−1-(trans-4-((dimethylamino)methyl)cyclohexyl)−3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one (1.0 equiv., 0.015 mmol) was added (3,5-dichloro-4-hydroxyphenyl)boronic acid (1.5 equiv., 0.023 mmol) and 2-di-tert-butylphosphino-2’,4’,6’-triisopropylbiphenyl (10% equiv., 0.0015 mmol). The reaction was purged thoroughly with argon, to which 10% equivalent of bis(tripheylphosphine)palladium(II) dichloride (0.0015 mmol) was added. The reaction was heated to 85°C and continue stirring for 2 hours. The reaction was worked up in water (10 mL) and CHCl3:iPrOH(4:1) (15 mL ×3). The organic layers were collected and washed with brine solution (10 mL). The solvent was removed under reduced pressure to afford the crude product 9-(3,5-dichloro-4-hydroxyphenyl)−3-(2,4-dimethoxybenzyl)−1-(trans-4-((dimethylamino)methyl)cyclohexyl)−3,4-dihydropyrimido[5,4 c]quinolin-2(1H)-one, which was used in the next step without further purification.
 
@@ -231,13 +576,11 @@ MS(ESI) calculated for C35H39Cl2N4O4 [M + H]+, 649; found 649.
 
 MS(ESI) calculated for C26H29Cl2N4O2 [M + H]+, 499; found 499.
 
-## Synthesis of dTAG-36
+### Synthesis of dTAG-36
 
 ![Chemical structure 6.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig11-v1.jpg)
 
-**Chemical structure 6.:** tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-4-yl)amino)octyl)carbamate.
-
-## tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-4-yl)amino)octyl)carbamate
+#### tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-4-yl)amino)octyl)carbamate
 
 2-(2,6-dioxopiperidin-3-yl)−4-fluoroisoindoline-1,3-dione (481.6 mg, 1.74 mmol, 1 eq) and tert-butyl (8-aminooctyl)carbamate (467.7 mg, 1.91 mmol, 1.1 eq) were dissolved in NMP (8.7 mL, 0.2M). DIPEA (606 µL, 3.48 mmol, 2 eq) was added and the mixture was heated to 90°C. After 15 hours, the mixture was diluted with ethyl acetate and washed with 10% citric acid (aq), saturated sodium bicarbonate, water and three times with brine. The organic layer was dried over sodium sulfate, filtered and concentrated under reduced pressure. Purification by column chromatography (ISCO, 12 g column, 0–5% MeOH/DCM, 25 min gradient) gave the desired product as a yellow oil (0.55 g, 1.099 mmol, 63%).
 
@@ -247,7 +590,7 @@ LCMS 501.42 (M + H).
 
 ![Chemical structure 7.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig12-v1.jpg)
 
-## 4-((8-aminooctyl)amino)−2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione
+#### 4-((8-aminooctyl)amino)−2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione
 
 tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-4-yl)amino)octyl)carbamate (0.55 g, 1.099 mmol, 1 eq) was dissolved in TFA (11 mL) and heated to 50°C. After 40 min, the mixture was cooled to room temperature, diluted with MeOH/DCM and concentrated under reduced pressure. The crude material was triturated with diethyl ether and dried under vacuum to give a cream colored solid (522.97 mg, 1.016 mmol, 93%).
 
@@ -257,9 +600,7 @@ LCMS 401.39 (M + H)
 
 ![Chemical structure 8.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig13-v1.jpg)
 
-**Chemical structure 8.:** S)-(1R)−3-(3,4-dimethoxyphenyl)−1-(2-(2-((8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-4-yl)amino)octyl)amino)−2-oxoethoxy)phenyl)propyl 1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carboxylate (dTAG-36).
-
-## (2S)-(1R)−3-(3,4-dimethoxyphenyl)−1-(2-(2-((8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-4-yl)amino)octyl)amino)−2-oxoethoxy)phenyl)propyl 1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carboxylate (dTAG-36)
+#### (2S)-(1R)−3-(3,4-dimethoxyphenyl)−1-(2-(2-((8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-4-yl)amino)octyl)amino)−2-oxoethoxy)phenyl)propyl 1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carboxylate (dTAG-36)
 
 4-((8-aminooctyl)amino)−2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione trifluoroacetate salt (10.3 mg, 0.020 mmol, 1 eq) was added to 2-(2-((R)−3-(3,4-dimethoxyphenyl)−1-(((S)−1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carbonyl)oxy)propyl)phenoxy)acetic acid (13.9 mg, 0.020 mmol, 1 eq) as a 0.1 M solution in DMF (200 microliters) at room temperature. DIPEA (10.5 microliters, 0.060 mmol, 3 eq) and HATU (7.6 mg, 0.020 mmol, 1 eq) were then added. After 30 hours, the mixture was diluted with EtOAc, and washed with 10% citric acid (aq), brine, saturated sodium bicarbonate, water and brine. The organic layer was dried over sodium sulfate, filtered and condensed. Purification by column chromatography (ISCO, 4 g silica column, 0–10% MeOH/DCM, 25 min gradient) gave the desired product as a yellow solid (16.5 mg, 0.0153 mmol, 77%).
 
@@ -269,13 +610,11 @@ LCMS 401.39 (M + H)
 
 LCMS: 1077.32 (M + H)
 
-## Synthesis of dTAG-47
+### Synthesis of dTAG-47
 
 ![Chemical structure 9.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig14-v1.jpg)
 
-**Chemical structure 9.:** tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-5-yl)amino)octyl)carbamate.
-
-## tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-5-yl)amino)octyl)carbamate
+#### tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-5-yl)amino)octyl)carbamate
 
 2-(2,6-dioxopiperidin-3-yl)−5-fluoroisoindoline-1,3-dione (294 mg, 1.06 mmol, 1 eq) and tert-butyl (8-aminooctyl)carbamate (286 mg, 1.17 mmol, 1.1 eq) were dissolved in NMP (5.3 mL, 0.2M). DIPEA (369 µL, 2.12 mmol, 2 eq) was added and the mixture was heated to 90°C. After 19 hours, the mixture was diluted with ethyl acetate and washed with water and three times with brine. The organic layer was dried over sodium sulfate, filtered and concentrated under reduced pressure. Purification by column chromatography (ISCO, 12 g column, 0–10% MeOH/DCM, 30 min gradient) gave the desired product as a brown solid (0.28 g, 0.668 mmol, 63%).
 
@@ -285,7 +624,7 @@ LCMS 501.41 (M + H)
 
 ![Chemical structure 10.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig15-v1.jpg)
 
-## 5-((8-aminooctyl)amino)−2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione trifluoroacetate
+#### 5-((8-aminooctyl)amino)−2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione trifluoroacetate
 
 tert-butyl (8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-5-yl)amino)octyl)carbamate (334.5 g, 0.668 mmol, 1 eq) was dissolved in TFA (6.7 mL) and heated to 50°C. After 1 hour, the mixture was cooled to room temperature, diluted with DCM and concentrated under reduced pressure. The crude material was triturated with diethyl ether and dried under vacuum to give a dark yellow foam (253.1 mg, 0.492 mmol, 74%).
 
@@ -295,9 +634,7 @@ LCMS 401.36 (M + H)
 
 ![Chemical structure 11.](https://cdn.elifesciences.org/articles/26693/elife-26693-fig16-v1.jpg)
 
-**Chemical structure 11.:** S)-(1R)−3-(3,4-dimethoxyphenyl)−1-(2-(2-((8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-5-yl)amino)octyl)amino)−2-oxoethoxy)phenyl)propyl 1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carboxylate (dTAG-47).
-
-## (2S)-(1R)−3-(3,4-dimethoxyphenyl)−1-(2-(2-((8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-5-yl)amino)octyl)amino)−2-oxoethoxy)phenyl)propyl 1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carboxylate (dTAG-47)
+#### (2S)-(1R)−3-(3,4-dimethoxyphenyl)−1-(2-(2-((8-((2-(2,6-dioxopiperidin-3-yl)−1,3-dioxoisoindolin-5-yl)amino)octyl)amino)−2-oxoethoxy)phenyl)propyl 1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carboxylate (dTAG-47)
 
 5-((8-aminooctyl)amino)−2-(2,6-dioxopiperidin-3-yl)isoindoline-1,3-dione trifluoroacetate salt (10.3 mg, 0.020 mmol, 1 eq) was added to 2-(2-((R)−3-(3,4-dimethoxyphenyl)−1-(((S)−1-((S)−2-(3,4,5-trimethoxyphenyl)butanoyl)piperidine-2-carbonyl)oxy)propyl)phenoxy)acetic acid (13.9 mg, 0.020 mmol, 1 eq) as a 0.1 M solution in DMF (200 microliters) at room temperature. DIPEA (10.5 microliters, 0.060 mmol, 3 eq) and HATU (7.6 mg, 0.020 mmol, 1 eq) were then added. After 29.5 hours, the mixture was diluted with EtOAc, and washed with 10% citric acid (aq), brine, saturated sodium bicarbonate, water and brine. The organic layer was dried over sodium sulfate, filtered and condensed. Purification by column chromatography (ISCO, 4 g silica column, 0–10% MeOH/DCM, 25 min gradient) gave the desired product as a yellow solid (14.1 mg, 0.0131 mmol, 65%).
 
@@ -307,32 +644,32 @@ LCMS 401.36 (M + H)
 
 LCMS: 1077.35 (M + H)
 
-## Crystal structure determination
+### Crystal structure determination
 
 To obtain the structure of MELK in complex with MRT199665, the MELK kinase domain (residues 1–340) was expressed as a His6-GST-fusion using a baculovirus/insect cell expression system. After purification and cleavage of the affinity tags, purified MELK protein was concentrated to 8 mg/ml in buffer containing 20 mM Tris (pH 8.0), 300 mM NaCl, 5% glycerol and 4 mM DTT. Well-ordered apo MELK crystals were obtained in hanging drops over a reservoir containing 100 mM Bis-Tris (pH 7.0), 10% (w/v) PEG3350, 200 mM NaCl, 10% glycerol and 10 mM DTT. The complex structure was made by soaking apo MELK crystals for 84 hours in 100 µM MRT199665 in cryo-buffer (100 mM Bis-Tris (pH 7.0), 10% (w/v) PEG3350, 200 mM NaCl, 25% glycerol, 10 mM DTT). Diffraction data were collected at the Argonne National Laboratory ID24E beamline. The structure was solved by molecular replacement with PHENIX (Adams et al., 2010) using the unliganded structure as a search model. Coordinates for MRT199665 were generated using PRODRG (Schüttelkopf and van Aalten, 2004), and were fit using PHENIX. Further refitting and refinement of the model were performed with Coot (Emsley and Cowtan, 2004) and PHENIX.
 
 To obtain the structure of MELK in complex with HTH-01-091, a construct of human MELK covering residues 2–333 in the pTRXHGST vector was overexpressed in E. coli BL21 (DE3) in LB medium in the presence of 50 mg/ml of kanamycin. After purification and cleavage of the affinity tags, purified MELK protein was concentrated to 10 mg/ml in 20 mM HEPES (pH 7.5), 200 mM NaCl, 5% glycerol, and 5 mM DTT. Two equivalences of HTH-01-091 (from a 10 mM in DMSO stock) was mixed with 250 µM protein and crystallized by sitting-drop vapor diffusion at 20°C in the following crystallization buffer: 25% (w/v) PEG3350, 0.2 M MgCl2, 0.1 M Bis-Tris (pH 5.5). Crystals were transferred briefly into crystallization buffer containing 25% glycerol prior to flash-freezing in liquid nitrogen. Diffraction data from complex crystals were collected at Argonne National Laboratory ID24E beamline. Data sets were integrated and scaled using XDS (Kabsch, 2010). Structures were solved by molecular replacement using the program Phaser (McCoy et al., 2007) and the search model PDB entry 4BL1. The ligand was positioned and preliminarily refined using Buster and Rhofit (Smart et al., 2012). Iterative manual model building and refinement using PHENIX and COOT led to a model with excellent statistics (Supplementary file 1).
 
-## Accession codes
+### Accession codes
 
 PDB codes 5TWL and 5TX3 represent MELK crystal structure in complex with HTH-01-091 and MRT199665, respectively. The authors will release the atomic coordinates and experimental data upon article publication.
 
-## Sample preparation for quantitative mass spectrometry analysis
+### Sample preparation for quantitative mass spectrometry analysis
 
 MELK−/− MDA-MB-468-FKBP12F36V-MELK cells were treated in duplicates with DMSO for 30 minutes or 60 minutes, or in triplicates with dTAG-7 (250 nM) for 30 minutes or 60 minutes. Cells were washed with ice-cold PBS once, collected by scraping and centrifugation, and lysed in 1 mL of lysis buffer (8 M urea, 1% SDS, 50 mM Tris pH8.5 supplemented with protease and phosphatase inhibitors). A micro-BCA assay (Pierce) was used to determine the protein concentration of each sample. A total of 1200 µg of proteins from each sample was depleted of abundant proteins using two Pierce Top 12 protein depletion spin columns. Eluted proteins were combined, and protein concentration was determined by micro-BCA. Proteins were precipitated on ice for 1 hour with 13% trichloroacetic acid (TCA), washed twice with acetone, and pellets were allowed to air dry. Proteins were resuspended in 6 M urea, 50 mM Tris pH 8.5, reduced with 5 mM dithiothreitol (DTT) at room temperature for 1 hour, and alkylated with 15 mM iodoacetamide in the dark at room temperature for 1 hour. Alkylation was quenched with DTT. Urea concentration was reduced to 4 M and proteins were digested with LysC (1:50; enzyme:protein) for 6 hours at 25°C. The LysC digestion was diluted to 1 M urea, 50 mM Tris pH 8.5 and then digested with trypsin (1:100; enzyme:protein) overnight at 37°C. Peptides were desalted using a C18 solid phase extraction cartridges as previously described (Weekes et al., 2014) and dried by SpeedVac. Dried peptides were resuspended in 200 mM EPPS pH 8.0. Peptide quantification was performed using the micro-BCA assay (Pierce). The same amount of peptide from each condition was labeled with tandem mass tag (TMT) reagent (1:4; peptide:TMT label) (Pierce). The 10-plex labeling reactions were performed for 2 hour at 25°C. Modification of tyrosine residue with TMT was reversed by the addition of 5% hydroxyl amine for 15 min at 25°C. The reaction was quenched with 0.5% trifluoroactic acid (TFA) and samples were combined at a 1:1:1:1:1:1:1:1:1:1 ratio. Combined samples were desalted and offline fractionated into 24 fractions as previously described (McAlister et al., 2014).
 
-## Liquid chromatography-MS3 spectrometry (LC-MS/MS)
+### Liquid chromatography-MS3 spectrometry (LC-MS/MS)
 
 12 of the 24 peptide fractions from the basic reverse phase fractionation (every other fraction) were analyzed with an LC-MS3 data collection strategy (McAlister et al., 2014) on an Orbitrap Fusion mass spectrometer (Thermo Fisher Scientific) equipped with a Proxeon Easy nLC 1000 for online sample handling and peptide separations. Approximately, 5 µg of peptide resuspended in 5% formic acid +5% acetonitrile was loaded onto a 100 µm inner diameter fused-silica micro capillary with a needle tip pulled to an internal diameter less than 5 µm. The column was packed in-house to a length of 35 cm with a C18 reverse phase resin (GP118 resin 1.8 μm, 120 Å, Sepax Technologies). The peptides were separated using a 180 min linear gradient from 3% to 25% buffer B (100% acetonitrile (ACN) +0.125% formic acid) equilibrated with buffer A (3% ACN +0.125% formic acid) at a flow rate of 400 nL/min across the column. The scan sequence for the Fusion Orbitrap began with an MS1 spectrum (Orbitrap analysis, resolution 120,000, 400–1400 m/z scan range, AGC target 2 × 105, maximum injection time 100 ms, dynamic exclusion of 90 s). The ‘Top10’ precursors was selected for MS2 analysis, which consisted of CID (quadrupole isolation set at 0.5 Da and ion trap analysis, AGC 8 × 103, NCE 35, maximum injection time 150 ms). The top ten precursors from each MS2 scan were selected for MS3 analysis (synchronous precursor selection), in which precursors were fragmented by HCD prior to Orbitrap analysis (NCE 55, max AGC 1 × 105, maximum injection time 150 ms, resolution 60,000.
 
-## LC-MS3 data analysis
+### LC-MS3 data analysis
 
 A suite of in-house software tools were used to for. RAW file processing and controlling peptide and protein level false discovery rates, assembling proteins from peptides, and protein quantification from peptides as previously described. MS/MS spectra were searched against a Uniprot human database (February 2014) with both the forward and reverse sequences. Database search criteria are as follows: tryptic with two missed cleavages, a precursor mass tolerance of 50 ppm, fragment ion mass tolerance of 1.0 Da, static alkylation of cysteine (57.02146 Da), static TMT labeling of lysine residues and N-termini of peptides (229.162932 Da), and variable oxidation of methionine (15.99491 Da). TMT reporter ion intensities were measured using a 0.003 Da window around the theoretical m/z for each reporter ion in the MS3 scan. Peptide spectral matches with poor quality MS3 spectra were excluded from quantitation (<200 summed signal-to-noise across 10 channels and <0.5 precursor isolation specificity).
 
-## Differential protein abundance analysis
+### Differential protein abundance analysis
 
 The entire set of data were disclosed in Figure 4—source data 1, but we only presented the results from the 60-min time point in this report (Figure 4—source data 2), as the 30-min time point provided a similar conclusion with milder FKBP12F36V-MELK degradation. All data analysis was carried out using the R statistical framework (Core Team, 2016). Reporter ion intensities were normalized (normalization factors calculated by dividing the summed intensities of each channel by the maximum value of all channels, and subsequently applied to each reporter ion value) and scaled (scaling the sum of reporter ion intensities to 100 for each protein/peptide) using in-house scripts. Proteins quantified with a minimum of 2 unique peptides were considered for downstream analysis. Log2 transformed, scaled and normalized reporter ion intensities were analyzed using a linear model approach implemented in the limma package (RRID:SCR_010943), which is free and available online under Bioconductor (https://www.bioconductor.org/help/search/index.html?q=limma/) (Ritchie et al., 2015). Resulting data were subjected to a moderated t-test to assess statistical significance also implemented in the limma package. In the moderated t-test, the standard errors are more robust calculated using an empirical Bayes method inferring information across all proteins. The ‘topTable’ output from limma is provided as Figure 4—source data 2, and contains the values LogFC (log2 transformed fold change of dTAG-7 to DMSO), AveExpr (not interpretable in the study design), t (moderated t-statistic), P Value (associated P Value), and Adjusted P Value (the P Value adjusted for multiple hypothesis testing). Data in Figure 4—source data 2 were used for plotting Figure 4D.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests and the associated error bars are identified in the corresponding figure legends. Typical replicate numbers describe the number of technical replicates analyzed in a single experiment. ‘Independent’ replicate numbers describe the number of biological replicates, which were experiments performed on different days. Data met the assumptions for all tests used. Sample sizes were not predetermined using any statistical analyses.

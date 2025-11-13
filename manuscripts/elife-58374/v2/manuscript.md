@@ -35,9 +35,33 @@ Therefore, to further explore the role of SOX11 in regulating cancer stem cell 
 
 ## Results
 
-## Inducible expression of SOX11 leads to changes in stem cell profiles of DCIS.com cells
+### Inducible expression of SOX11 leads to changes in stem cell profiles of DCIS.com cells
 
 To investigate the role of SOX11 in breast cancer progression, we used the pINDUCER21 system to stably transduce DCIS.com cells, an invasive cell line from the MCF10A breast cancer progression series, so that SOX11 was expressed only when induced with Doxycycline (DOX) (referred to as iSOX11 cells) (Figure 1A–B). The results show a significantly higher, sustained expression of SOX11 levels compared with the previous constitutive model we have used to study DCIS progression which lost SOX11 expression over time (Figure 1—figure supplement 1; Oliemuller et al., 2017). As expected, SOX11 localised mostly to the nuclei in iSOX11 cells, similar to that observed in SOX11+ DCIS case samples (Figure 1A–C and Figure 1—figure supplement 1). SOX11 is also detected in the cytoplasm of iSOX11 cells using western blotting (Figure 1A), a location that was not observed in the DCIS-SOX11 cells (data not shown), showing that some differences exist when SOX11 is expressed at different levels in the two models.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig1-v2.jpg)
+
+**Figure 1.:** (A) Western blot of SOX11 in cytoplasmic and nuclear fractions of DCIS.com cells containing the pInducer21 empty vector in presence (iEV) or absence (niEV) of 1 μM Doxycycline (DOX) or the pInducer21SOX11 with (iSOX11) or without DOX (niSOX11). GAPDH and LAMIN B1 were used as loading control of cytoplasmic and nuclear fractions, respectively. Densitometry results normalised against niSOX11 are shown in brackets. (B) SOX11 expression detected in iSOX11 cells stained by IF after 48 hr of DOX induction. Scale Bar: 200 μm. (C) ER- DCIS case sample showing SOX11 staining in DCIS and adjacent normal breast tissue. Scale Bar: 200 μm. (D) Results from flow cytometry analysis of Aldefluor assays of niEV and niSOX11 cells (day 0) and iEV and iSOX11 after 2 days treatment with 1 μM DOX. Results show the % of ALDH+ cells normalised against niEV. Error bars represent SD. *p = 0.0223. n = 5. (E) Results from flow cytometry analysis of CD24 and CD44 of niEV and niSOX11 cells (day 0) and iEV and iSOX11 after treatment with 1 μM DOX for 2 days. Results show the average % of cells CD44+/CD24+ in each condition. Error bars represent SD. ***p = 0.0005 (iSOX11 vs niSOX11) and p = 0.0009 (iSOX11 vs iEV) n = 3. (F) Western blot of CD24 in cytoplasmic and nuclear fractions of niEV, niSOX11, iEV and iSOX11 cells. GAPDH and LAMIN B1 were used as loading control of cytoplasmic and nuclear fractions, respectively. In brackets densitometry results normalised against niSOX11. (G) Confocal images of IF staining of E-CADHERIN, N-CADHERIN, VIMENTIN in niSOX11 and iSOX11 cells. Cells were grown in slides covered with Collagen I. Scale Bar: 200 μm. (H) Western blot of N-CADHERIN and VIMENTIN in cytoplasmic and nuclear fractions of niEV, niSOX11, iEV and iSOX11 cells. GAPDH and LAMIN B1 were used as loading control of cytoplasmic and nuclear fractions, respectively. Densitometry results normalised against niSOX11 are shown in brackets. (I) Confocal IF images of iEV and iSOX11 spheroids treated with 1 μM DOX, stained with luminal marker, K8, and basal markers K14 or SMA, and DAPI. Scale bar: 200 μm. DOX: doxycycline, IF: Immunofluorescence.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot to detect SOX11 in nuclear proteins of DCIS.com cells transduced with pLenti6.3 LacZ or SOX11. (B) Western blot to detect SOX11 in total cell lysates to determine the concentration of DOX needed to induce SOX11. (C) Western blot to detect SOX11 with total cell lysates induced with 1 μM DOX at different times. (D) Western blot to detect SOX11 with total cell lysates induced with 1 μM DOX for 24 hr and cultured in media without DOX at different times afterwards. (E) Representative flow cytometry analysis of CD44/CD24 cell populations of EV and SOX11 cells before and after 2-day treatment with DOX. Experiments were performed three times. (F) Fluorescence levels of iEV and iSOX11 after treatment with DOX stained by IF with CD24. The positively stained area for CD24 at different DOX concentrations was normalised by the area stained with DAPI. The results are shown normalised against no DOX. DOX: Doxycycline, IF: Immunofluorescence.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) ALDH activity levels in EV and SOX11 cells before and after 2 days treatment with DOX were detected with the Aldefluor assay. Cells were stained and sorted with CD44 and CD24 antibodies, and ALDH activity was measured with the Aldefluor kit. Representative ALDH activities after flow cytometry analysis in CD44/CD24+ EV and SOX11 cell populations before and after 2 days treatment with DOX are shown. +DEAB plots display the negative control; cells incubated with diethylaminobenzaldehyde (DEAB), the specific inhibitor of ALDH, were used to establish the baseline fluorescence of these cells are shown in insets. Experiments were performed five times. (B) The frequency of CD44+/CD24+ALDH cells are shown in EV and SOX11 cells before and after 2 days treatment with DOX. Error bars represent SD. Experiment performed five times. **p = 0.0029. DOX: Doxycycline.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) E-CADHERIN, N-CADHERIN, VIMENTIN IF staining of EV or SOX11 cells grown in collagen induced with and without DOX treatment. Scale bar: 200 μm. (B) Fluorescence levels of iEV and iSOX11 stained by IF with SOX11, VIM, K5 and K8. The positively stained area for each protein was normalised by the area stained with DAPI. The results are shown normalised against niEV and niSOX11. (C) VIMENTIN IF and DAPI staining of EV or SOX11 cells induced with DOX and without DOX treatment. Scale bar: 200 μm. DOX: Doxycycline, IF: Immunofluorescence.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Confocal images of spheres formed with niEV, niSOX11, iEV and iSOX11 cells induced for 2 or 5 days with 1 μM DOX, and stained by IF with K14, K8 and SOX11. Scale bar: 200 μm. DOX: Doxycycline, IF: Immunofluorescence.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Confocal images of spheres formed with niEV, niSOX11, iEV and iSOX11 cells induced for 2 or 5 days with 1 μM DOX, and stained by IF with K14, SMA and SOX11. Scale bar: 200 μm. DOX: Doxycycline, IF: Immunofluorescence.
 
 To study the role of SOX11 in regulating stem cell state, we used the inducible iSOX11 model and assessed CSC profiles. CSCs are subpopulations of cancer cells sharing similar characteristics as normal stem or progenitor cells such as self-renewal ability and multi-lineage differentiation to drive tumour growth and heterogeneity. ALDH1 and CD24 are widely used CSC markers in breast cancer (Liu et al., 2014). A higher proportion of CD24+ and ALDH+ cells are detected in iSOX11 cells compared to control iEV cells (DCIS.com cells stably transduced with pINDUCER21 empty vector and induced with DOX) by flow cytometry (Figure 1D–E and Figure 1—figure supplements 1–2). Moreover, CD24 expression levels were significantly increased in a DOX dose-dependent manner in iSOX11 cells (Figure 1—figure supplement 1). CD24 is predominantly located in the membrane and CD24 was detected in the cytoplasmic fraction of both iEV and iSOX11 cells, and also detected in the nuclear fraction of iSOX11 cells, which has been previously reported in breast cancer (Figure 1F; Duex et al., 2017).
 
@@ -45,23 +69,142 @@ When cells were grown on collagen, we detected loss of membranous E-Cadherin loc
 
 To further analyse the effects of SOX11 on mammary epithelial phenotypes, we assessed the expression of markers associated with the two major mammary lineages in DCIS cells grown as spheroids that formed from iSOX11 and to iEV, niEV, and niSOX11 control cells. We detected significant increases in expression of both luminal (K8) and basal (K14, SMA) lineage markers in SOX11-expressing spheroids as well as a significant increase in cells co-expressing markers of both lineages, which is suggestive of embryonic mammary phenotypes (Figure 1I and Figure 1—figure supplements 4–5).
 
-## DCIS cells expressing SOX11 grow more slowly and form more invasive spheroids
+### DCIS cells expressing SOX11 grow more slowly and form more invasive spheroids
 
 Reduced cell growth was detected in iSOX11 cells compared to control iEV cells grown in both 2D or as spheroids (Figure 2A–B). Control iEV cells were more clonogenic than iSOX11 cells whether plated in colony-forming assays or when grown from single cells (Figure 2—figure supplement 1). Although iEV cells have greater colony-forming capacity than iSOX11 when large colonies (greater than 50 microns)﻿ were counted, a greater number of small colonies (less than 50 microns) formed (Figure 2—figure supplement 1). We found DCIS-LacZ control cells also exhibited both greater colony and sphere-forming capacity than DCIS-SOX11 cells (Figure 2—figure supplement 1). As with iSOX11 cells, a greater number of small colonies form in colony-formation assays with DCIS-SOX11 cells. Spheroids formed from PKH-labelled DCIS-SOX11 cells are smaller and retain PKH dye more than labelled DCIS-LacZ cells (Figure 2—figure supplement 1). These results show that SOX11 expression leads to a reduction of larger spheroids formed from DCIS.com cells and increased formation of smaller spheroids that retain label. Multiple attempts to transduce primary human breast epithelial cells to express SOX11 constitutively with a CMV-driven vector were unsuccessful but are consistent with a possible role for SOX11 in regulating a quiescent state (data not shown).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cell growth assays results for iEV or iSOX11 DCIS cells (induced with 1 μM DOX for 72 hr). Experiments were performed five times. Error bars represent SEM. *p = 0.0450 and ****p < 0.0001. (B) Cell growth assays results for spheroid formed with iEV or iSOX11 DCIS cells induced with 1 μM DOX for 3 or 7 days. Experiments were performed three times. Error bars represent SEM. p-values (3 days): *p = 0.0374 (niEV vs niSOX11), *p = 0.0221 (niSOX11 vs iSOX11) ***p = 0.0002. p- values (7 days): ***p = 0.0004 and ****p < 0.0001 (C) Examples of DCIS iEV and DCIS iSOX11 spheroids grown on low attachment plates. Graph shows the number of microsatellites per sphere. ****p < 0.0001. (D) Invasion assay after overlaying niEV, iEV, niSOX11 and iSOX11 DCIS spheroids with Collagen I. Scale bar: 200 μm. Graph shows the area invaded in pixel2 normalised against niEV. Both ****p < 0.0001. (E–G) IVIS imaging, tumour volumes and luminescence total flux/volume results after mammary fat pad xenografts. p-value in F: *p = 0.0331. p-values in G: *p = 0.0252 (niSOX11 vs iSOX11 625ppm), *p = 0.0285 (iEV 625 ppm vs iSOX11 625 ppm), **p = 0.0082. (H) Representative images of IHC staining to detect Cleaved Caspase three and H and Es of tumours resected from mice injected with iEV and iSOX11 cells. Scale bar: 500 μm. (I–K) IVIS imaging, tumour volumes and luminescence total flux after mammary intraductal injection (MIND) xenografts. *p = 0.0286 (U Mann Whitney). DOX: doxycycline, IHC: Immunohistochemistry.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative colony-forming assay results using niEV, iEV, niSOX11 and iSOX11 cells. The area stained with crystal violet was quantified and normalised by the area of niEV or niSOX11, respectively. Representative photo is shown. Experiment was performed thrice with three replicates each. (B) Percentage of iEV and iSOX11 cells plated in two‐dimensional (2D) culture that form colonies. Cells were sorted by FACS and single cells were plated per well in a 96-well. Results are shown as the % of clones obtained divided by the cells seeded in each cell line. Experiment was performed twice with 30 cells for each cell line. (C) Percentage of DCIS-LacZ and DCIS-SOX11 cells plated in two‐dimensional (2D) culture that form colonies. Cells were sorted by FACS sorted and single cells were plated per well in a 96-well. Results are shown as the % of clones obtained divided by the cells seeded in each cell line. Experiment was performed thrice with 30 cells for each cell line. Typical morphologies observed for DCIS-LacZ and DCIS-SOX11 clones are shown. (D) Quantification of sphere-initiating capacity of DCIS-LacZ and DCIS-SOX11 cells plated in three‐dimensional (3D) culture that form spheres grown in methylcellulose and ultra-low attachment plates. Results are shown as the % of clones larger than 50 µm (upper graph) or as a percentage of total clones (down) obtained divided by the cells seeded in each cell line. Experiments were performed twice with six biological replicates each. 10,000 cells were plated per well. Typical morphologies observed for spheroid formed from DCIS-lacZ and DCIS-SOX11 cells grown in methylcellulose and ultra-low attachment plates. (E) Representative images showing PKH26 dye labelling of DCIS-lacZ and DCIS-SOX11 spheres grown in ultra-low attachment 96-well plates after 14 days. Graphs represent the size of the spheres formed (pixel2) and the percentage of the area that is PKH+ in each sphere. Experiment was replicated twice (n = 35).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Average luminescence results in IVIS images after mammary fat pad xenografts of iEV or iSOX11 in mice that were fed with high doses of DOX. (B) Tumour volumes after mammary fat pad xenografts. (C) Representative images of IHC to detect Cleaved Caspase three in tumours resected from mice injected with iEV and iSOX11 tumours. Scale bar: 500 μm. (D) Average luminescence results in IVIS images of mice xenografted with iEV and iSOX11 cells at day 6, 14, 21 and 28 after placing half on DOX or off DOX diet after an initial 42 days on DOX. DOX: Doxycycline.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Data shown are from mice xenografted with iEV and iSOX11 cells and fed DOX chow. DOX: Doxycycline, H and E: Haematoxylin/Eosin.
 
 SOX11 expression is enriched in ER- and HER2+ invasive breast cancers (Figure 2—figure supplement 2). To explore whether sustained reactivation of SOX11 promotes tumour progression, we assessed features of iSOX11 spheroids. Spheroids formed from iSOX11 DCIS cells were smaller and formed a higher number of peripheral microspheres than iEV cells (Figure 2C). When overlaid with Collagen I, spheroids formed from iSOX11 cells are more invasive compared to iEV, niEV, and niSOX11 control cells (Figure 2D). Tumours that formed after mammary fat pad xenografts of iSOX11 cells were smaller than iEV tumours when mice were fed chow with moderate levels (200 or 625 ppm) of DOX (Figure 2E–F). Despite their smaller volume, tumours originated from cells with high SOX11 levels displayed greater bioluminescence than control tumours, suggesting iSOX11 tumours contained more viable cells (Figure 2G). IHC staining of mammary tumours was performed to detect Cleaved Caspase 3 (CC3). Larger necrotic and CC3+ (apoptotic) areas were observed in the EV tumour tumours and niSOX11 tumours when compared to the iSOX11 tumours, which showed little central necrosis and fewer CC3+ cells (Figure 2H). We also observed that extremely small and less luminescent tumours were formed in mice xenografted with iSOX11 cells, compared to control cells that were fed higher levels (1250 or 2000 ppm) of DOX-chow (Figure 2—figure supplement 3). Higher levels of CC3 were detected in these iEV tumours, which displayed central necrosis, whilst almost no CC3 or necrosis was detected in iSOX11 tumours (Figure 2—figure supplement 3). Tumours formed from iSOX11 DCIS cells grew out quickly when (1250 or 2000 ppm) DOX-chow was replaced with normal chow, suggesting that high levels of SOX11 could keep tumours in a non-proliferative state and that upon DOX withdrawal, proliferation resumed and the ostensible quiescent state is a reversible condition (Figure 2—figure supplement 3).
 
 When injected directly into the mammary duct, iSOX11 DCIS cells formed slightly larger tumours, with similar bioluminescence levels as iEV tumours, which indicates the microenvironment highly influences behaviour of SOX11+ tumour cells (Figure 2I–K). A greater proportion of mammary tumours formed from iSOX11 cells expressed moderate to high levels of ALDH1 (6/6) compared to control tumours (1/8). In addition, CD24+ cells were observed at greater frequency in iSOX11 tumours compared to control tumours (Figure 2—figure supplement 4). Of note, we observed nuclear CD24 staining in iSOX11 tumour cells, but not in iEV, niEV, or niSOX11 tumours, in line with the observed in vitro result (Figure 2—figure supplement 4). It has been suggested that cells designated CD24- using flow cytometry maybe expressing CD24 in the nucleus and this promotes aggressive tumour properties, since it has been shown that nuclear CD24 is able to drive tumour growth (Duex et al., 2017).
 
-## SOX11 expression promotes expression of developmental pathways frequently activated in cancer
+### SOX11 expression promotes expression of developmental pathways frequently activated in cancer
 
 To identify potential SOX11 targets that could confer features of embryonic, epithelial/mesenchymal hybrid state, and metastasis-promoting features to mature breast cells, RNA from iEV, niEV, or niSOX11 control and iSOX11 cells grown in 2D and in 3D (from spheroids at two time-points: 2 days and 5 days after spheroid formation) were sequenced (Figure 3A, Supplementary file 1 and Figure 3—figure supplement 1). Uninduced niSOX11 control cells express very low levels of SOX11, and suggest the vector is slightly leaky. iSOX11 DCIS cells cultured in 2D showed enrichment of genes regulating actin filament sequestration, phospholipid catabolism, ERBB signaling, chemotaxis, and epithelial differentiation (Figure 3B and Supplementary file 2). iSOX11 DCIS cells grown in 3D showed enrichment of genes regulating ECM disassembly, collagen biosynthesis, glycosaminoglycan metabolism, and platelet degranulation (Figure 3—figure supplement 1 and Supplementary file 3). Platelet activation is one of the first steps of tissue repair as part of the wound healing process and Sox4 and Sox11 have recently been shown to reactivate an embryonic epidermal programme during wound repair in mice (Miao et al., 2019). We found substantial overlap of the embryonic wound signature that was shown to be directly regulated by Sox11 and Sox4 (Miao et al., 2019) with iSOX11 spheroids (Table 1). In particular, we detected upregulation of embryonic wound signature components with links to actin polymerisation and cell adhesion, and one known regulator of embryonic stem cell pluripotency, RCOR2, which can function with other transcription factors to induce pluripotent stem cells (Figure 3—figure supplement 1; Yang et al., 2011).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig3-v2.jpg)
+
+**Figure 3.:** (A) Volcano plot representing the RNAs with a log2 fold-change > +/- 0.585 in the RNA-sequencing results of iSOX11 cells grown in 2D compared with the controls [(iSOX11-niSOX11)- (iEV-niEV)] to account for effects of DOX treatment on DCIS.com cells. (B) Gene ontology results from A. (C) List of genes overexpressed log2 fold-change >+/-1.585 times in all three RNA-sequencing (cells grown in: 2D, 3D for 2 days, 3D for 5 days) results comparing iSOX11 versus iEV. (D) qRT-PCR results for several potential SOX11 targets in EV and SOX11 cells with and without DOX induction in cells grown in 2D. Experiment was repeated three times. (E) Western blot of MEX3A and TUBB3 in cytoplasmic and nuclear fractions of EV or SOX11 cells in presence or absence of 1 μM DOX. GAPDH and LAMIN B1 were used as loading control of cytoplasmic and nuclear fractions respectively. In brackets, densitometry results normalised against niEV and niSOX11. (F) IF staining of DCIS iEV and DCIS iSOX11 cells with TUBB3 (green) and MEX3A (red). Scale: 200 μm. (G) Western blot of MEX3A and TUBB3 in SOX11+ breast cancer cell lines and SOX11- DCIS.com and MCF10A from the MCF10A mammary cell progression series. (H) Pie charts representing the percentage of breast cancer samples with a log2 fold-change greater than two in the levels of MEX3A or TUBB3 RNA when SOX11 increased between 0.5- and 2-fold, 2- and 4-fold, or greater than 4-fold in the TCGA dataset. DOX: doxycycline, qRT-PCR: Quantitative real time PCR, IF: Immunofluorescence.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Volcano plots representing the genes with a log2 fold-change > +/- 0.585 in the RNA-sequencing results of comparing iSOX11 and iEV cells grown in 3D with DOX for 2 (left) or 5 days (right). (B) Gene ontology results from A. (C) List of genes overexpressed log2 fold-change >+/-0.585 times in all three RNA-sequencing (cells grown in: 2D, 3D for 2 days, 3D for 5 days) results comparing iSOX11 versus iEV. (D) Western blot of RCOR2 in cytoplasmic and nuclear fractions of EV or SOX11 cells in presence or absence of 1 μM DOX. GAPDH and LAMIN B1 were used as loading control of cytoplasmic and nuclear fractions, respectively. Densitometry results normalised against niEV and niSOX11 are shown in brackets. (E) Pie charts representing the percentage of samples with a log2 fold-change greater than two in the levels of MEX3A or TUBB3 RNA when SOX11 is increased between 0.5- and 2-fold, 2- and 4-fold, or greater than 4-fold in the Broad cell line dataset. DOX: Doxycycline.
+
+**Table 1.**
+ iSOX11 spheroids express reactivated embryonic wound signature.Genes upregulated in mouse epidermal cells at E13.5 and at wound edge that are directly regulated by Sox11 and Sox4 in both E16.5 epidermis and keratinocytes in Miao et al., 2019 are significantly upregulated in iSOX11 cells grown as spheroids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>3D (2 days)</th>
+      <th>Log2 fold-change</th>
+      <th>p-Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GNG2</td>
+      <td>2.30823519</td>
+      <td>4.85E-05</td>
+    </tr>
+    <tr>
+      <td>RCOR2</td>
+      <td>1.57478431</td>
+      <td>2.90E-05</td>
+    </tr>
+    <tr>
+      <td>MARCKSL1</td>
+      <td>1.06239497</td>
+      <td>7.15E-08</td>
+    </tr>
+    <tr>
+      <td>EVL</td>
+      <td>0.8482472</td>
+      <td>9.60E-06</td>
+    </tr>
+    <tr>
+      <td>SNN</td>
+      <td>0.78560135</td>
+      <td>3.11E-05</td>
+    </tr>
+    <tr>
+      <td>FBL1M1</td>
+      <td>0.78250288</td>
+      <td>3.12E-05</td>
+    </tr>
+    <tr>
+      <td>ETV4</td>
+      <td>0.77064674</td>
+      <td>8.27E-05</td>
+    </tr>
+    <tr>
+      <td>VCAN</td>
+      <td>0.67955833</td>
+      <td>0.00094939</td>
+    </tr>
+    <tr>
+      <td>TWIST2</td>
+      <td>0.64425385</td>
+      <td>0.01949167</td>
+    </tr>
+    <tr>
+      <td>PXDN</td>
+      <td>0.63841224</td>
+      <td>1.14E-05</td>
+    </tr>
+    <tr>
+      <td>ARHGEF2</td>
+      <td>0.58601526</td>
+      <td>2.88E-06</td>
+    </tr>
+    <tr>
+      <td>TMSB10</td>
+      <td>0.56607317</td>
+      <td>0.00030783</td>
+    </tr>
+    <tr>
+      <td>C4orf48</td>
+      <td>0.54288141</td>
+      <td>0.03406946</td>
+    </tr>
+  </tbody>
+</table>
+
 RNA sequencing analysis detected CDH2 (encoding N-Cadherin) expressed at significantly higher levels in iSOX11 cells grown in 2D and as spheroids, whilst other EMT markers, including CDH1 (encoding E-cadherin) and VIM were not significantly changed compared to control cells (Supplementary file 1). Other notable downstream targets of SOX11 included MEX3A, which encodes an RNA-binding protein, that marks slowly proliferating multipotent stem cells in mouse intestine (Barriga et al., 2017) and totipotent cells in C. elegans (Pereira et al., 2013); MMP11, ST6GALNAC5, and TUBB3, which are highly expressed in breast cancers that metastasize to brain (Bos et al., 2009; Kim et al., 2015; Lee et al., 2016). We confirmed that a number of putative SOX11 targets of interest (Figure 3C and Figure 3—figure supplement 1, Supplementary file 2), including MEX3A and TUBB3 were upregulated in iSOX11 cells when measured by qPCR (Figure 3D). We also detected upregulation of MEX3A and TUBB3 protein in iSOX11 cells (Figure 3E–F). We found many SOX11+ breast cancer cell lines express high levels of MEX3A or TUBB3 compared to DCIS.com cell line (Figure 3G). MEX3A and TUBB3 levels are correlated with SOX11 expression in breast cancers in the TCGA dataset (Figure 3H) and in breast cancer cell lines in the Broad dataset (Ghandi et al., 2019; Figure 3—figure supplement 1). Notably, with greater increases of SOX11 levels, a higher percentage of samples with increased MEX3A are observed. These findings support a role for SOX11 in mediating developmental signals during breast cancer progression.
 
-## DCIS cells expressing SOX11 show alterations in metastatic tropism
+### DCIS cells expressing SOX11 show alterations in metastatic tropism
 
 To explore whether sustained reactivation of SOX11 promotes tumour progression, we injected luciferase-tagged iEV and iSOX11 cells into the mammary fat pad. Four weeks after orthotopic xenografting with iSOX11 cells, brain micrometastases were detected in two out of six mice by IVIS imaging, whilst none were observed in six mice xenografted with control cells (Figure 4A). Liver and lung micrometastases were detected in both cohorts when assessed by IVIS imaging.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig4-v2.jpg)
+
+**Figure 4.:** (A) Tabulated results of micrometastasis assessed by ex vivo IVIS imaging after orthotopic mammary fat pad xenografting of iEV and iSOX11 cells. (B) Tabulated results of micrometastasis assessed by ex vivo IVIS imaging after xenografting iEV and iSOX11 cells via the tail vein. (C) Representative in vivo IVIS 7 days after tail vein injections of iEV and iSOX11 cells. (D) Quantification of in vivo lung metastatic burden at day 31. Graph shows the luminescence total flux (p/s) in the lungs 31 days after tail vein injections. **p = 0.0011. (E) Distance metastasis-free survival curve for SOX11 in breast cancer patients in the Wang cohort (GSE2034).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) SOX11 expression in breast cancer metastasis (Zhang cohort: GSE140200). (B) SOX11 is amplified and highly expressed in ~30% breast cancer brain metastasis (BCBM) from ER-, ER+, HER2+ and BRCA1-/- breast cancer patients in a study by Saunus et al., 2015.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Graph showing the log2 values of SOX11 in primary tumours and its correlative log2 values in the brain metastasis dataset from Varešlija et al., 2019. (B) Table resuming the SOX11 log2 fold-change between the values in the brain metastasis and the primary tumour and the ER, PR and HER2 status of each case.
 
 After injection into the tail vein, IVIS imaging detected tumour cells in lungs in seven out of the eight mice, bone in three out of eight mice, and in brain in one of eight mice xenografted with iSOX11 cells, whilst no bone or brain metastases were observed in eight mice xenografted with control cells (Figure 4B). It was noted that the frequencies of mice with lung metastasis were similar, but a significant reduction of iSOX11 DCIS cells accumulated in the lungs was observed when compared to mice engrafted with iEV cells when quantified by IVIS (Figure 4C–D). Macroscopic examination of metastatic lesions confirmed the reduction in tumour burden (data not shown).
 
@@ -75,7 +218,7 @@ SOX11+ DCIS.com cells from brain metastasis display a colonisation and growth ad
 
 After xenografting iSOX11Br cells into the tail vein, mice that had been fed normal chow had a greater metastatic burden in the lungs compared to mice fed DOX-containing chow to induce SOX11 expression, similar to results observed using the parental iSOX11 DCIS cell line (Figure 5B–D). After intracranial injections of iSOX11Br cells, higher levels of bioluminescence were detected in the brains of mice fed DOX chow (Figure 5E). Induction of SOX11 expression led to larger tumour burden in the brain and reduced survival (Figure 5F). These results indicate that iSOX11Br cells have a colonisation and growth advantage in the brain compared to that niSOX11Br cells lacking SOX11 expression.
 
-## SOX11 regulates proliferative state of ER- breast cancer cells
+### SOX11 regulates proliferative state of ER- breast cancer cells
 
 Next, we examined the effect of reducing SOX11 levels in CAL-148 ER- breast cancer cell line that expresses very high SOX11 levels. Using DOX-inducible lentiviral vectors containing shRNAs to SOX11 and control non-targeting shRNAs, reductions in SOX11 levels were obtained, as well as decreases of TUBB3, MEX3A, GPC2, MPK4, OLFM2, ST6GALNAC5, and NCAD levels and an increase in SERPINA3 in CAL-148 cells after SOX11 knockdown when compared to control (Figure 6A). Reduced levels of SOX11, MEX3A and TUBB3 protein were detected after SOX11 knockdown (Figure 6B). Cell viability assays detected greater cell numbers after SOX11 knockdown in CAL-148 cells, compared to control cells (Figure 6C). Colony-formation assays detected an increase in clonogenetic potential of CAL-148 cells with reduced SOX11 levels (Figure 6D). These results suggest SOX11 could regulate proliferative state of stem cells in ER- breast cancer cells.
 
@@ -83,13 +226,35 @@ Next, we examined the effect of reducing SOX11 levels in CAL-148 ER- breast canc
 
 **Figure 6.:** (A) qRT-PCR results for several potential SOX11 targets in CAL-148 cells transduced with shRNA to SOX11 or shRNA NS cells with and without DOX induction in cells grown in 2D. (B) Western blot of SOX11, MEX3A and TUBB3 in total cell lysates of CAL-148 cells transduced with shRNA SOX11 in presence or absence of 1 μM DOX after 48 hr. GAPDH was used as loading control. Densitometry results normalised against no DOX are shown in brackets. (C) Cell growth assay results for CAL-148 shRNA SOX11 cells induced with 1 μM DOX at 3 and 7 days. Experiments were performed three times. Error bars represent SEM. *p=0.0106 (day 7). (D) Quantification of clonogenicity in 2D and 3D from single CAL-148 shRNA SOX11 cells plated in presence or absence of DOX after 21 days. The number in brackets represents the mean in each group of the three experimental replicates. DOX: doxycycline, NS: non-silencing.
 
-## TUBB3, an established SOX11 target, regulates proliferation and invasion of ER- breast cancer cells
+### TUBB3, an established SOX11 target, regulates proliferation and invasion of ER- breast cancer cells
 
 As with SOX11, both distant metastasis-free survival and overall survival of breast cancer patients are reduced when high levels of TUBB3, an established SOX11 target in neural cells, are expressed in primary tumours (Figure 7—figure supplement 1). We next examined the effects of TUBB3 on triple negative breast cancer (TNBC) growth and invasion. Using siRNA-mediated knockdown, we found that reducing TUBB3 levels in BT-20 cells resulted in reduced growth in both 2D culture and spheroid culture (Figure 7A–C). More cells were arrested in G2/M phase of the cell cycle when TUBB3 levels were reduced (Figure 7D and Figure 7—figure supplement 2), consistent with a known role of TUBB3 in regulating cell cycle progression of tumour cells. As a result of cell cycle arrest, an increase of multinucleated cells in the >G2/M phase and a higher proportion of dead cells in sub-G1 phase were detected. Spheroid invasion assay s detected less invasion when TUBB3 levels were reduced (Figure 7E–F). These results suggest SOX11 can regulate proliferation and invasive growth through TUBB3 in ER- breast cancer cells.
 
-## MEX3A, a novel potential SOX11 downstream effector, regulates cell growth and E/M state of ER- breast cancer cells
+![Figure 7.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig7-v2.jpg)
+
+**Figure 7.:** (A) Western blot of TUBB3 in total cell lysates of BT-20 cells transfected with siRNAs specific for TUBB3. B-ACTIN was used as loading control. Densitometry results normalised against NS siRNA are shown in brackets. (B) Cell growth assay results 5 days after BT-20 cells were transfected with siRNA specific for TUBB3 (since siRNAs require 48 hr for efficient knockdown). Results relative to NS siRNA are shown. Experiments performed three times. *p = 0.0297, ***p = 0.0001, ****p < 0.0001. (C) Sphere size measured 3 and 5 days after BT-20 cells were transfected with siRNA specific for TUBB3. Results relative to NS siRNA are shown. Experiments performed three times. ****p < 0.0001. (D) Cell cycle analysis performed by flow cytometry at day two after siRNA transfection specific for TUBB3 in BT-20 cells. Graph shows % of cell in each phase of the cell cycle. *p = 0.0396 (Phase G2/M siRNApool vs siRNA NS) and *p = 0.0243 (Phase G2/M siRNA5 vs siRNA NS). Experiments were performed three times. (E) Invasion assay after overlaying BT-20 spheroids with Collagen I at day 2 after siRNA transfection specific for TUBB3. Graph shows the area invaded in pixel2 normalised against NS siRNA. *p = 0.0444, **p = 0.0014, ****p < 0.0001. (F) Representative images of BT-20 spheroids transfected with indicated siRNAs to TUBB3 48 hr after adding Collagen I and (in small insets) at time 0 hr (2 days after transfection). Scale bar: 200 μm. NS: non-silencing.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Distant metastasis-free survival of breast cancer patients with low or high expression of CD24, TUBB3, and MEX3A. (B) Overall survival of breast cancer patients with low or high expression of CD24, TUBB3, and MEX3A.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig7-figsupp2-v2.jpg)
+
+### MEX3A, a novel potential SOX11 downstream effector, regulates cell growth and E/M state of ER- breast cancer cells
 
 Both distant metastasis-free survival and overall survival of breast cancer patients are reduced when high levels of MEX3A are expressed in primary tumours, as would be expected for a SOX11 target (Figure 7—figure supplement 1). Due to MEX3A’s established links with regulation of both EMT and proliferation of intestinal and various types of cancer cells, we knocked down MEX3A in ER- BT-20, CAL-148 and HCC1187 breast cancer cells to determine if MEX3A regulates similar processes. In HCC1187 and BT-20 cells, a slight but significant reduction of invasive growth was detected when MEX3A levels were reduced with some, but not all siRNAs (Figure 8A–B and Figure 8—figure supplement 1). An increase in cell numbers were observed after knockdown of MEX3A in both CAL-148 and HCC1187 cells grown in 2D or 3D (Figure 8C–D). Cell cycle analysis detected a reduction in S phase after MEX3A knockdown in both cell lines (Figure 8E, Figure 8—figure supplement 1). Several candidate cell cycle regulators from a consensus stem cell quiescence signature (Cheung and Rando, 2013) were downregulated in iSOX11 cell signatures, including RRM2 and SURVIVIN (Figure 8—figure supplement 1 and Supplementary file 3). Western blotting found that both RRM2 and SURVIVIN were upregulated when MEX3A levels were reduced in CAL-148 and BT-20 cells (Figure 8F and Figure 8—figure supplement 1). High expression levels of MEX3A co-occur with increased levels of E2F3, CCNE1 and CDKN2A, and decreases in RB1 levels in the TCGA dataset (Figure 8—figure supplement 1); MEX3A levels show strong correlation with the levels of E2F3 and CCNE1 (Supplementary file 4). The addition of EGF to CAL-148 cells growing in either serum-free or low-serum media led to reduction of MEX3A levels (Figure 8—figure supplement 2). CAL-148 cells normally form aggregates when grown in 2D culture conditions and after MEX3A knockdown, CAL-148 cells displayed a reduced ability to form aggregates and an acquired ability to adhere to plastic (Figure 8G). After MEX3A knockdown, CAL-148 cells displayed increased expression of E-CADHERIN and EPCAM (Figure 8H). BT-20 and HCC1187 cells lack expression of E-CADHERIN but showed an increase in EPCAM levels after MEX3A knockdown (Figure 8—figure supplement 2). Together, these results are consistent with roles for MEX3A in regulation of cell growth and EMT in SOX11+ ER- breast cancer cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig8-v2.jpg)
+
+**Figure 8.:** (A) Invasion assay results after overlaying BT-20 and HCC1187 spheroids with Collagen I, at day two after siRNA transfection specific for MEX3A or control (NS). Graph shows the area invaded in pixel2 normalised against NS siRNA. *p = 0.0181, **p = 0.0014 for BT-20 and *p = 0.0220 for HCC1187 cells. (B) Representative images of BT-20 spheroids 48 hr after adding Collagen I and at time 0 hr (shown in small inset, 2 days after transfection) made from cells transfected with either control siRNA or MEX3A siRNAs. Scale bar: 200 μm. (C) Cell growth assays 5 days after CAL-148 and HCC1187 cells were transfected with siRNA specific for MEX3A or NS controls (siRNAs require 48 hr for efficient knockdown; this was taken into account to select day five as final point). Relative results to NS siRNA are shown. Experiments performed three times. *p = 0.0342, **p = 0.0052 ***p = 0.0005 (siRNA2), ****p < 0.0003 (siRNA3) for CAL-148 cells and *p=0.0337 (siRNApool) and *p = 0.0477 for HCC1187 cells. (D) Sphere size measured 3, and 5 days after HCC1187 cells were transfected with siRNA specific for MEX3A. Relative results to NS siRNA are shown. Experiments performed three times *p = 0.0240. (E) Cell cycle analysis performed by flow cytometry at day 4 after siRNA transfection specific for MEX3A in CAL-148 cells. Graph shows % of cell in each phase of the cell cycle. *p = 0.0147 (phase S siRNApool vs siRNA NS) and *p = 0.0094 (phase S siRNA3 vs siRNA NS) and *p = 0.0419 (phase subG1 NS vs siRNA3). Experiments performed four times. (F) Western blot of RRM2 and SURVIVIN in total cell lysates of CAL-148 at day four after siRNA transfection specific for MEX3A. β-ACTIN was used as loading control. Densitometry results normalised against NS siRNA are shown in brackets. (G) Examples of morphological changes observed in CAL-148 cells after 4 days of MEX3A knockdown compared to NS control. Scale bar: 200 μm. (H) Western Blot of EPCAM and E-CADHERIN in CAL-148 cells transfected with siRNA specific for MEX3A or NS control. β-ACTIN was used as loading control. Densitometry results normalised against NS siRNA are in brackets. NS: non-silencing.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative images of HCC1187 spheroids 48 hr after adding Collagen I and at time 0 hr (shown in small inset, 2 days after transfection) made from cells transfected with either control siRNA or MEX3A siRNAs. Scale bar: 200 μm. (B) Percentage of cells in S phase normalised against cells transfected with the NS siRNA in CAL-148 cells at day 4. Experiments performed three times. (C) Percentage of cells in S phase normalised against cells transfected with the NS siRNA in HCC1187 cells at day 2. Experiments performed four times. (D) Cell cycle analysis performed by flow cytometry at day 2after siRNA transfection specific for MEX3A in HCC1187 cells. Graph shows % of cell in each phase of the cell cycle. Experiments performed four times. (E) Representative flow cytometry histograms of cell cycle analysis of CAL-148 and HCC1187 cells after transfection with specific MEX3A siRNAs. (F) Heatmap representing the values of a consensus stem cell quiescence signature in the RNA-sequencing results of comparing iSOX11 and iEV cells grown in 2D for 2 days or 3D with DOX for 2 or 5 days. (G) Western blot of RRM2 and SURVIVIN in total cell lysates of BT-20 at day 2 after siRNA transfection specific for MEX3A. β-ACTIN was used as loading control. Densitometry results normalised against NS siRNA are shown in brackets. DOX: Doxycycline, NS: non-silencing.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/58374/elife-58374-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Western blot to detect MEX3A in CAL-148 cells that were grown in serum free media or media supplemented with 0.2% FBS for 24 hr in presence or absence of EGF 1 ng/ml. GAPDH was used as loading control. Densitometry results normalised against NS siRNA are in brackets. (B) Western blot to detect MEX3A and EPCAM in BT-20 cells transfected with siRNA specific for MEX3A or NS control. β-ACTIN was used as loading control. Densitometry results normalised against NS siRNA are in brackets. (C) Western blot to detect MEX3A and EPCAM in HCC1187 cells transfected with siRNA specific for MEX3A or NS control. LAMIN B1 was used as loading control. Densitometry results normalised against NS siRNA are in brackets. FBS: Fetal bovine serum, NS: non-silencing.
 
 ## Discussion
 
@@ -115,39 +280,714 @@ SOX11+ breast cancer cells express markers indicative of phenotypic plasticity a
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SOX11</td>
+      <td>DNASU</td>
+      <td>Gene ID: 6664 Clone HsCD00295480 19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, Female)</td>
+      <td>NSG-Foxn1null</td>
+      <td>in house</td>
+      <td></td>
+      <td>from breeding colony at ICR Biological Services Unit</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10DCIS.com</td>
+      <td>Dr. Gillian Farnie</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>CAL-148</td>
+      <td>DMSZ</td>
+      <td>ACC 460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BT-20</td>
+      <td>ATCC</td>
+      <td>HTB-19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCC1187</td>
+      <td>ATCC</td>
+      <td>CRL-2322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10A</td>
+      <td>ATCC</td>
+      <td>CRL-10317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BT474</td>
+      <td>ATCC</td>
+      <td>HTB-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BT549</td>
+      <td>ATCC</td>
+      <td>HTB-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCC202</td>
+      <td>Dr. Paul Huang, ICR, London</td>
+      <td>CRL-2316</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MX-1</td>
+      <td>DMSZ</td>
+      <td>CVCL_4774</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>UACC893</td>
+      <td>ATCC</td>
+      <td>CRL-1902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pInducer21-SOX11</td>
+      <td>this paper</td>
+      <td>SOX11 coding sequence (GENEID: 6664) was subcloned into pInducer21 (ORF-EG) plasmid Cat# 46948 (See Expression vectors in Materials and methods)</td>
+      <td>Lentiviral construct to transfect and express SOX11 sequence</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pInducer13-SOX11 shRNA 174</td>
+      <td>this paper</td>
+      <td>specific shRNA174 for SOX11 from pGIPZ plasmids from Horizon was subcloned into pInducer13 (miR-LUP) plasmid Cat# 46936 (See Expression vectors in Materials and methods)</td>
+      <td>Lentiviral construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pInducer13- shRNA NS</td>
+      <td>this paper</td>
+      <td>NS: non-silencing shRNA from pGIPZ plasmid from Horizon was subcloned into pInducer13 (miR-LUP) plasmid Cat# 46936 (See Expression vectors in Materials and methods)</td>
+      <td>Lentiviral construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME Non-Targeting siRNA #1</td>
+      <td>Horizon Discovery</td>
+      <td>D-001210-01-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME SMARTpool TUBB3 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-020099-03-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME TUBB3 siRNA #3</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-020099-03-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME TUBB3 siRNA #4</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-020099-03-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME TUBB3 siRNA #5</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-020099-03-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME TUBB3 siRNA #19</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-020099-03-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME SMARTpool MEX3A siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-022355-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME MEX3A siRNA #1</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-022355-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME MEX3A siRNA #2</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-022355-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME MEX3A siRNA #3</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-022355-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siRNA: siGENOME MEX3A siRNA #4</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-022355-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX11 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Clone EPR8191(2) Cat# ab78078</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX11 (Mouse monoclonal)</td>
+      <td>EBioscience</td>
+      <td>SOX11-C1 Cat# 50-9773-82</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TUBB3 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Clone 2G10 Cat# ab78078</td>
+      <td>WB: (1:1000) IF: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MEX3A (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab79046</td>
+      <td>WB: (1:1000) IF: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD24 (Mouse monoclonal)</td>
+      <td>Creative Biolabs</td>
+      <td>Cat# SWA11</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VIMENTIN (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# Ab92547 (EPR3776)</td>
+      <td>WB: (1:1000) IF: (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RCOR2 (CoREST2) (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab37113</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-N-CADHERIN (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 13116</td>
+      <td>WB: (1:1000) IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-E-CADHERIN (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 36 Cat# 610182</td>
+      <td>WB: (1:1000) IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EPCAM (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Clone D1B3 Cat# 2626</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RRM2 (R2) (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Clone A-5 Cat# sc-398294</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SURVIVIN (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Clone 71G4B7 Cat# 2808</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Clone D16H11 Cat# 5174</td>
+      <td>WB: (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LAMINB1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab16048</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-TUBULIN (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# T4026</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-ACTIN (Mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Clone 8H10D10 Cat# 3700</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-K5 (Rabbit polyclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# PRB-160P</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-K14 (Rabbit polyclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# PRB-155P</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-CD24 (Mouse monoclonal)</td>
+      <td>Invitrogen/ Thermofisher</td>
+      <td>Cat# SN3</td>
+      <td>IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-SMA (Rabbit monoclonal)</td>
+      <td>Invitrogen/ Thermofisher</td>
+      <td>EPR5368 Cat# Ab202509</td>
+      <td>IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD24–PE–Cy7 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 561646</td>
+      <td>Flow cytometry: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44–APC (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 559942</td>
+      <td>Flow cytometry: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer21 (Plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat# 46948</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer13 (Plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat# 46936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Firefly Luciferase 2 lentiviral particles</td>
+      <td>Amsbio</td>
+      <td>Cat# LVP325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLV-mCherry (Plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat# 36084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe SOX11</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00846583_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe TUBB3</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00801390_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe MEX3A</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00863536_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe GPC2</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00415099_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe MAPK4</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00969401_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe LBH</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00368853_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe SERPINA3</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00153674_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe OLFM2</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs01017934_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe N-CADHERIN</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs00983056_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe ST6GALNAC5</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs05018504_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan probe GAPDH</td>
+      <td>Thermofisher Scientific</td>
+      <td>Hs02786624_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Animal-Free Recombinant Human EGF</td>
+      <td>Peprotech</td>
+      <td>Cat# AF-100-15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasyPlus Micro kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAClean and concentrator-5</td>
+      <td>Zymo Research</td>
+      <td>Cat# R1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA Pico kit</td>
+      <td>Agilent Technologies</td>
+      <td>Cat# 5067-1513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 205311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Gene Expression Master Mix</td>
+      <td>Thermofisher Scientific</td>
+      <td>Cat# 4369016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Aldefluor assay</td>
+      <td>StemCell Technologies</td>
+      <td>Cat# 01700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PKH26 Dye Solution</td>
+      <td>SIGMA</td>
+      <td>Cat# MINI26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tumour dissociation kit, human</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130-095-929</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>Sigma</td>
+      <td>Cat# D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NeuroCult SM1 without vitamin A</td>
+      <td>StemCell Technologies</td>
+      <td>Cat # 05731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methylcellulose</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat # HSC002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cell titer-Glo</td>
+      <td>Promega</td>
+      <td>Cat # G7572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagen I, High Concentration, Rat Tail</td>
+      <td>Corning</td>
+      <td>Cat # 354249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XenoLight D-Luciferin Potassium Salt</td>
+      <td>Perkin Elmer</td>
+      <td>Cat # 122799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Invitrogen</td>
+      <td>13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BD FACS Diva software</td>
+      <td>BD Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>National Institutes of Health (NIH)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EVOS FL microscope</td>
+      <td>Thermofisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Confocal microscope</td>
+      <td>Leica</td>
+      <td>Model TCS‐SP2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Celigo cytometer</td>
+      <td>Nexcelom</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96-well ultra-low-attachment plates</td>
+      <td>Corning</td>
+      <td>Cat # 7007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Luminescence plate reader</td>
+      <td>Perkin Elmer</td>
+      <td>Victor X5 58</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FACS</td>
+      <td>BD Bioscience</td>
+      <td>FACSAriaIII</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Flow cytometer</td>
+      <td>BD Bioscience</td>
+      <td>BD FACS LSRII</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stereotaxic frame</td>
+      <td>Stoelting</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IVIS Lumina imaging systems</td>
+      <td>Perkin Elmer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>gentleMACS Octo Dissociator with Heaters</td>
+      <td>Perkin Elmer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>IF: 1:5000 FC/FACS: 1:5000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 DCIS.com‐Luc cells were generated by transducing cells with lentiviral expression particles for firefly luciferase 2 (LVP325; Amsbio, Abingdon, UK). DCIS.com-Luc-mCherry were created by lentiviral transduction of the mCherry sequence in the DCIS.com-Luc cells. Supplementary material (Supplementary file 6) provides details and sources of cell lines and media used. All cell lines were tested and were mycoplasma-free. The DCIS.com have been extensively profiled in Maguire et al., 2016 and we confirmed PIK3CA mutation status by PCR and Western blotting. Cell lines were authenticated by STR profiling (Eurofins).
 
-## Expression vectors
+### Expression vectors
 
 The SOX11 coding sequence (GENEID: 6664) from clone HsCD00295480 19 in the pENTR223.1 plasmid (DNASU) 20 was subcloned into pInducer21 (ORF-EG) plasmid gift from Stephen Elledge and Thomas Westbrook (Addgene plasmid # 46948; http://n2t.net/addgene: 46948; RRID:Addgene_46948) (Meerbrey et al., 2011). pInducer13-shRNA and pInducer13-NS shRNA were made by subcloning the specific shRNA174 for SOX11 and the NS shRNA from pGIPZ plasmids from Horizon into pInducer13.
 
-## RNA isolation
+### RNA isolation
 
 RNA from cells grown in 2D for 48 hr in presence or absence of 1 μM doxycycline (DOX) and from spheroids treated for 2 or 5 days (DOX 2 days or DOX 5 days) or not treated with DOX (DOX 0 Days) (n = 3 for each time point) was isolated with an RNAeasyPlus Micro kit (74034; Qiagen, Manchester, UK) and DNase treatment. RNAClean and concentrator-5 (Zymo Research, Irvine, CA) were used. RNA concentration and purity were determined with a Qubit fluorometer (Invitrogen, Carlsbad, C) and a nanodrop spectrophotometer. RNA integrity number was measured with a bioanalyzer and an Agilent RNA Pico kit (Agilent Technologies, Cheshire, UK).
 
-## cDNA synthesis and qPCR
+### cDNA synthesis and qPCR
 
 One microgram of each RNA sample was reverse transcribed with QuantiTect Reverse Transcription kit (Qiagen, Manchester, UK) in a final volume of 20 μl. cDNA was diluted ten times for subsequent quantitative polymerase chain reaction (qPCR) analysis, as described previously (Oliemuller et al., 2017), with the probes and methods listed in supplementary material (Supplementary file 7).
 
-## Western blotting
+### Western blotting
 
 Western blotting was performed as previously described (Zvelebil et al., 2013). Details of the antibodies used are provided in supplementary material (Supplementary file 8).
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 IHC was performed on formalin-fixed paraffin embedded samples. Samples were stained with antibodies as described previously (Oliemuller et al., 2017).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Antibodies and staining protocols are detailed in supplementary material (Supplementary file 9). EVOS fluorescence microscope was used for imaging. Confocal images were captured with a Leica Microsystems (Cambridge, UK) TCS‐SP2 confocal microscope.
 
-## Spheroid formation
+### Spheroid formation
 
 Five thousand cells, untreated or treated with 1 μM doxycycline (DOX) for 48 hr, were plated per well in 96-well ultra-low-attachment plates (Corning 7007, Corning, NY, USA) in media containing DOX or not. After 24 hr, when the spheroids were formed, new media containing 1 μM doxycycline was added for 48 hr to spheres formed in absence of DOX for 2 days (DOX 2 days) or spheres that were formed in presence of DOX to a total of 5 days (DOX 5 days). Media without doxycycline was added to the control spheroids (No DOX). Images were obtained with a Celigo cytometer (Nexcelom, Manchester, UK).
 
-## Colony-formation assays
+### Colony-formation assays
 
 DCIS.com cells were plated at 250 per well in six‐well (Falcon F3046, Corning, NY) plates. After 7 days, plates were stained with 0.2% crystal violet dissolved in 20% methanol in PBS. Area was measured, and the percentage relative to number of cells plated was calculated.
 
@@ -155,25 +995,25 @@ For single-cell colony assays and single-cell mammosphere assays, cells were FAC
 
 For mammosphere assays, 5000 DCIS cells/ml were plated in low‐attachment six‐well plates (Corning 3471) and incubated in medium supplemented with 2% NeuroCult SM1 without vitamin A (StemCell Technologies) and 0.65% methylcellulose (R and D Systems, Abingdon, UK). After 14 days, wells were scanned with a Celigo cytometer. Mammosphere‐forming efficiency was calculated by dividing the number of mammospheres by the number of cells plated per well.
 
-## Cell viability assays
+### Cell viability assays
 
 Three thousand cells per well were plated in 96‐well plates (655098; Greiner Bio‐one, Stonehouse, UK) or in ultra-low attachment plates for 24 hr before starting the experiments. CellTiter‐Glo (Promega, Southampton, UK) was used according to the manufacturer's protocol. Luminescence was measured with a Victor X5 58 plate reader (Perkin‐Elmer, Seer Green, UK). In DCIS.com cells, CellTiter-Glo assays were performed at the time of adding the doxycycline and after 1, 2 and 3 days. When cells were transfected with siRNAs, the transfection was done overnight and next day (day 1), full supplemented media was added. CellTiter‐Glo assays were performed on days 1 and 5 to allow time for the siRNAs to knock down the genes of interest. CAL-148 cells stably transduced with shRNAs were measured at 0, 3 and 7 days, since this cell line has a long doubling time.
 
-## Invasion assays
+### Invasion assays
 
 Three days after plating 5000 DCIS.com cells, spheroids were embedded in collagen I (354249; Corning) at 2.2 mg/ml diluted in medium. Complete medium was added on top after 1 hr. Images were acquired at this time and after 48 hr with a Celigo cytometer. The total area of matrix invaded by cells was calculated with ImageJ after marking of the area manually. For BT-20 and HCC1187 cells, the spheres used in the invasion assays were formed at the same time that they were transfected with the TUBB3 or MEX3A specific siRNAs in Opti-MEM media supplemented with 10% FBS. After 24 hr, this media was changed for the normal media of this cells. The cells were invaded in collagen 72 hr after plating.
 
-## Tranfections and siRNA
+### Tranfections and siRNA
 
 BT-20, HCC1187 and CAL-148 cells were transfected with 50 pmol of each TUBB3 or MEX3A siRNA (siGENOME SMARTpool and four individual siRNAs), control nontargeting siRNA (Thermo Scientific, Waltham, MA) by using Lipofectamine RNAiMAX (Invitrogen, Life Technologies Corporation, Carlsbad, CA) in Opti-MEM media supplemented with 10% FBS (Gibco, Life Technologies Corporation, Carlsbad, CA) media according to the manufacturer's instructions for 16 hr in a six-well or 96-well plate, depending on the experiment, and then incubated with complete media. For sphere transfections, 5000 cells per well were incubated with 2.5 pmol of each specific siRNA in 150 µl of normal media per well in an ultra-low attachment plate for 16 hr. The next day, media was replaced with fresh media.
 
 Flow cytometry analyses and fluorescence‐activated cell sorting (FACS) Aldehyde dehydrogenase (ALDH) activity was measured with the Aldefluor assay (StemCell Technologies, Cambridge, UK) as described before (Oliemuller et al., 2017). Cells were also co‐stained with Aldefluor and anti‐CD24–PE–Cy7 (561646) (1:100) and anti‐CD44–APC (559942) (1:20) (BD Biosciences, Oxford, UK). A BD FACS LSRII flow cytometer was used and samples were analysed with BD FACS Diva software (BD Biosciences). mCherry+ DCIS cells from the tumours in the tail vein xenograft experiments were sorted by a FACSAriaIII (BD). FACSAriaIII was used for clonogenic and mammosphere assays that required plating single cells per well. Living and dead cells were distinguished with DAPI 1:5000. Cell cycle analysis was described previously (Zvelebil et al., 2013).
 
-## PKH staining
+### PKH staining
 
 two × 10−6 DCIS-LacZ or DCIS-SOX11 cells were resuspended in Diluent C and stained with PKH26 Dye Solution to a final concentration of 5 mM following the manufacturer’s protocol (MINI26, Sigma). After confirming by flow cytometry that the 100% of the population stained, spheres with 5000 cells were formed in ultra-low attachment 96-well plates.
 
-## Animal experiments
+### Animal experiments
 
 All animal work was carried out under UK Home Office project and personal licenses following local ethical approval from The Institute of Cancer Research Ethics Committee and in accordance with local and national guidelines. For xenograft tumour assays, DCIS.com labelled with Luc2-mCherry and stably transduced with empty vector (EV) control or SOX11 (in pInducer21 backbone) were resuspended in PBS for implantation into female NSG-Foxn1null mice. 1.0 × 106 cells/site in both sides were injected in each mammary fat pad number 4 and 2.0 × 104 cells/site into the mammary duct via the nipple of mammary gland number four as previously described (Oliemuller et al., 2017).
 
@@ -191,10 +1031,10 @@ RNA sequencing cDNA library preparation was carried out at Oxford Genomics Centr
 
 Sequence files were trimmed by the use of trim_galore (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) with default settings. Trimmed data were separately mapped to the GRCh38 and GRCm38 genome assemblies by the use of hisat2 (v2.0.5) with options ‐‐sp 1000,1000 ‐‐ omixed‐‐no‐discordant, and were filtered to remove non‐primary alignments. Species‐specific read sets were generated by removing any read that produced a valid alignment in both human and mouse from the results for both species. The remaining data were imported into SeqMonk (http://www.bioinformatics.babraham.ac.uk/projects/seqmonk/) with a filter of mapping quality (MAPQ) score ≥20. Reads were quantified over the transcript set from Ensembl v78 with annotated mis‐spliced, pseudogene and unannotated transcripts removed. Initial quantification was raw read counts from the opposing strand to the transcript, with all exons for each gene being collated into a single measure. This allowed gene‐level differential expression to be assessed by the use of DESeq2 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html), with a cutoff of a false discovery rate of <0.05. Subsequent visualisation was performed by requantifying expression as log2 fragments per million reads of library. RNA sequencing files were submitted to ArrayExpress.
 
-## Survival analysis
+### Survival analysis
 
 The prognostic importance of SOX11 mRNA expression was assessed by the use of survival data using the cBioPortal for Cancer Genomics (http://cbioportal.org) (Cerami et al., 2012; Gao et al., 2013). Data obtained from The Cancer Genome Atlas (https://www.cancer.gov/tcga) was examined by use of the Kaplan–Meier Plotter survival analysis tool (http://kmplot.com) and METABRIC (METABRIC Group et al., 2012), and statistical significance was determined with the Wald test.
 
-## Statistical analysis
+### Statistical analysis
 
 The data in the graphs are presented as mean and standard deviation, unless specified otherwise. Experiments were analysed with a two‐tailed Student's t‐test with a confidence interval of 95% when the number of groups equalled 2, or with a parametric ANOVA and post hoc test when the number of groups was >2, unless otherwise specified. p-value≤0.0001 is considered as extremely signiﬁcant (****), p≤0.001 as highly signiﬁcant (***), p≤0.01 as very signiﬁcant (**), p≤0.05 as signiﬁcant (*), and p>0.05 as not signiﬁcant (ns), respectively.

@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/001w7jn25 Department of Biochemistry, Charité Universitätsmedizin Berlin Germany
-2. https://ror.org/04tnbqb63 The Molecular Biology of Metabolism Laboratory, The Francis Crick Institute London United Kingdom
-3. https://ror.org/013meh722 Department of Biochemistry and Cambridge Systems Biology Center, University of Cambridge Cambridge United Kingdom
-4. https://ror.org/05cy4wa09 Wellcome Trust Sanger Institute, Wellcome Trust Genome Campus Hinxton United Kingdom
-5. https://ror.org/001w7jn25 Core Facility-High Throughput Mass Spectrometry, Charité Universitätsmedizin Berlin Germany
+1. Department of Biochemistry, Charité Universitätsmedizin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+2. The Molecular Biology of Metabolism Laboratory, The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
+3. Department of Biochemistry and Cambridge Systems Biology Center, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. Wellcome Trust Sanger Institute, Wellcome Trust Genome Campus Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
+5. Core Facility-High Throughput Mass Spectrometry, Charité Universitätsmedizin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
 
 † Corresponding author
 
 ## Abstract
 
-Interpreting the function and metabolism of enzymatic DNA modifications requires both position-specific and global quantities. Sequencing-based techniques that deliver the former have become broadly accessible, but analytical methods for the global quantification of DNA modifications have thus far been applied mostly to individual problems. We established a mass spectrometric method for the sensitive and accurate quantification of multiple enzymatic DNA modifications. Then, we isolated DNA from 124 archean, bacterial, fungal, plant, and mammalian species, and several tissues and created a resource of global DNA modification quantities. Our dataset provides insights into the general nature of enzymatic DNA modifications, reveals unique biological cases, and provides complementary quantitative information to normalize and assess the accuracy of sequencing-based detection of DNA modifications. We report that only three of the studied DNA modifications, methylcytosine (5mdC), methyladenine (N6mdA) and hydroxymethylcytosine (5hmdC), were detected above a picomolar detection limit across species, and dominated in higher eukaryotes (5mdC), in bacteria (N6mdA), or the vertebrate central nervous systems (5hmdC). All three modifications were detected simultaneously in only one of the tested species, Raphanus sativus . In contrast, these modifications were either absent or detected only at trace quantities, across all yeasts and insect genomes studied. Further, we reveal interesting biological cases. For instance, in Allium cepa , Helianthus annuus , or Andropogon gerardi , more than 35% of cytosines were methylated. Additionally, next to the mammlian CNS, 5hmdC was also detected in plants like Lepidium sativum and was found on 8% of cytosines in the Garra barreimiae brain samples. Thus, identifying unexpected levels of DNA modifications in several wild species, our resource underscores the need to address biological diversity for studying DNA modifications.
+Interpreting the function and metabolism of enzymatic DNA modifications requires both position-specific and global quantities. Sequencing-based techniques that deliver the former have become broadly accessible, but analytical methods for the global quantification of DNA modifications have thus far been applied mostly to individual problems. We established a mass spectrometric method for the sensitive and accurate quantification of multiple enzymatic DNA modifications. Then, we isolated DNA from 124 archean, bacterial, fungal, plant, and mammalian species, and several tissues and created a resource of global DNA modification quantities. Our dataset provides insights into the general nature of enzymatic DNA modifications, reveals unique biological cases, and provides complementary quantitative information to normalize and assess the accuracy of sequencing-based detection of DNA modifications. We report that only three of the studied DNA modifications, methylcytosine (5mdC), methyladenine (N6mdA) and hydroxymethylcytosine (5hmdC), were detected above a picomolar detection limit across species, and dominated in higher eukaryotes (5mdC), in bacteria (N6mdA), or the vertebrate central nervous systems (5hmdC). All three modifications were detected simultaneously in only one of the tested species, Raphanus sativus. In contrast, these modifications were either absent or detected only at trace quantities, across all yeasts and insect genomes studied. Further, we reveal interesting biological cases. For instance, in Allium cepa, Helianthus annuus, or Andropogon gerardi, more than 35% of cytosines were methylated. Additionally, next to the mammlian CNS, 5hmdC was also detected in plants like Lepidium sativum and was found on 8% of cytosines in the Garra barreimiae brain samples. Thus, identifying unexpected levels of DNA modifications in several wild species, our resource underscores the need to address biological diversity for studying DNA modifications.
 
 ## Introduction
 
@@ -35,13 +35,173 @@ In addition to the position-specific information provided by sequencing technolo
 
 ## Results and discussion
 
-## Global quantification of a panel of enzymatic DNA modification using liquid chromatography/multiple reaction monitoring
+### Global quantification of a panel of enzymatic DNA modification using liquid chromatography/multiple reaction monitoring
 
 In order to quantify the global levels of multiple enzymatic DNA modifications in a single analysis, we expanded a previous method based on liquid chromatography-multiple reaction monitoring (LC-MRM) and designed for the quantification of 5mdC (Tsuji et al., 2014). This method is characterized by a sensitivity down to attomoles and a broad dynamic range, and discriminates between RNA and DNA modifications, clarifying the previously debated content of 5mdC in several yeast species (Capuano et al., 2014). In this method, isolated DNA is first enzymatically digested to obtain the corresponding nucleosides using a nuclease enzyme mixture (DNA Degradase Plus, Zymo Research). The resulting digest is directly analyzed by a targeted assay using LC-MRM using a triple quadrupole (QQQ) mass spectrometer. Distinguishing the nucleosides arising from a DNA monomer from a potentially co-purified RNA monomer occurs on the basis of the precursor mass difference of the sugar moiety. Such a strategy ensures the measured nucleosides are free from RNA contamination as many base modifications are also present in RNA (Capuano et al., 2014; Tsuji et al., 2014). For quantifying other DNA modifications, namely 5hmdC, N6mdA, cadC, and fdC, we obtained synthetic standards for these molecules and optimized the instrumental and chromatography parameters accordingly (Tables 1 and 2; Figure 1—figure supplement 1). Moreover, we supplemented the method by a neutral loss scan as a strategy to confirm the MRM results, as well as to detect additional modifications such as 4mdC, that were not included among the standards. Combined with the high sensitivity offered by a triple quadrupole mass spectrometer (Agilent 6470), we were able to achieve detection limits in picomolar ranges (Figure 1A).
 
+**Table 1.**
+ Concentrations of pure nucleoside standards and their sources.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Molecule: vendor/code</th>
+      <th>Pure stock concentration(µM)</th>
+      <th>Pool concentration(µM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2dC: Sigma/D3897-100MG</td>
+      <td>5,000</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>5hmdC: Berry and Associates/PY7588</td>
+      <td>0.5</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>5mdC: Santa Cruz/ sc-278256</td>
+      <td>100</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>cadC: Berry and Associates/PY7593</td>
+      <td>0.5</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>dA: Sigma/D7400-250MG</td>
+      <td>5,000</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>dG: Sigma/854999</td>
+      <td>5,000</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>fdC: Berry and Associates/PY 7589</td>
+      <td>0.5</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>N6mdA: Alfa Aesar/ J64961</td>
+      <td>0.5</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>T: Sigma/89270–1G</td>
+      <td>5,000</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Retention times and transitions for nucleosides analyzed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Molecule</th>
+      <th>Precursor ion</th>
+      <th>Qualifier Product ion</th>
+      <th>Quantifier Product ion</th>
+      <th>Retention time (min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2dC</td>
+      <td>228.1</td>
+      <td>95</td>
+      <td>112.0</td>
+      <td>4.362</td>
+    </tr>
+    <tr>
+      <td>cadC</td>
+      <td>272.0</td>
+      <td>137.9</td>
+      <td>155.9</td>
+      <td>5.193</td>
+    </tr>
+    <tr>
+      <td>5mdC</td>
+      <td>242.0</td>
+      <td>108.6</td>
+      <td>126.0</td>
+      <td>5.130</td>
+    </tr>
+    <tr>
+      <td>dG</td>
+      <td>268.1</td>
+      <td>–</td>
+      <td>151.9</td>
+      <td>7.546</td>
+    </tr>
+    <tr>
+      <td>fdC</td>
+      <td>256.0</td>
+      <td>97</td>
+      <td>139.9</td>
+      <td>7.868</td>
+    </tr>
+    <tr>
+      <td>dA</td>
+      <td>252.1</td>
+      <td>–</td>
+      <td>136.0</td>
+      <td>8.128</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>243.1</td>
+      <td>54.1</td>
+      <td>126.9</td>
+      <td>8.349</td>
+    </tr>
+    <tr>
+      <td>5hmdC</td>
+      <td>258.0</td>
+      <td>141.9</td>
+      <td>81.1</td>
+      <td>10.585</td>
+    </tr>
+    <tr>
+      <td>N6mdA</td>
+      <td>266.3</td>
+      <td>117</td>
+      <td>150.0</td>
+      <td>11.391</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-v1.jpg)
+
+**Figure 1.:** (A) Multiplex analysis of various genomic DNA modifications using liquid chromatography-multiple reaction monitoring following enzymatic digestion of DNA. The regression curves and limit of detection (LOD) for modifications 5mdC, 5hmdC, and N6mdA are represented. Although our method also quantifies cadC and fdC, we did not detect significant concentrations of these in any of the measured samples; these modifications were hence omitted from the graphical illustrations. (B) A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria. (C–D) Distribution of 5mdC, 5hmdC, and N6mdA across (C) archaeal, bacterial, and eukaryotic domains, and (D) animal, fungi, monera, plant, and protozoan kingdoms. The values depict percentage of cytosine residues bearing either methyl (%5mdC) or hydroxymethyl (%5hmdC) modification and percentage of adenine residues bearing methyl modification (N6mdA). Percentage modifications were calculated as ratio of modified cytosine residue and guanosine for 5mdC and 5hmdC; and ratio of modified adenine residue and thymine for N6mdA. The limits of detection for 5mdC, 5hmdC, and N6mdA are 4.6 nM, 320 pM, and 19 pM, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** TIC (Total Ion Chromatogram) of an authentic sample of 5mdC is shown as a comparison.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The broad range in cytosine hydroxymethylation in case of Garra barreimiae and Monodelphis domestica as well as methylation in Homo sapiens is due to the multiple tissues present. They have been deliberately combined to show the narrow distribution in other modifications. Please refer for tissue specific distribution.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** In (A) bleached (microbiota removed via bleaching) vs. unbleached (intact microbiota) flies and in (B) bleached flies fed with a sterilized vs. non-sterilized diet.
+
 Upon setting up the method, we sampled cells or tissues for a large number of species across the three domains of life. Because our method does not include any amplification steps and detects modifications on the DNA directly, it requires clean DNA at microgram levels, at least for the detection of the lowly concentrated DNA modifications. Unfortunately for some rare specimens, we only had limited sample amounts, and in many cases, standard DNA preparation protocols did not yield DNA of sufficient quality or concentration for our assay. However, by combining different protocols and sources, we were able to obtain clean DNA at microgram levels for 286 distinct tissues. To isolate DNA, we employed mostly a spin-column kit (Genomic-tip 20/G, Qiagen) which is chemically mild to DNA, and avoided strategies that involve the use of oxidants and reactive chemicals. However, for plant species, due to their biochemical composition, we were forced to use phenol–chloroform extraction to obtain sufficient quantities of DNA. In such cases, reagents like β-mercaptoethanol (2-sulfanylethan-1-ol) were included to keep DNA damage to a minimum during the extraction. The obtained DNAs were from 124 different species, including 85 bacterial species, 6 yeast species, 2 archeal species, 19 plant species, and 18 tissue and cell-culture samples from multiple animal species, including human and mouse. The collection included both the typical model organisms, and specifically for bacteria, vertebrates, and plants we included a significant number of species that have been barely characterized at the molecular level so far (Figure 1B). Furthermore, for a number of vertebrates, including human, the model organisms mouse (Mus musculus), African clawed frog (Xenopus laevis), but also for some less studied species, the opossum (Monodelphis domestica), the Alpine marmot (Marmota marmota), and the Oman garra (Garra barreimiae), we obtained DNA from multiple tissues and/or cell lines in order to quantify tissue differences in the absolute DNA modification content. For plants, we focused on seedlings that were germinated in the lab (Varma and Calvani, 2022). The seedlings not only allowed for efficient DNA extraction, which can be hampered by high concentrations of plant polymers in fully differentiated plant tissues, but also for direct comparison between the plants at a similar developmental stage. Multiple species were analyzed in replicates to identify the extent of variation in the analytical technique which revealed reasonably consistent values for modifications measured across different species (Figure 1—figure supplement 2).
 
-## While multiple lower eukaryotes lack DNA modifications, N6mdA dominates in bacteria, and 5mdC is the dominating DNA modification across higher eukaryotes
+### While multiple lower eukaryotes lack DNA modifications, N6mdA dominates in bacteria, and 5mdC is the dominating DNA modification across higher eukaryotes
 
 Our results reveal major differences in the nature and global concentration of DNA modifications when comparing the domains of life (Figure 1C, D). First, despite the broad coverage, high sensitivity, and precision of our method, we did not detect significant levels of fdC and cadC in any of the genomes measured (limits of detection were 238 pM and 251 pM, respectively). These oxidized forms of 5-methyl-2′-deoxycytidine have been associated with the degradation of 5mdC (Ito et al., 2011), and according to our results they seem to remain undetectable across species as they are known to be labile and do not accumulate to significant, genome-wide-scale levels. In addition, neutral loss scans conducted in parallel, confirmed the picture that across species, only 5mdC, 4mdC, 5hmdC, and 6mdA reached notable concentrations on the genome-wide level. A notable exception was that we detected hardly any of these DNA modifications in the unicellular fungi studied (Supplementary file 1). Hence it is not merely 5mdC (Capuano et al., 2014; Binz et al., 2018; Nai et al., 2020), but also its oxidized form 5hmdC along with N6mdA that are very low if not absent in typical yeast species. It is interesting in this context that the insects Trichoplusia ni, Spodoptera frugiperda, and D. melanogaster (Supplementary file 1) all had DNA modifications, but also at much lower levels compared to both, higher organisms but also bacteria. Indeed, the fruit fly D. melanogaster has so far been considered an unusual case among the laboratory model organisms, as it contains only trace amounts, if any, of cytosine methylation (Capuano et al., 2014; Lyko et al., 2000; Zhang et al., 2015), but our data suggests this picture could be common to insects and other lower eukaryotes.
 
@@ -49,23 +209,45 @@ The presence of other DNA modifications in D. melanogaster like N6mdA has also b
 
 What conclusions can be drawn from the low concentrations of DNA modifications in yeasts and insects? First, these results support the notion that enzymatic DNA modifications are not universal, which could have peculiar evolutionary consequences. Studies in yeast have concluded that DNA modifications could have been specifically lost during yeast evolution (Bhattacharyya et al., 2020). However, our result that insects can have similarly low DNA modification levels raises another possibility that DNA modifications could have evolved in higher eukaryotes and bacteria, after yeasts and insects branching off. As a rule, most genomes contained a single modification type that did pass the limit of detection of the highly sensitive method. Some exceptions to this were, however, encountered. A subset of the eukaryotes and a subset of prokaryotic species contained low concentrations also of a second modification, which could be either 5mdC, N6mdA, or 5hmdC (Figure 2, Figure 2—figure supplement 1). For instance, Diplotaxis tenuifolia had low amounts of N6mdA (0.1%, Supplementary file 1) next to high amounts of 5mdC. Notably, species that exhibited 5hmdC were also observed to contain its precursor 5mdC. Of particular interest was Raphanus sativus, which was the only species among those analyzed that possessed all the three modifications at detectable levels and in parallel. Among prokaryotes, we observed only cytosine and adenine methylation modifications, with 5hmdC entirely missing. Our study further featured two archeal genomes (Sulfolobus acidocaldarius and Halobacterium salinarum), which shared a similar level of the cytosine modification but differed in their levels of adenosine modification. While we detected N6mdA in H. salinarum, no adenosine modification was observed for S. acidocaldarius (Supplementary file 1).
 
-## Tissue divergence of 5mdC concentrations in vertebrate and plant genomes
+![Figure 2.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig2-v1.jpg)
+
+**Figure 2.:** The outer ring represents the kingdoms present within these domains. The groupings per number of modifications are shown as fill patterns on the inner ring, where dots represent species in which only one among 5mdC, 5hmdC, and N6mdA were found; crosses represent species bearing two modifications simultaneously; and no fill represents species carrying all three modifications.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig2-figsupp1-v1.jpg)
+
+### Tissue divergence of 5mdC concentrations in vertebrate and plant genomes
 
 Among the DNA modifications, 5mdC had the highest abundance and was specifically abundant in plants. Most vertebrate genomes studied had a 5mdC content of around 5% (mean 4.66, SD 2.17) of the cytosine residues. Some species, including the model organisms Danio rerio and X. laevis, had higher levels consistent with early observations (Colwell et al., 2018). In plants, however, 5mdC concentrations of 10% (mean 20.34, SD 9.81) and higher were typical (Figure 1D). Extremely high values for cytosine methylation were observed in Andropogon gerardii and Allium cepa, where more than 35% of cytosines were methylated (Figure 1D, Supplementary file 1). As plants are known to possess polyploid genomes, high cytosine methylation values could be attributed to silencing of multiplied genes and the much larger non-functional parts of their genome (Masterson, 1994). Given that very low levels or no 5mdC were detected in yeast and insects, cytosine 5 methylation levels hence differ by several orders of magnitude within the eukaryotic kingdom.
 
 In multicellular organisms, DNA modifications are important for development, and tissue differences between DNA modification patterns are observed (De Bustos et al., 2009; He et al., 2020; Zhu et al., 2018). Our data suggests that a change in the modification pattern or sequence context does not necessarily have a strong impact on the total concentrations of the DNA modifications, however. We analyzed spleen, muscle, lung, liver, kidney, heart, and CNS samples from five animal species, of which two are model organisms (X. laevis, M. musculus), and three non-model organisms (G. barreimiae, M. domestica, M. marmota). From M. musculus we further examined tissues from multiple inbred laboratory lines: BALB/c, FVB/N, Hsd/Ola/MF1, B6SJL/CD451/CD452, BALB/cAnN, 129S8, and F1/CBAxB6. In parallel, we analyzed multiple human cell lines (Supplementary file 1). The obtained data was consistent, in the sense that the values for 5mdC levels were highly similar, as long as the tissues were derived from the same species (Figure 3A, left). For instance, most tissues in G. barreimiae, M. marmota, and M. musculus tissues had 5mdC levels of around 5–6% (Figure 3A). Between the different mouse lines, there were no significant differences in 5mdC levels (Supplementary file 1). We noted, however, some small but notable differences between specific tissues. Heart tissue presented a broad cytosine methylation level and brain tissue had a higher median value for percentage methylation compared to other tissues (5.3 vs. 4.9%; Figure 3B). We then tested whether different nutritional conditions would change the picture. Therefore, we grew a commonly used mammalian cell line (HeLa) under different growth conditions. The different growth conditions affected 5mdC levels, and the detected differences were in a similar magnitude as the small differences detected between tissues (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig3-v1.jpg)
+
+**Figure 3.:** (A) The concentration of 5-methyl deoxycytidine (left) and 5-hydroxymethyl deoxycytidine (right) in different vertebrate genomes.n = 4 for G. barreimiae, M. marmota, M. musculus, X. laevis and n=3 for M. domestica.(B) Distribution of 5-methyl deoxycytidine (left) and 5-hydroxymethyl deoxycytidine (right) in different mouse tissues (n=5). Variations in percentage modification across different (C) non-plant eukaryotes including representatives from vertebrates like mammals, amphibians, and fish, invertebrates like insects and mollusks, and unicellular fungi and protozoa (D) plants species comprising both gymnosperms and angiosperms.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** 5hmdC was below the detection limit for all samples.
+
 Overall, 5mdC concentrations in M. domestica (opossum) and X. laevis, respectively, were different to the aforementioned species. In opossum, we detected much lower levels (2%) of 5mdC in all tissues examined. Conversely, in X. laevis, all tissues had much higher concentrations (about 9.4%). Higher values in X. laevis could be attributed to the tetraploid genome of this species compared to its relative X. tropicalis, which is diploid (Head et al., 2014). However, also here, in both cases the tissue differences in the 5mdC concentrations were minimal, at least when compared to the differences that exist between species. Although we tested fewer cases in plants, our data suggest the situation could be similar there too. We tested different tissues (roots, leaf, stem, and seed cotyledon) from Phaseolus vulgaris and obtained consistently high (16.7%) 5mdC concentrations in all measured tissues (Supplementary file 1). Hence, the several tissues examined from animal species, cell lines, and P. vulgaris provided a largely consistent picture: in a given organism, several tissues exhibit similar levels of 5mdC, and, that within-tissue differences are typically smaller compared to the differences that can be detected between species.
 
-## Tissue specificity of 5-hydroxymethyl deoxycytidine in the vertebrate CNS
+### Tissue specificity of 5-hydroxymethyl deoxycytidine in the vertebrate CNS
 
 Tissue specificity was, however, detected for another modification, 5hmdC. Indeed, 5hmdC was previously discovered in mammalian brain tissue, where it is formed via oxidation of 5mdC by TET enzymes (Tahiliani et al., 2009; Globisch et al., 2010). Our dataset shows that 5hmdC is detected in a broad range of vertebrate tissues except for spleen, but reaches significantly higher concentrations specifically in samples from the CNS. Although the spleen tissues had similar 5mdC levels as other mouse tissues, 5hmdC was not detected in these tissues (Figure 3B). Interestingly, our data reveals that the highest 5hmdC levels were not detected in the mammalian brain, but in the fish G. barreimiae. were levels could reach up to 8% of cytosine residues Although lower compared to G. barreimiae, mammals M. musculus (3.3%), and amphibian X. laevis (2%) still had high levels of 5hmdC specifically in brain tissue relative to other tissues in those organisms (Figure 3A, right). An interesting exception was in opossum, the only vertebrate species analyzed, in which 5hmdC levels were not higher in the brain compared to peripheral tissue.
 
 Apart from vertebrates, 5hmdC was also observed in A. thaliana and Oryza sativa (Mahmood and Dunwell, 2019). Our data shows that the presence of 5hmdC is by no means universal in plants, indeed, we did not detect it in the majority of plant samples. Nonetheless, our data adds several species (A. cepa, Laurus nobilis, Lepidium sativum, and R. sativus) in which we confirmed low concentrations of 5hmdC. Furthermore, we did not detect 5hmdC in any of the bacterial or fungal genomes analyzed. Our results support the fact that the modification of 5hmdC is more widespread in biological systems than previously assumed, but quantities above picomolar-levels being not detected in any bacteria, yeasts and many tissues from higher organisms implies 5hmdC is not universal or specific to any part of the phylogenetic tree.
 
-## Variations in DNA modification across different bacterial species
+### Variations in DNA modification across different bacterial species
 
 In prokaryotes, high amounts of DNA modifications all concerned N6mdA, with the highest levels detected in Mobiluncus curtisii (~1.4%) and Moorell thermoacetica (~1.1%). In total, the prokaryotic genomes hence contained higher amounts of DNA modifications compared to lower eukaryotes such as yeasts and insects, but lower amounts of DNA modifications compared to higher eukaryotes—plants and vertebrates in particular. Typical bacterial species contain only one type of modification—mostly N6mdA (Figure 4A). Our data reveals some exceptions. Certain genera such as Campylobacter contain trace quantities of 5mdC (<0.1%) next to the dominating N6mdA modification (Supplementary file 2). In general, the observed trend was that the occurrence of one type of modification limits the occurrence of the other. For instance, M. curtisii with ~1.4% of its adenine residues methylated shows only 0.3% 5mdC, while Sebaldella termitidis, with unusually high cytosine methylation (~2.4%), has only 0.1% of its adenines methylated. Interestingly, we observed that median values for 5mdC dominate over N6mdA in those bacteria that colonize or enter mutualistic relationships with higher eukaryote species that carry 5mdC as their main modification (Figure 4—figure supplement 1, Supplementary file 2). This included the genus Neisseria, mucosal-surface-colonizing bacteria, which showed 1.4 and 2% (Neisseria gonorrhoeae, Neisseria lactamica, respectively) of cytosine residues were methylated while containing only <0.3% N6mdA, and Faecalicoccus pleomorphus and Bifidobacterium adolescentis, with >1.5% of 5mdC without any detectable levels of N6mdA modification. Indeed, others made a similar observation in single-cell fungi. While the environmental yeasts studied herein and previously lacked any modifications (Capuano et al., 2014), the most frequent commensal yeast pathogen Candida albicans contained as sole yeast species 5mdC (Mishra et al., 2011). This result is interesting, because it could mean that host–pathogen interactions could select for similar DNA modifications in the pathogen as in the host. The study of future host–pathogen pairs is necessary to substantiate this observation and suggests that the picture about the functions of DNA modifications in prokaryotes is incomplete; 5mdC has thus far not been associated with function in pathogen immunity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig4-v1.jpg)
+
+**Figure 4.:** (A) Percentage of cytidine methylated against the percentage of adenine methylated in bacterial species. (B) Variation of % 5-methyl deoxycytidine and % N6-methyl deoxyadenosine among taxonomic divisions: phylum, class, and genus. One-way ANOVA, p-values for phylum, class, and genus are 0.017, 7×10–4, and 0.16, respectively. (C) Distribution of 5mdC and N6mdA among 85 bacterial species depicted together with their phylogenetic relationships. Percentage modifications are calculated as ratio of modified cytosine residue and guanosine for 5mdC and 5hmdC; and ratio of modified adenine residue and thymine for N6mdA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig4-figsupp2-v1.jpg)
 
 Having analyzed 85 species, we were able to ask if bacterial species with a close evolutionary relationship or similar habitat or genome properties also have a more similar modification makeup. We did not detect any relationship between nature and level of modification with genome size or GC content (Figure 4—figure supplement 2). Similarly, we detected no significant correlation between factors such as pathogenicity, temperature of growth, or tolerance to oxygen and the amount of modifications per unit genome size (not shown). We did, however, observe obvious patterns at the different taxonomic levels once we grouped the different bacterial strains according to phylum, class, and genus. Similarities are detected at the genus level (Figure 4B, C). Members of the same genus often displayed similar values for a given modification. For example, species of the Vibrio genus presented similar quantities of N6mdA. At the class level, we observed trends between the different classes and the amount of modification. α- and γ-Proteobacteria had the highest N6mdA content among different classes present while bacteroidetes presented with more cytidine methylation than adenosine methylation. At the phylum level, the patterns were more prominent in Proteobacteria, containing more N6mdA than 5mdC, while a reverse trend of more 5mdC than N6mdA was observed for Bacteroidetes and Firmicutes. Finally, we also observed a third modification, 4mdC, to be frequent in prokaryotes. 4mdC was detected in tandem with 5mdC as a second modification in Shewanella putrefaciens, Stenotrophomonas maltophilia, Bifidobacterium dentium, M. curtisii, and Gallibacterium anatis (Figure 1—figure supplement 2, not quantified).
 
@@ -75,11 +257,11 @@ Although the exact mode of inheritance could not be inferred from the present st
 
 For a description about the sources of samples and their extraction, please refer to ‘Supplementary Information for sample sources: Global analysis of cytosine and adenine DNA modifications across the tree of life’ (Varma and Calvani, 2022).
 
-## DNA extraction
+### DNA extraction
 
 DNA extracts were treated with RNase A (VWR, Cat.No. E866-5ML) at 37°C for 45 min, and DNA purification was performed using QIAGEN Genomic tip-20/G according to the manufacturer’s instructions. Purified DNA was precipitated with isopropanol, washed with 70% ethanol, and resuspended in 10 mM Tris-HCl, pH 8.0. Quantification was done using a dsDNA BR Assay Kit (Qubit). The DNA sample was then digested into corresponding nucleosides using DNA Degradase Plus (Zymo Research, E2020). 1 µg of DNA was treated with 5 U of DNA degradase at 37°C for 2 hr in a final volume of 25 μl and the reaction was inactivated by incubating the samples for 20 min at 70°C as described by the manufacturer. Calibration standards were prepared in 1:4:4:2:2:2:2:4:4:4:4:4:4:4:10 serial dilutions from a standard stock that was prepared as per Table 1 and stored at –80°C.
 
-## Instrumentation
+### Instrumentation
 
 The samples were diluted 1:1 with MeOH 10% (v/v) containing 0.2% formic acid, and 10 µl corresponding to 200 ng of gDNA were injected onto a liquid chromatography system equipped with reverse phase Acquity UPLC HSS T3 column, 100 Å, 1.8 µm, 2.1 mm × 150 mm (Waters), column temperature 25°C and flow rate of 0.2 ml/min. Mobile phase A: 0.1% formic acid +10 mM ammonium formate in water, mobile phase B: 0.1% formic acid +10 mM ammonium formate in methanol. Gradient for elution was started from 5% mobile phase B to 35% B over 11.5 min followed by sharply increasing to 80% over the next 1.5 min. The gradient was held at 80% B for 2 min, lowered to the starting gradient over 1 min, and equilibrated for 6.5 min. Total length was 22.5 min.
 
@@ -87,6 +269,6 @@ The eluent was directed to an electrospray ion source connected to a triple quad
 
 For neutral loss experiments, the samples were injected as per the same LC parameters used for the MRM experiment while the mass spectrometer was set to a scan type of neutral loss (M=116 Da) while scanning the quadrupoles from 230 to 250 Da. The scan time was 1000 with a step size of 0.05 amu and the values for Fragmentor, collision energy, and cell accelerator voltage were 73, 8, and 5, respectively. 4mdC was detected as the second peak in the neutral loss (Δ = 118) chromatogram corresponding to parent ion 242 Da.
 
-## Data processing and analysis
+### Data processing and analysis
 
 Peak areas were extracted and integrated using MassHunter for QQQ to obtain the concentrations after applying the necessary limits of quantification. Subsequent processing for batch-to-batch variation and technical outlier removal were carried out using R or Python. A single reference mouse DNA sample was included in every measured batch to monitor batch-to-batch variation. Median-value-based normalization of the reference mouse samples was used to obtain the correction factor with which the corresponding batch was corrected. The results are depicted as percentage modification with respect to dG (for 5mdC and 5hmdC) and T (for N6mdA). The phylogenetic clustering was carried out using a newick file generated using NCBI Taxonomy (PhyloT) and the ggtree package (Yu, 2020). Features of bacteria were retrieved from the bacterial metadatabase BacDive (http://bacdive.dsmz.de, accessed April 14, 2020; Reimer et al., 2019).

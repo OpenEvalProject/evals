@@ -34,33 +34,33 @@
 ### Affiliations
 
 1. ROOT & SHOOT Research Coordination Network Rockville United States
-2. https://ror.org/04f49a463 American Society of Plant Biologists Rockville United States
-3. https://ror.org/05tn97j65 Folsom Lake College Folsom United States
-4. https://ror.org/03js09m24 Chicago Botanic Garden Glencoe United States
-5. https://ror.org/000e0be47 Northwestern University Evanston United States
-6. https://ror.org/00cvxb145 University of Washington Seattle United States
-7. https://ror.org/017zqws13 University of Minnesota Saint Paul United States
+2. American Society of Plant Biologists Rockville United States ([ROR:04f49a463](https://ror.org/04f49a463))
+3. Folsom Lake College Folsom United States ([ROR:05tn97j65](https://ror.org/05tn97j65))
+4. Chicago Botanic Garden Glencoe United States ([ROR:03js09m24](https://ror.org/03js09m24))
+5. Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+6. University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+7. University of Minnesota Saint Paul United States ([ROR:017zqws13](https://ror.org/017zqws13))
 8. Geneshifters Pullman United States
-9. https://ror.org/04p491231 Pennsylvania State University University Park United States
+9. Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
 10. Untangled Resolutions Binghamton United States
-11. https://ror.org/00bycf367 Botanical Society of America (BSA) St. Louis United States
+11. Botanical Society of America (BSA) St. Louis United States ([ROR:00bycf367](https://ror.org/00bycf367))
 12. Alchemy Psychology Colectivo Inc Los Angeles United States
 13. AgBioData Consortium and Phoenix Bioinformatics Fremont United States
-14. https://ror.org/01y2jtd41 Wisconsin State Herbarium, University of Wisconsin-Madison Madison United States
-15. https://ror.org/02k40bc56 Indiana University Bloomington Bloomington United States
-16. https://ror.org/01g9vbr38 Oklahoma State University Stillwater United States
-17. https://ror.org/05bnh6r87 Cornell University Ithaca United States
-18. https://ror.org/02ymw8z06 University of Missouri Columbia United States
-19. https://ror.org/020f3ap87 University of Tennessee Knoxville United States
-20. https://ror.org/02wxwab08 Botanical Research Institute of Texas Fort Worth United States
+14. Wisconsin State Herbarium, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+15. Indiana University Bloomington Bloomington United States ([ROR:02k40bc56](https://ror.org/02k40bc56))
+16. Oklahoma State University Stillwater United States ([ROR:01g9vbr38](https://ror.org/01g9vbr38))
+17. Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+18. University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
+19. University of Tennessee Knoxville United States ([ROR:020f3ap87](https://ror.org/020f3ap87))
+20. Botanical Research Institute of Texas Fort Worth United States ([ROR:02wxwab08](https://ror.org/02wxwab08))
 21. North American Arabidopsis Steering Committee Corvallis United States
-22. https://ror.org/00ysfqy60 Oregon State University Corvallis United States
-23. https://ror.org/00d9ah105 University of California, Merced Merced United States
-24. https://ror.org/040af2s02 University of Helsinki Helsinki Finland
-25. https://ror.org/047426m28 University of Illinois at Urbana Champaign Urbana United States
+22. Oregon State University Corvallis United States ([ROR:00ysfqy60](https://ror.org/00ysfqy60))
+23. University of California, Merced Merced United States ([ROR:00d9ah105](https://ror.org/00d9ah105))
+24. University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+25. University of Illinois at Urbana Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
 26. Plant biologist Rockville United States
-27. https://ror.org/01y2jtd41 University of Wisconsin-Madison Madison United States
-28. https://ror.org/05rrcem69 University of California, Davis Davis United States
+27. University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+28. University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -74,13 +74,73 @@ Conferences are an integral part of scientific communication, serving as a vital
 
 In February 2021, the National Science Foundation (NSF) released a Dear Colleague Letter: LEAding cultural change through Professional Societies (LEAPS) of Biology. Its goal was to solicit proposals from professional societies “to develop collaborative networks for facilitating cultural changes in the biological sciences to advance diversity, equity, and inclusion” (NSF, 2021). A group of several plant science professional societies and organizations collaboratively wrote and submitted a proposal for a Research Coordination Network called ROOT & SHOOT (Rooting Out Oppression & Sharing Our Outcomes Transparently), which was funded later in 2021. The societies involved were the American Society of Plant Biologists, the American Society of Plant Taxonomists, the American Phytopathological Society, the Botanical Society of America, the International Society for Molecular Plant-Microbe Interactions, Maize Genetics Corporation, and the North American Arabidopsis Steering Committee (see Table 1). The proposal set out an ambitious set of objectives, including a commitment to work towards safer and more inclusive conferences. Hostile cultures persist in research and academic settings, and conferences can be particularly risky places (Berhe et al., 2022). Although ROOT & SHOOT acknowledges that its organization’s membership may have an international component, the objectives are considered through a USA-centered perspective.
 
+**Table 1.**
+ Information on six of the societies that were involved in the Root and Shoot project.The ASPT and the BSA co-host their annual conferences, so the figures for attendance are the same.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Acronym</th>
+      <th>Total membership (2024)</th>
+      <th>Conference cadence</th>
+      <th>Attendance at last conference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>American Society of Plant Biologists</td>
+      <td>ASPB</td>
+      <td>2384</td>
+      <td>Annual</td>
+      <td>1417</td>
+    </tr>
+    <tr>
+      <td>American Society of Plant Taxonomists</td>
+      <td>ASPT</td>
+      <td>NA</td>
+      <td>Annual</td>
+      <td>852</td>
+    </tr>
+    <tr>
+      <td>Botanical Society of America</td>
+      <td>BSA</td>
+      <td>3126</td>
+      <td>Annual</td>
+      <td>852</td>
+    </tr>
+    <tr>
+      <td>International Society for Molecular Plant-Microbe Interactions</td>
+      <td>IS-MPMI</td>
+      <td>3801</td>
+      <td>Every other year</td>
+      <td>1133</td>
+    </tr>
+    <tr>
+      <td>Maize Genetics Corporation</td>
+      <td>MGC</td>
+      <td>477</td>
+      <td>Annual</td>
+      <td>441</td>
+    </tr>
+    <tr>
+      <td>North American Arabidopsis Steering Committee</td>
+      <td>NAASC</td>
+      <td>450</td>
+      <td>Annual</td>
+      <td>540</td>
+    </tr>
+  </tbody>
+</table>
+
 A central feature of the ROOT & SHOOT efforts to improve inclusivity is the formation of working groups to tackle specific issues. This approach aligns with the project goals of valuing and incorporating the perspectives and ideas of plant scientists from communities that are underrepresented and historically excluded from science. Here, we report on the formation of the ROOT & SHOOT Inclusive Conference Working Group, its recommendations, and the results of our initial efforts to implement them. We currently have a second working group underway, focused on culturally responsible mentorship, and are currently developing a seven-week course that is being prepared for beta testing.
 
 ## Working groups
 
 The working group approach has several advantages: the scope of the task can be focused and accomplished within a defined time frame; it harnesses the knowledge and energy of community members with relevant expertise and interest; and it incorporates a consensus-trust decision-making approach (Dong et al., 2021; Gai et al., 2023). The working group process also makes it possible to recruit members who do not belong to traditional power structures, such as early-career scholars who are unlikely to have yet obtained a leadership position in a professional society but may have previously unheard views (Smith and Turner, 2015; Bialik and Fry, 2019; Robbins et al., 2022). In the long term, a working group process fosters a more inclusive future by developing a robust network of diversity, equity, and inclusion advocates across disciplines in the plant sciences, and by enabling participants to gain valuable leadership and consensus-building experience.
 
-## Participant selection
+### Participant selection
 
 To correct past injustices and better represent the diversity within our organizations, representatives from ROOT & SHOOT deliberately aimed to recruit a diverse group of volunteers from the participating societies by using an open call. Early-career researchers were considered essential contributors to the working group process. Therefore, instead of standard application inputs (e.g., CV, research experience), applicants were asked for responses to free-form questions seeking to understand their motivation and life experiences that could be relevant to the desired outcomes. This application was shared with all the members of the participating societies, the ROOT & SHOOT mailing list, and social media. To help facilitators achieve a representative set of participants, optional questions seeking demographic information were also part of the application. Although it was not a requirement, most (17 of 24) of the Working Group participants had previous conference-organizing experience. These experiences ranged from organizing informal networking events and smaller workshops to professionally planning and hosting several in-person and virtual conferences with thousands of attendees. The final makeup of the Working Group is summarized in Figure 1.
 
@@ -94,7 +154,7 @@ We informed potential participants that the commitment would span one year, with
 
 **Figure 2.:** The Inclusive Conferences Working Group ran from July 2022 until April 2023. The report containing the group’s recommendations underwent three rounds of review: (i) internal review by the subgroups of the Working Group (November 2022); a strategic assessment by the ROOT & SHOOT steering committee, which contained at least one representative from each society (December 2022); (iii) a final evaluation by representatives from all seven participating societies, (January 2023).
 
-## The process of guideline development
+### The process of guideline development
 
 The Inclusive Conference Working Group was divided into five subgroups. Each subgroup independently developed a meeting style and approach to address one of the following:
 
@@ -102,27 +162,141 @@ The Inclusive Conference Working Group was divided into five subgroups. Each sub
 
 The final outcome of the process was a comprehensive set of recommendations to guide conference organizers in their planning. The recommendations include suggested language for community guidelines, guidance for reporting structures, advice for site selection and accessibility, and strategies for equitable programming and speaker selection. The guide, including the full Community Agreement, is available in both a long form (Supplementary file 1) and a short form (Supplementary file 2), and the key points are highlighted in Table 2.
 
+**Table 2.**
+ Summary of the major recommendations in the five areas addressed by the Inclusive Conference Working Group, based on a survey of the ASPB, BSA, IS-MPMI, MGC and NAASC.Recommendations in place before 2023 are indicated by an open circle (one per conference), and those implemented in 2023 or later by a filled circle. See Supplementary files 1 and 2 for more information.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. Community agreement</td>
+      <td>4. Conference accessibility</td>
+      <td>5. Inclusive speaker selection and equitable programming</td>
+    </tr>
+    <tr>
+      <td>Create and share an aspirational community conference agreement ○○●</td>
+      <td>Provide low-cost options for accommodation and registration ○○○○</td>
+      <td>Make a commitment</td>
+    </tr>
+    <tr>
+      <td>Should be a collective vision of our values ○●</td>
+      <td>Have a point person who reports on barriers and arranges accommodations ●</td>
+      <td>Commit to inviting a diverse group of speakers; set measurable goals ○○○●</td>
+    </tr>
+    <tr>
+      <td>Set expectations for conduct ○○○○</td>
+      <td>Website, presentations, and signage should be accessible ●●●</td>
+      <td>Commit to transparency: share these goals with speakers and participants ○●</td>
+    </tr>
+    <tr>
+      <td>Define measures for accountability ○○○</td>
+      <td>Ask participants about their accommodation needs in advance ○○○●</td>
+      <td>Form a diverse organizing committee</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Be welcoming to parents and children ○○○●●</td>
+      <td>Emphasize commitment to diversity ○○○●</td>
+    </tr>
+    <tr>
+      <td>2. Reporting structure</td>
+      <td>Provide lactation room, childcare, and family-friendly spaces ○○●</td>
+      <td>Recognize the organizing committee ○○●</td>
+    </tr>
+    <tr>
+      <td>Provide bystander intervention training ●●●●●</td>
+      <td>Indicate allergens on food, and provide vegan and vegetarian options ○○○●</td>
+      <td>Assess equity goals</td>
+    </tr>
+    <tr>
+      <td>Provide easy, confidential access to a reporting system ○○●●</td>
+      <td>Provide quiet, fragrant-free spaces ●●</td>
+      <td>Measure, track, and share progress ○●</td>
+    </tr>
+    <tr>
+      <td>Provide an independent ombud onsite ●●●●●</td>
+      <td>Offer social events that don’t include alcohol ○●</td>
+      <td>Survey the participants’ experiences: do they feel respected, valued, and safe? ○●</td>
+    </tr>
+    <tr>
+      <td>Have a clear system for dealing with transgressions ○○○●</td>
+      <td>Check and consistently use correct speaker pronouns ●</td>
+      <td>Broaden the scope of the meeting to provide space for all voices</td>
+    </tr>
+    <tr>
+      <td>Conduct post-conference surveys ○○○○</td>
+      <td>Use diacritical markers (like accents and tildes) appropriately ○</td>
+      <td>Don’t have inclusion events run solely by people with historically excluded identities ○●●●</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ask about and use correct name pronunciation ○●</td>
+      <td>Treat speakers as scientists first ○○●●</td>
+    </tr>
+    <tr>
+      <td>3. Transparent site selection</td>
+      <td></td>
+      <td>Create an equitable schedule</td>
+    </tr>
+    <tr>
+      <td>Provide guidance and transparency for site selection ○●</td>
+      <td></td>
+      <td>Be mindful of religious and cultural calendars, weekends ○○●●</td>
+    </tr>
+    <tr>
+      <td>Costs: facilities rental, lodging, transportation ○○○○</td>
+      <td></td>
+      <td>Plan for people to have breaks ○●●</td>
+    </tr>
+    <tr>
+      <td>Accessibility: are the facilities ADA-compliant and able to provide additional accommodations if needed? ○○○○●</td>
+      <td></td>
+      <td>Avoid scheduling conflicts, especially with those promoting a culture of inclusion ○</td>
+    </tr>
+    <tr>
+      <td>Safety: availability of reproductive services ●●</td>
+      <td></td>
+      <td>When possible, include hybrid options ○●●</td>
+    </tr>
+    <tr>
+      <td>Safety: are the streets safe to walk in after dark? ○○○●</td>
+      <td></td>
+      <td>Provide necessary accommodations to speakers</td>
+    </tr>
+    <tr>
+      <td>Safety: provide information about local LGBTQ +organizations ○●●●</td>
+      <td></td>
+      <td>Physical access to stage, hearing loops, sign language interpreters ●</td>
+    </tr>
+    <tr>
+      <td>Consider convenience: are food options available nearby? ○○○●</td>
+      <td></td>
+      <td>Gender neutral bathrooms at the venue ○●</td>
+    </tr>
+  </tbody>
+</table>
+
 Here we briefly summarize the key recommendations made by the Working Group, and reflect on any implementation or outcomes from our conferences.
 
-## 1. Community agreement
+### 1. Community agreement
 
 Most conference attendees and society members have been asked to check a box indicating their agreement to abide by a Code of Conduct when registering for the conference. These Codes outline unacceptable behavior (e.g., harassment, intimidation, discriminatory or disruptive behavior) and some of the outcomes that such behaviors might lead to, which include verbal warning, expulsion from the event, and being barred from future events. The Working Group aimed to complement the existing punitive Codes of Conduct with a community agreement that states the shared values of the plant science community and emphasizes the positive behaviors expected of attendees (Box 1). Although there was a generally positive reaction to the tone of these recommendations, none of the conferences have adopted them as described, largely due to a perceived redundancy with current Codes of Conduct and a concern about whether the conference agreement could be enforceable. Nevertheless, at least one of the conferences is currently planning to incorporate some of this language into their existing Code of Conduct.
 
-## 2. Reporting structure
+### 2. Reporting structure
 
 During community listening sessions, the need was repeatedly raised for a safe space where conference attendees could report disputes related to the Code of Conduct, or community agreement, and receive guidance. A central goal was to have a neutral party available for such reporting. The Working Group proposed that the ROOT & SHOOT grant provide on-site ombudsperson services to the society conferences, and the outcomes of this implementation are described further below. Bystander intervention training was also recommended and implemented as discussed below. Finally, the Working Group recommended that formal processes be established with clear guidelines for addressing reports of interpersonal conflicts and violence, not unlike the clear guidelines that are in place for academic misconduct and available from the Committee on Publication Ethics (COPE). At least one of the member societies has revised its processes to accommodate these recommendations.
 
 The Working Group also recommended a public rating system whereby attendees could rate the accessibility of a conference after attending it: for example, they could score whether lactation rooms and closed captioning during oral presentations were provided. In an effort to measure the incidence of community agreement violations, the Working Group also recommended that a standardized survey be implemented for use both during and after the conference, for reporting incidents and if/how it was addressed. These recommendations were not pursued for implementation by the professional societies, at least in part because organizers feared that such a rating system might preferentially penalize those societies with smaller conference budgets. Furthermore, the lack of clarity regarding details of the cross-society surveying (e.g., who would gather and store data, how the data would be interpreted and communicated back to the societies) raised concerns, and thus, this aspect was not implemented.
 
-## 3. Transparent site selection
+### 3. Transparent site selection
 
 The location of a conference affects participation and attendance in many ways. Many factors contribute to this decision, and the Working Group recommended being as transparent as possible in communicating how the site was selected. Ideally, the conference location is not unduly expensive so that registration costs are reasonable, although subsidies should be available to those who need them. Similarly, lower-cost accommodations should be available and promoted to the registrants. The venue must be accessible to individuals with visual, auditory, or mobility impairments. This information must be provided on the website, and accommodation requests must be honored. The conference should be held in a location that is safe for all (e.g., abortion and reproductive services are available, homosexuality is not illegal, transgender identities are respected) and where international travelers can easily obtain visas to visit. The Working Group developed a document with questions to guide site selection (Supplementary file 3), facilitating a process that ensures consideration of the identified issues and transparency for the community. Several conferences adopted some of these recommendations, particularly with regard to safety (see Table 2).
 
-## 4. Conference accessibility
+### 4. Conference accessibility
 
 The Working Group considered five aspects of accessibility: economic, physical, audio/visual, family, and wellness. Collectively, these recommendations comprise the largest section of the Inclusive Conference Guide (Supplementary file 4), providing ample food for thought for conference organizers. These recommendations note that certain accessibility options (e.g., economic vs physical environment) may be in direct conflict, so a long-term view that balances choices over several years may be necessary. A key message is that conference organizers should strive to ensure that their event is open, accessible, and welcoming to all who wish to participate. Presenters should be provided with information on how to make their remarks accessible (Supplementary file 4), including closed captioning. All gender bathrooms must be available and clearly signposted. Accommodations should be made for people who attend with their children, such as affordable onsite childcare and lactation rooms. With 20% or more of the population being neurodiverse, it is imperative to include dedicated quiet and scent-free spaces. Conferences provide ideal opportunities to educate the community about workspace accommodations. Finally, caterers should provide clearly labeled ingredient lists, including potential allergens, and ensure that inclusive dietary options are available to accommodate a wide range of needs and food restrictions.
 
-## 5. Inclusive speaker selection and equitable programming
+### 5. Inclusive speaker selection and equitable programming
 
 The final section provides concrete steps to ensure a diverse speaker pool across different career stages. We cannot claim that our conferences are inclusive if the presenters do not reflect the diversity of the audience. Conference organizers are encouraged to look beyond the senior authors of the most-cited recent papers if they want to achieve true speaker diversity. Inviting first authors, often early-career researchers and scholars, rather than senior authors, can be beneficial. Additionally, ensuring that the program includes topics that have not been historically represented – such as the role of Indigenous knowledge, science policy, the history of science, and education – can also be helpful. The program committee itself must be diverse, as studies show that diverse organizing committees are more likely to generate diverse speaker lists (Segarra et al., 2020). Being publicly and explicitly clear about a commitment to an inclusive conference increases the likelihood that invited speakers will accept an invitation. An inclusive approach also includes that those introducing speakers use correct pronouns (if provided) and make the effort to pronounce names accurately. Finally, being transparent about the commitment to equitable programming and speaker diversity can help with accountability, as can collecting year-by-year data and reflecting on trends as the organization prepares for the next conference.
 
@@ -130,7 +304,7 @@ The final section provides concrete steps to ensure a diverse speaker pool acros
 
 Although the Working Group developed a comprehensive set of recommendations, we recognize that not all have been or can be implemented, and some were already in place. Here, we highlight a few of the efforts that the ROOT & SHOOT project implemented across several conferences organized by the participating societies, along with their outcomes.
 
-## Bystander intervention training workshops
+### Bystander intervention training workshops
 
 From numerous listening sessions and discussions within the larger scientific community, personal safety at conferences emerged as one of the primary concerns of people with historically excluded identities. In order to begin to address this concern and build a more aware and supportive environment, ROOT & SHOOT partnered with the ADVANCEGeo Partnership to host several online bystander intervention training workshops. These workshops were free to attend and provided an early access point for individuals interested in understanding why, when, and how to intervene if observing situations involving mistreatment, harassment, or discrimination.
 
@@ -138,7 +312,7 @@ We have hosted seven training sessions since 2023, with an average attendance of
 
 The practice portion was particularly well received, so we contracted ADVANCEGeo to hold additional 1.5 hour “scenario-only practice sessions” for those who had already undergone the full training. The length of the full training may have been a deterrent, so organizations that still wanted their members to be trained adapted the content into a shorter training session, and made it a requirement for conference organizers and session chairs to attend (Friesner, 2023). Organizations that did not make the training a requirement incentivized their members to join by providing badge stickers recognizing that they’d attended the training. While we did not conduct formal post-training evaluations, we received anecdotal feedback from members and conference participants who reported feeling more confident about intervening in problematic situations. Several also noted observing session chairs actively implementing the training practices during the conference.
 
-## On-site ombudsperson and advocacy services
+### On-site ombudsperson and advocacy services
 
 Another major finding from the Working Group was the need to have an independent, neutral party present at the conference to address personal safety needs and concerns about harassment and discrimination. Most affiliated societies were enthusiastic about engaging in such a service, provided that ROOT & SHOOT bore the cost. Therefore, at five conferences over the course of two years, ROOT & SHOOT paid for a professional ombudsperson and advocacy service.
 
@@ -148,6 +322,86 @@ The ombudsperson and advocacy service was requested and utilized at least once a
 
 To respect confidentiality, we can provide only general descriptions of the issues that arose. These issues included: helping process intrapersonal struggles that interfered with the individual’s ability to be fully present and enjoy the conference; concerns about identity-based hate speech; sexual harassment; friction within a committee that involved unconscious bias related to identity; accessibility-related concerns; and racially biased material used in oral presentations. Table 3 includes a series of situations that we have observed in our collective experience, along with potential ways to address them.
 
+**Table 3.**
+ Summary of some challenges that have occurred during scientific conferences, and their proposed responses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Example issue</th>
+      <th>Proposed response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Presentations</td>
+      <td>Offensive or stereotypical images, jokes, or language on slides</td>
+      <td>Speaker guidelines with content review</td>
+    </tr>
+    <tr>
+      <td>Dismissive tone toward certain demographics during Q&amp;A</td>
+      <td>Define a response beforehand and train the session chairs to intervene</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Accessibility</td>
+      <td>Lack of captioning or sign language interpreters</td>
+      <td>Pre-event accessibility survey</td>
+    </tr>
+    <tr>
+      <td>No accommodations for mobility or sensory needs</td>
+      <td>Provide multiple modes of participation</td>
+    </tr>
+    <tr>
+      <td>Inaccessible venue layout</td>
+      <td>Visible signage and support at venue</td>
+    </tr>
+    <tr>
+      <td>Q&amp;A sessions</td>
+      <td>Overly aggressive questioning, tone-policing, dismissive or personal attacks on speaker’s competence or identity</td>
+      <td>Moderator training to set respectful tone</td>
+    </tr>
+    <tr>
+      <td>Networking events</td>
+      <td>Exclusion from informal groups, inappropriate jokes, harassment, or alcohol-related misconduct</td>
+      <td>Ombudsperson or advocacy ambassadors (with bystander training) at social events</td>
+    </tr>
+    <tr>
+      <td>Poster sessions</td>
+      <td>Harassment or inappropriate questioning during poster presentations</td>
+      <td>A clear system for reporting misconduct. Provide advocacy ambassadors with distinctive lanyards (with bystander training) at poster events</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Social media and online platforms</td>
+      <td>Live posts or messages targeting individuals in harmful or sarcastic ways</td>
+      <td>Create and promote moderated hashtags</td>
+    </tr>
+    <tr>
+      <td>Dogpiling or doxing (involves publicly exposing someone’s private information)</td>
+      <td>Establish and promote a social media Code of Conduct</td>
+    </tr>
+    <tr>
+      <td rowspan="3">General conduct</td>
+      <td>Violation of Code of Conduct</td>
+      <td>Clear and visible Code of Conduct</td>
+    </tr>
+    <tr>
+      <td>Public or private bullying</td>
+      <td>Advertise and make the ombudsperson role visible. Provide and advertise bystander intervention training</td>
+    </tr>
+    <tr>
+      <td>Microaggressions</td>
+      <td>Consistent follow-up for violations, consider implementing restorative justice methods</td>
+    </tr>
+    <tr>
+      <td>Power dynamics</td>
+      <td>Abuse of power by established figures (inappropriate comments, gatekeeping, retaliation against dissent)</td>
+      <td>Policy outlining professional boundaries and recourse for abuse. Provide and advertise bystander intervention training</td>
+    </tr>
+  </tbody>
+</table>
+
 During the 2023 and 2024 conference seasons, the service providers met with conference leadership and staff via Zoom after each event to share their experience, answer questions, offer feedback to the conference organizers, and provide long-term recommendations for improving future conferences. These recommendations included: to review the presentation materials of major speakers; to have all speakers upload slides for review before the conference; to provide presentation templates that are accessible-friendly; and to have all attendees receive identity-based bias training, as well as bystander intervention training.
 
 While we have limited data on post-conference evaluations from two organizations, most of the feedback we received was informal, and was shared with organizers and the service providers throughout the conference. In one conference, at least five people stopped by the office being used by the service provides to say that they did not need the service, but were glad it was available. The same conference’s evaluations showed that 66% of members were aware that the service was available to them (strongly agree +somewhat agree; n=167), and 63% understood the purpose of the service (strongly agree +somewhat agree; n=170). Some 47% said that having the service was important to them, while 39% were neutral and 13% disagreed or strongly disagreed (n=165). In another conference, evaluations showed that 35% considered the service to be of “high value” (between 8 and 10 on a scale of 1–10; n=191).
@@ -156,7 +410,7 @@ We acknowledge that cost is a significant barrier to having an onsite ombudspers
 
 Another option is to book a remote service, where the ombudsperson/advocate attends the conference virtually and is available via phone, email, or text. A virtual service typically costs between $3,000 and $ 5,000 per conference.
 
-## Exploring more just systems to respond to harm
+### Exploring more just systems to respond to harm
 
 The Working Group was also made aware of concerns regarding the systems in place for addressing reports and instances of harm at conferences. We are aware of commonly reported outcomes, including no action being taken following a complaint, a lack of transparency regarding the process, and no follow-up with the complainant (see, for example, Ahmed, 2021). We asked, in an inclusive, transparent, empowered, and equal plant science culture, what would happen when a transgression occurred? Answering that question requires involving the community in establishing guidelines and consequences. Ideally, we would like to see processes that are not purely punitive, but rather those through which relationships are repaired and that allow those who have experienced harm to reclaim their agency. Therefore, we explored the possibility of incorporating restorative justice models. Restorative justice is an approach to addressing harm or the risk of harm by engaging all those affected in reaching a common understanding and agreement on how the harm or wrongdoing can be repaired and justice achieved (Zehr, 2002). Restorative justice focuses not on prosecution and punishment but on harm done and how to repair it. It expands the circle of stakeholders beyond the governance and offender to include victims and community members. Importantly, restorative justice has been shown to help the transgressors recognize the impact of their actions and work to make meaningful amends to those they have harmed.
 

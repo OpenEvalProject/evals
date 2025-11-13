@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Dendritic cells residing in the skin represent a large family of antigen-presenting cells, ranging from long-lived Langerhans cells (LC) in the epidermis to various distinct classical dendritic cell subsets in the dermis. Through genetic fate mapping analysis and single-cell RNA-sequencing, we have identified a novel separate population of LC-independent CD207 + CD326 + LC like cells in the dermis that homed at a slow rate to the lymph nodes (LNs). These LC like cells are long-lived and radio-resistant but, unlike LCs, they are gradually replenished by bone marrow-derived precursors under steady state. LC like cells together with cDC1s are the main migratory CD207 + CD326 + cell fractions present in the LN and not, as currently assumed, LCs, which are barely detectable, if at all. Cutaneous tolerance to haptens depends on LC like cells, whereas LCs suppress effector CD8 + T-cell functions and inflammation locally in the skin during contact hypersensitivity. These findings bring new insights into the dynamism of cutaneous dendritic cells and their function opening novel avenues in the development of treatments to cure inflammatory skin disorders.
+Dendritic cells residing in the skin represent a large family of antigen-presenting cells, ranging from long-lived Langerhans cells (LC) in the epidermis to various distinct classical dendritic cell subsets in the dermis. Through genetic fate mapping analysis and single-cell RNA-sequencing, we have identified a novel separate population of LC-independent CD207+CD326+ LClike cells in the dermis that homed at a slow rate to the lymph nodes (LNs). These LClike cells are long-lived and radio-resistant but, unlike LCs, they are gradually replenished by bone marrow-derived precursors under steady state. LClike cells together with cDC1s are the main migratory CD207+CD326+ cell fractions present in the LN and not, as currently assumed, LCs, which are barely detectable, if at all. Cutaneous tolerance to haptens depends on LClike cells, whereas LCs suppress effector CD8+ T-cell functions and inflammation locally in the skin during contact hypersensitivity. These findings bring new insights into the dynamism of cutaneous dendritic cells and their function opening novel avenues in the development of treatments to cure inflammatory skin disorders.
 
 ## Introduction
 
@@ -38,9 +38,21 @@ Here, we demonstrate that under steady-state conditions, LCs most likely do not 
 
 ## Results
 
-## LClike cells are found in dermis and LNs
+### LClike cells are found in dermis and LNs
 
 The skin and the skin-draining LNs contain several distinct DC subpopulations. To delineate migratory LCs and dermal DCs, we profiled DC subsets in the epidermis, dermis, and skin-draining LNs. In the epidermis, we confirmed that CD326+CD207+ LCs are predominantly found within the CD11bhiF4/80hi fraction (Nagao et al., 2009; Valladeau et al., 2000; Figure 1A). In the dermis, we found a fraction of CD11bhiF4/80hi cells that co-expressed CD326 and CD207 (Figure 1B, upper panel). These cells could be immigrated LCs, although we cannot exclude a contamination from the epidermis during the isolation procedure. As expected, the remaining dermal CD11bhiF4/80hi cells were CD326-CD207- tissue-resident macrophages (Sheng et al., 2015; Tamoutounour et al., 2013). Dermal DCs were localized in the F4/80int and CD11chiMHCII+ DC fraction, which we could separate into three subpopulations based on CD103 and CD11b expression: CD103+CD11b- (defined as cDC1), CD103-CD11blow, and CD103-CD11bhi (defined as CD11bhi). CD103+CD11b- DCs but not CD103-CD11bhi DCs co-expressed CD326 and CD207. We could also divide the CD103-CD11blow subpopulation into CD326-CD207- (defined as triple negative [TN]) and CD326+CD207+ (defined as LClike) fractions (Figure 1B, right panel). The signal regulatory protein α (Sirpa), a myeloid cell-specific receptor, was expressed on dermal LCs, LClike, TN, and CD11bhi DCs, while, as expected, dermal CD103+ DCs lacked this receptor (Figure 1—figure supplement 1A), result validated also by the single-cell RNA-sequencing (scRNA-seq) analysis shown later (Figure 3—figure supplement 1). In terms of costimulatory receptors, dermal LCs and LClike cells express similar levels of CD80 and CD86, whereas the remaining DC subpopulations display lower levels (Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative flow cytometry dot plots for LC characterization in the epidermis. Cells from epidermis were first gated for FSC, SSC, and CD45 (not shown). Then, CD45+ cells were analysed for CD11b and F4/80 expression. The CD11bhiF4/80hi cell fraction was further analysed for CD207 and CD326 expression to identify classical bona fide LCs. (B) Representative flow cytometry dot plots for dermal LC and DC subpopulations. Isolated dermis cells were first gated for FSC, SSC, and CD45 (not shown). CD45+ cells were then analysed for CD11b and F4/80 expression. The CD11bhi F4/80hi fraction contained classical CD207+CD326+ LCs. The remaining cells were gated for CD11c+MHC II+ DCs and separated into three subsets based on CD103 and CD11b expression: CD103+CD11b- cells (labelled cDC1), CD103-CD11bhi DCs (labelled CD11bhi), and CD11blow/neg. CD207 and CD326 expression was detectable on cDC1 but not CD11bhi DCs, whereas CD11blow cells were further separated into CD207-CD326- (labelled triple negative [TN]) and CD207+CD326+ (labelled LClike). (C) Representative flow cytometry dot plots for cutaneous DC subpopulations in auricular skin-draining LNs. LN cells were first gated for FSC and SSC to exclude small lymphocytes before F4/80 and CD11b staining. The cell fraction excluding F4/80hi/CD11bhi cells was separated by CD11c and MHCII. CD11chiMHCIIhi migratory DCs were gated and analysed for CD103, CD11b, CD207, and CD326 expression. Four subsets were detected: CD103+CD11b-CD207+CD326+ (cDC1), CD103-CD11blowCD207-CD326- (TN), CD103-CD11blowCD207+CD326+ (LClike), and CD103-CD11bhiCD207-CD326-/+(CD11bhi). (D) Frequency of each DC subpopulation (LC, cDC1, LClike, TN, and CD11bhi) present in epidermis, dermis, and cutaneous lymph node (LN), respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Blue histograms show the relative expression of the markers in Langerhans cells (LCs) in epidermis and red histograms relative expression of the markers in dermal LCs, cDC1, LClike, triple negative (TN), and CD11b+ dendritic cells (DCs) following the gating strategy shown in Figure 1. Grey histogram depicts the staining of isotype control samples. MFI: mean of fluorescence intensity.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Pre-gating performed on alive CD45+ cells is not shown.
 
 To track the corresponding migratory DCs in the skin-draining LNs, we first gated on CD11cint-hiMHCIIhi cells, which represent the migratory DC fraction (Sheng et al., 2017). Similar to our findings in the dermis, CD11b and CD103 labelling separated the migratory DCs into CD103+CD11b- (cDC1), CD103-CD11bhi (CD11bhi), and CD103-CD11blow cells (Figure 1C). The CD103-CD11blow cells could be further separated into two fractions: CD326-CD207- (TN) and CD326+CD207+ (LClike) subpopulations (Figure 1C). Notably, we did not detect the bona fide epidermal and dermal LCs showing the original F4/80hiCD11bhi phenotype in the LN (Figure 1C, right, lower panel).
 
@@ -50,31 +62,45 @@ To confirm our observation, we took advantage of the Lang-EGFP mouse to trace di
 
 Because we detected no phenotypic F4/80hi LCs in the LNs, we hypothesized that the cutaneous DCs en route to the LN were not derived from epidermal LCs, but rather from distinct dermal CD11bhi, cDC1, TN, and F4/80low LClike DC populations. This analysis cannot exclude, however, the possibility that the migrating LCs might change their phenotype as demonstrated previously (Schuler and Steinman, 1985).
 
-## scRNA-seq confirms the presence of two independent LC and LClike cell populations in the dermis
+### scRNA-seq confirms the presence of two independent LC and LClike cell populations in the dermis
 
 Since LC and LClike cells co-exist together in the dermis, we aimed to investigate their relationship and respective gene signature by scRNA-seq analysis. Unsupervised clustering and uniform manifold approximation and projection (UMAP) were performed on 9605 enriched cells isolated from the dermis of ears obtained from five mice. The origin of distinct CD45+ and CD45- dermal cell subpopulations are visualized in a colour-coded UMAP plot (Figure 2A). Nine different cell clusters could be broadly identified by unsupervised clustering and classified as follows: (1) LC, (2) LClike, (3) mast cells/neutrophils, (4) DC/monocytes, (5) macrophages, (6) lymphocytes 1, (7) lymphocytes 2, (8) mesenchymal cells, and (9) epithelial cells. Conventional DCs, monocytes, and other myeloid-related signature genes, such as Zbtb46 (DCs), Xcr1 and Clec9a (cDC1), Siglech (plasmacytoid DC), Ly6c and Ccr2 (monocytes), Gata2 and Fcer1a (mast cells), and Ly6g (neutrophils), are mainly detectable in the DC/mono and mast cell/neutrophil clusters (3–4) and are mainly absent or weakly expressed in the LC/LClike clusters (1–2) (Figure 2B,C and Figure 2—figure supplement 1). Cd207 and Cd326 expressing cells are detected in LC (1), LClike (2), as well as in DC/monocyte cluster (4), which confirms the presence of three distinct CD207+CD326+ dermal subpopulations observed by flow cytometry (Figure 1B). Cd207 and Cd326 expressing cells detected in the cluster 4 are co-expressing Clec9a, Xcr1, Irf8 hence they represent the cDC1s (Figure 2B and Figure 2—figure supplement 1). Cd207 and Cd326 expressing cells in clusters 1 (LC) and 2 (LClike) share many of the previously reported LC signature genes (e.g. Cd11c, Adgre1, Cd74, Mafb, Pu.1, Csf1r, Tgfbr1) (Figure 2C and Figure 2—figure supplement 1), but several other genes are differentially expressed in LClike cells (e.g. Tgfbr2, Sylt3, Col27a1, Fernt2, Spry2) or in LC cells (e.g. Cd209a, Agpat4, Birc3, Dusp16, Gdpd3, Ly75 and Ppfibp2), respectively (Figure 2C,D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig2-v2.jpg)
+
+**Figure 2.:** 9605 cells pooled from the dermis collected from six mice which passed QC were imported for Seurat analysis. (A) Uniform manifold approximation and projection (UMAP) plot is revealing the existence of nine distinct cell clusters (1) LC (blue), (2) LClike(orange), (3) mast cells/neutrophils (green), (4) dendritic cell (DC)/monocytes (red), (5) macrophages (purple), (6) lymphocytes 1 (brown), (7) lymphocytes 2 (pink), (8) mesenchymal cells (light green), and (9) epithelial cells (light blue). (B, C) UMAP maps showing the expression of various LC signature genes in DC/mono (B) and LC/LClike clusters (C). (D) Heat-map of single-cell gene expression data based on the top differentially expressed genes discriminating LC/LClike clusters. Cells (LC in green; LClike in purple) are shown in rows and genes in columns.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Feature plots showing the expression of Cd45, Cd11c, Cd74, Cd11b, Cd326, Cd207, Cd209a, Adgre1, Clec9a, Xcr1, Siglech, Ly6g, Ly6C, Ccr2, Gata2, Fcer1a, Spi1, Mafb, Tgfbr1, Tgfbr2, Csfr1, Irf8, Irf4 and Zbtb46, respectively.
+
 To further elucidate the relationship between different dermal DC and macrophage populations, a developmental trajectory was obtained from a UMAP analysis specifically obtained from clusters 1, 2, 4, and 5 shown in Figure 2 (Figure 3A). Clearly there is a close relationship between LC and LClike as well as between macrophages/monocytes and CD11b+/TN DCs, whereas cDC1s are identified as a separate independent cell cluster (Figure 3A and B). Furthermore, detailed transcription factor (TF) analysis revealed that LC and LClike cells share many TFs, some equally expressed (Mafb, Irf4, Irf8), some higher expressed in LC (Pu.1), and some more elevated in LClike (Stat3, Runx2, Runx3, Id2, Klf4, Maf) (Figure 3C and Figure 3—figure supplement 1A). Zbtb46, a TF selectively expressed on classical DCs, is expressed on both LC and LClike cells but not as high as on classical DCs (cDC1, CD11b+, and TN) (Figure 3—figure supplement 1A). Interestingly, Zeb2, a specific cDC2 TF, is only weakly expressed on LC and LClike cells (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig3-v2.jpg)
+
+**Figure 3.:** (A) UMAP plot showing eight distinct LC/DC and macrophage clusters: LC (emerald green), LClike (turquoise), cDC1 (ocher), CD11b+ (red orange), triple negative (TN) DCs (magenta), resident macrophages (purple), monocytes (light blue), and infiltrating macrophages (green). Colours indicate unsupervised clustering by PhenoGraph. (B) Heat-map of single-cell gene expression data based on the top differentially expressed genes between the eight cell clusters. Yellow: upregulated; purple: downregulated. (C) Violin plots comparing transcription factor (TF) expression in LC and LClike cells. (D) Violin plots showing mRNA expression profile of LC signature genes in LC and LClike cells. (E) Violin plots showing Adgre1 (F4/80), Sirpa, Cd24a, and chemokine receptor Ccr7 expression in LC and LClike cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig3-figsupp1-v2.jpg)
 
 Furthermore, LC-related genes, such as Mmp9, Cd9, Mfge8, Cldn1 (Ferrer et al., 2019; Miyasaka et al., 2004; Ratzinger et al., 2002; Zimmerli and Hauser, 2007), are elevated in dermal LCs and weakly expressed in dermal LClike cells (Figure 3D), whereas no substantial differences are detected in expression of Sirpa, Ccr7, and Cd24a (Figure 3E, Figure 3—figure supplement 1B). The reduced expression of Adgre1 (F4/80) in LClike cells (Figure 3E), re-confirms the downregulation of F4/80 surface expression on this cell type observed in our previous flow cytometry analysis (Figure 1). Interestingly, both β and γ chains of the IL-2R (Il2rb and Il2rg), previously reported to be expressed in DCs (Zelante et al., 2012), are highly expressed in LClike cells, whereas LCs are the dermal cells expressing the lowest levels among the different DCs and macrophages subpopulations (Figure 3—figure supplement 1C).
 
 In summary, the unsupervised clustering of single cells obtained from dermis suggests that LC and LClike cells are two independent cell fractions and distinct from CD207+CD326+ cDC1s as well as from cDC2 CD11b+ and TN DCs, as already shown in conventional flow cytometry analysis (Figure 1B).
 
-## Early yolk sac precursors contribute to the development of LC but not LClike cells
+### Early yolk sac precursors contribute to the development of LC but not LClike cells
 
 Fate mapping experiments have shown that epidermal LCs derived partially from primitive yolk sac progenitors (Hoeffel et al., 2012; Sheng et al., 2015); therefore, the developmental origin of LCs is distinct from conventional DCs and resembled more microglia. To study in detail a possible yolk sac origin of distinct cutaneous LC and DC subpopulations, a single injection of tamoxifen (TAM) was given to E7.5 pregnant KitMerCreMer/R26 mice (Figure 4A). Three months later, the epidermis, dermis, and brain (microglia as positive control) were collected and isolated cells were then analysed for YFP expression. As previously reported, microglia, the prototype yolk sac-derived macrophage, were strongly labelled (~40%) (Figure 4B and F). However, about 12% of epidermal LCs were YFP labelled, confirming their partial yolk sac origin (Figure 4C and F). In comparison, the dermal LC counterparts showed a similar labelling profile (~10%), whereas the remaining dermal DC subpopulations (LClike, cDC1, CD11bhi, and TN) showed a significantly lower 5% YFP signal, very likely, attributed to small spillover of labelling in the HSCs (haematopoietic stem cells) (Figure 4D and F). Therefore, YS only contributed to LCs but not to dermal LClike cells. Low YFP labelling was also obtained in all migratory LN DC counterparts (Figure 4E and F).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig4-v2.jpg)
 
-**Figure 4.:** like cells.(A) Single pulse of TAM at E7.5 was given to label KitMercreMer/R26 embryos and the percentages of labelled brain microglia (positive control, gated on CD45intF4/80hi), epidermal LCs, and dermal LC/dendritic cell (DC) subpopulations were measured at 3 months of age. (B–D) Flow cytometry analysis of YFP labelling of microglia (B), and each LC and DC subpopulation in the epidermis (C), dermis (D), and lymph node (LN) (E) in KitMerCreMer/R26 fate mapping mice. Representative contour plots are shown. (F) The mean percentage of YFP+ cells of brain microglia, epidermal LC, and dermal DC subpopulations (LC, cDC1, LClike, CD11bhi, and triple negative [TN] cells). The error bars represent the SEM (n = 4 samples of two to three pooled mice for epidermis/dermis and n = 5 mice for LN). Data from two independent experiments. *p<0.05; two-way ANOVA followed by Bonferroni test. For clarity, non-significant values are not shown.  Figure 4—source data 1.
+**Figure 4.:** (A) Single pulse of TAM at E7.5 was given to label KitMercreMer/R26 embryos and the percentages of labelled brain microglia (positive control, gated on CD45intF4/80hi), epidermal LCs, and dermal LC/dendritic cell (DC) subpopulations were measured at 3 months of age. (B–D) Flow cytometry analysis of YFP labelling of microglia (B), and each LC and DC subpopulation in the epidermis (C), dermis (D), and lymph node (LN) (E) in KitMerCreMer/R26 fate mapping mice. Representative contour plots are shown. (F) The mean percentage of YFP+ cells of brain microglia, epidermal LC, and dermal DC subpopulations (LC, cDC1, LClike, CD11bhi, and triple negative [TN] cells). The error bars represent the SEM (n = 4 samples of two to three pooled mice for epidermis/dermis and n = 5 mice for LN). Data from two independent experiments. *p<0.05; two-way ANOVA followed by Bonferroni test. For clarity, non-significant values are not shown.
 
-## LClike DCs derive from both embryonic and adult BM haematopoiesis
+### LClike DCs derive from both embryonic and adult BM haematopoiesis
 
 LCs are the only cell type from the DC family that originate from self-renewing radio-resistant embryonic precursors (Merad et al., 2002); other DC subpopulations are short-lived and constantly replenished by BM progenitors (Kissenpfennig et al., 2005). To delineate the radio-resistant properties of the newly identified LClike cells, we generated BM chimeric mice by transplanting congenic CD45.1+ mouse BM cells into irradiated CD45.2+ recipients (Figure 5A). We then analysed the CD45.1+/CD45.2+ ratio in different skin-related DC subpopulations 1 or 4 months after reconstitution.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig5-v2.jpg)
 
-**Figure 5.:** like cells derived from embryonic and adult haematopoiesis have a similar transcriptomic signature.(A) Generation of BM chimeras: CD45.1+ WT BM cells (106) were transferred into lethally irradiated CD45.2+ recipient mice. The epidermis, dermis, and draining lymph nodes (LNs) obtained from the reconstituted chimeras were analysed 1 and 4 months later by flow cytometry. (B) Flow cytometry analysis of donor (CD45.1+) and host (CD45.2+) chimerism in different epidermal, dermal, and skin-draining LN LC and dendritic cell (DC) subpopulations, 1 and 4 months after reconstitution. LC, cDC1, triple negative (TN), LClike, and CD11bhi subsets were gated and analysed for CD45.1 (x-axis) and CD45.2 (y-axis) expression. (C) The percentage of CD45.1 donor cells detected in the epidermis, dermis, and skin-draining LNs of chimeras, 1 or 4 months after reconstitution. Data are represented as mean ± SEM; n = 6 single mice; **p<0.01; ***p<0.001; ****p<0.0001; ns, non-significant; two-tailed Student’s t-test. (D) Uniform manifold approximation and projection (UMAP) analysis of distinct LN DC subpopulations obtained from chimeras 4 months after reconstitution, based on the expression of different markers (CD11c, MHCII, CD103, CD11b, CD326, CD207, CD45.1, CD45.2). (E) Transcriptome analysis of LN CD45.1+ LClike cells (n = 3) and LN CD45.2+ LClike (n = 3) cells collected from 10 mice. The Venn diagram shows the percentage of overlapping genes expressed by CD45.1+ and CD45.2+ LClike cells.  Figure 5—source data 1.
+**Figure 5.:** (A) Generation of BM chimeras: CD45.1+ WT BM cells (106) were transferred into lethally irradiated CD45.2+ recipient mice. The epidermis, dermis, and draining lymph nodes (LNs) obtained from the reconstituted chimeras were analysed 1 and 4 months later by flow cytometry. (B) Flow cytometry analysis of donor (CD45.1+) and host (CD45.2+) chimerism in different epidermal, dermal, and skin-draining LN LC and dendritic cell (DC) subpopulations, 1 and 4 months after reconstitution. LC, cDC1, triple negative (TN), LClike, and CD11bhi subsets were gated and analysed for CD45.1 (x-axis) and CD45.2 (y-axis) expression. (C) The percentage of CD45.1 donor cells detected in the epidermis, dermis, and skin-draining LNs of chimeras, 1 or 4 months after reconstitution. Data are represented as mean ± SEM; n = 6 single mice; **p<0.01; ***p<0.001; ****p<0.0001; ns, non-significant; two-tailed Student’s t-test. (D) Uniform manifold approximation and projection (UMAP) analysis of distinct LN DC subpopulations obtained from chimeras 4 months after reconstitution, based on the expression of different markers (CD11c, MHCII, CD103, CD11b, CD326, CD207, CD45.1, CD45.2). (E) Transcriptome analysis of LN CD45.1+ LClike cells (n = 3) and LN CD45.2+ LClike (n = 3) cells collected from 10 mice. The Venn diagram shows the percentage of overlapping genes expressed by CD45.1+ and CD45.2+ LClike cells.
 
 In the epidermis and dermis, LCs were mostly CD45.2+, and thus retained their host origins due to local self-renewal (Figure 5B,C). By contrast, dermal cDC1, TN, and CD11bhi DCs exhibited a wholly CD45.1+ phenotype after just 1 month following reconstitution; this finding means that they are fully BM-derived. Only LClike cells showed a mixed contribution from both CD45.2+ host and CD45.1+ donor cells. In fact, after 1 month following reconstitution, only a minority (~10%) of LClike cells were replenished by CD45.1+ cells; this percentage increased to ~50% by 4 months after reconstitution (Figure 5B,C).
 
@@ -82,27 +108,55 @@ In skin-draining LNs, we found that cDC1, TN, and CD11bhi cells were mostly deri
 
 To allow high-resolution and unbiased data-driven dissection of skin DC subpopulations in the reconstituted chimeric mice, we performed a UMAP analysis of flow cytometry data. Both CD45.1+ and CD45.2+ LClike cells were clearly visible and clustered separately, but in close proximity (Figure 5D). Using this dimensional reduction algorithm, we detected that CD11c+MHCIIhi dermal DC subpopulations could be grouped into five separate clusters: cDC1, TN, CD11bhi, and two LClike cell clusters (BM-derived CD45.1+ and resident CD45.2+). To investigate the molecular relationship between the resident LClike cell population and the BM-derived LClike cells, we performed RNA-seq on LN LClike cells isolated from chimeric mice (CD45.1+ donor BM cells into CD45.2+ recipient mice). Unsupervised hierarchical clustering (Euclidean distance, complete linkage) and principal component analysis (PCA) analysis revealed that both CD45.1+ and CD45.2+ LClike cells clustered closely together (not shown), with ~85% of their gene expression overlapping (Figure 5E). The high level of similarity between resident and BM-derived LClike fractions indicates that the microenvironment, and not the cellular origin, seems to determine the LClike cell identity.
 
-## LClike cells display slow turnover kinetics
+### LClike cells display slow turnover kinetics
 
 BM chimeras require full body irradiation, which can damage the local skin microenvironment and attract BM-derived newcomers. This irradiation could, therefore, complicate the analysis of skin-resident cell homeostatic turnover kinetics. To circumvent this issue, we performed a fate mapping study under steady-state conditions using KitMerCreMer/R26 fate mapping mice. These mice allow for the turnover rates of cell populations derived from BM precursors to be estimated (Sheng et al., 2015). We performed our analyses at different time points (1, 4, and 8 months) after TAM injection to ensure a sufficiently long time frame to monitor populations that turn over slowly (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig6-v2.jpg)
+
+**Figure 6.:** (A) KitMerCreMer/R26 mice aged 6 weeks old were injected with tamoxifen five times and groups of six animals were sacrificed 1, 4, and 8 months later for fate mapping analysis. (B) Flow cytometry analysis of YFP labelling of each LC and dendritic cell (DC) subpopulation in the epidermis, dermis, and skin-draining LNs in KitMerCreMer/R26 fate mapping mice. Representative histograms are shown. (C) The mean percentage of YFP+ cells after normalization to cDC1. Epidermis (left), dermis (middle), and skin-draining LNs (right) were analysed. The error bars represent the SEM (n = 6 mice).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Blocks represent individual cell cycle phases. Green: G1; orange: G2M; and Blue: S.
 
 In the epidermis, LCs showed minimal YFP labelling over the entire 8-month chase period; this finding was expected as these cells are not replaced by BM-derived cells (Figure 6B and C, left panel). Similarly in the dermis, CD11bhiF4/80hiCD326+CD207+ cells showed minimal labelling from 1 to 8 months (Figure 6B and C, middle panel). We propose that this fraction most likely represents immigrant LCs in the dermis. cDC1, TN, and CD11bhi DCs, however, were fully labelled with YFP after just 1 month and the labelling was maintained for the remaining 8 months. This finding is consistent with the fast turnover rate identified for these three DC subsets. By contrast, LClike cells gradually accumulated the label from 10% to 60% over the 8-month chase period, supporting that dermis-resident LClike DCs are replaced slowly by BM progenitors. In the skin-draining LNs, all DC subsets behaved similarly to their dermal counterparts (Figure 6B and C, right panel). Briefly, cDC1, TN, and CD11bhi DCs showed a fast turnover by reaching plateau level of labelling after 1 month while LClike cells demonstrated a slow turnover rate over the 8-month chase period.
 
 Cell cycle analysis was performed for dermal LC, LClike, and different DC subsets based on scRNA-seq (Figure 6—figure supplement 1). The LClike subset exhibited higher proliferating capability than LC and other DC subsets, consistent with the previous findings that LCs are dividing extremely slow (Ginhoux and Merad, 2010) and conventional DCs do not proliferate in tissues and mainly depend on their BM progenitors for expansion (Liu and Nussenzweig, 2010). Overall, we showed that LClike cells displayed slower turnover kinetics than other DC subpopulations and higher proliferating capability to refill the emigration gap.
 
-## LClike cells are not derived from classical LCs
+### LClike cells are not derived from classical LCs
 
 To interrogate the relationship between LC and LClike cells, we exploited a novel DC-SIGN-DTR transgenic mouse strain (Figure 7—figure supplement 1A), which allowed us to deplete epidermal and dermal LCs without affecting the LClike cell pool (Figure 7). Although not detectable by flow cytometry on the cell surface (Figure 1—figure supplement 1B), we measured DC-SIGN (or CD209a) specific mRNA levels in murine LCs as well as in CD11bhi DCs, the latter already known to express this receptor (Cheong et al., 2010), whereas cDC1, TN DCs, or LClike cells were negative (Figure 7—figure supplement 1B), a result which was corroborated by the scRNA analysis of dermal cells (Figure 2). Since DC-SIGN expression has never been reported for LCs, quantitative PCR (qPCR) analysis was performed to detect the expression of DTR (known as human heparin-binding EGF-like growth factor [HBEGF]) in LCs obtained from DC-SIGN-DTR mice. Accordingly, HBEGF mRNA was detected only in LC isolated from epidermis of DC-SIGN DTR mice and was absent in LCs obtained from WT mice (Figure 7—figure supplement 1C). Thus, the decrease in LCs observed after diphteria toxin (DT) injection was achieved due to the high sensitivity of the DT-DTR system (Ruedl and Jung, 2018), although no DC-SIGN was measurable on the cell surface of LCs from DC-SIGN DTR+ mice. To exclude a downregulation of the DC-SIGN receptor in LCs upon maturation, we sorted epidermal LCs, cultured them overnight with GM-CSF and LPS and compared by qPCR the Cd209a expression between unstimulated and stimulated epidermal LC fractions. Clearly no Cd209a downregulation was observed in activated LCs (Figure 7—figure supplement 1C); therefore, an eventual transition from maturing dermal DC-SIGNpos LCs to dermal DC-SIGNneg LClike cells can be excluded.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig7-v2.jpg)
+
+**Figure 7.:** (A) The short-term and long-term depletion protocol in DC-SIGN-DTR mice. (B) Representative flow cytometry dot plots of single-cell suspensions from the epidermis (left), dermis (middle), and skin-draining lymph nodes (LNs) (right) obtained from diphteria toxin (DT)-injected WT and DC-SIGN-DTR mice. All mice were injected (i.p.) with 10 ng/g DT on days −2 and −1 and analysed on day 0. The gating strategy shown in Figure 1 was followed. Epidermal sheets obtained from WT and DC-SIGN mice were stained for MHC class II (green fluorescence) and analysed by immunofluorescence microscopy (lower left panel). (C) The absolute numbers of each gated myeloid cell subset (LC, cDC1, triple negative [TN], LClike, and CD11bhi cells) obtained from the epidermis, dermis, and skin-draining LNs of DT-injected WT and DC-SIGN DTR mice. Data are represented as mean ± SEM; n = 8–10 single mice. ****p<0.0001; ***p<0.001; **p<0.01; ns, non-significant; two-way ANOVA statistical test Bonferroni test. (D) Fate mapping analysis in DC-SIGN DTR-KitMerCreMer/R26 mice. Mice aged 6 weeks old were orally gavaged with TAM. After 4 months, DT was injected i.p. weekly for 5 weeks to ensure long-term LC depletion. (E) Representative contour plots showing the YFP labelling of distinct LN dendritic cell (DC) subpopulations in DT-treated KitMerCreMer/R26 and DC-SIGN DTR-KitMerCreMer/R26 mice. (F) The percentage of normalized YFP labelling detected in DC subpopulations (LC, cDC1, TN, LClike, and CD11bhi cells) of the skin-draining LNs. Normalization was performed as described in Figure 6; data are represented as mean ± SEM; n = 12 single mice.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The experimental strategy to generate DC-SIGN-DTR mice. (B) Quantitative PCR (qPCR) analysis of the mRNA Cd209a expression in epidermal Langerhans cells (LCs) and distinct lymph node (LN) dendritic cell (DC) subpopulations. (C) qPCR analysis of HBEGF expression in LCs obtained from WT and DC-SIG DTR mice. (D) qPCR analysis of Cd209a expression in unstimulated purified LCs and in vitro stimulated purified LCs (GM-CSF + LPS 16 hr).
 
 We established short and long depletion protocols (Figure 7A) to capture even potentially very slowly migrating ‘LC derivatives’ (Bursch et al., 2007). In the DT-treated DC-SIGN DTR mice, LCs were efficiently depleted in both the epidermis and dermis by the short-term and long-term depletion protocols (Figure 7A–C). We also found that cells in the CD11bhi cell fraction were affected by the DT treatment; this was particularly evident during the short-term depletion protocol, in which the cell numbers were reduced by ~80% (Figure 7C). Importantly, cDC1, TN, and LClike cell numbers were unaffected and thus were comparable between DT-injected WT and DC-SIGN mouse strains. These results strongly support the independency of LClike cells from classical bona fide epidermal LCs.
 
 To further confirm that LClike cells represent a distinct cell lineage from LCs, we crossed DC-SIGN DTR mice with a KitMerCreMer/R26 fate mapping mouse, which would enable us to trace BM-derived cells in absence of LC. We treated these mice (DC-SIGN DTR-KitMerCreMer/R26) with TAM and then injected them with DT for 5 weeks to maintain long-term LC depletion (Figure 7D). Although epidermal LCs were absent over the whole period, the YFP labelling profiles of skin-derived LN DC subsets, including the LClike fraction, were comparable between DT-injected DC-SIGN DTR+-KitMerCreMer/R26 and DC-SIGN DTRneg-KitMerCreMer/R26 mice (Figure 7E,F). These data show that in absence of LC, the replenishment of LClike cells by BM-derived cells is not affected.
 
-## LCs suppress cutaneous CHS responses within the skin
+### LCs suppress cutaneous CHS responses within the skin
 
 We next investigated the specific local contribution of LCs during CHS. Therefore, DT-injected WT and DC-SIGN DTR mice were sensitized with 0.5% 2,4-dinitrofluorobenzene (DNFB) and challenged at day 5 with 0.2% DNFB to induce a CHS reaction. The ear swelling was subsequently monitored over 12 days. In another group of mice, ears were processed 3 days post challenge for qPCR analysis as well as processed for cell isolation (Figure 8A). In absence of LCs, clearly a pronounced increased ear swelling persisted over 10 days (Figure 8B), a phenotype which was already reported in other LC-ablating transgenic mouse strains such as human langerin-DTA (hu-DTA) and human langerin-DTR (huDTR) mice (Kaplan et al., 2005; Bobr et al., 2010). Proinflammatory cytokines such as IL-6, TNF-α, and IL-1β were clearly significantly upregulated in ears of DT-treated DC-SIGN DTR mice (Figure 8C, upper panel). VEGFα, a biomarker for keratinocyte impairment (Canavese et al., 2010, Bae et al., 2015), was also clearly augmented in absence of LCs (Figure 8C, lower panel). In addition, higher IFN-γ levels were measured in ears lacking LCs (Figure 8C, lower panel), values that correlated with an augmented CD8+ T-cell-dependent IFN-γ response observed by flow cytometry analysis (Figure 8D, Figure 8—figure supplement 1). In accordance with previously published data (Igyarto et al., 2009), no major difference was observed in activated dermal ICOS+ Tregs in presence or absence of LCs (Figure 8D, right panel, Figure 8—figure supplement 1A).
 
-## Depletion of LClike cells, but not LCs, breaks tolerance to DNTB
+![Figure 8.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig8-v2.jpg)
+
+**Figure 8.:** (A) Diphteria toxin (DT)-treated WT and DC-SIGN DTR mice were sensitized with 0.5% 2,4-dinitrofluorobenzene (DNFB) (applied to the shaved back skin) and ear-challenged 5 days later with 0.1% DNFB. (B) Ear swelling response of challenged WT and DC-SIGN DTR mice was determined over a 12-day period post challenge. (C) Quantitative PCR analysis of distinct inflammatory cytokines and growth factors in ears collected at day 3 post challenge. The error bars represent the SEM (n = 3 mice). *p<0.05; ***p<0.001; ****p<0.0001; two-tailed Student’s t-test. (D) Percentages of dermal IFN-γ-producing CD8+ T-cells and dermal CD4+Foxp3+ICOS+ regulatory T-cells at day 3 post challenge. Single-cell suspensions were generated from the dermis and the cells were re-stimulated (5 hr) with PMA/Ionomycin to detect IFN-γ production or directly stained for determination of activated Tregs. The error bars represent the SEM (n = 4 mice). *p<0.05; ns, non-significant; two-tailed Student’s t-test. Gating strategy is shown in Figure 8—figure supplement 1. (E) DT-treated WT, CD207-DTR, Cleac9A-DTR, and DC-SIGN DTR mice were tolerized with 1% 2,4-dinitrothiocyanobenzene hapten (DNTB) (applied to the shaved abdomen skin). After 7 days, the mice were sensitized with 0.5% DNFB (applied to the shaved back skin) and ear-challenged 5 days later with 0.1% DNFB. (F) The ear swelling response of painted mice was determined over a 6-day period post challenge. (G) Percentage of activated CD4+Foxp3+ICOS+ regulatory T-cells in the draining lymph nodes (LNs) of mice, 5 days after vehicle or DNTB painting. The data were pre-gated on singlet, live CD3+CD4+Foxp3+ Treg cells. The error bars represent the SEM (n = 6 mice). ****p<0.0001; ns, non-significant; two-way ANOVA. (H) Percentages of IFN-γ-producing CD8+ T-cells in the draining LNs of vehicle or DNTB-painted mice followed by DNFB sensitization. Single-cell suspensions were generated from the LNs and the cells were re-stimulated (5 hr) with PMA/Ionomycin to detect IFN-γ production. The data were pre-gated on singlet, live CD3+ CD8+ T-cells. The error bars represent the SEM (n = 6 mice). ****p<0.0001; ns, non-significant; two-way ANOVA.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Contact hypersensitivity (CHS) reactivity in WT and DC-SIGN-DTR mice. Representative dot and contour plots for dermal IFN-γ-producing CD8+ T-cells and CD4+Foxp3+ICOS+ regulatory T-cells at day 3 post challenge. (B) 2,4-Dinitrothiocyanobenzene hapten (DNTB)-mediated tolerance assay in WT, CD207 DTR, Clec9A-DTR, and DC-SIGN DTR mice. Representative dot plots for LN IFN-γ-producing CD8+ T-cells and CD4+Foxp3+ICOS+ regulatory T-cells at day 5.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/65412/elife-65412-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) The experimental strategy to delete Langerhans cell (LC), cDC1, and LClike cells dendritic cell (DC) in CD207 DTR and Clec9A DTR mice. (B) Representative flow cytometry CD11b/CD326 dot plots for LC characterization in the epidermis of diphteria toxin (DT)-injected WT and CD207-DTR mice. (C) Representative flow cytometry CD103/CD11b and CD11b/CD326 dot plots for migratory DC subset characterization in the skin-draining LNs of WT and CD207-DTR mice following the gating strategy described in Figure 1. (D) Representative flow cytometry CD11b/CD326 dot plots for LC characterization in the epidermis of DT-injected WT and Clec9A DTR mice. (E) Representative flow cytometry CD103/CD11b and CD11b/CD326 dot plots for migratory DC subset characterization in the skin-draining LNs of WT and Clec9A DTR mice.
+
+### Depletion of LClike cells, but not LCs, breaks tolerance to DNTB
 
 In our final assays, we aimed to determine the contribution of distinct skin-resident DC subpopulations to the induction of tolerance to CHS. Here, we injected a series of different DTR mice, including CD207-DTR, Clec9A-DTR, and DC-SIGN DTR mice, with DT to deplete the target cells over the whole period of tolerization, sensitization, and final challenge (Figure 8E). Of note, each DTR mouse strain shows a different LC/DC depletion profile: DT-treated CD207-DTR mice lack all epidermal and dermal CD207 expressing cells (LC, LClike, and cDC1) (Figure 8—figure supplement 2A–C), Clec9-DTR mice lack cDC1s (Figure 8—figure supplement 2A,D and E), and DC-SIGN lack epidermal and dermal LCs and CD207-CD326-CD11bhi DCs (Figure 7).
 
@@ -134,7 +188,507 @@ In summary, our genetic fate mapping approach, used to delineate the complex sk
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD45 (30-F11)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 103108; RRID: AB_312972</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD45 (30-F11)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 103114; RRID: AB_312978</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD11b (M1/70)</td>
+      <td>Becton Dickinson- BD</td>
+      <td>Cat#: 565976; RRID:AB_2721166</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse F4/80 (BM8)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 123114; RRID: AB_893490</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse Ly6c (HK1.4)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 128036; RRID: AB_2562352</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse I-A/I-E antibody (M5/114.15.2)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 107632; RRID: AB_10900075</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster anti-mouse CD11c (N418)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 117324; RRID: AB_830646</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster anti-mouse CD103 (2E7)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 121416; RRID: AB_1574957</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-mouse CD209 (clone: MMD3)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 50-2094-82; RRID:AB_11219065</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD326 (G8.8)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 118231; RRID: AB_2632774</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-mouse CD207 (clone: 4C7)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 144204; RRID: AB_2561498</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-mouse CD45.1 (A20)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 110726; RRID: AB_893347</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-mouse CD45.2 (104)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 109830; RRID: AB_1186103</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD3 (17A2)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 100306; RRID: AB_312670</td>
+      <td>FACS (1:500; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD4 (GK1.5)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 100414; RRID: AB_312699</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD8 (53–6.7)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 100722; RRID: AB_312761</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse FOXP3 (MF-14)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 126407; RRID: AB_1089116</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster anti-mouse ICOS (15F9)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 107705; RRID: AB_313334</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-IFN-gamma (XMG1.2)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 505810; RRID:AB_315404</td>
+      <td>FACS (1:600; 100 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fc-R block (2.4G2)</td>
+      <td>Self-made</td>
+      <td>N/A</td>
+      <td>Blocking step (1:100; 1000 ml per sample)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: B7651</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 79346</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: I0634</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase D</td>
+      <td>Roche</td>
+      <td>Cat#: 11088882001</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase II</td>
+      <td>Gibco</td>
+      <td>Cat#: 17105041</td>
+      <td>1 U/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ficoll-Paque</td>
+      <td>GE Healthcare</td>
+      <td>Cat#: 17144003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Percoll</td>
+      <td>Merck</td>
+      <td>Cat#: P4937-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphtheria toxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: D0564</td>
+      <td>20 ng DT/g body weight, i.p.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: T5648</td>
+      <td>4 mg TAM for 5 consecutive days by oral gavage for adult labelling. Pregnant mice (E7.5) were injected once with 16 mg TAM for embryo labelling.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IMDM</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 12440046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium thiocyanate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 221988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5,5'-Dithio-bis- 2-nitrobenzoic acid (DNTB)</td>
+      <td>Sigma-Aldrich (Lancaster Synthesis)</td>
+      <td>Cat#: D8130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Fluoro-2,4- dinitrobenzene (DNFB)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: D1529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 650501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Saponin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S7900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAsimple Total RNA kit</td>
+      <td>Tiangen Biotech Ltd</td>
+      <td>Cat#: DP419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Foxp3 staining buffer</td>
+      <td>eBioscience</td>
+      <td>Cat#: 00-5521-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cytofix/cytoperm</td>
+      <td>eBioscience</td>
+      <td>Cat#: 51-2090KZ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ovation Universal RNA-seq system</td>
+      <td>NuGEN Technologies</td>
+      <td>Cat#: 0343–32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA High Sensitivity Reagent Kit</td>
+      <td>Agilent, Santa Clara, CA, USA</td>
+      <td>Cat#: 5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>10× Chromium Controller</td>
+      <td>10X Genomics</td>
+      <td>Cat #: 120263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell v3 reagent kit</td>
+      <td>10X Genomics</td>
+      <td>Cat #: PN-100009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>TreeStar</td>
+      <td>FlowJo 10.6 RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>GraphPad 9.0 RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock Nr. 000664 RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6.SJL-Ptprca Pepcb/BoyJ</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock Nr. 002014 RRID:IMSR_JAX:002014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>KitMerCreMer/Rosa26-LSL-eYFP (called KitMerCreMer/R26)</td>
+      <td>Nanyang Technological University, Singapore Sheng et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Clec9A-DTR</td>
+      <td>Nanyang Technological University, Singapore Piva et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>CD207-DTR</td>
+      <td>SIgN, A*Star, Singapore Kissenpfennig et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>DC-SIGN-DTR</td>
+      <td>Nanyang Technological University, Singapore</td>
+      <td>Sheng et al., this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>DC-SIGN-DTR-KitMerCreMer/R26</td>
+      <td>Nanyang Technological University, Singapore</td>
+      <td>Sheng et al., this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6.129S2-Cd207tm2Mal/J (Lang-EGFP)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock Nr. 016939 RRID:IMSR_JAX:016939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Ifng_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACAATCAGGCCATCAGCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Ifng_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTCCTTTTCCGCTTCCTGAG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Il6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGATGGATGCTACCAAACTGG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Il6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAGGTAGCTATGGTACTCCAGA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Tnfa_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AATTCGAGTGACAAGCCTGTAG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Tnfa_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTGAGATCCATGCCGTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Il1b_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGCCTCAAAGGAAAGAATC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Il1b_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTCTTCTTTGGGTATTGCTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Vegfa_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCAGCTTGAGTTAAACGAACG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Vegfa_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTTCCCGAAACCCTGAG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>HBEGF_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGACCACACAACCATCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>HBEGF_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAGCAGACAGACAGATGACA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>cd209a_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAAGAACTGACCCAGTTGAA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>cd209a_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTTCTGGGCCACAGAGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Actb_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGGCCAACCGTGAAAAGAT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Actb_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTGTGGTACGACCAGAGGCATACA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6J and B6.SJL-Ptprca Pepcb/BoyJ (B6 CD45.1) were obtained from The Jackson Laboratory (USA). KitMerCreMer/Rosa26-LSL-eYFP (called KitMerCreMer/R26) and Clec9A-DTR mice were generated as previously described (Piva et al., 2012; Sheng et al., 2015). KitMerCreMer/R26 mice were backcrossed with DC-SIGN-DTR mice to obtain DC-SIGN-DTR-KitMerCreMer/R26 mice. B6.129S2-Cd207tm2Mal/J mice were bred and housed at the Malaghan Institute of Medical Research (Wellington, New Zealand). CD207-DTR mice were obtained from the Singapore Immunology Network (SIgN; A*Star, Singapore).
 
@@ -142,39 +696,39 @@ DC-SIGN DTR mice were generated as follows: the IRES-DTR fusion gene was inserte
 
 All mice, with the exception of B6.129S2-Cd207tm2Mal/J mice, were bred and maintained in the specific pathogen-free animal facility of the Nanyang Technological University (Singapore). All studies involving mice in Singapore were carried out in strict accordance with the recommendations of the National Advisory Committee for Laboratory Animal Research and all protocols were approved by the Institutional Animal Care and Use Committee of the Nanyang Technological University (ARF-SBS/NIE A-0133; A-0257; A0126, A-18081). For animal work performed in New Zealand, experimental protocols were approved by the Victoria University of Wellington Animal Ethics Committee and performed in accordance with institutional guidelines.
 
-## TAM-inducible fate mapping mouse models
+### TAM-inducible fate mapping mouse models
 
 KitMerCreMer/R26 and DC-SIGN-DTR- KitMerCreMer/R26 fate mapping mice were used to monitor the turnover rates of distinct skin-related DC subpopulation subsets. Upon TAM injection, the YFP label will be induced in all c-kit-expressing cells, predominantly residing in the BM, and these cells will retain the YFP label once they left the BM and seeded into the periphery. Each mouse was administered 4 mg TAM (Sigma-Aldrich, St. Louis, MO, USA) for 5 consecutive days by oral gavage for adult labelling, as previously described (Sheng et al., 2015). Pregnant mice (E7.5) were injected once with 16 mg TAM for embryo labelling.
 
-## DT injection
+### DT injection
 
 DC-SIGN-DTRpos and DC-SIGN-DTRneg mice were injected intraperitoneally (i.p.) with 20 ng/g DT (Sigma-Aldrich) to deplete DC-SIGN-expressing cells. Two different DT injection protocols were used (Figure 7A). For the short-term depletion protocol, mice were injected i.p. at day −2 and −1 before collection of tissues. For the long-term protocol, DT was injected once a week over 5 weeks prior tissue collection.
 
-## Generation of BM chimeras
+### Generation of BM chimeras
 
 Chimeric mice were generated by irradiating recipient C57BL/6 or DC-SIGN-DTR mice (CD45.2+) with two doses of 550 cGy, 4 hr apart. Then, 106 B6.Ly5.1 (CD45.1+) BM cells were injected intravenously (i.v.), 24 hr after treatment. The mice were allowed to recover from 1 to 4 months before analysis.
 
-## Isolation of epidermal, dermal, and LN cells
+### Isolation of epidermal, dermal, and LN cells
 
 Mouse ears were cut and separated into dorsal and ventral halves using fine forceps. Both the dorsal and ventral halves (with the epidermis side facing upwards) were incubated for 1 hr at 37°C in 1 ml IMDM (Thermo Fisher Scientific, Waltham, MA, USA) medium containing 1 U/ml Dispase II (Thermo Fisher Scientific). The epidermis and dermis were separated using fine forceps, cut into small pieces and digested for another 1 hr at 37°C in 1 mg/ml Collagenase D (Roche, Basel, Switzerland). To obtain single-cell suspensions, the digested tissue was passed through a 40 mm cell strainer. To process skin-draining auricular LNs, the dissected LNs were minced and incubated in 1 mg/ml collagenase D for 60 min at 37°C.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used: anti-mouse CD45 (30-F11), anti-mouse CD11b (M1/70), anti-mouse F4/80 (BM8), anti-mouse Ly6c (HK1.4), anti-mouse CD11c (N418), anti-mouse I-A/I-E (M5/114.15.2), anti-mouse CD103 (2E7), anti-mouse CD326 (G8.8), anti-mouse CD207 (4C7), anti-mouse CD45.1 (A20), anti-mouse CD45.2 (104). They were purchased all from Biolegend (San Diego, CA, USA). Anti-mouse CD45 microbeads from Milteny (Bergisch Gladbach, Germany). All antibodies were used for extracellular stainings with the exception of the anti-CD207 Ab which was used for intracellular labelling after have fixed and permeabilized the cells with 2% paraformaldehyde and 0.05% saponin, respectively.
 
-## Flow cytometry analysis of skin-related DC subpopulations
+### Flow cytometry analysis of skin-related DC subpopulations
 
 Single-cell epidermal, dermal, or LN tissue suspensions were pre-incubated with 10 mg/ml anti-Fc receptor antibody (2.4G2) on ice for 20 min. Then, the suspensions were further incubated with fluorochrome-labelled antibodies at 4°C for 20 min, before being washed and re-suspended in PBS/2% FCS for analysis on a five-laser flow cytometer (LSR Fortessa; BD Bioscience, San Jose, CA, USA). The data were analysed with FlowJo software (TreeStar, Ashland, OR, USA) and UMAP analysis was performed using the FlowJo UMAP plugin.
 
-## scRNA-seq analysis
+### scRNA-seq analysis
 
 Immune cells were enriched using anti-mouse CD45 microbeads from dermal single-cell suspension. Briefly, enriched CD45+ dermal cells were loaded into chromium microfluidic chips with v3 chemistry and barcoded with a 10× Chromium Controller (10X Genomics, Pleasanton, CA, USA). RNA from the barcoded cells was subsequently reverse-transcribed and sequencing libraries constructed with reagents from a Chromium Single Cell v3 reagent kit (10X Genomics) according to the manufacturer’s instructions. Library sequencing was performed at Novogene Co., Ltd (Tianjin Novogene Technology Co., Tianjin, China) with Illumina HiSeq 2000 according to the manufacturer’s instructions (Illumina, San Diego, CA, USA).
 
-## Single-cell data analysis
+### Single-cell data analysis
 
 FastQC was used to perform basic statistics on the quality of the raw reads. Raw reads were demultiplexed and mapped to the reference genome by 10X Genomics Cell Ranger pipeline using default parameters. All downstream single-cell analyses were performed using Cell Ranger and Seurat unless mentioned specifically. In brief, for each gene and each cell barcode (filtered by Cell Ranger), unique molecule identifiers were counted to construct digital expression matrices. Secondary filtration for Seurat analysis: a gene with expression in more than three cells was considered as expressed and each cell was required to have at least 200 expressed genes.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 All mouse RNAs were analysed using an Agilent Bioanalyser (Agilent, Santa Clara, CA, USA). The RNA Integrity Number ranged from 3.4 to 9.3, with a median of 8.2. cDNA libraries were prepared from a range of 18, 24.2, 68, and 100 ng total RNA starting material using the Ovation Universal RNA-seq system. The length distribution of the cDNA libraries was monitored using a DNA High Sensitivity Reagent Kit on an Agilent Bioanalyser. All 11 samples were subjected to an indexed paired-end sequencing run of 2 × 100 bp on an Illumina Novaseq 6000 system (Illumina, San Diego, CA, USA).
 
@@ -182,30 +736,30 @@ The paired-end reads were trimmed with trim_galore1 (option: -q 20 –stringency
 
 For functional analysis, hierarchical clustering based on Euclidean distance and complete linkage, was performed using the R ‘pheatmap’ package. PCA was performed using the R ‘prcomp’ package. The first two principal components were analysed on a multidimensional scatterplot that was created using the R ‘scatterplot 3D’ function.
 
-## Preparation and staining of epidermal sheets
+### Preparation and staining of epidermal sheets
 
 DC-SIGN-DTRneg and DC-SIGN-DTR+ mice were treated for 2 days with DT. Ears were collected and split into dorsal and ventral halves and subsequently incubated with 3.8% ammonium thiocyanate (Sigma-Aldrich) in PBS for 20 min at 37°C. Epidermal and dermal sheets were separated and fixed in ice-cold acetone for 15 min. Then, the epidermal sheets were pre-incubated with 10 mg/ml anti-Fc receptor antibody (2.4G2) on ice for 20 min and subsequently stained with FITC-labelled anti-MHC class II antibody for a further 30 min on ice for LC visualization.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Ears were harvested and immediately homogenized in TRIzol reagent (Thermo Fisher Scientific). Total RNA was subsequently purified using the RNAsimple Total RNA kit (Tiangen Biotech Ltd, Beijing, China). Real-time PCR was performed according to the manufacturer’s instructions using the Primer design Precision FAST protocol (Primerdesign Ltd, Cambridge, UK).
 
-## In vitro maturation of LCs
+### In vitro maturation of LCs
 
 F4/80hiCD326+ LCs were isolated from pooled murine epidermis sheets and purified by cell sorting (purity >90%). 5 × 104 LCs were immediately used for RNA processing, the remaining 5 × 104 LCs were cultured in a 96-well round bottom plate for 16 hr in presence of 20 ng/ml GM-CSF and 2 hr/ml LPS and processed the next day for RNA isolation.
 
-## Induction of CHS
+### Induction of CHS
 
 WT and DC-SIGN DTR mice were injected with DT and 2 days later were sensitized with 1% DNFB dissolved in an acetone and olive oil mixture (4:1, v/v). DT injection was repeated for 7 days every 3–4 days to maintain the LC pool ablated. The ears of both WT and DC-SIGN DTR mice were challenged with 0.5% DNFB. Ear swelling was measured daily for 12 consecutive days post challenge. Another mouse group was sacrifized at day 3 post challenge for qPCR analysis and for dermal T-cell response analysis.
 
-## Induction of tolerance to CHS
+### Induction of tolerance to CHS
 
 WT, CD207-DTR, Clec9A-DTR, and DC-SIGN DTR mice were injected with DT every 3–4 days over a period of 20 days to maintain the depletion of the target cells (CD207-DTR: LC, cDC1, and LClike cells; Clec9A-DTR: cDC1 and DC-SIGN-DTR: LC and CD11bhi cells). All mouse strains were tolerized with a 100 μl volume of 1% DNTB (Sigma-Aldrich) in an acetone and olive oil mixture (AOO) (4:1, v/v), administered epicutaneously to the shaved abdomen. One group of WT mice was painted only with AOO as a control. After 7 days, all mouse strains were sensitized by skin painting the dorsal side of the ears with 0.5% DNFB (Sigma-Aldrich) (25 μl in AOO). Another group of mice was further ear-challenged 5 days later with 0.1% DNFB (4 μl in AOO), and ear swelling was measured using a digital caliper (Mitutoyo, Kanagawa, Japan) over the course of 6 days. In a second group of mice, the draining LNs were harvested at day 5 post tolerization/sensitization.
 
-## Analysis of T-cell responses
+### Analysis of T-cell responses
 
 To determine the capacity of CD8+ T-cells to secrete IFN-γ, isolated cells were stimulated in a round-bottom 96-well culture plate (Corning, Corning, NY, USA) with 10 ng/ml phorbol 12,13-dibutyrate (PMA, Sigma-Aldrich) and 1 mg/ml Ionomycin (Sigma-Aldrich) in complete IMDM for 3 hr followed by an additional 2 hr incubation with 10 μg/ml Brefeldin A (Sigma-Aldrich) at 37°C. The cells were then harvested and stained for CD3 and CD8, fixed with 2% paraformaldehyde and permeabilized in 0.05% saponin (Sigma-Aldrich) before staining with anti-IFN-γ antibodies. To quantify activated Tregs, isolated cells were co-stained for CD4 and ICOS, fixed, and permeabilized using a Fix/Perm Buffer Set (eBioscience) before staining with an anti-Foxp3 antibody.
 
-## Statistics
+### Statistics
 
 The data represent the means ± SEM or SD, as indicated in the figure legends. GraphPad Prism software was used to display the data and for statistical analysis. Statistical tests were selected based on the appropriate assumptions with respect to data distribution and variance characteristics. All statistical tests are fully described in detail in the figure legends. Samples were analysed by two-tailed Student’s t-test to determine statistical differences between two groups. A two-way ANOVA with Bonferroni post-test was used to determine the differences between more than two groups. A p-value < 0.05 was considered to be statistically significant. The number of animals used per group is indicated in the figure legends as ‘n’.

@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Cell Biology, Duke University, Durham Durham United States
-2. https://ror.org/0130frc33 Neuroscience Center, University of North Carolina Chapel Hill United States
+1. Department of Cell Biology, Duke University, Durham Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Neuroscience Center, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 3. Carolina Institute of Developmental Disabilities Chapel Hill United States
-4. https://ror.org/008s83205 Department of Biology, University of Alabama at Birmingham Birmingham United States
-5. https://ror.org/00py81415 Department of Molecular Genetics and Genomics, Duke University Durham United States
+4. Department of Biology, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+5. Department of Molecular Genetics and Genomics, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -39,17 +39,41 @@ Here, we investigate how interactions between LREs, the gut microbiome, and diet
 
 ## Results
 
-## Gut microbiome slows uptake and degradation kinetics in LREs
+### Gut microbiome slows uptake and degradation kinetics in LREs
 
 We first investigated if microbes affect protein absorption in LREs. To do this, we used established methods (Pham et al., 2008) to rear zebrafish to the larval stage in gnotobiotic conditions to compare LRE activity in GF and ex-GF conventionalized (CV) conditions. In these experiments, a portion of the GF cohort was conventionalized with microbes at 3 d post fertilization (dpf), while the rest remained in the GF condition until the experimental endpoint of 6 dpf. At that point, we gavaged GF and CV larvae with fluorescent soluble cargoes and imaged uptake in the LRE region using confocal microscopy (Figure 1A; Park et al., 2019; Shaner et al., 2004; Cocchiaro and Rawls, 2013). To test how the microbiome affects protein uptake in LREs, we gavaged larvae with the purified fluorescent protein mCherry (Shaner et al., 2004). Previous work showed that LREs readily take up mCherry following gavage with fluorescence peaking in the anterior LREs (Park et al., 2019). We found that GF and CV larvae rapidly took up mCherry in the LREs, absorbing detectable levels of mCherry within 5 min of gavage (Figure 1B-C). LREs progressively became more saturated with mCherry between 5–60 min post-gavage in both conditions (Figure 1B-C). However, mCherry fluorescence peaked in the anterior LREs of GF larvae by 40 min PG (Figure 1—figure supplement 1), but the peak did not emerge until 60 min PG in CV larvae (Figure 1—figure supplement 1). Between 5 and 60 min PG, the anterior LREs of GF larvae accumulated mCherry at a significantly faster rate than those in CV larvae (Figure 1—figure supplement 1). Across the entire LRE region, GF larvae took up significantly more mCherry than CV larvae by 1 hr PG (Figure 1D). However, LREs in CV larvae eventually reached a similar level of mCherry uptake by 5 hr PG (Figure 1E). Over the 1–5 hr time course, the anterior LREs in CV larvae gradually increased in mCherry saturation, while mCherry saturation remained at a stable, high level in GF larvae (Figure 1—figure supplement 1). We tested if the gut microbiome reduces mCherry uptake in LREs by lowering its concentration in the lumen. That did not appear to be the case because luminal mCherry concentrations were equivalent in GF and CV larvae at 1 and 5 hr PG (Figure 1—figure supplement 1), and the microbiome did not degrade mCherry over time (Figure 1—figure supplement 1). We observed a similar trend using Lucifer Yellow (LY) as a fluid phase endocytic tracer (Swanson et al., 1985; Park et al., 2019). GF larvae took up significantly more LY than CV larvae by 1 hr PG (Figure 1F) but accumulated similar amounts by 3 hr PG (Figure 1—figure supplement 1). These results suggest that microbial colonization reduces the rate of endocytosis in the LRE region.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon depicting experimental design of the gavage assay in GF and CV larvae. Following derivation under conventional (CV) or germ-free (GF) conditions, 6 dpf larvae were gavaged, and uptake of luminal cargoes by LREs was measured by confocal microscopy in the LRE region (approximately 300 μm in length). (B, C) Plots of normalized mCherry fluorescence intensity along the LRE region over time in 6 dpf GF (B) and CV (C) larvae. Minutes after gavage, LREs rapidly took up and quickly accumulate mCherry in GF larvae. The anterior LREs approached full saturation by 40 min post gavage. Cargo uptake was slower in CV larvae, and anterior LREs did not reach saturation by 40 min post gavage. (D, E) Top: Plots of normalized mCherry fluorescence intensity along the LRE region of GF and CV larvae at 1 (D) and 5 (E) hr PG. GF larvae internalized significantly more mCherry than CV larvae (2-way ANOVA, p<0.0001, n=8–10) 1 hr PG, and CV larvae reached a similar level of mCherry accumulation to GF larvae by 5 hr PG (two-way ANOVA, p=0.137, n=8–11). Bottom: Representative confocal images showing mCherry signal in the LRE region (scale bars = 50 µm). (F) Top: Plot of normalized lucifer yellow fluorescence intensity along the LRE region of GF and CV larvae at 1 hr post gavage. LREs in GF larvae internalized significantly more Lucifer yellow than CV larvae by 1 hr post gavage (two-way ANOVA, p<0.0001, n=8).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Plots comparing normalized cargo uptake by anterior (50–150 μm) and posterior (150–250 μm) LRE regions in 6 dpf germ-free (GF) (A) and conventional (CV) (B) larvae. The anterior LREs took up significantly more mCherry than posterior LREs at 40 min (two-way ANOVA, padj = 0.047, n=9–11) and 60 min PG in GF larvae (two-way ANOVA, padj = 0.0013, n=11). The anterior LREs took up significantly more mCherry than posterior LREs by 60 min post gavage in CV larvae (two-way ANOVA, padj = 0.043, n=9–10). (C) Plot showing % of maximal uptake (saturation) over time from 5 to 60 min post gavage. The anterior LREs of GF larvae (50–150 µm) took up mCherry at a significantly faster rate than CV larvae from 5 to 60 min post gavage (Simple linear regression, p<0.0001, n=9–11). (D) Plot showing % of maximal uptake (saturation) over time. Between 1–5 hr post gavage, mCherry saturation remained constant in the anterior LREs (0–100 μm) GF larvae (Simple linear regression, p=0.74, n=8–10) but increased in CV larvae (Simple linear regression, p=0.026, n=8–11). The rate of mCherry accumulation was significantly different between GF and CV larvae (Simple linear regression, p=0.0187, n=8–11). (E) Plot showing luminal mCherry fluorescence at 1 and 5 hr post gavage in GF and CV larvae. There was no difference in luminal fluorescence between conditions (two-way ANOVA, padj = 0.17, n=8–11). (F) Plot showing mCherry fluorescence (AU) over time in media containing zebrafish larva microbes or vehicle control. The change in mCherry fluorescence over time was not significantly different between zebrafish microbe and control media (Simple linear regression, p=0.103, n=8–10), showing the zebrafish microbiome did not degrade mCherry. (G) Plot showing Lucifer Yellow (LY) uptake in GF and CV larvae at 3 hr post gavage. There was no difference in LY fluorescence between GF and CV larvae (two-way ANOVA, p=0.98, n=9–11). (H, I) Plots of normalized mCherry fluorescence intensity along the LRE region over time in 6 dpf GF and CV larvae. The LREs in GF and CV larvae took up the same amount of mCherry by 1 hr post gavage when the microbial density was 3×105 CFU/mL (two-way ANOVA, p=0.18, n=10) (H). GF larvae took up significantly more mCherry than CV larvae when the microbial density was 3×106 CFU/mL (two-way ANOVA, p<0.0001, n=10) (I).
 
 We hypothesized that microbial burden may influence the rate of luminal uptake and that a threshold density may be needed for microbes to affect protein-uptake kinetics in LREs. To investigate this possibility, we compared mCherry uptake activity between CV larvae with different microbial densities. At 1 hr PG, mCherry uptake was not reduced in CV larvae when the density was 3×105 CFU/mL in the gnotobiotic zebrafish media (GZM) (Figure 1—figure supplement 1). However, a higher density of 3×106 CFU/mL in the GZM was sufficient to significantly reduce mCherry uptake in CV larvae compared to GF larvae (Figure 1—figure supplement 1).
 
 LREs degrade much of the protein they take up from the intestinal lumen within their lysosomal vacuole (Park et al., 2019). To test if microbes affect the protein degradation process, we employed a pulse-chase assay (Park et al., 2019) to compare the rate of protein degradation between GF and CV larvae (Figure 2A). At 6 dpf, larvae were gavaged with mTurquoise (25 mg/mL), a pH-insensitive protein that degrades rapidly in LREs (Figure 2—figure supplement 1). One hour after gavage, the remaining luminal mTurquoise was flushed with PBS, and live larvae were imaged with confocal microscopy over the course of 1 hr. In both GF and CV larvae, mTurquoise degraded over the 1 hr imaging time course (Figure 2B-C), with the degradation process occurring at a significantly faster rate in GF compared to CV LREs (Figure 2D). Together, these uptake and degradation kinetics assays demonstrate that the microbiome reduces the rate of cargo uptake and lysosomal protein degradation in LREs.
 
-## Identification of two microbe-independent LRE cell clusters and a microbe-dependent cloaca cluster
+![Figure 2.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig2-v1.jpg)
+
+**Figure 2.:** (A) Cartoon depicting the experimental design of pulse-chase protein uptake and degradation assay. At 6 dpf, germ-free (GF) and conventional (CV) larvae were gavaged with mTurquoise (25 mg/mL), incubated for 1 hr, and then flushed with PBS to remove luminal mTurquoise. LRE degradation of mTurquoise was measured by confocal microscopy over time. (B, C) Confocal images of mTurquoise fluorescence in the LRE region after flushing in GF (B) and CV (C) larvae (scale bars = 50 µm). (D) Plot showing the degradation of mTurquoise fluorescence (%) in the LRE region over time. Degradation occurred at a significantly faster rate in GF than CV larvae from 20 to 60 min post gavage (Simple linear regression, p=0.0167, n=6).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Plot showing mTurquoise degradation kinetics in LREs from 6 dpf, conventional (CV) larvae over time. Over 75% was degraded within 2 hr.
+
+### Identification of two microbe-independent LRE cell clusters and a microbe-dependent cloaca cluster
 
 Given the differences we observed in LRE kinetics between GF and CV larvae, we wanted to investigate how the gut microbiome impacts gene expression programs in LREs and other intestinal cells. To do so, we prepared GF or CV TgBAC(cldn15la-GFP) transgenic larvae (Alvers et al., 2014), in which all intestinal cells are GFP-positive, and then gavaged them with mCherry to label LREs and other cells at 6 dpf (Figure 3A). At 3 hr PG, we isolated mCherry-positive/GFP-positive and mCherry-negative/GFP-positive cells by fluorescent-activated cell sorting (FACS) as previously described (Park et al., 2019) and processed them for scRNA-seq.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cartoon depicting experimental design for transcriptomic profiling of intestinal cells in germ-free (GF) and conventional (CV) larvae. GF and CV larvae expressing Tg(cldn15la-GFP) to label all intestinal epithelial cells (IECs) were raised to 6 dpf in gnotobiotic conditions and then gavaged with mCherry (1.25 mg/mL). Cells from dissociated larvae were fluorescent-activated cell sorting (FACs) sorted to isolate GFP-positive/mCherry-positive from GFP-positive/mCherry-negative populations prior to single cell sequencing. (B) UMAP projection of cells color-coded by cluster identity. (C) Dot plot of top cluster markers in each cluster. Average expression of the marker gene in each cell cluster is signified by the color gradient. Dot size indicates the percentage of cells in each cluster expressing the marker. (D) UMAP projection of cells color-coded by cluster identity in the GF (left) and CV (right) datasets. The Cloaca 3 cluster only appeared in the CV dataset. (E) Bar plot showing that the average number of LREs in the GF and CV larvae was not significantly different (two-tailed t-test, p=0.33, n=10). LREs were labeled by gavaging with DQ red BSA (50 µg/mL) in a separate experiment, then quantified. Images show DQ red BSA marking LRE lysosomal vacuoles (scale bar = 50 µm).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Table showing the number of germ-free (GF) and CV cells per cluster in the single-cell RNA sequencing (scRNA-seq) dataset. (B) Bar plot showing the % abundance of cells that fell within each cluster in the GF and CV datasets. Both conditions showed comparable proportions of cells per cluster except for Cloaca 3, which only appeared in the CV dataset. (C) Dot plot displays the GO terms that were upregulated in Cloaca 3 cells. The dot color indicates the adjusted p-value for each GO term, while the dot size signifies the number of genes expressed in Cloaca 3 cells that fall into each GO term category. GeneRatio describes the proportion of genes associated with each GO term. (D) Volcano plot illustrates markers upregulated in the Cloaca 3 cluster. Red points with log2FC >0.5 are genes significantly upregulated in Cloaca 3 cells compared to other intestinal epithelial cells (IECs). Labeled genes were categorized in the GO term ‘response to bacterium.’ (E) Heatmap displays genes that were included in the ‘response to bacterium’ GO term, which was upregulated in Cloaca 3. Cluster identity is indicated by the colored bars at the top of the heatmap. Expression level is shown by a color gradient, with yellow indicating the highest expression level. (F) Live confocal microscopy images of lysosome-rich enterocytes (LREs) in 6 dpf larva expressing GFP-rab32a following gavage with DQ red BSA. DQ red BSA fluorescence was localized to the lysosome (arrow). Scale bars = 5 μm.
 
 Clustering analysis with Seurat (Satija et al., 2015) revealed seventeen cell clusters, including two LRE clusters (Figure 3B). Each of these clusters was characterized by transcriptomic signatures that distinguished them from other clusters (Figure 3C) (Supplementary file 1; Supplementary file 2; Supplementary file 3). Ileocytes are an ileal enterocyte population that specialize in bile salt recycling (Wen et al., 2021). Interestingly, fatty acid binding protein 6 (fabp6), a top ileocyte cluster marker, was also expressed in both LRE clusters (Figure 3C). Using transgenic reporters, previous studies showed that fabp6 expression is highest in the ileocytes, but expression was also detected in the anterior LRE region (Wen et al., 2021; Lickwar et al., 2017). We, therefore, termed the LRE cluster with the higher fabp6 expression in our scRNAseq dataset ‘anterior LREs’ and the LRE cluster with lower fabp6 expression ‘posterior LREs.’ In total, this dataset includes 131 GF and 199 CV anterior LREs, along with 359 GF and 381 CV posterior LREs (Figure 3—figure supplement 1).
 
@@ -57,17 +81,33 @@ GF and CV larvae had proportionally similar numbers of cells in each cluster, in
 
 Our scRNAseq data indicated that LRE numbers were similar in the presence or absence of the gut microbiome (Figure 3—figure supplement 1). To quantitatively determine if microbes affect the number of LREs, we gavaged DQ-red BSA to mark the LRE lysosomes (Marwaha and Sharma, 2017) in GF and CV larvae and computationally segmented LREs using ilastik (Sommer et al., 2011; Figure 3—figure supplement 1). This experiment revealed that there is not a significant difference in the number of active LREs between GF and CV larvae (Figure 3E). Together, these data show that the development of most intestinal cell clusters, including LREs, is not dependent on the gut microbiome. The notable exception is Cloaca 3, which only appeared in the presence of gut microbes.
 
-## Identification of cell types with protein uptake capacity
+### Identification of cell types with protein uptake capacity
 
 Next, we explored the effects of the gut microbiome on mCherry uptake throughout the gut. Surprisingly, scRNA-seq analysis revealed that mCherry is internalized by several cell types in addition to LREs (Figure 4A–B). While LREs had the highest percentage of mCherry-positive cells, other mCherry-positive cell types included ileocytes, goblet, acinar, enteroendocrine, immune, and best4/otop2 cells in both GF and CV conditions (Figure 4C). Notably, anterior enterocytes, pharynx, and cloaca clusters contained extremely low levels of mCherry-positive cells (Figure 4C), showing that these cell types have very low protein uptake activity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) UMAP projections highlighting mCherry-positive/GFP-positive cells (magenta) and GFP-positive cells (green) in the germ-free (GF) and conventional (CV) datasets. (C) Bar plots portray the percentage of mCherry-positive and mCherry-negative cells in the GF and CV datasets. Bar color indicates the proportion of mCherry-positive (magenta) and mCherry-negative (green) cells in each cluster. (D) Bar plot displays the difference in the proportion of mCherry-positive cells in the CV compared to the GF dataset. Positive values show that the proportion of mCherry-positive cells were higher in the CV dataset. (E) Volcano plot shows differentially expressed genes between mCherry-positive and mCherry-negative cells in the CV dataset. The x-axis displays the log fold change in expression between mCherry-positive and mCherry-negative cells, with positive values showing enhanced expression in mCherry-positive cells and negative values showing higher expression in mCherry-negative cells. Red points are genes with significantly different expression (padj <0.05) and high fold change (log2FC < - 0.05, log2FC >0.05). (F) Heatmap displays the expression of the top markers for mCherry-positive and mCherry-negative cells in goblet, EEC, and acinar clusters. The color bar at the top indicates mCherry-positive (magenta) and mCherry-negative (green) cell types. Expression level is highlighted with a color gradient. mCherry-positive cells showed higher expression of dab2 and other LRE-enriched endocytic markers (bolded), whereas mCherry-negative cells express typical anterior enterocyte markers such as fabp2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Volcano plot displays LRE marker genes in all cells within the conventional (CV) dataset. The top differentially expressed genes (DEGs) between LREs and other cells are tagged. Genes with a red dot and log2FC >0.5 are significant LRE cluster markers. (B) Volcano plot displays anterior enterocyte marker genes in all cells within the CV dataset. The top DEGs between anterior enterocytes and other cells are tagged. Genes with a red dot and log2FC >0.5 are anterior enterocyte cluster markers. (C) UMAP projections show expression of the top DEGs in mCherry-positive cells compared to mCherry-negative cells (ctsbb, lrp2b, ctsl.1, dab2, cpvl, cubn, tdo2b, lgmn, fabp6, sptbn5) in the CV dataset. The cell color gradient intensity indicates the cumulative expression level of these genes. Left: UMAP projection displays all sorted mCherry-negative cells in the CV dataset. Right: UMAP projection displays sorted mCherry-positive cells in the CV dataset. (D) UMAP projections show expression of the top DEGs in mCherry-negative cells compared to mCherry-positive cells (fabp2, chia.2, fabp1b.1, apobb.1, apoa4b.1, apoa1a, tm4sf4, afp4.1, apoc2, apoc1) within the CV dataset. The cell color gradient intensity indicates the cumulative expression level of these genes. Left: UMAP projection displays all sorted mCherry-negative cells in the CV dataset. Right: UMAP projection displays all sorted mCherry-positive cells in the CV dataset.
 
 The gut microbiome increased the proportions of mCherry-positive cells in several clusters (Figure 4D). This effect could be observed in secretory cells such as enteroendocrine, goblet cells, and acinar cells, which increased by 25%, 11%, and 8%, respectively. The gut microbiome also increased the proportion of mCherry-positive neurons by 13%. Notably, the proportion of mCherry-positive anterior (84–91%) and posterior (98–97%) LREs was extremely high in both GF and CV conditions, respectively (Figure 4C). However, the gut microbiome had mixed effects on the number of mCherry-positive LREs. While anterior LREs had a slightly higher proportion of mCherry-positive cells in the CV condition (7% increase), microbes caused a small decrease in the proportion of mCherry-positive posterior LREs (1% decrease) (Figure 4C–D). Regardless of microbial colonization, the proportion of mCherry-positive LREs remained high, underscoring the robust protein-uptake program in these cells.
 
 Since the microbiome increased the proportion of mCherry-positive cells in many clusters, we proceeded to investigate the transcriptional program they hold in common. There were many differentially expressed genes between aggregated mCherry-positive and mCherry-negative cells in the CV condition (Figure 4E). The top upregulated genes in aggregated mCherry-positive cells (ctsbb, lrp2b, ctsl.1, dab2, cpvl, cubn, tdo2b, lgmn, fabp6, sptbn5) were also significant LRE cluster markers (Figure 4—figure supplement 1). On the other hand, the most upregulated genes in aggregated mCherry-negative cells (fabp2, chia.2, fabp1b.1, apobb.1, apoa4b.1, apoa1a, tm4sf4, afp4.1, apoc2, apoc1) were also significant anterior enterocyte cluster markers (Figure 4—figure supplement 1). This presumably reflects the high relative abundance of LRE and anterior enterocytes in the mCherry-positive and mCherry-negative groups, respectively (Figure 4C). However, expression of the top differentially expressed genes also clearly delineated mCherry-positive and mCherry-negative cells in secretory cell clusters, including goblet, EEC, and acinar cells (Figure 4F, Figure 4—figure supplement 1). Differential expression of these genes between mCherry-positive and negative cells was significant in these clusters (Supplementary file 4). Upregulated genes in mCherry-negative cells were highly enriched in anterior enterocytes and mCherry-negative cloaca 3, acinar, pharynx, and best4/otop2 cells (Figure 4—figure supplement 1). These data suggest that intact protein uptake in non-LRE cells is associated with the expression of a subset of markers involved in protein uptake in LREs.
 
-## Regional expression patterns and responses to the microbiome in LRE clusters
+### Regional expression patterns and responses to the microbiome in LRE clusters
 
 Despite similarities between LREs and mCherry-positive cells from other clusters, LREs maintained distinct transcriptional patterning that distinguished them from other cell types, including close clusters (Figure 5A). For example, KEGG pathway analysis confirmed that the lysosome pathway was strongly upregulated in anterior and posterior LREs in both GF and CV conditions (Figure 5—figure supplement 1), distinguishing them from their closest cluster neighbors (Figure 5B, Figure 5—figure supplement 1). In addition, both anterior and posterior LREs strongly expressed their characteristic endocytic machinery, composed of cubn, dab2, and amn (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig5-v1.jpg)
+
+**Figure 5.:** (A) UMAP projection shows anterior and posterior LREs, as well as close cell clusters in the conventional (CV) condition. Cell types are color coded. (B) Heatmap illustrates expression of lysosome KEGG pathway genes in LREs and close clusters. The colored bars at the top of the plot indicate the cluster. Heatmap color corresponds to expression intensity. (C) UMAP projection displays expression of the bile salt transport genes fabp6 and slc10a2 in the LREs, ileocytes, goblet, and pharynx-cloaca 1 cells. Cell color indicates cumulative expression intensity for fabp6 and slc10a2. (D) Heatmap highlights expression of bile salt transport and tryptophan metabolism genes in the LREs and close clusters. The colored bars at the top indicate the cell cluster. (E) UMAP projection displays expression of tryptophan metabolism genes kmo and tdo2a in the LREs and close clusters. Cell color indicates cumulative expression intensity of kmo and tdo2a. (F) Volcano plot shows differentially expressed genes (DEGs) between germ-free (GF) and CV posterior LREs. Peptidase genes are tagged. (G) Volcano plot shows DEGs between GF and CV posterior LREs. Genes involved in microbe sensing and inflammatory response are tagged. (H) UMAP projection plots show expression of dopamine synthesis (ddc) and signaling (gnas) genes in GF (left) and CV (right) cells. (I) UMAP projection plots show expression of iron homeostasis genes (meltf, slc40a1, slc11a2) in GF (left) and CV (right) cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Dot plot shows KEGG pathways that were significantly upregulated in anterior LREs from the conventional (CV) dataset. Dot color corresponds to the adjusted p value, while dot size describes the number of pathway genes expressed in anterior LREs. (B) Dot plot of KEGG pathways that were significantly upregulated in anterior LREs of germ-free (GF) larvae. (C) Dot plot of KEGG pathways that were significantly upregulated in the posterior LREs of CV larvae. (D) Dot plot of KEGG pathways that were significantly upregulated in the posterior LREs of GF larvae. (E) Heatmap showing expression of KEGG pathway lysosome genes by LREs, midgut cell types and Pharynx, esophagus, cloaca 1 cells in the GF larvae. (F) Bar plots show the percentage of mCherry-positive and mCherry-negative cells that express components of the endocytic machinery in anterior LREs (top) and posterior LREs (bottom). (G, H) Volcano plot shows differentially expressed genes between anterior LREs and all other cell clusters in the CV (G) and GF (H) datasets. Genes that play a role in tryptophan metabolism are labeled. Red points with log2FC >0.5 are upregulated genes in anterior LREs from the CV (F) and GF (G) datasets. (I) Volcano plot shows differentially expressed genes between anterior and posterior LREs in the CV dataset. Tagged genes are peptidases. Red points with log2FC >0.5 and genes that were upregulated in anterior LREs, while red points with log2FC <–0.5 were upregulated genes in posterior LREs. (J, K) Volcano plots show differentially expressed genes between GF and CV anterior (J) and posterior LREs (K). Genes marked with red points with log2FC >0.5 were upregulated in the GF condition, while log2FC <0.5 were upregulated in the CV condition.
 
 Anterior and posterior LREs were distinguished by some notable differences in their transcriptional programs. Anterior LREs shared more transcriptional similarities to ileocytes than did posterior LREs. Bile salt transport genes, fatty acid binding protein (fabp6), and solute carrier family 10 member 2 (slc10a2), were highly expressed in ileocytes, but expression also occurred in the LRE clusters at a gradient from anterior to posterior LREs (Figure 5C–D). Further evidence of shared expression patterns between ileocytes and anterior LREs can be seen in their expression of tryptophan metabolic genes. Tryptophan metabolism was a significantly upregulated KEGG pathway in anterior LREs in the GF and CV conditions (Figure 5—figure supplement 1). Expression of tryptophan metabolic genes, including kynurenine 3-monoxygenase (kmo) and tryptophan 2,3-dioxygenase a (tdo2a), occurred in LREs and ileocytes (Figure 5D–E). Anterior LREs showed high expression of tryptophan metabolic genes (tdo2b, aldh9a1a.1, kmo, tdo2a, ddc) in the GF and CV conditions (Figure 5—figure supplement 1). Furthermore, anterior and posterior LREs were distinguished by differential expression of several peptidases (Figure 5—figure supplement 1).
 
@@ -81,11 +121,19 @@ The microbiome also upregulated several genes related to iron ion transport and 
 
 Together, these scRNA-seq data revealed that LREs upregulate genes in response to microbial colonization that are involved in innate immunity, iron homeostasis, and dopamine-synthesis and signaling pathways, and they downregulate several peptidases that may linked to reduced protein degradation upon microbial colonization.
 
-## Individual microbial strains differentially affect LRE activity
+### Individual microbial strains differentially affect LRE activity
 
 We next investigated if specific bacteria alter LRE kinetics and gene expression patterns. To this end, we turned to monoassociation experiments (Pham et al., 2008), where larvae are colonized with a single strain of bacteria at 3 dpf rather than the unfractionated microbiome used to colonize CV fish.
 
 We started by testing if commensal bacterial strains isolated from zebrafish gut microbiomes (Stephens et al., 2016; Roeselers et al., 2011) were sufficient to reduce LRE protein uptake kinetics. To address this question, we measured mCherry uptake in larvae reared either as GF or monoassociated by a single strain, including Acinetobacter calcoaceticus ZOR0008, Aeromonas caviae ZOR0002, Vibrio cholerae ZWU0020, or Pseudomonas mendocina ZWU0006 (Stephens et al., 2016). At 6 dpf, larvae were gavaged with mCherry (1.25 mg/mL), then mCherry uptake was measured at 1 hr PG (Figure 6A). Interestingly, we found that while mCherry uptake was only minimally reduced by A. calcoaceticus and moderately reduced by P. mendocina and A. caviae, colonization with V. cholerae reduced mCherry uptake severely (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig6-v1.jpg)
+
+**Figure 6.:** (A) Cartoon of monoassociation experimental design. Following gnotobiotic derivation, monoassociated larvae are colonized with a single strain of bacteria at 3 dpf and gavaged with mCherry to measure protein uptake at 6 dpf. (B) Plot shows relative uptake of mCherry in larvae that were germ-free (GF) or monoassociated with a single bacterial strain. mCherry uptake was reduced by A. calcoaceticus (two-way ANOVA, p=0.0268, n=19–20), P. mendocina (two-way ANOVA, p=0.0033, n=20–21), A. caviae (two-way ANOVA,p<0.0001, n=19–20) and V. cholerae (two-way ANOVA, p<0.0001, n=18–20). (C) Confocal images show dab2 hybridization chain reaction (HCR) probe localization in whole zebrafish larva (top) and LRE region (bottom). Arrow points to pronephros. Whole larva scale = 200 μm. LRE region scale = 50 μm. (D) Plot shows dab2 HCR probe fluorescence in the LRE region at 6 dpf. dab2 expression was significantly greater in GF than V. cholerae-colonized larvae (two-way ANOVA, p<0.0001, n=23). (E) Confocal images show cubn HCR probe localization in whole zebrafish larva (top) and LRE region (bottom). Arrow points to pronephros. Whole larva scale = 200 μm. LRE region scale = 50 μm. (F) Plot shows cubn HCR probe fluorescence in the LRE region at 6 dpf. There was greater cubn expression in A. calcoaceticus-colonized than GF larvae (two-way ANOVA, p=0.049, n=21–23), but V. cholerae significantly reduced cubn expression (two-way ANOVA, p<0.0001, n=16–23). (G) Plot of ctsh expression in GF and monoassociated larvae. GF larvae showed greater ctsh expression than A. calcoaceticus (two-way ANOVA, p=0.0183, n=10–12) or V. cholerae-colonized larvae (two-way ANOVA, p<0.0001, n=8–12). (H) Plot of ctsz expression in GF and monoassociated larvae. A. calcoaceticus and GF larvae showed similar levels of ctsz expression in LREs (two-way ANOVA, p=0.09, n=10–12). V. cholerae colonization reduced ctsz expression compared to GF larvae (two-way ANOVA, p=0.0014, n=8–12).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Plot of standard length in larvae that were germ-free (GF) or monoassociated with V. cholerae. There was not a significant difference in standard length (Two-tailed t-test, p=0.66, n=18–22). (B) Plot of mCherry uptake in larvae gavaged with PBS or live V. cholerae. There was no difference in the average mCherry uptake between the conditions (two-way ANOVA, p=0.527, n=7–16). (C) Plot of mCherry fluorescence signal in pronephros of GF, conventional (CV), and V. cholerae-colonized larvae. There was no significant difference between GF, CV, and V. cholerae (one-way ANOVA, p=0.154, n=9). (D) Plot of average luminal mCherry fluorescence in GF and V. cholerae-colonized larvae at 6 dpf by 1 hr PG. Luminal mCherry fluorescence was not significantly different (Two-tailed t-test, p=0.60, n=18–20). (E-F) Confocal images of ctsh (E) and ctsz (F) hybridization chain reaction (HCR) probe localization in whole larva and the LRE region. Larva is outlined with a dashed line. Whole larva scale = 200 μm. LRE scale = 50 μm.
 
 Next, we investigated the mechanisms by which V. cholerae reduced mCherry uptake in LREs. V. cholerae monoassociation did not significantly affect fish growth (Two-tailed t-test, p=0.66, n=18–22) (Figure 6—figure supplement 1), suggesting that interactions with LREs rather than systemic effects reduced uptake activity. To test if V. cholerae exposure induced acute effects on LRE uptake activity, we gavaged GF larvae with live V. cholerae or PBS. Thirty minutes after initial exposure, the larvae were gavaged again with mCherry (1.25 mg per mL). Interestingly, there was no difference in mCherry uptake between larvae that were initially gavaged with live V. cholerae or PBS (Figure 6—figure supplement 1), indicating that longer-term exposure to V. cholerae is required to reduce protein uptake activity in LREs. We next tested if V. cholerae monoassociation or CV conditions increased the rate of transcytosis in LREs, which could lead to reduced mCherry signal in LREs. To investigate this possibility, we gavaged GF, CV, and V. cholerae-monoassociated larvae with mCherry (1.25 mg/mL) and then measured the mCherry signal in the pronephros at 4 hr PG. There was no difference in pronephros signal between these conditions, indicating that intestinal microbes were not causing LREs to increase mCherry trans-epithelial transport through transcytosis (Figure 6—figure supplement 1). Finally, we tested if V. cholerae lowered mCherry uptake in LREs by reducing its concentration in the intestinal lumen, perhaps by promoting intestinal motility (Wiles et al., 2020; Logan et al., 2018). To do so, we analyzed confocal images of GF and V. cholerae-colonized larvae taken at 1 hr PG and measured luminal mCherry concentration in the intestinal lumen proximal to LREs. The concentration was the same in both conditions (Figure 6—figure supplement 1), showing that V. cholerae does not significantly reduce mCherry concentrations in the intestinal lumen within these timeframes.
 
@@ -99,11 +147,19 @@ In addition to the endocytic machinery, we also tested the effects of individual
 
 Together, our data reveal that microbial colonization reduces both protein uptake and degradation in LREs by modulating the expression of endocytic and lysosomal proteins. Our data also suggest that LREs have functional heterogeneity, which may represent some degree of specialization into two different clusters as suggested by the scRNAseq data.
 
-## LRE activity impacts the gut microbiome in a diet-dependent manner
+### LRE activity impacts the gut microbiome in a diet-dependent manner
 
 We next investigated whether LRE activity has reciprocal effects on the gut microbiome. Our previous research demonstrated that cubn mutants have significantly reduced survival compared to heterozygotes when they are fed a low protein diet from 6 to 30 dpf (Park et al., 2019). We hypothesized that the combination of the cubn mutation with a low protein diet fostered a microbial community that further reduced the host’s protein uptake capabilities.
 
 To explore this possibility, we tested the combined effects of the cubn mutation and custom-formulated, isocaloric high and low protein diets (see Materials and methods) on the larval zebrafish microbiome. We fed high-protein (HP) or low-protein (LP) diets to cubn heterozygote and homozygous mutant siblings from 6 to 30 dpf, then performed 16 S rRNA gene sequencing on whole larvae to identify microbial populations (Figure 7A). Initial analyses highlighted that zebrafish larvae developed bacterial communities that were distinctly different from the diets and tank water (Bray Curtis distance, p=0.0001) (Figure 7—figure supplement 1). Larval microbiomes from different tanks were not significantly different in either HP (Bray Curtis distance, p=0.08) or LP-fed (Bray Curtis distance, p=0.13) conditions (Figure 7—figure supplement 1). Diet strongly affected microbiome composition in heterozygotes (Bray Curtis distance, p=0.001), but not in cubn homozygous mutants (Bray Curtis distance, p=0.18) (Figure 7B–C). Mutants had significantly different microbiomes than heterozygotes when they were fed a LP diet (Bray Curtis distance, p=0.023), but not a HP diet (Bray Curtis distance, p=0.34) (Figure 7B–C). In contrast, beta dispersion was not significantly different between HP or LP-fed cubn heterozygotes and mutants (Bray Curtis dispersion, p=0.24) (Figure 7—figure supplement 1; Zaneveld et al., 2017). Some of these effects may reflect differences in taxonomic richness, which was significantly impacted by genotype and diet (1-way ANOVA, p=0.042) (Figure 7D). LP-fed cubn mutants had significantly lower microbial richness than HP-fed mutants (Two-tailed t-test, p=0.0094, n=6–9). These results suggest that the combination of the LP-diet and cubn mutation lowers taxa richness and affects the mutant microbiome.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig7-v1.jpg)
+
+**Figure 7.:** (A) Cartoon of 16 S rRNA gene sequencing experimental design. Homozygous cubn mutant and heterozygote larvae from the same clutch were fed a high-protein (HP) or low-protein (LP) diet from 6 to 30 dpf prior to whole larvae DNA extraction. (B) MDS plot of Bray Curtis distance between zebrafish samples. (C) Boxes show Bray Curtis distance p-values comparing genotype and diet effects on beta diversity. (D) Box plot of observed features between conditions. (E) Heat map of classes with the highest relative abundance across all samples. (F) Table of differentially abundant taxa counts at the class and genus levels. Boxes show the number of differentially abundant taxa per compared condition. Dietary comparisons are in the left column. Genotype comparisons are in the right column. (G) Heat map of the genera with the highest relative abundance across all samples. (H) Box plot showing relative abundance of Aeromonas spp. across genotypes and controls. The relative abundance of Aeromonas spp. was significantly higher in cubn mutants than heterozygotes (DESeq2, padj = 0.01).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100611/elife-100611-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) MDS plot of Bray Curtis beta distance between sample types. (B) MDS plot of Bray Curtis beta distance between zebrafish larvae fed the high-protein (HP) or low-protein (LP) diet. Point color indicates the tank that housed the zebrafish. (C) Box and whisker plot of Bray Curtis beta dispersion between zebrafish larvae from each experimental condition.
 
 The broad differences in microbiome diversity led us to investigate class and genus-level effects of the cubn mutation and LP diet on the microbiome. The effects of dietary protein on the microbiome were clearly seen at the class level (Figure 7E). Gammaproteobacteria were significantly more abundant in HP than LP-fed heterozygotes (DESeq2, padj = 0.02). LP-fed mutants were deficient in Alphaproteobacteria, which were more abundant in LP-fed heterozygotes (DESeq2, padj = 0.021) (Figure 7E). Indeed, one important trend was that mutants consistently had fewer differentially abundant taxa than heterozygotes at the class and genus levels (Figure 7F). The few taxa that were more abundant in mutants than heterozygotes emerged when they were fed the LP diet (Figure 7F).
 
@@ -135,31 +191,31 @@ Altogether, our results show reciprocal regulation between LREs and the gut micr
 
 ## Methods
 
-## Ethics
+### Ethics
 
 Animal experimentation: Zebrafish (Danio rerio) were used in accordance with Duke University Institutional Animal Care and Use Committee (IACUC) guidelines and approved under our animal protocol A072-20-03.
 
-## Fish
+### Fish
 
 The Duke University Institutional Animal Care and Use Committee (IACUC) guidelines were followed in the care and use of all fish in this project. We maintained zebrafish (Danio rerio) stocks on a recirculating system at 28°C with a controlled, 14-hr light and 10 hr dark cycle (Westerfield, 2000). Breeding adult zebrafish were fed a 1:1 ratio of GEMMA Micro (Skretting) and artemia. To breed fish, males and females were placed in mating tanks with dividers overnight, and dividers were removed the following morning. Zebrafish from the Ekkwill (EK) background between 6–30 dpf were used in this study.
 
-## Gnotobiotic zebrafish husbandry
+### Gnotobiotic zebrafish husbandry
 
 Previously described gnotobiotic husbandry methods were used to raise GF, CV, and monoassociated larvae (Pham et al., 2008). Briefly, embryos were treated with antibiotic zebrafish media, followed by iodine and bleach washes to eliminate microbes from their chorions at 0 dpf. Following microbe-removal steps, embryos were housed in sterile cell culture flasks containing autoclaved gnotobiotic zebrafish media (GZM) and incubated at 28 °C. Each flask contained 30 embryos in 30 mL media. At 3 dpf, gnotobiotic larvae were either conventionalized, monoassociated, or remained in the GF condition. In this process, 80% of the media was replaced. The media in GF and monoassociated flasks was replaced with 24 mL autoclaved GZM, while CV flasks received 12 mL autoclaved GZM and 12 mL 5 µm-filtered zebrafish system water. After this step, gnotobiotic zebrafish either (Protocol A) continued to be raised as described (Pham et al., 2008), or (Protocol B) they were raised by our modified protocol designed to boost the bacterial load. In Protocol A, each flask was given 100 µL ZM000 daily from 3 to 5 dpf following media changes, and 80% of the media was replaced with autoclaved GZM from 4 to 5 dpf. In Protocol B, flasks are given 150 µL ZM000 from 3 to 5 dpf, and 40% of the media was replaced with autoclaved GZM from 4 to 5 dpf. The scRNA-seq (Figure 3, Figure 4 and Figure 5), lucifer yellow gavage (Figure 1G), and long-term mCherry gavage (Figure 1D.E) larvae were raised according to Protocol A. The larvae used in rapid mCherry-uptake (Figure 1B,C), mTurquoise degradation (Figure 2), and monoassociation (Figure 6) experiments were raised according to Protocol B. At the 6 dpf endpoint, GF flasks were tested for sterility by spot-testing on TSA plates, as well as brain-heart, dextrose and nutrient broth. The bacterial density in CV and monoassociated media was tested by serial dilutions on TSA plates. Zebrafish larvae were monoassociated with Acinetobacter calcoaceticus ZOR0008, Aeromonas caviae ZOR0002, Vibrio cholerae ZWU0020, or Pseudomonas mendocina ZWU0006 that were previously isolated from conventionally-reared zebrafish (Stephens et al., 2016). Bacteria stocks used in monoassociation were kept in 50% glycerol at –80°C for long-term storage and on tryptic soy agar (TSA) plates at 4 °C for short-term storage. Bacteria were cultured by incubating picked colonies in LB liquid media on a shaker table at 30 °C for 24–72 hr to reach turbidity with an OD600 of 1–3. Cultures were re-suspended in 1 X PBS after spinning at 5000 RPM for 2 min. The bacterial density (CFU/mL) was determined by plating serial dilutions on TSA plates and incubating overnight at 37 °C. Re-suspended bacteria was added to GF flasks to colonize larvae at 3 dpf. For the mCherry gavage experiment (Figure 6B), GF larvae were colonized with approximately 6×108 CFU of V. cholerae, A. caviae, P. mendocina, or A. calcoaceticus. The final bacterial density in the media was measured by plating serial dilutions on TSA plates.
 
-## Fluorescent protein purification
+### Fluorescent protein purification
 
 Previously described methods were used to prepare mCherry and mTurquoise (Park et al., 2019).
 
-## Gavage assays
+### Gavage assays
 
-## Gavage
+#### Gavage
 
 Larvae were sedated with 0.22 µm-filtered 1X Tricaine (0.2 mg/mL). Sedated larvae were suspended in 3% methyl cellulose and gavaged with 4 nL of fluorescent cargo (Cocchiaro and Rawls, 2013). Larvae were placed in a zebrafish incubator to absorb the fluorescent cargo following gavage.
 
 A minimum of twelve larvae were included as biological replicates in each experiment. Individual zebrafish larvae were treated as biological replicates during statistical analysis. Larvae were excluded from analysis if they did not survive the experiment.
 
-## Rapid uptake
+#### Rapid uptake
 
 Larvae were gavaged with mCherry (1.25 mg/mL), then incubated briefly. After designated time intervals (5–40 min) post gavage (PG), mCherry was cleared from the intestinal lumen by gavaging larvae with 1X PBS. Following clearance, larvae were immediately preserved in 4% PFA in PBS. Samples were stored at 4°C overnight. The following day, larvae were mounted on glass-bottomed dishes and imaged by confocal microscopy. This time course experiment was performed with four groups of larvae in parallel.
 
@@ -169,59 +225,59 @@ mCherry fluorescence in anterior versus posterior LREs was calculated from area 
 
 The rate of mCherry accumulation in anterior LREs (Figure 1—figure supplement 1) was calculated next. The average and standard error in mCherry fluorescence at each time point was calculated for GF and CV conditions. These were normalized when they were divided by the maximum average value, which occurred in the GF condition at 60 min PG. A simple linear regression was used to calculate the difference in the mCherry-accumulation slopes between GF and CV conditions.
 
-## Long-term uptake of mCherry (1–5 hr PG)
+#### Long-term uptake of mCherry (1–5 hr PG)
 
 Following mCherry gavage (1.25 mg/mL), larvae were incubated, then preserved in 4% PFA at designated time intervals (1–5 hr PG). Samples were stored at 4°C overnight, then imaged by confocal microscopy. Confocal images were analyzed with ImageJ. The same protocol was used to process images. To compare mCherry and Lucifer yellow uptake in the whole LRE region, the average fluorescence and standard error were calculated for each 30 µm LRE segment in GF and CV conditions (Figure 1D–F). The difference in fluorescence profiles between GF and CV conditions at each time point was then calculated with a two-way ANOVA. To do so, the average fluorescence in each segment (30 µm) of the LRE region (300 µm) was compared between the GF and CV conditions.
 
 To compare the rate of mCherry uptake in anterior LREs, the average fluorescence and standard error were calculated for the 0–100 µm segment in GF and CV conditions. A simple linear regression calculated the difference in mCherry-uptake rate between conditions, along with the difference in slope from zero. A 100 µm segment length was chosen because it encompasses approximately one-third of the LRE region. In this experiment, the 0–100 µm position was selected because peak fluorescence occurred at approximately 50 µm, so analysis covered the most kinetically active LREs. This experiment was replicated at least three times (data not shown) with one representative experiment depicted in Figure 1.
 
-## Lucifer yellow uptake
+#### Lucifer yellow uptake
 
 Larvae were gavaged with 4 nL of Lucifer yellow (1.25 mg/mL), then incubated. Immediately before imaging, luminal Lucifer yellow was cleared with a 1X PBS gavage. Larvae were live imaged to avoid signal quenching by PFA. The same protocol was used to process these images as mCherry-gavaged larvae. To compare Lucifer yellow uptake in the whole LRE region, the average fluorescence and standard error were calculated for each 50 µm LRE segment in GF and CV conditions. The difference in fluorescence between GF and CV conditions at each time point was then calculated with a two-way ANOVA. The same statistical methods were used to calculate the two-way ANOVA as the long-term mCherry uptake experiments. This experiment was replicated three times (data not shown) with one representative experiment depicted in Figure 1.
 
-## mTurquoise degradation
+#### mTurquoise degradation
 
 Larvae were gavaged with mTurquoise (25 mg/mL) and incubated for 1 hr. Luminal mTurquoise was cleared with a 1X PBS gavage. Sedated larvae were mounted on glass-bottom plates and live imaged by confocal microscopy from 20–60 min post clearance.
 
 mTurquoise fluorescence was quantified in the whole LRE region using ImageJ as described above. Live imaging allowed us to track mTurquoise degradation over time in individual fish. The maximum mTurquoise fluorescence value for each individual fish was calculated at the first time point (20 min). All mTurquoise fluorescence measures for each respective fish were then divided by the fish’s maximum value, effectively converting mTurquoise fluorescence measures to a 0–100% scale across all time points. After that, we calculated average mTurquoise fluorescence in individual fish at each time point and normalized to the fish’s average value at 20 min PG. Next, we generated a degradation curve by finding the mean and standard error across fish from GF or CV conditions. These values were linearized when we transformed the x-axis by dividing 1 by the time point (i.e. the x-axis value for the 20-min time point would be 1/0.333 or 3). Finally, we calculated the difference in degradation rate between GF and CV larvae with a simple linear regression. This experiment depicted in Figure 2 was performed one time with live larval samples, and it was replicated with fixed larvae (data not shown).
 
-## Microbial degradation of mCherry
+### Microbial degradation of mCherry
 
 We tested if the larval zebrafish microbiome can degrade mCherry. CV larvae (n = 27) were anesthetized with 0.22 µm-filtered Tricaine, then homogenized in GZM with a Tissue-Tearor (BioSpec Products, inc, model # 985370). The homogenate was spun at 5000 RPM for 2 min and re-suspended in 1X PBS. mCherry was added to the zebrafish microbiome mixture and the 1X PBS control (25 µg/mL). The microbiome and control were added to a 96-well plate. The mCherry fluorescence was measured in each well periodically over 2 hr. Average mCherry fluorescence (AU) over time was compared between treatments with a simple linear regression. This experiment was performed with 9-10 biological replicates for GF and CV conditions.
 
-## Trans-epithelial transport
+### Trans-epithelial transport
 
 GF and CV larvae were anesthetized with 1X Tricaine at 6 dpf. Then, anesthetized larvae were gavaged with mCherry protein (1.25 mg/mL). Larvae were placed in a 28°C incubator to absorb the mCherry for 4 hr. At that point, larvae were fixed in 4% PFA and stored overnight at 4°C. Fixed samples were washed in 1X PBS three times before being mounted in 0.9% low-melt agarose in egg water. Imaging was done with a 25X objective and resonant scanner, and images were taken as z-stacks. Statistics were done by one-way ANOVA with Tukey’s multiple comparisons test. This experiment was replicated in GF and CV larvae two times with one representative experiment shown (Figure 6—figure supplement 1). Results were replicated when comparing trans-epithelial transport between GF, CV, and V. cholerae-colonized larvae (data not shown).
 
-## LRE segmentation
+### LRE segmentation
 
 GF and CV larvae were anesthetized with 1X Tricaine at 6 dpf. Then, DQ-red BSA (50 µg/mL) was gavaged into larvae until the whole gut was filled with the gavage mixture (4 nL). After 0.5 hr of uptake, the larvae were flushed with a 1X PBS gavage until no visible red color was observed in the gut. Larvae were stored in a 28°C incubator for 3 hr after DQ-red BSA gavage. During this incubation period, DQ-red BSA fluorescence activated when the dye was catabolized by lysosomal proteases, thus marking the lysosomal vacuole of each LRE. Larvae were then anesthetized with 1X Tricaine, mounted in 1.3% low-melt agarose in egg water, and live imaged by confocal microscopy. Imaging was done on a Leica SP8 microscope using a 25X objective (Leica) and resonant scanner.
 
 Images were imported into Ilastik version 1.3.3 and segmented by the Pixel Classification program. The program is trained to identify DQ-red BSA-filled LRE vacuoles by machine learning where 10–15 LRE vacuoles are manually marked per image. This process is carried out for 5–10 images before the program is allowed to train itself based on these manual feed-ins. Any errors made by the program are then manually corrected and used to improve the segmentation process. After the segmentation program is trained to have at least an estimated 85% accuracy, the results are exported as probability maps in.h5 format, which are then fed into Ilastik’s Object Classification program. The following parameters are used for the classification process: Method: Hysteresis; Smooth: σ=1.0 for x-,y- and z-axis; Threshold: core = 0.60, final=0.60; Don’t merge objects. After checking the accuracy of object classification, the results are then exported as.cvs files from which the numbers of objects (in this case LRE vacuoles) are extracted. Statistics were done by 1-way ANOVA with Tukey’s multiple comparisons test. Quantification was done with 6–8 biological replicates from the GF and CV conditions in this experiment.
 
-## Fluorescence activated cell sorting for single-cell RNA-sequencing
+### Fluorescence activated cell sorting for single-cell RNA-sequencing
 
 TgBAC(cldn15la-GFP)pd1034 larvae (Alvers et al., 2014) were raised in GF and CV conditions to 6 dpf as described above. These transgenic larvae express GFP in IECs. GF flasks were screened for sterility as described above. Bacterial density in CV flasks ranged from approximately 5×104 – 5×109 CFU/mL. In total, 276 CV and 277 GF, GFP-positive larvae were gavaged with mCherry (1.25 mg/mL) and incubated for 4 hr to mark LREs with mCherry in addition to GFP. Then, larvae were dissociated, and cell suspensions were sorted by FACS as described (Park et al., 2019). The cell death marker, 7AAD (5 µg/mL), was added to cell suspension prior to FACS to remove dead cells. Cells were sorted on a MoFlo Astrios EQ cell sorter (Beckman Coulter) by the Flow Cytometry Shared Resource Center (Duke University). In total, 61,000 double-positive and 156,000 GFP-positive cells were collected from GF larval samples. From CV larval samples, 51,000 double-positive and 140,000 GFP-positive cells were collected. Cells were collected in RLT Plus Buffer (Qiagen RNeasy Plus Micro Kit: QIAGEN Cat No. 74034) media.
 
 To test mCherry-uptake activity in this cohort, GF and CV larvae were gavaged with mCherry (1.25 mg/mL) at the same time as larvae destined for scRNA-seq. These larvae were incubated for 5 hr, then preserved in 4% PFA. They were confocal imaged the following day as described above.
 
-## Single-cell RNA-sequencing library preparation and sequencing
+### Single-cell RNA-sequencing library preparation and sequencing
 
 Immediately after cells were sorted, we began library preparation with the Chromium Next GEM Single Cell 3’ GEM, Library & Gel Bead Kit v3.1 following the kit protocols. GEMS were stored at –20°C for 3 d prior to post-GEM-RT cleanup and cDNA amplification following the kit protocol. Quality control was done by measuring cDNA concentration and size distribution with the ScreenTape assay using the Agilent TapeStation. Libraries were submitted to the Duke Center for Genomic and Computational Biology for sequencing. They were sequenced on the Illumina NovaSeq 6000 platform with 100 bp paired-end reads. Sequencing results are deposited at NCBI Sequence Read Archive (BioProject Accession #: PRJNA1192682).
 
-## Single-cell RNA-sequencing analysis
+### Single-cell RNA-sequencing analysis
 
 Cell Ranger v3.0 (10X Genomics) was used to demultiplex sequencing files and align reads to the zebrafish reference genome, Danio rerio GRCz11. Analysis was performed in RStudio (version 2023.12.1) using the Seurat package (version 5.0.1) (Hao et al., 2024). Reads were filtered by the following criteria: UMIs/cell >500, genes/cell >250, Log10GenesperUMI >0.8, and mitoRatio <0.5. The SCTransform method was used for normalization. Cells were clustered with a resolution of 0.5. Cluster markers were identified using Seurat’s ‘FindMarkers’ function. Cluster identity was determined by cross-referencing marker genes to other scRNA-seq and RNA-sequencing datasets (Park et al., 2019; Wen et al., 2021; Willms et al., 2022). After the LRE cluster was identified, it was re-clustered with a resolution of 0.5 to form two sub-clusters. The GF and CV objects were merged to form one Seurat object.
 
-## In situ hybridization chain reaction (HCR)
+### In situ hybridization chain reaction (HCR)
 
 HCR probes, hairpins, amplification, wash, and hybridization buffers were purchased from Molecular Instruments (Choi et al., 2018). Our methods were adapted from a previously published procedure for performing HCR on zebrafish embryos (Munjal et al., 2021). At 6dpf, larvae were anesthetized and fixed in 4% PFA, then incubated on a shaker table for 2 hr. Larvae were washed with 1X PBS twice, followed by two cold acetone washes. Larvae were incubated in cold acetone at –20°C for 8 min, followed by three 1X PBS washes. For the detection stage, larvae were first incubated in probe hybridization buffer at 37°C for 30 min on a shaker. Larvae were incubated in probe solution (4 nM) on a shaker at 37 °C for 24 – 48 hr. Excess probes were removed by washing larvae four times with preheated, 37°C probe wash buffer, incubating samples on a shaker table at room temperature for 15 min each time. This step was followed by two, 5–10 min SSCT washes on a shaker at room temperature. For the amplification stage, larvae were incubated in room temperature amplification buffer for 30 min. Hairpins (30 pmol) were prepared by heating at 95°C for 90 s, then snap-cooled in the dark at room temperature 30 min. Hairpins were added to amplification buffer. Larvae were incubated in the hairpin solution in the dark at room temperature overnight. Excess hairpins were removed with five SSCT washes on a shaker table at room temperature. The duration of the first two washes were 5 min, followed by two 30-min washes and one 1-min wash. Samples were protected from light during the washes. Larvae were imaged by confocal microscopy using a Leica SP8 microscope equipped with 10X and 25 X objectives. The difference in HCR probe fluorescence profiles between GF and monoassociated larvae was calculated with a two-way ANOVA. To do so, the average probe fluorescence in each segment (30 µm) of the LRE region (300 µm) was compared between the GF and monoassociated conditions. HCR probe sequences are listed in Supplementary file 7. HCR probes were tested and imaged in at least three replicate experiments (data not shown). HCR probe fluorescence was measured in GF and monoassociated larvae in two replicate experiments and multiple larvae as indicated in the figure legend.
 
-## High and low-protein diet feeding
+### High and low-protein diet feeding
 
 Sibling larvae from a cubn heterozygous-mutant cross were conventionally raised from 0–5 dpf. At 6 dpf larvae were housed in 3 L tanks at a density of 10 larvae per tank and raised on our standard circulating aquarium. From 6 – 30 dpf, larvae were fed 10 mg/d of a custom-formulated high (HP) or low-protein (LP) diet daily between 11 am–12 pm. There were three tanks per diet. Diet formulations are described in detail below.
 
-## 16S rRNA gene sequencing
+### 16S rRNA gene sequencing
 
 At 30 dpf, samples were collected for 16S rRNA gene sequencing. Larvae were anesthetized with 0.2 µm-filtered tricaine in autoclaved egg water. After the water was removed, larvae were flash frozen in liquid nitrogen. Tank water samples were collected by passing 50 mL through a 0.2 µm filter (Pall Corporation MicroFunnel Filter Funnels #4803), then flash freezing the filter paper in liquid nitrogen.
 
@@ -231,6 +287,143 @@ Paired-end fastq files were demultiplexed in R (version 4.1.1). The dada2 packag
 
 The following primers were used to genotype the larvae: cubn F: 5’-ACTCTGTTCACCTGCAGTGC-3’, cubn R: 5’-TGACATCCGAGTGGAGTTCCTGCCAAGAC-3’.
 
-## Diet formulations
+### Diet formulations
 
 These diets were custom-formulated at University of Alabama at Birmingham.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Z17-D01</th>
+      <th>Z17-D02</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>High protein</td>
+      <td>Low protein</td>
+    </tr>
+    <tr>
+      <td>Ingredient</td>
+      <td>%</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>Casein - low trace metals</td>
+      <td>30.00</td>
+      <td>15.00</td>
+    </tr>
+    <tr>
+      <td>Fish protein hydrolysate</td>
+      <td>27.00</td>
+      <td>13.50</td>
+    </tr>
+    <tr>
+      <td>Alpha cellulose</td>
+      <td>8.00</td>
+      <td>8.00</td>
+    </tr>
+    <tr>
+      <td>Wheat starch</td>
+      <td>5.09</td>
+      <td>23.00</td>
+    </tr>
+    <tr>
+      <td>Dextrin</td>
+      <td>4.00</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>Safflower oil</td>
+      <td>4.00</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <td>Soy lecithin (refined)</td>
+      <td>4.00</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>Vitamin mix (MP-VDFM)</td>
+      <td>4.00</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>Diatomaceous earth</td>
+      <td>3.20</td>
+      <td>12.29</td>
+    </tr>
+    <tr>
+      <td>Aalginate (TIC algin 400)</td>
+      <td>3.00</td>
+      <td>3.00</td>
+    </tr>
+    <tr>
+      <td>Mineral mix (BTm)</td>
+      <td>3.00</td>
+      <td>3.00</td>
+    </tr>
+    <tr>
+      <td>Menhaden fish oil (ARBP)</td>
+      <td>2.00</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>Potassium phosphate monobasic</td>
+      <td>1.15</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>Canthaxanthin (10%)</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Glucosamine</td>
+      <td>0.25</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Betaine</td>
+      <td>0.15</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Cholesterol</td>
+      <td>0.12</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Ascorbylpalmitate</td>
+      <td>0.04</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>100.00</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <td>Calculated Protein (%)</td>
+      <td>50.10</td>
+      <td>25.05</td>
+    </tr>
+    <tr>
+      <td>Calculated Fat (%)</td>
+      <td>13.12</td>
+      <td>13.12</td>
+    </tr>
+    <tr>
+      <td>Calculated Carbohydrate (%)</td>
+      <td>12.41</td>
+      <td>30.32</td>
+    </tr>
+    <tr>
+      <td>Calculated Energy (cal/g)</td>
+      <td>4567</td>
+      <td>3868</td>
+    </tr>
+  </tbody>
+</table>

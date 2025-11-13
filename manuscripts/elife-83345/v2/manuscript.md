@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/03d1wq758 Maine Medical Center Research Institute, Maine Medical Center Scarborough United States
-2. https://ror.org/011ashp19 West China Hospital of Stomatology, Sichuan University Sichuan China
+1. Maine Medical Center Research Institute, Maine Medical Center Scarborough United States ([ROR:03d1wq758](https://ror.org/03d1wq758))
+2. West China Hospital of Stomatology, Sichuan University Sichuan China ([ROR:011ashp19](https://ror.org/011ashp19))
 3. Division of Bone and Mineral Research, Dept of Oral Medicine, Infection and Immunity, Harvard School of Dental Medicine Boston United States
-4. https://ror.org/002pd6e78 Harvard Medical School, Department of Medicine and Endocrine Unit, Massachusetts General Hospital Boston United States
-5. https://ror.org/05qwgg493 Graduate Medical Sciences, Boston University School of Medicine Boston United States
-6. https://ror.org/02n2ava60 University of New England, College of Osteopathic Medicine Biddeford United States
+4. Harvard Medical School, Department of Medicine and Endocrine Unit, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+5. Graduate Medical Sciences, Boston University School of Medicine Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
+6. University of New England, College of Osteopathic Medicine Biddeford United States ([ROR:02n2ava60](https://ror.org/02n2ava60))
 
 † Corresponding author
 
 ## Abstract
 
-Conditional deletion of the PTH1R in mesenchymal progenitors reduces osteoblast differentiation, enhances marrow adipogenesis, and increases zinc finger protein 467 ( Zfp467 ) expression. In contrast, genetic loss of Zfp467 increased Pth1r expression and shifts mesenchymal progenitor cell fate toward osteogenesis and higher bone mass. PTH1R and ZFP467 could constitute a feedback loop that facilitates PTH-induced osteogenesis and that conditional deletion of Zfp467 in osteogenic precursors would lead to high bone mass in mice. Prrx1Cre; Zfp467 but not fl/fl AdipoqCre; Zfp467 mice exhibit high bone mass and greater osteogenic differentiation similar to the fl/fl Zfp467 -/- mice. qPCR results revealed that PTH suppressed Zfp467 expression primarily via the cyclic AMP/PKA pathway. Not surprisingly, PKA activation inhibited the expression of Zfp467 and gene silencing of Pth1r caused an increase in Zfp467 mRNA transcription. Dual fluorescence reporter assays and confocal immunofluorescence demonstrated that genetic deletion of Zfp467 resulted in higher nuclear translocation of NFκB1 that binds to the P2 promoter of the Pth1r and increased its transcription. As expected, Zfp467 -/- cells had enhanced production of cyclic AMP and increased glycolysis in response to exogenous PTH. Additionally, the osteogenic response to PTH was also enhanced in Zfp467 -/- COBs, and the pro-osteogenic effect of Zfp467 deletion was blocked by gene silencing of Pth1r or a PKA inhibitor. In conclusion, our findings suggest that loss or PTH1R-mediated repression of Zfp467 results in a pathway that increases Pth1r transcription via NFκB1 and thus cellular responsiveness to PTH/PTHrP, ultimately leading to enhanced bone formation.
+Conditional deletion of the PTH1R in mesenchymal progenitors reduces osteoblast differentiation, enhances marrow adipogenesis, and increases zinc finger protein 467 (Zfp467) expression. In contrast, genetic loss of Zfp467 increased Pth1r expression and shifts mesenchymal progenitor cell fate toward osteogenesis and higher bone mass. PTH1R and ZFP467 could constitute a feedback loop that facilitates PTH-induced osteogenesis and that conditional deletion of Zfp467 in osteogenic precursors would lead to high bone mass in mice. Prrx1Cre; Zfp467fl/fl but not AdipoqCre; Zfp467fl/fl mice exhibit high bone mass and greater osteogenic differentiation similar to the Zfp467-/- mice. qPCR results revealed that PTH suppressed Zfp467 expression primarily via the cyclic AMP/PKA pathway. Not surprisingly, PKA activation inhibited the expression of Zfp467 and gene silencing of Pth1r caused an increase in Zfp467 mRNA transcription. Dual fluorescence reporter assays and confocal immunofluorescence demonstrated that genetic deletion of Zfp467 resulted in higher nuclear translocation of NFκB1 that binds to the P2 promoter of the Pth1r and increased its transcription. As expected, Zfp467-/- cells had enhanced production of cyclic AMP and increased glycolysis in response to exogenous PTH. Additionally, the osteogenic response to PTH was also enhanced in Zfp467-/- COBs, and the pro-osteogenic effect of Zfp467 deletion was blocked by gene silencing of Pth1r or a PKA inhibitor. In conclusion, our findings suggest that loss or PTH1R-mediated repression of Zfp467 results in a pathway that increases Pth1r transcription via NFκB1 and thus cellular responsiveness to PTH/PTHrP, ultimately leading to enhanced bone formation.
 
 ## Introduction
 
@@ -37,43 +37,231 @@ Intermittent PTH treatment increases bone formation both by enhancing the number
 
 Previous study showed that global deletion of Zfp467 increased trabecular bone volume and cortical bone thickness, compared to wild-type mice at the age of 16 weeks (Le et al., 2021). And histomorphometry results showed higher structural and dynamic formation parameters in Zfp467-/- mice vs. Zfp467+/+ (Le et al., 2021). To assess whether the effect on bone mass seen in the Zfp467 global knockout (KO) mice was cell-autonomous to mesenchymal cells, we generated mice with deletion of Zfp467 in the limb MSCs by crossing Zfp467fl/fl mice with the Prrx1Cre mice or AdipoqCre mice (Figure 1—figure supplement 1).
 
-## Similar to the global Zfp467 null mice, Prrx1Cre Zfp467 mice have increased trabecular bone mass
+### Similar to the global Zfp467 null mice, Prrx1Cre Zfp467 mice have increased trabecular bone mass
 
 Body mass and body size were not significantly different between Prrx1Cre; Zfp467fl/fl and control littermates in both males and females (data not shown). Micro-computed tomography (μCT) analysis showed that Prrx1Cre; Zfp467fl/fl mice had higher trabecular bone volume fraction (Tb.BV/TV), greater connectivity density (Conn.D), and higher trabecular number (Tb.N) with a significant decrease in structural model index (SMI) and trabecular separation (Tb.Sp) in both males and females (Figure 1), indicating an increase in trabecular bone mass. Cortical thickness was increased, although not significantly in males and marginally decreased in females at this age. In contrast, tibial adipose tissue volume fraction in the marrow was significantly decreased in males (Figure 1B), and showed a similar non-significant trend in females (Figure 1D). Although the time point of examination differed (12 weeks here instead of 16 weeks in the global KO; Le et al., 2021), these results show that, overall, Prrx1Cre; Zfp467fl/fl mice showed a similar bone phenotype to the global Zfp467 KO mice. It is therefore conceivable that progenitor fate was indeed altered in the global Zfp467 KO mice, resulting in significant beneficial skeletal changes.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Male and (C, D) female 12-week-old Prrx1Cre; Zfp467fl/fl mice and control mice were measured using trabecular and cortical bone of tibiae. Marrow adipose tissue volume (Ad.V) was quantified by osmium tetroxide staining and micro-computed tomography (μCT). Data shown as mean ± SD by unpaired Student’s t test, n=5–8 per group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Exons 2–4 was selected as conditional knockout region. The targeting vector was generated by PCR using BAC clone RP24-144J8 and RP23-24K23 from the C57BL/6J library as template.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Male and (B) female 12-week-old mice and control Zfp467fl/fl; AdipoqCre mice were measured using trabecular and cortical bone of tibiae. Data shown as mean ± SD by unpaired Student’s t test, n=7–10 per group.
+
 To assess the cellular activities that contributed to increased bone mass in male Prrx1Cre;Zfp467fl/fl mice, static and dynamic histomorphometry was performed. Consistent with µCT, histomorphometric analysis showed that although the changes in BV/TV were not significant, the overall trend was clearly toward an increase, and Tb.N (p=0.0271) and number of osteoblasts/total area (N.Ob/T.Ar, p=0.0105) were markedly increased in Prrx1Cre;Zfp467fl/fl male mice compared to Zfp467fl/fl control (Table 1), confirming an increase in osteogenesis and bone mass. However, in contrast to global Zfp467 KO mice, the increased trabecular bone was observed in male Prrx1Cre;Zfp467fl/fl mice only, whereas no significant changes in the bone phenotype were found in female mice between groups.
 
-## AdipoqCre Zfp467 mice have similar cortical and trabecular bone mass to controls
+**Table 1.**
+ Quantification of structural and cellular parameters in the left tibiae of 12-week-old Prrx1Cre;Zfp467fl/fl and control Zfp467fl/fl mice by histomorphometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Male</th>
+      <th colspan="3">Female</th>
+    </tr>
+    <tr>
+      <th>Zfp467fl/fl</th>
+      <th>Prrx1Cre; Zfp467fl/fl</th>
+      <th>p-Value</th>
+      <th>Zfp467fl/fl</th>
+      <th>Prrx1Cre; Zfp467fl/fl</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BV/TV (%)</td>
+      <td>9.1482±2.6523</td>
+      <td>12.570±2.9694</td>
+      <td>0.06</td>
+      <td>7.4561±1.9473</td>
+      <td>8.1315±3.8504</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>Tb.Th (μm)</td>
+      <td>35.961±3.7772</td>
+      <td>37.700±5.8760</td>
+      <td>0.63</td>
+      <td>35.384±2.5611</td>
+      <td>34.748±6.5862</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td>Tb.Sp (μm)</td>
+      <td>396.80±168.61</td>
+      <td>274.83±62.817</td>
+      <td>0.13</td>
+      <td>484.18±119.44</td>
+      <td>501.35±288.61</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Tb.N (n/μm)</td>
+      <td>2.5294±0.6037</td>
+      <td>3.3260±0.4942</td>
+      <td>0.03</td>
+      <td>2.0813±0.4175</td>
+      <td>2.3440±1.1650</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>OS/BS (%)</td>
+      <td>21.767±11.722</td>
+      <td>31.987±12.704</td>
+      <td>0.16</td>
+      <td>14.244±5.1159</td>
+      <td>8.8012±4.2810</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>O.Th (μm)</td>
+      <td>2.0084±0.4411</td>
+      <td>4.8227±3.4306</td>
+      <td>0.07</td>
+      <td>3.1650±0.4587</td>
+      <td>3.4638±1.2793</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>Ob.S/BS (%)</td>
+      <td>16.672±7.6973</td>
+      <td>25.817±8.5871</td>
+      <td>0.07</td>
+      <td>21.776±6.8886</td>
+      <td>18.210±8.0428</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>N.Ob/B.Pm (n/mm)</td>
+      <td>12.333±5.4003</td>
+      <td>19.082±5.6469</td>
+      <td>0.05</td>
+      <td>17.250±5.1870</td>
+      <td>14.051±4.7140</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Oc.S/BS (%)</td>
+      <td>10.601±3.6508</td>
+      <td>12.975±4.2334</td>
+      <td>0.31</td>
+      <td>18.439±4.7740</td>
+      <td>19.192±6.7888</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>N.Oc/B.Pm (n/mm)</td>
+      <td>5.3885±1.9701</td>
+      <td>6.3505±2.1171</td>
+      <td>0.42</td>
+      <td>8.7722±2.1935</td>
+      <td>9.6039±3.4546</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>MS/BS (%)</td>
+      <td>45.655±3.5366</td>
+      <td>43.990±4.3419</td>
+      <td>0.47</td>
+      <td>45.333±5.4009</td>
+      <td>44.027±1.8733</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>MAR (μm/day)</td>
+      <td>1.2265±0.2238</td>
+      <td>1.1889±0.1266</td>
+      <td>0.71</td>
+      <td>1.8148±0.1294</td>
+      <td>1.6824±0.4816</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>BFR/BS (μm3/μm3/day)</td>
+      <td>0.5634±0.1373</td>
+      <td>0.5220±0.0648</td>
+      <td>0.49</td>
+      <td>0.8207±0.0933</td>
+      <td>0.7457±0.2292</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>BFR/BV (%/day)</td>
+      <td>3.2079±1.2339</td>
+      <td>2.6756±0.5373</td>
+      <td>0.32</td>
+      <td>4.6232±0.4123</td>
+      <td>4.5078±1.7235</td>
+      <td>0.85</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are means ± SD (n=6–7). BV/TV, bone volume/total volume; Tb.Th, trabecular thickness; Tb.Sp, trabecular separation; Tb.N, trabecular number; OS/BS, osteoid surface/bone surface; O.Th, osteoid thickness; Ob.S/BS, osteoblast surface/bone surface; N.Ob/B.Pm, osteoblast number/bone perimeter; Oc.S/BS, osteoclast surface/bone surface; N.Oc/BS, osteoclast number/ bone surface; N.Oc/B.Pm, osteoclast number/bone perimeter; MS/BS, mineralizing surface/ bone surface; MAR, mineral apposition ratio; BFR/BS, bone formation ratio/ one surface; BFR/BV, bone formation rate/bone surface._
+
+### AdipoqCre Zfp467 mice have similar cortical and trabecular bone mass to controls
 
 In order to determine the whole-body phenotype of the conditional knockout (cKO) of Zfp467 mice. AdipoqCre Zfp467fl/fl; mice have similar body weight, fat mass, lean mass, and femoral areal BMD at 12 weeks compared to control mice in both males and females (data not shown). µCT was performed and analyzed in the metaphysis and cortical bone at the tibial mid-diaphysis in 12-week-old AdipoqCre Zfp467fl/fl; mice and control mice. Not surprisingly, no significant difference was found regarding Tb.BV/TV, Conn.D, Tb.N, trabecular thickness (Tb.Th), Tb.Sp, and SMI (Figure 1—figure supplement 2A,B) between controls and AdipoqCre mice. In addition, no differences in cortical bone measurements including total area (Tt. Ar), cortical area/total area (Ct.Ar/Tt.Ar), cortical thickness (Ct.Th), marrow area (Ma.Ar), cortical porosity (Ct. Porosity), and cortical tissue mineral density (Ct.TMD) was observed between groups (Figure 1—figure supplement 2A,B).
 
-## PTH suppressed the expression levels of Zfp467 via the PKA pathway
+### PTH suppressed the expression levels of Zfp467 via the PKA pathway
 
 To understand the mechanisms that underly the impact of mesenchymal deletion of Zfp467, the signaling pathway of PTH relative to Zfp467 in osteoblasts was examined by qPCR. Consistent with a previous study which showed that short-term PTH treatment suppressed the expression of Zfp467 (Quach et al., 2011), treating cells with 100 nM PTH for 10 min could significantly suppress Zfp467 expression in both COBs (Figure 2A) and bone marrow stromal cells (BMSCs) (Figure 2B). When pretreating COBs and BMSCs with PKA and PKC inhibitors (10 µM H89 and 5 µM Go6983, Selleck Chemicals, Houston, TX), respectively, for 2 hr prior to 10 min of 100 nM PTH treatment, significant rescue of Zfp467 suppression was seen in H89 group, but Go6983 had no effect (Figure 2C and D). Forskolin, a selective PKA pathway activator, was also found to significantly inhibit the expression level of Zfp467 in COBs (Figure 2E) and BMSCs (Figure 2F). Moreover, consistent with previous study that Prrx1Cre; Pth1rfl/fl mice showed higher expression level of Zfp467 in bone marrow, silenced Pth1r with siRNA in both COBs and BMSC, and found Pth1r knockdown significantly upregulated the expression level of Zfp467 (Figure 2G and H). These data suggested that PTH1R activation could downregulate Zfp467 expression via the PKA pathway, and that ZFP467 could be one of the important downstream targets of PTH signaling.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig2-v2.jpg)
 
-**Figure 2.:** Zfp467 via the PKA pathway.(A) PTH treatments significantly suppressed Zfp467 expression within 10 min of treatment in Zfp467+/+ calvarial osteoblasts (COBs). Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. (B) PTH treatments significantly suppressed Zfp467 expression within 10 min of treatment in Zfp467+/+ bone marrow stromal cells (BMSCs). Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. (C) qPCR results· of Zfp467 in COBs with 2 hr PKA or PKC inhibitor treatment prior to 10 min of 100 nM PTH exposure, PKA but not PKC inhibitor was able to rescue the suppression of +/+Zfp467 induced by PTH. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. (D) qPCR results of Zfp467 in BMSCs with 2 hr PKA or PKC inhibitor treatment prior to 10 min of 100 nM PTH exposure. PKA but not PKC inhibitor was able to rescue the suppression of +/+Zfp467 induced by PTH. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. Forskolin significantly suppressed Zfp467 expression within 1 hr of treatment in Zfp467+/+ COBs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (F) Forskolin significantly suppressed Zfp467 expression after 6 hr of treatment in Zfp467+/+ BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (G) Pth1r-siRNA treatment in Zfp467+/+ COBs led to an increase of Zfp467 expression in Zfp467+/+ COBs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (H) Pth1r-siRNA treatment in Zfp467+/+ COBs led to an increase of Zfp467 expression in Zfp467+/+ BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. NC, negative control.
+**Figure 2.:** (A) PTH treatments significantly suppressed Zfp467 expression within 10 min of treatment in Zfp467+/+ calvarial osteoblasts (COBs). Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. (B) PTH treatments significantly suppressed Zfp467 expression within 10 min of treatment in Zfp467+/+ bone marrow stromal cells (BMSCs). Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. (C) qPCR results· of Zfp467+/+ in COBs with 2 hr PKA or PKC inhibitor treatment prior to 10 min of 100 nM PTH exposure, PKA but not PKC inhibitor was able to rescue the suppression of Zfp467 induced by PTH. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. (D) qPCR results of Zfp467+/+ in BMSCs with 2 hr PKA or PKC inhibitor treatment prior to 10 min of 100 nM PTH exposure. PKA but not PKC inhibitor was able to rescue the suppression of Zfp467 induced by PTH. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. Forskolin significantly suppressed Zfp467 expression within 1 hr of treatment in Zfp467+/+ COBs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (F) Forskolin significantly suppressed Zfp467 expression after 6 hr of treatment in Zfp467+/+ BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (G) Pth1r-siRNA treatment in Zfp467+/+ COBs led to an increase of Zfp467 expression in Zfp467+/+ COBs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (H) Pth1r-siRNA treatment in Zfp467+/+ COBs led to an increase of Zfp467 expression in Zfp467+/+ BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. NC, negative control.
 
-## Zfp467-/- cells have greater Pth1r transcriptional levels driven by both the P1 and P2 promoter
+### Zfp467-/- cells have greater Pth1r transcriptional levels driven by both the P1 and P2 promoter
 
 Our previous study showed that the global absence of Zfp467 resulted in a significant increase in trabecular bone volume, a marked reduction in peripheral and marrow adipose tissue, and an ~40% increase in Pth1r gene expression in bone from the Zfp467-/- mice compared to littermate controls (Le et al., 2021). These data suggested the possibility of a positive feedback loop whereby the suppression of Zfp467 mediated by PTH leads to an increase of PTH1R. Consistent with this tenet, higher gene and protein expression level of PTH1R was found in Zfp467-/- COBs and BMSCs (Figure 3A and B). Three transcripts of Pth1r (NM_011199.2, NM_001083935.1, and NM_001083936.1) with different transcription starting sites (TSS) were reported based on NCBI database and UCSC Genome Browser on Mouse (Figure 3C). The three transcripts shared the same coding sequence and the only difference was located at the 5’ untranslated region. Based on the different 5’ untranslated regions, related primers were designed; by qPCR both the Pth1r-T1 and Pth1r-T2 transcripts were upregulated in Zfp467-/- cells (Figure 3D). However, the expression level of Pth1r-T2 was much higher than Pth1r-T1. Pth1r-T1 and Pth1r-T2 transcripts were driven by P1 and P2 promoters, respectively. As P1 is much longer than P2 and hadn’t been investigated before, a P1 promoter-driven dual-fluorescence reporter with four different length P1 promoters were designed to assess any change in the promoter activity of P1 in both COBs and BMSCs in the absence of 467 (Figure 3C). The 1.6 and 2.1 kb promoter-driven reporters are higher in activated Zfp46 -/- cells compared to Zfp467+/+ cells (Figure 3E), which indicated the binding site of Pth1r P1 promoter in Zfp467 -/- cells is between 0.6 and 1.1 kb ahead of P1 TSS.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig3-v2.jpg)
 
-**Figure 3.:** Zfp467-/- cells have greater Pth1r transcriptional levels driven by both the P1 and P2 promoter.(A) qPCR results of baseline calvarial osteoblasts (COBs) and bone marrow stromal cells (BMSCs). Higher expression level of Pth1r was found in both Zfp467-/- COBs and BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=5–7 independent experiments for each group. (B) Western blot analysis of baseline COBs and BMSCs. Higher expression level of PTH1R was found in both Zfp467-/- COBs and BMSCs. (C) A schematic of three different Pth1r transcripts and P1 promoter of Pth1r. Four different length P1 promoter constructs were designed and inserted into dual-fluorescence reporter vector. (D) qPCR results of three Pth1r transcripts and total Pth1r. Total Pth1r and Pth1r-T1, T2 but not Pth1r-T3 were upregulated in both Zfp467-/- COBs and BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (E) Dual-fluorescence assay using indicated four P1 reporter constructs. The 1.6 and 2.1 kb constructs-driven reporter is higher activated in Zfp467-/- cells compared to Zfp467+/+ cells. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (F) A schematic of P1 and P2 promoter constructs of Pth1r. (G) Dual-fluorescence assay using indicated P1 and P2 reporter constructs. Both P1 and P2-2 were found significantly higher activated in Zfp467-/- cells. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. NC, negative control, TSS, transcription starting site.Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3B PTH1R in calvarial osteoblasts (COBs).Figure 3—source data 3.Figure 3B ACTIN in calvarial osteoblasts (COBs).Figure 3—source data 4.Figure 3B PTH1R in bone marrow stromal cells (BMSCs).Figure 3—source data 5.Figure 3B ACTIN in bone marrow stromal cells (BMSCs).
+**Figure 3.:** (A) qPCR results of baseline calvarial osteoblasts (COBs) and bone marrow stromal cells (BMSCs). Higher expression level of Pth1r was found in both Zfp467-/- COBs and BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=5–7 independent experiments for each group. (B) Western blot analysis of baseline COBs and BMSCs. Higher expression level of PTH1R was found in both Zfp467-/- COBs and BMSCs. (C) A schematic of three different Pth1r transcripts and P1 promoter of Pth1r. Four different length P1 promoter constructs were designed and inserted into dual-fluorescence reporter vector. (D) qPCR results of three Pth1r transcripts and total Pth1r. Total Pth1r and Pth1r-T1, T2 but not Pth1r-T3 were upregulated in both Zfp467-/- COBs and BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (E) Dual-fluorescence assay using indicated four P1 reporter constructs. The 1.6 and 2.1 kb constructs-driven reporter is higher activated in Zfp467-/- cells compared to Zfp467+/+ cells. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (F) A schematic of P1 and P2 promoter constructs of Pth1r. (G) Dual-fluorescence assay using indicated P1 and P2 reporter constructs. Both P1 and P2-2 were found significantly higher activated in Zfp467-/- cells. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. NC, negative control, TSS, transcription starting site.
 
 Combined with the previously reported two potential transcription factor binding sites of P2 (Tohmonda et al., 2013), three P1- and P2-driven dual-fluorescence reporters were constructed (Figure 3F). Both P1 and P2 were activated in Zfp467-/- cells, but P2 showed much higher activity in BMSCs and COBs. P2-2 was also much more active in Zfp467-/- cells than Zfp467+/+ cells. P2-2 was therefore chosen for transcription factor prediction via JASPAR, Animal TFDB and PROMO databases; six transcription factors predicted by all three databases were noted, including CREB, EBF1, MYOD, cFOS, NFκB1, and GATA1.
 
-## Zfp467-/- cells have higher NFκB1 and GATA1 nuclear translocation
+### Zfp467-/- cells have higher NFκB1 and GATA1 nuclear translocation
 
 Using qPCR, no differences in the transcriptional levels of these transcription factors was observed (Figure 4—figure supplement 1). Therefore, those potential transcription factors that could bind to cryptic sites in the Pth1r P2-2 promoter in a pre-osteoblast cell line MC3T3-E1 were overexpressed subsequently. Only GATA1 and NFκB1 overexpression could significantly upregulate the expression level of Pth1r, especially Pth1r-T1 and -T2 (Figure 4A). Nuclear translocation level of NFκB1 and GATA1 were further detected using immunofluorescence, nuclear protein isolation, and western blot. NFκB1 and GATA1 were almost evenly distributed in the cytoplasm and nucleus of Zfp467+/+ cells but underwent partial translocation to the nucleus in Zfp467-/- cells (Figure 4B). Zfp467-/- cells also showed much higher nuclear protein level of both NFκB1 and GATA1 (Figure 4C and D).
 
-## An NFκB1-RelB heterodimer may drive greater Pth1r transcription in Zfp467-/- cells
+![Figure 4.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig4-v2.jpg)
+
+**Figure 4.:** (A) qPCR results of overexpression of Ebf1, Myod, Myog, Gata1, and NFκB1 in MC3T3-E1 cell line. GATA1 and NFκB1 overexpression could significantly upregulate the expression level of Pth1r. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (B) Representative confocal images of GATA1 and NFκB1 immunofluorescence in Zfp467+/+ and Zfp467-/- bone marrow stromal cells (BMSCs) and related quantification. (C) Nuclear protein level of GATA1 and NFκB1 in Zfp467+/+ and Zfp467-/- BMSCs. (D) Quantification analysis for nuclear protein level of GATA1 and NFκB1 in Zfp467+/+ and Zfp467-/- BMSCs. Data shown as mean ± SD, n=3 independent experiments for each group. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group.
+
+### An NFκB1-RelB heterodimer may drive greater Pth1r transcription in Zfp467-/- cells
 
 In order to confirm whether NFκB1 or GATA1 could activate the specific P1 or P2-2 Pth1r promoter, P1 and P2-2 dual-luciferase reporter and Gata1, Nfkb1 overexpression plasmids were co-transfected in MC3T3-E1 cells. Only the Nkfb1 overexpression group was able to significantly activate the P2-2 promoter (Figure 5A). Chromatin immunoprecipitation (ChIP) results showed that the DNA was properly sheared and IP was successfully conducted (Figure 5B). ChIP-qPCR results showed that the first two parts of P2 were properly enriched in our IP product (>0.5%) (Figure 5—figure supplement 1A), and the first part of P2 was approximately 20-fold more highly enriched in our NFκB1 IP product than IgG (Figure 5C, Figure 5—figure supplement 1B); this indicated that NFκB1 binds to the P2 promoter, especially at the first 200 bp site. Subsequently, COBs and BMSCs were treated with Nfkb1 siRNA and showed that Nfkb1 knockdown could significantly inhibit the expression of Pth1r in both Zfp467+/+ and Zfp467-/- COBs and BMSCs. Importantly, Nfkb1 knockdown in Zfp467-/- cells reverts the levels of Pth1r to the levels seen in Zfp467+/+ cells (Figure 5D–G).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig5-v2.jpg)
+
+**Figure 5.:** (A) Reporter assays using the indicated P1 or P2 reporter construct and an expression vector bearing Gata1, Nfkb1, or a control empty vector. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. (B) Immunoblot assay using a control rabbit IgG antibody (IgG) or the anti-NFκB1 antibody during chromatin immunoprecipitation assay. (C) DNA enrichment of Pth1r P2 promoter, ratio between NFκB1 and IgG IP products, first part and last two parts of P2 were significantly enriched by NFκB1 antibody. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (D, E) qPCR results of the expression levels of Nfkb1 and Pth1r in Nfkb1 siRNA-treated Zfp46 +/+ and Zfp467-/- calvarial osteoblasts (COBs) and bone marrow stromal cells (BMSCs). Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (F) Western blot analysis of Nfkb1 and Pth1r in Nfkb1 siRNA-treated Zfp467 +/+ and Zfp467-/- COBs and BMSCs. (G) Quantification for PTH1R protein level. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. NC, negative control.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) DNA enrichment of Pth1r P2 promoter, ratio between IP and input, first two parts of P2 were enriched using NFκB1 antibody. Data shown as mean ± SD by unpaired Student’s t test, n=3 replicates for each group. (B) RT-PCR product of chromatin immunoprecipitation assay using the nuclear extracts from MC3T3-E1 cells.
+
 In order to determine whether NFκB1 could bind to the Pth1r P2-2 promoter directly, DNA pulldown assay was performed using biotin-labeled Pth1r P2 promoter as a probe. As shown in Figure 6A, the biotin-Pth1rP2 group showed a specific band in both MC3T3-E1 nuclear extracts and purified NFκB1 protein, suggesting a direct physical interaction between NFκB1 and Pth1r P2 promoter. However, noticed that NFκB1 does not have a transcriptional activation domain, NFκB1 must heterodimerize with other transcription factors in order to increase gene transcription. Using String database and checking published studies, eight candidates that might heterodimerize with NFκB1 to regulate gene transcription were obtained: NFYC, NPAS1, Rel, AKAP8, RelA, RelB, ANKRD42, and HDAC1. Using siRNA to knock down all these potential NFκB1 partners (Figure 6B), the upregulated Pth1r induced by Nfkb1 overexpression could only be dampened by Npas1 and Relb siRNA (Figure 6C). Further co-immunoprecipitation (co-IP) results confirmed that NFκB1 could heterodimerize with RelB only (Figure 6D), which suggested that NFκB1-Relb heterodimers may drive greater Pth1r transcription in Zfp467-/- cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig6-v2.jpg)
+
+**Figure 6.:** (A) DNA pulldown assay with biotin-labeled Pth1r P2. MC3T3-E1 nuclear extracts or NFκB1 recombinant protein was probed with biotin-Pth1rP2 and then subjected to immunoblotting using NFκB1 antibody. (B) qPCR results of the expression levels of Nfyc, Npas1, Rel, Akap8, Rela, Ankrd42, Relb, and Hdac1 in related siRNA-treated MC3T3-E1 cells. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group. NC, negative control. (C) qPCR results of the expression levels of Pth1r in Nfkb1 overexpression plasmid and Nfyc, Npas1, Rel, Akap8, Rela, Ankrd42, Relb, or Hdac1 siRNA co-transfected MC3T3-E1 cells. NC, negative control. (D) IP results using NFκB1 antibody in MC3T3-E1 protein extracts, IgG was used as a negative control. (E) Protein level of p-p105 and p50 in Zfp467 knockdown MC3T3-E1 cells. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (F) Protein and mRNA level of NFκB-inducing kinase (NIK) in control and Zfp467 siRNA-treated MC3T3-E1 cells. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (G) Protein level of p-IKKa and p-p100 and mRNA level of Ikka in control and Zfp467 siRNA-treated MC3T3-E1 cells. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group.
 
 Given that post-translational regulation is essential for NF-κB activity, whether more proximal events in the NF-κB signaling cascade are impacted in Zfp467-deficient cells were also determined. p50, p105, and p105 phosphorylation was measured in Zfp467 siRNA-treated MC3T3-E1 cells; no significant difference between groups was observed (Figure 6E). Therefore, ZFP467 may have no effect on p105 proteasomal processing and p50 production.
 
@@ -81,41 +269,49 @@ In the non-canonical NFκB pathway, NFκB-inducing kinase (NIK) is constitutivel
 
 In order to investigate whether there was a stimulus between Zfp467 and non-canonical NFκB pathway, the expression level of a few classic non-canonical NFκB pathway stimuli and related receptors in Zfp467 siRNA-treated MC3T3-E1 cells were detected; we found Rankl, Ltb, and Baff was much higher in Zfp467 siRNA-treated MC3T3-E1 cells than control cells (Figure 6—figure supplement 1).
 
-## Zfp467-/- cells have increased PTH signaling and higher extracellular acidification rates
+### Zfp467-/- cells have increased PTH signaling and higher extracellular acidification rates
 
 As the PKA pathway is considered to be one of the major downstream pathways of the PTH signaling network, it would be important to know whether Zfp467 -/- cells have higher PKA activation levels due to the higher expression of PTH1R. PTH increased cAMP within 10 min,measured by ELISA in Zfp467+/+ COBs, and Zfp467-/- cells had a higher levels of cAMP expression than Zfp467+/+ cells (p=0.0007 for vehicle, p<0.0001 for 50 nM, p=0.0008 for 100 nM). In addition, Zfp467-/- BMSCs also had significantly higher levels of intracellular cAMP after 10–60 min exposure of PTH (p<0.0001 for 10 min-100 nM, p=0.0341 for 30 min-100 nM, p<0.0001 for 60 min-100 nM) (Figure 7A and B). Importantly, Zfp467-/- COBs and BMSCs showed a greater magnitude of increase of cAMP after PTH treatment (p=0.0053 for interaction in COBs, p=0.0010 for interaction in BMSCs), which resulted from higher PTH1R in Zfp467-/- cells. Additionally, as CREB was one of the major downstream targets of PKA, higher p-CREB in Zfp467-/-COBs and BMSCs was observed whereas the total protein level of CREB showed no difference (Figure 7C and D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig7-v2.jpg)
 
-**Figure 7.:** Zfp467-/- cells have increased parathyroid hormone (PTH) signaling and higher extracellular acidification rates.(A) Cyclin adenosine monophosphate (cAMP) ELISA of undifferentiated calvarial osteoblasts (COBs), from 10 to 60 min with 100 nM PTH treatment, PTH increased cAMP expression within 10 min of treatment, and Zfp467-/- cells have higher level of cAMP than Zfp467+/+. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group; *, p<0.01, **, p<0.001. (B) cAMP ELISA of undifferentiated bone marrow stromal cells (BMSCs), from 10 to 60 min with 100 nM PTH treatment, Zfp467-/- BMSCs had significantly higher level of intracellular cAMP after 10–60 min exposure of PTH. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group; *, p<0.01, **, p<0.001. (C, D) Western blot and quantitative analysis of pre-differentiated COBs and BMSCs. Higher expression levels of p-CREB but not total CREB was found in both Zfp467-/- COBs and BMSC. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (E, F) Oxygen consumption rates (OCR) and extracellular acidification rates (ECAR) of undifferentiated Zfp467+/+ and Zfp467-/- COBs or BMSCs. No difference was found regarding OCR between genotypes, but Zfp467-/- BMSCs had higher ECAR than Zfp467+/+ BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=12 technical replicates. *, p<0.01, **, p<0.001. (G, H) OCR and ECAR of Zfp467+/+ and Zfp467-/- COBs or BMSCs after 3 days’ osteogenic differentiation. No difference was found regarding OCR between genotypes, but both Zfp467-/- COBs and BMSCs cells had significantly higher ECAR level than Zfp467+/+ cells. Data shown as mean ± SD by unpaired Student’s t test, n=12 technical replicates. *, p<0.01, **, p<0.001.Figure 7—source data 1.Figure 7C.Figure 7—source data 2.Figure 7C p-CREB in calvarial osteoblasts (COBs).Figure 7—source data 3.Figure 7C CREB in calvarial osteoblasts (COBs).Figure 7—source data 4.Figure 7C ACTIN in calvarial osteoblasts (COBs).Figure 7—source data 5.Figure 7C p-CREB in bone marrow stromal cells (BMSCs).Figure 7—source data 6.Figure 7C CREB in bone marrow stromal cells (BMSCs).Figure 7—source data 7.Figure 7C ACTIN in bone marrow stromal cells (BMSCs).
+**Figure 7.:** (A) Cyclin adenosine monophosphate (cAMP) ELISA of undifferentiated calvarial osteoblasts (COBs), from 10 to 60 min with 100 nM PTH treatment, PTH increased cAMP expression within 10 min of treatment, and Zfp467-/- cells have higher level of cAMP than Zfp467+/+. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group; *, p<0.01, **, p<0.001. (B) cAMP ELISA of undifferentiated bone marrow stromal cells (BMSCs), from 10 to 60 min with 100 nM PTH treatment, Zfp467-/- BMSCs had significantly higher level of intracellular cAMP after 10–60 min exposure of PTH. Data shown as mean ± SD by one-way ANOVA, n=3 independent experiments for each group; *, p<0.01, **, p<0.001. (C, D) Western blot and quantitative analysis of pre-differentiated COBs and BMSCs. Higher expression levels of p-CREB but not total CREB was found in both Zfp467-/- COBs and BMSC. Data shown as mean ± SD by unpaired Student’s t test, n=3 independent experiments for each group. (E, F) Oxygen consumption rates (OCR) and extracellular acidification rates (ECAR) of undifferentiated Zfp467+/+ and Zfp467-/- COBs or BMSCs. No difference was found regarding OCR between genotypes, but Zfp467-/- BMSCs had higher ECAR than Zfp467+/+ BMSCs. Data shown as mean ± SD by unpaired Student’s t test, n=12 technical replicates. *, p<0.01, **, p<0.001. (G, H) OCR and ECAR of Zfp467+/+ and Zfp467-/- COBs or BMSCs after 3 days’ osteogenic differentiation. No difference was found regarding OCR between genotypes, but both Zfp467-/- COBs and BMSCs cells had significantly higher ECAR level than Zfp467+/+ cells. Data shown as mean ± SD by unpaired Student’s t test, n=12 technical replicates. *, p<0.01, **, p<0.001.
 
 In a previous study, PTH was shown to enhance aerobic glycolysis, which is a major source of ATP for osteoblast differentiation (Esen et al., 2015). The oxygen consumption and extracellular acidification in both COBs and BMSCs was measured pre-osteogenic differentiation and 3 days after osteogenic differentiation. Cellular respiration measurements showed that Zfp467-/- pre-differentiated COBs had significantly increased extracellular acidification rates (ECAR), but no difference was found for pre-differentiated BMSCs in respect to either ECAR or oxygen consumption rate (OCR) (Figure 7E and F). However, both Zfp467-/- COBs and BMSCs cells had significantly higher ECAR levels after 3 days of osteogenic differentiation, although no difference was found regarding OCR between genotypes (Figure 7G and H). These data suggest that Zfp467-/- COBs or BMSCs may have higher glycolysis as a result of higher PTH1R expression.
 
-## Zfp467-/- cells showed increased sensitivity to PTH and enhanced pro-osteogenic as well as anti-adipogenic effects
+### Zfp467-/- cells showed increased sensitivity to PTH and enhanced pro-osteogenic as well as anti-adipogenic effects
 
 To determine the sensitivity of Zfp467-/- cells to PTH, COBs were treated with osteogenic differentiation media and PTH for 7 or 14 days simultaneously. A dose response to PTH led to a significant increase in alkaline phosphatase (ALP) staining in Zfp467-/- COBs, and in Zfp467+/+ cells. Furthermore, 100 nM PTH in Zfp467-/- cells produced remarkably higher positive-stained cells than vehicle group (p=0.0001) while there was no statistical significance seen among Zfp467+/+ groups (p=0.6536) (Figure 8A and B). Importantly, Zfp467-/- COBs showed a more significant response to PTH regarding ALP and alizarin red staining (p=0.0201 for ALP, p=0.0210 for ARS) (Figure 8B). ARS showed a parallel trend as ALP staining; an increase in PTH dose resulted in an increase in mineralization for Zfp467 -/- COBs only (Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig8-v2.jpg)
 
-**Figure 8.:** Zfp467-/-cells showed increased sensitivity to parathyroid hormone (PTH) and enhanced pro-osteogenic as well as anti-adipogenic effects.(A) Representative images of alkaline phosphatase (ALP) (day 7) and alizarin red staining (ARS) (day 14) of differentiated calvarial osteoblasts (COBs) with PTH treatment. An increase in PTH dose led to an increase in ALP staining and mineralization in both Zfp467+/+ and Zfp467-/- COBs. Zfp467-/- COBs showed more ALP-positive cells and mineralization than Zfp467+/+ COBs. (B) ALP stain and ARS quantification in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (C) Representative images of Oil Red O (ORO) staining (10× and 20×) of COBs after 14 days in’ osteogenic differentiation with PTH treatment. While PTH treatment inhibited adipocyte formation in Zfp467+/+ and Zfp467-/- groups, the Zfp467-/- group showed fewer adipocytes in all treatment groups as compared to Zfp467+/+. (D) ORO stain quantification in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (E) qPCR results for osteoblast-related genes after 7 days’ osteogenic differentiation in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (F) PTH treatment for female 12-week-old global Zfp467-/- mice mice and control mice were measured using trabecular and cortical bone of tibiae after 1 week PTH treatment. Data shown as mean ± SD by two-way ANOVA, n=5–8 per group.
+**Figure 8.:** (A) Representative images of alkaline phosphatase (ALP) (day 7) and alizarin red staining (ARS) (day 14) of differentiated calvarial osteoblasts (COBs) with PTH treatment. An increase in PTH dose led to an increase in ALP staining and mineralization in both Zfp467+/+ and Zfp467-/- COBs. Zfp467-/- COBs showed more ALP-positive cells and mineralization than Zfp467+/+ COBs. (B) ALP stain and ARS quantification in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (C) Representative images of Oil Red O (ORO) staining (10× and 20×) of COBs after 14 days in’ osteogenic differentiation with PTH treatment. While PTH treatment inhibited adipocyte formation in Zfp467+/+ and Zfp467-/- groups, the Zfp467-/- group showed fewer adipocytes in all treatment groups as compared to Zfp467+/+. (D) ORO stain quantification in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (E) qPCR results for osteoblast-related genes after 7 days’ osteogenic differentiation in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (F) PTH treatment for female 12-week-old global Zfp467-/- mice mice and control mice were measured using trabecular and cortical bone of tibiae after 1 week PTH treatment. Data shown as mean ± SD by two-way ANOVA, n=5–8 per group.
 
 In osteogenic media, lipid stored in osteoblasts was observed. Significantly less lipid droplets in Zfp467-/- osteoblasts were noted compared to untreated Zfp467+/+ samples (Figure 8C). Additionally, a reduction in lipid droplet formation was observed with PTH exposure at 50 and 100 nM in both Zfp467+/+ and Zfp467-/- cells, and Zfp467-/- cells showed much less lipid droplet formation compared to +/+ group (Figure 8C and D). However, the magnitude of decrease after PTH treatment is almost identical in Zfp467+/+ and Zfp467-/- cells (Figure 8D). These results were then confirmed by qRT-PCR after 7 days’ osteogenic differentiation which indicated higher expression of osteogenic differentiation-related genes such as Alp, Sp7, Rankl, and Igf1 in Zfp467-/- compared to Zfp467+/+ COBs with PTH exposure (Figure 8E and F). It is noteworthy that there is a statistically significant interaction between genotype and PTH treatment, suggesting an increased sensitivity to PTH in Zfp467-/- cells.
 
 In order to prove that absence of Zfp467 increases the expression of the PTH1R and influences PTH-induced osteoblastogenesis in vivo, Zfp467 global KO mice was treated with PTH for 1 week and compared those responses to control mice. Although no much difference was observed between vehicle and the 1-week PTH-treated group in Zfp467+/+ mice, PTH-treated Zfp467-/- mice had higher BT/TV (p=0.0572), Conn.D (p=0.0755) and lower Tb.Sp (p=0.0811) and SMI (p=0.0399) than PTH-treated Zfp467+/+ mice, even after only 1 week of treatment.
 
-## Gene silencing of Pth1r or PKA inhibitors suppressed Zfp467-/- induced increased osteogenic differentiation
+### Gene silencing of Pth1r or PKA inhibitors suppressed Zfp467-/- induced increased osteogenic differentiation
 
 To determine whether the increase in osteogenic differentiation seen in Zfp467-/- cells is due to higher PTH1r levels, Pth1r was knocked down by siRNA and found that Pth1r knockdown led to decreased osteogenic differentiation in both Zfp467+/+ and Zfp467-/- COBs. Although Zfp467-/- COBs still show slightly higher Alp staining (Figure 9A), Pth1r knockdown in Zfp467-/- cells dampens the increase in Alp and Sp7 gene expression during osteogenic differentiation compared to Zfp467+/+ cells, indicating that this increase is associated with the upregulation of Pth1r seen in Zfp467-/- cells (Figure 9B).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig9-v2.jpg)
+
+**Figure 9.:** (A) Representative images of alkaline phosphatase (ALP) staining of differentiated calvarial osteoblasts (COBs) with Pth1r or control siRNA treatment. (B) qPCR results for osteogenic differentiation-related genes after 7 days’ osteogenic differentiation and siRNA treatment in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. (C) Representative images of ALP staining and qPCR results for osteogenic differentiation-related genes after 7 days’ osteogenic differentiation and PKA inhibitor treatment in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group. NC, negative control.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Representative images of alkaline phosphatase (ALP) staining of differentiated calvarial osteoblasts (COBs) with 100 nM parathyroid hormone (PTH) treatment and PKA inhibitor. (B) qPCR results for osteogenic differentiation-related genes after 7 days’ osteogenic differentiation, PTH treatment and PKA inhibitor treatment in COBs. Data shown as mean ± SD by two-way ANOVA, n=3 independent experiments for each group.
+
 Furthermore, a PKA inhibitor could also significantly decrease osteogenic differentiation in COBs (Figure 9C). The staining showed ALP activity was much higher in Zfp467-/- cells in the absence of the PKA inhibitor, but no difference was found with the PKA inhibitor between genotypes (Figure 9C). In addition, with the PKA inhibitor, upregulated osteogenic genes in Zfp467 -/- cells including Alp and Sp7 could be totally reversed (Figure 9C). Similarly, treating COBs with the PKA inhibitor during PTH treatment simultaneously for 7 days led to a suppression of osteogenic differentiation in both Zfp467+/+ and Zfp467-/- cells (Figure 9—figure supplement 1). qPCR results showed that PKA inhibitor could totally reverse the upregulation of Alp, Sp7, and Rankl in PTH-treated Zfp467-/- cells (Figure 9—figure supplement 1A,B).
 
-## Wdfy1, Sox10, and Ngfr are downstream targets of ZFP467
+### Wdfy1, Sox10, and Ngfr are downstream targets of ZFP467
 
 Next question would be what were the downstream targets of Zfp467. In an unbiased analysis, using RNA-seq in pre- and post-differentiated COBs from Zfp467+/+ and Zfp467-/- cells, potential regulatory pathways and differentially expressed genes (DEG) were obtained (Figure 10A–D). The PI 3K and MAPK signaling pathways were differentially upregulated in Zfp467-/- cells whether pre- or post-differentiated when compared to Zfp467+/+ cells (Figure 10D). There were several highly expressed genes in the Zfp467-/- cells related to osteogenesis, including Wdfy1, Sox10, and Ngfr (Figure 10B). These results were confirmed by qRT-PCR (Figure 10E). When Zfp467 was overexpressed in MC3T3-E1 cells those three genes were significantly suppressed relative to GFP overexpression.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/83345/elife-83345-fig10-v2.jpg)
 
-**Figure 10.:** Wdfy1, Sox10, and Ngfr were found upregulated and MAPK, AKT pathways were found activated in Zfp467-/- calvarial osteoblasts (COBs).(A) Heat map of differentially expressed genes (DEG) from COBs (Zfp467+/+ and Zfp467-/-) at pre-differentiation (Panel A) and at differentiation with a p-value < 0.05 and a fold change >2.0 or <–2.0. (B) These DEGs that represented by volcano plots. (C) Functional annotation (Cellular Component [CC]) for the DEGs for Zfp467+/+ vs Zfp467-/- for pre- (left) and post-differentiated COBs (right). (D) GSEA enrichment plots for AKT and MAPK pathways. (E) qRT-PCR was performed on COBs from Zfp467+/+ and -/- to confirm gene expression changes noted by RNA-seq. (F) Overexpression of Zfp467 in MC3T3-E1 cells confirmed statistically significant suppression of the top three genes (Wdfy1, Sox10, and Ngfr), when compared to GFP overexpression; p<0.05 or lower. Data shown as mean ± SD by unpaired Student’s t test, n=5–8 independent experiments for each group.
+**Figure 10.:** (A) Heat map of differentially expressed genes (DEG) from COBs (Zfp467+/+ and Zfp467-/-) at pre-differentiation (Panel A) and at differentiation with a p-value < 0.05 and a fold change >2.0 or <–2.0. (B) These DEGs that represented by volcano plots. (C) Functional annotation (Cellular Component [CC]) for the DEGs for Zfp467+/+ vs Zfp467-/- for pre- (left) and post-differentiated COBs (right). (D) GSEA enrichment plots for AKT and MAPK pathways. (E) qRT-PCR was performed on COBs from Zfp467+/+ and -/- to confirm gene expression changes noted by RNA-seq. (F) Overexpression of Zfp467 in MC3T3-E1 cells confirmed statistically significant suppression of the top three genes (Wdfy1, Sox10, and Ngfr), when compared to GFP overexpression; p<0.05 or lower. Data shown as mean ± SD by unpaired Student’s t test, n=5–8 independent experiments for each group.
 
 ## Discussion
 
@@ -145,13 +341,13 @@ In summary, taken together, we demonstrated the importance of the zinc finger pr
 
 ## Materials and methods
 
-## Reagents
+### Reagents
 
 PTH were purchased from Bachem (Torrance, CA). H89, G06983 and Forskolin were purchased from Selleck Chemicals (Houston, TX). Pth1r, Nfkb1, Zfp467, and non-targeting control siRNAs were purchased from Life Technologies (Carlsbad, CA). The expression vector for EBF1, MYOD, cFOS, GATA1, NFκB1, and empty vector were obtained from Addgene: NFκB1 pcDNA3 was a gift from Stephen Smale (Addgene plasmid #20018), pcDNA3-GATA1 was a gift from Licio Collavin & Giannino Del Sal (Addgene plasmid #85693), pCAG-EBF1 was a gift from Elena Cattaneo (Addgene plasmid #96965), pCAG-MyoD was a gift from Andrew Lassar (Addgene plasmid #8398), MMTV-cFOS-SV40 was a gift from Philip Leder (Addgene plasmid #19259). pCMV-Creb1 was a gift from Georgios Stathopoulos (Addgene plasmid # 154942).
 
 MC3T3-E1 subclone 4 cell line was obtained from and authenticated by ATCC (CRL-2593) and was tested negative for mycoplasma.
 
-## Animals
+### Animals
 
 Zfp467fl/fl on the C57BL/6J background was generated by Cyagen (Figure 1—figure supplement 1). Exons 2–4 were selected as cKO region (Transcript: Zfp467-001 ENSMUST00000114561). The targeting vector, homology arms, and cKO region were generated by PCR using bacterial artificial chromosome clone RP24-144J8 and RP23-24K23 from the C57BL/6J library as template. To generate mice lacking Zfp467 in limb mesenchymal stem cells, Prrx1Cre; Zfp467fl/fl were generated by crossing Prrx1Cre transgenic mice to Zfp467fl/fl mice (Prrx1Cre Zfp467fl/fl) and Zfp467·fl/fl mice were used as controls. AdipoqCre mice on the C57BL/6J background was generated by Beth Israel Deaconess Medical Center. To generate mice lacking Zfp467 in adipocyte tissues, AdipoqCre; Zfp467fl/fl were generated by crossing AdipoqCre transgenic mice (C57BL/6J) to Zfp467fl/fl mice and Zfp467 fl/fl mice were used as controls. Total DNA was isolated from ear punch biopsies, and routine PCR was used to genotype mice.
 
@@ -159,7 +355,7 @@ All experiments were performed with 12-week-old and sex-matched littermates. All
 
 No statistical methods were used to predetermine sample size. Mice label and measurements were performed by two independent researchers and selected at random (by cage) into following experiments. Masking was used during data collection and data analysis. Animals with ulcerative dermatitis or other diseases were excluded from the study.
 
-## PTH treatment
+### PTH treatment
 
 PTH 1–34 bovine (PTH, Bachem, Torrance, CA) was made to 1 mg/mL stock using a vehicle solution (4 mM HCl contained 0.1% BSA).
 
@@ -167,74 +363,195 @@ In vivo study, at 12 weeks of age, both Zfp467+/+ and Zfp46 -/- female mice were
 
 In vitro study, during osteogenic differentiation, PTH was administered by adding to osteogenic media every 48 hr for each group. For ELISA, PTH was administered by adding to culture media for 10–60 min.
 
-## Dual-energy X-ray absorptiometry
+### Dual-energy X-ray absorptiometry
 
 Whole-body composition exclusive of the head was performed using the PIXImus densitometer (GE-Lunar, Fairfield, CT, USA). The PIXImus was calibrated daily with a phantom provided by the manufacturer.
 
-## Micro-computed tomography
+### Micro-computed tomography
 
 A high-resolution desktop micro-tomographic system (vivaCT 40, Scanco Medical AG, Brüttisellen, Switzerland) was used to assess the trabecular and cortical bone microarchitecture, volume, and mineral density in mouse femurs. Scans were acquired using a 10.5 μm3 isotropic voxel size, 70 kVp peak X-ray tube intensity, 114 mA X-ray tube current, 250 ms integration time, and were subjected to Gaussian filtration and segmentation. All scans were analyzed using manufacturer software (Scanco, version 4.05). The trabecular bone region of interest started 210 μm (20 transverse slices) proximal to the break in the growth plate and extended 1575 μm (150 transverse slices). Bone was segmented from soft tissue using a mineral density threshold of 375 mg HA/cm3. Trabecular bone was analyzed for Tb.BV/TV (%), Tb.Th (mm), Tb.N (mm-1), Tb.Sp (mm), Conn.D (mm-3), and trabecular bone mineral density (Tb.BMD, mg HA/cm3). The cortical bone region of interest started at 55% of the total bone length distal to the femoral head and extended 525 μm (50 transverse slices). Bone was segmented using a mineral density threshold of 700 mg HA/cm3. Cortical bone was analyzed for bone area (Ct.Ar, mm2), medullary area (Ma.Ar, mm2), bone area fraction (Ct.Ar/Tt.Ar, %), cortical thickness (Ct.Th, μm), cortical tissue mineral density (Ct.TMD, mg HA/cm3).
 
-## Marrow adipose tissue quantification by osmium tetroxide staining and μCT
+### Marrow adipose tissue quantification by osmium tetroxide staining and μCT
 
 At the time of sacrifice, tibiae were isolated and placed into 10% neutral buffered formalin overnight at 4°C. Soft tissue was carefully removed to ensure that the fibula remained intact and the bones were washed under continuous cold PBS for 1 hr, then stored in PBS at 4°C. Quantification and visualization of marrow adipose tissue was performed as described previously (Scheller et al., 2014). Briefly, bones were decalcified in 14% EDTA (pH 7.4) for 14 days, with EDTA changes every 3–4 days. Bones were then washed for 10 min in PBS (three times) and stained with a 1:1 mixture of 2% aqueous osmium tetroxide (cat# 23310-10, Polysciences, Inc, Warrington, PA, USA) and 5% potassium dichromate for 48 hr. Stained bones were then washed with PBS (pH 7.4) for 5 hr (three times), and subsequently scanned by μCT. BMAT content was calculated by determining the whole volume of second osseous center of tibiae.
 
-## Bone histomorphometry
+### Bone histomorphometry
 
 Mice were intraperitoneally injected at 9 and 2 days, respectively, prior to sacrifice, with 20 mg/kg calcein and 30 mg/kg alizarin complexones (Sigma, St. Louis, MO). Static and dynamic histomorphometry measurements were performed in Prrx1Cre; Zfp467fl/fl and Zfp467fl/fl mice at 12 weeks of age as previously described (Le et al., 2021). Tibiae were analyzed as described and standard nomenclature was used.
 
-## Primary cells isolation
+### Primary cells isolation
 
 The generation of Zfp467-/- and wild-type mice was previously described. COBs were isolated from calvarias of 3- to 5-day-old Zfp467+/+ and Zfp467-/- neonates as described in the following protocols (Kawai et al., 2011; Rosen et al., 1997). BMSCs were isolated from tibiae and femurs of 6-week-old Zfp467+/+ and Zfp467-/- female mice as described in the previously established protocols (Le et al., 2021; Maridas et al., 2018). All studies were reviewed and approved by the Institutional Animal Care and Use Committee of Maine Medical Center and followed the NIH guidelines for the Care and Use of Laboratory Animals.
 
-## RNA interference and plasmid transfection
+### RNA interference and plasmid transfection
 
 Twenty-four hr after seeding, RNA oligos were transfected into COBs or BMSCs using Lipofectamine RNAiMAX Transfection Reagent according to the manufacturer’s instructions for 48 hr and the final concentration of siRNA was 5 nM. ORF clone expression vector or a controlled vector was introduced into COBs, BMSCs, or MC3T3-E1 cells using Lipofectamine 3000 Transfection Reagent for 72 hr once cells reached 80% confluence. All transfection reagents were purchased from Thermo Fisher Scientific, Waltham, MA.
 
-## Real-time PCR and western blot
+### Real-time PCR and western blot
 
 Total RNA was isolated using a standard TRIzol extraction (Life Technologies, Carlsbad, CA) method. cDNA was generated using the High Capacity cDNA Reverse Transcription Kit (Life Technologies, Carlsbad, CA) according to the manufacturer’s instructions for real-time PCR.
 
 Proteins from cell culture were extracted by scraping the culture wells in the presence of RIPA buffer (Bio-Rad, Hercules, CA) with protease inhibitor and phosphatase inhibitor (St. Louis, MO). Cytoplasm and nuclear protein were extracted using Nuclear and Cytoplasmic Extraction Reagent Kit (Thermo Scientific, MA, USA). Antibodies used for western blot and ChIP or co-IP were listed in Table 2.
 
-## Nuclear translocation detection
+**Table 2.**
+ Antibody list for co-IP, ChIP, and western blot.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Supplier</th>
+      <th>Cat Num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACTIN</td>
+      <td>Santa Cruz Bio</td>
+      <td>SC47778</td>
+    </tr>
+    <tr>
+      <td>PTH1R</td>
+      <td>Sigma</td>
+      <td>SAB4502493</td>
+    </tr>
+    <tr>
+      <td>GATA1</td>
+      <td>Cell Signaling Technology</td>
+      <td>3535T</td>
+    </tr>
+    <tr>
+      <td>NFκB1 (IP)</td>
+      <td>Cell Signaling Technology</td>
+      <td>13586S</td>
+    </tr>
+    <tr>
+      <td>NFκB1 (IB)</td>
+      <td>Cell Signaling Technology</td>
+      <td>13681S</td>
+    </tr>
+    <tr>
+      <td>Histone H3</td>
+      <td>Cell Signaling Technology</td>
+      <td>9715S</td>
+    </tr>
+    <tr>
+      <td>RelB</td>
+      <td>Santa Cruz Bio</td>
+      <td>sc-48366</td>
+    </tr>
+    <tr>
+      <td>NPAS1</td>
+      <td>Santa Cruz Bio</td>
+      <td>sc-376083</td>
+    </tr>
+    <tr>
+      <td>p-CREB (SER133)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9198S</td>
+    </tr>
+    <tr>
+      <td>CREB</td>
+      <td>Cell Signaling Technology</td>
+      <td>9197T</td>
+    </tr>
+  </tbody>
+</table>
+
+### Nuclear translocation detection
 
 Zfp467+/+ and Zfp467-/- BMSCs were plated on an eight-chamber slide (Sigma, St. Louis, MO). Protein location of GATA1 and NFκB1 was detected by immunofluorescence using Confocal Microscopy (Leica DMI6000). Nuclear protein was isolated from baseline Zfp467+/+ and Zfp467-/- BMSCs lysate by Pierce NE-PER Nuclear and Cytoplasmic Extraction Reagent Kit (Life Technologies, Carlsbad, CA). Protein level of GATA1 and NFκB1 was measured using nuclear extracts. Related quantification was performed by ImageJ software.
 
-## Dual-fluorescence reporter assay
+### Dual-fluorescence reporter assay
 
 The Pth1r P1 (0.5 kb: 0–500, 1.1 kb: –600 to 500; 1.5 kb: –1109 to 500, 2.1 kb: –1598 to 500, P1: –581 to –1109) and P2 promoters (P2-1: –449 to 0, P2-2: –212 to –826) were cloned through PCR into the pGL4.20 luciferase reporter vector (Promega, Madison, WI) using C57BL/6 genomic DNA as a template. pGL4.75 luciferase reporter was used as a positive control for transfection efficiency normalization. Baseline COBs, BMSCs, or MC3T3-E1 cells were transfected with the reporter constructs and incubated for 48 hr. Luciferase activity was measured using GloMax-20/20 (Promega, Madison, WI). The transcriptional activity was expressed as the ratio of firefly:Renilla luciferase activity.
 
-## ChIP assay and biotin-Pth1r pulldown
+### ChIP assay and biotin-Pth1r pulldown
 
 MC3T3-E1 subclone 4 (CRL-2593) cell line was purchased from ATCC and used for ChIP and DNA pulldown assay. When MC3T3-E1 cells reached confluency, they were then fixed in 1% paraformaldehyde/PBS for 10 min at room temperature. Chromatin shearing and immunoprecipitation were performed using EZ-Magna ChIP A/G Chromatin Immunoprecipitation Kit (Sigma, St. Louis, MO) according to the manufacturer’s instructions. The immunoprecipitated DNA fragments were used as templates for PCR amplification. ChIP-PCR primers sequences were listed in Table 3. PCR products were used for nucleic acid electrophoresis to avoid unspecific amplification.
 
+**Table 3.**
+ Primer list of ChIP-qPCR for P2-2 promoter of Pth1r.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Prime sequence</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P2-2-Forward1</td>
+      <td>CCATCTCTCTCACTTTCCCCAAG</td>
+    </tr>
+    <tr>
+      <td>P2-2-Reverse1</td>
+      <td>ATCCCTGGTTCTTCGATCTAGCCC</td>
+    </tr>
+    <tr>
+      <td>P2-2- Forward2</td>
+      <td>CCTAGCTGAACCCGAGTCTTG</td>
+    </tr>
+    <tr>
+      <td>P2-2- Reverse2</td>
+      <td>GTCTAGCGGATCGGAGACTCT</td>
+    </tr>
+    <tr>
+      <td>P2-2- Forward3</td>
+      <td>AACCGGGAGTCCAACGAAGGT</td>
+    </tr>
+    <tr>
+      <td>P2-2- Reverse3</td>
+      <td>GGTCTGGCTATGTGGGGAC</td>
+    </tr>
+    <tr>
+      <td>P2-2- Forward4</td>
+      <td>GGCTGCATAGCCTGGTTCTAGC</td>
+    </tr>
+    <tr>
+      <td>P2-2- Reverse4</td>
+      <td>CCCACTACCCCGATCTTCCGG</td>
+    </tr>
+    <tr>
+      <td>P2-2- Forward5</td>
+      <td>ACGGCGCGAGAAATACCAGGAG</td>
+    </tr>
+    <tr>
+      <td>P2-2- Reverse5</td>
+      <td>CGTGGCTGGGACGTTGTCTC</td>
+    </tr>
+  </tbody>
+</table>
+
 DNA pulldown assay was performed according to previously reported protocol (Jutras et al., 2012). 5’ biotin-modified Pth1r P2-2 dsDNA probe was generated using PCR with oligonucleotide primers modified at its 5’ end by Sangon Biotech (Shanghai, China). Nuclear protein was extracted using Nuclear and Cytoplasmic Extraction Reagent Kit (Thermo Scientific, MA, USA). NFκB1 purified protein was purchased from Proteintech (Rosemont, USA). Briefly, the Pth1r P2-2 or oligo probe was incubated with streptavidin-coupled Dynabeads (Invitrogen, USA) at room temperature for 1 hr to generate probe-bound Dynabeads, and then the probe-bound Dynabeads were incubated with MC3T3-E1 nuclear extracts or NFκB1 purified protein at 4°C overnight. The protein bound to the probe and beads were eluted and used for gel electrophoresis.
 
-## Determination of cellular cAMP levels
+### Determination of cellular cAMP levels
 
 Intracellular cAMP expression levels were measured after 10 min to 48 hr of PTH treatment using Mouse/Rat cAMP Assay Parameter Kit (R&D Systems, Minneapolis, MN) according to the manufacturer’s instructions in both pre-differentiation COBs and BMSCs. Total protein quantity was used for normalization using the Pierce BCA Protein Assay Kit (Life Technologies, Carlsbad, CA).
 
-## Cellular respiration measurements
+### Cellular respiration measurements
 
 The OCR and ECAR were assessed pre-differentiation or 3 days after osteogenic differentiation using the XF96 Extracellular Flux Analyzer (Seahorse Biosciences, North Billerica, MA), as previously described (Maridas et al., 2018). Briefly, BMSCs and COBs were plated in 96-well Seahorse XF96 Cell Culture Microplates (Seahorse Biosciences, North Billerica, MA). Several mitochondrial electron transport chain complex inhibitors were used during the test: 2.52 µM oligomycin, 12.65 µM carbonylcyanide p-(triflueormethoxy) phenylhydrazone, and 12.67 µM rotenone. All inhibitors were purchased from Seahorse Biosciences. Cell counts via fluorescence detection with Hoechst (Life Technologies, Carlsbad, CA) were used for normalization.
 
-## Osteogenic differentiation and related measurements
+### Osteogenic differentiation and related measurements
 
 In vitro osteoblast differentiation and measurement were done according to previously published protocols (Le et al., 2021). Briefly, BMSCs and COBs were plated at a density of 1×106/well in six-well plates. When cells reached around 80% confluency, osteogenesis induction began using osteogenic induction media which consisted of complete αMEM (αMEM, 5% fetal bovine serum, and 1% penicillin/streptomycin), 50 µg/mL ascorbic acid, and 8 mM beta-glycerophosphate (both were purchased from Sigma, St. Louis, MO). αMEM and penicillin/streptomycin were purchased from Life Technologies (Carlsbad, CA), FBS was purchased from VWR (Radmor, PA). Medium was changed every other day until cells were ready to stain for ALP and ARS to assess osteoblasts and mineralization, respectively, around day 7 and day 14 after differentiation. Additionally, RNA was extracted on day 7 after differentiation for real-time PCR analysis.
 
-## ALP and ARS
+### ALP and ARS
 
 ALP staining was performed using ALP kit obtained from Sigma (St. Louis, MO) according to the manufacturer’s instructions at day 4 and day 7 after osteogenic differentiation for BMSCs and COBs, respectively. ARS (Sigma, St. Louis) staining was done using 1% solution at pH 4.2 at day 14 after osteogenic differentiation for both BMSCs and COBs. Briefly, after fixation, cells were stained for 30 min with ARS solution at room temperature. Cells were then washed a couple of times with water before they were visualized under the microscope (Leica DM IRB, TV camera). Five random fields were chosen to capture images using the ZEISS Efficient Navigation, blue edition camera (Bloomfield, CT) per treatment group for quantification. Alizarin red-stained cells were destained with 10% cetylpyridinium chloride for 1 hr, and their absorbance was measured at 570 nm using a plate reader (MRX Dynex Technologies, Chantilly, VA) for quantitation.
 
-## Oil Red O staining
+### Oil Red O staining
 
 Differentiated adipocytes were stained using Oil Red O (ORO) solution at day 9 after adipogenic diff. Briefly, cells were fixed with 10% neutral buffer formalin (Sigma, St. Louis). After that, they were washed with 60% isopropanol (Sigma, St. Louis, MO) before stained with ORO solution (Sigma, St. Louis, MO) for 15 min at room temperature. Cells were then washed a couple of times with water before they were visualized and pictures were taking using the Zeiss microscope. For quantification, lipid from adipocyte droplets was extracted using isopropanol and the absorbance was measured at 490 nm using a plate reader (MRX Dynex Technologies, Chantilly, VA).
 
-## RNA-seq and analysis
+### RNA-seq and analysis
 
 RNA-seq was performed on samples from COBs isolated from Zfp467+/+ and Zfp467-/- mice, pre- or post-4 days’ osteogenic differentiation. RNA-seq analysis was performed by BGI Group (UK, China). Samples were de-identified, and the analysis was blinded to assignment. We employed DAVID 6.8 to perform the functional annotation (Cellular Component [CC]) and GSEA enrichment plots for related pathways. Protein coding genes were assessed with p<0.05, fold change >2.0 or <–2.0. The enriched CC was evaluated using a false discovery rate (Benjamini–Hochberg method) of 0.1 and DEG number. We have uploaded our original sequencing data to Sequence Read Archive database (PRJNA877934, http://www.ncbi.nlm.nih.gov/bioproject/877934).
 
-## Statistical analysis
+### Statistical analysis
 
 All data are expressed as the mean ± standard deviation (SD) unless otherwise noted. Results were analyzed for statistical differences using Student’s t test between two groups or two-way ANOVA followed by Bonferroni’s multiple comparison post hoc test among three or more groups where appropriate. All statistics were performed with Prism GraphPad 7.0 statistical software (GraphPad Software, Inc, La Jolla, CA). Values of p<0.05 were considered statistically different.

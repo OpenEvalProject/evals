@@ -35,7 +35,7 @@ Our results show that the model qualitatively captures findings on how different
 
 ## Results
 
-## A model for the development of active binocular vision
+### A model for the development of active binocular vision
 
 The model comprises a virtual agent situated in a simulated environment. The agent looks at a textured plane that is positioned in front of it at variable distances between 0.5 m and 6 m (Figure 1A). We use planar images instead of a full 3D environment to (i) allow us to uniquely define the correct vergence angle for the current visual scene and (ii) make sure that the visual input follows natural image statistics. Note, that previous AEC models have already demonstrated the approach in full 3-D environments (Zhu et al., 2017a; Zhu et al., 2017b; Lelais et al., 2019).
 
@@ -47,13 +47,25 @@ An image is rendered for the left eye and a second image is rendered for the rig
 
 In the human retina, the RF size of ganglion cells increases towards the periphery (Curcio et al., 1990). We incorporate this idea by extracting patches from an input image at two different spatial scales: A high-resolution fine scale is extracted from the central part and a low-resolution coarse scale is extracted from a larger area (orange and turquoise boxes in Figure 1 and Figure 2). The overlap between the coarse and fine scale does not depict the biological reality, but simplifies the implementation and analysis of the model. Covering a visual angle of 8.3° in total, the fine scale corresponds to the central/para-central region (including the fovea) and the coarse scale to the near-peripheral region with a diameter of 26.6°. On the one hand, this two-scale architecture is more biologically plausible than using just a single scale, on the other hand it also increases the resulting verging performance (Lonini et al., 2013). One input patch (or subfield) in the coarse scale can detect a disparity of up to 8.8° while one patch in the fine scale covers 1.6°. The coarse scale can therefore be used to detect large disparities, while the fine scale detects small disparities.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig2-v2.jpg)
+
+**Figure 2.:** Left: Illustration of visual inputs under the different rearing conditions. Except for the normal condition, the images are convolved with different Gaussian filters to blur out certain orientations or simulate monocular deprivation. To simulate strabismus the right eye is rotated inward by 10°, so that neurons receive non-corresponding inputs to their left and right eye receptive fields. The structures behind the object plane depict a background image in the simulator. Right: Examples of binocular RFs for the fine and coarse scale learned under the different rearing conditions after 0.5 million iterations. For each RF, the left eye and right eye patches are aligned vertically. In each case, the 10 RFs most frequently selected by the sparse coding algorithm are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Complete set of all RFs that are learned during training for all different rearing conditions. .
+
 We simulate altered rearing conditions by convolving the input images for the two eyes with two-dimensional Gaussian kernels to blur certain oriented edges, or to simulate monocular deprivation. To mimic strabismus, the right eyeball is rotated inwards while the left eye remains unchanged to enforce non-overlapping input to corresponding positions of the left and right retina (see Materials and methods for details).
 
 The adaptation of the neural representation and the learning of appropriate motor commands occur simultaneously: While the sparse coder updates the initially random RFs to minimize the reconstruction error, the RL agent generates vergence eye movements to minimize the reconstruction error of the sparse coder. Since the sparse coder has a fixed capacity, minimizing its reconstruction error is equivalent to maximizing its coding efficiency. Thus, both the sparse coder and the reinforcement learner aim to maximize the overall coding efficiency of the model. The learning of the two components (sparse coder and RL agent) happens roughly at the same timescale. Our model is robust to variations in the learning rates, as long as the reinforcement learner’s critic converges faster than the actor (Van Hasselt and Wiering, 2007).
 
-## Normal rearing conditions lead to the autonomous learning of accurate vergence control for natural input and random dot stereograms
+### Normal rearing conditions lead to the autonomous learning of accurate vergence control for natural input and random dot stereograms
 
 A first critical test of a model of the development of binocular vision is whether the model produces plausible behavior. Indeed, under normal rearing conditions the joint learning of the neural representation and motor behavior results in an agent that accurately verges the eyes on the plane in front of it (Klimmasch et al., 2017). Video 1 illustrates the learned behavior.
+
+![Video 1.](https://cdn.elifesciences.org/articles/56212/elife-56212-video1.mp4.jpg)
+
+**Video 1.:** The sizes of the scales and the according patch sizes are indicated in blue for the coarse scale and red for the fine scale.
 
 To quantify vergence behavior in the model, we define the absolute vergence error. It measures by how much the vergence angle between the eyes deviates from the ideal position at the end of a fixation (see Materials and methods for details). The model obtains an accuracy of vergence eye movements of 0.12 ± 0.17° or 455.40 ± 613.75 arc sec. Note, however, that the model as described above has a much lower visual resolution compared to human foveal vision. One pixel in the model corresponds to 802 arc sec, while the spacing between photoreceptors in the fovea corresponds to 28 arc sec. When we correct for the model’s lower visual resolution (see Materials and methods), the corrected vergence accuracy is 15.9 ± 21.44 arc sec. This falls within the range of human performance under natural viewing conditions, which is typically better than 60 arc sec (1 arc min) for stimuli not closer than 0.5 m (Jaschinski, 1997; Jaschinski, 2001).
 
@@ -61,13 +73,15 @@ A second critical test of a model of the development of stereoscopic vision is w
 
 To show that our model is able to perceive depth in RDS, although not having been trained on them, we generate various RDS and render the shifted images for the left and right eye separately. We expose the model that was trained on natural input stimuli to a range of RDS with different spatial frequencies, window sizes, disparities, and object distances. The model is able to exploit the differences in the images and align the eyes on the virtual plane that will appear in front or behind the actual object plane in the RDS. Averaged over all trials, the model achieves an absolute vergence error of 0.21 ± 0.22° at the end of a fixation. This corresponds to a corrected vergence accuracy of 26.8 ± 28.8 arc sec. This is only slightly worse than the model’s performance on natural images (see Figure 6) and demonstrates that the model generalizes to artificial images it has never seen before. A video of the performance can be found in Video 2.
 
-## Altered rearing conditions cause qualitative changes in neural representations
+![Video 2.](https://cdn.elifesciences.org/articles/56212/elife-56212-video2.mp4.jpg)
+
+### Altered rearing conditions cause qualitative changes in neural representations
 
 A third critical test of any model of the development of binocular vision is whether it can account for the effects of alternate rearing conditions observed in biological experiments. We simulate such alternate rearing conditions by filtering the input images for the left and right eyes with Gaussian filters. The amount of blur was chosen to simulate experiments where animals where exposed to just one single orientation during development (Stryker et al., 1978; Tanaka et al., 2006). Figure 2 shows illustrative examples of the filtered images that were used to train our model and the respective learned RFs. Here, we only depict the 10 RFs that have been selected most often during training for each scale. The full set of all RFs can be found in Figure 2—figure supplement 1.
 
 When the model is trained with unaltered natural visual input, the resulting RFs resemble Gabor wavelets (Daugman, 1985), as shown in the first row in Figure 2. The changes that are applied to the input images in the alternate rearing conditions are reflected in the RFs that are learned: Among the 10 most often selected RFs there are no vertically (horizontally) oriented RFs, when the model is trained on images that are deprived of vertical (horizontal) edges. Orthogonal RFs emerge as a result of training on orthogonal input. When one eye is deprived of input, the RFs will become monocular and encode information coming from the ‘healthy’ eye only. Strabismic rearing results in the development of monocular RFs without a preference for one or the other eye (Hunt et al., 2013). In the following sections, we will quantify neurons’ tuning properties for different rearing conditions and compare them to neurophysiological findings.
 
-## Neurons’ orientation tuning reflects input statistics
+### Neurons’ orientation tuning reflects input statistics
 
 To analyze the statistics of the developing RFs in greater detail, we fit oriented two-dimensional Gabor wavelets to each RF (see Materials and methods for details). For this part of the analysis, the left and right parts of the binocular RFs are studied separately, that is, we consider the monocular RF fits only. We combine the results from coarse and fine scale, since a two-sample Kolmogorov-Smirnov test (Young, 1977) did not reveal a statistically significant difference between the distributions of orientation preferences (p-values > 0.18 for all rearing conditions). Only those RFs which met a criterion for a sufficiently good Gabor fit are considered for further analysis (98% of all bases, see Materials and methods for details).
 
@@ -75,13 +89,13 @@ Figure 3 shows how the altered input changes the distribution of preferred orien
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig3-v2.jpg)
 
-**Figure 3.:** Displayed are the preferred orientations resulting from fitting Gabor wavelets to the learned RFs of the left eye. Coarse and fine scale RFs have been combined (800 in total). The error bars indicate the standard deviation over five different simulations.  describes the average number of RFs that passed the selection criterion for the quality of Gabor fitting (see Materials and methods).N¯Figure 3—source data 1.
+**Figure 3.:** Displayed are the preferred orientations resulting from fitting Gabor wavelets to the learned RFs of the left eye. Coarse and fine scale RFs have been combined (800 in total). The error bars indicate the standard deviation over five different simulations. $N¯$ describes the average number of RFs that passed the selection criterion for the quality of Gabor fitting (see Materials and methods).
 
 While the distribution of orientations does not change much in the monocular and strabismic rearing case, we observe a marked difference to the normal case when certain orientations are attenuated in the input. The models trained on vertical input are missing the peak at horizontal orientations and vice versa for the horizontal case. Additionally, we find an increased number of neurons tuned to the dominant orientation in the input. These observations are consistent with animal studies (Stryker et al., 1978; Tanaka et al., 2006).
 
 The separate analysis of the RFs in the left and right eye for the models that were trained on orthogonal input reveals the adaptation of each eye to its input statistics. Furthermore, we find that orthogonal RFs developed (also see fourth row in Figure 2) that have been observed in an orthogonal rearing study in cats (Leventhal and Hirsch, 1975).
 
-## The development of binocular receptive fields requires congruent binocular input
+### The development of binocular receptive fields requires congruent binocular input
 
 Another interesting feature of the neural representation that has been studied extensively in the context of alternate rearing is the binocularity. The binocularity index (BI) is used to assess how responsive a neuron is to inputs from the two eyes. A binocular neuron requires input from both eyes to respond maximally, while a monocular neuron is mostly driven by just one eye. To determine the binocularity indices for the neurons in our model, we use an adaptation of the original method from Hubel and Wiesel, 1962 (see Materials and methods for details). The binocularity index can vary from −1 (monocular left) over 0 (binocular) to +1 (monocular right).
 
@@ -89,7 +103,7 @@ Figure 4 depicts the binocularity distributions for the coarse and the fine scal
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig4-v2.jpg)
 
-**Figure 4.:** The binocularity index ranges from −1 (monocular left) over 0 (binocular) to 1 (monocular right). Error bars indicate the standard deviation over five different simulations.  and N¯c are the average number of basis functions (out of a total of 400) that pass the selection criterion for Gabor fitting (see Materials and methods).N¯fFigure 4—source data 1.
+**Figure 4.:** The binocularity index ranges from −1 (monocular left) over 0 (binocular) to 1 (monocular right). Error bars indicate the standard deviation over five different simulations. $N¯_{c}$ and $N¯_{f}$ are the average number of basis functions (out of a total of 400) that pass the selection criterion for Gabor fitting (see Materials and methods).
 
 If, however, the input differs qualitatively for the two eyes (Figure 4, bottom row) the receptive fields will also differ in their monocular sub-parts. This can also be observed in Figure 2 for the orthogonal, monocular, and strabismic case. Most cells become monocular, with a symmetric distribution for orthogonal and strabismic rearing. Monocular deprivation of the right eye leads to a distribution of binocularity indices that is biased toward the left eye.
 
@@ -99,21 +113,33 @@ Stryker et al., 1978 also reared kittens on orthogonal input and report an incre
 
 Finally, monocular rearing and the analysis of binocularity was performed in Wiesel and Hubel, 1963. In their Figures 3 and 5, we see the development of completely monocular cells after visual deprivation of the other eye. The strabismic case was studied a few years later in Hubel and Wiesel, 1965 (their Figure 5A) and revealed a division of the neural population in monocular neurons for either left or right eye, in agreement with our model.
 
-## Alternate rearing conditions reduce the number of disparity tuned neurons
+### Alternate rearing conditions reduce the number of disparity tuned neurons
 
 A central aspect of the development of binocular vision is the emergence of neurons which are tuned to binocular, horizontal disparities. We therefore investigate how alternate rearing affects the number of neurons with disparity tuning and the distribution of their preferred disparities. We estimate horizontal disparity tuning by considering phase shifts between left and right RFs in the following way: We fit binocular Gabor wavelets to the RFs, where all parameters, except for the phase shift, are enforced to be identical for the left and right monocular RF. The disparity for one neuron can then be calculated as described in Materials and methods. The distribution of disparity tuning of the coarse scale neurons is shown in Figure 5 for the different rearing conditions. Results for the fine scale are comparable and presented in Figure 5—figure supplement 1. First, there is a noticeable difference in the number of cells that are disparity tuned between the different rearing conditions: In the normal case, we find the highest number of disparity tuned cells, rearing in a striped environment reduces the number, and uncorrelated input results in the smallest number of disparity tuned cells. In every case, the distribution of preferred disparities is peaked at zero. The height of this peak is reduced for rearing conditions with in-congruent input to the two eyes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig5-v2.jpg)
+
+**Figure 5.:** The neurons’ preferred disparities are extracted from the binocular Gabor fits. Presented are the averaged data for the coarse scale from five simulations. $N¯$ describes the average number of neurons meeting the selection criteria (see Materials and methods).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Disparity tuning of the fine scale of models that were trained under different rearing conditions.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Disparity tuning of a model that was trained with a constant strabismic angle of 3°. Note the marked similarity to Figure 2 in Shlaer, 1971. Depicted are the results from the coarse scale only.
 
 Comparing the normal with the vertical and horizontal case, there is an increase in the number of cells that are tuned to non-zero disparities. This indicates that under these rearing conditions, the agents are exposed to non-zero disparities more often. This is in good agreement with the results from the next section (also see Figure 6), where we will see that those models perform less accurate vergence movements compared to the normal case.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig6-v2.jpg)
 
-**Figure 6.:** (A) Moving average of the vergence error during training. The vergence error is defined as the absolute difference between the actual vergence angle and the vergence angle required to correctly fixate the object. Shaded areas indicate the standard deviation over five different simulations. The curves for orthogonal, monocular, and strabismic conditions are overlapping, see text for details. (B) Vergence errors at the end of training after correction of any visual aberrations. Shown is the distribution of vergence errors at the end of a fixation (20 iterations) for previously unseen stimuli. Outliers have been removed. The gray shaded area indicates vergence errors below 0.22°, which corresponds to the model’s resolution limit. The second y-axis shows values corrected to match human resolution (see Materials and methods for details).Figure 6—source data 1.Figure 6—source data 2.
+**Figure 6.:** (A) Moving average of the vergence error during training. The vergence error is defined as the absolute difference between the actual vergence angle and the vergence angle required to correctly fixate the object. Shaded areas indicate the standard deviation over five different simulations. The curves for orthogonal, monocular, and strabismic conditions are overlapping, see text for details. (B) Vergence errors at the end of training after correction of any visual aberrations. Shown is the distribution of vergence errors at the end of a fixation (20 iterations) for previously unseen stimuli. Outliers have been removed. The gray shaded area indicates vergence errors below 0.22°, which corresponds to the model’s resolution limit. The second y-axis shows values corrected to match human resolution (see Materials and methods for details).
 
 In the strabismic case, a neuron’s receptive fields in left and right eye are driven by un-corresponding input. This results in very few disparity tuned cells that exhibit a much broader distribution of preferred disparities.
 
 To investigate the effect of a less severe strabismus we conduct an additional experiment similar to Shlaer, 1971 (see their Figure 2). Here, we fix the strabismic angle to 3°, which results in a corresponding image in the two eyes because one input patch in the coarse scale covers an angle of 6.4°. Figure 5—figure supplement 2 shows that this leads to an increased amount of disparity tuned cells and a shift of their preferred disparity to 3°. Exactly as in Shlaer, 1971, the constant exposure to a certain disparity leads to a preference for that disparity for the majority of cells.
 
-## Model predicts how alternate rearing conditions affect vergence learning
+### Model predicts how alternate rearing conditions affect vergence learning
 
 While the effect of alternate rearing conditions on receptive fields of visual cortical neurons is well studied, there has been little research on the effect of alternate rearing conditions on vergence behavior.
 
@@ -121,9 +147,9 @@ Figure 6A shows the evolution of the absolute vergence error, that we interpret 
 
 The main difference to the models that were able to learn vergence is that under these conditions the left and right eye are provided with incongruent input. The orthogonal model receives two monocular images that retain different orientations. The right monocular image of the monocularly deprived model contains little information at all, and the two eyes are physically prevented from looking at the same object in the strabismic case. In these cases, very few neurons with disparity tuning emerge (compare previous section) that could drive accurate vergence eye movements.
 
-## Vision remains impaired if input is corrected after the critical period
+### Vision remains impaired if input is corrected after the critical period
 
-In biological vision systems, alterations of the visual input during a critical period of visual development (e.g. due to astigmatism or cataract or experimentally induced alternate rearing conditions) lead to lasting visual deficits that can remain after visual input has been corrected. To test if a similar phenomenon arises in the model, we first train the model with alternate rearing conditions as described above. Then, we freeze all its synaptic weights and study its behavior for normal visual input. Specifically, objects are presented at distances {0.5,1,…,6} m, the initial vergence error is chosen randomly between −2 and 2°, and 40 stimuli that were not seen during training are applied on the object plane. From these initial conditions, we simulate fixations of 20 iterations and record the vergence error at the end.
+In biological vision systems, alterations of the visual input during a critical period of visual development (e.g. due to astigmatism or cataract or experimentally induced alternate rearing conditions) lead to lasting visual deficits that can remain after visual input has been corrected. To test if a similar phenomenon arises in the model, we first train the model with alternate rearing conditions as described above. Then, we freeze all its synaptic weights and study its behavior for normal visual input. Specifically, objects are presented at distances ${0.5,1,…,6}$ m, the initial vergence error is chosen randomly between −2 and 2°, and 40 stimuli that were not seen during training are applied on the object plane. From these initial conditions, we simulate fixations of 20 iterations and record the vergence error at the end.
 
 The results of this testing are displayed in Figure 6B. Here, the gray-shaded area indicates a vergence error of 1 pixel. The normally trained model exhibits the best performance and actually achieves sub-pixel accuracy in the great majority of trials. The model is more accurate here than in the training phase, because there is no exploration noise during action selection in this testing procedure. Performance declines somewhat for the vertical/horizontal models, which were trained on input without horizontal/vertical edges, respectively. Finally, performance for the orthogonal, monocular and strabismic models is very poor. This is due to their incongruent input to both eyes during training, which impairs the development of binocular neurons tuned to different disparities. Since this is the first study to investigate the quality of learned vergence movements after exposure to alternate rearing conditions (to the best of our knowledge), the differences in performance are a genuine prediction of our model.
 
@@ -131,9 +157,9 @@ To gain a deeper insight into the underlying mechanisms, we consider the model�
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig7-v2.jpg)
 
-**Figure 7.:** Shown is the logarithm of the sparse coder’s reconstruction error as a function of disparity. The negative reconstruction error is used as the reward for learning vergence movements. Data are averaged over 10 stimuli not encountered during training, three different object distances (0.5, 3, and 6 m), and five simulations for every condition. The shaded area represents one standard error over the five simulations. Only those models that receive corresponding input to left and right eye display a reconstruction error that is minimal at zero disparity. These are the only models that learn to verge the eyes.Figure 7—source data 1.
+**Figure 7.:** Shown is the logarithm of the sparse coder’s reconstruction error as a function of disparity. The negative reconstruction error is used as the reward for learning vergence movements. Data are averaged over 10 stimuli not encountered during training, three different object distances (0.5, 3, and 6 m), and five simulations for every condition. The shaded area represents one standard error over the five simulations. Only those models that receive corresponding input to left and right eye display a reconstruction error that is minimal at zero disparity. These are the only models that learn to verge the eyes.
 
-## Model captures stereo vision deficits in aniseikonia and predicts increased number of neurons tuned to vertical disparities
+### Model captures stereo vision deficits in aniseikonia and predicts increased number of neurons tuned to vertical disparities
 
 Aniseikonia is a condition characterized by a perceived difference in the sizes of left and right eye images. It can occur naturally as result of anatomical or refraction differences of the two eyes, different spacing of photoreceptors in the retinas, or other neurological causes (South et al., 2019). Aniseikonia can also be induced as result of the treatment of anisometropia (different refractive powers of the eyes) (Achiron et al., 1997). In this scenario, spectacles or artificial lenses are used to correct the refractive power of one or both eyes to create a sharp image in both eyes. However, due to optical magnification this also leads to a difference in the image sizes. When this difference remains small (typically lower than 3%), it can be tolerated by the visual system. Larger values on the other hand lead to problems in fusing the images and a loss of stereopsis (Katsumi et al., 1986; Oguchi and Mashima, 1989; Achiron et al., 1997). Aniseikonia may also occur in anisometropic patients after cataract surgery with implanted intraocular lenses (Katsumi et al., 1992; Gobin et al., 2008). A recent study reported 7.8% measured aniseikonia in an outpatient clinic cohort (Furr, 2019).
 
@@ -141,19 +167,39 @@ Since little is known about the effects of aniseikonia on visual development or 
 
 Figure 8A shows the improvement of the stereoscopic acuity as measured by the absolute vergence error as a function of training time for four values of aniseikonia: 0%, 10%, 15% and 25%, where 0% aniseikonia corresponds to the normal model from previous sections. Ten percent of aniseikonia leads to slower learning and a slightly reduced vergence performance. While an improvement in vergence performance is still present for 15%, it completely fails for 25%. The increased size of the right image leads to partly incongruent input to the two eyes. As a result, an increased number of monocular RFs develops (Figure 8—figure supplement 1A, see Figure 8—figure supplement 2 for a full set of RFs). The lack of congruent input to both eyes and the resulting lack of binocular receptive fields impairs the development of correct image fusion.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig8-v2.jpg)
+
+**Figure 8.:** (A) Vergence error as a function of time for different degrees of aniseikonia. (B) Number of RFs tuned to vertical disparities for different degrees of aniseikonia during learning. (C) Stereo acuity when different degrees of aniseikonia are introduced after normal rearing. The solid line depicts a quadratic fit to the data. The corrected stereo acuity on the right y-axis corrects for the lower visual resolution of the model compared to humans.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Effect of different degrees of induced aniseikonia on (A) binocularity and (B) orientation tuning (over five random seeds). (C) depicts the number of cells tuned to the vertical orientation (0°). The difference between 0% and 10% aniseikonia is significant with a p-value of $1.7⁢x⁢10^{-5}$.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Full set of RFs from models trained under different degrees of aniseikonia.
+
 The different object sizes in the left and right image also lead to vertical disparities. For example, when fixating the center of a square, the upper edge of the square will be projected to different vertical positions for the two eyes due to the different sizes of the square in the two eyes. We can measure these vertical disparities in a similar way as we measured the horizontal disparities before (see Analysis of receptive fields). Figure 8B shows that the number of neurons tuned to vertical disparities initially increases with growing aniseikonia but then reduces again for 25% of aniseikonia. The key to understanding this phenomenon is considering binocularity (Figure 8—figure supplement 1A) and vergence performance (Figure 8A): at 25% aniseikonia, vergence behavior does not develop and many neurons assume monocular RFs. This reduces the total number of neurons which are tuned to vertical disparites. The inverted U-shaped amount of RFs tuned to vertical disparities for increasing amounts of aniseikonia is a testable prediction of the model.
 
 Interestingly, when looking at the orientation tuning in Figure 8—figure supplement 1B, we observe that the number of cells tuned to the vertical orientation decreases with increasing aniseikonia (see Figure 8—figure supplement 1C for a direct comparison). Since the distribution of orientations in the input images does not change by changing image size, we attribute this change in orientation preference to the model’s (in-)ability to perform accurate vergence movements. As we will elaborate in the next section, the ability to detect different ranges of horizontal disparities results in an abundance of vertically tuned cells. When the visual system looses the ability to detect horizontal disparities and to verge, the number of vertical RFs decreases.
 
 We also test the effects of a suddenly induced aniseikonia on a fully developed healthy visual system. Lovasik and Szymkiw, 1985 induced aniseikonia in healthy subjects and let them perform the Randot and Titmus stereo acuity tests. They found that the stereo acuity diminishes roughly quadratically with the level of aniseikonia. We simulate their experiments by taking a normally trained, healthy model, induce aniseikonia, and test it under the same conditions as before: frozen synaptic weights, novel test stimuli, and a whole range of different object distances and initial vergence errors. We interpret the mean absolute vergence error as the stereo acuity of that model. Figure 8C shows that the stereo acuity declines approximately quadratically with increasing aniseikonia as observed by Lovasik and Szymkiw, 1985. When we correct for the model’s lower visual resolution compared to humans (see Materials and methods), we find that the stereo acuity achieved by the model falls in the typical range of human stereo acuity (Coutant and Westheimer, 1993; Bohr and Read, 2013). In fact, our model appears to be somewhat more robust against larger values of aniseikonia than human subjects (Lovasik and Szymkiw, 1985; Atchison et al., 2020). We speculate that this is due to the absence of an interocular suppression mechanism in our model that may accentuate the effects of aniseikonia on stereo vision in humans.
 
-## Model predicts how vergence influences the statistics of orientation preference
+### Model predicts how vergence influences the statistics of orientation preference
 
 Our model also allows us to investigate, for the first time, how the quality of the vergence control influences the neural representation. As a baseline, we consider the orientation tuning of a reference model which is trained on normal visual input and learns an appropriate vergence policy. For simplicity, we only consider the fine scale in the following. We compare this model to a version that is trained on the same input images, but could not verge the eyes. Specifically, the sparse coder is trained normally, but the RL part is disabled. This model sees different disparities during training by looking at objects at different depths, but is not able to change this distribution of disparities to facilitate the encoding. We refer to this model as the ‘random disparity’ model. In another version of the model, we artificially always set the vergence angle to correctly fixate the objects. In this way, this model is never exposed to non-zero disparities (except for very small ones in the periphery that arise because of slightly different perspectives in the left and right eye). We refer to this version as the ‘zero disparity’ model.
 
 Figure 9A shows the fraction of neurons that are tuned to vertical orientations (0 ± 7.5°) for these three models. When the influence of the RL agent is removed, we observe a significant decrease in the number of vertically tuned neurons. This change must be caused by the different distributions of disparities that the models experience due to their different motor behavior, because all other parameters remain unchanged. In the model that was trained without disparities, we find the least amount of neurons tuned to vertical edges.
 
-To study the role of the distribution of experienced disparities more systematically, we train the sparse coder on different truncated Laplacian distributions of disparities. The distributions are heavy-tailed and centered around zero. The spread in this distribution is determined by σL, the standard deviation. σL=0 means zero disparity all the time (corresponding to the zero disparity case), while the distribution becomes almost uniform for big values of σL. Figure 9B shows how the number of vertically tuned neurons changes in response to different values of σL. We find the smallest number of vertically tuned cells when the disparity is zero throughout the whole training. For very large σL there are more vertical cells, but not as many as for smaller values which are different from zero. In fact for σL=0.2, which corresponds to a standard deviation of one pixel in the input image, the number of vertically tuned neurons is maximized.
+![Figure 9.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig9-v2.jpg)
+
+**Figure 9.:** (A) Fraction of RFs tuned to vertical orientations for different versions of the model (see text for details). Asterisks indicate a statistically significant difference between the samples as revealed by a students t-test (p-values are $7⁢x⁢10^{-3}$ and $1⁢x⁢10^{-3}$). (B) Fractions of fine scale RFs tuned to vertical orientations for models trained with (truncated) Laplacian disparity distributions of different standard deviations $\sigma_{L}$. The value $\sigma_{L}=0$ corresponds to 0 disparity all the time, while $\sigma_{L}=20$ corresponds to an almost uniform disparity distribution. Error bars indicate the standard deviation over five different simulations. The black dotted line indicates the fraction of vertically tuned RFs in the normal model.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Fractions of RFs tuned to vertical orientations for models trained with Laplacian disparity distributions of different standard deviations $\sigma_{L}$ for coarse and fine scale combined.
+
+To study the role of the distribution of experienced disparities more systematically, we train the sparse coder on different truncated Laplacian distributions of disparities. The distributions are heavy-tailed and centered around zero. The spread in this distribution is determined by $\sigma_{L}$, the standard deviation. $\sigma_{L}=0$ means zero disparity all the time (corresponding to the zero disparity case), while the distribution becomes almost uniform for big values of $\sigma_{L}$. Figure 9B shows how the number of vertically tuned neurons changes in response to different values of $\sigma_{L}$. We find the smallest number of vertically tuned cells when the disparity is zero throughout the whole training. For very large $\sigma_{L}$ there are more vertical cells, but not as many as for smaller values which are different from zero. In fact for $\sigma_{L}=0.2$, which corresponds to a standard deviation of one pixel in the input image, the number of vertically tuned neurons is maximized.
 
 An intuitive explanation for this over-representation of cells tuned to vertical orientations is given in Figure 10. Here, we depict a part of an input image at three different disparities. While the horizontal edge can be encoded by the same RF for all disparity values, the vertical edge demands three different RFs to represent the input pattern faithfully. A system that experiences these disparities in its inputs, needs to devote neural resources to represent them all. If the distribution of disparities becomes too wide, however, individual neurons will receive close to independent input from both eyes and disparities that lie in the range that can be represented by a single RF will be rare. This explains the reduction of the number of vertically tuned RFs for very wide disparity distributions (Figure 9B).
 
@@ -181,98 +227,180 @@ In conclusion, we have presented a computational model that sheds new light on t
 
 In the following, we describe the different components of the model, the experimental setup, and the analysis techniques. The implementation is publicly available at https://github.com/Klimmasch/AEC/ (copy archived at swh:1:rev:96e9ae2336937469a8f1602c178ea5e0cb8564b6; Klimmasch, 2021).
 
-## Image processing
+### Image processing
 
 We use OpenEyeSim (Priamikov and Triesch, 2014; Priamikov et al., 2016) to render the left and right eye image. It comprises a detailed biomechanical model of the human oculomotor system and simulates a 3-dimensional environment. A rectangular plane is moved in front of the learning agent (perpendicular to the gaze direction). On it we apply greyscale textures from the McGill Calibrated Color Image Database (Olmos and Kingdom, 2004b) to simulate objects at different depths. Specifically, we chose the man-made section from the McGill Database (Olmos and Kingdom, 2004a), because its statistics may resemble the statistics of the indoor environments that a majority of infants grow up in. As a comparison, we repeated our main analysis with a random set of images across all sections of the McGill data base (see Appendix 1). Behind the textured plane there is a large background image, simulating a natural background behind objects of interest. This background image also prevents the agent from receiving trivial input.
 
 Even tough it is possible to place three-dimensional objects inside OpenEyeSim, we opted for rendering natural input stimuli on a flat plane at different depths. On the one hand, this ensures natural input statistics, and on the other hand it enables us to uniquely define the correct vergence angle and measure the model’s vergence performance (see Measuring the vergence error).
 
-The two monocular images rendered by OpenEyeSim cover a vertical field of view of 50° and have 320 px × 240 px (focal length F=257.34px). We use Matlab to extract single patches in different resolutions and combine corresponding patches from the left and right image. These binocular patches will be jointly encoded by the sparse coder. The coarse scale corresponds to 128 px × 128 px in the original image (corresponds to 26.6° × 26.6°) and is down-sampled by a factor of 4 to 32 px × 32 px. The fine scale image corresponds to 40 px × 40 px (8.3° × 8.3°) and is not down-sampled. From coarse and fine scale we extract 8 px × 8 px patches with a stride of 4 px and combine corresponding left and right patches to 16 px × 8 px binocular patches (see Figure 1). One patch in the coarse scale covers a visual angle of 6.6° and in the fine scale one patch covers 1.6°. In total, we generate 81 fine scale and 49 coarse scale patches that are subsequently normalized to have zero mean and unit norm.
+The two monocular images rendered by OpenEyeSim cover a vertical field of view of 50° and have 320 px × 240 px (focal length $F=257.34px$). We use Matlab to extract single patches in different resolutions and combine corresponding patches from the left and right image. These binocular patches will be jointly encoded by the sparse coder. The coarse scale corresponds to 128 px × 128 px in the original image (corresponds to 26.6° × 26.6°) and is down-sampled by a factor of 4 to 32 px × 32 px. The fine scale image corresponds to 40 px × 40 px (8.3° × 8.3°) and is not down-sampled. From coarse and fine scale we extract 8 px × 8 px patches with a stride of 4 px and combine corresponding left and right patches to 16 px × 8 px binocular patches (see Figure 1). One patch in the coarse scale covers a visual angle of 6.6° and in the fine scale one patch covers 1.6°. In total, we generate 81 fine scale and 49 coarse scale patches that are subsequently normalized to have zero mean and unit norm.
 
-## Sparse coding
+### Sparse coding
 
-The patches from coarse and fine scale are used in the sparse coding step to construct a neural representation of the visual input and to generate a reward signal that indicates the efficiency of this encoding. Each scale S∈{c,f} comprises a dictionary of binocular basis functions (BFs) ϕS,i∈ℬS. We refer to them as receptive fields (RFs) for simplicity. We choose |ℬs|=400 because less would result in a decline in vergence performance and more are computationally more expensive and do not improve performance (Lelais et al., 2019).
+The patches from coarse and fine scale are used in the sparse coding step to construct a neural representation of the visual input and to generate a reward signal that indicates the efficiency of this encoding. Each scale $S\in{c,f}$ comprises a dictionary of binocular basis functions (BFs) $ϕ_{S,i}\inℬ_{S}$. We refer to them as receptive fields (RFs) for simplicity. We choose $|ℬ_{s}|=400$ because less would result in a decline in vergence performance and more are computationally more expensive and do not improve performance (Lelais et al., 2019).
 
-Each input patch pS,j is reconstructed by a sparse linear combination of 10 BFs:(1)p^S,j=∑i=1|ℬS|κS,ij⁢ϕS,i,where the vector of activations κSj is allowed to have only 10 non-zero entries. The κSj are chosen by matching pursuit (Mallat and Zhang, 1993). This greedy algorithm selects the 10 BF from the respective dictionary that yield the best approximation p^S,j of a patch and was chosen for computational efficiency (Zhang et al., 2015). Using 10 BFs to encode the input leads to a qualitatively good reconstruction (Lelais et al., 2019) and more would be computationally more expensive.
+Each input patch $p_{S,j}$ is reconstructed by a sparse linear combination of 10 BFs:
 
-The total reconstruction error ES, where S∈{c,f} indicates the scale, is calculated as the sum over all squared differences between all patches and their approximations:(2)ES=∑j=1|pS|||pS,j-p^S,j||2.
+$$
+p^_{S,j}=\sumi=1|ℬ_{S}|κ_{S,i}^{j}⁢ϕ_{S,i},
+$$
 
-The total reconstruction errors combined from both scales, E=Ec+Ef, is used as the negative reward during reinforcement learning (see following section). The average reconstruction errors per patch for each scale are also used to update the BFs via Gradient descent. This adaptation is achieved by a simple Hebbian learning rule (Olshausen and Field, 1996; Zhao et al., 2012):(3)ΔϕS,i=η|pS|∑j=1|pS|κS,ij(pS,j−p^S,j).
+where the vector of activations $κ_{S}^{j}$ is allowed to have only 10 non-zero entries. The $κ_{S}^{j}$ are chosen by matching pursuit (Mallat and Zhang, 1993). This greedy algorithm selects the 10 BF from the respective dictionary that yield the best approximation $p^_{S,j}$ of a patch and was chosen for computational efficiency (Zhang et al., 2015). Using 10 BFs to encode the input leads to a qualitatively good reconstruction (Lelais et al., 2019) and more would be computationally more expensive.
 
-This formula implements a simple form of activity-dependent learning between a population of encoding neurons κS and an error-detection population. η is the sparse coder’s learning rate and set to 0.2 throughout our simulations when learning was active. Varying this parameter (while η>0) just influences the convergence speed of the RFs but does not influence tuning properties. After each update with Equation 3 the weight vector of a RF is divided by its L2-norm to normalize it to unit length.
+The total reconstruction error $E_{S}$, where $S\in{c,f}$ indicates the scale, is calculated as the sum over all squared differences between all patches and their approximations:
+
+$$
+E_{S}=\sumj=1|p_{S}|||p_{S,j}-p^_{S,j}||^{2}.
+$$
+
+The total reconstruction errors combined from both scales, $E=E_{c}+E_{f}$, is used as the negative reward during reinforcement learning (see following section). The average reconstruction errors per patch for each scale are also used to update the BFs via Gradient descent. This adaptation is achieved by a simple Hebbian learning rule (Olshausen and Field, 1996; Zhao et al., 2012):
+
+$$
+Δϕ_{S,i}=\frac{η}{|p_{S}|}\sumj=1|p_{S}|κ_{S,i}^{j}(p_{S,j}−p^_{S,j}).
+$$
+
+This formula implements a simple form of activity-dependent learning between a population of encoding neurons $κ_{S}$ and an error-detection population. η is the sparse coder’s learning rate and set to 0.2 throughout our simulations when learning was active. Varying this parameter (while $η>0$) just influences the convergence speed of the RFs but does not influence tuning properties. After each update with Equation 3 the weight vector of a RF is divided by its L2-norm to normalize it to unit length.
 
 In the beginning of training, analogous to the state just before eye opening (Huberman et al., 2008; Hagihara et al., 2015), we initialize the RFs with random Gabor functions. Specifically, both the left eye and the right eye component of a binocular basis function have the shape of a Gabor function, but the two Gabor functions have independently drawn random orientations. We have verified that the results can also be achieved when RFs are initialized as Gaussian white noise. The use of random Gabors makes the vergence learning more stable and is biologically more plausible (Albert et al., 2008).
 
-For the next step (reinforcement learning), we generate a state representation in the form of a feature vector, where every entry describes the mean squared activation of one BF over the whole input image:(4)FS,i=∑j=1|pS|(κS,ij)2|pS|.
+For the next step (reinforcement learning), we generate a state representation in the form of a feature vector, where every entry describes the mean squared activation of one BF over the whole input image:
 
-Taken together, this feature vector F has 2⁢|ℬS| entries for both scales combined.
+$$
+F_{S,i}=\sumj=1|p_{S}|\frac{(κ_{S,i}^{j})^{2}}{|p_{S}|}.
+$$
+
+Taken together, this feature vector $F$ has $2⁢|ℬ_{S}|$ entries for both scales combined.
 
 With this pooling procedure we simulate the activity of complex cells that integrate the firing rates of multiple simple cells that are distributed over the whole visual space (Freeman and Ohzawa, 1990). In that sense, we achieve a marginalization over all positions and estimate what disparities are present in the input image. This is in line with approaches that utilize feature histograms to extract position-invariant features, for example to classify objects (Swain and Ballard, 1991; Mel, 1997). In these studies, it is common to normalize the coefficients/features in the histograms to make up for different sampling rates, different lighting conditions, etc. We do not need to normalize the pooled values, because in our case, there is a fixed number of active features (10) per image patch.
 
-## Generation of motor commands
+### Generation of motor commands
 
 The angular position of the eyes are controlled by two extra-ocular eye muscles responsible for rotations around the vertical axis. This medial and lateral rectus are simulated utilizing an elaborate muscle model (Umberger et al., 2003) inside OpenEyeSim (Priamikov and Triesch, 2014; Priamikov et al., 2016). Since we are interested in vergence movements only, we assume symmetrical eye movements so that the activities of the two muscles are mirrored for both eyes.
 
 In contrast to recent models of active inference where a prediction of proprioceptive feedback is send to the muscles (Adams et al., 2013; Parr and Friston, 2018), we simply add a differential change in muscle innervation to the current muscle innervation. To generate those innervations (between [0, 1] in arbitrary units), we use reinforcement learning (Sutton and Barto, 1998). Specifically, the model employs the CACLA+VAR algorithm from Van Hasselt and Wiering, 2007 that generates outputs in continuous action space. In short, it uses an actor-critic architecture (Grondman et al., 2012), where the actor and critic use neural networks as function approximators. These neural networks receive the state vector st that is the concatenation of the BF activations from both scales (see previous section) and the current muscle innervations. The entries in st are scaled by Welford’s algorithm (Welford, 1962) to have zero mean and a fixed standard deviation.
 
-The critic is a one-layer network that aims to learn the value of a state. From the state vector it approximates the discounted sum of all future rewards(5)V⁢(st)=∑i=0∞γi⁢rt+i,where rt represents the reward achieved at time t and γ is the discount factor. To update this value network, we calculate the Temporal Difference Error (Tesauro, 1995; Sutton and Barto, 1998) as δt=rt+γ⁢Vt⁢(st+1)-Vt⁢(st). The parameters of the critic, θV, are initialized randomly and updated by(6)Δθi,tV=αδt∂Vt(st)∂θi,tV,where α represents the learning rate for updating the critic.
+The critic is a one-layer network that aims to learn the value of a state. From the state vector it approximates the discounted sum of all future rewards
 
-The actor is an artificial neural network with one hidden layer with tanh activation functions and a two-dimensional output that depicts changes in muscle innervation for the two relevant eye muscles (lateral and medial rectus). The generated motor outputs are random in the beginning and the network is updated whenever the given reward was higher than estimated by the critic:(7)IFδt>0:Δθi,tA=β(at−At(st))∂At(st)∂θi,tA⌈δtvart⌉,where β is the actor’s learning rate, At⁢(st) is the action selected by the actor at time t, and at=At⁢(st)+𝒩⁢(0,σ2) is the action that is actually executed. Adding Gaussian noise to the actor’s output to discover more favorable actions is called Gaussian exploration. The last term scales the update depending on how much better the action was than expected with respect to its standard deviation.
+$$
+V⁢(s_{t})=\sumi=0∞\gamma^{i}⁢r_{t+i},
+$$
 
-To keep the actor’s weights in check, we use a weight regularizer g in a scaling operation:(8)θi,tA←θi,tA⁢(1-(g⁢β)).
+where rt represents the reward achieved at time $t$ and γ is the discount factor. To update this value network, we calculate the Temporal Difference Error (Tesauro, 1995; Sutton and Barto, 1998) as $\delta_{t}=r_{t}+\gamma⁢V_{t}⁢(s_{t+1})-V_{t}⁢(s_{t})$. The parameters of the critic, $\theta^{V}$, are initialized randomly and updated by
 
-The convergence of the RL algorithm (Van Hasselt and Wiering, 2007) is only guaranteed when the critic learns to represent the reward landscape on a faster timescale than the actor learns to find appropriate actions. Including this constraint, we conducted an exhaustive grid-based search for parameters that would minimize the root mean square error (RMSE) of the vergence error (see Measuring the vergence error) after 0.5 million iterations while ensuring the median being close to 0. The critic learning rate α, the actor learning rate β, and the discount factor γ were varied between 0 and 1. The results were more stable when β decayed to 0. The number of hidden units in the actor L was varied between 5 and 500, explorative noise σ2 and weight regularization g between 10−4 and 10−6, and the standard deviation in the feature vector s⁢t⁢df⁢e⁢a⁢t⁢u⁢r⁢e between 10−1 and 10−3. The following parameters were found to be optimal and are used throughout all experiments in this paper: α=0.75, β starts at 0.5 and linearly decreases to 0, γ=0.3, L=50, σ2=10-5, g=10-5, and s⁢t⁢df⁢e⁢a⁢t⁢u⁢r⁢e=2⁢x⁢10-2.
+$$
+Δ\theta_{i,t}^{V}=\alpha\delta_{t}\frac{∂V_{t}(s_{t})}{∂\theta_{i,t}^{V}},
+$$
 
-## Simulation of alternate rearing conditions
+where α represents the learning rate for updating the critic.
 
-The deprivation of oriented edges is simulated by convolving the input images with elongated Gaussian kernels defined by:(9)Kσx,σy⁢(x,y)=exp⁢(-(x22⁢σx2+y22⁢σy2)),where σx/y represent the standard deviation in the horizontal/vertical direction.
+The actor is an artificial neural network with one hidden layer with $tanh$ activation functions and a two-dimensional output that depicts changes in muscle innervation for the two relevant eye muscles (lateral and medial rectus). The generated motor outputs are random in the beginning and the network is updated whenever the given reward was higher than estimated by the critic:
 
-Kernels with a large σx (σy) will blur out vertical (horizontal) edges. Specifically, to simulate the deprivation of horizontal orientations, σx is set to 33 px (to cover one patch in the coarse scale completely) and σy to a small value of 0.1 px. The numbers are reversed for the deprivation of vertical orientations. In the case of orthogonal rearing, the left eye receives an image deprived of horizontal orientations while the right eye receives one without vertical orientations. To make up for the small standard deviation of 0.1 in the direction that should not be impaired, the images in the normal case are convolved with a Gaussian kernel with σx=σy=0.1px. The resulting filters are displayed in Figure 11.
+$$
+IF\delta_{t}>0:Δ\theta_{i,t}^{A}=\beta(a_{t}−A_{t}(s_{t}))\frac{∂A_{t}(s_{t})}{∂\theta_{i,t}^{A}}⌈\frac{\delta_{t}}{\sqrt{var_{t}}}⌉,
+$$
+
+where β is the actor’s learning rate, $A_{t}⁢(s_{t})$ is the action selected by the actor at time $t$, and $a_{t}=A_{t}⁢(s_{t})+𝒩⁢(0,\sigma^{2})$ is the action that is actually executed. Adding Gaussian noise to the actor’s output to discover more favorable actions is called Gaussian exploration. The last term scales the update depending on how much better the action was than expected with respect to its standard deviation.
+
+To keep the actor’s weights in check, we use a weight regularizer $g$ in a scaling operation:
+
+$$
+\theta_{i,t}^{A}←\theta_{i,t}^{A}⁢(1-(g⁢\beta)).
+$$
+
+The convergence of the RL algorithm (Van Hasselt and Wiering, 2007) is only guaranteed when the critic learns to represent the reward landscape on a faster timescale than the actor learns to find appropriate actions. Including this constraint, we conducted an exhaustive grid-based search for parameters that would minimize the root mean square error (RMSE) of the vergence error (see Measuring the vergence error) after 0.5 million iterations while ensuring the median being close to 0. The critic learning rate α, the actor learning rate β, and the discount factor γ were varied between 0 and 1. The results were more stable when β decayed to 0. The number of hidden units in the actor $L$ was varied between 5 and 500, explorative noise $\sigma^{2}$ and weight regularization $g$ between 10−4 and 10−6, and the standard deviation in the feature vector $s⁢t⁢d_{f⁢e⁢a⁢t⁢u⁢r⁢e}$ between 10−1 and 10−3. The following parameters were found to be optimal and are used throughout all experiments in this paper: $\alpha=0.75$, β starts at 0.5 and linearly decreases to 0, $\gamma=0.3$, $L=50$, $\sigma^{2}=10^{-5}$, $g=10^{-5}$, and $s⁢t⁢d_{f⁢e⁢a⁢t⁢u⁢r⁢e}=2⁢x⁢10^{-2}$.
+
+### Simulation of alternate rearing conditions
+
+The deprivation of oriented edges is simulated by convolving the input images with elongated Gaussian kernels defined by:
+
+$$
+K_{\sigma_{x},\sigma_{y}}⁢(x,y)=exp⁢(-(\frac{x^{2}}{2⁢\sigma_{x}^{2}}+\frac{y^{2}}{2⁢\sigma_{y}^{2}})),
+$$
+
+where $\sigma_{x/y}$ represent the standard deviation in the horizontal/vertical direction.
+
+Kernels with a large $\sigma_{x}$ ($\sigma_{y}$) will blur out vertical (horizontal) edges. Specifically, to simulate the deprivation of horizontal orientations, $\sigma_{x}$ is set to 33 px (to cover one patch in the coarse scale completely) and $\sigma_{y}$ to a small value of 0.1 px. The numbers are reversed for the deprivation of vertical orientations. In the case of orthogonal rearing, the left eye receives an image deprived of horizontal orientations while the right eye receives one without vertical orientations. To make up for the small standard deviation of 0.1 in the direction that should not be impaired, the images in the normal case are convolved with a Gaussian kernel with $\sigma_{x}=\sigma_{y}=0.1px$. The resulting filters are displayed in Figure 11.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/56212/elife-56212-fig11-v2.jpg)
 
-**Figure 11.:** Figure 11—source data 1.
-
-To simulate monocular deprivation (MD) we set σx=σy=240px for the right input image only. The small patches that we extract from this strongly blurred image contain almost no high spatial frequencies.
+To simulate monocular deprivation (MD) we set $\sigma_{x}=\sigma_{y}=240px$ for the right input image only. The small patches that we extract from this strongly blurred image contain almost no high spatial frequencies.
 
 A strabismus is artificially induced by rotating the right eye ball inwards as it is commonly done in biological experiments by fixating a prism in front of the eye or by cutting part of the lateral rectus muscle. In our Open-Eye-Simulator, however, we can rotate the eye by a specific angle. One input patch in the coarse scale covers 6.6°. When we set the strabismic angle to 3° there is still an overlap in the input images that will be reflected in the neural code. In contrast, when the strabismic angle is set to 10°, the input patches become completely uncorrelated. Examples of the changes done to the input images are displayed in Figure 2.
 
-## Analysis of receptive fields
+### Analysis of receptive fields
 
-## Gabor fitting
+#### Gabor fitting
 
-To determine the orientations of the RFs we use MATLAB’s implementation of the trust region reflective algorithm for non-linear curve fitting (Coleman and Li, 1996) to fit them to two-dimensional Gabor functions as defined by:(10)G⁢(x,y,θ,f,ψ,σ,ξ)=exp⁢(-x′⁣2+ξ2⁢y′⁣22⁢σ2)⁢cos⁢(2⁢π⁢f⁢x′+ψ),
+To determine the orientations of the RFs we use MATLAB’s implementation of the trust region reflective algorithm for non-linear curve fitting (Coleman and Li, 1996) to fit them to two-dimensional Gabor functions as defined by:
 
-with x′=xcos(θ)+ysin(θ) and y′=−xsin(θ)+ycos(θ).
+$$
+G⁢(x,y,\theta,f,ψ,\sigma,ξ)=exp⁢(-\frac{x^{′⁣2}+ξ^{2}⁢y^{′⁣2}}{2⁢\sigma^{2}})⁢cos⁢(2⁢\pi⁢f⁢x^{′}+ψ),
+$$
 
-Here, f denotes the frequency, ψ the phase offset, σ the standard deviation of the Gaussian envelope, ξ the spatial aspect ratio and θ the orientation, where θ=0∘ corresponds to a vertically oriented Gabor function. We initialize the parameters randomly 150 times and fit the function either to the left or right RFs (or to both, see below). To evaluate the quality of the fits, we record the difference between the actual RFs and the Gabor fit. More specifically, the residual is defined as the sum of the squared differences in single pixel values between RFs and the fit. To compare the fits across the different experimental conditions, we only took those fits where this residual was less than or equal to 0.2. This accounts for more than 96% of all RFs in the healthy case. Another interpretation for these fits is a stimulus that maximally activates the particular neuron.
+with $x^{′}=xcos(\theta)+ysin(\theta)$ and $y^{′}=−xsin(\theta)+ycos(\theta)$.
 
-## Binocularity index
+Here, $f$ denotes the frequency, ψ the phase offset, σ the standard deviation of the Gaussian envelope, ξ the spatial aspect ratio and θ the orientation, where $\theta=0^{∘}$ corresponds to a vertically oriented Gabor function. We initialize the parameters randomly 150 times and fit the function either to the left or right RFs (or to both, see below). To evaluate the quality of the fits, we record the difference between the actual RFs and the Gabor fit. More specifically, the residual is defined as the sum of the squared differences in single pixel values between RFs and the fit. To compare the fits across the different experimental conditions, we only took those fits where this residual was less than or equal to 0.2. This accounts for more than 96% of all RFs in the healthy case. Another interpretation for these fits is a stimulus that maximally activates the particular neuron.
 
-To assess the extent to wich a neuron is responsive to inputs from one vs. the other eye, Hubel and Wiesel, 1962 introduced the binocularity index. They determined a stimulus that maximizes the monocular response, and applied this stimulus separately in left or right eye to get the (monocular) neural responses L and R. Hubel and Wiesel then compared the responses and sorted each cell into one of 7 bins. The first bin contained all cells responsive only to the contralateral eye, the 7th contained all cells responsive only to the ipsilateral eye, the 4th contained all binocular cells and the rest was distributed between the other bins. To investigate the binocularity of a cell in the model, we compare their monocular response to the left and right Gabor fit. The eye with the greater response is the dominant eye for this neuron. Similar as in Hubel and Wiesel, 1962 we show the best stimulus (here the Gabor fit) to the dominant eye and the same stimulus to the non-dominant eye and record the responses L and R. We then calculate the binocularity index b as:(11)b=R−LR+L,such that the resulting binocularity index lies between −1 (monocular left) and +1 (monocular right), and 0 indicates a perfectly binocular neuron.
+#### Binocularity index
 
-## Disparity tuning
+To assess the extent to wich a neuron is responsive to inputs from one vs. the other eye, Hubel and Wiesel, 1962 introduced the binocularity index. They determined a stimulus that maximizes the monocular response, and applied this stimulus separately in left or right eye to get the (monocular) neural responses $L$ and $R$. Hubel and Wiesel then compared the responses and sorted each cell into one of 7 bins. The first bin contained all cells responsive only to the contralateral eye, the 7th contained all cells responsive only to the ipsilateral eye, the 4th contained all binocular cells and the rest was distributed between the other bins. To investigate the binocularity of a cell in the model, we compare their monocular response to the left and right Gabor fit. The eye with the greater response is the dominant eye for this neuron. Similar as in Hubel and Wiesel, 1962 we show the best stimulus (here the Gabor fit) to the dominant eye and the same stimulus to the non-dominant eye and record the responses $L$ and $R$. We then calculate the binocularity index $b$ as:
 
-To establish the (horizontal) disparity tuning of a binocular model neuron, we fit coupled Gabor functions to the left and right receptive fields. In doing so, we assume that all parameters are equal for the left and right monocular sub-region of the RFs except for the phase offset ψ, that can be different for left and right eye. Following the assumption that the disparity tuning in a binocular cell is encoded by means of this phase shift, we can calculate the preferred (horizontal) disparity d of a neuron by:(12)d=ψL-ψR2⁢π⁢f⁢cos⁡θ.
+$$
+b=\frac{R−L}{R+L},
+$$
+
+such that the resulting binocularity index lies between −1 (monocular left) and +1 (monocular right), and 0 indicates a perfectly binocular neuron.
+
+#### Disparity tuning
+
+To establish the (horizontal) disparity tuning of a binocular model neuron, we fit coupled Gabor functions to the left and right receptive fields. In doing so, we assume that all parameters are equal for the left and right monocular sub-region of the RFs except for the phase offset ψ, that can be different for left and right eye. Following the assumption that the disparity tuning in a binocular cell is encoded by means of this phase shift, we can calculate the preferred (horizontal) disparity $d$ of a neuron by:
+
+$$
+d=\frac{ψ_{L}-ψ_{R}}{2⁢\pi⁢f⁢cos⁡\theta}.
+$$
 
 The maximally detectable disparity is given by the RF size, that is, the visual angle one binocular patch covers. RFs with a disparity preference bigger than the RF size are excluded from the analysis.
 
-For calculating the preferred vertical disparity, we adapt Equation 12 in the following way:(13)dvert=ψL−ψR2πfsin⁡θ.
+For calculating the preferred vertical disparity, we adapt Equation 12 in the following way:
+
+$$
+d^{vert}=\frac{ψ_{L}−ψ_{R}}{2\pifsin⁡\theta}.
+$$
 
 For the number of neurons tuned to vertical disparites in Figure 8B, we consider only neurons with horizontal orientation preference (90° ± 7.5°) and simply count all neurons in the population that do not fall into the zero disparity bin (0° ± 0.6°).
 
-## Measuring the vergence error
+### Measuring the vergence error
 
-Given the exact distance to an object (do) and the inter-pupillary distance (dI=5.6cm) we can calculate the vergence angle desired for perfectly fixating this object as:(14)zdes=2arctan⁡(dI2do).
+Given the exact distance to an object ($d_{o}$) and the inter-pupillary distance ($d_{I}=5.6cm$) we can calculate the vergence angle desired for perfectly fixating this object as:
 
-The absolute difference between this angle and the actual angle between the eyes, z, is called the vergence error and is used in our experiments to track the model’s ability to use active binocular vision:(15)everg=|zdes−z|.
+$$
+z^{des}=2arctan⁡(\frac{d_{I}}{2d_{o}}).
+$$
 
-In our experiments, we use a textured plane with varying distances instead of a 3D environment. This provides us with an unambiguous measure of the distance to the objects and we can easily calculate zd⁢e⁢s and ev⁢e⁢r⁢g. While the vergence error can be defined at every time step, we only analyze it at the end of a fixation (corresponding to the last of 10 time steps), to give the model sufficient time to fixate the object.
+The absolute difference between this angle and the actual angle between the eyes, $z$, is called the vergence error and is used in our experiments to track the model’s ability to use active binocular vision:
+
+$$
+e^{verg}=|z^{des}−z|.
+$$
+
+In our experiments, we use a textured plane with varying distances instead of a 3D environment. This provides us with an unambiguous measure of the distance to the objects and we can easily calculate $z^{d⁢e⁢s}$ and $e^{v⁢e⁢r⁢g}$. While the vergence error can be defined at every time step, we only analyze it at the end of a fixation (corresponding to the last of 10 time steps), to give the model sufficient time to fixate the object.
 
 When we look at the influence of the vergence movements on the neural representation (Figure 9B), we artificially set the vergence angle to simulate different disparity distributions. We use Laplacian distributions, centered around 0, with different standard deviations.
 
-The probability density distribution of a Laplacian distributed random variable X is defined as(16)p(x)=12be−|x−μ|b,−∞<x<∞,where b=σL2 is the scaling parameter. We limit the vergence angle to lie between 0 (looking parallel) and 11.4 (looking at 0.28 m). To simulate the disparity distribution, we set μ to the angle that is desired to fixate an object at a certain distance do(17)μ=2arctan⁡(dI2do)and draw from the distribution. The data shown in Figure 9B depict the fine scale only. The results from the two-scale model can be found in Figure 9—figure supplement 1.
+The probability density distribution of a Laplacian distributed random variable $X$ is defined as
 
-## Correcting for lower visual resolution of the model compared to humans
+$$
+p(x)=\frac{1}{2b}e^{−\frac{|x−\mu|}{b}},−∞<x<∞,
+$$
 
-Visual resolution in humans is (amongst other factors) constrained by the distance of photoreceptors on the central retina, which is around 2.5 µm (Curcio et al., 1990). Translated to visual angle, this corresponds to a resolution of rhuman≈28arc sec (Kalloniatis and Luu, 2007). In the model, visual resolution is constrained by the discrete sampling of the pixel array. Given the focal length F=257.34px from above, the angular resolution corresponds to rmodel=arctan⁡(1pxF)=0.22∘=802arc sec. To convert measurements of the model’s stereo acuity or vergence accuracy to human values, we therefore apply a conversion factor of sconversion=rhumanrmodel=0.035 to both kinds of values. Note that doing this for vergence accuracy assumes that vergence performance is ultimately limited by visual processing constraints rather than motor constraints. Since our model neglects any motor noise and uses a continuous action space, this assumption is reasonable. We therefore equate vergence error with stereo acuity in the model.
+where $b=\frac{\sigma_{L}}{\sqrt{2}}$ is the scaling parameter. We limit the vergence angle to lie between 0 (looking parallel) and 11.4 (looking at 0.28 m). To simulate the disparity distribution, we set μ to the angle that is desired to fixate an object at a certain distance $d_{o}$
+
+$$
+\mu=2arctan⁡(\frac{d_{I}}{2d_{o}})
+$$
+
+and draw from the distribution. The data shown in Figure 9B depict the fine scale only. The results from the two-scale model can be found in Figure 9—figure supplement 1.
+
+### Correcting for lower visual resolution of the model compared to humans
+
+Visual resolution in humans is (amongst other factors) constrained by the distance of photoreceptors on the central retina, which is around 2.5 µm (Curcio et al., 1990). Translated to visual angle, this corresponds to a resolution of $r_{human}≈28arc sec$ (Kalloniatis and Luu, 2007). In the model, visual resolution is constrained by the discrete sampling of the pixel array. Given the focal length $F=257.34px$ from above, the angular resolution corresponds to $r_{model}=arctan⁡(\frac{1px}{F})=0.22^{∘}=802arc sec$. To convert measurements of the model’s stereo acuity or vergence accuracy to human values, we therefore apply a conversion factor of $s_{conversion}=\frac{r_{human}}{r_{model}}=0.035$ to both kinds of values. Note that doing this for vergence accuracy assumes that vergence performance is ultimately limited by visual processing constraints rather than motor constraints. Since our model neglects any motor noise and uses a continuous action space, this assumption is reasonable. We therefore equate vergence error with stereo acuity in the model.

@@ -14,9 +14,9 @@
 ### Affiliations
 
 1. Department of Obstetrics and Gynecology Stanford United States
-2. https://ror.org/00yt0ea73 Stanford Maternal & Child Health Research Institute, Stanford University School of Medicine Stanford United States
-3. https://ror.org/007ps6h72 Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center Seattle United States
-4. https://ror.org/00cvxb145 Department of Obstetrics and Gynecology, University of Washington Seattle United States
+2. Stanford Maternal & Child Health Research Institute, Stanford University School of Medicine Stanford United States ([ROR:00yt0ea73](https://ror.org/00yt0ea73))
+3. Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+4. Department of Obstetrics and Gynecology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -34,15 +34,292 @@ Even though the above epidemiological studies have hinted to the possible connec
 
 ## Results
 
-## Patient overview
+### Patient overview
 
 A total of 187 patients who met the inclusion and exclusion criteria (see Methods) were enrolled in this study. The patient characteristics were different between the cancer and non-cancer patients in their age and menopausal status as summarized in Table 1, with a higher percentage of the OC patients in the older and postmenopausal groups. Most OCs were diagnosed in stages III and IV, with high-grade serous carcinoma being the most common histology subtype (Table 1). Laparotomy was more commonly performed in OC patients (Table 1).
 
-## Sample overview and low-biomass study design
+**Table 1.**
+ Demographic characteristics of participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Ovarian cancer patients (n = 81)</th>
+      <th>Non-cancer patients (n = 106)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Average age at diagnosis</td>
+      <td>59.7</td>
+      <td>55.3</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>Average age at surgery</td>
+      <td>59.6</td>
+      <td>51.6</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Post-menopausal</td>
+      <td>62 (76.5%)</td>
+      <td>48 (45.3%)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Race</td>
+      <td></td>
+      <td></td>
+      <td>0.492</td>
+    </tr>
+    <tr>
+      <td>- Asian</td>
+      <td>7 (8.6%)</td>
+      <td>4 (3.8%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Black</td>
+      <td>1 (1.2%)</td>
+      <td>3 (2.8%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Other</td>
+      <td>6 (7.4%)</td>
+      <td>5 (4.7%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- White</td>
+      <td>64 (79.0%)</td>
+      <td>92 (86.80%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Undisclosed</td>
+      <td>3 (3.7%)</td>
+      <td>2 (1.9%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ethnicity</td>
+      <td></td>
+      <td></td>
+      <td>0.218</td>
+    </tr>
+    <tr>
+      <td>- Hispanic</td>
+      <td>3 (3.7%)</td>
+      <td>1 (0.9%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Non-Hispanic</td>
+      <td>73 (90.1%)</td>
+      <td>102 (96.2%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Undisclosed</td>
+      <td>5 (6.2%)</td>
+      <td>3 (2.8%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cancer stage at surgery</td>
+      <td></td>
+      <td></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>19 (23.5%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6 (7.45%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>39 (48.2%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>16 (19.8%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NA</td>
+      <td>1 (1.2%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cancer grade</td>
+      <td></td>
+      <td></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>6 (7.4%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3 (3.7%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>64 (79.0%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1 (1.2%)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tumor histology type</td>
+      <td></td>
+      <td></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>- Adenocarcinoma</td>
+      <td>3</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Carcinosarcoma</td>
+      <td>1</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Clear cell</td>
+      <td>8</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Endometrioid</td>
+      <td>10</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Granulosa cell</td>
+      <td>1</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Mucinous</td>
+      <td>2</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Serous</td>
+      <td>53</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Transitional cell</td>
+      <td>1</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Borderline serous*</td>
+      <td>-</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Other</td>
+      <td>-</td>
+      <td>98</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Surgical type</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>- Laparotomy</td>
+      <td>75 (92.6%)</td>
+      <td>28 (26.4%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Laparoscopy</td>
+      <td>3 (3.7%)</td>
+      <td>42 (39.6%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Robotic assisted</td>
+      <td>3 (3.7%)</td>
+      <td>36 (34.0%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pelvic washing</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>- Positive</td>
+      <td>43 (53.1%)</td>
+      <td>3 (2.8%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- Negative</td>
+      <td>22 (27.2%)</td>
+      <td>99 (93.4%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- NA</td>
+      <td>16 (19.8%)</td>
+      <td>4 (3.8%)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Borderline serous tumors are considered in the non-cancer category in this study due to the non-invasiveness of these tumors._
+
+### Sample overview and low-biomass study design
 
 Eight hundred and fifty-four biological samples and 147 non-biological laboratory controls were analyzed for microbiota composition (Supplementary file 1). Three hundred and sixty-nine swabs were collected from the FT and ovarian surfaces. We also designed additional layers of controls and collected from multiple sites for comparisons. To assess the microbial environment in the operating room, 130 ‘air swabs’ were collected from the patient’s room. To assess the cervical microbiota, 152 cervical swabs were collected before surgical area preparation and vaginal sterilization. To assess the skin microbiota that may be introduced into the pelvic cavity during laparoscopic port insertion, 81 ‘laparoscopic port swabs’ were collected after the port insertion and before the start of operation. To assess the microbiota in the abdominal cavity away from the surgical or cancer sites, 122 ‘paracolic gutter swabs’ were collected from the right paracolic gutter before the start of operation. To assess potential contamination of DNA extraction reagents, during each batch of DNA extractions we included ‘buffer controls’ that contained only DNA extraction buffer without any swab or other DNA. These 36 ‘buffer controls’ were processed and then sequenced together with the swab samples. To assess potential contamination during PCR and sequencing, we also included multiple no-template PCR controls that contained only PCR reagents and water without extracted DNA or buffer (n = 111 total) during each sequencing run (Supplementary file 1).
 
-## Bacterial concentration
+### Bacterial concentration
 
 The bacterial concentrations of FT and ovarian surfaces averaged 2.5 copies of 16S rRNA genes/μl of DNA (standard deviation, 4.6). Compared to the buffer controls and the OR air swabs, the FT and ovarian surface swabs contained higher concentrations of bacterial DNA than the controls (p-value <0.001) (Figure 1; Supplementary file 2). As expected, the cervical swabs contained thousands of times higher bacterial concentrations than the FT and ovarian surface swabs (p-value <0.001) (Figure 1). The bacterial concentrations from the paracolic gutter were similar to those from the FT and ovarian surface swabs (p-value = 0.11) (Figure 1; Supplementary file 2).
 
@@ -50,7 +327,7 @@ The bacterial concentrations of FT and ovarian surfaces averaged 2.5 copies of 1
 
 **Figure 1.:** *p-value <0.001, paired t-test, comparing each sample type with fallopian tube/ovarian surface (FTO) samples. PG = paracolic gutter; LP = laparoscopic port.
 
-## FT microbiota analysis
+### FT microbiota analysis
 
 In the raw sequencing analysis, 892 bacterial species were present with at least 100 reads in at least one sample. After a series of filtering as described in Methods, 84 bacterial species were present in at least one cervical and one FT sample with over 100 reads while not present in non-biological and air swabs (Supplementary file 3). These 84 bacterial species may represent the FT microbiota that are present in some women. When analyzing the 340 samples that contained at least one read of these 84 species, the Principle Component Analysis (PCA) plot showed a high level of similarity between the fallopian tube/ovarian surface and the paracolic gutter swabs, indicating these species represent the shared microbiota community in the abdominal and pelvic cavity within each individual (Figure 2A). An overview of these 84 bacterial species and their presence in each FT/ovarian surface sample shows that some of the bacterial species are prevalent in multiple individuals, such as Klebsiella or Anaerococcus, while others are only present in a few individuals, such as Casaltella or BV-associated bacterium 2 (BVAB2) (Figure 3). Clustering did not identify any obvious groupings by processing batch, cancer status, menopausal status, or age for these putative FT bacterial species (Figure 3). The Shannon index was calculated for each sample to determine if there were differences in bacterial diversity. There were 726 bacterial species present in the cervix, FT/ovarian surface, and paracolic gutter after filtering out the bacteria present in no-template controls and DNA extraction controls (i.e. after step #5 in Supplementary file 3). The cervical samples had lower Shannon diversity index than the FT/ovarian surface and paracolic gutter samples, while the non-cancer versus OC samples did not show any statistically significant difference in Shannon diversity within each sample type other than the cervical samples (Figure 2B).
 
@@ -62,17 +339,17 @@ In the raw sequencing analysis, 892 bacterial species were present with at least
 
 **Figure 3.:** Each column is a patient, and each row is a bacterial species. The top rows indicate the metadata of each sample as denoted by the color coding of batch, cancer status, menopausal status, and age group.
 
-## Comparison between OC and non-cancer microbiota
+### Comparison between OC and non-cancer microbiota
 
 We compared the prevalence of each of these 84 bacterial species in patients with or without OC (Figure 4). Some bacteria, such as Streptococcus parasanguinis or Neisseriaceae, are more common in FT/ovarian surface samples from OC patients, while others (e.g. Ruminiclostridium, Dialister invisus, or Bacteroides dorei) are only present in OC patients albeit overall representation was low. After ranking the FT bacteria based on the prevalence difference, we found a clear shift in the microbiota of the OC patients when compared to the non-cancer patients. Interestingly, 90% of the top 20 species that were most prevalent in the FT of OC patients were bacteria that predominantly exist outside the female reproductive tract. Among these, 12 (60%) predominantly reside in the gastrointestinal tract, such as Klebsiella, Faecalibacterium prausnitzii, Ruminiclostridium, and Roseburia. Six of the top 20 species (or 30%) normally reside in the mouth, such as Streptococcus mitis, Corynebacterium simulans/striatum, and D. invisus. On the contrary, vaginal bacterial species, such as Corynebacterium amycolatum, Gardnerella, and Lactobacillus iners, are more prevalent in the FT from non-cancer patients, representing 75% of the top 20 bacterial species that are most prevalent in non-cancer patients. This pattern was also consistently observed in the paracolic gutter samples which share the same low-biomass environment of abdominal and pelvic cavity , suggesting that the above findings of FT microbiota were not random. When the histology subtypes were considered in the analysis, we found that the most common subtype, serous carcinoma, had higher prevalence of almost all 84 FT bacterial species compared to the other OC subtypes (Figure 5), indicating a higher level of perturbance in the FT microbiota in the serous carcinoma cases.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89830/elife-89830-fig4-v1.jpg)
 
-**Figure 4.:** Each number is the percentage of individuals in each category with the presence of each bacterial species. G = gastrointestinal; O = oral; V = vaginal; S = skin; B = broadly present.Figure 4—source data 1.
+**Figure 4.:** Each number is the percentage of individuals in each category with the presence of each bacterial species. G = gastrointestinal; O = oral; V = vaginal; S = skin; B = broadly present.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89830/elife-89830-fig5-v1.jpg)
 
-**Figure 5.:** Each number is the percentage of individuals in each category with the presence of each bacterial species.Figure 5—source data 1.
+**Figure 5.:** Each number is the percentage of individuals in each category with the presence of each bacterial species.
 
 Since the majority of laparotomy cases were performed in OC patients and the non-OC cases were mostly performed with laparoscopy or robotic-assisted laparoscopy, we evaluated the influence of the surgical type on the FT microbiota profiles. When only laparotomy cases were considered in the comparison of OC versus non-cancer patients, the pattern of prevalence of majority of the 84 FT bacterial species was nearly identical as the overall comparison including all surgical types (Supplementary file 4). When laparotomy cases were compared to laparoscopic or robotic cases within the non-cancer patients, the prevalence of most of the 84 FT bacterial species was similar between the surgical types (Supplementary file 5). These analyses demonstrate that the differences we observed in the putative FT microbiota between OC and non-OC patients were not caused by the differences in surgical approaches.
 
@@ -92,24 +369,24 @@ In conclusion, in this large prospective study with extensive controls, we analy
 
 ## Materials and methods
 
-## Study population
+### Study population
 
 Specimens and clinical information were obtained from patients who provided informed consent under a protocol approved by the institutional review board at University of Washington (Protocol # 2872). Surgical indications included OCs of various histological types, risk-reducing salpingo-oophorectomies due to germline BRCA or other mutations, and benign gynecological disorders such as ovarian cysts or endometriosis. Exclusion criteria include pelvic inflammatory disease, presence of an intrauterine device, use of antibiotics, endometrial biopsy, intrauterine device removal, or hysteroscopy in the 30 days prior to the intended enrollment.
 
-## Sample collection
+### Sample collection
 
 During the surgeries that involve salpingectomies, we collected FT swabs in the operating room in a sterile fashion. From most enrolled patients, we collected from the following sites: (1) a swab from the air in the operating room, (2) a cervical swab before vaginal sterile prep, (3) a swab from the laparoscopy port after the port insertion and before introduction of any instrument in laparoscopic cases, (4) a swab from the unaffected peritoneum in the paracolic gutter above the liver, and (5) a swab from the FT and ovarian surface on each side. In some patients, the swabs may not have been collected from all sites due to surgical accessibility, time constraint, or unintentional omission. All biological samples were assigned anonymous participant identification numbers, which were matched with participants’ names in a securely stored link file.
 
-## DNA extraction and quantitative PCR
+### DNA extraction and quantitative PCR
 
 All swabs were vortexed and washed in 200 µl 0.9% saline, in which saline was filtered by MilliporeSigma Amicon Ultra Centrifugal 100 kDa Filter Units (Thermo Fisher Scientific, Waltham, MA). DNA from swab prep mixture was extracted using the QIAamp BiOstic Bacteremia DNA KIT (QIAGEN, Germantown, MD) and eluted in a mixture of 25 μl EB buffer provided in the kit plus 25 µl 0.2× Tris–Ethylenediaminetetraacetic acid(EDTA). In each quality control quantitative polymerase chain reaction (qPCR) assay, 5 µl DNA was loaded per reaction. Digestion buffer control was DNA extracted from sham swabs to assess presence of contaminant in kit or during extraction procedure. Absence of PCR inhibitor was confirmed by an internal amplification control (IAC) qPCR (Khot et al., 2008). IAC qPCR was designed to compare amplification of spiked-in jellyfish gDNA between DNA samples and water. Total bacterial concentration was measured by a broad-range qPCR targeting V3–V4 region of the bacterial 16S rRNA gene (Srinivasan et al., 2012).
 
-## Broad-range PCR and deep sequencing of 16S rRNA gene amplicons
+### Broad-range PCR and deep sequencing of 16S rRNA gene amplicons
 
 Broad-range amplicon PCR targeting V3–V4 hypervariable region of the 16S rRNA gene was performed using an adapter attached 338 F and 806 R primer formulation (Srinivasan et al., 2012; Golob et al., 2017). The optimal quantity of DNA per reaction is 2.4e+6 copies of the 16S rRNA gene. Maximum allowed volume was added in amplicon PCR (20 µl DNA/30 µl reaction) for samples from collection sites other than the cervix, which were defined as lower biomass samples. Filtered water was added to PCRs as a no-template (negative) control. A sham DNA extraction was performed to assess contamination of extraction regents and the resulting DNA added to PCRs as another form of negative control with each batch of samples processed. Amplicon PCR products were cleaned using Agencourt AMPure XP beads (Beckman Coulter, Indianapolis, IN) to remove primer dimer and reaction buffers. Cleaned amplicons were applied to barcoded Index PCR using NexteraXT index kits v2 (Illumina, San Diego, CA). Per index PCR, 15 µl of lower biomass amplicon or 5 µl of higher biomass amplicon was loaded. Index PCR product went through a second-round bead clean and was eluted in 30 µl 1× Tris-EDTA (TE) buffer. DNA concentration of each sample was measured by the Quant-iT dsDNA assay kit-HS (Thermo Fisher Scientific, Waltham, MA). For the low-biomass samples, the entire volume of cleaned index PCR product was pooled into sub pools, which then were concentrated roughly 50 times by MilliporeSigma Amicon Ultra Centrifugal 10 kDa Filter Units (Thermo Fisher Scientific, Waltham, MA). Equal quantities (8 nM or lower) of subpools were pooled into a master pool, which was then subjected to deep sequencing.
 
 Next-generation sequencing (NGS) of the bacterial 16S rRNA gene PCR product was performed on the Illumina MiSeq instrument (Illumina). PhiX Control Library v3 (Illumina) was combined with the amplicon library at 15% for high biomass samples and at 20% for low-biomass samples.
 
-## NGS data analysis
+### NGS data analysis
 
 Sequence reads were processed using the DADA2 package (Callahan et al., 2016) for error correction, dereplication, paired-end assembly, and chimera removal and a list of unique sequence variants (SVs) were generated. A custom vaginal reference set was used to assign taxonomy to individual SVs (Srinivasan et al., 2012). Taxonomic assignments were made as described previously (Srinivasan et al., 2021). Briefly, a multiple sequence alignment of both query and reference sequences was created using cmalign (Nawrocki and Eddy, 2013) and query sequences were placed on the phylogenetic tree using pplacer (Matsen et al., 2010). Taxonomy was assigned to each unique SV based on location on the tree. Bacterial taxa represented by fewer than 100 reads in a sample were excluded from that sample to minimize environmental contaminant sequences from being included in the final dataset. The samples from the same site and the same patient were merged as one sample for downstream analysis. The NGS data were filtered using a processing pipeline that we developed in this study to track samples and sequence types (Supplementary file 3). R packages were used for the statistical analyses and graphics. Sequences have been submitted to the NCBI Short Read Archive (accession number PRJNA975142).

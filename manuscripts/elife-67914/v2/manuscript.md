@@ -29,61 +29,1071 @@ Here, we address the question of whether the G-protein mediated NALCN pathway or
 
 ## Results
 
-## CaSR and divalent-dependent neuronal excitability
+### CaSR and divalent-dependent neuronal excitability
 
 Increased excitability following the reduction of [Ca2+]o ([Ca2+]o-dependent excitability) was eliminated by deletion of UNC79 or NALCN in neurons, challenging the long-standing hypothesis that local or diffuse surface charge screening of VGSCs mediated these effects (Lu et al., 2010). But how were changes in external divalent ion concentrations transduced to UNC79 and NALCN? We tested if CaSR provided the link, by comparing excitability in wild-type (WT) and nestin Cre-recombinase expressing CaSR null-mutant (NesCreCasrfl/fl abbreviated as Casr-/-) neurons that were genotyped by PCR (see Materials and methods; Chang et al., 2008). Quantification by RT-qPCR indicated >98% reduction in the Casr expression levels in neocortical cultures produced from Casr-/- mice compared to Cre-positive WT (NesCre; Figure 1—figure supplement 1). Current clamp recordings were performed to measure the intrinsic, spontaneous action potential firing rate from cultured, neocortical neurons. The cells were also pharmacologically isolated to prevent the confounding influence on action potential firing of changes in synaptic transmission following alterations of [Ca2+]o and [Mg2+]o (glutamatergic and GABAergic activity blocked by 10 µM CNQX, 50 µM APV, and 10 µM Gabazine). After establishing the whole-cell configuration, we measured the spontaneous action potential firing rates of conventional WT (conWT), NesCre, and Casr-/- neurons in physiological Tyrode solution (T1.1; containing 1.1 mM) at the resting membrane potential (RMP) and then in reduced Ca2+- and Mg2+-containing Tyrode (T0.2; containing 0.2 mM [Ca2+] and [Mg2+]). CaSR and sodium conductance gating are both sensitive to Ca2+ and Mg2+, with Ca2+ being two to three times more potent in both processes (Frankenhaeuser and Hodgkin, 1957; Brown et al., 1993). Consequently, we modified the concentrations of both divalents to utilize a greater fraction of the dynamic range of the phenomenon under study. The reduction in [Ca2+]o and [Mg2+]o caused an increase in spontaneous action potential firing in both types of WT (conventional and NesCre) neurons within 15 s of the solution change that was substantially attenuated in the Casr-/- neuron (Figure 1A, middle row). This divalent-dependent neuronal excitability was reversed within 10 s by changing the bath solution back to physiological external divalent concentrations (Figure 1A, lower row). The pooled data from repeat experiments indicated that on average the conWT and NesCre neurons were equally sensitive to decreased extracellular divalent concentration and had similarly low spontaneous basal levels of activity (<0.1 Hz, Figure 1B–D). Two-way repeated measures (RM) ANOVA confirmed a significant interaction indicating the response to changes of external divalent concentration were dependent on genotype (F (2,54)=3.193, p=0.049, Table 1). Post-hoc tests confirmed that the reduction in [Ca2+]o and [Mg2+]o substantially increased action potential frequency in conWT and NesCre but not Casr-/- neurons (Sidak compensated for multiple comparisons here and in all later tests, Figure 1B, p=0.0009,<0.0001, and = 0.6697, respectively). Having confirmed that the conWT and NesCre neurons responded quantitatively the same to decreases in external divalents we used NesCre neurons alone as controls in subsequent experiments examining CaSR function. These data indicate that CaSR deletion substantially attenuates the increase in spontaneous firing at the RMP produced by reductions in external divalent concentrations in neurons.
 
-## Does CaSR modulate RMP and divalent-dependent depolarization?
+![Figure 1.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig1-v2.jpg)
+
+**Figure 1.:** (A) Spontaneous voltage traces at RMP following the application of solutions with different divalent concentrations (T1.1 (upper traces), T0.2 (middle), and T1.1 recovery (lower)) recorded in three individual neurons with or without CaSR (conWT (black), NesCre (blue) and Casr-/- (red)). Each trace depicts 150 s of continuous acquisition. (B) Histograms of average action potential (AP) frequency (Hz) recorded using the same solutions: T1.1, T0.2, and T1.1 recovery. Individual recordings represented by open circles linked with lines and average is represented with a bar. From left to right graphs depict conWT (n = 18), NesCre (n = 21), and Casr-/- (n = 18). ANOVA: Post-hoc tests (Sidak compensated for multiple comparisons here and in all later figures) showed that action potential frequency increased in conWT (p=0.0009) and NesCre (P, 0.0001), but not Casr-/- (p=0.6697) neurons when changing from T1.1 to T0.2 (Figure 1—source data 1). (C) Baseline average action potential frequency in T1.1. was unaffected by genotype (p>0.999). (D) Average action potential frequency with T0.2 application was the same in conWT and NesCre (p=0.9831) and higher than in Casr-/- neurons (p=0.013 and 0.0033, respectively). (E) Plot of effect of external divalent concentration and CaSR on RMP. Two-way RM ANOVA indicates that increasing [Ca2+]o (F (1, 37)=31.65, p<0.0001) and CaSR deletion (F (1, 37)=19.1, p<0.0001) hyperpolarized the RMP without an interaction (F (1, 37)=1.035, p=0.3155). Post-hoc testing indicated RMP was depolarized with the switch to T0.2 in both NesCre and Casr-/-neurons (p<0.0001 and p=0.0066 for 21 and 18 recordings respectively; Figure 1—source data 1). (F) Plot of average action potential threshold in T1.1 and T0.2 in NesCre and Casr-/- neurons elicited as per panel G. Two-way RM ANOVA indicates that reducing [Ca2+]o hyperpolarized the action potential threshold (F (1, 27)=56.48, p<0.0001) but that genotype had no effect (F (1, 27)=2.284, p=0.1424). [Ca2+]o was highly effective in both NesCre and Casr-/-neurons (p<0.0001 and p=0.0003 for 19 and 10 recordings, respectively). Individual neuron values are represented by open circles linked by lines and averages by filled circles. (G) Exemplar action potentials elicited by current injection in a NesCre (blue) and a Casr-/- neuon (red) in T1.1 (unbroken) and T0.2 (broken). Action potential threshold is indicated by +for the first action potential elicited by current injection (50–200 pA) under the same conditions as panel E. (H) Histogram summarizing effects of divalents on action potential frequency in NesCre and Casr-/- neurons after a current injection to counter divalent-dependent depolarization following T0.2 application. Two-way RM ANOVA indicates that reducing [Ca2+]o increases the action potential frequency (F (1, 35)=11.54, p=0.0017) and that this is significant in the NesCre but not Casr-/-neurons (p=0.0075 and 0.1555 for 21 and 16 recordings, respectively). Inset shows average membrane potential after the current injection. (I) Histogram summarizing effects of divalents on action potential frequency in NesCre and Casr-/- neurons after current injection in T1.1 to depolarize membrane potential to value recorded in T0.2. Two-way RM ANOVA indicates that reducing [Ca2+]o increases the action potential frequency (F (1, 35)=45.09, p=0.0004) and that this is significant in the NesCre but not Casr-/-neurons (p=0.0044 and 0.056 for 21 and 16 recordings, respectively). Inset shows average membrane potential after the current injection.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Casr expression levels shown as delta delta with actin used as normalizing gene. Average values of 1.0, 0.02, and 0.65 for NesCre, Casr-/-, and conWT respectively with each genotype reflecting the average data from six cultures each represented by triplicate samples. The Kruskal-Wallis test indicates differences between genotypes (p=0.0002) with Dunn’s multiple comparison showing Casr expression levels are lower in Casr-/- (p=0.0016), but not conWT (p=0.7739), than in NesCre neocortical cultures.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The neurons were held at RMP in T1.1 (zero basal current injection) or at the same potential in T0.2 (hyperpolarizing current injection as described in Figure 1H). The current injection is shown in the upper row. The broken horizontal line denotes 0 mV. Reduced divalent concentrations T0.2 increased action potentials in NesCre and Casr-/- neurons. (B) Action potentials were plotted versus the current injection for NesCre neurons (n = 19). (C) Action potentials were plotted versus the current injection for Casr-/- neurons (n = 11).
+
+**Table 1.**
+ Action potential frequency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>130.0</td>
+      <td>2</td>
+      <td>64.99</td>
+      <td>F (2, 54)=3.193</td>
+      <td>p=0.0489</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o on AP count</td>
+      <td>594.4</td>
+      <td>1</td>
+      <td>594.4</td>
+      <td>F (1, 54)=29.21</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>136.1</td>
+      <td>2</td>
+      <td>68.04</td>
+      <td>F (2, 54)=3.368</td>
+      <td>p=0.0418</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>1091</td>
+      <td>54</td>
+      <td>20.20</td>
+      <td>F (54, 54)=0.9925</td>
+      <td>p=0.5110</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>1099</td>
+      <td>54</td>
+      <td>20.35</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Does CaSR modulate RMP and divalent-dependent depolarization?
 
 If CaSR-mediated NALCN-dependent depolarization is sufficient to account for the response to external divalent reduction, then NesCre, but not Casr-/-, neurons should depolarize in response to the switch to T0.2. However, the presence of CaSR and external divalent concentrations were both significant determinants of RMP (zero current injection; two-way RM ANOVA, Table 2, F (1,37)=19.1, p<0.0001 and F (1,37)=31.65, p<0.0001, respectively). In fact, the RMP of NesCre and Casr-/- neurons both depolarized similarly (Figure 1E; 5.6 ± 1.1 mV, p<0.0001 and 3.9 ± 1.2 mV, p=0.0066 respectively) when T0.2 was applied indicating the existence of a divalent-sensitive pathway in Casr-/- neurons.
 
-## Divalent-dependent firing persists after hyperpolarization
+**Table 2.**
+ RMP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>14.36</td>
+      <td>1</td>
+      <td>14.36</td>
+      <td>F (1, 37)=1.035</td>
+      <td>p=0.3155</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o on RMP</td>
+      <td>438.9</td>
+      <td>1</td>
+      <td>438.9</td>
+      <td>F (1, 37)=31.65</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>1513</td>
+      <td>1</td>
+      <td>1513</td>
+      <td>F (1, 37)=19.10</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>2930</td>
+      <td>37</td>
+      <td>79.19</td>
+      <td>F (37, 37)=5.710</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>513.2</td>
+      <td>37</td>
+      <td>13.87</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Divalent-dependent firing persists after hyperpolarization
 
 If NALCN-dependent depolarization is entirely responsible for the extracellular divalent-sensitive changes in neuronal excitability then reversal of this depolarization should prevent (or block) the increase in excitability seen in T0.2. To test this prediction, we measured spontaneous action potential frequency in T0.2 after adjusting the membrane potential to match the RMP observed in T1.1 (current injected to match the membrane potential was unique for each neuron). Action potential frequency in T0.2 was reduced by the hyperpolarization, but neurons remained sensitive to reduced divalent concentrations, although not CaSR deletion, indicating mechanisms besides NALCN were involved (Figure 1H, Table 3; F (1,35)=11.54, p=0.0017, 2-way RM ANOVA). Similarly, in the reciprocal experiment in which the membrane potential in T1.1 was depolarized to match that measured at low divalent concentration, the decrease in external divalent concentration increased action potential frequency (Figure 1I, Table 4; F (1,35)=15.17, p=0.0004, two-way RM ANOVA), and this was significant in NesCre but not Casr-/- neurons (Figure 1I, p=0.004). Ineffective matching of the membrane potential following solution changes did not account for the persistence of divalent-dependent excitability (insets, Figure 1H,I). The sustained sensitivity of spontaneous firing to reduced external divalent concentrations following hyperpolarization of the membrane potential indicated another mechanism, other than NALCN-mediated depolarization, was contributing to the extracellular divalent-sensitive changes in neuronal excitability. Divalent-dependent excitability was also evident in response to transient depolarizing currents (300 ms), with T0.2 increasing action potential count over a range of current injections in NesCre, and to a lesser degree in Casr-/- neurons (Figure 1—figure supplement 2). This was observed despite hyperpolarization of the neuron while in T0.2 to the resting membrane potential measured in T1.1, consistent with it occurring independent of any NALCN-mediated depolarization.
 
+**Table 3.**
+ Action potential frequency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>0.3407</td>
+      <td>1</td>
+      <td>0.3407</td>
+      <td>F (1, 35)=0.4758</td>
+      <td>p=0.4949</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o at hyperpolarizing injection</td>
+      <td>8.262</td>
+      <td>1</td>
+      <td>8.262</td>
+      <td>F (1, 35)=11.54</td>
+      <td>p=0.0017</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>0.5380</td>
+      <td>1</td>
+      <td>0.5380</td>
+      <td>F (1, 35)=0.7309</td>
+      <td>p=0.3984</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>25.76</td>
+      <td>35</td>
+      <td>0.7360</td>
+      <td>F (35, 35)=1.028</td>
+      <td>p=0.4679</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>25.06</td>
+      <td>35</td>
+      <td>0.7161</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Action potential frequency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>0.6090</td>
+      <td>1</td>
+      <td>0.6090</td>
+      <td>F (1, 35)=0.2048</td>
+      <td>p=0.6536</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o at depolarizing injection</td>
+      <td>45.09</td>
+      <td>1</td>
+      <td>45.09</td>
+      <td>F (1, 35)=15.17</td>
+      <td>p=0.0004</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>5.982</td>
+      <td>1</td>
+      <td>5.982</td>
+      <td>F (1, 35)=0.9959</td>
+      <td>p=0.3252</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>210.2</td>
+      <td>35</td>
+      <td>6.006</td>
+      <td>F (35, 35)=2.020</td>
+      <td>p=0.0204</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>104.1</td>
+      <td>35</td>
+      <td>2.973</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The action potential threshold was measured to determine if there was a difference in the apparent excitability of NesCre and Casr-/- neurons. Action potentials were elicited in T1.1 and T0.2 using minimal current injection (50–250 pA) and the threshold measured as the point at which dV/dt reached 20 mV/ms (Figure 1G, membrane potential-corrected as in Figure 1H to minimize the effect of the depolarization itself). The action potential threshold was hyperpolarized from −48.6 ± 0.7 mV to −54.3 ± 1.1 mV with the switch from T1.1 to T0.2 in NesCre neurons (Figure 1F) which would have increased excitability. However, the same effect was observed in Casr-/- neurons (−50.9 ± 0.86 mV to −55.4 ± 2.1 mV; F (1,27)=56.48, p<0.0001, two-way RM ANOVA,Table 5). As CaSR deletion did not affect action potential threshold under these conditions (Figure 1F), spike generation presumably occurred more frequently in the NesCre neurons due to the relatively depolarized membrane potential (8 mV positive than Casr-/- neurons, Figure 1E). The lack of effect of CaSR on spike threshold (F (1, 27)=2.284, p=0.142) in these experiments, indicated the reduced divalent sensitivity of Casr-/- (Figure 1E,F) was not simply due to altered action potential threshold.
+
+**Table 5.**
+ Action potential threshold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>0.5225</td>
+      <td>1</td>
+      <td>0.5225</td>
+      <td>F (1, 27)=0.07478</td>
+      <td>p=0.7866</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o on AP threshold</td>
+      <td>394.6</td>
+      <td>1</td>
+      <td>394.6</td>
+      <td>F (1, 27)=56.48</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>54.34</td>
+      <td>1</td>
+      <td>54.34</td>
+      <td>F (1, 27)=2.284</td>
+      <td>p=0.1424</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>642.5</td>
+      <td>27</td>
+      <td>23.80</td>
+      <td>F (27, 27)=3.406</td>
+      <td>p=0.0011</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>188.6</td>
+      <td>27</td>
+      <td>6.987</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Overall these data support the idea that CaSR played a role in mediating divalent dependent changes in excitability, but that neurons also possessed CaSR-independent mechanisms to fully account for the divalent-dependent excitability.
 
-## CaSR effects on divalent-dependent excitability attenuated by matching membrane potential
+### CaSR effects on divalent-dependent excitability attenuated by matching membrane potential
 
 Further mechanistic complexity was suggested by the effects of CaSR and [Ca2+]o on RMP. This lead to a number of additional questions including: does the difference in RMP contribute to the difference in divalent-dependent excitability between NesCre and Casr-/- neurons, how do decreases in [Ca2+]o depolarize Casr-/- neurons, and is this pathway present in NesCre neurons? To address the first of these questions, we compared the response of NesCre and Casr-/- neurons to changes in extracellular divalent concentrations after removing the confounding variation in RMP. After establishing a stable current-clamp recording in T1.1 we injected a standing current (Ia) until the resting membrane potential was −70 mV. We then recorded for 50 s before switching the bath solution to T0.2. As before, there was a small depolarization followed by an increase in action potential frequency in NesCre neurons (Figure 2A,B). To test if this increase in excitability was fully attributable to divalent-dependent depolarization we adjusted the standing current (Ib) until the membrane potential was −70 mV and then measured the action potential frequency (Figure 2C). In the exemplar, action potential firing was reduced by the hyperpolarization but remained higher in T0.2 at −70 mV than in T1.1 at −70 mV (Figure 2A–C) confirming CaSR-mediated depolarization was not acting alone to increase the excitability. The Casr-/- neurons responded similarly to T0.2 and hyperpolarization (Figure 2A–C) indicating the effect was not mediated by CaSR. We compared the average effects of T1.1 at −70 mV with Ia, T0.2 with Ia, and T0.2 at −70 mV with Ib on NesCre and Casr-/- genotypes (Figure 2D, Table 6) using a 2-way RM ANOVA. Extracellular divalent concentration and current injection substantially affected action potential frequency (F (3, 87)=17.97, p<0.0001). CaSR deletion did not impact the response to extracellular divalent concentration when NesCre and Casr-/- neuron recordings were started at a membrane potential of −70 mV l (F (1, 29)=0.2005, p=0.6577). Post-hoc testing showed that excitability was increased in T0.2 compared with T1.1 regardless which of the two holding currents were used (Figure 2D; Table 7). After injection of Ia to set the membrane potential to −70 mV, the switch from T1.1 to T0.2 still significantly depolarized the membrane potential (Figure 2E; Table 8, Two-way RM ANOVA, F (1, 29)=29.22, p<0.0001) as did CaSR deletion (F (1, 29)=4.874, p=0.0353). Post-hoc testing indicate that the membrane potential in T0.2 was more depolarized in the Casr-/- than in NesCre neurons (Figure 2B,E; −65.6 ± 1.6 mV vs −59.4 ± 2.4 mV, p=0.0083). Taken together, these experiments indicate CaSR-NALCN signaling was not contributing to the difference in divalent-dependent excitability between NesCre and Casr-/- neurons but that these differences may be due to genotype-dependent differences in RMP or intrinsic excitability.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig2-v2.jpg)
 
-**Figure 2.:** (A) Exemplary traces showing the divalent-dependent increase in neuronal excitability following the switch from T1.1 to T0.2 (change indicated by upper trace) in Nes (blue) and CreCasr (red) neurons when initial membrane potentials matched at −70 mV (broken line). (-/-B) Expanded view of the final 5 s of traces in A illustrating sustained depolarization from following T0.2 application. (C) Exemplary traces showing the divalent-dependent decrease in neuronal excitability following the switch from T0.2 to T1.1 (change indicated by upper trace) in Nes (blue) and CreCasr (red) neurons when initial membrane potentials matched at −70 mV. Same recordings as A. (-/-D) Histogram of average divalent-dependent changes in action potential frequency (Hz) in Nes (blue) and CCreasr (red) neurons when initial voltage is −70 mV in T-/-1.1 (Ia) or T0.2 (Ib). Two-way RM ANOVA performed after logarithmic transformation indicates that reducing [Ca2+]o increases the action potential frequency (F (3, 87)=17.97, p<0.0001) similarly in Nes and CreCasr neurons (F (1, 29)=0.2005, p=0.6577; -/-Figure 2—source data 1). Post-hoc tests indicate significant differences between action potential frequency in T1.1 and T0.2 regardless of the holding current but not between action potential frequency recorded at different holding currents and the same solutions (Ia or Ib; Table 7). (E) Membrane potential depolarization following the switch to T0.2 from T1.1. Two-way RM ANOVA indicates that reducing [Ca2+]o (F (1, 29)=29.22, p<0.0001) and CaSR deletion (F (1, 29)=4.874, p=0.0353) significantly depolarized the membrane potential but that there was no interaction (F (1, 29)=4.055, p=0.0534). Post-hoc testing indicate that membrane potentials were matched using current injection in T1.1 (-70.5 ± 0.4 mV and −70.2 ± 0.2 mV for Nes and CreCasr neurons respectively, p=0.985) but different in T-/-0.2 (-65.6 ± 1.6 mV and –59.4 ± 2.4 mV, p=0.0083). (F) Exemplar action potentials elicited by current injection from −70 mV in a Nes (blue) and a CreCasr neuron (red) in solutions T-/-1.1 (unbroken) and T0.2 (broken). Action potential threshold is indicated by +symbol for the first action potential elicited by current injection (50 to 200 pA). (G) Plot of average action potential threshold in T1.1 and T0.2 in Nes and CreCasr neurons, elicited as per panel F here and in subsequent panels. Two-way RM ANOVA indicates that reducing [Ca-/-2+]o hyperpolarized the action potential threshold (F (1, 25)=51.66, p<0.0001), whereas CaSR deletion had the opposite effect (F (1, 25)=10.52, p=0.0033). There was no interaction (Table 9A). Post-hoc tests indicate that the action potential thresholds in solutions T1.1 and T0.2 were depolarized similarly by CaSR deletion (5.3 ± 2.0 mV and 5.5 ± 2.0 mV, p=0.020 and 0.017) in Nes and CreCasr neurons, respectively. (-/-H) Plot of average action potential half-duration in T1.1 and T0.2 in Nes and CreCasr neurons. Two-way RM ANOVA indicates that reducing [Ca-/-2+]o prolonged the action potential half-duration (F (1, 28)=19.73, p=0.0001). (I) Plot of average action potential peak in T1.1 and T0.2 in Nes and CreCasr neurons. The action potential peaks were higher in T-/-1.1 and in Casr-/- neurons (Table 9C).Figure 2—source data 1.Nes and CreCasr neurons in T-/-1.1 or T0.2 with standing currents Ia and Ib.The action potential frequency is in log base 10 and each sub-column represents measurements from a single neuron.
+**Figure 2.:** (A) Exemplary traces showing the divalent-dependent increase in neuronal excitability following the switch from T1.1 to T0.2 (change indicated by upper trace) in NesCre (blue) and Casr-/- (red) neurons when initial membrane potentials matched at −70 mV (broken line). (B) Expanded view of the final 5 s of traces in A illustrating sustained depolarization from following T0.2 application. (C) Exemplary traces showing the divalent-dependent decrease in neuronal excitability following the switch from T0.2 to T1.1 (change indicated by upper trace) in NesCre (blue) and Casr-/- (red) neurons when initial membrane potentials matched at −70 mV. Same recordings as A. (D) Histogram of average divalent-dependent changes in action potential frequency (Hz) in NesCre (blue) and Casr-/- (red) neurons when initial voltage is −70 mV in T1.1 (Ia) or T0.2 (Ib). Two-way RM ANOVA performed after logarithmic transformation indicates that reducing [Ca2+]o increases the action potential frequency (F (3, 87)=17.97, p<0.0001) similarly in NesCre and Casr-/- neurons (F (1, 29)=0.2005, p=0.6577; Figure 2—source data 1). Post-hoc tests indicate significant differences between action potential frequency in T1.1 and T0.2 regardless of the holding current but not between action potential frequency recorded at different holding currents and the same solutions (Ia or Ib; Table 7). (E) Membrane potential depolarization following the switch to T0.2 from T1.1. Two-way RM ANOVA indicates that reducing [Ca2+]o (F (1, 29)=29.22, p<0.0001) and CaSR deletion (F (1, 29)=4.874, p=0.0353) significantly depolarized the membrane potential but that there was no interaction (F (1, 29)=4.055, p=0.0534). Post-hoc testing indicate that membrane potentials were matched using current injection in T1.1 (-70.5 ± 0.4 mV and −70.2 ± 0.2 mV for NesCre and Casr-/- neurons respectively, p=0.985) but different in T0.2 (-65.6 ± 1.6 mV and –59.4 ± 2.4 mV, p=0.0083). (F) Exemplar action potentials elicited by current injection from −70 mV in a NesCre (blue) and a Casr-/- neuron (red) in solutions T1.1 (unbroken) and T0.2 (broken). Action potential threshold is indicated by +symbol for the first action potential elicited by current injection (50 to 200 pA). (G) Plot of average action potential threshold in T1.1 and T0.2 in NesCre and Casr-/- neurons, elicited as per panel F here and in subsequent panels. Two-way RM ANOVA indicates that reducing [Ca2+]o hyperpolarized the action potential threshold (F (1, 25)=51.66, p<0.0001), whereas CaSR deletion had the opposite effect (F (1, 25)=10.52, p=0.0033). There was no interaction (Table 9A). Post-hoc tests indicate that the action potential thresholds in solutions T1.1 and T0.2 were depolarized similarly by CaSR deletion (5.3 ± 2.0 mV and 5.5 ± 2.0 mV, p=0.020 and 0.017) in NesCre and Casr-/- neurons, respectively. (H) Plot of average action potential half-duration in T1.1 and T0.2 in NesCre and Casr-/- neurons. Two-way RM ANOVA indicates that reducing [Ca2+]o prolonged the action potential half-duration (F (1, 28)=19.73, p=0.0001). (I) Plot of average action potential peak in T1.1 and T0.2 in NesCre and Casr-/- neurons. The action potential peaks were higher in T1.1 and in Casr-/- neurons (Table 9C).
 
-## Voltage-gated sodium channels contribute to divalent-dependent excitability
+**Table 6.**
+ Action potential frequency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>0.4305</td>
+      <td>3</td>
+      <td>0.1435</td>
+      <td>F (3, 87)=0.3481</td>
+      <td>p=0.7906</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o and I</td>
+      <td>22.23</td>
+      <td>3</td>
+      <td>7.410</td>
+      <td>F (3, 87)=17.97</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>0.1341</td>
+      <td>1</td>
+      <td>0.1341</td>
+      <td>F (1, 29)=0.2005</td>
+      <td>p=0.6577</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>19.41</td>
+      <td>29</td>
+      <td>0.6692</td>
+      <td>F (29, 87)=1.623</td>
+      <td>p=0.0445</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>35.87</td>
+      <td>87</td>
+      <td>0.4123</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 7.**
+ Action potential frequency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sidak's multiple comparisons test</th>
+      <th>Mean diff.</th>
+      <th>95% CI of diff.</th>
+      <th>Significant?</th>
+      <th>Summary</th>
+      <th>Adjusted p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T1.1 Ia vs. T0.2 Ia</td>
+      <td>−1.059</td>
+      <td>−1.498 to −0.6200</td>
+      <td>Yes</td>
+      <td>****</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>T1.1 Ia vs. T0.2 Ib</td>
+      <td>−0.6203</td>
+      <td>−1.059 to −0.1813</td>
+      <td>Yes</td>
+      <td>**</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>T1.1 Ia vs. T1.1 Ib</td>
+      <td>−0.1163</td>
+      <td>−0.5554 to 0.3227</td>
+      <td>No</td>
+      <td>ns</td>
+      <td>0.9797</td>
+    </tr>
+    <tr>
+      <td>T0.2 Ia vs. T0.2 Ib</td>
+      <td>0.4387</td>
+      <td>−0.0003709 to 0.8778</td>
+      <td>No</td>
+      <td>ns</td>
+      <td>0.0503</td>
+    </tr>
+    <tr>
+      <td>T0.2 Ia vs. T1.1 Ib</td>
+      <td>0.9427</td>
+      <td>0.5037 to 1.382</td>
+      <td>Yes</td>
+      <td>****</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>T0.2 Ib vs. T1.1 Ib</td>
+      <td>0.5040</td>
+      <td>0.06496 to 0.9431</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>0.0160</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 8.**
+ Membrane potential with Ia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>131.7</td>
+      <td>1</td>
+      <td>131.7</td>
+      <td>F (1, 29)=4.055</td>
+      <td>p=0.0534</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o</td>
+      <td>949.2</td>
+      <td>1</td>
+      <td>949.2</td>
+      <td>F (1, 29)=29.22</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>162.7</td>
+      <td>1</td>
+      <td>162.7</td>
+      <td>F (1, 29)=4.874</td>
+      <td>p=0.0353</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>968.0</td>
+      <td>29</td>
+      <td>33.38</td>
+      <td>F (29, 29)=1.028</td>
+      <td>p=0.4711</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>942.0</td>
+      <td>29</td>
+      <td>32.48</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Voltage-gated sodium channels contribute to divalent-dependent excitability
 
 Reversal of the divalent-dependent depolarization did not completely block the increased excitability associated with the switch to T0.2 (Figures 1E, F and 2D) indicating another mechanism other than NALCN was responsible. We tested if voltage-gated channels were contributing by to divalent-dependent excitability by examining action potential threshold in neurons held at a membrane potential of −70 mV. Action potential threshold was hyperpolarized by 8 mV on average following the change from T1.1 to T0.2 in NesCre and Casr-/- neurons (Figure 2F,G, Table 9A; F (1, 25)=51.66, p<0.0001). Furthermore, the action potential threshold was relatively depolarized in the Casr-/- neurons in T1.1 and T0.2 (5.3 ± 2.0 mV (p=0.020) and 5.5 ± 2.0 mV (p=0.017) respectively), indicating NesCre neurons possessed increased excitability and increased sensitivity to decreases in external divalent concentration (Figure 2F,G). The action potential half-width recorded under the same conditions, was also sensitive to the reduction of divalent concentration but unaffected by CaSR deletion (Figure 2H,I Table 9B). ANOVA indicated that the switch to T0.2 from T1.1 broadened action potential half-width (F (1,28)=19.7, p=0.0001). The genotype and [Ca2+]o interacted to both affect action potential peak voltage (Figure 2I, Table 9C; F (1, 28)=6.76, p=0.015) with the peak potential being reduced by T0.2 in the NesCre (p<0.0001) but not Casr-/- neurons (p=0.34).
+
+**Table 9.**
+ Action potential threshold recorded at −70 mV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>0.06658</td>
+      <td>1</td>
+      <td>0.06658</td>
+      <td>F (1, 25)=0.004070</td>
+      <td>p=0.9496</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o</td>
+      <td>845.1</td>
+      <td>1</td>
+      <td>845.1</td>
+      <td>F (1, 25)=51.66</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>391.0</td>
+      <td>1</td>
+      <td>391.0</td>
+      <td>F (1, 25)=10.52</td>
+      <td>p=0.0033</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>929.5</td>
+      <td>25</td>
+      <td>37.18</td>
+      <td>F (25, 25)=2.273</td>
+      <td>p=0.0225</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>408.9</td>
+      <td>25</td>
+      <td>16.36</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">(B) Action potential threshold recorded at −70 mV</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>2.008e-07</td>
+      <td>1</td>
+      <td>2.008e-07</td>
+      <td>F (1, 28)=2.800</td>
+      <td>p=0.1054</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o</td>
+      <td>1.415e-06</td>
+      <td>1</td>
+      <td>1.415e-06</td>
+      <td>F (1, 28)=19.73</td>
+      <td>p=0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>3.050e-07</td>
+      <td>1</td>
+      <td>3.050e-07</td>
+      <td>F (1, 28)=0.4545</td>
+      <td>p=0.5057</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>1.879e-05</td>
+      <td>28</td>
+      <td>6.710e-07</td>
+      <td>F (28, 28)=9.358</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>2.008e-06</td>
+      <td>28</td>
+      <td>7.170e-08</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">(C) Action potential threshold recorded at −70 mV</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>0.0001602</td>
+      <td>1</td>
+      <td>0.0001602</td>
+      <td>F (1, 28)=6.758</td>
+      <td>p=0.0147</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o</td>
+      <td>0.0004821</td>
+      <td>1</td>
+      <td>0.0004821</td>
+      <td>F (1, 28)=20.34</td>
+      <td>p=0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>0.001193</td>
+      <td>1</td>
+      <td>0.001193</td>
+      <td>F (1, 28)=5.891</td>
+      <td>p=0.0219</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>0.005669</td>
+      <td>28</td>
+      <td>0.0002025</td>
+      <td>F (28, 28)=8.541</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>0.0006637</td>
+      <td>28</td>
+      <td>2.370e-005</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We examined the properties of VGSCs and voltage-gated potassium channels (VGPCs) to determine the reason for the altered action potential threshold. VGSCs were isolated in neocortical neurons and the current-voltage characteristics examined. Families of VGSC currents were activated in neurons after 2–4 weeks in culture. Maximum VGSC currents were elicited at −30 mV and averaged −8.0 ± 0.8 nA (n = 7) and −8.8 ± 2.8 nA (n = 6) in NesCre and Casr-/- neurons, respectively. The current-voltage curve shifted in a hyperpolarizing direction with the switch from T1.1 to T0.2 but extensive neuronal processes limited the quality of the voltage-clamp and prevented useful analysis. We examined VGSC gating in nucleated outside-out patches (Sather et al., 1992; Almog et al., 2018) to ensure better voltage control. VGSC currents were elicited by voltage steps from −80 mV (10 mV increments to 40 mV). In T0.2, the VGSC inactivation (see below) resulted in smaller currents that were more sensitive to depolarization (bold traces elicited by steps to −50 mV, Figure 3A) as previously observed (Frankenhaeuser and Hodgkin, 1957; Campbell and Hille, 1976; Armstrong and Cota, 1991). Divalent sensitivity was confirmed in the normalized current-voltage plot for both NesCre (blue, n = 8) and Casr-/- (red, n = 11) neurons (Figure 3A,C). VGSC current inactivation was studied using a test pulse to −20 mV, each of which was preceded by a conditioning step (100 ms) to between −140 mV and −20 mV. In T1.1 we observed less inactivation than in T0.2 (Figure 3B, bold traces show currents elicited following prepulse to −80 mV). We compared the effects of [Ca2+]o and CaSR deletion on VGSC current inactivation using plots of normalized conductance and measuring the half maximal voltage (V0.5; circles, Figure 3D,E). The reduction in divalent concentration left-shifted V0.5 (F (1, 18)=56, p<0.0001, 2-way RM ANOVA, Table 10) but CaSR deletion did not (F (1, 18)=0.563, p=0.463). The switch from T1.1 to T0.2 shifted V0.5 by −20 and −21 mV in NesCre and Casr-/-, respectively (−72 ± 2 to −92 ± 2 mV and −73 ± 1 to −94 ± 2 mV).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig3-v2.jpg)
 
-**Figure 3.:** (A) Exemplary traces showing VGSC currents activated by voltage steps from −80 in 10 mV increments (left), in nucleated patches isolated from Nes (blue) and CreCasr (red) neurons in solutions T-/-1.1 and T0.2. The VGSC currents elicited by 10 ms depolarizations to −50 mV (bold) were greater following the switch to T0.2. (B) Exemplary traces showing VGSC currents activated by voltage steps to −20 mV following a 100 ms conditioning step (left), in the same patches as (A) using solutions T1.1 and T0.2. The VGSC currents elicited following conditioning steps to −80 mV (bold) were smaller following the switch to T0.2. (C) Current-voltage plots of average normalized VGSC currents in nucleated patches from Nes (n = 8) and CreCasr (n = 11) neurons in T-/-1.1 (filled circles) and T0.2 (open circles). Currents were normalized using the maximum VGSC current in each recording. (D) Plot of average normalized conductance versus voltage in patches from Nes neurons for activation (square, n = 8) and inactivation (circle, n = 8) in solutions TCre1.1 (filled) and T0.2 (open). Boltzmannn curves are drawn using average values from individual fits and gray broken lines indicate V0.5 values for each condition. (E) Plot of average normalized conductance versus voltage in patches from Casr neurons for activation (square, n = 11) and inactivation (circle, n = 12) in solutions T-/-1.1 (filled) and T0.2 (open). Boltzmannn curves are drawn using average values from individual fits and gray broken lines indicate V0.5 values for each condition. Inset shows plot expanded to emphasize voltage dependence of the window currents. (F and G) represent the plots of D and E expanded to emphasize the voltage dependence of the window currents. (H) Histogram showing V0.5 for VGSC inactivation in T1.1 and T0.2 in patches from Nes and CreCasr neurons. (-/-I) Histogram showing V0.5 for VGSC activation in T1.1 and T0.2 in patches from Nes and CreCasr neurons.-/-
+**Figure 3.:** (A) Exemplary traces showing VGSC currents activated by voltage steps from −80 in 10 mV increments (left), in nucleated patches isolated from NesCre (blue) and Casr-/- (red) neurons in solutions T1.1 and T0.2. The VGSC currents elicited by 10 ms depolarizations to −50 mV (bold) were greater following the switch to T0.2. (B) Exemplary traces showing VGSC currents activated by voltage steps to −20 mV following a 100 ms conditioning step (left), in the same patches as (A) using solutions T1.1 and T0.2. The VGSC currents elicited following conditioning steps to −80 mV (bold) were smaller following the switch to T0.2. (C) Current-voltage plots of average normalized VGSC currents in nucleated patches from NesCre (n = 8) and Casr-/- (n = 11) neurons in T1.1 (filled circles) and T0.2 (open circles). Currents were normalized using the maximum VGSC current in each recording. (D) Plot of average normalized conductance versus voltage in patches from NesCre neurons for activation (square, n = 8) and inactivation (circle, n = 8) in solutions T1.1 (filled) and T0.2 (open). Boltzmannn curves are drawn using average values from individual fits and gray broken lines indicate V0.5 values for each condition. (E) Plot of average normalized conductance versus voltage in patches from Casr-/- neurons for activation (square, n = 11) and inactivation (circle, n = 12) in solutions T1.1 (filled) and T0.2 (open). Boltzmannn curves are drawn using average values from individual fits and gray broken lines indicate V0.5 values for each condition. Inset shows plot expanded to emphasize voltage dependence of the window currents. (F and G) represent the plots of D and E expanded to emphasize the voltage dependence of the window currents. (H) Histogram showing V0.5 for VGSC inactivation in T1.1 and T0.2 in patches from NesCre and Casr-/- neurons. (I) Histogram showing V0.5 for VGSC activation in T1.1 and T0.2 in patches from NesCre and Casr-/- neurons.
+
+**Table 10.**
+ Voltage-gated sodium channel current V0.5 for inactivation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>12.00</td>
+      <td>1</td>
+      <td>12.00</td>
+      <td>F (1, 18)=0.7743</td>
+      <td>p=0.3905</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o</td>
+      <td>3973</td>
+      <td>1</td>
+      <td>3973</td>
+      <td>F (1, 18)=256.2</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>27.49</td>
+      <td>1</td>
+      <td>27.49</td>
+      <td>F (1, 18)=0.5632</td>
+      <td>p=0.4627</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>878.5</td>
+      <td>18</td>
+      <td>48.81</td>
+      <td>F (18, 18)=3.148</td>
+      <td>p=0.0097</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>279.1</td>
+      <td>18</td>
+      <td>15.50</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We also tested how the VGSC activation was affected by CaSR and [Ca2+]o. The peak inward VGSC currents (Figure 3B,D) were divided by the driving voltage and then plotted as conductance-voltage plots. The normalized conductance plots (squares, Figure 3E,F) indicate that the switch from T1.1 to T0.2 significantly facilitated VGSC activation consistent with VGSCs in other excitable cells (V0.5 was hyperpolarized by 10 mV; F (1, 17)=98, p<0.0001; two-way RM ANOVA, Table 11; Hille, 2001). Switching from T1.1 to T0.2 shifted V0.5 by −11 mV and −9 mV in NesCre and Casr-/- neurons respectively (−46 ± 2 to −57 ± 2 mV and −43 ± 1 to −52 ± 1 mV). The unexpected shift in V0.5 for VGSC activation in Casr-/- neurons will reduce the likelihood of VGSC activation (F (1, 17)=4.8, p=0.04) in these cells (Figure 3I). Overlap of the inactivation and activation conductance plots represents the voltage range over which persistent VGSC currents, or window currents, are likely to occur (Chadda et al., 2017). Divalent reduction hyperpolarized this region of overlap toward the RMP (Figure 3F,G insets) increasing the likelihood that persistent VGSC currents were activated at resting membrane potential and therefore contributing to divalent-dependent excitability. The depolarization of VGSC activation gating that resulted from CaSR deletion (Figure 3I), shifted the area of conductance curve overlap for T0.2 in a depolarizing direction (Figure 3G). This effect would reduce the fraction of VGSCs available for activation by T0.2 at the more hyperpolarized RMPs and explain the reduced the likelihood of spontaneous action potential generation in Casr-/- neurons (Figure 1).
+
+**Table 11.**
+ Voltage-gated sodium channel current V0.5 for activation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>4.814</td>
+      <td>1</td>
+      <td>4.814</td>
+      <td>F (1, 17)=0.5668</td>
+      <td>p=0.4618</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o</td>
+      <td>834.5</td>
+      <td>1</td>
+      <td>834.5</td>
+      <td>F (1, 17)=98.24</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>157.6</td>
+      <td>1</td>
+      <td>157.6</td>
+      <td>F (1, 17)=4.813</td>
+      <td>p=0.0424</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>556.7</td>
+      <td>17</td>
+      <td>32.75</td>
+      <td>F (17, 17)=3.855</td>
+      <td>p=0.0040</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>144.4</td>
+      <td>17</td>
+      <td>8.494</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 VGPC currents were isolated and recorded in NesCre and Casr-/- neurons in T1.1 and T0.2 solutions after blocking contaminating currents. Currents were elicited by a series of 60 ms steps from −70 mV to 60 mV in 10 mV increments (Figure 4). The VGPC current amplitudes were measured at the peak and at the end of the depolarizing step (normalized to the value at 60 mV in T1.1). Neither the peak nor end current were affected by reduction of the external divalent concentration or by deletion of CaSR (Figure 4) over the range of voltages. The currents activated at 60 mV were similarly unaffected (Figure 4, Two-way RM ANOVA [(3, 57)=1.347, p=0.2683 and (1, 19)=1.231, p=0.2811, Table 12]). These data indicate that VGPCs are not involved in divalent-dependent excitability in neocortical neurons.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig4-v2.jpg)
 
-**Figure 4.:** (A) Exemplary traces showing VGPC currents activated by voltage steps from −80 in 10 mV increments (left), in a Nes neuron in solutions TCre1.1 and T0.2. The outward currents elicited by the 50 ms voltage step were measured at peak and at the end of the step (average of last 5 ms indicated by gray bar). (B) Current voltage-plot of average normalized VGPC currents (n = 10) in Nes neurons in TCre1.1 (filled circles) and T0.2 (open circles) at peak or end of step. Currents were normalized using the maximum outward current in each condition here and below. (C) Peak and end outward currents at 60 mV elicited in same neurons as B. Two-way RM ANOVA indicates that peak and outward currents were not different in T1.1 or T0.2 ((3, 57)=1.347), p=0.2683 nor were they affected by CaSR deletion (data from E, (1, 19)=1.231, p=0.2811). (D) Current voltage-plot of average normalized VGPC currents (n = 11) in Casr neurons in T-/-1.1 (filled circles) and T0.2 (open circles) at peak or end of step. (E) Peak and end outward currents at 60 mV elicited in same neurons as D.
+**Figure 4.:** (A) Exemplary traces showing VGPC currents activated by voltage steps from −80 in 10 mV increments (left), in a NesCre neuron in solutions T1.1 and T0.2. The outward currents elicited by the 50 ms voltage step were measured at peak and at the end of the step (average of last 5 ms indicated by gray bar). (B) Current voltage-plot of average normalized VGPC currents (n = 10) in NesCre neurons in T1.1 (filled circles) and T0.2 (open circles) at peak or end of step. Currents were normalized using the maximum outward current in each condition here and below. (C) Peak and end outward currents at 60 mV elicited in same neurons as B. Two-way RM ANOVA indicates that peak and outward currents were not different in T1.1 or T0.2 ((3, 57)=1.347), p=0.2683 nor were they affected by CaSR deletion (data from E, (1, 19)=1.231, p=0.2811). (D) Current voltage-plot of average normalized VGPC currents (n = 11) in Casr-/- neurons in T1.1 (filled circles) and T0.2 (open circles) at peak or end of step. (E) Peak and end outward currents at 60 mV elicited in same neurons as D.
 
-## VGSCs are the dominant contributor to divalent-dependent currents
+**Table 12.**
+ Voltage-gated potassium channel currents at 60 mV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interaction</td>
+      <td>1.226e-018</td>
+      <td>3</td>
+      <td>4.086e-019</td>
+      <td>F (3, 57)=0.2271</td>
+      <td>p=0.8772</td>
+    </tr>
+    <tr>
+      <td>[Ca2+]o and time</td>
+      <td>7.270e-018</td>
+      <td>3</td>
+      <td>2.423e-018</td>
+      <td>F (3, 57)=1.347</td>
+      <td>p=0.2683</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>6.054e-017</td>
+      <td>1</td>
+      <td>6.054e-017</td>
+      <td>F (1, 19)=1.231</td>
+      <td>p=0.2811</td>
+    </tr>
+    <tr>
+      <td>Subjects (matching)</td>
+      <td>9.345e-016</td>
+      <td>19</td>
+      <td>4.919e-017</td>
+      <td>F (19, 57)=27.33</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>1.026e-016</td>
+      <td>57</td>
+      <td>1.800e-018</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### VGSCs are the dominant contributor to divalent-dependent currents
 
 To compare the contributions of VGSCs and NALCN to the divalent-dependent depolarization seen in neocortical neurons (Figure 2), we measured the size of the currents elicited at −70 mV in neurons following the switch from T1.1 to T0.2. We used conWT neurons to avoid potential confounding Cre-dependent effects (Qiu et al., 2011). Since NALCN is resistant to the VGSC blocker tetrodotoxin (TTX) (Lu et al., 2007; Swayne et al., 2009) but Gd3+ (10 µM) inhibits NALCN and VGSCs (Elinder and Arhem, 1994; Li and Baumgarten, 2001; Lu et al., 2009), we were able to pharmacologically separate the contributions of VGSCs and NALCN to the basal current following the switch from T1.1 to T0.2 (-31 ± 3 pA, n = 13; Figure 5A–C). Addition of a saturating concentration of TTX (1 µM) in T0.2 inhibited a persistent inward current within a few seconds in all but one of the recordings (Figure 5A–C), consistent with VGSCs contributing to the inward current elicited by T0.2. Switching to T1.1 plus TTX produced minimal change in the basal current on average (Figure 5C). However, in some neurons, T1.1 elicited an outward current (Figure 5A,C), whereas in others there was an inward current (Figure 5B,C) indicating the presence of two types of TTX resistant divalent-sensitive pathways. Presumably, NALCN was contributing to the divalent-dependent TTX-resistant effect observed in Figure 5A. Co-application of Gd3+ (10 µM) following block of VGSCs with TTX, resulted in a small inward deflection of the average basal current in solution T1.1 and largely inhibited sensitivity to concomitant decreases in [Ca2+]o (Figure 5A–C). The reduced sensitivity of neurons to the reduction of [Ca2+]o in the presence of TTX, suggests that VGSCs are a major contributor to the depolarizing current elicited by low [Ca2+]o. Using serial subtraction of the basal currents (Figure 5C), we compared the size of the TTX-sensitive (−28.2 ± 5.3 pA), Gd3+-sensitive (−5.7 ± 3.4 pA) and remaining (3.4 ± 2.0 pA) divalent-dependent currents (Figure 5D; RM-ANOVA, F (1.495, 17.94)=13.30, p=0.0007, Table 13). Multiple comparison testing indicated that the TTX-sensitive divalent-dependent current was greater than the Gd3+-sensitive (p=0.039) and remaining divalent-dependent currents (p=0.0009; Table 14). Similar differences in the relative sizes of the TTX-, Gd3+-, and remainder divalent-dependent basal current currents were also observed in Casr-/-neurons (Figure 5D). While there were rare neurons in which there was a larger Gd3+-sensitive current (Figure 5C) the reduced sensitivity of neurons to the reduction of [Ca2+]o in the presence of TTX, confirms that VGSCs are the major contributor to the depolarizing current elicited by low [Ca2+]o.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig5-v2.jpg)
+
+**Figure 5.:** (A,B) Plots illustrating the responses of the basal currents in two WT neurons during application of T1.1 and T0.2 before and during TTX or TTX and Gd3+. Average basal currents were measured over 50 ms every 2 s with T1.1 and T0.2 application indicated by vertical shading (gray represents T0.2) and blockers application by horizontal bars and broken vertical lines. (C) Plot of average basal current measurements (filled circles) and individual neurons (open circles) in each solution condition in conWT (n = 13) neurons. Each basal current represents the average value recorded during last 20 s of the specific solution application. (D) Average [Ca2+]o dependent basal currents sensitive to TTX and Gd3+ calculated by subtraction of data in C and the remaining [Ca2+]o dependent current after application of both blockers for conWT neurons. (E) Exemplar traces of currents elicited by 50 ms voltage steps between −100 and −50 mV during application of solutions described in C. (F) Plots of the average currents over the last 5 ms of each voltage step in all six solutions for conWT (n = 13). (G) Plots of the average [Ca2+]o dependent currents derived by subtraction of conWT data (F) resolved as total or control (broken blue), in the presence of TTX (broken red), and in the presence of TTX and Gd3+ (remainder green). The TTX-sensitive (solid red), Gd3+-sensitive (solid blue) and NALCN (dotted line) component currents were obtained by further subtraction. Inset shows expanded view at intercept of TTX-sensitive and NALCN components. (H) Exemplars of the TTX- and Gd3+-sensitive [Ca2+]o-dependent currents. Broken red line represents zero current line.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Plot of average basal current measurements (filled circles) and individual neurons (open circles) in each solution condition in Casr-/- (n = 9) neurons. Each basal current represents the average value recorded during last 20 s of the specific solution application. (B) Plots of average currents versus voltage for Casr-/- (n = 9) neurons as per Figure 5F (C) Plots of the average [Ca2+]o-dependent currents derived by subtraction of Casr-/- data as per Figure 5G.
+
+**Table 13.**
+ divalent-dependent basal currents at −70 mV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Treatment</td>
+      <td>6.871e-021</td>
+      <td>2</td>
+      <td>3.435e-021</td>
+      <td>F (1.495, 17.94)=13.30</td>
+      <td>p=0.0007</td>
+    </tr>
+    <tr>
+      <td>Individual (between rows)</td>
+      <td>5.669e-022</td>
+      <td>12</td>
+      <td>4.725e-023</td>
+      <td>F (12, 24)=0.1828</td>
+      <td>p=0.9981</td>
+    </tr>
+    <tr>
+      <td>Residual (random)</td>
+      <td>6.201e-021</td>
+      <td>24</td>
+      <td>2.584e-022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>1.364e-020</td>
+      <td>38</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 14.**
+ Post hoc testing of divalent-dependent basal currents at −70 mV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sidak's multiple comparisons test</th>
+      <th>Mean diff.</th>
+      <th>95% CI of diff.</th>
+      <th>Significant?</th>
+      <th>Summary</th>
+      <th>Adjusted p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TTX sens vs. Gd3+ sens</td>
+      <td>−2.247e-011</td>
+      <td>−4.391e-011 to −1.033e-012</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>0.0392</td>
+    </tr>
+    <tr>
+      <td>TTX sens vs. Rem</td>
+      <td>−3.158e-011</td>
+      <td>−4.899e-011 to −1.418e-011</td>
+      <td>Yes</td>
+      <td>***</td>
+      <td>0.0009</td>
+    </tr>
+    <tr>
+      <td>Gd3+ sens vs. Rem</td>
+      <td>−9.111e-012</td>
+      <td>−2.146e-011 to 3.240e-012</td>
+      <td>No</td>
+      <td>ns</td>
+      <td>0.1789</td>
+    </tr>
+  </tbody>
+</table>
+
 In a fraction of the neurons, an inward deflection of the basal current occurred when external divalent concentration was increased in the presence of TTX (Figure 5B,C) which contrasted with the outward current expected from NALCN deactivation (Figure 5A). We examined the voltage-dependence of the contributions of VGSCs, NALCN, and this second divalent-dependent TTX-resistant current to better characterize divalent-dependent excitability. We used 50 ms voltage steps between −100 and −50 mV and averaged the current over the last 5 ms of the step. Three additional major effects are illustrated by the exemplar current traces (Figure 5E). First, in the absence of blockers, the switch from T1.1 to T0.2 substantially increased the number of large, rapidly inactivating inward currents even at −70 mV following hyperpolarizing steps. Second, in TTX, low [Ca2+]o increased the linear inward and rectifying outward currents. Third, in the presence of TTX and Gd3+ changing between T1.1 and T0.2 had little effect suggesting Gd3+ is blocking both NALCN and the second divalent-dependent TTX-resistant current. These observations were confirmed in the average current-voltage plots (Figure 5F) where it is clear that at −80 to −100 mV the major divalent-dependent currents are inward and resistant to TTX and sensitive to Gd3+, whereas at −70 to −50 mV the largest divalent-dependent currents are TTX-sensitive. The divalent-dependent effects were calculated by subtracting the currents recorded in T1.1 from those in T0.2 under control conditions (Figure 5G, broken red), in the presence of TTX (broken blue) and TTX plus Gd3+ (solid green). The TTX-sensitive (solid red) and Gd3+-sensitive (solid blue) divalent-dependent currents were obtained by additional subtraction (broken red minus broken blue and broken blue minus green). The average divalent-dependent current carried by VGSCs only became evident once the neurons were depolarized above −80 mV (Figure 5G). The time course of deactivation of the persistent divalent-dependent VGSC currents was observed following hyperpolarization from −70 mV (Figure 5H, middle). At more negative potentials, the Gd3+-sensitive current accounted for all the divalent-dependent current and traces showed an ohmic voltage dependence (Figure 5G). However, the Gd3+-sensitive current reversed at −60 mV and outward currents were elicited by steps to −60 and −50 mV that exhibited a voltage-dependent activation and inactivation (Figure 5H, right-hand). This is consistent with the Gd3+-sensitive current consisting of the sum of NALCN and an outward voltage-dependent current. Assuming conservatively that all of the Gd3+-sensitive current at −100 mV could be attributed to NALCN and employing the channel’s linear voltage-dependence and zero mV reversal potential (Lu et al., 2007; Lu et al., 2010), then the amplitude of NALCN currents could be estimated over the voltage range −100 to 0 mV (broken black line, Figure 5G). By interpolation (Figure 5G, inset), the contribution of NALCN and VGSCs to divalent-dependent currents were equal at −77 mV with the contribution from VGSCs increasing with depolarization. A similar analysis of divalent-dependent currents in Casr-/- neurons indicated that the contribution of VGSCs was greater than that of NALCN once membrane potentials were depolarized beyond −72 mV (Figure 5—figure supplement 1). These data indicate that divalent-dependent currents around the resting membrane that contribute to divalent-dependent excitability are mainly attributable to VGSCs.
 
-## Changes in resting potential resulting from lowered divalents are mediated mainly by VGSCs
+### Changes in resting potential resulting from lowered divalents are mediated mainly by VGSCs
 
 The complex architecture of neocortical neurons restricted our ability to clamp the membrane potential following the activation of large, rapid VGSC currents. Thus, we re-examined the contribution of VGSCs and NALCN to the depolarizations that mediate divalent-dependent excitability in current clamp recordings from conWT neurons. Consistent with earlier experiments (Figure 2), switching from T1.1 to T0.2 depolarized the membrane potential from −70 mV by 7.2 ± 1.5 mV (n = 12) and increased spontaneous action potential firing in pharmacologically isolated neurons (Figure 6A,B). We used TTX and Gd3+ to measure the contributions of VGSCs and NALCN respectively to these divalent-dependent depolarizations. TTX blocked action potential generation, as expected, but also hyperpolarized the membrane potential indicating that VGSCs were open in T0.2 (Figure 6A1) and T1.1 (Figure 6A2). The switch from T0.2 to T1.1 in TTX resulted in a hyperpolarization, consistent with divalent-dependent NALCN closure, in some neurons (Figure 6A 1 lower trace and B). Other neurons depolarized with the switch to T1.1 (Figure 6A 2 lower trace and B) consistent with a divalent-dependent outward current similar to that observed in Figure 5B,C. On average the divalent-dependent depolarization was almost entirely prevented by TTX or TTX and Gd3+ co-application (Figure 6B). The amplitude of the divalent-dependent depolarizations in conWT neurons changed with blocker type (1-way RM ANOVA, F (1.219, 13.41)=12.83, p=0.0022, Table 15). The TTX-sensitive component was greater than the Gd3+-sensitive and the blocker-resistant component (p=0.022 and 0.0028 respectively, Table 16). On average VGSCs accounted for 93% of the depolarization that triggers divalent-dependent excitability in WT neurons starting at −70 mV (Figure 6C) and we observed a similar pattern in Casr-/- neurons (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67914/elife-67914-fig6-v2.jpg)
 
-**Figure 6.:** (A) The response of the membrane potential in two WT neurons during application of T1.1 and T0.2 before and during TTX or TTX and Gd3+. T1.1 and T0.2 application is indicated by vertical shading (gray represents T0.2) and blocker applications by horizontal bars and broken vertical lines. The broken red line indicates −70 mV. Voltage-expanded view of the trace illustrates that in the presence of TTX, hyperpolarization (A1) and depolarization (A2) may occur following the switch to T1.1. Membrane potential values highlighted by broken red lines. (B) Plot of average (filled circles) and individual (open circles) Ca2+-dependent voltage changes (filled circles) following the switch from T1.1 to T0.2 (by subtraction of average between-spike membrane potential over the last 10 s of each solution application). Each solution applied to conWT (n = 12) and Casr (n = 9) neurons. (-/-C) Average [Ca2+]o dependent voltage changes sensitive to TTX and Gd3+ calculated by subtraction of data in B, and the remaining [Ca2+]o-dependent voltage after application of both blockers (Figure 6—source data 1). (D) Estimates of the average relative size of the external divalent concentration-dependent NALCN and VGSC currents in neocortical neurons between −100 and −30 mV. NALCN values from Figure 5G. The external divalent concentration-dependent VGSC currents were estimated as follows: the products of the VGSC activation and inactivation conductance plots were calculated for T1.1 and T0.2 using the average Boltzmann curves in Figure 3. These were converted to currents (I = driving voltage x conductance), and scaled to match the average TTX-sensitive current at −70 mV. The current generated in T0.2 minus that generated in T1.1 (ΔICa) was plotted against membrane voltage. (E) Plot of the average divalent-dependent depolarizing current carried by VGSC derived from D. The change in average resting membrane potential recorded in Figure 1 is indicated by the gray bar.Figure 6—source data 1.1.1 to T0.2 that was sensitive to TTX, Gd3+, or resistant to both blockers in conventional WT and Casr neurons.-/-Depolarization units are volts and each sub-column represents measurements from a single neuron.
+**Figure 6.:** (A) The response of the membrane potential in two WT neurons during application of T1.1 and T0.2 before and during TTX or TTX and Gd3+. T1.1 and T0.2 application is indicated by vertical shading (gray represents T0.2) and blocker applications by horizontal bars and broken vertical lines. The broken red line indicates −70 mV. Voltage-expanded view of the trace illustrates that in the presence of TTX, hyperpolarization (A1) and depolarization (A2) may occur following the switch to T1.1. Membrane potential values highlighted by broken red lines. (B) Plot of average (filled circles) and individual (open circles) Ca2+-dependent voltage changes (filled circles) following the switch from T1.1 to T0.2 (by subtraction of average between-spike membrane potential over the last 10 s of each solution application). Each solution applied to conWT (n = 12) and Casr-/- (n = 9) neurons. (C) Average [Ca2+]o dependent voltage changes sensitive to TTX and Gd3+ calculated by subtraction of data in B, and the remaining [Ca2+]o-dependent voltage after application of both blockers (Figure 6—source data 1). (D) Estimates of the average relative size of the external divalent concentration-dependent NALCN and VGSC currents in neocortical neurons between −100 and −30 mV. NALCN values from Figure 5G. The external divalent concentration-dependent VGSC currents were estimated as follows: the products of the VGSC activation and inactivation conductance plots were calculated for T1.1 and T0.2 using the average Boltzmann curves in Figure 3. These were converted to currents (I = driving voltage x conductance), and scaled to match the average TTX-sensitive current at −70 mV. The current generated in T0.2 minus that generated in T1.1 (ΔICa) was plotted against membrane voltage. (E) Plot of the average divalent-dependent depolarizing current carried by VGSC derived from D. The change in average resting membrane potential recorded in Figure 1 is indicated by the gray bar.
+
+**Table 15.**
+ divalent-dependent depolarization.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ANOVA table</th>
+      <th>SS</th>
+      <th>DF</th>
+      <th>MS</th>
+      <th>F (DFn, DFd)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Treatment</td>
+      <td>0.0003944</td>
+      <td>2</td>
+      <td>0.0001972</td>
+      <td>F (1.219, 13.41)=12.83</td>
+      <td>p=0.0022</td>
+    </tr>
+    <tr>
+      <td>Individual (between rows)</td>
+      <td>0.0001037</td>
+      <td>11</td>
+      <td>9.423e-006</td>
+      <td>F (11, 22)=0.6132</td>
+      <td>p=0.7982</td>
+    </tr>
+    <tr>
+      <td>Residual (random)</td>
+      <td>0.0003381</td>
+      <td>22</td>
+      <td>1.537e-005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>0.0008361</td>
+      <td>35</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 16.**
+ Post hoc testing of blocker sensitive fractions of the divalent-dependent depolarization.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sidak's multiple comparisons test</th>
+      <th>Mean diff.</th>
+      <th>95% CI of diff.</th>
+      <th>Significant?</th>
+      <th>Summary</th>
+      <th>Adjusted p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TTX sens vs. Gd3+ sens</td>
+      <td>0.006528</td>
+      <td>0.001005 to 0.01205</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>0.0215</td>
+    </tr>
+    <tr>
+      <td>TTX sens vs. Rem</td>
+      <td>0.007428</td>
+      <td>0.002879 to 0.01198</td>
+      <td>Yes</td>
+      <td>**</td>
+      <td>0.0028</td>
+    </tr>
+    <tr>
+      <td>Gd3+ sens vs. Rem</td>
+      <td>0.0009</td>
+      <td>−0.001301 to 0.003101</td>
+      <td>No</td>
+      <td>ns</td>
+      <td>0.5311</td>
+    </tr>
+  </tbody>
+</table>
 
 Next we estimated the average relative contributions of the divalent-dependent NALCN and VGSC currents over a wider voltage range. Ohmic divalent-dependent NALCN currents were extrapolated from −100 mV, where contaminating currents appear minimal (Figure 5G) and compared with the divalent-dependent VGSC currents predicted from scaled conductance plots (Figure 3D). The VGSC currents were the major contributor to divalent-dependent currents over the −77 to −30 mV voltage range (Figure 6D,E). These findings indicate that VGSCs are the predominant contributor to the depolarizations that lead to action potential generation at lower external divalent concentrations (Figure 6E, gray bar).
 
@@ -101,22 +1111,109 @@ Overall, our studies indicate that divalent-dependent excitability in neurons is
 
 ## Materials and methods
 
-## Genotyping and CaSR mutant mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Casr</td>
+      <td>GenBank</td>
+      <td>Casr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Mouse wild-type strain C57BL/6J × 129×1</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:MGI:5652742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent, strain background (M. musculus)</td>
+      <td>Mouse expressing Nestin-cre mutation</td>
+      <td>The Jackson Laboratory as used in Sun et al., 2018</td>
+      <td>Stock No. 003771</td>
+      <td>C57/BL6J and 129S4 background strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent, strain background (M. musculus)</td>
+      <td>Mouse with Lox mutation to delete exon 7 of Casr</td>
+      <td>Laboratory of Dr. Wenhan Chang, UCSF (Chang et al., 2008)</td>
+      <td>Casrfl/fl</td>
+      <td>C57/BL6J and 129S4 background strain</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Casr</td>
+      <td>Applied Biosystems</td>
+      <td>Mm00443377_m1</td>
+      <td>Quantitative PCR Mouse probe set</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb</td>
+      <td>Applied Biosystems</td>
+      <td>Mm04394036_g1</td>
+      <td>Quantitative PCR Mouse probe set</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nes-Cre1 primer</td>
+      <td>IDT</td>
+      <td>GCAAAACAGGCTCTAGCGTTCG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nes-Cre2 primer</td>
+      <td>IDT</td>
+      <td>CTGTTTCACTATCCAGGTTACGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P3U primer</td>
+      <td>IDT</td>
+      <td>TGTGACGGAAAACATACTGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lox R primer</td>
+      <td>IDT</td>
+      <td>GCGTTTTTAGAGGGAAGCAG</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genotyping and CaSR mutant mice
 
 ConWT animals were obtained from an established colony consisting of a stable strain of C57BL/6J and 129 × 1 mice. The Casr-/- mice were generated by breeding floxed Casr (Chang et al., 2008) and nestin Cre mice (B6.Cg-Tg (Nes-cre)1Kln/J, The Jackson Laboratory) as described previously (Sun et al., 2018). The lox sites were positioned to delete Casr exon seven which resulted in the loss of Casr expression (Chang et al., 2008) and the nestin promoter was designed to ensure floxing occurred in neuronal and glial precursors. The NesCre mice were generated by crossing mice that did not contain the flox Casr mutation but did express the nestin Cre mutation. The Casr-/- and NesCre mice were all generated using a background C57BL/6J and 129S4 strain. Tail DNA extraction was performed using the Hot Shot Technique with a 1–2 hr boil (Montero-Pau et al., 2008). The presence or absence of the flox Casr mutation and Cre mutation were confirmed by PCR for each mouse. MoPrimers used for cre PCR were: Nes-cre1: GCAAAACAGGCTCTAGCGTTCG, Nes-cre2: CTGTTTCACTATCCAGGTTACGG; run on a 1% agarose gel. Primers for lox PCR were: P3U: TGTGACGGAAAACATACTGC, Lox R: GCGTTTTTAGAGGGAAGCAG; run on a 1.5% agarose gel (Chang et al., 2008). Successful deletion of Casr in the neocortical cultures was confirmed by measuring mRNA expression levels with the QuantStudio12K Flex Real-time PCR System (Applied Biosystems) and the TaqMan mouse probe set to Casr (Mm00443377_m1) with ActB (Mm04394036_g1) as the endogenous control (Figure 1—figure supplement 1). The paper describes experiments comparing the effects of CaSR deletion using the Casr-/- mice. After confirming that conWT and NesCre neurons responded similarly to changing external divalents (Figure 1A–D) we used NesCre neurons and Casr-/- neurons to examine if Casr was responsible for the sensitivity to extracellular divalents. This comparison avoided possible confounding cre-dependent effects (Qiu et al., 2011). In later experiments, we used conventional WT to ensure that our measurements of the relative size of the effect of VGSC and NALCN were not impacted by cre-dependent effects (Qiu et al., 2011).
 
-## Neuronal cell culture
+### Neuronal cell culture
 
 Neocortical neurons were isolated from postnatal day 1–2 mouse pups of either sex as described previously (Phillips et al., 2008). All animal procedures were approved by V.A. Portland Health Care System Institutional Animal Care and Use Committee in accordance with the U.S. Public Health Service Policy on Humane Care and Use of Laboratory Animals and the National Institutes of Health Guide for the Care and Use of Laboratory Animals. The active protocols covering this work are 4254–19 and 4359–20. Animals were decapitated following induction of general anesthesia with isoflurane and then the cerebral cortices were removed. Cortices were incubated in trypsin and DNase and then dissociated with a heat polished pipette. Dissociated cells were cultured in MEM plus 5% FBS on glass coverslips. Cytosine arabinoside (4 µM) was added 48 hr after plating to limit glial division. Cells were used, unless otherwise stated after ≥14 days in culture.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Cells were visualized with a Zeiss IM 35 inverted microscope. Whole-cell voltage-and current-clamp recordings were made from cultured neocortical neurons using a HEKA EPC10 amplifier. Except where stated in the text, extracellular Tyrodes solution contained (mM) 150 NaCl, 4 KCl, 10 HEPES, 10 glucose, 1.1 MgCl2, 1.1 CaCl2, pH 7.35 with NaOH. Calcium and magnesium concentrations were modified as described in the Figure legends. The CaSR and surface charge screening are both sensitive to Ca2+ and Mg2+ with Ca2+ being two to three times more effective in both processes (Frankenhaeuser and Hodgkin, 1957; Brown et al., 1993). We modified the divalent concentrations simultaneously to utilize a greater fraction of the dynamic range of the phenomenon under study and to avoid irreversible changes that can occur in Ca2+-free solutions (Frankenhaeuser and Hodgkin, 1957). Synaptic transmission was blocked by the addition of (in µM) 10 CNQX, 10 Gabazine, and 50 APV to the bath solution. Most recordings were made using a potassium gluconate intracellular solution containing (mM) 135 K-gluconate, 10 HEPES, 4 MgCl2, 4 NaATP, 0.3 NaGTP, 10 phosphocreatine disodium, pH 7.2 with KOH hydroxide. In nucleated patch experiments, the pipette solution contained (in mM) 113 Cesium methane sulfonate, 1.8 EGTA, 10 HEPES, 4 MgCl2, 0.2 CaCl2, 4 NaATP, 0.3 NaGTP, 14 phosphocreatine disodium, pH 7.2 with TEA hydroxide. Electrodes used for recording had resistances ranging from 2 to 7 MΩ. Voltages have been corrected for calculated liquid junction potentials (JPCalc, Professor P. H. Barry) and were 14 or 15 mV for all recordings. All experiments were performed at room temperature (21–23°C).
 
-## Data acquisition and analysis
+### Data acquisition and analysis
 
 Whole-cell voltage-and current-clamp recordings were made using a HEKA EPC10 USB amplifier, filtered at 2.9 kHz using a Bessel filter, and sampled at 20 kHz during injection protocols and 10 kHz during continuous acquisition. Analysis was performed using Igor Pro (Wavemetrics, Lake Oswego, OR) and Minianalysis (Synaptosoft). Data values are reported as mean ± SEM. Statistical tests were performed using GraphPad Prism (6) and p-values<0.05, 0.01, 0.001, and 0.0001 were indicate with *, **, ***, and ****. All post-hoc tests were Sidak compensated for multiple comparisons. Data were log-transformed to improve normalization in Figure 2D. To ensure non-zero values, minimize bias, and allow logarithmic transformation, each action potential frequency measurement was increased by 0.02 as the duration of the T1.1 recording at −70 mV was 50 s.
 
-## Solution application
+### Solution application
 
 Solutions were applied by gravity from a glass capillary (1.2 mm outer diameter) placed ~1 mm from the neuron under study. Solutions were switched manually using a low dead volume manifold upstream of the glass capillary. CNQX and Gabazine were supplied by Abcam. KB-R7943 Mesylate was supplied by Tocris. Creatine Phosphate was supplied by Santa Cruz Biotech. Cinacalcet was supplied by Toronto Research Chemicals and Tetrodotoxin by Alomone Other reagents were obtained from Sigma-Aldrich.

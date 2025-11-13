@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.27827.001 Ca 2+ influx through Orai1 channels is crucial for several T cell functions, but a role in regulating basal cellular motility has not been described. Here, we show that inhibition of Orai1 channel activity increases average cell velocities by reducing the frequency of pauses in human T cells migrating through confined spaces, even in the absence of extrinsic cell contacts or antigen recognition. Utilizing a novel ratiometric genetically encoded cytosolic Ca 2+ indicator, Salsa6f, which permits real-time monitoring of cytosolic Ca 2+ along with cell motility, we show that spontaneous pauses during T cell motility in vitro and in vivo coincide with episodes of cytosolic Ca 2+ signaling. Furthermore, lymph node T cells exhibited two types of spontaneous Ca 2+ transients: short-duration ‘sparkles’ and longer duration global signals. Our results demonstrate that spontaneous and self-peptide MHC-dependent activation of Orai1 ensures random walk behavior in T cells to optimize immune surveillance.
+Ca2+ influx through Orai1 channels is crucial for several T cell functions, but a role in regulating basal cellular motility has not been described. Here, we show that inhibition of Orai1 channel activity increases average cell velocities by reducing the frequency of pauses in human T cells migrating through confined spaces, even in the absence of extrinsic cell contacts or antigen recognition. Utilizing a novel ratiometric genetically encoded cytosolic Ca2+ indicator, Salsa6f, which permits real-time monitoring of cytosolic Ca2+ along with cell motility, we show that spontaneous pauses during T cell motility in vitro and in vivo coincide with episodes of cytosolic Ca2+ signaling. Furthermore, lymph node T cells exhibited two types of spontaneous Ca2+ transients: short-duration ‘sparkles’ and longer duration global signals. Our results demonstrate that spontaneous and self-peptide MHC-dependent activation of Orai1 ensures random walk behavior in T cells to optimize immune surveillance.
 
 ## Introduction
 
@@ -35,21 +35,27 @@ In this study, we use human and mouse T cells to assess the role of Orai1 and Ca
 
 ## Results
 
-## Inhibition of Orai1 in human T cells using a dominant-negative construct
+### Inhibition of Orai1 in human T cells using a dominant-negative construct
 
 To study the role of Orai1 channel activity in T cell motility, we transfected human T cells with the dominant-negative mutant Orai1-E106A to selectively eliminate ion conduction through the Orai1 pore. The glutamate residue at position 106 in human Orai1 forms the selectivity filter of the Orai1 pore (Prakriya et al., 2006; Vig et al., 2006; Yeromin et al., 2006), and because the Orai1 channel is a functional hexamer (Hou et al., 2012), mutation of E106 to neutrally charged alanine completely inhibits Ca2+ permeation in a potent dominant-negative manner (Greenberg et al., 2013). Using Fura-2 based Ca2+ imaging, we confirmed Orai1 channel block by E106A in activated human T cells transfected with either eGFP-tagged Orai1-E106A or empty vector for control. Thapsigargin-induced SOCE was greatly diminished in cells expressing eGFP-Orai1-E106A, referred to here as eGFP-E106hi T cells, compared to empty vector-transfected control cells (Figure 1A). Ca2+ entry was also partially inhibited in a population of transfected T cells with minimal eGFP fluorescence referred to as eGFP-E106Alo cells. To confirm that eGFP-E106A inhibits T cell activation, we challenged transfected human T cells with autologous dendritic cells pulsed with the superantigen Staphylococcal enterotoxin B (Lioudyno et al., 2008). T cell proliferation was markedly suppressed in eGFP-E106Ahi CD4+ and CD8+ T cells, but not in eGFP-E106Alo T cells (Figure 1B). This shows that the residual Orai1 channel activity in eGFP-E106Alo T cells is sufficient for T cell activation and proliferation. Taken together, these experiments show that eGFP-tagged Orai1-E106A expression can serve as a robust tool to assess cellular roles of Orai1 channel activity and that transfected cells without detectable eGFP fluorescence can be used as an internal control.
 
 Orai1 function in human T cell motility was evaluated in vivo using a human xenograft model in which immunodeficient NOD.SCID.β2 mice were reconstituted with human peripheral blood lymphocytes, followed by imaging of excised lymph nodes using two-photon microscopy (Greenberg et al., 2013). Reconstitution has been shown to produce a high density of human immune cells within the lymph nodes of immunodeficient mice (Mosier et al., 1988), simulating the crowded migratory environment experienced by T cells under normal physiological conditions. Three weeks after reconstitution, human T cells were purified from the same donor, transfected, and adoptively transferred into the reconstituted NOD.SCID.β2 mice (Figure 1—figure supplement 1). Whereas control T cells transfected with eGFP showed robust expression and successfully homed to lymph nodes following adoptive transfer 24 hr post-transfection, eGFP-E106A transfected T cells did not home to lymph nodes in the same period, consistent with our previous study indicating that functional Orai1 channel activity is required for T cell homing to lymph nodes (Greenberg et al., 2013). To circumvent the homing defect, we injected eGFP-E106A transfected T cells only 3 hr post-transfection, before the expression level of eGFP-E106A had become sufficiently high to block lymph node entry (Figure 1C).
 
-## Orai1 block increases human T cell motility within intact lymph node
+### Orai1 block increases human T cell motility within intact lymph node
 
 To evaluate Orai1 function in T cell motility, we imaged human T cells within intact lymph nodes of reconstituted NOD.SCID.β2 mice by two-photon microscopy (Figure 2A). We found that eGFP-E106Ahi T cells migrated with significantly higher average velocities than co-transferred, mock-transfected CMTMR-labeled T cells (Figure 2B). Although both populations had similar maximum and minimum instantaneous cell velocities (Figure 2C), eGFP-E106Ahi T cells traversed longer distances compared to CMTMR controls (Figure 2D), and directionality ratios, a measure of track straightness, decayed more slowly (Figure 2E) indicating straighter paths when Orai1 channels were blocked. Orai1-blocked cells displayed shallower turn angles than controls (Figure 2F). Furthermore, arrest coefficients, defined by the fraction of time that cell velocity was <2 µm/min, was six-fold lower for eGFP-E106Ahi T cells than for control T cells (Figure 2G). These differences in motility suggest that the increase in average cell velocity caused by Orai1 block is not due to eGFP-E106Ahi T cells moving faster than control T cells, but rather due to a reduced frequency of pausing. Consistent with this interpretation, no eGFP-E106Ahi T cells with average velocities <7 µm/min were observed, unlike control T cells in which 23% of average velocities were <7 µm/min (Figure 2H).
 
 To replicate our findings in a different immunodeficient mouse model, we repeated our human T cell adoptive transfer protocol using NOD.SCID mice depleted of NK cells. Lymph nodes in these mice are small and contain reticular structures but are completely devoid of lymphocytes (Shultz et al., 1995). Similar to experiments on reconstituted NOD.SCID.β2 mice, eGFP-E106Ahi human T cells in NOD.SCID lymph nodes migrated with significantly elevated average velocities compared to control T cells (Figure 2I), and exhibited lower arrest coefficients (Figure 2J). Both eGFP-E106Ahi and control T cells migrated at lower speeds in the NK-depleted NOD.SCID model compared to the reconstituted NOD.SCID.β2 model. Because control human T cells in reconstituted NOD.SCID.β2 lymph nodes migrated at similar speeds to wild-type mouse T cells in vivo (Miller et al., 2002), reconstitution results in a lymph node environment that more closely mimics normal physiological conditions. Furthermore, the greater effect of Orai1 block on T cell arrest coefficients in crowded reconstituted lymph nodes suggests that Orai1’s role in motility is more pronounced in crowded cell environments.
 
-## Orai1 channel activity triggers pauses during human T cell motility in vitro in the absence of extrinsic cell contact
+### Orai1 channel activity triggers pauses during human T cell motility in vitro in the absence of extrinsic cell contact
 
 To evaluate whether the pronounced effect of Orai1 channel block on the arrest coefficient in reconstituted lymph nodes was a result of environmental factors such as increased cellular contacts or increased confinement, we tracked human T cells in microfabricated PDMS chambers with cell-sized microchannels 7 µm high x 8 µm wide. These ICAM-1 coated microchannels simulate the confined environment of densely packed lymph nodes (Jacobelli et al., 2010), while eliminating possible cell-extrinsic factors. Transfected human T cells were activated with plate-bound anti-CD3/28 antibodies and soluble IL-2, then dropped into chambers and monitored by time-lapse confocal microscopy, using phase contrast to visualize eGFP-E106Alo T cells (Figure 3A,B). Upon entry into microchannels, eGFP-E106Ahi T cells migrated with higher average cell velocities than eGFP-E106Alo T cells (Figure 3C), similar to our in vivo findings from intact lymph node (Figure 2). To ensure that the observed difference in cell velocity was due to suppressed Orai1 channel function and not overexpression of Orai1 protein, we also tracked T cells transfected with eGFP-tagged wild-type Orai1. Both eGFP-Orai1hi and eGFP-Orai1lo T cells migrated at the same average cell velocity (Figure 3C), demonstrating that Orai1 channel overexpression, in itself, does not perturb T cell motility in microchannels. Since eGFP-E106Alo T cells have reduced Orai1 channel activity but still retain the same cell velocity as eGFP-Orai1 transfected T cells (c.f., Figures 1A and 3C), this suggests that partial Orai1 function is sufficient to generate normal pausing frequency in confined environments. The frequency distribution of cell velocities in vitro is comparable to our in vivo data: fewer GFP-E106Ahi T cells migrated with average cell velocities <7 µm/min as compared to eGFP-E106Alo T cells (11% vs 29%; Figure 3D). Furthermore, eGFP-E106Ahi T cells exhibited lower arrest coefficients (Figure 3E) and less variation in velocity than eGFP-E106Alo T cells (Figure 3F). Although eGFP-E106Ahi T cells had lower arrest coefficients, the durations of their pauses were not significantly different than in eGFP-E106Alo T cells (Figure 3G). Taken together, the reduced arrest coefficients in eGFP-E106Ahi T cells indicate that inhibition of Orai1 channel activity results in reduced frequency of pauses during T cell motility. These in vitro results confirm our in vivo findings and support the hypothesis that Orai1 activity intermittently triggers cell arrest, resulting in an overall decrease in motility within confined environments. Moreover, since our in vitro microchannel assay eliminates extrinsic cell-cell interactions, this indicates that Orai1 can be spontaneously activated to modulate T cell motility.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig1-v2.jpg)
+
+**Figure 1.:** (A) Averaged thapsigargin-induced Ca2+ entry, measured by fura-2, in activated human CD4+ T cells transfected with eGFP-Orai1-E106A (left) or empty vector control (EV, right, n = 133 cells); eGFP-E106A transfected cells were grouped into two populations, either eGFP-E106Ahi with high eGFP fluorescence (solid squares, n = 43 cells) or eGFP-E106Alo with no detectable eGFP fluorescence (empty squares, n = 115 cells); bars represent SEM. (B) Primary human CD4+ and CD8+ T cells were transfected with eGFP-E106A, then uniformly labeled with the fluorescent cell tracker dye CMTMR and co-cultured with SEB-pulsed primary human dendritic cells from the same donor; proliferation was assessed after 72 hr by CMTMR dilution as measured by flow cytometry. (C) Human CD3+ T cells were transfected with eGFP-E106A and expression level was measured 3 hr post-transfection before adoptive transfer into reconstituted NOD.SCI.β2 mice; cells were recovered from lymph nodes 18 hr later and eGFP fluorescence was used to measure homing to lymph nodes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig1-figsupp1-v2.jpg)
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig2-v2.jpg)
 
@@ -59,45 +65,77 @@ To evaluate whether the pronounced effect of Orai1 channel block on the arrest c
 
 **Figure 3.:** (A,B) Confocal microscopy of eGFP-E106A transfected human CD4+ T cells in microfabricated channels 7 µm high by 8 µm wide, showing two individual eGFP-E106Ahi T cells (A) and two eGFP-E106Alo T cells (B), each circled in red in the first frame; individual images taken 1 min apart, scale bar = 10 µm. (C) Comparison of average cell velocities of eGFP-E106A transfected T cells (eGFP-E106Ahi cells in green, n = 102; eGFP-E106Alo cells in gray, n = 131; 14.2 ± 0.6 µm/min vs. 10.9 ± 0.5 µm/min, p<0.0001 for E106Ahi vs E106Alo cells) and eGFP-Orai1 transfected control T cells (eGFP-Orai1hi cells in green, n = 43; eGFP-Orai1lo cells in gray, n = 76; 10.7 ± 0.8 µm/min vs. 10.5 ± 0.8 µm/min for Orai1hi vs Orai1lo cells; Hodges-Lehmann median difference of −0.84 µm/min, −2.96 to 1.28 µm/min 95% CI); bars represent mean ± SEM, data from independent experiments using five different donors. (D) Frequency distribution of average cell velocities of eGFP-E106Ahi (top) and eGFP-E106Alo (bottom) human T cells, cells with average velocity <7 µm/min are highlighted in gray; tick marks denote the center of every other bin. (E) Arrest coefficients of eGFP-E106Ahi vs eGFP-E106Alo human T cells, defined as fraction of time each individual cell had an instantaneous velocity <2 µm/min (0.05 ± 0.01 vs. 0.08 ± 0.01 for E106Ahi vs E106Alo cells, p=0.0015). (F) Variance in velocity of eGFP-E106Ahi vs eGFP-E106Alo human T cells, coefficient of variation is calculated by standard deviation divided by the mean of instantaneous velocity for each individual cell (39.5 ± 1.9% vs. 45.1 ± 1.6% for E106Ahi vs E106Alo cells, p=0.0138). (G) Duration of pauses for eGFP-E106Ahi vs eGFP-E106Alo human T cells (Hodges-Lehmann median difference of 0 s, −8.43 to 4.71 s 95% CI for E106Ahi vs E106Alo cells); bars represent mean ± SEM, *p<0.05, **p<0.01, ***p<0.005, ****p<0.001.
 
-## Spontaneous Ca2+ signals during confined motility in vitro are correlated with reduced T cell velocity
+### Spontaneous Ca2+ signals during confined motility in vitro are correlated with reduced T cell velocity
 
 To study the correlation between Ca2+ signals and T cell motility, human CD4+ T cells were transfected with Salsa6f, a novel genetically encoded Ca2+ indicator consisting of tdTomato fused to GCaMP6f, activated the T cells for 2 days with plate-bound anti-CD3/28 antibodies, then dropped into ICAM-1 coated microchambers. As previously shown (Dong et al., 2017), Salsa6f is localized to the cytosol, with red fluorescence from tdTomato that reflects fluctuations in cell movement and very low baseline green fluorescence from GCaMP6f that rises sharply during Ca2+ signals (Figure 4). Salsa6f-transfected human T cells were tracked in both confined microchannels (Figure 4A, Video 1) and the open space adjacent to entry into microchannels (Figure 4C, Video 2), to evaluate T cell motility under varying degrees of confinement. Intracellular Ca2+ levels were monitored simultaneously using the ratio of total GCaMP6f fluorescence intensity over total tdTomato fluorescence intensity (designated as G/R ratio), enabling detection of a notably stable baseline ratio unaffected by motility artifacts in moving T cells while reporting spontaneous Ca2+ signals that could be compared to changes in motility (Figure 4B,D, orange and black traces, respectively).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig4-v2.jpg)
 
-**Figure 4.:** 2+signals in human T cells in vitro with Salsa6f.(A,C) Confocal microscopy of Salsa6f transfected human CD4+ T cells in ICAM-1 coated microchannels 7 µm high by 8 µm wide (A, Video 1) and open space (C, Video 2), showing merged red (tdTomato), green (GCaMP6f), and DIC channels; circular structures shown in (C) are support pillars part of the PDMS chamber; scale bar = 10 µm, time = s. (B,D) Total intensity tracings of GCaMP6f (green) and tdTomato (red) fluorescence, G/R ratio (orange), and speed (black), for corresponding T cells shown in (A) and (C); data representative of independent experiments from three different donors.
+**Figure 4.:** (A,C) Confocal microscopy of Salsa6f transfected human CD4+ T cells in ICAM-1 coated microchannels 7 µm high by 8 µm wide (A, Video 1) and open space (C, Video 2), showing merged red (tdTomato), green (GCaMP6f), and DIC channels; circular structures shown in (C) are support pillars part of the PDMS chamber; scale bar = 10 µm, time = s. (B,D) Total intensity tracings of GCaMP6f (green) and tdTomato (red) fluorescence, G/R ratio (orange), and speed (black), for corresponding T cells shown in (A) and (C); data representative of independent experiments from three different donors.
+
+![Video 1.](https://cdn.elifesciences.org/articles/27827/elife-27827-video1.mp4.jpg)
+
+**Video 1.:** Merged red (tdTomato), green (GCaMP6f), and DIC channels; scale bar = 10 µm, time shown in hr:min:s. This video corresponds to Figure 4A.
+
+![Video 2.](https://cdn.elifesciences.org/articles/27827/elife-27827-video2.mp4.jpg)
+
+**Video 2.:** This video corresponds to Figure 4C.
 
 Human T cells expressing Salsa6f migrating in confined microchannels exhibited sporadic Ca2+ signals as brief peaks unrelated to changes in cell velocity, or as more sustained periods of Ca2+ elevation associated with reduced cell velocity (Figure 5A,B). To evaluate the correlation between T cell velocity and Ca2+ signals, we compared average T cell velocities during periods of sustained Ca2+ elevations to average velocities at baseline Ca2+ levels. T cell velocity decreased significantly when cytosolic Ca2+ was elevated above baseline (5.9 ± 0.1 µm/min vs. 10.0 ± 0.1 µm/min, p<0.0001; Figure 5C). Ca2+ signaling episodes that last for 30 s or longer accompany and appear to closely track the duration of pauses in cell movement. Comparison of instantaneous velocities with corresponding cytosolic Ca2+ signals (G/R ratio) by scatter plot revealed a strong inverse relationship: highly motile T cells always exhibited baseline Ca2+ levels, while elevated Ca2+ levels were only found in slower or arrested T cells (Figure 5D). It is important to note that these Ca2+ signals and reductions in velocity occurred in the absence of any extrinsic cell contact or antigen recognition, indicating that Ca2+ elevations, like pausing and Orai1 activation, can be triggered in a cell-intrinsic manner.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig5-v2.jpg)
+
+**Figure 5.:** (A,B) Sample tracks from Salsa6f-transfected human T cells in microchannels, with intracellular Ca2+ levels as G/R ratios for each time point, normalized to zero-time (orange), overlaid with instantaneous cell velocity (black), cells in (A) have stable Ca2+ levels, cells in (B) show brief Ca2+ transients (arrowheads) or sustained Ca2+ signaling (gray highlights). (C) Instantaneous velocity of Salsa6f-transfected human T cells in microchannels during elevated cytosolic Ca2+ levels (red) and during basal Ca2+ levels (green); n = 22 cells, data from independent experiments using three different donors; ****p<0.001. (D) Scatter plot of Salsa transfected human T cells in microchannels, instantaneous cell velocity versus normalized G/R ratio for each individual time point analyzed; red numbers in each quadrant show percent of time points, split by 1.10 normalized G/R ratio and 10 µm/min; n = 4081 points. (E) Mean track velocity of eGFP-E106A-transfected human T cells, comparing eGFP-E106Ahi (green) and eGFP-E106Alo T cells (gray) in confined microchannels vs open space; n = 30, 44, 33, and 62 cells, respectively (15.4 ± 1.2 µm/min vs. 11.3 ± 1.0 µm/min for E106Ahi vs E106Alo cells in microchannels; p=0.0099 and 12.0 ± 1.0 µm/min vs. 12.2 ± 0.7 µm/min for E106Ahi vs E106Alo cells in open space; Hodges-Lehmann median difference of 0.15 µm/min, −2.46 to 2.40 µm/min 95% CI). Bars represent mean ± SEM, data from independent experiments using two different donors, *p<0.05, **p<0.01. (F) Scatter plot of Salsa transfected human T cells in open space, instantaneous cell velocity versus GCaMP6f/tdTomato R/R0 for each individual time point analyzed; red numbers in each quadrant show percent of cells, split by 1.10 normalized G/R ratio and 10 µm/min; n = 723 points.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal microscopy of Cd4-Salsa6f (Het) Th1 cells on open-field ICAM-1-coated coverslips showing merged red (tdTomato) and green (GCaMP6f) channels at three different time points. Scale bar 10 μm. * indicates movement of one cell. (B) Recordings of GCaMP6f (green), tdTomato (red) fluorescence, G/R ratio (orange), and speed (black), for corresponding T cell shown in (A). (C) Average cell velocities of Cd4-Salsa6f Th1 cells on 5 μg/ml ICAM-1-coated coverslips (n = 52 cells, two independent experiments). (D) Scatter plot showing instantaneous cell velocity versus GCaMP6f/tdTomato (G/R) ratio for each individual time point analyzed; numbers show percent of time points, split by 10 µm/min, as in Figure 8D,F; n = 5289 points.
+
 To compare the effects of Orai1 activity on the motility of T cells in a less confined environment, we also monitored T cell migration within the open space in PDMS chambers adjacent to entry into microchannels (c.f., Figure 4A,C). We reasoned that in this two-dimensional space with reduced confinement, T cells may not gain sufficient traction for rapid motility, and instead may favor integrin-dependent sliding due to increased exposure to the ICAM-1-coated surface (Krummel et al., 2014). In addition, the same population of T cells could be tracked as they migrated into and along the confined microchannels, providing a valuable internal control. We found that eGFP-E106Ahi T cells migrated with similar velocities to eGFP-E106Alo T cells in the open space, but these eGFP-E106Ahi T cells still exhibited higher motility in the microchannels than eGFP-E106Alo T cells (Figure 5E). Furthermore, Salsa6f-transfected T cells within the open space rarely produced Ca2+ transients (c.f., Figure 5D,F, top left quadrants, 13% of the time in microchannels vs 2% in open space), implying that Ca2+ elevations, and by extension, Orai1 channel activity, do not generate pauses when T cells are reliant on integrin binding for motility. Consistent with this, differentiated Th1 cells from Cd4-Salsa6f mice also showed similar instantaneous velocities and only rare Ca2+ transients when plated on open-field ICAM-coated coverslips (Figure 5—figure supplement 1). Taken together, these experiments establish a role for Orai1 channels and Ca2+ influx in modulating T cell motility within confined environments.
 
-## Spontaneous T cell Ca2+ transients during basal motility in the lymph node
+### Spontaneous T cell Ca2+ transients during basal motility in the lymph node
 
 Using Salsa6f, expressed in a Cd4Cre-dependent transgenic model we have reported that mouse T cells exhibit frequent transient Ca2+ signals (‘sparkles’) in homeostatic lymph nodes in the absence of specific antigen (Dong et al., 2017). To further analyze the relationship between Ca2+ signaling and motility in detail within lymph nodes, we adoptively transferred homozygotic Cd4-Salsa6f (Hom) T cells into congenic mice and, using two-photon microscopy in explanted recipient lymph nodes, tracked the red tdTomato signal to establish cell position and the green CGaMP6f signal as a measure of cytosolic Ca2+. First, to delineate any adverse effect of Salsa6f on homing and in situ motility of T lymphocytes, we co-injected equal numbers of Cd4-Salsa6f and Cd4Cre control cells into WT recipients (Figure 6A). For simultaneous imaging and to normalize any dye toxicity, Cd4-Salsa6f and Cd4Cre T cells were labeled with CellTrace Yellow (CTY) and CellTrace Violet (CTV), respectively. Comparable numbers of input cells were recovered from the subcutaneous lymph nodes after 18 hr (Figure 6B). Two-photon imaging and tracking in lymph nodes showed typical stop and go motility and meandering cell tracks (Figure 6C,D, Video 3) for both cell types. Instantaneous 3D velocities (Figure 6E) and mean track velocities (Figure 6F) were indistinguishable, as was the decay rate of directionality ratio (Figure 6G). Furthermore, mean-squared displacement (MSD) time analysis showed random-walk behavior for both cell types with similar motility coefficients (Figure 6H,I). Altogether, motility characteristics of Salsa6f T cells are indistinguishable from control T cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig6-v2.jpg)
 
-**Figure 6.:** Cd4 and Cd4-Salsa6f (Hom) cells are shown in teal and in red, respectively. (CreA) Experimental design to characterize homing and motility of Cd4-Salsa6f cells. CTV-labeled Cd4 cells and CTY-labeled Cd4-Salsa6f cells (1:1) were adoptively transferred into wildtype mice, 18 hr prior to LN harvesting. (CreB) Paired numbers of CTV+ and CTY+ cells recovered from lymph nodes (p=0.65, Mann Whitney test). (C) Representative median filtered, maximum intensity projection image showing simultaneously imaged Cd4 and Cd4-Salsa6f cells the lymph node, scale bar = 30 µm. See CreVideo 3. (D) Superimposed tracks with their origins normalized to the starting point. Cells were tracked for more than 20 min. n = 140. (E) Frequency distribution of instantaneous velocities; arrows indicate median, tick marks at the center of every other bin (n > 14,800, three independent experiments). (F) Scatter plot showing mean track speed, black bars indicate overall mean values (11.1 ± 0.4 and 10.7 ± 0.4 µm/min, for Cd4 and Cd4-Salsa6f cells respectively, p=0.69; n = 140). (CreG) Directionality ratio (displacement/distance) over elapsed time (tau = 461 s for Cd4 in teal; tau = 474 s for Cd4-Salsa6f in red. n = 217 time points). (CreH) MSD vs time, plotted on a log-log scale. (I) Measured motility coefficient from 140 tracks (35.1 ± 3.2 vs 39.4 ± 3.9 µm2/min for Cd4 and Cd4-Salsa6f cells, p=0.65).Cre
+**Figure 6.:** Cd4Cre and Cd4-Salsa6f (Hom) cells are shown in teal and in red, respectively. (A) Experimental design to characterize homing and motility of Cd4-Salsa6f cells. CTV-labeled Cd4Cre cells and CTY-labeled Cd4-Salsa6f cells (1:1) were adoptively transferred into wildtype mice, 18 hr prior to LN harvesting. (B) Paired numbers of CTV+ and CTY+ cells recovered from lymph nodes (p=0.65, Mann Whitney test). (C) Representative median filtered, maximum intensity projection image showing simultaneously imaged Cd4Cre and Cd4-Salsa6f cells the lymph node, scale bar = 30 µm. See Video 3. (D) Superimposed tracks with their origins normalized to the starting point. Cells were tracked for more than 20 min. n = 140. (E) Frequency distribution of instantaneous velocities; arrows indicate median, tick marks at the center of every other bin (n > 14,800, three independent experiments). (F) Scatter plot showing mean track speed, black bars indicate overall mean values (11.1 ± 0.4 and 10.7 ± 0.4 µm/min, for Cd4Cre and Cd4-Salsa6f cells respectively, p=0.69; n = 140). (G) Directionality ratio (displacement/distance) over elapsed time (tau = 461 s for Cd4Cre in teal; tau = 474 s for Cd4-Salsa6f in red. n = 217 time points). (H) MSD vs time, plotted on a log-log scale. (I) Measured motility coefficient from 140 tracks (35.1 ± 3.2 vs 39.4 ± 3.9 µm2/min for Cd4Cre and Cd4-Salsa6f cells, p=0.65).
+
+![Video 3.](https://cdn.elifesciences.org/articles/27827/elife-27827-video3.mp4.jpg)
+
+**Video 3.:** Cd4Cre and Cd4-Salsa6f cells and their trails are shown in teal and in red, respectively. Autofluorescent bodies appear as faint stationary yellow structures. Images were acquired at ~11 s interval. Playback speed = 50 frames per second; time shown in hr:min:sec. Video corresponds to Figure 6C.
 
 To determine whether spontaneously occurring Ca2+ signals are correlated with motility, we transferred Cd4-Salsa6f cells alone into wild-type recipients and tracked red and green fluorescence intensities in the lymph nodes after 18 hr. Consistent with our previous observation, adoptively transferred T cells retained Salsa6f indicator in their cytosol, and Ca2+ signals were readily observed in motile Salsa6f+ T cells (Figure 7A, Video 4). We monitored the G/R ratios over time and observed a strong negative correlation between instantaneous cell velocity and Ca2+ levels (Figure 7B). By examination of fluctuating cell velocity traces with corresponding G/R ratios, we found that the Ca2+ rise is clearly associated with a decrease in velocity (Figure 7C and D, Video 5). Notably, on average, peaks of Ca2+ transients precede the average cell velocity minimum, suggesting that spontaneous rise in intracellular Ca2+ levels leads to cell pausing (Figure 7E).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig7-v2.jpg)
 
-**Figure 7.:** 2+transients.(A) Median filtered, maximum intensity projection showing cytosolic labeling (exclusion of Salsa6f from the nucleus) in adoptively transferred Cd4-Salsa6f (Hom) cells (red) in the lymph node of wild-type recipients. Autofluorescent structures appear as yellow bodies. Scale bar = 20 µm. See Video 4. (B) Scatterplot of instantaneous 3D velocity vs ratio of GCaMP6f (green) to tdTomato (red) fluorescence intensity (r = −0.24, Spearman's rank correlation, p<0.0001, n = 4490 pairs). (C) Image sequence showing a migrating T cell and calcium transient from (A). Top row: TdTomato signal is shown in grayscale, overlaid with GCaMP6f signals in green. Scale bar = 10 µm. (Video 5). Center row: Heat map of Green/Red ratios matched to corresponding images in the top row. Arrows indicate local Ca2+ transient. Bottom row: inverted bar graph showing corresponding instantaneous 3D velocities. Asterisk marks a pause in cell motility. (D) Representative track from Cd4-Salsa6f (Hom) T cells in lymph nodes, showing intracellular Ca2+ levels measured by G/R ratio (orange) on left Y-axis and instantaneous 3D velocity (gray) on right Y-axis. (E) Averaged time course of the instantaneous 3D velocity (gray trace, right Y-axis) aligned by the corresponding rise in Salsa6f G/R ratio (orange, left Y-axis). The velocity minimum at time = 5 s-is significantly lower than a baseline from −30 to −10 s (p<0.0001 two-tailed T-test, n = 39 cells).
+**Figure 7.:** (A) Median filtered, maximum intensity projection showing cytosolic labeling (exclusion of Salsa6f from the nucleus) in adoptively transferred Cd4-Salsa6f (Hom) cells (red) in the lymph node of wild-type recipients. Autofluorescent structures appear as yellow bodies. Scale bar = 20 µm. See Video 4. (B) Scatterplot of instantaneous 3D velocity vs ratio of GCaMP6f (green) to tdTomato (red) fluorescence intensity (r = −0.24, Spearman's rank correlation, p<0.0001, n = 4490 pairs). (C) Image sequence showing a migrating T cell and calcium transient from (A). Top row: TdTomato signal is shown in grayscale, overlaid with GCaMP6f signals in green. Scale bar = 10 µm. (Video 5). Center row: Heat map of Green/Red ratios matched to corresponding images in the top row. Arrows indicate local Ca2+ transient. Bottom row: inverted bar graph showing corresponding instantaneous 3D velocities. Asterisk marks a pause in cell motility. (D) Representative track from Cd4-Salsa6f (Hom) T cells in lymph nodes, showing intracellular Ca2+ levels measured by G/R ratio (orange) on left Y-axis and instantaneous 3D velocity (gray) on right Y-axis. (E) Averaged time course of the instantaneous 3D velocity (gray trace, right Y-axis) aligned by the corresponding rise in Salsa6f G/R ratio (orange, left Y-axis). The velocity minimum at time = 5 s-is significantly lower than a baseline from −30 to −10 s (p<0.0001 two-tailed T-test, n = 39 cells).
 
-## Frequency, duration and MHC dependence of T cell Ca2+ transients in homeostatic lymph nodes
+![Video 4.](https://cdn.elifesciences.org/articles/27827/elife-27827-video4.mp4.jpg)
+
+**Video 4.:** Red signal from tdTomato expression in cytosol facilitates identification and tracking of cells; green GCaMP6f signal detects elevation of Ca2+. Autofluorescent structures appear as stationary yellow bodies. Movie is paused at frame 323, zoomed in to emphasize two examples of Ca2+ transients and an autofluorescent body. Images were acquired at 5 s interval. Major tick marks at 20 µm. Playback speed = 50 frames/s, time shown in hr:min:s. Video corresponds to Figure 7A.
+
+![Video 5.](https://cdn.elifesciences.org/articles/27827/elife-27827-video5.mp4.jpg)
+
+**Video 5.:** Left: composite of red tdTomato fluorescence pseudocolored grayscale with green GCaMP6f fluorescence. Right: Corresponding Green/Red ratios, masked to red channel as in Figure 7C. Images acquired at 1 frame every 5 s and 0.5 microns/pixel. Playback speed = 3 frames per second. 0.5 μm/pixel. Video corresponds to Figure 7C.
+
+### Frequency, duration and MHC dependence of T cell Ca2+ transients in homeostatic lymph nodes
 
 Imaging adoptively transferred T cells in recipient lymph nodes is an ideal approach to probe in vivo T-cell motility. However, this approach is limiting when it comes to identifying the abundance and duration of Ca2+ signaling events, because transferred cells label only a fraction of the lymph node (<1%) and longer imaging intervals are required to collect sufficient volume of 4D data (>5 s). Therefore, to measure the endogenous frequency and duration Ca2+ transients, we imaged homeostatic Cd4-Salsa6f (Hom) lymph nodes at two frames per second. All endogenous T cells (Cd4+ and Cd8+) are labeled with the Salsa6f probe in Cd4-Salsa6f lymph nodes because T cells go through the double-positive stage during development in the thymus. More than 800 Ca2+ transients were identified in a 300 × 300 µm area in a 10-min interval. We identified two types of Ca2+ transients: numerous small and brief spots (sparkles); and less frequent large, cell-wide transients (Figure 8A, Video 6). Consistent with our previous report (Dong et al., 2017), most Ca2+ transients were localized to small regions of the cell and of short duration, spanning 2 µm2 in area (Figure 8B) and lasting about 2 s (Figure 8C). Altogether, the strong association of Ca2+ transients with reductions in cell velocity leading to pausing, and the sheer number of Ca2+ transients in homeostatic lymph nodes suggest that cytosolic Ca2+ is a key regulator of basal cellular motility under steady-state conditions in the absence of specific antigen.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig8-v2.jpg)
 
-**Figure 8.:** 2+transients in the steady-state lymph node.(A) Calcium history map of steady-state lymph node. Maximum intensity YT projection of 1200 processed green channel time points showing localized sparkles (white arrows) and cell-wide global Ca2+ transients (magenta arrows). Scale bar = 50 µm along Y axis, 50 s along T axis. See Video 6. (B) Frequency distribution of the area of local Ca2+ signals. (C) Frequency distribution of the duration of local Ca2+ signals.
+**Figure 8.:** (A) Calcium history map of steady-state lymph node. Maximum intensity YT projection of 1200 processed green channel time points showing localized sparkles (white arrows) and cell-wide global Ca2+ transients (magenta arrows). Scale bar = 50 µm along Y axis, 50 s along T axis. See Video 6. (B) Frequency distribution of the area of local Ca2+ signals. (C) Frequency distribution of the duration of local Ca2+ signals.
+
+![Video 6.](https://cdn.elifesciences.org/articles/27827/elife-27827-video6.mp4.jpg)
+
+**Video 6.:** Cd4-Salsa6f (Hom) lymph node imaged at 0.5 s interval, processed to visualize Ca2+ transients (sparkles and cell-wide) in green. Red channel is turned off after beginning to facilitate viewing of Ca2+ transients. Autofluorescent structures appear as stationary green bodies. Playback speed = 100 frames/s. time shown in hr:min:s. Video corresponds to Figure 8A
 
 Lymphocytes migrate in the immune dense micro-environment of secondary lymphoid tissues, constantly interacting with other immune cells, including resident antigen presenting cells (Germain et al., 2012). Indeed, constant recognition of low levels of self-antigens through T cells receptor (TCR)-pMHC interactions is critical for maintaining sensitivity to foreign antigens (Stefanová et al., 2002); and deprivation (>7 days) of pMHC-II signals impairs T cell motility (Fischer et al., 2007). To investigate whether Ca2+ signals in steady state lymph nodes are result of self-peptide recognition, we blocked MHC Class I and II signaling for 48 hr in Cd4-Salsa6f (Hom) lymph nodes. The number of cell-wide events was not significantly different (p=0.06), whereas the sparkle frequency was significantly decreased (p=0.02) in MHC-blocked lymph nodes compared to isotype control (ITC) antibody treatment (Figure 9A,D–G). There was also significant variation in the number of Ca2+ transients in ITC antibody and uninjected controls (Coefficient of variation = 41% to 45%), which may be due to the presence of heterogeneous antigen presenting cells displaying varying amount of self-peptides during steady-state. Most notably, however, a significant number of Ca2+ transients remained even after MHC block, which we believe reflects a basal level of spontaneous Ca2+ activity independent of antigen recognition. In contrast, the intensity of individual Ca2+ transients in MHC blocked lymph nodes did not differ significantly from the ITC controls (Figure 9B,C). Altogether, our data indicate that T cells display substantial spontaneous Ca2+ transients even in absence of self-peptide recognition, suggesting a role in regulating basal T lymphocyte motility.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/27827/elife-27827-fig9-v2.jpg)
 
-**Figure 9.:** 2+transients in steady state lymph nodes.(A) The frequency of cell-wide and local (sparkles) Ca2+ transients in CD-Salsa6f (Hom) lymph nodes 48 hr after injection of MHC class I and II blocking antibodies (MHC), isotype control antibody (ITC), or no antibody (Con). Red bars indicate mean values. For MHC-blocked compared to ITC, the relative event frequencies were: for cell-wide, 314 ± 38 vs 553 ± 77, mean ± SEM, p=0.06; for sparkles, 532 ± 44 vs 1343 ± 272, mean ± SEM, p=0.02, Mann-Whitney test. (B,C) Integrated green channel intensities of Ca2+ transients normalized to SD of green channel for cell-wide events (B) and for sparkles (C). Red bars indicate mean values. For MHC-blocked vs ITC, the relative amplitudes were: for cell-wide (B), 321 ± 14 vs 350 ± 15, mean ± SEM; for sparkles (C), 32 ± 2 vs 37 ± 2, mean ± SEM. (D–G) Representative thresholded images showing cell-wide and local Ca2+ transients, 48 hr after treatment with anti MHC I and II or ITC antibody. The area of the imaging field analyzed is indicated. Scale bar = 100 μm.
+**Figure 9.:** (A) The frequency of cell-wide and local (sparkles) Ca2+ transients in CD-Salsa6f (Hom) lymph nodes 48 hr after injection of MHC class I and II blocking antibodies (MHC), isotype control antibody (ITC), or no antibody (Con). Red bars indicate mean values. For MHC-blocked compared to ITC, the relative event frequencies were: for cell-wide, 314 ± 38 vs 553 ± 77, mean ± SEM, p=0.06; for sparkles, 532 ± 44 vs 1343 ± 272, mean ± SEM, p=0.02, Mann-Whitney test. (B,C) Integrated green channel intensities of Ca2+ transients normalized to SD of green channel for cell-wide events (B) and for sparkles (C). Red bars indicate mean values. For MHC-blocked vs ITC, the relative amplitudes were: for cell-wide (B), 321 ± 14 vs 350 ± 15, mean ± SEM; for sparkles (C), 32 ± 2 vs 37 ± 2, mean ± SEM. (D–G) Representative thresholded images showing cell-wide and local Ca2+ transients, 48 hr after treatment with anti MHC I and II or ITC antibody. The area of the imaging field analyzed is indicated. Scale bar = 100 μm.
 
 ## Discussion
 
@@ -123,30 +161,180 @@ In conclusion, we reveal the existence of an Orai1-dependent cell motility progr
 
 ## Materials and methods
 
-## Mice and antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Salsa6f</td>
+      <td>Dong et al (doi: 10.7554/eLife. 32417)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>Cd4-Salsa6f (Het), Cd4-Salsa6f (Hom)</td>
+      <td>Dong et al (doi: 10.7554/eLife. 32417)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>NOD.Cg-PrkdcscidB2mtm1Unc/J (NOD.SCID.β2)</td>
+      <td>Jackson #002570</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>NOD.CB17-Prkdcscid/J (NOD.SCID)</td>
+      <td>Jackson #001303</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>Cd4Cre</td>
+      <td>Jackson #017336</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson #000664</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (synthetic)</td>
+      <td>eGFP-Orai1-E106A, eGFP-Orai1</td>
+      <td>23455504</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample (human)</td>
+      <td>Primary T cells from healthy human subjects</td>
+      <td>UCI</td>
+      <td></td>
+      <td>IRB approved</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-MHC II (Clone Y3P), anti-MHC I (Clone AF6-88.5.5.3), IgG2a Isotype control (Clone: C1.18.4)</td>
+      <td>BioXCell</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-NK cell antibody</td>
+      <td>Wako Chemicals</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>αCD3 and αCD28</td>
+      <td>Tonbo Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>recombinant human ICAM</td>
+      <td>R&amp;D Systems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>recombinant human IL-2</td>
+      <td>BioLegend</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>EasySep human T Cell Isolation Kit</td>
+      <td>Stemcell Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>EasySep mouse T Cell Isolation Kit</td>
+      <td>Stemcell Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Nucleofection kit</td>
+      <td>Lonza</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Sylgard Elastomer 184 kit</td>
+      <td>Dow Corning</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Cell tracker CMTMR, CellTrace Yellow or CellTrace Violet</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and antibodies
 
 NOD.Cg-PrkdcscidB2mtm1Unc/J (NOD.SCID.β2) and NOD.CB17-Prkdcscid/J (NOD.SCID) mice obtained from Jackson Laboratory (Stock #002570 and #001303) were housed and monitored in a selective pathogen-free environment with sterile food and water in the animal housing facility at the University of California, Irvine. NOD.SCID.β2 mice were reconstituted with human peripheral blood leukocytes (PBLs) as described previously (Mosier et al., 1988). A total of 3 × 107 human PBLs were injected i.p., and experiments were performed 3 weeks later. To inhibit NK cell activity, NOD.SCID mice were i.p. injected with 20 μL anti-NK cell antibody (rabbit anti-Asialo GM1, Wako Chemicals, Irvine, CA) according to manufacturer's instructions 3–4 days before adoptive transfer of human T cells. Mice used were between 8 and 18 weeks of age. The mouse strain expressing Salsa6f selectively in T cells under Cd4-Cre recombinase is described in the comapanion manuscript Dong et al., 2017. In brief, LSL-Salsa6f (tdTomato-V5-GCaMP6f) mouse strain was generated in the C57BL/6N background, as described in the accompanying manuscript, and subsequently crossed to homozygotic Cd4Cre mice (JAX #017336) to generate Cd4-Salsa6f (Het) mice expressing Salsa6f only in T cells. These mice were further bred to generate homozygotic Cd4-Salsa6f (Hom) mice for increased Salsa6f expression and fluorescence. Age- and sex-matched C57BL/6J mice from Jackson Laboratory (stock #000664) were used as wild-type recipients of Cd4-Salsa6f (Hom) T cells. To block TCR-MHC interactions, 2 mg of anti-MHC II (Clone Y3P) and 2 mg of anti-MHC I (Clone AF6-88.5.5.3) or 4 mg of IgG2a Isotype control (Clone: C1.18.4) antibodies (Bio X cell) were injected into Cd4-Salsa6f (Hom) litter mates (i.p) 48 hr before imaging.
 
-## Human T cell preparation for imaging
+### Human T cell preparation for imaging
 
 Human PBMCs were isolated from blood of voluntary healthy donors by Histopaque-1077 (1.077 g/mL; Sigma, St. Louis, MO) density-gradient centrifugation, and human T cells isolated using the appropriate EasySep T Cell Isolation Kit (StemCell Technologies). Purified human T cells were rested overnight in complete RPMI, then transfected by nucleofection (Lonza, Walkersville, MD), using the high-viability ‘U-014’ protocol. Enhanced green fluorescent protein (eGFP)-tagged wild-type Orai1, eGFP-tagged Orai1-E106A mutant, Salsa6f (tdTomato-V5-GCaMP6f construct), or empty vector control were transfected as indicated. Human T cells were used for experiments 3–48 hr after transfection. CMTMR control T cells were prepared by labeling with 10 μM CellTracker CMTMR dye (Invitrogen, Carlsbad, CA) for 10 min at 37°C. For in vivo imaging 10 million human T cells were injected into NOD.SCID.β2 or NOD.SCID mice as indicated. For in vitro imaging experiments, T cells were rested for 3–4 hr in complete RPMI, then washed and activated on plate-bound αCD3 and αCD28 (Tonbo Biosciences, San Diego, CA) in 2.5 ng/mL recombinant human IL-2 (BioLegend, San Diego, CA), and imaged 24–48 hr after transfection.
 
-## Mouse T cell preparation for imaging
+### Mouse T cell preparation for imaging
 
 Single cell suspensions of mouse lymphocytes were prepared by mechanical dissociation of spleen and lymph nodes and passing through 70 µm filter. Cd4+ T cells were isolated using the EasySep T Cell Isolation Kit (StemCell Technologies) according to manufacturer's instructions. The purity of isolated cells was confirmed to be >95% by flow cytometry. To compare motility characteristics, Cd4-Salsa6f (Hom) and Cd4Cre control cells were labeled with 10 µM CellTrace Yellow or CellTrace Violet, respectively, for 20 min at 37°C. To measure Ca2+ during T cell motility, unlabeled Cd4-Salsa6f (Hom) T cells were adoptively transferred into wild-type recipients. A total of 3–10 million T cells were injected into recipient mice in adoptive transfer experiments (i.v: tail-vein or retro-orbital). For confocal imaging on open-field ICAM-1-coated coverslips, Cd4+ T cells from Cd4-Salsa6f (Het) mice were differentiated into Th1 cells using 25 ng/mL rmIL-12 (BioLegend), 10 µg/mL αmouse IL4 (Biolegend) for 4–6 days.
 
-## Microchannel fabrication and imaging
+### Microchannel fabrication and imaging
 
 Microchannel fluidic devices were fabricated by a soft lithography technique with PDMS (polydimethylsiloxane; Sylgard Elastomer 184 kit; Dow Corning, Auburn, MI) as described (Jacobelli et al., 2010; Gérard et al., 2014). PDMS base and curing agent were mixed 10:1 and poured onto the silicon master, then left overnight in vacuum. Once the PDMS was set, it was baked at 55°C for 1 hr and cooled at room temperature. The embedded microchambers were then cut from the mold, and a cell well was punched adjacent to entry into the channels. The PDMS cast and a chambered coverglass (Nunc Lab-Tek, ThermoFisher, Grand Island, NY) were activated for 2 min in a plasma cleaner (Harrick Plasma, Ithaca, NY), bonded together, then incubated at 55°C for 10 min. Prepared chambers were stored for up to 1 month before use. Prior to imaging, microchambers placed in the plasma cleaner for 5 min under vacuum and 1 min of activation, then coated with 5 µg/mL recombinant human ICAM-1/CD54 Fc (R and D Systems, Minneapolis, MN) in PBS for at least 1 hr at 37°C. The microchambers were then washed three times with PBS, and T cells were loaded into cell wells (3−5 × 105 cells resuspended in 10 µL) and incubated at 37°C for at least 1 hr before imaging.
 
-## Confocal imaging and analysis
+### Confocal imaging and analysis
 
 Two different Olympus confocal microscopy systems were used to image T cells in vitro. For experiments tracking T cell motility in microchambers, we used the self-contained Olympus Fluoview FV10i-LIV, with a 473 nm diode laser for excitation and a 60x phase contrast water immersion objective (NA 1.2). The FV10i-LIV contains a built-in incubator set to 37°C, together with a Tokai-Hit stagetop incubator to maintain local temperature and humidity. T cells were imaged in RMPI adjusted to 2 mM Ca2+ and 2% FCS, and mounted at least half an hour before imaging to allow for equilibration. Cells were imaged at 20 s intervals for 20–30 min, and the data analyzed using Imaris software. For Ca2+ imaging of Salsa6f transfected T cells, we used a Fluoview FV3000RS confocal laser scanning microscope, equipped with high-speed resonance scanner and the IX3-ZDC2 Z-drift compensator. Diode lasers (488 and 561 nm) were used for excitation, and two high sensitivity cooled GaAsP PMTs were used for detection of GCaMP6f and tdTomato. Cells were imaged using the Olympus 40x silicone oil objective (NA 1.25), by taking four slice z-stacks at 1.5 µm/step, at 3 s intervals, for up to 20 min. Temperature, humidity, and CO2 were maintained using a Tokai-Hit WSKM-F1 stagetop incubator. Data were processed and analyzed using Imaris software.
 
-## Two-photon imaging and analysis
+### Two-photon imaging and analysis
 
 Multi-dimensional (x, y, z, time, emission wavelength) two-photon microscopy was employed to image fluorescently labeled lymphocytes in explanted mouse lymph nodes, as described (Miller et al., 2002; Matheu et al., 2015). The following wavelengths were used to excite single or combinations of fluorophores: 900 nm to excite eGFP and CMTMR; 800 nm to excite cell trace violet (Thermofisher C34557) and cell trace yellow (Thermofisher, C34567); 920 nm to excite tdTomato and GCaMP6f; Fluorescence emission was split by 484 nm and 538 nm dichroic mirrors into three detector channels, used to visualize CellTrace Violet or second harmonic signal generated from collagen in blue; GCaMP6f or eGFP-Orai1E106A transfected cells in green; tdTomato or CellTrace Yellow or CMTMR-labelled cells in red. For imaging, lymph nodes were oriented with the hilum away from the water dipping microscope objective (Olympus 20x, NA 0.9 or Nikon 25x, NA 1.05) on an upright microscope (Olympus BX51). The node was maintained at 36–37°C by perfusion with medium (RPMI) bubbled with carbogen (95% O2/5% CO2). For imaging of human T cells 3D image stacks of x = 200 μm, y = 162 μm, and z = 50 μm were sequentially acquired at 18–20 s intervals using MetaMorph software (Molecular Devices, Sunnyvale, CA). For tracking adoptively transferred mouse T cells, 3D image stacks of x = 250 μm, y = 250 μm, and z = 20 or 52 μm (Voxel size 0.48 μm x 0.48 μm x 4 μm) were sequentially acquired at 5 or 12 s intervals, respectively, using image acquisition software Slidebook (Intelligent Imaging Innovations) as described previously (Matheu et al., 2015). This volume collection was repeated for up to 40 min to create a 4D data set. For fast imaging of Cd4-Salsa6f (Hom) lymph nodes, we acquired 2DT images of 300 µm x 300 µm (pixel size 0.65 × 0.65 μm) every 0.5 s. For comparing Ca2+ transients in MHC blocking experiments, 3D image stacks of x = 350 μm, y = 350 μm, and z = 20 μm (Voxel size 0.65 μm x 0.65 μm x 4 μm) were sequentially acquired at 5 s intervals. Cell motility data were processed and analyzed using Imaris software (Bitplane USA, Concord, MA). A combination of manual and automatic tracking was used to generate highly accurate cell tracks. The x,y,z coordinates of the tracks were used to calculate speed, M.S.D, directionality ratio, motility coefficients, and to plot tracks as described previously (Gorelik and Gautreau, 2014; Matheu et al., 2015). Calcium transient (sparkles and cell-wide) analysis and estimation of duration was performed as described previously (Dong et al., 2017). XYT data was processed to mask autofluorescent structures, and time was mapped on the Z axis for the purpose of Ca2+ transient identification. Ca2+ transients were identified in Imaris by a surface-based object identification approach, after manual thresholding of intensity, voxel size (>10) and 2 s minimum duration. Objects were modeled as ellipsoids; X and Y diameter measurements of surfaces were used to calculated areas, and Z diameter (time) was used to estimate duration of Ca2+ transients. For MHC-block experiments to estimate the number and intensities of Ca2+ transients, we utilized maximum intensity projections from 6 Z stacks. Integrated intensities were normalized to standard deviations of the green channel for comparison of brightness of Ca2+ transients.
 
-## Data analysis and statistical testing
+### Data analysis and statistical testing
 
 Samples sizes were comparable to previous single cell analyses of motility (Jacobelli et al., 2010; Greenberg et al., 2013; Gérard et al., 2014). Each experiment used separate isolations of human T cells from different donors. With the exception of instantaneous velocities in Figure 6C, each measurement corresponds to a different cell. Mean ± standard error of the mean was used as a measure of the central tendency of distributions. Video analysis was performed using Imaris software, Spots analysis was used for tracking of cell velocity and Volumes analysis was used for measuring total fluorescence intensity of GECI probes. To reduce selection bias in our analysis of motility and trajectory, all clearly visible and live cells were tracked from each video segment. The arrest coefficient is defined as fraction of time each cell had an instantaneous velocity <2 µm/min. The coefficient of variation was defined for each individual cell as the standard deviation divided by the mean of its instantaneous velocity. For Salsa6f imaging analysis, ratio (R) was calculated by total GCaMP6f intensity divided by total tdTomato intensity, while initial ratio (R0) was calculated by averaging the ratios of the first five time points in each individual cell trace. Photobleaching of tdTomato fluorescence intensity (20–30% decline) was corrected in ratio calculations, as a linear function of time. Figures were generated using Prism 6 (GraphPad Software, San Diego, CA) and Origin 5 (OriginLabs, Northampton, MA). Due to the expectation that individual cells exhibit multiple motility modes, and to avoid assumptions concerning the shapes of motility distributions, non-parametric statistical testing was performed (Mann-Whitney U test, unpaired samples, two-tailed, Spearman's rank correlation). Differences with a p value of ≤ 0.05 were considered significant: *p≤0.05; **p<0.01; ***p<0.005; ****p<0.001. Similar distributions were compared using the Hodges-Lehmann median difference value and 95% confidence intervals under the assumption that the starting distributions had similar shapes.

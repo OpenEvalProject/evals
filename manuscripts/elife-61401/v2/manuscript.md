@@ -35,13 +35,21 @@ Many LD-localized proteins use amphipathic helices (AHs) to directly interact wi
 
 The 11-aa repeat AH region is by far the longest in Plin4, containing close to 1000 aa in the human protein, with repeats that are highly homologous at the 33-aa level (Čopič et al., 2018; Scherer et al., 1998). The aa composition of Plin4 AH reveals a striking bias toward small hydrophobic residues, in particular V, T, and A, whereas large residues such as W and F are almost entirely absent (Figure 1A). We have demonstrated that the Plin4 AH region is unfolded in solution, but adopts a highly helical structure in contact with a lipid surface. The low hydrophobicity of this AH promotes specific targeting to LDs, which are permissive for the binding of many amphipathic proteins (Čopič et al., 2018; Prévost et al., 2018). This is likely due to the physical properties of the LD surface, where the spreading of the phospholipid monolayer leads to exposure of the hydrophobic core with which the hydrophobic face of an AH can interact more strongly (Bacle et al., 2017; Chorlay et al., 2019). Due to its extreme length, Plin4 in particular can cover a large LD surface and could act as a substitute for phospholipids (Čopič et al., 2018). A recent study has identified expansion of Plin4 33-aa repeats in a family with a rare autosomal-dominant progressive myopathy, underscoring the importance of studying this protein (Ruggieri et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig1-v2.jpg)
+
+**Figure 1.:** (A) Helical wheel representations of Plin4 and Plin4 4T > S AHs. (B) Summary of LD localization of Plin4 AH and mutants (Čopič et al., 2018). (C) A 10 µl drop of triolein was added to 190 μl of HK buffer containing the indicated proteins (Plin4 12mer, Plin4 4mer or 4T > S, all at 0.5 mg/ml). After vigorous vortexing, the samples were photographed. (D) Dynamics of Plin4 12mer interaction with oil as assessed by FRAP assays. Emulsions of triolein with unlabeled Plin4 12mer (0.5 mg/ml) and Alexa488-labeled Plin4 12mer (0.025 mg/ml) 12mer were prepared as in C and visualized by fluorescence microscopy. FRAP was performed on large droplets, which were entirely bleached (top row), or in the bulk as a control (middle row). The lower row shows a FRAP experiment performed on a limited region of the droplet. A summary of all FRAP experiments is shown in Figure 1—figure supplement 1B. (E) FRAP of Plin4 4mer (0.5 mg/ml) mixed with Alexa488-labeled Plin4 4mer (0.01 mg/ml). (F) Light microscopy images of Plin4 12mer and 4T > S emulsions at different time points after preparation by vortexing. (G) Size distribution as assessed by dynamic light scattering (DLS) of a Plin4 12mer/triolein emulsion from 3 hr to 28 days after the vortexing reaction. Experiment was repeated two times. Scale bars: 5 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Examples of FRAP experiments on oil droplets formed with Plin4 4T > S mutant. Emulsions of triolein were prepared with a solution of 4T > S (0.5 mg/ml) and Alexa488-4T > S (0.025 mg/ml). FRAP was performed using the same protocol as for Plin4 12mer. Note that there were very few droplets present in this suspension. Scale bar: 5 µm. (B) Summary of the results of all FRAP experiments on oil droplets formed with Plin4 12mer, Plin4 4mer or 4T > S (4mer) mutant.
+
 Due to their high abundance on LDs, perilipins are often referred to as LD coat proteins (Sztalryd and Brasaemle, 2017). Protein coats have been well characterized on transport vesicles, for example COPI, COPII, and clathrin coat. In all these cases, the coat forms in a tightly controlled manner by sequential recruitment of coat subunits on the membrane surface (Schekman and Orci, 1996; Taylor et al., 2011). Importantly, coat subunits laterally interact to form a highly polymerized structure covering the surface of a vesicle (Faini et al., 2013). Coat polymerization is in fact the main force that generates these membrane vesicles (Saleem et al., 2015). Perilipins have not been shown to be directly involved in LD budding from the ER; LD formation may be principally driven by lipids, with proteins playing a more regulatory role (Ben M'barek et al., 2017; Chorlay et al., 2019; Santinho et al., 2020). On the other hand, COPI coat components have also been observed to bind to and influence LDs and to regulate recruitment of other LD proteins (Guo et al., 2008; Thiam et al., 2013a; Wilfling et al., 2014; Soni et al., 2009).
 
 Here, we ask whether perilipins possess any of the qualities traditionally associated with protein coats. We focus on the 11-aa repeat AH regions of mammalian perilipins, which directly associate with the lipid surface of LDs. We analyze the stability of perilipin AHs on the lipid surface and their ability to form an immobile structure using various cellular and biochemical approaches, as well as a novel microfluidics set-up to follow the interaction of AHs with oil over time. We show that one perilipin, Plin4, is capable of making highly stable protein-lipid structures by forming an immobile coat on the surface of pure oil or LDs in cells using its unique AH. The Plin4-oil droplets remain stable over the course of many days. In contrast, the interaction of the AHs from other perilipins with LDs or with oil is highly dynamic. The stability of interaction correlates with the size of oil particles, which are smaller in the case of Plin4. Extensive mutagenesis shows that the AH of Plin4 can form an immobile coat due to its organized structure that could enable interhelical interactions on the lipid surface. This model is supported by our measurement of Plin4 density, which reveals tight packing of helices on oil surface.
 
 ## Results
 
-## Purified Plin4 AH forms very stable protein-oil emulsions
+### Purified Plin4 AH forms very stable protein-oil emulsions
 
 We have previously shown that the AH of Plin4 is optimized for LD binding both by its length and particular aa composition (Čopič et al., 2018). The AH sequence of human Plin4 is composed of ~29 highly homologous 33-aa repeats (Figure 1A). The efficiency of LD targeting correlated with AH length: at least four 33-aa repeats of the wild-type Plin4 AH were needed to detect some LD localization in HeLa cells (Figure 1B). Furthermore, the strong bias toward small residues is decisive for LD targeting: mutations that increased hydrophobicity (T > V) made Plin4 promiscuous for other organelles besides LDs; mutations that decreased hydrophobicity (T > S) rendered Plin4 cytosolic (Figure 1B).
 
@@ -55,17 +63,53 @@ For comparison, we used a mutated form of Plin4 4mer (4T > S), in which severa
 
 Analysis by DLS revealed an even more remarkable stability of Plin4 12mer-oil particles over time, as we detected no change in particle size distribution even 28 days after emulsification (Figure 1G). This puts Plin4 AH on par with natural emulsifiers used for technological purposes in food or pharmaceutical industry (McClements and Gumus, 2016). In contrast, the particles formed by Plin4(4T > S) were too heterogenous for analysis by DLS even at the first time-point (3 hr) after emulsion formation.
 
-## Following Plin4-oil interaction in real time using microfluidics
+### Following Plin4-oil interaction in real time using microfluidics
 
 To further study the interaction of Plin4 AH with neutral lipids, we required a method where we could present the AH to the oil surface in a gentle manner and follow in real time the assembly of protein on the oil surface. We developed a microfluidic system, in which we used a glass chip with two channels joined by a T-junction. We introduced the water-based buffer into the main channel and pure triolein into the side channel and stabilized the buffer-triolein interface 50–100 μm below the T-junction by closing the valve in the side-channel (Figure 2A). In this configuration, the buffer-triolein interface is not disturbed by the flow in the main channel, whereas the solutes from the main channel are free to diffuse to the oil surface. In terms of diffusion and hydrodynamic characteristics, this system is similar to microfluidic cavities (Osterman et al., 2016; Vrhovec et al., 2011).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scheme of the microfluidics experimental set-up. (B) Top row: confocal images of the triolein-buffer interface as formed in the microfluidic system after adsorption of Alexa488-labeled Plin4 12mer on the triolein surface and after rinsing with buffer. Bottom row: control experiment with the free fluorophore Alexa488. The intensity profile along the channel center is shown below each confocal image. The protein adsorbs irreversibly at the oil surface, whereas Alexa488 conjugated to free cysteine (A488) does not. See also Videos 1–4. A representative of three independent experiments is shown. (C) Time course of the signal of Alexa488-labeled Plin4 12mer or of free Alexa-488 in the side channel as quantified from the experiment shown in B. A representative of three independent experiments is shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Plin4 12mer readily adsorbed to both oil and glass surfaces and even intercalated into the oil-glass interface, making the glass surface visibly heterogeneous (Videos 1 and 2). In this way, it induced a marked hysteresis in the oil-glass contact angle. The range of equilibrium contact angles spanned from 69° to 75° for buffer, and from 58° to 84° for Plin4 12mer. This hysteresis can result from chemical heterogeneities on a flat glass substrate (Joanny and de Gennes, 1984). (B) Equilibrium pressure difference vs curvature for buffer (black points) and Plin4 12mer (blue points). The slope of the lines represents the surface tension of the interface. In the case of oil-buffer interface the surface tension was 36 ± 3 mN/m (N = 5), and for PLIN4-12mer, the surface tension decreased to 25 ± 1 mN/m (N = 5).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Confocal images of the oil-buffer interface in the microfluidic system after adsorption of Plin4 4mer mutant 4T > S-A488 (0.1 mg/ml) on the oil surface and after rinsing with buffer. The intensity profile along the channel center is shown below each confocal image. (B) Time evolution of signal intensity on the oil surface and in the bulk solution during adsorption and rinsing. A representative of three independent experiments is shown. (C) Competition between Plin4 12mer and 4T > S mutant. The ratio between the intensity on the oil surface and in the bulk solution for a mixture of unlabeled Plin4 12mer: Plin4 12mer-A488 (50:1) and a mixture of unlabeled 4T > S: Plin4 12mer-A488 (50:1). Mean ± SD of the fluorescence intensity of surface/bulk solution is shown.
+
 We introduced Alexa-488-labeled Plin4 12mer into the main channel, and we followed the change in fluorescent signal inside the side channel and on the triolein interface over time using a confocal microscope (Figure 2B and Videos 1–4). As the protein solution in the main channel reached the T-junction, we could observe its diffusion into the side channel (Video 1). After several seconds, we detected an increase in fluorescence on the oil interface, which stabilized in ≈ 3 min at a level threefold higher than the fluorescence of the solution (Figure 2C). We then replaced the protein solution in the main channel with buffer to promote protein dissociation (Video 2). However, the fluorescence at the interface remained constant, indicating a stable interaction between Plin4 12mer and oil. No enrichment of fluorescence on the oil interface was observed when we introduced buffer containing Alexa488 conjugated to free cysteine instead of Plin4 12mer (lower row in Figure 2B,C and Videos 3 and 4). These experiments confirm that Plin4 AH forms a very stable protein layer at the oil/water interface. Fluorescent protein also adsorbed to the glass surface and intercalated into the glass-oil interface. The chemically heterogeneous glass surface induced a marked hysteresis in oil-glass contact angle (Joanny and de Gennes, 1984; Figure 2—figure supplement 1), which allowed us to apply the Laplace law and verify that the protein adsorption lowered the surface tension of the oil interface (Figure 2—figure supplement 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-video1.mp4.jpg)
+
+**Video 1.:** A confocal time-lapse recording of diffusion of Alexa-488-labeled Plin4 12mer into the side microfluidic channel and its adsorption onto the triolein interface. The relative fluorescence intensity profile along the channel center is shown at the bottom. Scale bar: 100 µm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/61401/elife-61401-video2.mp4.jpg)
+
+**Video 2.:** A confocal time-lapse recording of rinsing the side microfluidic channel with buffer after Alexa-488-labeled Plin4 12mer adsorbed to the triolein interface (see Video 1). The fluorescence intensity profile along the channel center is shown at the bottom. Scale bar: 100 µm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/61401/elife-61401-video3.mp4.jpg)
+
+**Video 3.:** A confocal time-lapse recording of Alexa-488 dye diffusion into the side microfluidic channel toward the triolein meniscus. The relative fluorescence intensity profile along the channel center is shown at the bottom. Scale bar: 100 µm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/61401/elife-61401-video4.mp4.jpg)
+
+**Video 4.:** A confocal time-lapse recording of rinsing Alexa-488 dye out of the side microfluidic channel. The fluorescence intensity profile along the channel center is shown at the bottom. Scale bar: 100 µm.
 
 We compared the interaction Plin4 12mer with oil to that of the less hydrophobic Plin4(4T > S) mutant using the microfluidics system. The mutant assembled on the oil surface with no measurable difference in the kinetics of assembly or in the factor of enrichment compared to Plin4 12mer. The difference between Plin4 12mer and Plin4(4T > S) became obvious when the two proteins were used as unlabeled proteins at a 50:1 molar excess over labeled Plin4 12mer. We observed strong fluorescent signal on the oil interface in the presence of the Plin4(4T > S) mutant, but not in the presence of Plin4 12mer, indicating that the wild-type protein out-competed with Plin4(4T > S) for oil coating (Figure 2—figure supplement 2).
 
-## Comparison between the AH of Plin4 and other perilipins
+### Comparison between the AH of Plin4 and other perilipins
 
 So far, we focused on the interaction between the AH of Plin4 and LDs as it represents a most striking example of an LD-binding AH. We wanted to specifically compare the characteristics and LD-binding properties of Plin4 AH with the AH regions of the other human perilipins (Plin1, Plin2, Plin3), which have been shown to contribute to their LD targeting (McManaman et al., 2003; Nakamura and Fujimoto, 2003; Bulankina et al., 2009; Rowe et al., 2016). The number of 11-aa repeats that we could identify in each Plin protein ranged from five for Plin5 to about eight for Plin1/2/3, compared to the 87 repeats in Plin4. In addition, the repeats are more highly conserved in Plin4, and Plin4 AH is also striking for the absence of any deletions or insertions between the repeats (Čopič et al., 2018; Figure 3A). Comparison of the composition of the 11-aa regions showed that they were similar in character in Plin2/3/4, with low hydrophobicity due to a lack of large hydrophobic residues (Figure 3B). Plin1 AH is somewhat more hydrophobic and contains some aromatic residues. A more divergent character of this AH is consistent with the evolutionary divergence of Plin1 from the other perilipins (Granneman et al., 2017). The AH of Plin5 is shorter than in other perilipins and we did not consider it in further analysis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig3-v2.jpg)
+
+**Figure 3.:** (A) Helical wheel representation of the AHs of Plin1 (aa 110–189 aa), Plin2 (aa 101–191 aa), Plin3 (aa 114–204), and Plin4 (aa 246–377, corresponding to the Plin4 4mer construct). In the case of Plin1, Plin2, and Plin3, the predicted AH regions are interspersed by short aa linkers, which are also indicated. Diagrams above the helical wheels show the full-length proteins, with AH regions shown in orange and the four-helix bundle in dark gray. (B) AA composition of the AH of Plin1, 2, 3, and 4 (in %) in comparison with the average aa composition of vertebrate proteins (av. vert). The blue and red backgrounds indicate lower or higher % as compared to vertebrate values, respectively. (C) Localization of GFP fusions with the AH region of Plin1, Plin2, Plin3, or Plin4 in S. cerevisiae cells. The experiment was performed with wild-type yeast cells (upper row), with pet10Δ cells (medium row) grown for 24 hr to stationary phase, or with pet10Δ cells grown to stationary phase and then transferred for 24 hr to oleic acid (OA) medium (lower row). Scale bar: 5 µm. (D) Bar plots of the percentage of cells showing intracellular puncta for the different proteins expressed. Sixty cells per each condition were counted in one of at least two representative experiments. (E) Quantification of the size distribution of fluorescent LDs (labeled with GFP-fusion proteins) in pet10Δ + OA cells. The plots show representative measurements from two independent experiments, where the following number of LDs was counted: Plin1 AH, 141; Plin2 AH, 143; Plin3 AH, 136; Plin4 6mer, 148; Plin4 12mer, 159. Pixel size: 0.091 μm x 0.091 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Co-localization of Plin1 AH, Plin2 AH, Plin3 AH, and Plin4 12mer mCherry fusions and LDs, stained with Bodipy in pet10Δ cells grown in oleic acid. Scale bar: 5 µm. (B) Western blot analysis of yeast protein lysates from pet10Δ cells expressing Plin AH-GFP fusions as indicated. Experiment was repeated three times using different extraction methods.
 
 We first expressed Plin AHs as GFP fusions in budding yeast and assessed their ability to target LDs. Budding yeast was used previously for expression of mammalian perilipins; full-length Plin1, Plin2, and Plin3, as well as their N-terminal halves, which include a region termed ‘PAT domain’ in addition to 11-aa repeats, targeted LDs in this system (Jacquier et al., 2013; Rowe et al., 2016; Čopič et al., 2018). We expressed the AHs of Plin1, Plin2, and Plin3, and fragments of different lengths from the AH region of Plin4, containing 4, 6, or 12 33-aa repeats (132, 198, and 396 aa, respectively). In the case of Plin3, we could not observe any expression of just the AH region (aa 113–205) fused to GFP, therefore we added some additional upstream sequence (aa87-205) (Bulankina et al., 2009). We expressed these constructs under three growth conditions that promote LD accumulation in yeast (Gao et al., 2017): (i) wild-type cells grown to stationary phase; (ii) stationary phase cells lacking the most abundant yeast LD protein, Pet10p/Plin1p (pet10Δ); (iii) pet10Δ cells grown in oleic-acid rich medium, which promoted the formation of large LDs (pet10Δ + OA). In wild-type cells, Plin1 AH, but not Plin2 AH, Plin3 AH, or Plin4 4mer, could be observed on LDs (Figure 3C). In contrast to Plin4 4mer, Plin4 6mer, and Plin4 12mer localized to LDs, in line with our finding that increasing the AH length improves LD targeting (Čopič et al., 2018). In agreement with the work of Gao et al., deletion of Pet10p/Plin1p improved LD targeting of our mammalian constructs, presumably because more LD surface was available (Kory et al., 2015). Targeting to LDs was further increased by the addition of oleic acid to stationary phase cells, which induced large LDs (Figure 3C). In addition, we observed some protein at the PM, in particular in the case of Plin4 AH, consistent with observations from human cells and tissues (Scherer et al., 1998; Ruggieri et al., 2020). Based on these results, we conclude that the 11-aa repeat regions of Plin1, Plin2, Plin3, and Plin4 are all sufficient for targeting LDs. Comparison of different growth conditions (Figure 3D), and the fact that all Plin AHs were expressed at similar levels (Figure 3—figure supplement 1B), allowed us to establish a ranking of Plin AH-LD affinities. Extrapolating to its full length, Plin4 AH has the highest affinity for LDs, followed by Plin1 AH, and finally by Plin2 AH and Plin3 AH. However, correcting for length differences reveals that per unit of AH length, Plin1 AH has a higher affinity for LDs than AHs of Plin2, Plin3, or Plin4. This is consistent with the higher hydrophobicity of Plin1 AH compared to other perilipin AHs (Figure 3B); higher hydrophobicity has been shown to promote LD binding (Čopič et al., 2018; Prévost et al., 2018).
 
@@ -73,21 +117,49 @@ Strikingly, we noticed a difference in the size of the LDs that formed in pet10�
 
 We conclude that AHs from all four perilipins (Plin1-4) can target LDs and that their affinity for LDs correlates with their length and hydrophobicity. However, the AH of Plin4 could reduce the size of LDs more strongly than the AHs of other perilipins.
 
-## Stability of binding of perilipin AHs to LDs in model cellular systems
+### Stability of binding of perilipin AHs to LDs in model cellular systems
 
 We used FRAP to assess the stability of AH binding to yeast LDs. Plin2 AH-GFP and Plin3 AH-GFP could readily exchange between LD surface and the cytosol in cells grown for 24 hr in oleic acid medium, as reflected by a recovery half-life on the order of a few seconds (Figure 4A). The exchange of Plin1 AH-GFP was 2–3 times slower, consistent with results obtained in mammalian cells with N-terminal halves of Plin1, Plin2 and Plin3 (Ajjaji et al., 2019). In striking contrast, Plin4 12mer-GFP displayed almost no recovery on LDs over a period of more than 5 min (Figure 4A). We observed a similar difference between Plin1 AH and Plin4 12mer in cells grown for to early stationary phase in standard growth medium (Figure 4B). However, these LDs were much smaller and more mobile, leading to a large variability in the fluorescence measurement. Due to small size of these LDs, we could not perform a partial FRAP to assess the lateral mobility of Plin AH constructs on LD surface as we did for Plin4 AH on oil in vitro. However, we took advantage of the fact that both Plin4 AH and Plin1 AH also localized to the yeast PM in pet10Δ cells (Figure 4C). Bleaching a small area on the PM in exponentially growing cells showed that Plin4 12mer was highly immobile. Mobility of Plin4 AH at the PM was increased when we used shorter constructs (8mer and 6mer), in agreement with the correlation between AH length and binding affinity (Figure 4D and Čopič et al., 2018). However, even for the shortest Plin4 AH construct for which we consistently observed targeting to yeast membranes, the recovery after photobleaching was at least an order of magnitude slower than for Plin1 AH or Plin3 AH. Given that all AH constructs were expressed at similar levels (Figure 3—figure supplement 1), that is, the differences in the kinetics were not due to differences in protein concentration, we conclude that, in addition to its length, the particular composition of the Plin4 AH enables its stable binding to LDs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig4-v2.jpg)
+
+**Figure 4.:** (A) Dynamics of AH-GFP fusions on LDs in pet10Δ cells grown for 48 hr in oleic acid. Images show two representative FRAP time-courses in cells expressing Plin3 AH-GFP (top panels) or Plin4 12mer-GFP (bottom panels); time (in seconds) is indicated on top. Cells are outlined in white and the bleached areas containing one LD are outlined in green. Graph shows recovery curves for Plin1 AH-GFP (n = 29), Plin2 AH-GFP (n = 14), Plin3 AH-GFP (n = 16), or Plin4 12mer-GFP (n = 24). (B) Recovery curves for Plin1 AH-GFP (n = 11) or Plin4 12mer-GFP (n = 5) on LDs in pet10Δ cells in late exponential phase (small LDs). (C) FRAP of Plin1 AH (n = 14) and Plin4 12mer (n = 15) at the PM in exponentially growing pet10Δ cells. Images show two representative time-courses for Plin1 AH (top) and Plin4 12mer (bottom). Bleached areas are outlined in green. (D) FRAP of Plin4 6mer-GFP (n = 12), Plin4 8mer-GFP (n = 7) and Plin4 12mer-GFP (n = 7) at the PM in exponentially growing wild-type cells. All graphs show the mean ± SD of the fluorescence recovery curves from n FRAP measurements on different LDs or different regions of the PM, as shown in the images. Scale bar: 5 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** FRAP was performed on oleic acid-induced LDs in S2 cells stably transfected with Plin4 12mer-GFP. (A) Fluorescence recovery curves from individual cells in the same experiment performed in control cells (RNAi against luciferase). Each curve represents mean ± SD from FRAP on three LDs in the same cell, as exemplified in the two images below the graph, showing two cells before bleaching. Areas that were bleached are marked with green circles. Fast fluorescence recovery was observed in the cell on the left, slow in the cell on the right. The fluorescence signal in the two images was acquired under the same settings, showing that the total Plin4-GFP expression level in the two cells was similar. However, note the difference in the amount of cytosolic signal. Scale bar: 5 μm. (B) Same as A, except that FRAP was performed on cells in which CCT1 has been depleted by RNAi. (C) Correlation between the ratio of LD/cytosolic Plin4 12mer-GFP signal and the half-time of recovery, as determined from the curves shown in A and B. Each dot represents one cell, data is from two independent experiments. Asterisks denote cells which had very slow recovery kinetics (half-time >100 s; in this case the value was set to 100 s).
+
 We also tested the dynamics of Plin4 12mer-LD interaction in Drosophila Schneider 2 (S2) cells (Figure 4—figure supplement 1A). These cells were used to decipher mechanisms of LD homeostasis (Guo et al., 2008; Krahmer et al., 2011), and we previously demonstrated that expression of Plin4 12mer in S2 cells rescued the increase in size of LDs following the depletion of phosphatidylcholine (PC) (Čopič et al., 2018). Interestingly, we observed a large cell-to-cell variability in the FRAP recovery curves of Plin4 12mer-GFP on LDs, whereas in some cells Plin4-12mer on LDs was largely immobile (half-time of recovery >100 s), similar to our results in yeast, in other cells the recovery could be on the order of 1 s (Figure 4—figure supplement 1A; note that within the same cell, the signal on all LDs recovered at the same rate). PC depletion upon CCTα knocked-down had a small effect, but this was not the main driver of cell-to-cell variability (Figure 4—figure supplement 1B). The level of protein expression was also not very predictive of recovery rate. In contrast, we observed a correlation between the rate of FRAP recovery and the intensity of the Plin4 fluorescent signal on LDs (Figure 4—figure supplement 1C). This observation suggests that Plin4 AH density at the LD surface influences its dynamics, a feature reminiscent of protein coats. At low membrane coverage level, coat subunits diffuse and exchange quickly; at high membrane coverage level, their polymerization by side-side interaction prevents lateral mobility and fast turnover (Saleem et al., 2015; Sorre et al., 2012).
 
-## Comparison of proteolipid droplets formed with Plin4 AH or Plin3 AH
+### Comparison of proteolipid droplets formed with Plin4 AH or Plin3 AH
 
 To study in more detail the difference between Plin4 and other perilipin AHs binding to LDs, we used our in vitro assays to compare the behavior of purified Plin4 AH fragments with that of Plin3 AH. We chose Plin3 AH because it displayed a similar steady-state distribution in yeast as the slightly longer Plin4 4mer; however, it showed a rapid exchange between LDs and the cytosol and it did not decrease LD size in oleic acid media. Mixing purified Plin3 AH with oil resulted in a highly turbid suspension, similar to the suspensions obtained with Plin4 4mer or Plin4 12mer (Figure 5A and Figure 5—figure supplement 1). By DLS, Plin4 4mer-oil droplets behaved like Plin4 12mer oil droplets (see Figure 1G), displaying a particle size profile with a single peak that did not change over 14 days (Figure 5B, left panel). In contrast, the droplets produced by Plin3 AH were more heterogenous with larger peak sizes already 3 hr after droplet formation. Thereafter, we observed a spreading of the peaks until the samples became too complex for DLS analysis (14 days after formation Figure 5B, right panel). Such complexity is generally due to the presence of particles of variable sizes, suggesting that Plin3 AH-oil particles were undergoing fusion due to less stable coating by Plin3 AH. We verified using circular dichroism (CD) that this difference was not due to poor folding of the Plin3 helix (Figure 5—figure supplement 1B): folding of Plin3 AH in the presence of the helix-inducing reagent trifluoroethanol (TFE) was similar to what we previously showed for Plin4 AH (Čopič et al., 2018; see also Figure 6—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig5-v2.jpg)
+
+**Figure 5.:** (A) Turbidity assays with 0.5 mg/ml protein solutions of Plin4 12 mer, Plin4 4mer, Plin4 4mer mutant [4T > S], or Plin3 AH after vigorous vortexing with triolein (15 µl for 285 µl of protein solution). (B) Size distribution of the droplets in triolein emulsions formed with Plin4 4mer or Plin3 AH at various times after vortexing was determined by DLS. Particle size is shown by volume weighted distributions. One of three independent experiments is shown. (C) Protein/oil emulsions or protein solutions of the indicated variants of Plin4 or Plin3 AH were mixed with sucrose and loaded on the bottom of a sucrose step gradient. After centrifugation, four fractions were collected from the bottom and equal volumes were analyzed by protein gels with Sypro Orange staining. (D) Quantification (mean ± SD) of the experiment in C. The number of repeats for each experiment is indicated above the bar graphs. (E) Protein exchange assay in LD emulsions. Top panel: a Plin4 12mer (0.5 mg/ml)/triolein emulsion was prepared by vortexing. Thereafter, 0.025 mg/ml Alexa-488-labeled Plin4-12 mer was gently added. The emulsion was imaged at the indicated time points by light microscopy in bright field (BF) to see all particles and by fluorescence to detect coverage by Alexa-488-labeled Plin4 12 mer. Finally, the suspension was vortexed again to promote maximum incorporation of Alexa488-labeled Plin4 12mer in the emulsion. The middle and lower rows show similar experiments performed with Plin4 4mer and Plin3 AH emulsions, respectively. Scale bars: 5 μm. (F) Quantification (mean ± SD) of the experiments shown in E as determined from four separate fields (73 × 100 μm) in the same experiment. The graphs are representative of at least two independent experiments. Time on the x-axis is plotted using logarithmic scale. Asterisks indicates clustering of particles, which resulted a in low total number of fluorescent puncta, as seen in the image.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Tricine SDS-PAGE showing the purification of Plin3 AH after expression in E. coli. The lanes show the proteins present in the total bacteria extract (total) and after a four-step protocol, which includes centrifugation to separate the soluble and the precipitated fractions, boiling and centrifugation of the soluble fraction to get the heat-resistant fraction, dialysis of the heat resistant fraction (boiled and dialyzed) and anion exchange chromatography with a gradient of NaCl from 10 to 1000 mM. Gel stained with SyproOrange. Molecular weight standards are indicated (in kDa). (B) CD spectra showing ellipticity of Plin3 AH (25 μM) in Tris buffer (blue line) or in buffer with 50% TFE (green line).
+
 Centrifugation of AH-oil suspensions on sucrose gradients revealed a smaller fraction of total Plin3 AH protein associated with the oil fraction (top of the gradients) than Plin4 4mer or Plin4 12mer (Figure 5C,D). This could be either because less Plin3 AH was bound to the oil droplets or because Plin3 AH bound to oil less strongly and dissociated during centrifugation. To distinguish between these possibilities, we performed competition experiments in which we first formed protein-oil droplets by mixing oil with a high concentration of unlabeled purified AH constructs (Plin4 12mer, Plin4 4mer or Plin3 AH). Then, we gently added Alexa488-labeled Plin4 12mer at an excess mass ratio of 20:1 compared to unlabeled protein, and we monitored the fluorescence of the suspensions over time using confocal microscopy (Figure 5E). Consistent with our previous results, we observed no incorporation of fluorescent Plin4 12mer into the preformed Plin4 12mer-oil particles over a period of 24 hr, unless we vortexed the suspension (Figure 5E,F; top panel). We could observe some incorporation of fluorescent Plin4 12mer into Plin4 4mer-oil particles after 3 or 24 hr of incubation, in agreement with a more stable binding of a three-times longer AH and our cellular data (Figure 5E,F; middle panel). In striking contrast, when we pre-formed AH-oil particles using Plin3 AH, Plin4 12mer readily incorporated into these particles, reaching close to maximal particle fluorescence within 10 min after Plin4 12mer addition (Figure 5E,F; bottom panel). In agreement with the DLS data, we also observed clustering of Plin3 AH-formed oil particles, especially after 24 hr of incubation. Because Plin3 AH is only 1.5-times shorter than Plin4 4mer, yet it displays a significantly less stable binding to oil droplets in vitro and to LDs in cells, we conclude that the specific sequence of Plin4 AH is predominantly responsible for its highly stable interaction with LDs.
 
-## The nature and distribution of aa in the polar face of Plin4 AH is critical for LD targeting
+### The nature and distribution of aa in the polar face of Plin4 AH is critical for LD targeting
 
 The Plin4 AH sequence displays a remarkable repetitiveness (Figure 3A). Positions of polar and charged residues are extremely conserved among the 33-aa repeats (Figure 6A). Furthermore, the sequence shows a strong preference for lysine over arginine (22-fold) and for aspartic over glutamic acid (18-fold) (Figure 3B). These considerations prompted us to construct mutants of Plin4 4mer in which we introduced in every 33-aa repeat modest mutations (e.g. N > Q, D > E, or K > R) that should not modify the folding and overall physical chemistry of the helix, including its charge and hydrophobic moment.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig6-v2.jpg)
+
+**Figure 6.:** (A) Weblogo plot of the AH region of human Plin4 as determined by aligning its 29 33-mer repeats. The vertical arrows indicate the mutated aa: the NQ pair (gray), which was mutated into NN, QQ or QN; the three K (blue), which were mutated into R, and the two D (red), which were mutated into E. (B) Co-localization of GFP-Plin4 4mer wild-type and 3K > R (in white) with LDs (purple) in HeLa cells. (C) Quantification of the percentage of LDs stained with the indicated protein per cell. These ‘SuperPlots’ (Lord et al., 2020) show all data fom three to four independent experiments, each with a different color; each light dot represents one cell, whereas each triangle shows the mean from one experiment. The black bars show the mean ± SE of three to four independent experiments. (D) Helical wheels of Plin4 WT and csw mutant. (E) Localization of Plin4 12mer wild-type or csw mutant in HeLa cells. The insets show extended views with the protein in purple and LDs in green (stained with Bodipy). The super plots show the mean ± SE of the % of LDs positive for the indicated protein per HeLa cell as determined from three independent experiments. (F) CD spectra of Plin4 12mer (5 μM) and csw 12mer (7.5 μM) in solution (blue) or in an equal volume of buffer and TFE (green). (G) Light microscopy images of mCherry fusions of Plin4 12mer wild-type or csw mutant in yeast. Top: mCherry fluorescence (mCh); bottom co-localization of mCherry (purple) with LDs stained with bodipy (green). The relative fluorescence signal of mCherry fusions of Plin4 12mer wild-type or csw mutant on LDs and at the PM in PET10-GFP yeast strain was used to build the SuperPlots shown on the right. Data are from three independent experiments, with n ≥ 25 for each condition in each assay. (H) Fluorescence recovery curves of mCherry fusions of Plin4 4mer 2T > V (green points) and 2T > V csw mutants (blue points) on LDs in HeLa cells. Each curve represents FRAP of a single LD in one cell.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) CD spectra showing mean residue ellipticity (MRE) of purified Plin4 4mer (19 μM), 4T > S (19 μM) and NN (6 μM) mutants in Tris buffer (blue lines) or in buffer with 50% TFE (green lines). (B) Tricine SDS-PAGE analysis of the relative concentrations of the purified proteins. Gel was stained with Coomassie Blue.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) SDS-PAGE analysis of purified Plin4 12mer and csw 12mer. Gel stained with Coomassie Blue. (B) Western-blot analysis of Plin4 12mer-GFP and csw 12mer-GFP expression in WT yeasts, showing similar expression levels. Vps10 was used as loading control. (C) Influence of redistribution of charge in Plin4 12mer on LD size in yeast. Plot shows distribution of LD size in pet10Δ cells incubated with OA for 24 hr and expressing GFP fusions of Plin4 12mer or csw 12mer mutant. Graph shows a representative of three independent experiments, with 270 LDs measured for each construct. Pixel size: 0.091 μm x 0.091 μm.
 
 We first focused on the two conserved amide residues: an asparagine present in 25 out of 29 repeats of human Plin4, and a glutamine seven residues apart and conserved in all repeats (Figure 6A). The N[x]6Q sequence was replaced by N[x]6N (NN), Q[x]6Q (QQ) or Q[x]6N (QN). Strikingly, these three mutations almost eliminated the targeting of Plin4 4mer to LDs in HeLa cells (Figure 6C). We purified the NN 4mer mutant to verify by CD that this mutation did not prevent helical folding. Like Plin4 4mer and Plin4(4T > S), this mutant was unfolded in solution but displayed a strong helical signal in the presence of TFE (Figure 6—figure supplement 1). Next, we considered the charged residues. Replacing all aspartates with glutamates (2D > E) led to a small decrease in AH targeting to LDs in HeLa cells, whereas replacing the lysine residues with arginine (3K > R) almost abolished AH targeting to LDs (Figure 6B,C). These results suggested that a precise interaction between charged and/or polar residues could be important for LD binding.
 
@@ -99,15 +171,15 @@ Finally, we tested the interaction of purified csw 12mer with oil. Like Plin4 AH
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig7-v2.jpg)
 
-**Figure 7.:** (A) Fifteen µl triolein was added to 285 µl of HK buffer containing Plin4 12mer wild-type or the csw mutant (0.5 mg/ml each). After vigorous vortexing, the samples were photographed. (B) DLS measurements of the hydrodynamic radius of particles in emulsions shown in (A), from two independent experiments (note that data in assay #1 for Plin4 12mer is the same as in Figure 1G at 3 hr). Dots represent peak maxima and vertical bars represent polydispersity from one representative measurement. (C) A triolein emulsion was prepared with Plin4 12mer or csw 12mer mutant (0.5 mg/ml). At the indicated time, fluorescent Plin4 12mer-Alexa488 (0.025 mg/ml) was gently added. The emulsions were imaged in the bright field mode (BF) and by fluorescence to detect the incorporation of Plin4 12mer-Alexa488 into the proteolipid particles. Finally, the suspension was vortexed again to promote maximum incorporation of Plin4 12mer-Alexa488 in the emulsion. Scale bars: 5 μm. (D) Quantification (mean ± SD) of the experiment shown in B, as determined from four separate fields (73 × 100 μm) in the same experiment. The graphs are representative of at least two independent experiments. Time on the x-axis is plotted using logarithmic scale.  Figure 7—source data 1.
+**Figure 7.:** (A) Fifteen µl triolein was added to 285 µl of HK buffer containing Plin4 12mer wild-type or the csw mutant (0.5 mg/ml each). After vigorous vortexing, the samples were photographed. (B) DLS measurements of the hydrodynamic radius of particles in emulsions shown in (A), from two independent experiments (note that data in assay #1 for Plin4 12mer is the same as in Figure 1G at 3 hr). Dots represent peak maxima and vertical bars represent polydispersity from one representative measurement. (C) A triolein emulsion was prepared with Plin4 12mer or csw 12mer mutant (0.5 mg/ml). At the indicated time, fluorescent Plin4 12mer-Alexa488 (0.025 mg/ml) was gently added. The emulsions were imaged in the bright field mode (BF) and by fluorescence to detect the incorporation of Plin4 12mer-Alexa488 into the proteolipid particles. Finally, the suspension was vortexed again to promote maximum incorporation of Plin4 12mer-Alexa488 in the emulsion. Scale bars: 5 μm. (D) Quantification (mean ± SD) of the experiment shown in B, as determined from four separate fields (73 × 100 μm) in the same experiment. The graphs are representative of at least two independent experiments. Time on the x-axis is plotted using logarithmic scale.
 
-## Model of Plin4 helix on lipid surface
+### Model of Plin4 helix on lipid surface
 
 Based on differences in the behavior of Plin4 and other perilipin AHs and the results obtained with Plin4 AH mutants, we hypothesize that the particular aa distribution in the polar face of the Plin4 AH enables formation of a highly stable helical lattice on a lipid surface. To test this model, we first analyzed the structure of Plin4 AH on the surface of protein-oil particles formed in vitro. For this aim, we purified Plin4 12 mer-oil particles by centrifugation through a sucrose gradient before subjecting them to analysis by CD spectroscopy (Figure 8A). Despite high noise due to the turbidity of the sample, the Plin4 12 mer-oil suspensions yielded spectra typical of α-helices, with a signature peak at 222 nm. Moreover, the ellipticity signal, which depends on protein concentration, compared well with that of pure Plin4 12 mer solution with TFE within the estimated concentration range (Figure 8A). These experiments indicate that on the surface of oil, Plin4 AH folds into a helix, as also observed with the helix-inducing agent TFE or with liposomes containing diphytanoyl phospholipids (Čopič et al., 2018).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/61401/elife-61401-fig8-v2.jpg)
 
-**Figure 8.:** (A) CD analysis of three independent samples of Plin4 12mer-oil emulsion purified by sucrose step gradients (left panel), compared with CD spectra Plin4 12mer in a similar concentration range in Tris buffer (blue lines) or in buffer with 50% TFE (green lines) (B–D). Measurement of Plin4 12mer density at the oil surface. (B) A mixture of Alexa488-labeled and unlabeled Plin4 12mer (1:20) was vortexed with oil and mean droplet surface fluorescence from two independent experiments was quantified. Each data point represents one droplet. (C) Fluorescent Plin4 12mer mixtures at the indicated ratio and concentration were incubated with bead-supported diphytanoyl bilayers. Scale bar: 5 µm. (D) Graph shows mean surface bead fluorescence from five experiments (A to F) with varying Plin4 12mer concentration, Alexa488- to unlabeled Plin4 ratio and number of beads (1x = 1.7×106 ± 20% in 30 µl), as indicated below the graph. Each data point represents one bead; lines indicate mean values for each experiment. Bottom row: Surface area of Plin4 12mer on oil was calculated in each experiment by dividing surface fluorescence on beads per Plin4 surface density with surface fluorescence on oil (panel B); see Supplementary file 2 for details. (E) Model of Plin4 AH binding to oil. 1: Plin4 AH is unfolded in solution and folds in contact with a hydrophobic surface. 2: Plin4 AH binds as a monomeric helix to the lipid surface, using its weakly-hydrophobic face. The interaction is stabilized by the length of the AH. Steps 1–2 are common for all perilipin AHs. 3: Plin4 AHs interact laterally via charged residues, forming a dense and highly stable coat-like lattice.  Figure 8—source data 1.
+**Figure 8.:** (A) CD analysis of three independent samples of Plin4 12mer-oil emulsion purified by sucrose step gradients (left panel), compared with CD spectra Plin4 12mer in a similar concentration range in Tris buffer (blue lines) or in buffer with 50% TFE (green lines) (B–D). Measurement of Plin4 12mer density at the oil surface. (B) A mixture of Alexa488-labeled and unlabeled Plin4 12mer (1:20) was vortexed with oil and mean droplet surface fluorescence from two independent experiments was quantified. Each data point represents one droplet. (C) Fluorescent Plin4 12mer mixtures at the indicated ratio and concentration were incubated with bead-supported diphytanoyl bilayers. Scale bar: 5 µm. (D) Graph shows mean surface bead fluorescence from five experiments (A to F) with varying Plin4 12mer concentration, Alexa488- to unlabeled Plin4 ratio and number of beads (1x = 1.7×106 ± 20% in 30 µl), as indicated below the graph. Each data point represents one bead; lines indicate mean values for each experiment. Bottom row: Surface area of Plin4 12mer on oil was calculated in each experiment by dividing surface fluorescence on beads per Plin4 surface density with surface fluorescence on oil (panel B); see Supplementary file 2 for details. (E) Model of Plin4 AH binding to oil. 1: Plin4 AH is unfolded in solution and folds in contact with a hydrophobic surface. 2: Plin4 AH binds as a monomeric helix to the lipid surface, using its weakly-hydrophobic face. The interaction is stabilized by the length of the AH. Steps 1–2 are common for all perilipin AHs. 3: Plin4 AHs interact laterally via charged residues, forming a dense and highly stable coat-like lattice.
 
 Our model predicts that the AHs should be densely and uniformly packed to enable short-range lateral interactions between specific polar/charged residues. To assess the density of Plin4 helices on the surface of oil particles, we compared the surface fluorescence of Plin4-oil particles, which was very uniform (Figure 8B), with that of Plin4 on bead-supported bilayers (Figure 8C,D). We used bead-supported bilayers (Pucadyil and Schmid, 2010) containing diphytanoyl phospholipids, to which Plin4 AH readily binds (Čopič et al., 2018). These beads are highly uniform in size, can be easily imaged and their sedimentation facilitated bulk measurements of the partitioning of Plin4, allowing us to standardize Plin4 12mer-A488 fluorescence per protein surface density. When the beads were added to a solution of 20–100 nM fluorescent Plin4 12mer at a lipid to protein molar ratio of 200–1000, they acquired within minutes a largely uniform fluorescent signal on their surface, which was stable over time (Figure 8C). By measuring total fluorescence in solution before and after incubation with beads, we determined the fraction of total Plin4 bound to beads (Supplementary file 2). The amount of fluorescent signal on the beads increased roughly linearly with Plin4 12mer concentration or with the concentration of fluorescent protein when we varied the ratio of fluorescent to non-fluorescent Plin4 12mer, and decreased roughly linearly with increasing number of beads (Figure 8D). We used the measurements of average surface fluorescence on beads at five different Plin4-to-bead ratios to calculate the fluorescence per surface Plin4 concentration. Comparing the surface fluorescence on bead-supported bilayers with surface fluorescence of Plin4-oil particles, we estimated the density of Plin4-12mer on oil at around 0.07 molecule/nm2, that is, one molecule occupying an area of around 15 nm2. This is close to the predicted size of a 3–11 helix 396 aa in length with the structure like the AH of α-synuclein (Jao et al., 2008), which would occupy an area of 30 nm2 (0.5 nm x 0.15 nm x 396 aa); therefore, tight packing of such molecules falls within the range of our measurement.
 
@@ -133,13 +205,549 @@ The sequence of Plin4 is particularly striking in light of a recent study that i
 
 ## Materials and methods
 
-## Sequence analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>PLIN1</td>
+      <td>Jacquier et al., 2013</td>
+      <td>PLIN1_HUMAN AAH31084.1</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>PLIN2</td>
+      <td>Jacquier et al., 2013</td>
+      <td>PLIN2_HUMAN AAH05127.1</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>PLIN3</td>
+      <td>Jacquier et al., 2013</td>
+      <td>PLIN3_HUMAN AAC39751.1</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>ThermoFisher</td>
+      <td>C600003</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>BY4742</td>
+      <td>Euroscarf</td>
+      <td>MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>pet10Δ</td>
+      <td>Euroscarf</td>
+      <td>MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 pet10Δ::KANMX4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Pet10-GFP</td>
+      <td>Huh et al., 2003</td>
+      <td>MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 PET10-GFP::HisMX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>ThermoFisher</td>
+      <td>R69007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11122</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit (goat polyclonal, HRP conjugate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A6154</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps10 (mouse monoclonal)</td>
+      <td>Molecular probes</td>
+      <td>A-21274</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse (donkey, HRP conjugate)</td>
+      <td>GE Healthcare</td>
+      <td>NA934V</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plin4 12mer</td>
+      <td>Čopič et al., 2018</td>
+      <td>Human Plin4 (aa510-905)</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plin4 4mer</td>
+      <td>Čopič et al., 2018</td>
+      <td>Human Plin4 (aa246-377)</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plin4(4T &gt; S) (4mer)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plin4(NN) (4mer)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plin4 csw (12mer)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Plin3 AH</td>
+      <td>This study</td>
+      <td>Human Plin3 (aa113 – 205)</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SyproOrange</td>
+      <td>ThermoFisher</td>
+      <td>S6651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa488 C5 maleimide</td>
+      <td>ThermoFisher</td>
+      <td>A10254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa568 C5 maleimide</td>
+      <td>ThermoFisher</td>
+      <td>A20341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy 493/503</td>
+      <td>ThermoFisher</td>
+      <td>11540326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphytanoyl-phosphatidylserine</td>
+      <td>Avanti Lipids</td>
+      <td>AVA-850408C-25Mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphytanoyl-phosphatidylcholine</td>
+      <td>Avanti Lipids</td>
+      <td>AVA-850356C-200Mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass microfluidic chip with a T-junction</td>
+      <td>Dolomite</td>
+      <td>part # 3000086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass microfluidic chip with a T-junction</td>
+      <td>Dolomite</td>
+      <td>part # 3000024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silica Microspheres,5.00 μm, SS05N</td>
+      <td>Bang laboratories</td>
+      <td>SS05003-0.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sequence analysis
 
 The 11-aa repeats of perilipins were identified using HHrepID tool from the MPI Bioinformatics Toolkit server (Biegert and Söding, 2008; Zimmermann et al., 2018). The amphipathic character of these sequences was analysed using HeliQuest (Gautier et al., 2008). Helical wheels were plotted as complete 3–11 helices; the presentation of helices was chosen such as to maximise their hydrophobic moment, as calculated by Heliquest, and inclusion of identified 11-aa repeats, excluding helix-breaking proline (Pace and Scholtz, 1998) from the middle of the helices. The amino acid conservation of the 33-aa repeats of Plin4 was represented using Weblogo (Crooks et al., 2004).
 
-## Plasmid DNA construction
+### Plasmid DNA construction
 
 All plasmids used in this study are listed in Table 1. DNAs encoding AHs of human Plin1, Plin2 and Plin3 were PCR-amplified from the corresponding cDNAs that had been cloned into pGREG576 plasmids (gift from R. Schneiter, U. of Fribourg) (Jacquier et al., 2013). DNA for Plin4 6mer and Plin4 8mer was amplified from plasmid pCLG26, and DNA for Plin4 4mer mutant 4T > S was amplified from plasmids pSB49 (Čopič et al., 2018). Plin4 4mer mutants (2D > E, 3K > 3, NN, QN, and QQ), and Plin4 12mer mutant csw 12mer were constructed using synthetic double-stranded DNA fragments (Supplementary file 1). All 4mer mutants were exact 4x repeats of a 33-aa sequence, based on the parental sequence of human Plin4 fragment aa246-278. The protein sequence for csw 12mer was designed by manually adjusting 33-aa helical wheels of the parental Plin4 12mer sequence using HeliQuest to increase the symmetry of charged residue distribution in the polar side of the helix while minimizing changes in the hydrophobic moment. DNA sequences were optimized for synthesis using the algorithm on the Eurofins website (https://www.eurofinsgenomics.eu). Supplementary file 1 also lists all protein sequences used in this study.
+
+**Table 1.**
+ Plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Insert</th>
+      <th>Region (aa) *</th>
+      <th>Vector</th>
+      <th>Host †</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pCLG03</td>
+      <td>Plin4 4mer</td>
+      <td>hPlin4(246-377)</td>
+      <td>pET21b</td>
+      <td>E. coli</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pKE23</td>
+      <td>Plin4 12mer</td>
+      <td>hPlin4(510-905)</td>
+      <td>pET21b</td>
+      <td>E. coli</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pSB49</td>
+      <td>4T &gt; S (4mer)</td>
+      <td>4x[246–278 M5t] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pMGA9</td>
+      <td>4T &gt; S (4mer)</td>
+      <td>4x[246–278 M5t] ‡</td>
+      <td>pET21b</td>
+      <td>E. coli</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pGFP-Plin1</td>
+      <td>Human Plin1</td>
+      <td>Full cDNA</td>
+      <td>pGREG576 (ADH1pr, GFP)</td>
+      <td>Yeast</td>
+      <td>Jacquier et al., 2013</td>
+    </tr>
+    <tr>
+      <td>pGFP-Plin2</td>
+      <td>Human Plin2</td>
+      <td>Full cDNA</td>
+      <td>pGREG576 (ADH1pr, GFP)</td>
+      <td>Yeast</td>
+      <td>Jacquier et al., 2013</td>
+    </tr>
+    <tr>
+      <td>pGFP-Plin3</td>
+      <td>Human Plin3</td>
+      <td>Full cDNA</td>
+      <td>pGREG576 (ADH1pr, GFP)</td>
+      <td>Yeast</td>
+      <td>Jacquier et al., 2013</td>
+    </tr>
+    <tr>
+      <td>pRHT140</td>
+      <td colspan="2">ADHpr-mcs-GFP</td>
+      <td>pRS416 (CEN-URA3)</td>
+      <td>Yeast</td>
+      <td>S. Leon</td>
+    </tr>
+    <tr>
+      <td>pMGA4</td>
+      <td colspan="2">ADHpr-mcs-mCherry (swap of GFP in pRHT140)</td>
+      <td>pRS416 (CEN-URA3)</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA11</td>
+      <td>Plin1 AH-GFP</td>
+      <td>hPlin1(aa108-194)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA10</td>
+      <td>Plin1 AH-mChe</td>
+      <td>hPlin1(aa108-194)</td>
+      <td>pMGA4</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA6</td>
+      <td>Plin2 AH-GFP</td>
+      <td>hPlin2(aa100-192)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA5</td>
+      <td>Plin2 AH-mCherry</td>
+      <td>hPlin2(aa100-192)</td>
+      <td>pMGA4</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA7</td>
+      <td>Plin3 AH-GFP</td>
+      <td>hPlin3(aa113-205)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA29</td>
+      <td>Plin3(87-205)-GFP</td>
+      <td>hPlin3(aa87-205)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA28</td>
+      <td>Plin3(87-205)-mCherry</td>
+      <td>hPlin3(aa87-205)</td>
+      <td>pMGA4</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA19</td>
+      <td>Plin3 AH</td>
+      <td>hPlin3(aa113 – 205)</td>
+      <td>pET21b</td>
+      <td>E. coli</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pKE31</td>
+      <td>Plin4 4mer-GFP</td>
+      <td>hPlin4(aa246-377)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pKE33</td>
+      <td>Plin4 12mer-GFP</td>
+      <td>hPlin4(aa510-905)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pMGA16</td>
+      <td>Plin4 12mer-mCherry</td>
+      <td>hPlin4(aa510-905)</td>
+      <td>pMGA4</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pCLG26</td>
+      <td>Plin4 8mer</td>
+      <td>hPlin4(aa246-509)</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pMGA31</td>
+      <td>Plin4 6mer-GFP</td>
+      <td>hPlin4(aa246-433)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA23</td>
+      <td>Plin4 8mer-GFP</td>
+      <td>hPlin4(aa246-509)</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pACJ22</td>
+      <td>Plin4 4mer</td>
+      <td>hPlin4(aa246-377)</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pSB58</td>
+      <td>2D &gt; E (4mer)</td>
+      <td>4x[246–278 M17e] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB60</td>
+      <td>NN (4mer)</td>
+      <td>4x[246–278 M18q] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA32</td>
+      <td>NN (4mer)</td>
+      <td>4x[246–278 M18q] ‡</td>
+      <td>pET21b</td>
+      <td>E. coli</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB83</td>
+      <td>QN (4mer)</td>
+      <td>4x[246–278 M19qn] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB65</td>
+      <td>QQ (4mer)</td>
+      <td>4x[246–278 M20q2] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB86</td>
+      <td>3K &gt; R</td>
+      <td>4x[246–278 M21r] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pCLG62</td>
+      <td>Plin4 12mer</td>
+      <td>hPlin4(aa510-905)</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pSB06</td>
+      <td>csw 12mer</td>
+      <td>Charge swap of hPlin4(aa510-905)</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pCLG36</td>
+      <td>Plin4 2T &gt; V 4mer</td>
+      <td>4x[246–278 M10t2] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pACJ41</td>
+      <td>Plin4 csw 2T &gt; V 4mer</td>
+      <td>Charge swap and 2T &gt; V of 4x[246–278 M7kt] ‡</td>
+      <td>pmCherry-N1</td>
+      <td>Mamm</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pSB41</td>
+      <td>Plin4 12mer-GFP</td>
+      <td>hPlin4(aa510-905)</td>
+      <td>pMTWG</td>
+      <td>Dros.</td>
+      <td>Čopič et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pMGA3</td>
+      <td>csw 12mer</td>
+      <td>Charge swap of hPlin4(aa510-905)-GFP</td>
+      <td>pRHT140</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA17</td>
+      <td>csw 12mer</td>
+      <td>Charge swap of hPlin4(aa510-905)-mCherry</td>
+      <td>pMGA4</td>
+      <td>Yeast</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMGA1</td>
+      <td>csw 12mer</td>
+      <td>Charge swap of hPlin4(aa510-905)</td>
+      <td>pET21b</td>
+      <td>E. coli</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Position of amino acids (aa) in human perilipin sequences.† Mamm: mammalian cells, Dros.: Drosophila cells.‡ All mutants are four repeats of the same amino acid sequence._
 
 For expression of proteins in E. coli, PCR-amplified DNA fragments were inserted into pET21b (Novagen) without adding a tag using NheI and XhoI restriction sites, which were introduced by PCR. For expression of Plin3 AH, an additional sequence ‘MASC’ was introduced upstream of the AH.
 
@@ -147,59 +755,59 @@ For expression of GFP fusion proteins in S. cerevisiae, PCR-amplified DNA fragme
 
 Plasmids for expression of mCherry fusion proteins in HeLa cells were constructed by subcloning synthetic genes for Plin4 mutants into pmCherry-N1 (Invitrogen) using BamHI and XhoI restriction sites. All plasmids were verified by sequencing.
 
-## Protein purification
+### Protein purification
 
 All proteins were purified from E. coli without a tag. Plin4 12mer and Plin4 4mer were purified as previously described (Čopič et al., 2018). Plin3 AH (aa103 to 205), Plin4 4T > S, Plin4 NN, and csw 12mer were purified following a similar protocol, with some modifications in the case of Plin 3 AH, as outlined below. E. coli cells BL21DE3 transformed with expression plasmids were grown to O.D. ≈ 0.6 at 37°C from a liquid preculture and induced with 1 mM IPTG for 1 hr at 37°C. Cells from 0.25 l cultures were collected by centrifugation and frozen. The bacterial pellets were thawed in lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM DTT, supplemented with 0.1 mM PMSF, and Complete protease inhibitor cocktail (Roche)). Cells were broken by sonication. The lysate was centrifuged at 100,000 × g for 30 min at 4°C in a 70.1Ti Rotor (40,000 rpm; Beckman). The supernatant in centrifuge tubes was immersed in boiling water (95°C) for 30 min. The resulting cloudy suspension was centrifuged at 100,000 × g for 15 min at 4°C to remove precipitated material. The supernatant was dialyzed against 20 mM Tris-HCl pH 7.5, 10 mM NaCl, 1 mM DTT at 4°C using Spectra/Por membranes with a cut-off of 6000 Da (Spectrum labs) and then centrifuged again at 100,000 × g for 30 min at 4°C. Plin4 4T > S and csw 12mer were then further purified in a single step by cation exchange chromatography on a 20 ml Hiprep S HP column (GE Healthcare), as described for Plin4 AHs (Čopič et al., 2018). Plin4 NN was dialyzed against 20 mM MES-HCl pH 5.5, 10 mM NaCl, 1 mM DTT before cation exchange chromatography and eluted with a salt gradient from 10 mM to 400 mM (three column volumes) in MES buffer. Purified Plin4 NN was then dialyzed against 20 mM Tris-HCl pH 7.5, 100 mM NaCl, 1 mM DTT using a Slide-A-Lyzer dialysis cassette (Thermo Scientific) with a cut- off of 2000 Da. In contrast to Plin4 AH, Plin3 AH has a net negative charge at neutral pH (pI = 4.65). Therefore, Plin3 AH was purified by anion exchange chromatography on a 20 ml Hiprep Q HP column (GE Healthcare). It was eluted with a salt gradient from 10 mM to 400 mM NaCl (three column volumes) in 20 mM Tris-HCl pH 7.5, 1 mM DTT at a flow rate of 2 ml/min using an Akta purifier system (GE Healthcare), eluting at approximately 100 mM NaCl. After analysis of the chromatography fractions by protein electrophoresis, the protein pools were divided in small aliquots and stored at –80°C.
 
-## Protein electrophoresis and determination of protein concentration
+### Protein electrophoresis and determination of protein concentration
 
 Standard Glycine SDS-PAGE was used for the analysis of Plin4 12mer and csw 12mer (Mw ~40 kDa) using homemade 13% acrylamide-bisacrylamide gels. Tricine SDS-PAGE (Schägger and von Jagow, 1987) was used for proteins with lower molecular weight, i.e. Plin4 4mer, Plin4 4T > S, Plin4 NN, or Plin3 AH (9–15 kDa). For that we either used TruPAGE commercial gels (Sigma) and homemade Tris-MOPS buffer (60 mM Trizma, 30 mM 4-Morpholinepropanesulfonic acid (MOPS), 0.1% w/v SDS), or, for better resolution, homemade 16.5% acrylamide-polyacrylamide (29:1) gels run with tricine buffer (100 mM Tris-HCl pH 8–8.5, 0.1 M Tricine, 0.1% SDS) in the cathode and 200 mM Tris HCl pH 8.9 in the anode chamber. Gels were rinsed in 7.5% acetic acid, stained with SyprOrange (Life Technologies) and visualized with a MP imaging system (Bio-Rad) using the Alexa 488 settings. Because all perilipin AH purified construct lack aromatic residues, preventing protein quantification by UV spectroscopy or by Bradford assay, protein concentration was routinely determined by densitometry of Sypro-Orange or Coomassie Blue stained gels against a calibration curve with protein standards (Sigma) using ImageJ. Quantification by gel electrophoresis was verified by Ellman´s reaction method as previously described (Čopič et al., 2018).
 
-## Protein labeling with fluorescent probes
+### Protein labeling with fluorescent probes
 
 Purified AHs were covalently labeled via cysteines using Alexa C5 maleimide probes (either 488 or 568; Thermofisher). Plin4 12mer, Plin4 4mer, and Plin4 4T > S were labeled on endogenous cysteines present in their AHs; they all contain four cysteines in total. Plin3 AH is devoid of cysteines, therefore a single cysteine was introduced at its N-terminus. To remove DTT, 1 ml of protein solution at concentration 0.7 mg/ml (18 μM of Plin4 12mer and csw 12mer, 50 μM of Plin4 4mer and Plin4 4T > S) was exchanged into labelling buffer (20 mM Tris-HCl pH 7.5, 100 mM NaCl) using size exclusion NAP10 columns (GE Healthcare). Protein-containing fractions were identified by protein electrophoresis and pooled. Protein solutions were incubated for 5 min at 4°C with Alexa C5 maleimide probes at an equimolar ratio to their total number of cysteines (1 ml reaction volume). The reactions were stopped by the addition of DTT to 10 mM final concentration and loaded on NAP10 columns to separate the labeled protein from the excess of fluorescent probe. Fractions were analysed by protein electrophoresis. Fluorescence in the gel was directly visualized on ChemiDoc MP imaging system (Bio-Rad) either with Alexa 488 or SyproRuby (for Alexa 568) settings. Fractions with labeled protein were pooled, aliquoted, and stored at −80°C. The same protocol was used for labeling of free cysteine, but without NAP10 purification steps.
 
 We used FRAP assays on protein-oil emulsions (see below) with different ratios of labeled to unlabeled proteins to verify that the fluorescent label did not change the behavior of the protein. This was not the case for labeled Plin3 AH, thus we only used this protein in unlabeled form in our biochemical assays.
 
-## Preparation of protein-oil emulsions
+### Preparation of protein-oil emulsions
 
 Proteins were diluted to 0.5 mg/ml in freshly degassed HKM buffer (50 mM Hepes-KOH pH 7.2, 120 mM K-acetate, 1 mM MgCl2) supplemented after degassing with 1 mM DTT. 190 μl of each solution were pipetted into a 600 μl glass tube, and a 10 μl drop of triolein (>99% purify, T7140 Sigma) was added to the top. In some cases, emulsions were prepared to have a final volume of 100 μl and the drop of triolein was 5 μl. They were vortexed manually at a fixed angle of ~30° for three cycles of 30 s on 30 s off at 25°C under argon atmosphere. Images of resulting emulsions were taken with a compact camera. For analysis by fluorescent microscopy, emulsions were prepared using a mixture of fluorescent and unlabeled protein at a mass ratio 1:20 for Plin4 12mer and 4T > S, and 1:50 for Plin4 4mer.
 
-## Dynamic light scattering (DLS)
+### Dynamic light scattering (DLS)
 
 Measurements of the mean hydrodynamic radius of the Plin4-oil droplets by dynamic light scattering were performed on a sample taken from the middle of the tube, avoiding any unreacted oil that remained at the top of the emulsion, at least 3 hr after vortexing to prevent the interference of gas bubbles with the measurement. Subsequent samples at later time points were removed in the same manner without any additional mixing. Emulsion samples were diluted 100-fold in freshly degassed HKM buffer with 1 mM DTT. Measurements were performed on a Zetasizer Nano ZS machine (Malvern) at 25°C, and data were processed using the CONTIN method.
 
-## Observation of protein-oil interaction using microfluidics
+### Observation of protein-oil interaction using microfluidics
 
 Microfluidic experiments were performed in a glass microfluidic chip with a T-junction geometry purchased from Dolomite (part # 3000086 and 3000024). All channels had a rounded cross-section with a 100 μm height and a 110 μm width. Prior to the measurements, the channel walls were wetted with 100 μl of freshly degassed HKM buffer supplemented with 1 mM DTT. The flows were driven and precisely controlled using a piezoelectric pressure control system (OB1 MK3, Elveflow), with typically applied pressures below 300 mbar. After wetting, the main and side inlet channels were filled with buffer and triolein (Sigma), respectively. Injection of oil in the side inlet channel was gently stopped with a manual valve (MV201, LabSmith) before the oil reached the junction (when the meniscus was approximately 400 μm from the junction). In this way, the flow in the main inlet channel could be stopped without significantly affecting the meniscus of oil, and the inlet vial with buffer could be exchanged by a vial with fluorescent protein solution (0.1 mg/ml in HKM buffer, mixed at a ratio 10:1 for unlabeled vs Alexa488-labeled protein). The sample volume in the vial was approximately 400 μl. The flow in the main inlet channel was then resumed and the diffusion of the protein from the main inlet channel into the side channel and its adsorption onto oil meniscus was monitored by time-lapse confocal microscopy for up to 30 min at a rate of 1 frame every 3 s (ECLIPSE TE2000-E, Plan Fluor 40x objective, EZC1 software, Nikon). Finally, the flow in the main inlet channel was stopped again, the inlet vial exchanged by a vial with buffer, and the main inlet channel was rinsed while monitoring the diffusion of the protein from the side channel. For competition experiments between Plin4 12mer and 4T > S mutant, proteins were mixed at a mass ratio 50:1 for unlabeled to labeled protein, Plin4 12mer: Plin4 12mer-Alex488 or 4T > S: Plin4 12mer-Alex488, with a total protein concentration of 0.1 mg/ml. All experiments were conducted at room temperature. Between experiments, glass chips were regenerated by copious washing with 3% SDS at 50°C, followed by distilled water, 3% TFD4 at 50°C, distilled water and finally dried by air (except for the measurements of the surface tension, where inhomogeneous glass surface was needed to increase the contact angle hysteresis). Image analysis was performed with ImageJ/Fiji (Schindelin et al., 2012) and Matlab.
 
-## Separation of Plin4-oil emulsion on sucrose gradients
+### Separation of Plin4-oil emulsion on sucrose gradients
 
 Emulsions were prepared as specified in a final volume of 300 μl including 15 μl of triolein and 0.5 mg/ml of protein. Next, 240 μl of 60% w/v solution of sucrose in HKM buffer with 1 mM DTT was mixed with 240 μl of emulsion, avoiding any oil. A total of 450 μl of this suspension was loaded on the bottom of a centrifuge tube and overlaid with a step sucrose gradient consisting of 300 μl 20%, 300 μl 10%, and 100 µl 0% sucrose in HKM buffer with 1 mM DTT. The samples were centrifuged at 50,000 rpm (214,000 × g) in a Beckman swing-out rotor (TLS 55) for 80 min at 8°C. Four fractions were carefully collected from the bottom with a Hamilton syringe, having the following volumes: 450 μl, 300 μl, 300 μl, and 100 μl, respectively. Equal volumes of all fractions were analysed by protein electrophoresis.
 
-## Circular dichroism
+### Circular dichroism
 
 CD measurements were conducted on a Jasco J-815 spectrometer at room temperature with a quartz cell of 0.05 cm path length. For the comparison between wild type and mutant Plin4 in buffer (10 mM Tris, pH 7.5, KCl 150 mM) or in buffer +50% trifluoroethanol (TFE), the spectrum was obtained by averaging six scans recorded from 195 to 260 nm (bandwidth: 1 nm; step size: 0.5 nm; scan speed: 50 nm/min). Ellipticity was converted to mean residue ellipiticity (MRE) by dividing by the product of protein concentration, residue number and path length distance. For the CD spectra of Plin 12mer on oil, emulsions were purified on sucrose gradients in 10 mM Tris, pH 7.5, KCl 150 mM with 0.1 mM DTT and the top 100 μl fraction was collected and placed in the CD cuvette. The spectrum was obtained by averaging 20 scans recorded from 200 to 260 nm (bandwidth: 1 nm; step size: 0.5 nm; scan speed: 20 nm/min). The Plin4 standards were run with these settings. CD spectra were smoothened with the means-movement method with a convolution width of 5.
 
-## Binding of Plin4 to bead-supported bilayers
+### Binding of Plin4 to bead-supported bilayers
 
 We prepared bead-supported bilayers using 5 μm silica beads (Bang laboratories) and extruded liposomes composed of 50% diphytanoyl-phosphatidylserine and 50% diphytanoyl-phosphatidylcholine (Avanti Lipids) (Čopič et al., 2018) as described (Pucadyil and Schmid, 2010). Liposomes (200 μM) were incubated with 25 × 106 beads in 500 μL of HKM buffer for 30 min at room temperature under gentle agitation, and washed three times in HKM buffer with low-speed centrifugation (200 x g for 2 min). To bind fluorescent Plin4 12mer to bead-supported bilayers, freshly-prepared beads were incubated with a mixture of Plin4 12mer and Plin4 12mer-A488 in 30 μL in HKM buffer for 15 min at room temperature, after which the beads were imaged directly by fluorescence microscopy. Alternatively, the fluorescence of the solution before and after incubation was measured in a 96-well opaque plate using a Spectramax M2 fluorimeter (Molecular devices) (excitation 488, emission 525 nm).
 
-## Yeast growth and media
+### Yeast growth and media
 
 Yeast strains used were: BY4742 MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 (Euroscarf), BY4742 pet10Δ::KANMX4 (Euroscarf), and BY4741 MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 PET10-GFP::HisMX (Huh et al., 2003). Yeast were transformed by standard lithium acetate/polyethylene glycol procedure. Yeast cells expressing different AH constructs were grown in synthetic complete medium lacking uracil (SC-Ura, 6.7 g/l yeast nitrogen base, amino acid supplement without uracil, 2% glucose). To induce LDs, yeast cells either grown in SC-Ura for 24 hr at 30°C (stationary phase) or for 24 hr in SC-Ura, followed by 24 hr incubation in oleic acid (OA) medium (0.67% yeast nitrogen base without amino acids, 0.1% yeast extract, 0.1% (v/v) oleate, 0.25% (v/v) Tween 40, amino acid supplement lacking uracil). For imaging of LDs in early stationary phase, yeast cells were inoculated from a preculture and grown at 30°C in SC-Ura to a final OD600 = 1–2.
 
-## Preparation of yeast protein extracts and western blot analysis
+### Preparation of yeast protein extracts and western blot analysis
 
 Yeast cultures were grown overnight in SD-Ura medium to mid-logarithmic phase. Proteins were extracted from one OD600 equivalent of cells by Li-acetate/alkaline extraction as described (Zhang et al., 2011), resuspended in 100 μl of sample buffer (50 mM Tris-HCl, pH 6.8, 100 mM DTT, 2% SDS, 0.1% Bromophenol Blue and 10% glycerol), heated at 65°C for 10 min, and 10 μl was loaded on SDS–PAGE (4–20% Mini-PROTEAN TGX Stain-Free, Bio-Rad). After electrophoresis, total proteins were visualized in the TGX Stain-Free gels (Bio-Rad) after 1 min UV-induced photoactivation with a Gel Doc EZ Imager (Bio-Rad). Proteins were transferred onto a nitrocellulose membrane and perilipin AH-GFP fusions were detected with a rabbit polyclonal anti-GFP antibody (Thermo Fisher Scientific, A11122, 1:5000 dilution). Vps10, when was used as a loading control, was detected with mouse anti-Vps10 monoclonal antibody (Molecular probes, A-21274, 1:100 dilution). Horseradish peroxidase-coupled anti-rabbit (Sigma-Aldrich, A6154) and anti-mouse (GE Healthcare, NA934V) secondary antibodies were used at 1:5000 dilution. Chemiluminescence signals were acquired using Gel Doc EZ Imager.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HeLa cells (ATCC) were grown in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 4.5 g/l glucose (Life technologies), 10% fetal bovine serum (FBS, Life technology) and 1% Penicillin/Streptomycin antibiotics (Life technologies). All cell cultures were routinely verified to be free of Mycoplasma by DAPI stain on fixed permeabilized cells. For protein expression, subconfluent cells were transfected with Lipofectamine 2000 (Invitrogen) in Optimem medium (Life technologies) for 6 hr, followed by 16 hr in standard growth medium before the cells were fixed and prepared for imaging.
 
 Drosophila S2 cells (ThermoFisher) were cultured in Schneider’s Drosophila medium (Invitrogen) supplemented with 10% FBS and 1% Penicillin/Streptomycin at 25°C. For generating stably transfected cells, cells were incubated with plasmid DNA and TransIT-Insect Reagent (Mirus), followed by selection with 2 μg/ml puromycin (Life technologies) for 2 weeks. Protein expression from the metal-inducible promoter was induced for 48 hr with the addition of 100 μM Cu-sulfate to the medium. Lipid droplets were induced with 1 mM oleic acid (Sigma) in complex with fatty-acid free BSA (Sigma) for 24 hr. RNAi depletion against CCT1 was performed as described (Čopič et al., 2018).
 
-## Fluorescent microscopy
+### Fluorescent microscopy
 
 For imaging of purified protein-oil emulsions, emulsions prepared with fluorescent protein were gently mixed in the glass tube before 1.5 μl of emulsion was withdrawn with a long 200 μl tip and placed on an untreated glass slides (Thermo Scientific). A coverslip was carefully placed on top without applying any pressure. Proteins on bead-supported bilayers were imaged in the same manner.
 
@@ -209,7 +817,7 @@ Transfected HeLa cells were fixed with 3.2% paraformaldehyde (Sigma) in PBS for 
 
 Images of emulsions, bead-supported bilayers, yeast and S2 cells were acquired at room temperature with an Axio Observer Z1 (Zeiss) microscope, equipped with an oil immersion plan-Apochromat 100x/1.4 objective, an sCMOS PRIME 95 (Photometrics) camera, and a spinning-disk confocal system CSU-X1 (Yokogawa) driven by MetaMorph software (Molecular Devices). GFP-tagged or Alex488-labeled proteins and mCherry-tagged or Alex568-labeled proteins were visualized with a GFP Filter 535AF45 and an RFP Filter 590DF35, respectively. When imaging emulsions, images were acquired in 10 to 15 z-sections of 0.2 μm were taken. For imaging HeLa cells and quantification of LD-to-PM signal ratio in yeast, we used an LSM 780 confocal microscope (Zeiss) with a x63/1.4 oil objective and a PMT GaAsP camera, driven by ZEN software. Images were processed with ImageJ and prepared for figures with Canvas Draw (canvas X).
 
-## Fluorescence recovery after photobleaching (FRAP)
+### Fluorescence recovery after photobleaching (FRAP)
 
 FRAP assays in vitro were performed on freshly prepared fluorescent emulsions with Alex488-labeled proteins on glass slides using the CSU-X1 spinning disc microscope and 100x objective, bleaching laser with a wavelength of 473 nm and iLas software controlled by Metamorph. Several circular areas of 25 × 25 pixels were bleached in each field (828 × 960 pixels), either on oil particles or in surrounding solution. The following FRAP time-course was used: six images pre-bleach, then bleach followed by 10 s of 1 image/s, 60 s of 1 image/10 s, and finally 600 s of 1 image/30 s (or until the loss of focus). Fluorescence of the bleached area at each time point was normalized to the average fluorescence before bleaching. Data was processed using Excel.
 
@@ -217,11 +825,11 @@ For FRAP assays in yeast cells, a circular area of 15 × 15 pixels in a cell exp
 
 FRAP assays in Drosophila S2 cells expressing Plin4 12mer-GFP were performed as for yeast, except that three circular areas of 15 × 15 pixels containing isolated LDs were selected per cell. The following FRAP time-course was used: five images pre-bleach, then bleach, followed by 30 s of 1 image/s, 60 s of 1 image/5 s, and finally ~200 s of 1 image/20 s. Data was analyzed in Excel and plotted using SigmaPlot. To obtain the half-time of recovery, average curves from the three FRAP measurements from the same cell were fitted with an exponential-rise equation.
 
-## Protein exchange assay on protein-oil emulsions
+### Protein exchange assay on protein-oil emulsions
 
 Emulsions were prepared as described using unlabeled protein at 0.5 mg/ml and checked by microscopy using CSU-X1 spinning disc microscope (time 0). Then, fluorescent Plin4 12mer-Alexa488 was gently added to the suspension to a final concentration of 0.025 mg/ml (20: 1, unlabeled protein: labeled Plin4 12mer). Samples from the emulsions were withdrawn at indicated time-points without mixing and imaged on glass slides. The re-vortex sample was prepared after 2 hr of incubation by withdrawing 20 μl of the emulsion and vortexing it in a fresh 600 μl glass tube in the same manner as for initial emulsion preparation. Samples were imaged in 10 z-sections of 0.5 μm in randomly selected fields of 76 μm x 101 μm. The z-section containing the highest number of small droplets was selected for analysis.
 
-## Image analysis
+### Image analysis
 
 Images were analyzed using ImageJ/Fiji (Schindelin et al., 2012). To quantify the number of droplets in protein-oil emulsions, the number of particles in a randomly selected area in a single z-section was counted using ‘find maxima’ in the fluorescent channel with noise tolerance set to 100. Larger clusters were counted manually. For quantification in the exchange assay, the noise tolerance was set to 150. To quantify Plin4 surface fluorescence on bead-supported bilayers, a circle was drawn on the bead perimeter, converted to a circular line and the mean fluorescence value of the plot profile was calculated. To quantify Plin4 surface fluorescence on oil particles, a line on particles with clear dark middle and the average of the two fluorescence maxima was recorded (the two maxima varied by 6 ± 4%).
 

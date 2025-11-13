@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.37462.001 Epigenetic clocks for mice were generated based on deep-sequencing analysis of the methylome. Here, we demonstrate that site-specific analysis of DNA methylation levels by pyrosequencing at only three CG dinucleotides (CpGs) in the genes Prima1 , Hsf4 , and Kcns1 facilitates precise estimation of chronological age in murine blood samples, too. DBA/2 mice revealed accelerated epigenetic aging as compared to C57BL6 mice, which is in line with their shorter life-expectancy. The three-CpG-predictor provides a simple and cost-effective biomarker to determine biological age in large intervention studies with mice.
+Epigenetic clocks for mice were generated based on deep-sequencing analysis of the methylome. Here, we demonstrate that site-specific analysis of DNA methylation levels by pyrosequencing at only three CG dinucleotides (CpGs) in the genes Prima1, Hsf4, and Kcns1 facilitates precise estimation of chronological age in murine blood samples, too. DBA/2 mice revealed accelerated epigenetic aging as compared to C57BL6 mice, which is in line with their shorter life-expectancy. The three-CpG-predictor provides a simple and cost-effective biomarker to determine biological age in large intervention studies with mice.
 
 ## Introduction
 
@@ -42,6 +42,14 @@ Therefore, we established pyrosequencing assays for nine genomic regions of prev
 Predicted ageC57BL/6 (in weeks) = −58.076 + 0.25788 α + 3.06845 β + 1.00879 γ
 
 Age-predictions correlated very well with the chronological age of C57BL/6 mice in the training set (R2 = 0.96; MAD = 4.86 weeks; Figure 1D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37462/elife-37462-fig1-v2.jpg)
+
+**Figure 1.:** (a–c) DNA methylation (DNAm) of three CpGs in the genes Prima1, Hsf4 and Kcns1 was analyzed by pyrosequencing in 24 C57BL/6 mice (training set). Coefficient of determination (R2) of DNAm versus chronological age is indicated. (d) Based on these age-associated DNAm changes a multivariable model for age prediction was calculated. (e–g) Subsequently, two independent validation sets were analyzed: 21 C57BL/6 mice from the University of Ulm and 19 C57BL/6 mice from the University of Groningen (validation sets 1 and 2, respectively). (h) Age predictions with the three-CpG-model revealed a high correlation with chronological age in the independent validation sets (MAD = mean absolute deviation; MAE = median absolute error).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37462/elife-37462-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Sequences for the three genomic regions are depicted and CpG sites (red) are numbered by the dispensation order. The relevant CpGs with highest age-correlation are highlighted in bold.
 
 Our three CpG age-predictor was subsequently validated in a blinded manner for 21 C57BL/6J mice (7 to 104 weeks old) from the University of Ulm (validation set 1) and 19 C57BL/6J mice (14 to 109 weeks old) from the University of Groningen (validation set 2). The results of both validation sets revealed high correlations with chronological age (R2 = 0.95 and 0.91, respectively; Figure 1E–H) with relatively small MADs (6.9 and 7.1 weeks) and median absolute errors (MAE; 5.0 and 5.9 weeks). Thus, our age-predictions seem to have similar precision as previously described for multi-CpG predictors based on RRBS or WGBS data (Petkovich et al., 2017; Stubbs et al., 2017; Wang et al., 2017).
 
@@ -83,22 +91,22 @@ Taken together, we describe an easily applicable but quite precise approach to d
 
 ## Materials and methods
 
-## Mouse strains and blood collection
+### Mouse strains and blood collection
 
 Blood samples of C57BL/6J mice of the training set and of the validation set one were taken at the University of Ulm by submandibular bleeding (100–200 μl) of living mice or postmortem from the vena cava. C57BL/6J samples of the validation set two were taken at the University of Groningen from the cheek. DBA/2J samples were taken at the University of Ulm (n = 14) and Groningen (n = 19). All mice were accommodated under pathogen-free conditions. Experiments were approved by the Institutional Animal Care of the Ulm University as well as by Regierungspräsidium Tübingen and by the Institutional Animal Care and Use Committee of the University of Groningen (IACUC-RUG), respectively. To analyze age-associated changes in different tissues we used three young (9.6 weeks old) and three old mice (56.9 weeks old) C57BL/6J mice (JaxMice) in accordance with relevant Spanish and European guidelines after approval by the Biodonostia Animal Care Committee. These mice were sacrificed and dissected immediately. 25 mg of tissue (10 mg in the case of spleen) or 200 µl of blood were used for DNA extraction.
 
-## Genomic DNA isolation and bisulfite conversion
+### Genomic DNA isolation and bisulfite conversion
 
 Genomic DNA was isolated from 50 µl blood using the QIAamp DNA Mini Kit (Qiagen, Hilden, Germany). Kidney and liver DNA extractions were digested with Ribonuclease A (100 mg/ml, Sigma R4875). DNA concentration was quantified by Nanodrop 2000 Spectrophotometers (Thermo Scientific, Wilmington, USA). 200 ng of genomic DNA was subsequently bisulfite-converted with the EZ DNA Methylation Kit (Zymo Research, Irvine, USA).
 
-## Pyrosequencing
+### Pyrosequencing
 
 Bisulfite converted DNA was subjected to PCR amplification. Primers were purchased at Metabion and the sequences are provided in Supplementary file 3. 20 µg PCR product was immobilized to 5 µl Streptavidin Sepharose High Performance Bead (GE Healthcare, Piscataway, NJ, USA), and then annealed to 1 µl sequencing primer (5 μM) for 2 min at 80°C. Amplicons were sequenced on PyroMark Q96 ID System (Qiagen, Hilden, Germany) and analyzed with PyroMark Q CpG software (Qiagen).
 
-## Alternative approaches to select CpGs for multivariable models
+### Alternative approaches to select CpGs for multivariable models
 
 We used a penalized regression model from the R package glmnet on the training dataset to establish a predictor of mouse age based on CpG methylation. The alpha parameter of glmnet was set to 1 (lasso regression) and the lambda parameter was chosen by cross-fold validation of the training dataset (10-fold cross validation). Alternatively, we trained our multivariable model with preselected CpGs based on location in three different amplicons, high Pearson correlation (R) of DNAm with chronological age, and combination of hyper- and hypomethylated sites.
 
-## Statistical analysis
+### Statistical analysis
 
 Linear regressions, MAD and MAE were calculated with Excel. Statistical significance of the deviations between predicted and chronological age was estimated by Mann–Whitney U test or Student´s t-test as indicated.

@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03nawhv43 Biomedical Sciences Graduate Program,University of California Riverside Riverside United States
-2. https://ror.org/03nawhv43 Department of Molecular, Cell and Systems Biology, University of California Riverside Riverside United States
-3. https://ror.org/03nawhv43 Neuroscience Graduate Program, University of California Riverside Riverside United States
-4. https://ror.org/03nawhv43 Department of Psychology, University of California Riverside Riverside United States
+1. Biomedical Sciences Graduate Program,University of California Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+2. Department of Molecular, Cell and Systems Biology, University of California Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+3. Neuroscience Graduate Program, University of California Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+4. Department of Psychology, University of California Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
 
 † Corresponding author
 
@@ -39,25 +39,49 @@ Here, we used TRAP2 transgenic mice for c-Fos-driven labeling of DG ensembles du
 
 ## Results
 
-## SGCs are reliably recruited during contextual memory formation
+### SGCs are reliably recruited during contextual memory formation
 
 The DG is a primary relay for memory processing (Amaral et al., 2007). However, the mechanisms by which memory-related cellular ensembles are selectively activated during memory encoding are not fully understood. To determine the DG-dependent naturalistic behavioral tasks which can recruit a DG ensemble for physiological analysis, we compared the Barnes maze (BM) and an enriched environment (EE) exposure. We were particularly interested in identifying a behavioral context independent of fear conditioning that activated large cohorts of DG neurons, thereby enabling microcircuit analyses via physiological recordings. Behaviorally activated ‘engram’ neurons, referred to henceforth as ‘labeled neurons’, are neurons in TRAP2 mice induced to express the reporter (tdT or ChR2-YFP) downstream of the activity-dependent IEG c-Fos during BM or EE. ‘Unlabeled neurons’ lack reporter expression. Littermate pairs of TRAP2-tdT mice (four pairs) were either trained in the BM spatial learning task or exposed to an EE, tasks known to engage the DG. Mice trained in the BM showed progressive decrease in primary latency and primary errors to locate the escape box (Figure 1—figure supplement 1), demonstrating improved performance from acquisition days 1 through 6. Barnes maze unbiased strategy (BUNS) classification and cognitive scores to assess the use of spatial search strategy (Illouz et al., 2016) revealed that the mice transitioned from using a random or serial search strategy to a spatial strategy as they progressed through acquisition days (Figure 1—figure supplement 1). Both cohorts were induced with tamoxifen during respective behavioral paradigms, on day 6 of BM acquisition or halfway through the 1-day EE exposure, to label active neurons (Figure 1A and B). Comparison of the number of DG c-Fos-expressing (tdT-positive) neurons in hippocampal sections from mice 1 week after tamoxifen induction revealed significantly more tdT-labeled neurons following EE exposure than after BM acquisition (Figure 1C–E; # of tdT-labeled cells per slice: EE: 33.90±2.13, BM 13.43±0.90, n=40 slices from 4 animals per group, p=0.0409 by nested t-test). Consistent with previous reports in several other hippocampus-dependent tasks (Erwin et al., 2020), the suprapyramidal (upper) blade of the DG showed more neurons labeled than the infrapyramidal (lower) blade following both BM training and EE exposure (Figure 1F). To determine whether tagged neurons show task-specific reactivation 1 week after induction, mice were exposed to EE prior to perfusion, and sections were immunostained for c-Fos. The distribution of neurons immunolabeled for c-Fos following EE exposure showed no apparent difference between mice previously exposed to BM followed by EE and those exposed to EE twice (Figure 1Cii and Dii). However, consistent with memory-related neuronal tagging, mice with prior exposure to EE showed greater co-labeling of tdT-positive neurons with c-Fos immunostaining than mice that were initially trained in the BM task (Figure 1G; % of co-labeled/total labeled: BM: 2.28 ± 0.46%, EE: 6.8 ± 0.97% p=0.0003 by nested t-test). The results suggest that a cohort of neurons, tagged following EE, reactivate when reintroduced to the same environment, demonstrating memory-specific activation. Therefore, in subsequent experiments, we presumed that cells labeled by task-related c-Fos-driven reporter expression represent engram cells. Since EE resulted in greater overall DG neuron labeling and stable reactivation of a subset of neurons after 1 week, we adopted EE as the preferred paradigm to label task-related neuronal ensembles for circuit-level analysis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig1-v1.jpg)
+
+**Figure 1.:** (A–B) Schematic of experimental timeline for animals trained in the Barnes maze (BM) task followed by exposure to enriched environment (EE), the BM-EE cohort (BM) group (A) and mice housed in EE followed by reintroduction of EE, the EE-EE cohort (EE) group (B), created with BioRender.com. (C–D) Representative epifluorescence image of a section from mice 1 week after induction of tdT labeling (Ci, Di) following BM testing (C) or EE testing (D) and c-Fos immunostaining (Cii, Dii) following subsequent EE exposure. (E–F) Quantification of number of tdT-labeled cells per slice (E) and summary of proportion of tdT-labeled cells in the upper blade of the DG per slice (F). (G) Summary of proportion of tdT cells co-labeled with c-Fos (green). (H) Representative TRAP-tdT section showing distinct SGC morphology (white arrowhead). (I) Plot of % of tdT cells that had morphology consistent with SGCs.Data are presented as mean ± SEM. * indicates p<0.05, *** indicates p=0.0003 by nested t-test, n=4 subjects/treatment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Plot of primary latency (A) and number of errors (B) to find the escape hole over training days. (C) Visualization of search strategies used in the Barnes maze paradigm. (D) Summary cognitive score based on search strategy. Data are presented as mean ± SEM based on data from 4 mice/group.
+
 We examined tagged neurons in sections from mice that underwent BM navigation and EE exposure to determine the proportional recruitment of SGCs. SGCs were distinguished from GCs by a trained investigator based on (1) the presence of multiple primary dendrites, (2) greater soma width than height, (3) wide dendritic arbor, and/or (4) location in or close to the inner molecular layer (Figure 1H). These criteria were based on our prior studies in which unbiased cluster analysis of GC and SGC morphometric data identified the number of dendrites, soma aspect ratio, and dendritic arbor width as the main factors distinguishing the cell types (Gupta et al., 2020; Afrasiabi et al., 2022). The morphology-based classification revealed that 33.86 ± 2.18% of neurons labeled during BM acquisition and 27.83 ± 1.33% during EE exposure were SGCs (Figure 1I; p=0.1143 by nested t-test, based on 40 sections from 4 mice). Since SGCs represent less than 5% of DG projection neurons (Save et al., 2019), these data suggest preferential activation of SGCs during dentate-dependent contextual memory formation. Notably, the proportional recruitment of SGCs labeled following behavior was not different between the BM navigation and EE exposure (Figure 1I). These findings make a compelling case for leveraging EE exposure to study SGC involvement in dentate-dependent microcircuits.
 
-## Contribution of intrinsic physiology to activity-dependent neuronal labeling
+### Contribution of intrinsic physiology to activity-dependent neuronal labeling
 
 To test if the intrinsic physiology of GCs and SGCs labeled during EE differs from their unlabeled counterparts, we performed whole-cell recordings from labeled- and unlabeled-GCs and SGCs in slices from TRAP2ChR2/eYFP mice 1 week after tamoxifen induction during EE exposure. Labeled and unlabeled neurons in the GC layer and inner molecular layer were visualized under epifluorescence (λ=505 nm) and IR/DIC, respectively. Recorded neurons were classified as GC or SGC based on morphology of biocytin-filled neurons (Figure 2A and B; Williams et al., 2007; Gupta et al., 2020; Afrasiabi et al., 2022). Depolarizing response to blue light activation (0.9 mW, λ=470 nm, 10 ms) of ChR2 was used to functionally validate cell labeling (Figures 3E and 4E). Consistent with earlier studies (Afrasiabi et al., 2022), there was no cell-type-specific difference in resting membrane potential (RMP) between GCs and SGCs (Figure 2C). RMP was also not different between labeled and unlabeled cells within each cell type. Similarly, while the input resistance (Rin) of RGC was lower than that of GCs, as reported previously (Williams et al., 2007; Afrasiabi et al., 2022), Rin of labeled and unlabeled neurons was not different in either cell type (Figure 2D). Examination of responses to a graded current injection revealed divergence of the firing frequency between GCs and SGCs at current injections >400 pA, with GCs showing progressive reduction in frequency with increasing current injection (Figure 2E–G) due to an apparent depolarization block. Consistently, the firing frequency in response to +520 pA current was greater in SGCs than that in GCs (Figure 2H). Again, these cell-type-specific differences were maintained in both labeled and unlabeled neurons. The action potential (AP) parameters, including threshold, amplitude, half-width, fast afterhyperpolarization (fAHP), medium afterhyperpolarization (mAHP), and latency to first AP, were not different between cell types or labeling of neurons (Figure 2—figure supplement 1). Interestingly, GCs showed greater amplitude attenuation during continuous firing, which was not observed in SGCs (Figure 2I). Once again, these cell-type-specific differences were retained in both labeled and unlabeled neurons. Finally, SGCs show higher adaptation ratios (ratio of duration between first two and last two spikes in response to 120 pA current injection), indicating less spike frequency adaptation than in GCs, consistent with previous findings (Williams et al., 2007). Notably, labeled SGCs showed significantly lower adaptation in firing rate than unlabeled SGCs (Figure 2J; GCLabeled: 0.33±0.075; GCUnlabeled: 0.28±0.056; SGCLabeled: 0.78±0.076; SGCUnlabeled: 0.47±0.06; two-way RM ANOVA main effect of cell type, p=0.006). In contrast, labeled and unlabeled GCs did not differ in adaptation ratio, indicating that the ability to sustain firing may distinguish labeled SGCs. These data support a role for SGC intrinsic physiology, specifically non-attenuating, less adapting, and persistent firing in their preferential labeling during activity-dependent neuronal tagging.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Representative images of a biocytin-filled granule cell (GC) (A) with a narrow dendritic arbor and a smaller somatic width and an SGC (B) with wide dendritic span, greater somatic width than height, and axonal projections throughout the molecular and granule cell layer (arrowheads). Maximum intensity projections of confocal image stacks are presented as gray scale, inverted images. (C–D) Summary plots of resting membrane potential (RMP in C) and input resistance (Rin in D) between labeled and unlabeled GCs and SGCs. # indicates p<0.05 for main factor cell type by two-way ANOVA and * indicates p<0.05 for labeled versus unlabeled within cell type by Šídák’s multiple comparisons post hoc test in n=11–19 cells/group. (E–F) Representative cell membrane voltage traces in response to +120 and –200 pA current injections (E) and +400 pA current injection (F) in GC (top) and SGC (bottom). (G) Summary plot of firing frequency in response to increasing current injections in labeled and unlabeled SGCs and GCs. #### indicates p<0.0001 for main factor cell type by three-way ANOVA, n=9–22 cells/group. (H–J) Summary plots of firing frequency at 520 pA compared to max frequency (H), spike amplitude attenuation calculated as ratio between the amplitude of the 15th spike and 1st spike at a current injection of 400 pA (I) and spike frequency adaptation (J). # indicates p<0.05, ##p<0.01 for main factor cell type by two-way ANOVA and ** indicates p<0.01 for labeled versus unlabeled within cell type by Šídák’s multiple comparisons post hoc test in n=8–19 cells/group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Pie chart showing the proportion of labeled and unlabeled GCs and SGCs included for analysis of active membrane properties. Note the greater proportion of SGCs represented among labeled neurons. (B–G) Summary histograms of threshold of action potential (B), amplitude (C), half-width (D), fast (E) and medium afterhyperpolarizations (F) and latency (G). Data are presented as mean ± SEM.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig3-v1.jpg)
 
 **Figure 3.:** (A) Schematic showing dual patch clamp recording from labeled (green) granule cell (GC)-semilunar granule cell (SGC) pair. Created in BioRender.com. (B) Summary breakdown of cell-type-specific connections tested in dual recordings from labeled neurons. (C) Representative maximum intensity projection of a confocal image stack of a pair of biocytin-filled SGC (left) and GC (right). Images are grayscale and inverted and are overexposed to emphasize the intact axonal arbors in the recorded pair. (D) Presence of spontaneous excitatory postsynaptic currents (EPSCs) in the SGC-GC pair in E–G to verify the presence of excitatory inputs and a healthy circuit. (E) Light-evoked inward currents validate expression of ChR2 in labeled cell pair. (F) Representative traces from a labeled SGC and labeled GC show that depolarization-induced firing in SGC (top) failed to evoke EPSCs in a GC (bottom) recorded in voltage clamp. Individual traces are in gray with average trace overlaid in black. (G) Depolarization-induced firing in GC (bottom) fails to evoke EPSCs in an SGC recorded in voltage clamp (top).
 
-## Lack of evidence of local feedforward or recurrent excitation between activity-driven neuronal ensembles
+![Figure 4.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) Representative confocal image of eYFP-labeled neurons in a TRAP-ChR2-eYFP mouse (A) shows biocytin staining (B) in a pair of recorded labeled-semilunar granule cell (SGC) and unlabeled-granule cell (GC). Note co-labeling for eYFP and biocytin in the SGC, while the GC does not colocalize eYFP (C). (D) Summary of cell-type-specific connections tested in dual recordings from labeled and unlabeled neurons. Inset depicts a schematic showing dual patch clamp recording from a labeled (green) SGC and an unlabeled (blue) GC pair. Created with BioRender.com. (E) Light-evoked currents validate the expression of ChR2 in the labeled-SGC and lack of response in the unlabeled-GC. (F–G) Representative traces from a labeled-SGC and an unlabeled-GC show that depolarization-induced firing in the labeled-SGC (top) failed to evoke excitatory postsynaptic currents (EPSCs) (F) and inhibitory postsynaptic currents (IPSCs) (G) in the unlabeled-GC. (H) Schematic of recording configuration illustrated wide-field optical illumination with labeled neurons (green), unlabeled neurons (blue), and local circuit interneuron (yellow). (I) Example traces from a recording in which wide-field optical stimulation evoked inhibitory responses in the unlabeled-GC and firing in the labeled-SGC. Note that the SGC firing by depolarization in the absence of light failed to elicit IPSCs in the same GC. (J–K) Schematic with labeled-GC (green), unlabeled-SGC (blue), and local circuit interneuron (yellow) (J) and traces from a recorded pair where depolarization of a labeled-GC elicited inhibitory responses in an unlabeled-SGC (K). Panels H and J were created with BioRender.com.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Example of optically evoked inhibitory postsynaptic currents (IPSCs) in slices from mice injected with AAV5-CaMKIIa-hChR2(H134A)-EYFP in response to activation of three progressively smaller regions of interest (ROIs), the largest spanning the granule cell layer. Inset: Schematic of ROI selection in the dentate gyrus (DG). (B) Summary plot of excitatory postsynaptic current (eIPSC) amplitude in response to optical activations of the three ROIs. Data are presented as mean ± SEM. p-Values indicated in the one-way ANOVA, with a significance threshold set at p<0.05. Recordings were obtained from 5–8 cells from 3 mice.
+
+### Lack of evidence of local feedforward or recurrent excitation between activity-driven neuronal ensembles
 
 Unlike GCs, SGCs have axon collaterals in the inner molecular layer and GC layer (Figure 2A and B; Williams et al., 2007; Save et al., 2019), raising the possibility that they could activate GC dendrites. To test the local feedforward/recurrent excitation hypothesis, we conducted dual patch recordings from labeled neuron pairs to identify potential glutamatergic interconnections (Figure 3A and C). Care was taken to ensure that neurons at a depth of 50 µm or more from the surface with visible axons were targeted in order to maximize probability of connections. As noted in Figure 3B, a majority of the 32 simultaneously recorded neurons examined between labeled neurons were between SGCs (Figure 3B). However, all other possibilities, including GCLabeled to GCLabeled, SGCLabeled to GCLabeled, and GCLabeled to SGCLabeled, were also evaluated. The presence of spontaneous excitatory postsynaptic currents (sEPSCs) in the neurons recorded under voltage clamp served as confirmation of overall circuit and slice health (Figure 3D). Additionally, optically evoked (0.9 mW, λ=470 nm, 10 Hz, 10 ms pulses) inward currents provided functional validation of reporter expression (Figure 3E). Labeled neuronal pairs were tested for glutamatergic synaptic connections by depolarizing one of the neurons in current clamp (400 pA, 10 pulses for 10 ms at 50 Hz) and recording evoked current responses in the other neuron held at –70 mV (Figure 3F). The recording configuration was reversed to check for connections in both directions (Figure 3G). Despite the presence of sEPSCs, none of the 32 labeled neuronal pairs tested, including SGCLabeled to GCLabeled (n=7) and SGCLabeled to SGCLabeled (n=16), showed functional glutamatergic synaptic connections (Figure 3F and G). Although our data do not eliminate the possibility of direct excitatory connections between labeled neurons, they indicate that glutamatergic interconnections are not critical for activation of DG neuronal ensembles.
 
-## Limited evidence for neurons in activity-driven ensembles supporting lateral inhibition
+### Limited evidence for neurons in activity-driven ensembles supporting lateral inhibition
 
 The role of surround inhibition and winner-take-all activation has been proposed as a promising mechanism for establishing memory engrams and mediating dentate processing (Espinoza et al., 2018; Guzman et al., 2021). SGCs, with preferential recruitment in DG engrams, sustained firing, and hilar axon collaterals, are ideally suited to drive robust feedback inhibition (Larimer and Strowbridge, 2010; Walker et al., 2010; Afrasiabi et al., 2022). We examined the possibility that labeled neurons, particularly labeled SGCs, refine GC activity by mediating feedback surround inhibition of unlabeled GCs. We tested this by performing dual recordings from labeled-unlabeled (L-U) neuronal pairs (Figure 4A–C). While the majority of our recordings focused on SGCLabeled to GCUnlabeled (49/63 pairs), we also tested for connections between SGCLabeled to SGCUnlabeled, GCLabeled to SGCUnlabeled, and GCLabeled to GCUnlabeled (Figure 4D). The ability of wide-field optogenetic activation (0.9 mW, λ=470 nm, 10 pulses, for 10 ms at 10 Hz train) to evoke inward currents validated ChR2 expression in labeled neurons. As expected, wide-field blue light stimulation failed to evoke inward currents in unlabeled neurons, confirming the lack of ChR2 expression (Figure 4E). The recordings also allowed us to test the unlikely possibility that activation of ChR2-expressing labeled neurons evoked synaptic excitation in unlabeled neurons. Wide-field light activation, which likely activates multiple labeled neurons and axon terminals throughout the slice preparation, did not evoke putative polysynaptic EPSCs in unlabeled neurons (n=63 pairs tested). Consistently, in paired recordings between labeled and unlabeled neurons, current-evoked firing in labeled cells failed to evoke EPSCs in unlabeled cells (Figure 4F), underscoring the lack of glutamatergic connectivity between SGCs and GCs.
 
@@ -65,13 +89,33 @@ In paired recordings from labeled SGCs and unlabeled GCs (n=49), depolarization 
 
 In light of the unexpected paucity in lateral inhibition by engram neurons, we examined whether the circuit connectivity needed to support lateral inhibition is preserved in the slices from mice in which a random cohort of GCs was labeled by transfection with AAV5-CAMKIIa-hChR2(H134R)-eYFP to express ChR2 in excitatory neurons. Using a spatial illumination approach, we optically activated GC somata in three different decreasing circular regions of interest (ROIs) and recorded IPSCs in unlabeled GCs outside the stimulation zone. Focal optical activation of GCs consistently resulted in robust IPSCs in the recorded unlabeled GC with IPSC amplitude decreasing progressively with the size of the ROI (Figure 4—figure supplement 1, p<0.05 by one-way ANOVA, from 5 to 8 cells from 3 mice). Collectively, although we find that activation of a focal cohort of neurons supports GC lateral inhibition, our data indicate limited evidence for robust lateral inhibition by neurons labeled during EE exposure onto surrounding unlabeled neurons.
 
-## Labeled neuron pairs receive more correlated spontaneous excitatory inputs
+### Labeled neuron pairs receive more correlated spontaneous excitatory inputs
 
 Since microcircuit connectivity and intrinsic physiology could not fully account for task-related coactivation of neurons, we tested the hypothesis that correlated inputs contribute to ensemble activation. First, we evaluated the contribution of AP-driven events to GC sEPSCs. Although the frequency of sEPSC in GCs is low, previous studies have identified a substantial contribution of AP-driven events to GC sEPSCs in slices from rat (Pernía-Andrade et al., 2012). In GCs recorded under our experimental conditions in mice, the sodium channel blocker tetrodotoxin (TTX) (1 µM) consistently increased EPSC inter-event interval (IEI) (Figure 5—figure supplement 1) by twofold (2.25±0.3-fold increase in IEI from 5.29±0.84 s in aCSF to 12.49±2.84 s in TTX, n=12 cells/3 mice, p=0.0005 by paired t-test). These data identify that approximately half the sEPSCs recorded in GCs represent AP-dependent events and justify analysis of sEPSC in individual neurons and their correlations in neuronal pairs.
 
 To assess whether labeled and unlabeled neurons receive differential glutamatergic drive, we recorded sEPSCs from labeled and unlabeled GCs and SGCs in slices from TRAP2-tdT mice 1 week after tamoxifen induction following EE (Figure 5A and B). Recordings from GCs identified that sEPSCs in labeled cells had shorter IEI than unlabeled GCs, indicating more frequent sEPSCs (Figure 5C and D, IEI in s, unlabeled: 5.87 (9.94), n=5 cells from 5 mice; labeled: 2.14 (3.71), n=5 cells from 4 mice, p<0.0001 by Kolmogorov-Smirnov [K-S] test, Cohen’s d=0.73). Additionally, sEPSC amplitude was also higher in labeled GCs than in unlabeled GCs (Figure 5D, amplitude in pA, unlabeled: 16.69 (8.82), n=5 cells from 4 mice; labeled: 20.36 (8.78), n=5 cells from 4 mice, p<0.0001 by K-S test, Cohen’s d=0.57). As with GCs, labeled SGCs also had lower sEPSC IEI, indicating higher frequency (Figure 5E and F, IEI in s, unlabeled: 2.0 (3.1), n=6 cells from 4 mice; labeled: 1.30 (2.64), n=6 cells from 4 mice, p<0.0001 by K-S test, Cohen’s d=0.33) and larger sEPSC amplitude (Figure 5F, amplitude in pA, unlabeled: 15.0 (7.08), n=6 cells from 4 mice; labeled: 19.36 (8.64), n=6 cells from 4 mice, p<0.0001 by K-S test, Cohen’s d=0.58) than in unlabeled SGCs. Thus, a greater input drive rather than local circuit connectivity distinguishes labeled GCs and SGCs from their unlabeled counterparts.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig5-v1.jpg)
+
+**Figure 5.:** (A–B) Representative images of a biocytin-filled unlabeled GC (left panel) and SGC (right panel) (A) and image of a slice in which an unlabeled GC was recorded alongside a labeled GC and SGC. (B) Inset in B shows biocytin fill, tdT labeling, and merge of the somata to illustrate co-labeling. (C) Representative current traces illustrate spontaneous excitatory postsynaptic currents (sEPSCs) in an unlabeled (top) and labeled (bottom) GC. Panels to the right: Representative average sEPSCs trace. (D) Cumulative probability plot of sEPSC inter-event interval (left panel) and amplitude (right panel) in labeled (black) and unlabeled (blue) GC. (E) Representative current traces illustrate sEPSCs in an unlabeled (top) and labeled (bottom) SGC. Panels to the right: Representative average sEPSCs trace. (F) Cumulative probability plot of sEPSC inter-event interval (left panel) and amplitude (right panel) in labeled (black) and unlabeled (blue) SGC. p-Value by Kolmogorov-Smirnov test is indicated in the figure, n=5–6 cells/group. Effect size estimate using Cohen’s d is indicated in the plots.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative current traces from a GC illustrate spontaneous EPSCs (in aCSF, above) and miniature EPSCs (in tetrodotoxin [TTX], below). (B) Summary of EPSC inter-event interval (IEI) in aCSF and after perfusion of TTX. Data presented as mean ± SEM. *** indicates p=0.0005 by paired t-test.
+
 To evaluate whether temporally correlated inputs contribute to ensemble labeling during EE exposure, we analyzed sEPSC in dual recordings from labeled-labeled (L-L) and L-U pairs for temporal correlation of synaptic event times (Figure 6A–C). Note that since the intent was to determine the input correlation depending on labeling status of the cell pairs rather than based on cell type, we combined datasets for pairs that included GCs and/or SGCs. To assess sEPSC temporal correlation, we defined peri-occurrence as the maximum cross-correlation of sEPSCs in the two recorded neurons within a detection window and co-occurrence as the cross-correlation of sEPSCs within a more restricted time bin duration centered around 0 ms (Figure 6D). To avoid potential for specious correlations due to differences in event frequency, we sub-selected cell pairs in which the recording durations, event count, and activity rates were not different between L-L and L-U pairs (Figure 6—figure supplement 1, number of sEPSCs in counts, L-L: 439±52.83, L-U: 412±48.77, p=0.71; recording duration in s, L-L: 498±43.76, L-U: 397±48.0, p=0.15; spike rate in Hz, L-L: 0.89±0.09, L-U: 1.06±0.11, p=0.23).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative confocal image of eYFP-labeled and biocytin-stained neurons in a TRAP-ChR2-eYFP mouse. (B) Schematic for labeled-labeled (L–L) dual recordings with representative example of spontaneous excitatory postsynaptic currents (sEPSCs) in an L-L pair below. (C) Schematic for labeled-unlabeled (L–U) dual recordings with representative example of sEPSCs in an L-U pair below. (D) Schematic for session-wise cross-correlation profiles (CCPs) defined by correlations exceeding a 2 standard deviation (SD) threshold above the total mean correlation: EPSC peri-occurrence was tested as event time CCP exceeding threshold within full detection window; co-occurrence was defined as event time CCP exceeding threshold within center bin of detection window. (E) CCP from recordings from L-L pairs analyzed with ±100 ms detection window (bright blue, n=7). Overlaid jittered data (black) was developed by appending the event timing of one cell with a randomized lead/lag of ±0.5 s for 100 iterations (top panel). Inset: Plot of maximum correlations (Rmax) in relation to the dashed line representing 2×SD = 0.15. CCP in recordings from L-U pairs analyzed with ±100 ms detection window (dark blue, n=8). Corresponding jittered data, developed as detailed above, is overlaid in black (bottom panel). Inset: Plot of Rmax in relation to the dashed line representing 2×SD = 0.15. (F) CCP from sessions with recordings from L-L pairs analyzed with ±50 ms detection window from L-L pairs (bright purple, n=7) with jittered data developed as detailed above is overlaid in black (top panel). Inset: Plot of Rmax in relation to the dashed line representing 2×SD = 0.10. CCP from recordings in L-U pairs analyzed with ±50 ms detection window (dark purple, n=8) with corresponding jittered data overlaid in black (bottom panel). Inset: Rmax in relation to the dashed line representing 2×SD = 0.10. (G) Comparison of center bin correlation between L-L versus L-U pairs in aligned (align-recorded) versus jittered (Jitter-simulated) data, analyzed using ±100 ms detection window (left, colors as in E) and using ±50 ms detection window (right, colors as in F). (H) Center bin classifier performance (solid line) compared to chance performance (dashed line, colors as in E and F, respectively) plotted as area under the receiver operating characteristic (ROC) curve (AUROC) between L-L (true positive rate) and L-U (false positive rate) for analysis using ±100 ms detection window (left panel) and for analysis using ±50 ms detection window (right panel). Data presented as mean ± SEM (dual recording sessions), * indicate p<0.05, ** indicates p<0.01; *** indicates p<0.001, **** indicates p<0.0001; two-way ANOVA with Šídák’s multiple comparisons post hoc tests. Panels B and C were created with BioRender.com.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Spontaneous excitatory postsynaptic current (sEPSC) event counts (L-L n=14, L-U n=16), (B) recording durations (L-L n=7, L-U n=8), and (C) event frequency (L-L n=14, L-U n=16) for data used in correlation analysis. Data presented as mean ± SEM. (D–E) Distribution of average sEPSC inter-event interval (D) and amplitude (C) in labeled and unlabeled GCs and semilunar granule cells (SGCs) included among the L-L and L-U pairs. Data are presented as mean ± SEM.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/101428/elife-101428-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Representative CCP for labeled to labeled (L-L) dual recording session with maximum correlation in the center bin (co-occurrence). (B) Representative CCP for labeled to unlabeled (L-U) dual recording session with no maximum correlation within detection window (no coincidence, same session as in Figure 5C). (C) Representative CCP of sEPSCs for L-L dual recording session with maximum correlation within detection window (peri-occurrence, same session as in Figure 5B). (D–E) Examples of EPSC cross-correlation histograms generated using the CCP method (above) and using the MATLAB cross-correlation function xcorr (below).
 
 We selected detection windows of ±100 ms and ±50 ms with 10 ms and 5 ms bin width, respectively, to develop cross-correlation profiles (CCPs) of L-L and L-U sEPSC event times as detailed in the Materials and methods. Example recording sessions with CCP for co-occurrence in L-L pairs, no coincidence in L-U pairs, and peri-occurrence in L-L pairs, analyzed using a ±100 ms detection window are illustrated in Figure 6—figure supplement 2. A predetermined threshold of 2 standard deviations (2SD) above the mean correlation was adopted to assess potential differences in temporal correlation between L-L and L-U pairs. Peri-occurrence, quantified as the maximum cross-correlation in the detection window (Rmax), was significantly higher in L-L than in L-U pairs for the ±100 ms detection window (Figure 6, Rmax in ±100 ms window, L-L: 0.184±0.014, L-U: 0.126±0.016, p=0.018 by t-test in 7 L-L and 8 L-U pairs). While peri-occurrence in the ±50 ms detection window trended higher in L-L pairs, this was not significant (Figure 6, Rmax in ±50 ms window, L-L: 0.124±0.013, L-U: 0.093±0.014, p=0.12 by t-test in 7 L-L and 8 L-U pairs). Notably, the Rmax in sEPSC event times from 6/7 L-L pairs crossed the threshold within each detection window and failed to do so in 7/8 recordings in L-U pairs. These findings were consistent regardless of whether we adopted ±100 ms or ±50 ms detection windows (Figure 6E and F, insets).
 
@@ -97,19 +141,197 @@ In summary, we find that SGCs represent about a third of dentate projection neur
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The JacksonLaboratory</td>
+      <td>MSR_JAX: 000664</td>
+      <td>Male and female</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Fos-creer(Fostm1.1(Cre/Ert2)Luo/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX Stock: 030323</td>
+      <td>Male and female</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6;129S6-Gt(ROSA)26Sor t m14(CAG-tdTomato)Hze/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX Stock: 007908</td>
+      <td>Male and female</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6;129S-Gt(ROSA)26Sortm32(CAGB6;129S-Gt(ROSA)COP4*H134R/EYFP)Hze/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX Stock: 12659</td>
+      <td>Male and female</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV5-CaMKIIa-hChR2(H134A)-EYFP</td>
+      <td>Addgene</td>
+      <td>Plasmid # 26969</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Fos (9f6) rabbitantibody (Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2250S /RRID:AB_2247211</td>
+      <td>1:750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbitAlexa Fluor 488secondary antibody (Polyclonal)</td>
+      <td>Abcam</td>
+      <td>150077/RRID:AB_2630356</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken Anti-GreenFluorescent ProteinAntibody (Polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>AB_2307313</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-ChickenAlexa Fluor 488 (Polyclonal)</td>
+      <td>Abcam</td>
+      <td>150169/RRID:AB_2636803</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma</td>
+      <td>H7904-25MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Tocris</td>
+      <td>Tetrodotoxin</td>
+      <td>Male and female</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gabazine-SR95531</td>
+      <td>Tocris</td>
+      <td>SR95531</td>
+      <td>Male and female</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Easy Electrophysiology</td>
+      <td>Easy Electrophysiology Ltd</td>
+      <td>v2.6.3</td>
+      <td>https://www.easyelectrophysiology.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BUNS analysis software</td>
+      <td>Illouz et al., 2016</td>
+      <td>http://okunlab.wix.com/okunlab</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp10-Data Acquisition</td>
+      <td>Molecular Devices</td>
+      <td>https://www.moleculardevices.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Anymaze</td>
+      <td>Stoelting Co.</td>
+      <td>https://www.any-maze.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>R2024a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 10</td>
+      <td>GraphPad</td>
+      <td>10.4.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Custom code forcorrelation analysis</td>
+      <td>VijiSanthakumarLab, 2025</td>
+      <td>https://github.com/VijiSanthakumarLab/eLife_Correlation_Cells_2025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa-594streptavidin conjugate</td>
+      <td>Thermo Fisher</td>
+      <td>S11227</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield</td>
+      <td>Vector Labs</td>
+      <td>NC9524612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Goat serum</td>
+      <td>Sigma</td>
+      <td>SIAL-G6767-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Barnes maze table</td>
+      <td>Maze Engineers</td>
+      <td>https://conductscience.com/maze/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments were conducted under IACUC protocols approved by the University of California at Riverside and conformed with ARRIVE guidelines. c-Fos mice (TRAP2: Fostm2.1(icre/ERT2)Luo/J; Jackson Laboratories #030323) were back-crossed with C57BL6/N and were either bred with reporter line tdT-Ai14 mice (B6;129S6-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J; Jackson Laboratories # 007908) to create TRAP2-tdT mice or reporter line ChR2-YFP (B6;129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J; Jackson Laboratories #12 569) to create TRAP2-ChR2/eYFP mice. Male and female TRAP2-tdT and TRAP2-ChR2/eYFP mice 4–8 weeks of age were used in experiments. Mice were housed with littermates (up to 5 mice per cage) in a 12/12 hr light/dark cycle. Food and water were provided ad libitum.
 
-## Behavioral training and engram labeling
+### Behavioral training and engram labeling
 
 Male and female experimental mice were trained in a spatial learning BM task or placed in an EE for 3 hr followed by tamoxifen induction to induce Cre recombinase as detailed below. Since we observed TRAP2 mice exhibiting considerable litter to litter variability in tdT labeling following identical treatments in preliminary studies (not shown), we used littermate pairs for the following studies: BM: 4- to 6-week-old male and female TRAP2-tdT mice were trained in a spatial memory task on a BM table (Maze Engineers, https://conductscience.com/maze/), 92 cm in diameter with 20 holes (5 cm diameter each). One hole was equipped with a false floor installed with a removable escape box that could be traded out for an additional false floor piece. The maze was set up in the middle of four curtain walls with two bright lights and a camera for recording above the maze. Different sets of visual cues (various shapes cut from felt) were attached to the curtain for spatial orientation. The escape hole was positioned in between two visual cues. Animals were held in their home cage outside of the curtain in a dark room until their turn to run the trial. We observed that these mice were hyperactive; therefore, mice were housed individually on the day before training (day 0). Mice were habituated to the behavior room in their home cages for at least 1 hr before training on day 1, habituated to the arena by placing them in the starter cup on the table for 1 min, and guided by gently moving the starter cup to the escape box (in a temporary location different from the experimental location). During task acquisition training on days 1–6, mice performed three 180 s trials during which the mouse explored the maze to find the escape box. The three trials were separated by a minimum of 15 min ITIs. If mice failed to locate the escape box at the end of the 180 s, the experimenter guided them to the escape box and then placed them back into their home cage. On day 6 of BM acquisition, mice were brought to the room 5 hr before testing and received 4-hydroxy tamoxifen (4-OHT, 50 mg/kg i.p.) 15 min prior to the first acquisition session. 4-OHT was prepared as described previously (DeNardo et al., 2019). Briefly, 4-OHT was dissolved in 100% ethanol at a concentration of 20 mg/mL by sonicating solution at 37°C for 30 min or until dissolved, aliquoted, and stored at –20°C. On the day of injection, 4-OHT was redissolved by sonicating solution at 37°C for 10 min. A 1:4 mixture of castor oil and sunflower seed oil, respectively, was added for a final concentration of 10 mg/mL. The remaining ethanol in solution was evaporated by speed vacuuming in a centrifuge (DeNardo et al., 2019). Behavior in the BM paradigm was analyzed using Anymaze software by a blinded experimenter. Additionally, support vector machine-based, automated, BUNS classification algorithm and a nonarbitrary numerical cognitive score based on the BUNS analysis (Illouz et al., 2016) were used to evaluate the use of spatial strategy for BM.
 
-## Enriched environment
+### Enriched environment
 
 Experimental TRAP2-tdT and TRAP2-ChR2/eYFP mice were housed in an EE consisting of an oversized cage filled with multiple tunnels, extra nestlets, a metal swing, and a few huts for the animals to interact with for 3 hr. Mice received 4-OHT (50 mg/kg i.p.) 90 min into their 3 hr of enrichment. Animals were left in the room for an additional 5 hr to limit neuronal activity labeling not related to the behavioral paradigm. In a subset of experiments (Figure 1), 7 days following 4-OHT induction, littermate cohorts of TRAP2-tdT mice that underwent BM acquisition or EE exposure were placed with their respective pair into the EE for 2 hr and then immediately sacrificed by perfusion with 4% paraformaldehyde (PFA) upon removal from the EE. TRAP2-ChR2/eYFP mice induced after EE exposure were sacrificed a week later for electrophysiology (Figures 2—6; and associated figure supplements).
 
-## Immunohistochemistry and cell morphology
+### Immunohistochemistry and cell morphology
 
 TRAP2-tdT mice, 90 min following EE exposure, were transcardially perfused with PBS followed by a 4% PFA while under euthasol anesthesia. The brains were held in the 4% PFA at 4°C for 3 hr before being transferred to PBS. Coronal brain sections (50 μm) were obtained using a Leica vt100s vibratome, and five sequential sections, each 250 μm apart across the septotemporal axis, were immunostained for c-Fos and analyzed for quantification. Free-floating sections were blocked in 10% goat serum in PBS with 0.3% Triton X-100 for 1 hr. Sections were incubated in 4°C overnight in primary antibody for c-Fos (1:750, Rabbit mAb Cell Signaling Technology, cat #2250). The following day, sections were incubated in goat anti-rabbit Alexa Fluor 488 secondary antibody (1:500 Abcam, cat #150077) for 1 hr.
 
@@ -117,13 +339,13 @@ Slices from TRAP2-ChR2/eYFP mice that were used in electrophysiological studies 
 
 Slices were mounted on a glass slide using Vectashield. Sections were imaged using a Zeiss Axioscope-5 with stereo investigator (MBF Bioscience) for analysis. Cell counts, cell-type classification, and evaluation of double labeling were conducted by an experimenter blinded to treatments. Cells with compact dendritic arbors and somata with greater length than width were classified as GCs and those with wide dendritic angle, two or more primary dendrites, and greater somatic width than height were classified as SGCs (Gupta et al., 2020; Afrasiabi et al., 2022) by a trained investigator.
 
-## Slice physiology
+### Slice physiology
 
 Seven to nine days after tamoxifen induction following EE exposure, TRAP2-ChR2/eYFP mice were euthanized under isoflurane anesthesia for preparation of horizontal brain slices (350 μm) using a Leica VT1200S Vibratome in ice-cold sucrose artificial cerebrospinal fluid (sucrose-aCSF) containing (in mM): 85 NaCl, 75 sucrose, 24 NaHCO3, 25 glucose, 4 MgCl2, 2.5 KCl, 1.25 NaH2PO4, and 0.5 CaCl. Slices were bisected and incubated at 32°C for 30 min in a holding chamber containing an equal volume of sucrose-aCSF and recording aCSF and were subsequently held at room temperature for an additional 30 min before use. The recording aCSF contained (in mM): 126 NaCl, 2.5 KCl, 2 CaCl2, 2 MgCl2, 1.25 NaH2PO4, 26 NaHCO3, and 10 D-glucose. All solutions were saturated with 95% O2 and 5% CO2 and maintained at a pH of 7.4 for 2–6 hr (Gupta et al., 2012; Yu et al., 2015; Afrasiabi et al., 2022). Slices were transferred to a submerged recording chamber and perfused with oxygenated aCSF at 33°C. Whole-cell voltage-clamp and current-clamp recordings from GCs in the GC layer and presumed SGCs in the inner molecular layer or edge of the GC layer were performed under IR-DIC visualization with Nikon Eclipse FN-1 (Nikon Corporation) using ×40 water immersion objective. Recordings were obtained using axon instruments MultiClamp 700B amplifier (Molecular Devices). Data were low-pass filtered at 2 kHz, digitized using Axon DigiData 1400A (Molecular Devices), and acquired using pClamp11 at 10 kHz sampling frequency. Recordings were obtained using borosilicate glass microelectrodes (3–7 MΩ), pulled using Narishige PC-10 puller (Narishige Japan). Recordings were performed using K-gluconate-based internal solution (K-gluc) containing 126 mM K-gluconate, 4 mM KCl, 10 mM HEPES, 4 mM Mg-ATP, 0.3 mM Na-GTP, and 10 mM PO-creatinine or cesium methane sulfonate (CsMeSO4) internal solution containing 140 mM cesium methane sulfonate, 10 mM HEPES, 5 mM NaCl, 0.2 mM EGTA, 2 mM Mg-ATP, and 0.2 mM Na-GTP (pH 7.25; 270–290 mOsm). Biocytin (0.2%) was included in the internal solution for post hoc cell identification (Yu et al., 2015; Afrasiabi et al., 2022; Gupta et al., 2022). Cells labeled with eYFP were visualized under epifluorescence and patched under IR-DIC using pipettes filled with K-gluc internal and held at –70 mV in current clamp. 10 ms, 10 Hz pulses of blue light (λ=470 nm 0.9 mW) were used to optically evoke firing or inward currents to confirm ChR2/eYFP labeling. Responses to 1 s positive and negative current injections, beginning at –200 pA with 40 pA steps up to 20 sweeps, were examined to determine active and passive characteristics. Dual patch clamp recordings were obtained from pairs of labeled and unlabeled neurons. Unlabeled neurons were recorded using microelectrodes with CsMeSO4 internal and held at 0 mV (glutamate reversal potential) to isolate IPSCs and –70 mV (close to GABA reversal potential) to record EPSCs. Labeled neurons, held in current clamp, were depolarized by 10 ms 500 pA pulses at 50 Hz to elicit APs to measure evoked responses in labeled or unlabeled cells held in voltage clamp. Labeled neuron pairs were tested for connectivity in both directions. In control experiments, wild-type mice were bilaterally injected with AAV5-CaMKIIa-hChR2(H134A)-EYFP (gift from Karl Deisseroth, Addgene plasmid # 26969) in the GC layer (AP –3.2 mm, ML ±2.6 mm, DV –2.8 mm). Four weeks after injection, mice were sacrificed for horizontal hippocampal slices (350 µm thick) that were prepared as detailed. Various ROIs were selected for stimulation of ChR2-expressing GCs using a Digital Mirror Device (DMD)-based pattern illuminator (Mightex Polygon 400), coupled to 473 nm blue LED (AURA light source), and controlled via TTL-based input from pClamp as detailed previously (Proddutur et al., 2023). Three progressively smaller circular ROIs with diameters of 110±10 µm, 55±5 µm, and 27±3 µm were activated in the GC layer. Light intensity was set at 2.6 mW. IPSCs were recorded from GCs outside the stimulated ROI using a cesium-based internal solution while holding the membrane potential at 0 mV.
 
 sEPSCs were recorded in both labeled and unlabeled cells in slices from TRAP2-ChR2/eYFP and TRAP2-tdT mice induced with tamoxifen after EE and from C57BL6/N mice. Recordings were obtained from a holding potential of –70 mV in voltage clamp for 5–10 min. In a subset of recordings, the sodium channel blocker TTX (1 µM) was used to block AP-dependent events. In control experiments, sEPSC IEI in aCSF was not different from the IEI recorded in GABAA receptor antagonist, SR95531 (10 µM, IEI in aCSF in s: 5.29±0.84, n=12 cells/3 mice; SR95531: 5.29±0,98, n=9 cells/3 mice, p=0.7 by Mann-Whitney U test) confirming that a majority of the synaptic events under these conditions are glutamatergic. Exclusion criteria were pre-established: Recordings were discontinued and not used if series resistance increased by >20% or if access resistance surpassed 25 MΩ. Furthermore, only cells with an initial RMP of –65 or lower were used. Post hoc biocytin immunostaining and morphologic analysis was used to definitively identify SGCs and GCs included in this study. If the cell could not be clearly identified using post hoc analysis, the cell and its associated recordings were excluded.
 
-## Data analysis
+### Data analysis
 
 Active and passive properties were analyzed using EasyElectrophysiology v2.6.3 (Easy Electrophysiology Ltd). AP, threshold, amplitude, half-width, and first spike latency were acquired from the first sweep in which the cell fired. fAHP, mAHP, and spike frequency adaptation were determined based on voltage response and firing in response to a 120 pA current injection. AP threshold was calculated using the first derivative method. Amplitude was calculated by the AP peak value minus baseline. Spike frequency accommodation was calculated using the divisor method, in which the ISI of the first two APs is divided by the ISI of the last two APs. First spike latency is the time from the start of a current pulse to the first AP.
 

@@ -134,70 +134,70 @@
 
 ### Affiliations
 
-1. https://ror.org/00a0jsq62 London School of Hygiene & Tropical Medicine London United Kingdom
-2. https://ror.org/00s9v1h75 European Centre for Disease Prevention and Control (ECDC) Stockholm Sweden
-3. https://ror.org/04t3en479 Karlsruhe Institute of Technology Karlsruhe Germany
-4. https://ror.org/01k5qnb77 Robert Koch Institute Berlin Germany
-5. https://ror.org/0072zz521 University of Massachusetts Amherst Amherst United States
-6. https://ror.org/00dvg7y05 Boston Children’s Hospital and Harvard Medical School Boston United States
-7. https://ror.org/024d6js02 Third Faculty of Medicine, Charles University Prague Czech Republic
-8. https://ror.org/02s376052 Ecole Polytechnique Federale de Lausanne Lausanne Switzerland
+1. London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+2. European Centre for Disease Prevention and Control (ECDC) Stockholm Sweden ([ROR:00s9v1h75](https://ror.org/00s9v1h75))
+3. Karlsruhe Institute of Technology Karlsruhe Germany ([ROR:04t3en479](https://ror.org/04t3en479))
+4. Robert Koch Institute Berlin Germany ([ROR:01k5qnb77](https://ror.org/01k5qnb77))
+5. University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
+6. Boston Children’s Hospital and Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
+7. Third Faculty of Medicine, Charles University Prague Czech Republic ([ROR:024d6js02](https://ror.org/024d6js02))
+8. Ecole Polytechnique Federale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
 9. Éducation nationale Valbonne France
-10. https://ror.org/05a28rw58 Eidgenossische Technische Hochschule Zurich Switzerland
-11. https://ror.org/02nv7yv05 Forschungszentrum Jülich GmbH Jülich Germany
-12. https://ror.org/05vmv8m79 Frankfurt Institute for Advanced Studies Frankfurt Germany
-13. https://ror.org/019hjw009 Fraunhofer Institute for Industrial Mathematics Kaiserslautern Germany
-14. https://ror.org/038t36y30 Heidelberg University Heidelberg Germany
-15. https://ror.org/03d0p2685 Helmholtz Centre for Infection Research Braunschweig Germany
+10. Eidgenossische Technische Hochschule Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+11. Forschungszentrum Jülich GmbH Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+12. Frankfurt Institute for Advanced Studies Frankfurt Germany ([ROR:05vmv8m79](https://ror.org/05vmv8m79))
+13. Fraunhofer Institute for Industrial Mathematics Kaiserslautern Germany ([ROR:019hjw009](https://ror.org/019hjw009))
+14. Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+15. Helmholtz Centre for Infection Research Braunschweig Germany ([ROR:03d0p2685](https://ror.org/03d0p2685))
 16. IEM, Inc Bel Air United States
 17. IEM, Inc Baton Rouge United States
 18. Independent researcher Vienna Austria
 19. Independent researcher Davis United States
-20. https://ror.org/04n0g0b29 Institut d’Investigacions Biomèdiques August Pi i Sunyer, Universitat Pompeu Fabra Barcelona Spain
-21. https://ror.org/032h9wv69 Institute of Computer Science of the CAS Prague Czech Republic
-22. https://ror.org/03h1hsz49 Institute of Information Theory and Automation of the CAS Prague Czech Republic
+20. Institut d’Investigacions Biomèdiques August Pi i Sunyer, Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
+21. Institute of Computer Science of the CAS Prague Czech Republic ([ROR:032h9wv69](https://ror.org/032h9wv69))
+22. Institute of Information Theory and Automation of the CAS Prague Czech Republic ([ROR:03h1hsz49](https://ror.org/03h1hsz49))
 23. Inverence Madrid Spain
-24. https://ror.org/01e41cf67 Los Alamos National Laboratory Los Alamos United States
-25. https://ror.org/02d8v0v24 LUMSA University Rome Italy
-26. https://ror.org/02j46qs45 Masaryk University Brno Czech Republic
-27. https://ror.org/042nb2s44 Massachusetts Institute of Technology Cambridge United States
-28. https://ror.org/0087djs12 Max-Planck-Institut für Dynamik und Selbstorganisation Göttingen Germany
-29. https://ror.org/019sbgd69 Medical University of Gdansk Gdańsk Poland
-30. https://ror.org/03eh3y714 Paul Scherrer Institute Villigen Switzerland
-31. https://ror.org/01nffqt88 Politecnico di Milano Milan Italy
+24. Los Alamos National Laboratory Los Alamos United States ([ROR:01e41cf67](https://ror.org/01e41cf67))
+25. LUMSA University Rome Italy ([ROR:02d8v0v24](https://ror.org/02d8v0v24))
+26. Masaryk University Brno Czech Republic ([ROR:02j46qs45](https://ror.org/02j46qs45))
+27. Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+28. Max-Planck-Institut für Dynamik und Selbstorganisation Göttingen Germany ([ROR:0087djs12](https://ror.org/0087djs12))
+29. Medical University of Gdansk Gdańsk Poland ([ROR:019sbgd69](https://ror.org/019sbgd69))
+30. Paul Scherrer Institute Villigen Switzerland ([ROR:03eh3y714](https://ror.org/03eh3y714))
+31. Politecnico di Milano Milan Italy ([ROR:01nffqt88](https://ror.org/01nffqt88))
 32. Technical University of Kaiserlautern Kaiserslautern Germany
-33. https://ror.org/01weqhp73 Technische Universität Ilmenau Ilmenau Germany
-34. https://ror.org/03ths8210 Universidad Carlos III de Madrid Leganes Spain
-35. https://ror.org/02msb5n36 Universidad Nacional de Educación a Distancia (UNED) Madrid Spain
-36. https://ror.org/021018s57 Universitat de Barcelona Barcelona Spain
-37. https://ror.org/03mb6wj31 Universitat Politècnica de Catalunya Barcelona Spain
-38. https://ror.org/02778hg05 Universitat Trier Trier Germany
-39. https://ror.org/00rcxh774 University of Cologne Cologne Germany
+33. Technische Universität Ilmenau Ilmenau Germany ([ROR:01weqhp73](https://ror.org/01weqhp73))
+34. Universidad Carlos III de Madrid Leganes Spain ([ROR:03ths8210](https://ror.org/03ths8210))
+35. Universidad Nacional de Educación a Distancia (UNED) Madrid Spain ([ROR:02msb5n36](https://ror.org/02msb5n36))
+36. Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+37. Universitat Politècnica de Catalunya Barcelona Spain ([ROR:03mb6wj31](https://ror.org/03mb6wj31))
+38. Universitat Trier Trier Germany ([ROR:02778hg05](https://ror.org/02778hg05))
+39. University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
 40. University of Halle Halle Germany
-41. https://ror.org/05njb9z20 University of Ljubljana Ljubljana Slovenia
-42. https://ror.org/01ynf4891 University of Milano-Bicocca Milano Italy
-43. https://ror.org/04z08z627 University of Molise Pesche Italy
-44. https://ror.org/052gg0110 University of Oxford Oxford United Kingdom
-45. https://ror.org/044k9ta02 University of Palermo Palermo Italy
-46. https://ror.org/00s6t1f81 University of Pavia Pavia Italy
-47. https://ror.org/00x27da85 University of Perugia Perugia Italy
-48. https://ror.org/02be6w209 University of Rome "La Sapienza" Rome Italy
-49. https://ror.org/02p77k626 University of Rome "Tor Vergata" Rome Italy
-50. https://ror.org/03taz7m60 University of Southern California Los Angeles United States
-51. https://ror.org/0384j8v12 University of Sydney Sydney Australia
-52. https://ror.org/0153tk833 University of Virginia Charlottesville United States
-53. https://ror.org/039bjqg32 University of Warsaw Warsaw Poland
-54. https://ror.org/01qaqcf60 University of Bialystok Warsaw Poland
-55. https://ror.org/00yae6e25 University of Wroclaw Wroclaw Poland
-56. https://ror.org/03s7gtk40 Universtät Leipzig Leipzig Germany
-57. https://ror.org/00y0xnp53 Warsaw University of Technology Warsaw Poland
-58. https://ror.org/008fyn775 Wroclaw University of Science and Technology Wroclaw Poland
+41. University of Ljubljana Ljubljana Slovenia ([ROR:05njb9z20](https://ror.org/05njb9z20))
+42. University of Milano-Bicocca Milano Italy ([ROR:01ynf4891](https://ror.org/01ynf4891))
+43. University of Molise Pesche Italy ([ROR:04z08z627](https://ror.org/04z08z627))
+44. University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+45. University of Palermo Palermo Italy ([ROR:044k9ta02](https://ror.org/044k9ta02))
+46. University of Pavia Pavia Italy ([ROR:00s6t1f81](https://ror.org/00s6t1f81))
+47. University of Perugia Perugia Italy ([ROR:00x27da85](https://ror.org/00x27da85))
+48. University of Rome "La Sapienza" Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
+49. University of Rome "Tor Vergata" Rome Italy ([ROR:02p77k626](https://ror.org/02p77k626))
+50. University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+51. University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+52. University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+53. University of Warsaw Warsaw Poland ([ROR:039bjqg32](https://ror.org/039bjqg32))
+54. University of Bialystok Warsaw Poland ([ROR:01qaqcf60](https://ror.org/01qaqcf60))
+55. University of Wroclaw Wroclaw Poland ([ROR:00yae6e25](https://ror.org/00yae6e25))
+56. Universtät Leipzig Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+57. Warsaw University of Technology Warsaw Poland ([ROR:00y0xnp53](https://ror.org/00y0xnp53))
+58. Wroclaw University of Science and Technology Wroclaw Poland ([ROR:008fyn775](https://ror.org/008fyn775))
 
 † Corresponding author
 
 ## Abstract
 
-Short-term forecasts of infectious disease burden can contribute to situational awareness and aid capacity planning. Based on best practice in other fields and recent insights in infectious disease epidemiology, one can maximise the predictive performance of such forecasts if multiple models are combined into an ensemble. Here, we report on the performance of ensembles in predicting COVID-19 cases and deaths across Europe between 08 March 2021 and 07 March 2022. We used open-source tools to develop a public European COVID-19 Forecast Hub. We invited groups globally to contribute weekly forecasts for COVID-19 cases and deaths reported by a standardised source for 32 countries over the next 1–4 weeks. Teams submitted forecasts from March 2021 using standardised quantiles of the predictive distribution. Each week we created an ensemble forecast, where each predictive quantile was calculated as the equally-weighted average (initially the mean and then from 26th July the median) of all individual models’ predictive quantiles. We measured the performance of each model using the relative Weighted Interval Score (WIS), comparing models’ forecast accuracy relative to all other models. We retrospectively explored alternative methods for ensemble forecasts, including weighted averages based on models’ past predictive performance. Over 52 weeks, we collected forecasts from 48 unique models. We evaluated 29 models’ forecast scores in comparison to the ensemble model. We found a weekly ensemble had a consistently strong performance across countries over time. Across all horizons and locations, the ensemble performed better on relative WIS than 83% of participating models’ forecasts of incident cases (with a total N=886 predictions from 23 unique models), and 91% of participating models’ forecasts of deaths (N=763 predictions from 20 models). Across a 1–4 week time horizon, ensemble performance declined with longer forecast periods when forecasting cases, but remained stable over 4 weeks for incident death forecasts. In every forecast across 32 countries, the ensemble outperformed most contributing models when forecasting either cases or deaths, frequently outperforming all of its individual component models. Among several choices of ensemble methods we found that the most influential and best choice was to use a median average of models instead of using the mean, regardless of methods of weighting component forecast models. Our results support the use of combining forecasts from individual models into an ensemble in order to improve predictive performance across epidemiological targets and populations during infectious disease epidemics. Our findings further suggest that median ensemble methods yield better predictive performance more than ones based on means. Our findings also highlight that forecast consumers should place more weight on incident death forecasts than incident case forecasts at forecast horizons greater than 2 weeks. AA, BH, BL, LWa, MMa, PP, SV funded by National Institutes of Health (NIH) Grant 1R01GM109718, NSF BIG DATA Grant IIS-1633028, NSF Grant No.: OAC-1916805, NSF Expeditions in Computing Grant CCF-1918656, CCF-1917819, NSF RAPID CNS-2028004, NSF RAPID OAC-2027541, US Centers for Disease Control and Prevention 75D30119C05935, a grant from Google, University of Virginia Strategic Investment Fund award number SIF160, Defense Threat Reduction Agency (DTRA) under Contract No. HDTRA1-19-D-0007, and respectively Virginia Dept of Health Grant VDH-21-501-0141, VDH-21-501-0143, VDH-21-501-0147, VDH-21-501-0145, VDH-21-501-0146, VDH-21-501-0142, VDH-21-501-0148. AF, AMa, GL funded by SMIGE - Modelli statistici inferenziali per governare l'epidemia, FISR 2020-Covid-19 I Fase, FISR2020IP-00156, Codice Progetto: PRJ-0695. AM, BK, FD, FR, JK, JN, JZ, KN, MG, MR, MS, RB funded by Ministry of Science and Higher Education of Poland with grant 28/WFSN/2021 to the University of Warsaw. BRe, CPe, JLAz funded by Ministerio de Sanidad/ISCIII. BT, PG funded by PERISCOPE European H2020 project, contract number 101016233. CP, DL, EA, MC, SA funded by European Commission - Directorate-General for Communications Networks, Content and Technology through the contract LC-01485746, and Ministerio de Ciencia, Innovacion y Universidades and FEDER, with the project PGC2018-095456-B-I00. DE., MGu funded by Spanish Ministry of Health / REACT-UE (FEDER). DO, GF, IMi, LC funded by Laboratory Directed Research and Development program of Los Alamos National Laboratory (LANL) under project number 20200700ER. DS, ELR, GG, NGR, NW, YW funded by National Institutes of General Medical Sciences (R35GM119582; the content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS or the National Institutes of Health). FB, FP funded by InPresa, Lombardy Region, Italy. HG, KS funded by European Centre for Disease Prevention and Control. IV funded by Agencia de Qualitat i Avaluacio Sanitaries de Catalunya (AQuAS) through contract 2021-021OE. JDe, SMo, VP funded by Netzwerk Universitatsmedizin (NUM) project egePan (01KX2021). JPB, SH, TH funded by Federal Ministry of Education and Research (BMBF; grant 05M18SIA). KH, MSc, YKh funded by Project SaxoCOV, funded by the German Free State of Saxony. Presentation of data, model results and simulations also funded by the NFDI4Health Task Force COVID-19 ( https://www.nfdi4health.de/task-force-covid-19-2 ) within the framework of a DFG-project (LO-342/17-1). LP, VE funded by Mathematical and Statistical modelling project (MUNI/A/1615/2020), Online platform for real-time monitoring, analysis and management of epidemic situations (MUNI/11/02202001/2020); VE also supported by RECETOX research infrastructure (Ministry of Education, Youth and Sports of the Czech Republic: LM2018121), the CETOCOEN EXCELLENCE (CZ.02.1.01/0.0/0.0/17-043/0009632), RECETOX RI project (CZ.02.1.01/0.0/0.0/16-013/0001761). NIB funded by Health Protection Research Unit (grant code NIHR200908). SAb, SF funded by Wellcome Trust (210758/Z/18/Z).
+Background:Short-term forecasts of infectious disease burden can contribute to situational awareness and aid capacity planning. Based on best practice in other fields and recent insights in infectious disease epidemiology, one can maximise the predictive performance of such forecasts if multiple models are combined into an ensemble. Here, we report on the performance of ensembles in predicting COVID-19 cases and deaths across Europe between 08 March 2021 and 07 March 2022.Methods:We used open-source tools to develop a public European COVID-19 Forecast Hub. We invited groups globally to contribute weekly forecasts for COVID-19 cases and deaths reported by a standardised source for 32 countries over the next 1–4 weeks. Teams submitted forecasts from March 2021 using standardised quantiles of the predictive distribution. Each week we created an ensemble forecast, where each predictive quantile was calculated as the equally-weighted average (initially the mean and then from 26th July the median) of all individual models’ predictive quantiles. We measured the performance of each model using the relative Weighted Interval Score (WIS), comparing models’ forecast accuracy relative to all other models. We retrospectively explored alternative methods for ensemble forecasts, including weighted averages based on models’ past predictive performance.Results:Over 52 weeks, we collected forecasts from 48 unique models. We evaluated 29 models’ forecast scores in comparison to the ensemble model. We found a weekly ensemble had a consistently strong performance across countries over time. Across all horizons and locations, the ensemble performed better on relative WIS than 83% of participating models’ forecasts of incident cases (with a total N=886 predictions from 23 unique models), and 91% of participating models’ forecasts of deaths (N=763 predictions from 20 models). Across a 1–4 week time horizon, ensemble performance declined with longer forecast periods when forecasting cases, but remained stable over 4 weeks for incident death forecasts. In every forecast across 32 countries, the ensemble outperformed most contributing models when forecasting either cases or deaths, frequently outperforming all of its individual component models. Among several choices of ensemble methods we found that the most influential and best choice was to use a median average of models instead of using the mean, regardless of methods of weighting component forecast models.Conclusions:Our results support the use of combining forecasts from individual models into an ensemble in order to improve predictive performance across epidemiological targets and populations during infectious disease epidemics. Our findings further suggest that median ensemble methods yield better predictive performance more than ones based on means. Our findings also highlight that forecast consumers should place more weight on incident death forecasts than incident case forecasts at forecast horizons greater than 2 weeks.Funding:AA, BH, BL, LWa, MMa, PP, SV funded by National Institutes of Health (NIH) Grant 1R01GM109718, NSF BIG DATA Grant IIS-1633028, NSF Grant No.: OAC-1916805, NSF Expeditions in Computing Grant CCF-1918656, CCF-1917819, NSF RAPID CNS-2028004, NSF RAPID OAC-2027541, US Centers for Disease Control and Prevention 75D30119C05935, a grant from Google, University of Virginia Strategic Investment Fund award number SIF160, Defense Threat Reduction Agency (DTRA) under Contract No. HDTRA1-19-D-0007, and respectively Virginia Dept of Health Grant VDH-21-501-0141, VDH-21-501-0143, VDH-21-501-0147, VDH-21-501-0145, VDH-21-501-0146, VDH-21-501-0142, VDH-21-501-0148. AF, AMa, GL funded by SMIGE - Modelli statistici inferenziali per governare l'epidemia, FISR 2020-Covid-19 I Fase, FISR2020IP-00156, Codice Progetto: PRJ-0695. AM, BK, FD, FR, JK, JN, JZ, KN, MG, MR, MS, RB funded by Ministry of Science and Higher Education of Poland with grant 28/WFSN/2021 to the University of Warsaw. BRe, CPe, JLAz funded by Ministerio de Sanidad/ISCIII. BT, PG funded by PERISCOPE European H2020 project, contract number 101016233. CP, DL, EA, MC, SA funded by European Commission - Directorate-General for Communications Networks, Content and Technology through the contract LC-01485746, and Ministerio de Ciencia, Innovacion y Universidades and FEDER, with the project PGC2018-095456-B-I00. DE., MGu funded by Spanish Ministry of Health / REACT-UE (FEDER). DO, GF, IMi, LC funded by Laboratory Directed Research and Development program of Los Alamos National Laboratory (LANL) under project number 20200700ER. DS, ELR, GG, NGR, NW, YW funded by National Institutes of General Medical Sciences (R35GM119582; the content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS or the National Institutes of Health). FB, FP funded by InPresa, Lombardy Region, Italy. HG, KS funded by European Centre for Disease Prevention and Control. IV funded by Agencia de Qualitat i Avaluacio Sanitaries de Catalunya (AQuAS) through contract 2021-021OE. JDe, SMo, VP funded by Netzwerk Universitatsmedizin (NUM) project egePan (01KX2021). JPB, SH, TH funded by Federal Ministry of Education and Research (BMBF; grant 05M18SIA). KH, MSc, YKh funded by Project SaxoCOV, funded by the German Free State of Saxony. Presentation of data, model results and simulations also funded by the NFDI4Health Task Force COVID-19 (https://www.nfdi4health.de/task-force-covid-19-2) within the framework of a DFG-project (LO-342/17-1). LP, VE funded by Mathematical and Statistical modelling project (MUNI/A/1615/2020), Online platform for real-time monitoring, analysis and management of epidemic situations (MUNI/11/02202001/2020); VE also supported by RECETOX research infrastructure (Ministry of Education, Youth and Sports of the Czech Republic: LM2018121), the CETOCOEN EXCELLENCE (CZ.02.1.01/0.0/0.0/17-043/0009632), RECETOX RI project (CZ.02.1.01/0.0/0.0/16-013/0001761). NIB funded by Health Protection Research Unit (grant code NIHR200908). SAb, SF funded by Wellcome Trust (210758/Z/18/Z).
 
 ## Introduction
 
@@ -219,7 +219,7 @@ We started formally collating and combining contributions to the European Foreca
 
 We developed infrastructure to host and analyse prospective forecasts of COVID-19 cases and deaths. The infrastructure is compatible with equivalent research software from the US (Cramer et al., 2021c; Wang et al., 2021) and German and Polish COVID-19 (Bracher et al., 2020) Forecast Hubs, and easy to replicate for new forecasting collaborations.
 
-## Forecast targets and models
+### Forecast targets and models
 
 We sought forecasts for the incidence of COVID-19 as the total reported number of cases and deaths per week. We considered forecasts for 32 countries in Europe, including all countries of the European Union, European Free Trade Area, and the United Kingdom. We compared forecasts against observed data reported for each country by Johns Hopkins University (JHU, Dong et al., 2020). JHU data sources included a mix of national and aggregated subnational data. We aggregated incidence over the Morbidity and Mortality Weekly Report (MMWR) epidemiological week definition of Sunday through Saturday.
 
@@ -231,11 +231,11 @@ Each week we used all available valid forecasts to create a weekly real-time ens
 
 We created an open and publicly accessible interface to the forecasts and ensemble, including an online visualisation tool allowing viewers to see past data and interact with one or multiple forecasts for each country and target for up to 4 weeks’ horizon (European Covid-19 Forecast Hub, 2023b). All forecasts, metadata, and evaluations are freely available and held on Github (European Covid-19 Forecast Hub, 2023d) (archived in real-time at Sherratt, 2022), and Zoltar, a platform for hosting epidemiological forecasts (EpiForecasts, 2021; Reich et al., 2021). In the codebase for this study (covid19-forecast-hub-europe, 2022) we provide a simple method and instructions for downloading and preparing these data for analysis using R. We encourage other researchers to freely use and adapt this to support their own analyses.
 
-## Forecast evaluation
+### Forecast evaluation
 
 In this study, we focused only on the comparative performance of forecasting models relative to each other. Performance in absolute terms is available on the Hub website (European Covid-19 Forecast Hub, 2023b). For each model, we assessed calibration and overall predictive performance. We evaluated all previous forecasts against actual observed values for each model, stratified by the forecast horizon, location, and target. We calculated scores using the scoringutils R package (Bosse et al., 2023). We removed any forecast surrounding (both the week of, and the first week after) a strongly anomalous data point. We defined anomalous as where any subsequent data release revised that data point by over 5%.
 
-To investigate calibration, we assessed coverage as the correspondence between the forecast probability of an event and the observed frequency of that event. This usage follows previous work in epidemic forecasting (Bracher et al., 2021a), and is related to the concept of reliability for binary forecasts. We established the accuracy of each model’s prediction boundaries as the coverage of the predictive intervals. We calculated coverage at a given interval level k, where k∈[0,1], as the proportion p of observations that fell within the corresponding central predictive intervals across locations and forecast dates. A perfectly calibrated model would have p=k at all 11 levels (corresponding to 22 quantiles excluding the median). An underconfident model at level k would have p>k, i.e. more observations fall within a given interval than expected. In contrast, an overconfident model at level k would have p<k, i.e. fewer observations fall within a given interval than expected. We here focus on coverage at the k=0.5 and k=0.95 levels.
+To investigate calibration, we assessed coverage as the correspondence between the forecast probability of an event and the observed frequency of that event. This usage follows previous work in epidemic forecasting (Bracher et al., 2021a), and is related to the concept of reliability for binary forecasts. We established the accuracy of each model’s prediction boundaries as the coverage of the predictive intervals. We calculated coverage at a given interval level $k$, where $k\in[0,1]$, as the proportion $p$ of observations that fell within the corresponding central predictive intervals across locations and forecast dates. A perfectly calibrated model would have $p=k$ at all 11 levels (corresponding to 22 quantiles excluding the median). An underconfident model at level $k$ would have $p>k$, i.e. more observations fall within a given interval than expected. In contrast, an overconfident model at level $k$ would have $p<k$, i.e. fewer observations fall within a given interval than expected. We here focus on coverage at the $k=0.5$ and $k=0.95$ levels.
 
 We also assessed the overall predictive performance of weekly forecasts using the Weighted Interval Score~(WIS) across all available quantiles. The WIS represents a parsimonious approach to scoring forecasts based on uncertainty represented as forecast values across a set of quantiles (Bracher et al., 2021a), and is a strictly proper scoring rule, that is, it is optimal for predictions that come from the data-generating model. As a consequence, the WIS encourages forecasters to report predictions representing their true belief about the future (Gneiting and Raftery, 2007). Each forecast for a given location and date is scored based on an observed count of weekly incidence, the median of the predictive distribution and the predictive upper and lower quantiles corresponding to the central predictive interval level.
 
@@ -243,17 +243,29 @@ Not all models provided forecasts for all locations and dates, and we needed to 
 
 We scaled the relative WIS of each model with the relative WIS of a baseline model, for each forecast target, location, date, and horizon. The baseline model assumes case or death counts stay the same as the latest data point over all future horizons, with expanding uncertainty, described previously in Cramer et al., 2021b. In this study, we report the relative WIS of each model with respect to the baseline model.
 
-## Retrospective ensemble methods
+### Retrospective ensemble methods
 
-We retrospectively explored alternative methods for combining forecasts for each target at each week. A natural way to combine probability distributions available in the quantile format Genest, 1992 used here isF−1(α)=∑i=1nwiFi−1(α),
+We retrospectively explored alternative methods for combining forecasts for each target at each week. A natural way to combine probability distributions available in the quantile format Genest, 1992 used here is
 
-Where F1⁢…⁢Fn are the cumulative distribution functions of the individual probability distributions (in our case, the predictive distributions of each forecast model i contributed to the hub), wi are a set of weights in [0,1]; and α are the quantile levels, such that following notation introduced in Genest, 1992,F−1(α)=inf{t:Fi(t)≥α}.
+$$
+F^{−1}(\alpha)=\sumi=1nw_{i}F_{i}^{−1}(\alpha),
+$$
 
-Different ensemble choices then mainly translate to the choice of weights wi. An arithmetic mean ensemble uses weights at wi=1/n, where all weights are equal and sum up to 1.
+Where $F_{1}⁢…⁢F_{n}$ are the cumulative distribution functions of the individual probability distributions (in our case, the predictive distributions of each forecast model $i$ contributed to the hub), wi are a set of weights in $[0,1]$; and $\alpha$ are the quantile levels, such that following notation introduced in Genest, 1992,
 
-Alternatively, we can choose a set of weights to apply to forecasts before they are combined. Numerous options exist for choosing these weights with the aim to maximise predictive performance, including choosing weights to reflect each forecast’s past performance (thereby moving from an untrained to a trained ensemble). A straightforward choice is so-called inverse score weighting. In this case, the weights are calculated aswi=1Si,
+$$
+F^{−1}(\alpha)=inf{t:F_{i}(t)\geq\alpha}.
+$$
 
-where Si reflects the forecasting skill calculated as the relative WIS of forecaster i, calculated over all available model data, and normalised so that weights sum to 1. This method of weighting was found in the US to outperform unweighted scores during some time periods (Taylor and Taylor, 2023) but this was not confirmed in a similar study in Germany and Poland (Bracher et al., 2021c).
+Different ensemble choices then mainly translate to the choice of weights wi. An arithmetic mean ensemble uses weights at $w_{i}=1/n$, where all weights are equal and sum up to 1.
+
+Alternatively, we can choose a set of weights to apply to forecasts before they are combined. Numerous options exist for choosing these weights with the aim to maximise predictive performance, including choosing weights to reflect each forecast’s past performance (thereby moving from an untrained to a trained ensemble). A straightforward choice is so-called inverse score weighting. In this case, the weights are calculated as
+
+$$
+w_{i}=\frac{1}{S_{i}},
+$$
+
+where $S_{i}$ reflects the forecasting skill calculated as the relative WIS of forecaster $i$, calculated over all available model data, and normalised so that weights sum to 1. This method of weighting was found in the US to outperform unweighted scores during some time periods (Taylor and Taylor, 2023) but this was not confirmed in a similar study in Germany and Poland (Bracher et al., 2021c).
 
 When constructing ensembles from quantile means, a single outlier can have an oversized effect on the ensemble forecast. Previous research has found that a median ensemble, replacing the arithmetic mean of each quantile with a median of the same values, yields competitive performance while maintaining robustness to outlying forecasts (Ray et al., 2022). Building on this, we also created weighted median ensembles using the weights described above and a Harrel-Davis quantile estimator with a beta function to approximate the weighted percentiles (Harrell and Davis, 1982). We then compared the performance of unweighted and inverse relative WIS weighted mean and median ensembles, comparing the ratio of interval scores between each ensemble model relative to the baseline model.
 
@@ -292,6 +304,86 @@ The ensemble also performed consistently well in comparison to individual models
 **Figure 4.:** Boxplots show interquartile ranges, with outliers as faded points, and the ensemble model performance is marked by an asterisk. y-axis is cut-off to an upper bound of 4 for readability.
 
 We considered alternative methods for creating ensembles from the participating forecasts, using either a mean or median to combine either weighted or unweighted forecasts. We evaluated each alternative ensemble model against the baseline model, taking the mean score ratio across all targets (Table 1). Across locations we observed that the median outperformed the mean across all one through 4 week horizons and both cases and death targets, for all but cases at the 1 week horizon. This held regardless of whether the component forecasts were weighted or unweighted by their individual past performance. Between methods of combination, weighting made little difference to the performance of the median ensemble, but appeared to improve performance of a mean ensemble in forecasting deaths.
+
+**Table 1.**
+ Predictive performance of main ensembles, as measured by the mean ratio of interval scores against the baseline ensemble.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Horizon</th>
+      <th>Weighted mean</th>
+      <th>Weighted median</th>
+      <th>Unweighted mean</th>
+      <th>Unweighted median</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Cases</td>
+    </tr>
+    <tr>
+      <td>1 week</td>
+      <td>0.63</td>
+      <td>0.64</td>
+      <td>0.61</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>2 weeks</td>
+      <td>0.72</td>
+      <td>0.71</td>
+      <td>0.69</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>3 weeks</td>
+      <td>0.82</td>
+      <td>0.76</td>
+      <td>0.82</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>4 weeks</td>
+      <td>1.07</td>
+      <td>0.86</td>
+      <td>1.12</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td colspan="5">Deaths</td>
+    </tr>
+    <tr>
+      <td>1 week</td>
+      <td>0.65</td>
+      <td>0.61</td>
+      <td>1.81</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>2 weeks</td>
+      <td>0.58</td>
+      <td>0.54</td>
+      <td>1.29</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>3 weeks</td>
+      <td>0.64</td>
+      <td>0.57</td>
+      <td>1.17</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>4 weeks</td>
+      <td>0.82</td>
+      <td>0.67</td>
+      <td>0.84</td>
+      <td>0.62</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 

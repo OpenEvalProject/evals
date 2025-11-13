@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/021cj6z65 Department of Cardiology, The Affiliated Hospital of Qingdao University Qingdao China
-2. https://ror.org/021cj6z65 Department of Urology, The Affiliated Hospital of Qingdao University Qingdao China
+1. Department of Cardiology, The Affiliated Hospital of Qingdao University Qingdao China ([ROR:021cj6z65](https://ror.org/021cj6z65))
+2. Department of Urology, The Affiliated Hospital of Qingdao University Qingdao China ([ROR:021cj6z65](https://ror.org/021cj6z65))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Estrogen has a multifaceted impact on women, with postmenopausal hypertension be
 
 ## Results
 
-## Development of animal models with estrogen depletion
+### Development of animal models with estrogen depletion
 
 In the Sham group, normal estrous cycle patterns were observed, with small, round vaginal exfoliated cells present during the nonestrous phase and larger, polygonal cells with abundant cytoplasm seen during the estrous phase. Conversely, in the OVX and OVX + E groups (pre-estrogen supplementation), the estrous cycle ceased, and the vaginal exfoliated cells remained small and round, confirming the effectiveness of bilateral ovariectomy. Serum estrogen levels in the OVX group were significantly lower compared to the Sham group (7.54 ± 1.46pg/mL vs. 36.12 ± 6.07pg/mL, n = 8, p< 0.001), while levels in the OVX + E group were markedly higher than those in the OVX group (36.21 ±4.30pg/mL vs. 7.54 ± 1.46pg/mL, n = 10, p< 0.001). There was no significant difference between the Sham and OVX + E groups, further confirming the validity of the experimental model (Figure 2A).
 
@@ -34,31 +34,71 @@ In the Sham group, normal estrous cycle patterns were observed, with small, roun
 
 **Figure 2.:** (A) Serum estrogen concentration, n=8 per group (B). SBP of animal, n=8 per group (C) DBP, n=8 per group. (D) PP of animal, n=8 per group. ***p<0.001.
 
-## BP features of the OVX model
+### BP features of the OVX model
 
 The SBP (151.98±2.79 mmHg), DBP (105.10±2.89 mmHg), and PP (46.88±3.78 mmHg) of the OVX group were significantly higher than the other two groups (p<0.001). There was no statistical difference between the Sham group and the OVX + E group in SBP (136.43±2.45 mmHg vs. 137.60±2.03 mmHg), DBP (97.65±2.34 mmHg vs. 98.13±2.16 mmHg), and PP (38.78±3.24 mmHg vs. 39.48±2.92 mmHg) (p>0.05; Figure 2B–D).
 
-## Characteristics of aortic metabolites related to low estrogen levels
+### Characteristics of aortic metabolites related to low estrogen levels
 
 A total of 184 metabolites in aortic tissues were identified using metabolomics analysis (Supplementary file 1: Metabolomics raw data), mainly categorized into 8 major classes, with amino acids accounting for over 1/3 (Figure 3A). To normalize the data distribution, both metabolites and samples underwent normalization procedures (Figure 3—figure supplement 1A, B). To explore the differences in aortic tissue metabolites under varying estrogen levels, a one-way analysis of variance (ANOVA) was utilized to select differentially expressed metabolites among the three groups of aortas. The false discovery rate threshold was set at 0.05. Since the normalized data approximated a normal distribution, hypothesis testing was carried out through two methods: non-parametric tests identified 17 different metabolites (Supplementary file 2: Non-parametric tests of metabolites), while Fisher’s Least Significant Difference (LSD) tests revealed 23 different metabolites (Supplementary file 3：Fisher’s LSD tests of metabolites). By taking the intersection of the two methods, a total of 15 different metabolites were identified (Supplementary file 4：Intersection differential metabolites). Further selection of the most promising differentially expressed metabolites among groups was shown in Figure 3C–I. Using multi-class significance analysis of microarrays (SAM) (with a delta set at 1.1, Figure 3—figure supplement 2), a total of 45 different metabolites were identified (Figure 3J, Supplementary file 5：Differential metabolites identified by SAM), with L-Alpha-aminobutyric acid (L-AABA), Methylpicraquassioside A, Pyroglutamine, and D-Ribose 5-phosphate being the most promising inter-group differentially expressed metabolites. A heatmap of metabolite correlations indicated that all metabolites could be roughly categorized into 4 distinct clusters based on their correlation relationships (Figure 3—figure supplement 3, Supplementary file 6, Supplementary file 7：The correlation coefficient and p-value of the correlation analysis for all metabolites). The Pearson correlation analysis for the three different sample groups clearly demonstrated distinct differences between the OVX group and the other two groups, while the Sham and OVX + E groups with similar estrogen concentrations were challenging to differentiate (Figure 4A, Supplementary file 8, Supplementary file 9：The correlation coefficient and p-value of the correlation analysis for all samples). The trends highlighted in the hierarchical clustering dendrogram further emphasized these distinctions (Figure 4B). The hierarchical clustering heatmap, created based on the top 25 differentially expressed metabolites filtered by ANOVA, depicted two distinct patterns of metabolite expression across different groups. A class of metabolites represented by Inosinic acid showed a significant upregulation in the OVX group, while displaying consistent downregulation in the Sham and OVX + E groups; another class of metabolites primarily displayed downregulation in the OVX group (Figure 4C). Further exploration of the expression characteristics of aortic metabolites in the OVX group was performed using dimensionality reduction analyses. Principal Component Analysis (PCA), Partial Least Squares Discriminant Analysis (PLS-DA), and sparse PLS-DA (sPLS-DA) were applied as the three analytical strategies. In the Unsupervised strategy, the first component accounted for 21.5% and the second component for 15%, with a high degree of overlap among the three groups’ data (Figure 5A, Figure 5—figure supplement 1A-B). Implementing the PLS-DA strategy distinguished the differences between the OVX group and the other two groups clearly, although there was still some minor overlap (Figure 5B, Figure 5—figure supplement 1C). Although the model could select some differentially expressed metabolites using VIP scores (Figure 5—figure supplement 1D), a fivefold cross-validation (CV) indicated suboptimal values for R2, Q2, and accuracy indicators (Figure 5—figure supplement 1E, Supplementary file 10：PLS-DA CV details). The permutation test also suggested a risk of model overfitting (Figure 5—figure supplement 1F). As the predictive performance of both the PCA and PLS-DA models fell short of expectations, the sPLS-DA model was tested, showing optimal performance in the fivefold CV results (Figure 5C，Figure 5—figure supplement 1G–H). According to the VIP scores, L-AABA and Methylpicraquassioside A were identified as the top differentially expressed metabolites (Figure 5D, Supplementary file 11：VIP scores for differential metabolites). Similarly, in the random forest tree model, L-AABA was identified as the most important metabolite for classification accuracy evaluation (Mean Decrease accuracy; Figure 5E, Supplementary file 12：Mean Metabolic Accuracy of differential metabolites in random forest tree model). Unfortunately, the out-of-bag (OOB) error for the random forest tree model did not reach 0 (0.0417, Figure 5F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig3-v1.jpg)
+
+**Figure 3.:** (A) Metabolite classification statistics chart. (B) Venn diagram of differential metabolites. (C–I) Bar chart of the expression levels of the most promising differential metabolites. (J) SAM analysis of differential metabolites.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Distribution map of samples before and after normalization treatment. (B) Distribution map of metabolites before and after normalization treatment.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig3-figsupp3-v1.jpg)
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig4-v1.jpg)
 
 **Figure 4.:** (A) Pearson correlation analysis heatmap of samples. (B) Hierarchical clustering tree diagram of samples. (C) Hierarchical clustering heatmap of samples and metabolites.
 
-## Subgroup analysis of metabolic characteristics
+![Figure 5.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig5-v1.jpg)
+
+**Figure 5.:** (A) PCA scatter plot. (B) PLS-DA scatter plot. (C) sPLS-DA scatter plot. (D) VIP score of sPLS-DA model. (E) VIP score of RF model (F) OOB error for the random forest tree model.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) PCA plot among the three groups (B) PCA scree plot among the three groups. (C) PLS-DA plot among the three groups. (D) VIP score of OPLS-DA model among the three groups. (E) 5-fold CV of OPLS-DA model among the three groups. (F) OPLS-DA models permutations test among the three groups. (G) sPLS-DA plot among the three groups. (H) sPLS-DA classification error rates plot among the three groups.
+
+### Subgroup analysis of metabolic characteristics
 
 Using the aforementioned methods, we obtained overall differences in three sets of aortic metabolites, and further verification is needed to determine whether these differences exhibit the expected trends among different groups. To this end, we comprehensively employed various methods to assess the differential features of metabolites between OVX and the other two groups (t-test, PCA, PLS-DA and Orthogonal PLS-DA (OPLS-DA), Random Forest, and Empirical Bayesian Analysis of Metabolomics (EBAM)). When comparing data of the subgroups, we recalibrated the data (Figure 6—figure supplement 1A–D). The Fold Change (FC) threshold for the t-test was set to 2, and the p-value was 0.05. Compared to the Sham group, in the OVX group, Adenylsuccinic acid, 4-Hydroxybutyric acid, Cholic acid, O-dodecanoylcarnitine, L-Hexanoylcarnitine, Adenosine 3’-monophosphate, 1-Methylguanine, O-decanoyl-L-carnitine, and Butyrylcarnitine were significantly upregulated, while Uracil, Uridine, Ribothymidine, and L-AABA were significantly downregulated (Figure 6A, Supplementary file 13：Details of t-test for differential metabolites between Sham group and OVX group). Compared to the OVX group, Cysteinylglycine, Adenosine 3’-monophosphate, Adenylsuccinic acid, and 4-Hydroxybutyric acid were significantly downregulated in the OVX + E group, while Glycocholic acid, L-AABA, L-Erythrulose, 4-Guanidinobutanoic acid, p-Cresol sulfate, 1-Methylguanosine, Indoxyl sulfate, and Uridine were significantly upregulated (Figure 6B, Supplementary file 14：Details of t-test for differential metabolites between OVX + E group and OVX group). The hierarchical clustering dendrogram clearly distinguished the samples of different subgroups (Figure 7A–B). The hierarchical clustering heatmap visually displayed the above results (Figure 7C–D). Although PCA analysis as an unsupervised analysis could effectively differentiate between the OVX and OVX + E groups, it faced difficulties in distinguishing differences between the OVX and Sham groups (Figure 8A-B, Figure 8—figure supplement 1A-B). In contrast, supervised methods were more adept at discerning intergroup differences, but these models also had certain limitations. The PLS-DA model had good intergroup discriminative ability (Figure 8C-D, Figure 8—figure supplement 1C-D), but showed clear signs of model overfitting (Figure S6E-F). The OPLS-DA model also had advantages in discriminative ability (Figure 8E–F), and the permutations test results indicated that the R2Y values of the OPLS-DA models between OVX and the other two groups were 0.981 (p=0.009) and 0.986 (p=0.001), with Q2 values of 0.848 (p<0.002) and 0.893 (p=0.001; Figure 8G–H). The cross-validation results were consistent with the permutations test (Figure 8—figure supplement 1G–H), demonstrating the high predictive value of the models. Utilizing the VIP scores and S-Plot of this model, we further identified four important differential metabolites, namely L-AABA, 4-Hydroxyproline, O-dodecanoylcarnitine, and Methylpicraquassioside A (Figure 8I–J, Supplementary file 15, Supplementary file 16：VIP scores of OPLS-DA models between subgroups). The Random Forest model exhibited strong advantages in determining intergroup differences, with an OOB error of 0 (Figure 8—figure supplement 2A–B), and the VIP plots based on contribution to classification accuracy provided several promising differential metabolites (Figure 9A–B, Supplementary file 17, Supplementary file 18：VIP scores of the random forest model between subgroups), which still included L-AABA. The evaluation results of EBAM and SAM are shown in Figure 9C–F (Supplementary file 22：The evaluation details of EBAM and SAM model between subgroups).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig6-v1.jpg)
+
+**Figure 6.:** (A) Volcano map of differential metabolites between the Sham group and OVX group. (B) Volcano map of differential metabolites between the OVX group and OV +E group.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Distribution map of metabolites before and after normalization treatment between the Sham and OVX group. (B) Distribution map of samples before and after normalization treatment between the Sham and OVX group. (C) Distribution map of metabolites before and after normalization treatment between the OVX group and OVX + E group. (D) Distribution map of samples before and after normalization treatment between the OVX group and OVX + E group.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig7-v1.jpg)
 
 **Figure 7.:** (A) Hierarchical clustering dendrogram between the Sham group and OVX group. (B) Hierarchical clustering dendrogram between the OVX group and OVX + E group. (C) Hierarchical clustering heatmap between the Sham group and OVX group. (B) Hierarchical clustering heatmap between the OVX group and OVX + E.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig8-v1.jpg)
+
+**Figure 8.:** (A) PCA scatter plot between the Sham group and OVX group. (B) PCA scatter plot between the OVX group and OVX + E group. (C) PLS-DA scatter plot between the Sham group and OVX group. (D) PLS-DA scatter plot between the OVX group and OVX + E group. (E) OPLS-DA scatter plot between the Sham group and OVX group. (F) OPLS-DA scatter plot between the OVX group and OVX + E group. (G) OPLS-DA model permutations test between the Sham group and OVX group. (H) OPLS-DA models permutations test between the OVX group and OVX + E group. (I) VIP score of OPLS-DA model between the Sham group and OVX group. (J) VIP score of OPLS-DA model between the OVX group and OVX + E group.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) PCA plot between the Sham group and OVX group. (B) PCA plot between the OVX group and OVX + E group. (C) PLS-DA plot between the Sham group and OVX group. (D) PLS-DA plot between the OVX group and OVX + E group. (E) PLS-DA model permutations test between the Sham group and OVX group. (F) PLS-DA models permutations test between the OVX group and OVX + E group. (G) OPLS-DA model permutations test between the Sham group and OVX group. (H) OPLS-DA models permutations test between the OVX group and OVX + E group.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) The random forest classification and OOB error plot between the Sham group and OVX group. (B) The random forest classification and OOB error plot between the OVX group and OVX + E group.
+
 ![Figure 9.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig9-v1.jpg)
 
 **Figure 9.:** (A) VIP patterns based on RF model between the Sham group and OVX group. (B) VIP patterns based on RF model between the OVX group and OVX +E group. (C, D) Volcano plots for subgroup comparison based on EBAM method. (E, F) Screening of differential metabolites between subgroups based on SAM method.
 
-## Metabolite expression characteristics
+### Metabolite expression characteristics
 
 Metabolite expression characteristics are another analytical strategy to explore the impact of low estrogen on the aorta. In the subgroup analysis, using the OVX group as a control, representative metabolites associated with the Sham group and OVX + E group are shown in Figure 10A–B; Supplementary file 23, Supplementary file 24: Details of intergroup differential analysis of low estrogen related metabolites. Among them, the metabolites with a positive correlation coefficient exceeding 0.8 include Methylpicraquassioside A, L-AABA, and D-Ribose 5-phosphate (Sham group), as well as L-AABA, 4-Guanidinobutanoic acid, Methylpicraquassioside A, and L-Erythrulose (OVX +E group). The trend arranged from low to high estrogen concentrations (OVX-Sham-OVX+E) is shown in Figure 10, Supplementary file 25：Details of metabolite related trends from low to high estrogen concentrations. L-AABA exhibits a significant positive correlation feature (correlation coefficient of 0.89), while Inosinic acid is the only metabolite with a negative correlation coefficient exceeding –0.7 (correlation coefficient of –0.7). Therefore, we further explored metabolites with correlated expression to L-AABA (Figure 10D, Supplementary file 26: Correlation coefficient of metabolites related to L-AABA expression), where L-Erythrulose shows the most positive correlation (correlation coefficient of 0.87171), and Inosinic acid shows the most negative correlation (correlation coefficient of –0.62298).
 
@@ -66,11 +106,19 @@ Metabolite expression characteristics are another analytical strategy to explore
 
 **Figure 10.:** (A) Metabolite expression patterns associated with ovariectomy. (B) Metabolite expression patterns related to estrogen supplementation. (C) Metabolite expression patterns associated with increased estrogen concentration. (D) Metabolite expression patterns associated with L-AABA.
 
-## Identification of biomarkers
+### Identification of biomarkers
 
 Univariate receiver operating characteristic (ROC) curve analysis was used to screen promising biomarkers, and L-AABA was found to be the most promising biomarker, with an AUC of 1 in the comparison process between OVX and the other two groups (Figure 11A–B, Supplementary file 27, Supplementary file 28: The promising differential metabolites AUC results of ROC curves between subgroups). Multivariate ROC curve analysis demonstrated unique value in biomarker selection, with the AUC consistently above 0.93 starting from 5 variables (Figure 11C–D). The error classification of the multivariate ROC curve showed that there were no misclassifications when using the model for samples in the OVX and OVX +E groups, but one sample from the Sham group was incorrectly classified into the OVX group (Figure 11—figure supplement 1A–B). In this multivariate model, L-AABA still ranked in the top three in terms of average importance (Figure 11E–F).
 
-## Enrichment analysis of differential metabolites
+![Figure 11.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig11-v1.jpg)
+
+**Figure 11.:** (A) ROC curve of L-AABA between the Sham group and OVX group. (B) ROC curve of L-AABA between the OVX group and OVX +E group. (C) Multivariate ROC curve based exploratory analysis between the Sham and OVX group. (D) Multivariate ROC curve based exploratory analysis between the OVX group and OVX +E group. (E) Average importance ranking of multivariate models for biomarkers between the Sham and OVX group. (F) Average importance ranking of multivariate models for biomarkers between the OVX and OVX +E group.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/101701/elife-101701-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** (A) The misclassifications between the OVX and Sham groups. (B) The misclassifications between the OVX and OVX +E groups.
+
+### Enrichment analysis of differential metabolites
 
 Further enrichment analysis of differential metabolites was conducted to elucidate the underlying mechanisms. Differential metabolites showed a wide range of classifications, with amino acids and peptides, fatty acids and conjugates, and monosaccharides ranking among the top three (Figure 12A). Results of metabolic pathway enrichment analysis indicated that the Warburg effect, glycolysis, and gluconeogenesis were the top three enriched metabolic pathways (Figure 12B). Enzyme-specific metabolic analysis revealed that deoxyuridine phosphorylase (UPP) and O2 transport (diffusion) ranked in the top two (Figure 12C). To eliminate the impact of species differences on enrichment results, we specifically conducted rat-specific metabolic pathway analysis, which showed significant differences in the Pentose phosphate pathway, Glycerophospholipid metabolism, Arginine and proline metabolism, and Pyrimidine metabolism (Figure 12D, Supplementary file 29：Rat-specific metabolic pathway analysis details).
 
@@ -92,34 +140,34 @@ The current study is an exploratory work on the relationship between low estroge
 
 ## Materials and methods
 
-## Animal models
+### Animal models
 
 The experimental animals for this study were purchased from the Department of Laboratory Animal Science at Peking University Health Science Center. The animals’ care and handling followed the guidelines established by the Animal Experimental Control and Supervision Committee, along with the Declaration of Helsinki by the World Medical Association regarding ethical standards for medical research involving animals. Approval for the experimental protocol was obtained from the Laboratory Animal Welfare Ethics Committee (No. LA2018092). Twenty-four 12-week-old female Sprague Dawley rats (Without any genetic modification) of SPF grade were randomly assigned to three groups: the Sham surgery group (Sham), ovariectomy group (OVX), and ovariectomy group treated with estrogen (OVX +E). These animals were housed under controlled conditions, including temperature (22–26°C), humidity (50–60%), and a 12 hr light/12 hr dark cycle, provided with a non-soy diet and ad libitum access to water. Surgery was performed one week after acclimatization. The Sham group underwent skin incision and closure, while the OVX and OVX +E groups underwent ovariectomy. On the 14th day post-surgery, all rats received subcutaneous injections of specific drugs between 9am and 10am daily for four weeks. Rats in the OVX +E group were administered 17β-estradiol (25 μg/kg/day; Sigma, St. Louis, MO, USA) dissolved in ethanol and diluted with sterile sesame oil (10 mg/0.1 mL, 0.25 mL/kg; GLBIO, Montclair, California, USA). The other groups were given an equal volume of sterile sesame oil. Starting from the third day post-operation, vaginal exfoliated cells were smeared daily for 7 days consecutively to confirm the successful establishment of the model. Vaginal cells were collected using a cotton swab dampened in 0.9% saline, stained with hematoxylin and eosin, dehydrated with alcohol, clarified with xylene, and ultimately preserved with resin.
 
-## Blood pressure measurement
+### Blood pressure measurement
 
 After 4 weeks of ovariectomy, blood pressure was measured in 24 rats every night from 22:00 to 24:00 for the next seven days. The first 6 days were used for adaptation training to reduce the impact of the surgery and surroundings on blood pressure. After blood pressure values stabilized, data collection began on the seventh day. The CODA-HT6 non-invasive blood pressure system (Kent Scientific Corporation, CT, USA) was used for the measurements. The cuff was positioned 1 cm from the tail base, attaching the VPR sensor to the tail. The tubing and VPR sensor were gradually inflated until the tail was completely blocked off, and then gradually deflated. Systolic blood pressure (SBP) was measured when blood flow was detected in the artery. The peak slope of the blood pressure change as determined by VPR revealed the diastolic blood pressure (DBP). Pulse pressure (PP) is equal to SBP minus DBP. Every rat was subjected to ten to fifteen measurement cycles; the average of the last five cycles was taken as the final result.
 
-## Harvesting aorta and blood samples
+### Harvesting aorta and blood samples
 
 All rats were killed after having their blood pressure measured and given an intraperitoneal injection of 1% pentobarbital sodium (80 mg/kg; Sigma, St. Louis, MO, USA). After drawing blood samples from the heart, they were centrifuged at 4 °C. A cold 0.9% saline solution was utilized to perfuse the heart prior to the collection of aortic tissues. After that, the whole aorta and the serum fraction were kept in storage at –80 °C.
 
-## Radioimmunoassay
+### Radioimmunoassay
 
 With a detection limit of 3 pg/mL, the Rat E2 ELISA kit (RE1649-48T, Bioroyee, Beijing, China) was used for radioimmunoassay to evaluate serum estrogen levels. Samples were separated, centrifuged, and then incubated for analysis in accordance with the instructions.
 
-## Preparing the aorta for metabolomics
+### Preparing the aorta for metabolomics
 
 Precisely weigh out 20±1 mg of aorta tissue, and then combine it with 500 µL of methanol containing an internal standard of 5 µg/mL 2-chloro-l-phenylalanine. The mixture was homogenized for 90 s using a high-throughput tissue grinder (60 Hz; Tissuelyser-24, Jingxin, Shanghai, China). A 15-min centrifugation at 12,000 rpm and 4 °C resulted in the separation of 100 µL of the supernatant for analysis using metabolomics.
 
-## Metabolomics measurement
+### Metabolomics measurement
 
 The UHPLC-Q-TOF technique was used to analyze the metabolomics of aorta tissue. ACQUITY UPLC HSS T3 columns (1.8 μm, 2.1 mm × 100 mm, Waters, Dublin, Ireland) were used as the chromatographic column in the Agilent 1290 II UPLC-QTOF 5600 PLUS (Sciex) liquid chromatography-mass spectrometry system, which was used in the electric spray ionization (ESI) mode. Curtain gas = 35, ion spray voltage = 5500 V (positive ion mode) and –4500 V (negative ion mode), temperature = 450 °C, ion source gas 1=50, and ion source gas 2=50 were the parameters for liquid chromatography-mass spectrometry. Software for Agilent MassHunter workstations (version B.01.04; Agilent, Lexington, MA, USA) was used to process raw data. By increasing the intensity threshold to 300, noise was filtered out and isotope interference was eliminated. The method of identifying metabolite was by comparison with the publicly available METLIN database (here, access date: 9 October 2021).
 
-## Data preprocessing and bioinformatics analysis
+### Data preprocessing and bioinformatics analysis
 
 In the current research, data preprocessing and bioinformatics analysis were conducted using MetaboAnalyst 5.0 (Pang et al., 2021) (http://www.metaboanalyst.ca/; visited on October 12, 2021). The Sham group served as the reference group while the data were normalized using the group probability quotient normalization technique (Dieterle et al., 2006). Data normalization was accomplished using log transformation (base 10) and the Pareto approach (mean-centered, divided by the square root of each variable’s standard deviation). Several analytical techniques were used for information mining, such as the Debiased Sparse Partial Correlation (DSPC) network (Basu et al., 2017; Figure 1) summarizes the aforementioned study procedure.
 
-## Conclusion
+### Conclusion
 
 This study for the first time delineated the metabolic characteristics of the aorta under low estrogen status and explored potential mechanisms of postmenopausal hypertension. Sugar metabolism reprogramming plays an important role in Postmenopausal Hypertension, and AABA may be a key link in the pathogenic mechanism. The aforementioned mechanisms may be the future focus of work on Postmenopausal Hypertension and deserve further in-depth exploration.

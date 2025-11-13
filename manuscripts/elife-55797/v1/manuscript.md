@@ -38,17 +38,29 @@ Including the recording of hedonic facial reactions, the ‘gold standard’ in 
 
 To fill this knowledge gap, we pharmacologically manipulated the dopaminergic and opioidergic systems in humans via oral administration of the highly selective D2/D3 dopamine receptor antagonist amisulpride (400 mg), the non-selective opioid receptor antagonist naltrexone (50 mg), or placebo, in a randomized, double-blind, between-subject design in 131 healthy volunteers (group sizes were 42, 44, and 45, respectively, for amisulpride, naltrexone, and placebo), and investigated the effects with a recently developed experimental paradigm (Korb et al., 2020), in which reward processing is operationalized similarly to animal research. Explicit subjective ratings of wanting and liking, physical effort (squeezing of an individually thresholded hand-dynamometer to obtain rewards) and implicit hedonic reactions (fEMG) during anticipation and consumption of primary social and nonsocial rewards of similar magnitude were obtained on a trial-by-trial basis (Figure 1). Sweet milk with different concentrations of chocolate flavour served as nonsocial food rewards. Gentle caresses to the forearm, delivered by a same-sex experimenter at different speeds, resulting in different levels of pleasantness (Ackerley et al., 2014; Löken et al., 2009; McGlone et al., 2014), served as non-sexual social rewards.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55797/elife-55797-fig1-v1.jpg)
+
+**Figure 1.:** Before the main task, participants experienced and ranked three food stimuli and three touch stimuli, based on liking (Figure 2). In the main task (here depicted), the highest-ranked (‘high’) reward was announced in half of the trials and the second-highest ranked (‘low’) reward was announced in the other half of trials. The probability of obtaining the announced reward was determined linearly by participants’ hand-squeezing effort, which was indicated in real-time. Participants knew that they would obtain the announced reward if they reached the top of the displayed vertical bar, which corresponded to their previously measured maximum voluntary contraction (MVC). The gained reward (which was either the one announced at the beginning of the trial, or – in the case of lower probability due to less squeezing – the least-liked ‘verylow’ reward) was then announced and delivered. To assess reward anticipation, EMG data was analyzed during the Pre-Effort anticipation period (3 s) at the beginning of the trial, when a possible reward was announced, as well as during the Post-Effort anticipation period (3 s announcement) preceding reward delivery. To investigate reward consumption, EMG data was analyzed during reward Delivery (5 s for food and 6.5 s for touch), and in the immediately following Relax phase (5 s). Rating slides stayed on screen indefinitely, or until participants’ button press. For a representation of all trial elements see Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55797/elife-55797-fig1-figsupp1-v1.jpg)
+
 By adopting a translational approach, which makes human research comparable to animal research (e.g. measuring both real effort and hedonic facial reactions to primary rewards), we investigated two fundamental yet unresolved research questions: (1) to what extent do motivational and hedonic implicit and explicit responses during the anticipation and consumption of rewards rely on the dopaminergic and opioidergic systems in humans, and (2) do food and touch rewards share the same neurochemical basis in humans.
 
 We made the following hypotheses based on the literature. First, because liking relies heavily on the opioidergic but not the dopaminergic system (Berridge and Kringelbach, 2015), subjective ratings of liking, and hedonic facial reactions during reward consumption, were expected to be lower after administration of the opioid antagonist naltrexone, compared to placebo, but not after administration of the dopamine antagonist amisulpride, particularly for the most preferred rewards (Eikemo et al., 2016; Smith and Berridge, 2007). Second, because wanting is believed to be regulated by the dopaminergic and opioidergic systems (Peciña and Berridge, 2013), we expected subjective ratings of wanting, and physical effort applied to obtain the preferred announced reward, to be lower after administration of both naltrexone and the D2/D3 receptor antagonist amisulpride. Third, because facial responses during reward anticipation – previously shown to occur to learned cues for rewards in rats (Delamater et al., 1986), and humans (Korb et al., 2020) – may reflect anticipated pleasure during a period commonly associated with wanting, they were expected to be affected by naltrexone, as well as by amisulpride, compared to placebo. Finally, based on fEMG results showing similar hedonic facial reactions to food and touch rewards, such as relaxation of the corrugator supercilii muscle and in some cases activation of the zygomaticus major muscle (Bershad et al., 2019; Korb et al., 2020; Mayo et al., 2018; Pawling et al., 2017; Ree et al., 2019; Sato et al., 2020), and on evidence from neuroimaging studies that supports the ‘common currency hypothesis’ of reward processing (Berridge and Kringelbach, 2015; Ruff and Fehr, 2014), we expected the same pattern of results for both types of rewards.
 
 ## Results
 
-## Matching of drug groups
+### Matching of drug groups
 
 In order to rule out eventual group differences that were not of interest, we conducted a series of statistical tests to verify the matching of the three groups.
 
 The three drug groups did not differ significantly in rankings of rewards before the main task, as shown by the absence of a significant Drug X Reward Level interaction for both food and touch rewards (Figure 2). Only a significant main effect of Reward Level was found for food (X2 (2)=78.1, p<0.001) and for touch rewards (X2 (2)=115.71, p<0.001), confirming the expected pattern of preferred food rewards (milk with greater chocolate content being preferred to milk with lower chocolate content), and of touch rewards (slower caresses being preferred to faster caresses).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55797/elife-55797-fig2-v1.jpg)
+
+**Figure 2.:** This ranking occurred just before the main task, which adapted to these preferences by using for each Reward Type (food, touch) the highest ranked stimulus as ‘high’ reward, the second-highest ranked stimulus as ‘low’ reward, and the lowest-ranked stimulus as ‘verylow’ reward.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55797/elife-55797-fig2-figsupp1-v1.jpg)
 
 In the main task, the level of reward (high, low, verylow) received in each trial depended on both the announcement cue at the beginning (high or low) and the force exerted to obtain it (verylow rewards were only obtained when participants exerted low effort, which linearly converted into low probability to obtain the announced reward). The number of trials in which high, low, and verylow rewards were obtained did not differ significantly across groups. Only a significant main effect of Reward Level was found (F(2, 763)=27.84, p<0.001), due to a greater number of high (M = 33.07, SD = 4.97) than low (M = 29.85, SD = 6.03) and verylow (M = 17.14, SD = 8.99) trials received, across all three drug groups and both reward types.
 
@@ -56,7 +68,95 @@ As expected, ratings of wanting and liking, as well as effort exerted to obtaine
 
 The three groups of participants did not differ significantly in their maximum voluntary contraction (MVC) of the hand dynamometer, which was measured right before the main task and at the end of the main task, nor in their positive and negative mood measured with the PANAS at time of pill intake and 3 hr later (all b < 0.6, all t < 0.8, all p>0.4; see Table 1). Finally, the three groups of participants did not differ significantly in terms of possible side effects, which were self-reported at time of pill intake and 3 hr later (see Table 1 for nausea scores).
 
-## Explicit measures: ratings of wanting, ratings of liking, and physical effort
+**Table 1.**
+ Participants’ characteristics across groups, as tested with linear regression (the t and p value refer to the main effect of Group).BMI = Body Mass Index; MVC = Maximum Voluntary Contraction; PANAS = Positive and Negative Affective Schedule; M = Mean; SD = Standard deviation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Amisulpride</th>
+      <th>Naltrexone</th>
+      <th>Placebo</th>
+      <th>Group differences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N (male, female)</td>
+      <td>42 (14, 28)</td>
+      <td>44 (14, 30)</td>
+      <td>45 (15, 30)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age M (SD)</td>
+      <td>23.7 (4.1)</td>
+      <td>22.9 (2.8)</td>
+      <td>23.1 (3.7)</td>
+      <td>t = −0.73, p=0.46</td>
+    </tr>
+    <tr>
+      <td>BMI M (SD)</td>
+      <td>22.7 (2.5)</td>
+      <td>23.0 (2.3)</td>
+      <td>22.2 (2.5)</td>
+      <td>t = −0.99, p=0.32</td>
+    </tr>
+    <tr>
+      <td>MVC M (SD)</td>
+      <td>211.9 (86.3)</td>
+      <td>208.7 (81.8)</td>
+      <td>215.3 (73.1)</td>
+      <td>t = 0.19, p=0.85</td>
+    </tr>
+    <tr>
+      <td>PANAS pos T1 M (SD)</td>
+      <td>30.5 (5.4)</td>
+      <td>29.7 (7.3)</td>
+      <td>29.4 (6.7)</td>
+      <td>t = −0.8, p=0.42</td>
+    </tr>
+    <tr>
+      <td>PANAS neg T1 M (SD)</td>
+      <td>12.1 (3.2)</td>
+      <td>14.3 (7.5)</td>
+      <td>11.5 (2.1)</td>
+      <td>t = −0.7, p=0.52</td>
+    </tr>
+    <tr>
+      <td>PANAS pos T2 M (SD)</td>
+      <td>27.1 (6.3)</td>
+      <td>24.7 (8.0)</td>
+      <td>26.7 (7.4)</td>
+      <td>t = −0.3, p=0.80</td>
+    </tr>
+    <tr>
+      <td>PANAS neg T2 M (SD)</td>
+      <td>10.1 (2.8)</td>
+      <td>12.1 (5.5)</td>
+      <td>10.5 (0.9)</td>
+      <td>t = −0.5, p=0.58</td>
+    </tr>
+    <tr>
+      <td>Nausea T1 M (SD)</td>
+      <td>1.05 (0.2)</td>
+      <td>1.02 (0.1)</td>
+      <td>1.00 (0.0)</td>
+      <td>t = −1.5, p=0.14</td>
+    </tr>
+    <tr>
+      <td>Nausea T2 M (SD)</td>
+      <td>1.00 (0.0)</td>
+      <td>1.20 (0.6)</td>
+      <td>1.00 (0.0)</td>
+      <td>t = −0.1, p=0.93</td>
+    </tr>
+  </tbody>
+</table>
+
+### Explicit measures: ratings of wanting, ratings of liking, and physical effort
 
 Drug effects were investigated on ratings of wanting provided at the beginning of each trial, on physical effort to obtain an announced reward, and on ratings of liking provided after having obtained a reward. Interactions with the factor Drug were only found for physical effort.
 
@@ -66,11 +166,17 @@ To verify the lack of drug effects on ratings of wanting, we ran the same LMM us
 
 The LMM on effort (Figure 3—figure supplement 1, C–D) resulted in the expected significant main effect of Reward Level (F(1, 128.5)=54.41, p<0.001), due to stronger force applied for high (M = 80.49, SD = 22.35) than low rewards (M = 71.74, SD = 25.42); a significant main effect of Block (F(1, 7527.4)=175.49, p<0.001) due to decreasing effort from the first (M = 78.27, SD = 23.79) to the second block (M = 74.02, SD = 24.65); and a significant Reward Type X Drug interaction (F(2, 128.4)=4.71, p=0.01; Figure 3A) reflecting lower effort for food in the amisulpride (M = 74.98, SD = 26.57) and naltrexone (M = 73.51, SD = 24.43) groups compared to the placebo (M = 80.20, SD = 22.41) group, but similar force across drug groups for touch (amisulpride: M = 78.34, SD = 25.14; naltrexone: M = 73.78, SD = 23.15; placebo: M = 76.11, SD = 23.51). The Reward Level X Drug interaction (Figure 3B) reflected lower effort for low rewards in the amisulpride (M = 71.67, SD = 27.60) and naltrexone (M = 67.90, SD = 24.45) groups compared to Placebo (M = 75.65, SD = 23.60), but failed to reach significance (F(2, 128.5)=2.95, p=0.056). All other effects were not significant (all F < 0.9, all p>0.4).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55797/elife-55797-fig3-v1.jpg)
+
+**Figure 3.:** Physical effort was lower in the amisulpride and naltrexone groups compared to placebo (A) for food but not touch rewards, and (B) non-significantly (p=0.056) for low but not high rewards. This suggests lower wanting after inhibition of both the dopaminergic and the opioidergic systems, specifically for high and low food rewards and for low-level rewards of both reward types. These null effects were confirmed with Bayesian analyses. See Figure 3—figure supplement 1 for all behavioral results.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55797/elife-55797-fig3-figsupp1-v1.jpg)
+
 The same LMM on ratings of liking (Figure 3—figure supplement 1, E–F) resulted in the main effect of Reward Level (F(1, 126.4)=150.55, p<0.001), with greatest liking of high rewards (M = 5.02, SD = 4.10), followed by low rewards (M = 1.79, SD = 4.15), and verylow rewards at the bottom (M = −1.19, SD = 3.89). Decrease of liking over time was shown by a significant main effect of Block (F(1, 9400.7)=129.40, p<0.001), due to a decrease in liking from the first (M = 2.90, SD = 4.61) to the second block (M = 2.25, SD = 4.79). All other effects were not significant (all F < 1.1, all p>0.34).
 
 The lack of an effect of drug on liking was confirmed by fitting a Bayesian LMM (the same priors were set as for the models on wanting). Neither amisulpride (βmean = 0.78, 95% Bayesian credible interval [−0.20, 1.77]), nor naltrexone (βmean = 0.25, 95% Bayesian credible interval [−0.71, 1.18]) had main effects on ratings of liking, nor did they interact with Reward Level or Reward Type (all βmean < 0.30, all 95% Bayesian credible interval crossing zero). The full model had lower predictive ability (weight = 0.002) than the model without main and interaction effects of the predictor Drug (weight = 0.998), as shown with LOO-CV. These Bayesian analyses strengthen the view, already conveyed by the frequentist LMMs, that neither drug affected explicit wanting or liking of both types of rewards in this study.
 
-## Implicit measures: facial EMG
+### Implicit measures: facial EMG
 
 To investigate drug effects on reward anticipation and reward consumption, facial EMG was analyzed in relation to trial-by-trial subjective ratings and effort (as continuous predictors) in four periods of interest (see Figure 1). In short, the following results were found. In the Pre-Effort anticipation period (Figure 4) the corrugator was, as expected, relaxed for greater wanting and effort, and was more activated to food in the amisulpride and naltrexone groups compared to the placebo group. In the same time window, the zygomaticus muscle showed, as expected, stronger activation for greater wanting, however only in food trials. In the Post-Effort anticipation period, a non-significantly greater zygomaticus activation for greater wanting was found. In the Delivery phase, a Liking X Drug interaction was found in the zygomaticus muscle (Figure 5), reflecting the expected zygomaticus activation for greater liking in the placebo and (to a lesser extent) amisulpride group, while the opposite pattern of lower zygomaticus contraction for greater liking was found in the naltrexone group. Importantly, this interaction did not survive FDR correction (p=0.09) but seems credible based on a Bayesian LMM. Finally, in the Relax window immediately following reward administration, the corrugator significantly relaxed for the most liked food rewards, but not touch rewards.
 
@@ -82,7 +188,7 @@ To investigate drug effects on reward anticipation and reward consumption, facia
 
 **Figure 5.:** A Liking x Drug interaction (not significant after FDR correction, p=0.09, but credible according to a Bayesian LMM) reflected zygomaticus activation for greater liking in the placebo group, and to a lesser extent also in the amisulpride group, but zygomaticus relaxation in the naltrexone group. This suggests that blocking of the opioidergic system resulted in an inverted effect of liking on zygomaticus activation, with less smiling for the most liked rewards.
 
-## Pre-Effort anticipation
+### Pre-Effort anticipation
 
 For the corrugator muscle by Wanting, significant main effects of Reward Type (F(1, 267.9)=10.31, p=0.01), Wanting (F(1, 238.5)=7.75, p=0.01), and Block (F(1, 7867.4)=7.76, p=0.01) were found. Activation of the corrugator was greater for food (M = 116.35, SD = 84.72) than touch (M = 110.21, SD = 60.63) and decreased, as expected, with increasing ratings of wanting (slope b = −2.80; Figure 3A). A significant Drug X Reward Type interaction (F(2, 267.8)=4.08, p=0.04) reflected (Figure 4D) greater corrugator activation to food than touch in the amisulpride group (p=0.006; food: M = 119.12, SD = 95.82; touch: M = 109.46, SD = 53.44) and naltrexone group (p=0.001; food: M = 120.00, SD = 101.29; touch: M = 109.66, SD = 67.25), while the placebo group had similar activations across both reward types (p=0.66; food: M = 110.30, SD = 48.29; touch: M = 111.44, SD = 59.87). Corrugator activation to food was also significantly greater in the amisulpride and naltrexone groups compared to the placebo group (p=0.03 and. 01).
 
@@ -92,13 +198,13 @@ For the zygomaticus muscle by Wanting (random slopes for the Reward Type X Effor
 
 For the zygomaticus muscle by Effort (random slopes for the Reward Type X Effort interaction were removed to allow model convergence), only a significant main effect of Reward Type was found (F(1, 129.2)=14.70, p=0.001), with greater zygomaticus activation to food (M = 138.79, SD = 145.48) compared to touch (M = 122.98, SD = 130.67). All other effects were not significant (all F < 1.2, all p>0.81).
 
-## Post-Effort anticipation
+### Post-Effort anticipation
 
 No significant effects were found for the corrugator muscle, neither by Wanting nor by Effort (all F < 1.7, all p>0.78).
 
 For the Zygomaticus, a greater contraction for increasing levels of Wanting (b = 6.82) was observed, but the effect fell short of significance (F(1, 186.9)=6.55, p=0.08). All other effects were not significant (all F < 1.5, all p>0.51).
 
-## Reward delivery
+### Reward delivery
 
 Analysis of the corrugator resulted in a significant main effect of Reward Type (F(1,121.9) = 8.21, p=0.04), due to greater corrugator activation in response to food (M = 153.25, SD = 216.96) than touch (M = 117.23, SD = 298.61). All other effects were not significant (all F < 2.4, all p>0.48).
 
@@ -106,7 +212,7 @@ For the zygomaticus a significant main effect of Reward Type (F(1, 126.1)=77.97,
 
 To further probe the Liking X Drug interaction, we also ran a Bayesian LMM with the same predictors (dummy coding was applied to the drug groups amisulpride and naltrexone, to compare them to placebo). A normal, and a half student-t prior were chosen for, respectively, population-level (fixed), and group-level (random) effects. Results confirmed a credible difference, compared to placebo, in the effect of liking on the zygomaticus activation in the naltrexone group (βmean = 13.62, 95% Bayesian credible interval [−23.37,–3.68]), but not in the amisulpride group (βmean = -4.92, 95% Bayesian credible interval [−14.99, 5.09]).
 
-## Relax phase
+### Relax phase
 
 For the corrugator by Liking (the random slope for the Reward Type X Liking interaction was removed to allow model convergence), significant main effects of Reward Type (F(1, 155.0)=20.36, p<0.001) and Liking (F(1, 184.6)=12.41, p=0.001), and a significant Reward Type X Liking (F(1, 9231.8)=7.66, p=0.01) interaction were found. The interaction reflected a significant corrugator decrease with greater liking for food rewards (b = −23.2) but not for touch rewards (b = −5.6).
 
@@ -120,7 +226,7 @@ By adopting a newly developed experimental paradigm (Korb et al., 2020), in whic
 
 Analyses of the behavioral (subjective wanting and liking ratings and effort) and physiological data (fEMG during anticipation and consumption of the reward) in relation to drug administration led to the following main results: (1) neither ratings of wanting nor liking were modulated by the pharmacological challenge (as confirmed with Bayesian analyses); (2) participants under dopaminergic or opioidergic antagonists produced significantly lower effort to obtain food rewards (Figure 3A), and non-significantly (p=0.056) lower effort to obtain low rewards of both touch and food (Figure 3B); (3) during the Pre-Effort anticipation of food, significantly higher corrugator activation was found in both the amisulpride and naltrexone groups (Figure 4D), suggesting lower hedonic anticipatory pleasure; and (4) during reward Delivery a Drug X Liking interaction was found (p=0.09 after FDR correction, but confirmed by Bayesian analyses), which reflected greater zygomaticus activation for liked rewards (and thus greater hedonic pleasure) in the placebo and to a lesser extent in the amisulpride groups, but weaker zygomaticus activation for liked rewards (less hedonic pleasure) in the naltrexone group (Figure 5). These findings are now discussed in relation to our main research questions.
 
-## Separate neurochemical systems underlie motivational and hedonic responses
+### Separate neurochemical systems underlie motivational and hedonic responses
 
 In line with animal models and recent human pharmacological studies, indicating that both the dopaminergic and the opioidergic systems underlie the motivation to obtain rewards (Chelnokova et al., 2014; Peciña and Smith, 2010; Weber et al., 2016), we observed a similar effect of the D2/D3 antagonist amisulpride and the non-specific opioid receptor antagonist naltrexone on the effort produced to obtain the announced reward, resulting in a reduction of applied force. Notably, and differently from our original hypothesis, the effect was most pronounced for the second-preferred (low) rewards, as indicated by a Drug x Reward Level interaction (which however was not significant, p=0.056). A possible explanation for this finding is that our food stimuli did not vary in caloric content (i.e. the three reward levels were matched for fat and sugar). Therefore, individual preferences were derived from other mechanisms than energy value, possibly leading to a different effect of the drug on food reward processing (Barbano et al., 2009; Salamone et al., 2007). Another possible explanation is that high rewards are less susceptible to changes in their incentive salience when more options are available. Indeed, the majority of the studies in animals and humans have used only two reward levels, and have found that interference with dopaminergic or opioidergic transmission alters the outcome of cost/benefit analyses involving work-related response costs for the most valuable option (Salamone et al., 2007). Our finding suggests a similar shift in cost/benefit that is possibly sensitive to a different experimental set-up (Barbano et al., 2009).
 
@@ -134,7 +240,7 @@ Taken together, and partially in line with the behavioral results (where the eff
 
 Interestingly, drug effects were found on effort levels and fEMG, but not on subjective ratings of wanting and liking. While this may come as a surprise, it is in line with several previous studies, which have reported either null or weak effects of pharmacological interventions on pleasantness likings of affective touch (Case et al., 2016; Ellingsen et al., 2014; Løseth et al., 2019; Trotter et al., 2016). However, several studies have reported significant effects of naltrexone/morphine on food liking/consumption (Bertino et al., 1991; Eikemo et al., 2016; Yeomans and Gray, 1996; Yeomans and Gray, 1997; but see Hetherington et al., 1991 for a null effect). One possibly relevant difference between some of the previous work, and our study, is that we kept calory intake constant across food stimuli, and thus across participants. More research will be needed to clarify if drug-induced changes in reward pleasantness can be reliably assessed with explicit measures (ratings) for some types of rewards (food), but instead require more implicit measures (facial responses, effort) for other types of rewards (affective touch).
 
-## Distinct neurochemical bases for food and touch rewards
+### Distinct neurochemical bases for food and touch rewards
 
 Inclusion of both food and touch rewards allowed us to indirectly address the yet unresolved question (Ruff and Fehr, 2014), whether different types of rewards are processed by the same neurobiological systems (as proposed by the ‘common currency hypothesis’), or if representations coding for different rewards occur in distinct neural circuits, albeit on a common scale (Grabenhorst and Rolls, 2011). In particular social rewards, like affective touch, may constitute a separate class of stimuli, with a dedicated neural circuitry (Rademacher et al., 2010), which can be specifically impaired, for example in people with autism spectrum disorders (Chevallier et al., 2012; Haggarty et al., 2020). Although the magnitude of the two types of rewards in terms of subjective ratings and effort was carefully matched (Korb et al., 2020), most drug effects were either stronger or restricted to food trials, as indicated by significant Drug x Reward Type interactions for measures of effort to obtain the announced reward, and for corrugator activation during Pre-Effort anticipation. This suggests that the decision utility of touch and food rewards may not rely on the same neurochemical brain systems. However, fEMG responses to food were also stronger to begin with, as indicated by significant main effects of Reward Type for both muscles during the Pre-effort anticipation, Delivery, and Relax analysis windows. This might explain why only reactions to food rewards were modulated by opioidergic and dopaminergic antagonists. Another possible explanation for the less pronounced drug effects for touch is that responses to social rewards, including touch, might also depend on oxytocin and serotonin, in addition to dopamine and opioids (Fischer and Ullsperger, 2017; Tang et al., 2020; Walker and McGlone, 2013). This is also suggested by the finding of higher pleasantness ratings and greater zygomaticus activation to touch after administration of 3,4-methylenedioxymethamphetamine (MDMA), a drug that modulates serotonin, dopamine, and possibly oxytocin levels (Bershad et al., 2019; de Wit and Bershad, 2020).
 
@@ -148,27 +254,27 @@ Third, we used a cross-sectional design for drug/placebo administration. A withi
 
 Fourth, the study suffered from a lack of power to detect small effects. We had modeled the sample size on a previous study using the same drugs and doses (Weber et al., 2016). However, Weber et al., 2016 only found relatively small drug effects, and several other studies have failed to show effects of a pharmacological modulation of the opioid, serotonin, or oxytocin systems on the liking of affective touch (Ellingsen et al., 2014; Løseth et al., 2019; Trotter et al., 2016). This reveals the difficulty of uncovering the neurochemical basis of reward processing in humans and suggests that larger sample sizes should be used in future pharmacological studies to investigate the neurochemical bases of touch and other rewards.
 
-## Conclusion
+### Conclusion
 
 We report pharmacological evidence in healthy human volunteers, across several measures including the monitoring of facial expressions with fEMG, about the role of the dopaminergic system for the motivational component and of the opioidergic system for both motivational and hedonic components of reward processing. The effort to obtain a reward and valenced facial reactions during reward anticipation were both modulated by the administration of dopaminergic or opioidergic antagonists. By contrast, facial reactions during reward experience were only altered by the opioidergic antagonist, suggesting neurochemical differences underlying hedonic expressions during anticipation and experience of pleasure. Explicit ratings of reward wanting and liking were not modulated by either drug. This constitutes the first demonstration of this kind in adult humans, using an operationalization of reward closely resembling previous animal research, and it suggests that the neurochemical regulation of pleasure (as indicated by hedonic facial reactions) is phase-specific, depending on whether the reward is anticipated or experienced. The finding that most drug effects were either stronger for, or restricted to, food trials may indicate different neurochemical brain mechanisms for social and nonsocial rewards. This point however requires further investigation via brain imaging or more direct measures of brain activity in addition to pharmacological challenges tailored to investigate the role of different neurochemical systems in the processing of social versus nonsocial rewards.
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Based on previous work that had used the same compounds and doses (Weber et al., 2016), we aimed at collecting data from 40 participants per group or more. The final study sample included 131 volunteers (88 females) aged 18–35 years (M = 23.3; SD = 3.5). In the amisulpride group, blood concentrations of the drug (measured 5 hr after intake) were in or above the therapeutic range (blood samples missing for six people). Specifically, the minimum was 212 ng/mL, and 19 participants were above 604 ng/mL. All participants reported being right-handed, to smoke less than five cigarettes daily, to have no history of current or former drug abuse, to like milk and chocolate, not to suffer from diabetes, lactose intolerance, lesions or skin disease on the left forearm, and to be free of psychiatric or neurological disorders. Participants’ average Body Mass Index (BMI) was 22.6 (SD = 2.5, range 17.7–29.3). To reduce the chances that social touch would be perceived as a sexual reward, the touch stimulation was always carried out by a same-sex experimenter (see Procedure), and only participants who reported to be heterosexual were included. The study was approved by the Ethical Committee of the Medical University of Vienna (EK N. 1393/2017) and was performed in line with the Declaration of Helsinki (World Medical Association, 2013). Participants signed informed consent and received monetary compensation of 90€.
 
-## Stimuli
+### Stimuli
 
 Three stimuli with identical fat and sugar content (1.5 g fat, 10 g of sugar per 100 g) were used as food rewards: milk, chocolate milk, and a 4:1 mix of milk and chocolate milk. Tap water served for rinsing at the end of each trial. The initial stimulus temperature of these liquids was kept constant (~4°C) across participants. Stimulus delivery was accomplished through computer-controlled pumps (PHD Ultra pumps, Harvard Apparatus) attached to plastic tubes (internal ø 1,6 mm; external ø 3,2 mm; Tygon tubing, U.S. Plastic Corp.), which ended jointly on an adjustable mount positioned about 2 cm in front of the participant’s mouth. In each trial, 2 mL of liquid was administered for 2 s. Overall, including stimulus pretesting (see Procedure), participants consumed 196 mL of liquids, composed of 98 mL of water, and 98 mL of sweet milk with different concentrations of chocolate aroma (depending on effort, see below).
 
 Touch rewards consisted of gentle caresses over a previously-marked 9-cm area of the participant’s forearm (measurement started from the wrist towards the elbow). Three different caressing frequencies, chosen based on the literature and pilot testing, were applied for 6 s by a same-sex experimenter: 6 cm/s, 21 cm/s, and 27 cm/s. To facilitate stroking, the stimulating experimenter received extensive training and, in each trial, heard rhythmic sounds, indicating the rhythm for stimulation, through headphones.
 
-## EMG
+### EMG
 
 After cleansing of the corresponding face areas with alcohol, water, and an abrasive paste, reusable Ag/AgCl electrodes with 4 mm inner and 8 mm outer diameter were attached bipolarly according to guidelines (Fridlund and Cacioppo, 1986) on the left corrugator supercilii (corrugator) and the zygomaticus major (zygomaticus) muscles. A ground electrode was attached to the participants' forehead and a reference electrode on the left mastoid. The EMG data were sampled at 1200 Hz with impedances below 20 kOHM using a g.USBamp amplifier (g.tec Medical Engineering GmbH) and the software Matlab (MathWorks, Inc).
 
-## Procedure
+### Procedure
 
 A monocentric, randomized, double-blind, placebo-controlled, three-armed study design was used. The study took place in the Department of Psychiatry and Psychotherapy at the Medical University of Vienna. Participants visited the laboratory for the first visit (T0) in which they received a health screening, followed by a second visit (T1) that included oral drug intake and the experiment described here. Pharmacological dosage, and length of waiting time after drug intake (3 hr), were modeled on previous work (Weber et al., 2016), and on the drug’s pharmacodynamics. Amisulpride reaches the first peak in serum after 1 hr, and a second (higher) peak after approximately 4 hr. The elimination half-life is 12 hr (Rosenzweig et al., 2002). At doses of 400 mg or higher, amisulpride acts as a postsynaptic D2/D3 receptor antagonist and thus results in lower dopaminergic action (Racagni et al., 2004; Schoemaker et al., 1997). Naltrexone reaches maximal concentration in plasma after 1 hr, has an elimination half-life in plasma of approximately 4 hr, and is completely cleared from plasma after 96 hr (Meyer et al., 2019). Importantly, up to 90% of mu-opioid receptors in the brain remain blocked by naltrexone after 48 hr, and partial receptor blockade could be shown up to 168 hr after intake (Lee et al., 1988).
 
@@ -182,7 +288,7 @@ After calibration of the dynamometer, EMG electrodes were attached, participants
 
 Both tasks were run on a desktop computer with Windows seven using MATLAB 2014b and the Cogent 2000 and Cogent Graphics toolboxes and presented on an LCD monitor with a resolution of 1280 × 1024 pixels. The positive and negative affect schedule (PANAS; Watson et al., 1988), and a questionnaire assessing nausea and 50 other side effects, was filled out twice at the main laboratory visit: just before pill intake, and 3 hr later. Levels of amisulpride (ng/mL) were measured in blood samples taken 5 hr after pill intake (after both tasks).
 
-## Analyses
+### Analyses
 
 Data and analysis scripts are available online (https://osf.io/vu8dz). Group comparisons for age, BMI, MVC, PANAS scores, and side effects, were made with linear regressions using the lm() function. Differences in the ranking of rewards across drug groups were tested with separate ordinal regressions by Reward Type (food, touch), using the package ordinal.
 

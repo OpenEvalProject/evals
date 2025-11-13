@@ -26,7 +26,7 @@
 
 ## Abstract
 
-The role of race/ethnicity in genetic predisposition of early-onset cancers can be estimated by comparing family-based cancer concordance rates among ethnic groups. We used linked California health registries to evaluate the relative cancer risks for first-degree relatives of patients diagnosed between ages 0 and 26, and the relative risks of developing distinct second primary malignancies (SPMs). From 1989 to 2015, we identified 29,631 cancer patients and 62,863 healthy family members. We calculated the standardized incident ratios (SIRs) of early-onset primary cancers diagnosed in proband siblings and mothers, as well as SPMs detected among early-onset patients. Analyses were stratified by self-identified race/ethnicity. Given probands with cancer, there were increased relative risks of any cancer for siblings and mothers (SIR = 3.32; 95% confidence interval [CI]: 2.85–3.85) and of SPMs (SIR = 7.27; 95% CI: 6.56–8.03). Given a proband with solid cancer, both Latinos (SIR = 4.98; 95% CI: 3.82–6.39) and non-Latino Blacks (SIR = 7.35; 95% CI: 3.36–13.95) exhibited significantly higher relative risk of any cancer in siblings and mothers when compared to non-Latino White subjects (SIR = 3.02; 95% CI: 2.12–4.16). For hematologic cancers, higher familial risk was evident for Asian/Pacific Islanders (SIR = 7.56; 95% CI: 3.26–14.90) compared to non-Latino whites (SIR = 2.69; 95% CI: 1.62–4.20). The data support a need for increased attention to the genetics of early-onset cancer predisposition and environmental factors in race/ethnic minority families in the United States. This work was supported by the V Foundation for funding this work (Grant FP067172).
+Background:The role of race/ethnicity in genetic predisposition of early-onset cancers can be estimated by comparing family-based cancer concordance rates among ethnic groups.Methods:We used linked California health registries to evaluate the relative cancer risks for first-degree relatives of patients diagnosed between ages 0 and 26, and the relative risks of developing distinct second primary malignancies (SPMs). From 1989 to 2015, we identified 29,631 cancer patients and 62,863 healthy family members. We calculated the standardized incident ratios (SIRs) of early-onset primary cancers diagnosed in proband siblings and mothers, as well as SPMs detected among early-onset patients. Analyses were stratified by self-identified race/ethnicity.Results:Given probands with cancer, there were increased relative risks of any cancer for siblings and mothers (SIR = 3.32; 95% confidence interval [CI]: 2.85–3.85) and of SPMs (SIR = 7.27; 95% CI: 6.56–8.03). Given a proband with solid cancer, both Latinos (SIR = 4.98; 95% CI: 3.82–6.39) and non-Latino Blacks (SIR = 7.35; 95% CI: 3.36–13.95) exhibited significantly higher relative risk of any cancer in siblings and mothers when compared to non-Latino White subjects (SIR = 3.02; 95% CI: 2.12–4.16). For hematologic cancers, higher familial risk was evident for Asian/Pacific Islanders (SIR = 7.56; 95% CI: 3.26–14.90) compared to non-Latino whites (SIR = 2.69; 95% CI: 1.62–4.20).Conclusions:The data support a need for increased attention to the genetics of early-onset cancer predisposition and environmental factors in race/ethnic minority families in the United States.Funding:This work was supported by the V Foundation for funding this work (Grant FP067172).
 
 ## Introduction
 
@@ -40,23 +40,251 @@ Familial concordance of a wide variety of cancers has been assessed using the Sw
 
 ## Materials and methods
 
-## Source of data
+### Source of data
 
 We used linked population-based registries in California to evaluate the relative risks of early-onset cancers (0–26 years age of onset) for siblings and mothers of children, adolescents, and young adults (AYA) aged 0–26 diagnosed with cancer, as well as the relative risks of early-onset SPMs among the proband patients. The dataset was created by linking information from the California Cancer Registry (CCR) and California Birth Statistical Master File, allowing the capture of siblings and parents of cancer probands, along with their cancer incidence (California Cancer Registry, 2018). The linked dataset comprehensively encompassed all cancer cases 0–26 years old, as well as their sibling and mother cancers, diagnosed from 1989 to 2015 in California. Our upper age limit of 26 was set based on the available age range covered by this relatively young cohort. Overall, the dataset included a total of 121,571 individuals. The information on healthy siblings and mothers was available during the whole study period, whereas the information on fathers was not available until 2004 in the birth files and therefore is not included in the current analysis.
 
 For the analysis of cancer familial risks, we included all primary incident cancer cases diagnosed from 1989 to 2015 among patients aged 0–26 years, with patient age-at-diagnosis limited by the study time period for which California maintained a statewide SEER gold-standard cancer registry. For the analysis of secondary cancer risks, we included all SPMs diagnosed over the same years and patient age ranges. Although the CCR only records primary malignancies, some misclassification of relapsed or recurrent disease is possible. A physician (EN) reviewed diagnosis codes of all the cases diagnosed after the first primary case to prevent the misclassification of relapsed first primary malignancies (FPMs) as SPMs. For both analyses, we classified the cancers into 12 broad groups and subgroups as defined by the International Classification of Childhood Cancer, Third edition (ICCC-3, November 2012) (https://seer.cancer.gov/iccc/iccc3.html). The abbreviations for cancer types are included in Table 1. We also grouped the cancers into hematologic or solid categories in the analyses. Hematologic cancers were defined as leukemias and lymphomas. Solid cancers were defined as central nervous system (CNS) tumors, neuroblastomas, retinoblastomas, renal tumors, hepatic tumors, bone tumors, sarcomas, germ cell tumors, epithelial neoplasms, and other and unspecified malignant neoplasms.
 
-## Statistical analysis
+**Table 1.**
+ Abbreviations of the 12 broad groups defined by the International Classification of Childhood Cancer, Third edition.
 
-We quantified the relative risks for siblings and mothers, and the relative risks of SPMs by calculating the standardized incident ratios (SIRs) of a given cancer or of SPMs among the healthy siblings, and the SIRs of a given cancer among healthy mothers of probands using a previous published method (Sud et al., 2019). We defined a proband as a pediatric or AYA patient with a given cancer. Only one child/AYA in each family can be a proband, so that in families with two or more cases, the proband is defined as the patient with the earliest date of diagnosis. Given a proband with cancer, we calculated the SIRs for a sibling or a mother in the same family for all types of cancers. Separately, we calculated the SIRs for a sibling for the same type of cancer as the proband. We also stratified the analyses by self-identified race/ethnicity of the mother in each family. The SIRs in siblings, mothers or of SPMs can be denoted as:SIR=OE=∑i=1N∑j=1niDij∑i=1N∑j=1ni∑k=1Kmaxλktijkwhere N is the number of families, ni is the number of non-proband individuals of interest (siblings/SPMs/mothers) in family i, and Kmax is the total number of age intervals. The data for each individual includes a disease indicator (Dij) and the number of years ‘at risk’ during the kth age interval (tijk). A given individual is defined to be at risk beginning at their age when the proband in their family is diagnosed and ending either when they become affected themselves or when they are censored due to end of study follow-up. For siblings and mothers, age was stratified into seven groups as 0, 0–4, 5–9, 10–14, 15–19, 20–24, and 25–29 years. For the calculation of SIRs within a given race group, λk is the race-, sex-, and age-specific incidence rate of a given cancer. We compared the SIRs across race/ethnic groups with approximate chi-square tests. The approximate chi-square method compares the probability of occurrence of events in one group to another, based on a binomial distribution. This comparison is not related to the 95% confidence intervals (CIs) for the SIRs. We designated that all events occurred right at the middle point of each calendar year. We also stratified the analysis by 5 year age groups. The 95% CIs were calculated assuming a Poisson distribution for categories with less than 100 observed cases. For categories with more than 100 observed cases, we adopted the method as indicated by Breslow and Day, 1987 to calculate the 95% CIs, as suggested by Washington State Department of Health (Guidelines for Using Confidence Intervals for Public Health Assessment, 2012; Breslow and Day, 1987). Statistical analyses were performed using R software (v 3.6.0). Any two-sided p-value less than 0.05 was considered statistically significant. A supplement is included with this manuscript with more information on the statistical tests and computational codes used. Please access Source Code File for more information.
+
+<table>
+  <thead>
+    <tr>
+      <th>Abbreviation</th>
+      <th>Definition*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Leukemias</td>
+      <td>I. Leukemias, myeloproliferative diseases, and myelodysplastic diseases</td>
+    </tr>
+    <tr>
+      <td>Lymphomas</td>
+      <td>II. Lymphomas and reticuloendothelial neoplasms</td>
+    </tr>
+    <tr>
+      <td>CNS tumors</td>
+      <td>III. CNS and miscellaneous intracranial and intraspinal neoplasms</td>
+    </tr>
+    <tr>
+      <td>Neuroblastomas</td>
+      <td>IV. Neuroblastoma and other peripheral nervous cell tumors</td>
+    </tr>
+    <tr>
+      <td>Retinoblastoma</td>
+      <td>V. Retinoblastoma</td>
+    </tr>
+    <tr>
+      <td>Renal tumors</td>
+      <td>VI. Renal tumors</td>
+    </tr>
+    <tr>
+      <td>Hepatic tumors</td>
+      <td>VII. Hepatic tumors</td>
+    </tr>
+    <tr>
+      <td>Bone tumors</td>
+      <td>VIII. Malignant bone tumors</td>
+    </tr>
+    <tr>
+      <td>Sarcomas</td>
+      <td>IX. Soft tissue and other extraosseous sarcomas</td>
+    </tr>
+    <tr>
+      <td>GCT</td>
+      <td>X. Germ cell tumors, trophoblastic tumors, and neoplasms of gonads</td>
+    </tr>
+    <tr>
+      <td>Epithelial neoplasms</td>
+      <td>XI. Other malignant epithelial neoplasms and malignant melanomas</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>XII. Other and unspecified malignant neoplasms</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Cancers were classified into groups as defined by the International Classification of Childhood Cancer, Third edition (ICCC-3, November 2012) (https://seer.cancer.gov/iccc/iccc3.html)._
+
+### Statistical analysis
+
+We quantified the relative risks for siblings and mothers, and the relative risks of SPMs by calculating the standardized incident ratios (SIRs) of a given cancer or of SPMs among the healthy siblings, and the SIRs of a given cancer among healthy mothers of probands using a previous published method (Sud et al., 2019). We defined a proband as a pediatric or AYA patient with a given cancer. Only one child/AYA in each family can be a proband, so that in families with two or more cases, the proband is defined as the patient with the earliest date of diagnosis. Given a proband with cancer, we calculated the SIRs for a sibling or a mother in the same family for all types of cancers. Separately, we calculated the SIRs for a sibling for the same type of cancer as the proband. We also stratified the analyses by self-identified race/ethnicity of the mother in each family. The SIRs in siblings, mothers or of SPMs can be denoted as:
+
+$$
+SIR=\frac{O}{E}=\frac{\sum_{i=1}^{N}\sum_{j=1}^{n_{i}}D_{ij}}{\sum_{i=1}^{N}\sum_{j=1}^{n_{i}}\sum_{k=1}^{Kmax}\lambda_{k}t_{ijk}}
+$$
+
+where N is the number of families, ni is the number of non-proband individuals of interest (siblings/SPMs/mothers) in family i, and Kmax is the total number of age intervals. The data for each individual includes a disease indicator (Dij) and the number of years ‘at risk’ during the kth age interval (tijk). A given individual is defined to be at risk beginning at their age when the proband in their family is diagnosed and ending either when they become affected themselves or when they are censored due to end of study follow-up. For siblings and mothers, age was stratified into seven groups as 0, 0–4, 5–9, 10–14, 15–19, 20–24, and 25–29 years. For the calculation of SIRs within a given race group, λk is the race-, sex-, and age-specific incidence rate of a given cancer. We compared the SIRs across race/ethnic groups with approximate chi-square tests. The approximate chi-square method compares the probability of occurrence of events in one group to another, based on a binomial distribution. This comparison is not related to the 95% confidence intervals (CIs) for the SIRs. We designated that all events occurred right at the middle point of each calendar year. We also stratified the analysis by 5 year age groups. The 95% CIs were calculated assuming a Poisson distribution for categories with less than 100 observed cases. For categories with more than 100 observed cases, we adopted the method as indicated by Breslow and Day, 1987 to calculate the 95% CIs, as suggested by Washington State Department of Health (Guidelines for Using Confidence Intervals for Public Health Assessment, 2012; Breslow and Day, 1987). Statistical analyses were performed using R software (v 3.6.0). Any two-sided p-value less than 0.05 was considered statistically significant. A supplement is included with this manuscript with more information on the statistical tests and computational codes used. Please access Source Code File for more information.
 
 ## Results
 
-## Demographics of the study population
+### Demographics of the study population
 
 From 1989 to 2015, we identified a total of 29,249 pediatric and AYA patients with a primary malignancy, comprising 29,072 probands, 112 affected siblings (from 110 families), and 65 affected mothers. All siblings were diagnosed after the proband’s diagnosis as defined, and 56 (86%) of the 65 mothers were diagnosed after the proband’s diagnosis. We also identified 387 SPMs among all pediatric and AYA probands (Table 2).
 
-## Familial relative risks of early-onset cancers
+**Table 2.**
+ Selected demographic characteristic of probands, affected siblings, and second primary malignancies among the early-onset cancer patients in the linked population-based registries in California, 1989–2015.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Overall*</th>
+      <th>No. of probands</th>
+      <th>No. of affected siblings</th>
+      <th>No. of affected mothers</th>
+      <th>No. of second primaries†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall</td>
+      <td>29,249</td>
+      <td>29,072</td>
+      <td>112</td>
+      <td>65</td>
+      <td>387</td>
+    </tr>
+    <tr>
+      <td>Age at diagnosis (years)‡</td>
+      <td></td>
+      <td></td>
+      <td>No (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>2592 (8.75)</td>
+      <td>2611 (8.98)</td>
+      <td>10 (8.93)</td>
+      <td>0 (0.00)</td>
+      <td>≦5 (1.03)</td>
+    </tr>
+    <tr>
+      <td>1–4</td>
+      <td>8683 (29.3)</td>
+      <td>8719 (29.99)</td>
+      <td>15 (13.39)</td>
+      <td>≦5 (3.08)</td>
+      <td>37 (9.56)</td>
+    </tr>
+    <tr>
+      <td>5–9</td>
+      <td>5054 (17.06)</td>
+      <td>5057 (17.39)</td>
+      <td>12 (10.71)</td>
+      <td>0 (0.00)</td>
+      <td>67 (17.31)</td>
+    </tr>
+    <tr>
+      <td>10–14</td>
+      <td>4224 (14.26)</td>
+      <td>4180 (14.38)</td>
+      <td>22 (19.64)</td>
+      <td>0 (0.00)</td>
+      <td>98 (25.32)</td>
+    </tr>
+    <tr>
+      <td>15–19</td>
+      <td>4734 (15.98)</td>
+      <td>4664 (16.04)</td>
+      <td>37 (33.04)</td>
+      <td>7 (10.77)</td>
+      <td>90 (23.26)</td>
+    </tr>
+    <tr>
+      <td>20+</td>
+      <td>4344 (14.66)</td>
+      <td>3841 (13.21)</td>
+      <td>16 (14.29)</td>
+      <td>56 (86.15)</td>
+      <td>91 (23.51)</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>15,528 (52.40)</td>
+      <td>15,467 (53.20)</td>
+      <td>56 (50.00)</td>
+      <td>NA</td>
+      <td>198 (51.16)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>14,102 (47.59)</td>
+      <td>13,605 (46.80)</td>
+      <td>56 (50.00)</td>
+      <td>65 (100.00)</td>
+      <td>189 (48.84)</td>
+    </tr>
+    <tr>
+      <td>Race/ethnicity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Latino (all races)</td>
+      <td>13,281 (44.82)</td>
+      <td>13,059 (44.92)</td>
+      <td>51 (45.54)</td>
+      <td>26 (40.00)</td>
+      <td>159 (41.09)</td>
+    </tr>
+    <tr>
+      <td>Non-Latino White</td>
+      <td>11,410 (38.51)</td>
+      <td>11,193 (38.50)</td>
+      <td>39 (34.82)</td>
+      <td>17 (26.15)</td>
+      <td>128 (33.07)</td>
+    </tr>
+    <tr>
+      <td>Non-Latino Black</td>
+      <td>1772 (5.98)</td>
+      <td>1716 (5.90)</td>
+      <td>9 (8.04)</td>
+      <td>7 (10.77)</td>
+      <td>10 (2.58)</td>
+    </tr>
+    <tr>
+      <td>Non-Latino Asian/Pacific Islander</td>
+      <td>2605 (8.79)</td>
+      <td>2551 (8.77)</td>
+      <td>12 (10.71)</td>
+      <td>0 (0.00)</td>
+      <td>47 (12.14)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>563 (1.94)</td>
+      <td>553 (1.90)</td>
+      <td>≦5 (0.89)</td>
+      <td>15 (4.62)</td>
+      <td>43 (11.11)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All early-onset cancer patients diagnosed from 1989 to 2015 identified in the linked population-based registries in California.†Number of second primary malignancies diagnosed from 1989 to 2015 within all children (probands and affected siblings, excluding mothers) with early-onset cancers in the linked population-based registries in California._
+
+### Familial relative risks of early-onset cancers
 
 Overall, we found a 3.32-fold (95% CI: 2.85–3.85) increased relative risk of any cancer among siblings and mothers who have a proband with cancer in the same family. Briefly, we found a 2.97-fold (95% CI: 2.30–3.78) increased relative risk of any cancer given a proband with hematologic cancers and a 4.54-fold (95% CI: 3.82–5.35) increased relative risk of any cancer given a proband with solid cancers. When stratified by cancer type, higher relative risks among siblings and mothers were observed given probands with leukemias, lymphomas, CNS tumors, retinoblastomas, renal tumors, sarcomas, germ cell tumors (GCTs), epithelial neoplasms, and other unspecified neoplasms (Figure 1A).
 
@@ -74,7 +302,7 @@ When stratified by more finely defined cancer subtypes, increased relative risks
 
 When stratified by race/ethnicity, the relative risk of any cancer for siblings and mothers given a proband with solid cancer was significantly higher among Latino and non-Latino black subjects than NLW subjects (Latino: SIR = 4.98; 95% CI: 3.82–6.39; NLW: SIR = 3.02; 95% CI: 2.12–4.16; p=0.019) (Figure 1B). Non-Latino Asians/Pacific Islanders (API) had higher SIRs than NLW given a proband with hematologic cancer (SIR = 7.56; 95% CI: 3.26–14.90, p=0.023 compared to NLW), and non-Latino Blacks had higher SIRs than NLW given a proband with any cancer (SIR = 6.96; 95% CI: 3.71–11.91, p=0.002 compared to NLW) or solid cancer (SIR = 7.35; 95% CI: 3.36–13.95, p=0.026 compares to NLW) (Figure 1B and Supplementary file 1D). For the relative risk of the same category of cancers given a proband with that type of cancer, Latino subjects also showed higher relative risk of solid cancers than NLW subjects (Latino: SIR = 7.94; 95% CI: 5.89–10.47; NLW: SIR = 4.41; 95% CI: 2.99–6.25; p=0.012) (Figure 1B and Supplementary file 1A). Data on other minority groups (Asians, non-Latino Blacks) were too sparse to make this comparison.
 
-## Relative risks of SPMs
+### Relative risks of SPMs
 
 Overall, SPMs among all childhood patients were enriched in families that exhibited familial risks; that is, those families with two or more primary cancer patients. We found 14 SPMs of 2432 members (0.58%) in the families that exhibited familial risks (two or more primary cancers) and 373 SPMs of 119,136 members (0.31%) in families that did not exhibit familial risk (p=0.023) (Supplementary file 1E).
 

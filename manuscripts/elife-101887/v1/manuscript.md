@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0144s0951 Department of Gynecologic Radiation Oncology, (Zhejiang Key Laboratory of Radiation Oncology), Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences Hangzhou China
-2. https://ror.org/0144s0951 Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences Hangzhou China
+1. Department of Gynecologic Radiation Oncology, (Zhejiang Key Laboratory of Radiation Oncology), Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences Hangzhou China ([ROR:0144s0951](https://ror.org/0144s0951))
+2. Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences Hangzhou China ([ROR:0144s0951](https://ror.org/0144s0951))
 
 † Corresponding author
 
 ## Abstract
 
-Monitoring circulating HPV cell-free DNA (cfDNA) offers a minimally invasive method for surveillance in HPV-associated cancers, particularly cervical cancer. However, the role of dynamic HPV cfDNA monitoring in guiding clinical treatment decisions for recurrent or metastatic cervical cancer remains underexplored. In this prospective pilot observational study, levels of HPV cfDNA in serum samples from 28 patients with recurrent or metastatic HPV-positive cervical cancer were measured via digital droplet polymerase chain reaction. Results for HPV cfDNA levels were matched to clinical outcomes and to serum levels of squamous cell carcinoma antigen (SCC-Ag) to assess the clinical potential of HPV cfDNA as a tumor marker. HPV cfDNA was detected in all 28 patients. Notably, median baseline HPV cfDNA levels varied according to the metastatic pattern observed in individual patients (p=0.019). All participants exhibited changes in HPV cfDNA levels over a median monitoring period of 2 months (range 0.3–16.9 months) prior to evaluations for treatment response or disease progression. Among 26 patients initially diagnosed with squamous cell cervical cancer, the positivity rate was 100% for HPV cfDNA and 69.2% for SCC-Ag (p=0.004, 95% confidence interval (CI), 0–0.391). Among 20 patients longitudinally monitored for squamous cell cervical cancer, the concordance with changes in disease status was 90% for HPV cfDNA and 50% for SCC-Ag (p=0.014, 95% CI, 0.022–0.621). Our study demonstrates that HPV cfDNA is a promising tumor marker for monitoring of recurrent or metastatic HPV-positive cervical cancer. This work was supported by the Key R&D Program of Zhejiang (2022C04001), the Zhejiang Province Medicine and Health Science and Technology Program (2020KY454), the Zhejiang Science and Technology Department Public Welfare Project (LGF22H160075).
+Background:Monitoring circulating HPV cell-free DNA (cfDNA) offers a minimally invasive method for surveillance in HPV-associated cancers, particularly cervical cancer. However, the role of dynamic HPV cfDNA monitoring in guiding clinical treatment decisions for recurrent or metastatic cervical cancer remains underexplored.Methods:In this prospective pilot observational study, levels of HPV cfDNA in serum samples from 28 patients with recurrent or metastatic HPV-positive cervical cancer were measured via digital droplet polymerase chain reaction. Results for HPV cfDNA levels were matched to clinical outcomes and to serum levels of squamous cell carcinoma antigen (SCC-Ag) to assess the clinical potential of HPV cfDNA as a tumor marker.Results:HPV cfDNA was detected in all 28 patients. Notably, median baseline HPV cfDNA levels varied according to the metastatic pattern observed in individual patients (p=0.019). All participants exhibited changes in HPV cfDNA levels over a median monitoring period of 2 months (range 0.3–16.9 months) prior to evaluations for treatment response or disease progression. Among 26 patients initially diagnosed with squamous cell cervical cancer, the positivity rate was 100% for HPV cfDNA and 69.2% for SCC-Ag (p=0.004, 95% confidence interval (CI), 0–0.391). Among 20 patients longitudinally monitored for squamous cell cervical cancer, the concordance with changes in disease status was 90% for HPV cfDNA and 50% for SCC-Ag (p=0.014, 95% CI, 0.022–0.621).Conclusions:Our study demonstrates that HPV cfDNA is a promising tumor marker for monitoring of recurrent or metastatic HPV-positive cervical cancer.Funding:This work was supported by the Key R&D Program of Zhejiang (2022C04001), the Zhejiang Province Medicine and Health Science and Technology Program (2020KY454), the Zhejiang Science and Technology Department Public Welfare Project (LGF22H160075).
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Recent advances in targeted therapies and immunotherapies have significantly enh
 
 ## Methods
 
-## Study design
+### Study design
 
 From August 2017 to February 2023, a total of 33 patients with pathologically confirmed primary stage IVB or recurrent HPV-positive CC were enrolled at Zhejiang Cancer Hospital. Five patients were excluded from the analysis, as outlined in Figure 1. The final analysis cohort comprised 28 cases: 21 with primary stage IVB CC and seven with recurrent CC. Notably, 19 cases in the primary CC group participated in the prospective clinical study (NCT03175848) initiated by us, focused on stage IVB cervical cancer. The main eligibility criteria were: (1) Pathologically confirmed diagnosis of CC; (2) Pathological evidence of at least one recurrence or metastatic lesion; (3) PCR positivity for a high-risk HPV subtype in pretreatment exfoliated cervical cells or a serum sample. All patients consented to the study protocol, including collection of blood samples throughout the study. Patients received chemotherapy with or without immunotherapy, targeted therapy, or radiotherapy (RT). Exclusion criteria: (1) Non-HPV-related cervical cancer; (2) No measurable lesions; (3) Synchronous or multiple cancers; (4) Patient refusal to provide blood samples; (5) Patient refusal to undergo regular follow-up and periodic imaging evaluations. For patients with primary stage IVB CC who had a single sample collected, the sample was obtained at treatment initiation. For the group undergoing longitudinal sampling, patients with primary stage IVB CC had three to five blood samples collected at treatment initiation, mid-treatment, and during follow-up, while patients with recurrent CC had three blood samples collected during treatment, starting from enrollment. For all serum specimens, HPV cfDNA was quantified using ddPCR. For patients with squamous cell CC in the sequential sampling group, concurrent SCC-Ag testing was performed at a time point that matched, or was within 7 days before or after, the HPV cfDNA sampling.
 
@@ -39,21 +39,21 @@ From August 2017 to February 2023, a total of 33 patients with pathologically co
 
 The 2018 International Federation of Gynecology and Obstetrics (FIGO) staging criteria were applied. Each patient underwent routine imaging assessments, and treatment efficacy was evaluated according to Response Evaluation Criteria in Solid Tumors (RECIST version 1.1). During treatment, imaging evaluations are typically conducted every two cycles of chemotherapy. Imaging assessments are also conducted before and after radiotherapy. For patients receiving immunotherapy or targeted therapy maintenance, assessments should be performed at least every 3 months. In follow-up, imaging is recommended every 3 months for the first 2 years and every 6 months from years 3–5, though this schedule may be adjusted based on individual patient needs. We defined lymph node metastasis as metastasis in para-aortic lymph nodes or distant lymph nodes, such as supraclavicular, inguinal, or mediastinal nodes. We classified patterns of CC recurrence or metastasis into five groups: local recurrence (LR); lymph node metastasis (LNM); hematogenous metastasis (HM); lymph node + hematogenous metastasis (LN + HM); and lymph node + hematogenous + diffuse serosal metastasis (LN + H + DSM). DSM encompasses metastases to the peritoneal, pleural, or pericardial regions. Prior to initiating treatment with immune checkpoint inhibitors (ICIs), tumor tissue specimens should be tested for PD-L1 expression using immunohistochemistry (IHC), provided that tumor samples are available. The PD-L1 IHC 22C3 pharmDx assay is used for testing, and PD-L1 expression in cervical cancer is quantified by the Combined Positive Score (CPS). The Ethics Committee of Zhejiang Cancer Hospital approved the study.
 
-## HPV diagnostics and typing
+### HPV diagnostics and typing
 
 HPV genotypes were determined via routine PCR for exfoliated cervical cells or serum samples collected before treatment. Patients were excluded from the study if both samples tested negative. A commercial PCR testing kit (Hybribio HPV Genotyping Detection Kit), designed primarily for qualitative genotyping of HPV DNA extracted from exfoliated cervical cells, was routinely used. HPV genotyping detection was performed using PCR combined with the hybridization method. This kit can detect 21 HPV genotypes, including eight low-risk genotypes and 13 high-risk genotypes. The 13 high-risk genotypes include: HPV16, HPV18, HPV31, HPV33, HPV35, HPV39, HPV45, HPV51, HPV52, HPV56, HPV58, HPV59, and HPV68.
 
 The following steps outline the procedure: A disposable cervical exfoliation brush is placed at the cervical opening and rotated gently clockwise five times. The brush is then transferred to a sample tube containing 10 mL of cell preservation solution. The tube is stored at 4℃ and tested within 1 week. The sample is centrifuged at 3000 rpm for 15 min, and the supernatant is discarded. Next, 200 µL of cell preservation solution is added to resuspend the cells. DNA is extracted using the QIAamp DNA Mini Kit (Qiagen, Hilden, Germany), and PCR amplification is performed according to the manufacturer’s instructions (total reaction volume: 20 µL/sample), followed by setting baseline and threshold values for result interpretation. One patient tested positive for HPV type 6 via PCR on cervical exfoliated cells, with no high-risk HPV genotypes detected. IHC for P16 on CC tissue was negative, leading to the classification of the tumor as non-HPV-associated and exclusion from the study.
 
-## Samples
+### Samples
 
 Serum was extracted from peripheral whole blood samples at the Radiobiology Laboratory of Zhejiang Cancer Hospital. A 5 mL aliquot of whole blood was collected into a yellow-top blood collection tube and allowed to clot at room temperature for 30 min. After centrifugation at 2000 × g for 10 min in a refrigerated centrifuge, the serum was carefully transferred into polypropylene tubes in 1 mL aliquots and stored at −80°C. Frozen serum samples were subsequently transported to the Oncology Research Institute of Zhejiang Cancer Hospital for DNA extraction.
 
-## Procedure for ddPCR analysis
+### Procedure for ddPCR analysis
 
 Before analysis, serum samples were thawed and centrifuged at 2000 × g at 4°C for 10 min for DNA extraction. In accordance with the manufacturer’s protocol, HPV cfDNA was isolated from 2 mL of serum using a QIAamp Circulating Nucleic Acid Extraction Kit (Qiagen, Hilden, Germany). The DNA was eluted twice through a column for purification, resulting in 60 μL of eluate that was stored at −80°C until analysis. Primers and probes for ddPCR detection were designed based on E7 gene sequences of the target HPV genotypes to generate amplicons of varying length (Supplementary file 1). Each ddPCR reaction used 30 μL of DNA template. According to the manufacturer’s instructions for the QIAcuity QX-200 ddPCR platform (Qiagen), ddPCR reactions consisted of 40 µL of reaction mixture per well that included the primers, probes, and template. The reactions were amplified in QIAcuity 26,000 24-well Nanoplates (Qiagen) under the following conditions: initial enzyme activation at 95°C for 2 min, followed by 50 cycles of denaturation at 95°C for 15 s and annealing at 60°C for 30 s. The exposure time for imaging of partitions was 400 ms for fluorescein amidite (FAM) and 300 ms for 2'-chloro-7'-phenyl-1,4-dichloro-6-carboxyfluorescein (VIC). Data analysis was performed using QIAcuity software version 2.1.7 (Qiagen) to quantify HPV copy numbers.
 
-## HPV cfDNA monitoring protocol
+### HPV cfDNA monitoring protocol
 
 Participants were enrolled on a rolling basis, and the first serum sample collected was regarded as the baseline sample. A baseline sample was categorized as a treatment initiation sample if it was collected between Day−14 and Day+30 preceding initial treatment in patients with primary stage IVB CC, or before treatment for relapse or disease progression in patients with recurrent CC.
 
@@ -61,17 +61,208 @@ For patients with sequential samples, the time at which the initial blood sample
 
 Following the literature (Jeannot et al., 2021; Cabel et al., 2018), serum samples were deemed HPV-positive if at least three droplets containing HPV amplicons were identified. Samples with fewer than three droplets containing HPV amplicons or no amplicons detected were categorized as HPV-negative. Serum HPV cfDNA levels were quantified as copies/mL.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed using GraphPad Prism 9. The Mann-Whitney U test was used to assess the difference in the number of viral DNA copies between two groups or two metastasis patterns. Kendall’s τ correlation test was used to determine the coefficient of correlation between two factors. Rate comparisons were conducted using Fisher’s exact test. Kaplan-Meier survival analysis was performed to calculate the hazard ratio with a 95% confidence interval (CI), using the Cox model. Overall survival (OS) was defined as the time from diagnosis until death from any cause or the last follow-up date (December 31, 2023). All p-values reported are two-tailed, with statistical significance defined as p<0.05.
 
 ## Results
 
-## Patient characteristics
+### Patient characteristics
 
 Our study included 28 patients diagnosed with HPV-positive advanced CC treated at our hospital, comprising 21 cases (75%) with primary stage IVB CC and seven cases (25%) with recurrence and metastasis after treatment. The clinical characteristics of the patients are listed in Table 1. The median age at diagnosis was 52 years (range 34–67 years). In total, 76 serum samples were obtained from the cohort, consisting of 69 longitudinal samples from 21 patients (3–5 samples per patient) and single-time samples from seven patients at treatment initiation. Of the baseline samples, 25 (89%) were obtained at treatment initiation. HPV cfDNA was quantified in all serum samples via ddPCR. Sixteen patients received ICIs, of whom 12 also received concurrent targeted therapy, while four received ICIs alone. Three patients with stage IVB disease were treated with Paclitaxel/Cisplatin (TP) + Bevacizumab (Bev) + ICIs as first-line therapy, and 13 patients received ICIs after disease progression. The specific treatment regimens and HPV cfDNA copy numbers for each patient are provided in Supplementary file 2.
 
-## Validity of the test for HPV cfDNA detection and genotyping
+**Table 1.**
+ Characteristics of patients with metastatic or recurrent cervical cancer.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>N</th>
+      <th>All patients (n=28)</th>
+      <th>Primary IVB stage (n=21)</th>
+      <th>Recurrence or metastasis (n=7)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median age (range)</td>
+      <td>52(34-67)</td>
+      <td>51(34-66)</td>
+      <td>53(37-67)</td>
+    </tr>
+    <tr>
+      <td>Pathological types (n)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Squamous cell carcinoma</td>
+      <td>26</td>
+      <td>20</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Adenocarcinoma</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Large cell neuroendocrine carcinoma</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>HPV subtype</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>20</td>
+      <td>14</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>16,33</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Baseline serum sampling time</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Treatment initiation</td>
+      <td>25</td>
+      <td>20</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>During treatment</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Pattern of metastasis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Local recurrence</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Lymphatic node metastasis</td>
+      <td>11</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Hematogenous metastasis</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Lymph node +hematogenous metastasis</td>
+      <td>9</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Lymph node +hematogenous + diffuse serosal metastasis</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Treatment modality</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neoadjuvant chemotherapy</td>
+      <td>18</td>
+      <td>18</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Surgeries</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Adjuvant chemotherapy</td>
+      <td>25</td>
+      <td>18</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Radiotherapy/concurrent chemoradiotherapy</td>
+      <td>25</td>
+      <td>18</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Targeted therapy</td>
+      <td>12</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Immunotherapy</td>
+      <td>16</td>
+      <td>9</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+### Validity of the test for HPV cfDNA detection and genotyping
 
 To validate the consistency of HPV genotyping between serum and exfoliated cervical cells from the same patient, we conducted conventional PCR genotyping of HPV cfDNA in baseline serum. The analysis revealed that only 12/28 patients (42.9%) tested positive, however, the genotyping outcomes were entirely consistent with those obtained from matched cervical exfoliated cells. Subsequently, the 28 baseline serum samples underwent qualitative and quantitative assessment using ddPCR. The results revealed that all 28 patients (100%) tested positive for HPV cfDNA, with HPV typing showing complete concordance (100%) with PCR results from matched cervical exfoliated cells. HPV genotyping revealed that HPV16, HPV58, HPV18, and other genotypes (HPV31, HPV66, HPV33) accounted for 72.4%, 10.3%, 6.9%, and 10.3%, respectively (Figure 2A).
 
@@ -79,13 +270,13 @@ To validate the consistency of HPV genotyping between serum and exfoliated cervi
 
 **Figure 2.:** (A) Serum CONSORT (HPV) cell-free DNA (cfDNA) copy number for six HPV genotypes at baseline. (B) Baseline HPV cfDNA copy numbers for five recurrence/metastasis subgroups. Statistical significance was determined using a two-sided Kruskal-Wallis test. Abbreviations: LR, local recurrence; LNM, lymph node metastasis; HM, hematogenous metastasis; LN + HM, lymph node + hematogenous metastasis; LN + H + DSM, lymph node + hematogenous + diffuse serosal metastasis. (C) Relationship between HPV cfDNA copy number and metastatic pattern. Statistical significance was determined using a two-sided Mann-Whitney U test. All plots show the median and interquartile range on a log10 scale.
 
-## Correlation between tumor metastasis pattern and baseline HPV cfDNA
+### Correlation between tumor metastasis pattern and baseline HPV cfDNA
 
 Analysis for the study cohort revealed an association between tumor metastatic pattern and baseline HPV cfDNA levels. According to their metastatic status at baseline, the patients were categorized into two groups: the Single-Metastasis Pattern (SMP) group (LR, LNM, or HM); and the Multi-Metastatic Pattern (MMP) group (LN + H ± DSM). The baseline copy number significantly differed among the five recurrence/metastasis pattern groups (p=0.019, with Kruskal-Wallis test) and tended to increase with the degree of metastasis (Figure 2B). In the subsequent group comparisons, the LR group was excluded due to containing only a single value, leaving four groups for comparison. Significant differences were observed in two comparisons: LNM vs. LN +H + DSM (p=0.006) and HM vs. LN +H + DSM (p=0.036). No significant differences were found between the other groups: LNM vs. HM (p=0.768), LNM vs. LN + HM (p=0.079), HM vs. LN + HM (p=0.112), and LN + HM vs. LN +H + DSM (p=0.145), as determined by the Mann-Whitney U test (Figure 2B). The median baseline HPV cfDNA copy number was significantly higher in the MMP group than in the SMP group (p=0.003, with the Mann-Whitney U test, Figure 2C).
 
 Baseline samples for patients with primary stage IVB cervical cancer were collected between Day –14 to + 30 relative to the initial treatment. Some patients provided pre-treatment samples, while others provided post-treatment samples, with the latter potentially influenced by the treatment itself. To assess whether there was a significant difference in baseline HPV cfDNA levels before and after treatment (within 30 days), a statistical analysis was performed. To minimize the impact of HPV genotypes, we focused on the baseline HPV cfDNA values of 14 HPV16-positive patients with primary stage IVB CC (six pre-treatment and eight post-treatment samples). The median HPV cfDNA value for pre-treatment samples was 8.01 × 10⁴ copies/mL (range 7.5 × 10³–9.7 × 10⁶ copies/mL), while the median for post-treatment samples was 3.5 × 10⁴ copies/mL (range 4.7 × 10²–7.4 × 10⁶ copies/mL). The difference between the two groups was not statistically significant (p=0.414, with the Mann-Whitney U test).
 
-## HPV cfDNA as a predictor of treatment response or failure
+### HPV cfDNA as a predictor of treatment response or failure
 
 We followed the enrolled patients for an average of 24.1 months (range 2.1–77.8 months). Figure 3 shows temporal changes in serum HPV cfDNA levels. In all patients with longitudinal testing, changes in HPV cfDNA levels occurred at a median of 2 months (range 0.3–16.9 months) before imaging confirmation of a treatment response or disease progression. Six patients with squamous cell carcinoma who experienced clinical disease progression during treatment (as per RECIST) exhibited an elevation in HPV cfDNA copy numbers before imaging-confirmed progression. The median time from detection of elevated plasma HPV cfDNA to imaging confirmation of disease progression was 4.2 months (range 1.9–16.9 months; Figure 3A1). Similarly, we observed a consistent decrease in HPV cfDNA copy numbers in 16 patients before imaging confirmed a treatment response. The median time from detection of a decrease in HPV cfDNA to imaging confirmation of disease regression was 1.2 months (range 0.3–2.8 months; Figure 3B1–D1).
 
@@ -99,11 +290,11 @@ We observed that changes in HPV cfDNA levels may indicate a response to combined
 
 Serum HPV cfDNA levels also changed in response to RT. A transient rise (20.8-fold) in HPV cfDNA copy number was observed in a patient with stage IVB CC who experienced a 2-week interruption of RT due to grade IV thrombocytopenia. Following Stereotactic Body Radiotherapy (SBRT) to lung metastases, a patient with pulmonary oligometastases experienced a 29% decrease in HPV cfDNA copy number. Another patient, diagnosed with stage IVB CC and pelvic bone metastases, who underwent radical concurrent chemoradiotherapy targeting both the primary and metastatic lesions, exhibited a notable reduction in HPV cfDNA levels (Figure 3D1).
 
-## Correlation between HPV cfDNA and SCC-Ag
+### Correlation between HPV cfDNA and SCC-Ag
 
 There were 26 patients with squamous cell CC in the study cohort. All 26 (100%) had elevated serum HPV cfDNA at baseline, but only 18/26 patients (69.2%) had elevated SCC-Ag at baseline (p=0.004, 95% CI, 0–0.391, with Fisher’s exact test). Among 72 serum samples from patients with squamous cell CC, the median HPV cfDNA level was 1.7 × 104 copies/mL (range 0–1.4 × 107 copies/mL) and the median SCC-Ag level was 2.6 ng/mL (range 0.4–70 ng/mL). There was no significant correlation between SCC-Ag and HPV cfDNA levels (R2=0.034, p=0.120, with Kendall’s τ correlation test). For patients with squamous cell CC who had longitudinal monitoring (n=20), the concordance with disease change was 90% for HPV cfDNA and 50% for SCC-Ag (p=0.014, 95% CI, 0.022–0.621, with Fisher’s exact test). Comparison of matched serum HPV cfDNA and SCC-Ag levels for patients with squamous cell CC (Figure 3A–D) revealed that HPV cfDNA exhibited dynamic fluctuations, while serum SCC-Ag levels in the majority of patients rapidly decreased to near or below the normal range (<1.5 ng/mL) following initiation of treatment. During the course of treatment, SCC-Ag levels remained within the normal range (<1.5 ng/mL) at all time points in five patients, but matched serum HPV cfDNA showed fluctuating changes above normal values at some time points (Figure 3E1, E2).
 
-## Correlation between HPV cfDNA and survival
+### Correlation between HPV cfDNA and survival
 
 The 5 year OS rate for the entire cohort was 42.3%, with median OS of 52.1 months at median follow-up of 42.3 months (range 10.2–88.5 months). As of December 31, 2023, there were 12 patient deaths and 20 disease progression events. Analysis of survival by HPV genotypes revealed that the difference in OS between the HPV16 +group and the non-HPV16 +group was not statistically significant (p=0.052, with log-rank test; Figure 4A). Univariate and multivariate analyses were conducted to evaluate the association between clinicopathologic factors and patient OS, with no factors identified as significantly impacting OS. The results of the univariate analysis are shown in Supplementary file 3. Correlation analysis of baseline HPV cfDNA copy number with mortality and OS outcomes revealed no significant association (R²=–0.111, p=0.486; R²=–0.037, p=0.782, with Kendall’s τ correlation test).
 
@@ -133,6 +324,6 @@ The results of landmark clinical trials, including GOG240, Keynote158, and Keyno
 
 Our study has several limitations, including a small sample size and a heterogeneous sequential sampling protocol, which introduced variability in baseline blood sampling timing, sample quantities, and intervals between samplings during treatment. Additionally, the heterogeneity of cfDNA levels across different HPV genotypes (due to differences in expression levels or detection efficiencies) and baseline variability of HPV cfDNA within individual patients may also contribute to potential biases in the results. We are currently conducting a prospective study of stage IVB CC. Owing to the absence of literature support for HPV cfDNA sampling protocols, we designed this initial exploratory study with a small sample size to clarify the value of HPV cfDNA monitoring and explore various sampling times and intervals. Our study results suggest that monitoring of HPV cfDNA is valuable before, during, and after treatment. Assessment of HPV cfDNA levels in every chemotherapy cycle (monthly) during treatment and every 3–6 months during follow-up may be a reasonable approach.
 
-## Conclusions
+### Conclusions
 
 Our prospective study suggests that HPV cfDNA, with its high sensitivity and specificity, holds promise as a biomarker for monitoring treatment response and facilitating long-term follow-up in patients with recurrent or metastatic HPV-associated cervical cancer. The baseline copy number of HPV cfDNA may be associated with metastatic patterns, thereby reflecting tumor burden and the extent of spread to some extent. As a serum tumor marker, HPV cfDNA may outperform SCC-Ag in tracking disease dynamics and enabling timely assessment of treatment responses to chemotherapy, radiation, immunotherapy, and targeted therapies. These preliminary findings highlight HPV cfDNA’s potential for monitoring treatment efficacy and predicting disease progression and recurrence in HPV-associated cancers. However, further validation through large-scale prospective trials is needed.

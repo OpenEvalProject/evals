@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.36460.001 The subthalamic nucleus (STN) is a small almond-shaped subcortical structure classically known for its role in motor inhibition through the indirect pathway within the basal ganglia. Little is known about the role of the STN in mediating cognitive functions in humans. Here, we explore the role of the STN in human subjects making decisions under conditions of uncertainty using single-neuron recordings and intermittent deep brain stimulation (DBS) during a financial decision-making task. Intraoperative single-neuronal data from the STN reveals that on high-uncertainty trials, spiking activity encodes the upcoming decision within a brief (500 ms) temporal window during the choice period, prior to the manifestation of the choice. Application of intermittent DBS selectively prior to the choice period alters decisions and biases subject behavior towards conservative wagers.
+The subthalamic nucleus (STN) is a small almond-shaped subcortical structure classically known for its role in motor inhibition through the indirect pathway within the basal ganglia. Little is known about the role of the STN in mediating cognitive functions in humans. Here, we explore the role of the STN in human subjects making decisions under conditions of uncertainty using single-neuron recordings and intermittent deep brain stimulation (DBS) during a financial decision-making task. Intraoperative single-neuronal data from the STN reveals that on high-uncertainty trials, spiking activity encodes the upcoming decision within a brief (500 ms) temporal window during the choice period, prior to the manifestation of the choice. Application of intermittent DBS selectively prior to the choice period alters decisions and biases subject behavior towards conservative wagers.
 
 ## Introduction
 
@@ -46,37 +46,282 @@ The task is analogous to the classic card game, War. Each player was dealt a car
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic representation of the gambling task. A fixation point is presented to indicate the start of the trial. Next, the subject’s card is presented alongside with the back of the computer’scard. Subjects are then presented with the option of placing a $5 or $20 wager. Following a delay, the computer’s card is revealed and feedback is presented. (B) Average z-scored and raw (inset) reaction times by card for intraoperative population (, F4,10=10.2; ANOVA). Reaction times were the longest for the high-uncertainty trials and amongst the lowest for the low-uncertainty trials. (p=4.0×10−4C) Average percentage of high wagers by card value. Intraoperative subjects displayed a strong risk-averse bias that was particularly noticeable on high-uncertainty trials in which a high wager was placed only 24% of the time on average, deviating significantly from a 50/50 strategy (, χ1,112=42.24).p=1.44×10−510.7554/eLife.36460.004Figure 1—source data 1.The behavior table contains fields for ID, subject, structure (brain region), session (session numer), startIndex, endIndex, startTimestamp (time in seconds for beginning of trial), endTimestamp (time in seconds for end of trial), fixationTimestamp (time in seconds for the fixation cue), pcardTimestamp (time in seconds for card presentation), buttonTimestamp (time in seconds for the gocue), choiceTimestamp (time in seconds when the button press was registered), fulldeckTimestamp (time in seconds for when the opponent’s card is revealed), feedbackTimestamp (time in seconds for feedback), reactionTime (time in seconds), trialNumber (trial number), conditionNumber (condition number), pcard (player’s card), ccard (opponent’s card), choice (wager), winLoss (outcome), value (value of wager). The spikes table contains spiking data for each trial and can be referenced to the behavioral table ID variable by trialID.
+**Figure 1.:** (A) Schematic representation of the gambling task. A fixation point is presented to indicate the start of the trial. Next, the subject’s card is presented alongside with the back of the computer’scard. Subjects are then presented with the option of placing a $5 or $20 wager. Following a delay, the computer’s card is revealed and feedback is presented. (B) Average z-scored and raw (inset) reaction times by card for intraoperative population ($F_{4,10}=10.2$, $p=4.0\times10^{−4}$; ANOVA). Reaction times were the longest for the high-uncertainty trials and amongst the lowest for the low-uncertainty trials. (C) Average percentage of high wagers by card value. Intraoperative subjects displayed a strong risk-averse bias that was particularly noticeable on high-uncertainty trials in which a high wager was placed only 24% of the time on average, deviating significantly from a 50/50 strategy ($χ_{1,11}^{2}=42.24$, $p=1.44\times10^{−5}$).
 
-## Signals of decision-making in the STN
+### Signals of decision-making in the STN
 
-We collected behavioral and neurophysiological data from six subjects (five men, one woman; 63.2±6.8 years old; mean ± Sc.D.; Table 1) that underwent DBS surgery for PD. On average subjects performed 1.83 sessions of the gambling task with an average of 105.2 trials per session.
+We collected behavioral and neurophysiological data from six subjects (five men, one woman; $63.2\pm6.8$ years old; mean $\pm$ Sc.D.; Table 1) that underwent DBS surgery for PD. On average subjects performed 1.83 sessions of the gambling task with an average of 105.2 trials per session.
 
-The gambling task was designed such that on any given trial a positive outcome was probabilistically weighted by the subject’s card. As such, we expected an engaged participant to display longer reaction times for trials in which the outcome was unpredictable; whereas on predictable trials we expected behavior to converge to an optimal strategy resulting in shorter reaction times. We found such a trend (F4,10=10.2, p=4.0×10−4; ANOVA; Figure 1b). Specifically, 6-card trials had the highest average reaction time (1.16±.19s and 1.33±.61s; mean ± Sc.D., respectively) consistent with the unpredictable nature of the outcome (i.e. an equal chance of winning and losing). Similarly, reaction times for the most predictabletrials were amongst the lowest.
+**Table 1.**
+ Summary table for neuroimaging and intraoperative study populations.Mean and standard deviation data are given for 24 healthy control subjects (19 male, 5 female) and 6 Parkinson’s Disease patients (five men, one female).
 
-First, we examined behavior on trials in which subjects were dealt a 6-card. A behavioral deviation from a 50/50 betting strategy on these trials would indicate a risk-seeking or risk-averse bias. Overall, we found that subjects had a risk-averse bias placing a high wager only 24% of the time (χ1,112=42.24, p=1.44×10−5; Figure 1c). In this study, all intraoperative subjects were off dopaminergic medications at least 12 hr prior to surgery. The low-dopamine state may have contributed to subject’s risk-avoidant behavior (St Onge et al., 2011; Claassen et al., 2011).
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Mean</th>
+      <th>Standard Deviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neuroimaging (n = 24)</td>
+      <td>Age (years)</td>
+      <td>36</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Intraoperative (n = 6)</td>
+      <td>Age (years)</td>
+      <td>63.2</td>
+      <td>6.8</td>
+    </tr>
+    <tr>
+      <td>Disease Duration (years)</td>
+      <td>8.2</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Levodopa dose (mg, daily)</td>
+      <td>530</td>
+      <td>300</td>
+    </tr>
+  </tbody>
+</table>
+
+The gambling task was designed such that on any given trial a positive outcome was probabilistically weighted by the subject’s card. As such, we expected an engaged participant to display longer reaction times for trials in which the outcome was unpredictable; whereas on predictable trials we expected behavior to converge to an optimal strategy resulting in shorter reaction times. We found such a trend ($F_{4,10}=10.2$, $p=4.0\times10^{−4}$; ANOVA; Figure 1b). Specifically, 6-card trials had the highest average reaction time ($1.16\pm.19$s and $1.33\pm.61$s; mean $\pm$ Sc.D., respectively) consistent with the unpredictable nature of the outcome (i.e. an equal chance of winning and losing). Similarly, reaction times for the most predictabletrials were amongst the lowest.
+
+First, we examined behavior on trials in which subjects were dealt a 6-card. A behavioral deviation from a 50/50 betting strategy on these trials would indicate a risk-seeking or risk-averse bias. Overall, we found that subjects had a risk-averse bias placing a high wager only 24% of the time ($χ_{1,11}^{2}=42.24$, $p=1.44\times10^{−5}$; Figure 1c). In this study, all intraoperative subjects were off dopaminergic medications at least 12 hr prior to surgery. The low-dopamine state may have contributed to subject’s risk-avoidant behavior (St Onge et al., 2011; Claassen et al., 2011).
 
 Current models suggest that STN activity inhibits responses during cognitively demanding situations (Frank, 2006; Frank et al., 2007). This inhibition may serve to allow for additional time to process internal and environmental information before ultimately arriving at and executing a decision. To explore this hypothesis in our study we leveraged the intrinsic symmetry of the behavioral paradigm, and divided trials into low and high cognitive demand. The 10- and 2-cards are extreme situations in which the player is probabilistically likely or unlikely to win, respectively — we call these low-uncertainty trials. Conversely, on the 6-card trials the player has an equal probability of winning and losing and there is no optimal strategy — we call these high-uncertainty trials.
 
-We examined single-neuronal data from the STN using standard stereotactic and intraoperative microelectrode mapping procedures. We collected 27 well-isolated neurons with an average of 3.1±1.1 (mean ± Sc.D.) neurons per subject (Figure 2—figure supplement 1). All analyses were performed on normalized and pooled spiking data. We apriori selected a 500 ms window during the choice period based on previous findings (Patel et al., 2012) and explored the relationship between STN activity and the level of uncertainty on a given trial. To do this, we applied a regression model predicting z-scored spike counts as a function of the card value and wager. Interestingly, we found an interaction effect between card value and wager (F9,1450=2.55, p=0.02; ANOVA) but no main effects for card value (F9,1450=1.69, p=0.14) or wager (F9,1450=2.68, p=0.10). Further exploration revealed a significant effect on high-uncertainty trials (t1450=−2.38, p=0.01; xtbfFig. 2a; Figure 2—figure supplements 2, 3 and 4) which was not present on low-uncertainty trials (t1450=−1.02, p=0.30; t1450=−0.16, p=0.86; 2- and 10-cards respectively; Figure 2b). Interestingly, we found trending activity for the 4- and 8-trials (t1450=−1.730, p=0.08; t1450=−1.78, p=0.07) which contain an intermediate degree of uncertainty. No other stimulus epoch correlated with subject behavior (Table 2).
+We examined single-neuronal data from the STN using standard stereotactic and intraoperative microelectrode mapping procedures. We collected 27 well-isolated neurons with an average of $3.1\pm1.1$ (mean $\pm$ Sc.D.) neurons per subject (Figure 2—figure supplement 1). All analyses were performed on normalized and pooled spiking data. We apriori selected a 500 ms window during the choice period based on previous findings (Patel et al., 2012) and explored the relationship between STN activity and the level of uncertainty on a given trial. To do this, we applied a regression model predicting z-scored spike counts as a function of the card value and wager. Interestingly, we found an interaction effect between card value and wager ($F_{9,1450}=2.55$, $p=0.02$; ANOVA) but no main effects for card value ($F_{9,1450}=1.69$, $p=0.14$) or wager ($F_{9,1450}=2.68$, $p=0.10$). Further exploration revealed a significant effect on high-uncertainty trials ($t_{1450}=−2.38$, $p=0.01$; xtbfFig. 2a; Figure 2—figure supplements 2, 3 and 4) which was not present on low-uncertainty trials ($t_{1450}=−1.02$, $p=0.30$; $t_{1450}=−0.16$, $p=0.86$; 2- and 10-cards respectively; Figure 2b). Interestingly, we found trending activity for the 4- and 8-trials ($t_{1450}=−1.730$, $p=0.08$; $t_{1450}=−1.78$, $p=0.07$) which contain an intermediate degree of uncertainty. No other stimulus epoch correlated with subject behavior (Table 2).
 
-This signal is unlikely to represent an overt finger movement because our task design balances the presentation of the $five and $20 wagers equally to the left- and right-hand side of the screen. Also, we found no difference in activity between wagers centered on the button press (F9,1450=0.24, p=0.98; Figure 2a,b) suggesting this signal was not movement-related. In addition, there was no relationship between the wager (t23=0.09, p=0.92) or the outcome (t23=0.71, p=0.48) on the previous trial.
+![Figure 2.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-v1.jpg)
 
-Lastly, we found that z-scored reaction times on high-uncertainty trials were longer when subjects placed a high vs. low wager (t6=−3.28, p=0.01; Figure 2c). There was no difference in reaction times on low-uncertainty trials for high vs. low wager (t9=1.17, p=0.27; Figure 2d).
+**Figure 2.:** (A) Peri-stimulus time histogram for low wagers (red) vs. high wagers (blue) on high-uncertainty trials zeroed to the onset of the choice period (left panel) and button press (right panel). STN activity predicted the upcoming decision during a 500 ms window (gray bar) during the choice period ($t_{1450}=−2.38$, $p=0.01$) but not during the button press ($t_{1450}=−1.16$, $p=0.24$). (B) Peri-stimulus time histogram for low wagers (red) and high wagers (blue) on low-uncertainty trials referenced to the onset of the choice period (left panel) and button press (right panel). STN activity did not encode the upcoming decision for low-uncertainty trials during the choice period ($t_{1450}=−1.02$, $p=0.30$; $t_{1450}=−0.16$, $p=0.86$) or the button press ($t_{1450}=−1.48$, $p=0.13$; $t_{1450}=−0.44$, $p=0.65$). Shaded regions in (A) and (B) represent standard errors. (C) Average z-scored reaction times for low (red) and high (blue) wagers on high-uncertainty trials. Reaction times were longer for high wagers compared with low wagers ($t_{6}=−3.28$, $p=0.01$). (D) Similarly, reaction times were not significantly modulated by the wager on low-uncertainty trials ($t_{9}=1.17$, $p=0.27$).
 
-## Effects of intermittent STN stimulation on behavior
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp1-v1.jpg)
 
-We have shown that STN activity within a brief temporal window during the choice period predicts the upcoming wager selectively for high but not low-uncertainty trials. Interestingly, previous human neurophysiology studies have described similar conflict signals arising earlier during the stimulus presentation epoch (Zaghloul et al., 2012; Sheth et al., 2012). To explore this discrepancy, we used intermittent DBS to test whether altering STN activity during this finite time window would alter the subject’s ultimate decision using intermittent DBS. We recruited 13 subjects (12 men, one woman; 62.6±7.4 years old; mean ± Sc.D.; Table 3) who had previously undergone STN DBS surgery for PD. All subjects had completed surgery at least 6 months prior tithe study.
+**Figure 2—figure supplement 1.:** (A and B) Inter-spike interval histogram (ISI) plots. Inset displays log ISI distributions. (C and D) Inter-spike interval return maps visualizing second order spike train patterns.
 
-Through patients’ implanted DBS electrodes we applied intermittent electrical stimulation to the STN while subjects were engaged in the same gambling task. Specifically, we applied one of three different stimulation categories randomly on 6-card trials, either giving: no stimulation, 1 s of stimulation during the fixation epoch, or 1 s of stimulation prior to the choice period. To control for observational effects of turning on/off the stimulator (e.g. feeling a sensation when the stimulator turns on), we systematically lowered the voltage setting—blinded to the subject—to a sub-threshold level prior to each experimental session. In addition, we characterized the latency from the trigger to current delivery and found it to be 174 ±0.002 ms (n=26; mean ± Sc.D.; Figure 3—figure supplement 1). All other settings (e.g. electrode contacts, frequency, and pulse-width) were unaltered from therapeutic levels and were returned to normal following the study.
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp2-v1.jpg)
 
-On average subjects performed 2 sessions of the gambling task with an average of 108 trials per session. Similar to the intraoperative experiment, we found that subjects demonstrated understanding of the underlying structure of the task (F4,26=5.83, p=0.0002; ANOVA; Figure 3a). The fastest reaction times were observed for low-uncertainty trials (1.19±.76 seconds, 1.11±.71 seconds; mean ± Sc.D.; 2- and 10-cards respectively); and on average, the high-uncertainty trials wreathe slowest (1.46±1.16 seconds; mean ± Sc.D.). Unlike during the intraoperative sessions, subjects were on their clinical regimen of dopamine replacement therapy during this experiment. We did not observe the same risk-averse behavior on 6-card trials (χ1,272=34.13, p=0.13; Figure 3b).
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp3-v1.jpg)
 
-Guided by our neurophysiological findings, we expected that modulation of intrinsic decision signaling prior to the choice period would selectively bias subject behavior. As such, we expected no difference when stimulation was delivered during the fixation period compared to when it was omitted. The data confirmed this hypothesis (F2,28=2.93, p=0.05; ANOVA). In contrast, when stimulation was delivered prior to the choice period, we found that on average subjects had a strong risk-averse bias and placed a high wager only 33.0 ±4.83% (mean ± s.e.m.) of the time, on average an absolute 15% less than the no stimulation group (t28=2.77, p=0.009; Figure 3c). Importantly, there was no difference between the omitted and fixation stimulation conditions (t28=0.14, p=0.88), on which subjects placed a high wager on average of 48.3 ±5.92% and 49.2 ± 5.6% of the time (mean ± s.e.m.), respectively.
+**Figure 2—figure supplement 3.:** (A) Peri-stimulus time histogram for the low wager (red) and high wager (blue) on 4-card trials referenced to the choice period ($t$(8) = −1.89, $p$ = 0.09). f(B) Peri-stimulus time histogram for bet low (red) and bet high (blue) on 8-card trials referenced to the choice period($t$(13) = −2.06, $p$ = 0.5). Both the 4- and 8-card trials represent an intermediate level of uncertainty and encode upcoming decisions during the 500 ms window (black bar).
 
-To further explore the effects of intermittent stimulation on decision-making we more closely examined the effects within individual subjects. To do so, we plotted each subject’s average high wager percentage when stimulation was omitted and delivered at the choice period (Figure 3d). Overall, we found subjects spanned a large range in baseline tendency for placing high wagers, ranging from 11% to 100%. We found that 7 out of 11 subjects displayed a reduction in risk-seeking behavior (Table 4). Of the seven subjects the average magnitude of change was 12.8% (range: 1–18%). Interestingly, we observed that the magnitude of the reduction in risk-seeking behavior correlated with their initial starting point (t7=2.46, p=0.05; Figure 3e). For the three subjects that showed an increase in risk-seeking behavior, the average magnitude of change was 12.1% (range: 2–22%). The same correlation did not appear to exist in the this group (t2=1.13, p=0.46), though the sample size is limited. One subject experienced no change in either direction from the stimulation.
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig2-figsupp4-v1.jpg)
 
-Lastly, we explored whether stimulation had an effect on subject’s reaction time performance. We found that there was no overall main effect of stimulation epoch (F2,577=1.37, p=0.25; ANOVA) or wager (F1,577=0.31, p=0.57; ANOVA) on reaction time. However, we did find an interaction effect between stimulation epoch and wager (F2,577=4.15, p=0.01; Figure 3f). Specifically, during the choice period stimulation condition, reaction times were faster when subjects placed a high wager compared with a low wager (t22=3.72, p=0.001), supporting previous findings (Frank et al., 2007). No similar differences were observed for the omitted and fixation stimulation conditions.
+**Figure 2—figure supplement 4.:** Peri-stimulus time histogram of all trials zeroed on button press for bet low (red) and bet high (blue) trials ($t$(19)=0.68, $p$ = 0.5). The uncertainty signal occurs late in the choice period. To ensure that this was not movement related, we show that there was no differential STN activity around the button press.
+
+**Table 2.**
+ Summary of neural task responses.t-tests were performed for differences in neural responses across task epochs between low- and high-uncertainty trials. Windows of comparison, mean differences, t-values, and p-values are reported for the population with 13 degrees of freedom.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Epoch</th>
+      <th>Window</th>
+      <th>Δ</th>
+      <th>T</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fixation</td>
+      <td>0–500 ms</td>
+      <td>−1.52</td>
+      <td>1.25</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Card</td>
+      <td>0–500 ms</td>
+      <td>−1.34</td>
+      <td>0.70</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>Choice</td>
+      <td>0–500 ms</td>
+      <td>−1.79</td>
+      <td>1.31</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Choice</td>
+      <td>500–1000 ms</td>
+      <td>−3.75</td>
+      <td>2.96</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Feedback</td>
+      <td>0–500 ms</td>
+      <td>0.17</td>
+      <td>−0.17</td>
+      <td>0.86</td>
+    </tr>
+  </tbody>
+</table>
+
+This signal is unlikely to represent an overt finger movement because our task design balances the presentation of the $five and $20 wagers equally to the left- and right-hand side of the screen. Also, we found no difference in activity between wagers centered on the button press ($F_{9,1450}=0.24$, $p=0.98$; Figure 2a,b) suggesting this signal was not movement-related. In addition, there was no relationship between the wager ($t_{23}=0.09$, $p=0.92$) or the outcome ($t_{23}=0.71$, $p=0.48$) on the previous trial.
+
+Lastly, we found that z-scored reaction times on high-uncertainty trials were longer when subjects placed a high vs. low wager ($t_{6}=−3.28$, $p=0.01$; Figure 2c). There was no difference in reaction times on low-uncertainty trials for high vs. low wager ($t_{9}=1.17$, $p=0.27$; Figure 2d).
+
+### Effects of intermittent STN stimulation on behavior
+
+We have shown that STN activity within a brief temporal window during the choice period predicts the upcoming wager selectively for high but not low-uncertainty trials. Interestingly, previous human neurophysiology studies have described similar conflict signals arising earlier during the stimulus presentation epoch (Zaghloul et al., 2012; Sheth et al., 2012). To explore this discrepancy, we used intermittent DBS to test whether altering STN activity during this finite time window would alter the subject’s ultimate decision using intermittent DBS. We recruited 13 subjects (12 men, one woman; $62.6\pm7.4$ years old; mean $\pm$ Sc.D.; Table 3) who had previously undergone STN DBS surgery for PD. All subjects had completed surgery at least 6 months prior tithe study.
+
+**Table 3.**
+ Summary table for intermittent stimulation study population.Mean and standard deviation data are given for 13 subjects (12 men and one woman) who participated in the intermittent stimulation study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mean (n = 13)</th>
+      <th>Standard Deviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>62.6</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td>Disease Duration (years)</td>
+      <td>15.5</td>
+      <td>5.6</td>
+    </tr>
+    <tr>
+      <td>Time since surgery (years)</td>
+      <td>3.9</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Levodopa dose (mg, daily)</td>
+      <td>575</td>
+      <td>310</td>
+    </tr>
+    <tr>
+      <td>Therapeutic left voltage (volts)</td>
+      <td>2.9</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Therapeutic right voltage (volts)</td>
+      <td>2.9</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Therapeutic frequency (Hz)</td>
+      <td>180</td>
+      <td>14.3</td>
+    </tr>
+    <tr>
+      <td>Study voltage (volts)</td>
+      <td>1.0</td>
+      <td>0.9</td>
+    </tr>
+  </tbody>
+</table>
+
+Through patients’ implanted DBS electrodes we applied intermittent electrical stimulation to the STN while subjects were engaged in the same gambling task. Specifically, we applied one of three different stimulation categories randomly on 6-card trials, either giving: no stimulation, 1 s of stimulation during the fixation epoch, or 1 s of stimulation prior to the choice period. To control for observational effects of turning on/off the stimulator (e.g. feeling a sensation when the stimulator turns on), we systematically lowered the voltage setting—blinded to the subject—to a sub-threshold level prior to each experimental session. In addition, we characterized the latency from the trigger to current delivery and found it to be 174 $\pm$0.002 ms ($n$=26; mean $\pm$ Sc.D.; Figure 3—figure supplement 1). All other settings (e.g. electrode contacts, frequency, and pulse-width) were unaltered from therapeutic levels and were returned to normal following the study.
+
+On average subjects performed 2 sessions of the gambling task with an average of 108 trials per session. Similar to the intraoperative experiment, we found that subjects demonstrated understanding of the underlying structure of the task ($F_{4,26}=5.83$, $p=0.0002$; ANOVA; Figure 3a). The fastest reaction times were observed for low-uncertainty trials ($1.19\pm.76$ seconds, $1.11\pm.71$ seconds; mean $\pm$ Sc.D.; 2- and 10-cards respectively); and on average, the high-uncertainty trials wreathe slowest ($1.46\pm1.16$ seconds; mean $\pm$ Sc.D.). Unlike during the intraoperative sessions, subjects were on their clinical regimen of dopamine replacement therapy during this experiment. We did not observe the same risk-averse behavior on 6-card trials ($χ_{1,27}^{2}=34.13$, $p=0.13$; Figure 3b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig3-v1.jpg)
+
+**Figure 3.:** (A) Average z-scored reaction times by card ($F_{4,26}=5.83$, $p=0.0002$; ANOVA) and average raw reaction times (inset). Reaction times were the longest for the high-uncertainty trials and the lowest for the low-uncertainty trials. (B) Average percentage of high wagers by card value. Subjects did not significantly deviate from a 50/50 strategy ($χ_{1,27}^{2}=34.13$, $p=0.13$). (C) Bet high percentage by intermittent stimulation condition. Subjects displayed risk-averse behavior when stimulation was delivered prior to the choice period, placing a high wager 15% less than when stimulation was omitted ($χ_{1,11}^{2}=42.24$, $p=1.44\times10^{−5}$). (D) Bet high percentage on the no stimulation condition (square marker) and on the choice period condition (circle). The arrow indicates the direction of change, risk-averse (blue) or risk-seeking (red). 8/11 subjects displayed a trend towards risk-averse behavior. (E) Scatter plot of percentage change in high wagers during the choice period against high wager percentage on the no stimulation condition, for increases (red) and decreases (blue) in high wagers. Subjects that tended to place a high wager in the baseline (no stimulation) condition tended to experience the greatest change with stimulation. (F) Average z-scored reaction times for low (blue) and high (red) wagers by stimulation condition. No overall effect of stimulation was observed on reaction times ($F_{2,577}=1.37$, $p=0.25$; ANOVA) or wager ($F_{1,577}=0.31$, $p=0.57$; ANOVA). However, there was a difference in reaction times for high vs. low wagers selectively during the choice period ($t_{22}=3.72$, $p=0.001$).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36460/elife-36460-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The implanted pulse generator is activated telemetrically by a hand-held controller. The controller is computer-controlled via a TTL pulse (blue trace). The latency between the rising edge of the TTL pulse and the onset of stimulation through the electrode contact is shown by the dashed line (n = 26; 174 $\pm$0.002 ms; mean $\pm$ Sc.D.). The black trace represents an example stimulation train (five volts, 100 Hz). Baseline activity for the TTL pulse (blue trace) is adjusted for visualization.
+
+Guided by our neurophysiological findings, we expected that modulation of intrinsic decision signaling prior to the choice period would selectively bias subject behavior. As such, we expected no difference when stimulation was delivered during the fixation period compared to when it was omitted. The data confirmed this hypothesis ($F_{2,28}=2.93$, $p=0.05$; ANOVA). In contrast, when stimulation was delivered prior to the choice period, we found that on average subjects had a strong risk-averse bias and placed a high wager only 33.0 $\pm$4.83% (mean $\pm$ s.e.m.) of the time, on average an absolute 15% less than the no stimulation group ($t_{28}=2.77$, $p=0.009$; Figure 3c). Importantly, there was no difference between the omitted and fixation stimulation conditions ($t_{28}=0.14$, $p=0.88$), on which subjects placed a high wager on average of 48.3 $\pm$5.92% and 49.2 $\pm$ 5.6% of the time (mean $\pm$ s.e.m.), respectively.
+
+To further explore the effects of intermittent stimulation on decision-making we more closely examined the effects within individual subjects. To do so, we plotted each subject’s average high wager percentage when stimulation was omitted and delivered at the choice period (Figure 3d). Overall, we found subjects spanned a large range in baseline tendency for placing high wagers, ranging from 11% to 100%. We found that 7 out of 11 subjects displayed a reduction in risk-seeking behavior (Table 4). Of the seven subjects the average magnitude of change was 12.8% (range: 1–18%). Interestingly, we observed that the magnitude of the reduction in risk-seeking behavior correlated with their initial starting point ($t_{7}=2.46$, $p=0.05$; Figure 3e). For the three subjects that showed an increase in risk-seeking behavior, the average magnitude of change was 12.1% (range: 2–22%). The same correlation did not appear to exist in the this group ($t_{2}=1.13$, $p=0.46$), though the sample size is limited. One subject experienced no change in either direction from the stimulation.
+
+**Table 4.**
+ Stimulation effect on individual subjects.Fraction of high-wagers when stimulation was omitted and applied prior to the choice period. The change in decision-making is highlighted blue for a decrease and red for an increase in risk-seeking choices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>No stim</th>
+      <th>pre-Choice</th>
+      <th>Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.00</td>
+      <td>0.83</td>
+      <td>blue-0.16</td>
+    </tr>
+    <tr>
+      <td>0.75</td>
+      <td>0.60</td>
+      <td>blue-0.15</td>
+    </tr>
+    <tr>
+      <td>0.71</td>
+      <td>0.57</td>
+      <td>blue-0.14</td>
+    </tr>
+    <tr>
+      <td>0.57</td>
+      <td>0.38</td>
+      <td>blue-0.18</td>
+    </tr>
+    <tr>
+      <td>0.52</td>
+      <td>0.40</td>
+      <td>blue-0.12</td>
+    </tr>
+    <tr>
+      <td>0.44</td>
+      <td>0.56</td>
+      <td>red0.11</td>
+    </tr>
+    <tr>
+      <td>0.35</td>
+      <td>0.38</td>
+      <td>red0.02</td>
+    </tr>
+    <tr>
+      <td>0.28</td>
+      <td>0.17</td>
+      <td>blue-0.11</td>
+    </tr>
+    <tr>
+      <td>0.23</td>
+      <td>0.23</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>0.21</td>
+      <td>0.20</td>
+      <td>blue-0.01</td>
+    </tr>
+    <tr>
+      <td>0.11</td>
+      <td>0.33</td>
+      <td>red0.22</td>
+    </tr>
+  </tbody>
+</table>
+
+Lastly, we explored whether stimulation had an effect on subject’s reaction time performance. We found that there was no overall main effect of stimulation epoch ($F_{2,577}=1.37$, $p=0.25$; ANOVA) or wager ($F_{1,577}=0.31$, $p=0.57$; ANOVA) on reaction time. However, we did find an interaction effect between stimulation epoch and wager ($F_{2,577}=4.15$, $p=0.01$; Figure 3f). Specifically, during the choice period stimulation condition, reaction times were faster when subjects placed a high wager compared with a low wager ($t_{22}=3.72$, $p=0.001$), supporting previous findings (Frank et al., 2007). No similar differences were observed for the omitted and fixation stimulation conditions.
 
 ## Discussion
 
@@ -92,11 +337,11 @@ In conclusion, we provide functional imaging and neurophysiological evidence in 
 
 ## Materials and methods
 
-## Study subjects
+### Study subjects
 
 We recruited six subjects undergoing STN DBS for the treatment of Parkinson’s disease to participate in the intraoperative neurophysiology study. Each individual was evaluated and considered for surgery by a multidisciplinary team of neurologists, neurosurgeons, and psychiatrists. Once approved and scheduled for surgery an independent member of the research team approached each patient to describe the possibility of study inclusion. At that time risks and benefits were clearly addressed to each subject. All study subjects enrolled voluntarily and provided informed consent under guidelines approved by the Massachusetts General Hospital Institutional Review Board. Subjects were free to withdraw from the study at any time without consequence to operative approach or clinical care. This study was approved by the Massachusetts General Hospital Institutional Review Board (protocol number 2001P000877). For a more detailed description on performing cognitive studies with microelectrode recording during DBS, see (Patel et al., 2013).
 
-## Task presentation
+### Task presentation
 
 A computer monitor was fixed to an adjustable arm and mounted to the operating bed and positioned comfortably within the viewing distance of the patient. A button box was similarly mounted to the operating bed and placed comfortably under the patient’s right hand. Subjects were in a comfortable reclined position. The behavioral task was presented using custom written software in Matlab (Math works, Natick, MA), Monkey logic (www.monkeylogic.org) (Asaad and Eskandar, 2008a; Asaad and Eskandar, 2008b; Asaad et al., 2013).
 
@@ -104,19 +349,19 @@ The task is analogous to the classic card game, War. On each trial, the subject 
 
 Each trial began with a fixation point presented at the center of the screen for 350 ms to indicate the start of trial (Figure 1a). Next, the subject’s card and the back of the opponent’s card were displayed for 1000 ms. Two red circles then appeared, indicating the mapping of each button (left and right buttons) to its respective wagers ($five and $20). The button map was presented randomly such that the $five and $20 wagers are assigned to the left and right buttons equally. The presentation of the button map also serves as the choice period, indicating when to initiate a wager. The time it took the subject to press a button was considered the reaction time with a maximum of 5 s. Following the wager, there was a randomized delay period of 250–500 ms, which was immediately followed by the presentation of the subject’s and computer’s card for 1000–1250 ms. Lastly, feedback was given for 1000 ms by displaying an image of a $five or $20 bill with text indicating the outcome. In the case of a draw, only text is displayed. Subjects were monetarily rewarded following their participation in the study.
 
-## Electrophysiology
+### Electrophysiology
 
 For a detailed description, please see (Patel et al., 2013). Intraoperative microelectrode recordings were performed using three Para-sagittal tungsten microelectrodes (Figure 1b). The electrodes were advanced using a motorized Alpha Omega (Alpha-Omega Engineering, Nazareth, Israel) Microdrive. Intraoperative motor testing was performed at <1 mm increments throughout the dorsolateral-ventromedial axis of the STN to characterize the motor and non-motor compartments. Recordings were band-pass filtered between 300 Hz and 6.5 kHz by an Alpha Omega acquisition system. Data was recorded at 20 kHz by a PowerLinc 1401 acquisition system (Cambridge Electronic Design, Cambridge, England) and stored for post-hoc analysis. Offline, the neurophysiology data was sorted into individual neuronal records using a template clustering method (Offline Sorter, Plexon, Houston, TX). Data from each electrode was sorted separately.
 
-## Behavioral and neuronal analysis
+### Behavioral and neuronal analysis
 
-All analyses were performed using a combination of iPython and R. Because of inter-subject variability in baseline motor performance, we explored reaction time differences by first z-scoring data using each session’s mean and variance reaction time. Normalized subject data and allowed for equal comparisons for group level analyses. We then applied either a one-way or two-way ANOVA on the z-scored reaction time data to assess statistical differences. Post-hoc analyses were performed using two-tailed t-tests.
+All analyses were performed using a combination of iPython and R. Because of inter-subject variability in baseline motor performance, we explored reaction time differences by first z-scoring data using each session’s mean and variance reaction time. Normalized subject data and allowed for equal comparisons for group level analyses. We then applied either a one-way or two-way ANOVA on the z-scored reaction time data to assess statistical differences. Post-hoc analyses were performed using two-tailed $t$-tests.
 
-To visualize neural activity, the instantaneous firing rate was approximated by convolving a Gaussian kernel (sigma = 150 ms) with 1 ms binned spike trains. Because of the limitations in the number of trials recorded in each experimental session, statistical analyses at the individual cell level were rarely significant, and instead all analyses were performed at the population level. Statistical differences between population responses were assessed using two-tailed t-tests during pre-defined 500 ms windows: 500–1000 during the choice period and −250–250 centered on the button press based on a previous study (Patel et al., 2012).
+To visualize neural activity, the instantaneous firing rate was approximated by convolving a Gaussian kernel (sigma = 150 ms) with 1 ms binned spike trains. Because of the limitations in the number of trials recorded in each experimental session, statistical analyses at the individual cell level were rarely significant, and instead all analyses were performed at the population level. Statistical differences between population responses were assessed using two-tailed $t$-tests during pre-defined 500 ms windows: 500–1000 during the choice period and −250–250 centered on the button press based on a previous study (Patel et al., 2012).
 
-To explore the relationship between neural activity and the decision, we applied a linear regression model of the form: Z=β0+βcC+βwW+βcwC×W, where Z is a vector of z-scored spike counts (relative to each neuron) in a 500 ms window, C is the card value, W is the wager, and C×W the interaction between the two terms. Both C and W are categorical variables and represented with dummy variables in the regression model. Coefficients were estimated through a least-squares approach.
+To explore the relationship between neural activity and the decision, we applied a linear regression model of the form: $Z=\beta_{0}+\beta_{c}C+\beta_{w}W+\beta_{cw}C\timesW$, where $Z$ is a vector of z-scored spike counts (relative to each neuron) in a 500 ms window, $C$ is the card value, $W$ is the wager, and $C\timesW$ the interaction between the two terms. Both $C$ and $W$ are categorical variables and represented with dummy variables in the regression model. Coefficients were estimated through a least-squares approach.
 
-## Intermittent stimulation
+### Intermittent stimulation
 
 Thirteen study participants were recruited from STN DBS patients identified by their movement disorders neurologist to participate in the intermittent stimulation study. A study staff member contacted potential study participants by telephone to introduce the study and invite the patient to participate. On the day of the study, after obtaining written informed consent, the patient’s deep brain stimulator was turned off. Subsequently the stimulation voltage was lowered in small increments with the stimulator being turned on and off in a blinded fashion until a voltage threshold was reached at which the patient was unable to detect the stimulation. The stimulator controller was secured over the patient’s pulse generator, and after approximately 15 min with the stimulator off, the patient began playing the task.
 

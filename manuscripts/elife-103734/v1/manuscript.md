@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Psychiatry, University of Oxford Oxford United Kingdom
-2. https://ror.org/04c8bjx39 Oxford Health NHS Trust Oxford United Kingdom
+1. Department of Psychiatry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Oxford Health NHS Trust Oxford United Kingdom ([ROR:04c8bjx39](https://ror.org/04c8bjx39))
 
 † Corresponding author
 
@@ -28,19 +28,72 @@ In this paper, we test whether human participants modify their learning in situa
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig1-v1.jpg)
 
-**Figure 1.:** a) Timeline of one trial from the learning task.On each trial, participants were presented with two abstract shapes and were asked to choose one of them. The empty bars above and below the fixation cross represented the total available wins and losses for the trial, the full length of each bar was equivalent to £1. Participants chose a shape and then were shown the proportion of each outcome that was associated with their chosen shape as coloured regions of the bars (green for wins and red for losses). The empty portions of the bars indicated the win and loss magnitudes associated with the unchosen option, allowing participants to infer which shape would have been the better option on every trial. The task consisted of six blocks of sixty trials each. The volatility and noise of the two outcomes varied independently between blocks with different shapes used in each block. Panel (b) illustrates outcomes from the four block types. As can be seen, blocks with high volatility and low noise (top left), and those with low volatility and high noise (bottom right), present participants with a similar range of magnitudes. Participants, therefore, have to distinguish whether variability in the outcomes is caused by volatility or noise from the temporal structure of the outcomes rather than the size of changes in magnitude (cf. Diederen and Schultz, 2015; Krishnamurthy et al., 2017; Nassar et al., 2012). Panel (c) shows two example blocks (one block in grey, the other in white) with both win (green) and loss outcomes (red) displayed. Panel (d) shows the expected adaptation of learning rates in response to the manipulation of volatility and noise; for both win and loss outcomes, learning rates should be increased when volatility is high and when noise is low.
+**Figure 1.:** On each trial, participants were presented with two abstract shapes and were asked to choose one of them. The empty bars above and below the fixation cross represented the total available wins and losses for the trial, the full length of each bar was equivalent to £1. Participants chose a shape and then were shown the proportion of each outcome that was associated with their chosen shape as coloured regions of the bars (green for wins and red for losses). The empty portions of the bars indicated the win and loss magnitudes associated with the unchosen option, allowing participants to infer which shape would have been the better option on every trial. The task consisted of six blocks of sixty trials each. The volatility and noise of the two outcomes varied independently between blocks with different shapes used in each block. Panel (b) illustrates outcomes from the four block types. As can be seen, blocks with high volatility and low noise (top left), and those with low volatility and high noise (bottom right), present participants with a similar range of magnitudes. Participants, therefore, have to distinguish whether variability in the outcomes is caused by volatility or noise from the temporal structure of the outcomes rather than the size of changes in magnitude (cf. Diederen and Schultz, 2015; Krishnamurthy et al., 2017; Nassar et al., 2012). Panel (c) shows two example blocks (one block in grey, the other in white) with both win (green) and loss outcomes (red) displayed. Panel (d) shows the expected adaptation of learning rates in response to the manipulation of volatility and noise; for both win and loss outcomes, learning rates should be increased when volatility is high and when noise is low.
 
 ## Results
 
-## Participant demographics
+### Participant demographics
 
 70 participants (see Table 1 for demographic information) completed a learning task in which they had to choose one of two stimuli based on the separately estimated magnitudes of win and loss outcomes associated with the stimuli (Figure 1). Participants were able to learn the best option to choose in the task, selecting the most highly rewarded option on an average of 71% of trials (range 65–74%).
 
-## Experimental manipulation of volatility and noise influences participant choice behaviour
+**Table 1.**
+ Demographic details of participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Mean (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td>29.07 (10.86)</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>69% Female</td>
+    </tr>
+    <tr>
+      <td>QIDS-16</td>
+      <td>5.26 (4.25)</td>
+    </tr>
+    <tr>
+      <td>Trait-STAI</td>
+      <td>36.21 (10.42)</td>
+    </tr>
+    <tr>
+      <td>State-STAI</td>
+      <td>30.29 (8.57)</td>
+    </tr>
+  </tbody>
+</table>
+
+_QIDS-16; Quick Inventory of Depressive Symptoms, 16-item self-report version. Trait/State-STAI; Spielberger State-Trait Anxiety Inventory._
+
+### Experimental manipulation of volatility and noise influences participant choice behaviour
 
 As explained above, high levels of volatility and low levels of noise should increase the degree to which outcomes influence choice behaviour. A crude metric of this effect is provided by examining participant choice as a function of the previous outcome. In the task, a win outcome of >50 p or a loss outcome of <50 p associated with Shape A prompts participants to select Shape A in the subsequent trial, with the other outcomes (i.e. win <50 p and loss >50 p) prompting choice of Shape B. The influence of the outcomes on choice can, therefore, be roughly estimated as the relative proportion of trials in which Shape A was chosen when it was prompted by a previous outcome of a given magnitude, compared to when Shape B was prompted. Analysis of this choice metric (Figure 2a–b) found the expected effect of volatility, with participant choice being more influenced by previous outcomes when volatility was higher (F(1,696)=99.8, pParticipants adjust normatively to changes in volatility but not noise<0.001). An effect of noise was observed, but in the opposite direction to expected, with outcomes influencing choice more when noise was increased (F(1,696)=4.79, p=0.03). No significant difference between the influence of win and loss outcomes was found (F(1,696)=1, p=0.32), and there was no interaction between volatility and noise (F(1,693)=0.61, p=0.4). Having found some evidence of an impact of the uncertainty manipulations on a crude measure of subject choice, we next sought to characterise this effect using reinforcement learning models fitted to participant choices.
 
-## Participants adjust normatively to changes in volatility but not noise
+![Figure 2.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig2-v1.jpg)
+
+**Figure 2.:** Panels a and b report a summary metric for the effect of win and loss outcomes on subsequent choice. The metric was calculated as the proportion of trials in which an outcome of magnitude 51–65 associated with Shape A was followed by choice of the shape prompted by the outcome (i.e. Shape A for win outcomes, Shape B for loss outcomes) relative to when the outcome magnitude was 49–35 (see Methods and materials for more details). We focused on this outcome range as these range of magnitudes were covered by all volatility × noise conditions and it was dictated by the relatively smaller range coverage in the low volatility low noise condition (also see Figure 1C, loss outcomes shown in red between trials 60–120). The higher this number, the greater the tendency for a participant to choose the shape prompted by an outcome. As can be seen, the outcome of previous trials had a greater influence on participant choice when volatility was high, with a small effect of noise, in the opposite direction to that predicted. Panels c and d report the win and loss learning rates estimated from the same data. Again, the expected effect of volatility is observed, this time with no consistent effect of noise. Bars represent the mean (± SEM) of the data, with individual data points superimposed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Panels (a) and (b) are the same as panels (c and d) from main Figure 2 and report the estimated win and loss learning rates using the two learning rate one beta model described in the main paper. Panels c and d report the same parameters from the tw0 learning rate two beta model described above. As can be seen, the results are similar regardless of the form of the measurement model used.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The two learning rate parameters were varied from 0.01 to 0.99 and the inverse temperature parameter from 1 to 36. Synthetic choices from one task block were generated using the RL model described in the main paper, which were then passed through the model fitting procedure. The recovered parameter values are reported on the z-axis of the plots (the top row reports recovered win learning rates, middle row recovered loss learning rates, bottom row recovered beta values) as a function of different pairs of input parameters (as described on the x and y axes). As can be seen, all three parameters are well recovered, whenever the beta value is above 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** A three-parameter (win learning rate, loss learning rate, inverse temperature) model was fit to participant’s choices across all blocks. The effective learning rates of the model’s choices are illustrated, demonstrating that it does not replicate the pattern of behaviour seen in participants.
+
+### Participants adjust normatively to changes in volatility but not noise
 
 We aimed to capture the computational process that underlies participant choice behaviour by fitting different reinforcement learning models to choice data separately for each block of the task and each participant. The best fitting RL model included separate learning rates for win and loss outcomes allowing estimation of the degree to which participants adjusted these learning rates in response to the block-wise changes in outcome volatility and noise (see Supplementary materials and methods for model comparison and selection analyses).
 
@@ -48,27 +101,59 @@ Consistent with the analysis of choice data reported above, there was a signific
 
 In summary, analysis of both crude choice data and learning rates indicates that participants adapted appropriately to changes in the volatility of learned associations but did not show a consistent response to changes in noise. In the next section,, we utilise a Bayesian observer model (BOM) to investigate potential causes for this relative insensitivity to noise.
 
-## Using a Bayesian observer model to characterise noise insensitivity
+### Using a Bayesian observer model to characterise noise insensitivity
 
 Bayesian observer models (BOM) can be used as normative benchmarks against which human behaviour may be compared (Behrens et al., 2007; Nassar et al., 2012; Piray and Daw, 2021; Pulcu et al., 2022). BOMs are generally not fit to participant choice, rather these models invert a generative process assumed to underlie observed events and provide an estimate of the belief of an idealised agent exposed to the same outcomes as participants. We developed a BOM (Pulcu et al., 2022) based on the generative process underlying the outcome magnitudes of our task (Figure 3a). The BOM explicitly estimates the volatility and noise of the outcomes and uses these estimates to influence its belief about the likely magnitude of upcoming outcomes (see methods for more details). We first tested whether the BOM reproduced the normative learning rate adaptation to changes in volatility and noise described in the introduction, by exposing the model to the same outcomes as participants and using the model’s belief about the likely magnitude of the win and loss outcome on each trial to generate choices. We then estimated the effective learning rate of the model by fitting the same RL model used to analyse participants’ choices to the model’s choices. These learning rates are presented in Figure 3f (Figure 3e reproduces the learning rates of participants, averaged across wins and losses, for comparison). As can be seen, the BOM adapts as expected, using a higher learning rate both when volatility increases (F(1,696)=422, p<0.001) and when noise decreases (F(1,696)=21.2, p<0.001). No effect of outcome valence or interaction between volatility and noise (all p>0.09) was observed.
 
-Having shown that an optimal learner adjusts its learning rate to changes in volatility and noise as expected, we next sought to understand the relative noise insensitivity of participants. In these analyses, we ‘lesion’ the BOM, to reduce its performance in some way, and then assess whether doing so recapitulates the pattern of learning rate adaptation observed for participants (Figure 3e). In other words, we damage the model so it performs less well and then assess whether this damage makes the behaviour of the BOM (shown in Figure 3f) more closely resemble that seen in participants (Figure 3e). First, we tested the impact of completely removing the ability of the BOM to adjust to changes in either volatility (Figure 3b) or noise (Figure 3c) by removing the top nodes of the model (i.e. kmu\begin{document}$kmu$\end{document} or vs\begin{document}$vs$\end{document} respectively). Removing these nodes forces the BOM to estimate the mean volatility or noise across all task blocks rather than estimating local periods where they are higher or lower (see Animation 1). As illustrated in Figure 3g–h, neither of these lesions recapitulates the pattern of learning rates observed in participants, with the volatility lesioned model attributing increased volatility to noise and thus decreasing its learning rate during periods of higher volatility (main effect of volatility; F(1,696)=11.9, p<0.001) and the SD-lesioned model treating any form of uncertainty as volatility and thus increasing its learning rate in response to increased noise (main effect of noise; F(1,696)=227, p<0.001). This suggests that human participants are able to adapt to changes in outcome volatility and noise to some degree, but are less sensitive to these changes than the intact BOM.
+![Figure 3.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig3-v1.jpg)
+
+**Figure 3.:** Bayesian Observer Models (BOM) invert generative descriptions of a process, indicating how an idealised observer may learn. We developed a BOM based on the generative model of the task we used (a) Details of the BOM are provided in the methods, briefly, it assumes that observations ($y_{i}$) are generated from a Gaussian distribution with a mean ($mu_{i}$) and standard deviation ($SD_{i}$). Between observations, the mean changes with the rate of change controlled by the volatility parameter ($vmu_{i}$). The standard deviation and volatility of this model estimate the noise and volatility described for the task. The last parameters control the change in volatility ($kmu$) and standard deviation ($vs$) between observations, allowing the model to account for different periods when these types of uncertainty are high and others when they are low. The BOM adjusts its learning rate in a normative fashion (f), increasing it when volatility is higher, or noise is lower. The BOM was lesioned in a number of different ways in an attempt to recapitulate the learning rate adaptation observed in participants (shown in panel e). Removing the ability of the BOM to adapt to changes in volatility (b) or noise (c) did not achieve this goal (g, h). However, degrading the BOMs representation of uncertainty (d) was able to recapitulate the behavioural pattern of participants (i) Bars represent the mean (± SEM) of participant learning rates, with raw data points presented as circles behind each bar.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The latent-state model described by Cochran and Cisler, 2019 was fit to participant data. Panel a illustrates the behaviour of the fitted model analysed using the reinforcement learning measurement model (main paper Figure 3e–i). As can be seen the model captures the increase in learning rate in high-volatile blocks seen in participants (main paper Figure 3e), but unlike participants increases its learning rate when noise is high. Panel b illustrates the analysis of participant choice data, using model-defined labels of high/low volatility/noise (cf main paper Figure 4d–f). Where the degraded Bayesian observer model (BOM) rescued the normative behaviour of participants (main paper Figure 4f), the latent-state model does not.
+
+Having shown that an optimal learner adjusts its learning rate to changes in volatility and noise as expected, we next sought to understand the relative noise insensitivity of participants. In these analyses, we ‘lesion’ the BOM, to reduce its performance in some way, and then assess whether doing so recapitulates the pattern of learning rate adaptation observed for participants (Figure 3e). In other words, we damage the model so it performs less well and then assess whether this damage makes the behaviour of the BOM (shown in Figure 3f) more closely resemble that seen in participants (Figure 3e). First, we tested the impact of completely removing the ability of the BOM to adjust to changes in either volatility (Figure 3b) or noise (Figure 3c) by removing the top nodes of the model (i.e. $kmu$ or $vs$ respectively). Removing these nodes forces the BOM to estimate the mean volatility or noise across all task blocks rather than estimating local periods where they are higher or lower (see Animation 1). As illustrated in Figure 3g–h, neither of these lesions recapitulates the pattern of learning rates observed in participants, with the volatility lesioned model attributing increased volatility to noise and thus decreasing its learning rate during periods of higher volatility (main effect of volatility; F(1,696)=11.9, p<0.001) and the SD-lesioned model treating any form of uncertainty as volatility and thus increasing its learning rate in response to increased noise (main effect of noise; F(1,696)=227, p<0.001). This suggests that human participants are able to adapt to changes in outcome volatility and noise to some degree, but are less sensitive to these changes than the intact BOM.
+
+![Animation 1.](https://cdn.elifesciences.org/articles/103734/elife-103734-animation1-v1.gif.jpg)
+
+**Animation 1.:** Lower right panel: Synthetic data with periods of high (trial number: 0-60; 120-180; 240-360) and low (trial number: 60-120; 180-240) volatility and high (trial number: 180-240) and low (trial number: 1-180; 240-360) noise was provided to the Bayesian Observer Models. The models trial-by-trial estimate of volatility and noise is illustrated by marginalising over all but the vmu and SD dimensions of the joint probability distribution (see description of the Bayesian Observer Model in the methods). This produces a two-dimensional probability density of the model’s estimate of volatility (y-axes) and noise (x-axes). The current data being fed to the model is illustrated by the solid line moving through the data. Top left panel: The estimated uncertainty of the full (unlesioned) model. The model adapts to different periods of high and low volatility reasonably well (e.g. see the period around trial 180 when the data moves from high volatility/low noise to high noise/low volatility). The fully lesioned models are provided for comparison (see methods section for a description of these models). Top right panel: The noise blind model (vSD has been removed) cannot account for changes in noise and so any change in either volatility or noise is captured as a change in volatility. Lower left panel: The volatility blind model (kmu has been removed) cannot account for changes in volatility and so any change in either volatility or noise is captured as a change in noise.
 
 We next assessed whether a relative degrading of the model’s representation of volatility and noise (Figure 3d) altered its behaviour in a manner similar to participants. This was achieved by independently coarsening the model’s representation of volatility and noise, with the degree of coarsening selected to make the model’s choices as similar as possible to those of a given participant. Details of this coarsening process are provided in the methods section, but in simple terms, at one extreme, the intact model’s beliefs about current volatility and noise are represented as probability distributions over many possible values, with the number of values used gradually reduced during coarsening, until the coarsest model treats each form of uncertainty as being either ‘high’ or ‘low.’ As can be seen from Figure 3i, this relative degrading of the model’s representation of uncertainty more closely recapitulated the learning rates observed in participants, with a significant increase in learning rate in response to increased volatility (F(1,696)=59, p<0.001) and no effect of noise (F(1,696)=2.3, p=0.13). In total, the BOM fitted to participant choices had five parameters (i.e. volatility and SD acuity for rewards and losses and a single inverse temperature term). This was compared with two reinforcement learning models: the measurement model described previously, which was fitted to individual blocks and, therefore, had many more parameters (18 in total; learning rates for wins and losses for each block, one inverse temperature term per block), and a simple version of the same model which was fitted across all blocks and had three parameters in total (win and loss LR and one inverse temperature parameter). Model comparison between the BOM and the RW models based on BIC scores favoured the BOM (mean (SD) for BOM; 235 (54), for complex RL measurement model; 281 (57), for simple RL model; 246 (58)).
 
 In the next sections, we characterise how coarsening the BOM changes its behaviour and assess whether it provides an accurate account of participants’ noise insensitivity.
 
-## The degraded BOM misattributes noise as volatility
+### The degraded BOM misattributes noise as volatility
 
 The BOM was degraded by reducing the number of bins it used to represent volatility and/or noise, until its behaviour most closely matched that of participants. This process led to a greater coarsening of the noise than the volatility dimension (Figure 4a; F(1,69)=49, p<0.001), with no effect of outcome valence (F(1,69)=0.73, p=0.4), suggesting that the degraded model maintained a generally less precise representation of noise than volatility. In order to investigate the impact of this coarsening on the model’s beliefs, we used the degraded BOM’s estimates of volatility and noise to categorise task trials as either high or low volatility/noise (i.e. trials in which the model’s estimates of these variables were higher/lower than the mean) and compared these to the same trial labels generated by the intact BOM. Consistent with the greater degradation of the noise dimension, coarsening the model caused it to miscategorise more trials which the intact BOM had labelled as having high than low noise (Figure 4b; F(1,69)=30.7, p<0.01) with no effect of volatility (F(1,69)=1.9, p=0.17) or outcome valence (F(1,69)=0.004, p=0.95). As illustrated in Figure 4c, when the degraded BOM miscategorised high noise trials, it tended to label them as having high, rather than low, volatility. Overall, these results indicate that coarsening the BOM caused it, relative to the intact BOM, to misattribute high noise trials as high volatility trials.
 
-## The degraded BOM rescues optimal behaviour
+![Figure 4.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig4-v1.jpg)
+
+**Figure 4.:** The process of degrading the BOM involved reducing the number of bins used to represent the volatility and noise dimensions independently until the choice of the model matched that of participants. Panel (a) illustrates the number of bins selected by this process for the volatility and noise dimensions (averaged across win and loss outcomes). As can be seen, the degraded BOM maintained a less precise representation of noise than volatility. In order to understand the behaviour of the degraded model, the model’s estimated $vmu_{i}$ and $SD_{i}$ were used to label individual trials as high/low volatility and noise (NB greater than or less than the mean value of the estimates). These trial labels were compared with the same labels from the intact model, which were used as an ideal comparator (panels b and c). Panel b illustrates the proportion of trials in which the labels of the two models agreed, arranged by the ground truth labels of the full model and averaged across win and loss outcomes. The dotted line indicates the agreement expected by chance. The degraded model trial labels differed from those of the full model particularly for high noise trials, with no impact of trial volatility. Panel c provides more details on how the degraded model misattributes trials. In this figure, the labels assigned by the full model are arranged along the x-axis. The colour of each square represents the proportion of trials with a specific full model label that received the indicated label of the degraded model (arranged along the y-axis). The diagonal squares illustrate agreement between models as reported in panel (b). As highlighted by the red outlines, trials which the full model labelled as having high noise were generally mislabelled by the degraded model as having high volatility. Reanalysis of participant choices using the trial labels provided by the full (panel e) and degraded (panel f) models indicates that participants adapt their learning rates in a normative fashion when the degraded model trial labels are used (panel f), but not when the full model labels are used (panel e). Panel (d) illustrates the same analysis using the original task block labels for comparison. Bars represent the mean (± SEM) of participant learning rates, with raw data points presented as circles behind each bar. See Figure 4—figure supplement 1 for a comparison of the behaviour of the degraded BOM with an alternative fitted model.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Panel a illustrates the behaviour of participants in the task (as reported in main text Figure 2). Panel b illustrates the behaviour of the degraded volatility/noise model (as reported in main text Figure 3) and panel d illustrates that participants are behaving normatively if we assume that they are using a similar estimate of volatility and noise as the degraded volatility/noise model (as reported in main text Figure 4). Panel c illustrates that the mu model does not recapitulate participant behaviour and panel e shows that, assuming participants use similar estimates of volatility/noise as the mu model does not rescue normative behaviour.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Example high and low noise schedules used (panel a, blue line low noise schedule, red line high noise schedule). Volatility is generated by jumps in the mean of the generative process that occur with a probability of 0.1 on each trial, after at least three trials have passed since the last jump. Noise is added by drawing samples from a Gaussian distribution centred on this mean, using an SD of either 10 (high SD) or 5 (low SD). As can be seen, changes in the magnitude of the outcome produced by volatility are substantially larger than those caused by noise. The performance of the degraded BOM on this task was estimated by passing generated schedules from this task to the BOM (using the noise/volatility bins estimated for participants in the current study, 20 schedules were used per participant). Estimating learning rate from the task for a specific individual and schedule (panel b). Unlike the task reported in the current paper, the outcome of the Nassar et al. paper was continuous (the subsequent value was predicted). This allows the effective learning rate used in high and low SD blocks to be estimated as the slope of the line linking trialwise belief update (i.e. change in prediction of the model) and prediction error. The degraded model uses a higher learning rate when noise is low than when it is high in the Nassar task (panel c). The estimated learning rates for high and low SD blocks illustrated for all participants and all schedules. As can be seen, and as reported by Nassar et al., the degraded model uses a higher learning rate when SD is small (t(69)=3.6, p=0.0006). The degree to which the degraded BOM increased its learning rate in low relative to high SD blocks was significantly associated with the precision with which it represented noise (panel d).
+
+### The degraded BOM rescues optimal behaviour
 
 The process of fitting the degraded BOM to participant behaviour can be understood as searching for a configuration of the model (akin to a grid-based maximum likelihood estimation) in which participant choice conforms to the normative response to volatility and noise coded in the model’s structure. In other words, participants’ learning rates should increase when the degraded BOM’s estimate of volatility is high and, critically, when it estimates that noise is low. We demonstrate this by reanalysing participant behaviour, using the trial labels of the degraded BOM to indicate periods of low/high volatility and noise in place of the task block labels used in the original analysis. In effect, this approach allows us to test whether participants make internally consistent errors during learning, i.e., reducing their learning rates for outcomes that they thought — instead of the actual task structure — were associated with high volatility and/or low noise. As can be seen (Figure 4f), participants significantly increased their learning rate when the degraded BOM estimated volatility to be high (F(1,566)=86, p<0.001) and noise to be low (F(1,566)=81, p<0.001). In control analyses, this normative response to uncertainty was not seen when the labels from the intact rather than the degraded BOM were used (Figure 4e), or when the BOM’s representation of outcome mean was degraded, rather than its estimates of volatility and noise (supplementary materials).
 
-## Assuming human participants use the degraded BOM’s estimates of volatility and noise also rescues normative pupillary response
+### Assuming human participants use the degraded BOM’s estimates of volatility and noise also rescues normative pupillary response
 
 If the degraded BOM is a fair representation of how participants are performing the learning task, then we would expect it to be better able to explain physiological markers of uncertainty estimation than the simple task block structure or the intact BOM. Specifically, participants’ pupils should be larger when the degraded BOM thinks that volatility is high and when it thinks noise is low. We first show (Figure 5a–c) that participants’ pupils do not adapt normatively to the task block structure, with no main effect of block volatility (F(1,1723)=0.002, p=0.9) and an increase of pupil size in response to higher noise (F(1,1723)=13.8 p<0.001). In contrast, analysis using the trial labels derived from the degraded model (Figure 5d–f) recovered the expected increase in pupil size in response to both raised volatility (F(1,2067)=105, p<0.001) and reduced noise (F(1,2067)=42.3, p<0.001) suggesting that the model provides a reasonable measure of participants’ estimates of these parameters. Finally, we tested whether the degraded BOM was able to explain more variance in the pupil data than the intact BOM. In order to do this, we first regressed participants’ pupil data against the estimated volatility and noise of the intact BOM, as well as a range of other task- related factors (Figure 5g; see methods for more details of analysis). Having removed the variance accounted for by these factors, we then regressed the residuals of this first level analysis against the degraded model’s estimates of volatility and noise. This second level analysis (Figure 5h–i) indicated that the degraded model was able to account for variance associated with outcome noise that was not explained by the full model (F(1,286)=4.1, p=0.04), but did not explain additional variance associated with outcome volatility (F(1,286)=0.1, p=0.75). In summary, assuming that participants used the degraded BOM’s estimates of outcome volatility and noise rescued the normative pattern of physiological adaptation during the task.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig5-v1.jpg)
+
+**Figure 5.:** Z-scored pupil area from 2 s before to 6 s after win (panel a) and loss (panel b) outcomes, split by task block. Lines illustrate average size, with shaded area illustrating SEM. Panel c Pupil size averaged across whole outcome period and both win and loss outcomes. Pupil size did not systematically vary by task block. Panels (d-f) as above but using the trial labels derived from the degraded model. Pupil size was significantly larger for trials labelled as having high vs. low volatility and low vs. high noise. Panel (g) displays the mean (SEM) effect of volatility and noise as estimated by the full BOM derived from a regression analysis of pupil data. The residuals from this analysis were then regressed against the estimated volatility and noise from the degraded model. A time course of the regression weights from this analysis is shown in panel h, with the mean coefficients across the whole period shown in panel i. The degraded model’s estimated noise accounted for a significant amount of variance not captured by the full model (pink line in h is below 0, the mean effect across the period is represented by dashed lines and arrows in panel i). See Figure 5—figure supplement 1 for comparison of the degraded BOM with an alternative fitted model.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103734/elife-103734-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** As reported in main Figure 5, the intact BOM explains variance in pupil signal attributable to both volatility and noise (panel a), with the degraded BOM explaining additional variance over and above this, attributable to noise (panels b and d). In contrast, the mu model does not explain additional variance over and above the full model (panels c and e).
 
 ## Discussion
 
@@ -88,19 +173,19 @@ In conclusion, human learners adapt rationally to estimates of the volatility an
 
 ## Methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Participants
+#### Participants
 
 70 English-speaking participants aged between 18 and 65 were recruited from the general public using print and online advertisements. A previous study (Pulcu and Browning, 2017) on behavioural response to changes in volatility reported an effect size of d=0.7. As the effect size of a noise manipulation was not clear, we recruited a sample size sufficient to detect an effect size of half this value (d=0.35) with 80% power. Participants were excluded from the study if they had any psychological or neurological disorders or were currently on psychotropic medication. No exclusion criteria related to task performance were used.
 
-## Method details
+### Method details
 
-## General procedure
+#### General procedure
 
 Participants attended a single study visit during which they completed the learning task. The study was approved by the University of Oxford Central Research Ethics Committee (R49753/RE001). All participants provided written informed consent to take part in the study, in accordance with the Declaration of Helsinki.
 
-## Behavioural paradigm
+#### Behavioural paradigm
 
 The reinforcement learning (RL) task consisted of six blocks, each comprising 60 trials. In each trial, participants were presented with two abstract shapes taken from the Agathodaimon font (i.e. shape A and shape B). Two different shapes were used in each block, with rest sessions between blocks. The shapes were presented randomly on either side of the screen. Participants were explicitly instructed that this randomised location did not influence the outcome magnitudes. Participants attempted to accumulate as much money as possible by learning the likely magnitude of the wins and losses associated with each shape and using this information to guide their choice. On each trial, participants chose one of two shapes, with their choice highlighted by a black frame (see Figure 1a). Following the choice, the win and loss amounts associated with the chosen shape were presented, in randomised order, for a jittered period (2–6 s, mean: 4 s) inside two empty bars, above and below the fixation cross. The win amount was shown as a green area in the upper bar, and the loss amount was represented as a red area in the lower bar. The total length of each bar represented £1 (i.e. of wins or losses) and thus the amount associated with the chosen shape was the proportion of the bar filled by the green/red areas (e.g. three quarters of the upper bar being green, would mean that the chosen option was associated with a win of 75 p). Participants were informed that the unshaded area of each bar was the amount associated with the unchosen option. Thus, on each trial, participants knew how much they had won/lost and how much they would have won/lost if they had chosen the other option. This feature simplified the task; rather than having to separately estimate the wins and losses associated with each shape, participants only had to estimate these values for one shape (with the other shape being £1 minus this value). For each trial, participants received the difference between the win and loss amounts associated with their choice. A running total amount of money was displayed in the centre of the screen, under the bars, and was updated at the beginning of the subsequent trial with the recent winnings. Participants were informed that the task would be split into six blocks, that they had to learn which was the best option to choose, and that this option may change over time. They were not informed about the different forms of uncertainty we were investigating or of the underlying structure of the task (that uncertainty varied between blocks).
 
@@ -108,43 +193,95 @@ The wins and the losses associated with each shape followed independent outcome 
 
 Pupillometry data was collected for 36 of the 70 participants. During the collection of pupillary data, the task was presented on a VGA monitor connected to a laptop computer running Presentation software version 18.3 (Neurobehavioural Systems). An identical behavioural version of the task, presented using Psychtoolbox 3.0 on MATLAB (MathWorks Inc), was used to collect behavioural data from the remaining 34 participants. In the pupillometry version, participants’ heads were stabilised using a head-and-chin rest placed 70 cm from the screen on which the eye tracking system was mounted (Eyelink 1000 Plus; SR Research). The eye tracking device was configured to record the coordinates of both of the eyes and the pupil area at a rate of 500 Hz. The task stimuli were drawn on either side of a fixation cross which marked the middle of the screen and were offset by 7° visual angle. The testing session lasted approximately 70 min per participant.
 
-## Analysis of choice data
+### Analysis of choice data
 
-## Non-model-based measure of the influence of outcomes
+#### Non-model-based measure of the influence of outcomes
 
-The manipulation of uncertainty in the reinforcement learning task is expected to alter the degree to which participants’ choices are influenced by the outcomes they experience. A simple, if somewhat crude, measure of this influence can be calculated as the proportion of trials in a block in which participants select the choice prompted by the win or loss outcomes on the previous trial. Generally, win outcomes of >50 p and loss outcomes of <50 p associated with a shape will prompt selection of the same shape on the next trial, whereas other outcomes will prompt selection of the alternative shape. The overall effect of win outcomes on choice can, therefore, be estimated as:P(choice==A | previous win outcome for A>50p)−P(choice==A |previous win outcome for A<50p)\begin{document}$$\displaystyle  P_{\left (choice==A\ |\ previous\ win\ outcome\ for\ A\gt 50p\right)}-P_{\left (choice==A\ |previous\ win\ outcome\ for\ A\lt 50p\right)}$$\end{document}
+The manipulation of uncertainty in the reinforcement learning task is expected to alter the degree to which participants’ choices are influenced by the outcomes they experience. A simple, if somewhat crude, measure of this influence can be calculated as the proportion of trials in a block in which participants select the choice prompted by the win or loss outcomes on the previous trial. Generally, win outcomes of >50 p and loss outcomes of <50 p associated with a shape will prompt selection of the same shape on the next trial, whereas other outcomes will prompt selection of the alternative shape. The overall effect of win outcomes on choice can, therefore, be estimated as:
 
-That is, the probability of choosing shape A, given that, on the previous trial, a win of >50 p was associated with shape A – the probability of choosing Shape A, given that, on the previous trial a win of <50 p was associated with Shape A. Similarly, the effect of loss outcomes is estimated as:P(choice==A | previous loss outcome for A<50p)−P(choice==A |previous loss outcome for A>50p)\begin{document}$$\displaystyle  P_{\left (choice==A\ |\ previous\ loss\ outcome\ for\ A\lt 50p\right)}-P_{\left (choice==A\ |previous\ loss\ outcome\ for\ A\gt 50p\right)}$$\end{document}
+$$
+P_{(choice==A | previous win outcome for A>50p)}−P_{(choice==A |previous win outcome for A<50p)}
+$$
+
+That is, the probability of choosing shape A, given that, on the previous trial, a win of >50 p was associated with shape A – the probability of choosing Shape A, given that, on the previous trial a win of <50 p was associated with Shape A. Similarly, the effect of loss outcomes is estimated as:
+
+$$
+P_{(choice==A | previous loss outcome for A<50p)}−P_{(choice==A |previous loss outcome for A>50p)}
+$$
 
 However, choice is also influenced by the magnitude of the outcome; a win of 90 p will have a greater effect on subsequent choice than a win of 55 p. Blocks with high levels of either volatility or noise have more extreme magnitudes than blocks with low levels of both (Figure 1b) which will bias any comparison of this metric between blocks. In order to limit the effect of this bias, we estimated the simple choice metric only for trials in which the previous outcome lay in the range of magnitudes common to all four blocks, 35–65.
 
-## Reinforcement learning model
+#### Reinforcement learning model
 
-While the choice metric described above provides a relatively transparent measure of the influence of task outcomes on choice, it does not account for differences in outcome magnitude making it liable to bias. We, therefore fitted a simple reinforcement learning model to measure block-wise learning rates, which provide a more principled estimate of the degree to which choices are influenced by outcomes. The model combines a learning phase in which the magnitude of wins and losses associated with a shape are estimated (note that it is not necessary to learn the magnitudes associated with the other shape, as these are simply 1- those described below)Qwin_a(t+1)=Qwin_a(t)+αwin(win(t)−Qwin_a(t))\begin{document}$$\displaystyle  Qwin\_ a_{\left (t+1\right)}=Qwin\_ a_{\left (t\right)}+\alpha _{win}\left (win_{\left (t\right)}-Q_{win\_ a\left (t\right)}\right)$$\end{document}Qloss_a(t+1)=Qloss_a(t)+αloss(loss(t)−Qloss_a(t))\begin{document}$$\displaystyle  Qloss\_ a_{\left (t+1\right)}=Qloss\_ a_{\left (t\right)}+\alpha _{loss}\left (loss_{\left (t\right)}-Q_{loss\_ a\left (t\right)}\right)$$\end{document}
+While the choice metric described above provides a relatively transparent measure of the influence of task outcomes on choice, it does not account for differences in outcome magnitude making it liable to bias. We, therefore fitted a simple reinforcement learning model to measure block-wise learning rates, which provide a more principled estimate of the degree to which choices are influenced by outcomes. The model combines a learning phase in which the magnitude of wins and losses associated with a shape are estimated (note that it is not necessary to learn the magnitudes associated with the other shape, as these are simply 1- those described below)
 
-In these equations,Qwin_a(t)\begin{document}$Qwin\mathrm{\_} a_{\left (t\right)}$\end{document} and Qloss_a(t)\begin{document}$Qloss\mathrm{\_} a_{\left (t\right)}$\end{document} are the estimated win and loss magnitudes associated with Shape A on trial t, win(t)\begin{document}$win_{\left (t\right)}$\end{document} and loss(t)\begin{document}$loss_{\left (t\right)}$\end{document} are the observed win and loss outcome magnitudes and αwin\begin{document}$\alpha _{win}$\end{document} and αloss\begin{document}$\alpha _{loss}$\end{document} are the win and loss learning rates. These values are then combined in a decision phase such that:Pchoice_a(t)=11+e−β(Qwin_a(t)−Qloss_a(t))\begin{document}$$\displaystyle  Pchoice\_ a_{\left (t\right)}=\frac{1}{1+e^{-\beta \left (Q_{win\_ a\left (t\right)}-Q_{loss\_ a\left (t\right)}\right)}}$$\end{document}
+$$
+Qwin_a_{(t+1)}=Qwin_a_{(t)}+\alpha_{win}(win_{(t)}−Q_{win_a(t)})
+$$
 
-where Pchoice_a(t)\begin{document}$Pchoice\mathrm{\_} a_{\left (t\right)}$\end{document} is the probability that Shape A will be chosen on trial t and β\begin{document}$\beta $\end{document} is a single inverse decision temperature. This model was initiated with Qwin_a(0)\begin{document}$Qwin\mathrm{\_} a_{\left (0\right)}$\end{document} = Qloss_a(0)\begin{document}$Qloss\mathrm{\_} a_{\left (0\right)}$\end{document}=0.5 and the three free parameters (win(t)\begin{document}$win_{\left (t\right)}$\end{document},loss(t)\begin{document}$loss_{\left (t\right)}$\end{document}, and β\begin{document}$\beta $\end{document}) were estimated for each block and each participant by calculating the joint posterior probability given participant choice, marginalising each parameter, and deriving the parameters’ expected values (Behrens et al., 2007; Browning et al., 2015). See supplementary materials for model selection data.
+
+
+$$
+Qloss_a_{(t+1)}=Qloss_a_{(t)}+\alpha_{loss}(loss_{(t)}−Q_{loss_a(t)})
+$$
+
+In these equations,$Qwin_a_{(t)}$ and $Qloss_a_{(t)}$ are the estimated win and loss magnitudes associated with Shape A on trial t, $win_{(t)}$ and $loss_{(t)}$ are the observed win and loss outcome magnitudes and $\alpha_{win}$ and $\alpha_{loss}$ are the win and loss learning rates. These values are then combined in a decision phase such that:
+
+$$
+Pchoice_a_{(t)}=\frac{1}{1+e^{−\beta(Q_{win_a(t)}−Q_{loss_a(t)})}}
+$$
+
+where $Pchoice_a_{(t)}$ is the probability that Shape A will be chosen on trial t and $\beta$ is a single inverse decision temperature. This model was initiated with $Qwin_a_{(0)}$ = $Qloss_a_{(0)}$=0.5 and the three free parameters ($win_{(t)}$,$loss_{(t)}$, and $\beta$) were estimated for each block and each participant by calculating the joint posterior probability given participant choice, marginalising each parameter, and deriving the parameters’ expected values (Behrens et al., 2007; Browning et al., 2015). See supplementary materials for model selection data.
 
 Some analyses reported in the paper (i.e. where trials are labelled as high/low volatility and high/low noise by the Bayesian Observer Model rather than by task block) cannot be modelled using this block-wise approach (as different types of trials are interleaved throughout the task, rather than blocked). In these analyses, a similar single model was fit across all trials in the task. This model had eight different learning rates (separate win and loss learning rates, for each combination of high/low volatility and high/low noise labelled trials) and a single inverse temperature parameter. Although this model is somewhat less flexible than the blockwise modelling approach (i.e. it has 8, rather than 10 learning rates, and 1 rather than 5 inverse temperatures), it produces the same pattern of results when applied to participant choices split by task block (all estimated learning rates correlate at r>0.8, Figure 2c–d show results from blockwise fitting, Figure 3e from the simpler model). This simpler model was fit using stan, with 5000 burn in and 5000 estimation trials, with posterior convergence visually checked and rhat values of less than 1.1 accepted.
 
 Note that neither of these models describe how participants adjust to different levels of volatility and noise, they simply estimate the learning rates used in each block/type of trial, which are expected to vary in response to differences in levels of uncertainty (in contrast, the Bayesian Observer Model described below does estimate uncertainty and adjust to levels of uncertainty).
 
-## Bayesian observer model
+#### Bayesian observer model
 
 A recursive, grid-based BOM was developed, similar to that described by Behrens and colleagues (Behrens et al., 2007; Pulcu et al., 2022). The BOM is based on a generative process (see Figure 3), and described fully in Pulcu et al., 2022. Below, we summarise the key aspects of the model.
 
-The BOM assumes that the observed outcomes at a given time point t\begin{document}$t$\end{document}, yt\begin{document}$y_{t}$\end{document}, are generated from a Gaussian distribution with an unknown mean, μt\begin{document}$\mu _{t}$\end{document}, and standard deviation, eSDt\begin{document}$e^{SD_{t}}$\end{document}, with the later producing noise in the observed outcomes (Figure 1b–c).yt∼N(μt,eSDt)\begin{document}$$\displaystyle  y_{t}\sim N\left (\mu _{t},e^{SD_{t}}\right)$$\end{document}
+The BOM assumes that the observed outcomes at a given time point $t$, $y_{t}$, are generated from a Gaussian distribution with an unknown mean, $\mu_{t}$, and standard deviation, $e^{SD_{t}}$, with the later producing noise in the observed outcomes (Figure 1b–c).
 
-As illustrated in Figure 1b–c, the mean of this distribution may change between time points, leading to volatility in the task environment, with this change described by a second level Gaussian distribution, centered on the current mean and with a standard deviation of evmut\begin{document}$e^{vmu_{t}}$\end{document}. The mean of the generative Gaussian distribution in the following trial is drawn from:P(μt+1)∼N(μt,evmut)\begin{document}$$\displaystyle  P\left (\mu _{t+1}\right)\sim N\left (\mu _{t},e^{vmu_{t}}\right)$$\end{document}
+$$
+y_{t}∼N(\mu_{t},e^{SD_{t}})
+$$
 
-Both the noise (SDt\begin{document}$SD_{t}$\end{document}) and volatility (vmut\begin{document}$vmu_{t}$\end{document}) parameters can also change between time points with their change governed by Gaussian distributions centered on their current value with standard deviations of evSD\begin{document}$e^{vSD}$\end{document} and ekmu\begin{document}$e^{kmu}$\end{document}, respectively. These higher-level parameters allow the model to account for periods in which noise and volatility are high and other periods in which they are low (for example, as caused by the uncertainty changes between task blocks).P(vmut+1)∼N(vmut, ekmu)\begin{document}$$\displaystyle  P\left (vmu_{t+1}\right)\sim N\left (vmu_{t},\ e^{kmu}\right)$$\end{document}P(SDt+1)∼N(SDt,evSD)\begin{document}$$\displaystyle  P\left(SD_{t+1}\right)\sim N\left (SD_{t},e^{vSD}\right)$$\end{document}
+As illustrated in Figure 1b–c, the mean of this distribution may change between time points, leading to volatility in the task environment, with this change described by a second level Gaussian distribution, centered on the current mean and with a standard deviation of $e^{vmu_{t}}$. The mean of the generative Gaussian distribution in the following trial is drawn from:
 
-The BOM estimates the joint posterior probability of the five causal parameters, given the choice outcome it has observed. The joint probability distribution at time point t\begin{document}$t$\end{document} is defined as:P(jointt)=P(mu,vmu,kmu,SD,vSD| yt−1,yt−2, …,y1)\begin{document}$$\displaystyle  P\left (joint_{t}\right)=P\left (mu,vmu,kmu,SD,vSD|\ y_{t-1},y_{t-2},\ \ldots ,y_{1}\right)$$\end{document}
+$$
+P(\mu_{t+1})∼N(\mu_{t},e^{vmu_{t}})
+$$
 
-This joint probability distribution can be thought of as the BOM’s belief about the values of each parameter in the generative model. A Markovian assumption (i.e. that nodes of the model are sufficient to describe the generative process) simplifies this process and illustrates the recursive update performed by the BOM:P(jointt)=P(mut,vmut,kmut,SDt,vSDt | jointt−1, yt−1)\begin{document}$$\displaystyle  P\left (joint_{t}\right)=P\left (mu_{t},vmu_{t},kmu_{t},SD_{t},vSD_{t}\mathrm{\ }|\mathrm{\ }joint_{t-1},\mathrm{\ }y_{t-1}\right)$$\end{document}
+Both the noise ($SD_{t}$) and volatility ($vmu_{t}$) parameters can also change between time points with their change governed by Gaussian distributions centered on their current value with standard deviations of $e^{vSD}$ and $e^{kmu}$, respectively. These higher-level parameters allow the model to account for periods in which noise and volatility are high and other periods in which they are low (for example, as caused by the uncertainty changes between task blocks).
 
-We initialized the joint posterior, before observation of any task outcomes as a uniform distribution. The BOM performs the update, first using Bayes’ rule to incorporate the effect of the most recently observed outcome, and then accounts for the drifting parameters by using the conditional probability of the new value of the drifting parameter, given the initial value and drift rate (See; Pulcu et al., 2022 for a detailed account of this updating process):(jointt | jointt−1,yt−1)=∭p(jointt−1 | yt−1)p(SDt | SDt−1,vSD)p(vmut | vmut−1,kmu)…p(mut | mut−1,vmut), dSDt−1, dvmut−1, dmut−1\begin{document}$$\displaystyle   \left (joint_{t}\ |\ joint_{t-1},y_{t-1}\right)= &  \iiint p\left (joint_{t-1}\ |\ y_{t-1}\right)p\left (SD_{t}\ |\ SD_{t-1},vSD\right)p\left (vmu_{t}\ |\ vmu_{t-1},kmu\right)\ldots \\ &  p\left (mu_{t}\ |\ mu_{t-1},vmu_{t}\right),\ dSD_{t-1},\ dvmu_{t-1},\ dmu_{t-1}$$\end{document}
+$$
+P(vmu_{t+1})∼N(vmu_{t}, e^{kmu})
+$$
+
+
+
+$$
+P(SD_{t+1})∼N(SD_{t},e^{vSD})
+$$
+
+The BOM estimates the joint posterior probability of the five causal parameters, given the choice outcome it has observed. The joint probability distribution at time point $t$ is defined as:
+
+$$
+P(joint_{t})=P(mu,vmu,kmu,SD,vSD| y_{t−1},y_{t−2}, …,y_{1})
+$$
+
+This joint probability distribution can be thought of as the BOM’s belief about the values of each parameter in the generative model. A Markovian assumption (i.e. that nodes of the model are sufficient to describe the generative process) simplifies this process and illustrates the recursive update performed by the BOM:
+
+$$
+P(joint_{t})=P(mu_{t},vmu_{t},kmu_{t},SD_{t},vSD_{t} | joint_{t−1}, y_{t−1})
+$$
+
+We initialized the joint posterior, before observation of any task outcomes as a uniform distribution. The BOM performs the update, first using Bayes’ rule to incorporate the effect of the most recently observed outcome, and then accounts for the drifting parameters by using the conditional probability of the new value of the drifting parameter, given the initial value and drift rate (See; Pulcu et al., 2022 for a detailed account of this updating process):
+
+$$
+(joint_{t} | joint_{t−1},y_{t−1})=∭p(joint_{t−1} | y_{t−1})p(SD_{t} | SD_{t−1},vSD)p(vmu_{t} | vmu_{t−1},kmu)…p(mu_{t} | mu_{t−1},vmu_{t}), dSD_{t−1}, dvmu_{t−1}, dmu_{t−1}
+$$
 
 The value of each node is derived at every time point by marginalizing over all but the relevant dimension of the joint probability distribution and calculating the expected value of that dimension.
 
@@ -152,29 +289,33 @@ During the task, the shapes presented to participants change between each task b
 
 The BOM was provided with the win and loss outcomes (as values between 0 and 1) for each trial, across all trials in the task (excluding the first practice block, although including this did not alter the pattern of results). It treated the two outcomes as independent (i.e. the win outcome did not influence estimates for the loss outcome and vice versa) and transformed the outcomes to the infinite real line using the logistic transform before estimating the posterior probability (Pulcu et al., 2022).
 
-## Lesioning the Bayesian observer model
+#### Lesioning the Bayesian observer model
 
 A number of different lesions were applied to the BOM. First, its ability to estimate changes in either volatility or noise was removed. This was achieved simply by removing the kmu or vSD nodes from the BOM (reducing the dimensionality of the joint distribution by one in each case). The effect of this is to force the BOM to estimate the mean volatility and noise (respectively) across the whole task, rather than to modify its estimates of these parameters between trials.
 
 The second approach induced a graded, rather than absolute, lesion. This was achieved by reducing the precision with which the BOM represented the volatility-related nodes (vmu and kmu) and/or the noise- related nodes (SD and vSD). More specifically, the BOM’s estimates of the values of each of the five nodes are encoded on a five-dimensional grid, with each dimension on the grid representing the possible range of values of a particular node, from low to high, using a fixed number of points. The probability ascribed by the model to a specific point on this dimension is the relative probability that the value of the node lies within the bin of values that is closer to the point, than to adjacent points. For example, say the value of volatility (vmu) ranged from 0 to 10 and was represented by 10 bins. In this case, volatility would be represented by a probability mass function over the 10 bins (<0.5, 0.5–1.5, 1.5–2.5, …,>9.5). Lesioning occurred by independently varying the number of bins used in the volatility-related and/or noise-related dimensions, from a maximum of 20, to a minimum of 2 (i.e. with only two bins, volatility/noise would be represented as simply ‘high’ or ‘low’). The degree of lesioning selected for each individual participant was determined as the number of bins for the volatility and noise dimensions that, after passing the model estimates through a softmax action selector with a single inverse temperature parameter (i.e. as described for the RL model), maximized the likelihood that the model would make the same choices as the participant, across all task blocks. This process of lesioning, therefore, progressively coarsens the BOM’s representation of the two types of uncertainty and selects the degree of coarsening that results in choices as similar as possible to participants (see supplementary materials for an alternative model that coarsens the representation of the mean values).
 
-## Alternative measurement model
+#### Alternative measurement model
 
-A reinforcement learning model with separate learning rates for win and loss outcomes and a single beta term was used to estimate the learning rates employed by participants and the BOMs in the paper. An alternative, slightly more complex version of this model, uses separate learning rates and separate beta terms for the two outcomes. This model estimates Q values in a similar manner, but uses the following approach during action selection:Pchoice_a(t)=11+e−(βwin∗(Qwina(t)−0.5)−βloss∗(Qlossa(t)−0.5))\begin{document}$$\displaystyle  Pchoice\_ a_{\left (t\right)}=\frac{1}{1+e^{-\left (\beta _{win}*\left (Q_{win_{a\left (t\right)}}-0.5\right)-\beta _{loss}*\left (Q_{loss_{a\left (t\right)}}-0.5\right)\right)}}$$\end{document}
+A reinforcement learning model with separate learning rates for win and loss outcomes and a single beta term was used to estimate the learning rates employed by participants and the BOMs in the paper. An alternative, slightly more complex version of this model, uses separate learning rates and separate beta terms for the two outcomes. This model estimates Q values in a similar manner, but uses the following approach during action selection:
+
+$$
+Pchoice_a_{(t)}=\frac{1}{1+e^{−(\beta_{win}∗(Q_{win_{a(t)}}−0.5)−\beta_{loss}∗(Q_{loss_{a(t)}}−0.5))}}
+$$
 
 As can be seen, two separate beta terms are used to separately weight the win and loss Q values when selecting an action.
 
 This more complex model provided a poorer fit to participant choice data (mean AIC/BIC: 40.9/41.9) compared to the simpler model with a single beta term (mean AIC/BIC: 39.6/40.4). Furthermore, as illustrated in Figure 2—figure supplement 1, the learning rates recovered from the more complex model show the same pattern of effects when analysing participant behaviour as those demonstrated by the simpler model (main effect of volatility: F(1,696)=47.4, p<0.001, main effect of noise: F(1,696)=0.37, p=0.54, interaction between volatility and noise F(1,693)=5.24, p=0.02). In summary, the simpler model provides a better fit to choice data and provides similar estimates of participant learning rates than the more complex model, therefore, the simpler model was used in the paper.
 
-## Generate-recover performance of the measurement model
+#### Generate-recover performance of the measurement model
 
 The ability of the measurement model to recover the three parameters it encodes (win learning rate, loss learning rate and inverse temperature) was assessed by generating synthetic choices across a range of learning rates (0.01–0.99) and inverse temperatures (1-36; NB the mean recovered beta value was 18) from a single task block and then comparing the recovered values to those used to generate the choices. These results are summarised in Figure 2—figure supplement 2 . As can be seen, all model parameters are recovered well unless the inverse temperature parameter was very low (i.e. when the choice is made relatively randomly).
 
-## Effect of uncertainty manipulation on inverse temperature
+#### Effect of uncertainty manipulation on inverse temperature
 
 The effects of uncertainty on estimated learning rates are reported in the Results section. Here, we describe the effects of the uncertainty manipulation on estimated inverse temperature (the beta parameter from the estimation model). This analysis was run as for the learning rate analysis: log- transformed beta parameters were entered into a linear mixed model with fixed factors of win volatility, win noise, loss volatility and loss noise, and random intercepts for subjects. The estimated choice inverse temperature was lower when the noise of either outcome was higher (win: F(1,345)=25.3, p<0.001; loss: F(1,345)=55.7, p<0.001) and was not affected by outcome volatility (p>0.05). Including inverse temperature as a covariate in the analysis of participant learning rates did not influence the reported pattern of results.
 
-## Analysis of a control, fitted Bayesian observer model
+#### Analysis of a control, fitted Bayesian observer model
 
 The degraded BOM was fit to participant choice, with the number of bins used to represent volatility and noise selected to maximise the degree to which model choice matched participant choice. We report that (a) the degraded model adjusts its learning rate in response to changes in uncertainty in a similar manner to participants, (b) that if we label trials as being high/low volatility/noise based on the internal estimates of the degraded model we are able to recover both a normative pattern of behaviour and pupil response from participant data. We use these results to argue that the degraded model provides useful information about how participants estimate and adjust to changes in uncertainty.
 
@@ -186,26 +327,79 @@ Next, we assessed the performance of the mu model on the analysis of the pupillo
 
 Overall, the ability of the degraded model in the main paper to account for participant choice behaviour and changes in pupil size are not replicated when the fitting process influences a non-uncertainty related node (mu).
 
-## Does the degraded BOM replicate the effect of noise reported in Nassar et al., 2012?
+#### Does the degraded BOM replicate the effect of noise reported in Nassar et al., 2012?
 
 In the main text, we suggest that Nassar et al., 2012 observed an increase in learning rate during low relative to high noise trials because in their schedule, noise produced a significantly smaller effect on outcomes than volatility (Figure 4—figure supplement 2). If this is the case, then we might expect the degraded BOM used in the current study to also show the appropriate learning rate adaptation to changes in noise, if presented with the schedules used in Nassar. Figure 4—figure supplement 2 illustrates the results of this analysis, which indicated that the degraded BOM did indeed show an increase in learning rate in low relative to high SD blocks (t(69)=3.6, p=0.0006). Consistent with the effects reported in the main paper we found that the number of bins used by the degraded model to represent noise was positively associated with the degree to which the model adapted it learning rate in the expected direction (controlling for the bins used to represent volatility), rparitalparital = 4.1, p<0.001, while the number of bins used to represent volatility was not significant, rparitalparital = −0.04, p=0.16.
 
-## Performance of an alternative, latent state model
+#### Performance of an alternative, latent state model
 
 An alternative approach to the estimation of volatility and noise is provided by latent state models (Cochran and Cisler, 2019). We assessed the degree to which the online general latent-state model described by Cochran and Cisler, 2019 was able to account for participant behaviour. Specifically, we assessed (a) the degree to which it captured participant choice, parameterised as blockwise learning rate in the task (see Figure 3, main text) and (b) whether internal model estimates of volatility and noise from the latent-state model were able to rescue normative behaviour, as described for the Bayesian Observer Model in the main paper (main paper Figure 4f). The latent state model assumes that observations are generated from one of a series of latent states. The model estimates expected uncertainty, qualitatively similar to noise, at each time point as the expected value of the square of the prediction error. It also estimates unexpected uncertainty, which is similar to volatility, as a function of the likelihood ratio between a one-state model and its current prediction. When this likelihood ratio exceeds a threshold (i.e. the unexpected uncertainty is judged to be high), the model creates an additional latent state. The model is described in detail in Cochran and Cisler, 2019. 11 model parameters were allowed to vary when fitting the model to participant choice (Table 2):
+
+**Table 2.**
+ Summary of free parameters in latent state model (see Cochran and Cisler, 2019 for detailed description).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Separate for win and loss outcomes</th>
+      <th>Number of parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alpha0</td>
+      <td>Learning rate for the association</td>
+      <td>yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Alpha1</td>
+      <td>Learning rate for variance</td>
+      <td>yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Alpha2</td>
+      <td>Learning rate for covariance</td>
+      <td>yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Gamma</td>
+      <td>Transition probability between states</td>
+      <td>yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Eta</td>
+      <td>Threshold for creating new state</td>
+      <td>yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Beta</td>
+      <td>Inverse choice temperature</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 The model’s value estimates were reset at the start of each task block, with the number of latent states at the start of each block being set to 1. The number of active latent states was used as an estimate of volatility, the log of the model’s expected value for the square of the prediction error was used as an estimate of noise. Model-derived trial labels (i.e. high/low volatility and noise) were calculated as for the analyses in Figure 4 of the main paper-- those trials with values above/below the mean value for that participant.
 
 Figure 3—figure supplement 1 illustrates the estimated learning rates of the latent-state model in the task blocks. As can be seen, it replicates the increased learning rate in high volatility blocks demonstrated by participants (F(1,696)=9.98, p=0.001), however, unlike participants, it significantly increases its learning rate in response to noise (F(1,696)=100, p<0.001). Using the labels for high/low volatility and noise derived from the latent-state model (Figure 3—figure supplement 1) does not rescue normative behaviour in participants. Participants employ a higher learning rate in trials the model considers to have low relative to high volatility (F(1,556)=7, p=0.008), with no effect of noise (F(1,556)=3.1, p=0.08). These results suggest that, while the current latent-state model is able to capture some aspects of participant behaviour, the internal model estimates of unexpected and expected uncertainty (as markers of volatility and noise, respectively) do not explain the response to uncertainty accounted for by the Bayesian Observer Model. It should be noted that, while the latent state model was constructed to respond to levels of uncertainty (Cochran and Cisler, 2019) the formulation of these, and particularly of unexpected uncertainty is somewhat different to that used in the BOM (e.g. the estimate of unexpected uncertainty is a measure of the degree to which existing latent states are unable to account for experienced outcomes, and it can only increase across a block). It, therefore, remains possible that alternative latent state formulations would be more sensitive to the behaviour examined here.
 
-## Performance of a simple RL model
+#### Performance of a simple RL model
 
 A final possibility considered is that some of the behaviour of the fitted BOM might be captured by a radically simpler model that does not represent levels of uncertainty. To assess this, we fitted the simple reinforcement learning model to all of a participant’s choices across all task blocks (i.e. as compared to the measurement RL model used in the main paper which was fit to individual blocks). We then estimated the effective learning rate per block using choices derived from this model and the same analysis pipeline as the main paper. As can be seen in Figure 2—figure supplement 3, this very simple model does not replicate the learning adaptation apparent in participant behaviour.
 
-## Pupilometry data preprocessing
+### Pupilometry data preprocessing
 
 Pupilometry data were collected using the Eyelink II system (SRresearch) from both eyes, sampled at 500 Hz. Preprocessing involved the following steps: Eye blinks were identified using the built-in filter of the Eyelink system and were removed from the data. A linear interpolation was implemented for all missing data points (including blinks). The resulting trace was subjected to a low pass Butterworth filter (cut-off of 3.75 Hz), z-transformed across the session (Browning et al., 2015; Nassar et al., 2012), and then averaged across the two eyes. The pupil response to the win and the loss outcomes were extracted separately from each trial, using a time window based on the presentation of the outcomes. This included a 2 s pre-outcome period, and a 6 s period following outcome presentation. Individual trials were excluded from the pupilometry analysis if more than 50% of the data from the outcome period had been interpolated (mean = 6.7% of trials) (Browning et al., 2015). The first five trials from each block were not used in the analysis as initial pupil adaptation can occur in response to luminance changes in this period (Browning et al., 2015; Nassar et al., 2012). The preprocessing resulted in two sets of timeseries per participant, one set containing pupil size data for each included trial when the win outcomes were displayed and the other when the loss outcomes were displayed. These pupil area data were binned into 1 s bins across the outcome period for analysis (NB Figure 5a–f). This analysis was supplemented by an individual regression approach (Figure 5g–i) in which individual participants’ pupil area timeseries was first regressed against estimated trialwise volatility and noise from the intact BOM (Figure 5g), as well as a number of control variables (constant term, amount won/lost on trial (i.e. magnitude of outcome), valence of outcome (win or loss), order in which outcomes were presented (win first/loss first), trial number (1:360), whether shape chosen switched on next trial or not (1:0)). The residuals from this regression were then regressed against estimated trial-wise volatility and noise from the degraded BOM (Figure 5h and i). These regression analyses resulted in timeseries of beta-weights that were analysed in the same manner as raw pupil size data.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Behavioural data were analysed using linear mixed effect models (fitlme function of Matlab (2022a)) with participant ID included as a random factor and volatility, noise, and valence added as fixed factors. Two-way interactions between fixed effects were also tested (main effects are reported from models without interaction terms). Addition of random slopes for any of the fixed factors decreased LME model fit statistics and so were not included (Matuschek et al., 2017). Analysis of timeseries pupillometry data included the additional fixed effect factor of time across the outcome period. Learning rates were transformed to the infinite real line using a logistic transform before analyses (untransformed data are displayed in figures for ease of interpretation). The normality of the distribution of the residuals of the LME analyses was checked both visually and with a one-sample Kolmogorov-Smirnov test. Changes in the classification of trials between the full and degraded BOM (Figure 4b) were analysed using a repeated measures ANOVA with within-subject factors of volatility, noise, and valence. Raw data are superimposed on all summary figures.

@@ -39,37 +39,200 @@ We do not currently know what the structure of KBP is, nor understand the mechan
 
 ## Results
 
-## KBP is a TPR-containing, right-handed α-solenoid
+### KBP is a TPR-containing, right-handed α-solenoid
 
 The 3D structure of the ~72 kDa KBP at 4.6 Å resolution (Figure 1 and Figure 1—figure supplement 1a and b) was determined using cryo-EM data collected using a Volta phase plate (VPP), and an atomic model was calculated (see Materials and methods Table 1). Our structure revealed that KBP is a right-handed α-solenoid protein (Figure 1a and b and Figure 1—figure supplement 1c–e). Nine pairs of anti-parallel α-helices (αHP1 [α-helical pair 1] to αHP9) are broken by a single ‘linker α-helix’ (LαH) and ‘linker loop’ (LL) in the centre of the fold separating KBP into N-terminal and C-terminal subdomains (Figure 1, Figure 1—figure supplement 1c–e, and Figure 1—figure supplement 2). The four predicted TPR motifs contribute exclusively to α-helical pairs in the N-terminal subdomain (Figure 1a,d, and e).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig1-v2.jpg)
+
+**Figure 1.:** (a) Model of KBP (ribbon representation) displayed in experimental cryo-electron microscopy density. The N-terminal (olive) and C-terminal (gold) subdomains are separated by a linker region (black). Semi-transparent density is coloured regionally as per the fitted model. The N- and C-termini are shown, with a dotted line representing the disordered C-terminus (not modelled). The linker loop (LL) region was not modelled but its density is shown in semi-transparent black. (b) The same as panel a, but rotated 180° around the axis indicated. (c) The same view as in panel a, but with the density removed and α-helices displayed as pipes with their directionality indicated by arrows. The nine antiparallel α-helical pairs (αHP1–αHP9) are each coloured separately and labelled, as is the linker α-helix (LαH) and LL (dotted line). (d) Ribbon representation of KBP showing the four TPR motifs and the LαH coloured according to the labels. View related to panel c, by a 90° rotation around the indicated axis. (e) Schematic of the KBP showing the position of the TPR motifs between residue 95 and 283 of the N-terminal subdomain and position of the linker region (LαH and LL) between residues 305 and 392.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Gold-standard Fourier shell correlation (FSC) curves between independent masked, unmasked, phase-randomised, and corrected half-maps (Chen et al., 2013) of KBP as calculated by RELION v3.1 (Zivanov et al., 2018) (4.6 Å resolution at the ‘gold-standard’ 0.143 FSC cutoff). (b) Density and fitted model for TPR3 of KBP, showing exemplar bulky side chain density that guided modelling. (c) Same view as Figure 1c (upper panel), or rotated 90° around the indicated axis (lower panel), showing only α-helices (semi-transparent white tubes) with their terminal residues coloured, illustrating the edges and faces (concave and convex) of the α-solenoid respectively. (d) Same view as panel c, but now with loops shown and coloured (semi-transparent tube helices have their directionality represented by arrows). Each loop or terminus label has a superscript number indicating their length. (e) Same as panel d, rotated 180° around the indicated axis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The human KBP sequence (numbering above), with residues coloured by intra-species sequence identity as indicated in the key. The following species were included in the Clustal Omega multiple sequence alignment (Sievers et al., 2011); Homo sapiens, Mus musculus Gallus gallus, Xenopus tropicalis, Alligator mississippiensis, Danio rerio, Drosophila melanogaster, Amphimedon queenslandica, Stylophora pistillata, Trichoplax adhaerens, Spizellomyces punctatus, and Salpingoeca rosetta. Above the sequence, secondary structure elements are indicated, coloured to delineate the nine α-helical pairs and connecting loops. Mutation sites are indicated within each boxed sequence region, labelled to coordinate with Figure 5. Within these boxes, the mutated sequence is shown below the original wild-type sequence.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** View of KBP’s LL, using the same KBP model subdomain colouring and representation as in Figure 1a and b. Only density for the LL is shown and a rough path for the LL is indicated with a solid black line. KBP α-helices contacting the LL region are labelled.
+
+**Table 1.**
+ Cryo-electron microscopy reconstruction information and model refinement statistics and model geometry.Data collection, processing, and model refinement information for the kinesin-binding protein (KBP), KBP–KIF15_MD6S, and KIF15_MD6S–MT datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>KBP (EMDB: EMD-11338, PDB: 6ZPG)</th>
+      <th>KBP–KIF15_MD6S (EMDB: EMD-11339, PDB: 6ZPH)</th>
+      <th>KIF15_MD6S–MT (EMDB: EMD-11340, PDB: 6ZPI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)*</td>
+      <td>1.055, 1.043, or 1.047</td>
+      <td>1.047</td>
+      <td>1.39</td>
+    </tr>
+    <tr>
+      <td>Number of micrographs (collected, final)*</td>
+      <td>9360, 7547</td>
+      <td>6497, 5138</td>
+      <td>214,202</td>
+    </tr>
+    <tr>
+      <td>Final particle number</td>
+      <td>258,049 (81,628 of which on graphene oxide)</td>
+      <td>7513</td>
+      <td>12,674</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å) FSC threshold†</td>
+      <td>4.6 Independent half-map FSC 0.143</td>
+      <td>6.9 Independent half-map FSC 0.143</td>
+      <td>4.5 Independent half-map FSC 0.143</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement resolution (Å) CC_mask‡</td>
+      <td>4.6 0.64</td>
+      <td>6.9 0.74</td>
+      <td>6 0.60</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>−200</td>
+      <td>−495</td>
+      <td>−134</td>
+    </tr>
+    <tr>
+      <td>Model composition Nonhydrogen atoms Protein residues Ligands</td>
+      <td>3808 610 0</td>
+      <td>6232 948 1</td>
+      <td>9420 1185 4</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations§ Bond lengths (Å) Bond angles (°)</td>
+      <td>0.01 0.96</td>
+      <td>0.01 1.07</td>
+      <td>0.08 0.17</td>
+    </tr>
+    <tr>
+      <td>Validation# MolProbity score Clashscore Poor rotamers (%)</td>
+      <td>1.66 5.25 0.5%</td>
+      <td>1.84 7.31 0.9%</td>
+      <td>1.95 13.25 0.1%</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot# Favoured (%) Allowed (%) Outliers (%)</td>
+      <td>94.38 5.62 0</td>
+      <td>93.13 6.87 0</td>
+      <td>95.38 4.62 0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Inclusive of all data collection sessions.†The resolution value at the gold-standard Fourier Shell Correlation (FSC) 0.143 criterion between independently refined half-maps.‡Cross-correlation provided by Phenix real-space refine (Afonine et al., 2018).§Root-mean-square deviations of bond lengths or angles in the model.#As defined by the MolProbity validation server (Chen et al., 2010)._
+
 The supercoiling α-helical pairs form concave and convex faces linked by short and long loops that constitute the two edges of the α-solenoid (Figure 1—figure supplement 1c–e and Figure 1—figure supplement 2). In contrast to the shorter loops, the longer loops (more than seven residues) tend to be partially disordered, show low sequence homology between KBP orthologues in different species, and are mainly found in the N-terminal subdomain (e.g. L2, L6, and L10; Figure 1—figure supplement 1d and e and Figure 1—figure supplement 2). The LL is the longest (62 residues) and is thus unique in the KBP structure because it is reasonably conserved and mainly ordered, with visible corresponding density clearly bridging the N- and C-terminal subdomains (Figure 1a and b, Figure 1—figure supplement 1d and e, Figure 1—figure supplement 2, and Figure 1—figure supplement 3). Despite this clear ordered density, this loop was not modelled due to low homology to available structures and a lack of consensus in secondary structure prediction (see Materials and methods). In spite of this lack of consensus, density in this region suggests that part of this loop may form further α-helical structures. Other TPR-containing α-solenoid proteins form important regulatory interactions in numerous contexts, and the structure we describe is indicative of similar properties for KBP.
 
-## KBP conformationally adapts to bind KIF15’s motor domain using both subdomains
+### KBP conformationally adapts to bind KIF15’s motor domain using both subdomains
 
 To elucidate the mechanism of kinesin inhibition by KBP, we determined the structure of KBP in complex with the human KIF15 (kinesin-12) motor domain (KIF15_MD, 1–375). This construct, which has six of its eight cysteine residues mutated to serine (C5S, C50S, C162S, C294S, C314S, and C346S) and two additional cysteines were inserted (S250C and G375C), has comparable steady-state ATPase activity to previously published reports (Klejnot et al., 2014; Figure 2—figure supplement 1a) and we refer to it as KIF15_MD6S. The overall resolution of this KBP–KIF15_MD6S complex was 6.9 Å, with KBP and KIF15_MD6S determined to similar local resolutions (Figure 2—figure supplement 1b and c). We built a model of the complex via flexible fitting using our KBP model and the KIF15_MD crystal structure (Figure 2a and b, Table 1 and see Materials and methods). The complex is arranged such that KIF15_MD6S sits in the concave face of the KBP α-solenoid, analogous to a baseball enclosed in a baseball glove. The kinesin MD is positioned centrally between the N- and C-terminal subdomains and contacts the KBP concave face and loops at the α-solenoid edges.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig2-v2.jpg)
+
+**Figure 2.:** (a) Model of the KBP–KIF15_MD6S complex (ribbon representation) displayed in experimental cryo-electron microscopy density. The N-terminal (olive) and C-terminal (gold) subdomains and the linker helix (black) are shown in KBP, while kinesin is coloured in magenta. Semi-transparent density is coloured regionally as per the fitted model and additional density for the linker loop is shown in semi-transparent black. (b) The same as panel a, but rotated 180° around the axis indicated. (c) The KBP-alone model (light grey ribbons) was superimposed on the KBP–KIF15_MD6S model (opaque ribbons) using Chimera’s matchmaker (Pettersen et al., 2004). Colouring and view as in panel b. (d) RMSD in Å for KBP comparing KBP–KIF15_MD6S and superimposed KBP-alone models as in panel c, shown on KBP from the KBP–KIF15_MD6S model. Parts of the KBP model coloured black are disordered/missing in the KBP alone model. The KIF15_MD6S is shown in transparent magenta.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) KIF15_MD6S MT-activated steady-state ATPase velocity plotted as a function of [MT]. Data were fit to a Michaelis–Menten kinetic (pink curve) yielding values for kcat = 2.9 ± 0.5 s−1 and K0.5,MT = 4.8 ± 1.4 μM; R2 = 0.97, which are very similar to previously published values for KIF15_MD of kcat = 2.1 s−1 and K0.5,MT = 3.1 μM (Klejnot et al., 2014). (b) Gold-standard Fourier shell correlation (FSC) curves between independent masked, unmasked, phase-randomised, and corrected half-maps (Chen et al., 2013) of the KBP–KIF15_MD6S complex as calculated by RELION v3.0 (Zivanov et al., 2018). The resolution at the ‘gold-standard’ 0.143 FSC cutoff is 6.9 Å. (c) Local resolution as calculated by RELION v3.0, shown on the same view as in Figure 2a with coloured density corresponding to the local resolutions indicated in the key. (d) Selected RELION v3.0 (Zivanov et al., 2018) 2D classes of KBP–KIF15_MD6S (left) and KIF1A_MD–KBP (four to the right). Densities for the kinesin motor domain and KBP are pseudo-coloured pale magenta and pale orange respectively. Classes have been in-plane rotated such that KBP is seen from roughly the same orientation. Note poor resolution and a variable relative position in the KIF1A_MD. (d) A representative subset of KBP–KIF15_MD6S complex 2D classes, showing multiple orientations.
+
 When the structure of KBP-alone is superimposed onto KBP in the KBP–KIF15_MD6S complex, it is clear that KBP undergoes a conformational change in the presence of its kinesin motor domain-binding partner, with the largest differences resulting from an unfurling motion of its N-terminal subdomain (Figure 2c and d and Video 1). The KBP-alone model is incompatible with KIF15_MD6S binding, due to clashes with L14 in the C-terminal subdomain and αHP3a, αHP4a, and L8 in the N-terminal subdomain. The conformational changes in KBP upon KIF15_MD6S binding relieve these clashes in the complex (Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/61481/elife-61481-video1.mp4.jpg)
+
+**Video 1.:** The KBP-alone model was superimposed on the KBP–KIF15_MD6S model using UCSF Chimera’s matchmaker (Pettersen et al., 2004). A conformational morph movie was then generated in Chimera between the KBP-alone and KIF15 motor domain bound states, with KIF15_MD6S shown throughout to illustrate the relief of clashes. The N-terminal and C-terminal subdomains are coloured in olive and gold respectively, as in Figure 2a and b, while KIF15_MD6S is shown in pale magenta. Distances between identified clashing atoms when KBP-alone is superimposed onto the KBP–KIF15_MD6S model are indicated by red linking lines and KBP clashing residues and side chains shown in cyan. Atoms that were clashing remain coloured while the red lines gradually disappear as the clashes are relieved by the conformational change. Clashes were calculated in Chimera using default criteria.
 
 To establish whether the KBP–KIF15_MD6S mode of interaction applied to other kinesins, we also collected data of the complex formed by KBP with the motor domain of the human kinesin-3 KIF1A (KIF1A_MD). Two-dimensional classification of these images revealed a number of classes with an extra-density corresponding to the size of a kinesin motor domain bound to the concave face of KBP, consistent with what was observed in the KBP–KIF15_MD6S dataset (Figure 2—figure supplement 1c). However, in contrast to the KBP–KIF15_MD6S sample, these KBP–KIF1A_MD 2D classes provided only limited views of the complex (Figure 2—figure supplement 1c and d), such that a reliable 3D structure could not be calculated. Intriguingly, in addition, the extra kinesin density in the 2D classes appeared to have a somewhat flexible position relative to KBP. However, these data did allow us to confirm that indeed KIF1A_MD also interacts with KBP on its concave face in the same way as KIF15_MD6S and suggests a common mechanism of kinesin inhibition by KBP.
 
-## KIF15_MD6S binds KBP via rearrangement of its tubulin-binding subdomain
+### KIF15_MD6S binds KBP via rearrangement of its tubulin-binding subdomain
 
 We examined the effect of KBP binding on the conformation of KIF15_MD6S. Kinesin motor domains can be structurally divided into three distinct subdomains (Shang et al., 2014; Gigant et al., 2013) which undergo coordinated conformational changes during the MT-based kinesin ATPase cycle. MT binding stabilises the tubulin-binding subdomain of the MD while the P-loop and Switch 1/2 subdomains – which contain the conserved nucleotide-coordinating P-loop and Switch 1 and 2 motifs – move relative to each other in response to the nucleotide state of the MD (Shang et al., 2014; Gigant et al., 2013; Atherton et al., 2014). We determined the structure of the MT-bound, AMPPNP state of KIF15_MD6S, which shows that this MD adopts a canonical conformation (Figure 3—figure supplement 1). Comparison of this conformation with an ADP-bound Kif15_MD crystal structure (PDB: 4BN2 Klejnot et al., 2014) illustrates the scale of these MT- and nucleotide-dependent subdomain rearrangements in KIF15, which are similar to those seen in other kinesins MDs (Shang et al., 2014; Atherton et al., 2014; Atherton et al., 2017; Figure 3—figure supplement 1d and e and Figure 3c and d).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig3-v2.jpg)
+
+**Figure 3.:** (a) The crystallographic model of the KIF15_MD alone (PDB: 4BN2 Klejnot et al., 2014) was superimposed on the KIF15 region of the KBP–KIF15_MD6S complex, with the KIF15 part of the KBP–KIF15_MD6S complex model hidden. The KIF15_MD6S Switch 1/2 subdomain (Switch 1/2 subdomain) is coloured sienna, and the P-loop subdomain (Kin-PLsd) is coloured light pink. The TBsd of the KIF15_MD crystallographic model is shown as pale magenta to illustrate poor fit into density. The KBP subdomains are coloured as labelled. Black arrows indicate unaccounted-for cryo-electron microscopy (cryo-EM) density. Individual secondary structure elements in the tubulin-binding subdomain are labelled. The cryo-EM density for the KBP–KIF15_MD6S complex is shown in mesh and is coloured by proximity (≤3.5 Å) to the fitted model. (b) Same as in panel a, but the whole fitted KBP–KIF15_MD6S complex model is shown. The KIF15_MD6S tubulin-binding subdomain (TBsd) is now coloured magenta to indicate good fit into density. (c) Zoomed view of just the TBsd (corresponding to the boxed region in Figure 3—figure supplement 2d), showing just the KIF15_MD-alone crystallographic model. (d) The TBsd in the KIF15_MD6S-MT model, same view as in panel c. The MT is shown in light grey surface representation. (e) The TBsd in the KBP–KIF15_MD6S model, same view as in panel c. KBP is shown in light grey surface representation and the ~15 Å displacement of helix α4 is indicated by the dashed grey arrow.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Gold-standard Fourier shell correlation (FSC) curves between independent masked, unmasked, phase-randomised, and corrected half-maps (Chen et al., 2013) of the KIF15_MD6S-MT complex as calculated by RELION v3.0 (Zivanov et al., 2018). The resolution at the ‘gold-standard’ 0.143 FSC cutoff is 4.5 Å. (b) Local resolution as calculated by RELION v3.0, with coloured density corresponding to the local resolutions indicated in the key. (c) The KIF15_MD6S-MT asymmetric unit model in corresponding density. The KIF15_MD6S is coloured by subdomain, bound Mg2+-AMPPNP coloured lilac, and α- and β-tubulin are coloured light and dark grey respectively, along with their corresponding cryo-electron microscopy (cryo-EM) densities. The same view as in panel b. (d) A view of the KIF15_MD6S-MT asymmetric unit showing a docked conformation of the neck-linker (KNL). Model and density colouring as in panel c. (e) The tubulin-binding subdomain of KIF15_MD alone from the crystal structure (PDB code:4BN2 Klejnot et al., 2014). (f) KIF15_MD6S complexed with MTs with only the tubulin-binding subdomain and α- and β-tubulin shown, along with the tubulin-binding subdomain cryo-EM density (semi-transparent). Kα4 of KIF15_MD6S is extended relative to the crystal structure and KL12 adopts a new conformation on α-tubulin, as indicated by the green dashed lines. Panels d and e show the KIF15_MD6S tubulin-binding subdomain from the same viewpoint.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) The KIF15_MD alone crystal structure (PDB code:4BN2 Klejnot et al., 2014) is shown coloured by kinesin subdomain (as in Figure 3), fitted into the KBP–KIF15_MD6S complex cryo-electron microscopy map, with only density shown for the Mg2+-ADP as mesh. Density for Mg2+-ADP is found in the expected position between nucleotide-binding elements KL9, KL11, Kα2a, and the P-loop. (b) As in Figure 3a, but with a clipped viewpoint zoomed on the TBsd (in pale magenta to illustrate poor fit). Black arrows indicate unaccounted-for density. (c) As in Figure 3b, with the clipped viewpoint as in panel b of this figure (TBsd now opaque to illustrate good density fit). (d) The KBP–KIF15_MD6S model is shown as opaque ribbons, with kinesin subdomain colouring as in panels a and b and as labelled. KBP is shown as a transparent light grey surface representation. The boxed region indicates that shown in Figure 3c–e. (e) RMSD in Å corresponding to the KIF15_MD6S overlay in panel d, shown on the model of KIF15_MD6S in complex with KBP (grey transparent surface). Parts of the model coloured black are disordered/missing in the KIF15_MD alone crystal structure.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a–d) Comparison of (a) kinesin-binding protein (KBP)-KIF15_MD6S complex with other TPR-containing α-solenoids shown in blue, and binding peptide motifs shown in magenta or pink for helical and random coil regions respectively; (b) the PINS–INSC complex (Culurgioni et al., 2011), (c) the CDC16–CDC26 complex (Wang et al., 2009), and (d) the PscE/PscG–PscF complex (Quinaud et al., 2007).
 
 The structure of the KBP–KIF15_MD6S complex revealed that KBP binds the kinesin motor domain via the tubulin-binding subdomain (Figure 3). While the P-loop and Switch 1/2 subdomains of the KIF15_MD crystal structure and associated Mg2+-ADP generally fitted well into density of the KBP–KIF15_MD6S complex, a large portion of the tubulin-binding subdomain did not (Figure 3a and Figure 3—figure supplement 2a and b). In particular, there is a striking lack of density in the expected position for helix α4 (Figure 3a and Figure 3—figure supplement 2b). Instead, there was a strong density of length and width consistent with helix α4 displaced by ~15 Å into the concave face of KBP, which we modelled as such (Figure 3b and e, Figure 2, and Figure 3—figure supplement 2b–e). This displacement of helix α4, which lies close to the TPR-repeat region of the N-terminal subdomain of KBP, is accompanied by additional rearrangements of the flanking L11 and L12 in KIF15_MD6S (labelled KL11 and KL12; Figure 3c–e and Figure 3—figure supplement 2b–e). A number of other TPR-containing α-solenoids are known to bind peptide motifs with α-helical content within their concave faces (Culurgioni et al., 2011; Wang et al., 2009; Quinaud et al., 2007; Figure 3—figure supplement 3), and our structure shows that KBP binds helix α4 of KIF15_MD6S in a similar way.
 
 The KBP-bound conformation of the KIF15_MD6S tubulin-binding subdomain is also radically different from its MT-bound conformation (Figure 3d and e). The tubulin-binding subdomain forms the majority of the MT-binding surface in the KIF15_MD6S-MT complex (Figure 3d and Figure 3—figure supplement 1) such that KBP and MTs cannot simultaneously bind KIF15_MD6S due to extensive steric overlap (Figure 3d and e). In summary, KBP sequesters and blocks the MT-interacting surface of kinesin motor domains via a mechanism that involves significant conformational change within the motor domain.
 
-## KBP binds kinesin motor domains via conserved motifs in the α-solenoid edge loops and α-helices at the concave face
+### KBP binds kinesin motor domains via conserved motifs in the α-solenoid edge loops and α-helices at the concave face
 
 KBP contacts the KIF15_MD6S both via (1) loops connecting the α-solenoid edges and (2) TPR-containing α-helices at the concave face (Figure 4, Figure 4—figure supplement 1, and Video 2). At the α-solenoid edges, L1, L3, L5, and L10 in the N-terminal subdomain and L12, L14, L16, and L18 in the C-terminal subdomain are close enough to KIF15_MD6S to be involved in binding. The closest interaction of these was KBP L12 and L14, which contact both Kβ5–KL8 and KL12–Kα5–KL13 regions of the KIF15 tubulin-binding subdomain (Figure 4). KBP’s disordered L1 lies close to KIF15_MD6S’s KL9, while the shorter, ordered L3 and L5 are situated near but not contacting KL11 and Kα6 (Figure 4—figure supplement 1a and b). KBP’s C-terminal L16 and L18 are close enough to KIF15_MD6S that they may interact with the flexible KL12, N-terminus, or neck-linker. At the TPR-containing region of the concave face of KBP, αHP4a, αHP4b, and αHP5a contact the K11–Kα4–KL12 region of KIF15_MD6S (Figure 4c and d).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig4-v2.jpg)
+
+**Figure 4.:** (a) Pseudo-atomic model of the KBP–KIF15_MD6S complex (ribbon representation) displayed in cryo-electron microscopy density, using the same viewpoint as Figure 2a, but with the KIF15_MD6S now coloured by subdomain as in Figure 3. The KIF15_MD6S Switch 1/2 subdomain (Kin S1/2 sd) is coloured sienna, and the P-loop subdomain (Kin-PLsd) is coloured light pink. The KIF15_MD6S tubulin-binding subdomain (TBsd) is coloured magenta. The KBP subdomains are coloured as labelled. The nine helix pairs of KBP are labelled. Semi-transparent density is coloured regionally as per the fitted model and additional density for the linker loop is shown in semi-transparent black. (b) The same as panel a, but rotated 45° and 15° respectively around the axes indicated. (c) Zoomed view of the region indicated in panel a, with density removed and selected KIF15_MD6S and KBP secondary structure elements labelled. (d) Zoomed view of the region indicated in panel b, with density removed and selected KIF15_MD6S and KBP secondary structure elements labelled.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Colouring and representation as in Figure 4. (a) A view showing α-helical pairs αHP1, αHP2, αHP3, αHP8, and αHP9 of KBP and the KIF15_MD6S coloured by subdomain as labelled. (b) Left zoomed region in panel a, with density removed, showing KBP L1, L3, and L5 and proximal kinesin elements KL9, KL11, and Kα6. ADP is coloured in light orchid. (c) Right zoomed region in panel a, with density removed, showing KBP L16 and L18 and proximal KIF15_MD6S elements KNT (kinesin N-terminus), KNL (kinesin neck-linker), and KL12.
+
+![Video 2.](https://cdn.elifesciences.org/articles/61481/elife-61481-video2.mp4.jpg)
+
+**Video 2.:** Model of the KBP–KIF15_MD6S complex (ribbon representation) displayed in experimental cryo-electron microscopy density. The N-terminal (olive) and C-terminal (gold) subdomains and the linker region (black) are shown in KBP, while the KIF15_MD6S Switch 1/2 subdomain (Switch 1/2 subdomain) is coloured sienna, the P-loop subdomain (Kin-PLsd) is coloured light pink and the Kif15_MD tubulin-binding subdomain (TBsd) is coloured magenta. Semi-transparent density is coloured regionally as per the fitted model and additional density for the linker loop is shown in semi-transparent black.
 
 To test the functional significance of this interface, we investigated KBP–kinesin interactions in cells and examined the activities of mutant KBP constructs in which the predicted interacting amino acids within potentially kinesin-contacting loops were substituted for Ala, Gly, or Pro residues (Figure 1—figure supplement 2 and Table 2). Ala-substitutions in the TPR-containing α-helices at the KBP concave face were also introduced at particularly inter-species conserved polar residues predicted to interact with the KIF15_MD K11–Kα4–-KL12 region (Tyr-213 and Gln-216 in αHP4a, Gln-238 in αHP4b, Thr-255 and Gln-258 in αHP5a; Figure 4c and d and Figure 1—figure supplement 2). All mutant constructs exhibited roughly equivalent expression patterns that were also comparable to WT KBP (Figure 5—figure supplement 1).
 
 We first used pull-down assays. Mouse Kif15 or Kif1A constructs consisting of only the motor domain and the first coiled-coil region (Kif15_MDC or Kif1A_MDC) were fused to bioGFP and co-expressed with various HA-tagged human KBP constructs in HEK293T cells, followed by pull-down of HA–KBP by the bioGFP-KIF_MDC (Kevenaar et al., 2016; Figure 5—figure supplement 2). Although there are moderate qualitative differences in binding by the two motors, the effects of KBP mutations on motor binding – described in the following – are essentially the same. Ala-substitutions in the TPR-containing α-helices at the KBP concave face (αHP4a and αHP4b), which lie at the heart of the KBP–KIF15_MD6S structural interface, strongly reduced KBP’s interaction with both KIF15_MDC and KIF1A_MDC. αHP5a mutants had a similar but less pronounced effect (Figure 5—figure supplement 2b and c). In contrast, mutation of L1, L3, or L5 in the KBP N-terminal subdomain or L10 or L16 in the C-terminal subdomain – none of which form directly visualised interactions with KIF15_MD6S in the cryo-EM reconstruction – has no effect on KBP’s interaction with either KIF15_MDC or KIF1A_MDC (Figure 5—figure supplement 2b and c). Mutation of L12 (to some extent) and of L14 (to a greater extent) – which contact both Kβ5–KL8 and KL12–Kα5–KL13 – reduced KBP interaction with KIF15_MDC and KIF1A_MDC (Figure 5—figure supplement 2b and c). Mutation of L12 + L14 additively disrupted the KBP–motor interaction, consistent with the structural proximity of these two loops in the kinesin–KBP complex. L10 + L12 and L10 + L14 mutants also had weaker interactions with KIF15_MDC/KIF1A_MDC (Figure 5—figure supplement 2b and c), again pointing to the additive contributions of loops in the KBP C-terminal subdomain to kinesin binding. Strikingly, mutation of L18 appears to enhance the interaction between KBP and both KIF15_MDC and KIF1A_MDC, suggesting that it may somehow contribute to negative regulation of binding in the context of WT KBP.
 
 We then used a previously described inducible peroxisome translocation assay in COS-7 cells (Kevenaar et al., 2016). In this assay, dimeric mouse Kif15_MDC or Kif1A_MDC constructs with an FRB-tag (Kif15_MDC–FRB or Kif1A_MDC–FRB) are expressed together with PEX–mRFP–FKBP, a peroxisome-binding construct, along with the various KBP constructs. Addition of rapalog induces FRB–FKBP heterodimerisation and motor-driven peroxisome translocation to the cell periphery, but when the motor is inhibited by KBP, peroxisome translocation is blocked (Figure 5a–c). Kinesin-mediated translocation was measured, first by quantifying the number of cells in which peroxisome translocation is seen (Figure 5d and e), and second, by quantifying peroxisome intensities above a threshold value in the cell periphery (Figure 5f and g). Because of observed differences in peroxisome translocation within the time-frame of rapalog treatment, different peroxisome intensity threshold values and peripheral areas were used for KIF1A and KIF15; this is probably due to differences in motor properties (Figure 5—figure supplement 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig5-v2.jpg)
+
+**Figure 5.:** (a) Schematic depiction of the inducible peroxisome motility assay, with the kinesin motor domain fused to an FRB domain and PEX fused to an FKBP domain. Addition of rapalog (Rap) links FRB and FKBP and induces peroxisome translocation by kinesin dimers. Expression of KBP inhibits kinesin movement, such that addition of rapalog cannot induce peroxisome translocation. (b) Schematic representation of the inducible peroxisome motility assay in cells. Without rapalog or KBP, peroxisomes localise in the cell centre, whereas kinesin moves towards the cell periphery. Rapalog induces peroxisome translocation into the cell periphery, which is inhibited in the presence of KBP. (c) Representative images of peroxisomes in COS-7 cells expressing KIF15_MDC–FRB, PEX–mRFP–FKBP, and HA (left panels) or HA–KBP (right panels) without and with addition of rapalog. Scale bar, 10 µm. (d, e) Quantification of the percentage of cells in which peroxisome translocation is observed after rapalog treatment in cells expressing KIF15_MDC–FRB (d) or KIF1A_MDC–FRB (e), PEX–mRFP–FKBP, and HA–KBP constructs including the indicated mutants. Data are displayed as mean ± s.e.m. (n = 28–35 cells from two independent experiments). (f, g) Quantification of the area above threshold intensity in the outer 5 µm (KIF1A_MDC) or 7.5 µm (KIF15_MDC) of the cell from the total area above threshold intensity in cells expressing KIF15_MDC–FRB (f) or KIF1A_MDC–FRB (g), PEX–mRFP–FKBP, and HA–KBP constructs including the indicated mutants without and with rapalog treatment. Data are displayed as mean ± s.e.m. (n = 28–35 cells from two independent experiments).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Representative images of COS-7 cells expressing HA–KBP mutant constructs. Scale bar, 10 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Control pull-down experiment with bioGFP-EV, bioGFP-KIF1A_MDC or bioGFP-KIF15_MDC and HA–KBP showing that KBP interacts with KIF1A_MDC and KIF15_MDC, but not with bioGFP-EV. (b, c) Example of pull-down experiments showing the interaction between (b) KIF15_MDC or (c) KIF1A_MDC and mutated KBP constructs in HEK293T cell lysates. Graphs show the quantification of the intensity of the mutated HA–KBP construct in the pull-down fraction over the input fraction divided by the intensity of bioGFP_MDC in the pull-down fraction and normalised to HA–KBP. Data are displayed as mean ± s.e.m. (data from two independent experiments).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/61481/elife-61481-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a–c) Representative images of peroxisomes in COS-7 cells expressing KIF1A_MDC (a) or KIF15_MDC–FRB (b, c), PEX–mRFP–FKBP and HA (left panels) with addition of rapalog. Images were thresholded at 10,000 (a, b) or 7500 (c) and peripheral areas of 5 µm (a, b) or 7.5 µm (c) are shown. Scale bars, 10 µm.
 
 Intriguingly, while the overall trends in perturbation of KBP inhibition by mutagenesis seen in the pull-down assay are recapitulated in the translocation assay, some differences are also observed. As with the pull-down assay, Ala-substitutions in the TPR-containing α-helices αHP4a and αHP4b at the KBP concave face, as well as αHP5a, all strongly reduced KBP’s inhibition of both KIF15_MDC and KIF1A_MDC peroxisome translocation activity (Figure 5d–g). This can be seen by the extent of peroxisome translocation and in an increase of peroxisomes in the cell periphery after rapalog addition, similar to the control condition without KBP (Figure 5d–g). Also, as observed in the pull-down assay, mutation of L1, L3, or L5 had no effect on KBP’s inhibition of KIF15_MDC or KIF1A_MDC (Figure 5d–g). This reinforces the conclusion that while these elements are close enough to form contacts with the parts of the kinesin motor domain in our reconstruction, they do not contribute significantly to KBP inhibition of kinesin-mediated translocation in cells.
 
@@ -79,7 +242,7 @@ Interestingly, while all the above described regions affected KBP inhibition of 
 
 However, taken together, the translocation and pull-down assays both demonstrate the functional importance of the kinesin interaction with the TPR-containing α-helices at the KBP concave face and the set of loops in the KBP C-terminal subdomain. The translocation and pull-down assays also reveal differences in the sensitivity of the KBP–kinesin interaction to perturbation, where translocation is more readily disrupted than the interactions detected by pull-down. These differences likely reflect the greater complexity of motor regulation during active translocation and could be a function of FRB–FKBP-mediated motor dimerisation. It might also reflect the fact that cellular MTs in the translocation assay can directly compete with KBP for kinesin binding. Overall, these mutation studies support the idea that KBP interacts with different kinesin family members in a similar way via an extended interface at KBP’s concave face that is composed of TPR-containing α-helices and α-solenoid edge loops, particularly in the C-terminal subdomain.
 
-## Specific sequences in the tubulin-binding subdomain are conserved across KBP-binding kinesin family members
+### Specific sequences in the tubulin-binding subdomain are conserved across KBP-binding kinesin family members
 
 Given that KBP selectively binds and inhibits only a subset of kinesins (Kevenaar et al., 2016), we used our structural data to investigate the basis of this selectivity. Although the resolution of our reconstruction and the flexibility of some loops do not provide a detailed molecular description of the interaction interface, our structure shows that the kinesin tubulin-binding subdomain is the key KBP-interacting region. Analysis of the sequences of this region in KBP-binding and KBP-non-binding kinesins (Figure 6a) revealed patterns of sequence conservation across the entire subdomain in all KBP-binding kinesins; this included both the Kβ5–KL8 and KL11–Kα4–KL12–Kα5–KL13 regions. In contrast, the equivalent regions are more variable in kinesins that are not inhibited by KBP. The length of KL8, which joins the two Kβ5 strands, was also consistently five residues long in KBP-binding kinesins, while it was variable in KBP-non-binding kinesins. From our KBP–KIF15_MD6S structure, the sensitivity of the KBP interaction to KL8 length makes sense considering the tight fit of this loop between KBP L12 and L14 (Figure 6b). In summary, two consensus motifs in KL11–Kα4–KL12–Kα5–KL13 and Kβ5–KL8 regions of the tubulin-binding subdomain are found in KBP-binding kinesins and these are likely to form the basis of KBP’s kinesin family member selectivity. We therefore propose a model where KBP selects and inhibits target kinesins through binding and remodelling a compatible tubulin-binding subdomain, obstructing the kinesin MT-binding surface (Figure 6c).
 
@@ -103,7 +266,577 @@ The effective and selective kinesin inhibitory mechanism of KBP revealed by our 
 
 ## Materials and methods
 
-## Protein expression and purification for cryo-EM
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>KIAA1279</td>
+      <td>GenBank</td>
+      <td>HGNC:23419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>KIF1A</td>
+      <td>GenBank</td>
+      <td>MGI:108391</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>KIF15</td>
+      <td>GenBank</td>
+      <td>MGI:1098258</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>NEB</td>
+      <td>Cat. #: C2527H</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21-Gold (DE3)</td>
+      <td>Agilent</td>
+      <td>Cat. #: 230130</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta2 (DE3)</td>
+      <td>Novagen</td>
+      <td>Cat. #: 71400</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human embryonic kidney 239T (HEK293T)</td>
+      <td>ATCC</td>
+      <td>CRL-3216 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Cercopithecus aethiops kidney (COS-7)</td>
+      <td>ATCC</td>
+      <td>CRL-1651 RRID:CVCL_0224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Porcine tubulin (&gt;99% pure)</td>
+      <td>Cytoskeleton Inc</td>
+      <td>Cat. #: T240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11666606001; RRID:AB_514506</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1, Alexa488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21121, RRID:AB_2535764</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 901533; RRID:AB_2801249</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab290; RRID:AB_303395</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG antibody, IRDye 680LTconjugated (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 827–11081; RRID:AB_10795015</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG antibody, IRDye 800CWconjugated (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 827–08364; RRID:AB_10793856</td>
+      <td>WB (1:15000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KBP (plasmid)</td>
+      <td>Kevenaar et al., 2016</td>
+      <td></td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KIF1A_MD (plasmid)</td>
+      <td>Atherton et al., 2014</td>
+      <td></td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KIF15_MD (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pebioGFP (plasmid)</td>
+      <td>van der Vaart et al., 2013</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BirA coding vector (plasmid)</td>
+      <td>van der Vaart et al., 2013</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GW1–PEX3–mRFP–FKBP1 (plasmid)</td>
+      <td>Kevenaar et al., 2016</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>β-actin–Kif1A_MDC–FRB (plasmid)</td>
+      <td>Kevenaar et al., 2016</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>β-actin–Kif15_MDC–FRB (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pebioGFP-Kif1A_MDC (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pebioGFP-Kif15_MDC (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L1 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L3 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L5 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L10 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L12 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L14 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L16 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L18 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L10+L12 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L10+L14 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_L12+L14 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_αHP4a (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_αHP4b (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGW1–HA–KBP_αHP5a (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP mutants</td>
+      <td>TATTATTATGGCGCGCCAGGATCCCCGGAATTCGGCACGAGGGAGGCCGCTATGGCGAACGTTCCGTGGGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP mutants</td>
+      <td>CTCGTCGACTCCTAATCCTTAAGTCAGGGCCATCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L1_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L1</td>
+      <td>CTGCATAAAAATCCGGCAGCAGCACCAGCAGCATCCAAATACAGCGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L1_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L1</td>
+      <td>GGCGCTGTATTTGGATGCTGCTGGTGCTGCTGCCGGATTTTTATGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L3_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L3</td>
+      <td>TGAACCACATCGACGCAGGAGGACTGTCGGCGGGGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L3_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L3</td>
+      <td>TCCCCCGCCGACAGTCCTCCTGCGTCGATGTGGTTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L5_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L5</td>
+      <td>ATCTTGTGGTCTGAAGCAGGAGCAATTGAAACTGCACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L5_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L5</td>
+      <td>CTGTGCAGTTTCAATTGCTCCTGCTTCAGACCACAAGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L10_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L10</td>
+      <td>TTTGGTCAAACTGGAGCAGGAGCAGGAGCAGGAGCAGGACCAGCAGGAGCAGGAGCAGGACCAGGAGGATATCATCAAAGAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L10_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L10</td>
+      <td>TTTCTTTGATGATATCCTCCTGGTCCTGCTCCTGCTCCTGCTGGTCCTGCTCCTGCTCCTGCTCCTGCTCCAGTTTGACCAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L12_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L12</td>
+      <td>GAGTTCTTTCAGATTGGCGGCGCGGTCACTGACCATATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L12_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L12</td>
+      <td>AATATGGTCAGTGACCGCGCCGCCAATCTGAAAGAACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L14_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L14</td>
+      <td>TAGAGCCCCTAACTGTAGCAGCAGGACCAGCAGCATATCTGTTGGTCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L14_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L14</td>
+      <td>GTTGACCAACAGATATGCTGCTGGTCCTGCTGCTACAGTTAGGGGCTCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L16_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L16</td>
+      <td>TCCCTGAGAGACCCAGCAGCAGGAGCACCAGCAGGAGCAGGAGCAGGAGCAGCACGCCCTGCCATGTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L16_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L16</td>
+      <td>TAACATGGCAGGGCGTGCTGCTCCTGCTCCTGCTCCTGCTGGTGCTCCTGCTGCTGGGTCTCTCAGGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L18_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L18</td>
+      <td>ATTGTTGATTACTGTGCAGCAGGACCAGGAGCCGCCCAGGAAATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L18_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L18</td>
+      <td>TATTTCCTGGGCGGCTCCTGGTCCTGCTGCACAGTAATCAACAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_HP4a_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L HP4a</td>
+      <td>ACTCATAACCTATATGCACTAGCTGCAGTCTACCAGCATCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L HP4a _rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_ HP4a</td>
+      <td>CAGATGCTGGTAGACTGCAGCTAGTGCATATAGGTTATGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_HP4b_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L HP4b</td>
+      <td>AGTACACTAAAACGCGCACTTGAGCACAATGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_L HP4b _rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_ HP4b</td>
+      <td>GGCATTGTGCTCAAGTGCGCGTTTTAGTGTACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_HP5a_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_L HP5a</td>
+      <td>GCTATCAATGCTGCTGCGTTGTCAGCGTTTTACATCAATAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBP_ HP5a _rev</td>
+      <td>This study</td>
+      <td>PCR primer for KBP_ HP5a</td>
+      <td>CTTATTGATGTAAAACGCTGACAACGCAGCAGCATTGATAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KIF15_FRB_fwd</td>
+      <td>This study</td>
+      <td>PCR primer for KIF15–FRB</td>
+      <td>AAGCTTGCCACCATGGGCGCGCCTGCCACCATGGCTCCTGGCTGCAAATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KIF15_FRB_rev</td>
+      <td>This study</td>
+      <td>PCR primer for KIF15–FRB</td>
+      <td>AGAGGATTCTAGAAGCAGGCGCGCCAGCGTAGTCTGGGACGTCGTATGGGTAGAATTCTCCTGGTGTCAGCTGCCCAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bioGFPKIF15 _fwd</td>
+      <td>This study</td>
+      <td>PCR primer for bioGFPKIF15</td>
+      <td>AGCTCAAGCTTCGAATTGGGCGCGCCAGCCACCATGGCTCCTGGCTGCAAATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bioGFPKIF15_rev</td>
+      <td>This study</td>
+      <td>PCR primer for bioGFPKIF15</td>
+      <td>GAATTCGATATCCTGCAGGTCGACTCCAGATCCTCATCCTGGTGTCAGCTGCCCAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bioGFPKIF1A _fwd</td>
+      <td>This study</td>
+      <td>PCR primer for bioGFPKIF1A</td>
+      <td>TATTATAATGGCGCGCCAGCCACCGCCGGGGCCTCTGTGAAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bioGFPKIF1A_rev</td>
+      <td>This study</td>
+      <td>PCR primer for bioGFPKIF1A</td>
+      <td>CTCGTCGACTCCTCCTCCTCATTTGGGAGAAAACACACCCAA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek Phosphate Assay Kit</td>
+      <td>Invitrogen</td>
+      <td>E6646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AP21967</td>
+      <td>TaKaRa</td>
+      <td>Cat# 635057</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEI</td>
+      <td>PolySciences</td>
+      <td>Cat# 24765–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fugene</td>
+      <td>Promega</td>
+      <td>Cat# E2692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/; RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Zivanov et al., 2018</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CryoSparc2</td>
+      <td>Punjani et al., 2017</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CisTEM</td>
+      <td>Grant et al., 2018</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MiRP</td>
+      <td>Cook et al., 2020</td>
+      <td>n/a</td>
+      <td>Protocol implemented in RELION</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification for cryo-EM
 
 Full length human KBP residues 1–621 in a PSTCm1 expression vector (with kanamycin resistance and a N-terminal thrombin cleavable 6 × His-tag) was expressed in Rosetta2 cells (Novagen) as previously described (Kevenaar et al., 2016). Following immobilised metal-affinity chromatography with Ni-NTA resin (Qiagen), the 6 × His-tag was removed via incubation with thrombin protease overnight at 4°C. The protein was then subjected to reverse IMAC and further purified using size exclusion chromatography (SEC) into a buffer of 20 mM Tris-HCl (pH 7.4), 150 mM NaCl, 2.5 mM CaCl2, and 1 mM DTT. Protein was snap-frozen and stored in at −80°C.
 
@@ -113,11 +846,11 @@ A human KIF1A motor domain and neck linker construct (KIF1A_MD residues 1–362)
 
 KIF15_MD6S or KIF1A_MD complexes with KBP were purified via IMAC using the 6 × His-tag on the kinesin constructs. Briefly, His-tagged kinesins were incubated with a 10 times excess of KBP in 20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 1 mM MgCl2, 10 mM Imidazole, 1 mM DTT, and 0.2 mM ADP for 5 min at 4°C. Following IMAC, complexes were eluted from the Ni-NTA resin (Qiagen) by addition of 200 mM imidazole, then dialysed at 4°C for 4 hr into 20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.2 mM ADP.
 
-## Steady-state ATPase assay
+### Steady-state ATPase assay
 
 ATPase activity of KIF15_MD6S was measured in ATPase buffer (50 mM potassium acetate, 25 mM HEPES, 5 mM magnesium acetate, and 1 mM EGTA, pH 7.50) by measuring phosphate production in the presence of a minimum of a fivefold molar excess of paclitaxel-stabilised MTs, using a commercially available kit (EnzChek, Molecular Probes) at 20°C.
 
-## Sample preparation for cryo-EM
+### Sample preparation for cryo-EM
 
 KBP was prepared for cryo-EM using three different approaches. In the first approach, KBP was diluted to 0.15 mg/ml in KBP dilution buffer (20 mM Tris-HCl, pH 7.5, 150 mM NaCl, and 2 mM DTT) and 4 μl were applied to glow-discharged C-flat 2/2 holey carbon EM grids (Protochips, Morrisville, NC). For the second approach, KBP was diluted to 0.3 mg/ml in KBP dilution buffer and 4 μl were applied to glow-discharged 1.2/1.3 AuFoil gold grids (Quantifoil). For the third approach, glow-discharged C-flat 2/2 holey carbon EM grids were coated with graphene-oxide (GO) according to the protocol described by Cheng and colleagues (Cheng et al., 2020) and then 4 μl of KBP diluted to 0.02 mg/ml in KBP dilution buffer were added.
 
@@ -125,7 +858,7 @@ Kinesin motor domain–KBP complexes were diluted to 0.03 mg/ml in KBP–kinesin
 
 For preparation of the KIF15_MD6S-MT complex, porcine tubulin (>99% pure, Cytoskeleton Inc) was polymerised in MES polymerisation buffer (100 mM MES, 1 mM MgCl2, 1 mM EGTA, and 1 mM DTT, pH 6.5) with 5 mM GTP at 37°C and then stabilised with 1 mM paclitaxel. Approximately 70 μM KIF15_MD6S was pre-incubated for 5 min with 5 mM of AMPPNP in BRB80 at room temperature, and then mixed with 20 μM stabilised MTs. After a further incubation of 15 min, a 4 μl droplet was applied to a pre-glow discharged holey carbon grid (2/2 C-flat, Protochips Inc), blotted for 3.5 s, and then vitrified in liquid ethane using a Vitrobot Mark IV at ambient temperature and 80% humidity.
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 For dataset of KBP alone or KBP–KIF15_MD6S, low-dose movies were collected automatically using EPU software (Thermo Fisher, MA, USA) on a Titan Krios electron microscope (Thermo Fisher) operating at 300 kV, with a K2 summit direct electron detector (Gatan, CA, USA) and a quantum post-column energy filter (Gatan) operated in zero-loss imaging mode.
 
@@ -135,7 +868,7 @@ Datasets of KBP–kinesin complexes were collected at the ISMB, Birkbeck without
 
 The KIF15_MD6S-MT dataset was collected manually on a Tecnai Polara microscope (Thermo Fisher) at the ISMB, Birkbeck, operating at 300 kV, with a K2 summit direct electron detector (Gatan, CA, USA) and a quantum post-column energy filter (Gatan) operated in zero-loss imaging mode. A nominal defocus range of 1.0–3.5 μm and a final pixel size of 1.39 Å was used. The total dose was 32 e-/Å2 over 50 frames, with the detector operating in counting mode at a rate of 6.2 e-/pixel/s.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 Low-dose movies were motion-corrected using MotionCor2 (Zheng et al., 2017) with a patch size of 5, generating full-dose and dose-weighted sums. CTF determination was performed on full-dose sums with gCTF (Zhang, 2016) and then dose-weighted sums were used for all further processing. Data were cleaned at this stage by first excluding all micrographs with gCTF resolutions worse than 4.5 Å, as estimated with a custom cross-correlation coefficient cutoff (Python script kindly shared by Radostin Danev), then manually removing micrographs with poor appearance (ice contamination, protein aggregation, or poor GO coverage) in real or reciprocal space. For KBP alone data, micrographs with calculated phase shifts outside the expected phase shift progression at each plate position were also excluded.
 
@@ -151,7 +884,7 @@ The KIF15_MD6S-MT dataset was processed using our MT RELION-based pipeline (MiRP
 
 All displayed 3D molecular representations were made in UCSF Chimera or ChimeraX software (Pettersen et al., 2004; Goddard et al., 2018). Data collection and model refinement statistics can be found in Table 1.
 
-## Cryo-EM model building and refinement
+### Cryo-EM model building and refinement
 
 Due to low overall homology to available structures in the protein data bank (PDB), structure prediction of KBP produced poor models with little resemblance to the cryo-EM density. KBP was therefore modelled using a combination of secondary structure prediction, TPR prediction, fragment homology information, prior knowledge of right-handed alpha-solenoid proteins, and with reference to the cryo-EM density.
 
@@ -163,21 +896,92 @@ The KBP–KIF15_MD6S model was built as follows: the final KBP model described a
 
 The KIF15_MD6S–MT model was built as follows: the KIF15_MD, KIF11_MD, and KIF5B_MD-tubulin X-ray crystallographic models (PDB codes:4BN2 Klejnot et al., 2014; Gigant et al., 2013; Parke et al., 2010) were used as homology models in Modeller to build the KIF15 part of the complex. The KIF15_MD6S model and the paclitaxel–MT tubulin dimer model (Kellogg et al., 2017) were then rigid fitted into KIF15_MD6S–MT density, combined then refined in real-space with five macro-cycles in Phenix with peptide backbone restraints.
 
-## Antibodies, reagents, and expression constructs for cell biology
+### Antibodies, reagents, and expression constructs for cell biology
 
 The following antibodies were used for immunofluorescence staining: mouse anti-HA (1:500, Roche) and goat-anti-mouse Alexa 488 (1:400, Thermo Fisher Scientific). The following antibodies were used for western blot: mouse anti-HA (1:2,000, BioLegend), rabbit anti-GFP (1:10,000, Abcam), goat anti‐mouse IRDye800CW (1:15.000, LI‐COR), and goat‐anti‐rabbit IRDye680LT (1:20,000, LI‐COR). A reagent used in this study is rapalog (AP21967, TaKaRa).
 
 The following DNA expression constructs in this study have been described before: GW1–PEX3–mRFP–FKBP1, β-actin–Kif1A_MDC–FRB (Kevenaar et al., 2016) (mouse cDNA), BirA coding vector (van der Vaart et al., 2013), and pebioGFP (van der Vaart et al., 2013). pGW1–HA–KBP contained a linker (GGATCCCCGGAATTCGGCACGAGGGAGGCCGCT) between the HA tag and KBP and was cloned using PCR-based strategies with human KBP cDNA (KIAA1279, IMAGE clone 4550085) as template and ligation into the pGW1–HA backbone. A similar strategy was used to generate the mutated KBP constructs, listed in Table 2. β-actin–KIF15_MDC–FRB was cloned using a PCR-based Gibson Assembly strategy with mouse KIF15 cDNA as template into the β-actin–KIF1A_MDC–FRB backbone. PebioGFP-KIF1A_MDC and pebioGFP-KIF15_MDC were cloned into the pebioGFP backbone using PCR-based strategies with MDC–FRB constructs as templates.
 
-## Cell culture, transfection, and immunofluorescence staining
+**Table 2.**
+ Kinesin-binding protein (KBP) mutants used in this study.The original and mutated amino acid (top) and nucleotide sequences (bottom) are shown for each construct.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Original sequence</th>
+      <th>Mutated to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L1</td>
+      <td>EKEPYK gagaaggaaccatacaag</td>
+      <td>AAAPAA gcagcagcaccagcagca</td>
+    </tr>
+    <tr>
+      <td>L3</td>
+      <td>TEE acggaggag</td>
+      <td>AGG gcaggagga</td>
+    </tr>
+    <tr>
+      <td>L5</td>
+      <td>REE agagaagaa</td>
+      <td>AGA gcaggagca</td>
+    </tr>
+    <tr>
+      <td>L10</td>
+      <td>KISATEDTPEAEGEVPEL aagatctcagccacagaagacactcctgaagctgaaggagaagtgccagagctt</td>
+      <td>AGAGAGAGPAGAGAGPGG gcaggagcaggagcaggagcaggaccagcaggagcaggagcaggaccaggagga</td>
+    </tr>
+    <tr>
+      <td>L12</td>
+      <td>DGY gatggttat</td>
+      <td>GGA ggcggcgcg</td>
+    </tr>
+    <tr>
+      <td>L14</td>
+      <td>DLNPQY gacctgaatccacagtat</td>
+      <td>AAGPAA gcagcaggaccagcagca</td>
+    </tr>
+    <tr>
+      <td>L16</td>
+      <td>NKVFPEHIGEDVL aataaagtattccctgagcatataggggaagatgttctt</td>
+      <td>AAGAPAGAGAGAA gcagcaggagcaccagcaggagcaggagcaggagcagca</td>
+    </tr>
+    <tr>
+      <td>L18</td>
+      <td>EKHPE gaaaagcatcctgag</td>
+      <td>AAGPG gcagcaggaccagga</td>
+    </tr>
+    <tr>
+      <td>αHP4a</td>
+      <td>YLAQ tacctagctcaa</td>
+      <td>ALAA gcactagctgca</td>
+    </tr>
+    <tr>
+      <td>αHP4b</td>
+      <td>Q cag</td>
+      <td>A gca</td>
+    </tr>
+    <tr>
+      <td>αHP5a</td>
+      <td>TLSQ accttgtcacag</td>
+      <td>ALSA gcgttgtcagcg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture, transfection, and immunofluorescence staining
 
 COS-7 cells were purchased from ATCC and routinely checked for mycoplasma contamination using LT07-518 Mycoalert assay (Lonza). Cells were cultured in 50/50 DMEM (Lonza)/Ham's F10 (Lonza) medium supplemented with 10% FCS (Sigma) and 1% penicillin/streptomycin (Sigma). One day before transfection cells were diluted and plated on 18 mm glass coverslips. COS-7 cells were transfected using FuGENE6 (Roche) following the manufacturer’s protocol. Next day, rapalog (final concentration 1 µM) was added and cells were incubated for 3 hr. Cells were then fixed with 4% formaldehyde/4% sucrose in phosphate-buffered saline (PBS) for 10 min at room temperature, washed three times PBS-CM (PBS supplemented with 1 mM MgCl2 and 0.1 mM CaCl2), permeabilised in 0.2% TritonX-100 for 15 min, and washed one time with PBS-CM. Cells were first incubated with 0.2% gelatin for 30 min at 37°C, and then with primary antibodies, diluted in 0.2% gelatin, for 30 min at 37°C. After washing three times with PBS-CM, cells were incubated for 30 min at 37°C with secondary antibody diluted in 0.2% gelatin, washed three times in PBS-CM, and finally mounted using Fluoromount (Invitrogen).
 
-## Cell biology image analysis and quantification
+### Cell biology image analysis and quantification
 
 Fixed cells were imaged on a Carl Zeiss LSM 700 confocal laser scanning microscope running ZEN2011 software, using a Plan-Apochromat 40×/1.30 oil DIC objective and image settings were maintained the same for all images within one experiment. Images were acquired of cells that express similar levels of HA–KBP constructs based on immunostaining (Figure 5—figure supplement 1). Cells were selected on a first come first served basis. Images were processed and analysed using Fiji software (Schindelin et al., 2012). To calculate the percentage of cells in which translocation of peroxisomes was observed, imaged cells were classified as either translocating, when peroxisomes re-localised into the cell periphery, or not translocating, when peroxisomes remained in the cell centre. For quantification of PEX translocation, an ROI of the cell area was drawn and from this a second ROI at 5 (KIF1A_MDC) or 7.5 (KIF15_MDC) µm from the outer cell area was created. Images were thresholded at 7500 (KIF15_MDC) or 10,000 (KIF1A_MDC). Different peripheral areas and threshold values were defined for the two kinesins, due to observed differences in translocation properties between the kinesins (compare Figure 5—figure supplement 3a–c). For the two selected ROIs, the area with fluorescent intensity above threshold was determined in the RFP channel. From these values the percentage of cell area above threshold in the cell periphery from the total area above threshold was calculated.
 
-## Pull-down experiments and western blotting
+### Pull-down experiments and western blotting
 
 HEK293T cells were purchased from ATCC and routinely checked for mycoplasma contamination using LT07-518 Mycoalert assay (Lonza). Cells were cultured in 50/50 DMEM (Lonza)/Ham's F10 (Lonza) medium supplemented with 10% FCS (Sigma) and 1% penicillin/streptomycin (Sigma). One day before transfection cells were diluted and plated into 6-well plates. Cells were co-transfected with pCl-Neo-BirA, HA-tagged constructs, and bioGFP-tagged constructs using MaxPEI (Polysciences) in a ratio of 3/1 PEI/DNA, according to the manufacturer’s protocol. After 24 hr of expression, cells were washed in ice-cold PBS and lysed in lysis buffer (100 mM Tris-HCl pH 7.5, 150 mM NaCl, 1% Triton X-100, and protease inhibitors [Roche]) for 30 min on ice. Lysates were cleared by 30 min centrifugation at 13.2 krpm at 4°C and supernatants were incubated with blocked (incubation for 30 min at RT in 50 mM Tris-HCl pH 7.5, 150 mM KCl, and 0.2 μg/μl chicken egg albumin) Streptavidin Dynabeads M-280 (Invitrogen) for 1.5 hr at 4°C. Beads were then washed five times with washing buffer (100 mM Tris-HCl pH 7.5, 250 mM NaCl, and 0.5% Triton X‐100) and proteins were eluded from the beads by boiling for 10 min at 95°C in 2× DTT+sample buffer (20% glycerol, 4% SDS, 200 mM DTT, 100 mM Tris-HCl pH 6.8, and bromophenol blue).
 

@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04p491231 Department of Microbiology and Immunology, Pennsylvania State University Hershey United States
-2. https://ror.org/01h22ap11 Department of Pathology and Laboratory Medicine, Penn State Milton S. Hershey Medical Center Hershey United States
+1. Department of Microbiology and Immunology, Pennsylvania State University Hershey United States ([ROR:04p491231](https://ror.org/04p491231))
+2. Department of Pathology and Laboratory Medicine, Penn State Milton S. Hershey Medical Center Hershey United States ([ROR:01h22ap11](https://ror.org/01h22ap11))
 
 † Corresponding author
 
@@ -35,27 +35,67 @@ We previously identified a neutralizing mAb against MuPyV VP1 (Swimm et al., 201
 
 ## Results
 
-## T cell deficiency during persistent infection leads to outgrowth of antibody-resistant virus variants
+### T cell deficiency during persistent infection leads to outgrowth of antibody-resistant virus variants
 
 We demonstrated that Ab-escape VP1 mutations emerge after serial passage of wild type (WT) MuPyV (strain A2) in host cells in the presence of a VP1-specific neutralizing mAb (Lauver et al., 2020). To ask whether VP1 antibody-escape mutations similarly arise in vivo, we passively immunized B-cell-deficient μMT mice with this VP1-specific mAb (clone 8A7H5) to model an inability to neutralize a frequent VP1 mutation seen among the JCPyV VP1 mutations in PML patients (Ray et al., 2015). μMT mice infected subcutaneously (s.c.) via the hind footpad developed high-titer chronic viremia, which was efficiently controlled by injection of VP1 mAb starting at 4 days post-infection (dpi) and continuing weekly thereafter (Figure 1—figure supplement 1A–B). At 20 days post-infection (dpi), sera of VP1 mAb-treated μMT mice displayed similar neutralizing titers as B6 mice against WT MuPyV, but an inability to neutralize a published VP1 mutant virus with a deletion of aspartic acid at position 295, A2.Δ295. A virus carrying this mutation was previously isolated following passage of WT virus in the presence of the VP1 mAb and identified as being resistant to neutralization (Lauver et al., 2020; Figure 1—figure supplement 1C–E). At 30 dpi, no significant differences were observed in the numbers of kidney infiltrating T cells in WT and VP1-mAb-treated μMT mice (Figure 1—figure supplement 2A–B).
 
 We first investigated the effect of T cell deficiency on virus control. CD4 and/or CD8β T-cell-depleting antibodies or control rat IgG were administered to VP1 mAb-treated μMT mice beginning at 20 dpi (Figure 1A). Ten days after starting T cell depletion, CD4 and CD8 T cells were absent from the blood of depleted mice and virus levels were significantly elevated in the kidney, the dominant site of MuPyV persistent infection, (Figure 1B and Figure 1—figure supplement 3). In mice receiving CD4 or CD8β T-cell-depleting antibodies individually, kidney virus levels were increased in CD4, but not CD8β, T-cell-depleted mice (Figure 1C). In dual CD4 and CD8 T-cell-depleted mice, anti-VP1 immunofluorescence staining was localized to disrupted tubules expressing Tamm-Horsfall protein (THP), identifying the distal convoluted tubules as a major site of MuPyV replication in the kidney (Tokonami et al., 2018; Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental approach for VP1 mAb treatment and T cell depletion. (B) Viral DNA levels in the kidney 10 days post T cell depletion with combined αCD4 and αCD8β. Viral DNA was quantified by qPCR and compared to a standard curve (n=16–18). (C) Viral DNA levels in the kidney 10 days post depletion with αCD4 or αCD8β. Viral DNA was quantified by qPCR and compared to a standard curve (n=13–21). (D) (Left) Foci of virus replication the kidney cortex 10 days post T cell depletion. Kidneys were stained for CD13 (white), THP (green) and VP1 (red). (Right) Quantification of virus foci in the kidney. Data are the average of two kidney sections per mouse (n=12–13). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Mann-Whitney U test (B, D) or Kruskal-Wallis test with Dunn’s multiple comparisons test (C). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) VP1-specifc IgG 30 dpi from WT or μMT mice detected by ELISA with VP1 pentamers (n=10–12). (B) Viremia at 30 dpi in WT, μMT, or μMT mice treated with VP1 mAb starting 4 dpi. LOD: Limit of detection (n=8). (C–D) Neutralization of A2 (C) or A2.Δ295 (D) by sera from WT or VP1-mAb treated μMT mice 20 dpi. LT mRNA fold change is relative to infection by each virus in the absence of serum (n=8–9). (E) Neutralizing titers against A2 and A2.Δ295 from WT or VP1-mAb treated μMT mice 20 dpi. Values are the inverse log10 of the 50% neutralizing dilution of serum. ND: Not determined (n=8–9). Error bars are mean ± SD. Data are from at least two independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Number of kidney-infiltrating CD4 T cells (A) and CD8 T cells (B) in the kidneys of WT and VP1-mAb-treated μMT mice 30 dpi. Kidney infiltrating cells were identified by i.v. injection of anti-CD45 prior to euthanasia (n=7–8). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Mann-Whitney U test (A–B).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative plot of CD4+ and CD8+ cells in the blood of mice treated with IgG or αCD4 and αCD8β at euthanasia 30 days post infection (10 days after the start of antibody treatment). Plots gated on CD45+ cells. (B–C) Frequency of CD4+ (B) and CD8+ (C) cells of total CD45+ cells in the blood of mice treated with IgG or αCD4 and αCD8β (n=11–13). (D) Representative plot of CD4+ and CD8+ cells in the blood of mice treated with IgG, αCD4, or αCD8β at euthanasia 30 days post infection (10 days after the start of antibody treatment). Plots gated on CD45+ cells. (E–F) Frequency of CD4+ (E) and CD8+ (F) cells of total CD45+ cells in the blood of mice treated with IgG, αCD4, or αCD8β (n=13–21). Error bars are mean ± SD. Data are from at least two independent experiments.
+
 Next, we asked how T cell loss affected long-term virus control. Mice were treated with combined CD4 and CD8β T-cell-depleting antibodies, CD4 T-cell-depleting antibody, CD8β T-cell-depleting antibody, or control rat IgG (Figure 2—figure supplement 1). Blood was collected every 20 days and screened for infectious virus by plaque assay (Figure 2A). Viremia became detectable in CD4 and CD8β T-cell-depleted mice as early as 40 days after dual CD4 and CD8 T cell depletion, with all mice developing viremia by approximately 100 days post depletion. CD4 T cell loss alone also led to viremia in all mice by 120 days post depletion (Figure 2B). In contrast, fewer than half of persistently infected mice given control IgG or CD8β T-cell-depleting antibody became viremic; in IgG-treated mice the development of viremia was delayed and peaked at approximately 100-fold lower levels than the T cell-depleted mice (Figure 2B). Mice receiving combined CD4 and CD8 T cell depletion or CD4 T cell depletion alone showed high systemic viral infection in the kidney, spleen, and brain (Figure 2C–E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental scheme for VP1 mAb treatment, T cell depletion, and detection of viremia. (B) (Left) Viral titers in the blood of control and T cell depleted mice over time. Viremia was measured by plaque assay from whole blood. (Center) Peak levels of viremia detected in control and T cell depleted mice. (Right) Time to development of viremia in control and T-cell-depleted mice. Indicated significances are with comparison to the IgG group. LOD: Limit of detection (n=10–27). (C–E) Viral DNA levels in the kidney (C), spleen (D), and brain (E) at the time of euthanasia in control and T-cell-depleted mice. Viral DNA was quantified by qPCR and compared to a standard curve (n=9–27). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Kruskal-Wallis test with Dunn’s multiple comparisons test (B Center), (C–E) or Mantel-Cox test with Bonferroni’s correction for multiple comparisons (B Right). *p<0.05, ***p<0.001, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Frequency of CD4+ (A) and CD8+ (B) cells of total CD45+ cells from the blood of mice treated with IgG, αCD4 and αCD8β, αCD4, or αCD8β. Blood was collected at euthanasia (n=9–27). Error bars are mean ± SD. Data are from at least two independent experiments.
 
 Sequencing plaque-purified virus from the blood of each viremic mouse revealed mutations in VP1, with typically only one VP1 variant found in individual mice (Supplementary file 1). In two mice, two mutant viruses were isolated from the mouse that each had a deletion of histidine 297 in addition to another unique mutation (E68K or N149K in one mouse and Δ147–148 or D295N in the other mouse). In a third mouse, two mutant viruses were isolated with a deletion of aspartic acid 295 and one of two mutations in the BC loop (I79S or N80K). This finding mirrors evidence that a PML patient typically harbors a single VP1 mutant JCPyV in their CSF, brain, and blood (Gorelik et al., 2011; Reid et al., 2011; Zheng et al., 2005a). Several of these non-synonymous single nucleotide substitutions and codon deletions were previously isolated from serially passaged MuPyV refractory to VP1 mAb-mediated neutralization, including Δ295, the most frequently detected mutation, as well as V296F, previously identified as the MuPyV equivalent of the common JCPyV PML mutation S268F (Lauver et al., 2020; Sunyaev et al., 2009). Notably, the codon for phenylalanine in V296F in this host-derived MuPyV differs from the one we previously created by site-directed mutagenesis (Lauver et al., 2020). We also identified several new mutations, including combined single amino acid deletions and substitutions. Each of the VP1 mutant viruses contained a mutation in the HI loop, where the heavy chain of the VP1 mAb contacts multiple residues (Figure 3A; Lauver et al., 2020). To exclude possible effects of other mutations in the viral genome, we introduced several of these single and dual VP1 mutations into WT MuPyV using site-directed mutagenesis. We found that these mutations blocked neutralization by the VP1 mAb (Figure 3B). To examine the effects of the mutations on tropism, we infected mice with the mutant viruses intravenously (i.v.). The viruses were injected i.v. to examine tropism when virus is spreading in the blood, which was the condition under which these mutations were identified, and to avoid the possibility of the viruses having impaired spread from the site of s.c. inoculation. Despite the shared resistance to neutralization, the mutations had varying effects on the efficiency of viral infection in the kidney and spleen (Figure 3C–D). These data indicate that escape from neutralizing antibody, not shifts in tissue tropism, was the selective pressure behind the emergence of VP1 mutations in vivo.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig3-v2.jpg)
 
-**Figure 3.:** (A) Location of VP1 mutations (blue) in the HI loop of one copy of VP1 relative to the location of VP1 mAb (cyan/purple) in the Cryo-EM structure of WT VP1 and the VP1 mAb. PDB ID: 7K22 (Lauver et al., 2020). (B) VP1 mAb neutralization of VP1 mutant viruses. Viruses were preincubated with 10 μg VP1 mAb or control IgG for 30 min prior to addition to 1x105 NMuMG epithelial cells. A2 was diluted to an MOI of 0.1 PFU/cell, mutant viruses were diluted to match A2 by genomic equivalents (g.e.). Viral LT mRNA levels were quantified 24 hpi and normalized for each virus to infection with control IgG (n=6). (C–D) Viral mRNA levels in the kidney (C) and spleen (D) 4 dpi with VP1 mutant viruses compared to WT. WT mice were infected i.v. with 1x106 PFU of A2 or mutant viruses matched by g.e. Viral LT mRNA levels were quantified by qPCR and compared to a standard curve (n=6–7). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Mann-Whitney U test with Holm-Šídák correction for multiple comparisons (B) or Kruskal-Wallis test with Dunn’s multiple comparisons test (C–D). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 3—source data 1.
+**Figure 3.:** (A) Location of VP1 mutations (blue) in the HI loop of one copy of VP1 relative to the location of VP1 mAb (cyan/purple) in the Cryo-EM structure of WT VP1 and the VP1 mAb. PDB ID: 7K22 (Lauver et al., 2020). (B) VP1 mAb neutralization of VP1 mutant viruses. Viruses were preincubated with 10 μg VP1 mAb or control IgG for 30 min prior to addition to 1x105 NMuMG epithelial cells. A2 was diluted to an MOI of 0.1 PFU/cell, mutant viruses were diluted to match A2 by genomic equivalents (g.e.). Viral LT mRNA levels were quantified 24 hpi and normalized for each virus to infection with control IgG (n=6). (C–D) Viral mRNA levels in the kidney (C) and spleen (D) 4 dpi with VP1 mutant viruses compared to WT. WT mice were infected i.v. with 1x106 PFU of A2 or mutant viruses matched by g.e. Viral LT mRNA levels were quantified by qPCR and compared to a standard curve (n=6–7). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Mann-Whitney U test with Holm-Šídák correction for multiple comparisons (B) or Kruskal-Wallis test with Dunn’s multiple comparisons test (C–D). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## T cells prevent outgrowth of antibody-escape mutant virus
+### T cells prevent outgrowth of antibody-escape mutant virus
 
 The absent/delayed and lower viremia in the IgG-treated mice than T cell-depleted mice led us to hypothesize that T cells could prevent/restrain the outgrowth of an antibody-escape virus if one arose during persistent infection. To do this, we treated μMT mice with VP1 mAb as before, but challenged the mice with 1000 PFU of the A2.Δ295 mutant virus 2 days after starting T cell depletion (Figure 4A). Mice were challenged i.v. with a lower titer inoculum of the A2.Δ295 mutant virus to mimic the development of viremia with an Ab escape mutant virus. This experimental setup allowed us to separate the function of T cells in preventing the generation of VP1 mutations from the ability of T cells to control the outgrowth of a VP1 mutant virus. Mice receiving CD4 and CD8β T-cell-depleting antibodies developed viremia with progressively increasing infectious virus titers over time; in contrast, no viremia was detected in the control IgG-treated mice (Figure 4B and Figure 4—figure supplement 1). Moreover, the T-cell-depleted mice had 100–1000-fold higher virus levels in the kidney, spleen, and brain than the IgG-treated mice (Figure 4C–E). These results provide clear evidence that T cells act to prevent viremia by MuPyV variants that escape neutralizing antibody.
 
-## A double VP1 mutation balances viral fitness vs antibody-escape
+![Figure 4.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig4-v2.jpg)
+
+**Figure 4.:** (A) Experimental scheme for VP1 mAb treatment, T cell depletion, A2.Δ295 challenge, and detection of viremia in μMT mice. (B) (Left) Viral titers in the blood of control and T-cell-depleted mice over time. Viremia was measured by plaque assay from whole blood. (Center) Peak levels of viremia detected in control and T-cell-depleted mice. (Right) Time to development of viremia in control and T-cell-depleted mice in B. LOD: Limit of detection (n=8–9). (C–E) Viral DNA levels in the kidney (C), spleen (D), and brain (E) 28 days post challenge (n=8–9). Error bars are mean ± SD. Data are from two independent experiments. Data were analyzed by Mantel-Cox test (B Right) or Mann-Whitney U test (B center), (C–E). ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Frequency of CD4+ (A) and CD8+ (B) cells out of total CD45+ cells the blood of mice treated with IgG or αCD4 and αCD8β. Blood was collected 2 weeks after the start of antibody treatment (n=8–9). Error bars are mean ± SD. Data are from at least two independent experiments.
+
+### A double VP1 mutation balances viral fitness vs antibody-escape
 
 Antibody-escape viruses carrying a substitution at D295 together with a deletion of H297 (A2.D295N/Δ297) stand out because the D295 and H297 side chains face away from the interface of VP1 and the mAb (Figure 3A). We generated viruses individually carrying the D295N or Δ297 mutations in the WT A2 genome (A2.D295N or A2.Δ297, respectively) to define the contributions of each mutation to recognition by the VP1 mAb and potential effects on tropism. Neutralization assays with VP1 mAb showed that A2.D295N remained sensitive, but A2.Δ297 was fully resistant, to neutralization (Figure 5A). Similar to parental A2, A2.D295N was readily bound by the VP1 mAb; in contrast, the mAb did not bind A2.Δ297 or A2.D295N/Δ297 (Figure 5B). A2.D295N also showed a similar avidity profile to parental A2 with the VP1 mAb (Figure 5C). Taken together, these data show that D295N did not affect neutralization, suggesting that this mutation did not contribute to antibody escape. In support, we found that A2.Δ297 failed to form plaques, indicating a defect in spread (Figure 5—figure supplement 1A). In contrast, A2.D295N formed plaques comparably to WT virus and A2.D295N/Δ297 produced significantly smaller sized plaques. Reduced plaque size by MuPyV has been associated with increased affinity for binding host cell receptors (Bauer et al., 1999). By titering infectious virus output during one round of replication by plaque assay, we observed decreased virion production by A2.D295N but significantly increased replication by A2.D295N/Δ297 (Figure 5D). Matching virus titers by DNA genome equivalents (g.e.), we found enhanced infection by A2.D295N/Δ297, whereas A2.Δ297 had similar infectivity to A2 and A2.D295N had reduced infectivity (Figure 5E). Using a low multiplicity of infection (MOI) infection to track viral spread, we found that A2.Δ297 and A2.D295N both showed a significant reduction in spread compared to A2 (Figure 5F). This reduction in spread was not due to reduced virus production; cells transfected with equal amounts of viral DNA showed similar levels of virus output at 72 hr by A2.D295N and A2.Δ297, but significantly more virus by A2.D295N/Δ297 (Figure 5—figure supplement 1B). These data indicate the Δ297 mutation impaired viral spread and prevented plaque formation. In contrast, the D295N mutation impaired both virus infection and spread but remained able to form plaques over the course of the 6-day plaque assay. In combination, however, these mutations showed a restoration and even enhancement of infectivity and spread.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig5-v2.jpg)
+
+**Figure 5.:** (A) VP1 mAb neutralization assay with D295N and Δ297 VP1 mutant viruses. Viruses were preincubated with 10 μg VP1 mAb or control IgG for 30 min prior to addition to 1x105 NMuMG epithelial cells. A2 was diluted to an MOI of 0.1 PFU/cell, mutant viruses were diluted to match A2 by g.e. Viral LT mRNA levels were quantified 24 hpi and normalized for each virus to infection with control IgG (n=6). (B) Binding of VP1 mAb to WT or VP1 mutant viruses. Wells were coated with 1x109 g.e. of WT or VP1 mutant virus and incubated with VP1 mAb. VP1 mAb binding was quantified using an anti-rat secondary antibody and values were normalized to binding to WT virus (n=4). (C) Binding avidity of VP1 mAb for A2 and A2.D295N. VP1 mAb binding to A2 and A2.D295N was performed as in B. Prior to detection of mAb binding, virus/mAb complexes were treated with varying concentrations of NH4SCN for 15 min. Binding at each concentration was normalized to binding at 0 M NH4SCN for each virus (n=4). (D) Quantification of virus production in a single round of replication by plaque assay. Virus was added to 1x105 A31 cells at an MOI of 0.1 PFU/cell. Cells were lysed at 60 hpi and infectious virus was quantified by plaque assay and divided by the input virus quantity. A2.Δ297 was not included due to inability of this mutant to form plaques (n=8). (E) Frequency of T-antigen-positive cells 24 hpi with WT or mutant viruses. 1x105 A31 cells were infected with A2 at an MOI of 1 PFU/cell or mutant viruses matched by g.e. Cells were collected at 24 hpi, permeabilized, stained for T ag protein, and quantified by flow cytometry. (F) Frequency of T-antigen-positive cells at 24, 48, 72, and 96 hpi with WT or mutant viruses. 1x105 A31 cells were infected with A2 at an MOI of 0.1 PFU/cell or mutant viruses matched by g.e. Cells were collected at each time point, permeabilized, stained for T ag protein, and quantified by flow cytometry (n=6–13). (G) Detection of virus binding in kidney sections. PFA-fixed frozen kidney sections were treated with neuraminidase or buffer alone prior to incubation with WT or VP1 mutant virus. Sections were then stained for VP1 (red) and kidney markers [CD13 (white), THP (green)]. Neu: Neuraminidase. Representative of three independent experiments. (H) LT mRNA levels in the kidney 4 dpi with WT or mutant viruses. WT mice were infected i.v. with 1x106 PFU of A2 or mutant viruses matched by g.e. Viral LT mRNA levels were quantified by qPCR and compared to a standard curve (n=9–10). (I) Detection of D295 and H297 mutations in the kidney. VP1 sequences were PCR amplified from kidney DNA samples of the mice that developed the D295N/Δ297 and D295A/Δ297 double mutant viruses. VP1 clones were sequenced and screened for the presence of mutations at D295 and H297; the frequency of each mutation in 50 clones is shown. Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Mann-Whitney U test with Holm-Šídák correction for multiple comparisons (A), one-way ANOVA with Dunnett’s multiple comparisons test (B and D–E), two-way ANOVA with Dunnett’s multiple comparisons test (F), or Kruskal-Wallis test with Dunn’s multiple comparisons test (H). **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) (Left) Plaque formation by WT and mutant viruses in A31 fibroblasts 6 dpi. (Right) Area of individual plaques formed by A2, A2.D295N, and A2.D295N/Δ297. Plaque area was measured using ImageJ (n=80). (B) Encapsidated genomes produced by WT and mutant viral DNA transfection. Data is relative to WT (n=9). (C) pH-dependent hemagglutination curves for WT and mutant viruses. The reported HA titer was the inverse of the highest dilution showing hemagglutination (n=3). (D) Percent of virus binding lost with neuraminidase pre-treatment. Bound virus was detected with polyclonal VP1 Ab and quantified by flow cytometry. For each virus, the percent of binding lost to neuraminidase treatment was calculated by comparing virus binding with and without neuraminidase treatment (n=6). (E) Quantification of T antigen positive cells 24 hpi with WT or mutant viruses with neuraminidase pretreatment. Cells were treated and infected as in (E). At 24 hpi, cells were collected, permeabilized, stained for T ag protein, and quantified by flow cytometry (n=6). (F) Quantification of LT mRNA levels with neuraminidase pretreatment. A31 cells were treated with neuraminidase and then infected with A2 at an MOI of 0.1 PFU/cell or mutant viruses matched by g.e. Viral LT mRNA levels were quantified by qPCR and compared to a standard curve (n=6). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Kruskal-Wallis test with Dunn’s multiple comparisons test (A), one-way ANOVA with Dunnett’s multiple comparisons test (B and D), or Mann-Whitney U test with Holm-Šídák correction for multiple comparisons (E–F). **p<0.01, ***p<0.001, ****p<0.0001.
 
 We next asked whether these mutations affected receptor usage. Parental A2 and A2.D295N/Δ297 showed preferential hemagglutination (HA) activity at acidic pH (Figure 5—figure supplement 1C). A2.D295N and A2.Δ297 exhibited poor HA activity, with A2.Δ297 showing no HA activity across the pH spectrum. As HA activity is dependent on sialic acid binding, we next examined the effect of neuraminidase pretreatment on virus binding and infection. Binding by A2, A2.Δ297, and A2.D295N/Δ297 was dependent on sialylated host cell receptors, but binding by A2.D295N was refractory to neuraminidase treatment (Figure 5—figure supplement 1D). Despite these differences in binding, neuraminidase pretreatment caused a significant reduction 24 hpi in LT mRNA levels with low MOI infection and T ag+ cells with high MOI infection, indicating that infection by all viruses relied predominantly on a sialic-acid-dependent pathway (Figure 5—figure supplement 1E–F). The dependence on sialic acid for infection, but not for binding, by A2.D295N indicates that by itself the D295N mutation mediated binding to a non-sialylated, non-productive receptor. In contrast, the A2.Δ297 single mutant showed a drastic sensitivity to neuraminidase pretreatment, with 10,000-fold reduction in mRNA production, consistent with poor receptor binding and the lack of HA activity.
 
@@ -63,13 +103,13 @@ We next assessed how these mutations affected receptor binding and infection in 
 
 Based on the effects of the D295N and Δ297 mutations, we hypothesized that Ab escape by the Δ297 mutation was the initial driver of mutant virus emergence in vivo, with the emergence of the mutation at D295 occurring secondary to compensate for the defect in virulence. To test this, we cloned and sequenced VP1 from the kidneys of three T cell-depleted (two CD4 and CD8β T cell depleted; one CD4 depleted) mice that developed the D295N/Δ297 and D295A/Δ297 double mutant viruses. Each of these mice rapidly became morbid after the detection of viremia necessitating their euthanasia within 30 days of the emergence of viremia. In 50 clones sequenced from the kidneys of each of the three mice, we identified sequences containing WT VP1, Δ297, and D295N/Δ297 or D295A/Δ297, but not sequences containing the D295N/A mutations alone (Figure 5I). The presence of the individual Δ297 mutation and absence of single D295 mutations suggests that the initial mutation was Δ297 followed by D295N/A. Although more sensitive sequencing methods may detect VP1 sequences with D295N/A mutations without Δ297, the high frequency of the Δ297 mutation strongly suggests this was the initial mutation. The rapid morbidity associated with the emergence of the mutation at D295 and subsequent viremia likely limited the accumulation of these double mutant viruses.
 
-## Heightened neurovirulence by a VP1 double mutation virus
+### Heightened neurovirulence by a VP1 double mutation virus
 
 Given the increased replication of A2.D295N/Δ297 in vitro, we next investigated whether this virus showed altered kidney pathology in an immunocompromised host. We infected μMT mice i.v. with A2 or A2.D295N/Δ297, which resulted in chronic viremia 30 dpi by each virus (Figure 6A). Kidneys from A2-infected mice had foci of lymphocytic inflammation within the cortical interstitium that extended into the tubular epithelium (Figure 6B). In marked contrast, kidneys A2.D295N/Δ297-infected mice had only small, scattered collections of mononuclear cells. Consistent with these histopathologic differences, A2-infected kidneys also exhibited numerous, large VP1+ foci, but those in A2.D295N/Δ297-infected kidneys were far fewer and smaller (Figure 6C–D). To determine if A2.D295N/Δ297 was neurovirulent, we infected WT mice intracranially (i.c.), a route of inoculation which mediates efficient MuPyV infection of the brain (Lauver et al., 2020; Mockus et al., 2020). Four dpi, A2-infected brains showed only sparse VP1+ ependymal cells lining the ventricles. In contrast, brains of A2.D295N/Δ297-infected mice had extensive VP1+ ependymal cells (Figure 6E). Consistent with this dramatic difference in extent of ependymal infection, A2-infected brains at 30 dpi had only small ependymal lymphocytic aggregates, whereas A2.D295N/Δ297-infected brains contained more extensive ependymitis as well as periventricular edema (Figure 6F). Additionally, of the sections examined only brains from mice persistently infected with A2.D295N/Δ297 had VP1+ cells in the periventricular region (Figure 6G). Hydrocephalus is consistently seen in mice i.c. inoculated with A2 MuPyV (Lauver et al., 2020; Mockus et al., 2020). A2.D295N/Δ297-infected mice developed hydrocephalus to a significantly higher degree than A2-infected mice (Figure 6H). These data show that the endogenously derived A2.D295N/Δ297 VP1 mutant virus had lower tropism for the kidney, but dramatically higher capacity to infect the cerebral ventricular system than the parental A2 virus. Similarly, impaired kidney pathogenesis but retained neurovirulence is a hallmark feature of A2 virus carrying the VP1 V296F mutation, sequence-equivalent to the frequent S268F VP1 mutation in JCPyV-PML (Lauver et al., 2020). Thus, VP1 neutralizing Ab in T-cell-deficient hosts can select rare Ab-escape virus variants possessing high neuropathogenicity.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83030/elife-83030-fig6-v2.jpg)
 
-**Figure 6.:** (A) Viremia in μMT mice 30 dpi with A2 or A2.D295N/Δ297 i.v. Viremia was quantified by plaque assay from whole blood (n=9). (B) H&E stained sagittal sections of kidneys from μMT mice 30 dpi after i.v. inoculation with A2 or A2.D295N/Δ297. Left: ×50 magnification. Right: ×500 magnification. (C) Foci of VP1+ cells in kidneys from μMT mice 30 dpi with A2 or A2.D295N/Δ297 i.v. Kidneys were stained for CD13 (white), THP (green) and VP1 (red). (D) Quantification of the number (Left, n=9) and size (Right, n=42–45) of VP1+ foci in kidneys from μMT mice 30 dpi with A2 or A2.D295N/Δ297 i.v. Foci number is the average of two sagittal kidney sections per mouse. For quantifying foci area, five random foci per mouse or the maximum number of foci found were imaged and the area of each VP1+ focus was calculated using ImageJ. (E) VP1+ cells in the lateral (top) and third (bottom) ventricles of WT mice 4 dpi with A2 or A2.D295N/Δ297 inoculated i.c. and quantification of VP1+ cells in the third ventricle (n=16–18). (F) H&E stained coronal sections from brains of sham (top left), A2 (top right), or A2.D295N/Δ297 (bottom left) i.c.-inoculated mice 30 dpi (×200 magnification). Arrows indicate sites of ependymal inflammation. (G) VP1 staining in the ventricles of WT mice 30 dpi with A2 or A2.D295N/Δ297 i.c. VP1+ cells are indicated with white markers. (H) Quantification of hydrocephalus 30 dpi after i.c. inoculation with vehicle, A2, or A2.D295N/Δ297. Coronal head height was measured with a Vernier caliper in line with the ear canal to the nearest 0.5 mm (n=10–13). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Mann-Whitney U test (A, D, and E) or one-way ANOVA with Dunnett’s multiple comparisons test (H). ***p<0.001, ****p<0.0001.Figure 6—source data 1.
+**Figure 6.:** (A) Viremia in μMT mice 30 dpi with A2 or A2.D295N/Δ297 i.v. Viremia was quantified by plaque assay from whole blood (n=9). (B) H&E stained sagittal sections of kidneys from μMT mice 30 dpi after i.v. inoculation with A2 or A2.D295N/Δ297. Left: ×50 magnification. Right: ×500 magnification. (C) Foci of VP1+ cells in kidneys from μMT mice 30 dpi with A2 or A2.D295N/Δ297 i.v. Kidneys were stained for CD13 (white), THP (green) and VP1 (red). (D) Quantification of the number (Left, n=9) and size (Right, n=42–45) of VP1+ foci in kidneys from μMT mice 30 dpi with A2 or A2.D295N/Δ297 i.v. Foci number is the average of two sagittal kidney sections per mouse. For quantifying foci area, five random foci per mouse or the maximum number of foci found were imaged and the area of each VP1+ focus was calculated using ImageJ. (E) VP1+ cells in the lateral (top) and third (bottom) ventricles of WT mice 4 dpi with A2 or A2.D295N/Δ297 inoculated i.c. and quantification of VP1+ cells in the third ventricle (n=16–18). (F) H&E stained coronal sections from brains of sham (top left), A2 (top right), or A2.D295N/Δ297 (bottom left) i.c.-inoculated mice 30 dpi (×200 magnification). Arrows indicate sites of ependymal inflammation. (G) VP1 staining in the ventricles of WT mice 30 dpi with A2 or A2.D295N/Δ297 i.c. VP1+ cells are indicated with white markers. (H) Quantification of hydrocephalus 30 dpi after i.c. inoculation with vehicle, A2, or A2.D295N/Δ297. Coronal head height was measured with a Vernier caliper in line with the ear canal to the nearest 0.5 mm (n=10–13). Error bars are mean ± SD. Data are from at least two independent experiments. Data were analyzed by Mann-Whitney U test (A, D, and E) or one-way ANOVA with Dunnett’s multiple comparisons test (H). ***p<0.001, ****p<0.0001.
 
 ## Discussion
 
@@ -99,58 +139,418 @@ Our findings demonstrate a ‘2-hit’ requirement for development of VP1 mutant
 
 ## Materials and methods
 
-## Materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VP1 (Rat Clone 8A7H5)</td>
+      <td>Swimm et al., 2010</td>
+      <td>Clone 8A7H5</td>
+      <td>250 µg/week</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ChromPure Rat IgG</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#012-000-003RRID: AB_2337136</td>
+      <td>250 µg/week</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8β (H35-17.2)</td>
+      <td>Golstein et al., 1982</td>
+      <td>N/A</td>
+      <td>250 µg/week</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4 (GK1.5)</td>
+      <td>Dialynas et al., 1983</td>
+      <td>N/A</td>
+      <td>250 µg/week</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VP1 (Rabbit polyclonal)</td>
+      <td>Provided by Robert Garcea</td>
+      <td>N/A</td>
+      <td>IF (1:1,000)FC (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vimentin (Rat Clone 280618)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#MAB2105RRID: AB_2241653</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab53554RRID: AB_880202</td>
+      <td>IF (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-THP (Rat monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#MAB5175RRID: AB_2890000</td>
+      <td>IF (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD13 (Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#AF2335RRID: AB_2227288</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat IgG AF488 (Bovine polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#805-545-180RRID: AB_2340883</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat IgG AF555 (Donkey polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab150154RRID: AB_2813834</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG AF647 (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#711-605-152RRID: AB_2492288</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8α-AF700 (Clone 53–6.7)</td>
+      <td>Biolegend</td>
+      <td>Cat#100730RRID:AB_493703</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45-PerCP/Cy5.5 (Clone 30-F11)</td>
+      <td>Biolegend</td>
+      <td>Cat#103132RRID:AB_893340</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45-FITC (Clone 30-F11)</td>
+      <td>BD</td>
+      <td>Cat#553080RRID:AB_394610</td>
+      <td>FC (3 µg/mouse)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4-PE (Clone RM4-5)</td>
+      <td>Biolegend</td>
+      <td>Cat#100512RRID:AB_312715</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4-BV421(clone GK1.5)</td>
+      <td>BD</td>
+      <td>Cat#562891RRID: AB_2737870</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat IgG-APC (Goat polyclonal)</td>
+      <td>BD</td>
+      <td>Cat#551019RRID:AB_398484</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG-HRP (Goat polyclonal)</td>
+      <td>Bethyl Laboratories INC</td>
+      <td>Cat#A90-116PRRID:AB_67183</td>
+      <td>ELISA (1:7,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fixable Viability Dye eFluor 780</td>
+      <td>ThermoFisher</td>
+      <td>Ref#65-0865-14</td>
+      <td>FC (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Flow Cytometry Absolute Count Standard</td>
+      <td>Bangs Laboratories</td>
+      <td>Cat#580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MuPyV (Strain A2)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sheep Red Blood Cells</td>
+      <td>Innovative Research</td>
+      <td>Cat#ISHRBC10P15ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>VP1 pentamers</td>
+      <td>Provided by Robert Garcea</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Benzonase Nuclease</td>
+      <td>Sigma</td>
+      <td>Cat#E1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Neuraminidase from Vibrio cholerae</td>
+      <td>Sigma</td>
+      <td>Cat#N6514</td>
+      <td>IF (1:100)FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase (Type I)</td>
+      <td>Worthington</td>
+      <td>Cat#LS004197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol Reagant</td>
+      <td>ThermoFisher</td>
+      <td>Ref#15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RevertAid H Minus Reverse Transcriptase</td>
+      <td>ThermoFisher</td>
+      <td>Cat#EP0451</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection Reagent</td>
+      <td>ThermoFisher</td>
+      <td>Cat#11668030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>ThermoFisher</td>
+      <td>Cat# L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PFHM-II Protein-Free Hybridoma Medium</td>
+      <td>ThermoFisher</td>
+      <td>Ref#12040–077</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TOPO TA Cloning Kit</td>
+      <td>ThermoFisher</td>
+      <td>Ref#45–0641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TBP PrimeTime XL qPCR Assay</td>
+      <td>IDT</td>
+      <td>Mm.PT.39a.22214839</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>1-Step Ultra TMB-ELISA</td>
+      <td>ThermoFisher</td>
+      <td>Ref#34028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>96 Well EIA/RIA Polystyrene High Bind Microplate</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#3590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PerfectCTa FastMix II ROX</td>
+      <td>Quantabio</td>
+      <td>P/N 84210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PureLink Viral RNA/DNA mini Kit</td>
+      <td>ThermoFisher</td>
+      <td>Ref#12280–050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Wizard Genomic DNA Purification Kit</td>
+      <td>Promega</td>
+      <td>Ref#A1120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QuikChange II Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>Cat#200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>CELLine Disposable Bioreactor</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#353137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>BALB/3T3 Clone A31</td>
+      <td>ATCC</td>
+      <td>CCL-163; RRID:CVCL_0184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>NMuMG</td>
+      <td>ATCC</td>
+      <td>CRL-1636; RRID:CVCL_0075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6 Mice</td>
+      <td>National Cancer Institute</td>
+      <td>Cat#OIC55</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>μMT Mice</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat#002288; RRID:IMSR_JAX:002288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graphpad</td>
+      <td>v 9.3.1; RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD</td>
+      <td>v 10.6.1; RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>v 1.8.0; RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica LAS X</td>
+      <td>Leica</td>
+      <td>v 3.7.2; RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials availability
 
 Reagents generated in this study are available from the corresponding author with a Materials Transfer Agreement.
 
-## Mice
+### Mice
 
 C57BL/6 mice were purchased from the National Cancer Institute and μMT mice were purchased from Jackson Laboratories. Mice were housed and bred under specific pathogen-free conditions. Male and female mice 6–12 weeks of age were used for experiments. All mouse experiments were approved by the Penn State College of Medicine Institutional Animal Care and Use committee.
 
-## Cell lines
+### Cell lines
 
 NMuMG and BALB/3T3 clone A31 (“A31”) cell lines were purchased from ATCC. Cell lines were authenticated by STR profiling (ATCC), mycoplasma negative, used at low passage, and examined for correct morphology. The 8A7H5, H35-17.2, and GK1.5 hybridomas were grown in PFHM-II Protein-Free Hybridoma Medium (Thermofisher) (Dialynas et al., 1983; Golstein et al., 1982; Swimm et al., 2010). mAb was produced in CELLine bioreactor flasks (Corning). All other cells were kept in Dulbecco’s Minimal Eagle Media supplemented with 10% fetal bovine serum, 100 U/mL penicillin, and 100 U/mL streptomycin.
 
-## Viruses
+### Viruses
 
 All experiments were done using the A2 strain of MuPyV. Viral stocks were generated by transfection of viral DNA into NMuMG cells. Mutant viruses were generated by site-directed mutagenesis of the parental A2 viral genome with forward and reverse primers for each mutation (Supplementary file 2). DNA was isolated from the virus stocks and sequenced to confirm the presence of the mutation. The A2.Δ294, A2.Δ295, and A2.V296F viruses were generated previously (Lauver et al., 2020).
 
-## Virus titering and sequencing
+### Virus titering and sequencing
 
 Viruses were titered by plaque assay on A31 fibroblasts or by qPCR for encapsidated genomes (Lukacher and Wilson, 1998). For genome titering, 1 μL of virus lysate was treated with 250 U of benzonase nuclease (Sigma) at 37 °C for 1 hr. Viral genomes were isolated using the Purelink Viral RNA/DNA mini kit and genome ratios were determined by Taqman qPCR (Wilson et al., 2012).
 
-## Mouse infections and treatments
+### Mouse infections and treatments
 
 Mice were infected via the hind footpad with 1x106 PFU of A2 MuPyV. Challenge infections with A2.Δ295 were given with 1x103 PFU i.v. For comparisons of mutant viruses, mice were infected i.v. with 1x106 PFU of A2 or the mutant virus matched by g.e. For comparisons of brain infection, mice were infected i.c. with 5x105 PFU of A2 or A2.D295N/Δ297 matched by g.e. µMT mice were injected intraperitoneally (i.p.) weekly with 250 µg of 8A7H5 starting 4 dpi. For T cell depletions, mice were injected i.p. weekly with 250 µg of GK1.5 and H35-17.2 or control IgG.
 
-## Virus infections in vitro
+### Virus infections in vitro
 
 A31 or NMuMG cells were seeded in 12-well plates at a density of 5x104 cells/well the day before infection. Cells were washed with Iscove’s Modified Dulbecco’s medium with 0.1% BSA prior to infection with the specified MOI of A2 or mutant virus matched by g.e. Infections were performed at 4 °C for 1.5 hr; unbound virus was then washed out and the cells were returned to DMEM with 10% FBS. For infections with neuraminidase pretreatment, cells were incubated with or without Vibrio cholerae neuraminidase (Sigma) in neuraminidase buffer (PBS with 1 mM CaCl2, 1 mM MgCl2) at 37 °C for 30 min. Neutralization assay infections were performed at an MOI of 0.1 PFU/cell with A2 virus or VP1 mutant virus matched by g.e. For serum neutralization assays, virus was incubated with the indicated serial dilution of serum at 4 °C for 30 min prior to addition to cells. For neutralization assays with VP1 mAb, virus was incubated with 10 µg of 8A7H5 or control IgG at 4 °C for 30 min prior to addition to cells. For quantification of encapsidated genome production, A31 cells were transfected with equal amounts of WT or mutant viral DNA using Lipofectamine 3000 (ThermoFisher). At 24 hr the media was removed, and the cells were washed and placed in fresh media to remove free DNA. At 72 hr, the cells and media were collected and the amount of encapsidated genomes were quantified as above. For images of plaque formation, plaque assays were imaged 6 dpi with an Olympus IX73 inverted microscope with a QImaging Retiga 6000 Mono camera. For quantifying plaque size, plaque assays were fixed with neutral buffered formalin (NBF), stained with 1% Crystal Violet, and imaged as above. Plaque area was quantified using ImageJ (NIH).
 
-## Viral mRNA and DNA quantification
+### Viral mRNA and DNA quantification
 
 Total RNA was isolated with TRIzol Reagent (Thermofisher) and phenol:chloroform extraction. Total cDNA was generated from 1 to 2 µg of RNA using random hexamer primers and Revertaid RT (Thermofisher). Taqman qPCR was used to quantify LT mRNA levels with normalization to TATA-Box Binding protein and compared to a standard curve to determine copy number (Maru et al., 2017). DNA was isolated with the Wizard Genomic DNA Purification Kit (Promega). Viral DNA was quantified by Taqman qPCR and compared to a standard curve to determine copy number (Wilson et al., 2012).
 
-## TA cloning for VP1 sequencing
+### TA cloning for VP1 sequencing
 
 VP1 sequences were PCR amplified from kidney DNA and cloned using the TOPO TA cloning kit (Thermofisher). Clones were screened by restriction digest for the presence of a VP1 sequence and sequenced. VP1 sequences were screened from the presence of the D295A/N and Δ297 mutations.
 
-## Hemagglutination assay
+### Hemagglutination assay
 
 Viruses were diluted to 1x107 g.e./μL then serially two-fold diluted in PBS at the indicated pH. Virus dilutions were combined 1:1 with 0.45% sheep erythrocytes (Innovative Research) and incubated overnight at 4 °C. The highest dilution at each pH showing hemagglutination was reported as the HA titer.
 
-## ELISA
+### ELISA
 
 Full-length MuPyV VP1 pentamers were kindly provided by Robert Garcea (University of Colorado, Boulder). ELISA wells were coated overnight at 4 °C with 50 ng of VP1 pentamer or 1x107 PFU of A2 or mutant virus matched by g.e. For avidity measurements, 8A7H5-virus complexes were treated with NH4SCN for 15 min before the addition of the secondary and detection. 8A7H5 binding was normalized for each virus to signal in the absence of NH4SCN (Lauver et al., 2020; Pullen et al., 1986).
 
-## Flow cytometry
+### Flow cytometry
 
 T cell depletions were confirmed in the peripheral blood at euthanasia by staining with antibodies for CD45, CD8α, and CD4. For quantification of kidney-infiltrating T cells, mice were injected 3 min prior to euthanasia with 3 µg of anti-CD45-FITC. T cells were isolated from the kidney by digestion with collagenase followed by centrifugation on a 44%/66% Percoll gradient. T cell numbers were determined using Flow Cytometry Absolute Count Standard beads (Bangs Laboratories). For quantification of in vitro infections, cells were trypsinized and stained with Fixable Viability Dye (ThermoFisher) followed by treatment with eBiosience Fixation/Permeabilization reagent (ThermoFisher). Cells were then stained with rat polyclonal T antigen Ab followed by an anti-rat secondary (Biolegend). For measuring sialic acid binding dependence, trypsinized cells were treated for 30 min at 37 °C in the presence or absence of Vibrio cholerae neuraminidase (Sigma). Bound virus was detected with rabbit polyclonal VP1 Ab followed by an anti-rabbit secondary. Samples were acquired on an LSRFortessa flow cytometer (BD Biosciences) and analyzed using FlowJo software (Tree Star).
 
-## Immunofluorescence and histological imaging
+### Immunofluorescence and histological imaging
 
 Kidneys were immersion-fixed in NBF overnight prior to processing and paraffin-embedding. For brain preparation, mice were perfused with NBF and whole heads were fixed overnight in NBF. The brains were then removed for processing and embedding. Formalin-fixed paraffin embedded kidney and brain sections were stained with VP1, CD13 (Abcam), GFAP (Abcam), Vimentin (R&D), and THP (R&D) antibodies. Hematoxylin and eosin (H&E)-stained sagittal sections of kidneys and coronal sections of brains were evaluated by a renal pathologist and a neuropathologist, respectively, in blinded fashion. For virus binding to kidney sections, paraformaldehyde-fixed kidneys were embedded in Tissue-Tek O.C.T. Compound (Sakura) and cryosectioned. Sections were treated with Vibrio cholerae neuraminidase (Sigma) or buffer for 30 min at 37 °C and then incubated with virus lysate for 1.5 hr. Sections were then stained with VP1, CD13 (Abcam), and THP (R&D) antibodies. Secondary antibodies used were anti-rabbit Alexa Fluor 647 (Jackson Immunoresearch), anti-goat Alexa Fluor 488 (Jackson Immunoresearch) and Alexa Fluor 555 anti-rat secondary (Abcam). Samples were mounted with Prolong Gold Antifade Mountant with DAPI (ThermoFisher). Samples were imaged on a Leica DM4000 fluorescence microscope. For representative fluorescence images, adjustments for brightness/contrast were done uniformly to all images in the group using LAS X (Leica).
 
-## Statistical analysis
+### Statistical analysis
 
 All data are displayed as mean ± SD. The statistical tests performed are listed with the respective figures and were performed using Prism software (Graphpad). p Values of≤ 0.05 were considered significant. Exact p values for all comparisons in figures are listed in Supplementary file 3. Statistical methods were not used to pre-determine sample sizes; sample sizes were determined based on the authors’ experience with the model system. Sample sizes represent individual mice or biological replicates. VP1+ foci and VP1+ cells were counted in a blinded fashion, blinding was not employed for other experiments. All sample sizes and number of repeats are included in the Figure Legends.

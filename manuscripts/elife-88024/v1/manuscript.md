@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Department of Genetics, and Lineberger Comprehensive Cancer Center, The University of North Carolina at Chapel Hill Chapel Hill United States
+1. Department of Genetics, and Lineberger Comprehensive Cancer Center, The University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 
 † Corresponding author
 
@@ -29,11 +29,19 @@ Here, we find that ARID1A (AT-rich interaction domain 1 a), a BAF-specific putat
 
 ## Results
 
-## Meiotic progression requires ARID1A
+### Meiotic progression requires ARID1A
 
 Meiotic progression in male mice depends on SWI/SNF-regulated gene expression (Menon et al., 2019; Menon et al., 2021). These studies raise the prospect of distinct SWI/SNF subcomplexes governing stage-specific meiotic transcription (Menon et al., 2021). To understand the meiotic functions of the biochemically distinct SWI/SNF BAF subcomplex, we examined the spermatogenic expression profiles of the BAF subunits Arid1a and Arid1b using single-cell RNA-seq data generated from testes (Ernst et al., 2019). Arid1a mRNA expression occurred at various spermatogenic stages with notable expression at pachynema of meiotic prophase I (Figure 1—figure supplement 1A–C).
 
 Arid1b mRNA went undetectable until late in spermiogenesis (Figure 1—figure supplement 1D–E). Consistent with its mRNA expression profile, pachytene spermatocytes featured abundant ARID1A protein, which was uniformly spread among autosomes and sex chromosomes (Figure 1). Late in diplonema, ARID1A appeared preferentially enriched on the sex chromosomes as compared to autosomes (Figure 1). These data implicate ARID1A in MSCI, a process essential for meiotic progression in males.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig1-v1.jpg)
+
+**Figure 1.:** Representative wild-type pachytene and diplotene spermatocyte spreads immunolabelled for ARID1A (magenta) and SYCP3 (green) and then counterstained for DNA (blue). Panel insets denote a magnified view of the nuclear area surrounding the sex chromosomes. Scale bar:10 μm, magnification: ×100.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** scRNA-seq profiles of Arid1a and Arid1b in adult testes from B6 mice (Ernst et al., 2019). (A) tSNE plot describing the clustering of various spermatogenic stages. LOG2 normalized expression counts of (B,C) Arid1a and (D,E) Arid1b represented by tSNE plots and bar plots. (B,D) tSNE plots illustrating the first (tSNE1, x-axis) and second dimensions (tSNE2, y-axis). (C,E) Bar plots describe the gene’s mRNA abundance (y-axis) across identified germ cell clusters (x-axis). (A) eP: early pachynema, mP: mid pachynema, lP: late pachynema, MI: Metaphase-I, MII: Metaphase-II, S1-S11: Spermatid stages. Plots generated with shiny app. (https://marionilab.cruk.cam.ac.uk/SpermatoShiny).
 
 To determine whether meiotic spermatocytes require ARID1A, we generated a germ cell-specific knock-out of Arid1a using the Stra8-Cre transgene (Stra8-C Tg/0) expressed in spermatogonia (Sadate-Ngatchou et al., 2008). Stra8-Cre was chosen among the available germ-cell-specific Cre lines to circumvent Arid1a haploinsufficiency during embryonic development. Stra8-Cre remains inactive during embryonic development when transmitted through females (Sadate-Ngatchou et al., 2008). The number of undifferentiated spermatogonia that stained positive for Promyelocytic leukemia zinc finger (PLZF+, also known as Zinc finger and BTB domain containing 16: ZBTB16) remained unchanged in Arid1a cKO testes (Figure 2—source data 1). The proportions of undifferentiated spermatogonia (PLZF+) with detectable (ARID1A+) and non-detectable (ARID1A-) levels of ARID1A protein determined by immunostaining on testes cryosections obtained from 1 month old Arid1afl/fl (control) and Arid1a cKO (CKO) males was 74% ARID1A- (CKO, n=179) and 26% ARID1A+ (CKO, n=65) as compared to 95% ARID1A+ (n=88) and 5% ARID1A- (n=5) in controls. Western blot analysis also showed a significant reduction in ARID1A protein in mutant pachytene spermatocytes (Figure 2—figure supplement 1). Therefore, the Arid1a conditional knockouts generated with a Stra8-Cre did not appear to impact earlier stages of spermatogenesis. Potential defects early in spermatogenesis might occur with an earlier-acting germline Cre transgene. In this case, an inducible Cre transgene would be needed, given the haploinsufficiency associated with Arid1a.
 
@@ -43,47 +51,142 @@ To address this question, we examined Arid1a transcripts isolated from Arid1a WT
 
 Furthermore, examining the meiotic profile associated with Arid1a cKO revealed an accumulation of mutant spermatocytes (ARID1A-), some at leptonema and zygonema and a majority at mid-pachynema relative to Arid1a WT spermatocyte spreads (Table 1). Some diplotene spermatocytes displaying a moderate reduction in ARID1A levels occurred in Arid1a cKO relative to Arid1a WT meiotic spreads and represent escapers due to inefficient Stra8-Cre activity (Table 1- bottom two lines with asterisks, also Figure 2—figure supplement 3B and C). However, diplotene and metaphase-I spermatocytes lacking ARID1A protein by IF were undetectable in the Arid1a cKO testes (Figure 2—figure supplement 3B). These results indicate that those spermatocytes lacking ARID1A arrest at the mid-pachytene stage. The spermatocytes that escape Cre activity progress to subsequent meiotic stages, giving rise to genotypically normal gametes. All round spermatids isolated from Arid1a cKO testes appeared only to express the normal transcript associated with the floxed allele (Figure 2—figure supplement 3A). Furthermore, our evaluation of the first round of spermatid development based on DNA content (1 C, 2 C, and 4 C), revealed a significantly reduced abundance of round spermatids (1 C) in mutant testes compared to wild-type testes. This finding, obtained through flow cytometry, supports the observed meiotic block at the pachytene stage (Figure 2—figure supplement 4A–B). Therefore, the perceived lack of a phenotype is an artifact of inefficient Stra8-Cre activity. But more importantly, the data indicate that ARID1A is essential for progression beyond pachynema.
 
-## ARID1A regulates the transcriptional silencing of the sex chromosomes at pachynema
+**Table 1.**
+ Meiotic profile of P23 the wild type floxed and the conditional mutant allele.The loss of ARID1A results in a pachytene arrest. Table outlining the distribution of P23 Arid1a WT and Arid1a cKO meiotic prophase-I profiles. SYCP3 staining determined meiotic staging. Co-staining of ARID1A identified mutant spermatocytes from escapers. The total number of spermatocytes scored included 166 for Aridafl/fl and 124 for Arid1a cKO. *denotes Arid1a cKO diplotene spermatocytes with partially reduced but not complete loss of ARID1A signal relative to controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Meiotic profile (P23)</th>
+      <th>Arid1afl/fl (n=166)</th>
+      <th>Arid1a cKO (n=124)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-Lep/Leptonema</td>
+      <td>3.6%</td>
+      <td>13.7%</td>
+    </tr>
+    <tr>
+      <td>Zygonema</td>
+      <td>-</td>
+      <td>15.3%</td>
+    </tr>
+    <tr>
+      <td>Early Pachynema</td>
+      <td>13.8%</td>
+      <td>12.9%</td>
+    </tr>
+    <tr>
+      <td>Mid Pachynema</td>
+      <td>22.8%</td>
+      <td>40.3%</td>
+    </tr>
+    <tr>
+      <td>Late Pachynema</td>
+      <td>7.2%</td>
+      <td>7.2%</td>
+    </tr>
+    <tr>
+      <td>Early Diplonema</td>
+      <td>28.5%</td>
+      <td>4.8%*</td>
+    </tr>
+    <tr>
+      <td>Late Diplonema</td>
+      <td>14.5%</td>
+      <td>5.6%*</td>
+    </tr>
+  </tbody>
+</table>
+
+### ARID1A regulates the transcriptional silencing of the sex chromosomes at pachynema
 
 The meiotic requirement of ARID1A and, more importantly, its association with the sex chromosomes at diplonema prompted us to examine its role in MSCI. We hypothesized that ARID1A might play a role in the transcriptional silencing of the sex-linked genes during meiosis. To address this question, we performed RNA-seq on Sta-Put purified populations of pachytene spermatocytes to profile changes in transcript abundance upon ARID1A deficiency. Differential analysis of gene expression using DeSeq2 (Love et al., 2014) revealed an equal proportion of significantly (FDR <0.05) misexpressed genes displaying either elevated (up-regulated, n=5824) or reduced (down-regulated, n=5821) transcript abundance in Arid1a cKO relative to Arid1a WT pachytene spermatocytes (Figure 2A and Figure 2—source data 2). Notably, we detected significant misexpression of 53% of all the sex-linked coding genes (593/1105) in response to an ARID1A deficiency. Amongst these, 86.4% displayed elevated expression (n=512), whereas only 13.6% displayed reduced (n=81) transcript abundance. This skew was even greater when only considering sex-linked genes misexpressed by a magnitude of 2 LOG-fold or higher. Here, 97% (297/306) of the misexpressed sex-linked genes displayed increased transcript abundance in response to an ARID1A deficiency. Therefore, ARID1A predominantly affects the repression of sex-linked genes during pachynema.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig2-v1.jpg)
+
+**Figure 2.:** (A) MA plot describing the LOG2-fold-change (LFC, y-axis) in mean expression (x-axis) of genes displaying significant (FDR ≤0.05, magenta dots) changes in Arid1a cKO relative to Arid1a WT pachytene spermatocytes. Dashed blue lines denote 2 LFC. Gray dots (FDR ≥0.05) depict non-significant changes in gene expression. (B) Violin plot describing the LOG2-fold-change (LFC, y-axis) in the median chromosome-wide gene expression (x-axis) in Arid1a cKO relative to Arid1a WT pachytene spermatocytes. The dashed blue line denotes no change in gene expression.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The Uniprot entry for Mouse ARID1A only indicates a large mol.wt sequence of ~242 kDa. There is no evidence to suggest that lower molecular weight isoforms may be translated. Although speculative, it is possible that the lower molecular weight bands represent proteolytic/proteasomal degradation products or products of antibody non-specificity. Nucleolin (NCL) is the loading control. Bars in B represent mean ± S.E.M. *; p<0.01 (n=3) (Unpaired Student’s t-test). The antibody used for the Western blot is a rabbit anti-ARID1A (D2A8U from Cell Signaling Technology 12354).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Histological examination of (A) PAS-stained seminiferous tubule sections and (B) H&E-stained cauda epididymal sections obtained from adult Arid1a WT and Arid1a cKO mice. The micrograph depicts seminiferous tubule staging and scale bars (50 μm). Magnification: ×40.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic (top) illustrating the region of Arid1afl allele spanning exons (ex) 4–8 (grey boxes) along with the location of loxP sites (solid magenta arrowheads) and primer annealing sites (blue arrows). (A bottom): analysis of the RT-PCR of Arid1a transcripts from STA-PUT purified populations of Arid1a WT and Arid1a cKO pachytene spermatocytes (left) and round spermatids (right). DNA electrophoresis gels indicate bands corresponding to the fl: floxed and Δ: excised PCR products. Arid1a WT and Arid1a cKO (B) testes cryosections and (C) spermatocyte spreads, immunolabelled for ARID1A (magenta), SYCP3 (green), and counterstained for DNA (blue). (B) Scale bar: 20 μm, magnification: ×63, P: Pachytene, D: Diplotene, and M-I: Metaphase-I spermatocytes. (C) Scale bar:15 μm, magnification: ×100. Brightness of the whole panels (B,C) were increased by compressing the dynamic range of the image panels using Adobe photoshop (0-1-255 to 0-1-150).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) The abundance of round spermatids on P26 was determined by measuring the 1 C DNA content through DNA staining and flow cytometry. (B) Bars represent the quantification of round spermatids (mean ± S.E.M.). *; p<0.01 (n=3) (Unpaired Student’s t-test).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A–B) Heatmap (bottom) and metaplot (top) displaying the average gene-wide enrichment of ARID1A associated with differentially expressed (A) autosomal and (B) sex-linked genes in Arid1a WT and Arid1a cKO pachytene spermatocytes. (A–B) The number of RefSeq annotations (n) associated with differentially regulated autosomal and sex-linked genes (rows) is indicated. Up-reg: misexpressed and Dn-reg: misrepressed genes in response to the loss of ARID1A. Average ARID1A CUT&RUN coverage was determined using two antibodies (anti-ARID1ASigma; anti-ARID1ACST) plotted across RefSeq genes ± 3 Kb.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Arid1a WT and Arid1a cKO spermatocyte spreads immunolabelled for ARID1A (magenta) and γH2Ax (green). Scale bar:15 μm, magnification: ×100. (B) Cross-section of adult (3-month-old) Arid1anWT and Arid1a cKO seminiferous tubules immunolabelled for ARID1A (green) and ATR (cyan). Scale bar:15 μm, magnification: ×63. (C) Arid1a WT and Arid1a cKO pachytene spermatocytes immunolabelled for MDC1 (magenta), SYCP3 (cyan), and ARID1A (green). Scale bar:15 μm, magnification: ×100. (A–B) DNA counterstained with DAPI (blue). Brightness of the whole image panel (C) was increased by compressing the dynamic range of the image panel using Adobe photoshop (0-1-255 to 0-1-150).
 
 An examination of changes in the average transcript abundance on a chromosome-wide basis showed that expression from the sex chromosomes was significantly higher than that from autosomes in response to the loss of ARID1A at pachynema (Figure 2B and Figure 2—source data 2). Therefore, ARID1A regulates the transcriptional repression of the sex chromosomes, implicating it in MSCI. ARID1A’s influence on sex-linked gene regulation may result from its association with the sex chromosomes, particularly during diplonema, where ARID1A hyper-accumulates on the XY. However, during pachynema, when MSCI initiates, ARID1A associates with the XY at autosomal levels as detected by IF (Figure 1). Therefore, it is possible that, at the onset of pachynema, local ARID1A association rather than chromosome-wide coating dictates its role in sex-linked gene repression.
 
 To address ARID1A’s association with the XY chromosomes, we determined its genomic localization at a higher resolution by CUT&RUN (cleavage under targets & release using nuclease) in pachytene spermatocytes. We detected ARID1A occupancy at promoters of differentially regulated target genes, irrespective of their chromosomal location, in Arid1a WT relative to Arid1a cKO (negative control) pachytene spermatocytes (Figure 2—figure supplement 5A). This result is consistent with the genome-wide distribution of ARID1A observed in pachytene spermatocyte spreads by IF (Figure 1). Although not detectable by IF, pachytene spermatocytes displayed a preferential association of ARID1A with promoters of normally repressed sex-linked genes, when detected by CUT&RUN (Figure 2—figure supplement 5B), emphasizing its role in MSCI.
 
-## ARID1A does not influence DNA damage response signaling on the sex body
+### ARID1A does not influence DNA damage response signaling on the sex body
 
 Unlike autosomal homologs that complete pairing during pachynema, the non-homologous regions of the sex chromosomes feature unrepaired DNA double-strand breaks (DSBs). These DNA DSBs recruit γH2Ax, a product of DNA damage response (DDR) signaling pathways essential for establishing and maintaining MSCI (Turner, 2007). Therefore, to determine whether ARID1A regulated MSCI by influencing DDR signaling, we first monitored the association of γH2Ax with the sex chromosomes in response to the loss of ARID1A. By IF, γH2Ax accumulation on the sex body appeared unperturbed in the mutant (ARID1A-) relative to escapers (ARID1A+) and Arid1a WT pachytene spermatocytes (Figure 2—figure supplement 6A). Consistent with this, the recruitment of ATR (ataxia telangiectasia and Rad3 related), a kinase known to phosphorylate γH2Ax and initiate MSCI (Royo et al., 2013; Turner et al., 2004), appeared normal in the absence of ARID1A. These data indicate that sex-linked DDR signaling occurred independently of ARID1A (Figure 2—figure supplement 6B). As expected, MDC1, a known γH2Ax reader that is essential for sex body formation (Ichijima et al., 2011), remained associated with the asynapsed sex chromosomes upon ARID1A deletion during pachynema (Figure 2—figure supplement 6C). These data indicate that the failure to silence sex-linked genes in response to a loss in ARID1A occurred in the presence of major DDR signaling factors known to govern sex body identity. It is possible that DDR signaling recruits BAF-A to the sex chromosomes.
 
-## ARID1A limits RNAPII localization to the sex chromosomes during pachynema
+### ARID1A limits RNAPII localization to the sex chromosomes during pachynema
 
 Apart from γH2Ax, the association of the sex chromosomes with RNA polymerase II (RNAPII) distinguishes the sex body from the autosomes during pachynema. Normally, pachytene spermatocytes display reduced levels of RNAPII on the sex body relative to autosomes (Khalil et al., 2004). This sub-nuclear localization of RNAPII coincides with increased transcriptional output, which peaks at diplonema (Ernst et al., 2019), underscoring the importance of targeted mechanisms regulating sex chromosome repression. Therefore, we were curious to test whether ARID1A influenced the nuclear localization of RNAPII during pachynema. We performed IF to monitor the localization of the actively transcribing (elongating) form of RNAPII marked by Serine2 phosphorylation (pSer2) on its carboxy-terminal domain (Noe Gonzalez et al., 2021). We monitored elongating RNAPII (pSer2) because its pausing regulates meiotic transcription (Alexander et al., 2023). By co-staining for RNAPII (pSer2) and SYCP3, we could stage pachynema and identify the sex chromosomes. While RNAPII (pSer2) localization to the autosomes appeared similar, we noticed increased levels of RNAPII (pSer2) association with the sex chromosomes in Arid1a cKO relative to Arid1a WT mid and late pachytene spermatocytes (Figure 3A). By quantifying the RNAPII (pSer2) signal generated by IF (Figure 3—source data 1), we detected a 1.5-fold increase (p=0.0003) in the average RNAPII (pSer2) fluorescence associated with the sex chromosomes in Arid1a cKO relative to Arid1a WT pachytene spermatocytes (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig3-v1.jpg)
 
-**Figure 3.:** (A) Arid1a WT and Arid1a cKO pachytene spermatocytes immunolabelled for pSer2-RNAPII (green), SYCP3 (cyan), and counterstained with DAPI (blue). Scale bar:15 μm, magnification: ×100. The sex chromosomes (white arrow) and sex body (yellow dashed circle) are labeled. Brightness of the whole image panel (A) was increased by compressing the dynamic range of the image panel using Adobe photoshop (0-1-255 to 0-1-150). (B) Dot plot describing the corrected total pSer2-RNAPII fluorescence (y-axis) measured from Arid1a WT (n=82) and Arid1a cKO (n=119) pachytene spermatocytes (3 replicates per genotype). Empty diamonds (magenta) represent independent data points. Significance determined by a two-tailed unpaired Student’s t-test p values. Data expressed as mean (black dot) ± SEM.Figure 3—source data 1.Quantitation of increased levels of RNAPII (pSer2) association with the sex chromosomes in Arid1a cKO relative to Arid1a WT mid and late pachytene spermatocyte.
+**Figure 3.:** (A) Arid1a WT and Arid1a cKO pachytene spermatocytes immunolabelled for pSer2-RNAPII (green), SYCP3 (cyan), and counterstained with DAPI (blue). Scale bar:15 μm, magnification: ×100. The sex chromosomes (white arrow) and sex body (yellow dashed circle) are labeled. Brightness of the whole image panel (A) was increased by compressing the dynamic range of the image panel using Adobe photoshop (0-1-255 to 0-1-150). (B) Dot plot describing the corrected total pSer2-RNAPII fluorescence (y-axis) measured from Arid1a WT (n=82) and Arid1a cKO (n=119) pachytene spermatocytes (3 replicates per genotype). Empty diamonds (magenta) represent independent data points. Significance determined by a two-tailed unpaired Student’s t-test p values. Data expressed as mean (black dot) ± SEM.
 
 Due to technical difficulties, we could not simultaneously stain for ARID1A alongside SYCP3 and RNAPII (pSer2), making distinguishing escapers from mutants in the Arid1a cKO meiotic spreads impossible. This result suggests that the 1.5-fold increase in RNAPII association with the sex body in Arid1a cKO relative to Arid1a WT pachytene spermatocytes is likely underestimated. Therefore, our results indicate that ARID1A facilitates sex-linked gene repression by limiting the association of elongating RNAPII with the sex chromosomes during pachynema.
 
-## ARID1A regulates promoter accessibility during pachynema
+### ARID1A regulates promoter accessibility during pachynema
 
 Next, we hypothesized that ARID1A-governed chromatin remodeling might underlie its role in limiting RNAPII accessibility on pachytene sex chromosomes. Therefore, we profiled changes in chromatin accessibility in response to the loss of ARID1A using ATAC-seq. Normally, ATAC-seq peaks (accessible chromatin) are mapped comparably across promoters (34%), intergenic (22.8%), and intronic (21.5%) regions. In contrast, the loss of ARID1A resulted in a dramatic shift towards predominantly promoter-associated ATAC-seq peaks with only a minority mapping to intergenic and intronic regions (Figure 4A and Figure 4—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig4-v1.jpg)
 
-**Figure 4.:** (A) Genomic associations of MACS2 derived ATAC-seq peak calls from Arid1a WT and Arid1a cKO pachytene spermatocytes. Percent (%) distribution of genomic annotations is indicated. (B–C) Heatmap (bottom) and metaplot (top) displaying the average ATAC-seq signal associated with differentially expressed (B) autosomal and (C) sex-linked genes in Arid1a WT and Arid1a cKO pachytene spermatocytes. (B–C) The number of RefSeq annotations (n) associated with differentially regulated genes (rows) is indicated. Up-reg: misexpressed, and Dn-reg: misrepressed genes in response to the loss of ARID1A. Average ATAC-seq coverage was plotted across RefSeq genes ± 3 Kb.Figure 4—source data 1.
+**Figure 4.:** (A) Genomic associations of MACS2 derived ATAC-seq peak calls from Arid1a WT and Arid1a cKO pachytene spermatocytes. Percent (%) distribution of genomic annotations is indicated. (B–C) Heatmap (bottom) and metaplot (top) displaying the average ATAC-seq signal associated with differentially expressed (B) autosomal and (C) sex-linked genes in Arid1a WT and Arid1a cKO pachytene spermatocytes. (B–C) The number of RefSeq annotations (n) associated with differentially regulated genes (rows) is indicated. Up-reg: misexpressed, and Dn-reg: misrepressed genes in response to the loss of ARID1A. Average ATAC-seq coverage was plotted across RefSeq genes ± 3 Kb.
 
 Consistent with an increase in the proportion of promoter-associated peaks, we detected an increase in accessibility across transcription start sites (TSS) associated with both autosomal and sex-linked differentially expressed genes (DEGs) in Arid1a cKO relative to Arid1a WT pachytene spermatocytes (Figure 4B and C). Furthermore, in the case of autosomal targets, chromatin accessibility at their TSSs was enhanced irrespective of their transcriptional status, appearing indistinguishable between down-regulated and up-regulated genes upon the loss of ARID1A (Figure 4B). In contrast, on the sex chromosomes, the loss of ARID1A seemed to have a prominent effect on TSS’s associated with up-regulated genes, which displayed greater chromatin accessibility relative to their down-regulated counterparts (Figure 4C). Therefore, the increased promoter accessibility of normally repressed sex-linked genes may underlie their persistent transcription by RNAPII upon the loss of ARID1A. Overall, these data highlight a role for BAF complexes in limiting promoter accessibility, especially on the sex chromosomes during pachynema.
 
-## ARID1A regulates the chromatin composition of the sex body
+### ARID1A regulates the chromatin composition of the sex body
 
 Chromatin remodelers regulate DNA accessibility by altering nucleosome positioning or composition (Clapier et al., 2017). The latter outcome is interesting in the context of MSCI, given that the sex body typically displays a striking enrichment of the variant histone H3.3 while concomitantly appearing depleted of the canonical histones H3.1/3.2 (van der Heijden et al., 2007; Yuen et al., 2014). Given that human ARID1A regulates H3.3 genomic associations (Reske et al., 2022), we tested whether a similar mechanism governed H3.3 localization to the sex chromosomes. To address this, we monitored H3.3 localization in pachytene spermatocytes by IF, simultaneously staining for ARID1A and HORMAD1. The former aided in mutant identification, while the latter labeled the pachytene sex chromosomes. Consistent with previous reports, H3.3 preferentially coats the sex chromosomes, distinguishing it from autosomal chromatin during normal pachynema (Figure 5A). Interestingly, this sex-body association of H3.3 was detected less frequently early in pachynema (17%), becoming more pervasive during the mid (70 %) and late (95%) stages of pachynema. In contrast, in the absence of ARID1A, H3.3 staining on the sex chromosomes was indistinguishable from their autosomal counterparts throughout pachynema (Figure 5A). Notably, the majority of mutant mid (89%) and late (77%) pachytene spermatocytes lacked the typical sex body enrichment of H3.3 (Figure 5A), indicating that ARID1A dictates the preferential accumulation of H3.3 on the sex body.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig5-v1.jpg)
+
+**Figure 5.:** (A–B) Arid1a WT and Arid1a cKO pachytene spermatocytes immunolabelled for HORMAD1 (magenta), (A) ARID1A (cyan) and H3.3 (green), (B) ARID1A (green) and H3.1/3.2 (cyan). (A–B) Proportion (%) of Arid1a WT and Arid1a cKO early, mid, and late pachytene spermatocytes displaying distinct (A) H3.3, (B) H3.1/3.2 localization patterns with the sex body. For H3.3 immunostaining, the total number of Arid1a WT pachytene spermatocytes: early = 144, mid = 274, late = 95; Arid1a cKO pachytene spermatocytes: early = 43, mid = 86, late = 55, were scored, from three replicates each. For H3.1/3.2 immunostaining, the total number of Arid1a WT pachytene spermatocytes: early = 91, mid = 124, late = 45; Arid1a cKO pachytene spermatocytes: early = 22, mid = 116, late = 58, were scored, from three replicates each. DNA counterstained with DAPI (blue). The sex chromosomes (yellow arrow) and sex body (yellow dashed circle) are labeled. Scale bar:15 μm, magnification: ×100. Brightness of the whole image panel (Figure 5) was increased by compressing the dynamic range of the image panels using Adobe photoshop (0-1-255 to 0-1-150).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blots on acid-extracted histones obtained from four independent replicates of P19 Arid1a WT and Arid1a cKO spermatogenic cells, displaying H3.3 abundance. Total histone levels from each sample are displayed. (B) Arid1a WT and Arid1a cKO pachytene spermatocytes immunolabelled for HORMAD1 (magenta), DAXX (cyan), and ARID1A (green). DNA counterstained with DAPI (blue). The sex chromosomes (yellow arrow) and sex body (yellow dashed circle) are labeled. Scale bar:15 μm, magnification: ×100. (C) Arid1a WT and Arid1a cKO testis cryosections immunolabelled for ARID1A (magenta) and HIRA (green). DNA counterstained with DAPI (blue). Representative mutant (white arrows) and escaper (yellow arrows) pachytene spermatocytes labeled in Arid1a cKO testis cryosection. Scale bar: 15 μm, magnification: 63 x. Brightness of the whole panels (B, C) were increased by compressing the dynamic range of the image panels using Adobe photoshop (0-1-255 to 0-1-150).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Genomic associations of MACS2 H3.3 peak calls from Arid1a WT and Arid1a cKO pachytene spermatocytes. Percent (%) distribution of genomic annotations is indicated. (B–C) Heatmap (bottom) and metaplot (top) displaying the average H3.3 signal associated with differentially expressed (B) autosomal and (C) sex-linked genes in Arid1a WT and Arid1a cKO pachytene spermatocytes. (B–C) The number of RefSeq annotations (n) associated with differentially regulated genes (rows) is indicated. Up-reg: misexpressed, and Dn-reg: misrepressed genes in response to the loss of ARID1A. Average H3.3 coverage plotted across RefSeq genes ± 3 Kb.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** H33 CUT&RUN coverage from Arid1a WT (green tracks) and Arid1a cKO (Orange tracks) pachytene spermatocytes. Solid red bars and yellow highlights denote H3.3 peak calls (MACS2) from Arid1a WT and Arid1a cKO pachytene spermatocytes. Vertical viewing limits within parentheses.
 
 Next, we were curious to know the consequence of reduced H3.3 association on H3.1/3.2 occupancy on the sex body in response to the loss of ARID1A. We performed IF to monitor the association of H3.1/3.2 with the sex chromosomes marked by HORMAD1 in response to the loss of ARID1A. Like H3.3, canonical H3.1/3.2 appeared uniformly distributed genome-wide in most early pachytene spermatocytes (92%). At the onset of pachynema, sex chromosomes mostly displayed comparable H3.3 and H3.1/3.2 levels (Figure 5A and B). However, this balance changed during the subsequent sub-stages of pachynema. Although robust H3.3 levels remained, H3.1/3.2 appeared excluded from the sex chromosomes in most mid (56%) and all late pachytene spermatocytes (Figure 5A and B). In contrast, the loss of ARID1A increased the proportion of mid (66%) and late (40%) pachytene spermatocytes retaining H3.1/3.2 on sex-linked chromatin (Figure 5B). The abnormal retention of canonical H3.1/3.2 coincides with a lack of H3.3 enrichment on sex-linked chromatin in response to the loss of ARID1A.
 
 To determine whether these abnormal kinetics result from a genome-wide deficiency in H3.3, we compared its levels by western blotting to find no difference in H3.3 abundance in Arid1a cKO relative to Arid1a WT spermatocyte enriched populations (Figure 5—figure supplement 1A). We also considered an alternative possibility that ARID1A might promote the sex-linked enrichment of H3.3 by influencing the expression of cognate chaperones like DAXX and HIRA during murine pachynema (Rogers et al., 2004; van der Heijden et al., 2007). We addressed this by monitoring DAXX and HIRA levels in response to the loss of ARID1A using IF. In the case of DAXX, we examined meiotic spreads to find no changes in either the overall levels or sex chromosome localization of DAXX in response to the loss of ARID1A (Figure 5—figure supplement 1B). The same was also true of HIRA, whose levels and nuclear localization in mutants appeared comparable to that seen in escaper (from Arid1a cKO) and normal (Arid1a WT) spermatocytes (Figure 5—figure supplement 1C). Therefore, ARID1A impacts H3.3 accumulation on the sex chromosomes without affecting its expression during pachynema. Overall, our data suggest that ARID1A influences MSCI by regulating the composition of sex-linked chromatin.
 
-## ARID1A prevents the promoter accumulation of H3.3
+### ARID1A prevents the promoter accumulation of H3.3
 
 To define the changes in the sex-linked associations of H3.3 at a higher resolution, we performed CUT&RUN on pachytene spermatocytes isolated from Arid1a WT and Arid1a cKO testes. Despite the appearance of a robust H3.3 IF signal from the sex body during normal pachynema (Figure 5A), the Macs2 peak caller (Zhang et al., 2008) identified very few sex-linked peaks (n=224). These peaks were overwhelmingly associated with intergenic regions (Figure 5—figure supplement 2A). Comparatively, a dramatically higher number of peaks (n=12183) primarily associated with genic (promoter, intron, and exon) regions occurred in Arid1a cKO pachytene spermatocytes (Figure 5—figure supplement 2A). More interestingly, there appeared to be a shift from few but overwhelmingly sex-linked H3.3 peaks (n=224; 98%) to autosomal H3.3 peaks (n=11512; 94.5 %) in response to the loss of ARID1A (Figure 5—figure supplement 2A). Additionally, while the proportion of H3.3 sex-linked peaks in Arid1a cKO pachytene spermatocytes was few (n=671; 5.5%), they outnumbered their Arid1a WT counterparts by threefold. These data suggest that the loss of ARID1A strongly influences H3.3 genomic associations.
 
@@ -91,9 +194,17 @@ Due to the increased representation of promoter-associated peaks in response to 
 
 Unlike the sex-linked targets, TSSs of ARID1A-regulated autosomal genes displayed H3.3 enrichment relative to the IgG control (Figure 5—figure supplement 2C, Figure 5—figure supplement 3B - bottom). However, this TSS occupancy appeared enhanced in Arid1a cKO relative to Arid1a WT pachytene spermatocytes (Figure 5—figure supplement 2C, Figure 5—figure supplement 3B). Therefore, TSSs of both sex-linked and autosomal gene targets display concordant changes in H3.3 occupancy. Overall, ARID1A occupancy at TSSs (Figure 2—figure supplement 5) of differentially regulated genes prevents the accumulation of H3.3 at target promoters.
 
-## ARID1A restricts H3.3 occupancy to intergenic regions on the sex chromosomes
+### ARID1A restricts H3.3 occupancy to intergenic regions on the sex chromosomes
 
 Our analysis of the genome-wide localization of H3.3 in response to the loss of ARID1A would argue that the abnormal increase in promoter-associated H3.3 results from its redistribution from high-affinity sites (peaks) that are predominantly sex-linked and intergenic during normal pachynema (Figure 5—figure supplement 2A, Figure 5—figure supplement 3). We focused our attention on these H3.3-occupied intergenic sex-linked sites. Although the Macs2 algorithm identified only 224 sex-linked intergenic peaks, we speculated that this approach filtered out regions enriched for H3.3 that failed to meet the peak calling threshold compounded by the pervasive spreading of H3.3 on the sex chromosomes (Figure 5A, Figure 5—figure supplement 2B, Figure 5—figure supplement 3A). We adopted an alternative strategy that involved identifying potential H3.3 bound sites by monitoring their occupancy at ARID1A-governed accessible chromatin (Figure 4A). We compared Arid1a WT and Arid1a cKO pachytene spermatocyte-associated ATAC-seq peaks to identify mutually exclusive and overlapping peaks using BEDTools (Quinlan and Hall, 2010). The resulting peaks cluster into lost (n=9), common (n=7194), or gained (n=2246) based on their absence, persistence, or appearance, respectively, in Arid1a cKO relative to Arid1a WT pachytene spermatocytes (Figure 6A). Next, we examined the ATAC-seq signal at these regions to find an increase in accessibility at gained peaks as expected and at common peaks in Arid1a cKO relative to Arid1a WT pachytene spermatocytes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Heatmaps (bottom) and metaplots (top) displaying average (A) chromatin accessibility (purple heatmap) and H3.3 enrichment (green heatmap) associated with lost, common, and gained ATAC-seq peak calls (MACS2), (B) enrichment of H3.3 at k-means clusters associated with common (C1-C4, left) and gained (G1-G4, right) ATAC-seq peaks, in Arid1a WT and Arid1a cKO pachytene spermatocytes. (A–B) ATAC-seq and H3.3 coverage plotted over a 5 Kb window centered at ATAC-seq peaks (MACS2). Number of ATAC-seq peak calls (n) associated with each category is indicated.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Genomic associations of common (C1–C4) and gained (G1–G4) k-means clusters in pachytene spermatocytes. Percent (%) distribution of genomic annotations is indicated. (B) Results of PRDM9 motif enrichment analyses at gained (G1 and G3), k-means clusters (top), and plots describing the frequency of PRDM9 motifs (y-axis) spanning a 5 Kb window centered at ATAC-seq peaks (x-axis) associated with gained (middle) and common (bottom) k-means clusters that are either deficient (orange trend line) or enriched (cyan trend line) for H3.3 occupancy. Trend lines were generated using generalized additive mode smoothing (gam). 95% confidence interval (gray shading) is indicated. (C–D) Heatmaps displaying testes DMC1 (left) and pachytene spermatocyte associated H3K4me3 (right) enrichment relative to input at k-means clusters associated with (C) gained (G1–G4), and (D) common (C1–C4) ATAC-seq peaks. (C–D) DMC1 and H3K4me3 coverage plotted over a 10 Kb window centered at ATAC-seq peaks (MACS2).
 
 Despite being labeled as lost, these regions did not display the expected loss in ATAC-seq signal in Arid1a cKO relative to Arid1a WT pachytene spermatocytes (Figure 6A, left panel). The ATAC signal appears unchanged, highlighting the possibility that lost regions were labeled as such because they failed to satisfy Macs2 peak thresholds in Arid1a cKO pachytene spermatocytes, especially given the comparatively higher magnitude of ATAC signal surrounding the common and gained peaks (Figure 6A, left panel). We restricted our analysis to common and gained sites constituting 99% of sex-linked regions subject to ARID1A-regulated chromatin accessibility.
 
@@ -101,7 +212,7 @@ By plotting the average H3.3 coverage at sites associated with common and gained
 
 In contrast, those that gained significant H3.3 localization (represented by C3, C4, and G1 +G3) distributed differentially between intergenic and genic regions (Figure 6—figure supplement 1A). Therefore, these data support our idea that ARID1A restricts H3.3 occupancy primarily to intergenic sites on the sex chromosomes. Furthermore, the loss of ARID1A triggers an abnormal redistribution of H3.3 to genic regions. Therefore, the increased promoter occupancy of H3.3 is an indirect consequence of ARID1A loss.
 
-## ARID1A-governed H3.3 localization influences the sex-linked association of DMC1
+### ARID1A-governed H3.3 localization influences the sex-linked association of DMC1
 
 To gain further insight into the mechanisms regulating H3.3 associations on the sex chromosomes, we examined the regions associated with various k-means clusters to investigate the enrichment of relevant motifs. To our surprise, we detected an enrichment of the motif associated with the DSB hotspot specifier, PRDM9 (PR domain-containing protein 9), in clusters related to gained peaks, G1 and G3 (Figure 6—figure supplement 1B, top). Additionally, we observed an increased frequency of PRDM9 motif centered at gained ATAC-seq peaks associated with G1 and G3 (Figure 6—figure supplement 1B, middle).
 
@@ -110,6 +221,14 @@ Interestingly, regions associated with G1 and G3 are usually devoid of H3.3 (Fig
 Since the PRDM9 motifs identified from SSDS (Single-Stranded DNA Seq) data were generated to map the genomic associations of DNA repair factor DMC1 (Brick et al., 2012), we monitored its enrichment at the various k-means clusters. We also monitored the association of markers of meiotic DNA DSBs, such as the PRDM9 catalyzed H3K4me3 at common and gained k-means clusters using published ChIP-seq data from pachytene spermatocytes (Maezawa et al., 2018a). Consistent with the motif analyses, DMC1 occupancy and H3K4me3 enrichment occurred at gained and common ATAC-seq peaks associated with k-means clusters, normally devoid of H3.3, namely, G1, G3, G4, C3, and C4 (Figure 6—figure supplement 1C, D).
 
 These data suggest that ARID1A might indirectly influence DNA DSB repair on the sex chromosomes by regulating the localization of H3.3. To test this conclusion, we monitored the association of DMC1 on the sex chromosomes in response to the loss of ARID1A by IF. Normally, DMC1 foci appear distributed along the non-homologous arms of the X and Y chromosomes from early to mid-pachynema, only disappearing by late pachynema (Figure 7A, left, panel insets; Moens et al., 2002). In contrast, in the absence of ARID1A, we observed a marked reduction in the number of DMC1 foci (Figure 7A, right, panel insets). Quantification of DMC1 foci in Arid1a cKO relative to Arid1a WT pachytene spermatocytes revealed a significant decrease in the sex-linked association of DMC1 in the absence of ARID1A (Figure 7B, Figure 7—source data 1). Along with DMC1, the mitotic DNA recombinase, RAD51, is also known to localize to the non-homologous arms of the sex chromosomes (Moens et al., 1997; Moens et al., 2002). Therefore, we determined whether ARID1A also influenced the sex-linked association of RAD51. First, we analyzed previously generated RAD51-SSDS data (Hinch et al., 2020) to monitor its enrichment across the various k-means clusters associated with common and gained ATAC-seq peaks. Unlike DMC1, we found no detectable levels of RAD51 at any k-means clusters (Figure 7—figure supplement 1A). Furthermore, the formation of RAD51 foci along the asynapsed axes of the sex chromosomes appeared unchanged in Arid1a cKO relative to Arid1a WT pachytene spermatocytes (Figure 7—figure supplement 1B). Therefore, ARID1A is necessary for the normal sex-linked association of DMC1 but not RAD51. More importantly, our data highlight a dual role for ARID1A in regulating sex chromosome repression and DNA repair (Figure 8).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig7-v1.jpg)
+
+**Figure 7.:** (A) Arid1a WT and Arid1a cKO pachytene spermatocytes immunolabelled for HORMAD1 (magenta), ARID1A (green), DMC1 (cyan), and counterstained with DAPI (blue). Scale bar:15 μm, magnification: ×100. A magnified view of the sex chromosomes is indicated (yellow dashed square). (B) Dot plot displaying the number of sex-linked DMC1 foci (y-axis) quantified from Arid1a WT (n=66) and Arid1a cKO (ARID1A-, n=75) pachytene spermatocytes, obtained from three replicates each. Empty diamonds (magenta) represent independent data points. Significance determined using a two-tailed unpaired Student’s t-test p values. Data expressed as mean (black dot) ± SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Heatmaps displaying testes RAD51 enrichment relative to input at k-means clusters associated with gained (G1-G4, left) and common (C1-C4, right) ATAC-seq peaks. RAD51 coverage plotted over a 10 Kb window centered at ATAC-seq peaks (MACS2). (B) Arid1a WT and Arid1a cKO pachytene spermatocytes immunolabelled for HORMAD1 (magenta), RAD51 (green) and counterstained with DAPI (blue). Scale bar:15 μm, magnification: ×100. Yellow arrows and dashed circles label the sex chromosomes.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/88024/elife-88024-fig8-v1.jpg)
 
@@ -133,15 +252,263 @@ ARID1A did not appear necessary for sex-linked DNA DSB formation. In contrast, t
 
 .
 
-## Generation of Arid1a conditional mutant mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (mouse)</td>
+      <td>Arid1atm1Mag/MmncRRID:MMRRC_041418-UNC</td>
+      <td>Nat Commun. 2015 Jan 27;6:6118.(PMID:25625625)</td>
+      <td>MMRRC Stock number: 041418-UNC</td>
+      <td>Genotyping primers: Arid1afl/+ alleles - (F)- 5' - CTAGGTGGAAGGTAGCTGACTGA –3'; (R) 5' - TACACGGAGTCAGGCTGAGC –3' (PCR product sizes- fl: 300 bp; +: 200 bp)</td>
+    </tr>
+    <tr>
+      <td>Strain (mouse)</td>
+      <td>Stra8-CreRRID;IMSR_JAX:008208</td>
+      <td>Genesis. 2008 Dec;46(12):738–42PMID:18850594</td>
+      <td>JAX Stock # 008208</td>
+      <td>Stra8-Cre - (F) 5' -GTGCAAGCTGAACAACAGGA-3', (R) 5' -AGGGACACAGCATTGGAGTC-3' (PCR product size- Cre: 150 bp)</td>
+    </tr>
+    <tr>
+      <td>Gene (mouse)</td>
+      <td>Arid1a cDNA</td>
+      <td>This Report</td>
+      <td></td>
+      <td>primers: (F)- 5' - TCCAGTAAGGGAGGGCAAGAAGAT –3'; (R) 5' - GTAGTTGGCGTTGGGCAAGGCATTA –3' (PCR product sizes- fl: 612 bp; Δ: 281 bp)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- ARID1ARRID:AB_1078205(Rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #HPA005456</td>
+      <td>IF (1:500)CUT&amp;RUN (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- ARID1A (clone D2A8U)RRID:AB_2637010(Rabbit monoclonal)</td>
+      <td>Cell signaling technology</td>
+      <td>Cat #12354</td>
+      <td>IF (1:500)CUT&amp;RUN (1:25)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- SYCP3 (Cor10G1f1/7)RRID:AB_10678841(Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab97672</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-Histone H2A.X, (Ser139) (clone JBW301)RRID:AB_309864(Mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #05–636</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATR (N-19)RRID:AB_630893(Goat polyclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Cat # sc-1887</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MDC1RRID:AB_323725(Sheep polyclonal)</td>
+      <td>AbD Serotec</td>
+      <td>AHP799</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RNA pol II CTD phospho Ser-2 (clone 3E10)RRID:AB_2687450(Rat monoclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat #61084</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- HORMAD1(Guinea Pig polyclonal)</td>
+      <td>Gift from Dr. Atilla Töth, TU Dresden; Wojtasz et al., 2009</td>
+      <td>PMID:19851446</td>
+      <td>IF (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- H3F3B (Clone 2D7-H1)RRID:AB_425473(Mouse monoclonal)</td>
+      <td>Abnova</td>
+      <td>Cat #H00003021-M01</td>
+      <td>IF (1:200)CUT&amp;RUN (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- Histone H3.3 (Clone RM190)RRID:AB_2716425(Rabbit monoclonal)</td>
+      <td>RevMAb Biosciences</td>
+      <td>Cat #31-1058-00</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- Histone H3.1/3.2 (clone 1DA4F2)RRID:AB_2793710(Mouse monoclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat #61630</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DAXXRRID:AB_2618529(mouse monoclonal)</td>
+      <td>Developmental studies hybridoma bank</td>
+      <td>Cat #PCRP-DAXX-2B3</td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HIRA(clone WC119.2H11)RRID:AB_2793256(Mouse monoclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat #39558</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- DMC1(clone 2D5C9)RRID:AB_2882472(Mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat #67176–1-Ig</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- RAD51RRID:AB_2665405(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab176458</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NucleolinRRID:AB_533463(Rabbit polyclonal)</td>
+      <td>Bethyl</td>
+      <td>Cat #A300-711A</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG, Alexa fluor 488RRID:AB_2534088(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-11029</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG, Alexa fluor 568RRID:AB_10563566(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-11036</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat IgG, Alexa fluor 633RRID:AB_2535739(Donkey polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-21082</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-sheep IgG, Alexa fluor 594RRID:AB_2534083(Donkey polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-11016</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-guinea pig IgG, Alexa fluor 568RRID:AB_2534119(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-11075</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- rat IgG, Alexa fluor 488RRID:AB_2534074(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-11006</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG1, Alexa fluor 647RRID:AB_2535809(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-21240</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- rabbit IgG, Alexa fluor 488RRID:AB_143165(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-11008</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG2b, Alexa fluor 647RRID:AB_2535811(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-21242</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- rabbit IgG, Alexa fluor 647RRID:AB_2535813(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-21245</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG2a, Alexa fluor 647RRID:AB_2535810(Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #A-21241</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRdye 800CW anti-rabbitRRID:AB_2651127(Goat polyclonal)</td>
+      <td>LI-COR</td>
+      <td>Cat #925–32211</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure anti-Mouse IgG (H+L)RRID:AB_2340033(Rabbit polclonal)</td>
+      <td>JacksonImmunoResearch</td>
+      <td>Cat #315-005-003</td>
+      <td>CUT&amp;RUN (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG (H+L)RRID:AB_11024108(Guinea pig polyclonal)</td>
+      <td>Novus biologicals</td>
+      <td>Cat #NBP1-72763</td>
+      <td>CUT&amp;RUN (1:100)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of Arid1a conditional mutant mice
 
 Generation of the Arid1atm1Mag/Mmnc mutant allele was previously described (Chandler et al., 2015). The mice are available through the regional mutant mouse resource and research center (MMRRC; Stock number: 041418-UNC; https://www.mmrrc.org). Arid1a floxed mice (Arid1atm1Mag/Mmnc) exist on a CD1 genetic background. Crosses with testes-specific Stra8-Cre mice (expressed in P3 spermatogonia) (Sadate-Ngatchou et al., 2008) resulted in conditional knockouts. Arid1afl/fl; Stra8- Cre Tg/0 females were crossed to either Arid1afl/+ or Arid1afl/fl males to obtain Arid1afl/fl; Stra8-Cre Tg/0 (Arid1a cKO) and either Arid1afl/fl or Arid1afl/+ (Arid1a WT) males. Haploinsufficiency associated with Arid1a negated the possibility of transmitting the Cre through the paternal germline. Genotyping primers: Arid1afl/+ alleles - (F)- 5' - CTAGGTGGAAGGTAGCTGACTGA –3'; (R) 5' - TACACGGAGTCAGGCTGAGC –3' (PCR product sizes- fl: 300 bp; +: 200 bp), and Stra8-Cre - (F) 5' -GTGCAAGCTGAACAACAGGA-3', (R) 5' -AGGGACACAGCATTGGAGTC-3' (PCR product size- Cre: 150 bp). Mice were housed with a 12 hr light cycle (temperature - 20-24o C, humidity - 30–70%). All animal work followed approved UNC Chapel Hill IACUC protocols.
 
-## Histology
+### Histology
 
 Arid1a WT and Arid1a cKO testes and cauda epididymites were fixed overnight in Bouins solution (Fisher Scientific Ricca chemical; 11–201) at 4o C, followed by dehydration in ethanol series (50%, 70%, and 100%) before embedding in paraffin. The animal histopathology core prepared stained tissue sections (hematoxylin and eosin for cauda epididymites; Periodic acid-Schiff for testes). Staining and morphology determined seminiferous tubule staging (Ahmed and Rooij, 2009; Meistrich and Hess, 2013). A summary of staging is provided (Figure 2—figure supplement 2—source data 1).
 
-## Immunofluorescence staining of testis cryosection and spermatocyte spreads
+### Immunofluorescence staining of testis cryosection and spermatocyte spreads
 
 Testes cryosections and spermatocyte spreads from juvenile (P18, P19, and P26) and adult Arid1a WT and Arid1a cKO mice were examined with indirect immunofluorescence (IF). 8–10 μm thick cryosections of testes were prepared using published methods (Menon et al., 2021). Whole testes were fixed in 10% neutral buffered formalin (NBF) at 4°C for 20 min. They were cut in half, followed by 40 min of incubation in 10% NBF. Fixed tissues were washed three times (10 min per wash) in room temperature (RT) phosphate-buffered saline (PBS) pH7.4. The tissues were then treated with a series of sucrose washes - 10% (30 min), 20% (30 min), and 30% (1 hr). Tissues were then incubated at 4°C overnight in a 1:1 ratio of a solution of 30% sucrose/optimum cutting temperature (OCT, Tissue-Tek; 62550–01), followed by embedding in OCT, sectioning, and storage at –80° C. Before immunostaining, cryosections were thawed on a heating block at 42° C, rehydrated for 10 min in PBS, and incubated in 10 mM citric acid buffer (pH6.0) for 10 min at 80–90°C (antigen retrieval), during which addition of fresh citrate buffer (80–90°C) occurred every 2 min, and then allowed to cool for 20 min. For immunostaining, cryosections were incubated overnight in a humidified chamber with primary at 4°C and then followed by a secondary antibody incubation at RT for 1 hr (see Key Resource Table for antibody source). Sera were diluted with antibody dilution buffer in PBS (ADB: 3% bovine serum albumin; 10% goat serum; 0.5% Triton-X 100). Two identical blocking steps preceded antibody incubations. These steps involved sequential incubations in (i) PBS, (ii) PBS/0.1% Triton-X 100, and (iii) blocking solution (1:10 dilution of ADB in PBS) for 10 min each at RT. Immunostained slides were washed twice in Kodak Photo-Flo 200 (PBS/0.32%), counterstained with DAPI, washed again in PBS/0.32% Photo-Flo 200, and then mounted in Prolong Gold antifade medium (P-36931; Life Technologies).
 
@@ -151,48 +518,48 @@ Fluorescence intensity measurements and object (foci) counting were performed wi
 
 For counting axial DMC1 foci, images were cropped to an area encompassing the sex chromosomes. Cropped images were converted to 8-bit grayscale, and the DMC1 fluorescent channel selected for further processing. An ROI was set, manual thresholding was performed to select DMC foci, and noise (speckles) removed using the Fiji median filter tool with a radius set to 2.0–4.0. Finally, DMC1 was enumerated with the count particles tool. Statistical significance was calculated using an unpaired student’s t-test. Metadata associated with the quantification of RNAPII (pSer2) fluorescence and DMC1 foci are provided (Figure 7—source data 1).
 
-## Preparation of acid-extracted histones and western blotting
+### Preparation of acid-extracted histones and western blotting
 
 Histones from P19 Arid1a WT and Arid1a cKO spermatogenic cells were acid-extracted using published methods (Shechter et al., 2007). Seminiferous tubules were digested in 1 mL of Enriched Krebs-Ringer Bicarbonate (EKRB) Medium (EKRB salts - 1.2 mM KH2PO4, 1.3 mM CaCl2, 119.4 mM NaCl, 4.8 mM KCl, 1.2 mM MgSO4, 11.1 mM Dextrose; 25.2 mM NaHCO3; 1 X essential amino acids -Invitrogen, 11130051; 1 X non-essential amino acids-Gibco,11140050) supplemented with 0.5 mg/mL collagenase (10 min, rotated at 32 °C). Digested tubules sedimented by gravity for 5 min at RT. The supernatant was removed, tubules were resuspended in 1 mL EKRB medium, and then settled for 5 min at RT. The sedimented tubules were transferred to 1 mL EKRB medium supplemented with 0.025% trypsin and 4 µg/mL DNase-I. The suspension was incubated for 10 min on a rotator at 32°C. Digestion was halted with 10% Fetal bovine serum (FBS), and single-cell suspensions were prepared by pipetting the slurry and then filtering it sequentially through 70 µm and 40 µm filters. Cells were pelleted at 600 × g for 5 min, washed once in PBS, and processed for histone extraction. Briefly, cell pellets were resuspended in 1 mL hypotonic lysis buffer (10 mM Tris-Cl pH8.0, 1 mM KCl, 1.5 mM MgCl2, 1 mM DTT) and incubated on a rotator at 4°C for 30 min. Nuclei were pelleted at 10,000 × g for 10 min at 4o C. Nuclear pellets were resuspended in 400 µL 0.2 N HCl and incubated for 1 hr at 4 °C, followed by centrifugation at 14,000 × g for 10 min at 4°C to isolate supernatants containing histones that were precipitated with Trichloroacetic acid (TCA), and then added to the nuclear suspension at a final concentration of 33% and incubated on ice for 30 min. Precipitated histones were pelleted at 14,000 × g for 10 min at 4°C and washed two times in 1 mL ice-cold acetone. Finally, washed histones were air-dried at RT for 20 min and resuspended in 100 µL ddH2O. Histones were separated on a 15% SDS-polyacrylamide gel for Western blots and transferred to a PVDF (Polyvinylidene Difluoride) membrane using a semi-dry transfer apparatus (Bio-Rad). Sample loading was assessed by REVERT total protein stain (LI-COR, 926–11010). Blots were scanned on a LI-COR Odyssey CLx imager and viewed using Image Studio Version 5.2.5. Antibodies and their corresponding dilutions are listed in the Key Resource Table.
 
-## Isolation of pachytene spermatocytes by the Sta-Put method of unit gravity and western blotting
+### Isolation of pachytene spermatocytes by the Sta-Put method of unit gravity and western blotting
 
 Pachytene spermatocytes were purified from Arid1a WT and Arid1a cKO adult testis by the unit gravity sedimentation procedure using a Sta-Put apparatus (Bellvé, 1993; O’Brien, 1993). Testis from at least 12 adult males (>P60) were dissected into EKRB, decapsulated, and digested in 0.5 mg/mL collagenase for 15 min at 32°C. The resulting tubules were gently washed with EKRB and digested with 0.25 mg/ml trypsin supplemented with 4 µg/mL DNase for 15 min at 32°C. Following trypsin incubation, additional DNase (4 µg/mL) was added to reduce viscosity further. Samples were triturated for 3 min with a plastic transfer pipet to fragment flagella, break intercellular bridges between germ cells, and further disperse cells into suspension. Trypsin digestion was stopped by adding 0.25 mg/mL trypsin inhibitor (Sigma/EPRO, T9003), and cell aggregates were removed by filtration using 40 µm cell strainers. Cells from the flow-through were pelleted at 500 × g for 5 min at 4°C, resuspended in EKRB +0.5% BSA, and adjusted to a 3.33x108 cells/mL density. 109 cells from this single-cell suspension were loaded onto a 2–4% linear BSA gradient and allowed to sediment in the Sta-Put apparatus at 4°C. After 2 hr and 40 min of undisturbed sedimentation, 10 ml fractions were collected at 45 s per tube. Fractions were pelleted at 500 × g for 5 min at 4 °C and resuspended in 1 ml EKRB +0.5% BSA. Fractions containing >80% pachytene spermatocytes were identified by light microscopy, pooled, and stored in cryoprotective media (DMEM supplemented with 10%FBS and 20%DMSO) at –80°C pending further analysis.
 
 Pachytene spermatocytes obtained were resuspended in RIPA buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl, 1% NP-40, 0.5% Sodium deoxycholate, 0.1% SDS, 5 mM NaF, 1 mM Na3VO4, 1 mM Phenylmethylsulfonyl fluoride (PMSF), 1 X Protease inhibitor cocktail (Sigma)) at 4 °C and sonicated for 15 min followed by centrifugation at 12000 x g for 10 min at 4°C. Western blotting was performed by separating samples in 5% SDS-polyacrylamide gel and transferring to PVDF (polyvinylidene difluoride) membranes (Bio-Rad) overnight. Blots were scanned on a LI-COR Odyssey CLx imager. Image Studio Version 5.2.5 was used to view blots and quantify band intensity. Antibodies and their corresponding dilutions are listed in the Key Resource Table.
 
-## Flow cytometry
+### Flow cytometry
 
 To analyze isolated spermatocytes, the cells were resuspended in Hank’s balanced salt solution (HBSS) (106 cells/ml) at 4 °C and stained with Live-or-Dye 615/740 fixable viability stain (Biotium) for 30 min. After washing the cells three times with HBSS, they were fixed for 1 hr and permeabilized using eBioscience Foxp3 /Transcription Factor Staining Buffer Set (ThermoFisher). DNA was stained using Vybrant DyeCycle Violet Stain (Thermo Fisher; 1:1000) and analyzed by flow cytometry using LSRFortessa (BD Biosciences). FCS files were obtained and analyzed using FlowJo software.
 
-## RNA extraction and RT-PCR
+### RNA extraction and RT-PCR
 
 Total RNA was isolated in TRIzol reagent (Invitrogen, 15596026) from Sta-Put purified fractions enriched for pachytene spermatocytes and round spermatids. The extracted RNA was purified using the Direct-zol RNA kit (Zymo, R2050). cDNA was synthesized using a random primer mix (New England Biolabs, S1330S) and ProtoScript II reverse transcriptase (New England Biolabs, M0368L). RT-PCR was performed on 1:10 cDNA dilutions using Sso Fast EvaGreen supermix (Bio-Rad, 172–5280) on a thermocycler (Bio-Rad, C1000). Amplicons associated with either floxed or excised Arid1a cDNA’s were detected using primers: (F)- 5' - TCCAGTAAGGGAGGGCAAGAAGAT –3'; (R) 5' - GTAGTTGGCGTTGGGCAAGGCATTA –3' (PCR product sizes- fl: 612 bp; Δ: 281 bp).
 
-## RNA-seq
+### RNA-seq
 
 RNA was extracted and purified in quadruplicate from frozen pellets of Arid1a WT and Arid1a cKO pachytene spermatocytes obtained by Salmony Sta-Put gravity sedimentation using the abovementioned methods. All samples displayed RNA integrity number (RIN) >7.0 as determined by Agilent Tapestation (High sensitivity RNA screen tape). Sequencing libraries were prepared from 1 µg of total RNA using a Kapa mRNA HyperPrep kit (Roche, KK8580) per the manufacturer’s instruction. Libraries were quantified using Qubit dsDNA Hs assay kit (Invitrogen, Q32854) pooled at equimolar concentrations, and sequenced on a single lane of the Illumina NovaSeq 6000 S Prime flow cell (50 bp reads, paired-end).
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 Gene expression was quantified using Salmon (Patro et al., 2017). Transcript counts at the gene level were summarized using tximport (Soneson et al., 2016) and then imported to perform a differential gene expression analysis using DESeq2 (Love et al., 2014). The mouse (mm10) gene/transcript annotations were retrieved using AnotationDbi (Pàges et al., 2021) and TxDb.Mus musculus.UCSC.mm10.known gene (Bioconductor Core Team, 2019) R packages from Bioconductor. Low-count genes (<10 reads) were pre-filtered, and significant differences in counts were called at a false discovery rate (FDR)≤0.05. Figure 2—source data 2 lists differentially expressed genes.
 
-## CUT&RUN (cleavage under targets and release using nuclease)
+### CUT&RUN (cleavage under targets and release using nuclease)
 
 CUT&RUN assays were performed on cryopreserved Arid1a WT and Arid1a cKO pachytene spermatocytes (500,000 cells/genotype) obtained by Sta-Put, using a slightly modified version of previously described methods (Meers et al., 2019; Skene and Henikoff, 2017). For ARID1A, CUT&RUN was performed in triplicates per genotype with two different antibodies. H3.3 CUT&RUN was performed in duplicates on Arid1a WT and triplicates on Arid1a cKO samples.
 
 Aliquots of cryopreserved Arid1a WT and Arid1a cKO pachytene spermatocytes were quickly thawed in a water bath at RT, pelleted at 600 × g for 5 min, and washed [wash buffer: 20 mM HEPES(Na) pH7.5, 150 mM NaCl, 0.5 mM spermidine, EDTA-free protease inhibitor] three times. Cells were gently resuspended in wash buffer and bound to Concanavalin-A-coated magnetic beads (20 µL beads/500,000 cells) by mixing on a rotator for 15 min. The bead slurry was separated using a magnet followed by permeabilization in 50 µL antibody buffer (wash buffer +0.05% Digitonin +2 mM EDTA) per sample in 0.2 mL 8-strip PCR tubes. Primary antibody was added to the samples and incubated on a nutator at 4°C overnight. Cells were then separated using a magnet, washed two times in 200 µL Dig-wash buffer (wash buffer +0.05% Digitonin), and incubated with a secondary antibody prepared in 50 µL of Dig-wash buffer/sample for 30 min on a nutator at 4°C. After antibody incubations, samples were washed twice in 200 µL Dig-wash buffer and then incubated on a nutator at 4°C with 50 µL Dig-wash buffer containing 1000 ng/mL Protein A/G Micrococcal Nuclease (pA/G-MNase) for 1 hr. Following this, samples were washed twice in 200 µL Dig-wash buffer, resuspended in 50 µL Dig-wash buffer, cooled down to 0°C, and supplemented with CaCl2 at a final concentration of 2 mM to activate MNase. Samples were digested at 0 °C for 40 min. The resulting chromatin fragments were extracted from the bead slurry by incubating in 2 X STOP buffer (340 mM NaCl, 20 mM EDTA, 4 mM EGTA, 0.05% Digitonin, 100 µg/mL RNase A) at 37°C for 30 min. DNA was purified using ChIP DNA clean and concentrator kit (Zymo, D5205). Libraries were prepared using the Kapa Hyperprep kit (Roche, KK8504), examined for size, and quantified on an Agilent 2100 bioanalyzer using the high-sensitivity DNA kit (Agilent, 5067–4626). The libraries were pooled in equimolar amounts and sequenced on a single lane of the Illumina NovaSeq 6000 S Prime flow cell (50 bp reads, paired-end). Antibody details are listed in the Key Resource Table. The pA/G-MNase (Addgene ID: 123461) used for the CUT&RUN experiments was purified at UNC-Chapel Hill’s Protein Expression and Purification core.
 
-## CUT&RUN data analysis
+### CUT&RUN data analysis
 
 CUT&RUN data analyses were performed as previously described (Menon et al., 2021). Briefly, fastq files were analyzed with fastqc (version 0.11.9), then processed with TrimGalore (version 0.6.2) keeping the --trim-n option. Trimmed reads were aligned to mm10 (mouse) reference genome using bowtie2 (Langmead and Salzberg, 2012) parameters: bowtie2 --very-sensitive-local --no-mixed --no-unal --dovetail --no-discordant. Alignments were outputted in BAM format using samtools (Li et al., 2009) and filtered for PCR duplicates using Picard tools, MarkDuplicates (https://broadinstitute.github.io/picard/). Deduplicated BAM files were used to generate bigWig files filtered for ENCODE mm10 blocked regions (Amemiya et al., 2019) with DeepTools, bamCoverage (Ramírez et al., 2016) with the following options: -bs 30 --smoothLength 60 -bl --scaleFactor. The option --scaleFactor was used to normalize for composition bias between CUT&RUN libraries generated from Arid1a WT and Arid1a cKO pachytene spermatocytes.
 
 csaw (Lun and Smyth, 2016) derived normalization factors (nf) were used to calculate the effective library size (library size X nf). The inverse of the effective library size per million was supplied to --scaleFactor to generate normalized bigWig files. Peak calling was performed with MACS2 (version 2.1.2) with options: -f BAMPE --broad --broad-cutoff 0.05 --keep-dup all, on filtered BAM files associated with ARID1A and H3.3 relative to an IgG control previously generated from pachytene enriched populations obtained from P18 testes (Chakraborty and Magnuson, 2022). Peak overlaps across replicates were determined using bedtools intersect (Quinlan and Hall, 2010). Peak calls are provided in Figure 5—figure supplement 2—source data 1. Peaks were annotated using HOMER (version 4.9.1), annotatePeaks.pl. Replicate bigWig files were averaged using WiggleTools (Zerbino et al., 2014). Averaged bigWig files generated heatmaps with DeepTools, computeMatrix, and plotHeatmap. Data was visualized on Integrative Genomics Viewer (Robinson et al., 2011).
 
-## ATAC-seq
+### ATAC-seq
 
 Cryopreserved aliquots of Arid1a WT and Arid1a cKO pachytene spermatocytes were processed in quadruplicate for ATAC-seq using the standard Omni-ATAC protocol (Corces et al., 2017) with minor changes. These involved increasing the cell number to 100,000 per replicate, using Diagenode tagmentase (loaded Tn5 transposase, C01070012) and Diagenode 2 X tagmentation buffer (C01019043). Libraries were quantified using NEBNext kit for Illumina (New England Biolabs, E7630S), pooled at equimolar amounts, and sequenced on a single lane of the Illumina NovaSeq 6000 S Prime flow cell (50 bp reads, paired end).
 
-## ATAC-seq data analysis
+### ATAC-seq data analysis
 
 After analyzing the quality of fastq files with fastqc (version 0.11.9), they were processed with TrimGalore (version 0.6.2), keeping the --trim-n option. Alignments to mm10 reference genome were performed with bowtie2 (Langmead and Salzberg, 2012) parameters: bowtie2 --very-sensitive -X 2000, and outputted in BAM format using samtools. Resultant BAM files were filtered for PCR duplicates using Picard tools, MarkDuplicates, and mitochondrial reads using samtools view (code: samtools view -h Dedup.bam | grep -v 'chrM' | samtools view -b -h -f 0 x2 - | samtools sort >Dedup_noChrM.bam). Filtered BAM files were used to call peaks with MACS2 (parameters: -f BAMPE -n de -q 0.05 --nomodel --nolambda --keep-dup all) and generate normalized bigWig files with DeepTools, bamCoverage (options: -bs 30 --smoothLength 60 -bl --normalized using RPKM). Peak overlaps across replicates were determined using bedtools intersect (Quinlan and Hall, 2010). Peak calls are provided in (Figure 4—source data 1). Peak annotation (annotatePeaks.pl) and motif analyses (findMotifsGenome.pl) were performed with HOMER (version 4.9.1). PRDM9 motif frequency near ATAC-seq peaks was determined using HOMER annotatePeaks.pl with options: -size 20000 -hist 10. Replicate bigWig files were averaged using WiggleTools (Zerbino et al., 2014). Averaged bigWig files generated heatmaps with DeepTools, computeMatrix, and plotHeatmap. Data was visualized on Integrative Genomics Viewer (Robinson et al., 2011).

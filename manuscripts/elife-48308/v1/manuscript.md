@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.48308.001 In Drosophila , ~150 neurons expressing molecular clock proteins regulate circadian behavior. Sixteen of these neurons secrete the neuropeptide Pdf and have been called ‘master pacemakers’ because they are essential for circadian rhythms. A subset of Pdf + neurons (the morning oscillator) regulates morning activity and communicates with other non-Pdf + neurons, including a subset called the evening oscillator. It has been assumed that the molecular clock in Pdf + neurons is required for these functions. To test this, we developed and validated Gal4-UAS based CRISPR tools for cell-specific disruption of key molecular clock components, period and timeless . While loss of the molecular clock in both the morning and evening oscillators eliminates circadian locomotor activity, the molecular clock in either oscillator alone is sufficient to rescue circadian locomotor activity in the absence of the other. This suggests that clock neurons do not act in a hierarchy but as a distributed network to regulate circadian activity.
+In Drosophila, ~150 neurons expressing molecular clock proteins regulate circadian behavior. Sixteen of these neurons secrete the neuropeptide Pdf and have been called ‘master pacemakers’ because they are essential for circadian rhythms. A subset of Pdf+ neurons (the morning oscillator) regulates morning activity and communicates with other non-Pdf+ neurons, including a subset called the evening oscillator. It has been assumed that the molecular clock in Pdf+ neurons is required for these functions. To test this, we developed and validated Gal4-UAS based CRISPR tools for cell-specific disruption of key molecular clock components, period and timeless. While loss of the molecular clock in both the morning and evening oscillators eliminates circadian locomotor activity, the molecular clock in either oscillator alone is sufficient to rescue circadian locomotor activity in the absence of the other. This suggests that clock neurons do not act in a hierarchy but as a distributed network to regulate circadian activity.
 
 ## Introduction
 
@@ -28,7 +28,7 @@ Circadian rhythms are 24-hour oscillations in physiological functions and behavi
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic of the transcriptional/translational negative feedback loop that drives rhythmic expression and activity of the four core circadian regulators: Period (Per), Timeless (Tim), Clock (Clk), and Cycle (Cyc). (B) Diagram of CRISPR-Cas9 mediated DNA damage and repair pathways. (C) Diagram of plasmid (pCFD6, adapted from Port and Bullock, 2016) used to generate UAS-sgRNA transgenic flies. 4xD.m. = Drosophila melanogaster. O.s. = Oryza sativa, Asian rice. (D) Diagram showing sgRNA target sites for acp98AB (acp, gray), period (per, orange), and timeless (tim, blue), numbered in order of 5’−3’ position in the respective UAS-sgRNA construct. Arrows = exons; shaded rectangles = promoters and UTRs. *4xtim sgRNA one has a single base pair deletion in the Cas9-binding scaffold region (see Materials and methods). (E) Diagram of ~150 clock neurons organized into the following anatomical and functional clusters in the Drosophila brain: dorsal neurons (DN1, DN2, DN3), lateral posterior neurons (LPN), dorsal lateral neurons (LNd), and small and large ventral lateral neurons (s-LNv, 5th s-LNv, l-LNv).
+**Figure 1.:** (A) Schematic of the transcriptional/translational negative feedback loop that drives rhythmic expression and activity of the four core circadian regulators: Period (Per), Timeless (Tim), Clock (Clk), and Cycle (Cyc). (B) Diagram of CRISPR-Cas9 mediated DNA damage and repair pathways. (C) Diagram of plasmid (pCFD6, adapted from Port and Bullock, 2016) used to generate UAS-sgRNA4x transgenic flies. D.m. = Drosophila melanogaster. O.s. = Oryza sativa, Asian rice. (D) Diagram showing sgRNA target sites for acp98AB (acp, gray), period (per, orange), and timeless (tim, blue), numbered in order of 5’−3’ position in the respective UAS-sgRNA4x construct. Arrows = exons; shaded rectangles = promoters and UTRs. *tim sgRNA one has a single base pair deletion in the Cas9-binding scaffold region (see Materials and methods). (E) Diagram of ~150 clock neurons organized into the following anatomical and functional clusters in the Drosophila brain: dorsal neurons (DN1, DN2, DN3), lateral posterior neurons (LPN), dorsal lateral neurons (LNd), and small and large ventral lateral neurons (s-LNv, 5th s-LNv, l-LNv).
 
 In Drosophila, ~150 neurons in the brain have molecular clocks and control circadian locomotor activity (Figure 1E) (Top and Young, 2018). These clock neurons cluster in eight subgroups defined by their anatomical locations: small and large ventral lateral neurons (s-LNvs and l-LNvs), the 5th s-LNv, dorsal lateral neurons (LNds), lateral posterior neurons (LPNs), and three separate clusters of dorsal neurons (DN1s, DN2s, and DN3s) (Figure 1E). Cell ablation and cell-specific rescue experiments identified two sets of clock neurons that control circadian locomotor activity: Pdf+ s-LNvs comprise the ‘morning oscillator’ and control the morning peak of activity, while the 5th s-LNv and LNds comprise the ‘evening oscillator’ and control the evening peak of activity (Stoleru et al., 2004; Grima et al., 2004; Yao et al., 2016). In the classic paradigm of circadian neuronal circuitry, the morning oscillator neurons are thought to be master regulatory neurons that synchronize molecular clocks in other neurons via rhythmic release of the neuropeptide Pigment-dispersing factor (Pdf) (Top and Young, 2018; Renn et al., 1999; Helfrich-Förster, 1995; Fernández et al., 2008; Shafer et al., 2008). However, a subset of Pdf mutants (~25%) were reported to retain rhythmic activity with a shortened period (Grima et al., 2004) and more recent experiments involving cell-specific expression of period-lengthening and shortening genes have suggested that circadian neurons interact through a complex network, rather than a hierarchy, to regulate circadian behavior (Yao et al., 2016; Yao and Shafer, 2014). The precise role of molecular clock components in these circadian-regulatory neurons remained unclear.
 
@@ -40,47 +40,139 @@ Here, we generated UAS-transgenes expressing multiple sgRNAs that target either 
 
 ## Results
 
-## UAS-sgRNA constructs target circadian gene expression in a tissue-specific manner
+### UAS-sgRNA constructs target circadian gene expression in a tissue-specific manner
 
 We generated CRISPR tools for cell-specific gene disruption of period (per) and timeless (tim) (Figure 1A), based on previous work (Port et al., 2014; Port and Bullock, 2016). UAS-driven constructs with multiple scaffold-guide RNAs (sgRNAs) were paired with a Gal4 expression driver and a UAS-Cas9 construct to induce cell-specific LOF mutations (Figure 1B). We refer to this combination of Gal4-driven UAS-sgRNA and UAS-Cas9 expression as ‘(target gene)CRISPR’. In addition to tim and per, we also targeted the control gene acp98AB (acp). Because acp is expressed exclusively in male accessory gland cells and the testes (Wolfner et al., 1997; Gelbart and Emmert, 2013), CRISPR-mediated mutation of this gene in neurons serves as a control for any nonspecific effects due to double-strand DNA break events, such as cell death. To clone the UAS-sgRNA lines, we used the pCFD6 plasmid designed by Port and Bullock (Figure 1C) (Port and Bullock, 2016). The cassette contains four unique gRNA sequences (see Materials and methods) that target the first four exons of the gene of interest to ensure efficient and specific gene disruption (Figure 1D).
 
 To determine which circadian neurons require per and tim expression to influence behavioral rhythmicity, we used three previously characterized Gal4 drivers that express in clock neurons. Tim-Gal4 drives expression in all clock gene-expressing cells in the body, including all ~150 clock neurons (Kaneko et al., 2000) (Figure 1E). Mai179-Gal4 drives expression in a distinct subset of clock neurons that include both morning and evening oscillator neurons: s-LNvs, 5th s-LNv, and 3 CRY+ LNds, with weak and variable expression in DN1s and l-LNvs (Siegmund and Korge, 2001). Pdf-Gal4 drives expression in the s- and l-LNvs, which express the circadian neurotransmitter Pdf (Park et al., 2000) and include the morning oscillator (Stoleru et al., 2004; Grima et al., 2004; Guo et al., 2014).
 
-## CRISPR-mediated disruption of per or tim in all tim-expressing cells causes complete loss of behavioral and molecular rhythmicity
+### CRISPR-mediated disruption of per or tim in all tim-expressing cells causes complete loss of behavioral and molecular rhythmicity
 
 To test our UAS-sgRNA constructs, we expressed each with UAS-Cas9 in all Tim+ cells using the tim-Gal4 driver and measured circadian locomotor activity. Flies were entrained in light/dark (LD) conditions and then shifted to constant darkness (DD) to monitor endogenous circadian locomotor activity. We found that CRISPR-targeting per or tim in Tim+ cells (tim-Gal4>perCRISPR or tim-Gal4>timCRISPR) led to complete loss of rhythmic behavior in DD (0% rhythmicity, Figure 2A–D; loss of rhythm power, Figure 2—figure supplement 1A), though the flies still display rhythmic behavior in LD (Figure 2—figure supplement 2). Thus, CRISPR-mediated disruption of tim or per in Tim+ cells, which includes all clock neurons, faithfully recapitulated tim and per null mutant phenotypes (Sehgal et al., 1994; Konopka and Benzer, 1971). Control flies (tim-Gal4>acpCRISPR) maintained circadian locomotor activity (94% rhythmic, 24.48 hr period; Figure 2B,C), indicating that nonspecific effects from UAS-Cas9 expression or CRISPR-induced double stranded breaks in Tim+ cells did not cause loss of rhythms. Control flies carrying individual components of the CRISPR-mediated deletion (tim-Gal4 driver, UAS-gRNA, and UAS-Cas9 lines) were also highly rhythmic (Figure 2—figure supplement 3). Together, our results suggest that CRISPR-targeting of tim and per results in complete functional ablation of the molecular clock, in contrast to the lengthened rhythms sometimes observed with RNAi, which are thought to reflect incomplete reduction of gene expression (Martinek and Young, 2000; Young, 1998).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig2-v1.jpg)
+
+**Figure 2.:** (A) Diagram of clock neurons targeted for CRISPR-mediated gene disruption using tim-Gal4. (B) Disruption of per or tim in all clock neurons caused complete loss of behavioral rhythmicity. (C) Scatter plot showing the period of rhythmic flies with tim-Gal4-driven disruption of acp, per, or tim. (D) Actograms showing average activity in constant darkness of flies with tim-Gal4-driven disruption of acp, per, or tim. Activity data is double-plotted, with six days of activity displayed. Dark gray rectangles = subjective day, black rectangles = subjective night. (E) Relative mRNA levels, measured by qRT-PCR over a 24-hour period, of the core circadian genes timeless (left), period (middle), and clock (right) in heads of tim-Gal4 CRISPR flies. JTK analysis revealed that only acp-targeted flies display statistically significant rhythmic cycling indicative of circadian oscillation of all three genes. (F) repo-Gal4 targets most glia for CRISPR-mediated gene disruption. (G) repo-Gal4-driven, CRISPR-mediated gene disruption in glia had no effect on behavioral rhythmicity. (H) Scatter plot showing the period of rhythmic flies with repo-Gal4-driven disruption of acp, per, or tim. (I) Actograms show average activity of flies in constant darkness with repo-Gal4-driven disruption of acp, per, or tim in glia.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** χ2 peak height values (rhythm strength) for (A) tim-Gal4, (B) repo-Gal4, targeting of acp (gray), per (orange), or tim (blue). Significance determined by one-way ANOVA followed by Tukey’s multiple comparisons test (for normally distributed samples; B) or Kruskal-Wallis nonparametric ANOVA (to account for non-normality of samples; A) followed by Dunn’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons. ****: p<0.0001; *: p<0.05; n.s.: not significant, p>0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Average actograms for the first day in LD for (A) tim-Gal4 and (B) repo-Gal4 targeting of acp (gray), per (orange), or tim (blue).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Average actograms showing the activity in constant darkness of flies with single copies of the CRISPR tool transgenes used in this study. None of the genotypes should have CRISPR-mediated gene disruption. Activity data are double-plotted, with seven days of activity displayed. Dark gray rectangles = subjective day, black rectangles = subjective night. (B) Presence of tim-Gal4 or CRISPR transgenes does not affect behavioral rhythmicity. (C) Scatter plot showing the period of rhythmic control flies. (D) χ2 peak height values (rhythm strength).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Maximum intensity projections of tim-Gal4>acpCRISPR, tim-Gal4>perCRISPR, tim-Gal4>timCRISPR, and per01 null brains at ZT0 with immunohistochemistry for Period (green) and Timeless (magenta) with schematic of clock neuron clusters; scale bar = 50 μm. (B) Higher magnification inset from boxed region in A; scale bar = 10 μm (C) Schematic showing expected staining pattern based on Per and Tim stability and requirements for nuclear entry.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) 15 μm-thick (10 slices x 1.5 μm slice thickness) posterior maximum intensity projections of repo-Gal4>acpCRISPR, repo-Gal4>perCRISPR, and repo-Gal4>timCRISPR brains at ZT0 with immunohistochemistry for Repo (magenta) and Period (green); scale bar = 50 μm. Insets show high-magnification views of the same projections; scale bar = 5 μm. Arrowheads indicate Repo+ nuclei; asterisks indicate Repo- (likely neuronal) nuclei. (B) Schematic of clock neuron clusters (left) with full-thickness maximum intensity projections of samples shown in (A) with immunohistochemistry for Period (grayscale); scale bar = 50 μm.
 
 To confirm that rhythmic transcription of circadian clock genes is disrupted by CRISPR-targeting tim or per in Tim+ cells, we analyzed mRNA from fly heads collected over the circadian cycle. In wild-type fly heads, clock gene mRNA levels oscillate with approximately 24-hour periodicity in constant darkness (Sehgal et al., 1994; Sehgal et al., 1995; Hardin et al., 1990). We found that control flies (tim-Gal4>acpCRISPR) also displayed robust and statistically significant oscillation of timeless, period, and clock transcripts (Figure 2E, gray). In contrast, CRISPR-targeting of tim or per in Tim+ cells resulted in arrhythmic transcription of all three molecular clock genes (Figure 2E, orange and blue), consistent with the behavioral arrhythmicity caused by these manipulations (Figure 2B). Furthermore, tim transcript levels in tim-Gal4>timCRISPR flies and per transcript levels in tim-Gal4>perCRISPR flies were reduced to levels similar to the lowest baseline levels for these transcripts in control flies. We note that tim transcripts, though arrhythmic, were elevated after disruption of per (tim-Gal4 >perCRISPR flies) and vice versa for per transcripts after disruption of tim. These results are consistent with earlier findings indicating that loss of either Per or Tim, inhibitors of Clock/Cycle, causes constitutive activity of the Clock/Cycle transcription complex and elevated levels of per or tim transcripts (Allada et al., 1998; Darlington et al., 1998).
 
 To further confirm the efficiency of our gene disruption, we performed immunofluorescence analysis on the brains of CRISPR-targeted flies (tim-Gal4>geneCRISPR) for Per and Tim at ZT0, along with per01 null mutants (Figure 2—figure supplement 4A,B). At ZT0, Per and Tim proteins are highly expressed and localized to the nucleus in wild-type flies (Vosshall et al., 1994; Darlington et al., 1998; Price et al., 1995). Consistent with this, control flies (tim-Gal4>acpCRISPR) exhibited high levels of Per and Tim protein expression, colocalized in the nucleus. In contrast, in flies CRISPR-targeted for per or tim in Tim+ cells (tim-Gal4>perCRISPR and tim-Gal4>timCRISPR), we observed loss of nuclear Per or Tim staining, similar to per01 null mutants (Figure 2—figure supplement 4A,B). CRISPR-targeting of per led to loss of Per signal and only cytoplasmic Tim signal; CRISPR-targeting of tim led to loss of both Tim and Per signal, presumably because Per is unstable without Tim (Figure 2—figure supplement 4C) (Price et al., 1995; Price et al., 1998). Taken together, these results show that CRISPR-mediated, Gal4-driven disruption of per and tim in Tim+ cells is highly efficient on both the mRNA and protein levels and is sufficient to block locomotor activity rhythms.
 
-## CRISPR-mediated disruption of per or tim in glia (Repo+ cells) does not disrupt behavioral rhythmicity
+### CRISPR-mediated disruption of per or tim in glia (Repo+ cells) does not disrupt behavioral rhythmicity
 
 As a second control for the effect of CRISPR-induced DNA damage and to confirm that this CRISPR gene targeting is Gal4-specific, we CRISPR-targeted tim and per in Repo+ glia, using the glial driver repo-Gal4 (Halter et al., 1995; Xiong et al., 1994). Glia are not predicted to control circadian locomotor activity via circadian clock gene expression (Ng et al., 2011). We found that nearly all flies, whether CRISPR-targeted for tim, per, or acp, were highly rhythmic (100% of repo-Gal4>acpCRISPR and 97% of repo-Gal4>perCRISPR and timCRISPR) (Figure 2F–I). CRISPR-targeting per or tim in Repo+ cells did not reduce rhythm strength or affect rhythmic behavior in LD relative to the acp-targeted control (Figure 2—figure supplements 1B and 2). We also confirmed through immunofluorescence analysis that the CRISPR-mediated deletion was both efficient in (Figure 2—figure supplement 5A) and specific to (Figure 2—figure supplement 5B) glial cells. These results demonstrate that there is no leaky or non-Gal4-mediated expression of both the UAS-Cas9 and UAS-sgRNA that affects rhythmicity. These results further confirm previously published results that, while circadian locomotor activity requires intact glial cells, it does not require glial expression of clock genes (Ng et al., 2011).
 
-## Disruption of per or tim in both morning and evening oscillators (Mai179+ neurons) causes complete loss of circadian locomotor activity
+### Disruption of per or tim in both morning and evening oscillators (Mai179+ neurons) causes complete loss of circadian locomotor activity
 
 To test the effect of disrupting per or tim in both the morning and evening oscillators, we expressed our UAS-sgRNA constructs in the s-LNvs (including the 5th s-LNv) and 3 CRY+ LNds, with weak or variable expression in l-LNvs, DN1s, and non-clock neurons, using the Mai179-Gal4 driver (Figure 3A) (Grima et al., 2004; Yao et al., 2016; Siegmund and Korge, 2001; Rieger et al., 2009). We found that 100% of flies CRISPR-targeted for per and tim in Mai179+ cells (Mai179-Gal4> perCRISPR and Mai179-Gal4> timCRISPR) were arrhythmic, while 91% of control flies (Mai179-Gal4> acpCRISPR) remained rhythmic (Figure 3A–D; Figure 3—figure supplement 1). Thus, the molecular clock is required in Mai179+ neurons for circadian locomotor activity.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig3-v1.jpg)
+
+**Figure 3.:** (A) Diagram of the circadian neuron subset marked by Mai179-Gal4. (B) Disruption of per or tim in Mai179+ neurons caused complete loss of behavioral rhythmicity. (C) Scatter plot showing the period of rhythmic flies with Mai179-Gal4-driven disruption of acp, per, or tim. (D) Average actograms showing the activity of flies in constant darkness with Mai179-Gal4-driven disruption of acp, per, or tim. Six days of activity are displayed, double-plotted. Dark gray rectangles = subjective day, black rectangles = subjective night. (E and F) Background-subtracted nuclear fluorescence intensity of Per (E) or Tim (F) at ZT0 in GFP+ neurons, grouped by brain with mean ± SEM shown. Individual brains are shown in the same order in both E and F. (G and H) Mean nuclear fluorescence intensity of Per (G) or Tim (H) at ZT0 in GFP+ neurons, averaged per brain (acp n = 18; per n = 16; tim n = 15). **: p<0.01; ****: p<0.0001; n.s.: not significant, p>0.05. Significance determined by Kruskal-Wallis nonparametric ANOVA (to account for non-normality of samples) followed by Dunn’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** χ2 peak height values (rhythm strength) for Mai179-Gal4 targeting of acp (gray), per (orange), or tim (blue). Significance determined by Kruskal-Wallis nonparametric ANOVA (to account for non-normality of samples) followed by Dunn’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons. ****: p<0.0001; n.s.: not significant, p>0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Maximum intensity projections of Mai179-Gal4-driven GFP+ dorsal lateral (LNd, top) and ventral lateral (LNv, bottom) neurons with immunohistochemistry for GFP (yellow), Period (green) and Timeless (magenta); scale bar = 10 μm. Arrowheads indicate GFP+ (CRISPR-targeted) cells.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Background-subtracted nuclear fluorescence intensity of Per (A, C, E) or Tim (B, D, F) at ZT0 in GFP+ neurons, grouped by brain and separated by cell type (A, B: dorsal lateral neurons; C, D: small ventral lateral neurons; E, F: large ventral lateral neurons) with mean ± SEM shown. Individual brains are shown in the same order in all graphs (acp n = 18; per n = 16; tim n = 15 brains).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Average actograms for the first day in LD for Mai179-Gal4 targeting of acp (gray), per (orange), or tim (blue).
+
 To confirm the loss of protein after gene disruption, we measured Per and Tim protein levels in Mai179+ neurons. We co-immunostained brains for Per and Tim and quantified nuclear fluorescence intensity at ZT0. We found that control flies showed robust nuclear staining of both Per and Tim at ZT0 (Figure 3E–H in gray; Figure 3—figure supplement 2), whereas per disruption in Mai179+ neurons caused near-complete loss of Per protein, as measured by the number of Per-positive nuclei per brain and average Per fluorescence intensity per brain (Figure 3E and G, orange dots). In per-targeted flies, Tim protein remained mostly cytoplasmic (Figure 3—figure supplement 2) (Vosshall et al., 1994; Price et al., 1995). These results suggest near-complete CRISPR-mediated per gene disruption in Mai179-Gal4> perCRISPR flies, consistent with the observed complete loss of behavioral rhythmicity (Figure 3A–D). For Mai179-specific tim-targeted flies (Mai179-Gal4> timCRISPR), only a small number of nuclei displayed Tim intensity levels close to the levels observed in control nuclei (Figure 3F, compare blue to gray), while the average nuclear fluorescence of Tim is near zero (Figure 3H). Further analysis of these brains revealed that most of the minority of neurons with incomplete loss of Tim/Per protein were large ventral lateral neurons (l-LNvs); deletion was highly efficient in s-LNvs and LNds (Figure 3—figure supplement 3). Additionally, Per nuclear staining was nearly eliminated in tim-targeted flies (Figure 3E,G). Thus, our results support robust disruption of molecular clock function in these neurons, consistent with the observed complete loss of behavioral rhythmicity.
 
-## Disruption of per or tim in the morning oscillator (Pdf+ s-LNv neurons) does not cause loss of circadian locomotor activity
+### Disruption of per or tim in the morning oscillator (Pdf+ s-LNv neurons) does not cause loss of circadian locomotor activity
 
 To investigate the role of the circadian clock in morning oscillator neurons alone, we next induced CRISPR-mediated gene disruption of tim and per in Pdf-expressing cells using Pdf-Gal4. Pigment-dispersing factor (Pdf) is a neuropeptide expressed and secreted by the l-LNv and s-LNv neurons, which form the morning oscillator (Stoleru et al., 2004; Renn et al., 1999; Helfrich-Förster, 1995; Rieger et al., 2009) (Figure 4A). While Pdf+ neurons are thought to be essential for circadian locomotor activity, we found that CRISPR-targeting of per and tim in Pdf+ neurons did not cause complete loss of rhythmicity. 74% of Pdf-specific, per-targeted flies (Pdf-Gal4>perCRISPR) and 83% of Pdf-specific tim-targeted flies (Pdf-Gal4>timCRISPR) were rhythmic, as compared to 100% of controls (Pdf-Gal4>acpCRISPR) (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig4-v1.jpg)
+
+**Figure 4.:** (A) Diagram showing Pdf+ circadian neurons. (B) CRISPR-mediated disruption of per or tim in Pdf+ neurons using the Pdf-Gal4 driver caused incomplete loss of behavioral rhythmicity. (C) Scatter plot showing the period of rhythmic flies with Pdf-Gal4-driven disruption of acp, per, or tim. (D) Actograms showing average activity of flies in constant darkness with Pdf-Gal4-driven disruption of acp, per, or tim. Nine days of activity are displayed, double-plotted. Dark gray rectangles = subjective day, black rectangles = subjective night. (E) Average hourly activity counts during the second day of complete darkness (DD Day 2; gray bars = CT 0–11, black bars = CT 12–23). Mean number of beam breaks per hour is shown ± SEM. (F) Morning Anticipation Index (MAI) was calculated by dividing the average hourly activity for CT 21–23 by the average hourly activity for CT 18–23. (G) Evening Anticipation Index (EAI) was calculated by dividing the average hourly activity for CT 9–11 by the average hourly activity for CT 6–11. For scatter plots, each point represents an individual fly and mean ± SEM is shown; ***: p<0.001; ****: p<0.0001; n.s.: not significant, p>0.05. Significance determined by Kruskal-Wallis nonparametric ANOVA (to account for non-normality of samples) followed by Dunn’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Representative single-fly actograms of Pdf-Gal4>acpCRISPR (gray), perCRISPR (orange), or timCRISPR (blue) flies blindly scored as rhythmic (top row), weakly rhythmic (middle row), or arrhythmic (bottom row; no Pdf-Gal4>acpCRISPR flies were scored as arrhythmic).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** χ2 peak height values (rhythm strength) for Pdf-Gal4 targeting of acp (gray), per (orange), or tim (blue). Significance determined by one-way ANOVA followed by Tukey’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons. ***: p<0.001; **: p<0.01; n.s.: not significant, p>0.05.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Average actograms for the first day in LD Pdf-Gal4 targeting of acp (gray), per (orange), or tim (blue).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A and D) Average hourly activity counts for one day under a 12 hr:12 hr light-dark schedule (A; white bars = ZT 0–11, black bars = ZT 12–23) or averaged over days 3–9 of complete darkness (D; gray bars = CT 0–11, black bars = CT 12–23); mean number of beam breaks per hour is shown ± SEM. (B and E) Morning Anticipation Index (MAI) calculated by dividing the average hourly activity for ZT (B) or CT (E) 21–23 by the average hourly activity for ZT or CT 18–23. (acp n = 42; per n = 31; tim n = 48). (C and F) Evening Anticipation Index (EAI) calculated by dividing the average hourly activity for ZT (C) or CT (F) 9–11 by the average hourly activity for ZT or CT 6–11. For scatter plots, each point represents an individual fly and mean ± SEM is shown. Significance determined by one-way ANOVA followed by Tukey’s multiple comparisons test (for normally distributed samples; (B and F) or Kruskal-Wallis nonparametric ANOVA (to account for non-normality of samples; (C and E) followed by Dunn’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons. *: p<0.05; ****: p<0.0001; n.s.: not significant, p>0.05.
 
 Qualitatively, activity rhythms of individual flies often appeared more ambiguous, and therefore some were scored as ‘weakly rhythmic’ (Figure 4B; Figure 4—figure supplement 1); indeed the rhythm strength is significantly reduced, relative to acp-targeted controls, though not completely abolished as seen in tim-Gal4- and Mai179-Gal4-driven CRISPR targeting (Figure 4—figure supplement 2). We confirmed the results for overall rhythmicity by an automated scoring method, Lomb-Scargle periodogram analysis (see Materials and methods). Again, Pdf-specific targeting of per or tim resulted in mostly rhythmic flies (87% and 92%, respectively), similar to controls (95% rhythmic) (Supplementary file 1). All flies were tracked for 9–10 days after shifting to constant darkness, because Pdf mutants and Pdf receptor (Pdfr) mutants lose their rhythms only after 1–3 days in constant darkness (Renn et al., 1999). We classified flies as rhythmic if they maintained activity rhythms for the entire 9–10 days. Finally, though the morning oscillator is thought to delay the evening peak of activity and thus control period length (Yao et al., 2016), the average period length of Pdf-specific per or tim-targeted flies (23.87 and 23.42 hr, respectively) was similar to controls (23.88 hr) (Figure 4C). These results suggest that the molecular clock is not required in the morning oscillator (Pdf+ s-LNv neurons) for overall circadian locomotor activity nor to control the pacing of the evening oscillator.
 
 Pdf+ s-LNv neurons also regulate ‘morning anticipation,’ or increased activity just before the transition to lights-on (Stoleru et al., 2004; Grima et al., 2004). The evening oscillator neurons regulate ‘evening anticipation,’ or increased activity just before the transition to lights off. To determine whether loss of the molecular clock in Pdf+ neurons specifically affects morning anticipation, we analyzed both types of anticipation in Pdf-specific per and tim-targeted flies relative to controls. While evening anticipation was intact after CRISPR-targeting of tim or per in Pdf+ neurons, morning anticipation was absent or diminished (Figure 4E). To quantify this, we calculated morning and evening anticipation indices (MAIs and EAIs) for each genotype (see Materials and methods). The MAI in DD day two was significantly reduced after targeting of per or tim in Pdf+ neurons (Pdf-Gal4>perCRISPR and Pdf-Gal4>timCRISPR) relative to controls (Pdf-Gal4>acpCRISPR) (Figure 4F), whereas EAI was not reduced (Figure 4G). In LD, while the overall activity pattern appears normal (Figure 4—figure supplement 3), the MAI was reduced in Pdf-Gal4>perCRISPR flies, though not in Pdf-Gal4>timCRISPR flies, and the EAI was unaffected (Figure 4—figure supplement 4A–C). These phenotypes were similar on days 3–9 in DD (Figure 4—figure supplement 4D–F). These results suggest that, while the molecular clock in Pdf+ neurons is not required for locomotor rhythmicity, it is required for morning anticipatory behavior.
 
-## CRISPR-mediated disruption of per or tim in Pdf+ neurons causes near-complete loss of Per and Tim protein
+### CRISPR-mediated disruption of per or tim in Pdf+ neurons causes near-complete loss of Per and Tim protein
 
 If the Pdf-Gal4 driver is not strong enough to fully disrupt per or tim in Pdf+ neurons, this could result in an incomplete behavioral phenotype. To confirm that per and tim disruption in Pdf+ cells is as efficient as observed with tim-Gal4 and Mai179-Gal4, which caused arrhythmicity, we performed quantitative immunofluorescence analysis of Per and Tim protein levels (Figure 5). Control flies (Pdf-Gal4>acpCRISPR) displayed the expected robust nuclear staining of Per and Tim in both the s-LNvs and l-LNvs (Figure 5A,D–G, in gray). In contrast, Pdf-specific per-targeted flies (Pdf-Gal4>perCRISPR) exhibited a near-complete absence of nuclear Per immunofluorescence signal in both s-LNvs and l-LNvs (Figure 5A,D,F; Figure 5—figure supplement 1). Similar to what we observed in the Mai179-specific per disruption, any remaining Tim signal was localized to the cytoplasm (Figure 5A). In Pdf-specific tim-targeted flies (Pdf-Gal4>timCRISPR), we observed a similar near-complete reduction in Tim protein levels in LNvs, with relatively few Tim+ nuclei remaining and an average fluorescence intensity per brain near zero (Figure 5A,E,G). CRISPR-targeting of tim also resulted in near-complete loss of Per protein, indistinguishable from loss of Per in per-targeted flies (Figure 5F)(Price et al., 1995; Price et al., 1998). These results suggest that the persistence of circadian locomotor activity seen in Pdf-specific per and tim-targeted flies is not due to incomplete disruption of the targeted gene. Taken together, our behavioral and quantitative immunofluorescence analysis suggest that the molecular clock in Pdf+ clock neurons is not required for circadian locomotor activity.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig5-v1.jpg)
+
+**Figure 5.:** (A) Maximum intensity projections of Pdf-Gal4-driven GFP+ small and large ventral lateral neurons (s- and l-LNv) with immunohistochemistry for GFP (yellow), Period (green) and Timeless (magenta) at ZT0. Scale bar = 10 μm; arrows indicate CRISPR-targeted nuclei with residual protein signal. (B) Diagram showing Pdf-Gal4 expression in the 4 large and four small ventral lateral neurons (l- and s-LNv), bilaterally. (C) Quantification of the number of GFP+ neurons per brain (acp n = 14; per n = 15; tim n = 13 brains). (D and E) Background-subtracted nuclear fluorescence intensity of Per (D) or Tim (E) at ZT0 in GFP+ neurons, grouped by brain with mean ± SEM shown. (F and G) Mean nuclear fluorescence intensity of Per (G) or Tim (H) at ZT0 in GFP+ neurons, averaged per brain (acp n = 14; per n = 16; tim n = 14 brains). ****: p<0.0001; n.s.: not significant, p>0.05. Significance was determined by one-way ANOVA followed by Tukey’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Background-subtracted nuclear fluorescence intensity of Per (A, C) or Tim (B, D) at ZT0 in GFP+ neurons, grouped by brain and separated by cell type (A, B: small ventral lateral neurons; C, D: large ventral lateral neurons) with mean ± SEM shown. Individual brains are shown in the same order in all graphs (acp n = 14; per n = 16; tim n = 14 brains).
+
 We also used a UAS-myr-GFP to label the membranes of Pdf+ neurons and counted the number of GFP+ cells in each brain to confirm that the CRISPR-induced DNA damage in our system does not cause cell death. There are 8 Pdf+ LNvs in each hemisphere, totaling 16 neurons in each fly brain (Lin et al., 2004). We found no significant difference in the number of GFP+ LNvs in each brain between experimental flies and controls (Figure 5C). This result indicates that CRISPR-mediated gene disruption in Pdf+ neurons does not cause significant cell death.
 
-## Restriction of CRISPR-mediated disruption of per or tim to evening oscillator (Mai179+Pdf-) neurons by blocking disruption in Pdf+ neurons restores behavioral rhythmicity
+### Restriction of CRISPR-mediated disruption of per or tim to evening oscillator (Mai179+Pdf-) neurons by blocking disruption in Pdf+ neurons restores behavioral rhythmicity
 
 To determine whether the molecular clock is required in evening oscillator neurons, we paired the Mai179-Gal4 driver with Pdf-Gal80, blocking CRISPR-targeting of tim or per in Pdf+ neurons. This Gal80-mediated inhibition of Gal4 restricts CRISPR-targeting to the evening oscillator (Mai179+ Pdf- neurons): the 5th sLNv, CRY+ LNds, and a small subset of DN1s (Figure 6A). We found that overall locomotor rhythmicity was maintained; 82% of per-targeted and tim-targeted flies (Mai179-Gal4/Pdf-Gal80>perCRISPR and Mai179-Gal4/Pdf-Gal80>timCRISPR) were rhythmic, similar to 89% of control flies (Figure 6B–D). The rhythm strength of tim-targeted flies was slightly reduced relative to acp controls, whereas rhythm strength in per-targeted flies was unaffected (Figure 6—figure supplement 1). We also verified the efficiency and specificity of the deletion in Mai179+ Pdf- neurons through immunofluorescence analysis (Figure 6E,F; Figure 6—figure supplement 2). The CRISPR deletion was highly efficient in RFP+ LNds and the 5th s-LNv, representing the minimal evening oscillator (Figure 6E; Figure 6—figure supplement 2). We found that the PdfGal80 construct largely protected Pdf+ neurons from CRISPR targeting, as evidenced by wild-type levels of Per signal in the majority of Pdf+ cells. There was a minority of LNvs that lost Per expression; this incomplete protection was slightly more prevalent in tim-targeted flies (Figure 6F; Figure 6—figure supplement 2), which may explain the slightly reduced rhythm strength in tim-targeted but not per-targeted flies (Figure 6—figure supplement 1). The result that restoring molecular clock expression in Pdf+ neurons rescued overall rhythmicity is consistent with previous studies in which rhythmicity was restored by expression of UAS-per in Pdf+ neurons of per null mutant flies (Grima et al., 2004). Thus, while per and tim expression are not necessary in Pdf+ neurons for rhythmicity (Figure 4), their expression in Pdf+ and Mai179- neurons is sufficient for circadian locomotor activity. Taken together, our results suggest that the molecular clock may be sufficient in either the morning oscillator or evening oscillator for circadian locomotor activity and that the molecular clock must be disrupted in both oscillators to disrupt circadian locomotor activity.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig6-v1.jpg)
+
+**Figure 6.:** (A) Diagram showing circadian neurons targeted using Mai179-Gal4; Pdf-Gal80. (B) CRISPR-mediated disruption of per or tim in Mai179+Pdf– neurons did not affect overall rhythmicity. (C) Scatter plot showing the period of rhythmic flies with Mai179-Gal4; Pdf-Gal80-driven disruption of acp, per, or tim. (D) Average actograms showing the activity of flies in constant darkness with Mai179-Gal4; Pdf-Gal80-driven disruption of acp, per, or tim. Six days of activity are displayed, double-plotted. Dark gray rectangles = subjective day, black rectangles = subjective night. (E and F) Background-subtracted nuclear fluorescence intensity of Per at ZT0 in (E) RFP+ LNds (magenta) and the 5th s-LNv (light green) and (F) PDF+ s- (purple) and l-LNv neurons (dark green), grouped by brain with mean ± SEM shown (acp n = 10; per n = 9; tim n = 10). *: p<0.05; n.s.: not significant, p>0.05. Significance was determined by one-way ANOVA followed by Tukey’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** χ2 peak height values (rhythm strength) for Mai179-Gal4; Pdf-Gal80 targeting of acp (gray), per (orange), or tim (blue). Significance determined by Kruskal-Wallis nonparametric ANOVA (to account for non-normality of samples) followed by Dunn’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons. *: p<0.05; n.s.: not significant, p>0.05.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Maximum intensity projections of Mai179-Gal4; Pdf-Gal80-driven RFP+ dorsal lateral (LNd, bottom) and ventral lateral (s-LNv, 5th s-LNv, l-LNv; bottom) neurons with immunohistochemistry for RFP (yellow), Period (green) and PDF (magenta); scale bar = 10 μm. Arrowheads indicate RFP+ (CRISPR-targeted) cells; arrow indicates rare PDF+ cell that has escaped Pdf-Gal80 protection and undergone CRISPR-mediated gene disruption.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Average hourly activity counts during the second day of complete darkness (DD Day 2; gray bars = CT 0–11, black bars = CT 12–23). Mean number of beam breaks per hour is shown ± SEM. (acp n = 58; per n = 63; tim n = 55) (B) Morning Anticipation Index (MAI) was calculated by dividing the average hourly activity for CT 21–23 by the average hourly activity for CT 18–23. (C) Evening Anticipation Index (EAI) calculated by dividing the average hourly activity for CT 9–11 by the average hourly activity for CT 6–11. For scatter plots, each point represents an individual fly and mean ± SEM is shown. Significance determined by Kruskal-Wallis nonparametric ANOVA (to account for non-normality of samples) followed by Dunn’s multiple comparisons test; reported p-values are multiplicity adjusted to account for multiple comparisons. ***: p<0.001; n.s.: not significant, p>0.05.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/48308/elife-48308-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** Average actograms for the first day in LD for Mai179-Gal4; Pdf-Gal80 targeting of acp (gray), per (orange), or tim (blue).
 
 Because Mai179+ Pdf- neurons comprise the minimal evening oscillator, we also measured ‘evening anticipation,’ or increased activity just before the transition to lights off. Similar to our observation that per or tim disruption in the Pdf+ morning oscillator led to a loss of morning anticipation, per or tim disruption in the Mai179+ Pdf- evening oscillator neurons led to a loss of evening anticipation activity (Figure 6—figure supplement 3). The EAI was significantly reduced in evening oscillator-specific per-targeted flies and the EAI of tim-targeted flies was trending, but not significantly reduced (p<0.10), relative to controls. The morning anticipation indices (MAI) remained intact and were not significantly different from controls (Figure 6—figure supplement 3), further demonstrating that per or tim expression in Pdf+ s-LNv morning oscillator neurons is both necessary and sufficient for morning anticipatory activity.
 
@@ -100,7 +192,269 @@ Our results highlight how cell-specific CRISPR-mediated gene disruption can be u
 
 ## Materials and methods
 
-## Drosophila strains and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>per01</td>
+      <td>other</td>
+      <td>FLYB:FBal0013649</td>
+      <td>Obtained from Jaga Giebultowicz</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-sgRNA-acp98AB4x</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Available upon request, will be deposited at BDSC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-sgRNA-per4x</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Available upon request, will be deposited at BDSC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-sgRNA-tim3x</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Available upon request, will be deposited at BDSC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Cas9.2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:58986 FLYB:FBti0166500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myr-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:32198 FLYB:FBti0131964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myr-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:32197 FLYB:FBti0131941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tim-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:7126 FLYB:FBti0017922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>repo-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:7415 FLYB:FBti0018692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mai179-Gal4</td>
+      <td>other</td>
+      <td>FLYB:FBti0017959</td>
+      <td>Obtained from Charlotte Helfrich-Förster</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Pdf-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:6900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Pdf-Gal80</td>
+      <td>other</td>
+      <td>FLYB:FBtp0019042</td>
+      <td>Obtained from Michael Rosbash</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD6</td>
+      <td>Addgene</td>
+      <td>Cat#73915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clocklab</td>
+      <td>Actimetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>PMID: 22743772</td>
+      <td></td>
+      <td>Open source program</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Chicken anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat#ab13970</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Rabbit anti-Per</td>
+      <td>PMID: 1613555</td>
+      <td></td>
+      <td>(1:1000) Obtained from Michael Rosbash</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Rat anti-Tim</td>
+      <td>PMID: 8625406</td>
+      <td></td>
+      <td>(1:1000) Obtained from Amtia Sehgal and Michael Young</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Chicken anti-RFP</td>
+      <td>Rockland Immunochemicals</td>
+      <td>Cat#600-901-379</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Mouse anti-PDF</td>
+      <td>Developmental Studies Hybridoma Bank PMID: 15930393</td>
+      <td>Cat#PDF C7</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Mouse anti-Repo</td>
+      <td>Developmental Studies Hybridoma Bank PMID: 12167411</td>
+      <td>Cat#8D12 anti-Repo</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 488-conjugated Donkey anti-Chicken</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#703-545-155</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 594-conjugated Donkey anti-Rabbit</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#711-585-152</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 647-conjugated Donkey anti-Rat</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#712-605-153</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated Donkey anti-Chicken</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#703-165-155</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 647-conjugated Donkey anti-Mouse</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#715-605-151</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>clock-fwd</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer GGATAAGTCCACGGTCCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>clock-rev</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer CTCCAGCATGAGGTGAGTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>period-fwd</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer CGAGTCCACGGAGTCCACACACAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>period-rev</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer AGGGTCTGCGCCTGCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>timeless-fwd</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer CCGTGGACGTGATGTACCGCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>timeless-rev</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer CGCAATGGGCATGCGTCTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actin5C-fwd</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer TTGTCTGGGCAAGAGGATCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actin5C-rev</td>
+      <td>This paper</td>
+      <td></td>
+      <td>qPCR primer ACCACTCGCACTTGCACTTTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila strains and maintenance
 
 UAS-sgRNA lines (w;UAS-sgRNA-tim3x; w;UAS-sgRNA-per4x; and w;UAS-sgRNA-acp98AB4x;) were cloned as described below. The w;;UAS-Cas9.2 line was obtained from Bloomington Drosophila Stock Center (#58986). Two different UAS-myr-GFP lines were used (2nd chromosome: Bloomington #32198 and 3rd chromosome: Bloomington #32197). per01 nulls were a gift from Jaga Giebultowicz.
 
@@ -108,19 +462,42 @@ Gal4/Gal80 lines: w;tim-Gal4; (Bloomington #7126), w;;repo-Gal4 (Bloomington #74
 
 All flies were grown and maintained on standard yeast-cornmeal-agar media (Archon Scientific, Glucose recipe: 7.6% w/v glucose, 3.8% w/v yeast, 5.3% w/v cornmeal, w/v 0.6% agar, 0.5% v/v propionic acid, 0.1% w/v methyl paraben, 0.3% v/v ethanol) in a humidity controlled (55–65%) 12:12 Light:Dark incubator at 25°C. Males were collected at 1–3 days old and allowed to mate for 1–2 days before being separated from females. Male flies were 7–11 days old at the start of all behavioral and immunohistochemistry experiments.
 
-## Cloning
+### Cloning
 
 Multiple gRNAs targeting per, tim, or acp98AB were constructed as previously described (Port and Bullock, 2016). gRNA sequences were selected for predicted target specificity and efficiency according to http://chopchop.cbu.uib.no/ (Montague et al., 2014). pCFD6 (Addgene #73915) was digested with BbsI-HF (NEB #R3539S) and gel purified. For each construct, inserts were generated in three separate PCR reactions using pCFD6 as the template and the primers listed in Supplementary file 2. The resulting three inserts and the pCFD6 backbone were then assembled by NEBuilder HiFi DNA Assembly (NEB #E2621L) for each construct. Each construct was integrated at the Su(Hw)attP5 site (Pfeiffer et al., 2010) (Bestgene, Inc) and Sanger sequenced (Genewiz). Sequenced flies revealed a polymorphism in one of the four sgRNA scaffolds in the UAS-t:sgRNA-tim flies and thus the line is denoted as UAS-t:sgRNA-tim3x.
 
-TransgenegRNAs expressed (orientation of target sequence)UAS-t:sgRNA-per4x1. GCTTTTCTACACACACCCGG (5’→3’) 2. CACGTGCGATATGATCCCGG (3’→5’) 3. GGAGTCCACACACAACACCA (5’→3’) 4. TACTCGTCCATAGACCACGC (5’→3’)UAS-t:sgRNA-tim3x1. *TCTGCTGAAGGAATTCACCG (5’→3’) 2. TGTGGCGACCCACATCCGTG (3’→5’) 3. GAGAACGCGCTGTACAACTG (3’→5’) 4. AAGAGGCCAGCGATATGACG (5’→3’)UAS-t:sgRNA-acp98AB4x1. GTGTCCCCTTATTCGTGCGG (3’→5’) 2. CACACTATCAAAGGATGACG (5’→3’) 3. ATAAGGGGACACACTATCAA (5’→3’) 4. AGTGTGTCCCCTTATTCGTG (3’→5’)*sgRNA scaffold for gRNA 1 of timeless has a one bp deletion (GTTTA... instead of GTTTTA...)
+<table>
+  <thead>
+    <tr>
+      <th>Transgene</th>
+      <th>gRNAs expressed (orientation of target sequence)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UAS-t:sgRNA-per4x</td>
+      <td>1. GCTTTTCTACACACACCCGG (5’→3’) 2. CACGTGCGATATGATCCCGG (3’→5’) 3. GGAGTCCACACACAACACCA (5’→3’) 4. TACTCGTCCATAGACCACGC (5’→3’)</td>
+    </tr>
+    <tr>
+      <td>UAS-t:sgRNA-tim3x</td>
+      <td>1. *TCTGCTGAAGGAATTCACCG (5’→3’) 2. TGTGGCGACCCACATCCGTG (3’→5’) 3. GAGAACGCGCTGTACAACTG (3’→5’) 4. AAGAGGCCAGCGATATGACG (5’→3’)</td>
+    </tr>
+    <tr>
+      <td>UAS-t:sgRNA-acp98AB4x</td>
+      <td>1. GTGTCCCCTTATTCGTGCGG (3’→5’) 2. CACACTATCAAAGGATGACG (5’→3’) 3. ATAAGGGGACACACTATCAA (5’→3’) 4. AGTGTGTCCCCTTATTCGTG (3’→5’)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Circadian locomotor activity
+_*sgRNA scaffold for gRNA 1 of timeless has a one bp deletion (GTTTA... instead of GTTTTA...)_
+
+### Circadian locomotor activity
 
 Male flies entrained on a 12:12 LD cycle during development and post-eclosion were placed in individual 5 mm tubes in TriKinetics, Inc Drosophila Activity Monitors (DAMs) to record their locomotor activity for two days in 12:12 LD, then for 7–11 days in constant darkness (DD). Activity data from the DD period were summed into 15 min bins using DAM file scan software. Clocklab software (Actimetrics) was used to generate actograms and period measurements. Actograms were blindly scored as rhythmic, weakly rhythmic, or arrhythmic; percentages of each category are reported, except when ‘weakly rhythmic’ was less than 10% of the population, then it was included with ‘rhythmic.’ Activity data from the LD day one were summed into 15 min bins and Clocklab software was used to generate average actograms.
 
 Quantification of all circadian locomotor activity data represented in figures is provided in Supplementary file 4.
 
-## Immunohistochemistry and confocal microscopy
+### Immunohistochemistry and confocal microscopy
 
 After 6–9 days of entrainment, flies were decapitated at ZT0 and heads were fixed in 4% paraformaldehyde (Electron Microscopy Sciences #RT15710) in PBS + 0.1% Triton X-100 (PTX) for 40 min at room temperature. Heads were washed in PTX and subsequently incubated on ice. Brains were dissected in PTX and blocked with 4% normal donkey serum (NDS, Jackson ImmunoResearch #017-000-121) in PTX for 90 min at room temperature or overnight at 4°C. After blocking, brains were incubated overnight at 4°C in primary antibody: chicken α-GFP (1:1000, Abcam #ab13970), rabbit α-Per (1:1000, gift of Michael Rosbash [Liu et al., 1992]), rat α-Tim (1:1000, gift of Amita Sehgal and Michael Young [Hunter-Ensor et al., 1996]), chicken α-RFP (1:200, Rockland 600-901-379), mouse α-repo (1:20, DSHB 8D12), and/or mouse α-PDF (1:10, DSHB C7; Cyran et al., 2005) in PTX + 2% NDS. Rabbit α-Per was pre-adsorbed on dechorionated per01 embryos overnight in PTX + 2% NDS prior to use. Brains were washed in PTX and incubated overnight at 4°C in secondary antibody: Alexa Fluor 488–conjugated donkey α-chicken (1:200, Jackson ImmunoResearch #703-545-155), Alexa Fluor 594–conjugated donkey α-rabbit (1:200, Jackson ImmunoResearch #711-585-152), Alexa Fluor 647–conjugated donkey α-rat (1:200, Jackson ImmunoResearch #712-605-153), Cy3–conjugated donkey α-chicken (1:200, Jackson ImmunoResearch #703-165-155), and/or Alexa Fluor 647–conjugated donkey α-mouse (1:200, Jackson ImmunoResearch #715-605-151) in PTX + 2% NDS. Brains were washed in PTX then PBS and were mounted on coverslips coated with Poly-L-Lysine (0.1 mg/mL, Advanced BioMatrix #5048) and PhotoFlow 200 (0.36%, Kodak #1464510). Coverslips were serially dehydrated with increasing concentrations of ethanol (30, 50, 75, 95, 100, 100%) and cleared with two washes in 100% xylenes. Coverslips were mounted onto slides with DPX (Electron Microscopy Sciences #RT13510) and dried at room temperature overnight before imaging.
 
@@ -128,7 +505,7 @@ Images were acquired on a Zeiss LSM 800 Axio Observer seven inverted confocal mi
 
 Quantification of all IHC data represented in figures is provided in Supplementary file 4.
 
-## Quantitative real-time PCR (QRT-PCR)
+### Quantitative real-time PCR (QRT-PCR)
 
 14 day old male flies previously entrained to 12:12 LD were placed in constant darkness (DD) for 24 hours, after which seven circadian timepoints were taken at CT-1, 5, 9, 13, 17, 21 and 25, snap-frozen in liquid nitrogen, and stored at −80°C. RNA was extracted from 60 heads for each of 4 biological replicates per genotype/timepoint with TRIzol (Invitrogen) following the manufacturer’s protocol. Samples were treated with DNaseI (Invitrogen), then heat inactivated. cDNA was synthesized by Revertaid First Strand cDNA Synthesis Kit (Thermo Scientific). PowerUp SYBR Mastermix (Applied Biosystems) was used to perform QRT-PCR using a CFX-Connect thermal cycler (BioRad). Primer efficiency and relative quantification of transcripts were determined using a standard curve of serial diluted cDNA. Transcripts were normalized using Actin5C as a reference gene. The Jonckheere-Terpstra-Kendall (JTK) algorithm was applied using the JTK-Cycle package in R software (Hughes et al., 2010) to determine significance of rhythmic cycling. Only acp-targeted flies displayed significantly rhythmic cycling of all three genes, indicating oscillation similar to wild-type tim, per, and clk RNA cycling over the circadian day. While tim-Gal4>timCRISPR did not result in significant rhythmicity of per, tim, or clk transcript, tim-Gal4>perCRISPR did result in minor significant rhythmic cycling of the clk transcripts, although the peaks are not consistent with those of wild-type animals, indicating arrhythmic expression at the RNA level.
 

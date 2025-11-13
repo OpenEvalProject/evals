@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0153tk833 Department of Neuroscience, Center for Brain Immunology and Glia (BIG), University of Virginia School of Medicine Charlottesville United States
-2. https://ror.org/0153tk833 Department of Microbiology, Immunology and Cancer Biology, University of Virginia School of Medicine Charlottesville United States
-3. https://ror.org/0153tk833 Medical Scientist Training Program, University of Virginia School of Medicine Charlottesville United States
+1. Department of Neuroscience, Center for Brain Immunology and Glia (BIG), University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+2. Department of Microbiology, Immunology and Cancer Biology, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+3. Medical Scientist Training Program, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
 4. Immunology Training Program, Immunology Training Program Charlottesville United States
-5. https://ror.org/0153tk833 Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine Charlottesville United States
-6. https://ror.org/0153tk833 Center for Public Health Genomics, University of Virginia School of Medicine Charlottesville United States
+5. Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+6. Center for Public Health Genomics, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
 
 † Corresponding author
 
@@ -41,31 +41,196 @@ Here, we investigated how the meningeal transcriptional environment is altered f
 
 ## Results
 
-## Mild TBI incites alterations in the cellular composition of the meninges
+### Mild TBI incites alterations in the cellular composition of the meninges
 
 To gain insights into how TBI impacts meningeal biology, we subjected mice to a mild closed-skull injury and then performed scRNA-seq on the meninges one week post-injury (Figure 1a). In this model of mild TBI, mice received a single hit to the right inferior temporal and frontal lobes using a stereotaxic electromagnetic impactor (Figure 1—figure supplement 1a; Bolte et al., 2020). Of note, we have previously shown that head injury in this model does not result in appreciable alterations in balance, motor coordination, reflex, and alertness (Bolte et al., 2020). Consistent with the mild nature of this TBI model, we also do not observe any appreciable differences in CD31 blood vasculature staining at 24 hr following head trauma (Figure 1—figure supplement 1b and c). Moreover, we only detect modest increases in gliosis (Iba1 and GFAP staining) (Figure 1—figure supplement 1d, e and f) and MHCII + staining in the meninges at 24 hr post-TBI (Figure 1—figure supplement 1g, h and i).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig1-v1.jpg)
+
+**Figure 1.:** Male C57BL/6 J wild-type (WT) mice at 10 weeks of age were subjected to a mild closed-skull injury above the right inferior temporal lobe or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a) Schematic of scRNA-seq protocol. (b) Uniform Manifold Approximation and Projection (UMAP) representation of the cell populations present in the meninges where both Sham and TBI groups are included. Colors are randomly assigned to each cell population. (c) Dot plot representation of cluster defining genes for each cell population, where each gene represents the most significant cluster-defining marker for each population. The color and size of each dot represents the average expression and percent of cells expressing each gene, respectively. (d) UMAP representations of the cell populations present in the meninges separated by Sham (sage) and TBI (purple). (e) Bar graph depicting frequencies of cell populations in Sham vs. TBI samples. Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality. Each data point in a UMAP plot represents a cell. p Values were calculated using a two sample z-test. ****p<0.0001, *p<.05, bar chart pairs without * were not statistically significant. Exact statistics are provided in the source data file.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Male C57BL/6 J wild-type (WT) mice at 10 weeks of age received a TBI or Sham procedure and then the brains or meninges were harvested for immunohistochemistry at 24 hours. (a) Schematic depicting the location of the TBI in relation to dorsal anatomical structures. (b) Representative images of meningeal whole mounts stained with DAPI (blue), CD31 (green) and Lyve-1 (grey). (c) Quantification of the percent area of CD31 in each meningeal whole mount. Each data point represents an individual mouse (Sham n=5, TBI n=5, rep = 1). (d) Representative images of brains with injury site (right) taken 24 hr following TBI stained with DAPI (blue), Iba1 (green), NeuN (grey) and GFAP (yellow). (e) Representative high-magnification images (63 x) of Iba1 and GFAP-positive cells (microglia/macrophages and reactive astrocytes respectively) and (f) quantification of the percent area of GFAP and Iba1-positive cells in the hemisphere ipsilateral to the injury 24 hr after TBI. Each data point represents an individual mouse (Sham n=4, TBI n=6, rep = 2). (g–i) Meningeal whole mounts stained with MHCII (red) taken 24 hr post TBI. Dashed boxes in (g) represent zoomed areas of transverse sinus shown in (h). (i) Quantification of the % area MHCII staining in each meningeal whole mount. Each dot represents one mouse (Sham n=8, TBI n=8, rep = 1). Error bars depict mean  ± s.e.m. p Values were calculated using an unpaired students t-test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. Violin plots depicting various genes split by experimental group: Sham (sage) and TBI (purple). Each dot represents an individual cell. The width of the violin plot represents the frequency of observations at that given y-value. Therefore, the wider the violin plot, the higher the frequency of observations. Plots without sage or purple coloring did not have enough cells expressing the gene to create the plot. Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality.
+
 For all of the sequencing studies in this paper, we strategically chose to isolate only the dorsal meningeal tissue, as this region of the meninges does not include the tissue affected by the direct injury site. Therefore, the sequencing data generated from these studies should better reflect the global meningeal changes that result from a localized injury site rather than the tissue damage and response at the immediate injury site. Joint clustering of both the Sham and TBI meninges revealed 21 unique cell populations including endothelial cells, fibroblasts, Schwann cells, and ciliated ependymal cells from the pia (Figure 1b and c, Table 1). Additionally, the meninges contained a full repertoire of immune cells including macrophages, B cells, T cells, NK cells, dendritic cells, plasmacytoid dendritic cells, and neutrophils (Figure 1b and c, Table 1). Other cell populations were less well-defined and included cells expressing genes important for clotting and proliferating cells (Figure 1b and c, Table 1). When separated out by Sham and TBI treatments, all 21 populations were still present in both groups (Figure 1d, Table 1), however the frequencies were varied (Figure 1e). Following brain injury, there was a higher frequency of one group of macrophages which we denoted as ‘Activated Macrophages 1’ as they exhibit high expression of complement-related genes (Figure 1c and e). Moreover, the frequency of fibroblasts was substantially increased following head trauma (Figure 1e). While there was a reduction in frequency of some other cell types, namely the B cell populations, it is unclear whether this was relative to the expansion of the other subsets or an actual decrease in number (Figure 1e). In order to ensure the short digestion and processing steps of the sample preparation did not result in significant upregulation of stress-related genes in both Sham and TBI samples, we examined a collection of genes that have been known to be upregulated after tissue processing and in stress-related conditions (Haimon et al., 2018; Marsh et al., 2020; Van Hove et al., 2019; Figure 1—figure supplement 2). Very few sequenced cells expressed these genes and there were not substantial differences between the TBI or Sham experimental groups, suggesting minor contributions of processing on gene expression and similar effects across experimental groups (Figure 1—figure supplement 2). Overall, these data highlight the heterogeneous nature of the meningeal tissue and also demonstrate that the frequencies of macrophage and fibroblast populations are increased 1 week post-TBI.
 
-## Effects of mild TBI on the meningeal macrophage transcriptome
+**Table 1.**
+ Counts of each cell population separated by Sham and TBI.Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. The cell counts for each cell population are shown after data processing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell Type</th>
+      <th>Cell Counts Sham</th>
+      <th>Cell Counts TBI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Activated Macs 1</td>
+      <td>185</td>
+      <td>499</td>
+    </tr>
+    <tr>
+      <td>Activated Macs 2</td>
+      <td>199</td>
+      <td>319</td>
+    </tr>
+    <tr>
+      <td>Macs 3</td>
+      <td>24</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>B Cells 1</td>
+      <td>217</td>
+      <td>172</td>
+    </tr>
+    <tr>
+      <td>B Cells 2</td>
+      <td>172</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td>Immature/Diff B Cells</td>
+      <td>63</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>CD3+T Cells</td>
+      <td>150</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>Activated T Cells</td>
+      <td>148</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td>NK Cells</td>
+      <td>68</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Dendritic Cells</td>
+      <td>131</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Plasmacytoid Dendritic Cells</td>
+      <td>18</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Neutrophils</td>
+      <td>16</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Proliferating Cells</td>
+      <td>36</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Fibroblasts</td>
+      <td>124</td>
+      <td>781</td>
+    </tr>
+    <tr>
+      <td>Endothelial Cells 1</td>
+      <td>235</td>
+      <td>380</td>
+    </tr>
+    <tr>
+      <td>Endothelial Cells 2</td>
+      <td>78</td>
+      <td>199</td>
+    </tr>
+    <tr>
+      <td>Pericytes</td>
+      <td>20</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>Choroid Plexus</td>
+      <td>58</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td>Pineal Gland Cells</td>
+      <td>31</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Schwann Cells</td>
+      <td>35</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>Clotting Related</td>
+      <td>34</td>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table>
+
+### Effects of mild TBI on the meningeal macrophage transcriptome
 
 Given our data demonstrating an appreciable expansion of the meningeal macrophage population following injury (Figure 1e), as well as emerging data suggesting instrumental roles for these cells in TBI pathogenesis (Russo et al., 2018; Roth et al., 2014), we decided to focus first on the response of meningeal macrophages to head trauma. Differential gene expression analysis of the ‘Activated Macrophage’ populations (Activated Macrophages 1 & 2) revealed 321 upregulated genes and 369 downregulated genes following head injury when using a false discovery rate of <0.1 (Figure 2a). When we performed a network analysis on the significantly upregulated genes from these populations, we found an enrichment of pathways related to immune system activation (Figure 2b). Upregulated genes in the activated population included those important for cytokine secretion, immune cell differentiation, motility, and chemotaxis (Figure 2b). Furthermore, the most highly enriched gene ontology (GO) biological processes modulated in response to head trauma were found to be related to immune system activation and the stress response (Figure 2c). We also noticed that some of the most significantly upregulated genes contributing to the immune-related GO terms were important for the type I IFN response including Ifnar1, Ifi203, Irf2bp2, and Irf5, amongst others (Figure 2d). We next examined type I IFN gene expression by qPCR in whole meningeal samples one week after injury. We observed elevated expression of genes including Ifnar1, Irf5, Ifnb1, and Ifi203, highlighting the strong type I IFN gene signature after TBI that is likely driven by meningeal macrophages (Figure 2e–h). Interestingly, recent studies suggest that elevated type I IFN signaling in the brain parenchyma is a driver of detrimental outcomes in TBI pathogenesis (Karve et al., 2016; Barrett et al., 2020). Taken together, these findings suggest that meningeal macrophages upregulate inflammation-related genes one week following brain injury and may contribute to the type I IFN signature that is seen following TBI.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig2-v1.jpg)
+
+**Figure 2.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a) Quantification of the number of upregulated and downregulated macrophage genes following injury (FDR < 0.1). (b) Network analysis of significantly upregulated genes in meningeal macrophages following injury. Text size is proportional to the number of genes enriched in that cluster. Node size is roughly proportional to the number of GO terms in that cluster (node size was manually adjusted so may not be exactly proportional to GO terms included). Dot size is proportional to the number of genes contributing to each GO term. Dot color is proportional to p-value, where colors closer to white have lower p-values. Connecting lines represent GO terms with shared genes, more lines represents a higher number of shared genes between nodes. (c) Dot plot showing the 25 most enriched GO terms with significantly upregulated genes following TBI in the meningeal macrophage population. The color and size of each dot represents the size of the GO term and the number of upregulated genes that contribute to each term, respectively. (d) Feature plots depicting several significantly upregulated genes following injury (FDR < 0.1). The color of each data point represents the expression level of the indicated gene within that cell. Quantitative PCR relative expression of (e) Ifnar1, (f) Irf5, (g) Ifnb1, and (h) Ifi203 within the dural meninges one week after TBI (Sham n=5, TBI n=5, rep = 1). (i) UMAP representation showing re-clustering of the meningeal macrophage populations. (j) UMAP representation of the macrophages present in the meninges separated by Sham (sage) and TBI (purple). (k) Frequencies of meningeal macrophage populations in Sham vs. TBI samples represented as a gradient bar chart. Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality. Differential gene expression was calculated using the ZINB-WaVE function for zero-enriched datasets and DESeq2. Each data point in a UMAP plot represents a cell. Error bars in (e–h) depict mean  ± s.e.m. p Values for (e–h) were calculated using unpaired two-sample students t-tests and p values for (k) were calculated using a two sample z-test. ****p<0.0001. Bar chart pairings without * were not statistically significant, exact statistics are provided in the source data file. FDR; false discovery rate.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a–d) Feature plots showing expression patterns of (a) Anti-inflammatory, (b) Resolution phase, (c) Inflammatory 1, and (d) Inflammatory 2 macrophage cluster-defining genes. The color of each data point represents the expression level of the indicated gene within that cell. Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a) Heatmap showing the top prioritized macrophage ligands where the darkest shades represent the highest Pearson correlation coefficient, which corresponds to the ligands that best predict the TBI target genes. (b) Heatmap showing the prioritized ligands and their predicted receptors. The darkest shades represent the ligand-receptor pairs that interact most robustly. (c) Heatmap depicting the prioritized ligands and their predicted target genes. Warmer colors represent genes that are more likely regulated by the shown ligand whereas cooler colors are less likely to be regulated by the shown ligand. (d) Dotplot depicting which other cell populations are most likely to affect gene expression in the macrophage population through ligand-target interactions. The warmer colors represent higher average expression of the shown ligand within a cell population and the size of the dot represents the frequency at which the ligand is expressed within a certain cell population. Graphs were produced with NicheNet using the same Seurat object generated by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality.
 
 Previous findings also suggest that there are several subtypes of meningeal macrophages that respond to TBI (Russo et al., 2018). Therefore, we decided to look more closely at the subpopulations within the original macrophage clusters. We re-clustered the three macrophage populations (Activated Macrophages 1 & 2, and Macrophages 3) combined from Sham and TBI meninges, which yielded six different meningeal macrophage clusters (Figure 2i). The largest population of macrophages expressed high levels of ferritin (‘Ferritin Expressing’) (Figure 2i). The top two cluster-defining genes within the ‘Ferritin Expressing’ macrophages were ferritin light chain (Ftl1) and ferritin heavy chain (Fth1) (Figure 2i). There were two additional populations, deemed ‘Anti-Inflammatory’ and ‘Resolution Phase’ macrophages, that appeared to be alternatively activated, anti-inflammatory macrophages that are likely implicated in the healing response following injury. The top cluster-defining gene in the ‘Anti-Inflammatory’ macrophage cluster was Mrc1 (also referred to as CD206), which is known to be present on macrophages that play a role in the healing response after TBI (Russo et al., 2018). Other highly significant subcluster-defining genes in the ‘Anti-Inflammatory’ macrophage population included Stab1, Nrros, and Dab2, which are known to be expressed on healing macrophages, and are important for repressing reactive oxygen species and limiting type I IFN responses (Park et al., 2009; Noubade et al., 2014; Hung et al., 2016; Figure 2—figure supplement 1a). ‘Resolution Phase’ macrophages do not fall into either the M1 classically activated or M2 alternatively activated macrophage categories and are believed to play a regulatory role following an inflammatory event (Stables et al., 2011). They tend to be enriched for antigen presenting genes, chemokine genes, and proliferation-related genes (Stables et al., 2011). Indeed, the meningeal macrophages in the ‘Resolution Phase’ cluster were defined by their expression of antigen presentation-related genes (H2-Eb1, H2-Ab1, H2-Aa, Cd74, Ctss) and anti-inflammatory genes such as Lair1, an inhibitory receptor that prevents over-activation of cytokine production (Meyaard et al., 1997; Figure 2—figure supplement 1b). In contrast to these ‘Anti-Inflammatory’ and ‘Resolution Phase’ clusters, the final two macrophage populations exhibited gene signatures more commonly associated with inflammatory macrophages (Figure 2i). The ‘Inflammatory 1’ macrophage cluster was defined by its differential expression of Ccr2 and adhesion molecules such as Alcam and Lgals3 (Figure 2—figure supplement 1c). The second inflammatory macrophage subset ‘Inflammatory 2’ was defined by its expression of genes important for chemotaxis including Ccr7, Ccl22, and Ccl5 (Kwiecień et al., 2019; Martinez and Gordon, 2014; Figure 2—figure supplement 1d).
 
 To determine how injury affected these distinct meningeal macrophage populations, we separated the cells into Sham and TBI groups and examined their frequencies (Figure 2j and k). Interestingly, there was an overall relative increase in the ‘Anti-Inflammatory’ and ‘Resolution Phase’ macrophages in the TBI group, indicating that one week after injury, the response of the meningeal macrophages appears to shift towards wound healing and inflammation resolution (Figure 2j and k). There was also a relative reduction in the ‘Ferritin Expressing’ macrophages following injury (Figure 2j and k). Overall, these findings demonstrate that although the macrophages collectively upregulated genes essential for inflammation following TBI, the frequencies of ‘Resolution Phase’ and ‘Anti-Inflammatory’ macrophages also increased and may play a role in the wound healing process.
 
-## Mild TBI induces the upregulation of neurological disease-associated genes in meningeal fibroblasts
+### Mild TBI induces the upregulation of neurological disease-associated genes in meningeal fibroblasts
 
 Next, we wanted to further investigate the ‘Fibroblast’ population, as it was expanded 1 week following injury in the single cell dataset (Figure 1d and e). After head injury, the ‘Fibroblast’ population exhibited 368 activated genes and 320 repressed genes (Figure 3a). There were several patterns in the activated genes following injury, including genes important for collagen production and extracellular matrix remodeling (Nisch, Ppib, Pmepa1, Ddr2) and genes critical for cell motility and growth (Ptprs, Pfn1, Cd302, Tpm3) (Figure 3b). To validate these sequencing findings, we utilized immunohistochemical staining for collagen, which is produced by fibroblasts, in meningeal whole mounts. Consistent with the sequencing results, we observed a significant increase in collagen density 1 week after TBI (Figure 3c, d and e). Furthermore, we were also interested in determining whether the fibroblast population was contributing to the inflammatory response following TBI. Of the significantly upregulated genes identified in fibroblasts post-TBI, many of them were related to components of immune system activation and cytokine signaling (Figure 3f).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig3-v1.jpg)
+
+**Figure 3.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a) Quantification of the number of upregulated and downregulated fibroblast genes following injury (FDR < 0.1). (b) Dot plot representation of highlighted fibroblast genes that were significantly upregulated following injury (FDR < 0.1). The color and size of each dot represents the average expression and percent of cells expressing each gene, respectively. (c–d) Representative images of meningeal whole mounts stained for collagen (green) (c) and a 16 color heatmap of the collagen staining intensity (d), where red is most intense and blue is least intense. (e) Quantification of collagen staining intensity using corrected total cellular fluorescence (CTCF). CTCF is calculated as mean fluorescence of meningeal whole mounts - (Area of meningeal whole mount x Mean fluorescence of background). Each data point represents an individual mouse (Sham n=5, TBI n=5, rep = 1). (f) Network map depicting significantly upregulated genes that enriched immune system-related GO terms (FDR < 0.1). The lines within the circle indicate which genes contribute to each GO term. (g) Scatter plot representation of the top enriched KEGG terms with significantly upregulated genes in the fibroblast population (FDR < 0.1). Dot size is proportional to term size. Genes contributing to one KEGG term may also contribute to other KEGG terms. (h) Dot plot depicting dural, arachnoid, and pial fibroblasts markers where the size of the circles represents the percent of cells expressing each gene. (i) Feature plots of genes characteristic of dural fibroblasts in both Sham and TBI conditions. The color of each data point represents the expression level of the indicated gene within that cell. Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality. Differential gene expression was calculated using the ZINB-WaVE function for zero-enriched datasets and DESeq2. Each data point in a UMAP plot represents a cell. Error bars depict mean  ± s.e.m. p value for (e) was calculated using an unpaired two-tailed t-test assuming unequal variances. FDR; false discovery rate, p.adj; adjusted p-value.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a) Heatmap showing the top prioritized fibroblast ligands where the darkest shades represent the highest Pearson correlation coefficient, which corresponds to the ligands that best predict the TBI target genes. (b) Heatmap showing the prioritized ligands and their predicted receptors. The darkest shades represent the ligand-receptor pairs that interact most robustly. (c) Heatmap depicting the prioritized ligands and their predicted target genes. Warmer colors represent genes that are more likely regulated by the shown ligand whereas cooler colors are less likely to be regulated by the shown ligand. (d) Dotplot depicting which other cell populations are most likely to affect gene expression in the fibroblast population through ligand-target interactions. The warmer colors represent higher average expression of the shown ligand within a cell population and the size of the dot represents the frequency at which the ligand is expressed within a certain cell population. Graphs were produced with NicheNet using the same Seurat object generated by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality.
 
 To explore the cellular and disease pathways that are most affected in fibroblasts after mild head trauma, we identified the KEGG terms enriched by the differentially upregulated genes in the fibroblast group after TBI in comparison to the Sham group. Interestingly, disease pathways related to neurodegenerative diseases, including Parkinson’s disease, Alzheimer’s disease, amyotrophic lateral sclerosis, and prion disease, were some of the most highly upregulated pathways altered in fibroblasts after TBI (Figure 3g). Many of the same terms that contribute to the oxidative phosphorylation KEGG term also contribute to the various disease-related KEGG terms, indicating a change in the metabolic state of the fibroblasts may be underlying disease-related processes.
 
 Given that fibroblasts are present in all three meningeal layers (DeSisto et al., 2020), we decided to investigate which layers the fibroblasts inhabited, and which layer was likely responsible for the increase in fibroblasts following TBI. To accomplish this, we examined the expression of molecules that are commonly used to identify the distinct layer of the meninges in which the fibroblast population is likely to reside (DeSisto et al., 2020; Doro et al., 2019; Cooper et al., 2012; Zarbalis et al., 2007; Kalamarides et al., 2011; Siegenthaler et al., 2009; Caglayan et al., 2014). More specifically, recent studies have shown that dural fibroblasts can be identified using the markers Alpl and Foxc2 (Doro et al., 2019; Cooper et al., 2012; Zarbalis et al., 2007), whereas Ptgds and Ald1a2 are unique markers of arachnoid fibroblasts (Kalamarides et al., 2011; Siegenthaler et al., 2009) and Col18a1 is specific to pial fibroblasts (DeSisto et al., 2020; Caglayan et al., 2014). As expected, we found that a majority of the fibroblasts in the meninges were from the dura, the thickest layer of the meninges and the layer that is targeted by the method of dissection used in these studies (Alves de Lima et al., 2020b; Rua and McGavern, 2018). Fewer pia- or arachnoid-resident fibroblasts were present, as anticipated (Figure 3h). When we looked at the expression level of dural fibroblast genes before and after TBI, we saw that several of the markers (e.g. Foxc2, Fxyd5) were significantly upregulated following injury, and other dural markers, while not expressed at significantly higher levels, were clearly expressed by a higher proportion of total cells (e.g. Alpl, Mgp) (Figure 3i). This indicates that the dural compartment likely undergoes an increase in fibroblast cell frequency one week after brain injury, which is also consistent with the increase in collagen density seen in the meninges 1 week after TBI (Figure 3c, d and e). Overall, we observed that the meningeal fibroblast population is highly responsive to TBI and that they upregulate genes enriched in disease-related pathways, immune system activation, and the wound healing response.
 
-## Transcriptional modulation of meningeal lymphocytes in response to mild TBI
+### Transcriptional modulation of meningeal lymphocytes in response to mild TBI
 
 Since we observed shifts in the frequencies of some immune cell populations after TBI (Figure 1d and e), we were interested in determining which genes were differentially expressed in meningeal T and B cells after head injury, especially given recent reports that have identified instrumental roles for meningeal lymphocytes in regulating multiple aspects of neurobiology, behavior, and CNS disease (Alves de Lima et al., 2020a; Filiano et al., 2016; Derecki et al., 2010; Ribeiro et al., 2019; Gate et al., 2020). We independently combined the two T cell populations (‘Activated T Cells’ and ‘CD3 + T Cells’) and the B cell populations (‘B Cells 1’, ‘B Cells 2’, and ‘Immature/Differentiating B Cells’) to assess differential gene expression. Overall, 151 genes were upregulated and 286 were downregulated following injury in the T cell population, 102 genes were upregulated and 158 were downregulated following injury in the B cell population, and 183 genes were upregulated and 149 were downregulated following injury in the dendritic cell population (Figure 4a). Some of the smaller populations such as NK cells, neutrophils, and plasmacytoid dendritic cells exhibited few to no differentially regulated genes, likely due to the small number of cells present in each of these populations (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig4-v1.jpg)
+
+**Figure 4.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a) Quantification of the number of upregulated and downregulated genes in different immune cell populations following injury (FDR <0.1). (b–c) UMAP representation showing re-clustering of the (b) T cell and (c) B cell populations present within the meninges. (d-e) UMAP representation of pseudotime cellular trajectory profiles showing (d) T cell and (e) B cell maturation trajectories. The circle with the number ‘1’ represents the root node. The color of each data point represents advancement in pseudotime, with dark purple representing ‘early’ pseudotime and yellow representing ‘late’ pseudotime. The line represents the ‘path’ of pseudotime with intersections representing possible different differentiation events. Grey data points represent cell populations that were not connected in pseudotime with the selected node. (f) Circos plot depicting differentially expressed genes in the T cell populations within the TBI meninges (FDR <0.1) associated with different cellular processes. The proportion of the circle’s circumference allocated to each cellular process represents the number of T cell genes associated with that process that are differentially expressed in the TBI meninges. The lines connecting genes within the circle indicate which genes were shared amongst cellular processes. Colors were randomly assigned. (g) Treemap depicting significantly upregulated genes in the B cell population and the cellular process to which each gene contributes. The size of the square around each gene represents the Wald statistic, which is used to calculate the overall significance of the change in gene expression (a larger square indicates a larger Wald statistic, which leads to a lower adjusted p-value). The color of the boxes represents log2FC, where purple represents a lower log2FC and yellow represents a higher log2FC. An asterisk (*) indicates that the log2FC of the gene was higher than the scale (Ighv14-4 had a log2FC of 18.08). Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality. Each data point in a UMAP plot represents a cell. Differential gene expression was calculated using the ZINB-WaVE function for zero-enriched datasets and DESeq2. Pseudotime graphs were created using Monocle. AR, antigen recognition; CS, cytokine signaling; FDR; false discovery rate, log2FC; log 2 fold change.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a–c) Feature plots showing expression patterns of (a) Th2, (b) Th17 and (c) NK/NKT T cell subset cluster-defining genes. The color of each data point represents the expression level of the indicated gene within that cell. Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and reducing the dimensionality.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Male WT mice at 10 weeks of age received a TBI or Sham procedure. One week later, the meninges from 5 mice per group were harvested, pooled, and processed for scRNA-seq. (a–c) Feature plots showing expression patterns of (a) Activated, (b) Immature and (c) Proliferating B cell subset cluster-defining genes. The color of each data point represents the expression level of the indicated gene within that cell. Graphs were calculated using Seurat by normalizing the dataset, finding the variable features of the dataset, scaling the data, and, reducing the dimensionality.
 
 We were next interested in determining which different T and B cell subsets were present within the meninges, so we re-clustered the cells within these two populations (Figure 4b and c). We found that within the T cell subsets, there was a clear CD8 +T cell population and two T helper cell populations: Th2 cells and Th17 cells (Figure 4b). The Th2 cell sub-cluster expressed highly-significant cluster-defining markers including Il1rl1 and Gata3, which are characteristic of the Th2 subset (Tibbitt et al., 2019; Figure 4b, Figure 4—figure supplement 1a). Alternatively, the Th17 sub-cluster expressed characteristic markers such as Il23r, Il17re, and Rorc (Hu et al., 2017; Figure 4b, Figure 4—figure supplement 1b). The fourth sub-cluster of T cells appears to be comprised of NKT and NK cells, as this population expressed high levels of common NK markers, including Klrb1c, Ncr1, Klrd1, and Klrk1, and some of these same cells also expressed components of the CD3 co-receptor (Cd3d, Cd3d, and Cd3g) (Figure 4b, Figure 4—figure supplement 1c). The final population represents cells that are likely dying T cells, based on their high expression of mitochondrial genes and Malat1 (Figure 4b).
 
@@ -77,7 +242,7 @@ Next, we were interested in looking more closely at some of the genes that were 
 
 Investigating the genes that were upregulated in the B cell populations following injury, we found that many of these genes fell into the category of ‘B Cell Maturation’, including Cd83, Ube2d3, and Doc3 (Figure 4g). Other upregulated genes included those important for B cell activation and signaling (Blnk, Cd19), antigen presentation (Cd79b, H2-D1), and inflammation (Ppia, Hmgb1) (Figure 4g). The upregulation of these genes suggests that TBI drives the activation and maturation of B cell populations in the meningeal compartment. Overall, these data demonstrate that both T and B cells upregulate genes involved in activation of adaptive immune responses following head trauma. This upregulation seems to be controlled, as multiple regulatory genes are also simultaneously activated.
 
-## Predicted ligand-target interactions highlight a pro-growth and controlled pro-inflammatory meningeal environment after TBI
+### Predicted ligand-target interactions highlight a pro-growth and controlled pro-inflammatory meningeal environment after TBI
 
 Cell-cell interactions may partly dictate the gene expression dynamics observed following TBI. We used Nichenet to explore how intercellular communication may influence the post-injury transcriptional environment. Nichenet is a tool that integrates gene expression data from interacting cells to infer the effects of sender-cell ligands on receiver cell expression (Browaeys et al., 2020). Since both macrophage and fibroblast populations exhibited significant transcriptional alterations post-TBI we focused our analysis on how signaling of these large populations affects other meningeal cells (Figure 1e).
 
@@ -85,21 +250,29 @@ We first examined how the macrophage cell populations might influence the gene e
 
 Next, we examined how the meningeal fibroblast population might influence local gene expression through ligand-target interactions. As with the macrophage ligands, we found the top ligand signaling pathways in fibroblasts were essential for cellular growth and differentiation. More specifically, many top ligands were essential for promoting angiogenesis (Vegfa, Cxcl12, Pgf), growth and inflammation (Apoe, Csf1, Cxcl12, Tgfb3), and extracellular matrix development and wound healing (Col4a1, Hspg2, Nov) (Figure 3—figure supplement 1a and b; Solé-Boldo et al., 2020; Buechler et al., 2021; Lin et al., 2005). Interestingly, we found anti-inflammatory pathways among the top predicted ligands including Anxa1, which is known for its inhibitory effects on adhesion and migration, and Serping1, which is responsible for production of C1 inhibitor (Figure 3—figure supplement 1a and b; Gavins and Hickey, 2012). Predicted targets of the top ligand, Apoe, include complement cascade genes such as C1qb and C1qc, both of which were upregulated in the meningeal macrophage population after injury. Other ligands, such as Csf1, also likely potentiate the immune response by activating genes such as Cd14 and Cd68, which are important for macrophage/monocyte responses in inflammation (Figure 3—figure supplement 1c; Buechler et al., 2021). Other ligands, such as Vegfa, likely activate endothelial cells, which results in upregulation of genes important for cellular growth and division including Fos and Id1 (Figure 3—figure supplement 1c). Upon performing the inverse analysis, we find that endothelial cells and macrophages strongly influence the fibroblast transcriptome as evidenced by high expression of influential ligands in a significant proportion of the cell population (Figure 3—figure supplement 1d). Altogether, meningeal fibroblasts likely influence gene expression signatures after TBI to promote pro-growth and angiogenic signaling cascades in addition to a balanced upregulation of the immune system. Together with macrophages, these predicted ligand-target interactions highlight the highly complex but coordinated and controlled response to injury that occurs in young mice.
 
-## Prominent effects of aging and mild TBI on the meningeal transcriptome
+### Prominent effects of aging and mild TBI on the meningeal transcriptome
 
 Given the considerable brain injury-induced alterations in the meningeal transcriptional and cellular landscape that we observed in young mice, we were next interested in investigating whether these changes were preserved or altered with age. It has previously been suggested that inability to properly resolve inflammatory responses in the brain after head trauma contributes to the aggravated disease course commonly seen in the elderly (Chou et al., 2018; Witcher et al., 2021; Witcher et al., 2018). Therefore, we were also particularly interested to explore potential differences in the resolution of meningeal immune responses following TBI between young and aged mice. To this end, we performed bulk RNA-seq on the meningeal tissue at 1.5 months post TBI or Sham treatment in both young (10 weeks of age) and aged (20 months of age) mice, as we predicted that the meningeal injury would have largely resolved 1.5 months post-TBI in young mice (Figure 5a). Principal component analysis (PCA) revealed that age was the main driver of differential gene expression, as young and aged groups clustered furthest apart (Figure 5b). However, while the young mice that had received either Sham or TBI clustered together in the PCA plot, the aged Sham and TBI mice clustered further apart, indicating that the effects from TBI may have more long-lasting effects on gene expression in aged mice when compared to young mice (Figure 5b). Indeed, when we looked at the number of differentially expressed genes between all four experimental groups, we saw that there were only a total of 22 differentially expressed genes when comparing Young Sham with Young TBI, while there were a total of 364 differentially expressed genes when comparing Aged Sham with Aged TBI (Figure 5c and d). Interestingly, 1772 differentially expressed genes were identified when comparing Young Sham mice with Aged Sham mice, and 2936 differentially regulated genes were identified when comparing Young TBI mice with Aged TBI mice (Figure 5c and d). Furthermore, we looked at which genes were shared between comparison groups to determine if the TBI signature in aging was unique or largely shared with the uninjured aged mice. Interestingly, there were 917 downregulated genes and 639 upregulated genes that were unique to the Young TBI vs. Aged TBI comparison and not shared with any other comparison, including the Young Sham vs. Aged Sham comparison. There were 595 downregulated genes and 592 upregulated genes that were shared between these two comparisons, indicating that while a portion of the transcription changes seen in the Young TBI vs. Aged TBI group may be attributed to aging, a significant number of the affected genes were uniquely identified in the setting of trauma in aged mice. Overall, this indicates that aging profoundly affects meningeal gene expression and that mild head trauma in aging results in even larger changes in gene expression. Moreover, while the young mice exhibit very few gene expression changes 1.5 months following TBI, the aged mice experience many more alterations in gene expression that last for a longer period of time, which suggests that recovery post-TBI may be delayed with aging.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig5-v1.jpg)
 
-**Figure 5.:** (a) Schematic depicting experimental layout. Male WT mice at 10 weeks of age or 20 months of age received a TBI or Sham procedure. 1.5 months later, bulk RNA-seq was performed on the four experimental groups with three biological replicates per group (each biological replicate consisted of meningeal RNA samples from 2 to 3 independent mice). (b) Principal component analysis (PCA) showing clustering of samples. (c) Volcano plots illustrate the number of differentially expressed genes with statistically significant differences denoted in blue and red (FDR <0.1). Numbers in each corner depict the number of differentially expressed genes for each comparison. Blue data points represent significantly downregulated genes and red data points represent significantly upregulated genes. (d) Upset plots depicting significantly downregulated (blue) and upregulated (red) genes for each comparison and the number of genes that were shared between comparisons (FDR <0.1). The graph on the left sidebar shows the total number of differentially expressed genes per group. A single black dot indicates the differentially expressed genes are unique to the highlighted comparison. Two or more black dots connected by a line indicate that the differentially expressed genes are shared between the multiple highlighted comparisons. FDR and p-values were calculated with DESeq2 using the Wald test for significance following fitting to a negative binomial linear model and the Benjamini-Hochberg procedure to control for false discoveries. FDR; false discovery rate, DE; differentially expressed.Figure 5—source data 1.Figure 5—source data 2.Data shows the number of differentially expressed genes in each comparison and whether each gene was differentially expressed in each comparison.
+**Figure 5.:** (a) Schematic depicting experimental layout. Male WT mice at 10 weeks of age or 20 months of age received a TBI or Sham procedure. 1.5 months later, bulk RNA-seq was performed on the four experimental groups with three biological replicates per group (each biological replicate consisted of meningeal RNA samples from 2 to 3 independent mice). (b) Principal component analysis (PCA) showing clustering of samples. (c) Volcano plots illustrate the number of differentially expressed genes with statistically significant differences denoted in blue and red (FDR <0.1). Numbers in each corner depict the number of differentially expressed genes for each comparison. Blue data points represent significantly downregulated genes and red data points represent significantly upregulated genes. (d) Upset plots depicting significantly downregulated (blue) and upregulated (red) genes for each comparison and the number of genes that were shared between comparisons (FDR <0.1). The graph on the left sidebar shows the total number of differentially expressed genes per group. A single black dot indicates the differentially expressed genes are unique to the highlighted comparison. Two or more black dots connected by a line indicate that the differentially expressed genes are shared between the multiple highlighted comparisons. FDR and p-values were calculated with DESeq2 using the Wald test for significance following fitting to a negative binomial linear model and the Benjamini-Hochberg procedure to control for false discoveries. FDR; false discovery rate, DE; differentially expressed.
 
 Because aging itself resulted in substantially different gene expression patterns, we decided to look more closely at these differences within the bulk RNA-seq dataset. Upon examining the top 20 most significantly upregulated and downregulated genes in the Aged Sham mice as compared to the Young Sham mice, we noticed a striking upregulation in genes important for antibody production by B cells (Figure 6a). In fact, one half of the top 20 upregulated genes fell into this category (Figure 6a). When we examined the top GO biological processes that were enriched by the significantly activated genes in the Young Sham mice versus Aged Sham mice comparison, we saw that immune and defense responses were among the most highly upregulated (Figure 6b), indicating that the cells within the aged meninges have grossly upregulated their immune response, even in homeostatic conditions.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig6-v1.jpg)
+
+**Figure 6.:** Male WT mice at 10 weeks of age or 20 months of age received a TBI or Sham procedure. 1.5 months later, bulk RNA-seq was performed on the four experimental groups with three biological replicates per group (each biological replicate consisted of meningeal RNA samples from 2 to 3 independent mice). (a) Heatmap representation of the top 20 most significantly upregulated and downregulated (FDR <0.1) genes in the Young Sham vs. Aged Sham groups. The red asterisk (*) indicates genes associated with antibody production. (b) Dot plot of GO term biological processes shows enrichment of immune-related pathways with differentially expressed genes between young mice as compared to aged mice. Color and size of each dot represent the size of the GO term and the number of upregulated genes that contribute to each term, respectively. (c) Violin plot depicting counts of significantly activated antibody and B cell related genes in response to age (FDR <0.1). The number above each comparison on the graph represents the adjusted p-value calculated for each gene using DESeq2. The central line within each plot represents the median of the data set. The upper and lower boundaries of the box represent the third (Q3) and first (Q1) quartiles respectively. The violin plot encompasses the three biological replicates. The width of the violin plot represents the frequency of observations at that given y-value. Therefore, the wider the violin plot, the higher the frequency of observations. The meninges of 5 young Sham mice and 5 aged Sham mice were harvested for each immunohistochemical experiment. (d) Representative images from a young Sham mouse and aged Sham mouse showing a region of the SSS stained with J-chain (red) and Lyve-1 (grey) (e) and quantification of J-chain puncta in meningeal whole mounts along the SSS (Sham n=5, TBI n=5, rep = 1). (f) Representative images of the transverse sinus in young and aged mice stained with B220 (green) and Lyve-1 (grey). The dashed box on the top two images corresponds to the higher magnification images depicted below. (g) Quantification of the number of B220 cells along the entire transverse sinus (Sham n=5, TBI n=5, rep = 1). (h) Violin plot depicting counts of significantly activated type-I interferon related genes in response to age (FDR < 0.1). The violin plot parameters are the same as describe for (c). FDR and p-values in (a–c,h) were calculated with DESeq2 using the Wald test for significance following fitting to a negative binomial linear model and the Benjamini-Hochberg procedure to control for false discoveries. Error bars in (e,g) depict mean  ± s.e.m. p values in (e,g) were calculated using a two-tailed unpaired two-sample t-test assuming unequal variances. FDR; false discovery rate, SSS; superior sagittal sinus.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Male WT mice at 10 weeks of age or 20 months of age were sacrificed and the dural meninges were processed for flow cytometry. (a) Flow cytometry gating strategy. Warmer colors indicate higher concentration of cells. (b) Quantification of total cell numbers in the dural meninges in young and aged mice (Young n=7, Aged n=6, rep = 1). (c) Quantification of the numbers of CD19+, B220+, and CD19 + B220 + cells in the dural meninges of young and aged mice (Young n=7, Aged n=6, rep = 1). (d) Quantification of the frequency of CD19+, B220+, and CD19 + B220 + cells of total CD45 + cells in young and aged dural meninges (Young n=7, Aged n=7, rep = 1). Two aged mice were excluded from this experiment: one mouse was excluded entirely due to gross hepatosplenomegaly and another mouse was excluded from the absolute cell count quantifications due to a suboptimal dissection. p values for were calculated using unpaired two-sample students t-tests.
 
 Due to the striking nature of the upregulation of antibody production-related genes, and recent findings that report an increase in IgA-secreting plasma cells with age (Fitzpatrick et al., 2020), we more closely examined some of these genes within the bulk RNA-seq dataset (Figure 6c). We found highly significant upregulations in genes related to the immunoglobulin heavy chain (Ighm, Ighg2b, Igha), light chain (Igkc), and components of IgA or IgM antibodies (Jchain) (Figure 6c). Using immunohistochemistry on meningeal whole mounts, we confirmed that aged meninges have significantly increased J chain deposition that is concentrated along the sinuses (Figure 6d and e). Next, we wanted to determine whether the increased antibody-related gene production we saw in aged mice was due to an overall increased number of B cells. Interestingly, we saw that the number cells expressing B220 along the meningeal transverse sinus in mice was significantly lower in aged mice (Figure 6f and g), which is in contrast to other recent studies have shown that B cells comprise a larger proportion and number of cells in aged dural meninges (Brioschi et al., 2021; Mrdjen et al., 2018). Therefore, as a second method of validation, we performed flow cytometry on the entire dural meninges to assess for B220 + and CD19 + cell counts and frequency within total CD45 + cells (Figure 6—figure supplement 1a). The aged dural meninges had overall fewer cells when compared to young dural meninges (Figure 6—figure supplement 1b). Upon examination of total B220+, CD19+, and B220 + CD19 + cell numbers, we did not see significant differences in aged mice (Figure 6—figure supplement 1c). While not significant, the overall frequency of B220+, CD19+, and B220 + CD19 + cells was decreased in aged dural meninges when compared to young counterparts (Figure 6—figure supplement 1d). In summation, we do not see increases in B cell numbers in the aged dura, which suggests that the increase in antibody-related gene expression seen in aging may reflect a change in the function of the B cells in the dural meninges rather than a recruitment of more B cells. Differences in our data compared to other published findings may reflect regional differences in B cell populations along the transverse sinus given the impaired meningeal lymphatics seen in aged mice. Other potential drivers of our distinct findings include differences in sex and microbiome, both of which might also influence the number and frequency of B cells in the meninges. Overall, this suggests that the composition of the B cell population in aged mice may be substantially different than in young mice; however, future studies are needed to formally evaluate this in greater detail.
 
 In addition to the antibody-related gene upregulation, we also observed increased expression of type I interferon (IFN)-related genes within the bulk RNA sequencing dataset (Figure 6h). Type I IFNs have been shown to be upregulated in the brain parenchyma in various neurological disorders, where they are generally thought to play deleterious roles in promoting disease pathogenesis (Karve et al., 2016; Barrett et al., 2020; Baruch et al., 2014; Abdullah et al., 2018; Zhang et al., 2017). Our data indicate that this type I IFN signature is also seen within the meningeal compartment of aged mice. Amongst others, we saw highly significant increases in type I IFN related genes including Ifit1, Ifit2, Irf7, Ifi213, and Mx1 (Figure 6h). These findings demonstrate that aging promotes profound alterations in the meningeal transcriptome. Moreover, the upregulation of antibody genes and type I IFN related-genes suggests an overall elevation in immune activation status in the aged meninges.
 
-## Injury in aged mice results in prolonged inflammatory responses
+### Injury in aged mice results in prolonged inflammatory responses
 
 In order to assess the unique transcriptional response to TBI in aged compared to young mice, we analyzed the transcriptional response that is exclusive to the Young TBI vs Aged TBI comparison and not shared with the Young Sham vs Aged Sham comparison in the bulk RNA-seq dataset. This includes the 917 downregulated genes and 639 upregulated genes that were unique to the Young TBI vs. Aged TBI comparison (Figure 5d). While aging and TBI each individually lead to changes in gene expression which have some overlap, the double hit of TBI with old age was found to induce an even larger change in gene expression than either condition alone.
 
@@ -107,17 +280,17 @@ Using GO molecular function terms, we saw that of the repressed genes unique to 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig7-v1.jpg)
 
-**Figure 7.:** Male WT mice at 10 weeks of age or 20 months of age received a TBI or Sham procedure. 1.5 months later, bulk RNA-seq was performed on the 4 experimental groups with 3 biological replicates per group (each biological replicate consisted of meningeal RNA samples from 2 to 3 independent mice). (a) Dot plot showing GO term molecular functions enriched by the repressed genes unique to the Young TBI vs Aged TBI comparison. The color and size of each dot represents the size of the GO term and the number of upregulated genes that contribute to each term, respectively. (b) Violin plot depicting counts of significantly repressed extracellular matrix related genes (FDR <0.1). (c) Quantitative PCR relative expression of Col4a1 and Col5a2 within the dural meninges 1.5 months after TBI (Sham n=10, TBI n=10, rep = 1). (d) Bar plot shows enrichment of GO term biological processes related to the immune system with the genes unique to the Young TBI vs Aged TBI comparison. The color of each bar represents the number of upregulated genes that contribute to each GO term. (e) Violin plots depicting counts of significantly activated immune-related genes (FDR <0.1). (b,e) Each statistic represents the adjusted p-value calculated for each gene using DESeq2. The central line within each plot represents the median of the data set. The upper and lower boundaries of the box represent the third (Q3) and first (Q1) quartiles respectively. The violin plot encompasses the three biological repeats. The width of the violin plot represents the frequency of observations at that given y-value. Therefore, the wider the violin plot, the higher the frequency of observations. FDR and p-values for (a,b,d,e) were calculated with DESeq2 using the Wald test for significance following fitting to a negative binomial linear model and the Benjamini-Hochberg procedure to control for false discoveries. Error bars in (c) depict mean  ± s.e.m. p values for (c) were calculated using unpaired two-sample students t-tests.Figure 7—source data 1.Figure 7—source data 2.Figure 7—source data 3.Figure 7—source data 4.Figure 7—source data 5.
+**Figure 7.:** Male WT mice at 10 weeks of age or 20 months of age received a TBI or Sham procedure. 1.5 months later, bulk RNA-seq was performed on the 4 experimental groups with 3 biological replicates per group (each biological replicate consisted of meningeal RNA samples from 2 to 3 independent mice). (a) Dot plot showing GO term molecular functions enriched by the repressed genes unique to the Young TBI vs Aged TBI comparison. The color and size of each dot represents the size of the GO term and the number of upregulated genes that contribute to each term, respectively. (b) Violin plot depicting counts of significantly repressed extracellular matrix related genes (FDR <0.1). (c) Quantitative PCR relative expression of Col4a1 and Col5a2 within the dural meninges 1.5 months after TBI (Sham n=10, TBI n=10, rep = 1). (d) Bar plot shows enrichment of GO term biological processes related to the immune system with the genes unique to the Young TBI vs Aged TBI comparison. The color of each bar represents the number of upregulated genes that contribute to each GO term. (e) Violin plots depicting counts of significantly activated immune-related genes (FDR <0.1). (b,e) Each statistic represents the adjusted p-value calculated for each gene using DESeq2. The central line within each plot represents the median of the data set. The upper and lower boundaries of the box represent the third (Q3) and first (Q1) quartiles respectively. The violin plot encompasses the three biological repeats. The width of the violin plot represents the frequency of observations at that given y-value. Therefore, the wider the violin plot, the higher the frequency of observations. FDR and p-values for (a,b,d,e) were calculated with DESeq2 using the Wald test for significance following fitting to a negative binomial linear model and the Benjamini-Hochberg procedure to control for false discoveries. Error bars in (c) depict mean  ± s.e.m. p values for (c) were calculated using unpaired two-sample students t-tests.
 
 Additionally, we looked into the genes that were uniquely activated in the Aged TBI mice as compared to the Young TBI mice. We found that genes associated with immune activation were profoundly upregulated in aged TBI mice in comparison to their young TBI counterparts (Figure 7d). The most enriched GO biological processes included the ‘defense response’ and ‘immune system process’ (Figure 7d). Some of the genes that contributed to the upregulation of these immune-related terms included those associated with immunoglobulin production (Ighg2c), T and B cell signaling (Cd24a, Zap70, Cxcr6), and cell death (Casp12, C2) (Figure 7e). In summary, these findings highlight some of the distinct changes seen in the aged meningeal tissue following TBI. Specifically, we find that mild TBI in aged mice results in prolonged activation of immune genes and decreased expression of genes involved in extracellular matrix remodeling and the maintenance of cellular junctions. Furthermore, we report that while the meningeal transcriptome in young mice returns almost completely to baseline resting levels by 1.5 months post mild head injury, the aged meninges, in contrast, continue to exhibit substantial and protracted transcriptional alterations related to head injury.
 
-## Immune system-related transcriptional changes link TBI-driven gene expression patterns in young mice with chronic changes seen in aging
+### Immune system-related transcriptional changes link TBI-driven gene expression patterns in young mice with chronic changes seen in aging
 
 Finally, we wanted to investigate whether post-TBI gene expression changes persist in aged mice by identifying common gene expression patterns between the young mice one week after injury and the aged mice 1.5 months after injury. To do this, we looked at both the scRNA-seq dataset (one week after TBI) and the bulk RNA-seq dataset (1.5 months after TBI) to determine whether there were shared differentially expressed genes. First, we compared the differentially expressed genes in the T cells, B cells, Fibroblasts, and Macrophages in the scRNA-seq dataset with the differentially expressed genes in the Young Sham vs. Aged Sham comparison, to determine whether some of these genes were shared with aging alone (Figure 8a). While there were 139 shared differentially regulated genes, a majority of the differentially expressed genes in each dataset were not shared (Figure 8a). When we looked more closely at the shared downregulated genes, we found that many were important for wound healing and maintenance of connective tissue (Figure 8c). These data suggest that some of the downregulated genes important for wound healing in the subacute time point after TBI remain chronically downregulated in the aged meninges, further supporting the idea that aged meninges may be less able to respond to injury at baseline. Some of the upregulated genes that were shared at the subacute time point and chronically in aging were genes that contribute to abnormal immune cell physiology, innate immune response, and immune cell activation, again supporting the notion that aged meninges adopt a chronic, baseline activation of the immune system (Figure 8c). Alternatively, while the young meninges initially upregulate some genes important for an inflammatory response one week following TBI, gene expression levels eventually return to baseline.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/81154/elife-81154-fig8-v1.jpg)
 
-**Figure 8.:** Differential gene expression was compared between the scRNA-seq dataset in young mice (1 week post-TBI) and the bulk RNA-seq dataset in aged mice (1.5 months post-TBI). Quantification of the number of differentially regulated genes shared between T cells, B cells, Fibroblasts, and Macrophages in the scRNA-seq dataset with the differentially expressed genes seen in (a) aging alone and (b) 1.5 months after TBI in aged mice (FDR < 0.1). Modified circos plots depicting the shared up- and down-regulated genes and the cellular processes to which they contribute, between the T Cells, B Cells, Fibroblasts, and Macrophages from the scRNA-seq dataset and the bulk RNA-seq dataset in (c) aging alone and (d) 1.5 months after TBI. The color of the circle with each gene represents the cell population to which the gene belongs. The size of the grey circles corresponds to the number of genes contributing to the term, which is shown by the intersecting line from each gene. FDR values in the bulk RNA-seq dataset were calculated with DESeq2 using the Wald test for significance following fitting to a negative binomial linear model and the Benjamini-Hochberg procedure to control for false discoveries. Differential gene expression in the scRNA-seq dataset was calculated using the ZINB-WaVE function for zero-enriched datasets and DESeq2. Graphs in (c–d) were constructed using ToppCluster and Cytoscape. FDR; false discovery rate.Figure 8—source data 1.The up- and downregulated genes for macrophages, fibroblasts, B Cells and T cells were assessed for the scRNA-seq dataset. The up- and downregulated genes for the Young Sham vs. Aged Sham and those unique to the Young TBI vs. Aged TBI were assessed for the bulk RNA-seq dataset.
+**Figure 8.:** Differential gene expression was compared between the scRNA-seq dataset in young mice (1 week post-TBI) and the bulk RNA-seq dataset in aged mice (1.5 months post-TBI). Quantification of the number of differentially regulated genes shared between T cells, B cells, Fibroblasts, and Macrophages in the scRNA-seq dataset with the differentially expressed genes seen in (a) aging alone and (b) 1.5 months after TBI in aged mice (FDR < 0.1). Modified circos plots depicting the shared up- and down-regulated genes and the cellular processes to which they contribute, between the T Cells, B Cells, Fibroblasts, and Macrophages from the scRNA-seq dataset and the bulk RNA-seq dataset in (c) aging alone and (d) 1.5 months after TBI. The color of the circle with each gene represents the cell population to which the gene belongs. The size of the grey circles corresponds to the number of genes contributing to the term, which is shown by the intersecting line from each gene. FDR values in the bulk RNA-seq dataset were calculated with DESeq2 using the Wald test for significance following fitting to a negative binomial linear model and the Benjamini-Hochberg procedure to control for false discoveries. Differential gene expression in the scRNA-seq dataset was calculated using the ZINB-WaVE function for zero-enriched datasets and DESeq2. Graphs in (c–d) were constructed using ToppCluster and Cytoscape. FDR; false discovery rate.
 
 Looking more closely at the differentially regulated genes shared between the Young TBI vs. Aged TBI bulk RNA sequencing comparison and the T cells, B cells, Fibroblasts, and Macrophages of the scRNA-seq dataset, we found 119 genes in common (Figure 8b). Similar to aging alone, many of the common upregulated genes were related to abnormal immune cell activation, reflecting the chronically activated immune response that occurs after TBI in aging (Figure 8d). Of the shared downregulated genes, many contribute to cell adhesion and response to endoplasmic reticulum stress (Figure 8d). Altogether, while a majority of the genes that were differentially expressed in both the bulk RNA and scRNA sequencing datasets were not shared, the common genes reflect a pattern of abnormal immune cell activation and a defective response to healing as demonstrated by the downregulation of genes important for extracellular matrix repair and cellular adhesion. While the aged mice still exhibit this signature 1.5 months after injury, the young mice express these shared genes initially, but return to baseline levels 1.5 months after injury.
 
@@ -139,53 +312,301 @@ It is well known that aged individuals have a higher morbidity and mortality tha
 
 Recent studies have implicated the meningeal lymphatic system, which resides in the dura, in modulating inflammation in the brain following TBI and sub-arachnoid hemorrhage (Bolte et al., 2020; Chen et al., 2020; Pu et al., 2019). In these studies, impairments in the meningeal lymphatic system prior to brain injury were found to result in increased gliosis and worsened behavioral outcomes (Bolte et al., 2020; Chen et al., 2020). Interestingly, the meningeal lymphatic system is also known to be impaired in aging (Da Mesquita et al., 2018; Ahn et al., 2019; Ma et al., 2017), and we have previously shown that the rejuvenation of the meningeal lymphatic vasculature in aged mice dampens the subsequent gliosis following TBI (Bolte et al., 2020). How the meningeal lymphatic system might modulate meningeal immunity before and after injury remains to be investigated. Furthermore, whether the meningeal lymphatic impairment in aging contributes to the overall increase in inflammation seen in the aged meninges is another area for future investigation.
 
-## Conclusions
+### Conclusions
 
 Overall, the findings presented here provide new insights into the meningeal response to brain injury and aging. We show that TBI results in broad gene expression changes in discrete cell populations following injury in young mice. Specifically, we demonstrate that there is an increase in the frequency of fibroblasts and macrophages 1 week following injury in young mice. Furthermore, we provide evidence that the transcriptional environment in the aged meninges is drastically altered. At baseline, the aged meninges show increases in gene expression patterns associated with type I IFN signaling and antibody production by B cells. However, upon injury, the aged meninges further upregulate genes involved in immune system activation, while downregulating genes critical for tissue remodeling. Improved understanding of how the meninges respond to brain injury in youth and aging will help shed light on why the elderly have poor outcomes following TBI and may help to identify opportunities for targeted therapies to improve outcomes following TBI.
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.2 EF450 (rat monoclonal)</td>
+      <td>Thermo Scientific</td>
+      <td>Catalog # 11-0451-82,Clone 30-F11</td>
+      <td>Flow(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220 PE-Cy7 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Catalog #103222, Clone RA3-6B2</td>
+      <td>Flow(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD19 FITC (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog #11-0193-81,Clone eBio1D3</td>
+      <td>Flow(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-J chain (rabbit monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Catalog # MA5-16419, Clone: SP105</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Collagen I (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog # ab21286</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lyve-1-Alexa Fluor 488 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog # 53-0443-82,Clone ALY7</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1 (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog # ab5076</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # 13–0300, Clone 2.2B10</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHC Class II 660 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog # 14-5321-82, Clone M5/114.12.2</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31 (armenian hamster monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Catalog # MAB1398Z, Clone 2H8</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220 (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # 14-0452-82, Clone RA3-6B2</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN (mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Catalog # Mab277, Clone A60</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- rat Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # A-21208</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- goat Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # A-21447</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rat Alexa Fluor 594 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # A-21209</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # A-31573</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 anti-Armenian Hamster (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Catalog # 127-545-160, RRID: AB_2338997</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fixable Viability Dye eFlour 506</td>
+      <td>eBioscience</td>
+      <td>Catalog # 65-0866-18</td>
+      <td>Flow(1:800)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Absolute counting beads</td>
+      <td>Life Technologies</td>
+      <td>Catalog # C36950</td>
+      <td>Used for counting cells in flow cytometry. See ‘Flow cytometry’.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prolong Gold antifade reagent</td>
+      <td>Invitrogen</td>
+      <td>Catalog # P36930</td>
+      <td>Used for mounting tissues for confocal imaging. See ‘Immunohistochemistry, imaging, and quantification’.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNeasy Micro Kit</td>
+      <td>Qiagen</td>
+      <td>Catalog # 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SensiFAST cDNA synthesis kit</td>
+      <td>Bioline</td>
+      <td>Catalog # BIO-65054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SensiFAST Probe No-ROX Kit</td>
+      <td>Bioline</td>
+      <td>Catalog # BIO-86005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh</td>
+      <td>Life Technologies</td>
+      <td>Catalog # 4331182</td>
+      <td>Assay ID Mm99999915_g1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifnar1</td>
+      <td>Life Technologies</td>
+      <td>Catalog # 4331182</td>
+      <td>Assay ID Mm00439544_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Irf5</td>
+      <td>Life Technologies</td>
+      <td>Catalog # 4331182</td>
+      <td>Assay ID Mm00496477_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifnb1</td>
+      <td>Life Technologies</td>
+      <td>Catalog # 4331182</td>
+      <td>Assay IDMm00439552_s1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifi203</td>
+      <td>Life Technologies</td>
+      <td>Catalog # 4331182</td>
+      <td>Assay IDMm00492601_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col4a1</td>
+      <td>Life Technologies</td>
+      <td>Catalog # 4331182</td>
+      <td>Assay ID Mm01210125_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col5a2</td>
+      <td>Life Technologies</td>
+      <td>Catalog # 4331182</td>
+      <td>Assay ID Mm01254423_m1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagenase VIII</td>
+      <td>Sigma Aldrich</td>
+      <td>Catalog # 9001-12-1</td>
+      <td>Used for meningeal digestion for flow cytometry. See ‘Meningeal tissue collection’.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagenase D</td>
+      <td>Sigma Aldrich</td>
+      <td>Catalog # 11088866001</td>
+      <td>Used for meningeal digestion for flow cytometry. See ‘Meningeal tissue collection’.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma Aldrich</td>
+      <td>Catalog # D9542</td>
+      <td>IF(1:1000), See ‘Immunohistochemistry, imaging, and quantification’.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mouse experiments were performed in accordance with the relevant guidelines and regulations of the University of Virginia and were approved by the University of Virginia Animal Care and Use Committee. Young C57BL/6J wild-type (WT) mice ranging from 8 to 12 weeks of age (RRID: IMSR_JAX:000664) were obtained from Jackson Laboratories. All WT aged mice were approximately 20 months of age and were obtained from the National Institute on Aging (NIA) Aged Rodent Colonies. The mice from the NIA Aged Rodent Colonies were originally derived from the Jackson colonies. Upon arrival, aged mice were housed in University of Virginia facilities for at least 2 months before use. Other young mice ordered directly from the Jackson Laboratories were housed in the local University of Virginia facility for at least 2 weeks before use. Mice were housed in specific pathogen-free conditions under standard 12 hr light/dark cycle conditions in rooms equipped with control for temperature (21 ± 1.5°C) and humidity (50 ± 10%). Male mice were used for all studies.
 
-## Traumatic brain injury
+### Traumatic brain injury
 
 This injury paradigm was adapted from the published Hit and Run model (Ren et al., 2013; Bolte et al., 2020). Mice were anesthetized by 4% isoflurane with 0.3 kPa O2 for 2 min and then the right preauricular area was shaved. The mouse was placed prone on an 8x4 x 4-inch foam bed (type E bedding, open-cell flexible polyurethane foam with a density of approximately 0.86 pounds per cubic feet and a spring constant of approximately 4.0 Newtons per meter) with its nose in a nosecone delivering 1.5% isoflurane (purchased from Foam to Size, Ashland VA). The head was otherwise unsecured. The device used to deliver TBI was a Controlled Cortical Impact Device (Leica Biosystems, 39463920). A 3 mm impact probe was attached to the impactor device which was secured to a stereotaxic frame and positioned at 45 degrees from vertical. In this study, we used a strike depth of 2 mm, 0.1 s of contact time and an impact velocity of 5.2 meters (m) per second (s). The impactor was positioned at the posterior corner of the eye, moved 3 mm towards the ear and adjusted to the specified depth using the stereotaxic frame. A cotton swab was used to apply water to the injury site and the tail in order to establish contact sensing. To induce TBI, the impactor was retracted and dispensed once correctly positioned. The impact was delivered to the right inferior temporal lobe of the brain. Following impact, the mouse was placed supine on a heating pad and allowed to regain consciousness. After anesthesia induction, the delivery of the injuries took less than 1 minute. The time until the mouse returned to the prone position was recorded as the righting time. Upon resuming the prone position, mice were returned to their home cages to recover on a heating pad for six hours with soft food. For Sham procedures, mice were anesthetized by 4% isoflurane with 0.3 kPa O2 for 2 min and then the right preauricular area was shaved. The mouse was placed prone on a foam bed with its nose secured in a nosecone delivering 1.5% isoflurane. The impactor was positioned at the posterior corner of the eye, moved 3 mm towards the ear and adjusted to the specified depth using the stereotaxic frame. A cotton swab was used to apply water to the injury site and the tail in order to establish contact sensing. Then, the impactor was adjusted to a height where no impact would occur, and was retracted and dispensed. Following the Sham procedure, the mouse was placed supine on a heating pad and allowed to regain consciousness. Mice were allowed to recover on the heating pad in their home cages for 6 hr with soft food before being returned to the housing facilities.
 
-## Meningeal tissue collection
+### Meningeal tissue collection
 
 Mice were euthanized with CO2 and then transcardially perfused with 20 mL 1 x PBS. The skin and muscle were stripped from the outer skull and the skullcap and the adherent meninges dorsal to the ear canal were collected using surgical scissors. Dorsal meningeal collection did not include the direct site impacted by the TBI. After further processing, as detailed below for each individual experiment, meningeal dissection from the skullcap was done under an S6D stereomicroscope (Leica) using Dumont #5 forceps (Fine Science Tools).
 
-## Other tissue collection
+#### Other tissue collection
 
 Mice were euthanized with CO2 and then transcardially perfused with 20 mL 1 x PBS. Spleens for flow cytometry were harvested, placed into cold cRPMI, then mechanically homogenized and washed through a 40 μm strainer (Corning). Cells were resuspended in RBC lysis solution (0.16 M NH4Cl) for 2 min. Cells were then washed, resuspended, and kept on ice until acquisition. Brains for immunohistochemistry were removed and kept in 4% PFA for 24 hr and then cryoprotected with 30% sucrose for 3 days. A 4 mm coronal section of brain tissue that surrounded the site of injury was removed using a brain sectioning device and then frozen in Tissue-Plus OCT compound (Thermo Fisher Scientific). Fixed and frozen brains were sliced (50 μm thick sections) with a cryostat (Leica) and kept in PBS + 0.05% sodium azide in PBS at 4 °C until further use.
 
-## Flow cytometry
+### Flow cytometry
 
 Meningeal and spleen single-cell suspensions were pipetted into a 96-well plate and pelleted. Cells were treated with 50 μL of Fc block (0.1% rat gamma globulin [Jackson ImmunoResearch], 1 μg/mL of 2.4G2 [BioXCell]) for 10 min at room temperature. Cells were then stained for surface markers and incubated with a fixable live/dead viability dye for 30 min at 4 °C using the following surface markers at a concentration of 1:200: CD45.2 EF450 (30-F11, Thermo Scientific), B220 PE-Cy7 (103222, BioLegend), and CD19 FITC (11-0193-81, eBioscience). Fixable Viability Dye eFluor 506 (65-0866-18, eBioscience) live/dead dye was used at a 1:800 dilution. Splenocytes were stained with the live/dead viability dye and were used for compensation controls. Finally, samples were resuspended in FACS buffer and acquired on a Gallios flow cytometer (Beckman Coulter). Cell counts were determined using absolute counting beads (Life Technologies, C36950) pipetted into samples just prior to acquisition. Data analysis was performed with FlowJo software v.10.
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 For RNA extraction from the meningeal tissue, the meninges were harvested as described in the ‘Tissue Collection’ methods section above and snap-frozen in 500 μL TRIzol Reagent (15596018, Life Technologies) and stored at −80 °C until further use. For each of the four experimental groups (Young Sham, Aged Sham, Young TBI and Aged TBI) 2 dorsal meningeal samples were combined to create 1 biological replicate. Three biological replicates were used for each experimental group yielding a total of 12 samples comprised of 2 meninges each. After defrosting on ice, 10 silica beads were added to each tube and the tissue was homogenized for 30 s using a mini bead beater. Following homogenization, the samples were centrifuged for 12,000 xg for 10 min at 4 °C. The supernatant was transferred to a new tube and incubated at room temperature for 5 min. Next, 0.1 mL of chloroform was added to the supernatant, vortexed, incubated for 2 min at room temperature and then centrifuged at 12,000 xg for 15 min at 4 °C. The top aqueous phase was transferred into a new Eppendorf tube and the RNeasy Micro Kit (74004, Qiagen) was used to isolate the RNA. The quality and concentration of the RNA was assessed using a plate reader. RNA was frozen at −80 °C until sent for sequencing. For sequencing, total RNA samples were sent to GENEWIZ for library preparation and paired-end sequencing. Sequencing was ordered for 20–30 million reads per sample.
 
-## cDNA synthesis and qPCR
+### cDNA synthesis and qPCR
 
 Meninges were harvested and RNA was isolated as described in ‘RNA extraction and sequencing’. cDNA synthesis was performed using a SensiFAST cDNA synthesis kit (BIO-65054, Bioline) and cDNA was diluted to a concentration of 3 ng/µl in DNAse/RNAse free water. SensiFAST Probe No-ROX Kit (BIO-86005, Bioline) was used in combination with primers for Gapdh, Ifnar1, Irf5, Ifnb1, Ifi203, Col4a1 and Col5a2 (4331182, Life Technologies) to perform qPCR.
 
-## Meningeal preparation for scRNA-seq
+### Meningeal preparation for scRNA-seq
 
 The day before meningeal harvest, Eppendorf tubes were coated with FACS buffer (1% BSA, 1 mM EDTA in PBS) overnight. Mice were euthanized with CO2 and then transcardially perfused with ice-cold PBS with heparin (0.025%). The skull caps were prepared as described in ‘Meningeal tissue collection’. Meninges were peeled from the skull cap and placed in ice-cold DMEM for the entirety of collection. The meninges from 5 mice that had received TBI 1 week prior were pooled as one biological replicate. The meninges from 5 mice that had received a Sham procedure 1 week prior were pooled as one biological replicate. These 2 samples were then processed for scRNA sequencing. Meninges were then digested for 15 min at 37 °C with constant agitation using 1 mL of pre-warmed digestion buffer (DMEM, with 2% FBS, 1 mg/mL collagenase VIII (Sigma Aldrich), and 0.5 mg/mL DNase I (Sigma Aldrich)). The enzymes were neutralized with 1 mL of complete medium (DMEM with 10% FBS) and meninges were then filtered through a 70 µm cell strainer. An additional 2 mL of FACS buffer was added, samples were centrifuged at 400 xg for 5 min, and samples were resuspended in FACS buffer. After 2 washes, cells were resuspended in FACS buffer with DAPI (0.2 µg/mL). Singlet gates were selected using pulse width of the side scatter and forward scatter. Live cells were selected based on the lack of DAPI staining. Cells were sorted into 1.5 mL tubes with ice cold DMEM. Following sorting, cells were centrifuged again at 450 xg for 4 min and the media was aspirated. Cells were resuspended in 200 μL 0.04% BSA in PBS (0.04% non-acetylated BSA) and centrifuged again. Cells were counted in 20 μL of 0.04% BSA in PBS using trypan blue. Approximately 4000 cells per sample were loaded onto a 10 X Genomics Chromium platform to generate cDNAs carrying cell- and transcript-specific barcodes and sequencing libraries constructed using the Chromium Single Cell 3’ Library & Gel Bead Kit 2. Libraries were sequenced on the Illumina NextSeq using pair-ended sequencing, resulting in approximately 50,000 reads per cell. The sequencing mode was as follows: Read1 (28 bp)+Index (8 bp)+Read2 (98 bp).
 
-## scRNA-seq analysis
+### scRNA-seq analysis
 
 The raw sequencing reads (FASTQ files) were aligned to the Genome Research Consortium (GRC) mm10 mouse genome build using Cell Ranger (v1.3.1) which performs alignment, filtering, barcode counting and unique molecular identifier (UMI) counting. RStudio (v1.2.5033) was used for all downstream analyses and Seurat (v.3.9.9) was used for filtering out low-quality cells, normalization of the data, determination of cluster defining markers and graphing of the data on UMAP (Stuart et al., 2019; Butler et al., 2018). Only one sequencing run was performed therefore there was no need for batch correction. Initially, there were 2261 cells collected from the Sham mice and 4022 cells collected from the TBI mice. Low-quality cells were excluded in an initial quality-control (QC) step by removing cells with fewer than 150 unique genes and cells expressing more than 5,000 unique genes in effort to remove doublets and triplets (Sham total: 2257, TBI total: 4018). Cells with transcriptomes that were more than 20% mitochondrial-derived were removed and cells with more than 5% hemoglobin among their expressed genes were also removed (Sham total: 2049, TBI total: 3775). Using Seurat, genes with high variance were selected using the FindVariableGenes() function, then the dimensionality of the data was reduced by principle component analysis (PCA) and identified by random sampling of 20 significant principal components (PCs) for each sample with the PCElbowPlot() function. Cells were clustered with Seurat’s FindClusters() function. Absolute cell counts for each population can be found in Table 1. scCATCH (v2.1) was used for automated cluster naming (Shao et al., 2020), and all cluster names were manually checked due to the lack of literature regarding meningeal cell populations. Next, differential gene expression analysis was performed within the clusters using the ZINB-WaVE (v1.12.0) and DESeq2 (v1.30.0) packages (Risso et al., 2018). Cytoscape (v3.8.0) and ToppCluster (https://toppcluster.cchmc.org/) were used for network analyses (Shannon et al., 2003; Chen et al., 2007). Data was organized and graphs were created using ggplot2, tidyverse, treemapify, circlize, Seurat and dplyr (Wickham, 2016; Wickham et al., 2019). Pseudotime analysis was conducted using Monocle3 (v0.2.3.0) (Trapnell et al., 2014). NicheNet was used to analyze predicted cellular interactions within the dataset (Browaeys et al., 2020).
 
-## Bulk RNA-seq analysis
+### Bulk RNA-seq analysis
 
 The raw sequencing reads (FASTQ files) were aligned to the GRC mm10 mouse genome build using the splice-aware read aligner HISAT2 (Kim et al., 2019). The data was cleaned by removing reads that aligned to uninformative regions of the genome and PCR duplicates. The proportion of PCR duplicates, proportion of reads that align with genes, and proportion of uninformative reads were analyzed for each sample to ensure there were no samples that were outliers regarding data quality. Samtools was used for quality control filtering (Li et al., 2009). Reads were sorted into feature counts with HTSeq (Anders et al., 2015). DESeq2 (v1.30.0) was used to normalize the raw counts based on read depth, perform principal component analysis, and conduct differential expression analysis (Love et al., 2014). For assessing differential gene expression in this dataset, the ‘categorize.deseq.df’ function was used to classify genes in to ‘activated’, ‘repressed’, and ‘not different’ categories as defined by an adjusted p-value of less than 0.1. The p-values were corrected with the Benjamini-Hochberg procedure to limit false positives arising from multiple testing. The gene set collections from MSigDB were used for differential gene set enrichment analysis (Liberzon et al., 2015). The analysis itself was performed using the Seq2Pathway, fgsea, tidyverse, and dplyr software packages. Heatmaps were generated using the pheatmap R package while other plots were made with the lattice or ggplot2 packages.
 
-## Immunohistochemistry, imaging, and quantification
+### Immunohistochemistry, imaging, and quantification
 
 For immunofluorescence staining, meningeal whole mounts and floating brain sections in PBS and 0.05% sodium azide were blocked with a solution containing 2% goat serum or 2% donkey serum, 1% bovine serum albumin, 0.1% triton, 0.05% tween-20, and 0.05% sodium azide in PBS for 1.5  hr at room temperature (RT). This blocking step was followed by incubation with appropriate dilutions of primary antibodies in blocking solution at 4 °C overnight. The primary antibodies and their dilutions include: anti-Collagen I (Abcam, ab21286, 1:200), anti-J chain (Invitrogen, SP105, 1:200), anti-Lyve-1-Alexa Fluor 488 (eBioscience, clone ALY7, 1:200), anti-Iba1 (Abcam, ab5076, 1:300), anti-GFAP (Thermo Fisher Scientific, 2.2B10, 1:1000), anti-MHC Class II 660 (eBioscience, M5/114.15.2, 1:100), anti-CD31 (Millipore Sigma, MAB1398Z, clone 2H8, 1:200), anti-B220 (Thermo Fisher Scientific, RA3-6B2, 1:200) and anti-NeuN (EMD Millipore, Mab277, clone A60, 1:500). Meningeal whole mounts and brain sections were then washed three times for 10 minutes at room temperature in PBS and 0.05% tween-20, followed by incubation with the appropriate goat or donkey Alexa Fluor 488, 594 or 647 anti-rat, -goat or -rabbit (Thermo Fisher Scientific, 1:1000) or -Armenian hamster (Jackson ImmunoResearch, 1:1000) IgG antibodies for 2 hr at RT in blocking solution. The whole mounts and brain sections were then washed 3 times for 10 min at RT before incubation for 10 min with 1:1000 DAPI in PBS. The tissue was then transferred to PBS and mounted with ProLong Gold antifade reagent (Invitrogen, P36930) on glass slides with coverslips.
 
@@ -193,10 +614,10 @@ Slide preparations were stored at 4  °C and imaged using a Lecia TCS SP8 conf
 
 For the assessment of gliosis in the injured and uninjured brains in Figure 1—figure supplement 1, two representative brain sections from the site of the lesion (approximately −0.74–0 bregma) or the corresponding area in Sham animals were fully imaged and at least four animals were included per experimental group. The full brain section was adjusted for brightness and contrast uniformly for each experiment and each hemisphere was traced, and then the threshold was uniformly set for each experiment to select for stained cells. The percent area of coverage of each immunohistochemical markers was calculated for the hemisphere ipsilateral to the injury site (right) for each brain section. The mean percent area fraction was calculated using Microsoft Excel. For Figure 1—figure supplement 1, high magnification images (63 x) were taken directly adjacent to the site of the injury.
 
-## Statistical analysis and reproducibility
+### Statistical analysis and reproducibility
 
 Sample sizes were chosen on the basis of standard power calculations (with α=0.05 and power of 0.8). Experimenters were blinded to the identity of experimental groups from the time of euthanasia until the end of data collection and analysis. Statistical analysis was performed using RStudio (v1.2.5033) and GraphPad Prism (v8.4.3). Individual statistical analyses for each experiment are detailed in the corresponding figure legends.
 
-## Availability of data and material
+### Availability of data and material
 
 All data and genetic material used for this paper are available in the GEO repository under accession number GSE206941. All code used for analysis is available at (https://github.com/danielshapiro1/MeningealTransciptome, copy archived at swh:1:rev:d75b20d74f147524296630b9ec7a1c9c5a9f124f; Daniel, 2022).

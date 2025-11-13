@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.27441.001 Previously, we showed that synaptotagmin1 (Syt1) forms Ca 2+ -sensitive ring-like oligomers on membranes containing acidic lipids and proposed a potential role in regulating neurotransmitter release ( Zanetti et al., 2016 ). Here, we report that Syt1 assembles into similar ring-like oligomers in solution when triggered by naturally occurring polyphosphates (PIP2 and ATP) and magnesium ions (Mg 2+ ). These soluble Syt1 rings were observed by electron microscopy and independently demonstrated and quantified using fluorescence correlation spectroscopy. Oligomerization is triggered when polyphosphates bind to the polylysine patch in C2B domain and is stabilized by Mg 2+ , which neutralizes the Ca 2+ -binding aspartic acids that likely contribute to the C2B interface in the oligomer. Overall, our data show that ring-like polymerization is an intrinsic property of Syt1 with reasonable affinity that can be triggered by the vesicle docking C2B-PIP2 interaction and raise the possibility that Syt1 rings could pre-form on the synaptic vesicle to facilitate docking.
+Previously, we showed that synaptotagmin1 (Syt1) forms Ca2+-sensitive ring-like oligomers on membranes containing acidic lipids and proposed a potential role in regulating neurotransmitter release (Zanetti et al., 2016). Here, we report that Syt1 assembles into similar ring-like oligomers in solution when triggered by naturally occurring polyphosphates (PIP2 and ATP) and magnesium ions (Mg2+). These soluble Syt1 rings were observed by electron microscopy and independently demonstrated and quantified using fluorescence correlation spectroscopy. Oligomerization is triggered when polyphosphates bind to the polylysine patch in C2B domain and is stabilized by Mg2+, which neutralizes the Ca2+-binding aspartic acids that likely contribute to the C2B interface in the oligomer. Overall, our data show that ring-like polymerization is an intrinsic property of Syt1 with reasonable affinity that can be triggered by the vesicle docking C2B-PIP2 interaction and raise the possibility that Syt1 rings could pre-form on the synaptic vesicle to facilitate docking.
 
 ## Introduction
 
@@ -33,69 +33,254 @@ While there is as yet no direct evidence that such rings exist in vivo at the SV
 
 ## Results
 
-## PIP2 or ATP and Mg2+promote Syt1 ring oligomers in solution
+### PIP2 or ATP and Mg2+promote Syt1 ring oligomers in solution
 
 The minimal C2AB domains of Syt1 form circular oligomers on lipid surface and the electrostatic interaction between the conserved lysine residues (K326/K327) within the polybasic patch/motif on the C2B domain and the negatively-charged lipids, like PIP2 and PS, on the lipid surface was required for its assembly (Wang et al., 2014; Zanetti et al., 2016). To understand if this electrostatic interaction in itself is the trigger to polymerize or if it merely serves to position the Syt1 on the membrane to promote the ring formation, we examined if the Syt1 rings could be assembled in solution using acidic lipid substitutes. We incubated stringently purified C2AB domains of Syt1 (Syt1C2AB) with soluble PIP2 (PIP2-diC4) under physiologically-relevant buffer condition (100 mM KCl, 1 mM free Mg2+) and imaged the resultant structures using electron microscopy (EM). Negative stain analysis showed that in the presence of 50 µM PIP2-diC4, Syt1C2AB readily assembles into ring-like oligomers in solution (Figure 1A). The density (~5 rings/ µm2) and the dimension (outer diameter between 18–44 nm with an average size of ~32 nm) of these soluble ring oligomers were very similar to the ring oligomers formed on the lipid surface (Figure 1B and C). Based on the helical indexing of the Syt1C2AB tubes (Wang et al., 2014), we estimate that this corresponds to 12–26 copies of Syt1 molecule, with an average of ~17 copies of Syt1. Notably, the soluble Syt1C2AB rings are abundant and stable under physiological buffer conditions, unlike the sparse density observed on lipid monolayers (Wang et al., 2014). This suggests that circular oligomerization is an intrinsic property of Syt1 C2 domains, but hindered by the low concentration of the protein on the lipid monolayer surface under these conditions.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig1-v1.jpg)
 
-**Figure 1.:** 2+.Negative staining electron microscopy analysis shows that Syt1C2AB forms ring-like structures in buffer solution containing soluble PIP2 (PIP2-diC4) and 1 mM free Mg2+ (A), and these rings are very similar to those observed on monolayers containing 40% DOPS (B). (C) The average diameter of the Syt1C2AB soluble ring-oligomers are slightly but not significantly larger (32 ± 3 nm) compared to the rings (28 ± 2 nm) formed on lipid monolayer. These oligomeric rings were not unique to PIP2-diC4 and other polyvalent anions, like IP3 (D) and ATP (E) also induced the oligomerization of Syt1C2AB. The prevalence and stability of the Syt1C2AB were similar for all the polyvalent anions tested (F). The scale bar represents 100 nm in the main figure and 50 nm for the insets (Panels A, B, D, E). Average values and standard deviations from a minimum of 3 independent experiments are shown.
+**Figure 1.:** Negative staining electron microscopy analysis shows that Syt1C2AB forms ring-like structures in buffer solution containing soluble PIP2 (PIP2-diC4) and 1 mM free Mg2+ (A), and these rings are very similar to those observed on monolayers containing 40% DOPS (B). (C) The average diameter of the Syt1C2AB soluble ring-oligomers are slightly but not significantly larger (32 ± 3 nm) compared to the rings (28 ± 2 nm) formed on lipid monolayer. These oligomeric rings were not unique to PIP2-diC4 and other polyvalent anions, like IP3 (D) and ATP (E) also induced the oligomerization of Syt1C2AB. The prevalence and stability of the Syt1C2AB were similar for all the polyvalent anions tested (F). The scale bar represents 100 nm in the main figure and 50 nm for the insets (Panels A, B, D, E). Average values and standard deviations from a minimum of 3 independent experiments are shown.
 
 Similar ring oligomers were observed with PIP2 analogues like inositol 1,4,5-trisphosphate (IP3, 50 µM) (Figure 1D) suggesting it was not a unique property of PIP2. Consequently, we tested the effect of adenosine triphosphate (ATP), another polyvalent anion, which has been shown to directly bind the C2B polybasic region and modulate the membrane interaction of Syt1 (Park et al., 2012; Vennekate et al., 2012). As with soluble PIP2 and its analogues, we detected ring-like oligomers of Syt1C2AB (Figure 1E) at physiological concentration of ATP (1 mM Mg-ATP), with density (~5 rings/µm2) comparable to soluble PIP2. Similar ring oligomers were also observed with 1 mM adenosine diphosphate (ADP) suggesting that it is a shared property of polyvalent anions (Figure 1F).
 
 No oligomeric structures were observed in the absence of polyvalent anions and the density of the rings was drastically reduced (~5 rings/µm2 to ~0.4 rings/µm2) when the polybasic region of C2B was mutated (K326A/K327A) (Figure 2A). This suggests that the known direct molecular interaction of polyanions with the C2B polybasic motif (Park et al., 2012; Bai et al., 2004) and not a charge shielding effect, produces the Syt1 ring-like oligomers. Magnesium ions (Mg2+) were also found to be an important co-factor in stabilizing the Syt1C2AB rings in solution (Figure 2B and C). The number of Syt1C2AB ring oligomers observed were substantially reduced (~60% reduction) when Mg2+ was completely excluded (using Na-ATP or Na-PIP2) (Figure 2C). Given that the Mg2+ was not required to assemble the Syt1C2AB ring oligomers on acidic lipid surfaces (in fact Mg2+ lowered the number of rings formed on lipid surfaces), it appears that Mg2+ plays an independent but auxiliary role in the formation of Syt1C2AB ring oligomers in solution. We also attempted to isolate the soluble Syt1C2AB rings (triggered with ATP and Mg2+) using glycerol density gradient. However, the soluble rings were not stable under these experimental conditions and could be isolated only after mild fixation (0.01% glutaraldehyde) (Figure 2—figure supplement 1). Taken together, our data suggest that the specific interaction of the polyvalent anions to the conserved lysine residues within the C2B polybasic motif triggers the Syt1 ring-like oligomer formation and the resultant oligomers are stabilized by Mg2+.
 
-## Characterization of soluble Syt1 oligomers by Fluorescence Correlation Spectroscopy
+![Figure 2.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig2-v1.jpg)
+
+**Figure 2.:** (A) Molecular interaction of polyvalent anion with the C2B polybasic is strictly required for the oligomer formation. Negative stain EM analysis shows that disrupting the polylysine motif on the C2B domain (K326A/K327A) prevents the oligomer formation even in the presence of polyphosphates and Mg2+. (B and C) Mg2+ is a critical co-factor that stabilizes the ring oligomers triggered by polyphosphates (ATP or PIP2) as complete removal of Mg2+ (Na.ATP or Na.PIP2) results in reduction in the density of the ring oligomers.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The Syt1C2AB oligomers were triggered with 1 mM ATP and Mg2+. The ring oligomers are not stable during purification and thus, and no oligomers were isolated under native conditions (A). However, the ring oligomers are stabilized with a small amount of fixative (0.01% glutaraldehyde) and can be isolated at ~15% glycerol gradient as visualized by negative stain EM (C–F).
+
+### Characterization of soluble Syt1 oligomers by Fluorescence Correlation Spectroscopy
 
 To independently validate and characterize Syt1C2AB oligomerization in solution, we used fluorescence correlation spectroscopy (FCS). FCS is based on correlation analysis of temporal fluctuations of fluorescence intensity caused by diffusion of fluorescently labeled moiety through a small focal volume (dimension less than 1 pL). Autocorrelation of the fluorescence can directly provide the average number of particles (concentration) and average diffusion times through the volume. And, cross-correlation analysis between two fluorophores can be used to detect molecular association/dissociation and to determine the stoichiometry of molecular complexes (Elson, 2011; Magde et al., 1974; Ries and Schwille, 2012). So, to check the oligomerization of Syt1C2AB in solution, we employed dual-color fluorescence cross-correlation spectroscopy (FCCS) with Syt1C2AB labeled with Alexa488 or Alexa647 at residue 269 using cysteine-maleimide chemistry. The fluorescent labels were introduced at the flexible linker region between C2A and C2B domains and negative stain EM analysis showed the fluorescent labels did not interfere the Syt1 ring formation (Figure 3—figure supplement 1).
 
 FCCS analysis was carried out under experimental conditions similar to the EM analysis, namely 5 µM of Syt1C2AB (~120 nM of Syt1C2AB -Alexa88, ~30–120 nM of Syt1C2AB -Alexa647 and ~4.9 µM of unlabeled Syt1 C2AB) was incubated with or without ATP in buffers containing 20 mM KCl and 1 mM free Mg2+. Both fluorophores were excited, and their intensities in the focal volume were monitored simultaneously. In the presence of ATP and Mg2+, the temporal variations in the fluorescence intensity of Alexa488 and Alexa647 labels followed a similar pattern, indicating that part of Syt1C2AB-Alexa488 and Syt1C2AB-Alexa647 molecules move in or out the focal volume concurrently (Figure 3A). Also, the cross-correlation function was larger than one at short time intervals (Figure 3A), indicating that a portion of the two fluorophores diffused together that is, they were in the same diffusional object. Overall, these data were consistent with the formation of Syt1C2AB oligomers in solution. Further, we observed no cross correlation (Figure 3B) in the absence of ATP and Mg2+, implying that these structures are not random association of Syt1C2AB molecules, but are ATP-derived oligomers of Syt1C2AB.
 
-To corroborate these findings, we estimated the diffusion properties of the fluorescent species. Higher molecular weight of the Syt1C2AB oligomers would increase the diffusion time (transit time) across the sample volume, and this could be determined by autocorrelation analysis. We used both fluorophores to cross-check our results, but lowered the concentrations of each fluorescent species (~25 nM of Syt1C2AB-Alexa488, ~25 nM of Syt1C2AB -Alexa647 and ~5 µM of unlabeled Syt1 C2AB), such that two fluorophores are unlikely to be located in the same oligomer. This was confirmed by the absence of cross correlation between the two fluorophores (Figure 3—figure supplement 2). We then measured the auto correlation function of each fluorophore in presence of ATP and Mg2+. We found that they could be best fitted using the two-component translational diffusion model with a triplet state correction (Equation 1) and determined two diffusion coefficients corresponding to the Syt1C2AB monomers and oligomers.(1)G(τ)=1+A(1+ϕtrie−ττtri1−ϕtri)(ϕm(1+ττm)(1+1s2ττm)1/2+ϕo(1+τϕo)(1+1s2τϕo)1/2)
+![Figure 3.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig3-v1.jpg)
 
-where G is the auto correlation function, τ is the time interval, A is amplitude, Φtriandτtri are the fraction and decay time of the triplet state, Φmandτm are the fraction and diffusional time of the component 1, Φoandτo are the fraction and diffusional time of the component 2, and s is the structural parameter.
+**Figure 3.:** Fluorescence cross-correlation spectroscopy of the Syt1C2AB oligomerization reaction was measured using Alexa488 and Alexa647 labeled Syt1C2AB, mixed with unlabeled Syt1C2AB protein either in the presence (A) or absence (B) of 1 mM ATP and Mg2+. The upper panels represent the count rates and the lower panels represent the auto-correlation (blue and red markers for Alexa647 and Alexa488) and cross correlation (green markers) functions. The data were collected for a range of fluorophores concentration (~30–120 nM) and we observe no cross-correlation even at higher label concentration in the absence of Mg2+/ATP (B) in contrast to distinct cross-correlation in the presence of Mg2+/ATP (A) despite the lower label concentration. This shows that these structures are not random association of Syt1C2AB molecules, but are ATP-derived oligomers of Syt1C2AB. (C) Fluorescence auto correlation spectroscopy of the oligomerization reaction was carried out using dilute concentration of the labeled Syt1C2AB (~25 nM each of Alexa488 and Alexa647) mixed with unlabeled Syt1C2AB in the presence of ATP and Mg2+ The auto correlation function was best fitted with the two-component translational diffusion model with triplet state (blue and red solid lines for each dye), confirming the presence of the oligomeric component. Representative traces are shown and the calculated parameters from a minimum of three independent trials are shown in Table 1.
 
-The major component (~80%) showed fast diffusion time (~600 µs) possibly corresponding to the monomers and a smaller fraction (~20%) had a slow diffusion time of ~4000 µs consistent with Syt1C2AB oligomers (Figure 3C, Table 1). These data indicated that Syt1C2AB indeed formed oligomers in solution when triggered with ATP and Mg2+. In contrast, in the absence of ATP and Mg2+, the auto correlation function could be best fitted with the one component translational diffusion model with triplet state correction (Equation 2)(2)G(τ)=1+A(1+ϕtrie−ττtri1−ϕtri)1(1+ττd)(1+1s2ττd)1/2
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The data show the absence of oligomers even in the presence of ATP/Mg2+ and can be best fitted using a single component model, with properties of the Syt1C2AB monomer.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) The cross-correlation is larger than one at short time intervals, suggesting the co-migration of the two fluorophores. (B) The formation of oligomers is also reflected in the best fits of the autocorrelation functions by two-component diffusion model, similar to those observed with ATP/Mg2+.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The torus model was as best approximate considering the ring-like oligomeric structure observed in the EM analysis.
+
+To corroborate these findings, we estimated the diffusion properties of the fluorescent species. Higher molecular weight of the Syt1C2AB oligomers would increase the diffusion time (transit time) across the sample volume, and this could be determined by autocorrelation analysis. We used both fluorophores to cross-check our results, but lowered the concentrations of each fluorescent species (~25 nM of Syt1C2AB-Alexa488, ~25 nM of Syt1C2AB -Alexa647 and ~5 µM of unlabeled Syt1 C2AB), such that two fluorophores are unlikely to be located in the same oligomer. This was confirmed by the absence of cross correlation between the two fluorophores (Figure 3—figure supplement 2). We then measured the auto correlation function of each fluorophore in presence of ATP and Mg2+. We found that they could be best fitted using the two-component translational diffusion model with a triplet state correction (Equation 1) and determined two diffusion coefficients corresponding to the Syt1C2AB monomers and oligomers.
+
+$$
+G(\tau)=1+A(1+\frac{ϕ_{tri}e^{−\frac{\tau}{\tau_{tri}}}}{1−ϕ_{tri}})(\frac{ϕ_{m}}{(1+\frac{\tau}{\tau_{m}})(1+\frac{1}{s^{2}}\frac{\tau}{\tau_{m}})^{1/2}}+\frac{ϕ_{o}}{(1+\frac{\tau}{ϕ_{o}})(1+\frac{1}{s^{2}}\frac{\tau}{ϕ_{o}})^{1/2}})
+$$
+
+where G is the auto correlation function, $\tau$ is the time interval, A is amplitude, $Φ_{tri}and\tau_{tri}$ are the fraction and decay time of the triplet state, $Φ_{m}and\tau_{m}$ are the fraction and diffusional time of the component 1, $Φ_{o}and\tau_{o}$ are the fraction and diffusional time of the component 2, and s is the structural parameter.
+
+The major component (~80%) showed fast diffusion time (~600 µs) possibly corresponding to the monomers and a smaller fraction (~20%) had a slow diffusion time of ~4000 µs consistent with Syt1C2AB oligomers (Figure 3C, Table 1). These data indicated that Syt1C2AB indeed formed oligomers in solution when triggered with ATP and Mg2+. In contrast, in the absence of ATP and Mg2+, the auto correlation function could be best fitted with the one component translational diffusion model with triplet state correction (Equation 2)
+
+$$
+G(\tau)=1+A(1+\frac{ϕ_{tri}e^{−\frac{\tau}{\tau_{tri}}}}{1−ϕ_{tri}})\frac{1}{(1+\frac{\tau}{\tau_{d}})(1+\frac{1}{s^{2}}\frac{\tau}{\tau_{d}})^{1/2}}
+$$
+
+**Table 1.**
+ Fractions and molecular properties of diffusional particles of Syt1C2AB generated various conditions as measured by fluorescence correlation spectroscopy.Averages and standard errors from three independent trials are shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Proteins</th>
+      <th rowspan="2">Total protein conc. (nM)</th>
+      <th rowspan="2">Mg2+ + polyphosphate</th>
+      <th rowspan="2">Readout channel</th>
+      <th colspan="3">Component 1</th>
+      <th colspan="3">Component 2</th>
+    </tr>
+    <tr>
+      <th>Fraction (%)</th>
+      <th>Diffusion time (µs)</th>
+      <th>Diffusion coefficient (μm2/s)</th>
+      <th>Fraction (%)</th>
+      <th>Diffusion time (µs)</th>
+      <th>Diffusion coefficient (μm2/s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syt1-Alexa488</td>
+      <td>~30</td>
+      <td>No</td>
+      <td>Alexa488</td>
+      <td>100</td>
+      <td>620 ± 35</td>
+      <td>70 ± 4</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Syt1-Alexa647</td>
+      <td>~30</td>
+      <td>No</td>
+      <td>Alexa647</td>
+      <td>100</td>
+      <td>616 ± 22</td>
+      <td>70 ± 3</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Syt1-Alexa488 + Syt1-Alexa647 + unlabeled Syt1</td>
+      <td rowspan="2">~5000</td>
+      <td rowspan="2">No</td>
+      <td>Alexa488</td>
+      <td>100</td>
+      <td>583 ± 20</td>
+      <td>74 ± 8</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Alexa647</td>
+      <td>100</td>
+      <td>577 ± 20</td>
+      <td>75 ± 8</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Syt1-Alexa488 + Syt1-Alexa647 + unlabeled Syt1</td>
+      <td rowspan="2">~5000</td>
+      <td rowspan="2">Yes</td>
+      <td>Alexa488</td>
+      <td>77 ± 2</td>
+      <td>527 ± 20</td>
+      <td>82 ± 4</td>
+      <td>23 ± 2</td>
+      <td>4168 ± 194</td>
+      <td>10 ± 1</td>
+    </tr>
+    <tr>
+      <td>Alexa647</td>
+      <td>76 ± 2</td>
+      <td>567 ± 26</td>
+      <td>77 ± 4</td>
+      <td>24 ± 2</td>
+      <td>3862 ± 196</td>
+      <td>11 ± 1</td>
+    </tr>
+  </tbody>
+</table>
 
 The diffusion time (τd) obtained (~600 µs for both channels) were similar to the diffusion time of the monomeric component obtained in the two component diffusion model, confirming that no oligomeric structure is formed in the absence of Mg2+ and ATP (Table 1).
 
 To verify that the Syt1C2AB oligomerization observed in FCS analysis is indeed due to specific association of ATP to the C2B polybasic region, we tested the polylysine mutant (wild type Syt1C2AB -Alexa647 and unlabeled Syt1 C2AB K326A/K327A). For this mutant, in the presence of ATP and Mg2+, the autocorrelation function was best described with one-component diffusion model with a diffusion time of 599 ± 50 μs and a diffusion coefficient of 72 ± 7 μm2/s, which are similar to the property of a Syt1 monomer (Figure 3—figure supplement 3). These data are consistent with the EM analysis that the probability of forming Syt1 oligomeric structures is significantly decreased when the polylysine patch on C2B domain was altered. We also tested and confirmed that similar oligomers were formed with PIP2-diC4 and Mg2+ using both autocorrelation (diffusion time) and cross-correlation analysis (Figure 3—figure supplement 4).
 
-## Physical parameters of soluble Syt1 ring oligomers
+### Physical parameters of soluble Syt1 ring oligomers
 
-To fully characterize the Syt1C2AB oligomers detected in the FCS analysis, we determined the key molecular parameters of Syt1 oligomers observed in the FCS lt. First, we estimated the average copy number of Syt1 in the oligomer from the FCS autocorrelation analysis. To do this, we considered the probability of a diffusional object in the focal volume to contain dye 1:(3)p=C1Ctotal
+To fully characterize the Syt1C2AB oligomers detected in the FCS analysis, we determined the key molecular parameters of Syt1 oligomers observed in the FCS lt. First, we estimated the average copy number of Syt1 in the oligomer from the FCS autocorrelation analysis. To do this, we considered the probability of a diffusional object in the focal volume to contain dye 1:
 
-where C1andCtotal are the input concentrations of Syt1C2AB–dye1 and all the Syt1C2AB (labeled + unlabeled), respectively. Therefore, if an oligomer containing dye 2 has N copies of Syt1C2AB molecules, then the probability of it also containing dye 1 is(4)p12=1−(1−p)N−1
+$$
+p=\frac{C_{1}}{C_{total}}
+$$
 
-From the auto correlation functions, we can determine the concentration of oligomers that contain dye 2, which can be defined as C2ϕ2,o, where ϕ2,o is the molar ratio of oligomers containing dye 2 versus all diffusional particles containing dye 2. Therefore, using ϕ2,o and C2, p12 can be rewritten as(5)p12= C12/(C2ϕ2,o)
+where $C_{1}andC_{total}$ are the input concentrations of Syt1C2AB–dye1 and all the Syt1C2AB (labeled + unlabeled), respectively. Therefore, if an oligomer containing dye 2 has N copies of Syt1C2AB molecules, then the probability of it also containing dye 1 is
 
-where C12 is the concentration of diffusional objects that contain both Syt1-Alexa647 and Syt1-Alexa488 and can be calculated using(6)C12=(Gx(0)−1)ϕ1,oϕ2,o(G1(0)−1)(G2(0)−1)Veff
+$$
+p_{12}=1−(1−p)^{N−1}
+$$
 
-Where Gx(0) is the value of the cross-correlation function at zero time interval, G1(0) and G2(0) are the values of the auto correlation functions of dye 1 and 2 at zero time interval, respectively, and Veff is the effective focal volume. Combining Equations 4–6, we estimate the average copy number (N) of Syt1 in the oligomers to be ~16 ± 2. This perfectly matches with the estimated copies of Syt1 (~17 copies) in the ring-like oligomers from the EM analysis.
+From the auto correlation functions, we can determine the concentration of oligomers that contain dye 2, which can be defined as $C_{2}ϕ_{2,o}$, where $ϕ_{2,o}$ is the molar ratio of oligomers containing dye 2 versus all diffusional particles containing dye 2. Therefore, using $ϕ_{2,o}$ and $C_{2}$, p12 can be rewritten as
 
-Next, we determined the hydrodynamic dimensions of the Syt1 monomeric and oligomeric component from its diffusion properties. For the monomers, we considered them as global structures and used Stokes-Einstein equation (Equation 7)(7)D=kBT6πηr
+$$
+p_{12}= C_{12}/(C_{2}ϕ_{2,o})
+$$
 
-where D is the diffusion coefficient determined from the autocorrelation function, kB is Boltzmann constant, T is the temperature, η is the viscosity of the solvent and r is the hydrodynamic radius. For the oligomer, we used torus model (Figure 3—figure supplement 5) considering the ring-like oligomer structure, wherein the hydrodynamic radius can be determined from the following equation:(8)D=kBT8π2ηa[ln(8ar)+12]
+where C12 is the concentration of diffusional objects that contain both Syt1-Alexa647 and Syt1-Alexa488 and can be calculated using
+
+$$
+C_{12}=\frac{(G_{x}(0)−1)ϕ_{1,o}ϕ_{2,o}}{(G_{1}(0)−1)(G_{2}(0)−1)V_{eff}}
+$$
+
+Where $G_{x}(0)$ is the value of the cross-correlation function at zero time interval, $G_{1}(0)$ and $G_{2}(0)$ are the values of the auto correlation functions of dye 1 and 2 at zero time interval, respectively, and $V_{eff}$ is the effective focal volume. Combining Equations 4–6, we estimate the average copy number (N) of Syt1 in the oligomers to be ~16 ± 2. This perfectly matches with the estimated copies of Syt1 (~17 copies) in the ring-like oligomers from the EM analysis.
+
+Next, we determined the hydrodynamic dimensions of the Syt1 monomeric and oligomeric component from its diffusion properties. For the monomers, we considered them as global structures and used Stokes-Einstein equation (Equation 7)
+
+$$
+D=\frac{k_{B}T}{6\piηr}
+$$
+
+where $D$ is the diffusion coefficient determined from the autocorrelation function, $k_{B}$ is Boltzmann constant, $T$ is the temperature, $η$ is the viscosity of the solvent and $r$ is the hydrodynamic radius. For the oligomer, we used torus model (Figure 3—figure supplement 5) considering the ring-like oligomer structure, wherein the hydrodynamic radius can be determined from the following equation:
+
+$$
+D=\frac{k_{B}T}{8\pi^{2}ηa}[ln(\frac{8a}{r})+\frac{1}{2}]
+$$
 
 r is the radius of the sphere being rotated, and a is the distance from the center of the circle to the axis of rotation (Thaokar, 2008). We estimate an average hydrodynamic radius of ~r = 3.1±0.2 nm for the monomer and ~ (r + a)=24 ± 3 nm for Syt1 oligomer. Both of these values are in line with the dimension of Syt1C2AB monomer (~4.3 nm from X-ray crystallography [Fuson et al., 2007]) and ring oligomer (~32 nm from the EM analysis). Overall, the data suggest that Syt1 oligomers observed in FCS analysis are the same circular oligomers visualized by EM, given the molecular properties of both are perfectly aligned.
 
-Finally, we used the FCS analysis to estimate the Syt1 oligomeric interaction. Because we observed two types of diffusional particles (Syt1 monomer and oligomer with average copy number N ~ 16) in the fluorescence correlation measurements, to determine the binding affinity, we considered a polymerization reaction that forms the oligomer (Syt1N):N .Syt1↔Syt1N
+Finally, we used the FCS analysis to estimate the Syt1 oligomeric interaction. Because we observed two types of diffusional particles (Syt1 monomer and oligomer with average copy number N ~ 16) in the fluorescence correlation measurements, to determine the binding affinity, we considered a polymerization reaction that forms the oligomer (Syt1N):
 
-The binding affinity constant (KD) can be written asKDN-1=[Syt1]NSyt1N
+$$
+N .Syt1↔Syt1_{N}
+$$
 
-And the mass balance equation is,[Syt1]+N.[Syt1N]=[Syt1]0
+The binding affinity constant (KD) can be written as
+
+$$
+K_{D}^{N-1}=\frac{[Syt1]^{N}}{Syt1_{N}}
+$$
+
+And the mass balance equation is,
+
+$$
+[Syt1]+N.[Syt1_{N}]=[Syt1]_{0}
+$$
 
 where [Syt1]0 is the initial total input concentration of Syt1.
 
-The molar fractions of the fluorescent dyes in the monomers (Φ1,mandΦ2,m) were determined from the auto correlation functions of the Alexa647 and Alexa488 channels, respectively. As shown in Table 1, the two dyes, Syt1-Alexa647 (dye 1) and Syt1-Alexa488 (dye 2), have similar distribution in monomers and oligomers, that is Φ1,m≅Φ2,m, where Φ1,m is the molar fraction of dye 1 in the form of monomer. Therefore, we can reasonably assume that the unlabeled Syt1 molecules have same distribution as Syt1-Alexa647 and Syt1-Alexa488. Then,(9)ϕ1,m≅ϕ2,m≅[Syt1][Syt1]+[Syt1N]
+The molar fractions of the fluorescent dyes in the monomers ($Φ_{1,m}andΦ_{2,m}$) were determined from the auto correlation functions of the Alexa647 and Alexa488 channels, respectively. As shown in Table 1, the two dyes, Syt1-Alexa647 (dye 1) and Syt1-Alexa488 (dye 2), have similar distribution in monomers and oligomers, that is $Φ_{1,m}≅Φ_{2,m}$, where $Φ_{1,m}$ is the molar fraction of dye 1 in the form of monomer. Therefore, we can reasonably assume that the unlabeled Syt1 molecules have same distribution as Syt1-Alexa647 and Syt1-Alexa488. Then,
 
-Combining these equations together, we can write the KD as(10)KD=ϕ1,m1(N−1)(1−ϕ1,m)1(N−1)(N(1−ϕ1,m)+ϕ1,m)[Syt1]0
+$$
+ϕ_{1,m}≅ϕ_{2,m}≅\frac{[Syt1]}{[Syt1]+[Syt1_{N}]}
+$$
 
-The values of Φ1,mandΦ2,m were in good agreement and found to be ~0.77 (Table 1). From Equation 10, the affinity constant (KD) for the Syt1C2AB monomers to assemble into the oligomers was estimated to be ~1 ± 0.3 µM. This corresponds to a free energy of ~−13.8 kBT for a monomer and ~−220 kBT for the oligomer with 16 copies of Syt1C2AB. This suggests that Syt1 ring oligomers could reasonably assemble under the physiological conditions when triggered by naturally occurring polyphosphates.
+Combining these equations together, we can write the KD as
 
-## Syt1 soluble rings are insensitive to calcium
+$$
+K_{D}=\frac{ϕ_{1,m}^{\frac{1}{(N−1)}}}{(1−ϕ_{1,m})^{\frac{1}{(N−1)}}(N(1−ϕ_{1,m})+ϕ_{1,m})}[Syt1]_{0}
+$$
+
+The values of $Φ_{1,m}andΦ_{2,m}$ were in good agreement and found to be ~0.77 (Table 1). From Equation 10, the affinity constant (KD) for the Syt1C2AB monomers to assemble into the oligomers was estimated to be ~1 ± 0.3 µM. This corresponds to a free energy of ~−13.8 kBT for a monomer and ~−220 kBT for the oligomer with 16 copies of Syt1C2AB. This suggests that Syt1 ring oligomers could reasonably assemble under the physiological conditions when triggered by naturally occurring polyphosphates.
+
+### Syt1 soluble rings are insensitive to calcium
 
 Syt1C2AB ring oligomers assembled on the membrane surface are sensitive to Ca2+ and are rapidly disrupted by Ca2+ wash at physiological concentrations (Wang et al., 2014; Zanetti et al., 2016). This sensitivity maps to the Ca2+ binding to the C2B domain and the subsequent insertion of the flanking aliphatic residues into the membrane (Zanetti et al., 2016). In line with this, we find that the soluble Syt1C2AB rings are insensitive to Ca2+ treatment (Figure 4). Negative stain EM analysis showed the Syt1C2AB assembled into soluble ring-like oligomers in the presence of Ca2+/ATP similar to those observed with ATP and Mg2+ (Figure 4A). In fact, Ca2+ was slightly better in stabilizing the ring oligomers across the concentration range (0.25–1 mM) tested (Figure 4—figure supplement 1). Similarly, we detected the presence of oligomeric structures with ATP and Ca2+ in the FCS analysis, and the diffusional properties of the oligomeric component was similar to that observed with ATP and Mg2+ (Figure 4B). Hence, we conclude that the Ca2+-induced membrane interaction of the C2B domain is essential for the dissociation of the Syt1 ring oligomers following the Ca2+ influx. Remarkably, neutralizing the Ca2+ coordinating aspartic acids of the C2B domain (Syt13A, D309A/D363A/D365A) stabilized the soluble ring oligomers. In fact, Syt13A formed stable ring oligomers in the absence of divalent cations (with Na.ATP), with density comparable to those assembled with ATP and Mg2+ (Figure 4C). This supports the idea that C2B Ca2+ loops are involved the ring oligomer formation (Wang et al., 2014) and Mg2+ stabilizes the ring oligomers by charge shielding effect that is by reducing the electrostatic repulsion between the Syt1 monomers by
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig4-v1.jpg)
+
+**Figure 4.:** (A) Negative stain analysis shows that the Syt1C2AB assembles into ring-like oligomers in the presence of Ca2+ and ATP and these ring oligomers are similar in size and frequency to the rings assembled with Mg2+/ATP. (B) Fluorescence autocorrelation analysis corroborates the insensitivity of the ring oligomers to Ca2+ as the auto correlation function of Syt1C2AB incubated with Ca2+ and ATP is best described with the two-component translational diffusion model with triplet state revealing the presence of the oligomeric component. (C) Neutralizing the Ca2+ coordinating aspartic acids in the C2B domain stabilizes the soluble ring oligomers even in absence of Mg2+ ions clarifying the molecular role of Mg2+ in the soluble Syt1C2AB ring assembly. The stability of the ring oligomers under various conditions was quantified by density of the rings on the EM grid (D). Average values and deviations from a minimum of 3 independent experiments are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Both divalent cations increase the density of the ring oligomers observed over a range of concentration (0.25–1 mM) tested, but Ca2+ is more efficient than Mg2+.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27441/elife-27441-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Figure 3—figure supplement 2 (B); Figure 3—figure supplement 4B (C) and Figure 4B (D).
 
 ## Discussion
 
@@ -115,38 +300,58 @@ Besides stabilizing the pre-fusion state, the Syt1 ring oligomer could also sync
 
 Adenosine phosphates (ATP, ADP) and Inositol hexaphosphate (IP6) were purchased from Sigma-Aldrich (St Louis, MO). Inositol 1,4,5-trisphosphate (IP3), phosphatidylinositol 4,5-bisphosphate diC4 (PIP2-diC4) were purchased from Echelon biosciences (Salt Lake City, UT). 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) and 1,2-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS) were purchased from Avanti Polar lipids (Alabaster, AL). Thiol reactive fluorescent probes Alexa488-maleimide and Alexa647-maleimide were purchased from Thermo Scientific, Waltham, MA. The DNA constructs used in this study - the wild-type C2AB domain (Syt1C2AB, residues 143–421) of rat Synatotagmin-1, C2B polylysine mutant (Syt1C2ABK326A, K327A), C2B Ca2+ binding mutant (Syt13A, D309A, D363A, D365A) were generated and sequenced in our earlier works (Wang et al., 2014; Zanetti et al., 2016). For site-specific labeling with fluorophores, cysteine was introduced in Syt1C2AB at residue 269, while naturally existing cysteine at residue 277 was removed (C277S) using the Quickchange mutagenesis kit (Stratagene, Santa Clara, CA)
 
-## Purification of recombinant proteins
+### Purification of recombinant proteins
 
 The Syt1C2AB wild-type and mutant proteins were expressed and purified as a GST-tagged protein using a pGEX6 vector. The proteins were purified as described previously (Wang et al., 2014; Zanetti et al., 2016). Briefly, Escherichia coli BL21 (DE3) expressing Syt constructs were grown to an OD600 ~0.7–0.8, induced with 0.5 mM isopropyl β-D-1-thiogalactopyranoside (IPTG). The cells were harvested after 3 hr at 37°C and suspended in lysis buffer (25 mM HEPES, pH 7.4, 400 mM KCl, 1 mM MgCl2, 0.5 mM TCEP, 4% Triton X-100, protease inhibitors). The samples were lysed using cell disrupter, and the lysate was supplemented with 0.1% polyethylamine before being clarified by centrifugation (100,000 × g for 30 min). The supernatant was loaded onto glutathione-sepharose (Thermo Scientific, Waltham, MA) beads (3 hr or overnight at 4°C), and the beads were washed with 20 ml of lysis buffer, followed by 20 ml of 25 mM HEPES, 400 mM KCl buffer containing with 2 mM ATP, 10 mM MgSO4, 1 mM DTT. Subsequently, the beads were re-suspended in 5 ml of lysis buffer supplemented with 10 μg/mL DNaseI, 10 μg/mL RNaseA, and 10 μl of benzonase (2000 units) and incubated at room temperature for 1 hr, followed by quick rinse with 10 ml of high salt buffer (25 mM HEPES, 1.1 M KCl, 1 mM DTT) to remove the nucleotide contamination. The beads were then washed with 20 ml of HEPES, 400 mM KCl buffer containing 0.5 mM EGTA to remove any trace calcium ions. The proteins were eluted off the affinity beads in 25 mM HEPES, 100 mM KCl, 1 mM DTT buffer using PreScission protease for GST-tagged constructs and further purified by Mono-S anionic exchange (GE Healthcare, Marlborough, MA) chromatography. Size-exclusion chromatography (Superdex75 10/300 GL) showed a single elution peak (~13 mL) consistent with a pure protein, devoid of any contaminants.
 
-## Imaging of soluble Syt1 ring oligomers
+### Imaging of soluble Syt1 ring oligomers
 
 Protein stock (50 µM) was diluted for 10 fold in MBS (20 mM MOPS, pH7.5, 100 mM KCl, 1 mM EGTA, 1 mM Mg(AC)2, 1 mM Mg.ATP, 1 mM DTT, 4% trehalose) at room temperature for 10 min. Alternatively, Mg.ATP can be substituted with 1 mM Mg.ADP, 50 uM IP3, 50 uM PIP2-diC4, 1 mM Ca.ATP. Diluted protein solution is further centrifuged at 10,000 x g for 10 min at 4°C to remove large aggregates and the supernatant (~8 µl) was applied to a continuous carbon-coated EM grid, which were glow-discharged for 10 s prior to application. After 1 min incubation, the grid was blotted dry with Whatman #1 filter paper, stained with 1% uranyl acetate and air-dried. The negatively stained specimens were examined on a transmission electron microscope (FEI Tecnai T12) operated at an acceleration voltage of 120 keV. The defocus range used for our data was from 0.6 to 2.0 um. Images were recorded under low-dose conditions (∼20 e-/Å2) on a 4K × 4K CCD camera (UltraScan 4000; Gatan, Inc), at a nominal magnification of 42,000x. Micrographs were binned by a factor of 2 at a final sampling of 5.6 Å per pixel on the object scale. A minimum of three independent analyses were used for each condition and average and standard error of the means (SEM) from this dataset is shown. Typically, randomly selected 20–30 regions of 500 × 500 nm dimensions from each individual trial (a minimum of 100 regions) was used for the density analysis and a minimum of 200 ring structures were used to estimate the size distribution.
 
-## Soluble ring purification
+### Soluble ring purification
 
 An aliquot of 10 µl Syt1C2AB stock was diluted in 90 µl MBS. After 10 min incubation at room temperature with ATP and Mg2+, the protein solution mixed with 10 µl of buffer or buffer containing 0.01% glutaraldehyde on ice for 10 min and then laid on top of a glycerol density gradient (100 µl layers of 10%, 15%, 20%, 25%, 30% glycerol (v/v), which were allowed to settle for 1 hr at 4°C) and centrifuged at 100,000 x g for 16 hr at 4°C. After the centrifugation, the samples were collected as 50 µl aliquots (from top to the bottom) and directly imaged for negative staining EM. To increase the concentration of particles on the EM grid, samples were allowed to adsorb on the carbon surface for 1 hr in a humidity chamber on ice. An alternate sample under the same conditions except without the fixative was tested in parallel.
 
-## Fluorescence Correlation Spectroscopy analysis
+### Fluorescence Correlation Spectroscopy analysis
 
 Fluorescence correlation spectroscopy experiments were performed using a Carl Zeiss LSM 510 confocal microscope with a correlator module. A 40x water immersion objective lens was used in all experiments. All experiments were carried out with total (labeled + unlabeled) Syt1C2AB concentration of 5 µM of Syt1C2AB in 25 mM HEPES, 20 mM KCl, 1 mM Mg2+ buffer with or without 1 mM Mg.ATP included. The concentration of Alexa488/Alexa647 labeled Syt1C2AB were adjusted as per the experimental requirement. For cross correlation measurements, typically ~120 nM of Syt1C2AB-Alexa488,~30–120 nM of Syt1C2AB-Alexa647 were mixed with ~4.9 µM of unlabeled Syt1C2AB at room temperature for 15 min. The sample was then loaded into a glass bottom microwell dish (MatTek Corporation, Ashland, MA) for imaging. Under some cases, the sample was then rapidly diluted (5x) with buffer and immediately subjected to imaging. For auto correlation experiments, concentrations of each fluorescent species lowered to ~10–60 nM of Syt1C2AB-Alexa488,~10–60 nM of Syt1C2AB-Alexa647 and ~5 µM of unlabeled Syt1C2AB. Typically, the sample was pre-mixed in eppendorf tubes, and then transferred into a glass bottom microwell dish (MatTek Corporation, Ashland, MA) for imaging. Both fluorophores were directly excited using 488 nm and 633 nm lasers.
 
-The auto-correlation function is defined as follows:G(τ)=⟨I(t).I(t+τ)⟩⟨I(t)⟩2=T∫0T(I(t).I(t+τ))dt∫0T(I(t))2dt
+The auto-correlation function is defined as follows:
+
+$$
+G(\tau)=\frac{⟨I(t).I(t+\tau)⟩}{⟨I(t)⟩^{2}}=\frac{T\int0T(I(t).I(t+\tau))dt}{\int0T(I(t))^{2}dt}
+$$
 
 where I(t) is the fluorescence intensity at time t, and <>denotes the time average, and τ is the time shift.
 
-The definition for the cross correlation function is identical to the auto correlation function, with the exception that the signal in one channel is compared to a signal in a second channel instead of itself.GX(τ)=⟨IB(t).IY(t+τ)⟩⟨IB(t).IY(t)⟩
+The definition for the cross correlation function is identical to the auto correlation function, with the exception that the signal in one channel is compared to a signal in a second channel instead of itself.
+
+$$
+G_{X}(\tau)=\frac{⟨I_{B}(t).I_{Y}(t+\tau)⟩}{⟨I_{B}(t).I_{Y}(t)⟩}
+$$
 
 where the indices ‘B’ and ‘Y’ refer to the red and blue channel, respectively.
 
-The total correlation is given by the following equation:Gtot(τ)=1+d+C+A.∏k∑lGk,l(τ)
+The total correlation is given by the following equation:
+
+$$
+G_{tot}(\tau)=1+d+C+A.\prodk\sumlG_{k,l}(\tau)
+$$
 
 where d is the offset, C is the background correction, and A is the amplitude. Gk, l(τ) is the correlation for a single process. The suffixes k and l are correlation terms for dependent and independent processes, respectively, that are multiplied with or added to each other.
 
-For a system with a single species of translationally diffusional particles, the above equation can be simplified asG(τ)=1+A(1+Φtrie−ττtri1−Φtri)1(1+ττd)(1+1s2ττd)1/2
+For a system with a single species of translationally diffusional particles, the above equation can be simplified as
+
+$$
+G(\tau)=1+A(1+\frac{Φ_{tri}e^{−\frac{\tau}{\tau_{tri}}}}{1−Φ_{tri}})\frac{1}{(1+\frac{\tau}{\tau_{d}})(1+\frac{1}{s^{2}}\frac{\tau}{\tau_{d}})^{1/2}}
+$$
 
 where Φtri and τtri are the fraction and decay time of the triplet state. τd is the diffusional time of the particle, and s is the structural parameter.
 
-If there are two species of particles diffusing in the focal volume, the correlation function can be written asG(τ)=1+A(1+Φtrie−ττtri1−Φtri)(Φ1(1+ττ1)(1+1s2ττ1)1/2+Φ2(1+ττ2)(1+1s2ττ2)1/2)
+If there are two species of particles diffusing in the focal volume, the correlation function can be written as
+
+$$
+G(\tau)=1+A(1+\frac{Φ_{tri}e^{−\frac{\tau}{\tau_{tri}}}}{1−Φ_{tri}})(\frac{Φ_{1}}{(1+\frac{\tau}{\tau_{1}})(1+\frac{1}{s^{2}}\frac{\tau}{\tau_{1}})^{1/2}}+\frac{Φ_{2}}{(1+\frac{\tau}{\tau_{2}})(1+\frac{1}{s^{2}}\frac{\tau}{\tau_{2}})^{1/2}})
+$$
 
 where Φ1 and τ1 are the fraction and diffusional time of the component 1, Φ2 and τ2 are the fraction and diffusional time of the component 2. These equations can be used to determine the diffusional properties of the particles. Fitting residues from fitting autocorrelation function for all FCS data are shown in Figure 4—figure supplement 2.

@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/042aqky30 Experimental Center, Faculty of Medicine Carl Gustav Carus, Technische Universität Dresden Dresden Germany
-2. https://ror.org/03vek6s52 Department of Physics, Harvard University Cambridge United States
-3. https://ror.org/02eva5865 Department of Visual and Data-Centric Computing, Zuse Institute Berlin Berlin Germany
-4. https://ror.org/03vek6s52 Department of Molecular and Cellular Biology, Harvard University Cambridge United States
-5. https://ror.org/03vek6s52 John A. Paulson School of Engineering and Applied Sciences, Harvard University Cambridge United States
+1. Experimental Center, Faculty of Medicine Carl Gustav Carus, Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+2. Department of Physics, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Department of Visual and Data-Centric Computing, Zuse Institute Berlin Berlin Germany ([ROR:02eva5865](https://ror.org/02eva5865))
+4. Department of Molecular and Cellular Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+5. John A. Paulson School of Engineering and Applied Sciences, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 6. Center for Computational Biology, Flatiron Institute New York United States
 
 † Corresponding author
@@ -42,21 +42,340 @@ Here, we aimed to determine the number and length of KMTs and the positioning of
 
 ## Results
 
-## K-fibers are composed of approximately nine KMTs
+### K-fibers are composed of approximately nine KMTs
 
 For our large-scale analysis of mammalian k-fibers, we acquired data on metaphase spindles in HeLa cells by serial-section electron tomography (Figure 2A–B). To visually inspect the quality of our samples, we extracted slices of regions of interest (Figure 2—figure supplement 1). We also used the tomogram data to reconstruct full spindles in 3D for quantitative analysis of the spindle morphology (Figure 2—videos 1–3). In preparation for this quantitative analysis, we applied a Z-factor to our 3D models to correct for a sample collapse that had occurred during the acquisition of the tomographic data (Figure 2—figure supplement 2). In our three full reconstructions, we segmented all MTs, the chromosomes and the spindle poles (including the centrioles). Each of these metaphase spindles was composed of approximately 6300 MTs (6278 ± 1614 MTs, mean ±STD; Figure 2C–E; Table 1, Table 2) and had an average pole-to-pole distance of 9.0 ± 1.7 µm (mean ±STD; Figure 2—figure supplement 3A-B; Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig2-v3.jpg)
+
+**Figure 2.:** (A) Tomographic slice showing a HeLa cell (spindle #1) in metaphase. The chromosomes (ch) and the spindle poles (p) are indicated. (B) Three-dimensional reconstruction of the same spindle as shown in A. The stacking of the serial tomograms used to generate a three-dimensional model of the spindle with the MTs (white lines) is visualized. The segmented chromosomes are shown in blue. (C) Three-dimensional model of the spindle as shown in A. The total number of all MTs is given in the upper right corner. The non-KMTs (yellow lines) and KMTs (red lines) are shown. (D) Full 3D model of metaphase spindle #2. (E) Full 3D model of metaphase spindle #3. (F) Extraction of KMTs from the 3D reconstruction as shown in C. The number of KMTs is given in the upper right corner. KMT plus and minus ends are shown by white spheres. (G) KMTs extracted from spindle #2. (H) KMTs extracted from spindle #3. Scale bars, 1 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Tomographic slices through spindle #3 illustrating the morphology of HeLa cells. Spindle poles (p) with a centriole, chromosomes (ch), and mitochondria (m) are indicated. The boxed regions (from top to bottom) show a spindle pole, MTs in between a spindle pole and the chromosomes, and a kinetochore region with attached KMTs. Scale bars, 500 nm. (C–D) Tomographic slices showing the centrioles (c) and MTs (white arrows) at higher magnification (corresponds to the top boxes in A-B). Scale bars, 250 nm. (E–F) Region of the cell between a spindle pole and the chromosomes. MTs (white arrows) are marked (corresponds to the mid boxes in A-B). Scale bars, 250 nm. (G–H) Kinetochores (k) with associated KMTs (marked by arrows) are shown (corresponds to the bottom boxes in A-B). Scale bars, 250 nm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic illustration of correction for a sample collapse in Z. Left panel shows a stack of semi-thick sections after ultramicrotomy (total height, Z1). The mid panel illustrates a sample collapse as obvious after computational stacking of the serial tomograms (total height, Z2). Right panel, calculation of the Z-factor (Z1/Z2) and correction of the collapse by application of the Z-factor (Z2*Z-factor). (B) Side view (Y/Z orientation) of the 3D reconstructed spindle #1 before Z-expansion. (C) Side view of the same spindle after Z-expansion. Scale bars, 1 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic illustration of the pole-to-pole distance. The 3D distance between the mother centrioles (m, marked in gray) of the two opposing spindle poles (P1 and P2) is measured. Chromosomes (blue) and kinetochores (red) are also shown. (B) Bar plot showing the pole-to-pole distance for each data and the average of all data sets (error bars are mean ±STD, n=3). (C) Schematic illustration of the distance between the KMT plus ends of sister k-fibers (called 1 A and 1B). The KMTs (red lines) with their plus ends (light red circles) are indicated. The median position (yellow circle) of all KMT plus ends was calculated for each kinetochore pair. (D) Graph showing the average 3D distance between sister k-fibers for each data set and for all data sets (error bars are mean ±STD). The number of measurements per dataset is indicated.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Schematic illustration of a KMT (red tube) with different viewing planes (colored in green, blue, orange, and purple). (B–D) Tomographic slices of KMT plus ends visualized at different viewing planes (as illustrated in A). Scale bars, 25 nm. (E–G) Average intensity Z projections of the KMT plus ends as shown in B-D. The KMTs show flared open plus ends. Scale bars, 25 nm.
+
+**Table 1.**
+ Characterization of the 3D-reconstructed metaphase spindles in HeLa cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data set</th>
+      <th>Spindle pole distance [µm]</th>
+      <th>Inter-kinetochore distance [µm]*</th>
+      <th>No. of MTs in the tomographic volume</th>
+      <th>No. of kinetochores</th>
+      <th>No. of KMTs</th>
+      <th>No. of non-KMTs</th>
+      <th>No. of k-fibers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spindle #1</td>
+      <td>7.16</td>
+      <td>1.08 ± 0.20(n=43)</td>
+      <td>4884</td>
+      <td>92</td>
+      <td>797(16.3%)</td>
+      <td>4087(83.7%)</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>Spindle #2</td>
+      <td>10.39</td>
+      <td>1.24 ± 0.21(n=50)</td>
+      <td>8047</td>
+      <td>110</td>
+      <td>1,102(13.7%)</td>
+      <td>6945(86.3%)</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>Spindle #3</td>
+      <td>9.48</td>
+      <td>1.03 ± 0.27(n=40)</td>
+      <td>5904</td>
+      <td>90</td>
+      <td>680(11.5%)</td>
+      <td>5224(88.5%)</td>
+      <td>90</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ± STD._
+
+**Table 2.**
+ Tomographic data sets as used throughout this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data set</th>
+      <th>Original data set</th>
+      <th>Montage (X/Y)</th>
+      <th>No. of serial sections[300 nm each]</th>
+      <th>Estimated tomographic volume [µm3]</th>
+      <th>Data set size [Gb]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spindle #1</td>
+      <td>T_0475</td>
+      <td>2 × 3</td>
+      <td>22</td>
+      <td>598</td>
+      <td>46.5</td>
+    </tr>
+    <tr>
+      <td>Spindle #2</td>
+      <td>T_0479</td>
+      <td>2 × 3</td>
+      <td>29</td>
+      <td>996</td>
+      <td>77.9</td>
+    </tr>
+    <tr>
+      <td>Spindle #3</td>
+      <td>T_0494</td>
+      <td>2 × 3</td>
+      <td>35</td>
+      <td>904</td>
+      <td>71.9</td>
+    </tr>
+  </tbody>
+</table>
 
 We then annotated the KMTs in our reconstructions based on the association of the putative MT plus ends with kinetochores. MTs that were arranged in parallel and made end-on contact at a single ‘spot’ on the chromosomes were defined as KMTs being part of the same k-fiber. For this publication, these bundled KMTs were considered the ‘core’ of the k-fibers. Possible interactions of these KMTs with other MTs (referred to as non-KMTs) in the spindle were subject to subsequent steps of our in-depth spindle analysis. In our tomographic data sets, we identified between 90 and 110 k-fibers per cell, which included on average 859 ± 218 KMTs (mean ±STD, n=3; Figure 2F–H; Figure 2—videos 4–6; Table 1) in each spindle. Thus, only ~14% of all MTs in the reconstructed spindles were KMTs. The majority of annotated KMTs displayed open flared ends at the kinetochore (Figure 2—figure supplement 4), consistent with previous observations on the morphology of KMT plus ends in mammalian cells (McIntosh et al., 2013). We took advantage of these extracted k-fibers to further analyze the distance between the sister k-fiber ends in each data set. For this, we calculated the median position of the KMT plus ends at each k-fiber and then determined the distance between the median KMT plus-end positions of sister k-fibers (Figure 2—figure supplement 3C-D; Table 1). The average distance between the sister k-fiber ends was 1.13 ± 0.24 µm (mean ±STD, n=292). The similarity in the median distance between sister k-fiber ends in the three reconstructions indicated to us that the selected pre-inspected spindles were indeed cryo-immobilized at a similar mitotic stage, thus allowing a further comparative quantitative analysis of our 3D models.
 
 Next, we extracted individual k-fibers from our full 3D reconstructions to visualize their overall morphology (Figure 3A; Figure 3—videos 1–6). Our serial-section approach enabled us to follow each KMT in each k-fiber in 3D. This was achieved by semi-automatic stitching of the corresponding ends over section borders (Figure 3—figure supplement 1; Lindow et al., 2021). In addition to this semi-automatic stitching, each KMT in our reconstructions was manually checked for a proper end identification. The individual k-fibers showed remarkable variability in their overall shape. Some k-fibers were rather straight, while others were very curved. At the kinetochores, k-fibers showed a compacted appearance, while k-fibers were considerably broader at their pole-proximal end. Interestingly, some KMT minus ends extended beyond the position of the centrioles (Figure 3A, k-fibers #I - #III).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig3-v3.jpg)
+
+**Figure 3.:** (A) Examples of individual sister k-fibers extracted from the full 3D reconstruction of metaphase spindle #1. The numbering of these examples (corresponding to the supplementary videos) is given in the upper right corners. KMTs are shown as red lines. The ends of the KMTs are indicated by white spheres, centrioles are shown as cylinders (gray). Scale bar for all examples, 1.5 µm. (B) Histogram showing the frequency of detected KMTs per kinetochore. This plot includes data from all three spindle reconstructions. The dashed line (black) indicates the average number of KMTs per kinetochore (n=292). (C) Graph showing the number of KMTs associated per kinetochore plotted against the distance between sister k-fibers (n=292). The Pearson’s correlation coefficient for each data set and the average coefficient for all data sets are given. (D) Graph showing the difference (delta) in the number of KMTs associated with the respective sister kinetochores plotted against the distance between the kinetochore-proximal ends of k-fiber pairs (n=292). The Pearson’s correlation coefficient for each data set and the average coefficient for all data sets are given.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic illustration of MT segmentation across stacked consecutive serial sections. Each section is represented as a gray area. MTs are shown as red lines and their ends as red circles. ‘Artificial ends’ at section borders that need to be stitched are labeled by black circles. The horizontal dashed lines (black) indicate the seams between the sections. (B) Stacked serial tomograms showing a selected k-fiber that has been followed over several serial sections. The KMTs are indicated as red lines and the ends are marked by red circles. The dashed lines (black) indicate the seam regions. Scale bar, 250 nm. (C) Longitudinal views of KMTs of the same k-fiber as shown in B. Borders of the serial sections are indicated by vertical dashed lines. The top rows of each reconstruction show selected traced KMTs. The bottom rows show the same KMTs with overlays to indicate the length (red line) and the ends (red circles) of each KMT. Scale bars, 50 nm. (D) Y/Z view of the 3D model of spindle #1 showing MT tracings at section borders. Scale bar, 500 nm. (E) Y/Z view of spindle #2. Scale bar, 600 nm. (F) Y/Z view of spindle #3. Scale bar, 500 nm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Graph showing the number of KMTs per kinetochore for each data set and the average number for all data sets (error bars are mean ±STD). (B) Schematic illustration of the indirect measurement of the k-fiber area. MTs (red lines) with their ends (circles in light red) and the kinetochore (ellipsoid in dark red) are shown (left). The measurement of the cross-section of a k-fiber in the vicinity of the KMT ends is indicated by a blue bar. The k-fiber area (right) is given by a blue circle enclosing all KMTs (center of the circle in orange). (C) Graph showing the number of KMTs per kinetochore for all reconstructed spindles plotted against the area of k-fibers at the kinetochore (n=292). The ellipse (gray) indicates a 95% confidence interval for all data and the central dot (gray) indicates the average kinetochore area. (D) Graph showing the density of KMTs at the kinetochore for each 3D reconstruction and for all data sets (error bars are mean ±STD). (E) Plot showing the average KMT-to-KMT distance at the kinetochore for all data sets (error bars are mean ±STD). The average for all data sets is also given.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schematic illustration of the k-fiber positions on the X/Z projection of the metaphase plate. Kinetochores are indicated as blue circles. The fitted ellipse (center marked by a black dot) including all kinetochores is characterized by the semi-major (a-) and the semi-minor (b-) axis. The ellipse is divided into three areas representing the percentage of occupancy on the ellipse (0–50%, central kinetochores, green; 50–75%, intermediate kinetochores, blue; and 75–100%, peripheral kinetochores, purple). (B–D) Perspective views of the reconstructed spindles with selected central k-fibers (green). The number of each spindle is indicated (upper right corners). (E–G) Perspective views with selected intermediate k-fibers (blue). (H–J) Perspective views with selected peripheral k-fibers (purple). (K–M) Cross-section views of the spindles with all k-fiber classes. (N) Plot showing the number of KMTs per kinetochore according to the three positional regions in the mitotic spindle for all data sets. The mean of the KMT number is indicated (black horizontal lines). A Student’s t-test was applied for statistical analysis. Scale bars, 1 µm.
+
 We further investigated the number of KMTs associated per kinetochore (Figure 3B; Figure 3—figure supplement 2A; Table 3) and found that the k-fibers were composed of around nine KMTs (8.5 ± 2.2, mean ±STD, n=292). To exclude the possibility that the average number of KMTs attached to kinetochores is influenced by a possible stretch of the sister kinetochores, we plotted both the number of attached KMTs and the difference (delta) in the number of KMTs associated with the respective sister kinetochore against the distance between the kinetochore-proximal ends of k-fiber pairs. We did not observe a correlation between these parameters (Figure 3C–D; Pearson’s correlation coefficients were 0.04 and 0.29) and concluded that the number of KMT attachments to kinetochores in metaphase is not influenced by a variation in the inter-kinetochore distance. Another variable with a possible influence on the number of attached KMTs to the outer kinetochores could be the position of the k-fibers within the metaphase spindle. Because spindles show a rounded appearance at metaphase, a difference in the number of attached MTs to the outer kinetochores could be influenced by the overall spindle shape. To analyze such a possible positional effect, we considered the cross-section of the metaphase plate as an ellipse and defined a central, an intermediate and a peripheral zone on this ellipse (Figure 3—figure supplement 3A). By determining the position of the kinetochores on the 3D-reconstructed metaphase plate, we then annotated each k-fiber in our three data sets to one of these regions (Figure 3—figure supplement 3B-M). Keeping the roundedness of spindles at metaphase in mind, we indeed observed that k-fibers positioned in the center are rather straight, while peripheral k-fibers are more curved. However, we did not find a difference in the number of attached KMTs for these three different regions (Figure 3—figure supplement 3N; Table 5) and concluded that also the position of the k-fibers within the spindle has no effect on the average number of KMTs per k-fiber.
+
+**Table 3.**
+ Quantitative analysis of KMTs and non-KMTs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data set</th>
+      <th>Length of KMTs [µm]*</th>
+      <th>Length of non- KMTs [µm]*</th>
+      <th>No. of KMTs per kinetochore*</th>
+      <th>No. of KMTs in the MT-centrosome interaction area*</th>
+      <th>Mean KMT minus-end distance to poles [µm]</th>
+      <th>% of KMTs associated with poles</th>
+      <th>% of non-KMTs associated with poles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spindle #1</td>
+      <td>3.59(±1.57)</td>
+      <td>2.13(±1.67)</td>
+      <td>8.04(±1.86)</td>
+      <td>5.0(±1.8)</td>
+      <td>1.72</td>
+      <td>61.2</td>
+      <td>44.3</td>
+    </tr>
+    <tr>
+      <td>Spindle #2</td>
+      <td>3.82(±1.97)</td>
+      <td>1.95(±1.60)</td>
+      <td>9.75(±2.18)</td>
+      <td>3.1(±2.3)</td>
+      <td>2.87</td>
+      <td>31.5</td>
+      <td>28.6</td>
+    </tr>
+    <tr>
+      <td>Spindle #3</td>
+      <td>4.27(±1.93)</td>
+      <td>2.07(±1.93)</td>
+      <td>7.49(±1.91)</td>
+      <td>4.1(±2.0)</td>
+      <td>2.12</td>
+      <td>54.2</td>
+      <td>41.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ±STD._
 
 We were also interested in measuring the density and spacing of KMTs at the kinetochore, thus allowing subsequent analysis of KMT density along the k-fiber length. Because kinetochores show lower contrast in high-pressure frozen material compared to conventionally prepared samples (McEwen et al., 1998b), we indirectly measured the size of the kinetochores in our spindles by determining the cross-sectional area of the k-fibers (i.e. by encircling the KMTs) close to the outer kinetochore plate. The measured average kinetochore area was 0.10 ± 0.07 µm2 (mean ±STD; Figure 3—figure supplement 2B-C). We then analyzed the density of KMTs at the outer kinetochores by counting the number of KMTs within the determined areas, which was 112 ± 60 KMTs/µm2 (mean ±STD, n=292; Figure 3—figure supplement 2D; Table 3). In addition, we observed an average center-to-center distance between neighboring KMTs of 74 ± 22 nm (mean ±STD, n=292; Figure 3—figure supplement 2E; Table 4). Considering an MT diameter of 25 nm, this corresponds to an average wall-to-wall spacing of about 50 nm between the KMTs at the outer kinetochore. Thus, following our initial visual inspection of k-fibers, the KMTs tend to be highly compacted at the outer kinetochore.
 
+**Table 4.**
+ Quantitative analysis of k-fiber organization.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data set</th>
+      <th>KMT density at the kinetochore [KMT/µm2]*</th>
+      <th>KMT-KMT distance at the kinetochore [nm]*</th>
+      <th>Global tortuosity of KMTs*</th>
+      <th>% of curved KMTs</th>
+      <th>Area of k-fibers [µm2]*</th>
+      <th>% of KMTs in a k-fibers*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spindle #1</td>
+      <td>122(±62)</td>
+      <td>67(±20)</td>
+      <td>1.11(±0.11)</td>
+      <td>39.8</td>
+      <td>0.08(±0.1)</td>
+      <td>64(±27)</td>
+    </tr>
+    <tr>
+      <td>Spindle #2</td>
+      <td>99(±45)</td>
+      <td>78(±23)</td>
+      <td>1.07(±0.07)</td>
+      <td>28.4</td>
+      <td>0.09(±0.11)</td>
+      <td>70(±25)</td>
+    </tr>
+    <tr>
+      <td>Spindle #3</td>
+      <td>117(±72)</td>
+      <td>76(±23)</td>
+      <td>1.13(±0.13)</td>
+      <td>47.1</td>
+      <td>0.12(±0.24)</td>
+      <td>59(±29)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ±STD._
+
 We also measured the length of the KMTs in our reconstructed k-fibers and observed a broad distribution of KMT lengths with an average value of 3.87 ± 1.98 µm (mean ±STD, n=2579; Figure 4A; Figure 4—figure supplement 1A; Table 3). Our analysis revealed the existence of relatively short KMTs in central, intermediate and peripheral k-fibers that were not associated with the spindle poles (Figure 4—figure supplements 2–3; Table 5). Indeed, about 20 ± 4% of the KMTs had lengths less than 2 µm. Our analysis also showed relatively long KMTs (about 39 ± 10%) that were longer than the half spindle length. Some of these long KMTs showed a pronounced curvature at their pole proximal end, thus connecting to the ‘back side’ of the spindle poles (see also Figure 3A, k-fiber #I - #III; Figure 3—videos 1–3).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig4-v3.jpg)
+
+**Figure 4.:** (A) Histogram showing the length distribution of KMTs from all data sets (n=2579). The dashed line indicates the average length of KMTs. (B) Histogram showing the length distribution of non-KMTs (n=14458). The dashed line indicates the average length of non-KMTs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Beeswarm plot showing the length distribution of KMTs in the individual data sets. The average of all data sets is also given (error bars are mean ±STD). (B) Beeswarm plot showing the length distribution of non-KMTs in the individual data sets The average of all data sets is also given (error bars are mean ±STD).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Box plot showing the length distribution of KMTs in individual k-fibers as observed in spindle #1 (n=98). The k-fibers are displayed and color-coded according to their position within the spindle (insert). For each k-fiber, error bars are mean ±STD. (B) KMT length distribution in spindle #2 (n=110). (C) KMT length distribution in spindle #3 (n=90).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Beeswarm plot showing the length distribution of KMTs and the average of all data sets based on the k-fiber position in the spindle. The plots show the mean indicated by black horizontal bars. The statistical significance (p<0.001) was calculated with a Student’s t-test.
+
+**Table 5.**
+ Quantitative analysis of k-fiber positioning in the spindle.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Length of KMTs [µm]*</th>
+      <th>No. of KMTs per kinetochore*</th>
+      <th>No. of KMTs at MT-centrosome interaction area†</th>
+      <th>Mean KMT minus-end distance to poles [µm]*</th>
+      <th>No. of KMTs associated with poles*</th>
+      <th>Global tortuosity of KMTs*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Central</td>
+      <td>3.5(±1.7)</td>
+      <td>8.2(±2.4)</td>
+      <td>162(~48%)</td>
+      <td>2.0(±1.3)</td>
+      <td>4.3(±2.3)</td>
+      <td>1.08(±0.08)</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td>3.6(±1.7)</td>
+      <td>8.6(±2.1)</td>
+      <td>266(~49%)</td>
+      <td>2.1(±1.3)</td>
+      <td>4.6(±1.9)</td>
+      <td>1.11(±0.12)</td>
+    </tr>
+    <tr>
+      <td>Peripheral</td>
+      <td>3.9(±2.0)</td>
+      <td>8.6(±2.4)</td>
+      <td>730(~45%)</td>
+      <td>2.5(±1.6)</td>
+      <td>4.1(±2.0)</td>
+      <td>1.10(±0.10)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ±STD.†Number and percentage of KMTs is shown._
+
 We continued our study by further analyzing the pole proximal ends (from now on called minus ends). As a first step, we annotated each KMT minus end in our spindle reconstructions. The development of appropriate software allowed us then to determine both the distance of the KMT minus ends to the nearest spindle pole and the relative position of the KMT minus ends along the pole-to-kinetochore axis (Figure 5A; Kiewisz and Müller-Reichert, 2021). In addition, we were also interested in the percentage of the KMT minus ends that were directly associated with the spindle poles. Similar to our previously published analysis of spindle morphology in the early C. elegans embryo (Redemann et al., 2017), we defined a MT-centrosome interaction area. For this, we plotted the distribution of all non-KMT minus-end distances to the nearest spindle pole. The distribution peaked ~1 µm from the pole and then fell before plateauing in the spindle bulk. To find the edge of this MT-centrosome interaction area, we fit a Gaussian to the distribution peak and defined the cutoff distance for the edge of the MT-centrosome interaction area as twice the half-width, which was 1.7 µm from the mother centriole. (Figure 5B, gray area). In other words, KMTs with their minus ends positioned at 1.7 µm or less to the center of the nearest mother centriole (i.e. inside this MT-centrosome interaction zone) were defined to be directly associated with a pole, while KMT minus ends positioned farther than this cut-off distance of 1.7 µm were called indirectly associated with the spindle pole. We then measured the distance of each KMT minus end to the nearest mother centriole (Figure 5C; Figure 5—figure supplement 2A). Taking our determined cut-off value into account, we found that only 49% (±15.5%, ±STD, n=3) of the KMT minus ends were positioned within the defined MT-centrosome interaction area. This is in accord with our observation that the average number of KMTs per k-fiber at the spindle pole (4.1 ± 2.0, mean ±STD; Figure 5—figure supplement 3; Table 3) was lower compared to the average number of KMTs per k-fiber at the kinetochore (8.5 ± 2.2, mean ±STD; Figure 3B). All in all, this suggested to us that only half of the KMTs in HeLa cells are directly connected to the spindle pole, while the other half of the KMTs are indirectly connected.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig5-v3.jpg)
+
+**Figure 5.:** (A) Measurement of MT minus-end positioning. A KMT (red line) with its ends (red circles) and a non-KMT (yellow line) with its ends (yellow circles) are shown. The distance of both the KMT and the non-KMT minus ends to the center of the mother centriole was calculated. The relative position of the KMT minus ends along the pole-to-kinetochore axis and the non-KMT minus ends along the pole-to-pole axis was also determined (P1, pole 1; P2, pole 2; K, kinetochore). (B) Determination of the MT-centrosome interaction area. Graph showing the number of non-KMT minus ends plotted against their distance to the pole (i.e. to the center of the mother centriole). The determined area of the interaction of non-KMTs with the centrosome and the half-width of this area is indicated in gray. The border of the MT-centrosome interaction area (right dashed line) was determined by identifying twice the half-width of the distribution peak of the minus-end distances. (C) Histogram showing the distribution of the KMT minus-end distances to the center of the mother centriole (n=2579). The MT-centrosome interaction area as defined in B is indicated by a gray area (dashed line shows the border of this area). (D) Histogram showing the relative position of the KMT minus ends on the pole-to-kinetochore axis (n=2579). The position of the spindle pole (p = 0, dashed line) and the kinetochore (K = 1) is indicated. The approximated MT-centrosome interaction area is indicated in gray. (E) Histogram showing the distribution of the non-KMT minus-end distances to the center of the mother centriole (n=14458). The MT-centrosome interaction area is indicated in gray. (F) Plot showing the relative position of the non-KMT minus ends on the pole-to-pole axis (n=14458). The position of the spindle poles (P1 = 0, P2 = 1). The approximated MT-centrosome interaction area is shown in gray.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Three-dimensional model of the kinetochores visualized in spindle #1. For each kinetochore pair, each kinetochore is assigned to the closest spindle pole (p1, left pole, kinetochores in light red; p2, right pole, kinetochores in dark red). (B) Schematic drawing illustrating the normalization of KMT minus-end positioning (spindle pole positions, P1 and P2 = 0; kinetochore position = 1). End positioning is then determined between positions 0 and 1 for each k-fiber.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Beeswarm plot showing the distribution of KMT minus-end distances to the center of the mother centrioles. The MT-centrosome interaction area is indicated in gray (error bars are mean ±STD). (B) Plot showing the distribution of relative positioning of the KMT minus ends on the pole-to-kinetochore axis (position of the spindle pole = 0; position of the kinetochore = 1; error bars are mean ±STD). (C) Distribution of the distances of the non-KMT minus ends to the center of the mother centriole (error bars are mean ±STD). (D) Distribution of relative positioning of the non-KMT minus ends on the pole-to-kinetochore axis. The approximated MT-centrosome interaction areas (in B and D) are shown in gray.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Plot showing the number of KMT minus ends per k-fiber detected within the MT-centrosome interaction area. The individual data sets and the average numbers for all data sets are given (error bars are mean ±STD).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Plot showing the number of KMTs in each k-fiber associated with the spindle poles for the three positional regions in the mitotic spindle for all data sets. The mean values are indicated. (B) Beeswarm plot showing the distance of KMT minus-ends to the center of the mother centrioles for all KMTs. The mean values are shown by black horizontal lines. The statistical significance (p<0.001) was calculated with a Student’s t-test.
 
 Interestingly, we also observed that the number of KMT minus ends associated with the spindle poles was significantly higher in k-fibers positioned in the center compared to those at the periphery of the mitotic spindle. In addition, the average length of KMTs in central k-fibers and their minus-end distance to the spindle pole were significantly lower compared to those observed in peripherally positioned k-fibers (Figure 5—figure supplement 4; Table 5). This suggested to us that the position of the k-fibers within the spindle affects the ultrastructure of the individual KMTs.
 
@@ -64,19 +383,35 @@ We next investigated the relative position of the KMT minus ends on the pole-to-
 
 For comparison, we also analyzed the length distribution of non-KMTs in the spindles. Non-KMTs had an average length of 2.0 ± 1.7 µm (mean ±STD; n=14458; Figure 4B; Figure 4—figure supplement 1B) showing a high number of very short (<2 µm) and a low number of long MTs (>half spindle length). In addition, 38 ± 9% of the non-KMT minus ends were localized in the defined MT-centrosome interaction zone and the remaining ~60% were located in the bulk of the spindle (Figure 5E; Figure 2—figure supplement 2C; Table 3). In addition, the distribution plot of the relative position of the non-KMT minus ends on the pole-to-pole axis showed two peaks at the spindle poles (Figure 5F; Figure 5—figure supplement 2D). Overall, this indicated to us that the non-KMTs show a very high number of very short MTs that is different from the flatter length distribution of KMTs.
 
-## KMT tortuosity is higher at the spindle poles than at the kinetochores
+### KMT tortuosity is higher at the spindle poles than at the kinetochores
 
 Previous work on the flexibility and the rigidity of MTs indicated that these polymers are able to search the spindle space for a binding partner, bend and continue to grow in a modified direction to avoid obstacles or react to pushing/pulling forces. It was further shown that the flexibility of MTs is dependent on their length (Pampaloni et al., 2006). Therefore, we were interested in whether long KMTs are more curved compared to short KMTs. As a measure, we decided to analyze the tortuosity of individual KMTs in our 3D models. Tortuosity is the ratio of the total length of a curve (the spline length of a given KMT) to the distance between its ends. Straight KMTs, therefore, have a tortuosity of 1, while a quarter circle has a tortuosity of around ~1.1 and a half-circle of around ~1.6 (Figure 6A). Because the tortuosity of KMTs might not be homogeneous throughout the spindle, we aimed to measure both their global and local tortuosity in our 3D reconstructions, that is, the tortuosity of the KMTs along their entire length and also in defined segments of a length of 500 nm along the k-fibers, respectively (Figure 6B–C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig6-v3.jpg)
+
+**Figure 6.:** (A) Schematic illustration of tortuosity (T) as given for a straight line, a quarter of a circle, and a half of a circle. (B) Schematic illustration of global tortuosity (Tg) of KMTs given by the ratio of the spline length (Lx) to the 3D distance between the KMT ends illustrated by gray circles (Ly). (C) Schematic illustration of KMT local tortuosity (Tl) as given by division segments with a length of 500 nm. (D) Three-dimensional model of k-fibers (spindle #1) showing the global tortuosity of KMTs as indicated by color coding (top left corner). (E) Histogram showing the frequency of tortuosity for KMTs (n=2579). The Pearson’s correlation coefficient is given for each reconstructed spindle. The black dashed line indicates the average KMT tortuosity. The percentage ratio of ‘straight’ to ‘curved’ KMTs is also given. (F) Perspective view as shown in D. Straight KMTs (tortuosity of 1.0–1.1; red) and curved KMTs (tortuosity ≥1.1; white) are highlighted. (G) Correlation of global tortuosity and length of KMTs (n=2579). The Pearson’s correlation coefficient is given for each reconstructed spindle. The gray line indicates the local regression calculated by the loess method. (H) Three-dimensional model of k-fibers (from spindle #1) showing the local tortuosity of KMTs as indicated by color-coding. (I) Correlation of the local tortuosity of KMTs with the relative position along the pole (P)-to-kinetochore (K) axis (n=2579). Scale bars, 1 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Histogram showing the number of central KMTs plotted against the global tortuosity (n=338). (B) Histogram showing intermediate KMTs (n=541). (C) Histogram showing peripheral KMTs (n=1700). The mean global tortuosity of each k-fiber position is indicated by a dashed line.
+
 Firstly, we analyzed the global tortuosity of the KMTs. For this, we applied a color code to our 3D models to visualize differences in the curvature of individual KMTs (Figure 6D; Figure 6—videos 1–3). For all data sets, we observed an average value of KMT tortuosity of 1.1 ± 0.1 (mean ±STD, n=2579). We found that 62 ± 8% of the KMTs showed a tortuosity of lower than 1.1 and 38 ± 10% of the KMTs displayed a tortuosity higher than 1.1 (Figure 6E; Table 4). We also observed that straight KMTs (tortuosity <1.1) were predominantly located in the center of the spindle, while curved KMTs (tortuosity >1.1) were located more at peripheral spindle positions (Figure 6F; Figure 6—figure supplement 1, Table 5). Furthermore, the global tortuosity of KMTs was correlated with their length. As expected, short KMTs were straighter, while long KMTs were more curved (R = 0.68; p = 2.2e-16; Figure 6G). In addition, 75 ± 6% of the KMTs with a tortuosity higher than 1.1 were longer than the half-spindle length. Secondly, we also investigated the local tortuosity of the KMTs. For each KMT, we applied the same color code as used for the analysis of global tortuosity (Figure 6H). Then we plotted the tortuosity value for each 500 nm segment against the position on the pole-to-kinetochore axis (Figure 5—figure supplement 1). Our analysis revealed that the tortuosity of KMTs was not uniform along the pole-to-kinetochore axis. Importantly, the local tortuosity of the KMTs was weakly correlated with the relative position of the KMT segments on the pole-to-kinetochore axis. The local tortuosity slowly and constantly increased from the kinetochores towards the spindle poles (R = –0.13; p = 2.2e-16; Figure 6I). Extending previously published knowledge, we concluded that KMTs have a higher tortuosity at the spindle poles compared to the kinetochores.
 
-## K-fibers are broadened at spindle poles
+### K-fibers are broadened at spindle poles
 
 Our tortuosity measurements revealed that individual KMTs in the mitotic spindle are rather curved at positions close to the spindle poles. Therefore, we were also interested in analyzing how the curvature of individual KMTs might shape the overall structure of the k-fibers, particularly at their pole-proximal ends. For this, we determined the cross-section areas of k-fibers along their entire length (Figure 7A; Figure 7—figure supplement 1). In the interest of precision, we analyzed the cross-sections of k-fibers by calculating polygonal areas, allowing a quantitative geometrical analysis without a prior assumption about their shape. Cross-sections of k-fibers showed an average polygonal area of 0.097 ± 0.161 µm2 (mean ±STD, n=292). We then continued by plotting the values for these polygonal areas against the relative position on the pole-to-kinetochore axis (Figure 7B; Table 4). We measured an average polygonal area of 0.034 ± 0.019 µm2 at the kinetochores, 0.149 ± 0.210 µm2 in the middle of the spindles, and 0.092 ± 0.146 µm2 at the spindle poles. Compared to the position at the kinetochore, the average polygonal area of the k-fibers was about fourfold higher in the middle of the spindles and roughly threefold higher at the spindle poles. Moreover, the cross-section polygonal area of the k-fibers showed a higher spread of values at the spindle poles compared to the kinetochores, thus reflecting the observed broadened appearance of the k-fibers at the spindle poles.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig7-v3.jpg)
+
+**Figure 7.:** (A) Schematic illustration of the analysis of polygonal areas as obtained from k-fiber cross-sections. KMTs are shown as lines (red), KMT ends as spheres (light red). Cross-sections of the given k-fiber are shown as blue squares (top). The median position of all KMTs in a cross-section is indicated as a yellow circle (bottom). (B) Distribution of the k-fiber polygonal area along with the relative position on the pole [P]-to-kinetochore [K] axis (n=292). (C) Schematic illustration of the k-fiber density analysis. For each k-fiber, a radius at the kinetochore was estimated by calculating a minimum circle enclosing all KMTs (top). The determined radius was then enlarged by factor 2 to account for k-fiber flexibility. Along with the k-fiber, the number of KMTs enclosed in the selected radius was then measured (bottom). (D) Distribution of the percentage of KMTs enclosed in the k-fiber along with the relative position along the pole [P]-to-kinetochore [K] axis (n=292). For each reconstructed spindle, data sets are presented as polynomial lines showing local regression calculated with the loess method. Average values with standard deviations are shown in gray. The approximated MT-centrosome interaction areas are shown in gray with the position of the poles indicated by dashed lines (B and D).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Selection of cross-sections along a k-fiber (KMTs, red lines; KMT ends, light red spheres) every 500 nm (upper row - blue squares; lower row - blue lines). (B) Assignment of a median position (upper row - yellow circle; lower row, yellow line) for each cross-section and geometric correction of each cross-section based on the k-fiber’s curvature (lower row - yellow short lines). (C) Calculation of the polygonal area (upper row). The polygonal area was calculated using the alpha shape algorithm. For each cross-section, circles with a diameter defined by α (lower row - black lines) were fitted around the 2D projection of KMTs. The polygonal α-shape was created by drawing lines around KMTs that were at the junction of fitted circles (lower row - black dashed lines). (D) Calculation of the polygonal area from the created prism shape. For this, a polygonal area was duplicated and moved in Euclidean space by 1 μm in each dimension to create a prism shape. The polygonal area (A) is given by dividing the prism volume [μm3] by the prism height (hpp = 1 μm).
+
 To further characterize the arrangement of the KMTs in the k-fibers, we also set out to measure the number of the KMTs along the length of the k-fibers (Figure 7C). For each k-fiber, we defined a circle enclosing all KMTs at the kinetochore. We then measured the number of KMTs that were included in this defined k-fiber circle and plotted the percentage of the enclosed KMTs against the relative position along the pole-to-kinetochore axis. We observed a variation in the percentage of enclosed KMTs along the k-fiber length. As defined, the highest percentage of enclosed KMTs was observed at the outer kinetochore. However, at the spindle poles, roughly only 64% of the KMTs were enclosed (Table 4). Thus, the density of KMTs in the k-fibers at the spindle poles was decreased compared to the one observed at the outer kinetochore (Figure 7D). From all these analyses, we concluded that k-fibers display a higher tortuosity and a lower KMT density close to the spindle poles compared to the kinetochore positions, thus leading to a broadened appearance of their pole-proximal ends.
 
-## KMTs primarily associate with non-KMTs at spindle poles
+### KMTs primarily associate with non-KMTs at spindle poles
 
 So far, we had concentrated only on an analysis of KMT morphology and considered these bundled MTs as the ‘core structure’ of the k-fibers. Likely, the observed organization of KMTs in k-fibers is the result of KMTs interacting with other non-KMTs in the spindle, thus contributing to the maturing of k-fibers (Almeida et al., 2021). Therefore, we also aimed to investigate patterns of association of KMTs with the neighboring non-KMTs in our 3D reconstructions. Moreover, we were particularly interested in localizing such KMT/non-KMT associations in the spindles to map the detected positions of MT-MT interaction on the pole-to-kinetochore axis. In general, we considered two types of interactions between MTs. Firstly, we analyzed potential interactions between MT ends with neighboring MT lattices, which could be mediated by MT minus-end associated molecular motors such as dynein (Tan et al., 2018) or kinesin-14 (Molodtsov et al., 2016), by other MT-associated proteins such as HDAC6 (Ustinova et al., 2020), Tau (Bougé and Parmentier, 2016), or by Ɣ-tubulin (Rosselló et al., 2018). Secondly, we considered MT-MT lattice interactions, which might be established by molecular motors such as kinesin-5 (Falnikar et al., 2011) or PRC1 (Mollinari et al., 2002; Polak et al., 2017).
 
@@ -84,19 +419,589 @@ Both types of interactions are also shown here by using our new 3D visualization
 
 We started our analysis by investigating possible KMT minus-end associations with either KMT or non-KMT lattices (Figure 8). For this, we annotated all KMT minus ends in our 3D reconstructions and measured the distance of each minus end to a neighboring MT lattice. We then determined association distances (i.e. 25, 30, 35, 45, 50, 75, and 100 nm) to quantify the number of associations occurring within these given interaction distances (Kellogg et al., 2016; Redwine et al., 2012). From this, we further determined the percentage of all KMT minus ends that were associated with non-KMT lattices according to selected association distances (Figure 8—figure supplement 1; Table 6 and Table 7). As expected, we observed that the number of KMT minus ends associated with adjacent MT lattices increased at larger association distances. Considering 35 nm as an example of a possible interaction distance between two MTs connected by a single dynein motor (Amos, 1989), we observed that only 32.6 ± 5.5% of all KMT minus ends were associated with other MTs (for a visualization of the pattern of association see Figure 8—figure supplements 1–2; Figure 8—video 1). Moreover, all KMT minus ends that were not associated with the spindle poles (i.e. those positioned farther than 1.7 µm away from the centrioles) only 32.8 ± 24.9% showed an association with other MT lattices at a given distance of 35 nm (Figure 8—figure supplement 1). This suggested that for an interaction distance of 35 nm roughly only 30% of the KMT minus ends in k-fibers were associated with the MT network. Further considering larger distances of association between KMT minus ends and neighboring MT lattices, we also observed that not all KMT minus ends were associated with neighboring MTs even at a value of 100 nm (Table 6 and Table 7).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig8-v3.jpg)
+
+**Figure 8.:** (A) Graph showing the number of KMT minus ends associated with KMT lattices within 35 nm of interaction (n=2579). Numbers of KMT minus ends are normalized by the density of surrounding MTs and plotted against the relative position on the pole-to-kinetochore axis (P, pole; K, kinetochore). The approximated MT-centrosome interaction area is shown in gray with the position of the pole indicated by a dashed line. The percentage of KMT associations located in the MT-centrosome interaction area is given. (B) Bar plot showing the normalized number of KMT minus ends associated with non-KMT lattices within 35 nm distance (n=2579). (C) Graph showing the number of KMT lattices associated with other KMT minus ends plotted along the relative position on the pole-to-kinetochore axis and normalized by the spindle density (n=2579). (D) Graph displaying the number of KMT lattices associated with non-KMT minus ends (n=2579). Moving averages with a period of 0.05 along the pole-to-kinetochore axis are shown as black lines.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Bar plot showing the percentage of all KMT minus ends associated with a MT lattice depending on defined distances of interaction (25–100 nm; n=2579; error bars are mean ±STD). (B) Three-dimensional model showing the interaction pattern of all KMT minus ends associated with MTs. The distance of interaction is 35 nm (data obtained from spindle #1). KMT minus ends associated with other KMTs are labeled in red, KMT minus-endend association with non-KMTs is marked in yellow. (C) Bar plot showing the percentage of KMT minus ends not associated with the centrosome interaction area (error bars are mean ±STD; n=1558). The associations are shown for the defined distances of interaction. (D) Three-dimensional model of KMT minus ends associated with MT lattices but not attached to the pole (color coding of the associations as displayed in the B). Scale bars, 1 µm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Visualization of KMTs and non-KMTs obtained from the ASGA 3D-Viewer (https://cfci.shinyapps.io/ASGA_3DViewer/) showing a k-fiber pair from spindle #1 (ASGA k-fiber ID: pole1_08). This 3D model illustrates the association of KMT minus ends with MT lattices. The types of association are shown by color-coding (top image). The distance of interaction is 35 nm. The approximated position of the spindle poles (p1, p2) is indicated. (B) Model of k-fiber pair with ID: pole1_20. (C) Model of k-fiber pair with ID: pole1_23. Scale bars, 1 µm.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig8-figsupp3-v3.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Graph showing the number of KMT minus ends associated with KMT lattices within a distance of interaction of 35 nm (n=2579). The number of KMT minus ends normalized by the spindle density is plotted against the relative position on the pole-to-kinetochore axis (P, pole; K, kinetochore). The approximated MT-centrosome interaction area is shown in gray with a dashed line indicating the position of the pole. The percentage of associations within this interaction area is also given. (B) Graph showing the number of KMT minus ends interacting with non-KMT lattices (n=2579). (C) Bar plot showing the percentage of KMT lattices associated with other KMT minus ends depending on defined interaction distances (error bars are mean ±STD; n=2579). (D) Bar plot showing the percentage of KMT lattices associated with other non-KMT minus ends depending on defined interaction distances (error bars are mean ±STD; n=2579). (E) Plot showing the number of KMT lattices associated with KMT minus ends (n=2579). The number of associations is given for defined distances of interaction (right insert). (F) Plot showing the number of KMT lattices associated with non-KMT minus ends (n=2579).
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig8-figsupp4-v3.jpg)
+
+**Figure 8—figure supplement 4.:** (A) Visualization of KMTs and non-KMTs obtained from the ASGA 3D-Viewer (https://cfci.shinyapps.io/ASGA_3DViewer) showing a k-fiber pair from spindle #1 (ASGA k-fiber ID: pole1_08 / pole2_08). This 3D model illustrates the association of KMT lattices with MT minus ends at an interaction distance of 35 nm. The types of interaction are shown by color-coding (top image). The approximated position of the spindle poles (p1, p2) is indicated. (B) Model of k-fiber pair with ID: pole1_20 / pole2_20. (C) Model of k-fiber pair with ID: pole1_23 / pole2_23. Scale bars, 1 µm.
+
+**Table 6.**
+ Analysis of the association of KMT minus ends with other neighboring KMT lattices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th rowspan="2">Analysis</th>
+      <th colspan="7">Interaction distances [nm]</th>
+    </tr>
+    <tr>
+      <th>25</th>
+      <th>30</th>
+      <th>35</th>
+      <th>45</th>
+      <th>50</th>
+      <th>75</th>
+      <th>100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Spindle #1</td>
+      <td>No. of KMTs</td>
+      <td>37</td>
+      <td>68</td>
+      <td>112</td>
+      <td>204</td>
+      <td>238</td>
+      <td>306</td>
+      <td>330</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>4.9</td>
+      <td>9.1</td>
+      <td>15.0</td>
+      <td>27.3</td>
+      <td>32.0</td>
+      <td>40.9</td>
+      <td>44.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #2</td>
+      <td>No. of KMTs</td>
+      <td>20</td>
+      <td>37</td>
+      <td>68</td>
+      <td>142</td>
+      <td>177</td>
+      <td>266</td>
+      <td>290</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>1.9</td>
+      <td>3.5</td>
+      <td>6.3</td>
+      <td>13.2</td>
+      <td>16.5</td>
+      <td>24.8</td>
+      <td>27.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #3</td>
+      <td>No. of KMTs</td>
+      <td>13</td>
+      <td>27</td>
+      <td>66</td>
+      <td>116</td>
+      <td>135</td>
+      <td>199</td>
+      <td>218</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>1.9</td>
+      <td>4.0</td>
+      <td>9.8</td>
+      <td>17.2</td>
+      <td>20.0</td>
+      <td>29.5</td>
+      <td>32.3</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 7.**
+ Analysis of the association of KMT minus ends with neighboring non-KMT lattices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th rowspan="2">Analysis</th>
+      <th colspan="7">Interaction distances [nm]</th>
+    </tr>
+    <tr>
+      <th>25</th>
+      <th>30</th>
+      <th>35</th>
+      <th>45</th>
+      <th>50</th>
+      <th>75</th>
+      <th>100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Spindle #1</td>
+      <td>No. of KMTs</td>
+      <td>37</td>
+      <td>82</td>
+      <td>132</td>
+      <td>217</td>
+      <td>248</td>
+      <td>353</td>
+      <td>384</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>4.9</td>
+      <td>11.0</td>
+      <td>17.6</td>
+      <td>29.0</td>
+      <td>33.2</td>
+      <td>47.2</td>
+      <td>51.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #2</td>
+      <td>No. of KMTs</td>
+      <td>245</td>
+      <td>313</td>
+      <td>353</td>
+      <td>469</td>
+      <td>525</td>
+      <td>677</td>
+      <td>732</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>22.9</td>
+      <td>29.2</td>
+      <td>33.0</td>
+      <td>43.8</td>
+      <td>49.0</td>
+      <td>63.2</td>
+      <td>68.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #3</td>
+      <td>No. of KMTs</td>
+      <td>28</td>
+      <td>64</td>
+      <td>107</td>
+      <td>198</td>
+      <td>230</td>
+      <td>355</td>
+      <td>410</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>4.2</td>
+      <td>9.5</td>
+      <td>15.9</td>
+      <td>29.4</td>
+      <td>34.1</td>
+      <td>52.7</td>
+      <td>60.8</td>
+    </tr>
+  </tbody>
+</table>
+
 Next, we sought to map the positions of the detected associations of KMT minus ends with either KMT or non-KMT lattices within the reconstructed spindles. We determined the position of such associations in our spindles and then plotted the data against the relative position on the pole-to-kinetochore axis. For this, we normalized the pole-to-kinetochore axis by the MT density at each given position. We first plotted the normalized number of KMT minus-end associations with MT lattices against the relative position on the pole-to-kinetochore axis (Figure 8A; Figure 8—figure supplement 3A). KMT minus ends were distributed along the pole-to-kinetochore axis with a preference for positions at the spindle poles. As an example, for a given association distance of 35 nm, 60.7 ± 9.4% of the total number of associations were observed at the spindle poles. We then also determined the relative position of the KMT minus-end associations with non-KMT lattices (Figure 8B; Figure 8—figure supplement 3B). Similarly, the majority of the associations of KMT minus ends with non-KMT lattices were observed at the spindle poles. For the chosen distance of 35 nm, 44.7 ± 5.2% of these associations were observed at the spindle poles. Thus, the spindle poles appeared as the major sites for interaction of KMT minus ends with neighboring MT lattices.
 
 Vice versa, we also determined the occurrence of either KMT or non-KMT minus ends in the vicinity of KMT lattices (Figure 8; Figure 8—figure supplement 4; Figure 8—video 2). At 35 nm or closer to the KMT lattice, we observed that on average 42 ± 8% of KMTs were associated with either KMT or non-KMT minus ends, with the majority of associations with non-KMT minus ends (Figure 8—figure supplement 3C-D; Table 8 and Table 9). Moreover, we also determined the relative position of these associations on the spindle axis. Again, more than half of the KMT lattices (59.8 ± 6.7%) associated with other MT minus ends were preferentially found at spindle poles (Figure 8C; Figure 8—figure supplement 3E). In contrast, only 39.1 ± 4.6% of non-KMTs associated with other MT minus ends were found at the poles (Figure 8D; Figure 8—figure supplement 3F). Again, this analysis indicated that the interaction of KMTs with other MTs preferentially takes place at the spindle poles regardless of the association distance. Notably, we could observe a peak of association between the KMT lattices and the non-KMT minus ends at a relative position of around 0.3 (Figure 8D), suggesting that the KMT lattices at this position are important for interactions with non-KMTs.
 
+**Table 8.**
+ Analysis of the association of KMT lattices with other neighboring KMT minus ends.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th rowspan="2">Analysis</th>
+      <th colspan="7">Interaction distances [nm]</th>
+    </tr>
+    <tr>
+      <th>25</th>
+      <th>30</th>
+      <th>35</th>
+      <th>45</th>
+      <th>50</th>
+      <th>75</th>
+      <th>100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Spindle #1</td>
+      <td>No. of KMTs</td>
+      <td>39</td>
+      <td>71</td>
+      <td>117</td>
+      <td>210</td>
+      <td>236</td>
+      <td>336</td>
+      <td>403</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>5%</td>
+      <td>10%</td>
+      <td>15%</td>
+      <td>28%</td>
+      <td>31%</td>
+      <td>45%</td>
+      <td>54%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #2</td>
+      <td>No. of KMTs</td>
+      <td>24</td>
+      <td>46</td>
+      <td>86</td>
+      <td>179</td>
+      <td>237</td>
+      <td>401</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>2%</td>
+      <td>4%</td>
+      <td>8%</td>
+      <td>17%</td>
+      <td>22%</td>
+      <td>37%</td>
+      <td>43%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #3</td>
+      <td>No. of KMTs</td>
+      <td>14</td>
+      <td>27</td>
+      <td>61</td>
+      <td>127</td>
+      <td>148</td>
+      <td>227</td>
+      <td>284</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>2%</td>
+      <td>4%</td>
+      <td>9%</td>
+      <td>19%</td>
+      <td>22%</td>
+      <td>34%</td>
+      <td>43%</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 9.**
+ Analysis of the association of KMT lattices with other neighboring non-KMT minus ends.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th rowspan="2">Analysis</th>
+      <th colspan="7">Interaction distances [nm]</th>
+    </tr>
+    <tr>
+      <th>25</th>
+      <th>30</th>
+      <th>35</th>
+      <th>45</th>
+      <th>50</th>
+      <th>75</th>
+      <th>100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Spindle #1</td>
+      <td>No. of KMTs</td>
+      <td>81</td>
+      <td>151</td>
+      <td>223</td>
+      <td>362</td>
+      <td>415</td>
+      <td>534</td>
+      <td>577</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>11%</td>
+      <td>20%</td>
+      <td>30%</td>
+      <td>48%</td>
+      <td>55%</td>
+      <td>71%</td>
+      <td>77%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #2</td>
+      <td>No. of KMTs</td>
+      <td>51</td>
+      <td>100</td>
+      <td>173</td>
+      <td>351</td>
+      <td>433</td>
+      <td>640</td>
+      <td>717</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>5%</td>
+      <td>9%</td>
+      <td>16%</td>
+      <td>33%</td>
+      <td>40%</td>
+      <td>59%</td>
+      <td>67%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #3</td>
+      <td>No. of KMTs</td>
+      <td>34</td>
+      <td>93</td>
+      <td>176</td>
+      <td>301</td>
+      <td>348</td>
+      <td>471</td>
+      <td>507</td>
+    </tr>
+    <tr>
+      <td>% of KMTs</td>
+      <td>5%</td>
+      <td>14%</td>
+      <td>26%</td>
+      <td>44%</td>
+      <td>51%</td>
+      <td>69%</td>
+      <td>75%</td>
+    </tr>
+  </tbody>
+</table>
+
 In addition, we were also interested in mapping the number and the length of MT-MT associations on the pole-to-pole axis in order to recognize specific patterns of interactions within the mitotic spindle. For a pairing length analysis as previously applied (McDonald et al., 1992; Winey et al., 1995), we defined 20 nm as a minimal length of interaction. For each MT, we also counted the number of continuous interaction segments over which they retained this minimal association proximity (Figure 9A). In addition, we also varied the distance between associated MTs by choosing values of 25, 30, 35, 45, and 50 nm. As expected, the peaks in the number of KMTs changed rapidly with an increase in the number and length of associations (Table 9 and Table 10). We then analyzed the association of KMTs with other MTs in the spindle by plotting the number of associations against the relative position on the pole-to-pole axis. We also normalized the number of associations by the MT density. With an increase in the considered association distance between MTs, we observed an increase in the number of associations at the spindle poles and a drastic decline in the number of these associations at positions in the middle of the spindle (Figure 9B; Figure 9—figure supplement 1A; Figure 9—video 1). We then also analyzed the association of non-KMTs with other MTs. In contrast to the previous analysis, by increasing the association distances we detected a considerable increase in the number of interactions near the spindle midplane. (Figure 9C; Figure 9—figure supplement 1B; Figure 9—video 2). This peak is of functional importance, most likely representing the region, where kinesin motors generate pushing forces (Shimamoto et al., 2015). We concluded from all these analyses that KMTs and non-KMTs differ in their spatial pattern of MT-MT association. KMTs strongly interact with neighboring MTs at the spindle poles, while non-KMTs show a broad region of MT-MT interaction within the middle of the spindle, potentially forming interpolar bundles (Mastronarde et al., 1993).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig9-v3.jpg)
+
+**Figure 9.:** (A) Schematic illustration showing the mapping of the number of MT-MT associations on the pole-to-pole axis (P1, position = 0; P2, position = 1). The number of associations is measured in defined segments (20 nm). KMTs are illustrated in red, non-KMTs in yellow, and areas of MT-MT association in gray. (B) Graph showing the number of KMTs associated with other MTs plotted against the relative position on the pole-to-pole axis. KMT number is normalized by the MT density. The defined association distances for KMTs with other MTs in the spindle are given in the insert. (C) Number of non-KMTs associated with neighboring MTs plotted against the relative position on the pole-to-pole axis.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Visualization of KMTs and non-KMTs obtained from the ASGA 3D-Viewer (https://cfci.shinyapps.io/ASGA_3DViewer/) showing a k-fiber pair from spindle #1 (ASGA k-fiber ID: pole1_08). This 3D model illustrates the association of KMT lattices with other MT at an interaction distance of 35 nm. The types of association are shown by color-coding (bottom). Association areas are shown as yellow segments on each MT. The approximated position of the spindle poles (p1, p2) is indicated. The k-fiber pair is shown in a Z/Y (large image) and an X/Y view (insert). (B) Model of k-fiber pair with ID: pole1_20. (C) Model of k-fiber pair with ID: pole1_23. Scale bars, 1 µm.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/75459/elife-75459-fig9-figsupp2-v3.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Frequency of the number of associations of KMTs with other MTs in the spindle (n=2579). Plots are shown for five different interaction distances (insert). (B) Frequency of the number of associations of non-KMTs with other MTs (n=16256). (C) Frequency of the average length of KMT-MT associations per KMT (n=2579). The correlation of the average length of associations with the average number of associations is also given (insert). (D) Frequency of the average length of non-KMT-MT associations per non-KMT (n=16256). (E) Three-dimensional model of all KMTs showing regions of KMT-MT association within 35 nm of interaction or closer (n=2579). Each KMT segment is color-coded according to the number of associations (insert). (F) Three-dimensional model of all non-KMTs showing regions of MT-MT association within 35 nm of interaction or closer (n=16256). White dashed lines indicate the position of the spindle poles (E and F). Scale bars, 1 µm.
+
+**Table 10.**
+ Average number of associations of KMTs and non-KMTs with MT lattices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th rowspan="2">MT type</th>
+      <th colspan="5">Interaction distances [nm]</th>
+    </tr>
+    <tr>
+      <th>25</th>
+      <th>30</th>
+      <th>35</th>
+      <th>45</th>
+      <th>50</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Spindle #1*</td>
+      <td>KMTs</td>
+      <td>4.8(±1.5)</td>
+      <td>8.6(±2.5)</td>
+      <td>12.4(±3.4)</td>
+      <td>18.8(±4.9)</td>
+      <td>1.3(±5.5)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>4.4(±1.5)</td>
+      <td>7.0(±2.6)</td>
+      <td>9.6(±3.7)</td>
+      <td>13.0(±5.4)</td>
+      <td>16.2(±6.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #2*</td>
+      <td>KMTs</td>
+      <td>4.2(±1.3)</td>
+      <td>5.8(±1.8)</td>
+      <td>8.0(±2.6)</td>
+      <td>13.3(±4.1)</td>
+      <td>16.0(±4.8)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>3.2(±0.9)</td>
+      <td>4.0(±1.3)</td>
+      <td>5.2(±1.8)</td>
+      <td>8.2(±3.1)</td>
+      <td>9.8(±3.7)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #3*</td>
+      <td>KMTs</td>
+      <td>4.2(±1.2)</td>
+      <td>8.0(±2.3)</td>
+      <td>12.4(±3.4)</td>
+      <td>18.6(±4.8)</td>
+      <td>21.2(±5.4)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>3.6(±1.2)</td>
+      <td>5.2(±2.3)</td>
+      <td>8.0(±3.3)</td>
+      <td>11.6(±4.7)</td>
+      <td>13.2(±5.3)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">All spindles*</td>
+      <td>KMTs</td>
+      <td>4.4(±1.3)</td>
+      <td>7.4(±2.3)</td>
+      <td>10.6(±3.2)</td>
+      <td>16.4(±4.7)</td>
+      <td>19.0(±5.3)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>3.6(±1.2)</td>
+      <td>5.4(±2.2)</td>
+      <td>7.4(±3.1)</td>
+      <td>10.8(±4.5)</td>
+      <td>12.4(±5.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ±STD._
+
 Finally, we were interested in how the distribution patterns of MT-MT associations change in relation to the position in the spindle. With our high-resolution 3D data sets covering all MTs in the spindle, we decided to investigate the number and the length of associations for both KMTs and non-KMTs as a function of the distance between MTs. Firstly, we analyzed the association of KMTs with any MT in the spindle (Figure 9—figure supplement 2A-D). As expected, with an increase in the considered distance between MTs, KMTs showed an increase in the number and also in the average length of interactions (Table 10 and Table 11). For a given MT-MT distance of 35 nm, each KMT associates on average with 10.6 ± 3.2 (mean ±STD, n=2579) other MTs in the spindle with an average association length of 145 ± 186 nm (±STD, n=2579). Secondly, we also analyzed the association of non-KMTs with any MT in the spindle. Non-KMTs showed a similar pattern of increase in the number and length of associations with increasing distances between individual MTs. For 35 nm, each non-KMT associates on average with 7.4 ± 3.1 (mean ±STD, n=16256) other MTs in the spindle with an average association length of 103±118 nm (mean ±STD, n=16256). With an increase in the distance between MTs, we observed that KMTs tend to show a higher number and a higher average length of associations compared to non-KMTs. Importantly, these results were consistent for all selected association distances (Figure 9—figure supplement 2E-F).
+
+**Table 11.**
+ Average length of associations of KMTs and non-KMTs with MT lattices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th rowspan="2">MT type</th>
+      <th colspan="5">Interaction distances [nm]</th>
+    </tr>
+    <tr>
+      <th>25</th>
+      <th>30</th>
+      <th>35</th>
+      <th>45</th>
+      <th>50</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Spindle #*</td>
+      <td>KMTs</td>
+      <td>81.3(±88.8)</td>
+      <td>119.7(±151.1)</td>
+      <td>163.9(±207.5)</td>
+      <td>241.3(±301.9)</td>
+      <td>271.0(±335.9)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>58.3(±54.1)</td>
+      <td>78.3(±79.9)</td>
+      <td>107.7(±116.9)</td>
+      <td>165.1(±195.1)</td>
+      <td>187.9(±227.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #2*</td>
+      <td>KMTs</td>
+      <td>69.5(±69.9)</td>
+      <td>93.2(±107.0)</td>
+      <td>124.3(±146.0)</td>
+      <td>207.8(±252.3)</td>
+      <td>252.2(±314,9)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>59.2(±53.2)</td>
+      <td>73.2(±71.9)</td>
+      <td>92.3(±97.3)</td>
+      <td>145.8(±170.5)</td>
+      <td>175.1(±213.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spindle #3*</td>
+      <td>KMTs</td>
+      <td>66.1(±63.4)</td>
+      <td>97.3(±117.8)</td>
+      <td>143.2(±191.7)</td>
+      <td>231.3(±321.2)</td>
+      <td>263.4(±362.2)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>54.3(±51.7)</td>
+      <td>74.5(±86.4)</td>
+      <td>104.6(±133.7)</td>
+      <td>165.6(±218.7)</td>
+      <td>191.3(±252.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">All spindles*</td>
+      <td>KMTs</td>
+      <td>73.0(±76.2)</td>
+      <td>104.6(±129.2)</td>
+      <td>145.1(±186.0)</td>
+      <td>225.6(±292.3)</td>
+      <td>261.9(±336.8)</td>
+    </tr>
+    <tr>
+      <td>Non-KMTs</td>
+      <td>57.2(±53.1)</td>
+      <td>75.4(±80.5)</td>
+      <td>102.2(±118.9)</td>
+      <td>159.1(±197.2)</td>
+      <td>184.9(±232.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ±STD._
 
 ## Discussion
 
 Large-scale reconstruction by serial-section electron tomography (Fabig et al., 2020; Redemann et al., 2018; Redemann et al., 2017) allowed us to quantitatively analyze KMT organization in individual k-fibers and in the context of whole mitotic spindles.
 
-## Methodological considerations
+### Methodological considerations
 
 For generating 3D reconstructions of spindles, we applied electron microscopy of plastic sections. The use of plastic sections suffers from the fact that samples undergo a collapse in the electron beam during imaging, and this is obvious by a reduction in the section thickness (Luther et al., 1988; McEwen and Marko, 1998; O’Toole et al., 2020). By expanding the complete stack of serial tomograms (Figure 2—figure supplement 2), it is possible to correct this loss in Z, and we did so for our three data sets covering whole metaphase spindles in HeLa cells.
 
@@ -106,7 +1011,7 @@ In electron microscopic images, centrosomes or spindle poles are visible by pair
 
 In this parallel study, we supplemented our electron tomography data on the KMT length distribution with light microscopic data. Essentially, our 3D reconstructions show a distribution of KMT length in metaphase that is strikingly similar to the distribution plot of KMT length as obtained by biophysical modeling in combination with light microscopy (see Figure 8B-D in Conway et al., 2022). All this shows that light and electron microscopy produces truly complementary data, although completely different methods of sample preparation and data analysis have to be applied.
 
-## KMT organization
+### KMT organization
 
 Counting the total number of KMTs and non-KMTs in our spindles, we show that only ~14% of all MTs in the reconstructed spindles were KMTs. However, this percentage in the total number of all MTs corresponds to ~25% of the tubulin mass as measured in parallel by light microscopy (Conway et al., 2022). Comparing the average length of KMTs and non-KMTs, we also find that KMTs are on average twice as long as non-KMT. Thus, a higher value in the average length of KMTs versus non-KMTs contributes to a higher percentage in the tubulin mass of KMTs compared to all other MTs in the spindle.
 
@@ -130,91 +1035,321 @@ Here, we consider the bundled KMTs as the ‘core’ of the k-fibers (Figure 10C
 
 While both KMTs and non-KMTs show a clear correlation in the number and the average length of associations (Figure 9—figure supplement 2), both MT populations show differences in the position of these associations. In contrast to non-KMTs, KMTs show a high tendency to associate with non-KMTs at the spindle poles (Figure 8F–G; Figure 9C–D). This tendency to interact at spindle poles is independent of the chosen distance of MT interaction. In accord with the previously discussed broadening of the k-fibers at their pole-facing end, our results suggest that KMTs preferably associate with other MTs at the spindle poles. In contrast, non-KMTs show a flat pattern of interaction with other MTs at association distances of 25 and 35 nm. Moreover, an increase in the association distance from 35 nm to 50 nm, shows a higher tendency of non-KMTs to associate with MTs in the center of the spindle, very likely related to the organization of interpolar MTs in the center of the spindle (Figure 8—figure supplement 1F; Kajtez et al., 2016; Mastronarde et al., 1993; Vukušić et al., 2017). In general, it would be interesting to analyze the organization of these interpolar MTs, the structure of the KMTs in the k-fibers, and also the recognized patterns of MT-MT interaction during other stages of mitosis, for instance at anaphase. Patterns of the interaction of KMTs with non-KMTs might be more obvious during the segregation of the chromosomes.
 
-## Implications for models on spindle organization
+### Implications for models on spindle organization
 
 As previously noted, we have combined our 3D reconstructions with additional live-cell imaging and biophysical modeling in a parallel publication (Conway et al., 2022). Combining data on the length and the position of KMT minus ends in spindles (as obtained here by electron microscopy), and the turnover and movement of tubulin in KMTs as generated by light microscopy, a model was proposed in which KMTs predominantly nucleate de novo at kinetochores, with KMTs growing towards the spindle poles. A major outcome of this parallel study is that KMTs in spindles grow along the same trajectories as non-KMTs and that both the KMTs and non-KMTs are well aligned throughout the spindle, leading to the assumption that spindles can be considered as active liquid crystals (Brugués and Needleman, 2014; Oriola et al., 2020). This might apply to both centrosomal mitotic as well as acentrosomal female meiotic spindles (Redemann et al., 2018; Redemann et al., 2017). Such liquid crystals can be characterized by the degree of local MT alignment, expressed by the nematic order parameter. Interestingly, the analyzed spindles show a high nematic order parameter (S = 0.81 ± 0.02) near the chromosomes, whereas the nematic order parameter (S = 0.54 ± 0.02) is lower at the spindle poles (Conway et al., 2022). Along this line, KMTs in our electron tomography study are well aligned in the middle of the spindle, while the order of the KMTs in the k-fibers is progressively lost at positions closer to the spindle poles. While KMTs are growing out from the kinetochores towards the centrosomes, the observed broadening of the k-fibers at the spindle poles might be a direct consequence of a decrease in the internal structural organization of the spindle trajectories (i.e. of the surrounding non-KMTs). In the future, it will be important to analyze k-fibers in other fully 3D-reconstructed mammalian spindles to advance the developed model on KMT outgrowth in the context of such well-defined trajectories.
 
 ## Materials and methods
 
-## Cell line
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, background (HeLa, Kyoto)</td>
+      <td>Gerlich Lab</td>
+      <td>IMBA, Vienna, Austria</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEMBoulder Laboratory for3-Dimensional Electron Microscopy of cellsColorado, USA</td>
+      <td>https://bio3d.colorado.edu/Mastronarde, 2003</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMODBoulder Laboratory for3-Dimensional Electron Microscopy of cellsColorado, USA</td>
+      <td>http://bio3d.colorado.edu/Kremer et al., 1996</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AmiraThermo Fisher Scientific, USA</td>
+      <td>https://www.zib.de/software/amiraStalling et al., 2005</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASGARobert Kiewisz /Müller - Reichert LabDresden, Germany</td>
+      <td>https://github.com/RRobert92/Kiewisz and Müller-Reichert, 2021</td>
+      <td>-</td>
+      <td>https://kiewisz.shinyapps.io/ASGA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASGA - 3D ViewerRobert Kiewisz /Müller - Reichert LabDresden, Germany</td>
+      <td>https://github.com/RRobert92/Kiewisz and Müller-Reichert, 2022</td>
+      <td>-</td>
+      <td>https://cfci.shinyapps.io/ASGA_3DViewer/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell line
 
 For all experiments, we have used a HeLa Kyoto cell line obtained from Dr. Daniel Gerlich (IMBA, Vienna), which was given to the Gerlich lab by S. Narumiya (Kyoto, Japan; RRID: CVCL_1922) and validated using the Multiplex Human Cell Line Authentication test (MCA). Furthermore, the HeLa Kyoto cell line was checked for mycoplasma with a PCR test kit. This cell line was not on the list of commonly misidentified cell lines as maintained by the International Cell Line Authentication Committee.
 
-## Cultivation of cells
+### Cultivation of cells
 
 HeLa cells (Guizetti et al., 2011) were grown in Dulbecco’s Modified Eagle’s Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 100 units/ml of penicillin/streptomycin (Pen/Strep). Flasks were placed in a humidified incubator at 37°C with a supply of 5% CO2. For electron microscopy, cells in mitosis were enriched by applying the shake-off technique (Kiewisz et al., 2021). Flasks with cell confluency of 60–80% were shaken against the laboratory bench. The medium with detached cells was then collected, centrifuged at 1200 rpm for 3 min at room temperature, and resuspended in 1 ml of pre-warmed DMEM medium.
 
-## Electron tomography
+### Electron tomography
 
-## Specimen preparation for electron microscopy
+#### Specimen preparation for electron microscopy
 
 Cultures enriched in mitotic HeLa cells were further processed for electron microscopy essentially as described (Guizetti et al., 2011; Kiewisz et al., 2021). Briefly, sapphire discs with a diameter of 6 mm were cleaned in Piranha solution (1:1 H2SO4 and H2O2, v/v), coated with poly-L-lysine (0.1% in ddH2O, w/v), and dried for 2 hrs at 60°C. Furthermore, the discs were coated with fibronectin (1:10 dilution in 1 x PBS, v/v) for 2 hr and stored in a humidified incubator until further used. The sapphire discs were then placed into custom-designed 3D-printed incubation chambers (Kiewisz et al., 2021). Subsequently, cells were seeded on the coated sapphire discs and incubated for 10 min in a humidified incubator at 37°C supplied with 5% CO2. This allowed the mitotic cells to re-attach to the surface of the coated sapphire discs and continue to divide.
 
-## High-pressure freezing and freeze substitution
+#### High-pressure freezing and freeze substitution
 
 Cells were cryo-immobilized using an EM ICE high-pressure freezer (Leica Microsystems, Austria). For each run of freezing, a type-A aluminum carrier (Wohlwend, Switzerland) with the 100 µm-cavity facing up was placed in the specimen loading device of the EM ICE. The cavity of the type-A carrier was filled with 5 µl of DMEM containing 10% BSA. The carrier was then immediately closed by placing a 6 mm-sapphire disc with attached cells facing down on top of the type-A carrier. Finally, a spacer ring was mounted on top of the closed carrier, and freezing was started. Samples were frozen under high pressure (~2000 bar) with a cooling rate of ~20000°C/s (Reipert et al., 2004). Frozen samples were then opened under liquid nitrogen and transferred to cryo-vials filled with anhydrous acetone containing 1% (w/v) osmium tetroxide (EMS, USA) and 0.1% (w/v) uranyl acetate (Polysciences, USA). Freeze substitution was performed in either a Leica AFS or a Lecia AFS II (Leica Microsystems, Austria). Samples were kept at –90°C for 1 hr, warmed up to –30°C with increments of 5°C/hr, kept for 5 hrs at –30°C, and then warmed up to 0°C (increments of 5°C/hr). Finally, samples were allowed to warm up to room temperature. After freeze substitution, samples were washed three times with pure anhydrous acetone and infiltrated with Epon/Araldite (EMS, USA) using increasing concentrations of resin (resin:acetone: 1:3, 1:1, 3:1, then pure resin) for 1 hr each step at room temperature (Müller-Reichert et al., 2003). Samples were infiltrated with pure resin overnight and then embedded by using commercial flow-through chambers (Leica Microsystems, Austria) designed for sapphire discs of a diameter of 6 mm. Samples were polymerized at 60°C for 36 hr.
 
-## Pre-selection of staged cells
+#### Pre-selection of staged cells
 
 To select cells in metaphase, resin-embedded samples were pre-inspected using an Axiolab RE upright brightfield microscope (Zeiss, Germany) with a 5 x and a 40 x objective lens (Zeiss, Germany). Selected cells in metaphase were sectioned using an EM UC6 ultramicrotome (Leica Microsystems, Austria). Ribbons of semi-thick (~300 nm) serial sections were collected on Formvar-coated copper slot grids, post-stained with 2% (w/v) uranyl acetate in 70% (v/v) methanol, followed by 0.4% (w/v) lead citrate (Science Services, USA) in double-distilled water. In addition, 20 nm-colloidal gold (British Biocell International, UK) was attached to the serial sections, serving as fiducial markers for subsequent electron tomography. The selected cells were then pre-inspected at low magnification (~2900 x) using either an EM906 (Zeiss, Germany) or a TECNAI T12 Biotwin (Thermo Fisher Scientific, USA) transmission electron microscope operated at either 80 or 120 kV, respectively.
 
-## Acquisition and calculation of tomograms
+#### Acquisition and calculation of tomograms
 
 Serial sections of the selected cells were then transferred to a TECNAI F30 transmission electron microscope (Thermo Fisher Scientific, USA) operated at 300 kV and equipped with a US1000 CCD camera (Gatan, USA). Using a dual-axis specimen holder (Type 2040, Fishione, USA), tilt series were acquired from –65° to +65° with 1° increments at a magnification of 4700 x and a final pixel size of 2.32 nm applying the SerialEM software package (Mastronarde, 2005; Mastronarde, 2003). For double-tilt electron tomography, the grids were rotated for 90 degrees and the second tilt series were acquired using identical microscope settings (Mastronarde, 1997). The tomographic A- and B-stacks were combined using IMOD (Kremer et al., 1996; Mastronarde and Held, 2017). For each spindle reconstruction, montages of 2×3 frames were collected. Depending on the orientation of the spindles during the sectioning process, between 22 and 35 serial sections were used to fully reconstruct the volumes of the three selected spindles (Table 9).
 
-## Segmentation of MTs and stitching of serial tomograms
+#### Segmentation of MTs and stitching of serial tomograms
 
 As previously published (Redemann et al., 2014; Weber et al., 2012), MTs were automatically segmented using the ZIB Amira (Zuse Institute Berlin, Germany) software package (Stalling et al., 2005). After manual correction of MT segmentation, the serial tomograms of each recorded cell were stitched using the segmented MTs as alignment markers (Lindow et al., 2021) Following this pipeline of data acquisition and 3D reconstruction, three complete models of HeLa cells in metaphase were obtained (Table 9). As also done in our previous study on mitosis in C. elegans (Redemann et al., 2017), we discarded MTs with one endpoint found within 100 nm from the border of a reconstructed tomogram. With high probability, these MTs were leaving the tomographic volume. These discarded MTs account for <1% of all traced MTs in all datasets. Therefore, we do not expect a relevant error in this analysis.
 
-## Z-correction of stacked tomograms
+#### Z-correction of stacked tomograms
 
 Each stack of serial tomograms was expanded in Z to correct for a sample collapse during data acquisition (McEwen and Marko, 1998). We corrected this shrinkage by applying a Z-factor to the stacked tomograms (Figure 2—figure supplement 2; O’Toole et al., 2020). Taking the microtome setting of 300 nm, we multiplied this value by the number of serial sections. For each spindle, we also determined the thickness of each serial tomogram and then calculated the total thickness of the reconstruction. The Z-factor was then determined by dividing the actual thickness of each stack of tomograms by the total thickness as determined by the microtome setting. Such calculated Z-factors (1.3 for spindle #1, Figure 2B, C and F; 1.4 for spindle #2, Figure 2D and G; and 1.42 for spindle #3, Figure 2E and H) were then applied to our full spindle reconstructions. All quantitative data in this publication are given for the Z-expanded spindles. For comparison, values for the non-expanded spindles are also given in Table 12 and Table 13.
 
-## Software packages
+**Table 12.**
+ Quantification of KMT ultrastructure before and after application of Z-expansion to the 3D models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th colspan="2">Length of KMTs [µm]*</th>
+      <th colspan="2">Length of non- KMTs [µm]*</th>
+      <th colspan="2">No. of KMTs per kinetochore*</th>
+      <th colspan="2">No. of KMTs in the MT-centrosome interaction area*</th>
+      <th colspan="2">Mean KMT minus-end distance to poles [µm]</th>
+      <th colspan="2">No. of KMTs associated with poles [%]</th>
+      <th colspan="2">No. of non-KMTs associated with poles [%]</th>
+    </tr>
+    <tr>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spindle #1</td>
+      <td>3.23(±1.49)</td>
+      <td>3.59(±1.57)</td>
+      <td>2.03(±1.6)</td>
+      <td>2.13(±1.67)</td>
+      <td>8.04(±1.86)</td>
+      <td>8.04(±1.86)</td>
+      <td>4.1(±1.8)</td>
+      <td>5.0(±1.8)</td>
+      <td>1.16</td>
+      <td>1.72</td>
+      <td>62.2</td>
+      <td>61.2</td>
+      <td>44.5</td>
+      <td>44.3</td>
+    </tr>
+    <tr>
+      <td>Spindle #2</td>
+      <td>3.69(±1.87)</td>
+      <td>3.82(±1.97)</td>
+      <td>1.85(±1.55)</td>
+      <td>1.95(±1.60)</td>
+      <td>9.75(±2.18)</td>
+      <td>9.75(±2.18)</td>
+      <td>2.4(±2.0)</td>
+      <td>3.1(±2.3)</td>
+      <td>2.47</td>
+      <td>2.87</td>
+      <td>53.6</td>
+      <td>31.5</td>
+      <td>28.8</td>
+      <td>28.6</td>
+    </tr>
+    <tr>
+      <td>Spindle #3</td>
+      <td>4.03(±1.79)</td>
+      <td>4.27(±1.93)</td>
+      <td>1.91(±1.80)</td>
+      <td>2.07(±1.93)</td>
+      <td>7.49(±1.91)</td>
+      <td>7.49(±1.91)</td>
+      <td>3.4(±1.8)</td>
+      <td>4.1(±2.0)</td>
+      <td>1.35</td>
+      <td>2.12</td>
+      <td>62.0</td>
+      <td>54.2</td>
+      <td>42.3</td>
+      <td>41.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ±STD._
+
+**Table 13.**
+ Quantification of k-fiber organization before and after application of Z-expansion to the 3D models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th colspan="2">Density of KMTs at the kinetochore [KMT/µm2]*</th>
+      <th colspan="2">KMT-KMT distance at the kinetochore [nm]*</th>
+      <th colspan="2">Global tortuosity of KMTs*</th>
+      <th colspan="2">% of curved KMTs*</th>
+      <th colspan="2">Area of k-fibers [µm2]*</th>
+      <th colspan="2">% of KMTs in a k-fibers*</th>
+    </tr>
+    <tr>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+      <th>Before</th>
+      <th>After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spindle #1</td>
+      <td>151(±74)</td>
+      <td>122(±62)</td>
+      <td>61(±11)</td>
+      <td>67(±20)</td>
+      <td>1.09(±0.10)</td>
+      <td>1.11(±0.11)</td>
+      <td>36.1</td>
+      <td>39.8</td>
+      <td>0.063(±0.09)</td>
+      <td>0.08(±0.1)</td>
+      <td>34(±27)</td>
+      <td>64(±27)</td>
+    </tr>
+    <tr>
+      <td>Spindle #2</td>
+      <td>137(±68)</td>
+      <td>99(±45)</td>
+      <td>65(±12)</td>
+      <td>78(±23)</td>
+      <td>1.06(±0.06)</td>
+      <td>1.07(±0.07)</td>
+      <td>21.4</td>
+      <td>28.4</td>
+      <td>0.068(±0.10)</td>
+      <td>0.09(±0.11)</td>
+      <td>70(±25)</td>
+      <td>70(±25)</td>
+    </tr>
+    <tr>
+      <td>Spindle #3</td>
+      <td>175(±123)</td>
+      <td>117(±72)</td>
+      <td>66(±12)</td>
+      <td>76(±23)</td>
+      <td>1.11(±0.11)</td>
+      <td>1.13(±0.13)</td>
+      <td>39.5</td>
+      <td>47.1</td>
+      <td>0.080(±0.15)</td>
+      <td>0.12(±0.24)</td>
+      <td>59(±39)</td>
+      <td>59(±29)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers are given as mean ±STD._
+
+#### Software packages
 
 We used the ZIB extension of the Amira software (Zuse Institute Berlin, Germany) for further quantitative analyses (Stalling et al., 2005). In addition, an automatic spatial graph analysis (ASGA) software tool was created for the quantification of KMT length and minus-end distribution (Kiewisz and Müller-Reichert, 2021). The ASGA software tool was also used to quantify the position of each k-fiber in the mitotic spindles and determine the tortuosity, the cross-section area, the shape and the density of KMTs in the k-fibers and the MT-MT interactions.
 
-## Staging of spindles
+#### Staging of spindles
 
 For staging of the three reconstructed metaphase spindles, we determined the inter-kinetochore distance for each k-fiber pair. More precisely, we analyzed the distance between the paired outer kinetochores. For this, the closest neighboring sister kinetochores were determined. The center of each kinetochore was then defined as a median position of all KMT plus ends associated with each selected kinetochore, and the inter-kinetochore distance was then calculated as the 3D distance between the defined median centers of each kinetochore pair. For each mitotic spindle, the inter-kinetochore distance is given as the mean value (±STD). As an additional criterion for mitotic staging, the pole-to-pole distances were measured. For this, we analyzed the 3D distance between the centers of the manually segmented mother centrioles in each data set. This read-out was used to determine the spindle size at metaphase.
 
-## Classification of MTs
+#### Classification of MTs
 
 MTs with their putative plus end associated with the chromosomes were defined as KMTs (Figure 2—figure supplement 2). Characteristically, these KMTs showed a parallel arrangement at the site of attachment to the chromosomes. Unfortunately, identification of individual kinetochores in our electron tomograms was hindered by the fact that prominent single and electron-dense KMT attachment sites, as described previously for conventionally fixed cells (McEwen et al., 1998b), were not always clearly visible after cryo-fixation by high-pressure freezing. All other MTs in our 3D reconstructions were classified as non-KMTs.
 
-## MT-centrosome interaction area
+#### MT-centrosome interaction area
 
 For each non-KMT, the end closest to the nearest mother centriole was defined as the minus end. The absolute distance of each putative non-KMT minus end to the nearest mother centriole was measured in 3D. The number of the non-KMT minus ends was then plotted against their distance to the pole. We then fit a Gaussian distribution to the non-KMT minus-end density. We also defined the peak of the Gaussian distribution to determine its half-width. The border of spindle poles, termed here the border of the MT-centrosome interaction area, was defined as twice the half-width, which was 1.7 µm from the centrosome.
 
-## Position of MT minus ends
+#### Position of MT minus ends
 
 To analyze the position of KMT and non-KMT minus ends in the metaphase spindles, two measurements were performed. Firstly, the 3D distance between the nearest mother centriole and the KMT and the non-KMT minus ends was determined. Secondly, the relative position of these ends on the pole-to-kinetochore and the pole-to-pole axis was determined. For each KMT minus end, the relative position is given as the normalized position between the mother centriole (position = 0) and the kinetochore (position = 1; Figure 5—figure supplement 1). For each non-KMTs minus end, the relative position is given as the normalized position between two spindle poles (pole1 = 0, and pole2 = 1; Figure 5A). The distribution of the relative positions of KMT and non-KMT minus ends (mean ±STD) is given for each data set. The number and percentage of KMT and non-KMT ends not associated with the spindle pole were defined as minus ends detected farther than the calculated MT-centrosome interaction area. To visualize an approximated MT-centrosome interaction area on both the pole-to-kinetochore and the pole-to-pole axis, we defined the relative position of the average border of this interaction area. The average border of this interaction area was defined as the average relative position of all KMTs and ranged from –0.2 to 0.2.
 
-## Length distribution of MTs
+#### Length distribution of MTs
 
 The full length of each reconstructed KMT and non-KMT was measured, and the average (±STD) is given for each data set. We also analyzed the percentage of short versus long KMTs. For each data set, short KMTs were defined as those shorter than 1.7 µm in length. This threshold was chosen based on the MT-centrosome interaction area. Long KMTs were identified as KMTs longer than the half-spindle length for each given data set.
 
-## Defining kinetochore position
+#### Defining kinetochore position
 
 To determine the position of each k-fiber in the mitotic spindle, a position model was created that is based on the location of each kinetochore on the metaphase plate. For this, the kinetochores of each spindle were projected in 2D space on the X/Z axis and an ellipse with a semi-major (called a-axis) and a semi-minor axis (called b-axis) was fitted onto all projected kinetochores. The fitted ellipse was then divided into three regions ranging from 0 to 50% (central region), 50 to 75% (intermediate region), and 75 to 100% (peripheral region). Kinetochores with associated k-fibers were then assigned to these three regions.
 
-## Global tortuosity of KMTs
+#### Global tortuosity of KMTs
 
 For the analysis of global KMT tortuosity, the ratio of the KMT spline length and the 3D distance between the plus and the minus end for each KMT was measured. The distribution of KMT tortuosity (mean ±STD) is given. In addition, the correlation of the tortuosity of KMTs with their length is given as a fitted polynomial line calculated as a local polynomial regression by the locally estimated scatterplot smoothing ‘loess’ method. A confidence interval for the created polynomial line was calculated with the t-based approximation, which is defined as the overall uncertainty of how the fitted polynomial line fits the population of all data points. Local polynomial regressions and confidence intervals for all data sets were calculated using the stat 4.0.3 R library (R Development Core Team, 2021).
 
-## Local tortuosity of KMTs
+#### Local tortuosity of KMTs
 
 For the calculation of the local tortuosity, each KMT was subsampled with segments of a length of 500 nm. Both the tortuosity and the relative position along the pole-to-kinetochore axis were measured for each segment. In addition, the correlation of local KMT tortuosity against the relative position is given. Local polynomial regressions and confidence intervals for all data sets were calculated using the stat 4.0.3 R library (R Development Core Team, 2021).
 
-## The polygonal cross-section area of k-fibers
+#### The polygonal cross-section area of k-fibers
 
 The cross-section area was calculated every 500 nm along each k-fiber. For each defined k-fiber cross-section, the KMT positions were mapped on a 2D plane, and the polygonal shape of the k-fiber cross-sections was calculated based on the position of the KMTs. The polygonal shape was calculated with the alpha shape algorithm (α = 10) using the ‘ashape3d’ function of the alphashape3d 1.3.1 R library (Lafarge and Pateiro-Lopez, 2020). The alpha shape is the polygonal shape formed around a given set of points (KMTs from a cross-section) created by a carving space around those points with a circle of a radius defined as α. The polygonal shape was then built by drawing lines between contact points. In order to calculate the area from the polygonal shape of a k-fiber cross-section, a polygonal prism was created by duplicating and shifting a polygonal shape 1 µm in the X/Y/Z dimension. This created a prism with a height of 1 µm. The volume of the created 3D object (prism) was then calculated using the alphashape3d 1.3.1 R library (Lafarge and Pateiro-Lopez, 2020). From this, a polygonal area could be calculated by dividing the prism volume (Vpp) by prism high (hpp = 1 µm). The distribution of the k-fiber polygonal area along the pole-to-kinetochore axis is given as a fitted polynomial line of local polynomial regression using the ‘loess’ method. Confidence intervals were calculated with the t-based approximation using the stat 4.0.3 R library (R Development Core Team, 2021).
 
-## Density of KMTs in k-fibers
+#### Density of KMTs in k-fibers
 
 The density of KMTs in the k-fibers was calculated in segments of 500 nm length along the entire path of each fiber. To determine the percentage of KMTs that were enclosed in the k-fiber for each cross-section, the number of KMTs enclosed in the given k-fiber section and the circular area were determined. The radius of the circular area was calculated for each k-fiber at the position of KMT attachment to the kinetochores. The distribution of the k-fiber density along the pole-to-pole axis is given as a fitted polynomial line and a confidence interval calculated with the t-based approximation using the stat 4.0.3 R library (R Development Core Team, 2021).
 
-## Interaction of KMTs with non-KMTs
+#### Interaction of KMTs with non-KMTs
 
 A possible association between KMT minus ends and other MT lattices was measured by calculating the 3D distance between KMT ends and every MT lattice in the reconstructed spindle. An interaction between KMT minus ends and a MT lattice was identified when KMT minus ends were found within a given interaction distance to any MT lattice. The defined interaction distances were 25, 30, 35, 45, 50, 75, and 100 nm. To account for differences in the density of MTs along the pole-to-pole axis, each KMT interaction was normalized by calculating the local MT density around each KMT end. This was achieved by selecting a voxel of 0.001 µm3 with the KMT end in its center and calculating the local MT density by dividing the number of potential interactions by the voxel volume. For visualization, each KMT was labeled based on the type of detected interaction with KMTs or non-KMTs. KMTs without any interaction were also labeled. The percentage of KMTs with any interaction was measured and the average value for all data sets is given (mean ±STD).
 
@@ -222,25 +1357,25 @@ To identify possible MT minus-end associations with KMT lattices, the 3D distanc
 
 To analyze the position of MT-MT associations, the relative position of MT minus ends on the pole-to-kinetochore axis was calculated. The relative position of each minus end is given as the position between the kinetochore (position = 1) and mother centriole (position = 0) along the spindle axis, normalized by the MT density.
 
-## Analysis of KMT-KMT distances
+#### Analysis of KMT-KMT distances
 
 The KMT-KMT distances at given k-fiber cross-sections were measured by a K-nearest neighbor estimation. An estimation was achieved by calculating a distance matrix between all selected KMTs. Each KMT-KMT connection was ranked according to its distance. Finally, for each KMT in a k-fiber, the closest KMT neighbors were selected. For each k-fiber, the mean KMT-KMT distance and the standard deviation were calculated.
 
-## Interaction of MTs
+#### Interaction of MTs
 
 The interaction between MTs was calculated in steps of 20 nm along each MT. For each MT segment, the distance to a neighboring MT was calculated. In addition, the length of interaction was analyzed for each detected MT-MT interaction. The length of interaction between MTs was calculated as a sum of the 20 nm segments. This analysis was performed for defined interaction distances of 25, 30, 35, 45, and 50 nm. The frequency plots for the average number of interactions per MT and the average length of interaction are given for each interaction distance. Each MT segment is labeled based on the number of interactions.
 
-## Error analysis
+#### Error analysis
 
 For the tracing of MTs, the error associated with our approach was previously analyzed for the 3D reconstructions of mitotic centrosomes in the early C. elegans embryo using serial semi-thick plastic sections (Weber et al., 2012). Although the data on mammalian spindles is larger, the tomogram content of this current study is similar to the published centrosome data sets, and thus we assume that the error MT tracing lies in the same range of 5–10%. All traced MTs were manually veriﬁed. This was achieved by using the ‘filament editor’ tool in the ZIB extension of the Amira software that allowed us to create a flattened overview of the entire MT track, which was instrumental for quick validation of each MT. Both false-positive and negative tracings were corrected.
 
 However, it is more difﬁcult to estimate the error of the matching algorithm. Our standardized automatic stitching method has been described in detail in previous publications (Lindow et al., 2021; Redemann et al., 2014; Weber et al., 2012). In general, the stitching depends on the local density and properties of the MTs. For this reason, the stitched MTs were manually veriﬁed and corrected (Lindow et al., 2021). In particular, all KMTs in our reconstructions were checked for correct stitching across section borders. Examples of correct stitching of MTs at section borders are given in Figure 3—figure supplement 1. The quality of the analysis of the MTs, especially the KMTs, should therefore be inﬂuenced by minor errors. In our previous publications (Redemann et al., 2014; Weber et al., 2012), we estimated the overall quality of the stitching by analyzing the distribution of MT endpoints in the Z-direction (i.e. normal to the plane of the slice). We expect to find approximately the same density of MT endpoints along the Z-direction of each serial-section tomogram. This distribution is visualized in the Serial Section Aligner tool previously presented (Lindow et al., 2021). Therefore, if the density of endpoints after matching is approximately the same along the Z-direction of the serial-section tomograms, we can assume that the number of artificial points that have been introduced at the interfaces of the serial sections are negligible. This was visualized by projecting each spindle along the Y/Z axis (Figure 3—figure supplement 1).
 
-## Custom-designed software for the visualization of 3D data
+### Custom-designed software for the visualization of 3D data
 
 For better visualization of the 3D organization of KMTs in k-fibers, a platform was developed using the WebGL library (rgl 0.106.8 R library; Adler et al., 2021). This platform was implemented for the public and will allow readers to choose data sets from this publication for an interactive visualization of selected spindle features. For instance, users may choose to visualize the organization of k-fibers or KMTs and select for the analysis of MT-MT interactions. For an analysis of KMTs, users can select the following features of analysis such as length distribution, minus-end positioning, curvature, and number at the kinetochore. For the MT-MT interaction analysis, users can select different interaction distances. This platform is designed for the continuous addition of 3D reconstructions of spindles obtained from different systems and can be accessed as follows: https://cfci.shinyapps.io/ASGA_3DViewer/.
 
-## Data availability
+### Data availability
 
 Tomographic data before and after the z-expansion has been uploaded to the TU Dresden Open Access Repository and Archive system (OpARA) and is available as open access: http://doi.org/10.25532/OPARA-128; http://dx.doi.org/10.25532/OPARA-177.
 

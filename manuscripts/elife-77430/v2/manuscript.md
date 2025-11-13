@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/016xsfp80 Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands
-2. https://ror.org/056am2717 Department of Psychology, Brock University St. Catharines Canada
+1. Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
+2. Department of Psychology, Brock University St. Catharines Canada ([ROR:056am2717](https://ror.org/056am2717))
 
 † Corresponding author
 
@@ -46,7 +46,7 @@ Figure 1A shows that there were particularly short neural states in visual corte
 
 We also investigated how the variability of state durations differed across the cortex. Because variability of state duration, as measured by the interquartile range (IQR), tends to increase as the median state duration increases, we used a nonparametric alternative to the coefficient of variation (IQR divided by the median). We found very pronounced variability in state durations in the middle and superior temporal gyri and the anterior insula, while the variability was consistently lower in all other cortical areas. This effect was highly reliable across the two independent groups of participants (r = 0.84 at voxel level; r = 0.54 at the searchlight level).
 
-## Neural states and perceived event boundaries
+### Neural states and perceived event boundaries
 
 In a nested cortical hierarchy, some boundaries at lower levels of the cortical hierarchy are thought to propagate to higher levels of the hierarchy until they are consciously experienced as event boundaries. Therefore, we would expect state boundaries to align with perceived event boundaries across all of the different levels of the hierarchy. The most consistent alignment would be expected in higher-level cortical areas where the number of states should more closely align with the number of perceived events. Event boundaries were determined by asking participants to indicate when they felt one event (meaningful unit) ended and another began (Ben-Yakov and Henson, 2018). To determine the similarity between neural state boundaries and perceived event boundaries, we computed the absolute boundary overlap. This is defined as the number of timepoints where neural state and perceived event boundaries overlapped, scaled such that the measure is one when all neural state boundaries align with a perceived event boundary and zero when the overlap is equal to the overlap that would be expected given the number of boundaries.
 
@@ -62,7 +62,7 @@ To understand why some neural state boundaries are associated with event boundar
 
 When we took the strength of neural state boundaries into account in this way, the absolute overlap with event boundaries increased compared to when we used a binary definition of neural state boundaries. This was observed particularly in the middle and superior temporal gyri, extending into the inferior frontal gyrus (see Figure 2C), but also in the precuneus and medial prefrontal cortex. This means that boundaries that coincided with a larger shift in brain activity patterns were more often associated with an experienced event boundary.
 
-## Neural state networks
+### Neural state networks
 
 If neural state boundaries are organized in a nested cortical hierarchy, different brain regions would be expected to show substantial overlap in their neural state boundaries. Therefore, we investigated for each pair of searchlights whether the relative neural state boundary overlap was larger than would be expected by chance, given the number of boundaries in these regions. We observed that the overlap was significantly larger than chance for 85% of all pairs of searchlights, suggesting that neural state boundaries are indeed shared across large parts of the cortical hierarchy (see Figure 3A). Although the overlap was highly significant for the majority of searchlight pairs, we did not observe a perfectly nested architecture. If that were the case, the relative boundary overlap between searchlights would have been one. To make sure the observed relative boundary overlap between searchlights was not caused by noise shared across brain regions, we also computed the relative boundary overlap across two independent groups of participants (similar to the rationale of inter-subject functional connectivity analyses; Simony et al., 2016). We observed that the relative boundary overlap computed in this way was similar to the relative overlap computed within a participant group (r = 0.69; see Appendix 1—figure 6), suggesting that shared noise is not the cause of the observed regional overlap in neural state boundaries.
 
@@ -82,7 +82,7 @@ Although the networks we identified show overlap with functional networks previo
 
 It should be noted that although the overlap in neural state boundaries was strongest for the searchlights that were part of the same functional networks, we also found a lot of evidence for the hypothesis that boundaries are shared across different levels of the cortical hierarchy (see Figure 3A). Overlap was particularly strong between all higher-order networks (DAN, CON, FPCN, and DMNs), as well as between the motor network and SMN. The sensorimotor, motor, and auditory networks also showed highly significant overlap with the higher-order networks. Lower levels of overlap were observed between the early visual network and all other networks (except the DAN), as well as between the auditory and the sensorimotor networks.
 
-## Shared neural state boundaries and event boundaries
+### Shared neural state boundaries and event boundaries
 
 Previous research on event segmentation has shown that the perception of an event boundary is more likely when multiple features of a stimulus change at the same time (Clewett et al., 2019). When multiple sensory features changes at the same time, this could be reflected in many regions within the same functional network showing a state boundary at the same time (e.g., in the visual network when many aspects of the visual environment change), or in neural state boundaries that are shared across functional networks (e.g., across the auditory and visual networks when a visual and auditory change coincide). Similarly, boundaries shared between many brain regions within or across higher-level cortical networks might reflect a more pronounced change in conceptual features of the narrative (e.g., the goals or emotional state of the character). Therefore, we expect that in a nested cortical hierarchy neural state boundaries that are shared between many brain regions within functional networks, and particularly those shared widely across functional networks, would be more likely to be associated with the perception of an event boundary. To investigate this, we first weighted each neural state boundary in each searchlight by the proportion of searchlights within the same network that also showed a boundary at the same time. This is very similar to how we investigated the role of boundary strength above.
 
@@ -112,7 +112,7 @@ We also found a similar drop in prevalence of event boundaries across communitie
 
 While event segmentation is a critical aspect of our ongoing experience, the neural mechanisms that underlie this ability are not yet clear. The aim of this article was to investigate the cortical organization of neural states that may underlie our experience of distinct events. By combining an innovative data-driven state segmentation method with a movie dataset of many participants, we were able to identify neural states across the entire cortical hierarchy for the first time. We observed particularly fast states in primary sensory regions and long periods of information integration in the left middle frontal gyrus and medial prefrontal cortex. Across the entire cortical hierarchy, we observed associations between neural state and perceived event boundaries and our findings demonstrate that neural state boundaries are shared within long-range functional networks as well as across the temporal hierarchy between distinct functional networks.
 
-## A partially nested cortical hierarchy of neural states
+### A partially nested cortical hierarchy of neural states
 
 Previous findings have suggested that neural states may be organized in a nested cortical hierarchy (Baldassano et al., 2017). In line with this hypothesis, we observed that neural state boundaries throughout the entire hierarchy overlap with perceived event boundaries, but this overlap is particularly strong for transmodal regions such as the dorsal medial prefrontal cortex, anterior cingulate cortex, left superior and middle frontal gyrus, and anterior insula. In line with EST, the strong alignment in the anterior cingulate cortex suggests that the disparity between predicted and perceived sensory input may play a role in the experience of an event boundary (Holroyd and Coles, 2002; Kurby and Zacks, 2008), while the involvement of the dorsal medial prefrontal cortex is in line with previous studies linking this region to representations of specific events (Baldassano et al., 2018; Krueger et al., 2009; Liu et al., 2022).
 
@@ -124,49 +124,49 @@ We also investigated the factors that distinguish neural state boundaries that t
 
 More evidence for the idea of a nested cortical hierarchy of neural state boundaries comes from our connectivity analyses, which show that neural state boundaries are shared both within and across groups of regions that partly resemble well-known functional brain networks. This sharing of boundaries across different cortical areas may suggest that neural states in higher-level cortical regions represent an overarching representation that corresponds to many distinct states in lower-level cortical areas, which all represent different features of that overarching representation (e.g., words spoken, characters on screen, or locations within a particular situation). This is in line with previous conceptualizations of events as partonomic hierarchies (Zacks et al., 2001a) and with other models of hierarchical neural representations, such as the hub-and-spokes model for semantic representations, which proposes that semantic knowledge is represented by the interaction between modality-specific brain regions and a transmodal semantic representational hub in the anterior temporal lobe (Lambon Ralph et al., 2010; Rogers et al., 2004). It is also in line with a recently proposed hierarchical representation of episodic memories, in which items that are linked within small-scale events are in turn linked within large-scale episodic narratives (Andermane et al., 2021).
 
-## Timescales of information processing across the cortex
+### Timescales of information processing across the cortex
 
 While previous studies have been able to show regional differences in the timescale of information processing across parts of the cortex (Baldassano et al., 2017; Hasson et al., 2008; Honey et al., 2012; Lerner et al., 2011; Stephens et al., 2013), here we were able to reveal neural state timescales across the entire cortex for the first time. The validity of our results is supported by extensive validations using simulations (see ‘Supplementary methods’ in Appendix 1 and Geerligs et al., 2021) and the reliability of our observations across independent groups of participants. It is also supported by the similarity between our results and previous findings based on very different approaches, such as experiments with movies and auditory narratives that have been scrambled at different timescales (Hasson et al., 2008; Honey et al., 2012; Lerner et al., 2011), or resting-state fluctuations in electrocorticography (Honey et al., 2012) and fMRI data (Stephens et al., 2013).
 
 Although we characterized brain areas based on their median state length, we observed that neural states within a region were not of equal duration, suggesting that regional timescales may change dynamically based on the features of the stimulus. This is also in line with the observed correspondence between neural state and perceived event boundaries. Event boundaries have previously been shown to align with changes in features of the narrative, such as characters, causes, goals, and spatial locations (Zacks et al., 2009). Therefore, the overlap between state boundaries and perceived event boundaries across the cortex also suggests that characteristics of the sensory input are driving the occurrence of neural state boundaries. Together, these findings show that the timescale of information processing in particular brain regions is not only driven by stable differences in the rate of temporal integration of information, which may be associated with interregional interactions in the neural circuitry (Honey et al., 2012), but also by the properties of the input that is received from the environment. Our results show that some of the areas that were not covered in previous investigations (Baldassano et al., 2017; Hasson et al., 2008; Honey et al., 2012; Lerner et al., 2011; Stephens et al., 2013), such as the medial prefrontal cortex and middle frontal gyrus, have the longest timescales of information processing. This suggests these regions at the top of the cortical hierarchy (Clarke and Tyler, 2015; Fuster, 2001) also have the slowest timescales of information processing, in line with expectations based on the hierarchical process memory framework (Hasson et al., 2015).
 
-## Functional networks of neural state boundaries
+### Functional networks of neural state boundaries
 
 In line with previous work (Baldassano et al., 2017), we found that neural state boundaries are shared across brain regions. Our results show for the first time that these boundaries are shared within distinct functional networks. Interestingly, the networks we identify partially resemble the functional networks that are typically found using regular functional connectivity analyses (c.f. Power et al., 2011; Yeo et al., 2011), though there are some differences. For instance, the visual network was segregated into two smaller subnetworks, and for other networks, the topographies sometimes deviated somewhat from those observed in prior work.
 
 Our results show that functional networks defined by state boundaries differ in their timescales of information processing. While some networks have a particular temporal mode of information processing, other networks show a within-network gradient of neural state timescales. For the DMN, we observed a split into posterior, superior, and anterior subnetworks with markedly different timescales. The anterior and posterior subnetworks closely resemble previously observed posterior and anterior DMN subnetworks (Andrews-Hanna et al., 2010; Campbell et al., 2013; Lei et al., 2014), while the superior subnetwork resembles the right dorsal lateral DMN subnetwork (Gordon et al., 2020). The posterior/fast DMN is particularly prominent in the precuneus and angular gyri, which are thought to engage in episodic memory retrieval through connectivity with the hippocampal formation (Andrews-Hanna et al., 2010). The posterior DMN has also been proposed to be involved in forming mental scenes or situation models (Ranganath and Ritchey, 2012). Thus, neural states in this subnetwork may reflect the construction of mental scenes of the movie and/or retrieval of related episodic memories. The superior DMN (or right dorsal lateral DMN) showed timescales of neural states that were in between those of the anterior and posterior DMN. This network has previously been suggested to be a connector hub within the DMN, through which the FPCN exerts top-down control over the DMN. This is in line with the strong state boundary overlap we observed between searchlights in the sDMN and the FPCN. The anterior/slow DMN is particularly prominent in the medial prefrontal cortex that has been related to self-referential thought, affective processing, and integrating current information with prior knowledge (Benoit et al., 2014; Gilboa and Marlatte, 2017; van Kesteren et al., 2012; Northoff et al., 2006). The current results suggest that these processes require integration of information over longer timescales.
 
-## Real-life experience
+### Real-life experience
 
 Although event segmentation is thought to be a pivotal aspect of how information is processed in real life (Zacks et al., 2007), it is often not considered in experimental settings, where events are predetermined by the trial or block structure. This study and previous work (Baldassano et al., 2017) show that we are now able to investigate brain activity as it unfolds over time without asking participants to perform a task. This allows us to study brain function in a way that is much more similar to our daily life experience than typical cognitive neuroscience experiments (Hamilton and Huth, 2020; Lee et al., 2020; Willems et al., 2020). This opens the door for investigations of neural differences during narrative comprehension between groups of participants, such as participants with autism who may have trouble distinguishing events that require them to infer the state of mind of others (Baron-Cohen, 2000; Hasson et al., 2009), or participants with Alzheimer’s disease, who may have trouble with segmenting and encoding events in memory (Zacks et al., 2006).
 
 It should be noted that this more naturalistic way of investigating brain activity comes at a cost of reduced experimental control (Willems et al., 2020). For example, some of the differences in brain activity that we observe over time may be associated with eye movements. Preparation of eye movements may cause activity changes in the frontal-eye-fields (Vernet et al., 2014), while execution of eye movements may alter the input in early sensory regions (Lu et al., 2016; Son et al., 2020). However, in a related study (Davis et al., 2021), we found no age difference in eye movement synchrony while viewing the same movie, despite our previous observation of reduced synchrony with age in several areas (particularly the hippocampus, medial PFC, and FPCN; Geerligs and Campbell, 2018), suggesting a disconnect between eye movements and neural activity in higher-order areas. In addition, reducing this potential confound by asking participants to fixate leads to an unnatural mode of information processing, which could arguably bias the results in different ways by requiring participants to perform a double task (monitoring eye movements in addition to watching the movie).
 
-## Conclusion
+### Conclusion
 
 Here, we demonstrate that event segmentation is underpinned by neural state boundaries that occur in a nested cortical hierarchy. This work also provides the first cortex-wide mapping of timescales of information processing and shows that the DMN fractionates into faster and slower subnetworks. Together, these findings provide new insights into the neural mechanisms that underlie event segmentation, which in turn is a critical component of real-world perception, narrative comprehension, and episodic memory formation. What remains to be addressed is how timescales of different brain regions relate to the types of neural representations that are contained within these regions. For example, does the dissociation between the posterior and anterior DMN reflect relatively fast construction of mental scenes and slow integration with existing knowledge, respectively? Studying brain function from this perspective provides us with a new view on the organizational principles of the human brain.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 This study included data from 265 adults (131 females) who were aged 18–50 (mean age 36.3, SD = 8.6) from the healthy, population-derived cohort tested in stage II of the Cam-CAN project (Shafto et al., 2014; Taylor et al., 2017). Participants were native English speakers, had normal or corrected-to-normal vision and hearing, and had no neurological disorders (Shafto et al., 2014). Ethical approval for the study was obtained from the Cambridgeshire 2 (now East of England – Cambridge Central) Research Ethics Committee. Participants gave written informed consent.
 
-## Movie
+### Movie
 
 Participants watched a black-and-white television drama by Alfred Hitchcock called Bang! You’re Dead while they were scanned with fMRI. The full 25 min episode was shortened to 8 min, preserving the narrative of the episode (Shafto et al., 2014). This shortened version of the movie has been shown to elicit robust brain activity, synchronized across participants (Campbell et al., 2015; Geerligs and Campbell, 2018). Participants were instructed to watch, listen, and pay attention to the movie.
 
-## fMRI data acquisition
+### fMRI data acquisition
 
 The details of the fMRI data acquisition are described in Geerligs and Campbell, 2018. In short, 193 volumes of movie data were acquired with a 32-channel head-coil, using a multi-echo, T2*-weighted EPI sequence. Each volume contained 32 axial slices (acquired in descending order), with slice thickness of 3.7 mm and interslice gap of 20% (TR = 2470 ms; five echoes [TE = 9.4 ms, 21.2 ms, 33 ms, 45 ms, 57 ms]; flip angle = 78°; FOV = 192 mm × 192 mm; voxel size = 3 mm × 3 mm × 4.44 mm), the acquisition time was 8 min and 13 s. High-resolution (1 mm × 1mm × 1 mm) T1- and T2-weighted images were also acquired.
 
-## Data preprocessing and hyperalignment
+### Data preprocessing and hyperalignment
 
 The initial steps of data preprocessing for the movie data were the same as in Geerligs and Campbell, 2018 and are described there in detail. Briefly, the preprocessing steps included deobliquing of each TE, slice time correction, and realignment of each TE to the first TE in the run, using AFNI (version AFNI_17.1.01; https://afni.nimh.nih.gov; Cox, 1996). To denoise the data for each participant, we used multi-echo independent component analysis (ME-ICA), which is a very promising method for removal of non-BOLD-like components from the fMRI data, including effects of head motion (Kundu et al., 2012; Kundu et al., 2013). Co-registration followed by DARTEL intersubject alignment was used to align participants to MNI space using SPM12 software (http://www.fil.ion.ucl.ac.uk/spm).
 
 To optimally align voxels across participants in the movie dataset, we subsequently used whole-brain searchlight hyperalignment as implemented in the PyMVPA toolbox (Guntupalli et al., 2016; Hanke et al., 2009). Hyperalignment is an important step in the pipeline because the neural state segmentation method relies on group-averaged voxel-level data. Hyperalignment uses Procrustes transformations to derive the optimal rotation parameters that minimize intersubject distances between responses to the same timepoints in the movie. The details of the procedure are identical to those in Geerligs et al., 2021. After hyperalignment, the data were highpass-filtered with a cut-off of 0.008 Hz. For the analyses that included 2 or 15 independent groups of participants, we ran hyperalignment separately within each subgroup to make sure that datasets remained fully independent.
 
-## Data-driven detection of neural state boundaries
+### Data-driven detection of neural state boundaries
 
 To identify neural state boundaries in the fMRI data, we used GSBS (Geerligs et al., 2021). GSBS performs an iterative search for state boundary locations that optimize the similarity between the average activity patterns in a neural state and the (original) brain activity at each corresponding timepoint. At each iteration of the algorithm, previous boundary locations are fine-tuned by shifting them by 1 TR (earlier or later) if this further improves the fit. To determine the optimal number of boundaries in each brain region, we used the t-distance metric. This metric identifies the optimal number of states, such that timepoints within a state have maximally similar brain activity patterns, while timepoints in consecutive states are maximally dissimilar. The validity of these methods has been tested extensively in previous work, with both simulated and empirical data (Geerligs et al., 2021). The input to the GSBS algorithm consists of a set of voxel time courses within a searchlight and a maximum value for the number of states, which we set to 100, roughly corresponding to half the number of TRs in our data (Geerligs et al., 2021).
 
@@ -176,47 +176,75 @@ As a consequence of this change in the fitting procedure, we also adjusted the b
 
 The final change compared to our previous work entails the use of deconvolved data. We observed that the algorithm was often unable to differentiate short states from transitions between longer states due to the slow nature of the hemodynamic response. This issue can be resolved by first deconvolving the data. Simulations and empirical results demonstrate that these changes resulted in stark increases in the reliability of our results (see ‘Supplementary methods’ in Appendix 1). The data were deconvolved using Wiener deconvolution as implemented in the rsHRF toolbox (version 1.5.8), based the canonical hemodynamic response function (HRF; Wu et al., 2021). Importantly, we did not use the iterative Wiener filter algorithm as we noticed that this blurred the boundaries between neural states. We also investigated the effects of estimating the HRF shape based on the movie fMRI data instead of using the canonical HRF and found that this did not have a marked impact on the results (see ‘Supplementary methods’ in Appendix 1).
 
-## Whole-brain search for neural state boundaries
+### Whole-brain search for neural state boundaries
 
 We applied GSBS in a searchlight to the hyperaligned movie data. Spherical searchlights were scanned within the Harvard-Oxford cortical mask with a step size of two voxels and a radius of three voxels (Desikan et al., 2006). This resulted in searchlights with an average size of 97 voxels (max: 123; IQR: 82–115); this variation in searchlight size was due to the exclusion of out-of-brain voxels. Only searchlights with more than 15 voxels were included in the analysis.
 
 Previous analyses have shown that neural state boundaries cannot be identified reliably in single-subject data. Instead data should be averaged across a group of at least ~17 participants to eliminate sources of noise from the data (Geerligs et al., 2021). As the group size increases, the reliability of the results also increases. Therefore, all the results reported here are with the maximal possible group size. To illustrate the reliability of the cortical hierarchy of state durations and the communities of timepoints, we randomly divided the data into two independent samples of ~135 participants each before identifying the optimal number of states. In all other analyses, the figures in the ‘Results’ section are derived from data with all participants averaged in one big group. Statistical testing to determine statistical significance of these results is done with data in which participants were grouped in 15 smaller independent subgroups of 17/18 randomly selected participants per group.
 
-## Defining event boundaries
+### Defining event boundaries
 
 Event boundaries in the Cam-CAN movie dataset were identified by Ben-Yakov and Henson, 2018 based on data from 16 observers. These participants watched the movie outside the scanner and indicated with a keypress when they felt ‘one event (meaningful unit) ended and another began.’ Participants were not able to rewind the movie. Ben-Yakov and Henson, 2018 referred to the number of observers that identified a boundary at the same time as the boundary salience. In line with their approach, we only included boundaries identified by at least five observers. This resulted in a total of 19 boundaries separated by 6.5–93.7 s, with a salience varying from 5 to 16 observers (mean = 10).
 
-## Comparison of neural state boundaries to event boundaries
+### Comparison of neural state boundaries to event boundaries
 
 To compare the neural state boundaries across regions to the event boundaries, we computed two overlap metrics; the absolute and relative boundary overlap. Both overlap measures were scaled with respect to the expected number of overlapping boundaries. To compute these values, we define E as the event boundary time series and Si as the neural state boundary time series for searchlight i. These time series contain zeros at each timepoint t when there is no change in state/event and ones at each timepoint when there is a transition to a different state/event.
 
-The overlap between event boundaries and state boundaries in searchlight i is defined asOi=∑t=1nEt⋅Si,t
+The overlap between event boundaries and state boundaries in searchlight i is defined as
+
+$$
+O_{i}=\sumt=1nE_{t}⋅S_{i,t}
+$$
 
 where n is the number of TRs.
 
-If we assume that there is no association between the occurrence of event boundaries and state boundaries, the expected number of overlapping boundaries is defined as in Zacks et al., 2001a as:OEi=1n⋅∑t=1nEt⋅∑t=1nSi,t
+If we assume that there is no association between the occurrence of event boundaries and state boundaries, the expected number of overlapping boundaries is defined as in Zacks et al., 2001a as:
 
-Because the number of overlapping boundaries will increase as the number of state boundaries increases, the absolute overlap (OA) was scaled such that it was zero when it was equal to the expected overlap and one when all neural state boundaries overlapped with an event boundary. The absolute overlap therefore quantifies the proportion of the neural state boundaries that overlap with an event boundary:OAi=Oi−OEi∑t=1nSi,t−OEi.
+$$
+OE_{i}=\frac{1}{n}⋅\sumt=1nE_{t}⋅\sumt=1nS_{i,t}
+$$
 
-Instead, the relative overlap (OR) was scaled such that is was one when all event boundaries overlapped with a neural state (or when all neural state boundaries overlapped with an event boundary if there were fewer state boundaries than event boundaries). In this way, this metric quantifies the overlap without penalizing regions that have more or fewer state boundaries than event boundaries. The relative overlap is defined asORi=Oi−OEimin{∑t=1nEt,∑t=1nSi,t}−OEi.
+Because the number of overlapping boundaries will increase as the number of state boundaries increases, the absolute overlap (OA) was scaled such that it was zero when it was equal to the expected overlap and one when all neural state boundaries overlapped with an event boundary. The absolute overlap therefore quantifies the proportion of the neural state boundaries that overlap with an event boundary:
+
+$$
+OA_{i}=\frac{O_{i}−OE_{i}}{\sumt=1nS_{i,t}−OE_{i}}.
+$$
+
+Instead, the relative overlap (OR) was scaled such that is was one when all event boundaries overlapped with a neural state (or when all neural state boundaries overlapped with an event boundary if there were fewer state boundaries than event boundaries). In this way, this metric quantifies the overlap without penalizing regions that have more or fewer state boundaries than event boundaries. The relative overlap is defined as
+
+$$
+OR_{i}=\frac{O_{i}−OE_{i}}{min{\sumt=1nE_{t},\sumt=1nS_{i,t}}−OE_{i}}.
+$$
 
 For each searchlight, we tested whether the boundary overlap was significantly different from zero across the 15 independent samples.
 
-In addition to investigating the overlap between the event boundaries and the state boundaries, we also investigated the effect of boundary strength. We define boundary strength as the Pearson correlation distance between the neural activity patterns of consecutive neural states. We investigated whether taking the strength of state boundaries into account improved the absolute overlap compared to using the binary definition of state boundaries. To do this, we change the neural state boundary time series for searchlight Si such that, instead of ones, it contains the observed state boundary strength when there is a transition to a different state. After redefining Si in this way, we recomputed the absolute overlap and investigated which brain regions showed a significant increase in overlap when we compare the strength-based absolute overlap (OA-STi) to the binary absolute overlap (OAi), across the 15 independent samples.
+In addition to investigating the overlap between the event boundaries and the state boundaries, we also investigated the effect of boundary strength. We define boundary strength as the Pearson correlation distance between the neural activity patterns of consecutive neural states. We investigated whether taking the strength of state boundaries into account improved the absolute overlap compared to using the binary definition of state boundaries. To do this, we change the neural state boundary time series for searchlight Si such that, instead of ones, it contains the observed state boundary strength when there is a transition to a different state. After redefining Si in this way, we recomputed the absolute overlap and investigated which brain regions showed a significant increase in overlap when we compare the strength-based absolute overlap ($OA-ST_{i}$) to the binary absolute overlap ($OA_{i}$), across the 15 independent samples.
 
-## Quantification of boundary overlap between searchlights
+### Quantification of boundary overlap between searchlights
 
-In order to quantify whether the overlap between neural state boundaries between different brain regions was larger than expected based on the number of state boundaries, we computed the relative boundary overlap as described above. We used the relative, instead of the absolute overlap, to make sure that the overlap between regions was not biased by regional differences in the number of states. The relative boundary overlap allows us to quantify the degree to which state boundaries are nested. The overlap between the neural state time series of searchlights i and j is defined asOi,j=∑t=1nSi,t⋅Sj,t.
+In order to quantify whether the overlap between neural state boundaries between different brain regions was larger than expected based on the number of state boundaries, we computed the relative boundary overlap as described above. We used the relative, instead of the absolute overlap, to make sure that the overlap between regions was not biased by regional differences in the number of states. The relative boundary overlap allows us to quantify the degree to which state boundaries are nested. The overlap between the neural state time series of searchlights i and j is defined as
+
+$$
+O_{i,j}=\sumt=1nS_{i,t}⋅S_{j,t}.
+$$
 
 Here, we used the binary definition of Si and Sj, containing ones when there was a transition between states and zeros when there was no transition.
 
-The expected overlap between neural state boundaries was quantified asOEi,j=1n⋅∑t=1nSi,t⋅∑t=1nSj,t.
+The expected overlap between neural state boundaries was quantified as
 
-The relative boundary overlap metric (OR) was scaled such that it was zero when it was equal to the expected overlap and one when it was equal to the maximal possible overlap:ORi,j=Oi,j−OEi,jmin{∑t=1nSi,t,∑t=1nSj,t}−OEi,j.
+$$
+OE_{i,j}=\frac{1}{n}⋅\sumt=1nS_{i,t}⋅\sumt=1nS_{j,t}.
+$$
+
+The relative boundary overlap metric (OR) was scaled such that it was zero when it was equal to the expected overlap and one when it was equal to the maximal possible overlap:
+
+$$
+OR_{i,j}=\frac{O_{i,j}−OE_{i,j}}{min{\sumt=1nS_{i,t},\sumt=1nS_{j,t}}−OE_{i,j}}.
+$$
 
 For each pair of searchlights, we tested whether the boundary overlap was significantly different from zero across the 15 independent samples.
 
-## Identification of functional networks
+### Identification of functional networks
 
 In order to identify networks of regions that contained the same neural state boundaries, we computed the boundary overlap between each pair of searchlights as described above. We used the data in which all 265 participants were averaged. Based on the boundary overlap between all searchlight pairs, functional networks were detected using a consensus partitioning algorithm (Lancichinetti and Fortunato, 2012), as implemented in the Brain Connectivity Toolbox (Rubinov and Sporns, 2010). The aim of the partitioning was to identify networks (groups) of searchlights with high boundary overlap between searchlights within each network and low(er) overlap between searchlights in different networks. Specifically, an initial partition into functional networks was created using the Louvain modularity algorithm (Blondel et al., 2008), which was refined using a modularity fine-tuning algorithm (Sun et al., 2009) to optimize the modularity. The fit of the partitioning was quantified using an asymmetric measure of modularity that assigns a lower importance to negative weights than positive weights (Rubinov and Sporns, 2011).
 
@@ -224,19 +252,35 @@ Because the modularity maximization is stochastic, we repeated the partitioning 
 
 The procedure described above was applied for different values of the resolution parameter γ (varying γ between 1 and 3; Reichardt and Bornholdt, 2006). Increasing the value of γ allows for the detection of smaller networks. We used the same values for γ across the initial and consensus partitioning. We selected the partition with the highest similarity to a previous whole brain network partition (Power et al., 2011), as measured by aMI (Xuan Vinh et al., 2010). We specifically chose the parcellation by Power et al., 2011 as a reference as it proved functional network labels per voxel, rather than regional of interest, making it more similar to our searchlight analyses. To compare our network labels for each searchlight to the voxelwise Power networks, we labeled each searchlight according to the Power network label that occurred most frequently in the searchlight voxels. The highest similarity was observed for gamma = 1.8 (aMI = 0.39). We named each functional network we identified in accordance with the Power network that it overlapped most with, in addition to a descriptive term about the network location (e.g., ventral, posterior) or function (early, late).
 
-## Co-occurrence of neural state boundaries and events
+### Co-occurrence of neural state boundaries and events
 
 On the level of functional networks, we investigated the association between neural boundary co-occurrence and event boundaries. Just like our investigation of the role of boundary strength, we investigated whether taking boundary co-occurrence into account would increase the absolute overlap with events. We did this for both boundary co-occurrence within the network that a given searchlight is part of, as well as the co-occurrence across all searchlights in the brain.
 
-To do this, we changed the neural state time series for searchlight i (Si) such that for timepoints with state transitions, it does not contain ones, but the proportion of searchlights within that searchlights’ network (or within all searchlights in the brain whole brain) that also show a neural state boundary at that timepoint. After redefining Si in these ways, we recomputed the absolute overlap. This resulted in three measures of absolute overlap: the binary overlap (OAi), the within-network co-occurrence overlap (OA-Ni), and the whole-brain co-occurrence overlap (OA-WBi) and investigated which brain regions showed a significant increase in overlap when we compared OA-Ni and OA-WBi to OAi, across the 15 independent samples.
+To do this, we changed the neural state time series for searchlight i (Si) such that for timepoints with state transitions, it does not contain ones, but the proportion of searchlights within that searchlights’ network (or within all searchlights in the brain whole brain) that also show a neural state boundary at that timepoint. After redefining Si in these ways, we recomputed the absolute overlap. This resulted in three measures of absolute overlap: the binary overlap ($OA_{i}$), the within-network co-occurrence overlap ($OA-N_{i}$), and the whole-brain co-occurrence overlap ($OA-WB_{i}$) and investigated which brain regions showed a significant increase in overlap when we compared $OA-N_{i}$ and $OA-WB_{i}$ to $OA_{i}$, across the 15 independent samples.
 
-To look in more detail at how boundaries that are shared vs. boundaries that are not shared are associated with the occurrence of an event boundary, we performed an additional analysis at the level pairs of searchlights. For each pair of searchlights i and j, we created three sets of neural state boundaries time series, boundaries unique to searchlights i or j: Si,∼j and Sj,∼i and boundaries shared between searchlights i and j: Si&j. More formally, using the binary definition of the neural state boundary time series Si and Sj, these are defined at each timepoint t asSi&j,t=Si,t⋅Sj,t,Si,∼j,t=Si,t−Si&j,t,Sj,∼i,t=Sj,t−Si&j,t.
+To look in more detail at how boundaries that are shared vs. boundaries that are not shared are associated with the occurrence of an event boundary, we performed an additional analysis at the level pairs of searchlights. For each pair of searchlights i and j, we created three sets of neural state boundaries time series, boundaries unique to searchlights i or j: $S_{i,∼j}$ and $S_{j,∼i}$ and boundaries shared between searchlights i and j: $S_{i&j}$. More formally, using the binary definition of the neural state boundary time series Si and Sj, these are defined at each timepoint t as
 
-Then, we investigated the absolute overlap between each of these three boundary series and the event boundaries as described in the section ‘Comparison of neural state boundaries to event boundaries.’ This resulted in three estimates of absolute boundary overlap; for boundaries unique to searchlight i (OAi,∼j) and searchlight j (OAj,∼i) and the shared boundaries (OAi&j). Then we tested whether the absolute overlap for the shared boundaries was larger than the absolute overlap for non-shared boundaries using the searchlight that showed the largest overlap in their unique boundaries as the baseline: OAi&j>max{OAi,∼j,OAj,∼i}. Because the absolute boundary overlap is scaled by the total number of neural state boundaries, it is not biased when there is a larger or smaller number of shared/non-shared states between searchlights i and j. It is only affected by the proportion of neural state boundaries that overlap with an event boundary. If that proportion is the same for shared and non-shared boundaries, the overlap is also the same.
+$$
+S_{i&j,t}=S_{i,t}⋅S_{j,t},
+$$
+
+
+
+$$
+S_{i,∼j,t}=S_{i,t}−S_{i&j,t},
+$$
+
+
+
+$$
+S_{j,∼i,t}=S_{j,t}−S_{i&j,t}.
+$$
+
+Then, we investigated the absolute overlap between each of these three boundary series and the event boundaries as described in the section ‘Comparison of neural state boundaries to event boundaries.’ This resulted in three estimates of absolute boundary overlap; for boundaries unique to searchlight i ($OA_{i,∼j}$) and searchlight j ($OA_{j,∼i}$) and the shared boundaries ($OA_{i&j}$). Then we tested whether the absolute overlap for the shared boundaries was larger than the absolute overlap for non-shared boundaries using the searchlight that showed the largest overlap in their unique boundaries as the baseline: $OA_{i&j}>max{OA_{i,∼j},OA_{j,∼i}}$. Because the absolute boundary overlap is scaled by the total number of neural state boundaries, it is not biased when there is a larger or smaller number of shared/non-shared states between searchlights i and j. It is only affected by the proportion of neural state boundaries that overlap with an event boundary. If that proportion is the same for shared and non-shared boundaries, the overlap is also the same.
 
 Finally, we performed an exploratory analysis to further investigate how neural state boundaries are shared across the cortical hierarchy. To this end, we used a WSBM to identify groups of timepoints, which we will refer to as ‘communities’ (Aicher et al., 2015). The advantage of WSBM is that it can identify different types of community structures, such as assortative communities (similar to modularity maximization) or core-periphery communities. As the input to the WSBM, we computed the Euclidean distance between the neural state boundary vectors of each timepoint. These neural state boundary vectors contain zeros for searchlights with no boundary and ones for searchlights with a neural state boundary at a specific timepoint. We varied the number of communities from 2 to 10, and we repeated the community detection 1000 times for each number of communities with a random initialization. The WSBM can be informed by the absence or presence of connections and by the connection weights. The alpha parameter α determines the trade-off between the two. Because we used an unthresholded Euclidean distance matrix as the input to the WSBM, we based the community detection only on the weights and not on the absence or presence of certain connections (fixing α to 1). The optimal number of communities was based on the log-likelihood for each number of communities. After identifying the communities, we ordered them based on the average number of neural states per timepoint in each cluster. The algorithm was implemented in MATLAB using code made available at the author’s personal website (http://tuvalu.santafe.edu/waaronc/wsbm/).
 
-## Statistical testing and data visualization
+### Statistical testing and data visualization
 
 The results reported in the article are based on analyses in which data were averaged over all 265 participants (or two groups of ~127 participants for the results in Figure 1). To investigate the statistical significance of the associations within each searchlight, network, or network pair, we also ran separate analyses within 15 independent samples of participants. For each metric of interest, we obtained a p-value for each searchlight by testing whether this metric differed significantly from zero across all 15 independent samples using a Wilcoxon signed-rank test (Wilcoxon, 1945). p-Values were corrected for multiple comparisons using FDR correction (Benjamini and Hochberg, 2000). Results in which the sign of the effect in the one group analysis did not match the sign of the average effect across the 15 independent subgroups were considered non-significant.
 

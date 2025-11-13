@@ -18,13 +18,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02vjkv261 Institut de Biologie de l’ENS (IBENS), Inserm, CNRS, École normale supérieure, PSL Research University Paris France
-2. https://ror.org/01sf06y89 Faculty of Medicine, Health & Human Sciences, Macquarie University, Macquarie Park Sydney Australia
-3. https://ror.org/04t0gwh46 Institut Curie, PSL University, ICGex Next-Generation Sequencing Platform Paris France
-4. https://ror.org/013cjyk83 GenomiqueENS, Institut de Biologie de l'ENS (IBENS), Département de biologie, École normale supérieure, CNRS, INSERM, Université PSL Paris France
-5. https://ror.org/04qe59j94 Inserm U955, Mondor Institute for Biomedical Research (IMRB) Creteil France
-6. https://ror.org/013cjyk83 Institut Curie, Inserm U830, PSL Research University, Diversity and Plasticity of Childhood Tumors Lab Paris France
-7. https://ror.org/04cvxnb49 Institute of Clinical Neuroanatomy, Dr. Senckenberg Anatomy, Neuroscience Center, Goethe University Frankfurt am Main Germany
+1. Institut de Biologie de l’ENS (IBENS), Inserm, CNRS, École normale supérieure, PSL Research University Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+2. Faculty of Medicine, Health & Human Sciences, Macquarie University, Macquarie Park Sydney Australia ([ROR:01sf06y89](https://ror.org/01sf06y89))
+3. Institut Curie, PSL University, ICGex Next-Generation Sequencing Platform Paris France ([ROR:04t0gwh46](https://ror.org/04t0gwh46))
+4. GenomiqueENS, Institut de Biologie de l'ENS (IBENS), Département de biologie, École normale supérieure, CNRS, INSERM, Université PSL Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+5. Inserm U955, Mondor Institute for Biomedical Research (IMRB) Creteil France ([ROR:04qe59j94](https://ror.org/04qe59j94))
+6. Institut Curie, Inserm U830, PSL Research University, Diversity and Plasticity of Childhood Tumors Lab Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+7. Institute of Clinical Neuroanatomy, Dr. Senckenberg Anatomy, Neuroscience Center, Goethe University Frankfurt am Main Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
 
 † Corresponding author
 
@@ -39,6 +39,26 @@ The pelvic ganglion is a collection of autonomic neurons, close to the walls of 
 ## Results
 
 We isolated cells from several autonomic ganglia of postnatal day 5 mice: the stellate ganglion and the lumbar chain (both belonging to the paravertebral sympathetic chain), the coeliac-superior mesenteric complex (belonging to the prevertebral sympathetic ganglia, later refered to as "coeliac"), the sphenopalatine ganglion (parasympathetic) and the pelvic ganglion, and processed them for single-cell RNA sequencing (cf Materials and methods). Neuronal cells segregated in three large ensembles (Figure 1A; Figure 1—figure supplement 1A and B): one that contained all sympathetic neurons, one that contained all parasympathetic neurons, and the third that contained most pelvic neurons – except one subset that segregated close to the sympathetic cluster. Thus, no pelvic neuron segregates with parasympathetic neurons, but the great majority of them do not segregate with sympathetic neurons either.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91576/elife-91576-fig1-v2.jpg)
+
+**Figure 1.:** (A) Uniform Manifold Approximation and Projection (UMAP) of cells isolated from three sympathetic ganglia (lumbar, stellate, and celiac), a parasympathetic ganglion (sphenopalatine), and the pelvic ganglion dissected from postnatal day 5 mice. The pelvic ganglion is sharply divided into four clusters (P1–4), none of which co-segregates with sympathetic or parasympathetic neurons. (B) Heatmap of the highest scoring 100 genes in an all-versus-all comparison of their dichotomized expression pattern among the four ganglia and four pelvic clusters (see ‘Materials and methods’), excluding genes specific to the pelvic ganglion (shown in Figure 1—figure supplement 2), and keeping only the top-scoring comparison for genes that appear twice. For overall legibility of the figure, the three largest cell groups (lumbar, stellate, and sphenopalatine) are subsampled and genes are ordered by expression pattern (designated on the left), rather than score. ‘Cholinergic’ and ‘noradrenergic’ genes are those that are coregulated with ChAT or Th, regardless of known function. ‘Other’ refers to various groupings that split sympathetic ganglia and are thus not informative about a sympathetic or parasympathetic identity. Transcription factors are indicated in bold face. White arrowhead: pelvic P3 cluster; S, sympathetic; ParaS, parasympathetic. (C) Pie chart of the top 100 genes, counted by expression pattern in the all-versus-all comparison. Genes specific for the P4 cluster dominate (see heatmap in Figure 1—figure supplement 2), followed by those which are ‘parasympathetic-not-pelvic’ and ‘sympathetic-and-pelvic’ (seen in B). The three genes marked in white (which form group IV: Bnc2, C1ql2, Col8a1) are the only ones that are compatible with the current dogma of a mixed sympathetic/parasympathetic pelvic ganglion, by being expressed in the sphenopalatine ganglion and a subset of pelvic clusters (other than the full complement of cholinergic ones, which define group V).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91576/elife-91576-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) UMAP of neurons where the sample origin of cells is color-coded to show that both samples of the pelvic ganglion contribute to each of the P1–4 pelvic clusters. (B) UMAP of neurons where the clusters as defined by Seurat are color-coded. Clusters 1, 7, 15, and 19 correspond to ganglion clusters P1, P2, P3, P4 in the text.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91576/elife-91576-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** These 42 genes correspond to pattern VII of main text. Transcription factors are indicated in bold face.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91576/elife-91576-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** P1 appears as the cluster the least sharply defined by specific genes. The only two transcription factors (indicated in bold face) among these top genes are Gata5, expressed in P2 and Mecom expressed in P3. Noradrenergic and cholinergic cells are indicated by Th and ChAT expression in the lower panel.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/91576/elife-91576-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Apart from Hoxb2, all Hox genes are excluded from the sphenopalatine and are expressed either in all sympathetic and pelvic cells (8 genes), caudal sympathetic and pelvic cells (3 genes), or only in pelvic cells (12 genes). Hoxb2 appears in 177th position as {P124/Sphenopalatine} versus {P3/Lumbar/Coeliac/Stellate}, thus as a cholinergic gene in the dichotomized comparison.
 
 The separation, on the Uniform Manifold Approximation and Projection (UMAP), of most pelvic from all other ganglionic cells contrasts with the suite of five developmental transcription factors that we previously reported as differentially expressed between the sympathetic and pelvic ganglia on one hand, and parasympathetic ganglia on the other (Espinosa-Medina et al., 2016). To explore this conundrum, we searched for more genes that would help place the pelvic ganglion relative to the sympatho-parasympathetic dichotomy: additional genes that would put the pelvic ganglion in the sympathetic category (as per our previous findings), genes that would put it in a class by itself (as the UMAP suggests), or genes that would split pelvic neurons into parasympathetic-like and sympathetic-like clusters (as the current dogma implies).
 
@@ -72,21 +92,269 @@ In conclusion, the genetic signatures of neither pre- nor post-ganglionic neuron
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Phox2b::Cre mouse line</td>
+      <td>D’Autréaux et al., 2011</td>
+      <td></td>
+      <td>BAC transgenic line expressing Cre under the control of the Phox2b promoter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosalox-stop-lox-tdTomato (RosatdT) mouse line</td>
+      <td>Madisen et al., 2010</td>
+      <td></td>
+      <td>Knock-in line expressing the reporter gene tdTomato from the Rosa locus in a Cre-dependent manner</td>
+    </tr>
+    <tr>
+      <td>Antibody (primary)</td>
+      <td>α-Phox2b rabbit polyclonal</td>
+      <td>Pattyn et al., 1997</td>
+      <td></td>
+      <td>IHC and IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody (primary)</td>
+      <td>α-TH rabbit polyclonal</td>
+      <td>Invitrogen</td>
+      <td>OPA1-04050</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (primary)</td>
+      <td>α-Choline acetyltransferase (ChAT) goat polyclonal</td>
+      <td>Thermo Fisher</td>
+      <td>PA1-9027</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibodies (secondary)</td>
+      <td>α-Rabbit PK goat polyclonal</td>
+      <td>Vector Laboratories</td>
+      <td>PK-4005</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibodies (secondary)</td>
+      <td>Anti-goat 647donkey polyclonal</td>
+      <td>Thermo Fisher</td>
+      <td>A-21447</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibodies (secondary)</td>
+      <td>Anti-rabbit 488donkey polyclonal</td>
+      <td>Thermo Fisher</td>
+      <td>A-21206</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibodies (secondary)</td>
+      <td>α-Rabbit Cy3donkey polyclonal</td>
+      <td>Jackson</td>
+      <td>711-165-152</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ebf3 (plasmid)</td>
+      <td>Gift of S Garel</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Gata3 (plasmid)</td>
+      <td>Gift of JD Engel</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Hand1 (plasmid)</td>
+      <td>Gift of P Cserjesi</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Hmx2 (plasmid)</td>
+      <td>Gift of EE Turner</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Hmx3 (plasmid)</td>
+      <td>Gift of S Mansour</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Islet1 (plasmid)</td>
+      <td>Tiveron et al., 1996 (10.1523/JNEUROSCI.16-23-07649.1996)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tbx20 (plasmid)</td>
+      <td>Dufour et al., 2006 (10.1073/pnas.0600805103)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Sst (plasmid)</td>
+      <td>Clone Image ID #4981984</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dlx5_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’ -GACGCAAA CACAGGTGAAAATCTGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dlx5_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-GGGCGGGGC TCTCTGAAATG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gata2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-TTGTGTTCTT GGGGTCCTTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gata2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-GCTTCTGTGG CAACGTACAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hmx1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-CGTTCGCCAC TATCCAAACGGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hmx1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-TGTCAGGACT TAGACCACCTCCG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ntn1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-CTTCCTCACC GACCTCAATAAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ntn1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-GCGATTTAG GTGACACTATAGTTGTGCCTACAGTCACACAC C-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Syt6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-GTGGTCTTCT TGTCCCGTGT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Syt6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-CATGTGCTTA CAGGGTGTGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Zbtb16_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-ATGAAAACAT ACGGGTGTGAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Zbtb16_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-CCAAGGCCAA GTAACTATCAGG-3’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetramethyl-rhodamine-conjugated dextran</td>
+      <td>Thermo Fisher</td>
+      <td>D3308</td>
+      <td>For tracing experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBT-BCIP solution</td>
+      <td>Sigma</td>
+      <td>B1911</td>
+      <td>For ISH experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,3’-Diaminobenzidine (DAB)</td>
+      <td>Sigma</td>
+      <td>D12384</td>
+      <td>For IHC experiments</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger software</td>
+      <td>10x Genomics</td>
+      <td></td>
+      <td>6.0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Phox2b::Cre (D’Autréaux et al., 2011): a BAC transgenic line expressing Cre under the control of the Phox2b promoter.
 
 Rosalox-stop-lox-tdTomato (RosatdT) (Madisen et al., 2010): Knock-in line expressing the reporter gene tdTomato from the Rosa locus in a Cre-dependent manner.
 
-## Obtainment of ganglionic cells
+### Obtainment of ganglionic cells
 
 Sphenopalatine, stellate, coeliac, lumbar, and pelvic ganglia were dissected from Phox2bCre;RosatdT P5 pups representing both sexes and placed in artificial cerebrospinal fluid oxygenated with carbogen (4°C). Fat tissue was carefully removed and nerves emanating from the ganglia were cut. Ganglia were transferred into a 1.5 ml Eppendorf tube containing 1 ml PBS-glucose (1 mg/ml glucose), 20 µl papain solution (Worthington LS003126; 25.4 units/mg) and 20 µl DNAse (2 mg/ml in PBS) and incubated at 37°C for 15 min. The ganglia were collected by centrifugation (300×g, 1 min), the supernatant replaced by 1 ml PBS-glucose supplemented with 50 µL Collagenase/Dispase (Worthington CLS-1 345 U/mg; Dispase II Roche 1.2 U/mg; 80 mg Collagenase and 92 mg Dispase II dissolved in 1 ml PBS-glucose) and 20 µl DNAse solution and the ganglia incubated at 37°C for 8 min. After collecting the ganglia by centrifugation for 3 min at 300×g they were dissociated in 1 ml PBS-glucose supplemented with 0.04% bovine serum albumin (BSA) and DNAse (20 µl) by trituration, using a fire-polished, siliconized Pasteur pipette. The cell suspension was then filtered through a 40 µm cell strainer. To eliminate cell debris, the cell suspension was centrifuged through a density step gradient by overlaying the cell suspension onto 1 ml OptiPrep solution (80 µl OptiPrep [Sigma], 900 µl PBS supplemented with 0.04%BSA, 20 µl DNAse) for 15 min, 100×g at 5°C. After removal of the supernatant from the soft cell pellet, the cells were suspended in 100 µl PBS-glucose/0.04% BSA and collected again in a 500 µl Eppendorf tube for 15 min, 100×g at 5°C. The supernatant was carefully removed (under control by fluorescence microscope). After addition of 40 µl PBS-glucose/0.04% BSA, the cell density was adjusted to 1000 cells/μl and transferred to the 10x Genomics platform.
 
-## Library construction and sequencing
+### Library construction and sequencing
 
 Single-cell RNA sequencing was performed in two separate experimental rounds, one for the stellate, sphenopalatine, and pelvic ganglia (pelvic_1) performed at the École normale supérieure GenomiqueENS core facility (Paris, France), and one for the celiac, lumbar and pelvic ganglia (pelvic_2) performed at the ICGex NGS platform of the Institut Curie (Paris, France). Cellular suspensions (10,000 cells for the first round, 5300 cells for the second) were loaded on a 10x Chromium instrument (10x Genomics) to generate single-cell GEMs (5000 for the first round, 3000 for the second). Single-cell RNA sequencing libraries were prepared using Chromium Single Cell 3' Reagent Kit (v2 for the first round, v3 for the second) (10x Genomics) according to the manufacturer’s protocol based on the 10x GEMCode proprietary technology. Briefly, the initial step consisted in performing an emulsion where individual cells were isolated into droplets together with gel beads coated with unique primers bearing 10x cell barcodes, UMI (unique molecular identifiers) and poly(dT) sequences. Reverse transcription reactions were applied to generate barcoded full-length cDNA followed by disruption of the emulsions using the recovery agent and the cDNA was cleaned up with DynaBeads MyOne Silane Beads (Thermo Fisher Scientific). Bulk cDNA was amplified using a GeneAmp PCR System 9700 with 96-Well Gold Sample Block Module (Applied Biosystems) (98°C for 3 min; 12 cycles: 98°C for 15 s, 63°C for 20 s, and 72°C for 1 min; 72°C for 1 min; held at 4°C). The amplified cDNA product was cleaned up with the SPRIselect Reagent Kit (Beckman Coulter). Indexed sequencing libraries were constructed using the reagents from the Chromium Single Cell 3' Reagent Kit v3, in several steps: (1) fragmentation, end repair, and A-tailing; (2) size selection with SPRI select; (3) adaptor ligation; (4) post-ligation cleanup with SPRI select; (5) sample index PCR and cleanup with SPRI select beads (with 12–14 PCR cycles depending on the samples). Individual library quantification and quality assessment were performed using the Qubit fluorometric assay (Invitrogen) with the dsDNA HS (High Sensitivity) Assay Kit and a Bioanalyzer Agilent 2100 using a High Sensitivity DNA chip (Agilent Genomics). Indexed libraries were then equimolarly pooled and quantified by qPCR using the KAPA library quantification kit (Roche). Sequencing was performed on a NextSeq 500 device (Illumina) for the first round and a NovaSeq 6000 (Illumina) for the second, targeting around 400M clusters per sample and using paired-end (26/57 bp for the first round, 28×91 bp for the second).
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 For each of the six samples (pelvic_1, stellate, sphenopalatine, pelvic_2, coeliac, and lumbar) we performed demultiplexing, barcode processing, and gene counting using the Cell Ranger software (v. 6.0.1). The ‘filtered_feature_bc_matrix’ files (uploaded at https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232789) were used as our starting points for defining cells. For each dataset, only droplets that expressed more than 1500 genes, less than 11,000 genes, and a percentage of mitochondrial genes below 15% were retained. This resulted in the selection of 4404 pelvic_1 cells, 7225 stellate cells, 4630 sphenopalatine cells, 1643 pelvic_2 cells, 1428 coeliac, and 2120 lumbar cells.
 
@@ -100,57 +368,103 @@ We then clustered pelvic neurons based on the first two components from the UMAP
 
 To search in an unbiased manner for gene expression similarities between pelvic neurons and either sympathetic or parasympathetic ones, we systematically compared the expression of every gene of the dataset across all possible splits among ganglia, i.e., between every subset of ganglia (‘subset_1’), and its complementary subset (‘subset_2’). Because we treated each of the 4 pelvic clusters as a ganglion, there were 2^8=256 such splits (2 of them, defined by ‘all_8_groups vs none’ and ‘none vs all_8_groups’, being meaningless). For every split and every gene, we devised a score that would best reflect how higher the proportion is of cells expressing the gene (i.e. one read of the gene or more) in subset_1 than in subset_2. We used a metric based on the product of the proportions of cells expressing the gene in each ganglion of subset_1 or subset_2 (rather than throughout subset_1 or subset_2), to give an equal weight to each ganglion (irrespective of its size), and to penalize splits that contain outliers (i.e. ganglia that contain much fewer cells positive for that gene than other ganglia in subset_1, or ganglia that contain much more cells positive for that gene than other ganglia in subset_2).
 
-Specifically, for a given split and a given gene, the score (here defined by the variable score, in the R programming language) is defined as:score=∑i∈S11nS1⋅log2(−1+epspos+numCellsExpr(i)(ncells(i)))−∑j∈S21nS2⋅log2(epsnega+numCellsExpr(j)(ncells(j)))
+Specifically, for a given split and a given gene, the score (here defined by the variable score, in the R programming language) is defined as:
+
+$$
+score=\sumi\inS_{1}\frac{1}{n_{S_{1}}}⋅log_{2}(−1+eps_{pos}+\frac{numCellsExpr(i)}{(n_{cells}(i))})−\sumj\inS_{2}\frac{1}{n_{S_{2}}}⋅log_{2}(eps_{nega}+\frac{numCellsExpr(j)}{(n_{cells}(j))})
+$$
 
 where:
 
-## In vivo gene expression
+### In vivo gene expression
 
-## Tissue preparation
+#### Tissue preparation
 
 Embryo sections: E16.5 WT embryos were freshly dissected, washed with 1× PBS, and fixed overnight in 4% PFA at 4°C. Tissues were washed a few times in 1× PBS and treated in 15% sucrose to cryopreserve the tissues for frozen tissue sections. Tissues were then embedded in the optimal cutting temperature compound and snap-frozen. Tissues were cut at 14 μm on a cryostat. Tissue sections were stored at –80°C until use for staining.
 
-## In situ hybridization
+#### In situ hybridization
 
 Frozen tissue sections were washed in 5× SSC buffer 15 min at room temperature (RT) and treated in the pre-hybridization solution (50% formamide, 5× SSC buffer, and 40 μg/ml Herring sperm DNA in H2O) for 1 hr at 60°C. Then, slides were put in the hybridization solution (50% formamide, 5× SSC buffer, 5× Denhardt’s, 500 μg/ml Herring sperm DNA, 250 μg/ml yeast RNA, and 1 mM DTT in H2O) containing the probe (100 ng/ml), at least two overnights at 60°C. Slides were washed two times in 5× SSC buffer (5 min) and two times in 0.2× SSC buffer (30 min) at 70°C, and then, three times in TBS at RT (10 min). Then, tissues were put in the blocking solution (TBS+10% FCS) for 1 hr in the dark, at RT and in humid atmosphere (250 μl/slide) and incubated 1 hr with the primary antibody (anti-DIG) diluted 1/200 in blocking solution (250 μl/slide). Then, slides were washed again three times in TBS (10 min) and treated 5 min in the AP buffer solution (100 nM Tris pH 9.5, 50 nM MgCl2, and 100 nM NaCl in H2O). The revelation was made by the NBT-BCIP solution (Sigma) in the dark (250 μl/slide). The reaction was stopped in PBS-Tween (PBST).
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 After in situ hybridization, frozen tissues were fixed 15 min in 4% PFA at RT and washed in PBST. Then, tissues were incubated in PBST+10% FCS in the dark for 1 hr (500 μl/slide, without coverslip) and incubated overnight with the primary antibody in the same solution at 4°C (250 μl/slide). Slides were washed in PBST three times (10 min) and incubated for 2 hr at RT with the secondary antibody in the same solution again. Tissues were washed three times in PBST and then incubated at RT with avidin/biotin solution diluted 1/100 in 1× PBS. Then, tissues were washed three times and the revelation was made in 3,3’-diaminobenzidine (DAB) solution containing DAB and urea in H2O (Sigma). The reaction was stopped in PBST, and slides were washed in PBST and in ultra-pure H2O. Slides were mounted in Aquatex mounting medium (Merck).
 
-## Imaging
+#### Imaging
 
 Tissues processed by an in situ hybridization and immunohistochemistry were photographed on a Leica bright-field microscope with a 40× oil immersion objective. Images were then treated by Photoshop v. 24.1.0.
 
-## Anterograde tracing
+### Anterograde tracing
 
-## Tracer injections
+#### Tracer injections
 
 Surgeries were conducted under aseptic conditions using a small animal digital stereotaxic instrument (David Kopf Instruments). Male, C57bl mice (2–4 months of age) were anesthetized with isoflurane (3.5% at 1  l/min for induction and 2–3% at 0.3  l/min for maintenance). Carprofen (0.5 mg/kg) was administered subcutaneously for analgesia before surgery. A feedback-controlled heating pad was used to maintain the animal temperature at 36°C. Anesthetized animals were shaved along the spine and placed in a stereotaxic frame. The skin overlying the spine was sterilized with alternating scrubs of Vetadine and 80% (wt/vol) ethanol and a 100 μl injection of lidocaine (2%) was made subcutaneously along the spine before an incision was made from the iliac crest to the T9 vertebral spinous process. The T10 and T11 spinous processes were identified by counting rostrally from the L6 spinous process (identified relative to the iliac crest). Two small rostro-caudal incisions were made on each side of the vertebral column through the superficial-most layer of muscle. Parallel clamps were then placed within these incisions until firm contact was made with the transverse process of the T11 vertebra. The T11 vertebra was then raised upward via the clamps until no respiratory movement was observed. The muscles connecting the T10 spinous process to transverse processes of caudal vertebra were dissected to expose the T10/T11 intervertebral space. A lateral incision was made across the dura to expose the underlying L1 spinal segment and 150 nl injections of 4% lysine fixable, tetramethylrhodamine or Alexa-488-conjugated dextran, 3000 MW (Thermo Fisher) were made bilaterally, into the intermediolateral nucleus and intermedio-medial nucleus (0.600 mm lateral, 0.600 mm deep and 0.150 mm lateral and 0.700 mm deep) using a narrow-tapered glass pipette and a Nanoject III injector (Drummond Scientific). Injections were made at 5 nl per second and left in place for 5 min following injection to prevent dextran leakage from the injection site. The pipette was then retracted, and the intervertebral space bathed with sterile physiological saline. A small piece of sterile gel foam hemostat (Pfizer) was then placed within the intervertebral space and the incision overlying the spine was sutured closed.
 
-## Histology
+#### Histology
 
 7–14 days after injection the mice were intracardially perfused with cold PBS until exsanguinated and subsequently fixed by perfusion with cold 4% PFA until the carcass became stiff. The bladder, prostate, and pelvic ganglia were immediately dissected as an intact bloc and post-fixed in 4% PFA overnight at 4 °C. The intact spinal column was also dissected out and the dorsal surface of the spinal cord exposed before post-fixation overnight in 4% PFA at 4 °C. The fixed tissues were then rinsed in PBS 3×30 min the following day. The ‘bladder block’ was then cryopreserved in 15% sucrose (wt/vol) in PBS until non-buoyant. The dorsal aspect of the injection site was imaged in situ using fluorescence stereoscope. The spinal cord was then dissected out and cryopreserved as described above.
 
 The bladder block was sectioned on a cryostat in a sagittal orientation to capture serial sections of the entire pelvic ganglion. Sections were cut at a thickness of 30 µm and collected as a 1 in 4 series on Superfrost Plus glass slides. The spinal cord was sectioned coronally at a thickness of 60 µm as a 1 in 2 series. On slide immunohistochemistry was performed against tyrosine hydroxylase (TH) and choline acetyltransferase (CHAT) for the bladder block sections, primary incubation: 4–6 hr at RT, secondary incubation: 2 hr at RT, with 3×5 min washes in PBS after each incubation. Sections were then mounted with dako fluorescence mounting medium and coverslipped.
 
-## Imaging
+#### Imaging
 
 Sections were imaged on a Leica Stellaris 5 confocal microscope (Leica microsystems). Images of the pelvic ganglia were captured as Z-stacks with 1 µm interslice distances, with a 20× objective at 2000 mp resolution.
 
-## Counting
+#### Counting
 
 All ganglionic cells and cells surrounded by dextran labeled varicosities were identified as either CHAT or TH positive and counted, on a total of 4 animals, 48 sections, and 3186 cells.
 
-## Probes
+### Probes
 
 Primers were designed to amplify by PCR probe templates for the following genes:
+
+<table>
+  <thead>
+    <tr>
+      <th>Probe</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dlx5</td>
+      <td>5’-GACGCAAACACAGGTGAAAATCTGG-3’</td>
+      <td>5’-GGGCGGGGCTCTCTGAAATG-3’</td>
+    </tr>
+    <tr>
+      <td>Gata2</td>
+      <td>5’-TTGTGTTCTTGGGGTCCTTC-3’</td>
+      <td>5’-GCTTCTGTGGCAACGTACAA-3’</td>
+    </tr>
+    <tr>
+      <td>Hmx1</td>
+      <td>5’-CGTTCGCCACTATCCAAACGGG-3’</td>
+      <td>5’-TGTCAGGACTTAGACCACCTCCG-3’</td>
+    </tr>
+    <tr>
+      <td>Ntn1</td>
+      <td>5’-CTTCCTCACCGACCTCAATAAC-3’</td>
+      <td>5’-GCGATTTAGGTGACACTATAGTTGTGCCTACAGTCACACACC-3’</td>
+    </tr>
+    <tr>
+      <td>Syt6</td>
+      <td>5’-GTGGTCTTCTTGTCCCGTGT-3’</td>
+      <td>5’-CATGTGCTTACAGGGTGTGG-3’</td>
+    </tr>
+    <tr>
+      <td>Zbtb16</td>
+      <td>5’-ATGAAAACATACGGGTGTGAA-3’</td>
+      <td>5’-CCAAGGCCAAGTAACTATCAGG-3’</td>
+    </tr>
+  </tbody>
+</table>
 
 The PCR fragment were ligated into a pGEM-T Easy Vector System (Promega), transformed into chemically competent cells and sequenced. The other plasmid templates were Ebf3 (gift of S Garel), Gata3 (gift of JD Engel), Hand1 (gift of P Cserjesi), Hmx2 (gift of EE Turner), Hmx3 (gift of S Mansour), Islet1 (Tiveron et al., 1996), Tbx20 (Dufour et al., 2006) and Sst (Clone Image ID #4981984).
 
 Plasmids were digested by restriction enzymes and purified using a DNA Clean & Concentrator kit (Zymo Research). Antisense probes were synthesized with RNA polymerases and a DIG RNA labeling mix, and purified by the ProbeQuant G-50 micro columns kit (GE Healthcare). Probes were stored at –20°C.
 
-## Antibodies
+### Antibodies
 
 Primary antibodies were α-PHOX2B rabbit (1:500 or 1:1000, Pattyn et al., 1997). α-TH (Invitrogen: OPA1-04050, 1:1000) and α-CHAT (Thermo Fisher: PA1-9027, 1:100).
 

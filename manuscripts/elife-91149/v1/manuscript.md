@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05wvpxv85 Department of Neuroscience, Tufts University School of Medicine Boston United States
+1. Department of Neuroscience, Tufts University School of Medicine Boston United States ([ROR:05wvpxv85](https://ror.org/05wvpxv85))
 
 † Corresponding author
 

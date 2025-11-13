@@ -39,45 +39,89 @@ Using optogenetics, which provides the spatial resolution to restrict opsin expr
 
 ## Results
 
-## Injections of lentivirus expressing the light-activated anion channel GtACR2 are targeted to the preBötC
+### Injections of lentivirus expressing the light-activated anion channel GtACR2 are targeted to the preBötC
 
 To induce rapid, reversible and powerful inhibition of neural activity in the preBötC, we injected a lentivirus inducing expression of GtACR2 (Govorunova et al., 2015) bilaterally. Injections were directed by electrophysiological recordings to identify inspiratory neurons in the rostral-most part of the ventral inspiratory cell column in the medulla oblongata. Post hoc histological analysis revealed the GtACR2 expression was targeted to the gap in the rostrocaudal column of parvalbumin-expressing neurons (Figure 1A; Alheid et al., 2002), dorsal to tyrosine hydroxylase (TH)-expressing A1-C1 neurons, ventral to the caudal tip of the compact part of the nucleus ambiguus, and at the level containing the highest density of neurokinin type 1 receptor (NK1R)-positive neurons (Figure 1B). Together these markers characterize the preBötC area. GtACR2 was expressed in both excitatory (glutamatergic) and inhibitory (GABAergic and glycinergic) neurons in the preBötC (Figure 1C–E). A heatmap representation of GtACR2 expression in all the 12 animals used for the in situ Working Heart-Brainstem Preparation (WHBP) experiments shows that intersectional GtACR2 expression across all animals is restricted to the preBötC area (Figure 1F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig1-v2.jpg)
 
-**Figure 1.:** GtACR2, in the preBötC.(A) Sagittal and (B) coronal sections showing expression of GtACR2-yellow fluorescent protein (YFP) and parvalbumin (PV), tyrosine hydroxylase (TH), choline acetyltransferase (ChAT) and neurokinin type 1 receptor (NK1R) immunoreactivity. (C) In situ hybridization showing GtACR2-YFP expression in glutamatergic (Ci), glycinergic (D) and GABAergic (E) neurons in the preBötC, as indicated by black arrows. (F) Schematic coronal maps, based on atlas of Paxinos and Watson, 2004, showing the distribution of GtACR2-YFP from all rats (n = 12) used in Working Heart-Brainstem Preparation experiments relative to TH, ChAT and NK1R expression. Each rat is depicted in green with the gradation to yellow indicating increasing overlap in expression between animals, and indicating that the common expression area overlies the preBötC. Scale bars are 500 µm (Ai, Aii, B, C) or 50 µm (Ci, D, E).
+**Figure 1.:** (A) Sagittal and (B) coronal sections showing expression of GtACR2-yellow fluorescent protein (YFP) and parvalbumin (PV), tyrosine hydroxylase (TH), choline acetyltransferase (ChAT) and neurokinin type 1 receptor (NK1R) immunoreactivity. (C) In situ hybridization showing GtACR2-YFP expression in glutamatergic (Ci), glycinergic (D) and GABAergic (E) neurons in the preBötC, as indicated by black arrows. (F) Schematic coronal maps, based on atlas of Paxinos and Watson, 2004, showing the distribution of GtACR2-YFP from all rats (n = 12) used in Working Heart-Brainstem Preparation experiments relative to TH, ChAT and NK1R expression. Each rat is depicted in green with the gradation to yellow indicating increasing overlap in expression between animals, and indicating that the common expression area overlies the preBötC. Scale bars are 500 µm (Ai, Aii, B, C) or 50 µm (Ci, D, E).
 
-## The preBötC is necessary for inspiratory rhythm generation
+### The preBötC is necessary for inspiratory rhythm generation
 
 The preBötC is mostly studied for its critical role in inspiratory rhythm generation. Prolonged GtACR2-mediated preBötC photoinhibition, either in vivo in anesthetized rats (n = 5) or in the in situ WHBP (n = 12), produced immediate cessation of inspiratory activity and a long-lasting apnea (Figure 2A–C; Figure 3A–C). Following the apnea, whilst preBötC photoinhibition remained activated, inspiratory activity resumed, but with an altered pattern of intercostal muscle (intC) electromyograph (EMG) activity in vivo (Figure 2A–B) or phrenic nerve activity in situ (PNA; Figure 3A–C and H; Figure 3—figure supplement 1A–B). In the WHBP, the longest apnea was produced by 10 and 20 Hz photoinhibition (Figure 3A–C). When PNA resumed, 5–10 Hz photoinhibition induced shorter and smaller PNA bursts, whilst PNA burst characteristics were not altered by 20–50 Hz photoinhibition.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig2-v2.jpg)
+
+**Figure 2.:** (A) Intercostal (intC) electromyograph (EMG) recording in an anesthetized P31 rat with bilateral GtACR2 expression in the preBötC, showing bursts of inspiratory activity with the electrocardiogram superimposed, from which heart rate (HR) is derived. Prolonged (20 Hz, 10 ms pulses, 300 pulses) preBötC photoinhibition, starting during inspiration, immediately stopped the inspiratory burst and induced a long apnea, before respiratory activity resumed even though preBötC photoinhibition continued. PreBötC photoinhibition also induced a profound bradycardia, and a decrease in arterial pressure as shown on Figure 2—figure supplement 1 on a separate animal cohort (n = 3). (B) Enlargements of the shaded areas in (A), showing that the first pulse of light immediately stops the intC EMG inspiratory burst, and that when breathing activity resumes during preBötC photoinhibition the intC EMG inspiratory bursts are crenelated with periodic cessations of intC EMG activity after each light pulse. Note that the overall intC EMG ramping discharge pattern is maintained. Respiratory sinus arrhythmia (RSA), the oscillations in HR in phase with respiratory activity, is abolished during preBötC photoinhibition, even when breathing activity resumes. (C–D) PreBötC photoinhibition induced a prolonged cessation of breathing activity, bradycardia and suppression of RSA in all animals tested (n = 5, mean ± SEM for group values; one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test performed on raw data, as shown on the associated source data and detailed statistics; *p<0.05, **p<0.01, photoinhibition vs. control and recovery conditions). (E–F) Whole-cell recordings (low Cl- internal solution, ECl-=−68.8 mV) of GtACR2-positive solitary tract nucleus neurons in brainstem slices in voltage clamp ((E), holding voltage −40 mV) and current clamp (F) modes. (E) GtACR2 photostimulation induced large inhibitory conductances that showed fast activation and deactivation kinetics, and little inactivation, as previously shown (Govorunova et al., 2015). The photocurrents persisted throughout the prolonged photostimulation protocols. (F) In a spontaneously active cell, GtACR2 photostimulation prevented action potential firing when the light pulse was delivered at the appropriate timing, resulting in complete firing cessation during prolonged high frequency photostimulations including and above 20 Hz.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** In a separate cohort (n = 3) from the one shown on Figure 2, we recorded diaphragm (Dia) electromyograph (EMG) activity, heart rate (HR) and arterial pressure (AP) in anesthetized P31 rats with bilateral GtACR2 expression in the preBötC. Prolonged preBötC photoinhibition induced a long apnea, before respiratory activity resumed even though preBötC photoinhibition continued. PreBötC photoinhibition also induced a profound bradycardia and decreased AP.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig3-v2.jpg)
+
+**Figure 3.:** (A) Recording of phrenic nerve activity (PNA), vagus nerve activity (VNA) and thoracic sympathetic nerve activity (tSNA), heart rate (HR) and perfusion pressure (PP), in an in situ Working Heart-Brainstem Preparation (WHBP) with bilateral photoinhibition of the preBötC at 5, 10, 20 and 50 Hz. Following the initial apnea, PNA resumed despite continued preBötC photoinhibition. VNA increased and HR decreased for the entire photoinhibition period. A transient decrease in tSNA and PP, concomittent with the apnea, was followed by increases in tSNA and PP with the return of PNA. (B) Higher resolution recordings of the shaded areas in (A) showing the strongest physiological effects occurred with 20 Hz and 10 Hz photoinhibition. (C–G) Group data (n = 12), expressed as change relative to the pre-photoinhibition control period, examining changes in respiratory parameters, including PNA characteristics following resumption of activity during continued photoinhibition (C); VNA measured outside of inspiratory/post-inspiratory activities (non-resp) and in the post-inspiratory period (D); HR (E) tSNA (F) and PP (G). Details regarding VNA and tSNA analysis are shown on Figure 3—figure supplement 2. (H) Higher temporal resolution recordings of the periods denoted by arrowheads in (B), showing the crenelated PNA burst shape, yet with maintained ramping discharge pattern. Analysis of the first five PNA burst silence periods, denoted by arrowheads in (H), showed the 20 Hz photoinhibition induced shorter silence durations. Group data are presented as mean ± SEM; Friedman repeated measures analysis of variance on ranks followed with pairwise multiple comparison Tukey test, one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test, paired student’s t-test or Wilcoxon signed rank test, performed on raw data, as shown on Figure 3—figure supplement 1 and associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, photoinhibition vs. control and recovery conditions; # p<0.05, ## p<0.01, ### p<0.001, between compared data; ‡ p<0.05, ‡‡ p<0.01, ‡‡‡ p<0.001, intra-photostimulation frequency vs. max change.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F) Individual data for the in situ WHBP of P31 rats with bilateral GtACR2 expression in the preBötC, presented as group data in Figure 3. (A) Individual data for respiratory frequency, and PNA burst inspiratory duration and amplitude, presented as group data in Figure 3C. During prolonged 20 Hz preBötC photoinhibition, PNA bursts were transiently silenced after each light pulse as shown on Figure 3H. (B) The duration of PNA burst silences during an individual burst decreased with continued photoinhibitory pulses. The abscissae shows successive PNA bursts with the duration of silences on the ordinate, starting from the first pulse of light that impacted the analysed PNA burst. (C) Individual data for VNA measured outside (non-resp) the inspiratory/post-inspiratory activities, and for the post-inspiratory component of VNA, presented as group data in Figure 3D. (D) Individual data for HR, presented as group data in Figure 3E. HR decreased in steps at the beginning of preBötC photoinhibition, the first step being reached earlier in the high-frequency preBötC photoinhibitions. Similarly, the time to reach maximum bradycardia from the beginning of preBötC photoinhibition trials was shorter with high-frequency preBötC photoinhibition. The time to return to basal HR, during the recovery period, was only shorter for the 50 Hz photoinhibition compared to other frequencies. (E) Individual data for mean tSNA, presented as group data in Figure 3F. The mean tSNA decrease was more pronounced for 10 Hz and 20 Hz preBötC photoinhibition, both in amplitude and duration. (F) Individual data for mean PP, presented as group data in Figure 3G, and for pulse pressure. PP decrease duration for 10 Hz, 20 Hz and 50 Hz preBötC photoinhibitions followed the same timing as mean tSNA decrease, but not for 5 Hz preBötC photoinhibition, likely due to the decreased RespSNA and Traube-Hering waves that lasted the entire 5 Hz preBötC photoinhibition period. (G) Linear regression analysis of data, showing that the overall cardiac parasympathetic drive elicited by preBötC photoinhibition is unrelated to the presence of respiratory activity. In contrast, the vasomotor sympathetic tone is directly related to it, suggesting different mechanisms of action. Group data are presented as mean ± SEM; Friedman repeated measures analysis of variance on ranks followed with pairwise multiple comparison Tukey test, one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test, paired student’s t-test or Wilcoxon signed rank test, performed on raw data, as shown on the associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, photoinhibition vs. control and recovery conditions; # p<0.05, ## p<0.01, ### p<0.001, between photostimulation frequencies; ‡ p<0.05, ‡‡ p<0.01, ‡‡‡ p<0.001, intra-photostimulation frequency vs. max change.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Prolonged photoinhibition of the preBötC induced three different effects on total tSNA, depending on the respiratory status. To demonstrate this, we analyzed, as a repeated measures comparison, the mean integrated tSNA during a pre-photoinhibition control period; the initial photoinhibition period with the maximal tSNA decrease during the apneic period; the photoinhibition period where PNA restarted and there was a maximal tSNA increase; the end of the photostimulation period; and in the recovery post-photoinhibition period. These periods are shown in grey on the integrated tSNA trace in A. Analysis of total tSNA is shown on Figure 3F and Figure 3—figure supplement 1E. (B) To assess whether preBötC prolonged photoinhibition could have specific effects on the phasic respiratory-associated and tonic non-respiratory-associated components of tSNA and VNA, we performed respiratory (end of PNA) triggered averaging of integrated tSNA and VNA. The phasic burst of respiratory modulation of tSNA, called here RespSNA, was analyzed for its duration, amplitude, and AUC above tonic tSNA. Non-respiratory-modulated tSNA was called tonic tSNA, and analyzed as the mean activity outside the burst of RespSNA. RespSNA analysis is presented on Figure 6B and Figure 6—figure supplement 1A, tonic tSNA analysis is presented on Figure 6B and Figure 6—figure supplement 1B. Both respiratory and non-respiratory components of integrated VNA were also quantified. Efferent VNA was measured from the cervical level, where it contains activities going to multiple targets, including respiratory activity going to the upper airways, and parasympathetic activity going to the heart. The peak of post-inspiratory activity was quantified and called Post-I VNA. Mean VNA activity during the late-expiratory phase, which does not contain respiratory-related activity on this nerve, was quantified and called non-resp VNA, as shown on Figure 3D and Figure 3—figure supplement 1C. The same analysis was performed for preBötC prolonged photoexcitation.
 
 A single 10 ms light pulse at any time during inspiration was sufficient to immediately stop the PNA burst and trigger post-inspiration (Figure 7A–C). The duration of the following expiratory period was correlated to the duration and amplitude of the stopped inspiration, mostly by adjusting the post-inspiratory phase duration. Photoinhibition of the PreBötC only during the expiratory period prolonged the expiratory time for the duration of the photoinhibition, and PNA activity resumed following a short (~1 s) post-photoinhibition delay (Figure 7E).
 
 In whole-cell recordings of GtACR2-expressing neurons (n = 7) in brainstem slices of the dorsal medulla, we observed strong, and sustained, hyperpolarisation with GtACR2 photoactivation (Figure 2F), induced by large inhibitory conductances (Figure 2E). This hyperpolarisation continued for the entire period of light delivery, and in spontaneously active neurons, complete blockade of action potential firing was obtained with 10 ms duration light pulses at 20 Hz. On the basis of these recordings, it is not clear why inspiratory activity resumed during prolonged photoinhibition.
 
-## Prolonged preBötC photoinhibition induces decreased vasomotor sympathetic activity and increased cardiac parasympathetic activity
+### Prolonged preBötC photoinhibition induces decreased vasomotor sympathetic activity and increased cardiac parasympathetic activity
 
 Due to the profound apnea, which would alter blood gas composition and sensory afferent input, detailed analysis of the cardiorespiratory response to preBötC photoinhibition was not feasible in vivo and hence detailed analyses were performed in the WHBP, an oxygenated, perfused preparation devoid of the depressive effects of anaesthesia and where central respiratory perturbations do not influence peripheral blood gases or pH (Menuet et al., 2017; Paton, 1996). During prolonged preBötC photoinhibition, thoracic sympathetic nerve activity (tSNA) showed initial inhibition during apnea, and then a return toward control levels as central respiratory activity resumed (Figure 3A and F; Figure 3—figure supplement 1E and G; Figure 3—figure supplement 2A). This was reflected in an initial decrease in perfusion pressure (PP), followed by an acute increase (Figure 3A and G; Figure 3—figure supplement 1F–G) that were maximal with 20 Hz photoinhibition. We also observed a strong increase in vagal nerve activity (VNA) and decrease in HR (bradycardia) (Figure 2A–B and D; Figure 3A–B and D–E; Figure 3—figure supplement 1C–D). Unlike the sympathetic vasomotor effect, the bradycardia lasted the entire photoinhibition period and was not correlated to the apnea duration (Figure 3—figure supplement 1G). The bradycardia was due to increased cardiac parasympathetic drive (measured as non-resp VNA, Figure 3A and D, Figure 3—figure supplement 2B) as it was abolished by bath application of the muscarinic antagonist, atropine (Figure 4). The biphasic tSNA and PP responses to preBötC photoinhibition were maintained during atropine (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig4-v2.jpg)
 
-**Figure 4.:** (A) The effect of bath application of the muscarinic antagonist, atropine, in the in situ WHBP of a P31 rat. (B) Group data (n = 7) showing that atropine induced an increase in HR and abolished RSA, confirming its effective blockade of cardiac parasympathetic modulation. (C) Prolonged 20 Hz preBötC photoinhibition before, and after, bath application of atropine. (D) Atropine did not affect the increase in VNA induced by preBötC photoinhibition, but totally blocked the decrease in HR, showing that preBötC photoinhibition induces increased cardiac parasympathetic drive. The sympathetic vasomotor effects induced by preBötC photoinhibition were not altered by atropine, showing that they are not mediated by baroreflex afferents. Group data are presented as mean ± SEM; paired student’s t test, Wilcoxon signed rank test or two-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test performed on raw data, as shown on the associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, photoinhibition vs. control condition (B), or vs. control and recovery conditions (D); # p<0.05, ### p<0.001, between photostimulation conditions.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) The effect of bath application of the muscarinic antagonist, atropine, in the in situ WHBP of a P31 rat. (B) Group data (n = 7) showing that atropine induced an increase in HR and abolished RSA, confirming its effective blockade of cardiac parasympathetic modulation. (C) Prolonged 20 Hz preBötC photoinhibition before, and after, bath application of atropine. (D) Atropine did not affect the increase in VNA induced by preBötC photoinhibition, but totally blocked the decrease in HR, showing that preBötC photoinhibition induces increased cardiac parasympathetic drive. The sympathetic vasomotor effects induced by preBötC photoinhibition were not altered by atropine, showing that they are not mediated by baroreflex afferents. Group data are presented as mean ± SEM; paired student’s t test, Wilcoxon signed rank test or two-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test performed on raw data, as shown on the associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, photoinhibition vs. control condition (B), or vs. control and recovery conditions (D); # p<0.05, ### p<0.001, between photostimulation conditions.
 
-## The preBötC is sympatho-excitatory and parasympatho-inhibitory
+### The preBötC is sympatho-excitatory and parasympatho-inhibitory
 
 To avoid secondary circuit effects arising from sustained photoinhibition, we used single light-pulse preBötC photoinhibition to test direct functional connectivity with sympathetic and parasympathetic activities. Laser-triggered averaging of tSNA and VNA following low-frequency (1 Hz) preBötC photoinhibition confirmed opposite sympathetic and parasympathetic effects (Figure 5; Figure 5—figure supplement 1). PreBötC photoinhibition induced a small sympatho-excitation that peaked ~65 ms following the light pulse, and mainly a strong sympatho-inhibition that was maximal at ~135 ms. PreBötC photoinhibition induced dramatic parasympathetic excitation, which could be seen on VNA recordings in response to individual light pulses (Figure 5A–B). This parasympatho-excitation was very fast, peaking at ~7 ms (Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig5-v2.jpg)
+
+**Figure 5.:** Traces of activity in the WHBP at low (A) and higher (B) time resolution, showing that preBötC photoinhibition at 1 Hz disrupts PNA, VNA and tSNA. (C) Laser triggered averages of integrated VNA and tSNA (tc 5 ms, 300 pulses), show that preBötC photoinhibition induced: a rapid excitation of VNA at short latency, sometimes accompanied by a second or third peak (arrowheads in inset); and an initial small tSNA peak and a subsequent larger tSNA trough of longer latency. These effects were found irrespective of the respiratory phase at which the light pulse was delivered. Group data are presented as mean ± SEM; one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test performed on raw data, as shown on Figure 5—figure supplement 1 and associated source data and detailed statistics; # p<0.05, ## p<0.01, ### p<0.001, between respective effects.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Individual data for the laser triggered averaging of integrated VNA and tSNA (tc 5 ms, 300 pulses) presented in Figure 5C. Group data are presented as mean ± SEM; one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test performed on raw data, as shown on the associated source data and detailed statistics; # p<0.05, ## p<0.01, ### p<0.001, between respective effects.
+
 We conclude that neurons within the preBötC exert direct excitatory effects on vasomotor sympathetic pathways and inhibitory effects on cardiac parasympathic pathways. We next investigated the role played by PreBötC neurons in the respiratory modulation of tSNA (RespSNA), PP (Traube-Hering waves) and HR (RSA).
 
-## PreBötC activity contributes to the generation of RespSNA and Traube-Hering waves
+### PreBötC activity contributes to the generation of RespSNA and Traube-Hering waves
 
 When respiration resumed during prolonged preBötC photoinhibition, the return of RespSNA and Traube-Hering waves mirrored the return of PNA inspiratory activity (Figure 3A–C and Figure 6A). Like PNA, both RespSNA and Traube-Hering wave amplitudes were strongly decreased during 10 Hz preBötC photoinhibition, but unaffected during 20 Hz photoinhibition (Figure 6A–B; Figure 6—figure supplement 1A and 6S1D), and overall individual changes in RespSNA area under the curve (AUC) and Traube-Hering wave amplitude correlated closely with changes in PNA amplitude (Figure 6C). Decreased RespSNA duration during 10 Hz photoinhibition was specifically due to a shorter inspiratory component (Figure 6D; Figure 6—figure supplement 1A and C). In contrast, mean tonic tSNA was not altered during preBötC photoinhibition (Figure 6B; Figure 6—figure supplement 1B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig6-v2.jpg)
+
+**Figure 6.:** (A) Traces from one rat and group analysis of the PNA-related oscillations in HR (RSA), tSNA (RespSNA) and systolic PP (Traube-Hering waves). PNA burst-triggered averaging (bottom traces) was performed during control conditions (pre- and post-photoinhibition), and during 10 Hz and 20 Hz photoinhibition when PNA had returned. (B) Quantification of the group data showing the effect of preBötC photoinhibition on RespSNA duration, amplitude and area under the curve (AUC), mean tonic tSNA (baseline tSNA outside of RespSNA), Traube-Hering wave amplitude, and RSA. (C) Correlation analysis indicates that the PNA amplitude is correlated with RespSNA AUC and Traube-Hering wave amplitude, but not RSA amplitude. The latter indicates that the preBötC generates RSA by a mechanism unrelated to the generation of the PNA inspiratory bursts. The incidence of preBötC photoinhibition on the timing of the onset, peak and end of the RespSNA burst is shown in (D). Group data are presented as mean ± SEM; two-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test performed on raw data, as shown on Figure 6—figure supplement 1 and associated source data and detailed statistics; **p<0.01, ***p<0.001, photoinhibition vs. control and recovery conditions; ### p<0.001, between photostimulation frequencies.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Individual data for the RespSNA, tonic tSNA, Traube-Hering wave and RSA group data presented in Figure 6B. (E) The amplitude of Traube-Hering waves during 10 Hz and 20 Hz preBötC photoinhibition is correlated to RespSNA AUC. Two-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test, as shown on the associated source data and detailed statistics; **p<0.01, ***p<0.001, photoinhibition vs. control and recovery conditions; ### p<0.001, between photostimulation frequencies.
+
 Single light pulses delivered during early inspiration arrested PNA bursts (AUC reduced by ~75%) and almost abolished the associated RespSNA and Traube-Hering wave (Figure 7A–D; Figure 7—figure supplement 1A). PreBötC photoinhibition during early post-inspiration had no impact on PNA or RespSNA and induced a small increase in Traube-Hering wave amplitude. Tetanic preBötC photoinhibition during expiration induced exaggerated RespSNA and Traube-Hering wave amplitude, which is likely due to the increased pulse pressure associated with the bradycardia (Figure 7E).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig7-v2.jpg)
+
+**Figure 7.:** (A, B) Traces showing the effect of single light pulse (10 ms) preBötC photoinhibition on phrenic (PNA), vagal (VNA) and thoracic sympathetic (tSNA) nerve activity, HR and systolic perfusion pressure (sPP) at low (A) and high (B) time resolution in the WHBP. Pulses were applied during early (top traces, (a) and late (bottom traces, (b) inspiration. (C) Triggered averages of PNA and VNA showing that single pulse photoinhibition of preBötC delivered during early (orange, 40% and 50% inspiratory duration), mid- (grey, 60% and 70% inspiratory duration) or late inspiration (green, 80% and 90% inspiratory duration) immediately stopped inspiration (Insp) and triggered post-inspiration (Post-I). For analysis, inspiratory burst duration was normalized to the bottom (black) control trace. The correlograms, showing analysis across multiple respiratory cycles in all animals, with each animal represented by a single color, indicate that the duration of the expiratory phase (Exp, the addition of Post-I and late expiration, (E2) is determined by the duration and amplitude of the preceeding inspiratory period. Data are expressed in % relative to intra-preparation averaged control values, to normalize variability in respiratory phase durations between preparations. (D) PNA burst-triggered averages of HR, PNA, tSNA and sPP were used to derive RSA amplitude, mean PNA AUC, RespSNA AUC and Traube-Hering wave amplitude during control (black) and preBötC photoinhibition in early (orange), late (green) or early post-inspiration (brown). Data are expressed relative to intra-preparation control conditions, and were analyzed for the respiratory cycle during which preBötC photoinhibition occurred and the following, to evaluate direct and indirect photoinhibition effects. (E) Traces showing that when delivered during expiration, preBötC photoinhibition increased VNA for the entire photoinhibition period, but only transiently decreased tSNA. The latter effect was amplified with successive bouts of expiratory preBötC photoinhibition, also inducing increases in RespSNA. PNA bursting always occured following a short (~1 s) post-photoinhibition delay. Group data are presented as mean ± SEM; one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test or Friedman repeated measures analysis of variance on ranks followed with pairwise multiple comparison Tukey test performed on raw data, as shown on Figure 7—figure supplement 1 and associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, different vs. the two other conditions.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Individual data for the PNA AUC, RSA, RespSNA and Traube-Hering waves presented in Figure 7D. (B) Representation of the three phases of the respiratory cycle as observed in PNA burst-triggered averages of HR, sPP and integrated VNA, PNA, and tSNA, with inspiration (dark gray) defined by PNA activity, post-inspiration (light gray) defined by the post-inspiratory burst of VNA activity, and late expiration (E2, white) defined as the period of non-respiratory-related activity on both PNA and VNA. RSA is characterized by a peak in HR at the end of inspiration, a decrease in HR at the beginning of post-inspiration, and a progressive increase in HR from mid-post-inspiration, through late expiration and into inspiration. RespSNA peaks at the transition between inspiration and post-inspiration, and the RespSNA burst is mainly composed of an inspiratory component, and a smaller post-inspiratory component. Traube-Hering waves, induced by RespSNA, peak during post-inspiration and therefore with a delay compared to RespSNA, due to the slow vascular contraction dynamics. The duration of the respiratory phases was impacted by preBötC photoinhibition, which also impacted the duration of RSA, RespSNA and Traube-Hering waves, yet their timing relative to the respiratory cycle remained unaltered. One-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test or Friedman repeated measures analysis of variance on ranks followed with pairwise multiple comparison Tukey test, as shown on the associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, different vs. the two other conditions.
 
 Together, these results show that the preBötC exerts a direct phasic inspiratory drive to vasomotor sympathetic activity, with a major involvement in the generation of RespSNA and Traube-Hering waves.
 
-## PreBötC activity is strongly involved in the generation of RSA
+### PreBötC activity is strongly involved in the generation of RSA
 
 RSA was almost abolished during both 10 Hz and 20 Hz preBötC photoinhibition (Figure 6A–B; Figure 6—figure supplement 1D), and changes in RSA were independent from changes in PNA amplitude (Figure 6C). The loss of baseline RSA evoked by systemic atropine demonstrates that RSA is generated via parasympathetic activity (Figure 4A–B). These results indicate that the preBötC is a source of ongoing respiratory phase-locked inhibitory input to cardiac parasympathetic preganglionic neurons.
 
@@ -85,13 +129,13 @@ Baseline RSA is characterized by peaks in HR at the end of inspiration, decrease
 
 Together, these results show that the preBötC exerts a complex cardiac parasympathetic influence that spans both inspiratory and expiratory periods, with a major involvement in the generation of RSA.
 
-## PreBötC photoexcitation decreases the respiratory command amplitude, resulting in decreased RespSNA, Traube-Hering waves and RSA
+### PreBötC photoexcitation decreases the respiratory command amplitude, resulting in decreased RespSNA, Traube-Hering waves and RSA
 
 The same injection protocol described for the GtACR2 expression was used to produce restricted expression of channelrhodopsin-2 (ChR2) in preBötC bilaterally (Figure 9A). Strong ChR2-positive terminals were found in the facial motor nucleus (Figure 9B), which is characteristic of neurons in the preBötC region, and not those in the inspiratory rostral ventral respiratory group (Deschênes et al., 2016). ChR2-mediated preBötC photoexcitation (n = 8) increased respiratory frequency without altering inspiratory duration, and decreased PNA inspiratory and VNA post-inspiratory amplitudes (Figure 8A, C and D), therefore reducing each respiratory cycle intensity. We focused on 20 Hz photoexcitation, as this produced maximal effects across all animals.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig8-v2.jpg)
 
-**Figure 8.:** Traces of activity recorded in the WHBP at low (A) and higher (lower traces from the shaded areas) time resolution showing the effect of bilateral photoexcitation of the preBötC with ChR2. (B) PNA burst-triggered averaging was used to quantify the effect on RespSNA AUC, Traube-Hering wave amplitude and RSA amplitude. (C–J) Individual and group data (n = 8) quantifying the effect of preBötC photoexcitation (20 Hz) on: (C) respiratory parameters; (D) VNA; (E) HR; (F) tSNA; (G) mean PP; (H) Traube-Hering wave and RSA; and (I) RespSNA. (J) Further analysis shows the decrease in duration of RespSNA was due to both shorter inspiratory and post-inspiratory components. (K) Correlograms showing that RespSNA AUC and Traube-Hering wave amplitude were both correlated with PNA amplitude, whilst RSA was not. (L) Traces from one animal showing laser-triggered averaging of integrated VNA and tSNA in response to 1 Hz preBötC photoexcitation. (M) Quantification of this response in all animals showing photoexcitation induces inverse responses to that of photoinhibition, and of smaller amplitude. Group data are presented as mean ± SEM; one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test or Friedman repeated measures analysis of variance on ranks followed with pairwise multiple comparison Tukey test performed on raw data, as shown on the associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, photoinhibition vs. control and recovery conditions; # p<0.05, ## p<0.01, between respective effects.Figure 8—source data 1.Figure 8.
+**Figure 8.:** Traces of activity recorded in the WHBP at low (A) and higher (lower traces from the shaded areas) time resolution showing the effect of bilateral photoexcitation of the preBötC with ChR2. (B) PNA burst-triggered averaging was used to quantify the effect on RespSNA AUC, Traube-Hering wave amplitude and RSA amplitude. (C–J) Individual and group data (n = 8) quantifying the effect of preBötC photoexcitation (20 Hz) on: (C) respiratory parameters; (D) VNA; (E) HR; (F) tSNA; (G) mean PP; (H) Traube-Hering wave and RSA; and (I) RespSNA. (J) Further analysis shows the decrease in duration of RespSNA was due to both shorter inspiratory and post-inspiratory components. (K) Correlograms showing that RespSNA AUC and Traube-Hering wave amplitude were both correlated with PNA amplitude, whilst RSA was not. (L) Traces from one animal showing laser-triggered averaging of integrated VNA and tSNA in response to 1 Hz preBötC photoexcitation. (M) Quantification of this response in all animals showing photoexcitation induces inverse responses to that of photoinhibition, and of smaller amplitude. Group data are presented as mean ± SEM; one-way repeated measures ANOVA followed with post hoc Holm-Sidak multiple-comparison test or Friedman repeated measures analysis of variance on ranks followed with pairwise multiple comparison Tukey test performed on raw data, as shown on the associated source data and detailed statistics; *p<0.05, **p<0.01, ***p<0.001, photoinhibition vs. control and recovery conditions; # p<0.05, ## p<0.01, between respective effects.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/57288/elife-57288-fig9-v2.jpg)
 
@@ -101,7 +145,7 @@ PreBötC photoexcitation did not alter overall mean tSNA amplitude (which includ
 
 Photoexcitation of preBötC did not alter mean HR (Figure 8E) but decreased RSA amplitude (Figure 8H), due to loss of the post-inspiratory/expiratory bradycardic component. Changes in RSA induced by preBötC photoexcitation were independent of changes in PNA inspiratory amplitude (Figure 8K). Laser-triggered averaging of VNA during continuous low-frequency (1 Hz) preBötC photoexcitation revealed a small short latency parasympatho-inhibition.
 
-## PreBötC neurons project directly to putative pre-sympathetic vasomotor and parasympathetic neurons
+### PreBötC neurons project directly to putative pre-sympathetic vasomotor and parasympathetic neurons
 
 To map axonal projections from preBötC neurons we performed small (5 nl), unilateral virus injections under electrophysiological guidance to induce restricted expression of tdTomato in neurons in the preBötC core (n = 2). Successful targeting of respiratory preBötC neurons was indicated by substantial numbers of transduced fibres crossing the midline and terminal fields within the contralateral preBötC (Figure 9C), defining features of functionally identified preBötC neurons (Bouvier et al., 2010; Koizumi et al., 2013). TdTomato-positive preBötC terminals were found in close apposition to both RVLM catecholaminergic C1 neurons, which include pre-sympathetic vasomotor neurons (Figure 9D), and nucleus ambiguus neurons, which include cardiac parasympathetic preganglionic neurons (Figure 9E).
 
@@ -109,17 +153,17 @@ To map axonal projections from preBötC neurons we performed small (5 nl), unila
 
 Respiratory modulation of sympathetic and parasympathetic activity, leading to Traube-Hering waves and RSA, is a well characterized physiological feature but with little mechanistic understanding. Here, we demonstrate that this respiratory-cardiovascular entrainment is coded at the core of the brainstem respiratory network. In addition to its role in inspiratory rhythm generation, the preBötC provides inspiratory-locked excitatory drive to sympathetic activity and subsequent generation of Traube-Hering waves, and inhibitory drive to parasympathetic outputs, to generate RSA. Photoinhibition of preBötC exerts profound effects on HR and BP in both anesthetized in vivo and in situ rat models, highlighting the importance of this ongoing activity under basal conditions. These data reinforce other recent observations (Deschênes et al., 2016; Moore et al., 2013) supporting the view that oscillatory activity arising from the preBötC provides widespread influences extending well past circuits related to breathing.
 
-## Targeting the preBötC
+### Targeting the preBötC
 
 The preBötC was defined as a group of excitatory inspiratory neurons with intrinsic rhythmogenic properties, located in the ventral respiratory column (Peña et al., 2004; Smith et al., 1991). It remains classified as a region with relatively ambiguous anatomic boundaries that contains a heterogeneous cell population composed of rhythmogenic, mostly inspiratory, excitatory and inhibitory neurons (Baertsch et al., 2019; Baertsch et al., 2018; Koizumi et al., 2013; Kuwana et al., 2006; Morgado-Valle et al., 2010; Sherman et al., 2015). No single and exclusive marker of the preBötC has been found so far. We studied neurons in the preBötC using the pan-neuronal CBA promoter that targets neurons irrespective of phenotype. Our anatomical validation of correct transduction (Figures 1 and 9) is supported functionally, as photoinhibition caused immediate cessation of inspiratory activity and a prolonged apnea both in vivo and in situ (Figures 2 and 3), whereas photoexcitation increased respiratory frequency while decreasing inspiratory amplitude (Figure 8). These effects on breathing are consistent with previous optogenetic perturbations of the preBötC (Alsahafi et al., 2015; Cui et al., 2016; Koizumi et al., 2016; Vann et al., 2018). Adjacent to the preBötC are caudal ventrolateral medulla (CVLM) GABAergic neurons, which form part of the sympathetic vasomotor circuit and inhibit rostral ventrolateral medulla pre-sympathetic neurons (Guyenet, 2006), as well as some cardiac parasympathetic preganglionic neurons of the nucleus ambiguus (Dergacheva et al., 2010; Gourine et al., 2016). Some of these neurons could have been transduced with our viral approach; however, our physiological observations do not support this being a substantial influence, as GtACR2-mediated photoinhibition caused inverse effects to those expected if these neurons were transduced (which would be sympathoexcitation/increase in blood pressure and parasympatho-inhibition/tachycardia) (Figures 3 and 5).
 
 When inspiration resumed during photoinhibition, we observed a crenelated activity pattern in inspiratory intC EMG and PNA bursts (Figures 2 and 3). This is likely to result from photoinhibition of some rostral ventral respiratory group phrenic premotor neurons, which intermingle with the caudal pole of the preBötC. Importantly, these neurons are not thought to project to respiratory/cardiovascular neurons other than phrenic motoneurons and lateral reticular nucleus (Wu et al., 2017), so they are unlikely to mediate the cardiac parasympathetic and vasomotor sympathetic effects found in this study.
 
-## Caveats related to optically-activated chloride channels
+### Caveats related to optically-activated chloride channels
 
 To interrogate interactions between preBötC respiratory circuits and autonomic outputs we used the high temporal resolution of the natural light-activated anion channel GtACR2, which induces large chloride photocurrents with faster kinetics than other inhibitory opsins (Govorunova et al., 2015; Figure 2). Interpretation of our results requires careful consideration, as the chloride electrochemical gradient is heterogeneous among subcellular compartments, and axonal activation of chloride channels can lead to terminal neurotransmitter release (Messier et al., 2018). This phenomenon is unlikely to explain the current results, which are consistent with neural inhibition and were opposed by optogenetic excitation, highlighted by the strong, perfectly inverse sympathetic (tSNA) and parasympathetic (VNA) effects observed with single light pulse ChR2-mediated photoexcitation (Figures 5 and 8). We conclude that in this study and with this cell group, GtACR2 reliably inhibited neuronal activity.
 
-## The preBötC provides powerful, ongoing inhibition of cardiac parasympathetic activity
+### The preBötC provides powerful, ongoing inhibition of cardiac parasympathetic activity
 
 Cardiac parasympathetic preganglionic neurons are located in the nucleus ambiguus and the dorsal motor nucleus of the vagus nerve (Gourine et al., 2016). Among these, only nucleus ambiguus neurons show respiratory-related phasic patterns of activity, with an inhibition of their activity during inspiration, an excitation during post-inspiration and a weak inhibition during late expiration (E2) (Gilbey et al., 1984; Neff et al., 2003). Respiratory inputs into nucleus ambiguus cardiac preganglionic neurons could be widely distributed, although the strongest evidence indicates they come from the pontine Kölliker-Fuse nucleus for the post-inspiratory excitation (Farmer et al., 2016), and from GABAergic and glycinergic neurons that could be located in the preBötC for the inspiratory inhibition (Frank et al., 2009; Neff et al., 2003).
 
@@ -129,7 +173,7 @@ Bradycardia occurs independent of when in the respiratory cycle photoinhibition 
 
 The decrease in HR just after inspiration, during the post-inspiratory phase, likely involves an excitatory drive to cardiac parasympathetic preganglionic neurons external to the preBötC, most likely coming from the pontine Kölliker-Fuse nucleus (Farmer et al., 2016; Gilbey et al., 1984). Still, preBötC neurons exert an indirect influence on this, as a single photoinhibitory light pulse during inspiration modulated both the inspiratory and post-inspiratory phases, as well as amplitude of the following cycle of RSA, by reducing the post-inspiratory decrease in HR (Figure 7).
 
-## The preBötC provides excitatory drive to vasomotor sympathetic activity
+### The preBötC provides excitatory drive to vasomotor sympathetic activity
 
 Respiratory modulation of neurons involved in generating vasomotor sympathetic activity is found from spinal sympathetic preganglionic neurons of the intermediolateral cell column (Zhou and Gilbey, 1992) to medullary bulbospinal pre-sympathetic neurons of the RVLM (McAllen, 1987; Moraes et al., 2013) and caudal raphe (Gilbey et al., 1995), as well as in baroactivated CVLM neurons (Mandel and Schreihofer, 2006). Neurons in each of these regions display three main types of respiratory modulation, inspiratory activated, inspiratory inhibited, and post-inspiratory activated, which could be acquired mono-synaptically or poly-synaptically from respiratory neurons.
 
@@ -139,35 +183,332 @@ Direct recordings show that inspiratory modulation of RVLM C1 neurons is mediate
 
 Single-pulse preBötC photoinhibition had no effect on RespSNA when applied during post-inspiration (Figure 7). Part of the post-inspiratory component of RespSNA originates from post-inspiratory neurons in the intermediate reticular nucleus (Toor et al., 2019), and similarly to RSA, the dorsolateral pons could also be involved (Baekey et al., 2008; Dick et al., 2009). Indeed, ponto-medullary transections strongly decreased RespSNA and Traube-Hering waves. Yet, this also caused a switch from eupnea to an apneustic breathing pattern, with prolonged and square shaped phrenic nerve activity. This highlights the difficulty to interrogate functional circuitry entrained by respiratory neurons, as alteration of the activity of the respiratory network will create rebound network effects and alterations of breathing, making it difficult to disentangle the direct versus indirect mechanisms inlvolving the neurons studied. Ideally, future experiments will enable modulation of individual synapses between respiratory neurons and neurons regulating sympathetic (or parasympathetic) activity.
 
-## Different preBötC respiratory neurons affect SNA compared to cardiac vagal activity
+### Different preBötC respiratory neurons affect SNA compared to cardiac vagal activity
 
 The current view is that excitatory preBötC neurons generate the inspiratory rhythm (Bouvier et al., 2010; Vann et al., 2018; Wang et al., 2014), while inhibitory preBötC neurons shape its pattern and frequency (Baertsch et al., 2018; Cregg et al., 2017; Sherman et al., 2015). Here, prolonged preBötC photoinhibition induced apnea but not for the entire photoinhibition period. Previous investigators have reported prolonged apnea upon preBötC inhibition induced by pharmacogenetic (Tan et al., 2008) or (brief) optogenetic neural inhibition (Vann et al., 2018). Like the inspiratory activity, tSNA also recovered respiratory modulation when inspiration resumed. By stark contrast, vagal activation and bradycardia remained affected for the entire period of photoinhibition. This observation provides strong support for affecting two different cell populations, an excitatory one involved in inspiratory rhythmogenesis and SNA modulation, and an inhibitory one involved in inspiratory patterning and cardiac vagal modulation. The most likely explanation for the return of respiratory activity during continued photoinhibition is that rhythmogenic, excitatory inspiratory neurons of the preBötC escaped GtACR2-mediated photoinhibition. The mechanism responsible for the rhythmogenic activity of preBötC is still debated, but involves excitatory pre-inspiratory and inspiratory neurons with cellular and/or micro-network electrophysiological properties particularly prone to burst generation, which could confer particular propensity to escape prolonged inhibition. If this is the mechanism, it appears to be a property of the excitatory neurons.
 
-## Respiratory cardiovascular interactions in the clinical setting
+### Respiratory cardiovascular interactions in the clinical setting
 
 Assessment of the short-term variability of HR, and to a lesser extent BP, is common in clinical evaluation of cardiovascular health. The main spectral density found in both HR and BP variability is in phase with the respiratory frequency, in the high-frequency band, and is actually a quantification of RSA and Traube-Hering waves, respectively. These measurements provide an invaluable means for non-invasive assessment of parasympathetic and sympathetic drives to the cardiovascular system and have attracted general community interested due to the connection between HR variability and ‘healthiness’ scores. However, views on the analysis and interpretation of these data vary substantially (Hayano and Yuda, 2019). At the core of uncertainty regarding the value of HR and BP variability lies a lack of understanding of the mechanisms driving RSA and Traube-Hering waves.
 
 Regardless of how it is measured, substantial evidence links altered respiratory modulation of autonomic activity with cardiovascular diseases. Exaggerated inspiratory modulation of sympathetic activity leads to increased Traube-Hering waves and drives the development of hypertension (Menuet et al., 2017). This study identifies a key source of this excitatory inspiratory modulation, and while modifying preBötC activity is not conceivable given its critical role, targeted therapeutics that only impact the preBötC to C1 neuron connection could be developed to prevent hypertension development. A common feature of many cardiovascular diseases, and prognostic indicator of poor survival, is reduced RSA, often in concert with increased Traube-Hering waves (Palatini and Julius, 2009; Task Force of the European Society of Cardiology and the North American Society of Pacing and Electrophysiology, 1996). Our study also identifies the preBötC as the likely source of this dual alteration of cardiac parasympathetic and vasomotor sympathetic respiratory drives.
 
-## Conclusion
+### Conclusion
 
 Whilst initially characterized as a key oscillator for driving inspiratory activity, the preBötC has already been shown to have more widespread functions, acting as a master oscillator driving other activities, such as sniffing and whisking (Deschênes et al., 2016; Moore et al., 2013). Redundancy is usually a characteristic feature of neuronal networks, as it provides robustness to perturbations (Li et al., 2016). It is therefore surprising to find that the preBötC is so critical for respiratory, cardiovascular and other oscillations. Our study provides evidence for another layer of influence for the preBötC as a hub oscillator that synchronizes cardio-respiratory function. This coordination is a fundamental physiological phenomenon observed across many different phyla that is likely to be of key importance for optimal perfusion, and function, of tissues.
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (male Sprague Dawley rats)</td>
+      <td>WT Sprague Dawley rats</td>
+      <td>Biomedical Science Animal Facility of the University of Melbourne</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFUGW-hGtACR2-EYFP</td>
+      <td>Addgene, gift from John Spudich</td>
+      <td>plasmid # 67877; RRID:Addgene_67877</td>
+      <td>http://n2t.net/addgene:67877</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-hChR2-H134R-tdTomato</td>
+      <td>Addgene, gift from Karel Svoboda</td>
+      <td>plasmid #28017; RRID:Addgene_28017</td>
+      <td>http://n2t.net/addgene:28017</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAM.DCA.spe.tdTomato</td>
+      <td>Gift from Verena Wimmer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (lentivirus)</td>
+      <td>Lv-CBA-GtACR2-YFP-WPRE</td>
+      <td>In house cloning and virus production</td>
+      <td></td>
+      <td>Titre 6.95 × 109 IU/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV-CBA-GtACR2-YFP-WPRE</td>
+      <td>In house cloning and virus production</td>
+      <td></td>
+      <td>Titre 9.65 × 1011 VP/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV-CAG-hChR2-H134R-tdTomato</td>
+      <td>In house virus production</td>
+      <td></td>
+      <td>Titre 2.23 × 1010 VP/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV-CBA-tdTomato</td>
+      <td>In house virus production</td>
+      <td></td>
+      <td>Titre 6.32 × 1012 VP/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TH</td>
+      <td>Merck-Millipore Bioscience Research Reagents</td>
+      <td>AB152</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>AB13970</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-parvalbumin</td>
+      <td>Merck-Millipore Bioscience Research Reagents</td>
+      <td>MAB1572</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NK1R</td>
+      <td>Merck-Sigma-Aldrich</td>
+      <td>S8305</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DsRed</td>
+      <td>Takara Bio</td>
+      <td>632496</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-ChAT</td>
+      <td>Merck-Millipore Bioscience Research Reagents</td>
+      <td>AB144P</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Life Technologies</td>
+      <td>A-6455</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated donkey polyclonal anti-rabbit</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>711-165-152</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated donkey polyclonal anti-mouse</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>715-165-151</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor-488 donkey polyclonal anti-rabbit</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>711-545-152</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor-488 donkey polyclonal anti-mouse</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>715-545-151</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor-488 donkey polyclonal anti-chicken</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>703-545-155</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor-488 donkey polyclonal anti-rabbit</td>
+      <td>Life Technologies</td>
+      <td>A21206</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers for generation of cRNA probe for glycine transporter 2 (GlyT2)</td>
+      <td></td>
+      <td></td>
+      <td>SP6 forward primer:GGATCCATTTAGGTGACACTATAGAAGaagcgtcttgcccactagaa T7 reverse primer: GAATTCTAATACGACTCACTATAGGGAGAagcctgagcttgcttttcag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers for generation of cRNA probe for glutamic acid decarboxylase 67 (GAD67)</td>
+      <td></td>
+      <td></td>
+      <td>SP6 forward primer:GGATCCATTTAGGTGAC ACTATAGAAGttatgtcaatgcaaccgc T7 reverse primer: GAATTCTAATACGACTCAC TATAGGGAGAcccaacctctctatttcctcC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers for generation of cRNA probe for vesicular glutamate transporter 2 (VGluT2)</td>
+      <td></td>
+      <td></td>
+      <td>SP6 forward primer: GGATCCATTTAGGTGACACTATAGAAGtcaatgaaatccaacgtcca T7 reverse primer:GAATTCTAATACGACTCACTATAGGGAGAcaagagcacaggacaccaaa</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Meloxicam</td>
+      <td>Boehringer Ingelheim</td>
+      <td></td>
+      <td>1 mg/kg, s.c.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>Rhodia Australia Pty. Ltd.,</td>
+      <td></td>
+      <td>5% induction, 3% maintenance</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketamine</td>
+      <td>Lyppard</td>
+      <td></td>
+      <td>60 mg/kg, i.m.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Medetomidine</td>
+      <td>Pfizer Animal Health</td>
+      <td></td>
+      <td>250 μg/kg, i.m.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atipamazole</td>
+      <td>Pfizer Animal Health</td>
+      <td></td>
+      <td>1 mg/kg, i.m.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>SigmaAldrich</td>
+      <td></td>
+      <td>1.2 mg/kg i.v.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vasopressin acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>V9879</td>
+      <td>0.5 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vecuronium bromide</td>
+      <td>Organon Teknika</td>
+      <td></td>
+      <td>2–4 μg.ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atropine</td>
+      <td>Sigma Aldrich</td>
+      <td>A0257-25G</td>
+      <td>0.2 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike2</td>
+      <td>Cambridge Electrical Design</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10.3</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN 2.6</td>
+      <td>Carl-Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affinity Designer</td>
+      <td>Serif Ltd.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot v12</td>
+      <td>Systat Software Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism v2.0</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 Experiments were conducted in accordance with the Australian National Health and Medical Research Council ‘Code of Practice for the Care and Use of Animals for Scientific Purposes’ and were approved by the University of Melbourne Animal Research Ethics and Biosafety Committees (ethics ID #1413273, #1614009, #1814599 and Florey 16-040). All experiments were performed on male Sprague Dawley (SD) rats. Animals were housed with a 12-h light-dark cycle (06H30 to 18H30), at a constant temperature (22 ± 1°C) with ad libitum access to standard rat chow and water.
 
-## Viruses
+### Viruses
 
 To perform optogenetic inhibition or excitation of preBötC neurons, we used viral-mediated transgenesis to drive the expression of two opsins, the guillardia theta anion channelrhodopsin 2 (GtACR2) and the humanized ChR2 H134R, fused to the enhanced yellow fluorescent protein (YFP) and tdTomato reporter genes, respectively. To trace preBötC terminals, a virus driving only tdTomato expression was used. We used the pan-neuronal promoter chicken ß-actin (CBA), either alone, or as part of the larger synthetic promoter CAG. Indeed, CAG induces the same expression profile as CBA, since CBA is the promoter component (A) of CAG (C being the cytomegalovirus early enhancer element, G being the splice acceptor of the rabbit ß-globulin gene). The viral vectors used were: Lv-CBA-GtACR2-YFP-WPRE (titre 6.95x109 IU/ml), AAV-CBA-GtACR2-YFP-WPRE (titre 9.65x1011 VP/ml), AAV-CAG-hChR2-H134R-tdTomato (titre 2.23x1010 VP/ml), AAV-CBA-tdTomato (6.32x1012 VP/ml). The GtACR2 constructs were cloned in-house from the pFUGW-hGtACR2-EYFP plasmid, which was a gift from John Spudich (Addgene plasmid # 67877; http://n2t.net/addgene:67877; RRID:Addgene_67877) (Govorunova et al., 2015), by replacing the UbiquitinC promoter with CBA. The ChR2-expressing virus was made from the pAAV-CAG-hChR2-H134R-tdTomato plasmid, which was a gift from Karel Svoboda (Addgene plasmid #28017; http://n2t.net/addgene:28017; RRID:Addgene_28017) (Mao et al., 2011). The tdTomato-expressing virus was made from pAM.DCA.spe.tdTomato plasmid.
 
-## Brainstem virus microinjections
+### Brainstem virus microinjections
 
 Thirty to sixty minutes prior to surgery, 21-day-old (P21) rats were injected with a non-steroidal, anti-inflammatory drug (meloxicam, 1mg/kg, s.c., Metacam, Boehringer Ingelheim, Sydney, Australia) and then lightly anesthetized by inhalation of isoflurane in an induction box (Rhodia Australia Pty. Ltd., Notting Hill, Australia) prior to intramuscular injection of a mixture of ketamine (60mg/kg, i.m.; Lyppard, Dingley, Australia) and medetomidine (250 μg/kg, i.m.; Pfizer Animal Health, West Ryde, Australia). Surgery was initiated once a deep surgical level of anesthesia was obtained, as evidenced by loss of the pedal withdrawal and corneal reflexes. Body temperature was maintained at 37.5°C with a heat pad (TC-1000 Temperature controller, CWE Inc, USA) that was covered with an autoclaved absorbent pad. Rats were then placed in a stereotaxic frame with the nose ventro-flexed (40°). A midline incision was made over the occipital bone, portions of the bone overlying the cerebellum were removed with a dental drill, and the atlanto-occipital membrane was opened to expose the dorsal brainstem. Glass micropipettes (~30 µm tip diameter) were back-filled with injectate and connected via a silver wire to an electrophysiology amplifier (NeuroLog system, Digitimer Ltd., Welwyn Garden City, UK) to enable recording of neuronal activity. The pipette (20° angled in the rostro-caudal axis, tip pointing forward) was descended into the brainstem 1.5 mm lateral to the midline and extracellular recordings of multiunit activity used to functionally map the preBötC, defined as the most rostral point at which vigorous inspiratory-locked activity was isolated (typically 0.2 ± 0.3 mm rostral, 1.4 ± 0.3 mm ventral to the calamus scriptorius). Bilateral injections were performed for GtACR2 and ChR2 expressions, unilateral injection for tdTomato expression. For in vitro slice electrophysiology, GtACR2 expression was induced in the solitary tract nucleus (NTS). NTS injection coordinates, relative to calamus scriptorius for antero-posterior and medio-lateral coordinates, with all injections performed 0.4mm ventral to the dorsal surface of the brainstem at each injection coordinate: 0.4mm and 0.1mm caudal (midline); 0.1mm rostral, 0.25mm lateral (both sides); 0.4mm rostral, 0.4mm lateral (both sides). A picospritzer (World Precision Instruments, Sarasota, USA) was used to microinject viral vectors driving GtACR2-YFP (50 nl per injection site over 5 min), ChR2-tdTomato (100 nl per injection site over 1 min) or tdTomato alone (5 nl per injection site over 1 min). Pipettes were left in place for 5 min after injection, the pipette withdrawn, and wounds closed with sterile sutures, and anesthesia reversed with atipamazole (1 mg/kg, i.m., Antisedan, Pfizer Animal Health, West Ryde, Australia). Physiological experiments (working heart and brainstem preparation (WHBP), n = 12 GtACR2 and n = 8 ChR2; in vivo electrophysiology, n = 5 Lv-GtACR2 and n=3 AAV-GtACR2; and in vitro whole cell recordings, n = 7) were performed 10 days after viral injections, while animals used for anterograde tracing (n = 2) were sacrificed 20 days after vector injection.
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
 Lv-GtACR2 injected rats (n = 5), Figure 2A-D: 30 to 60 min prior to surgery, rats were injected with a non-steroidal, anti-inflammatory drug (meloxicam, 1mg/kg, s.c., Metacam, Boehringer Ingelheim, Sydney, Australia) and then lightly anesthetized by inhalation of isoflurane in an induction box (Rhodia Australia Pty. Ltd., Notting Hill, Australia) prior to intramuscular injection of a mixture of ketamine (60mg/kg, i.m.; Lyppard, Dingley, Australia) and medetomidine (250 μg/kg, i.m.; Pfizer Animal Health, West Ryde, Australia). Surgery was initiated once a deep surgical level of anesthesia was obtained, as evidenced by loss of the pedal withdrawal and corneal reflexes. Body temperature was maintained at 37.5°C with a heat pad (TC-1000 Temperature controller, CWE Inc, USA) that was covered with an autoclaved absorbent pad. Rats were placed in a stereotaxic frame with the nose slightly dorso-flexed (mouth bar set at 0). A small incision was made over the dorso-lateral thorax and bipolar stainless steel hook electrodes were placed in consecutive intercostal muscles with a ground electrode positioned under the skin. Recordings of inspiratory intercostal activity were amplified, filtered (50–1500 Hz band-pass, NeuroLog system, Digitimer Ltd., Welwyn Garden City, UK), sampled (5 kHz) and digitized (Power 1401, Cambridge Electrical Design, Cambridge, UK), and rectified and integrated using Spike2 software (Cambridge Electrical Design, Cambridge, UK). Heart rate (HR) was derived from the same biopotential using a window discriminator to trigger from the R-wave of the electrocardiogram.
 
@@ -175,19 +516,19 @@ AAV-GtACR2 injected rats (n = 3), Figure 2—figure supplement 1: 30 to 60 min p
 
 Then, for both groups: A midline incision was made over the occipital bone, portions of the bone overlying the cerebellum were removed with a dental drill, and bilateral optical fibers (200 µm diameter; Doric Lenses, Quebec, Canada) connected to a 473nm DPSS Laser (Shanghai Laser & Optics Century Co., Shanghai, China) were descended vertically. Optical fibers were positioned 1.5 mm lateral (lambda level), and descended slowly while photostimulating at 20 Hz (10 ms pulses) until maximal respiratory and bradycardic effects were observed. The experimental protocol was then started after a 15 min period of acclimatization.
 
-## In vitro slice electrophysiology
+### In vitro slice electrophysiology
 
 Rats were deeply anesthetized with 5% isoflurane and the medulla removed, blocked and rapidly cooled in artificial cerebrospinal fluid (aCSF, 2 °C). The medulla was sectioned into 250 µm horizontal slices containing the transduced neurons (Leica VT1200s). Slices were continuously perfused in aCSF solution, containing (in mM): NaCl, 125; KCl, 3; KH2PO4, 1.2; MgSO4, 1.2; NaHCO3, 25; dextrose, 10; CaCl2, 2; (300 mOsmol), bubbled with 95% O2, 5% CO2, at 32°C. Recording pipettes (3.5 – 4.5 MΩ) contained a low Cl- internal solution (10 mM Cl-) containing (in mM): NaCl, 6; NaOH, 4; KOH, potassium gluconate, 130; EGTA, 11; CaCl2, 1; HEPES, 10; MgCl2, 1; 0.1% biocytin (pH 7.3, 290 mOsmol). As a consequence ECl- was -68.8 mV. Pipettes were visually guided to NTS transduced YFP-neurons using a fixed stage scope (Zeiss Examiner) and camera (Rolera EM-C2, Q-Imaging). Whole-cell recordings were made in either voltage clamp (holding voltage -60 mV or -40 mV) or current clamp mode (MultiClamp 700B and pClamp 10.3, Molecular Devices). Signals were sampled at 20 kHz and filtered at 10 kHz. Liquid junction potentials were not corrected (-6.2 mV at 32°C). Pulses of light (465 nm, 10 mW at fibre tip) from a light emitting diode (LED, Plexon) were delivered via fibre optic affixed to a micro-manipulator and positioned to illuminate the recorded neurons.
 
-## Working Heart-Brainstem preparation
+### Working Heart-Brainstem preparation
 
 Rats were anesthetized deeply with isoflurane until loss of the pedal withdrawal reflex, bisected below the diaphragm, exsanguinated, cooled in Ringer solution on ice (composition in mM: 125 NaCl, 24 NaHCO3, 5 KCl, 2.5 CaCl2, 1.25 MgSO4, 1.25 KH2PO4 and 10 dextrose, pH 7.3 after saturation with carbogen gas (chemicals were purchased from Sigma-Aldrich, Australia)) and decerebrated precollicularly. The lungs were removed and the descending aorta was isolated and cleaned. Retrograde perfusion of the thorax and head was achieved via a double-lumen catheter (ø 1.25 mm, DLR-4, Braintree Scientific, Braintree, USA) inserted into the descending aorta. The perfusate was Ringer solution containing Ficoll (1.25%), vasopressin acetate (0.5 nM, V9879, Sigma-Aldrich, Australia) and vecuronium bromide (2–4 μg.ml−1, Organon Teknika, Cambridge, UK) warmed to 31°C and gassed with carbogen (closed loop reperfusion circuit, 25–30 ml/min). The second lumen of the cannula was connected to a transducer to monitor perfusion pressure (PP) in the aorta. The head of the preparation was fixed with ear and mouth bars with the nose ventro-flexed (40°). Simultaneous recordings of phrenic nerve activity (PNA), cervical vagus nerve (left side) activity (VNA) and thoracic sympathetic chain activity (tSNA, between T8-10) were obtained using glass suction electrodes. Some WHBPs for both GtACR2 and ChR2 experiments were performed without VNA recordings, to preserve a fully functional vagal cardiac parasympathetic modulation by keeping both vagus nerves intact. No differences in HR and respiratory sinus arrhythmia were found between WHBPs with either unilateral or bilateral intact vagus nerves, therefore experiments were pooled for analysis. Neurograms were amplified, filtered (50–1500 Hz band-pass, NeuroLog system, Digitimer Ltd., Welwyn Garden City, UK), rectified and integrated using Spike2 (Cambridge Electrical Design, Cambridge, UK). HR was derived by using a window discriminator to trigger from the R-wave of the electrocardiogram recorded simultaneously through the phrenic nerve electrode. Bilateral optical fibers (200 µm diameter; Doric Lenses, Quebec, Canada) connected to a 473 nm DPSS Laser (Shanghai Laser and Optics Century Co., Shanghai, China) were descended, 20° angled in the rostro-caudal axis, tip pointing forward, to a position 400 µm dorsal to the injection coordinates. Pilot mapping experiments indicated that light delivery to these coordinates was associated with the largest physiological effects.
 
-## Optogenetic stimulation
+### Optogenetic stimulation
 
 A light meter (PM20A fiber power meter, Thorlabs, Newton, NJ, USA) was used to calibrate light output from each optical fiber to 10 mW as this was found to induce maximal effects in our experimental set-up without any adverse effect on the tissue (Menuet et al., 2014). Photostimulation consisted of: i) frequency-response trials to compare physiological effects induced by GtACR2 photoactivation in the WHBP (5, 10, 20 and 50 Hz, 10 ms pulses, with respectively 300, 500, 1000 and 1500 pulses at each frequency) and at the single-cell level in vitro (1, 10, 20 and 50 Hz; 1, 10 and 100 ms pulses, 30s each). The results of these trials indicated that maximal physiological effects were evoked by 10 ms light pulses delivered at 20 Hz; in subsequent experiments in vivo or in the WHBP we used tetanic (20 Hz, 300-600 pulses), intermittent (1 Hz, 300 pulses), or single triggered 10ms pulses delivered at specific phases of the respiratory cycle. All photostimulation protocols were repeated multiple times, in a randomized manner, in each animal (technical replication). We found strong intra-preperation reproducibility for all protocols.
 
-## Histology
+### Histology
 
 At the end of WHBP experiments, brainstems were removed, fixed by immersion in 4% formaldehyde in 0.1M sodium phosphate buffer (FA), for 24 hr at 4°C and cryoprotected in 20% sucrose. At the end of the in vivo and tracing experiments, animals were perfused transcardially with 200 ml phosphate-buffered saline followed by 400 ml of 4% FA. Brainstems were removed, post-fixed for 12 hr in 4% FA at 4°C and cryoprotected in 20% sucrose. Brainstems were mostly cut coronally (40 µm sections), except for parvalbumin labeling where they were cut sagitally (50 µm sections), using a cryostat. Fluorescence immunohistochemistry was performed as previously described (Chen et al., 2010; Menuet et al., 2014; Sevigny et al., 2012). Primary antibodies used were rabbit anti-TH (1:5000, Merck-Millipore Bioscience Research Reagents, Bayswater, VIC, Australia, AB152), chicken anti-GFP (1:5000, Abcam, Melbourne, VIC, Australia, AB13970), mouse anti-parvalbumin (1:10,000, Merck-Millipore Bioscience Research Reagents, Bayswater, VIC, Australia, MAB1572), Rabbit anti-NK1R (1:5000, Merck-Sigma-Aldrich, Castle Hill, NSW, Australia S8305), Rabbit anti-DsRed (1:5000, Takara Bio, Mountain View, CA, USA, 632496) and Goat anti-ChAT (1:1000; Merck-Millipore Bioscience Research Reagents, Bayswater, VIC, Australia, AB144P). The secondary antibodies used were Cy3-conjugated donkey anti-rabbit (1:500, Jackson ImmunoResearch Laboratories, West Grove, USA), Cy3-conjugated donkey anti-mouse (1:500, Jackson ImmunoResearch Laboratories, West Grove, USA), AlexaFluor-488 donkey anti-rabbit (1:500, Jackson ImmunoResearch Laboratories, West Grove, USA), AlexaFluor-488 donkey anti-mouse (1:500, Jackson ImmunoResearch Laboratories, West Grove, USA) and AlexaFluor-488 donkey anti-chicken (1:500, Jackson ImmunoResearch Laboratories, West Grove, USA).
 
@@ -199,12 +540,12 @@ Sections containing GtACR2-YFP-labeled neurons were incubated in pre-hybridizati
 
 Rabbit anti-GFP (1:500, Life Technologies, Scoresby, Australia, A-6455) was added to the blocking buffer and incubated at 4°C (24 hr), then at room temperature (4 hr). Sections were washed in TPBS (Tris–HCl 10 mM, sodium phosphate buffer 10 mM, 0.9% NaCl, pH 7.4, 3 × 30 min) and incubated overnight with AlexaFluor-488 donkey anti-rabbit IgG secondary antibody (1:500, Life Technologies, Scoresby, Australia, A21206) with 2% normal horse serum. DIG-labeled neurons were revealed by incubation in NTMT (0.1 M NaCl, 0.1 M Tris-HCl pH 9.5, 0.1 M MgCl2, 0.1% Tween-20, 2 mM tetramisole HCl) containing nitro blue tetrazolium (Roche Applied Science) and 5-bromo-4-chloro-3-indolyl phosphate salts (Roche Applied Science). The reaction was stopped by washing (0.1M Tris, 1 mM EDTA, pH 8.5, 3 × 15 min) when DIG-labelling was intense with minimal background staining. No labeling was seen when the sense probe was substituted for the anti-sense probe.
 
-## Mapping of reporter expression
+### Mapping of reporter expression
 
 A complete map of the distribution of GtACR2-YFP expression from the 12 WHBP experiments was generated from 1:4 series of sections co-labeled with ChAT, TH and NK1R to assist with alignment of the sections into the Paxinos-Watson atlas (Paxinos and Watson, 2004). Heatmaps of pooled GtACR2-YFP expression, imaged using Zeiss Axio Imager.M2 microscope with an Apocromat 20x/0.8 air objective (Carl-Zeiss, NSW, Australia) and captured using Axiocam 506 mono camera and ZEN 2.6 (blue edition) imaging software, were made using Affinity Designer software (Serif Ltd., UK). Sections from four representative animals used in the WHBP were processed to examine colocalization of preBötC GtACR2-YFP with GAD67, VGluT2 and GlyT2 mRNA. Sections were imaged under epifluoresence and brightfield (Zeiss Z1, 10x objective, 0.3 NA). The expression profile of ChR2-tdTomato and GtACR2-YFP used for in vivo experiments were similar to that of GtACR2-YFP from WHBP experiments, so they were mapped qualitatively rather than quantitatively. The brainstems from two animals from the GtACR2-YFP in vivo experiments were cut sagitally for better visualization of rostro-caudal GtACR2-YFP expression.
 
 For the tracing study, tdTomato expression at the injection site was examined under Zeiss Axio Imager.M2 microscope with an Apocromat 20x/0.8 air objective (Carl-Zeiss, NSW, Australia) and captured using Axiocam 506 mono camera and ZEN 2.6 (blue edition) imaging software. TdTomato terminals were imaged with a Zeiss LSM880, Axio Imager 2 confocal microscope, with a Plan-Apochromat 63x/1.4 oil DIC M27 objective, in a Z-stack array, acquiring up to 8 consecutive overlapping slices. All channels were acquired at a consistent pinhole setting of 1.0 μm. Each optical section was assessed for close apposition between axons labelled by tdTomato and ChAT-immunoreactive nucleus ambiguus vagal preganglionic neurons or TH-immunoreactive C1 pre-sympathetic neurons. Maximum intensity projections of 4–6 image stacks were produced using the Image J software (NIH, USA) to better represent the distribution of preBötC terminal labeling.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Nerve signals were rectified and integrated with a 50 ms time constant. For low-frequency photostimulation (1 Hz) laser triggered averaging of tSNA and VNA, the signals were rectified and integrated with a 5 ms time constant. For triggered photostimulations, PNA signals were rectified and integrated with a 0.5 ms DC remove time constant and a 100 ms smoothing time constant, to eliminate the ECG background. Phrenic-triggered (end of inspiratory burst) averaging of tSNA, systolic PP and HR were used to quantify respiratory modulation of tSNA (RespSNA), Traube-Hering waves (mmHg) and respiratory sinus arrhythmia (RSA, bpm), respectively. Tonic levels of tSNA were measured using the phrenic-triggered averaging of tSNA, as the average of tSNA during the expiratory period, therefore outside of the burst of respiratory modulation of SNA. Phrenic-triggered (end of inspiratory burst) averaging of VNA was used to quantify the peak post-inspiratory and non-respiratory components of VNA. Details regarding the period analysed are shown on Figure 3—figure supplement 2. For manual photostimulations, to avoid averaging distortion, phrenic-triggered averagings were performed on both consecutive respiratory-related activities to be analysed, and then traces were overlapped and merged at their mean intersection for further analysis. Statistical analysis was done on raw values, and then mean deltas in percentages were quantified (photostimulation vs pre-photostimulation period). Statistics shown on figures presenting only mean delta percentages (for presentation clarity, e.g. Figure 3) were done on the raw values as shown on the associated supplementary figures (e.g. Figure 3—figure supplement 1 and associated data source). Group data are presented as mean ± SEM. Normal distribution of data was verified with the Shapiro-Wilk test, and equal variance of data was tested (SigmaPlot v12, Systat Software Inc, Erkrath, Germany). Data were analyzed using one-way repeated measures or two-way repeated-measures ANOVA, followed by post hoc Holm-Sidak multiple-comparison tests, or paired student’s t tests, for data with normal distribution and equal variance. Data with failed normal distribution or failed equal variance were analyzed using Friedman repeated measures analysis of variance on ranks followed with pairwise multiple comparison Tukey test, or Wilcoxon signed rank test. Linear regression and correlation analysis was used to analyze parameters relationships (Prism v2.0, GraphPad, La Jolla, USA). When missing values were present, for instance because one photostimulation frequency could not be performed or some of the associated data were not appropriate for analysis (noise etc.), it was dealt with accordingly depending on the test used, mostly by excluding the sample from the whole analysis (cf. source data and statistics). All source data and detailed statistics are presented as supplementary information along with each figure. Differences were considered significant at p<0.05.

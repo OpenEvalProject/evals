@@ -33,7 +33,7 @@ To acutely control Nlgn1 activity, we manipulated the phosphotyrosine level of e
 
 ## Results
 
-## Light stimulation of Nlgn1 tyrosine phosphorylation
+### Light stimulation of Nlgn1 tyrosine phosphorylation
 
 Using an in vitro kinase assay on recombinant GST fused to the intracellular domain of Nlgn1, we previously identified several tyrosine kinases able to directly phosphorylate Nlgn1, including Trk family receptors and the FGFR1 (Letellier et al., 2018). To acutely control Nlgn1 phosphorylation independently of endogenous ligand-activated kinases, we thus used here a photoactivatable version of FGFR1 (optoFGFR1) (Grusch et al., 2014; Figure 1A). To show that Nlgn1 can be acutely phosphorylated by optoFGFR1 in a light-dependent manner, we illuminated COS-7 cells co-expressing recombinant Nlgn1 and optoFGFR1 at 470 nm for 15 min using a light emitting diode (LED) array (Figure 1B). The stimulation of optoFGFR1 by light induced as much Nlgn1 phosphorylation as constitutively active FGFR1 (Figure 1C,D) (conditions CA and opto+, respectively), indicating potent kinase activation, while samples kept in the dark (conditions light-) did not show significant pTyr levels, revealing no unspecific effect of light. Finally, no phosphorylation of the point mutant Nlgn1-Y782F was observed upon light application (Figure 1C,D), demonstrating that Y782 is the only tyrosine residue on Nlgn1 which is phosphorylated by light-gated optoFGFR1.
 
@@ -41,7 +41,7 @@ Using an in vitro kinase assay on recombinant GST fused to the intracellular dom
 
 **Figure 1.:** (A) Schematic diagram of optogenetically-driven Nlgn1 tyrosine phosphorylation using optoFGFR1. Phosphorylated Nlgn1 is expected to recruit PSD-95 that serves as a platform for trapping AMPARs. (B) Scheme representing the 470 LED array that is placed in the incubator and used to illuminate COS-7 cells or organotypic slices contained in a six-well plate. (C) pTyr and Nlgn1 immunoblots of proteins extracted from COS-7 cells and immunoprecipitated with anti-Nlgn1 antibodies. Cells expressed either no Nlgn1, Nlgn1 alone, Nlgn1 + constitutively active (CA) FGFR1, Nlgn1 + optoFGFR1, and Nlgn1-Y782F + optoFGFR1. In the first lane, the starting material (SM) from non-transfected cells reveals numerous tyrosine phosphorylated proteins, whereas a single band is present in the Nlgn1 IP samples (black arrowhead). Cells were either kept in the dark (- light), or exposed to alternative 470 nm light and pulses (1 s light pulse every 1 s) for 15 min (+ light). (D) Corresponding starting material immunoblotted with HA and FGFR1 antibodies, respectively. The arrowheads represent HA-tagged Nlgn1, HA-tagged optoFGFR1, or constitutively active FGFR1.
 
-## Light activation of optoFGFR1 increases dendritic spine density
+### Light activation of optoFGFR1 increases dendritic spine density
 
 We then examined the impact of triggering Nlgn1 tyrosine phosphorylation on synapse morphology and function in mouse organotypic hippocampal cultures, using confocal microscopy and electrophysiology, respectively (Figure 2A). Using single-cell electroporation, we expressed optoFGFR1 with a tdTomato volume marker in CA1 neurons of hippocampal slices obtained from either wild type or Nlgn1 KO mice. Immunostained HA-tagged optoFGFR1 was detected throughout dendrites including spines, that is at the right location to phosphorylate Nlgn1 (Figure 2B). Dendritic spine density increased by ~25% in neurons exposed to 470 nm light pulses for 24 hr, but remained stable in neurons expressing optoFGFR1 and kept in the dark, or in light-stimulated CA1 neurons from Nlgn1 KO slices (Figure 2C,D), demonstrating that this effect is mediated by light-dependent tyrosine phosphorylation of endogenous Nlgn1.
 
@@ -49,21 +49,53 @@ We then examined the impact of triggering Nlgn1 tyrosine phosphorylation on syna
 
 **Figure 2.:** (A) Experimental procedure to investigate the effect of the optogenetic stimulation of optoFGFR1 on spine density and synaptic transmission. CA1 neurons in organotypic slices from WT or Nlgn1 KO mice were electroporated at DIV 3–5 with tdTomato and HA-tagged optoFGFR1. Two days later, they were either stimulated with alternating blue light for 24 hr or kept in the dark, and processed for imaging or electrophysiology. (B) Confocal images of CA1 neurons and dendritic segments showing tdTomato (red) and anti-HA immunostaining (green). (C) Confocal images of apical dendrites from electroporated neurons before (0 hr) and 24 hr after light activation of optoFGFR1. Control slices did not receive light, or received light but were from the Nlgn1 KO background. Solid arrowheads point to spines which have appeared, and empty arrowheads to spines which have disappeared in the time interval. (D) Normalized spine density for each condition (n = 19–28 dendrites from N = 5–7 cells). Change in spine density was assessed for each condition using paired t-test (***p<0.001, *p<0.05, ns: not significant). Spine density change was compared across conditions using a one-way ANOVA followed by Tukey’s multiple comparison test (***p<0.001, **p<0.01).
 
-## Light activation of optoFGFR1 enhances basal AMPAR-, but not NMDAR-mediated EPSCs
+### Light activation of optoFGFR1 enhances basal AMPAR-, but not NMDAR-mediated EPSCs
 
 At the electrophysiological level, we measured both AMPAR- and NMDAR-mediated EPSCs evoked by the stimulation of Schaffer’s collaterals, comparing neurons expressing optoFGFR1 with paired non-electroporated neighbors by dual patch-clamp recordings (Figure 3A). Strikingly, neurons expressing optoFGFR1 and exposed to light for 24 hr exhibited ~200% larger evoked AMPAR-mediated EPSCs compared to non-electroporated neighbors that also received light, or to neurons expressing optoFGFR1 and kept in the dark (Figure 3D,F). This was accompanied by an almost two-fold increase in the frequency of spontaneous AMPAR-mediated EPSCs (Figure 3B,C), in agreement with the higher number of dendritic spines. No change in the amplitude or kinetics of spontaneous AMPAR-mediated EPSCs was measured (Figure 3—figure supplement 1A–C), indicating that optoFGFR1 activation did not change AMPAR channel conductance. In parallel, there was no significant impact of optoFGFR1 expression and/or light on evoked NMDAR-mediated EPSCs (Figure 3E,G). Importantly, the light-induced increase AMPAR-mediated EPSCs was not observed in CA1 neurons from Nlgn1 KO slices (Figure 3D,F), demonstrating that this effect involves the selective tyrosine phosphorylation of Nlgn1. The paired-pulse ratio was not changed by optoFGFR1 expression or light exposure, suggesting that presynaptic function was unaltered (Figure 3—figure supplement 1D,E). Furthermore, although the critical tyrosine residue belonging to the gephyrin-binding motif is conserved in Nlgn2 and Nlgn3 (Poulopoulos et al., 2009), where it can also be phosphorylated (Letellier et al., 2018), no effect of optoFGFR1 stimulation was observed on inhibitory currents recorded in CA1 neurons (Figure 3—figure supplement 1F,G). Together, these data demonstrate that the phosphorylation mechanism is specific to the Nlgn1 isoform at excitatory post-synapses, and selectively affects AMPAR recruitment at pre-existing or newly formed spines.
 
-## The intracellular Y782 residue is involved in light-induced effects
+![Figure 3.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig3-v1.jpg)
+
+**Figure 3.:** (A) Dual patch-clamp recordings of AMPAR- and NMDAR-mediated currents upon stimulation of Schaffer’s collaterals were made at holding potentials of −70 and +40 mV (respectively) in electroporated neurons and non-electroporated counterparts. The image shows two patched neurons in the CA1 area, the brighter one expressing optoFGFR1 + tdTomato. (B) Representative electrophysiological recordings of spontaneous AMPAR-mediated EPSCs (sEPSCs) in a control non-electroporated neuron (black trace), and a paired neuron expressing optoFGFR1 and pre-exposed to light for 24 hr (blue trace). (C) Corresponding sEPSC frequency for control neurons and neurons expressing optoFGFR1. Data were compared using the Wilcoxon matched-pairs signed rank test (*p<0.05). (D, E) Scatter plots of AMPAR- and NMDAR-mediated EPSCs, respectively, in neurons expressing optoFGFR1 compared to paired unelectroporated neurons (control cell), in the indicated conditions. Representative traces (color) normalized to control (grey) are shown as insets. (F, G) Average of AMPAR- and NMDAR-mediated EPSCs in the three conditions, normalized to the control (100%). Data were compared to the control condition by the Wilcoxon matched-pairs signed rank test, and between themselves using one-way ANOVA followed by Tukey's multiple comparison (**p<0.01, *p<0.05, ns: not significant).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Quantification of AMPAR-mediated sEPSC amplitude, rise time, and decay time, respectively, for control neurons (grey boxes) and neurons expressing optoFGFR1 (blue boxes). Data were compared using the paired t-test (A,B) or the Wilcoxon matched-pairs signed rank test (C) (ns: not significant). (D) Average EPSC traces in response to paired stimuli (50 ms interstimulus interval) recorded from an unelectroporated WT neuron (in black), WT neurons expressing optoFGFR1 kept in the dark (in grey) or exposed to light (in blue) and a Nlgn1-KO neuron expressing optoFGFR1 and exposed to light (in violet). (E) Average PPR for the same conditions as in (A) (Wilcoxon matched-pairs signed rank test, ns: not significant). Data represent mean ± SE. (F) Scatter plots of IPSCs in optoFGFR1-expressing neurons versus paired unelectroporated neurons (control cell), in the dark (black) and light (blue) and conditions, respectively. Representative IPSCs traces (black or blue) were recorded at a holding potential of +10 mV, normalized to control (grey), and are shown as insets. (G) Average amplitude of IPSCs in the two conditions, normalized to the control (100%). Data were compared to the control condition by the Wilcoxon matched-pairs signed rank test (ns, not significant).
+
+### The intracellular Y782 residue is involved in light-induced effects
 
 To verify that optoFGFR1 was specifically phosphorylating the Nlgn1 Y782 residue in neurons, we adopted a replacement strategy (Letellier et al., 2018) by co-electroporating optoFgfr1, Nlgn1-shRNA, and Nlgn1 rescue constructs in slices from WT mice (Figure 4A,B). This led to basal AMPAR- and NMDAR-mediated EPSCs in the dark matching those measured in paired non-electroporated neurons expressing endogenous Nlgn1 levels (Figure 4C–F). In parallel, the density of dendritic spines remained stable over time in neurons expressing optoFGFR1 and kept in the dark, or not expressing optoFGFR1 and exposed to light, indicating no side effects of either optoFGFR1 electroporation or photo-stimulation (Figure 4—figure supplement 1). In CA1 neurons expressing rescue Nlgn1-WT and optoFGFR1, light exposure induced again a ~25% increase in dendritic spine number (Figure 4—figure supplement 1), as well as a ~200% increase in AMPAR (but not NMDAR) -mediated EPSCs compared to control non-electroporated neurons (Figure 4C–F). These effects were similar to those found in neurons expressing endogenous Nlgn1 (Figures 2 and 3), validating the Nlgn1 replacement strategy. Importantly, the increase in spine density and AMPAR-mediated EPSCs by optoFGFR1 activation was not observed in CA1 neurons expressing Nlgn1-Y782F (Figure 4C,E and Figure 4—figure supplement 1), indicating that those effects are mediated by phosphorylation of the Nlgn1 Y782 residue induced by the photo-activation of optoFGFR1.
 
-## Light activation of Nlgn1 tyrosine phosphorylation impairs LTP
+![Figure 4.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig4-v1.jpg)
+
+**Figure 4.:** CA1 Neurons were co-electroporated with plasmids encoding tdTomato, shRNA against endogenous Nlgn1 containing a GFP reporter, shRNA resistant AP-tagged Nlgn1-WT or -Y782F, biotin ligase (BirAER), and HA-tagged optoFgfr1. (A, B) Confocal images showing tdTomato (red) and GFP (green). Biotinylated Nlgn1 and optoFGFR1 were stained in different slices using streptavidin-Atto647 and anti-HA antibody, respectively (magenta). (C, D) Scatter plots of AMPAR- and NMDAR-mediated EPSCs, respectively, for electroporated versus paired non-electroporated neurons (control cell) in the indicated conditions. Representative traces (black, blue or violet) normalized to control (grey) are shown as insets. (E, F) Average of AMPAR-and NMDAR-mediated EPSCs, respectively, normalized to the control (100%) in the different conditions. Data were compared to the control condition by the Wilcoxon matched-pairs signed rank test and between themselves using one-way ANOVA followed by Tukey's multiple comparison (**p<0.01, ns: not significant).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confocal images of tdTomato in apical dendrites from CA1 neurons before (0 hr) and after (24 hr) light activation. Control neurons either did not receive light, or did not contain optoFGFR1, or were expressing the Nlgn1-Y782F mutant. Solid arrowheads point to spines which have appeared, and empty arrowheads to spines which have disappeared in the time period. (B) Normalized spine density for each condition (n = 13–33 dendrites from N = 4–10 cells). Change in spine density was assessed for each condition using the paired t-test (****p<0.0001, ns: not significant). Spine density change was compared across conditions using the Kruskal-Wallis test followed by Dunn’s multiple comparison test, paired t-test (**p<0.001).
+
+### Light activation of Nlgn1 tyrosine phosphorylation impairs LTP
 
 Finally, we asked whether the increase of basal AMPAR-mediated currents induced by Nlgn1 phosphorylation could partially occlude NMDAR-dependent long term potentiation (LTP). Using a pairing protocol, we induced an increase of about threefold in evoked AMPAR-mediated EPSCs, which was blocked by the NMDAR antagonist AP5 (Figure 5—figure supplement 1A). CA1 neurons expressing optoFGFR1 and pre-exposed to light showed a significant ~50% reduction in the LTP plateau level compared to control non-electroporated neighbors (Figure 5A,B). To check if this effect was again specific of Nlgn1, we performed LTP experiments in hippocampal slices from Nlgn1 KO mice. Surprisingly, the LTP level was barely reduced (Figure 5A,C), despite a significant decrease in NMDA/AMPA ratio in control non-electroporated Nlgn1 KO neurons compared to neurons from WT mice (Figure 5—figure supplement 1B; Budreck et al., 2013; Chubykin et al., 2007). However, light stimulation of optoFGFR1 did not alter LTP in Nlgn1 KO neurons (Figure 5C,D), indicating that Nlgn1 phosphorylation is responsible for the decreased LTP in wild-type neurons.
 
-## Quantitative interpretation of LTP data by modeling AMPAR trapping at synapses
+![Figure 5.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig5-v1.jpg)
+
+**Figure 5.:** (A) Average AMPAR-mediated EPSCs in CA1 neurons expressing optoFGFR1 (blue circles) or in non-electroporated neighbors (grey circles), all pre-exposed to light for 24 hr, upon LTP induction at time 0 using a pairing protocol. Sample traces are shown at time 0 and 30 min after LTP induction. The solid lines show averages from 10 computer simulations for each condition with parameters kon = 1 s−1 (black) or 3 s−1 (blue), and koff drops from 0.04 to 0.004 s−1. (B) Individual values of the long-term plateau of AMPAR-mediated EPSC in the two conditions (6–10 min after LTP induction), expressed as a percentage of the baseline level. Data were compared to the control condition (unelectroporated neuron also exposed to light) by Wilcoxon matched-pairs signed rank test (***p<0.001). (C, D) Similar LTP recordings and quantification in CA1 neurons from Nlgn1 KO slices, with corresponding simulations (red line, kon = 1 s−1 and koff drops from 0.04 to 0.008 s−1). Data were compared to the control condition (unelectroporated neuron also exposed to light) by Wilcoxon matched-pairs signed rank test (ns: non-significant).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Evoked AMPAR-mediated EPSCs upon induction of LTP at time zero, normalized to baseline, in control ACSF or in the presence of 50 µM D-AP5. Note the abolishment of LTP in the AP5 condition. (B) Quantification of the ratio between NMDAR-mediated and AMPAR-mediated EPSCs calculated in the same CA1 neurons, for different conditions: control unelectroporated neurons from either wild type (Nlgn1-WT, light grey) or Nlgn1-KO (red) slices, neurons from WT slices electroporated with shRNA to Nlgn1 (Nlgn1-KD, pink), and neurons co-electroporated with shRNA to Nlgn1 and AP-tagged Nlgn1 rescue construct (dark grey).
+
+### Quantitative interpretation of LTP data by modeling AMPAR trapping at synapses
 
 To quantitatively interpret those LTP results, we carried out computer simulations describing membrane diffusion and synaptic trapping of individual AMPARs (Figure 6A, Figure 6—figure supplement 1A,B and Supplementary source code), based on a previous framework using realistic kinetic parameters (Czöndör et al., 2012). This model is in line with experiments showing that hippocampal LTP primarily involves the capture of extra-synaptic AMPARs (Granger et al., 2013; Penn et al., 2017). We mimicked LTP by introducing a step decrease in the apparent off-rate between AMPARs and the PSD scaffold (Figure 6B,C). The simulations matched very well experimental LTP (Figure 5A,C), both in terms of kinetics and plateau value (~270%), supporting this diffusion/trap model. To mimic the effect of Nlgn1 phosphorylation on postsynaptic density (PSD) assembly and AMPAR recruitment (Letellier et al., 2018), we raised the AMPAR/scaffold binding rate, resulting in a ~2 fold increase of basal synaptic AMPAR number (Figure 6—figure supplement 1C) reproducing the experimental data (Figure 3D,F). In response to the same LTP simulation, the relative increase in AMPAR number now reached only ~190%, as in optoFGFR1 experiments (Figure 5A). Thus, the partial occlusion of LTP observed upon optoFGFR1 stimulation can be explained by a high initial recruitment of synaptic AMPARs, which depletes the extra-synaptic AMPAR reservoir necessary for LTP. Accordingly, we previously reported an almost complete occlusion of LTP upon replacement of endogenous Nlgn1 by a Y782A mutant which phenocopies maximally phosphorylated Nlgn1 and increases AMPAR-mediated EPSCs by ~4 fold (Giannone et al., 2013; Letellier et al., 2018). Overall, our model predicts a negative correlation between basal synaptic AMPAR number and the ability to respond to LTP (Figure 6—figure supplement 1D), that perfectly fits the experiments (Figure 6D). These data suggest that Nlgn1 tyrosine phosphorylation impairs LTP by promoting high initial synaptic AMPAR levels.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic diagram of the AMPAR diffusion/trap process, with model parameters being indicated in italic. (B) Heat maps representing simulations of AMPAR accumulation at a single synapse over time. LTP is mimicked by decreasing the AMPAR/scaffold off-rate, causing a diffusional trapping of AMPARs from extra-synaptic pools. Nlgn1 phosphorylation is mimicked by increasing the initial AMPAR/scaffold on-rate, resulting in higher basal AMPAR level and lower LTP (relatively to baseline). (C) Graph showing the relative change in synaptic AMPAR content (in % of baseline) over time, when LTP is simulated by a drop in koff from 0.04 to 0.004 s−1 at time zero. Curves correspond to different values of the parameter kon ranging from 0.05 to 8 s−1. (D) Relationship between basal synaptic AMPAR content and LTP plateau level (% of baseline). Experimental points (circles) were obtained from non-electroporated neurons (grey), neurons expressing opoFGFR1 and stimulated with light (blue), or neurons co-expressing shRNA to Nlgn1 and either Nlgn1-WT (light blue) or Nlgn1-Y782A (dark blue) data taken from Letellier et al. (2018). Basal AMPAR-mediated EPSCs were normalized to match a synaptic level of 33 AMPARs in the control condition (Levet et al., 2015). The solid line represents simulated data generated by varying the AMPAR/scaffold binding rate from 0.1 to 10 s−1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52027/elife-52027-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative example of a single simulated AMPAR trajectory (time step Δt = 0.1 s, total duration 200 s). Note the fast AMPAR extra-synaptic diffusion and the slow diffusion when the AMPAR is trapped within the synapse (red squares). (B) Still image illustrating the steady-state distribution of AMPARs in the simulated neurite geometry. Individual AMPARs are represented by a Gaussian intensity profile of FWHM of 25 nm. Note AMPAR accumulation at synapses. (C) Graph showing the steady-state synaptic AMPAR number versus the AMPAR/scaffold binding rate (kon ranging from 0.05 s−1 to 10 s−1), for different values of the unbinding rate (koff ranging from 0.002 s−1 to 0.08 s−1). The synaptic AMPAR level saturates at high kon and/or low koff values due to the depletion of the finite AMPAR extra-synaptic pool. (D) Predicted relationship between the basal synaptic AMPAR content and the LTP response, expressed as a percentage of the AMPAR baseline (dashed line). The four curves represent different initial koff values (the final value is 0.004 s−1 for all conditions), for a constant kon = 1 s−1.
 
 ## Discussion
 
@@ -83,47 +115,323 @@ Finally, increasing the Nlgn1 phosphorylation by optoFGFR1 activation reduced LT
 
 ## Materials and methods
 
-## Constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Nlgn1</td>
+      <td>NCBI</td>
+      <td>NM_138666.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Fgfr1</td>
+      <td>NCBI</td>
+      <td>NM_010206.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57Bl/6J</td>
+      <td>Charles River</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Nlgn1-KO</td>
+      <td>Varoqueaux et al., 2006 (PMID:16982420)</td>
+      <td>RRID:MGI:3688627</td>
+      <td>N. Brose (MPI Goettingen) C57Bl/6J background</td>
+    </tr>
+    <tr>
+      <td>Cell line (Simian)</td>
+      <td>COS-7</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus muscumus)</td>
+      <td>Organotypic slices (350 µm)</td>
+      <td>This paper Stoppini et al. (1991) (PMID:1715499)</td>
+      <td></td>
+      <td>Prepared from P5-P8 animals. From C57Bl/6J WT or Nlgn1-KO mice</td>
+    </tr>
+    <tr>
+      <td>Transfected construct Mus musculus</td>
+      <td>HA-Nlgn1</td>
+      <td>P. Scheiffele (Biozentrum, Basel)</td>
+      <td></td>
+      <td>In COS cells with X-TremeGENE kit</td>
+    </tr>
+    <tr>
+      <td>Transfected construct Mus musculus</td>
+      <td>Fgfr1 V561M-FLAG (CA)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Obtained with In-Fusion HD Cloning Kit using Fgfr1-V561M-F and Fgfr1-V561M-R primers on the Fgfr1-Flag plasmid. In COS cells</td>
+    </tr>
+    <tr>
+      <td>Transfected construct Mus musculus</td>
+      <td>optoFgfr1-HA</td>
+      <td>Grusch et al., 2014 (PMID:24986882)</td>
+      <td>(RRID:Addgene_58745</td>
+      <td>In COS cells with X-TremeGENE kit. In organotypic slices by single cell electroporation.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct Mus musculus</td>
+      <td>HA-Nlgn1 Y782F</td>
+      <td>Giannone et al., 2013 (PMID:23770246)</td>
+      <td></td>
+      <td>In COS cells with X-TremeGENE kit.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>tdTomato</td>
+      <td>R. Tsien (UC San Diego, CA)</td>
+      <td></td>
+      <td>In organotypic slices by single cell electroporation.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Nlgn1 -shRNA (targeting Nlgn1)</td>
+      <td>Chih et al., 2005 (PMID:15681343)</td>
+      <td>RRID:Addgene_59339</td>
+      <td>Gift from P. Scheiffele In organotypic slices by single cell electroporation.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AP-Nlgn1 rescue (shRNA resistant)</td>
+      <td>Chamma et al., 2016 (PMID:26979420)</td>
+      <td></td>
+      <td>In organotypic slices by single cell electroporation.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AP-Nlgn1 Y782F rescue (shRNA resistant)</td>
+      <td>Letellier et al., 2018 (PMID:30266896)</td>
+      <td></td>
+      <td>In organotypic slices by single cell electroporation.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>BirAER</td>
+      <td>A. Ting (Stanford University, CA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (M. musculus)</td>
+      <td>Fgfr1-Flag plasmid</td>
+      <td>Duchesne et al., 2006 PMID:16829530</td>
+      <td></td>
+      <td>L. Duchesne (Université de Rennes)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers Fgfr1-V561M-F; Fgfr1-V561M-R</td>
+      <td>This paper From Eurogentec</td>
+      <td></td>
+      <td>TGTCATTATGGAGTACGCCTC; TACTCCATAATGACATAAAGAGG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Nlgn1 (Rabbit polyclonal)</td>
+      <td>Synaptic systems 129013</td>
+      <td>RRID:AB_2151646</td>
+      <td>IP (2 µg) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phosphotyrosine P-Tyr-100 (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology 9411</td>
+      <td>RRID:AB_331228</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FGFR1 (monoclonal polyclonal)</td>
+      <td>Cell Signaling Technology D8E4 9740</td>
+      <td>RRID:AB_11178519</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rat monoclonal)</td>
+      <td>Roche 3F10 11867423001</td>
+      <td>RRID:AB_390918</td>
+      <td>WB (1:1000) IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Easyblot HRP antibodies anti-mouse;anti-rabbit</td>
+      <td>GeneTex GTX221667-01;GTX221666-01</td>
+      <td>RRID:AB_10728926; RRID:AB_10620421</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa647-conjugated anti-rat antibody (Goat Polyclonal)</td>
+      <td>Molecular Probes A21247</td>
+      <td>RRID:AB_141778</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NeutrAvidin</td>
+      <td>Invitrogen</td>
+      <td>A2666</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning Kit</td>
+      <td>Takara Bio</td>
+      <td>639642 (Ozyme)</td>
+      <td>In COS cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>X-tremeGENE HP DNA Transfection Reagent</td>
+      <td>Roche (RRID:SCR_001326)</td>
+      <td>6366546001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher Scientific (RRID:SCR_008452)</td>
+      <td>10004D</td>
+      <td>For immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>TOCRIS (RRID:SCR_003689)</td>
+      <td>0106/10</td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bicuculline</td>
+      <td>TOCRIS (RRID:SCR_003689)</td>
+      <td>0130/50</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX</td>
+      <td>TOCRIS (RRID:SCR_003689)</td>
+      <td>0373/10</td>
+      <td>100 nM or 10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NHS-ester ATTO 647N</td>
+      <td>ATTO-TEC GmbH</td>
+      <td>AD 647 N-31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad</td>
+      <td>PRISM</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex</td>
+      <td>Axon Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit</td>
+      <td>Axon Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Minianalysis</td>
+      <td>Synaptosoft</td>
+      <td>RRID:SCR_002184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FluoSim</td>
+      <td>Lagardère et al., 2020 (DOI:10.1101/2020.02.06.937045)</td>
+      <td></td>
+      <td>Full source code will be deposited on GitHub upon paper acceptance</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs
 
 Plasmids for BirAER and AP-Nlgn1 harboring both extracellular splice inserts A and B were kind gifts from A. Ting (Stanford University, CA). Short hairpin RNA to murine Nlgn1 (shNlgn1) was a generous gift from P. Scheiffele (Biozentrum, Basel). shRNA-resistant AP-tagged Nlgn1 and Nlgn1-Y782F were described previously (Chamma et al., 2016; Letellier et al., 2018). The tdTomato plasmid was a generous gift from R. Tsien (UC San Diego, CA). Fgfr1-Flag (Duchesne et al., 2006) was a generous gift from L. Duchesne (Université de Rennes). To generate constitutively active (CA) Fgfr1-Flag, the V561M mutation was introduced using the In-Fusion HD Cloning Kit (Takara Bio) and the following primers: Fgfr1-V561M-F 5’TGTCATTATGGAGTACGCCTC3’ and Fgfr1-V561M-R 5’TACTCCATAATGACATAAAGAGG3’. OptoFgfr1 bearing an N-terminal myristoylation motif to attach to the membrane, and a C-terminal HA-tag was described previously (Grusch et al., 2014). In this construct, the extracellular FGF binding domain has been removed, and a light-oxygen voltage sensing (LOV) domain is fused to the C-terminus, such that stimulation with blue light induces dimerization of the FGFR1 intracellular domain and subsequent kinase activation in a ligand-independent manner.
 
-## COS-7 cell culture and transfection
+### COS-7 cell culture and transfection
 
 COS-7 cells purchased from ATCC (cell line source ECACC 87021302) were cultured in DMEM (Eurobio) supplemented with 2 mM glutamax (GIBCO), 1 mM sodium pyruvate (Sigma-Aldrich), and 10% Fetal Bovine Serum (Eurobio). COS-7 cells used in this study were regularly tested negative for Mycoplasma using the MycoAlertTM Detection Kit (LT07-218) from Lonza. For IP experiments, cells were plated in 6-well plates at a density of 120,000 per well. After 1 day, cells were transfected with 10:1 combinations of Nlgn1 and FGFR1 DNA constructs using the X-TremeGENE kit (Roche), with 1 µg total DNA for 2 µL reagent in 100 µL PBS per well. Cells were left under a humidified 5% CO2 atmosphere (37°C) for 2 days before being processed for biochemistry.
 
-## Organotypic slice culture
+### Organotypic slice culture
 
 Organotypic hippocampal slice cultures were prepared as described (Stoppini et al., 1991) from either wild type or Nlgn1 knock-out mice (C57Bl/6J strain) obtained from N. Brose (MPI Goettingen). Animals were raised in our animal facility and were handled and killed according to European ethical rules. Briefly, animals at postnatal days 5–8 were quickly decapitated and brains placed in ice-cold Gey’s balanced salt solution under sterile conditions. Hippocampi were dissected out and coronal slices (350 µm) were cut using a tissue chopper (McIlwain) and incubated at 35°C with serum-containing medium on Millicell culture inserts (CM, Millipore). The medium was replaced every 2–3 days.
 
-## LED illumination
+### LED illumination
 
 For cells expressing optoFGFR1, all steps before biochemical, confocal, or electrophysiological analysis were done in the dark. COS-7 cells or organotypic hippocampal slices were exposed to light pulses of 1 s every other second for 15 min or 24 hr, respectively, by placing the six-well plates under a custom-made rectangular array comprising 8 × 12 light emitting diodes (LEDs) (470 nm, 15 mW each), powered by a 24 V DC supply, and driven by an internal Arduino Leonardo pulse generator. The array was covered with a 5-mm-thick white Plexiglas sheet to dim the emitted light power by ~100 fold (2.5 µW/mm²).
 
-## Immuno-precipitation, SDS–PAGE, and immunoblotting
+### Immuno-precipitation, SDS–PAGE, and immunoblotting
 
 COS-7 cells were treated with 10 µM pervanadate for 15 min before lysis to preserve phosphate groups on Nlgn1. Whole-cell protein extracts were obtained by solubilizing cells in lysis buffer (50 mM HEPES, pH 7.2, 10 mM EDTA, 0.1% SDS, 1% NP-40, 0.5% DOC, 2 mM Na-Vanadate, 35 µM PAO, 48 mM Na-Pyrophosphate, 100 mM NaF, 30 mM phenyl-phosphate, 50 µM NH4-molybdate and 1 mM ZnCl2) containing protease Inhibitor Cocktail Set III, EDTA-Free (Calbiochem). Lysates were clarified by centrifugation at 8000 × g for 15 min. Equal amounts of protein (500 µg, estimated by Direct Detect assay, Merck Millipore) were incubated overnight with 2 µg rabbit anti-Nlgn1 (Synaptic systems 129013), then precipitated with protein G beads (Dynabeads Protein G, Thermo Fisher Scientific) and washed four times with lysis buffer. At the end of the immunoprecipitation, 20 µL beads were resuspended in 20 µL of 2x loading buffer (120 mM Tris-HCl, 3% SDS, 10% glycerol, 2% β-mercaptoethanol, 0.02% bromophenol blue, pH = 6.8). After magnetic beads isolation, half of the supernatants or starting materials (10–20 µg) were separated on 4–15% Mini-PROTEAN TGX Precast Protein Gels (Bio-Rad) and transferred to nitrocellulose membranes for immunoblotting (semi-dry, 7 min, Bio-Rad). After blocking with 5% non-fat dried milk in Tris-buffered saline Tween-20 (TBST; 28 mM Tris, 137 mM NaCl, 0.05% Tween-20, pH 7.4) for 45 min at room temperature, membranes were probed for 1 hr at room temperature or overnight at 4°C with mouse anti-phosphotyrosine (1:1000, Cell Signaling Technology 9411S), rabbit anti-Nlgn1 (1:1000, Synaptic systems 129013), rabbit anti-FGFR1 (1:1000, Cell Signaling Technology D8E4), or rat anti-HA (1:1000, Roche 3F10). After washing three times with TBST buffer, blots were incubated for 1 hr at room temperature with the corresponding horseradish peroxidase (HRP)–conjugated goat secondary antibodies (1:5000, Jackson Immunoresearch) for input samples, or Easyblot HRP antibodies (GeneTex) for IP samples. The latter was used to avoid the detection of primary antibodies from the IP. Target proteins were detected by chemiluminescence with Super signal West Femto (Pierce) on the ChemiDoc Touch system (Bio-Rad).
 
-## Single-cell electroporation
+### Single-cell electroporation
 
 After 3–4 days in culture, organotypic slices were transferred to an artificial cerebrospinal fluid (ACSF) containing (in mM): 130 NaCl, 2.5 KCl, 2.2 CaCl2, 1.5 MgCl2, 10 D-glucose, 10 HEPES (pH 7.35, osmolarity adjusted to 300 mOsm). CA1 pyramidal cells were then processed for single-cell electroporation using glass micropipets containing plasmids encoding TdTomato (6 ng/µL) and optoFGFR1 (13 ng/µL). For rescue experiments, a plasmid carrying the Nlgn1 specific shRNA (13 ng/µL) was electroporated along with a resistant AP-Nlgn1 or Y782F mutant (13 ng/µL), BirAER (6 ng/µL), TdTomato (6 ng/µL) and optoFGFR1 (13 ng/µL). Micropipets were pulled from 1 mm borosilicate capillaries (Harvard Apparatus) with a vertical puller (Narishige). Electroporation was performed by applying four square pulses of negative voltage (−2.5 V, 25 ms duration) at 1 Hz, then the pipet was gently removed. 10–20 neurons were electroporated per slice, and the slice was placed back in the incubator for 2–3 days before electrophysiology or confocal imaging.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For visualization of recombinant AP-Nlgn1 and spine morphology in electroporated CA1 neurons expressing tdTomato, AP-Nlgn1 and BirAER, organotypic slices were fixed with 4% paraformaldehyde- 4% sucrose in PBS for 4 hr before the permeabilization of membranes with 0.25% Triton in PBS. Slices were subsequently incubated with NeutrAvidin (1:200, Invitrogen, A2226) conjugated to NHS-ester ATTO 647N (ATTO-TEC GmbH, AD 647 N-31) for 2 hr at room temperature. For visualization of HA-tagged optoFGFR1, fixed and permeabilized slices were incubated with rat anti-HA (Roche, clone 3F10, 1:100) overnight at 4°C. Slices were subsequently incubated with Alexa647-conjugated goat anti-rat antibody (Molecular Probes, 1:200) for 2 hr at room temperature.
 
-## Confocal microscopy and spine counting
+### Confocal microscopy and spine counting
 
 For fixed slices, images of single CA1 electroporated neurons co-expressing tdTomato, BirAER and AP-Nlgn1 (WT or Y782F mutant) were acquired on a commercial Leica DMI6000 TCS SP5 microscope using a 63x/1.4 NA oil objective and a pinhole opened to one time the Airy disk. Images of 4096 × 4096 pixels, giving a pixel size of 70 nm, were acquired at a scanning frequency of 400 Hz. The number of optical sections was between 150–200, using a vertical step size of 0.3–0.4 µm. The number of spines per unit dendrite length of tdTomato-positive cells in secondary and tertiary apical dendrites was calculated manually using Metamorph (Molecular Devices).
 
 To assess the effect of optoFGFR1 stimulation on the formation of dendritic spines, we took confocal stacks of the dendritic tree of several CA1 neurons before light stimulation, then exposed the organotypic slices to dim 470 nm light pulses (1 s pulse every 2 s, 2.5 µW/mm²) through the LED array placed in the incubator for 24 hr, and finally took another round of images of the same neurons. For such time-lapse imaging, short imaging sessions (10–15 min) of live electroporated slices were carried out with a commercial Leica DMI6000 TCS SP5 microscope using a 63x/0.9 NA dipping objective and a pinhole opened to one time the Airy disk. Slices were maintained in HEPES-based ACSF. Laser intensity in all these experiments was kept at a minimum and acquisition conditions remained similar between the two imaging sessions. 12-bit images of 1024 × 1024 pixels, giving a pixel size of 120 nm, were acquired at a scanning frequency of 400 Hz. The number of optical sections varied between 150 and 200, and the vertical step size was 0.3–0.4 µm. The number of spines per unit dendrite length of tdTomato-positive neurons was calculated manually in Metamorph.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Whole-cell patch-clamp recordings were carried out at room temperature in CA1 neurons from organotypic hippocampal cultures, placed on a Nikon Eclipse FN1 upright microscope equipped with a motorized stage and two manipulators (Scientifica). CA1 pyramidal neurons were imaged with DIC and electroporated neurons were identified by visualizing the GFP or Tdtomato fluorescence. The recording chamber was continuously perfused with ACSF bubbled with 95% O2/5% CO2 containing (in mM): 125 NaCl, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 2 CaCl2, 1 MgCl2, and 25 glucose. 20 µM bicuculline and 100 nM NBQX were added to block inhibitory synaptic transmission and reduce epileptiform activity, respectively. The series resistance Rs was left uncompensated, and recordings with Rs higher than 30 MΩ were discarded. We measured both AMPA- and NMDA-receptor mediated EPSCs upon electrical stimulation of Schaffer’s collaterals, using a double-patch clamp configuration to normalize the recordings with respect to a neighboring non-electroporated neuron (Shipman et al., 2011). Voltage-clamp recordings were digitized using the Multiclamp 700B amplifier (Axon Instruments) and acquired using the Clampex software (Axon Instruments). EPSCs and IPSCs were evoked in an electroporated neuron and a nearby non-electroporated neuron (control) every 10 s for 5 min using a bipolar electrode in borosilicate theta glass filled with ACSF and placed in the stratum radiatum or pyramidal layer; respectively. AMPAR-mediated currents were recorded at −70 mV and NMDAR-mediated currents were recorded at +40 mV and measured 50 ms after the stimulus, when AMPAR-mediated EPSCs are back to baseline. IPSCs were recorded at +10 mV and in the presence of 10 µM NBQX and 50 µM D-AP5 to block AMPARs and NMDARs, respectively. EPSCs and IPSCs amplitude measurements were performed using Clampfit (Axon Instruments).
 
 For LTP recordings, ACSF contained in (mM) 125 NaCl, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 4 CaCl2, 4 MgCl2, 25 glucose, and 0.02 bicuculline, while recording pipettes were filled with intracellular solution containing in mM: 125 Cs-MeSO4, 10 CsCl, 10 HEPES, 2.5 MgCl2, 4 Na2ATP, 0.4 NaGTP and 10 phosphocreatine. Axons from CA3 pyramidal cells were cut with a scalpel to prevent spontaneous action potential propagation. Slices were maintained at 25°C throughout the recording. Baseline AMPAR-mediated EPSCs were recorded every 10 s for 2 min before LTP induction. Then LTP was induced by depolarizing the cells to 0 mV while stimulating the afferent Schaffer’s collaterals at 2 Hz for 100 s. Recordings were sampled at −70 mV every 10 s for 30 min after LTP induction. In some recordings, LTP was induced in presence of 50 µm D-AP5 to block NMDARs. Between the stimulations, spontaneous AMPAR-mediated EPSCs (sEPSCs) were also recorded. sEPSC amplitude, frequency, rise time and decay times were measured from averaged sEPSCs using miniAnalysis (Synaptosoft).
 
-## Computer simulations of AMPAR diffusion-trapping in LTP conditions
+### Computer simulations of AMPAR diffusion-trapping in LTP conditions
 
 The computer program is based on a previous framework describing the role of AMPAR membrane dynamics in synaptic plasticity (Czöndör et al., 2012). Our original model included two types of processes to target AMPAR to synapses, that is diffusional trapping and vesicular recycling. However, based on recent experimental findings that hippocampal LTP primarily involves the diffusional trapping of extra-synaptic AMPARs (Granger et al., 2013; Penn et al., 2017), the current model focuses only on this process. Briefly, a dendritic segment is approximated by a 2D rectangular region (2 µm x 10 µm) containing five synapses (squares of 0.3 µm x 0.3 µm, surface area ~0.1 µm²), corresponding to a linear density of 0.5 synapse/µm as measured experimentally (Letellier et al., 2018). This area is populated with 1000 AMPARs, initially placed at random positions. AMPARs are characterized by their 2D coordinates x and y, over time, t. When AMPARs reach the region contours, rebound conditions are applied to keep them inside, that is the system is closed. At each time step (∆t = 100 ms), the coordinates are incremented by the distances Δx = (2D∆t)1/2 nx and Δy = (2D∆t)1/2 ny, where nx and ny are random numbers generated from a normal distribution, and D is a diffusion coefficient which depends on whether AMPARs are outside (Dout = 0.1 µm2/s) or inside (Din = 0.05 µm²/s) the synapse, values being taken from single molecule tracking experiments (Nair et al., 2013). Lower AMPAR diffusion within the synaptic cleft is attributed to steric hindrance. To introduce a diffusion barrier at the synapse (Ewers et al., 2014), AMPARs are allowed to cross the synaptic border with a probability Pcrossing = 0.5.
 
@@ -131,12 +439,12 @@ Within the synapse, AMPARs may reversibly bind to static post-synaptic density (
 
 To simulate LTP, the AMPAR/scaffold unbinding rate (koff) was decreased at time zero from higher (0.02 to 0.08 s−1) to lower values (0.002–0.006 s−1), hereby mimicking a higher affinity of TARPs to PSD-95 induced by CamKII activation (Hafner et al., 2015; Opazo et al., 2010). When we tried instead to simulate LTP by raising the parameter kon at time zero, the predicted time course was much more rapid than the one observed experimentally (i.e. the plateau was reached in about one minute). Thus, that type of mechanism is not likely to operate in the particular LTP protocol used here. The total length of the trajectories was set to 35 min, including a 5 min baseline, to match the whole duration of LTP experiments. Ten simulations were generated for each type of condition, and the number of AMPARs per synapse was determined and averaged (sem is within 1% of the mean). To determine the theoretical relationship between LTP level and basal synaptic AMPARs content, the parameter kon was varied between 0.075 s−1 and 10 s−1, thus simulating synapses that contain less or more AMPARs, respectively. We provide here as a supplemental text file the original Mathematica source code described earlier to simulate LTP experiments (Czöndör et al., 2012). However, the algorithm used to make the simulations in this paper is part of a new, integrated software called FluoSim, which is submitted elsewhere (Lagardère et al., 2020) and whose source code will be made freely available through github once published.
 
-## Sampling and statistics
+### Sampling and statistics
 
 For the analysis of dendritic spines observed by confocal microscopy, N et n values represent the total number of cells and dendrites, respectively. For each experiment, three to four independent dissections (from two to three animals) were used. Sample sizes were determined according to previous studies (Letellier et al., 2018; Shipman et al., 2011).
 
 Summary statistics are presented as mean ± SEM (Standard Error of the Mean), including individual data points. Statistical significance tests were performed using GraphPad Prism software (San Diego, CA). Test for normality was performed with D’Agostino and Pearson omnibus normality test. Paired data obtained by imaging or electrophysiology experiments were compared using the Wilcoxon matched-pairs signed rank test when criteria for normality were not met. When paired data followed a normal distribution, we used a paired t-test. The non-electroporated neuron serves as a paired control, since it is patched simultaneously as the electoporated neuron and receives the same input fibers and stimulation. ANOVA test was used to compare means of several groups of normally distributes variables. Kruskal-Wallis test was used to compare several groups showing non-normal distributions. Dunn’s multiple comparisons post hoc test was then used to determine the p value between two conditions. Statistical significance was assumed when p<0.05. In the figures, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## Ethical statement
+### Ethical statement
 
 The authors declare that they have complied with all relevant ethical regulations (study protocol approved by the Ethical Committee of Bordeaux CE50).

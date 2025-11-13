@@ -13,14 +13,14 @@
 ### Affiliations
 
 1. Department of Physiology and Cellular Biophysics, The Clyde and Helen Wu Center for Molecular Cardiology New York United States
-2. https://ror.org/02feahw73 PhyMedExp, Montpellier University, INSERM, CNRS, CHRU Montpellier Montpellier France
-3. https://ror.org/051escj72 Medical Intensive Care Unit, Montpellier University and Montpellier University Health Care Center Montpellier France
+2. PhyMedExp, Montpellier University, INSERM, CNRS, CHRU Montpellier Montpellier France ([ROR:02feahw73](https://ror.org/02feahw73))
+3. Medical Intensive Care Unit, Montpellier University and Montpellier University Health Care Center Montpellier France ([ROR:051escj72](https://ror.org/051escj72))
 
 † Corresponding author
 
 ## Abstract
 
-Age-dependent loss of body wall muscle function and impaired locomotion occur within 2 weeks in Caenorhabditis elegans (C. elegans) ; however, the underlying mechanism has not been fully elucidated. In humans, age-dependent loss of muscle function occurs at about 80 years of age and has been linked to dysfunction of ryanodine receptor (RyR)/intracellular calcium (Ca 2+ ) release channels on the sarcoplasmic reticulum (SR). Mammalian skeletal muscle RyR1 channels undergo age-related remodeling due to oxidative overload, leading to loss of the stabilizing subunit calstabin1 (FKBP12) from the channel macromolecular complex. This destabilizes the closed state of the channel resulting in intracellular Ca 2+ leak, reduced muscle function, and impaired exercise capacity. We now show that the C. elegans RyR homolog, UNC-68 , exhibits a remarkable degree of evolutionary conservation with mammalian RyR channels and similar age-dependent dysfunction. Like RyR1 in mammals, UNC- 68 encodes a protein that comprises a macromolecular complex which includes the calstabin1 homolog FKB-2 and is immunoreactive with antibodies raised against the RyR1 complex. Furthermore, as in aged mammals, UNC-68 is oxidized and depleted of FKB-2 in an age-dependent manner, resulting in ‘leaky’ channels, depleted SR Ca 2+ stores, reduced body wall muscle Ca 2+ transients, and age-dependent muscle weakness. FKB-2 ( ok3007)- deficient worms exhibit reduced exercise capacity. Pharmacologically induced oxidization of UNC-68 and depletion of FKB-2 from the channel independently caused reduced body wall muscle Ca 2+ transients. Preventing FKB-2 depletion from the UNC-68 macromolecular complex using the Rycal drug S107 improved muscle Ca 2+ transients and function. Taken together, these data suggest that UNC-68 oxidation plays a role in age-dependent loss of muscle function. Remarkably, this age-dependent loss of muscle function induced by oxidative overload, which takes ~2 years in mice and ~80 years in humans, occurs in less than 2–3 weeks in C. elegans , suggesting that reduced antioxidant capacity may contribute to the differences in lifespan among species.
+Age-dependent loss of body wall muscle function and impaired locomotion occur within 2 weeks in Caenorhabditis elegans (C. elegans); however, the underlying mechanism has not been fully elucidated. In humans, age-dependent loss of muscle function occurs at about 80 years of age and has been linked to dysfunction of ryanodine receptor (RyR)/intracellular calcium (Ca2+) release channels on the sarcoplasmic reticulum (SR). Mammalian skeletal muscle RyR1 channels undergo age-related remodeling due to oxidative overload, leading to loss of the stabilizing subunit calstabin1 (FKBP12) from the channel macromolecular complex. This destabilizes the closed state of the channel resulting in intracellular Ca2+ leak, reduced muscle function, and impaired exercise capacity. We now show that the C. elegans RyR homolog, UNC-68, exhibits a remarkable degree of evolutionary conservation with mammalian RyR channels and similar age-dependent dysfunction. Like RyR1 in mammals, UNC-68 encodes a protein that comprises a macromolecular complex which includes the calstabin1 homolog FKB-2 and is immunoreactive with antibodies raised against the RyR1 complex. Furthermore, as in aged mammals, UNC-68 is oxidized and depleted of FKB-2 in an age-dependent manner, resulting in ‘leaky’ channels, depleted SR Ca2+ stores, reduced body wall muscle Ca2+ transients, and age-dependent muscle weakness. FKB-2 (ok3007)-deficient worms exhibit reduced exercise capacity. Pharmacologically induced oxidization of UNC-68 and depletion of FKB-2 from the channel independently caused reduced body wall muscle Ca2+ transients. Preventing FKB-2 depletion from the UNC-68 macromolecular complex using the Rycal drug S107 improved muscle Ca2+ transients and function. Taken together, these data suggest that UNC-68 oxidation plays a role in age-dependent loss of muscle function. Remarkably, this age-dependent loss of muscle function induced by oxidative overload, which takes ~2 years in mice and ~80 years in humans, occurs in less than 2–3 weeks in C. elegans, suggesting that reduced antioxidant capacity may contribute to the differences in lifespan among species.
 
 ## Introduction
 
@@ -40,21 +40,21 @@ Our study provides an underlying mechanism for age-dependent loss of muscle func
 
 ## Results
 
-## Conserved evolution and architecture of UNC-68
+### Conserved evolution and architecture of UNC-68
 
 Phylogenic analysis of RyR and FKBP among species reveals remarkable evolutionary conservation (Figure 1A–B). UNC-68, the C. elegans intracellular calcium release channel, shares ~40% homology with the human RyR1 (Figure 1C). C. elegans FKB-2 has ~60% sequence identity with the skeletal muscle isoform calstabin1 (FKBP12) (Figure 1D). Based on these observations, we hypothesized that in C. elegans, UNC-68 comprises a macromolecular complex, similar to that of mammalian RyRs. To test this hypothesis, lysates were prepared from populations of freeze-cracked WT C. elegans, and UNC-68 was immunoprecipitated using mammalian anti-RyR antibody (5029) as previously described (Kushnir et al., 2018). The immunoprecipitates were immunoblotted to detect UNC-68, as well as other components of the RyR macromolecular complex including the catalytic subunit of protein kinase A (PKAcat), protein phosphatase 1 (PP1), FKB-2, and phosphodiesterase 4 (PDE-4) using mammalian anti-RyR, anti-PKA, anti-PP1, anti-calstabin, and anti-PDE-4 antibodies, respectively (Figure 1E). The previously published C. elegans anti-PDE-4 (Charlie et al., 2006) was used to detect PDE-4 on the channel. Our data show that UNC-68 comprises a macromolecular complex, similar to that found in the mammalian muscle, that includes PKAcat, PP1, PDE-4, and FKB-2. UNC-68 was depleted of FKB-2 in the FKB-2 (ok3007) null mutant (Figure 1E and G). In the FKB-2 null C. elegans, UNC-68 and the rest of the macromolecular complex could not be immunoprecipitated using an anti-FKBP antibody (Figure 1F and H). Taken together these data indicate remarkable evolutionary conservation of the RyR macromolecular complex.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75529/elife-75529-fig1-v2.jpg)
 
-**Figure 1.:** UNC-68 comprises a macromolecular complex comparable to its mammalian homolog ryanodine receptor (RyR); RyR (A) and FKBP (B) evolution among species was inferred by the maximum likelihood method based on the JTT matrix-based model.(C) Homology comparison between UNC-68 and the two human RyR isoforms (RyR1 and RyR2). (D) Homology comparison between the different FKB isoforms (1–8) and the human FKBP isoforms (FKBP12 and FKB12.6). UNC-68 (E) and FKB-2 (F), respectively, were immunoprecipitated and immunoblotted using anti-RyR, anti-phosphodiesterase 4 (PDE4), anti-protein kinase A (catalytic subunit; PKAcat), anti-protein phosphatase 1 (PP1), and anti-calstabin (FKBP) antibodies in murine skeletal sarcoplasmic reticulum preparations (SK SR), wild-type (WT) populations of Caenorhabditis elegans, and populations of FKB-2 (ok3007). Images show representative immunoblots from triplicate experiments. (G and H) Quantification of bands intensity shown in E and F. Data are means ± SEM. One-way ANOVA shows * p<0.05 WT vs. FKB-2 KO. SK SR, sarcoplasmic reticulum fraction from mouse skeletal muscle. Figure 1—source data 1.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (C) Homology comparison between UNC-68 and the two human RyR isoforms (RyR1 and RyR2). (D) Homology comparison between the different FKB isoforms (1–8) and the human FKBP isoforms (FKBP12 and FKB12.6). UNC-68 (E) and FKB-2 (F), respectively, were immunoprecipitated and immunoblotted using anti-RyR, anti-phosphodiesterase 4 (PDE4), anti-protein kinase A (catalytic subunit; PKAcat), anti-protein phosphatase 1 (PP1), and anti-calstabin (FKBP) antibodies in murine skeletal sarcoplasmic reticulum preparations (SK SR), wild-type (WT) populations of Caenorhabditis elegans, and populations of FKB-2 (ok3007). Images show representative immunoblots from triplicate experiments. (G and H) Quantification of bands intensity shown in E and F. Data are means ± SEM. One-way ANOVA shows * p<0.05 WT vs. FKB-2 KO. SK SR, sarcoplasmic reticulum fraction from mouse skeletal muscle. Figure 1—source data 1.
 
-## Age-dependent biochemical and functional remodeling of UNC-68
+### Age-dependent biochemical and functional remodeling of UNC-68
 
 RyR1 channels are oxidized, leaky, and Ca2+ transients are reduced in aged mammalian skeletal muscle (Andersson et al., 2011). These changes occur by 2 years of age in mice (Andersson et al., 2011) and by 80 years of age in humans. Similarly, FKB-2 deficient worms exhibited an age-dependent decline in body wall muscle peak Ca2+ transients starting at day 7 post-hatching (Figure 2A–B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75529/elife-75529-fig2-v2.jpg)
 
-**Figure 2.:** UNC-68 and age-dependent reduction in intracellular calcium (Ca2+) transients is accelerated in FKB-2 (ok3007) (A) Representative trace of Ca2+ transients from GCaMP2 wild type (WT) and FKB-2 KO (at day 7).Green box denotes peak fluorescence from worm’s muscle during contraction. (B) Ca2+ transients in age-synchronized populations of WT and FKB-2 (ok3007) nematodes (at day 3 and 7); (C) UNC-68 was immunoprecipitated from age-synchronized populations of mutant (FKB-2 KO) and WT nematodes (at day 3, 5, 9, and 12) and immunoblotted using anti-RyR, anti-calstabin, and dinitrophenyl (DNP; marker of oxidation) antibodies. (D and E) Quantification of the average band intensity from triplicate experiments: band intensity was defined as the ratio of each complex member’s expression over its corresponding /UNC-68’s expression. Data are means ± SEM. * p<0.05 WT vs. FKB-2 KO in panel D, # p<0.05 WT vs. FKB-2 KO in panel E, * p<0.05 WT at day 3 vs. WT at day 5 and day 9. (F) Ca2+ leak assay performed with microsomes from WT and FKB-2 KO worms (day 5). Ca2+ uptake into the microsomes was initiated by adding 1 mM of ATP. Then, 3 µM of thapsigargin was added to block the sarco/endoplasmic calcium ATPase activity. Increased fluorescence is proportional to the spontaneous Ca2+ leakage throughout UNC-68. (G) Graph showing number of bends recorded for WT vs. FKB-2 KO worms at six distinct ages (day 3, 5, 7, 9, 12, and 15). (H) The number of curling events was calculated as a percentage of the overall motility (curls/bends). N = ~60 worms per group, except for day 15 (as fewer worms were alive at this timepoint). Day 15 = ~40 worms. (I) Percentage of survival of WT (average survival; 18 days) and FKB-2 KO worms (average survival; 14 days); Gehan-Breslow-Wilcoxon test for survival comparison was performed for statistical significance. Data are means ± SEM from triplicate experiments. One-way ANOVA shows * p<0.05 WT vs. FKB-2 KO, # p<0.05 WT at day 3 vs. WT at day 5, 7, 9, 12, and 15. Figure 2—source data 1.Figure 2—source data 1.Figure 2.
+**Figure 2.:** Green box denotes peak fluorescence from worm’s muscle during contraction. (B) Ca2+ transients in age-synchronized populations of WT and FKB-2 (ok3007) nematodes (at day 3 and 7); (C) UNC-68 was immunoprecipitated from age-synchronized populations of mutant (FKB-2 KO) and WT nematodes (at day 3, 5, 9, and 12) and immunoblotted using anti-RyR, anti-calstabin, and dinitrophenyl (DNP; marker of oxidation) antibodies. (D and E) Quantification of the average band intensity from triplicate experiments: band intensity was defined as the ratio of each complex member’s expression over its corresponding /UNC-68’s expression. Data are means ± SEM. * p<0.05 WT vs. FKB-2 KO in panel D, # p<0.05 WT vs. FKB-2 KO in panel E, * p<0.05 WT at day 3 vs. WT at day 5 and day 9. (F) Ca2+ leak assay performed with microsomes from WT and FKB-2 KO worms (day 5). Ca2+ uptake into the microsomes was initiated by adding 1 mM of ATP. Then, 3 µM of thapsigargin was added to block the sarco/endoplasmic calcium ATPase activity. Increased fluorescence is proportional to the spontaneous Ca2+ leakage throughout UNC-68. (G) Graph showing number of bends recorded for WT vs. FKB-2 KO worms at six distinct ages (day 3, 5, 7, 9, 12, and 15). (H) The number of curling events was calculated as a percentage of the overall motility (curls/bends). N = ~60 worms per group, except for day 15 (as fewer worms were alive at this timepoint). Day 15 = ~40 worms. (I) Percentage of survival of WT (average survival; 18 days) and FKB-2 KO worms (average survival; 14 days); Gehan-Breslow-Wilcoxon test for survival comparison was performed for statistical significance. Data are means ± SEM from triplicate experiments. One-way ANOVA shows * p<0.05 WT vs. FKB-2 KO, # p<0.05 WT at day 3 vs. WT at day 5, 7, 9, 12, and 15. Figure 2—source data 1.
 
 RyR1 oxidation has been linked to SR Ca2+ leak and impaired muscle function during extreme exercise and in heart failure and muscular dystrophies (Bellinger et al., 2008; Bellinger et al., 2009; Allen et al., 2008). Furthermore, we have previously reported that oxidation of RyR1 and the subsequent intracellular Ca2+ leak are underlying mechanisms of age-related loss of skeletal muscle specific force (force normalized to the cross-sectional area of muscle) (Andersson et al., 2011). WT UNC-68 was oxidized (Figure 2C–D) and depleted of FKB-2 (Figure 2C–E) and in an age-dependent manner. These changes mirror those occurring with extreme exercise in mice and humans (Bellinger et al., 2008) and in a murine model of Duchenne muscular dystrophy (mdx mice) characterized by impaired muscle function (Bellinger et al., 2009). Importantly, by 80 years of age, ~50% of humans develop severe muscle weakness that is a strong predictor of mortality due to falls, gait imbalance, and related factors (Degens, 2007). Similarly, UNC-68 was significantly more oxidized (day 3–9) in FKB-2 (ok3007) worms compared to WT (Figure 2C–D).
 
@@ -62,13 +62,13 @@ To further demonstrate that UNC-68 channels lacking FKB-2 are inherently ‘leak
 
 In mammals, calstabin regulation of RyR is tightly coupled to beta-adrenergic signaling (Andersson et al., 2012), and it is known that calstabin KO mice must undergo exercise stress before demonstrating a distinct muscle phenotype (Bellinger et al., 2008). Our method of inducing exercise stress in the worm was to place it in M9 buffer and observe it swimming, a well-described behavioral assay (Lüersen et al., 2014). By using an extended time trial of 2 hr, the worms fatigue and exhibit exercise-induced stress similar to that observed in mammals. Our data show a defect in FKB-2 KO swimming behavior over the course of its lifespan when compared to the WT. FKB-2 KO worms had decreased bending activity earlier in life, beginning at day 5, and an increased proportion of curling, a sign of fatigue (Figure 2G–H). Throughout midlife, the FKB-2 KO worms lag significantly behind their age-matched WT counterparts, suggestive of decreased muscle function. Furthermore, FKB-2 KO worms exhibit reduced lifespan compared to WT (Figure 2I).
 
-## Pharmacologically mimicking aging phenotype affects Ca2+ transient and impairs exercise capacity
+### Pharmacologically mimicking aging phenotype affects Ca2+ transient and impairs exercise capacity
 
 FKB-2 was competed off from the UNC-68 macromolecular complex using rapamycin or FK506 (Figure 3). Both rapamycin and FK-506 bind to calstabin and compete it off from RyR channels, resulting in leaky channels and release of SR Ca2+ in the resting state (Kaftan et al., 1996; Tang et al., 2002).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75529/elife-75529-fig3-v2.jpg)
 
-**Figure 3.:** UNC-68 causes UNC-68 oxidation (A) Representative image of caffeine activated calcium transient in GCaMP2 wild type (WT) at day 5; arrow denotes peak fluorescence in body wall muscle.(B) Intracellular calcium (Ca2+) transients in day 5 age-synchronized populations of WT and FKB-2 (ok3007) nematodes treated with 15 μM and 50 μM rapamycin and FK506, respectively (treatment was applied for 15 min). (C) Fluorescence intensity following caffeine activation in age-matched GCaMP2: WT vs. GCaMP2: FKB-2 KO worms at day 5. (D) UNC-68 was immunoprecipitated and immunoblotted using anti-ryanodine receptor, anti-calstabin, and dinitrophenyl (DNP; marker of oxidation) antibodies in nematodes (at day 5) acutely treated with 15 μM and 50 μM rapamycin and FK506, respectively (treatment was applied for 15 min). (E–F) Quantification of the band intensity shown in (D): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68’s expression. (G) UNC-68 was immunoprecipitated after 0, 15 min, 2 hr, and 4 hr FK506 exposure of the nematodes (at day 5). Representative immunoblots from triplicate experiments. (H–I) Quantification of the band intensity shown in (G): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68’s expression. (J) Graph showing number of bends recorded for WT vs. FKB-2 KO worms (Day 5) treated for 20 and 30 min with 15 μM and 50 μM rapamycin and FK506, respectively. N ≥ 15 per group. Data are means ± SEM from triplicate experiments. One-way ANOVA shows * p<0.05 vs. WT for results shown in panel E, F, H, and I. Two-way ANOVA was used for results comparison in panel B, and t-test was used for results shown in C and J. SK SR; sarcoplasmic reticulum fraction from mouse skeletal muscle used as external control reference and was not quantified in the bar graphs. The time 0 min refers to untreated worms. Figure 3—source data 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (B) Intracellular calcium (Ca2+) transients in day 5 age-synchronized populations of WT and FKB-2 (ok3007) nematodes treated with 15 μM and 50 μM rapamycin and FK506, respectively (treatment was applied for 15 min). (C) Fluorescence intensity following caffeine activation in age-matched GCaMP2: WT vs. GCaMP2: FKB-2 KO worms at day 5. (D) UNC-68 was immunoprecipitated and immunoblotted using anti-ryanodine receptor, anti-calstabin, and dinitrophenyl (DNP; marker of oxidation) antibodies in nematodes (at day 5) acutely treated with 15 μM and 50 μM rapamycin and FK506, respectively (treatment was applied for 15 min). (E–F) Quantification of the band intensity shown in (D): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68’s expression. (G) UNC-68 was immunoprecipitated after 0, 15 min, 2 hr, and 4 hr FK506 exposure of the nematodes (at day 5). Representative immunoblots from triplicate experiments. (H–I) Quantification of the band intensity shown in (G): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68’s expression. (J) Graph showing number of bends recorded for WT vs. FKB-2 KO worms (Day 5) treated for 20 and 30 min with 15 μM and 50 μM rapamycin and FK506, respectively. N ≥ 15 per group. Data are means ± SEM from triplicate experiments. One-way ANOVA shows * p<0.05 vs. WT for results shown in panel E, F, H, and I. Two-way ANOVA was used for results comparison in panel B, and t-test was used for results shown in C and J. SK SR; sarcoplasmic reticulum fraction from mouse skeletal muscle used as external control reference and was not quantified in the bar graphs. The time 0 min refers to untreated worms. Figure 3—source data 1.
 
 Age-synchronized young C. elegans (5 days) were treated with rapamycin or FK506. Ca2+ transients were measured in partially immobilized transgenic nematodes expressing the genetically encoded Ca2+ indicator, Pmyo-3::GCaMP2, in the body wall muscle cells (Tallini et al., 2006; Liu et al., 2011; Figure 3A). Pharmacologic depletion of FKB-2 from UNC-68 by rapamycin or FK506 treatment (15 min exposure to each drug) caused reduced body wall muscle Ca2+ transients in WT C. elegans (Figure 3B). When FKB-2 was genetically depleted from the UNC-68 complex, as in the FKB-2 (ok3007) nematodes, treatment with rapamycin or FK506 had no effect on the Ca2+ transients (Figure 3B).
 
@@ -78,23 +78,23 @@ Acute treatment with FK506 or rapamycin, for 15 min, each independently caused d
 
 Indeed, rapamycin altered swimming behavior of WT but not FKB-2 KO worms in a time-dependent manner (Figure 3J). Taken together with our Ca2+ transient data, the observed muscle phenotype appears to be the result of UNC-68 channel leak. These data suggest that rendering UNC-68 channels leaky by removing FKB-2 depletes SR Ca2+, resulting in reduced Ca2+ transients and weakened muscle contraction.
 
-## Oxidation of UNC-68 causes reduced body wall muscle Ca2+ transients
+### Oxidation of UNC-68 causes reduced body wall muscle Ca2+ transients
 
 To investigate the individual effect of age-dependent UNC-68 oxidation independent of the other confounding variables involved in aging (Herndon et al., 2002), we introduced a pharmacological intervention mimicking the aged state in young adult nematodes. Treating young adult nematodes (at 5 days of age) with the superoxide-generating agent paraquat (Lee et al., 2003) increased oxidation of UNC-68 and depletion of FKB-2 from the channel in a concentration-dependent manner (Figure 4A, B and C). Furthermore, contraction-associated Ca2+ transients decreased with paraquat treatment in a concentration-dependent manner (Figure 4D). Indeed, treatment with antioxidant N-Acetyl-L-cysteine improved Ca2+ transient in FKB-2 KO worms (Figure 4E). These data indicate that both UNC-68 oxidation and FKB-2 depletion independently contribute to the observed aging body wall muscle deterioration.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75529/elife-75529-fig4-v2.jpg)
 
-**Figure 4.:** UNC-68 oxidation causes defective intracellular calcium (Ca2+) handling; (A) UNC-68 was immunoprecipitated and immunoblotted using anti-ryanodine receptor (RyR), anti-calstabin, and dinitrophenyl (DNP; marker of oxidation) antibodies in nematodes acutely treated for 0, 15 min, 2 hr, or 4 hr with FK506 or paraquat (treatment was applied for 20 min) at increasing concentration (day 5).(B–C) Quantification of the band intensity shown in (A): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68’s expression. (D) Contraction-associated Ca2+ transients measured in young age-synchronized WT nematodes treated for 15 with FK506 or for 20 min with increasing concentrations of paraquat (day 5). (E) Contraction-associated Ca2+ transients measured in FKB-2 KO nematodes treated with the antioxidant N-acetylcysteine (NAC) at 5 mM (day 7). (F) UNC-68 was immunoprecipitated and immunoblotted using anti-RyR, anti-calstabin, and DNP (marker of oxidation) antibodies in WT, the long lived (CLK-1) and the short lived (MEV-1) nematodes at day 2, 7, and 15. (G–H) Quantification of the average band intensity from triplicate experiments: band intensity was defined as the ratio of each complex member’s expression over its corresponding /UNC-68’s expression. (I) Graph showing number of bends recorded for WT vs. CLK-1 and MEV-1 worms at three distinct ages (day 2, 7, and 15). (J) The number of curling events was calculated as a percentage of the overall motility (curls/bends). N ≥ 20 per group. Data are means ± SEM from triplicate experiments. One-way ANOVA shows * p<0.05. Two-way ANOVA was used in panel I and J. SK SR; sarcoplasmic reticulum fraction from mouse skeletal muscle used as external control reference and was not quantified in the bar graphs. The time 0 min refers to untreated worms. Figure 4—source data 1.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (B–C) Quantification of the band intensity shown in (A): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68’s expression. (D) Contraction-associated Ca2+ transients measured in young age-synchronized WT nematodes treated for 15 with FK506 or for 20 min with increasing concentrations of paraquat (day 5). (E) Contraction-associated Ca2+ transients measured in FKB-2 KO nematodes treated with the antioxidant N-acetylcysteine (NAC) at 5 mM (day 7). (F) UNC-68 was immunoprecipitated and immunoblotted using anti-RyR, anti-calstabin, and DNP (marker of oxidation) antibodies in WT, the long lived (CLK-1) and the short lived (MEV-1) nematodes at day 2, 7, and 15. (G–H) Quantification of the average band intensity from triplicate experiments: band intensity was defined as the ratio of each complex member’s expression over its corresponding /UNC-68’s expression. (I) Graph showing number of bends recorded for WT vs. CLK-1 and MEV-1 worms at three distinct ages (day 2, 7, and 15). (J) The number of curling events was calculated as a percentage of the overall motility (curls/bends). N ≥ 20 per group. Data are means ± SEM from triplicate experiments. One-way ANOVA shows * p<0.05. Two-way ANOVA was used in panel I and J. SK SR; sarcoplasmic reticulum fraction from mouse skeletal muscle used as external control reference and was not quantified in the bar graphs. The time 0 min refers to untreated worms. Figure 4—source data 1.
 
 To better clarify the role of oxidative stress in age-dependent UNC-68 remodeling and Ca2+ leak, we used two mutant mitochondrial electron transport chain (ETC) worms: the complex I mutant, CLK-1, and the complex II mutant, MEV-1. CLK-1 worms contain a Complex I-associated mutation such that they cannot synthesize their own ubiquinone (UQ), a redox active lipid that accepts and transfers electrons from Complex I or II to Complex III in the ETC. The reduction in Complex I activity of CLK-1 is associated with long-lived worms (Yang et al., 2011; Labuschagne et al., 2013; Kayser et al., 2004). In contrast, MEV-1 worms contain a Complex II (succinate dehydrogenase) cytochrome B560 mutation (Ishii et al., 1998; Senoo-Matsuda et al., 2001; Senoo-Matsuda et al., 2003), preventing electron transfer from succinate to fumarate and causing mitochondrial ROS production, which is associated with decreased lifespan, averaging only 9 days (Senoo-Matsuda et al., 2001). Interestingly, we have seen increased UNC-68 oxidation and FKB-2 depletion in the short-lived mutant (MEV-1) compared to WT and long-lived mutant (CLK-1) worms (Figure 4F, G and H). Indeed, MEV-1 worms exhibited reduced exercise capacity compared to WT and CLK-1 worms (Figure 4I–J).
 
-## UNC-68 Ca2+ channel is a potential therapeutic target in aging
+### UNC-68 Ca2+ channel is a potential therapeutic target in aging
 
 The small molecule Rycal S107 inhibits SR Ca2+ leak by reducing the stress-induced depletion of calstabin from the RyR channel complex (Bellinger et al., 2009; Lehnart et al., 2008). Here, we show that treatment with S107 (10 μM) for 5 hr reassociated FKB-2 with UNC-68 without significant effect on the channel oxidation (Figure 5A, B and C). Furthermore, treatment with S107 improved peak Ca2+ in an FKB-2-dependent manner, as demonstrated by the fact that treating the FKB-2 KO worms did not change peak Ca2+ (Figure 5D–E). Interestingly, S107 treatment reduced age-dependent impairment of exercise capacity in WT worms at day 15 (Figure 5F). Of note, S107 has no effect on the WT worms' lifespan (Figure 5G). Furthermore, the treatment of the short-lived worms, MEV1, with S107 restored the FKB-2 association with UNC-68, despite the persistence of the channel oxidation (Figure 5H,I,J).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75529/elife-75529-fig5-v2.jpg)
 
-**Figure 5.:** 2+) transients in aged Caenorhabditis elegans; (A) UNC-68 was immunoprecipitated and immunoblotted with anti-RyR, anti-calstabin, and dinitrophenyl (DNP; marker of oxidation) in aged nematodes (Day L4, 5, and 15) with 10 µM of S107 (5 hr).(B–C) Quantification of the band intensity shown in (A): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68 expression. Data are mean ± SEM. * p<0.05 vs. wild-typd L4 (WTL4), # p<0.05 WT D15 vs. WT D15 + S107. (D–E) Contraction-associated Ca2+ transients were measured in age-synchronized WT (day 3 and 15) (D) and (E) FKB-2 KO worms (day 3 and 7). Contraction-associated Ca2+ transients in S107-treated worms were performed at day 15 for WT and day 7 for FKB-2 worms. (F) Graph showing number of bends recorded for WT vs. WT treated with S107 worms at different ages (day 3, 7, and 15). (G) Percent of survival of WT vs. WT treated with S107 nematodes; Gehan-Breslow-Wilcoxon test for survival comparison was performed for statistical significance. (H) UNC-68 was immunoprecipitated and immunoblotted with anti-RyR, anti-calstabin, and DNP (marker of oxidation) in short-lived nematodes (MEV-1) with S107 treatment (5 hr). (I–J) Quantification of the band intensity shown in (H): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68 expression. N ≥ 20 per group. Data are mean ± SEM from triplicate experiments. One-way ANOVA shows * p < 0.05 vs WT L4 unless otherwise indicated. In panel F, a t-test was used to compare WT and WT + S107 for each day. #p<0.05 MEV-1, vs. MEV-1 +S107 in panel J. Figure 5—source data 1.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (B–C) Quantification of the band intensity shown in (A): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68 expression. Data are mean ± SEM. * p<0.05 vs. wild-typd L4 (WTL4), # p<0.05 WT D15 vs. WT D15 + S107. (D–E) Contraction-associated Ca2+ transients were measured in age-synchronized WT (day 3 and 15) (D) and (E) FKB-2 KO worms (day 3 and 7). Contraction-associated Ca2+ transients in S107-treated worms were performed at day 15 for WT and day 7 for FKB-2 worms. (F) Graph showing number of bends recorded for WT vs. WT treated with S107 worms at different ages (day 3, 7, and 15). (G) Percent of survival of WT vs. WT treated with S107 nematodes; Gehan-Breslow-Wilcoxon test for survival comparison was performed for statistical significance. (H) UNC-68 was immunoprecipitated and immunoblotted with anti-RyR, anti-calstabin, and DNP (marker of oxidation) in short-lived nematodes (MEV-1) with S107 treatment (5 hr). (I–J) Quantification of the band intensity shown in (H): band intensity was defined as the ratio of either DNP (marker of UNC-68 oxidation) or FKB-2 binding over its corresponding /UNC-68 expression. N ≥ 20 per group. Data are mean ± SEM from triplicate experiments. One-way ANOVA shows * p < 0.05 vs WT L4 unless otherwise indicated. In panel F, a t-test was used to compare WT and WT + S107 for each day. #p<0.05 MEV-1, vs. MEV-1 +S107 in panel J. Figure 5—source data 1.
 
 ## Discussion
 
@@ -120,44 +120,166 @@ Taken together, our data indicate that the C. elegans homolog of RyR, UNC-68, is
 
 ## Materials and methods
 
-## C. elegans strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (worms)</td>
+      <td>ok3007</td>
+      <td>Caenorhabditis Genetics Center (University of Minnesota)</td>
+      <td>WormBase ID:WBVar00094093</td>
+      <td>Genomic position:I: 2918075.12918967</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (worms)</td>
+      <td>Pmyo-3:GCaMP2 worms</td>
+      <td>Kindly provided by Zhao-Wen Wang, University of Connecticut Health Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (worms)</td>
+      <td>mev-1</td>
+      <td>Caenorhabditis Genetics Center (University of Minnesota)</td>
+      <td>WormBase ID:WBGene00003225</td>
+      <td>Genomic position III: 10334277.10335168</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (worms)</td>
+      <td>clk-1</td>
+      <td>Caenorhabditis Genetics Center (University of Minnesota)</td>
+      <td>WormBase ID:WBGene00000536</td>
+      <td>Genomic position III: 5277894.5279344</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RyR1 (Rabbit polyclonal)</td>
+      <td>Marks’ lab, Columbia University, NY, USA</td>
+      <td>Cat. #: 5,029Aa 1327–1339</td>
+      <td>WB (1:1000), (10 μl)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PDE4 (Rabbit monoclonal)</td>
+      <td>Kindly provided by Kenneth Miller, Oklahoma Medical Research Foundation, Oklahoma City, Oklahoma</td>
+      <td></td>
+      <td>WB (1:1000), (10 μl)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PP1 (Rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc6104</td>
+      <td>WB (1:1000), (10 μl)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FKBP12 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc6104</td>
+      <td>WB (1:2500), (10 μl)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FKBP12 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab2918</td>
+      <td>WB (1:2000), (10 μl)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Oxyblot protein oxydation detection kit</td>
+      <td>Millipore</td>
+      <td>Cat. #: S7150</td>
+      <td>WB (1:1000), (10 μl)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamacin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: 37,094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FK506</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: Y0001926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraquat</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: 36,541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S107rycal drug</td>
+      <td>Marks’ lab, Columbia University, NY, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad</td>
+      <td>GraphPad</td>
+      <td>V8.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains and culture conditions
 
 Worms were grown and maintained on standard nematode growth medium (NGM) plates on a layer of OP50 Escherichia coli at 20°C, as described (Brenner, 1974). N2 (Bristol) and fkb-2 (ok3007) were provided by the Caenorhabditis Genetics Center (University of Minnesota). fkb-2 (ok3007) was backcrossed six times. The transgenic strain expressing Pmyo-3: GCaMP2 was kindly provided by Zhao-Wen Wang, University of Connecticut Health Center (Liu et al., 2011). Pmyo-3: GCaMP2 was subsequently crossed into fkb-2 (ok3007) for measurement of contraction-associated Ca2+ transients.
 
-## Age synchronization
+### Age synchronization
 
 Adult worms at the egg-laying stage were treated with alkaline hypochlorite solution to obtain age-synchronized populations, and eggs were plated on NGM plates, as described (Porta-de-la-Riva et al., 2012). For experiments requiring aged worms, age-synchronized animals at the L4 stage were collected in M9 buffer and plated on NGM plates containing 5-fluoro-2’-deoxyuridine (FUDR, Sigma, 50 μM) to prevent egg-laying (Mitchell et al., 1979).
 
-## Immunoprecipitation and immunoblotting
+### Immunoprecipitation and immunoblotting
 
 Nematodes were grown under standard conditions. For protein biochemistry experiments, a procedure to crack nematodes in a solubilizing and denaturing buffer was adapted (Francis and Waterston, 1985). Briefly, worms were washed and collected with M9 buffer, centrifuged for 2 min at 1000 rpm three times to wash. Worms were allowed to settle to the bottom of the collection tube by sitting on ice for ~5 min. Fluid was removed and the worm pellet was snap frozen in liquid nitrogen. Frozen pellets containing whole nematodes were rapidly thawed under warm running water. A volume of nematode solubilization buffer equal to the volume of the worm pellet was added (nematode solubilization buffer: 0.3% ethanolamine, 2 mM EDTA, 1 mM PMSF in DMSO, 5 mM DTT, 1× protease inhibitor), and tubes were microwaved (25 s for 100 μl pellet; time was increased for greater volumes). Lysates were then quickly drawn into a syringe through a 26-gauge needle and forced back through the needle into a new collection tube on ice. Samples were centrifuged at 1000 rpm for 2 min to remove insoluble material, and the supernatant was transferred to a new tube on ice. Lysates were snap frozen and stored in at –80°C.
 
 A anti-mammalian RyR antibody (4 μg 5029 Ab [Jayaraman et al., 1992]) was used to immunoprecipitate UNC-68 from 100 μg of nematode homogenate. Samples were incubated with the antibody in 0.5 ml of a modified RIPA buffer (50 mM Tris-HCl pH 7.4, 0.9% NaCl, 5.0 mM NaF, 1.0 mM Na3VO4, 1% Triton- X100, and protease inhibitors) for 1 hr at 4°C. The immune complexes were incubated with protein A Sepharose beads (Sigma, St. Louis, MS) at 4°C for 1 hr, after which time the beads were washed three times with buffer. Proteins were size-fractionated by SDS-PAGE (6% for UNC-68, 15% for FKB-2) and transferred onto nitrocellulose membranes for 1 hr at 200 mA (SemiDry transfer blot, Bio-Rad). After incubation with blocking solution (LICOR Biosciences, Lincoln NE) to prevent non-specific antibody binding, immunoblots were developed using antibodies against RyR (5029, 1:5000), PKAcat (Santa Cruz Biotechnology, sc-903, 1:1000), PDE4 (kindly provided to us by Kenneth Miller, Oklahoma Medical Research Foundation, Oklahoma City, Oklahoma), PP1 (sc6104, 1:1000), or an anti-calstabin antibody (Santa Cruz 1: 2500). To determine channel oxidation, the carbonyl groups on the protein side chains were derivatized to 2,4-dinitrophenylhydrazone (DNP-hydrazone) by reaction with 2,4-dinitrophenylhydrazine (DNPH) according to manufacturers (Millipore) instructions. The DNP signal on immunoprecipitated UNC-68 was determined by immunoblotting with an anti-DNP antibody (Millipore, 1:1000). All immunoblots were developed and quantified using the Odyssey Infrared Imaging System (LICOR Biosystems, Lincoln, NE) and infrared-labeled secondary antibodies. In addition, immunoblotting and immunoprecipitation of the UNC-68 macromolecular complex were conducted using another anti-calstabin antibody (1:2000, Abcam) and the same methods as described.
 
-## Imaging contraction-associated body wall muscle Ca2+ transients
+### Imaging contraction-associated body wall muscle Ca2+ transients
 
 Spontaneous changes in body wall muscle Ca2+ were measured in nematodes expressing GCaMP2 by fluorescence imaging using a Zeiss Axio Observer inverted microscope with an electron-multiplying CCD camera (Photometrics Evolve 512) and an LED light source (Colibri). Nematodes were partially immobilized by placing them individually into a 5–10 μl drop of M9 buffer, suspended between a glass slide and coverslip. 20-s videos of individual nematodes were recorded.
 
-## Analyzing contraction-associated body wall muscle Ca2+ transients
+### Analyzing contraction-associated body wall muscle Ca2+ transients
 
 Contraction-associated body wall muscle Ca2+ transients were analyzed using an interactive data language-based image quantification software that was developed for this purpose in our laboratory. For each 20-s video, signals from the body wall muscles in nematodes expressing GCaMP2 fluorescence were analyzed using an edge-detection algorithm from each frame as ‘line-scan’ images, with the nematode perimeter on the y-axis and time (s) on the x-axis (Xie et al., 2013; Yuan et al., 2014). These images were then quantified based on the average of the peak Ca2+ fluorescence signal on the worm muscle wall.
 
-## Drug treatment
+### Drug treatment
 
 To pharmacologically deplete FKB-2 from UNC-68, nematodes were treated for 15 min with 15 μM rapamycin or imaging 50 μM FK506, respectively. To re-associate FKB-2 and UNC-68, aged nematodes were treated with 10 μM S107 for 3–5 hr. Oxidative stress was induced in the worms using 20 mM paraquat, a known generator of superoxide (Wu et al., 2017). Nematodes were grown in standard conditions, age-synchronized as described, washed and collected with M9 buffer, then centrifuged for 2 min at 1000 rpm three times. Worms were allowed to settle to the bottom of the collection tube by sitting on ice for ~5 min. Fluid was removed, the worm pellet was gently resuspended in M9 containing the appropriate drug concentration and gently rocked on a shaker at RT for the indicated time periods. Collection tubes were centrifuged for 2 min at 1000 rpm and M9 containing drug was removed and replaced with M9. Biochemistry or Ca2+ measurements were then conducted as previously described (Umanskaya et al., 2014).
 
-## Measuring SR Ca2+ stores using caffeine activation
+### Measuring SR Ca2+ stores using caffeine activation
 
 Age-synchronized GCaMP2: WT and GCaMP2: FKB-2 KO were grown on NGM plates at 20°C they were separated from their progeny and left undisturbed until day 5. Individual worms were placed in a drop of M9 on a coverslip. The liquid was carefully wicked away using KIMTECH wipes until only a sliver of moisture surrounded the worm. The worm was quickly glued down to the coverslip using a tiny drop of DermaWorm applied to the head and tail of the worm before the worm desiccated. 80 μl of M9 buffer was added immediately afterward to polymerize the glue. Once the worm was secure, a clean lateral cut to the immediate tail region was made using a 20 G 1½ needle (adapted from Wang ZW et al., Neuron 201148). An additional 170 μl of M9 buffer was applied for a total of 250 μl. The completed preparation was placed on the platform of a Zeiss confocal microscope; after 1 min at baseline, 25 mM of caffeine was added to an equal volume of M9 solution. The resulting body wall transients were recorded for 1 min.
 
-## Calcium leak assay
+### Calcium leak assay
 
 Microsomes were prepared by centrifuging the C. elegans lysates (5 days synchronized populations) at 45,000× g for 30 min. Pellets were resuspended in lysis buffer containing 300 mM sucrose. Microsomes (5 µg/ml) were diluted into a 20 mM HEPES buffer (pH 7.2) containing 7 mM NaCl, 1.5 mM MgCl2, 120 mM K-gluconate, 5 mM K-phosphate, 8 mM K-phosphocreatine, 1 µM EGTA, and 2 µM CaCl2 mixed with 3 µM Fluo-4 and added to multiple wells of a 96-well plate. Calcium (Ca2+) loading of the microsomes was initiated by adding 1 mM ATP. After Ca2+ uptake and a new Fluo-4 signal baseline was observed, 3 μM Thapsigargin was added to inhibit the calcium uptake by the calcium pump (SERCA). The ‘leak’ of Ca2+ out of the SR is measured by the increase in intensity of the Fluo-4 signal (measured in a Tecan infinite F500 fluorescence plate reader).
 
-## Swimming behavior
+### Swimming behavior
 
 Standard M9 buffer was mixed with 2% agar and poured into 96-well plates to create a planar surface for analyzing worm swimming behavior. Once the mixture had polymerized, approximately 180 μl of M9 was pipetted on top of the agar bed and age-synchronized worms from one of two groups (WT or FKB-2 KO) were placed individually into each well. To assess differences in exercise fatigue, worms were allowed to swim freely in M9 buffer for 2 hr; swimming bends and curls (Lüersen et al., 2014) were recorded by eye for 1 min. Representative videos were taken of each group, and investigators were blinded over the course of each experiment. All recordings were made in duplicate.
 
-## Statistical analysis
+### Statistical analysis
 
 All results are presented as mean ± SEM. Statistical analyses were performed using an unpaired two-tailed Student’s t test (for two groups) and one-way ANOVA with Tukey-Kramer test (for three or more groups), unless otherwise indicated. For survival statistical comparison, we used Gehan-Breslow-Wilcoxon test. p-values <0.05 were considered significant. All statistical analyses were performed with Prism 8.0.

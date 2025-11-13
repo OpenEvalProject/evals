@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.48528.001 Many microbes and fungi acquire the essential ion Fe 3+ through the synthesis and secretion of high-affinity chelators termed siderophores. In Gram-negative bacteria, these ferric-siderophore complexes are actively taken up using highly specific TonB-dependent transporters (TBDTs) located in the outer bacterial membrane (OM). However, the detailed mechanism of how the inner-membrane protein TonB connects to the transporters in the OM as well as the interplay between siderophore- and TonB-binding to the transporter is still poorly understood. Here, we present three crystal structures of the TBDT FoxA from Pseudomonas aeruginosa (containing a signalling domain) in complex with the siderophore ferrioxamine B and TonB and combine them with a detailed analysis of binding constants. The structures show that both siderophore and TonB-binding is required to form a translocation-competent state of the FoxA transporter in a two-step TonB-binding mechanism. The complex structure also indicates how TonB-binding influences the orientation of the signalling domain.
+Many microbes and fungi acquire the essential ion Fe3+ through the synthesis and secretion of high-affinity chelators termed siderophores. In Gram-negative bacteria, these ferric-siderophore complexes are actively taken up using highly specific TonB-dependent transporters (TBDTs) located in the outer bacterial membrane (OM). However, the detailed mechanism of how the inner-membrane protein TonB connects to the transporters in the OM as well as the interplay between siderophore- and TonB-binding to the transporter is still poorly understood. Here, we present three crystal structures of the TBDT FoxA from Pseudomonas aeruginosa (containing a signalling domain) in complex with the siderophore ferrioxamine B and TonB and combine them with a detailed analysis of binding constants. The structures show that both siderophore and TonB-binding is required to form a translocation-competent state of the FoxA transporter in a two-step TonB-binding mechanism. The complex structure also indicates how TonB-binding influences the orientation of the signalling domain.
 
 ## Introduction
 
@@ -25,9 +25,25 @@ Here, we determined several crystal structures of FoxA from P. aeruginosa, in th
 
 ## Results and discussion
 
-## Ternary structure of FoxA bound to ferrioxamine B and TonBCt
+### Ternary structure of FoxA bound to ferrioxamine B and TonBCt
 
 Active uptake of siderophores such as ferrioxamine B across the outer membrane (OM) relies on the establishment of a physical contact between the specific transporter and inner membrane (IM)-tethered TonB. In order understand the mechanism of complex formation between FoxA and TonB we determined the crystal structure of the ternary complex consisting of FoxA bound to ferrioxamine B and the C-terminal TonB domain (residues 251-340, referred to hereafter as TonBCt). Two complexes were present in the asymmetric unit, with crystal contacts generated through the exposed soluble regions of both proteins (Figure 1—figure supplement 1A,B). We could resolve almost an entire FoxA molecule including the signalling domain (residues 53-820, with 11 amino acids missing from the N-terminus after the signal peptide) as well as the full TonBCt. We can identify two main modes of contact between FoxA and TonBCt. Similar to the FhuA and BtuB-TonB complexes (Pawelek et al., 2006; Shultis et al., 2006) the primary interaction site between FoxA and TonBCt occurs through β-augmentation with parallel strands forming between residues 332-337 of TonB and residues 142-146 of FoxA (Figure 1A,B). In addition to the observed β-augmentation, the unstructured polypeptide segment upstream of the TonB box (residues 135-141) forms complementary contacts with the surface of TonB molecule mediated by backbone H-bond interactions as well as side-chains Leu137, Met139 and Val142 located in a small cavity on the surface of TonB (Figure 1C). Most of the TBDTs do no harbour this extra binding motif upstream of the TonB box since it would only be present in TBDTs involved in regulating signalling events at the OM via the additional N-terminal domain in the periplasm. The secondary point of contact involves the side chains of residues in the periplasmic loops and barrel interior of FoxA with several residues in the loops of TonB facing the barrel. These contacts are mediated by electrostatic forces between TonBR271 and FoxAD352, and between TonBR266 and FoxAD355 as well as a side-chain (FoxAE316) to the backbone carbonyl (TonBS300) via a hydrogen bond (Figure 1—figure supplement 2). These contacts provide a secondary site of attachment for the TonB fragment and tether the C-terminal region of TonB to the barrel. This tethering locks the orientation of TonB against the barrel and the membrane plane. An overlay of the two complexes found in the asymmetric unit reveals that TonBCt and the signalling domain are rotated by 9° with respect to the barrel and the membrane plane (Figure 1—figure supplement 2). It is evident that TonBCt and the signalling domain experience some degree of flexibility in the distal part of the complex, whereas the proximal part of the complex is most likely stabilised by the contacts at the secondary site. In the previous structural models (Pawelek et al., 2006; Shultis et al., 2006), TonB sits in close proximity to the β-barrel, almost parallel to the putative lipid bilayer plane. In our crystal structure, the TonB fragment is located almost perpendicular to the β-barrel and the membrane plane highlighting the potentially dynamic nature of TBDR-TonB complexes, which has been suggested by recent EPR experiments (Sarver et al., 2018) (Figure 1—figure supplement 3). Overall, the structure of the ternary FoxA-ferrioxamineB-TonBCt complex presented in this work reveals both the structure of the N-terminal signalling domain as well as a markedly different orientation of the TonBCt relative to the TBDT compared to previously determined ternary structures of FhuA and BtuB (Pawelek et al., 2006; Shultis et al., 2006).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overview of the ferrioxamine B-bound FoxA-TonBCt complex. TonBCt (green) interacts with the TonB box (blue) of FoxA (grey). (B) Parallel β–strands formed between the TonB box of FoxA (blue) and TonBCt (green) through β-augmentation. All contacts are mediated predominantly by backbone hydrogen bonds between the two proteins. (C) Polypeptide stretch (pink) upstream of the TonB box (blue) forms additional contacts with the surface of TonB (green).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The contents of the asymmetric unit of the complex with electron density contoured at 1 σ. (B) Crystal packing of the complex. (C) and D) show examples of crystal packing between the FoxA complexes showing little effect of crystal packing on loop conformations between the two monomers of FoxA and the neighbouring molecules.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Overlay of the two individual complexes found in the asymmetric unit reveals that the TonB fragment and the signalling domain along with the TonB box are shifted by roughly 9° in the distal part of the complex. The protein region closest to the membrane and the barrel lumen exhibit limited movement, highlighting the importance of the secondary tethering site in FoxA. Secondary contacts between FoxA (grey) and TonBCt (green) are mediated through electrostatic interactions and hydrogen bonds.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Shown are the structures of FhuA-TonB (PDBID: 2GRX) and BtuB-TonB (PDBID: 2GSK).
 
 To understand the conformational changes occurring in FoxA in response to ferrioxamine B and TonBCt we also determined the crystal structure of FoxA in its apo state (Figure 2A). In this structure a large solvent-exposed lumen faces the extracellular side of the membrane and is filled with solvent molecules. No electron density was present for the last two amino acids of the TonB box region and the N-terminal signalling domain of FoxA (residues 45-143), most likely due to the high flexibility of the linker connecting the plug domain and the signalling domain, as previously observed in the structures of FecA (Ferguson et al., 2002; Yue et al., 2003) and FpvA (Brillet et al., 2007; Greenwald et al., 2009; Wirth et al., 2007). Inspection of both apo as well as ligand- and TonBCt-bound crystal structures of FoxA revealed that in the apo state the TonB box is predominantly occluded in the interior of the barrel domain. A comparison of the plug domain conformations in both of our FoxA structures indicates that the TonB box must be displaced by approximately 22 Å from the folded plug domain in order to allow for β-augmentation to occur with TonB (Figure 2B, Video 1).
 
@@ -35,13 +51,25 @@ To understand the conformational changes occurring in FoxA in response to ferrio
 
 **Figure 2.:** (A) The overall fold of apo FoxA consists of a 22-stranded β-barrel lined by the small globular plug domain within the lumen. The structure is colour-coded from blue (N-terminus) to red (C-terminus). (B) Structural rearrangements within the plug domain necessary to accommodate interactions with TonBCt. The region of the polypeptide being part of the TonB box common to both FoxA structures is highlighted in pink. This region is displaced by approximately 22 Å into the periplasm. Slight conformational changes are also observed throughout the rest of the plug domain (blue: ternary complex/brown: apo state). (C) Loops 7 and 8 enclose the bound siderophore within the hydrophobic cavity to prevent its dissociation and reduce permeation across the bacterial membrane during the process of siderophore uptake. Loop closure is only evident once the FoxA is bound with ferrioxamine B and the TonBCt fragment (loops coloured brown), indicative of allosteric communication between the extracellular and periplasmic regions of the transporter (blue loops correspond to the apo FoxA).
 
+![Video 1.](https://cdn.elifesciences.org/articles/48528/elife-48528-video1.mp4.jpg)
+
+**Video 1.:** We observe the closure of extracellular loops 7 and 8 as a prerequisite for translocation of ferrioxamine B. At the periplasmic side, TonB box is expelled from the plug domain in order to make contacts with the TonB molecule.
+
 Compared to the apo FoxA structure the ternary complex of FoxA-FoaB-TonBCt also reveals substantial loop movements. Displacement of loops 7 and 8 by approx. 7 Å on the extracellular side of the membrane leads to the closure of the barrel lumen on both sides of the membrane, limiting the access to the barrel lumen (Figure 2C, Video 1). Mechanistically, this would prevent the dissociation of the siderophore during translocation and opening of the entry channel within the barrel.
 
-## Biophysical characterisation of the interactions between FoxA and TonBCt
+### Biophysical characterisation of the interactions between FoxA and TonBCt
 
 Previous structural and biochemical investigations into the mechanisms of TBDT activation and substrate uptake have shown that siderophore binding usually leads to an unwinding of either an N-terminal helix or a stretch of polypeptide within the plug domain bearing the TonB box motif. This mechanism of polypeptide unwinding, initiated by concerted small motions throughout the plug, allows the C-terminus of TonB to make contact with the loaded transporter molecule. Moreover, insights into TBDT association with TonB paint a very complex, and often conflicting picture of substrate-dependent transporter activation and TonB binding. One model suggests a constitutively bound TonB-TBDT complex (Adams et al., 2006; Kim et al., 2007), whilst another proposes a cooperative mode of transporter-TonB interactions that is driven by initial substrate capture by the TBDT (Cadieux and Kadner, 1999; Merianos et al., 2000).
 
 Therefore, we sought to understand the nature of FoxA-TonB interactions using isothermal titration calorimetry (ITC) to characterise the thermodynamics of FoxA-TonB interactions. For this purpose, we have reconstituted FoxA into MSP1D1 nanodiscs in order to minimise the detergent mismatch (Fanucci et al., 2003; Mills et al., 2014). Additionally, nanodiscs (ND) provide a lipidic scaffold and alleviate the deleterious effects detergents might have on the conformation of the transporter. Titration of TonBCt into apo FoxA-ND complexes resulted in strong, saturable exothermic heats indicative of protein association. ITC data were fitted to a single binding site model and yielded a Kd of 111 ± 6 nM. The binding process is enthalpically driven with a large, negative ΔH of -10.1 ± 0.8 kcal mol-1 (Figure 3A and Supplementary file 1). No binding was observed when TonBCt was titrated into empty nanodiscs. The observation of tight binding between TonBCt and apo FoxA in nanodiscs is in contrast to similar experiments performed with FhuA and TonBCt, for which no binding could be observed (Mills et al., 2014). We speculate that the presence of the N-terminal domain and the interacting region upstream of the TonB box in FoxA is responsible for the differences in the binding modes between these two transporters.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig3-v2.jpg)
+
+**Figure 3.:** ITC profiles showing titration of TonBCt (150 μM) into 15 μM apo FoxA nanodisc complexes (A) and 15 μM ferrioxamine B-FoxA nanodisc complexes (B). Insets show the integrated heats of binding with a single-site fit to the data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Addition of TonBCt (100 μM) results in the earlier elution of the main peak when mixed with purified apo FoxA (10–20 μM). In the presence of ferrioxamine B (0.5 mM) the main peak shifts to even earlier elution volumes. (B) Deletion of residues 64–130 in FoxA does not affect the elution profiles of the complexes with and without ferrioxamine B. (C) Truncation of residues 64–143 from the full-length FoxA abrogates constitutive mode of binding between the receptor and TonBCt, however the proteins can still associate in the presence of ferrioxamine B.
 
 Next, we analyzed the interactions between TonBCt and ferrioxamine B-bound FoxA in lipid nanodiscs. The data were also fitted to a single binding site model. Our ITC experiments showed that in the presence of ferrioxamine B the binding affinity is increased 17-fold yielding a Kd value of 6.6 ± 1.2 nM. The thermodynamic parameters of the association reaction also differ such that the ΔH value decreases drastically to -18.1 ± 0.9 kcal mol-1 with an entropically unfavourable contribution of TΔS = -6.62 kcal mol-1 (Figure 3B and Supplementary file 1).
 
@@ -49,15 +77,25 @@ We speculate that the decrease in the entropy of TonBCt binding in the presence 
 
 To delineate the interactions between FoxA and TonB we generated FoxA variants with truncations in the signalling domain and analysed complex formation using analytical size-exclusion chromatography. Full-length FoxA exhibits three distinct elution profiles corresponding to apo protein, FoxA-TonBCt complex and the ternary complex FoxA-ferrioxamine B-TonBCt confirming our ITC findings of two distinct TonBCt-bound states, with and without the siderophore (Figure 3—figure supplement 1A). Deletion of residues 64-130, which correspond to the majority of the signalling domain, yet retaining the sequence upstream of the TonB box observed in our crystal structure, had no effect on the constitutive and cooperative binding of TonBCt to FoxA (Figure 3—figure supplement 1B). However, the deletion of residues 64-143, which also include the upstream binding motif of the TonB box, abrogated the constitutive binding of TonBCt to FoxA, whilst retaining the ability to cooperatively form the ternary complex between FoxA, ferrioxamine B and TonBCt (Figure 3—figure supplement 1C). In combination with our structure of the ternary complex, we propose a two-step binding mechanism: The constitutive mode of TonBCt binding is mediated by the stretch of amino acids located upstream of the TonB box, and the interaction with ferrioxamine B would result in the allosteric release of the TonB box from within the barrel interior allowing the formation of a very tight complex between ferrioxamine B-bound FoxA and TonB, which is necessary for downstream translocation events leading to siderophore uptake.
 
-## Loop movements establish additional contacts with the bound siderophore
+### Loop movements establish additional contacts with the bound siderophore
 
 Siderophore capture by a specific TBDT is an integral part of establishing the necessary contacts with the TonB/ExbB/ExbD complex, which provides the energy for substrate translocation. As we have demonstrated, the full engagement of TonB by FoxA is dependent on the presence of ferrioxamine B. To understand how FoxA interacts with its substrate ferrioxamine B, we co-crystallised and determined the structure of FoxA with ferrioxamine B in absence of TonBCt and compared this structure with apo FoxA as well as the ternary complex. Our ferrioxamine B–bound structures of FoxA revealed a common siderophore binding mode similar to other TBDTs. The electron density for the bound ferrioxamine B in both structures allowed us to unambiguously model the conformation of the ligand as judged by the Polder omit maps. (Figure 4—figure supplement 1A,B). Ferrioxamine B occupies a highly hydrophobic cavity and is stabilized predominantly through hydrophobic and van der Waals interactions via the aromatic residues found in the surrounding loops and the plug domain inside the cavity (Figure 4A,B). Several hydrogen bonds are observed between Tyr805 and FoaBO23, Tyr218 and FoaBN12, and His374 and FoaBO22. The His374 residue, located on the 3rd extracellular loop, faces the octahedrally-coordinated Fe(III) and allows the imidazole side chain to form a hydrogen bond with the hydroxamate groups of the siderophore. Additionally, a number of hydrogen bonds are observed between ferrioxamine B and the surrounding water molecules. One of the water molecules involved in the coordination is stabilized through hydrogen bonds by Gln441 (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig4-v2.jpg)
+
+**Figure 4.:** (A) and B) Interaction of ferrioxamine B by hydrophobic and aromatic residues lining the binding pocket of FoxA. Several hydrogen bonds are also observed between ferrioxamine B and residues His374 and a Gln441-H2O network, respectively. (C) The closure of loop eight results in additional hydrogen bonds between ferrioxamine B and the ε-amino group of Lys657 facing the siderophore, which becomes locked from both sides by hydrogen bonds. (D) Large hydrophobic cavity facing the extracellular milieu occupied by ferrioxamine B. In the apo/ferrioxamine B structures the cavity and ferrioxamine B are solvent exposed (top), whereas in the ternary complex (bottom) the loop closure sequesters ferrioxamine B inside the barrel.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Polder omit maps of ferrioxamine B in the ferrioxamine B-bound crystal structure of FoxA contoured at 3 σ. (B) Polder omit map of ferrioxamine B in the ternary complex contoured at 7.2 σ. (C) Titration of ferrioxamine B into purified FoxA (100 nM protein) leads to quenching of tryptophan fluorescence. The difference in fluorescence is plotted (black circles) and the data are fitted to a single-site binding model (red curve) yielding a dissociation constant (Kd) of 100 ± 10 nM. Inset: fluorescence spectra of 100 nM FoxA purified in nonyl glucopyranoside in the absence and in the presence of saturating amounts of ferrioxamine B (500 nM). (D) ITC experiment measuring ferrioxamine B titration (250 μM) into 15 μM FoxA-ND. Inset shows the integrated heats fitted to a single-site binding model with the calculated Kd of 210 nM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48528/elife-48528-fig4-figsupp2-v2.jpg)
 
 The inward movement of loop 8, which is seen in the ternary complex with TonBCt, places Lys657 into close proximity of the bound ferrioxamine B with its ε-amino group protruding towards the hydroxamate groups coordinating Fe3+ on the opposite side of His374 (Figure 4C). These interactions presumably enforce the directionality of siderophore passage in the instance where the high-affinity site on the plug domain is modified during the partial unfolding and provides additional stabilising contacts to the siderophore prior to steps leading to its transport through the lumen of the barrel.
 
 We measured the interaction between ferrioxamine B and purified FoxA using tryptophan fluorescence quenching experiments and ITC. Titration of ferrioxamine B to FoxA purified in nonyl glucopyranoside lead to concentration-dependent quenching of Trp fluorescence and allowed us to calculate the dissociation constant (Kd) of 100 ± 10 nM, with a 1:1 stoichiometry (Figure 4—figure supplement 1C). Our ITC experiments titrating ferrioxamine B into FoxA yielded a Kd value of 210 ± 44 nM, which agrees well with our fluorescence experiments (Figure 4—figure supplement 1D). Such strong association is also observed in other widely studied TBDT-siderophore complexes (Mislin et al., 2006) and reflects the highly specific nature of these transporters at capturing extremely scarce siderophore-iron chelates from the extracellular milieu. Our crystal structures of apo FoxA and the ferrioxamine B-bound states revealed only minor conformational perturbations of the extracellular loops and the periplasmic side of the plug domain in FoxA upon binding with the siderophore. However, when ligand-loaded, FoxA association with TonBCt leads to the closure of the extracellular loops, shielding the bound siderophore inside the barrel. It is worth mentioning that the ability of FoxA to bind ferrioxamine B is unaffected by the bound TonBCt (Figure 4—figure supplement 2), meaning that the movement of the loops is not initiated by the binding of TonB to the apo state of the transporter.
 
-## Conclusions
+### Conclusions
 
 Our structures enable us to postulate a mechanistic model for the TonB-mediated uptake of ferrioxamine B by the TBDT FoxA. FoxA can sequester free ferrioxamine B from solution and remain siderophore-bound until it is able to engage with TonB for transport of the siderophore inside the periplasm (Figure 5, left half). Likewise, FoxA can form a constitutive complex with TonB, even in the absence of ferrioxamine B. Ferrioxamine B binding to this constitutive state of FoxA-TonB would then lead to the ternary high-affinity complex with TonB via β-augmentation and initiate a cascade of structural re-arrangements within the plug domain to allow for the passage of the substrate through the barrel lumen (Figure 5, right panel).
 
@@ -73,11 +111,126 @@ Our structure also offers potential insight into signal transduction necessary f
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Pseudomonas aeruginosa)</td>
+      <td>FoxA (Pseudomonas aeruginosa strain PAO1)</td>
+      <td></td>
+      <td>PA2466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Lemo 21</td>
+      <td>New England Biolabs</td>
+      <td>C2528J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 Gold (DE3)</td>
+      <td>Agilent</td>
+      <td>230132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>desferrioxamine B</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>octyl glucopyranoside (OG)</td>
+      <td>Anatrace</td>
+      <td>O311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>nonyl glucopyranoside (NG)</td>
+      <td>Anatrace</td>
+      <td>N324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C8E4</td>
+      <td>Anatrace</td>
+      <td>T350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>(Kabsch, 2010)</td>
+      <td>http://xds.mpimf-heidelberg.mpg.de/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AIMLESS</td>
+      <td>(Evans, 2011)</td>
+      <td>http://www.ccp4.ac.uk/html/aimless.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser</td>
+      <td>(McCoy et al., 2007)</td>
+      <td>http://www.ccp4.ac.uk/html/phaser.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX 1.14</td>
+      <td>(Adams et al., 2010)</td>
+      <td>https://www.phenix-online.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot 0.8.9.1</td>
+      <td>(Emsley et al., 2010)</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REFMAC5</td>
+      <td>(Murshudov et al., 2011)</td>
+      <td>http://www.ccp4.ac.uk/html/refmac5.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Buster-TNT</td>
+      <td>(Blanc et al., 2004)</td>
+      <td>https://www.globalphasing.com/buster/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 The detergents used for purification were from Anatrace (Maumee, OH, USA). Desferrioxamine B was purchased from Sigma-Aldrich. All other chemicals were of analytical grade and obtained from Roth (Karlsruhe, Germany) or Sigma Aldrich / Merck (Darmstadt, Germany).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Full-length FoxA gene from Pseudomonas aeruginosa strain PAO1 was cloned into a modified pET28a vector bearing a C-terminal TEV cleavage site prior a His6-tag. Protein overexpression was carried out in Escherichia coli Lemo21 cells (Schlegel et al., 2012) in 2xTY media supplemented with NPS (50 mM Na2HPO4, 50 mM KH2PO4, 25 mM (NH4)2SO4) and 5052 mix (0.05% glucose, 0.2% lactose, 0.5% glycerol) and 0.5 mM L-rhamnose. Cells were grown to an OD600 of 1 at 37 °C, the temperature was reduced to 20 °C and 0.1 mM IPTG was added for further 16 hours. Cells were lysed in 30 mM Tris pH7.5, 200 mM NaCl, 10% glycerol using the high-pressure homogenizer (EmulsiFlex-C3, Avestin) and cell debris was removed by centrifugation at 22,000 g for 30 min. 1% Triton X-100 was added to the clarified cell lysate and incubated for 1 hr at 4 °C. The outer membrane fraction was isolated by a second centrifugation step at 100,000 g and the resuspended pellet was solubilised overnight in 1% octyl glucopyranoside (OG). Insoluble material was removed by another centrifugation step at 100,000 g for 20 min. Solubilised OM fraction was applied to the Ni-NTA resin followed by subsequent washes with buffer containing 25 mM imidazole and 0.4% nonyl glucopyranoside (NG) or 0.4% C8E4. Protein was eluted with 250 mM imidazole in buffer with 0.4% NG or C8E4 and tobacco etch virus protease (1:10 w/w) was added to the eluted fractions overnight. After reverse Ni-NTA purification, the protein was concentrated and passed over a Superdex S200 10/300 size exclusion column.
 
@@ -85,22 +238,22 @@ TonBCt (TonB1 from from Pseudomonas aeruginosa strain PAO1, residues 251-340) wa
 
 MSP1D1 was expressed and purified as previously described (Josts et al., 2018; Ritchie et al., 2009) (Nitsche et al., 2018). Briefly, MSP1D1 in pET28a vector was transformed in E. coli strain BL21 (DE3) and grown in terrific broth (TB) media at 37 °C. At an OD600 of 1.5 the protein expression was induced by adding 1 mM isopropyl ß-D-1-thiogalactopyranoside (IPTG) and cells were grown for 4 h at 37 °C. Cells were harvested by centrifugation at 3000 g, resuspended in lysis buffer (50 mM Tris pH 8.0, 500 mM NaCl) with 1% Triton X–100 and broken using sonication. The cleared lysate was loaded onto a HisTrap column and washed with ten column volumes each of lysis buffer containing 1% Triton X-100 and 50 mM cholate, respectively. MSP1D1 was eluted with buffer containing 500 mM imidazole, and fractions containing pure protein were pooled and incubated with TEV protease overnight. Subsequently, the protease and cleaved His-tag were separated by applying a second IMAC chromatography step and MSP1D1 without His-tag was concentrated up to 400 µM and stored at -80 °C until further use.
 
-## Analytical size-exclusion chromatography (SEC)
+### Analytical size-exclusion chromatography (SEC)
 
 Truncation mutants of FoxA (Δ64-130 and Δ64-143 residues) were generated using the standard QuikChange PCR mutagenesis protocols. Analytical SEC analyses of complex formation between FoxA, truncated FoxA and TonBCt were performed using a Superdex S200 10/300 column. The buffer in these experiments consisted of 25 mM HEPES pH7.4, 150 mM NaCl, 0.4% NG. In all cases, 15-25 μM FoxA or its truncated forms were mixed with 5-fold excess TonBCt and 10-fold excess ferrioxamine B (where appropriate) and injected onto the analytical SEC column.
 
-## Crystallisation
+### Crystallisation
 
 Crystals of apo FoxA purified in C8E4 were grown by the sitting drop vapour diffusion technique. 1 μl of purified protein (5-10 mg/ml) was mixed with 1 μl of 1.8-2 M ammonium sulfate solution and 0.1 M HEPES pH 7. Crystals appeared overnight and grew out of phase separation liquid clusters with crystal sizes, limited by the liquid phase, reaching approximately 30-70 μm. For crystallisation of FoxA with ferrioxamine B in NG detergent, the ligand was added in excess to the protein solution and incubated for at least 30 min on ice prior to setting up crystallisation trays. Crystals were cryo-protected by a step-wise addition of glycerol to a final concentration of 18-20% (v/v). For the crystallisation of the FoxA-FoaB-TonBCt complex, FoxA-FoaB was incubated with 2-fold excess TonBCt, and passed through the size-exclusion column. Fractions corresponding to the complex were pooled and set up in crystallisation screens. The complex crystallised in the same condition as the apo FoxA and FoxA-FoaB, containing 1.8-2.0 M ammonium sulfate, 0.1 M HEPES pH 7. These crystals were cryo-protected by soaking the crystals in the crystallisation condition supplemented with 20% ethylene glycol for 2-3 min.
 
-## Structure determination
+### Structure determination
 
 All X-ray diffraction data were collected at 100 K. Data were collected at the PETRA III/EMBL P14, ESRF ID30B and BESSY 14.1 beamlines. All datasets were processed with XDS (Kabsch, 2010) and merged with AIMLESS (Evans, 2006; Evans, 2011). All final data were merged from two individual datasets. Unit cell parameters and space groups are given in Table 1 (Supplementary file 1). We used the FhuA model from Escherichia coli (PDB:1BY3) as a molecular replacement candidate (40-45% sequence identity to FoxA). After the successful placement of the model using Phaser (McCoy et al., 2007), the FoxA model was completed using a combination of phenix.autobuild (Terwilliger et al., 2008) and manual building in Coot (Emsley and Cowtan, 2004). Apo FoxA was refined using phenix.refine and REFMAC5 (Afonine et al., 2012) (Murshudov et al., 2011). For the FoxA-FoaB complex, refinement was performed initially using phenix.refine, followed by TLS and jelly-body refinement in REFMAC5 (Murshudov et al., 2011). For modelling the FoxA-FoaB-TonBCt complex, apo FoxA was used as a search model in Phaser. Once the MR solution was identified, clear density corresponding to the TonBCt and the N-terminal signalling domain became evident and they were manually built into the electron density using Coot. Refinement was carried out initially using phenix.refine at the early stages of model building. Once all the backbone poly-Ala stretches were built, Buster-TNT (Blanc et al., 2004) was used for all the subsequent refinement procedures. The final models correspond to residues 44-820 of FoxA with residues 119-124 and 138-155 being disordered. The TonBCt model comprises residues 251-340. All data collection and refinement statistics are summarised in Table I (Supplementary file 1).
 
-## Isothermal titration calorimetry (ITC)
+### Isothermal titration calorimetry (ITC)
 
 FoxA was incorporated into MSP1D1 nanodiscs. Briefly, FoxA was mixed with purified MSP1D1 and POPC lipids in 1:2:70 ratio and biobeads were added to initiate the nanodisc assembly. After approximately 4-5 hours, the mixture was concentrated and purified by gel size exclusion chromatography using a Superdex S200 10/300 column. All proteins were extensively dialysed against 20 mM HEPES, 150 mM NaCl, pH 7.5 overnight. 15 μM FoxA or FoxA-FoaB incorporated into MSP1D1 nanodiscs were loaded into the ITC cell, 150 μM TonBCt was placed in the syringe. For the “pre-loaded” FoxA-FoaB complex, FoxA in nanodiscs was dialyzed against 1 mM FoaB. All binding reactions were measured at 26 °C. TonBCt was also titrated against empty nanodiscs as a control. Heat of dilution was obtained by titrating TonBCt into the dialysis buffer and subtracted from all subsequent measurements. Heats of binding for all the reactions were integrated using Microcal Origin software and all the data were fitted to a single-site binding model. All titrations were performed as triplicates and errors are reported as standard deviations (SD).
 
-## Tryptophan fluorescence quenching experiments
+### Tryptophan fluorescence quenching experiments
 
 All fluorescence measurements were performed using a Cary Eclipse fluorescence spectrometer. FoxA purified in nonyl glucopyranoside (NG) was diluted to 100 nM in a 3 ml quartz cuvette. Trp fluorescence was excited at 280 nm and emission spectra were recorded from 310-420 nm. Ferrioxamine B, diluted in the same buffer as FoxA, was titrated into the cuvette until saturation in fluorescence quenching was reached. Control experiments with buffer were performed to account for dilution effects on Trp fluorescence. Buffer conditions were 20 mM Tris pH 7.5, 200 mM NaCl, 0.4% NG. Curves were plotted and analysed in GraphPad Prism 7. The binding curve was fitted to a single-site binding model. Measurements were performed as triplicates.

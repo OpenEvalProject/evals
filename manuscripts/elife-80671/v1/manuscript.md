@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Department of Bioengineering, Imperial College London London United Kingdom
+1. Department of Bioengineering, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
@@ -23,45 +23,65 @@ Mid twentieth century, Tolman proposed the concept of cognitive maps (Tolman, 19
 
 While these place cells offer striking evidence in favour of cognitive maps, it is not clear what representation is actually learned by the hippocampus and how this information is exploited when solving and learning tasks. Recently, it was proposed that the hippocampus computes a cognitive map containing predictive information, called the successor representation (SR). Theoretically, this SR framework has some computational advantages, such as efficient learning, simple computation of the values of states, fast relearning when the rewards change and flexible decision making (Dayan, 1993; Stachenfeld et al., 2014; Stachenfeld et al., 2017; Russek et al., 2017; Momennejad et al., 2017). Furthermore, the SR is in agreement with experimental observations. Firstly, the firing fields of hippocampal place cells are affected by the strategy used by the animal to navigate the environment (known as the policy in machine learning), as well as by changes in the environment (Mehta et al., 2000; Stachenfeld et al., 2017). Secondly, reward revaluation — the ability to recompute the values of the states when rewards change — would be more effective than transition revaluation (Russek et al., 2017; Momennejad et al., 2017).
 
-In this work, we study how this predictive representation can be learned in the hippocampus with spike-timing dependent synaptic plasticity (STDP). Using STDP at the mechanistic level, we show that the learning is equivalent to TD(λ) on an algorithmic level. The latter is a well-studied and powerful algorithm known from reinforcement learning (Sutton and Barto, 1998), which we will discuss in more detail below.
+In this work, we study how this predictive representation can be learned in the hippocampus with spike-timing dependent synaptic plasticity (STDP). Using STDP at the mechanistic level, we show that the learning is equivalent to TD($\lambda$) on an algorithmic level. The latter is a well-studied and powerful algorithm known from reinforcement learning (Sutton and Barto, 1998), which we will discuss in more detail below.
 
-Our model can thus learn over a behavioral timescale while using STDP timescales in the millisecond range. We show mathematically that our proposed framework smoothly connects a temporally precise spiking code akin to replay activity with a rate based code akin to behavioral spiking. Subsequently, we show that the delay-discounting parameter γ allows us to consider time as a continuous variable, therefore we don’t need to discretize time as is usual in reinforcement learning (Doya, 1995; Doya, 2000). Moreover, the delay-discounting in our model depends hyperbolically on time but exponentially on state transitions. We show how the γ parameter can be modulated by neuronal firing rates and neuromodulation, allowing state-dependent discounting and in turn enabling richer information in the SR, such as the encoding of salient states, landmarks, reward locations, etc. Finally, replays have long been speculated to be involved in learning models of the environment, supported by experiments (Johnson and Redish, 2007; Pfeiffer and Foster, 2013; Kay et al., 2020) and models (Hasselmo and Eichenbaum, 2005; Erdem and Hasselmo, 2012; Kubie and Fenton, 2012). Here, we investigate how replays could play an additional role in learning the SR cognitive map. Following properties of TD(λ), we show how we can achieve both low bias and low variance by using replays, translating to both quicker initial learning and convergence to lower error. We show how we can use replays to learn offline. In this way, policies can be refined without the need for actual exploration.
+Our model can thus learn over a behavioral timescale while using STDP timescales in the millisecond range. We show mathematically that our proposed framework smoothly connects a temporally precise spiking code akin to replay activity with a rate based code akin to behavioral spiking. Subsequently, we show that the delay-discounting parameter $\gamma$ allows us to consider time as a continuous variable, therefore we don’t need to discretize time as is usual in reinforcement learning (Doya, 1995; Doya, 2000). Moreover, the delay-discounting in our model depends hyperbolically on time but exponentially on state transitions. We show how the $\gamma$ parameter can be modulated by neuronal firing rates and neuromodulation, allowing state-dependent discounting and in turn enabling richer information in the SR, such as the encoding of salient states, landmarks, reward locations, etc. Finally, replays have long been speculated to be involved in learning models of the environment, supported by experiments (Johnson and Redish, 2007; Pfeiffer and Foster, 2013; Kay et al., 2020) and models (Hasselmo and Eichenbaum, 2005; Erdem and Hasselmo, 2012; Kubie and Fenton, 2012). Here, we investigate how replays could play an additional role in learning the SR cognitive map. Following properties of TD($\lambda$), we show how we can achieve both low bias and low variance by using replays, translating to both quicker initial learning and convergence to lower error. We show how we can use replays to learn offline. In this way, policies can be refined without the need for actual exploration.
 
-Our framework allows us to make predictions about the roles of behavioral learning and replay-like activity and how they can be exploited in representation learning. Furthermore, we uncover a relation between STDP and a higher level learning algorithm. Our work therefore spans the three levels of analysis proposed by Marr, 2010. On the implementational level, our model consists of a feedforward network of excitatory neurons with biologically plausible spike-timing dependent plasticity. On the algorithmic level, we show that our model learns the successor representation using the TD(λ) algorithm. On the computational theory level, our model tackles representation learning using cognitive maps.
+Our framework allows us to make predictions about the roles of behavioral learning and replay-like activity and how they can be exploited in representation learning. Furthermore, we uncover a relation between STDP and a higher level learning algorithm. Our work therefore spans the three levels of analysis proposed by Marr, 2010. On the implementational level, our model consists of a feedforward network of excitatory neurons with biologically plausible spike-timing dependent plasticity. On the algorithmic level, we show that our model learns the successor representation using the TD($\lambda$) algorithm. On the computational theory level, our model tackles representation learning using cognitive maps.
 
 ## Results
 
 Cognitive maps are internal models of an environment which help animals to learn, plan and make decisions during task completion. The hippocampus has long been thought to provide the substrate for learning such cognitive maps (O’Keefe and Dostrovsky, 1971; O’Keefe and Nadel, 1978; Morris, 1981; Morris et al., 1982; Wood et al., 1999; Eichenbaum et al., 1999), and recent evidence points towards a specific type of representation learned by the hippocampus, the successor representation (SR) (Stachenfeld et al., 2017).
 
-## The successor representation
+### The successor representation
 
 In this section, we will give an overview of the successor representation and its properties, especially geared toward neuroscientists. Readers already familiar with this representation may safely move to the next section.
 
-To understand the concept of successor representation (SR), we can consider a spatial environment — such as a maze — while an animal explores this environment. In this setting, the SR can be understood as how likely it is for the animal to visit a future location starting from its current position. We further assume the maze to be formed out of a discrete number of states. Then, the SR can be more formally described by a matrix with dimension (Ns⁢t⁢a⁢t⁢e⁢s×Ns⁢t⁢a⁢t⁢e⁢s), where Ns⁢t⁢a⁢t⁢e⁢s denotes the number of states in the environment and each entry Ri⁢j of this matrix describes the expected future occupancy of a state Sj when the current state is Si. In other words, starting from Si, the more likely it is for the animal to reach the location associated with state Sj and the nearer in the future, the higher the value of Ri⁢j.
+To understand the concept of successor representation (SR), we can consider a spatial environment — such as a maze — while an animal explores this environment. In this setting, the SR can be understood as how likely it is for the animal to visit a future location starting from its current position. We further assume the maze to be formed out of a discrete number of states. Then, the SR can be more formally described by a matrix with dimension ($N_{s⁢t⁢a⁢t⁢e⁢s}\timesN_{s⁢t⁢a⁢t⁢e⁢s}$), where $N_{s⁢t⁢a⁢t⁢e⁢s}$ denotes the number of states in the environment and each entry $R_{i⁢j}$ of this matrix describes the expected future occupancy of a state $S_{j}$ when the current state is $S_{i}$. In other words, starting from $S_{i}$, the more likely it is for the animal to reach the location associated with state $S_{j}$ and the nearer in the future, the higher the value of $R_{i⁢j}$.
 
-As a first example, we consider an animal running through a linear track. We assume the animal runs at a constant speed and always travels in the same direction — left to right (Figure 1a). We also split the track into four sections or states, S1 to S4, and the SR will be represented by a matrix with dimension (4×4). Since the animal always runs from left to right, there is zero probability of finding the animal at position i if its current position is greater than i. Therefore, the lower triangle of the successor matrix is equal to zero (Figure 1b). Alternatively, if the animal is currently at position S1, it will be subsequently found at positions S2, S3, and S4 with probability 1. The further away from S1, the longer it will take the animal to reach that other position. In terms of the successor matrix, we apply a discounting factor γ (0<γ≤1) for each extra ‘step’ required by the animal to reach a respective location (Figure 1b).
+As a first example, we consider an animal running through a linear track. We assume the animal runs at a constant speed and always travels in the same direction — left to right (Figure 1a). We also split the track into four sections or states, $S_{1}$ to $S_{4}$, and the SR will be represented by a matrix with dimension ($4\times4$). Since the animal always runs from left to right, there is zero probability of finding the animal at position $i$ if its current position is greater than $i$. Therefore, the lower triangle of the successor matrix is equal to zero (Figure 1b). Alternatively, if the animal is currently at position $S_{1}$, it will be subsequently found at positions $S_{2}$, $S_{3}$, and $S_{4}$ with probability 1. The further away from $S_{1}$, the longer it will take the animal to reach that other position. In terms of the successor matrix, we apply a discounting factor $\gamma$ ($0<\gamma\leq1$) for each extra ‘step’ required by the animal to reach a respective location (Figure 1b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig1-v1.jpg)
+
+**Figure 1.:** (A) Our simple example environment consists of a linear track with 4 states (S1 to S4) and the animal always moves from left to right — i.e. one epoch consists of starting in S1 and ending in S4. (B) The successor matrix corresponding to the task described in panel A. (C) Our neuronal network consists of a two layers with all-to-all feedforward connections. The presynaptic layer mimics hippocampal CA3 and the postsynaptic layer mimics CA1. (D) The synaptic plasticity rule consists of a depression term and a potentiation term. The depression term is dependent on the synaptic weight and presynaptic spikes (blue). The potentiation term depends on the timing between a pre- and post-synaptic spike pair (red), following an exponentially decaying plasticity window (bottom). (E–F) Schematics illustrating some of the results of our model. (E) Our spiking model learns the top row of the successor representation (panel B) in the weights between the first CA3 place cell and the CA1 cells. (F) Our spiking model learns the third row of successor representation (panel B) in the weights between the third CA3 place cell and the CA1 cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Our two-dimensional environment contains 16 states. The 11th state is assumed to be an inaccessible obstacle. A random policy is guiding the trajectories, while the starting state is always state 16 and the trajectories only end when reaching state 1. (B–C) Successor representations learned by our model mimicking active exploration (TD(0)) and replays (TD(1)) respectively. (D) Ground truth successor representation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The equivalence with TD($\lambda$) guarantees convergence even with random initial synaptic weights.Evolution of synaptic weights from CA3 state 2 to CA1 state 3 over time. Ten simulations of the linear track task (Figure 2) are performed, where the CA3-CA1 synaptic weights are randomly initialized at the start. The full lines denote the synaptic weight over time for each of the ten simulations, the red dashed line is the average over those and the black dotted line is theoretical value of the respective SR. In the left panel only replays are simulated (corresponding to TD $(\lambda≈1)$), in the right panel the behavioral model is simulated (corresponding to TD $(\lambda≈0)$).
 
 Even though we introduced the linear track as an illustrative example, the SR can be learned in any environment (see Figure 1—figure supplement 1 for an example in an open field). Note that the representation learned by the SR is dependent not only on the structure of the environment, but also on the policy — or strategy — used by the animal to explore the environment. This is because the successor representation is not purely concerned with the physical distance between two areas in the environment, but rather it measures how long it usually takes to reach one place when starting from the other. In this first example, the animal applied a deterministic policy (always running from left to right), but the SR can also be learned for stochastic policies. Furthermore, the SR is a multi-step representation, in the sense that it stores predictive information of multiple steps ahead.
 
 Because of this predictive information, the SR allows sample-efficient re-learning when the reward location is changed (Gershman, 2018). In reinforcement learning, we tend to distinguish between model-free and model-based algorithms. The SR is believed to sit in-between these two modalities. In model-free reinforcement learning, the aim is to directly learn the value of each state in the environment. Since there is no model of the environment at all, if the location of a reward is changed, the agent will have to first unlearn the previous reward location by visiting it enough times, and only then it will be able to re-learn the new location. In model-based reinforcement learning, a precise model of the environment is learned, specifically, single-step transition probabilities between all states of the environment. Model-based learning is computationally expensive, but allows a certain flexibility. If the reward changes location it is immediate to derive the updated values of the states. As we have seen, however, the SR can re-learn a new reward location somewhat efficiently, although less so than model-based learning. The SR can also be efficiently learned using model-free methods and allows us to easily compute values for each state, which in turn can guide the policy (Dayan, 1993; Russek et al., 2017; Momennejad et al., 2017). This position between model-based and model-free methods makes the SR framework very powerful, and its similarities with hippocampal neuronal dynamics have led to increased attention from the neuroscience community. Finally, in our examples above we considered an environment made up of a discrete number of states. This framework can be generalised to a continuous environment represented by a discrete number of place cells.
 
-## Learning the successor representation in biologically plausible networks
+### Learning the successor representation in biologically plausible networks
 
 We propose a model of the hippocampus that is able to learn the successor representation. We consider a feedforward network comprising of two layers. Similar to McNaughton and Morris, 1987; Hasselmo and Schnell, 1994; Mehta et al., 2000; Hasselmo et al., 2002, we assume that the presynaptic layer represents the hippocampal CA3 region and is all-to-all connected to a postsynaptic layer - representing the CA1 network (Figure 1c). The synaptic connections from CA3 to CA1 are plastic such that the weight changes follow a spike-timing-dependent plasticity (STDP) rule consisting of two terms: a weight-dependent depression term for presynaptic spikes and a potentiation term for pre-post spike pairs (Figure 1d).
 
-For simplicity, we assume that the animal spends a fixed time T in each state. During this time, a constant activation current is delivered to the CA3 neuron encoding the current location and, after a delay, to the corresponding CA1 place cell (see Materials and methods). On top of these fixed and location-dependent activations, the CA3 neurons can activate neurons in CA1 through the synaptic connections. In other words, the CA3 neurons are activated according to the current location of the animal, while the CA1 neurons have a similar location-dependent activity combined with activity caused by presynaptic neurons. The constant currents delivered directly to CA3 and CA1 neurons can be thought of as location-dependent currents from entorhinal cortex. These activations subsequently trigger plasticity at the synapses, and we can show analytically that, using the spike-timing dependent plasticity rule discussed above, the SR is learned in the synaptic weights (Figure 1e and f, and see Appendix).
+For simplicity, we assume that the animal spends a fixed time $T$ in each state. During this time, a constant activation current is delivered to the CA3 neuron encoding the current location and, after a delay, to the corresponding CA1 place cell (see Materials and methods). On top of these fixed and location-dependent activations, the CA3 neurons can activate neurons in CA1 through the synaptic connections. In other words, the CA3 neurons are activated according to the current location of the animal, while the CA1 neurons have a similar location-dependent activity combined with activity caused by presynaptic neurons. The constant currents delivered directly to CA3 and CA1 neurons can be thought of as location-dependent currents from entorhinal cortex. These activations subsequently trigger plasticity at the synapses, and we can show analytically that, using the spike-timing dependent plasticity rule discussed above, the SR is learned in the synaptic weights (Figure 1e and f, and see Appendix).
 
-Moreover, we find that, on an algorithmic level, our weight updates are equivalent to a learning algorithm known as TD(λ), a powerful and well-known algorithm in reinforcement learning that can be used to learn the successor representation. TD(λ) is based on a mixed methodology, which is regulated by the parameter λ. At one extreme, when λ=1, the SR is estimated by taking the average of state occupancies over past trajectories. This type of algorithm is called TD(1) or Monte Carlo (MC). At the other extreme, when λ=0, the estimate of the SR is adjusted ‘online’, with every step of the trajectory, by comparing the observed position with its predicted value. This algorithm is equivalent to TD(0). For all values of λ in between, the algorithm employs a mixture of both methodologies. The extreme cases of TD(1) and TD(0) have different strengths and weaknesses, as we will discuss in more detail in the next sections.
+Moreover, we find that, on an algorithmic level, our weight updates are equivalent to a learning algorithm known as TD($\lambda$), a powerful and well-known algorithm in reinforcement learning that can be used to learn the successor representation. TD($\lambda$) is based on a mixed methodology, which is regulated by the parameter $\lambda$. At one extreme, when $\lambda=1$, the SR is estimated by taking the average of state occupancies over past trajectories. This type of algorithm is called TD(1) or Monte Carlo (MC). At the other extreme, when $\lambda=0$, the estimate of the SR is adjusted ‘online’, with every step of the trajectory, by comparing the observed position with its predicted value. This algorithm is equivalent to TD(0). For all values of $\lambda$ in between, the algorithm employs a mixture of both methodologies. The extreme cases of TD(1) and TD(0) have different strengths and weaknesses, as we will discuss in more detail in the next sections.
 
-In practice, we prove analytically the mathematical equivalence of the dynamics of our spiking neural network, and the TD(λ) algorithm (see Appendix). Our calculations essentially prove that, at each step, our neural network tracks the reinforcement learning algorithm, known to converge to the theoretical values of the SR. This equivalence guarantees that our neural network weights will eventually converge to the correct SR matrix. As a proof of principle, we show that it is possible to learn the SR for any initial weights (Figure 1—figure supplement 2), independently of any previous learning in the CA3 to CA1 connections.
+In practice, we prove analytically the mathematical equivalence of the dynamics of our spiking neural network, and the TD($\lambda$) algorithm (see Appendix). Our calculations essentially prove that, at each step, our neural network tracks the reinforcement learning algorithm, known to converge to the theoretical values of the SR. This equivalence guarantees that our neural network weights will eventually converge to the correct SR matrix. As a proof of principle, we show that it is possible to learn the SR for any initial weights (Figure 1—figure supplement 2), independently of any previous learning in the CA3 to CA1 connections.
 
-Importantly, from our analytical derivations (see Appendix), we find that the λ parameter depends on the behavioral parameter T (the time an animal spends in a state). We find that, the larger the time T, the smaller the value of λ and vice-versa. In other words, when the animal moves through the trajectory on behavioral time-scales (large T compared to the synaptic plasticity time-scales τLTP), the network is learning the SR with TD(λ∼0). For quick sequential activities (T → 0), akin to hippocampal replays, the network is learning the SR with TD(λ∼1). As we will discuss below, this framework therefore combines learning based on rate coding as well as temporal coding. Furthermore, from our model follows the prediction that replays can also be used for learning purposes and that they are algorithmically equivalent to MC, whereas during behavior, the hippocampal learning algorithm is equivalent to TD(λ). This strategy of using replays to learn is in line with recent experimental and theoretical observations (see Momennejad, 2020 for a review).
+Importantly, from our analytical derivations (see Appendix), we find that the $\lambda$ parameter depends on the behavioral parameter T (the time an animal spends in a state). We find that, the larger the time T, the smaller the value of $\lambda$ and vice-versa. In other words, when the animal moves through the trajectory on behavioral time-scales (large T compared to the synaptic plasticity time-scales $\tau_{LTP}$), the network is learning the SR with TD($\lambda∼0$). For quick sequential activities (T → 0), akin to hippocampal replays, the network is learning the SR with TD($\lambda∼1$). As we will discuss below, this framework therefore combines learning based on rate coding as well as temporal coding. Furthermore, from our model follows the prediction that replays can also be used for learning purposes and that they are algorithmically equivalent to MC, whereas during behavior, the hippocampal learning algorithm is equivalent to TD($\lambda$). This strategy of using replays to learn is in line with recent experimental and theoretical observations (see Momennejad, 2020 for a review).
 
-To validate our analytical results, we use again a linear track with a deterministic policy. Using our spiking model with either rate-code activity on behavioral time-scales (Figure 2a top) or temporal-code activity similar to replays (Figure 2b top), we show that the synaptic weights across trials match the evolution of the TD(λ) algorithm closely (Figure 2a and b middle). While convergence to the SR is guaranteed (Figure 2a and b bottom) due to the mathematical equivalence between our setup and TD(λ) (Figure 2—figure supplement 1), the learning trajectory has more variance in the neural network case due to the noise introduced by the randomness of the spike times. This noise can be mitigated by averaging over a population of neurons. Moreover, due to the equivalence with TD(λ), our setup is general for any type of task where discrete states are visited, in any dimension, and which may not need to be a navigation task (see e.g. Figure 1—figure supplement 1 for a 2D environment).
+To validate our analytical results, we use again a linear track with a deterministic policy. Using our spiking model with either rate-code activity on behavioral time-scales (Figure 2a top) or temporal-code activity similar to replays (Figure 2b top), we show that the synaptic weights across trials match the evolution of the TD($\lambda$) algorithm closely (Figure 2a and b middle). While convergence to the SR is guaranteed (Figure 2a and b bottom) due to the mathematical equivalence between our setup and TD($\lambda$) (Figure 2—figure supplement 1), the learning trajectory has more variance in the neural network case due to the noise introduced by the randomness of the spike times. This noise can be mitigated by averaging over a population of neurons. Moreover, due to the equivalence with TD($\lambda$), our setup is general for any type of task where discrete states are visited, in any dimension, and which may not need to be a navigation task (see e.g. Figure 1—figure supplement 1 for a 2D environment).
 
-In summary, we showed how the network can learn the SR using a spiking neural model. We analytically showed how the learning algorithm is equivalent to TD(λ), and confirmed this using numerical simulations. We derived a relationship between the abstract parameter λ and the timescale T representing the animal’s behavior — and in turn the neuronal spiking — allowing us to unify rate and temporal coding within one framework. Furthermore, we predict a role for hippocampal replays in learning the SR using an algorithm equivalent to Monte Carlo.
+![Figure 2.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig2-v1.jpg)
 
-## Learning over behavioral time-scales using STDP
+**Figure 2.:** Comparison between TD($\lambda$) and our spiking model.(A-top) Learning during behavior corresponds to TD($\lambda≈0$). States are traversed on timescales larger than the plasticity timescales and place cells use a rate-code. (A-middle) Comparison of the learning over epochs for two synaptic connections (full line denotes the mean over ten random seeds, shaded area denotes one standard deviation) with the theoretical learning curve of TD($\lambda$) (dotted line). (A-bottom) Final successor matrix learned by the spiking model (left) and the theoretical TD($\lambda$) algorithm (right). Star and diamond symbols denote the corresponding weights shown in the middle row. (B-top) Learning during replays corresponds to TD($\lambda≈1$). States are traversed on timescales similar to the plasticity timescales and place cells use a temporally precise code. (B-middle and bottom) Analogous to panel A middle and bottom.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The discount parameter $\gamma$ when we vary $T$ by: (a) increasing the duration of the presynaptic current, $\theta$ leading to a hyperbolic discount, and (b) increasing $ψ$, while keeping $\theta$ fixed, leading to an exponential discount. (c) The bootstrapping parameter $\lambda$ for varying $\theta$. (d) The learning rate $η$ for varying $\theta$. See Supplementary materials for derivation of the exact and approximate equations.
+
+In summary, we showed how the network can learn the SR using a spiking neural model. We analytically showed how the learning algorithm is equivalent to TD($\lambda$), and confirmed this using numerical simulations. We derived a relationship between the abstract parameter $\lambda$ and the timescale T representing the animal’s behavior — and in turn the neuronal spiking — allowing us to unify rate and temporal coding within one framework. Furthermore, we predict a role for hippocampal replays in learning the SR using an algorithm equivalent to Monte Carlo.
+
+### Learning over behavioral time-scales using STDP
 
 An important observation in our framework is that the SR can be learned using the same underlying STDP rule over time-scales ranging from replays up to behavior. One can now wonder how it is possible to learn relationships between events that are seconds apart during awake behavior, without any explicit error encoding signal typically used by the TD algorithm, and while the STDP rule is characterised by millisecond time-scales (Figure 3a).
 
@@ -69,45 +89,77 @@ An important observation in our framework is that the SR can be learned using th
 
 **Figure 3.:** (A) In our model, the network can learn relationships between neurons that are active seconds apart, while the plasticity rule acts on a millisecond timescale. (B) Due to transitions between subsequent states, each synaptic weight update depends on the weight from the subsequent CA3 neuron to the same CA1 neuron. In other words, the change of a synaptic weight depends on the weight below it in the successor matrix. The top panel visualizes how weights depend on others in our linear track example, where each lighter color depends on the darker neighbor. The bottom panel shows the learning of over 50 epochs. Notice the lighter traces converge more slowly, due to their dependence on the darker traces. (C) Place fields of the place cells in the linear track — each place cell corresponding to a column of the successor matrix. Activities of each place cell when the animal is in each of the four states (dots) are interpolated (lines). Three variations are considered: (i) the time spent in each state and the CA3 firing rates are constant (blue and panel D); (ii) the time spent in state 3 is doubled (orange and panel E); (iii) the CA3 firing rate in state 3 is doubled (green and panel F). Panels E and F lead to a modified discount parameter in state 3, affecting the receptive fields of place cells 3 and 4.
 
-From a neuroscience perspective, this can be understood when considering the trajectory of the animal. Each time the animal moves from a position Sj-1 to a position Sj, the CA3 cell encoding the location Sj-1 stops firing and the CA3 cell encoding the location Sj starts firing. Since in our example this transition is instantaneous, these cells are activating the same CA1 cells consecutively. Therefore, the change in the weight wi,j-1 depend on the synaptic weight of the subsequent state wi,j (Figure 3b, yellow depends on orange, orange depends on red, etc). Indeed, in our example of an animal in a linear track subdivided into four locations, the weights on the diagonal, such as w4,4, are the first ones to be learned, since they are learned directly. The off-diagonal weights, such as w3,4, w2,4, and w1,4, are learned consecutively more slowly as they are dependent on the subsequent synaptic weight. Eventually, weights between neurons encoding positions that are behaviorally far apart can be learnt using a learning rule on a synaptic timescale (Figure 3b).
+From a neuroscience perspective, this can be understood when considering the trajectory of the animal. Each time the animal moves from a position $S_{j-1}$ to a position $S_{j}$, the CA3 cell encoding the location $S_{j-1}$ stops firing and the CA3 cell encoding the location $S_{j}$ starts firing. Since in our example this transition is instantaneous, these cells are activating the same CA1 cells consecutively. Therefore, the change in the weight $w_{i,j-1}$ depend on the synaptic weight of the subsequent state $w_{i,j}$ (Figure 3b, yellow depends on orange, orange depends on red, etc). Indeed, in our example of an animal in a linear track subdivided into four locations, the weights on the diagonal, such as $w_{4,4}$, are the first ones to be learned, since they are learned directly. The off-diagonal weights, such as $w_{3,4}$, $w_{2,4}$, and $w_{1,4}$, are learned consecutively more slowly as they are dependent on the subsequent synaptic weight. Eventually, weights between neurons encoding positions that are behaviorally far apart can be learnt using a learning rule on a synaptic timescale (Figure 3b).
 
 From a reinforcement learning perspective, the TD(0) algorithm relies on a property called bootstrapping. This means that the successor representation is learned by first taking an initial estimate of the SR matrix (i.e. the previously learned weights), and then gradually adjusting this estimate (i.e. the synaptic weights) by comparing it to the states in the environment that the animal actually visits. This comparison is achieved by calculating a prediction error, similar to the widely studied one for dopamine neurons (Schultz et al., 1997). Since the synaptic connections carry information about the expected trajectories, in this case, the prediction error is computed between the predicted and observed trajectories (see Materials and methods).
 
-The main point of bootstrapping, therefore, is that learning happens by adjusting our current predictions (e.g. synaptic weights) to match the observed current state. This information is available at each time step and thus allows learning over long timescales using synaptic plasticity alone. If the animal moves to a state in the environment that the current weights deem unlikely, potentiation will prevail and the weight from the previous to the current state will increase. Otherwise, the opposite will happen. It is important to notice that the prediction error in our model is not encoded by a separate mechanism in the way that dopamine is thought to do for reward prediction (Schultz et al., 1997). Instead, the prediction error is represented locally, at the level of the synapse, through the depression and potentiation terms of our STDP rule, and the current weight encodes the current estimate of the SR (see Materials and methods). Notably, the prediction error is equivalent to the TD(λ) update. This mathematical equivalence ensures that the weights of our neural network track the TD(λ) update at each state, and thus stability and convergence to the theoretical values of the SR. We therefore do not need an external vector to carry prediction error signals as proposed in Gardner et al., 2018; Gershman, 2018. In fact, the synaptic potentiation in our model updates a row of the SR, while the synaptic depression updates a column.
+The main point of bootstrapping, therefore, is that learning happens by adjusting our current predictions (e.g. synaptic weights) to match the observed current state. This information is available at each time step and thus allows learning over long timescales using synaptic plasticity alone. If the animal moves to a state in the environment that the current weights deem unlikely, potentiation will prevail and the weight from the previous to the current state will increase. Otherwise, the opposite will happen. It is important to notice that the prediction error in our model is not encoded by a separate mechanism in the way that dopamine is thought to do for reward prediction (Schultz et al., 1997). Instead, the prediction error is represented locally, at the level of the synapse, through the depression and potentiation terms of our STDP rule, and the current weight encodes the current estimate of the SR (see Materials and methods). Notably, the prediction error is equivalent to the TD($\lambda$) update. This mathematical equivalence ensures that the weights of our neural network track the TD($\lambda$) update at each state, and thus stability and convergence to the theoretical values of the SR. We therefore do not need an external vector to carry prediction error signals as proposed in Gardner et al., 2018; Gershman, 2018. In fact, the synaptic potentiation in our model updates a row of the SR, while the synaptic depression updates a column.
 
-On the other extreme, for very fast timescales such as replays, TD(1) is equivalent to online Monte Carlo learning (MC), which does not bootstrap at all. Instead, MC samples the whole trajectory and then simply takes the average of the discounted state occupancies to update the SR (see Materials and methods). During replays, the whole trajectory falls under the plasticity window and the network can learn without bootstrapping. For all cases in between, the network partially relies on bootstrapping and we correspondingly find a λ between 0 and 1.
+On the other extreme, for very fast timescales such as replays, TD(1) is equivalent to online Monte Carlo learning (MC), which does not bootstrap at all. Instead, MC samples the whole trajectory and then simply takes the average of the discounted state occupancies to update the SR (see Materials and methods). During replays, the whole trajectory falls under the plasticity window and the network can learn without bootstrapping. For all cases in between, the network partially relies on bootstrapping and we correspondingly find a $\lambda$ between 0 and 1.
 
 In summary, in our framework, synaptic plasticity leads to the development of a successor representation in which synaptic weights can be directly linked to the successor matrix. In this framework, we can learn over behavioral timescales even though our plasticity rule acts on the scale of milliseconds, due to the bootstrapping property of TD algorithms.
 
-## Different discounting for space and time
+### Different discounting for space and time
 
-In reinforcement learning, it is usual to have delay-discounting: rewards that are further away in the future are discounted compared to rewards that are in the immediate future. Intuitively, it is indeed clear that a state leading to a quick reward can be regarded as more valuable compared to a state that only leads to an equal reward in the distant future. For tasks in a tabular setting, with a discrete state space and where actions are taken in discrete turns, such as for example chess or our simple linear track discussed in section ‘The Successor Representation’, one can simply use a multiplicative factor 0<γ≤1 for each state transition. In this case the discount follows an exponential dependence, where rewards that are n steps away are discounted by a factor of γn.
+In reinforcement learning, it is usual to have delay-discounting: rewards that are further away in the future are discounted compared to rewards that are in the immediate future. Intuitively, it is indeed clear that a state leading to a quick reward can be regarded as more valuable compared to a state that only leads to an equal reward in the distant future. For tasks in a tabular setting, with a discrete state space and where actions are taken in discrete turns, such as for example chess or our simple linear track discussed in section ‘The Successor Representation’, one can simply use a multiplicative factor $0<\gamma\leq1$ for each state transition. In this case the discount follows an exponential dependence, where rewards that are $n$ steps away are discounted by a factor of $\gamma^{n}$.
 
-In order to still use the above exponential discount when time is continuous, the usual approach is to discretize time by choosing a unit of time. However, this would imply one can never remain in a state for a fraction of this unit of time, and it is not clear how this unit would be chosen. Our framework deals naturally with continuous time, through the monotonically decreasing dependence of the discount parameter γ on the time an agent remains in a state, T. The dependence on T can be interpreted as an increased discounting the longer a state lasts.
+In order to still use the above exponential discount when time is continuous, the usual approach is to discretize time by choosing a unit of time. However, this would imply one can never remain in a state for a fraction of this unit of time, and it is not clear how this unit would be chosen. Our framework deals naturally with continuous time, through the monotonically decreasing dependence of the discount parameter $\gamma$ on the time an agent remains in a state, T. The dependence on T can be interpreted as an increased discounting the longer a state lasts.
 
-In this way, instead of discounting by γn when the agent stays n units of time in a certain state, we would discount by γ⁢(n⋅T). More generally, for any arbitrary time T, a discount corresponding to γ⁢(T) will be applied. This allows the agent to act in continuous time (Figure 3c and e). Interestingly, the dependence of γ on T in our model is not exponential as in the tabular case. Instead, we have a hyperbolic dependence. This hyperbolic discount is well studied in psychology and neuroeconomics and appears to agree well with experimental results (Laibson, 1997; Ainslie, 2012).
+In this way, instead of discounting by $\gamma^{n}$ when the agent stays $n$ units of time in a certain state, we would discount by $\gamma⁢(n⋅T)$. More generally, for any arbitrary time T, a discount corresponding to $\gamma⁢(T)$ will be applied. This allows the agent to act in continuous time (Figure 3c and e). Interestingly, the dependence of $\gamma$ on T in our model is not exponential as in the tabular case. Instead, we have a hyperbolic dependence. This hyperbolic discount is well studied in psychology and neuroeconomics and appears to agree well with experimental results (Laibson, 1997; Ainslie, 2012).
 
 The difference between a hyperbolic discount and an exponential discount lays in the fact that we will attribute a different value to the same temporal delay, depending on whether it happens sooner or later. A classic example is that, when given the choice, people tend to prefer 100 dollars today instead of 101 dollars tomorrow, while they tend to prefer 101 dollars in 31 days instead of 100 dollars in 30 days. They therefore judge the 1 day of delay differently when it happens later in time. Exponential discounting, on the other hand, always attributes the same value to the same delay no matter when it occurs.
 
 Our model therefore combines two types of discounting: exponential when we move through space — when sequentially activating different place cells — and hyperbolic when we move through time — when we prolong the activity of the same place cell.
 
-The discount factor γ also depends on other parameters such as firing rate and STDP amplitudes (see Equation 22 in the Appendix). This gives our model the flexibility to encode state-dependent discounting even when the trajectories and times spent in the states are the same. Such state-dependent discounting can be useful to for example encode salient locations in the environment such as landmarks or reward locations (Figure 3c and f).
+The discount factor $\gamma$ also depends on other parameters such as firing rate and STDP amplitudes (see Equation 22 in the Appendix). This gives our model the flexibility to encode state-dependent discounting even when the trajectories and times spent in the states are the same. Such state-dependent discounting can be useful to for example encode salient locations in the environment such as landmarks or reward locations (Figure 3c and f).
 
-## Bias-variance trade-off
+### Bias-variance trade-off
 
-As discussed previously (section ‘Learning the successor representation in biologically plausible networks’), the TD(λ) algorithm unifies the TD algorithm and the MC algorithm. In our framework, replay-like neuronal activations are equivalent to MC, while behavioral-like activity is equivalent to TD. In this section, we will discuss how the replays and behavior can work together when learning the cognitive map of an environment, leveraging the strengths of MC and TD.
+As discussed previously (section ‘Learning the successor representation in biologically plausible networks’), the TD($\lambda$) algorithm unifies the TD algorithm and the MC algorithm. In our framework, replay-like neuronal activations are equivalent to MC, while behavioral-like activity is equivalent to TD. In this section, we will discuss how the replays and behavior can work together when learning the cognitive map of an environment, leveraging the strengths of MC and TD.
 
 The MC algorithm effectively works by averaging over the sampled trajectories. As such, the estimated SR matrix will be a close approximation of the theoretical value. The difference between the estimated and theoretical value is commonly referred to as bias. We can therefore say that the MC algorithm presents low bias. However, if the agent moves in the environment at random, the sampled trajectories will be quite different from each other. When taking the average, the estimated value will therefore fluctuate a lot. In this case, we say that the MC estimate has high variance as well (Figure 4A and B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig4-v1.jpg)
+
+**Figure 4.:** (A) The agent follows a stochastic policy starting from the initial state (denoted by START). The probability to move to either neighboring state is 50%. An epoch stops when reaching a terminal state (denoted with STOP). (B) Root mean squared error (RMSE) between the learned SR estimate and the theoretical SR matrix. The full lines are mean RMSEs over 1000 random seeds. Three cases are considered: (i) learning happens exclusively due to behavioral activity (TD STDP, green); (ii) learning happens exclusively due to replay activity (MC STDP, purple); (iii) A mixture of behavioral and replay learning, where the probabilities for replays drops off exponentially with epochs (Mix STDP, pink). The mix model, with a decaying number of replays learns as quickly as MC in the first epochs and converges to a low error similar to TD, benefiting both from the low bias of MC at the start and the low variance of TD at the end. (C, D, E) Representative weight changes for each of the scenarios. Full lines show various random seeds, shaded areas denote one standard deviation over 1000 random seeds. (F) More replays are observed when an animal explores a novel environment (day 1). Panel F adapted from Figure 3A in Cheng and Frank, 2008.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Unlike Figure 4, where the likelihood of replays is exponentially decaying over time, here we simulate equal probability for learning using replays (MC) and using behavioral experience (TD) throughout time. This mixed strategy lowers the bias and the variance to some extent, but lays between the pure MC and pure TD learning, never achieving the minimal error possible. This is in contrast with the exponential decay of replays shown in Figure 4, which achieves a minimal error both during early learning (similar to MC) as well as asymptotically (similar to TD).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Using the settings of Figure 4, we calculate the variance caused by random spiking for the behavioral model first. For this purpose, we simulate the same trajectory of the agent 25 times with different random instances of spikes generated from the Poisson process. At each state transition, we calculate the standard deviation of the synaptic weights over the 25 runs. Finally, we calculate the mean of these standard deviations over all states of the trajectory. We find a value of this mean standard deviation just below 1.4 (full line). Then, we try various levels of noise for the replay model, and compute the same mean standard deviation. We find that a probability $p_{1}=0.15$ yields a similar level of variance due to random spiking as in the behavioral model.
 
 Unlike MC, the TD algorithm updates its estimate of the SR by comparing the current estimate of the SR with the actual state the agent transitioned to. Because of the dependence on the current estimate, this estimate will be incrementally refined with small updates. In this way, the SR estimate will not fluctuate much, and be lower in variance. However, by this dependence on the current estimate, we introduce a bias in the algorithm, which will be especially significant when our initial estimate of the SR is bad (Figure 4A and B). The TD algorithm therefore presents high bias and low variance.
 
 We now apply these concepts to learning in a novel environment. Since the MC algorithm is unbiased by the initial estimate of the SR, replays should initially speed up learning in an unfamiliar environment. Later on, when the environment becomes familiar, the SR estimate is already closer to the exact value. At this point, we prefer to have low variance and thus the TD algorithm will be preferred. We confirm this logic using our spiking neural networks, and show how we can have both quick learning and low error at convergence if we proportionally have more replays at the first trials in a novel environment (Figure 4a–e). In contrast, when having an equal proportion of replays throughout the whole simulation, we do not yield as quick learning as MC and as low asymptotic error as TD (Figure 4—figure supplement 1). Interestingly, the pattern of proportionally more replays in novel environments versus familiar environments has also been experimentally observed (Cheng and Frank, 2008; Figure 4f). Please note that, while we implemented an exponentially decaying probability for replays after entering a novel environment, different schemes for replay activity could be investigated. Note also that other mechanisms besides the successor representation could account for these results, including model-based reinforcement learning.
 
-## Leveraging replays to learn novel trajectories
+### Leveraging replays to learn novel trajectories
 
 In the previous section, the replays re-activated the same trajectories as seen during behavior. In this section, we extend this idea and show how in our model replays can be useful during learning even when the re-activated trajectories were not directly experienced during behavior.
 
 For this purpose, we reproduce an place-avoidance experiment from Wu et al., 2017. In short, rats are allowed to freely explore a linear track on day 1. Half of the track is dark, while the other half is bright. On day 2, the animals did four trials separated by resting periods: in the first trial (pre), the animals were free to explore the track; in the second trial (shock), they started in the light zone and received two mild footshocks when entering in the shock zone; in the third and fourth trial (post and re-exposure, respectively), they were allowed to freely explore the track again, but starting from the light zone or the shock zone respectively (Figure 5a). In the study, it was reported that during the post trial, animals tended to stay in the light zone and forward replays from the current position to the shock zone were observed when the animals reached the boundary between the light and the dark zone (Figure 5b and c).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Data from Wu et al., 2017. (A) Experimental protocol: the animal is first allowed to freely run in the track (Pre). In the next trial, a footshock is given in the shock zone (SZ). In subsequent trials the animal is again free to run in the track (Post, Re-exposure). Figure redrawn from Wu et al., 2017. (B) In the Post trial, the animal learned to avoid the shock zone completely and the also mostly avoids the dark area of the track. Figure redrawn from Wu et al., 2017. (C) Time spent per location confirms that the animal prefers the light part of the track in the Post trial. Figure redrawn from Wu et al., 2017. (D) Mimicking the results from Wu et al., 2017, the shock zone is indicated by the black region, the dark zone by the gray region and the light zone by the white region. Left: without replays, the agent keeps extensively exploring the dark zone even after having experienced the shock. Right: with replays, the agent largely avoids entering the dark zone after having experienced the shock (replays not shown). (E) The value of each state in the cases with and without replays. (F) Occupancy of each state in our simulations and for the various trials. Solid line and shaded areas denote the average and standard deviation over 100 simulations, respectively. Notice we do not reproduce the peak of occupancy at the middle of the track as seen in panel c, since our simplified model assumes the same amount of time is spent in each state.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** In Figure 5, the policy without replays has less SR updates. Here, we simulated this policy but doubled the time (and SR updates). Even with this modification, the agent keeps exploring the dark zone of the track, which shows that it is indeed the type of policy and not the amount of updates that leads to the different behavior. More specifically, sequential activations of states from the decision point until the shock zone, such as in replays, are different than the softmax policy during behavior. It is exactly by exploiting this different replay policy that the agent updates the SR differently and avoids the dark zone.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) A linear track with 4 states is simulated as in Figure 1, where we now assume the state 4 contains a reward with value 1. This reward is assumed to be encoded in the synaptic weights from the CA1 neurons to the value neurons. We simulated a population of 250 neurons encoding each state and 250 neurons encoding the value. (B) Firing rates of the value neurons when the agent is occupying each state of the linear track. Only the firing rates during the first 80% of the dwelling time are shown, since no external input is applied during that time. Bars denote the mean firing rate of the 250 value neurons, error bars denote one standard deviation. Red dots denote the ground truth value for each state. (C) When the firing rates of the value neurons are computed over the full dwelling time in each state, the estimate of the value changes qualitatively due to the external input to CA1 in the final fraction of the dwelling time. Bars denote the mean firing rate of the 250 value neurons, error bars denote one standard deviation. Red dots denote the ground truth value for each state. Note that the ranking of the states by value is not affected. Practically, using the parameters in our simulation, one could either read out the correct estimate of the value during the first 80% of the dwelling time in a state, or learn a correction to this perturbation in the weights to the value neuron, or simply use a policy that is based on the ranking of the values instead of the actual firing rate.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Dependency of $\gamma$, $\lambda$ and the place-tuned input to CA1 on $\theta/T$, for various values of T and depression amplitude $A_{p⁢r⁢e}$.(A) The $\gamma$ variable increases with the ratio $\theta/T$ and decreases with T. (B) The $\lambda$ variable decreases with the ratio $\theta/T$ and decreases with T. (C) The $ρ^{b⁢i⁢a⁢s}$ input to CA1 increases with the ratio.$\theta/T$ Therefore, the longer this input lasts (i.e. the lower $\theta/T$), the smaller it is. The distortion of the diagonal elements of the SR thus remains similar across various.$\theta/T$ For high values of T, the input remains more or less constant at low values. (D) The $\gamma$ variable decreases with the depression amplitude $A_{p⁢r⁢e}$ and decreases with T. For fixed $\gamma$, one can choose any $\theta/T$ by tuning this amplitude. (E) The $\lambda$ variable increases with the depression amplitude $A_{p⁢r⁢e}$. (F) The $ρ^{b⁢i⁢a⁢s}$ input to CA1 increases with the depression amplitude $A_{p⁢r⁢e}$. For fixed $\gamma$, this implies that stronger $ρ^{b⁢i⁢a⁢s}$ inputs are coupled with higher $\theta/T$ and therefore shorter duration. The distortion of the diagonal elements of the SR thus remains similar across various $\theta/T$.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/80671/elife-80671-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** A population of readout neurons is simulated as in Figure 5—figure supplement 2. Each row corresponds to a different choice of parameters $\theta/T$ and $A_{p⁢r⁢e}$, chosen such that the $\gamma$ variable has a value close to 0.815. The rate of the readout neurons is computed when the agent occupies the various states. Rates are either normalized by the final state (left column) or the initial state (middle column). The right column denotes a computation of the firing rate of the readout neurons during the initial part of the dwelling time, $\theta$. As in Figure 5—figure supplement 2, bars denote the mean firing rate of the 250 value neurons, error bars denote one standard deviation. Red dots denote the ground truth value for each state. We notice that, for various values of $\theta/T$, the deviation from the ground truth remains similar. Furthermore, since the deviation is only affecting the diagonal elements of the SR with a fixed amount determined by $\theta/T$ and $ρ^{b⁢i⁢a⁢s}$, some compensatory mechanism could be easily incorporated in the network.
 
 We simulated a simplified version of this task. Our simulated agent moves through the linear track following a softmax policy, and all states have equal value during the first phase (pre) (Figure 5d, blue trajectories). Then, the agent is allowed to move through the linear track until it reaches the shock zone and experiences a negative reward. Finally, the third phase is similar as the first phase and the animal is free to explore the track. Two versions of this third phase were simulated. In one version, there are no replays (Figure 5d, orange trajectories in left panel), while in the second version a forward replay until the shock zone is simulated every time the agent enters the middle state (Figure 5d, orange trajectories in right panel, replays not shown). The replays affect the learning of the successor representation and the negative reward information is propagated towards the decision point in the middle of the track. The states in the dark zone therefore have lower value compared to the case without replays (Figure 5e). In turn, this different value affects the policy of the agent which now tends to avoid the dark zone all together, while the agent without replays still occupies many states of the dark zone as much as states in the light zone (Figure 5f). Moreover, even when doubling the amount of SR updates in the scenario without replays, the behavior of the agent remains unaltered (Figure 5—figure supplement 1). This shows that it is not the amount of updates, but the type of policy that is important when updating the SR, and how using a different policy in the replay activity can significantly alter behavior.
 
@@ -115,23 +167,23 @@ Our setup for this simulation is simplified, and does not aim to reproduce the c
 
 ## Discussion
 
-In this article, we investigated how a spiking neural network model of the hippocampus can learn the successor representation. Interestingly, we show that the updates in synaptic weights resulting from our biologically plausible STDP rule are equivalent to TD(λ) updates, a well-known and powerful reinforcement learning algorithm.
+In this article, we investigated how a spiking neural network model of the hippocampus can learn the successor representation. Interestingly, we show that the updates in synaptic weights resulting from our biologically plausible STDP rule are equivalent to TD($\lambda$) updates, a well-known and powerful reinforcement learning algorithm.
 
-## Reinforcement learning
+### Reinforcement learning
 
 Our network learns the SR in the CA3-CA1 weights. Since we have modeled neurons to integrate the synaptic EPSPs and generate spikes using an inhomogeneous Poisson process based on the depolarization, the firing rate is proportional to the total synaptic weights. Therefore, the successor representation can be read out simply by a downstream neuron. Moreover, since the value of a state is defined by the inner product between the successor matrix and the reward vector, it is sufficient for the synaptic weights to the downstream neuron to learn the reward vector, and the downstream neuron will then encode the state value in its firing rate (see Figure 5—figure supplement 2). While the neuron model used is simple, it will be interesting for future work to study analogous models with non-linear neurons.
 
 It is worth noting that, during learning, both pre-synaptic and post-synaptic layers receive external inputs representing the current state (Equation 10 and Equation 11 in Materials and methods). This may induce a distortion in the read out of the diagonal elements of the SR matrix (see Equations 13 and 15, and Figure 5—figure supplement 2). At a first glance, this may indicate that learning and reading out are antagonistic. However, there are multiple ways we could resolve this apparent conflict: (i) Since the external current in CA1 is present for only a fraction of the time T in each state, the readout might happen during the period of CA3 activation exclusively; (ii) The readout may be over the whole time T but becomes more noisy towards the end. Even in the case where the readout is noisy, the distortion would be limited to the diagonal elements of the matrix; (iii) Learning and readout may be separate mechanisms, where the CA3 driving current is present during readout only. This could be for instance signaled by neuromodulation (e.g. noradrenaline and acetylcholine are active during learning but not exploration Micheau and Marighetto, 2011; Hasselmo and Sarter, 2011; Robbins, 1997; Teles-Grilo Ruivo and Mellor, 2013; Palacios-Filardo et al., 2021), or it could be that readout happens during replays; (iv) The weights to or activation functions of the readout neuron may learn to compensate for the distorted signal in CA1.
 
-Furthermore, we can notice that the external inputs encoding the current state activate CA3 first, and CA1 later. The delay between these activations θ/T (Equation 10 and Equation 11 in Materials and methods) is an arbitrary parameter that can be adjusted. Varying this delay will change the reinforcement learning representation, especially parameters λ and γ, but also the strength of the input current (see Figure 5—figure supplement 3). However, this will not impact the distortion of the diagonal elements of the SR matrix, which remains similar across various delay values θ/T (see Figure 5—figure supplement 4).
+Furthermore, we can notice that the external inputs encoding the current state activate CA3 first, and CA1 later. The delay between these activations $\theta/T$ (Equation 10 and Equation 11 in Materials and methods) is an arbitrary parameter that can be adjusted. Varying this delay will change the reinforcement learning representation, especially parameters $\lambda$ and $\gamma$, but also the strength of the input current (see Figure 5—figure supplement 3). However, this will not impact the distortion of the diagonal elements of the SR matrix, which remains similar across various delay values $\theta/T$ (see Figure 5—figure supplement 4).
 
-## Biological plausibility
+### Biological plausibility
 
-Uncovering a connection between STDP and TD(λ) shows how, using minimal assumptions, a theoretically grounded learning algorithm can emerge from a biological implementation of plasticity. Similar learning rules have indeed been observed in the hippocampus (Shouval et al., 2002 and proposed on theoretical grounds Mehta et al., 2000; Waddington et al., 2012; van Rossum et al., 2012).
+Uncovering a connection between STDP and TD($\lambda$) shows how, using minimal assumptions, a theoretically grounded learning algorithm can emerge from a biological implementation of plasticity. Similar learning rules have indeed been observed in the hippocampus (Shouval et al., 2002 and proposed on theoretical grounds Mehta et al., 2000; Waddington et al., 2012; van Rossum et al., 2012).
 
 The TD algorithm is most commonly known in neuroscience for describing how reward prediction can be computed in the brain. More specifically, it is widely believed that dopamine neurons in the ventral tegmental area (VTA) and substantia nigra (SNc) encode the prediction error between the observed and expected reward (Schultz et al., 1997), dopamine thus acts as a global signal that can be broadcasted to other areas of the brain like the striatum to compute the expected reward. In our model, the TD algorithm estimates the SR (i.e. expected future occupancy), rather than the value. However, since the prediction error for the SR is different for every synaptic connection (i.e. each pair of states), it is not clear how it could be carried by a global signal analogous to dopamine. The SR would need multiple signals, or a matrix transformation of the global signal. Furthermore, we would need to postulate that such error – or errors – are computed elsewhere in the brain. Instead, in our model, the prediction error simply emerges from the synaptic plasticity rule itself. Furthermore, thanks to the presynaptic depression, our STDP rule alone allows us to compute negative prediction errors, which still poses an open challenge for computation with dopamine because of the low baseline dopaminergic firing rate (Glimcher, 2011; Daw et al., 2002; Matsumoto and Hikosaka, 2007).
 
-Our framework smoothly connects a temporally precise spiking code with a fully rate-based code, and anything in between. As we have proven mathematically, this translates in moving smoothly from Monte Carlo to Temporal Difference by means of TD(λ). Fast spiking sequences (temporal code) can be used for consolidation of previous experiences using Monte Carlo learning, while the behavioral timescale activity (rate code) results in TD updates, allowing learning on the timescale of seconds even with plasticity timeconstants on the order of milliseconds. This type of Hebbian learning over behavioral timescale exploits the bootstrapping property of TD, and is different than the one-shot behavioral plasticity described in Bittner et al., 2017. However, these two mechanisms could be complementary, where the latter could play a more significant role in the formation of new place fields, while the former would be more relevant to shape the existing place fields to contain predictive information. Learning on behavioral timescales using STDP was also investigated in Drew and Abbott, 2006. The main difference between Drew and Abbott, 2006 and our work, is that the former relies on overlapping neural activity between the pre- and post-synaptic neurons from the start, while in our case no such overlap is required. In other words, our setup allows us to learn connections between a presynaptic neuron and a postsynaptic neuron whose activities are separated by behavioral timescales initially. For this to be possible, there are two requirements: (1) the task needs to be repeated many times and (2) a chain of neurons are consecutively activated between the aforementioned presynaptic and postsynaptic neuron. Due to this chain of neurons, over time the activity of the postsynaptic neuron will start earlier, eventually overlapping with the presynaptic neuron.
+Our framework smoothly connects a temporally precise spiking code with a fully rate-based code, and anything in between. As we have proven mathematically, this translates in moving smoothly from Monte Carlo to Temporal Difference by means of TD($\lambda$). Fast spiking sequences (temporal code) can be used for consolidation of previous experiences using Monte Carlo learning, while the behavioral timescale activity (rate code) results in TD updates, allowing learning on the timescale of seconds even with plasticity timeconstants on the order of milliseconds. This type of Hebbian learning over behavioral timescale exploits the bootstrapping property of TD, and is different than the one-shot behavioral plasticity described in Bittner et al., 2017. However, these two mechanisms could be complementary, where the latter could play a more significant role in the formation of new place fields, while the former would be more relevant to shape the existing place fields to contain predictive information. Learning on behavioral timescales using STDP was also investigated in Drew and Abbott, 2006. The main difference between Drew and Abbott, 2006 and our work, is that the former relies on overlapping neural activity between the pre- and post-synaptic neurons from the start, while in our case no such overlap is required. In other words, our setup allows us to learn connections between a presynaptic neuron and a postsynaptic neuron whose activities are separated by behavioral timescales initially. For this to be possible, there are two requirements: (1) the task needs to be repeated many times and (2) a chain of neurons are consecutively activated between the aforementioned presynaptic and postsynaptic neuron. Due to this chain of neurons, over time the activity of the postsynaptic neuron will start earlier, eventually overlapping with the presynaptic neuron.
 
 In our work, we did not include theta modulation, but phase precession and theta sequences could be yet another type of activity within the TD lambda framework. A recent work (George et al., 2023) incorporated the theta sweeps into behavioral activity, showing it approximately learns the SR. Moreover, theta sequences allow for fast learning, playing a similar role as replays (or any other fast temporal-code sequences) in our work. By simulating the temporally compressed and precise theta sequences, their model also reconciles the learning over behavioral timescales with STDP. In contrast, our framework reconciles both timescales relying purely on rate-coding during behavior. Finally, their method allows to learn the SR within continuous space. It would be interesting to investigate whether these methods co-exist in the hippocampus and other brain areas. Furthermore, (Fang et al., 2023) et al. recently showed how the SR can be learned using recurrent neural networks with biologically plausible plasticity.
 
@@ -139,15 +191,15 @@ There are three different neural activities in our proposed framework: the presy
 
 Notably, even though we have focused on the hippocampus in our work, the SR does not require predictive information to come from higher-level feedback inputs. This framework could therefore be useful even in sensory areas: certain stimuli are usually followed by other stimuli, essentially creating a sequence of states whose temporal structure can be encoded in the network using our framework. Interestingly, replays have been observed in other brain areas besides the hippocampus (Kurth-Nelson et al., 2016; Staresina et al., 2013). Furthermore, temporal difference learning in itself has been proposed in the past as a way to implement prospective coding (Brea et al., 2016).
 
-## Replays
+### Replays
 
 We have also proposed a role for replays in learning the SR, in line with experimental findings and RL theories (Russek et al., 2017; Momennejad et al., 2017). In general, replays are thought to serve different functions, spanning from consolidation to planning (Roscow et al., 2021). Here, we have shown that when the replayed trajectories are similar to the ones observed during behavior, they play the role of speeding up and consolidating learning by regulating the bias-variance trade-off, which is especially useful in novel environments. On the other hand, if the replayed trajectories differ from the ones experienced during wakefulness, replays can play a role in reshaping the representation of space, which would suggest their involvement in planning. Experimentally, it has been observed that replays often start and end from relevant locations in the environment, like reward sites, decision points, obstacles or the current position of the animal (Ólafsdóttir et al., 2015; Pfeiffer and Foster, 2013; Jackson et al., 2006; Mattar and Daw, 2017). Since these are salient locations, it is in line with our proposition that replays can be used to maintain a convenient representation of the environment. It is worth noticing that replays can serve a variety of functions, and our framework merely proposes additional beneficial properties without claiming to explain all observed replays. For example, in addition to forward replays, also reverse replays are ubiquitous in hippocampus (Pfeiffer, 2020). The reverse replays are not included in our framework, and it is not clear yet whether they play different roles, with some evidence suggesting that reverse replays are more closely tied to the reward encoding (Ambrose et al., 2016). Moreover, while indirect evidence supports the idea that replays can play a role during learning (Igata et al., 2021), it is not yet clear how synaptic plasticity is manifested during replays (Fuchsberger and Paulsen, 2022).
 
-## Learning flexibility
+### Learning flexibility
 
-Multiple ideas from reinforcement learning, such as TD(λ), state-dependent discounting and the successor representation, emerge quite naturally from our simple biologically plausible setting. We propose in our work that time and space can be discounted differently. Moreover, the flexibility to change the discounting factor by modulating firing rates and plasticity parameters — which is ubiquitous in neural circuits — suggests that these mechanisms could be used to encode a variety of information in a cognitive map. Moreover, the specific dependence of the discount factor on the biological parameters leads to experimentally testable predictions. Indeed, our framework predicts well-defined changes in place fields after modulations of firing rates, speed of the agent or neuromodulation of the plasticity parameters (Figure 3). Importantly, the discount parameter also depends on the time spent in each state. This eliminates the need for time discretization, which does not reflect the continuous nature of the response of time cells (Kraus et al., 2013).
+Multiple ideas from reinforcement learning, such as TD($\lambda$), state-dependent discounting and the successor representation, emerge quite naturally from our simple biologically plausible setting. We propose in our work that time and space can be discounted differently. Moreover, the flexibility to change the discounting factor by modulating firing rates and plasticity parameters — which is ubiquitous in neural circuits — suggests that these mechanisms could be used to encode a variety of information in a cognitive map. Moreover, the specific dependence of the discount factor on the biological parameters leads to experimentally testable predictions. Indeed, our framework predicts well-defined changes in place fields after modulations of firing rates, speed of the agent or neuromodulation of the plasticity parameters (Figure 3). Importantly, the discount parameter also depends on the time spent in each state. This eliminates the need for time discretization, which does not reflect the continuous nature of the response of time cells (Kraus et al., 2013).
 
-## Limitations of the reinforcement learning framework
+### Limitations of the reinforcement learning framework
 
 We have already outlined some of the benefits of using reinforcement learning for modeling behavior, including providing clear computational and algorithmic frameworks. However, there are several intrinsic limitations to this framework. For example, RL agents that only use spatial data do not provide complete descriptions of behavior, which likely arises from integrating information across multiple sensory inputs. Whereas an animal would be able to smell and see a reward from a certain distance, an agent exploring the environment would only be able to discover it when randomly visiting the exact reward location. Furthermore, the framework rests on fairly strict mathematical assumptions: typically the state space needs to be markovian, time and space need to be discretized (which we manage to evade in this particular framework) and the discounting needs to follow an exponential decay. These assumptions are simplistic and it is not clear how often they are actually met. Reinforcement Learning is also a sample-intensive technique, whereas we know that some animals, including humans, are capable of much faster or even one-shot learning.
 
@@ -157,119 +209,301 @@ Taken together, our work joins — in a single framework — a variety of concep
 
 ## Materials and methods
 
-## The successor representation
+### The successor representation
 
-In a tabular environment, we define the value of a state s as being the expected cumulative reward that an agent will receive following a certain policy starting in s. The future rewards are multiplied by a factor 0<γn≤1, where n is the number of steps until reaching the reward location and 0<γ≤1 is the delay discount factor. It is usual to use 0<γ<1, which ensures that earlier rewards are given more importance compared to later rewards. Formally, the value of a state s under a certain policy π is defined as(1)Vπ(s)=Eπ[∑k=0∞γkRt+k|St=s](2)=∑aπ(a|s)[R(s,a)+∑s′P(s′|s,a)γVπ(s′)]
+In a tabular environment, we define the value of a state $s$ as being the expected cumulative reward that an agent will receive following a certain policy starting in $s$. The future rewards are multiplied by a factor $0<\gamma^{n}\leq1$, where $n$ is the number of steps until reaching the reward location and $0<\gamma\leq1$ is the delay discount factor. It is usual to use $0<\gamma<1$, which ensures that earlier rewards are given more importance compared to later rewards. Formally, the value of a state $s$ under a certain policy $\pi$ is defined as
 
-Here, a denotes the action, R⁢(s,a) is the reward function and P⁢(s′|s,a) is the transition function, i.e. the probability that taking an action a in state s will result in a transition to state s′. Following (Dayan, 1993), we can decompose the value function into the inner product of reward function and successor matrix(3)V(s)=∑s′Ms,s′R(s′)
+$$
+V^{\pi}(s)=E_{\pi}[\sumk=0∞\gamma^{k}R_{t+k}|S_{t}=s]
+$$
 
-with(4)Ms,s′=E[∑t=0∞γtI(st=s′)|s0=s]
 
-This representation is known as the successor representation (SR), where each element Mi⁢j represents the expected future occupancy of state j when in state i. By decomposing the value into the SR and the reward function (Equation 3), relearning the state values V after changing the reward function is fast, similar to model-based learning. At the same time, the SR can be learned in a model-free manner, using for example temporal difference (TD) learning (Russek et al., 2017).
 
-## Derivation of the TD(λ) update for the SR
+$$
+=\suma\pi(a|s)[R(s,a)+\sums^{′}P(s^{′}|s,a)\gammaV^{\pi}(s^{′})]
+$$
 
-The TD(λ) update for the SR is then implemented according to (see e.g. Sutton and Barto, 1998)(5)Δ⁢M⁢(j,i)=δ0T⁢D+γ⁢λ⁢δ1T⁢D+(γ⁢λ)2⁢δ2T⁢D+…
+Here, $a$ denotes the action, $R⁢(s,a)$ is the reward function and $P⁢(s^{′}|s,a)$ is the transition function, i.e. the probability that taking an action $a$ in state $s$ will result in a transition to state $s^{′}$. Following (Dayan, 1993), we can decompose the value function into the inner product of reward function and successor matrix
 
-Using δiT⁢D for the TD error at step i and δx⁢y for the Kronecker delta,(6)δnT⁢D=δj+n,i+n+γ⁢M⁢(j+n+1,i+n)-M⁢(j+n,i+n)
+$$
+V(s)=\sums^{′}M_{s,s^{′}}R(s^{′})
+$$
 
-corresponds to the TD error for element M⁢(j+n,i+n) of the successor representation after the transition from state j+n to state j+n+1. Combining Equations 5 and 6, we find(7)Δ⁢M⁢(j,i)=[δj,i+γ⁢M⁢(j+1,i)-M⁢(j,i)]+γ⁢λ⁢[δj+1,i+γ⁢M⁢(j+2,i)-M⁢(j+1,i)]+(γ⁢λ)2⁢[δj+2,i+γ⁢M⁢(j+3,i)-M⁢(j+2,i)]+…=-M⁢(j,i)+δj,i+(1-λ)⁢γ⁢M⁢(j+1,i)+γ⁢λ⁢δj+1,i+(1-λ)⁢λ⁢γ2⁢M⁢(j+2,i)+(γ⁢λ)2⁢δj+2,i+…=-M⁢(j,i)+∑n=0N[(γ⁢λ)n⁢δj+n,i+(1-λ)⁢γ⁢(γ⁢λ)n⁢M⁢(j+n+1,i)]
+with
 
-and(8)M(j,i)←M(j,i)+η ΔM(j,i)←M(j,i)−η{M(j,i)+∑n=0N[(γλ)nδj+n,i+(1−λ)γ(γλ)nM(j+n+1,i)]}
+$$
+M_{s,s^{′}}=E[\sumt=0∞\gamma^{t}I(s_{t}=s^{′})|s_{0}=s]
+$$
 
-## Neural network model
+This representation is known as the successor representation (SR), where each element $M_{i⁢j}$ represents the expected future occupancy of state $j$ when in state $i$. By decomposing the value into the SR and the reward function (Equation 3), relearning the state values $V$ after changing the reward function is fast, similar to model-based learning. At the same time, the SR can be learned in a model-free manner, using for example temporal difference (TD) learning (Russek et al., 2017).
 
-## Plasticity rule
+### Derivation of the TD(λ) update for the SR
 
-The synaptic plasticity rule (Figure 1d) consists of a weight-dependent depression for presynaptic spikes and a spike-timing dependent potentiation, given by(9)dwij(t)dt=ηSTDPALTP⋅TrLTPj(t)⋅∑iδ(t−ti)−ηSTDPALTD⋅wij(t)⋅δ(t−tj)τLTPdTrLTPj(t)dt=−TrLTPj(t)+∑jδ(t−tj)
+The TD($\lambda$) update for the SR is then implemented according to (see e.g. Sutton and Barto, 1998)
 
-Here, wi⁢j represents the synaptic connection from presynaptic neuron j to postsynaptic neuron i, T⁢rL⁢T⁢Pj is the plasticity trace, a low-pass filter of the presynaptic spike train with time constant τLTP, tj and ti are the spike times of the postsynaptic and presynaptic neuron respectively, ALTP and ALTD are the amplitudes of potentiation and depression respectively, ηSTDP is the learning rate for STDP and the δ⁢(⋅) denotes the Dirac delta function.
+$$
+Δ⁢M⁢(j,i)=\delta_{0}^{T⁢D}+\gamma⁢\lambda⁢\delta_{1}^{T⁢D}+(\gamma⁢\lambda)^{2}⁢\delta_{2}^{T⁢D}+…
+$$
 
-## Place cell activation
+Using $\delta_{i}^{T⁢D}$ for the TD error at step $i$ and $\delta_{x⁢y}$ for the Kronecker delta,
 
-We assume that each state in the environment is represented by a population of place cells in the network. In our model, this is achieved by delivering place-tuned currents to the neurons. Whenever a state S=j is entered, the presynaptic neurons encoding state j start firing at a constant rate ρp⁢r⁢e for a time θ, following a Poisson process with parameter ρhp⁢r⁢e⁢(t). The other presynaptic neurons are assumed to be silent:(10)ρhpre(t)={ρpreδhj,if t∈[0,θ)0otherwise
+$$
+\delta_{n}^{T⁢D}=\delta_{j+n,i+n}+\gamma⁢M⁢(j+n+1,i+n)-M⁢(j+n,i+n)
+$$
 
-where the Kronecker delta function is defined as δh⁢j=1 if h=j and zero otherwise. Here we use the index j to denote any neuron belonging to the population of neurons encoding state j. After a short delay, at time t*, a similar current ρb⁢i⁢a⁢s is delivered to the postsynaptic neuron encoding state j, for a duration of time ω.(11)ρibias(t)={ρbiasδij,if t∈[t∗,t∗+ω)0,otherwise
+corresponds to the TD error for element $M⁢(j+n,i+n)$ of the successor representation after the transition from state $j+n$ to state $j+n+1$. Combining Equations 5 and 6, we find
 
-Besides the place-tuned input current, CA1 neurons receive inputs from the presynaptic layer (CA3). The postsynaptic potential ρip⁢o⁢s⁢t when the agent is in state j is thus given by(12)ρipost(t)=∑kNpop∑tkf<twijk(t)κ(t−tf)+ρibias(t),
+$$
+Δ⁢M⁢(j,i)=[\delta_{j,i}+\gamma⁢M⁢(j+1,i)-M⁢(j,i)]+\gamma⁢\lambda⁢[\delta_{j+1,i}+\gamma⁢M⁢(j+2,i)-M⁢(j+1,i)]+(\gamma⁢\lambda)^{2}⁢[\delta_{j+2,i}+\gamma⁢M⁢(j+3,i)-M⁢(j+2,i)]+…=-M⁢(j,i)+\delta_{j,i}+(1-\lambda)⁢\gamma⁢M⁢(j+1,i)+\gamma⁢\lambda⁢\delta_{j+1,i}+(1-\lambda)⁢\lambda⁢\gamma^{2}⁢M⁢(j+2,i)+(\gamma⁢\lambda)^{2}⁢\delta_{j+2,i}+…=-M⁢(j,i)+\sum_{n=0}^{N}[(\gamma⁢\lambda)^{n}⁢\delta_{j+n,i}+(1-\lambda)⁢\gamma⁢(\gamma⁢\lambda)^{n}⁢M⁢(j+n+1,i)]
+$$
 
-with the first sum running over all Np⁢o⁢p presynaptic neurons encoding state j, and the second sum over all presynaptic firing times tkf of neuron k happened before t. The excitatory postsynaptic current κ is modeled as an exponential decay described as κ⁢(x)=ϵ0⁢e-x/τm for x≥0 and zero otherwise. Each CA1 neuron i fires following an inhomogeneous Poisson process with rate ρip⁢o⁢s⁢t⁢(t).
+and
 
-Note that, in most simulations we will use a single neuron in the population Np⁢o⁢p=1. In addition, we normally set t*=θ and ω=T-θ. However, we will keep these as explicit parameters for theoretical purposes.
+$$
+M(j,i)←M(j,i)+η ΔM(j,i)←M(j,i)−η{M(j,i)+\sumn=0N[(\gamma\lambda)^{n}\delta_{j+n,i}+(1−\lambda)\gamma(\gamma\lambda)^{n}M(j+n+1,i)]}
+$$
 
-## Equivalence with TD(λ)
+### Neural network model
 
-## Total plasticity update
+#### Plasticity rule
 
-Since we have the mathematical equation for the plasticity rule, and CA3 and CA1 neurons follow an inhomogeneous Poisson process with time-dependent firing rate, we can calculate analytically the average total weight change for the synapse wi⁢j, given a certain trajectory (details in the Appendix). Please notice that our calculation is based on Kempter et al., 1999, which takes into account the fact that our plasticity rule is sensitive to spike timing and involves a spike-spike correlation term. We find that:(13)Δwij=A wij+∑n=0N[B(e−T/τLTP)nδij+n+C(e−T/τLTP)n+1wi,j+n+1]
+The synaptic plasticity rule (Figure 1d) consists of a weight-dependent depression for presynaptic spikes and a spike-timing dependent potentiation, given by
 
-where N is the number of states until the end of the trajectory and(14)A=ηSTDPALTP Npopϵ0(ρpre)2 τLTP τm(1−e−θ/τm)[θ−τLTP(1−e−θ/τLTP)]+ηSTDPALTPθρpreNpopτmτLTPτm+τLTPϵ0−ηSTDPApre ρpreθ(15)B=ηS⁢T⁢D⁢P⁢AL⁢T⁢P⁢ρp⁢r⁢e⁢τL⁢T⁢P2⁢(eθτL⁢T⁢P-1)⁢e-t*τL⁢T⁢P⁢(1-e-ωτL⁢T⁢P)⁢ρb⁢i⁢a⁢s=B′⁢ρb⁢i⁢a⁢s(16)C=ηS⁢T⁢D⁢P⁢AL⁢T⁢P⁢Np⁢o⁢p⁢ϵ0⁢τm⁢τL⁢T⁢P2⁢(ρp⁢r⁢e)2⁢(1-e-θτm)⁢(eθτL⁢T⁢P-1)⁢(1-e-θτL⁢T⁢P)
+$$
+\frac{dw_{ij}(t)}{dt}=η_{STDP}A_{LTP}⋅Tr_{LTP}^{j}(t)⋅\sumi\delta(t−t^{i})−η_{STDP}A_{LTD}⋅w_{ij}(t)⋅\delta(t−t^{j})\tau_{LTP}\frac{dTr_{LTP}^{j}(t)}{dt}=−Tr_{LTP}^{j}(t)+\sumj\delta(t−t^{j})
+$$
 
-## Comparison with TD(λ)
+Here, $w_{i⁢j}$ represents the synaptic connection from presynaptic neuron $j$ to postsynaptic neuron $i$, $T⁢r_{L⁢T⁢P}^{j}$ is the plasticity trace, a low-pass filter of the presynaptic spike train with time constant $\tau_{LTP}$, $t^{j}$ and $t^{i}$ are the spike times of the postsynaptic and presynaptic neuron respectively, $A_{LTP}$ and $A_{LTD}$ are the amplitudes of potentiation and depression respectively, $η_{STDP}$ is the learning rate for STDP and the $\delta⁢(⋅)$ denotes the Dirac delta function.
 
-Comparing the total weight change due to STDP (Equation 13) to the TD(λ) update (Equation 8), we can see that the two equations are very similar in form:wij←wij−A{−wij+∑n=0N[−BA(e−T/τLTP)nδij+n−CAe−T/τLTP(e−T/τLTP)nwi,j+n+1]}M(j,i)←M(j,i)+η{−M(j,i)+∑n=0N[(γλ)nδj+n,i+(1−λ)γ(γλ)nM(j+n+1,i)]}
+#### Place cell activation
 
-We impose wi⁢j=M⁢(j,i), and find:(17)-A=η(18)-BA=1 → ρb⁢i⁢a⁢s=-AB′(19)e-T/τL⁢T⁢P=λ⁢γ(20)-C⁢e-T/τL⁢T⁢PA=1-λγ,
+We assume that each state in the environment is represented by a population of place cells in the network. In our model, this is achieved by delivering place-tuned currents to the neurons. Whenever a state $S=j$ is entered, the presynaptic neurons encoding state $j$ start firing at a constant rate $ρ^{p⁢r⁢e}$ for a time $\theta$, following a Poisson process with parameter $ρ_{h}^{p⁢r⁢e}⁢(t)$. The other presynaptic neurons are assumed to be silent:
 
-where A,B,B′ and C are defined as in Equations 14, 15, and 16.
+$$
+ρ_{h}^{pre}(t)={ρ^{pre}\delta_{hj},if t\in[0,\theta)0otherwise
+$$
 
-Hence, our plasticity rule is learning the Successor Representation through a TD(λ) model with parameters:(21)η=-A(22)γ=A-CA⁢e-TτL⁢T⁢P(23)λ=AA-C
+where the Kronecker delta function is defined as $\delta_{h⁢j}=1$ if $h=j$ and zero otherwise. Here we use the index $j$ to denote any neuron belonging to the population of neurons encoding state $j$. After a short delay, at time $t^{*}$, a similar current $ρ^{b⁢i⁢a⁢s}$ is delivered to the postsynaptic neuron encoding state $j$, for a duration of time $\omega$.
 
-To ensure the learning rate η is positive, one condition resulting from Equation 21 is(24)Apre>ALTP NpopτLTP τmϵ0(ρpre (1−e−θ/τm)θ−τLTP(1−e−θ/τLTP)θ+1τm+τLTP)
+$$
+ρ_{i}^{bias}(t)={ρ^{bias}\delta_{ij},if t\in[t^{∗},t^{∗}+\omega)0,otherwise
+$$
 
-## Learning during normal behavior (θ>>τLTP)
+Besides the place-tuned input current, CA1 neurons receive inputs from the presynaptic layer (CA3). The postsynaptic potential $ρ_{i}^{p⁢o⁢s⁢t}$ when the agent is in state j is thus given by
 
-During normal behavior, we assume the place-tuned currents are on larger timescales than the plasticity constants: θ,ω>>τLTP. We can see from Equations 14 and 16 that the factor A grows linearly with θ while C grows exponentially with θ. From Equation 23, we then have(25)λ→0
+$$
+ρ_{i}^{post}(t)=\sumkN_{pop}\sumt_{k}^{f}<tw_{ij_{k}}(t)κ(t−t^{f})+ρ_{i}^{bias}(t),
+$$
+
+with the first sum running over all $N_{p⁢o⁢p}$ presynaptic neurons encoding state $j$, and the second sum over all presynaptic firing times $t_{k}^{f}$ of neuron $k$ happened before $t$. The excitatory postsynaptic current $κ$ is modeled as an exponential decay described as $κ⁢(x)=ϵ_{0}⁢e^{-x/\tau_{m}}$ for $x\geq0$ and zero otherwise. Each CA1 neuron $i$ fires following an inhomogeneous Poisson process with rate $ρ_{i}^{p⁢o⁢s⁢t}⁢(t)$.
+
+Note that, in most simulations we will use a single neuron in the population $N_{p⁢o⁢p}=1$. In addition, we normally set $t^{*}=\theta$ and $\omega=T-\theta$. However, we will keep these as explicit parameters for theoretical purposes.
+
+#### Equivalence with TD(λ)
+
+##### Total plasticity update
+
+Since we have the mathematical equation for the plasticity rule, and CA3 and CA1 neurons follow an inhomogeneous Poisson process with time-dependent firing rate, we can calculate analytically the average total weight change for the synapse $w_{i⁢j}$, given a certain trajectory (details in the Appendix). Please notice that our calculation is based on Kempter et al., 1999, which takes into account the fact that our plasticity rule is sensitive to spike timing and involves a spike-spike correlation term. We find that:
+
+$$
+Δw_{ij}=A w_{ij}+\sumn=0N[B(e^{−T/\tau_{LTP}})^{n}\delta_{ij+n}+C(e^{−T/\tau_{LTP}})^{n+1}w_{i,j+n+1}]
+$$
+
+where $N$ is the number of states until the end of the trajectory and
+
+$$
+A=η_{STDP}A_{LTP} N_{pop}ϵ_{0}(ρ^{pre})^{2} \tau_{LTP} \tau_{m}(1−e^{−\theta/\tau_{m}})[\theta−\tau_{LTP}(1−e^{−\theta/\tau_{LTP}})]+η_{STDP}A_{LTP}\thetaρ^{pre}N_{pop}\frac{\tau_{m}\tau_{LTP}}{\tau_{m}+\tau_{LTP}}ϵ_{0}−η_{STDP}A_{pre} ρ^{pre}\theta
+$$
+
+
+
+$$
+B=η_{S⁢T⁢D⁢P}⁢A_{L⁢T⁢P}⁢ρ^{p⁢r⁢e}⁢\tau_{L⁢T⁢P}^{2}⁢(e^{\frac{\theta}{\tau_{L⁢T⁢P}}}-1)⁢e^{-\frac{t^{*}}{\tau_{L⁢T⁢P}}}⁢(1-e^{-\frac{\omega}{\tau_{L⁢T⁢P}}})⁢ρ^{b⁢i⁢a⁢s}=B^{′}⁢ρ^{b⁢i⁢a⁢s}
+$$
+
+
+
+$$
+C=η_{S⁢T⁢D⁢P}⁢A_{L⁢T⁢P}⁢N_{p⁢o⁢p}⁢ϵ_{0}⁢\tau_{m}⁢\tau_{L⁢T⁢P}^{2}⁢(ρ^{p⁢r⁢e})^{2}⁢(1-e^{-\frac{\theta}{\tau_{m}}})⁢(e^{\frac{\theta}{\tau_{L⁢T⁢P}}}-1)⁢(1-e^{-\frac{\theta}{\tau_{L⁢T⁢P}}})
+$$
+
+##### Comparison with TD(λ)
+
+Comparing the total weight change due to STDP (Equation 13) to the TD($\lambda$) update (Equation 8), we can see that the two equations are very similar in form:
+
+$$
+w_{ij}←w_{ij}−A{−w_{ij}+\sumn=0N[−\frac{B}{A}(e^{−T/\tau_{LTP}})^{n}\delta_{ij+n}−\frac{C}{A}e^{−T/\tau_{LTP}}(e^{−T/\tau_{LTP}})^{n}w_{i,j+n+1}]}M(j,i)←M(j,i)+η{−M(j,i)+\sumn=0N[(\gamma\lambda)^{n}\delta_{j+n,i}+(1−\lambda)\gamma(\gamma\lambda)^{n}M(j+n+1,i)]}
+$$
+
+We impose $w_{i⁢j}=M⁢(j,i)$, and find:
+
+$$
+-A=η
+$$
+
+
+
+$$
+-\frac{B}{A}=1 → ρ^{b⁢i⁢a⁢s}=-\frac{A}{B^{′}}
+$$
+
+
+
+$$
+e^{-T/\tau_{L⁢T⁢P}}=\lambda⁢\gamma
+$$
+
+
+
+$$
+-\frac{C⁢e^{-T/\tau_{L⁢T⁢P}}}{A}=\frac{1-\lambda}{\gamma},
+$$
+
+where $A,B,B^{′}$ and $C$ are defined as in Equations 14, 15, and 16.
+
+Hence, our plasticity rule is learning the Successor Representation through a TD($\lambda$) model with parameters:
+
+$$
+η=-A
+$$
+
+
+
+$$
+\gamma=\frac{A-C}{A}⁢e^{-\frac{T}{\tau_{L⁢T⁢P}}}
+$$
+
+
+
+$$
+\lambda=\frac{A}{A-C}
+$$
+
+To ensure the learning rate $η$ is positive, one condition resulting from Equation 21 is
+
+$$
+A_{pre}>A_{LTP} N_{pop}\tau_{LTP} \tau_{m}ϵ_{0}(ρ^{pre} (1−e^{−\theta/\tau_{m}})\frac{\theta−\tau_{LTP}(1−e^{−\theta/\tau_{LTP}})}{\theta}+\frac{1}{\tau_{m}+\tau_{LTP}})
+$$
+
+### Learning during normal behavior (θ>>τLTP)
+
+During normal behavior, we assume the place-tuned currents are on larger timescales than the plasticity constants: $\theta,\omega>>\tau_{LTP}$. We can see from Equations 14 and 16 that the factor $A$ grows linearly with $\theta$ while $C$ grows exponentially with $\theta$. From Equation 23, we then have
+
+$$
+\lambda→0
+$$
 
 (See also Figure 2—figure supplement 1).
 
-## Learning during replays (θ<<τLTP)
+### Learning during replays (θ<<τLTP)
 
-## Assumptions
+#### Assumptions
 
-For the replay model we assume the place-tuned currents are impulses, which make the neurons emit exactly one spike at a given time. Specifically, we can make the duration of the place-tuned currents go to 0,(26)θ,ω→0
+For the replay model we assume the place-tuned currents are impulses, which make the neurons emit exactly one spike at a given time. Specifically, we can make the duration of the place-tuned currents go to 0,
 
-while the intensity of the currents goes to infinity. For simplicity, we will take:ρpre(θ)=1θ→limθ→0ρpre=∞ρbias(ω)=1ω→limω→0ρbias=∞
+$$
+\theta,\omega→0
+$$
 
-Furthermore, we assume that the contribution of the postsynaptic currents due to the single presynaptic spikes is negligible in terms of driving plasticity, allowing us to setϵ0→0
+while the intensity of the currents goes to infinity. For simplicity, we will take:
 
-## Calculations of TD parameters
+$$
+ρ^{pre}(\theta)=\frac{1}{\theta}→lim\theta→0ρ^{pre}=∞ρ^{bias}(\omega)=\frac{1}{\omega}→lim\omega→0ρ^{bias}=∞
+$$
 
-Given the assumptions above, we can see from Equations 14 and 16 that:A=−ηSTDPApreC=0
+Furthermore, we assume that the contribution of the postsynaptic currents due to the single presynaptic spikes is negligible in terms of driving plasticity, allowing us to set
 
-For Equation 15, we can use the Taylor expansion for exτ around x=0, such that: exτ≈1+xτ :B=ηSTDPALTPτLTP2ρpreθτLTPe−t∗τLTPωτLTPρbias=ηSTDPALTPe−t∗τLTP
+$$
+ϵ_{0}→0
+$$
 
-Using Equations 21, 22, 23 and 18, we can calculate the parameters and constraints for the TD model:(27)λ=AA−C=1η=−A=ηSTDPApreγ=A−CAe−TτLTP=e−TτLTP1=−BA=ALTPe−t∗τLTPApre
+#### Calculations of TD parameters
 
-As expected, the bootstrapping parameter λ=1 (see also Figure 2—figure supplement 1).
+Given the assumptions above, we can see from Equations 14 and 16 that:
 
-## Alternative derivation of replay model
+$$
+A=−η_{STDP}A_{pre}C=0
+$$
 
-## Place cell activation during replays
+For Equation 15, we can use the Taylor expansion for $e^{\frac{x}{\tau}}$ around $x=0$, such that: $e^{\frac{x}{\tau}}≈1+\frac{x}{\tau}$ :
 
-We model a replay event as a precise temporal sequence of spikes. Since every neuron represents a state in the environment, a replay sequence reproduces a trajectory of states. We assume that, when the agent is in state S=j, the neurons representing state j fire np⁢r⁢e spikes at some point in the time interval t∈[0,σ], where the exact firing times are uniformly sampled. After a short delay, the CA1 neurons representing state j fire np⁢o⁢s⁢t spikes at a time uniformly sampled from the interval [t*,t*+σ]. The time between two consecutive state visits is T. The exact number of spikes in each replay event is random but small. Specifically, it is sampled from the set {0,1,2} according to the probability vector(28)p=(p12,1−p1,p12)
+$$
+B=η_{STDP}A_{LTP}\tau_{LTP}^{2}ρ^{pre}\frac{\theta}{\tau_{LTP}}e^{−\frac{t^{∗}}{\tau_{LTP}}}\frac{\omega}{\tau_{LTP}}ρ^{bias}=η_{STDP}A_{LTP}e^{−\frac{t^{∗}}{\tau_{LTP}}}
+$$
 
-It is worth noting here that other implementations are possible but that we assume the average number of spikes in each state is 1, and that the average time between a presynaptic and a postsynaptic spike is t*. The model could be further generalized for a higher number of average spikes per state.
+Using Equations 21, 22, 23 and 18, we can calculate the parameters and constraints for the TD model:
 
-## Plasticity update
+$$
+\lambda=\frac{A}{A−C}=1η=−A=η_{STDP}A_{pre}\gamma=\frac{A−C}{A}e^{−\frac{T}{\tau_{LTP}}}=e^{−\frac{T}{\tau_{LTP}}}1=−\frac{B}{A}=\frac{A_{LTP}e^{−\frac{t^{∗}}{\tau_{LTP}}}}{A_{pre}}
+$$
 
-We can consider again our learning rule, composed of a positive pre-post potentiation window and presynaptic weight-dependent depression (Equation 9). Let’s consider the synapse wi⁢j, we can see that on average the total amount of depression will be determined by the number of times the state j is visited in the trajectory replayed:L⁢T⁢D=-Apre⋅wi⁢j⁢Nj,
+As expected, the bootstrapping parameter $\lambda=1$ (see also Figure 2—figure supplement 1).
 
-where Nj is the number of times the state j is visited. The amount of potentiation will be determined, instead, by the time difference between the postsynaptic and presynaptic firing times, which encode the distance between state j and state i:LTP=ALTP⁢∑ke-k⁢T+t*τLTP⁢nki⁢j,
+### Alternative derivation of replay model
 
-where nki⁢j represents the number of times the agent visited state i k steps after j. Combining the equations above we find that:(29)Δwij=ηSTDPALTP∑ke−kT+t∗τLTPnkij−ηSTDPApre⋅wijNj.
+#### Place cell activation during replays
 
-If we assume that the this value has converged to its stationary state, Δwij=0;(30)wij⋆=ALTPApree−t∗τLTP⋅∑k(e−TτLTP)knkijNj
+We model a replay event as a precise temporal sequence of spikes. Since every neuron represents a state in the environment, a replay sequence reproduces a trajectory of states. We assume that, when the agent is in state $S=j$, the neurons representing state $j$ fire $n_{p⁢r⁢e}$ spikes at some point in the time interval $t\in[0,\sigma]$, where the exact firing times are uniformly sampled. After a short delay, the CA1 neurons representing state $j$ fire $n_{p⁢o⁢s⁢t}$ spikes at a time uniformly sampled from the interval $[t^{*},t^{*}+\sigma]$. The time between two consecutive state visits is $T$. The exact number of spikes in each replay event is random but small. Specifically, it is sampled from the set ${0,1,2}$ according to the probability vector
 
-## Comparison with online Monte Carlo learning
+$$
+p=(\frac{p_{1}}{2},1−p_{1},\frac{p_{1}}{2})
+$$
 
-Given the stable weight w* from Equation 30, we can impose that:(31)ALTPApre⁢e-t*τLTP=1   and (32)e-TτLTP=γ
+It is worth noting here that other implementations are possible but that we assume the average number of spikes in each state is 1, and that the average time between a presynaptic and a postsynaptic spike is $t^{*}$. The model could be further generalized for a higher number of average spikes per state.
 
-we find that the stable weight is:(33)wij⋆=∑kγknkijNj≈E[∑kγkI(Sk=i|S0=j)]=M(j,i)
+#### Plasticity update
 
-which is the definition of the Successor Representation matrix (Equation 4). Indeed, wi⁢j⋆ is computing the sample mean of the discounted distance between states i and j, which is equivalent to performing an every-state Monte Carlo or TD(λ=1) update. Notably, from Equation 29, we have that the learning rate for the Monte Carlo update is given by:(34)η=ηS⁢T⁢D⁢P⁢ALTP⁢e-t*τLTP=ηS⁢T⁢D⁢P⁢Apre
+We can consider again our learning rule, composed of a positive pre-post potentiation window and presynaptic weight-dependent depression (Equation 9). Let’s consider the synapse $w_{i⁢j}$, we can see that on average the total amount of depression will be determined by the number of times the state $j$ is visited in the trajectory replayed:
 
-## Simulation details for Figure 2
+$$
+L⁢T⁢D=-A_{pre}⋅w_{i⁢j}⁢N_{j},
+$$
+
+where $N_{j}$ is the number of times the state $j$ is visited. The amount of potentiation will be determined, instead, by the time difference between the postsynaptic and presynaptic firing times, which encode the distance between state $j$ and state $i$:
+
+$$
+LTP=A_{LTP}⁢\sumke^{-\frac{k⁢T+t^{*}}{\tau_{LTP}}}⁢n_{k}^{i⁢j},
+$$
+
+where $n_{k}^{i⁢j}$ represents the number of times the agent visited state $i$ k steps after $j$. Combining the equations above we find that:
+
+$$
+Δw_{ij}=η_{STDP}A_{LTP}\sumke^{−\frac{kT+t^{∗}}{\tau_{LTP}}}n_{k}^{ij}−η_{STDP}A_{pre}⋅w_{ij}N_{j}.
+$$
+
+If we assume that the this value has converged to its stationary state, $Δw_{ij}=0$;
+
+$$
+w_{ij}^{⋆}=\frac{A_{LTP}}{A_{pre}}e^{−\frac{t^{∗}}{\tau_{LTP}}}⋅\frac{\sumk(e^{−\frac{T}{\tau_{LTP}}})^{k}n_{k}^{ij}}{N_{j}}
+$$
+
+#### Comparison with online Monte Carlo learning
+
+Given the stable weight $w^{*}$ from Equation 30, we can impose that:
+
+$$
+\frac{A_{LTP}}{A_{pre}}⁢e^{-\frac{t^{*}}{\tau_{LTP}}}=1   and 
+$$
+
+
+
+$$
+e^{-\frac{T}{\tau_{LTP}}}=\gamma
+$$
+
+we find that the stable weight is:
+
+$$
+w_{ij}^{⋆}=\frac{\sumk\gamma^{k}n_{k}^{ij}}{N_{j}}≈E[\sumk\gamma^{k}I(S_{k}=i|S_{0}=j)]=M(j,i)
+$$
+
+which is the definition of the Successor Representation matrix (Equation 4). Indeed, $w_{i⁢j}^{⋆}$ is computing the sample mean of the discounted distance between states $i$ and $j$, which is equivalent to performing an every-state Monte Carlo or TD($\lambda$=1) update. Notably, from Equation 29, we have that the learning rate for the Monte Carlo update is given by:
+
+$$
+η=η_{S⁢T⁢D⁢P}⁢A_{LTP}⁢e^{-\frac{t^{*}}{\tau_{LTP}}}=η_{S⁢T⁢D⁢P}⁢A_{pre}
+$$
+
+### Simulation details for Figure 2
 
 A linear track with four states is simulated. The policy of the agent in this simulation is to traverse the track from left to right, with one epoch consisting of starting in state 1 and ending in state 4. One simulation consists of 50 epochs, and we re-run the whole simulation ten times with different random seeds. Over these ten seeds, mean and standard deviation of the synaptic weights are recorded after every epoch.
 
@@ -277,25 +511,74 @@ Our neural network consists of two layers, each with a single neuron per state (
 
 The STDP parameters are listed in Table 1.
 
-To obey Equation 24, we set Apre equal to the right hand side augmented with 5.
+**Table 1.**
+ Parameters used for the spiking network.
 
-For the behavioral case, we choose T=100ms, θ=80ms, ω=T-θ, which correspond to TD(λ) parameters λ=0.21, γ=0.89, η=0.12.
 
-In the replay case, we have a sequence of single spike per neuron (see Figure 2b and section ‘Alternative derivation of replay model’). Following Equation 27, we choose T=-log⁡(γ)⁢τL⁢T⁢P≈ 7ms, where γ and τL⁢T⁢P are the same as in Table 1. We set θ=2 ms and σ=0.5 ms. By setting the ηs⁢t⁢d⁢p=ηAL⁢T⁢P⁢exp⁡(θ/τL⁢T⁢P), the corresponding TD(λ) parameters are λ=1, γ=0.89, η=0.12 just as in the behavioral case.
+<table>
+  <tbody>
+    <tr>
+      <td>ϵ0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ρpre</td>
+      <td>0.1ms-1</td>
+    </tr>
+    <tr>
+      <td>τm</td>
+      <td>2ms</td>
+    </tr>
+    <tr>
+      <td>Npost</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Npretot</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Npre</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>stepsize</td>
+      <td>0.01ms</td>
+    </tr>
+    <tr>
+      <td>ηstdp</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>τLTP</td>
+      <td>60ms</td>
+    </tr>
+    <tr>
+      <td>ALTP</td>
+      <td>1 ms-1</td>
+    </tr>
+  </tbody>
+</table>
 
-More details on the place cell activation during replays in our model can be found in section ‘Alternative derivation of replay model’. Using exactly one single spike per neuron with the above parameters would allow us to follow the TD(1) learning trajectories without any noise. For more biological realism, we choose p1=0.15 in Equation 28, in order to achieve an equal amount of noise due to the random spiking as in the case of behavioral activity (see Figure 4—figure supplement 2).
+To obey Equation 24, we set $A_{pre}$ equal to the right hand side augmented with 5.
 
-## Simulation details for Figure 3
+For the behavioral case, we choose T=100ms, $\theta$=80ms, $\omega=T-\theta$, which correspond to TD($\lambda$) parameters $\lambda=0.21$, $\gamma=0.89$, $η=0.12$.
+
+In the replay case, we have a sequence of single spike per neuron (see Figure 2b and section ‘Alternative derivation of replay model’). Following Equation 27, we choose $T=-log⁡(\gamma)⁢\tau_{L⁢T⁢P}≈$ 7ms, where $\gamma$ and $\tau_{L⁢T⁢P}$ are the same as in Table 1. We set $\theta=2$ ms and $\sigma=0.5$ ms. By setting the $η_{s⁢t⁢d⁢p}=\frac{η}{A_{L⁢T⁢P}⁢exp⁡(\theta/\tau_{L⁢T⁢P})}$, the corresponding TD($\lambda$) parameters are $\lambda=1$, $\gamma=0.89$, $η=0.12$ just as in the behavioral case.
+
+More details on the place cell activation during replays in our model can be found in section ‘Alternative derivation of replay model’. Using exactly one single spike per neuron with the above parameters would allow us to follow the TD(1) learning trajectories without any noise. For more biological realism, we choose $p_{1}=0.15$ in Equation 28, in order to achieve an equal amount of noise due to the random spiking as in the case of behavioral activity (see Figure 4—figure supplement 2).
+
+### Simulation details for Figure 3
 
 Using the same neural network and plasticity parameters as the behavioral learning in Figure 2 (see previous section), we simulate the linear track in the following two situations:
 
-## Simulation details for Figure 4
+### Simulation details for Figure 4
 
 A linear track with three states is simulated, and the agent has 50% probability to move left or right in each state (see Figure 4A). One epoch lasts until the agent reaches one of the STOP locations.
 
 We then use the same neural network and plasticity parameters as used for Figure 2. We simulate three scenarios:
 
-## Simulation details for Figure 5
+### Simulation details for Figure 5
 
 A linear track with 21 states is simulated. The SR is initialized as the identity matrix, and the reward vector (containing the reward at each state) is also initialized as the zero vector. We simulate the learning of the SR during behavior using the theoretical TD(0) updates and during replays using the theoretical TD(1) updates. The value of each state is then calculated as the matrix-vector product between the SR and the reward vector, resulting in an initial value of zero for each state.
 

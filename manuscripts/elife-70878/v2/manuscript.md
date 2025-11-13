@@ -44,9 +44,31 @@ To investigate the effects of altered spacing on TF binding and function, we fir
 
 ## Results
 
-## TFs primarily co-bind with relaxed spacing
+### TFs primarily co-bind with relaxed spacing
 
 We characterized spacing relationships for 73 TFs of K562 cells covering diverse TF families (Hu et al., 2019) based on the ChIP-seq data from ENCODE data portal (Davis et al., 2018). After obtaining reproducible ChIP-seq peaks, we used the corresponding position weight matrix (PWM) of each TF (Supplementary file 1) to identify the locations of high-affinity binding sites that are less than 50 bp from peak centers (Figure 1A; Figure 1—figure supplement 1); 42% of peaks on average contain at least one binding site of corresponding TF (Supplementary file 1). The peaks of every pair of TFs were then merged, and at the overlapping peaks indicating co-binding events, the edge-to-edge spacings were calculated between TF binding sites and then aggregated to show a distribution within ±100 bp. To categorize spacing relationships, we used Monte Carlo procedures to obtain an empirical p-value to find significant spacing constraints and used Kolmogorov–Smirnov (KS) test to test for a relaxed spacing relationship against random distribution.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of data analysis pipeline for characterizing the spacing relationships based on TF chromatin immunoprecipitation sequencing (ChIP-seq) data. (B) Dissection of TF binding sites for TFs in K562 cells based on spacing relationships with co-binding TFs. Each dot represents a TF pair. The bar heights indicate medians. (C) Circos plot summarizing spacing relationships for all the TF pairs analyzed. Orange and blue bands represent significant constrained and relaxed spacing relationships, respectively. Color opacity indicates the level of significance. TFs are grouped and colored by TF family. (D) The spacing distributions of example TF pairs with constrained spacing or relaxed spacing relationships. Dashed lines indicate the significant constrained spacings. Since TAL1 motif is completely palindromic, the motif orientation is only differentiated by its co-binding partners.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Motifs proximal to peak centers are potentially more confident than motifs distal from peak centers. (B) All motifs passing false positive rate (FPR) <0.001 are potentially as confident as the best motif of every peak.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-figsupp5-v2.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Each dot represents one transcription factor (TF) pair.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig1-figsupp7-v2.jpg)
 
 We applied this computational framework to all possible pairs of TFs. By dissecting each TF’s binding sites based on their spacing relationships with co-binding TFs, we found that 45 of the 73 TFs examined exclusively exhibited relaxed spacing relationships with other TFs (Figure 1B). Twenty-five factors could participate in either relaxed or constrained interactions, depending on the specific co-binding TFs. Only three TFs interacted with only constrained spacing, some of which might show additional relaxed spacing relationships by expanding the current set of TFs. The significant pairwise patterns of relaxed and constrained spacing relationships are illustrated in Figure 1C. Among 29 TF pairs with constrained spacing relationships, most bind closely to each other within 15 bp spacing (Figure 1—figure supplement 2). Some of these TF pairs have been reported to recognize composite motifs such as GATA1-TAL1 and NFATC3-FOSL1 (Macián et al., 2001; Ng et al., 2014; Figure 1D; Figure 1—figure supplement 3), and some are novel constrained spacing patterns discovered by our analysis such as MEF2A-JUND and CEBPB-TEAD4 (Figure 1—figure supplement 3). TFs exhibiting relaxed spacing are exemplified by ETV1-TAL1 and JUND-KLF16, in which the frequency of co-binding progressively declines with distance from the center of the reference TF (Figure 1D). We also saw frequent relaxed spacing between TFs in the same family. For instance, despite the similar motifs recognized by AP-1 factors, many of these TFs were found to co-localize at non-overlapping nearby positions. In addition, the same type of spacing relationship is usually observed in different motif orientations (Figure 1D), consistent with previous findings (Lis and Walther, 2016).
 
@@ -54,13 +76,57 @@ We downloaded the ChIP-seq data of HepG2 cells from ENCODE and processed them wi
 
 Since DNA repetitive regions such as transposable elements are known to harbor TF binding sites and specific TF co-binding (Bourque et al., 2008; Kunarso et al., 2010), we further examined whether the spacing relationships of TFs could be different in repetitive and nonrepetitive regions. To study this, we applied the same pipeline to the subsets of TF ChIP-seq peaks in repetitive and nonrepetitive regions. As a result, most of the relaxed spacing relationships remained regardless of repetitive or nonrepetitive regions (Figure 1—figure supplement 6). Some constrained TF pairs, however, showed constrained spacing only in repetitive regions and not in nonrepetitive regions (Figure 1—source data 2). For example, EGR1 and JUND exhibited a constrained spacing at 29 bp (Figure 1D), but this relationship is observed specifically in SINEs (Figure 1—figure supplement 7). Such observation is consistent with previous studies that discovered specific motif pairs in repetitive regions (Wang et al., 2012).
 
-## Natural genetic variants altering spacing between relaxed TFs are associated with less deleteriousness in human populations
+### Natural genetic variants altering spacing between relaxed TFs are associated with less deleteriousness in human populations
 
 Based on a global view of the TF spacing relationships, we then studied whether these relationships associate with different levels of sensitivity to spacing alterations. Here, we leveraged more than 60 million InDels from gnomAD data (Karczewski et al., 2020), which were based on more than 75,000 genomes from unrelated individuals. We mapped these InDels to the TF binding sites of representative TF pairs with constrained and relaxed spacing identified in K562 cells. We found that InDels between TF binding sites have similar sizes compared to those at binding sites and those in background regions, the majority of which are less than 5 bp (Figure 2A). Next, we divided these InDels based on their allele frequency (AF) and allele count (AC) into high-frequency variants (AF>0.01%), rare variants (AF<0.01%, AC>1), and singletons (AC = 1). Most of the InDels are singletons or rare variants (Figure 2—figure supplement 1; Figure 2—source data 1). We compared the enrichment of different categories of InDels between or at TF binding sites (Figure 2B; Figure 2—figure supplement 2). The InDel compositions at TF binding sites were not significantly different between constrained and relaxed spacing groups. On the contrary, singletons were significantly more enriched between the binding sites of TFs with constrained spacing, whereas high-frequency variants were significantly more depleted between these binding sites. We also computed for several TF pairs with random spacing relationships as negative controls and found similar enrichments of InDels like those with relaxed spacing. Since common variants are associated with less deleteriousness and rare variants with more deleteriousness (Lek et al., 2016), these findings suggest that InDels between TF binding sites with constrained spacing could be just as damaging as those at binding sites, whereas InDels between TF binding sites with relaxed spacing might have a much weaker effect. This observation is consistent with prior studies that validated significant effects of spacing alterations between TFs with constrained spacing relationships (Ng et al., 2014). However, few studies have discussed the effects of InDels on TFs with relaxed spacing, so we specifically focused on relaxed spacing relationships in the rest of the current study.
 
-## Spacing alterations across mouse strains are generally tolerated by relaxed TF binding and promoter and enhancer function
+![Figure 2.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig2-v2.jpg)
+
+**Figure 2.:** (A) Size distributions of human InDels within different regions. (B) Log2 odds ratios for different categories of InDels. Each dot represents a transcription factor (TF) pair with corresponding spacing relationship. Mann–Whitney U test was used to compare the odds ratios between different spacing relationships. Non-significant (n.s.) if p-value is larger than 0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** InDels were divided into high-frequency variants (AF>0.01%), rare variants (AF<0.01%, allele count [AC]>1), and singletons (AC = 1).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Each dot represents a transcription factor (TF) pair. Mann–Whitney U test was used to compare the odds ratios between different spacing relationships. Non-significant (n.s.) if p-value is larger than 0.01.
+
+### Spacing alterations across mouse strains are generally tolerated by relaxed TF binding and promoter and enhancer function
 
 To investigate the regulatory effects of naturally occurring InDels that alter spacing between TFs with relaxed spacing relationships, we leveraged more than 50 million SNPs and 5 million InDels from five genetically diverse mouse strains, including C57BL/6J (C57), BALB/cJ (BALB), NOD/ShiLtJ (NOD), PWK/PhJ (PWK), and SPRET/EiJ (SPRET). The ChIP-seq data of key TFs and histone acetylation and genome-wide transcriptional run-on (GRO-seq) data are available for the bone marrow-derived macrophages (BMDMs) from every mouse strain (Link et al., 2018a). We first characterized the spacing relationship between the macrophage LDTFs, PU.1 (encoded by Spi1) and C/EBPβ (encoded by Cebpb), which have been found to bind in a collaborative manner at the regulatory regions of macrophage-specific genes (Heinz et al., 2010). Based on our computational framework for characterizing spacing relationships (Figure 1A), these two TFs follow a relaxed spacing relationship independent of their motif orientations (Figure 3A; KS p-value < 1e-6). Moreover, both PU.1 and C/EBPβ binding activities quantified by the ChIP-seq tags were indifferent at various spacings (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-v2.jpg)
+
+**Figure 3.:** (A) Spacing distributions of PU.1 and C/EBPβ binding sites at co-binding sites. (B) Density plots showing the relationship between transcription factor (TF) binding activity and motif spacing for the co-binding sites. Log2 chromatin immunoprecipitation sequencing (ChIP-seq) tags were calculated within 300 bp to quantify the binding activity of PU.1 and C/EBPβ. The color gradients represent the number of sites. Spearman’s correlation coefficients together with p-values are displayed. (C, E, G) Absolute log2 fold changes of ChIP-seq tags between C57 and another strain for (C) PU.1 binding, (E) C/EBPβ binding, or (G) nascent transcripts measured by GRO-seq. Boxplots show the median and quartiles of every distribution. Cohen’s d effect sizes comparing against variant-free regions are displayed on top. (D, F, H) Correlations between change of spacing or position weight matrix (PWM) score and change of (D) PU.1 binding, (F) C/EBPβ binding, or (H) nascent transcript level. Spearman’s correlation coefficients together with p-values are displayed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Solid lines represent means based on all four pairwise comparisons.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Supplementary to Figure 3E.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Left: p65 and PU.1. Right: p65 and c-Jun.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) PU.1 and p65 binding at their co-binding sites and (B) c-Jun and p65 binding at their co-binding sites.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Spearman’s correlation coefficients together with p-values are displayed.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** (A) Absolute log2 fold changes of H3K27ac chromatin immunoprecipitation sequencing (ChIP-seq) tags between C57 and another strain. (B) Correlations between change of spacing or position weight matrix (PWM) score and change of H3K27ac level. Spearman’s correlation coefficients together with p-values are displayed.
 
 We then conducted independent comparisons between C57 and one of the other four strains to investigate the effects of spacing alterations caused by natural genetic variation. Most of the natural InDels are less than 5 bp similar to those found in the human population (Figure 3—figure supplement 1). We first identified the co-binding sites of PU.1 and C/EBPβ for every strain and then, for each pairwise analysis, pooled the co-binding sites of C57 and a comparison strain to obtain the testing set of regions. Based on the impacts of SNPs and InDels on binding affinity quantified by PWM score or the impacts of InDels on spacing, we categorized the testing regions into the following independent groups: (1) mutated PU.1 motif, (2) mutated C/EBPβ motif, (3) mutated other potentially functional motifs, (4) altered spacing, (5) no motif/spacing effect, and (6) variant free. Potentially functional motifs were identified from PU.1 and C/EBPβ binding sites using MAGGIE (Shen et al., 2020), which is a computational tool that finds motifs associated with changes in TF binding (Figure 3—figure supplement 2). Considering that PU.1 and C/EBPβ binding could experience changes due to genetic variation mutating other motifs, we grouped these genetic variations to examine their overall effects and simultaneously reach a cleaner group of spacing alterations. The effect of genetic variation was quantified by the log2 fold difference of ChIP-seq tag counts between strains at orthogonal sites (Figure 3C). All the four independent comparisons showed that PU.1 binding is most strongly affected by PU.1 motif mutation, followed by C/EBPβ motif mutation and other motif mutation. Spacing alterations have a smaller effect size than any of these motif mutations, but still a relatively larger effect than variants affecting neither binding affinity nor spacing. Despite the moderate effect size of spacing alterations, we found such effect was independent of the size or direction of InDels (Figure 3D). On the contrary, changes of PU.1 ChIP-seq tags are strongly correlated with changes of binding affinity measured by changes of PWM scores (Figure 3D). In addition, the effects of motif mutation and spacing alteration are not varied by the initial spacing between PU.1 and C/EBPβ motifs (Figure 3—figure supplement 3). Similar findings were observed in C/EBPβ binding, except that C/EBPβ motif mutation had the largest effect size and the strongest correlation with C/EBPβ binding activity as expected (Figure 3E and F; Figure 3—figure supplement 3). Despite that most of the informative genetic variants are located at enhancers and relatively few within promoters, we saw consistent relationships in promoters and enhancers (Figure 3—figure supplement 4).
 
@@ -68,15 +134,41 @@ To investigate whether the effects of altered spacing on PU.1 and C/EBPβ bindin
 
 Although alterations in motif spacing had generally weak effects at the level of DNA binding, it remained possible that changes in motif spacing could influence subsequent steps in enhancer and promoter activation. To examine this, we extended our analysis to nascent transcription measured by GRO-seq (Core et al., 2008). Importantly, nascent transcription occurs both at active promoters and enhancers, with enhancer transcription serving as an indicator of enhancer activity (De Santa et al., 2010; Kim et al., 2019). We leveraged GRO-seq data of untreated BMDMs from the five strains of mice (Link et al., 2018a) and calculated the log fold changes of tags at the PU.1 and C/EBPβ co-binding sites for the same pairwise comparisons of strains. Like for TF binding, altered spacing demonstrated weaker effects on nascent transcription than motif mutations (Figure 3G), which is consistent with the significant correlations between changes in TF binding and changes in the level of nascent transcripts (Figure 3—figure supplement 7). The relative tolerance of spacing alteration was further supported by a weak correlation between changes in GRO-seq tags and the size of InDels, in contrast with a much stronger correlation with changes in binding affinity (Figure 3H). Thus, these findings extend the concept of spatial tolerance to the entire ensemble of factors that must be assembled to mediate nascent transcription. Similar relationships were observed for effects of InDels on local acetylation of histone H3 lysine 27 (H3K27ac) (Figure 3—figure supplement 7; Figure 3—figure supplement 8), which provides an alternative surrogate for enhancer and promoter activity (Creyghton et al., 2010).
 
-## Human quantitative trait loci altering spacing between relaxed TFs have small effect sizes
+### Human quantitative trait loci altering spacing between relaxed TFs have small effect sizes
 
 To study the effects of spacing alteration on TF binding and local histone acetylation in human cells, we leveraged the ChIP-seq data of ERG, p65, and H3K27ac in endothelial cells from dozens of individuals (Stolze et al., 2020). ERG is an ETS factor that functions as an LDTF in endothelial cells that selects poised enhancers where p65 binds in a hierarchical manner upon interleukin-1β (IL-1β) stimulation (Hogan et al., 2017). ERG and p65 follow a relaxed spacing relationship according to our method (Figure 4A). Next, we obtained 557 TF binding quantitative trait loci (bQTLs) for ERG, 5,791 bQTLs for p65, 25,621 histone modification QTLs (hQTLs) for H3K27ac in untreated cells, and 21,635 hQTLs for H3K27ac in IL-1β-treated cells (Stolze et al., 2020). We further classified bQTLs and hQTLs based on their impacts on binding affinity or spacing: (1) mutated both ERG and p65 (i.e., RELA) motif, (2) mutated ERG motif only, (3) mutated p65 motif only, (4) mutated other potentially functional motifs identified by MAGGIE (Shen et al., 2020), (5) altered spacing between ERG and p65 motif, (6) none of the above. To find potentially functional motifs, we fed MAGGIE with 100 bp sequences around QTLs before and after swapping alleles at the center (Figure 4—figure supplement 1). As a result, only a small portion of bQTLs and hQTLs directly mutates an ERG or p65 motif (Figure 4B; Figure 4—figure supplement 2). However, such motif mutations are enriched in bQTLs compared to non-QTLs (Fisher’s exact p < 1e-4). On the contrary, InDels that alter motif spacing are significantly depleted in p65 bQTLs (Fisher’s exact p = 1.3e-15). These InDels from the dozens of individuals are predominantly shorter than 5 bp by following a similar size distribution of those in human populations (Figure 4—figure supplement 3). A large proportion of QTLs affect other motifs, implicating the complexity of TF interactions. More than a quarter of the QTLs affect neither binding affinity nor spacing, which can be explained by the high correlation of non-functional variants with functional variants due to linkage disequilibrium.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig4-v2.jpg)
+
+**Figure 4.:** (A) Spacing distributions of ERG and p65 binding sites at co-binding sites. (B) Classification of chromatin QTLs based on the impacts on motif and spacing. (C) Absolute correlation coefficients of different QTLs. Cohen’s d and Mann–Whitney U test p-values comparing against the ‘other’ group are displayed on top. *p < 0.01, **p < 0.001, ***p < 0.0001. (D) Example QTLs for large effect size due to ERG motif mutation (upper) and trivial effect due to spacing alteration (lower).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Cohen’s d and Mann–Whitney U test p-values comparing against the ‘other’ group are displayed on top. *p<0.01, **p<0.001, ***p<0.0001.
+
 We further compared the effect sizes of different categories of QTLs. Despite being the minority among QTLs, variants that mutate both ERG and p65 motifs have the strongest effects on both p65 binding and histone acetylation in IL-1β-treated endothelial cells (Figure 4C). In comparison, ERG binding and the basal level of histone acetylation are significantly affected by ERG motif mutations in untreated endothelial cells and not by p65 motif mutations, consistent with the hierarchical interaction of p65 only upon IL-1β stimulation (Figure 4—figure supplement 4). In both conditions of endothelial cells, spacing alterations have the smaller effect size than motif mutation categories and are not significantly different from likely non-functional variants in the ‘other’ group. The examples showed a variant being both a p65 bQTL and a H3K27ac hQTL under the IL-1β state due to its impact on an ERG motif, and a 4 bp insertion between ERG and p65 motifs associated with no change in p65 binding or H3K27ac (Figure 4D).
 
-## Relaxed TF binding is highly tolerant to synthetic spacing alterations
+### Relaxed TF binding is highly tolerant to synthetic spacing alterations
 
 The generally small effects of InDels occurring between TF pairs exhibiting relaxed spacing relationships raised the question of the robustness and the extent of such tolerance at genomic locations lacking such variation. We addressed this question by using CRISPR/Cas9 editing to introduce synthetic InDels between binding sites identified for the LDTFs PU.1 and C/EBPβ in mouse macrophages (Figure 5A). We used lentiviral transduction in Cas9-expressing ER-HoxB8 cells, which are conditionally immortalized monocyte progenitors, to introduce gRNAs targeting genomic sequences between the locations of PU.1 and C/EBPβ co-binding. The successfully transduced ER-HoxB8 cells were then sorted and differentiated into macrophages. Since non-homologous DNA repair resulting from the Cas9 nuclease activity would generate a spectrum of InDels in a population of transduced cells, we first measured input DNAs to obtain the distribution of InDels and then compared with TF ChIP-seq tags from deep sequencing, in which the effect of an InDel is reported as the odds ratio of ChIP tags to the input tags. Importantly, the ChIP-seq libraries were prepared by selective amplification of ChIP tags containing the targeted region of interest. Thus, for each region-specific sequence tag that was immunoprecipitated, we could simultaneously determine whether an InDel had been created and its specific length. Each tag is thus cell- and allele-specific.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic for generating and analyzing synthetic spacing alterations. (B) The distributions of valid read counts from the input sample based on the InDel sizes of the reads. Negative InDel size indicates deletion, and positive size means insertion. (C) Log2 odds ratios by comparing C/EBPβ chromatin immunoprecipitation sequencing (ChIP-seq) reads and input sample reads. Y = 0 indicates where transcription factor (TF) binding has an expected amount of activity. p-Values were based on two-sample t-tests by comparing the InDel groups of each test region. (D) Sequencing data of ER-HoxB8 cells at co-binding site of PU.1 and C/EBPβ. Highlighted is test region #6 whose DNA sequence from PU.1 binding site to C/EBPβ binding site is shown. (E) Log2 odds ratios of test regions #6 as a function of InDel size.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mouse strains data for test region #1. (B) Sequencing data of ER-HoxB8 cells for test region #1. (C) Log2 odds ratios of test region #1 as a function of InDel size.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70878/elife-70878-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Log2 odds ratios by comparing PU.1 chromatin immunoprecipitation sequencing (ChIP-seq) reads and input sample reads. Y = 0 indicates where transcription factor (TF) binding has an expected amount of activity. p-Values were based on two-sample t-tests between the insertion and deletion (InDel) groups of each test region. (B) Log2 odds ratios of test region #6 as a function of InDel size based on PU.1 ChIP-seq.
 
 We tested six PU.1 and C/EBPβ co-binding sites with their original spacing ranging from 26 to 55 bp (Supplementary file 1) and quantified the effects of InDels on C/EBPβ binding. Among the six test regions, three of them have supportive evidence from naturally occurring InDels of mouse strains (regions #1, #3, #5) and the other three don’t (regions #2, #4, #6). Based on the bioinformatic analysis of the ultra-deep sequencing reads from the input DNA samples, we saw that the CRISPR/Cas9 system generated a wide range of InDels with most deletions being <30 bp and short insertions usually less than 5 bp (Figure 5B). It provides longer deletions than natural genetic variations found across mouse strains (Figure 3—figure supplement 1) and in human populations (Figure 2A). After classifying ChIP-seq reads based on the InDel size and whether the InDel overlaps with any of the PU.1 and C/EBP binding sites, we estimated the effect size of InDels on C/EBPβ binding by calculating the odds ratio between C/EBPβ ChIP-seq reads and input DNA sample reads for every InDel group. We found that InDels altering spacing have significantly weaker effects on C/EBPβ binding in comparison to those overlapping with at least one of the binding sites (Figure 5C). For some test regions, the effects of pure spacing alterations are almost negligible, exemplified by test region #6 (Figure 5D and E) and test region #1 (Figure 5—figure supplement 1). Test region #6 is located near a highly expressed gene Prdx1 and has strong binding of PU.1 and C/EBPβ binding and strong signals of H3K27ac and chromatin accessibility indicated by ATAC-seq in ER-Hoxb8 cells, which all support its potential regulatory function (Figure 5D). The PU.1 and C/EBPβ binding sites at this region are 26 bp apart. In general, spacing alterations ranging from 5 bp increase to 22 bp decrease did not have a strong effect on TF binding, indicated by a log2 odds ratio close to 0 (Figure 5E). A small number of outliers were observed at each region where specific InDels resulted in substantial loss of binding (e.g., –20 bp, Figure 5E). C/EBPβ binding at these specific InDels was generally discontinuous with 1 bp increments (e.g., –19 and –21 bp, Figure 5E). The basis for these highly localized changes in the odds ratio in a small fraction of InDels that alter spacing is unclear. On the contrary, deletions overlapping with the TF binding sites resulted in a general decrease in TF binding activity. Similar results were found at test region #1 where PU.1 and C/EBPβ binding sites are 41 bp apart (Figure 5—figure supplement 1A). This Ly9 enhancer also has a 5 bp insertion between PU.1 and C/EBPβ binding sites in BALB, NOD, and PWK mice, and shows unaffected binding of PU.1 and C/EBPβ in the BMDMs of these strains (Figure 5—figure supplement 1B). As a result of the synthetic InDels, the C/EBPβ binding activity was generally unaffected by spacing alterations only, whereas deletions overlapping TF binding sites substantially diminished TF binding (Figure 5—figure supplement 1C). We further measured PU.1 binding using ChIP-seq at three out of six test regions and saw general tolerance of synthetic spacing alterations in contrast with significantly weaker PU.1 binding resulted from motif alterations (Figure 5—figure supplement 2).
 
@@ -92,7 +184,346 @@ In concert, the present studies provide a basis for estimation of the potential 
 
 ## Materials and methods
 
-## Sequencing data processing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>B6(C)-Gt(ROSA)26Sorem1.1(CAG-cas9*,-EGFP)Rsky/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No: 028555RRID:IMSR_JAX:028555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Cas9-expressing ER-HoxB8 cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gifted from Dr David Sykes</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Lenti-X 293T cells</td>
+      <td>Clontech</td>
+      <td>Cat#: 632180RRID:CVCL_4401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (retrovirus)</td>
+      <td>Murine stem cell virus-based vector for ER-HoxB8</td>
+      <td>Massachusetts General Hospital, Boston, MA</td>
+      <td></td>
+      <td>Gifted from Dr David Sykes</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (retrovirus)</td>
+      <td>lentiGuide-puro</td>
+      <td>Addgene</td>
+      <td>Cat#: 52963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (retrovirus)</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>Cat#: 12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (retrovirus)</td>
+      <td>pVSVG</td>
+      <td>Addgene</td>
+      <td>Cat#: 138479</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PU.1/Spi1 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc-352XRRID:AB_632289</td>
+      <td>(1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>C/EBPβ (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc-150RRID:AB_2260363</td>
+      <td>(10 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27ac (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat#: 39135RRID:AB_2614979</td>
+      <td>(2 µL)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NEBNext 2× High Fidelity PCR Master Mix</td>
+      <td>NEB</td>
+      <td>Cat#: M0541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Locus-specific Nextera hybrid primer</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Sequences included in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nextera index primer</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Sequences included in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse IL-3</td>
+      <td>Peprotech</td>
+      <td>Cat#: 213–13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse IL-6</td>
+      <td>Peprotech</td>
+      <td>Cat#: 216–16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse SCF</td>
+      <td>Peprotech</td>
+      <td>Cat#: 250–03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse GM-CSF</td>
+      <td>Peprotech</td>
+      <td>Cat#: 315–03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Mouse M-CSF</td>
+      <td>Shenandoah Biotech</td>
+      <td>Cat#: 200–08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MicroPrep kit</td>
+      <td>Zymo Research</td>
+      <td>Cat#: R2062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Cat#: 15028212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChIP DNA Clean &amp; Concentrator</td>
+      <td>Zymo Research</td>
+      <td>Cat#: D5205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Library Preparation Kit</td>
+      <td>NEB</td>
+      <td>Cat#: E7645L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LentiBlast Transduction Reagent</td>
+      <td>OZ Biosciences</td>
+      <td>Cat#: LB00500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ficoll-Paque-Plus</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: GE17-1440-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RPMI-1640</td>
+      <td>Corning</td>
+      <td>Cat#: 10–014-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM high glucose</td>
+      <td>Corning</td>
+      <td>Cat#: 10–013-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>Omega Biosciences</td>
+      <td>Cat#: FB-12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>100× Penicillin/Streptomycin + L-glutamine</td>
+      <td>Gibco</td>
+      <td>Cat#: 10378–016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-Estradiol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: E2758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 10131035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: H9268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fibronectin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: F0895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-lysin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: DLW354210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-tremeGENE HP DNA Transfection Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 6366546001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: BP531-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads Protein A</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 10002D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SpeedBeads magnetic carboxylate modified particles</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: GE65152105050250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads MyOne Streptavidin T1</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 65602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHOPCHOP</td>
+      <td>CHOPCHOP (https://chopchop.cbu.uib.no/)</td>
+      <td>RRID:SCR_015723</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)</td>
+      <td>RRID:SCR_016368</td>
+      <td>Version 2.3.5.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>STAR (https://github.com/alexdobin/STAR)</td>
+      <td>RRID:SCR_004463</td>
+      <td>Version 2.5.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>HOMER (https://homer.ucsd.edu/homer/)</td>
+      <td>RRID:SCR_010881</td>
+      <td>Version 4.9.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAGGIE</td>
+      <td>MAGGIE (https://github.com/zeyang-shen/maggie)</td>
+      <td>RRID:SCR_021903</td>
+      <td>Version 1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IDR</td>
+      <td>IDR (https://www.encodeproject.org/software/idr/)</td>
+      <td>RRID:SCR_017237</td>
+      <td>Version 2.0.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MMARGE</td>
+      <td>MMARGE (https://github.com/vlink/marge)</td>
+      <td>RRID:SCR_021902</td>
+      <td>Version 1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sequencing data processing
 
 We downloaded two replicates for each TF ChIP-seq data from ENCODE data portal (Davis et al., 2018). The mouse BMDM data and the human endothelial cell data were downloaded from the GEO database with accession number GSE109965 (Link et al., 2018a) and GSE139377 (Stolze et al., 2020), respectively. We mapped ChIP-seq and ATAC-seq reads using Bowtie2 v2.3.5.1 with default parameters (Langmead and Salzberg, 2012) and mapped RNA-seq reads using STAR v2.5.3 (Dobin et al., 2013). All the human data downloaded from ENCODE were mapped to the hg38 genome. Data from C57BL/6J mice were mapped to the mm10 genome. Data from other mouse strains and endothelial cell data from different individuals were mapped to their respective genomes built by MMARGE v1.0 (Link et al., 2018b). More details are described below.
 
@@ -100,75 +531,79 @@ Based on the mapped ChIP-seq data, we called peaks using HOMER v4.9.1 (Heinz et 
 
 Activity of TF binding and nascent transcription was quantified by the ChIP-seq and GRO-seq tag counts, respectively, within 300 bp around peak centers and normalized by library size using HOMER ‘annotatePeaks.pl’ script with parameters ‘-norm 1e7 -size –150,150’. Activity of promoter and enhancer was quantified by normalized H3K27ac ChIP-seq tags within 1000 bp regions around TF peak centers using parameters ‘-norm 1e7 -size –500,500’.
 
-## TF binding site identification
+### TF binding site identification
 
 Given a DNA sequence with the same length of a TF binding motif, we calculated a PWM score, or sometimes called motif score, by the dot product between the motif PWM and the sequence vector using Biopython package (Cock et al., 2009). The PWMs of all the TFs in this study were obtained from either the JASPAR database (Fornes et al., 2020) or de novo motif analysis using HOMER ‘findMotifsGenome.pl -size 200 -mask’ with random backgrounds (Heinz et al., 2010) if unavailable in the JASPAR database. For de novo motifs, the ultimate motif of each TF used for identifying TF binding sites was manually selected from the top three significant motifs that look like motifs of other TFs within the same TF family available in JASPAR. The final motifs are listed in Supplementary file 1. TFs without a confident motif based on the criteria above or ending up with less than 2000 ChIP-seq peaks with at least one confident TF binding site based on the pipeline below have been excluded from the current study.
 
 The original PWMs were first trimmed to keep only the core motifs starting from the first position of information content greater than 0.3 to the last position of information content greater than 0.3 (Ng et al., 2014). A valid TF binding site was identified by having a PWM score passing a false positive rate (FPR) of 0.1% based on a score distribution generated from 25% composition of A, C, G, T using Biopython (Cock et al., 2009) and a location within 50 bp close to the ChIP-seq peak center. Spacing is computed edge-to-edge between two TF binding sites at co-binding sites. If there are multiple valid motifs for one or both TFs, we computed the spacing between all possible combinations of valid motifs. For TFs that share a core motif, we applied the same pipeline to each TF separately, which may or may not identify the same binding sites, but we only included non-overlapping binding sites in our downstream calculation of spacing.
 
-## Characterization of spacing relationships
+### Characterization of spacing relationships
 
-To test for the constrained spacing relationship between a given pair of TFs, we first generated their spacing distribution at single-base-pair resolution ranging from –100 to +100 bp and then used Monte Carlo procedures to identify significant ‘spikes’ in the spacing distribution based on point-to-point slopes. The slope of position i is computed using the following formula:Si=2Ni-Ni-1-Ni+12, i∈-99,99
+To test for the constrained spacing relationship between a given pair of TFs, we first generated their spacing distribution at single-base-pair resolution ranging from –100 to +100 bp and then used Monte Carlo procedures to identify significant ‘spikes’ in the spacing distribution based on point-to-point slopes. The slope of position i is computed using the following formula:
+
+$$
+S_{i}=\frac{2N_{i}-N_{i-1}-N_{i+1}}{2}, i\in-99,99
+$$
 
 Si is the average of single-step forward and backward slope at spacing equal to i bp, and Ni represents the value of position i on the spacing distribution (i.e., the number of TF binding sites with spacing i bp). We then used Monte Carlo procedures to obtain an empirical p-value to represent the statistical significance of a slope to be considered as a ‘spike’. Specifically, we randomly sampled 1000 integers between 0 and 100, calculated a distribution, and obtained all the slopes using the formula above. We repeated this process by 1000 times and summarized all the slopes in an aggregated distribution. p-Value is determined based on the percentile rank of testing value on the aggregated distribution. p-Value smaller than 6.25e-05 (familywise error rate = 0.05/200/4) is called significant, indicating a ‘spike’ is found.
 
 To test for the relaxed spacing relationship, we used KS test to compare a spacing distribution to the random distribution. We randomly sampled integers between –100 and 100 to match the same size of the testing spacing distribution and then tested the spacing distribution against the distribution of the random integers to obtain a p-value. We repeated the above process 100 times and reported the average p-value. To compare spacing relationships in repetitive versus nonrepetitive regions, we first used repeat annotations from HOMER to divide our ChIP-seq peaks into repetitive and nonrepetitive regions and then repeated the above procedures.
 
-## Categorization of gnomAD variants based on AF
+### Categorization of gnomAD variants based on AF
 
 We obtained InDels from gnomAD v3.1 (Karczewski et al., 2020). These gnomAD variants were mapped to TF co-binding sites, specifically with two TF binding sites and their intermediate sequences. For TF pairs with constrained spacing relationships, we only kept the co-binding sites with the identified constrained spacing ±2 bp. To account for region-by-region variation in selective pressure, we also overlapped variants with 100 bp upstream and 100 bp downstream background regions outside of TF co-binding sites. For each co-binding site, we categorized InDels into high-frequency variants (AF>0.01%), rare variants (AF <0.01%, AC >1), and singletons (AC = 1) and computed the odds ratios to find associations between a certain category of InDels (e.g., singletons) and certain regions (e.g., between motifs with constrained spacing).
 
-## Genetic variation processing and genome building
+### Genetic variation processing and genome building
 
 Genetic variation of the five mouse strains was obtained from Keane et al., 2011, and that of the human individuals from which endothelial cell data were generated was derived from Stolze et al., 2020. We used MMARGE v1.0 with default variant filters (Link et al., 2018b) to build separate genomes for each mouse strain and human individual. The sequencing data from different samples were respectively mapped to the corresponding genomes and were then shifted to a common reference genome using MMARGE ‘shift’ function to facilitate comparison at homologous regions. The reference genome is mm10 for mouse strains and hg19 for human individuals.
 
-## Motif mutation analysis
+### Motif mutation analysis
 
 We used MAGGIE v1.0 (Shen et al., 2020) to identify functional motifs for TF binding. To prepare the inputs into MAGGIE based on the mouse strains data, we adapted a similar strategy as described in Shen et al., 2020. In brief, we conducted pairwise orthogonal comparisons of TF peaks between each possible pair of the five strains to find strain-differential peaks. We then extracted pairs of 200 bp sequences around the centers of the differential peaks from the genomes of two comparative strains, the ones with TF binding as positive sequences paired with those without TF binding as negative sequences. For the QTLs of human endothelial cells, MAGGIE can directly work with a VCF file of QTLs with effect size and effect direction indicated in a column of the file. We ran MAGGIE separately for each type of QTLs and reported the significant motifs together with their p-values, which passed false discovery rate (FDR) < 0.05 after the Benjamini–Hochberg controlling procedure.
 
-## Categorization of genetic variation based on impacts on motif or spacing
+### Categorization of genetic variation based on impacts on motif or spacing
 
 We categorized genetic variation based on its impact on binding affinity or spacing. Motif mutations caused by SNPs or InDels were defined by at least two-bit difference in the PWM score, which is equivalent to approximately 4-fold difference in the binding likelihood. To classify genetic variation that mutates other functional motifs identified by MAGGIE, we required at least one of the MAGGIE motifs differed by at least two bits in the PWM score. InDels were first classified into motif mutation categories if eligible before being considered for spacing alteration. Therefore, spacing alterations were InDels between target motifs without any motif mutations. Variants fitting neither motif mutation nor spacing alteration were gathered in a separate group as a control. Another control category during analysis of mouse strains data was defined by ChIP-seq peaks that have no genetic variation between strains.
 
-## Statistical testing of effect size
+### Statistical testing of effect size
 
 To estimate the effects of genetic variation on different readouts, we computed the log2 fold changes of corresponding sequencing tags for every pairwise comparison between C57 and one of the other strains. The effect sizes of QTLs were directly pulled from the source literature. We conducted Mann–Whitney U tests between the control variant category and another category to find significant differences in their distributions. Cohen’s d (Sullivan and Feinn, 2012) was further calculated between two distributions. For an easier comparison of general effect size, we took the absolute values before calculating Cohen’s d. Spearman’s correlation coefficient together with statistical significance was calculated to find correlations between log2 fold changes of tags and TF features.
 
-## ER-HoxB8 cell-derived macrophage culture and CRISPR knockout
+### ER-HoxB8 cell-derived macrophage culture and CRISPR knockout
 
 Bone marrow cells were isolated from femurs and tibias of a Cas9-expressing transgenic mouse (Jackson Laboratory, No. 028555). Murine stem cell virus-based expression vector for ER-HoxB8 was gifted from Dr David Sykes (Massachusetts General Hospital, Boston, MA). Cas9-expressing ER-HoxB8 conditionally immortalized myoid progenitor cells were generated following established protocols (Wang et al., 2006). In brief, bone marrow cells were purified with a Ficoll gradient (Ficoll-Paque-Plus, Sigma-Aldrich) and resuspended in RPMI 1640 containing 10% FBS, 1% penicillin/streptomycin, and 10 ng/ml each of murine SCF, IL-3, and IL-6 (PeproTech). After 48 hr culture, 2.5 × 105 cells in 1 ml were transduced with 2 ml of ER-HoxB8 retrovirus (in DMEM with 30% FBS) containing 0.5 μl/ml LentiBlast A (OZ Biosciences), 2.5 μl/ml LentiBlast B (OZ Biosciences) and 8 μg/ml polybrene (Sigma-Aldrich) in a well of fibronectin (Sigma-Aldrich)-coated six-well culture plates and centrifuged at 1000 g for 90 min at 22°C. After transduction, 6 ml of ER-HoxB8 cell culture media (RPMI 1640 supplemented with 10% FBS, 1% penicillin/streptomycin, 0.5 μM β-estradiol (Sigma-Aldrich), and 20 ng/ml murine GM-CSF (PeproTech)) were added and an additional half-media exchange with ER-Hoxb8 media performed the next day. Transduced cells were selected with G418 (Thermo Fisher) at 1 mg/ml for 48 hr. Thereafter, cells were maintained in ER-HoxB8 cell culture media and confirmed its identity by RNA-seq. For baseline ATAC-seq and ChIP-seq of ER-HoxB8 cells prior to gRNA transduction, cells were washed twice with PBS, plated at a density of 3 × 106 cells per 10 cm culture plate, and differentiated into macrophages in DMEM with 10% FBS, 1% pencillin/streptomycin, and 17 ng/ml M-CSF (Shenandoah) for 7 days with two culture media exchanges. Differentiated cells were washed twice with PBS and collected for sequencing experiments.
 
 Guide RNA lentiviruses were prepared as previously described (Fonseca et al., 2019) with modifications as follows. LentiGuide-mCherry was generated by modifying lentiGuide-puro (Addgene) to remove a puromycin-resistant gene and replace it with mCherry. gRNA sequences directed between the PU.1 and C/EBP binding sites (and one each directed toward the binding site itself) were designed with CHOPCHOP web tool for genome engineering (Labun et al., 2019). One CRISPR gRNA oligonucleotide was inserted for each target via PCR into a BsmBI cleavage site. A list of gRNA targets used in this article is shown in Supplementary file 1. Lenti-X 293T cells (Clontech) were seeded in poly-D-lysin (Sigma-Aldrich) coated 10 cm tissue culture plates at a density of 3.5 million cells per plate in 10 ml of DMEM containing 10% FBS and 1% penicillin/streptomycin, and then incubated overnight at 37°C. After replacement of the media to 6 ml of DMEM containing 30% FBS, plasmid DNAs (5 μg of LentiGuide-mCherry, 3.75 μg of psPAX2, and 1.25 μg of pVSVG) were transfected into LentiX-293T cells using 20 μl of X-tremeGENE HP DNA Transfection Reagent (Roche) at 37°C overnight. The media was replaced with DMEM containing 30% FBS and 1% penicillin/streptomycin, and then cultured at 37°C overnight. The supernatant was filtrated with 0.45 μm syringe filters and used as lentivirus media. Cell culture media was replaced, and virus was collected again after 24 hr. 1 × 106 Cas9-expressing ER-HoxB8 cells were transduced with virus in 2 ml of lentivirus media and 1 ml of ER-HoxB8 cell media containing 0.5 μl/ml LentiBlast A, 2.5 μl/ml LentiBlast B, and 8 μg/ml polybrene in a well of fibronectin-coated six-well culture plates and centrifuged at 1000 g for 90 min at 22°C. After the transduction, 6 ml of ER-HoxB8 cell media was added to each well. Half of the media was exchanged the next day and in the following days, cells were expanded and passaged. After 5 days, 250,000 successfully transduced cells (indicated by mCherry fluorescence) for each gRNA were sorted by FACS using a Sony MA900. After FACS, cells were expanded in ER-HoxB8 culture media. Differentiation into macrophages was carried out as above in DMEM supplemented with M-CSF.
 
-## RNA-seq library preparation
+### RNA-seq library preparation
 
 Total RNA was isolated from cells and purified using Direct-zol RNA Microprep columns according to the manufacturer’s instructions (Zymo Research); 500 ng of total RNA were used to prepare sequencing libraries from polyA enriched mRNA as previously described (Link et al., 2018a). Libraries were PCR-amplified for 14 cycles, size selected using SpeedBeads (Sigma-Aldrich), quantified by Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific), and 75 bp single-end sequenced on a HiSeq 4000 (Illumina).
 
-## ATAC-seq library preparation
+### ATAC-seq library preparation
 
 ATAC-seq libraries were prepared as previously described (Hoeksema et al., 2021). In brief, 5 × 105 cells were lysed at room temperature in 50 µl ATAC lysis buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% IGEPAL CA-630) and 2.5 µl DNA Tagmentation Enzyme mix (Nextera DNA Library Preparation Kit, Illumina) was added. The mixture was incubated at 37°C for 30 min and subsequently purified using the ChIP DNA Clean & Concentrator kit (Zymo Research) as described by the manufacturer. DNA was amplified using the Nextera Primer Ad1 and a unique Ad2.n barcoding primers using NEBNext High-Fidelity 2× PCR MM for 8–14 cycles. PCRs were size selected using TBE gels for 175–350 bp and DNA eluted using gel diffusion buffer (500 mM ammonium acetate, pH 8.0, 0.1% SDS, 1 mM EDTA, 10 mM magnesium acetate) and purified using ChIP DNA Clean & Concentrator (Zymo Research). Samples were quantified by Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific) and 75 bp single-end sequenced on HiSeq 4000 (Illumina).
 
-## Crosslinking for ChIP-seq
+### Crosslinking for ChIP-seq
 
 For PU.1, C/EBPβ, and H3K27ac ChIP-seq, culture media was removed, and plates were washed once with PBS and then fixed for 10 min with 1% formaldehyde (Thermo Fisher Scientific) in PBS at room temperature. Reaction was then quenched by adding glycine (Thermo Fisher Scientific) to 0.125 M. After fixation, cells were washed once with cold PBS and then scraped into supernatant using a rubber policeman, pelleted for 5 min at 400× g at 4°C. Cells were transferred to Eppendorf DNA LoBind tubes and pelleted at 700× g for 5 min at 4°C, snap-frozen in liquid nitrogen, and stored at –80°C until ready for ChIP-seq protocol preparation.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 ChIP was performed in biological replicates as described previously (Hoeksema et al., 2021). Samples were sonicated using a probe sonicator in 500 µl lysis buffer (10 mM Tris/HCl pH 7.5, 100 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 0.1% deoxycholate, 0.5% sarkozyl, 1× protease inhibitor cocktail). After sonication, 10% Triton X-100 was added to 1% final concentration and lysates were spun at full speed for 10 min; 1% was taken as input DNA, and immunoprecipitation was carried out overnight with 20 µl Protein A Dynabeads (Invitrogen) and 2 µg specific antibodies for C/EBPβ (Santa Cruz, sc-150), PU.1 (Santa Cruz, sc-352X), and H3K27ac (Active Motif, 39135). Beads were washed three times each with wash buffer I (20 mM Tris/HCl, 150 mM NaCl, 0.1% SDS, 1% Triton X-100, 2 mM EDTA), wash buffer II (10 mM Tris/HCl, 250 mM LiCl, 1% IGEPAL CA-630, 0.7% Na-deoxycholate, 1 mM EDTA), TE 0.2% Triton X-100 and TE 50 mM NaCl and subsequently resuspended 25 µl 10 mM Tris/HCl pH 8.0% and 0.05% Tween-20. ChIP-seq libraries were prepared on the Dynabeads as described below. For locus-specific enrichment ChIP-seq, bead complex was resuspended in 50 µl 1% SDS-TE. Four µl ProtK, 4 µl RNase A, 3 µl 5 M NaCl were added to these and the input samples and incubated at 50°C for 1 hr, reverse crosslinked at 65°C overnight and then eluted from the beads.
 
-## ChIP-seq library preparation
+### ChIP-seq library preparation
 
 ChIP libraries were prepared while bound to Dynabeads using NEBNext Ultra II Library preparation kit (NEB) using half reactions. DNA was polished, polyA-tailed, and ligated after which dual UDI (IDT) or single (Bioo Scientific) barcodes were ligated to it. Libraries were eluted and crosslinks reversed by adding to the 46.5 µl NEB reaction 16 µl water, 4 µl 10% SDS, 4.5 µl 5 M NaCl, 3 µl 0.5 M EDTA, 4 µl 0.2 M EGTA, 1 µl RNAse (10 mg/ml), and 1 µl 20 mg/ml proteinase K, followed by incubation at 55°C for 1 hr and 75°C for 30 min in a thermal cycler. Dynabeads were removed from the library using a magnet and libraries were cleaned up by adding 2 µl SpeedBeads (Sigma-Aldrich) in 124 µl 20% PEG 8000/1.5 M NaCl, mixing well, then incubating at room temperature for 10 min. SpeedBeads were collected on a magnet and washed two times with 150 µl 80% ethanol for 30 s. Beads were collected and ethanol removed following each wash. After the second ethanol wash, beads were air dried and DNA eluted in 12.25 µl 10 mM Tris/HCl pH 8.0% and 0.05% Tween-20. DNA was amplified by PCR for 14 cycles in a 25 µl reaction volume using NEBNext Ultra II PCR master mix and 0.5 µM each Solexa 1GA and Solexa 1 GB primers. Libraries were size selected using TBE gels for 200–500 bp and DNA eluted using gel diffusion buffer (500 mM ammonium acetate, pH 8.0, 0.1% SDS, 1 mM EDTA, 10 mM magnesium acetate) and purified using ChIP DNA Clean & Concentrator (Zymo Research). Sample concentrations were quantified by Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific) and 75 bp single-end sequenced on HiSeq 4000.
 
-## Biotin-mediated locus-specific enrichment ChIP-seq library preparation
+### Biotin-mediated locus-specific enrichment ChIP-seq library preparation
 
 After performing the target-specific ChIPs, we performed an initial PCR for locus-specific amplicon enrichment using NEBNext 2× High Fidelity PCR MM (NEB) and 5’-biotinylated stub adapter primers specific to appropriate genomic regions to be interrogated (Supplementary file 1). Initial hotstart/denaturation at 98°C for 30 s was followed by 10 cycles of amplification (98°C for 15 s, 65–67°C for 15 s, 72°C for 30 s) and then a final elongation at 72°C for 5 min. After this, we performed a 0.7× AmpureXP clean-up and eluted in 20 µl 0.5× TT (5 mM Tris pH 8.0 + 0.025% Tween-20). Dynabeads MyOne Streptavidin T1 beads were then washed in 1× Wash Binding Buffer (WBB, 2× WBB: 10 mM Tris-HCl [pH 7.5], 1 mM EDTA, 2 M NaCl, 0.1% Tween) and resuspended beads at 20 µl per sample in 2× WBB. Twenty µl prepared Dynabeads MyOne Streptavidin T1 beads (in 2× WBB) were then added to clean up 20 µl 0.5× TT PCR fragments, mixed and incubated for 60 min at room temperature with mild shaking. After this, beads were collected on a magnet and washed twice with 150 µl 1× WBB and once with 180 µl TET (TE +0.05% Tween-20). Finally, beads were resuspended in 25 µl 0.5× TT and on bead PCR for addition of Illumina-specific adapters and 10 bp Unique Dual Indexes (UDIs) using NEBNext 2× High Fidelity PCR MM (NEB) and 25 PCR cycles was performed (Supplementary file 1). Libraries were size selected using TBE gels for 300–500 bp and DNA eluted using gel diffusion buffer and purified using ChIP DNA Clean & Concentrator (Zymo Research). Samples were quantified by Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific) and 150 bp paired-end sequenced on NextSeq 500 (Illumina).
 
-## Analysis of variable InDels from CRISPR experiments
+### Analysis of variable InDels from CRISPR experiments
 
 We mapped the reads to the target regions using the local alignment mode of Bowtie2 v2.3.5.1 (Langmead and Salzberg, 2012). To allow for InDels with tens of bases, we reduced the gap extend penalty and increased the gap open penalty so that the gaps could be long but not occur at multiple locations. Here are the adjusted parameters used in our mapping process: --local --rdg 10,1 --rfg 10,1. The mapped reads with gaps or InDels at unexpected locations rather than the Cas9 cut sites were removed. This step filtered out approximately 1% of the total reads (Supplementary file 1). The remaining reads were grouped based on the InDel size and whether the InDel overlaps with any of the PU.1 and C/EBPβ binding sites. Tag counts were used to quantify binding activity. InDel groups taking up less than 0.05% of the input sample reads were filtered out. TF binding associated with each InDel group was computed by the odds ratio between TF ChIP-seq tags and input DNA sample tags: (TF tags for an InDel group/rest of TF tags)/(input tags for the same InDel group/rest of input tags).
 
-## Cell lines
+### Cell lines
 
 These studies made use of two cell lines. The major cell line used was Cas9-expressing ER-HoxB8 cells. This cell line was generated in our laboratory from primary bone marrow progenitor cells and its identity and phenotype are confirmed by RNA-seq. Given the origin of these cells and continuous validation by RNA-seq, we do not routinely test them for mycoplasma. In addition, because of the nature of the experimental design for the use of these cells, in which we are analyzing ChIP tags within a single population of cells, the presence of mycoplasma infection would not alter the outcome unless it changed the expression of the TFs being ChIP'd. This is clearly not the case based on our RNA-seq and ChIP-seq results.
 

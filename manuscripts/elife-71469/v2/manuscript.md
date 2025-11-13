@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05dxps055 Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States
+1. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ In this article, we show that Sns is a ligand that controls Lar’s functions in
 
 ## Results
 
-## Identification of Sns as a Lar binding partner
+### Identification of Sns as a Lar binding partner
 
 Cell-surface protein (CSP) interactions mediated by ECDs are often of low affinity, having Kds in the micromolar range and fast dissociation rates. Our group developed the live-dissected embryo staining screen as a way to identify low-affinity binding partners for neural CSPs expressed in a normal cellular context. It takes maximum advantage of avidity effects and has revealed low-affinity interactions that were not detected in the global in vitro ‘interactome’ screen, which used an ELISA-like method (the Extracellular Interactome Assay (ECIA)) to assess interactions among 200 Drosophila CAMs (Bali et al., 2019; Bali and Zinn, 2019; Fox and Zinn, 2005; Lee et al., 2013; Ozkan et al., 2013). Multimeric ECD fusion proteins are incubated with live-dissected embryos, allowing complexes of fusion proteins with CSPs on muscles or neurons to coalesce (‘cap’) into dense patches. The embryos are then washed directly with paraformaldehyde, which crosslinks the patches and freezes complexes into place, and the complexes are visualized with fluorescent secondary antibody (Fox and Zinn, 2005; Lee et al., 2013).
 
@@ -52,13 +52,21 @@ We first used this method to identify Sdc as a Lar ligand using a deficiency (Df
 
 Lar-AP faintly stains central nervous system (CNS) axons in wild-type (WT) embryos. However, it brightly stained both the CNS axon ladder and the periphery in embryos from a cross between Tub-GAL4 and a line that has an insertion of an EP-like element ~200 bp 5′ to the transcription start of sns (Figure 1A and B). Quantification of Lar-AP staining intensity in the periphery showed more than a 10-fold increase in Lar-AP staining in Tub>Sns embryos vs. WT (Figure 1—figure supplement 1). This result shows that ectopic expression of Sns in neural, ectodermal, and muscle cells confers binding to the Lar ECD. However, it does not prove that Lar and Sns bind directly to each other since such results could also be obtained if Sns ectopic expression induced expression or stabilization of another protein that actually binds to Lar.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig1-v2.jpg)
+
+**Figure 1.:** All images show live-dissected late-stage 16 embryos. (A, B) Staining with a version of Lar-AP (HS2) that cannot bind to heparan sulfate proteoglycans (HSPGs), visualized with anti-AP antibody. (A) WT embryo; Lar-AP binds weakly to central nervous system (CNS) axons (see Fox and Zinn, 2005). (B) Tub>Sns embryo at the same exposure, showing bright ectopic staining by HS2-AP in the CNS and periphery. (C–F) Lar overexpression in Tub>Lar embryos, visualized with anti-Lar mAb. (C, D) CNS axon staining in WT (C) and Tub>Lar (D). Longitudinal axons are stained in WT; all axons are brightly stained in Tub>Lar. (E, F) Staining in the periphery in WT (E) and Tub>Lar (F). There is no visible staining in WT, while Tub>Lar embryos show widespread staining. (G) Quantitation of CNS staining with anti-Lar in WT and Tub>Lar. (C’–F’) Staining with Sns-AP5 visualized with anti-AP antibody. (C’, D’) CNS staining in WT (C’) and Tub>Lar (D’). Midline glia are weakly stained in WT (C’); note that this pattern does not resemble anti-Lar staining (C). Midline glia (arrow) and exit junctions (arrowheads) are brightly stained in Tub>Lar (D’); note the similarity between the exit junction patterns visualized with anti-Lar (D) and Sns-AP. (E’, F’) Staining in the periphery in WT (E’) and Tub>Lar (F’). Staining in the periphery is increased in intensity in Tub>Lar. (H) Quantitation of CNS staining with Sns-AP in WT and Tub>Lar. (I–K) CNS staining with PTPRF-AP5 in WT (I), Tub>NPHS1 (J), and Tub>Sns (K) embryos. Note that there is very little staining in WT, but bright staining in the entire CNS in Tub>NPHS1 and Tub>Sns. (L) Quantitation of CNS staining in WT, Tub>NPHS1, and Tub>Sns. (M, N) CNS staining with PTPRD-AP5 in WT (M) and Tub>NPHS1 (N). Note midline glial staining in WT; this staining is only slightly increased in intensity in Tub>NPHS1 (arrows). Staining intensity in the remainder of the CNS is increased by several fold, however. (O) Quantitation of CNS staining in WT and Tub>NPHS1. (P, Q) In vitro binding measured with the ECIA assay using either AP or HRP enzymatic activity for detection. (P) 60-mer Lar prey (Lar-mi3) binds to Sns-AP5 bait. Kirre-Fc and Kirre-mi3 preys bind to Sns-AP5 equally. (Q) Both PTPRD-AP5 and PTPRF-AP5 preys bind to Nephrin-Fc (NPHS1-Fc) bait. PTPRD-AP5 and PTPRF-AP5 also bind to Sns-Fc bait. There is no signal with Nephrin-Fc bait and S2 medium prey or Sns-AP5 prey and S2 medium bait. Scale bar, 20 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantification of muscle staining by Lar-AP in WT and Tub>Sns embryos. (B) ECIA assay to measure in vitro binding between Lar and IRM proteins, Hbs and Kirre, using HRP enzymatic activity for detection. Hbs-AP5 and Kirre-Fc bind strongly to each other. Lar-Fc does not bind to Hbs-AP5 or Kirre-AP5 but shows threefold higher binding to Sns-AP5 in this experiment. These results with Lar-Fc are variable; in the experiments shown in Figure 1, Lar-mi3 showed significant binding but Lar-Fc did not. ****p<0.0001; ***p< 0.001.
+
 To address this issue, we performed ‘reverse-binding’ experiments to determine whether Lar binds directly to Sns. To do this, we used Tub-GAL4 to drive pancellular expression of Lar in embryos using a UAS-Lar line (Figure 1C–F). We then stained WT and Tub>Lar embryos with a pentameric Sns-AP5 fusion protein containing the Sns ECD fused to a COMP pentamerization domain and AP (Ozkan et al., 2013). Sns-AP5 stained the CNS in WT embryos (Figure 1C’). Interestingly, midline glia (arrow) were more strongly stained than axons and cell bodies. This pattern does not resemble Lar antibody staining (Figure 1C), indicating that Sns has another binding partner in the embryonic CNS, perhaps Kirre or Rst. There is also weak Sns-AP5 staining in the periphery (Figure 1E’).
 
 Embryos with ectopic expression of Lar driven by Tub-GAL4 showed a three-fold increase in Sns-AP5 staining in the CNS compared to WT control embryos (Figure 1D’ and H). Sns-AP5 staining was increased at sites where motor axons exit the ventral nerve cord (VNC; arrowhead, Figure 1D’) and in midline glia. Staining was also increased in the periphery (Figure 1E’ and F’). Some of this staining colocalizes with ectopic Lar, such as at the VNC exit points. This reverse binding experiment provides evidence that Lar and Sns bind to each other. We do not know why CNS longitudinal tracts, which stain brightly with anti-Lar, do not exhibit strong staining with Sns-AP5. Perhaps there are access issues due to glial sheathing or there may be proteins expressed on glia and motor axons that facilitate Lar-Sns binding.
 
 To confirm direct binding between Lar and Sns, we conducted ECIA experiments with multimerized Lar-Fc and Sns-AP5 proteins made in human Expi293 cells. To obtain stronger binding to Sns in the ECIA assay, we increased avidity by making 60-mer Lar particles using the mi3 nanoparticle as a scaffold (Bruun et al., 2018; see Materials and methods). 60-mer Lar ‘prey’ exhibited a seven-fold increase in binding to Sns-AP5 ‘bait’ coupled to the surface of an ELISA plate, showing that the two proteins interact directly in vitro. The binding signal is about twofold weaker than that obtained for the strong binding partners Sns and Kirre, which bind to each other with a Kd of 2.5 µM (Ozkan et al., 2014). However, 60-mer Kirre prey and Kirre-Fc work equally well for detection of this strong interaction (Figure 1P; Ozkan et al., 2013; Ozkan et al., 2014). We also tested whether Hbs and Kirre, the other members of the IRM protein family, also bind to Lar. No binding was observed for either Hbs-AP5 or Kirre-AP5, while Kirre-Fc and Hbs-AP5 showed strong binding, as previously observed (Figure 1—figure supplement 1; Ozkan et al., 2014).
 
-## Mammalian orthologs of Lar and Sns bind to each other in embryos and in vitro
+### Mammalian orthologs of Lar and Sns bind to each other in embryos and in vitro
 
 To determine whether binding between Lar and Sns is evolutionarily conserved, we tested whether Nephrin, the mammalian Sns ortholog, binds to PTPRD, PTPRF, or PTPRS in live-dissected embryos. To do this, we made a transgenic line with a UAS-linked full-length human Nephrin cDNA (NPHS1) construct and expressed AP5 fusion proteins containing the ECDs of PTPRD, PTPRF, and PTPRS in Drosophila Schneider 2 (S2) cells.
 
@@ -68,27 +76,59 @@ PTPRD-AP5 produced a clear signal in WT, with strong staining in midline glia an
 
 We then tested PTPRF and PTPRD for binding to Sns and Nephrin in vitro. Fc dimers for both human proteins bound to fly Sns-AP5 (Figure 1Q). The signal was weaker than for 60-mer Lar prey, but stronger than for Lar-Fc (Figure 1P). PTPRF-AP5 also bound to Nephrin-Fc, and there was a smaller (but still significant) increase over background for Nephrin and PTPRD-AP5 (Figure 1Q). In summary, these data indicate that the Lar–Sns interaction is evolutionarily conserved for at least two of the three mammalian Lar orthologs.
 
-## Lar and Sns are co-expressed in larval motor neurons
+### Lar and Sns are co-expressed in larval motor neurons
 
 To characterize Lar and Sns expression, we created T2A-GAL4 lines derived from MiMIC insertions in coding introns of the two genes (Diao et al., 2015). In coding intron T2A-GAL4 lines, expression of GAL4 requires in-frame readthrough from the coding region and reports on the rate of initiation of translation from the correct ATG, so these GAL4s are translational, not just transcriptional, reporters. In the third instar larval VNC, Lar-T2A-GAL4>UAS-EGFP (Lar>GFP) expression was observed in motor neurons (large paired cells) and in a large number of interneurons (Figure 2A and B). Sns-T2A-GAL4>UAS-EGFP (Sns>GFP) expression was also seen in motor neurons (Figure 2C, Figure 2—figure supplement 1), as well as in a pattern of interneurons that appeared different from those expressing the Lar reporter (Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Confocal projections of 4–6 optical slices showing EGFP expression driven by either LarMI02154-T2A-GAL4 (Lar>GFP) or SnsMI03001-T2A-GAL4 (Sns>GFP) (green) co-stained with anti-HRP (blue). The bright paired midline cells include motor neurons (A, C, arrows). (E–H’) Confocal projections of larval neuromuscular junctions (NMJs) on muscles 7/6, 13, and 12 (E, F’) and zoomed-in on muscle 7/6 (G, H’), triple-stained with anti-GFP (green), anti-HRP (red), and anti-Dlg (blue). (E’, F’, G’, H’) show GFP signal only. Anti-HRP labels neuronal membranes, and anti-Dlg labels the subsynaptic reticulum at 1b boutons. Lar>GFP and Sns>GFP expression is seen in both 1b and 1s boutons (green), while only Sns>GFP is seen in type II boutons (F’, arrows). (I, J) Projection of optical slices through an entire larval hemisegment showing Lar>GFP (I) and Sns>GFP (J) expression in both 1b and 1s motor neurons. Individual muscles are numbered. Dorsal is to the right. Note that Lar>GFP is equally expressed in most axons and NMJs, while Sns>GFP is expressed at lower levels in axons and NMJs of motor neurons projecting to dorsal muscles. (K, L) Close-up of NMJs on muscles 3 and 4 showing both Lar>GFP (K) and Sns>GFP (L) expression in 1b and 1s NMJs on those muscles. Scale bar, 20 µm. See Figure 2—figure supplement 1 for further characterization of Lar and Sns expression in the larval ventral nerve cord (VNC) and central nervous system (CNS).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–A’’) Sns expression visualized by EGFP reporter expression driven by SnsMI03001-T2A-GAL4 (Sns>GFP; green), co-stained with Even-skipped antibody (Eve) in the larval VNC. Projection of four optical slices is shown. Sns is expressed in Eve-positive RP2/MNISN-1s neurons. (B, B’) Dendritic projections of Sns-expressing neurons seen by driving Drep2 (dendrite-specific marker) with Sns-GAL4 (green), co-stained with FasII antibody to label the mushroom body neuropil (blue). Dendritic projections of Sns-expressing neurons are seen enveloping the dorsal lobe of the mushroom body (B’, arrow). (C–D’) Sns is not expressed in glial cells. (C) Projection of confocal slices through the mushroom body showing no Sns co-expression in Repo-positive glial cells (green). Sns is visualized by driving mCD8-RFP reporter expression using Sns-GAL4 (red). (D, D’) Projection of confocal slices through the entire larval brain, showing no Sns expression in glial cells. Single slice is shown in D’. Scale bar, 20 µm.
+
 Examination of NMJs showed that Lar>GFP was expressed in both types of glutamatergic motor neurons (1b and 1s) (Figure 2K), but not in modulatory type II or type III motor neurons (Figure 2E and E’). Lar>GFP expression was stronger in 1s than in 1b motor neurons (Figure 2G and G’). Sns>GFP was also expressed in both 1b and 1s motor neurons with stronger expression in 1s neurons (Figure 2H, H’ and L). In the 1b neurons, Sns reporter expression levels were higher in those that target more ventral muscles, including muscles 7/6, 13, and 12 (Figure 2J). Sns>GFP was also observed in type II motor neurons (Figure 2F and F’). No Sns>GFP or Lar>GFP expression was seen in muscles.
 
-## Lar and Sns genetically interact to shape morphogenesis of NMJs
+### Lar and Sns genetically interact to shape morphogenesis of NMJs
 
 Previous studies have shown that NMJs require appropriate levels of Lar for proper development (Johnson et al., 2006; Kaufmann et al., 2002). Reducing Lar expression causes decreases in the number of synaptic boutons at the muscle 7/6 NMJ, as well as other NMJs. sns homozygotes die during embryogenesis (Bour et al., 2000). Thus, to examine genetic interactions between Lar and sns, we combined an sns null mutation with two different Lar null mutations to analyze NMJ phenotypes in transheterozygous (transhet) animals. snsxb3 is an early stop codon mutation, and snsxb3 mutant embryos lack Sns protein (Bour et al., 2000). We tested two different alleles of Lar with snsxb3: Lar13.2 and Lar451. Both have been described as null mutations (Clandinin et al., 2001; Krueger et al., 1996). Lar13.2 mutants have phenotypes at the muscle 7/6 NMJ and in the larval MB (Johnson et al., 2006; Kurusu and Zinn, 2008). Lar451 mutants were characterized for R7 photoreceptor defects (Clandinin et al., 2001). We analyzed muscle 7/6 NMJs in Lar13.2/snsxb3 and Lar451/snsxb3 transhets using a semi-automated macro in Fiji to quantify several different parameters at the 7/6 NMJ, including total NMJ area, total NMJ length, longest branch length, number of boutons, and number of branches (Nijhof et al., 2016). We performed separate analyses for the 1b and 1s NMJ arbor at each NMJ.
 
 Lar/+ and sns/+ heterozygote controls had no 7/6 NMJ phenotypes, but the two Lar/sns transhets had strong phenotypes, similar to Lar null animals (Lar13.2/Lar451) (Figure 3A–F). Both Lar13.2/snsxb3 and Lar451/snsxb3 transhet NMJs showed severe reduction in NMJ area, number of boutons, total NMJ length, longest branch length, and number of 1b branches (Figure 3G–K). There was no significant difference between the stronger Lar451/snsxb3 transhet and Lar13.2/Lar451 mutants for any of the NMJ parameters measured, indicating that Lar and Sns probably function in the same genetic pathway. The 1s NMJ on muscle 7/6 is similarly affected (Figure 3—figure supplement 1). Other NMJs had similar phenotypes. There was no difference in the size or shape of muscles in the transhets or the Lar mutants. This suggests that the Lar–Sns interaction is not required for the role of Sns in myoblast fusion during embryonic development. We confirmed the NMJ abnormalities seen in Lar/ snsxb3 transhets by analyzing a sns deficiency (Df) allele, which lacks the entire Sns gene. We observed similar NMJ abnormalities in Lar13.2/snsDf animals to those seen in Lar13.2/Snsxb3and Lar451/Snsxb3 transhets (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig3-v2.jpg)
+
+**Figure 3.:** Neuromuscular junctions (NMJs) were analyzed using a published Fiji macro (Nijhof et al., 2016) that uses HRP to outline boutons and measures NMJ area, perimeter, length, longest branch length, number of branches, number of boutons, and Bruchpilot (Brp) labeled punctae. (A–F) Representative images of the NMJ on muscles 7/6 from WT and heterozygote controls (A–C), Lar/sns transheterozygotes (D, E), and Lar mutants (F). NMJs are labeled with anti-HRP (red). NMJ outlines showing boutons and branch architecture as outputs from the macro are under each NMJ image. (G–K) Quantification of 1b NMJ parameters, showing reduced NMJ size and arborization in Lar/sns transhets and Lar mutants (red) compared to het controls (blue). Data is average from segments A2–A4 from minimum 30 NMJs per genotype. (L, M) Quantification of Brp punctae showing reduced number of active zones in Lar/sns transhets and Lar mutants. (N–P) Representative images of NMJs on muscles 7/6 from animals with RNAi-mediated neuronal knockdown of Lar and Sns. Neuronal Lar or sns RNAi results in the same NMJ abnormalities seen in genetic Lar/sns transhets and Lar mutants. (Q–S) Quantification of NMJ parameters showing reduced 1b NMJ area, number of boutons, and NMJ length upon either Lar or Sns knockdown. A2–A4 segments were analyzed from at least 30 NMJs on muscles 7/6. All datasets were analyzed using one-way ANOVA followed by Tukey’s post-hoc correction. ****p<0.0001; ***p<0.001. Scale bar, 20 µm. See Figure 3—figure supplement 1 for analysis of 1s NMJs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** NMJs were analyzed using a published Fiji macro (Nijhof et al., 2016) that uses HRP to outline boutons. NMJ area, length, and number of boutons were quantified specifically for 1s boutons. (A–F) Representative images of the NMJ on muscles 7/6 from control (A–C) and transhet (D–F) animals. NMJs are labeled with HRP (red). NMJ outlines showing 1s boutons and branch architecture as outputs from the Macro are under each NMJ image. (G–I) Quantification of 1s NMJ parameters showing reduced NMJ size and boutons in Lar/Sns transhets and Lar mutants (red) compared to het controls (blue). Data is average from segments A2–A4 from minimum 30 NMJs per genotype. All datasets were analyzed using one-way ANOVA followed by Tukey’s post-hoc correction. ****p<0.0001. Scale bar, 20 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** 1b boutons on the 7/6 NMJ were analyzed as described. (A–E) Quantification of 1b NMJ parameters: (A) NMJ area, (B) number of 1b boutons, (C) total NMJ length, (D) longest 1b branch length, and (E) number of 1b branches. Lar13.2/snsDf transhets show similarly reduced NMJ parameters as observed with other Lar/sns transhets. Addition of sns RNAi to Lar null mutants does not increase the severity of the Lar mutant phenotype. Neuronal knockdown of Kirre does not cause 1b NMJ abnormalities. Data is average from segments A2–A4 from minimum 30 NMJs per genotype. All datasets were analyzed using one-way ANOVA followed by Tukey’s post-hoc correction. ****p<0.0001, **p< 0.01.
+
 We next asked whether the number of synapses was altered in Lar/sns transhets and Lar mutants at the 7/6 1b NMJ. We used antibodies against the active-zone protein Bruchpilot (Brp) to label active zones in boutons and performed quantitative analyses of Brp-positive punctae using the NMJ Fiji macro. Lar451/snsxb3 transhets and Lar13.2/Lar451 mutants had 64 and 71% fewer Brp punctae per 7/6 NMJ than WT (Figure 3L and M). This indicates that there is no compensatory increase in the number of synaptic active zones in response to reduced NMJ size and number of boutons.
 
-## Lar and Sns act in cis at the NMJ
+### Lar and Sns act in cis at the NMJ
 
 While sns is expressed in body wall muscles during the period of muscle fusion, its RNA levels decrease in late embryos (Bour et al., 2000). There was no expression of Lar or Sns reporters in muscles in third instar larvae, indicating that Lar and Sns are likely to function in motor neurons. To confirm this, we performed neuron-specific RNAi knockdown for both Lar and Sns and measured the same NMJ parameters as in the transhets and mutant analyses. We used a pan-neuronal driver, elavC155-GAL4 (C155-GAL4), to drive UAS-RNAi lines for either Lar or sns. We tested two different RNAi lines for both Lar and sns. Neuronal knockdown of Lar or Sns caused NMJ abnormalities similar to those seen in Lar/sns transhets and Lar mutants (Figure 3N–S). The RP3 and MNISNb/d-1s axons, which form the 1b and 1s arbors of the muscle 7/6 NMJ, do not contact other motor or sensory axons after leaving the ISNb bundle, and the 1b and 1s portions of the 7/6 NMJ are separate from each other. Thus, it is likely that the 7/6 NMJ phenotypes of Lar/sns transhets are due to a reduction in interactions between Lar and Sns in the same neuron (in cis). To further confirm that Lar and Sns act in the same genetic pathway, we performed genetic experiments by reducing Sns levels in a Lar mutant background. If Lar and Sns act in the same genetic pathway, reducing Sns levels further in a Lar mutant background should not increase the severity of the Lar phenotype. Lar mutants (Lar13.2/Lar2127) showed reduced 1b NMJ area, number of boutons, NMJ length, longest branch length, and number of branches, as observed with other Lar mutants (Figure 3—figure supplement 2). Reducing Sns levels with neuronal sns RNAi in this Lar mutant background did not increase the severity of the 1b NMJ phenotypes (Figure 3—figure supplement 2), further confirming that Lar and Sns interact in the same genetic pathway. Moreover, neuronal kirre RNAi did not have any effect on 1b NMJs, indicating that the Sns-Kirre interaction, which plays a role in embryonic myoblast fusion and nephrocyte development, may not be involved in NMJ development (Figure 3—figure supplement 2).
 
-## Lar and Sns genetically interact to control formation of the larval MB
+### Lar and Sns genetically interact to control formation of the larval MB
 
 Next, we analyzed Lar and Sns expression in the larval brain, focusing on the MB, as Lar has been shown to be required for proper development of the larval MB (Kurusu and Zinn, 2008). Lar was found to be expressed in Kenyon cells (KCs), the principal cells of the MB, using antibody staining. Here, we confirmed that Lar is expressed in larval KCs using Lar>GFP (Figure 4A–B’). A confocal z-projection through the entire larval MB is shown in Figure 4B and B’. The MB lobes are visualized using an antibody against fasciclin II (FasII), which specifically labels the MB neuropil (Figure 4B). A single optical slice shows that Lar>GFP labels both the dorsal (d) and the medial (m) lobes of the larval MB (Figure 4C’).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig4-v2.jpg)
+
+**Figure 4.:** (A–F’) Lar>GFP and Sns>GFP expression in the larval brain. Brains were triple-stained for Lar>GFP (green), FasII (red), and anti-HRP (blue). Anti-FasII labels the MB neuropil; anti-HRP labels neuronal membranes. (A) Lar>GFP expression in Kenyon cells (KCs) (green, arrows). (B, B’) Projection of confocal slices through the entire larval MB showing Lar expression in the MB neuropil. (C, C’) Single optical slice showing Lar expression in the medial (m) and dorsal (d) lobes of the MB. (D) There is no Sns>GFP expression in KCs. (E, E’) Projection of confocal slices through the entire MB showing no overlap between Sns>GFP and the MB neuropil labeled by FasII. (F, F’) Single optical slice through the MB showing no Sns>GFP expression in the MB neuropil. (G–L) Third-instar larval MBs visualized with FasII staining. 3D reconstructions of confocal stacks using Imaris software are shown. (G) and (H) have normal MBs. (I) has missing dorsal lobes and medial lobe fusion (arrow). (J) has a medial lobe fusion phenotype (arrow). (K) has missing dorsal lobes. (L) has missing dorsal lobes and medial lobe fusion (arrow). (M–N’) Quantification of MB phenotypes in heterozygote controls (blue), Lar mutants (red), and Lar/sns transhets (red). In (M) and (N), the percentages of normal MBs are shown; in (M’) and (N’), the percentages of MBs with the phenotype are shown. (M, M’) Medial lobe fusion phenotype, (N, N’) Dorsal lobe branching defect. Data were analyzed using Fisher’s exact test, and each genotype was compared to every other genotype. ****p<0.0001; ***p<0.001; *p<0.05. Scale bar, 20 µm. See Figure 4—figure supplement 1 for single-slice analysis in Lar/sns transhets and Lar and Sns RNAi-mediated MB phenotypes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–F’) Single optical slices through the medial lobes of control (A–C’) and genetic transhet (D–F’) animals showing normal unfused medial lobes in controls (close-up of medial lobes in A’–C’) and fused medial lobes in transhets (D’–F’). Anti-FasII (red) is used to label the mushroom body neuropil. (G–I) 3D rendering of confocal stacks of FasII-stained larval brains from RNAi knockdown experiments. (J–K’) Quantification of medial lobe fusion and dorsal lobe branching defects upon RNAi-mediated knockdown of Lar and Sns. GAL4 only control in blue and Lar or sns RNAi genotypes in red. Data were analyzed using Fisher’s exact test, and each genotype was compared to every other genotype. ****p<0.0001; *p<0.05. Scale bar, 20 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–F) Single optical slices through the medial lobes of larval MBs stained with FasII antibody to visualize the MB neuropil. Asterisks denote normal, unfused medial lobes. Arrowheads show fused medial lobes with medial lobe axons crossing the midline. (G, H) Quantification of medial lobe fusion phenotype in Lar13.2/snsDf transhets, neuronal Sns and Kirre knockdown, and cis RNAi for Lar and Sns in MB neurons (OK107-GAL4). Data were analyzed using Fisher’s exact test, and each genotype was compared to every other genotype. *p<0.05.
 
 Sns>GFP was not detected in KCs (Figure 4D), but was seen in many other neurons in the larval central brain. No Sns reporter expression could be seen in either the dorsal or medial lobes of the MB (Figure 4E and E’). A single optical slice of the MB lobes shows no Sns>GFP expression in the MB neuropil (Figure 4F and F’). In order to determine if Sns is expressed in neurons postsynaptic to MB axons, we used a dendrite-specific marker (UAS-Drep2) (Andlauer et al., 2014) to label Sns-expressing neurons. We observed Drep2-expressing neurons enveloping the dorsal lobes of the MB (Figure 2—figure supplement 1), indicating that Sns-expressing neurons are postsynaptic to Lar-expressing KCs. We also performed immunostaining using Sns>GFP and anti-Repo to label glial cells, but did not see any co-localization between GFP and Repo (Figure 2—figure supplement 1).
 
@@ -100,31 +140,63 @@ We next performed pan-neuronal RNAi knockdown for Lar and Sns using the two RNAi
 
 These data show that Lar interacts with Sns to regulate the formation of the larval MB. The Lar-Sns interaction in this context is likely to be in trans as we do not observe any Sns>GFP expression in larval KCs or in the MB lobes. Thus, Sns apparently functions as a Lar ligand in this system. Dendrites of Sns-expressing neurons encircle the dorsal lobes of the MB, indicating that Sns is in neurons (MBONs) that are postsynaptic to Lar-expressing KC axons (Figure 2—figure supplement 1). To confirm that Lar and Sns act in trans in the larval MB, we performed Lar and Sns RNAi specifically in MB neurons using a MB-specific GAL4 driver, OK107-GAL4, which expresses in all larval and adult MB neurons (Aso et al., 2009). Lar RNAi knockdown in all MB neurons resulted in medial lobe fusion in the larval MB, confirming that Lar acts in MB neurons (Figure 4—figure supplement 2). MB-specific Sns RNAi knockdown, however, did not cause any abnormalities in the larval MB. Combining a Lar heterozygote (Lar13.2/+) with MB-specific sns RNAi also did not cause any MB phenotypes (Figure 4—figure supplement 2). Combined with the Lar and Sns expression data, these data show that Lar and Sns act in trans in the larval MB. Neuronal kirre RNAi did not have any effect on the larval MB (Figure 4—figure supplement 2).
 
-## Expression patterns of Lar and Sns in the pupal and adult MB
+### Expression patterns of Lar and Sns in the pupal and adult MB
 
 To further clarify the relationships between the Lar and Sns expression patterns, we examined Lar>GFP and Sns>GFP in the pupal and adult MB. Adult KCs are classified into three types, based on the lobes they innervate. γ neurons are born before the third-instar larval stage and form the adult γ lobe, which projects medially. α′/β′ neurons are born during the late third-instar larval stage and form the α′ and β′ lobes, which project dorsally and medially, respectively. α/β neurons are born during early pupal stages and form the α/β lobes, which project dorsally and medially, parallel to the α′ and β′ lobes. α/β lobes stain with FasII antibody staining, while γ and α′/β′ lobes are visualized using Trio antibody staining.
 
 We performed immunostaining for either FasII or Trio combined with anti-GFP to label Lar>GFP and Sns>GFP in pupal and adult brains. At 24 hr after puparium formation (APF), Lar>GFP expression was detectable on growth cones of α/β KC axons near the midline in the β lobes (Figure 5A–B’, arrows). At 40 hr APF, higher levels of Lar>GFP expression were seen in both α/β lobes as well as α′/β′ lobes. A single optical slice shows clear Lar>GFP expression in α/β and α′/β′ lobes (Figure 5F and F’). Thus, Lar expression is high during the time period of active MB axonal outgrowth and synaptic targeting. Lar expression peaks at 72 hr APF, with strong expression in all lobes (Figure 5—figure supplement 1A–B’). Lar is also expressed in α/β lobes, but not in α′/β′ lobes, in the adult MB (Figure 5—figure supplement 1E–H’).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig5-v2.jpg)
+
+**Figure 5.:** Confocal projections and single optical slices showing Lar and Sns expression in the 24 hr after puparium formation (APF) (A–D’) and 40 hr APF (E–H’) pupal MB, co-stained with FasII antibody (magenta). Projections of the entire MB are shown in (A, A’, C, C’, E, E’, G, and G’). The rest are single optical slices. Lar expression is seen in the growth cones of developing β lobe axons (B, B’, arrows). No Sns expression is seen in the 24 hr APF MB (C–D’). Sns expression is seen in neuronal projections at the midline (D’, arrow). (E–F’) Lar expression is seen in α, α′, β, and β′ lobes in the 40 hr APF MB (arrows in E’; F, F’, single slice showing all four lobes with Lar expression). (G–H’) No Sns expression is seen in the 40 hr APF MB (asterisks in H’ denote unlabeled α, α′, β, and β′ lobes). Scale bars, 20 µm. See Figure 5—figure supplement 1 for Lar and Sns expression in 72 hr APF and adult brains and Figure 5—figure supplement 2 for Lar and Sns expression in the pupal and adult antennal lobes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Confocal projections and single optical slices showing Lar and Sns expression in the 72 hr APF (A–D’) and adult (E–L’) MB, co-stained with FasII antibody (magenta). Projections of the entire MB are shown in A, A’, C, C’, E, E’, G, G’, I, I’, K, and K’. The rest are single optical slices. (A–B’) Strong Lar expression is seen in all lobes of the 72 hr APF MB. (C–D’) Weak Sns expression is seen in α and β lobes of the 72 hr APF MB (D–D’, arrows). Expression is seen only in older axons in the α and β lobes with hollow cores in the center of the lobes (D–D’, asterisks). Lar continues to be strongly expressed in α and β lobes of the adult MB (E–H’). (F–F’) Single optical slice from the adult MB showing strong Lar>GFP expression in the α and β lobes, co-localizing with FasII staining. (G, G’) Projection of confocal slices showing the entire adult MB, double-stained for GFP (green) and Trio (magenta). Trio labels the γ, α′, and β′ lobes of the adult MB. (H, H’) Single optical slice showing no detectable Lar>GFP expression in the Trio-expressing α′ and β′ lobes (H’, arrow). Weak expression is seen in the γ lobe (G’, asterisk). (J, J’) Single optical slice showing faint Sns expression in the α and β lobes (J’, arrows). (L, L’) Single optical slice showing no Sns expression in the γ, α′, and β′ lobes (L’, arrows).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Single optical slices showing either Lar>GFP or Sns>GFP (green) expression in the ALs, co-stained with anti-HRP (blue) to label the AL neuropil. (A, A’) Weak Lar>GFP expression seen in several glomeruli of the adult AL (A’, arrows). (B, B’) Strong Sns>GFP expression seen in three glomeruli of the adult AL (B’, asterisks). (C, C’) Strong Lar>GFP expression seen in several glomeruli in the 72 hr after puparium formation (APF) AL (C’, arrows). (D, D’) Sns>GFP is expressed at high levels in some glomeruli in the 72 hr APF AL (D’, asterisks). (E, E’) Weak Lar>GFP expression is seen in several glomeruli in the 40 hr APF AL (E’, arrows). (F, F’) Sns>GFP is strongly expressed in several glomeruli in the 40 hr APF AL (F’, arrows). Scale bar, 20 µm.
+
 Sns>GFP is expressed at high levels in several neuronal populations in the central brain at all three pupal stages. However, we did not observe any detectable Sns>GFP expression in either the α/β lobes or the α′/β′ lobes in the 24 hr APF and 40 hr APF MB (Figure 5C–D’ and G–H’). There is weak Sns>GFP expression in α/β lobes at 72 hr APF (Figure 5—figure supplement 1C–D’), but lobes with a mature morphology have already formed by this time, so this is not relevant to the lobe phenotypes we observe. Sns>GFP is also weakly expressed in adult α/β lobes (Figure 5—figure supplement 1I–J’,K–L’).
 
 The antennal lobes contain projection neurons (PNs) that synapse onto KCs. We observed Sns>GFP and Lar>GFP labeling of specific glomeruli at 40 hr APF and 72 hr APF (Figure 5—figure supplement 2). This likely represents PN expression since it has been demonstrated that Lar and Sns are enriched in PNs (Li et al., 2020).
 
-## Lar and Sns genetically interact to regulate morphogenesis of α/β and α′/β′ lobes of the adult MB
+### Lar and Sns genetically interact to regulate morphogenesis of α/β and α′/β′ lobes of the adult MB
 
 Having shown that Lar and Sns genetically interact to regulate the development of larval MB lobes, we then examined the adult MB to determine whether these phenotypes persist and define their specificity for the different lobes. We used FasII immunostaining to visualize the α and β lobes and Trio to visualize the γ, α′, and β′ lobes.
 
 Heterozygote control (Lar13.2/+, Lar451/+, and snsxb3/+) animals all have normal α and β lobes (Figure 6A–C and G–H’). Note that the β lobes in these controls end well before the midline (asterisks in Figure 6A–C). Lar13.2/Snsxb3, Lar451/Snsxb3, and Lar13.2/Lar451 animals showed 75, 79, and 93% missing α lobes, respectively. Lar/sns transhets and Lar mutants also displayed midline crossing of β lobe axons, with most β lobe axons crossing the midline, creating a fused β lobe, instead of two separate lobes (Figure 6D–H’). The thickness of these fused β lobes was significantly greater than the normal unfused β lobes seen in control animals.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig6-v2.jpg)
+
+**Figure 6.:** (A–F) 3D reconstructions of confocal stacks from anti-FasII-stained adult brains using Imaris software. (A–C) Heterozygote controls showing normal α and β lobes of the adult MB. Asterisks show the ends of normal β lobes, which stop short of the midline and remain separated. (D–F) Lar/sns transheterozygotes and Lar mutants, showing abnormal MB architecture, with missing α lobes and β lobes fused across the midline. (G, G’) Quantification of β lobe midline fusion phenotype. Heterozygote controls (blue) show completely normal unfused β lobes. Lar/sns transheterozygotes and Lar mutants (red) have fused β lobes. (H, H’) Quantification of α lobe branching defect. Heterozygote controls (blue) have intact α lobes, while Lar/sns transhets and Lar mutants (red) have missing α lobes. In (G) and (H), the percentages of normal MBs are shown; in (G’) and (H’), the percentages of MBs with the phenotype are shown. (I–N) 3D reconstructions of confocal stacks from adult brains stained with FasII and Trio antibody to visualize the entire MB with all lobes. (I–K) Heterozygote controls show normal MB lobes. (L–N) Lar/sns transheterozygotes and Lar mutants show abnormal MB architecture, with fused β and β′ lobes and missing α and α′ lobes. (O, O’) Quantification of β′ lobe midline fusion phenotype showing normal β′ lobes in heterozygote controls (blue) and almost completely fused β′ lobes in Lar/sns transheterozygotes and Lar mutants (red). (P, P’) Quantification of α′ lobe branching defect. Heterozygote controls (blue) have completely normal α′ lobes while Lar/sns transhets and Lar mutants (red) are missing most α′ lobes. In (O) and (P), the percentages of normal MBs are shown; in (O’) and (P’), the percentages of MBs with the phenotype are shown. Data were analyzed using Fisher’s exact test, and each genotype was compared to every other genotype. ****p<0.0001; **p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Single optical slices through β′ lobes of the adult MB stained with Trio antibody to label α′/β′ lobes. Asterisks denote normal β′ lobes. Arrowheads show β′ lobe axons crossing the midline. (E, F) Quantification of β′ lobe midline fusion phenotype upon pan-neuronal Sns and Kirre RNAi knockdown and cis Lar and Sns knockdown in all MB neurons only (OK107-GAL4). Data were analyzed using Fisher’s exact test, and each genotype was compared to every other genotype. ***p<0.001; **p<0.01.
+
 We then performed combined FasII and Trio immunostaining to visualize all the lobes of the MB. Most Lar/sns transhet and Lar null animals were missing one or more α′ lobes (Figure 6L–N, P and P’). β′ lobes displayed midline crossing, resulting in a single fused β′ lobe in most or all Lar/sns transhets and Lar null animals (Figure 6L–N, O and O’). Thus, the Lar, sns, and Lar/sns phenotypes were even stronger in β′ lobes than in β lobes. Some α′/β′ neurons have extended axons in third-instar larvae, and α/β axons follow the paths laid down by α′/β′ axons. Thus, the α/β and α′/β′ phenotypes observed in adults might be a consequence of guidance defects occurring in larvae. Alternatively, Lar-Sns interactions in pupae could also be instructive in guiding axons; this latter possibility is consistent with the fact that transhet phenotypes are somewhat more penetrant in adults than in larvae. In either case, the relevant Lar-Sns interaction must be in trans since there is no Sns>GFP expression in early or mid-pupal KCs, Interestingly, γ lobes in all animals were normal and showed no phenotype in either Lar/sns transhets or Lar nulls (Figure 6I–N). γ KC axons re-extend during the pupal phase, and they apparently do not require Lar or Sns for midline stopping.
 
 To confirm that the Lar-Sns interaction is in trans in the adult MB, similar to the larval MB, we performed MB neuron-specific RNAi for Lar and Sns. MB-specific Lar RNAi resulted in β′ lobe fusion in 75% animals (Figure 6—figure supplement 1). sns RNAi in MB neurons did not cause any MB phenotypes, either alone or in combination with a Lar heterozygote (Lar13.2/+) (Figure 6—figure supplement 1), suggesting that Lar and Sns act in trans in the adult MB as well. Pan-neuronal sns RNAi caused β′ lobe fusion in ~50% animals, while kirre RNAi had no effect (Figure 6—figure supplement 1).
 
-## Lar and Sns expression in the pupal and adult OL
+### Lar and Sns expression in the pupal and adult OL
 
 Lar is required in the R7 photoreceptor neuron for innervation of its target medulla layer, M6 (Clandinin et al., 2001; Hakeda-Suzuki et al., 2017; Hofmeyer and Treisman, 2009; Maurel-Zaffran et al., 2001). To analyze whether Sns is involved in this Lar function as well, we characterized expression of Lar>GFP and Sns>GFP reporters in the OL. Interestingly, although Lar has been extensively studied in the OL, there has been no characterization of Lar expression based on a GAL4 reporter. Lar antibody staining is not informative about cell-specific expression patterns because the antibody uniformly labels the neuropil and does not stain cell bodies (Maurel-Zaffran et al., 2001).
 
 We observed strong Lar>GFP expression at both 40 and 72 hr APF in L1 lamina neuron cell bodies (Figure 7C–C’ and G–G’). Lar>GFP was also expressed at high levels in M1 and M5 layers of the medulla where L1 neurons arborize (Figure 7D–D’ and H–H’). It may also be present in M6, where R7 terminals are located (Figure 7D”), but this layer is mostly obscured by the strong staining in M5. This is consistent with results of sequencing of pupal lamina neuron mRNA, which showed that Lar is expressed at very high levels in pupal L1 and at low levels in R7 (Tan et al., 2015). We confirmed Lar expression in L1 neurons using a Lar MiMIC insertion combined with svp-GAL4>RFP, which specifically labels L1 neurons (Figure 7—figure supplement 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig7-v2.jpg)
+
+**Figure 7.:** Single optical slices showing Lar and Sns (green) expression in 24 hr after puparium formation (APF), 40 hr APF, and 72 hr APF OL, co-stained with anti-Chaoptin (24B10 mAb, red). (A, A’) Weak Lar>GFP expression is seen in the medulla neuropil at 24 hr APF. (B, B’) At this timepoint, Sns>GFP is expressed at high levels in neuronal cell bodies in the medullary cortex (B’, arrow) and in specific layers in the medulla and lobula. (C, C’) Strong Lar>GFP expression is seen in L1 lamina neuron cell bodies (C’, arrow), which arborize in layers M1 and M5 of the medulla in the 40 hr APF OL. (D–D’’) Close-up of the distal medulla showing L1 lamina neuron arbors in M1 and M5 layers of the medulla (D’, asterisks). Faint Lar expression is seen in the M6 layer of the medulla (D’’, arrowhead). (E, E’) Sns>GFP expression increases at 40 hr APF, with many more neurons expressing Sns in the medullary cortex. Sns>GFP expression can be seen in several layers in the distal as well as the proximal medulla. (F–F’’) Close-up of the distal medulla showing Sns>GFP expression in layers M1 through M5 of the medulla. Sns is not expressed in R7 photoreceptors. (G–H’’) Strong Lar>GFP expression seen in L1 cell bodies (G’, arrow) and layers M1 and M5 of the medulla (H’, asterisks). Strong Lar expression is seen in close proximity to R7 axons and terminals (H, H’, arrows; H’’, arrowhead). (I–J’’) Sns>GFP is expressed at very high levels in the 72 hr APF OL. Specific Sns expression is seen in M1, M5, and M10 layers of the medulla and a few layers in the lobula (I, I’). Sns expression is also seen in the lamina. Note the dots at the top of the lamina (arrows in E’ and I’), which match the morphologies of C2 endings. C2 arborizes in layers M1, M5, and M10 of the medulla. (J–J’’) Close-up of the distal medulla showing Sns expression in M1 and M5 layers. Scale bar, 20 µm. See Figure 7—figure supplement 1 for Lar and Sns expression in the adult OL and Sns expression in a C2-like arborization pattern. See Figure 7—figure supplement 2 for further characterization of Lar and Sns OL expression.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Confocal projections and single optical slices showing Lar>GFP and Sns>GFP expression in the adult OL. Brains were double-stained for GFP (green) and either anti-HRP (blue) or Chaoptin (24B10; red), which labels photoreceptor axons. (A, A’) Single optical slice showing Lar expression (green) in the adult fly OL. (B, B’) Single optical slice showing Lar>GFP expression in L1 Lamina neurons (B’, arrowhead) and in layers M1 and M5 (asterisks in B’) of the adult medulla. (C–D’) Single optical slices showing Sns>GFP expression (green) in the adult OL. Strong Sns>GFP expression is seen in layers M1 and M5 of the adult medulla (D’, asterisks). Sns expression is also seen in the same dot-like pattern at the top of the lamina neuropil as seen in the pupal OL (D’, arrow). Sns>GFP does not appear to colocalize with 24B10, suggesting that it is not in R7 or R8 photoreceptors. (E–E’’) Single optical slice showing Sns expression in the 72 hr after puparium formation (APF) OL. Entire OL is shown in (E). (E’) shows close-up of the lamina. Note the dot-like endings of Sns-expressing neurons in the lamina neuropil. These endings most closely resemble those of C2 neurons (Tuthill et al., 2013). (E’’) Sns reporter expression seen in M1, M5, and M10 layers of the medulla (asterisks), resembling C2 arborization pattern in the medulla (Tuthill et al., 2013). (F–F’’) Single optical slice showing the projection pattern of C2 neurons in the adult OL. A split-GAL4 driver (Tuthill et al., 2013) was crossed to UAS-GFP reporter to visualize the arborization pattern. The dot-like endings at the top of the lamina neuropil (F’, arrow) are similar to the dot-like endings seen with Sns in (E’). C2 neurons arborize in M1, M5, and M10 layers of the medulla (F’’, asterisks), similar to Sns (E’’). Scale bar, 20 µm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A, A’) Single optical slice showing dendritic projections of Sns-expressing neurons visualized by Sns-GAL4>Drep2 (dendrite-specific marker, green), co-stained with 24B10 (red) and anti-HRP (blue). Specific dendritic projections can be seen in M1 and M5 layers of the medulla (A’, arrows) and at the top of the lamina neuropil (A, arrow). C2 is known to receive synapses in M1, M5, and the lamina. A single layer is seen in the lobula. (B, B’) Lar expression is seen in a top-down view of the 24 hr APF retina, co-stained with 24B10, (red). R7 and R8 photoreceptor cell bodies lie in the center of each ommatidium. Lar expression is seen in R7 and/or R8 cell bodies in the center of the ommatidia as well as in at least one outer photoreceptor (R1–R6). Single optical slice focused on the central R7/R8 photoreceptors is shown. (C–D’) LarMIMIC expression was visualized by GFP immunostaining. We used an L1 Lamina neuron-specific driver (svp-GAL4) and UAS-mCD8-RFP reporter to visualize L1 neurons in the pupal OL. LarMiMIC co-localized with RFP-expressing L1 lamina neurons in the 24 hr APF and 72 hr APF pupal lamina (C’–D’, arrows). Scale bar, 20 µm.
 
 Lar>GFP is expressed in photoreceptor cell bodies in the 24 hr APF retina (Figure 7—figure supplement 2B and B’). Stronger expression was seen in R7 and/or R8 photoreceptors, which lie in the center of each ommatidium. Lar>GFP was also strongly expressed in the adult OL, with similar expression as seen in the pupal OL (Figure 7—figure supplement 1A–B’). There was no Lar>GFP expression in adult photoreceptors.
 
@@ -132,9 +204,17 @@ Many neurons expressed Sns>GFP in the 40 and 72 hr APF medullary cortex (Figure 
 
 We used Drep2 to label dendrites of Sns-T2A-GAL4-expressing neurons in the adult OL and found that the Sns expression seen in lamina and the M1 and M5 layers of the medulla at least partly represents postsynaptic elements (Figure 7—figure supplement 2A and A’). C2 neurons are bidirectionally connected to L1 neurons in M1 and M5 (Takemura et al., 2013; Takemura et al., 2015). Thus, Lar and Sns might interact in trans to regulate development of the L1-C2 circuit. Finally, we also observed strong Sns>GFP expression in the proximal layers of the medulla, as well as in the two layers of the lobula (Figure 7—figure supplement 1C–E’’).
 
-## Lar and Sns interact to regulate R7 photoreceptor axon targeting
+### Lar and Sns interact to regulate R7 photoreceptor axon targeting
 
 In Lar mutants, R7 axons initially project to the correct M6 layer, but later retract to the M3 layer during mid-pupal stages (Clandinin et al., 2001; Maurel-Zaffran et al., 2001). We analyzed R7 photoreceptor axon targeting in Lar/sns transhets and Lar mutants using Chaoptin (Chp) immunostaining, which labels all photoreceptors. In the adult medulla, R7 axon endings can be clearly seen in the M6 layer by Chp (24B10) staining. In both Lar/sns transhets (Lar13.2/snsxb3 and Lar451/snsxb3), R7 axons failed to terminate in the appropriate M6 layer, instead retracting to the M3 layer (Figure 8D and E). In Lar13.2/snsxb3 transhets, 71% of R7 axons were retracted, and in Lar451/snsxb3 transhets, 63% of R7 axons were retracted (Figure 8G). In Lar13.2/Lar451 mutants, 88% of R7 axons retracted to M3 (Figure 8F and G). R7 axons that did innervate the M6 layer had abnormal terminal morphologies. Normal R7 terminals have a rounded bouton-like appearance (Figure 8H, arrow). In Lar/sns transhets and Lar mutants, R7 axon terminals have a spear-like appearance with thin axon terminals (Figure 8I and J, arrows).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig8-v2.jpg)
+
+**Figure 8.:** (A–F) Single optical slices of adult optic lobes (OLs) showing R7 and R8 photoreceptors labeled for Chaoptin (24B10, red). R7 photoreceptor axons end in the M6 layer of the medulla (outlined in white), while R8 axons end in M3 layer (arrowheads). (A–C) Heterozygote controls showing normal R7 targeting in the M6 layer. (D–F) Lar/sns transheterozygotes and Lar mutants, showing abnormal R7 targeting, with most R7 axons retracting to the M3 layer. (G) Quantification of R7 axon retractions in control and mutant animals. R7 axons were counted in at least 10 optical slices per OL. Each data point is the average of 10–12 optical slices per OL. The data were analyzed using one-way ANOVA followed by Tukey’s post-hoc correction. ****p<0.0001. (H–J) Single optical slices showing the morphology of R7 terminals in Lar451/+ control, Lar451/snsxb3 transheterozygotes, and Lar mutants. Control animals show normal rounded bouton-shaped R7 terminals (H, arrow). Some R7 terminals that do not retract and stay in the M6 layer have abnormal R7 terminal morphologies, with thin and spear-shaped terminals (I, J, arrows). Scale bar, 20 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71469/elife-71469-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–D) Single optical slices of adult optic lobes (OLs) from four different animals showing R7 and R8 photoreceptors labeled for Chaoptin (24B10, red) upon neuronal Sns RNAi knockdown. A small number of R7 axon retractions are seen upon Sns RNAi knockdown (asterisks). Some R7 axons abnormally innervate neighboring R7 columns (arrows).
 
 Since there is no Sns>GFP expression in pupal photoreceptors, Sns must be acting in another neuronal type. M5 labeling by Sns>GFP reflects Sns expression in C2, and perhaps in other medulla neurons. Perhaps interactions between Lar in R7s and Sns in this neuron(s) facilitate R7 axon adhesion in the M6 layer and prevent retraction. Pan-neuronal Sns RNAi knockdown resulted in a small number of R7 axon retractions, as well as other R7 axon abnormalities such as incorrect innervation of neighboring R7 columns (Figure 8—figure supplement 1). Neuronal kirre RNAi did not have any effect on R7 innervation. These results suggest that Sns is the Lar ligand that controls R7 synaptic targeting.
 
@@ -150,7 +230,7 @@ Lar is also required for MB development (Kurusu and Zinn, 2008) and is expressed
 
 Lar acts in R7 photoreceptors to facilitate innervation of the M6 medulla layer by R7 axons (Clandinin et al., 2001; Hofmeyer and Treisman, 2009; Maurel-Zaffran et al., 2001). In Lar mutants, R7 axons initially project to M6, but then retract back to the M3 layer. We observed the same phenotype in Lar/sns transhets. Sns is not expressed in R7. Sns on C2 and other medulla neurons may interact in trans with Lar on R7 growth cones to prevent retraction of R7 terminals from the M6 layer (Figures 7 and 8, Figure 7—figure supplements 1 and 2, Figure 8—figure supplement 1). In summary, these data show that Sns functions as a ligand for Lar during MB and OL development. The Lar-Sns interaction is separate from the interaction of Sns with Kirre, which plays a role in myoblast fusion, nephrocyte development, and ommatidial patterning, as kirre RNAi does not result in the same phenotypes seen in Lar/sns transhets or Lar and sns RNAi (Figure 3—figure supplement 2, Figure 4—figure supplement 2, Figure 6—figure supplement 1).
 
-## Lar and Sns act in cis to regulate NMJ morphogenesis
+### Lar and Sns act in cis to regulate NMJ morphogenesis
 
 Lar and Sns are expressed in the same motor neurons. They are required for the development of the muscle 7/6 NMJ, as well as other NMJs. The 1b and 1s arbors at the 7/6 NMJ derive from different neurons, and both have reduced numbers of boutons in Lar mutants and Lar/sns transhets. sns mutants do not survive into larval stages, so we performed RNAi experiments using a neuronal driver and found that Sns and Lar knockdown resulted in the same NMJ phenotypes. The lack of Sns and Lar expression in muscles, combined with their selective expression in the motor neurons that innervate the 7/6 and other NMJs, indicates that Lar and Sns likely act in cis in motor neurons to regulate NMJ development (Figures 2 and 3, Figure 3—figure supplement 1). Moreover, Lar and Sns likely act in the same genetic pathway as removal of Sns in a Lar mutant background does not increase the severity of the Lar phenotype (Figure 3—figure supplement 2).
 
@@ -158,7 +238,7 @@ Lar and Sns might regulate NMJ development by forming a complex on the neuronal 
 
 SYG-2 and SYG-1, the C. elegans orthologs of Sns and its binding partner Kirre, control presynaptic assembly and branch formation at HSN synapses by affecting F-actin assembly (Chia et al., 2014). During myoblast fusion, Sns interacts with several proteins involved with actin dynamics, including Wiskott-Aldrich syndrome protein (WASP), Solitary (Sltr)/dWIP, and the GTPase Rac. Sns signaling reorganizes the actin cytoskeleton, resulting in fusion between founder cells and fusion competent myoblasts (Sens et al., 2010). At Drosophila NMJs, bouton assembly and terminal branching are dependent upon F-actin assembly (Koch et al., 2014). We hypothesize that the Lar-Sns interaction may also regulate F-actin dynamics at the developing NMJ.
 
-## Trans interactions between Lar and Sns regulate axon guidance of MB KCs
+### Trans interactions between Lar and Sns regulate axon guidance of MB KCs
 
 Our earlier work showed that Lar mutants display abnormal KC axon guidance in larvae, resulting in two distinct phenotypes: first, KC axons fail to stop at the midline and instead extend into the contralateral lobe, resulting in a single fused lobe. Second, KC axons fail to branch and/or extend into the dorsal lobe, resulting in a reduced or absent lobe (Kurusu and Zinn, 2008). Here, we show that Sns acts together with Lar to regulate axonal midline stopping and branching in both the larval and pupal/adult MB (Figures 4—6, Figure 2—figure supplement 1, Figure 4—figure supplements 1–2, Figure 5—figure supplement 1, Figure 6—figure supplement 1). Lar/sns transhets and Sns knockdown animals have the same larval phenotypes as Lar mutants. In the adult MB, both the α/β and α′/β′ lobes are strongly affected in Lar/sns transhets and Lar mutants.
 
@@ -168,7 +248,7 @@ Lar binding to Sns may generate a stop signal for medial and β′ axons that pr
 
 Interactions of Lar with Sns mediate a different response in dorsal lobe and α′ axons. In the absence of Lar and/or Sns, these axons fail to extend normally, and the larval dorsal and adult α/α′ lobes do not form. Neurons expressing Sns may act as guideposts that are required for normal extension of these axons. The α and α′ axons might respond separately to these cues or the α axons may exhibit phenotypes because they follow the α′ axons. Since some α′/β′ neurons are already present in larvae, adult MB phenotypes may derive from defects that occur during larval development.
 
-## Sns is required in trans for Lar’s roles in R7 photoreceptor axon targeting
+### Sns is required in trans for Lar’s roles in R7 photoreceptor axon targeting
 
 Lar is required for R7 photoreceptor axon targeting to the M6 layer of the medulla. In Lar mutants, most R7 axons extend to the correct target layer, but then retract, so that the final position of the R7 terminal is usually in the M3 layer (Clandinin et al., 2001; Hakeda-Suzuki et al., 2017; Hofmeyer and Treisman, 2009; Maurel-Zaffran et al., 2001). Lar acts cell-autonomously in R7 photoreceptors to regulate targeting (Maurel-Zaffran et al., 2001). Consistent with this, our Lar>GFP reporter is expressed in photoreceptors during early pupal stages (Figure 7—figure supplement 2).
 
@@ -178,7 +258,7 @@ More than 70% of R7 terminals in Lar/sns transhets show retraction to the M3 lay
 
 C2 receives more synapses from the L1 lamina neuron than from any other neuron and also makes many synapses onto L1 (Takemura et al., 2013; Takemura et al., 2015). Lar mRNA is expressed at some level in most neurons. However, RNA sequencing studies have shown that L1 neurons express Lar at particularly high levels (Davis et al., 2020; Tan et al., 2015), and the Lar>GFP reporter strongly labels L1 (Figure 7, Figure 7—figure supplements 1 and 2). It is attractive to speculate that Lar-Sns interactions might be important for the formation of L1-C2 synaptic connections. kirre and rst are also expressed in L1 neurons (Kurmangaliyev et al., 2020). Sns in C2 could thus bind in trans to both Lar and Kirre/Rst in L1 neurons. kirre RNAi in all neurons did not result in any R7 axon phenotypes, suggesting that the Sns-Kirre interaction is not important for R7 innervation.
 
-## Evolutionary conservation of the Lar–Sns interaction
+### Evolutionary conservation of the Lar–Sns interaction
 
 Sns is a highly conserved CAM that has orthologs in C. elegans and mammals (Shen, 2004). The C. elegans ortholog of Sns, SYG-2, is expressed on guidepost epithelial cells, and its interactions with SYG-1 on the HSNL neuron initiate the process of synapse formation (Shen et al., 2004). In SYG-2 and SYG-1 mutants, components of the presynaptic active zone assembly do not localize properly. This phenotype is similar to that seen in SYD-2 mutants. SYD-2 is the C. elegans ortholog of Liprin-α, which binds to Lar’s cytoplasmic domain. SYG-1/SYG-2 interactions recruit SYD-2 to the site of active zone assembly (Dai et al., 2006; Patel et al., 2006), and SYD-2 is mislocalized in mutants for PTP-3, the C. elegans Lar ortholog (Ackley et al., 2005). These observations suggest a model of synapse formation in which SYG-1, SYG-2, PTP-3, and SYD-2 all act together at the site of synapse assembly.
 
@@ -188,11 +268,336 @@ Expression of a Nephrin-lacZ reporter was observed in many areas of the embryoni
 
 ## Materials and methods
 
-## Drosophila genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Canton S (CS)</td>
+      <td>Bloomington Drosophila Stock Center (BDSC)</td>
+      <td>BDSC #64349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tubulin-GAL4</td>
+      <td>BDSC</td>
+      <td>BDSC #5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>elavC155-GAL4</td>
+      <td>BDSC</td>
+      <td>BDSC #458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>OK107-GAL4</td>
+      <td>BDSC</td>
+      <td>BDSC #854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-2xEGFP</td>
+      <td>BDSC</td>
+      <td>BDSC #6874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8-GFP</td>
+      <td>BDSC</td>
+      <td>BDSC #32185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>snsMIMIC-MI03001</td>
+      <td>BDSC</td>
+      <td>BDSC #35916</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>larMIMIC-MI02154</td>
+      <td>BDSC</td>
+      <td>BDSC #35972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>snsEY08142</td>
+      <td>BDSC</td>
+      <td>BDSC #17434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Sns-T2A-GAL4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lab of Dr. Kai Zinn</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Lar-T2A-GAL4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lab of Dr. Kai Zinn</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-sns-RNAi</td>
+      <td>Vienna Drosophila Resource Center (VDRC)</td>
+      <td>VDRC #109442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-sns-RNAi</td>
+      <td>VDRC</td>
+      <td>VDRC #877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-lar-RNAi</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>DSHB #40938</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-lar-RNAi</td>
+      <td>DSHB</td>
+      <td>DSHB #34965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-kirre-RNAi</td>
+      <td>DSHB</td>
+      <td>DSHB #67340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>snsxb3</td>
+      <td>PMID #10859168</td>
+      <td></td>
+      <td>Gift of Susan Abmyer</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>snsDf</td>
+      <td>DSHB</td>
+      <td>DSHB #23165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lar13.2</td>
+      <td>PMID #8598047</td>
+      <td>DSHB #8774</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lar451</td>
+      <td>PMID #11683994</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lar2127</td>
+      <td>PMID# 11683993</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFP (rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>#A11122</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RFP (rabbit polyclonal)</td>
+      <td>Rockland Inc.</td>
+      <td>#600-401-379</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Dlg (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#4F3</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Bruchpilot (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#nc82</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Chaoptin (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#24B10</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-FasII (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#1D4</td>
+      <td>(1:3)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Trio (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#9.4A</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Lar (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#9D8</td>
+      <td>(1:3)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Repo (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#8D12</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Evenskipped (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>#3C10</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-human IgG (Fc specific) (mouse monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>#MCA647G</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-alkaline phosphatase (AP) (rabbit polyclonal)</td>
+      <td>AbD Serotec</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-AP:biotin (mouse monoclonal)</td>
+      <td>eBioscience, Thermo Fisher</td>
+      <td>#13-9870-82</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-HRP-Alexa 488 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#123-545-021</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-HRP-Alexa 594 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#123-585-021</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse-Alexa 488 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>#A110029</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse-Alexa 568 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>#A11031</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit-Alexa 488 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>#A11008</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit-Alexa 568 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>#A11036</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse-AP (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#115-055-003</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin:HRP</td>
+      <td>Thermo Fisher</td>
+      <td>#N100</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ultra-TMB</td>
+      <td>Thermo Fisher</td>
+      <td>#34028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BluePhos</td>
+      <td>Seracare</td>
+      <td>#5120-0059</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila genetics
 
 WT flies used were Canton S (CS). Lar and sns mutants have been previously described: Lar13.2, Lar451, and snsxb3 (gift of Dr. Susan Abmayr). The following lines were obtained from the Bloomington Stock Center: snsDf, C155-GAL4, tubulin-GAL4, OK107-GAL4, snsMiMIC MI03001, LarMiMIC02154, snsEY08142, UAS-Lar RNAi (TRiP.HMS02186), UAS-Lar RNAi (TRiP.HMS00822), and UAS-Kirre RNAi (TRiP.HMC05791). Sns RNAi lines were from the Vienna Drosophila Resource Center: UAS-Sns RNAi (KK109442) and UAS-Sns RNAi (GD877). T2A-GAL4 lines were generated as described in Diao et al., 2015. Briefly, flies carrying the MiMIC insertion were crossed with flies bearing the triplet ‘Trojan exon’ donor. The F1 males from this cross carrying both genetic components were crossed to females carrying germline transgenic sources of Cre and ϕC31. The F2 males from this cross that had all four genetic components were then crossed to a UAS-2xEGFP reporter line, and the resulting progeny were screened for T2A-GAL4 transformants.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Live dissections of embryos were performed as described in Lee et al., 2013. Briefly, egg-laying chambers were set up with adult flies and grape juice plates and left in dark at room temperature to lay eggs for 4 hr. Embryos on the grape plate were incubated overnight at 18°C, followed by 2 hr at 29°C to induce GAL4 expression. Stage 16 embryos were dissected in PBS, followed by incubation with AP5 fusion protein supernatants (1× or concentrated) from lepidopteran HiFive cells infected with baculovirus vectors, transfected Schneider 2 (S2) cells, or transfected mammalian Expi293 cells for 2 hr at room temperature. Embryos were then fixed in 4% paraformaldehyde for 30 min, followed by blocking in 5% normal goat serum in 0.05% PBT (1× PBS with 0.05% Triton-X100 and 0.1% BSA). Primary antibody incubation was done overnight at 4°C. Primary antibodies used were rabbit anti-AP (1:1000, AbD Serotec), mouse anti-FasII (1:3, mAb 1D4, DSHB), and mouse anti-LAR (1:3, mAb 9D8). Following washes in 0.05% PBT, embryos were incubated in secondary antibodies for 2–4 hr at room temperature. Secondary antibodies used were Alexa Fluor 568 conjugated goat anti-rabbit and Alexa Fluor 488 conjugated goat anti-mouse (1:500, Molecular Technologies). Samples were washed and mounted in Vectashield (Vector Laboratories).
 
@@ -200,18 +605,18 @@ Larval dissections were performed as described in Menon et al., 2015. Briefly, w
 
 Pupal and adult brain dissections were performed as described in Menon et al., 2019 and Xu et al., 2018. Both pupal and adult brains were dissected in PBS and fixed in 4% paraformaldehyde (in 0.25% PBT) for 30 min. Samples were washed overnight at 4°C, followed by blocking in 5% normal goat serum in 0.25% PBT for 1–2 hr at room temperature. Samples were incubated in primary antibodies for 2 days at 4°C. Primary antibodies used were rabbit anti-GFP (1:500, Molecular Technologies), mouse anti-Chaoptin (1:10, mAb 24B10, DSHB), mouse anti-FasII (1:3, mAb 1D4), and mouse anti-Trio (1:20, mAb 9.4A, DSHB). Samples were washed in 0.25% PBT and incubated in secondary antibodies for 2 days at 4°C. Secondary antibodies used were Alexa Fluor 488 goat anti-rabbit, Alexa Fluor 568 goat anti-mouse, Alexa Fluor 647 goat anti-mouse (1:500, Molecular Technologies), and Alexa Fluor 647 conjugated goat anti-horseradish peroxidase (1:50, Jackson ImmunoResearch). Following washes, samples were incubated in Vectashield for a minimum of 24 hr before mounting.
 
-## Molecular biology
+### Molecular biology
 
 AP5 and Fc fusion proteins were prepared as described in Lee et al., 2013 (baculovirus) or in Ozkan et al., 2013 (S2 cells), or in Wojtowicz et al., 2020 (Expi293 cells). S2 cell expression vectors containing the ECDs of Sns, Hbs, Kirre, and Lar linked to AP5 or Fc were obtained from the Özkan collection. These ECDs were also transferred into mammalian Fc and AP5 expression vectors. To make Lar-mi3 and Kirre-mi3 particles, we produced versions of Lar-Fc and Kirre-Fc with C-terminal SpyTag3 sequences. These were expressed in Expi293 cells and purified using Ni-NTA chromatography (the proteins also have His tags). Each protein was coupled to mi3-SpyCatcher (Bruun et al., 2018) at ratios such that most of the 60 SpyCatcher sites were coupled to a Lar-Fc-SpyTag3 chain. To make Nephrin, PTPRD, PTPRF, and PTPRS AP5 and Fc fusion proteins, ECD regions of each were amplified by PCR from full-length cDNAs and moved into pCE2 and pCE14 expression vectors using Gateway Cloning. S2 cells were transfected using Effectene transfection reagent as described in Ozkan et al., 2013. Expression was induced using 100 mM CuSO4 24 hr after transfection, and supernatants (sups) containing fusion proteins were collected 3 days after induction. Sups were directly used at 1× concentration for ECIA assays and were concentrated 2–5× using Amicon Ultra-15 centrifugal filter units (30 kDa molecular weight cutoff) for use in embryo staining experiments.
 
-## ECIA
+### ECIA
 
 Each well of Nunc MaxiSorp 96-well plate was incubated with 50 μl of mouse anti-human IgG (Fc-specific) antibody (5 μg/ml in bicarbonate coupling buffer, pH 8.4) overnight at 4°C. Wells were washed in PBST (PBS with 0.05% Tween-20) three times for 5 min each, followed by blocking in 2% BSA (in PBS) for 2 hr at room temperature. 50 μl Fc fusion proteins were added at 1× concentration for 3 hr at room temperature, followed by washes and blocking for 30 min. 50 μl AP5 fusion proteins were added at 1× concentration, pre-clustered with mouse anti-human AP:biotin conjugated antibody (1:500, eBioscience) and incubated overnight at room temperature. Wells were washed in PBST, followed by incubation with streptavidin:HRP (1:500, 50 μl per well) for 30 min. Wells were washed and incubated with 1-Step Ultra TMB HRP substrate (50 μl per well, Thermo Fisher) for 30 min protected from light. The HRP reaction was stopped by adding 2 M phosphoric acid (50 μl per well), and absorbance was measured at 450 nM. For ECIA assays with mi3 particles, each well of Nunc MaxiSorp 96-well plate was incubated with 50 μl of 100 μg/ml streptavidin overnight at 4°C, followed by addition of 50 μl of AP5 bait proteins (10 ng/μl) overnight at 4°C. Wells were blocked in 2% BSA (in PBS) for 2 hr at room temperature, followed by additional blocking in biotinylated BSA for 30 min and S2 cell conditioned medium for 30 min. mi3 particles or Fc fusion proteins (50 μl) were added at 10 ng/μl or 1× concentration (for S2 cell sups) and incubated overnight at room temperature. Wells were washed in PBST, followed by incubation with either mouse anti-LAR or mouse anti-human IgG (Fc-specific) antibodies. Wells were washed and incubated with goat anti-mouse: AP antibody, followed by incubation with BluePhos AP substrate reagent (50 μl) for 30 min protected from light. Absorbance was measured at 650 nM.
 
-## Confocal imaging and image analysis
+### Confocal imaging and image analysis
 
 All images were captured using a Zeiss LSM710 confocal microscope with either ×20 or ×40 objectives. NMJs were analyzed using a semi-automated macro in Fiji (Nijhof et al., 2016). 1b and 1s boutons were separately outlined in confocal projections and separate analyses were performed on both kinds of boutons. Dlg immunostaining was used to separate 1b and 1s boutons as 1b boutons stain brightly with Dlg and 1s boutons have very weak Dlg signals. Brp punctae were also counted using the Fiji macro. For MB medial lobe, β and β′ lobe phenotypes, every confocal slice was individually analyzed for FasII-positive axons crossing the midline. For dorsal, α and α′ lobe phenotypes, confocal projections of the entire MB were analyzed for the presence or absence of lobes. For R7 photoreceptor targeting phenotype, R7 terminals in M6 layer were counted in at least 10 slices per OL with each slice being 5 μm apart. The number of R7 terminals in M6 layer was divided by the total number of R7 axons seen in M3 layer and above. Images were analyzed and processed using FIiji software.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed using GraphPad Prism. For all experiments with the exception of MB phenotypes, statistical analyses were performed using one-way ANOVA followed by Tukey’s post-hoc correction. MB phenotypes were analyzed using Fisher’s exact test, and each genotype was compared to every other genotype from the same experiment. Box and Whisker plots show 10–90 percentile whisker span. For embryo binding experiments, sample size was 8–10 embryos per genotype. For NMJ phenotypes, sample size was 30–60 NMJs per genotype. For larval MB phenotypes, sample size was 12–20 animals per genotype. For adult MB phenotypes, sample size was 20–30 animals per genotype. For OL phenotype, sample size was 10–12 OLs per genotype. Each experiment was repeated at least three times.

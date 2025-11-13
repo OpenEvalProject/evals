@@ -30,6 +30,53 @@ Several observational studies have examined the influence of country- and inst
 
 Here we examine the impact of academic affiliations on scientific judgment, independent of manuscript quality. Specifically, we consider how information about the geographical location and institutional affiliation of authors influence how scientific abstracts are evaluated by their peers. In a preregistered survey experiment, we asked 4147 scientists from six disciplines (astronomy, cardiology, materials science, political science, psychology and public health) to rate abstracts that vary on two factors: (i) author country (high status vs. lower status scientific nation); (ii) institutional affiliation (high status vs. lower status university; see Table 1). All other content of the discipline-specific abstracts was held constant.
 
+**Table 1.**
+ Sample distributions for the three-way factorial design across the six disciplines.Number of observations, N, by manipulation (rows) and disciplines (columns).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Manipulation/Discipline</th>
+      <th>Astronomy (N = 502)</th>
+      <th>Cardiology (N = 609)</th>
+      <th>Mat. science (N = 546)</th>
+      <th>Pol. science (N = 1008)</th>
+      <th>Psychology (N = 624)</th>
+      <th>Public health (N = 732)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Higher status (US)</td>
+      <td>N = 209</td>
+      <td>N = 191</td>
+      <td>N = 196</td>
+      <td>N = 351</td>
+      <td>N = 216</td>
+      <td>N = 241</td>
+    </tr>
+    <tr>
+      <td>Lower status (US)</td>
+      <td>N = 192</td>
+      <td>N = 213</td>
+      <td>N = 187</td>
+      <td>N = 319</td>
+      <td>N = 205</td>
+      <td>N = 237</td>
+    </tr>
+    <tr>
+      <td>Lower status (non-US)</td>
+      <td>N = 191</td>
+      <td>N = 205</td>
+      <td>N = 163</td>
+      <td>N = 338</td>
+      <td>N = 213</td>
+      <td>N = 254</td>
+    </tr>
+  </tbody>
+</table>
+
 A few pioneering studies have already attempted to discern the influence of national and institutional location on scholarly peer-assessments, independent of manuscript quality. One study (Blank, 1991) used a randomized field experiment to examine the effects of double blind vs. single blind peer reviewing on acceptance rates in the American Economic Review. The study found no evidence that a switch from single blind to double blind peer reviewing influenced the relative ratings of papers from high-ranked and lower-ranked universities. Another study (Ross et al., 2006) examined the effect of single blind vs. double blind peer reviewing on the assessment of 13,000 abstracts submitted to the American Heart Association’s annual Scientific Sessions between 2000 and 2004. The study found that when abstracts underwent single blind compared to double blind reviewing the relative increase in acceptance rates was higher for US authored abstracts compared to non-US authored abstracts, and for abstracts from highly prestigious US institutions compared to abstracts from non-prestigious US institutions.
 
 A recent survey experiment also found that professors at schools of public health in the US (N: 899) rated one abstract higher on likelihood of referral to a peer, when the authors’ affiliation was changed from a low-income to a high-income country (Harris et al., 2015). However, each participant was asked to rate four abstracts and the results for the remaining three abstracts were inconclusive. Likewise, the study found no evidence of country-related bias in the ratings of the strength of the evidence presented in the abstracts. In another randomized, blinded cross-over study (N: 347), the same authors found that changing the source of an abstract from a low-income to a high-income country slightly improved English clinicians’ ratings of relevance and recommendation to a peer (Harris et al., 2017). Finally, a controlled field experiment recently examined the “within subject” effect of peer-review model (single blind vs. double blind) on the acceptance rates of full-length submissions for a prestigious computer-science conference (Tomkins et al., 2017). The study allocated 974 double blind and 983 single blind reviewers to 500 papers. Two single blind and two double blind reviewers assessed each paper. The study found that single blind reviewers were more likely than double blind reviewers to accept papers from top-ranked universities compared to papers from lower-ranked universities.
@@ -50,6 +97,30 @@ To test for statistical equivalence in the discipline-specific comparisons of ou
 
 The boxplots in Figure 1 display the abstracts ratings for respondents assigned to each manipulation across the six disciplines. The discipline-specific ANOVAs with the manipulations as the between-subject factor did not indicate any country- or institution-related status bias in abstract ratings (astronomy: F = 0.71, p=0.491, N = 592; cardiology: F = 1.50, p=0.225, N = 609; materials science: F = 0.73, p=0.482, N = 546; political science: F = 0.53, p=0.587, N = 1008; psychology: F = 0.19, p=0.827, N = 624; public health: F = 0.34, p=0.715, N = 732). The η2 coefficients were 0.002 in astronomy, 0.005 in cardiology, 0.003 in materials science, and 0.001 in political science, psychology and public health.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig1-v2.jpg)
+
+**Figure 1.:** Each panel reports results for a specific discipline. The red box plots specify results for respondents exposed to an abstract authored at a high-status institution in the US. The blue box plots specify results for respondents exposed to an abstract authored at a lower-status institution in the US. The green box plots specify results for respondents exposed to an abstract authored at a lower-status institution outside the US. Whiskers show the 1.5 interquartile range. The red, blue and green dots represent outliers, and the grey dots display data points. The boxplots do not indicate any notable variations in abstract scores across manipulations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Average abstract ratings and 95% CIs across the three manipulations and six disciplines for the question “Please rate the abstract on the following dimension: Originality of the presented research” (Response categories: Very poor = 1, Excellent = 5). Error bars represent 95% confidence intervals based on 1000 bootstrap samples.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Average abstract ratings and 95% CIs across the three manipulations and six disciplines for the question “Please rate the abstract on the following dimension: Credibility of the results” (Response categories: Very poor = 1, Excellent = 5). Error bars represent 95% confidence intervals based on 1000 bootstrap samples.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Average abstract ratings and 95% CIs across the three manipulations and six disciplines for the question “Please rate the abstract on the following dimension: Significance for future research” (Response categories: Very poor = 1, Excellent = 5). Error bars represent 95% confidence intervals based on 1000 bootstrap samples.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Average abstract ratings and 95% CIs across the three manipulations and six disciplines for the question “Please rate the abstract on the following dimension: Clarity of the abstract” (Response categories: Very poor = 1, Excellent = 5). Error bars represent 95% confidence intervals based on 1000 bootstrap samples.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Abstracts could receive a score of between 4 (when the originality, credibility, significance and clarity were all deemed to be very poor) and 20 (when these four factors were all deemed to be excellent). This plot shows the distribution of abstract scores for the six abstracts as assessed by the 4147 reviewers.
+
 A TOST procedure with an α level of 0.05 indicated that the observed effect sizes were within the equivalence bound of d = −0.3 and d = 0.3 for 11 of the 12 between-subject comparisons at the disciplinary level (see Supplementary file 2, Tables S1–S12). In raw scores, this equivalence bound corresponds to a span from −0.8 to 0.8 abstract rating points on a scale from 4 to 20. In cardiology, the TOST test failed to reject the null-hypothesis of non-equivalence in the evaluative ratings of subjects exposed to abstracts from higher-status US universities and lower-status US universities.
 
 A closer inspection suggests that these findings are robust across the four individual items that make up our composite abstract-score. None of these items show notable variations in abstract ratings across manipulations (Figure 1—figure supplement 1–4).
@@ -58,11 +129,11 @@ Figures 2 and 3 report the outcomes of the discipline-specific logit models with
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig2-v2.jpg)
 
-**Figure 2.:** Open full text" as outcome.Panel A displays the odds ratios for respondents exposed to manipulation 1 (high-status university, US) or manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 95% CIs. As shown in Panel A, peer-evaluators in public health were slightly less likely to show interest in opening the full text when the author affiliation was changed from a lower-status university in the US to a lower-status university elsewhere. The results for the remaining eleven comparisons are inclusive. For model specifications, see Supplementary file 2, Tables S13–S18.
+**Figure 2.:** Panel A displays the odds ratios for respondents exposed to manipulation 1 (high-status university, US) or manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 95% CIs. As shown in Panel A, peer-evaluators in public health were slightly less likely to show interest in opening the full text when the author affiliation was changed from a lower-status university in the US to a lower-status university elsewhere. The results for the remaining eleven comparisons are inclusive. For model specifications, see Supplementary file 2, Tables S13–S18.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig3-v2.jpg)
 
-**Figure 3.:** Include in conference" as outcome.Panel A displays the odds ratios for respondents exposed to manipulation 1 (high-status university, US) or manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 95% CIs. As shown in Panel A, peer-evaluators in political science were slightly less likely to show interest in opening the full text when the author affiliation was changed from a lower-status university in the US to a high-status university in the US. The results for the remaining eleven comparisons are inclusive. For model specifications, see Supplementary file 2, Tables S19–S24.
+**Figure 3.:** Panel A displays the odds ratios for respondents exposed to manipulation 1 (high-status university, US) or manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 95% CIs. As shown in Panel A, peer-evaluators in political science were slightly less likely to show interest in opening the full text when the author affiliation was changed from a lower-status university in the US to a high-status university in the US. The results for the remaining eleven comparisons are inclusive. For model specifications, see Supplementary file 2, Tables S19–S24.
 
 As displayed in Figure 2, peer-evaluators in Public Health were between 7.5% and 56.5% less likely to show interest in opening the full-text, when the author affiliation was changed from a lower-status university in the US to a lower-status university elsewhere (Odds ratio:. 634, CI: 0.435–0.925). The odds ratios for the remaining 11 comparisons across the six disciplines all had 95% confidence intervals spanning one. Moreover, in five of the 12 between-subject comparisons, the direction of the observed effects was inconsistent with the a-priori expectation that abstracts from higher-status US universities would be favoured over abstracts from lower-status US universities, and that abstracts from lower-status US universities would be favoured over abstracts from lower-status universities elsewhere.
 
@@ -72,13 +143,13 @@ Figure 4 plots the fixed coefficients (panel a) and adjusted means (panel b) fro
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig4-v2.jpg)
 
-**Figure 4.:** Abstract score" as outcome.Panel A plots the fixed coefficients for manipulation 1 (high-status university, US) and manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 99% CIs. The figure shows that status cues in the form of institutional affiliation or national affiliation have no tangible effects on the respondents’ assessments of abstracts. For model specifications, see Supplementary file 2, Table S25.
+**Figure 4.:** Panel A plots the fixed coefficients for manipulation 1 (high-status university, US) and manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 99% CIs. The figure shows that status cues in the form of institutional affiliation or national affiliation have no tangible effects on the respondents’ assessments of abstracts. For model specifications, see Supplementary file 2, Table S25.
 
 Figure 5 displays odds ratios and 99% confidence intervals for the mixed logit regressions with Open full-text (panel a, upper display) and Include in conference (panel a, lower display) as outcomes. The odds ratios for the experimental manipulations used as predictors in these models range from 0.86 to 1.05 and have 99% confidence intervals spanning the line of no difference. The 99% confidence intervals (panel a) indicate that any plausible effect would fall within the bounds of odds ratio = 0.68 and 1.35, which corresponds to a standardized confidence bound of Cohen’s d = −0.21 to 0.17. The wide confidence bounds for the estimated proportion for Include in conference (panel b) reflect the large variations in average assessments of abstracts across disciplines.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64561/elife-64561-fig5-v2.jpg)
 
-**Figure 5.:** Open full text" (upper part) and "Include in conference" (lower part) as outcomes.Panel A displays the odds ratios for respondents exposed to manipulation 1 (high-status university, US) or manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 99% CIs. As shown in Panel A, the results for both regression models are inconclusive, and the effect sizes are small. For model specifications, see Supplementary file 2, Tables S26–27.
+**Figure 5.:** Panel A displays the odds ratios for respondents exposed to manipulation 1 (high-status university, US) or manipulation 3 (lower-status university, non-US). Manipulation 2 (lower-status university, US) is the reference group. Panel B plots the adjusted means for manipulation 1, manipulation 2 and manipulation 3. Error bars represent 99% CIs. As shown in Panel A, the results for both regression models are inconclusive, and the effect sizes are small. For model specifications, see Supplementary file 2, Tables S26–27.
 
 Robustness checks based on mixed linear and logit models were carried out to examine the effects of the experimental manipulations on the three outcome measures, while restricting the samples to (i) participants that responded correctly to a manipulation-check item, and (ii) participants that saw their own research as being ‘extremely close’, ‘very close’ or ‘somewhat close’ to the subject addressed in the abstract. All of these models yielded qualitatively similar results, with small residual effects and confidence intervals spanning 0 in the linear regressions and one in the logistic regressions (see Supplementary file 2, Tables S28–S33). Moreover, a pre-registered interaction analysis was conducted to examine whether the influence of country- and institution-related status signals was moderated by any of the following characteristics of the peer evaluators: (i) their descriptive beliefs in the objectivity and fairness of peer-evaluation; (ii) their structural location in the science system (in terms of institutional affiliation and scientific rank); (iii) their research accomplishments; (iv) their self-perceived scientific status. All of these two-way interactions had 99% CI intervals spanning 0 in the linear regressions and one in the logistic regressions, indicating no discernible two-way interactions (see Supplementary file 2, Tables S34–S39).
 
@@ -96,23 +167,23 @@ A key limitation is that our experiment was conducted in non-probability samples
 
 Our study complies with all ethical regulations. Aarhus University’s Institutional Review Board approved the study (case no. 2019-616-000014). We obtained informed consent from all participants. The sampling and analysis plan was preregistered at the Open Science Framework on September 18, 2019. We have followed all of the steps presented in the registered plan, with two minor deviations. First, we did not preregister the equivalence tests reported for the discipline-specific analyses presented in Figure 1. Second, in the results section, we report the outcomes of the mixed regression models with abstract score as outcome based on linear models instead of the tobit models included in the registered plan. Tables S40–S44 in Supplementary file 2 report the outcomes of the mixed-tobit models, which are nearly identical to the results from the linear models reported in Tables S25, S28, S31, S36, S37 in Supplementary file 2.
 
-## Participants
+### Participants
 
 The target population consisted of research-active academics with at least three articles published between 2015 and 2018 in Clarivate’s Web of Science (WoS). To allow for the retrieval of contact information (specifically email addresses), we limited our focus to corresponding authors with a majority of publications falling into one of the following six disciplinary categories: astronomy, cardiology, materials science, political science, psychology and public health. These disciplines were chosen to represent the top-level domains; natural science, technical science, health science, and social science. We did not include the arts and humanities as the majority of fields in this domain have very different traditions of publishing and interpret scholarly quality in less comparable terms. While other fields could have been chosen as representative of those domains, practical aspects of access to field experts and coverage in Web of Science were deciding for the final delineation. We used the WoS subject categories and the Centre for Science and Technology Studies’ (CWTS) meso-level cluster classification system to identify eligible authors within each of these disciplines. For all fields, except for materials science, the WoS subject categories provided a useful field delineation. In materials science, the WoS subject categories were too broad. Hence, we used the article-based meso-level classification of CWTS to identify those papers most closely related to the topic of our abstract. In our sampling strategy, we made sure that no participants were asked to review abstracts written by (fictive) authors affiliated with their own research institutions.
 
 We used G*Power to calculate the required sample size for detecting a Cohen’s f = 0.15 (corresponding to a Cohen’s d = 0.30) or larger with α = 0.05 and a power of 0.80 in the discipline-specific analyses with abstract rating as outcome. With these assumptions, a comparison of three groups would require at least 429 respondents per discipline. Response rates for email-based academic surveys are known to be low (Myers et al., 2020). Based on the outcomes of a pilot study targeting neuroscientists, we expected a response rate around 5% and distributed the survey to approximately 72,000 researchers globally (i.e. approximately 12,000 researchers per field) (for specifications, see Supplementary file 2, Table S45). All data were collected in October and November 2019. Due to low response rates in materials science and cardiology, we expanded the recruitment samples by an additional ~12,000 scientists in each of these disciplines. In total, our recruitment sample consisted 95,317 scientists. Each scientist was invited to participate in the survey by email, and we used the web-based Qualtrics software for data collection. We sent out five reminders and closed the survey two weeks after the final reminder. Eight percent (N = 7,401) of the invited participants opened the email survey link, and about six percent (N = 5,413) completed the questionnaire (for specifications on discipline-specific completion rates, see Supplementary file 2, Table S45). For ethical reasons, our analysis solely relies on data from participants that reached the final page of the survey, where we debriefed about the study’s experimental manipulations. The actual response rate is difficult to estimate. Some scientists may have refrained from participating in the study because they did not see themselves as belonging to one of the targeted disciplines. Others may not have responded because they were on sabbatical, parental leave or sick leave. Moreover, approximately 16 percent (15,247) of the targeted email addresses were inactive or bounced for other reasons. A crude estimate of the response rate would thus be 5,413/(95,317–15,247)=0.07, or seven percent. The gender composition of the six respondent samples largely resembles that of the targeted WoS populations (Supplementary file 2, Table S46). However, the average publication age (i.e. years since first publication in WoS) is slightly higher in the respondent samples compared to the targeted WoS populations, which may be due to the study’s restricted focus on corresponding authors (the age distributions are largely similar across the recruitment and respondent samples). The distribution of respondents (per discipline) across countries in WoS, the recruitment sample, and the respondent sample is reported in Supplementary file 2, Table S47.
 
-## Pretesting and pilot testing
+### Pretesting and pilot testing
 
 Prior to launching, the survey was pretested with eight researchers in sociology, information science, political science, psychology, physics, biomedicine, clinical medicine, and public health. In the pretesting, we used verbal probing techniques and “think alouds” to identify questions that the participants found vague and unclear. Moreover, we elicited how the participants arrived at answers to the questions and whether the questions were easy or hard to answer, and why.
 
 In addition, we pilot-tested the survey in a sample of 6,000 Neuroscientists to (i) estimate the expected response rate per discipline, (ii) check the feasibility of a priming instrument that we chose not to include in the final survey, (iii) detect potential errors in the online version of the questionnaire before launching, and (iv) verify the internal consistency of two of the composite measures used in the survey (i.e. abstract score and meritocracy beliefs).
 
-## Procedures
+### Procedures
 
 In each of the six online-surveys (one per discipline), we randomly assigned participants to one of the three manipulations (Table 1). All participants were blinded to the study objectives.
 
-## Manipulations
+### Manipulations
 
 We manipulated information about the abstract’s institutional source (high status vs. lower status US research institution) and country source (lower status US research institution vs. lower-status research institution in a select group of European, Asian, Middle Eastern, African and South American countries). The following criteria guided our selection of universities for the manipulation of institutional affiliation: Candidates for the “high status” category all ranked high in the US National Research Council’s field-specific rankings of doctorate programs, and consistently ranked high (Top 20) in five subfield-specific university rankings (US News’ graduate school ranking, Shanghai ranking, Times Higher Education, Leiden Ranking and QS World University Ranking).
 
@@ -122,19 +193,19 @@ Given this approach, the specific institutions that fall into the “high status
 
 The abstracts were created or adapted for this study and are not published in their current form. The abstracts used in astronomy, materials science, political science and psychology were provided by relevant researchers in the respective disciplines and have been slightly edited for the purposes of this study. The abstracts used in cardiology and public health represent rewritten versions of published abstracts with numerous alterations to mask any resemblance with the published work (the six abstracts are available in Supplementary file 1). Author names were selected by searching university websites for each country and identifying researchers in disciplines unrelated to this study.
 
-## Measures
+### Measures
 
 Variable specifications are reported in Supplementary file 2, Table S50. The outcome variables used in this analysis are specified above. We used dichotomous variables to estimate the effect of the manipulations on the outcomes in all regression models. We used the following measures to compute the moderation variables included in the two-way interaction analyses. Our measure of the respondents’ descriptive beliefs in the objectivity and fairness of peer-evaluation in their own research field (i.e. meritocratic beliefs) was adapted from ref (Anderson et al., 2010). A sample item from this measure reads: “In my research field, scientists evaluate research primarily on its merit, i.e. according to accepted standards of the field”. We adapted the sample item from ref (Anderson et al., 2010). The two other items were developed for this study. Ratings were based on a five-point scale ranging from (1) ‘Strongly agree’ to (5) ‘Strongly disagree’. Based on these items, we computed a composite measure that specifies each participant’s total-item score for these three items (i.e. meritocratic beliefs) (Cronbach’s α = 0.765). We used two pieces of information to measure the participants’ structural location in the science system (i.e. structural location): (i) information about scientific rank collected through the survey, and (ii) information about scientific institution obtained from Web of Science. Our measure of structural location is dichotomous. Associate professors, full professors, chairs and deans at top ranked international research institutions are scored as 1; all other participants are scored as 0. Here, we define top-ranked research institutions as institutions that have consistently ranked among the top 100 universities with the highest proportion of top 10% most cited papers within the past 10 years, according to the Leiden Ranking. We used article metadata from WOS to construct an author-specific performance profile for each respondent (i.e. research accomplishments). Specifically, we assigned researchers that were among the top-10% most cited in their fields (based on cumulative citation impact) to the “high status” group. All other participants were assigned to the “lower status” group. Our measure of self-perceived status was adapted from the MacArthur Scale of Subjective Social Status (Adler and Stewart, 2007). We asked the respondents to locate themselves on a ladder with ten rungs representing the status hierarchy in their research area. Respondents that positioned themselves at the top of the ladder were scored as 9, and respondents positioning themselves at the bottom were scored as 0.
 
-## Manipulation and robustness checks
+### Manipulation and robustness checks
 
 As a manipulation check presented at the end of the survey, we asked the participants to answer a question about the author’s institutional affiliation/country affiliation in the abstract that they just read. The question varied depending on manipulation and discipline. For robustness checks, we included an item to measure the perceived distance between the participant’s own research area and the topic addressed in the abstract. Responses were based on a five-point scale ranging from (1) ‘Extremely close’ to (5) ‘Not close at all’. In the statistical analysis, these response options were recoded into dichotomous categories (‘Not close at all’, ‘Not too close’=0, ‘Somewhat close’, ‘Very close’, ‘Extremely close’=1).
 
-## Data exclusion criteria
+### Data exclusion criteria
 
 In accordance with our registered plan, respondents that demonstrated response bias (10 items of the same responses, e.g. all ones or fives) were removed from the analysis. Moreover, we removed all respondents that completed the survey in less than 2.5 min.
 
-## Statistical analysis
+### Statistical analysis
 
 We used one-way ANOVAs and logit models to perform the discipline-specific, between-group comparisons. We estimated mixed linear regressions and tobit models (reported in Supplementary file 2) with disciplines as random effect parameter to measure the relationship between the experimental manipulations and abstract rating. The tobit models were specified with a left-censoring at four and a right-censoring at 20. Figure 1—figure supplement 5 displays the data distribution for the outcome measure abstract rating. The data distribution for this measure was assumed to be normal.
 

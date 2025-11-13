@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Biomedical Engineering, Johns Hopkins University Baltimore United States
-2. https://ror.org/00za53h95 Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States
-3. https://ror.org/00za53h95 Kavli Neuroscience Discovery Institute (NDI), Johns Hopkins University Baltimore United States
+1. Department of Biomedical Engineering, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Kavli Neuroscience Discovery Institute (NDI), Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 

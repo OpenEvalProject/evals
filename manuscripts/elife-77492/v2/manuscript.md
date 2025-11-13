@@ -14,17 +14,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01fbde567 Max Planck Institute of Molecular Plant Physiology Potsdam Germany
-2. https://ror.org/05r7n9c40 Max Planck Institute for Terrestrial Microbiology Marburg Germany
-3. https://ror.org/027bh9e22 Institute of Biology Leiden, Leiden University Leiden Netherlands
-4. https://ror.org/04e209f39 Center for Synthetic Microbiology (SYNMIKRO) Marburg Germany
-5. https://ror.org/001w7jn25 Department of Biochemistry, Charité – Universitätsmedizin Berlin Berlin Germany
+1. Max Planck Institute of Molecular Plant Physiology Potsdam Germany ([ROR:01fbde567](https://ror.org/01fbde567))
+2. Max Planck Institute for Terrestrial Microbiology Marburg Germany ([ROR:05r7n9c40](https://ror.org/05r7n9c40))
+3. Institute of Biology Leiden, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+4. Center for Synthetic Microbiology (SYNMIKRO) Marburg Germany ([ROR:04e209f39](https://ror.org/04e209f39))
+5. Department of Biochemistry, Charité – Universitätsmedizin Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
 
 † Corresponding author
 
 ## Abstract
 
-Ammonium (NH 4 + ) is essential to generate the nitrogenous building blocks of life. It gets assimilated via the canonical biosynthetic routes to glutamate and is further distributed throughout metabolism via a network of transaminases. To study the flexibility of this network, we constructed an Escherichia coli glutamate auxotrophic strain. This strain allowed us to systematically study which amino acids serve as amine sources. We found that several amino acids complemented the auxotrophy either by producing glutamate via transamination reactions or by their conversion to glutamate. In this network, we identified aspartate transaminase AspC as a major connector between many amino acids and glutamate. Additionally, we extended the transaminase network by the amino acids β-alanine, alanine, glycine, and serine as new amine sources and identified d -amino acid dehydrogenase (DadA) as an intracellular amino acid sink removing substrates from transaminase reactions. Finally, ammonium assimilation routes producing aspartate or leucine were introduced. Our study reveals the high flexibility of the cellular amination network, both in terms of transaminase promiscuity and adaptability to new connections and ammonium entry points.
+Ammonium (NH4+) is essential to generate the nitrogenous building blocks of life. It gets assimilated via the canonical biosynthetic routes to glutamate and is further distributed throughout metabolism via a network of transaminases. To study the flexibility of this network, we constructed an Escherichia coli glutamate auxotrophic strain. This strain allowed us to systematically study which amino acids serve as amine sources. We found that several amino acids complemented the auxotrophy either by producing glutamate via transamination reactions or by their conversion to glutamate. In this network, we identified aspartate transaminase AspC as a major connector between many amino acids and glutamate. Additionally, we extended the transaminase network by the amino acids β-alanine, alanine, glycine, and serine as new amine sources and identified d-amino acid dehydrogenase (DadA) as an intracellular amino acid sink removing substrates from transaminase reactions. Finally, ammonium assimilation routes producing aspartate or leucine were introduced. Our study reveals the high flexibility of the cellular amination network, both in terms of transaminase promiscuity and adaptability to new connections and ammonium entry points.
 
 ## Introduction
 
@@ -42,9 +42,17 @@ Following these thoughts, we tried to assess whether alternative routes for ammo
 
 ## Results
 
-## Only some amino acids serve as an amine source
+### Only some amino acids serve as an amine source
 
 To study the flexibility of E. coli’s cellular amination network, we first generated a strain in which both canonical ammonia assimilation routes were disrupted. Accordingly, we deleted the genes encoding GDH (gdhA) and GOGAT (gltBD), which are responsible for 2-ketoglutarate amination under high and low ammonia concentrations, respectively (Helling, 1994; Kumar and Shimizu, 2010; Figure 1). The resulting glutamate auxotrophic strain (glut-aux, ΔgdhA ΔgltBD) was not able to grow in minimal medium with ammonium as the sole nitrogen source unless an amine group donor, such as glutamate, was provided in the medium (Figure 2). While d-glutamate-requiring E. coli mutants had been previously characterized (Dougherty et al., 1993), our strain lacking glutamate biosynthetic pathways represents the first strain for a systematic investigation of the metabolic network for amine distribution. To this end, we first tested whether other amino acids can replace glutamate as an amine source allowing growth of the glut-aux. We therefore characterized growth of the glut-aux strain when supplemented with one of the proteinogenic amino acids. We note that this growth experiment is different from the experiments commonly described in the literature, where amino acids were added to the medium without ammonium to serve as the sole nitrogen source (Neidhardt et al., 1996). In these experiments, the metabolic degradation of the amino acids to release ammonia suffices to enable growth. Conversely, for the glut-aux strain, growth complementation through the supplemented amino acids as an amine source must follow one of these options: (i) substitute glutamate as an amine source for the production of other nitrogenous compounds; (ii) serve as an amine group donor for 2-ketoglutarate to generate glutamate as an amine source; (iii) be further converted to compounds to serve as an amine group donor for 2-ketoglutarate amination; or (iv) be directly converted to glutamate (Figure 1). In the first three cases, the amination network of the cell needs to be flexible enough to adapt to different directionalities of at least some of the transamination reactions. As utilization of amino acids as amine source in the glut-aux strain might be dependent on the nitrogen-regulated (Ntr) response (Reitzer, 2003), we performed growth experiments with and without ammonia in the medium (light blue and magenta lines in Figure 2). As a control, we repeated the classical experiments of testing each amino acid as the sole nitrogen source with a wildtype strain. Here, amino acids are not required to directly donate their amine group but can rather support growth by releasing ammonia through their degradation (black lines in Figure 2). Besides the proteinogenic amino acids, we also sought to investigate whether the naturally occurring, non-proteinogenic amino acids β-alanine and ornithine could rescue the growth of the glut-aux strain. These amino acids are derived from aspartate or glutamate, respectively, which, due to the presence of respective transaminases, were amine sources for both glut-aux and wildtype. Thus, β-alanine and ornithine are directly connected to the amination network. In our experiments, we chose to use glycerol rather than glucose as a carbon source to avoid interference of glucose-dependent inducer exclusion and catabolite repression with amino acid utilization. Moreover, previous studies showed that E. coli acquires higher growth rates with glycerol as carbon and energy source when amino acids are provided as amine sources (Bren et al., 2016). To minimize selective pressure in the preculture and avoid accumulation of mutations prior to the experiment, all experiments were inoculated from cultures grown in glycerol minimal medium supplemented with 5 mM aspartate, the amino acid immediately supporting fastest growth of the glut-aux strain (Figure 2, Supplementary file 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig2-v2.jpg)
+
+**Figure 2.:** The glut-aux strain was grown in M9 medium with (blue line) or without ammonium (magenta line) and 20 mM glycerol as carbon source. E. coli wildtype (WT) was grown in M9 medium without ammonium (black line) and 20 mM glycerol as carbon source. 5 mM of the indicated amino acids or no amino acid as negative control were supplemented to test whether they can serve as an amine source (glut-aux strain) or an ammonium source (WT). Data shows representative growth as observed from triplicate repeats with errors <5%.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Black arrows indicate amino acid biosynthesis (number of steps indicated) from the fed carbon source glycerol. Amine introduction or removal is presented by * or **, respectively. Shapes around the amino acids represent whether both strains (rectangle with wavy borders), only glut-aux (rectangle), or only WT (hexagon) were rescued. Shape color indicates suggested rescue mechanism (indicated on the right; I–IV for glut-aux rescue, and deamination [orange] for WT rescue) based on literature search and findings in this work. Biosynthesis precursors and strain rescue are not correlated. The majority of amino acids expected to serve for direct transamination (II, green) rescued only the glut-aux.
 
 We found that only some amino acids rescued growth of the glut-aux strain and observed a high variety in growth rate upon feeding of different amino acids (Figure 2, Supplementary file 1). This generally correlated with the existence of known transaminase enzymes that enable glutamate production from the respective amino acids in E. coli (rescue mechanisms II and III, Figure 1). For example, aspartate, leucine, and tyrosine serving as cellular amine donor for glutamate generation from 2-ketoglutarate (rescue mechanism II, Figure 1) could be attributed to the activity of aspartate transaminase (AspC), tyrosine transaminase (TryB), and branched-chain amino acid transaminase (IlvE) (Gelfand and Steinberg, 1977). As these transaminases display considerable cross-reactivity (Gelfand and Steinberg, 1977; Inoue et al., 1988), each of these three amino acids might support the production of the others directly, without the need for glutamate as an amine donor. However, glutamate here still likely serves as the primary amine donor for most cellular nitrogenous compounds (Yang et al., 2018). Hence, AspC, TryB, and IlvE must also be fully reversible in the glut-aux strain to aminate 2-ketoglutarate to glutamate. While transaminases are generally reversible enzymes, their ability to effectively operate reversibly in vivo is not trivial as the [glutamate]/[2-ketoglutarate] ratio is very high (above 100) under physiological conditions (Bennett et al., 2009), making the reverse amine transfer onto 2-ketoglutarate to form glutamate thermodynamically challenging. Since the glut-aux strain grew with several amino acids as an amine source, we conclude that the cellular amination network must be sufficiently flexible to accept amine sources other than glutamate despite the potential thermodynamic barriers. However, since metabolite concentrations and especially the [glutamate]/[2-ketoglutarate] ratio in the glut-aux strain likely differ from that in a wildtype strain, the reverse transaminase activities might be favored in this synthetic strain. Of the supplied non-proteinogenic amino acids, ornithine rescued growth of the glut-aux strain in the absence of NH4Cl (and was used as a nitrogen source by the WT). In E. coli, ornithine is degraded to putrescine, which is used by the transaminase PatA to aminate 2-ketoglutarate to glutamate (Schneider et al., 2013; Schneider and Reitzer, 2012). Expression of this degradation pathway is induced by nitrogen limitation (Zimmer et al., 2000) and allows growth with ornithine (rescue mechanism III, Figure 1). In contrast, β-alanine was neither an amine source of the glut-aux strain nor served as a nitrogen source for the WT (Figure 2).
 
@@ -52,7 +60,7 @@ To prove amine transfer from the provided amino acids, we cultivated the glut-au
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig3-v2.jpg)
 
-**Figure 3.:** 15N labeling confirms amine assimilation from the supplied amino acid in the glutamate auxotrophic (glut-aux) strain.(A) The glut-aux strain was incubated in 15N-NH4Cl M9 medium with 20 mM glycerol as carbon source. 15N labeling pattern in analyzed proteinogenic amino acids (single letter code) upon feeding with 5 mM of unlabeled amino acids glutamate, proline, aspartate, tryptophan, or leucine as amine donors (three-letter code). The labeling patterns of the amino acids A, F, L, M, P, S, and T were identical to the supplied amino acids and hence only a representative dataset is shown. Data represents means of triplicate measurements with errors <5%. (B) Schematic presentation of expected ammonium incorporation in glut-aux grown on M9 with 15N-NH4Cl with 20 mM glycerol as carbon source and an unlabeled amino acid as ammonium source. Since the genes encoding glutamate dehydrogenase (GDH) and glutamine 2-ketoglutarate aminotransferase (GOGAT) are deleted in the glut-aux (red crosses), the glut-aux thus relies on the provided amino acid for biosynthesis of unlabeled (gray) glutamate. During glutamine biosynthesis, the glut-aux assimilates free ammonium (boxes) supplied as 115N-NH4Cl to form once-labeled glutamine that is used for carbamoyl-phosphate biosynthesis and thus results in once-labeled arginine.
+**Figure 3.:** (A) The glut-aux strain was incubated in 15N-NH4Cl M9 medium with 20 mM glycerol as carbon source. 15N labeling pattern in analyzed proteinogenic amino acids (single letter code) upon feeding with 5 mM of unlabeled amino acids glutamate, proline, aspartate, tryptophan, or leucine as amine donors (three-letter code). The labeling patterns of the amino acids A, F, L, M, P, S, and T were identical to the supplied amino acids and hence only a representative dataset is shown. Data represents means of triplicate measurements with errors <5%. (B) Schematic presentation of expected ammonium incorporation in glut-aux grown on M9 with 15N-NH4Cl with 20 mM glycerol as carbon source and an unlabeled amino acid as ammonium source. Since the genes encoding glutamate dehydrogenase (GDH) and glutamine 2-ketoglutarate aminotransferase (GOGAT) are deleted in the glut-aux (red crosses), the glut-aux thus relies on the provided amino acid for biosynthesis of unlabeled (gray) glutamate. During glutamine biosynthesis, the glut-aux assimilates free ammonium (boxes) supplied as 115N-NH4Cl to form once-labeled glutamine that is used for carbamoyl-phosphate biosynthesis and thus results in once-labeled arginine.
 
 To further validate that growth of the glut-aux strain is limited by the supply of amine groups from the amino acids provided in the medium, we cultivated it using different concentrations of amino acids (Figure 4). As expected, we found that biomass yield, as indicated by the maximal OD600, directly correlated with the concentration of the supplemented amino acid. All amino acids showed the same dependency of biomass yield on concentration, with the exception of ornithine, which supported roughly double the yield for each concentration. This is in line with the fact that transaminases can transfer both amine groups from the ornithine degradation intermediate putrescine to 2-ketoglutarate to form glutamate (Prieto-Santos et al., 1986) (rescue mechanism III, Figure 1). As this ornithine degradation pathway is induced by nitrogen starvation (Schneider et al., 2013; Schneider and Reitzer, 2012), growth of the glut-aux strain with ornithine as amine group donor was observed only when ammonia was omitted in the medium. The correlation of maximal OD600 to amino acid concentration confirms that amine supply from the amino acid limits biomass yield in the glut-aux strain in the same manner for all tested amino acids. To our surprise, glutamate was not the amine donor supporting fastest growth of the glut-aux strain. Even proline, which, in order to donate its amine group, needs to be converted to glutamate (rescue mechanism IV, Figure 1), supported faster growth (Figure 4). This, together with the fact that the growth rate increased proportionally with the glutamate concentration, indicates that glutamate uptake is limiting growth of the glut-aux strain.
 
@@ -60,23 +68,63 @@ To further validate that growth of the glut-aux strain is limited by the supply 
 
 **Figure 4.:** Cells were grown in ammonium-free M9 medium with 20 mM glycerol and the indicated concentrations of the amino acids glutamate, aspartate, proline, tryptophan, ornithine, and asparagine. As a comparison, wildtype (WT) was grown in ammonium-free M9 medium with 20 mM glycerol but with NH4Cl concentrations similar to the amino acid concentrations used. Data shows representative growth as observed from triplicate repeats with errors <5%.
 
-## The cellular amination network is highly promiscuous
+### The cellular amination network is highly promiscuous
 
 To investigate the contribution of different enzymes to the use of amino acids as an amine source, we decided to analyze the effects of several gene deletions. We specifically deleted genes encoding proteins essential for the certain glutamate-forming degradation pathways based on available documentation in the database Ecocyc (Keseler et al., 2021). First, we explored the use of proline as an amine source (Figure 2). We did not expect this amino acid to donate its amine group directly, but rather to be metabolized by PutA, encoding for a bifunctional flavoenzyme with proline dehydrogenase and 1-pyrroline-5-carboxylate dehydrogenase activities (Moxley et al., 2014), to glutamate (Frank and Ranhand, 1964), which would serve as an amine source (rescue mechanism IV, Figure 1).
 
 Indeed, upon deletion of putA, growth of the WT and glut-aux strain on proline as the sole ammonium source was abolished (Figure 5A). This confirmed that proline could only support growth via its native degradation pathway and was unable to serve as an amine source via a different pathway. We then focused on amino acids that are expected to directly donate their amine groups. For example, methionine, which could serve as an amine source, was previously found to be the main substrate for only a single transaminase: YbdL (Dolzan et al., 2004). However, deletion of ybdL in the ΔgdhA ΔgltBD strain did not affect growth with methionine as an amine donor (Figure 5—figure supplement 1), suggesting that the physiological contribution of this transaminase to the use of methionine as an amine source is negligible. YbdL was also shown to be the only transaminase able to efficiently accept histidine and phenylalanine (Dolzan et al., 2004; Inoue et al., 1988). Yet, the glut-aux ΔybdL strain did not show any growth retardation when using histidine or phenylalanine as an amine donor (Figure 5—figure supplement 1). Indeed, other transaminases are known to accept methionine and histidine, albeit at a substantially lower affinity and rate than their primary substrate, for example, aspartate transaminase AspC, tyrosine transaminase TyrB, and branched-chain amino acid transaminase IlvE (Inoue et al., 1988; Mavrides, 1987; Powell and Morrison, 1978). It therefore seems that the promiscuity of such transaminases enables effective use of methionine as an amine donor even in the absence of the enzyme preferring it as substrate. While previous studies already reported high enzymatic redundancy as a characteristic feature of transaminases (Lal et al., 2014), we aimed to further investigate the relevance of promiscuous transaminase activities for the utilization of external amine donors. Here, we focused on AspC, which is known to accept a range of amino acids (Lal et al., 2014). After constructing the glut-aux ΔaspC strain, we analyzed its growth on all previously tested 22 amino acids. We found that the glut-aux ΔaspC strain was unable to grow with histidine, tyrosine, phenylalanine, tryptophan, methionine, isoleucine, and leucine as amine donors, which all allowed growth of the glut-aux strain (gray lines in Figure 2, Figure 5B). This demonstrates promiscuity of AspC and reveals that, in its physiological context, this transaminase is even more versatile than previously reported. Although AspC had shown low specific transaminase activity with histidine, methionine, isoleucine, and leucine in vitro (Hayashi et al., 1993), our experiments suggest, however, that the enzyme is essential for the utilization of these amino acids as amine donors in vivo (rescue mechanisms II or III, Figure 1). Furthermore, TyrB and IlvE, which had shown higher specific in vitro activities with tyrosine, phenylalanine, and tryptophan compared to AspC (Hayashi et al., 1993), apparently did not complement the aspC deletion.
 
-## Engineering utilization of alanine as an amine donor
+![Figure 5.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig5-v2.jpg)
+
+**Figure 5.:** Aspartate transaminase (AspC) is responsible for the utilization of several amino acids. (A) Deletion of putA abolished growth with proline as an amine source in the glutamate auxotrophic (glut-aux) strain and as a nitrogen source in the wildtype (WT). (B) Deletion of aspC eliminates growth of the glut-aux with methionine, leucine, isoleucine, histidine, tyrosine, tryptophan, and phenylalanine as amine donors (gray lines). Experiments were carried out in M9 with ammonium containing 20 mM glycerol and 5 mM of the indicated amine sources. Data represents means of triplicates with <5% variation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Experiments were carried out in M9 with ammonium containing 20 mM glycerol and 5 mM of the indicated amine sources. Data represents means of triplicates with <5% variation.
+
+### Engineering utilization of alanine as an amine donor
 
 Despite the presence of two glutamate-producing alanine transaminases (AlaA, AlaC) as well as multiple transaminases that can promiscuously accept alanine (Kim et al., 2010; Peña-Soler et al., 2014), alanine did not serve as an amine source for the glut-aux strain, regardless of the presence or absence of ammonia in the medium (Figure 2). Even upon overexpression of the alanine transaminase isozymes AlaA and AlaC, no growth with alanine as an amine donor was observed (Figure 6A). However, we tested whether prolonged incubation of the glut-aux strain with and without overexpression of either AlaA or AlaC on 20 mM glycerol +5 mM alanine might trigger the emergence of spontaneous mutants. Indeed, in this experiment two cultures of the glut-aux strain overexpressing AlaA could use alanine as an amine donor. These spontaneous mutants arose after a cultivation time of 110 and 133 hr, respectively. Glut-aux strains overexpressing AlaC or not overexpressing any alanine transaminases did not grow within the duration of the experiment (Figure 6—figure supplement 1A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-v2.jpg)
+
+**Figure 6.:** (A) DadX mutation or deletion and alanine transaminase overexpression allows alanine utilization as an amine source. Growth of the glut-aux strains on M9 medium with ammonium and 20 mM glycerol with 5 mM alanine as an amine donor. (B) Overexpression of β-alanine-2-ketoglutarate aminotransferase (BaOAT) enables amine donation from β-alanine in the glut-aux strain. Glut-aux strain and wildtype (WT) overexpressing β-alanine-pyruvate aminotransferase (BaPAT) or β-alanine-2-ketoglutarate aminotransferase (BaOAT) where grown in media containing no N-source (WT) or ammonium chloride (glut-aux), 20 mM glycerol, and the indicated β-alanine concentrations. (C) DadA deletion and BhcA overexpression allow glycine utilization as an amine donor. Growth of the glut-aux strains + BhcA on M9 with ammonium and 20 mM glycerol with indicated glycine concentrations. Data represents triplicate measurements with <5% variation. (D) BhcA overexpression allows use of serine as an amine source, which is improved by additional deletion of dadA. Growth of the glut-aux strains + BhcA on M9 with ammonium and 20 mM glycerol with indicated serine concentrations. All data represents triplicate measurements with <5% variation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Growth of two biological replicates of glutamate auxotrophic (glut-aux) + alaA and glut-aux + alaC as well as glut-aux on M9 with ammonium and 20 mM glycerol as carbon source and 5 mM alanine. This experiment was carried out in technical duplicates (all shown) in different wells, of which both from glut-aux + alaA biological replicate 1 evolved towards growth on alanine. Isolated cultures of mutant 1 and 2 were analyzed by whole-genome sequencing. (B) Schematic presentation of 26 bp duplication (red) found in the dadX gene of the glut-aux + alaA mutant 1 and 1 bp deletion in the dadX gene glut-aux + AlaA mutant 2 in comparison to the glut-aux + alaA parent. Both mutations cause stop-codons (red crosses) within the dadX gene reading frame.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Growth of the glutamate auxotrophic (glut-aux) strains on M9 with ammonium and 20 mM glycerol with 5 mM alanine as an amine donor. Strains not overexpressing alanine transaminase cannot utilize alanine as an amine source. All data represents triplicate measurements with <5% variation.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The glutamate auxotrophic (glut-aux) + β-alanine-2-ketoglutarate transaminase (BaOAT) strain was grown in medium containing 20 mM glycerol with 5 mM β-alanine and either 14NH4 or 15NH4. Data represents means of three independent experiments.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Glut-aux strains not overexpressing BhcA were incubated in M9 with ammonium and 20 mM glycerol and 1.7 mM serine or 40 mM glycine as an amine donor. No growth was obtained, indicating the need for BhcA overexpression for the utilization of glycine or serine as amine sources. All data represents triplicate measurements with <5% variation.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A) DadA turnover rate with d-alanine (left), d-serine (middle), and glycine (right) measured in a dichlorophenolindophenole (DCPIP)-coupled assay. (B) BhcA turnover rate with serine (left) and oxaloacetate (right). To saturating concentrations of oxaloacetate (left) or serine (right), different concentrations of the respective other substrate were added in an assay coupling BhcA-mediated hydroxypyruvate formation to NADPH-dependent hydroxypyruvate reduction catalyzed by GhrA. Data are shown from n = 3 independent experiments at different substrate concentrations. Kinetic parameters are listed in Supplementary file 3 (DadA) and Supplementary file 4 (BhcA).
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Glycine is converted to serine by combined activity of GlyA and GcvTHP, which is then substrate for BhcA in a transamination reaction with oxaloacetate. The formed aspartate allows glutamate formation via native transaminases. DadA promiscuously deaminating serine to form hydroxypyruvate might be an intracellular serine sink and needed to be deleted for optimal growth of the glut-aux + BhcA with glycine or serine as an amine source. Notably, the BhcA substrate l-serine would first need to be converted to d-serine, for example, by promiscuously acting alanine racemase Alr, to be substrate for DadA. Green arrows indicate the transfer of ammonium.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/77492/elife-77492-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A) Glut-aux ΔdadA + BhcA grown on 15N-NH3Cl M9 medium or 14N-NH3Cl M9 medium with 20 mM glycerol as carbon source. (B) Wildtype (WT) grown on 15N-NH3Cl M9 medium or 14N-NH3Cl M9 medium with 20 mM glycerol as carbon source. For both strains, 15N labeling in amino acids (single-letter code) was analyzed upon feeding with 1.7 mM of unlabeled serine or 20 mM of unlabeled glycine. Data represents means of triplicate measurements with errors <5%.
+
 In the next step, we isolated single colonies on LB plates from the two AlaA overexpressing cultures. These colonies, upon transfer to M9 medium, grew immediately with 20 mM glycerol and 5 mM alanine, indicating that mutations had allowed their growth (Figure 6A). We sent two of the independently obtained isolates and the parent strain for genome sequencing. Analysis of the genome sequencing results revealed that both isolates had mutations in the alanine racemase gene dadX (Supplementary file 2, Figure 6—figure supplement 1B). The mutations were either a duplication of a 27 bp region from nucleotide 151 to nucleotide 177 (mutant 1) or a 1 bp deletion at nucleotide position 821 (of the 1071 nucleotide gene) (mutant 2). In both cases, the mutations resulted in a frameshift, indicating a loss of function of DadX. Alanine racemase diverts flux from l-alanine to d-alanine, which is either used for cell wall biosynthesis (Walsh, 1989) or degraded to pyruvate via d-alanine:quinone oxidoreductase (DadA) (Franklin and Venables, 1976). The absence of DadX activity likely reduces flux into this alanine sink, resulting in higher alanine availability, which might be responsible for growth rescue in the mutants. To verify this hypothesis, we deleted dadX in the evolved strain, as well as in the parental glut-aux strain. Both strains (with overexpression of AlaA) immediately grew with alanine as an amine donor (Figure 6A, Figure 6—figure supplement 2), verifying that reducing an important intracellular alanine sink allowed the overexpressed transaminase to use alanine as an amine donor to effectively sustain growth. Noteworthy, a deletion of DadA in the glut-aux strain overexpressing AlaA did not restore growth with alanine as an amine donor, indicating that the reversible conversion of l-alanine to d-alanine is already sufficient to reduce alanine availability below a critical level, where it cannot support enough flux via AlaA for cellular growth. Note that dadX is not essential as E. coli possesses additional genes that are able to provide sufficient d-alanine for cell wall biosynthesis (Kang et al., 2011; Wild et al., 1985).
 
-## Engineering the utilization of β-alanine as an amine donor
+### Engineering the utilization of β-alanine as an amine donor
 
 The non-proteinogenic amino acid β-alanine is neither a suitable amine donor for the glut-aux strain nor an N-source for the wildtype (Figure 2). However, the transamination product of β-alanine, malonate semialdehyde, plays a pivotal role as an intermediate for the biosynthesis of some biotechnologically important products, for example, 3-hydroxypropionate (Vidra and Németh, 2018). Hence, engineering the use of β-alanine as an amine donor for the glut-aux strain could potentially open new routes for selective 3-hydroxypropionate production. In order to test whether β-alanine usage can be engineered, two different β-alanine transaminases were overexpressed in the glut-aux and WT strains. These were the β-alanine-2-ketoglutarate aminotransferase from Saccharomyces kluyveri (BaOAT, UniProt ID A5H0J5) and the β-alanine-pyruvate aminotransferase from Pseudomonas aeruginosa (BaPAT, UniProt ID Q9I700). Overexpression of either BaPAT or BaOAT allowed the wildtype strain to grow using β-alanine as the sole source of ammonia (Figure 6B). The enzymes transfer the amine group from β-alanine onto the ketoacids pyruvate or 2-ketoglutarate to generate alanine and glutamate, respectively. Both alanine and glutamate serve as N-sources for the wildtype (Figure 2). The glut-aux strain however was only able to grow with β-alanine as an amine donor when BaOAT, but not BaPAT, was overexpressed (Figure 6B), which is in good agreement with our previous results that glutamate, but not alanine, can immediately serve as an amine donor in the glut-aux strain (Figure 2). To further confirm that the growth of the glut-aux + BaOAT strain was rescued by directly using β-alanine via the proposed transamination reaction catalyzed by BaOAT, we conducted a nitrogen-tracing experiment. The medium contained 15N-labeled ammonium together with 20 mM glycerol and 5 mM β-alanine. As expected, the majority of amino acids did not show any 15N labeling (Figure 6—figure supplement 3), confirming that their amino group originated from β-alanine, rather than from ammonium. The only exception were arginine and glutamine that were single-labeled, with the 15N label originating from glutamine synthetase activity (see above).
 
-## Overexpression of a glycine-oxaloacetate transaminase allows growth of the glut-aux strain with glycine after deletion of a glycine sink
+### Overexpression of a glycine-oxaloacetate transaminase allows growth of the glut-aux strain with glycine after deletion of a glycine sink
 
 Like alanine, glycine did not serve as an amine source in the glut-aux strain (Figure 2). However, glycine and serine are central metabolites of the reductive glycine pathway, which was previously shown to enable formatotrophic growth of E. coli. The key reaction of the pathway is the formation of glycine from free ammonium, CO2, and 5,10-methylene-THF via the reductive activity of the glycine cleavage system (Claassens et al., 2022; Kim et al., 2020). Transamination of glycine or serine instead of deamination can improve efficiency of the formate assimilation pathway (Claassens et al., 2022). As E. coli lacks a glycine transaminase, this amino acid cannot be directly generated by transamination of the respective ketoacid (glyoxylate). Instead, it is obtained from serine via the serine hydroxymethyl transferase reactions. To engineer the usage of glycine as an amine donor, we overexpressed the glycine-oxaloacetate transaminase from Paracoccus denitrificans (BhcA, UniProt ID A1B8Z3) in the glut-aux strain to form aspartate, which we have shown to support fast growth of the glut-aux strain (Figure 2).
 
@@ -84,11 +132,11 @@ However, growth of the glut-aux strain overexpressing BhcA was not restored upon
 
 Next, we tested whether serine (not an amine source for the glut-aux strain; Figure 2) served as an amine donor for the glut-aux strain overexpressing BhcA. In good agreement with the conclusion of our glycine trials, we found that the growth of the glut-aux, glut-aux ∆dadA, glut-aux ∆gcvTHP, and glut-aux ∆dadA ∆gcvTHP strains (all overexpressing BhcA) was restored upon addition of low serine concentrations (Figure 6D). In our growth experiments, serine concentrations above 1.7 mM seemed to be toxic to the strain, which can be explained by the inhibition of isoleucine and aromatic amino acid biosynthesis by serine-derived hydroxypyruvate (Hama et al., 1990). The glut-aux ∆dadA reached the highest OD600 on all tested serine concentrations, indicating that also here deletion of DadA is beneficial as it removes a sink for either glycine or serine directly (Figure 6D). To further demonstrate serine transamination catalyzed by BhcA with oxaloacetate as amine acceptor, we conducted in vitro measurements with purified BhcA. The enzymatic coupling assay indeed confirmed amine transfer from serine to oxaloacetate (Figure 6—figure supplement 5B, Supplementary file 3). The resulting KM of 7 mM and a kcat of 25.9 s–1 (Supplementary file 3) indicated a sufficient turnover of serine and oxaloacetate into aspartate and hydroxypyruvate. To further verify that the strain is indeed using the amine from glycine or serine, respectively, we conducted a labeling experiment growing the glut-aux ΔdadA overexpressing BhcA and a WT control on M9 with 15NH4 or M9 with 14NH4 supplemented with 20 mM glycerol and 20 mM glycine, or 1.7 mM serine. Aspartate, proline, serine, alanine, and glycine were unlabeled in the glut-aux ΔdadA strain overexpressing BhcA, confirming that indeed all amines were derived only from the provided amino acid and not from free ammonium in the medium (Figure 6—figure supplement 7).
 
-## Exploring alternative routes of ammonium assimilation
+### Exploring alternative routes of ammonium assimilation
 
 After testing and engineering the glut-aux strain to use amino acids as amine group donors, we aimed to explore alternative ammonium assimilation pathways, thus rewiring canonical ammonium assimilation via glutamate. For this, we used the ammonium assimilation-deficient glut-aux strain to test the enzymes aspartate ammonia lyase (AspA) and leucine dehydrogenase (LeuDH) for their activity to supply all cellular amines for growth. Both aspartate and leucine previously were amine sources for the glut-aux strain, but while aspartate allowed fastest growth of all amino acids tested, leucine supported only very slow growth (Figure 2, Supplementary file 2).
 
-## Aspartate ammonia lyase
+### Aspartate ammonia lyase
 
 Since aspartate served as an efficient amine donor (Figure 2), we investigated whether it could also replace glutamate as the formation product of ammonium assimilation via the reverse activity of aspartate ammonia lyase (AspA; UniProt ID P0AC38, fumarate + NH4 = aspartate), an E. coli native reaction. This enzyme canonically operates as part of the aspartate utilization/degradation pathway releasing ammonia. However, the thermodynamics of this reaction reveal a full reversibility with a ΔrG’m of 4 [kJ/mol] (in the aspartate-forming direction at a concentration of 1 mM for all reactants; http://equilibrator.weizmann.ac.il/). We hence overexpressed AspA in the glut-aux strain and analyzed its growth on a variety of carbon sources (Figure 7A). Here, growth of the strain is dependent on both the ammonium assimilation activity to form aspartate and the subsequent aminotransferase activity to rescue the glut-aux strain (via rescue mechanism II, Figure 1). Growth of the glut-aux strain overexpressing AspA (+AspA) was indeed observed on all tested carbon sources (Figure 7A), suggesting that aspartate and AspA can replace the canonical glutamate-based ammonium assimilation pathway. The glut-aux + AspA strain grew fastest on carbon sources closest to fumarate, the substrate of AspA (2-ketoglutarate, succinate, malate, fumarate). Other carbon sources (glucose, xylose, glycerol, acetate), which do not directly generate fumarate, also supported growth, but with much higher doubling times. Assimilation of free ammonium from the medium by the glut-aux + AspA strain was confirmed by a 15N labeling experiment comparing proteinogenic amino acid labeling of the glut-aux + AspA strain with the WT (serving as a positive control) upon growth on 20 mM succinate with either 15NH4 or 14NH4. Here, the WT and the glut-aux + AspA strain, showed identical labeling (Figure 7C).
 
@@ -96,7 +144,7 @@ Since aspartate served as an efficient amine donor (Figure 2), we investigated w
 
 **Figure 7.:** (A) Growth of wildtype (WT), glutamate auxotrophic strain (glut-aux), and glut-aux + aspA on M9 with ammonium and indicated carbon sources. Overexpression of aspartate ammonia lyase allows the glut-aux to assimilate free ammonium via fumarate amination. (B) Growth of glut-aux and glut-aux + LeuDH from Bacillus cereus or Lysinibacillus sphaericus on M9 with ammonium, 20 mM glycerol as carbon source and the indicated additional substrates. Overexpression of LeuDH allows the glut-aux to assimilate free ammonium from the medium in presence of 4-methyl-2-oxopentanoate (MOP). (C) Representative dataset for nitrogen labeling results from glut-aux + AspA, glut-aux + LeuDH, and WT strains. Cells were grown either with 15NH4 or 14NH4 and 20 mM succinate (glut-aux + AspA), 20 mM glycerol + 0.5 mM MOP (glut-aux + LeuDH, from B. cereus or L. sphaericus), or 20 mM glycerol (WT). All strains were grown in M9 medium with ammonium. Data represents triplicate experiments with <5% variation.
 
-## Leucine dehydrogenase
+### Leucine dehydrogenase
 
 In our initial experiments, we showed that leucine can serve as an amine group donor in the glut-aux strain (Figure 2, via rescue mechanism II). To test whether we can engineer the glut-aux strain to produce leucine for the concomitant transaminase reactions, we overexpressed leucine dehydrogenase (LeuDH), which catalyzes the reductive amination of 4-methyl-2-oxopentanoate (MOP) to leucine. LeuDH is absent in the repertoire of E. coli’s enzymes, hence we separately overexpressed two LeuDH genes, one from Bacillus cereus (Li et al., 2009) and the other from Lysinibacillus sphaericus (Lu et al., 2016). In initial experiments, the glut-aux + LeuDH did not grow in minimal media with 20 mM glycerol. As MOP is not a central metabolite, its concentration might be limiting the activity of the enzyme. Consequently, we observed growth of the glut-aux strain only upon supplementation with catalytic amounts of MOP, which served as ammonium acceptor in the amination reaction catalyzed by LeuDH (Figure 7B). We note that the MOP concentrations supplemented to the medium were at least tenfold lower compared to the 5 mM leucine addition, which served as a positive control in the experiments. The glut-aux strain overexpressing B. cereus LeuDH growing on glycerol and 0.2 and 0.5 mM MOP reached twice the OD600 obtained for the glut-aux strain growing on glycerol and 5 mM leucine. This yield difference indicates a recycling of MOP through alternating activities of LeuDH and transaminases, fixing ammonium and transferring amine groups to other ketoacids. Growth of the glut-aux strain overexpressing L. sphaericus LeuDH resulted in lower yields than achieved with B. cereus LeuDH overexpression, and also lower yields than seen for the glut-aux with 5 mM leucine, indicating lower enzyme efficiency under the tested conditions. To verify ammonium assimilation via LeuDHs, the 15N labeling in proteinogenic amino acids was analyzed after growing the glut-aux + LeuDH strains with 20 mM glycerol, 0.5 mM MOP, and either with 15NH4 or 14NH4 (Figure 7C). The observed single label for the analyzed amino acids alanine, phenylalanine, methionine, proline, serine, and threonine once again confirms operation of the LeuDH’s ammonium entry point (Figure 7C).
 
@@ -114,19 +162,150 @@ Altogether, our research addressed three distinct and complementary aspects rega
 
 ## Materials and methods
 
-## Strains
+### Strains
 
 All E. coli strains used in this study are listed in Table 1. Strain SIJ488, which carries inducible recombinase and flippase genes (Jensen et al., 2015), was used as wildtype for the generation of deletions. Gene deletions were performed by λ-red recombineering or P1-transduction as described below.
 
-## Gene deletion via P1 transduction
+**Table 1.**
+ Strains and plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description/deletions</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E. coli strains</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DH5α</td>
+      <td>Cloning of overexpression constructs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SIJ488</td>
+      <td>WT, integrated λ-red recombinase and flippase</td>
+      <td>Jensen et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Glut-aux</td>
+      <td>ΔgdhA ΔgltBD</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Glut-aux ΔybdL</td>
+      <td>ΔgdhA ΔgltBD ΔybdL</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Glut-aux ΔputA</td>
+      <td>ΔgdhA ΔgltBD ΔputA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔputA</td>
+      <td>ΔputA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Glut-aux ΔaspC</td>
+      <td>ΔgdhA ΔgltBD ΔaspC</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Glut-aux ΔdadX</td>
+      <td>ΔgdhA ΔgltBD ΔdadX</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Glut-aux ΔdadA</td>
+      <td>ΔgdhA ΔgltBD ΔdadA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Glut-aux Δgcv</td>
+      <td>ΔgdhA ΔgltBD ΔgcvTHP</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Glut-aux Δgcv ΔdadA</td>
+      <td>ΔgdhA ΔgltBD ΔgcvTHP ΔdadA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>JW0999</td>
+      <td>KEIO ΔputA</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASS</td>
+      <td>Overexpression plasmid with p15A origin, streptomycin resistance, constitutive strong promoter</td>
+      <td>Wenk et al., 2018</td>
+    </tr>
+    <tr>
+      <td>ASS-aspA</td>
+      <td>ASS backbone for overexpression of aspA from E. coli</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ASS-alaA</td>
+      <td>ASS backbone for overexpression of alaA from E. coli</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ASS-alaC</td>
+      <td>ASS backbone for overexpression of alaC from E. coli</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ASS-leuDHB. cereus</td>
+      <td>ASS backbone for overexpression of leucine dehydrogenase from Bacillus cereus</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ASS-leuDHL. sphaericus</td>
+      <td>ASS backbone for overexpression of leucine dehydrogenase from Lysinibacillus sphaericus</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ASS-BAPAT</td>
+      <td>ASS backbone for overexpression of β-alanine-pyruvate-aminotransferase from Pseudomonas aeruginosa</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ASS-BAOAT</td>
+      <td>ASS backbone for overexpression of β-alanine-2-ketoglutarate-aminotransferase from Saccharomyces kluyveri</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ASS-BhcA</td>
+      <td>ASS backbone for overexpression of glycine-oxaloacetate aminotransferase from Paracoccus denitrificans</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Gene deletion via P1 transduction
 
 Deletions of putA and dadX were generated by P1 phage transduction (Thomason et al., 2007). Strains from the Keio collection carrying single gene deletions with a kanamycin-resistance gene (KmR) as selective marker were used as donor strains (Baba et al., 2006). Selection for strains that had acquired the desired deletion was performed by plating on appropriate antibiotics (kanamycin [Km]) and confirmed by determining the size of the respective genomic locus via PCR using DreamTaq polymerase (Thermo Scientific, Dreieich, Germany) and the respective KO-Ver primers (Supplementary file 5). Additionally, it was confirmed that no copy of the gene to be deleted was present anywhere in the genome by PCR using DreamTaq polymerase (Thermo Scientific) and internal primers binding inside of the coding sequence of the gene. To remove the selective marker, a fresh culture was grown to OD600 ~ 0.2, followed by inducing flippase expression by adding 50 mM l-rhamnose and cultivating for ~4 hr at 30°C. Loss of the antibiotic resistance was confirmed by identifying individual colonies that only grew on LB in the absence of the respective antibiotic and by PCR of the genomic locus using the locus-specific KO-Ver primers.
 
-## Gene deletion by recombineering
+### Gene deletion by recombineering
 
 For gene deletion by recombineering, Km resistance cassettes were generated via PCR – ‘KO’ primers with 50 bp homologous arms are listed in Supplementary file 5 – using the Km cassette from pKD4 (pKD4 was a gift from Barry L. Wanner [Addgene plasmid# 45605; http://n2t.net/addgene:45605; RRID:Addgene_45605 Datsenko and Wanner, 2000; Baba et al., 2006]), or in case of the aspC deletion the chloramphenicol (Cap) cassette from pKD3 (pKD3 was a gift from Barry L. Wanner [Addgene plasmid# 45604; http://n2t.net/addgene:45604; RRID:Addgene_45604]). To prepare cells for gene deletion, fresh cultures were inoculated in LB and the recombinase genes were induced by the addition of 15 mM l-arabinose at OD ~0.4–0.5. After incubation for 45 min at 37°C, cells were harvested and washed three times with ice-cold 10% glycerol (11,000 rpm, 30 s, 2°C). Approximately 300 ng of Km cassette PCR product was transformed via electroporation (1 mm cuvette, 1.8 kV, 25 µF, 200 Ω). After selection on Km, gene deletions were confirmed via PCR using ‘KO-Ver’ primers (Supplementary file 5). To remove the Km cassette, 50 mM l-rhamnose, which induces flippase gene expression, was added to an exponentially growing 2 mL LB culture at OD 0.5; induction time was ≥3 hr at 30°C. Colonies were screened for Km sensitivity, and removal of antibiotic resistance cassette was confirmed by PCR (using ‘KO-Ver’ primers).
 
-## Plasmid construction
+### Plasmid construction
 
 For overexpression, genes encoding for LeuDHs from B. cereus (LeuDHB. cereus, P0A392) and L. sphaericus (LeuDHL. sphaericus, B1HRW1), aspartate ammonia lyase from E. coli (AspA, P0AC38), β-alanine ketoglutarate transaminase from S. kluyveri (BAOAT, A5H0J5), β-alanine pyruvate transaminase from P. aeruginosa (BAPAT, Q9I700), and glycine-oxaloacetate aminotransferase from P. denitrificans (BhcA, A1B8Z3) were synthesized after removal of restriction sites relevant for cloning (Zelcbuch et al., 2013) and codon adaptation to E. coli’s codon usage (Grote et al., 2005). Genes were synthesized by Twist Bioscience (San Francisco, CA). Alanine transaminase genes alaA and alaC were amplified from E. coli’s genome with high-fidelity Phusion Polymerase (Thermo Scientific) using primer pairs alaA-amp_fwd, alaA-amp_rvs and alaC-amp_fwd, alaC-amp_rvs, respectively (Supplementary file 5).
 
@@ -134,23 +313,23 @@ Cloning was carried out in E. coli DH5α. All genes were cloned via Mph1103I and
 
 The plasmid for the expression of the dadA gene was retrieved from the ASKA collection (Kitagawa et al., 2005). The plasmids for the expression of the bhcA and ghrA genes were described in previous publications (Miller et al., 2020; Schada von Borzyskowski et al., 2019).
 
-## Media and growth experiments
+### Media and growth experiments
 
 LB medium (1% NaCl, 0.5% yeast extract, 1% tryptone) was used for cloning, generation of deletion strains, and strain maintenance. When appropriate, Km (25 μg/mL), ampicillin (100 μg/mL), streptomycin (100 μg/mL), or chloramphenicol (30 μg/mL) were used but omitted for growth experiments. Growth experiments were carried out in standard M9 minimal media (50 mM Na2HPO4, 20 mM KH2PO4, 1 mM NaCl, 20 mM NH4Cl, 2 mM MgSO4 and 100 μM CaCl2, 134 μM EDTA, 13 μM FeCl3·6H2O, 6.2 μM ZnCl2, 0.76 μM CuCl2·2H2O, 0.42 μM CoCl2·2H2O, 1.62 μM H3BO3, 0.081 μM MnCl2·4H2O) or in M9 media lacking NH4Cl. Carbon sources were used as indicated in the text. Unless otherwise specified, l-isomers of amino acids were used if extant. For growth experiments, overnight cultures were incubated in 4 mL M9 medium containing 20 mM glycerol supplemented with 5 mM aspartate. Cultures were harvested (6000×g, 3 min) and washed three times in M9 medium (w/ or w/o NH4Cl) to remove residual carbon and NH4Cl sources. Washed cells were used to inoculate growth experiments to an optical density (OD600) of 0.01 in 96-well microtiter plates (Nunclon Delta Surface, Thermo Scientific) at 37°C. Each well contained 150 μL of culture and 50 μL mineral oil (Sigma-Aldrich) to avoid evaporation while allowing gas exchange. Growth was monitored in technical triplicates if not stated otherwise at 37°C in BioTek Epoch 2 Microtiterplate reader (BioTek, Bad Friedrichshall, Germany) by absorbance measurements (OD600) of each well every ~10 min with intermittent orbital and linear shaking. Blank measurements were subtracted and OD600 measurements were converted to cuvette OD600 values by multiplying with a factor of 4.35 as previously established empirically for the instruments. Growth curves were plotted in MATLAB and represent averages of measurements of technical replicates.
 
-## Isolation and sequence analysis of glut-aux ASS-alaA mutants
+### Isolation and sequence analysis of glut-aux ASS-alaA mutants
 
 The glut-aux strain + alaA was inoculated to OD600 of 0.02 in tube cultures of 4 mL M9 + 20 mM glycerol + 5 mM alanine. Cell growth was monitored during prolonged incubation at 37°C for up to 14 days. Within that time several cultures started to grow and reached an OD above 1.0. Cells were streaked out on LB plates with streptomycin (to maintain the pZ-ASS-alaA plasmid) by dilution streak to generate single colonies. Isolates were inoculated into tube cultures of 4 mL M9 + 20 mM glycerol + 5 mM alanine, and the ones that immediately grew were used in genome sequence analysis. Genomic DNA was extracted using the Macherey-Nagel NucleoSpin Microbial DNA purification Kit (Macherey-Nagel, Düren, Germany) from 2 × 109 cells of an overnight culture in LB medium supplied with streptomycin and chloramphenicol (to maintain pZ-ASS-alaA plasmid). Construction of (microbial short insert libraries) PCR-free libraries for single-nucleotide variant detection and generation of 150 bp paired-end reads on an Illumina HiSeq 3000 platform were performed by Novogene (Cambridge, UK). Reads were mapped to the reference genome of E. coli MG1655 (GenBank accession no. U00096.3) using Breseq (Barrick Lab, TX) (Deatherage and Barrick, 2014). Using algorithms supplied by the software package, we identified single-nucleotide variants (with >50% prevalence in all mapped reads) and searched for regions with coverage deviating more than 2 SDs from the global median coverage.
 
-## 15N isotopic labeling of proteinogenic amino acids
+### 15N isotopic labeling of proteinogenic amino acids
 
 To elucidate the origin of the nitrogen in amino acids, we used 15N isotope-tracing experiments. Proteinogenic amino acids were analyzed after cell growth in M9 containing 15NH4Cl (Sigma-Aldrich, Germany). Cells (1 mL of OD600 1) were harvested by centrifugation (6000×g) after reaching stationary phase and washed in H2O. Proteins were hydrolyzed in 6 N HCl, at 95°C for 24 hr (You et al., 2012). HCl was removed by evaporation under an air stream at 95°C. Samples were then resuspended in 1 mL H2O, insoluble compounds were removed by centrifugation (10 min, 16,000×g), and supernatants were used for analysis. Amino acid masses were analyzed by UPLC-ESI-MS as described previously (Giavalisco et al., 2011) with a Waters Acquity UPLC system (Waters) using a HSS T3 C18 reversed-phase column (100 mm × 2.1 mm, 1.8 μm; Waters). The mobile phases were 0.1% formic acid in H2O (A) and 0.1% formic acid in acetonitrile (B). The flow rate was 0.4 mL/min with a gradient of 0–1 min – 99% A; 1–5 min – linear gradient from 99% A to 82%; 5–6 min – linear gradient from 82% A to 1% A; 6–8 min – kept at 1% A; 8–8.5 min – linear gradient to 99% A; 8.5–11 min – re-equilibrate. Mass spectra were acquired using an Exactive mass spectrometer (Thermo Scientific) in positive ionization mode, with a scan range of 50.0–300.0 m/z. The spectra were recorded during the first 5 min of the LC gradients. Data analysis was performed using Xcalibur (Thermo Scientific). Amino acid standards (Sigma-Aldrich) were analyzed for the determination of the retention times under the same conditions.
 
-## Protein purification
+### Protein purification
 
 To produce DadA and GhrA proteins for in vitro characterization, E. coli BL21 cells were transformed with the plasmid containing the respective gene. The cells were then grown on LB agar plates containing 50 μg/mL Km or 100 μg/mL ampicillin at 37°C overnight. Grown cells were used to inoculate a liter of selective terrific broth (TB). The expression cultures were grown overnight at 25°C in a shaking incubator. Their biomass was collected by centrifugation at 6000×g for 15 min at room temperature. The cells were resuspended in twice their volume of buffer A (50 mM HEPES/KOH, pH 7.8, 500 mM NaCl). The cells were lysed with a Microfluidizer (LM-10 H10Z, Microfludics, Westwood, USA) at 16.000 PSI for three passes on ice and the lysate was cleared by ultracentrifugation at 100,000×g for 45 min at 4°C and subsequently filtered through a 0.45 μm PTFE filter. The filtered lysate was loaded onto a 1 mL HisTrap FF (GE Healthcare, Freiburg, Germany) and unbound protein was removed with 20 column volumes of 15% buffer B (50 mM HEPES/KOH, pH 7.8, 500 mM NaCl, 500 mM imidazole) in buffer A. The protein was then eluted in 100% buffer B. The protein was desalted with a HiTrap 5 ml Desalting column (GE Healthcare) and a desalting buffer (50 mM HEPES/KOH, 50 mM NaCl, 20% [v/v] glycerol). Protein concentrations were determined by the protein’s theoretical extinction coefficient and their absorbance at 280 nm. BhcA was expressed and purified as described previously (Schada von Borzyskowski et al., 2019).
 
-## Measurement of enzyme activity
+### Measurement of enzyme activity
 
 The activities of all tested enzymes were measured with a Cary 60 UV-Vis spectrophotometer (Agilent Technologies GmbH, Waldbronn, Germany) at 37°C. To test the transaminase activity of BhcA with serine, the absorbance at 365 nm of the reaction mix (50 mM HEPES/KOH, pH 7.5, 0.7 mM NADPH, 7 mM OAA, 30 µg GhrA, and 2.5 µg BhcA; modified based on Schada von Borzyskowski et al., 2019) was tracked over time. The reaction was started by adding varying concentrations of serine to the mixture, and the resulting slope in absorbance decrease was measured.
 

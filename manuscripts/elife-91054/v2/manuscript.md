@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/024d6js02 Department of Cell Biology, Faculty of Science, Charles University Prague Czech Republic
-2. https://ror.org/053avzc18 Institute of Molecular Genetics, Czech Academy of Sciences Prague Czech Republic
+1. Department of Cell Biology, Faculty of Science, Charles University Prague Czech Republic ([ROR:024d6js02](https://ror.org/024d6js02))
+2. Institute of Molecular Genetics, Czech Academy of Sciences Prague Czech Republic ([ROR:053avzc18](https://ror.org/053avzc18))
 
 † Corresponding author
 
@@ -33,27 +33,124 @@ In this study, we set out to analyse the potential role of the SEL-5 kinase in W
 
 ## Results
 
-## Loss of SEL-5 affects migration of QL neuroblast descendants
+### Loss of SEL-5 affects migration of QL neuroblast descendants
 
 Q cell descendants (Q.d) migration is dependent on EGL-20/Wnt signalling. While on the right side of the L1 larva QR divides and QR.d migrate in the default anterior direction, on the left side QL.d respond to the EGL-20 signal produced in several cells around the rectum by expressing the homeotic gene mab-5 and migrate to the posterior. In the absence of active EGL-20 signalling, mab-5 is not expressed and QL.d migrate to the anterior (Salser and Kenyon, 1992; Figure 1A). To visualize Q.d migration, we utilized Pmec-7::gfp expressing transgene muIs32 which is, apart from other cells, active in AVM and PVM touch neurons, which are QR and QL descendants, respectively (Ch’ng et al., 2003). We performed RNA interference (RNAi) against sel-5 in wild type background and observed no effect on QL.d migration (Figure 1B). To increase the sensitivity of the RNAi approach, we repeated the RNAi experiment using vps-29(tm1320) mutant strain. This strain harbours a null mutation in the VPS-29 retromer subunit, displays only weakly penetrant QL.d migration defect (Coudreuse et al., 2006), and has previously been used as a sensitized background to uncover genes required for Q.d migration (Harterink et al., 2011b; Lorenowicz et al., 2014). RNAi against sel-5 significantly increased the QL.d migration defect of vps-29(tm1320) (Figure 1B, Figure 1—figure supplement 1). To verify the results obtained with RNAi, we assessed the QL.d migration in sel-5(ok363) and sel-5(ok149) mutants. Similarly to RNAi results, mutation of sel-5 alone did not affect QL.d migration while sel-5 vps-29 double mutants displayed an almost fully penetrant defect (Figure 1C and D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig1-v2.jpg)
+
+**Figure 1.:** (A) QL neuroblast lineage and a cartoon indicating the position of terminally differentiated neurons (depicted with empty circles). (A has been adapted from Figure 1 of Rella et al., 2016.) The aberrant position of PVM neuron, as observed in QL.d migration defect, is highlighted in magenta. (B) RNAi against sel-5 increases the penetrance of vps-29 QL.d migration defect compared to the control (L4440) RNAi. No defect is observed in wild type background. (C) PVM position in L2 larvae of control (transgene only) and sel-5 vps-29 double mutant animals. PVM position indicated with white arrowhead, neurons visualized by expression of Pmec-7::gfp transgene muIs32, scale bar represents 100 μm. (D) Mutation in sel-5 results in increased penetrance of QL.d migration defect of vps-29 and lin-17, but not mig-1 mutants. (E) Examples of mild and severe alteration of tail tip morphology in sel-5 vps-29 double mutants. (F) Shortened transcripts are produced from the sel-5 locus in both ok363 and ok149 alleles. Potential protein products resulting from these transcripts are depicted, showing the impact of the truncation on the kinase domain (dark grey box). Extra amino acids resulting from a frameshift and thus not present in the wild type protein are also depicted (light grey box). The position of the active site is indicated. For (B) and (D), results are shown as % of WT and QL.d animals. Fisher’s exact test was performed to assess the difference between the samples. Bonferroni correction for multiple testing was applied. For (B), a representative RNAi experiment is shown, n > 55 per condition, *p-value<0.02, additional experiments provided in Figure 1—figure supplement 1. For (D), data combined from three independent experiments are shown, n > 150 animals in total for each strain, **p-value<0.002, ***p-value<0.0002, ns, not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Results are shown as % of WT and QL.d animals. Fisher’s exact test was performed to assess the difference between the samples. Bonferroni correction for multiple testing was applied, n > 55 per condition, ***p-value<0.0002, ns, not significant.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The exons of sel-5 are represented by white rectangles and are numbered. Deletions found in the ok149 and ok363 alleles are shown.
 
 The loss of vps-29 affects EGL-20/Wnt signalling at the level of Wnt production (Yang et al., 2008). We further tested whether loss of sel-5 could enhance partially penetrant defects in QL.d migration in mutants acting at a different step of the EGL-20/Wnt pathway. We tested two Frizzled mutants which both serve to receive the EGL-20 signal in the QL, albeit to a different extent (Zinovyeva et al., 2008). The loss of sel-5 strongly increased the weak QL.d migration defect of the lin-17/Frizzled mutants but did not affect the already more penetrant QL.d defect of mig-1/Frizzled mutant animals (Figure 1D).
 
 We next asked whether loss of sel-5 in the vps-29 background affects other Wnt-dependent processes such as the polarization of the ALM and PLM neurons, CAN neuron migration, or T cell polarity. Polarization of ALM and PLM is regulated by several Wnt proteins (Pan et al., 2006; Prasad and Clark, 2006; Hilliard and Bargmann, 2006), CAN neuron migration is governed predominantly by CWN-2 with a minor contribution from CWN-1 and EGL-20 (Zinovyeva and Forrester, 2005; Zinovyeva et al., 2008) and T cell polarity depends on the LIN-44/Wnt signal (Herman et al., 1995). We observed weakly penetrant ALM polarization defects in both sel-5(ok363) vps-29 and sel-5(ok149) vps-29 double mutants, a very mild PLM polarization defect was detected in a strain carrying the ok149 allele (Table 1). In addition, mildly penetrant anterior displacement of the CAN neuron was observed in the double mutants, while approximately 17% of the double mutant animals carrying the ok149 allele did not correctly form the phasmid sensillum, which indicates defects in T cell polarization (Table 1). Apart from these Wnt-dependent phenotypes, we also observed reduced brood size in the double mutants compared to controls (Table 1), defective tail formation (Figure 1E), and a progressive egg-laying defect leading to a bag-of-worms phenotype.
 
+**Table 1.**
+ Phenotypes of sel-5 and vps-29 single and double mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>ALM (%)*</th>
+      <th>PLM (%)†</th>
+      <th>CAN (%) ‡</th>
+      <th>Dye filling (%) §</th>
+      <th>Fecundity (n) ¶</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild type</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>0.5</td>
+      <td>280 ± 41</td>
+    </tr>
+    <tr>
+      <td>sel-5(ok149)</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8.9</td>
+      <td>4.7</td>
+      <td>236 ± 24</td>
+    </tr>
+    <tr>
+      <td>sel-5(ok363)</td>
+      <td>0.0</td>
+      <td>0,0</td>
+      <td>10.9</td>
+      <td>1.0</td>
+      <td>249 ± 37</td>
+    </tr>
+    <tr>
+      <td>vps-29(tm1320)</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.9</td>
+      <td>4.3</td>
+      <td>221 ± 28</td>
+    </tr>
+    <tr>
+      <td>sel-5(ok149) vps-29</td>
+      <td>29.9</td>
+      <td>9.1</td>
+      <td>17.7</td>
+      <td>17.4</td>
+      <td>132 ± 40</td>
+    </tr>
+    <tr>
+      <td>sel-5(ok363) vps-29</td>
+      <td>7.2</td>
+      <td>2.8</td>
+      <td>16.3</td>
+      <td>7.1</td>
+      <td>159 ± 23</td>
+    </tr>
+  </tbody>
+</table>
+
+_*% of animals with axons of one or both ALM reversed/bipolar, n > 60.†% of animals with axons of one or both PLM neurons reversed, n > 60.‡% of CAN neurons located anteriorly of V3 seam cell, n > 40.§% of animals with one or both phasmid sensilla not dyed with DiI, n > 40.¶Average number of progeny from five hermaphrodites,± s.d._
+
 The penetrance of the observed phenotypes was not the same in the two sel-5 alleles. This was unexpected as both alleles carry deletions that hit the kinase domain of SEL-5 protein. We were able to amplify shorter than wild type transcripts from both sel-5(ok363) and sel-5(ok149) animals using primers in exon 1 and exon 17 (Figure 1F, Figure 1—figure supplement 2). Sequencing of the ok363 transcript revealed that amino acids 1–243 of the wild type protein followed by additional 32 amino acids would be translated due to a frameshift and a premature stop codon. This protein encompasses a larger part of the SEL-5 kinase domain including the active site. In agreement with data published by Fares and Greenwald, 1999, sequencing of the ok149 transcript revealed that it can give rise to a protein containing the first 153 amino acids of SEL-5 followed by 21 additional amino acids and thus is devoid of the active site (Figure 1F). If such truncated proteins are present in the mutants, either one or both may possess some residual activity that is responsible for the observed phenotypic differences.
 
-## SEL-5 is required in EGL-20/Wnt-producing cells to direct QL.d migration
+### SEL-5 is required in EGL-20/Wnt-producing cells to direct QL.d migration
 
 The asymmetric migration of the Q neuroblast is regulated both cell-autonomously and non-autonomously. To analyse the tissue-specific requirement of SEL-5 in QL.d migration, we expressed full-length SEL-5 tagged with GFP at its N-terminus under the control of different tissue-specific promoters in a sel-5 vps-29 background and assayed QL.d migration. The expression of SEL-5 from the egl-20 promoter (Coudreuse et al., 2006) resulted in a significant rescue of the QL.d migration defect of sel-5 vps-29 double mutants albeit not to the level of vps-29 single mutants (Figure 2A, Figure 2—figure supplement 1). No rescue was obtained when SEL-5 was expressed from the wrt-2 promoter that is active in the seam cells and the Q cells (Aspöck et al., 1999; Middelkoop et al., 2012). These data suggest that sel-5 is required in the EGL-20/Wnt-producing cells to control QL.d migration. However, a similar level of rescue as with egl-20 promoter was obtained also when SEL-5 was expressed from hlh-1 promoter specific for the body wall muscle cells (Krause et al., 1990; Harfe et al., 1998). When SEL-5 was simultaneously expressed from the egl-20 and hlh-1 promoters, the rescue almost reached the background frequency of the QL.d defect, caused by vps-29 alone (Figures 1D and 2A, Figure 2—figure supplement 1). Apart from the rectal epithelial cells, egl-20 expression was also detected in posterior ventral body wall muscle quadrants VL23 and VR24 (Harterink et al., 2011a); therefore, it is possible that hlh-1 promoter-driven expression of SEL-5 in these muscle quadrants is responsible for the observed rescue, and only the combined expression from all EGL-20-producing cells is sufficient to drive a complete rescue. Alternatively, the observed rescue pattern could indicate that SEL-5 is required in both the Wnt-producing and in the muscle cells.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig2-v2.jpg)
+
+**Figure 2.:** (A) Transgenic rescue of the QL.d migration defect. sel-5 was expressed under the control of various promoters from an extrachromosomal array in sel-5 vps-29; muIs32 background and the effect of such expression on QL.d migration was quantified. Comparison was made between animals carrying the transgene and their siblings which have lost the transgenic array. The expression of each transgene in the expected tissue is shown on the right. Results are shown as % of WT and QL.d animals, data are combined from three independent experiments, n > 100 animals in total for each condition. Fisher’s exact test was performed to assess the difference between the samples. Bonferroni correction for multiple testing was applied, ***p-value<0.0001, ns, not significant. Results from additional independent transgenic strains are provided in Figure 2—figure supplement 1. (B) GFP expression driven by an endogenous sel-5 promoter in the gonad of L1 and adult animals. (C) Expression of GFP::SEL-5 fusion protein driven by endogenous sel-5 promoter in various larval and adult tissues. Localized GFP::SEL-5 expression is indicated by white arrowheads, white arrows point to autofluorescent signal from gut granules. The scale bar represents 20 μm in (A–C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Several independent transgenic strains for each rescue construct were tested in sel-5 vps-29; muIs32 background and the effect of such expression on QL.d migration was quantified. Comparison was made between animals carrying the transgene and their siblings which have lost the transgenic array. Results are shown as % of WT and QL.d animals, data are combined from three independent experiments, n > 100 animals in total for each condition. Fisher’s exact test was performed to assess the difference between the samples. Bonferroni correction for multiple testing was applied, **p-value<0.001, ***p-value<0.0001, ns, not significant. The lines used in Figure 2A are labelled in bold.
+
 To confirm that the tissues identified above in the rescue experiments are tissues with a genuine sel-5 expression, we set to determine the endogenous sel-5 expression pattern that has not been previously analysed. The only published expression data (Fares and Greenwald, 1999) were based on the expression from sel-12 instead of sel-5 promoter. We generated GFP knock-in strains by inserting GFP into the sel-5 genomic sequence using the SEC cassette approach (Dickinson et al., 2015). We obtained two strains, one expressing a transcriptional Psel-5::gfp reporter (Figure 2B) and one, after excision of the SEC cassette, an N-terminally tagged GFP::SEL-5 under the control of its own promoter (Psel-5::gfp::sel-5) (Figure 2C). Microscopic analyses of both strains revealed that sel-5 is expressed broadly, but at a low level judged by the intensity of the GFP signal. The most prominent expression was observed in the gonad from the beginning of its development (Figure 2B). Expression was further observed in the developing oocytes, in the vulva, in epidermal cells, and most notably, in the rectal epithelial cells that are known to produce EGL-20/Wnt (Whangbo and Kenyon, 1999; Figure 2B and C). We could not detect sel-5 expression in muscles, although we cannot exclude that a low level of expression, below the detection limit using the endogenous locus-tagging approach, is present. Interestingly, oocytes and epidermal seam cells expressing the GFP::SEL-5 fusion protein revealed its distinct subcellular localization. Protein localized to punctate structures located close to the cell surface (Figure 2C). This pattern resembles the subcellular distribution of human AAK1 (Conner and Schmid, 2002), hinting that SEL-5 could be involved in regulating intracellular transport similar to AAK1.
 
-## SEL-5 does not affect MIG-14 endocytosis
+### SEL-5 does not affect MIG-14 endocytosis
 
 The SEL-5 orthologue AAK1 has been implicated in endocytosis regulation (Conner and Schmid, 2002; Ricotta et al., 2002). The obvious candidate that could be affected by SEL-5-dependent endocytosis in Wnt-producing cells is the Wnt cargo receptor MIG-14/Wls. Human AAK1 can phosphorylate the AP2 subunit µ2 (AP2M1) (Conner and Schmid, 2002; Ricotta et al., 2002) and thus increase the affinity of AP2 to cargo molecules (Ricotta et al., 2002). It is conceivable that SEL-5 could regulate MIG-14/Wls trafficking at the level of AP2-dependent endocytosis. The C. elegans μ2 subunit of the AP2 complex, DPY-23 (also known as APM-2), has been shown to participate in the internalization of MIG-14 (Pan et al., 2008; Yang et al., 2008). We first tested whether loss of sel-5 expression has any effect on the level of phosphorylation of DPY-23. A phospho-specific antibody recognizing phosphorylated threonine T160 (T156 in mammalian AP2M1) of DPY-23 (Hollopeter et al., 2014) revealed a decrease in the level of phosphorylated endogenous DPY-23 in sel-5 mutants compared to wild type animals (Figure 3A, Figure 3—source data 1). Similarly, T160 phosphorylation was reduced on overexpressed GFP-tagged DPY-23 (Figure 3B, Figure 3—source data 1). Next, we assessed MIG-14 levels and localization in sel-5 vps-29 mutants using a transgene expressing a functional MIG-14::GFP protein (Lorenowicz et al., 2014). However, the levels of MIG-14::GFP did not change significantly in sel-5 vps-29 compared to the vps-29 single mutant (Figure 3C and D, Figure 3—source data 1). Levels of MIG-14::GFP in sel-5 single mutants were variable but on average comparable to the wild type. We therefore concluded that the significant increase in QL.d migration defects in sel-5 vps-29 compared to vps-29 cannot be attributed to changes in MIG-14/Wls levels. Importantly, MIG-14::GFP did not re-localize to the plasma membrane in sel-5 or sel-5 vps-29 mutants, in striking contrast to the MIG-14::GFP behaviour in animals treated with dpy-23 RNAi (Figure 3—figure supplement 1). This excludes the possibility that the Wnt-related phenotypes in sel-5 vps-29 mutants arise from a defect in MIG-14 internalization.
 
-## SEL-5 helps shape the EGL-20 gradient
+![Figure 3.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig3-v2.jpg)
+
+**Figure 3.:** (A) The level of DPY-23 phosphorylation at position T160 is reduced in sel-5 mutant animals. Phosphorylation was detected by western blot analysis in lysates from a population of L4/young adults of indicated strains using phospho-specific antibody against human AP2M1. Band intensities were normalized to an alpha tubulin loading control and compared to the control sample (sample/control ratio indicated below each lane). A representative Western blot example is shown on the left, relative quantification of four independent experiments is shown on the right. (B) Level of DPY-23::GFP phosphorylation is reduced in sel-5 mutants. Phosphorylation at T160 of GFP-tagged DPY-23 was detected by western blot analysis in lysates from a population of L4/young adults using phospho-specific antibody against human AP2M1. Strains expressing either no GFP fusion protein or a GFP-tagged DPY-23T160A mutant protein were included as controls. Band intensities were normalized to a GFP signal intensity and compared to the control sample (DPY-23::GFP in wild type background), sample/control ratio is indicated below each lane. A representative western blot example is shown on the left, relative quantification of three independent experiments is shown on the right. (C) L2/L3 animals expressing MIG-14::GFP from the huSi2 transgene were imaged using a confocal microscope. The posterior part of the body with Wnt-expressing cells is shown. Images are maximum projections of four consecutive z-sections taken at 0.3 μm interval. Anterior to the left, dorsal up, scale bar represents 20 μm. (D) Western blot analysis of MIG-14::GFP levels expressed from a huSi2 transgene in various mutant backgrounds. MIG-14::GFP was detected in lysates from synchronized populations of L1 larvae of the indicated strains. Band intensities were normalized to an alpha tubulin loading control and compared to the control sample (sample/control ratio indicated below each lane). A representative western blot example is shown on the left, relative quantification of five independent experiments is shown on the right. In (A, B, D), error bars represent mean ± s.d., statistical significance was assessed by unpaired two-tailed Student’s t-test for samples with unequal variance, *p-value<0.05, **p-value<0.01, ***p-value<0.001, ns, not significant. Source data for (A, B, D) provided in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** L2/L3 animals expressing MIG-14::GFP from the huSi2 transgene together with mCherry::PH driven by egl-20 promoter were imaged using confocal microscope. The posterior part of the body with Wnt-expressing cells is shown. Images are single z-sections. Anterior to the left, dorsal up, scale bar represents 20 μm.
+
+### SEL-5 helps shape the EGL-20 gradient
 
 Our tissue-specific rescue experiments revealed that for a full rescue, simultaneous sel-5 expression is necessary from both egl-20 and hlh-1 promoters. SEL-5 could therefore regulate endocytosis along the EGL-20 transport route, thus shaping the EGL-20 gradient. To test this hypothesis, we endogenously tagged EGL-20 with GFP and assessed Wnt gradient formation in control and mutant backgrounds. This approach has been previously used and revealed that extracellular EGL-20 can be detected in the form of distinct puncta that most likely represent EGL-20 bound to Frizzled (Pani and Goldstein, 2018). We detected EGL-20 puncta in all strains tested, albeit with different frequencies (Figure 4A–C). While the number of EGL-20 puncta in sel-5 mutants was not significantly different from that in control animals, in sel-5 vps-29 mutants the number of puncta was substantially reduced. However, statistical evaluation did not reveal significant differences between vps-29, sel-5 vps-29, and vps-35; although a decreasing trend in puncta number was visible (Figure 4C). In vps-35, the EGL-20 gradient was shown to be highly reduced or absent (Coudreuse et al., 2006; Harterink et al., 2011b) and was used for comparison. We also compared the signal intensity in the EGL-20 spots among the different strains but no significant differences were detected (Figure 4D). Finally, we assessed the length of the gradient by measuring how far from the rectum the EGL-20 puncta can be detected. While EGL-20 gradient formation in neither sel-5 nor vps-29 was significantly affected, the EGL-20 gradient was shorter in vps-29 sel-5 double mutants than in wild type controls (Figure 4E). Our data thus support the notion that sel-5 plays a subtle role in EGL-20 gradient formation.
 
@@ -61,17 +158,29 @@ Our tissue-specific rescue experiments revealed that for a full rescue, simultan
 
 **Figure 4.:** (A) Endogenously tagged EGL-20::GFP was visualized in various backgrounds. Images were acquired with spinning disc microscopy using L2/L3 animals and represent maximum projections of seven consecutive z-sections captured at 1 μm interval. A distance of 150 μm from the rectum of each animal is indicated by a yellow line. sel-5(ok149) allele was used in sel-5 single and double mutants. (B) A curved line of 150 μm length (measured from the rectum) and 3.9 μm width was fitted with the ventral side of each animal presented in (A) and the selected region was straightened using the ‘Straighten’ function in Fiji for easier comparison. (C) Number of EGL-20 particles in various mutant backgrounds. Identical selection as in (B) was applied to all samples and the number of clearly visible puncta was manually counted in blinded images. Counting was repeated three times for each sample and the number of puncta was averaged and plotted as a single data point. (D) Mean signal intensity in EGL-20 particles was measured in the same selections as in (C). (E) The length of the EGL-20 gradient was assessed in the same images as in (C). The distance from the rectum to the most distant clearly recognizable EGL-20 particle was measured in blinded images. Measurement was repeated three times; the values were averaged and plotted as a single data point. For (C, D, E), Wilcoxon rank sum test was performed to assess statistical significance. Bonferroni correction for multiple testing was applied. *p-value<0.005, **p-value<0.001, error bars represent 95% confidence interval, only statistically significant differences shown in (C) and (E), and no statistically significant differences revealed in (D).
 
-## SEL-5-associated phenotypes are independent of DPY-23 phosphorylation
+### SEL-5-associated phenotypes are independent of DPY-23 phosphorylation
 
 Although endocytic cargo other than MIG-14 may be affected in sel-5 vps-29 mutants, we could not exclude the possibility that the observed phenotypes are a consequence of defects in other mechanisms unrelated to DPY-23 phosphorylation. To test this hypothesis, we repeated the rescue experiment presented in Figure 2A now with SEL-5 carrying either K75A or D178A point mutations. Position D178 corresponds to D176 of human AAK1 and is part of the conserved HRD motif in the catalytic loop, K75 corresponds to K74 in AAK1 and is predicted to affect ATP binding (Figure 5—figure supplement 1). In AAK1, both mutations abolished its ability to phosphorylate AP2M1 (Conner and Schmid, 2003). When expressed under the control of the egl-20 promoter, the mutant SEL-5 proteins could still rescue the QL migration phenotype (Figure 5A, Figure 5—figure supplement 2). This indicates that SEL-5 kinase activity is not responsible for the phenotypes observed in sel-5 vps-29 mutants. To test this further, we next asked whether phosphorylation at the T160 position of DPY-23 is necessary for QL.d migration. To this end, we utilized the dpy-23(mew25) allele harbouring T160A point mutation (G. Hollopeter and G. Beacham, unpublished). Characterization of dpy-23(mew25) animals revealed that homozygous mutants are viable; they are not dumpy and look superficially wild type. This indicates that the mutants do not suffer from a gross endocytosis defect, even though no DPY-23 phosphorylation was detected in dpy-23(mew25) animals (Figure 5B, Figure 5—source data 1). In compliance with previous findings using dpy-23 alleles that harbour mutations changing the T160 amino acid (Hollopeter et al., 2014; Partlow et al., 2019), mew25 is able to rescue the ‘jowls’ phenotype of fcho-1(ox477) mutants (Figure 5C). FCHO-1 is a member of the muniscin family of proteins and a proposed allosteric activator of AP2 (Hollopeter et al., 2014). We then asked whether complete loss of DPY-23 phosphorylation would lead to a QL.d migration defect. Animals carrying dpy-23(mew25) alone or in combination with sel-5(ok149) did not show any defects in QL.d migration (Figure 5D). A variable increase in QL.d migration defects was observed in vps-29;dpy-23(mew25) animals, but the penetrance of the defect never reached levels comparable to those in sel-5 vps-29 mutants (Figures 1D and 5D). Furthermore, MIG-14::GFP did not re-localize to the plasma membrane in dpy-23(mew25) similar to the sel-5 mutants and unlike in dpy-23 RNAi animals (Figure 5E). Together, these observations strongly suggest that the role of SEL-5 in the regulation of QL.d migration is not dependent on its kinase activity and, moreover, that DPY-23 phosphorylation at T160 is not a major regulatory event in this process.
 
-## The outgrowth of excretory cell canals is impaired in sel-5 vps-29 mutants
+![Figure 5.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig5-v2.jpg)
+
+**Figure 5.:** (A) Transgenic rescue of the QL.d migration defect with kinase-inactive SEL-5. D178A or K75A SEL-5 mutant protein was expressed from egl-20 promoter in sel-5 vps-29; muIs32 mutant background from an extrachromosomal array and the QL.d migration defect was quantified in animals carrying the transgene and their siblings which have lost the transgenic array. Results are shown as % of WT and QL.d animals, data are combined from three independent experiments, n > 100 animals in total for each condition. Fisher’s exact test was performed to assess the difference between the samples. Bonferroni correction for multiple testing was applied, ***p-value<0.0001. Results from additional independent transgenic strains are provided in Figure 5—figure supplement 2. (B) DPY-23 phosphorylation at position T160 is absent in dpy-23(mew25) mutant animals. Phosphorylation was detected by western blot analysis in lysates from a population of L4/young adults of indicated strains using phospho-specific antibody against human AP2M1. Band intensities were normalized to an alpha tubulin loading control. (C) dpy-23(mew25) rescues the ‘jowls’ phenotype (white arrow) of fcho-1(ox477) animals. Heads of adult animals are shown, anterior to the left, the scale bar represents 10 μm. (D) The absence of DPY-23 T160 phosphorylation does not result in QL.d migration defect. The presence of dpy-23(mew25) allele carrying T160A substitution either alone or in combination with sel-5 does not significantly contribute to the QL.d migration defect. Results are shown as % of WT and QL.d animals, data combined from at least three independent experiments are shown, n > 180 animals in total for each strain. Fisher’s exact test was performed to assess the difference between the samples, **p-value<0.01. (E) MIG-14::GFP does not relocalize to the plasma membrane in dpy-23(mew25) animals. L3 animals expressing MIG-14::GFP from the huSi2 transgene were imaged using a confocal microscope. The posterior part of the body with Wnt-expressing cells is shown. Images are maximum projections of five consecutive z-sections taken at 0.3 μm interval. Anterior to the left, dorsal up, the scale bar represents 20 μm. Source data for (B) provided in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Residues mutated in C. elegans rescue constructs are highlighted in grey. The black rectangle marks the conserved HRD motif.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Additional independent transgenic strains for each rescue construct were tested in sel-5 vps-29; muIs32 background and the effect of such expression on QL.d migration was quantified. Comparison was made between animals carrying the transgene and their siblings which have lost the transgenic array. Results are shown as % of WT and QL.d animals, data are combined from three independent experiments, n > 170 animals in total for each condition. Fisher’s exact test was performed to assess the difference between the samples. Bonferroni correction for multiple testing was applied, ***p-value<0.0001. The lines used in Figure 5A are labelled in bold.
+
+### The outgrowth of excretory cell canals is impaired in sel-5 vps-29 mutants
 
 Apart from the QL.d migration defect in the sel-5 vps-29 double mutants, in some animals, we unexpectedly noticed a severe shortening of the posterior canals of the excretory cell that prompted us to analyse this phenotype in more detail. The excretory cell (also called the excretory canal cell) is a large H-shaped cell required for osmoregulation (Buechner et al., 1999; Liégeois et al., 2007). The excretory canal cell body is located near the posterior bulb of the pharynx and four excretory canals emanate from the cell body, two short ones directed to the anterior and two posterior canals extending to the rectum (Figure 6A). To assess the morphology of the excretory cell, we expressed GFP under the control of pgp-12 promoter which is active exclusively in the excretory cell (Zhao et al., 2004) and analysed the length of the canals in late L4 or early adult animals. While the posterior canal length in sel-5 or vps-29 single mutants was indistinguishable from the wild type controls, in more than 60% of the sel-5 vps-29 mutants the posterior canals stopped at various positions anterior to the rectum (Figure 6A and B). A similar effect, albeit with lower penetrance, was observed when assessing the anterior canal length (Figure 6C). Interestingly, the posterior canal on the right side of the animal was significantly more affected than its counterpart on the left side in sel-5 vps-29 double mutants carrying the ok149 allele (Figure 6D). A similar trend was observed in sel-5(ok363) vps-29 animals, although the difference observed there did not reach statistical significance (Figure 6D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91054/elife-91054-fig6-v2.jpg)
 
-**Figure 6.:** sel-5 cooperates with the retromer complex to regulate the length of excretory cell canals.(A) Posterior canals of the excretory cell are significantly shortened in sel-5 vps-29 mutants. The excretory cell was visualized by Ppgp-12::gfp expression from a mamEx11 transgene. The scale bar represents 200 μm. (B) Quantification of posterior canal outgrowth defects. The outgrowth of the posterior canal of the excretory cell was quantified by dividing the region between the posterior bulb of the pharynx to the tip of the tail into seven segments. The percentage of canal arms terminating in each segment is indicated. Segment scoring 50% or higher was highlighted in dark blue, segment scoring 15–49% was highlighted in light blue for easier orientation. All strains contained the mamEx11 transgene to visualize the excretory cell. The statistical significance of differences between the strains was analysed using Fisher’s exact test for a 2 × 3 table. For the test, data from segments 0–4 were pooled into one category (‘shorter’) and data from segments 5 and 6 were used as the two other categories (‘normal’ and ‘longer’, respectively). The comparison was made either to the control strain or to the more severe single mutant in the case of double mutant strains. Bonferroni correction for multiple testing was applied. (C) Anterior canals of the excretory cell are shortened in sel-5 vps-29 double mutants. The excretory cell was visualized by Ppgp-12::gfp expression from a mamEx29 transgene. The scale bar represents 100 μm. (D) Posterior canals on the right side of the animals are more severely affected compared to their left counterparts. The length of the posterior canal on each side of the animal was measured and normalized to the length of the whole body of the animal. Paired Student’s t-test was used to assess the significance of the difference between the two sides, ***p-value<0.001, ns, not significant. (E) Posterior excretory canals are shorter already at the time of hatching in sel-5 vps-29 mutants. The dynamics of posterior canal outgrowth was assessed by measuring the canal length and normalizing it to the total body length at hatching and at three time points during early larval development. Results are presented as mean + s.d. of at least 30 canals for each condition. Unpaired two-tailed Student’s t-test was performed to assess the difference between the samples, *p-value<0.05, **p-value<0.01. (F) Loss of either vps-35, vps-26, or snx-3 retromer component expression induces posterior canal shortening in sel-5 mutants. Canal outgrowth was scored as in (B). (G) Both cell-autonomous and non-autonomous expression of sel-5 rescues excretory canal shortening in sel-5 vps-29 mutants. SEL-5 was expressed from an extrachromosomal array under the control of pgp-12, hlh-1 or col-10 promoters. Canal outgrowth was scored as in (B) and a comparison was made between animals carrying the array and their siblings which have lost the transgenic array. All strains contained also the mamEx29 extrachromosomal array to visualize the excretory canal. (H) T160 phosphorylation of DPY-23 is not required for posterior excretory canal outgrowth. Canal outgrowth was scored as in (B) in strains containing dpy-23(mew25) allele carrying T160A substitution. Comparison was made between the double mutants and either sel-5 or vps-29 single mutant. For (F–H) †differences not significant, ‡same data as in (B).
+**Figure 6.:** (A) Posterior canals of the excretory cell are significantly shortened in sel-5 vps-29 mutants. The excretory cell was visualized by Ppgp-12::gfp expression from a mamEx11 transgene. The scale bar represents 200 μm. (B) Quantification of posterior canal outgrowth defects. The outgrowth of the posterior canal of the excretory cell was quantified by dividing the region between the posterior bulb of the pharynx to the tip of the tail into seven segments. The percentage of canal arms terminating in each segment is indicated. Segment scoring 50% or higher was highlighted in dark blue, segment scoring 15–49% was highlighted in light blue for easier orientation. All strains contained the mamEx11 transgene to visualize the excretory cell. The statistical significance of differences between the strains was analysed using Fisher’s exact test for a 2 × 3 table. For the test, data from segments 0–4 were pooled into one category (‘shorter’) and data from segments 5 and 6 were used as the two other categories (‘normal’ and ‘longer’, respectively). The comparison was made either to the control strain or to the more severe single mutant in the case of double mutant strains. Bonferroni correction for multiple testing was applied. (C) Anterior canals of the excretory cell are shortened in sel-5 vps-29 double mutants. The excretory cell was visualized by Ppgp-12::gfp expression from a mamEx29 transgene. The scale bar represents 100 μm. (D) Posterior canals on the right side of the animals are more severely affected compared to their left counterparts. The length of the posterior canal on each side of the animal was measured and normalized to the length of the whole body of the animal. Paired Student’s t-test was used to assess the significance of the difference between the two sides, ***p-value<0.001, ns, not significant. (E) Posterior excretory canals are shorter already at the time of hatching in sel-5 vps-29 mutants. The dynamics of posterior canal outgrowth was assessed by measuring the canal length and normalizing it to the total body length at hatching and at three time points during early larval development. Results are presented as mean + s.d. of at least 30 canals for each condition. Unpaired two-tailed Student’s t-test was performed to assess the difference between the samples, *p-value<0.05, **p-value<0.01. (F) Loss of either vps-35, vps-26, or snx-3 retromer component expression induces posterior canal shortening in sel-5 mutants. Canal outgrowth was scored as in (B). (G) Both cell-autonomous and non-autonomous expression of sel-5 rescues excretory canal shortening in sel-5 vps-29 mutants. SEL-5 was expressed from an extrachromosomal array under the control of pgp-12, hlh-1 or col-10 promoters. Canal outgrowth was scored as in (B) and a comparison was made between animals carrying the array and their siblings which have lost the transgenic array. All strains contained also the mamEx29 extrachromosomal array to visualize the excretory canal. (H) T160 phosphorylation of DPY-23 is not required for posterior excretory canal outgrowth. Canal outgrowth was scored as in (B) in strains containing dpy-23(mew25) allele carrying T160A substitution. Comparison was made between the double mutants and either sel-5 or vps-29 single mutant. For (F–H) †differences not significant, ‡same data as in (B).
 
 Active growth of the canals starts during embryogenesis and continues during L1. After that the canals passively grow with the growing animal (Fujita et al., 2003). Comparison of canal lengths at several time points within a 24 hr interval after hatching revealed that in sel-5 vps-29 double mutants the posterior canals of the excretory cell are shorter already at the time of hatching and the growth defect prevails throughout larval development (Figure 6E).
 
@@ -81,7 +190,7 @@ Next, we tested in which tissue SEL-5 activity is required for excretory cell ou
 
 To support our finding that the role of SEL-5 in excretory canal outgrowth is independent of DPY-23 phosphorylation, we analysed the length of the posterior canal in dpy-23(mew25) mutant animals. No canal shortening was observed in animals carrying dpy-23(mew25) alone (Figure 6H), while only very mild shortening was occasionally observed in either sel-5; dpy-23(mew25) or vps-29; dpy-23(mew25). These observations are consistent with a role of SEL-5 in excretory canal outgrowth that is not dependent on DPY-23 phosphorylation at T160.
 
-## Wnt-dependent signalling is required to establish proper excretory cell canal length
+### Wnt-dependent signalling is required to establish proper excretory cell canal length
 
 We were interested to see whether the observed shortening of the excretory canals in sel-5 vps-29 mutants could be a consequence of crosstalk with the Wnt signalling pathway as in the case of QL.d migration. lin-17/Frizzled mutants have been reported to show an overgrowth of the posterior excretory cell canals past the rectum into the tip of the tail (Hedgecock et al., 1987) while loss of axl-1, one of the two C. elegans Axin orthologues, resulted in ectopic branching of the posterior excretory canal without affecting canal length. Ectopic branching in axl-1 mutants could be rescued by simultaneous loss of bar-1/β-catenin or pop-1/Tcf expression (Oosterveen et al., 2007). Wnt signalling thus seems to play a role in excretory canal growth, but so far, the other Wnt pathway components and their mechanism of action remained unknown. Therefore, we tested whether mutations in other Wnt pathway components could affect excretory cell growth. Among the four Wnts tested (EGL-20, LIN-44, CWN-1, CWN-2), only mutants in lin-44/Wnt exhibited an almost fully penetrant posterior excretory canal overgrowth phenotype, as observed in lin-17/Frizzled mutants (Figure 7A and B). Mild canal shortening was observed in cwn-2/Wnt and cfz-2/Frizzled mutants, while a very weak overgrowth phenotype could be detected in egl-20/Wnt mutants (Figure 7B). No change in excretory canal length was displayed by cwn-1/Wnt or mig-1/Frizzled mutants. Interestingly, highly penetrant canal overgrowth was also observed in mig-14/Wls mutants, while loss of mig-5/Dishevelled or dsh-1/Dishevelled resulted in a partially penetrant overgrowth phenotype (Figure 7B). We next tested various combinations of Wnt and Frizzled mutants and found that simultaneous loss of lin-44 and cwn-1 or lin-44 and cwn-2 expression resulted in partial rescue of the canal overgrowth and the same effect was observed after simultaneous loss of lin-17 and cfz-2. Surprisingly, the loss of egl-20 and mig-1 also partially rescued the canal overgrowth in lin-17, even though neither of them displayed canal shortening on its own. In contrast, mig-1 suppressed canal shortening in cfz-2. The most prominent canal shortening was observed in cwn-1; cfz-2 or cwn-2; cfz-2 double mutants (Figure 7B). Apart from shortening, three instead of two posterior canal branches were detected in 11% of cwn-1; cfz-2 and 15% of cwn-2; cfz-2 double mutants (Figure 7C). These data suggest that at least two Wnt-dependent pathways are acting during the extension of the excretory canal, one involving lin-44, lin-17, dsh-1 and mig-5 that is responsible for determining the stopping point for the growing canal, and one involving cwn-1, cwn-2, and cfz-2 that contributes to the canal growth.
 
@@ -115,13 +224,261 @@ Taken together, we have uncovered cooperation between the C. elegans orthologue 
 
 ## Materials and methods
 
-## Caenorhabditis elegans strains and culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>Wild type</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>N2</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>lin-17(n671) I</td>
+      <td>CGC, Brenner, 1974</td>
+      <td>MT1306</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>lin-44(n1792) I</td>
+      <td>CGC, Herman and Horvitz, 1994</td>
+      <td>MT5383</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mig-1(e1787) I</td>
+      <td>CGC, Brenner, 1974</td>
+      <td>CB3303</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pry-1(mu38) I; him-5(e1490) V</td>
+      <td>CGC, Maloof et al., 1999</td>
+      <td>CF491</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>cwn-1(ok546) II</td>
+      <td>CGC</td>
+      <td>RB763</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dsh-1(ok1445) II</td>
+      <td>CGC</td>
+      <td>RB1328</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mig-14(mu71) II</td>
+      <td>CGC, Harris et al., 1996</td>
+      <td>CF367</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mig-5(cp385[mNG-GLO^AID::mig-5]) II</td>
+      <td>CGC, Heppert et al., 2018</td>
+      <td>LP728</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>vps-35(hu68) II</td>
+      <td>CGC, Coudreuse et al., 2006</td>
+      <td>KN555</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>sel-5(ok149) III</td>
+      <td>CGC</td>
+      <td>GS2381</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>sel-5(ok363) III</td>
+      <td>CGC</td>
+      <td>RB638</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>egl-20(n585) IV</td>
+      <td>CGC, Harris et al., 1996</td>
+      <td>MT1215</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>cwn-2(ok895) IV</td>
+      <td>CGC</td>
+      <td>VC636</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>cfz-2(ok1201) V</td>
+      <td>CGC</td>
+      <td>RB1162</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>muIs32[Pmec-7::gfp; lin-15(+)] II</td>
+      <td>CGC, Ch’ng et al., 2003</td>
+      <td>CF702</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>huSi2[Pmig-14::mig-14::gfp] II</td>
+      <td>Lorenowicz et al., 2014</td>
+      <td>KN1312</td>
+      <td>Korswagen lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dpy-5(e907) X; sIs10089 III</td>
+      <td>CGC, McKay et al., 2003</td>
+      <td>BC10210</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>lin-15AB(n765) kyIs4 [Pceh-23::unc-76::gfp+lin-15(+)] X</td>
+      <td>CGC, Zallen et al., 1999</td>
+      <td>CX2565</td>
+      <td>Strain can be obtained from CGC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>fcho-1(ox477) II; dpy-23(mew25) X</td>
+      <td>Gunther Hollopeter</td>
+      <td>GUN27</td>
+      <td>Hollopeter lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>vps-29(tm1320)III; muIs32 [Pmec-7::gfp] II</td>
+      <td>Yang et al., 2008</td>
+      <td></td>
+      <td>Korswagen lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin antibody (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_477593</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP antibody (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>RRID:AB_390913</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phosphoAP2M1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_10866362</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse HRP-conjugated antibody (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>RRID:AB_2307392</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit HRP-conjugated antibody (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>RRID:AB_2337938</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDD282 (plasmid)</td>
+      <td>Dickinson et al., 2013</td>
+      <td>RRID:Addgene_66823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDD162 (plasmid)</td>
+      <td>Dickinson et al., 2013</td>
+      <td>RRID:Addgene_47549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFJ104 (plasmid)</td>
+      <td>Frøkjaer-Jensen et al., 2008</td>
+      <td>RRID:Addgene_19328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPD95.81 (plasmid)</td>
+      <td>Addgene (Andrew Fire)</td>
+      <td>RRID:Addgene_1497</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji image processing package</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Real Statistics Resource Pack, release 7.6</td>
+      <td>Zaiontz, 2021, https://www.real-statistics.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>https://www.mathworks.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Caenorhabditis elegans strains and culture
 
 Standard methods of cultivation, manipulation, and genetics of C. elegans were used as described previously (Brenner, 1974). Bristol N2 strain was used as wild type, and Escherichia coli strain OP50 was used as a food source. Other strains, extrachromosomal, and integrated arrays used in this study were:
 
 Full list of strains generated in this study is provided in Supplementary file 1.
 
-## Molecular biology, germline transformation, and RNA interference
+### Molecular biology, germline transformation, and RNA interference
 
 Total RNA was isolated using the TRIzol reagent (Cat# 15596026, Thermo Fisher Scientific) from a mixed-stage population of C. elegans N2 strain collected from a single 9 cm NGM plate. cDNA was transcribed from total RNA using SuperScript III Reverse Transcriptase (Cat# 18080093, Thermo Fisher Scientific) and an oligo(dT) primer. Full-length sel-5 (isoform a), vps-29 (isoform a), or dpy-23 (isoform b) cDNA was PCR-amplified using gene-specific primers. PCR products were cloned into pJet1.2/blunt vector (Cat# K1232, Thermo Fisher Scientific) and sequenced. The same procedure was applied to clone truncated sel-5 cDNA from sel-5(ok363) and sel-5(ok149) mutant animals. Two- or three-fragment Gibson assembly (Gibson et al., 2009) was employed to construct tissue-specific gene expression vectors. For that, 524 bp of col-10 promoter sequence, 600 bp of eft-3 promoter sequence, 4419 bp of egl-20 promoter sequence, 2896 bp of hlh-1 promoter sequence, 3410 bp of pgp-12 promoter sequence, and 1629 bp of wrt-2 promoter sequence were PCR-amplified from N2 genomic DNA, cDNAs were amplified from the corresponding pJet1.2 vectors and pPD95.81 (a gift from Andrew Fire [Addgene plasmid # 1497; http://n2t.net/addgene:1497; RRID:Addgene_1497]) was a source of backbone and GFP sequences. Fragments were assembled in the desired combinations and correct assembly was verified by sequencing. SEL-5 was tagged with GFP at its N-terminus, VPS-29 and DPY-23 were tagged at their C-termini. Point mutations were introduced into sel-5 and dpy-23 sequences using the QuikChange Site-directed Mutagenesis kit (Agilent). Transcriptional reporter Ppgp-12::gfp was created by inserting 3410 bp of pgp-12 promoter upstream of GFP in pPD95.81. Pegl-20::mCherry::PH was constructed by Gibson assembly using Pwrt-2::gfp::PH (Wildwater et al., 2011) and pCFJ104 (Frøkjaer-Jensen et al., 2008; a gift from Erik Jorgensen [Addgene plasmid # 19328; http://n2t.net/addgene:19328; RRID:Addgene_19328]) as PCR templates to amplify PH domain and mCherry, respectively. Sequences of all primers used for plasmid vector construction are listed in Supplementary file 2. To create extrachromosomal arrays, constructs were microinjected into distal gonads of young adults using Leica DMi8 inverted microscope equipped with DIC filters and InjectMan 4 and FemtoJet 4i microinjection system (Eppendorf). Microinjection mixtures contained 10 ng/μL of the plasmid of interest, 5 ng/μL Pmyo-2::tdTomato as a co-injection marker, and 135 ng/μL pBluescript as a carrier DNA.
 
@@ -129,14 +486,14 @@ CRISPR/Cas9 SEC knock-in method (Dickinson et al., 2015) was used to generate GF
 
 RNA interference experiments were conducted by feeding using bacterial strains from the Ahringer library (Kamath and Ahringer, 2003) except for dpy-23, which came from the Vidal library (Rual et al., 2004). L4 larvae were transferred to RNAi plates with the desired bacterial clones and the effect of RNAi was assessed in the next generation after 3–4 days at 20°C.
 
-## Protein isolation and western blotting
+### Protein isolation and western blotting
 
 For MIG-14::GFP detection, gravid hermaphrodites were subjected to hypochlorite treatment and released embryos were left to hatch overnight in M9 buffer. Larvae were collected and washed twice in M9 buffer. Pelleted larvae were then resuspended in TX-114 buffer (25 mM Tris–HCl pH 7.5, 150 mM NaCl, 0.5 mM CaCl2, 1% TX-114, and cOmplete protease inhibitors [Roche]), snap-frozen, and then ground in liquid nitrogen. Thawed lysates were centrifuged at 20,800 × g for 30 min at 4°C, mixed with Laemmli sample buffer, separated on 8% SDS-PAGE, and transferred onto Amersham Protran Premium western blotting nitrocellulose membrane. GFP was detected with monoclonal anti-GFP antibody (Cat# 11814460001, Roche, RRID:AB_390913) and equal loading was assessed by staining with monoclonal anti-α-tubulin antibody (Cat# T9026, Sigma-Aldrich, RRID:AB_477593). Secondary goat anti-mouse HRP-conjugated antibody (Cat# 115-035-146, Jackson ImmunoResearch Laboratories, RRID:AB_2307392) and WesternBright ECL HRP substrate (Cat# K-12045-D20, Advansta) were used to visualize the signal. Images of membranes were taken on ImageQuant (LAS4000) and the Fiji Gels plug-in was used for subsequent densitometric analysis. For endogenous phosphorylated DPY-23 and DPY-23::GFP detection, 200 L4 larvae or young adults positive for DPY-23::GFP were collected into M9 buffer for each analysed strain. Animals were washed once with M9 buffer and two times with M9 buffer with 0.001% Triton X-100. 33 μL of animal pellet in M9/0.001% Triton X-100 was mixed with 33 μL of 4× Laemmli buffer, 4 μL of 20× PhosStop phosphatase inhibitors (Roche), 4 μL of 20× cOmplete protease inhibitors (Roche), and 1.6 μL of 1 M DTT. Samples were snap-frozen in liquid nitrogen, thawed on ice, and sonicated with 2 × 10 pulses at 0.8 amplitude, 0.85 duty cycle with UP50H ultrasound processor (Hielscher). Samples were heated to 99°C for 5 min and centrifuged at 20,000 × g for 10 min. 20 μL of each sample were loaded on 9% SDS-PAGE, separated and further processed as above using anti-GFP and anti-phosphoAP2M1 (Cat# ab109397, Abcam, RRID:AB_10866362) antibodies. Goat anti-rabbit HRP-conjugated antibody (Cat# 111-035-045, Jackson ImmunoResearch Laboratories, RRID:AB_2337938) was used to detect anti-phosphoAP2M1 signal.
 
-## C. elegans phenotypes, microscopy, and statistical analyses
+### C. elegans phenotypes, microscopy, and statistical analyses
 
 The final position of QL.paa (PVM – QL.d phenotype) and polarity of ALM and PLM neurons were assessed in L4 larvae carrying transgene muIs32 or muIs35. PVM migration was scored as defective when PVM was located anteriorly to the posterior edge of the vulva. ALM polarity was scored as defective when bipolar or reversed neurites were observed. CAN neurons were visualized with kyIs4 transgene and their position relative to V3 seam cell was scored. CAN positioned anterior to V3 was scored as displaced. For DiI staining, L3-L4 well-fed animals were washed from a plate with M9 buffer and incubated for 3 hr in 10 μg/mL DiI solution (D282, Thermo Fisher Scientific, dissolved to 2 mg/mL stock solution in dimethylformamide). Animals were then washed three times in M9 buffer and directly observed. Excretory cell canal lengths were scored in L4 or young adult animals carrying integrated Ppgp-12::gfp transgene (sIs10089) or Ppgp-12::gfp expressed from an extrachromosomal array (mamEx11 or mamEx29). Posterior canals were scored as wild type when they reached the region between the inner edge of the posterior gonadal turn and the rectum. Shortened canal phenotype was graded according to the region within the worm body the canal reached. The following landmarks were used for each category: 0 – excretory canal missing entirely or reaching the inner edge of anterior gonadal turn; 1 – canal reaching anterior spermatheca; 2 – canal reaching vulva; 3 – canal reaching posterior spermatheca; 4 – canal reaching inner edge of posterior gonadal turn; and 5 – canal reaching rectum (wild type). Canals that overgrew the rectum and reached the tail tip were scored as 6. Anterior excretory cell canals were measured and their length normalized to the measured distance between the posterior edge of the pharynx and the nose tip. For the assessment of posterior canal extension dynamics, larval excretory cell posterior canals were measured at four developmental stages (hatch, 4, 8, and 24 hr after hatching) and normalized to the animal body length. For microscopy imaging, worms were anaesthetized either with 10 mM sodium azide or 1 mM levamisol and mounted on 3% agarose pads. Images were taken on Leica DM6 upright microscope. For confocal imaging, Zeiss LSM880 confocal microscope was used. The EGL-20/Wnt gradient was visualized in L2/L3 animals using a spinning disc microscopy setup, based on a Nikon Eclipse Ti2 equipped with a Yokogawa CSU-W1 scan head, 50 um pinhole disc, 488 nm laser, Teledyne Photometrics PRIME BSI camera, ×60 W NA1.2 objective, and operated with NIS Elements. For each animal, a z-stack of 31 slices, dz = 1 μm was acquired. Imaging was done at room temperature (22–23°C). Images were processed with the Fiji image processing package (Schindelin et al., 2012). For EGL-20 gradient quantification, a maximum projection of seven consecutive z-sections where the rectal epithelial cells were visible was made for each sample. A curved line of 150 μm in length and 3.9 μm in width was fitted through the ventral side of each animal using the rectum as the starting point and the selected region was straightened using the ‘Straighten’ function in Fiji. To count the number of EGL-20 puncta in these selections, images were blinded and the puncta were manually counted. Counting was repeated three times and the values for each image were averaged. These averaged values were then plotted and used for statistical evaluation. For mean pixel intensity calculations, a Gaussian blur (sigma = 3) was applied to the straightened images. Subsequently, a single segmentation threshold was determined from a representative wild type image by using the 'graythresh' inbuilt function in MATLAB (which uses the Otsu method). This threshold was multiplied by 1.7 (a factor that was determined manually) to generate a mask that segments only bright EGL-20 spots. Using the derived threshold, a binary mask was made for all images. Using this mask, the mean pixel intensity of all pixels inside the segmented EGL-20 spots was computed. Statistical analyses were performed either in GraphPad Prism or in Excel equipped with the Real Statistics Resource Pack software (Release 7.6; Zaiontz, 2021).
 
-## Materials availability
+### Materials availability
 
 Strains and plasmids generated in this study are available upon reasonable request from academic researchers.

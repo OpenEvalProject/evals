@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02e3zdp86 Biomolecular Sciences Graduate Programs, Boise State University Boise United States
-2. https://ror.org/02e3zdp86 Computing PhD Program, Boise State University Boise United States
-3. https://ror.org/02e3zdp86 Department of Biological Science, Boise State University Boise United States
+1. Biomolecular Sciences Graduate Programs, Boise State University Boise United States ([ROR:02e3zdp86](https://ror.org/02e3zdp86))
+2. Computing PhD Program, Boise State University Boise United States ([ROR:02e3zdp86](https://ror.org/02e3zdp86))
+3. Department of Biological Science, Boise State University Boise United States ([ROR:02e3zdp86](https://ror.org/02e3zdp86))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ Here, we report comprehensive analysis of mutational effects for all single and 
 
 ## Results and discussion
 
-## Epistatic effects in paired nucleotide positions show stability-dependent signatures
+### Epistatic effects in paired nucleotide positions show stability-dependent signatures
 
 To evaluate how the effects of mutations mapped to the ribozyme structures, we plotted the RA values as heatmaps, similar to previous publications by others (Andreasson et al., 2020; Kobori and Yokobayashi, 2016; Figure 1, Figure 2, Figure 3, Figure 4, Figure 5, panel A, large plot). We then used this data to calculate epistasis between pairs of mutations. We first inspected nucleotide positions known to be involved in base-paired regions of the secondary structure of each ribozyme. In this heatmap layout, many paired regions showed an anti-diagonal line of high-activity double mutant variants with strong positive epistasis (Figures 1—5, insets, red to blue plots). In addition, pairs of mutations off the anti-diagonal tended to show negative or non-positive epistasis. Pseudoknot elements that involve Watson-Crick base pairs also showed this pattern, including the single base pair T1 element in CPEB3 (Figure 1) and the two base pair T1 element in HDV (Figure 2). The layout of mutations in the heatmap places paired nucleotide positions along the anti-diagonal and compensatory double mutants that change one Watson-Crick base pair to another are found on this anti-diagonal. Individual mutations that break a base pair will often reduce ribozyme activity, but the activity can be restored by a second compensatory mutation resulting in positive epistasis. In contrast, double mutants off-diagonal usually disrupt two base pairs (unless they result in a GU wobble base pair). It is expected that breaking two base pairs in the same paired region would be more deleterious to ribozyme activity than breaking one base pair. The epistasis data indicates that two non-compensatory mutations in the same paired region are more deleterious than expected from an additive assumption, and frequently create negative epistasis off-diagonal within paired regions.
 
@@ -50,17 +50,45 @@ To evaluate how the effects of mutations mapped to the ribozyme structures, we p
 
 **Figure 3.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of a twister ribozyme. Base-paired regions P2, P4, T1, and T2 are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired region are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes. (B) Secondary structure of the twister ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the twister ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig4-v2.jpg)
+
+**Figure 4.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of a hairpin ribozyme. Base-paired regions P1, P2, and P3 are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired region are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes. (B) Secondary structure of the hairpin ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the hairpin ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU). (D) The distributions of epistasis values in all terminal stem loops across all five ribozymes, and epistasis observed within loop A, loop B, and between loop A and loop B in the hairpin ribozyme.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Secondary structure of the loop domains in hairpin. Loop B nucleotides are shaded blue, and loop A nucleotides are shaded in orange. Canonical base pairs are connected by lines, non-canonical pairs are indicated by connecting dots. (B) Crystal structure of a hairpin ribozyme (PDB 1M5K) showing loop A and loop B domain interactions. Loop B is shaded in blue, and loop A is shaded in orange. Hydrogen bonds are shown as dashed yellow lines.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig5-v2.jpg)
+
+**Figure 5.:** (A) Relative activity heatmap depicting all possible pairwise effects of mutations on the cleavage activity of a hammerhead ribozyme. Base-paired regions, P1 and P2, are highlighted and color coordinated along the axes, and surrounded by black squares within the heatmap. Pairwise epistasis interactions observed for each paired region are each shown as expanded insets for easy identification of the specific epistatic effects measured for each pair of mutations. Instances of positive epistasis are shaded blue, and negative epistasis is shaded red, with higher color intensity indicating a greater magnitude of epistasis. Catalytic residues are indicated by stars along the axes. (B) Secondary structure of the hammerhead ribozyme used in this study. Each nucleotide is shaded to indicate the average relative cleavage activity of all single mutations at that position. (C) Distributions of epistasis values in the paired regions of the hammerhead ribozyme. Data were categorized as double mutations that result in two mismatches (2 Mismatch), a single mismatch (1 Mismatch), or no mismatches because of a new Watson-Crick base pair or GU wobble results (WC/GU). (D) Crystal structure of a hammerhead ribozyme (3ZD5) with C20 and G25 indicated (orange) and hydrogen bonds between the nucleotides shown as yellow dashed lines.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig5-figsupp1-v2.jpg)
+
 To further evaluate epistasis within base-paired regions, we separated epistasis data into three categories based on the number of base pairs that the mutations disrupt. For each ribozyme, we plotted the distribution of epistasis values as violin plots (Figures 1—5, panel C). For all ribozymes, the analysis revealed a clear trend. On average, disrupting two base pairs resulted in negative epistasis (mean of distribution), disrupting one base pair shifted the distribution toward more positive epistasis values, and the highest epistasis values (mean and max) were found for double mutants that result in zero disrupted base pairs because the two mutations together create a new Watson-Crick or GU Wobble pair. This trend was observed for paired regions in every ribozyme, and in all cases the distributions were significantly different (p<0.05–0.001, Mann-Whitney U test). This pattern of epistasis in paired regions demonstrates the potential for identifying base-paired regions in RNA structures using comprehensive double-mutant activity data.
 
 To further evaluate the potential of epistasis data to identify base-paired regions, we analyzed the epistasis values for each paired region individually. For this analysis, we separated the epistasis values calculated for double mutants that result in a Watson-Crick base pair (‘on-diagonal’ in heatmaps) from all other double mutants (‘off-diagonal’ in heatmaps) in each paired region (Figure 6). Short-paired regions showed the largest differences in the distributions of epistatic effects for on-diagonal and off-diagonal double mutants, while longer-paired regions showed small differences in these distributions. For example, short-paired regions P3 in CPEB3 and HDV (3 bp), and T1 in the twister (4 bp) showed very large differences in the mean of the distributions. These small regions were highly sensitive to individual mutations, and most pairs of mutations within this region resulted in almost no detectable activity except when they created a different Watson-Crick base pair, leading to the large positive epistasis values (Figures 1—5). In addition, in these short-paired regions, we do not see strong negative epistasis. It appears that the strong deleterious effect of a single mutation in these short regions makes a second mutation no more disruptive to activity, resulting in a mean of the distribution near zero for double mutants off-diagonal. In contrast, the largest paired region (HDV P4, 14 bp) showed a very small difference between the distribution of epistasis values found on-diagonal and off-diagonal. This can be rationalized because losing one base pair was not deleterious to the HDV ribozyme activity under our experimental conditions (Figure 2), and this does not allow for positive epistasis upon a second mutation. Even the loss of two base pairs in P4 was somewhat tolerated, leading to very little negative epistasis for two mutations at unpaired positions. Taken together, the results are consistent with other observations in both RNA and proteins, where it has been observed that the effects of mutations, and their additivity, have been shown to be dependent on the local thermodynamics of the structured region (Kraut et al., 2003; Moody and Bevilacqua, 2003).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-v2.jpg)
+
+**Figure 6.:** For each region, epistasis values were separated into double mutants that restore a Watson-Crick base pair (‘on-diagonal’, blue) and all other double mutants (‘off-diagonal’, gray). The mean of each distribution (µ) is reported and indicated by the dashed line. The p value is the probability that values were drawn from the same distribution by chance (Mann-Whitney U test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Relationship between the Gibbs free energy (ΔG) of each base-paired region belonging to the hairpin, hammerhead, CPEB3, HDV, and twister ribozymes, and the median relative activity of all single mutants within each base-paired region (Pearson correlation=–0.53, p=0.029, R2=0.27).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The distribution of RA values for sequences with pairs of mutations where one mutation is a catalytic nucleotide is shown in blue. The specific catalytic nucleotide is indicated in the title above each plot. The distributions for all pairs of mutations for each ribozyme that do not involve a catalytic nucleotide are shown in gray. The mean values (µ) for each distribution are marked by dashed lines.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/80360/elife-80360-fig6-figsupp3-v2.jpg)
+
 To explicitly investigate the influence of thermodynamic stability on mutational effects in the data, we calculated the minimum free energy for each paired region and compared mutational effects. We split each paired region into two separate RNA sequences that contained only the base-paired nucleotides, eliminating loop nucleotides, and used nearest neighbor rules to calculate the minimum free energy of their interaction (NUPACK). This approach neglects thermodynamic contributions from terminal loops, but allowed for a consistent approach to compare internal and terminal paired regions. We found a significant negative correlation between the median deleterious effects of single mutations and the minimum free energy of the paired regions (Figure 6—figure supplement 1). Clearly, though, thermodynamic stability alone does not explain every mutational effect. For example, CPEB3 P1 is more sensitive to mutations than CPEB3 P2 or P4 even though the latter are less stable. This is likely because P1 is immediately adjacent to the site of self-cleavage, while P2 and P4 are not. Overall, this analysis of thermodynamic stability indicates that for RNA’s with unknown structures, more stable structural elements may be harder to identify from epistatic effects alone when there is not a strong deleterious effect of individual mutations. However, it is also possible that more stable elements would show stronger epistasis under different experimental conditions, such as different temperatures or magnesium concentrations (Peri et al., 2022).
 
-## Catalytic residues do not have any high-activity mutants
+### Catalytic residues do not have any high-activity mutants
 
 Self-cleaving ribozymes often utilize a concerted acid-base catalysis mechanism where specific nucleobases act as proton donors (acid) or acceptors (base) (Jimenez et al., 2015), and mutations at these positions abolish activity. Analyzing the effects of individual mutations will not distinguish catalytic nucleotides from structurally important nucleotides. Comprehensive pairwise mutations, on the other hand, can potentially distinguish between catalytic residues that cannot be rescued by a second mutation, and structurally important nucleotides that can be rescued (positive epistasis). The catalytic cytosines of the CPEB3 (C57) and HDV (C75) act as proton donors due to perturbed pKa values (Nakano et al., 2000; Skilandat et al., 2016). For the twister ribozyme (Figure 3), the guanosine at position G39 acts as a general base, and the adenosine at position A1 acts as a general acid (Wilson et al., 2016). The catalytic nucleotides for the Hammerhead ribozyme (Figure 5) are the Guanosines located at positions G25 and G39 (Scott et al., 2013). The hairpin ribozyme (Figure 4) contains catalytic nucleotides at positions G29 and A59 (Wilson et al., 2006). In the RA heatmaps, the columns and rows associated with these nucleotides result in low activity values (Figures 1—5, Figure 6—figure supplement 2). It is important to note that because there is complete coverage of all double mutants in this data set, we can be certain that there are no possible compensatory mutations. These results show how catalytic residues can be identified in the comprehensive pairwise mutagenesis data.
 
-## Unpaired nucleotides show mutational effects that depend on tertiary structure
+### Unpaired nucleotides show mutational effects that depend on tertiary structure
 
 Ribozymes with mutations to nucleotides found in terminal loops that are not involved in tertiary structure elements showed high RA for most single and double mutants, and essentially no epistasis. This is not surprising if these loops reside on the periphery of the ribozyme and are not involved in structural contacts with other nucleotides. This is the case for L4 of CPEB3 (Figure 1), L4 of HDV (Figure 2), and L1 and L3 of the hairpin ribozyme (Figure 4). Two mutations within these loops do not reduce activity, and mutations in these loops do not rescue other deleterious mutations such as those that break a base pair.
 
@@ -72,40 +100,111 @@ Tertiary interactions between loops in the hammerhead ribozyme provide another e
 
 We also find support for a two-nucleotide T1 pseudoknot in CPEB3 involving a non-canonical U-U base pair. While no crystal structure of the CPEB3 ribozyme has been solved, this U:U base pair has been confirmed and implicated as a magnesium binding site based on NMR and Tb3+ cleavage data (Skilandat et al., 2016). In our data, we find that G:C and C:G base pairs can support activity. We see negative epistasis for several pairs of mutations that result in ‘mismatches’ (A:G, A:A, and A:C) and positive or no epistasis for pairs of mutations that result in G:C and C:G base pairs, which all supports the formation of a second base pair in T1. We note that because the starting base pair is a U:U, the location of double mutants resulting in WC/GU pairs do not lie on the anti-diagonal in the heatmaps. Because a crystal structure of the CPEB3 ribozyme has not been solved, the CPEB3 data provides an example of how comprehensive mutational data can be useful for RNA with unknown structures.
 
-## Evaluation of read depth and mutational coverage
+### Evaluation of read depth and mutational coverage
 
 The accuracy of our RA measurements depends on the number of reads we observe that map to each unique ribozyme sequence (read depth). Each reference ribozyme has a different nucleotide length resulting in different numbers of possible single and double mutants. In addition, the pooling of experimental replicates for sequencing does not result in equal mixtures of each replicate. In order to determine read depth, we mapped reads to the reference sequences and counted the number of reads that matched each ribozyme, while allowing for one or two mutations. We observed every single and double mutant for all ribozymes in each replicate, indicating 100% coverage of these mutant classes for all of our data sets. The distributions of observations for each single and double mutant of each ribozyme are shown in Figure 6—figure supplement 3. The HDV data showed the lowest depth, possibly because it is a larger ribozyme (87 nt), and fewer reads mapped to the single and double mutants (Table 1). Nevertheless, this analysis confirms that the data contain complete coverage of all single and double mutants and ample read depth for all five ribozymes.
 
-## Epistasis plots are an informative approach to visualizing high-throughput activity data
+**Table 1.**
+ Summary of the lengths of each self-cleaving ribozyme used in this study, the number of single and double mutants whose cleavage activity was analyzed, and the average fraction cleaved observed for all single and double mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ribozyme name</th>
+      <th>Ribozyme length</th>
+      <th>Possible single Mmutants</th>
+      <th>Possible double mutants</th>
+      <th>Total mapped reads</th>
+      <th>Wild-type fraction cleaved</th>
+      <th>Single mutant average fraction cleaved</th>
+      <th>Double mutant average fraction cleaved</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPEB3</td>
+      <td>69</td>
+      <td>207</td>
+      <td>21,114</td>
+      <td>9,238,603</td>
+      <td>0.90</td>
+      <td>0.69</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>HDV</td>
+      <td>87</td>
+      <td>261</td>
+      <td>33,669</td>
+      <td>3,316,380</td>
+      <td>0.60</td>
+      <td>0.40</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Twister</td>
+      <td>48</td>
+      <td>144</td>
+      <td>10,152</td>
+      <td>7,762,863</td>
+      <td>0.60</td>
+      <td>0.41</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Hairpin</td>
+      <td>71</td>
+      <td>213</td>
+      <td>22,365</td>
+      <td>5,067,216</td>
+      <td>0.52</td>
+      <td>0.29</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Hammerhead</td>
+      <td>45</td>
+      <td>135</td>
+      <td>8,910</td>
+      <td>8,054,498</td>
+      <td>0.34</td>
+      <td>0.27</td>
+      <td>0.19</td>
+    </tr>
+  </tbody>
+</table>
+
+### Epistasis plots are an informative approach to visualizing high-throughput activity data
 
 Previous studies have reported comprehensive pairwise mutagenesis of ribozymes that provide interesting opportunities for comparison to the data presented here. For example, all pairwise mutations in a 42-nucleotide region of the same twister ribozyme were previously reported (Kobori and Yokobayashi, 2016). Compared to our experiments, these previous experiments used a later transcriptional time point (2 hr) and lower magnesium concentration (6 mM). They did not calculate epistasis, and reported the RA of all double mutants using heatmaps, inspiring the figures presented here. The results were highly similar, and the authors were able to identify paired regions in the data. The similarity between the results illustrates the reliability of this sequencing-based approach, which is promising for future data sharing and meta-analysis efforts. In another prior work, all pairwise mutations in the glmS ribozyme were analyzed using a custom-built fluorescent RNA array (Andreasson et al., 2020). The power of this approach is that they were able to monitor self-cleavage over short and long time scales, which enables differentiating both very slow and very fast self-cleaving variants. While the authors did not calculate pairwise epistasis, they reported RA heatmaps and also ‘rescue effects’ when the activity of a double mutant is sufficiently higher than the activity of a single mutant. This rescue analysis is very similar to positive epistasis, but only takes into account one mutation at a time. This analysis was also able to identify many of the know base-pair interactions and some tertiary contacts in the glmS ribozyme. In addition, they were able to observe some minor secondary structure rearrangement, where mutations in some nucleotides were able to rescue neighboring nucleotides by shifting the base-pairing slightly. The pairwise epistasis analysis presented here adds an additional approach to extract information from such high-throughput sequencing-based analysis of self-cleaving ribozymes. Unlike the rescue analysis, which can only identify positive interactions, the ability to detect negative epistatic interactions may help further identify structurally important regions for RNA sequence design and engineering efforts. It is possible that all of these analysis approaches could be used for RNA functions other than self-cleavage, if they can be detected by high-throughput sequencing. This could include ribozyme activities that can be enriched by in vitro selections (Pressman et al., 2019), or mutations in natural RNA molecules that affect growth rates (Li et al., 2016).
 
-## Conclusion
+### Conclusion
 
 We have determined the RA for all single and double mutants of five self-cleaving ribozymes and use this data to calculate epistasis for all possible pairs of nucleotides. The data was collected under identical co-transcriptional conditions, facilitating direct comparison of the data sets. The data revealed signatures of structural elements including paired regions and non-canonical structures. In addition, the comprehensiveness of the double mutants enabled identification of catalytic residues. Recently, there has been significant progress toward predicting RNA structures from sequence using machine learning approaches (Calonaci et al., 2020; Townshend et al., 2021; Zhao et al., 2021). The machine learning models are typically trained on structural biology data from x-ray crystallography, chemical probing (SHAPE), and natural sequence conservation. Self-cleaving ribozymes have been central to this effort. Our approach is similar to SHAPE in that it can be obtained with common lab equipment and commercially available reagents. The activity data presented provides information similar to natural sequence conservation, except that it provides quantitative effects of mutations, not just frequency. For example, secondary structures have been predicted based on comparative sequence analysis by identifying covarying nucleotide positions in homologous RNA sequences. These approaches are important because they do not require any experimental evaluation of sequences. However, this ‘comparative approach’ may not be able to identify important nucleotides or structural elements other than canonical base pairs. We hope that the activity-based data presented here will provide information not present in these other training data sets and help advance computational predictions.
 
 ## Materials and methods
 
-## Mutational library design and preparation of self-cleaving ribozymes
+### Mutational library design and preparation of self-cleaving ribozymes
 
 Single-stranded DNA molecules used as templates for in vitro transcription were synthesized as described previously (Kobori and Yokobayashi, 2016), using doped oligos containing 97% of the base of the reference sequence and 1% of the three other remaining bases at each position (Keck Oligo Synthesis Resource, Yale). A constant structured RNA cassette was appended to the template sequences to provide a reverse transcription primer binding site (Wilkinson et al., 2006). The ssDNA library was made double-stranded to allow for T7 transcription via low-cycle PCR using Taq DNA polymerase.
 
-## Co-transcriptional self-cleavage assay
+### Co-transcriptional self-cleavage assay
 
 The co-transcriptional self-cleavage reactions were carried out in triplicate by combining 20 μL 10× T7 transcription buffer (500 μL 1 M Tris pH 7.5, 50 μL 1 M DTT, 20 μL 1 M Spermidine, 150 μL 1 M MgCl2, 280 μL RNase-free water), 4 μL rNTP (25 mM, NEB, Ipswich, Ma), 8 μL T7 RNA Polymerase-Plus enzyme mix (1600 U, Invitrogen, Waltham, MA), 160 μL nuclease-free water, and 8 μL of double-stranded DNA template (4 pmol, 0.5 μM PCR product) at 37°C for 30 min. The transcription and co-transcription self-cleavage reactions were quenched by adding 60 μL of 50 mM EDTA. The resulting RNA was purified and concentrated using Direct-zol RNA MicroPrep Kit with TRI-Reagent (Zymo Research, Irvine, CA), and eluted in 7 μL nuclease-free water. Concentrations were determined via absorbance at 260 nm (ThermoFisher NanoDrop, Waltham, MA), and normalized to 5 μM.
 
-## Reverse transcription and Illumina indexing PCR
+### Reverse transcription and Illumina indexing PCR
 
 Reverse transcription was carried out using a 5′ RACE protocol using phased template switching oligo’s (TSO1-4, Supplementary file 1) as described previously (Bendixsen et al., 2020). Briefly, reverse transcription reactions used 5 pmol RNA and 20 pmol of reverse transcription primer in a volume of 10 μL. RNA and primer were heated to 72°C for 3 min and cooled on ice. Reverse transcription was initiated by adding 4 μL SMARTScribe 5× First-Strand Buffer (TaKaRa, San Jose, CA), 2 μL dNTP (10 mM), 2 μL DTT (20 mM), 2 μL phased template switching oligo mix (10 μM), and 2 μL SMARTScribe Reverse Transcriptase (200 units, TaKaRa). Four different template switching oligos (TSO 1–4) with different lengths and nucleotide compositions were used such that the first nucleotides read during sequencing are a balance of all four nucleotides, and the ribozymes are sequenced in four different frames relative to the primer. The mixture was incubated at 42°C for 90 min and the reaction was stopped by heating to 72°C for 15 min. The resulting cDNA was purified on a silica-based column (DCC-5, Zymo Research) and eluted into 7 μL water. Illumina adapter sequences and indexes were added using high-fidelity PCR. A unique index combination was assigned to each ribozyme and for each replicate. The PCR reaction contained 3 μL purified cDNA, 12.5 μL KAPA HiFi HotStart ReadyMix (2×, KAPA Biosystems, Wilmington, MA), 2.5 μL forward, 2.5 μL reverse primer (Illumina Nextera Index Kit), and 5 μL water. Several cycles of PCR were examined using gel electrophoresis and a PCR cycle was chosen that was still in logarithmic amplification, prior to saturation. Each PCR cycle consisted of 98°C for 10 s, 63°C for 30 s, and 72°C for 30 s. PCR DNA was purified on silica-based columns (DCC-5, Zymo Research) and eluted in 22.5 μL water. The final product was then verified using gel electrophoresis.
 
-## High-throughput sequencing
+### High-throughput sequencing
 
 The indexed PCR products for all replicates were pooled together at equimolar concentrations based on absorbance at 260 nm. Paired-end sequencing reads were obtained for the pooled libraries using an Illumina HiSeq 4000 (Genomics and Cell Characterization Core Facility, University of Oregon).
 
-## Sequencing data analysis
+### Sequencing data analysis
 
-Paired-end sequencing reads were joined using FLASh, allowing ‘outies’ due to overlapping reads. The joined sequencing reads were analyzed using custom Julia scripts available at https://gitlab.com/bsu/biocompute-public/mut_12 (Beck, 2023). Our analysis implemented a sequence-length sliding window to screen for double mutant variants of a reference ribozyme. Nucleotide identities for each mutant were identified and then counted as either cleaved or uncleaved based on the presence or absence of the 5′-cleavage product sequence. The RA was calculated as previously described (Kobori and Yokobayashi, 2016). Briefly, a FC was calculated for each genotype in each replicate as FC=Nclv/(Nclv+Nunclv). This value was normalized to the reference/wild-type FC as RA=FC/FCwt. The RA values were averaged across the three replicates and then plotted as a heatmap. Epistasis interactions for each double mutant (i, j) were quantified as previously described (Bendixsen et al., 2017), where Epistasis(ε)=logRAi,j(RAi)(RAj) . In order to eliminate false positive detection of epistasis interactions, values were filtered to eliminate instances where the difference between the double and any of the single mutants was less than 1−3σ of the overall distribution of differences between the single and double mutant relative activities. Values greater than 1 indicate positive epistasis, and values less than 0 indicate negative epistasis. Mann-Whitney U test was used to determine the probability that epistasis or activity values of different structural elements were from the same distribution.
+Paired-end sequencing reads were joined using FLASh, allowing ‘outies’ due to overlapping reads. The joined sequencing reads were analyzed using custom Julia scripts available at https://gitlab.com/bsu/biocompute-public/mut_12 (Beck, 2023). Our analysis implemented a sequence-length sliding window to screen for double mutant variants of a reference ribozyme. Nucleotide identities for each mutant were identified and then counted as either cleaved or uncleaved based on the presence or absence of the 5′-cleavage product sequence. The RA was calculated as previously described (Kobori and Yokobayashi, 2016). Briefly, a FC was calculated for each genotype in each replicate as FC=Nclv/(Nclv+Nunclv). This value was normalized to the reference/wild-type FC as RA=FC/FCwt. The RA values were averaged across the three replicates and then plotted as a heatmap. Epistasis interactions for each double mutant (i, j) were quantified as previously described (Bendixsen et al., 2017), where $Epistasis(\epsilon)=log\frac{RAi,j}{(RAi)(RAj)}$ . In order to eliminate false positive detection of epistasis interactions, values were filtered to eliminate instances where the difference between the double and any of the single mutants was less than 1−3σ of the overall distribution of differences between the single and double mutant relative activities. Values greater than 1 indicate positive epistasis, and values less than 0 indicate negative epistasis. Mann-Whitney U test was used to determine the probability that epistasis or activity values of different structural elements were from the same distribution.
 
-## Correlation of thermodynamic stability of paired regions and observed mutational effects
+### Correlation of thermodynamic stability of paired regions and observed mutational effects
 
 Each base-paired region was split into two separate RNA sequences containing only the nucleotides involved in base-pairing, omitting nucleotides belonging to stem loops. Complex formation between each pair of strands at was analyzed in Nupack using Serrra and Turner RNA energy parameters in order to obtain minimum free energy values for each paired region (37°C, [1 μM]). Using custom Julia scripts, the median RA for single mutations to each paired region was plotted as a function of the calculated free energy and a Pearson correlation coefficient was calculated.

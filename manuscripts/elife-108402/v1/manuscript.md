@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/035t8zc32 Institute for Protein Research, The University of Osaka Osaka Japan
-2. https://ror.org/01vy4gh70 Shenzhen University Medical School Shenzhen China
+1. Institute for Protein Research, The University of Osaka Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+2. Shenzhen University Medical School Shenzhen China ([ROR:01vy4gh70](https://ror.org/01vy4gh70))
 
 † Corresponding author
 

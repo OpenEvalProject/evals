@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/013sk6x84 Janelia Research Campus, HHMI Ashburn United States
+1. Janelia Research Campus, HHMI Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
 
 † Corresponding author
 

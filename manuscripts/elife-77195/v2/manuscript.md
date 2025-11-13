@@ -17,21 +17,21 @@
 
 ### Affiliations
 
-1. https://ror.org/01ej9dk98 Department of Microbiology and Immunology at the Peter Doherty Institute for Infection and Immunity, University of Melbourne Melbourne Australia
-2. https://ror.org/05dbj6g52 Department of Infectious Diseases, Austin Health Heidelberg Australia
-3. https://ror.org/005bvs909 Victorian Infectious Diseases Service, Royal Melbourne Hospital Melbourne Australia
-4. https://ror.org/01ej9dk98 Microbiological Diagnostic Unit Public Health Laboratory, The University of Melbourne at the Doherty Institute for Infection and Immunity Melbourne Australia
-5. https://ror.org/0187t0j49 Department of Infectious Diseases, John Hunter Hospital Newcastle, New South Wales Australia
-6. https://ror.org/048zcaj52 Menzies School of Health Research, Charles Darwin University Casuarina, Northern Territory Australia
-7. https://ror.org/01ej9dk98 Victorian Infectious Disease Service, Royal Melbourne Hospital, and University of Melbourne at the Peter Doherty Institute for Infection and Immunity Melbourne Australia
+1. Department of Microbiology and Immunology at the Peter Doherty Institute for Infection and Immunity, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+2. Department of Infectious Diseases, Austin Health Heidelberg Australia ([ROR:05dbj6g52](https://ror.org/05dbj6g52))
+3. Victorian Infectious Diseases Service, Royal Melbourne Hospital Melbourne Australia ([ROR:005bvs909](https://ror.org/005bvs909))
+4. Microbiological Diagnostic Unit Public Health Laboratory, The University of Melbourne at the Doherty Institute for Infection and Immunity Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+5. Department of Infectious Diseases, John Hunter Hospital Newcastle, New South Wales Australia ([ROR:0187t0j49](https://ror.org/0187t0j49))
+6. Menzies School of Health Research, Charles Darwin University Casuarina, Northern Territory Australia ([ROR:048zcaj52](https://ror.org/048zcaj52))
+7. Victorian Infectious Disease Service, Royal Melbourne Hospital, and University of Melbourne at the Peter Doherty Institute for Infection and Immunity Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
 8. Nuffield Department of medicine Oxford United Kingdom
-9. https://ror.org/052gg0110 Big Data Institute, Nuffield Department of Population Health, Li Ka Shing Centre for Health Information and Discovery, Old Road Campus, University of Oxford Oxford United Kingdom
+9. Big Data Institute, Nuffield Department of Population Health, Li Ka Shing Centre for Health Information and Discovery, Old Road Campus, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
 ## Abstract
 
-During severe infections, Staphylococcus aureus moves from its colonising sites to blood and tissues and is exposed to new selective pressures, thus, potentially driving adaptive evolution. Previous studies have shown the key role of the agr locus in S. aureus pathoadaptation; however, a more comprehensive characterisation of genetic signatures of bacterial adaptation may enable prediction of clinical outcomes and reveal new targets for treatment and prevention of these infections. Here, we measured adaptation using within-host evolution analysis of 2590 S . aureus genomes from 396 independent episodes of infection. By capturing a comprehensive repertoire of single nucleotide and structural genome variations, we found evidence of a distinctive evolutionary pattern within the infecting populations compared to colonising bacteria. These invasive strains had up to 20-fold enrichments for genome degradation signatures and displayed significantly convergent mutations in a distinctive set of genes, linked to antibiotic response and pathogenesis. In addition to agr -mediated adaptation, we identified non-canonical, genome-wide significant loci including sucA-sucB and stp1 . The prevalence of adaptive changes increased with infection extent, emphasising the clinical significance of these signatures. These findings provide a high-resolution picture of the molecular changes when S. aureus transitions from colonisation to severe infection and may inform correlation of infection outcomes with adaptation signatures.
+During severe infections, Staphylococcus aureus moves from its colonising sites to blood and tissues and is exposed to new selective pressures, thus, potentially driving adaptive evolution. Previous studies have shown the key role of the agr locus in S. aureus pathoadaptation; however, a more comprehensive characterisation of genetic signatures of bacterial adaptation may enable prediction of clinical outcomes and reveal new targets for treatment and prevention of these infections. Here, we measured adaptation using within-host evolution analysis of 2590 S. aureus genomes from 396 independent episodes of infection. By capturing a comprehensive repertoire of single nucleotide and structural genome variations, we found evidence of a distinctive evolutionary pattern within the infecting populations compared to colonising bacteria. These invasive strains had up to 20-fold enrichments for genome degradation signatures and displayed significantly convergent mutations in a distinctive set of genes, linked to antibiotic response and pathogenesis. In addition to agr-mediated adaptation, we identified non-canonical, genome-wide significant loci including sucA-sucB and stp1. The prevalence of adaptive changes increased with infection extent, emphasising the clinical significance of these signatures. These findings provide a high-resolution picture of the molecular changes when S. aureus transitions from colonisation to severe infection and may inform correlation of infection outcomes with adaptation signatures.
 
 ## Introduction
 
@@ -43,19 +43,175 @@ Convergent evolution among separated (independent) episode of colonisation or in
 
 ## Results
 
-## The S. aureus within-host evolution analysis framework
+### The S. aureus within-host evolution analysis framework
 
 We compiled a collection of 2251 S. aureus genomes from 267 independent episodes of colonisation and/or infection, reported in 24 genomic studies (Young et al., 2017; Giulieri et al., 2018; Gao et al., 2015; Young et al., 2012; Wuthrich et al., 2019; Trouillet-Assant et al., 2016; Tan et al., 2019; Suligoy et al., 2018; Rouard et al., 2018; Rishishwar et al., 2016; Petrovic Fabijan et al., 2020; Miller et al., 2020; Loss et al., 2019; Liu et al., 2020; Langhanki et al., 2018; Kuroda et al., 2019; Ji et al., 2020; Howden et al., 2011; Harkins et al., 2018; Golubchik et al., 2013; Burd et al., 2014; Benoit et al., 2018; Azarian et al., 2019; Altman et al., 2018; Table 1; Table 1—source data 1). We supplemented this dataset of publicly available sequences with unpublished sequences from 603 serial invasive isolates collected within the CAMERA-2 trial (Tong et al., 2020).
+
+**Table 1.**
+ Microbiological and clinical characteristics of the colonisation and infection episodes included in the within-host evolution analysis.Table 1—source data 1.List of within-host studies included in the analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Strains(n=2590)</th>
+      <th>Episodes(n=396)</th>
+    </tr>
+    <tr>
+      <th>Sequence type</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30</td>
+      <td>342 (13.2%)</td>
+      <td>43 (10.9%)</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>277 (10.7%)</td>
+      <td>44 (11.1%)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>271 (10.5%)</td>
+      <td>42 (10.6%)</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>198 (7.6%)</td>
+      <td>38 (9.6%)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>156 (6.0%)</td>
+      <td>4 (3.5%)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>133 (5.1%)</td>
+      <td>14 (3.5%)</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>110 (4.2%)</td>
+      <td>29 (7.3%)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>107 (4.1%)</td>
+      <td>18 (4.5%)</td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>100 (3.9%)</td>
+      <td>29 (7.3%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>896 (34.6%)</td>
+      <td>125 (31.6%)</td>
+    </tr>
+    <tr>
+      <td>mecA positive</td>
+      <td>1001 (38.6%)</td>
+      <td>207 (52.3%)</td>
+    </tr>
+    <tr>
+      <td>Infection syndrome</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Skin infection</td>
+      <td>204 (7.9%)</td>
+      <td>32 (8.1%)</td>
+    </tr>
+    <tr>
+      <td>Osteoarticular infection</td>
+      <td>77 (3.0%)</td>
+      <td>17 (4.3%)</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia without focus</td>
+      <td>588 (22.7%)</td>
+      <td>152 (38.4%)</td>
+    </tr>
+    <tr>
+      <td>Bacteraemia with focus</td>
+      <td>331 (12.8%)</td>
+      <td>85 (21.5%)</td>
+    </tr>
+    <tr>
+      <td>Endocarditis</td>
+      <td>197 (7.6%)</td>
+      <td>44 (11.1%)</td>
+    </tr>
+    <tr>
+      <td>No invasive strains</td>
+      <td></td>
+      <td>66 (16.7%)</td>
+    </tr>
+    <tr>
+      <td>Colonisation syndrome</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nasal carriage</td>
+      <td>974 (37.6%)</td>
+      <td>166 (42%)</td>
+    </tr>
+    <tr>
+      <td>Cystic fibrosis</td>
+      <td>57 (2.2%)</td>
+      <td>9 (2%)</td>
+    </tr>
+    <tr>
+      <td>Atopic dermatitis</td>
+      <td>162 (6.3%)</td>
+      <td>9 (2%)</td>
+    </tr>
+    <tr>
+      <td>No colonising strains</td>
+      <td></td>
+      <td>212 (54%)</td>
+    </tr>
+  </tbody>
+</table>
 
 Using genetic distance and sequence type (ST) to define within-host lineages, we estimated that coinfection was present in 4/336 (1%) of invasive episodes and co-colonisation 11/167 (7%). We removed genetically unrelated strains within the same episode and included 2590 genomes (1397 invasive and 1193 colonising) from 396 episodes in our within-host evolution analysis (Figure 1, Table 1, Supplementary files 1 and 2). The most prevalent lineages in the collection were ST 30 (342 strains, 13%), ST 22 (277 strains, 11%), and ST 5 (271 strains, 11%); 1001 strains (39%) were mecA positive. The collection was representative of the global S. aureus diversity, with an even distribution of colonising and invasive strains across the major clades (Figure 2A). The most frequent infection syndrome was bacteraemia without focus (152 episodes, 38.4%), while nasal carriage (166 episodes, 42%) was the most prevalent colonisation condition (Table 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig1-v2.jpg)
 
-**Figure 1.:** S. aureus within-host evolution analysis framework.(A) Simulated phylogenetic tree illustrating within-host evolution of S. aureus colonisation and infection. This model assumes two genetic bottlenecks (dotted lines); upon transmission and upon transition from colonisation to invasive infection. (B) Sites and timing of within-host samples and number of genomes per sample define five prototypes of within-host evolution studies, each with colonising-colonising (C>C), colonising-invasive (C>I), or invasive-invasive (I>I) comparisons in different combinations: from top to the bottom: multiple colonising samples and one invasive samples; one colonising and one invasive sample; multiple colonising samples; multiple invasive samples; multiple colonising and invasive samples. (C) Approach to capture signals of adaptation across multiple independent episodes of colonisation/infection through detection of multiple genetic mechanisms of adaptation from short reads data and multi-layered functional annotation of the genetic variants using multiple databases including characterisation of intergenic regions (promoters), operon prediction, and gene ontology (GO). Statistical framework for the gene, operon, and gene set enrichment anlaysis (GSEA). Counts of independent mutations with likely impact on the protein sequence (non-synonymous substitutions, frameshifts, stop codon mutations, and insertion sequences [IS] insertions) were computed for each genes with a FPR3757 homologue. Gene counts (with the addition of intergenic mutations in promoter regions) were aggregated in operons and GOs. Gene and operon counts were used to fit Poisson regression models to infer mutation enrichment and significance of the enrichment. GOs counts and gene enrichment significance were used to run a gene-set-enrichment analysis. To illustrate the approach, the example of the gene walR is provided in italic.
+**Figure 1.:** (A) Simulated phylogenetic tree illustrating within-host evolution of S. aureus colonisation and infection. This model assumes two genetic bottlenecks (dotted lines); upon transmission and upon transition from colonisation to invasive infection. (B) Sites and timing of within-host samples and number of genomes per sample define five prototypes of within-host evolution studies, each with colonising-colonising (C>C), colonising-invasive (C>I), or invasive-invasive (I>I) comparisons in different combinations: from top to the bottom: multiple colonising samples and one invasive samples; one colonising and one invasive sample; multiple colonising samples; multiple invasive samples; multiple colonising and invasive samples. (C) Approach to capture signals of adaptation across multiple independent episodes of colonisation/infection through detection of multiple genetic mechanisms of adaptation from short reads data and multi-layered functional annotation of the genetic variants using multiple databases including characterisation of intergenic regions (promoters), operon prediction, and gene ontology (GO). Statistical framework for the gene, operon, and gene set enrichment anlaysis (GSEA). Counts of independent mutations with likely impact on the protein sequence (non-synonymous substitutions, frameshifts, stop codon mutations, and insertion sequences [IS] insertions) were computed for each genes with a FPR3757 homologue. Gene counts (with the addition of intergenic mutations in promoter regions) were aggregated in operons and GOs. Gene and operon counts were used to fit Poisson regression models to infer mutation enrichment and significance of the enrichment. GOs counts and gene enrichment significance were used to run a gene-set-enrichment analysis. To illustrate the approach, the example of the gene walR is provided in italic.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig2-v2.jpg)
+
+**Figure 2.:** The tree is annotated (starting from the inner circle) with the most prevalent sequence types (ST), presence/absence of the mecA gene, compartment of isolation (colonising or invasive), and year of publication. (B) Summary of 396 independent episodes of S. aureus colonisation or infection categorised according to whether they allowed comparing colonising-colonising (C>C), colonising-invasive (C>I), or invasive-invasive (I>I) strains, or a combination of them. (C) Evidence of a distinctive pattern of adaptation in late infection-adapted strains (type I>I variants). For each type of comparison (type C>C, colonising-colonising; type C>I, colonising-invasive; type I>I, invasive-invasive), the cumulative curves display the accrued number of intergenic mutations, truncating mutations, insertion sequences (IS) insertions, and large deletions as a function of the total number of mutations. Genetic events were counted once per episode, regardless of the number of strains with the mutation. The sequence of mutations events in the cumulative curves is random.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The dashed line represents the mutation threshold used to remove genetically unrelated strains with the same episode.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The scatter plots display the linear relationship between sampling time after the internal reference and number of mutations. Only episodes with at least two strains collected at at least 1 day apart were included. The shaded area around the fitted regression shows the 95% confidence interval (CI). The parameters shown on the top of each plot are the r-squared, p value, regression coefficient β, and the mutation rate μ (mutations site–1 year–1).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig2-figsupp4-v2.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Distribution of the nine major ST among 2590 strains. (B) Number of independent insertion sequences (IS) insertions by ST group and type of transposase.
 
 Our within-host evolution analysis strategy identified 4556 genetic variants (median 3 per episode, range 0–237) (Supplementary file 3). Importantly, by investigating both point mutations and structural variation, we were able to uncover 214 large deletions (>500 bp), 160 new insertion sequences (IS) insertions, and 609 copy number variants, underscoring the role of large chromosome structural variation in within-host evolution. To increase the evolutionary convergence signal by aggregating mutations in functionally consistent categories, we annotated all genetic variants using multiple datasets, including coding sequences, regulatory intergenic regions, operons and gene ontologies (Figure 1C).
 
-## Distinctive evolutionary patterns define nose-adapted, early infection-adapted, and late infection-adapted strains
+### Distinctive evolutionary patterns define nose-adapted, early infection-adapted, and late infection-adapted strains
 
 Based on the working hypothesis that S. aureus host adaptation patterns differ according to whether the strains are nose-colonising, collected at an early stage of infection (i.e. within the first 3 days) or at a late infection stage (i.e. associated with persistence beyond the first 3 days or recurrence), we assessed whether it was possible to define (i) general paradigms of genetic variation and (ii) specific convergence signatures. Thus, we classified within-host acquired variants into three groups according to their most likely location in the within-host phylogeny: (i) between colonising strains (colonising-colonising [type C>C]); (ii) between colonising and early infection adapted strains (colonising-invasive [type C>I]); and (iii) between invasive strains (invasive-invasive [type I>I]). Overall, the 396 infection episodes included in the analysis allowed us to independently assess 166 type C>C, 118 type C>I, and 312 type I>I within-host variants. In 95 cases, there were sufficient samples to assess all three types within the same episode (Figure 2B). Across colonisation/infection stages, sampling frequency did not seem to affect the number of variants identified with the exception of early adapted invasive strains (Figure 2—figure supplement 2).
 
@@ -65,13 +221,320 @@ We have previously shown that invasive strains from persistent or relapsing infe
 
 Therefore, we calculated the prevalence of intergenic mutations, protein-truncating mutations, IS insertions, and large deletions among all variants and compared it between type C>C, type C>I, and type I>I variants. Strikingly, the distribution of mutations according to the predicted effect differed substantially in I>I pairs when compared to mutations identified between nose-colonising and invasive strains and within colonising strains (Figure 2). This can be expressed using the neutrality index (NI), which tests deviation from neutral evolution and is comparable to an odds ratio (Stoletzki and Eyre-Walker, 2011). Relative to type C>C variants, variants emerging within the infecting strains were enriched for intergenic mutations (NI 2.5; p=1.8 × 10–16) and protein-truncating mutations (NI 2.4; p=4.8 × 10–10) (Table 2). In contrast, no significant enrichment was observed among type C>I variants.
 
+**Table 2.**
+ Modified McDonald-Kreitman table displaying counts of variants (point mutations and structural variants) and the neutrality index for colonising-invasive (type C>I) and invasive-invasive (type I>I) variants (both compared to colonising-colonising [type C>C] variants).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Classification of variant</th>
+      <th colspan="3">Number of variants (Neutrality index)</th>
+    </tr>
+    <tr>
+      <th>Type C&gt;C</th>
+      <th>Type C&gt;I</th>
+      <th>Type I&gt;I</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Synonymous</td>
+      <td>381</td>
+      <td>130</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <td>Non-synonymous</td>
+      <td>978</td>
+      <td>300 (0.9)</td>
+      <td>503 (1.3)*</td>
+    </tr>
+    <tr>
+      <td>Intergenic</td>
+      <td>544</td>
+      <td>197 (1.1)</td>
+      <td>549 (2.5)**</td>
+    </tr>
+    <tr>
+      <td>Truncating</td>
+      <td>197</td>
+      <td>58 (0.9)</td>
+      <td>190 (2.4)**</td>
+    </tr>
+    <tr>
+      <td>Insertion sequences insertion</td>
+      <td>17</td>
+      <td>6 (1.0)</td>
+      <td>137 (19.8)**</td>
+    </tr>
+    <tr>
+      <td>Large deletion</td>
+      <td>76</td>
+      <td>17 (0.6)*</td>
+      <td>122 (3.9)**</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are counts of independent mutations. The neutrality index is shown in brackets in italic.Significance testing Fisher’s Exact Test: p<0.05; ** p<0.005._
+
 While large deletions were significantly more enriched in type I>I variants (NI 4.0, p=1.1 × 10–15), the strongest evidence for enrichment (NI 19.9, p=1.6 × 10–42) was found for IS insertions. We and others have previously shown that new insertions of IS256 may provide an efficient mechanism of genomic plasticity in invasive S. aureus strains (Giulieri et al., 2018; Kuroda et al., 2019; McEvoy et al., 2013). Here, we expand this observation in a larger dataset and show that this mechanism is not limited to IS256 (Figure 2—figure supplement 5). As shown in Figure 2C, two invasive strains exhibited a burst of >10 new IS insertions (IS3 and IS256, respectively). It has been shown that IS activation occurs under stress conditions, such as antibiotic exposure and oxidative stress (Schreiber et al., 2013), which is consistent with the selection environment encountered by invasive strains. However, these bursts occurred only in 2/1068 adapted invasive strains.
 
 Overall, these data support a model, where late infection-adapted strains show an enrichment for variants that are predicted to exert a stronger functional impact, either by producing a truncated protein or by potentially interfering with intergenic regulatory regions, through point mutations or IS insertions. This strong genome degradation signature appears to be specific to type I>I variants and was absent in type C>I variants, suggesting that the bottleneck effect upon blood or tissue invasion does not explain it. To assess whether this general enrichment of non-silent evolution represented a signature of positive selection or derived from within-host gene obsolescence occurring during invasive infection, we further investigated signals of gene, operon, and pathway specific enrichment across independent episodes of infection.
 
-## Gene enrichment analysis identifies significant hotspots of adaptation
+### Gene enrichment analysis identifies significant hotspots of adaptation
 
 To identify signatures of adaptation, we first counted how many times each coding sequence was mutated independently across distinct colonisation/infection episodes (Figure 3, Table 3, Table 4, Supplementary file 3). We considered all protein-modifying mutations either predicted to cause a gain or LOF to the locus: non-synonymous substitutions, truncations, IS insertions, or deletions. To ensure consistency across the dataset, we restricted our analysis to 1736 (74%) genes with a homologue in reference strain FPR3757 (excluding plasmid genes and phage genes). Mutations were considered independent if they arose in distinct colonisation/infection episodes. To assess whether the convergent signals were a reliable indication of adaptation, we applied a gene enrichment analysis for protein-altering mutations which computes a length-corrected gene-level enrichment of protein-modifying mutations. The significance of the enrichment for each gene was estimated by comparing gene-specific Poisson models of mutation counts with the null hypothesis, which indicates neutrality and assumes a constant mutation rate across all genes (Young et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-v2.jpg)
+
+**Figure 3.:** (A) Significance of the enrichment for protein-altering mutations. The dashed line depicts the Bonferroni-corrected significance threshold, and red circles and blue circles represent genes with p values below and above the Bonferroni threshold, respectively. (B) Bar plots of independent mutations separated in three panels according to the type of variant (type C>C: colonising-colonising; type C>I: colonising-invasive; type I>I: invasive-invasive) and coloured according to the class of mutation. (C) Gene maps with type and positions of mutations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The maximum-likelihood phylogenetic tree was inferred from the core genome alignment of 2590 isolates. The variants are annotated based on SnpEff (*: stop codon; fs: frameshift; ext*?: stop lost).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Only the 20 most significant genes with positive selection (dN/dS for missense mutations >1) are shown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** On the x-axis are shown proportions of predicted deleterious mutations (protein-truncating substitutions with PROVEAN score <–2.5, insertion sequences [IS] insertions), the y-axis shows protein-truncating mutations, the colour of the dots is based on the median PROVEAN score, and the size represents the total number of aggregated mutations.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-figsupp4-v2.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-figsupp5-v2.jpg)
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Top 20 genes with the most significant mutation enrichment across the entire dataset. (A) Significance of the enrichment for protein-altering mutations. The dashed line depicts the Bonferroni-corrected significance threshold, and red circles and blue circles represent genes with and without FPR3757 homologue, respectively. (B) Bar plots of independent mutations separated in three panels according to the type of variant (type C>C: colonising-colonising; type C>I: colonising-invasive; type I>I: invasive-invasive) and coloured according to the class of mutation. (C) Gene maps with type and positions of mutations.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Top 20 genes with the most significant mutation enrichment across the entire dataset. (A) Significance of the enrichment for protein-altering mutations. The dashed line depicts the Bonferroni-corrected significance threshold, and red circles and blue circles represent genes with p values below and above the Bonferroni threshold, respectively. (B) Bar plots of independent mutations separated in three panels according to the type of variant (type C>C: colonising-colonising; type C>I: colonising-invasive; type I>I: invasive-invasive) and coloured according to the class of mutation. (C) Gene maps with type and positions of mutations.
+
+**Table 3.**
+ Genome-wide significant gene signatures of within-host evolution.The genes shown reached genome-wide significance in the entire dataset or in either colonising-colonising (type C>C), colonising-invasive (type C>I), or invasive-invasive (type I>I) variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene</th>
+      <th rowspan="2">p value(whole dataset)</th>
+      <th rowspan="2">Description</th>
+      <th colspan="3">N independent mutations</th>
+      <th rowspan="2">Significance</th>
+    </tr>
+    <tr>
+      <th>Type C&gt;C</th>
+      <th>Type C&gt;I</th>
+      <th>Type I&gt;I</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>agrA*</td>
+      <td>7.04 × 10–28</td>
+      <td>Accessory gene regulator protein A</td>
+      <td>5**</td>
+      <td>9**</td>
+      <td>8**</td>
+      <td>Part of the agr quorum sensing system, which is the master regulator of virulence factors expression in S. aureus. Recurrent mutations associated with invasive disease.</td>
+    </tr>
+    <tr>
+      <td>agrC**</td>
+      <td>2.84 × 10–10</td>
+      <td>Accessory gene regulator protein C</td>
+      <td>4</td>
+      <td>2</td>
+      <td>6**</td>
+      <td>Histidine kinase, receptor for extracellular autoactivating peptide. Phosphorylates agrA.</td>
+    </tr>
+    <tr>
+      <td>stp1**</td>
+      <td>1.13 × 10–7</td>
+      <td>Protein phosphatase 2 C domain-containing protein</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Associated with vancomycin resistance.</td>
+    </tr>
+    <tr>
+      <td>mprF**</td>
+      <td>4.55 × 10–6</td>
+      <td>Oxacillin resistance-related FmtC protein</td>
+      <td>2</td>
+      <td>0</td>
+      <td>9**</td>
+      <td>Main determinant of daptomycin resistance. Association with persistence and immune evasion.</td>
+    </tr>
+    <tr>
+      <td>rpoB</td>
+      <td>7.24 × 10–3</td>
+      <td>DNA-directed RNA polymerase subunit beta</td>
+      <td>1</td>
+      <td>1</td>
+      <td>7**</td>
+      <td>Association with rifampicin resistance, but selection in the absence of rifampicin exposure can happen (R503H). Co-resistance to vancomycin, daptomycin, and oxacillin. Association with persistence.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significant enrichment (above the Bonferroni-corrected cut-off, see methods)._
+
+**Table 4.**
+ Gene signatures of within-host evolution with suggestive significant enrichment.The genes shown reached the suggestive significance threshold in the entire dataset or in either type C>C, type C>I, or type I>I variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene</th>
+      <th rowspan="2">p value(whole dataset)</th>
+      <th rowspan="2">Description</th>
+      <th colspan="3">N independent mutations</th>
+      <th rowspan="2">Significance</th>
+    </tr>
+    <tr>
+      <th>Type C&gt;C</th>
+      <th>Type C&gt;I</th>
+      <th>Type I&gt;I</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sucA*</td>
+      <td>6.82 × 10–5</td>
+      <td>2-oxoglutarate dehydrogenase E1 component</td>
+      <td>6</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Encodes a subunit of the α-ketoglutarate dehydrogenase of the tricarboxylic acid cycle.</td>
+    </tr>
+    <tr>
+      <td>saeR*</td>
+      <td>1.83 × 10–4</td>
+      <td>DNA-binding response regulator SaeR</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Regulator component of the saeRS two-component system. Virulence regulation.</td>
+    </tr>
+    <tr>
+      <td>accB</td>
+      <td>4.27 × 10–4</td>
+      <td>Biotin carboxyl carrier protein of acetyl-CoA carboxylase</td>
+      <td>3*</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Part of the fatty acid synthesis pathway of S. aureus.</td>
+    </tr>
+    <tr>
+      <td>SAUSA300_1856</td>
+      <td>6.41 × 10–4</td>
+      <td>Hypothetical protein</td>
+      <td>4*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Intracellular cysteine peptidase. Putative chaperone in S. aureus.</td>
+    </tr>
+    <tr>
+      <td>xpaC</td>
+      <td>1.38 × 10–3</td>
+      <td>Hypothetical protein</td>
+      <td>4*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Predicted 5-bromo-4-chloroindolyl phosphate hydrolysis protein, no data on S. aureus.</td>
+    </tr>
+    <tr>
+      <td>rpsJ</td>
+      <td>1.58 × 10–3</td>
+      <td>30S ribosomal protein S10</td>
+      <td>3*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Mutations at residues 53–60 are associated with tigecycline resistance, at no apparent fitness cost.</td>
+    </tr>
+    <tr>
+      <td>SAUSA300_2399</td>
+      <td>1.68 × 10–3</td>
+      <td>ABC transporter ATP-binding protein</td>
+      <td>4*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Downregulated in the presence of fusidic acid</td>
+    </tr>
+    <tr>
+      <td>walR</td>
+      <td>2.10 × 10–3</td>
+      <td>DNA-binding response regulator</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3*</td>
+      <td>Part of walKR two-component response regulator. Associated with vancomycin resistance.</td>
+    </tr>
+    <tr>
+      <td>yjbH</td>
+      <td>3.55 × 10–3</td>
+      <td>Dsba-family protein</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3*</td>
+      <td>Negative regulator of spx (directs its ClpXP-dependent degradation). Association with antibiotic resistance, virulence regulation, and oxidative stress resistance.</td>
+    </tr>
+    <tr>
+      <td>purR</td>
+      <td>3.86 × 10–3</td>
+      <td>Pur operon repressor</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3*</td>
+      <td>purR mutants: increased biofilm formation and virulence in animal model; higher capacity to invave epithelial cells.</td>
+    </tr>
+    <tr>
+      <td>era</td>
+      <td>5.34 × 10–3</td>
+      <td>GTP-binding protein Era</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3*</td>
+      <td>Involved in ribosome assembly and stringent response.</td>
+    </tr>
+    <tr>
+      <td>pbp2</td>
+      <td>7.75 × 10–3</td>
+      <td>Penicillin-binding protein 2</td>
+      <td>6*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Role in methicillin resistance (PBP2a synergism). Increased expression after oxacillin exposure.</td>
+    </tr>
+    <tr>
+      <td>fakA</td>
+      <td>9.90 × 10–3</td>
+      <td>Hypothetical protein</td>
+      <td>5*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Fatty acid kinase. Deletion mutant displayed increased virulence in a murine model of skin infection.</td>
+    </tr>
+    <tr>
+      <td>sgtB</td>
+      <td>2.65 × 10–2</td>
+      <td>Glycosyltransferase</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3*</td>
+      <td>sgtB mutations in adaptive laboratory evolution experiments upon vancomycin exposure.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*suggestive significant enrichment (above the suggestive significance cut-off, adjusted for false-discovery, see methods)._
 
 When applying a Bonferroni-corrected significance threshold (4.6 × 10–5), mutations in agrA were highly significantly enriched across the entire dataset (45-fold enrichment, p=7.0 × 10–28). Other significantly enriched genes were agrC (13-fold enrichment, p=2.8 × 10–10), stp1 (14-fold enrichment, p=1.1 × 10–7), and mprF (sixfold enrichment, p=4.6 × 10–6). The gene sucA reached near-significance (fivefold enrichment, p=6.8 × 10–5). Mutations in genes most significantly targeted by convergent evolution were evenly distributed across the S. aureus phylogeny, indicating that these adaptative mechanisms were not specific to selected lineages (Figure 3—figure supplement 1). Using dN/dS analysis, we confirmed signatures of positive selection in the most significantly enriched genes, although only agrA reached statistical significance (Figure 3—figure supplement 2 and Supplementary file 4).
 
@@ -81,7 +544,7 @@ Adaptive mutations can cause both loss or gain of function of the gene affected;
 
 To confirm that our gene enrichment analysis (focused on point mutations and IS insertions and limited to genes with FPR3757 homologues) captured the large part of adaptation, we analysed variation due to large deletions and copy number variation, which were not included in the gene enrichment analysis. We observed multiple independent deletions and amplifications mainly in phage genes (Figure 3—figure supplement 4 and Figure 3—figure supplement 5). We also repeated the gene enrichment analysis with all mutated genes (with and without FPR3757 homologues) and found very similar results, with only two hypothetical proteins with no FPR3757 homologue among the genes with most significant enrichment (Figure 3—figure supplement 6).
 
-## Combining multiple mechanisms of adaptation and multi-layered annotation increases the signal of convergent evolution
+### Combining multiple mechanisms of adaptation and multi-layered annotation increases the signal of convergent evolution
 
 To increase our ability to capture signatures of adaptation from convergent evolution, we extended our analysis beyond coding sequences, to integrate the genetic variation signals issued from intergenic mutations and IS insertions in intergenic regions. This multi-layered annotation of mutated regions was shown to increase the amount of information gained from in vitro adaptive evolution experiments (Phaneuf et al., 2020). Such methodology allows for an advanced classification of intergenic mutations based on regulatory sequences including promoters and transcription units based on data acquired from RNAseq experiments (Mäder et al., 2016; Prados et al., 2016).
 
@@ -91,9 +554,21 @@ Using this approach, we were able to assign 150/1237 (11%) of all intergenic mut
 
 **Figure 4.:** (A) Significance of the enrichment for protein-altering mutations. The dashed line depicts the Bonferroni-corrected significance threshold, and red circles and blue circles represent operons with p values below and above the Bonferroni threshold, respectively. (B) Bar plots of independent mutations separated in three panels according to the type of variant (type C>C: colonising-colonising; type C>I: colonising-invasive; type I>I: invasive-invasive) and coloured according to the class of mutation. Mutations were considered independent if they occurred in separate episodes of either colonisation or invasive infection. (C) Operon maps with positions of the mutations (relative to the start of the first gene of the operon). Operons are labelled with the names of the genes included, and longer labels were shorted for clarity (see Supplementary file 5 for details).
 
-## Adaptation within the invasive population is distinctive and strongly driven by antibiotics
+### Adaptation within the invasive population is distinctive and strongly driven by antibiotics
 
 The excess of non-silent evolution (and potentially function-altering) within invasive strains suggested that strong, specific selection pressure occurs within the invasive populations (type I>I variants). We therefore assessed genes that appeared to be specifically mutated or inactivated during infection. We performed our gene- and operon-enrichment analysis for each type of within-host variants separately (i.e. within the colonising population, between colonising and invasive strains, and within the invasive population) (Figure 5). We found that agrA mutations were highly enriched in any group of variants, and particularly prevalent between colonising and invasive strains (type C>I variants), consistent with a previous study that is included in this analysis (Young et al., 2017). Among type I>I variants (between invasive strains), a significant enrichment was observed in mprF (18-fold enrichment, p=2.8 × 10–9), agrC (24-fold enrichment, p=2.1 × 10–7), and rpoB (10-fold enrichment, p=8.8 × 10–6). Other genes that were strongly enriched in type I>I variants (below the Bonferroni-corrected threshold, but above the suggestive significance threshold, Figure 5) included walR (22-fold enrichment, p=3.5 × 10–4), stp1 (20-fold enrichment, p=4.2 × 10–4), yjbH (19-fold enrichment, p=5.4 × 10–4), sgtB (19-fold enrichment, p=5.5 × 10–4), and purR (18-fold enrichment, p=5.8 × 10–4).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig5-v2.jpg)
+
+**Figure 5.:** The horizontal dashed line depicts the Bonferroni-corrected significance threshold and dotted line shows the suggestive significance threshold. Labels indicate genes with significance of enrichment below the suggestive threshold. Genes are coloured in red if the p value is below the Bonferroni-corrected threshold and in blue otherwise.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The horizontal line depicts the Bonferroni-corrected significance threshold. Genes are coloured in red if the p value is below the Bonferroni-corrected threshold and in blue otherwise. Operons are labelled if they were significantly enriched or reached near significance.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Gene ontologies (minimum set size 10 for a total of 110 categories) ordered by normalised enrichment score (NES). Ontologies with negative enrichment were excluded. Dark blue bars indicate a significant p value after false discovery rate correction (B) Dot plot of nine significantly enriched ontologies among type II variants.
 
 The enrichment for mutations in mprF, rpoB, stp1, sgtB, and in the walKR/yycH operon (11-fold enrichment, p=9 × 10–9, see Figure 5—figure supplement 1 for the operon enrichment analysis) highlights the role of antibiotic pressure in shaping adaptation within the invasive population, since these loci are hotspots of adaptation to key anti-staphylococcal antibiotics that are often used in invasive infections (rifampicin, daptomycin, and vancomycin). For example, the essential two-component regulator walKR/yycFG (and its associated genes walH/yycH) have been shown to have a key role in vancomycin resistance in one of the within-host evolution studies included in this analysis (Howden et al., 2011), while mutations in both stp1 and sgtB have been observed in vancomycin-adapted strains (Machado et al., 2021).
 
@@ -105,7 +580,7 @@ We performed a gene set enrichment analysis (GSEA), using gene ontology and anti
 
 Taken together, these findings point to six key genetic loci that appear to have an important role in S. aureus adaptation during invasive infections. These loci are associated with either antibiotic resistance (mprF, rpoB, stp1, sgtB, and walKR), pathogenesis (agrAC and purR), or both (yjbH).
 
-## A mutation’s co-occurrence network defines loci under within-host co-evolutionary pressure
+### A mutation’s co-occurrence network defines loci under within-host co-evolutionary pressure
 
 Epistasis, defined as the interaction of multiple mutations on a given phenotype (Levin-Reisman et al., 2019), plays a role in adaptive evolution in bacteria, particularly in antibiotic resistance (Skwark et al., 2017; Wadsworth et al., 2018; Yokoyama et al., 2018). Whether epistatic interactions could promote S. aureus adaptation during infection remains unknown. Identifying these interactions would enable identification of combinations of mutations underlying bacterial adaption during infection and refine the prediction of infection outcomes. Here, we assessed co-occurrence of mutations and mutated genes across independent episodes of colonisation/infection. While co-occurrence may simply result from co-selection (e.g. simultaneous exposure to two different antibiotics), it may also indicate putative epistatic interactions that could be explored in terms of potential impact on adaptive phenotypes (Phillips, 2008).
 
@@ -119,11 +594,21 @@ When assessing interactions at gene level (i.e. co-occurrence of the same altere
 
 Another moderately strong interaction was observed between rpoB and parC, which were co-mutated in three independent episodes. Given the association of parC mutations with fluoroquinolone resistance (Trong et al., 2005), this interaction is likely to be an example of co-selection due to co-exposure to fluoroquinolones and rifampicin.
 
-## Clinical correlates of adaptive signatures within colonising and invasive populations
+### Clinical correlates of adaptive signatures within colonising and invasive populations
 
 Genetic signatures of bacterial adaptation have been associated with infection extent, for example, enabling the prediction of extraintestinal infection with S. enterica (Wheeler et al., 2018). We have previously shown that adaptive mutations are enriched in invasive infections; however, it is unclear whether bacterial adaptation is more likely to be associated with distinctive clinical syndromes. To identify clinical correlates of adaptive signatures, we classified colonisation and infection episodes based on the sites of collection and on clinical data obtained from the publications (Table 1 and Figure 7—figure supplement 1). We then used the Jaccard index and network analysis to compute node centrality as a global measure of adaptation for each independent episode. The Jaccard index can be used as a simple marker of the proportion of shared mutated genes between pairs of colonisation or infection episodes (Bailey et al., 2017). Node centrality allows to similtuaneously take into account the strength of similarity between independent episodes (Jaccard index) and the number of pairs with shared mutated genes (number of connections). Hence, a node centrality of 0, indicates that the episode does not share any mutated genes with other episodes and appears as isolates node on the adaptation network (Figure 7—figure supplement 2). Here, we limited the analysis to the 20 most significantly enriched genes with each type of variant.
 
 Our network analysis showed that adaptation was present in only a minority of episodes within each type of variant (Figure 7—figure supplement 2). With a definition of adaptation based on a centrality value of more than 0, we found that the proportion of adaptive episodes was 43, 20, and 22% with type C>C, C>I, and I>I variants, respectively. In addition, certain clinical syndromes were more strongly associated with adaptation. Within the colonising population (type C>C variants), almost 80% of cystic fibrosis episodes were adaptive, as opposed to one third of episodes of skin colonisation in atopic dermatitis (Figure 7AB). This is consistent with within-host evolution studies showing strong convergent evolution signals among bacterial populations colonising individuals with cystic fibrosis, not only in case of S. aureus colonisation (Long et al., 2020) but also P. aeruginosa (Marvig et al., 2015) and Mycobacterium abscessus (Bryant et al., 2021); however, one study found adaptive evolution signals in atopic dermatitis (Key et al., 2021). We also observed that adaptation among infection episodes correlated with infection extent. Episodes of infective endocarditis episodes displayed higher adaptation metrics (46% with centrality >0) than bacteraemia with additional infection foci (28%) and bacteraemia without focus (17%) (Figure 7D–E).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig7-v2.jpg)
+
+**Figure 7.:** Adaptation was inferred by computing the Jaccard index of shared mutated genes between independent episodes, followed by network analysis of infection episodes pairs. The node centrality measure was used as an indicator of adaptation. To avoid overinflation of mutated genes, the calculation was limited to the 20 most significantly enriched genes within each group of mutations. (A, D) Density of centrality values across colonisation (panel A) and infection categories (panel D). (B, E) Number and proportion of adaptive episodes. An adaptive episode was defined by a centrality >0. (C, F) Distribution of mutations in the 20 most significantly enriched genes across categories of colonisation (panel C) and infection (panel F).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/77195/elife-77195-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Nodes indicate independent episodes, coloured based on the clinical syndrome, edges show connections based on shared mutated genes (the width of the connection is proportional to the Jaccard index).
 
 To explore the syndrome-specificity of adaptation signatures, we mapped mutations in the most significantly enriched adaptive genes to clinical syndromes of colonisation and infection (Figure 7 panels C and F). As expected, syndromes with high prevalence of adaptation had higher numbers of episodes with adaptive mutations; however, some genes appeared to be preferentially mutated. For example, rpsJ, stp1, and SAUSA300_1230 were over-represented in cystic fibrosis, while no clear pattern of mutations was discernible for nasal carriage episodes. Within infection syndromes, mprF and purR mutations were more prevalent in endocarditis, and yjbH mutations were only found in severe infections (bacteraemias with additional foci and endocarditis). Some genes appeared to be distinctive for low adaptation groups (atopic dermatitis and skin infections); however, the low number of adaptative mutations prevented an accurate assessment of these profiles.
 
@@ -153,78 +638,78 @@ Ultimately, the goal of detecting adaptive signals is to identify new mechanisms
 
 ## Materials and methods
 
-## Literature search
+### Literature search
 
 We conducted a search of articles indexed in PubMed before the 11 August 2020 using the keyword ‘aureus’ in combination with either ‘genomics’ or ‘whole genome sequencing’ and with either ‘within-host evolution’, ‘in vivo evolution’, ‘adaptation’, or ‘bacteraemia’. The records retrieved through this search were combined with additional citations identified through other sources. After removing duplicates, this resulted in 815 citations that were screened based on following inclusion criteria: (i) whole-genome sequencing of human S. aureus isolates; (ii) >1 S. aureus isolates sequenced per individual; (iii) sequences (reads or assemblies) publicly available; and (iv) minimum sequences metadata available (either with the manuscript or linked to the sequences): patient ID, date of collection (or collection interval in reference to a baseline isolate), and source of the sample. After excluding studies not satisfying the inclusion criteria (730 based on the title, 46 based on the abstract, and 15 after reviewing the full text), we kept 24 within-host evolution studies.
 
-## Extraction of sequence metadata
+### Extraction of sequence metadata
 
 For each of the included studies, the following variables were extracted either from reads, metadata (when available) or from the publication/supplementary data: identifier linking the sequences to a patient or an episode of infection, date of collection (when available) or collection interval in reference to a baseline isolate, and site of collection of the isolate. Isolates were broadly categorised in ‘colonising’ and ‘invasive’ based on the site of collection, when the information was unambiguous (e.g. ‘nose’ for ‘colonising’ or ‘blood’ for ‘invasive’). When the information on the body site was not sufficient (e.g. ‘skin’ or ‘lung’), the categorisation was based on further details provided in the publication. When available, phenotypic metadata and antibiotic treatments were also extracted from the publication. We used clinical and site data to classify colonisation episodes in ‘nasal carriage’, ‘atopic dermatitis’, and ‘cystic fibrosis’ and infection episodes in ‘skin infection’ (skin infection site surgical site infection without other foci), ‘osteoarticular infection’ (bone/join infection without other foci), ‘bacteraemia without focus’ (bloodstream infection, no other foci, and expect for vascular catheter or skin), ‘bacteraemia with focus’ (bloodstream infection with other focus involving the lung, nervous system, bone and joints, or internal organs), and ‘endocarditis’ (based on diagnosis reported in the publication or in the clinical metadata).
 
-## Sequence processing
+### Sequence processing
 
 Sequences (reads and assemblies) and metadata were downloaded from the European Nucleotide Archive and the National Center for Biotechnology Information (NCBI), respectively using the BioProject accession or the genome accession. Quality assessment of the reads was performed by calculating mean read depth and the fraction of S. aureus reads using Kraken 2, v2.0.9-beta (Wood et al., 2019) and by extracting metrics from reads assemblies constructed using Shovill, v1.1.0 (https://github.com/tseemann/shovill, Seemann, 2022c) and annotated using Prokka, v1.14.6 Seemann, 2014 . ST was inferred from the assembly using Mlst, v2.19.0 (https://github.com/tseemann/mlst, Seemann, 2022b), and resistance genes were detected using Abricate, v1.0.1 (https://github.com/tseemann/abricate, Seemann, 2022a). Reads were discarded if the mean coverage depth was below 35, the majority of reads were not S. aureus, or the size of the assembly was below 2.6 megabases. Assemblies downloaded from the NCBI repository were discarded if the genome size was below 2.6 megabases.
 
-## Sequences from the CAMERA2 trial
+### Sequences from the CAMERA2 trial
 
 We collected S. aureus strains from bacteraemia episodes included in the CAMERA2 trial (Combination Antibiotics for Methicillin Resistant S. aureus), where at least two strains per episode were available. The CAMERA2 trial was performed between 2015 and 2018 in Australia, New Zealand, Singapore, and Israel and randomised participants with methicillin-resistant S. aureus bacteraemia to either monotherapy with vancomycin or daptomycin or combination therapy with vancomycin or daptomycin plus an antistaphylococcal beta-lactam (flucloxacillin, cloxacillin, or cefazolin) (Tong et al., 2020). Strains were isolated from –80C glycerol onto horse-blood agar. Species were confirmed using matrix-assisted laser desorption/ionization time-of-flight mass spectrometry. Bacterial whole-genome sequencing was performed from single colonies on the Illumnina NextSeq platform. Reads were checked for quality, assembled, and annotated as described above.
 
-## Global phylogeny
+### Global phylogeny
 
 To generate a global alignment of all sequences, reads and shredded assemblies were mapped to reference genome USA300 FPR3757 (assembly accession: GCF_000013465.1) (using Snippy, v4.6.0) (https://github.com/tseemann/snippy; Seemann, 2022d). The core genome alignment was obtained using Snippy; sites with >10% gaps were removed using Goalign (Lemoine and Gascuel, 2021) and constant sites were removed using SNP-sites (Page et al., 2016), for a final length of 186,825 bp. A maximum-likelihood phylogenetic tree of 2590 sequences (those kept in the analysis after excluding genetically unrelated strains, see below) was inferred using IQ-TREE, v2.0.3 Minh et al., 2020.
 
-## Variant calling
+### Variant calling
 
 We have previously shown that the accuracy of variant calling in within-host evolution analyses is improved when mapping reads to an internal draft assembly as opposed to a closely related closed genome (Giulieri et al., 2018). Here, we applied the same approach, where we selected the internal reference among the sequences from the same patient or episode. When available, the oldest colonising strain was selected. When only sequences from invasive strains were available, the oldest strain (baseline strain) was selected. When multiple sequences were available per sample (e.g. multiple colonies sequenced per plate) or at the same date, the reference was randomly selected among them. Snippy with default parameters (minimum reads coverage 10, minimum read mapping quality 60, and minimum base quality 13) was used for variant calling. To further improve the accuracy of the calls, we masked variants called from reference reads and those at positions where reference reads had a coverage below 10 (using the BEDTools suite [Quinlan and Hall, 2010]).
 
-## Filtering of genetically unrelated sequences
+### Filtering of genetically unrelated sequences
 
 The threshold for removing genetically unrelated sequences was set empirically at 100 episode-specific variants based on the upper Tukey’s fence of the distribution of the number of variants in same-episode isolates belonging to the same ST (Figure 2—figure supplement 1).
 
-## Estimation of within-host mutation rates
+### Estimation of within-host mutation rates
 
 To estimate within-host mutation rates within colonising and invasive populations, a linear regression was fitted to model the relationship between sampling time (in years after the first isolate) and number of mutations relative to the internal reference. Only episodes with at least two strains collected at least one day apart were included in this analysis. The mutation rate μ was computed as follows μ = β/g, where β is the regression parameter and g is the mean genome size of the internal references (2.79 Mb). Regression diagnostics were performed using the R package performance (Lüdecke et al., 2021).
 
-## Detection of chromosome structural variants
+### Detection of chromosome structural variants
 
 Using BWA-MEM (Li, 2013), reads and shredded contigs were aligned to the closest available complete genome (either internal to the dataset or selected from the NCBI repository based on the mash distance). To detect large deletions ( ≥ 500 bp), reads coverage was computed using BEDTools, as described in Giulieri et al., 2018. To detect new IS insertions, split reads were extracted, filtered, and annotated as described in Giulieri et al., 2018. We used the R package CNOGpro (Brynildsrud et al., 2015) to detect 1000 bp windows with an estimated copy number above one as compared to the internal reference. The package calculates the reads coverage per sliding windows of the chromosome, performs a G+C bias normalisation, and infers copy number state using a Hidden Markow Model. We ran the package with default parameters, with the exception of the length of the sliding window that was set at 1000 bp. For each class of structural variant and within each episode, we used BEDTools to mask regions where the variant was already present in internal reference.
 
-## Prediction of functional impact of variants
+### Prediction of functional impact of variants
 
 Functional impact of variants was extracted from the Snippy output, which uses SnpEff to infer the functional effect of the detected mutations (Cingolani et al., 2012). SnpEff categories for coding regions were aggregated in ‘truncating’ (frameshift, stop codons, and start codons), ‘non-synonymous substitutions’, and ‘synonymous substitutions’. Non-synonymous substitutions were further investigated using PROVEAN, v1.1.5 (58) using the non-redundant protein database provides on the PROVEAN repository (ftp://ftp.jcvi.org/pub/data/provean/nr_Aug_2011/). Substitutions were classified as ‘deleterious’ if the PROVEAN score was –2.5 or less and ‘neutral’ otherwise.
 
-## Internal variant annotation
+### Internal variant annotation
 
 To ensure a consistent annotation of mutated genes across independent episodes, we clustered amino-acid sequences using CD-HIT, v4.8.1 with an identity threshold of 0.9. The BEDTools suite was used to annotate mutated intergenic regions with upstream and downstream coding regions and the distance separating the mutation from the start or the end of the gene. For the operon analysis, intergenic mutations were classified according to their location within a presumed promoter based on blasting the sequence of unique promoters (as determined in [Prados et al., 2016]) on the draft assembly of the internal reference. Phage genes were annotated using blastp and the PhageWeb database (http://computationalbiology.ufpa.br/phageweb/).
 
-## Variant annotation using reference strain FPR3757
+### Variant annotation using reference strain FPR3757
 
 To compare mutated genes across separated episodes, we used blastp to identify homologues of each CD-HIT cluster of mutated genes in USA300 FPR3757. Genes in FPR3757 were further annotated using the database provided in the AureoWiki repository (Fuchs et al., 2018), and operon annotations of FPR3757 were retrieved from Microbes Online (Dehal et al., 2010). In addition, we used the text mining tool PaperBLAST to search for publications containing data on homologues of uncharacterised FPR3757 proteins (Price et al., 2017). Only protein-altering variants in genes with FPR3757 homologues (excluding plasmid genes and phage genes) were kept for the analysis of convergence at gene and operon level and the gene enrichment analysis.
 
-## Classification of variants
+### Classification of variants
 
 Mutational and structural variants were classified in to type C>C (within colonising strains), type C>I (between colonising and invasive strains), and type I>I (within invasive strains) as follows: all variants arising in colonising strains were classified as type C>C, while variants among invasive strains were classified as type C>I if they were found in a baseline invasive strain (defined as the oldest invasive strain; when multiple sequences were available at same time, the baseline invasive strain was selected randomly), and as type I>I if they were found between invasive strains but not on the baseline invasive strain. This approach is based on the assumption that co-infection or superinfection is rare, as we have shown previously for bacteraemia (Giulieri et al., 2018).
 
-## Calculation of the Neutrality Index (NI)
+### Calculation of the Neutrality Index (NI)
 
 A modified McDonald-Kreitman table was compiled a described in Stoletzki and Eyre-Walker, 2011, where a ratio was calculated between non-synonymous, protein-truncating, IS insertions, intergenic and deletion variants, and synonymous variants. The NI was obtained by dividing the ratio calculated above for type C>I and type I>I by the ratio for type C>C variants that were used as reference group. Significance was tested by Fisher’s Exact test.
 
-## dN/dS analysis
+### dN/dS analysis
 
 We used the R package dNdScv (Martincorena et al., 2017) to obtain dN/dS ratios for non-synonymous mutations, indels, and missense mutations (stop codons) for all FPR3757 genes, based on variants called when mapping all reads on FPR3757 and after subtracting variants from the internal reference reads and variants in positive where internal reference reads had a low coverage. Since this analysis could be hampered by potential false-positive variants resulting from mapping reads on a single reference (Giulieri et al., 2018), we also used our curated list of within-host mutations obtained from episode-specific variant calling to calculate crude dN/dS ratios by dividing the number of protein modifying mutations by the number non-synonymous mutations and computed p values by Fisher exact test as in Long et al., 2020.
 
-## Gene and operon enrichment analysis
+### Gene and operon enrichment analysis
 
 We calculated the enrichment of protein-altering mutations across all coding regions of FPR3757 (excluding plasmid genes and phage genes) using the approach described in Young et al., 2017. The variant enrichment per gene i was calculated as follows: (Ni/Li)/(Σn/Σl), where Ni is the number of variants per gene i, Li is the length of gene i, Σn is the total number of variants, and Σl is the total length of the genes. We used Poisson regression to model the number of variants per gene j under the null hypothesis (no enrichment), as defined by the equation λ0Lj, where λ0 is the expected number of variants in any gene and Lj is the gene length. Under the alternative hypothesis (enrichment of variant in gene i), the estimated number of variants is λiLi for gene i, and λ1Lj for any other gene j. The model parameters λ0, λ1, and λI were obtained using maximum likelihood and tested for significance using the likelihood ratio test. The genome-wide significance cut-off was calculated using the Bonferroni correction (0.05 divided by the number of unique genes or operons) and the suggestive significance cut-off (1 divided by the number of unique genes or operons), as implemented for bacterial genome-wide associated studies in Lees et al., 2017a.
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 We used the PANNZER platform (Törönen et al., 2018), to retrieve a gene ontology annotation of FPR3757 based on the GO terms. We modified the ‘antibiotic response’ category by adding a curated list of antibiotic resistance genes downloaded from the NCBI Anti-Microbial Resistance (AMR) gene reference database (Feldgarden et al., 2019). The GSEA was performed as implemented in the R package clusterProfile (Yu et al., 2012). Genes with a FPR3757 homologue were ranked according to the significance of the enrichment of protein-modifying mutations (gene enrichment analysis, see above), and the GSEA was carried out with a minimum gene set size of 10 and using the FDR method for adjustment for multiple testing.
 
-## Mutation co-occurrence analysis
+### Mutation co-occurrence analysis
 
 To detect co-occurrence of mutations and mutated genes across independent episodes, we constructed a co-occurrence matrix using the R package co-occur (Griffith et al., 2016). A co-occurrence of mutations or mutated genes in at least two independent episodes was interpreted as convergent and as a sign of potential epistatic interaction. The network of co-occurrence of mutated genes was visualised using the R package ggraph (https://cran.r-project.org/web/packages/ggraph/index.html).
 
-## Network analysis of adaptation signatures
+### Network analysis of adaptation signatures
 
 The pairwise calculation of the Jaccard index between set of mutated genes was performed in R. The calculations were performed both with the entire set of mutated FPR3757 genes and with the 20 most significantly enriched genes in each group of variants. A network of shared mutated genes between independent episodes was constructed using ggraph, where edges represented episode connections based on the Jaccard index. We used the R package tidygraph to extract the node centrality (function centrality_degree) as a summary measure of the degree of adaptation of the episodes. The network graph and analysis were performed for each group of variants separately.

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.19089.001 The basal ganglia are known to be involved in the planning, execution and control of gripping force and movement vigour. Here we aim to define the nature of the basal ganglia control signal for force and to decode gripping force based on local field potential (LFP) activities recorded from the subthalamic nucleus (STN) in patients with deep brain stimulation (DBS) electrodes. We found that STN LFP activities in the gamma (55–90 Hz) and beta (13–30m Hz) bands were most informative about gripping force, and that a first order dynamic linear model with these STN LFP features as inputs can be used to decode the temporal profile of gripping force. Our results enhance the understanding of how the basal ganglia control gripping force, and also suggest that deep brain LFPs could potentially be used to decode movement parameters related to force and movement vigour for the development of advanced human-machine interfaces. DOI: http://dx.doi.org/10.7554/eLife.19089.001
+The basal ganglia are known to be involved in the planning, execution and control of gripping force and movement vigour. Here we aim to define the nature of the basal ganglia control signal for force and to decode gripping force based on local field potential (LFP) activities recorded from the subthalamic nucleus (STN) in patients with deep brain stimulation (DBS) electrodes. We found that STN LFP activities in the gamma (55–90 Hz) and beta (13–30m Hz) bands were most informative about gripping force, and that a first order dynamic linear model with these STN LFP features as inputs can be used to decode the temporal profile of gripping force. Our results enhance the understanding of how the basal ganglia control gripping force, and also suggest that deep brain LFPs could potentially be used to decode movement parameters related to force and movement vigour for the development of advanced human-machine interfaces.
 
 ## Introduction
 
@@ -36,71 +36,457 @@ The aim of the current study was to decode gripping force profiles from LFPs rec
 
 ## Results
 
-In the core study, patients with idiopathic Parkinson’s disease who underwent implantation of DBS electrodes into the STN were asked to grip a dynamometer with different effort levels. Subjects were instructed to respond ‘in their own time’. For each patient, both hands were tested in separate sessions, with 31 ± 2 grips per hand. Local field potentials (LFP) from the DBS electrodes and the gripping force measured by the dynamometer were simultaneously recorded (see details in Materials and methods).
+In the core study, patients with idiopathic Parkinson’s disease who underwent implantation of DBS electrodes into the STN were asked to grip a dynamometer with different effort levels. Subjects were instructed to respond ‘in their own time’. For each patient, both hands were tested in separate sessions, with 31 ± 2 grips per hand. Local field potentials (LFP) from the DBS electrodes and the gripping force measured by the dynamometer were simultaneously recorded (see details in Materials and methods). Figure 1A shows the measured force trajectory from one typical subject.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig1-v2.jpg)
 
-**Figure 1.:** (A) Trajectory of measured force from one exemplar subject. (B) From one group of electrodes (n = 9), a significant reduction of power in the beta band (13–30 Hz) and increase in power in the broad gamma band (55–90 Hz) was observed during gripping. (C) In another group of electrodes (n = 9), significant simultaneous modulation was absent in the beta and gamma band with movement, and there was instead an increased power across the low frequency band during gripping. Trajectories of force (D) and force yank (G) for Group one show that the stable force during the holding phase (1–2 s after cue) as well as the peak force yank in the force initialisation phase scaled well with self-rated effort (SRE). In group 2, the stable force (E) and force yank (H) did not scale with effort as well as Group 1. Group two had significantly lower correlation coefficients between stable force and SRE (F) and between the peak force yank and SRE (I) compared with group 1 (p<0.0001), indicating some impairment in the scaling of force with effort. Time 0 indicates the onset of the cue to start a grip in B–E, G and H. Note that data from three electrodes are excluded. Of these, two had significant modulation in the beta band but not in the gamma band, and one had significant modulation in the gamma band, but not in the beta band.DOI: http://dx.doi.org/10.7554/eLife.19089.00310.7554/eLife.19089.004Figure 1—source data 1.Figure 1.The variables ‘Group1_PowChange’ and ‘Group2_PowChange’ contain data about average movement-related power changes between 1 Hz and 90 Hz in the two STN groups, respectively. The variables ‘Group1_ Force_DifSRE’, ‘Group1_ FY_DifSRE’, ‘Group2_ Force_DifSRE’, ‘Group2_ FY_DifSRE’ contain data about the average force trajectories and force yank trajectories at each effort range for each STN in Group one and Group 2. The variables ‘Group1_Corr_FrcSRE’, ‘Group1_Corr_FySRE’, ‘Group2_ Corr_FrcSRE’’, ‘Group2_Corr_FySRE’ contain correlation coefficients between stable force or peak force yank and self-rated effort for each STN in the two groups.DOI: http://dx.doi.org/10.7554/eLife.19089.004
+**Figure 1.:** (A) Trajectory of measured force from one exemplar subject. (B) From one group of electrodes (n = 9), a significant reduction of power in the beta band (13–30 Hz) and increase in power in the broad gamma band (55–90 Hz) was observed during gripping. (C) In another group of electrodes (n = 9), significant simultaneous modulation was absent in the beta and gamma band with movement, and there was instead an increased power across the low frequency band during gripping. Trajectories of force (D) and force yank (G) for Group one show that the stable force during the holding phase (1–2 s after cue) as well as the peak force yank in the force initialisation phase scaled well with self-rated effort (SRE). In group 2, the stable force (E) and force yank (H) did not scale with effort as well as Group 1. Group two had significantly lower correlation coefficients between stable force and SRE (F) and between the peak force yank and SRE (I) compared with group 1 (p<0.0001), indicating some impairment in the scaling of force with effort. Time 0 indicates the onset of the cue to start a grip in B–E, G and H. Note that data from three electrodes are excluded. Of these, two had significant modulation in the beta band but not in the gamma band, and one had significant modulation in the gamma band, but not in the beta band.
 
 Figure 1B shows the average power spectrum for the group of recordings (n = 9) with significant movement-related modulation in both beta and gamma bands during gripping. There is a movement related gamma increase and beta power suppression in line with previous reports (Cassidy et al., 2002). This pattern is compared to the other group (n = 9) in which no significant movement-related modulation was observed in either the beta or gamma band in Figure 1C. In the latter group the mean spectrum demonstrated increased activity (synchronisation) at low frequencies, extending to 25 Hz, especially during the force onset phase. A possible cause for this low frequency power increase at the time of movement onset, which then contaminated the beta band, is movement related artefact. The latter is overshadowed by beta band desynchronization in the recordings comprising Figure 1B.
 
 Figure 1D and E show the normalized force trajectories with different self-rated effort (SRE) levels averaged across hands in the two groups. Figure 1G and H show the trajectories of force yank (the differentiation of force against time) with different SRE for the two groups. In the first group which showed modulation in the beta and gamma band, the average force during the holding phase (1.0–2.0 s after cue) and the peak force yank in the force initialisation phase scaled with SRE in all individual hands. The Spearman correlation coefficient between stable force and SRE ranged between 0.6454 and 0.9728 (median value = 0.9409, Figure 1F); and the correlation coefficient between peak force yank and SRE ranged between 0.4514 and 0.9341 (median value = 0.8688, Figure 1I). In the second group, the stable force did not scale with SRE, with abnormally increased force and force yank at lower effort levels, compared with the first group, as shown in Figure 1E and H. The correlation coefficient between the stable force and self-rated effort in the second group (ranged between 0.0258 and 0.8334, median value = 0.6023) was significantly lower than in the first group (t(16)=5.386, p<0.0001 with un-paired t-test applied to Fisher transformed r values, Figure 1F). The correlation coefficient between the peak force yank and SRE in the second group (ranged between −0.4992 and 0.6944, median value = 0.3791) was also significantly lower (t(16)=4.977, p=0.0001 with un-paired t-test applied to Fisher transformed r values). This difference in the scaling ability may account for some variations we observed in LFP reactivity. Thus, patients in the second group exhibited impairment in the scaling of force with effort. The lack of beta and gamma reactivity during gripping in this group would be consistent with a role for these activities in the coding of effort in to force. The deficit in the scaling of force with effort may be due to disease related differences between the groups, or due to the temporary post-surgical stun effect which may compromise STN function in some patients.
 
-The first group of 9 STN sides showing significant movement-related modulations in both bands were selected for further analysis as (1) this group showed normal scaling of force and force yank with effort; (2) movement-related modulations were presumed to indicate recordings made in or near the dorsal STN; (3) significant movement-related modulations were taken as evidence of relatively physiological functioning given that the motor reactivity of the two rhythms is increased by dopaminergic medication (Anzak et al., 2012), and (4) lack of movement related modulations might indicate a temporary surgical stun effect and temporary damage to the STN (Chen et al., 2006) or targeting variance. No other clinical details of the patients (shown in Table 1) explain the difference between the two groups.10.7554/eLife.19089.005Table 1.Patient details and movement-related modulated in beta and gamma bands.DOI: http://dx.doi.org/10.7554/eLife.19089.005Patient IDAge (yrs)GenderPD duration (yrs)Main symptoms Daily dose (mg)UPDRS part III (Pre-op)Movement related power change (%) and electrode localisationStimulation effect Left STNRight STNOFFONBipoloar channel BetaERDGamma ERSLocalisationMost %beta Stim setting Bipoloar channel BetaERDGamma ERSLocalisationMost % beta Stim setting 1 QS49M13Stiffness, bradykinesia, bilateral tremor, freezingLevodopa 800Apomorphine (6.5 mg/hour)Rotigotine 83813L1L2−4.52 (*)17.99(*)L1,L2 borderMEDL1Case: + L1: -R1R21.1533.2(*)R0:inside/border/MED; R1: border/MEDR0Case: + R1: -UPDRS OFF Med, Stim ON/OFF: 13/382 Ox69M11Rigidity, bradykinesia, freezingRopinirole 8Pramipexole 0.75Levodopa 9003818----Electrode was not in target and therefore not recordedR0R1−4.79 0.92R0,R1 inside onlyR1NoneStimulation was discontinued shortly after surgery due to unsatisfactory clinical effect3 King65F17Rigidity, tremorAmantadine 400 Levodopa 6005549L0L1−5.12 (*)7.44(*)All insideL1Case: +L0: -R0R1−29.03 (*)3.29(*)All insideR1Case: +R1: -Not evaluated4 QS56M10Bradykinesia, rigidity, tremor limping gaitLevodopa 1000 Rasagiline 1Citalopram 204012L1L2−2.48 (*)37.73(*)L1,L2,L3 inside; L2 dorsolatL2Case: + L1: -R0R1−18.92 (*)2.98(*)R0 inside; R1 border/dorsolatR1Case: + R0, R1 (alternating): -UPDRS OFF Med, Stim ON/OFF: 29/405 QS60F11Tremor@Left; poor coordination, bended gaitLevodopa 600 Pramipexole 0.755316L1L2−4.94 (*)6.68(*)All inside; L1 dorsolatL1Case: + L1: -R2R3−0.049 2.14R1 inside; R2 borderR2Case: + R1: -Not evaluated6 Kings65M5Rigidity, bradykinesia, motor fluctuation, tremorLevodopa 400Entacapone 800 Rotigotine 84129L1L23.331.81All insideNoneCase +L2: -R1R2−7.37 (*)0.66All insideR2Case +R1: -Not evaluated7 QS56M10tremor@all four limbsLevodopa 600 Rotigotine 8 Selegiline 105219L0L1−10.68 (*)8.42(*)L2, L3 in superior STNL0Case: + L1: -R0R1−22.76 (*)14.02(*)R0, R1 in STN, R2 lateral border of superior STNR1Case +R1: -Relocation after recording due to side effects on speech8 Kings73M14Bradykinesia, tremorRotigotine 16 Selegeline 10Levodopa 7003515L0L10.157−0.186 All insideNoneCase: +L1: -R1R2−4.93 (*)5.57(*)All insideR1Case: +R1: -Not evaluated9 Ox63F14Rigidity, bradykinesiaRopinirole 23Levodopa 15035243.197−1.14 None insideNoneNone−2.59 7.20None insideNoneNonePost-op imaging show mis-location, and electrodes were relocated to GPi10 QS66F16Shuffle, poor balance, NO tremorLevodopa 600Amantadine 200Ropinirole 24Rasagiline 13213L0L2(L1 no signal)4.332.95L0,L1 insideL0Case: +L1: -R0R1(bipolar reduced modulation)−1.37 7.41(*)R1,R2 insideR1Case: +R1: -UPDRS OFF Med, Stim ON/OFF: 26/3211 QS52M7Freezing, falls, postural instability, tremor@right sideLevodopa 1300Citalopram 20 Trihexyphenidyl 65813L1L2(bipolar reduced modulation)38.7713.22L2Case: +L1: -R1R2(bipolar reduced modulation)−1.05 1.11R1Case: +R1: -Relocation after recordingMean61.311.343.420.1(*) Indicate significant movement-related modulation in the power of the activity of the specific frequency band; Ox, Kings, QS indicate the three neurosurgical centres where the data were recorded: Ox = John Radcliffe Hospital, University of Oxford; Kings = Department of Neurosurgery, Kings College Hospital, Kings College London; QS = Sobell Department of Motor Neuroscience and Movement Disorders, UCL Institute of Neurology.
+The first group of 9 STN sides showing significant movement-related modulations in both bands were selected for further analysis as (1) this group showed normal scaling of force and force yank with effort; (2) movement-related modulations were presumed to indicate recordings made in or near the dorsal STN; (3) significant movement-related modulations were taken as evidence of relatively physiological functioning given that the motor reactivity of the two rhythms is increased by dopaminergic medication (Anzak et al., 2012), and (4) lack of movement related modulations might indicate a temporary surgical stun effect and temporary damage to the STN (Chen et al., 2006) or targeting variance. No other clinical details of the patients (shown in Table 1) explain the difference between the two groups.
 
-## Force decoding based on features from STNr LFP and a linear dynamic model
+**Table 1.**
+ Patient details and movement-related modulated in beta and gamma bands.
 
-Our main interest was the initialisation, development and the average force during the ‘holding phase’ of each grip; therefore we focused on the period of time from one second before the cue to 2.8 s after the cue (before force releasing) for decoding. The force trajectory of each individual trial of each subject was normalized against the average maximal force that subject achieved in their maximal effort trials. We hypothesised that the relationship between LFP features and generated grip force (the transfer function) could be captured by a first order linear dynamic model (Equation 1):(1)Force=LFP* KpTp∙s+1e−Td∙s
 
-Where Kp is the steady state proportional gain, Tp is the time constant of the first order system which is a measure of how fast the force output responds to brain signal changes, and Td is the time delay between the brain control signal (LFP) and the measured force which describes the latency between the timing of brain signal changes and force output onset. Different models with different assumptions about what is the effective force control feature from the STNr (STN region) LFP and how different features are combined to encode force were tested (see Table 2 and details in Materials and methods).10.7554/eLife.19089.006Table 2.Model details.Models 1–3 use activity change in the beta band (β) and gamma bands (γ) from the STN LFP as model inputs. Models 4 and 5 take into account extra information about the low frequency activity change (α). Models 6–8 only use the activity change from a single frequency band (α, β and γ, respectively) as model input. Tp and Td are the time constant and time delay of the first order linear dynamic model, respectively.DOI: http://dx.doi.org/10.7554/eLife.19089.006Model IDModel equation No. of free parameters1Force=(γ−β)* KpTp∙s+1e−Td∙s32Force=(Kp1∙γ+Kp2∙β)* 1Tp∙s+1e−Td∙s43Force=γ* Kp1Tp1∙s+1e−Td1∙s+ β* Kp2Tp2∙s+1e−Td2∙s64Force=(Kp1∙γ+Kp2∙β+ Kp3∙α)* 1Tp∙s+1e−Td∙s55Force=γ* Kp1Tp1∙s+1e−Td1∙s+ β* Kp2Tp2∙s+1e−Td2∙s+ α* Kp3Tp3∙s+1e−Td3∙s96Force=α* KpTp∙s+1e−Td∙s37Force=β* KpTp∙s+1e−Td∙s38Force=γ* KpTp∙s+1e−Td∙s3
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Patient ID</th>
+      <th rowspan="3">Age (yrs)</th>
+      <th rowspan="3">Gender</th>
+      <th rowspan="3">PD duration (yrs)</th>
+      <th rowspan="3">Main symptoms</th>
+      <th rowspan="3">Daily dose (mg)</th>
+      <th rowspan="2" colspan="2">UPDRS part III (Pre-op)</th>
+      <th colspan="12">Movement related power change (%) and electrode localisation</th>
+      <th rowspan="3">Stimulation effect</th>
+    </tr>
+    <tr>
+      <th colspan="6">Left STN</th>
+      <th colspan="6">Right STN</th>
+    </tr>
+    <tr>
+      <th>OFF</th>
+      <th>ON</th>
+      <th>Bipoloar channel</th>
+      <th>BetaERD</th>
+      <th>Gamma ERS</th>
+      <th>Localisation</th>
+      <th>Most %beta</th>
+      <th>Stim setting</th>
+      <th>Bipoloar channel</th>
+      <th>BetaERD</th>
+      <th>Gamma ERS</th>
+      <th>Localisation</th>
+      <th>Most % beta</th>
+      <th>Stim setting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 QS</td>
+      <td>49</td>
+      <td>M</td>
+      <td>13</td>
+      <td>Stiffness, bradykinesia, bilateral tremor, freezing</td>
+      <td>Levodopa 800Apomorphine (6.5 mg/hour)Rotigotine 8</td>
+      <td>38</td>
+      <td>13</td>
+      <td>L1L2</td>
+      <td>−4.52 (*)</td>
+      <td>17.99(*)</td>
+      <td>L1,L2 borderMED</td>
+      <td>L1</td>
+      <td>Case: + L1: -</td>
+      <td>R1R2</td>
+      <td>1.15</td>
+      <td>33.2(*)</td>
+      <td>R0:inside/border/MED; R1: border/MED</td>
+      <td>R0</td>
+      <td>Case: + R1: -</td>
+      <td>UPDRS OFF Med, Stim ON/OFF: 13/38</td>
+    </tr>
+    <tr>
+      <td>2 Ox</td>
+      <td>69</td>
+      <td>M</td>
+      <td>11</td>
+      <td>Rigidity, bradykinesia, freezing</td>
+      <td>Ropinirole 8Pramipexole 0.75Levodopa 900</td>
+      <td>38</td>
+      <td>18</td>
+      <td></td>
+      <td>--</td>
+      <td>--</td>
+      <td>Electrode was not in target and therefore not recorded</td>
+      <td></td>
+      <td></td>
+      <td>R0R1</td>
+      <td>−4.79</td>
+      <td>0.92</td>
+      <td>R0,R1 inside only</td>
+      <td>R1</td>
+      <td>None</td>
+      <td>Stimulation was discontinued shortly after surgery due to unsatisfactory clinical effect</td>
+    </tr>
+    <tr>
+      <td>3 King</td>
+      <td>65</td>
+      <td>F</td>
+      <td>17</td>
+      <td>Rigidity, tremor</td>
+      <td>Amantadine 400 Levodopa 600</td>
+      <td>55</td>
+      <td>49</td>
+      <td>L0L1</td>
+      <td>−5.12 (*)</td>
+      <td>7.44(*)</td>
+      <td>All inside</td>
+      <td>L1</td>
+      <td>Case: +L0: -</td>
+      <td>R0R1</td>
+      <td>−29.03 (*)</td>
+      <td>3.29(*)</td>
+      <td>All inside</td>
+      <td>R1</td>
+      <td>Case: +R1: -</td>
+      <td>Not evaluated</td>
+    </tr>
+    <tr>
+      <td>4 QS</td>
+      <td>56</td>
+      <td>M</td>
+      <td>10</td>
+      <td>Bradykinesia, rigidity, tremor limping gait</td>
+      <td>Levodopa 1000 Rasagiline 1Citalopram 20</td>
+      <td>40</td>
+      <td>12</td>
+      <td>L1L2</td>
+      <td>−2.48 (*)</td>
+      <td>37.73(*)</td>
+      <td>L1,L2,L3 inside; L2 dorsolat</td>
+      <td>L2</td>
+      <td>Case: + L1: -</td>
+      <td>R0R1</td>
+      <td>−18.92 (*)</td>
+      <td>2.98(*)</td>
+      <td>R0 inside; R1 border/dorsolat</td>
+      <td>R1</td>
+      <td>Case: + R0, R1 (alternating): -</td>
+      <td>UPDRS OFF Med, Stim ON/OFF: 29/40</td>
+    </tr>
+    <tr>
+      <td>5 QS</td>
+      <td>60</td>
+      <td>F</td>
+      <td>11</td>
+      <td>Tremor@Left; poor coordination, bended gait</td>
+      <td>Levodopa 600 Pramipexole 0.75</td>
+      <td>53</td>
+      <td>16</td>
+      <td>L1L2</td>
+      <td>−4.94 (*)</td>
+      <td>6.68(*)</td>
+      <td>All inside; L1 dorsolat</td>
+      <td>L1</td>
+      <td>Case: + L1: -</td>
+      <td>R2R3</td>
+      <td>−0.049</td>
+      <td>2.14</td>
+      <td>R1 inside; R2 border</td>
+      <td>R2</td>
+      <td>Case: + R1: -</td>
+      <td>Not evaluated</td>
+    </tr>
+    <tr>
+      <td>6 Kings</td>
+      <td>65</td>
+      <td>M</td>
+      <td>5</td>
+      <td>Rigidity, bradykinesia, motor fluctuation, tremor</td>
+      <td>Levodopa 400Entacapone 800 Rotigotine 8</td>
+      <td>41</td>
+      <td>29</td>
+      <td>L1L2</td>
+      <td>3.33</td>
+      <td>1.81</td>
+      <td>All inside</td>
+      <td>None</td>
+      <td>Case +L2: -</td>
+      <td>R1R2</td>
+      <td>−7.37 (*)</td>
+      <td>0.66</td>
+      <td>All inside</td>
+      <td>R2</td>
+      <td>Case +R1: -</td>
+      <td>Not evaluated</td>
+    </tr>
+    <tr>
+      <td>7 QS</td>
+      <td>56</td>
+      <td>M</td>
+      <td>10</td>
+      <td>tremor@all four limbs</td>
+      <td>Levodopa 600 Rotigotine 8 Selegiline 10</td>
+      <td>52</td>
+      <td>19</td>
+      <td>L0L1</td>
+      <td>−10.68 (*)</td>
+      <td>8.42(*)</td>
+      <td>L2, L3 in superior STN</td>
+      <td>L0</td>
+      <td>Case: + L1: -</td>
+      <td>R0R1</td>
+      <td>−22.76 (*)</td>
+      <td>14.02(*)</td>
+      <td>R0, R1 in STN, R2 lateral border of superior STN</td>
+      <td>R1</td>
+      <td>Case +R1: -</td>
+      <td>Relocation after recording due to side effects on speech</td>
+    </tr>
+    <tr>
+      <td>8 Kings</td>
+      <td>73</td>
+      <td>M</td>
+      <td>14</td>
+      <td>Bradykinesia, tremor</td>
+      <td>Rotigotine 16 Selegeline 10Levodopa 700</td>
+      <td>35</td>
+      <td>15</td>
+      <td>L0L1</td>
+      <td>0.157</td>
+      <td>−0.186</td>
+      <td>All inside</td>
+      <td>None</td>
+      <td>Case: +L1: -</td>
+      <td>R1R2</td>
+      <td>−4.93 (*)</td>
+      <td>5.57(*)</td>
+      <td>All inside</td>
+      <td>R1</td>
+      <td>Case: +R1: -</td>
+      <td>Not evaluated</td>
+    </tr>
+    <tr>
+      <td>9 Ox</td>
+      <td>63</td>
+      <td>F</td>
+      <td>14</td>
+      <td>Rigidity, bradykinesia</td>
+      <td>Ropinirole 23Levodopa 150</td>
+      <td>35</td>
+      <td>24</td>
+      <td></td>
+      <td>3.197</td>
+      <td>−1.14</td>
+      <td>None inside</td>
+      <td>None</td>
+      <td>None</td>
+      <td></td>
+      <td>−2.59</td>
+      <td>7.20</td>
+      <td>None inside</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Post-op imaging show mis-location, and electrodes were relocated to GPi</td>
+    </tr>
+    <tr>
+      <td>10 QS</td>
+      <td>66</td>
+      <td>F</td>
+      <td>16</td>
+      <td>Shuffle, poor balance, NO tremor</td>
+      <td>Levodopa 600Amantadine 200Ropinirole 24Rasagiline 1</td>
+      <td>32</td>
+      <td>13</td>
+      <td>L0L2(L1 no signal)</td>
+      <td>4.33</td>
+      <td>2.95</td>
+      <td>L0,L1 inside</td>
+      <td>L0</td>
+      <td>Case: +L1: -</td>
+      <td>R0R1(bipolar reduced modulation)</td>
+      <td>−1.37</td>
+      <td>7.41(*)</td>
+      <td>R1,R2 inside</td>
+      <td>R1</td>
+      <td>Case: +R1: -</td>
+      <td>UPDRS OFF Med, Stim ON/OFF: 26/32</td>
+    </tr>
+    <tr>
+      <td>11 QS</td>
+      <td>52</td>
+      <td>M</td>
+      <td>7</td>
+      <td>Freezing, falls, postural instability, tremor@right side</td>
+      <td>Levodopa 1300Citalopram 20 Trihexyphenidyl 6</td>
+      <td>58</td>
+      <td>13</td>
+      <td>L1L2(bipolar reduced modulation)</td>
+      <td>38.77</td>
+      <td>13.22</td>
+      <td></td>
+      <td>L2</td>
+      <td>Case: +L1: -</td>
+      <td>R1R2(bipolar reduced modulation)</td>
+      <td>−1.05</td>
+      <td>1.11</td>
+      <td></td>
+      <td>R1</td>
+      <td>Case: +R1: -</td>
+      <td>Relocation after recording</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>61.3</td>
+      <td></td>
+      <td>11.3</td>
+      <td></td>
+      <td></td>
+      <td>43.4</td>
+      <td>20.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_(*) Indicate significant movement-related modulation in the power of the activity of the specific frequency band; Ox, Kings, QS indicate the three neurosurgical centres where the data were recorded: Ox = John Radcliffe Hospital, University of Oxford; Kings = Department of Neurosurgery, Kings College Hospital, Kings College London; QS = Sobell Department of Motor Neuroscience and Movement Disorders, UCL Institute of Neurology._
+
+### Force decoding based on features from STNr LFP and a linear dynamic model
+
+Our main interest was the initialisation, development and the average force during the ‘holding phase’ of each grip; therefore we focused on the period of time from one second before the cue to 2.8 s after the cue (before force releasing) for decoding. The force trajectory of each individual trial of each subject was normalized against the average maximal force that subject achieved in their maximal effort trials. We hypothesised that the relationship between LFP features and generated grip force (the transfer function) could be captured by a first order linear dynamic model (Equation 1):
+
+$$
+Force=LFP* \frac{K_{p}}{T_{p}∙s+1}e^{−T_{d}∙s}
+$$
+
+Where Kp is the steady state proportional gain, Tp is the time constant of the first order system which is a measure of how fast the force output responds to brain signal changes, and Td is the time delay between the brain control signal (LFP) and the measured force which describes the latency between the timing of brain signal changes and force output onset. Different models with different assumptions about what is the effective force control feature from the STNr (STN region) LFP and how different features are combined to encode force were tested (see Table 2 and details in Materials and methods).
+
+**Table 2.**
+ Model details.Models 1–3 use activity change in the beta band (β) and gamma bands (γ) from the STN LFP as model inputs. Models 4 and 5 take into account extra information about the low frequency activity change (α). Models 6–8 only use the activity change from a single frequency band (α, β and γ, respectively) as model input. Tp and Td are the time constant and time delay of the first order linear dynamic model, respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model ID</th>
+      <th>Model equation</th>
+      <th>No. of free parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Force=(γ−β)* KpTp∙s+1e−Td∙s</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Force=(Kp1∙γ+Kp2∙β)* 1Tp∙s+1e−Td∙s</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Force=γ* Kp1Tp1∙s+1e−Td1∙s+ β* Kp2Tp2∙s+1e−Td2∙s</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Force=(Kp1∙γ+Kp2∙β+ Kp3∙α)* 1Tp∙s+1e−Td∙s</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Force=γ* Kp1Tp1∙s+1e−Td1∙s+ β* Kp2Tp2∙s+1e−Td2∙s+ α* Kp3Tp3∙s+1e−Td3∙s</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Force=α* KpTp∙s+1e−Td∙s</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Force=β* KpTp∙s+1e−Td∙s</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Force=γ* KpTp∙s+1e−Td∙s</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 Cross-validation, within each STN/contralateral hand as well as across different patient groups, was used to evaluate the generalisability and decoding performance of the proposed models for predicting gripping force (see details in Materials and methods). Within each STN/contralateral hand, after the model parameters had been fitted based on training data, several key variables were quantified to evaluate the performance of the model in predicting force in another set of test data recorded from the same hand: (1) the correlation coefficient between the predicted force and measured force (WithinTrialR), which can be used to evaluate the prediction accuracy of the force development and force trajectory within each individual trial. (2) The root mean square error, which quantifies the average distance between the prediction and actual measurements normalized by the maximal measured value (nRMSE). (3) The correlation coefficient between the average predicted force at the holding phase (over 1–2 s after cue onset, when the gripping force was relatively stable) and the measured force at the holding phase across different trials (StableFrcR). This was used to evaluate the prediction accuracy of the stable target force across different effort levels. (4) The difference between the timing of the predicted force onset and the timing of the measured force onset (DifRT).
 
-## Decoding the average force over multiple trials
+### Decoding the average force over multiple trials
 
-The performances of different models in predicting force averaged across multiple trials using different STN features (see Materials and methods for details) were first evaluated. To achieve this, gripping force and LFPs measured from the contralateral STNr were grouped into low effort trials (with self-reported effort <= 5, trial number = 15±1) and high effort trials (with self-reported effort > 5, trial number = 14±1). Average STNr LFP features and force trajectories were calculated for each effort condition. The STNr LFP features and force for one effort condition were used to estimate the model parameters (model fitting), and the models were then used to predict force for the other effort condition (model testing). The within-trial correlation coefficients between the predicted force and measured force (WithinR) and the nRMSE of the predicted force from different models during model testing are shown in
+The performances of different models in predicting force averaged across multiple trials using different STN features (see Materials and methods for details) were first evaluated. To achieve this, gripping force and LFPs measured from the contralateral STNr were grouped into low effort trials (with self-reported effort <= 5, trial number = 15±1) and high effort trials (with self-reported effort > 5, trial number = 14±1). Average STNr LFP features and force trajectories were calculated for each effort condition. The STNr LFP features and force for one effort condition were used to estimate the model parameters (model fitting), and the models were then used to predict force for the other effort condition (model testing). The within-trial correlation coefficients between the predicted force and measured force (WithinR) and the nRMSE of the predicted force from different models during model testing are shown in Figure 2A and B. There was no significant difference consistent across the STNs between the three models using beta and gamma ERS as model inputs (Models 1–3) in the predictive performance in terms of either WithinR or nRMSE. These three models with both beta and gamma activity as inputs performed better than models in which extra information about alpha activity was also included (Models 4,5), or models with activities from a single frequency band as model input only (Models 6–8). Figure 2C shows the BIC values combining the force prediction for low effort and high effort for all models. One-way repeated ANOVA identified a significant effect of models in the BIC (F(7,56)=11.777, p<0.001). Paired t-tests showed that Model 2 was significantly better, in terms of BIC, than Models 4–8 after FDR multiple comparison correction: (t(8)=−3.63, p=0.007 compared with Model 4; t(8)=−4.950, p=0.001 compared with Model 5; t(8)=−9.347, p<0.001 compared with Model 6; t(8)=−5.757, p<0.001 compared with Model 7; t(8)=−3.675, p=0.007 compared with Model 8).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig2-v2.jpg)
 
-**Figure 2.:** A), RMSE (B) and BIC (C).The filled dots and shaded bars show the median and range across all STNs; the open circles and stars show the data for each individual STN. The red dots and bars show performance in predicting high effort forces, while using data from low effort trials for model fitting; the blue dots and bars show performance in predicting low effort forces, while using data from high effort trials for model fitting. (C) The total BIC values combing the force predictions for low effort and high effort for all tested models. The filled dots and shaded bars show the median and range across all STNs; the stars show the data for each individual STN (some overlap). Models 1–3 use beta and gamma ERS as model inputs; Models 4–5 use activities from all three frequency bands (alpha, beta and gamma) as model inputs; Models 6–8 use activities from a single frequency band (alpha, beta and gamma, respectively) as model inputs.DOI: http://dx.doi.org/10.7554/eLife.19089.00710.7554/eLife.19089.008Figure 2—source data 1.Figures 2 and 6.It contains data about median WithinR and the normalized RMSE when different models were used for force prediction, as well as the average power modulations at the beta band and gamma band for each STN that was recorded in the main paradigm and used for the analysis.DOI: http://dx.doi.org/10.7554/eLife.19089.008
+**Figure 2.:** The filled dots and shaded bars show the median and range across all STNs; the open circles and stars show the data for each individual STN. The red dots and bars show performance in predicting high effort forces, while using data from low effort trials for model fitting; the blue dots and bars show performance in predicting low effort forces, while using data from high effort trials for model fitting. (C) The total BIC values combing the force predictions for low effort and high effort for all tested models. The filled dots and shaded bars show the median and range across all STNs; the stars show the data for each individual STN (some overlap). Models 1–3 use beta and gamma ERS as model inputs; Models 4–5 use activities from all three frequency bands (alpha, beta and gamma) as model inputs; Models 6–8 use activities from a single frequency band (alpha, beta and gamma, respectively) as model inputs.
+
+Figure 3 shows how Model 2 with beta and gamma having different linear gains can be used to predict the force generated by the contralateral hand for individual STNs. In Figure 3A, data averaged across low effort trials (with self-reported effort <= 5) were used for the estimation of model parameters (model fitting). The predictive performance of the model was evaluated on the data averaged across high effort trials for the same STN (with self-reported effort > 5, Figure 3B). Figure 3C shows the fitting and predictive performance of the model on data from the other 8 STNr electrodes in which consistent movement-related power modulations in both the beta and the gamma band were observed. The correlation coefficient between the predicted force and the measured force across all STNs was between 0.902 and 0.987 with a median value of 0.952 for high effort force (data during low effort used for model parameter estimation) and between 0.921 and 0.992 with a median value of 0.969 for low effort force (data during high effort used for model parameter estimation). The nRMSE of the prediction force was between 5.60% and 28.07% with median value of 16.5% for high effort levels and between 10.5% and 23.8% with median value of 16.4% for low effort levels. The differences in reaction times (DifRT) between the predicted force and the measured force were 11 ± 27 ms for high effort levels and −26 ± 31 ms for low effort levels. These were not significantly different from zero (t = 1.25, p=0.247 for high effort levels and t = 1.03, p=0.333 for low effort levels, one-sampled t-test compared to zero). The estimated Td ranged between 0 and 264 ms for low effort trials and ranged from 0 and 277 ms for high effort trials across STNs. Together, the results demonstrated that a simple first order linear dynamic model with beta and gamma as inputs with different linear gains can be used to describe the relationship between STNr activity change and measured force; and that, in addition, the model with parameters derived from one set of data can be used to predict force exerted at other effort levels in the same subject.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig3-v2.jpg)
 
-**Figure 3.:** (A) The fitted model based on data from low effort trials for one exemplar STN and the contralateral hand. (B) The fitted model was used to predict the average force for high effort trials for the same STN and contralateral hand. (C) The fitted (dashed lines) and predicted force were compared against the measured force for the other 8 STNs in which consistent movement-related modulations in both beta and gamma bands were observed. Predicted force traces for high effort trials were derived from the model fitted to data from low effort trials and vice versa. Time 0 indicates the onset of the cue to start a grip in all plots.DOI: http://dx.doi.org/10.7554/eLife.19089.00910.7554/eLife.19089.010Figure 3—source data 1.Figure 3.The variable names are self-explanatory. ‘DataPlotC.Axisi’ contain data for the ith axis in PlotC. Column 1–7 in this variable corresponds to time, predicted force for a low effort, predicted force for high effort, fitted the force for a high effort, fitted the force for a low effort, measured the force for a high effort and measured the force for a low effort, respectively.DOI: http://dx.doi.org/10.7554/eLife.19089.010
+**Figure 3.:** (A) The fitted model based on data from low effort trials for one exemplar STN and the contralateral hand. (B) The fitted model was used to predict the average force for high effort trials for the same STN and contralateral hand. (C) The fitted (dashed lines) and predicted force were compared against the measured force for the other 8 STNs in which consistent movement-related modulations in both beta and gamma bands were observed. Predicted force traces for high effort trials were derived from the model fitted to data from low effort trials and vice versa. Time 0 indicates the onset of the cue to start a grip in all plots.
 
-## Decoding gripping force of individual trials and the laterality in force decoding
+### Decoding gripping force of individual trials and the laterality in force decoding
+
+Figure 4 shows the performance of the model with beta and gamma power change in the STNr LFP as inputs (Model 2) in predicting contralateral gripping force in individual trials for one exemplar STN. For half of all the individual trials (n = 21) recorded from this STN and contralateral hand, the within-trial correlation coefficient between the predicted force and measured force was equal or larger than 0.78. The actual measured stable force during the holding phase and the predicted stable force were then quantified for each individual trial (Figure 4D). Figure 4D shows that the stable force during the holding phase varied from zero to 100% of the maximal voluntary force across all the trials. Linear correlation was applied to the actual measured stable force during the holding phase and the predicted stable force of all individual trials. This predicted stable force correlated with the measured stable force (n = 21, r = 0.815, p<0.001), suggesting that the STNr LFP in conjunction with the dynamic model can predict both the force trajectory in individual trials and the stable force achieved across trials with different effort. The line of best fit between the predicted stable force and measured stable force was y = 0.96x + 2.4. The regression gradient close to unity suggests that the prediction matches well with the measurement with no systematic overestimation or underestimation. During one trial for this patient, there is a force increase predicted from the STNr LFP, but there is no actual measured force change in the dynamometer (indicated by ** in Figure 4B). This may be due to changes in the STNr LFP signal following the cue without the actual force change being registered in the dynamometer, as might arise when movements of the limb did not involve the dynamometer.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig4-v2.jpg)
 
-**Figure 4.:** (A) Time-evolving power spectrum of the bipolar STN LFP channel used for decoding force. (B) The predicted force (in red) compared with the measured force (in black). ** indicates the trial where STN LFP predicted increased force but with no measured force from the dynamometer. Grips are concatenated in A and B. (C) Distribution of the within-trial correlation coefficient (WithinR) between predicted force and measured force, with the dashed blue line the median value of the WithinR for all trials. (D) Scatter plot between the predicted stable force (average force during the second of holding phase) and measured stable force for all tested trials. The correlation coefficient between the predicted and measured stable force across trials was 0.815 for this subject. The regression slope of 0.96, which is close to 1, shows that there is no systematic under-estimation. The black lines show the regression line and 95% confidence interval.DOI: http://dx.doi.org/10.7554/eLife.19089.01110.7554/eLife.19089.012Figure 4—source data 1.Figure 4.The variable ‘DataPlotA’ is a data structure containing fields about the movement-related power changes over time (‘ERS’) for one exemplar subject. ‘DataPlotB’ is a data structure containing fields about measured force (‘MeasForce’) and predicted force based on Model 2 (‘EstForce’). ‘DataPlotD’ is a data structure containing measured stable force and predicted stable force for each individual trial and the linear regression between them.DOI: http://dx.doi.org/10.7554/eLife.19089.012
+**Figure 4.:** (A) Time-evolving power spectrum of the bipolar STN LFP channel used for decoding force. (B) The predicted force (in red) compared with the measured force (in black). ** indicates the trial where STN LFP predicted increased force but with no measured force from the dynamometer. Grips are concatenated in A and B. (C) Distribution of the within-trial correlation coefficient (WithinR) between predicted force and measured force, with the dashed blue line the median value of the WithinR for all trials. (D) Scatter plot between the predicted stable force (average force during the second of holding phase) and measured stable force for all tested trials. The correlation coefficient between the predicted and measured stable force across trials was 0.815 for this subject. The regression slope of 0.96, which is close to 1, shows that there is no systematic under-estimation. The black lines show the regression line and 95% confidence interval.
 
-Considering all the STNs in which significant movement-related modulations were observed in both beta and gamma bands (N = 9), the correlation between the predicted stable force and measured stable force across trials ranged from 0.448 to 0.913 for the contralateral hand when
+Considering all the STNs in which significant movement-related modulations were observed in both beta and gamma bands (N = 9), the correlation between the predicted stable force and measured stable force across trials ranged from 0.448 to 0.913 for the contralateral hand when Model 2 was used, with the regression gradient between the predicted stable force and measured stable force ranging from 0.91 to 1.12 (not significantly different from unity across STNs based on one-sampled T-test, p=0.431). There was no significant difference between the three models which took into account both beta and gamma activities (F(2,16)=0.207, p=0.815, Figure 5A). In addition, the distribution of the within-trial correlation coefficients across all trials was not significantly different between Model 2 and Model 1 (ks-test p=0.2850), Model 1 and Model 3 (ks-test p=0.9584) or Model 2 and Model 3 (ks-test p=0.9228). For convenience therefore, Model 2 was taken as representative of Models 1–3. Considering all the individual trials from the 9 STNr, the median value for the within-trial correlation coefficient was 0.732 for Model 2 (Figure 5B and C). There were around 13% of trials during which the correlation between the measured force and the predicted force were negative, suggesting a failure in predicting force trajectory.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig5-v2.jpg)
 
-**Figure 5.:** (A) The correlation coefficients between the measured stable force and the predicted stable force were higher for the force generated by the contralateral hand than that by the ipsilateral hand. There was no significant difference when different models based on both beta and gamma activities from STN LFP were used. The dots and bars show the median value and the range of values for different STNs. ** indicate a significant difference in the prediction performance when the LFPs from the ipsilateral STN was used for decoding. (B) The histogram of the within-trial correlation coefficients between predicted force and measured force (WithinR) for the contralateral hand considering all the trials and all the STNs. (C) Cumulative distribution function (CDF) of the WithinR for the force generated by the contralateral hand (solid lines) and the ipsilateral hand (dashed lines). The CDF indicates the probability that WinthinR has a value less than or equal to a certain value on the x-axis. Data presented in this figure are for all the STNs in which significant modulations were observed in both the beta band and gamma band.DOI: http://dx.doi.org/10.7554/eLife.19089.01310.7554/eLife.19089.014Figure 5—source data 1.Figure 5.The variable ‘WithinR_Test_Contr’ contains data for the WithinR for each individual trial when Models 1–5 were used to predict force generated by the contralateral hand, for the 9 STNs in the main paradigm that are included in the main analysis. ‘WithinR_Test_Ipsi’ contains the WithinR when the models were used to predict force generated by the ipsilateral hand. ‘StbR_Test_Contr’ and ‘StbR_Test_Ipsi’ contain the correlation coefficients between the predicted stable force and measured stable force for the 9 STNs when different models were used.DOI: http://dx.doi.org/10.7554/eLife.19089.014
+**Figure 5.:** (A) The correlation coefficients between the measured stable force and the predicted stable force were higher for the force generated by the contralateral hand than that by the ipsilateral hand. There was no significant difference when different models based on both beta and gamma activities from STN LFP were used. The dots and bars show the median value and the range of values for different STNs. ** indicate a significant difference in the prediction performance when the LFPs from the ipsilateral STN was used for decoding. (B) The histogram of the within-trial correlation coefficients between predicted force and measured force (WithinR) for the contralateral hand considering all the trials and all the STNs. (C) Cumulative distribution function (CDF) of the WithinR for the force generated by the contralateral hand (solid lines) and the ipsilateral hand (dashed lines). The CDF indicates the probability that WinthinR has a value less than or equal to a certain value on the x-axis. Data presented in this figure are for all the STNs in which significant modulations were observed in both the beta band and gamma band.
 
 The predictive performance of the STNr LFP for the force generated by the ipsilateral hand was also evaluated. The cross-trial correlations between the predicted stable force and measured stable were significantly lower for the ipsilateral hand than for the contralateral hand (F(2,16)=10.629, p=0.012). The distributions of WithinR for ipsilateral force prediction were significantly different from that for the contralateral force prediction (ks-test p<0.001 no matter whether Model 1, Model 2 or Model 3 was used), indicating that the STNr LFP was more informative in predicting force generated by the contralateral than the ipsilateral hand. However, the degree of lateralisation could have been underestimated due to the potential presence of mirror movements, even though we asked patients to avoid these and in half those recordings used for decoding we also had bilateral upper limb EMG recordings.
 
-## Factors affecting the decoding performance of the STNr LFP
+### Factors affecting the decoding performance of the STNr LFP
+
+Figure 6 shows how the performance of force prediction based on the STNr LFP changes with movement related reactivity in the gamma band and beta band. Here we considered all the STNr with significant movement-related modulations, whether either in one or other, or both frequency bands of interest (N = 12). The median values of the within-trial correlation coefficients and stable force correlation coefficients increased with the average movement related synchronisation in the gamma band, with an exponential model y=a*e−bx+k explaining 75.7% (p<0.001) of the variance in WithinR and 88.1% (p<0.001) of the variance in StableR across STNs. There was also a trend for better prediction of force with increasing movement related beta desynchronization, but linear regression fitting was not significant for either WithinR or StableR. If we assume that movement-related synchronisation in gamma activity upon gripping is a good proxy for proximity to the motor region of the STN (and perhaps the upper limb representation within it) then these findings suggest that the electrode has to be very near to this region if recorded activity is to have a decent prospect of force prediction. This assumption was borne out by the fact that the movement-related synchronisation in gamma activity dropped by 71 ± 7.7% from the bipolar channel showing the most movement-related modulation to the average modulation in the remaining two bipolar channels. This drop was not so acute, 59 ± 7.9%, for movement related modulation in the beta band, which also only showed a trend for better prediction of force as movement related modulation in this band increased. Finally, there was a lack of significant correlation between the accuracy of the prediction of force and baseline beta (Spearman r = 0.468, p=0.13 for WithinR; Spearman r = 0.363, p=0.25 for StableR) or gamma activity (Spearman r = 0.281, p=0.37 for WithinR; Spearman r = 0.273, p=0.39 for StableR) measured during rest across subjects, suggesting that it is the reactivity of the power changes during gripping that is important for prediction, perhaps because it is more specific for the corresponding motor representation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig6-v2.jpg)
 
-**Figure 6.:** The median values of the WithinR (A) and stable force correlation coefficients (B) increased with the average movement- related modulation in the gamma band. Each dot is the data for one STN and the blue line shows the exponential fit of the data (, p<0.001 for the fitting). The median values of the WithinR (y=a∙e−bx+kC) and stable force correlation coefficients (D) show a trend of increasing with average movement related desynchronization in the beta band. The blue lines show a linear fitting, but the fits were not significant. In this Figure, we consider all the STNr with significant movement-related modulations, whether either in one or other, or both frequency bands of interest (N = 12).DOI: http://dx.doi.org/10.7554/eLife.19089.015
+**Figure 6.:** The median values of the WithinR (A) and stable force correlation coefficients (B) increased with the average movement- related modulation in the gamma band. Each dot is the data for one STN and the blue line shows the exponential fit of the data ($y=a∙e^{−bx}+k$, p<0.001 for the fitting). The median values of the WithinR (C) and stable force correlation coefficients (D) show a trend of increasing with average movement related desynchronization in the beta band. The blue lines show a linear fitting, but the fits were not significant. In this Figure, we consider all the STNr with significant movement-related modulations, whether either in one or other, or both frequency bands of interest (N = 12).
 
-## Cross validation of the force prediction models in another independent patient group
+### Cross validation of the force prediction models in another independent patient group
 
-Finally, the first order dynamic model with beta and gamma power changes as inputs (
+Finally, the first order dynamic model with beta and gamma power changes as inputs (Model 2) was used to predict the gripping force from individual trials in an independent patient group that performed a different, but related, paradigm. Ten patients were recorded in this study and were asked to grip as fast and as strongly as they could in each trial in response to an external cue. Twenty trials were collected for each hand when the patients were on their normal dopaminergic medication. Details of patient information and experimental paradigm were previously reported (Anzak et al., 2012). The average movement related power change in the STN LFP activities and results of force prediction in this patient group are shown in Figure 7. The median correlation coefficient between predicted force and measured force for individual trials (median WithinR) ranged between 0.3848 and 0.9421 for the 20 STNs and contralateral hand (Figure 7B). Considering all the 397 individual trials across all STNs, more than 50% of the trials had WithinR more than 0.7859 (Figure 7C and E). We also found that incorporating alpha activity (Model 4) improved the force prediction accuracy for maximal effort gripping in this patient group. When Model 4 was used, the median WithinR ranged between 0.6731 and 0.9625 across all STNs, and more than 50% of all individual trials had WithinR more than 0.8699. BIC analysis showed that Model 4 (BIC = 2116.2±135.7) was significantly better than Model 2 (BIC = 1873.0±110.3) for this patient group performing maximal effort gripping (∆BIC = 243.3±95.9, t(19)=2.5369, p=0.020 comparing the BIC values, Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig7-v2.jpg)
 
-**Figure 7.:** (A) Average power change in the STN LFP activity associated with the gripping movement. The power change is relative to the average over a 1 s period pre-cue. Time 0 is the timing of cue onset. (B) Median WithinR for individual STN and contralateral hands, * indicates data for each individual STN and contralateral hand. (C) Histogram and (E) cumulative distribution function (CDF) of the WithinR for all the 397 individual trials across all the 20 STNs. (D) BIC analysis showed that Model 4 considering alpha, beta and gamma power changes significantly improved force prediction compared to Model 2 during maximal effort gripping. * indicates p<0.05 using a paired t-test.DOI: http://dx.doi.org/10.7554/eLife.19089.01610.7554/eLife.19089.017Figure 7—source data 1.Figure 7 (data from an independent patient group on a maximal effort gripping paradigm).The variable ‘ERS_AllSTN’ contains the average movement related power changes from 1 to 90 Hz in the LFP signal from each STN recorded. ‘WithinR_IndividualSTN’ contains data of WithinR for each individual trial recorded from each individual STN when Models 1–5 that are tested on this paradigm. ‘WithinR_Median_AllSTN’ contains data for the median WithinR from each STN for the five models that are tested. (Data for Models 2 and 4 are presented in Figure 7).DOI: http://dx.doi.org/10.7554/eLife.19089.017
+**Figure 7.:** (A) Average power change in the STN LFP activity associated with the gripping movement. The power change is relative to the average over a 1 s period pre-cue. Time 0 is the timing of cue onset. (B) Median WithinR for individual STN and contralateral hands, * indicates data for each individual STN and contralateral hand. (C) Histogram and (E) cumulative distribution function (CDF) of the WithinR for all the 397 individual trials across all the 20 STNs. (D) BIC analysis showed that Model 4 considering alpha, beta and gamma power changes significantly improved force prediction compared to Model 2 during maximal effort gripping. * indicates p<0.05 using a paired t-test.
 
 ## Discussion
 
 Here we demonstrate that the LFP signals recorded from the STNr, which is a target of deep brain stimulation (DBS) for movement disorders such as the Parkinson’s disease, can be used to decode the gripping force made by the contralateral hand. This is consistent with an earlier study which recorded neuronal ensemble activities from the STN in patients with Parkinson’s disease, and which showed that a large population of STN neurons were modulated by gripping force (Patil et al., 2004). Moreover, here we show that a simple first order linear dynamic model with the frequency-specific power change from the STN LFP as inputs is sufficient to capture the relationship between LFP signals and generated force, and can be used to decode the temporal profile of gripping force. This extends the earlier observation that frequency-specific LFP activities in the STN correlate with force-related variables in manual grips (Anzak et al., 2012; Tan et al., 2013); and that beta and gamma activities can be considered complementary non-linear correlates of force in gripping, and when combined, afford a measure that linearly correlates with force across all effort levels. Compared to other more data-driven methods based on Wiener filter for decoding force (Flint et al., 2014), the first order linear dynamic model proposed here simulates how the musculoskeletal plant responds to the control signal from the brain. This offers more insight in to how the basal ganglia encodes gripping force, and provides a framework to further investigate and explain the pathophysiology of motor impairment in Parkinson’s disease. One further difference between the model proposed here and the Wiener filter based decoding algorithm is that the present model describes how the output from the musculoskeletal plant, i.e. the generated force, responds to the instantaneous change in the control input from the brain. This may lead to more noisy prediction in the plant output, but allows for fast behavioural reactivity in the face of movement perturbations, and therefore may represent a biologically more relevant control strategy.
 
-## Physiological implications: gripping force representation in STN LFPs
+### Physiological implications: gripping force representation in STN LFPs
 
 When gripping was performed over a range of efforts we found that most information about the gripping force profile was contained in the beta and gamma bands in the STN LFP. The rich information in the gamma band was consistent with prior studies of grasp decoding using ECoG from human motor cortex (Flint et al., 2012, 2014; Pistohl et al., 2012). Changes in beta activity also contributed to the prediction of the force profile and inclusion of beta activity improved the encoding accuracy. This is consistent with our previous finding that beta desynchronization can encode gripping force, especially at the low effort levels (Tan et al., 2013, 2015). It is unlikely that the predictive power of activities in the beta and gamma band was related to contamination by movement artefacts as we used bipolar LFPs for the decoding in which any common artefact is removed through common mode rejection. In addition, we observed increased activity in the low frequency (delta and alpha bands), but features extracted from these frequency bands deteriorated the decoding of force during our core paradigm, even though separate parameters in a first order linear model were estimated for the low frequency activities. This contrasts with previous research which showed that the local motor potential and delta activity (0–4 Hz) in the LFP from the hand area of the primary motor cortex contains information about muscle activity (Flint et al., 2012) and pinching force (Flint et al., 2014).
 
@@ -108,21 +494,21 @@ Our first order linear dynamic model was cross validated in an independent patie
 
 Taken as a whole our results suggest that reciprocal changes in synchronised oscillatory activity in the STN can potentially provide control signals for the motor plant. In line with this is the impaired effort scaling in subjects lacking beta and gamma related motor reactivity in the STN LFP. We speculate that the motor plant may behave as a first order linear dynamical system translating a basal ganglia effort signal to force for a given effector. The present analyses allow quantitative assessment of the importance of such a simple transfer function model of basal ganglia-motor function in terms of its remarkable ability to predict both the pattern with which force is developed and the static force achieved on a single trial basis. Note that although the prediction is being used here in terms of its statistical meaning of accounting for the variance in a second signal, it also satisfies the physiological implications of this term in that changes in the STN LFP preceded changes in the measured force by about 200–300 ms. Our quantitative approach also allowed us to demonstrate that effort encoding is relatively lateralised in the basal ganglia.
 
-## Implications for motor impairment in Parkinson’s disease
+### Implications for motor impairment in Parkinson’s disease
 
-Patients with Parkinson’s disease have been shown to have attenuated power modulation in both the beta band (
+Patients with Parkinson’s disease have been shown to have attenuated power modulation in both the beta band (Doyle et al., 2005; Devos and Defebvre, 2006; Androulidakis et al., 2007; Anzak et al., 2012) and the gamma band (Androulidakis et al., 2007) during movement initialization and when a constant force is meant to be sustained (Tan et al., 2013) when off dopaminergic medication. Such a diminished range of power modulation in the beta and gamma bands during movement may restrict the dynamic range of the coding of force in gripping in Parkinson’s disease. This may impair the force generation, and thereby cause bradykinesia, hypokinesia and weak movements when off compared to when on medication, presuming that the relationship between the STN force-encoding signal and generated force remains fixed across drug states (Figure 8). This is consistent with previous observations that untreated PD patients produce normal muscle activation patterns, but that muscle activity is not adequately scaled to produce the required force (Berardelli et al., 1986; Turner and Desmurget, 2010), PD patients are weaker off dopaminergic medication or DBS (Corcos et al., 1996; Alberts et al., 2004) and that PD patients show an increased probability of selecting slow movement speeds (Mazzoni et al., 2007). On the other hand, if the range of the maximal force to be achieved is to be kept similar to normal when off medication, the scale between the STN force-encoding signal and gripping force will be steeper when untreated (as indicated by Figure 8B). This will lead to abnormally high grip forces in Parkinsonian patients, as observed when they are asked to lift and hold an object (Fellows et al., 1998). Increased force scaling can also lead to the more coarse control of force and difficulty in finely tuning generated force. This is consistent with abnormally increased gripping force observed in precision grasping movements in Parkinson’s disease (Wenzelburger et al., 2002).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/19089/elife-19089-fig8-v2.jpg)
 
-**Figure 8.:** (A) The range of forces that can be generated will be reduced if the scale between the STN encoding signal and the force is to remain the same. This will lead to unscaled, bradykinetic force generation. (B) The scale between the STN encoding signal and the force will be increased if the range of force that can be generated is to be kept similar. This will lead to abnormally high force generation and more coarse force control.DOI: http://dx.doi.org/10.7554/eLife.19089.018
+**Figure 8.:** (A) The range of forces that can be generated will be reduced if the scale between the STN encoding signal and the force is to remain the same. This will lead to unscaled, bradykinetic force generation. (B) The scale between the STN encoding signal and the force will be increased if the range of force that can be generated is to be kept similar. This will lead to abnormally high force generation and more coarse force control.
 
-## Subcortical LFP signals for BMI
+### Subcortical LFP signals for BMI
 
 Our findings suggest that the STN LFP could provide a high-performance control signal for BMI driven neuroprosthetic grasping in paralysed patients, leveraging advances in surgery for deep brain stimulation which has now become a relatively safe procedure (Larson, 2014). Surgical subcortical targets, such as the STN and globus pallidus (GPi), are involved in motor planning and execution. Activities from STN and GPi have been shown to correlate with movement parameters such as movement amplitude and speed (Brücke et al., 2012; Joundi et al., 2012), and are also modulated by movement intention (Kühn et al., 2006). Basal ganglia output has been theorized to regulate movement gain in healthy motor control, and can contain important information about the motor vigour (Shadmehr and Krakauer, 2008; Turner and Desmurget, 2010). Recordings of STN LFP signals have been shown to be stable over months using an implanted amplifier (Quinn et al., 2015; Neumann et al., 2016), and the signals are similar at re-operation several years later (Giannicola et al., 2012). It is also possible that the predictive potential of the STN LFP might be further improved in patients without Parkinson’s disease, as dopamine increases the reactivity of beta and gamma activities around the time of movement (Doyle et al., 2005; Androulidakis et al., 2007). Moreover the reliability of predictions was dependent on the relative scale of movement-related power changes in the gamma band which could be improved by refinements in electrode design and targeting, perhaps using this reactivity to select the optimum implantation target. Therefore, LFP signals recorded from the basal ganglia have the potential to provide stable and high-performance BMI input signals for the control of neuroprosthetic devices in paralysed patients, complementary or alternative to spikes or ECoG signals recorded from the cortex. In this regard, it is important to note that some LFP reactivity is retained when movements are imagined rather than actioned (Kühn et al., 2006), suggesting that peripheral afferents may not be necessary for the beta suppression and gamma increases tracked here.
 
 Nevertheless, several critical issues need to be addressed before neuroprosthetic control by STN LFPs can be considered for implementation in BMIs. Any application is predicated on the assumption that the spectral reactivity demonstrated in the STN of treated PD patients is more-or-less preserved in chronically paralysed patients. This remains to be proven. Although our results suggest that basal ganglia LFP changes might potentially be useful in force control, the selection of movements or effectors is also important in BMI control. Whether and to which extent movements involving different body parts, such the lower as opposed to the upper limb, can be decoded from the STN LFP remains unaddressed, although microelectrode recordings suggest some spatial segregation in activity related to different limbs in the human STN (Rodriguez-Oroz et al., 2001; Theodosopoulos et al., 2003). In addition, we have not demonstrated the specificity of STN LFPs for the decoding of force. Finally, plasticity of cortical control signals is likely to play a significant role in the maximisation of the performance of BMIs (Carmena et al., 2003; Ganguly and Carmena, 2009), and yet whether subcortical signals can adapt over time remains to be seen.
 
-## Limitations and conclusion
+### Limitations and conclusion
 
 There are some limitations in the current study which need to be acknowledged. First and foremost, we were unable to predict the force in about half of our patients. There may be many reasons for this, including disease related impairments despite dopaminergic therapy, post-operative stun effects and failure to pick up LFP activity from the ‘motor’ STN due to electrode targeting error. Confirmation that some electrode contacts were in or touching the STN was given by the surgical team at each centre upon review of pre- and post-operative imaging blinded to the electrophysiological results. According to this standard seven out of the nine electrodes affording force prediction were on target, with the other two electrodes in the posterolateral tail of STN. This suggests that significant movement-related spectral modulation in the beta and gamma bands, -the basis for selecting out this group in the first place, might be a good electrophysiological marker of proximity to the STN, and perhaps to the region of the STN involved in the motor representation of the hand in particular. Noteworthy in this regard, the spatial gradient of gamma reactivity was more acute than that of beta reactivity. In contrast, six out of the 12 electrodes that did not allow reasonable force prediction were identified as neither being in nor touching the STN and these subsequently revised on four sides or left inactive on two sides. A stun effect or disease related impairment might help account for the lack of joint beta and gamma reactivity in the remaining patients in this group, although two of these still had significant modulation in the beta band and one in the gamma band.
 
@@ -136,43 +522,81 @@ Despite these limitations, our findings do suggest that signals elaborated in an
 
 The core paradigm and most subjects are the same as those in a previously published study (Tan et al., 2013), with two more subjects being recruited for the current study.
 
-## Subjects
+### Subjects
 
 In the main paradigm, eleven patients with idiopathic Parkinson’s Disease (mean disease duration 11.3 years, mean age 61.3 years, range 49–73 years; seven males) provided informed consent to take part in this study, which was approved by the local ethics committees. Patients underwent bilateral implantation of DBS electrodes into the STN, as a prelude to therapeutic high frequency stimulation for advanced idiopathic PD with motor fluctuations and/or dyskinesia. Techniques to target and implant electrodes in the STN have previously been described (Foltynie and Hariz, 2010). Microelectrode recordings were not made during surgery. The permanent quadripolar macroelectrode used was model 3389 (Medtronic Neurologic Division, Minneapolis, MN, USA) featuring four platinum-iridium cylindrical surfaces. Its contacts are numbered 0, 1, 2, and 3, with 0 being the most caudal and contact three being the most cranial. Localisation was supported intra-operatively by the effects of direct stimulation and by immediate post-operative stereotactic imaging. Nonetheless, in acknowledgement of the fact that not all electrode contacts could be expected to lie in the STN per se, we term the area sampled by the electrode contact the STN region (STNr). DBS electrode extension cables were externalized through the scalp to enable recordings prior to connection to a subcutaneous DBS pacemaker, implanted in a second operative procedure up to seven days later. One out of the eleven patients (case 2) had only one electrode externalised for testing, thus we could record from 21 STN regions (STNr). Clinical details of the patients are given in Table 1. The patients showed 53.4 ± 6.0% (p<0.001) improvement in the motor section of the Unified Parkinson’s Disease Rating Scale (UPDRS) on treatment with levodopa, indicating good responsiveness to this drug.
 
-## Experimental paradigm
+### Experimental paradigm
 
 Subjects were seated in a comfortable chair with their shoulders adducted and their elbows flexed at about 90°. Subjects were first asked to grip the dynamometer with maximal effort three times, with each trial lasting for 3 s. Then they were presented with a series of imperative visual cues (red light-emitting diode illuminated for 3 s), separated by 11–13 s, and instructed to ‘choose an effort level from the scale provided and then to squeeze the force dynamometer at this chosen effort level when the light comes on and maintain this squeeze for the duration of the light’. Subjects were provided with the Rated Perceived Exertion Scale with 11 levels ranging from zero to 10 (Borg, 1998) printed on a piece of A4 paper. They were asked to try and randomise their selection of effort levels, so that the levels were varied from trial to trial, and all levels were represented. The subjects reported the effort level verbally after each grip. The mean number (± SEM) of trials per hand per subject was 31 ± 2 grips, with a mean number of trials per level per subject of 3 (±1). In particular, 2–3 trials were self-rated as maximal effort and 2–3 trials self-rated as minimal effort in each subject. Patients were asked to grip following illumination of the LED, but were not requested to respond as quickly as possible. There was no other feedback provided to the patients related to the generated force.
 
-## Recordings
+### Recordings
 
 Recordings were made when the patients were ON their usual dopaminergic medication, 3–6 days postoperatively, while electrodes were externalized and before implantation of the pulse generator. Grip force was measured one hand at a time using an isometric dynamometer with standard Jamar design, and its handle set in the second of the five discrete grip diameter adjustments possible (G200; Biometrics Ltd, Gwent, UK). The order in which left and right hands were tested was counterbalanced across subjects. Monopolar LFPs recorded with a TMSi porti (TMS international, Netherlands) and its respective software. A common average reference was used for the monopolar recordings and these were low and high pass filtered at 0.5 and 500 Hz, respectively. Bipolar signals were derived offline by subtracting the monopolar recordings between neighbouring contacts on each electrode. The force was only a low pass filtered at 200 Hz. EMG signals from the first dorsal interosseous (FDI) of the activated hand were recorded in all patients, and the EMG signals from the extensor digitorum communis or extensor carpi ulnaris of both lower arms were recorded in six out of the 11 patients. LFP, EMG and force measurements were initially sampled at 2048 Hz. The effort level the subject reported verbally after each grip was logged manually and then used to label each individual trial.
 
-## LFP analysis
+### LFP analysis
 
 Each electrode has four contact points, and the LFP data were converted off-line to give three bipolar contact pairs (01, 12 and 23) per electrode. Nonetheless, in acknowledgement of the fact that not all electrode contacts could be expected to lie in the STN per se, we term the area sampled by the electrode contact the STN region (STNr). Continuous wavelet transform, with Morlet wavelet and cycle number of 7, was then applied to LFP recordings from each bipolar contact pairs for time-frequency decomposition. The average power changes relative to the pre-movement baseline over the three trials of maximal effort gripping was calculated for each bipolar contact in the contralateral STNr. Three features from each bipolar LFP signal were extracted: the power change in the theta/alpha (4–12 Hz) band, beta (13–30 Hz) and gamma (55–90 Hz) frequency bands. For each electrode, the bipolar signal with the largest movement related reduction in the beta power was selected for analysis. Further, the average power in each frequency band and at each time point was compared against the distribution of the average power for that frequency over a one second period of time before the cue. Significant movement-related modulations were defined as those trials in which there were at least 50% of time points during the second after movement onset with power smaller than the 5% boundary (to capture event related desynchronization) or larger than the 95% boundary (to capture event related synchronisation) of the power distribution before movement for that frequency band. This procedure identified 9 STNs (from six different patients) with significant movement-related modulations in both the beta band and the gamma band; three more STNs showed significant movement-related modulations in either the beta or gamma band. However, there was no significant movement-related modulation in either beta or gamma band in the remaining 9 STNs. Details of the patient and the average power changes during the second after cue onset for maximal effort gripping in the beta and gamma bands for each STN are presented in Table 1.
 
-For force decoding, time-frequency decomposition using continuous wavelet transform was applied to the STN LFPs from the bipolar contact previously selected. For each individual trial of gripping, the power change for each frequency at each time point was calculated by normalizing the power at that time point against the average power during the 1 s before cue presentation, so 0 indicates the power being the same as the baseline activity before cue, positive values indicate power increase (referred to as ERS) and negative value indicate power decrease (referred to as ERD). Then average power changes in theta/alpha (α: 4–12 Hz) band, the beta (β: 13–30 Hz) and gamma (γ: 55–90 Hz) frequency bands at each time point were calculated. The latter frequency range of 55–90 Hz was selected on the basis of our previous study showing that STN LFP activities within this range increase during the onset of a grip (Anzak et al., 2012) and correlate with the stable force achieved during a grip (Tan et al., 2013).
+For force decoding, time-frequency decomposition using continuous wavelet transform was applied to the STN LFPs from the bipolar contact previously selected. For each individual trial of gripping, the power change for each frequency at each time point was calculated by normalizing the power at that time point against the average power during the 1 s before cue presentation, so 0 indicates the power being the same as the baseline activity before cue, positive values indicate power increase (referred to as ERS) and negative value indicate power decrease (referred to as ERD). Then average power changes in theta/alpha ($\alpha$: 4–12 Hz) band, the beta ($\beta$: 13–30 Hz) and gamma ($\gamma$: 55–90 Hz) frequency bands at each time point were calculated. The latter frequency range of 55–90 Hz was selected on the basis of our previous study showing that STN LFP activities within this range increase during the onset of a grip (Anzak et al., 2012) and correlate with the stable force achieved during a grip (Tan et al., 2013).
 
-## Force decoding procedure
+### Force decoding procedure
 
-Our previous study (Tan et al., 2013) showed that activity changes in the beta and gamma bands make major contributions to the encoding of efforts in gripping. In the present study, we tested different hypotheses about the dynamic relationship between LFP features and force. Based on the results from the previous study showing that the difference between gamma (γ) and beta (β) modulations correlates with effort at the force holding phase, the first model to be tested used the signal of γ−β as the as a control input:(Model 1)Force=(γ−β)* KpTp∙s+1e−Td∙s
+Our previous study (Tan et al., 2013) showed that activity changes in the beta and gamma bands make major contributions to the encoding of efforts in gripping. In the present study, we tested different hypotheses about the dynamic relationship between LFP features and force. Based on the results from the previous study showing that the difference between gamma ($\gamma$) and beta ($\beta$) modulations correlates with effort at the force holding phase, the first model to be tested used the signal of $\gamma−\beta$ as the as a control input:
 
-Where β and γ are beta and gamma band activity change in the STNr LFP, respectively. KpTp∙s+1e−Td∙s is a standard representation of a first order linear dynamic system with a time delay in the Laplace domain, where Kp is the steady state proportional gain, Tp is the time constant which is a measure of how fast the force output responds to brain signal changes, and Td is the time delay between the brain control signal (LFP) and the measured force which describes the latency between the timing of brain signal changes and force output onset, s= j ⋅ ω which is a complex variable. The equivalent of Model 1 in the time domain is:  Force(t)+Tp∙∂Force(t)∂t=  Kp∙(γ(t−Td)− β(t−Td)), which suggests that beta and gamma modulations in STN LFP encode the instantaneous amplitude and the differentiation of force over time.
+$$
+Force=(\gamma−\beta)* \frac{K_{p}}{T_{p}∙s+1}e^{−T_{d}∙s}
+$$
 
-The second model to be tested assumed that the activities from beta and gamma bands have a different proportional gain, but have the same dynamic relationship in terms of time constant (Tp) and time delay (Td) in encoding force:(Model 2)Force=(Kp1∙γ+Kp2∙β)* 1Tp∙s+1e−Td∙s
+Where $\beta$ and $\gamma$ are beta and gamma band activity change in the STNr LFP, respectively. $\frac{K_{p}}{T_{p}∙s+1}e^{−T_{d}∙s}$ is a standard representation of a first order linear dynamic system with a time delay in the Laplace domain, where $K_{p}$ is the steady state proportional gain, $T_{p}$ is the time constant which is a measure of how fast the force output responds to brain signal changes, and $T_{d}$ is the time delay between the brain control signal (LFP) and the measured force which describes the latency between the timing of brain signal changes and force output onset, s= j ⋅ ω which is a complex variable. The equivalent of Model 1 in the time domain is: $ Force(t)+T_{p}∙\frac{\partialForce(t)}{\partialt}=  K_{p}∙(\gamma(t−T_{d})− \beta(t−T_{d}))$, which suggests that beta and gamma modulations in STN LFP encode the instantaneous amplitude and the differentiation of force over time.
 
-The third model tested assumed that the dynamic relationship between force and activities at different frequency bands are different, with different values for the proportional gain (Kp), time constant (Tp) and time delay (Td). Thus the generated force is the sum of the distinct processes with different inputs and different transfer function parameters (Model 3):(Model 3)Force=γ* Kp1Tp1∙s+1e−Td1∙s+ β* Kp2Tp2∙s+1e−Td2∙s
+The second model to be tested assumed that the activities from beta and gamma bands have a different proportional gain, but have the same dynamic relationship in terms of time constant ($T_{p}$) and time delay ($T_{d}$) in encoding force:
 
-These models were compared against models which include extra information from the STNr LFP in the form of the relative power change in the theta/alpha frequency band (α) (Model 4 and Model 5):(Model 4)Force=(Kp1∙γ+Kp2∙β+ Kp3∙α)* 1Tp∙s+1e−Td∙s(Model 5)Force=γ* Kp1Tp1∙s+1e−Td1∙s+ β* Kp2Tp2∙s+1e−Td2∙s+ α* Kp3Tp3∙s+1e−Td3∙s
+$$
+Force=(K_{p1}∙\gamma+K_{p2}∙\beta)* \frac{1}{T_{p}∙s+1}e^{−T_{d}∙s}
+$$
 
-Models with only activities from single frequency bands were also evaluated to see if the combination of activities from different frequency bands was necessary for the decoding for force:(Model 6)Force=α* KpTp∙s+1e−Td∙s(Model 7)Force=β* KpTp∙s+1e−Td∙s(Model 8)Force=γ* KpTp∙s+1e−Td∙s
+The third model tested assumed that the dynamic relationship between force and activities at different frequency bands are different, with different values for the proportional gain ($K_{p}$), time constant ($T_{p}$) and time delay ($T_{d}$). Thus the generated force is the sum of the distinct processes with different inputs and different transfer function parameters (Model 3):
 
-The predicted force was clamped so it did not fall below zero. The parameters in different models (Kp, Tp, Td) were estimated for each STN separately.
+$$
+Force=\gamma* \frac{K_{p1}}{T_{p1}∙s+1}e^{−T_{d1}∙s}+ \beta* \frac{K_{p2}}{T_{p2}∙s+1}e^{−T_{d2}∙s}
+$$
 
-## Cross validation and model assessment
+These models were compared against models which include extra information from the STNr LFP in the form of the relative power change in the theta/alpha frequency band ($\alpha$) (Model 4 and Model 5):
 
-Cross-validation was used to evaluate the generalisability and decoding performance of the proposed models with the STNr LFP features as inputs for predicting gripping force. For each STN/contralateral hand, the parameters of different models were first identified using least-squares optimisation applied on a set of training data to fit the corresponding STNr LFP features and measured force of the training data. The decoding accuracy of the models was evaluated by applying the model with identified parameters on another set of testing data. When evaluating the performance of the model applied to across-trial averages, the average of STNr LFP features and forces over multiple trials of low effort levels was first used as the training data to identify the model parameters, and the model was then tested on average data from high effort trials; or vice versa, i.e. using the across-trial average of high effort trials as training data and the averages from low effort trials as testing data. Bayesian information criterion (BIC) was used for model selection. The BIC value for each model is calculated as: BIC=n∙ln(σe2)+k∙ln(n); where σe2 is the error variance: σe2=1n⋅∑t=1n(F(t)−F^(t))2 with F(t) and F^(t) the actually measured and predicted force of each time point respectively; n is the total number of time points; k is the number of free parameters in the model.
+$$
+Force=(K_{p1}∙\gamma+K_{p2}∙\beta+ K_{p3}∙\alpha)* \frac{1}{T_{p}∙s+1}e^{−T_{d}∙s}
+$$
+
+
+
+$$
+Force=\gamma* \frac{K_{p1}}{T_{p1}∙s+1}e^{−T_{d1}∙s}+ \beta* \frac{K_{p2}}{T_{p2}∙s+1}e^{−T_{d2}∙s}+ \alpha* \frac{K_{p3}}{T_{p3}∙s+1}e^{−T_{d3}∙s}
+$$
+
+Models with only activities from single frequency bands were also evaluated to see if the combination of activities from different frequency bands was necessary for the decoding for force:
+
+$$
+Force=\alpha* \frac{K_{p}}{T_{p}∙s+1}e^{−T_{d}∙s}
+$$
+
+
+
+$$
+Force=\beta* \frac{K_{p}}{T_{p}∙s+1}e^{−T_{d}∙s}
+$$
+
+
+
+$$
+Force=\gamma* \frac{K_{p}}{T_{p}∙s+1}e^{−T_{d}∙s}
+$$
+
+The predicted force was clamped so it did not fall below zero. The parameters in different models ($K_{p}$, $T_{p}$, $T_{d}$) were estimated for each STN separately.
+
+### Cross validation and model assessment
+
+Cross-validation was used to evaluate the generalisability and decoding performance of the proposed models with the STNr LFP features as inputs for predicting gripping force. For each STN/contralateral hand, the parameters of different models were first identified using least-squares optimisation applied on a set of training data to fit the corresponding STNr LFP features and measured force of the training data. The decoding accuracy of the models was evaluated by applying the model with identified parameters on another set of testing data. When evaluating the performance of the model applied to across-trial averages, the average of STNr LFP features and forces over multiple trials of low effort levels was first used as the training data to identify the model parameters, and the model was then tested on average data from high effort trials; or vice versa, i.e. using the across-trial average of high effort trials as training data and the averages from low effort trials as testing data. Bayesian information criterion (BIC) was used for model selection. The BIC value for each model is calculated as: $BIC=n∙ln(\sigma_{e}^{2})+k∙ln(n)$; where $\sigma_{e}^{2}$ is the error variance: $\sigma_{e}^{2}=\frac{1}{n}⋅\sum_{t=1}^{n}(F(t)−F^(t))^{2}$ with $F(t)$ and $F^(t)$ the actually measured and predicted force of each time point respectively; n is the total number of time points; k is the number of free parameters in the model.
 
 When evaluating the performance of the model on individual trials, a five-fold cross validation was used. All data from each recording session were partitioned into five equal folds. During each iteration, one fold was retained for testing, and the other four folds were used as training data to identify model parameters. Five iterations would allow for each observation being used for validation exactly once. The five results were then combined to produce a single complete estimation for one session. Different evaluation parameters including within trial correlation (WithinTrialR), correlation between the measured and predicted stable force were quantified based on the testing data.
 

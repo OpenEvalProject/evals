@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.49553.001 The formation and spatial arrangement of chromosome territories (CTs) in interphase has been posited to influence the outcome and frequency of genomic translocations. This is supported by correlations between the frequency of inter-chromosomal contacts and translocation events in myriad systems. However, it remains unclear if CT formation itself influences the translocation potential of cells. We address this question in Drosophila cells by modulating the level of Condensin II, which regulates CT organization. Using whole-chromosome Oligopaints to identify genomic rearrangements, we find that increased contact frequencies between chromosomes due to Condensin II knockdown leads to an increased propensity to form translocations following DNA damage. Moreover, Condensin II over-expression is sufficient to drive spatial separation of CTs and attenuate the translocation potential of cells. Together, these results provide the first causal evidence that proper CT formation can protect the genome from potentially deleterious translocations in the presence of DNA damage.
+The formation and spatial arrangement of chromosome territories (CTs) in interphase has been posited to influence the outcome and frequency of genomic translocations. This is supported by correlations between the frequency of inter-chromosomal contacts and translocation events in myriad systems. However, it remains unclear if CT formation itself influences the translocation potential of cells. We address this question in Drosophila cells by modulating the level of Condensin II, which regulates CT organization. Using whole-chromosome Oligopaints to identify genomic rearrangements, we find that increased contact frequencies between chromosomes due to Condensin II knockdown leads to an increased propensity to form translocations following DNA damage. Moreover, Condensin II over-expression is sufficient to drive spatial separation of CTs and attenuate the translocation potential of cells. Together, these results provide the first causal evidence that proper CT formation can protect the genome from potentially deleterious translocations in the presence of DNA damage.
 
 ## Introduction
 
@@ -29,17 +29,33 @@ Drosophila cells provide a unique opportunity to directly test the role of CT pa
 
 ## Results
 
-## Whole-chromosome oligopaints can efficiently detect IR-induced translocations
+### Whole-chromosome oligopaints can efficiently detect IR-induced translocations
 
 Our previous work demonstrated that Oligopaint labeling of whole chromosomes during interphase is sufficiently sensitive to detect stable translocation events in the cell population (Rosin et al., 2018). We observed that preferential CT positioning in different Drosophila cell lines corresponds to stable translocations found in those cell populations (Rosin et al., 2018). To determine if we could detect induced translocations that are more rare and varied in size, we turned to Drosophila BG3 cells which are derived from the central nervous system of third-instar larvae and maintain a diploid karyotype with infrequent spontaneous rearrangements (Rosin et al., 2018). To create DNA double-strand breaks (DSBs) and induce translocations, we subjected BG3 cells to either a low dose (5 Gy) or high dose (20 Gy) of ionizing irradiation (IR). We found that most cells recovered by 48 hr after IR in both conditions based on a reduction in γ-H2Av staining, which marks sites of DSBs (Figure 1—figure supplement 1) (Mehrotra and McKim, 2006). Neither 5 Gy nor 20 Gy treatments significantly altered cell viability or cell population growth (Figure 1—figure supplement 1).
 
 To identify translocations, cells were arrested in metaphase 48 hr after IR and karyotyped using our whole-chromosome Oligopaints labeling chromosomes X, 2, and 3 (Figure 1A). This strategy allowed us to quantify the color junctions that form as the result of translocation events and measure their frequency between each chromosome pair. Because this analysis is performed on a single-cell basis, these translocation junctions can be easily identified regardless of whether recurrent or variable breakpoints occur throughout the cell population. A total of 1402 metaphase spreads were scored for translocations across 3–5 biological replicates. In each replicate, we found that translocations were efficiently produced and detected following exposure to both 5 Gy and 20 Gy IR, with 3% and 14.8% of total cells harboring a translocation, respectively (Figure 1B). We also found a few cases of spontaneous translocations in untreated cells (1.7%). Translocations between all chromosome pairs were recovered after 20 Gy IR, which we sub-classified as discrete translocations (mid-arm translocations where only two chromosomes were involved; 60.2%), compound chromosomes (fusions of seemingly whole chromosome arms from two different chromosomes; 32%), and complex rearrangements (resulting from multiple translocation events; 7.8%; Figure 1A–B). Approximately 33% of translocations were reciprocal with a seemingly equal exchange of genetic material between the two chromosomes involved (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left: representative metaphase spread with chromosome paints in control BG3 cells. DNA is stained with Hoechst and is shown in white. Right: representative chromosomes 48 hr after irradiation. Both normal and rearranged chromosomes are shown, with cartoon schematics of the chromosomes directly below. The chromosomes involved in the rearrangement (if any) are listed above, and the classification of each translocation type is listed below. (B) Total translocation frequency after varying doses of IR for 3–5 biological replicates. n = 592, 368, and 442 spreads counted for no IR, 5 Gy, and 20 Gy, respectively. Inset: Pie graph depicting the relative translocation types identified after 20 Gy of IR as a percent of total translocations. (C) Dot plot showing translocation frequencies for 2–5 populations of cells 48 hr after 20 Gy IR treatment. Only two replicates were included for X-3 due to pre-existing translocations in those cell sub-populations. (D) Scatterplot showing the translocation frequency after 20Gy IR (Y-axis) versus total genomic size of the chromosome pair (X-axis). The data shown represent five biological replicates. m = slope of line of best fit. P-value was calculated by linear regression.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images showing anti-γ-H2Av staining on BG3 cells before IR (no IR), and 1 hr (T1), 24 hr (T24), and 48 hr (T48) after IR with either 5 or 20 Gy treatments. Scale bar equals 10 μm. (B) Quantification of γ-H2Av fluorescence intensity as shown in (A). (C) Line graph showing average cell viability before and after IR, measured by trypan blue staining. Error bars show standard deviation between biological replicates. (D) Line graph showing average cell growth rates before and after IR over a 48 hr period. Error bars show standard deviation between biological replicates. (E) Left: Schematic and representative mitotic chromosome spread showing reciprocal translocations between chromosomes X and 3. Right: bar graph showing the average fraction of translocations after 20 Gy IR that were reciprocal for 2–5 biological replicates (n = 101 cells quantified total). Error bars show SEM between biological replicates.
+
 Notably, different chromosome pairs exhibited different frequencies of translocations, with most translocations occurring between chromosomes 2 and 3 (Figure 1C). As expected, the different frequencies of translocations between chromosomes can largely be explained by the total genomic length of the chromosomes involved (p=0.0005, r2 = 0.72, Figure 1D). However, there were variations in translocation frequency across the biological replicates for each chromosome pair. In particular, translocations between chromosomes 2 and 3 varied in frequency from 7% to 14% of the cell population depending on the replicate (Figure 1C–D). This suggests that factors other than chromosome size might be contributing to their translocation potential.
 
-## Inter-CT contact frequency correlate with translocation frequency in Drosophila
+### Inter-CT contact frequency correlate with translocation frequency in Drosophila
 
 A positive correlation between the extent of CT intermixing and translocation frequency by FISH has been observed in human lymphocytes (Branco and Pombo, 2006). Therefore, we sought to determine if the variation in translocation frequencies between chromosome pairs and replicates is influenced by varied intermixing between neighboring CTs in different populations of BG3 cells. We created an experimental scheme in which a single population of cells was divided into three groups. One group was immediately fixed and subjected to interphase FISH to analyze CT positioning prior to IR treatment. The other groups were either subjected to IR or left untreated as a no IR control and subsequently karyotyped by whole-chromosome painting to quantify translocations (Figure 2A). This experiment was repeated five independent times to thoroughly capture the range of CT positioning during interphase prior to IR and the translocation frequencies across different cell populations.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of experimental design in which cells are split into three groups: one of which is harvested immediately for interphase FISH analysis, the second is subjected to IR treatment, and the third is used as a ‘no IR’ control. The latter two groups are allowed to recover for two additional days before karyotype analysis to identify translocations (dashed red boxes). (B) Top: Cartoon depiction of BG3 cell karyotype and chromosome paints. Unlabeled heterochromatin is shown in gray. Bottom: representative nucleus with Oligopaints labeling chromosome X (white), 2 (green), and 3 (magenta). Dotted line in merged image represents the nuclear edge. Scale bar equals 5 μm. (C) Left: Representative image showing chromosome X paint (white) and chromosome two paint (green) in two representative nuclei illustrating CT contact and no CT contact. CT segmentation is shown as a red outline. Final 3D rendering is shown on the right. Right: Line plots of fluorescence intensity from the two cells depicted on left. In the top graph, voxel colocalization is observed while there is no voxel colocalization in the bottom graph. (D) Violin plot of CT volume for chromosomes X, 2, and three as a fraction of nuclear volume in BG3 cells. Each violin represents a single cell population, and two biological replicates are shown, each with >500 nuclei being measured. (E) Dot plot showing the median CT overlap volume between chromosome pairs defined by the X-axis, for 2–5 cell populations, where each dot represents the median of a cell population of n > 500 cells. (F) Dot plot showing the fraction of cells with CT contact between chromosome pairs defined by the X-axis, for 2–5 cell populations, where each dot represents the average of a cell population of n > 500 cells. (G) Scatterplot showing the translocation frequency after 20Gy IR (Y-axis) versus median CT overlap volumes prior to IR (X-axis). The data shown represent 3–5 biological replicates. m = slope of line of best fit. P-value was calculated by linear regression. (H) Scatterplot showing the translocation frequency after 20Gy IR (Y-axis) versus inter-CT contact frequency prior to IR (X-axis). The data shown represent 3–5 biological replicates. m = slope of line of best fit. P-value was calculated by linear regression. Arrows depict populations with the lowest (purple) and highest (yellow) translocation events.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative nuclei with Oligopaints labeling chromosome X in white, chromosome two in green, and chromosome three in magenta under control conditions before IR (top), after 5 Gy IR (middle), and after 20 Gy IR (bottom). Scale bar equals 5 μm. (B) Tukey box plot showing chromosome X volume for a single biological replicate before and after IR. n = 550, 700, and 780 cells for no 0, 5, and 20 Gy respectively in B-D. (C) Tukey box plot showing nuclear volume for a single biological replicate before and after IR. (D) Bar graph showing normalized CT contact frequencies (between CT pairs labeled on the x-axis) for 2–5 biological replicates after varying doses of IR (no IR in gray, 5 Gy in orange, and 20 Gy in red). Error bars represent the standard deviation between replicates.
 
 For interphase CT organization, Oligopaints labeling chromosomes X, 2, and three were segmented by custom image analysis to trace the 3D edges of each chromosomal FISH signal (Figure 2B,C) (Ollion et al., 2013; Rosin et al., 2018). We observed similar average volumes for all chromosomes, with chromosome X being slightly smaller than chromosomes 2 and 3 (18.9–20.4 µm3 for chromosome X, 22.8–23.1 µm3 for chromosome 2, and 24.1–25.9 µm3 for chromosome 3), and minimal variability in the range of CT volumes between biological replicates (Figure 2D). Notably, we did not find any cells where a single chromosome occupied more than 28% of the nucleus, indicating that CTs are stably compacted in BG3 cells. (Figure 2D).
 
@@ -47,9 +63,17 @@ We next measured the extent of CT intermixing and inter-CT contact frequencies f
 
 To determine if the extent of intermixing between different CTs influences translocation potential, the median CT intermixing volume between chromosome pairs prior to IR in each replicate line was then plotted against the frequency of their translocations measured after exposure to 20 Gy. Surprisingly, we found only a weak correlation between intermixing volume and translocation frequency for each chromosome pair and replicate population (r2 = 0.16, p=0.21; Figure 2G). Instead, we found a significant positive correlation between the frequency of inter-CT contacts and translocation frequency (r2 = 0.42, p=0.02), such that higher frequencies of inter-CT contact increase the chances of translocation events occurring between those two chromosomes (Figure 2H). For example, the chromosome pair and population with the lowest contact frequency overall (X-2, 92.5% contact) had the lowest number of translocations after IR (Figure 2H, purple arrow), whereas the chromosome pair and population with the highest CT contact frequency overall (2–3, 99% contact) harbored a translocation in nearly 14% of cells after IR (Figure 2H, orange arrow). Indeed, a linear regression analysis of the data predicts a 1% increase in translocation frequency for every 1% increase in contact frequency. This indicates that efficient translocation formation requires a high frequency of CT contact and yet is extremely sensitive to subtle differences in inter-CT contact frequencies across cell populations. Considering that increased intermixing between two chromosomes does not predict an increase in translocation frequency, additional points of contact between chromosomes do not necessarily increase the likelihood of translocation formation.
 
-## CT disruption following knockdown of Cap-H2 increases the translocation potential of long chromosomes
+### CT disruption following knockdown of Cap-H2 increases the translocation potential of long chromosomes
 
 Our findings in BG3 cells suggest that higher contact frequencies between two chromosomes in the nucleus increase translocation potential. To further test this model, we next sought to abrogate the activity of the Condensin II complex in Drosophila, which has been shown to increase inter-chromosomal interactions as observed by Hi-C and FISH (Figure 3A–C) (Bauer et al., 2012; Li et al., 2015; Rosin et al., 2018). Using publically available Hi-C data from Kc167 cells (Li et al., 2015) depletion of the Condensin II subunit Cap-H2 leads to a 20–27% decrease in cis interactions and a 7–17% increase in trans interactions depending on the chromosome pair (Figure 3A–B). Consistent with this, Oligopainting of chromosomes X, 2, and 3 in BG3 cells following Cap-H2 knockdown revealed significant increases in chromosome volume, CT intermixing, and inter-CT contact frequencies between all chromosome pairs (Figure 3C–F and Figure 3—figure supplement 1). Note, however, that the frequency of chromosome contacts by FISH is already high in untreated BG3 cells and was therefore only increased by 2–5% following Cap-H2 knockdown (Figure 3E). No corresponding defects in chromosome segregation or viability were detected (Figure 3—figure supplement 1), consistent with previous reports suggesting Condensin II is dispensable for mitosis in Drosophila cells (Hartl et al., 2008; Rosin et al., 2018; Savvidou et al., 2005). FISH-based karyotype analysis also revealed no significant increase in translocation frequency or change in ploidy after 4 days of Cap-H2 knockdown (Figure 3—figure supplement 1) (Rosin et al., 2018). Furthermore, DNA damage was not increased after Cap-H2 knockdown alone compared to controls based on γ-H2AV immunostaining (Figure 3—figure supplement 1). Therefore, CT decompaction and increased intermixing due to Cap-H2 depletion alone are likely not causal events in acute genome instability.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig3-v2.jpg)
+
+**Figure 3.:** (A) Whole genome heat map obtained by subtracting the two-dimensional contact matrix of Hi-C data from control and Cap-H2 depleted Kc167 cells. Hi-C data obtained from Li et al. (2015). (B) Bar graph showing the intra-chromosomal and inter-chromosomal changes for each chromosome pair calculated from the Cap-H2-Control Hi-C subtraction map. (C) Representative nucleus with Oligopaints labeling chromosome X (white), 2 (green), and 3 (magenta) in control conditions (top), or after Cap-H2 RNAi (RNAi; bottom). Dotted line in merged image represents the nuclear edge. Scale bar = 5 μm. Right: 3D rendering of segmented chromosome structures. (D) Violin plot showing average CT volumes across three biological replicates, both before and after IR, where n > 500 cells each, for control and Cap-H2 RNAi. p-values were determined by Student’s t-test. (E) Violin plot showing CT contact frequencies for X-2 and 2–3 CT pairs and combined across three biological replicates for control and Cap-H2 RNAi. p-values were determined by a Fisher’s Exact Test comparing contact and no contact for individual replicates. (F) Violin plot showing CT intermixing volumes for X-2 and 2–3 CT pairs and combined across three biological replicates for control and Cap-H2 RNAi. p-values were determined by Student’s t-test. (G) Bar graph showing the total translocation frequency after no IR, 5 Gy IR, 20 Gy IR, and combined (‘all’) for control and Cap-H2 RNAi cells. P-values were calculated by Fisher’s exact test comparing normal karyotypes to those with translocations for control and RNAi. (H) Bar graph showing fold-change in translocation frequencies of control and Cap-H2 RNAi cells after 20Gy IR. All data are normalized to controls, with controls shown in gray and Cap-H2 RNAi in red. p-values were calculated using Fisher’s exact test. (I) Stacked bar graphs showing the types and frequency of translocations in control and Cap-H2 RNAi cells after 20 Gy IR. n = 47 (control) and 56 (Cap-H2 RNAi) cells with translocations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) qPCR showing relative Cap-H2 mRNA levels in control or Cap-H2 RNAi cells 4 days after RNAi. Error bars show the standard deviation between technical qPCR replicates. (B) Bar graph showing percent of anaphase cells with defective chromosome segregation in control or RNAi cells. Error bars show standard deviation between biological replicates. p-values were determined by Fisher’s exact test comparing normal and abnormal anaphases in control versus RNAi cell populations. (C) Left: Bar graph showing the average translocation frequency after 4 days of control or Cap-H2 RNAi. Right: Bar graph showing the average translocation frequency after 17 days of control or Cap-H2 RNAi (four treatments). Error bars show SEM between biological replicates. (D) Bar graph showing percent of cells with mostly diploid (dark gray) or mostly tetaploid (light gray) karyotypes in control or Cap-H2 RNAi cells before and after 20 Gy IR. Error bars show standard deviation between biological replicates. (E) Quantification of anti-γ-H2Av fluorescence intensity per nucleus in Control and Cap-H2 RNAi cells after 4, 5, and 6 days of RNAi treatment. Error bars show standard deviation between biological replicates. (F) Quantification of anti-γ-H2Av fluorescence intensity in Cap-H2 RNAi cells before IR (T0), immediately after IR (T1), 24 hr (T24), and 48 hr (T48) either no IR (gray), 5 Gy IR (orange) or 20 Gy IR (red). Error bars show standard deviation between biological replicates. (G) Line graph showing average cell viability in control or Cap-H2 RNAi cells before and after 20 Gy IR, measured by trypan blue staining. Error bars show standard deviation between biological replicates. (H) Bar graph showing percent of cells with either dicentric chromosomes (gray bars) or acentric fragments (black bars) 24 hr after 20 Gy IR in control or Cap-H2 RNAi cells. (I) Bar graph showing fraction of diploid cells with translocations between chromosomes X-2 and 2–3 in control and Cap-H2 RNAi cells. (J) Bar graph showing fraction of Cap-H2-depleted cells harboring a translocation between chromosomes X and two in either diploid or tetraploid cells.
 
 To determine if increased inter-chromosomal interactions as a result of Cap-H2 depletion increases translocation potential in the presence of DNA damage, we repeated our IR experimental scheme in triplicate following RNAi depletion of Cap-H2. Following 5 Gy and 20 Gy of IR, we noted that DNA repair kinetics were delayed following depletion of Cap-H2; however, similar to control cells, most DSBs were repaired by 48 hr post-IR (Figure 3—figure supplement 1). No significant changes in cell viability, ploidy, or the frequency of chromosome fragments were observed after 20 Gy IR (Figure 3—figure supplement 1) indicating that Cap-H2 depleted cells continued to cycle following IR and chromosome breaks were undergoing repair.
 
@@ -57,9 +81,17 @@ The overall frequency of cells with chromosomal translocations increased, albeit
 
 We conclude that Cap-H2 depletion can increase the likelihood of forming heterologous translocations in the presence of DSBs, particularly between the two largest chromosomes. The moderate increase in translocation events mimics the small increase in chromosome contact frequencies between control and Cap-H2-depleted cells, further supporting the idea that inter-CT contact frequencies are predictive of translocation potential.
 
-## Increased condensin II activity can attenuate the potential to form translocations in the presence of DNA damage
+### Increased condensin II activity can attenuate the potential to form translocations in the presence of DNA damage
 
 In Drosophila, increasing levels of Condensin II by direct over-expression of the limiting Cap-H2 subunit results in smaller CTs that are more spatially separated from each other during interphase (Buster et al., 2013; Rosin et al., 2018). To determine if reduced inter-CT contact in BG3 cells would lead to a corresponding decrease in translocation potential, we generated a stable cell line that can be rapidly induced to overexpress Cap-H2 (OX) (Figure 4A). Following induction, Oligopaint FISH targeting chromosomes X, 2, and 3 confirmed the formation of CTs that are more compact and spatially separated from each other compared to uninduced controls (Figure 4B). Note that homologs were also more frequently unpaired, resulting in two CTs per chromosome (Figure 4B). Nevertheless, the total CT volume per nucleus was reduced compared to controls (Figure 4C). A significant overall reduction in inter-CT contact frequencies and CT intermixing volume was also observed (Figure 4D–E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunofluorescence showing Cap-H2-GFP expression levels after induction (or uninduced, top row). DAPI is shown in gray. GFP is shown in green. Scale bar = 10 μm. (B) Left: representative nuclei with Oligopaints labeling chromosome X (white), 2 (green), and 3 (magenta) in control conditions (top), or after Cap-H2 overexpression (OX; bottom). Dotted line in merged image represents the nuclear edge. Scale bar = 5 μm. Right: 3D rendering of segmented chromosome structures. (C) Violin plot showing average CT volumes across three biological replicates, where n > 500 cells each, for control and Cap-H2 OX. P-values were calculated by Student’s t-test. (D) Violin plot showing CT contact frequencies for all CT pairs and combined across three biological replicates for control and Cap-H2 OX. p-values were determined by a Fisher’s Exact Test comparing contact and no contact for individual replicates. (E) Violin plot showing CT intermixing volumes for all CT pairs grouped together across three biological replicates for control and Cap-H2 OX. p-values were determined by Student’s t-test. (F) Total translocation frequency before or after 20Gy IR for control and Cap-H2 OX cells. p-values were calculated by Fisher’s exact test comparing normal karyotypes to those with translocations for control and OX. (G) Fold-change in translocation frequencies of control and Cap-H2 OX cells after 20Gy of IR. All data are normalized to controls, with uninduced controls being shown in gray and Cap-H2 OX shown in blue. P-values were calculated using Fisher’s exact test. (H) Stacked bar graphs showing the types and frequency of translocations in control and Cap-H2 OX cells after 20 Gy IR. n = 54 (control) and 63 (Cap-H2 OX) cells with translocations. p>0.5; calculated by Fisher’s exact test comparing control to OX for each category. (I) Scatterplot showing the translocation frequency of Cap-H2 OX cells after 20 Gy IR (Y-axis) versus CT contact frequencies before IR (X-axis). The data shown represent three biological replicates. m = slope of line of best fit. r2 and p values were calculated by linear regression. (J) Quantification of anti-γ-H2Av staining on control (gray) or Cap-H2 OX cells (blue) before IR (T0 0 Gy), immediately after 20 Gy IR (T0 20 Gy), 24 hr (T24 20 Gy), and 48 hr (T48 20 Gy). (K) Line graph showing average cell viability in control or Cap-H2 OX cells before and after 20 Gy IR, measured by trypan blue staining. Error bars show standard deviation between biological and technical replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49553/elife-49553-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Bar graph showing percent of anaphase cells with defective chromosome segregation in control or OX cells before and 24 hr after IR with 20 Gy. Error bars show standard deviation between biological replicates. p>0.5; Fisher’s exact test comparing normal and abnormal anaphases in control and OX. (B) Representative IF images showing normal and abnormal anaphase cells. Anti-PH3S10 (mitotic marker) antibody is shown in green, and anti-tubulin in magenta. (C) Bar graph showing percent of cells with mostly diploid (dark gray) or mostly tetraploid (light gray) karyotypes in control or Cap-H2 OX cells. Error bars show standard deviation between biological replicates. (D) Stacked bar graphs showing the total fraction of translocations after 20 Gy IR that were reciprocal for 2 biological and 1 technical replicate (n=54-63 cells with translocations). (E) IF on metaphase chromosome spreads 24 hours after 20 Gy IR with anti-HOAP antibody (green) and anti-CID antibody (magenta), showing representative images of a normal karyotype (left) or karyotype with dicentric chromosomes (right; white arrows) and acentric fragments (right; yellow arrow). Scale bar equals 10 μm. (F) Quantification of IF shown in E, showing percent of cells with either dicentric chromosomes (gray bars) or acentric fragments (black bars) 24 hours after 20 Gy IR in control or Cap-H2 OX cells. (G) qPCR showing relative slmb mRNA levels in control or RNAi cells 4 days after RNAi treatment. Error bars show the standard deviation between technical qPCR replicates. (H) Tukey box plot showing CT contact frequencies for all CT pairs across 2 biological replicates for control and slmb RNAi. p-value was calculated by Mann-Whitney test to compare distributions. (I) Bar graph showing the total translocation frequency before or after 5Gy of irradiation for control and slmb RNAi cells. p-value was calculated by Fisher’s exact test comparing normal karyotypes to those with translocations for control and OX. (J) Quantification of anti-γ-H2Av fluorescence intensity on control or slmb RNAi cells before IR (T0 0 Gy), immediately after 5 Gy IR (T0 5 Gy), 24 hours (T24 5 Gy), and 48 hours (T48 5 Gy). These data represent one biological replicate, but were confirmed by a second biological replicate. (K) Bar graph showing average cell viability in control or slmb RNAi cells, measured by trypan blue staining. Error bars show standard deviation between 2 biological replicates.
 
 Following overexpression, cells were harvested for interphase FISH or exposed to 20 Gy of IR and karyotyped after a 48 hr recovery period, as described above. Remarkably, the percentage of cells harboring a chromosomal translocation was significantly reduced from 16.7% in uninduced cells to 10.9% after Cap-H2 OX induction (p=0.02), representing a 35% reduction in translocation frequency (Figure 4F). This reduction was more dramatic when examining data from chromosome pairs separately. In particular, X-2 and 2–3 translocation frequencies were reduced by ~50% each (Figure 4G). There was no significant change in the distribution of rearrangement types (discrete, compound and complex), suggesting that all types of translocations were equally reduced (Figure 4H). Finally, inter-CT contact frequencies between specific chromosome pairs and populations remained significantly correlated with translocation frequency following Cap-H2 overexpression (r2 = 0.6033, p=0.014; Figure 4I). Indeed, a nearly 1:1 change in the percentage of chromosome contact and translocation frequency was maintained.
 
@@ -79,35 +111,101 @@ It is also worth noting that Condensin II has been linked to a number of disease
 
 ## Materials and methods
 
-## Cell lines and tissue culture
+### Cell lines and tissue culture
 
 BG3 (DGRC 166) cells were obtained from the Drosophila Genome Resource Center and were grown at 25°C in M3 media, supplemented with 10% FBS and 10 µg/ml insulin. To ensure that experiments were done with log-phase cells, active cultures were split at a 1∶4 ratio twice per week, and passaged at 2 × 106 cells/mL 24 hr prior to experiments. For Cap-H2 overexpression experiments, a pMT-Cap-H2::GFP construct was stably integrated into BG3 cells by co-transfecting with a hygromycin selection plasmid. Cap-H2 was induced with 0.5 mM CuSO4 for 24 hr.
 
-## RNAi-mediated knock down in cultured cells
+### RNAi-mediated knock down in cultured cells
 
 The following primers were used for T7 RNA synthesis:
 
-dsRNA targetF primerR primerBrown (control)CTATGGCGTGACGTATATATTTGATATTATCGATGTCGATCCAGCap-H2GAGCACATGACCACAAAGGTATGCATTTGAATATCGGAAAGslmbCACCAGGCGATCTCTGTAACACTGGATCGGTGCTGT
+<table>
+  <thead>
+    <tr>
+      <th>dsRNA target</th>
+      <th>F primer</th>
+      <th>R primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brown (control)</td>
+      <td>CTATGGCGTGACGTATATATTT</td>
+      <td>GATATTATCGATGTCGATCCAG</td>
+    </tr>
+    <tr>
+      <td>Cap-H2</td>
+      <td>GAGCACATGACCACAAAGG</td>
+      <td>TATGCATTTGAATATCGGAAAG</td>
+    </tr>
+    <tr>
+      <td>slmb</td>
+      <td>CACCAGGCGATCTCTGTA</td>
+      <td>ACACTGGATCGGTGCTGT</td>
+    </tr>
+  </tbody>
+</table>
 
 dsRNA was generated using the MegaSCRIPT T7 kit (Applied Biosystems) and purified using the RNeasy Kit (Qiagen). Application of RNAi to cells was carried out by soaking in serum-free media according to published methods (Ramadan et al., 2007). Briefly, for RNAi in a 6-well plate, 2 × 106 cells were incubated with 20 µg of dsRNA in 1 mL of serum-free medium for 30 min. After incubation, 2 mL of serum-containing medium was added to cells, followed by incubation for 4 days, or re-treated every 3–4 days for the Cap-H2 extended RNAi.
 
-## Irradiation
+### Irradiation
 
 After 18–24 hr of copper sulfate treatment (or water for uninduced controls), cells were irradiated with either 5 or 20 gamma rays, using a Cs-137 Gammacell irradiator (Nordion). Following IR, cells were harvested at noted time points for IF or FISH on both settled cells and metaphase chromosome spreads.
 
-## Generation of whole-chromosome oligopaints
+### Generation of whole-chromosome oligopaints
 
 Oligopaint libraries were designed as previously described, using the Oligoarray 2.1 software (Beliveau et al., 2012; Beliveau et al., 2018; Rosin et al., 2018) and the Dm3 genome build, and purchased from CustomArray. Whole-chromosome Oligopaints were designed to have 42 basepairs of homology, and a density of approximately one probe per kilobase. Coordinates for all Oligopaints can be found below.
 
 Oligopaints were synthesized as previously described (Moffitt and Zhuang, 2016; Rosin et al., 2018). Briefly, probes were first PCR amplified using Taq DNA polymerase (Invitrogen). These PCR products were then in vitro transcribed using the HiScirbe RNA Synthesis kit (NEB), and converted to RNA:DNA duplexes by reverse transcription (Maxima H minus RT, Thermo) using unlabeled primers (IDT). RNA was removed by alkaline hydrolysis.
 
-TargetChromosomeStartEndXX8603223480022L2L5824227674572R2R16362209994063L3L21054243996343R3R32127799510
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Chromosome</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>8603</td>
+      <td>22348002</td>
+    </tr>
+    <tr>
+      <td>2L</td>
+      <td>2L</td>
+      <td>5824</td>
+      <td>22767457</td>
+    </tr>
+    <tr>
+      <td>2R</td>
+      <td>2R</td>
+      <td>16362</td>
+      <td>20999406</td>
+    </tr>
+    <tr>
+      <td>3L</td>
+      <td>3L</td>
+      <td>21054</td>
+      <td>24399634</td>
+    </tr>
+    <tr>
+      <td>3R</td>
+      <td>3R</td>
+      <td>321</td>
+      <td>27799510</td>
+    </tr>
+  </tbody>
+</table>
 
-## Metaphase chromosome spreads preparation
+### Metaphase chromosome spreads preparation
 
 To induce mitotic arrest, 2.5 × 105 cells were treated with 0.5 µg/ml demecolcine (Sigma-Aldrich) for 1 hr at 24 degrees. Cells were then pelleted by centrifugation for 5 min at 600 g at room temperature and resuspended in hypotonic solution (250 ml of 0.5% sodium citrate), and incubated for 8 min. Following incubation, cells were placed in a cytofunnel and spun at 1,200 rpm for 5 min with high acceleration using a cytocentrifuge (Shandon Cytospin 4; Thermo Fisher Scientific). Spreads for FISH were immediately fixed in cold 3:1 methanol: acetic acid for 10 min, while spreads for IF were fixed with 4% PFA for 10 min. Following fixation, all slides were washed 3 times for 5 min in PBS-T (PBS with 0.1% Triton X-100).
 
-## FISH with Oligopaints
+### FISH with Oligopaints
 
 For FISH on mitotic spreads: following fixation and PBS-T washes, slides were subjected to an ethanol row (3 min each in 70%, 90%, then 100% ethanol) at −20°. Slides were then dried at RT for 48–72 hr. Following drying, slides were denatured in 2xSSCT/70% formamide at 72° for 2.5 min, and again subjected again to an ethanol row at −20°. Subsequently, slides were dried for 10 min at room temperature before adding Oligopaints.
 
@@ -117,16 +215,16 @@ For all slides, primary Oligopaint probes in hybridization buffer (10% dextran s
 
 Approximately 16–18 hr later, coverslips were removed with a razor blade, and slides were washed in 2 × SSCT at 60° for 15 min, 2 × SSCT at RT for 15 min, and 0.2 × SSC at RT for 5 min. Secondary probes (10 pmol/25 µl) containing fluorophores were then added to slides, again resuspended in hybridization buffer, and covered with a coverslip sealed with rubber cement. Slides were incubated at 37° for 2 hr in a humidified chamber, followed by washes in 2 × SSCT at 60° for 15 min, 2 × SSCT at RT for 15 min, and 0.2 × SSC at RT for 5 min. All slides were washed with Hoescht DNA stain (1:10,000 in PBS) for 5 min, followed by 2 × 5 min washes in PBS before mounting in Slowfade (Invitrogen).
 
-## Immunofluorescence
+### Immunofluorescence
 
 For IF on both interphase cells and mitotic spreads, cells were fixed with 4% PFA for 10 min. Slides were then washed 3X in PBS-T for 5 min with gentle rocking. Subsequently, cells were permeabilized with 0.5% Triton X-100 in PBS for 20 min, then blocked in 5% non-fat milk in PBS-T (0.1%) for 1 hr at room temperature. 30 µl of blocking solution containing diluted primary antibodies was applied on the area of the slide containing fixed cells, covered with a coverslip, and incubated in a humidified chamber overnight at 4°C. The next day, slides were washed 3X for 5 min in PBS-T, with gentle rocking, followed by incubation with 30 µl of secondary antibodies diluted in blocking solution for 1 hr at room temperature in a dark humid chamber. Slides were again washed 3X for 5 min in PBS-T, with gentle rocking, and were then washed with Hoechst (1:10,000 in PBS) for 5 min to visualize nuclei. Finally, slides were washed 2X in PBS-T for 5 min before mounting in SlowFade (Invitrogen). IF on metaphase spreads was performed using the same protocol. Primary antibody dilutions were as follows: rabbit-anti PH3S10 (Millipore; 1:1000); mouse anti-alpha tubulin (Sigma; 1:50); chicken anti-CID (gift from Gary Karpen; 1:1000); rabbit anti-HOAP/Hip-Hop (gift from Yikang Rong; 1:200), rabbit anti-GFP (Invitrogen A6455, 1:200). Secondary antibody dilutions were as follows: 488 goat anti-mouse (Jackson Labs, 1:100); 488 goat anti-rabbit (Jackson Labs, 1:200); Cy3 goat anti-rabbit (Jackson Labs, 1:200), 647 goat anti-chicken (Fisher, 1:500).
 
-## Imaging, quantification, and data analysis
+### Imaging, quantification, and data analysis
 
 Images of cultured cells were acquired at 24°C on a Leica DMi8 widefield fluorescence microscope, using a 1.4 NA 63x oil-immersion objective (Leica) and Andor iXon Ultra emCCD camera. The following filter cubes were used for image acquisition: DAPI, Y5, FITC, and RHOD. All images were processed and deconvolved using the Leica LAS-X 3.3 software with 3D Deconvolution, and exported as TIF files. Images were segmented and measured using a modified version of the TANGO 3D-segmentation plug-in for ImageJ as described above (Ollion et al., 2013). For interphase CT volume and contact measurements, nuclei were segmented using the ‘Hysteresis’ algorithm, and CTs were segmented using the ‘Spot Detector 3D’ algorithm. CT contact was defined as two CT objects with greater than 0.5 μm3 colocalization. Statistical tests were performed using Prism seven software by GraphPad. Figures were assembled in Adobe Illustrator.
 
 Before fixation, cells were counted using a Countess II FL Automated Cell Counter (Fisher), and viability was measured using Trypan Blue solution. All mitotic defects and translocations were manually quantified using deconvolved images. For rearrangements, each channel was analyzed alone and with all other channels to look for co-localization or color junctions of FISH probes. Fluorescent signal corresponding to color junctions that was 1) higher than background levels, 2) colocalized with DNA, and 3) present on both chromatids of a chromosome, was scored as a rearrangement.
 
-## Calculating intra-chromosomal and inter-chromosomal interaction changes from Cap-H2 KD Hi-C data
+### Calculating intra-chromosomal and inter-chromosomal interaction changes from Cap-H2 KD Hi-C data
 
 We used Juicer (Durand et al., 2016) to obtain the observed matrix for each chromosome pair with Knight-Ruiz (KR) normalization at 5 kb resolution from both control and Cap-H2 knockdown Hi-C datasets obtained from Li et al. (2015). For each chromosome pair matrix, an average KR-normalized signal was calculated by averaging all 5 kb bins comprising the matrix. Bins that had an NA value were excluded from this calculation. The intra-chromosomal and inter-chromosomal changes for each chromosome pair were calculated as (CapH2 average – WT average)/(WT average).

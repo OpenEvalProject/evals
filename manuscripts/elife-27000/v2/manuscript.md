@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.27000.001 Doc2B is a cytosolic protein with binding sites for Munc13 and Tctex-1 (dynein light chain), and two C2-domains that bind to phospholipids, Ca 2+ and SNAREs. Whether Doc2B functions as a calcium sensor akin to synaptotagmins, or in other calcium-independent or calcium-dependent capacities is debated. We here show by mutation and overexpression that Doc2B plays distinct roles in two sequential priming steps in mouse adrenal chromaffin cells. Mutating Ca 2+ -coordinating aspartates in the C2A-domain localizes Doc2B permanently at the plasma membrane, and renders an upstream priming step Ca 2+ -independent, whereas a separate function in downstream priming depends on SNARE-binding, Ca 2+ -binding to the C2B-domain of Doc2B, interaction with ubMunc13-2 and the presence of synaptotagmin-1. Another function of Doc2B – inhibition of release during sustained calcium elevations – depends on an overlapping protein domain (the MID-domain), but is separate from its Ca 2+ -dependent priming function. We conclude that Doc2B acts as a vesicle priming protein.
+Doc2B is a cytosolic protein with binding sites for Munc13 and Tctex-1 (dynein light chain), and two C2-domains that bind to phospholipids, Ca2+ and SNAREs. Whether Doc2B functions as a calcium sensor akin to synaptotagmins, or in other calcium-independent or calcium-dependent capacities is debated. We here show by mutation and overexpression that Doc2B plays distinct roles in two sequential priming steps in mouse adrenal chromaffin cells. Mutating Ca2+-coordinating aspartates in the C2A-domain localizes Doc2B permanently at the plasma membrane, and renders an upstream priming step Ca2+-independent, whereas a separate function in downstream priming depends on SNARE-binding, Ca2+-binding to the C2B-domain of Doc2B, interaction with ubMunc13-2 and the presence of synaptotagmin-1. Another function of Doc2B – inhibition of release during sustained calcium elevations – depends on an overlapping protein domain (the MID-domain), but is separate from its Ca2+-dependent priming function. We conclude that Doc2B acts as a vesicle priming protein.
 
 ## Introduction
 
@@ -32,9 +32,21 @@ Data obtained after knockout of Doc2B in mouse adrenal chromaffin cells showed a
 
 ## Results
 
-## Doc2B requires synaptotagmin-1 and Munc13-2 to stimulate priming
+### Doc2B requires synaptotagmin-1 and Munc13-2 to stimulate priming
 
 To demonstrate the role of Doc2B in chromaffin cells we first compared secretion from Doc2B knockout (KO) adrenal chromaffin cells with Doc2B KO cells overexpressing Doc2B (Figure 1A). Doc2B was expressed from a bicistronic Semliki Forest Virus construct co-expressing EGFP as an expression marker. Doc2A is not expressed in adrenal chromaffin cells (Friedrich et al., 2008; Pinheiro et al., 2013). Secretion was elicited using calcium uncaging and monitored using capacitance measurements. Vesicle priming in chromaffin cells is calcium dependent, such that a higher [Ca2+]i before stimulation increases the size of the exocytotic burst (Voets, 2000). In the first set of experiments, we stimulated cells from a high basal [Ca2+]i to maximize priming (Figure 1A, insert in top panel; 828.8 ± 24.3 nM for Doc2B KO cells, 935.7 ± 30.3 nM for KO cells overexpressing Doc2B WT). The results (Figure 1A mid panel shows the mean capacitance traces of all recorded cells) showed that expression of Doc2B had a dual effect: it increased the burst of secretion (defined as capacitance increase within 0.5 s of uncaging, Figure 1A), while it decreased sustained release (capacitance increase between 0.5 and 5 s after uncaging, Figure 1A). Because sustained release dominates at later times, total release over the course of the experiment (5 s) was reduced by Doc2B expression. Detection of liberated catecholamines was performed by amperometry, in parallel with capacitance measurements from the same cells (Figure 1A, bottom panel shows mean traces of all recorded cells). Following integration, the amperometric signal mimicked the capacitance trace, confirming those measurements and showing that the vesicles released catecholamines. However, amperometry cannot distinguish between fast and slow burst components due to the diffusional delay. As a control, we also expressed Doc2B in WT chromaffin cells (CD1 mice and – in separate experiments – Black6 mice), which express endogeneous Doc2B, and we found similar changes: an increase in burst release, and a decrease in the sustained component (Figure 1—figure supplement 1A,B). We conclude that overexpression of Doc2B to boost endogenous levels can be used to assay these two opposing effects of Doc2B in adrenal chromaffin cells. Previous data comparing WT to Doc2B KO cells identified consistent changes: a decrease in burst release (seen most clearly during depolarization protocols), and an increase in sustained release upon elimination of Doc2B (Pinheiro et al., 2013). Thus, even though overexpression using Semliki vectors boost protein levels far beyond endogenous levels, the effects on secretion are consistent with those seen in the presence of endogenous expression levels.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/27000/elife-27000-fig1-v2.jpg)
+
+**Figure 1.:** (A) Expression of Doc2B in Doc2B knockout (KO) mouse adrenal chromaffin cells. Top panels: Intracellular [Ca2+] (mean ±SEM) after and (insert) shortly before Ca2+ uncaging (uncaging light for 1–2 ms at red arrow). Middle panel: average capacitance traces from Ca2+ uncaging experiments in Doc2B KO cells (magenta traces, n = 40 cells) and after overexpression of Doc2B WT in Doc2B KO cells (grey traces, n = 36 cells). Bottom panel: amperometric measurements (mean traces) from the same cells. Traces showing a release transient after the uncaging stimulus are the amperometric currents (left ordinate axes). Monotonically increasing traces display the time-integral of the amperometric current (i.e. the charge), scaled to the right ordinate axis. Note that the time-integrals display the same general shape as the capacitance traces, as expected. (Ai) The amplitude (mean ±SEM) of the fast burst was increased by Doc2B (***p<0.001, Mann-Whitney test), whereas (Aii) the amplitude of the slow burst component remained constant. Fast and slow burst correspond to the sizes of the RRP and the SRP, respectively. (Aiii) The rate of the near-linear sustained component (D) was strongly reduced by Doc2B (***p<0.001, Mann-Whitney test). (Aiv) The fusion time constant for the fast burst, and (Av) fusion time constant for the slow burst were unaffected by Doc2B. (B) Ca2+ uncaging experiment in syt-1 KO cells (n = 18) and syt-1 KO cells overexpressing Doc2B WT (n = 20). Panels (B–Bv) are arranged as in A. Doc2B expression led to a highly significant reduction in sustained release, but no significant changes in the fast or slow burst sizes. ***p<0.001, Mann-Whitney test. (C) Ca2+ uncaging experiment in syt-7 KO cells (n = 17) and syt-7 KO cells overexpressing Doc2B WT (n = 17). Panels (C–Cv) are arranged as in A. Doc2B expression led to a significant increase in fast burst size (**p<0.01, Mann Whitney test), and a reduction in sustained release (**p<0.01, unpaired, two-tailed Student’s t test), as in control experiments (panel A). (D) Ca2+ uncaging experiment in Munc13-2 KO cells (n = 16) and Munc13-2 KO cells overexpressing Doc2B WT (n = 18). Panels (D–Dv) are arranged as in A. All components of release were reduced by overexpression of Doc2B WT in the absence of Munc13-2 (**p<0.01, ***p<0.001, Mann Whitney test; # p=0.0575, unpaired two-tailed Student’s t-test). The time constant of the slow component was increased (***p<0.001, unpaired two-tailed Student's t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27000/elife-27000-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Calcium uncaging experiments in CD1 mouse adrenal chromaffin cells (n = 20 cells) and CD1 cells overexpressing Doc2B (n = 20 cells). Top panel: intracellular [Ca2+] (mean ±SEM) obtained by microfluorimetry just after and (insert) before calcium uncaging (uncaging light for 1–2 ms at red arrow). Middle panel: Average capacitance traces of CD1 adrenal chromaffin cells (black trace) and CD1 cells overexpressing Doc2B WT (red trace). Bottom panel: amperometric measurements (average traces) from the same cells. The left ordinate axis represent the amperometric current, the right axis represent amperometric charged. (Ai) The amplitude of the fast burst (mean ±SEM) and the slow burst (Aii) were increased by overexpression Doc2B WT in CD1 cells (Mann-Whitney test, **p<0.01; ***p<0.001). The rate of the sustained component (Aiii) was strongly reduced by overexpressing Doc2B WT in CD1 cells (Mann-Whitney test, ***p<0.001). The fusion time constant of the fast (Aiv) and slow (Av) burst of release were unaffected. (B) Calcium uncaging experiments in Black6 mouse adrenal chromaffin cells (n = 25 cells) and Black6 cells overexpressing Doc2B (n = 26 cells). (Bi) The amplitude of the fast burst (mean ±SEM) was increased by overexpression of Doc2B WT in Black6 cells (Mann-Whitney test, *p<0.05) while the slow burst (Bii) was unchanged. In Black6 mouse chromaffin cells, the sustained rate was also dramatically reduced by overexpressing Doc2B WT (Mann-Whitney test, **p<0.01) and the fast (Biv) and slow (Bv) burst time constants were unaffected.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/27000/elife-27000-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Western blot analysis of Doc2B expression in Syt-1 and Syt-7 (WT and KO) adrenal glands. Syt-1 and Syt-7 antibodies were used as a control for the genotype. VCP antibody was used as a loading control. (B) Quantification of Doc2B signal in Syt-1 and Syt-7 mouse adrenal glands showing no difference of Doc2b expression. (n = 1 animal/condition, no statistical test).
 
 We performed kinetic analysis to quantify the changes induced by Doc2B expression in fast and slow burst secretion, which originate from the Readily Releasable vesicle Pool (RRP) and the Slowly Releasable Pool (SRP), respectively (Voets, 2000; Walter et al., 2013). These analyses showed that the fast burst amplitude – corresponding to RRP size – was increased by Doc2B expression (Figure 1Ai, Figure 1—figure supplement 1Ai,Bi), whereas slow burst amplitude – corresponding to SRP size – was unchanged when expressing Doc2B in Doc2B KO cells (Figure 1Aii), or after expression of Doc2B in Black 6 WT cells (Figure 1—figure supplement 1Bii), although it was increased when expressing Doc2B in CD1 WT cells (Figure 1—figure supplement 1Aii). The sustained component was strongly reduced in all three mouse lines (Figure 1Aiii, Figure 1—figure supplement 1Aiii,Biii). The time constants of fusion of fast and slow burst fusion were not significantly changed (Figure 1Aiv,Av, Figure 1—figure supplement 1Aiv, Av, Biv, Bv). Thus, Doc2B has opposing effects on RRP size and sustained release, whereas the effect on the SRP differs between the two mouse lines (Black6 and CD1). Note that our KO mice are backcrossed to a Black6 background.
 
@@ -42,7 +54,7 @@ A promoting effect on RRP size implies that Doc2B stimulates RRP filling (primin
 
 Munc13-proteins are the canonical priming proteins in neurons (Augustin et al., 1999) and chromaffin cells (Ashery et al., 2000), acting by opening syntaxin-1 within the confines of Munc18 (Ma et al., 2013) to facilitate SNARE-complex assembly. ubMunc13-2 is the dominating Munc13 isoform in adrenal chromaffin cells, and in its absence the fast burst of release was reduced due to a priming defect (Man et al., 2015). Interestingly, expressing Doc2B WT in ubMunc13-2 KO cells not only failed to support the increase in fast burst amplitude, but led to near-abolishment of all secretory phases (Figure 1D,Di–Dv), similar to the defect seen when eliminating SNARE-proteins (Sørensen et al., 2003b; Borisovska et al., 2005). This effect was confirmed by amperometry measurements (Figure 1D). Thus, Munc13-2 is required for the promoting functions of Doc2B on priming, and negative functions of Doc2B dominate in its absence.
 
-## Mutated Doc2B renders vesicle priming Ca2+-independent
+### Mutated Doc2B renders vesicle priming Ca2+-independent
 
 Vesicle priming in chromaffin cells is Ca2+-dependent, with higher Ca2+ concentrations in the sub-μM range leading to a larger burst of release (Bittner and Holz, 1992; von Rüden and Neher, 1993; Voets, 2000). This mechanism is physiologically important, because it makes it possible for G-protein coupled receptors, which stimulate Ca2+-release from intracellular stores to increase [Ca2+] in the sub-µM range, to act synergistically with neuronal stimulation to strongly increase adrenaline output (Teschemacher and Seward, 2000). Since Doc2B is a priming protein with Ca2+-dependent trafficking, we next investigated the possibility that it might act as a Ca2+-sensor for vesicle priming. To this end, we mutated Doc2B’s Ca2+-binding sites. Mutating two of the coordinating aspartate residues in the C2A-domain to asparagine (D218N/D220N, denoted DN-mutation) causes Doc2B to reside permanently at the plasma membrane (Groffen et al., 2006; Friedrich et al., 2008; Gaffaney et al., 2014; Xue et al., 2015; Michaeli et al., 2017). Immunostainings against Doc2B and synaptobrevin-2(syb-2)/VAMP2 are shown in Figure 2A and B. The DN-mutant was expressed at similar levels as WT Doc2B (Figure 2A,C), and the vesicular marker VAMP2/synaptobrevin-2 staining also showed similar levels in separate stainings (Figure 2B,D). Inspecting the stainings, both the WT and the DN mutant appeared to be at or close to the plasma membrane, but chemical fixation can cause Ca2+-influx, which induces trafficking of Doc2B at the sub-μM level; thus, membrane localization cannot be assess from staining of fixed samples. Instead, we used an EGFP fusion protein and live cell confocal imaging to assess localization (Figure 3). These measurements verified previous findings and showed that Doc2B readily traffics between cytosol and plasma membrane during reversible exposure to a High-K+ solution (Figure 3A–C)(Groffen et al., 2006). In contrast, the DN-mutant was present at the membrane at higher levels than the WT protein at rest (Figure 3A,B). Nevertheless, additional trafficking of the DN-mutant to the membrane was seen during High-K+ exposure, due to Ca2+-binding to the C2B-domain (Figure 3C).
 
@@ -58,7 +70,7 @@ For physiological measurements, we expressed the DN-mutant and EGFP separately f
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/27000/elife-27000-fig4-v2.jpg)
 
-**Figure 4.:** 2+ level.(A-F) at low basal (preflash) calcium, the DN-mutant supports more secretion than WT Doc2B. (A) Ca2+ uncaging experiments in Doc2B KO cells (n = 12), Doc2B KO cells overexpressing Doc2B WT (n = 19) and Doc2B KO cells overexpressing Doc2b DN (n = 20 cells). Top panel shows the average (±SEM) post-flash [Ca2+]i measured by microfluorimetry; inset shows the pre-flash [Ca2+]i. Bottom panel shows the changes in cell membrane capacitance (mean traces for all cells). (B–F) Kinetic analysis revealed that both the fast and slow bursts were larger upon overexpression of Doc2B DN than of Doc2B WT, leading to a gain of function phenotype at low basal cell calcium. The sustained component was similarly decreased by overexpression of wildtype and DN-mutated Doc2B (*p<0.05, **p<0.01, ***p<0.001, Dunn’s multiple comparison test). (G), similar experiment to (A) but in high basal pre-flash Ca2+ (Doc2B KO, n = 20 cells; Doc2B KO expressing Doc2B WT, 20 cells; Doc2B KO expressing Doc2B DN, 32 cells). (H–L) Kinetic analysis shows that overexpression of either Doc2B DN or Doc2B WT causes a similar increase in the fast burst. Similar to the low preflash [Ca2+]i experiment, the sustained component was decreased to the same levels by overexpression of both proteins. (K) Overexpression of Doc2B DN caused a significant acceleration of the fast burst fusion kinetics. (M) Plot of the total burst size (fast + slow) as a function of the basal cell calcium reveals that Doc2B DN supports maximal LDCV priming irrespective of the cell Ca2+. *p<0.05, ***p<0.001; Dunn’s multiple comparison test.
+**Figure 4.:** (A-F) at low basal (preflash) calcium, the DN-mutant supports more secretion than WT Doc2B. (A) Ca2+ uncaging experiments in Doc2B KO cells (n = 12), Doc2B KO cells overexpressing Doc2B WT (n = 19) and Doc2B KO cells overexpressing Doc2b DN (n = 20 cells). Top panel shows the average (±SEM) post-flash [Ca2+]i measured by microfluorimetry; inset shows the pre-flash [Ca2+]i. Bottom panel shows the changes in cell membrane capacitance (mean traces for all cells). (B–F) Kinetic analysis revealed that both the fast and slow bursts were larger upon overexpression of Doc2B DN than of Doc2B WT, leading to a gain of function phenotype at low basal cell calcium. The sustained component was similarly decreased by overexpression of wildtype and DN-mutated Doc2B (*p<0.05, **p<0.01, ***p<0.001, Dunn’s multiple comparison test). (G), similar experiment to (A) but in high basal pre-flash Ca2+ (Doc2B KO, n = 20 cells; Doc2B KO expressing Doc2B WT, 20 cells; Doc2B KO expressing Doc2B DN, 32 cells). (H–L) Kinetic analysis shows that overexpression of either Doc2B DN or Doc2B WT causes a similar increase in the fast burst. Similar to the low preflash [Ca2+]i experiment, the sustained component was decreased to the same levels by overexpression of both proteins. (K) Overexpression of Doc2B DN caused a significant acceleration of the fast burst fusion kinetics. (M) Plot of the total burst size (fast + slow) as a function of the basal cell calcium reveals that Doc2B DN supports maximal LDCV priming irrespective of the cell Ca2+. *p<0.05, ***p<0.001; Dunn’s multiple comparison test.
 
 The 6A-mutation, which includes aspartate-to-alanine mutations of six key Ca2+-binding aspartate residues, three in each C2-domain (C2A: D163A/D218A/D220A, C2B: D303A/D357A/D359A) blocks Ca2+ binding to both C2-domains (Pang et al., 2011). Although the 6A-mutant cannot bind to Ca2+, it was able to rescue the normal mEPSC frequency in cultured neurons (Pang et al., 2011). This finding was used to argue that Doc2B has calcium-independent upstream effects on miniature release. Here, using live cell imaging of a Doc2B(6A)-EGFP fusion protein we showed that the 6A-mutant localizes permanently to the plasma membrane in excess of the WT protein, and it does not traffic in response to depolarization (Figure 3A,B,C). Similar results were previously reported using a quadruple aspartate-to-asparagine mutation in C2A/B (Gaffaney et al., 2014).
 
@@ -66,7 +78,7 @@ When expressed from a bicistronic message, the 6A-mutant reached protein levels 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/27000/elife-27000-fig5-v2.jpg)
 
-**Figure 5.:** 2+binding sites of Doc2B leads to permanent membrane localization and Ca2+-independent priming.(A-F) When stimulated from low basal calcium, the Ca2+-binding mutant Doc2B 6A supports more secretion that Doc2B WT. (A) Ca2+ uncaging in Doc2b KO cells (n = 23), KO cells overexpressing Doc2B WT (n = 19) and KO cells overexpressing Doc2B 6A (n = 18). Panels are arranged as in Figure 4. (B–F) Kinetic analysis revealed that the fast burst was increased more by overexpression of Doc2B 6A than by Doc2B WT, showing a gain of function of the 6A mutant at low basal cell calcium. The sustained component was similarly decreased by overexpression of either protein. *p<0.05, ***p<0.001; Dunn’s multiple comparison test. (G) similar experiment to (A) but stimulated from high basal pre-flash [Ca2+]i (Doc2B KO, n = 25 cells; Doc2B WT, n = 21 cells; Doc2B 6A, n = 22 cells). (H–L) Kinetic analysis shows that overexpression of Doc2B WT caused a marked increase in the fast burst while Doc2B 6A did not, demonstrating a loss of function when studied from a high basal [Ca2+]. Similar to the low [Ca2+]i experiment, the sustained component was decreased to the same levels by overexpression of both proteins. *p<0.05, Tukey’s multiple comparison test; ***p<0.001, Dunn’s multiple comparison test. (M) Plot of the total burst size (fast + slow) as a function of the basal cell calcium reveals the Ca2+-independent priming reaction in the presence of the 6A mutant.
+**Figure 5.:** (A-F) When stimulated from low basal calcium, the Ca2+-binding mutant Doc2B 6A supports more secretion that Doc2B WT. (A) Ca2+ uncaging in Doc2b KO cells (n = 23), KO cells overexpressing Doc2B WT (n = 19) and KO cells overexpressing Doc2B 6A (n = 18). Panels are arranged as in Figure 4. (B–F) Kinetic analysis revealed that the fast burst was increased more by overexpression of Doc2B 6A than by Doc2B WT, showing a gain of function of the 6A mutant at low basal cell calcium. The sustained component was similarly decreased by overexpression of either protein. *p<0.05, ***p<0.001; Dunn’s multiple comparison test. (G) similar experiment to (A) but stimulated from high basal pre-flash [Ca2+]i (Doc2B KO, n = 25 cells; Doc2B WT, n = 21 cells; Doc2B 6A, n = 22 cells). (H–L) Kinetic analysis shows that overexpression of Doc2B WT caused a marked increase in the fast burst while Doc2B 6A did not, demonstrating a loss of function when studied from a high basal [Ca2+]. Similar to the low [Ca2+]i experiment, the sustained component was decreased to the same levels by overexpression of both proteins. *p<0.05, Tukey’s multiple comparison test; ***p<0.001, Dunn’s multiple comparison test. (M) Plot of the total burst size (fast + slow) as a function of the basal cell calcium reveals the Ca2+-independent priming reaction in the presence of the 6A mutant.
 
 Half-maximal trafficking of Doc2B to the plasma membrane requires ~200 nM Ca2+ (Groffen et al., 2006), which coincides with resting [Ca2+] in the experiments in Figure 3A and B. Due to the finite affinity of our calcium cage, nitrophenyl-EGTA, which has a Kd of 80 nM (Ellis-Davies and Kaplan, 1994) it was not feasible to conduct calcium uncaging experiments from even lower basal [Ca2+]i. This would cause Ca2+ to dissociate from the cage before uncaging, leaving the unbound cage as an additional Ca2+-buffer that would prevent increases in [Ca2+]. Instead, we probed the DN-mutant using a depolarization protocol and a pipette solution including 0.5 mM EGTA without added Ca2+ (Figure 6). It is commonly assumed that six brief (10 ms) depolarizations elicit the fusion of the Immediately Releasable Pool (IRP), which are RRP-vesicles co-localized with Ca2+-channels, whereas four subsequent longer (100 ms) depolarizations fuse the entire RRP (Voets et al., 1999). We compared Doc2B KO cells expressing Doc2B WT and Doc2B DN. The depolarization protocol caused a moderate increase in [Ca2+]i, to ~2 μM in cells expressing either construct (Figure 6A). The modest increase in [Ca2+]i is due to the strong inhibition of Ca2+-channels induced by Doc2B overexpression in chromaffin cells (Toft-Bertelsen et al., 2016). Therefore, these data cannot be directly compared to findings in Doc2B KO or WT cells (Pinheiro et al., 2013). The DN-mutant did not induce any significant increase in IRP size over Doc2B WT (Figure 6A–B), but the capacitance after four long depolarizations was significantly increased (Figure 6A,C; we denote the increase ‘RRP’ for the sole reason that it was comparable to the fast burst measured by Ca2+ uncaging in Figure 4A–B). When repeating the protocol (6 + 4 depolarizations), the effect of the DN mutation on ‘RRP’ size was largest in the first two trials and subsided thereafter as the cells underwent secretory run-down (Figure 6D). These experiments show that the DN-mutation specifically increased the RRP size, but not the IRP.
 
@@ -76,7 +88,7 @@ Half-maximal trafficking of Doc2B to the plasma membrane requires ~200 nM Ca2+ 
 
 Overall, we conclude from these experiments that Doc2B is a calcium-dependent priming protein acting to increase the size of the secretory burst (consisting of the RRP and the SRP vesicles), and calcium-dependent priming can be occluded by mutations at the Ca2+- and phospholipid-binding interface within its C2 domains. However, the decrease of the sustained component is unchanged by mutating the Ca2+ binding sites of Doc2B and must, therefore, represent a distinct function of Doc2B.
 
-## SNARE interactions are necessary for the stimulation of priming by Doc2B
+### SNARE interactions are necessary for the stimulation of priming by Doc2B
 
 The poly-lysine stretch on the C2B-domain of syt-1 mediates the interaction with SNAREs and PI(4,5)P2 (Bai et al., 2004; Rickman et al., 2006), and the positive charge is important for triggering release (Li et al., 2006). The Doc2B protein contains a similar polylysine stretch at its C2B domain, and also a smaller stretch of basic residues on the C2A domain. Mutating a lysine to glutamate in each C2 domain creates the KE-mutant (K237E/K319E), which was previously shown to display a profound loss of binding to the SNARE-complex, while retaining Ca2+-dependent binding to liposomes (Groffen et al., 2010). We recently found that Doc2B overexpression in adrenal chromaffin cells causes an increase in syntaxin-1 immunoavailability, due to the recruitment of syntaxin-1 from plasma membrane clusters (Toft-Bertelsen et al., 2016). We therefore stained for syntaxin-1 after expression of Doc2B WT and Doc2B KE in adrenal chromaffin cells (Figure 7A). Using expression of Botulinum Toxin C, we previously demonstrated that this staining is specific for syntaxin-1 (Toft-Bertelsen et al., 2016). The results indeed showed that syntaxin-1 staining was more intense after expressing Doc2B WT or Doc2B DN (Figure 7B), whereas expression of Doc2B KE did not change syntaxin-1 staining intensities, consistent with the loss of SNARE binding by this mutation.
 
@@ -92,7 +104,7 @@ The dynein light chain Tctex-1 was identified as a Doc2-interacting partner in a
 
 **Figure 8.:** (A) Ca2+ uncaging experiment in Doc2B KO cells (n = 13) and KO cells overexpressing Doc2B WT (n = 15) or Doc2BΔTCT (n = 14). (B–F) Kinetic analysis revealed that both vesicle pool sizes and kinetics of release were not significantly different between Doc2B WT and Doc2BΔTCT. *p<0.05; ***p<0.001, Dunn’s multiple comparison test.
 
-## The MID-domain is essential for both positive and negative functions of Doc2B
+### The MID-domain is essential for both positive and negative functions of Doc2B
 
 Both Doc2A and Doc2B interact with Munc13-1 through the Munc13 Interacting Domain (MID), which is located near the N-terminal end of Doc2B, encompassing amino acids 14 to 38 (sequence in Doc2B: see Figure 9A)(Orita et al., 1997). Due to the MID domain Doc2B can recruit Munc13-1 to the membrane (Friedrich et al., 2013). Both the MID domain in Doc2B and the C1 domain of Munc13-1 are required for that trafficking event (Friedrich et al., 2013). Conversely, Munc13-1 might traffic to the plasma membrane by binding to phorbol esters through its C1 domain, bringing Doc2B along (Duncan et al., 1999); however, this has recently been questioned (Friedrich et al., 2013). Overall, the effects of Doc2B on priming might depend on interactions with Munc13 proteins, as already indicated by the lack of a positive priming effect when expressing Doc2B in Munc13-2 KO cells (Figure 1D).
 
@@ -116,7 +128,7 @@ Whereas mutation of the coordinating aspartates in Doc2B (either DN or 6A mutati
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/27000/elife-27000-fig10-v2.jpg)
 
-**Figure 10.:** (A) Chromaffin cells feature two sequential priming steps: priming 1, which recruits vesicles to the SRP, and priming 2, which recruits them to the RRP. At equilibrium, the overall propensity for forward priming is k1[Depot]/k-1 and k2/k-2, respectively (see Materials and methods). Shown is the multiplicative effect of expressing Doc2B WT and DN mutant on priming 1 and priming 2 propensities at low [Ca2+]. Both proteins stimulate priming 1, but inhibit priming 2. It has been proposed that SRP-vesicles fuse directly (Voets, 2000), or, as indicated here, that they mature to RRP-vesicles before they fuse (Walter et al., 2013); the experiments we present here do not distinguish between two possibilities, but see (Walter et al., 2013). (B) The effect of increasing [Ca2+] from 200 to ~ 800 nM, in the Doc2B KO, or after expression of Doc2B WT or DN. Ca2+ stimulates priming 1 strongly in the Doc2B KO, but inhibits priming 2, whereas with Doc2B, priming 2 is stimulated by Ca2+. (C) Overall model for the effect of Doc2B on priming 1 and priming 2. Doc2B (and the DN and 6A mutants) stimulates priming 1, but also occludes its Ca2+-dependence, presumably by inhibiting or competing with another Ca2+-dependent priming protein (upstream priming sensor) that normally acts at priming 1. Ca2+ increases the effect of Doc2B on priming 2; this effect is seen also in the DN-mutant, but not in the 6A-mutant; therefore, it depends on Ca2+ binding to the C2B-domain.10.7554/eLife.27000.014Figure 10—source data 1.priming 1 and priming 2 propensity from experiments in Doc2B KO, and after overexpression of Doc2B WT and DN-mutant (see also Figure 4).The propensity for upstream priming, priming 1, k1[Depot]/k-1, is simply equal to the slow burst (SRP) size, whereas the propensity for priming 2, k2/k-2, is equal to the ratio between fast and slow burst (RRP/SRP). To determine the effect of increasing basal [Ca2+] from ~200 nM to ~800 nM, we calculated the ratio of the propensities between Ca2+ concentrations for a given genotype (two columns on the right). To calculate the effect of expressing Doc2B and the Doc2B DN mutant at ~200 nM [Ca2+] we formed the ratio of the propensities between expressed and KO cells for a given [Ca2+] (six bottom rows).
+**Figure 10.:** (A) Chromaffin cells feature two sequential priming steps: priming 1, which recruits vesicles to the SRP, and priming 2, which recruits them to the RRP. At equilibrium, the overall propensity for forward priming is k1[Depot]/k-1 and k2/k-2, respectively (see Materials and methods). Shown is the multiplicative effect of expressing Doc2B WT and DN mutant on priming 1 and priming 2 propensities at low [Ca2+]. Both proteins stimulate priming 1, but inhibit priming 2. It has been proposed that SRP-vesicles fuse directly (Voets, 2000), or, as indicated here, that they mature to RRP-vesicles before they fuse (Walter et al., 2013); the experiments we present here do not distinguish between two possibilities, but see (Walter et al., 2013). (B) The effect of increasing [Ca2+] from 200 to ~ 800 nM, in the Doc2B KO, or after expression of Doc2B WT or DN. Ca2+ stimulates priming 1 strongly in the Doc2B KO, but inhibits priming 2, whereas with Doc2B, priming 2 is stimulated by Ca2+. (C) Overall model for the effect of Doc2B on priming 1 and priming 2. Doc2B (and the DN and 6A mutants) stimulates priming 1, but also occludes its Ca2+-dependence, presumably by inhibiting or competing with another Ca2+-dependent priming protein (upstream priming sensor) that normally acts at priming 1. Ca2+ increases the effect of Doc2B on priming 2; this effect is seen also in the DN-mutant, but not in the 6A-mutant; therefore, it depends on Ca2+ binding to the C2B-domain.
 
 At least two different – but nonexclusive – ideas for the action of Doc2 proteins in exocytotic processes have been put forward. The first idea is that Doc2 proteins participate in a direct capacity during the fusion process itself, by triggering Ca2+-dependent lipid insertion of its C2 domains, leading to membrane buckling/distortion, which assists in SNARE-dependent membrane fusion – that is, a function akin to that often ascribed to syts. This notion has support in the observation that Doc2 proteins can accelerate membrane fusion in vitro between populations of liposomes carrying nothing but reconstituted SNAREs (Groffen et al., 2010; Yao et al., 2011; Yu et al., 2013; Gaffaney et al., 2014). The other idea is that Doc2 serves mainly as a recruitment scaffold, which brings other factors to the membrane – or to the SNAREs, since SNARE-binding is needed (Sato et al., 2010) (and our Figure 7) – leading to more indirect, that is, more upstream, effects on fusion. This model has indirect support through the ability of a MID-domain peptide to interfere with synaptic transmission (Mochida et al., 1998), and by the observation of Doc2B-dependent Munc13-1 recruitment (Friedrich et al., 2013). Munc13-1, in turn, might have direct effects on the fusogenicity of vesicles via SNARE-assembly (Ma et al., 2013), or by modulating the size of the fusion barrier (Basu et al., 2007). In pancreatic beta cells, a function of Doc2B as a scaffolding platform for Munc18 proteins has been identified (Jewell et al., 2008; Ramalingam et al., 2014).
 
@@ -130,19 +142,589 @@ In conclusion, we show here that localization of Doc2B to the plasma membrane oc
 
 ## Materials and methods
 
-## Chromaffin cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>C57BL/6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>CD1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M. musculus)</td>
+      <td>Doc2a null allele</td>
+      <td>Sakaguchi G, Manabe T, Kobayashi K, Orita S, Sasaki T, Naito A, Maeda M, Igarashi H, Katsuura G, Nishioka H, Mizoguchi A, Itohara S, Takahashi T, Takai Y. Doc2alpha is an activity- dependent modulator of excitatory synaptic transmission. Eur J Neurosci. 1999 Dec;11(12):4262–8.</td>
+      <td>PMID: 10594652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M. musculus)</td>
+      <td>Doc2b null allele</td>
+      <td>Groffen AJ, Martens S, Díez Arazola R, Cornelisse LN, Lozovaya N, de Jong AP, Goriounova NA, Habets RL, Takai Y, Borst JG, Brose N, McMahon HT, Verhage M. Doc2b is a high-affinity Ca2+ sensor for spontaneous neurotransmitter release. Science. 2010 Mar 26;327 (5973):1614–8.</td>
+      <td>PMID: 20150444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M. musculus)</td>
+      <td>Synaptotagmin-7 (syt7) null allele</td>
+      <td>Maximov A, Lao Y, Li H, Chen X, Rizo J, Sørensen JB, Südhof TC. Genetic analysis of synaptotagmin-7 function in synaptic vesicle exocytosis. Proc Natl Acad Sci U S A. 2008 Mar 11;105(10):3986–3991.</td>
+      <td>PMID: 18308933</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M. musculus)</td>
+      <td>Synaptotagmin-1 (syt1) null allele</td>
+      <td>Geppert M, Goda Y, Hammer RE, LI C, Rosahl TW, Stevens CF, Südhof TC. 1994. Synaptotagmin I: a major Ca2 + sensor for transmitter release at a central synapse. Cell 79(4): 717–727.</td>
+      <td>PMID: 7954835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M. musculus)</td>
+      <td>Unc13b null allele</td>
+      <td>Varoqueaux F, Sigler A, Rhee J-S, Brose N, Enk C, Reim K, Rosenmund C. Total arrest of spontaneous and evoked synaptic transmission but normal synaptogenesis in the absence of Munc13-medicated vesicle priming. Proc Natl Acad Sci U S A. 2002. Jun 25; 99(13):9037–9042.</td>
+      <td>PMID: 12070347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-Doc2b-WT- IRES-EGFP</td>
+      <td>Friedrich R, Groffen AJ, Connell E, van Weering JR, Gutman O, Henis YI, Davletov B, Ashery U. DOC2B acts as a calcium switch and enhances vesicle fusion. J Neurosci. 2008 Jul 2;28(27):6794–806.</td>
+      <td>Genbank Accession: EU635444.1</td>
+      <td>local reference: SG#334</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-Doc2b-DN- IRES-EGFP</td>
+      <td>Friedrich R, Groffen AJ, Connell E, van Weering JR, Gutman O, Henis YI, Davletov B, Ashery U. DOC2B acts as a calcium switch and enhances vesicle fusion. J Neurosci. 2008 Jul 2;28(27):6794–806.</td>
+      <td>Genbank Accession: EU635445.1</td>
+      <td>derived from EU635444.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-Doc2b-6A- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from EU635444.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-Doc2b-KE- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from EU635444.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-Doc2b-TCT- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from EU635444.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-Doc2b-MID (14-41)-IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from EU635444.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-Doc2b-MID (Scrambled)- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from EU635444.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pLenti- Doc2bEGFP-WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from EU635444.1; local reference: J274#2</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pLenti- Doc2bEGFP-DN</td>
+      <td>this paper</td>
+      <td></td>
+      <td>local reference: J274#7</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pLenti- Doc2bEGFP-6A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>local reference: K102#33</td>
+    </tr>
+    <tr>
+      <td>transfected construct (R. norvegicus)</td>
+      <td>pSFV-EGFP- Doc2B-DeltaMID</td>
+      <td>this paper</td>
+      <td></td>
+      <td>local reference: #480</td>
+    </tr>
+    <tr>
+      <td>transfected construct ()</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct ()</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct ()</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample ()</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-syntaxin</td>
+      <td>Synaptic System</td>
+      <td>SySy: 110011</td>
+      <td>dil. 1:1000; Overnight/room temperature</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP</td>
+      <td>Abcam</td>
+      <td>Ab13970</td>
+      <td>dil. 1:1000; Overnight/room temperature</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>secondary Goat anti-mouse Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: A11029</td>
+      <td>dil. 1:1000; Overnight/4 deg.</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>secondary Goat anti-chicken Alexa 488</td>
+      <td>Abcam</td>
+      <td>Ab150169</td>
+      <td>dil. 1:1000; Overnight/4 deg.</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti- synaptotagmin-1</td>
+      <td>Synaptic System</td>
+      <td>SySy: 105011</td>
+      <td>dil. 1:1000; Overnight/4 deg.</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti- synaptotagmin-7</td>
+      <td>Synaptic System</td>
+      <td>SySy: 105173</td>
+      <td>dil. 1:500; Overnight/4 deg.</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-VCP</td>
+      <td>Abcam</td>
+      <td>Ab11433</td>
+      <td>dil. 1:2000; 1h/room temperature</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse mAb against Syb2, clone 69.1</td>
+      <td>Synaptic Systems GmbH</td>
+      <td>cat#104211</td>
+      <td>1:2500 diluted in PBS+ 2% BSA, incubated 2 hr at RT</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit pAb against Doc2b</td>
+      <td>Groffen AJ, Brian EC, Dudok JJ, Kampmeijer J, Toonen RF, Verhage M. Ca(2+)-induced recruitment of the secretory vesicle protein DOC2B to the target membrane. J Biol Chem. 2004 May 28;279(22):23740–7.</td>
+      <td>PMID: 15033971</td>
+      <td>1:133 diluted in PBS+ 2% BSA, incubated 2 hr at RT (note: Doc2b and Syb2 stainings were performed separately on different coverslips to rule out potential spectral overlap)/For western blotting: dil. 1:500; Overnight at 4 deg</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-rabbit HRP</td>
+      <td>Agilent</td>
+      <td>Dako-P0448</td>
+      <td>dil. 1:10000; 1h30/room temperature</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-mouse HRP</td>
+      <td>Agilent</td>
+      <td>Dako-P0447</td>
+      <td>dil. 1:10000; 1h30/room temperature</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat-anti-Rabbit Alexa546</td>
+      <td>ThermoFisher Scientific</td>
+      <td>cat#A-11010</td>
+      <td>1:1000 diluted in PBS+ 2% BSA</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat-anti-Mouse Alexa647</td>
+      <td>ThermoFisher Scientific</td>
+      <td>cat#10739374</td>
+      <td>1:1000 diluted in PBS+ 2% BSA</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>BCA Protein assay kit</td>
+      <td>Pierce</td>
+      <td>Pierce: 23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: S9888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: P5405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NaH2PO4</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: S8282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: G8270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Gibco</td>
+      <td>Gibco: 31966047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>L-cysteine</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: C7352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: 499609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: E5134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>papain</td>
+      <td>Worthington Biochemical</td>
+      <td>Worthington Biochemical: LS003126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>albumin</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: A3095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>trypsin-inhibitor</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: T9253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>penicillin/ streptomycin</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>insulin-transferrin- selenium-X</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 51500056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>fetal calf serum</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 10500064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: 449172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Nitrophenyl- EGTA (NPE)</td>
+      <td>Synthesized at the Max-Planck-Institut for biophycial chemistry, Göttingen.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Fura-4F</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: F14174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Furaptra</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: M1290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Mg-ATP</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: A9187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>GTP</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Vitamin C</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: A5960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>EGTA</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: E4378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: P6148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>PIPES</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: 80635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BSA</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: A4503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Prolong Gold</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: P36934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Protease cocktail inhibitor</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 87785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>RIPA buffer</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: R0278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>ECL plus western blotting substrate</td>
+      <td>Pierce</td>
+      <td>Pierce: 32132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Igor</td>
+      <td>wavemetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH software</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chromaffin cell culture
 
 Doc2B knockout (KO) animals were generated by crossing heterozygous mice. Doc2A/B double knockout mice were kept homozygous knockout for both alleles. P0-P1 pups of either sex were sacrificed by decapitation, the adrenal glands dissected out, and chromaffin cells isolated and cultured according to previously published protocols (Sørensen et al., 2003b). Briefly, dissected adrenal glands were placed in filtered Locke’s solution (154 mM NaCl, 5.6 mM KCl, 0.85 mM NaH2PO4, 2.15 mM Na2HPO4, and 10 mM glucose, pH 7.0), and cleaned for connective tissue using tweezers. The glands were digested in 0.3 mL of papain solution (solutions are defined below) at 37°C for 40 min followed by the addition of 0.3 mL of inactivating solution for 5–10 min. This solution was then replaced by 160 µL of enriched DMEM, and the glands triturated through a 200 µL pipette tip. 50 µL of the cell suspension were plated as a drop on glass coverslips in 6-well plates, and the cells were allowed to settle for 20–40 min before adding 2 mL of enriched DMEM. The cells were incubated at 37°C and 8% CO2 and used within 4 days. Papain solution: DMEM (Gibco) supplemented with 0.2 mg/mL L-cysteine, 1 mM CaCl2, 0.5 mM EDTA, and 20–25 U/mL papain (Worthington Biochemical) and equilibrated with 8% CO2. Inactivating solution: DMEM supplemented with 10% heat-inactivated fetal calf serum (Invitrogen), 2.5 mg/mL albumin, and 2.5 mg/mL trypsin inhibitor (Sigma-Aldrich). Enriched DMEM: DMEM supplemented with 4 µL/mL penicillin/streptomycin (Invitrogen) and 10 µL/mL insulin-transferrin-selenium-X (Invitrogen).
 
-## Expression constructs
+### Expression constructs
 
 For short-term re-expression experiments, full-length WT Doc2B, or Doc2B containing specific mutations, were cloned into a Semliki Forest Virus expression vector (pSFV1) containing an Internal Ribosomal Entry Site (IRES) followed by EGFP, to allow for the simultaneous, but independent, expression of both proteins. Fusion-constructs between Doc2B WT, DN and 6A mutants and EGFP (fused to the C-terminus of Doc2B) were cloned in a lentiviral vector. All constructs were verified by sequencing. The generation of lentiviral and SFV particles followed standard protocols.
 
-## Live imaging experiments
+### Live imaging experiments
 
 Mouse chromaffin cells from CD1 animals (P0) were isolated and plated as described above. After 24 hr, the cells were infected with lentiviral constructs expressing either Doc2b wild-type, the DN mutant or the 6A mutant and all fused C-terminally to the EGFP in order to follow their trafficking in live imaging. For Doc2b ΔMID, 48 hr after primary culture, the cells were infected for 6 hr with a Semliki Forest Virus containing doc2b ΔMID fused to EGFP. After 6 (Semliki Forest virus) or 72 hr (lentiviruses) of infection, confocal imaging of GFP fluorescence (single optical section around the equatorial plane) was performed on a Zeiss LSM780 (488 nm, Argon laser) scanning confocal microscope using a Zeiss Plan-Apochromat 63x/NA 1.4 DIC M27 oil immersion objective (Carl Zeiss,Germany). First acquisition (control) was performed in the presence of extracellular solution (in mM: 145 NaCl, 2.8 KCl, 2 CaCl2, 1 MgCl2, 10 HEPES and 11 glucose, pH 7.2 (osmolarity adjusted to ~305 mOsm)) and imaging was repeated every minute after the application of elevated K+ solution (In mM: 88 NaCl, 59 KCl, 2 CaCl2, 1 MgCl2, 10 HEPES and 11 glucose, pH 7.2 (osmolarity adjusted to ~305 mOsm)) for 5 min (‘high K+') and finally every minute after washing with extracellular solution (‘wash’) for 5 min.
 
-## Exocytosis measurements
+### Exocytosis measurements
 
 Combined capacitance measurements and amperometric recordings were performed as described previously (Mohrmann et al., 2010) on a Zeiss Axiovert 10 equipped with an EPC-9 amplifier (HEKA Elektronik) for patch-clamp capacitance measurements and an EPC-7 plus (HEKA Elektronik) for amperometry. The release of catecholamines was triggered by UV flash-photolysis (JML-C2, Rapp Optoelektronik) of a caged-calcium compound, nitrophenyl-EGTA, which was infused into the cell via the patch pipette, or by membrane depolarization.
 
@@ -150,26 +732,46 @@ Intracellular calcium concentrations were determined using a mixture of two fluo
 
 Amperometric recordings were performed using carbon fiber electrodes with 5 µm in diameter (Thornel P-650/42; Cytec, NJ, USA), insulated using the polyethylene method (Bruns, 2004). Amperometry fibers were clamped to 700 mV, and currents were low-pass filtered with a 7-pole Bessel filter at 1 kHz using an EPC-7 plus (HEKA) and sampled at 11.5 kHz.
 
-## Kinetic analysis and priming propensities
+### Kinetic analysis and priming propensities
 
 Pool sizes and fusion rates were determined by fitting individual capacitance traces with a sum of three exponential functions, each of the form A(1-exp(-t/τ)), representing the fast burst (time constant, τ, 10–30 ms), the slow burst (time constant, τ, 70–300 ms) and the sustained component (time constant, τ, >1 s), respectively, using procedures written in IGOR Pro software. Since the time constant of the sustained component often approached or exceeded the measurement time (5 s), only the mean linear rate of sustained release within 5 s was reported.
 
-To understand the propensities for forward priming in the two sequential priming steps, priming 1 and priming 2 (Figure 10), we solved the two differential equationsdSRPdt=k1Depot +k-2RRP-k-1+k2SRPdRRPdt=k2SRP-k-2RRP
+To understand the propensities for forward priming in the two sequential priming steps, priming 1 and priming 2 (Figure 10), we solved the two differential equations
 
-under steady-state assumptions (i.e. the left-hand side were put equal to zero), which yieldsk1Depotk-1=SRP0k2k-2=RRP0SRP0
+$$
+\frac{dSRP}{dt}=k_{1}Depot +k_{-2}RRP-k_{-1}+k_{2}SRP
+$$
+
+
+
+$$
+\frac{dRRP}{dt}=k_{2}SRP-k_{-2}RRP
+$$
+
+under steady-state assumptions (i.e. the left-hand side were put equal to zero), which yields
+
+$$
+\frac{k_{1}Depot}{k_{-1}}=SRP_{0}
+$$
+
+
+
+$$
+\frac{k_{2}}{k_{-2}}=\frac{RRP_{0}}{SRP_{0}}
+$$
 
 where RRP0 and SRP0 are the steady-state values of the two pool sizes. We estimated the RRP0 and SRP0 from the response to Ca2+-uncaging; the underlying assumptions are that pools are at equilibrium, that the product of k1 and the Depot size is a constant and that there was no ongoing fusion before stimulation.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 For immunostaining against Doc2B and VAMP2, chromaffin cells were prepared from Doc2A/B double-knockout pups at postnatal day P1. Doc2A/B double knockouts were used for these experiments due to availability, but note that Doc2A is not expressed in adrenal chromaffin cells (Friedrich et al., 2008; Pinheiro et al., 2013). Eight h post infection with Semliki Infective Particles encoding Doc2b-IRES-EGFP, Doc2B mutants –IRES-EGFP or IRES-EGFP alone as a control, the cells were fixed by adding an equal volume of 4% PFA in PBS to the existing culture medium, yielding a final concentration of 2% PFA. The cells were washed in PBS, permeabilized for 5 min at RT with 0.1% Triton-X100, washed again with PBS, and incubated in PBS containing rabbit polyclonal antiserum 13.2 against Doc2B (Groffen et al., 2004) (diluted 1:133) or monoclonal mouse anti-VAMP2 (Synaptic Systems, clone 69.1, diluted 1:2000) for 2 hr at room temperature. The cells were washed 3x for 10 min with PBS and incubated with secondary goat-anti-mouse-A647 and goat-anti-rabbit-A546 (Molecular probes, both diluted 1:1000) for 2.5 hr at RT. The cells were washed 3x for 30 min and mounted in Mowiol. Confocal imaging of A647, A546 and GFP fluorescence was performed on a Zeiss LSM510 microscope using a 63x oil immersion objective.
 
 For immunostaining against syntaxin-1, cells were first prefixed for 5 min in isosmotic fixative containing 0.9% PFA in 0.05 M 1,4-piperazinediethanesulfonic acid (PIPES)/NaOH (pH 7.4, 310 mOsm) 2.8 mM KCl and 1 mM MgCl. This was followed by 8 min of incubation in 3.7% PFA in 0.05 M PIPES/NaOH (pH 7.4). Afterward, the cells were washed three times with PBS (pH 7.4) and permeabilized for 10 min in PBS containing 0.1% Triton X-100 (Sigma-Aldrich), followed by 30 min of blocking in PBS containing 3% BSA. The blocking solution was used for diluting antibodies. The chromaffin cells were incubated overnight with a cocktail of anti-syntaxin 1 and anti-GFP antibodies (1:1000; anti-syntaxin-1, cat. no. 110011; Synaptic Systems and chicken anti-EGFP, cat no. ab13970; Abcam) at room temperature, washed three times with PBS, and incubated with secondary goat anti-mouse Alexa 546 and goat anti-chicken Alexa 488 antibodies (1:1000: Life Technologies) overnight at 4°C. After extensive washings with PBS, cells were rinsed with water and mounted on microscopic slides with Prolong Gold (Invitrogen). For this series of experiments, confocal images were acquired with a HCX PL APO CS lens (NA 1.4; Leica Microsystems A/S) with frame size of 512 × 512 and a zoom factor 10 on a LEICA SP5-X Confocal microscope (Leica Microsystems). Images were corrected for background fluorescence by subtracting an average intensity value of an area not containing any cells. Fluorescence levels of the plasma membrane were quantified by measuring the integrated intensity of a ROI1, defined as the outer edge of the plasma membrane, and subtracting the integrated density of a ROI 2, defined as the inner edge of the membrane. The increase in syntaxin-1 staining by Doc2B expression is more modest using this isosmotic fixation method than with standard PFA-fixation (Toft-Bertelsen et al., 2016).
 
-## Electrophoresis and immunoblotting
+### Electrophoresis and immunoblotting
 
 Adrenal glands were collected from P0-2 Syt-7 oe E18 Syt-1 mice and lysed in RIPA buffer (Invitrogen) supplemented with Protease Inhibitor Cocktail (Invitrogen). The protein concentrations were determined by use of a BCA Protein Assay Kit (Pierce; cat.no.23227). 20 μg (from adrenal glands samples) of protein were resolved by SDS-PAGE, transferred to nitrocellulose and blotted using anti Doc2B (rabbit pAb 13.2 from Matthijs Verhage laboratory, dil. 1:500), Synaptotagmin-1 (mouse, Synaptic System, Cat. no. SYSY 105011, dil. 1:1000), Synaptotagmin-7 (rabbit, Synaptic System, Cat. no. SYSY 105173, dil. 1:500), or VCP (as loading control, mouse, Abcam, Cat. no. ab11433, dil. 1:2000) antibodies. The blots were developed by chemiluminescence using the ECL plus western blotting substrate system (Pierce). Immunoreactive bands were detected using the FluorChemE image acquisition system (ProteinSimple) and quantified with ImageJ 1.47q (National Institutes of Health).
 
-## Statistics
+### Statistics
 
 Data are presented as mean ±SEM, with n indicating the number of cells, and statistical comparisons were made in Graphpad Prism. For every mutant or overexpression condition, we performed control experiments (non-expressing or Doc2B WT expressing) and overexpression/mutant experiments in parallel using cells isolated from the same animals. When testing two conditions, we used a F-test to test for differences in variance. In case the F-test was significant, we performed a Mann-Whitney test, otherwise we used an unpaired two-tailed Student’s t-test. In case of three conditions measured in parallel, we tested deviations from homoscedasticity using a Bartlett’s test; if the test was significant, we used a Kruskal-Wallis test and Dunn’s test for multiple comparison, otherwise we used an ANOVA and Tukey’s post-hoc test. For live imaging experiments (Figure 3C), we performed a one-sample t-test comparing the change in fluorescence ratio upon stimulation to zero.

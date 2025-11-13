@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Department of Neuroscience, Columbia University New York United States
-2. https://ror.org/00hj8s172 Kavli Institute for Brain Science, Columbia University New York United States
-3. https://ror.org/00hj8s172 Departments of Biomedical Engineering and Radiology, Columbia University New York United States
-4. https://ror.org/00hj8s172 Zuckerman Mind Brain Behavior Institute, Columbia University New York United States
-5. https://ror.org/052gg0110 Department of Physiology, Anatomy & Genetics, University of Oxford Oxford United Kingdom
+1. Department of Neuroscience, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Kavli Institute for Brain Science, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Departments of Biomedical Engineering and Radiology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+4. Zuckerman Mind Brain Behavior Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+5. Department of Physiology, Anatomy & Genetics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ To address this question, we used two-photon microscopy and a high-speed volumet
 
 ## Results
 
-## Direction discrimination behavior
+### Direction discrimination behavior
 
 We devised an awake head-fixed mouse conditioning paradigm that enables controlled investigation of reinforcement effects across learning (Figure 1a and b). In addition to discriminating tactile objects, rodents are known to sense wind direction using their whiskers (Yu et al., 2016a; Yu et al., 2016b) and can be trained to discriminate different directions of whisker deflections (Nakamura et al., 2009; Bernhard et al., 2020). With this in mind, we directed brief (100 ms) air puffs at the whiskers in either of two directions: rostrocaudal (backward) or ventrodorsal (upward). One of the directions was paired with a water reward delivered 500 ms after the air puff and thus constituted a conditioned stimulus (CS+). No reward was given for the other direction (CS-).
 
@@ -44,9 +44,21 @@ We devised an awake head-fixed mouse conditioning paradigm that enables controll
 
 Licking and whisking were monitored throughout the session (Figure 1c and d). Stimuli elicited a brief passive whisker deflection followed by active whisking over the subsequent ~1.5 s (analyzed below, Figure 6). Any anticipatory licks prior to reward delivery were counted as a response. Typically, on the first session, mice exhibited few anticipatory licks to either stimulus (Figure 1c, top, grey shading). By session 2 or 3, mice had learned an association between whisker deflection and reward, but could not discriminate the CS+ and CS- (middle). Within a week (by sessions 7–9), every mouse we tested learned to reliably lick to the CS+ while withholding licks to the CS-, performing substantially above chance after a single week of training (Figure 1c, bottom; Figure 1e and f). Thus, mice rapidly learned to discriminate the direction of whisker stimuli in our behavioral task.
 
-## Overall stimulus-evoked activity is unbiased and stable across conditioning
+### Overall stimulus-evoked activity is unbiased and stable across conditioning
 
 To investigate the effects of reinforcement learning on apical tuft activity, we imaged apical tufts (433x433 μm field of view) across conditioning days as well as on an unrewarded pre-conditioning day to measure naïve stimulus responses and an unrewarded post-conditioning day to detect any long-lasting changes in responses (Figure 1b). Mice remained water-restricted on the post-conditioning day and continued licking for reward toward the beginning of the session (see below). We virally delivered the gene for Cre-dependent GCaMP6f (Chen et al., 2013) in the barrel cortex of Rbp4-Cre mice, which labels a heterogeneous population of pyramidal neurons comprising approximately 50% of layer 5 (Lacefield et al., 2019; Kozorovitskiy et al., 2012; Glickfeld et al., 2013). By targeting our injections to layer 5B, we predominantly labeled thick-tufted pyramidal neurons (see Methods). Using intrinsic signal imaging, we mapped the location of the C2, D2, and gamma whisker barrel columns and identified an overlapping region in layer 1 with sufficient GCaMP6f expression (Figure 2a). The air puff nozzles were aimed toward the whiskers corresponding to this region. Dendritic activity was longitudinally recorded from the same field-of-view (horizontal location and depth) in layer 1 across all sessions (Video 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig2-v1.jpg)
+
+**Figure 2.:** (a) Dendritic activity was recorded in layer 1 (i) in the C1/C2 barrel columns (ii). (i) Two-photon image ~60 µm deep relative to pia. Dashed yellow lines denote C1 and C2 boundaries from intrinsic imaging. Single cell reconstruction in left panel from Ramirez et al., 2014. (ii) Tangential section through layer 4 showing barrels stained with streptavidin-Alexa 647 and GCaMP6f-expressing apical trunks. Red circles indicate location of 2-photon lesions to mark the imaging region for post-hoc analysis. (b) Overlay of five segmented pseudo-colored tufts from imaging field in panel A(i). (c) Time courses of calcium responses of example tufts in panel b to three air puffs (dashes). (d) Amplitude for CS+ (red) and CS- responses (blue), computed for each segmented tuft in the first 1.5 s post-stimulus (grey points), do not differ within or across sessions. Colored lines indicate median. (e) Similar to panel d, but showing data for all conditioning sessions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Left: Population average of stimulus-responsive tufts aligned to CS+ (red) or CS- (blue) trials from an example mouse. Right: Normalized ∆F/F of individual tufts during CS+ trials. (b) Same as in panel a, combining data across four mice whose imaging regions were mapped with intrinsic imaging.
+
+![Video 1.](https://cdn.elifesciences.org/articles/98349/elife-98349-video1.mp4.jpg)
+
+**Video 1.:** Playback speed is in real time. ‘CS+’ and ‘CS-’ denote times of stimulus onset. 433 x 433 μm field of view.
 
 To extract calcium signals from individual cells, we segmented tufts using CaImAn, a sparse non-negative matrix factorization method that clusters pixels according to their temporal correlation (Giovannucci et al., 2019; see Methods), and analyzed regions of interest exhibiting apical tuft structure (Figure 2b; 65±15 tufts per mouse; mean ± SD). Individual segmented tufts were substantial in their spatial extent (>100 µm), reflecting tuft-wide voltage-gated calcium spikes rather than branch-specific N-methyl-D-aspartate (NMDA) receptor-mediated spikes. All calcium analyses hereafter refer to tuft-wide calcium spikes. Average responses to an event include failures. In many tufts, the CS+ and CS- reliably evoked an influx of calcium that robustly activated the tuft (examples in Figure 2c). Successful calcium events across tufts averaged 28% ΔF/F, consistent with previous studies of layer 5 apical dendrites (Manita et al., 2015; Xu et al., 2012). Interestingly, during intermediate but not early learning, the average population response to the CS+ exhibited a two-peak structure (Figure 2—figure supplement 1, session 4) similar to tuft reward-related signals we observed previously in barrel cortex (Lacefield et al., 2019). By the last-rewarded and post sessions, the second CS+ peak was no longer visible, which could be an endpoint of mice learning that the conditioned stimulus predicts the upcoming reward.
 
@@ -54,9 +66,21 @@ Reward can alter somatic receptive fields in the auditory, visual, and somatosen
 
 While a bias for the CS+ did not develop after learning, we wondered whether overall tuft responses to both conditioned stimuli increased as animals learned the task. Linear regression analysis revealed that conditioning session number was a poor predictor of both CS+ and CS- amplitudes (All tufts R2, CS+: 0.0064, CS-: 0.0035, Figure 2e; Significantly responding tufts R2, CS+: 0.014, CS-: 0.014, data not shown). We did find a small but significant decrease in amplitude from pre to last for CS+ (p<0.01) and CS- (p<10–7), but this was not permanent: amplitudes did not significantly differ between the pre and post sessions (Figure 2d; p=0.53, 0.33, CS+ and CS- respectively, Wilcoxon rank sum test). Taken together, these findings demonstrate that reinforcement learning does not robustly bias the magnitudes of tuft calcium responses to either stimulus at the population level.
 
-## Development of tuft selectivity with task learning
+### Development of tuft selectivity with task learning
 
 While learning produced no bias in overall tuft activity, learning might enhance selectivity for conditioned stimuli. Barrel cortex neurons are tuned to the angle of whisker deflection (Bruno et al., 2003; Bruno and Sakmann, 2006; Ramirez et al., 2014), indicating that the sets of synaptic connections activated by the CS+ and CS- may be overlapping but should not be identical. Therefore, the possibility exists that responses to the CS+ and CS- can change independently of each other. To examine this, we compared the amplitude of the average response to CS+ and CS- trials for all segmented tufts on the pre, last-rewarded, and post sessions (Figure 3a; n=7 mice; 465 pre, 442 last-rewarded, and 430 post tufts). In agreement with our previous analysis, we found no significant bias in response amplitude toward CS+ or CS- during any of the three sessions (Figure 3a; Pre: p=0.20; last-rewarded: p=0.43; Post: p=0.64, sign-rank test). Under naive conditions during the pre session, most tufts that responded to air puff stimuli did not strongly prefer the CS+ or CS- (Figure 3a, left). Surprisingly, on the last-rewarded session and the unrewarded post-conditioning session, we observed a prominent shift in the response distribution, where many tufts exhibited more selective responses to one stimulus or the other (Figure 3a, middle and right).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig3-v1.jpg)
+
+**Figure 3.:** (a) Across the indicated sessions, individual tufts (circles) exhibit larger biases to CS+ or CS- (pooled across all conditioned mice). (b) Repeated exposure to stimuli does not bias individual tufts to CS+ or CS-. (c) Conditioning reshapes distribution of selectivity indices for tufts from Normal on pre-conditioning session to uniform on post-conditioning session. (d) Distribution of tuft selectivity indices remains Normally distributed throughout all repeated exposure sessions. (e) Selectivity (median SI magnitude of tufts for each session) increases with behavioral performance of six animals. (f) Same as panel e, but with neural discriminability plotted on the y axis. (g) Neural discriminability (mean ±sem) of tufts, pooled across all animals on each session, increases with conditioning and decreases with repeated exposure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Tuft responses to CS+ and CS- in each conditioned animal. (b) Selectivity indices for all tufts in each conditioned animal. (c) Median SI magnitude for each animal across three sessions for conditioned (left) and repeated exposure groups (right). (d) Scatter plot of the SI of all tufts on the Pre, Last, and Post-conditioning days. Red lines indicate means. * p<0.05, *** p<10–3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Decoder performance for each animal on the Pre and 1st training days was compared with performance on the Post and Last training days, respectively (thus two datapoints are shown for each animal. Red points indicate rewarded training sessions). Left: Decoder performance was low both before and after learning when trained on the pre-stimulus epoch. Right: Decoder performance improves after conditioning when trained on the post-stimulus epoch. (b) Same analysis as in panel a, but for the repeated exposure group. Decoder performance does not improve over time (right).
 
 Plasticity can occur after repeated exposure to stimuli even in the absence of reinforcements (Yao and Dan, 2001; Dragoi et al., 2002; Dragoi et al., 2000; Zhang et al., 2015; Chu et al., 2016). To test whether enhanced selectivity depended on reinforcement, we imaged a separate group of similarly water-restricted mice that were repeatedly exposed to the same stimuli for the same number of days but without any reward. These mice only received water in their home cage following each imaging session, but never during stimulus presentation. Repeated exposure mice exhibited a stable distribution of response selectivity over time (Figure 3b; a separate cohort of 7 mice; 317, 313, and 321 tufts on Day 1, Day 8, and Day 9, respectively). These results suggest that reinforcement learning, and not simply repeated stimulus exposure, drives apical tufts to become more selective for either the CS+ or CS-.
 
@@ -68,9 +92,29 @@ The above analyses rely on the accurate measurement of calcium spikes from indiv
 
 To confirm that our interpretation was not due to segmentation errors, we repeated the conditioning experiment using a high-speed volumetric imaging approach called SCAPE (Bouchard et al., 2015; Hillman et al., 2018), which allowed us to monitor calcium across entire apical tufts (Video 2). These three-dimensional datasets (300×1050 × 234 μm field of view) encompassed large portions of the apical tree which included branches converging on their bifurcation points in layer 2, enabling us to identify whole apical trees unambiguously (Figure 4a and b; Figure 4—figure supplement 1b). CaImAn effectively demixed overlapping trees in these three-dimensional volumes. Using SCAPE microscopy, we imaged tuft activity of two additional mice conditioned with the same behavioral paradigm (Figure 4c). Comparison of tuft responses to the CS+ and CS- on the pre, last-rewarded, and post sessions (Figure 4d; 241 pre, 215 last-rewarded, 150 post tufts in 2 mice) revealed again that task learning induced significant increases in tuft selectivity (Figure 4e; pre versus last-rewarded: p<10–5, pre versus post: p<10–4, Wilcoxon rank sum test of |SI|). On average, the SI magnitudes were similar between tufts imaged using two-photon microscopy and SCAPE (mean ± s.e.m. |SI| for two-photon versus SCAPE; pre: 0.41±0.01 vs 0.40±0.02; last-rewarded: 0.54±0.02 vs 0.54±0.02; post: 0.51±0.02 vs 0.53±0.03). These data demonstrate that the effects in our two-photon dataset are not caused by errors in segmentation, but rather reflect changes at the level of individual dendritic tufts. Our results, based on two different imaging approaches, clearly demonstrate that reinforcement increases stimulus selectivity at the level of the entire apical tuft.
 
-## Selective tufts emerge from both initially unresponsive and responsive populations
+![Video 2.](https://cdn.elifesciences.org/articles/98349/elife-98349-video2.mp4.jpg)
+
+**Video 2.:** Top, maximum intensity projection (MIP) across the dorsal-ventral dimension showing horizontal extent of dendritic activity. Bottom, MIP across the medial-lateral dimension showing vertical extent of dendritic activity. Playback speed is in real time. ‘CS+’ and ‘CS-’ denote times of stimulus onset. 300 × 1050 × 234 μm field of view.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig4-v1.jpg)
+
+**Figure 4.:** (a) Top and side view of four example tufts segmented from volumetric SCAPE imaging. (b) Time courses of calcium activity from example tufts in (a) during five presentations of air puff stimuli (dashes). (c) Performance across all conditioning sessions of two mice that were imaged with SCAPE. (d) Across the indicated sessions, individual SCAPE-imaged tufts (circles) exhibit larger biases to CS+ or CS-. (e) Conditioning reshapes selectivity distribution from Normal to uniform.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a,b) 12 example tufts extracted from either two-photon (a) or SCAPE microscopy (b). Tufts segmented from SCAPE microscopy are shown as maximum intensity projections from the top and side. Scale bars: 100 μm.
+
+### Selective tufts emerge from both initially unresponsive and responsive populations
 
 The striking effect of reinforcement learning on tuft response selectivity could develop in several ways. For example, initially unresponsive tufts could develop a robust response to either stimulus after learning (e.g. Figure 5a, top). Conceivably, tufts that were initially unselective in naive animals could also maintain their response to one stimulus while losing their response to the other (e.g. Figure 5a, middle). Either or both scenarios could lead to the increase in neurons that are selective for stimulus direction. To investigate which changes in individual tufts underlie population-wide improvements in stimulus selectivity, we longitudinally tracked the same set of tufts across all sessions and compared their selectivity in pre- and post-conditioning sessions for both conditioned and repeated exposure mice.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig5-v1.jpg)
+
+**Figure 5.:** (a) Three example tufts that were longitudinally tracked across learning. Top row: An initially unresponsive tuft develops a robust response to the CS+ but not the CS- after learning. Middle row: A responsive but unselective tuft loses its robust CS+ response and becomes selective for the CS-. Bottom row: A CS- selective neuron becomes unresponsive to both stimuli. (b) Tufts that were unresponsive during the first session were longitudinally tracked to the last session. Plotted is the mean proportion of selective and unselective neurons across all animals in the conditioned (black bars) and repeated exposure (grey bars) groups. (c,d) Same analysis as in panel b for initially selective (c) and unselective (d) tufts. Two-sample t-test was used for comparisons between conditioned and repeated exposure groups. Paired t-test was used for comparisons within a group. * p<0.05. (e) Total tuft counts from first to last session within the three response categories for either conditioned (left) or repeated exposure (right) groups. (f) SI of responsive tufts on the last session that were initially unresponsive during the first session. Conditioned tufts have enhanced selectivity compared to repeated exposure. (g) Tufts that were selective on the last session are more selective if conditioned (black) rather than undergoing repeated exposure (grey). (h) Tufts that responded on both pre- and post-sessions tend to have higher selectivity if conditioned rather than undergoing repeated exposure. (i) SI of responsive tufts on the first session that later became unresponsive during the last session.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The number of calcium events per minute was quantified for all tufts during each conditioning session. Data from each group was pooled across all sessions.
 
 First, we categorized tufts that were unresponsive to either stimulus on the first imaging session, which accounted for the large majority of tufts (Figure 5e; conditioned: 458/603; repeated exposure: 334/457), and compared their response to the CS+ and CS- on the last session to determine if they became selective (Figure 5b, see Methods). Stimulus-unresponsive tufts, while on average less active than responsive ones (median calcium events per minute: 2.65 vs 3.66 for stimulus-unresponsive and responsive tufts, respectively; p<10–40, Wilcoxon rank sum test; Figure 5—figure supplement 1), were not silent, with many undergoing tuft-wide calcium influx several times per minute. Silent tufts that are never active during the session may not have been detected in our imaging, but we were able to detect tufts that discharged as few as 3 voltage-gated calcium spikes over a 30-min behavioral session. Interestingly, in both the conditioned and repeated exposure mice, approximately 40% of initially unresponsive tufts developed a response to at least one stimulus by the last session, becoming either selective or unselective (Figure 5b). However, in conditioned animals, the proportion of initially unresponsive tufts that became selective was significantly larger than in repeated exposure mice (Figure 5b; p=0.04, 2-sample t-test comparing mice). Furthermore, while the proportion of selective and unselective tufts in this category was similar for conditioned animals, unselective tufts were more common in repeated exposure mice (Figure 5b; p=0.03, paired t-test).
 
@@ -86,7 +130,7 @@ The degree of selectivity of tufts that eventually became unresponsive on the la
 
 In summary, our longitudinal analyses revealed that reinforcement learning biases initially unresponsive tufts toward becoming selective and enhances the selectivity of tufts that are initially responsive.
 
-## Neither movement nor behavioral choice account for enhanced selectivity
+### Neither movement nor behavioral choice account for enhanced selectivity
 
 Several plausible factors could underlie the changes in selectivity we observed across learning. For instance, movements like whisking are correlated with layer 5 somatic action potentials (Derdikman et al., 2006; de Kock and Sakmann, 2009; Rodgers et al., 2021) and might have impacted calcium activity in the apical tuft. To investigate whether whisking could account for the changes in tuft selectivity, we imaged the whiskers with a high-speed camera and computed whisking amplitude (see Methods) while mice underwent conditioning and two-photon imaging (Figure 6). First, we considered whether animals changed their whisker movements in response to conditioned stimuli over the course of learning. We computed the peak of the mean stimulus-aligned whisking amplitude for the CS+ and CS- (Figure 1c, left; Figure 6b) for each session in five mice. Although conditioning alters licking behavior (Figure 1c and e), the magnitudes of whisker movements following both stimuli were stable across sessions (Figure 6b; CS+: p=0.44; CS-: p=0.45; linear regression). We also computed the standard deviation (SD) of stimulus-evoked whisker amplitude across trials for all sessions (Figure 6c). While the whisking amplitude became slightly more reliable (decreased SD) across sessions (p<10–4), the change in reliability across sessions was similar for CS+ and CS- (p=0.53). Therefore, whisking is similar on both trial types throughout learning.
 
@@ -100,9 +144,17 @@ To quantify the relationship of whisking and sensory stimuli to tuft calcium spi
 
 Finally, the possibility remains that other task-related signals relaying information about reward expectation and behavioral choice could impact apical tuft activity and drive increases in selectivity. To test this, we compared tuft responses to the CS- in false alarm trials (FA; mouse incorrectly licked for reward) and correct rejection trials (CR; mouse correctly withheld licks) to determine if their activity was modulated by behavioral choice. Notice that these two trial types have the same sensory input but involve different choices. (The corresponding analysis for CS+ trials is not technically possible for lack of sufficient Miss trials after the first conditioning day, an issue also observed in Poort et al., 2015. A future experiment in which the stimulus strengths are substantially reduced would drastically increase the error rates, enabling a comparison between Hit and Miss trials.) Tufts were classified as behaviorally modulated if the FA response was significantly different from the CR response, and were not behaviorally modulated if CR and FA responses were statistically indistinguishable (e.g. Figure 7a). Behaviorally modulated tufts accounted for only ~10% of the total tuft population in both early and late learning (50/395 in early; 35/406 in late learning).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig7-v1.jpg)
+
+**Figure 7.:** (a) Mean stimulus responses of four tufts during hit (red), CR (cyan), and FA (black) trials. Top row: Example tufts whose responses are not behaviorally modulated (CR is similar to FA). Bottom row: Example tufts with behaviorally modulated responses (CR and FA differ). (b) Selectivity index (SI) distribution changes from early (left) and late learning sessions (right) even when tufts with behaviorally modulated responses (CR≠FA) are excluded. (c) Median SI magnitude of tufts in each of six animals (from panel b) increases from early to late learning sessions.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/98349/elife-98349-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) ITI lick-bout-triggered averages of 232 tufts on the 5th conditioning day, when ITI licks were still common (grey traces - individual tufts, black inset - population average), exhibit little or no lick-related calcium influx. (b) R2 values for linear models predicting calcium from stimuli (y axis) are consistently greater than those predicting calcium from licking (x axis). Each circle represents one tuft out of 442 tufts on last-rewarded sessions. (c) Coefficients from a multivariate regression analysis with calcium as the response variable and the CS+, CS-, whisking, and licking as the predictors. CS+ and CS- coefficients are therefore disentangled from correlations with whisking and licking. Conditioning biases individual tufts (circles) to have larger CS+ or CS- coefficients. n=304, 324, and 322 tufts for First rewarded, Last rewarded, and Post conditioning, respectively. (d) Similar analysis to panel c but for repeated exposure group, with calcium as the response variable and the CS+, CS-, and whisking as the predictors. n=223, 208, and 218 tufts for Day 2, Final - 1, and Final session, respectively.
+
 To test whether these behaviorally modulated tufts contributed to increased selectivity during learning, we excluded them and compared selectivity of the remaining behaviorally-insensitive tufts. We found that selectivity increased significantly from early to late learning (Figure 7b and c; median |SI| of 345 tufts early versus 371 tufts late learning: 0.38 vs 0.47, p=0.02, Wilcoxon rank sum test), similar to our previous analysis of the entire population. Licking, like whisking, was a relatively poor predictor of tuft calcium influx (Figure 7—figure supplement 1a and b). Because some behaviorally modulated tufts may not have been statistically detectable, we used multivariate linear regression to disentangle stimulus responses from licking and whisking, which may have been confounded with choice. Median coefficients for licking and whisking were on average 3.3 times smaller than median stimulus coefficients for the first rewarded, last rewarded, and post sessions (all p<10–6, Wilcoxon rank sum test). Even after we factored out possible effects of movements, CS+ and CS- coefficients were enhanced by learning but not repeated exposure (Figure 7—figure supplement 1c and d), consistent with our other analyses. Together, these results demonstrate that enhanced selectivity during learning cannot be explained by non-sensory signals related to the animals’ behavior.
 
-## Enhanced selectivity in barrel cortex is long-lasting when mice exclusively use whiskers
+### Enhanced selectivity in barrel cortex is long-lasting when mice exclusively use whiskers
 
 Mice could conceivably exploit other sensory cues to learn and perform the task, such as auditory cues from the air nozzles or non-whisker tactile cues from air current eddies contacting the fur or skin. To determine which mice exclusively used their whiskers to distinguish the CS+ and CS-, we trimmed all whiskers after the post-conditioning session and assessed performance in five mice (Figure 8). Performance in each of the five mice decreased after whisker trimming, indicating that each used some whisker information. Three mice performed the task exclusively with their whiskers, falling to chance levels after the whisker trim (‘whiskers only’). Two other mice still performed the task above chance after the whisker trim, indicating that they were not exclusively using their whiskers and exploited information from multiple sensory streams (‘whiskers + other senses’).
 
@@ -122,7 +174,7 @@ Tuft spikes enhance plasticity of synaptic inputs that occur over behavioral (se
 
 An open question is whether enhanced stimulus representations in apical tufts are required for learning this task. One way to address this question would be to silence tuft activity during and after learning by optogenetically activating NDNF-positive interneurons in layer 1 (Abs et al., 2018). This approach is not ideal as NDNF interneurons also inhibit other cells such as layer 2/3 pyramidal cells, PV interneurons, Cohen-Kashi Malina et al., 2021 and possibly the axons of layer 5 pyramidal cells, which are known to densely innervate layer 1. Because this manipulation is not specific to layer 5 apicals, the results would be difficult to interpret. Focal illumination of inhibitory opsins in tufts has also been used to assess tuft function (Ranganathan et al., 2018), but balancing tuft against soma silencing remains challenging and complicates interpretation. Better tools for selective targeting of apicals would be extremely useful for addressing such issues.
 
-## Enhanced representation of behaviorally relevant stimuli
+### Enhanced representation of behaviorally relevant stimuli
 
 Enhancing the representation of relevant stimulus dimensions rather than a singularly important stimulus, such as a rewarded event, has multiple benefits for behavior. In our paradigm, both the CS+ and CS- are predictive of whether or not a reward will occur in the future. Explicitly encoding both stimuli could allow sensory cortical areas to directly elicit actions. In the context of this task, CS+ preferring tufts in barrel cortex may trigger anticipatory licking while CS- preferring tufts could suppress licking. L5 cells in sensory cortex via their output to striatum, pons, brain stem, and spinal cord would thereby be able to directly and rapidly drive action without further cortical processing, such as by frontal areas including motor cortex (Takahashi et al., 2020; Park et al., 2020). Such rapid sensory-motor transformations by primary sensory areas may be critical for natural time-constrained behavior.
 
@@ -136,7 +188,7 @@ Second, learning-related changes may manifest differently in layer 2/3, the usua
 
 Finally, it is possible that learning-related changes in sensory representations manifest differently between a somatosensory modality and a visual modality, the latter being the focus of previous studies. To our knowledge, we are the first to show changes of sensory representations in somatosensory cortex within a discrimination paradigm. Facial stimuli are generally more salient than arbitrary visual stimuli for any species, and mice are known to be highly responsive to their tactile sense more so than vision (Petty and Bruno, 2024). This strong salience of whisker-mediated touch may make it particularly advantageous to develop sensory representations of a larger variety of relevant tactile stimuli, in this case, both the CS+ and CS-.
 
-## Candidate plasticity mechanisms
+### Candidate plasticity mechanisms
 
 Enhanced selectivity could be due to changes in local synaptic connectivity, long-range inputs, or both. Learning may strengthen and weaken synapses onto barrel cortex neurons from ascending thalamocortical input or from neighboring cells. Such local plasticity could enhance CS+ or CS- responsiveness. Alternatively or additionally, other cortical regions encoding task context could via long-range inputs reconfigure barrel cortex to respond more strongly to these stimuli. The present results do not completely distinguish between these two scenarios because long-range inputs may still encode the context while the mouse is in the behavioral apparatus. However, we found that enhanced representations persist after mice are no longer engaged in the task and receiving rewards. This result suggests that enhanced representations may be a product of local plasticity in sensory cortex that alters receptive fields.
 
@@ -148,49 +200,101 @@ What determines whether a particular tuft eventually becomes selective for the C
 
 In addition to demonstrating increased tuft selectivity with learning, we replicated a surprising phenomenon in a previous instrumental behavior in which a population of apical tufts exhibit activity around the time of reward (Lacefield et al., 2019). This reward-related activity was observed in four out of the seven conditioned animals only during CS+ trials and was most prominent during intermediate conditioning sessions, when most animals were still performing at chance levels, and disappeared completely by the final conditioning session (Figure 2—figure supplement 1). Other than this transient effect, unconditioned stimuli did not appear to elicit calcium responses, consistent with our previous findings (Lacefield et al., 2019). The disappearance of this reward-related peak might be attributable to the reward becoming predictable in later stages of learning. In previous classical conditioning experiments, dopaminergic cells exhibit responses to rewards early in learning due to the novelty of an unexpected stimulus. These responses are lost after extended training, as animals learn the association between the CS and reward (Ljungberg et al., 1992; Pan et al., 2005). While dopaminergic terminals are sparse in primary sensory areas, they are not entirely absent, nor are dopaminergic receptors. Furthermore, the excitability of the apical tuft is sensitive to noradrenaline (Labarrera et al., 2018). Interestingly, noradrenergic neurons in the locus coeruleus exhibit a similar phenomenon to dopaminergic neurons, where responses shift from temporal alignment with the reward to a predictive conditioned stimulus after learning (Bouret and Sara, 2004). Such mechanisms could explain why reward-related activity is restricted to early-to-intermediate learning in our paradigm.
 
-## Global versus local dendritic spikes
+### Global versus local dendritic spikes
 
 Apical dendrites exhibit not only global spikes that elicit calcium influx across the entire tuft, which we exclusively analyzed here, but also local events known as NMDA spikes, which typically engage short (<30 μm) segments of individual dendritic branches (Larkum et al., 2009; Xu et al., 2012; Palmer et al., 2014). These local, NMDA receptor-dependent events can promote prolonged plasticity within individual dendritic branches in the absence of backpropagating actions potentials, a feature that is unique to the apical dendrites (Sandler et al., 2016). In motor cortex, branch-specific NMDA spikes are crucial for establishing the long-lasting plasticity necessary for learning (Cichon and Gan, 2015), and depolarization provided by multiple local NMDA spikes is thought to be essential for the generation of a global calcium spike triggered by distal synaptic inputs (Larkum et al., 2009). We focused this study on global tuft-wide calcium events, rather than local events. Local events are more difficult to unambiguously identify in planar imaging (Sheffield and Dombeck, 2015), and their existence in vivo is still an open question for L5 apicals in barrel cortex (Xu et al., 2012; Palmer et al., 2014). Nonetheless, they may play important roles in plasticity processes that eventually lead to the emergence of global tuft spike selectivity for stimuli. Volumetric microscopy studies, the feasibility of which we showed here, are needed to further investigate the existence of local events in such behaviors as well as examine possible relationships between local and global tuft events during reinforcement learning. However, it would be essential to verify that seemingly spatially overlapping local and global events derive from the same dendritic tree, which requires greater resolution than was practical for the present study.
 
 To analyze activity of individual tufts, we segmented these structures based on spatiotemporal covariance (Giovannucci et al., 2019). This method does not discount the possibility of errors where one tuft is split erroneously into two trees, or where two highly correlated tufts are merged. With this in mind, we used volumetric imaging SCAPE microscopy, which allowed us to visualize the apicals in three dimensions and unambiguously screen for such artifacts. The results from SCAPE are quantitatively similar to those from two-photon microscopy, and confirm that our observation of enhanced selectivity with learning is not an artifact of planar imaging.
 
-## Stability of learned tuft representations
+### Stability of learned tuft representations
 
 In contrast to previous studies of discrimination learning (Poort et al., 2015; Liu et al., 2020; Henschke et al., 2020), we included an unrewarded post-conditioning session to examine whether learning-related effects persisted through extinction. Our results show that post-conditioning selectivity of the apical population remains significantly higher than pre-conditioning, even after animals stop licking in response to the CS+ (Figure 8). Interestingly, the effects of learning are much more pronounced in animals that relied exclusively on their whiskers to perform the task. In animals that apparently used other sensory modalities, we observed a modest increase from the pre to last-rewarded session, which seemed to be largely absent by the post-conditioning session. Considering that these animals were additionally exploiting other sensory areas to perform, selectivity may have been more widely distributed and thus diluted in barrel cortex, diminishing the effect and its stability. How long selectivity persists in the neuronal population after conditioning and which factors influence stability are interesting open questions for future study.
 
-## Conclusion
+### Conclusion
 
 In summary, we have shown for the first time that reinforcement learning enhances representations along behaviorally relevant dimensions in apical tufts. Our results suggest that dendritic calcium spikes are an important cellular mechanism underlying the changes in sensory encoding that occur with learning, and provide an avenue for further investigation of cellular and circuit mechanisms underlying plasticity induced by perceptual experience and reinforcement. This cellular compartment may be key to understanding pathology in some cognitive, memory, and learning disorders.
 
 ## Methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rbp4-Cre</td>
+      <td>GENSAT</td>
+      <td>Rbp4-Cre_KL100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>AAV1-CAG-flex-GCaMP6f</td>
+      <td>UPenn Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks, Inc.</td>
+      <td>v2022b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CaImAn</td>
+      <td>https://github.com/flatironinstitute/CaImAn</td>
+      <td>v1.8.3</td>
+      <td>RRID:SCR_021533</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Arduino IDE</td>
+      <td>https://www.arduino.cc/</td>
+      <td>v1.8</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All experiments complied with the NIH Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee of Columbia University (protocol AC-AABP0555). Sixteen C57BL/6 mice ranging in age from 77 to 316 days old (mean of 123 days at the time of imaging) were used in these experiments. Six were male, and 10 female. Our results were observed in both male and female individuals, and no sex difference was detected.
 
-## Surgery
+### Surgery
 
 Animals were administered dexamethasone (1 mg/kg) via intramuscular injection 1–4 hr prior to surgery to reduce edema. Anesthesia was induced with 3% isoflurane in oxygen and maintained at 1%. Mice were head-fixed in a stereotax, and a subcutaneous injection of bupivacaine (0.5%, 0.1 mL) was administered under the scalp. Buprenorphine (0.05 mg/kg) was injected subcutaneously on the back. The scalp was cut, and the skull was covered with a thin layer of Vetbond. A circular craniotomy (3 mm diameter) centered at 1.5 mm posterior and 3.5 mm lateral to bregma was made using a dental drill. The dura was kept moist using artificial cerebrospinal fluid.
 
 For both two-photon and SCAPE microscopy, Rbp4-Cre_KL100 mice were injected with 100 nL of virus (initial titer ~2 × 1013 cfu/mL, diluted 1:4 in artificial cerebrospinal fluid) encoding GCaMP6f in a Cre recombinase-specific manner (AAV1-CAG-flex-GCaMP6f, UPenn Vector Core). The virus was injected in layer 5B of the barrel cortex (1.0 mm deep to the pia) using a pulled pipette (20–30 μm ID) fastened on a Nanoject III, which was mounted on a manipulator angled at ~30° from vertical. The virus was delivered via four injections of 100 nL each, spaced at least 400 μm apart. The depth was chosen to maximize labeling of thick-tufted pyramidal neurons. In pilot experiments, we found that placing injections 1.0 mm deep resulted primarily in thick-tufted labeling whereas at more superficial depths (e.g. 0.8 mm deep) we obtained mainly thin-tufted tufts, consistent with Oberlaender et al., 2012. The dura was then removed, and a thin cover glass was implanted and sealed using superglue. A custom metal head plate was implanted on the skull using dental cement. Twenty-four hours after surgery, carprofen (5 mg/kg) was administered subcutaneously. Imaging and behavioral training commenced 3 weeks after surgery. Animals were only excluded from the study if the cranial window quality was poor, which precluded imaging.
 
-## Behavior
+### Behavior
 
 Animals in both rewarded ‘conditioning’ and unrewarded ‘repeated exposure’ groups were water restricted for 2 days prior to starting imaging and habituated to head fixation for ~10 min on each of these 2 days. They were subsequently given ~1 mL of water per day for 9 days either by pairing water rewards with a specific stimulus (conditioning group), or in their cage following the imaging session (repeated exposure group). Mice were head restrained in a custom-made behavioral apparatus by positioning the body in a 3D-printed chamber and fastening the head plate to metal posts flanking the chamber. Air puff stimuli (10 psi measured before a control solenoid, 100ms) were delivered from two nozzles (cut P200 pipette tips) positioned toward the distal tips of the whiskers, in either the rostrocaudal or ventrodorsal direction. Nozzles were oriented to prevent air jets from stimulating other parts of the face. One of these directions (CS+) was paired with a water reward (10 μL), delivered through a lick port 0.5 s after the stimulus onset. The particular direction (rostrocaudal vs ventrodorsal) used as the CS+ was randomized and counterbalanced across mice. Approximately 180 stimuli were presented over the course of a 30 min imaging session (8–12 s intertrial interval). The probability of CS+ or CS- delivery was 50%. In preliminary experiments, we found that an auditory mask helped prevent mice from exploiting auditory cues to discriminate the two stimuli: a third air nozzle was positioned close to the mouse and was active throughout the session.
 
 During the first session (pre-conditioning), stimuli were delivered in the absence of reward to assess neural and behavioral responses in naïve animals. In the following 7–9 days, the CS+ was paired with reward. Licks for rewards were detected with a capacitance-based touch sensor (Sparkfun). A trial response was registered when one or more licks were elicited within a 0.5 s response window following the stimulus and before reward delivery. To determine whether behavioral performance was above chance, we computed 95% confidence intervals using the ‘binofit’ function in MATLAB. During the final session (post-conditioning), stimuli were delivered in the absence of reward. Animals in the unrewarded group received the same two stimuli across 9 days without reward pairing. Behavioral experiments were performed with the Arduino-based OpenMaze open-source behavioral system, whose designs are fully described at https://www.openmaze.org/. Whisking was monitored at 125 fps with a camera (Sony PS3eye) and automatically tracked using published software (Clack et al., 2012).
 
-## Intrinsic signal optical imaging and two-photon imaging
+### Intrinsic signal optical imaging and two-photon imaging
 
 Intrinsic signal optical imaging and two-photon imaging were performed on a Sutter movable objective microscope. The locations of whisker barrels in S1 were identified using intrinsic signal optical imaging. Single whiskers in isoflurane-anesthetized mice were stimulated at 5 Hz using a piezoelectric bimorph while recording the reflectance of 700 nm long-pass incandescent light with a Rolera CCD camera (QImaging) through a low-magnification objective (Zeiss 5X/0.16NA). Movies were collected using software custom-written in Labview (National Instruments). Regions of reflectance change were referenced to an image acquired under green illumination.
 
 Two-photon imaging was conducted on the same microscope under the control of the ScanImage software package (V. Iyer, Janelia Farms). All calcium imaging data was collected by two-photon microscopy except for those in Figure 4. Scanning during awake conditions was performed at 30 fps using a Chameleon Ultra II laser (Coherent) tuned to 920 nm, precompensated for group velocity dispersion and focused through a 20x/1.0NA water immersion lens (Zeiss). Aquasonic clear ultrasound gel was used for the immersion medium. Emitted light was collected with an HQ535/50 filter (Chroma) and GaAsP photomultiplier tubes (Hamamatsu Photonics). Apical tufts in layer 1 were imaged at depths of 40–80 μm from the pial surface (1.5 x digital zoom in ScanImage which yielded a 433x433 μm field of view, 512x512 pixels).
 
-## SCAPE imaging
+### SCAPE imaging
 
 High-speed volumetric imaging was performed using a custom SCAPE microscope as previously described, including for dendritic tufts (Bouchard et al., 2015; Hillman et al., 2018; Voleti et al., 2019). Briefly, the cortex was illuminated with an oblique light sheet through a Olympus XLUMPLFLN 20XW 1.0 NA water immersion objective with a 2 mm working distance. Fluorescence excited by this sheet (extending in the y-z′ direction) was collected by the same objective lens. A galvanometer mirror in the system was positioned to both cause the oblique light sheet to scan from side to side across the sample (in the x direction) but also to de-scan returning fluorescence light. This optical path results in an intermediate, de-scanned oblique image plane that is stationary yet always co-aligned with the plane in the sample that is being illuminated by the scanning light sheet. Image rotation optics and a fast sCMOS camera (Andor Zyla 4.2+) were then focused to capture these y-z′ images (750x200 pixels) at >1000 frames per second as the sheet was repeatedly scanned across the cortex in the x direction. All other system parts, including the objective and sample stage, were stationary during high-speed 3D image acquisition. Data were reformed into a 3D volume by stacking successive y-z′ planes according to the scanning mirror’s x position and de-skewing to correct for the oblique sheet angle. This rotation of the image volume is responsible for its rectangular appearance despite the camera’s square frames. The resulting volumes were large enough to encompass many GCaMP6f-labeled tufts in barrel cortex.
 
 In this study, the stationary objective lens in SCAPE was configured on a manual rotation mount and set to 20°–30° away from the standard upright configuration, so the optical axis was perpendicular to the cranial window to achieve optimal performance without tilting the head of the animal. A 488 nm laser (Coherent OBIS) was used for excitation (<10 mW at the sample) with a 500 nm long-pass filter in the emission path. To achieve optimal spatiotemporal resolution and volume rate, the sample was imaged with an x-direction scanning step of 3 μm over a 300×1050 × 234 μm field of view (x-y-z, 3.0×1.40 × 1.17 μm per voxel, 100x750 x 200 voxels) at 10 volumes per second (VPS). Our imaging involves no special practical considerations or limitations of field of view or resolution, beyond the usual imaging goal of maximizing FOV while maintaining sufficient resolution to discern structures of interest (dendrites).
 
-## Analysis
+### Analysis
 
 Two-photon movies were motion corrected using the NormCorre package Pnevmatikakis and Giovannucci, 2017 in MATLAB or during segmentation using CaImAn. Spatial and temporal components for individual tufts imaged by two-photon and SCAPE were segmented using CaImAn v1.8.3, which employs large-scale sparse non-negative matrix factorization (Giovannucci et al., 2019; Pnevmatikakis et al., 2016). CaImAn inherently corrects for background signal. All further analyses used custom-written routines implemented in MATLAB. Spatial components with tuft structural characteristics were identified and analyzed, while neuropil components were discarded.
 

@@ -36,51 +36,119 @@ Here, we show that Hox5 transcription factors are required for robust and effici
 
 ## Results
 
-## Hox5 genes are required for proper respiratory behavior
+### Hox5 genes are required for proper respiratory behavior
 
 We previously showed that two Hox5 paralogs, Hoxa5 and Hoxc5 (collectively referred to as Hox5 genes) are required for the early development and survival of phrenic MNs and the innervation of the diaphragm (Landry-Truchon et al., 2017; Philippidou et al., 2012). Mice lacking both Hox5 genes in MNs (Hoxa5 flox/flox; Hoxc5-/-; Olig2::Cre, referred to as Hox5MNΔ mice) die at birth due to respiratory defects (Philippidou et al., 2012). While the neonatal lethality of Hox5MNΔ mice underscores the critical requirement for Hox5 genes in respiration, it had prevented us from examining the role of Hox5 proteins in respiratory behaviors and functional connectivity at postnatal stages. To examine the role of Hox5 genes in breathing behaviors and phrenic MN output over time we utilized an alternative mouse model. We generated mice in which a single Hox5 gene, Hoxa5 was selectively deleted from MNs by crossing a conditional Hoxa5 allele (Tabariès et al., 2007) to Olig2::Cre mice (Hoxa5MN∆) (Dessaud et al., 2007). Hoxa5MNΔ mice were viable, and we therefore introduced the Hoxa5MNΔ mutant allele into a Hoxc5 heterozygous background. Mice lacking Hoxa5 specifically from MNs and a single copy of Hoxc5 (Hoxa5 flox/flox; Hoxc5+/-; Olig2::Cre, referred to as Hoxa5MNΔ; c5het mice) exhibit a 60% reduction in total diaphragm motor innervation (Figure 1—figure supplement 1a–b). Importantly, around 50% of Hoxa5MNΔ; c5het mice survive to adulthood, enabling us to examine how MN-specific Hox5 loss impacts respiration and phrenic MN output.
 
 In order to assess breathing in Hoxa5MNΔ; c5het mice, we utilized unrestrained whole body flow-through plethysmography (Figure 1a). We found that adult (P80) Hoxa5MNΔ; c5het mice show a 40% decrease in tidal volume (the amount of air inhaled during a normal breath), accompanied by a compensatory increase in respiratory frequency (Figure 1b–c, Figure 1—figure supplement 2a–b). The increased frequency allows Hoxa5MNΔ; c5het mice to breathe in an equal volume of air per minute (minute ventilation) as control animals (Figure 1c, Figure 1—figure supplement 2c), albeit at the cost of expending more energy. We next submitted mice to a hypercapnic challenge (5% CO2, Figure 1d). In control (Hoxa5 flox/flox; Hoxc5+/-) mice, exposure to 5% CO2 results in an increase in tidal volume and breathing frequency. Hoxa5MNΔ; c5het mice only slightly increase their tidal volume during hypercapnia, resulting in a striking 30% decrease in ventilation and a diminished capacity to respond to respiratory challenges (Figure 1e–f, Figure 1—figure supplement 2d–f).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig1-v2.jpg)
+
+**Figure 1.:** (a) Experimental setup for unrestrained whole body plethysmography experiments. (b) Example respiratory traces in room air from adult (P80) control and Hoxa5MNΔ; c5het mice. (c) Hoxa5MNΔ; c5het mice breathe shallow (decreased tidal volume), fast (increased frequency) breaths in room air, but maintain overall ventilation (n = 6 for each genotype). (d) Time course for 5% CO2 exposure experiments. (e) Example respiratory traces in 5% CO2 from adult (P80) control and Hoxa5MNΔ; c5het mice. (f) Control mice increase the depth and frequency of breathing in response to 5% CO2, but in Hoxa5MNΔ; c5het mice the tidal volume increase is blunted and overall ventilation is decreased. (g–i) Temporal analysis of neonatal respiration. Tidal volume in room air is decreased at all neonatal ages (P3–P17) in Hoxa5MNΔ; c5het mice, but the compensatory increase in frequency does not develop until approximately P16. Therefore, Hoxa5MNΔ; c5het mice have severe respiratory insufficiency even in room air for the first two weeks of life (n = 4 for each genotype at P9-11, all other timepoints n = 6). See also Figure 1—figure supplements 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Hoxa5MNΔ; c5het mice display a 60% loss of diaphragm motor innervation at e18.5 but survive to adulthood. Motor axons are labelled in green (Hb9::GFP) and neuromuscular junctions in red (α-bungarotoxin). Phrenic projections were traced and quantified in ImageJ. (b) Quantification of diaphragm innervation in Hoxa5MNΔ; c5het mice. Scale bar = 250 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a-c) Raw plethysmography data in room air show decreased tidal volume and a compensatory increase in frequency in adult (P80) male and female Hoxa5MNΔ; c5het mice. (d–f) Raw plethysmography data during a 5% CO2 hypercapnic challenge show a blunted increase in tidal volume in adult (P80) male and female Hoxa5MNΔ; c5het mice, resulting in an overall decrease in ventilation.
+
 Notably, the ability to overcome hypercapnic and hypoxic conditions is particularly important during perinatal stages, as a compromised response to respiratory insults could increase susceptibility to sudden infant death syndrome (SIDS) (Kinney et al., 2009). We recorded breathing in unrestrained control and Hoxa5MNΔ; c5het mice at different ages to temporally characterize respiratory dysfunction in the absence of Hox5 genes. We found that tidal volume is consistently decreased in Hoxa5MNΔ; c5het pups as early as P3 (Figure 1g); however, the compensatory increase in breathing frequency does not develop until approximately 2 weeks after birth (Figure 1h). Thus, perinatal Hoxa5MNΔ; c5het mice exhibit a severe (50–60%) reduction in ventilation, even at rest in normal air, for the first two weeks of life (Figure 1i). Consistent with this, we find that approximately 50% of neonatal Hoxa5MNΔ; c5het mice perish within a week after birth. Altogether, our plethysmography results demonstrate that Hox5 genes are required for the emergence of proper respiratory behavior. Importantly, we have identified a critical temporal window during which Hoxa5MNΔ; c5het mice are especially vulnerable to respiratory dysfunction, similar to perinatal susceptibility to SIDS.
 
-## Hox5 genes dictate phrenic MN clustering and dendritic topography
+### Hox5 genes dictate phrenic MN clustering and dendritic topography
 
 What are the molecular underpinnings of respiratory dysfunction in Hoxa5MNΔ; c5het mice? While the reduction in diaphragm innervation likely contributes to tidal volume changes, we wanted to identify additional fundamental properties of phrenic MNs that could contribute to respiratory circuit formation and function that are altered in Hoxa5MNΔ; c5het mice. Phrenic MNs form a tightly-packed neuronal cluster at cervical levels of the spinal cord (C3-C5). This clustering is critical for the proper development of the respiratory system because it facilitates recruitment of motor units through electrical coupling in the embryo to compensate for weak inspiratory drive (Greer and Funk, 2005). In addition, the stereotypical orientation of phrenic dendrites likely enables their targeting by premotor respiratory neurons. However, the mechanisms that control PMC clustering and dendritic topography have not been established.
 
 To examine whether phrenic MN organization and dendritic orientation are altered in Hoxa5MNΔ; c5het mice, we injected the lipophilic dye diI into phrenic nerves at e18.5. diI diffuses along the phrenic nerve to label both PMC cell bodies in the spinal cord and axons innervating the diaphragm. To ensure that we labeled the full extent of the PMC we only analyzed mice in which all diaphragm projections were labeled (Figure 2—figure supplement 1a–b). In control mice, retrogradely-labelled PMC neurons are found in close proximity to each other, with no distance in between, however in Hoxa5MNΔ; c5het mice phrenic MNs lose their stereotypical clustering organization (Figure 2a, Figure 2—figure supplement 1c–d). To quantitate the impact of Hox5 loss on PMC organization, we established a clustering index, representing the percentage of PMC neurons in contact with each other (1 = 100%, see Materials and methods). We found a significant reduction in the clustering index of Hoxa5MNΔ; c5het mice, indicating that Hox5 genes control phrenic MN clustering (Figure 2b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig2-v2.jpg)
+
+**Figure 2.:** diI injections into the phrenic nerve show loss of PMC clustering (a–b) and changes in dendritic orientation (c–e) in Hoxa5MNΔ; c5het mice at e18.5. (c) A numbered grid was superimposed on PMC neurons to measure changes in dendritic orientation (see also Materials and methods). (d–e) Quantification of dendritic orientation. (d) Loss of dorsolateral dendrites (squares 5+6, yellow in c) in Hoxa5MNΔ; c5het mice. (e) Increase in the percentage of dendrites projecting towards the midline (square 8, pink in c) in Hoxa5MNΔ; c5het mice. (f–h) Phrenic dendrites in Hoxa5MNΔ; c5het mice cross the midline more frequently (g) and for longer distances (h) than in control mice. Scale bar = 50 μm in a, 100 μm in c, f. See also Figure 2—figure supplements 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a-d) diI injections into the phrenic nerve label both phrenic projections at the diaphragm (a–b) and cell bodies in the cervical spinal cord (c–d). (c–d) Retrogradely-labeled phrenic MNs in Hoxa5MNΔ; c5het mice appear disorganized and lose their clustering at e18.5. Although there is significant phrenic MN loss, it is distributed equally along rostrocaudal levels of the spinal cord. All labeled phrenic MNs from a single control (c) and Hoxa5MNΔ; c5het (d) embryo are shown in a rostral to caudal direction. (e) Quantification of diI-labeled phrenic MNs. (f) Phrenic dendrites rarely cross the midline in control animals. (g) A numbered grid was superimposed on PMC neurons to measure changes in dendritic orientation (see also Materials and methods). (h) Quantification of dendritic orientation. There are no significant changes in the percentage of dendrites projecting in the ventral (squares 1–3), lateral (square 4) or dorsomedial (square 7) directions. Scale bar = 500 μm in b, 50 μm in d, f, 100 μm in g.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a-b) Hoxa5MNΔ; c5het mice display 50% loss of phrenic MNs at e12.5. Phrenic MNs (yellow) express both the MN-specific transcription factor Isl1/2 (red) and the PMC-specific marker, Scip (green). (c–d) Decrease in PMC clustering in Hoxa5MNΔ; c5het mice at e12.5. Clustering index represents the density of PMC neurons found within a certain area (1000 μm2, see experimental procedures). (e–f) Deletion of the pro-apoptotic gene Bax, both in control and in Hox5MNΔ (Hox5MNΔ; Bax-/-) mice, equalizes phrenic MN numbers, enabling us to analyze the role of Hox5 genes in PMC organization independently of their role in PMC survival. (g–h) Decrease in PMC clustering in Hox5MNΔ; Bax-/- mice at e12.5. Scale bar = 50 μm.
+
 To verify that the MN disorganization observed upon Hox5 deletion was not due to the progressive loss of PMC neurons by e18.5 (Figure 2—figure supplement 1e), we assessed PMC clustering at earlier developmental time points. We observed a similar disorganization of phrenic MNs, identified by the expression of the MN-specific transcription factor Isl1/2 and the phrenic-specific transcription factor Scip, in Hoxa5MNΔ; c5het mice at e12.5 (Figure 2—figure supplement 2a–d). We also introduced the Hox5MNΔ allele (Hoxa5 flox/flox; Hoxc5-/-; Olig2::Cre) into a Bax mutant background to prevent programmed cell death (Knudson et al., 1995; Philippidou et al., 2012). Since Bax deletion circumvents phrenic MN loss in the absence of Hox5 genes, we performed this analysis in Hox5MNΔ mice to define the impact of complete Hox5 loss of function on PMC organization. Deletion of Bax, both in control and in Hox5MNΔ (Hox5MNΔ; Bax-/-) mice, dramatically increased the number of PMC neurons. However, phrenic MNs still appeared to lose their tight clustering in Hox5MNΔ; Bax-/- mice, demonstrating that Hox5 genes drive a program that controls PMC organization and clustering independently of phrenic MN survival (Figure 2—figure supplement 2e–h).
 
 In addition to the loss of phrenic MN clustering, we also observed a remarkable redistribution of phrenic MN dendrites in Hoxa5MNΔ; c5het mice after diI injection. While in control mice phrenic dendrites project in two major directions, dorsolateral and ventromedial, in Hoxa5MNΔ; c5het mice the most dorsal dendritic projections are lost and dendrites appear defasciculated (Figure 2c). To quantitate the change in dendritic orientation, we established a grid separating the area proximal to phrenic cell bodies in eight squares and measured the percentage of labelled dendrites in each square (Figure 2c–e, Figure 2—figure supplement 1g–h, see Materials and methods). We found a significant decrease in dorsolateral dendrites in Hoxa5MNΔ; c5het mice, as well as an increase in the number of dendrites approaching the midline (Figure 2c–e). While in control mice phrenic dendrites rarely cross the midline, in Hoxa5MNΔ; c5het mice we find that a number of dendrites traverse the midline and continue to grow contralaterally, despite dendrites covering less area overall (Figure 2f–h, Figure 2—figure supplement 1f). Our data indicate that Hox5 genes control phrenic MN dendritic topography, which likely contributes to their presynaptic targeting.
 
-## A Hox5-dependent PMC-specific cell adhesion molecular code
+### A Hox5-dependent PMC-specific cell adhesion molecular code
 
 In order to understand how Hox5 transcription factors regulate phrenic MN topography and clustering, we analyzed the transcriptome after Hox5 loss using RNA sequencing (RNA-seq), taking advantage of Hb9::GFP mice, which selectively express GFP in MNs (Wichterle et al., 2002). Using fluorescence activated cell sorting (FACS), we isolated RNA from GFP-positive MNs from the cervical spinal cord (C3-C6, which encompasses the entire PMC) of control (Bax-/-) and Hox5MNΔ; Bax-/- mice at e12.5 (Figure 3a). We performed RNA-seq on isolated GFP+ MNs in Bax-/- and Hox5MNΔ; Bax-/- mice to identify gene expression changes independently of phrenic MN cell death that begins at e12.5. Since Bax deletion circumvents phrenic MN loss in the absence of Hox5 genes, we performed this analysis in Hox5MNΔ mice to maximize gene expression changes. Our analysis identified 837 genes that were differentially expressed between Bax-/- and Hox5MNΔ; Bax-/- mice (p<0.05, Figure 3b–c). Gene ontology analysis revealed that the majority of downregulated genes were implicated in processes relevant to nervous system development, including neuron projections and dendritic and synapse development (Figure 3d).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig3-v2.jpg)
+
+**Figure 3.:** (a) Experimental design for RNA-seq experiments. MNs were FAC-sorted from control and Hox5MNΔ; Bax-/- mice in an Hb9::GFP background at e12.5. (b–c) Volcano plot (b) and heat map (c) showing differential gene expression between control and Hox5MNΔ; Bax-/- mice. (d) Gene ontology analysis reveals a number of genes involved in nervous system development, including cell adhesion molecules, are downregulated in Hox5MNΔ; Bax-/- mice. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cell adhesion molecules (CAMs) downregulated in the absence of Hox5 genes, as identified by RNA-seq. Highlighted CAMs were validated to be PMC-specific and regulated by Hox5 proteins by in situ hybridization.
+
 Since Hox5 genes control PMC clustering and dendritic orientation, we reasoned that cell adhesion molecules (CAMs) might be good candidate Hox5 downstream effectors. Therefore, we performed in situ hybridization to validate whether CAMs identified in our RNA-seq (Figure 3—figure supplement 1) showed Hox5-dependent PMC-specific expression. We found that ALCAM, Edil3, cdh9, Ptprt, Lsamp and Negr1 were highly and specifically expressed in the PMC at e12.5 (Figure 4a). A subset of these CAMs were previously established as phrenic-specific markers (ALCAM, Edil3, cdh9 and Negr1), while our analysis also identified novel PMC genes (Ptprt and Lsamp) (Machado et al., 2014). We further found that these phrenic-specific CAMs require Hox5 proteins for their expression, as they were downregulated in Hox5MNΔ; Bax-/- mice (Figure 4a). This downregulation was further recapitulated in both Hoxa5MNΔ; c5het mice and Hoxa5MNΔ; c5het; Bax-/- mice (Figure 4—figure supplement 1a), indicating that a single copy of Hoxc5 is insufficient to induce PMC-specific CAM expression. Our results suggest that Hox5 proteins regulate PMC clustering and position through controlling the expression of a network of downstream cell adhesion molecules.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig4-v2.jpg)
+
+**Figure 4.:** (a) Validation of Hox5-regulated cell adhesion molecules by in situ hybridization at e12.5. (b) Cadherin expression in the PMC at e13.5. Fluorescence in situ hybridization for the indicated cadherin (red) was combined with antibody staining for the phrenic-specific transcription factor Scip (green). (c) Comprehensive analysis of cadherin expression in the cervical/brachial spinal cord at e13.5. Type I cadherins are indicated in red, type II in black and atypical cadherins in green. PMC neurons can be defined by the combinatorial expression of cadherin 9 and 10 that are restricted to the PMC at cervical levels and cadherin 2, 6, 11 and 22 that are broadly expressed in MNs. Scale bar = 50 μm. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Validation of Hox5-regulated cell adhesion molecules by in situ hybridization in e12.5 Hoxa5MNΔ; c5het mice. Hoxa5MNΔ; c5het; Bax-/- mice were used to confirm downregulation was not due to a loss of phrenic MNs. (b) Cadherin expression in the PMC (dotted circle) at e13.5 by in situ hybridization. (c) Examples of cadherins expressed in MNs, but not PMC, at e13.5. (d) Quantification of the percentage of phrenic MNs that express PMC-enriched cadherins, as determined by fluorescence in situ hybridization combined with Scip immunofluorescence. Scale bar = 50 μm.
 
 Based on our RNA-seq analysis and validation, we identified cdh9 as the PMC-specific CAM that was most downregulated after Hox5 deletion (Figure 3—figure supplement 1). In the spinal cord, cadherin function is required for the segregation and clustering of limb-innervating MNs into nuclear structures called pools, however the role of cadherins in respiratory motor neurons has not been examined (Price et al., 2002). We asked whether cadherins might play a role in PMC organization. First, we wanted to define the full repertoire of cadherin expression in the PMC. We performed in situ hybridization for all type I and type II cadherins and found that cdh2, 6, 9, 10, 11 and 22 were expressed in the PMC at e13.5, while the rest of the family members were either expressed in other MN subtypes or not found in the spinal cord (Figure 4—figure supplement 1b–c). To further quantify cadherin expression in phrenic MNs, we performed fluorescence in situ hybridization for PMC-enriched cadherins combined with immunofluorescence for the phrenic marker Scip. We found that all PMC cadherins were uniformly expressed in the majority of phrenic MNs (>90%) at e13.5 (Figure 4b–c, Figure 4—figure supplement 1d). At cervical levels of the spinal cord, cdh9 and 10 expression appears to be restricted to phrenic MNs, while cdh2, 6, 11 and 22 are broadly expressed in all MN populations (Figure 4b–c). Our data establish a comprehensive combinatorial cadherin code that uniquely defines PMC neurons.
 
-## Cadherins establish PMC organization and dendritic orientation
+### Cadherins establish PMC organization and dendritic orientation
 
 The highly specific PMC cadherin expression pattern suggests that cadherins could have important functions in phrenic MNs. In order to assess the role of classical cadherins in PMC development, we eliminated their function by inactivating β- and γ-catenin specifically in MNs using an Olig2::cre promoter (β-catenin flox/flox;γ-catenin flox/-;Olig2::cre, referred to as βγ-catMNΔ mice) (Figure 5a). β- and γ-catenin are obligate intracellular factors required for cadherin-mediated cell adhesive function and are necessary for the organization of limb-innervating motor pools (Demireva et al., 2011). The strategy of inactivating β/γ-catenin in MNs circumvents potential redundancy that can arise through the expression of multiple cadherins in the PMC and allows us to establish a cadherin requirement in PMC development before dissecting individual cadherin function.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig5-v2.jpg)
+
+**Figure 5.:** (a) Inactivation of β- and γ-catenin in MNs as a strategy to investigate the role of cadherins in PMC organization. (b–c) PMC disorganization and loss of clustering in βγ-catMNΔ mice at e13.5. (d–e) Loss of dorsolateral dendrites in βγ-catMNΔ mice at e14.5. Images in b and d show the PMC of the same embryo at different rostrocaudal levels, in a rostral to caudal order. Scale bar = 50 μm. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Inactivation of β- and γ-catenin alone or in combination does not impair diaphragm innervation. (b) Reduction in phrenic MN numbers in βγ-catMN∆ mice, but not β-catMN∆ or γ-catMN∆ mice, at e13.5. (c) Normal PMC clustering in β-catMN∆ and γ-catMN∆ mice at e13.5. (d) Defects in migration of a subset of PMC neurons in βγ-catMN∆ mice at e13.5. Arrows point to Scip+ MNs stuck near the midline. (e) Normal dendritic orientation in β-catMN∆ and γ-catMN∆ mice at e14.5. Scale bar = 200 μm in a, 50 μm in c-e.
 
 Single β- or γ-catenin mutants exhibited normal phrenic MN numbers, cell body position and clustering (Figure 5—figure supplement 1b–c), indicating that disruption of Wnt signaling through β-catenin inactivation does not affect PMC topography. Joint inactivation of β- and γ-catenin, however, and disruption of cadherin signaling, led to a marked disorganization and loss of phrenic MN clustering (Figure 5b–c). We find that the PMC clustering index is significantly reduced in βγ-catMNΔ mice at e13.5 (Figure 5c). We also observed a ~30% reduction in the number of Scip+ MNs that settle in the ventral spinal cord in βγ-catMNΔ mice (Figure 5—figure supplement 1b), partly due to the failure of a subset of PMC neurons to migrate away from the midline (Figure 5—figure supplement 1d).
 
 Next, we examined whether cadherins also play a role in PMC dendritic orientation. Since βγ-catMNΔ mice die around e14.5-e15.5 (Demireva et al., 2011), we performed diI phrenic nerve injections at e14.5. Similar to Hoxa5MNΔ; c5het mice, we found a change in dendritic orientation and loss of the dorsal-most dendrites in βγ-catMNΔ mice (Figure 5d–e, Figure 5—figure supplement 1e). Unlike in Hoxa5MNΔ; c5het mice however, phrenic dendrites do not cross the midline in βγ-catMNΔ mice, suggesting that multiple pathways are acting downstream of Hox5 proteins to dictate precise phrenic dendritic orientation. Despite having a striking effect on PMC dendrites, joint inactivation of β- and γ-catenin did not affect phrenic axon growth or guidance, as diaphragm innervation appears normal (Figure 5—figure supplement 1a), indicating that Hox5 genes control phrenic axon and dendrite development through distinct molecular programs. Our results demonstrate that cadherins are required in phrenic MNs downstream of Hox5 genes for proper clustering and dendritic orientation.
 
-## Hox5 genes shape the pattern of phrenic motor neuron firing
+### Hox5 genes shape the pattern of phrenic motor neuron firing
 
 Our in vivo plethysmography data (Figure 1) provided an overview of how the entire respiratory system, including sensory feedback and possible compensatory changes due to hypoxia and hypercapnia, responds to Hox5 gene deletions. To determine whether the loss of Hox5-dependent transcriptional programs specifically affects the activity of phrenic MNs in response to circuitry intrinsic to the brainstem and spinal cord, we performed suction electrode phrenic nerve recordings from isolated brainstem-spinal cord preparations that exhibit fictive breathing (Figure 6a) (Cregg et al., 2017). We examined whether loss of Hox5 genes results in changes in phrenic MN activity at P4, a timepoint at which respiratory bursts are especially rhythmic and robust. Despite the changes in PMC clustering and dendritic topography, no significant changes in phrenic nerve burst frequency, rhythmicity, or duration were observed in Hoxa5MNΔ; c5het mice (Figure 6b–c), indicating that the brainstem circuits that drive inspiratory bursts, located within the pre-Bötzinger complex, are intact and able to transmit excitatory drive to phrenic MNs via the rVRG.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic of brainstem-spinal cord preparation, which displays fictive inspiration after removal of the pons. Suction electrode recordings were made from the phrenic nerve in the thoracic cavity at P4. (b–c) Respiratory burst frequency and burst duration are unaffected in Hoxa5MNΔ; c5het mice. While there is an increase in the variability of burst frequency in Hoxa5MNΔ; c5het mice, it is not statistically significant (n = 13 control, 12 Hoxa5MNΔ; c5het). (d) Phrenic firing pattern within inspiratory bursts is dramatically altered in Hoxa5MNΔ; c5het mice. In control mice, bursts are composed of periods of activity interspersed with silent periods with no unit activity (see horizontal lines). Populations of phrenic MNs fire in a pattern with a periodicity of about 30 Hz, where simultaneous firing of units generates large amplitude synchronous compound action potentials (see arrowheads). Phrenic MN firing lacks silent periods and is no longer constrained to certain frequencies in Hoxa5MNΔ; c5het mice. (e) The percentage of time during inspiratory bursts with no unit activity is decreased in Hoxa5MNΔ; c5het mice. (f) Power spectra showing that control mice have a prominent peak at 30 Hz with little activity above 75 Hz. Hoxa5MNΔ; c5het mice have a decreased 30 Hz peak and broadly increased activity above 75 Hz. For relative power definition, see Materials and methods. (g) Percentage of PMC unit firing above and below 75 Hz in control and Hoxa5MNΔ; c5het mice (n = 10 control, 8 Hoxa5MNΔ; c5het for e-g). See also Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) The altered pattern of PMC activity seen in Hoxa5MNΔ; c5het mice is recapitulated in Hoxa5MNΔ; c5het; Bax-/- mice at P4, indicating that the change in firing is not due to the reduction in phrenic MN number. (b) The percentage of time during inspiratory bursts with no unit activity is decreased in Hoxa5MNΔ; c5het; Bax-/- mice. (c) Power spectra showing a decrease in the prominent peaks seen in control mice in Hoxa5MNΔ; c5het; Bax-/- mice, with an associated broad increase in high frequency activity. (d) Percentage of PMC unit firing above and below 75 Hz in control Bax-/- and Hoxa5MNΔ; c5het; Bax-/- mice.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) The altered pattern of PMC activity observed in Hoxa5MNΔ; c5het mice at P4 is already present at P0, indicating that Hox5 genes act to establish patterns of phrenic MN firing prior to birth. (b) The percentage of time during inspiratory bursts with no unit activity is decreased in P0 Hoxa5MNΔ; c5het mice. (c) Power spectra showing a decrease in the prominent peaks seen in control mice in P0 Hoxa5MNΔ; c5het mice, with an associated broad increase in high frequency activity. (d) Percentage of PMC unit firing above and below 75 Hz in control and Hoxa5MNΔ; c5het mice at P0.
 
 Our results indicate that parameters that reflect inspiratory/expiratory balance on a long time scale, such as frequency and burst duration, are largely Hox5-independent. However, respiratory efficiency also relies on MN activity on a shorter time scale (i.e. 10–100 ms), and the precise temporal pattern of phrenic MN firing during inspiratory bursts is necessary for forceful diaphragm contractions (van Lunteren and Sankey, 2000). We found that MN bursts from control (Hoxa5 flox/flox; Hoxc5+/-) mice exhibited a highly reproducible firing pattern, with inspiratory bursts comprised of periods of activity interspersed with periods with no unit activity (Figure 6d). These silent periods progressively lengthen throughout the burst. In addition, periods of activity are dominated by large amplitude rhythmic oscillations that occur at approximately 30 Hz (Figure 6d), generated by the summations of multiple phrenic MN units firing in the same temporal pattern. Interestingly, these 30 Hz oscillations are matched to the fusion frequency of the diaphragm muscle, which is the frequency of firing at which the diaphragm is tonically and maximally contracted (Martin-Caraballo et al., 2000). Thus, patterned firing of phrenic MNs close to the fusion frequency promotes highly efficient diaphragm contraction.
 
 Remarkably, this pattern in inspiratory bursts is abolished in Hoxa5MNΔ; c5het mice (Figure 6d). Inspiratory bursts exhibit near continuous firing after loss of Hox5 genes, and thus the silent periods within the burst are largely lost (Figure 6e). In addition, the large amplitude rhythmic 30 Hz activity was eliminated, suggesting that the firing of phrenic MNs in Hoxa5MNΔ; c5het mice is no longer constrained to occur at specific times but is instead distributed throughout the burst, thus reducing the compound action potentials seen in control mice. Power spectrum analysis to resolve the recording into its component frequencies indicated a decrease in 30 Hz activity with a concomitant broad spectrum increase in higher frequencies (Figure 6f–g). Importantly, firing of phrenic MNs in an unpatterned manner that does not correlate with the diaphragm fusion frequency provides no additional contractile benefit, and in fact may increase the risk of phrenic MN adaptation, diaphragm muscle fatigue, and respiratory failure (Martin-Caraballo et al., 2000). We confirmed these changes were not due to a reduction in phrenic MN number, as blocking apoptosis by introducing the Bax deletion into Hoxa5MNΔ; c5het mice did not rescue the phrenic MN firing pattern (Figure 6—figure supplement 1a–d). In addition, bursts from Hoxa5MNΔ; c5het mice at the time of birth (P0) display a similar change in motor output (Figure 6—figure supplement 2a–d), suggesting that Hox5 genes function during embryonic development to shape phrenic MN activity at birth. Collectively, these data show that Hox5-dependent transcriptional programs are required for shaping the pattern of phrenic MN output and confining firing to frequency oscillations that promote efficient diaphragm contraction while preventing muscle failure.
 
-## Hox5-dependent PMC inhibition patterns phrenic MN activity
+### Hox5-dependent PMC inhibition patterns phrenic MN activity
 
 Phrenic MN firing pattern and synchronicity are thought to be generated in part by inhibitory synaptic transmission that modulates firing in response to excitatory drive (Bou-Flores and Berger, 2001; Marchenko and Rogers, 2009). We therefore sought to determine whether a loss of inhibitory synaptic transmission underlies the changes in firing present in Hoxa5MNΔ; c5het mice. We performed unilateral local microinjections of the GABAA receptor antagonist picrotoxin and the glycine receptor antagonist strychnine into the ventral spinal cord at C3-C6, the location of the PMC. Injection of picrotoxin and strychnine in control mice resulted in a firing pattern indistinguishable from that seen in Hoxa5MNΔ; c5het mice (Figure 7a). Disinhibited control phrenic MNs fired throughout the burst with reduced periods of no activity (Figure 7b). Power spectra analysis revealed a decrease in 30 Hz activity with a concomitant broad increase in high frequency activity (Figure 7c–d). Picrotoxin and strychnine injections into Hoxa5MNΔ; c5het mice had little effect on phrenic MN firing (Figure 7a).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig7-v2.jpg)
+
+**Figure 7.:** (a) Disinhibition via local microinjection of picrotoxin (GABAA receptor antagonist) and strychnine (glycine receptor antagonist) into the ventral spinal cord at C3-C6, the location of the PMC, converts the highly patterned firing of phrenic MNs in control mice to the more continuous firing observed in Hoxa5MNΔ; c5het mice. (b) The percentage of time during inspiratory bursts with no unit activity is equivalent in both control +PTX/Strych and Hoxa5MNΔ; c5het mice, and is considerably reduced from control mice (Figure 6). (c–d) Power spectra and the percentage of phrenic MN unit firing above and below 75 Hz are equivalent in control +PTX/Strych and Hoxa5MNΔ; c5het mice. For relative power definition, see Materials and methods (n = 5 control +PTX/Strych, 8 Hoxa5MNΔ; c5het for b-d). (e) The number of perisomatic inhibitory synapses on phrenic MNs, identified by the apposition of GAD67 and gephyrin, is reduced in P10 Hoxa5MNΔ; c5het mice. A single phrenic MN cell body is shown and representative inhibitory synapses are labelled with stars. Choline Acetyltransferase (ChAT) staining was used to identify the cell body membrane. (f) Examples of inhibitory perisomatic synapses showing apposition of GAD67 and gephyrin. (g) Quantification of the reduction in perisomatic inhibitory synapses in Hoxa5MNΔ; c5het mice (n = 86 phrenic MNs from 2 control mice, 78 phrenic MNs from 2 Hoxa5MNΔ; c5het mice). Scale bar = 10 μm in e, 0.25 μm in f. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52859/elife-52859-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** In control animals, phrenic MNs form a cluster in the cervical, ventral spinal cord and project their dendrites in a stereotypical ventromedial and dorsolateral orientation. This PMC topography is dictated by Hox5 transcription factors through the regulation of a PMC-specific molecular program, including a subset of cadherins. In the absence of Hox5 genes, both phrenic MN topography and molecular identity are eroded, resulting in the selective loss of PMC inhibitory inputs and changes in the pattern of phrenic motor output.
 
 The ability to convert the firing pattern of control mice into one similar to Hoxa5MNΔ; c5het mice by disinhibition locally on the PMC, and the fact that disinhibition had little effect on Hoxa5MNΔ; c5het phrenic MN firing, implies that Hoxa5MNΔ; c5het mice have lost the inhibitory synaptic transmission which is important for generating this pattern. We explored whether we could detect any anatomical alterations in inhibitory synaptic inputs by performing synaptic puncta quantitation. We counted perisomatic inhibitory synapses, as defined by apposition of the presynaptic marker GAD67 and the postsynaptic marker gephyrin, on phrenic MNs in control and Hoxa5MNΔ; c5het mice (Figure 7e–f). Hoxa5MNΔ; c5het mice exhibited a 20% reduction in inhibitory synapse number as compared to control (Figure 7g). Our results show that functional phrenic MN output is altered in the absence of Hox5 genes, likely due to loss of a subset of inhibitory inputs that act to pattern motor output. Together, our data support a model where Hox5-dependent transcriptional programs shape the pattern of respiratory output by establishing inhibitory inputs onto phrenic MNs.
 
@@ -88,7 +156,7 @@ The ability to convert the firing pattern of control mice into one similar to Ho
 
 Phrenic MNs are the final output of complex respiratory circuits and provide motor drive to the diaphragm, the major inspiratory muscle in mammals. Despite their critical function, the molecular mechanisms that control their selective targeting by premotor populations and shape their output are largely unknown. In this study, we find that Hox5 transcription factors control phrenic MN topography by establishing a PMC-specific cadherin code. MN-specific Hox5 deletion impacts the formation of inhibitory inputs onto PMC neurons, alters phrenic MN output, and leads to respiratory dysfunction throughout life. We discuss these findings in the context of respiratory circuit assembly and breathing behaviors.
 
-## Hox5 genes control PMC clustering and topography through a phrenic-specific cell adhesion code
+### Hox5 genes control PMC clustering and topography through a phrenic-specific cell adhesion code
 
 The establishment of clustered neuronal nuclei is a conserved and prominent organizational feature of the CNS and is thought to be critical for neural circuit assembly (Jessell et al., 2011). Phrenic MN clustering serves an additional function. The generation of fetal breathing movements is required for lung and diaphragm maturation; however, descending inspiratory drive is relatively weak during embryonic development (Greer, 2012). Electrical coupling between tightly clustered phrenic MNs facilitates the recruitment of multiple motor units to compensate for weak inputs and generate adequate synchronous motor drive to the diaphragm (Greer and Funk, 2005). While electrical coupling is not observed in mature phrenic MNs, when maximum motor unit recruitment becomes inefficient and is no longer desirable, it is especially beneficial during the development of the respiratory system (Greer et al., 1999). Therefore, phrenic MN clustering likely serves a dual function during development, enabling both electrical coupling and premotor targeting. Our results indicate that Hox5 transcription factors regulate a molecular program that defines PMC position and clustering.
 
@@ -96,19 +164,19 @@ Our RNA-seq analysis revealed a number of cell adhesion molecules that are downr
 
 We also demonstrate that Hox5 genes are required for the correct orientation of PMC dendrites. Phrenic MN dendrites form tightly fasciculated bundles that adopt a distinct ventromedial and dorsolateral orientation during development (Allan and Greer, 1997). By late embryonic stages (e18.5), phrenic dendrites are restricted to the ipsilateral side and rarely cross the midline. Loss of Hox5 genes leads to a loss of stereotypical dendritic organization and an increased crossing to the contralateral site. Loss of cadherin function leads to similar dendritic reorganization and loss of dorsolateral dendrites, arguing that cadherins are key effectors of Hox5 action. However, cadherin loss does not increase the number of dendrites that cross the midline, pointing to additional mechanisms acting downstream of Hox5 proteins. Notably, while cadherin signaling is critical for dendritic growth and orientation, β/γ-catenin inactivation does not impair phrenic MN axon growth or diaphragm innervation, suggesting that Hox5 genes control two independent molecular programs that regulate axonal and dendritic growth respectively, to coordinate the wiring specificity of phrenic MNs. The requirement for cadherins in establishing both cell body and dendritic topography suggests a prominent cadherin role in PMC presynaptic connectivity. Interestingly, a subpopulation of neurons in the pre-Bötzinger complex also expresses cdh9, which could indicate a broad role for cadherins is establishing synaptic connectivity throughout respiratory circuits (Yackle et al., 2017).
 
-## MN identity and the logic of selective presynaptic connectivity
+### MN identity and the logic of selective presynaptic connectivity
 
 How are phrenic MNs specifically targeted by respiratory premotor populations while eschewing inputs from other descending neurons, locomotor-related interneurons, and sensory afferents directed to other nearby MN populations? MN identity, established by early transcriptional programs, is emerging as a critical determinant of MN connectivity (Dasen, 2017). Despite eradicating phrenic MN identity through Hox5 deletion, which led to loss of PMC topography and downregulation of PMC-specific CAMs, descending excitatory inputs to PMC neurons appear to be largely unperturbed, as we still observe regular phrenic MN bursting in isolated brainstem-spinal preparations. The persistence of excitatory inputs could indicate that Hox5-dependent precise PMC topography is not necessary for these populations to synapse on phrenic MNs or that multiple redundant mechanisms have evolved to maintain this connection that is extremely critical for life. Loss of Hox5 genes appears to selectively impact the establishment of inhibitory inputs onto phrenic MNs, suggesting distinct requirements for PMC targeting by individual premotor populations.
 
 How do Hox5 genes influence PMC connectivity? In sensory-motor circuits, the correct positioning of MNs appears to be critical for their targeting by sensory axons (Sürmeli et al., 2011). In addition, it has recently been reported that spatial features of the MN dendritic tree, such as the angle of interaction with approaching axons, can also act as a determinant of their connectivity with sensory neurons (Balaskas et al., 2019). Here, we demonstrate that Hox5 genes determine PMC cell body and dendritic topography through the induction of cadherin expression. Do cadherins solely function to position phrenic MNs and dendrites at the right place during development or do they have additional roles as molecular recognition cues in presynaptic targeting? In the retina, cadherins control the topography of axonal and dendritic arbors of synaptic partners to place them in close proximity and enable synaptogenesis (Duan et al., 2014; Duan et al., 2018). In the hippocampus however, cadherins influence synaptic fidelity and potentiation without overtly affecting cell morphology, pointing to position-independent roles in synaptic connectivity (Basu et al., 2017). Similarly, mutations in transcription factors that alter molecular identity but not cell body position dramatically reconfigure MN inputs, indicating that MN position is unlikely to be the only critical parameter for MN connectivity (Hinckley et al., 2015; Machado et al., 2015). Loss of inhibitory inputs onto PMC neurons likely results from both positional and molecular changes resulting from MN-specific Hox5 deletion. Defining the explicit contribution of topography to phrenic MN connectivity will require decoupling PMC position from Hox5-mediated transcriptional programs that also control the molecular determinants of phrenic identity.
 
-## Phrenic MN inhibition and respiratory output
+### Phrenic MN inhibition and respiratory output
 
 The major function of phrenic MNs is to efficiently contract the diaphragm muscle, and as such, MNs could potentially function to merely execute complex computations occurring in upstream brainstem respiratory circuits. Consistent with this idea, recent monosynaptic viral-based retrograde tracing of phrenic MN inputs revealed that the major PMC projection arises from excitatory rVRG neurons that propagate the respiratory rhythm generated by the pre-Bötzinger complex (Wu et al., 2017). However, in addition to this excitation, phrenic MNs receive multiple modulatory inputs, including serotonergic and cholinergic inputs, indicating at least some degree of computation transforms rhythmic signals into appropriate motor patterns at the MN level. Phrenic MNs also receive substantial descending inhibitory inputs and we observed an abundance of inhibitory synapses on phrenic MN cell bodies. While we did not observe a complete loss of inhibitory synapses in Hoxa5MNΔ; c5het mice, it is likely that only a subset of phrenic MN inhibition is dedicated to patterning motor neuron activity within inspiratory bursts. Alternatively, while we still observe synaptic puncta on phrenic cell bodies, a number of these synapses may be non-functional, as cadherins are also required for synaptic organization (Yamagata et al., 2018).
 
 What is the source of this inhibition and how does it contribute to shaping phrenic MN output? Rabies-virus mediated retrograde tracing revealed a population of PMC-projecting inhibitory neurons within the rVRG (Wu et al., 2017). Excitatory and inhibitory rVRG neurons are activated concurrently, such that inhibition is in phase with excitatory inputs generating inspiration (Parkis et al., 1999). This inspiratory-phase inhibition synchronizes MN output on a short time scale, and this oscillation frequency is thought to match the frequency that produces maximal muscle force to generate robust diaphragm contractions (Bou-Flores and Berger, 2001; Parkis et al., 2003; Sebe et al., 2006). Our results demonstrate that Hox5 genes are required for establishing these inhibitory inputs onto phrenic MNs, revealing how early transcriptional programs contribute to phrenic MN patterned output.
 
-## Hox5 genes and respiratory dysfunction
+### Hox5 genes and respiratory dysfunction
 
 Loss of Hox5 genes results in pronounced defects in breathing behaviors, including reductions in tidal volume and inability to respond to respiratory challenges such as hypercapnia. There are likely multiple contributing factors to this respiratory dysfunction, including the loss of diaphragm innervation, the reduction in phrenic MN numbers and the inefficient activation of the remaining phrenic MNs due to the loss of electrical coupling and inhibitory inputs (Figure 7—figure supplement 1). Differences in tidal volume are somewhat mitigated with age, reflecting the decrease in motor unit recruitment during quiet breathing with the maturation of the respiratory system (Greer et al., 1999). At birth, the vast majority of phrenic MNs are recruited at rest, making the impact of phrenic MN loss on tidal volume more pronounced. As motor units mature, recruitment of a small subset of phrenic MNs is sufficient to generate efficient diaphragm contractions, partly compensating for phrenic MN loss. However, upon a respiratory challenge such as hypercapnia, no additional motor units are available to be recruited in Hoxa5MNΔ; c5het mice, leading to severe decreases in minute ventilation and compromising the hypercapnia response.
 
@@ -116,40 +184,358 @@ In Hoxa5MNΔ; c5het mice there is a gradual compensation for tidal volume reduct
 
 ## Materials and methods
 
-## Mouse genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Hoxa5</td>
+      <td></td>
+      <td>MGI:96177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Hoxc5</td>
+      <td></td>
+      <td>MGI:96196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Alcam</td>
+      <td></td>
+      <td>MGI:1313266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Edil3</td>
+      <td></td>
+      <td>MGI:1329025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Ptprt</td>
+      <td></td>
+      <td>MGI:1321152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Lsamp</td>
+      <td></td>
+      <td>MGI:1261760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Negr1</td>
+      <td></td>
+      <td>MGI:2444846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cdh2</td>
+      <td></td>
+      <td>MGI:88355</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cdh6</td>
+      <td></td>
+      <td>MGI:107435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cdh9</td>
+      <td></td>
+      <td>MGI:107433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cdh10</td>
+      <td></td>
+      <td>MGI:107436</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cdh11</td>
+      <td></td>
+      <td>MGI:99217</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cdh22</td>
+      <td></td>
+      <td>MGI:1341843</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hoxa5 flox</td>
+      <td>PMID: 17417799</td>
+      <td>MGI:3723622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hoxc5-/-</td>
+      <td>PMID: 17626057</td>
+      <td>MGI:3526151</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Olig2::Cre</td>
+      <td>PMID: 18046410</td>
+      <td>MGI:3774124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hb9::GFP</td>
+      <td>PMID: 12176325</td>
+      <td>MGI:3056906; RRID:IMSR_JAX:005029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Bax-/-</td>
+      <td>PMID: 7569956</td>
+      <td>MGI:1857429; RRID:IMSR_JAX:002994</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>β-catenin flox</td>
+      <td>PMID: 11262227</td>
+      <td>MGI:2148567; RRID:IMSR_JAX:004152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>γ-catenin flox</td>
+      <td>PMID: 22036570</td>
+      <td>MGI:5305426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>γ-catenin-/-</td>
+      <td>PMID: 8858175</td>
+      <td>MGI:1861958; RRID:IMSR_JAX:003334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-scip (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_2268536</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-islet1/2 (mouse monoclonal)</td>
+      <td>DSHB; PMID: 7528105</td>
+      <td>RRID:AB_2314683</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-neurofilament (rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>RRID:AB_887743</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-synaptophysin (rabbit monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:AB_10983675</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_221570</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ChAT (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_2079751</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAD67 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_2278725</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-gephyrin (mouse monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>RRID:AB_2232546</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Amplification Kit</td>
+      <td>Perkin Elmer</td>
+      <td>Cat. No. NEL753001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Arcturus Picopure RNA Isolation Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. No. KIT0204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Stranded RNA-seq Kit with Riboerase</td>
+      <td>Kapa Biosystems</td>
+      <td>Cat. No. KK8483</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. No. 1128</td>
+      <td>1.25 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine hydrochloride</td>
+      <td>Sigma</td>
+      <td>Cat. No. S8753</td>
+      <td>1.25 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>α-bungarotoxin, Alexa Fluor 555 conjugate</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2617152</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>diI</td>
+      <td>Invitrogen</td>
+      <td>Cat. No. D3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTQC</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trim Galore</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/</td>
+      <td>RRID:SCR_011847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tophat v2.1.0</td>
+      <td>PMID: 23618408</td>
+      <td>RRID:SCR_013035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>htseq-count</td>
+      <td>PMID: 25260700</td>
+      <td>RRID:SCR_011867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v3.6.1</td>
+      <td>http://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike2</td>
+      <td>Cambridge Electronic Design</td>
+      <td>RRID:SCR_000903</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse genetics
 
 The loxP-flanked Hoxa5 (Tabariès et al., 2007), β-catenin (Brault et al., 2001), and γ-catenin (Demireva et al., 2011) alleles, Hoxc5 mutant strains (McIntyre et al., 2007), Olig2::cre (Dessaud et al., 2007), Hb9::GFP (Wichterle et al., 2002), γ-catenin-/- (Ruiz et al., 1996), and Bax-/- (Knudson et al., 1995) lines were generated as previously described and maintained on a mixed background. Mouse colony maintenance and handling was performed in compliance with protocols approved by the Institutional Animal Care Use Committee of Case Western Reserve University. Mice were housed in a 12 hr light/dark cycle in cages containing no more than five animals at a time.
 
-## Immunohistochemistry and in situ hybridization
+### Immunohistochemistry and in situ hybridization
 
 In situ hybridization and immunohistochemistry were performed as described (Philippidou et al., 2012) on tissue fixed for 2 hr in 4% PFA and cryosectioned at 16 μm (12 μm for synaptic puncta quantitation). In situ probes were generated from e12.5 cervical spinal cord cDNA libraries using PCR primers with a T7 RNA polymerase promoter sequence at the 5’ end of the reverse primer. All probes generated were 600–1000 bp in length. The sequences used for the PCR primers, probe length, and additional BLAST results verifying specificity of the cadherin probes is located in the attached Supplementary file 1. Wholemounts of diaphragm muscles were stained as described (Philippidou et al., 2012). Diaphragm staining was performed using either neurofilament/synaptophysin primary antibodies (for mice without Hb9::GFP) or with GFP primary antibodies (for mice with Hb9::GFP). The following antibodies were used: goat anti-Scip (1:5000; Santa Cruz Biotechnology, RRID:AB_2268536), mouse anti-islet1/2 (1:1000, DSHB, RRID:AB_2314683) (Tsuchida et al., 1994), rabbit anti-neurofilament (1:1000; Synaptic Systems, RRID:AB_887743), rabbit anti-synaptophysin (1:250, Thermo Fisher, RRID:AB_10983675), rabbit anti-GFP (1:1000, Invitrogen, RRID:AB_221570), α-bungarotoxin, Alexa Fluor 555 conjugate (1:1000; Invitrogen, RRID:AB_2617152), goat anti-ChAT (1:200, Millipore, RRID:AB_2079751), mouse anti-GAD67 (1:500, Millipore, RRID:AB_2278725), and mouse anti-gephyrin (1:3000, Synaptic Systems, RRID:AB_2232546). Images were obtained with a Zeiss LSM 800 confocal microscope and analyzed with Zen Blue and ImageJ (Fiji). Diaphragm innervation was quantified using the simple neurite tracer plugin in ImageJ. For synaptic puncta quantitation performed at P10, phrenic motor neurons were identified by determining the proper rostrocaudal level using surrounding Hoxa5 and Hoxc8 expression. High resolution individual synaptic puncta were imaged using Zeiss Airyscan.
 
-## DiI tracing
+### DiI tracing
 
 For labeling of phrenic motor neurons, crystals of carbocyanine dye, DiI (Invitrogen, #D3911) were pressed onto the phrenic nerves of eviscerated embryos, and the embryos were incubated in 4% paraformaldehyde at 37°C in the dark for 2 weeks for e14.5 embryos and 4–5 weeks for e18.5 embryos. Subsequently, spinal cords were dissected, embedded in 4% low melting point agarose (Invitrogen) and sectioned using a Leica VT1000S vibratome at 100 to 150 μm.
 
-## Cell body clustering and dendritic orientation analysis
+### Cell body clustering and dendritic orientation analysis
 
 To calculate the clustering index for PMC neurons, we utilized two complementary approaches. For experiments with membrane staining (diI tracing), the number of retrogradely-traced neurons that were in contact with at least one other labelled neuron was counted and divided by the total number of traced neurons to calculate a clustering index. A clustering index of 1 indicates that all retrogradely-traced MNs were clustered. For experiments with nuclear protein staining, we connected all PMC nuclei (Scip+Isl1/2+) to their nearest neighbor to form a perimeter of the PMC. We then counted the number of phrenic MNs and the area occupied by the PMC. Clustering index was defined as the number of PMC neurons/1000 μm2.
 
 For the analysis of dendritic orientation in Hoxa5MNΔ; c5het mice, we superimposed a grid over phrenic MN cell bodies spanning 200 μm in each direction. We then used Fiji (ImageJ) to calculate the fluorescent intensity in each square and divided this by the sum of the total fluorescent intensity to calculate the percentage of dendrites in each area. For βγ-catMNΔ mice, since MN cell bodies were more dispersed, we only analyzed dorsal dendrites by calculating the fluorescent intensity of dendrites projecting dorsal to cell bodies divided by the total intensity.
 
-## RNA-sequencing and analysis
+### RNA-sequencing and analysis
 
 C3-C6 cervical spinal cords were dissected from 3 control (Bax-/-) and 3 Hox5MNΔ; Bax-/- mutant embryos in a Hb9::GFP background at e12.5 and motor neurons were sorted by fluorescence–activated cell sorting (FACS) on a Sony iCyt cell sorter. RNA was extracted using the PicoPure RNA isolation system (Arcturus, #KIT0204) with RIN >8 via Tapestation analysis (Agilent). rRNA depleted libraries were prepared from 10 to 20 ng of total RNA using the KAPA stranded RNA-seq kit with Riboerase (KAPA, #KK8483) and amplified by 15 cycles of PCR. Paired-end, 150 bp sequencing was performed on the Illumina HiSeq 2500 and generated a total of 58–94 million reads in each direction per sample after filtering. Read quality was assessed using FASTQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) and adapters were trimmed using Trim Galore (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/). Filtered and trimmed reads were aligned to the mouse genome (GRCm38.p5) using TopHat v2.1.0 (Kim et al., 2013). Gene counts were obtained using htseq-count (Anders et al., 2015). Differentially expressed genes were considered significant if p<0.05 due to the dilution factor from the lack of genetic tools available to specifically sort PMC neurons. Plots were created in R (v 3.5). The R package pheatmap was used to generate the hierarchical clustered heatmap using row-scaled values of differentially expressed genes with p<0.05. Function enrichment was performed using the R package gProfileR with FDR < 0.05. The resulting GO terms were simplified based on similarity using REViGO (Supek et al., 2011).
 
-## Electrophysiology
+### Electrophysiology
 
 Electrophysiology was performed as previously described (Cregg et al., 2017). Mice were cryoanesthetized and rapid dissection was carried out in 22–25°C oxygenated Ringer’s solution. The solution was composed of 128 mM NaCl, 4 mM KCl, 21 mM NaHCO3, 0.5 mM NaH2PO4, 2 mM CaCl2, 1 mM MgCl2, and 30 mM D-glucose and was equilibrated by bubbling in 95% O2/5% CO2. The hindbrain and spinal cord were exposed by ventral laminectomy, and phrenic nerves exposed and dissected free of connective tissue. A transection at the pontomedullary boundary rostral to the anterior inferior cerebellar artery was used to initiate fictive inspiration. Electrophysiology was performed under continuous perfusion of oxygenated Ringer’s solution in a rostral to caudal direction to prevent drug diffusion to the brainstem during local injection. Suction electrodes were attached to phrenic nerves just proximal to their arrival at the diaphragm. For local injections, we used the following drugs: picrotoxin (PTX) (GABAA receptor antagonist, 1.25 mM, Tocris Bioscience, #1128) and strychnine hydrochloride (Strych) (glycine receptor antagonist, 1.25 mM, Sigma, #S8753) dissolved in Ringer’s solution with trypan blue for visualization. The signal was band-pass filtered from 10 Hz to 3 kHz using Grass amplifiers, amplified 5,000-fold, and sampled at a rate of 50 kHz with a Digidata 1440A (Molecular Devices). Data were recorded using AxoScope software (Molecular Devices) and analyzed in Spike2 (Cambridge Electronic Design). Burst duration, percent of burst time with no activity, and power spectra were computed from five bursts per mouse, while burst frequency was determined from 5 min of recording time per mouse. Traces analyzed for percent of burst time with no activity and power spectral analysis were of similar amplitude. In injection experiments, bursts were analyzed 8–10 min after injection. For power spectra, relative power is defined as the absolute power for that frequency bin divided by the sum of the absolute power over all frequency bins from 10 Hz – 400 Hz. Control mice for electrophysiology experiments were all Hoxa5 flox/flox; Hoxc5+/-.
 
-## Plethysmography
+### Plethysmography
 
 Conscious, unrestrained adult (P80) mice were placed in a whole body, flow through plethysmograph chamber (emka) attached to a differential pressure transducer (emka). The chamber was filled with normal air (79% nitrogen, 21% oxygen), and flow was maintained at 0.75 L/min per chamber for all gas mixtures. Mice were acclimated for 1 hr in normal air, and then a 5% CO2 mixture (74% nitrogen, 21% oxygen, 5% carbon dioxide) was introduced to the chamber for 15 min, after which the mice were removed. Experiments were performed in pairs, with each pair consisting of one littermate control and one experimental mouse of the same sex and approximate weight. Thirty seconds of resting breaths were analyzed using iox2 software (emka) near the end of the acclimation period in normal air, and another thirty seconds of resting breaths were analyzed 10 to 15 min after the introduction of 5% CO2. Mice were directly observed to identify resting breaths. Each mouse was recorded on three consecutive days and the values were averaged together to reduce variability. Data are presented as fold control, where the control is the matched littermate in normal air. For neonatal plethysmography, we modified syringes to use as chambers, as smaller chambers increase signal detection. Littermate pups were recorded in normal air every 3–4 days from P3 to P17, and 30–50 breaths were analyzed. Control mice for plethysmography experiments were all Hoxa5 flox/flox; Hoxc5+/-.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 For all experiments a minimum of three embryos per genotype, both male and female, were used for all reported results unless otherwise stated. Genotypes for control mice in Hox5 experiments include cre negative Hoxa5 flox/flox; Hoxc5+/- and Hoxa5 flox/flox; Hoxc5+/+ mice. Genotypes for control mice in catenin experiments include cre negative β-catenin flox/flox; γ-catenin flox/- and β-catenin flox/flox; γ-catenin flox/+ mice. Data are presented as box and whisker plots with each dot representing data from one mouse unless otherwise stated. Small open squares in box and whisker plots represent the mean. P-values were calculated using unpaired, two-tailed Student’s t test. p<0.05 was considered to be statistically significant, where *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
 
-## Accession numbers
+### Accession numbers
 
 The RNA-seq data reported in this paper is uploaded to the NCBI Gene Expression Omnibus under accession number GSE138085.

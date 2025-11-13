@@ -32,32 +32,32 @@
 
 ### Affiliations
 
-1. https://ror.org/01nry9c15 Barcelonaβeta Brain Research Center, Pasqual Maragall Foundation Barcelona Spain
-2. https://ror.org/04n0g0b29 Universitat Pompeu Fabra Barcelona Spain
-3. https://ror.org/03a8gac78 IMIM (Hospital del Mar Medical Research Institute) Barcelona Spain
+1. Barcelonaβeta Brain Research Center, Pasqual Maragall Foundation Barcelona Spain ([ROR:01nry9c15](https://ror.org/01nry9c15))
+2. Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
+3. IMIM (Hospital del Mar Medical Research Institute) Barcelona Spain ([ROR:03a8gac78](https://ror.org/03a8gac78))
 4. CIBER Fragilidad y Envejecimiento Saludable (CIBERFES) Madrid France
-5. https://ror.org/02g87qh62 Centro de Investigación Biomédica en Red de Bioingeniería, Biomateriales y Nanomedicina (CIBER-BBN) Madrid Spain
-6. https://ror.org/008xxew50 Department of Radiology and Nuclear Medicine, Amsterdam Neuroscience, Vrije Universiteit Amsterdam Amsterdam Netherlands
+5. Centro de Investigación Biomédica en Red de Bioingeniería, Biomateriales y Nanomedicina (CIBER-BBN) Madrid Spain ([ROR:02g87qh62](https://ror.org/02g87qh62))
+6. Department of Radiology and Nuclear Medicine, Amsterdam Neuroscience, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
 7. CIRD Centre d'Imagerie Rive Droite Geneva Switzerland
-8. https://ror.org/02vjkv261 Normandie Univ, UNICAEN, INSERM, U1237, PhIND "Physiopathology and Imaging of Neurological Disorders", Institut Blood and Brain Cyceron France
-9. https://ror.org/01nrxwf90 Centre for Dementia Prevention, Edinburgh Imaging, and UK Dementia Research Institute at The University of Edinburgh Edinburgh United Kingdom
+8. Normandie Univ, UNICAEN, INSERM, U1237, PhIND "Physiopathology and Imaging of Neurological Disorders", Institut Blood and Brain Cyceron France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+9. Centre for Dementia Prevention, Edinburgh Imaging, and UK Dementia Research Institute at The University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
 10. Takeda Pharmaceutical Company Ltd Cambridge United States
-11. https://ror.org/02jx3x895 Institutes of Neurology and Healthcare Engineering, University College London London United Kingdom
+11. Institutes of Neurology and Healthcare Engineering, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 12. Roche Diagnostics International Ltd Rotkreuz Switzerland
 13. Roche Diagnostics GmbH Penzberg Germany
-14. https://ror.org/01tm6cn81 Institute of Neuroscience and Physiology, University of Gothenburg Mölndal Sweden
-15. https://ror.org/04vgqjj36 Clinical Neurochemistry Laboratory, Sahlgrenska University Hospital Mölndal Sweden
-16. https://ror.org/02jx3x895 Department of Neurodegenerative Disease, UCL Queen Square Institute of Neurology London United Kingdom
+14. Institute of Neuroscience and Physiology, University of Gothenburg Mölndal Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+15. Clinical Neurochemistry Laboratory, Sahlgrenska University Hospital Mölndal Sweden ([ROR:04vgqjj36](https://ror.org/04vgqjj36))
+16. Department of Neurodegenerative Disease, UCL Queen Square Institute of Neurology London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 17. Hong Kong Center for Neurodegenerative Diseases Hong Kong China
-18. https://ror.org/02jx3x895 UK Dementia Research Institute at UCL London United Kingdom
-19. https://ror.org/03a8gac78 Servei de Neurologia, Hospital del Mar Barcelona Spain
-20. https://ror.org/03mb6wj31 Department of Signal Theory and Communications, Universitat Politècnica de Catalunya Barcelona Spain
+18. UK Dementia Research Institute at UCL London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+19. Servei de Neurologia, Hospital del Mar Barcelona Spain ([ROR:03a8gac78](https://ror.org/03a8gac78))
+20. Department of Signal Theory and Communications, Universitat Politècnica de Catalunya Barcelona Spain ([ROR:03mb6wj31](https://ror.org/03mb6wj31))
 
 † Corresponding author
 
 ## Abstract
 
-Brain-age can be inferred from structural neuroimaging and compared to chronological age (brain-age delta) as a marker of biological brain aging. Accelerated aging has been found in neurodegenerative disorders like Alzheimer’s disease (AD), but its validation against markers of neurodegeneration and AD is lacking. Here, imaging-derived measures from the UK Biobank dataset (N=22,661) were used to predict brain-age in 2,314 cognitively unimpaired (CU) individuals at higher risk of AD and mild cognitive impaired (MCI) patients from four independent cohorts with available biomarker data: ALFA+, ADNI, EPAD, and OASIS. Brain-age delta was associated with abnormal amyloid-β, more advanced stages (AT) of AD pathology and APOE -ε4 status. Brain-age delta was positively associated with plasma neurofilament light, a marker of neurodegeneration, and sex differences in the brain effects of this marker were found. These results validate brain-age delta as a non-invasive marker of biological brain aging in non-demented individuals with abnormal levels of biomarkers of AD and axonal injury.
+Brain-age can be inferred from structural neuroimaging and compared to chronological age (brain-age delta) as a marker of biological brain aging. Accelerated aging has been found in neurodegenerative disorders like Alzheimer’s disease (AD), but its validation against markers of neurodegeneration and AD is lacking. Here, imaging-derived measures from the UK Biobank dataset (N=22,661) were used to predict brain-age in 2,314 cognitively unimpaired (CU) individuals at higher risk of AD and mild cognitive impaired (MCI) patients from four independent cohorts with available biomarker data: ALFA+, ADNI, EPAD, and OASIS. Brain-age delta was associated with abnormal amyloid-β, more advanced stages (AT) of AD pathology and APOE-ε4 status. Brain-age delta was positively associated with plasma neurofilament light, a marker of neurodegeneration, and sex differences in the brain effects of this marker were found. These results validate brain-age delta as a non-invasive marker of biological brain aging in non-demented individuals with abnormal levels of biomarkers of AD and axonal injury.
 
 ## Introduction
 
@@ -75,19 +75,374 @@ Therefore, in the present study, we aim to validate brain-age delta as a clinica
 
 ## Results
 
-## Participants’ characteristics
+### Participants’ characteristics
 
 Table 1 summarizes the demographic characteristics of the cohorts included in the study. ADNI and EPAD cohorts included both CU and MCI individuals, while the UK Biobank, ALFA + and OASIS cohorts only included CU individuals. Table 2 summarizes the variables used to study the associations with brain-age delta, which included biomarkers for AD (Aβ positron emission tomography [PET] and CSF Aβ and p-tau), neurodegeneration (CSF and plasma NfL), and cerebrovascular pathology (WMH on MRI), as well as the aging signature composite (Bakkour et al., 2013), both cross-sectional and longitudinally. The aging signature composite is a map of specific brain regions that undergo cortical thinning in normal aging, which has been used as a proxy measurement for brain aging. These validation variables were correlated with chronological age for all cohorts (see Appendix 1—table 1). Some of the participants for ALFA+ (N=25), ADNI (N=116), and EPAD (N=71) fell into the A-T +group, corresponding to non-AD pathologic change. Since our aim was to specifically validate the brain-age delta measurements in the AD continuum, we excluded these participants from subsequent analyses; and they are reported within Table 1 and Table 2 solely for descriptive purposes. In addition, the number of MCI individuals with available data of CSF NfL and of aging signature change was relatively low and, therefore, these variables were excluded from the analysis in MCI individuals.
 
-## Brain-age prediction and chronological age
+**Table 1.**
+ Sample demographics and characteristics separated by cohort and by diagnosis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">CU</th>
+      <th colspan="2">MCI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Characteristics</td>
+      <td>UK Biobank</td>
+      <td>ALFA+</td>
+      <td>ADNI</td>
+      <td>EPAD</td>
+      <td>OASIS</td>
+      <td>ADNI</td>
+      <td>EPAD</td>
+    </tr>
+    <tr>
+      <td>(N=22,661)</td>
+      <td>(N=380)</td>
+      <td>(N=284)</td>
+      <td>(N=653)</td>
+      <td>(N=407)</td>
+      <td>(N=435)</td>
+      <td>(N=155)</td>
+    </tr>
+    <tr>
+      <td>Age, years</td>
+      <td>64.54 (7.55)</td>
+      <td>60.61 (4.72)</td>
+      <td>71.42 (6.36)</td>
+      <td>64.96 (7.01)</td>
+      <td>69.07 (9.42)</td>
+      <td>71.09 (7.31)</td>
+      <td>69.08 (6.97)</td>
+    </tr>
+    <tr>
+      <td>Age range, years</td>
+      <td>[44, 81]</td>
+      <td>[48, 73]</td>
+      <td>[55, 89]</td>
+      <td>[50, 88]</td>
+      <td>[42, 89]</td>
+      <td>[55, 91]</td>
+      <td>[52, 88]</td>
+    </tr>
+    <tr>
+      <td>Female, n (%)</td>
+      <td>11,767 (51.92)</td>
+      <td>254 (60.76)</td>
+      <td>126 (50.00)</td>
+      <td>386 (59.11)</td>
+      <td>244 (59.95)</td>
+      <td>249 (50.00)</td>
+      <td>81 (47.74)</td>
+    </tr>
+    <tr>
+      <td>Education, years</td>
+      <td>17.75 (5.42)</td>
+      <td>13.43 (3.71)</td>
+      <td>16.54 (2.49)</td>
+      <td>14.83 (3.56)</td>
+      <td>15.93 (2.59)</td>
+      <td>16.23 (2.71)</td>
+      <td>14.17 (3.77)</td>
+    </tr>
+    <tr>
+      <td>APOE-ε4 carriers, n (%)</td>
+      <td>6,334 (27.95)</td>
+      <td>221 (52.87)</td>
+      <td>72 (28.57)</td>
+      <td>217 (33.23)</td>
+      <td>118 (28.99)</td>
+      <td>218 (43.78)</td>
+      <td>60 (38.71)</td>
+    </tr>
+    <tr>
+      <td>MMSE</td>
+      <td>-</td>
+      <td>29.15 (0.95)</td>
+      <td>28.985 (1.24)</td>
+      <td>28.82 (1.40)</td>
+      <td>29.03 (1.31)</td>
+      <td>27.57 (2.19)</td>
+      <td>27.86 (1.97)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Data are expressed as mean (M) and standard deviation (SD) or percentage (%), as appropriate. Abbreviations: APOE, apolipoprotein E; MMSE, Mini-Mental State Examination._
+
+**Table 2.**
+ Biomarkers separated by cohort and by diagnosis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="8">CU</th>
+      <th colspan="4">MCI</th>
+    </tr>
+    <tr>
+      <th colspan="2">ALFA+</th>
+      <th colspan="2">ADNI</th>
+      <th colspan="2">EPAD</th>
+      <th colspan="2">OASIS</th>
+      <th colspan="2">ADNI</th>
+      <th colspan="2">EPAD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BIOMARKERS</td>
+      <td>N</td>
+      <td>Mean (SD)</td>
+      <td>N</td>
+      <td>Mean (SD)</td>
+      <td>N</td>
+      <td>Mean (SD)</td>
+      <td>N</td>
+      <td>Mean (SD)</td>
+      <td>N</td>
+      <td>Mean (SD)</td>
+      <td>N</td>
+      <td>Mean (SD)</td>
+    </tr>
+    <tr>
+      <td>Centiloids</td>
+      <td>0</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>407</td>
+      <td>13.468 (28.138)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CSF Aβ42 (pg/mL)*</td>
+      <td>380</td>
+      <td>1318.059 (599.223)</td>
+      <td>284</td>
+      <td>1223.890 (556.648)</td>
+      <td>653</td>
+      <td>1403.617 (681.736)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>435</td>
+      <td>986.248 (446.402)</td>
+      <td>155</td>
+      <td>1245.181 (741.756)</td>
+    </tr>
+    <tr>
+      <td>CSF p-tau (pg/mL)</td>
+      <td>380</td>
+      <td>16.289 (7.813)</td>
+      <td>283</td>
+      <td>22.234 (9.692)</td>
+      <td>627</td>
+      <td>18.326 (8.380)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>434</td>
+      <td>26.490 (14.402)</td>
+      <td>151</td>
+      <td>24.715 (14.897)</td>
+    </tr>
+    <tr>
+      <td>CSF NfL (pg/mL)†</td>
+      <td>380</td>
+      <td>82.717 (29.124)</td>
+      <td>26</td>
+      <td>1052.444 (376.095)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>48</td>
+      <td>1383.638 (918.231)</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Plasma NfL (pg/mL)</td>
+      <td>368</td>
+      <td>10.519 (3.739)</td>
+      <td>184</td>
+      <td>35.843 (17.988)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>404</td>
+      <td>38.157 (18.908)</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>WMH volume</td>
+      <td>360</td>
+      <td>0.045 (0.845)</td>
+      <td>240</td>
+      <td>–0.0085 (1.267)</td>
+      <td>456</td>
+      <td>0.038 (1.072)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>458</td>
+      <td>–0.005 (1.229)</td>
+      <td>108</td>
+      <td>0.048 (1.076)</td>
+    </tr>
+    <tr>
+      <td>Aging signature†</td>
+      <td>360</td>
+      <td>2.387 (0.071)</td>
+      <td>240</td>
+      <td>2.284 (0.105)</td>
+      <td>456</td>
+      <td></td>
+      <td>0</td>
+      <td>-</td>
+      <td>458</td>
+      <td>2.251 (0.109)</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Aging signature V2†</td>
+      <td>187</td>
+      <td>2.376 (0.072)</td>
+      <td>45</td>
+      <td>2.299 (0.118)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>46</td>
+      <td>2.257 (0.119)</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Aging signature change ( V2-V1 t)†</td>
+      <td>187</td>
+      <td>–0.003 (0.011)</td>
+      <td>45</td>
+      <td>–0.0007 (0.037)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>46</td>
+      <td>–0.003 (0.050)</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are expressed as mean (M) and standard deviation (SD) or percentage (%), as appropriate. Amyloid-β status was defined by CSF (ALFA+, ADNI and EPAD) or amyloid PET (OASIS). For ALFA+ and ADNI, we calculated the aging signature from MRI scans acquired 3 years later than the original MRI scan, called aging signature V2. Aging signature change was calculated as the difference in aging signature over these two MRI scans.Abbreviations: CSF, cerebrospinal fluid; NfL, neurofilament light; WMH, White Matter Hyperintensities.*Individuals that fell into the A-T+group: 25 from ALFA+, 116 from ADNI and 71 from EPAD.†As the number of MCI individuals with CSF NfL and aging signature change was relatively low, we excluded them from the following results._
+
+### Brain-age prediction and chronological age
 
 We trained the prediction model using the UK Biobank cohort and tested the model using four independent cohorts (ALFA+, ADNI, EPAD, and OASIS), as shown in Figure 1. Table 3 shows the prediction accuracy for the combined female and male predictions. The average prediction accuracy of the model run on UK Biobank using 10-fold cross-validation as measured by the mean absolute error (MAE) and by Pearson’s correlation were MAE = 4.19 and R=0.71 (Table 3 and Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig1-v2.jpg)
+
+**Figure 1.:** Illustration of the methods used to generate predicted brain-age and to study the associations between the brain-age delta and the biomarkers and risk factors used. 3D T1-weighted MRI scans across all cohorts were segmented into volumes and thickness using the Desikan-Killiany and the aseg atlas. 1. Training phase: We trained XGBoost regressor models for females and males from the UK Biobank. For this we performed a cross-validation scheme with 10-folds and 10 repeats per fold. 2. Testing phase: We tested the age prediction models on unseen data from independent cohorts: ALFA+ (in blue), ADNI (in green), EPAD (in gray), and OASIS (in orange). 3 Analyses phase: We computed the brain-age delta for each cohort. We then studied the associations with the biomarkers and risk factors of AD, neurodegeneration, and cardiovascular risk. We performed these analyses within the whole sample and stratified by sex. The table on the bottom left shows the available biomarkers and risk factor available for which cohorts.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** On the left, original prediction. On the right, prediction after bias correction.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** In blue, female subjects and in green, male subjects.
+
+**Table 3.**
+ Prediction metrics for all independent cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cohorts</th>
+      <th colspan="2">Correlation with age</th>
+      <th>MAE (y)</th>
+      <th colspan="2">R2</th>
+      <th colspan="2">RMSE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>R</td>
+      <td>P-value</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="8">Before bias correction</td>
+    </tr>
+    <tr>
+      <td>UK Biobank</td>
+      <td>0.712 (0.007)</td>
+      <td>&lt;0.001</td>
+      <td>4.19 (0.07)</td>
+      <td colspan="2">0.51 (0.03)</td>
+      <td colspan="2">5.25 (0.08)</td>
+    </tr>
+    <tr>
+      <td>ALFA+</td>
+      <td>0.448</td>
+      <td>&lt;0.001</td>
+      <td>4.31</td>
+      <td colspan="2">0.20</td>
+      <td colspan="2">4.18</td>
+    </tr>
+    <tr>
+      <td>ADNI</td>
+      <td>0.587</td>
+      <td>&lt;0.001</td>
+      <td>7.21</td>
+      <td colspan="2">0.34</td>
+      <td colspan="2">5.47</td>
+    </tr>
+    <tr>
+      <td>EPAD</td>
+      <td>0.629</td>
+      <td>&lt;0.001</td>
+      <td>4.63</td>
+      <td colspan="2">0.40</td>
+      <td colspan="2">5.62</td>
+    </tr>
+    <tr>
+      <td>OASIS</td>
+      <td>0.733</td>
+      <td>&lt;0.001</td>
+      <td>6.99</td>
+      <td colspan="2">0.54</td>
+      <td colspan="2">6.42</td>
+    </tr>
+  </tbody>
+</table>
+
+_The Pearson’s correlation coefficient (R) between predicted brain-age and chronological age, R2, root mean square error (RMSE), and mean absolute error (MAE) for UK Biobank and for each of the independent cohorts before bias correction. For UK Biobank, the metrics, given as mean (standard deviation) are computed from 10-fold cross validation repeated 10 times._
 
 We then investigated the association of predicted brain-age with chronological age on each of the independent cohorts. All the cohorts showed a similar positive correlation and fitting performance metrics as measured by the MAE, R and root mean squared error (RMSE) between chronological age and predicted brain-age. Correlation coefficients were not different between cohorts (P>0.05, for all comparisons, see Appendix 1—table 2). We also studied the performance metrics for the two different diagnostic groups (CU and MCI) for each cohort, see Appendix 1—table 3.
 
 In order to study the effect of sex on brain age prediction, we also computed the performance metrics stratified by females and males (Appendix 1—table 4 and Appendix 1—table 5). Correlations and fitting performance metrics were not significantly different between females and males (Pearson’s r (William’s test), P>0.05; RMSE (F-test) P>0.05), see Appendix 1—table 6. Plots of the correlations between predicted brain-age and chronological age for females and males in each of the cohorts can be seen in the Figure 1—figure supplement 2. Additionally, results for a secondary analysis in which we compared the fitting performance of XGBoost brain-age and of the neuroanatomical aging signature (Bakkour et al., 2013) with respect to chronological age can be seen in Appendix 1—table 7.
 
-## Brain regions associated with aging
+### Brain regions associated with aging
 
 We computed the SHapley Additive exPlanation (SHAP) values, which reflect the marginal contribution of each brain region to the brain-age prediction, using the UK Biobank dataset. SHAP values interpret the impact in the prediction of the values of volume or cortical thickness for a given brain region. In other words, they reflect the most important features that consistently influenced the prediction of brain-age and whether the decrease or increase of each region impacted into predicting a higher or lower brain-age. The SHAP values were computed separately for females and males. We compared the regions with higher SHAP values for females and males, and vice-versa, by averaging the SHAP values within each sex separately and then subtracting the mean SHAP of males to the mean SHAP of females.
 
@@ -95,21 +450,554 @@ There were regions whose SHAP values were high in both females and males, includ
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig2-v2.jpg)
 
-**Figure 2.:** a) females and (b) males separately.Significance was studied by assessing the stability of the region’s importance by performing subsampling of data over 1,000 permutations. Colored regions had a P < 0.05 corrected for multiple comparisons using Bonferroni correction approach. Regions in red show larger volume or cortical thickness, while regions in blue show lower volume or cortical thickness. In (c), comparison for the regions with higher SHAP values that were significant for females (green) and males (purple). The color map shows the results from subtracting the males’ mean SHAP value to the female’s mean SHAP value for each region. In (d), examples of the fit of three significant SHAP-selected regions against chronological age for females and males. For visualization purposes, nonparametric smoothing spline functions were used to fit the data (mean ± 95%CI).
+**Figure 2.:** Significance was studied by assessing the stability of the region’s importance by performing subsampling of data over 1,000 permutations. Colored regions had a P < 0.05 corrected for multiple comparisons using Bonferroni correction approach. Regions in red show larger volume or cortical thickness, while regions in blue show lower volume or cortical thickness. In (c), comparison for the regions with higher SHAP values that were significant for females (green) and males (purple). The color map shows the results from subtracting the males’ mean SHAP value to the female’s mean SHAP value for each region. In (d), examples of the fit of three significant SHAP-selected regions against chronological age for females and males. For visualization purposes, nonparametric smoothing spline functions were used to fit the data (mean ± 95%CI).
 
 In Figure 2d, we can see the fit of three example regions whose SHAP values were different for females and males against chronological age. For example, the bi-lateral superior frontal volumes decreased more over the years within males than females. This result was seen as the interaction of sex with age (Pinteraction <0.001). We also found an interaction effect of sex and age for the isthmus cingulate thickness (Pinteratcion <0.001), by which the thickness of males decreased more over the years than from the females. On the contrary, we also found regions, such as the middle temporal thickness, whose slope was not different between for both sexes (Pinteraction = 0.671), but which appeared to be lower for females than for males. All the results of this exploratory analysis can be seen in Appendix 1—table 8.
 
-## Associations with AD biomarkers and risk factors
+### Associations with AD biomarkers and risk factors
 
 We studied the association between brain-age delta and AD biomarker classifications (Aβ status, AT stages) and APOE-ε4 status in all the independent cohorts pooled together, with a linear model adjusting for the effect of age and sex (Figure 3 and Table 4). Aβ status was defined by CSF (ALFA+, ADNI, and EPAD) or amyloid PET (OASIS) using pre-established cut-off values (Hansson et al., 2018; Milà-Alomà et al., 2020; Salvadó et al., 2019; Schindler et al., 2018). Brain-age delta was higher in MCI with respect to CU individuals (PFDR <0.001). In both CU and MCI, a higher brain-age delta was significantly associated with abnormal Aβ status (CU: PFDR <0.001 and MCI: PFDR <0.001) and with progressive AT stages (CU: PFDR <0.001 and MCI: PFDR <0.001) (see Table 4 and Appendix 1—table 9 for more details). The mean brain-age delta values for the different Aβ status and AT stages can be found in Appendix 1—table 10. The brain-age effect on AT stages was progressive, as that of the A+T- group was larger than that of A-T-, while the brain-age delta of A+T + was larger than those of the other two previous stages (Table 4 and Figure 3a). Brain-age delta was also significantly associated with APOE status (CU: PFDR = 0.002 and MCI: P=0.017, PFDR = 0.040). In particular, APOE-ε4 carriers had larger brain-age deltas (i.e. older-appearing brains than expected for their chronological age) compared to APOE-ε33 individuals for both CU (β=0.173, PFDR = 0.003) and MCI (β=0.273, PFDR = 0.008; see Table 4 and Figure 3). The mean brain-age delta values for the different APOE status can be found in Appendix 1—table 7. These results were consistent with the results from the within-cohort analyses (see Appendix 1—table 11).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig3-v2.jpg)
 
-**Figure 3.:** a) and (b), the standardized associations (β±95% CI) between measures of brain-age delta validation variables for (a) CU individuals and (b) MCI individuals.Variables include AD biomarkers and risk factors: amyloid-β status, AT stages and APOE status; and neurodegeneration markers (available in ALFA + and ADNI): CSF NfL, plasma NfL and aging signature change. The analyses included age and sex as covariates. Sample size for each variable can be seen in Table 4.
+**Figure 3.:** Variables include AD biomarkers and risk factors: amyloid-β status, AT stages and APOE status; and neurodegeneration markers (available in ALFA + and ADNI): CSF NfL, plasma NfL and aging signature change. The analyses included age and sex as covariates. Sample size for each variable can be seen in Table 4.
+
+**Table 4.**
+ Relationships between validation variables and brain-age delta for all CU and MCI individuals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Model</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>P-Value</th>
+      <th>[0.025]</th>
+      <th>[0.975]</th>
+      <th>N</th>
+      <th>Effect size</th>
+      <th>FDR corr P-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="9">CU Individuals</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Amyloid-β pathology (ref: A-)</td>
+      <td>0.234</td>
+      <td>0.047</td>
+      <td>&lt;0.001</td>
+      <td>0.140</td>
+      <td>0.325</td>
+      <td>1634</td>
+      <td>0.222</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Amyloid-β / Tau pathology (ref: A-T-)</td>
+      <td>A+T-</td>
+      <td>0.2023</td>
+      <td>0.059</td>
+      <td>&lt;0.001</td>
+      <td>0.015</td>
+      <td>0.394</td>
+      <td rowspan="2">1162</td>
+      <td>0.275</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>A+T +</td>
+      <td>0.310</td>
+      <td>0.096</td>
+      <td>0.003</td>
+      <td>0.101</td>
+      <td>0.500</td>
+      <td>0.300</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td rowspan="3">APOE status (ref: APOE-ε33)</td>
+      <td>APOE-ε2</td>
+      <td>–0.124</td>
+      <td>0.082</td>
+      <td>0.130</td>
+      <td>–0.321</td>
+      <td>0.334</td>
+      <td rowspan="3">1634</td>
+      <td>0.122</td>
+      <td>0.227</td>
+    </tr>
+    <tr>
+      <td>APOE-ε4</td>
+      <td>0.173</td>
+      <td>0.052</td>
+      <td>0.001</td>
+      <td>0.071</td>
+      <td>0.274</td>
+      <td>0.172</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>APOE-ε24</td>
+      <td>0.012</td>
+      <td>0.144</td>
+      <td>0.936</td>
+      <td>–0.271</td>
+      <td>0.294</td>
+      <td>0.011</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td colspan="2">WMH volume*</td>
+      <td>0.160</td>
+      <td>0.030</td>
+      <td>&lt;0.001</td>
+      <td>0.111</td>
+      <td>0.231</td>
+      <td>972</td>
+      <td>0.028</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="2">CSF NfL†</td>
+      <td>0.079</td>
+      <td>0.049</td>
+      <td>0.112</td>
+      <td>–0.019</td>
+      <td>0.176</td>
+      <td>378</td>
+      <td>0.006</td>
+      <td>0.209</td>
+    </tr>
+    <tr>
+      <td colspan="2">Plasma NfL†</td>
+      <td>0.154</td>
+      <td>0.045</td>
+      <td>0.001</td>
+      <td>0.066</td>
+      <td>0.242</td>
+      <td>508</td>
+      <td>0.024</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td colspan="2">Brain Atrophy†</td>
+      <td>0.053</td>
+      <td>0.048</td>
+      <td>0.272</td>
+      <td>–0.041</td>
+      <td>0.146</td>
+      <td>152</td>
+      <td>0.003</td>
+      <td>0.415</td>
+    </tr>
+    <tr>
+      <td colspan="9">MCI Individuals</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Amyloid-β pathology</td>
+      <td>0.640</td>
+      <td>0.089</td>
+      <td>&lt;0.001</td>
+      <td>0.465</td>
+      <td>0.816</td>
+      <td>218</td>
+      <td>0.665</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Amyloid-β / Tau pathology (ref: A-T-)</td>
+      <td>A+T-</td>
+      <td>0.564</td>
+      <td>0.109</td>
+      <td>&lt;0.001</td>
+      <td>0.350</td>
+      <td>0.778</td>
+      <td rowspan="2">218</td>
+      <td>0.592</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>A+T +</td>
+      <td>0.720</td>
+      <td>0.102</td>
+      <td>&lt;0.001</td>
+      <td>0.519</td>
+      <td>0.920</td>
+      <td>0.720</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">APOE status (ref: APOE-ε33)</td>
+      <td>APOE-ε2</td>
+      <td>0.007</td>
+      <td>0.167</td>
+      <td>0.968</td>
+      <td>–0.273</td>
+      <td>0.978</td>
+      <td rowspan="3">218</td>
+      <td>0.001</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td>APOE-ε4</td>
+      <td>0.273</td>
+      <td>0.093</td>
+      <td>0.003</td>
+      <td>0.091</td>
+      <td>0.456</td>
+      <td>0.281</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>APOE-ε24</td>
+      <td>0.352</td>
+      <td>0.319</td>
+      <td>0.269</td>
+      <td>–0.273</td>
+      <td>0.978</td>
+      <td>0.359</td>
+      <td>0.415</td>
+    </tr>
+    <tr>
+      <td colspan="2">WMH volume</td>
+      <td>0.222</td>
+      <td>0.054</td>
+      <td>&lt;0.001</td>
+      <td>0.117</td>
+      <td>0.327</td>
+      <td>191</td>
+      <td>0.040</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="2">Plasma NfL‡</td>
+      <td>0.242</td>
+      <td>0.067</td>
+      <td>&lt;0.001</td>
+      <td>0.110</td>
+      <td>0.374</td>
+      <td>134</td>
+      <td>0.046</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Relationships between validation variables and Brain-Age delta from all CU pooled subjects (including ALFA+, ADNI, EPAD and OASIS) and all MCI pooled subjects (including ADNI and EPAD). Results given by the linear model: brain-age delta ~each variable +chronological age+sex. The regression coefficients (β), standard errors (SE), P-value, 95% Confidence Interval, number of individuals (N) and effect size are depicted for each variable.Significant values after FDR correction (P<0.05) are marked in bold.Effect size in categorical variables was calculated as Cohen’s D, while Cohens f2 was calculated for continuous measurements. Amyloid-β status was defined by CSF (ALFA+, ADNI, and EPAD) or amyloid PET (OASIS). MCI individuals only contained individuals from ADNI and EPAD.APOE, apolipoprotein E; WMH, White Matter Hyperintensities; CSF, cerebrospinal fluid; NfL, neurofilament light; ref, reference.*Contains data from ALFA+, ADNI and EPAD.†Contains data from ALFA +and ADNI.‡Contains data from ADNI._
 
 We next studied the association between brain-age delta and AD biomarkers and risk factors stratified by sex (Table 5). In general, the same associations found with the whole sample was seen for females and males separately. However, although a higher brain-age delta was significantly associated with progressive AT stages both for females (CU: PFDR = 0.002 and MCI: PFDR <0.001) and males (CU: PFDR = 0.019 and MCI: PFDR <0.001), brain-age delta of A+T + was significantly larger than those of the other two previous stages (A-T- and A+T-) in CU females (β=0.431, PFDR = 0.008) but not in CU males (β=0.139, PFDR = 0.424). Brain-age delta was only significantly associated with APOE status in CU males (PFDR = 0.028), while this association was not seen in the rest of subgroups (CU and MCI females and MCI males). The rest of the associations tested with AD biomarkers, such as the interactions with sex, not reported here were non-significant.
 
-## Associations with neurodegeneration biomarkers
+**Table 5.**
+ Relationships between validation variables and brain-age delta stratified by sex for all CU and MCI individuals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th colspan="6">Females</th>
+      <th colspan="6">Males</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Model</td>
+      <td>β (SE)</td>
+      <td>P-Value</td>
+      <td>[0.025, 0.075]</td>
+      <td>N</td>
+      <td>Effect size</td>
+      <td>FDR corr P-Value corr</td>
+      <td>β</td>
+      <td>P-Value</td>
+      <td>[0.025, 0.075]</td>
+      <td>N</td>
+      <td>Effect size</td>
+      <td>FDR corr P-Value</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="13">CU Individuals</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Amyloid-β pathology (ref: A-)</td>
+      <td>0.286 (0.065)</td>
+      <td>&lt;0.001</td>
+      <td>[0.160, 0.413]</td>
+      <td>966</td>
+      <td>0.288</td>
+      <td>&lt;0.001</td>
+      <td>0.341 (0.076)</td>
+      <td>&lt;0.001</td>
+      <td>[0.192, 0.490]</td>
+      <td>668</td>
+      <td>0.344</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2">Amyloid-β / Tau pathology (ref: A-T-)</td>
+      <td>A+T-</td>
+      <td>0.250 (0.082)</td>
+      <td>0.003</td>
+      <td>[0.088, 0.411]</td>
+      <td rowspan="2">688</td>
+      <td>0.252</td>
+      <td>0.008</td>
+      <td>0.2978 (0.096)</td>
+      <td>0.002</td>
+      <td>[0.110, 0.486]</td>
+      <td rowspan="2">474</td>
+      <td>0.301</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>A+T +</td>
+      <td>0.391 (0.131)</td>
+      <td>0.003</td>
+      <td>[0.134, 0.648]</td>
+      <td>0.385</td>
+      <td>0.008</td>
+      <td>0.173 (0.163)</td>
+      <td>0.290</td>
+      <td>[–0.148, 0.494]</td>
+      <td>0.175</td>
+      <td>0.424</td>
+    </tr>
+    <tr>
+      <td rowspan="3" colspan="2">APOE status (ref: APOE-ε33)</td>
+      <td>APOE-ε2</td>
+      <td>–0.175 (0.110)</td>
+      <td>0.112</td>
+      <td>[–0.391, 0.041]</td>
+      <td rowspan="3">966</td>
+      <td>0.172</td>
+      <td>0.209</td>
+      <td>–0.061 (0.122)</td>
+      <td>0.615</td>
+      <td>[–0.301, 0.178]</td>
+      <td rowspan="3">668</td>
+      <td>0.062</td>
+      <td>0.766</td>
+    </tr>
+    <tr>
+      <td>APOE-ε4</td>
+      <td>0.117 (0.067)</td>
+      <td>0.081</td>
+      <td>[–0.014, 0.248]</td>
+      <td>0.116</td>
+      <td>0.162</td>
+      <td>0.249 (0.082)</td>
+      <td>0.003</td>
+      <td>[0.087, 0.410]</td>
+      <td>0.249</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>APOE-ε24</td>
+      <td>–0.011 (0.197)</td>
+      <td>0.958</td>
+      <td>[–0.337, 0.358]</td>
+      <td>0.011</td>
+      <td>0.999</td>
+      <td>0.044 (0.212)</td>
+      <td>0.836</td>
+      <td>[–0.372, 0.461]</td>
+      <td>0.045</td>
+      <td>0.976</td>
+    </tr>
+    <tr>
+      <td colspan="3">WMH volume*</td>
+      <td>0.263 (0.041)</td>
+      <td>&lt;0.001</td>
+      <td>[0.183, 0.342]</td>
+      <td>580</td>
+      <td>0.072</td>
+      <td>&lt;0.001</td>
+      <td>0.179 (0.050)</td>
+      <td>&lt;0.001</td>
+      <td>[0.790, 0.278]</td>
+      <td>392</td>
+      <td>0.032</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="3">CSF NfL ¥</td>
+      <td>0.129 (0.064)</td>
+      <td>0.046</td>
+      <td>[0.002, 0.256]</td>
+      <td>228</td>
+      <td>0.019</td>
+      <td>0.102</td>
+      <td>0.006 (0.078)</td>
+      <td>0.939</td>
+      <td>[–0.149, 0.161]</td>
+      <td>150</td>
+      <td>0.000</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td colspan="3">Plasma NfL†</td>
+      <td>0.191 (0.059)</td>
+      <td>0.001</td>
+      <td>[0.076, 0.306]</td>
+      <td>298</td>
+      <td>0.037</td>
+      <td>0.003</td>
+      <td>0.110 (0.069)</td>
+      <td>0.119</td>
+      <td>[–0.029, 0.248]</td>
+      <td>210</td>
+      <td>0.012</td>
+      <td>0.217</td>
+    </tr>
+    <tr>
+      <td colspan="3">Brain Atrophy†</td>
+      <td>0.045 (0.063)</td>
+      <td>0.475</td>
+      <td>[–0.079, 0.169]</td>
+      <td>171</td>
+      <td>0.002</td>
+      <td>0.635</td>
+      <td>0.082 (0.074)</td>
+      <td>0.268</td>
+      <td>[–0.064, 0.228]</td>
+      <td>102</td>
+      <td>0.007</td>
+      <td>0.418</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="13">MCI Individuals</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Amyloid-β pathology</td>
+      <td>0.713 (0.131)</td>
+      <td>&lt;0.001</td>
+      <td>[0.455, 0.970]</td>
+      <td>217</td>
+      <td>0.751</td>
+      <td>&lt;0.001</td>
+      <td>0.581 (0.124)</td>
+      <td>&lt;0.001</td>
+      <td>[0.337, 0.824]</td>
+      <td>286</td>
+      <td>0.597</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2">Amyloid-β / Tau pathology (ref: A-T-)</td>
+      <td>A+T-</td>
+      <td>0.556 (0.176)</td>
+      <td>0.002</td>
+      <td>[0.210, 0.903]</td>
+      <td rowspan="2">214</td>
+      <td>0.590</td>
+      <td>0.006</td>
+      <td>0.543 (0.144)</td>
+      <td>&lt;0.001</td>
+      <td>[0.260, 0.827]</td>
+      <td rowspan="2">284</td>
+      <td>0.558</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>A+T +</td>
+      <td>0.809 (0.146)</td>
+      <td>&lt;0.001</td>
+      <td>[0.52, 1.098]</td>
+      <td>0.812</td>
+      <td>&lt;0.001</td>
+      <td>0.626 (0.145)</td>
+      <td>&lt;0.001</td>
+      <td>[0.342, 0.911]</td>
+      <td>0.633</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3" colspan="2">APOE status (ref: APOE-ε33)</td>
+      <td>APOE-ε2</td>
+      <td>0.034 (0.295)</td>
+      <td>0.908</td>
+      <td>[–0.546, 0.614]</td>
+      <td rowspan="3">217</td>
+      <td>0.033</td>
+      <td>0.999</td>
+      <td>–0.008 (0.206)</td>
+      <td>0.992</td>
+      <td>[–0.408, 0.404]</td>
+      <td rowspan="3">286</td>
+      <td>0.002</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td>APOE-ε4</td>
+      <td>0.254 (0.142)</td>
+      <td>0.0676</td>
+      <td>[–0.026, 0.535]</td>
+      <td>0.267</td>
+      <td>0.155</td>
+      <td>0.287 (0.125)</td>
+      <td>0.023</td>
+      <td>[0.040, 0.534]</td>
+      <td>0.289</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>APOE-ε24</td>
+      <td>0.290 (0.418)</td>
+      <td>0.489</td>
+      <td>[–0.535,1.115]</td>
+      <td>0.309</td>
+      <td>0.649</td>
+      <td>0.399 (0.507)</td>
+      <td>0.431</td>
+      <td>[–0.598, 1.398]</td>
+      <td>0.389</td>
+      <td>0.584</td>
+    </tr>
+    <tr>
+      <td colspan="3">WMH volume</td>
+      <td>0.158 (0.085)</td>
+      <td>0.063</td>
+      <td>[–0.009, 0.325]</td>
+      <td>181</td>
+      <td>0.020</td>
+      <td>0.133</td>
+      <td>0.300 (0.069)</td>
+      <td>&lt;0.001</td>
+      <td>[0.164, 0.437]</td>
+      <td>252</td>
+      <td>0.075</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="3">Plasma NfL‡</td>
+      <td>0.342 (0.098)</td>
+      <td>0.001</td>
+      <td>[0.147, 0.536]</td>
+      <td>128</td>
+      <td>0.097</td>
+      <td>0.003</td>
+      <td>0.164 (0.091)</td>
+      <td>0.068</td>
+      <td>[–0.012, 0.341]</td>
+      <td>173</td>
+      <td>0.020</td>
+      <td>0.137</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Relationships between validation variables and Brain-Age delta from all CU pooled subjects (including ALFA+, ADNI, EPAD and OASIS) and all MCI pooled subjects (including ADNI and EPAD). Results given by the linear model: brain-age delta ~each variable +chronological age+sex. The standardized regression coefficients (β), standard errors (SE), P-value, 95% Confidence Interval, number of individuals (N) and effect size are depicted for each variable.Significant values after FDR correction (p<0.05) are marked in bold. Effect size in categorical variables was calculated as Cohen’s D, while Cohens f2 was calculated for continuous measurements. Amyloid-β status was defined by CSF (ALFA+, ADNI, and EPAD) or amyloid PET (OASIS).APOE, apolipoprotein E; WMH, White Matter Hyperintensities; CSF, cerebrospinal fluid; NfL, neurofilament light; ref, reference.*Contains data from ALFA+, ADNI and EPAD.†Contains data from ALFA +and ADNI.‡Contains data from ADNI._
+
+### Associations with neurodegeneration biomarkers
 
 We next tested the associations between brain-age delta and neurodegeneration biomarkers (Figure 3 and Table 4). CSF NfL, plasma NfL and longitudinal change of the aging signature were available in ALFA + and ADNI. The positive associations between brain-age deltas and plasma NfL were significant within the CU (β=0.154, PFDR = 0.003) and MCI individuals (β=242, PFDR <0.001). CSF NfL was not significantly associated with brain-age delta (β=0.079, PFDR = 0.209). The association between the longitudinal change in the aging signature composite, which was obtained from the cortical thickness in aging-vulnerable regions, and brain-age delta was not statistically significant (β=0.053, PFDR = 0.415).
 
@@ -117,13 +1005,21 @@ We next studied the association between brain-age delta and neurodegeneration bi
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig4-v2.jpg)
 
-**Figure 4.:** a) and (b), the associations of brain-age delta and continuous validation variables stratified by sex for (a) CU individuals and (b) MCI individuals.Scatter plots representing the associations of CSF NfL, plasma NfL, brain atrophy and WMH with brain-age delta in females (green) and males (purple). Each point depicts the value of the validation biomarkers of an individual and the solid lines indicate the regression line for each of the groups. 95% Confidence intervals are shown in the shaded areas. The standardized regression coefficients (β) and the corrected p-values are shown, which were computed using a linear model adjusting for age and sex. Additionally, we also computed the ‘brain-age delta x sex’ interaction term. The sample size for each variable can be seen in Table 5.
+**Figure 4.:** Scatter plots representing the associations of CSF NfL, plasma NfL, brain atrophy and WMH with brain-age delta in females (green) and males (purple). Each point depicts the value of the validation biomarkers of an individual and the solid lines indicate the regression line for each of the groups. 95% Confidence intervals are shown in the shaded areas. The standardized regression coefficients (β) and the corrected p-values are shown, which were computed using a linear model adjusting for age and sex. Additionally, we also computed the ‘brain-age delta x sex’ interaction term. The sample size for each variable can be seen in Table 5.
 
 The associations between brain-age delta and CSF NfL in CU females did not survive multiple comparisons correction (β=0.129, p=0.046, PFDR = 0.102), and was also not significant in CU males (β=0.006, PFDR = 0.999). There was not an interaction effect of sex and CSF NfL on CU brain-age delta (Figure 4a) (Pinteraction_FDR=0.425). In the same line, the associations between brain-age delta and longitudinal aging signature in CU females and CU males were not significant (females: PFDR = 0.613 and males: PFDR = 0.417). The interaction effect of sex on this longitudinal biomarker was not significant (Pinteraction_FDR=0.924).
 
 In addition, we tested the interaction between age and brain age delta to predict these biomarkers, and further stratified these analyses by sex. We found a significant interaction effect of age and CU brain-age delta on CSF NfL (Pinteraction_FDR<0.001) within the CU individuals (Figure 5a), by which the measures of CSF NfL were higher with age and with larger brain-age deltas (older-appearing brain). When stratifying by sex, this interaction effect of age was seen in females (Pinteraction_FDR<0.001), but not in males (Pinteraction_FDR=0.393). Regarding plasma NfL (Figure 5b), although we found a similar direction in the associations by which the measures of plasma NfL were higher with age and with larger brain-age deltas for CU and MCI individuals, the interaction effects were not significant (Pinteraction_FDR=0.118 and MCI: Pinteraction_FDR=0.421). When stratifying by sex, this interaction effect of age on plasma NfL was seen in CU females (Pinteraction_FDR=0.040) and not in CU males (Pinteraction_FDR=0.999). On the contrary, the interaction effect of age and plasma NfL on brain-age delta did not survive multiple comparisons in MCI males (Pinteraction = 0.022, Pinteraction_FDR=0.050). This interaction effect was also not found in MCI females (Pinteraction = 0.605, Pinteraction_FDR=0.761). The rest of the associations with neurodegeneration biomarkers not reported here were non-significant.
 
-## Associations with markers of cerebrovascular disease
+![Figure 5.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig5-v2.jpg)
+
+**Figure 5.:** For visualization purposes, individuals were categorized into two groups according to their brain-age delta: ‘brain-age delta <0’ representing decelerated brain aging (blue); and ‘brain-age delta >0’ representing accelerated brain aging (red). Scatter plots representing the associations of CSF NfL, plasma NfL and WMH with age in individuals with brain-age delta >0 and brain-age delta <0. Each point depicts the value of the validation biomarkers of an individual and the solid lines indicate the regression line for each of the groups. The regression coefficients (β) and the FDR corrected p-values are shown, which were computed using a linear model adjusting for age and sex. Additionally, we also computed the ‘brain-age delta x sex’ interaction term. The sample size for each variable can be seen in Table 5.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81067/elife-81067-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The sample size for each variable can be seen in Table 4 and Table 5. For visualization purposes, individuals were categorized into two groups according to their brain-age delta: ‘brain-age delta <0’ representing decelerated brain aging (blue); and ‘brain-age delta >0’ representing accelerated brain aging (red). Scatter plots representing the associations of CSF NfL, plasma NfL and WMH with age in individuals with brain-age delta >0 and brain-age delta <0. Each point depicts the value of the validation biomarkers of an individual and the solid lines indicate the regression line for each of the groups.
+
+### Associations with markers of cerebrovascular disease
 
 We lastly tested the associations between brain-age delta and markers of cerebrovascular disease WMH; WMH data were available in ALFA+, ADNI and EPAD. In both CU and MCI, brain-age delta was significantly associated with WMH (CU: β=0.160, PFDR <0.001 and MCI: β=0.222, PFDR <0.001) (see Table 4). These results were consistent with the results from the within-cohort analyses (see Appendix 1—table 11).
 
@@ -131,7 +1027,7 @@ When studying the association between brain-age delta and WMH stratified by sex 
 
 ## Discussion
 
-In this study, we show that, in non-demented individuals, the predicted brain-age delta is associated with specific AD biomarkers (amyloid-β PET, CSF Aβ42 and CSF pTau) and risk factors (APOE genotype), as well as with unspecific neurodegeneration biomarkers (plasma NfL), and markers of cerebrovascular disease (WMH volume). However, our results do not show that variation in cross-sectional brain-age delta was able to capture longitudinal atrophy and, therefore, it is solely a cross-sectional analysis. Our results also indicate that there might be sex differences in the development of brain aging trajectories, which must be further characterized. Taken together, our findings validate the use of machine learning predicted brain-age delta as a non-invasive biomarker of brain aging, which is associated to AD pathology in non-demented individuals with abnormal levels of biomarkers of AD and axonal injury. The capacity of brain-age delta to de detect accelerated aging must be further studied.
+In this study, we show that, in non-demented individuals, the predicted brain-age delta is associated with specific AD biomarkers (amyloid-$\beta$ PET, CSF Aβ42 and CSF pTau) and risk factors (APOE genotype), as well as with unspecific neurodegeneration biomarkers (plasma NfL), and markers of cerebrovascular disease (WMH volume). However, our results do not show that variation in cross-sectional brain-age delta was able to capture longitudinal atrophy and, therefore, it is solely a cross-sectional analysis. Our results also indicate that there might be sex differences in the development of brain aging trajectories, which must be further characterized. Taken together, our findings validate the use of machine learning predicted brain-age delta as a non-invasive biomarker of brain aging, which is associated to AD pathology in non-demented individuals with abnormal levels of biomarkers of AD and axonal injury. The capacity of brain-age delta to de detect accelerated aging must be further studied.
 
 We have studied the associations between brain-age delta and different biomarkers of AD pathology and neurodegeneration in CU individuals. We are aware of the complexity of disentangling the effects of aging and pathology in brain aging. In this work, we do not aim to disentangle to what extent the brain structural differences are caused by AD pathology (as measured by the biomarkers that we study) or aging. Here, we show that an unspecific estimation of biological brain aging, agnostic of the underlying mechanisms is associated with the specific biological process of AD.
 
@@ -151,15 +1047,15 @@ In conclusion, we validated that machine-learning based brain age prediction obt
 
 ## Materials and methods
 
-## Participants
+### Participants
 
-We used a collection of T1-weighted brain MRI scans included in the UK Biobank (https://www.ukbiobank.ac.uk) cohort for training the proposed model and for calculating cross-validated brain age predictions. The dataset consisted of CU individuals (N= 22,661), after excluding subjects with ICD-9 and ICD-10 diagnosis, covering individuals of ages 44–81.
+We used a collection of T1-weighted brain MRI scans included in the UK Biobank (https://www.ukbiobank.ac.uk) cohort for training the proposed model and for calculating cross-validated brain age predictions. The dataset consisted of CU individuals ($N=$ 22,661), after excluding subjects with ICD-9 and ICD-10 diagnosis, covering individuals of ages 44–81.
 
-We also used four different cohorts to investigate the association between brain-age deltas with different sets of biomarker and AD risk factor measurements. Inclusion criteria for the independent cohorts consisted of: (i) availability of T1-weighted MRI brain scans; (ii) and availability of apolipoprotein E (APOE) categories and of CSF or PET measures for amyloid-β pathology acquired in less than a year from the MRI acquisition. These cohorts included individuals with different diagnosis: CU and MCI. ADNI cohort included CU and MCI individuals from ADNI 1,2 and 3 (N=751, CU = 253, MCI = 498), the EPAD cohort included CU and MCI individuals (N=808, CU = 653, MCI = 155), the ALFA + cohort included only CU individuals (N=380) and the OASIS cohort included CU individuals (N=407). MCI individuals, which were only included from ADNI and EPAD cohorts, were specified by a Clinical Dementia Rating = 0.5. We did not include individuals with a dementia diagnosis in the AD continuum because we wanted to focus on assessing the impact of abnormal AD biomarkers and risk factors on brain-age estimates in preclinical and prodromal AD stages.
+We also used four different cohorts to investigate the association between brain-age deltas with different sets of biomarker and AD risk factor measurements. Inclusion criteria for the independent cohorts consisted of: (i) availability of T1-weighted MRI brain scans; (ii) and availability of apolipoprotein E (APOE) categories and of CSF or PET measures for amyloid-$\beta$ pathology acquired in less than a year from the MRI acquisition. These cohorts included individuals with different diagnosis: CU and MCI. ADNI cohort included CU and MCI individuals from ADNI 1,2 and 3 (N=751, CU = 253, MCI = 498), the EPAD cohort included CU and MCI individuals (N=808, CU = 653, MCI = 155), the ALFA + cohort included only CU individuals (N=380) and the OASIS cohort included CU individuals (N=407). MCI individuals, which were only included from ADNI and EPAD cohorts, were specified by a Clinical Dementia Rating = 0.5. We did not include individuals with a dementia diagnosis in the AD continuum because we wanted to focus on assessing the impact of abnormal AD biomarkers and risk factors on brain-age estimates in preclinical and prodromal AD stages.
 
 All the individuals had available data for the following clinical variables: chronological age, sex, MMSE and years of education, which will be referred as clinical variables from now on. A more detailed description of the clinical variables of these datasets is given in Table 1. Regarding AD-related variables, ALFA+, ADNI and EPAD cohorts included CSF Aβ42 measurements for categorizing Aβ pathology status, AT status determined by CSF Aβ42 and CSF p-tau, APOE categories and WMH. OASIS, meanwhile, only had data available for Aβ PET and APOE categories. In addition, ALFA + and ADNI included biomarkers of neurodegeneration such as CSF NfL, plasma NfL and cortical atrophy measured by longitudinal changes in the so-called aging signature (Bakkour et al., 2013). The combination of available AD-related variables and neurodegeneration biomarkers will be referred as validation variables from so on. A more detailed description of the validation variables can be seen in Table 2.
 
-## Image acquisition and preprocessing
+### Image acquisition and preprocessing
 
 The UK Biobank, ADNI and OASIS datasets had available T1-weighted magnetic resonance (MR) images that had already been segmented with Freesurfer and had been parcellated using the FreeSurfer’s cortical Desikan-Killiany (Desikan et al., 2006) and subcortical aseg (Fischl et al., 2002) labeling pipelines, which had undergone a quality control procedure. Taking advantage of this available data, we decided to use the same segmentation pipeline with the ALFA + and EPAD cohorts. All the image acquisition and preprocessing done is as follows.
 
@@ -175,9 +1071,9 @@ For the EPAD cohort (Solomon et al., 2018), which is a multisite study, T1-weigh
 
 For all the cohorts, subsequent to the FreeSurfer segmentation, tissue regions were parcellated into 183 different anatomical regions of interest (ROI)s using the widely-used FreeSurfer’s cortical Desikan-Killiany (Desikan et al., 2006) and subcortical aseg (Fischl et al., 2002) labeling pipelines. As mentioned before, we used the available FreeSurfer segmentations from UK Biobank, ADNI, and OASIS cohorts. All volumes were residualized with respect to total intracranial volume (TIV) and to scanning site, while all cortical thicknesses were residualized with respect to scanning site, using linear models. Lastly, we performed a standardization procedure by computing z-score measurements feature-wise within each cohort, as previously performed (Casamitjana et al., 2018; Subramaniapillai et al., 2021; Ten Kate et al., 2018). We then assessed that there were not statistical differences in mean cortical thickness and volumes between the cohorts (see Appendix 1—figure 1).
 
-## Biomarkers
+### Biomarkers
 
-## CSF and plasma collection, processing and biomarkers measurements
+#### CSF and plasma collection, processing and biomarkers measurements
 
 CSF and blood collection, processing and storage in the ALFA + study have been described previously (Milà-Alomà et al., 2020; Suárez-Calvet et al., 2020). CSF p-tau181 was measured using the Elecsys Phospho-Tau (181 P) CSF electrochemiluminescence immunoassay on a fully automated cobas e 601 instrument (Roche Diagnostics International Ltd, Rotkreuz, Switzerland). CSF Aβ42 and NfL were measured with the NeuroToolKit on a cobas e 411 or cobas e 601 instrument (Roche Diagnostics International Ltd, Rotkreuz, Switzerland). Plasma NfL was measured using the commercial Quanterix assay (Simoa NF-light Kit cat. no. 103186) on a HD-X analyzer following the manufacturer’s instructions (Quanterix, Billerica, MA, USA). All these measurements were previously reported (Milà-Alomà et al., 2020; Suárez-Calvet et al., 2020). All measurements were performed at the Clinical Neurochemistry Laboratory, University of Gothenburg, Mölndal, Sweden, by laboratory technicians and scientists blinded to participants’ clinical information.
 
@@ -185,43 +1081,47 @@ In the ADNI study, CSF samples were measured according to the kit manufacturer�
 
 In the EPAD study, CSF was measured using the Elecsys β-amyloid (1–42) and the Elecsys Phospho-Tau (181 P) CSF electrochemiluminescence immunoassay on a fully automated cobas e 601 instrument (Roche Diagnostics International Ltd.). All measurements were performed at the Clinical Neurochemistry Laboratory, University of Gothenburg, Mölndal, Sweden, by laboratory technicians and scientists blinded to participants’ clinical information. Concentrations of CSF Aβ42 and p-tau181 were determined according to the manufacturer’s instructions (Solomon et al., 2018).
 
-## Amyloid-β positivity cutoffs
+### Amyloid-β positivity cutoffs
 
 For ALFA+, ADNI and EPAD, AT stages were defined by CSF Aβ42 and CSF p-tau, respectively. Previously used cut-offs were applied to each cohort, consisting of 1098 pg/mL for CSF Aβ42 for ALFA + and EPAD (Schindler et al., 2018) and of 880 pg/mL for CSF Aβ42 for ADNI (Hansson et al., 2018) and of 24 pg/mL for p-tau for the three cohorts (Milà-Alomà et al., 2020). For OASIS, we used the cut-off value of 17 Centiloids from literature (Salvadó et al., 2019).
 
-## WMH volumes
+### WMH volumes
 
 WMH volumes were generated for ALFA + and EPAD cohorts using Bayesian Model Selection (BaMoS) procedure (Sudre et al., 2015), which has been provided previously. We also obtained the already available WMH volumes for ADNI cohort, in which the method of WMH volumetric quantification was performed using probabilistic models in a Markov Random Field framework, as previously provided (Schwarz et al., 2009). For each cohort, total WMH volumes were derived by summing and multiplying the number of labeled voxels by voxel dimensions. Total WMH volumes were natural log transformed and residualized with respect to TIV using linear models.
 
-## Aging signature measurements
+### Aging signature measurements
 
 For ALFA + and ADNI, we computed the weighted Dickerson’s aging signature (Bakkour et al., 2013), which has been used as a proxy measurement for brain aging. The aging signature is a map of specific brain regions that undergo cortical atrophy in normal aging. This meta-ROI is composed of the surface-area weighted average of the mean cortical thickness in the following individual ROIs: calcarine, caudal fusiform, caudal insula, cuneus, inferior frontal gyrus, medial superior frontal and precentral cortices. A Z-score of this aging-specific measure was calculated based on the mean and standard deviation of the CU individuals, as done previously (Bakkour et al., 2013). This is referred as Aging Signature V1.
 
-In addition, we also computed this measurement on the scanners from the second MRI visit, referred as Aging Signature V2. We then computed a longitudinal brain atrophy measurement by computing the aging signature change over the years between the MRI acquisitions. Therefore, longitudinal aging signature change, or brain atrophy, was computed as:Agingsignaturechange=agingsignatureVisit2−agingsignatureVisit1Timebetweenvisits
+In addition, we also computed this measurement on the scanners from the second MRI visit, referred as Aging Signature V2. We then computed a longitudinal brain atrophy measurement by computing the aging signature change over the years between the MRI acquisitions. Therefore, longitudinal aging signature change, or brain atrophy, was computed as:
+
+$$
+Agingsignaturechange=\frac{agingsignatureVisit2−agingsignatureVisit1}{Timebetweenvisits}
+$$
 
 For a secondary analysis shown in Appendix 1—table 7, we also computed the aging signature (Aging Signature V1) for the remaining independent cohorts: EPAD and OASIS.
 
-## Brain-age prediction
+### Brain-age prediction
 
-## Regression model
+#### Regression model
 
-## Model workflow
+##### Model workflow
 
 For the current study, we used a gradient boosting framework: the XGBoost regressor model from the XGBoost python package (https://xgboost.readthedocs.io/en/) to run the brain age prediction. This regressor, which is based on a decision-tree based ensemble algorithm, was selected due to its speed and performance and its advanced regularization to reduce overfitting (Chen and Guestrin, 2016). In addition, large-scale brain age studies have demonstrated its adequacy (Bashyam et al., 2020; de Lange et al., 2019; de Lange et al., 2020b; Kaufmann et al., 2019). As it has been shown that there are sex-related trajectories in normal aging (Podgórski et al., 2021), we trained separate models for females and males. For each model, we first performed Bayesian parameter optimization based on a cross-validation scheme with ten folds repeated ten times using the FreeSurfer volumes and thickness of the UK Biobank as input. For the optimization we used HYPEROPT (Bergstra et al., 2013), with which we scanned for maximum depth, number of estimators, learning rate, alpha regularization, lambda regularization, subsample, gamma and colsample by tree. The optimized parameters were maximum depth = 4, number of estimators = 800, learning rate = 0.03, alpha regularization = 4, lambda regularization = 1, subsample = 0.36, gamma = 3 and colsample by tree = 0.89 for the males model; and maximum depth = 4, number of estimators = 850, learning rate = 0.03, alpha regularization = 8.5, lambda regularization = 14.5, subsample = 0.449, gamma = 3.5 and colsample by tree = 0.72 for the females model. We trained these two models and performed the brain-age prediction on the independent cohorts. We decided to compute a ROI based model using these 183 FreeSurfer regions because they are widely used and available in most of the neuroimaging datasets. Therefore, our aim was not to compare our performance to the one achieved by a model trained with larger number of ROIs or with the full 3D images, but to study the generalizability and the relevance of our model in the AD field.
 
-## Contribution of brain regions in prediction
+### Contribution of brain regions in prediction
 
 We computed SHAP (SHapley Additive exPlanation) values (https://github.com/slundberg/shap) (Lundberg et al., 2020) to measure the contribution of each brain region in the prediction of age for each subject. SHAP assigns an importance value within the prediction to each feature (in this case, brain region), which is based on its unique consistent and locally accurate attribution (Lundberg et al., 2020). We calculated the average SHAP value for each region for all females and males of the UK Biobank cohort.
 
 In addition, to assess that the regions with highest SHAP values were stable, we performed a permutation approach to study the significance of each region, separately for females and males. With this aim we compared the averaged SHAP value (region-specific) obtained when using the entire train set on the model to a null distribution calculated from 1,000 permutations performing subsample of the subjects, in which we trained and tested the model using 80% and 20% of the individuals, respectively.
 
-## Brain-age delta estimation
+### Brain-age delta estimation
 
 We predicted brain-age on the independent cohorts separately: ALFA+, EPAD, ADNI, and OASIS, using the previously trained model. To investigate the prediction performance, correlation analyses were run for predicted brain-age versus chronological age, R2, root mean square error (RMSE), and mean absolute error (MAE) were calculated for each independent cohort separately, as well as for females and males separate pooled from all independent cohorts. We also investigated the prediction performance on the UK Biobank cohort by computing the average latter metrics from a cross-validation with 10 splits and 10 repetitions.
 
-As recent research has shown that brain-age estimation involves a proportional bias (de Lange et al., 2020a; Le et al., 2018; Liang et al., 2019; Smith et al., 2019), we applied a well-established age-bias correction procedure to our data (de Lange et al., 2020a; Le et al., 2018). This correction, as originally proposed (de Lange and Cole, 2020c; Le et al., 2018), consists of a linear regression between age (Ω) and brain-predicted age (Y) on each of the independent cohorts, Y=α×Ω+β. The derived values of slope (α) and intercept (β) from the training set were used to correct the predicted brain-age in each test set by applying: Corrected Predicted Brain Age=Predicted Brain Age+[Ω−(α×Ω+β)]. By subtracting the chronological age from the Corrected Predicted Brain Age, we obtained the brain-age delta which was used to test the associations with the validation measurements.
+As recent research has shown that brain-age estimation involves a proportional bias (de Lange et al., 2020a; Le et al., 2018; Liang et al., 2019; Smith et al., 2019), we applied a well-established age-bias correction procedure to our data (de Lange et al., 2020a; Le et al., 2018). This correction, as originally proposed (de Lange and Cole, 2020c; Le et al., 2018), consists of a linear regression between age (Ω) and brain-predicted age ($Y$) on each of the independent cohorts, $Y=\alpha\timesΩ+\beta$. The derived values of slope (α) and intercept (β) from the training set were used to correct the predicted brain-age in each test set by applying: $Corrected Predicted Brain Age=Predicted Brain Age+[Ω−(\alpha\timesΩ+\beta)]$. By subtracting the chronological age from the Corrected Predicted Brain Age, we obtained the brain-age delta which was used to test the associations with the validation measurements.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were conducted using Python 3.7.0. We tested for normality of the distribution for each biomarker using the Kolmogorov-Smirnov test and visual inspection of histograms. CSF NfL and plasma NfL did not follow a normal distribution and were thus natural log transformed. In addition, to compare the measurements for CSF NfL and for plasma NfL coming from different cohorts (ALFA +and ADNI), CSF and plasma NfL was converted to z-scores.
 

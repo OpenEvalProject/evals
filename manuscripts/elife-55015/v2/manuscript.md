@@ -40,7 +40,7 @@ The extent of filament/oligomer formation by endogenous Dvl and Axin, and how th
 
 ## Results
 
-## DIX forms an antiparallel double helix that stabilizes filaments
+### DIX forms an antiparallel double helix that stabilizes filaments
 
 We produced DIX filaments by cleaving purified maltose-binding protein (MBP)-DIX fusion protein, which does not polymerize, with tobacco etch virus (TEV) protease (Figure 1a). The purified filaments run as a broad peak in size exclusion chromatography (SEC) with a size range of 4.9–9.5 MDa determined by Multi-Angle Light Scattering (MALS) (Figure 1b). The concentration dependence of filament formation was measured by a centrifugation assay in which the relative amount of soluble and pelleted filaments is determined by the intensity of the DIX band on an SDS-PAGE gel (Figure 1c,d). Sedimentable filaments were observed starting at a concentration of ~12 μM (Figure 1c,d), which is somewhat surprising given estimates of an intrinsic DIX–DIX KD of 5–20 μM obtained by analytical ultracentrifugation (Schwarz-Romond et al., 2007a) and fluorescence polarization of mutants designed to probe dimer formation (Yamanishi et al., 2019a).
 
@@ -50,15 +50,305 @@ We produced DIX filaments by cleaving purified maltose-binding protein (MBP)-DIX
 
 We obtained a cryo-electron microscopy (cryo-EM) map of the DIX filaments with a global resolution of 3.6 Å, which enabled a near atomic resolution structure (Figure 2, Figure 2—figure supplement 1, Table 1). Remarkably, unlike the single stranded fibers observed in crystals of Dvl2 DIX domains (Madrzak et al., 2015; Yamanishi et al., 2019b), in solution the Dvl2 DIX filament forms an antiparallel double helix (Figure 2b,c). Successive protomers in the filament are related by a rotation of 48.0 ± 0.2° around the helical axis, with a rise of 13.5 ± 0.3 Å per protomer. The pitch of the helix is 101.3 Å, larger than the pitch of the single stranded helix observed in crystals of Dvl2 Y27D (85 Å) and Y27W/C80S (88 Å) (Madrzak et al., 2015; Yamanishi et al., 2019b). Interestingly, antiparallel packing of Dvl1 Y17D DIX domains were observed in a crystal structure (Liu et al., 2011), although the pitch was considerably larger (140 Å).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cryo-EM image of purified Dvl2 DIX filaments. (B) Final sharpened cryo-EM map with helical symmetry imposed, with the two antiparallel strands shown in green and blue contours. (C) Final model of the Dvl2 DIX anti-parallel double helix, containing 12 subunits. The secondary structure elements are marked in the upper brown copy. The schematic diagram on the right shows the antiparallel structure, with each subunit represented as a triangle colored as in (B). (D) A portion of the final cryo-EM map (wire frame) and model showing a head-to-tail interface involving Y27 (head) packing against F56 and K68 (tail).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative 2D class averages of sections of filaments in a 150 Å by 150 Å box. (B) 3D classes. Particles belonging to the boxed 3D classes were used for the final reconstruction. (C) Unsharpened and sharpened maps. (D) Fourier Shell correlation coefficient as a function of resolution. The resolution is indicated at FSC = 0.143. (E) Local resolution estimation displayed on the sharpened map. (F) A representative subunit in map density, contoured at 2.7σ. (G) Map-to-model Fourier Shell correlation coefficients as a function of resolution. The resolution is indicated at FSC = 0.5.
+
+**Table 1.**
+ Cryo-EM data collection, refinement and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection and processing</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Magnification</td>
+      <td>29,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>0.5–2.0</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>No. Initial particle images</td>
+      <td>437,872</td>
+    </tr>
+    <tr>
+      <td>No. Final particle images</td>
+      <td>110,105</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>3.5–4.3</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−126</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>6IW3</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chains</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>7572</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>936</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td>59.4</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.47</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>4.58</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.4</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 We verified the accuracy of the structure by mutating residues that mediate contacts between protomers in a single strand, and between strands in the double helix. The head-to-tail interface within each strand is similar to that observed in crystal structures. For example, Y27 packs against F56 and K68 of a neighboring protomer (Figure 2d). The mutation Y27D is known to disrupt filament formation (Liu et al., 2011), and the purified Y27D mutant runs predominantly as a monomer on SEC (Figure 3a and see below). We next tested the role of the inter-strand contacts that form the antiparallel double helix (Figure 3b). These contacts are formed between two opposing protomers, principally by the β3-β4 (residues 60–66) and β4-β5 (residues 82–84) loops. Some residues on the β3-β4 loop (e.g., D63) participate in intra- and inter-strand interactions, whereas others appear to be involved solely in inter-strand contacts, including M60, G65 and N82. Mutating each of these last three residues individually reduced the apparent size of the DIX oligomer on SEC (Figure 3a), but they run larger than the monomeric Y27D, consistent with their ability to form intra-strand head-to-tail interactions. The G65D mutant, however, runs smaller than the others (Figure 3a, Figure 3—figure supplement 1), suggesting that the unique conformation of the loop at this position may not tolerate substitution with another residue, or that the mutation might affect head-to-tail interactions as well. Several of these inter-strand mutants were reported earlier, based on antiparallel strand-strand interactions in Dvl1 Y17D crystals (Liu et al., 2011) that are very similar to those observed in the present filament structure.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig3-v2.jpg)
+
+**Figure 3.:** (A) Comparison of TEV-cleaved Dvl2 DIX variants run on a Superose 6 size-exclusion column. Proteins were injected at 180 μM, and diluted to approximately 15 μM on the column. WT Dvl2 DIX elutes early in a broad peak, whereas point mutants that interfere with filament contacts exhibit varying degrees of oligomerization, manifesting as later elution volumes (smaller sizes). The MBP tag (42 kDa; elution volume = 18 mL) represents the largest peak by A280. The separation of the Y27D and G65D from the MBP can be seen on a Superdex 75 column, shown in Figure 3—figure supplement 1. (B) Inter-strand contacts within Dvl2 double helix. (C) Mutations of individual residues at intra- (Y27D) and inter- (M60A, G65D, N82D) strand interfaces cause defects in Wnt-dependent β-catenin signaling. Dvl2 constructs are expressed at near endogenous levels in Dvl Triple Knockout (TKO) cell line (see Figure 3—figure supplement 2 for more details). A construct with the Dvl2 DIX domain deleted (ΔDIX) is also shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) SEC profiles of purified Axin1 DAX and Dvl2 DIX mutants Y27D, G65D, and DIXDE on a Superdex 75 column 10/300. Proteins were injected at 60 μM (dashed lines) or 180 μM (solid lines) and were diluted to 5 or 15 μM on the column. G65D was run only at 60 μM and contained considerable MBP contamination from the previous purification step. Note that both Axin1 DAX and the inter-strand interface mutant DIXDE (60*DE*61) exhibit a concentration-dependent increase in size, in contrast to intra-strand interface mutant DIX Y27D, consistent with the ability to form head-to-tail contacts. (B) Comparison of SEC profiles of Dvl2 DIX mutants that were designed to disrupt intra-strand head-tail interactions (DIXY27D) and inter-strand interface interactions (DIXDE = 60*DE*61, DIXDC = 64*DC*65). Unlike in (A), protein constructs here were directly injected onto S75 column as crude TEV protease digests. Due to incomplete TEV digestion and the fact that MBP (peak elution volume at ~11 mL) has a much larger absorbance than DIX, the top panel was re-plotted at the bottom to focus on later elution volumes (which correspond to smaller oligomer sizes) where DIX proteins are found. (C) Gel fractions from each run covering the DIX peak (with ‘▲” marking the center of the peak). Both the DE and DC insertion mutants of Dvl2 DIX (DE, DC) elute earlier than Dvl2 DIXY27D.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** To measure the relative expression of Dvl2 constructs, whole cell lysates of Dvl TKO cells transfected with the indicated Dvl2 construct were analyzed by SDS-PAGE and imaged as anti-Dvl2 immunoblots. Expression levels from each transient transfection were closely matched to endogenous levels (marked as End. Dvl2). The average relative expression level of each mutant relative to WT Dvl2, as quantified using a Li-COR Odyssey 3.0 scanner, is indicated below its label. For clarity, unrelated lanes from a single gel blot were excised from the image, denoted by a slight gap. Different blots are separated by large gaps in the figure. Dvl2 constructs are abbreviated as follows: DE = 60*DE*61, DC = 64*DC*65, EE >KK = E22K/E24K, EE >QQ = E22Q/E22Q, NG = E815N/E816G, NQ/NG = D793N/E794Q/E815N/E816G, T2SAM = Tankyrase2 SAM.
 
 We tested the effects of the Dvl2 DIX structure-based mutants in a luciferase-based reporter (TOPFLASH) assay that measures Wnt-stimulated β-catenin/TCF–stimulated transcription (Molenaar et al., 1996), expressing mutant Dvl2 constructs in Dvl triple knockout (TKO) cells (Gammons et al., 2016b) cells at near-endogenous levels and normalizing the luciferase signal by the expression level of the mutant relative to wild-type Dvl2 (Figure 3c, Figure 3—figure supplement 2). As reported previously (Schwarz-Romond et al., 2007a), the Y27D mutation reduces signaling to near background levels, even though it can bind DAX (Yamanishi et al., 2019a). In contrast, the inter-strand contact mutants reduced signaling substantially, but varied in their level of suppression (Figure 3c), consistent with earlier studies that used overexpression of Dvl2 constructs (Liu et al., 2011).
 
 The structural, biochemical and signaling data indicate that the double stranded DIX filament is stabilized by inter-strand, antiparallel contacts that are functionally important. These contacts reinforce the head-to-tail interactions such that large assemblies begin to form at lower concentrations than would be predicted from the head-to-tail KD alone (Figure 1c,d). The data also indicate that a stable oligomer containing these anti-parallel strands is needed for signaling.
 
-## Axin DAX oligomerizes through a head-to-tail interface but does not form large polymers
+### Axin DAX oligomerizes through a head-to-tail interface but does not form large polymers
 
 Unlike Dvl2 DIX, Axin DAX runs on SEC in a peak with an abrupt rise and a long tail, at a volume that corresponds to a size much smaller than DIX filaments (Figure 4a, Figure 3—figure supplement 1a). SEC-MALS analysis revealed that purified DAX forms small oligomers in a concentration-dependent manner. At the highest concentration measured, 24 μM (a concentration at which DIX forms filaments; Figure 1c,d), it formed on average octamers (Figure 4b, Table 2). At the lowest concentration point of 0.7 μM, the average mass of 15 kDa likely represents a mixture of roughly 40% monomer with multiple higher-order oligomers, corresponding to an apparent KD of about 0.9 μM for the homomeric DAX-DAX interaction (Table 3). This is considerably stronger than previously published estimates that employed DAX mutants designed to produce isolated dimers (Fiedler et al., 2011; Yamanishi et al., 2019a), and importantly, is stronger than the estimated homomeric DIX–DIX affinity of 5–20 μM (Figure 1c,d and Schwarz-Romond et al., 2007a; Yamanishi et al., 2019a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig4-v2.jpg)
+
+**Figure 4.:** (A) Comparison of TEV-cleaved Axin1 DAX and Dvl2 DIX variants run on a Superose six size exclusion column (NG = E815N/E816G, NQ/NG = D793N/E794Q/E815N/E816G). Proteins were injected at 180 μM, and diluted to approximately 15 μM on the column. (B) SEC-MALS analysis of Axin1 DAX size as a function of concentration. (C) Superposition of the rat Axin1 crystal structure (PDB 1WSP; magenta) on one of the Dvl2 DIX domains (blue), showing potential clashes with another DIX protomer (green) across the inter-strand interface. Also shown is the substitution of N82 in DIX with E815 in DAX, which would eliminate the hydrogen bond with D63 of DIX and introduce electrostatic repulsion. Axin residue numbers are from the human Axin1 sequence. (D) Cryo-electron micrograph of DAX NQ/NG filaments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Dvl DIX domains are shown in the top block; sequence numbers correspond to the mouse Dvl2 domain used in this paper, which is identical to the human sequence shown. Axin DAX domains are shown in the lower block; sequence numbers correspond to human Axin1 sequence used in this study. Secondary structure elements are indicated. Arrowheads indicate sites of mutations used in this study. Black shading indicates 100% similarity; dark grey, 80–99% similarity; light grey, 60–79% similarity; and no shading,<60% similarity. Alignment was carried out in Geneious version 10.2.6 (Kearse et al., 2012) using the ClustalOmega plugin (Madeira et al., 2019). Similarity was calculated using the PAM250 algorithm (Schwartz and Dayhoff, 1978) with a threshold of 1.
+
+**Table 2.**
+ Summary of SEC-MALS runs on Axin constructs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Concentration injected (μM)</th>
+      <th>Concentration at detector* (μM)</th>
+      <th>Absolute mass (kDa)</th>
+      <th>Protomers/oligomer†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>﻿DAX</td>
+      <td>911</td>
+      <td>24.</td>
+      <td>90</td>
+      <td>8–10</td>
+    </tr>
+    <tr>
+      <td>DAX</td>
+      <td>66.3</td>
+      <td>5.0</td>
+      <td>41</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>DAX</td>
+      <td>22.1</td>
+      <td>1.7</td>
+      <td>26</td>
+      <td>2–3</td>
+    </tr>
+    <tr>
+      <td>DAX</td>
+      <td>6.6</td>
+      <td>0.71</td>
+      <td>15</td>
+      <td>1–2</td>
+    </tr>
+    <tr>
+      <td>DIDAX Y760D</td>
+      <td>57.1</td>
+      <td>20.</td>
+      <td>22</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DIDAX</td>
+      <td>68.7</td>
+      <td>0.54</td>
+      <td>90–100</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Directly measured from maximal dRI of peak.†DAX and DAX Y760D are 9.9 kDa; DIDAX and DIDAX Y760D are 26 kDa._
+
+**Table 3.**
+ Effect of including higher-order oligomers on estimation of DAX:DAX KD from SEC-MALS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Highest-order term included</th>
+      <th>KD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dimer</td>
+      <td>237</td>
+    </tr>
+    <tr>
+      <td>Trimer</td>
+      <td>672</td>
+    </tr>
+    <tr>
+      <td>Tetramer</td>
+      <td>844</td>
+    </tr>
+    <tr>
+      <td>Pentamer</td>
+      <td>907</td>
+    </tr>
+    <tr>
+      <td>Hexamer</td>
+      <td>932</td>
+    </tr>
+    <tr>
+      <td>Heptamer</td>
+      <td>941</td>
+    </tr>
+    <tr>
+      <td>Octamer</td>
+      <td>944</td>
+    </tr>
+    <tr>
+      <td>Nonamer</td>
+      <td>946</td>
+    </tr>
+    <tr>
+      <td>Decamer</td>
+      <td>946</td>
+    </tr>
+    <tr>
+      <td>Undecamer</td>
+      <td>946</td>
+    </tr>
+  </tbody>
+</table>
+
+_The concentrations of each oligomeric species were determined by numerically solving the system of equations that resulted from setting the total concentration of all protomers to 710 nM, the average mass to 15 kDa, and the dissociation constants for a monomer dissociating from the end of an oligomer all equal to each other, regardless of filament length. The KD was then determined from KD=monomer2[dimer]. An example of the system of equations for the trimer case is shown below, where m is the concentration of monomer in nM, d of dimer, and t of trimer.The total DAX protomer concentration across all species must sum to 710 nM:m+2d+3t=710The average mass must equal the measured 15 kD:10m+20d+3tm+d+t=15We assume the dissociation constants for a monomer dissociating from the end of an oligomer is independent of the length of the oligomer:m2d=mdt_
 
 Previous results have suggested that the regions of Axin N-terminally adjacent to its DAX domain, which were named the ‘D’ (dimerization) and ‘I’ (inhibition) domains, might modulate Axin oligomerization (Luo et al., 2005). SEC-MALS analysis of a purified construct containing the D, I and DAX domains (DI-DAX) indicates that it oligomerizes comparably to WT DAX (Table 2). Moreover, SEC-MALS analysis of purified DI-DAX Y760D, which is the mutation equivalent to DIX Y27D, shows it to be monomeric (Table 2). Thus, it appears that the D and I regions do not affect the oligomeric state of DAX, and the protomers interact through the head-to-tail interface.
 
@@ -66,9 +356,25 @@ We sought to understand sequence differences between DIX and DAX that would cont
 
 Next, we used the DIX structure to predict changes that would enable human Axin1 DAX to form filaments. We changed two acidic residues to their equivalent positions in DIX (E815N/E816G), alone or in combination with changing two charged residues in the β3-β4 loop to their neutral equivalents (D793N/E794Q). These DAX mutants (‘NG’ or ‘NQ/NG’) formed double-stranded filaments as assessed by SEC and electron microscopy (Figure 4a,d).The E815 change appears to be critical, as the equivalent N82 in DIX forms an inter-strand hydrogen bond with D63 (Figures 3b and 4c), and a negative charge introduced at N82 destabilizes double-stranded filament formation in DIX (Figure 3a). Overall, the data indicate that the inter-strand interactions in the double helix stabilize the DIX filament once a certain number of monomers are incorporated in a single strand, and that the DAX oligomer is small due to the inability to form inter-strand contacts.
 
-## Binding of Axin DAX results in capped Dvl DIX oligomers
+### Binding of Axin DAX results in capped Dvl DIX oligomers
 
 To test directly whether DAX and DIX can co-polymerize, as proposed in Axin recruitment models (Bienz, 2014), we mixed purified DAX with pre-formed DIX filaments in different ratios and asked whether DAX would co-sediment with DIX. Surprisingly, addition of Axin DAX reduced Dvl2 DIX filament size to the point that much of the protein no longer sedimented (Figure 5a,b). We confirmed these results using a total internal reflection fluorescence microscopy (TIRF) assay in which fluorescently labeled DIX filaments were mixed with unlabeled purified DAX protein. This produced a marked increase in mean fluorescence within the field of view (Figure 5c, Figure 5—figure supplement 1), presumably due to an increase in small DIX oligomers whose size is below the diffraction limit. A native gel shift assay also showed a reduction in the size of DIX oligomers upon addition of DAX (Figure 5—figure supplement 2). Interestingly, the DIX domain of the Wnt activator Ccd1 was also shown to disrupt Dvl DIX filaments (Liu et al., 2011).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig5-v2.jpg)
+
+**Figure 5.:** (A) Sedimentation of preformed DIX filaments (10 μM) mixed with increasing amounts of purified wild-type DAX, showing shift of DIX from the pellet (P) into the supernatant (S) (denoted by ^ ). A representative SDS-PAGE gel (with a portion excised for clarity) is shown here. (B) Quantification of solubilization of DIX filaments by wild-type DAX (black curve) and DAX with mutations in the head interface (Y760D; green curve), tail interface (V800A/F801A; blue curve), or both (Y760D/V800A/F801A; gray curve) carried out as in (A). (C) Representative images of 10 μM fluorescently labeled DIX filaments in the absence and presence of 50 μM purified DAX, showing increase in background fluorescence associated with filament disruption. Scale bar = 5 μm. (D) Model for DAX incorporation into a filamentous DIX oligomer in vitro.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Mean gray values (MGVs) in field of view were measured from multiple frames of AlexaFluor647-labeled DIX filaments in TIRF without DAX and with DAX addition. Each measurement was normalized against the mean MGV of DIX fluorescence without DAX within a technical replicate, that is the mean fold increase for “No DAX” measurements = 1.0. In total, data were collected from two technical replicates within each of two biological sample replicates. Addition of DAX to fluorescent DIX filaments significantly (p<0.05, Mann-Whitney U Test) increased the MGV in the field of view compared to ‘No DAX’ 2.32 fold, with a standard deviation of 0.45 estimated by bootstrapping (see Materials and methods).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Left, Axin1 DAX improves mobility of native Dvl2 DIX proteins in a concentration-dependent manner. Dvl2 DIX samples, labeled with AlexaFluor 488 (protocol as described for filaments used in TIRF imaging), were mixed with Axin1 DAX at the indicated concentrations. Each 15 μL reaction mix was diluted with 5x native loading buffer and run on a native PAGE gel to separate complexes based on differences in electrophoretic mobility. As indicated in the native PAGE panel (green box) and in the plotted band intensity distributions for each lane (purple box), increasing DAX concentrations shifted the distribution of DIX-488 populations towards more mobile (i.e., smaller) species. DIX-488 fluorescence was visualized using the SYBR Green setting on a Biorad Gel Doc EZ. Although some MBP/MBP-DIX could be detected using this setting, unlabled DAX samples run on an SDS-PAGE gel (blue box) could not be detected using the same acquisition and image contrast settings. Right, full unannotated images of protein gels used in the left figure.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Electrostatic surface rendering of the Dvl2 double helix. Negative potential shown in red, positive in blue. The electrostatic surface was calculated with ABPS (Baker et al., 2001) on a model prepared with PDB2PQR (Dolinsky et al., 2004). (B) Cryo-electron micrograph of Dvl2 DIX QQ mutant filaments. (C) Quantitation of solubilization of wild-type (in black), QQ (in green), or KK (in blue) Dvl2 DIX filaments by wild-type Axin1 DAX. (D) TOPFLASH assay for Wnt-dependent β-catenin signaling of Dvl2 electrostatic groove mutants expressed at near-endogenous levels in HEK293T Dvl triple knockout cells. Dvl2 Y27D is included for reference. Dvl2 constructs were abbreviated as follows: QQ = E22Q/E24Q; KK = E22K/E24K.
 
 To test whether the ability of DAX to disrupt DIX filaments requires insertion of DAX into one strand of a DIX filament, we repeated the sedimentation assay using DAX variants with mutations in their head (Y760D) or tail (V800A/F801A) that block the intra-strand interaction (Fiedler et al., 2011). Both mutants were able to solubilize the DIX filaments (Figure 5b). However, DAX mutated in both the head and tail interfaces, Y760D/V800A/F801A, failed to solubilize the DIX filament (Figure 5b). These results indicate that Axin DAX solubilizes Dvl DIX via its head-to-tail interface. With an input concentration of 10 μM DIX, the half-maximal loss of sedimentation occurred at approximately 15 μM DAX (Figure 5b). This concentration dependence was also observed in the native gel shift experiment (Figure 5—figure supplement 2). These data indicate that the DAX-DIX interaction is at best comparable to the homotypic DIX-DIX interaction, and weaker than the DAX-DAX interaction, observations consistent with previous NMR analyses (Fiedler et al., 2011).
 
@@ -76,7 +382,7 @@ The ability of the head or tail mutants to solubilize DIX filaments suggests tha
 
 The role of oligomer stability in determining the DAX-DIX interaction was examined further by assessing the role of a continuous electronegative groove that runs along the DIX filament (Figure 5—figure supplement 3a). The acidic residues that form this groove are strongly conserved in most Dvl proteins, but not Axin (Figure 4—figure supplement 1). We hypothesized that this feature is important to Dvl2 function and mutated two of the acidic residues, E22 and E24, to either glutamines (‘QQ’) or lysines (‘KK’), to reduce the negatively charged character of the groove. These residues do not contribute to the head-to-tail interaction in the DIX filament structure, and both the QQ (Figure 5—figure supplement 3b) and KK mutants (data not shown) formed double helical filaments. Remarkably, neither mutant could be solubilized by DAX in the sedimentation assay (Figure 5—figure supplement 3c). Also, the mutants showed nearly 100% sedimentation, vs. 80% in the WT case (Figure 5—figure supplement 3c), suggesting that they are more stable. Both pairs of mutations significantly impaired Dvl2 signaling (Figure 5—figure supplement 3d). We hypothesize that the acidic residues tune DIX oligomer stability such that it allows incorporation of Axin DAX; the QQ or KK mutations hyperstabilize the double stranded oligomer and thereby prevent binding of Axin indirectly by making the energetic penalty for incorporation much higher than in wild-type DIX. We cannot rule out that the mutations directly affect DAX affinity for DIX, as a recent structure of a non-filament forming DIX-DAX heterodimer revealed that E24 interacts with K789 on DAX (Yamanishi et al., 2019a). In this scenario, replacing E24 with lysine would be expected to disrupt this interaction, but the glutamine substitution would be tolerated. However, as the QQ and KK mutants display significant and identical TOPFLASH signals (Figure 5—figure supplement 3d), it seems more likely that the E24-K789 interaction does not contribute significantly to the DIX-DAX interaction.
 
-## Avidity enables Axin recruitment by Dvl2 to drive signaling
+### Avidity enables Axin recruitment by Dvl2 to drive signaling
 
 We hypothesized that the DIX oligomer produced by double strand formation provides avidity (i.e., multiple binding sites) that compensates for the intrinsically weak DAX-DIX interaction. To test this hypothesis, we assayed the ability of Dvl2 constructs bearing varying degrees of affinity and avidity for Axin binding to restore TOPFLASH signaling in Dvl TKO cells. The DIX insertion mutants DIX60*DE*61 and DIX64*DC*65 that disrupted the inter-strand interface (Figure 3—figure supplement 1) also ablated signaling (Figure 6). Based on this observation, we expected that Dvl2 with its DIX domain replaced by Axin1 DAX, which likewise cannot form double-stranded oligomers, would behave similarly. Remarkably, however, the DAX swap more than quadrupled the signal relative to wild-type DIX (Figure 6). We suggest that this result reflects the higher affinity of the DAX-DAX interaction, which can compensate for the loss of avidity resulting from the formation of single-stranded oligomers. This idea is consistent with several observations. First, replacing the Dvl2 DIX domain with the DAX NG or NQ/NG variants, which can form double-stranded oligomers, reduces signaling relative to the WT DAX swap (Figure 6). Also, the hyperstabilized Dvl2 DIX QQ and KK mutants reduce signaling relative to WT DIX (Figure 5—figure supplement 3). These data indicate that there is a balance between the avidity provided by the double stranded oligomer and the energetic penalty that it produces for binding WT DAX.
 
@@ -90,11 +396,23 @@ We next tested the combination of Sm1 with the DAX domain in Dvl2 but found no s
 
 The correlation of signaling with improved Axin recruitment is also supported by the replacement of Dvl2 DIX with the Tankyrase2 SAM domain (Figure 6). Like DIX domains, SAM domains form head-to-tail assemblies (Bienz, 2014). Although the SAM domain does not bind to Dvl or Axin, it does oligomerize Tankrase2, which in turn binds Axin (Mariotti et al., 2016). That the Tankyrase 2 SAM replacement restores signaling likely indicates that the SAM domain present in the Dvl2 construct indirectly recruit Axin via endogenous Tankyrases.
 
-## The size of Dvl oligomers is limited in cells
+### The size of Dvl oligomers is limited in cells
 
 When Dvl or Axin fused to a fluorescent protein is overexpressed, activation of Wnt signaling produces membrane-proximal puncta containing Dvl and Axin (e.g., Cliffe et al., 2003; Pronobis et al., 2017; Schwarz-Romond et al., 2007b). The ability of Dvl or Axin to form puncta correlates with the ability of purified DIX domains to oligomerize, and in the case of Dvl DIX, form filaments. Moreover, Dvl DIX polymerization mutants prevent signaling (Fiedler et al., 2011; Schwarz-Romond et al., 2007a; Figures 3c and 5), indicating that oligomerization of Dvl is necessary for signal transduction. However, the extent to which Dvl oligomerizes at endogenous levels has not been established (Gammons et al., 2016b; Ma et al., 2020; Schaefer et al., 2018; Smalley et al., 2005). Using HEK293T cells in which a C-terminal GFP fusion was knocked into the endogenous Dvl2 locus, we performed live epifluorescent imaging with and without Wnt3A stimulation. Although we confirmed that the cell line expressed Dvl2 at the same level as wild-type HEK293T cells and responded to Wnt3a stimulation (Figure 7—figure supplement 1), we failed to observe the multiple large Dvl clusters seen in overexpression studies. Irrespective of Wnt 3A stimulation, most cells had diffuse signal; ~20% had 1–2 observable and stable puncta, and ~2% had more than two such puncta (see Materials and methods-Live cell epifluorescene imaging; Video 1). These observations confirm recent findings that Dvl at endogenous expression levels showed few large clusters other than the likely MTOC/centrosome associated puncta (Gammons et al., 2016b; Ma et al., 2020).
 
+![Video 1.](https://cdn.elifesciences.org/articles/55015/elife-55015-video1.mp4.jpg)
+
+**Video 1.:** HEK293T Dvl2-GFP/Axin1-RFP cells were imaged in HEPES buffered media for ~15 hr.
+
 Wnt-activated Fzd has been thought to recruit Dvl to the membrane and activate Dvl oligomerization as the first step in signalosome formation (Gammons et al., 2016a; Gammons et al., 2016b; Nusse and Clevers, 2017). We therefore utilized TIRF to image Dvl2-GFP near the membrane to achieve high spatiotemporal resolution with high signal-to-noise ratio. To avoid issues of ligand accessibility, we developed an apical TIRF imaging setup (Jaykumar et al., 2016) in which the cells grown on PET filters are inverted with their apical sides down, with or without Wnt3A stimulation (Figure 7a,b). In both cases we observed many diffraction-limited low intensity spots per cell, indicative of complexes containing small numbers of GFPs. Approximately 10% of cells displayed 1–2 large puncta, some of which may be MTOC-associated Dvl, and rarely displayed more than two large puncta. Some of the diffraction-limited spots exhibited step photobleaching corresponding to single GFP photobleaching events. We performed single-particle tracking (Jaqaman et al., 2008), inferred the approximate single GFP intensity using Gaussian mixture models fitted to intensity distributions, and found that 90% of the spot intensities were within 10x of a single GFP intensity with or without Wnt3A stimulation (Figure 7c). Moreover, we could not detect a significant difference in the number of Dvl2-GFP molecules in these spots upon Wnt3A stimulation. Our results strongly suggest that at endogenous levels, membrane associated Dvl2-containing complexes rarely contain more than about 10 Dvl2 molecules, with or without Wnt3a stimulation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig7-v2.jpg)
+
+**Figure 7.:** (A) Setup for live cell TIRF imaging of the apical membrane of HEK293T Dvl2-GFP/Axin1-dsRed knockin cells. (B) Representative TIRF image. Scale bar = 5 μm. (C) Distribution of measured spot intensities shown as the average number of GFPs equivalent to measured value.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55015/elife-55015-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Anti-Dvl2 western blot of whole cell lysates from Dvl TKO cells, wild-type HEK 293 T cells, and the Dvl2-GFP/Axin1-dsRed knockin HEK293T cells. (B) TOPFLASH assay of Dvl2-GFP/Axin-dsRed knockin HEK293T cells. (C) Increase in cellular β-catenin in HEK293T Dvl2-GFP/Axin1-dsRed cells upon Wnt3A stimulation, detected as an increase in β-catenin staining (red). Representative fields of view for anti-β-catenin immunofluorescence are shown here. Scale bar = 10 μm. (D) Mean β-catenin staining intensity. Each point represents the mean value from a single image of a field of cells similar to what is shown in (C). (E) Spot detection with u-track (Jaqaman et al., 2008). Background subtracted Dvl2-GFP TIRF images without (left) and with (right) detection circles. Scale bar = 5 μm.
 
 ## Discussion
 
@@ -120,29 +438,354 @@ The preceding analysis considered the relative stoichiometry of a single LRP5/6�
 
 ## Materials and methods
 
-## Expression constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3) Codon-Plus RIL</td>
+      <td>Agilent</td>
+      <td>230245</td>
+      <td>Strain for expressing recombinant proteins</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL10-Gold ultracompetent cells</td>
+      <td>Agilent</td>
+      <td>200314</td>
+      <td>Strain used for molecular biology and creating recombinant DNA</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Dvl TKO HEK293T</td>
+      <td>Stephane Angers, University of Toronto See Gammons et al., 2016b https://doi.org/10.1242/jcs.195685</td>
+      <td></td>
+      <td>CRISPR/Cas9 deletion of hDvl1, hDvl2, and hDvl3 Authentication methods: deletions were confirmed by genomic DNA sequencing; immunoblotting with anti-Dvl2 (Figure 7—figure supplement 1) Mycoplasma contamination testing status: Tested</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Dvl2-GFP/dsRed-Axin1 HEK293T</td>
+      <td>This paper; cells were derived from cells purchased from the European Collection of Cell Cultures</td>
+      <td></td>
+      <td>C-terminal tagging by CRISPR/Cas9 gene editing Authentication methods: STR DNA profiling; flow cytometry and fluorescence microscopy using GFP/RFP; local genomic DNA sequencing; and anti-Dvl2 (Figure 7—figure supplement 1) and anti-Axin1 immunoblots Mycoplasma contamination testing status: Tested Contact Bienz laboratory for distribution</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>L and L3A</td>
+      <td>ATCC</td>
+      <td>L CRL-2648 L3A CRL-2647</td>
+      <td>Used for generating control and Wnt-conditioned media; See https://web.stanford.edu/group/nusselab/cgi-bin/wnt/</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Ampicillin resistance; expression in mammalian cell culture; includes a N-terminal M2 Flag tag Contact Weis lab for distribution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDF-Duet-His6-MBP-TEV</td>
+      <td>Novagen; modified in Weis lab to include MBP-TEV</td>
+      <td>71340</td>
+      <td>Streptomycin resistance; expression in bacterial cultures Contact Weis lab for distribution</td>
+    </tr>
+    <tr>
+      <td>RecombinantDNA reagent</td>
+      <td>pGEX-TEV</td>
+      <td>Choi et al., 2006 https://doi.org/10.1074/jbc.M511338200</td>
+      <td></td>
+      <td>Ampiicillin resistance; expression in bacterial cultures; pGEX-KG plasmid (ATCC) with a new TEV protease site Contact Weis lab for distribution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum</td>
+      <td>Gemini GemCell, U.S. Origin</td>
+      <td></td>
+      <td>Used to generating control and Wnt-conditioned media; provides low basal activity</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB Broth, Miller, granules</td>
+      <td>Fisher BioReagents</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amylose agarose</td>
+      <td>New England BioLabs</td>
+      <td></td>
+      <td>For purification by MBP affinity</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutathione agarose</td>
+      <td>Pierce</td>
+      <td></td>
+      <td>For purification by GST affinity</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Negative stain grids (carbon-coated copper)</td>
+      <td>EMS</td>
+      <td>CF200-Cu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cryo-EM lacey grids</td>
+      <td>EMS</td>
+      <td>LC200-Cu</td>
+      <td>Freezing done with Leica EM GP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Dvl2 polyclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>3216</td>
+      <td>IB (1:1000) RRID:AB_2093338</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Axin1 antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>C76H11</td>
+      <td>IB (1:1000) RRID:AB_2054638</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Beta-catenin monoclonal antibody L54E2, AlexaFluor647-conjugated</td>
+      <td>Cell Signaling Technology</td>
+      <td>4627</td>
+      <td>IF (1:300) RRID:AB_10691326</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Dvl2 (mouse)</td>
+      <td>This paper</td>
+      <td>GenBank U24160.2</td>
+      <td>residues 2–736; DIX = 12–92; Plasmid in pCS2+-M2-Flag; contact Weis lab for distribution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Axin1 (human)</td>
+      <td>This paper</td>
+      <td>NCBI NM_181050.3</td>
+      <td>corresponds to residues1–826 of NP_851393.1 DAX = 743–826 DI-DAX = 599–826 Plasmid in pCAN-M2S-myc; contact Weis lab fordistribution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tankyrase2 SAM domain (human)</td>
+      <td>Nai-Wen Chi (Addgene plasmid # 34691)</td>
+      <td>NCBI NP_079511.1</td>
+      <td>residues 867–940</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Sm1 residues 1–77 heptamerization domain (archaea)</td>
+      <td>Integrated DNATechnologies/This paper</td>
+      <td>NCBI WP_010878376.1</td>
+      <td>Contact Weis lab for distribution PDB: 1LJO; Törö et al., 2002</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MALS</td>
+      <td>Wyatt</td>
+      <td></td>
+      <td>See main text for more details</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>S75, S200, Superose 6 10/300</td>
+      <td>Pharmacia/GE</td>
+      <td></td>
+      <td>24 mL ‘increase’ columns are tolerant of high flow rates and have slight differences in elution profile</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TopFlash Dual-Light Reporter Gene Assay System</td>
+      <td>ThermoFisher/Applied Biosystems</td>
+      <td>T1005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AlexaFluor-488/647 C2 maleimide</td>
+      <td>ThermoFisher/Molecular Probes</td>
+      <td></td>
+      <td>See Materials and methods for more details</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion HiFi DNA polymerase</td>
+      <td>Fermentas/Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial ﻿assay or kit</td>
+      <td>FastDigest Restriction endonucleases</td>
+      <td>Fermentas/Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly HiFi 1-Step Kit</td>
+      <td>SGI DNA</td>
+      <td>GA1100-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Stain-free TGX</td>
+      <td>Biorad</td>
+      <td></td>
+      <td>Specifically visualizes Trp-containing proteins, using Gel Doc EZ</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Any Kd TGX</td>
+      <td>Biorad</td>
+      <td>4569036</td>
+      <td>Used for native gel runs</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LiCOR IR-dye secondary antibody and Odyssey 3.0 imaging system</td>
+      <td>LiCOR, Inc</td>
+      <td></td>
+      <td>Used for visualizing immunoblots and quantifying sedimentation assays</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.0.8</td>
+      <td>He and Scheres, 2017 https://doi.org/10.1016/j.jsb.2017.02.003 Scheres, 2012 https://doi.org/10.1016/j.jmb.2011.11.010 Zivanov et al., 2018 https://doi.org/10.7554/eLife.42166</td>
+      <td>RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND-4.1</td>
+      <td>Rohou and Grigorieff, 2015 https://doi.org/10.1016/j.jsb.2015.08.008</td>
+      <td>RRID:SCR_016732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Afonine et al., 2018 https://doi.org/10.1107/S2059798318006551</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley et al., 2010 https://doi.org/10.1107/S0907444910007493</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>Schindelin et al., 2012 https://doi.org/10.1038/nmeth.2019</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Astra 6</td>
+      <td>Wyatt Technologies</td>
+      <td>RRID:SCR_016255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBGrid</td>
+      <td>Morin et al., 2013 https://doi.org/10.7554/eLife.01456</td>
+      <td>RRID:SCR_003511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004 https://doi.org/10.1002/jcc.20084</td>
+      <td>RRID:SCR_004097</td>
+      <td>v1.14</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>v2.3.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8.0.2</td>
+      <td>GraphPad Software, Inc</td>
+      <td>Version 263 RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>u-track</td>
+      <td>Jaqaman et al., 2008 https://doi.org/10.1038/nmeth.1237</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>The MathWorks, Inc</td>
+      <td>Version 9.6.0.1072779 (R2019a)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioRender</td>
+      <td>BioRender - biorender.com</td>
+      <td></td>
+      <td>Used for Figure 7a</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression constructs
 
 Mouse Dishevelled2 (Dvl2; GenBank U24160.2; residues 2–736) and human Axin1 (NCBI NM_181050.3; our gene corresponds to residues 1–826 of NP_851393.1) genes were used to generate the constructs discussed below. Dvl2 DIX (12-92), Axin1 DAX (743-826), and DI-DAX (Dimerization/Inhibitory-DAX; 599–826) proteins were cloned in a modified pCDF-Duet-His6-MBP-TEV vector with streptomycin resistance. DI-DAX Y760D construct was cloned in a modified pGEX-TEV vector with ampicillin resistance. Mammalian FLAG-Dvl2 constructs were cloned in the pCS2+ M2-FLAG vector with ampicillin resistance. Human tankyrase 2 SAM domain (residues 867–940) was cloned from pFLAG-TNKS-2 (NCBI NP_079511.1, 2–1166), which was a gift from Nai-Wen Chi (Addgene plasmid #34691). The Archaeoglobus fulgidus (NCBI WP_010878376.1 residues 1–77) Sm1 heptamerization sequence was synthesized as a codon-optimized mini-gene for human host cell expression (Integrated DNA Technologies, Coralville IA), which was used as a template for creating fusion proteins with Dvl2. Constructs were cloned using Gibson assembly (SGI DNA, LaJolla CA), overlap extension PCR, and restriction endonuclease digest/ligation (Fermentas, Waltham MA). Site-directed mutagenesis was primarily performed using PCR with primer pairs designed using Agilent QuickChange; parental templates were digested with DpnI (New England BioLabs). Construct sequences are provided in Supplementary file 1.
 
-## Expression and purification of His6-MBP DIX, His6-MBP-DAX, GST-DI-DAX Y760D, and MBP-DI-DAX
+### Expression and purification of His6-MBP DIX, His6-MBP-DAX, GST-DI-DAX Y760D, and MBP-DI-DAX
 
 His6-MBP-DIX variants, His6-MBP-DAX variants, and GST or His6-MBP-tagged DI-DAX variants were transformed into BL21(DE3) Codon-Plus RIL Escherichia coli (Agilent, Santa Clara CA). A single colony or a scraping from a glycerol stock was used to inoculate a starter culture. After 16 hr, the culture was expanded 1:100 up to 2L cultures in Luria broth and induced at A600 ∼0.60 with 0.5 mM isopropyl β-D-thiogalactopyranoside (GoldBio, St. Louis MO) for 24 hr at 16°C. Cultures of MBP-tagged DIX or DAX in pCDF, and of GST-tagged DI-DAX in pGEX-TEV were grown in streptomycin (50 μg/mL) + chloramphenicol (34 μg/mL), and ampicillin (50 μg/mL), respectively. Cultures were harvested by centrifugation at 6000 x g for 15 min at 4°C. Harvested cell pellets were washed with ice cold 1x PBS and collected to be frozen with liquid nitrogen for storage at −80°C. Prior to lysis, for every 2L of culture, DNAse I (12 units; MilliporeSigma D5025) supplemented with 10 mM MgCl2 was added to cells resuspended in lysis buffer containing 20 mM Hepes pH 8.0, 150 mM NaCl, 5% glycerol, and 4 mM dithiothreitol (GoldBio). Lysis was performed using an Emulsiflex homogenizer (Avestin, Toronto ON) with two passes through ice water-chilled tubing at a target pressure of 15,000–20,000 psi. Clarified lysate was collected after 50,000 x g centrifugation for 30 min and batch-bound for 1 hr under gentle rotation onto a pre-equilibrated agarose column at 10 mL bed resin per 1L culture. The loaded column was then washed with the same lysis buffer supplemented with 1 mM EDTA and 500 mM NaCl under gravity flow and re-equilibrated. Amylose agarose (New England BioLabs, Ipswich MA) and glutathione agarose resin (Pierce, Waltham MA) were used for purifying MBP-tagged and GST-tagged proteins, respectively.
 
 All purification steps were carried out at 4°C or on ice. All buffers for protein purification were prepared with deionized MilliQ water, chilled ice-cold, and supplemented with a protease inhibitor mixture (1 mM phenylmethylsulfonyl fluoride, 21 μg/ml N-p-Tosyl-L-phenylalanine chloromethyl ketone, 42 μg/ml Nα-Tosyl-L-lysine chloromethyl ketone hydrochloride, 200 μM benzamidine, 150 nM aprotinin, 1 μM E-64, and 1 μM leupeptin). At each stage of purification, fractions were analyzed by stain-free SDS-PAGE (Biorad, Hercules CA). Coomassie blue and Sypro stains were used in cases where the protein construct was tryptophan-free. Reported protein concentrations were measured by absorbance at 280 nm, BCA (ThermoFisher Scientific, Waltham MA), or Bradford (Biorad, Hercules CA) methods. All proteins were concentrated in Amicon Ultra centrifugal concentrators with regenerated cellulose membrane (MilliporeSigma).
 
-## Production of soluble non-Filamentous DIX proteins
+### Production of soluble non-Filamentous DIX proteins
 
 MBP or GST fusion proteins bound to 10 mL of amylose or glutathione agarose beads suspended in 10 mL lysis buffer supplemented with 1 mM EDTA were cleaved with ~0.6 mg of TEV protease under gentle rotation overnight at 4°C. The eluate was collected, and the beads were further washed with 3 mL of lysis buffer. The combined eluate was filtered through a 0.2 μm PES syringe filter and loaded onto a Superdex 75 26/600 size exclusion column, which was run in lysis buffer with 1 mM EDTA. DAX and DI-DAX were concentrated to ~300 μM and 100–200 μM, respectively.
 
-## DIX filament production
+### DIX filament production
 
 Following column re-equilibration after a high-salt wash, MBP-DIX proteins were eluted with three column volumes of lysis buffer containing 10 mM D-(+)-maltose monohydrate (Sigma) applied to loose resin under gentle rotation for 30 min. After draining the first elution, one more column volume of elution buffer was mixed with the resin bed for 5 min to complete the elution. The combined eluate could be concentrated up to 15 mg/mL. Yields for soluble His6-MBP-DIX range from 15 to 100 mg/L. For long-term storage at −80°C, the proteins were supplemented with 5% sucrose and subjected to flash-freezing with liquid nitrogen. For cleavage of His6-MBP tag to trigger filament formation, 0.5 mg/mL TEV protease was mixed with His6-MBP-DIX at 1:35 v:v and incubated at 4°C overnight. Filaments were further purified using size-exclusion chromatography with a Superose 6 Increase 10/300 GL gel filtration column in lysis buffer containing 1 mM EDTA. For samples intended for electron microscopy, glycerol was omitted. Quantitative analysis of purified filaments by band intensity on stain-free SDS-PAGE gels indicates that the purified filament fractions contain ~10% uncleaved His6-MBP-DIX. No electron density could be attributed to the MBP tag in the helical reconstruction.
 
-## Negative stain electron microscopy
+### Negative stain electron microscopy
 
 Fresh samples from peak fractions following size-exclusion chromatography (3 μL) were applied onto carbon-coated copper grids that had been glow discharged for 60 s. Grids were negatively stained with 5 μL of 0.75% w/v fresh uranyl formate for 30 s. Images were acquired using a 200-keV Tecnai F20 microscope (Thermo Fisher Scientific) equipped with a Gatan K2 Summit direct electron detector (Gatan, Pleasanton CA).
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 Filament samples were taken from the peak fraction of each Superose 6 size exclusion chromatography run. Sample concentration was optimized for best imaging density at 120 ng/μL (Dvl2 DIX wildtype and E22Q/E24Q) and at 70 ng/μL (Axin1 DAX NQ/NG).
 
@@ -154,7 +797,7 @@ The DIX QQ sample was imaged on a Tecnai F20 electron microscope. Movie-mode mic
 
 The DAX NQ/NG sample was imaged on a Titan Krios electron microscope (Thermo Fisher Scientific) operated at 300 keV. Movie-mode micrographs were recorded at a nominal magnification of 22,500x using a K3 Summit direct electron detector (Gatan, Pleasanton CA) in super-resolution mode, with a pixel size of 1.096 Å/pixel and a dose rate of ~16 e-/Å2/s. The total exposure time was 2 s, and each micrograph had 40 frames. Motion correction and dose weighting were carried out as described for the WT DIX sample with the parameters given above.
 
-## Cryo-EM data processing and molecular modeling
+### Cryo-EM data processing and molecular modeling
 
 Processing was done in the SBGRID environment (Morin et al., 2013). Helical map reconstruction was performed with RELION 3.0.8 (He and Scheres, 2017; Scheres, 2012; Zivanov et al., 2018). Semi-automated particle picking on micrographs with defocus between 0.5 and 2.0 μm and estimated maximum resolutions < 4 Å yielded 437,872 particles. Successive rounds of reference-free 2D and 3D classification enabled selection of 110,105 particles from classes with well-defined features. The selected particles were subjected to 3D auto-refinement, Bayesian polishing and post-processing (map sharpening) to produce a final map with a global resolution estimate of 3.6 Å by the 0.143 Fourier shell correlation criterion (Rosenthal and Henderson, 2003; Figure 2—figure supplement 1d). The mask used for 3D refinement and sharpening was generated by extending a map 15 pixels from a preliminary model of all twelve subunits in Chimera (Pettersen et al., 2004). Using the ‘mask create’ job type in RELION, the map was then lowpass filtered to 15 Å and the binarization threshold set to 0.06 before application of a binary edge of 1 pixel and a soft edge of 4 pixels. The final map was symmetrized according to the refined helical rise and twist after post-processing using the --impose option in the RELION_helix_toolbox. Local resolution (Figure 2—figure supplement 1e) was calculated from the unsharpened map in RELION.
 
@@ -162,39 +805,39 @@ We used the crystal structure of Dvl2 DIX Y27W/C80S (PDB 6IW3, with the Trp and
 
 Coordinates of the Dvl2 DIX filament have been deposited in the PDB, code 6VCC, and the cryo-EM map in the EMDB, code EMD-21148.
 
-## DIX filament sedimentation assays
+### DIX filament sedimentation assays
 
 Purified Dvl2 DIX filament samples with or without Axin DAX were incubated at room temperature for 30 min, then centrifuged at 386,000 x g for 7 min at 4°C. After removal of the supernatant, the pellet was resuspended by vortexing in 1X SDS-PAGE sample buffer for 30 s. Pellet and supernatant fractions were then run on a 15% Tris-glycine-SDS gel containing 6M urea. The gel was stained with Coomassie blue and imaged on a LiCOR scanner (LICOR, Inc, Lincoln, NE), and band intensities determined in FIJI (Schindelin et al., 2012). Data from biological and technical replicates were analyzed in GraphPad PRISM 8. Error bars represent the standard error of the mean.
 
 For filament formation assays, MBP-DIX at the indicated concentrations was incubated with 27 ng/µL TEV protease overnight at 4°C, and the samples were then pelleted as described above. Supernatant and pellet samples were run on a NuPage 4–12% Bis-Tris gel (ThermoFisher Scientific), which was visualized with Sypro Ruby stain (ThermoFisher Scientific, Waltham, MA) using a BioRad Gel Doc EZ Gel Imager (BioRad, Hercules, CA). Band intensities were quantified and plotted as described above.
 
-## Sizing of DAX and DIX domain variants on Superdex 75
+### Sizing of DAX and DIX domain variants on Superdex 75
 
 For the data in Figure 3—figure supplement 1, 500 µL samples were injected onto a Superdex 75 10/300 column that was pre-equilibrated with 25 mM HEPES, pH 8.0, 150 mM NaCl, 2 mM DTT, 1 mM EDTA, and 5% glycerol. The samples were run at 0.5 mL/min. Runs showing multiple peaks were analyzed by SDS-PAGE, followed by Coomassie staining.
 
-## Multiangle light scattering
+### Multiangle light scattering
 
 The molecular weights of Dvl2 DIX, Axin1 DAX or DI-DAX samples (100 μL) were determined by size exclusion chromatography coupled with inline multi-angle light scattering (MALS) using a Superose 6 10/300 (for Dvl2 DIX) or Superdex 200 10/300 GL (for DAX and DI-DAX) column attached to a UV detector, followed by a DAWN Heleos-II and an Optilab T-rEX refractive index (RI) detector (Wyatt Technology, Santa Barbara CA). The system was equilibrated with 25 mM HEPES, pH 8.0, 150 mM NaCl, 2 mM DTT, 1 mM EDTA, and 0.01% NaN3 at 25°C. 5% glycerol was included in experiments with Axin1 DAX, and 400 mM NaCl was used for DI-DAX. Detectors were calibrated by measuring the signal of monomeric bovine serum albumin at ~70 kDa. The absolute mass over the course of the run was determined with ASTRA 6 software (Wyatt Technology) using the signals from the MALS and the RI detectors. Concentrations at the detector were determined from the maximum dRI of the peak.
 
-## Native protein gel electrophoresis of DIX-DAX mixed samples
+### Native protein gel electrophoresis of DIX-DAX mixed samples
 
 Purified DIX filament and DAX samples were mixed at the indicated concentrations and incubated for 30 min at room temperature. To each 15 μL mix, 5x native loading buffer (250 mM Tris-HCl, pH 6.8, 50% glycerol, no loading dye) was added. Samples (14 μL) were loaded into lanes where indicated of an Any kD Mini-PROTEAN TGX 15-well gel (#4569036, Biorad, Hercules CA). Electrophoresis was carried out in native Tris-glycine buffer (25 mM Tris, 190 mM glycine, pH ~8.3) at 4°C at 25V for 12 hr followed by an additional 2 hr at 100V. DIX filaments labeled with AlexaFluor-488 C2 maleimide (with some residual dye left over from using a 2 mL 7,000 MWCO Zeba spin desalting column) were visualized using the SYBR Green setting of a Biorad Gel Doc EZ instrument with a 10 s exposure. To confirm specific detection of DIX fluorescence, DAX samples were run on SDS-PAGE and were visualized using the same acquisition and image contrast settings. Both native- and SDS-PAGE gels were stained with Coomassie Blue for total protein.
 
-## Wnt signaling assays
+### Wnt signaling assays
 
 The activities of full-length Dvl constructs were tested using a Wnt-responsive TOPFlash luciferase reporter assay by transient expression in Dvl TKO HEK293T cells (generously provided by Stephane Angers, University of Toronto). Cells were seeded in a white opaque CulturPlate-96 (Perkin Elmer, Waltham MA) in DMEM containing 10% (v/v) FBS. After 6 hr, cells were transiently co-transfected with a SuperTOPFlash plasmid, as well as the indicated Dvl mutants, using Lipofectamine 2000 (Life Technologies) according to the manufacturer's protocol. The media were replaced with either conditioned media produced from mouse L cells (control) or from L cells expressing Wnt3a at 18 hr post-transfection, supplemented with 20 mM HEPES pH 8.0. After another 18 hr, Luciferase reporter luminescence was measured in a Synergy two plate reader (BioTek, Winooski VT). Activity assays for each Dvl construct were carried out at least three times, each with triplicate technical replicates. To report levels of Wnt-dependent Dvl2 signaling, each measurement in relative luciferase units was normalized to the level of wild type Dvl2 stimulated with Wnt3a conditioned L cell media. Dvl constructs were expressed at near endogenous levels, determined by using wildtype HEK293T cell lysate as a reference, blotted with anti-Dvl C terminus antibody (#3216, Cell Signaling, Danvers MA) and measuring the intensity of the Dvl band determined using a LICOR scanner (LICOR, Inc, Lincoln, NE) (see Figure 3—figure supplement 1). Data from biological and technical replicates were analyzed in GraphPad PRISM 8. Error bars represent the standard error of the mean.
 
-## CRISPR/Cas9 mediated endogenous tagging of Dvl2 and Axin1
+### CRISPR/Cas9 mediated endogenous tagging of Dvl2 and Axin1
 
 Endogenously tagged HEK293T cells were generated essentially as described (Sakuma et al., 2015). In brief, DVL2 and subsequently Axin1 were C-terminally tagged at their endogenous loci using CRISPR/Cas9 gene editing and micro-mediated homologous end joining (MMEJ) to introduce GFP-T2A-PURO and RFP-T2A-HYGRO, respectively. The CRISPR guide design tool crispr.mit.edu was used to design targeting guides (DVL2 – CAATCCCAGCGAGTTCTTTG; Axin1 – CATCGGCAAAGTGGAGAAGG), which were cloned into pX330A-1 × 2 (Addgene #58766) and combined with pX330A-2-PITCh (Addgene #63670) by golden gate cloning. To generate the DVL2 repair construct, DVL2 micro-homology arms were cloned into pCRIS-PITChv2 (Addgene #63672) either side of GFP-T2A-PURO. To generate the Axin1 repair construct Axin1 micro-homology arms and T2A sequences were incorporated into overlapping primers used to amplify RFP from ds-RED-N1 and HYGRO from pcDNA5/FRT/TO and assembled into pCRIS-PITChv2 by Gibson Assembly.
 
 HEK293T cells (50–60% confluence) were transfected with pX330A/PITCh and pCRIS-PITChv2 (2:1) using PEI, the media was changed the next day, and selection was started 72 hr post-transfection (1 μg/ml puromycin or 100 μg/ml hygromycin) for 7 days. After recovery, GFP/RFP positive cells were sorted into individual clones by flow cytometry. Clones were analyzed by local genomic DNA sequencing and expression was confirmed by western blot analysis using anti-DVL2 (CST #3216) and anti-Axin1 (CST #C76H11) antibodies.
 
-## TIRF microscope
+### TIRF microscope
 
 Total internal reflection fluorescence (TIRF) microscopy was done with an inverted microscope (Nikon TiE) using an Apo TIRF x100 oil, NA 1.49, objective lens (Nikon) and was controlled through Micromanager (Edelstein et al., 2014). Experiments were conducted at room temperature for the in vitro filament assays and using an objective heater (Bioptechs) set at 37°C for the live cell experiments. The microscope was equipped with a Perfect Focus System. A red laser (635 nm, Blue Sky Research) and a blue laser (473 nm Obis, Coherent) were used for Alexa Fluor 647 and GFP excitation respectively. Emitted light went through a quad-edge laser-flat dichroic with center/bandwidths of 405 nm/60 nm, 488 nm/100 nm, 532 nm/100 nm, and S5 635 nm/100 nm from Semrock (Di01-R405/488/532/635−25 × 36) and a corresponding quad-pass filter with center/bandwidths of 446 nm/37 nm, 510 nm/20 nm, 581 nm/70 nm, 703 nm/88 nm bandpass filter (FF01- 446/510/581/703–25). An additional filter cube (679 nm/41 nm, 700 nm/75 nm for Alexa Fluor 647 imaging; 470 nm/40 nm, 495 nm LP, 525 nm/50 nm for GFP imaging) was included before the camera in the light path. All analyzed images were taken at 100 ms exposure time using the full chip of a Hamamatsu Orca Flash 4.0 camera (chip size 2048 × 2048 pixels). The average background in different ~20 μm boxes varied ~10% over the field of view.
 
-## TIRF imaging of purified DIX filament severing by DAX
+### TIRF imaging of purified DIX filament severing by DAX
 
 For fluorescent labeling of DIX at Cys80 (the only Cys in the MBP-DIX construct), 500 μL of His6-MBP-DIX at ~10 mg/mL was exchanged into buffer containing 50 mM HEPES, pH8.0, 150 mM NaCl, 1 mM EDTA, and 4 mM TCEP using a 2 mL 7,000 MWCO Zeba spin desalting column (ThermoFisher Scientific, Waltham MA). The protein was incubated with 40 μL of 10 mM AlexaFluor-647 C2 maleimide (ThermoFisher Scientific, Waltham MA) (stock dissolved in DMSO) overnight at 4°C. The reaction was quenched by the addition of DTT to a final concentration of 10 mM, and the protein was cleaved for one hour at room temperature by adding 0.5 mg/mL TEV protease at 1:35 v/v. Labeled filaments were further purified using size-exclusion chromatography with a Superose 6 Increase 10/300 GL gel filtration column in lysis buffer containing 1 mM EDTA. Functionality of labeled DIX filaments was verified by negative stain EM, resistance to serial dilution and DAX solubilization assays (data not shown). Dye coupling efficiency to DIX Cys80 was >50% based on the relative extinction coefficients of the protein and dye.
 
@@ -204,27 +847,27 @@ Images were processed in FIJI (Schindelin et al., 2012). Each pair within a repl
 
 We recorded the ratio of the means for each replicate. We used bootstrapping (resampling 5000 times) to get a distribution for the means that was fit to a Gaussian. The standard deviation of each mean was propagated to produce error values for each ratio of means. The 4 values of the ratio of means were then averaged to get the mean ratio of means with errors from the previous step propagated.
 
-## Immunofluorescent staining for β-catenin accumulation
+### Immunofluorescent staining for β-catenin accumulation
 
 Dvl2-GFP/dsRed-Axin1 HEK293 cells were seeded at ∼60% confluence in Lab-Tek chamber slides (Nunc 177380) that were pre-coated with 0.1 mg/mL poly-D-lysine (Sigma P6407). The following day, the cells were washed with Hanks’ balanced salt solution (HBSS) (Gibco 24020117) and then treated at 37°C with L cell control or Wnt3A-containing conditioned media for 2 hr. At the end of treatment, cells at room temperature were fixed for 10 min with 2% formaldehyde (Electron Microscopy Sciences 15710), and permeabilized for one hour with 0.1% Triton X-100 (Biorad 1610407) supplemented with 1% BSA (Sigma). Cells were then stained overnight at 4°C with AlexaFluor 647-conjugated anti-β-catenin antibody L54E2 at 1:300 dilution supplemented with 3% BSA (2677S, Cell Signaling). Between and after each of these steps, cells were washed three times with HBSS, which was also used to make up each reagent. Sample mounting was achieved using ProLong glass antifade mountant with NucBlue (Invitrogen P36983), and each chamber was sealed with a glass coverslip. Cell epifluorescence was imaged at 60x and AlexaFluor647 was detected on the Cy5 channel. For every condition, 5–7 fields of view, each with ~100 cells, were acquired under the same exposure. Mean gray values (MGVs) at the center of each frame were measured and tallied per condition for comparison as shown in Figure 7—figure supplement 1d.
 
 The collection of the MGVs in the center (1000-by-1000 pixels) of each frame in the ±Wnt conditions were significantly different as assessed by the Mann-Whitney U test (p<0.05). A bootstrap test was run to reject the null hypothesis that the means were not different where the collection of points were resampled at the sample size and difference of means calculated for 500 runs. The middle 95% of the resulting mean difference distribution was positive indicating a significant rise in β-catenin levels.
 
-## Cell culture for live cell imaging
+### Cell culture for live cell imaging
 
 For the short-term epifluorescent live cell imaging and the apical single molecule localization microscopy assay, HEK293T Dvl2-GFP/Axin1-RFP cells were passaged no more than two times after expansion, incubated in sterile-filtered DMEM media containing phenol red (15 mg/L), high glucose (4500 mg/L), L-glutamine (584 mg/L) (Thermo Fisher Scientific, 11965092), with added 10% FBS, Sodium Pyruvate (110 mg/L), and 1% penicillin–streptomycin (Thermo Fisher Scientific, 15140122). Cells were passaged through splitting by cell dissociation using 0.25% Trypsin-EDTA (Life Technologies, 25200056) and subculturing. L control conditioned media, and L Wnt3A-conditioned media are described above in the Wnt signaling assay section. For the long-term epifluorescent live cell imaging, the cells were passaged 3 to 4 times in DMEM based media with same supplements as above but with HEPES based CO2-independent buffering (5958 mg/L) (Thermo Fisher Scientific, 21063045) instead of phenol red.
 
-## Epifluorescence microscope
+### Epifluorescence microscope
 
 An inverted Nikon Ti-E microscope was controlled using Micromanager (Edelstein et al., 2014). The microscope was connected to a pre-equilibrated heating chamber set to 37°C and equipped with a Perfect Focus System, a Heliophor light engine (89 North) and an Andor sCMOS Neo camera. We utilized two objective lenses: a CFI Plan Apo Lambda x40 0.95 air objective lens; and a CFI Plan Apo Lambda x60 1.40 air objective lens. Acquisitions were performed on GFP and Cy5 channels as appropriate.
 
-## Live cell epifluorescence imaging
+### Live cell epifluorescence imaging
 
 For short term imaging, we seeded cells overnight onto two wells with passaging media (DMEM with 10% FBS) and two wells with L control conditioned media in a 24-well glass bottom plate (FisherScientific NC0397150). Before imaging, we changed one well each from the passaging or L control media into L Wnt3A-conditioned media. Multiple regions of the Wnt-stimulated cells were imaged at 60x magnification at 10–20 min and 40–50 min. We also imaged multiple regions of the control cells at the start and end of the experiment. All fluorescence images used for manual counting were acquired with 300 ms exposures.
 
 For long-term epifluorescence imaging (Video 1), cells were seeded overnight in a 24-well glass bottom plate (FisherScientific NC0397150). We recorded coordinates of multiple regions within and across wells and sequentially acquired images from all the regions every ~3 min for ~16 hr at 40x magnification.
 
-## Apical TIRF live cell imaging for Dvl2-GFP tracking and intensity analysis
+### Apical TIRF live cell imaging for Dvl2-GFP tracking and intensity analysis
 
 All experiments were conducted using an objective heater (Bioptechs) equilibrated at 37°C and all media used at all stages were also equilibrated at 37°C. Two sets of experiments were run. In the first set, cells were imaged before and after stimulation with Wnt3A conditioned media, whereas the second set were replicates using only Wnt3A stimulated cells. In the first set, cells were seeded overnight in passaging media on the outer facing part of the filter of transwell inserts (12 mm Transwell, 0.4 µm Pore Polyester Membrane Insert, Corning, 3460). The transwells were kept inverted in 6-well flat bottom plates to ensure cell settling (Corning CoStar, 3506) and incubated in ~200 μL media for 1–2 days. The empty wells were filled with media for humidity. Whenever needed, the 6-well plate lid was placed and removed with care to avoid perturbing the media sandwiched between the lid and the transwell tops. Before imaging, a 35 mm glass bottom dish with 20 mm micro-well (#1.5 cover glass) (Cellvis, D35-20-1.5-N) was equilibrated at 37°C with 1.5 ml passaging media. The transwell in the experiment was inverted gently using tweezers into a 12-well flat bottom plate (Corning CoStar, 3512) that was used as a stable carrier for transfer to imaging room, with cells apical side down inside ~0.5 ml passaging media. Immediately after inversion, 1 ml passaging media was added to the inside of the transwell filters. A custom designed 3D printed holder allowed stable placement of the glass bottom dish on the microscope. After removal of the lids of the plate and the glass bottom dish, the transwell insert was quickly and gently transferred with sterile tweezers onto the micro-well, with cells still apical side down. The perfect focus system would not always work as desired with the transwell insert above the glass, and it was sometimes necessary to find the correct plane before placement of the insert onto the micro-well. Imaging commenced immediately following placement of the transwell insert. After imaging a number of regions, the transwell insert was gently lifted, the micro-well was spiked with 0.5 ml L Wnt3A-conditioned media equilibrated at 37°C, and the transwell insert was gently positioned back. Imaging continued for up to ~70 min.
 

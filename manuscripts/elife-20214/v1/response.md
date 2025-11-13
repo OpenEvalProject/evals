@@ -40,9 +40,7 @@ All code/script will be publicly available and annotated so that others can repl
 
 5) What influence does the size of the training set have on PLSR's accuracy?
 
-We have created a training set and validation set by randomly dividing the available data in two equally sized sets. Our training is cross-validated meaning that the size of the training set should not influence i.e. is not over-fitted to the data. However, like any machine learning, we are restricted by the availability of data, the cohort we have collected from. If we test this ‘theory of influence’ and we selected only 10% of samples to form our training set and get a different answer, does this mean that PLSR has failed? No. It means that the data we have selected is not representative of the overall cohort. What we can assess is the robustness/sensitivity of the method to sample size. We have addressed this by investigating the effect of a reduction in the training set size by reducing the training set to have 50%, 60%, 70%, 80% and 90% of the participants in the complete training set. As shown in Author response image 1, we see no significant effect on the performance of our model when applied to the data in our independent validation set. Thus, we believe our model to be robust and applicable to the wider population.10.7554/eLife.20214.024Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.20214.024
-
-DOI: http://dx.doi.org/10.7554/eLife.20214.024
+We have created a training set and validation set by randomly dividing the available data in two equally sized sets. Our training is cross-validated meaning that the size of the training set should not influence i.e. is not over-fitted to the data. However, like any machine learning, we are restricted by the availability of data, the cohort we have collected from. If we test this ‘theory of influence’ and we selected only 10% of samples to form our training set and get a different answer, does this mean that PLSR has failed? No. It means that the data we have selected is not representative of the overall cohort. What we can assess is the robustness/sensitivity of the method to sample size. We have addressed this by investigating the effect of a reduction in the training set size by reducing the training set to have 50%, 60%, 70%, 80% and 90% of the participants in the complete training set. As shown in Author response image 1, we see no significant effect on the performance of our model when applied to the data in our independent validation set. Thus, we believe our model to be robust and applicable to the wider population.10.7554/eLife.20214.024Author response image 1.
 
 6) Can PLSR be used to rule out rhythmicity (ala Molecular timetable and ZeitZeiger)?
 
@@ -86,9 +84,7 @@ Molecular time table methods as applied in this manuscript require a transcript 
 
 As an example, there are 12 Lech et al. genes. Which are targeted by 153 probes on our microarray. The probes include ‘custom’ probes of ours that potentially target different splice variants of ‘classical’ clock genes (see Supplementary file 1B) and Agilent standard probes. Of the 29 Agilent standard probes targeting the genes of Lech et al., a total of 26 probes passed our probe quality control assessments. Given that some genes are targeted by more than one probe, for each gene, the standard probe with the highest correlations was used to represent each gene.
 
-As can be seen that for the 12 Lech et al. genes:10.7554/eLife.20214.025Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.20214.025
-
-DOI: http://dx.doi.org/10.7554/eLife.20214.025
+As can be seen that for the 12 Lech et al. genes:10.7554/eLife.20214.025Author response image 2.
 
 ARNTL, CAPRIN1, CLOCK, PER3, ROCK2 do not reach the Pearson correlation cut-off of 0.3 between the templates and the data in any of the four datasets.
 

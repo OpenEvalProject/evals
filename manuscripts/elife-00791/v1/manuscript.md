@@ -14,4 +14,4 @@
 
 ## Abstract
 
-The circadian clock of Arabidopsis , a popular model organism for plants, is more complex than expected, with negative feedback loops based on the repression of gene expression having a less exclusive role than previously thought.
+The circadian clock of Arabidopsis, a popular model organism for plants, is more complex than expected, with negative feedback loops based on the repression of gene expression having a less exclusive role than previously thought.

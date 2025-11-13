@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.43464.001 Linking interindividual differences in psychological phenotype to variations in brain structure is an old dream for psychology and a crucial question for cognitive neurosciences. Yet, replicability of the previously-reported ‘structural brain behavior’ (SBB)-associations has been questioned, recently. Here, we conducted an empirical investigation, assessing replicability of SBB among heathy adults. For a wide range of psychological measures, the replicability of associations with gray matter volume was assessed. Our results revealed that among healthy individuals 1) finding an association between performance at standard psychological tests and brain morphology is relatively unlikely 2) significant associations, found using an exploratory approach, have overestimated effect sizes and 3) can hardly be replicated in an independent sample. After considering factors such as sample size and comparing our findings with more replicable SBB-associations in a clinical cohort and replicable associations between brain structure and non-psychological phenotype, we discuss the potential causes and consequences of these findings.
+Linking interindividual differences in psychological phenotype to variations in brain structure is an old dream for psychology and a crucial question for cognitive neurosciences. Yet, replicability of the previously-reported ‘structural brain behavior’ (SBB)-associations has been questioned, recently. Here, we conducted an empirical investigation, assessing replicability of SBB among heathy adults. For a wide range of psychological measures, the replicability of associations with gray matter volume was assessed. Our results revealed that among healthy individuals 1) finding an association between performance at standard psychological tests and brain morphology is relatively unlikely 2) significant associations, found using an exploratory approach, have overestimated effect sizes and 3) can hardly be replicated in an independent sample. After considering factors such as sample size and comparing our findings with more replicable SBB-associations in a clinical cohort and replicable associations between brain structure and non-psychological phenotype, we discuss the potential causes and consequences of these findings.
 
 ## Introduction
 
@@ -50,9 +50,9 @@ A total of 10800 exploratory whole brain SBB associations (each with 1000 permut
 
 Altogether, in contrast to GMV-associations with age and BMI, significant SBB-associations were highly unlikely. For the majority of the tested psychological variables no significant association with GMV were found in more than 90% of the whole brain analyses.
 
-## SBB-associations among the healthy population
+### SBB-associations among the healthy population
 
-## Replicability of ‘whole brain exploratory SBB-associations’
+#### Replicability of ‘whole brain exploratory SBB-associations’
 
 Age and BMI structural associations: Voxel-wise associations of age and BMI with GMV, as suggested by previous studies (Fjell et al., 2014; Kharabian Masouleh et al., 2016; Salat et al., 2004; Willette and Kapogiannis, 2015), were widespread and strong.
 
@@ -66,6 +66,101 @@ When decreasing the sample size of the discovery cohort, the spatial overlap of 
 
 Similar results, though with much lower percent of consistently overlapping voxels, were seen for negative associations of BMI with GMV. The density plots and the spatial maps of Figure 1B show that for the larger samples (consisting of 326 and 232 subjects) few voxels were consistently found in ‘all’ (100%) subsamples as having significant negative association with BMI. For the smaller samples (with 138 participants) the maximum replicable association was found in 93% of the splits and 4 out of 100 exploratory analyses did not result in any significant clusters (Table 1). Additionally, as Figure 2B shows, the majority of significant voxels had a replicability bellow 50%.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43464/elife-43464-fig2-v2.jpg)
+
+**Figure 2.:** Donut plots summerising ROI-based replication rates (% of ROI) using three different critera for three different sample sizes among heathy participants. The most inner layers depict replication using ‘sign’ only (blue: replicated, orange: not replciated). The middle layers define replication based on similar ‘sign’ as well as ‘statistical significance’ (i.e. p<0.05) (blue: replicated, orange: not replciate). The most outer layers define replication using ‘bayes factor’ (blue: “moderate-to-string evidece for H1, light blue: anecdotal evidence for H1; light orange: anecdotal evidence for H0, orange: “moderate-to-string evidece for H0).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43464/elife-43464-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Donut plots summerising ROI-based replication rates (% of ROI) using three different critera for three different sample sizes among heathy participants. The most inner layers depict replication using ‘sign’ only (blue: replicated, orange: not replciated). The middle layers define replication based on similar ‘sign’ as well as ‘statistical significance’ (i.e. p<0.05) (blue: replicated, orange: not replciate). The most outer layers define replication using ‘bayes factor’ (blue: “moderate-to-string evidece for H1, light blue: anecdotal evidence for H1; light orange: anecdotal evidence for H0, orange: “moderate-to-string evidece for H0).
+
+**Table 1.**
+ Summary of exploratory findings.For each discovery sample size, the number of clusters in which gray matter volume is positively or negatively associated with the tested phenotypic or psychological score is reported. The number of splits (out of 100) in which the clusters were detected are noted in parentheses (i.e. % of splits with at least one significant cluster [in the respective direction]).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Healthy cohort</th>
+      <th colspan="2">n_discovery = 70% n_total</th>
+      <th colspan="2">n_discovery = 50% n_total</th>
+      <th colspan="2">n_discovery = 30% n_total</th>
+    </tr>
+    <tr>
+      <th># positively associated clusters (split%)</th>
+      <th># negatively associated clusters (split%)</th>
+      <th># positively associated clusters (split%)</th>
+      <th># negatively associated clusters (split%)</th>
+      <th># positively associated clusters (split%)</th>
+      <th># negatively associated clusters (split%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years) n-total = 466</td>
+      <td>77 (54%)</td>
+      <td>154 (100%)</td>
+      <td>5 (4%)</td>
+      <td>522 (100%)</td>
+      <td>1 (1%)</td>
+      <td>1781 (100%)</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2) n-total = 466</td>
+      <td>0</td>
+      <td>1741 (100%)</td>
+      <td>0</td>
+      <td>2276 (100%)</td>
+      <td>0</td>
+      <td>1937 (96%)</td>
+    </tr>
+    <tr>
+      <td>Perceptual IQ (sum of t-scores) n-total = 466</td>
+      <td>499 (83%)</td>
+      <td>0</td>
+      <td>256 (58%)</td>
+      <td>0</td>
+      <td>145 (33%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Word-context (# of consecutively correct) n-total = 262</td>
+      <td>337 (80%)</td>
+      <td>0</td>
+      <td>159 (47%)</td>
+      <td>0</td>
+      <td>80 (21%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CWI (interference) (sec) n-total = 449</td>
+      <td>0</td>
+      <td>163 (53%)</td>
+      <td>1 (1%)</td>
+      <td>122 (39%)</td>
+      <td>6 (1%)</td>
+      <td>60 (26%)</td>
+    </tr>
+    <tr>
+      <td>Clinical cohort</td>
+      <td colspan="2">-</td>
+      <td colspan="2">n_discovery = 50% n_total</td>
+      <td colspan="2">-</td>
+    </tr>
+    <tr>
+      <td>RAVLT (# total immediate recall)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>309 (84%)</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: BMI: body mass index; IQ: intelligence quotient, CWI: color-word interference task; RAVLT: Rey auditory verbal learning task;_
+
 These results highlight the influence of sample size on the replicability (frequency of overlap) of whole-brain significant associations, even for age and BMI, for which we expected more stable associations with morphological properties of the brain.
 
 Structural associations of the psychological scores: In contrast, for most of the psychological scores, only few of the 100 discovery subsamples yielded significant clusters. Table 1 and Supplementary file 2 show the number of splits for which the exploratory whole-brain SBB-analysis resulted in at least one significant positively or negatively associated cluster for each score. These results reveal that finding significant SBB-associations using the exploratory approach in healthy individuals is highly unlikely for most of the psychological variables. Furthermore, the significant findings were spatially very diverse, that is, spatially overlapping findings were very rare.
@@ -76,7 +171,7 @@ Yet again, in line with our observations for BMI associations, the probability o
 
 These results highlight that finding a significant association between normal variations on behavioral scores and voxel-wise measures of GMV among healthy individuals is highly unlikely, for most of the tested domains. Furthermore, they underscore the extent of spatial inconsistency and the poor replicability of the significant SBB-associations from exploratory analyses.
 
-## Confirmatory ROI-based SBB-replicability
+#### Confirmatory ROI-based SBB-replicability
 
 Age and BMI effects: Irrespective of the size of the test subsamples and definition used to identify ‘successful’ replication (see Materials and methods), for all ROIs negative age-GMV associations were ‘successfully’ replicated in the matched test samples. Unlike the perfect replication of age-associations, replication rate of BMI effects depended highly on the test sample size and the criteria used to characterize ‘successful’ replication. Over all three tested sample sizes, in more than 90% of the a-priori defined ROIs, BMI associations were found to be in the same ‘direction’ in the discovery and test samples (i.e. replicated based on ‘sign’ criteria). The examination of replicated findings based on ‘statistical significance’ revealed replicated effects in more than 57% of ROIs. This rate of ROI-based replicability increased from ~57% to 75%, as the test sample size increased from 140 to 328 individuals (see Figure 2). Furthermore, as the dark blue segments in the outer layers of Figure 2 indicates, Bayesian hypothesis testing revealed moderate-to-strong evidence for H1 in more than 30% of the ROIs.
 
@@ -90,7 +185,7 @@ Finally, negative correlations between interference time of the color-word inter
 
 In general, these results show the span of replicability of structural associations from highly replicable age-effects to very poorly replicable psychological associations. They also highlight the influence of the sample size, as well as the criteria that is used to define successful replication on the rate of replicability of SBB-effects in independent samples.
 
-## Effect size in the discovery sample and its link with effect size of the test sample and actual replication
+#### Effect size in the discovery sample and its link with effect size of the test sample and actual replication
 
 Figure 3 plots discovery versus replication effect size (i.e. correlation coefficient) for each ROI and for three test sample sizes. Focusing on by-‘sign’ replicated ROIs (blue), for the three psychological scores (perceptual reasoning, word-context and CWI) revealed that the discovery samples resulted in overall larger effects (magnitude) compared to the test samples. Indeed, the marginal distributions are centered around smaller correlation coefficients in the y-dimension (test sample) compared to the x-axis (discovery samples). Furthermore, for these by-‘sign’ replicated ROIs, there was no positive relationship between the effect sizes of the behavioral associations in the discovery and test samples (blue lines in each subplot).
 
@@ -102,19 +197,27 @@ For BMI and age, however, the effect sizes of the discovery and test pairs were 
 
 To investigate if the replication power, estimated using the correlation coefficient within the discovery samples, was linked to a higher probability of actual replication in the test samples, the ROIs were grouped into replicated and not-replicated, based on the ‘statistical significance’ criterion. While the estimations of statistical power were generally higher among the replicated compared to not-replicated ROIs for BMI associations (p-value of the Mann-Whitney U tests <10−5), for structural associations of the psychological scores, this was not the case. Strikingly, for the structural associations of perceptual reasoning, over all sample sizes, the significantly replicated ROIs tended to have lower estimated power compared to the ROIs that actually were not-replicated (p-value of the Mann-Whitney U tests <10−5). These unexpected findings highlight the unreliable aspect of effect size estimations of SBB-associations within the discovery samples among healthy individuals. They also demonstrate that these inflated effect sizes result in flawed and thus uninformative estimated statistical power.
 
-## Structural associations of total immediate recall score in ADNI cohort
+### Structural associations of total immediate recall score in ADNI cohort
 
-## Replicability of ‘whole brain exploratory associations’
+#### Replicability of ‘whole brain exploratory associations’
 
 Within the sample of patients from ADNI-cohort, 84 out of the 100 whole-brain exploratory analyses resulted in at least one significant cluster showing a positive association between the immediate-recall score and GMV. In the healthy population, however, the same score resulted in a significant cluster in only less than 10% of exploratory analyses, for any of the three discovery sample sizes (Supplementary file 2 and Figure 4—figure supplement 1).
 
 As could be seen in the spatial maps of Figure 4, significant associations in the ADNI cohort were found across several brain regions including the bilateral lateral and medial temporal lobe, the lateral occipital cortex, the precuneus, the superior parietal lobule, the orbitofrontal cortex and the thalamus. Although most of the significant voxels were found by less than 10% of the splits, some voxels in the bilateral hippocampus were found to be significantly associated with the recall score in more than 70% of the subsamples (peak of spatial overlap; see Figure 4A,B).
 
-## Confirmatory ROI-based SBB-replicability
+![Figure 4.](https://cdn.elifesciences.org/articles/43464/elife-43464-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Replicability of exploratory results: Frequency of spatial overlaps (density plot and aggregate maps) over 100 random subsamples. Within the density plot, the box-plot shows the quartiles and extent of the distribution and the white dot depicts the median of percentage of overlap. (C, D) ROI-based confirmatory replication results: C: Original versus replication effects sizes (correlation coefficient) for all ROIs from 100 splits; points are color-coded based on their replciation status (by-‘sign’) and size of each point is proportional to the estimated statistical power of replication. Regresion lines are drawn for the replicated and unreplicated ROIs, separately. D: Donut plots summerising ROI-based replicability rates using three different critera. The most inner layer depicts replicability using ‘sign’ only (blue: replicated, orange: not replciated). The middle layer, defines replication based on similar ‘sign’ as well as ‘statistical significance’ (i.e. p<0.05) (blue: replicated, orange: not replciate). The most outer layer reflects replicability using bayes factor’ (blue: 'moderate-to-string evidece for H1, light blue: anecdotal evidence for H1; light orange: anecdotal evidence for H0, orange: 'moderate-to-string evidece for H0); Discovery and replication samples have equal size (n = 184) and are matched for age, sex and site.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43464/elife-43464-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Frequency of spatial overlap (density plots and aggregate maps) of significant findings from exploratory analysis over 100 random subsamples. Columns show results of three different discovery sample sizes (i.e. when discovery cohorts are generated from 70%, 50% or 30% of the main sample, from left to right respectively (x-axis)). The density plots show distribution of values within their corresponding aggregate map. The y-axis depicts frequency of spatial overlap (in %) and the density plots show distribution of values within their corresponding aggregate map. On the spatial maps, warmer colors denote higher number of samples with a significant association at the respective voxel. (B) ROI-based confirmatory replication results: Top row: Donut plots summerising ROI-based replicability rates (% of ROI) using three different critera for three different sample sizes. The most inner layers depict replicability using ‘sign’ only (blue: replicated, orange: not replciated). The middle layers define replication based on similar ‘sign’ as well as ‘statistical significance’ (i.e. p<0.05) (blue: replicated, orange: not replciate). The most outer layers reflects replicability using bayes factor’ (blue: 'moderate-to-string evidece for H1, light blue: anecdotal evidence for H1; light orange: anecdotal evidence for H0, orange: 'moderate-to-string evidece for H0); Bottom row: Scatter plots of effect sizes (correlation coefficient) in the discovery versus replication sample for all ROIs from 100 splits within healthy cohort; Points are color-coded based on their replciation status (by-‘sign’) and size of each point is proportional to the estimated statistical power of replication. Regresion lines are drawn for the replciated and unreplicated ROIs, separately.
+
+#### Confirmatory ROI-based SBB-replicability
 
 Figure 4D shows the rates of ‘successful replication’ of associations between the immediate-recall score and GMV within each ROI in the independent, matched-samples. As the most inner layer shows, in more than 94% of ROIs, GMV correlated positively with the recall score in the test subsamples, corroborating the ‘sign’ of the association in the paired-discovery samples. These correlations were significant in 72% of all ROIs. Furthermore, in more than 50% of all ROIs the correlations in the test sample supported, at least moderately, the link between higher GMV and higher recall score (using the Bayes factors).
 
-## Association between discovery and replication effect size
+#### Association between discovery and replication effect size
 
 The marginal histograms in Figure 4C suggest that overall the correlations in the discovery samples are slightly stronger than the correlations in the paired replication samples. When looking at the ROIs that were successfully replicated (by-sign), there was a positive association between the discovery and replication effect size (spearman’s rho = 0.38, p-value<10−11).
 
@@ -126,13 +229,13 @@ Our empirical investigation of the replicability of SBB in healthy adults showed
 
 In the following, we first discussed implications of the very low rate of significant findings revealed by the exploratory approach. We then discussed the possible causes of the observed spatial variability of SBB-associations. Those pattern of findings are then compared with the pattern observed in the clinical cohort. Finally, in line with the replication literature in psychological sciences and neurosciences (Button et al., 2013; Poldrack et al., 2017; Turner et al., 2018), we devoted our last section to sample size and power issues in SBB studies in healthy adults and proposed some recommendations.
 
-## Infrequent significant SBB associations in healthy individuals: Importance of reporting null findings
+### Infrequent significant SBB associations in healthy individuals: Importance of reporting null findings
 
 According to the scientific literature, associations between psychological phenotype (cognitive performance and psychological trait) and local brain structure are not uncommon (Kanai and Rees, 2011). However, in our exploratory analyses, when looking at a range of psychological variables, significant associations with GMV were very rare. It is worth noting that here by having a-priori fixed analysis design and inference routines, we aimed to avoid ‘fishing’ for significant findings (Gelman and Loken, 2014). Flexible designs and flexible analyses routines (Simmons et al., 2011) as well as p-hacking (John et al., 2012) are considered as inappropriate but frequent research practices (Poldrack et al., 2017). Based on our findings of infrequent significant SBB-associations, we could assume that flexible analyses routines, p-hacking and most importantly publication bias (Dwan et al., 2013) have contributed to the high number of significant SBB-reports in the literature.
 
 When considering potential impacts of biased SBB-reports on our confidence of psychological measures, as well as our conception and apprehension of brain-behavior relationships and psychological interindividual differences, we would strongly argue for null findings reports. Such reports would contribute to a more accurate and balanced apprehension of associations between differences in psychological phenotype and brain morphometric features, but it would also help to progressively disentangle factors that mediate or modulate the relationship between brain structure and behavioral outcomes.
 
-## Poor spatial overlap of SBB across resampling: possible causes and recommendations
+### Poor spatial overlap of SBB across resampling: possible causes and recommendations
 
 In addition to the low likelihood of finding ‘any’ significant SBB-association using the exploratory approach, clusters that do survive the significance thresholding did not often overlap in different subsamples. Furthermore, the probability of spatial overlap further dropped as the number of participants in the subsamples decreased (Figure 1). Putting this finding in light of the literature brings two main hypotheses.
 
@@ -148,11 +251,11 @@ These factors, added to the complexity of human behavior, renders the objective 
 
 Thus, to partially address the previously described concerns of small and spatially diffuse effects at the brain level in exploratory whole-brain-behavior study, we here recommend for the future studies to combine a univariate and a multivariate approach. Although it does not provide any protection against the influence of noise that may affect both approaches, this solution may help to reduce the false negatives.
 
-## Confirmatory replication of exploratory SBB findings: importance of out of sample replication
+### Confirmatory replication of exploratory SBB findings: importance of out of sample replication
 
 ROI-based analysis further highlighted that significant associations, which have been discovered when starting with a psychological measure and searching within the whole brain for a significant association (i.e. ‘evidenced in an exploratory study’), show poor replicability (using significance and Bayes factor criteria, but also using a similar sign criterion for most psychometric scores; For example, see Figure 2—figure supplement 1 and Figure 4—figure supplement 1) in a confirmatory ROI-based study (in line with what was previously shown by Boekel et al., 2015). These findings thus call for a general acknowledgment of the uncertainty and fragility of exploratory findings and the need for out of sample confirmatory replications to provide evidence about the robustness of the reported effects (Ioannidis, 2018; Tukey, 1980).
 
-## Further factors influencing replicability of SBB-findings: power of replication and object of study
+### Further factors influencing replicability of SBB-findings: power of replication and object of study
 
 Another clear finding of our study is the overestimation of the effect size in the exploratory approach (Kriegeskorte et al., 2010), specifically in smaller samples (see marginal distributions of the x- and y-axis in Figure 3). For the majority of the psychological scores, in the ROI-based approach, we failed to find a clear association between effect size in the discovery and replication samples. Instead, we observed a rather high estimated statistical power for replication (due to an inflated effect size estimation [Ioannidis, 2008]), despite very low actual rate of replicated effects in the independent samples. These findings are particularly important when considering the current research context, in which power analyses are encouraged to justify the allocation of financial and human investment in specific future researches. Prospective studies with power analyses are frequently proposed, where power is computed based on the findings from previous exploratory analyses in a small sample (Albers and Lakens, 2018). An inflated effect size estimation from the exploratory study results in an unreliable high power, which in turn lead to confidence in prospective studies to find relevant findings and hence in the allocation and possibly waste of (frequently public) resources (Albers and Lakens, 2018; Poldrack et al., 2017). Nevertheless, this provocative conclusion does not imply that SBB studies should be banished to hell. Our conclusion here mainly concerns the study of association between variations at standard psychological measures and variations in measures of gray matter in ‘small’ samples of healthy individuals. Our results further show that different types of SBB exploratory studies should not be epistemologically all put in the same pot.
 
@@ -160,7 +263,7 @@ In support for this argument, in ADNI sample, despite the additional confounding
 
 Thus, maybe the conceptual objective itself should be questioned: should we expect the association between normal psychological phenotype, in particular cognitive performance, in healthy population to be substantially driven by local brain macrostructure morphology? Brain structure can certainly not be questioned as the primary substrates of behavior and more than a century of lesion studies recalls this primary principle to our attention (Broca, 1865; Scoville and Milner, 1957), but this does not imply that ‘normal’ variations at standard psychological tests can be related to variations in markers of local brain macrostructure. Our results suggest that reliable answer to this important question requires substantially big samples (bigger than those used here) and independent replications.
 
-## Further recommendation: Large sample sizes are important both for exploratory as well as replication analyses
+### Further recommendation: Large sample sizes are important both for exploratory as well as replication analyses
 
 The sample size and related power issues hold a central position in the current discussions of the replication crisis in behavioral sciences, as well as in neuroimaging studies (Button et al., 2013; Ioannidis, 2005; Lilienfeld, 2017; Munafò et al., 2017; Open Science Collaboration, 2015). Higher power is defined as increased probability of finding effects that are genuinely true. Furthermore, high power experiments have higher positive predictive values (PPV) of the claimed effects (i.e. probability that the claimed effect reflects a true effect). They also result in less exaggerated effects sizes when a true effect is discovered (Button et al., 2013). As such, in the discovery sample, by increasing the sample size, the correlation coefficients get closer to their real value and their PPV increases. However, in the current study, as the number of participants in the main sample is limited, the size of the discovery and their matched replication samples are dependent on each other. Therefore, for each behavioral measure, larger discovery samples have smaller replication counterparts. These smaller replication samples have in turn lower power to find the true effects and have lower PPV. However, in splits with larger replication samples, as the discovery sample gets smaller, apart from the lower PPV, the estimated correlation coefficients are possibly more exaggerated (e.g. due to winner’s curse) (Cremers et al., 2017) and thus the power of the replication would be over-estimated. This is a limitation which complicates the interpretation of the relationship between the calculated replication power and the actual rate of replicability of associations in the present study. We hoped that the use of a large cohort of healthy individuals as our main cohort would result in large enough discovery and test cohorts and thus minimize the impact of above-mentioned limitation. However, large discrepancies between the rate of ‘significant’ within-split replicability and the a-priori estimated replication power, as we observed in the ROI-based confirmatory analyses, confirms an exaggerated power estimation in most of our analyses and thus highlights the insufficiency of the size of the discovery and replication samples.
 
@@ -168,17 +271,17 @@ Thus overall, these findings suggest that samples consisting of ~200–300 part
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43464/elife-43464-fig5-v2.jpg)
 
-**Figure 5.:** Vanasse et al., 2018).Each box shows the quantiles (25% and 75%) of the distribution and the gray horizontal line within each box, depicts the median of the distribution.
+**Figure 5.:** Each box shows the quantiles (25% and 75%) of the distribution and the gray horizontal line within each box, depicts the median of the distribution.
 
 In addition, to underscore the importance of the sample size, our analyses and results further show that the size of the replication sample also matters when examining the replicability of a previous SBB findings. This is an obvious factor that has been frequently neglected in the discussions about replication crisis. Yet, while many replication studies straightforwardly blame the sample size of the original studies, it is important to keep in mind that a replication failure might also come from a too small sample size of the replication study (Muhlert and Ridgway, 2016).
 
-## Limitations
+### Limitations
 
 When interpreting our results, it should be noted that, in order to keep large sample sizes for the exploratory replication analyses, the discovery subsamples were not necessarily designed to be independent from each other. Considering this limitation, the poor spatial consistency of the whole brain exploratory associations that we observed for almost all the behavioral scores is hence even more alarming. As discussed earlier, another indirect limitation of the limited size of the selected cohort is the dependence between the size of the discovery and their matched replication sub-samples. This limitation prevents us to state strong conclusions about the relationship between the calculated replication power and the actual rate of replicability. Overall, these acknowledged limitations raise the need for even larger sample sizes for such investigations. Recent advancements through data collection from much larger number of participants, such as UK-biobank (Miller et al., 2016) are promising opportunities for overcoming these limitations in future replication studies.
 
 Moreover, the generalizability of our results are partly limited to our methodological choices such as the computation of volumetric markers of brain structure (as opposed to surface-based markers), the size of the smoothing kernel, and the use of a priori-defined ROIs in the replication sample. Future studies should therefore investigate to which extend our replicability rates are reproduced with different data preprocessing pipelines and analyses approaches.
 
-## Summary and conclusions
+### Summary and conclusions
 
 Overall, our work and review of the recent and concomitant replication literature in related fields demonstrate that several improvements could be recommended to get more accurate insight on the relationship between psychological phenotype and brain structure and to progressively answer open questions. Importantly, our recommendations and suggestions concern different levels of SBB researches: the dataset level, the analyses level, as well as at the post-publication and replication level.
 
@@ -192,7 +295,7 @@ Sharing raw data would undoubtedly improve the problem of low statistical power,
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Healthy adults’ data were selected from the enhanced NKI (eNKI) Rockland cohort (Nooner et al., 2012). Data collection received ethics approval through both the Nathan Klein Institute and Montclair State University. Written informed consent was obtained from all participants.
 
@@ -202,21 +305,21 @@ Replicability of SBB-associations within the clinical sample was investigated us
 
 We used the baseline measurements from 371 patients (age: 71 ± 7, 200 male; 47 with significant memory complaint, 177 early MCI, 85 late MCI and 62 AD patients (defined based on ADNI diagnostic criteria, see http://adni.loni.usc.edu/wp-content/themes/freshnews-dev-v2/documents/clinical/ADNI-2_Protocol.pdf), in whom anatomical brain scans had been acquired in a 3Tesla scanner (from 39 different sites).
 
-## Phenotypical measurements
+### Phenotypical measurements
 
-## Non-psychological measurements
+#### Non-psychological measurements
 
 Age and body mass index (BMI) are highly reliably assessed and their association with brain morphology has been frequently examined in previous studies on healthy adults (Fjell et al., 2014; Kharabian Masouleh et al., 2016; Salat et al., 2004; Willette and Kapogiannis, 2015).
 
 Accordingly, they served here as the initial benchmarks among which SBB framework was tested in healthy individuals. In order to avoid large clusters that simultaneously cover several cortical and subcortical regions, we focused on local peaks of associations by increasing the voxel-level t-threshold of the statistical maps. The modified voxel-level t-threshold was set to 8 and 3, for defining age- and BMI-associated clusters, respectively. These arbitrary thresholds were chosen such that the very large clusters would divide into smaller ones, while still retaining the general spatial pattern of the significant regions.
 
-## Psychological measurements
+#### Psychological measurements
 
 The psychological measurements consisted in standard psychometrics and neuropsychological tests. The testing included: the attention network task (ANT) probing attention sub-functions (Fan et al., 2002), the Delis-Kaplan testing battery assessing different aspects of executive functions (Delis et al., 2001) (including trail-making test, color-word interference task, verbal fluency, 20 questions, proverbs and word-context task), the Rey auditory verbal learning task (RAVLT) (Schmidt, 1996) assessing verbal memory performance, as well as the WASI-II intelligence test (Wechsler, 1999). Psychological phenotyping also included anxiety (state and trait) (Spielberger et al., 1970) and personality questionnaires (McCrae and Costa, 2004) in the eNKI cohort. For each test, we used several commonly derived sub-scores to assess the replicability of their structural associations. For each psychological measure, participants whose performance deviated more than three standard deviation (SD) from mean of the whole sample were considered as outliers and thus were excluded from further analysis (See Supplementary file 1).
 
 The list-learning task is a common measure of verbal learning performance and has been implemented using the same standard tool (RAVLT) in both the eNKI and the ADNI cohort. Previous studies have shown that the immediate-recall score (sum of recalled items over the first five trials) could be reliably predicted from whole brain MRIs in AD patients (Moradi et al., 2017). Since this score is a standard measure commonly used in healthy and clinical dataset and its relations to brain structure in clinical data has been previously suggested, in the current work we performed SBB with this score in the ADNI cohort as a ‘conceptual benchmark’.
 
-## MRI acquisition and preprocessing
+### MRI acquisition and preprocessing
 
 The imaging data of the eNKI cohort were all acquired using a single scanner (Siemens Magnetom TrioTim, 3.0 T). T1-weighted images were obtained using a MPRAGE sequence (TR = 1900 ms; TE = 2.52 ms; voxel size = 1 mm isotropic).
 
@@ -224,7 +327,7 @@ ADNI, on the other hand, is a multisite dataset. Here we selected a subset of th
 
 Both datasets were preprocessed using the CAT12 toolbox (Gaser and Dahnke, 2016). Briefly, each participant’s T1-weighted scan was corrected for bias-field inhomogeneities, then segmented into gray matter (GM), white matter (WM), and cerebrospinal fluid (CSF) (Ashburner and Friston, 2005). The segmentation process was further extended for accounting for partial volume effects (Tohka et al., 2004) by applying adaptive maximum a posteriori estimations (Rajapakse et al., 1997). The gray matter segments were then spatially normalized into standard (MNI) space using Dartel algorithm (Ashburner, 2007) and further modulated. The modulation was performed by scaling the normalized gray matter segments for the non-linear transformations (only) applied at the normalization step. While this procedure ignores the volume changes due to affine transformation, it allows preserving information about individual differences in local gray matter volume. In other words, it re-introduces individual differences in local gray matter volume removed in the process of inter-subject registration and normalization. Finally modulated gray matter images were smoothed with an isotropic gaussian kernel of 8 mm (full-width-half-maximum).
 
-## Statistical analysis
+### Statistical analysis
 
 SBB-associations are commonly derived in an exploratory setting using a mass-univariate approach, in which a linear model is used to fit interindividual variability in the psychological score to GMV at each voxel. Inference is then usually made at cluster level, in which groups of adjacent voxels that support the link between GMV and the tested score are clustered together.
 
@@ -232,13 +335,13 @@ Replicability of thus-defined associations could be assessed by conducting a sim
 
 Here we assessed replicability of associations between each behavioral measure and gray mater structure, using both approaches: the whole brain replication approach and the ROI replication approach, which are explained in details in the following sections.
 
-## Replicability of whole brain exploratory SBB-associations
+#### Replicability of whole brain exploratory SBB-associations
 
 Whole-brain GLM analyses: 00 random subsamples (of same size) were drawn from the main cohort (eNKI or ADNI). Hereafter, each of these subsamples is called a ‘discovery sample’. In each of these samples, SBB-associations were identified using the voxel-wise exploratory approach after controlling for confounders. This was done by using the general linear model (GLM) as implemented in the ‘randomise’ tool (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Randomise), with 1000 permutations. Age, sex and education were modeled as confounders in the eNKI data. As the ADNI dataset is a multi-site study, we further added site and disease category as dummy-coded confounders to GLMs for the analyses in that dataset. Inference was then made using threshold-free cluster enhancement (TFCE) (Smith and Nichols, 2009), which unlike other cluster-based thresholding approaches does not require an arbitrary a-priori cluster forming threshold. Significance was set at p<0.05 (extent threshold of 100 voxels).
 
 Spatial consistency maps and density plots: To quantify the spatial overlap of significant SBB associations over 100 subsamples, spatial consistency maps were generated. To do so, the binarized maps of all clusters that showed significant association in the same direction between each psychological score and GMV were generated (i.e. voxels belonging to a significant cluster get the value ‘1’ and all other voxels were labeled ‘0’) and added over all 100 subsamples. These aggregate maps denote the frequency of finding a significant association between the behavioral score and GMV, at each voxel. Accordingly, a voxel with value of 10 in the aggregate map has been found to be significantly associated with the phenotypical score in 10 out of 100 subsamples. Density plots were also generated to represent the distribution of values within each such map, that is the distribution of ‘frequency of significant finding’. Hence, the spatial voxel-wise ‘significance overlap maps’ as well as density plots of the distribution of values within each map give indications of the replicability of ‘whole brain exploratory SBB-associations’ for each psychological score.
 
-## Replicability of SBB-associations using confirmatory ROI-based approach
+#### Replicability of SBB-associations using confirmatory ROI-based approach
 
 ROI-based confirmatory analyses: The replicability of the SBB associations was also evaluated with the ROI-based confirmatory approach. For each of the 100 discovery subsamples, an age- and sex-matched ‘test sample’ was generated from the remaining participants of the main cohort. In the clinical cohort the discovery and test pairs were additionally matched for ‘site’. In this analysis, for each psychological variable, the significant clusters from the above-mentioned exploratory approach from every ‘discovery sample’ were used as a-priori ROIs. Average GMV over all voxels within the ROI was then calculated for each participant in the respective ‘discovery ‘and ‘test’ pair subsamples. Within each subsample, association between the average GMV and the psychological variable was assessed using ranked-partial correlation, controlling for confounding factors. The correlation coefficient was then compared between each discovery and test pair, providing means to assess ‘ROI-based SBB replicability’ rates for each psychological score. Accordingly, each ROI was examined only once, to identify if associations between average GMV in this ROI and the psychological score from the discovery subsample could be confirmed in the paired test sample. Replicability rates were quantified according to different indexes (see below) over all ROIs from 100 discovery samples, yielding a percentage of ‘successfully replicated’ ROIs based on each index.
 
@@ -252,7 +355,7 @@ Bayes factor: To compare the evidence that the ‘test subsample’ provided fo
 
 To facilitate the interpretation, Bayes factors (BF) were summarized into four categories as illustrated in the bar legend of Figure 2. A BF01 lower than 1/3 shows that the data is three times or more likely to have happened under H1 than H0. Accordingly, this value defines the ‘successful’ replication.
 
-## Investigation on factors influencing replicability of SBB-associations among healthy individuals
+#### Investigation on factors influencing replicability of SBB-associations among healthy individuals
 
 Sample size: In order to study the influence of sample size on the replicability of SBB-associations, for each psychological measure, the healthy sample (eNKI) was divided into discovery and test pairs at three different ratios: 70% discovery and 30% test, 50% discovery and 50% test and finally 30% discovery and 70% test. As mentioned earlier, in each case, the discovery and test counterparts were randomly generated 100 times in order to quantify the replication rates. For example, to assess the replicability of brain structural associations of age, in the case of ‘70% discovery and 30% test’, the entire NKI sample (n = 466) was divided into a discovery group of n = 326 participants and an age- and sex-matched test pair sample of n = 138 and this split procedure was repeated 100 times. Similarly, for generating equal-sized discovery and test subsamples, 100 randomly generated age and sex matched split-half samples were generated from the main NKI cohort.
 

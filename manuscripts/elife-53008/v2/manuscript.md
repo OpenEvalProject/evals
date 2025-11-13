@@ -46,23 +46,192 @@ Here, we characterize the immune landscape at single cell-level in primary melan
 
 ## Results
 
-## Functional analysis of TILs
+### Functional analysis of TILs
 
 We classified each CD8+ cell in the TMA cores as part of a spectrum (‘functional status’) ranging from ‘active’ (CD69high and/or OX40high) to ‘exhausted’ (TIM3highCD69lowOX40low) (Figure 2A–D and Supplementary Data 1). We observed that the rotation vector of LAG3 was not aligned to TIM3. Moreover, very few cells expressed LAG3, therefore this marker had a very small impact on exhaustion. The assignation of a functional status to each core in the TMA (‘core status’, see Materials and methods) yielded 17/60 cores defined as active, 23/60 in transition, and 20/60 defined as exhausted. Core classification allowed the assessment of the heterogeneity of the immune response in different areas of the melanoma for the same patient. From the 29 patients included in the analysis, eight patients allowed to sample only a single core due to the size of the melanoma and could not be included in this analysis. From the 21 remaining patients, 10/21 showed homogeneous core statuses: four active, five in transition, and one exhausted; and 11/21 showed heterogeneity. Correlation with clinical survival (overall survival, OS) showed that patient classification based on functional status has an improved prognostic performance (log-rank p.value = 0.079) when compared with the brisk morphological classification (log-rank p.value = 0.36) (Figure 2E). Also repeating the survival analysis in the SKCM TCGA data set confirmed that the patients in the ‘Active’ group had better prognosis than the patients in the ‘Exhausted’ group (log-rank p-value=0.0082) validating the results obtained with our dataset (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig2-v2.jpg)
+
+**Figure 2.:** A biplot showing the projection of the cells as well as the rotation vectors of the markers over PC2 and PC3 has been created using only CD8-positive cells and the four markers relevant for their functional status: CD69, OX40, LAG3, and TIM3. (A). This was the first step to define a gradient of activation going from the maximum projected value of CD69 (maximum activation) to the maximum projected value of TIM3 (maximum exhaustion) (B). (C) Z-scores of the original markers over PC2 and PC3. (D) Visual representation of the inter- and intra-patient heterogeneity, that shows how most of the patients present a relative homogeneous activation status of the Tcy. Each core is assigned an activation status (‘Active’, ‘Transition’, or ‘Exhausted’). The cores are grouped for each patient, giving an at-a-glance representation of the heterogeneity of the activation status in different areas of the melanoma in the same patient. (E) The survival analysis in our data set shows a higher overall survival for brisk patients (left) and for patients with high levels of activation (right). Most importantly, the functional definition of activation/exhaustion shows improved prognostic value when compared to the brisk morphological parameter (p.value = 0.075 vs p.value = 0.31 log-rank test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Selection of the data sources: The Cancer Genome Atlas Skin Cutaneous Melanoma (TCGA-SKCM) dataset was deconvoluted using Cibersort with custom cell-specific profiles derived from Tirosh et al [29]. (B) Selection of CD8+ Tcells: First, single cells from Tirosh [29] were mapped (spearman correlation) to the signature profiles included in the LM22 gene signatures from Cibersort. The heatmap represents the contingency matrix between the labels obtained from Tirosh and the ones obtained using the signature profiles of LM22. Cells mapped as T.cells.CD8 were filtered for further analysis. (C) Classification of T.cells.CD8 into ‘Active’ and ‘Exhausted’: our T cell activation/exhaustion scoring system was applied to the CD8+ Tcells classifying them into ‘Active’ and ‘Exhausted’ (see Materials and methods, Functional analysis of TILs). The scatter plot represents the obtained distribution of activation values for each of the cells labeled as T.cells.CD8 (similar to Figure 2.B). (D) Construction of T.cells.CD8 Active and Exhausted gene expression profiles: Custom cell-type-specific profiles were built for T.cells.CD8.Active and T.cells.CD8.Exhausted using the average expression of all the T.cells.CD8 labeled as ‘Active’/‘Exhausted’ (Supplementary file 3). The barplot represents the value for each gene in the profile. (E) Deconvolution of bulk rna-seq data and evaluation of prognosis: TCGA-SKCM dataset was filtered using only stage I and II patients for comparability with our dataset (see Materials and methods, Functional analysis of TILs). Cibersort was applied using the generated profiles obtaining the relative number of T.cells.CD8.Active and T.cells.CD8.Exhausted. Patients were labeled as ‘Active’ if the relative number of T.cells.CD8.Active was higher or equal than the relative number of T.cells.CD8.Exhausted and ‘Exhausted’ otherwise. Survival analysis revealed that the Active group of patients had better prognosis than the exhausted group of patients (log-rank p-value=0.0082) validating the results obtained with our dataset as shown by the Kaplan-Meier curves.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Confirmation of the functional subgroups by qPCR (A) and shotgun proteomics plus pathway analysis (B). With qPCR we were able to identify, both in B and NB metastasis, active (green rectangles) and exhausted (red rectangles) cases. With proteomics we confirmed that the ‘IFNg-high’ case had more proteins that the ‘LAG3-high’ and the ‘none’ case involved in inflammatory pathways among which the IFNg-related pathway (in gray).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The rotation matrix from the PCA shows that PC1 is capturing general expression of the initial markers (all the markers with the same sign) (A). PC1 explained 39,39% of the total variance and was not associated to a patient effect as shown by (B). The 3D animation GIF visible in the on line version of this paper shows how PC1 can be attributed to the general expression of cells some cells express more than others (C): if we visualize a 3D scatter plot with PC1, PC2 and PC3 with every cell colored by activation we can see that the resulting 3D structure has a pyramidal shape with PC1 parallel to its main axis and its apex (main vertex) found at the maximum value of PC1 (Animation 1, Animation 2). As seen in 3D plot and supported by the projections on Figure 2C, points near the vertex (centroid of the projection in Figure 2C), do not show a strong expression for any marker. On the other hand, points close to the base of the pyramid (low values of PC1) show a strong differential expression of the activation and exhaustion markers. Therefore, PC1 was disregarded for the activation/exhaustion analysis and only PC2 and PC3 were used.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) After assessing the activation level of every CD8+ lymphocyte present in the TMA (Materials and methods: functional analysis of TILs and supplementary information 1), a label was assigned to each core (‘Active’, ‘Transition’, and ‘Exhausted’) using one-tailed t-tests comparing the distribution of the activation values in the cells from a particular core versus the background distribution (combination of all cores). p-Values were adjusted using the False Discovery Rate (FDR) method. A cut-off value of 0.001 over the adjusted p-values was used as classification threshold. Histograms show the distribution of cells for a particular core colored in red/dark gray/blue if they were labeled as active/transition/exhausted. (B) In order to obtain patient-specific read-outs, we pooled together all the cells from all the cores for each patient and repeated the same that we did for the cores (to compare the distribution of cells for a specific patient against the background distribution). This classified each patient into one of the three categories (‘Active’, ‘Transition’, and ‘Exhausted’).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** In order to verify the solidity of the method, we compared the results obtained with the DAPI mask with the ones obtained with the CD8+ mask (Figure 2.A). We applied the same approach to define the activation status of the T cytotoxic cells on the Tcy phenotypic cluster, and we observed the same structural behavior of the activation and exhaustion markers (CD69 and TIM3 at opposite ends of the activation spectrum, concordance between LAG3 and OX40).
+
 We then checked whether the core status was significantly associated with spontaneous regression of the tumour, regarded as the result of a successful Tcy immune response, and with other histopathological parameters (histological subtype, ulceration, Breslow thickness, mitoses). Late regression areas indeed showed significant differences in the mean level of activation of the cores as compared to early regression (p=0.022) and no regression (p=0.031). No significant differences were instead found between early regression and no regression (Figure 3A,B). Higher levels of activation were found in Lentigo Maligna Melanoma (p=0.02). However, since only three LMM cores from two patients were included in our data set, no definite conclusions can be drawn from this data. The other histopathological prognostic parameters did not show significance (Table 1).
+
+**Table 1.**
+ Statistical analysis.Histopathological parameters were correlated with core status (Active/Transition/Exhausted) using pairwise t-tests with pooled standard deviation. Several histopathological parameters were correlated to the average level of activation of each core.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Comparison</th>
+      <th>Statistical test</th>
+      <th>Multiple testing correction</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brisk Infiltration</td>
+      <td>Brisk vs Non Brisk</td>
+      <td>t test</td>
+      <td>No</td>
+      <td>0.8453</td>
+    </tr>
+    <tr>
+      <td>Brisk Infiltration</td>
+      <td>Brisk vs Brisk In Non Brisk</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Brisk Infiltration</td>
+      <td>Brisk vs Non Brisk In Non Brisk</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Brisk Infiltration</td>
+      <td>Brisk In Non Brisk vs Non Brisk In Non Brisk</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Regression</td>
+      <td>Regression vs No Regression</td>
+      <td>t test</td>
+      <td>No</td>
+      <td>0.6275</td>
+    </tr>
+    <tr>
+      <td>Regression</td>
+      <td>Early Regression vs No Regression</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>0.329</td>
+    </tr>
+    <tr>
+      <td>Regression</td>
+      <td>Late Regression vs No Regression</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>0.031*</td>
+    </tr>
+    <tr>
+      <td>Regression</td>
+      <td>Late Regression vs Early Regression</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>0.022*</td>
+    </tr>
+    <tr>
+      <td>Count Lymphocytes</td>
+      <td>Number of Lymphocytes vs Level of Activation</td>
+      <td>linear model</td>
+      <td>No</td>
+      <td>0.3714</td>
+    </tr>
+    <tr>
+      <td>Histotype</td>
+      <td>LMM vs NMM</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>0.027*</td>
+    </tr>
+    <tr>
+      <td>Histotype</td>
+      <td>LMM vs SSMM</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>0.021*</td>
+    </tr>
+    <tr>
+      <td>Histotype</td>
+      <td>NMM vs SSMM</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>0.761</td>
+    </tr>
+    <tr>
+      <td>Breslow Thickness</td>
+      <td>Breslow vs Level of Activation</td>
+      <td>linear model</td>
+      <td>No</td>
+      <td>0.9883</td>
+    </tr>
+    <tr>
+      <td>Ulceration</td>
+      <td>Positive vs Negative</td>
+      <td>t test</td>
+      <td>No</td>
+      <td>0.7252</td>
+    </tr>
+    <tr>
+      <td>Number of Mitoses</td>
+      <td>More than 6 vs 1 to 6</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Number of Mitoses</td>
+      <td>More than 6 vs 0</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Number of Mitoses</td>
+      <td>one to 6 vs 0</td>
+      <td>pairwise t test</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig3-v2.jpg)
 
 **Figure 3.:** (A) The histogram shows the distribution of the different cores according to the activation levels of the Tcy. The color code identifies the presence and the type of regression areas in the cores. The cases with late regression are all in the left part of the histogram, showing higher levels of activation compared to cores with early regression or without regression. (B) This can be visualized also as a box plot. The neighborhood analysis for late (C) and early (D) regression shows an enrichment in immune-stimulating interactions in the first and more interactions leading to immune impairment in the latter. The thickness of the edge in the network represents the level of interaction between the different cell types. The colour of the line indicates interactions leading to immune suppression (red), to immune stimulation (green), to a probably sub-optimal/impaired immune stimulation (orange), no immune implications (blue).
 
-## Phenotypic identification
+### Phenotypic identification
 
 The inflammatory subpopulations were identified using three different unsupervised clustering methods (KMeans, PhenoGraph, and ClusterX Chen et al., 2016) followed by manual annotation of the clusters by an expert pathologist (FMB). The choice of the markers to identify the inflammatory cell populations is based on our previous review focusing on the melanoma microenvironment (Bosisio and van den Oord, 2017). Cells were evaluated for consistent cell phenotype as described in the Materials and methods (Figure 4—figure supplement 1). From the 19 clusters identified, 17 could be associated to specific cell lineages, while the remaining two were discarded. Based on the inclusion criteria described in the methods, 179,304 out of 242,224 cells (74.02%) were included for further analysis. Cell phenotypes were further clustered into functional groups using a set of functional markers. The functional clustering resulted in a total number of 47 functional cell populations (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig4-v2.jpg)
+
+**Figure 4.:** The percentage of cells for each inflammatory subpopulation across all the cores is showed in (A). The 17 phenotypic clusters are on the upper side of the graph, while at the bottom each of them is subdivided in the respective functional subclusters. BC = B cells; cDC1 = classical dendritic cells type 1; cDC2 = classical dendritic cells type 2; Epith = epithelial cells; PC = plasma cells; Lang = Langerhans cells; LV = lymph vessels; Macroph = macrophages; pDC = plasmocytoid dendritic cells; S-M+=S100+MelanA- melanoma cells; S+M-=S100-MelanA+=melanoma cells; S+M+=S100+MelanA+ melanoma cells; Tcy = cytotoxic T cells; Tfh = T follicular helpers; Th = T helpers; Treg = regulatory T cells; suffix: ‘prolif’=proliferating, IFNg = interferon gamma. (B) Significant differences (p.value <0.05) in cell percentages between brisk and non-brisk categories (Wilcoxon rank sum test). (C) Significant differences (p.value <0.05) in cell percentages across the functional groups: Active, Transition, Exhausted (Kruskal-Wallis rank sum test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53008/elife-53008-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** A two-tier approach was implemented for the identification of cell subpopulations. (A) Initially, heatmaps generated with KMeans, PhenoGraph, and ClusterX (left) were used to identify the main inflammatory subpopulations, resulting in clusters that were named by manual annotation by the pathologist based on the level of expression of the phenotypic markers; on the right one of the heatmaps is enlarged to serve as an example: for each cluster identified by phenograph the levels of expression of the 15 most expressed markers have been used by the pathologist to identify the inflammatory population most probably present in that cluster. The final phenotypes were defined using a consensus-based approach (a phenotype was assigned if two or more clustering methods agreed in their prediction). (B) Cell populations were further sub-clustered into functional subgroups using PhenoGraph over the set of functional markers and annotation by the pathologist. For each cluster identified with the Materials and method described, here the identified subclusters are shown as an heatmap with the corresponding levels of expression of the selected functional markers.
+
 The most abundant cell population consisted of melanoma cells (41.76%). Most of the melanoma cells expressed both melanocytic markers Melan A and S-100, while two minor groups of melanoma cells had loss of expression of one of the two markers. The second most abundant cell type were the macrophages (‘Macroph’, CD68+CD163+Lysozyme+HLA-DR+, 11.48%), one quarter of them expressing the immunosuppressive marker TIM3. Epithelial cells represented 8.4% of the population of our data set. The lymphoid compartment accounted for multiple subpopulations. Tcy (CD3+CD8+) and T helpers (‘Th’, CD3+CD4+FOXP3-) were the most abundant subtypes, accounting respectively for 11.19% and 10.10% of all the cells, while regulatory T cells (‘Treg’, CD3+CD4+FOXP3+) represented 2.82% of the cells. We interpreted the last T cell cluster as T follicular helpers (‘Tfh’, CXCL13+PD1+, 2.57%) even though this cluster did not express the full Tfh phenotype. Within Tcy, we could identify the active (CD69+OX40+/-, 16,1% of all the lymphocytes), transition (balanced expression of both exhaustion and expression markers, 29.6%) and exhausted (high expression of LAG3 and/or TIM3, low/absent CD69 and OX40, 12.8%) functional subgroups. Moreover, we found a clonally expanding subgroup (6%), and one with low or absent expression of all functional markers, that we defined as ‘anergic’ (34,9%) but that could represent also naive T cells. Th could also be further divided according to their expression of activation and exhaustion markers (28.5% ThCD69+, considered active, 18.46% ThCD69+TIM3+, considered transitional, and 13.08% ThTIM3+, considered immunosuppressive). NK cells, as expected in melanoma, were extremely infrequent (0.51%), and even more infrequent were the B cells (‘BC’, CD20+), that represented 0.12% of the total. The CD20 negative cells characterized by high expression of IRF4 and Blimp1 (‘PC’, 1,19%) were interpreted as plasma cells (Caicedo et al., 2017). Finally, we could identify among the dendritic cell group the classical dendritic cells type 1 (‘cDC1’, CD141+CD4+IRF8+, 4.13%), classical dendritic cells type 2 (‘cDC2’, CD1c+CD4+HLA-DR+, 2.41%), Langerhans cells (‘Lang’, CD1a+Langerin+, 2.13%), and plasmacytoid dendritic cells (‘pDC’, CD123+, 0.33%). In both the two classical dendritic cell subgroups an immunosuppressive TIM3+ subpopulation was identifiable, while in the pDC group a small subpopulation was found to express PD-L1. No immunosuppressive subpopulation was identified among the Langerhans cells. Some subpopulations were statistically significantly different (p-val <0.05) comparing brisk vs non-brisk and active vs transition vs exhausted. Brisk cases were significantly enriched in BC (p-val = 0.041), TIM3+cDC1 (p-val = 0.024), macrophages (p-val = 0.043) (including the proliferating subgroup (p-val = 0.034)), NK (p-val = 0.011), anergic Tcy (p-val = 0.039) and proliferating Tcy (p-val = 0.006) (Figure 4B). Active cores had, together with more active Tcy (p-val <0.001), higher percentages of Tcy in transition (p-val = 0.030), transition cores more Th (p-val = 0.057), while exhausted cases had more TIM3+Tregs (p-val = 0.018) and more proliferating melanoma cells (p-val = 0.045) (Figure 4C).
 
-## Neighborhood analysis
+### Neighborhood analysis
 
 We applied neighborhood analysis in order to systematically identify social networks of cells and draw conclusions on actual cell-cell interactions. Macrophages and epithelial cells were in general most often located in strict proximity to the melanoma cells, without differences among the functional or morphologic categories. Brisk cases showed more Tcy in close proximity to melanoma cells than non-brisk cases, as expected (Figure 5E). Interestingly, brisk cases had a higher prevalence specifically of transition and active Tcy in contact with melanoma cells compared with non-brisk cases (Active/Exhausted ratio: Brisk = 2.108762, Non-Brisk = 1.331195), that instead had relatively more exhausted and anergic cells in contact with melanoma cells (Active/Anergic ratio: Brisk = 1.743081, NonBrisk = 0.7704947).
 
@@ -74,7 +243,7 @@ To understand what is the immune context that determines activation and exhausti
 
 Finally, we also compared neighbourhood analysis between cores with early and late regression. In late regression, a network of activating interactions between active Tcy and active Th was Present. Few immune suppressing interactions could be observed, in particular between Treg-CD69+TIM3+Th-Exhausted Tcy (Figure 3C). In early regression, the interactions between active Th and active Tcy disappeared in this group, to leave space to aggregates of B cells located in strict proximity with anergic, proliferating and active T cells and probably stimulated by TIM3+cDC2, counterbalancing the effect of the immune stimulation between cDC1 and active Th (Figure 3D).
 
-## qPCR and shotgun proteomics
+### qPCR and shotgun proteomics
 
 Since our TMA is composed exclusively of primary melanomas, one may object that in a metastatic setting, cases with mainly active TILs may not be detected, maybe because the immune system of the patient is failing in keeping control of the tumor. Or maybe, in the metastatic setting, to see a diffuse TILs infiltrate in a metastatic nodule would have been possibly correlated with real activation and not with exhaustion, and only morphological evaluation could be enough to evaluate the activation status of the TILs. Since immunotherapy is generally administered only if the patient develops metastasis (even if since very recently adjuvant immunotherapy is starting to be introduced in the clinic), to confirm the existence of the same functional subcategories in metastatic melanoma samples, we perform qPCR followed by proteomics on microdissected TILs, comparing melanoma metastasis that we classified as brisk (if diffusely infiltrated by TILs) and non-brisk (if only partially infiltrated by TILs), using an ‘absent’ case (metastasis without TILs) and a ‘tumoral melanosis’ (complete melanoma regression with persistence of melanin-loaded macrophages) case as controls. Furthermore, we could measure directly the levels of expression of IFNg, the best indicator of CD8+ activation, for which no suitable antibody exists for FFPE material. 4/8 melanomas with a brisk TILs pattern, and 3/7 with non-brisk TILs pattern proved active, confirming that we could subclassify from a functional point of view also metastatic lesions (Figure 2—figure supplement 2). To correlate the gene expression measured by qPCR with the actual protein expression, we performed a proteomic analysis on the microdissected material in three representative cases, that is one with high IFNg expression (‘IFNg-high’), one with the high LAG3 and no IFNg expression (‘LAG3-high’), and one with none of the four markers strongly expressed (‘none’). The results showed a higher number of proteins identified in the ‘IFNg-high’ sample (324) compared to ‘LAG3-high’ (93) and ‘none’ (134), with almost two thirds of them (210/324) not shared with the other two samples and enriched in proteins involved in different inflammatory pathways (innate immunity, TNFR1 signalling pathway, FAS signalling pathway, T cell receptor and Fc-epsilon receptor signalling pathway), including the interferon gamma-mediated signaling pathway. As we minimized the difference in the number of microdissected cells in each sample, these observations could only be explained by a higher production of pro-inflammatory proteins in the ‘IFNg-high’ sample.
 
@@ -100,54 +269,901 @@ In conclusion, in this paper, we have shown that the activation status of the TI
 
 ## Materials and methods
 
-## Sample description
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers (RRID_AB)</th>
+      <th>Additional information (dilution)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4 rabbit monoclonal EPR6855</td>
+      <td>Abcam</td>
+      <td></td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HLA-DR mouse monoclonal IgG2b SPM288</td>
+      <td>Abcam</td>
+      <td>AB_1125217</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TAP2 mouse IgG1 monoclonal TAP2.17</td>
+      <td>Abcam</td>
+      <td></td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD141 rabbit monoclonal EPR4051</td>
+      <td>Abcam</td>
+      <td>AB_2201805</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MYC rabbit monoclonal EP121</td>
+      <td>Sigma Aldrich</td>
+      <td></td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FOXP3 mouse monoclonal IgG1 236A/E7</td>
+      <td>Abcam</td>
+      <td>AB_445284</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MX1 Rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>AB_10678925</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LAG3 mouse monoclonal IgG1 11E3</td>
+      <td>Abcam</td>
+      <td>AB_776102</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PD-L1 rabbit monoclonal 28–8</td>
+      <td>Abcam/Epitomics</td>
+      <td>AB_2687878</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD1a rabbit monoclonal EP3622</td>
+      <td>Abcam/Epitomics</td>
+      <td>AB_626957</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD123 mouse monoclonal IgG2b NCL-L-CD123</td>
+      <td>Leica-Microystem/Novocastra</td>
+      <td>AB_10555271</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-Stat1 rabbit monoclonal 58D6</td>
+      <td>Cell Signaling</td>
+      <td>AB_561284</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD20 mouse monoclonal IgG2a L26</td>
+      <td>Dako</td>
+      <td>AB_782024</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD1a mouse monoclonal IgG1 O10</td>
+      <td>Dako</td>
+      <td></td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD1c mouse monoclonal IgG1 2D4</td>
+      <td>Dako</td>
+      <td>AB_2623049</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PRDM1 rat monoclonal 6D3</td>
+      <td>Dako</td>
+      <td>AB_</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S100AB rabbit polyclonal</td>
+      <td>Dako</td>
+      <td></td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD56 mouse monoclonal IgG1 123C3.D5</td>
+      <td>Neomarkers</td>
+      <td>AB_627127</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki-67 mouse monoclonal IgG2a UMAB107</td>
+      <td>Origene</td>
+      <td>AB_2629145</td>
+      <td>2 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Lysozyme rabbit polyclonal</td>
+      <td>Origene</td>
+      <td>AB_1004766</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PD-1 mouse monoclonal IgG2a UMAB197</td>
+      <td>Origene</td>
+      <td>AB_2629198</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM3 goat polyclonal</td>
+      <td>R and D</td>
+      <td>AB_355235</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CXCL13 mouse monoclonal IgG1 53610</td>
+      <td>R and D</td>
+      <td>AB_2086049</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OX40 mouse monoclonal IgG1 Ber-ACT35</td>
+      <td>Santa Cruz</td>
+      <td>AB_626897</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRF4 goat monoclonal M-17</td>
+      <td>Santa Cruz</td>
+      <td>AB_2127145</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>cMAF rabbit monoclonal M-153</td>
+      <td>Santa Cruz</td>
+      <td>AB_638562</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BCL6 rabbit monoclonal N3</td>
+      <td>SCBT</td>
+      <td>AB_1158074</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD16 mouse monoclonal IgG2a 2H7</td>
+      <td>SCBT</td>
+      <td>AB_563508</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD68 mouse monoclonal IgG3 PGM1</td>
+      <td>Thermo Fisher</td>
+      <td>AB_10979558</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p16 mouse monoclonal IgG2a JC8</td>
+      <td>SCBT</td>
+      <td>AB_785018</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MelanA rabbit monoclonal A19-P</td>
+      <td>NovusBio</td>
+      <td>AB_1987285</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Podoplanin rat monoclonal IgG2a NZ-1.2</td>
+      <td>Sigma Aldrich</td>
+      <td>AB_10920577</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD69 rabbit polyclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>AB_2681157</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3 rabbit polyclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>AB_2335677</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GBP1 rat monoclonal 4D10</td>
+      <td>Sigma Aldrich</td>
+      <td>AB_828964</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Langerin rabbit polyclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>AB_1078453</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRF8 rabbit polyclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>AB_1851904</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8 rabbit monoclonal SP16</td>
+      <td>Thermo Fisher</td>
+      <td>AB_627211</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD138 mouse monoclonal IgG1 MI-15</td>
+      <td>Thermo Fisher</td>
+      <td>AB_10987019</td>
+      <td>1 µg/ml</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample description
 
 Twenty-nine invasive primary cutaneous melanomas from the Department of Pathology of the University Hospitals Leuven (KU Leuven), Belgium, were classified based on the H and E staining according to the pattern of the inflammatory infiltrate into brisk (six cases) and non-brisk (23 cases). According to their subtype, 24 superficial spreading melanomas, three nodular melanomas, and two lentigo maligna melanoma were included. Ethical approval was obtained from the Ethical Committee/IRB OG032 of the University Hospital of Leuven. After the approval, the study was identified with the number S57266. According to the Clinical Trial regalement no informed consent was needed due to the use of post-diagnostic left-over material. The patients’ characteristics are resumed in Supplementary file 6. All the patients in our cohort were diagnosed between 2005 and 2010, before the era of immunotherapy (both in metastatic and adjuvant setting). Because only primary melanomas were included, all the patients received only surgery (broad excision) as first-line therapy. We did not find any significant differences between the ‘Active’ and ‘Exhausted’ groups according to age (t-test p.value = 0.6776382), gender (chisq-test p.value = 0.5814) or tumor location (chisq-test p.value = 0.1531). Given the relatively small number of patients included in the analysis and since none of the parameters seems to be related with patient activation, these factors were not accounted for the model in a multivariate analysis.
 
-## TMA construction
+### TMA construction
 
 Tissue Micro Arrays (TMAs) were constructed with the GALILEO CK4500 (Isenet Srl, Milan, Italy). For each patient, one to five representative regions of interest were sampled according to the size of the specimen and the morphological heterogeneity both of the melanoma and the infiltrate distribution. According to the morphological TILs pattern, we sampled brisk areas (i.e. six brisk areas in melanomas with brisk TILs pattern, termed ‘brisk in brisk’ and 10 brisk areas in melanomas with non-brisk TILs pattern, termed ‘brisk in non-brisk’) and non-brisk areas (i.e. 15 non-brisk areas in non-brisk melanomas, termed ‘non-brisk in non-brisk’); in addition, areas showing ‘early regression’ (7),” late regression’ (5) and ‘no regression’ (17) according to current morphological criteria (Botella-Estrada et al., 2014) were sampled. Eight morphological criteria were used to define regression: (1) Small or large areas with a decrease or an absence of melanoma cells in the dermal component of the tumor (2) Fibrosis (3) Inflammatory infiltrate (4) Melanophages (5) Neovascularization (7) Epidermal flattening (8) Colloid bodies (apoptosis of keratinocytes/melanocytes). Early regression was defined by small foci of melanoma disappearance (criterion1) and some fibrosis (criterion 2) but with a very dense inflammatory infiltrate (criterion 3) with any combination of the other criteria. Late regression was defined in presence of medium-to-large areas of melanoma disappearance substituted by very evident fibrosis (criterion 1 and 2) with any combination of the other criteria. After processing, cutting and staining of the TMA blocks, a total of 60 cores were available for analysis.
 
-## Multiplex-stripping immunofluorescence
+### Multiplex-stripping immunofluorescence
 
 The multiplex staining was performed according to the MILAN protocol (Cattoretti et al., 2001) previously published (Bolognesi et al., 2017). It entails multiple rounds of indirect immunofluorescent staining, imaging and antibody removal via a detergent and a reducing agent. Unconjugated primary antibodies (see Table 2) are used, without the need of prioritizing any specific stain, there is no cell or tissue loss over >30 staining and stripping cycles (Manzoni M, et al. The adaptive and innate immune cell landscape of uterine leiomyosarcomas. Scientific Report, submitted), stained sections can be stored for additional subsequent experiments. In our previous publication, it is shown that the variation for repeated staining on different sections averages 3.1% (range 0–12.3%). Repeated staining while multiplexing (10 rounds) is usually less than 15% with some exceptions (e.g keratin 19). The range of variation after 30 cycles is even less than 15% and, most important, no new pixels are added or lost. In addition, we have found that only about 2–3% of all antibodies used are made unreactive just after a single stripping session. In conclusion, we believe that the MILAN protocol allows to safely detect most antigens surviving routine processing, even after 30 cycles, with variation in intensity within the variance of the technique itself.
 
-## Image pre-processing
+**Table 2.**
+ Multiplex antibody panel description.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Concentration</th>
+      <th>Species</th>
+      <th>Clone</th>
+      <th>Company</th>
+      <th>RRID_AB:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD4</td>
+      <td>1 µg/ml</td>
+      <td>rabbit Mab</td>
+      <td>EPR6855</td>
+      <td>Abcam</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>HLA-DR</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG2b</td>
+      <td>SPM288</td>
+      <td>Abcam</td>
+      <td>1125217</td>
+    </tr>
+    <tr>
+      <td>TAP2</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>TAP2.17</td>
+      <td>Abcam</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CD141</td>
+      <td>1 µg/ml</td>
+      <td>rabbit Mab</td>
+      <td>EPR4051</td>
+      <td>Abcam</td>
+      <td>2201805</td>
+    </tr>
+    <tr>
+      <td>MYC</td>
+      <td>1 µg/ml</td>
+      <td>rabbit Mab</td>
+      <td>EP121</td>
+      <td>Sigma Aldrich</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>FOXP3</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>236A/E7</td>
+      <td>Abcam</td>
+      <td>445284</td>
+    </tr>
+    <tr>
+      <td>MX1</td>
+      <td>1 µg/ml</td>
+      <td>Rabbit</td>
+      <td></td>
+      <td>Abcam</td>
+      <td>10678925</td>
+    </tr>
+    <tr>
+      <td>LAG3</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>11E3</td>
+      <td>Abcam</td>
+      <td>776102</td>
+    </tr>
+    <tr>
+      <td>PD-L1</td>
+      <td>1 µg/ml</td>
+      <td>rabbit Mab</td>
+      <td>28–8</td>
+      <td>Abcam/Epitomics</td>
+      <td>2687878</td>
+    </tr>
+    <tr>
+      <td>CD1a</td>
+      <td>1 µg/ml</td>
+      <td>Rb mAb</td>
+      <td>EP3622</td>
+      <td>Abcam/Epitomics</td>
+      <td>626957</td>
+    </tr>
+    <tr>
+      <td>CD123</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG2b</td>
+      <td>NCL-L-CD123</td>
+      <td>Leica-Microystem/Novocastra</td>
+      <td>10555271</td>
+    </tr>
+    <tr>
+      <td>Phospho-Stat1</td>
+      <td>1 µg/ml</td>
+      <td>rabbit Mab</td>
+      <td>58D6</td>
+      <td>Cell Signaling</td>
+      <td>561284</td>
+    </tr>
+    <tr>
+      <td>CD20</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG2a</td>
+      <td>L26</td>
+      <td>Dako</td>
+      <td>782024</td>
+    </tr>
+    <tr>
+      <td>CD1a</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>O10</td>
+      <td>Dako</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CD1c</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>2D4</td>
+      <td>Dako</td>
+      <td>2623049</td>
+    </tr>
+    <tr>
+      <td>PRDM1</td>
+      <td>1 µg/ml</td>
+      <td>rat</td>
+      <td>6D3</td>
+      <td>Dako</td>
+      <td>628168</td>
+    </tr>
+    <tr>
+      <td>S100AB</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td></td>
+      <td>Dako</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>123C3.D5</td>
+      <td>Neomarkers</td>
+      <td>627127</td>
+    </tr>
+    <tr>
+      <td>Ki-67</td>
+      <td>2 µg/ml</td>
+      <td>mouse IgG2a</td>
+      <td>UMAB107</td>
+      <td>Origene</td>
+      <td>2629145</td>
+    </tr>
+    <tr>
+      <td>Lysozyme</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td></td>
+      <td>Origene</td>
+      <td>1004766</td>
+    </tr>
+    <tr>
+      <td>PD-1</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG2a</td>
+      <td>UMAB197</td>
+      <td>Origene</td>
+      <td>2629198</td>
+    </tr>
+    <tr>
+      <td>TIM3</td>
+      <td>1 µg/ml</td>
+      <td>goat</td>
+      <td></td>
+      <td>R and D</td>
+      <td>355235</td>
+    </tr>
+    <tr>
+      <td>CXCL13</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>53610</td>
+      <td>R and D</td>
+      <td>2086049</td>
+    </tr>
+    <tr>
+      <td>OX40</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>Ber-ACT35</td>
+      <td>Santa Cruz</td>
+      <td>626897</td>
+    </tr>
+    <tr>
+      <td>IRF4</td>
+      <td>1 µg/ml</td>
+      <td>goat</td>
+      <td>M-17</td>
+      <td>Santa Cruz</td>
+      <td>2127145</td>
+    </tr>
+    <tr>
+      <td>cMAF</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td>M-153</td>
+      <td>Santa Cruz</td>
+      <td>638562</td>
+    </tr>
+    <tr>
+      <td>BCL6</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td>N3</td>
+      <td>SCBT</td>
+      <td>1158074</td>
+    </tr>
+    <tr>
+      <td>CD16</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG2a</td>
+      <td>2H7</td>
+      <td>SCBT</td>
+      <td>563508</td>
+    </tr>
+    <tr>
+      <td>CD68</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG3</td>
+      <td>PGM1</td>
+      <td>Thermo Fisher</td>
+      <td>10979558</td>
+    </tr>
+    <tr>
+      <td>p16</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG2a</td>
+      <td>JC8</td>
+      <td>SCBT</td>
+      <td>785018</td>
+    </tr>
+    <tr>
+      <td>MelanA</td>
+      <td>1 µg/ml</td>
+      <td>rabbit Mab</td>
+      <td>A19-P</td>
+      <td>NovusBio</td>
+      <td>1987285</td>
+    </tr>
+    <tr>
+      <td>podoplanin</td>
+      <td>1 µg/ml</td>
+      <td>rat IgG2a</td>
+      <td>NZ-1.2</td>
+      <td>Sigma Aldrich</td>
+      <td>10920577</td>
+    </tr>
+    <tr>
+      <td>CD69</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td></td>
+      <td>Sigma Aldrich</td>
+      <td>2681157</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td></td>
+      <td>Sigma Aldrich</td>
+      <td>2335677</td>
+    </tr>
+    <tr>
+      <td>GBP1</td>
+      <td>1 µg/ml</td>
+      <td>rat</td>
+      <td>4D10</td>
+      <td>Sigma Aldrich</td>
+      <td>828964</td>
+    </tr>
+    <tr>
+      <td>Langerin</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td></td>
+      <td>Sigma Aldrich</td>
+      <td>1078453</td>
+    </tr>
+    <tr>
+      <td>IRF8</td>
+      <td>1 µg/ml</td>
+      <td>rabbit</td>
+      <td></td>
+      <td>Sigma Aldrich</td>
+      <td>1851904</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>1 µg/ml</td>
+      <td>rabbit Mab</td>
+      <td>SP16</td>
+      <td>Thermo Fisher</td>
+      <td>627211</td>
+    </tr>
+    <tr>
+      <td>CD138</td>
+      <td>1 µg/ml</td>
+      <td>mouse IgG1</td>
+      <td>MI-15</td>
+      <td>Thermo Fisher</td>
+      <td>10987019</td>
+    </tr>
+  </tbody>
+</table>
+
+### Image pre-processing
 
 Fiji/ImageJ (version 1.51 u) were used to pre-process the images (File format: from. ndpi to.tif 8/16 bit, grayscale). Registration was done through the Turboreg and MultiStackReg plugins, by aligning the DAPI channels of different rounds of staining, saving the coordinates of the registration as Landmarks and applying the landmarks of the transformation to the other channels. Registration was followed by autofluorescence subtraction (Image process → subtract), previously acquired in a dedicated channel, for FITC, TRITc and Pacific Orange. A macro was written in Fiji/ImageJ and used for the TMA segmentation into single images. Cell segmentation, mask creation, and single-cell measurements were done with a custom pipeline using CellProfiler (version 2014-07-23T17:45:00 6c2d896). Quality Control (QC) over the Mean Fluorescence Intensity (MFI) values was performed using feature and sample selection. In short, those cells that did not have expression in at least three markers, and those markers that were not expressed in at least 1% of the samples were removed. MFIs were further normalized to Z-scores as recommended in Caicedo JC, et al (Caicedo et al., 2017). Z-scores were trimmed between −5 and +5 to avoid a strong influence of any possible outliers in the downstream analysis. The correlation between the different markers was calculated using Pearson’s correlation coefficient.
 
-## Functional analysis of TILs
+### Functional analysis of TILs
 
 We selected two activation (CD69, OX40) and two exhaustion (TIM3, LAG3) markers after literature review and preliminary testing of the antibody performance on control FFPE under the conditions of the multiplex protocol. The expression levels of these markers were measured selectively on CD8+ lymphocytes using a first mask focused only on CD8+ cells. Principal Component Analysis (PCA) was applied over the expression values to evaluate the functional structure of the data and to assign an activation value in the [−1, 1] range to each cell (Supplementary Information 1, Figure 2—figure supplement 3, Animation 1, Animation 2). Briefly, principal components (PCs) 2 and 3 were used as the rotation matrix revealed that PC1 contained all the markers in the same direction (same sign). The point of maximum activation (Activation = 1), was defined where the projected value of CD69 (marker of activation) over PCs 2 and 3 was at the maximum while the point of maximum exhaustion (Activation = −1) where the projected value of TIM3 (marker of exhaustion) over PCs 2 and 3 was at the maximum (Figure 2). The gradient of transition was defined between the previously defined points and the centroid of the projected dataset. Pairwise t-tests with pooled standard deviation (sd) were used to find significant differences in the level of activation of the images regarding multiple histopathologic parameters (brisk/non-brisk infiltrate, regression, number of lymphocytes, ulceration, Breslow thickness, mitoses, subtype of melanoma). For this purpose, the activation level of each image was represented by the mean of its cells while the intrinsic degree of heterogeneity was captured by the sd. Continuous values of the histopathological parameters were fitted using linear models instead. P-values were adjusted for multiple comparisons using the holm method. A cut-off of 0.05 was used as significance threshold for the adjusted p-values. Cores were further classified into: ‘Active’, ‘Transition’, and ‘Exhausted’ (from now on, indicating the core status) using one-tailed t-tests comparing the distribution of the activation values in a specific image versus the background distribution (combination of all images). P-values were adjusted using the False Discovery Rate (FDR) method. A cut-off value of 0.001 over the adjusted p-values was used as classification threshold. In order to obtain patient-specific read-outs, instead of combining scores from multiple cores, we pooled together all the cells from all the cores for each patient, and repeated the same that we did for the cores (to compare the distribution of cells for a specific patient against the background distribution). This classified each patient into one of the three categories (‘Active’, ‘Transition’, and ‘Exhausted’) (Figure 2—figure supplement 4). In order to evaluate the robustness of our patient classifications, we reclassified each patient 100 times using different sampling sizes (from 10 to 1000 cells, every 10). This resampling analysis confirmed that our classification of patients into ‘Active’/”Exhausted’ is very robust, requiring a relatively small number of cells to classify each patient reliably. We evaluated for every patient the minimum number of cells required to obtain the same significant classification in at least 95% of the simulations. The average value across all patients is 180 cells for active cases, and 174 for exhausted cases. Some cases, (patients 2, 3, 8, 12, 15, 18, and 21) required as little as 30 cells to obtain the same significant classification in at least 95% of the simulations. Only three cases (7, 9, and 17) required a relatively large number of cells (>360,~2 times the average) to obtain a significant classification in at least 95% of the simulations. We acknowledge that some patients classified as ‘Transition’ could have been identified as ‘Active’/”Exhausted’ would the number of identified Tcells had been bigger.For the survival analysis, the functional status of each patient was represented by the average level of activation of its cells and dichotomized into active (average level of activation >0) and exhausted (average level of activation < = 0). In order to validate the survival results from Figure 2E in another dataset, we obtained clinical and bulk RNA sequencing (RNA-seq) data from The Cancer Genome Atlas Skin Cutaneous Melanoma (TCGA-SKCM) dataset using the TCGA2STAT R package (https://academic.oup.com/bioinformatics/article/32/6/952/1744407). This dataset includes 460 patients from stages I-IV with 20501 genes annotated (HGNC format). However, our melanoma dataset includes only primary melanomas: most of the patients are stage I or II according to the 8th edition of the AJCC melanoma staging system. There is only one stage IIIC due to in-transit metastases at diagnosis and one stage IV due to primary metastases. Therefore, from the TCGA-SKCM dataset we included only those patients belonging to stages I and II for further analysis. For the deconvolution of bulk RNA-seq data, we used Cibersort (Chen et al., 2018). Cibersort offers a 22 immune cell gene signature (LM22) that includes CD8+ T cells but does not separate them into ‘Active’ and ‘Exhausted’. Therefore, in order to build these gene signatures, we first obtained the single-cell RNAseq data from Tirosh et al (https://science.sciencemag.org/content/352/6282/189/tab-figures-data) present in the Gene Expression Omnibus (GEO) dataset (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72056). This dataset included 4645 cells from 19 tumors, each annotated with 23684 gene IDs (HGNC format). 1389 tumoral cells were removed leading to a dataset composed by 3256 cells with the following annotation: Bcells (512), CAF (56), Endothelial (62), Macrophages (119), NK (51), Tcells (2040), and unknown (416). For every cell, we first calculated a distance value (Spearman correlation) to each gene signature from the ones included in the LM22 dataset from Cibersort. For each cell, the highest correlation was selected as the predicted cell type. Cells with a maximum correlation coefficient smaller than 0.25 (764) were removed from further analysis, leaving a total of 2492. Supplementary file 1 shows the contingency matrix between the cell label given by Tirosh and the predicted cell type using Cibersort’s profiles. Based on these profiles, we identified 908 CD8+ T cells in Tirosh dataset. We isolated those cells and ran our cell activation level analysis splitting them into 496 ‘Active’ (Activation >0) and 412 ‘Exhausted’ (Activation < = 0) CD8+ Tcells. In the proteomic level, our activation score used the expression of CD69, OX40, LAG3, and TIM3 markers on CD8 positive (CD8+) cells. The transcription factors encoding for these proteins found in the TCGA-SKCM dataset are summarised in Supplementary file 2. Then we built a ‘T.cells.CD8.Active’ and ‘T.cells.CD8.Exhausted’ profile using the average expression level of all the cells identified as Active/Exhausted using only the six genes included in Supplementary file 2 obtaining the profiles specified in Supplementary file 3. We ran Cibersort in the TCGA-SKCM dataset, using the expression profiles in Supplementary File X3 and obtained the relative number of Active and Exhausted CD8+ T cells in each patient (Supplementary file 4). We labeled a patient as Active if the percentage of Active CD8+ T cells was bigger or equal to the number of Exhausted CD8+ T cells and exhausted otherwise.
 
-Predicted cell typeB cellsCancer Associated FibroblastsMacrophagesNatural KillerT cellsUnknownB cells memory262000036B cells naive11700008Dendritic cells activated000002Dendritic cells resting001001Eosinophils000001Macrophages M0004001Macrophages M1006000Macrophages M20043003Mast cells activated000001Mast cells resting000001Monocytes00500011Neutrophils000003NK cells activated100331419NK cells resting1001525Plasma cells100001T cells CD4 memory activated00001133T cells CD4 memory resting000040524T cells CD4 naive00007028T cells CD8000286937T cells follicular helper010026716T cells gamma delta000021T cells regulatory Tregs0000110
+<table>
+  <thead>
+    <tr>
+      <th>Predicted cell type</th>
+      <th>B cells</th>
+      <th>Cancer Associated Fibroblasts</th>
+      <th>Macrophages</th>
+      <th>Natural Killer</th>
+      <th>T cells</th>
+      <th>Unknown</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B cells memory</td>
+      <td>262</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>B cells naive</td>
+      <td>117</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Dendritic cells activated</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Dendritic cells resting</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Eosinophils</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Macrophages M0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Macrophages M1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Macrophages M2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Mast cells activated</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Mast cells resting</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Monocytes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Neutrophils</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>NK cells activated</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33</td>
+      <td>14</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>NK cells resting</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Plasma cells</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>T cells CD4 memory activated</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>113</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>T cells CD4 memory resting</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>405</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>T cells CD4 naive</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>T cells CD8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>869</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>T cells follicular helper</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>267</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>T cells gamma delta</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>T cells regulatory Tregs</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
-## Phenotypic identification
+![Animation 1.](https://cdn.elifesciences.org/articles/53008/elife-53008-video1.gif.jpg)
+
+**Animation 1.:** Animated in order to see the pyramidal shape of the 3D structure (rotating around the PC2 axis).
+
+![Animation 2.](https://cdn.elifesciences.org/articles/53008/elife-53008-video2.gif.jpg)
+
+**Animation 2.:** Animated in order to see the pyramidal shape of the 3D structure (rotating around the PC1 axis).
+
+### Phenotypic identification
 
 To evaluate the cell subpopulations, a second mask based on the DAPI nuclear staining contour expanded by five pixels was created. A two-tier approach was followed for the identification of cell subpopulations: phenotypic and functional. The phenotypic identification was conducted by applying three different clustering methods: PhenoGraph, ClusterX, and K-means, over the phenotypic markers: CD3, CD20, CD4, HLA-DR, Bcl6, CD16, CD68, CD56, CD141, CD1a, CD1c, Blimp1, Langerin, Lysozyme, Podoplanin, FOXP3, S100AB, IRF4, IRF8, CD1a, CXCL13, CD8, CD138, CD123, PD-1, and MelanA. PhenoGraph and ClusterX were implemented using the cytofkit package from R (Chen et al., 2016). Clusters were represented by a vector containing the mean of each marker and were used to further associate them to a cell subpopulation using prior knowledge. For a phenotype to be assigned to a cell, at least two clustering methods should agree on their predicted phenotype. Prior to functional identification, PCA was repeated over the Tcy cells (CD8+) using CD69, OX40, LAG3, and TIM3 markers in order to confirm that with the new mask, the same dataset with the same structure as with the CD8+ mask could be retrieved (Figure 2—figure supplement 5). The functional identification was conducted by applying PhenoGraph over the functional markers: CD69, Ki-67, TAP2, GBP1, MYC, p16, MX1, OX40, c-Maf, PD-L1, LAG3, TIM3, and Phospho-Stat1 (with the exception of Tcy cells for which we used a personalized panel consisting of: CD8, CD69, OX40, LAG3, TIM3, PD-1, and Ki-67). Clusters were represented, associated to cell subpopulations, and evaluated for stability as described for the phenotypic identification. Significant differences in the cellular composition of the cores based on activation status were identified using Kruskal-Wallis rank sum test. The same approach was repeated for the brisk infiltrate histopathologic parameter using Mann-Whitney test.
 
-## Neighborhood analysis
+### Neighborhood analysis
 
-An unbiased quantitative analysis of cell-cell interactions was performed using an adaptation of the algorithm described in Schapiro et al. (2017) for neighbourhood analysis to systematically identify social networks of cells and to better understand the tissue microenvironment. Our adaptation also uses a kernel-based approach (radius = 30 px) to define the neighbourhood of a cell and a permutation test (N = 1000) to compare the number of neighbouring cells of each phenotype in a given image to the randomized case. This allows the assignment of a significance value to a cell-cell interaction representative of the spatial organization of the cells. Significance values were further classified into avoidance (−1), non-significant (0), and proximity (1) using a significance threshold of 0.001 (more significant that all the random cases). Interactions across images were integrated according to Equation 1:(1)Pi,j=∑k=1M(ci,j,k∙Ni,j,k)∑k=1M(Ni,j,k)where Ci,j,k is the significance value (−1, 0, or 1) of the interaction between cell types i and j for image k, and Ni,j,k is the geometric average of the number of cells of type i and j for image k. Cell-cell interactions were considered strong if they were significant in at least 75% of the N-adjusted cases (abs(P)>0.75), moderate if 50%, (0.5 < abs(P)<=0.75), weak if 25% (0.25 < abs(P)<=0.5), and non-significant otherwise (abs(P)<=0.25). A comparative analysis of the above described method was performed for the different core statuses as well as for the different brisk infiltrate cases (Figure 5).
+An unbiased quantitative analysis of cell-cell interactions was performed using an adaptation of the algorithm described in Schapiro et al. (2017) for neighbourhood analysis to systematically identify social networks of cells and to better understand the tissue microenvironment. Our adaptation also uses a kernel-based approach (radius = 30 px) to define the neighbourhood of a cell and a permutation test (N = 1000) to compare the number of neighbouring cells of each phenotype in a given image to the randomized case. This allows the assignment of a significance value to a cell-cell interaction representative of the spatial organization of the cells. Significance values were further classified into avoidance (−1), non-significant (0), and proximity (1) using a significance threshold of 0.001 (more significant that all the random cases). Interactions across images were integrated according to Equation 1:
+
+$$
+P_{i,j}=\frac{\sum_{k=1}^{M}(c_{i,j,k}∙\sqrt{N_{i,j,k}})}{\sum_{k=1}^{M}(\sqrt{N_{i,j,k}})}
+$$
+
+where Ci,j,k is the significance value (−1, 0, or 1) of the interaction between cell types i and j for image k, and Ni,j,k is the geometric average of the number of cells of type i and j for image k. Cell-cell interactions were considered strong if they were significant in at least 75% of the N-adjusted cases (abs(P)>0.75), moderate if 50%, (0.5 < abs(P)<=0.75), weak if 25% (0.25 < abs(P)<=0.5), and non-significant otherwise (abs(P)<=0.25). A comparative analysis of the above described method was performed for the different core statuses as well as for the different brisk infiltrate cases (Figure 5).
 
 Even though neighborhood analysis allows evaluation of cell-cell interactions, the mathematical model applied is limited in cases where there are dominant cell types that grow in nests, with cells packed next to each other. Therefore, for melanoma cells, we evaluated the closest neighbors by counting the number of cells of each subpopulation (apart from melanoma cells) that were in their neighborhood and divided the amount by the geometric average of the number of melanoma cells and the number of cells of the specific population across all the cores in which the specific population appears. This analysis was repeated for the different brisk and activation cases.
 
-## Laser microdissection
+### Laser microdissection
 
 18 fresh frozen melanoma metastases with different types of TILs patterns (nine brisk, seven non brisk, 1 absent and one tumoral melanosis) were collected in the Department of Pathology of the University Hospitals Leuven (KU Leuven), Belgium. 10 micrometre-thick sections were cut from each fresh frozen block and put on a film slide (Zeiss, Oberkochen, Germany). Sections were stained with crystal violet. Areas with dense TILs infiltrate were microdissected with the Leica DM6000 B laser microdissection device (Leica, Wetzlar, Germany). A calculation was made in order to microdissect the same surface in all the samples in order to minimize differences between the samples (around 10,000 lymphocytes/sample).
 
-## qPCR of laser microdissected samples
+### qPCR of laser microdissected samples
 
 RNA extraction was done with RNeasy Plus Micro Kit (Qiagen) according to the protocol. cDNA retrotranscription followed by an amplification step was done with Ovation Pico SL WTA System V2 (Nugen) according to protocol. Primers for Interferon gamma (INFg, forward ‘TGTTACTGCCAGGACCCA’ and reverse ‘TTCTGTCACTCTCCTCTTTCCA’), TIM3 (forward ‘CTACTACTTACAAGGTCCTCAGAA’ and reverse ‘TCCTGAGCACCACGTTG’), LAG3 (forward ‘CACCTCCTGCTGTTTCTCA’ and reverse ‘TTGGTCGCCACTGTCTTC’), CD40-L (forward ‘GAAGGTTGGACAAGATAGAAGATG’ and reverse ‘GGATAAGGATCTTTCTCCTGTGTT’), CD45 (forward ‘GCTACTGGAAACCTGAAGTGA’ and reverse ‘CACAGATTTCCTGGTCTCCAT’), Beta2microglobulin (forward ‘ACAGCCCAAGATAGTTAAGTG’ and reverse ‘ATCTTCAAACCTCCATGATGC’), HPRT (forward ‘ATAAGCCAGACTTTGTTGGA’ and reverse ‘CTCAACTTGAACTCTCATCTTAGG’) were designed with Perl Primer and tested in our laboratory. 96-wells plates were loaded with Fast SYBR Green Master Mix, the primers and the samples in the recommended proportions, and analysed with the 7900 HT Fast Real-Time PCR system (Applied Biosystems). The log fold change (logFC) of the expression values toward the expression value of CD45 were calculated. If the log(IFNg/CD45) was positive, the sample was classified as positive. On the other hand, exhaustion was defined by expression of LAG3 and/or TIM3 with lack of IFNg and CD40L expression.
 
-## Shotgun proteomics of laser microdissected samples
+### Shotgun proteomics of laser microdissected samples
 
 The materials used for the shotgun proteomics analysis were: Trifluoroacetic acid, MS grade porcine trypsin, DTT (dithiothreitol), IAA (Iodoacetamide), ABC (Ammonium Bicarbonate), HPLC grade water, acetonitrile (ACN), were from Sigma-Aldrich (Sigma-Aldrich Chemie GmbH, Buchs, Switzerland). All solutions for Mass Spectrometry (MS) analysis were prepared using HPLC-grade. LCM collected material corresponding to about 104 cells for each sample group was re-suspended in 90 µl of bidistilled water and immediately stored at −80°C. For the bottom-up MS analysis, all the samples were processed and trypsinized. Briefly, thawed cells were submitted to a second lysis adding 60 µl of 0.25% w/v RapiGest surfactant (RG, Waters Corporation) in 125 mM ammonium bicarbonate (ABC) and sonicated for 10 min. Samples were then centrifuged at 14 000 × g for 10 min. About 140 µl of supernatants were collected, transferred in a new tube and quantified using bicinchoninic acid assay (Pierce -Thermo Fisher Scientific). After 5 min denaturation (95°C), proteins were reduced with 50 mM DTT in 50 mM ABC at room temperature and alkylated with 100 mM IAA in 50 mM ABC (30 min incubation in dark). Digestion of samples was performed overnight at 37°C using 2 µg of MS grade trypsin. RG surfactant were removed using an acid precipitation with TFA at a final concentration of 0.5% v/v. Samples were then spun down for 10 min at 14,000 x g and supernatants collected for MS analysis. Peptide mixtures were desalted and concentrated using Ziptip μ-C8 pipette tips (Millipore Corp, Bedford, MA). An equal volume of eluted digests was injected at least three times for each sample into Ultimate 3000 RSLCnano (ThermoScientific, Sunnyvale, CA) coupled online with Impact HD UHR-QqToF (Bruker Daltonics, Germany). In details, samples were concentrated onto a pre-column (Dionex, Acclaim PepMap 100 C18 cartridge, 300 µm) and then separated at 40°C with a flow rate of 300 nL/min through a 50 cm nano-column (Dionex, ID 0.075 mm, Acclaim PepMap100, C18). A multi-step gradient of 4 hr ranging from 4% to 66% of 0.1% formic acid in 80% ACN in 200 min was applied' (Chinello et al., 2019). NanoBoosterCaptiveSpray ESI source (Bruker Daltonics) was directly connected to column out. Mass spectrometer was operated in data-dependent acquisition mode, using CID fragmentation assisted by N2 as collision gas setting acquisition parameters as already reported (Liu et al., 2015). Mass accuracy was assessed using a specific lock mass (1221.9906 m/z) and a calibration segment (10 mM sodium formate cluster solution) for each single run. Raw data from nLC ESI-MS/MS were elaborated through DataAnalysis v.4.1 Sp4 (Bruker Daltonics, Germany) and converted into peaklists. Resulting files were interrogated for protein identification through in-house Mascot search engine (version: 2.4.1), as described (Liu et al., 2015). Identity was accepted for proteins recognized by at least one unique and significant (p-value<0.05) peptide.
 
-## Pathways analysis
+### Pathways analysis
 
 Gene-set enrichment analysis was performed with DAVID 6.8 (Huang et al., 2009; Dennis et al., 2003). Pathways were visualized and partially analysed with STRING v10 (Szklarczyk et al., 2015).
 
-## Statistical analysis
+### Statistical analysis
 
 Supplementary file 5 resumes the statistical tests chosen for the analysis with the justification for their choice.

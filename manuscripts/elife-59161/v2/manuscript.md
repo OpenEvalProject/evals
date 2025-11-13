@@ -34,9 +34,17 @@ Here, we describe the development of VocalMat, a software for robust and automat
 
 ## Results
 
-## Detection of mouse USVs using imaging processing
+### Detection of mouse USVs using imaging processing
 
 VocalMat uses multiple steps to analyze USVs in audio files (see Figure 1A for the general workflow). Initially, the audio recordings are converted into high-resolution spectrograms through a short-time Fourier transformation (see Materials and methods). The resulting spectrogram consists of a matrix, wherein each element corresponds to an intensity value (power spectrum represented in decibels) for each time-frequency component. The spectrogram is then analyzed as a gray-scale image, where high-intensity values are represented by brighter pixels and low-intensity values by darker pixels (Figure 1B). The gray-scale image undergoes contrast enhancement and adaptive thresholding for binarization (see Materials and methods). The segmented objects are further refined via morphological operations (Figure 1C and Figure 1—figure supplement 1), thus resulting in a list of segmented blobs (hereafter referred to as USV candidates) with their corresponding spectral features (Figure 1D). Finally, because experimental observations demonstrate a minimum of 10 ms of interval between two successive and distinct USVs, we combined into a single USV candidate blobs that were separated for less than 10 ms. The final list of USV candidates contain real USVs and noise (i.e., detected particles that are not part of any USV).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig1-v2.jpg)
+
+**Figure 1.:** (A) Workflow of the main steps used by VocalMat, from audio acquisition to data analysis. (B) Illustration of a segment of spectrogram. The time-frequency plan is depicted as a gray scale image wherein the pixel values correspond to intensity in decibels. (C) Example of segmented USV after contrast enhancement, adaptive thresholding, and morphological operations (see Figure 1—figure supplement 1 for further details of the segmentation process). (D) Illustration of some of the spectral information obtained from the segmentation. Information on intensity is kept for each time-frequency point along the segmented USV candidate.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Image processing pipeline for segmentation of USVs in spectrograms. (A) Segment of a spectrogram post contrast adjustment ($\gamma=1$). (B) Output image post binarization using adaptive thresholding. (C) Resulting image from the opening operation with rectangle 4 × 2. (D) Result from the dilation with line l = 4 and $∠$ 90°. (E) Removal of too small objects (≤60 pixels), mean of cloud points for each detected USV candidate being shown in red and green lines shows an interval of 10 ms. (F) Result after separating syllables based on the criterion of maximum interval between two tones in a syllable. The different colors differentiate the syllables from each other.
 
 To reduce the amount of data stored for each USV, the features extracted from detected candidates are represented by a mean frequency and intensity every 0.5 ms. The means are calculated for all the individual candidates, including the ones overlapping in time, hence preserving relevant features such as duration, frequency, intensity, and harmonic components (Figure 1D).
 
@@ -44,39 +52,114 @@ Harmonic components are also referred to as nonlinear components or composite (S
 
 Besides the list of USV candidates and their spectral features, the segmentation process also exports image files of 227 × 227 pixels, in which the USV candidate is centralized in windows of 220 ms (see Figure 1B). This temporal length is defined as twice the maximum duration of USVs observed in mice (Grimsley et al., 2011), thus preventing cropping.
 
-## Eliminating noise using a contrast filter
+### Eliminating noise using a contrast filter
 
-Initially, we used VocalMat to detect USVs in a set of 64 audio recordings. These recordings were composed of experiments using mice of different strains, age, sex, and in a variety of experimental conditions (e.g., recorded inside a chamber that produce high levels of environmental noise) to increase the variability of the data set. In this data set, VocalMat initially detected a pool of 59,781 USV candidates, which includes real USVs and noise (Figure 2A and Materials and methods). Visual inspection of the data set revealed that artifacts generated during the segmentation process dominated the pool of USV candidates (see Figure 2B for examples of real USVs and noise in the pool of USV candidates). This type of artifact is characterized by its low intensity compared to real USVs. To remove these artifacts from the pool of USV candidates, we applied a Local Median Filter step, a method to estimate the minimum expected contrast between a USV and its background for each audio recording. This contrast is calculated based on the median intensity of the pixels in each detected USV candidate k (referred to as Xk^), and the median intensity of the background pixels in a bounding box containing the candidate k (referred to as Wk^) (Figure 2C). Thus, the contrast is defined as the ratio Ck=Xk^/Wk^.
+Initially, we used VocalMat to detect USVs in a set of 64 audio recordings. These recordings were composed of experiments using mice of different strains, age, sex, and in a variety of experimental conditions (e.g., recorded inside a chamber that produce high levels of environmental noise) to increase the variability of the data set. In this data set, VocalMat initially detected a pool of 59,781 USV candidates, which includes real USVs and noise (Figure 2A and Materials and methods). Visual inspection of the data set revealed that artifacts generated during the segmentation process dominated the pool of USV candidates (see Figure 2B for examples of real USVs and noise in the pool of USV candidates). This type of artifact is characterized by its low intensity compared to real USVs. To remove these artifacts from the pool of USV candidates, we applied a Local Median Filter step, a method to estimate the minimum expected contrast between a USV and its background for each audio recording. This contrast is calculated based on the median intensity of the pixels in each detected USV candidate $k$ (referred to as $X_{k}^$), and the median intensity of the background pixels in a bounding box containing the candidate $k$ (referred to as $W_{k}^$) (Figure 2C). Thus, the contrast is defined as the ratio $C_{k}=X_{k}^/W_{k}^$.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig2-v2.jpg)
 
-**Figure 2.:** (A) In a set of 64 audio files, VocalMat identified 59,781 USV candidates. (B) Examples of USVs among the pool of candidates that were manually labeled as either noise or real USVs. The score (upper-right corner) indicates the calculated contrast  for the candidate. (CkC) Example of contrast calculation ( ) for a given USV candidate Ck. The red dots indicate the points detected as part of the USV candidate (k) and the dashed-white rectangle indicates its evaluated neighborhood (Xk). (WkD) Distribution of the  for the USV candidates in the Cktest data set. (E) Each USV candidate was manually labeled as real USV or noise. The distribution of  for the real USVs (cyan) compared to the distribution for all the USV candidates (red) in the Cktest data set. The blue line indicates the cumulative distribution function (CDF) of  for all the USV candidates. The inflection point of the CDF curve is indicated by the arrow. (CkF) Example of a segment of spectrogram with three USVs. The analysis of this segment without the ’Local Median Filter’ results in an elevated number of false positives (noise detected as USV). ’Red’ and ’cyan’ ticks denote the time stamp of the identified USV candidates without and with the ’Local Median Filter’, respectively.
+**Figure 2.:** (A) In a set of 64 audio files, VocalMat identified 59,781 USV candidates. (B) Examples of USVs among the pool of candidates that were manually labeled as either noise or real USVs. The score (upper-right corner) indicates the calculated contrast $C_{k}$ for the candidate. (C) Example of contrast calculation ( $C_{k}$) for a given USV candidate $k$. The red dots indicate the points detected as part of the USV candidate ($X_{k}$) and the dashed-white rectangle indicates its evaluated neighborhood ($W_{k}$). (D) Distribution of the $C_{k}$ for the USV candidates in the test data set. (E) Each USV candidate was manually labeled as real USV or noise. The distribution of $C_{k}$ for the real USVs (cyan) compared to the distribution for all the USV candidates (red) in the test data set. The blue line indicates the cumulative distribution function (CDF) of $C_{k}$ for all the USV candidates. The inflection point of the CDF curve is indicated by the arrow. (F) Example of a segment of spectrogram with three USVs. The analysis of this segment without the ’Local Median Filter’ results in an elevated number of false positives (noise detected as USV). ’Red’ and ’cyan’ ticks denote the time stamp of the identified USV candidates without and with the ’Local Median Filter’, respectively.
 
 To validate this method, a group of investigators trained to detect USVs manually inspected the spectrograms and labeled the USVs in a subset of seven randomly selected audio recordings (hereafter referred to as test data set and described in Table 3). Each USV was labeled by at least two investigators and when discrepancy occurred, both individuals reviewed their annotation under the supervision of a third investigator. (This data set contains fully validated audio recordings with manually inspected USVs and is publicly available to facilitate the development and the test of performance of new tools.)
 
 In the test data set, a total of 7741 USV candidates were detected using the segmentation process described above, representing 1.75 times more USV candidates than the manual counting (4441 USVs). Importantly, the segmentation step included 4428 real USVs within the pool of USV candidates, therefore missing 13 USVs compared to the ground-truth.
 
-The distribution of Ck for real USVs and for noise showed that the peak at high Ck (i.e., low contrast) in the distribution was dominated by USV candidates corresponding to noise (Figure 2D,E). The Ck of real USVs (mean = 0.642, SEM = 1.841 ×10-3, median = 0.640, 95% CI [0.638, 0.646]; N = 4,428) was significantly lower than the Ck of noise (mean = 0.922, SEM = 9.605 ×10-4, median = 0.936, 95% CI [0.921, 0.924]; n = 3,336; p < 10−15, D = 0.894, Kolmogorov–Smirnov test; Figure 2D,E). This unbalanced bimodal distribution causes an inflection point on the cumulative distribution function (CDF) of Ck that matches the ratio observed for segmentation artifacts (Figure 2E). Therefore, based on these results, we used the automatically calculated inflection point, which is specific to each audio recording, as a threshold to effectively eliminate a substantial amount of noise from the pool of USV candidates (details on this calculation are provided in Materials and methods).
+The distribution of $C_{k}$ for real USVs and for noise showed that the peak at high $C_{k}$ (i.e., low contrast) in the distribution was dominated by USV candidates corresponding to noise (Figure 2D,E). The $C_{k}$ of real USVs (mean = 0.642, SEM = 1.841 $\times10^{-3}$, median = 0.640, 95% CI [0.638, 0.646]; N = 4,428) was significantly lower than the $C_{k}$ of noise (mean = 0.922, SEM = 9.605 $\times10^{-4}$, median = 0.936, 95% CI [0.921, 0.924]; n = 3,336; p < 10−15, D = 0.894, Kolmogorov–Smirnov test; Figure 2D,E). This unbalanced bimodal distribution causes an inflection point on the cumulative distribution function (CDF) of $C_{k}$ that matches the ratio observed for segmentation artifacts (Figure 2E). Therefore, based on these results, we used the automatically calculated inflection point, which is specific to each audio recording, as a threshold to effectively eliminate a substantial amount of noise from the pool of USV candidates (details on this calculation are provided in Materials and methods).
 
-In the test data set, 5171 out of 7741 USV candidates survived the Local Median Filter step. This number includes real USVs (4421; out of the 4428 real USVs after automatic segmentation) and remaining noises of lower Ck. Thus, this step eliminated seven real USVs of the pool of candidates, all of which presented a high Ck (mean = 0.942, SEM = 5.871 ×10-3, median = 0.943, 95% CI [0.927, 0.956]; n = 7). The remaining noises among the pool of candidates had high intensity and were commonly originated from external sources (Figure 2B,E).
+In the test data set, 5171 out of 7741 USV candidates survived the Local Median Filter step. This number includes real USVs (4421; out of the 4428 real USVs after automatic segmentation) and remaining noises of lower $C_{k}$. Thus, this step eliminated seven real USVs of the pool of candidates, all of which presented a high $C_{k}$ (mean = 0.942, SEM = 5.871 $\times10^{-3}$, median = 0.943, 95% CI [0.927, 0.956]; n = 7). The remaining noises among the pool of candidates had high intensity and were commonly originated from external sources (Figure 2B,E).
 
 To illustrate the performance of the Local Median Filter step, Figure 2F shows a segment of a spectrogram with 11 USV candidates detected and three real USVs. After applying the Local Median Filter step, only the real USVs remained in the pool of USV candidates. Thus, the Local Median Filter step effectively eliminates segmentation noise from the pool of USV candidates, which provides two main advantages: first, it decreases the number of USV candidates used in downstream analysis and, second, it reduces the number of false positives.
 
 In an ideal experimental setting with complete sound insulation and without the generation of noise by the movement of the animal, no further step is required to detect USVs using VocalMat. Since this is difficult in experimental conditions, we applied a second step in the noise elimination process.
 
-## Using convolutional neural network for noise identification
+### Using convolutional neural network for noise identification
 
 To identify USVs in the pool of USV candidates that passed the Local Median Filter step, we trained a convolutional neural network (CNN) to classify each USV candidate into one of 11 USV categories or noise (see Figure 4A for examples of the different USV categories). We used a data set containing 10,871 samples manually labeled as one of the 11 USV categories and 2083 samples manually labeled as noise (see Materials and methods). The output of the CNN is the probability of each USV candidate belonging to one of the 12 categories. The most likely category defines the label of the USV candidate (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig3-v2.jpg)
 
-**Figure 3.:** (A) Illustration of the AlexNet architecture post end-to-end training on our training data set. The last three layers of the network were replaced in order to perform a 12-categories (11 USV types plus noise) classification task. The output of the CNN is a probability distribution over the labels for each input image. (B) Linear regression between the number of USVs manually detected versus the number reported by VocalMat for the audio files in our test data set (see Figure 4—figure supplement 1 for individual confusion matrices). (C) Distribution of probabilities  for the true positive (green), false positive (red), false negative (cyan), and true negative (magenta). Ticks represent individual USV candidates.P⁢(U⁢S⁢V)
+**Figure 3.:** (A) Illustration of the AlexNet architecture post end-to-end training on our training data set. The last three layers of the network were replaced in order to perform a 12-categories (11 USV types plus noise) classification task. The output of the CNN is a probability distribution over the labels for each input image. (B) Linear regression between the number of USVs manually detected versus the number reported by VocalMat for the audio files in our test data set (see Figure 4—figure supplement 1 for individual confusion matrices). (C) Distribution of probabilities $P⁢(U⁢S⁢V)$ for the true positive (green), false positive (red), false negative (cyan), and true negative (magenta). Ticks represent individual USV candidates.
 
-To evaluate the performance of VocalMat in distinguishing between USVs and noise, we used the 5171 USV candidates in the test data set that passed the Local Median Filter step (Materials and methods). We compared the probability for the label Noise (P⁢(N⁢o⁢i⁢s⁢e)) to the sum over the probabilities of the 11 USV categories (P⁢(U⁢S⁢V)). The rate of detected USVs labeled as such (true positive or sensitivity) was 99.04 ± 0.31% (mean ± SEM; median = 99.37; 95% CI [98.27, 99.80]). The rate of detected USVs labeled as noise (false negative) was 0.96 ± 0.31% (mean ± SEM; median = 0.61; 95% CI [0.20, 1.73]). The rate of detected noise labeled as noise (true negative rate or specificity) was 94.40 ± 1.37% (mean ± SEM; median = 95.60; 95% CI [91.60, 97.74]). The rate of detected noise labeled as USV (false positive) was 5.60 ± 1.37% (mean ± SEM; median = 4.40; 95% CI [2.26, 8.94]), representing a total of 42 wrongly detected USVs out of the 5171 USV candidates in the test data set. Altogether, the accuracy in identifying USVs was 98.63 ± 0.20% (mean ± SEM; median = 98.55; 95% CI [98.14, 99.11]) for manually validated audio recordings. (The performance of VocalMat in identifying USVs in individual audio recordings is provided in Table 1.) Thus, VocalMat presents high accuracy to detect USVs from audio recordings and to remove noise (Figure 3B), failing to identify approximately 1 in 75 USVs.
+To evaluate the performance of VocalMat in distinguishing between USVs and noise, we used the 5171 USV candidates in the test data set that passed the Local Median Filter step (Materials and methods). We compared the probability for the label Noise ($P⁢(N⁢o⁢i⁢s⁢e)$) to the sum over the probabilities of the 11 USV categories ($P⁢(U⁢S⁢V)$). The rate of detected USVs labeled as such (true positive or sensitivity) was 99.04 ± 0.31% (mean ± SEM; median = 99.37; 95% CI [98.27, 99.80]). The rate of detected USVs labeled as noise (false negative) was 0.96 ± 0.31% (mean ± SEM; median = 0.61; 95% CI [0.20, 1.73]). The rate of detected noise labeled as noise (true negative rate or specificity) was 94.40 ± 1.37% (mean ± SEM; median = 95.60; 95% CI [91.60, 97.74]). The rate of detected noise labeled as USV (false positive) was 5.60 ± 1.37% (mean ± SEM; median = 4.40; 95% CI [2.26, 8.94]), representing a total of 42 wrongly detected USVs out of the 5171 USV candidates in the test data set. Altogether, the accuracy in identifying USVs was 98.63 ± 0.20% (mean ± SEM; median = 98.55; 95% CI [98.14, 99.11]) for manually validated audio recordings. (The performance of VocalMat in identifying USVs in individual audio recordings is provided in Table 1.) Thus, VocalMat presents high accuracy to detect USVs from audio recordings and to remove noise (Figure 3B), failing to identify approximately 1 in 75 USVs.
+
+**Table 1.**
+ Summary of performance of VocalMat in detecting ultrasonic vocalizations (USVs) in the test data set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Audio file</th>
+      <th>True positive</th>
+      <th>False negative</th>
+      <th>True negative</th>
+      <th>False positive</th>
+      <th>Accuracy (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>316</td>
+      <td>1</td>
+      <td>58</td>
+      <td>2</td>
+      <td>99.20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>985</td>
+      <td>1</td>
+      <td>105</td>
+      <td>15</td>
+      <td>98.55</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>696</td>
+      <td>12</td>
+      <td>73</td>
+      <td>5</td>
+      <td>97.84</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>862</td>
+      <td>13</td>
+      <td>51</td>
+      <td>4</td>
+      <td>98.17</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>44</td>
+      <td>1</td>
+      <td>216</td>
+      <td>3</td>
+      <td>98.48</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>696</td>
+      <td>2</td>
+      <td>87</td>
+      <td>4</td>
+      <td>99.24</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>787</td>
+      <td>5</td>
+      <td>122</td>
+      <td>5</td>
+      <td>98.91</td>
+    </tr>
+  </tbody>
+</table>
 
 We further calculated other measures of performance (Figure 3C). For USVs wrongly labeled as noise (false negative), the probability of being a USV was 0.15 ± 0.03 (mean ± SEM; median = 0.04; 95% CI [0.09, 0.22]; Figure 3C), while for noise labeled as USV (false positive), the probability of being USV was 0.85 ± 0.03 (mean ± SEM; median = 0.86; 95% CI [0.80, 0.91]; Figure 3C). These probabilities contrast with cases in which VocalMat correctly identified USV and noise. USVs that were correctly identified had a probability of being USV of 0.99 ± 3.78 × 10−4 (mean ± SEM; median = 1.00; 95% CI [0.99, 0.99]; Figure 3C). Noise that was correctly identified had a probability of being noise of 0.99 ± 1.78 × 10−3 (mean ± SEM; median = 1.00; 95% CI [0.98, 0.99]; Figure 3C). These results indicate that the probability assigned by VocalMat flags likely errors in classification. These flagged candidates (i.e., with assigned low probability) can be manually inspected to correct the misclassification and retrain VocalMat.
 
-## Performance of VocalMat compared to other tools
+### Performance of VocalMat compared to other tools
 
 Next, we tested the performance of VocalMat in comparison to other software tools. We first searched for validated data sets that were used by previous tools. We obtained 15 audio recordings made publicly available by USVSEG (Tachibana et al., 2020) and one audio recording made publicly available by DeepSqueak (Coffey et al., 2019).
 
@@ -86,23 +169,78 @@ Similar to VocalMat, DeepSqueak uses deep learning to detect USVs (Coffey et al.
 
 As described above, the test data set was fully curated by manual identification of USVs. To take advantage of this large data set, we further compared the performance of VocalMat with four tools (see Materials and methods). In addition to USVSEG (Tachibana et al., 2020) and DeepSqueak (Coffey et al., 2019), we also tested the performance of Ax (Neunuebel et al., 2015) and MUPET (Van Segbroeck et al., 2017). (Table 2 summarizes the performance of these tools in our test set.)
 
+**Table 2.**
+ Summary of detection performance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Missed ultrasonic vocalizations (USVs) rate (%)</th>
+      <th>False discovery rate (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ax</td>
+      <td>4.99</td>
+      <td>37.67</td>
+    </tr>
+    <tr>
+      <td>MUPET</td>
+      <td>33.74</td>
+      <td>38.78</td>
+    </tr>
+    <tr>
+      <td>USVSEG</td>
+      <td>6.53</td>
+      <td>7.58</td>
+    </tr>
+    <tr>
+      <td>DeepSqueak</td>
+      <td>27.13</td>
+      <td>7.61</td>
+    </tr>
+    <tr>
+      <td>VocalMat</td>
+      <td>1.64</td>
+      <td>0.05</td>
+    </tr>
+  </tbody>
+</table>
+
 Ax requires a series of manual inputs for their detection algorithm (Neunuebel et al., 2015). Combining the best configurations tested (Supplementary file 1), the percentage of missed USVs was 4.99 ± 1.34% (mean ± SEM; median = 4.07, 95% CI [1.73, 8.26]) and the false discovery rate was 37.67 ± 5.59% (mean ± SEM; median = 42.56, 95% CI [23.99, 51.34]). In comparison to Ax, MUPET has a lower number of parameters to be set by the user. Combining the best configurations tested (Supplementary file 2), the percentage of missed USVs was 33.74 ± 3.81% (mean ± SEM; median = 33.13, 95% CI [24.41, 43.07]) and the false discovery rate was 38.78 ± 6.56% (mean ± SEM; median = 32.97, 95% CI [22.72, 54.84]). Similar to Ax and MUPET, USVSEG requires setting parameters manually for USV detection (Supplementary file 3). USVSEG displayed the best performance out of the manually configured tools, presenting a missed vocalization rate of 6.53 ± 2.56% (mean ± SEM; median = 4.26, 95% CI [0.26, 12.80]) and a false discovery rate of 7.58 ± 4.31% (mean ± SEM; median = 3.27, 95% CI [−2.97, 18.15]). It is important to emphasize that the tests with Ax, MUPET, and USVSEG did not explore all possible combinations of parameters and, therefore, other settings could potentially optimize the performance of these tools to detect USVs in the test data set.
 
 Finally, we compared the performance of DeepSqueak with VocalMat (Supplementary file 4). The best values obtained were a rate of missed USVs of 27.13 ± 3.78% (mean ± SEM; median = 24.22, 95% CI [17.86, 36.40]) and a false discovery rate of 7.61 ± 2.35% (mean ± SEM; median = 4.73, 95% CI [1.84, 13.39]). The manual inspection of the USVs detected by DeepSqueak revealed cases of more than one USV being counted as a single USV, which could lead to an inflated number of missed USVs. Since we did not train DeepSqueak with our data set, it is possible that DeepSqueak could present much better performance than what we report here when custom-trained. Thus, using both external data sets from different laboratories and our own fully validated test data set, VocalMat presents high performance in detecting USVs in audio recordings without the need for any parameter tuning or custom training of the CNN.
 
-## Detection of harmonic components
+### Detection of harmonic components
 
 To measure the performance of VocalMat for the detection of harmonic components, we compared the output of VocalMat with the test data set. The rate of true positives was 93.32 ± 1.96% (mean ± SEM; median = 92.18; 95% CI [88.54, 98.11]). The rate of USVs wrongly labeled as having a harmonic component (false positive) was 5.39 ± 1.18% (mean ± SEM; median = 5.17; 95% CI [2.50, 8.27]). The rate of missed harmonic components (false negative) was 6.68 ± 1.96% (mean ± SEM; median = 7.82, 95% CI [1.89, 11.46]). All combined, the error rate in identifying harmonic components was 12.19 ± 3.44% (mean ± SEM; median = 11.92, 95% CI [3.34, 21.03]). Thus, VocalMat presents satisfactory performance in detecting the harmonic components of the USVs.
 
-## Classification of USVs in categories
+### Classification of USVs in categories
 
 To evaluate the performance of VocalMat in classifying the detected USVs in distinct categories, we compared the most likely label assigned by the CNN to the labels assigned by the investigators (i.e., ground-truth). The accuracy of the VocalMat classifier module is 86% (Figure 4B,C, Figure 4—figure supplement 1, and Supplementary file 5). VocalMat shows lower accuracy to detect rare USV types (e.g., reverse chevron; Figure 4A–C) or USVs with multiple components (e.g., multiple steps and two steps; Figure 4A–C). When we expanded our analysis to consider the two most likely labels assigned by the CNN, the accuracy of VocalMat was 94% (Figure 4E and Supplementary file 6). These observations suggest a possible overlap between the definition of categories. Based on these analyses, we reasoned that the distribution of probabilities for each of the 11 categories of USV types calculated by the CNN could provide a more fluid classification method to analyze the vocal repertoire of mice.
 
-## Using VocalMat to analyze and visualize the vocal repertoire of mice
+![Figure 4.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig4-v2.jpg)
+
+**Figure 4.:** (A) Example of the 11 categories of USVs plus noise that VocalMat used to classify the USV candidates. (B) Confusion matrix illustrating VocalMat’s performance in multiclass classification (see also Supplementary file 5 and Figure 4—figure supplement 1 for individual confusion matrices). (C) Comparison of classification performance for labels assigned based on the most likely label (Top-one) versus the two most likely labels (Top-two) (see Supplementary file 6). Symbols represent median ±95% confidence intervals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig4-figsupp1-v2.jpg)
+
+### Using VocalMat to analyze and visualize the vocal repertoire of mice
 
 To illustrate the use of the probability distribution of USV classification by VocalMat, we used data previously published by our group with over 45,000 USVs (Zimmer et al., 2019). In this published data set, two groups of 10 days old mice were studied. At this age, mice vocalize in the ultrasonic range when separated from the nest. Two groups of mice were analyzed (control versus treatment) during two contiguous time points (baseline versus test). The difference between the two groups was that in the treatment group, a specific population of neurons in the brain was activated to induce higher rates of USV emission (Zimmer et al., 2019).
 
 To visualize the probability distribution of USV classification by VocalMat, we used Diffusion Maps (see Materials and methods). Diffusion Maps is a dimensionality reduction algorithm that allows the projection of the probability distribution into a Euclidean space (Coifman et al., 2005). We compared all four experimental conditions against each other and visually verified that the manifolds representing the USV repertoires showed a degree of similarity (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig5-v2.jpg)
+
+**Figure 5.:** (A) Illustration of the embedding of the ultrasonic vocalizations (USVs) for each experimental condition. The probability distribution of all the USVs in each experimental condition is embedded in a Euclidean space given by the eigenvectors computed through Diffusion Maps. Colors identify the different USV types. (B) Pairwise distance matrix between the centroids of USV types within each manifold obtained for the four experimental conditions. (C) Comparison between the pairwise distance matrices in the four experimental conditions by Pearson’s correlation coefficient.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59161/elife-59161-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Illustration of the resulting manifold alignment for each pair of experimental conditions. The quality of the alignment between the manifolds is assessed by (B) Cohen’s coefficient and (C) overall projection accuracy into joint space.
 
 To quantify the similarities (or differences) between the manifolds, we calculated the pairwise distance between the centroids of USV types within each manifold (Figure 5B). The pairwise distance matrices provide a metric for the manifold structure, allowing a direct comparison between the vocal repertoire of different groups. When we compared the similarity between the pairwise distance matrices in the four experimental conditions, we observed that the treatment group in the test condition presented a robust structural change in the vocal repertoire, which can be effectively represented by a matrix correlation (Figure 5C). The degree of similarity between the experimental conditions can also be visualized by comparing the structure of the manifolds. Since the manifolds are calculated separately, their coordinate system needs to be aligned to allow visual comparisons, which we achieve using the Kernel Alignment algorithm (Figure 5—figure supplement 1 and Materials and methods) (Tuia and Camps-Valls, 2016; Wang and Mahadevan, 2011). The quality of the manifold alignment is assessed by Cohen’s coefficient and overall projection accuracy into a joint space (Figure 5—figure supplement 1), showing the lowest scores for the treatment group in the test condition when compared to the other experimental conditions. Hence, these later analyses illustrate the use of the probability distribution for vocal classification and the power of dimensionality reduction techniques – such as Diffusion Maps – to provide a detailed analysis of the vocal repertoire of mice.
 
@@ -120,49 +258,162 @@ In summary, VocalMat is a tool to detect and classify mouse USVs with outstandin
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All mice used to record the emission of USV were 5–15 days old from both sexes. Dams used were 2–6 months old and were bred in our laboratory. To maximize variability in the audio recordings, different mouse strains were used (all from The Jackson Laboratories): C57Bl6/J, NZO/HlLtJ, 129S1/SvImJ, NOD/ShiLtJ, and PWK/PhJ. Each mouse was only recorded once. All mice were kept in temperature- and humidity-controlled rooms, in a 12/12 hr light/dark cycle, with lights on from 7:00 AM to 7:00 PM. Food and water were provided ad libitum. All procedures were approved by the IACUC at Yale University School of Medicine.
 
-## Audio acquisition
+### Audio acquisition
 
 Mice were recorded in different conditions to maximize the levels of environmental noise and other experimental factors in the audio recordings. Mice were placed in a small box made of Plexiglas (15 × 15 × 10 cm). This small box was placed inside an open field (40 × 40 × 40 cm) with the walls covered by anechoic material (2’ Wedge Acoustic Foam, Auralex) or inside an environmental chamber (CAB-8, Sable System International). For the audio recordings from inside the environmental chamber, the heater was either turned on at 35°C or turned off, as summarized in Table 3. By turning the heater on, we increased the levels of ambient noise to train and test VocalMat in a wide range of conditions. Sound was recorded using the recorder module UltraSoundGate 416H and a condenser ultrasound microphone CM16/CMPA (Avisoft Bioacoustics, Berlin, Germany) placed 15 cm above the animal. The experiments were recorded with a sampling rate of 250 kHz. The recording system had a flat response for sounds within frequencies between 20 kHz and 140 kHz, preventing distortions for the frequency of interest. The recordings were made by using Avisoft RECORDER 4.2 (version 4.2.16; Avisoft Bioacoustics) in a Laptop with an Intel i5 2.4 GHz processor and 4 GB of RAM. Using these settings, 10 min of audio recording generated files of approximately 200 MB.
 
-## Spectral power
+**Table 3.**
+ Summary of experimental conditions covered in the test data set.
 
-USVs were segmented on the audio files by analysis of their spectrograms. Aiming the configuration that would grant us the best time-frequency resolution, the spectrograms were calculated through a short-time Fourier transformation (STFT, MATLAB’s spectrogram function) using the following parameters: 1024 sampling points to calculate the discrete Fourier transform (NFFT = 1024), Hamming window with length 256, and half-overlapping with adjacent windows to reduce artifacts at the boundary. The mathematical expression that gives us the short-time Fourier Transform is shown below:(1)STFT{x[n]}(m,ω)=X(n,ω)=∑n=−∞∞=x[n]w[n−m]e−jωn
 
-where the original signal x⁢[n] is divided in chunks by the windowing function w⁢[m]. The Fourier Transformation of the chunks result in a matrix with magnitude and phase for each time-frequency point.
+<table>
+  <thead>
+    <tr>
+      <th>Age</th>
+      <th>Microphone gain</th>
+      <th>Location</th>
+      <th>Heating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P9</td>
+      <td>Maximum</td>
+      <td>Environmental chamber</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>Maximum</td>
+      <td>Environmental chamber</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>Maximum</td>
+      <td>Environmental chamber</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>Intermediary</td>
+      <td>Open field</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>Intermediary</td>
+      <td>Open field</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>Maximum</td>
+      <td>Environmental chamber</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>Maximum</td>
+      <td>Environmental chamber</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
-The spectral power density, represented in the logarithmic unit decibels, is then given by(2)P(m,ω)=10log⁡|∑m=−∞∞x[m]w[n−m]e−jωn|2
+### Spectral power
+
+USVs were segmented on the audio files by analysis of their spectrograms. Aiming the configuration that would grant us the best time-frequency resolution, the spectrograms were calculated through a short-time Fourier transformation (STFT, MATLAB’s spectrogram function) using the following parameters: 1024 sampling points to calculate the discrete Fourier transform (NFFT = 1024), Hamming window with length 256, and half-overlapping with adjacent windows to reduce artifacts at the boundary. The mathematical expression that gives us the short-time Fourier Transform is shown below:
+
+$$
+STFT{x[n]}(m,\omega)=X(n,\omega)=\sumn=−∞∞=x[n]w[n−m]e^{−j\omegan}
+$$
+
+where the original signal $x⁢[n]$ is divided in chunks by the windowing function $w⁢[m]$. The Fourier Transformation of the chunks result in a matrix with magnitude and phase for each time-frequency point.
+
+The spectral power density, represented in the logarithmic unit decibels, is then given by
+
+$$
+P(m,\omega)=10log⁡|\summ=−∞∞x[m]w[n−m]e^{−j\omegan}|^{2}
+$$
 
 We used a high pass filter (45 kHz) to eliminate sources of noise in the audible range and to reduce the amount of data stored (Grimsley et al., 2011).
 
-## Normalization and contrast enhancement
+### Normalization and contrast enhancement
 
-Since USVs present higher intensity than the background and to avoid setting a fixed threshold for USV segmentation, we used contrast adjustment to highlight putative USV candidates and to reduce the variability across audio files. Contrast adjustment was obtained according to the following re-scaling equation:(3)J=(|10log(P)|max(10log(P))−LinHin−Lin)γwhere Hi⁢n and Li⁢n are the highest and the lowest intensity values of the adjusted image, respectively, and P is the power spectrum for each time-frequency point (pixel of the spectrogram). The parameter γ describes the shape of the mapping function between the original and the corrected image, such that γ<1 results in darker pixels and γ>1 in brighter pixels. We used a linear mapping for our application (γ=1, MATLAB’s imadjust function).
+Since USVs present higher intensity than the background and to avoid setting a fixed threshold for USV segmentation, we used contrast adjustment to highlight putative USV candidates and to reduce the variability across audio files. Contrast adjustment was obtained according to the following re-scaling equation:
 
-## Adaptive thresholding and morphological operations
+$$
+J=(\frac{\frac{|10log(P)|}{max(10log(P))}−L_{in}}{H_{in}−L_{in}})^{\gamma}
+$$
 
-Due to non-stationary background noise and dynamic changes in the intensity of USVs within and between the audio files, we use adaptive thresholding methods to binarize the spectrograms. The threshold is computed for each pixel using the local mean intensity around the neighborhood of the pixel (Bradley and Roth, 2007). This method preserves hard contrast lines and ignores soft gradient changes. The integral image consists of a matrix I⁢(x,y) that stores the sum of all pixel intensities f⁢(x,y) to the left and above the pixel (x,y). The computation is given by the following equation:(4)I⁢(x,y)=f⁢(x,y)+I⁢(x-1,y)+I⁢(x,y-1)-I⁢(x-1,y-1)
+where $H_{i⁢n}$ and $L_{i⁢n}$ are the highest and the lowest intensity values of the adjusted image, respectively, and $P$ is the power spectrum for each time-frequency point (pixel of the spectrogram). The parameter γ describes the shape of the mapping function between the original and the corrected image, such that $\gamma<1$ results in darker pixels and $\gamma>1$ in brighter pixels. We used a linear mapping for our application ($\gamma=1$, MATLAB’s imadjust function).
 
-Therefore, the sum of the pixel values for any rectangle defined by a lower right corner (x2,y2) and upper left corner (x1,y1) is given as:(5)∑x=x1x2∑y=y1y2f⁢(x,y)=I⁢(x2,y2)-I⁢(x2,y1-1)+I⁢(x1-1,y2)-I⁢(x1-1,y1-1)
+### Adaptive thresholding and morphological operations
 
-Then, the method computes the average of an s×s window of pixels centered around each pixel. The average is calculated considering neighboring pixels on all sides for each pixel. If the value of the current pixel intensity is t percent less than this average, then it is set to black; otherwise it is set to white, as shown in the following equation:(6)C⁢(x,y)=1(y2-y1)⁢(x2-x1).∑x=x1x2∑y=y1y2f⁢(x,y)where C⁢(x,y) represents the average around the pixel (x,y).
+Due to non-stationary background noise and dynamic changes in the intensity of USVs within and between the audio files, we use adaptive thresholding methods to binarize the spectrograms. The threshold is computed for each pixel using the local mean intensity around the neighborhood of the pixel (Bradley and Roth, 2007). This method preserves hard contrast lines and ignores soft gradient changes. The integral image consists of a matrix $I⁢(x,y)$ that stores the sum of all pixel intensities $f⁢(x,y)$ to the left and above the pixel $(x,y)$. The computation is given by the following equation:
 
-The binarized image is then constructed such as that pixels (x,y) with intensity t percent lower than C⁢(x,y) are set to black (Bradley and Roth, 2007):(7)B(x,y)={0,if f(x,y) ≤(1−t)C(x,y)1,otherwisewhere t represents the sensitivity factor, and it was empirically chosen as t=0.2 for our application. The resulting binarized image consists of background pixels (intensity = 0) and putative vocal segments (contiguous areas with intensity = 1). The segments are then subjected to a sequence of morphological operations: (i) opening (erosion followed by a dilation; MATLAB’s imopen) with a rectangle 4 × 2 pixels as kernel; (ii) dilation with a line of length l = 4 and ∠90⁢° relative to the horizontal axis as kernel (MATLAB’s imdilate); (iii) filtering out candidates (i.e., dense set of white pixels) with <60 pixels (correspondent to approximately 2 ms syllable); and (iv) dilation with a line of length l = 4 and ∠ 0°, making the USV candidates proportional to their original shape.
+$$
+I⁢(x,y)=f⁢(x,y)+I⁢(x-1,y)+I⁢(x,y-1)-I⁢(x-1,y-1)
+$$
 
-## Local median filter
+Therefore, the sum of the pixel values for any rectangle defined by a lower right corner ($x_{2},y_{2}$) and upper left corner ($x_{1},y_{1}$) is given as:
 
-The image processing pipeline used for segmentation can create artifacts or noise that were not originally present in the spectrogram, especially in the binarization step. These noises that occur due to the segmentation process are not associated with an event in the recording (a real USV or external noise) and are part of the pool of USV candidates. To determine if a USV candidate is relevant for further analysis, we used a contrast filter – Local Median Filter – to compare the median intensity of the pixels in the USV candidate k (referred to as Xk^) to the intensity of the pixels in a bounding box that encompasses the USV candidate (referred to as Wk^). The Local Median Filter then determines if a USV candidate k is discarded based on the cumulative distribution of intensity ratio over all the USV candidates detected in the audio file X^/W^. The bounding box that defines the window Wk is a rectangle with its four vertices defined as a function of the frequencies (Fk) for USV candidate k and its time stamps (Tk). Thus, the bounding box is defined as follows:(8)Wk={(m⁢a⁢x⁢(Fk)+2.5)⁢k⁢H⁢z,(m⁢i⁢n⁢(Fk)-2.5)⁢k⁢H⁢z,(m⁢a⁢x⁢(Tk)+0.1)⁢s,(m⁢i⁢n⁢(Tk)-0.1)⁢s
+$$
+\sumx=x_{1}x_{2}\sumy=y_{1}y_{2}f⁢(x,y)=I⁢(x_{2},y_{2})-I⁢(x_{2},y_{1}-1)+I⁢(x_{1}-1,y_{2})-I⁢(x_{1}-1,y_{1}-1)
+$$
 
-As seen in (8), a 200 ms interval is analyzed around the USV candidate. Such a wide interval may present more than one USV in Wk. However, the amount of pixels in Xk represents only 2.43 ± 0.10% (mean ± SEM; median = 1.27, 95% CI [2.22 , 2.63]; n = 59,781 images analyzed) of the total number of pixels contained in the window Wk. Given this proportion between the number of pixels in Xk and Wk, the median of the intensity distribution of the whole window (Wk^) tends to converge to the median intensity of the background.
+Then, the method computes the average of an $s\timess$ window of pixels centered around each pixel. The average is calculated considering neighboring pixels on all sides for each pixel. If the value of the current pixel intensity is $t$ percent less than this average, then it is set to black; otherwise it is set to white, as shown in the following equation:
 
-We used the ratio Ck=Xk^/Wk^ to exclude USV candidates that correspond to segmentation noise. We first calculated the CDF of Ck over all the USV candidates in an audio file (now referred to as Υ). To find the inflection point in Υ, a second-order polynomial fit for every set of three consecutive points was used to obtain local parametric equations (Υ⁢(t)=(x⁢(t),y⁢(t))) describing the segments of Υ. Since the calculation of the inflection point is done numerically, the number of points chosen for this calculation should be such that we can have as many points of curvature as possible while preserving information of local curvature. Then, after a screening for the best number of points, Υ was down-sampled to 35 equally spaced points and the inflection point was calculated. Using the local parametric equations, we calculated the tangent and normal vectors on each of the 35 points. Using these vectors, we estimated the changing rate of the tangent toward the normal at each point, which is the curvature κ (O’neill, 2006) and can be calculated as follows:(9)κ=det⁡(Υ′,Υ′′)∥Υ′∥3or by using the parametric equations:(10)κ=x′⁢y′′-x′′⁢y′(x2+y2)3/2
+$$
+C⁢(x,y)=\frac{1}{(y_{2}-y_{1})⁢(x_{2}-x_{1})}.\sumx=x_{1}x_{2}\sumy=y_{1}y_{2}f⁢(x,y)
+$$
 
-The inflection point is then determined as the point with maximum curvature of the CDF curve, and adopted as threshold τ. This threshold is calculated individually for each audio file since it can vary according to the microphone gain and the distance of the microphone from the sound source. In audio files with a very low number of USVs, the point of maximum curvature of the CDF curve was not detected, and no τ was estimated. In these cases, a default threshold τ=0.92 was adopted as a conservative threshold, since no audio file presented inflection point as high as 0.92 in our training set. Only the USV candidates satisfying (Equation 11) are kept for further analysis.(11){Xk∈χ|Xk^≤τ⁢Wk^}where χ represents the set of USV candidates that survived the Local Median Filter. Of note, the intensity of each pixel is calculated in decibels, which is given in negative units due to the low power spectrum.
+where $C⁢(x,y)$ represents the average around the pixel $(x,y)$.
 
-## CNNs for USV classification
+The binarized image is then constructed such as that pixels $(x,y)$ with intensity $t$ percent lower than $C⁢(x,y)$ are set to black (Bradley and Roth, 2007):
+
+$$
+B(x,y)={0,if f(x,y) \leq(1−t)C(x,y)1,otherwise
+$$
+
+where $t$ represents the sensitivity factor, and it was empirically chosen as $t=0.2$ for our application. The resulting binarized image consists of background pixels (intensity = 0) and putative vocal segments (contiguous areas with intensity = 1). The segments are then subjected to a sequence of morphological operations: (i) opening (erosion followed by a dilation; MATLAB’s imopen) with a rectangle 4 × 2 pixels as kernel; (ii) dilation with a line of length l = 4 and $∠90⁢°$ relative to the horizontal axis as kernel (MATLAB’s imdilate); (iii) filtering out candidates (i.e., dense set of white pixels) with <60 pixels (correspondent to approximately 2 ms syllable); and (iv) dilation with a line of length l = 4 and $∠$ 0°, making the USV candidates proportional to their original shape.
+
+### Local median filter
+
+The image processing pipeline used for segmentation can create artifacts or noise that were not originally present in the spectrogram, especially in the binarization step. These noises that occur due to the segmentation process are not associated with an event in the recording (a real USV or external noise) and are part of the pool of USV candidates. To determine if a USV candidate is relevant for further analysis, we used a contrast filter – Local Median Filter – to compare the median intensity of the pixels in the USV candidate $k$ (referred to as $X_{k}^$) to the intensity of the pixels in a bounding box that encompasses the USV candidate (referred to as $W_{k}^$). The Local Median Filter then determines if a USV candidate $k$ is discarded based on the cumulative distribution of intensity ratio over all the USV candidates detected in the audio file $X^/W^$. The bounding box that defines the window $W_{k}$ is a rectangle with its four vertices defined as a function of the frequencies ($F_{k}$) for USV candidate $k$ and its time stamps ($T_{k}$). Thus, the bounding box is defined as follows:
+
+$$
+W_{k}={(m⁢a⁢x⁢(F_{k})+2.5)⁢k⁢H⁢z,(m⁢i⁢n⁢(F_{k})-2.5)⁢k⁢H⁢z,(m⁢a⁢x⁢(T_{k})+0.1)⁢s,(m⁢i⁢n⁢(T_{k})-0.1)⁢s
+$$
+
+As seen in (8), a 200 ms interval is analyzed around the USV candidate. Such a wide interval may present more than one USV in $W_{k}$. However, the amount of pixels in $X_{k}$ represents only 2.43 ± 0.10% (mean ± SEM; median = 1.27, 95% CI [2.22 , 2.63]; n = 59,781 images analyzed) of the total number of pixels contained in the window $W_{k}$. Given this proportion between the number of pixels in $X_{k}$ and $W_{k}$, the median of the intensity distribution of the whole window ($W_{k}^$) tends to converge to the median intensity of the background.
+
+We used the ratio $C_{k}=X_{k}^/W_{k}^$ to exclude USV candidates that correspond to segmentation noise. We first calculated the CDF of $C_{k}$ over all the USV candidates in an audio file (now referred to as $Υ$). To find the inflection point in $Υ$, a second-order polynomial fit for every set of three consecutive points was used to obtain local parametric equations ($Υ⁢(t)=(x⁢(t),y⁢(t))$) describing the segments of $Υ$. Since the calculation of the inflection point is done numerically, the number of points chosen for this calculation should be such that we can have as many points of curvature as possible while preserving information of local curvature. Then, after a screening for the best number of points, $Υ$ was down-sampled to 35 equally spaced points and the inflection point was calculated. Using the local parametric equations, we calculated the tangent and normal vectors on each of the 35 points. Using these vectors, we estimated the changing rate of the tangent toward the normal at each point, which is the curvature κ (O’neill, 2006) and can be calculated as follows:
+
+$$
+κ=\frac{det⁡(Υ^{′},Υ^{^{′′}})}{∥Υ^{′}∥^{3}}
+$$
+
+or by using the parametric equations:
+
+$$
+κ=\frac{x^{′}⁢y^{^{′′}}-x^{^{′′}}⁢y^{′}}{(x^{2}+y^{2})^{3/2}}
+$$
+
+The inflection point is then determined as the point with maximum curvature of the CDF curve, and adopted as threshold τ. This threshold is calculated individually for each audio file since it can vary according to the microphone gain and the distance of the microphone from the sound source. In audio files with a very low number of USVs, the point of maximum curvature of the CDF curve was not detected, and no τ was estimated. In these cases, a default threshold $\tau=0.92$ was adopted as a conservative threshold, since no audio file presented inflection point as high as 0.92 in our training set. Only the USV candidates satisfying (Equation 11) are kept for further analysis.
+
+$$
+{X_{k}\inχ|X_{k}^\leq\tau⁢W_{k}^}
+$$
+
+where χ represents the set of USV candidates that survived the Local Median Filter. Of note, the intensity of each pixel is calculated in decibels, which is given in negative units due to the low power spectrum.
+
+### CNNs for USV classification
 
 We use CNNs to eliminate external noise from the pool of USV candidates and classify USVs in distinct types (see below). We use a transfer learning approach with an AlexNet (Krizhevsky et al., 2012) model pre-trained on the ImageNet data set, and perform end-to-end training using our USVs data set. Briefly, the last three layers of the network were replaced in order to handle a 12-categories classification task for our data set (11 USV types + noise).
 
@@ -170,51 +421,51 @@ The outputs of the segmentation process with detected USV candidates were centra
 
 The images in our data set were manually labeled based on definitions for USV classes found in previous studies (adapted from Scattoni et al., 2008 and Grimsley et al., 2011). The USV classes are described below:
 
-## Complex
+#### Complex
 
 One-note syllables with two or more directional changes in frequency >6 kHz. A total of 350 images were used for training.
 
-## Step up
+#### Step up
 
 Two-notes syllables in which the second element was ≥6 kHz higher from the preceding element and there was no more than 10 ms between steps. A total of 1814 images were used for training.
 
-## Step down
+#### Step down
 
 Two-notes syllables in which the second element was ≥6 kHz lower from the preceding element and there was no more than 10 ms between steps. A total of 389 images were used for training.
 
-## Two steps
+#### Two steps
 
 Three-notes syllables, in which the second element was ≥6 kHz or more different from the first, the third element was ≥6 kHz or more different from the second and there was no more than 10 ms between elements. A total of 701 images were used for training.
 
-## Multiple steps
+#### Multiple steps
 
 Four-notes syllables or more, in which each element was ≥6 kHz or more different from the previous one and there was no more than 10 ms between elements. A total of 74 images were used for training.
 
-## Up-frequency modulation
+#### Up-frequency modulation
 
 Upwardly frequency modulated with a frequency change ≥6 kHz. A total of 1191 images were used for training.
 
-## Down-frequency modulation
+#### Down-frequency modulation
 
 Downwardly frequency modulated with a frequency change ≥6 kHz. A total of 1775 images were used for training.
 
-## Flat
+#### Flat
 
 Constant frequency syllables with modulation ≤5 kHz and duration ≥12 ms. A total of 1134 images were used for training.
 
-## Short
+#### Short
 
 Constant frequency syllables with modulation ≤5 kHz and duration ≤12 ms. A total of 1713 images were used for training.
 
-## Chevron
+#### Chevron
 
 Shaped like an inverted U in which the peak frequency was ≥6 kHz than the starting and ending frequencies. A total of 1594 images were used for training.
 
-## Reverse chevron
+#### Reverse chevron
 
 Shaped like an U in which the peak frequency was ≥6 kHz than the starting and ending frequencies. A total of 136 images were used for training.
 
-## Noise
+#### Noise
 
 Any sort of mechanical or segmentation noise detected during the segmentation process as a USV candidate. A total of 2083 images were used for training.
 
@@ -224,60 +475,146 @@ Our training data set consisted of 12,954 images, wherein 2083 were labeled as 
 
 The CNN was trained using stochastic gradient descent with momentum, a batch size of M = 128 images, and with a maximum number of epochs set to 100. Through a screening process for the set of hyper-parameters that would maximize the average performance of the network, the chosen learning rate was α = 10−4, momentum of 0.9, and weight decay λ = 10−4. To validate the training performance, each data set was randomly split into two disjoint sets; training set (90%) and a validation set (10%). The training and validation sets were independently shuffled at every epoch during training. The training was set to stop when the classification accuracy on the validation set did not improve for three consecutive epochs. When running in a GeForce GTX 980 TI, the final validation accuracy was 95.28% after 17 min of training.
 
-## Testing detection performance
+### Testing detection performance
 
 To evaluate the performance of VocalMat, neonatal mice were recorded for 10 min upon social isolation in different conditions (Table 3) to increase the variability of the data. To cover most of the recording setups, we included recordings with different microphone settings (maximum and intermediary gain), environments (open field or enclosed environmental chamber), and machinery noise (heater on or off). The spectrograms were manually inspected for the occurrence of USVs. The starting time for the detected USVs was recorded. USVs automatically detected by VocalMat with a start time matching manual annotation (±5 ms of tolerance) were considered correctly detected. USVs manually detected with no correspondent USV given by VocalMat were considered false negative. The false negatives were originated from missed USVs or USVs that the software labeled as noise. Finally, USVs registered by VocalMat without a correspondent in the manual annotation were considered false positive. In order to compare VocalMat to the other tools available, the same metrics were applied to the output of Ax (Neunuebel et al., 2015), MUPET (Van Segbroeck et al., 2017), USVSEG (Tachibana et al., 2020), and DeepSqueak (Coffey et al., 2019).
 
-## Diffusion maps for USV class distribution visualization
+### Diffusion maps for USV class distribution visualization
 
-One of the main characteristics of VocalMat is attributing to USVs a distribution of probabilities over all the possible vocal classes. Since we classify USV candidates in 11 categories, to have access to the distribution of probabilities we would need to visualize the data in 11 dimensions. Here, as an example of analytical methods that can be applied to the output data from VocalMat, we used Diffusion Maps (Coifman et al., 2005) to reduce the dimensionality of the data to three dimensions. Diffusion Maps allow remapping of the data into a Euclidean space, which ultimately results in preserving the distance between USVs based on the similarity of their probability distribution. A Gaussian kernel function defines the connectivity between two data points in a Euclidean manifold. Such kernel provides the similarity value between two data points i and j as follows:(12)Wij=exp⁡(−‖xi−xj‖22σ2)where Wi⁢j represents the similarity value between observations i and j. The parameter σ corresponds to the width of the kernel, and it is set based on the average Euclidean distance observed between observations of the same label (i.e., the intra-class distances). For our application, σ=0.5 was set based on the distance distribution observed in our data.
+One of the main characteristics of VocalMat is attributing to USVs a distribution of probabilities over all the possible vocal classes. Since we classify USV candidates in 11 categories, to have access to the distribution of probabilities we would need to visualize the data in 11 dimensions. Here, as an example of analytical methods that can be applied to the output data from VocalMat, we used Diffusion Maps (Coifman et al., 2005) to reduce the dimensionality of the data to three dimensions. Diffusion Maps allow remapping of the data into a Euclidean space, which ultimately results in preserving the distance between USVs based on the similarity of their probability distribution. A Gaussian kernel function defines the connectivity between two data points in a Euclidean manifold. Such kernel provides the similarity value between two data points $i$ and $j$ as follows:
 
-The similarity matrix is then turned into a probability matrix by normalizing the rows:(13)p(j|i)=Wij∑kWik=D−1W=Mijwhere ∑kWi⁢k=Di⁢i has the row sum of W along its diagonal. The matrix M gives the probability of going from node i to any other node using a random walk. In other words, the probability that the USV i is close to another USV j given their probability distribution.
+$$
+W_{ij}=exp⁡(\frac{−‖x_{i}−x_{j}‖^{2}}{2\sigma^{2}})
+$$
+
+where $W_{i⁢j}$ represents the similarity value between observations $i$ and $j$. The parameter σ corresponds to the width of the kernel, and it is set based on the average Euclidean distance observed between observations of the same label (i.e., the intra-class distances). For our application, $\sigma=0.5$ was set based on the distance distribution observed in our data.
+
+The similarity matrix is then turned into a probability matrix by normalizing the rows:
+
+$$
+p(j|i)=\frac{W_{ij}}{\sumkW_{ik}}=D^{−1}W=M_{ij}
+$$
+
+where $\sum_{k}W_{i⁢k}=D_{i⁢i}$ has the row sum of $W$ along its diagonal. The matrix $M$ gives the probability of going from node $i$ to any other node using a random walk. In other words, the probability that the USV $i$ is close to another USV $j$ given their probability distribution.
 
 Once we take one step in such Euclidean space, the probabilities are updated, since the set of likely nodes for the next move are now different. This idea of moving from node to node while updating the probabilities results in a 'diffused map’.
 
-The process of moving from a USV i to j after t steps in this Euclidean space is computed as follows:(14)p⁢(t,j|i)=eiT⁢Mt⁢ej
+The process of moving from a USV $i$ to $j$ after $t$ steps in this Euclidean space is computed as follows:
 
-For our application, we use t=2.
+$$
+p⁢(t,j|i)=e_{i}^{T}⁢M^{t}⁢e_{j}
+$$
 
-Next, we find the coordinate functions to embed the data in a lower-dimensional space. The eigenvectors of M give such a result. Because M is not symmetric, the eigendecomposition is computed through a SVD decomposition (Golub and Kahan, 1965):(15)Ms:=D1/2⁢M⁢D-1/2=D1/2⁢D-1⁢W⁢D-1/2=D-1/2⁢W⁢D-1/2and since D-1/2 and W are symmetric, Ms is also symmetric and allows us to calculate its eigenvectors and eigenvalues. For the sake of notation, consider:(16)Ms=ΩΛΩT⟹M=D−1/2ΩΛΩTD1/2
+For our application, we use $t=2$.
 
-Considering Ψ=D-1/2⁢Ω (right eigenvectors of M) and Φ=D1/2⁢Ω (left eigenvectors of M), we verify that ΦT=Ψ-1, therefore they are mutually orthogonal and M and Ms are similar matrices. Thus,(17)M=Ψ⁢Λ⁢Ψ-1=Ψ⁢Λ⁢ΨTand the diffusion component shown in Equation (14) is incorporated as the power of the diagonal matrix composed by the eigenvalues of M:(18)Mt=Ψ⁢Λt⁢ΦT
+Next, we find the coordinate functions to embed the data in a lower-dimensional space. The eigenvectors of $M$ give such a result. Because $M$ is not symmetric, the eigendecomposition is computed through a SVD decomposition (Golub and Kahan, 1965):
 
-We use the scaled right eigenvectors by their corresponding eigenvalues (Γ=Ψ⁢Λ) as the coordinate functions. Since the first column of Γ is constant across all the observations, we use the second to fourth coordinates in our work.
+$$
+M_{s}:=D^{1/2}⁢M⁢D^{-1/2}=D^{1/2}⁢D^{-1}⁢W⁢D^{-1/2}=D^{-1/2}⁢W⁢D^{-1/2}
+$$
 
-## Vocal repertoire analysis via manifold alignment
+and since $D^{-1/2}$ and $W$ are symmetric, $M_{s}$ is also symmetric and allows us to calculate its eigenvectors and eigenvalues. For the sake of notation, consider:
+
+$$
+M_{s}=ΩΛΩ^{T}⟹M=D^{−1/2}ΩΛΩ^{T}D^{1/2}
+$$
+
+Considering $Ψ=D^{-1/2}⁢Ω$ (right eigenvectors of $M$) and $Φ=D^{1/2}⁢Ω$ (left eigenvectors of $M$), we verify that $Φ^{T}=Ψ^{-1}$, therefore they are mutually orthogonal and $M$ and $M_{s}$ are similar matrices. Thus,
+
+$$
+M=Ψ⁢Λ⁢Ψ^{-1}=Ψ⁢Λ⁢Ψ^{T}
+$$
+
+and the diffusion component shown in Equation (14) is incorporated as the power of the diagonal matrix composed by the eigenvalues of $M$:
+
+$$
+M^{t}=Ψ⁢Λ^{t}⁢Φ^{T}
+$$
+
+We use the scaled right eigenvectors by their corresponding eigenvalues $(Γ=Ψ⁢Λ)$ as the coordinate functions. Since the first column of $Γ$ is constant across all the observations, we use the second to fourth coordinates in our work.
+
+### Vocal repertoire analysis via manifold alignment
 
 The result of the embedding by Diffusion Maps allows 3D visualization of the probability distribution for the USVs. The direct comparison of different 3D maps is challenging to obtain as the manifolds depend on data distribution, which contains high variability in experimental samples. To address this problem and compare the topology of different manifolds, we used a manifold alignment method for heterogeneous domain adaptation (Wang and Mahadevan, 2011; Tuia and Camps-Valls, 2016). Using this method, two different domains are mapped to a new latent space, where samples with the same label are matched while preserving the topology of each domain.
 
-We used the probability distribution for the USVs for each data set to build the manifolds (Wang and Mahadevan, 2011). Each manifold was represented as a Laplacian matrix constructed from a graph that defines the connectivity between the samples in the manifold. The Laplacian matrix is then defined as L=Wi⁢j-Di⁢i (see Equation (12)).
+We used the probability distribution for the USVs for each data set to build the manifolds (Wang and Mahadevan, 2011). Each manifold was represented as a Laplacian matrix constructed from a graph that defines the connectivity between the samples in the manifold. The Laplacian matrix is then defined as $L=W_{i⁢j}-D_{i⁢i}$ (see Equation (12)).
 
-The final goal is to remap all the domains to a new shared space such that samples with similar labels become closer in this new space. In contrast, samples with different labels are pushed away while preserving the geometry of the manifolds. It leads to the necessity of three different graph Laplacians: Ls (relative to the similarity matrix and responsible for connecting the samples with the same label), Ld (dissimilarity matrix and responsible for connecting the samples with different labels), and L (similarity matrix responsible for preserving the topology of each domain). Wang and Mahadevan, 2011 show that the embedding that minimizes the joint function defined by the similarity and dissimilarity matrices is given by the eigenvectors corresponding to the smallest nonzero eigenvalues of the following eigendecomposition:(19)Z⁢(L+μ⁢Ls)⁢ZT⁢V=λ⁢Z⁢Ld⁢ZT⁢Vwhere Z is a block diagonal containing the data matrices Xi∈ℝdi×ni, (where ni samples and di dimensions are constants for the it⁢h domain) from the two domains. Thus, Z=d⁢i⁢a⁢g⁢(X1,X2). The matrix V contains the eigenvectors organized in rows for each domain, V=[v1,v2]T. The μ is weight parameter, which goes from preserving both topology and instance matching equally (μ=1) or focusing more on topology preservation (μ>1) (Tuia and Camps-Valls, 2016).
+The final goal is to remap all the domains to a new shared space such that samples with similar labels become closer in this new space. In contrast, samples with different labels are pushed away while preserving the geometry of the manifolds. It leads to the necessity of three different graph Laplacians: $L_{s}$ (relative to the similarity matrix and responsible for connecting the samples with the same label), $L_{d}$ (dissimilarity matrix and responsible for connecting the samples with different labels), and $L$ (similarity matrix responsible for preserving the topology of each domain). Wang and Mahadevan, 2011 show that the embedding that minimizes the joint function defined by the similarity and dissimilarity matrices is given by the eigenvectors corresponding to the smallest nonzero eigenvalues of the following eigendecomposition:
 
-From Equation (19), we then extract Nf=∑i=1Ddi features, which is the sum of the dimensions of the individual domains (see details in Wang and Mahadevan, 2011; Tuia and Camps-Valls, 2016), and the projection of the data to a joint space ℱ defined by the mapping matrix V will be given by(20)Pℱ⁢(Xi)=viT⁢Xi
+$$
+Z⁢(L+\mu⁢L_{s})⁢Z^{T}⁢V=\lambda⁢Z⁢L_{d}⁢Z^{T}⁢V
+$$
+
+where $Z$ is a block diagonal containing the data matrices $X_{i}\inℝ^{d_{i}\timesn_{i}}$, (where ni samples and di dimensions are constants for the $i^{t⁢h}$ domain) from the two domains. Thus, $Z=d⁢i⁢a⁢g⁢(X_{1},X_{2})$. The matrix $V$ contains the eigenvectors organized in rows for each domain, $V=[v_{1},v_{2}]^{T}$. The μ is weight parameter, which goes from preserving both topology and instance matching equally ($\mu=1$) or focusing more on topology preservation ($\mu>1$) (Tuia and Camps-Valls, 2016).
+
+From Equation (19), we then extract $N_{f}=\sum_{i=1}^{D}d_{i}$ features, which is the sum of the dimensions of the individual domains (see details in Wang and Mahadevan, 2011; Tuia and Camps-Valls, 2016), and the projection of the data to a joint space $ℱ$ defined by the mapping matrix $V$ will be given by
+
+$$
+P_{ℱ}⁢(X_{i})=v_{i}^{T}⁢X_{i}
+$$
 
 To measure the performance of the alignment, linear discriminant analysis (LDA) (McLachlan, 2004) is used to show the ability to project the domains in a joint space. The LDA is trained on half of the samples in order to predict the other half. The error of the alignment is given as the percentage of samples that would be misclassified when projected into the new space (overall accuracy) (Tuia and Camps-Valls, 2016).
 
 Another measurement to quantify the quality of the alignment is by calculating the agreement between the projections, which is given by Cohen’s Kappa coefficient (κ) (Agresti, 2018). In this method, the labels are treated as categorical, and the coefficient compares the agreement with that expected if ratings were independent. Thus, disagreements for labels that are close are treated the same as labels that are far apart.
 
-Cohen’s coefficient is defined as:(21)κ=p0-pe1-pewhere p0 is the observed agreement (p0=∑i=1kpi⁢i for a confusion matrix p=n/N, in which n is the raw confusion matrix and N is the total number of samples, composed by the projection of the k labels), which corresponds to the accuracy; pe is the probability of agreement by chance (pe=1N2⁢∑i=1kpi.⁢p.i, where pi. is the number of times an entity of label i was labeled as any category and p.i is the number of times any category was predicted as label i). Therefore, a κ=0 represents no agreement (or total misalignment of manifolds) and κ=1 is a total agreement.
+Cohen’s coefficient is defined as:
 
-In this context, the overall accuracy (O⁢A) is given by O⁢A=∑i=1kpi⁢i/N, where N is the total number of samples.
+$$
+κ=\frac{p_{0}-p_{e}}{1-p_{e}}
+$$
 
-The asymptotic variance for κ is given as follows:(22)σ^2⁢(κ^)=1N⁢[θ1⁢(1-θ1)(1-θ2)2+2⁢θ1⁢(1-θ1)⁢(2⁢θ1⁢θ2-θ3)(1-θ2)3+(1-θ1)2⁢(θ4-4⁢θ22)(1-θ2)4]where(23)θ1=1n⁢∑i=1kni⁢i
+where p0 is the observed agreement ($p_{0}=\sum_{i=1}^{k}p_{i⁢i}$ for a confusion matrix $p=n/N$, in which $n$ is the raw confusion matrix and $N$ is the total number of samples, composed by the projection of the $k$ labels), which corresponds to the accuracy; pe is the probability of agreement by chance ($p_{e}=\frac{1}{N^{2}}⁢\sum_{i=1}^{k}p_{i.}⁢p_{.i}$, where $p_{i.}$ is the number of times an entity of label $i$ was labeled as any category and $p_{.i}$ is the number of times any category was predicted as label $i$). Therefore, a $κ=0$ represents no agreement (or total misalignment of manifolds) and $κ=1$ is a total agreement.
 
-(which turns into accuracy once it is divided by N),(24)θ2=1n2⁢∑i=1kni.⁢n.i(25)θ3=1n2⁢∑i=1kni⁢i⁢(ni.+n.i)(26)θ4=1n3⁢∑i=1k∑j=1kni⁢j⁢(nj.+n.i)2
+In this context, the overall accuracy ($O⁢A$) is given by $O⁢A=\sum_{i=1}^{k}p_{i⁢i}/N$, where $N$ is the total number of samples.
 
-From Equation (22) we can calculate the Z-score, which can express the significance of our κ:(27)Z=κσ^2⁢(κ^)
+The asymptotic variance for κ is given as follows:
 
-And the 95% confidence interval as(28)CI=[κ+1.96σ^2(κ^),κ-1.96σ^2(κ^)]
+$$
+\sigma^^{2}⁢(κ^)=\frac{1}{N}⁢[\frac{\theta_{1}⁢(1-\theta_{1})}{(1-\theta_{2})^{2}}+\frac{2⁢\theta_{1}⁢(1-\theta_{1})⁢(2⁢\theta_{1}⁢\theta_{2}-\theta_{3})}{(1-\theta_{2})^{3}}+\frac{(1-\theta_{1})^{2}⁢(\theta_{4}-4⁢\theta_{2}^{2})}{(1-\theta_{2})^{4}}]
+$$
+
+where
+
+$$
+\theta_{1}=\frac{1}{n}⁢\sumi=1kn_{i⁢i}
+$$
+
+(which turns into accuracy once it is divided by $N$),
+
+$$
+\theta_{2}=\frac{1}{n^{2}}⁢\sumi=1kn_{i.}⁢n_{.i}
+$$
+
+
+
+$$
+\theta_{3}=\frac{1}{n^{2}}⁢\sumi=1kn_{i⁢i}⁢(n_{i.}+n_{.i})
+$$
+
+
+
+$$
+\theta_{4}=\frac{1}{n^{3}}⁢\sumi=1k\sumj=1kn_{i⁢j}⁢(n_{j.}+n_{.i})^{2}
+$$
+
+From Equation (22) we can calculate the Z-score, which can express the significance of our κ:
+
+$$
+Z=\frac{κ}{\sigma^^{2}⁢(κ^)}
+$$
+
+And the 95% confidence interval as
+
+$$
+CI=[κ+1.96\sqrt{\sigma^^{2}(κ^}),κ-1.96\sqrt{\sigma^^{2}(κ^})]
+$$
 
 The third form of error measurement is the evaluation of the projection per USV class from each domain remapped into the new space. This method is based on the fact that this new space is the one in which the cost function expressed by Equation (19) is minimized and, therefore, the projection from each domain into the new space has its projection error for each class. As a consequence, the mean of the projection error from each domain to the new space for each class can be used as a quantitative measurement of misalignment of projected domains.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 MATLAB (2019a or above) and Prism 8.0 were used to analyze data and plot figures. All figures were created using Adobe Illustrator CS6/CC. Data were first subjected to a normality test using the D’Agostino and Pearson normality test or the Shapiro–Wilk normality test. When homogeneity was assumed, a parametric analysis of variance test was used. The Student’s t-test was used to compare two groups. The Mann–Whitney U-test was used to determine the significance between groups. Two sample Kolmogorov–Smirnov test was used to calculate the statistical differences between the contrast of USVs and noise. Statistical data are provided in text and in the figures. In the text, values are provided as mean ± SEM. p<0.05 was considered statistically significant. The 95% confidence intervals are reported in reference to the mean. The true positive rate is computed as the ratio between true positive (hit) and real positive cases. The true negative rate is the ratio between true negative (correct rejection) and real negative cases. The false negative rate is the ratio between false negative (type I error) and real positives cases. The false positive (type II error) is the ratio between false positive and real negative cases. The false discovery rate is the ratio between false positive and the sum of false positives and real positives.
 
-## Code and data availability
+### Code and data availability
 
 VocalMat is available on GitHub (https://github.com/ahof1704/VocalMat.git; Fonseca, 2021; copy archived at swh:1:rev:9384fabfc1fbd9bc0ef8ca460b652e72c5b6819f) for academic use. Our data set of vocalization images is available on OSF (https://osf.io/bk2uj/).

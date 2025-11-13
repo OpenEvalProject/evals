@@ -19,7 +19,7 @@
 ### Affiliations
 
 1. Department of Neurobiology, Harvard Medical School Boston United States
-2. https://ror.org/00dvg7y05 F.M. Kirby Neurobiology Research Center, Boston Children's Hospital Boston United States
+2. F.M. Kirby Neurobiology Research Center, Boston Children's Hospital Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
 3. ICCB-Longwood Screening Facility and Department of Immunology, Harvard Medical School Boston United States
 
 † Corresponding author
@@ -36,7 +36,7 @@ The most potent effect of CBD on a well-defined electrophysiological function so
 
 ## Results
 
-## CBD activates heterologously expressed Kv7.2/7.3 channels
+### CBD activates heterologously expressed Kv7.2/7.3 channels
 
 We discovered the ability of CBD to activate Kv7.2/7.3 channels in a screen using fluorescence signals from thallium entry evoked by depolarization of a Chinese hamster ovary (CHO) cell line stably expressing human Kv7.2 and Kv7.3 channels. In a screen of a library of 154 compounds chosen from structures with known or possible ion channel modulating activity (Figure 1—source data 1), CBD was the only compound to produce a substantial enhancement of the fluorescence signal, except for retigabine and flupirtine, both known activators of Kv7.2/7.3 channels.
 
@@ -44,7 +44,7 @@ We then tested the action of CBD on the Kv7.2/7.3 cell line using whole-cell pat
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/73246/elife-73246-fig1-v2.jpg)
 
-**Figure 1.:** (A) hKv7.2/7.3 current evoked by staircase depolarizations before and after application of 100 nM CBD. (B) Collected results (mean ± SEM) for current at –50 mV after application of 100 nM (n = 20) or 300 nM CBD (n = 14) for 4–6 min, normalized to current before CBD application, using the protocol in (A). ‘No CBD’ values (n = 11) are for 6 min dummy applications of solution containing only vehicle (DMSO). (C) Voltage-dependent activation of hKv7.2/7.3 channels measured in a cell before and after application of 300 nM CBD. Relative conductance at each voltage was measured from the initial tail current at a step to –50 mV following 1 s depolarizations to voltages between –100 mV and +20 mV from a holding potential of –80 mV. Solid lines: fits to data points of fourth power Boltzmann function, [1/ (1 + exp(-(V – Vhn)/k))]4, where V is test pulse voltage, Vhn is voltage of half-maximal activation for single ‘n’ particle, and k is slope factor for activation of n particles. Control: Vhn = –54.4 mV, k = 12.8 mV (midpoint of function = –33.1); 300 nM CBD: Vhn = –67.9 mV, k = 11.8 mV (midpoint of function –48.3 mV). (D) Concentration-dependent shift of activation midpoint by CBD. Measurements of the midpoint were made before and 10 min after exposure to CBD at various concentrations. mean ± SEM, n = 9 for 30 nM CBD, n = 21 for 100 nM CBD, n = 17 for 300 nM CBD, n = 12 for 500 nM CBD, n = 7 for 1 µM CBD, n = 16 for 3 µM CBD, n = 19 for 10 µM CBD, n = 10 for 20 µM CBD. Value for 0 CBD represents the measurement of a small shift that occurred with dummy applications of DMSO-containing control solution for 10 min (n = 11). Solid line: fit to the Hill equation, ΔVh = −2.5 mV − 17.5 mV/(1 + (EC50/[CBD])^nH), where EC50 = 214 nM and the Hill coefficient nH = 1.3.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) hKv7.2/7.3 current evoked by staircase depolarizations before and after application of 100 nM CBD. (B) Collected results (mean ± SEM) for current at –50 mV after application of 100 nM (n = 20) or 300 nM CBD (n = 14) for 4–6 min, normalized to current before CBD application, using the protocol in (A). ‘No CBD’ values (n = 11) are for 6 min dummy applications of solution containing only vehicle (DMSO). (C) Voltage-dependent activation of hKv7.2/7.3 channels measured in a cell before and after application of 300 nM CBD. Relative conductance at each voltage was measured from the initial tail current at a step to –50 mV following 1 s depolarizations to voltages between –100 mV and +20 mV from a holding potential of –80 mV. Solid lines: fits to data points of fourth power Boltzmann function, [1/ (1 + exp(-(V – Vhn)/k))]4, where V is test pulse voltage, Vhn is voltage of half-maximal activation for single ‘n’ particle, and k is slope factor for activation of n particles. Control: Vhn = –54.4 mV, k = 12.8 mV (midpoint of function = –33.1); 300 nM CBD: Vhn = –67.9 mV, k = 11.8 mV (midpoint of function –48.3 mV). (D) Concentration-dependent shift of activation midpoint by CBD. Measurements of the midpoint were made before and 10 min after exposure to CBD at various concentrations. mean ± SEM, n = 9 for 30 nM CBD, n = 21 for 100 nM CBD, n = 17 for 300 nM CBD, n = 12 for 500 nM CBD, n = 7 for 1 µM CBD, n = 16 for 3 µM CBD, n = 19 for 10 µM CBD, n = 10 for 20 µM CBD. Value for 0 CBD represents the measurement of a small shift that occurred with dummy applications of DMSO-containing control solution for 10 min (n = 11). Solid line: fit to the Hill equation, ΔVh = −2.5 mV − 17.5 mV/(1 + (EC50/[CBD])^nH), where EC50 = 214 nM and the Hill coefficient nH = 1.3.
 
 The enhancement of the Kv7.2/7.3-mediated current was produced by a shift of the voltage-dependent activation of the channels in the hyperpolarizing direction (Figure 1C). In collected results, 300 nM CBD shifted the midpoint for channel activation by an average of –13.9 ± 0.9 mV (n = 17). The shift in the voltage dependence of activation reached a maximum of about –20 mV at CBD concentrations of 3–10 μM, with CBD acting with a half-maximal concentration of about 200 nM (Figure 1D).
 
@@ -52,13 +52,13 @@ We next tested whether CBD enhances native Kv7 channels in neurons using measure
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73246/elife-73246-fig2-v2.jpg)
 
-**Figure 2.:** (A) Currents evoked by hyperpolarizations to –60 mV, –70 mV, and –80 mV from a holding potential of –30 mV before (blue) and after (red) application of 100 nM CBD. (B) Collected results (mean ± SEM) for effect of CBD on steady-state M-current at –50 mV. Current was read at the end of a 1 s step from –30 mV to –50 mV, normalized to current before CBD application, following exposure to 10 nM CBD (n = 7), 30 nM CBD (n = 14), 100 nM CBD (n = 8), or 300 nM CBD (n = 9). The maximum effect of CBD was reached in 6–9 min for 10 nM and 30 nM CBD and 2–6 min for 100 nM and 300 nM CBD. ‘No CBD’ values (n = 10) are for 7–9 min dummy applications. Gray circles: individual cells. Black circles: mean ± SEM. Non-paired two-tailed t-tests: 10 nM CBD vs. No CBD, p=0.85; 30 nM CBD vs. No CBD, p=0.024; 100 nM CBD vs. No CBD, p=0.015; 300 nM CBD vs. No CBD, p=0.012.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Currents evoked by hyperpolarizations to –60 mV, –70 mV, and –80 mV from a holding potential of –30 mV before (blue) and after (red) application of 100 nM CBD. (B) Collected results (mean ± SEM) for effect of CBD on steady-state M-current at –50 mV. Current was read at the end of a 1 s step from –30 mV to –50 mV, normalized to current before CBD application, following exposure to 10 nM CBD (n = 7), 30 nM CBD (n = 14), 100 nM CBD (n = 8), or 300 nM CBD (n = 9). The maximum effect of CBD was reached in 6–9 min for 10 nM and 30 nM CBD and 2–6 min for 100 nM and 300 nM CBD. ‘No CBD’ values (n = 10) are for 7–9 min dummy applications. Gray circles: individual cells. Black circles: mean ± SEM. Non-paired two-tailed t-tests: 10 nM CBD vs. No CBD, p=0.85; 30 nM CBD vs. No CBD, p=0.024; 100 nM CBD vs. No CBD, p=0.015; 300 nM CBD vs. No CBD, p=0.012.
 
 To test whether CBD enhancement of M-current also occurs in central neurons likely involved in epilepsy, we tested CBD on potassium currents in hippocampal neurons (Figure 3). To facilitate application of well-defined concentrations of CBD without potential problems from absorption into the bulk tissue of brain slices, we used a preparation of cultured rat hippocampal neurons. Using a voltage protocol designed to emphasize M-current (holding the neurons at –30 mV and stepping to –50 mV), CBD enhanced the outward current at both –30 mV and –50 mV in 16 of the 20 cells tested. Consistent with this action of CBD being an enhancement of M-current, which in hippocampal neurons is mediated by Kv7.2, Kv7.3, and Kv7.5 (Shah et al., 2002), there was no increase if CBD was applied in the presence of the Kv7 inhibitor XE-991 (Wang et al., 1998; Brown and Passmore, 2009). In fact, CBD applied after XE-991 produced on average a small (13% ± 4%, n = 15) decrease in current at –50 mV, consistent with a weak inhibitory effect on other, non-M-currents.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73246/elife-73246-fig3-v2.jpg)
 
-**Figure 3.:** (A) Currents at a holding voltage of –30 mV and during a 500 ms hyperpolarization to –50 mV in control, after application of 1 μM CBD, and after addition of 3 μM XE-991 in the continuing presence of CBD. (B) Collected data with this protocol. Current was measured at the end of the step to –50 mV, normalized to current before application of CBD. Connected open circles indicate data for individual cells (n = 20 for application of CBD, n = 15 for application of CBD followed by XE-991) and closed circles represent mean ± SEM. Paired t-test for currents after CBD compared to control currents, p=0.00017 (n = 20, two-tailed), paired t-test for currents in CBD + XE-991 compared to CBD, p=0.00038 (n = 15, two-tailed). (C) Currents in control, after application of 3 μM XE-991, and after addition of 1 μM CBD in the continuing presence of XE-991. (D) Collected data with symbols as in (B); n = 15 cells for application of XE-991 followed by CBD. Paired t-test for currents after XE-991 compared to control, p=0.00071 (n = 15, two-tailed), paired t-test for currents in XE-991 + CBD compared to XE-991, p=0.0105 (n = 15, two-tailed).Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Currents at a holding voltage of –30 mV and during a 500 ms hyperpolarization to –50 mV in control, after application of 1 μM CBD, and after addition of 3 μM XE-991 in the continuing presence of CBD. (B) Collected data with this protocol. Current was measured at the end of the step to –50 mV, normalized to current before application of CBD. Connected open circles indicate data for individual cells (n = 20 for application of CBD, n = 15 for application of CBD followed by XE-991) and closed circles represent mean ± SEM. Paired t-test for currents after CBD compared to control currents, p=0.00017 (n = 20, two-tailed), paired t-test for currents in CBD + XE-991 compared to CBD, p=0.00038 (n = 15, two-tailed). (C) Currents in control, after application of 3 μM XE-991, and after addition of 1 μM CBD in the continuing presence of XE-991. (D) Collected data with symbols as in (B); n = 15 cells for application of XE-991 followed by CBD. Paired t-test for currents after XE-991 compared to control, p=0.00071 (n = 15, two-tailed), paired t-test for currents in XE-991 + CBD compared to XE-991, p=0.0105 (n = 15, two-tailed).
 
 ## Discussion
 
@@ -72,21 +72,185 @@ Our results add to recent experiments demonstrating that Kv7.2/7.3 channels are 
 
 ## Materials and methods
 
-## Thallium flux assay
+**Key resources table**
 
-## Cell culture
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Swiss Webster</td>
+      <td>Charles River</td>
+      <td>Cat# 024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Sprague–Dawley</td>
+      <td>Charles River</td>
+      <td>Cat# 400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>Kv7.2/7.3 CHO cell line</td>
+      <td>Mayflower Bioscience</td>
+      <td>BSYS-KV7.2/3-CHO-C</td>
+      <td>CHO (Chinese hamster [C. griseus ] ovary) cell line stably transfected with recombinant human Kv7.2/7.3 ion channels</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert PLUS Mycoplasma Detection Kit</td>
+      <td>Lonza</td>
+      <td>LT07-703</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FluxOR II Green Potassium Ion Channel Assay</td>
+      <td>Invitrogen</td>
+      <td>LT07-703</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cannabidiol</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 90080, CAS 13956-29-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ham’s F12-Glutamax-l medium</td>
+      <td>Gibco</td>
+      <td>Cat# 31765-035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Gibco</td>
+      <td>Cat# 15140-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>InvivoGen</td>
+      <td>Cat# ant-pr-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat# LS003126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-15</td>
+      <td>Gibco</td>
+      <td>Cat# 11415-064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobasal A Medium</td>
+      <td>Gibco</td>
+      <td>Cat# 10888-022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-27</td>
+      <td>Gibco</td>
+      <td>Cat# 17504-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P4333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Minimal Essential Medium</td>
+      <td>American Tissue Type Collection</td>
+      <td>Cat# DMEM 30-2002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hank’s Balanced Salt Solution</td>
+      <td>Gibco</td>
+      <td>Cat# 14170-112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM/F12</td>
+      <td>Gibco</td>
+      <td>Cat# 11330-032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin w/citrate</td>
+      <td>Abcam</td>
+      <td>Ab120055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex</td>
+      <td>Molecular Devices</td>
+      <td>Version 10.3.1.5</td>
+      <td>https://www.moleculardevices.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>WaveMetrics</td>
+      <td>Version 6.12A</td>
+      <td>https://www.wavemetrics.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DataAccess</td>
+      <td>Bruxton Corporation</td>
+      <td></td>
+      <td>http://www.bruxton.com/DataAccess/index.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Thallium flux assay
+
+#### Cell culture
 
 CHO cells coexpressing human Kv7.2 and Kv7.3 channels (Mayflower Bioscience, BSYS-KV7.2/3-CHO-C) were cultured at 37°C in 5% CO2 in a Thermo Scientific incubator in Ham’s F12-Glutamax-l medium (Gibco, Cat# 31765-035) supplemented with 10% fetal bovine serum (Gibco), 1% penicillin/streptomycin solution (Gibco, Cat# 15140-122), and 5 μg/mL puromycin (InvivoGen, Cat# ant-pr-1). The cell line was validated by patch-clamp recording of large voltage-activated currents (>1 nA for depolarizations to 0 mV) that reversed at the potassium equilibrium potential, had the voltage dependence and kinetics previously reported for Kv7.2/7.3 heteromeric channels expressed in CHO cells (Tatulian et al., 2001), and were enhanced by 3 µM retigabine (Tatulian et al., 2001). The cell line was tested for mycoplasma contamination using the Lonza MycoAlert PLUS Mycoplasma Detection Kit (LT07-703, Lonza Pharma & Biotech). Cells were seeded in 15 cm dishes at 200,000 cells per dish, fed twice weekly, and cultivated once weekly. 24 hr before the start of the screen, the culture dishes were trypsinized, and a Countess automated cell counter (Invitrogen) was used to quantify cell numbers before plating them into four Greiner poly-D-lysine-coated 384-well black clear-bottomed microplates at 20,000 cells per well in 40 μL media using a Multidrop Combi Reagent Dispenser. The four microplates were incubated overnight in a Thermo Scientific incubator at 37°C in 90% humidity and 5% CO2.
 
-## Compound preparation and handling
+### Compound preparation and handling
 
 The Panacea Channel Modulator Library, a custom collection of 154 compounds oriented toward known or possible ion channel modulators, was assembled and deposited at the ICCB-Longwood Screening Facility, Harvard Medical School. Compound metadata are listed in Figure 1—source data 1 (assay raw data). Each compound was assayed at four concentrations. The compounds were initially plated as stock solutions in DMSO at concentrations of 0.08 mM, 0.4 mM, 2 mM, and 10 mM, which yielded final assay concentrations of 267 nM, 1.3 μM, 6.7 μM, and 33 μM. Using a custom Seiko compound transfer workstation, 300 nL of experimental compound stock solutions, as well as positive (retigabine at 10 mM in DMSO) and negative (DMSO) controls, were pin transferred into a Greiner Bio-One 384 Deep Well Small Volume polypropylene microplate containing 30 μL of 1× FluxOR chloride-free buffer. This resulted in 16 positive and 16 negative control wells on every assay plate. Each of the two compound microplates was screened in duplicate (four assay plates).
 
-## Kv7.2/7.3 assay
+### Kv7.2/7.3 assay
 
 The FluxOR potassium channel assay (Thermo Fisher) was performed using a Hamamatsu FDSS 7000 plate reader essentially as outlined in the product sheet. After the Kv7.2/7.3 CHO cells were incubated in four 384-well assay microplates for 24 hr, a 40 mL solution of FluxOR dye was made by combining 400 μL Powerload concentrate (100×), 40 μL of 13 FluxOR II green reagent (1000× fluorescent dye) in DMSO, 31.2 mL purified water, 4 mL 10× FluxOR assay buffer, 4 mL FluxOR II background suppressor, and 400 μL probenecid (100× in water). Next, media were aspirated from each well of the assay microplates containing Kv7.2/7.3 CHO cells using an Agilent Bravo Liquid Handling system. The assay microplates were then washed two times with FluxOR chloride-free buffer diluted from 5× to 1× (20 μL per well per wash). After the second wash was removed, 7.68 mL of the 40 mL dye solution was dispensed to each 384-well assay microplate (20 μL per well). The assay microplates were incubated in the dye solution at room temperature protected from light for 45 min. Subsequently, 10 μL of diluted compounds in FluxOR chloride-free buffer were added to each assay microplate from the compound dilution plate prepared as described above, resulting in final compound concentrations of 267 nM, 1.3 μM, 6.7 μM, and 33 μM. Assay microplates were incubated in compound and dye for 15 min at room temperature protected from light. For the assay, stimulus buffer was first prepared by mixing 50 mM thallium sulfate (Tl2SO4, 4.8 mL), FluxOR chloride-free buffer (5×, 6.0 mL), and purified water (19.2 mL). Next, 19.2 mL of this stimulus solution (50 μL per well) was loaded into an additional Greiner Bio-One 384 Deep Well Small Volume polypropylene microplate. The four assay plates and plate containing stimulus buffer were then loaded onto a Hamamatsu FDSS 7000Ex plate reader and liquid handler. For each assay microplate, 10 μL of stimulus buffer was added per well after 50 s for a final concentration of 4 mM Tl+ in the assay plate. Fluorescence was measured for 600 data points (~3 min) at 4 Hz. FDSSv3.3.1 software was used for baseline correction and data analysis. All results from the screen are shown in Figure 1—source data 1 (assay raw data).
 
-## Electrophysiology with CHO Kv7.2/7.3 cell line
+### Electrophysiology with CHO Kv7.2/7.3 cell line
 
 Cells were maintained and passaged in a humidified 37°C incubator in sterile culture flasks containing Ham’s F12-Glutamax-l medium (Gibco, Cat# 31765-035) supplemented with 10% fetal bovine serum (Gibco), 1% penicillin/streptomycin solution (Gibco, Cat# 15140-122), and 5 µg/mL puromycin (InvivoGen, Cat#ant-pr-1), and cells were passaged at a confluence of about 50–80%. For electrophysiological recordings, cells were seeded onto 12 mm cover slips (Fisherbrand, Cat# 12-545-80). Whole-cell patch-clamp recordings were made using a Multiclamp 700B Amplifier (Molecular Devices). Electrodes were pulled from borosilicate capillaries (VWR International, Cat# 53432-921) on a Sutter P-97 puller (Sutter Instruments), and shanks were wrapped with Parafilm (American National Can Company) to allow optimal series resistance compensation without oscillation. The resistances of the pipettes were 1.8–3.5 MΩ when filled with the intracellular solution consisting of 140 mm KCl, 10 mM NaCl, 2 mM MgCl2, 1 mm EGTA, 0.2 mm CaCl2, 10 mM HEPES, 14 mM creatine phosphate (Tris salt), 4 mM MgATP, and 0.3 mM GTP (Tris salt), pH adjusted to 7.4 with KOH. Seals were formed in Tyrode’s solution consisting of 155 mM NaCl, 3.5 mM KCl, 1.5 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, 10 mM glucose, pH 7.4 adjusted with NaOH. After establishing whole-cell recording, cell capacitance was nulled and series resistance was partially (~70%) compensated. The cell was then lifted and placed in front of an array of quartz fiber flow pipes (250 μm internal diameter, 350 μm external diameter, Polymicro Technologies, Cat# TSG250350) attached with styrene butadiene glue (Amazing Goop, Eclectic Products) to a rectangular aluminum rod (cross section 1.5 cm × 0.5 cm) whose temperature was controlled by resistive heating elements and a feedback-controlled temperature controller (Warner Instruments, TC-344B). Solutions were changed (in ~1 s) by moving the cell from one pipe to another. Recordings were made at 37°C.
 
@@ -96,23 +260,23 @@ The effects of CBD on Kv7 current in the cell line were quantified in two ways: 
 
 CBD (Cayman Chemical, Cat# 90080, CAS 13956-29-1) was prepared as a 10 mM stock solution in DMSO, which was diluted in the external Tyrode’s solution to the final concentration. DMSO was added to the control solution at the same concentration as in the CBD solution. In early experiments, CBD-containing solutions were prepared in polystyrene test tubes and applied to cells from reservoirs made from 10 mM polypropylene syringe bodies. Realizing that phytocannabinoids have exceptionally high lipophilicity (Thomas et al., 1990) and can apparently partition into plastic (Christophersen, 1986; Hippalgaonkar et al., 2011), we then switched to using glass reservoirs from which solutions flowed through hollow quartz fibers to be applied to cells. We found that using glass reservoirs and tubing resulted in larger and more reproducible effects of CBD concentrations of 1 μM and below. The reported data for these concentrations are confined to experiments using glass reservoirs and tubing. The effects of concentrations of 3 μM and above were not less when using plastic reservoirs, and the collected data for concentrations of 3–20 μM include experiments done with both plastic and glass reservoirs.
 
-## Preparation of SCG neurons
+### Preparation of SCG neurons
 
 SCG were removed from adult Swiss Webster mice of either sex (postnatal day 56), cut in half, and treated for 20 min at 37°C with 20 U/mL papain (Worthington Biochemical, Cat# LS003126) in a calcium- and magnesium-free (CMF) Hank’s buffer (Gibco, Cat# 14170-112) containing 137 mM NaCl, 5.36 mM KCl, 0.33 mM Na2HP4, 0.44 mM KH2PO4, 4.2 mM NaHCO3, 5.55 mM glucose, and 0.03 mM phenol red. The ganglia were then treated for 20 min at 37°C with 3 mg/mL collagenase (type I; Roche Diagnostics, Cat# 10103586001) and 4 mg/mL Dispase II (Roche Diagnostics, Cat# 37045800) in CMF Hank’s buffer. Cells were dispersed by trituration with a fire-polished glass Pasteur pipette in a solution composed of two media combined in a 1:1 ratio: Leibovitz’s L-15 medium (Gibco, Cat# 11415-064) supplemented with 5 mM HEPES and DMEM/F12 medium (Gibco, Cat# 11330-032) and plated onto coverslips. Then cells were incubated at 37°C (5% CO2) for 2 hr, after which Neurobasal medium (Gibco, Cat# 10888-022) containing B-27 supplement (Gibco, Cat# A3582801), and penicillin and streptomycin (Sigma-Aldrich, Cat# P4333) was added to the dishes. Cells were stored at room temperature and used within 48 hr.
 
-## Electrophysiology with SCG neurons
+### Electrophysiology with SCG neurons
 
 Whole-cell patch-clamp recordings were made using a Multiclamp 700B Amplifier (Molecular Devices) interfaced to a Digidata 1321A data acquisition system (Molecular Devices) controlled by pCLAMP 10.3 software (Molecular Devices). Electrodes were 2–4 MΩ when filled with the intracellular solution consisting of 140 mM K aspartate, 13.5 mM NaCl, 1.6 mM MgCl2, 5 mM EGTA, 9 mM HEPES, 14 mM creatine phosphate (Tris salt), 4 mM MgATP, 0.3 mM Tris-GTP, pH 7.2 adjusted with KOH, with shanks wrapped with Parafilm to allow optimal series resistance compensation (70–80%). Seals were formed in Tyrode’s solution consisting of 155 mM NaCl, 3.5 mM KCl, 1.5 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, 10 mM glucose, pH 7.4 adjusted with NaOH, and cells were lifted in front of quartz fiber flow pipes attached to a temperature-controlled aluminum rod. M-current was recorded with external Tyrode’s solution containing 1 μM TTX and 10 μM CdCl2 and quantified by measuring the current at the end of a 1 s step to –50 mV from a steady holding potential of –30 mV, after subtracting linear leak current determined by extrapolation of current measured at voltages between –80 mV and –90 mV. However, the traces in Figure 2A show raw records with no correction of capacitative current or leak current. Recordings were made at 37°C.
 
 Voltage commands were delivered and current signals were recorded using a Digidata 1321A data acquisition system (Molecular Devices) controlled by pCLAMP 10.3 software (Molecular Devices). Current and voltage records were filtered at 5 kHz and digitized at 50 kHz. For display, current records were smoothed by binomial (Gaussian) smoothing using a smooth factor of 101 sampling intervals, equivalent to low-pass filtering with a time constant of about 80 μs. Analysis was performed with Igor Pro 6.12 (WaveMetrics) using DataAccess (Bruxton Software) to import pClamp data.
 
-## Preparation of rat hippocampal neurons
+### Preparation of rat hippocampal neurons
 
 Primary cultures of hippocampal neurons were prepared from rat embryos (E19–E20). Pregnant female Sprague–Dawley rats were anesthetized with isoflurane. The skin was washed with 70% ethanol, the peritoneal cavity was opened, and embryos were transferred into ice-cold preparation solution Ca2+/Mg2+-free HBSS (Gibco, Cat# 14170-112) with 5 mM HEPES (Gibco, Cat# 15630-080) and 1 mM sodium pyruvate (Gibco, Cat# 11360-070) in a 100 mm Petri dish on ice. Heads and brains were sequentially dissected from embryos, with the ice-cold preparation solution exchanged during each step. Under a dissecting microscope, the meninges were stripped away from the cerebral hemispheres and dorsal hippocampi were dissected with a fine scissor. The hippocampal pieces were transferred into a pre-warmed preparation solution containing 37U papain (Worthington, Cat# LS003126), 5 mM L-cysteine (Sigma, Cat# C7352), and 1080U DNase I (Sigma, Cat# DN-25), incubated at 37°C for 15 min, and then washed three times with enzyme-free warmed preparation solution. The preparation solution was then exchanged for a titration medium (EMEM, ATCC, Cat# 30-2003), 5% FBS (Gibco, Ca# 16140-071), and 1× penicillin/streptomycin (P/S, Gibco, Cat# 15140-122), and the hippocampal pieces were titrated using Pasteur pipettes fire-polished to two different tip sizes. After determining cell density using a hematocytometer, a maintenance medium (Neurobasal media [Gibco, Cat# 21103-049], 2% B27 [Gibco, Cat# 17504-044], 5 mM glutamine [Gibco Cat# 25030-081], and 1× P/S) was added into cell suspension to make cell density of 1–1.5 × 105/mL. Five poly-D-lysine (Sigma, Cat# P-7405)-coated coverslips (Fisherbrand, Cat# 12-545-80) were placed in 35 mm dishes and 2–3 × 105 cells were plated in each 35 mm dish (≥4–6 × 104 cells/coverslip). Neurons were maintained for 13–17 days in vitro (DIV). Every 2–3 days, half of the medium was removed from the 35 mm dishes and replaced with the same volume of the fresh maintenance solution.
 
 All experiments using animals were performed according to an institutional IACUC-approved protocol.
 
-## Electrophysiology with rat hippocampal neurons
+### Electrophysiology with rat hippocampal neurons
 
 Recordings were made from neurons after 13–17 DIV. Neurons with three processes and a pyramidal shape were selected for recording. To avoid problems arising from absorption of CBD to plasticware, recordings were made in an all-glass chamber made by attaching a glass ring (18 mm outer diameter, 3 mm height, Thomas Scientific 6705R24) to a glass-bottom microwell dish (MatTek# P35G-1.5-20C). Whole-cell recordings were obtained using patch pipettes with resistances of 2.2–2.5 MΩ when filled with the internal solution, consisting of 140 mM K-gluconate, 9 mM NaCl, 1.8 mM MgCl2, 0.09 mM EGTA, 9 mM HEPES, 14 mM creatine phosphate (Tris salt), 4 mM MgATP, and 0.3 mM Tris-GTP, pH adjusted to 7.2 with KOH. The shank of electrode was wrapped with Parafilm to allow optimal series resistance compensation. Seals were obtained and the whole-cell configuration established in Tyrode’s solution consisting of 155 NaCl, 3.5 KCl, 1.5 CaCl2, 1 MgCl2, 10 HEPES, 10 glucose, pH adjusted to 7.4 with NaOH, with added 1 μM TTX. Reported membrane potentials are corrected for a liquid junction potential of –13 mV between the K-gluconate-based internal solution and the Tyrode’s solution in which current was zeroed at the start of the experiment. The amplifier was tuned for partial compensation of series resistance (typically 40–70% of a total series resistance of 4–10 MΩ), and tuning was periodically readjusted during the experiment. Currents were recorded with a Multiclamp 700B Amplifier (Molecular Devices), filtered at 5 kHz with a low-pass Bessel filter, and digitized using a Digidata 1322 A data acquisition interface controlled by pCLAMP 9.2 software (Molecular Devices). Recordings were made at 30°C.
 

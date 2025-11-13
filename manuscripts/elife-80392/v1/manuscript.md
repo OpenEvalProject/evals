@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/029brtt94 Laboratoire de Biologie et Modélisation de la Cellule, Ecole Normale Supérieure de Lyon, CNRS, UMR 5239, Inserm, U1293, Université Claude Bernard Lyon 1 Lyon France
+1. Laboratoire de Biologie et Modélisation de la Cellule, Ecole Normale Supérieure de Lyon, CNRS, UMR 5239, Inserm, U1293, Université Claude Bernard Lyon 1 Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))
 
 † Corresponding author
 

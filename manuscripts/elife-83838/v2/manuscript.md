@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01tmp8f25 Institute of Neurobiology, Universidad Nacional Autónoma de México, Campus Juriquilla Querétaro Mexico
-2. https://ror.org/05yfz9t60 International Laboratory for Brain, Music and Sound (BRAMS) Montreal Canada
+1. Institute of Neurobiology, Universidad Nacional Autónoma de México, Campus Juriquilla Querétaro Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))
+2. International Laboratory for Brain, Music and Sound (BRAMS) Montreal Canada ([ROR:05yfz9t60](https://ror.org/05yfz9t60))
 
 † Corresponding author
 
@@ -33,9 +33,17 @@ To test these hypotheses, we acquired DWIs from 32 subjects that had previously 
 
 **Figure 1.:** Initially, the subjects placed their finger at the central-bottom target of a touchscreen to start the trial and maintained the finger in this position while observing a sequence of right–left alternating visual stimuli with a constant interstimulus interval (target duration, perception epoch). The subjects were instructed to start tapping once they got the beat from the metronome; they had two to six stimuli to start tapping. Thus, when they considered they had extracted the beat, subjects tapped the touchscreen on the left or right target in synchrony with the alternating visual metronome for six intervals (synchronization epoch). Finally, they continued tapping on the right or left targets for another six intervals without the metronome (continuation epoch). The mean produced and the target interval were displayed at the end of each trial as feedback. Subjects also performed an auditory metronome version of the SCT, where the metronome consisted of 500 Hz tones that were presented on the right or left side of a headphone. Five target durations (550, 650, 750, 850, or 950 ms) were presented pseudorandomly, with the visual and auditory conditions interleaved between subjects.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig2-v2.jpg)
+
+**Figure 2.:** (A) Parameters of rhythmic performance during the SCT. Asynchronies correspond to the time difference between stimulus (SO) and tap onset (TO) across the n intervals of the synchronization epoch. The constant error is the difference between produced (PI) and target intervals (TI), and the temporal variability is the standard deviation of the PI. Finally, the autocorrelation of the PI during synchronization and the lag 1 autocorrelation are computed. A negative value indicates that the subject is using an error correction mechanism (see the text). (B) Absolute asynchronies for each instructed interval and metronome modality (auditory: blue, visual: red) during the synchronization epoch. (C) Lag 1 autocorrelation for each interval and modality during the synchronization epoch. (D) Constant error as a function of target interval for both metronome modalities and the synchronization (left) and continuation (right) epochs of the SCT. The colored lines in D for the continuation epoch correspond to the linear fit between the constant error and the target interval; the indifference interval corresponds to 680 ms (blue vertical arrow) for the auditory condition. (E) Temporal variability as a function of target interval for both metronome modalities and the two epochs of the SCT.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Note that only the correlation between the 650 and 750 ms intervals was significant for both the auditory and visual conditions.
+
 ## Results
 
-## Rhythmic behavior
+### Rhythmic behavior
 
 Thirty-two subjects performed a modified version of the classical SCT that included the following three epochs: beat perception, synchronization, and continuation (Figure 1). This task starts with the active perception of the isochronous beat defined by alternating left–right visual stimuli, followed by tapping synchronization to the alternating stimuli, and the internally driven tapping continuation to the right or left targets without the metronome (Pérez et al., 2023). The subjects also performed an auditory version of the SCT (Figure 1, see Methods).
 
@@ -45,11 +53,19 @@ A negative lag 1 autocorrelation of the produced intervals during the synchroniz
 
 Constant error is the difference between produced and target intervals and is a measure of period accuracy during the synchronization and continuation epochs (Figure 2A). A repeated-measures ANOVA on constant error with modality, target duration, and task epoch as within-subject factors revealed statistically significant main effects for modality (F(1,31) = 46.05, p < 0.0001), target duration (F(4,124) = 29.15, p < 0.0001), and epoch (F(1,31) = 6.44, p = 0.01), as well as significant interactions between modality × interval (F(4,124) = 3.5, p = 0.008), epoch × interval (F(4,124) = 48.33, p < 0.0001), and epoch × modality (F(1,31) = 23.35, p < 0.0001). The post hoc Tukey HSD showed no significant differences for target duration in constant error during synchronization for both modalities, with accurate timing close to zero. In contrast, during continuation, the same post hoc test revealed that the significant interactions between factors were mainly due to the significant differences between distant intervals within the auditory and visual modalities (Figure 2D). In fact, for the continuation epoch, the constant error followed the bias effect, with overestimation for short durations and underestimation for long durations, especially for the auditory condition (Jazayeri and Shadlen, 2010; Pérez and Merchant, 2018; Pérez et al., 2023). Indeed, the indifference interval, which corresponds to the interval associated with zero constant error, was 654 ms for the auditory condition (Figure 2D, blue arrow) and 420 ms for the visual condition. This finding suggests that our subjects had a clear preferred interval in the auditory condition that is close to the 2 Hz reported in the literature (Zamm et al., 2016). Finally, temporal variability was defined as the standard deviation of the produced intervals and is a metric of timing period precision (Figure 2A). The same repeated-measures ANOVA on temporal variability showed significant main effects for target duration (F(4,124) = 110, p < 0.0001) and modality (F(1,31) = 58.06, p < 0.0001), but no significant main effect for task epoch (F(1,31) = 0.94, p = 0.33). In addition, significant effects were revealed for the following interactions: epoch-interval (F(4,124) = 3.42, p = 0.01), epoch-modality (F(1,31) = 70.68, p < 0.0001), interval-modality (F(4,124) = 11.34, p = 0.0001), and epoch-modality-interval (F(4,124) = 14.74, p = 0.0001). The HSD post hoc tests showed significantly greater temporal variability in the visual metronome than in the auditory metronome (for the intervals 650, 750, 850, and 950 ms: p < 0.0001) during the synchronization but not the continuation epoch, confirming the high period precision for auditory metronomes, especially during synchronization (Figure 2E; Gámez et al., 2018; Repp and Penel, 2004).
 
-## White matter analysis
+### White matter analysis
 
 Before the task performance session, participants were scanned in a 3T Philips Achieva TX MR scanner with a 32-channel head coil. T1-weighted volumes and DWIs were obtained (see Methods). For each subject, the gray/white matter interface was identified using a surface mesh (Fischl, 2012; Fischl et al., 2002). The AFD (Raffelt et al., 2012), a metric that non-invasively evaluates axonal density (Rojas-Vite et al., 2019), was derived from DWI using constrained spherical deconvolution (CSD) (Tournier et al., 2004), and sampled at each vertex of this mesh. To evaluate white matter properties at different depths with respect to the cortical mantle, we created synthetic trajectories that organically extended from each vertex at the gray/white matter interface toward the ventricles and sampled diffusion metrics along these trajectories every 0.5 mm (Figure 3A). Leveraging the ability of CSD to disentangle crossing fiber populations, AFD (Figure 3B) was evaluated separately for those fibers that enter or exit the cortex and are, therefore, parallel to the virtual trajectories (parAFD), and those that extend tangentially to the cortex, perpendicular to the virtual trajectories (tanAFD). Throughout this work, we assume that parAFD is related to association, commissural, and projection fibers that eventually enter or exit DWM bundles, while tanAFD is informative of short-range cortico-cortical connections through U-fibers (Schüz and Braitenberg, 2002).
 
-## Correlations between behavior and SWM
+![Figure 3.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Apparent fiber density (AFD) of superficial white matter was systematically sampled (red dashes in C) along synthetic streamlines (red lines in A and C) that extend from each vertex (red circles) of the gray/white matter interface surface toward the ventricles following a Laplacian field (A–C). The integral of all fiber orientation distribution functions (FOD, D) corresponds to the total apparent fiber density (totalAFD), further separated (B) into fiber densities corresponding to fibers entering/exiting the cortex parallel to the Laplacian streamlines (parAFD) and U-fibers running tangentially to the cortex (tanAFD). (E) There are widespread significant correlations between the subjects’ asynchronies during the synchronization-continuation task (SCT) with an auditory metronome and totalAFD, shown here for the 650 ms interval (E). (F) Large areas within the frontal, parietal, and occipital lobes showed significant correlations between behavior and tanAFD. (G) Only restricted frontal and temporal regions showed correlation between parAFD and the asynchronies. (H) Coefficient of determination across the 32 subjects between the three AFD metrics and asynchronies for one exemplary vertex (yellow dot in E–G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The surface-based analysis (SBA) was used to assess the association between the performance metrics of the SCT and the metrics to characterize the SWM sampled in five depths with respect to the gray/white matter interface. The number of significant vertices (both hemispheres) after SBA is shown for the three diffusion-weighted imaging (DWI) metric maps, through five depths sampled, and the four behavioral metrics in five intervals, two epochs, and two modalities. The number of vertices for the three apparent fiber density (AFD) metrics showed association only with the absolute asynchronies of the different intervals of the auditory modality. The largest significant clusters were observed between the absolute asynchronies for the 650 and 750 ms intervals through the five depths sampled in the three AFD metrics. The SBA results were corrected to multiple comparisons, using as thresholds pcft < 0.001 and pcluster < 0.001. AFD: apparent fiber density; tanAFD: tangential apparent fiber density; parAFD: parallel apparent fiber density; Async: absolute asynchronies; Lag 1: lag 1 of the autocorrelation for each instructed interval; CE: constant error; TV: temporal variability; Sync: synchronization; Cont: continuation.
+
+### Correlations between behavior and SWM
 
 Next, we examined the association between behavioral performance and the microstructural properties of SWM inferred from DWIs. The surface-based analysis of SWM (see Methods) was performed to determine the possible association between the different metrics of rhythmic timing performance and the metrics of the SWM sampled at five depths with respect to the gray/white matter interface (0, 0.5, 1, 1.5, and 2 mm). This analysis showed the existence of negative correlations between the auditory absolute asynchronies and values of the AFD maps in the five depths sampled (Figure 3E–G; also see Figure 3—figure supplement 1). Thus, subjects with auditory asynchronies closer to zero, and hence with larger predictive abilities, had significantly higher AFD and tanAFD values than subjects with less predictive performance.
 
@@ -57,17 +73,33 @@ Notably, these significant associations were observed mainly for the auditory as
 
 According to Schüz and Braitenberg, 2002, the average depth of the U-fiber system is approximately 1.5 mm. Thus, the following analyses were done at this depth. Figure 4 shows the correlation coefficient of determination values between the auditory asynchronies and tanAFD at 1.5 mm below the gray/white matter interface across all the tested tempos. After correction for multiple comparisons (pcft < 0.001 and pcluster < 0.001), only intervals of 650, 750, and 850 ms showed a significant association between the behavioral and structural parameters. Indeed, nine (with 2232 vertices), twelve (with 2827 vertices), and two (with 374 vertices) clusters showed significant correlations between auditory asynchronies and tanAFD for the 650, 750, and 850 ms intervals, respectively. Figure 4—figure supplement 1 shows the association between asynchronies (650 ms intervals) and tanAFD at various depths from the gray/white matter interface.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig4-v2.jpg)
+
+**Figure 4.:** Significant correlations were localized in large clusters within motor, auditory, and visual areas, particularly for 650 and 750 ms intervals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** tanAFD sampled at 0 mm shows significant correlations distributed throughout most of the brain, but specific regions (e.g., motor, auditory, and visual areas) consistently show significant correlations as depth increases.
+
 To identify the anatomical regions with significant clusters of vertices, we parcellated the SWM based on the Brainnetome Atlas (Fan et al., 2016). Areas with significant vertices (after correction for multiple comparisons; pcft < 0.001 and pcluster < 0.001) were grouped into 14 regions: primary motor, dorsolateral secondary motor, medial motor (SMA and pre-SMA), dorsolateral prefrontal cortex, language motor, primary somatosensory, parietal association, precuneus, primary and secondary auditory areas (auditory), inferior temporal cortex, object and face recognition areas, primary and secondary visual areas (visual), and limbic association areas (Figure 5C).
 
-## Canonical correlation between behavioral and AFD maps
+![Figure 5.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) Interregional correlation plot of the auditory asynchronies and tanAFD as a function of the instructed interval and depth of the tanAFD. Significant clusters were aggregated into fourteen regions (y-axis) based on the Brainnetome Atlas shown in C. The color and size of the circle for each cluster correspond to the correlation coefficient of determination (critical value r > 0.355 at p < 0.02, df = 29) and the percent of significant vertices in each area, respectively. The left hemisphere (A) showed more areas with significant vertices than the right (B; 17541>16641). A systematic decrease in circle size as a function of depth was observed across areas of both hemispheres. At a depth of 1.5 mm, the regions with a larger percent of significant vertices for the right hemisphere at 750 ms were the medial premotor (supplementary motor area [SMA] and preSMA), auditory, and language motor areas (B). In contrast, few significant vertices were observed across the regions of the left hemisphere (A). (C) Brainnetome Atlas (Fan et al., 2016) showing the 14 regions of interest (ROIs) analyzed in A and B. (D) Interval selectivity curves for the correlation coefficients and percent of significant vertices across tanAFD depths (color coded) for preSMA. (E) Same as D but for the auditory cortex. Note that the preferred interval in the two areas is between 650 and 750 ms.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Interregional correlation plot of the auditory asynchronies and parAFD as a function of the instructed interval and the depth of the parAFD calculation. (C) shows the brain parcellation used.
+
+### Canonical correlation between behavioral and AFD maps
 
 In the previous section, we correlated many behavioral measures with all vertices of the AFD maps, risking inflation of type I error. To address this, we performed a canonical correlation analysis (rCCA) between the behavioral data of the SCT and the structural information of the SWM (see Methods). This approach allowed us to independently assess the correlation between our AFD measurements of every vertex and every variable of the SCT. Specifically, rCCA was calculated between the matrix of behavioral parameters from the synchronization phase of the SCT (i.e., absolute asynchrony, constant error, temporal variability, and lag 1 autocorrelation) for each sensory modality (auditory and visual), every target interval (550–950 ms) and the AFD metrics from all vertices across the brain surface. Separate models were built for each AFD metric (i.e., totalAFD, tanAFD, and parAFD). Notably, all pairings of behavioral and AFD data rendered highly correlated canonical variates (Figure 6A). In line with the previous results, the highest correlation was found between the SCT data and the tanAFD, closely followed by totalAFD, and then parAFD (Figure 6A). The correlations between each behavioral parameter and tanAFD and their corresponding canonical variates revealed a clear structure between the predictive behavior of subjects and the structural differences in U-fibers of the white matter in the audiomotor system. Figure 6B depicts the correlations between each standardized SCT parameter and the corresponding canonical variate (U), where it is evident that the asynchronies of the auditory modality for the 650–850 ms intervals are the parameters with a significant relation to the canonical variate. A novel result from the rCCA is the significant association between the temporal variability of the auditory phase in the same intervals (650–850 ms). In addition, the tanAFD map shows a significant correlation between the tanAFD in audiomotor structures and the canonical variate. Again, the correlation between all vertices and their canonical variates was negative, corroborating the hypothesis that subjects with greater predictive abilities had a larger tanAFD in the audiomotor circuit (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig6-v2.jpg)
 
-**Figure 6.:** tanAFD.(A) Loadings (correlations) of the synchronization-continuation task (SCT) variables for the tanAFD model. Note the absolute asynchronies of the auditory modality showed the highest correlations with the structural data, at the 650–850 ms intervals, in line with previous results. In addition, this approach identified the total variability in the same sensory modality and intervals as significant, although with a lower correlation coefficient and of the opposite sign. (B) Pearson’s correlation of canonical variates (U = behavioral; V = tanAFD across vertices).(C) Loadings of the tanAFD map. Note that the audiomotor system is highly correlated with the SCT behavior.
+**Figure 6.:** (A) Loadings (correlations) of the synchronization-continuation task (SCT) variables for the tanAFD model. Note the absolute asynchronies of the auditory modality showed the highest correlations with the structural data, at the 650–850 ms intervals, in line with previous results. In addition, this approach identified the total variability in the same sensory modality and intervals as significant, although with a lower correlation coefficient and of the opposite sign. (B) Pearson’s correlation of canonical variates (U = behavioral; V = tanAFD across vertices).(C) Loadings of the tanAFD map. Note that the audiomotor system is highly correlated with the SCT behavior.
 
-## DWM and structural selectivity to the interval
+### DWM and structural selectivity to the interval
 
 We also evaluated the association between the precision and accuracy of the SCT tapping period and phase and the DWM properties. Fixel-based analysis (FBA) (Dhollander et al., 2021; Raffelt et al., 2017) was used to estimate micro- and macrostructural differences within DWM voxels (Genc et al., 2018; Kelly et al., 2020; Mito et al., 2018; Rau et al., 2019). This method, similar to that of our SWM analysis, is based on the CSD of DWI data.
 
@@ -75,11 +107,27 @@ FBA provides three fiber-specific indices (fiber density, fiber cross-section, a
 
 The FBA revealed significant negative correlations between the FDC in the CC and the absolute asynchronies to the auditory metronome for 650, 750, 850, and 950 ms intervals (Figure 7). Therefore, this analysis showed a tight relationship between the density and bundle diameter of CC fibers and beat entrainment. Subjects exhibiting large phase accuracy with asynchronies close to zero also showed large FDC values, and subjects with poor phase accuracy and large asynchronies had low FDC values (Figure 7—figure supplement 1). As in the case of the U-fiber metrics, the FBA values were not correlated with period accuracy or precision, nor with the error correction for the auditory and visual conditions during the synchronization and continuation epochs.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig7-v2.jpg)
+
+**Figure 7.:** (A–E) Fiber bundles that showed significant correlations between the asynchronies in the synchronization-continuation task (SCT) auditory condition and the fiber density cross-section (FDC) of the corpus callosum (CC). Panels A–C correspond to the anterior coronal sections of the sagittal map depicted in the center of the figure. Panels D and E correspond to the posterior axial sections of the same central sagittal map. An interval-selective map with an anterior posterior gradient is depicted. (F) Coronal section of the CC showing the fixels with a significant correlation coefficient (color-coded r values; only fixels with pcorr < 0.05 are shown) between asynchronies at the 750 ms interval in the auditory condition and FDC. (G) Distribution of the coefficients of determination (r2) of the FDC vs absolute asynchronies for the four intervals listed on the x-axis. The interquartile box plots are depicted on the right.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Percent of significant fixels (five intervals) in the deep white matter in projection tracts in the (A) left hemisphere, (B) right hemisphere, and (C) commissural tracts. AF = arcuate fasciculus; ATR = anterior thalamic radiation; CB = cingulum bundle; CST = corticospinal tract; FX = fornix; IFO = inferior fronto-occipital fasciculus; MdLF = middle longitudinal fasciculus; SLF2 = superior longitudinal fasciculus 2; STR = superior thalamic radiation; AC = anterior commissure; CC = corpus callosum; FMI = forceps minor; FMA = forceps major; FD = fiber density; FC = fiber cross-section; FDC = fiber density and cross-section; MAs = mean asynchronies.
+
 The association between entrainment phase and white matter properties defined an interval-selective map in the CC, with the FDC at different levels of the CC showing significant correlations with the absolute asynchronies at specific intervals (Figure 7). This map showed an anterior–posterior gradient, with behavioral and structural associations for short and long intervals in the anterior and posterior portions of the CC, respectively. Thus, the FDC fixel values of the posterior midbody of the CC (interconnecting motor and premotor cortices and M1) showed a significant negative correlation with absolute auditory asynchronies for the 650 and 750 ms intervals (Figure 7BC; family-wise error-corrected p-value <0.05). For the asynchronies at the intermediate interval of 850 ms, a negative correlation was observed with FDC fixel values located in the isthmus and the splenium (Figure 7C; interconnecting primary motor, temporal, and visual cortices). Finally, the asynchronies of the 950 ms interval showed a significant negative correlation with fixels located in forceps minor and major (Figure 7A, D; interconnecting prefrontal and visual cortices, respectively).
 
 It is evident in Figure 7A–E that the streamline segments of the fixels with entrainment correlations were located mainly at the joint of the two hemispheres across the CC. Nevertheless, a lateralization effect was found for the left hemisphere, with fixels associated with auditory asynchronies of 750 and 950 ms in the isthmus and splenium, respectively. In addition to the CC, the right fornix showed a significant association with the asynchronies of the 750 ms interval for the FD metric (see Figure 7—figure supplement 1).
 
 Lastly, we carried out a correlation analysis between the mean absolute asynchronies across the five intervals and the FC (Figure 8) and FDC (see Figure 7—figure supplement 1). Notably, for the auditory condition, the tracts with significant FC fixels were the left arcuate fasciculus (Figure 8A, E), CC M1 (Figure 8C, E), forceps major (Figure 8B, D), superior longitudinal fasciculus 2 (Figure 8F), and right fornix (see Figure 7—figure supplement 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig8-v2.jpg)
+
+**Figure 8.:** (A) Sagittal brain section showing the p-value of significant fixels. (B) Example of the significant correlation between the fiber cross-section (FC) metric and the mean absolute asynchronies in a single illustrative fixel (red dot in panel D). (C–F) Axial sections showing the negative correlation (r) between FC and mean absolute asynchronies for significant fixels. CC = corpus callosum (C), FMA = forceps major (D), AF = arcuate fasciculus (E), SLF 2 = superior longitudinal fasciculus 2 (F).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/83838/elife-83838-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Percent of significant fixels (mean asynchronies) in thedeep white matterin projection tracts in the (A) left hemisphere, (B) right hemisphere, and (C) commissural tracts (C). AF = arcuate fasciculus; ATR = anterior thalamic radiation; CB = cingulum bundle; CST = corticospinal tract; FX = fornix; IFO = inferiorfronto-occipital fasciculus;MdLF = middle longitudinal fasciculus; SLF2 = superior longitudinal fasciculus 2; STR = superiorthalamicradiation;AC = anterior commissure; CC = corpus callosum; FMI = forceps minor; FMA = forceps major; FD = fiber density; FC = fiber cross-section; FDC = fiber density and cross-section; MAs = mean asynchronies.
 
 ## Discussion
 
@@ -103,41 +151,41 @@ In conclusion, our results showed that the subjects’ accuracy in SCT performan
 
 This study was approved by the Ethics Committee of our Institution (049H-RM).
 
-## Participants
+### Participants
 
 Thirty-two healthy human subjects (age = 25.37 ± 3.21 years; 19 females) without musical training volunteered to participate and gave informed consent, which complied with the Declaration of Helsinki and was approved by our Institutional Review Board. All participants were right-handed and native Spanish speakers. They did not have MRI contraindications or neurological, psychiatric, or cognitive conditions.
 
-## Apparatus
+### Apparatus
 
 Participants were seated comfortably in a quiet experimental room, facing a high-definition 23″ touch screen (refresh rate: 60 Hz; ELO Touch solutions) located 50 cm away, which they were instructed to tap using the right index finger. Auditory stimuli were presented through noise-canceling headphones (Sony, MDR-NC50).
 
-## Experimental task
+### Experimental task
 
 The SCT of the present study is similar to the standard SCT described elsewhere (Merchant et al., 2008b; Merchant et al., 2008b). However, instead of tapping a button, the subject tapped on the right or left halves of the touch screen. The task started when three empty white circles (radius 1 degree of visual angle) on a black background were presented simultaneously, forming an inverted isosceles triangle (2 degrees of visual angle on each side). Subjects were trained to place their finger at the central-bottom target to start the trial and attend to a sequence of two to six right/left alternating stimuli with a constant interstimulus interval (perception epoch). They were instructed to tap the touchscreen on the corresponding target in synchrony with a metronome for six intervals (synchronization epoch) and continue tapping on the screen for another six intervals without the metronome (continuation epoch; Figure 1). During the perception epoch, the subjects were instructed to start tapping once they got the beat from the metronome, and they had two to six stimuli to start tapping. The mean produced interval was presented at the end of the trial as feedback. A trial was considered correct if, for every interval, the absolute difference between the produced interval and the target interval was below 30% of the target interval during the synchronization and below 40% during the continuation epoch. The task was programmed using Psychtoolbox for Matlab (2018, Mathworks).
 
-## Stimuli
+### Stimuli
 
 The visual metronome (33 ms, yellow circle, 0.5 degrees of visual angle) was alternatively displayed inside the right or left empty circles. The auditory metronome (33 ms , 550 Hz, 80–85 dB SPL) was also presented alternatively in the right or left headphone. The isochronous target intervals were 550, 650, 750, 850, and 950 ms, which were pseudorandomly presented within a block. Each subject performed 10 correct trials for each target interval.
 
-## Procedure
+### Procedure
 
 The MRIs were collected in the first session. In a second visit, the auditory and visual tasks were performed randomly across subjects outside of the MRI scanner.
 
-## Analysis of behavioral data
+### Analysis of behavioral data
 
 Four metrics were calculated to assess the subjects’ performance during SCT (Figure 2A; Gámez et al., 2018; Merchant et al., 2008c). During the synchronization epoch, we estimated the absolute asynchronies and autocorrelations of the inter-tap interval time series (Iversen et al., 2015; Wing, 2002). The constant error and temporal variability were calculated from the produced intervals during both the synchronization and continuation epochs. Absolute asynchronies were defined as the unsigned difference between stimulus onset and tap onset. Constant error was calculated as the difference between the produced interval and the target interval and is a measure of timing accuracy. Temporal variability was defined as the standard deviation of the total produced intervals and is a metric of timing precision. The autocorrelation of the six inter-tap intervals during a trial was calculated and averaged across trials. Thus, lag 1 autocorrelation is normally negative for isochronous metronomes, meaning that a longer produced interval tends to be followed by a shorter interval and vice versa, reflecting an error correction mechanism used to maintain the beat of the metronome during synchronization (Iversen et al., 2015). A repeated-measures ANOVA with two and three factors was carried out for the analysis of asynchronies, constant error, and temporal variability.
 
-## Imaging protocol
+### Imaging protocol
 
 Images were acquired using a 3T Philips Achieva TX scanner with a 32-channel head coil. T1-weighted volumes were obtained using a three-dimensionally encoded spoiled gradient echo sequence (repetition/echo times (TR/TE) = 8.2/3.7 ms, flip angle = 8°, field of view = 256 × 256 × 176 mm3, matrix size = 256 × 240 × 176 mm3 yielding voxel resolution = 1 × 1 × 1 mm3). DWIs were acquired with echo-planar imaging, 2 × 2 × 2 mm3 voxel resolution, FOV = 256 × 256 mm3, 62 axial slices, TR/TE = 16,500/72 ms. Images were sensitized to diffusion with b = 1000 s/mm² (64 unique directions) and b = 3000 s/mm² (96 directions). Five volumes without diffusion weighting (b = 0 s/mm2) were also acquired, along with an additional b = 0 s/mm2 volume obtained with reversed-phase encoding polarity for correction of geometric distortions.
 
-## Image processing
+### Image processing
 
-## Fixel-based analysis
+### Fixel-based analysis
 
 We analyzed individual fiber-specific properties in the presence of crossing fiber populations (‘fixels’; Raffelt et al., 2015) following the steps described in Raffelt et al., 2017 and using the tools available in MRtrix3 (Tournier et al., 2019). A white matter mask was computed for each subject, followed by global signal intensity normalization of the DWI, which was performed across subjects by dividing all volumes by the median b = 0 s/mm2 intensity. Images were upsampled to 1 mm3 isometric resolution (Dyrby et al., 2014). White matter FODs were estimated using the multi-shell, multi-tissue CSD (MSMT-CSD) algorithm (Jeurissen et al., 2014). Tissue-specific response functions were calculated for each subject, from which we derived group-averaged response functions that were used to estimate FODs (lmax = 8) for each subject. An FOD template was constructed through iterative non-linear registration using the FODs of all 32 subjects followed by the calculation of the intersection of masks of all subjects. Fixels were derived at each voxel by FOD segmentation and reoriented to the study template. Finally, FBA metrics (FD, FC, and FDC) were calculated for each fixel.
 
-## Statistical analysis
+### Statistical analysis
 
 A whole-brain probabilistic tractogram was calculated based on the FOD population template, seeded from a whole-brain white matter mask to produce a tractogram of 20 million streamlines. Next, the SIFT algorithm (Smith et al., 2013) was used to select a subset of streamlines (n = 2 million) that best fit the diffusion signal and therefore reduce tractography biases. The structural connectivity metric between fixels was obtained according to probabilistic tractography using the connectivity-based fixel enhancement tool (Raffelt et al., 2015).
 
@@ -145,7 +193,7 @@ The FD, FC, and FDC measures were correlated with SCT for both conditions (visua
 
 After the statistical analysis, tracts with significant fixels in the group space were identified using the tract-selection regions from the XTRACT tool (Warrington et al., 2020) included in FSL software (FMRIB’s Software Library – FSL, Oxford, UK) (Smith et al., 2004), which were warped into our population template. Tracts with significant fixels were reconstructed using MRTrix (Tournier et al., 2019).
 
-## SWM surfaces
+### SWM surfaces
 
 To assess SWM properties, we used a synthetic representation of axons based on cortical topology. We computed a Laplacian potential field between the ventricles and the gray/white matter boundary (Jones et al., 2000; Lerch et al., 2008; Liu et al., 2016) using minclaplace (Lerch et al., 2008). Next, Laplacian streamlines were seeded at each vertex of the white matter surface and propagated toward the ventricles using Matlab, 2020A. Thus, one Laplacian streamline was obtained for every white matter surface vertex (Figure 3A). The distance between each step of the Laplacian streamline was 100 µm, and streamlines were truncated at 5 mm. This resulted in smooth and non-overlapping pathways that respect topology and traverse the SWM. Furthermore, the first segment of these streamlines is perpendicular to the gray-white matter (GM–WM) surface, with subsequent segments gradually bending as they extend away from it. These aspects make the Laplacian streamlines behave similarly to what is expected from the anatomy of the SWM. Finally, all the white matter surfaces and synthetic streamlines were warped to their corresponding subject-specific DWI space via between-modality non-linear registration using ANTS (Avants et al., 2011). Data for one subject was discarded for SWM analysis (Figures 3—5) due to suboptimal registration between DWI metric maps and white matter surface.
 
@@ -153,15 +201,19 @@ We used the fixel-based information to independently evaluate the two fiber syst
 
 All metrics along the Laplacian streamlines were projected onto the gray/white matter surface of the fsaverage5 template for visualization and statistical analyses and smoothed using a two-dimensional kernel of 15 mm of full width at half maximum.
 
-## Surface-based analysis of SWM
+### Surface-based analysis of SWM
 
-Analyses were performed by fitting a general linear model at each vertex using SurfStat (https://www.math.mcgill.ca/keith/surfstat). This analysis assessed the relation between the value of diffusion metrics in each vertex (i) and the behavioral metrics from the SCT (absolute asynchronies, constant error, temporal variability, and lag 1 of the autocorrelation of the inter-tap-interval time series), as:SWMi=β0+β1∗STCmetric
+Analyses were performed by fitting a general linear model at each vertex using SurfStat (https://www.math.mcgill.ca/keith/surfstat). This analysis assessed the relation between the value of diffusion metrics in each vertex (i) and the behavioral metrics from the SCT (absolute asynchronies, constant error, temporal variability, and lag 1 of the autocorrelation of the inter-tap-interval time series), as:
+
+$$
+SWM_{i}=\beta_{0}+\beta_{1}^{∗}STC_{metric}
+$$
 
 Surface vertex-wise analysis was corrected for multiple comparisons using random-field theory with a cluster-forming threshold pcft < 0.001 (Eklund et al., 2016). Clusters with pcluster < 0.001 were deemed significant (https://www.math.mcgill.ca/keith/surfstat).
 
 Significant clusters were anatomically identified using the Brain Atlas Based on Connectional Architecture (Brainnetome) (Fan et al., 2016). All the analyses were carried out in Surfstat (Worsley et al., 2009) for Matlab (2018; Mathworks).
 
-## Regularized canonical correlation analysis
+### Regularized canonical correlation analysis
 
 As an additional verification of the results obtained via random-field theory analysis, we performed a canonical correlation analysis between the behavioral data of the SCT and the structural information of the SWM. This approach allowed us to independently assess the correlation of the AFD measurements of every vertex with every variable of the SCT. Concretely, rCCA was calculated between the matrix of behavioral metrics from the synchronization phase of the SCT (i.e., absolute asynchrony, constant error, temporal variability, and lag 1 autocorrelation) for each sensory modality (auditory and visual), and every target interval (550–950 ms) and the AFD matrix of the whole brain. Given the orthogonality between tanAFD and parAFD, and their collinearity with totalAFD individual models were built for every AFD metric.
 

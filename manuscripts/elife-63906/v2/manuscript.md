@@ -33,31 +33,55 @@ We therefore sought to select a variant of CCHFV that was able to cause disease 
 
 ## Results
 
-## Mouse-adaptation of CCHFV strain Hoti
+### Mouse-adaptation of CCHFV strain Hoti
 
 The ability of human clinical isolates of CCHFV to cause disease in type I IFN deficient but not sufficient mice (Hawman et al., 2018; Hawman et al., 2019; Oestereich et al., 2014; Lindquist et al., 2018) suggests CCHFV is unable to antagonize mouse innate immunity. We hypothesized that chronic infection and serial passage of CCHFV within the livers of Rag2-/- mice, which possess intact innate immune responses but lack adaptive immunity, would select for CCHFV variants that had adapted to overcome mouse innate restriction factors. This approach has successfully resulted in mouse-adaptation of the unrelated Zika and chikungunya viruses (Hawman et al., 2017; Gorman et al., 2018). We therefore infected a Rag2-/- mouse with the clinical isolate CCHFV strain Hoti by the intraperitoneal (IP) route and for the first passage collected blood at 4 weeks post-infection (WPI). For passage 2, we inoculated a naive Rag2-/- mouse with this blood and for remaining passages collected liver tissue when mice were exhibiting severe clinical signs of disease (hunched posture, piloerection, lethargy, weight loss). Liver tissue was homogenized, clarified of large debris by centrifugation and inoculated IP into naive Rag2-/- mice. At each passage, liver tissue from an individual mouse was passed into an individual naive mouse without purification or isolation . This serial passaging in Rag2-/- mice was performed nine times during which we observed a decrease in time of onset of severe disease (> day 28 post-infection (PI) for passage 1 to <day 7 PI passage 9) (Figure 1—figure supplement 1A–B). We performed a final two passages in the liver tissue of wild-type C57BL/6J mice for 11 total passages in mice. To monitor mouse adaptation during passaging, we evaluated inoculation of small groups of wild-type mice with virus stocks grown in tissue culture from homogenized liver tissue after Rag2-/- passage 4 (Figure 1—figure supplement 1C) and 9 (Figure 1—figure supplement 1D). As soon as passage 4, we observed transient weight loss in wild-type mice infected with passaged virus (Figure 1—figure supplement 1C). Weight loss after inoculation with later passages was associated with other clinical signs of disease such as piloerection, hunched posture and lethargy (data not shown) suggesting we had selected for a variant of CCHFV capable of causing severe disease in WT mice. After 11 total passages, we grew a virus stock in vitro on SW13 cells, hereafter termed MA-CCHFV. MA-CCHFV was sequenced by Illumina-based deep sequencing to exclude contamination and titered by SW13 median tissue culture infectious dose assay (TCID50). Upon infection of WT mice, this variant caused substantial weight loss and clinical disease in male WT mice (Figure 1—figure supplement 1E). However, unexpectedly, infected female mice exhibited milder signs of disease (Figure 1—figure supplement 1E).
 
-## MA-CCHFV causes severe disease in male C57BL/6J mice
+### MA-CCHFV causes severe disease in male C57BL/6J mice
 
 To more fully characterize the clinical disease caused by MA-CCHFV, we infected 8-week-old WT C57BL/6J mice with 10,000 TCID50 of MA-CCHFV via the IP route. For comparison, a group of mice were infected with an identical dose of parental strain CCHFV Hoti or mock infected. As expected, inoculation of WT mice with CCHFV strain Hoti resulted in no clinical disease besides transient weight loss on day 1 PI (<5%) (Figure 1A,B). In contrast, inoculation of male WT mice with MA-CCHFV resulted in severe clinical disease with significant weight loss beginning on day 4 PI and peaking on day 6 PI (Figure 1A). In addition to weight loss, male mice infected with MA-CCHFV exhibited overt clinical signs such as piloerection, hunched posture, and lethargy. Nearly all mice began to recover beginning on day 7 PI (Figure 1A). During our studies with MA-CCHFV in this report, lethal outcome in male mice was occasionally observed in some cohorts (1 of 32, 1 of 8, 2 of 12) indicating that lethal outcome is possible, albeit rare. Again, female WT C57BL/6J mice infected with MA-CCHFV exhibited a milder clinical disease with no significant weight loss compared to mock-infected mice (Figure 1B) and significantly less weight loss compared to male WT C57BL/6J mice infected with MA-CCHFV. (Figure 1—figure supplement 2). This was associated with milder clinical signs of disease.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig1-v2.jpg)
+
+**Figure 1.:** (A and B) Groups of 8-week-old male (A) or female (B) WT C57BL/6J mice were infected with 10,000 TCID50 of MA-CCHFV or CCHFV Hoti via the intraperitoneal (IP) route and weighed daily. (A and B) Male and female mice were mock infected for comparison and same data is shown in both panels for comparison. N = 8 mock and four mice per CCHFV-infected group. Data shown as mean plus standard deviation. Statistical comparison performed using two-way ANOVA with Dunnett’s multiple comparison to mock-infected mice. *p<0.05, ***p<0.001, ****p<0.0001. (C and D) Groups of male (C) or female (D) 8-week-old WT mice were infected with indicated dose of MA-CCHFV via the IP route and weighed daily. N = 5 mice per group. Studies were performed once.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Rag1-/- mice, passages 1–9 or wild-type (WT) C57BL6/J mice, passages 10 and 11, were inoculated with indicated source of passaged CCHFV and weighed (A). N = 1 mouse per passage. (C-D) WT C57BL6/J mice were inoculated with tissue-culture grown stocks of CCHFV derived from liver tissue at passages 4, 9, and 11. N = 2 mice per group. Dashed line indicates 100% starting weight for reference.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Eight-week-old WT MA-CCHFV were infected with 10,000 TCID50 of MA-CCHFV via the intraperitoneal (IP) route and weighed daily. Data in this figure is duplicated from main text Figure 1A and B and combined here for statistical comparison. p Values calculated with two-way ANOVA and Sidak’s multiple comparison test between male and female MA-CCHFV infected mice. *p<0.05, ****p<0.0001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Eight-week-old wild-type (WT) C57BL6/J mice were infected with indicated dose of MA-CCHFV and seroconversion at 14 DPI evaluated using whole virion ELISA. Total CCHFV-specific Ig measured in a 1:400 dilution of serum. Dashed line indicates arbitrarily determined threshold for classification of a positive signal.
+
 We next infected mice IP with a range of doses of MA-CCHFV from 0.01 TCID50 to 10,000 TCID50 to determine the median infectious dose (ID50) and to evaluate whether there was a correlation between virus dose and disease severity, as has been seen with mouse-adapted Ebola virus (Haddock et al., 2018b). Little-to-no clinical disease was observed in mice infected with 0.01 or 1 TCID50 (Figure 1C,D). Male mice infected with 100 TCID50 or greater showed weight loss (Figure 1C) and overt clinical signs of disease. Again, female mice infected with similar doses of MA-CCHFV exhibited milder weight loss compared to male mice (Figure 1C,D) that was also associated with milder overt clinical signs of disease. We evaluated sero-conversion to CCHFV at day 14 PI by whole-virion ELISA to confirm infection (Figure 1—figure supplement 3) and found that a dose of 0.01 TCID50 resulted in productive infection of three of five male and four of five female mice. At doses of 1 TCID50 and higher, all mice had detectable anti-CCHFV immunoglobulin at day 14 (Figure 1—figure supplement 3). Thus, the ID50 of MA-CCHFV in WT male or female mice is <0.01 TCID50. Cumulatively, these results demonstrated that doses of MA-CCHFV as low as 100 TCID50 could cause disease in male WT C57BL/6J mice, although doses 10,000-fold lower still resulted in productive infection. For the rest of our studies, we infected mice IP with 10,000 TCID50 of MA-CCHFV, unless otherwise indicated.
 
-## MA-CCHFV causes disease in male mice of multiple laboratory strains
+### MA-CCHFV causes disease in male mice of multiple laboratory strains
 
 MA-CCHFV was generated by serial passage in mice on the C57BL/6J background. We wanted to determine if the MA-CCHFV phenotype was restricted to C57BL/6J mice or if MA-CCHFV could cause disease in other commonly used laboratory strains of mice. We therefore infected 8-week-old male and female C57BL/6J, C57BL6/NCr, 129S1, BALBc/J, or outbred CD1 mice IP with an intermediate dose of MA-CCHFV (1000 TCID50). Similar to C57BL/6J mice (Figure 2A), male BALBc/J, C57BL6/NCr, and CD1 mice exhibited weight loss (Figure 2C–E) that was associated with overt clinical signs such as piloerection, hunched posture, and lethargy. Again, consistent with our data in C57BL/6J mice (Figure 2A), female mice of these strains exhibited milder clinical disease compared to the male mice (Figure 2C–E) demonstrating the sex-bias toward more severe disease in male mice is not restricted to the C57BL/6J strain. No mortality was observed in any of the mouse strains during this study. Interestingly, both male and female 129S1 mice appeared largely resistant to MA-CCHFV with mice exhibiting little-to-no weight loss (<5%) (Figure 2B) along with no overt signs of clinical disease. These data suggest that along with sex-linked differences there also exist genetic differences between mouse strains that result in distinct outcomes following infection with MA-CCHFV.
 
-## MA-CCHFV causes lethal disease in young mice
+![Figure 2.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig2-v2.jpg)
+
+**Figure 2.:** (A–E) Groups of 8-week-old male or female mice of indicated strains were infected with 1000 TCID50 of MA-CCHFV via the intraperitoneal (IP) route and weighed daily. N = 5 mice per group. Data shown as mean plus standard deviation. Study was performed once.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Three-week-old wild-type (WT) C57BL6/J mice were inoculated with 10,000 TCID50 of MA-CCHFV. Mice were weighed daily (A) and humanely euthanized when they acchieved euthanasia criteria (B). N = 5 mice per group. (A) Dashed line indicates 100% starting weight for reference.
+
+### MA-CCHFV causes lethal disease in young mice
 
 Our data from adult (>8 weeks of age) WT C57BL/6J and several other commonly used laboratory strains of mice demonstrated that MA-CCHFV infection results in a severe but rarely fatal infection. A lethal model of MA-CCHFV infection would have utility for studies evaluating antiviral therapeutics or therapeutic interventions that seek to prevent CCHFV-induced mortality. For several viral infections, younger mice exhibit more severe disease than older mice (Couderc et al., 2008; Johnson et al., 1972) and neonatal but not adult WT mice are susceptible to non-adapted CCHFV infection (Hoogstraal, 1979). We hypothesized that young mice (3-week-old) mice may exhibit more severe disease upon infection with MA-CCHFV. Three-week-old male or female WT C57BL/6J mice were infected with 10,000 TCID50 of MA-CCHFV via the IP route. We found that infection of young male or female mice resulted in weight loss beginning on day 3 or day 4 (Figure 2—figure supplement 1A) and nearly all mice succumbed to the infection by day 7 PI (Figure 2—figure supplement 1B). Surviving male and female mice exhibited severe clinical disease but did not reach euthanasia criteria and began to rapidly recover after day 7 (Figure 2—figure supplement 1A). These data demonstrate that younger WT mice infected with MA-CCHFV are a suitable model for studying severe, lethal CCHF and that at younger ages, both male and female mice are similarly susceptible to severe disease.
 
-## MA-CCHFV replicates to high titers in multiple tissues of adult WT mice
+### MA-CCHFV replicates to high titers in multiple tissues of adult WT mice
 
 To determine if MA-CCHFV had an increased ability to replicate and disseminate in wild-type mice, we evaluated viral loads in several tissues of adult male and female WT mice infected with parental CCHFV strain Hoti or MA-CCHFV. We necropsied mice shortly after infection (1 DPI), early acute disease (3 DPI), peak clinical disease (6 DPI), early convalescence (8 DPI) and when mice had resolved all overt clinical signs of disease (14 DPI). In the plasma, at day 1 PI, mice infected with either Hoti or MA-CCHFV had similar RNA titers (p>0.05) (Figure 3A). In mice infected with CCHFV Hoti, viral RNA titers in the plasma rapidly declined after day 1 PI and continued to decline until they were near or below the limit of detection by day 8 PI indicating mice rapidly controlled the infection (Figure 3A). In contrast, viral RNA titers in the plasma of male mice infected with MA-CCHFV significantly increased between day 1 and day 3 PI (p<0.05) and these mice exhibited significantly greater viremia than Hoti-infected or female MA-CCHFV-infected mice at day 6 and day 8 PI (Figure 3A). Female mice infected with MA-CCHFV had similar titers to Hoti-infected mice (Figure 3A). Cumulatively, male mice infected with MA-CCHFV had significantly increased viremia compared to mice infected with CCHFV Hoti and consistent with more severe clinical disease, male mice infected with MA-CCHFV had higher and prolonged viremia compared to female mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig3-v2.jpg)
 
-**Figure 3.:** Groups of 8-week-old WT C57BL/6J mice were infected with 10,000 TCID50 of MA-CCHFV or CCHFV Hoti via the intraperitoneal (IP) route. At indicated time points, mice were necropsied and viral RNA burdens in tissues evaluated by qRT-PCR. Statistical comparison performed with two-way ANOVA with Tukey’s multiple comparison test. p-Values between MA-CCHFV and respective sex Hoti-infected mice indicated with * for females, # for males and between MA-CCHFV male and MA-CCHFV female mice with +. Plasma, liver, spleen, kidney, and lung: N = 2–4 (Hoti) and 7–8 (MA-CCHFV) per group per timepoint. Brain: N = 4 per group per timepoint. Study was performed once for Hoti and twice for MA-CCHFV. Data shown as mean plus standard deviation. Dashed line indicates limit of detection. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 3—source data 1.
+**Figure 3.:** Groups of 8-week-old WT C57BL/6J mice were infected with 10,000 TCID50 of MA-CCHFV or CCHFV Hoti via the intraperitoneal (IP) route. At indicated time points, mice were necropsied and viral RNA burdens in tissues evaluated by qRT-PCR. Statistical comparison performed with two-way ANOVA with Tukey’s multiple comparison test. p-Values between MA-CCHFV and respective sex Hoti-infected mice indicated with * for females, # for males and between MA-CCHFV male and MA-CCHFV female mice with +. Plasma, liver, spleen, kidney, and lung: N = 2–4 (Hoti) and 7–8 (MA-CCHFV) per group per timepoint. Brain: N = 4 per group per timepoint. Study was performed once for Hoti and twice for MA-CCHFV. Data shown as mean plus standard deviation. Dashed line indicates limit of detection. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 We next evaluated viral RNA loads in the liver. At day 1 PI, male or female mice infected with parental strain Hoti or MA-CCHFV had similar viral RNA loads in the liver suggesting efficient dissemination to the liver independent of sex or virus strain (Figure 3B). However, viral RNA loads in mice infected with parental strain Hoti were similar at day 3 PI and began to decline at day 6 PI (Figure 3B) indicating these mice were able to efficiently control the non-adapted parental CCHFV strain Hoti. Viral loads in male mice infected with MA-CCHFV increased between day 1 and 6 PI (p<0.05) and did not begin to decline until day 8 PI (Figure 3B). Further, viral loads in these mice were significantly increased compared to male mice infected with CCHFV Hoti at days 3, 6, and 8 PI (Figure 3B). Female mice infected with MA-CCHFV had significantly elevated viral loads compared to female mice infected with CCHFV Hoti at day 3 PI (Figure 3B) but had similar viral loads to Hoti-infected mice thereafter. Consistent with more severe disease in male mice infected with MA-CCHFV, at day 6 and day 8 PI viral RNA loads in livers of male mice infected with MA-CCHFV were significantly greater than those in MA-CCHFV infected female mice (p<0.0001) (Figure 3B).
 
@@ -65,41 +89,170 @@ The spleen is another site of significant pathology and viral replication in CCH
 
 In addition to the plasma, liver, and spleen, we evaluated viral RNA loads in the kidneys, lungs, and brain, sites which we have previously seen high viral RNA loads in Ifnar1-/- mice infected with CCHFV Hoti (Hawman et al., 2019). Similar to the liver and plasma, in the kidneys and lungs, although early viral loads were similar between groups, by day 6 male mice infected with MA-CCHFV had higher viral loads compared to MA-CCHFV infected female mice or mice infected with CCHFV Hoti (Figure 3D,E). Lastly, both male and female mice infected with MA-CCHFV had significantly increased viral loads in the brain at days 3 through 8 PI, and male mice continued to have significantly increased viral RNA loads in the tissue to at least day 14 PI (Figure 3F). Cumulatively, these data indicate that the more severe disease seen in MA-CCHFV infected mice correlates with higher viral RNA burdens in multiple tissues.
 
-## MA-CCHFV causes significant pathology in the livers of WT mice
+### MA-CCHFV causes significant pathology in the livers of WT mice
 
 CCHFV infection of humans typically results in a hemorrhagic-type disease with severe involvement of the liver. Histological examination of formalin-fixed sections of liver revealed that MA-CCHFV infection resulted in hepatocellular necrosis with acute inflammation in both male and female mice infected with MA-CCHFV by day 3 PI (Figure 4A,B and Supplementary file 1). However, consistent with prolonged clinical disease and delayed clearance of viral loads in the liver of male mice, male mice infected with MA-CCHFV had greater necrosis at day 6 and day 8 PI than infected female mice (Figure 4B and Supplementary file 1). Subacute hepatitis was also evident in MA-CCHFV-infected mice (Figure 4B and Supplementary file 1). Immunohistochemistry to detect viral antigen in the liver identified CCHFV antigen in liver endothelial cells, Kupffer cells, and hepatocytes in both male and female mice infected with MA-CCHFV at day 1 and day 3 PI (Figure 4B and Supplementary file 1). At day 6 PI, consistent with greater viral loads in male mice infected with MA-CCHFV, male mice had greater amounts of viral antigen present in the liver (Figure 4B and Supplementary file 1). By day 14 PI, all mice had cleared viral antigen from their livers. (Figure 4B and Supplementary file 1). Consistent with little-to-no clinical disease in CCHFV Hoti infected mice, in CCHFV Hoti infected mice little pathology was evident in the liver and viral antigen was cleared from the liver earlier than MA-CCHFV infected mice (Supplementary file 1). The complete histological and immunohistochemistry findings are provided in Supplementary file 1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Groups of 8-week-old wild-type (WT) mice were infected were infected with 10,000 TCID50 of MA-CCHFV or Hoti via the intraperitoneal (IP) route or mock-infected. (A) Representative liver sections from a mock-infected mouse is shown. (B) At indicated timepoints, MA-CCHFV-infected mice were euthanized, liver tissue fixed in formalin and paraffin embedded sections stained with H and E or an antibody against the CCHFV NP to identify viral antigen (IHC). Four mock-infected, four male and four female MA-CCHFV mice were evaluated at each timepoint and representative images shown. Images shown at ×200 magnification and scale bar indicates 100 μm. Study performed once. (C and D) At indicated timepoints, liver enzymes were measured in lithium heparin treated whole blood. ALT = Alanine aminotransferase, AST = Aspartate aminotransferase. N = 6 mock male and female, 4 Hoti-infected and 8 MA-CCHFV infected per group. Study performed once for Hoti and twice for mock and MA-CCHFV-infected mice. Data shown as mean plus standard deviation. Dashed line indicates upper limit of detection. Statistical comparison performed with two-way ANOVA with Tukey’s multiple comparison test. p-Values between MA-CCHFV and respective sex Hoti-infected mice indicated with * for females, # for males and between MA-CCHFV male and MA-CCHFV female mice with +. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Groups of 8-week-old wild-type (WT) mice were infected were infected with 10,000 TCID50 of MA-CCHFV via the intraperitoneal (IP) route or mock-infected. (A) Representative spleen sections from a mock-infected mouse is shown. (B) At indicated timepoints, MA-CCHFV-infected mice were euthanized, spleen tissue fixed in formalin and paraffin-embedded sections stained with H and E or an antibody against the CCHFV NP to identify viral antigen (IHC). Four mock-infected, four male and four female MA-CCHFV mice were evaluated at each timepoint and representative images shown. Images shown at ×200 magnification and scale bar indicates 100 μm.
 
 In addition to histological examination, we also evaluated liver enzymes in the blood. Compared to mock-infected mice, we observed a significant increase in liver enzymes in male mice infected with MA-CCHFV on days 3 and 6 PI (Figure 4C,D), consistent with the severe liver pathology in these mice. Compared to mock-infected mice, female mice infected with MA-CCHFV had elevated liver enzymes at day 1 and day 3 PI (Figure 4C,D) but these levels were significantly less than those measured in MA-CCHFV infected male mice (Figure 4C,D). In agreement with the lack of overt clinical disease and little-to-no histological evidence of disease in the livers of Hoti-infected mice, no significant increases in liver enzymes were seen following infection of WT mice with CCHFV Hoti (Figure 4C,D). The complete blood chemistry data is provided in Supplementary file 2. Together this data demonstrates that similar to human CCHF cases, MA-CCHFV causes significant liver pathology in WT mice.
 
 We also examined pathology in the spleen, kidney, lungs, and brains. Despite detectable viral RNA in these tissues, no lesions attributable to CCHFV were evident in the kidney, lung, and brain (Supplementary file 1). In the spleen, follicular, and red pulp necrosis was evident in both male and female MA-CCHFV-infected mice at day 6 PI (Figure 4—figure supplement 1 and Supplementary file 1). Viral antigen was located primarily in the white and red pulp within mononuclear cells morphologically consistent with macrophages (Figure 4—figure supplement 1). These data demonstrate that in addition to the liver, pathology is also evident in spleens of MA-CCHFV infected mice.
 
-## MA-CCHFV causes an inflammatory immune response
+### MA-CCHFV causes an inflammatory immune response
 
 CCHFV infection of humans, NHPs and Ifnar1-/- mice results in production of inflammatory cytokines (Zivcec et al., 2013; Bente et al., 2010; Hawman et al., 2019; Papa et al., 2006; Papa et al., 2016; Haddock et al., 2018a). We therefore evaluated the plasma cytokine response in MA-CCHFV-infected WT mice. MA-CCHFV infection of WT mice resulted in production of multiple pro-inflammatory cytokines during acute disease including interleukin 1 beta (IL-1β), IL-5, IL-6, granulocyte colony-stimulating factor (G-CSF), KC (CXCL1), monocyte chemoattractant protein 1 (MCP-1, CCL2), macrophage inflammatory protein 1 alpha (MIP1α, CCL3), MIP1β (CCL4) and regulated on activation, normal T cell expressed and secreted (RANTES, CCL5) (Figure 5). Furthermore, more severe disease in male mice infected with MA-CCHFV was associated with significantly greater levels of IL-1β, IL-6, G-CSF, MCP-1, MIP1α, MIP1β, and RANTES compared to female infected mice (Figure 5). Notably, MCP-1 (CCL2) was rapidly upregulated in MA-CCHFV infected mice, with greater than 4500 pg/mL in the plasma of male and female mice by day 1 and strikingly, male mice had over 28,000 pg/mL in the plasma at day 3 PI (Figure 5). In agreement with little-to-no disease in Hoti-infected WT mice, these mice showed mostly transient increases in the cytokines evaluated (Figure 5—figure supplement 1). The complete profile of cytokines quantified by the 23-plex assay of mock, Hoti and MA-CCHFV infected mice is provided in Figure 5—figure supplement 1. Together these data demonstrate infection of WT mice with MA-CCHFV results in an inflammatory immune response.
 
-## Type I IFN is required for survival in MA-CCHFV infected mice
+![Figure 5.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig5-v2.jpg)
+
+**Figure 5.:** Eight-week-old male or female WT mice were infected with 10,000 TCID50 MA-CCHFV via the intraperitoneal (IP) route or mock-infected. At indicated timepoints, cytokine levels in the plasma was measured by 23-plex cytokine assay. Data shown as mean plus standard error. N = 6 mock male and female mice and seven to eight MA-CCHFV mice per sex per timepoint. Study performed twice. Statistical comparison performed with two-way ANOVA with Tukey’s multiple comparison test. p-Values between MA-CCHFV and mock-infected mice indicated with * for females, # for males and between MA-CCHFV-infected male and female mice with +. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Eight-week-old wild-type (WT) C57BL6/J mice were infected with 10,000 TCID50 of MA-CCHFV or Hoti or mock-infected. At indicated timepoints mice were euthanized and plasma cytokine levels evaluated with 23-plex cytokine assay. The complete cytokine profile is shown with data from main text Figure 5 shown again for comparison. Data shown as mean plus standard error. N = 6 mock male and female, 4 Hoti male or female, and 7–8 MA-CCHFV male or female per group per timepoint.
+
+### Type I IFN is required for survival in MA-CCHFV infected mice
 
 The ability of clinical isolates of CCHFV to cause disease in type I IFN-deficient but not IFN-sufficient mice suggests non-adapted strains of CCHFV are unable to overcome mouse type I IFN responses. We hypothesized that MA-CCHFV may be able to replicate and cause disease in WT mice by avoiding or antagonizing production of type I IFN in vivo. We evaluated plasma IFNα and IFNβ levels in adult mock-infected or mice infected with either CCHFV strain Hoti or MA-CCHFV. Compared to mock-infected mice, we found that infection of WT mice with CCHFV resulted in significantly increased plasma levels of IFNα by day 1 PI (Figure 6A) and that levels among male or female mice infected with either MA or non-adapted CCHFV were similar (p>0.05) (Figure 6A). Male mice infected with MA-CCHFV still had significantly elevated levels of IFNα at day 3 PI (Figure 6A). In contrast, all other groups had no significant IFNα response above our limit of detection (250 pg/mL) at day 3 PI or later (Figure 6A). Interestingly, male but not female mice infected with MA-CCHFV had significant amounts of IFNβ at day 3 PI (Figure 6B) suggesting MA-CCHFV infection in male mice elicits production of IFNα followed by IFNβ. Female mice infected with MA-CCHFV or mice infected with CCHFV Hoti had no significant IFNβ response at any timepoint evaluated following infection (Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig6-v2.jpg)
 
-**Figure 6.:** (A–B) Eight-week-old male or female wild-type (WT) mice were infected with 10,000 TCID50 of CCHFV Hoti, MA-CCHFV via the intraperitoneal (IP) route or mock-infected. At indicated timepoints, plasma IFNα (all subtypes) (A) or IFNβ (B) was quantified by ELISA. N = 4–8 per group. Study performed once for Hoti and twice for mock and MA-CCHFV. Data shown as mean plus standard deviation. Dashed line indicates limit of detection determined from manufacturer provided standard curve. Statistical comparison performed using two-way ANOVA with Tukey’s multiple comparison test. (C–D) Groups of 8-week-old male or female WT mice or 10- to 13-week-old Ifnar1 mice were infected with 10,000 TCID-/-50 of MA-CCHFV via the IP route. Mice were weighed daily (C) and monitored for survival (D). N = 4–5 per group. Study performed once. Data shown as mean plus standard deviation. Statistical comparison between Ifnar1 and respective sex WT mice performed using two-way ANOVA with Sidak’s multiple comparison test (-/-C) or Log-rank test with Bonferroni’s correction (D). *p<0.05, **p<0.01, ****p<0.0001.Figure 6—source data 1.
+**Figure 6.:** (A–B) Eight-week-old male or female wild-type (WT) mice were infected with 10,000 TCID50 of CCHFV Hoti, MA-CCHFV via the intraperitoneal (IP) route or mock-infected. At indicated timepoints, plasma IFNα (all subtypes) (A) or IFNβ (B) was quantified by ELISA. N = 4–8 per group. Study performed once for Hoti and twice for mock and MA-CCHFV. Data shown as mean plus standard deviation. Dashed line indicates limit of detection determined from manufacturer provided standard curve. Statistical comparison performed using two-way ANOVA with Tukey’s multiple comparison test. (C–D) Groups of 8-week-old male or female WT mice or 10- to 13-week-old Ifnar1-/- mice were infected with 10,000 TCID50 of MA-CCHFV via the IP route. Mice were weighed daily (C) and monitored for survival (D). N = 4–5 per group. Study performed once. Data shown as mean plus standard deviation. Statistical comparison between Ifnar1-/- and respective sex WT mice performed using two-way ANOVA with Sidak’s multiple comparison test (C) or Log-rank test with Bonferroni’s correction (D). *p<0.05, **p<0.01, ****p<0.0001.
 
 Since CCHFV induced a rapid type I IFN response in WT mice and we have previously demonstrated that Ifnar1-/- mice infected with CCHFV Hoti succumb to the infection (Hawman et al., 2018), we sought to determine if type I IFN was similarly required to survive MA-CCHFV infection. We infected Ifnar-/- mice with MA-CCHFV and found that male and female Ifnar1-/- mice infected with MA-CCHFV rapidly lost weight and succumbed to the infection with a mean-time-to-death (MTD) of day 6 and day 3 PI, respectively (Figure 6C,D). Cumulatively, these data demonstrate that MA-CCHFV infection induces similar early type I IFN responses as parental CCHFV strain Hoti in vivo and that type I IFN is necessary to survive acute MA-CCHFV infection.
 
-## MA-CCHFV causes lethal disease in mice deficient in adaptive immunity
+### MA-CCHFV causes lethal disease in mice deficient in adaptive immunity
 
 WT male mice infected with MA-CCHFV began recovering around day 7 PI (Figure 1A), about when early adaptive immune responses might be engaged against CCHFV (Hawman et al., 2019). When we evaluated CCHFV-specific antibody responses by ELISA, both male and female mice infected with MA-CCHFV developed significant IgM and IgG responses against CCHFV by day 6 PI (Figure 7A,B). We also evaluated T-cell responses against the CCHFV nucleoprotein (NP) by IFNγ ELISpot. By day 14 PI, both male and female mice infected with MA-CCHFV had significant T-cell responses against NP (Figure 7C). These data demonstrate that MA-CCHFV infection elicits both humoral and cellular immune responses against CCHFV.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63906/elife-63906-fig7-v2.jpg)
 
-**Figure 7.:** (A–C) Groups of 8-week-old wild-type (WT) mice were infected were infected with 10,000 TCID50 of MA-CCHFV via the intraperitoneal (IP) route or mock-infected. At indicated timepoints CCHFV-specific IgM (A) or IgG (B) in the plasma was measured by whole-virion ELISA. N = 5–6 per timepoint for mock and 7–8 per timepoint for MA-CCHFV. Study performed twice. Data shown as mean plus standard deviation. (C) At day 14 PI, T-cell responses in the spleen were measured by IFNγ ELISpot. Splenocytes were stimulated with overlapping peptide pools derived from the CCHFV NP (1 – 5), concanavalin A (Con A) or DMSO-vehicle alone. N = 2 for mock and four for MA-CCHFV infected. Study performed once. Data shown as mean plus standard deviation. (D and E) Groups of 8-week-old WT or Rag1 mice were infected with 10,000 TCID-/-50 of MA-CCHFV via the IP route. Mice were weighed daily (C) and monitored for survival (D). N = 5 per group. Study performed once. Data shown as mean plus standard deviation. Statistical comparison between Rag1 and respective sex WT mice performed using two-way ANOVA with Sidak’s multiple comparison test (-/-C) or Log-rank test with Bonferroni’s correction (D).Figure 7—source data 1.
+**Figure 7.:** (A–C) Groups of 8-week-old wild-type (WT) mice were infected were infected with 10,000 TCID50 of MA-CCHFV via the intraperitoneal (IP) route or mock-infected. At indicated timepoints CCHFV-specific IgM (A) or IgG (B) in the plasma was measured by whole-virion ELISA. N = 5–6 per timepoint for mock and 7–8 per timepoint for MA-CCHFV. Study performed twice. Data shown as mean plus standard deviation. (C) At day 14 PI, T-cell responses in the spleen were measured by IFNγ ELISpot. Splenocytes were stimulated with overlapping peptide pools derived from the CCHFV NP (1 – 5), concanavalin A (Con A) or DMSO-vehicle alone. N = 2 for mock and four for MA-CCHFV infected. Study performed once. Data shown as mean plus standard deviation. (D and E) Groups of 8-week-old WT or Rag1-/- mice were infected with 10,000 TCID50 of MA-CCHFV via the IP route. Mice were weighed daily (C) and monitored for survival (D). N = 5 per group. Study performed once. Data shown as mean plus standard deviation. Statistical comparison between Rag1-/- and respective sex WT mice performed using two-way ANOVA with Sidak’s multiple comparison test (C) or Log-rank test with Bonferroni’s correction (D).
 
 To determine the contribution of these responses to recovery from MA-CCHFV infection, we infected 8-week-old WT or B- and T-cell-deficient Rag1-/- mice with MA-CCHFV. Male WT or Rag1-/- mice infected with MA-CCHFV showed similar weight loss through day 5 PI but Rag1-/- mice exhibited significantly greater weight loss at day 6 PI and later (Figure 7D). Whereas male WT mice began to recover on day 7, infected Rag1-/- mice continued to decline and all succumbed to the infection with an MTD of day 9 PI (Figure 7E). Interestingly, the one male Rag1-/- mouse that succumbed on day 10 was found to have ataxia and hindlimb weakness just prior to euthanasia suggesting possible neurological involvement. Female Rag1-/- mice infected with MA-CCHFV began exhibiting significantly greater weight loss than WT mice by day 6 PI (Figure 7D) and all succumbed to the infection with an MTD of day 7 PI (Figure 7E). These data indicate that both male and female mice require adaptive immunity to survive MA-CCHFV infection.
 
-## Sequencing of MA-CCHFV
+### Sequencing of MA-CCHFV
 
 We sequenced our stock of parental CCHFV Hoti, MA-CCHFV and intermediate variants at passages 4 and 9 to determine what mutations had accumulated in the viral genome during passaging in mice (Table 1). CCHFV is a negative-sense RNA virus with three genomic segments, small (S), medium (M), and large (L). Sequencing identified mutations in all three viral segments of MA-CCHFV (Table 1). S encodes for NP and a small non-structural protein (NSs) in an opposite sense open reading frame (Zivcec et al., 2016). Two mutations in the S segment were identified: mutation at nucleotide (nt) A739G (Hoti > MA-CCHFV) resulting in amino acid (aa) change NP I228M and nt A806G resulting in aa NP K251E (Table 1). Mutation nt A806G also results in an aa F26S coding change of the CCHFV NSs. Conversely, the nt A709G mutation does not result in a coding change in the NSs protein (Table 1).
+
+**Table 1.**
+ Mutations identified in MA-CCHFV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Mutant Frequency (%)</th>
+      <th>% AA Conservation among</th>
+    </tr>
+    <tr>
+      <th>Segment</th>
+      <th>SNP (Hoti&gt;Mutant)</th>
+      <th>Coding Change (Hoti&gt;Mutant)</th>
+      <th>Domain</th>
+      <th>Passage 4</th>
+      <th>Passage 9</th>
+      <th>MA-CCHFV</th>
+      <th>CCHFV Strains</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">S</td>
+      <td>A739G</td>
+      <td>NP I228M</td>
+      <td>Arm</td>
+      <td>93</td>
+      <td>87</td>
+      <td>88</td>
+      <td>100 (I)</td>
+    </tr>
+    <tr>
+      <td>A806G</td>
+      <td>NP K251E and NSs F26S</td>
+      <td>Arm and Unknown</td>
+      <td>95</td>
+      <td>100</td>
+      <td>99</td>
+      <td>NP 100 (K); NSs 88 (L), 12 (F)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">M</td>
+      <td>A1502G</td>
+      <td>R475R</td>
+      <td>GP38</td>
+      <td>3</td>
+      <td>35</td>
+      <td>54</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2671A</td>
+      <td>C865Y</td>
+      <td>NSm</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100 (C)</td>
+    </tr>
+    <tr>
+      <td>T4068C</td>
+      <td>L1331L</td>
+      <td>Gc</td>
+      <td>98</td>
+      <td>100</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">L</td>
+      <td>G6097A</td>
+      <td>S2007N</td>
+      <td>Unknown</td>
+      <td>83</td>
+      <td>97</td>
+      <td>98</td>
+      <td>71 (S), 29 (N)</td>
+    </tr>
+    <tr>
+      <td>C8135T</td>
+      <td>V2686V</td>
+      <td>RdRp</td>
+      <td>83</td>
+      <td>95</td>
+      <td>96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C9919T</td>
+      <td>P3281L</td>
+      <td>Unknown</td>
+      <td>85</td>
+      <td>96</td>
+      <td>96</td>
+      <td>100 (P)</td>
+    </tr>
+    <tr>
+      <td>G11618A</td>
+      <td>E3847E</td>
+      <td>Unknown</td>
+      <td>85</td>
+      <td>98</td>
+      <td>97</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 The M segment encodes the glycoprotein precursor (GPC) that is proteolytically processed to produce a heavily glycosylated mucin-like domain (MLD), GP38 accessory protein, the envelope glycoproteins Gn and Gc and the medium non-structural protein NSm (Zivcec et al., 2016). Three mutations were identified in the CCHFV M segment. Amino acid change C865Y was identified in the NSm protein (Table 1). In addition, two synonymous nucleotide changes were identified, nt A1502G and nt T4068C, located in the GP38 accessory protein and Gc glycoprotein, respectively.
 
@@ -129,38 +282,69 @@ In conclusion, MA-CCHFV represents a significant advancement for research into C
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>Hoti</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Virus strain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MA-CCHFV</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Virus strain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Rag2-/- and Rag1-/- mice on the C57BL/6J background (stock #008449, stock #002216 respectively), wild-type C57BL/6J (stock #000664), BALBc/J (stock #000651), and 129S1 (stock #002448) were purchased from Jackson Laboratories. C57BL6/NCr (strain code 027) and outbred CD1 mice (strain code 022) were purchased from Charles River Laboratories. Ifnar1-/- mice on the C57BL/6J background were from an in-house breeding colony. Mice were randomly assigned to study groups. Unless otherwise indicated, mice were all 6–8 weeks of age at time of infection except for the first passage in wild-type mice (passage 10) which utilized mice 3 weeks of age. Mice were humanely euthanized according to the following criteria: ataxia, extreme lethargy (animal is unresponsive to touch), bloody discharge from nose, mouth, rectum or urogenital area, tachypnea, dyspnea or paralysis of the limbs. Although animals were comprehensively evaluated for the above signs, animals that succumbed following MA-CCHFV infection were typically euthanized for extreme lethargy and dyspnea and in one mouse, ataxia was also present. For survival analysis, mice euthanized for severe disease were recorded as having succumbed +1 day to day of euthanasia. For ID50 calculations, mice with detectable anti-CCHFV Ig (A405nm >0.2) at a 1:400 dilution of serum were considered productively infected and ID50 calculated using the Reed and Muench, 1938 method.
 
-## Tissue passaging
+### Tissue passaging
 
 Mice were humanely euthanized, and piece of liver collected into a tube. A steel bead and 1 mL of L-15 media (ATCC) supplemented with 10% fetal bovine serum (FBS) and penicillin/streptomycin added. Tissue was homogenized at 30 hz for 1 min in a TissueLyser (Qiagen) then briefly spun at maximum RPM in a benchtop centrifuge to pellet large debris. Clarified tissue homogenate was then innoculated into naive mice via the IP route.
 
-## Virus stocks and deep sequencing
+### Virus stocks and deep sequencing
 
 Parental strain CCHFV Hoti was grown, titered, and sequenced as previously described (Hawman et al., 2018; Haddock et al., 2018a). MA-CCHFV or intermediate variants were grown by inoculation of clarified liver tissue homogenate onto an SW13 cell monolayer and supernatant harvested 48 hr later. Stocks were generated on SW13 cells purchased from the ATCC and used at passage 11. Cell identity was not authenticated. Supernatant was clarified, aliquoted, and titered by SW13 median tissue culture infectious dose (TCID50) assay. Virus stocks were sequenced with Illumina MiSeq-based deep sequencing to exclude contamination, including mycoplasma or other viral pathogens, and to identify mutations present. The sequence of MA-CCHFV has been deposited to Genbank (Accession #s MW058028 – MW058030). Mutations in mouse passaged CCHFV were identified by comparison to parental strain CCHFV Hoti sequenced in parallel. Minimum read depth at any mutation identified in the MA-CCHFV stock was 152 reads. For sequence comparison, we compared MA-CCHFV sequence to Afghan09 (Genbank Accession #s: HM452305, HM452306, HM452307), ArD15786 (DQ211614, DQ211627, DQ211640), IbAr10200 (MH483987, MH483988, MH483989), Turkey 2004 (KY362515, KY362517, KY325619), Oman (KY362514, KY362516, KY362518), UG3010 (DQ211650, DQ211637, DQ211624), and Hoti (MH483984, MH483985, MH483986).
 
-## Blood chemistry
+### Blood chemistry
 
 At time of euthanasia, whole blood was collected into lithium heparin treated tubes and blood chemistry analyzed with Preventive Care Profile Plus disks on Vetscan two analyzers (Abaxis). The complete blood chemistry data is available in the supplemental materials.
 
-## Cytokine analysis
+### Cytokine analysis
 
 At time of euthanasia, whole blood was collected into lithium heparin treated tubes (BD) via cardiac puncture. Plasma was separated by centrifugation and irradiated according to approved procedures to inactivate CCHFV. Plasma cytokine levels were analyzed by 23-plex mouse cytokine assay according to manufacturer’s instructions (Biorad). Plasma IFNα (all sub-types) and IFNβ levels were quantified in 1:10 dilutions of plasma by ELISA according to manufacturer’s instructions (PBL Assay).
 
-## qRT-PCR
+### qRT-PCR
 
 RNA from mouse plasma was isolated using Qiamp RNA-mini isolation kit (Qiagen) and RNA from tissues isolated using the RNeasy mini isolation kit (Qiagen). Viral loads were quantified by qRT-PCR as follows: primers and probe specific for the CCHFV S segment: Forward: 5’- TCTACATGCACCCTGCTGTG, Reverse: 5’- AGCGTCATCAGGATTGGCAA and probe 5’- TGGGTGTCTGCTTTGGAACA were used in a one-step qRT-PCR reaction with either Quantifast reagents (Qiagen) for tissue RNA or LightCycler 480 RNA Master Hydrolysis Probes (Roche) for plasma RNA samples. Probe was labeled with a 5’ 6-FAM, ZEN internal quencher and 3’ Iowa Black quencher. Primers and probes were purchased from Integrated DNA Technologies. Reactions were run on a Quantstudio 3 or 5 instrument (ThermoFisher). Cycling conditions for Quantifast reagents were: 50°C for 10 min, 95°C for 5 min and 40 cycles of 95°C for 10 s, 60°C for 30 s. Cycling conditions for LightCycler 480 reagents were 61°C for 3 min, 95°C for 30 s and 45 cycles of 95°C for 10 s, 60°C for 30 s and 72°C for 1 s. An in vitro transcribed RNA standard curve was generated by T7 runoff transcripts of the CCHFV S segment and included in every run.
 
-## ELISA
+### ELISA
 
 An ELISA to detect anti-CCHFV Ig was performed as previously described (Hawman et al., 2019) with an anti-mouse Ig detection antibody (Southern Biotech) to detect all immunoglobulin isotypes or anti-mouse IgG or IgM (Southern Biotech) to measure specific isotypes.
 
-## IFNγ ELISpot
+### IFNγ ELISpot
 
 An IFNγ ELISpot on splenocytes stimulated with peptides derived from the CCHFV NP was performed as before (Hawman et al., 2019).
 
-## Histology and IHC
+### Histology and IHC
 
 Tissues were fixed in 10% neutral buffered formalin with two changes for a minimum of 7 days. Tissues were placed in cassettes and processed with a Sakura VIP-6. Tissue Tek on a 12 hr automated schedule, using a graded series of ethanol, xylene, and PureAffin (Cancer Diagnostics). Embedded tissues were sectioned at 5 μm and dried overnight at 42°C prior to staining. Specific anti-CCHF immunoreactivity was detected using a rabbit anti-CCHF NP (IBT Bioservices) at a 1:2000 dilution as the primary antibody and Vector Laboratories ImPRESS-VR anti-rabbit IgG polymer kit (catalog no. MP-6401) neat as the secondary antibody. The tissues were processed for immunohistochemistry using the Ventana Ultra automated stainer using the Roche Tissue Diagnostics Discovery ChromoMap DAB detection kit (catalog no. 760–159). Tissue sections were scored by certified pathologists who were blinded to study groups.

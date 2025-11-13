@@ -28,11 +28,59 @@ The impact of TCR signal strength on CD4 T cell differentiation in vivo has been
 
 ## Results
 
-## Generation and viral fitness of GP61 LCMV variants
+### Generation and viral fitness of GP61 LCMV variants
 
 To generate recombinant LCMV variants, we first screened a panel of altered peptide ligands (APLs) with single amino acid mutations in the LCMV derived GP61 peptide. Using the early activation marker CD69 as a proxy for TCR signal strength, we identified 75 APLs for the SMARTA TCR tg line (Figure 1—figure supplement 1, Figure 1A,B, Supplementary file 1). For several of these APLs, we additionally assessed CD69, CD25, and IRF4 expression in the presence of interferon (IFN) type-I blocking antibody to ensure that T cell activation was driven by TCR signaling and not secondarily through the IFN-receptor (Figure 1—figure supplement 2; Shiow et al., 2006). Blocking interferon-a receptor (IFNAR) had no effect on CD69 expression at 6 hr after activation, while a CD25 and IRF4 were modestly decreased in SMARTA T cells activated with low-dose APL, suggesting that the activation hierarchy of these APLs is mainly a result of differences in TCR signal strength. Next, using an MHCII-binding prediction tool (http://tools.iedb.org/mhcii/), we selected 12 of these APLs with favorable MHCII-binding predictions that covered a wide range of T cell activation potential to generate recombinant variant viruses using site-directed PCR mutagenesis (Flatz et al., 2006). Five APL-encoding sequences were successfully introduced into the genomes of both LCMV Armstrong (Armstrong variants) and Clone-13 (Clone-13 variants), the latter of which contains a mutation in the polymerase gene L that enhances the replicative capacity of the virus, enabling viral persistence (Bergthaler et al., 2010; Sullivan et al., 2011). To exclude a potential impact of differential glycoprotein-mediated viral tropism on CD4 T cell differentiation, we equipped both the Armstrong- and Clone-13-based viruses with the identical glycoprotein of the WE strain and introduced the epitope mutations therein (resulting viruses referred to as rLCMV Armstrong and rLCMV Clone-13, respectively) (Bergthaler et al., 2007). Of these viruses, two variants, V71S and Y72F (EC50 ~0.1 and 1 µM, respectively) demonstrated comparable viral fitness in vitro and in vivo, with all three Clone-13 variants persisting in the blood, spleen, and kidney throughout the 21-day observation period (Figure 1C–E). To additionally rule out any contribution of endogenous CD4 T cells to viral control, we also determined the viral load in DBA/2 mice which are unable to present the GP61 epitope. Here, again we observed comparable viral load across all organs at 21 days post infection and in the blood over time (Figure 1—figure supplement 3). Finally, as GP67-77, the minimal binding epitope of GP61, can bind to MHC in different registers, we considered the possibility that V71 and Y72 might act as MHC anchor residues as opposed to TCR contact residues (Homann et al., 2007). To control for this, we performed an out-competition assay with invariant chain knockout splenocytes (Liu et al., 2002). Here, we observed comparable binding of APL peptides to MHC-II, indicating that reduced activation of SMARTA T cells is unlikely to be a result of V71 and Y72 acting as crucial MHC anchor residues (Figure 1F). Taken together, these data demonstrate the development of a novel tool to examine the impact of TCR signal strength on SMARTA T cells activated by either acute or chronic viral infection.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme of GP61 wt and altered peptide ligand (APL) sequences with mutations highlighted in red ordered hierarchically according to T cell receptor (TCR) signal strength. (B) Peptide dose–activation curves of overnight cultured SMARTA cells with peptide pulsed splenocytes using the percentage of CD69+ SMARTA cells as a readout for activation. EC50 values are ~5 nM for GP61 wt, ~0.1 µM for V71S, and ~1 µM for Y72F. (C) In vitro growth kinetics depicting the viral load in the culture medium (focus forming units [FFU]/ml) of GP61 wt or V71S and Y72F variants of Armstrong (left) and Clone-13 (right) variant infection on BHK21 cells over time. Data are displayed as mean ± SD. (D) Early splenic viral load day 3 post infection (p.i.) in Armstrong variants. Bars represent the mean and symbols represent individual mice. (E) Viral load (FFU) in indicated organs per gram tissue over time in C57BL/6 mice. The dotted line represents the limit of detection. Data are displayed as mean ± SEM of 7–10 samples. (F) Peptide dose–response curves depicting the out-competition of the GP61 FITC signal by unlabeled GP61 wt or APLs on B220+ B cells. Data are displayed as mean ± SD of two to three technical replicates. Data represent one of n = 2 independent experiments (B, D, F) or pooled data from n = 2 independent experiments (C, E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Peptide dose–activation curves of overnight cultured SMARTA cells with peptide pulsed splenocytes using the percentage of CD69+ SMARTA cells as a readout for activation. Data represent one of n = 2 independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Naïve SMARTA T cells were cultured in the presence of splenocytes and various concentrations of GP61 wt and altered peptide ligands (APLs). Proportion of CD69+ SMARTA cells 6 hr after stimulation (left), mean fluorescence intensity (MFI) of IRF4 (middle), and % of CD25+ SMARTA cells 24 hr after stimulation in the presence of anti-IFNAR antibody or isotype control (right). Data are representative of n = 2 independent experiments.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Viral load (focus forming units [FFU]) in indicated organs per gram tissue 21 days post infection and in blood over time in DBA/2 mice. Data points represent the mean ± SEM of 4–10 samples pooled from n = 1–2 independent experiments. The dotted line represents the limit of detection.
+
 To assess the impact of TCR signal strength during acute viral infection, SMARTA T cells were transferred into congenic recipients followed by infection with rLCMV Armstrong GP61 wt, V71S, or Y72F. All LCMV variants were capable of inducing SMARTA T cell expansion at day 10 post infection (p.i.), and a direct correlation between TCR signal strength and the number of SMARTA T cells recovered was observed (Figure 2A). In contrast, expansion of endogenous LCMV nucleoprotein (NP)-specific as well as antigen-experienced CD44+ T cells was similar across all three viral strains (Figure 2A). The expansion hierarchy among the viruses was maintained >30 days after LCMV infection (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-v1.jpg)
+
+**Figure 2.:** (A) Number of SMARTA (left), NP309+ (middle), and CD44+ cells (right) 10 days (top) or >30 days (bottom) post infection (p.i.). (B) Histograms (top) and relative mean fluorescence intensity (MFI) (bottom) of indicated phenotypic markers in the SMARTA compartment 10 days p.i. (C) Identification of Th1 (Ly6ChiPSGL1hi) and T follicular helper (Tfh) (Ly6CloPSGL1lo) subset in the SMARTA compartment by flow cytometry 10 days p.i. (D) Proportion of Tfh (left), Th1 cells (middle), and the Th1:Tfh ratio (right) of the SMARTA compartment 10 days p.i. (E) Histograms (left) and relative MFI (right) of Bcl6 and Tbet expression in the SMARTA compartment 10 days p.i. (F) Bcl6 and Tbet MFI in SMARTA Th1 and Tfh subsets. Data are pooled from n = 2 independent experiments with seven to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Number of SMARTA (left) and CD44+ cells (right) 4 days p.i. Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Histograms (left) and proportion of CD25+ SMARTA T cells (right) 4 days post infection (p.i.). Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Identification (left), proportion (middle), and quantification (right) of GL7+FAS+ B cells 4 days p.i. Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Proportion of T follicular helper (Tfh) (left), Th1 cells (middle), and the Th1:Tfh ratio (right) of the NP309+ compartment 10 days post infection (p.i.). Data are pooled from n = 2 independent experiments with eight to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Identification and proportion of PD1hi FR4hi Tfh cells in the SMARTA compartment by flow cytometry. Data are pooled from n = 2 independent experiments with eight to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Relative mean fluorescence intensity (MFI) of Bcl6 and Tbet expression in the Ly6Clo Th1 SMARTA compartment. Data are pooled from n = 2 independent experiments with eight to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** Identification and proportion of Ly6Clo Th1 (Ly6CloPSGL1hi) in the SMARTA compartment by flow cytometry. Data are pooled from n = 2 independent experiments with eight to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
 
 We next examined the phenotype of SMARTA T cells, focusing our analyses on effector cells due to the impaired generation of Tfh memory by SMARTA T cells (Künzli et al., 2020). As the Y72F variant induced very few effector cells, we excluded this strain from further investigation. Consistent with previous reports, strong T cell stimulation induced a larger proportion of Ly6c+ Th1 effectors, whereas the proportion of Tfh effectors was decreased (Figure 2B–D; Keck et al., 2014; Krishnamoorthy et al., 2017; Tubo et al., 2013; Ploquin et al., 2011). Differences in SMARTA T cell expansion and the proportion of CD25+ Th1 precursor cells were observed as early as day 4 after infection, preceding germinal center responses in both viruses (Figure 2—figure supplements 1–3).
 
@@ -40,11 +88,79 @@ In contrast, the ratio of Th1 and Tfh effector cells generated by host NP-specif
 
 In contrast to acute LCMV infection, SMARTA T cells responding to chronic LCMV preferentially adopt a Tfh effector phenotype (Fahey et al., 2011; Crawford et al., 2014). The impact of TCR signal strength within this context has not been determined, although affinity diversity among endogenous T cells is reportedly similar between acute and chronic LCMV infection (Andargachew et al., 2018). To directly assess the impact of TCR signal strength during chronic infection, we transferred SMARTA T cells into congenic recipients followed by infection with rLCMV Clone-13 expressing either GP61 wt, V71S, or Y72F. As an additional control, we infected mice with rLCMV Armstrong which induced a similar expansion of SMARTA, NP-specific, and CD4+CD44+ T cells as its Clone-13 counterpart (Figure 3—figure supplement 1). Consistent with the results from acute infection, SMARTA T cell numbers at day 7 p.i. positively correlated with TCR signal strength, while the expansion of NP-specific and CD4+CD44+ T cells was similar in response to all three Clone-13 variants (Figure 3A). Importantly, infection with rLCMV Clone-13 Y72F induced approximately twofold more SMARTA T cell effectors compared to acute infection, allowing for a thorough investigation of T cells responding to this very weak potency variant (Figure 3A, Figure 2A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-v1.jpg)
+
+**Figure 3.:** (A) Number of SMARTA (left), NP309+ (middle), and CD44+ cells (right). (B) Histograms (top) and relative mean fluorescence intensity (MFI) (bottom) of indicated phenotypic markers in the SMARTA compartment. (C) Identification of Th1 (Ly6ChiPSGL1hi) and Tfh (Ly6CloPSGL1lo) subset in the SMARTA compartment by flow cytometry. (D) Proportion of Tfh (left), Th1 cells (middle), and the Th1:Tfh ratio (right) of the SMARTA compartment. Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Spleens were harvested 7 days after infection with LCMV Clone-13 variants. (A) Number of SMARTA (left), NP309+ (middle), and CD44+ cells (right). Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Spleens were harvested 7 days after infection with LCMV Clone-13 variants. (Left panel) Identification of Th1 (Ly6ChiPSGL1hi) and Tfh (Ly6CloPSGL1lo) subset in the SMARTA compartment by flow cytometry. (Right panel) Proportion of Tfh (left), Th1 cells (middle), and the Th1:Tfh ratio (right) of the SMARTA compartment. Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Spleens were harvested 7 days after infection with LCMV Clone-13 variants. Identification and proportion of Ly6Clo Th1 (Ly6CloPSGL1hi) in the SMARTA compartment by flow cytometry. Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Viral load in kidneys (FFU/g) 7 days post infection. Data represent one of n = 2 independent experiments with four samples per group. Bars represent the mean and symbols represent individual mice.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Spleens were harvested 7 days after infection with LCMV Clone-13 variants. Proportion of T follicular helper (Tfh) (left), Th1 cells (middle), and the Th1:Tfh ratio (right) of the NP309+ compartment. Data are pooled from n = 2 independent experiments with seven to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Number of SMARTA cells at day 4 (left) and 14 (right) p.i. Data are pooled from n = 2 independent experiments with six to nine samples per group. Bars represent the mean and symbols represent individual mice.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** Histograms and proportion of CD25+ SMARTA T cells (far left and left) or Ly6C+ cells (right and far right) 4 days post infection. Data are pooled from n = 2 independent experiments with seven to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp8-v1.jpg)
+
+**Figure 3—figure supplement 8.:** Identification and proportion of Th1 (Ly6ChiPSGL1hi) and T follicular helper (Tfh) (Ly6CloPSGL1lo) subset and Th1:Tfh ratio in the SMARTA compartment 14 days p.i. Data are pooled from n = 2 independent experiments with six to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp9-v1.jpg)
+
+**Figure 3—figure supplement 9.:** Identification (left), proportion (middle), and quantification (right) of GL7+FAS+ B cells 4 days post infection (p.i.) (top row) or 14 days p.i. (bottom row). Cells are pregated for B220+dump-. Data are pooled from n = 2 independent experiments with six to eight samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 3—figure supplement 10.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig3-figsupp10-v1.jpg)
+
+**Figure 3—figure supplement 10.:** (Left) Experimental setup. Number of SMARTA cells (middle) and proportion of Th1 (Ly6ChiPSGL1hi) and T follicular helper (Tfh) (Ly6CloPSGL1lo) subset and Th1:Tfh ratio in the SMARTA compartment (right) from the spleen 7 days post infection. Data are pooled from n = 2 independent experiments with eight to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by unpaired two-tailed Student’s t-tests.
+
 With respect to T cell phenotype, strong TCR stimulation during rLCMV Clone-13 GP61 wt infection shifted the balance toward Tfh effector cell differentiation when compared to strong TCR stimulation in the context of acute infection (Figure 3—figure supplement 2). Unexpectedly, and in contrast to the Armstrong variants, weaker TCR signaling during Clone-13 variant infection resulted in increased proportions of both PSGL1hiLy6chi and PSGL1hiLy6clo Th1 cells with the weakest variant, Y72F, generating the highest proportion of Th1 effectors (Figure 3B–D, Figure 3—figure supplement 3). The shift toward Th1 effectors in response to lower TCR signal strength is unlikely to be due to differences in antigen load as all variants sustained high viral titers in the kidneys at day 7 p.i. (Figure 3—figure supplement 4). In addition, although the viral titer of intermediate potency variant V71S was slightly decreased compared to GP61 wt and Y72F infection, NP-specific CD4 T cells exhibited a similar ratio of Th1 to Tfh effectors across all three infections (Figure 3—figure supplement 5). Similar to LCMV Armstrong infection, stronger Th1 differentiation was also observed at early time points after infection with Clone-13 variant viruses although no differences in germinal center B cell kinetics were observed (Figure 3—figure supplements 6–9). In contrast to LCMV Armstrong infection, however, CD25 expression was only weakly and uniformly expressed in all Clone-13 variants at day 4 after infection (Figure 3—figure supplement 10).
 
 To determine whether the differential impact of TCR signal strength in Clone-13 infection might be partially due to antigen dose, we next examined the impact of lowering the antigen load while maintaining the inflammatory environment, mixing Clone-13 GP61 wt or Clone-13 Y72F at a 1:10 ratio with an rLCMV Clone-13 virus lacking the GP66 epitope (ΔGP66). In response to lowered antigen load, strongly stimulated SMARTA T cells expanded less and generated a higher proportion of Th1 effectors at day 7 p.i. while the expansion and differentiation outcome of weakly activated T cells was antigen load independent (Figure 3—figure supplement 10). Taken together, these data reveal that TCR signal strength differentially modulates T cell fate acquisition according to the infectious context and that biased Tfh differentiation during Clone-13 GP61 wt infection may be at least partially due to high antigen load.
 
 During Clone-13 infection, T cells start to upregulate inhibitory surface markers associated with chronic activation, a state often referred to as ‘exhaustion’ (Crawford et al., 2014; Dong et al., 2019; Mou et al., 2013; Jean Bosco et al., 2018). To understand if TCR signal strength impacts the expression of these markers, we analyzed SMARTA T cells responding to Clone-13 GP61 wt and variant viruses at day 14. T cells responding to strong TCR signals expressed the highest levels of both PD1 and Lag3, two well characterized co-inhibitory receptors (Figure 4A–B; Crawford et al., 2014; Dong et al., 2019). SMARTA T cells co-expressing both PD1 and Lag3 were most abundant following Clone-13 GP61 wt infection and decreased in response to Clone-13 variant infection (Figure 4C–D). Although the viral load was decreased in Clone-13 variant infections at this time point, the basal activation of CD4+CD44+ T cells was equivalent across all three strains and clearly above the recombinant LCMV Armstrong control (Figure 4—figure supplements 1–2). Next, we examined the expression of TOX, a transcription factor involved in the adaptation of CD8 T cells to chronic infection (Yao et al., 2019; Alfei et al., 2019; Khan et al., 2019; Scott et al., 2019; Seo et al., 2019). In response to acute infection, SMARTA Tfh cells expressed higher levels of TOX compared to Th1 cells, consistent with an earlier study highlighting the importance of TOX for Tfh cell development (Figure 4—figure supplement 3; Xu et al., 2019). In contrast, TOX expression during rLCMV Clone-13 wt infection was most highly upregulated by Th1 effectors (Figure 4—figure supplement 3). In line with the expression of PD1 and Lag3, TOX was decreased on SMARTA T cells responding to rLCMV Clone-13 variant viruses, despite being comparably induced on CD4+CD44+ T cells (Figure 4E, Figure 4—figure supplement 4). TOX was recently demonstrated to be important for the survival of stem-like TCF1+ CD8 T cells that accumulate during chronic LCMV (Khan et al., 2019; Im et al., 2016; Utzschneider et al., 2016). Given the transcriptional similarities of TCF1+ CD8 T cells and Tfh cells, we wondered if TCF1 would be similarly regulated by TCR signal strength following Clone-13 variant infection (Vella et al., 2017). Here we observed that unlike TOX expression, TCF1 is similarly expressed by T cells responding to all three rLCMV Clone-13 variants (Figure 4F, Figure 4—figure supplement 5), indicating that TCF1 expression is likely to be maintained independently of TCR signals.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig4-v1.jpg)
+
+**Figure 4.:** (A) Histograms (left) and relative mean fluorescence intensity (MFI) (right) of PD1 in the total SMARTA compartment (left) or SMARTA Th1 and T follicular helper (Tfh) subsets (right). (B) Histograms (left) and relative MFI (right) of Lag3 in the SMARTA compartment. (C) Identification of PD1+Lag3+ SMARTA cells by flow cytometry compared to naïve CD62L+ CD44– CD4 T cells from an uninfected mouse. (D) Quantification of PD1+Lag3+ SMARTA cells in the SMARTA (top) or CD44+ (bottom) compartment. (E) Histogram (left) and relative MFI (right) of TOX in the SMARTA compartment. (F) Histogram (left) and relative MFI (right) of TCF1 in the SMARTA compartment. Data are pooled from n = 2 independent experiments with six to nine samples per group. Bars represent the mean and symbols represent individual mice. Significance was determined by one-way ANOVA followed by Tukey’s post-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Viral load in kidneys (FFU/kidney) 14 days post infection. Data represents one of n = 2 independent experiments with four to five samples per group. Bars represent the mean and symbols represent individual mice.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Spleens were harvested 14 days after infection with lymphocytic choriomeningitis virus (LCMV) Clone-13-based variants. Relative mean fluorescence intensity (MFI) (right) of PD1 and Lag3 in the CD44+ compartment. Data are pooled from n = 2 independent experiments with six to nine samples per group. Bars represent the mean and symbols represent individual mice.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Spleens were harvested 14 days after infection with lymphocytic choriomeningitis virus (LCMV) Clone-13-based variants. Relative mean fluorescence intensity (MFI) of TOX in SMARTA Th1 and Tfh. Data are pooled from n = 2 independent experiments with six to nine samples per group. Symbols represent individual mice. Significance was determined by paired two-tailed Student’s t-tests.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Spleens were harvested 14 days after infection with LCMV Clone-13-based variants. Relative mean fluorescence intensity (MFI) (right) of TOX in the CD44+ compartment. Data are pooled from n = 2 independent experiments with six to nine samples per group. Bars represent the mean and symbols represent individual mice.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/61869/elife-61869-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Spleens were harvested 14 days after infection with lymphocytic choriomeningitis virus (LCMV) Clone-13-based variants. Relative mean fluorescence intensity (MFI) of TCF1 in the SMARTA Th1 and T follicular helper (Tfh) subsets. Data are pooled from n = 2 independent experiments with six to nine samples per group. Bars represent the mean and symbols represent individual mice.
 
 The results of this study highlight the differential impact of TCR signal strength in shaping CD4 T cell fate according to the infection context. By systematically comparing the differentiation of TCR tg T cells responding to variant ligands in two distinct infection models, we demonstrate that the impact of TCR signal strength is heavily dependent on the infection specific parameters such as antigen load and inflammation. It should be noted that the rLCMV Clone-13 used in our study, which expresses WE-GP, tends to establish viremia for 20–30 days, which is somewhat less extensive than commonly observed for LCMV Clone-13 (Fallet et al., 2016; Sommerstein et al., 2015). Unspecified differences between rLCMV Clone-13 and LCMV Clone-13 might also account for some of the viral load differences we observed in the blood and kidney compared to the spleen. Although the duration of wild type Clone-13 viremia can vary considerably between animal facilities, it is possible that the Th bias we report here might have been even more pronounced if a more persistent LCMV variant had been used.
 
@@ -56,38 +172,38 @@ Finally, the ability of weakly activated T cells to maintain a higher proportion
 
 ## Materials and methods
 
-## Viruses
+### Viruses
 
 Virus rescue was performed as described previously using the pol-I/pol-II-driven reverse genetic system for LCMV (Flatz et al., 2006). Single amino acids changes of the GP61 epitope were introduced by site-directed mutagenesis of the previously described pI-S-WE-GP rescue plasmid (Flatz et al., 2006). This plasmid encodes the NP of the LCMV Armstrong strain on cis with the glycoprotein (GP) of LCMV WE. In addition, the LCMV Armstrong specific D63K mutation was introduced into the GP61-coding sequence of the WE-GP gene matching the LCMV Armstrong/Clone-13 amino acid sequence of the GP61 peptides employed in the T cell activation assay. The resulting S-rescue plasmids were combined with a plasmid expressing either the Armstrong or the Clone-13 L segment in order to generate acute and chronic variants, respectively. The presence of the desired mutations in the viral genomes was verified by sanger sequencing of (reverse transcription polymerase chain reaction) RT-PCR amplicons generated with the OneStep RT-PCR-kit (Qiagen) using LCMV WE GP-specific primers (GATTGCGCTTTCCTCTAGATC and TCAGCGTCTTTTCCAGATAG). Viral RNA was extracted from cell culture supernatants using the Direct-zol RNA MicroPrep kit (Zymo Research). Virus titer was determined by immunofocus assay as described on NIH/3T3 cells (Battegay, 1993). To determine viral load in organs, tissues were homogenized with the TissueLyser II (Qiagen) for 2 × 1 min at 30 Hz. Recombinant LCMV Cl13 WE-GP ΔGP66 was generated with the S-plasmid from a previous publication combined with the Clone-13 L segment (Recher et al., 2004).
 
-## Viral growth kinetics
+### Viral growth kinetics
 
 To determine viral replication capacities, BHK21 cells were seeded 24 hr prior to infection with amultiplicity of infection of 0.01. Supernatant was collected at indicated time points and replaced with fresh culture medium.
 
-## Mice and animal experiments
+### Mice and animal experiments
 
 Mice were bred and housed under specific pathogen-free conditions at the University Hospital of Basel according to the animal protection law in Switzerland. For all experiments, male or female sex-matched mice were used that were at least 6 weeks old at the time point of infection. The following mouse strains were used: C57BL/6 CD45.2, SMARTA Ly5.1, CD74–/–, DBA/2. Mice were injected with intraperitoneal injection of 2 × 105 FFU for Armstrong variants or via intravenous injection of 2 × 106 FFU for Clone-13 variants.
 
-## NICD-protector
+### NICD-protector
 
 Mice were intravenously injected with 12.5 μg homemade ARTC2.2-blocking nanobody s+16 (NICD-protector) at least 15 min prior to organ harvest.
 
-## Adoptive cell transfer
+### Adoptive cell transfer
 
 Single-cell suspensions of cells were prepared from lymph nodes by mashing and filtering through a 100 μm strainer. Naïve Smarta cells were enriched using Naïve CD4 T cell isolation kit (StemCell). 1 × 104 SMARTA Ly5.1 (2 × 105 SMARTA cells for day 4 experiments) cells were adoptively transferred into Ly5.2 recipients via intravenous injection as previously described (Moon et al., 2009).
 
-## Flow cytometry
+### Flow cytometry
 
 Spleens were removed and single-cell suspensions were generated by mashing and filtering the spleens through a 100 μm strainer followed by erythrocytes lysing using ammonium-chloride-potassium lysis buffer. SMARTA and endogenous LCMV-specific CD4 T cells were analyzed using IAb:NP309-328 (PE) or IAb:GP66-77 (APC) (provided by NIH tetramer core) tetramer. Following staining for 1 hr at room temperature in the presence of 50 nM Dasatinib, tetramer-binding cells were enriched using magnetic beads and counted as previously published (Moon et al., 2009). Surface combined with viability staining was performed for 30 min on ice. For transcription factor staining, fixation and permeabilization was performed according to the Foxp3/Transcription Factor staining kit (eBioscience). Samples were analyzed on Fortessa LSR II or Canto II cytometers (BD Biosciences) followed by data analysis with FlowJo X software (TreeStar). CD4+ T cells were pregated on lymphocytes in FSC/SSC, dump–, live CD4+ cells and then further gated on CD44+ Tetramer- to assess the CD44+ compartment, CD44+ CD45.1+ GP66+ for SMARTA, and CD44+ NP309+ for NP-specific cells.
 
-## CD69 SMARTA activation assays
+### CD69 SMARTA activation assays
 
 Serial dilutions of the GP61 wt peptide or APLs were plated. 5 × 105 Ly5.2 splenocytes and 0.5−1 × 105 Ly5.1 SMARTA cells per well were added to the dilution series, stimulated for 6, 12 (overnight), or 24 hr at 37°C, and subsequently stained and analyzed at the flow cytometer. MAR1 IFN type-I blockade antibody (BioXcell, #BE0241) or isotype control (MOPC-21, BioXcell, #BE0083) was supplemented in the culture medium at a concentration of 20 μg/ml.
 
-## MHC-II out-competition assays
+### MHC-II out-competition assays
 
 CD74–/– splenocytes were cultured with a custom made GP61-FITC at a fixed concentration of 1 × 10−6 M and various serial dilutions of GP61 wt or APLs for 4 hr at 37°C. After stimulation, the cells were stained and analyzed at the flow cytometer. The FITC-labeled GP61 peptide was custom made by Eurogentec.
 
-## Statistical analysis
+### Statistical analysis
 
 Geometric mean was used to determine the mean fluorescence intensity (MFI), and values were normalized to the mean of the control group from each experiment before data was pooled. Pooled and normalized MFIs are referred to as relative MFI. EC50 values were calculated using a sigmoidal dose–response fit in GraphPad Prism (versions 8 and 9). For statistical analysis of one parameter between two groups, unpaired two-tailed Student’s t-tests were used to determine statistical significance. To compare one parameter between more than two groups, one-way ANOVA was used followed by Turkey’s post-test for multiple comparisons. p-Values are indicated on the graphs. Data was analyzed using GraphPad Prism software (version 8).

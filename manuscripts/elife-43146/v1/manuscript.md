@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.43146.001 The fibroblast growth factor FGF21 was labeled with molecularly defined gold nanoparticles (AuNPs), applied to human adipocytes, and imaged by cryo-electron tomography (cryo-ET). Most AuNPs were in pairs about 80 Å apart, on the outer cell surface. Pairs of AuNPs were also abundant inside the cells in clathrin-coated vesicles and endosomes. AuNPs were present but no longer paired in multivesicular bodies. FGF21 could thus be tracked along the endocytotic pathway. The methods developed here to visualize signaling coupled to endocytosis can be applied to a wide variety of cargo and may be extended to studies of other intracellular transactions.
+The fibroblast growth factor FGF21 was labeled with molecularly defined gold nanoparticles (AuNPs), applied to human adipocytes, and imaged by cryo-electron tomography (cryo-ET). Most AuNPs were in pairs about 80 Å apart, on the outer cell surface. Pairs of AuNPs were also abundant inside the cells in clathrin-coated vesicles and endosomes. AuNPs were present but no longer paired in multivesicular bodies. FGF21 could thus be tracked along the endocytotic pathway. The methods developed here to visualize signaling coupled to endocytosis can be applied to a wide variety of cargo and may be extended to studies of other intracellular transactions.
 
 ## Introduction
 
@@ -40,19 +40,59 @@ With the use of gold-labeled FGF21 (AuNP-FGF21) and cryo-ET, we captured differe
 
 ## Results
 
-## FGF21-FGFR1c-βKlotho ternary complex in membrane vesicles
+### FGF21-FGFR1c-βKlotho ternary complex in membrane vesicles
 
 A 144-gold atom nanoparticle (AuNP) was conjugated with an FGF21 variant bearing a surface-exposed cysteine residue (Xu et al., 2013), as described (Azubel and Kornberg, 2016). Interaction in ternary complexes was assessed using membrane preparations from three cell sources: parental CHO cells, in which neither FGFR1c nor βKlotho are expressed; transformed CHO cells overexpressing βKlotho and FGFR1c or only βKlotho; and human primary adipocytes, in which βKlotho and FGFR1c are endogenously expressed. Vesicles were treated at 4°C with either AuNP-FGF21 or a gold-labeled single chain antibody fragment (AuNP-scFv) that binds βKlotho, and washed to remove unbound gold conjugate. Grids for cryo-EM were prepared by plunge-freezing. Micrographs of vesicles from parental CHO cells membrane preparations treated with AuNP-FGF21 showed no associated AuNPs, whereas micrographs of vesicles from primary adipocytes membrane preparations treated with AuNP-FGF21 showed pairs of AuNPs (Figure 1—figure supplement 1). AuNPs were distinguishable from other particles because of an effect of the contrast transfer function, producing a bright halo around the strongly scattering gold core (Figure 1—figure supplement 2). Pairing of particles cannot be determined from 2D images alone, as two particles in close proximity in the x-y plane may be far apart in z. Tilt series were therefore collected for membrane preparations from CHO cells overexpressing βKlotho and FGFR1c treated with AuNP-FGF21, followed by tomographic reconstruction, showing that 85% of AuNPs were in true pairs (Figure 1—figure supplement 3a–g), indicative of two copies of FGF21 in the receptor complex.
 
 Treatment of these CHO membrane vesicles with AuNP-scFv against βKlotho also resulted in a high percentage of pairs of particles (Figure 1—figure supplement 3h), indicative of an overall 2:2:2 stoichometry for the receptor complex. When membrane preparations from CHO cells expressing only βKlotho were treated with AuNP-scFv against βKlotho, pairs of particles were not observed (Figure 1—figure supplement 3j), showing that βKlotho did not dimerize on its own. When the same vesicles were treated with AuNP-FGF21, however, pairs of particles were again observed (Figure 1—figure supplement 3i). Either two molecules of FGF21 bind to one βKlotho, or FGF21 induces dimerization of overexpressed βKlotho, even in the absence of receptor.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig1-v1.jpg)
+
+**Figure 1.:** (a) Isosurface rendering of tomographic reconstruction, with membrane density in blue-gray, density on the outer surface of the membrane in brown, density on the inner surface of the membrane in red, and AuNPs in yellow. (b) Same as (a), with all membrane and membrane-associated density removed, with different colors to distinguish pairs of AuNPs, and with rotation of 45° from the view in (a) for better visualization of AuNPs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Vesicles from AuNP-FG21 treated membrane preparations from (a) parental CHO cells, in which neither FGFR1c nor βKlotho are expressed and (b) human primary adipocyte cells, in which FGFR1c and βKlotho are endogenously expressed. Bar 10 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Tomogram slice showing a pair of gold nanoparticles associated with cell surface. Bar 10 nm. Lower right corner, boxed area zoomed out two fold.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Membrane preparations from CHO cells expressing FGFR1c and βKlotho (a–h) or CHO cells expressing only βKlotho (i and j) were treated with AuNP-FGF21 (a-g, and i) or with a AuscFv against βKlotho (h and j). (a–d) Tomogram slices. Bar 10 nm. (e) Solid representation of areas boxed red in a-d. (f) Isosurface of area boxed green in e, rotated 20° to facilitate visualization of pairs and single AuNPs. (g–i) AuNP pair (%) measured as [(number of AuNPs in pairs)/(total number of AuNPs)]*100, where total number of AuNPs >100 for all cases (including (j), where no pairs were observed). AuNPs counted from four to five tomograms in each case.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) 0° tilt image of a vesicle from adipocytes membrane preparations treated with AuNP-FGF21. 10 nm gold beads (white arrows) were mixed with the sample prior to application to an electron-microscope grid and plunge-freezing for cryo-EM collection. (b and c) Slices of tomographic reconstruction of red boxed area in (a) using either (b) 10 nm gold beads, or (c) Au144 NPs (Azubel et al., 2017) for alignment. Better-resolved densities on the outer surface of the membrane (brown arrows), on the inner side of the membrane (red arrows), and corresponding to AuNPs (yellow head arrows) are indicated. Bars 10 nm.
+
 Because overexpression of FGFR1c and βKlotho may lead to receptor auto-activation (Sørensen et al., 2006), and with a view to studies on intact cells (see below), we repeated the analysis with AuNP-FGF21 on membrane preparations from human adipocytes. As before, tilt series were collected, followed by tomographic reconstruction, revealing 89% of AuNPs in true pairs, with an average separation (center-to-center distance) of 80 ± 15 Å (Figure 1). With use of the AuNPs to improve the alignment of the tilt series (Figure 1—figure supplement 4), protein densities on both inner and outer surfaces of the membrane were revealed (Figure 1a and Figure 1—figure supplement 4c).
 
-## FGF21-FGFR1c-βKlotho complex on the surface of intact cells
+### FGF21-FGFR1c-βKlotho complex on the surface of intact cells
 
 A key requirement for extension of the analysis to intact cells is sufficient thinness of the cells for cryo-EM. CHO cells were not well suited in this regard, but cytoplasmic regions of adipocyte cells grown on Holey-Carbon Au mesh grids were as thin as 200–300 nm near the cell periphery (Figure 2 and Figure 2—figure supplement 1). As in the case of vesicles from CHO and adipocyte cells membrane preparations, most AuNP particles were in pairs (88%) on the adipocyte cell surface (Figure 3). AuNP pairs showed a tendency to cluster, consistent with previous reports of clustering of FGF receptors from immunofluorescence studies with anti-FGFR antibodies (Gao et al., 2015). AuNP pairs were found in areas surrounding filipodia and, most notably, above invaginations of the cell surface membrane with clathrin nets beneath (Figures 2 and 3). The occurrence of most AuNP-FGF21 in pairs pertains to the stoichiometry of the ternary complex. Our findings are suggestive of the occurrence of 2:2:2 FGF21-FGFR1c-βKlotho complexes in vivo.
 
-## Cytoplasmic structures and the FGF21 endocytotic pathway
+![Figure 2.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig2-v1.jpg)
+
+**Figure 2.:** (a) Slice of tomogram showing a region near the cell periphery. Bar 100 nm. (b) 3D tomographic data, with the plasma membrane in blue (invagination of the membrane, viewed from inside the cell, represented by contours), isosurface rendering of a coated vesicle membrane in cyan, clathrin in magenta, actin in red and microtubules in green (substituted with helical reconstructions from Figure 4), hexameric rings (putative p97 AAA+ ATPAse) in emerald (substituted with subtomogram averages from Figure 4), and AuNPs in yellow.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Cells grown in tissue culture flask. (b) Cells transferred to EM grids and incubated overnight at 37°C in the presence of 5% CO2. (c) Same as (b), followed by 1 h incubation at 4°C. The cells remained attached and flat, indicative of viability. (d) Same as (c) after plunge-freezing. (e) Same as (d) at higher magnification. Bar (a–d) 200 μm, bar (e) 2 µm. (a–c) Light microscopy images, (d–e) cryo-EM images.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Tomogram slice, from cell shown in Figure 2, showing a y-shaped actin filament (green arrow) in the vicinity of an invaginating membrane (segmented in blue). Bar 20 nm. (b) Side view 3D tomographic representation with clathrin net in magenta and actin filaments in red (Hexameric rings and microtubules have been removed for clarity).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig3-v1.jpg)
+
+**Figure 3.:** A composite image from several tomograms, with the cell surface membrane in blue, isosurface renderings of coated vesicle and endosomal membranes in cyan, isosurface renderings of a multivesicular body (MVB) and other vesicle membranes in violet and pink, clathrin in magenta, actin and microtubules in red and green (substituted with helical reconstructions from Figure 4), hexameric rings (substituted with subtomogram averages from Figure 4; putative p97 AAA+ ATPAse) in emerald, and AuNPs in yellow. Tomograms collected following treatment with AuNP-FGF21 for 1 h at 4°C show (1) a lamellopodium decorated with clusters of AuNP pairs, (2) filopodia surrounding clusters of AuNP pairs, (3) clusters of AuNP pairs on the cell surface, (4) AuNP pairs clustered in a coated pit, and (5) a clathrin-coated vesicle. Hexameric rings (putative p97 AAA+ ATPAse) are abundant in the vicinity of clathrin. A tomogram following treatment with AuNP-FGF21 for 1 h at 37°C shows an endosome associated with actin filaments (6) and a tomogram following treatment with AuNP-FGF21 overnight at 37°C shows a microtubule between an MVB and another vesicle (7). The arrows indicate a possible order of events, not an actual sequence; regions numbered 1–7 were taken from different tomograms.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43146/elife-43146-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Composite image of slices from several tomograms. Tomograms collected following treatment with AuNP-FGF21 for 1 h at 4°C, show (a) a lamellopodium decorated with clusters of AuNP pairs, (b) AuNP pairs clustered (right panel) on top of an invaginated membrane (middle panel) above a clathrin pit (left panel), and (c) a clathrin-coated vesicle; left panel showing AuNP pairs inside the vesicle, and right panel showing the clathrin cage. (d) Tomogram after 1 h treatment at 37°C, shows an endosome, tightly associated with actin filaments, with AuNP pairs inside, and (e) a vesicle presumably dividing, although merging cannot be ruled out. (f) Tomogram following overnight treatment at 37°C, shows a microtubule between a MVB, with unpaired AuNP inside (right panel) and other vesicle, with no AuNPs inside (putative late endosome). (For a complete mapping of AuNPs see Figure 4). AuNPs indicated by yellow arrows.
+
+### Cytoplasmic structures and the FGF21 endocytotic pathway
 
 A number of familiar structures were visible in the tomograms of adipocyte cells (Figures 2 and 3): membranes (both cell surface and vesicular), clathrin nets, actin filaments, microtubules, and hexameric rings. The resolution of the tomograms was sufficient to distinguish intercalating legs of neighboring clathrin triskelions (Fotin et al., 2004) (Figure 4a). Actin filaments and microtubules were confirmed by helical reconstruction and docking high-resolution structures into the reconstructions (Figure 4b). Hexameric rings, averaged from subtomograms, corresponded in outline and dimensions to the p97 AAA+ ATPase, although NSF and Vps4p, with similar structures, could not be excluded (Figure 4c).
 
@@ -76,29 +116,29 @@ With regard to methodological significance, our findings extend previous investi
 
 ## Materials and methods
 
-## Bioconjugation
+### Bioconjugation
 
 E38C-FGF21 (Xu et al., 2013) and a single chain antibody fragment (scFv) against βKlotho were conjugated with 3MBA-Au144 nanoparticles (NPs) (Azubel et al., 2017) as described (Azubel and Kornberg, 2016) with minor modifications. Briefly, 200 μM E38C-FGF21 or 34 μM anti-βKlotho scFv were reduced with 1 mM TCEP for 1 h at 37°C. Reduced E38C-FGF21 was incubated on ice for 15 min, and reduced anti-βKlotho scFv was incubated for 45 min at 37°C, in the presence of twofold excess of 3MBA-Au144 NPs in both cases. Conjugates were passivated by treatment with 2.5 mM glutathione (GSH) for 30 min on ice (AuE38C-FGF21) or 45 min at 37°C (anti-βKlotho scFv). Passivated conjugates were run in a 10% glycerol, 12% polyacrylamide gel in Tris-borate-EDTA buffer at 150 V. The gel band corresponding to the conjugate was excised, and crushed and soaked overnight in PBS.
 
-## Cell membrane preparation
+### Cell membrane preparation
 
 AM-1/D Chinese Hamster Ovary (CHO) cells stably expressing both human βKlotho and human FGFR1c (Amgen proprietary cell line derived from CHO cells previously characterized (Hecht et al., 2012; Shi et al., 2018)) were suspended in 50 ml buffer containing 10 mM HEPES pH 7.5, 100 mM NaCl, 1 mM EDTA, and one tablet protease inhibitor (Roche). Cells were lysed by Dounce Homogenization (30 strokes on ice), followed by a spin at 1000 rpm for 10 min. Supernatant was transferred to a 50 ml centrifuge tube and volume was brought up to 40 ml before centrifugation at 16,000 rpm for 30 min. The pellet was resuspended in 1 ml buffer (10 mM HEPES pH 7.5, 100 mM NaCl, 1 mM EDTA). 10 µg of anti-βKlotho were added followed by incubation at room temperature for 2–3 h. 100 µl 50% slurry protein A beads were added and sample was rotated for 1 h at room temperature. Beads were let to settle down and washed with 10 mM HEPES pH 7.5, 100 mM NaCl, 1 mM EDTA twice. 10 µl Caspase three were added and the sample was incubated overnight at 4°C . 1 ml buffer (10 mM HEPES pH 7.5, 100 mM NaCl, 1 mM EDTA) was added and the sample was transferred to a centrifugation tube for a 30 min spin at 16,000 rpm. The pellet was washed twice, resuspended in 40 µl buffer (10 mM HEPES pH 7.5, 100 mM NaCl, 1 mM EDTA) and stored at −80°C.
 
 7-day differentiated human adipocyte cells were suspended in 50 ml of PBS buffer containing one tablet protease inhibitor (Roche). Cells were lysed by Dounce Homogenization (30 strokes on ice), followed by centrifugation at 1000 rpm for 10 min. Supernatant was transferred to a 50 ml centrifuge tube and volume was brought up to 40 ml before centrifugation at 16,000 rpm for 30 min. The pellet was then resuspended in 40 µl PBS and stored at −80°C.
 
-## Labeling of membrane preparations and vitrification
+### Labeling of membrane preparations and vitrification
 
 Membrane preparations (~5 mg/ml) from 12 different experiments were incubated with either AuE38C-FGF21 (0.03 mg/ml) or anti-βKlotho scFv (0.03 mg/ml) on ice for 30 min. The sample was centrifugated and washed with 1X PBS three times, or until the supernatant was colorless. 2.5 µl resuspended membranes were mixed with 0.5 µl 10 nm BSA Gold Tracer (EMS, Haltfield, PA, USA) before applying to glow discharged 200 mesh copper R2/2 Quantifoil grids (Quantifoil Micro Tools GmbH, Jena, Germany). Blotting and plunge-freezing into liquid ethane (at −178°C) were performed with a Leica EM GP (Leica Microsystems, Wetzlar, Germany) set to 5 s pre-blotting time, 6 s blotting time, no post-blotting time, 22°C and 90% humidity.
 
-## Cell growth, labeling and vitrification
+### Cell growth, labeling and vitrification
 
 One vial of Cryoperserved Human Subcutaneous Preadipocyte cells (Zen Bio, NC, USA) was thawed by immersing in a 37°C water bath and gently shaking. Cells were transferred to a 50 ml tube containing 9 ml of pre-warmed Subcutaneous Preadipocyte Growth Medium (PM-1) (Zen Bio, NC, USA). Cells were centrifugated for 3 min at 1200 rpm. Medium was aspirated, and cells were resuspended in 5 ml PM-1 and transferred to a 75 cm2 flask containing 10 ml of pre-warmed PM-1. Cells were grown in an incubator at 37°C in the presence of 5% CO2, for 24 h, or until they were confluent. PM-1 was aspirated and 15 ml of Adipocyte Differentiation Medium (DM-2) (Zen Bio, NC, USA) was added. Differentiation proceeded for 5–7 d in an incubator at 37°C in the presence of 5% CO2. Medium was aspirated and cells were washed with 10 ml pre-warmed 1X PBS, before adding 3 ml pre-warmed CellStripper (Corning, VA, USA). The flask was put back into a 37°C incubator for 5–10 min, or until the cells lifted off the plate. Cells were washed off with 7 ml of 1X PBS, collected in a 50 ml tube, and centrifugated for 3 min at 1200 rpm. Cells were resuspended in DM-2 at a density of ~105 cells/ml and plated in six-well plates, containing three to four pre-treated 10 nm BSA Gold Tracer (EMS, Haltfield, PA, USA) and fibronectin-coated 200 mesh gold R2/2 London finder Quantifoil grids (Quantifoil Micro Tools GmbH, Jena, Germany) per well. After overnight incubation at 37°C in the presence of 5% CO2, the grids were placed upside down in a nine-well Teflon plate containing 30 µl drops of 35 µM AuE38C-FGF21, incubated on ice, or at room temperature, or 37°C for 1 h, or at 37°C overnight, and washed with 1X PBS. Grids were mounted onto Leica EM GP (Leica Microsystems, Wetzlar, Germany) so grids could be blotted from the reverse side. Before blotting and plunge-freezing, 3 µl of 10 nm BSA Gold Tracer (EMS, Haltfield, PA, USA) were added. Blotting and plunge-freezing into liquid ethane (at −180°C) were performed with a Leica EM GP (Leica Microsystems, Wetzlar, Germany) set to 2 s pre-blotting time, 4 s blotting time, no post-blotting time, 22°C and 95% humidity. Cells grown on grids from more than 20 experiments were taken for cryo-ET data collection.
 
-## Cryo-ET data collection
+### Cryo-ET data collection
 
 Tilt series were collected either on a FEI (Eindhoven, The Netherlands) Tecnai F20 FEG transmission electron microscope operating at 200 kV, or on a FEI (Eindhoven, The Netherlands) F30 G2 Polara FEG transmission electron microscope operating at 300 kV and equipped with an energy filter (slit width 20 eV for higher magnifications; Gatan, Inc.). Images were recorded using a 4k × 4k K2 Summit direct detector (Gatan, Inc.) operating in the electron counting mode. Tilt series were recorded using SerialEM (Mastronarde, 2005) software at magnifications with corresponding pixel sizes ranging from 1.28 to 2.42 Å. Either a bidirectional or a dose-symmetric tilt schemes (Hagen et al., 2017) were implemented from −60° to +60° with an increment of 2° at 2–6 µm underfocus, and total dose around 120 e-/Å2.
 
-## Cryo-ET data processing
+### Cryo-ET data processing
 
 Tilt-series were aligned and processed with the IMOD software package (Kremer et al., 1996). After binning the aligned tilt series by threefold, reconstructions into 3D tomograms were done with back projection, which helps to unequivocally identify Au nanoparticles, and with SIRT (Simultaneous Iterative Reconstruction Technique) for increased contrast.
 

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04b6x2g63 Stritch School of Medicine, Loyola University Chicago Maywood United States
+1. Stritch School of Medicine, Loyola University Chicago Maywood United States ([ROR:04b6x2g63](https://ror.org/04b6x2g63))
 
 † Corresponding author
 

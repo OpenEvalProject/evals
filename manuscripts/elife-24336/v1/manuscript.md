@@ -18,53 +18,53 @@
 
 ## Abstract
 
-10.7554/eLife.24336.001 Eukaryotic 14-3-3 proteins have been implicated in the regulation of diverse biological processes by phosphorylation-dependent protein-protein interactions. The Arabidopsis genome encodes two groups of 14-3-3s, one of which – epsilon – is thought to fulfill conserved cellular functions. Here, we assessed the in vivo role of the ancestral 14-3-3 epsilon group members. Their simultaneous and conditional repression by RNA interference and artificial microRNA in seedlings led to altered distribution patterns of the phytohormone auxin and associated auxin transport-related phenotypes, such as agravitropic growth. Moreover, 14-3-3 epsilon members were required for pronounced polar distribution of PIN-FORMED auxin efflux carriers within the plasma membrane. Defects in defined post-Golgi trafficking processes proved causal for this phenotype and might be due to lack of direct 14-3-3 interactions with factors crucial for membrane trafficking. Taken together, our data demonstrate a fundamental role for the ancient 14-3-3 epsilon group members in regulating PIN polarity and plant development. DOI: http://dx.doi.org/10.7554/eLife.24336.001
+Eukaryotic 14-3-3 proteins have been implicated in the regulation of diverse biological processes by phosphorylation-dependent protein-protein interactions. The Arabidopsis genome encodes two groups of 14-3-3s, one of which – epsilon – is thought to fulfill conserved cellular functions. Here, we assessed the in vivo role of the ancestral 14-3-3 epsilon group members. Their simultaneous and conditional repression by RNA interference and artificial microRNA in seedlings led to altered distribution patterns of the phytohormone auxin and associated auxin transport-related phenotypes, such as agravitropic growth. Moreover, 14-3-3 epsilon members were required for pronounced polar distribution of PIN-FORMED auxin efflux carriers within the plasma membrane. Defects in defined post-Golgi trafficking processes proved causal for this phenotype and might be due to lack of direct 14-3-3 interactions with factors crucial for membrane trafficking. Taken together, our data demonstrate a fundamental role for the ancient 14-3-3 epsilon group members in regulating PIN polarity and plant development.
 
 ## Introduction
 
-Members of the eukaryotic 14-3-3 family are highly conserved eukaryotic proteins that have been implicated in the regulation of distinct cellular processes by protein-protein interactions. Notably, 14-3-3 proteins bind to phosphoserine/phosphothreonine motifs in a sequence-specific manner and are required to change the activity state of the respective target protein. They enforce conformational changes, act as intermolecular bridge or modify the subcellular localization of their clients (
+Members of the eukaryotic 14-3-3 family are highly conserved eukaryotic proteins that have been implicated in the regulation of distinct cellular processes by protein-protein interactions. Notably, 14-3-3 proteins bind to phosphoserine/phosphothreonine motifs in a sequence-specific manner and are required to change the activity state of the respective target protein. They enforce conformational changes, act as intermolecular bridge or modify the subcellular localization of their clients (Mackintosh, 2004). Plant 14-3-3s have been demonstrated to be of utmost importance for the regulation of enzymes that are crucial for nutrient uptake and processing, such as the plasma membrane (PM) H+-ATPase and nitrate reductase. Yet, another key aspect of 14-3-3 activity is the modification of transcriptional regulators involved in phytohormone action, such as BRASSINAZOLE-RESISTANT1, or in developmental signaling, such as the floral mediator (de Boer et al., 2013). While the individual studies focusing on particular 14-3-3 client proteins have generated substantial insight into the function of plant 14-3-3s, the question of functional diversity among 14-3-3 isoforms is still not fully resolved. Arabidopsis thaliana expresses thirteen 14-3-3 isoforms which can be divided into two major phylogenetic groups, the non-epsilon group (eight members) and the ancestral epsilon group (five members) (Figure 1A). Members of both groups are present in all plant genomes sequenced so far. The phylogenetic relationship of 14-3-3 isoforms from six plant species (A. thaliana, Solanum lycopersicum, Medicago truncatula, Populus trichocarpa, Oryza sativa, Physcomitrella patens) and their expression patterns (based on publicly accessible RNA-seq or microarray data) are depicted in Figure 1—figure supplement 1 and Figure 1—source data 1, respectively. Except for the moss, P. patens, the total transcript level of all non-epsilon members in a given plant species is generally higher than that of the epsilon group isoforms. However, whether this relates to lower amounts of 14-3-3 epsilon proteins in individual cells or tissues remains unclear. The ancestral epsilon group may mediate fundamental cellular features while non-epsilon members may perform organism-specific functions (Ferl et al., 2002). In this regard, it has recently been shown that the Arabidopsis 14-3-3 isoform kappa (non-epsilon) is required for PHOTOTROPIN2-mediated blue-light-induced stomatal opening (Tseng et al., 2012). However, with the exception of upsilon, the knockout mutant of which flowers late under long day conditions (Mayfield et al., 2012), several single and double T-DNA-induced loss-of-function alleles of non-epsilon isoforms are indistinguishable from wild type under normal growth conditions and even quadruple mutants showed only a mild reduction of primary root length (van Kleeff et al., 2014). Nevertheless, under given abiotic stress conditions, a certain specificity of defined double mutants was uncovered (van Kleeff et al., 2014). Taken together, functional overlap seems to be a predominant issue among non-epsilon 14-3-3 members. So, what about the ancient epsilon group in Arabidopsis?
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig1-v1.jpg)
 
-**Figure 1.:** Arabidopsis 14-3-3 isoforms and expression of genomic 14-3-3:GFP fusions under the control of the endogenous promoter.(A) Unrooted phylogenetic tree of the Arabidopsis 14-3-3 protein family. Maximum parsimony analyses were performed using PAUP 4.0b10 (Altivec) with the bootstrap-algorithm and 1000 replica. (B, C) Expression of iota-GFP is restricted to pollen. (D) to (G) Pi-GFP is exclusively expressed in the chalazal cyst of the seed (D, E) and the connective tissue of the anthers (F, G). (H) to (O) The expression of nu-GFP is ubiquitous. Expression in seeds (H), seedlings (I), root tips (J), roots (K), hypocotyl (L), leaf epidermis (M) and floral organs (N, O) is shown. (P) to (S) Mu-GFP (P, R) and merge with FM4-64 (Q, S) in epidermal root cells (elongation zone) of seedlings (4d) treated with CHX (50 μM) for 60 min followed by treatment with CHX (P, Q) or CHX and 50 μM BFA (R, S) for 60 min. Note that mu-GFP localizes to both nucleus and cytoplasm but accumulates in BFA bodies upon inhibitor treatment. Arrowheads indicate nuclei, arrows mark BFA bodies.DOI: http://dx.doi.org/10.7554/eLife.24336.00210.7554/eLife.24336.003Figure 1—source data 1.Normalized data for the expression of 14-3-3 isoforms (absolute signal intensities) were obtained from the eFP Browser of the Bio-Analytic Resource for Plant Biology (BAR) (http://bar.utoronto.ca) (microarray data: A. thaliana, M. truncatula, P. trichocarpa, O. sativa, P. patens) or the Tomato Functional Genomics Database (http://ted.bti.cornell.edu/cgi-bin/TFGD/digital/home.cgi) (RNA-seq data: S. lycopersicum). Expression of ubiquitin is depicted for comparison. Individual Excel sheets have been created for the different plant species. Each Excel sheet lists detailed information of 14-3-3s, such as gene ID and phylogenetic subgroup as well as the origin of expression data including references.DOI: http://dx.doi.org/10.7554/eLife.24336.003
+**Figure 1.:** (A) Unrooted phylogenetic tree of the Arabidopsis 14-3-3 protein family. Maximum parsimony analyses were performed using PAUP 4.0b10 (Altivec) with the bootstrap-algorithm and 1000 replica. (B, C) Expression of iota-GFP is restricted to pollen. (D) to (G) Pi-GFP is exclusively expressed in the chalazal cyst of the seed (D, E) and the connective tissue of the anthers (F, G). (H) to (O) The expression of nu-GFP is ubiquitous. Expression in seeds (H), seedlings (I), root tips (J), roots (K), hypocotyl (L), leaf epidermis (M) and floral organs (N, O) is shown. (P) to (S) Mu-GFP (P, R) and merge with FM4-64 (Q, S) in epidermal root cells (elongation zone) of seedlings (4d) treated with CHX (50 μM) for 60 min followed by treatment with CHX (P, Q) or CHX and 50 μM BFA (R, S) for 60 min. Note that mu-GFP localizes to both nucleus and cytoplasm but accumulates in BFA bodies upon inhibitor treatment. Arrowheads indicate nuclei, arrows mark BFA bodies.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Multiple alignment of 14-3-3 isoforms from A. thaliana (At), S. lycopersicum (TFT), M. truncatula (Mt), P. trichocarpa (Pt), O. sativa (Os), and P. patens (Pp) was performed using CLC Main Workbench 7.8. A maximum likelihood phylogenetic tree was constructed with 10,000 bootstrap replicates. Bootstrap support values are shown on each node. The two major groups are marked with different background colors. Detail information of 14-3-3s from the six plant species are listed in Figure 1.DOI: http://dx.doi.org/10.7554/eLife.24336.004
+**Figure 1—figure supplement 1.:** Multiple alignment of 14-3-3 isoforms from A. thaliana (At), S. lycopersicum (TFT), M. truncatula (Mt), P. trichocarpa (Pt), O. sativa (Os), and P. patens (Pp) was performed using CLC Main Workbench 7.8. A maximum likelihood phylogenetic tree was constructed with 10,000 bootstrap replicates. Bootstrap support values are shown on each node. The two major groups are marked with different background colors. Detail information of 14-3-3s from the six plant species are listed in Figure 1.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** 14-3-3 mu T-DNA allele (SALK_004455) under continuous light.The primers indicated in the schematic representation of the T-DNA insertion (lower panel) were used to identify homozygous plants. The control PCR reactions contain no input genomic DNA.DOI: http://dx.doi.org/10.7554/eLife.24336.005
+**Figure 1—figure supplement 2.:** The primers indicated in the schematic representation of the T-DNA insertion (lower panel) were used to identify homozygous plants. The control PCR reactions contain no input genomic DNA.
 
 With the exception of omicron, no single T-DNA-induced knockout mutant of epsilon group members has been described so far. Omicron seems to participate in the regulation of iron acquisition (Yang et al., 2013), while a knockdown allele of mu exhibited exaggerated Pi starvation responses (Cao et al., 2007). The same mu allele was later shown to have shorter roots under constant light (Mayfield et al., 2012) or water stress (He et al., 2015). In summary, the in vivo role of the epsilon group is virtually unknown. Furthermore, the important question of whether the ancestral epsilon group members indeed fulfill rather basal cellular functions remains largely unresolved. Here, we tackle this question by conditional knockdown of the entire 14-3-3 epsilon group in Arabidopsis seedlings (three of the five isoforms are expressed in seedlings). Interference with their function led to pronounced defects in PIN polar distribution and associated auxin-mediated plant development. At the cellular level, in vivo visualization of endocytic cargo revealed defects in defined post-Golgi trafficking processes. 14-3-3 proteins co-immunoprecipitated with several factors crucial for membrane trafficking, suggesting that lack of these interactions might underlie the mutant phenotype.
 
 ## Results and discussion
 
-## Expression of 14-3-3 isoforms
+### Expression of 14-3-3 isoforms
 
 To determine the expression pattern of Arabidopsis 14-3-3 isoforms (Figure 1A), translational fusions between their genomic sequences, comprising the respective promoter, and the reporter green fluorescent protein (GFP) were constructed. The analysis of transgenic Arabidopsis revealed a strict tissue-specific expression pattern for two of the epsilon-group members. Expression of iota (AT1G26480) is restricted to pollen, while pi (AT1G78220) is exclusively expressed in anthers and the chalazal cyst of the seed (Figure 1B–G). Yet another epsilon group member, omicron (AT1G34760), is expressed in anthers too, but also moderately in roots and cotyledons.
 
 Overall, however, the expression of the remaining 10 non-epsilon and epsilon isoforms occurs in neither a tissue-specific nor a developmentally regulated manner (isoform nu shown in Figure 1H–O). Thus, in Arabidopsis, differences in the expression patterns of 14-3-3 isoforms are not assumed to contribute to possible isoform specificity. The same applies to the majority of isoforms expressed in S. lycopersicum, M. truncatula, P. trichocarpa, O. sativa and P. patens (Figure 1—source data 1).
 
-## RNAi and amiRNA of 14-3-3 epsilon members interferes with plant growth and development
+### RNAi and amiRNA of 14-3-3 epsilon members interferes with plant growth and development
 
-Unfortunately, we did not identify T-DNA-induced null alleles for most of the epsilon group members. It has previously been reported that a knockdown of the 14-3-3 isoform mu (SALK_004455) caused significantly shorter roots in constant light (
+Unfortunately, we did not identify T-DNA-induced null alleles for most of the epsilon group members. It has previously been reported that a knockdown of the 14-3-3 isoform mu (SALK_004455) caused significantly shorter roots in constant light (Mayfield et al., 2012). The homozygous SALK line, however, did not show a striking phenotype in our hands (Figure 1—figure supplement 2; see also: [Cao et al., 2007; He et al., 2015]). Thus, we designed ethanol-inducible RNA interference (RNAi) (Figure 2, Figure 2—figure supplement 1) and artificial microRNA (amiRNA) (Figure 2—figure supplement 1) constructs to suppress the function of those epsilon group members that are rather ubiquitously expressed, namely epsilon (AT1G22300), mu (AT2G42590) and omicron (AT1G34760). We analyzed independent homozygous transgenic lines that are referred to as emo-RNAi (three lines) and amiRNA-(em)o (one line) plants, respectively.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig2-v1.jpg)
 
-**Figure 2.:** emo-RNAi causes growth retardation phenotypes.(A) to (F) Seedlings (wildtype and three independent emo-RNAi lines) grown either for 6 days in the light (A, B) or for 4 days in the dark (C–F) on noninductive (A, C, E) or inductive (0.1% (v/v) EtOH) medium (B, D, F), optionally supplemented with ACC (10 μM) (E, F). (G) Semiquantitative RT-PCR analysis of the transcript level of selected 14-3-3 isoforms in light-grown seedlings. (H) Hypocotyl length of etiolated seedlings (n = 30). (I) Primary root growth of seedlings grown for 4 days in the absence of ethanol followed by transfer to non-inductive (−) or inductive (+) medium for the indicated times (n = 16).DOI: http://dx.doi.org/10.7554/eLife.24336.006
+**Figure 2.:** (A) to (F) Seedlings (wildtype and three independent emo-RNAi lines) grown either for 6 days in the light (A, B) or for 4 days in the dark (C–F) on noninductive (A, C, E) or inductive (0.1% (v/v) EtOH) medium (B, D, F), optionally supplemented with ACC (10 μM) (E, F). (G) Semiquantitative RT-PCR analysis of the transcript level of selected 14-3-3 isoforms in light-grown seedlings. (H) Hypocotyl length of etiolated seedlings (n = 30). (I) Primary root growth of seedlings grown for 4 days in the absence of ethanol followed by transfer to non-inductive (−) or inductive (+) medium for the indicated times (n = 16).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** em)o causes growth retardation phenotypes.(A) Schematic representation of the RNAi construct generated to reduce the expression of the 14-3-3 isoforms epsilon, mu and omicron. (B) Seedlings (two at a time, from left to right: wildtype, emo1-RNAi and amiRNA-(em)o)) grown for 6 days in the presence of ethanol. (C) Semiquantitative RT-PCR analysis of the transcript level of the targeted 14-3-3 isoforms in wildtype, emo1-RNAi and amiRNA-(em)o grown for 6 days in the absence (−) or presence (+) of ethanol.DOI: http://dx.doi.org/10.7554/eLife.24336.007
+**Figure 2—figure supplement 1.:** (A) Schematic representation of the RNAi construct generated to reduce the expression of the 14-3-3 isoforms epsilon, mu and omicron. (B) Seedlings (two at a time, from left to right: wildtype, emo1-RNAi and amiRNA-(em)o)) grown for 6 days in the presence of ethanol. (C) Semiquantitative RT-PCR analysis of the transcript level of the targeted 14-3-3 isoforms in wildtype, emo1-RNAi and amiRNA-(em)o grown for 6 days in the absence (−) or presence (+) of ethanol.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** emo-RNAi roots.Semiquantitative RT-PCR analysis of the transcript level of selected auxin-induced genes in wildtype and emo1-RNAi seedlings grown for 7 days on MS medium followed by transfer to ethanol-containing (+) or -lacking (−) medium for 2 days and finally treated with mock (−) or 50 μM IAA (+) for 2 hr. Total RNA was extracted from root tissue.DOI: http://dx.doi.org/10.7554/eLife.24336.008
+**Figure 2—figure supplement 2.:** Semiquantitative RT-PCR analysis of the transcript level of selected auxin-induced genes in wildtype and emo1-RNAi seedlings grown for 7 days on MS medium followed by transfer to ethanol-containing (+) or -lacking (−) medium for 2 days and finally treated with mock (−) or 50 μM IAA (+) for 2 hr. Total RNA was extracted from root tissue.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** emo-RNAi causes defects in the gravitropic growth response and auxin transport in both roots and aerial tissues.(A) to (D) Gravitropic root growth response of emo1-RNAi (B) as compared to wildtype (A). Seedlings grown for 3 days in the absence of ethanol were transferred to inductive medium for 2 days, followed by reorientation (135°, arrows indicate gravity vector). Photos were taken after 5 days. Re-alignment to the gravity vector was recorded after 4 days (C, D, n = 30). (E) Acropetal auxin transport in emo1-RNAi roots. Seedlings grown for 4 days in the absence of ethanol were transferred to non-inductive (dark-gray bars) or inductive medium (light-gray bars) for 24 hr and 48 hr, respectively, followed by the application of agar droplets supplemented with radioactive IAA. Transport to the root tip was measured after 18 hr (n = 10 roots). (F) to (H) Etiolated wild-type (left side) and emo1-RNAi seedlings (right side) grown for 4 days in the absence (F, H) or presence of ethanol (G) and NPA (H). (I) to (L) Auxin response gradients visualized by DR5::GUS in wild type (I, J) and emo1-RNAi (K, L) in the absence (J, K) or presence of ethanol (I, L) and NPA (J). (M) to (P) Formation of adventitious roots in wild type (M, N) and emo1-RNAi (O, P) after 48 hr of ethanol induction followed by surgical removal of the primary root. Root regeneration 8 days after cutting is shown.DOI: http://dx.doi.org/10.7554/eLife.24336.009
+**Figure 2—figure supplement 3.:** (A) to (D) Gravitropic root growth response of emo1-RNAi (B) as compared to wildtype (A). Seedlings grown for 3 days in the absence of ethanol were transferred to inductive medium for 2 days, followed by reorientation (135°, arrows indicate gravity vector). Photos were taken after 5 days. Re-alignment to the gravity vector was recorded after 4 days (C, D, n = 30). (E) Acropetal auxin transport in emo1-RNAi roots. Seedlings grown for 4 days in the absence of ethanol were transferred to non-inductive (dark-gray bars) or inductive medium (light-gray bars) for 24 hr and 48 hr, respectively, followed by the application of agar droplets supplemented with radioactive IAA. Transport to the root tip was measured after 18 hr (n = 10 roots). (F) to (H) Etiolated wild-type (left side) and emo1-RNAi seedlings (right side) grown for 4 days in the absence (F, H) or presence of ethanol (G) and NPA (H). (I) to (L) Auxin response gradients visualized by DR5::GUS in wild type (I, J) and emo1-RNAi (K, L) in the absence (J, K) or presence of ethanol (I, L) and NPA (J). (M) to (P) Formation of adventitious roots in wild type (M, N) and emo1-RNAi (O, P) after 48 hr of ethanol induction followed by surgical removal of the primary root. Root regeneration 8 days after cutting is shown.
 
 Semiquantitative RT-PCR confirmed that the expression of the targeted 14-3-3 isoforms was efficiently reduced upon ethanol treatment (Figure 2G, Figure 2—figure supplement 1C). Notably, transcript levels of all non-epsilon isoforms were unaffected (kappa, chi, upsilon shown in Figure 2G). Considering that 14-3-3 isoforms are highly homologous, this clearly suggests that the risk of potential off-targets of produced siRNA is marginal.
 
@@ -72,19 +72,19 @@ Under inductive conditions (0.1%(v/v) ethanol), emo-RNAi (Figure 2B) and amiRNA-
 
 Etiolated emo-RNAi seedlings germinated on inductive medium showed a severe defect in elongation of both roots and hypocotyls (Figure 2D). Ethylene overproduction is not the underlying cause since the biosynthesis inhibitor aminovinylglycine (AVG) does not rescue the phenotype (Figure 2H). In addition, the hypocotyls are hookless even in the presence of the ethylene biosynthesis precursor 1-aminocyclopropane-1-carboxylate (ACC) (Figure 2F). Both apical hook development and ethylene-induced hook exaggeration have been most extensively connected with auxin (Stepanova et al., 2008; Vandenbussche et al., 2010; Zádníková et al., 2010). Taking into account that light grown emo-RNAi/amiRNA(em)o seedlings exhibit a wavy root phenotype and do not form lateral roots, the phenotypic features might be related to alterations in auxin-mediated processes. Since the independent emo-RNAi/amiRNA-(em)o-lines reacted in a qualitatively and quantitatively comparable manner, we focused on the characterization of emo1-RNAi.
 
-## RNAi of 14-3-3 epsilon members interferes with auxin transport-dependent processes
+### RNAi of 14-3-3 epsilon members interferes with auxin transport-dependent processes
 
-Auxin-induced gene expression was not severely affected in roots of the mutant following ethanol treatment (
+Auxin-induced gene expression was not severely affected in roots of the mutant following ethanol treatment (Figure 2—figure supplement 2), indicating that auxin perception and the subsequent degradation of Aux/IAA repressors were not compromised. We therefore tested whether interference with 14-3-3 function impacts auxin-transport dependent processes, such as lateral root formation and response to gravity. Upon ethanol treatment (3 days) in the presence of the transportable synthetic auxin naphthalene acetic acid (NAA) (48 hr), discrete lateral root primordia formed along the main root of control seedlings (Figure 3B). By contrast, emo1-RNAi seedlings displayed highly disorganized proliferation of pericycle cells (Figure 3E). This resembles wild-type roots treated with the non-transportable auxin analogue 2,4-dichlorphenoxyacetic acid (2,4D) (Figure 3C) (Geldner et al., 2004). In addition, emo1-RNAi roots failed to orient their growth with respect to the gravity vector (Figure 2—figure supplement 3A–D) and moreover, etiolated seedlings had agravitropic hypocotyls (Figure 2—figure supplement 3F,G). Yet, another process that depends on polar auxin transport in the shoot is the formation of adventitious roots as a consequence of surgical removal of the primary root (Geldner et al., 2004). As expected, wildtype seedlings spontaneously regenerated a root from the hypocotyl stump, while emo1-RNAi seedlings were unable to form adventitious roots (Figure 2—figure supplement 3M–P). Together, these data show that the function of 14-3-3 epsilon group members is required for auxin-transport-dependent development in both roots and shoots.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig3-v1.jpg)
 
-**Figure 3.:** emo-RNAi induction.Seedlings grown for 4 days in the absence of ethanol were transferred to inductive medium for 24 hr followed by treatment with exogenous auxin.(A) to (F) Lateral root primordia of wildtype (A–C) and emo1-RNAi (D–F) after 48 hr of treatment with either mock solution (A, D), 1 μM NAA (B, E) or 1 μM 2,4D (C, F) in the presence of ethanol. (G) to (L) Auxin response gradients visualized by DR5::GUS in wild type (G–I) and emo1-RNAi (J–L) after treatment with either mock solution (G, J) or 0.1 μM NAA for either 24 hr (H, K) or 48 hr (I, L) in the presence of ethanol.DOI: http://dx.doi.org/10.7554/eLife.24336.010
+**Figure 3.:** Seedlings grown for 4 days in the absence of ethanol were transferred to inductive medium for 24 hr followed by treatment with exogenous auxin.(A) to (F) Lateral root primordia of wildtype (A–C) and emo1-RNAi (D–F) after 48 hr of treatment with either mock solution (A, D), 1 μM NAA (B, E) or 1 μM 2,4D (C, F) in the presence of ethanol. (G) to (L) Auxin response gradients visualized by DR5::GUS in wild type (G–I) and emo1-RNAi (J–L) after treatment with either mock solution (G, J) or 0.1 μM NAA for either 24 hr (H, K) or 48 hr (I, L) in the presence of ethanol.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** emo-RNAi induction.(A, B, E–G) DR5rev::GFP activity in root tips of wild type (A, E) and emo1-RNAi (B, F) after transfer to inductive medium for 2 days (A, B) and gravistimulation (6 hr, 90°) (E, F). Arrowheads indicate gravity vector. Percentage of GFP signal in the gravistimulated side of the root is shown in (G) (n = 10 roots). (C, D) DR5rev::GFP activity in root tips of emo1-RNAi after transfer to inductive medium for 4 days (C) and 7 days (D).DOI: http://dx.doi.org/10.7554/eLife.24336.011
+**Figure 3—figure supplement 1.:** (A, B, E–G) DR5rev::GFP activity in root tips of wild type (A, E) and emo1-RNAi (B, F) after transfer to inductive medium for 2 days (A, B) and gravistimulation (6 hr, 90°) (E, F). Arrowheads indicate gravity vector. Percentage of GFP signal in the gravistimulated side of the root is shown in (G) (n = 10 roots). (C, D) DR5rev::GFP activity in root tips of emo1-RNAi after transfer to inductive medium for 4 days (C) and 7 days (D).
 
-## RNAi of 14-3-3 epsilon members interferes with auxin distribution
+### RNAi of 14-3-3 epsilon members interferes with auxin distribution
 
 Because gravitropic growth and formation of both lateral and adventitious roots depend on dynamic auxin redistribution (Geldner et al., 2004; Luschnig et al., 1998; Benková et al., 2003), we investigated the effect of RNAi induction on auxin distribution with the auxin reporter DR5::GUS (Ulmasov et al., 1997; Sabatini et al., 1999) as well as DR5rev::GFP (Friml et al., 2003).
 
@@ -96,59 +96,205 @@ Therefore, the effect of reduced 14-3-3 expression on auxin transport toward the
 
 However, another striking aspect of the RNAi-mutant upon transfer to ethanol-containing medium is an epinasty cotyledon phenotype (Figure 2B), characteristic of auxin overproducers (Zhao et al., 2001; Boerjan et al., 1995). Consequently, in contrast to the situation in roots, the auxin level might be elevated in emo hypocotyls and cotyledons. Accordingly, the mutant showed a severe increase in DR5::GUS reporter activity in the cotyledons upon induction (Figure 2—figure supplement 3L). Intriguingly, treatment of the wild type with the auxin transport inhibitor NPA resulted in agravitropic hypocotyls (Figure 2—figure supplement 3H), an increase in GUS activity in cotyledons (Figure 2—figure supplement 3J) and the formation of epinastic leaves (Geldner et al., 2004). Taken together, this strongly suggests that suppression of 14-3-3 expression impairs auxin transport in both roots and aerial tissues, resulting in depletion of auxin in the root tip and an elevated auxin level in the apical part.
 
-## 14-3-3 epsilon group members: master regulators of the H+-ATPase?
+### 14-3-3 epsilon group members: master regulators of the H+-ATPase?
 
-The phenotypic analysis of
+The phenotypic analysis of emo mutants revealed an impressive number of auxin-related, in particular auxin transport-related, phenotypes. This, however, does not necessarily imply that 14-3-3 members regulate auxin transport directly. In fact, several mutants affected in rather fundamental eukaryotic processes, such as vesicular trafficking events, exhibit auxin-related phenotypes (Geldner et al., 2003; Jaillais et al., 2006; Kitakura et al., 2011; Mravec et al., 2011). What might be the major 14-3-3 regulated cellular process or 14-3-3 target protein(s) causing the phenotype? According to the chemiosmotic hypothesis for polar auxin transport, the activity of the PM localized H+-ATPase is crucial for auxin uptake into the cell and, consequently, directed cellular export mediated by auxin efflux facilitators. Regulation of this P-type proton pump is one of the most highly explored functions of plant 14-3-3 proteins. In brief, phosphorylation-dependent association of 14-3-3 with the penultimate residue results in a displacement of the C-terminal autoinhibitor and hence activation of the pump (Speth et al., 2010). Dexamethasone (Dex)-dependent expression of one of the major H+-ATPase isoforms, AHA2, deleted of its C-terminal autoinhibitor (94 amino acids, 1-887, AHA2Δ94) (Pacheco-Villalobos et al., 2016) and thus representing a constitutively active version of the H+-pump uncoupled from regulatory inputs, did not rescue the emo1-RNAi phenotype (Figure 4A–E). Notably, the effects observed in wild type upon Dex treatment (shorter hypocotyls, absence of an apical hook and open cotyledons) are indeed the consequence of an activation of the H+-ATPase since they can be mimicked by a specific activator of the H+-pump, fusicoccin (Würtele et al., 2003) (Figure 4F,G). Therefore, inhibition of the H+-ATPase is not the underlying cause of the emo1-RNAi phenotype.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig4-v1.jpg)
 
-**Figure 4.:** emo-RNAi phenotype.(A) to (E) Wild-type and emo1-RNAi seedlings were grown for 4 days in the dark in the absence or presence of ethanol and Dex (10 μM). Semiquantitative RT-PCR analysis of the transcript level of the C-terminally deleted AHA2 (A, upper panel, lower panel shows actin) and immunodetection of the H+-ATPase in microsomal membranes (B, arrows indicate the truncated version of the H+-pump) confirmed Dex-dependent expression of the transgene. Seedling growth (C, D) and measurement of the hypocotyl length (E, n = 30) is shown. (F) to (H) Treatment with fusicoccin (FC), an activator of the H+-ATPase, mimicked the effects observed in transgenic wild type upon Dex-treatment (see (C): shorter hypocotyls, absence of an apical hook and open cotyledons). Seedling growth (G, H) and measurement of the hypocotyl length (F, n = 30) in the absence or presence of FC is shown.DOI: http://dx.doi.org/10.7554/eLife.24336.012
+**Figure 4.:** (A) to (E) Wild-type and emo1-RNAi seedlings were grown for 4 days in the dark in the absence or presence of ethanol and Dex (10 μM). Semiquantitative RT-PCR analysis of the transcript level of the C-terminally deleted AHA2 (A, upper panel, lower panel shows actin) and immunodetection of the H+-ATPase in microsomal membranes (B, arrows indicate the truncated version of the H+-pump) confirmed Dex-dependent expression of the transgene. Seedling growth (C, D) and measurement of the hypocotyl length (E, n = 30) is shown. (F) to (H) Treatment with fusicoccin (FC), an activator of the H+-ATPase, mimicked the effects observed in transgenic wild type upon Dex-treatment (see (C): shorter hypocotyls, absence of an apical hook and open cotyledons). Seedling growth (G, H) and measurement of the hypocotyl length (F, n = 30) in the absence or presence of FC is shown.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** in planta interaction studies do not point to a direct interaction of 14-3-3 s with the PIN2 hydrophilic loop.Upper panel: Yeast two-hybrid interaction analysis of the 14-3-3 isoforms epsilon or omega with the PIN2 hydrophilic loop region (top). As a positive control, the interaction of omega with the C-terminal domain of the H+-ATPase (CT86) is shown. Expression of the individual fusion proteins was confirmed by immunodetection (bottom). ev: empty vector. Lower panel: Ratiometric bimolecular fluorescence complementation analysis of the interaction of 14-3-3 epsilon or 14-3-3 omega with the PIN2 hydrophilic loop. Exemplary CLSM images (merge) of abaxial leaf epidermis cells of N. benthamiana 2 days after infiltration with A. tumefaciens containing pBiFCt-2in1-CC with the indicated cDNAs are shown (top). Expression of the individual fusion proteins was confirmed by immunodetection (bottom left). Quantification of the mean YFP fluorescence ratioed against RFP is shown (bottom right).DOI: http://dx.doi.org/10.7554/eLife.24336.013
+**Figure 4—figure supplement 1.:** Upper panel: Yeast two-hybrid interaction analysis of the 14-3-3 isoforms epsilon or omega with the PIN2 hydrophilic loop region (top). As a positive control, the interaction of omega with the C-terminal domain of the H+-ATPase (CT86) is shown. Expression of the individual fusion proteins was confirmed by immunodetection (bottom). ev: empty vector. Lower panel: Ratiometric bimolecular fluorescence complementation analysis of the interaction of 14-3-3 epsilon or 14-3-3 omega with the PIN2 hydrophilic loop. Exemplary CLSM images (merge) of abaxial leaf epidermis cells of N. benthamiana 2 days after infiltration with A. tumefaciens containing pBiFCt-2in1-CC with the indicated cDNAs are shown (top). Expression of the individual fusion proteins was confirmed by immunodetection (bottom left). Quantification of the mean YFP fluorescence ratioed against RFP is shown (bottom right).
 
 Another thought comes to mind: might 14-3-3 proteins interact directly with auxin efflux carriers such as PIN proteins? The PIN transporters are characterized by a large hydrophilic loop localized in the cytoplasm and phosphorylated at multiple sites (Huang et al., 2010; Dhonukshe et al., 2010; Zourelidou et al., 2014). Interaction of 14-3-3 epsilon and the PIN2 hydrophilic loop (amino acids 187-477) was not detectable by yeast two-hybrid assay and ratiometric bimolecular fluorescence complementation in planta (Grefen and Blatt, 2012) (Figure 4—figure supplement 1). This, however, is no sufficient proof for the lack of direct association of 14-3-3 with PIN proteins.
 
-## RNAi of 14-3-3 epsilon members interferes with PIN expression and polar localization
+### RNAi of 14-3-3 epsilon members interferes with PIN expression and polar localization
 
 Given that RNAi of the 14-3-3 epsilon group members interferes with auxin transport, we analyzed expression and localization of members of the PIN familiy of auxin efflux facilitators in roots.
 
-Under our experimental conditions, PIN1-GFP (
+Under our experimental conditions, PIN1-GFP (pPIN1:PIN1-GFP, [Benková et al., 2003]) was detected predominantly at the basal side of stele and endodermis cells of the wild type with occasional weak expression in cortex cells (Figure 5A,B). PIN2-GFP (pPIN2:PIN2-GFP; [Xu and Scheres, 2005]) is expressed in older epidermis and cortex cells exhibiting apical and basal polarity, respectively (Figure 5G). Interference with 14-3-3 function resulted in misexpression of the two auxin efflux carriers. PIN1-GFP fluorescence was observed in cortex cells with an intensity comparable to that in endodermis cells and also moderately in the epidermis (Figure 5C,D). PIN2-GFP showed misexpression in the younger epidermis and cortex daughter cells and in the entire lateral root cap as well (Figure 5H). Crossregulation of PIN gene expression has been described in pin mutants or plants with inhibited auxin transport (Vieten et al., 2005) and thus, the defects observed in emo1-RNAi roots are probably the consequence of the interference with auxin homeostasis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig5-v1.jpg)
 
-**Figure 5.:** emo-RNAi causes misexpression of PIN proteins in root tips.(A) to (H) Expression of PIN1-GFP (A–D) and PIN2-GFP (G, H) in wildtype (A, B, G) and emo1-RNAi (C, D, H) seedlings grown for 4 days on inductive medium. The ratio of GFP intensity on the basal to that on the lateral side of the plasma membrane is shown (E, n ≥ 64 cells, 12 roots, F, n ≥ 75 cells, 10 roots). en: endodermis, co: cortex, ep: epidermis.DOI: http://dx.doi.org/10.7554/eLife.24336.014
+**Figure 5.:** (A) to (H) Expression of PIN1-GFP (A–D) and PIN2-GFP (G, H) in wildtype (A, B, G) and emo1-RNAi (C, D, H) seedlings grown for 4 days on inductive medium. The ratio of GFP intensity on the basal to that on the lateral side of the plasma membrane is shown (E, n ≥ 64 cells, 12 roots, F, n ≥ 75 cells, 10 roots). en: endodermis, co: cortex, ep: epidermis.
 
 Notably, the subcellular polar localization of PIN-GFP proteins was reduced as a consequence of RNAi induction. In emo1-RNAi, the PIN1-GFP signal was not restricted to the basal side of those cells showing misexpression. In fact, PIN1-GFP was additionally detectable in the outer lateral PM-side of endodermal cells and did not show pronounced polarity in cortex cells (Figure 5D,E). Moreover, by contrast with the wild type, PIN2-GFP fluorescence is frequently visible in the inner lateral PM-side of cortex cells upon interference with 14-3-3 function (Figure 5F,H).
 
-## RNAi of 14-3-3 epsilon members interferes with endocytic membrane trafficking
+### RNAi of 14-3-3 epsilon members interferes with endocytic membrane trafficking
 
-PIN proteins continuously cycle between endosomes and the PM via vesicle trafficking allowing for the establishment and rapid alteration of polarity (
+PIN proteins continuously cycle between endosomes and the PM via vesicle trafficking allowing for the establishment and rapid alteration of polarity (Geldner et al., 2004; Dhonukshe et al., 2007). Furthermore, PIN proteins are sorted to the lytic vacuole via late endosomes (LE)/multivesicular bodies (MVB), resulting in protein degradation and modulation of auxin fluxes (Kleine-Vehn et al., 2008). Accordingly, treatment with vesicle trafficking inhibitors affects PIN trafficking/localization: Brefeldin A (BFA) causes PIN accumulation in intracellular, so-called BFA compartments encompassing aggregation of early endosomes (EE)/trans-Golgi network (TGN) and recycling endosomes that get surrounded by MVBs and the golgi apparatus (Robinson et al., 2008). We noticed that the BFA-induced PIN2-GFP accumulation was more pronounced in ethanol-treated root epidermis cells of emo1-RNAi as compared to the wild type (Figure 6A–F,K), irrespective of the presence of the protein synthesis inhibitor cycloheximide (CHX) (Figure 6G,I). A comparable scenario has been described for ric1-1 (Chen et al., 2012) and bex5-1 (Feraru et al., 2012) mutants, which are affected in endocytosis and PIN recycling to the plasma membrane, respectively. Endocytosis, however, does not seem to be significantly altered in emo1-RNAi as evidenced by short-term uptake of the endocytic tracer FM4-64 (Figure 7—figure supplement 1A,D). Strikingly, the mutant displayed BFA hypersensitivity even when treated with 10 μM BFA (Figure 6L), a concentration which preferentially inhibits recycling and minimizes the interference with vacuolar trafficking (Robert et al., 2010; Chen et al., 2012). This suggests that exocytosis might be affected in emo1-RNAi. Therefore, a washout experiment after BFA treatment was performed. While the PIN2-containing BFA compartments efficiently disappeared in wild-type root epidermal cells (washout efficiency: 66%, n ≥ 100 cells, 20 roots), BFA-induced PIN2-GFP agglomerations persisted in emo1-RNAi (washout efficiency: 39%, n ≥ 100 cells, 20 roots) (Figure 6G–J). Taken together, reduced expression of the 14-3-3 epsilon members interferes with PIN2 recycling events to the PM.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig6-v1.jpg)
 
-**Figure 6.:** emo-RNAi alters membrane trafficking processes.(A) to (F) PIN2-GFP in epidermal root cells of wild-type (A–C) and emo1-RNAi (D–F) seedlings grown for 4 days on inductive medium and treated with BFA for 10 min (A, D), 30 min (B, E) or 60 min (C, F). The BFA concentration used (μM) is given in brackets. (G) to (J) PIN2-GFP in epidermal root cells of induced (4d) wild-type (G, H) and emo1-RNAi (I, J) seedlings treated with cycloheximide (CHX, 50 μM) for 60 min followed by concomitant treatment with CHX and 50 μM BFA (G, I) and subsequent washout of BFA (H, J) for 60 min (wo), respectively. (K, L) Ratio of PIN2-GFP intensity in BFA bodies and the PM (1 BFA body and 1 PM per cell, K: n ≥ 90 cells, 15 roots; L: n ≥ 75 cells, 11 roots).DOI: http://dx.doi.org/10.7554/eLife.24336.015
+**Figure 6.:** (A) to (F) PIN2-GFP in epidermal root cells of wild-type (A–C) and emo1-RNAi (D–F) seedlings grown for 4 days on inductive medium and treated with BFA for 10 min (A, D), 30 min (B, E) or 60 min (C, F). The BFA concentration used (μM) is given in brackets. (G) to (J) PIN2-GFP in epidermal root cells of induced (4d) wild-type (G, H) and emo1-RNAi (I, J) seedlings treated with cycloheximide (CHX, 50 μM) for 60 min followed by concomitant treatment with CHX and 50 μM BFA (G, I) and subsequent washout of BFA (H, J) for 60 min (wo), respectively. (K, L) Ratio of PIN2-GFP intensity in BFA bodies and the PM (1 BFA body and 1 PM per cell, K: n ≥ 90 cells, 15 roots; L: n ≥ 75 cells, 11 roots).
 
-Next, endocytic transport to the vacuole was analyzed. The Rab5-like GTPase ARA7 marks a subdomain of the TGN but mostly accumulates at the MVBs (
+Next, endocytic transport to the vacuole was analyzed. The Rab5-like GTPase ARA7 marks a subdomain of the TGN but mostly accumulates at the MVBs (Singh et al., 2014) that become vacuolated in the presence of wortmannin (Robinson et al., 2008). While striking differences could not be observed in the absence of inhibitor, the size of ARA7-containing wortmannin-induced compartments displaying ring-shaped structures was remarkably reduced in emo1-RNAi as compared to the wild type (Figure 7A–G). Such a phenotype has – to our knowledge – not been described so far. Enlargement of ARA7-positive organelles is, however, characteristic of mutants such as gnom (impaired recycling: [Geldner et al., 2003]), vps29 (impaired retrograde trafficking: [Jaillais et al., 2007]) and sand (impaired MVB-vacuole fusion: [Singh et al., 2014]), which are affected in diverse post-Golgi trafficking processes but all interfere (indirectly or directly) with vacuolar targeting. Accordingly, we revealed through pulse labeling by FM4-64 and sequential treatments of cycloheximide and BFA that endosomal trafficking to the tonoplast membrane is significantly delayed in emo1-RNAi in comparison to the wild type (Figure 7H–N). The retarded trafficking of FM4-64 and thus, of PM material in general, to the vacuole is also evident in the absence of BFA (Figure 7—figure supplement 1B,E). Consistent with the observed effects on vacuolar trafficking, emo1-RNAi exhibits an increase in the total PIN2-GFP levels in membrane protein preparations in the presence of ethanol (Figure 7—figure supplement 1H), while transcript levels remain unaltered.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig7-v1.jpg)
 
-**Figure 7.:** emo-RNAi causes defects in wortmannin-compartment formation and endocytic transport to the vacuole.(A) to (G) PIN2-GFP (A, D) and mRFP-ARA7 (B, E) in epidermal root cells of induced (4d) wildtype (A–C) and emo1-RNAi (D–F) seedlings treated with cycloheximide (CHX, 50 μM) for 60 min followed by concomitant treatment with CHX and WM (15 μM) for 120 min. Measurement of the relative size of WM-compartments is shown in (G) (n = 100). (H) to (N) PIN2-GFP (H, K) and FM4-64 (I, L) in epidermal root cells of induced (4d) wild-type (H–J) and emo1-RNAi (K–M) seedlings pulse labeled by FM4-64 (5 min) and subsequently treated with CHX (50 μM, 1 hr) followed by concomitant treatment with CHX and 50 μM BFA for 1 hr. Percentage of FM4-64 stained BFA bodies (J, M) is shown in (N) (n ≥ 115 cells, 10 roots).DOI: http://dx.doi.org/10.7554/eLife.24336.016
+**Figure 7.:** (A) to (G) PIN2-GFP (A, D) and mRFP-ARA7 (B, E) in epidermal root cells of induced (4d) wildtype (A–C) and emo1-RNAi (D–F) seedlings treated with cycloheximide (CHX, 50 μM) for 60 min followed by concomitant treatment with CHX and WM (15 μM) for 120 min. Measurement of the relative size of WM-compartments is shown in (G) (n = 100). (H) to (N) PIN2-GFP (H, K) and FM4-64 (I, L) in epidermal root cells of induced (4d) wild-type (H–J) and emo1-RNAi (K–M) seedlings pulse labeled by FM4-64 (5 min) and subsequently treated with CHX (50 μM, 1 hr) followed by concomitant treatment with CHX and 50 μM BFA for 1 hr. Percentage of FM4-64 stained BFA bodies (J, M) is shown in (N) (n ≥ 115 cells, 10 roots).
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/24336/elife-24336-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** emo RNAi delays endocytic trafficking from TGN/EE to the vacuole and alters endosome homeostasis.(A) to (G) Root epidermal cells of induced (4d) wild-type (A–C) and emo1-RNAi (D–F) seedlings were stained with the endocytic tracer FM4-64 in the absence (A, B, D, E) or presence of 25 μM BFA (C, F) for the indicated times. Arrows indicate tonoplast staining. Percentage of cells exhibiting FM4-64-stained tonoplasts in the absence of BFA (see B, E) is shown in (G) (n ≥ 445 cells, 20 roots). (H) Immunodetection of PIN2-GFP in microsomal membranes prepared from wild-type and emo1-RNAi seedling roots grown in the absence or presence of ethanol (upper panel: GFP antibody, middle panel: PIN2 antibody). Coomassie staining (Cm) served as loading control (lower panel). (I) to (M) PIN2-GFP (I, K) and merge with FM4-64 (J, L) in epidermal root cells of induced (4d) wild-type (I, J) and emo1-RNAi (K, L) seedlings pretreated with FM4-64 (5 min) prior to concomitant treatment with 10 μM NAA and CHX for 30 min and followed by treatment with NAA, CHX and 50 μM BFA (90 min). The ratio of PIN2-GFP intensity in BFA bodies and the PM is shown in (M) (1 BFA body and 1 PM per cell, n ≥ 70 cells, 10 roots).DOI: http://dx.doi.org/10.7554/eLife.24336.017
+**Figure 7—figure supplement 1.:** (A) to (G) Root epidermal cells of induced (4d) wild-type (A–C) and emo1-RNAi (D–F) seedlings were stained with the endocytic tracer FM4-64 in the absence (A, B, D, E) or presence of 25 μM BFA (C, F) for the indicated times. Arrows indicate tonoplast staining. Percentage of cells exhibiting FM4-64-stained tonoplasts in the absence of BFA (see B, E) is shown in (G) (n ≥ 445 cells, 20 roots). (H) Immunodetection of PIN2-GFP in microsomal membranes prepared from wild-type and emo1-RNAi seedling roots grown in the absence or presence of ethanol (upper panel: GFP antibody, middle panel: PIN2 antibody). Coomassie staining (Cm) served as loading control (lower panel). (I) to (M) PIN2-GFP (I, K) and merge with FM4-64 (J, L) in epidermal root cells of induced (4d) wild-type (I, J) and emo1-RNAi (K, L) seedlings pretreated with FM4-64 (5 min) prior to concomitant treatment with 10 μM NAA and CHX for 30 min and followed by treatment with NAA, CHX and 50 μM BFA (90 min). The ratio of PIN2-GFP intensity in BFA bodies and the PM is shown in (M) (1 BFA body and 1 PM per cell, n ≥ 70 cells, 10 roots).
 
 At the cellular level, the absence of 14-3-3 epsilon group members did hence entail disturbance of at least two endocytic trafficking pathways: from the TGN to the vacuole and to the PM. We thus assumed the level of PIN2-GFP to be elevated in intracellular vesicular structures of emo1-RNAi. Indeed, in contrast to the wild type, considerable levels of PIN2-GFP are detectable in endosomal structures in emo1-RNAi following short-term treatment (10 min) with BFA concentrations as low as 10 μM (Figure 6A,D). Auxins such as NAA inhibit endocytosis but do not interfere with the BFA-induced formation of endosomal BFA compartments (Paciorek et al., 2005). When pretreated with FM4-64 (5 min), we observed a reduced frequency and size of FM-stained BFA bodies in NAA (and CHX)-treated plants. Nonetheless, in contrast to the wild type, PIN2-GFP localized to BFA compartments of emo1-RNAi root epidermal cells (Figure 7—figure supplement 1I–M), strongly supporting an increased PIN2-GFP content in endosomal structures. Taken together, our finding clearly points to an accumulation of PIN2-GFP in endosomal vesicles such as early/recycling endosomes and MVBs.
 
-## 14-3-3 epsilon group members may directly regulate trafficking processes
+### 14-3-3 epsilon group members may directly regulate trafficking processes
 
 Since trafficking processes were affected by the RNAi approach, we wondered whether the respective 14-3-3 isoforms localize to post Golgi compartments. Indeed, they do since BFA clearly induced the accumulation of epsilon group members in BFA bodies (mu: Figure 1R,S).
 
-Next, we identified potential targets of 14-3-3 epsilon-GFP by stringent co-immunoprecipitation experiments coupled with MS-based protein identification (Table 1—source data 1). As expected, several well-characterized 14-3-3 interactors were identified by MS (highlighted in green in Table 1—source data 1), among those different isoforms of the plasma membrane H+-ATPase. Furthermore, a remarkable number of proteins known or assumed to be involved in membrane trafficking processes co-precipitated with epsilon-GFP but not GFP alone (Table 1). These include small GTPases (subfamily RAB) and their effector proteins (subfamilies ARF and RAB), required for vesicle formation (ARF) and tethering (RAB) (Park and Jürgens, 2011; Vernoud et al., 2003). Likewise, AtTRS130 has been suggested to act upstream of RAB-A GTPases in post-Golgi membrane trafficking (Qi et al., 2011). In addition, adaptors of membrane vesicle coat proteins involved in clathrin-related endomembrane trafficking in plants (ENTH/ANTH/VHS superfamily proteins) (Zouhar and Sauer, 2014), proteins essential for vesicle fusion, such as regulators of SNAREs (e.g. SEC1B) and a regulator of the MVB pathway (IST1-LIKE 3) were identified as putative epsilon interactors (Table 1). The list of potential epsilon interactors thus strongly suggests a direct regulation of cellular trafficking by 14-3-3 proteins.10.7554/eLife.24336.018Table 1.Analysis of 14-3-3 epsilon-GFP immunoprecipitates via mass spectrometry (MS) based on two biological replicates. This table lists only proteins with a possible role in membrane trafficking. Proteins depicted in a clustered manner (without blank line) represent alternative possibilities based on the MS-identified peptides.DOI: http://dx.doi.org/10.7554/eLife.24336.01810.7554/eLife.24336.019Table 1—source data 1.Complete list of 14-3-3 epsilon interactors based on two biological replicates.Proteins listed in Table 1 are shown in bold face while well characterized 14-3-3 clients are highlighted in green.DOI: http://dx.doi.org/10.7554/eLife.24336.019AGI codeGene nameDescriptionAt1g08680AGD14ADP-ribosylation factor (ARF) GTPase-activating proteinAt1g09630RAB-A2aMember of the RAB-A subfamily of small Rab GTPasesAt1g16920RAB-A1b/BEX5At3g15060RAB-A1gAt4g18800RAB-A1dAt5g45750RAB-A1cAt5g60860RAB-A1fAt1g12360KEULE/SEC11SNARE-interacting protein Sec1 proteinAt1g14670Endomembrane protein 70 protein familyAt2g01970Endomembrane protein 70 protein familyAt5g37310At2g20790AP5MAP-5 complex subunit muAt2g25430ENTH/ANTH/VHS superfamily proteinAt2g37550AGD7ARF GTPase-activating protein AGD7At2g43160EPSIN2ENTH/ANTH/VHS superfamily proteinAt3g59290EPSIN3At3g09900RAB-E1eMember of the RAB-E subfamily of small Rab GTPasesAt3g46060RAB-E1c/ARA3At3g53610RAB-E1aAt5g03520RAB-E1dAt3g53710AGD6ARF GTPase-activating protein AGD6At4g12120SEC1BMember of KEULE gene familyAt4g32285ENTH/ANTH/VHS superfamily proteinAt4g35730IST1-LIKE 3Regulator of Vps4 activity in the MVB pathway proteinAt5g52580RAB GTPase activator activityAt5g54440ATTRS130TRAPII tethering factor, CLUB
+Next, we identified potential targets of 14-3-3 epsilon-GFP by stringent co-immunoprecipitation experiments coupled with MS-based protein identification (Table 1—source data 1). As expected, several well-characterized 14-3-3 interactors were identified by MS (highlighted in green in Table 1—source data 1), among those different isoforms of the plasma membrane H+-ATPase. Furthermore, a remarkable number of proteins known or assumed to be involved in membrane trafficking processes co-precipitated with epsilon-GFP but not GFP alone (Table 1). These include small GTPases (subfamily RAB) and their effector proteins (subfamilies ARF and RAB), required for vesicle formation (ARF) and tethering (RAB) (Park and Jürgens, 2011; Vernoud et al., 2003). Likewise, AtTRS130 has been suggested to act upstream of RAB-A GTPases in post-Golgi membrane trafficking (Qi et al., 2011). In addition, adaptors of membrane vesicle coat proteins involved in clathrin-related endomembrane trafficking in plants (ENTH/ANTH/VHS superfamily proteins) (Zouhar and Sauer, 2014), proteins essential for vesicle fusion, such as regulators of SNAREs (e.g. SEC1B) and a regulator of the MVB pathway (IST1-LIKE 3) were identified as putative epsilon interactors (Table 1). The list of potential epsilon interactors thus strongly suggests a direct regulation of cellular trafficking by 14-3-3 proteins.
 
-## Conclusions
+**Table 1.**
+ Analysis of 14-3-3 epsilon-GFP immunoprecipitates via mass spectrometry (MS) based on two biological replicates. This table lists only proteins with a possible role in membrane trafficking. Proteins depicted in a clustered manner (without blank line) represent alternative possibilities based on the MS-identified peptides.Table 1—source data 1.Complete list of 14-3-3 epsilon interactors based on two biological replicates.Proteins listed in Table 1 are shown in bold face while well characterized 14-3-3 clients are highlighted in green.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>AGI code</th>
+      <th>Gene name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>At1g08680</td>
+      <td>AGD14</td>
+      <td>ADP-ribosylation factor (ARF) GTPase-activating protein</td>
+    </tr>
+    <tr>
+      <td>At1g09630</td>
+      <td>RAB-A2a</td>
+      <td>Member of the RAB-A subfamily of small Rab GTPases</td>
+    </tr>
+    <tr>
+      <td>At1g16920</td>
+      <td>RAB-A1b/BEX5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At3g15060</td>
+      <td>RAB-A1g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At4g18800</td>
+      <td>RAB-A1d</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At5g45750</td>
+      <td>RAB-A1c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At5g60860</td>
+      <td>RAB-A1f</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At1g12360</td>
+      <td>KEULE/SEC11</td>
+      <td>SNARE-interacting protein Sec1 protein</td>
+    </tr>
+    <tr>
+      <td>At1g14670</td>
+      <td></td>
+      <td>Endomembrane protein 70 protein family</td>
+    </tr>
+    <tr>
+      <td>At2g01970</td>
+      <td></td>
+      <td>Endomembrane protein 70 protein family</td>
+    </tr>
+    <tr>
+      <td>At5g37310</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At2g20790</td>
+      <td>AP5M</td>
+      <td>AP-5 complex subunit mu</td>
+    </tr>
+    <tr>
+      <td>At2g25430</td>
+      <td></td>
+      <td>ENTH/ANTH/VHS superfamily protein</td>
+    </tr>
+    <tr>
+      <td>At2g37550</td>
+      <td>AGD7</td>
+      <td>ARF GTPase-activating protein AGD7</td>
+    </tr>
+    <tr>
+      <td>At2g43160</td>
+      <td>EPSIN2</td>
+      <td>ENTH/ANTH/VHS superfamily protein</td>
+    </tr>
+    <tr>
+      <td>At3g59290</td>
+      <td>EPSIN3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At3g09900</td>
+      <td>RAB-E1e</td>
+      <td>Member of the RAB-E subfamily of small Rab GTPases</td>
+    </tr>
+    <tr>
+      <td>At3g46060</td>
+      <td>RAB-E1c/ARA3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At3g53610</td>
+      <td>RAB-E1a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At5g03520</td>
+      <td>RAB-E1d</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At3g53710</td>
+      <td>AGD6</td>
+      <td>ARF GTPase-activating protein AGD6</td>
+    </tr>
+    <tr>
+      <td>At4g12120</td>
+      <td>SEC1B</td>
+      <td>Member of KEULE gene family</td>
+    </tr>
+    <tr>
+      <td>At4g32285</td>
+      <td></td>
+      <td>ENTH/ANTH/VHS superfamily protein</td>
+    </tr>
+    <tr>
+      <td>At4g35730</td>
+      <td>IST1-LIKE 3</td>
+      <td>Regulator of Vps4 activity in the MVB pathway protein</td>
+    </tr>
+    <tr>
+      <td>At5g52580</td>
+      <td></td>
+      <td>RAB GTPase activator activity</td>
+    </tr>
+    <tr>
+      <td>At5g54440</td>
+      <td>ATTRS130</td>
+      <td>TRAPII tethering factor, CLUB</td>
+    </tr>
+  </tbody>
+</table>
+
+### Conclusions
 
 Our data provide insight into functions of 14-3-3 epsilon members in auxin transport-dependent plant growth and development. We applied ethanol-inducible RNAi as well as amiRNA to simultaneously reduce the expression of three epsilon group members (epsilon, mu, omicron: emo-RNAi and amiRNA-(em)o). Considering that the residual ‘non-target’ isoforms (iota, pi) are exclusively expressed in floral organs and seeds, such an approach results in knockdown of the entire epsilon group in seedlings. This gives rise to severe phenotypes as observed in plants treated with inhibitors of auxin transport or, alternatively, vesicle trafficking inhibitors, such as BFA or wortmannin (Jaillais et al., 2006; Geldner et al., 2001). Intriguingly, auxin distribution, polar auxin transport and the subcellular polar distribution of PIN efflux carriers are severely affected in emo-RNAi mutants, and defects in post-Golgi trafficking processes, in particular recycling from the TGN to the PM as well as endocytic transport to the vacuole, are indeed causative for this phenotype. A direct regulation of trafficking processes by 14-3-3s is corroborated by the facts that (i) the targeted 14-3-3 isoforms indeed localize to post-Golgi compartments and (ii) several key factors of endosomal trafficking co-precipitated with 14-3-3 epsilon (see below).
 
@@ -160,11 +306,11 @@ In conclusion, our results provide clear evidence for the involvement of 14-3-3 
 
 ## Materials and methods
 
-## Plasmid constructs
+### Plasmid constructs
 
 Ethanol-inducible RNAi: Three individual fragments derived from the cDNA of either the 14-3-3 isoform epsilon (AT1G22300, CDS 387–498), mu (AT2G42590, CDS 213–358) or omicron (AT1G34760, CDS 387–498) were amplified by PCR and sequentially cloned as inverted repeats into a derivative of pHANNIBAL (Wesley et al., 2001) in which the 35S promoter has been replaced by the ethanol-inducible promoter pAlcA (Roslan et al., 2001). Subsequently, the pAlcA::epsilon_omicron_mu_RNAi cassette was cloned into the NotI site of the plant transformation vector pBART_AlcR (Figure 2—figure supplement 1).
 
-## Ethanol-inducible amiRNA
+### Ethanol-inducible amiRNA
 
 The amiRNAs (one designed to silence epsilon and mu simultaneously, the second designed to silence omicron) were PCR amplified according to the protocol provided via WMD3 Web MicroRNA Designer (http://wmd3.weigelworld.org) and individually subcloned. The two different amiRNA cassettes were then sequentially cloned into pBJ36_AlcA. Finally, the pAlcA-driven cassette containing both amiRNA constructs was cloned via the NotI site into pBART_AlcR.
 
@@ -172,60 +318,60 @@ For dexamethasone-dependent expression of AHA2 devoid of its autoinhibitory C-te
 
 A complete list of oligonucleotides used for PCR and RT-PCR is provided below.
 
-## Plant materials and growth conditions
+### Plant materials and growth conditions
 
 Seeds of A. thaliana wild-type (ecotype Col-0) and transgenic lines were surface sterilized and treated for 48 hr at 4°C before planting. Seedlings were grown at 20°C in continuous light (90 μmol m−2s−1) or darkness (after exposure to fluorescent white light for 4 hr) on solid MS medium (pH 5.8) containing 1% (w/v) sucrose optionally supplemented with 0.1% (v/v) ethanol. For hypocotyl or root length measurements, seedlings were sandwiched between two sheets of acetate and scanned in a flatbed scanner. The digitized images were analyzed using the NIH image software. For gravitropic analysis, 4-day-old seedlings were transferred to ethanol containing solid MS medium for 2 days followed by a gravistimulation (90° or 135° turn) for the indicated time. Independent experiments were carried out at least in triplicate with the same significant results. Representative images are presented. Statistics were evaluated with Excel (Microsoft).
 
-## Transgenic plants
+### Transgenic plants
 
 Seeds of transgenic Arabidopsis lines carrying DR5rev::GFP or PIN1:GFP (Benková et al., 2003) were obtained from the Nottingham Arabidopsis Stock Centre. DR5::GUS (Ulmasov et al., 1997), PIN2::PIN2:GFP (Xu and Scheres, 2005) and 35S::mRFP-ARA7 (Beck et al., 2012) transformed lines were obtained from Gerd Jürgens (ZMBP, Tübingen, Germany).
 
-## Auxin treatment and application of drugs
+### Auxin treatment and application of drugs
 
 For the analysis of auxin-induced gene expression and for induction of lateral root formation as well as for DR5::GUS staining of primary root tips, seedlings grown on plates were transferred into 24-well culture plates containing 1.5 mL of liquid medium supplemented with auxin or mock solvent and incubated for the indicated times. Stock solutions (100 mM) in DMSO were used for naphthalene acetic acid (NAA), indole-3-acetic acid (IAA) and 2,4 dichlorphenoxyacetic acid (2,4D).
 
 Exogenous drugs were applied by incubation of 4-day-old seedlings in liquid MS medium supplemented with BFA (50 mM stock in DMSO) (10, 25 or 50 μM), wortmannin (50 mM stock in DMSO) (15 μM) or cycloheximide (50 mM stock in DMSO) (50 μM). Control treatments contained an equal amount of solvent. Double drug treatments were carried out with 30 or 60 min of pretreatment followed by concomitant drug treatment for the indicated times.
 
-## GUS staining procedures and histological analysis
+### GUS staining procedures and histological analysis
 
 Plants were treated with 90% acetone on ice for 30 min, then washed twice in GUS staining buffer (50 mM sodium phosphate (pH 7), 0.1% Triton X-100, 1 mM of each K3FeIII(CN)6 and K4FeII(CN)6) and stained at 37°C in darkness in GUS staining buffer containing X-Gluc in a final concentration of 0.2 mg/mL. Clearing of root tissues was done as described previously (Malamy and Benfey, 1997).
 
-## Auxin transport assay
+### Auxin transport assay
 
 Measurement of root acropetal auxin transport was essentially done as described by (Lewis and Muday, 2009). In brief, 6-day-old emo1-RNAi seedlings were transferred to MS, 1% sucrose plates plus or minus 0.1% ethanol. Warm agar (1.25% (w/v), 50°C) was mixed with 200 nM radioactive indole-3-acetic acid (5-3H IAA, 20 Ci/mmol, American Radiolabeled Chemicals) and droplets (5 μL) were prepared. Such droplets were applied exactly 1 cm above the root tip. The IAA transport was measured in vertically oriented plants (inverted plates) after 18 hr in the dark (to minimize IAA degradation) at room temperature. Therefore, the first 0.5 cm of the root underneath the site of auxin application was discarded, and the remaining root segment was used for the measurement of radioactivity.
 
-## RNA isolation and RT-PCR
+### RNA isolation and RT-PCR
 
 Total RNA was extracted from seedlings using the Nucleo Spin RNA II kit (Macherey-Nagel) and used as a template for cDNA synthesis with RevertAid H Minus Reverse Transcriptase (Thermo Scientific, Germany) according to the manufacturer’s instructions. A complete list of oligonucleotides used for PCR and RT-PCR is provided below.
 
-## Preparation of microsomal membranes
+### Preparation of microsomal membranes
 
 Microsomal membrane fractions were prepared from 7 day-old seedlings. Tissue was homogenized with 3.5 mL homogenization buffer per mg FW (330 mM sucrose, 50 mM Tris-HCl (pH 7.5), 0.5% (w/v) casein, 1.5% (w/v) PVP-40, 3 mM DTT, 5 mM EDTA and Complete protease inhibitor mixture (Roche)). The homogenate was centrifuged at 10,000 g for 20 min at 4°C. The supernatant was centrifuged at 110,000 g for 45 min at 4°C. The microsomal pellet was resuspended in 50 mM Tris-HCl (pH 7.5),10 % (v/v) glycerol, 1 mM EDTA, 1 mM DTT and Complete protease inhibitor mixture.
 
-## Yeast two-hybrid assay, SDS-PAGE and Western blotting
+### Yeast two-hybrid assay, SDS-PAGE and Western blotting
 
 For yeast two-hybrid analyses, the individual constructs were cloned into the vectors pGADT7 and pGBKT7 and co-transformed into the yeast strain PJ69-4A. The PIN2 hydrophilic loop region analyzed comprises amino acids 189–477. Activity of the ADE2 reporter was analyzed by growth of transformed yeast on SD medium lacking adenine. SDS-PAGE, Western blotting and immunodetection followed standard procedures.
 
-## CoIP-MS analysis
+### CoIP-MS analysis
 
 Arabidopsis seedlings expressing 14-3-3 epsilon-GFP (endogenous promoter) and, as control, GFP (UBQ10 promoter) were grown under continuous light in liquid medium. Three grams plant tissue were taken for the immunoprecipitation as described in (Park et al., 2012) with slight modifications. The lysis buffer contained 1% Triton X-100 and PhosSTOP phosphatase inhibitor cocktail (Roche). GFP-Trap Beads (50 μL) (ChromoTek) were added to each sample and the final precipitate in Laemmli buffer was analyzed by MS at the University of Tübingen Proteome Center. Following a tryptic in gel digestion, LC-MS/MS analysis was performed on a Proxeon Easy-nLC coupled to an Orbitrap Elite mass spectrometer (method: 130 min, Top15, HCD). Processing of the data was conducted using MaxQuant software (vs 1.5.2.8). The spectra were searched against an A. thaliana UniProt database. Raw data processing was performed with 1% false discovery rate setting.
 
 Two individual biological replicates were performed and the following candidates were omitted from the list of epsilon-GFP interaction partners: (i) proteins that interacted with GFP (control), (ii) proteins that were identified in only one of the two experiments and (iii) mitochondrial and chloroplastic proteins.
 
-## Ratiometric bimolecular fluorescence complementation (rBiFC)
+### Ratiometric bimolecular fluorescence complementation (rBiFC)
 
 14-3-3 isoforms and the PIN2 hydrophilic loop region were amplified from existing templates and cloned, using GATEWAY technology (Life Technologies), into pBiFCt-2in1_CC allowing for (i) simultaneous cloning of two genes into the same vector backbone and (ii) ratiometric analysis due to additional expression of mRFP (Grefen and Blatt, 2012). Fluorescence intensity (reconstituted YFP vs. RFP) was measured after transient Agrobacterium-mediated transformation of Nicotiana benthamiana leaves as described (Grefen and Blatt, 2012).
 
-## Fluorescent protein constructs and fluorescence microscopy
+### Fluorescent protein constructs and fluorescence microscopy
 
 The genomic sequence of diverse 14-3-3 isoforms, comprising the respective promoter (intergenic region), was obtained from BAC clones either by restriction enzyme digestion and/or by PCR-based amplification and finally ligated into pGTkan (Dettmer et al., 2006). All PCR-amplified fragments were controlled by sequencing. Transgenic plants were selected based on the kanamycin resistance conferred by pGTkan and homozygous lines were established.
 
 Live-cell imaging was performed using 4- to 6-day-old seedlings and the Leica TCS SP8 confocal laser scanning microscope. FM4-64 was used at 2 μM final concentration. The excitation wavelength was 488 nm, and the emission was detected for GFP between 500 and 530 nm and for FM4-64 between 620 and 680 nm. All CLSM images in a single experiment were captured with the same settings using the Leica Confocal Software. All the experiments were repeated at least three times. Images were processed using Adobe Photoshop CS3. Quantification of the fluorescence signal was performed by Image J software. For distribution of DR5rev::GFP, signals in lateral root cap cells of gravistimulated roots (proximal to quiescent center) were assessed. The basal/lateral ratio of signal intensities of PIN-GFP proteins was calculated by determination of mean values of defined PM-areas at the basal and lateral side of root endodermis (PIN1-GFP) or cortex (PIN2-GFP) cells. For the evaluation of sensitivity to BFA, the mean fluorescence intensity of PIN2-GFP was measured in defined areas of BFA bodies and the PM. Washout efficiency was calculated on the basis of the BFA/PM intensity ratio before and after washout of BFA.
 
-## Analysis of publicly available expression data and phylogenetic relationship of 14-3-3 family members
+### Analysis of publicly available expression data and phylogenetic relationship of 14-3-3 family members
 
 Multiple alignment of full-length protein sequences of published genes encoding for 14-3-3 isoforms in A. thaliana (Sehnke et al., 2002), S. lycopersicum (Xu and Shi, 2006), O. sativa (Yao et al., 2007), M. truncatula, P. trichocarpa and P. patens (Tian et al., 2015) was performed using CLC Main Workbench 7.8. A maximum likelihood phylogenetic tree was constructed with 10,000 bootstrap replicates.
 
 The normalized microarray data provided in the ‘Developmental Map’ of the eFP Browser at the Bio-Analytic Resource for Plant Biology (BAR) (http://bar.utoronto.ca) (Arabidopsis eFP Browser, Medicago eFP Browser, Poplar eFP Browser, Rice eFP Browser, Physcomitrella eFP Browser) and the RNA-Seq data available at the Tomato Functional Genomics Database (http://ted.bti.cornell.edu/cgi-bin/TFGD/digital/home.cgi) (Digital expression experiment D006: Transcriptome analysis of various tissues in wild species S. pimpinellifolium) were used for the tissue-specific expression analysis. Absolute signal intensity values for probe set IDs corresponding to 14-3-3 genes as well as ubiquitin were selected for further analyses.
 
-## List of primers used in this study
+### List of primers used in this study

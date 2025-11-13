@@ -26,33 +26,128 @@ The complex genome of eukaryotes is pervasively transcribed and efforts to compr
 
 Currently, three major functional principles can be assigned to lncRNA loci (Figure 1B): (1) either the RNA is the functional biomolecule and interacts with other components in the cell, for example DNA, proteins or RNAs, (2) a gene regulatory element is embedded in the transcription body of a lncRNA gene and the activity of the lncRNA gene directs the activity of the regulatory element or (3) the process of transcription influences genome and thereby gene activity. A lncRNA locus can haveone of these functions or a mixture of them (Yin et al., 2015). In this review we will focus on the latter two functional lncRNA properties, in which the RNA is, at least partially dispensable for the lncRNA gene function.
 
-## The transcription of genes
+### The transcription of genes
 
 The generation of RNA using the genome as a template, or the process of transcription, depends on certain functional genomic elements (Figure 2). The core element of a gene that initiates the production of an RNA is the promoter. A GC-rich element that is accessible (open chromatin) will attract the polymerase machinery and general transcription factors (TFs). This minimal core element serves as a core promoter and can be sufficient to initiate transcription (Deaton and Bird, 2011). Transcription of RNA starts at the transcriptional start site (TSS), which is located within the core promoter. Like PCGs, most lncRNAs are transcribed by POL II (RNA polymerase 2, a multiprotein complex), but are more tissue-specific compared to PCGs (for review see Ransohoff et al., 2018). Both biotypes (PCGs and lncRNAs) have conserved core promoter sequences with fewer overlapping TF binding motifs in lncRNA promoters, resulting in an overall lower expression level compared to PCGs (Figure 2; Mattioli et al., 2019). Thus, the architecture of the core promoter is the first player that defines the degree of lncRNA expression (Batut and Gingeras, 2017; Mattioli et al., 2019). The second important element that influences the transcription of genes are enhancers, which are cis-regulatory elements that can either have a positive or a negative (which are then often referred to as repressors) impact on their target genes. Consequently, enhancers are genomic regions that encode binding sites for sequence-specific activator or repressor TFs. These elements often confer specificity in spatiotemporal expression. Many lncRNAs can also be generated from such enhancer elements, which contributes to their overall more tissue-specific expression when compared to PCGs (Mattioli et al., 2019).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60583/elife-60583-fig2-v1.jpg)
 
-**Figure 2.:** A) LncRNA and (B) mRNAs: lncRNA genes are lowly expressed as fewer transcription factors (TFs) bind the promoter.In addition, lncRNA TSS, exon and/or pA site more often associate with transposable elements (TEs), while TEs contribute mostly to UTRs and/or introns of mRNAs. In addition, mRNAs are more efficiently spliced.
+**Figure 2.:** In addition, lncRNA TSS, exon and/or pA site more often associate with transposable elements (TEs), while TEs contribute mostly to UTRs and/or introns of mRNAs. In addition, mRNAs are more efficiently spliced.
 
 The core promoter initiates transcription and thereby the generation of an RNA that may or may not be further diversified by splicing (Figure 2). This depends on whether splice sites are present between the promoter and the transcription termination element, the polyadenylation signal (pA). The mechanism of PCG and lncRNA splicing is similar, although the splicing efficiency of lncRNAs is lower than PCGs, likely due to the loss of proximal RNA POL II phosphorylation over 5’ splice sites (Krchnáková et al., 2019). In addition, lncRNAs show signs of co-transcriptional cleavage and premature termination with Thr4p PolII enriched over the entire lncRNA body (Schlackow et al., 2017). At some point the transcriptional machinery will run into a termination signal, a DNA sequence element consisting of AATAAA and downstream GU (or U)-rich motifs (Eaton et al., 2020). These elements are ubiquitously present in the genome. In humans, one can find 569,005 elements that meet the criterion of a pA signal (301,001 in mouse and 20,931 in C. elegans) (Herrmann et al., 2020). Moreover, this high number likely ensures successful termination of transcription (Eaton and West, 2020).
 
 Another class of genetic elements that play an important role for gene and genome activity are transposable elements (TEs) (for review see Chuong et al., 2017). These mobile genomic elements make up more than 44% of the human genome (Lander et al., 2001) and attracted attention as important regulators of gene and genome activity (Bourque et al., 2018). In this respect, TEs are an important component of lncRNA biology as well (Figure 2A). Approximately, 75% of lncRNA transcripts contain sequence elements from TEs (Kapusta et al., 2013) and some of them represent important sequence elements to direct lncRNA localization (Lubelsky and Ulitsky, 2018). In addition, 25% of TEs are found to overlap with TSS and pA signals of lncRNA genes (Kapusta et al., 2013). Hence, they are an important driving force of lncRNA expression. One recent example is the primate-specific lncRNA XACT (Table 1), which has been shown to protect the active X chromosome from being silenced (antagonizing XIST lncRNA effect) and whose sequence contains elements derived from a TE (Casanova et al., 2019). Interestingly, XACT lncRNA is also regulated by a TE-derived enhancer element that harbors pioneer pluripotency factor binding sites. This exemplifies that TEs containing embedded TF motifs can direct tissue-specific expression when they insert next to a promoter element. Several other TE-derived lncRNAs are described elsewhere (Kapusta et al., 2013).
 
+**Table 1.**
+ Selection of lncRNA genes with RNA independent function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>LncRNA</th>
+      <th>Relative location of respective TSSs target gene</th>
+      <th>Literature</th>
+      <th colspan="2">Mode of action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Regulatory element located within the transcription unit</td>
+    </tr>
+    <tr>
+      <td>Haunt (Halr1)</td>
+      <td>40 kb downstream of HOXA</td>
+      <td>Yin et al., 2015</td>
+      <td colspan="2">Activation of HOXA</td>
+    </tr>
+    <tr>
+      <td>Lockd</td>
+      <td>4 kb downstream of Cdkn1b</td>
+      <td>Paralkar et al., 2016</td>
+      <td colspan="2">Positive regulation of Cdkn1b via loop formation</td>
+    </tr>
+    <tr>
+      <td>Meteor</td>
+      <td>80 kb upstream of Eomes</td>
+      <td>Alexanian et al., 2017</td>
+      <td colspan="2">Positive licensing of Eomes expression</td>
+    </tr>
+    <tr>
+      <td>ThymoD</td>
+      <td>844 kb downstream of Bcl11b</td>
+      <td>Isoda et al., 2017</td>
+      <td colspan="2">DNA methylation, CTCF-binding</td>
+    </tr>
+    <tr>
+      <td>Pcdhα-as</td>
+      <td>Pcdhα</td>
+      <td>Canzio et al., 2019</td>
+      <td colspan="2">DNA methylation, CTCF-binding</td>
+    </tr>
+    <tr>
+      <td>GAL10-ncRNA</td>
+      <td>GAL10 antisense transcript</td>
+      <td>Houseley et al., 2008</td>
+      <td colspan="2">GAL10 promoter acetylation</td>
+    </tr>
+    <tr>
+      <td>AIRN</td>
+      <td>28 kb Antisense to Igfr2</td>
+      <td>Latos et al., 2012</td>
+      <td colspan="2">Promoter methylation</td>
+    </tr>
+    <tr>
+      <td>Upperhand (Hand2os1)</td>
+      <td>0,1 kb upstream of Hand2</td>
+      <td>Anderson et al., 2016; Han et al., 2019</td>
+      <td colspan="2">Promotes enhancer accessibility for Hand2 activation</td>
+    </tr>
+    <tr>
+      <td colspan="5">Activity exerted by transcription initiation or elongation</td>
+    </tr>
+    <tr>
+      <td>Ftx</td>
+      <td>140 kb upstream of Xist</td>
+      <td>Furlan et al., 2018</td>
+      <td colspan="2">Xist activation independent of Ftx RNA</td>
+    </tr>
+    <tr>
+      <td>Chaserr</td>
+      <td>16 kb upstream of Chd2</td>
+      <td>Rom et al., 2019</td>
+      <td colspan="2">Negative regulation of Chd2</td>
+    </tr>
+    <tr>
+      <td>PVT1</td>
+      <td>52 kb downstream of Myc</td>
+      <td>Cho et al., 2018</td>
+      <td colspan="2">Enhancer boundary element</td>
+    </tr>
+    <tr>
+      <td>Handsdown (Handlr)</td>
+      <td>11 kb downstream of Hand2</td>
+      <td>George et al., 2019; Ritter et al., 2019</td>
+      <td>Transcriptional elongation-based enhancer shielding</td>
+    </tr>
+  </tbody>
+</table>
+
 In summary, the genome stores the information required to generate the RNAs that are necessary for a cell’s proper function, whether the RNA is protein-coding or not. An elaborate machinery is established that controls the specific activation of genes and whole genomic regions via positive or negative mechanisms. These regulatory mechanisms require energy investment from the cell. It is conceivable that sometimes it can be ‘cheaper’ for a cell to let spurious transcription of non-harmful transcripts occur, might they be coding or non-coding, than to invest energy in silencing all of these transcriptionally active sites.
 
-## Layers of gene regulation
+### Layers of gene regulation
 
 The expression of genes and whole genomic regions is controlled by several layers of regulation. In addition to the genomic elements described above, DNA is packed with histone proteins into chromatin. These protein components can be modified to act as signaling centers for the transcription machinery (for review see Talbert et al., 2019). In addition, the proteins of the nucleus also regulate the 3D arrangement of genomic DNA in such a way that functionally connected elements of gene regulation come together. In short, each chromosome is composed of sub-megabase units known as topologically associated domains (TADs), the structural and functional unit of the chromosome (for review see Szabo et al., 2019). Such genome arrangements can allow for promoter-enhancer contacts and organize functionally dependent regulatory elements together (Hnisz et al., 2017). The major factors that regulate this organization are CTCF (CCCTC-binding TF) and the cohesin complex (Ali et al., 2016; Rao et al., 2017). CTCF binding frequently co-localizes and interacts with the cohesin complex at TAD borders (Li et al., 2020). Indeed, elimination of cohesin dissolves all chromatin TADs even in the presence of CTCF (Rao et al., 2017). Interestingly, disruption of the TADs either by removal of CTCF or cohesin results in unexpected mild effects on gene expression (Nora et al., 2017; Rao et al., 2017). While it has been accepted that gene expression and 3D genome folding are correlated, their functional relevance is still to be elucidated (Ibrahim and Mundlos, 2020).
 
 All of these enhancers and genome organizing regions must be functionally regulated to accurately control gene and genome activity. As many such regulatory sites are associated with lncRNAs, these lncRNA loci might be important functional support elements. The process of transcription can assist in reorganizing chromatin marks (van Steensel and Furlong, 2019), allowing regions to be accessible for other factors or prevent others by diverting/directing the transcription machinery to nearby genes.
 
-## Current annotations in the database are a work-in-progress
+### Current annotations in the database are a work-in-progress
 
 Current annotations of genomic databases categorize genes according to various criteria. One that appears, on the surface, to be very simple is the separation of protein-coding genes (PCGs) and non-protein-coding genes (NCGs). It was already found some time ago that RNAs originating from NCGs do actually associate with ribosomes, the machinery that translates mRNAs into proteins (Ingolia et al., 2011; van Heesch et al., 2014). This association is not surprising, as the ribosomes function is to bind RNAs in the cytosol and attempt to translate it into a peptide or protein. However, just because an RNA is bound to a ribosome does not mean it is translated and even if translated, the pure presence of a peptide does not prove a function of this peptide. In more recent in-depth studies, it was found that some lncRNAs do produce peptides and that some of these peptides are even functional (Chen et al., 2020; Ji et al., 2015; van Heesch et al., 2019), including within 5’ and 3’ untranslated regions (UTR) of mRNAs. Hence, until databases are updated with suitable information that incorporates the presence of peptides derived from expressed RNAs, a peptide coding probability always must be taken into consideration when studying lncRNA function. Equally important, many PCG or NCGs have a high number of splice variants, some of which might encode a peptide and others not.
 
 The revolution of high-throughput sequencing of fragmented cDNA libraries revealed the complexity of expression from the genome. Enrichment of lowly expressed transcripts and subsequent sequence analysis identified an even more complex pattern of splice variants (Mercer et al., 2012). However, these analyses relied on the sequencing of fragmented cDNA libraries and subsequent reconstruction of the transcriptome to a reference genome. The most recent generation of long read sequencers, such as the PacBio or the Nanopore systems, allows the direct analysis of RNAs and eliminates the intermediate step of a fragmented cDNA library. Capturing lncRNA genes specifically and resequencing by Long-read platform (known as Capture Long Sequence or CLS) determined the full variety of splice variants of the mammalian transcriptome (Lagarde et al., 2017). The advantage of this technology is the capability to precisely determine 5’ and 3’ ends and, ideally, all splice variants of a transcript. For example, the estimated mean number of exons per lncRNA using CLS was 4.27 compared to 3.59 measured by short-reads RNA-seq method (Lagarde et al., 2017). While this approach doesn’t eliminate the necessity to carefully determine the splice variants from a lncRNA locus entirely, it does provide a very good starting point for detailed analysis. In particular, when CLS data are not available for your locus-of-interest or your tissue-of-interest, one should determine the full transcript length, splice variants and regulatory elements of the lncRNA-of-interest. Only then can a successful strategy to study the lncRNA be initiated.
 
-## Gene regulation by lncRNA genes – regulatory elements within the transcription unit
+### Gene regulation by lncRNA genes – regulatory elements within the transcription unit
 
 Surveying the chromatin and DNA modification landscape led to the annotation of potential regulatory regions across the genome and sometimes even for specific tissues and cell types. Regulatory elements, whether they are promoters or other regulatory elements, can be found within or far away from the transcription unit of a gene. The occurrence of such a regulatory element within a transcription unit, for example of a lncRNA gene, can indicate that the function of this element might be affected by its activity.
 
@@ -78,7 +173,7 @@ A lncRNA gene transcription that influences an enhancer is Upperhand, which is d
 
 These examples highlight the importance of taking a careful look at the whole lncRNA locus that produces an RNA. The occurrence of an annotated regulatory element or the occupation of a genome regulating factor such as CTCF within the transcription unit can be an important indication to look for a genomic function of a lncRNA.
 
-## Gene regulation by lncRNA genes – the act of transcription is functional
+### Gene regulation by lncRNA genes – the act of transcription is functional
 
 The absence of a regulatory element within the transcription unit could be due to incomplete annotation or a yet unknown factor which binds there, or the act of transcription initiation or transcriptional elongation is important for the function of a lncRNA locus.
 

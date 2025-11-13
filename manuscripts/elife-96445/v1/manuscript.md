@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/050s6ns64 Endoscopic Center, The First Affiliated Hospital, Fujian Medical University Fuzhou China
-2. https://ror.org/050s6ns64 The Graduate School of Fujian Medical University Fuzhou China
-3. https://ror.org/00mcjh785 Department of Gastrointestinal Surgery, Zhongshan Hospital of Xiamen University, Institute of Gastrointestinal Oncology, School of Medicine, Xiamen University Xiamen China
+1. Endoscopic Center, The First Affiliated Hospital, Fujian Medical University Fuzhou China ([ROR:050s6ns64](https://ror.org/050s6ns64))
+2. The Graduate School of Fujian Medical University Fuzhou China ([ROR:050s6ns64](https://ror.org/050s6ns64))
+3. Department of Gastrointestinal Surgery, Zhongshan Hospital of Xiamen University, Institute of Gastrointestinal Oncology, School of Medicine, Xiamen University Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))
 4. Xiamen Municipal Key Laboratory of Gastrointestinal Oncology Xiamen China
 
 † Corresponding author
@@ -38,31 +38,53 @@ We previously identified differential protein expression patterns in expanding a
 
 ## Results
 
-## SE heterogeneity between two subtypes of GC with differential growth patterns
+### SE heterogeneity between two subtypes of GC with differential growth patterns
 
 Six GC samples were collected, and H3K27ac CUT&Tag sequencing was performed for the first time to identify of GC SEs (Figure 1A). The two GC growth patterns did not significantly differ in terms of typical enhancers (Figure 1—figure supplement 1B). However, a bimodal H3K27ac enrichment was observed in infiltrative GC compared with that in expanding GC (Figure 1B). A total of 1057 and 819 infiltrative and expanding SE peaks, respectively, were obtained using the ROSE algorithm. Over 50% of these peaks were located in the non-coding regions such as exons and introns, and their predicted target genes were transcribed to produce non-coding RNAs; the peaks distributed in transcription start and termination sites activated the promoters and directly drove the transcription of protein-coding genes (Figure 1C). Collectively, these data targeted 240 infiltrative and 173 expanding SE-driven protein-coding genes (Figure 1D, Figure 1—figure supplement 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig1-v1.jpg)
+
+**Figure 1.:** (A) Hematoxylin-eosin staining of GC. (B) SE peaks of H3K27ac histone modifications. (C) Distribution of H3K27ac SE peaks. (D) Venn diagrams of SE-driven protein-coding genes and chromosomal landscape of infiltrative SE-driven genes. (E) Gene Ontology-Kyoto Encyclopedia of Genes and Genomes (GO-KEGG) pathway enrichment for SE-driven genes. (F) Unsupervised hierarchical clustering using 16 prognostic genes in GC patients from The Cancer Genome Atlas (TCGA) datasets. (G) Kaplan-Meier survival curves of two subgroups. (H) Immune infiltration analysis. (I) Immunohistochemical (IHC) scores of programmed death-ligand 1 (PD-L1) in 70 GC tissues. TSS, transcription start site; TTS, transcription termination site.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Proteomic differences between expanding and infiltrative gastric cancer (GC). (B) Typical enhancers peaks of histone H3K27ac modifications in expanding and infiltrative GC. (C) Chromosomal landscape of expanding super-enhancer (SE)-driven genes. (D) Forest plot of 16 SE-driven protein-coding genes associated with poor prognosis in infiltrative GC based on The Cancer Genome Atlas (TCGA) datasets.
+
 Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses displayed that cellular response to epidermal growth factor stimulus, ERK1 and ERK2 cascade, and MAPK signaling pathway signatures were enriched in both expanding and infiltrative SE-driven genes; cadherin binding, positive regulation of protein localization to cell periphery, and regulation of GTPase activity were enriched in expanding SE-driven genes; negative regulation of T-cell proliferation, response to tumor necrosis factor, regulation of epithelial cell migration, and 3ʹUTR-mediated mRNA destabilization pathway signatures were enriched in infiltrative SE-driven genes (Figure 1E). After the overall survival analysis for GC patients in The Cancer Genome Atlas (TCGA) datasets, we screened 16 of these infiltrative SE-driven genes with prognostic value (Figure 1—figure supplement 1D). Unsupervised hierarchical clustering revealed that infiltrative SE-driven clusters showed significant infiltration of memory, regulatory, and helper T cells (Figure 1F–H). The protein expression present in 70 PD-L1-positive GC tumor tissues was assessed, and high immunohistochemical (IHC) scores were determined in PD-L1 infiltrative GC compared with those in expanding GC (Figure 1I). These results helped describe the SE-driven immune escape signatures of infiltrative GC.
 
-## ZFP36L1 as an SE-driven oncogene in infiltrative GC
+### ZFP36L1 as an SE-driven oncogene in infiltrative GC
 
 ZFP36L1 was selected among these 16 genes based on Friends analysis and a comprehensive exploration of the TCGA data (Figure 2A). The mRNA expression in GC correlated positively with high T stage, tumor grade, diffuse type, and Helicobacter pylori infection (Figure 2B) and negatively correlated with overall survival, disease-specific survival, and progression-free interval (Figure 2—figure supplement 1). Notably, high ZFP36L1 expression represented high tumor immune dysfunction and exclusion (TIDE) scores, T-cell infiltration and high CD274 (also known as PD-L1) expression (Figure 2C–E). Therefore, we speculated that ZFP36L1 is a key molecule for immune escape in infiltrative GC, and ZFP36L1-SE (chr14:68806839–68816867) is a probable cause of transcriptional dysregulation as it is situated upstream of the ZFP36L1 promoter (Figure 2F and G). This genomic region harbors two typical enhancers (E1:68806839–68807740 and E2:68816088–68816867) and shows a plethora of histone acetylation enrichments in infiltrative GC tissues, as well as in MKN45 and AGS cell lines. A similar trend was observed at the protein level in this study. In the 12 paired infiltrative GC samples, ZFP36L1 protein expression was higher in 10 primary neoplasms than that in normal adjacent tissues (Figure 2H). Additionally, various GC cell lines exhibited high ZFP36L1 expression compared with that in the normal gastric epithelial cell line, GES-1 (Figure 2I).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig2-v1.jpg)
+
+**Figure 2.:** (A) Friends analysis of 16 super-enhancer (SE)-driven prognostic genes. (B) Correlations between clinical characteristics and the ZFP36L1 mRNA expression in The Cancer Genome Atlas (TCGA). (C) Tumor immune dysfunction and exclusion scores in high and low expression levels of ZFP36L1 groups. (D) Correlation between immune infiltration cells and the mRNA expression level of ZFP36L1 in TCGA. (E) Correlation between ZFP36L1 mRNA expression and immune checkpoints in TCGA. (F) H3K27ac signals of SEs and target genes in infiltrative GC. (G) H3K27ac signals of ZFP36L1-SE in GC. Protein expression of ZFP36L1 in (H) 6 GC cell lines and (I) 12 tumor and paired adjacent normal tissues of patients with infiltrative GC. (J) Expression level of ZFP36L1 after SE inhibition treatment (n=3). (K) H3K27ac signals of ZFP36L1-SE after SE inhibition treatment (n=3). ***, p<0.001; **, p<0.01; *, p<0.05; ns, p≥0.05. (B–C) t-Test, (D–E) Spearman’s correlation, (J) one-way ANOVA with post hoc Tukey HSD test, and (K) Welch’s ANOVA with a Games-Howell post hoc test were used for statistical analysis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig2-figsupp1-v1.jpg)
+
 To validate whether ZFP36L1 was driven by the SEs, XGC-1, and MKN45 cells were treated with the SE inhibitors THZ1 and JQ1. We observed that THZ1 and JQ1 inhibited mRNA and protein expression of ZFP36L1 in a concentration- and time-dependent manner, respectively (Figure 2J). Moreover, ChIP experiments revealed that JQ1 decreased H3K27ac enrichment in ZFP36L1-SE region, especially in E1 region (Figure 2K). These findings suggest that ZFP36L1 is a key SE-driven oncogene involved in infiltrating GC.
 
-## ZFP36L1 promotes IFN-γ-induced PD-L1 expression
+### ZFP36L1 promotes IFN-γ-induced PD-L1 expression
 
 Given the aforementioned results, we speculated that ZFP36L1 contributes to heightened PD-L1 expression in infiltrative GC. Typically, IFN-γ derived from T cells triggers PD-L1 overexpression on the surface of GC cells. In vitro experiments were conducted to simulate the immune microenvironment by adding exogenous IFN-γ at a concentration of 40 ng/mL, exacerbating PD-L1 expression on GC cells. However, in ZFP36L1 knockdown XGC-1 and MKN45 GC cell lines, IFN-γ-induced PD-L1 transcription levels were lower compared with that in the control group (Figure 3A). Conversely, we observed a significant increase in IFN-γ-induced PD-L1 mRNA expression in XGC-2 and MGC803 cell lines overexpressing ZFP36L1 (Figure 3B). These results indicate that ZFP36L1 potentiates IFN-γ-induced PD-L1 transcription.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig3-v1.jpg)
 
-**Figure 3.:** (A) mRNA and (C) protein expression of PD-L1 in gastric cancer (GC) cell lines with or without ZFP36L1 knockdown (n=3). (B) mRNA and (D) protein expression of PD-L1 in GC cell lines with or without ZFP36L1 overexpression (n=3). Fluorescent signal of the PD-L1 membrane protein in GC cell lines with or without ZFP36L1 (E) knockdown and (F) overexpression (n=3). ***, p<0.001; **, p<0.01; *, p<0.05; ns, p≥0.05. (A–B) Welch’s ANOVA with a Games-Howell post hoc test, (E) one-way ANOVA post hoc Tukey HSD, and (F) t-test were used for statistical analysis.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** (A) mRNA and (C) protein expression of PD-L1 in gastric cancer (GC) cell lines with or without ZFP36L1 knockdown (n=3). (B) mRNA and (D) protein expression of PD-L1 in GC cell lines with or without ZFP36L1 overexpression (n=3). Fluorescent signal of the PD-L1 membrane protein in GC cell lines with or without ZFP36L1 (E) knockdown and (F) overexpression (n=3). ***, p<0.001; **, p<0.01; *, p<0.05; ns, p≥0.05. (A–B) Welch’s ANOVA with a Games-Howell post hoc test, (E) one-way ANOVA post hoc Tukey HSD, and (F) t-test were used for statistical analysis.
 
 At the protein level, knocking down ZFP36L1 in the XGC-1 and MKN45 cell lines similarly reduced IFN-γ-induced PD-L1 protein expression (Figure 3C). Conversely, overexpression of ZFP36L1 in the XGC-2 and MGC803 cell lines facilitated IFN-γ-induced PD-L1 protein expression (Figure 3D). Flow cytometry revealed a consistent trend in the expression levels of PD-L1 on the tumor cell membrane surface. Knockdown of ZFP36L1 decreased the surface PD-L1 fluorescent signal in IFN-γ-induced XGC-1 and MKN45 cells compared with that in the control group (Figure 3E), whereas overexpression of ZFP36L1 demonstrated a higher fluorescent signal intensity in IFN-γ-induced XGC-2 and MGC803 cells (Figure 3F). These results validate the conclusion that ZFP36L1 expression is positively correlates with IFN-γ-induced PD-L1 expression at the protein level.
 
-## SPI1 binding to the SE region of ZFP36L1
+### SPI1 binding to the SE region of ZFP36L1
 
 To identify the upstream TF driving the SE-associated oncogene, the MEME-ChIP online tool was used to identify TF-binding sites in ZFP36L1-SE. Given the high GC content of E2, which is JQ1-insensitive, only the sequence motifs enriched in E1 (motif ID: GRGGMAGGARG) were examined. Figure 4A lists the predicted TFs and corresponding DNA motifs, including ETS transcription factor (TF) family (such as SPI1, ELF1, and ETS1) and E2F TF family (such as E2F1 and E2F6). SPI1, ELF1, and E2F1 were confirmed using another online analysis tool based on ChIP-seq data from the Signaling Pathways Project (Figure 4—figure supplement 1A). Among these, SPI1 is a known interferon regulatory TF that modulates PD-L1 mRNA expression (Li et al., 2022). Moreover, querying TCGA data revealed an association between SPI1 expression and poor prognosis (Figure 4B). Consequently, we speculated that SPI1 is a tissue-specific TF driving ZFP36L1 transcription by activating the SE region.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of transcription factor (TF) motif enrichment in ZFP36L1-E1. (B) Kaplan-Meier survival plot of SPI1 in The Cancer Genome Atlas (TCGA). (C) The mRNA expression of ZFP36L1 after TFs plasmid transfection (n=3). (D) The ZFP36L1 protein expression in cell lines overexpressing SPI1. (E) Correlation between SPI1 and PD-L1 mRNA expression in TCGA. (F) PD-L1 protein expression in simultaneous SPI1 overexpression and ZFP36L1 knockdown cells. (G) Prediction of SPI1-BRD4-P300 binding on the STRING website. Co-immunoprecipitation between (H) exogenous SPI1 and BRD4 in 293T cells, or (I) endogenous SPI1 and BRD4 in MGC803. (J) SPI1 directly interacts with BRD4 in vitro by GST pull-down experiment. (K) ZFP36L1-E1 binding of different TFs detected using dual-luciferase assay (n=3). (L) SPI1 enriched regions in ZFP36L1-E1 detected by chromatin immunoprecipitation (ChIP) assay (n=3). (M) Different binding sites of SPI1 in ZFP36L1-E1 detected using dual-luciferase assay (n=6). (N) Wild-type and motif-deletion mutant E1C binding of SPI1 detected using dual-luciferase (n=5). ***, p<0.001; **, p<0.01; *, p<0.05; ns, p≥0.05. (C ,K) One-way ANOVA post hoc Tukey HSD test, (L) t-test, (M) Welch’s t-test, and (N) Welch’s ANOVA with a Games-Howell post hoc test were used for statistical analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Transcription factor binding sites in ZFP36L1-SE based on chromatin immunoprecipitation (ChIP)-seq data from the Signaling Pathways Project. (B) The PD-L1 protein expression in simultaneous SPI1 overexpression and ZFP36L1 knockdown cells.
 
 To validate this hypothesis, MKN45 cells were transfected with SPI1, ELF1, E2F1, and control plasmids. The real-time PCR (RT-PCR) results indicated that only transfection with SPI1 upregulated the ZFP36L1 mRNA level (Figure 4C). Similarly, SPI1 overexpression increased the ZFP36L1 protein levels in MKN45 and MGC803 cells (Figure 4D). TCGA data revealed that SPI1 mRNA expression positively correlated with PD-L1 expression in patients with stomach cancer (Figure 4E). Overexpression of SPI1 increased IFN-γ-induced PD-L1 protein amount and fluorescent signal at membrane surfaces in GC cells, but concurrent knockdown of ZFP36L1 could reverse the results of PD-L1 expression (Figure 4F and Figure 4—figure supplement 1B). These findings suggest that SPI1 regulates PD-L1 expression in a ZFP36L1-dependent manner.
 
@@ -72,13 +94,13 @@ To assess SE activity and TF occupancy, the E1 fragment was inserted into the lu
 
 Subsequently, we performed ChIP experiments using SPI1 antibodies to immunoprecipitate bound DNA fragments in MGC803 cells, followed by RT-PCR analysis of the products. Among these endogenous SPI1-binding sites, the abundance of the site C product was the highest (Figure 4L). Consequently, four truncated E1 fragments containing different binding sites were inserted into the luciferase reporter vector (E1A-E1D). As anticipated, we observed significantly enhanced luciferase activity upon co-transfection with the SPI1 and pGL4-E1C plasmids (Figure 4M). Furthermore, two motifs totaling 15 bp were deleted from site C to construct a plasmid with a deletion mutation. The transcriptional activation of SPI1 was abrogated in the deletion mutation group compared with that in the wild-type group (Figure 4N). These results suggest that site C is the SPI1-binding region in ZFP36L1-SE.
 
-## Upregulation of PD-L1 mediated by HDAC3 mRNA decay
+### Upregulation of PD-L1 mediated by HDAC3 mRNA decay
 
 To identify downstream target genes, the mRNA transcripts bound to ZFP36L1 were searched against the RNAct website. A bibliometric analysis via PubMed suggested that 51 gene transcripts may be associated with PD-L1 expression (Figure 5A). Representative molecules were selected to perform preliminary verification, which revealed that HDAC3 mRNA expression was significantly reduced in MGC803 cells overexpressing ZFP36L1 (Figure 5B). Conversely, protein levels of HDAC3 increased in XGC-1 and MKN45 cells with ZFP36L1 knockdown (Figure 5C). HDAC3 reportedly represses PD-L1 transcription through histone deacetylation (Wang et al., 2020; Yokoyama et al., 2021). Likewise, we observed that overexpression of HDAC3 does not directly affect PD-L1 promoter activity (Figure 5D), but inhibits PD-L1 transcription through histone H3K27 deacetylation in the promoter region (Figure 5E and F). Additionally, histone H3K27 deacetylation is also detrimental to the transcriptional activity of ZFP36L1-E1, thereby providing a negative feedback loop that inhibits ZFP36L1 expression (Figure 5G and H). Therefore, we conducted rescue experiments involving HDAC3 plasmid co-transfection. The PD-L1-inducing effects of IFN-γ were reinforced in cell lines overexpressing ZFP36L1 (Figure 5I and J). However, PD-L1 protein levels and surface fluorescent signals decreased when HDAC3 was simultaneously overexpressed. Additionally, the effects of SPI1 overexpression were rescued when HDAC3 expression was concurrently restored in MGC803 and MKN45 cells (Figure 5K and L). These findings suggest that SE-driven ZFP36L1 positively regulates PD-L1 expression by inhibiting HDAC3. The inhibition of HDAC3 additionally provide positive feedback to promote ZFP36L1 transcription.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96445/elife-96445-fig5-v1.jpg)
 
-**Figure 5.:** HDAC3 mRNA decay.(A) Word cloud of predicted ZFP36L1 target genes. (B) The mRNA expression of predicted target genes in MGC803 cell overexpressing ZFP36L1 (n=5). (C) HDAC3 protein expression in ZFP36L1 knockdown cells. (D) Effect of HDAC3 on CD274 promoter activity in 293T using dual-luciferase assay (n=3). (E) Correlation between changes of histone H3K27 acetylation and PD-L1 protein expression in MKN45 cells overexpressing HDAC3. (F) Chromatin immunoprecipitation (ChIP) assay showing the histone H3K27 acetylation levels of CD274 promoter regions in MKN45 cells overexpressing HDAC3 (n=3). (G) Correlation between changes of histone H3K27 acetylation and ZFP36L1 protein expression. (H) The H3K27ac and SPI1 enrichment of ZFP36L1-E1C regions using ChIP assay (n=3). (I, J) PD-L1 protein expression in simultaneous ZFP36L1 and HDAC3 overexpression cells. (M) HDAC3 mRNA decay in ZFP36L1 knockdown and overexpression cells after actinomycin D treatment. (N) ZFP36L1 mRNA-binding level by RNA-binding protein immunoprecipitation (n=3). (O) ZFP36L1 mRNA-binding site in AU-rich element (ARE) of 3ʹUTR confirmed using dual-luciferase assay (n=6). (P) CCCH-type zinc finger domain of ZFP36L1 protein binding to HDAC3 mRNA confirmed using RNA pull-down assay. ARE, adenylate uridylate- (AU-) rich element; 3ʹUTR, 3ʹ untranslated region. ***, p<0.001; **, p<0.01; *, p<0.05; ns, p≥0.05. (B, F) Wilcoxon rank sum test, (D) one-way ANOVA post hoc Tukey HSD test, (H) t-test, (N) Welch’s t-test, and (O) Kruskal-Wallis with Dunn’s test were used for statistical analysis.Figure 5—source data 1.Figure 5.Figure 5—source data 2.Figure 5.
+**Figure 5.:** (A) Word cloud of predicted ZFP36L1 target genes. (B) The mRNA expression of predicted target genes in MGC803 cell overexpressing ZFP36L1 (n=5). (C) HDAC3 protein expression in ZFP36L1 knockdown cells. (D) Effect of HDAC3 on CD274 promoter activity in 293T using dual-luciferase assay (n=3). (E) Correlation between changes of histone H3K27 acetylation and PD-L1 protein expression in MKN45 cells overexpressing HDAC3. (F) Chromatin immunoprecipitation (ChIP) assay showing the histone H3K27 acetylation levels of CD274 promoter regions in MKN45 cells overexpressing HDAC3 (n=3). (G) Correlation between changes of histone H3K27 acetylation and ZFP36L1 protein expression. (H) The H3K27ac and SPI1 enrichment of ZFP36L1-E1C regions using ChIP assay (n=3). (I, J) PD-L1 protein expression in simultaneous ZFP36L1 and HDAC3 overexpression cells. (M) HDAC3 mRNA decay in ZFP36L1 knockdown and overexpression cells after actinomycin D treatment. (N) ZFP36L1 mRNA-binding level by RNA-binding protein immunoprecipitation (n=3). (O) ZFP36L1 mRNA-binding site in AU-rich element (ARE) of 3ʹUTR confirmed using dual-luciferase assay (n=6). (P) CCCH-type zinc finger domain of ZFP36L1 protein binding to HDAC3 mRNA confirmed using RNA pull-down assay. ARE, adenylate uridylate- (AU-) rich element; 3ʹUTR, 3ʹ untranslated region. ***, p<0.001; **, p<0.01; *, p<0.05; ns, p≥0.05. (B, F) Wilcoxon rank sum test, (D) one-way ANOVA post hoc Tukey HSD test, (H) t-test, (N) Welch’s t-test, and (O) Kruskal-Wallis with Dunn’s test were used for statistical analysis.
 
 Actinomycin D was employed to assess the rate of HDAC3 mRNA degradation. ZFP36L1 knockdown in MKN45 cells led to an increased half-life of HDAC3 mRNA post-actinomycin D treatment, indicating enhanced mRNA stability and suppression of mRNA decay. Conversely, ZFP36L1 overexpression in MGC803 cells promoted mRNA degradation, impairing HDAC3 mRNA stability (Figure 5M). This observation suggests that ZFP36L1 influences HDAC3 mRNA decay.
 
@@ -88,7 +110,7 @@ Subsequently, the binding site in the ARE of the 3ʹUTR was identified. Classica
 
 Finally, the CCCH-type zinc finger domains were examined to confirm their indispensable role in RNA binding. Accordingly, we mutated two cysteine (C) residues at positions 135 and 173 to arginine (R) (Figure 5P). HDAC3 mRNA probes were synthesized and co-incubated with extracts of MGC803 cells transfected with a mutant (C135R-C173R) or wild-type plasmid. RNA pull-down assay results revealed that the mutant ZFP36L1 did not bind to the 3ʹUTR of HDAC3 mRNA. Collectively, our findings suggest that ZFP36L1 potentiated PD-L1 expression by promoting HDAC3 mRNA decay.
 
-## Correlation between ZFP36L1 and PD-L1 in vivo
+### Correlation between ZFP36L1 and PD-L1 in vivo
 
 Protein expression levels were assessed in 70 PD-L1-positive GC tumor tissues via IHC staining. The IHC score of ZFP36L1 positively correlated with PD-L1 and SPI1 while exhibiting a negative correlation with HDAC3 (Figure 6A–C). These results substantiate the upstream-downstream relationship observed in human tissue specimens.
 
@@ -118,62 +140,62 @@ In conclusion, our findings elucidate the regulation of the SPI1-ZFP36L1-HDAC3-P
 
 ## Materials and methods
 
-## Cell lines and tissues
+### Cell lines and tissues
 
 MKN45 and MGC803 are derived from human GC; 293T is from human embryonic kidney cells; and MC38 is sourced from mouse colorectal cancer cells. All cell lines were acquired from the Institute of Cell Biology (Shanghai, China). Additionally, infiltrative GC cell line XGC-1 (China patent No. CN103396994A) and expanding GC cell line XGC-2 (China patent No. CN103387963B) were constructed by our team and have been authenticated (Xu et al., 2016; Peng et al., 2020). The cell lines were confirmed to be correct using Short Tandem Repeat profiling by American Type Culture Collection at the time of purchase, and they are regularly tested for mycoplasma contamination, with results consistently negative. 293T and MC38 were grown in high-glucose DMEM with 10% FBS, and other cell lines were cultured in RPM1640 medium. Six GC tissues for H3K27ac CUT&Tag sequencing were obtained from patients undergoing resection of primary GC at the Zhongshan Hospital of Xiamen University. GC tissue microarray (HStmA180Su19) containing 70 PD-L1-positive cancer tissues was acquired from Outdo Biotech (Shanghai, China).
 
-## Statistical methods and bioinformatic analysis
+### Statistical methods and bioinformatic analysis
 
 If the variable is numerical and the sample size is ≤5000, a normality test will be conducted. For numerical variables that satisfy the normal distribution and pass the variance chi-squared test, two-group comparisons will be performed using the t-test, and three-group comparisons will use one-way ANOVA. If the data satisfy the normal distribution but fail the variance chi-squared test, two-group comparisons will be conducted using Welch’s t-test, and three-group comparisons will use Welch’s one-way ANOVA. If the data do not satisfy the normal distribution assumption, two-group comparisons will use Welch’s one-way ANOVA. For normally distributed data, two-group comparisons will use the Wilcoxon test, and three-group comparisons will use the Kruskal-Wallis test.
 
 Bioinformatics analyses and graphing of experimental results were performed using R (4.2.1) version, involving the following R packages: ggplot2 [3.3.6] car [3.1-0], and stats [4.2.1] for histograms, GOSemSim [2.22.0] for Friends analysis, VennDiagram [1.7.3], clusterProfiler [4.4.4] for GO-KEGG analysis, survival [3.3.1] and survminer for Kaplan-Meier survival curves, ConsensusClusterPlus for unsupervised clustering, ggalluvial [0.12.3] for Sankey diagram, circlize [0.4.15] for the localization maps, ggwordcloud [0.6.0] for word cloud. The ROSE algorithm: http://younglab.wi.mit.edu/super_enhancer_code.html. MEME-ChIP: https://meme-suite.org/meme/tools/meme (Bailey et al., 2015). Primer design was performed using Primer Premier 5. Mechanism mapping: http://gdp.renlab.cn.
 
-## CUT&Tag and ChIP
+### CUT&Tag and ChIP
 
 Epi CUT and Tag Kit (Epibiotek, Guangzhou, China) was used to perform the CUT&Tag experiment with five steps: mixing the cell suspension with magnetic beads (10 μL ConA Beads and 1×105 cells), antibody binding (297 μL Wash Buffer, 3 μL 5% Digitonin, 12 μL 25× pAb Mix, and 3 μL antibody), incubation with Pa-Tn5 transposome, labeling (50 μL Tagmentation Buffer for 1 hr at room temperature), library construction, and sequencing. ROSE algorithm was programmed in Python (v3.9) to identify SEs. The data was visualized using IGV 2.14.1.
 
 Sonication ChIP Kit (ABclonal, Wuhan, China) was used to perform the ChIP experiment with five steps: crosslinking (1% formaldehyde solution 10 min, 10× Glycine Solution 5 min), cell nuclear extraction (1×107 cells, centrifugation at 5000×g for 5 min at 4°C), ultrasonication (25% power with 3 s on/off periods for a total of 8 min, ideal fragment size: 200–500 bp), immunoprecipitation, eluting the chromatin, de-crosslinking, DNA purification, and qPCR. The primary H3K27ac antibody (ABclonal, Cat. No. A7253) or SPI1 antibody (Abcam, Cat. No. ab227835) was used at 10 µg per sample. Primer sequences are available in Supplementary file 1a.
 
-## Western blot
+### Western blot
 
 Antibodies used for the western blot assay were as follows: ZFP36L1 (Abcam, Cat. No. ab230507); HDAC3 (Abcam, Cat. No. ab76295); CD274 (Proteintech, Cat. No. 66248-1-lg); HA-Tag (Proteintech, Cat. No. 51064-2-AP); DDDDK-Tag (ABclonal, Cat. No. AE005); β-actin (ABclonal, Cat. No. AC026).
 
-## HE and IHC staining
+### HE and IHC staining
 
 Fresh tissue samples are fixed in formalin overnight, then dehydrated using an automatic dehydration instrument, embedded in paraffin, and stored as tissue blocks. Sections of 4 μm thickness are prepared and dried. For deparaffinization, slides are baked at 65°C and sequentially immersed in decreasing concentrations of ethanol and water. HE staining involves hematoxylin staining, decolorization in hydrochloric acid ethanol, and eosin staining. Antigen retrieval is performed using high-pressure steam, followed by immunostaining with specific antibodies and DAB color development. Finally, slides are counterstained with hematoxylin, dehydrated, and mounted. IHC scoring is based on the extent and intensity of positive tumor cell staining, with scores ≥5 indicating high expression and <5 indicating low expression.
 
-## Real-time PCR
+### Real-time PCR
 
 The RT-PCR experiment involves three main steps. First, total RNA is extracted using a cell total RNA extraction kit, where cells are lysed, and RNA is purified through a series of centrifugation and washing steps, followed by elution with RNase-free water. Second, RNA reverse transcription is performed using the HiFi-MMLV cDNA first-strand synthesis kit, where 2 μg of RNA is mixed with various reagents and incubated to synthesize cDNA. Finally, RT-PCR is conducted with diluted cDNA templates, using a 2× UltraSYBR Mixture and specific primers. The RT-PCR program includes initial denaturation, 40 amplification cycles, and a melting curve analysis to verify product specificity.
 
-## RNA-binding protein immunoprecipitation
+### RNA-binding protein immunoprecipitation
 
 First, MGC803 cells transfected with the pcDNA3.1-ZFP36L1-Flag plasmid are harvested, lysed in RIP lysis buffer, and stored at –80°C. Magnetic beads are prepared by washing with RIP wash buffer and then incubated with Flag antibody or IgG. The cell lysates are thawed, and a portion is set aside as a 5% input control before being added to the bead-antibody complex for overnight incubation at 4°C. After washing the beads, RNA is purified by resuspending the complexes in Proteinase K buffer, followed by phenol-chloroform extraction and ethanol precipitation. The resulting RNA is then reverse-transcribed into cDNA, and real-time quantitative PCR is performed to detect the products. Results are normalized against the input control to analyze fold differences.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 The co-immunoprecipitation experiment utilizes two methods: DYKDDDDK-G1 affinity resin and Protein A/G magnetic beads. For the affinity resin method, 50 μL of resin is pre-treated with TBS buffer, followed by incubation with 400 μL of prepared protein sample overnight at 4°C. The resin is washed and denatured with Loading Buffer, heated, and the supernatant is collected for western blot detection. In the magnetic bead method, 30 μL of beads are pre-treated with binding/washing buffer and then incubated with diluted antibody for 2 hr at 4°C. After washing, the antigen sample is added, and the mixture is incubated again. The beads are then washed, and denaturing elution is performed with Loading Buffer, followed by heating and supernatant collection for western blot analysis.
 
-## GST pull-down
+### GST pull-down
 
 First, competent cells are transformed with pET-32a-His-BRD4, pGEX-4T-2-GST-SPI1, and empty vector plasmids, followed by induction with IPTG during the logarithmic growth phase for 24 hr at 18°C. After collecting and lysing the bacterial pellets, His-BRD4 is purified using Ni-NTA columns with gradient washing and elution in imidazole-containing PBS. For GST-SPI1, the cleared supernatant is incubated with GST beads, washed, and eluted with GST Elution Buffer. Finally, the GST pull-down assay is performed by equilibrating glutathione resin, binding the GST-fusion target protein, preparing the prey protein, and eluting the bait-prey complex for subsequent gel electrophoresis analysis.
 
-## RNA pull-down
+### RNA pull-down
 
 First, MGC803 cells are transfected with pcDNA3.1-ZFP36L1-Flag and pcDNA3.1-mutZFP36L1-Flag plasmids, followed by cell lysis after 48 hr. Next, single-stranded RNA probes containing the HDAC3 sequence are synthesized from a clone plasmid using T7 RNA polymerase, purified, and biotinylated overnight. The biotinylated RNA is recovered and dissolved in DEPC-treated water. Finally, the assay is conducted by pre-treating magnetic beads, binding the biotinylated RNA to streptavidin-coated beads, and performing RNA-protein binding, washing, and elution of the RNA-protein complex, followed by western blot analysis to evaluate the results.
 
-## Dual-luciferase reporter assay
+### Dual-luciferase reporter assay
 
 293T cells in 12-well plates were transfected with 0.8 μg Renilla luciferase plasmid, 0.8 μg firefly luciferase plasmid (vector: pGL4 or pmirGLO), and 0.8 μg TF plasmid. Dual-luciferase reporter assay kit (Vazyme, Nanjing, China) was used to detect the enzyme/substrate reactions, and the fluorescence values were normalized. Plasmids are available in Supplementary file 1b.
 
-## Flow cytometry
+### Flow cytometry
 
 1×106 cells was washed and resuspended in 100 μL FACS buffer (98% PBS+2% FBS) after digestion. 1 μL fluorescently labeled primary CD274 antibody (ABclonal, Cat. No. A22305) was added per tube and incubated for 20 min at room temperature. Cells labeled for PD-L1 were detected by flow cytometry (excitation light: 647 nm; emission light: 664 nm) and the data was visualized using FlowJo (v10.8.1).
 
-## Actinomycin D-induced mRNA decay
+### Actinomycin D-induced mRNA decay
 
 Cells were seeded in six-well plates and allowed to grow to 80%. Add actinomycin D to a final concentration of 1 µg/mL, and cellular RNA in each plate was collected every other hour. RNA extraction was performed using the FastPure Cell/Tissue Total RNA Isolation Kit (Vazyme, Nanjing, China), and RT-PCR was performed using UltraSYBR Mixture (Cowin Biotech, Jiangsu, China). 18s rRNA was used as an internal reference gene, and half-lives were calculated from linear-log graphs.
 
-## Animals and treatment
+### Animals and treatment
 
 All the procedures involving animals were conducted in accordance with the ethical principles and were approved by the Institutional Animal Care and Use Committee and Laboratory Animal Management Ethics Committee at Xiamen University (number of animal experiments ethical approval: XMULAC20220268). 5-Week C57BL/6J or BALB/c mice were purchased from Xiamen University Laboratory Animal Center, and the center was responsible for the daily feeding. At the beginning of each experiment, all mice were randomly assigned to control or experimental groups each containing six mice. MC38 cells were infected with shZfp36l1 expression lentivirus, and 2×106 cells were injected subcutaneously or 1×106 cells were injected into the tail vein. Two weeks later, mice were sacrificed and dissected for the HE and IHC staining.

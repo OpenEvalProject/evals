@@ -30,11 +30,160 @@ In this study, we establish a generic two-celled, constraint-based model startin
 
 ## Results
 
-## The curated Arabidopsis core model predicts physiological results
+### The curated Arabidopsis core model predicts physiological results
 
 Flux balance analysis requires five types of information, the metabolic map of the organism, the input, the output, a set of constraints (i.e. limitations on input, directionality of reactions, forced flux through reactions), and optimisation criteria for the algorithm which approximate the selective pressures the metabolism evolved under. In this context, inputs define the resources that need to be taken up by the metabolic network to fulfil a particular metabolic function, which is related to the outputs, for example the synthesis of metabolites part of the biomass or other specific products. In CBM, the objective is most likely related to the in- and/or outputs.
 
 For reconstruction of the C3 metabolic map we curated the Arabidopsis core model (Arnold and Nikoloski, 2014) manually (Table 1) to represent the metabolism of a mesophyll cell in a mature photosynthetically active leaf of a C3 plant , further on called one-cell model (provided in Figure 1—source data 1). The Arabidopsis core model is a bottom-up-assembled, large-scale model relying solely on Arabidopsis-specific annotations and the inclusion of only manually curated reactions of the primary metabolism. The Arabidopsis core model is accurate with respect to mass and energy conservation, allowing optimal nutrient utilisation and biochemically sound predictions (Arnold and Nikoloski, 2014).
+
+**Table 1.**
+ Curation of the Arabidopsis core model from Arnold and Nikoloski (2014).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Arabidopsis core model</th>
+      <th>Observation</th>
+      <th>one-cell model</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NADP-dependent malate dehydrogenases in all compartments</td>
+      <td>cycles through nitrate reductase to interconvert NAD and NADP</td>
+      <td>NAD-dependent malate dehydrogenases in all compartments, NADP-dependent malate dehydrogenase only in chloroplast</td>
+      <td>(Swarbreck et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Cyclic electron flow</td>
+      <td>absence of cyclic electron flow</td>
+      <td>added</td>
+      <td>(Shikanai, 2016)</td>
+    </tr>
+    <tr>
+      <td>Alternative oxidase</td>
+      <td>missing alternative routes for electrons to pass the electron transport chain to reduce oxygen</td>
+      <td>added alternative oxidase reactions to the chloroplast and mitochondria</td>
+      <td>(Vishwakarma et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Alanine transferase</td>
+      <td>No alanine transferase in cytosol Alanine transferase</td>
+      <td>added</td>
+      <td>(Liepman and Olsen, 2003)</td>
+    </tr>
+    <tr>
+      <td>Transport chloroplast</td>
+      <td>no maltose transporter by MEX1</td>
+      <td>added</td>
+      <td>(Linka and Weber, 2010)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no glucose transporter by MEX1 and pGlcT MEX1</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no unidirectional transport of ATP, ADP, AMP by BT-like</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no Mal/OAA, Mal/Pyr, and Mal/Glu exchange by DiTs</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no folate transporter by FBT and FOLT1</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transport Mitochondria</td>
+      <td>no Mal/OAA, Cit/iCit, Mal/KG exchange by DTC</td>
+      <td>added</td>
+      <td>(Linka and Weber, 2010)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no H+ importer by UCPs import</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no OAA/Pi exchange by DIC1-3</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no ATP/Pi exchange by APCs</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no NAD/ADP and NAD/AMP exchange by NDT2</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no ThPP/ATP exchange by TPCs</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no Asp/Glu by AGCs</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no uncoupled Ala exchange</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transport peroxisome</td>
+      <td>missing NAD/NADH, NAD/ADP, NAD/AMP exchange by PXN</td>
+      <td>added</td>
+      <td>(Linka and Weber, 2010)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>no ATP/ADP and ATP/AMP exchange by PNCs</td>
+      <td>added</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>H+ sinks/sources</td>
+      <td>H+ sinks/source reaction for the cytosol and futile transport cycles introduced by H+ -coupled transport reactions</td>
+      <td>H+ sinks/source reaction added for each compartment</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ATPase stoichiometry</td>
+      <td>False H+/ATP ratios for the plastidal and mitochondrial ATP synthase</td>
+      <td>H+/ATP ratio set to 3 : 1 (chloroplast) and 4:1 (mitochondria)</td>
+      <td>(Petersen et al., 2012; Turina et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Alanine/aspartate transferase</td>
+      <td>no direct conversion of alanine and aspartate</td>
+      <td>added to cytosol, chloroplast and mitochondria</td>
+      <td>(Schultz and Coruzzi, 1995; Duff et al., 2012)</td>
+    </tr>
+  </tbody>
+</table>
 
 For the inputs, we considered a photoautotrophic growth scenario with a fixed CO2 uptake of about 20 μmol/(m2s) (Lacher, 2003). Light, sulphates, and phosphate are freely available. Due to the observation that nitrate is the main source (80%) of nitrogen in leaves in many species (Macduff and Bakken, 2003), we set nitrate as the sole nitrogen source. If both ammonia and nitrate are allowed, the model will inevitably predict the physiologically incorrect sole use of ammonia since fewer reactions and less energy are required to convert it into glutamate, the universal amino group currency in plants. Water and oxygen can be freely exchanged with the environment in both directions.
 
@@ -50,29 +199,116 @@ In preparation for modelling the C4 cycle, we ensured that all reactions known t
 
 The one-cell model comprises in total 413 metabolites and 572 reactions, whereof 139 are internal transporters, 90 are export and eight import reactions (see also below), which are involved in 59 subsystems. Figure 1 provides an overview of the primary subsystems according to Arnold and Nikoloski (2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig1-v3.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Dependence of the phloem output on CO2 input flux in the range 0 μmol/(m2s)–20 μmol/(m2s), (B) Dependence of phloem output on the PPFD in the range 0 μmol/(m2s)–400 μmol/(m2s). Sucrose and starch are produced in the same amounts, each of them consists of 12 C-atoms.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) ATP production and consumption, (B) NADPH production and consumption, (C) NADH production and consumption, (D) proportion of ATP, NADPH, NADH used as energy equivalent, (E) proportion of respiratory ATP used for maintenance.
+
 The one-cell model requires a photosynthetic photon flux density (PPFD) of 193.7 μmol/(m2s) (Table 2). The one-cell model takes up the maximal amount of CO2 to produce the maximum amount of phloem sap, as well as 0.8 μmol/(m2s) of NO3- and 18.2 μmol/(m2s) of H2O. According to the assumed ratio of sucrose and amino acids in the phloem sap, the flux of sucrose predicted by the model is 0.5 μmol/(m2s) and of amino acids 0.3 μmol/(m2s). The rate of oxygen supply by the network is 20.9 μmol/(m2s). Part of the complete flux table is displayed in Table 2; the full table is available, see Figure 1—source data 2. The flux table of all reactions did not display circular fluxes, and the reactions were within expected physiological ranges (Figure 1—source data 2).
+
+**Table 2.**
+ Input/output fluxes of one-cell model in comparison to physiological observations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Molecular Species</th>
+      <th>Flux [µmol/(m2/s)]</th>
+      <th>Physiological Range [µmol/(m2/s)]</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(i) Inputs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Photons</td>
+      <td>193.7</td>
+      <td>100 - 400</td>
+      <td>Bailey et al. (2001)</td>
+    </tr>
+    <tr>
+      <td>CO2</td>
+      <td>20</td>
+      <td>20</td>
+      <td>Lacher (2003)</td>
+    </tr>
+    <tr>
+      <td>NO3-</td>
+      <td>0.5</td>
+      <td>0.11 - 0.18</td>
+      <td>Kiba et al. (2012)</td>
+    </tr>
+    <tr>
+      <td>H2O</td>
+      <td>18.2</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(ii) Outputs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>O2</td>
+      <td>20.9</td>
+      <td>16.5</td>
+      <td>Sun et al. (1999)</td>
+    </tr>
+    <tr>
+      <td>Amino Acids</td>
+      <td>0.3</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sucrose/Starch</td>
+      <td>0.8</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: CO2 has one carbon per molecule while Sucrose has 12. Starch is configured to have the same number of carbons compared to sucrose while amino acids on average have 5.5 carbons._
 
 The CO2 uptake rate and the phloem sap output have a positive linear relationship, see Figure 1—figure supplement 1(A). The same is true for the correlation of the PPFD and phloem sap output in the range of 100 μmol/(m2s)–200 μmol/(m2s), see Figure 1—figure supplement 1(B). Above 200 μmol/(m2s), the CO2 uptake rate acts as a limiting factor restricting the increase of phloem sap production. If either the PPFD or the CO2 uptake rate is zero, the phloem sap cannot be produced, compare Figure 1—figure supplement 1(A) and (B). Most of the metabolic processes use ATP/ADP as main energy equivalent (60%), followed by NADP/NADPH (37.5%) and NAD/NADH (2.4%), see Figure 1—figure supplement 2(D). Nearly all ATP is produced by the light reactions (97.2%) and consumed by the reductive pentose phosphate cycle (94.1%), see Figure 1—figure supplement 2(A). The oxidative phosphorylation produces only (1%) of ATP. In proportion, the maintenance cost for protein synthesis and degradation makeup 28% of the respiratory ATP produced by the oxidative phosphorylation (Figure 1—figure supplement 2(E)). Similarly, nearly all NADPH is produced by the light reaction (98.9%), which is consumed by the reductive pentose-phosphate cycle (98.3%) as well (Figure 1—figure supplement 2(B)). The canonical glycolysis and photorespiration produce nearly equal amounts of NADH, 45% and 47.7%, significantly less NADH is produced through the pyruvate dehydrogenase activity 6.85%. Nitrate assimilation (45%), glutamate biosynthesis (47.7%), glyoxylate cycle (21.6%) and alternative respiration (11.8%) consume the produced NADH (Figure 1—figure supplement 2(C)).
 
-## A C4 cycle is predicted under resource limitation
+### A C4 cycle is predicted under resource limitation
 
-To rebuild the characteristic physiology of C4 leaves, we duplicated the one-cell model and connected the two network copies by bi-directional transport of cytosolic metabolites including amino acids, sugars, single phosphorylated sugars, mono-/di-/tri-carboxylic acids, glyceric acids, glycolate, glycerate, glyceraldehyde-3-phosphate, di-hydroxyacetone-phosphate and CO2, see Materials and methods for details. Since CBM is limited to static model analysis, we introduced two Rubisco populations in the bundle sheath network to approximate CO2 concentration-dependent changes in the oxygenation : carboxylation ratio of Rubisco (vR⁢B⁢O/vR⁢B⁢C) itself. We kept the native constrained Rubisco population that is forced to undertake oxygenation reactions and added a CCM-dependent Rubisco population which can only carboxylate ribulose 1,5-bisphosphate. The CCM-dependent Rubisco population is only able to use CO2 produced by the bundle sheath network but not environmental CO2 released by the mesophyll. C4 plants have a higher CO2 consumption and thus, an increased CO2 uptake of 40 μmol/(m2s) was allowed (Leakey et al., 2006). All other constraints and the objective of the one-cell model are maintained in the two-cell model, see Figure 2.
+To rebuild the characteristic physiology of C4 leaves, we duplicated the one-cell model and connected the two network copies by bi-directional transport of cytosolic metabolites including amino acids, sugars, single phosphorylated sugars, mono-/di-/tri-carboxylic acids, glyceric acids, glycolate, glycerate, glyceraldehyde-3-phosphate, di-hydroxyacetone-phosphate and CO2, see Materials and methods for details. Since CBM is limited to static model analysis, we introduced two Rubisco populations in the bundle sheath network to approximate CO2 concentration-dependent changes in the oxygenation : carboxylation ratio of Rubisco ($v_{R⁢B⁢O}/v_{R⁢B⁢C}$) itself. We kept the native constrained Rubisco population that is forced to undertake oxygenation reactions and added a CCM-dependent Rubisco population which can only carboxylate ribulose 1,5-bisphosphate. The CCM-dependent Rubisco population is only able to use CO2 produced by the bundle sheath network but not environmental CO2 released by the mesophyll. C4 plants have a higher CO2 consumption and thus, an increased CO2 uptake of 40 μmol/(m2s) was allowed (Leakey et al., 2006). All other constraints and the objective of the one-cell model are maintained in the two-cell model, see Figure 2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig2-v3.jpg)
 
-**Figure 2.:** two-cell model and the used input/output constraints; adapted from Arnold and Nikoloski (2014).
-
 Initially, we optimised for the classical objective function of minimal total flux through the metabolic network at different levels of photorespiration. These different levels of photorespiration integrate changes to external CO2 concentration and stomatal opening status which is governed by plant water status and biotic interactions. From the complete flux distribution, we extracted fluxes of PEPC and PPDK, the decarboxylation enzymes, Rubisco and metabolite transporter between the two cells to ascertain the presence of a C4 cycle, see Figure 3 and Figure 3—figure supplement 1. At low photorespiratory levels, flux through PEPC is barely detectable (Figure 3(A)). If photorespiration increases to moderate levels, flux through PEPC can be predicted and increases to 40 μmol/(m2s), that is all CO2 is funnelled through PEPC, for high photorespiratory fluxes. Concomitant with flux through PEPC, the activity of the decarboxylation enzymes changes (Figure 3(B)). At low to intermediate levels of photorespiratory flux, glycine decarboxylase complex activity is predicted to shuttle CO2 to the bundle sheath at up to 4.7 μmol/(m2s). Decarboxylation of C4 acids is initially mostly mediated by PEP-CK and is largely taken over by NADP-ME at high fluxes through photorespiration. Flux through NAD-ME is very low under all photorespiration levels. The decarboxylation enzymes dictate flux through the different Rubiscos in the model (Figure 3(C)). At low photorespiratory flux, both the Rubiscos in mesophyll and bundle sheath are active. Only very little flux occurs through the CCM-dependent Rubisco, which is a result of the glycine decarboxylase (Figure 3(B)). With increasing photorespiratory flux, this flux through glycine decarboxylase increases (Figure 3(B)) and therefore, total Rubisco activity exceeds the carbon intake flux (Figure 3(C)). Carbon fixation switches to the CCM-dependent Rubisco with increasing flux through PEPC (Figure 3(A)) and the classic C4 cycle decarboxylation enzymes (Figure 3(B)). Flux through PPDK mostly reflects flux through PEPC (Figure 3(D)). The transport fluxes between the cells change with changing photosynthetic mode (Figure 3(E and F)).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig3-v3.jpg)
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Flux maps illustrating the effect of the proportion of photorespiratory flux through Rubisco. (A) Low photorespiratory flux; (B) Moderate photorespiratory flux; and (C) High photorespiratory flux. (Arc width and colour are set relative to flux values in $flux$, grey arcs - no flux).
 
 At low rates of photorespiration when PEPC is barely active, the only flux towards the bundle sheath is CO2 diffusion (Figure 3(E)) with no fluxes towards the mesophyll (Figure 3(F)). In the intermediate phase glycolate and glycerate are predicted to be transported and a low-level C4 cycle dependent on the transport of aspartate, malate, PEP and alanine operates (Figure 3(E) and (F)). In case of high photorespiratory rates, the exchange between mesophyll and bundle sheath is mainly carried by malate and pyruvate (Figure 3(E) and (F)). Flux through PPDK (Figure 3(D)) is lower than flux through PEPC (Figure 3(A)) at the intermediate stage (Figure 3(F)). Evolution of C4 photosynthesis with NADP-ME as the major decarboxylation enzyme is predicted if the photorespiratory flux is high and model optimised for minimal total flux, in other words, resource limitation.
 
-## C4 modes with different decarboxylation enzymes result from different set of constraints
+### C4 modes with different decarboxylation enzymes result from different set of constraints
 
 Among the known independent evolutionary events leading to C4 photosynthesis, 20 are towards NAD-ME while 21 occurred towards NADP-ME (Sage, 2004). PEP-CK is dominant or at least co-dominant only in Panicum maximum (Bräutigam et al., 2014), Alloteropsis semialata semialata (Christin et al., 2012), and in the Chloridoideae (Sage, 2004). To analyse whether the predicted evolution of the C4 cycle is independent of a particular decarboxylation enzyme, we performed three separate experiments, where only one decarboxylation enzyme can be active at a time. The other decarboxylation enzymes were de-activated by constraining the reaction flux to zero resulting in three different predictions, one for each decarboxylation enzyme. The flux distributions obtained under the assumption of oxygenation : carboxylation ratio of 1 : 3 and minimisation of photorespiration as an additional objective predicts the emergence of a C4 cycle for each known decarboxylation enzyme. To visualise the possible C4 fluxes, the flux distribution for candidate C4 cycle enzymes was extracted from each of the three predictions and visualised as arc width and color (Figure 4). While the flux distribution in the mesophyll is identical for three predicted C4 cycles of the decarboxylation enzymes, it is diverse in the bundle sheath due to the different localisation of the decarboxylation and related transport processes, see Figure 4. The flux distribution does not completely mimic the variation in transfer acids known from laboratory experiments (Hatch, 1987) since all of the decarboxylation enzymes use the malate/pyruvate shuttle. In the case of NAD-ME and PEP-CK, the two-cell model also predicts a supplementary flux through the aspartate/alanine shuttle. We tested whether transfer acids other than malate and pyruvate are feasible and explored the near-optimal space. To this end, the model predictions are repeated, allowing deviation from the optimal solution and the changes recorded. Deviations from the optimal solution are visualised as error bars (Figure 5). Performing a flux variability analysis (FVA) and allowing the minimal total flux to differ by 1.5%, predicts that for most metabolites which are transferred between mesophyll and bundle sheath, the variability is similar for all three decarboxylation types. For the NAD-ME and PEP-CK types, changes in the near-optimal space were observed for the transfer acids malate, aspartate, pyruvate and alanine. Minor differences were present for triose phosphates and phosphoglycerates as well as for PEP. For the NADP-ME type, FVA identifies only minor variation (Figure 5). In the case of NAD-ME but not in the case of NADP-ME the activity of the malate/pyruvate shuttle can be taken over by the aspartate/alanine shuttle and partly taken over in case of PEP-CK, see Figure 5. The aspartate/alanine shuttle is thus only a near-optimal solution when the model and by proxy evolutionary constraints are resource efficiency and minimal photorespiration.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig4-v3.jpg)
 
-**Figure 4.:** (A) NADP-ME, (B) PEP-CK, (C) NAD-ME. (Arc width and colour are set relative to flux values in , grey arcs - no flux).fluxFigure 4—source code 1.
+**Figure 4.:** (A) NADP-ME, (B) PEP-CK, (C) NAD-ME. (Arc width and colour are set relative to flux values in $flux$, grey arcs - no flux).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig5-v3.jpg)
 
@@ -80,7 +316,15 @@ Among the known independent evolutionary events leading to C4 photosynthesis, 20
 
 To analyse the effect of other conditions on the particular C4 state, we apply the minimisation of photorespiration as an additional objective to minimal total flux. Since NAD-ME and PEP-CK type plants use amino acids as transfer acids in nature, nitrogen availability has been tagged as a possible evolutionary constraint that selects for decarboxylation by NAD-ME or PEP-CK. When nitrate uptake was limiting, the optimal solution to the model predicted overall reduced flux towards the phloem output (Figure 6—figure supplement 1) but reactions were predicted to occur in the same proportions as predicted for unlimited nitrate uptake. Flux through NADP-ME and supplementary flux through PEP-CK dropped proportionally, since restricting nitrogen limits the export of all metabolites from the system and reduced CO2 uptake is observed (Figure 6—figure supplement 1). Similarly, limiting water or CO2 uptake into the model resulted in overall reduced flux towards the phloem output (Figure 6—figure supplement 1) but reactions were predicted to occur in the same proportions as predicted for unlimited uptake.
 
-Given that C4 plants sometimes optimise light availability to the bundle sheath (Bellasio and Lundgren, 2016) we next explored light availability and light distribution. The model prediction is re-run with changes in the constraints, and the resulting tables of fluxes are queried for CO2 uptake and fluxes through the decarboxylation enzymes. In the experiment, we varied the total PPFD between 0 μmol/(m2s) to 1000 μmol/(m2s) and photon distribution in the range 0.1≤P⁢P⁢F⁢DB / P⁢P⁢F⁢DM≤2, see Figure 6. Under light limitation, if the total PPFD is lower than 400 μmol/(m2s) , the CO2 uptake rate is reduced, leading to a decreased activity of the decarboxylation enzymes (Figure 6(A)). PEP-CK is used in the optimal solutions active under light-limiting conditions (Figure 6(B)). Under limiting light conditions, photon distribution with a higher proportion in the bundle sheath shifts decarboxylation towards NADP-ME but only to up to 26%. Under non-limiting conditions, the distribution of light availability determines the optimal decarboxylation enzyme. NADP-ME is the preferred decarboxylation enzyme with supplemental contributions by PEP-CK if light availability is near the threshold of 400 μmol/(m2s) or if at least twice as many photons are absorbed by the mesophyll. Excess light availability and a higher proportion of photons reaching the bundle sheath leads to optimal solutions which favour PEP-CK as the decarboxylation enzyme. In the case of very high light availability and an abrupt shift towards the bundle sheath, NAD-ME becomes the optimal solution (Figure 6(B)). NAD-ME is the least favourable enzyme overall, only low activity is predicted under extreme light conditions, where the bundle sheath absorbs equal or more photons than the mesophyll (Figure 6(B)). PEP-CK complements the activity of NADP-ME and NAD-ME to 100% in many conditions, meaning the two-cell model also predicts the co-existence of PEP-CK/NADP-ME and PEP-CK/NAD-ME mode, while the flux distribution indicates no parallel use of NAD-ME and NADP-ME, compare Figure 6(B).
+Given that C4 plants sometimes optimise light availability to the bundle sheath (Bellasio and Lundgren, 2016) we next explored light availability and light distribution. The model prediction is re-run with changes in the constraints, and the resulting tables of fluxes are queried for CO2 uptake and fluxes through the decarboxylation enzymes. In the experiment, we varied the total PPFD between 0 μmol/(m2s) to 1000 μmol/(m2s) and photon distribution in the range $0.1\leqP⁢P⁢F⁢D_{B}$ / $P⁢P⁢F⁢D_{M}\leq2$, see Figure 6. Under light limitation, if the total PPFD is lower than 400 μmol/(m2s) , the CO2 uptake rate is reduced, leading to a decreased activity of the decarboxylation enzymes (Figure 6(A)). PEP-CK is used in the optimal solutions active under light-limiting conditions (Figure 6(B)). Under limiting light conditions, photon distribution with a higher proportion in the bundle sheath shifts decarboxylation towards NADP-ME but only to up to 26%. Under non-limiting conditions, the distribution of light availability determines the optimal decarboxylation enzyme. NADP-ME is the preferred decarboxylation enzyme with supplemental contributions by PEP-CK if light availability is near the threshold of 400 μmol/(m2s) or if at least twice as many photons are absorbed by the mesophyll. Excess light availability and a higher proportion of photons reaching the bundle sheath leads to optimal solutions which favour PEP-CK as the decarboxylation enzyme. In the case of very high light availability and an abrupt shift towards the bundle sheath, NAD-ME becomes the optimal solution (Figure 6(B)). NAD-ME is the least favourable enzyme overall, only low activity is predicted under extreme light conditions, where the bundle sheath absorbs equal or more photons than the mesophyll (Figure 6(B)). PEP-CK complements the activity of NADP-ME and NAD-ME to 100% in many conditions, meaning the two-cell model also predicts the co-existence of PEP-CK/NADP-ME and PEP-CK/NAD-ME mode, while the flux distribution indicates no parallel use of NAD-ME and NADP-ME, compare Figure 6(B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig6-v3.jpg)
+
+**Figure 6.:** (A) CO2 uptake rate in dependence of the total PPFD, (B) Heat-maps illustrating the activity of the decarboxylation enzymes PEP-CK, NADP-ME, and NAD-ME relative to the CO2 uptake rate in dependence of the total PPFD and the photon distribution among mesophyll and bundle sheath.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49305/elife-49305-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Effect of (A) NO3-, (B) H2O, and (C) CO2 limitation on the flux through the different decarboxylation enzymes, with each enzymes coded in color (blue PEPCK, light blue NADP-ME, and green NAD-ME); (D) effect of malate:aspartate transport ratio on the flux through the different decarboxylation enzymes with each enzymes coded in color (blue PEPCK, light blue NADP-ME, and green NAD-ME).
 
 Finally, we assumed that intercellular transport capacity for charged metabolites might be different between species. Assuming a fixed transport ratio between aspartate and malate (Figure 6—figure supplement 1D) introduces a shift in the C4 state. Higher proportions of malate exchange foster the use of NADP-ME (Figure 6—figure supplement 1D). In contrast, higher portions of aspartate exchange foster the use of PEP-CK (Figure 6—figure supplement 1D).
 
@@ -88,90 +332,231 @@ Finally, we assumed that intercellular transport capacity for charged metabolite
 
 Evolutionary CBM can suggest the molecular outcomes of past evolutionary events if models are parametrised with objective functions representing possible selective pressures. In the case of C4 photosynthesis, more than sixty independent evolutionary origins represent metabolic types characterised by their decarboxylation enzyme. The selective pressure which drives evolution towards one or the other flux are unknown and were tested using CBM.
 
-## One-cell model reflects C3 plant physiology
+### One-cell model reflects C3 plant physiology
 
 To analyse evolution towards C4 photosynthesis based on C3 metabolism, a CBM of C3 metabolism is required (Figure 1). Design, simulation, validation cycles used current knowledge about plant biochemistry (Heldt, 2015) to identify possible errors in the metabolic map required for modelling. Even after error correction (Table 1), a significant problem remained, namely excessive fluxes to balance protons in all compartments. This observation leads to the realisation that the biochemical knowledge about transport reactions does not extend to the protonation state of the substrates, which affects all eukaryotic CBM efforts. In plants, predominantly export and vacuolar transport reactions are directly or indirectly coupled with proton gradients to energise transport (Bush, 1993; Neuhaus, 2007). For chloroplasts and mitochondria, proton-coupled transport reactions have been described but may couple different metabolite transporters together rather than energising them (Furumoto et al., 2011). Introducing proton sinks in all compartments solves the immediate modelling problem. However, intracellular transport reactions and their energetic costs are no longer correctly assessed by the model. Despite this band-aid fix which will be required for all eukaryotic constraint-based models which include proton-coupled transport reactions, the curated one-cell model correctly predicts energy usage and its distribution (Figure 1—figure supplement 2 and Li et al., 2017). This indicates that in models which exclude vacuolar transport and energised export reactions, energy calculations remain likely within the correct order of magnitude. Overall, our one-cell model operates within parameters expected for a C3 plant: The predicted PPFD lies within the range of light intensities used for normal growth condition of Arabidopsis thaliana, which varies between 100 μmol/(m2s)–200 μmol/(m2s), see Table 2. The gross rate of O2 evolution for a PPFD of 200 μmol/(m2s) is estimated to be 16.5 μmol/(m2s) in the literature (Sun et al., 1999), which is in close proximity to the predicted flux of the one-cell model, see Table 2. For the amount of respiratory ATP that is used for maintenance, (Li et al., 2017) predicted an even lower proportion of energy 16%, see Figure 1—figure supplement 2. The model’s flux map is in accordance with known C3 plant physiology (Heldt, 2015), and its input and output parameters match expected values (Figure 2(B)). The current model excludes specialised metabolism since the output function focuses solely on substances exported through the phloem in a mature leaf. If the model were to be used to study biotic interactions in the future, the addition of specialised metabolism in the metabolic map and a new output function would be required.
 
-## The two-cell model predicts a C4 cycle if photorespiration is present
+### The two-cell model predicts a C4 cycle if photorespiration is present
 
 Most evolutionary concepts about C4 photosynthesis assume that selective pressure drives pathway evolution due to photorespiration and carbon limitation (Heckmann et al., 2013). Most extant C4 species occupy dry and arid niches (Edwards et al., 2010), even more, the period of C4 plant evolution was accompanied with an increased oxygen concentration in the atmosphere (Sage, 2004). Therefore, it is frequently assumed that carbon limitation by excessive photorespiration drives the evolution of C4 photosynthesis. Yet, in most habitats plants are limited by nutrients other than carbon (Agren et al., 2012; Körner, 2015). Ecophysiological analyses also show that C4 can evolve in non-arid habitats (Liu and Osborne, 2015; Lundgren and Christin, 2017; Osborne and Freckleton, 2009). To resolve this apparent contradiction, we tested whether resource limitation may also lead to the evolution of a C4 cycle. We optimised the model approximating resource limitation via an objective function for total minimal flux at different photorespiratory levels. Indeed, with increasing photorespiration, the optimisation for resource efficiency leads to the emergence of the C4 cycle as the optimal solution. Balancing the resource cost of photorespiration against the resource cost of the C4 cycle, the model predicts that N limitation may have facilitated C4 evolution given high levels of photorespiration. Other possible selective pressures such as biotic interactions can currently not be tested using the model since specialised metabolism is not included in the metabolic map or the output function. Extant C4 species have higher C : N ratios reflecting the N-savings the operational C4 cycle enables (Sage et al., 1987). The photorespiratory pump using glycine decarboxylase based CO2 enrichment also emerges from the model, showing that C2 photosynthesis is also predicted under simple resource limitation. Indeed N-savings have been reported from C2 plants compared with their C3 sister lineages (Schlüter et al., 2016a). Simply minimising photorespiration as the objective function also yields C4 photosynthesis as the optimal solution. Hence, two alternatively or parallelly acting selective pressures towards C4 photosynthesis, limitation in C and/or N, are identified by the model. In both cases, the model correctly predicts the C4 cycle of carboxylation and decarboxylation and the C2 photorespiratory pump as observed in extant plants. The evolution of C4 photosynthesis in response to multiple selective pressures underscores its adaptive value and potential for agriculture. Intermediacy also evolves indicating that it, too, is likely an added value trait which could be pursued by breeding and engineering efforts.
 
-The optimal solutions for the metabolic flux patterns predict an intermediate stage in which CO2 transport via photorespiratory intermediates glycolate and glycerate (Figure 3(E) and (F)) and decarboxylation by glycine decarboxylase complex (Figure 3(B)) is essential. All of the models of C4 evolution (Monson, 1999; Bauwe, 2010; Sage et al., 2012; Heckmann et al., 2013; Williams et al., 2013) predict that the establishment of a photorespiratory CO2 pump is an essential intermediate step towards the C4 cycle. The photorespiratory CO2 pump, also known as C2 photosynthesis, relocates the photorespiratory CO2 release to the bundle sheath cells. Plants using the photorespiratory CO2 pump are often termed C3-C4 intermediates owing to their physiological properties (Sage et al., 2012). Displaying the flux solution in Figure 3 on a metabolic map in Figure 3—figure supplement 1 clearly illustrates that increasing photorespiratory flux through Rubisco drives the two-cell metabolic model from C3 to C4 metabolism by passing the C3-C4 intermediate state. On the C3-C4 trajectory, the activity of Rubisco is shifted from the mesophyll to the bundle sheath, as well as from the constrained to the CCM-dependent Rubisco population as a consequence of the increased costs of photorespiration under increased pO2:pC⁢O2 ratio, see Equation 5. The increase of the oxygenation rate in the photorespiration constraint drives the reprogramming of the metabolism to avoid oxygenation by establishing the C4 cycle. Therefore, our analysis recovers the evolutionary C3-C4 trajectory and confirms the emergence of a photorespiratory CO2 pump as an essential step during the C4 evolution also under optimisation for resources (Heckmann et al., 2013). The model may also provide a reason for why some plant species have halted their evolution in this intermediary phase (Scheben et al., 2017). Under the conditions of resource limitations and intermediate photorespiration, the model predicts intermediacy as the optimal solution. In a very narrow corridor of conditions, no further changes are required to reach optimality and the model thus predicts that a small number of species may remain intermediate.
+The optimal solutions for the metabolic flux patterns predict an intermediate stage in which CO2 transport via photorespiratory intermediates glycolate and glycerate (Figure 3(E) and (F)) and decarboxylation by glycine decarboxylase complex (Figure 3(B)) is essential. All of the models of C4 evolution (Monson, 1999; Bauwe, 2010; Sage et al., 2012; Heckmann et al., 2013; Williams et al., 2013) predict that the establishment of a photorespiratory CO2 pump is an essential intermediate step towards the C4 cycle. The photorespiratory CO2 pump, also known as C2 photosynthesis, relocates the photorespiratory CO2 release to the bundle sheath cells. Plants using the photorespiratory CO2 pump are often termed C3-C4 intermediates owing to their physiological properties (Sage et al., 2012). Displaying the flux solution in Figure 3 on a metabolic map in Figure 3—figure supplement 1 clearly illustrates that increasing photorespiratory flux through Rubisco drives the two-cell metabolic model from C3 to C4 metabolism by passing the C3-C4 intermediate state. On the C3-C4 trajectory, the activity of Rubisco is shifted from the mesophyll to the bundle sheath, as well as from the constrained to the CCM-dependent Rubisco population as a consequence of the increased costs of photorespiration under increased $p_{O_{2}}:p_{C⁢O_{2}}$ ratio, see Equation 5. The increase of the oxygenation rate in the photorespiration constraint drives the reprogramming of the metabolism to avoid oxygenation by establishing the C4 cycle. Therefore, our analysis recovers the evolutionary C3-C4 trajectory and confirms the emergence of a photorespiratory CO2 pump as an essential step during the C4 evolution also under optimisation for resources (Heckmann et al., 2013). The model may also provide a reason for why some plant species have halted their evolution in this intermediary phase (Scheben et al., 2017). Under the conditions of resource limitations and intermediate photorespiration, the model predicts intermediacy as the optimal solution. In a very narrow corridor of conditions, no further changes are required to reach optimality and the model thus predicts that a small number of species may remain intermediate.
 
-## Two-cell model realises different C4 states
+### Two-cell model realises different C4 states
 
 Since the model predicts C4 metabolism without specific constraints, different input and reaction constraints can be tested for their influence on the molecular nature of the C4 cycle. This approach may identify the selective pressure and boundaries limiting evolution. Initial optimisation without additional constraints or input limitations predict a C4 cycle based on decarboxylation by NADP-ME (Figure 3 and Figure 3—figure supplement 1(A)). This prediction recapitulates intuition; the NADP-ME based C4 cycle is considered the 'most straight forward' incarnation of C4 photosynthesis, it is always explained first in textbooks and is a major focus of research. The NADP-ME based cycle thus represents the stoichiometrically optimal solution when resource limitation or photorespiration are considered. Once NADP-ME is no longer available via constraint, PEP-CK and NAD-ME become optimal solutions albeit with a prediction of malate and pyruvate as the transfer acids (Figure 6). The FVA identified aspartate and alanine as slightly less optimal solutions (Figure 5). Since in vivo this slightly less optimal solution has evolved in all NAD-ME origins tested to date, kinetic rather than stoichiometric reasons suggest themselves for the use of aspartate and alanine (Bräutigam et al., 2018).
 
-## Light is a potential evolutionary driver for the different C4 states
+### Light is a potential evolutionary driver for the different C4 states
 
 Since all extant C3 species and therefore also the ancestors of all C4 species contain all decarboxylation enzymes (Aubry et al., 2011), it is unlikely that unavailability of an enzyme is the reason for the evolution of different decarboxylation enzymes in different origins (Sage, 2004). Stochastic processes during evolution, that is up-regulation of particular enzyme concentrations via changes in expression and therefore elements cis to the gene (Bräutigam and Gowik, 2016), may have played a role in determining which C4 cycle evolved. Alternatively, environmental determinants may have contributed to the evolution of different C4 cycles. Physiological experiments have pointed to a connection between nitrogen use efficiency and type of decarboxylation enzyme (Pinto et al., 2016). Hence the variation in nitrogen input to the model was tested for their influence on optimal solutions with regard to decarboxylation enzymes. Input limitation of nitrogen, water as a metabolite, and CO2 limited the output of the system but did not change the optimal solution concerning decarboxylation Figure 6—figure supplement 1 making it an unlikely candidate as the cause. Differences in nitrogen use is possibly a consequence of decarboxylation type.
 
 In some grasses, light penetrable cells overlay the vascular bundle leading to different light availability (summarised in Bellasio and Lundgren, 2016 and Karabourniotis et al., 2000) and hence light availability and distribution were tested (Figure 6(B)). Changes in light input and distribution of light input between mesophyll and bundle sheath indeed altered the optimal solutions (Figure 6(B)). The changes in the solution can be traced to the energy status of the plant cells. For very high light intensities, the alternative oxidases in the mitochondria are used to dissipate the energy and hence a path towards NAD-ME is paved. Under light limitation, the C4 cycle requires high efficiency and hence PEP-CK which, at least in part allows energy conservation by using PEP rather than pyruvate as the returning C4 acid, is favoured. Interestingly, the sensitivity of different species towards environmental changes in light is influenced by the decarboxylation enzyme present (Sonawane et al., 2018). NADP-ME species are less compromised compared to NAD-ME species by shade possibly reflecting an evolutionary remnant as NAD-ME is predicted to emerge only in high light conditions. PEP-CK is more energy efficient compared to malic enzyme based decarboxylation which requires PEP recycling by PPDK at the cost of two molecules of ATP (Figure 3(D)). Notably, two C4 plants known to rely on PEP-CK P. maximum and A. semialata (African accessions) are shade plants which grow in the understory (Lundgren and Christin, 2017). PEP-CK can be co-active with NADP-ME and NAD-ME (Figure 6(B)). This co-use of PEP-CK with a malic enzyme has been shown in C4 plants (Pick et al., 2011; Wingler et al., 1999) and explained as an adaptation to different energy availability and changes in light conditions (Pick et al., 2011; Bellasio and Griffiths, 2014). Dominant use of PEP-CK in the absence of malic enzyme activity as suggested (Figure 3(B), Figure 3—figure supplement 1 and Figure 4) is rare in vivo (Ueno and Sentoku, 2006) but observed in P. maximum and in A. semialata. While the model predictions are in line with ecological observations, we cannot exclude that kinetic constraints (i.e. [Bräutigam et al., 2018]) may also explain why a stoichiometrically optimal solution such as the NADP-ME cycle is not favoured in nature where NADP-ME and NAD-ME species evolve in nearly equal proportions (Sage, 2004).
 
-## Conclusion
+### Conclusion
 
 CBM of photosynthetically active plant cells revealed a major knowledge gap impeding CBM, namely the unknown protonation state of most transport substrates during intracellular transport processes. When photoautotrophic metabolism was optimised in a single cell for minimal metabolic flux and therefore, optimal resource use, C3 photosynthetic metabolism was predicted as the optimal solution. Under low photorespiratory conditions, a two-celled model which contains a CCM-dependent Rubisco optimised for resource use, still predicts C3 photosynthesis. However, under medium to high photorespiratory conditions, a molecularly correct C4 cycle emerged as the optimal solution under resource limitation and photorespiration reduction as objective functions which points to resource limitation as an additional driver of C4 evolution. Light and light distribution was the environmental variable governing the choice of decarboxylation enzymes. Modelling compartmented eukaryotic cells correctly predicts the evolutionary trajectories leading to extant C4 photosynthetic plant species.
 
 ## Materials and methods
 
-## Flux Balance Analysis
+### Flux Balance Analysis
 
-Flux balance analysis (FBA) is a CBM approach (Orth et al., 2010) to investigate the steady-state behaviour of a metabolic network defined by its stoichiometric matrix S. By employing linear programming, FBA allows computing an optimised flux distribution that minimises and/or maximises the synthesis and/or consumption rate of one specific metabolite or a combination of various metabolites. Next to the steady-state assumption and stoichiometric matrix S, FBA relies on the definition of the reaction directionality and reversibility, denoted by the lower bound vm⁢i⁢n and upper bound vm⁢a⁢x , as well as the definition of an objective function z. The objective function z defines a flux distribution v, with respect to an objective c.(1)min/maxzFBA=cTvs.t.S⋅v=0vmin≤v≤vmax
+Flux balance analysis (FBA) is a CBM approach (Orth et al., 2010) to investigate the steady-state behaviour of a metabolic network defined by its stoichiometric matrix $S$. By employing linear programming, FBA allows computing an optimised flux distribution that minimises and/or maximises the synthesis and/or consumption rate of one specific metabolite or a combination of various metabolites. Next to the steady-state assumption and stoichiometric matrix $S$, FBA relies on the definition of the reaction directionality and reversibility, denoted by the lower bound $v_{m⁢i⁢n}$ and upper bound $v_{m⁢a⁢x}$ , as well as the definition of an objective function $z$. The objective function $z$ defines a flux distribution $v$, with respect to an objective $c$.
 
-The degeneracy problem, the possible existence of alternate optimal solutions, is one of the major issues of constraint-based optimisation, such as FBA (Mahadevan and Schilling, 2003). To avoid this problem, we use the parsimonious version of FBA (pFBA) (Lewis et al., 2010). This approach incorporates the flux parsimony as a constraint to find the solution with the minimum absolute flux value among the alternative optima, which is in agreement with the assumption that the cell is evolutionary optimised to allocate a minimum amount of resources to achieve its objective.(2)min/maxzp⁢F⁢B⁢A=∑|vi|s.t.S⋅v=0vm⁢i⁢n≤v≤vm⁢a⁢xcT⁢v=zF⁢B⁢A
+$$
+min/maxz_{_{FBA}}=c^{T}vs.t.S⋅v=0v_{min}\leqv\leqv_{max}
+$$
+
+The degeneracy problem, the possible existence of alternate optimal solutions, is one of the major issues of constraint-based optimisation, such as FBA (Mahadevan and Schilling, 2003). To avoid this problem, we use the parsimonious version of FBA (pFBA) (Lewis et al., 2010). This approach incorporates the flux parsimony as a constraint to find the solution with the minimum absolute flux value among the alternative optima, which is in agreement with the assumption that the cell is evolutionary optimised to allocate a minimum amount of resources to achieve its objective.
+
+$$
+min/maxz_{_{p⁢F⁢B⁢A}}=\sum|v_{i}|s.t.S⋅v=0v_{m⁢i⁢n}\leqv\leqv_{m⁢a⁢x}c^{T}⁢v=z_{_{F⁢B⁢A}}
+$$
 
 All FBA experiments in this study employ pFBA and are performed using the cobrapy module in a python 2.7 environment run on a personal computer (macOS Sierra, 4 GHz Intel Core i7, 32 GB 1867 MHz DDR3). All FBA experiments are available as jupyter notebooks in the supplementary material and can also be accessed and executed from the GitHub repository https://github.com/ma-blaetke/CBM_C3_C4_Metabolism (Blätke, 2019; copy archived at https://github.com/elifesciences-publications/CBM_C3_C4_Metabolism).
 
-## Generic model for C3 metabolism
+### Generic model for C3 metabolism
 
-## Metabolic model
+#### Metabolic model
 
-The generic model representing the metabolism of a mesophyll cell of a mature photosynthetically active C3 leaf, further on called one-cell model, is based on the Arabidopsis core model (Arnold and Nikoloski, 2014). The model is compartmentalised into cytosol (c), chloroplast (h), mitochondria (m), and peroxisome (p). Each reaction in the Arabidopsis core model (Arnold and Nikoloski, 2014) was compared with the corresponding entry in AraCyc (Mueller et al., 2003). Based on the given information, we corrected co-factors, gene associations, enzyme commission numbers and reversibility (information from BRENDA [Schomburg et al., 2002] were included). The gene associations and their GO terms (Ashburner et al., 2000) of the cellular components were used to correct the location of reactions. Major additions to the model are the cyclic electron flow (Shikanai, 2016), alternative oxidases in mitochondria and chloroplast (Vishwakarma et al., 2015), as well as several transport processes between the compartments and the cytosol (Linka and Weber, 2010). NAD-dependent dehydrogenase to oxidise malate is present in all compartments (Gietl, 1992; Berkemeyer et al., 1998), which excludes the interconversion of NAD and NADP by cycles through the nitrate reductase present in the Arabidopsis core model. Correctly defining the protonation state of the metabolites in the various cellular compartments is a general drawback of metabolic models due to the lack of knowledge in that area. This issue mainly affects biochemical reactions and transport reactions involving protons. We added a sink/source reaction for protons in the form:(3)↔H⁢_⁢{x}x=c,h,m,pto all compartments to prevent futile fluxes of protons and other metabolites coupled through the proton transport. The curated one-cell model is provided in Figure 1—source data 1.
+The generic model representing the metabolism of a mesophyll cell of a mature photosynthetically active C3 leaf, further on called one-cell model, is based on the Arabidopsis core model (Arnold and Nikoloski, 2014). The model is compartmentalised into cytosol (c), chloroplast (h), mitochondria (m), and peroxisome (p). Each reaction in the Arabidopsis core model (Arnold and Nikoloski, 2014) was compared with the corresponding entry in AraCyc (Mueller et al., 2003). Based on the given information, we corrected co-factors, gene associations, enzyme commission numbers and reversibility (information from BRENDA [Schomburg et al., 2002] were included). The gene associations and their GO terms (Ashburner et al., 2000) of the cellular components were used to correct the location of reactions. Major additions to the model are the cyclic electron flow (Shikanai, 2016), alternative oxidases in mitochondria and chloroplast (Vishwakarma et al., 2015), as well as several transport processes between the compartments and the cytosol (Linka and Weber, 2010). NAD-dependent dehydrogenase to oxidise malate is present in all compartments (Gietl, 1992; Berkemeyer et al., 1998), which excludes the interconversion of NAD and NADP by cycles through the nitrate reductase present in the Arabidopsis core model. Correctly defining the protonation state of the metabolites in the various cellular compartments is a general drawback of metabolic models due to the lack of knowledge in that area. This issue mainly affects biochemical reactions and transport reactions involving protons. We added a sink/source reaction for protons in the form:
 
-## Import
+$$
+↔H⁢_⁢{x}x=c,h,m,p
+$$
 
-As in Arnold and Nikoloski (2014), we assume photoautotrophic growth conditions. Only the import of light, water, CO2, inorganic phosphate (Pi), nitrate/ammonium, and sulphates/hydrogen sulphide is allowed, compare Table 3. More specifically, we do only allow for nitrate uptake, since it is the main source (80%) of nitrogen in leaves (Macduff and Bakken, 2003). The CO2 uptake is limited to 20 μmol/(m2s) (Lacher, 2003). Therefore, the carbon input constrains the model.
+to all compartments to prevent futile fluxes of protons and other metabolites coupled through the proton transport. The curated one-cell model is provided in Figure 1—source data 1.
 
-## Export
+#### Import
 
-In contrast to Arnold and Nikoloski (2014), we focus on mature, fully differentiated and photosynthetic active leaves supporting the growth of the plant through the export of nutrients in the phloem sap, mainly sucrose and amino acids. An output reaction for sucrose Ex_Suc is already included in the model. An additional export reaction Ex_AA represents the relative proportion of 18 amino acids in the phloem sap of Arabidopsis as stoichiometric coefficients in accordance to experimentally measured data from Wilkinson and Douglas (2003). The ratio of exported sucrose : total amino acid is estimated to be 2.2 : 1 (Wilkinson and Douglas, 2003). This ratio is included as a flux ratio constraint of the reactions Ex_Suc and Ex_AA. Furthermore, it is known that the export of sucrose and the formation of starch is approximately the same (Stitt and Zeeman, 2012), which is reflected by the flux ratio constraint vE⁢x⁢_⁢S⁢u⁢c:vE⁢x⁢_⁢s⁢t⁢a⁢r⁢c⁢h = 1:1. The model allows for the export of water and oxygen. The flux of all other export reactions is set to 0, see Table 3 for a summary.
+As in Arnold and Nikoloski (2014), we assume photoautotrophic growth conditions. Only the import of light, water, CO2, inorganic phosphate ($Pi$), nitrate/ammonium, and sulphates/hydrogen sulphide is allowed, compare Table 3. More specifically, we do only allow for nitrate uptake, since it is the main source (80%) of nitrogen in leaves (Macduff and Bakken, 2003). The CO2 uptake is limited to 20 μmol/(m2s) (Lacher, 2003). Therefore, the carbon input constrains the model.
 
-## Additional Constraints
+**Table 3.**
+ Flux boundary constraints of Im-/export reactions
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Input (Reaction ID)</th>
+      <th colspan="2">Flux [μmol/(m2s)]</th>
+    </tr>
+    <tr>
+      <th>Lower bound</th>
+      <th>Upper bound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Photons (Im_hnu)</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>C02 (Im_CO2)</td>
+      <td>0</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>NO3- (Im_NO3)</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>NH4+ (Im_NH4)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SO42- (Im_SO4)</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>H2S (Im_H2S)</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>Pi</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>H2O (Im_H2O)</td>
+      <td>-inf</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>O2 (Im_O2)</td>
+      <td>-inf</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>Amino Acids (Ex_AA)</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>Surcose (Ex_Suc)</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>Starch (Ex_starch)</td>
+      <td>0</td>
+      <td>inf</td>
+    </tr>
+    <tr>
+      <td>Other export reactions</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_-inf/inf is approximated by −106 / 106_
+
+#### Export
+
+In contrast to Arnold and Nikoloski (2014), we focus on mature, fully differentiated and photosynthetic active leaves supporting the growth of the plant through the export of nutrients in the phloem sap, mainly sucrose and amino acids. An output reaction for sucrose Ex_Suc is already included in the model. An additional export reaction Ex_AA represents the relative proportion of 18 amino acids in the phloem sap of Arabidopsis as stoichiometric coefficients in accordance to experimentally measured data from Wilkinson and Douglas (2003). The ratio of exported sucrose : total amino acid is estimated to be 2.2 : 1 (Wilkinson and Douglas, 2003). This ratio is included as a flux ratio constraint of the reactions Ex_Suc and Ex_AA. Furthermore, it is known that the export of sucrose and the formation of starch is approximately the same (Stitt and Zeeman, 2012), which is reflected by the flux ratio constraint $v_{E⁢x⁢_⁢S⁢u⁢c}:v_{E⁢x⁢_⁢s⁢t⁢a⁢r⁢c⁢h}$ = $1:1$. The model allows for the export of water and oxygen. The flux of all other export reactions is set to 0, see Table 3 for a summary.
+
+#### Additional Constraints
 
 We explicitly include the maintenance costs in our model to cover the amounts of ATP that is used to degradation and re-synthesis proteins for each compartment. (Li et al., 2017) specifies the ATP costs for protein degradation and synthesis of each compartment of a mature Arabidopsis leaf. Based on the given data, we were able to calculate the flux rates to constrain the maintenance reactions in each compartment (Table 4).
 
-The one-cell model contains maintenance reactions only for the cytsol (NGAM_c), chloroplast (NGAM_h) and mitochondria (NGAM_m) in the form:(4)A⁢T⁢P⁢_⁢{x}+H⁢2⁢O⁢_⁢{x}→A⁢D⁢P⁢_⁢{x}+H⁢_⁢{x}+P⁢i⁢_⁢{x}x=c,h,m
+**Table 4.**
+ Maintenance costs by compartment
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compartment</th>
+      <th>Flux [μmol/(m2s)]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cytosol</td>
+      <td>0.0427</td>
+    </tr>
+    <tr>
+      <td>chloroplast</td>
+      <td>0.1527</td>
+    </tr>
+    <tr>
+      <td>mitochondria</td>
+      <td>0.0091</td>
+    </tr>
+    <tr>
+      <td>peroxisome</td>
+      <td>0.0076</td>
+    </tr>
+  </tbody>
+</table>
+
+The one-cell model contains maintenance reactions only for the cytsol (NGAM_c), chloroplast (NGAM_h) and mitochondria (NGAM_m) in the form:
+
+$$
+A⁢T⁢P⁢_⁢{x}+H⁢2⁢O⁢_⁢{x}→A⁢D⁢P⁢_⁢{x}+H⁢_⁢{x}+P⁢i⁢_⁢{x}x=c,h,m
+$$
 
 An equivalent maintenance reaction cannot be formulated for the peroxisome since in the one-cell model ATP/ADP are not included as peroxisomal metabolites. The flux through the maintenance reactions is fixed to the determined maintenance costs given in Table 4. The peroxisomal maintenance costs are added to the cytosolic maintenance costs.
 
-The CO2 and O2 partial pressures determine the ratio of the oxygenation : carboxylation rate of Rubisco (given by reactions RBO_h and RBC_h) and can be described by the mathematical expression:(5)vRBO_hvRBC_h=1SR⋅pO2pCO2,where SR specifies the ability of Rubisco to bind CO2 over O2. In the case of a mature leave and ambient CO2 and O2 partial pressures in temperate regions with adequate water supply, the ratio vR⁢B⁢Oh/vR⁢B⁢Ch is fixed and is predicted to be 10%, which is encoded by an additional flux ratio constraint.
+The CO2 and O2 partial pressures determine the ratio of the oxygenation : carboxylation rate of Rubisco (given by reactions RBO_h and RBC_h) and can be described by the mathematical expression:
+
+$$
+\frac{v_{RBO_h}}{v_{RBC_h}}=\frac{1}{S_{R}}⋅\frac{p_{O_{2}}}{p_{CO_{2}}},
+$$
+
+where $S_{R}$ specifies the ability of Rubisco to bind CO2 over O2. In the case of a mature leave and ambient CO2 and O2 partial pressures in temperate regions with adequate water supply, the ratio $v_{R⁢B⁢O_{h}}/v_{R⁢B⁢C_{h}}$ is fixed and is predicted to be 10%, which is encoded by an additional flux ratio constraint.
 
 We assume no flux for the chloroplastic NADPH dehydrogenase (iCitDHNADP_h) and plastoquinol oxidase (AOX4_h) because (Josse et al., 2000) and (Yamamoto et al., 2011) have shown that their effect on the photosynthesis is minor.
 
-## Objective
+#### Objective
 
 In accordance with the assumption of mature, fully differentiated and photosynthetic active leaf, the model’s objective is to maximise the phloem sap output defined by reactions Ex_Suc and Ex_AA. Additionally, we assume that the involved plant cells put only a minimal metabolic effort, in the form of energy and resources, into the production of phloem sap as possible. This assumption is in correspondence with minimising the nitrogen investment by reducing the number of enzymes that are active in a metabolic network. Therefore, we perform a parsimonious FBA to minimise the total flux.
 
 For enhanced compliance with the recent standards of the systems biology community, the one-cell model is encoded in SBML level 3. Meta-information on subsystems, publications, cross-references are provided as evidence code in the form of MIRIAM URI’s. FBA related information, gene association rules, charge and formula of a species element are encoded using the Flux Balance Constraints package developed for SBML level 3. All fluxes in the model are consistently defined as μmol/(m2s).
 
-## Generic model for C4 metabolism
+### Generic model for C4 metabolism
 
-## Metabolic model
+#### Metabolic model
 
 The generic model of C4 metabolism, short two-cell model, comprises two copies of the one-cell model to represent one mesophyll and one bundle sheath cell. Reactions and metabolites belonging to the metabolic network of the mesophyll are indicated with the prefix [M], whereas the prefix for the bundle sheath is [B]. The separate mesophyll and bundle sheath networks are connected via reversible transport reactions of the cytosolic metabolites indicated with the prefix [MB], Figure 2. The C4 evolution not only confined Rubisco to the bundle sheath cells, the CO2 concentrating mechanism steadily supplies Rubisco with CO2 in such a way that the oxygenation rate is negligible. Therefore, the bundle sheath network is equipped with two Rubisco populations. The native Rubisco population binds external CO2 and adheres to forced oxygenation : carboxylation ratios, where the optimised evolutionary population binds only internal CO2 and the carboxylation occurs independently of the oxygenation. External CO2 is defined as [B]_CO2_ex_{c,h} supplied by the mesophyll network. Internal CO2 given by [B]_CO2_{c,h,m} originates from reactions in the bundle sheath network producing CO2. External CO2in the bundle sheath network is only allowed to move to the chloroplast [B]_Tr_CO2h_Ex and to react with Rubisco [B]_RBC_h_Ex. The differentiation of two Rubisco populations binding either external or internal CO2 approximates the concentration-dependent shift of the oxygenation : carboxylation ratio.
 
-## Imports
+#### Imports
 
 As for the one-cell model, we assume photoautotrophic growth conditions, see Table 3. During C4 evolution the CO2 assimilation became more efficient allowing higher CO2 assimilation rates. Zea mays achieves up to 40 μmol/(m2s) ([M]_Im_CO2) (Rozema, 1993). We assume that the CO2 uptake from the environment by the bundle sheath has to be bridged by the mesophyll. Therefore, the input flux of [B]_Im_CO2 is set to zero.
 
-## Exports
+#### Exports
 
 The outputs of the one-cell model are transferred to the mesophyll and bundle sheath network, as well as the corresponding flux ratios, see Table 3.
 
-## Additional Constraints
+#### Additional Constraints
 
-The ATP costs for cell maintenance in the genC3 model are assigned to both cell types in the two-cell model. Due to declining CO2 concentrations over evolutionary time and/or adverse conditions which close the stromata, the oxygenation : carboxylation ratio of the native Rubisco population in the bundle sheath and the mesophyll is increased and can be predicted as 1 : 3, the corresponding flux ratios are adapted accordingly. Furthermore, we assume that the total photon uptake in the mesophyll and bundle sheath is in the range of 0 μmol/(m2s)to 1000 μmol/(m2s). Since they are more central in the leaf, the photon uptake by the bundle sheath must be equal or less compared to the mesophyll. The mesophyll and bundle sheath networks are connected by a range of cytosolic transport metabolites including amino acids, sugars (glucose, fructose, sucrose, trehalose, ribose), single phosphorylated sugar (glucose-6-phosphate, glucose-1-phosphate, fructose-6-phosphate, sucrose-6-phosphate), mono-/di-/tri-carboxylic acids (phosphoenolpyruvate, pyruvate, citrate, cis-aconitate, isocitrate, α-ketoglutarate, succinate, fumarate, malate), glyceric acids (2-Phosphoglycerate, 3-Phosphoglycerate), glycolate, glycerate, glyceraldehyde-3-phosphate, di-hydroxyacetone-phosphate and CO2. Nucleotides, NAD/NADH, NADP/NADPH, pyrophosphate, inorganic phosphate are not considered as transport metabolites. Oxaloacetate has been excluded as transport metabolite since concentrations of oxaloacetate are very low in vivo and it is reasonably unstable in aqueous solutions. Other small molecules that can be imported by the bundle sheath from the environment, as well as protons and HCO3-, are not exchanged between the two cell types.
+The ATP costs for cell maintenance in the genC3 model are assigned to both cell types in the two-cell model. Due to declining CO2 concentrations over evolutionary time and/or adverse conditions which close the stromata, the oxygenation : carboxylation ratio of the native Rubisco population in the bundle sheath and the mesophyll is increased and can be predicted as 1 : 3, the corresponding flux ratios are adapted accordingly. Furthermore, we assume that the total photon uptake in the mesophyll and bundle sheath is in the range of 0 μmol/(m2s)to 1000 μmol/(m2s). Since they are more central in the leaf, the photon uptake by the bundle sheath must be equal or less compared to the mesophyll. The mesophyll and bundle sheath networks are connected by a range of cytosolic transport metabolites including amino acids, sugars (glucose, fructose, sucrose, trehalose, ribose), single phosphorylated sugar (glucose-6-phosphate, glucose-1-phosphate, fructose-6-phosphate, sucrose-6-phosphate), mono-/di-/tri-carboxylic acids (phosphoenolpyruvate, pyruvate, citrate, cis-aconitate, isocitrate, $\alpha$-ketoglutarate, succinate, fumarate, malate), glyceric acids (2-Phosphoglycerate, 3-Phosphoglycerate), glycolate, glycerate, glyceraldehyde-3-phosphate, di-hydroxyacetone-phosphate and CO2. Nucleotides, NAD/NADH, NADP/NADPH, pyrophosphate, inorganic phosphate are not considered as transport metabolites. Oxaloacetate has been excluded as transport metabolite since concentrations of oxaloacetate are very low in vivo and it is reasonably unstable in aqueous solutions. Other small molecules that can be imported by the bundle sheath from the environment, as well as protons and HCO3-, are not exchanged between the two cell types.
 
-## Objective
+#### Objective
 
 The maximisation of the phloem sap output through the bundle sheath and the minimisation of the metabolic effort are kept as objectives in the two-cell model.

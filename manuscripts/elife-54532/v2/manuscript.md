@@ -34,7 +34,7 @@ Structurally, GTs adopt one of three folds (GT-A, -B or -C) with the GT-A Rossma
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig1-v2.jpg)
 
-**Figure 1.:** Top: The three representative structural folds of GTs. The GT-A fold is characterized by a single globular domain that contains a α/β/α Rossmann nucleotide binding domain (shown 2rj7;GT6). The GT-B fold enzymes are usually metal independent and contain two α/β/α domains separated by a flexible linker region with the substrate binding cleft in between (shown 1jg7;GT63). The GT-C fold enzymes are hydrophobic integral membrane proteins, generally use lipid phosphate linked sugar donors and have multiple transmembrane helices (shown 6gxc; GT66). Bottom: The mechanism of sugar transfer employed by GTs. Inverting GTs follow a direct displacement SN-2-like mechanism that results in an inverted anomeric configuration. The mechanism for retaining GTs is still under debate although recently a same side SNi-type reaction has been proposed where the donor phosphate oxygen acts as a catalytic base and deprotonates the acceptor hydroxyl facilitating a same side attack, that results in the retention of anomeric configuration. The enzyme and catalytic base B are shown in orange. A generic hexose with α-linkage to a nucleoside diphosphate is used. Other mechanisms possibly employed by GTs is discussed in detail in M.  Figure 1—source data 1.The structural fold and the number of sequences from each taxonomic group are shown. The number of sequences with structure or are characterized are also provided.
+**Figure 1.:** Top: The three representative structural folds of GTs. The GT-A fold is characterized by a single globular domain that contains a α/β/α Rossmann nucleotide binding domain (shown 2rj7;GT6). The GT-B fold enzymes are usually metal independent and contain two α/β/α domains separated by a flexible linker region with the substrate binding cleft in between (shown 1jg7;GT63). The GT-C fold enzymes are hydrophobic integral membrane proteins, generally use lipid phosphate linked sugar donors and have multiple transmembrane helices (shown 6gxc; GT66). Bottom: The mechanism of sugar transfer employed by GTs. Inverting GTs follow a direct displacement SN-2-like mechanism that results in an inverted anomeric configuration. The mechanism for retaining GTs is still under debate although recently a same side SNi-type reaction has been proposed where the donor phosphate oxygen acts as a catalytic base and deprotonates the acceptor hydroxyl facilitating a same side attack, that results in the retention of anomeric configuration. The enzyme and catalytic base B are shown in orange. A generic hexose with α-linkage to a nucleoside diphosphate is used. Other mechanisms possibly employed by GTs is discussed in detail in M.
 
 The wealth of sequence data available on GTs provides an opportunity to infer underlying mechanisms through deep mining of large sequence datasets. In this regard, the CAZY database serves as a valuable resource (Lombard et al., 2014) for generating new functional hypotheses by classifying GT enzymes into individual families based on overall sequence similarity. However, a broader understanding of how these enzymes evolved to recognize diverse donor and acceptor substrates requires a global comparison of diverse GT-A fold enzymes. Such comparisons are currently a challenge due to limited sequence similarity between families and the lack of a phylogenetic framework to detect evolutionary events associated with GT functional specialization. Previous efforts to investigate GT evolution have largely focused on individual families or pathways (Taujale and Yin, 2015; Lombard, 2016) and have not explicitly addressed the challenge of mapping the evolution of functional diversity across families.
 
@@ -42,9 +42,25 @@ Here through deep mining of over half a million GT-A fold-related sequences from
 
 ## Results
 
-## An ancient common core shared among diverse GT-A fold enzymes
+### An ancient common core shared among diverse GT-A fold enzymes
 
 To define common features shared among diverse GT-A fold enzymes, we generated a multiple sequence alignment of over 600,000 GT-A fold related sequences in the non-redundant (NR) sequence database (Pruitt et al., 2007) using curated multiple-aligned profiles of diverse GTs. The alignment profiles were curated using available crystal structures (Materials and methods) (Neuwald, 2009). The resulting alignment revealed a GT-A common core consisting of 231 aligned positions. These aligned positions are referred to throughout this analysis and are mapped to representative structures in Supplementary file 2. The common core is defined by eight β sheets and six α helices, including three β sheets and α helices from the N-terminal Rossmann fold (Figure 2A,B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig2-v2.jpg)
+
+**Figure 2.:** (A) Plot showing the schematics of the GT-A common core with 231 aligned positions. Conserved secondary structures (red α-helices, blue β-sheets, green loops) and hypervariable regions (HVs)(orange) are shown. Conservation score for each aligned position is plotted in the line graph above the schematics. Evolutionarily constrained regions in the core: the hydrophobic positions (yellow) and the active site residues (DxD: Cyan, xED: Magenta, G-loop: green, C-His: olive) are highlighted above the positions. (B) The conserved secondary structures and the location of HVs are shown in the N-terminal GT2 domain of the multidomain chondroitin polymerase structure fromE. coli(PDB: 2z87) that is used as a prototype as it displays closest similarity to the common core consensus. (C) Active site residues of the prototypic GT-A structure. Metal ion and donor substrate are shown as a brown sphere and sticks, respectively. (D) Architecture of the hydrophobic core (Yellow: core conserved in all Rossmann fold containing enzymes, Red: core elements present only in the GT-A fold). Residues are labeled based on their aligned positions. Numbers within parentheses indicate their position in the prototypic (PDB: 2z87) structure.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The conserved hydrophobic positions are highlighted in yellow blocks. Aligned positions are indicated at the top that correspond to aligned positions in Figure 2D. The alignment extends until the DxD motif. Other regions were unaligned due to very low homology.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The conserved hydrophobic core in the prototypic GT (2z87). (B and C) Hydrophobic residue in the core is substituted by an Arginine and a Glutamate in GT15 and GT55 respectively. The charged residue replacing the hydrophobic residue of the core is highlighted in red sticks. The xED motif is shown in magenta.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The GT-A common core is shown in surface in the middle. HVs are shown in shades of orange (HV1: light orange, HV2: dark orange, HV3: orange red). Root Mean Square Deviation (RMSD) was calculated by aligning the core GT-A domains of representative structures with and without the HVs. A significant reduction in the RMSD values was observed after removing HVs that is shown in the box plot in the center. *p-value<0.0001, t-test.
 
 Quantification of the evolutionary constraints imposed on the common core reveal twenty residues shared among diverse GT-A fold families. These include the DxD and the xED motif residues involved in catalytic functions, and other residues not typically associated with catalysis (Figure 2A) such as the conserved glycine at aligned position 151 (G335 in 2z87) in the flexible G-loop and a histidine residue (H386 in 2z87) in the C-terminal tail at aligned position 207, henceforth referred to as the C-His. Residues from the G-loop in some families, such as the blood ABOs (GT6) and glucosyl-3-phosphoglycerate synthases (GpgS; GT81), contribute to donor binding (Patenaude et al., 2002; Empadinhas et al., 2011). The C-His, likewise, coordinates with the metal ion and contributes to catalysis in a subset of GTs, such as polypeptide N-acetylgalactosaminyl transferases (ppGalNAcTs; GT27) and lipopolysaccharyl-α−1,4-galactosyltransferase C (LgtC; GT8) (Fritz et al., 2004; Persson et al., 2001). The conservation of these residues across diverse GT-A fold enzymes suggest that they likely perform similar functional roles in other families as well.
 
@@ -52,9 +68,25 @@ The remaining core conserved residues include fourteen hydrophobic residues that
 
 Our broad evolutionary analysis also reveals three hypervariable regions (HVs) extending from the common core. These include an extended loop segment connecting β3 strand and αC helix (HV1), a segment longer than 28 amino acids connecting β6 and β7 strand (HV2) and a C-terminal tail extending from the β8 strand (HV3) in the common core. These HVs, while conserved within families, display significant conformational and sequence variability across families (Figure 2A, Figure 2—figure supplement 3) and encode family-specific motifs that contribute to acceptor specificity in individual families, as discussed below.
 
-## A phylogenetic framework relating diverse GT-A fold families
+### A phylogenetic framework relating diverse GT-A fold families
 
 Having delineated the common core, we next sought to generate a phylogenetic tree relating diverse GT-A fold families using the core alignment. Because of the inherent challenges in the generation and visualization of large trees (Sanderson and Driskell, 2003), we used a representative set of GT-A fold sequences for phylogenetic analysis by first clustering the ~600,000 sequences into functional categories using a Bayesian Partitioning with Pattern Selection (BPPS) method (Neuwald, 2014). The BPPS method partitions sequences in a multiple sequence alignment into hierarchical sub-groups based on correlated residue patterns characteristic of each sub-group (Materials and methods). This revealed 99 sub-groups with distinctive patterns. Representative sequences across diverse phyla from these sub-groups (993 sequences, Figure 3—source data 2) were then used to generate a phylogenetic tree (Figure 3). Based on the phylogenetic placement of these sequences, we broadly define fifty-three major sub-groups, thirty-one of which correspond to CAZy-defined families (Figure 3—source data 1). The remaining sub-groups correspond to sub-families within larger CAZy families. In particular, we sub-classified the largest GT family in the CAZy database, GT2, into ten phylogenetically distinct sub-families. Likewise, GT8 and GT31 were classified into seven and five sub-families, respectively. These sub-families are not explicitly captured in CAZy and are annotated based on overall sequence similarity to functionally characterized members. For example, ‘GT2-LpsRelated’ corresponds to a sub-family within GT2 most closely related to the bacterial β−1–4-glucosyltransferases (lgtF) involved in Lipopolysaccharide biosynthesis (Figure 3, Figure 3—figure supplement 1). Such a hierarchical classification captures the evolutionary relationships between GT-A fold families/sub-families while keeping the nomenclature consistent with CAZy.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig3-v2.jpg)
+
+**Figure 3.:** Tips in this tree represent GT-A sub-families condensed from the original tree for illustration. Support values are indicated using different circles. Circles at the tips indicate bootstrap support for the GT-A family clade represented by that tip. Tips missing the circles represent GT-A families that do not form a single monophyletic clade. Nodes missing circles have a bootstrap support less than 50% and are unresolved. Icon labels indicate the taxonomic diversity of that sub clade. Colors indicate the mechanism for the families (blue: Inverting, red: Retaining). This condensed tree was generated by collapsing clades to the deepest node that includes sequences from the same family. For GT-A families that did not form a monophyletic clade, the clade that included the most sequences from that family was chosen. Branch lengths may approximate the original distances, but are not drawn to scale. Detailed tree with support values, expanded nodes and scaled branch lengths are provided in Figure 3—figure supplement 1 and in Newick format in Figure 3—source data 4. The family names are described in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Sequences are provided in Figure 3—source data 2. Clades are colored for each of the 53 GT-A families and labeled. Values at nodes indicate bootstrap support with 1000 replicates. Values for all major nodes are indicated. This tree is also provided in Newick text format in Figure 3—source data 4.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The conserved mode of donor binding in clade 9, conserved mode of acceptor binding in clade two and the conserved QXXRW motif in clade one are illustrated. HVs are shown in orange. Metal ions are shown as spheres. Red bars above the alignment indicate the extent of significance of conservation of residue in the column (Higher is more significantly conserved). Below every position in the alignment, numbers indicate the extent of conservation of residues at the position.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Each column highlights clusters of GT-A families obtained through different methods (from left to right: PDB structural alignment clustering, GT-A phylogeny and hmm-distance based tree). Corresponding GT-A families within clusters are connected through colored links. Non overlapping links indicate an agreement in the placement of families across methods. Full clusters and trees are shown below the columns.
 
 GT-A fold families and sub-families can be further grouped into clades based on shared sequence features and placement in the phylogenetic tree (Figure 3). For example, clade one groups four GT2 sub-families (GT2-CeS, GT2-CWR, GT2-Chitin-HAS and GT2-Bre3) with GT84 and GT21 with high confidence, as determined by bootstrap values (see Figure 3 legends). Members of these six families are all involved in either polysaccharide or glycosphingolipid biosynthesis. Additionally, the pattern-based classification identified a conserved [QR]XXRW motif in the C-terminal HV3 (Figure 3—figure supplement 2) which is unique to members of this clade. The [QR]XXRW motif residues coordinate with the donor and acceptor in a bacterial cellulose synthase (from GT2-CeS family) (Morgan et al., 2013) and mutation of these residues in bacterial cyclic β−1,2-glucan synthetase (Cgs, GT84) abrogates activity (Ciocchini et al., 2006), suggesting a critical role of this motif in functional specialization of clade 1 GT-As.
 
@@ -64,7 +96,7 @@ We noticed that three out of four MGAT GT-A families responsible for the branchi
 
 We further note that fifteen out of fifty-three GT-A families are found in both prokaryotes and eukaryotes. These fifteen families fall on different clades throughout the tree. GT-A families present only in prokaryotes, like GT81, GT82 and GT88, are also spread out in different clades (Figure 3). Similarly, other GT-A families that are present within restricted subsets of taxonomic groups (like GT40 and GT60 present only in prokaryotes and protists) are also scattered throughout the tree. These observations suggest that the divergence of most GT-A families predates the separation of prokaryotes and eukaryotes.
 
-## Multiple evolutionary lineages for inverting and retaining mechanisms
+### Multiple evolutionary lineages for inverting and retaining mechanisms
 
 To obtain insights into the evolution of catalytic mechanism, we annotated the phylogenetic tree based on known mechanisms of action (inverting or retaining). Inverting GTs are colored in blue in the phylogenetic tree, while retaining GTs are colored in red (Figure 3). The dispersion of inverting and retaining families in multiple clades suggests that these catalytic mechanisms emerged independently multiple times during GT-A fold evolution. We find that natural perturbations in the catalytic base residue, an important distinction between the inverting and retaining mechanisms, correlates well with these multiple emergences across the tree. The residue that acts as a catalytic base for inverting GTs (aspartate within the xED motif, xED-Asp) is variable across the retaining families consistent with its lack of role in the retaining SNi mechanism (Moremen and Haltiwanger, 2019). In the inverting families, the xED-Asp is nearly always conserved and appropriately positioned to function as a catalytic base (Figure 4A), though some exceptions have been noted (Moremen and Haltiwanger, 2019; Gandini et al., 2017). Out of the five clades grouping inverting and retaining families, inverting families in three of these clades do not conserve the xED-Asp (GT2-DPs, GT2-LpsRelated and GT43). The heterogeneous nature of this residue in these families suggests that change of the catalytic base residue could be a key event in the transition between inverting and retaining mechanisms. Unlike families that conserve the xED-Asp, these families achieve inversion of stereochemistry through alternative modes that may relieve the constraints necessary to conserve the xED-Asp. For example, in GT43, the Asp base is replaced by a glutamate residue, which shifts the reaction center by one carbon bond (Moremen and Haltiwanger, 2019). Further, the dolichol phosphate transferases (DPMs and DPGs) in the GT2-DP family, which lack the xED-Asp entirely, transfer sugars to a negatively charged acceptor substrate (a phosphate group) and thus do not need a catalytic base to initiate nucleophilic attack (Gandini et al., 2017). Other GT-A inverting families lacking the xED-Asp (GT12, GT14, GT17, GT49 and GT82) are grouped into separate monophyletic clades segregating them from inverting families with the conserved xED-Asp (Figure 3). Out of these, only GT14 has representative crystal structures where a glutamate serves as the catalytic base (Briggs and Hohenester, 2018). For other inverting families with a non-conserved xED-Asp, residues from other structural regions may serve as a catalytic base. On the other hand, retaining families like GT64 conserve the xED-Asp, yet do not use it as a catalytic base. Thus, there may be multiple ways in which inverting and retaining mechanisms diverge, with one path being mutation of the xED-Asp catalytic base.
 
@@ -80,7 +112,7 @@ One strongly supported clade that includes both inverting and retaining families
 
 Clade five places the inverting GT7 and GT2-CHS with the retaining GT27 and GT60 families (Figure 3). This supports the evolution of these families from a close common ancestor through gene duplication and divergence, which has been suggested through structural similarities between GT7 and GT27 (Ramakrishnan and Qasba, 2010b). After this initial divergence in mechanism within clade 5, the subclades group the β−1,4-GalNAc transferase domains of bacterial and protist chondroitin polymerases (involved in the elongation of glycosaminoglycan chondroitin)(GT2-CHS) with the GT7 family. The GT7 family includes the higher organism counterparts of the β−1,4-GalNAc transferase domains of chondroitin synthases, along with β−1,4-Gal transferases. The close placement of GT60 and GT27 families in this clade is also directly supported by previous literature indicating that these families share a conserved mode of polypeptide Ser/Thr O-glycosylation (Heise et al., 2009). Clade five thus consolidates previous independent findings and suggests a shared ancestor, potentially extending the common ancestry of GT2-CHS and GT7 to include GT27 and GT60, with an ancestral divergence in mechanism.
 
-## Variations in the core and hypervariable regions contribute to unique modes of substrate specificity
+### Variations in the core and hypervariable regions contribute to unique modes of substrate specificity
 
 Analysis of the patterns of conservation and variation in the common core indicates that each residue position within the core has been mutated in some context during the course of evolution, highlighting the tolerance of the GT-A fold to extensive sequence variation. While some of these variations are confined to specific clades or families, such as replacement of DxD motif with DxH motif in GT27 and GT60, other variations are found independently across distal clades (Figure 4A). For example, GT14 and prokaryotic members of GT6 that fall on different clades, have independently lost the DxD motif and no longer require a metal ion for activity (Briggs and Hohenester, 2018; Pham et al., 2014).
 
@@ -88,9 +120,21 @@ The C-His is also lost independently in multiple clades (Figure 4A). In order to
 
 The HV regions show significant variability across GT-A families and extend from the common core to perform various roles from substrate binding to large conformational changes that position the donor and acceptor substrates for the enzymatic reaction (Jamaluddin et al., 2007; Tsutsui et al., 2013; Albesa-Jové et al., 2017). Mutations within these HV regions, for example, at aligned position 126 in the HV2 region (Y177A,G in 4lw6, GT7), have also been shown to induce a shift in acceptor specificity (Tsutsui et al., 2013). Despite significant sequence variability, we find that these HV regions in fact conserve family specific residues that contribute to acceptor specificity. For example, a distinctive arginine (R117) and aspartate (D154) along with R131 and serine S135 within the HV2 of DPM1 (GT2-DP sub-family) contribute to specificity towards a dolichol phosphate acceptor by creating a charged binding pocket for the phosphate group (Figure 5A). Likewise, family-specific residues (R198, H221 and E224 in 5vcm) within the HV1 of MGAT2 (GT16) form a unique scaffold for recognizing the terminal GlcNAc of the N-glycan acceptor (Figure 5B). Similarly, the C-terminal GT64 domain of the multidomain EXTLs contain specific residues in HV2 (R181 and Y193) and HV3 (H289 and R293) that form a unique binding pocket for the tetrasaccharide linker acceptor used to synthesize glycosaminoglycans (Figure 5C). Together these examples illustrate the ability of HVs to evolve family specific motifs to recognize different acceptors.
 
-## ML to predict the donor specificity of GT-A sequences
+### ML to predict the donor specificity of GT-A sequences
 
 As discussed above, the conserved catalytic residues dictate the mechanism of sugar transfer and metal binding while the extended HVs use family specific motifs to dictate acceptor specificity. We also find some clade specific features (such as the conserved Lys in clade 9, and QXXRW in clade 1) and G-loop residues involved in donor binding, however, the overall framework that dictates donor sugar specificity in GTs is largely unknown. Sequence homology alone is insufficient to predict donor specificity because evolutionarily divergent families can bind to common substrates, and sometimes even two closely related sequences bind to different donors (Figure 6—figure supplement 1; Patenaude et al., 2002). For a subset of GT-B fold families, ML methods have been successfully applied towards predicting substrate specificities (Yang et al., 2018). Our global analysis provides a comparative basis to expand such methods and contrast sequences that bind different donors across all GT-A families. To test whether evolutionary features gleaned from this global analysis can be used to better predict donor substrate specificity, we employed a ML framework that learns from the specificity-determining residues of functionally characterized enzymes to predict specificity of understudied sequences. In brief, using an alignment of a well curated set of 713 GT-A sequences (Figure 6—source data 1, Figure 6—figure supplement 2—source data 1, Figure 6—figure supplement 2) with known donor sugars, we derived five amino acid properties (hydrophobicity, polarity, charge, side chain volume and accessible surface area) from each aligned position within the common core. These properties were then used as features to train multiple ML models. Among the seven methods used, the gradient-boosted regression tree (GDBT) model achieved the best prediction performance (accuracy ~90%) based on a 10-fold cross validation (CV) using 239 contributing features (Figure 6A,B, Figure 7—source data 1). This model adds an ensemble boosting to tree based learners used for predicting GT1 substrate specificities (Yang et al., 2018). To further validate the model, we tested its performance on a validation set of 64 sequences that were not used to train the ML model but have known sugar specificities. The GDBT classifier correctly predicted donor substrates for 92% of these sequences, 89% of which were predicted with high confidence (blue rows in Figure 6—source data 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig6-v2.jpg)
+
+**Figure 6.:** (A) Brief pipeline of the ML analysis. Training set input into the pipeline are shown in green boxes. Steps of the ML analysis in purple boxes are associated with different panels of the figure. (B) Percent accuracy based on 10-fold cross validation (CV) for each of the trained ML models. (C) Confusion matrix from the best model (GDBT using 239 features). (D) Scatter plot showing the probability scores assigned for each predicted sequence by the predicted donor type. Colors indicate the confidence level of the prediction based on probability of assignment to a given donor class as well as confidence intervals of the predicted class i.e. difference in probability values between the 1st prediction class and the 2nd prediction class. (Figure 6—source data 2).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Nodes represent the sequences that were annotated as characterized and collected from the CAZy database to be used in the training dataset for ML. The color and shape of the nodes indicate the donor specificity for that sequence. An edge between two nodes indicate that the sequences are homologous with an e-value better than 1e-5. Smaller edge distance indicates a higher similarity between nodes. An edge-weighted spring embedded layout from Cytoscape was implemented to minimize edge crossings and enhance visual interpretability. At multiple locations in the network, closely related sequences differ in donor specificity, rendering prediction through similarity alone difficult.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The size of the bubbles next to GT-A family names indicates the number of sequences in the training and prediction set from that family. Color of the bubbles indicate training or prediction set.
 
 The GDBT model was then used to predict donor sugars for GT-A domains with unknown specificities from five organisms: H. sapiens, C. elegans, D. melanogaster, A. thaliana and S.cerevisiae (Figure 6—source data 2). Each prediction is associated with a confidence level derived from the probability for each of the six donor classes (Materials and methods). Nearly 77% of the predictions have high and moderate confidence levels and present good candidates for further investigation (Figure 6D). The remaining 23% of the predictions are low confidence. This likely reflects their promiscuity for donor preferences, as seen across many GT-As (Empadinhas et al., 2011; Blixt et al., 1999), or non-catalytic GT-As like C1GALT1C1 (Cosmc) (Aryal et al., 2012).
 
@@ -100,7 +144,7 @@ We next sought to identify features that contribute most to substrate (donor) pr
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/54532/elife-54532-fig7-v2.jpg)
 
-**Figure 7.:** (A) Heatmap showing the contributions of representative features. Features are ordered based on their importance for the final GDBT model along the vertical axis. The heatmap colors indicate how important each feature is for a given sugar donor type with red indicating ranks 1–10 (highly important) (M). (B–E) Contributing features important for individual donor types are mapped onto representative structures. The amino acids at the feature positions are shown in yellow sticks and labelled. Feature positions distal from the donor binding site are shown in green sticks. Labels include the amino acid code, aligned residue position and the amino acid position in the crystal structure within parentheses. Donor substrate with the sugar is shown in lines with surface bounds. Divalent metal ions are shown as spheres. The αC helix is shown. (B) Gal features mapped to a bovine β−1,4 Gal transferase (PDB ID: 1o0r). (C) GalNAc features mapped to a human UDP-GalNAc: polypeptide alpha-N-acetylgalactosaminyltransferase (PDB ID: 2d7i). (D) GlcNAc features mapped to a rabbit N-acetylglucosaminyltransferase I (PDB ID: 1foa). (E) Man features mapped to a bacterial Mannosyl-3-Phosphoglycerate Synthase (PDB ID: 2wvl).  Figure 7—source data 1.‘GDBT_full’ columns include the rank and score for the 239 features in the GDBT model. Remaining columns show the rank and score for that same feature for the classification of the respective donor sugars. Feature positions ranked from 1 to 10 (most important) are colored red and ranked 11–20 are colored orange.
+**Figure 7.:** (A) Heatmap showing the contributions of representative features. Features are ordered based on their importance for the final GDBT model along the vertical axis. The heatmap colors indicate how important each feature is for a given sugar donor type with red indicating ranks 1–10 (highly important) (M). (B–E) Contributing features important for individual donor types are mapped onto representative structures. The amino acids at the feature positions are shown in yellow sticks and labelled. Feature positions distal from the donor binding site are shown in green sticks. Labels include the amino acid code, aligned residue position and the amino acid position in the crystal structure within parentheses. Donor substrate with the sugar is shown in lines with surface bounds. Divalent metal ions are shown as spheres. The αC helix is shown. (B) Gal features mapped to a bovine β−1,4 Gal transferase (PDB ID: 1o0r). (C) GalNAc features mapped to a human UDP-GalNAc: polypeptide alpha-N-acetylgalactosaminyltransferase (PDB ID: 2d7i). (D) GlcNAc features mapped to a rabbit N-acetylglucosaminyltransferase I (PDB ID: 1foa). (E) Man features mapped to a bacterial Mannosyl-3-Phosphoglycerate Synthase (PDB ID: 2wvl).
 
 While some of the highly ranked features are directly involved in donor binding, many others (such as aligned position 77, 88, 155 and 159, green sticks in Figure 7B,D) are distal from the donor binding site and are not directly involved in donor binding. An example of allostery has been observed in the human GT6 blood ABO α−1,3-galactosyltransfearse where mutation of a proline at position 117 (P234S in 5c4c) results in an alternative conformation of a methionine at position 150 (M266 in 5c4c) allowing for the accommodation of GalNAc instead of Gal (Hancock et al., 2006; Marcus et al., 2003). Further, a Random forest model trained using features from only the donor binding residues performs with an accuracy of only 75%, indicating the importance of features other than those directly involved in donor binding. Thus, despite only a few residues being directly involved in donor interactions, additional contributions to donor specificity come from residues more distal from the active site. Contributions from these peripheral secondary shell features surrounding the donor binding site (Figure 7B–E) highlight the potential role of higher order (allosteric) interactions in determining donor substrate specificity.
 
@@ -120,64 +164,158 @@ Our unbiased, top-down sequence-based analysis suggests new and unanticipated ev
 
 ## Materials and methods
 
-## Generation of GT-A profiles and alignment
+**Key resources table**
 
-## Building the GT-A profiles
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CAZy database</td>
+      <td>doi: 10.1093/nar/gkt1178</td>
+      <td>CAZy- Carbohydrate Active Enzyme, RRID:SCR_012909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>mapgaps</td>
+      <td>doi: 10.1093/bioinformatics/btp342</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>omcBPPS</td>
+      <td>doi: 10.1089/cmb.2013.0099</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GT-A family classification and sequences</td>
+      <td>This paper</td>
+      <td>doi:10.5061/dryad.v15dv41sh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT v7.3</td>
+      <td>doi: 10.1093/molbev/mst010</td>
+      <td>MAFFT, RRID:SCR_011811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Expresso from the t-coffee suite</td>
+      <td>doi: 10.1093/nar/gkl092</td>
+      <td>T-Coffee, RRID:SCR_011818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQTree v1.6.1</td>
+      <td>doi: 10.1093/molbev/msu300</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL v2.0.6</td>
+      <td>Schrödinger</td>
+      <td>PyMOL, RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python v3 with package scikitlearn</td>
+      <td>Pedregosa, 2011</td>
+      <td>scikit-learn, RRID:SCR_002577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package ‘randomForest’</td>
+      <td>Liaw and Wiener, 2002</td>
+      <td>RandomForest Package in R, RRID:SCR_015718</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WEKA version 3.8.3</td>
+      <td>Witten et al., 2016</td>
+      <td>Weka, RRID:SCR_001214</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of GT-A profiles and alignment
+
+#### Building the GT-A profiles
 
 Multiple alignments for 34 CAZy GT-A families, as determined based on literature (Breton et al., 2012; Lombard et al., 2014; Liu and Mushegian, 2003; Breton et al., 2006), were collected from the Conserved Domain Database (CDD) (Marchler-Bauer et al., 2017) or were manually built using MAFFT v7.3 (Katoh and Standley, 2013) from sequences curated at the CAZy database (Supplementary file 1). Multiple separate alignments were generated for large families such as GT2 and GT8 to capture the diversity within these families. These alignments made up the seed profiles for the GT-A families. These seed profiles were then multiply aligned using the mapgaps scheme (Neuwald, 2009) guided by a structure based sequence alignments of all available pdb structures using Expresso (Armougom et al., 2006) and MAFFT to generate the GT-A profiles. Representative pdb structures described in this study are listed and cited in Supplementary file 2. Alignments for families with no representative crystal structures were guided using secondary structure predictions performed using PCI-SS (Green et al., 2009). Finally, the alignment of secondary structures and conserved motifs were manually examined and corrected, where necessary. Very divergent GT-A families, such as GT29 and GT42 sialyltransferases, lack nearly all canonical GT-A motifs and do not align well with other GT-A families. Thus, they are noted as atypical GT-A fold families and not included in this analysis.
 
-## Sequence alignment and defining the GT-A common core
+#### Sequence alignment and defining the GT-A common core
 
 The GT-A profiles were then used for a sequence similarity search using mapgaps to identify and align ~600,000 GT-A domain sequences from the NCBI non redundant database. This alignment was filtered for fragmentary sequences and false hits. This filtered alignment was then used to define the boundaries of the GT-A common core that extends from the first beta sheet of the Rossmann fold to a C-terminal helix with family specific motifs. This conserved alignment spanned 231 aligned positions. Sequences with multiple GT-A domains (like the GT8 and GT49 LARGE domains) or other accessory domains (like the GT27 and lectin domains) were separated into individual catalytic GT-A domains and treated separately throughout the analyses.
 
-## Structural alignment of Rossmann fold proteins
+### Structural alignment of Rossmann fold proteins
 
 A select representative set of structures were collected from all Rossmann-fold containing protein domains using the SCOP database (Andreeva et al., 2014). mTM-align (Dong et al., 2018) was used to align these structures with a subset of GT-A structures (Figure 2—figure supplement 1).
 
-## Bayesian statistical analyses
+### Bayesian statistical analyses
 
 A representative subset of 24,650 GT-A sequences were generated from the ~600,000 putative GT-A sequences by using a family-wise sequence similarity filtering (only keep <70% similar sequences;<50% for GT2 and GT8 families). This sequence set was then used to apply the Optimal multiple-category Bayesian Partitioning with Pattern Selection (omcBPPS) scheme (Neuwald, 2014). omcBPPS identifies patterns of column-wise amino acid conservation and variation in the multiple sequence alignment. The resulting family specific positions were then used as statistical measures to classify the GT-As into 99 unique sets that correspond to the 53 families described in this study (Figure 3—source data 1). omcBPPS also identified aligned positions that are conserved across all GT-A fold families. This revealed the 20 conserved positions within the core component, that were also verified by calculating conservation scores using the Jensen-Shannon divergence score as described and implemented by Capra and Singh (2007) (used in Figure 2A).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
-## Selection of sequences for phylogenetic analysis
+#### Selection of sequences for phylogenetic analysis
 
 A smaller subset of 993 sequences were used for phylogenetic reconstruction of the GT-A families (Figure 3—source data 2). This set includes all the identified GT-A sequences from five model organisms: H. sapiens (human), C. elegans (worm), D. melanogaster (fly), A. thaliana (dicot plant) and S. cerevisiae (yeast) along with select sequences representing the diverse taxonomic group in each family. These representative sequences were selected by finding the union of top hits for every taxonomic group present within each of the 99 sets and the seed alignments for the 34 CAZy GT-A families. This selection criteria maximized the phylogenetic and taxonomic diversity while keeping the number of sequences to a minimum.
 
-## Details of the phylogenetic inference
+#### Details of the phylogenetic inference
 
 The alignment for these 993 sequences was trimmed to remove the insert positions and keep only the 231 aligned positions described above. This trimmed alignment was used to build a phylogenetic consensus tree using IQTree v1.6.1 (Nguyen et al., 2015) with the following options: -nt AUTO -st AA -m MFP+MERGE -alrt 1000 -bb 1000 -wbt -nm 1000 -bnni. This implements ModelFinder (Kalyaanamoorthy et al., 2017) to select the best fit model based on Bayesian Information Criterion (BIC). Clade support for this tree was evaluated using bootstrapping which reports support values based on the number of times the same clade was observed on 1000 trees built using resampled alignment. Clades with bootstrap support values over 90% are well supported while values over 75% are moderately supported. Clades with bootstrap values less than 50% are considered unresolved in our analysis.
 
-## Orthogonal support for the phylogenetic tree
+#### Orthogonal support for the phylogenetic tree
 
 Further support for the phylogenetic tree was collected by comparing its topology to trees generated using orthogonal methods like Hidden Markov Model (HMM) distances and structural similarities, that have been used in previous studies (Huo et al., 2017; Hashimoto et al., 2010; Figure 3—figure supplement 3). The HMM-distance based phylogenetic tree was built using pHMM-Tree (Huo et al., 2017). Briefly, hmm profiles were built for each of the 53 sub-families identified in our analyses. Pairwise distances between these profiles were calculated and the resulting distance matrix was used to build a neighbor joining tree. All trees were visualized using the interactive Tree of Life (iTOL) online tool (Letunic and Bork, 2019). For the structural similarity based clustering, pairwise root mean square distances (RMSD) were calculated for 50 unique representative GT-A structures using the cealign algorithm in PyMol v2.0.6 (Schrödinger, LLC, 2017) to build a distance matrix. Only the defined GT-A catalytic domain spanning the 231 aligned positions along with insertions were used for the RMSD calculations. This RMSD matrix was then used for clustering using the ‘ward’ method in python which resulted in a structural distance based hierarchical clustering of the pdb structures. The hierarchical topology obtained from the HMM distance-based method and the RMSD distance based clustering were then compared to the tree topology in Figure 3 (Figure 3—figure supplement 3). Non-overlapping connections show consistently placed families.
 
-## Defining the GT-A families and sub-families
+### Defining the GT-A families and sub-families
 
 The GT-A sequences were first classified into pattern-based groups using omcBPPS. Based on the placement of representative sequences from these groups in the phylogenetic tree, they were merged into GT-A families and sub-families. The correspondence between the 53 GT-A families and subfamilies with the 99 pattern-based groups are provided in Figure 3—source data 1. Sequences from some families did not form any distinct pattern-based groups due to either a low number of sequences for a statistically significant grouping (GT78) or a lack of distinguishing patterns within the aligned positions (GT25, GT88). Representative sequences for these families were collected from the seed alignments for these families as described above. We also identified the N-terminal GT2 domain of the multidomain chondroitin polymerase structure from E. coli (Pdb Id: 2z87) as the prototypic GT-A structure to use as a comparative basis for structural analyses. This sequence was selected based on the lowest E-value and highest similarity score of a BLAST search of all pdb structures against the GT-A consensus sequences. Weblogos for the conserved active site residues were derived for each GT-A subfamily using Weblogo 3.6.0 (Crooks et al., 2004).
 
-## ML analysis
+### ML analysis
 
-## Gathering the training and validation dataset
+#### Gathering the training and validation dataset
 
 In order to train an ML model for GT-A donor substrate prediction, we first curated a training dataset by mining the ‘characterized’ tab of the CAZy GT database and the UniProt database (UniProt Consortium, 2019) to find 713 GT-A domain sequences with known donor sugars. The donor sugar information for these sequences were extracted from their assigned protein names. Based on the availability of training sequences, six major donor type classes were defined: Glc, GlcNAc, Gal, GalNAc, Man, and ‘Others’ with each class having more than 70 sequences in the training dataset. The ‘Others’ category merged the least represented donor types with less than 50 training sequences each (Ara, Fuc, GalF, GlcA, ManNAc, Rham, and Xyl). An alignment of the 713 sequences was generated and then used to derive five amino acid properties (charge, polarity, hydrophobicity, average accessible surface area, and side chain volume) (Kawashima et al., 1999) for each aligned position. These properties were used as features for ML. We first removed highly gapped positions (>15% gaps) and implemented correlation-based feature selection (CFS) (Hall, 1999) with 5-fold CV by using WEKA version 3.8.3 (67) under default settings to select 239 informative features for building multiple multiclass classification models. In addition, we also curated 64 GT-A sequences with known donor sugars for five model organisms (H. sapiens, C. elegans, D. melanogaster, A. thaliana and S.cerevisiae). These sequences were not used to train the ML model but set aside to be used as validation dataset to test the performance of the model (Figure 6—source data 2).
 
-## ML model training
+#### ML model training
 
 We first trained random forest models by using an R package ‘randomForest’ (Liaw and Wiener, 2002) with limited number of trees (ntree = 300) and limited maximum number of terminal nodes (maxnodes = 100) to avoid unrestricted tree expansion and potential overfitting. Two separate models were trained where the first one was trained with the larger set of 239 features and the second model was provided only 25 features coming from the donor binding residues. We used the GradientBoostingClassifier function of the sklearn package in python (Pedregosa, 2011) to train the gradient boost regression tree (GDBT) model on the 239 features. This model was trained with the following parameters: learning_rate = 0.1, n_estimators = 1600, min_samples_split = 25, min_samples_leaf = 7, max_depth = 4, max_features = 18, subsample = 0.75 and random_state = 10. These parameters were chosen based on a grid search to fine tune the trade-off between the complexity of the model and the metrics on the testing data, thus ensuring meaningful predictions and avoiding overfitting. The importance of each feature used in the GDBT model was measured based on the relative rank of the features in the decision nodes of a tree. To compare the performance of these models, we also trained Support Vector Machine (SVM), multilayer perceptron, Bayesian network, logistic regression, naive Bayes classifier, and decision tree models by using WEKA with 10-fold CV under default settings. 10-fold CV evaluates the ML models by iteratively training on 90% of the data selected at random and testing the prediction on the unseen 10% of the data. This is repeated 10 times and the results on the testing dataset are summarized into an accuracy measure. The GDBT model trained with 239 features had the highest accuracy and overall performance and thus was selected as the model of choice for predicting donor sugar substrates for GT-A enzymes.
 
-## Evaluating the confidence of predictions
+#### Evaluating the confidence of predictions
 
 Confidence scores were assigned for each prediction based on the probability for each of the six donor classes. The class with the highest probability represents the predicted donor sugar. As such, larger differences in probability between the first and second predicted class result in more reliable predictions. To interpret this difference in score easily, we derive a three-category confidence level. If the probability for the first class is more than four times the probability of the second predicted class, then it is considered a high confidence prediction. If the difference is less than four times but more than double the probability by random chance (2*1/6 for a six class classification), it is considered a moderate confidence prediction. If it is neither, then it is a low confidence prediction (Figure 6—source data 2).
 
-## Determining feature contributions for each donor sugar specificity
+#### Determining feature contributions for each donor sugar specificity
 
 Feature importance for the GDBT model was first assessed using the relative rank of the features in the decision tree. Then, six separate GDBT models were trained as binary classifiers (Gal Vs everything else, Glc Vs everything else and so on for the six donor types). For each of these six classifiers, the features were rank ordered in the same way by assessing their rank in the decision tree nodes. This provided the contributions of each of the 239 features toward a specific donor specificity which was then compared to its rank in the full GDBT model (Figure 7—source data 1).
 
-## Construction of the sequence similarity network
+### Construction of the sequence similarity network
 
 A sequence similarity network was generated to evaluate the general predictability of a donor substrate based on sequence homology alone. Using an Edge-Weighted Spring Embedded Layout (Kamada and Kawai, 1989) in Cytoscape (Shannon et al., 2003) with the same sequence dataset as the ML data, we produced a series of homologous networks constrained by an E-value cut-off of 0.05.
 
-## Selection of ancient archaeal and bacterial GT-A domain sequences in Supplementary file 3
+### Selection of ancient archaeal and bacterial GT-A domain sequences in Supplementary file 3
 
 The ancient archaeal and bacterial GT-A domain sequences listed in Supplementary file 3 represent sequences with the minimal GT-A domains (no long inserts, no additional domains) in prokaryotic organisms. These sequences could represent the most ancient progenitors of the GT-A fold families. These were selected based on closest homology to a consensus sequence derived from the GT-A profile alignments. First, a BLAST (Altschul et al., 1990) search was conducted with the consensus sequence on the NCBI nr database. The 500 hits with an e-value better than 1e-10 were selected. These hits were then aligned to the GT-A profiles using mapgaps. Using this alignment, these sequences were further filtered to include hits that had a) more than 140 aligned positions to remove fragmentary hits, b) less than 20 insert positions throughout the GT-A domain alignment, c) no more than 100 amino acids in the N-terminal region and d) no more than 200 amino acids in the C-terminal region.

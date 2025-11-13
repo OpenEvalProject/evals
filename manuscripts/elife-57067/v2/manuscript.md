@@ -33,7 +33,7 @@ There is a need for critical and inclusive evaluation of open access performance
 
 Despite the scale and success (at least in some areas) of policy interventions, there is limited comparative and quantitative research about which policy interventions have been the most successful. In part this is due to a historical lack of high-quality data on open access, the heterogeneous nature of the global scholarly publishing endeavour, and the consequent lack of any baseline against which to make comparisons.
 
-## Aim of Study
+### Aim of Study
 
 We have argued (Montgomery et al., 2018) that the key to understanding and guiding the cultural changes that underpin a transition to openness is analysis at the level of research institutions. While funders, national governments, and research communities create the environments in which researchers operate, it is within their professional spaces that choices around communication, and their links to career progression and job security are strongest. Analysis of how external policy leads to change at the level of universities is critical. However, providing accurate and reliable data on open access at the university level is a challenge.
 
@@ -57,6 +57,49 @@ To map the rate and degree of progress to open access, we developed a reproducib
 
 We have decided to focus mainly on total open access, publisher-mediated open access (i.e., gold), and repository-mediated open access (i.e., green) due to the ease of comprehension, data quality, and ability to show potential effects of selected policies (Table 1). Levels of hybrid open access and green in home repository for selected universities (ones for which we have more confidence in the data) are also included to further support the analysis of policy effects.
 
+**Table 1.**
+ Definitions of open access.Summary of different types of open access (OA) used in scholarly publishing. These definitions are not always mutually exclusive. For example, an article can be both Gold OA and Green OA. However, articles that are Green Only do not have any common element with articles classified as Gold OA by definition. This study focuses on the following categories: Total OA, Gold, Hybrid, Green and Green in Home Repo. Further discussions on open access definitions can be found in Supplementary file 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>OA type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total OA</td>
+      <td>A research output that is free to read online, either via the publisher website or in an OA repository.</td>
+    </tr>
+    <tr>
+      <td>Gold</td>
+      <td>A research output that is either published in a journal listed by the Directory of Open Access Journals (DOAJ), or (if journal not in DOAJ) is free to read via publisher with any license.</td>
+    </tr>
+    <tr>
+      <td>Hybrid</td>
+      <td>A research output that is published in a journal not listed by DOAJ, but is free to read from publisher with any license.</td>
+    </tr>
+    <tr>
+      <td>Bronze</td>
+      <td>A research output that is free to read online via publisher without a license.</td>
+    </tr>
+    <tr>
+      <td>Green</td>
+      <td>A research output that is free to read online via an OA repository.</td>
+    </tr>
+    <tr>
+      <td>Green Only</td>
+      <td>A research output that is free to read online via an OA repository, but is not available for free via the publisher.</td>
+    </tr>
+    <tr>
+      <td>Green in Home Repo</td>
+      <td>A research output that is free to read online via the matched affiliation’s institutional repository.</td>
+    </tr>
+  </tbody>
+</table>
+
 As we have noted previously (Huang et al., 2020a), there is a sensitivity associated to the choices in bibliographic data sources when they are used to create a ranking. For this analysis we therefore chose to combine all three datasets: Microsoft Academic, Web of Science and Scopus. In the companion white paper (Huang et al., 2020b) we provide a comprehensive sensitivity analysis on the use of these different datasets, the use of different versions of Unpaywall, and the relations between confidence levels and sample size.
 
 Briefly, it is our view that to provide a robust assessment of open access performance the following set of essential requirements must be met:
@@ -65,25 +108,53 @@ We have limited our data sharing in two ways. Firstly, we do not provide the ful
 
 ## Results
 
-## Global universities in terms of total open access, gold open access and green open access
+### Global universities in terms of total open access, gold open access and green open access
 
 In Figure 2, we present the open access performance of universities in different regions for the categories of total open access, publisher-mediated open access (‘gold’) and repository-mediated open access (‘green’) for publications assigned to the year 2017 (see Figure 2—figure supplement 1 for equivalent plots for 2016 and 2018). We have chosen to focus on 2017 as this is the most recent year for which we have the most confidence on the completeness of data, taking into consideration the data collection process and issues surrounding embargoes. However, we do observe consistent general patterns across results for all three years. The top 100 institutions in each of the open access categories (for 2017) are also provided in Figure 2—figure supplement 2. This is, to our knowledge, the first set of university rankings that provides a confidence interval on the quantitative variable being ranked and compensates for the multiple comparisons effect (see Supplementary file 1 for details). Across this top 100, the statistical difference between universities at the 95% confidence shows that a simple numerical ranking cannot be justified.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig2-v2.jpg)
+
+**Figure 2.:** Percentages of institutional Total OA, Gold OA and Green OA (left to right) grouped by regions for 2017. Parallel figures for 2016 and 2018 are provided in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Percentages of institutional Total OA, Gold OA and Green OA (left to right) grouped by regions for 2016 and 2018, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The black lines represent the OA% as calculated from the data. The colour bars are 95% confidence intervals calculated with Šidák correction to compensate for the multiple comparisons effect. The colours represent the regions as per Figure 2. Evidently, universities topping this list achieve around 80–90% OA.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The colours represent the regions as in Figure 2. The overlaid boxplots exclude outliers as determined using the standard interquartile methods (i.e. values more than 1.5 interquartile range away from the first or third quartile are deemed outliers). Countries are ordered by their median Total OA% (left panel). This figure includes small universities (those with significantly fewer research outputs) which are left out of the main article.
 
 The high performance of a number of Latin American and African universities, together with a number of Indonesian universities, particularly with respect to gold open access, is striking. For Latin America this is sensitive to our use of Microsoft Academic as a data source, showing the importance of an inclusive approach. The outcomes for Indonesian universities are also consistent with the latest report on country-level analysis (Van Noorden, 2019). These suggest that the narrative of Europe and the USA driving a publishing-dominated approach to open access misses a substantial part of the full global picture.
 
 The highest performers in terms of open access via repositories are dominated by UK universities. This is not surprising given the power of the open access mandate associated with the Research Excellence Framework to drive university behaviour. It is perhaps interesting that few US universities appear in this group (with CalTech and MIT the exceptions). This suggests that while the National Institutes of Health mandate has been very effective at driving open access to the biomedical literature, limited inroads have been made into other disciplines in the US context, despite the White House memorandum. As was seen in the Leiden Ranking, Bilkent University from Turkey also emerges as a standout performer.
 
-## The global picture and its evolution
+### The global picture and its evolution
 
 The levels of total open access, publisher-mediated open access and repository-mediated open access for 1,207 universities for publications in 2017 was also grouped by country (Figure 2—figure supplement 3). Amongst countries with a large number of universities in the dataset, the UK is a clear leader with Indonesia, Brazil, Columbia, the Netherlands, and Switzerland showing a strong performance.
 
 To examine the global picture for the 1,207 universities in our dataset and to interrogate different paths to open access, we plot the overall level of repository-mediated (‘green’) and publisher-mediated (‘gold’) open access for each university over time coloured by region as previously (Figure 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig3-v2.jpg)
+
+**Figure 3.:** Publisher-mediated open access (gold OA) vs repository-mediated open access (green OA) by institution for 2017. Each point plotted is a university, with size indicating the number of outputs analysed and colour showing the region. Articles can be open access through both publisher and repository routes so x and y values do not sum to give total open access. Animated version with figures for each year between 2007 to 2018 can be seen in Figure 3—animation 1.
+
 Overall universities in Oceania (Australia and New Zealand) and North America (Canada and the US) lag behind comparators in Europe (on repository-mediated open access) and Latin America (on publisher-mediated open access). Asian universities are highly diverse: there are some high performers in the top 100 institutions, particularly for publisher-mediated open access, but many also lag behind (Figure 2—figure supplement 2). Africa is also highly diverse but with a skew towards high performance, with an emphasis on publisher-mediated open access (i.e. gold open access). This may reflect our sampling which is skewed towards institutions with the largest (formally recorded) publishing volumes, many of which receive significant portions of their funding from international donors with strong open access requirements. Latin American institutions show high levels of publisher-mediated open access throughout the period illustrated. This is due to substantial infrastructure investments in systems like SciELO starting in the 1990s.
 
-## Investigating the possible effects of policy interventions
+### Investigating the possible effects of policy interventions
 
 If our goal is to provide data on the effectiveness of interventions then our analysis should be capable of identifying potential effects of policy change. In 2012, the UK Research Councils, following the Finch Report, provided additional funding to individual universities to support open access publishing. The amount of additional funding relates to existing research council funding. In Figure 4A, we show the annual change in publisher-mediated open access for three UK universities with the largest additional funding, and three with significantly less additional funding (Lawson, 2018). In either 2012 or 2013, a slight increase in publisher-mediated open access across all the universities could be detected. As the additional funding tails off in 2015, the rate of growth falls back. Similarly, there was an increase in the proportion of hybrid open access publications, which largely require article processing charges, and an increase in proportion of hybrid open access within all publisher-mediated open access around the same period (Figure 4—figure supplement 1A and B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig4-v2.jpg)
+
+**Figure 4.:** (A) The annual change in percentage (rolling current year percentage minus the previous year percentage) of gold OA for six UK universities. The top three universities are those with the largest additional funding compared to the bottom three universities which received less additional funding. (B) The annual percentage of green OA through the home institutional repositories of four UK universities compared to high performing universities from elsewhere. (C) The annual percentages of hybrid OA at five universities in the Netherlands. (D) Three pairs of UK and US universities, selected based on having a similar size and level of green OA. The annual percentages of total green OA are depicted for each university. Additional figures are provided in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The annual percentages of Hybrid OA publications for six UK universities. The top three are those that received the largest additional funding to support open access publishing compared to the bottom three that received less additional funding. (B) For the same set of UK universities, this panel shows the proportion of Hybrid OA publications within Total Gold OA publications. (C) The annual percentages of Total Gold OA for five Dutch universities, showing steady increase in Total Gold OA. (D) The annual percentages of Hybrid OA for the same five Dutch universities, showing a sharp increase in Hybrid OA around 2014 and 2015.
 
 Figure 4B shows the growth of content in UK university repositories from 2000 to 2017 compared to two universities from other regions. In 2015, to be included in the UK Research Excellence Framework, universities had to deposit their research outputs in a repository. This policy shift was profound because it relates to an assessment exercise and funding which covers all disciplinary areas, and all universities. The dominance of UK universities in the top 100 for both overall open access and repository-mediated open access, as well as the commitment to achieve 100% open access coverage being made by such a large number of universities, is potentially driven in large part by that intervention.
 
@@ -91,9 +162,13 @@ Next, we investigated how the take up of hybrid open access publishing options i
 
 Finally, in Figure 4D we show the possible effect of subtle differences in policy relating to acceptable embargo periods. UK research and funding council polices have been aggressive in reducing embargo lengths, mandating six months for STEM subjects and twelve months for humanities and social science (HSS) subjects. The potential effect of embargoes can be seen in the data for repository-mediated open access as a dip in the most recent years of publication. Using Unpaywall data from late 2019, we see a dip in repository-mediated open access performance for UK universities in 2018 but a limited effect on 2017. By comparison with three of the highest performing US universities, comparable in size and overall ranking (see Figure 2—figure supplement 2) we see an extended dip in performance, indicative of an acceptance of longer embargoes.
 
-## Different institutional paths towards open access
+### Different institutional paths towards open access
 
 In Figures 3 and 4 we see evidence of different paths towards open access, depending on the context and resources. The idea of mapping these paths is shown explicitly for a subset of universities in Figure 5. This shows the paths taken by a selection of Latin American institutions and two sets of UK universities over time. For the UK universities shown, three received substantial funding from the UK research councils for open access publishing, whereas the other three received less additional funding and followed an alternate route, emphasising repository-mediated open access.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57067/elife-57067-fig5-v2.jpg)
+
+**Figure 5.:** This figure compares the different open access routes taken by three groups of universities: three UK universities (University College London, University of Cambridge and University of Glasgow) that received substantial funding for open access publishing (combined gold and green OA increases), three UK universities (Loughborough University, University of St Andrews and Plymouth University) that received less funding (more green OA focused), and three Latin American universities (more gold OA focused). The dots represent the % of total gold OA publications and % of total green OA publications for the specified universities for each year from 2007 to 2017, where the arrow indicates the direction of time.
 
 In contrast, the Latin American institutions already have high levels of publisher-mediated open access at our earliest time point, as discussed earlier. However, our data suggests a fall in overall open access amongst Latin American universities from 2012 onwards, which we ascribe to an increased pressure to publish in ‘international’ journals that are often subscription based, and for which Latin American scholars are reluctant or unable to pay hybrid article processing charges.
 

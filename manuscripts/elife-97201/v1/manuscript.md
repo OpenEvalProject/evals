@@ -21,11 +21,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00rd5t069 Department of General Surgery, The Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China
-2. https://ror.org/00rd5t069 Department of Microbiology and Immunology, Institute of Molecular Virology and Immunology, School of Basic Medical Sciences, Wenzhou Medical University Wenzhou China
-3. https://ror.org/00rd5t069 Department of Pediatric Thoracic Surgery, The Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China
-4. https://ror.org/00rd5t069 Department of Thoracic Surgery, The First Affiliated Hospital of Wenzhou Medical University Wenzhou China
-5. https://ror.org/00rd5t069 Department of General Surgery, The First Affiliated Hospital of Wenzhou Medical University Wenzhou China
+1. Department of General Surgery, The Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
+2. Department of Microbiology and Immunology, Institute of Molecular Virology and Immunology, School of Basic Medical Sciences, Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
+3. Department of Pediatric Thoracic Surgery, The Second Affiliated Hospital and Yuying Children’s Hospital of Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
+4. Department of Thoracic Surgery, The First Affiliated Hospital of Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
+5. Department of General Surgery, The First Affiliated Hospital of Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
 
 † Corresponding author
 
@@ -43,9 +43,17 @@ Natural killer (NK) cells, an important component of tumor-infiltrating immune c
 
 In this study, we combined previously published single-cell RNA-sequencing, spatial transcriptomics (ST), and bulk RNA-sequencing data from public datasets, aiming to comprehensively chart the cellular landscape of TME in primary colon cancer and matched liver metastasis. Results of bioinformatics analysis were further validated through an in vitro co-culture experiment (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic overview of the experimental design and analytical workflow. Colon T: colon tumor tissue; Colon P: colon paratumor normal tissue; Liver T: liver metastasis tumor tissue; Liver P: liver paratumor normal tissue; LN: lymph node metastasis tissue. (B) The Uniform Manifold Approximation and Projection (UMAP) plot of all main immune cell types. (C) Dot plots showing average expression of highly variable genes of each cell group. The dot size represents percent of cells expressing the genes in each cluster and the color of dot represents the expression intensity. (D) The cell numbers of main immune cells across tissues. (E) Proportions of all main immune cells. p values were determined by the paired nonparameter test. (*: p<0.05, **:p<0.01, ***：p<0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The UMAP plot of all 12 cell clusters. (B) Dot plots showing average expression of marker genes in indicated cell clusters. (C) The pie chart of the proportion of main immune cells across tissues. (D) The proportion of natural killer (NK) cells in total immune cells of each sample (including PR, PD/SD, and untreated patients) from the Liver P, Liver T, Colon P, and Colon T. (E) Proportions of NK cells in PR, PD/SD, and untreated patients among Liver P, Liver T, Colon P, and Colon T groups. (*: p<0.05, **:p<0.01, ***：p<0.001).
+
 ## Results
 
-## Integrated single-cell and spatial transcriptome RNA-seq precisely quantified immune cell diversity in CCLM
+### Integrated single-cell and spatial transcriptome RNA-seq precisely quantified immune cell diversity in CCLM
 
 We used a previously published single-cell dataset containing 89 samples from paired samples of colon cancer, adjacent colon, liver metastasis, adjacent liver, lymph nodes along colons, and peripheral blood mononuclear cells from 20 patients to define the heterogeneous immune microenvironment landscapes of CCLM. Subsequently, 178,630 CD45+ cells were integrated.
 
@@ -53,9 +61,21 @@ To further define the main cell type, clustering analysis and SingleR were perfo
 
 To comprehensively analyze the spatial distribution profile of colon primary tumors and CCLM tumors, we collected spatial transcriptome (ST) data, which came from eight samples including paired primary colon cancer and liver metastasis. Unsupervised clustering analysis was first performed to cluster similar ST spots, and the annotation of the clusters was further determined according to cell marker genes (Figure 2—figure supplement 1A–C, Supplementary file 2). Furthermore, after combining the gene expression features of each sample (Figure 2—figure supplement 2) and hematoxylin and eosin (H&E) staining, six morphological regions, including tumor, fibroblast, smooth muscle, B cells, hepatocytes, normal epithelium, and tumor and paratumor areas, were identified (Figure 2A–C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig2-v1.jpg)
+
+**Figure 2.:** (A) UMAP visualization of cell clusters in spatial transcriptomic samples. (B) Dot plots showing average expression of markers in indicated cell clusters. (C) Overview of the spatial transcriptomic sections. Hematoxylin and eosin (H&E) staining of spatial transcriptomic sections (upper). Tumor tissue and paratumor tissue identification of each section (middle). Spatial cluster distribution of each section (lower). PC: primary cancer; LM: liver metastasis; ST-P1: spatial transcriptomic dataset patient 1; ST-P1: spatial transcriptomic dataset patient 1; ST-P2: spatial transcriptomic dataset patient 2; ST-P3: spatial transcriptomic dataset patient 3; ST-P4: spatial transcriptomic dataset patient 4. (D) The signature scores of T cells (upper) and natural killer (NK) cells (lower) in colon cancer and liver metastasis in the spatial transcriptomic sections.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The UMAP plot of all 11 cell clusters. (B) Dot plots showing average expression of marker genes in indicated cell clusters. (C) Expression of key markers across all samples.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The feature plots showed the expression distributions of ALB, CD24, COL1A1, MYH11, CXCL8, CD14, CD79A, and CD3D in each spatial transcriptomic section.
+
 To integrate the scRNA-seq and ST data, we used the AddModuleScore function in Seurat to quantify the main immune subpopulations. Consistent with scRNA-seq, T cells were remarkably enriched in the tumor region of both primary colon cancer and liver metastasis cancer, whereas NK cells were enriched in the non-tumor area (Figure 2D).
 
-## Biological relationship between NK cells and metastasis of colon cancer revealed by bulk RNA transcriptomics
+### Biological relationship between NK cells and metastasis of colon cancer revealed by bulk RNA transcriptomics
 
 TME cell composition differences between metastasis and non-metastasis colon cancer were evaluated using multiple tools that could robustly quantify the abundance of cell populations based on transcriptomic datasets, including xCell, EPIC, quanTIseq, and MCPcounter and bulk-seq datasets (TCGA COAD cohort). The percentages of NK cells markedly decreased in metastasis colon cancer using MCPcounter, EPIC, and xCell (Figure 3A–D).
 
@@ -65,7 +85,7 @@ TME cell composition differences between metastasis and non-metastasis colon can
 
 To further understand the potential triggers that induce colon cancer metastasis, the differentially expressed genes (DEGs) were calculated between the metastasis and non-metastasis colon cancer groups in the TCGA COAD cohort. A total of 1378 DEGs were determined using the limma package with cutoffs |log fold change| > 1.5 and p < 0.05, including 817 upregulated and 561 downregulated genes between metastasis and non-metastasis colon cancer. Subsequently, Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the correlative functions and pathways, As shown in Figure 3E, cell killing, NK cell-mediated immunity, NK cell-mediated cytotoxicity, NK cell activation, and MHC-related GO terms and the KEGG pathways of NK cell-mediated cytotoxicity were significantly enriched. Interestingly, nearly all the genes enriched in pathway of NK cell-mediated cytotoxicity were markedly downregulated in the metastasis group compared to the non-metastasis group (Figure 3F). Similarly, gene set enrichment analysis (GSEA) revealed that NK cell-mediated cytotoxicity was enriched in the non-metastasis group (Figure 3G, H).
 
-## The landscape of NK cells in CCLM progression
+### The landscape of NK cells in CCLM progression
 
 Considering the differences in infiltrated NK cells between tumor-adjacent tissues and tumor tissues as well as colon cancer with and without metastasis, we further focused on NK cells to explore the detailed difference of NK subgroups in the CCLM microenvironments. Unsupervised clustering analysis of NK cells was thus performed and eight NK cell subtypes were thus identified (Figure 4A, Supplementary file 3). Combining the highly variable features of each NK cluster (Figure 4B) and CIBERSORT-reported canonical NK cell markers (Figure 4C, D), NK cells were classified into three cell types, including activated NK cells identified by the expression of KIR2DL4, GPR183, GRP171, CD69, and IFNG, resting NK cells marked by GZMK, TTC38, CD160, and PLEKNF1, and the other NK cells of which no characteristic gene was identified. The marker genes of three NK cell subtypes were also identified (Supplementary file 4). Although all three NK cell subtypes were presented in primary colon tumors, adjacent normal colon tissues, liver metastasis tumors, and lymph nodes (Figure 4E), the infiltration grade for each of these NK cell subsets was significantly different. At the individual sample level, considerable variability was observed in the NK cell subset composition. Where serial samples were available from individual patients, the expression of resting NK cells increased, whereas that of activated NK cells decreased during disease progression (Figure 4F, G). Additionally, using the paired primary colon tumor, adjacent normal colon tissues, and liver metastasis tumor samples, we observed that the gradient of the resting NK cells increased, whereas the gradient of the activated NK cells decreased (Figure 4H).
 
@@ -75,9 +95,23 @@ To evaluate the clinical relationship between NK cell differences and CCLM, CIBE
 
 **Figure 4.:** (A) The UMAP plot of NK cells from CCLM. (B) Unsupervised clustering identifies eight subsets of NK cells. (C) Expression of key markers that distinguish resting and activated subsets of NK cells. (D) Expression of key resting and activated NK cell markers across all samples. (E) The UMAP plot of distribution of resting and activated NK cells from ColonP, ColonT, LiverT, and LN. (F) Cellular landscape of each sample from the ColonP, ColonT, LiverT, and LN. The proportion of NK cells subsets in total immune cells (upper). The proportion of NK cells subsets in total NK cells (lower). (G) Number of cells identified from each group (ColonP, ColonT, LiverT, and LN) by cell type proportion. (H) Proportions of resting (upper) and activated (lower) subsets of NK cells. p values were determined by the paired nonparameter test. (*: p<0.05, **:p<0.01, ***：p<0.001).
 
-## Characterization and developmental course of differential subsets of NK cells in CCLM
+![Figure 5.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) The relationship of activated and resting NK cell percentage determined by CIBERSORT and tumor metastasis in TCGA COAD cohort. M0: non-metastasis colon cancer; M1: metastasis colon cancer. (*: p<0.05, **:p<0.01, ***：p<0.001) (C, D) K–M survival plots show that high resting NK cell and low activated NK cell predicted poor prognosis in TCGA COAD and GSE29623 cohort. PFI: progression-free interval; OS: overall survival. (E) The signature scores of resting (upper) and activated NK cells (lower) in colon cancer and liver metastasis in the spatial transcriptomic sections.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The relationship of activated and resting NK cell and clinical characteristics of colon cancer in TCGA COAD cohort. (B) The relationship of 22 immune cells percentage determined by CIBERSORT and prognosis of colon cancer in TCGA COAD cohort.we have amended. (*: p<0.05, **:p<0.01, ***：p<0.001).
+
+### Characterization and developmental course of differential subsets of NK cells in CCLM
 
 To further study the heterogeneity of NK cells subgroup, the proportions of all eight clusters of NK cells were calculated (Figure 6—figure supplement 1). KIR2DL4+ activated NK cells were lessened in proportion with the progression of the disease from normal colon to colon cancer and liver metastasis cancer, whereas GZMK+ resting NK cells increased (Figure 6A, B), suggesting that these two NK subsets were associated with metastasis. ST analysis also confirmed that there was more infiltration of the KIR2DL4+ activated NK cell subset in the non-tumor area and GZMK+ resting NK cells in the tumor region, both primary colon cancer and liver metastasis (Figure 6C). We next utilized mIHC to check those NK cells in the clinical tissue samples of a colon cancer patient with liver metastasis, confirming a high infiltration of GZMK+ NK cells and a low infiltration of KIR2DL4+ NK cells in live metastasis cancer (Figure 6D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig6-v1.jpg)
+
+**Figure 6.:** (A) The UMAP plot of KIR2DL4+ activated NK cells, GZMK+ resting NK cells from CCLM. (B) Proportions of KIR2DL4+ activated NK cells, GZMK+ resting NK cells in total immune cells. p values were determined by the paired nonparameter test. (*: p<0.05, **:p<0.01, ***：p<0.001) (C) The signature scores of GZMK+ resting NK cells (upper) and KIR2DL4+ activated NK cells (lower) in colon cancer and liver metastasis in the spatial transcriptomic sections. (D) mIHC of GZMK+ and KIR2DL4+ NK cells in primary colorectal cancer and liver metastasis cancer. (E) Monocle analysis showing the developmental trajectory of NK cells. Color as in pseudotime, cell state, subsets of NK cells, and sample group. (F) The heatmap shows the expression patterns of the top 50 significant genes in branched expression analysis modeling, associated Gene Ontology (GO) terms (using DAVID v6.7) are given on the right of the corresponding gene clusters. (G, H) The Kaplan–Meier curve shows COAD patients survival with different GZMK+ resting NK cells and KIR2DL4+ activated NK cells infiltration.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig6-figsupp1-v1.jpg)
 
 Pseudotime cell trajectory analysis of the two NK cell clusters was constructed to investigate the evolutionary dynamics of metastasis-associated NK cells. NK cells from the normal colon group were located at the top right corner of the trajectory curve, suggesting the clear starting point of this evolving trajectory curve. After confirmation of this starting point, developmental routes were determined to begin with the KIR2DL4+ activated NK cells and then develop into GZMK+ resting NK cells (Figure 6E).
 
@@ -85,9 +119,29 @@ To identify the cell cluster marker genes that change as NK cell subtypes move f
 
 Interestingly, patients with colon cancer with higher infiltration of GZMK+ resting NK cells (Figure 6G) and lower infiltration of KIR2DL4+ activated NK cells (Figure 6H) exhibited shorter survival in the TCGA COAD cohort.
 
-## Tumor cell-educated NK cells shift toward tumor-promoting status depends on cell-to-cell interaction
+### Tumor cell-educated NK cells shift toward tumor-promoting status depends on cell-to-cell interaction
 
 To verify the NK cell-mediated inductive effect on colon cells, we set up mixed cell co-culture experiments using colon cell line HCT-116 and NK cell line NK-92 in the ratio 1:1 (CN group). As controls, NK cells were cultured alone, either in the tumor supernatant (SN group) or fresh medium (MN group). The co-cultured supernatant of each group was collected to incubate fresh HCT-116 after 24 hr of co-culturing. Interestingly, Cell Counting Kit-8 (CCK-8) and colony formation assays showed that colon cells in CNS group, which colon cells were cultured in the supernatant of co-cultured system that NK and cancer cell were in contact, underwent a significant increase in proliferation (Figure 7A–C) compared to the CS group, where cancer cells were cultured directly in the supernatant of cancer cell after 24 hr culturing. Similarly, the migration and invasion of HCT-116 were also significantly increased in CNS group (Figure 7D–F). Furthermore, colony formation assays (Figure 7G, H), CCK-8 (Figure 7I), and transwell assays (Figure 7J–L) showed colon cells in CNS group underwent a significant increase in proliferation, invasion and migration, compared to those cultured in the co-cultured supernatant (SNS group) and fresh medium (MNS group).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Clone formation assay showed the natural killer (NK) cell-mediated inductive effect on cell proliferation of colon cancer cell (HCT-116). Colon cancer cells were cultured in the supernatant from different co-culture system in transwell devices. CNS: colon cancer cells were cultured in the supernatant from co-culture system that NK cells and cancer cells were cultured in direct contact (CNS); CS: cancer cells cultured directly in supernatant of cancer cells. (C) Cell Counting Kit-8 (CCK-8) assay showed the NK cell-mediated inductive effect on cell proliferation of colon cancer cell among CNS and CS groups. (D–F) The NK cell-mediated inductive effect on migration and invasion of colon cancer cell among CNS and CS groups. (G-I) Clone formation assay and CCK-8 assay showed the NK cell-mediated inductive effect on cell proliferation of colon cancer cell among CNS, SNS, and MNS groups. SNS: colon cancer cells were cultured in the supernatant from co-culture system that NK cells were cultured in supernatant of cancer cells; MNS: colon cancer cells were cultured in the supernatant from co-culture system that NK cells were cultured in fresh medium. (J-L) The NK cell–mediated inductive effect on on migration and invasion of colon cancer cell (HCT-116) among CNS, SNS, and MNS groups. (M-Q) Phenotype switch (KIR2DL4, GZMK, CD9, CD49a, and PD-1) of NK cells was induced by cell-to-cell interactions with cancer cells. CN: NK cells were co-cultured with colon cancer cells; SN: NK cells were cultured in supernatant of cancer cells; MN: NK cells were cultured in fresh medium. (*: p<0.05, **:p<0.01, ***：p<0.001).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Clone formation assay showed the NK cell-mediated inductive effect on cell proliferation of DLD-1 cell between CNS and CS groups. (B, C) Cell Counting Kit-8 (CCK-8) assay showed the NK cell-mediated inductive effect on cell proliferation of DLD-1 cell between CNS and CS groups. (D–F) The NK cell-mediated inductive effect on migration and invasion of DLD-1 cell between CNS and CS groups. (G) CCK-8 assay showed the NK cell-mediated inductive effect on cell proliferation of DLD-1 cell among CNS, SNS, and MNS groups. (H, I) Clone formation assay showed the NK cell-mediated inductive effect on cell proliferation of DLD-1 cell among CNS, SNS, and MNS groups. (J–L) The NK cell-mediated inductive effect on migration and invasion of DLD-1 cell among CNS, SNS, and MNS groups. (*: p<0.05, **:p<0.01, ***：p<0.001).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig7-figsupp2-v1.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig7-figsupp3-v1.jpg)
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** (A, B) NK cells underwent phenotype switch (high expression of CD9) when cocultured with human colon cancer cell line (HCT-116) and human fibroblast cell line (HFF-1), the phenotype switch was more obvious when co-cultured with HCT. CN: NK cells cocultured with HCT/HFF; SN: NK cells cocultured with supernatant of HCT/HFF; MN: NK cells cocultured in fresh medium. (C–E) Transwell assay showed the only tumor co-cultured NK mediated the inductive effect on cell migration of colon cancer cell (HCT-116). CNS: colon cancer cells were cultured in the supernatant from co-culture system that NK and HCT/HFF were cultured in direct contact; SNS: colon cancer cells were cultured in the supernatant from co-culture system that NK cocultured with supernatant of HCT/HFF; MNS: colon cancer cells were cultured in the fresh medium. (*: p<0.05, **:p<0.01, ***：p<0.001).
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** (A) Schematic overview of coculture experiments design. (B) Schematic overview of coculture experiments design in transwells.
 
 Additionally, another colon cancer cell line, DLD-1 was chosen to evaluate the effect of the supernatant in the different co-culture groups. DLD-1 cells in the CNS group did not undergo a prominent increase in proliferation compared to CS group (Figure 7—figure supplement 1A–C). The same results were obtained for their migration and invasion (Figure 7—figure supplement 1D–F). Similarly, no such cell functional changes were induced in the CNS group compared to SNS and MNS groups (Figure 7—figure supplement 1G–L).
 
@@ -95,9 +149,17 @@ Given the characteristic spatial distribution of NK cell subpopulations, we hypo
 
 On the other way, NK cells were also co-cultured with HFF-1, a normal human cell line. The tissue infiltrated NK phenotype identified above (CD9, CD49a, and PD-1) were determined. When co-cultured with HFF-1 in direct contact (CN group), NK cells were also tending toward tissue infiltration state. However, the domestication effect was significantly reduced compared to co-culturing with tumor cells (Figure 7—figure supplement 4A, B). Additionally, fresh HCT underwent a limited increase (no statistical significance was found) in migration when cultured in CNS group, but not in the SNS group and MNS group (Figure 7—figure supplement 4C-E).
 
-## Resting NK-induced colon cancer malignant phenotype promotion depends on SCF release
+### Resting NK-induced colon cancer malignant phenotype promotion depends on SCF release
 
 To study the potential mechanism by which the supernatant from the NK and colon cells in direct contact with the co-culture system promoted colon cell migration, Luminex liquid suspension chip detection was used to compare the differential expression of 48 common chemotactic and inflammatory cytokines in the CNS, SNS, and MNS groups. We observed that SCF was upregulated in all three repetitions in the CNS group (Figure 8A, B). Furthermore, enzyme-linked immunosorbent assay (ELISA) confirmed the upregulated level of SCF in the CNS group (Figure 8C).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig8-v1.jpg)
+
+**Figure 8.:** (A) Luminex liquid suspension chip detection of 48 common chemotactic and inflammatory cytokines in CNS, SNS, and MNS group. (B, C) Concentration of SCF determined by luminex liquid suspension chip and ELISA in CNS, SNS, and MNS group. (D, E) Cell Counting Kit-8 (CCK-8) assay showed the proliferation of HCT-116 cells was inhibited by imatinib mesylate, evaluated by a CCK-8 assay. Cells were incubated in the supernatant from different co-culture system with DMSO or 2 µM imatinib mesylate. (F–I) Clone formation assay showed the proliferation of HCT-116 cells was inhibited by imatinib mesylate. (J–M) The NK cell-mediated inductive effect on migration and invasion of HCT-116 was inhibited by imatinib mesylate. (*: p<0.05, **:p<0.01, ***：p<0.001).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/97201/elife-97201-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Real-time quantitative reverse transcription polymerase chain reaction (RT-qPCR) analysis of KITLG expression in HCT-116 with and without co-cultured with natural killer (NK) cells. (B) RT-qPCR analysis of KITLG expression in HCT-116 and DLD-1 cells. (*: p<0.05, **:p<0.01, ***：p<0.001, ns: no significance).
 
 We further assessed the inhibitory effects of imatinib mesylate on the enhanced proliferation and invasion. CCK-8 (Figure 8D, E) and colony formation assays (Figure 8F–I) showed that imatinib mesylate (2 µM) significantly inhibited supernatant-enhanced proliferation of HCT-116. Similarly, the supernatant-enhanced migration (Figure 8J, K) and invasion (Figure 8L, M) were also inhibited by imatinib.
 
@@ -123,58 +185,58 @@ In summary, we have unveiled the spatial and cellular profiles of TME from tumor
 
 ## Materials and methods
 
-## Data sources
+### Data sources
 
 In this study, we integrated four independent public datasets that contained single-cell RNA-sequencing and ST data (10× Genomics) (derived from previously published research at the website: http://www.cancerdiversity.asia/scCCLM/) (Wu et al., 2022). And two bulk transcriptomics data of colon cancer (downloaded from TCGA cohort COAD at the website: https://xena.ucsc.edu/ and NCBI’s Gene Expression Omnibus with accession number GSE29623).
 
-## Single-cell RNA-sequencing analysis
+### Single-cell RNA-sequencing analysis
 
 The R (v4.0.5) package Seurat (v4.1.0) (Hao et al., 2021) was used to process the scRNA data. Since dataset quality control had been performed and Seurat objects had been created in previous studies, we did not further filter the scRNA-seq data or remove the batch effects. The SCTransform method was used to normalize the data. After selecting 2000 highly variable genes using the Find Variable Features function in Seurat, principal component analysis was performed using these genes to reduce the data dimensions. Based on the ElbowPlot function in Seurat, we chose the top 30 principal components to run the FindNeighbors function. Next, the cells were clustered using the FindClusters function with a resolution of 0.1 for clustering immune cells. A uniform manifold approximation and projection algorithm was used for data visualization, as previously reported (Peng et al., 2023). DEGs of each subset were identified using the FindAllMarkers function in Seurat. SingleR (v1.0.0) was used to name each cluster (Zheng et al., 2021). Additionally, the subgroup of NK cells was defined by the preferential expression marker of the resting and activated NK cells described in the CIBERSORT.
 
-## Pseudotime analysis
+### Pseudotime analysis
 
 To analyze the differentiations of NK cells, monocle2 (http://cole-trapnell-lab.github.io/monocle-release), which uses an algorithm to learn the changes in gene expression sequences that each cell must undergo as part of a dynamic biological process (Hong et al., 2022), was used for pseudotime trajectory analysis to identify the transitional relationships among different clusters. The cells were reduced dimensionally using the DDRTree method, sequenced in pseudotime, and finally visualized (Qiu et al., 2017).
 
-## Bulk RNA-seq data analysis
+### Bulk RNA-seq data analysis
 
 The bulk transcriptome RNA-seq data and corresponding clinical data were obtained from The Cancer Genome Atlas of colon adenocarcinoma through the UCSC Xena browser (GDC hub) (https://gdc.xenahubs.net) (Goldman et al., 2020). In total, 459 colon cancer samples with survival information were downloaded, and 310 samples were finally enrolled (11 formalin-fixed samples were excluded, and an additional 134 and 4 samples were excluded due to deletion of metastasis information and sequencing matrix, respectively). Transcriptomic data from 65 colon cancer samples in GSE29623 were obtained as the validation cohorts. CIBERSORT (Chen et al., 2018), xCELL (Aran et al., 2017), EPIC (Racle et al., 2017), and MCP-counter (Becht et al., 2016), which use gene expression to infer the proportions of tumor-infiltrating immune cells, were used to analyze the TME cell type. R packages survival (v3.2–10) and survminer (v0.4.9) were used for survival analysis. The Youden index was selected as the cutoff value to differentiate patients into distinct groups (high or low). The Kaplan–Meier survival curve was modeled using the survfit function. Subsequently, a Cox proportional hazards regression model was established to determine the independent risk factors. DEGs between the metastasis and non-metastasis groups were determined with the filtering condition of log2|fold change| > 1 and p-value <0.05, using the R package limma. GO and KEGG pathway functional enrichment analyses were performed using the clusterProfiler R package (v3.18.1) to assign various biological processes, molecular functions, cellular components, and pathways of identified marker genes in the cluster of interest (Yu et al., 2012), and p < 0.05 was regarded as statistically enriched. To explore the different KEGG pathways and hallmark gene sets between the metastasis and non-metastasis groups, GSEA was performed using data from The Molecular Signatures Database (c2.cp.kegg.v7.3.symbols) and the fgsea R package (v1.12.0) (Liberzon et al., 2015). Pathways with an adjusted p-value below 0.05 were deemed to be significantly enriched.
 
-## ST data analysis
+### ST data analysis
 
 Seurat was also used for ST data processing and visualization. We used the SCT method to normalize the ST data; the functions SelectIntegrationFeatures, PrepSCTIntegration, FindIntegrationAnchors, and IntegrateData were used to integrate the ST data. An unsupervised clustering method was subsequently used to cluster similar ST spots. Cell population annotations were based on H&E staining sections and the highly variable genes in each cluster. Scores of cell-specific signatures (top 20 DEGs) from scRNA-seq were calculated using the AddModuleScore function. SpatialDimPlot and SpatialFeaturePlot were combined to visualize the cell expression level in the ST data (Peng et al., 2023). Since the tumor and non-tumor region was identified by immunohistochemistry as well as cell clusters in ST data, the differences of cell subgroup presence in tumor and non-tumor region were determined by visual inspection.
 
-## Fluorescent multiplexed immunohistochemistry
+### Fluorescent multiplexed immunohistochemistry
 
 We performed the fluorescent multiplexed immunohistochemistry by using the GZMK rabbit anti-human antibody (R&D; catalog no. MAB10216, 1:200), KIR2DL4 rabbit anti-human antibody (novus; catalog no. BNP2-17062, 1:600), CD56 rabbit anti-human antibody (ABSIN; catalog no. 171540, 1:200) following the manufacturer’s instructions of four-color F-MIHC Kit (Absin, China). The expression of proteins of interest was evaluated as follows: GZMK, Absin 570 TSA Plus; KIR2DL4, Absin 520 TSA Plus; CD56, Absin 650 TSA Plus. The images were obtained by Case Viewer2.4 (3DHISTECH, Hungary).
 
-## Cell lines and co-cultures
+### Cell lines and co-cultures
 
 Human colon cancer cell lines, including HCT-116 and DLD-1 were purchased from the Cell Bank of the Chinese Academy of Sciences (Shanghai, China) and grown in a RPMI-1640 medium (Gibco) supplemented with 10% fetal bovine serum (FBS, Gibco). Human Foreskin Fibroblast cell lines, HFF-1, was also obtained from the Cell Bank of the Chinese Academy of Sciences (Shanghai, China) and grown in the Dulbecco’s modified Eagle’s medium (Gibco) containing 10% FBS. The human NK cell line NK-92 was purchased from the Cell Bank of the Chinese Academy of Sciences (Shanghai, China) and maintained in RPMI-1640 supplemented with 12.5% horse serum (Gibco), 12.5% FBS, 100 U/ml rhIL-2, 0.1 mmol/l b-mercaptoethanol, and 0.02 mmol/l folic acid. All the cells were cultured in a humidified chamber at 37°C and 5% CO2. All the cells used in the study were short tandem repeat (STR) authenticated and tested negative for mycoplasma contamination.
 
 Colon cancer cells were plated at a density of 1 × 105 cells/well in 6-well plates for 24 hr. Supernatants were collected and cells and debris therein were removed by centrifugation. NK cells were co-cultured with cancer cells in a ratio of 1:1 in a fresh mixed medium for a further 24 hr (CN group). Additionally, NK cells were also cultured in a mixed medium of supernatant and NK medium in the ratio 1:1 (SN group) as well as fresh RPMI-1640 10% FBS and NK medium in the same ratio (MN group) for 24 hr (Figure 7—figure supplement 5). When indicated, co-cultures were performed in Transwell devices (JET biofil), maintaining the same ratios and culture times. Finally, as shown in Figure 7—figure supplement 5, the co-cultured supernatant of CN, SN, and MN group were collected, which determined as CNS, SNS, and MNS, to incubate fresh HCT-116 to explore the NK cell-mediated inductive effect on colon cells.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 NK cells in each co-cultured group were collected and washed twice in 1× phosphate buffered saline (PBS). Then, they were incubated with APC-labeled CD56 (Biolegend), phycoerythrin (PE)-labeled KIR2DL4 (Biolegend), fluorescein isothiocyanate (FITC)-labeled GZMK (Biolegend), FITC-labeled CD9 (Biolegend), PE-labeled PD-1 (Biolegend), and PerCP-labeled CD49a antibody for 30 min, rewashed, and resuspended in PBS. FMO control was set up to define the position of the positive gate as shown in Supplementary files 5 and 6. BD flow cytometry was used for detection.
 
-## CCK-8 cell viability and cell colony formation assay
+### CCK-8 cell viability and cell colony formation assay
 
 Colon cancer cells (5000 cells/well) were cultured in 96-well plates with co-cultured supernatants from different co-culture groups alone or with both co-cultured supernatants and imatinib mesylate (2 µM) as previously reported (Yasuda et al., 2007) for 24 hr. At pre-determined time points, 10 μl of CCK-8 reagent (Dojindo, Japan) was added and incubated for 2 hr at 37°C, and then the absorbance was measured using a microplate reader (Thermo Scientific) at 450 nm. All experiments were carried out in triplicate.
 
 For the cell colony formation assay, colon cancer cells (500 cells/well) were seeded in 12-well plates with co-cultured supernatants alone or with both co-cultured supernatants and imatinib mesylate at 37°C for 1 week. Then, cell colonies were fixed with 4% paraformaldehyde for 10 min and stained with 0.5% crystal violet for 5 min. Cell colonies containing >20 cells were counted. All experiments were carried out in triplicate.
 
-## Transwell migration/invasion assays
+### Transwell migration/invasion assays
 
 The polycarbonate membrane in the transwell chambers was coated with Matrigel (Corning, NY, USA). Next, we transferred 1 × 105 cells from the serum-free medium with or without imatinib mesylate into the top chamber, added co-cultured supernatants alone or with both co-cultured supernatants and imatinib mesylate in the bottom chamber, and incubated at 37°C for 24 hr. Then, we removed the non-invading cells on the top side of the membrane by scrubbing, fixed the migrating or invading cells at the bottom side of the membrane with 4% paraformaldehyde, and stained with 0.5% crystal violet. The number of cells was counted under a microscope (Leica, London, UK) from four randomly chosen fields per well to determine the number of cells in each group.
 
-## Total RNA extraction and quantitative real-time PCR
+### Total RNA extraction and quantitative real-time PCR
 
 Total RNA was extracted from cells using TRIZOL reagent (Invitrogen, USA). RNA was reverse transcribed into cDNA using a PrimeScript RT Reagent Kit (Takara, Japan). Quantitative real-time PCR (qPCR) was performed using QuantStudio Test Development Software (Thermo Scientific, Waltham, MA, USA) with SYBR Green qPCR Master Mix (EZBioscience, Roseville, MN, USA). The sequence of KITLG and housekeeping gene GAPDH primers is listed in Supplementary file 7. KITLG mRNA data were normalized to that of GAPDH.
 
-## Luminex liquid suspension chip detection and ELISA
+### Luminex liquid suspension chip detection and ELISA
 
 Luminex liquid suspension chip detection was performed by Wayen Biotechnologies (Shanghai, China). The Bio-Plex Pro Human Chemokine Panel 48-plex kit was used in accordance with the manufacturer’s instructions. Briefly, supernatants from different co-cultured groups were incubated in 96-well plates embedded with microbeads for 1 hr and then incubated with a detection antibody for 30 min. Subsequently, streptavidin-phycoerythrin (PE) was added in each well for 10 min, and values were read using the BioPlex MAGPIX System (Bio-Rad). The Human SCF ELISA kit (Solarbio, China) was used according to the manufacturer’s instructions.
 
-## Statistical analysis and visualization
+### Statistical analysis and visualization
 
 All statistical analyses were performed using SPSS (v23.0; IBM SPSS, Chicago, IL, USA) and R (v4.0.5), and data visualization was performed on R packages Seurat (v4.1.0), ggplot2 (v3.3.5), ggsignif (v0.6.1), and pheatmap (v1.0.12).

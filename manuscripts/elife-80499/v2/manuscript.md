@@ -15,18 +15,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0313jb750 Institute of Apicultural Research/Key Laboratory of Pollinating Insect Biology, Ministry of Agriculture and Rural Affairs, Chinese Academy of Agricultural Sciences Beijing China
-2. https://ror.org/04fnxsj42 Department of Biology, University of North Carolina Greensboro Greensboro United States
-3. https://ror.org/0432jq872 Delta Research and Extension Center, Mississippi State University Stoneville United States
-4. https://ror.org/011hc8f90 Biological and Biotechnology Sciences Branch, U.S. Army Research Office, DEVCOM-ARL Baltimore United States
-5. https://ror.org/04tj63d06 Department of Applied Ecology, North Carolina State University Raleigh Canada
-6. https://ror.org/0160cpw27 Department of Biological Sciences, University of Alberta Edmonton Canada
+1. Institute of Apicultural Research/Key Laboratory of Pollinating Insect Biology, Ministry of Agriculture and Rural Affairs, Chinese Academy of Agricultural Sciences Beijing China ([ROR:0313jb750](https://ror.org/0313jb750))
+2. Department of Biology, University of North Carolina Greensboro Greensboro United States ([ROR:04fnxsj42](https://ror.org/04fnxsj42))
+3. Delta Research and Extension Center, Mississippi State University Stoneville United States ([ROR:0432jq872](https://ror.org/0432jq872))
+4. Biological and Biotechnology Sciences Branch, U.S. Army Research Office, DEVCOM-ARL Baltimore United States ([ROR:011hc8f90](https://ror.org/011hc8f90))
+5. Department of Applied Ecology, North Carolina State University Raleigh Canada ([ROR:04tj63d06](https://ror.org/04tj63d06))
+6. Department of Biological Sciences, University of Alberta Edmonton Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))
 
 † Corresponding author
 
 ## Abstract
 
-Reproduction involves the investment of resources into offspring. Although variation in reproductive effort often affects the number of offspring, adjustments of propagule size are also found in numerous species, including the Western honey bee, Apis mellifera . However, the proximate causes of these adjustments are insufficiently understood, especially in oviparous species with complex social organization in which adaptive evolution is shaped by kin selection. Here, we show in a series of experiments that queens predictably and reversibly increase egg size in small colonies and decrease egg size in large colonies, while their ovary size changes in the opposite direction. Additional results suggest that these effects cannot be solely explained by egg-laying rate and are due to the queens’ perception of colony size. Egg-size plasticity is associated with quantitative changes of 290 ovarian proteins, most of which relate to energy metabolism, protein transport, and cytoskeleton. Based on functional and network analyses, we further study the small GTPase Rho1 as a candidate regulator of egg size. Spatio-temporal expression analysis via RNAscope and qPCR supports an important role of Rho1 in egg-size determination, and subsequent RNAi-mediated gene knockdown confirmed that Rho1 has a major effect on egg size in honey bees. These results elucidate how the social environment of the honey bee colony may be translated into a specific cellular process to adjust maternal investment into eggs. It remains to be studied how widespread this mechanism is and whether it has consequences for population dynamics and epigenetic influences on offspring phenotype in honey bees and other species.
+Reproduction involves the investment of resources into offspring. Although variation in reproductive effort often affects the number of offspring, adjustments of propagule size are also found in numerous species, including the Western honey bee, Apis mellifera. However, the proximate causes of these adjustments are insufficiently understood, especially in oviparous species with complex social organization in which adaptive evolution is shaped by kin selection. Here, we show in a series of experiments that queens predictably and reversibly increase egg size in small colonies and decrease egg size in large colonies, while their ovary size changes in the opposite direction. Additional results suggest that these effects cannot be solely explained by egg-laying rate and are due to the queens’ perception of colony size. Egg-size plasticity is associated with quantitative changes of 290 ovarian proteins, most of which relate to energy metabolism, protein transport, and cytoskeleton. Based on functional and network analyses, we further study the small GTPase Rho1 as a candidate regulator of egg size. Spatio-temporal expression analysis via RNAscope and qPCR supports an important role of Rho1 in egg-size determination, and subsequent RNAi-mediated gene knockdown confirmed that Rho1 has a major effect on egg size in honey bees. These results elucidate how the social environment of the honey bee colony may be translated into a specific cellular process to adjust maternal investment into eggs. It remains to be studied how widespread this mechanism is and whether it has consequences for population dynamics and epigenetic influences on offspring phenotype in honey bees and other species.
 
 ## Introduction
 
@@ -38,37 +38,37 @@ Here, we report our findings of an in-depth investigation of how egg-size plasti
 
 ## Results
 
-## Honey bee queens reversibly adjust egg size in response to colony-size changes
+### Honey bee queens reversibly adjust egg size in response to colony-size changes
 
 The first experiment involved repeated transfers of queens among colonies of different sizes, which was designed to expand our previous findings that honey bee queens can regulate their egg size in response to colony conditions (Amiri et al., 2020). Sister queens that were housed in medium-sized colonies at the start of our first experiment produced a range of intermediate egg sizes with significant inter-individual differences (ANOVA: F(10,219) = 31.5, p<0.001). Over the course of the first week, egg sizes significantly increased (t = 5.8, df = 10, p<0.001) while egg number did not differ significantly (t = 0.7, df = 10, p<0.482). The first and second measurements were correlated for egg size (RP = 0.80, n = 11, p=0.003), indicating consistent differences among queens, but not egg number (RP = 0.31, n = 11, p=0.350). After transfer from medium to small colonies, the egg size of all six queens increased significantly (for each queen: F(1,38) = 23.7–153.3, p<0.001). In contrast, egg size significantly decreased for all five queens that were transferred from medium to large colonies (F(1,38) = 8.9–53.2, all p<0.005). Our reciprocal transfers after the fourth week showed that egg-size adjustments were reversible because all three queens successfully transferred from large to small colonies significantly increased their egg sizes (F(1,38) = 143.8–1001.8, all p<0.001) and all five queens transferred from small to large colonies significantly decreased the size of their eggs (F(1,38) = 123.0–699.4, all p<0.001). The egg size of most queens did not significantly change between separate measures in the same-sized colonies (third versus fourth or fifth versus sixth week). While egg size and number were not significantly correlated while all queens were housed in medium colonies, there was a negative correlation between size and number in weeks 3–6, although this relation was only significant in week 3 (RP = –0.83, n = 11, p=0.002), week 5 (RP = –0.95, n = 8, p<0.001), and week 6 (RP = –0.90, n = 8, p=0.003). Thus, honey bee queens consistently adjust the number and size of their eggs in response to colony size despite inter-individual differences in egg size (Figure 1, Figure 1—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/80499/elife-80499-fig1-v2.jpg)
 
-**Figure 1.:** The egg size (n = 20 for each data point) of individual queens (each depicted by a unique symbol ± SEM) was measured for 6 weeks while they were moved from medium to small to large (light symbols with dark lines) or from medium to large to small colonies (dark symbols with light lines). Arrows symbolize transfer between different colonies, during which some of the queens died (lines not continuing). Despite the presence of individual and environmental differences, these experiments show a strong and consistent negative relation between egg size and colony size. Ovaries from surviving queens were collected after week 6 for proteomic profiling (see below).Figure 1—source data 1.
+**Figure 1.:** The egg size (n = 20 for each data point) of individual queens (each depicted by a unique symbol ± SEM) was measured for 6 weeks while they were moved from medium to small to large (light symbols with dark lines) or from medium to large to small colonies (dark symbols with light lines). Arrows symbolize transfer between different colonies, during which some of the queens died (lines not continuing). Despite the presence of individual and environmental differences, these experiments show a strong and consistent negative relation between egg size and colony size. Ovaries from surviving queens were collected after week 6 for proteomic profiling (see below).
 
 The surviving queens of this experiment, plus two additional large-egg-producing queens to increase sample size (Figure 1—source data 1), were compared with regard to size, body weight, and ovary weight. Queens in small colonies had significantly lighter ovaries than those in large colonies (F(1,8) = 10.2, p=0.013), while body size (F(1,8) = 0.3, p=0.596) and wet weight (F(1,8) = 0.8, p=0.402) did not differ (Figure 2A, Figure 2—source data 1). These results were confirmed in a second comparison between queens that were simply housed in small versus large colonies after maturation (ovary: F(1,6) = 28.7, p=0.01; size: F(1,6) = 0.07, p=0.805; weight: F(1,6) = 0.3, p=0.627; Figure 2B, Figure 2—source data 2). A third comparison between queens housed in small versus large colonies indicated that similar-sized queens (F(1,10) = 0.1, p=0.748) can differ not only in ovary weight (F(1,10) = 18.5, p=0.002) but also in body weight (F(1,10) = 5.6, p=0.039; Figure 2C, Figure 2—source data 3). All egg-size measurements are shown in Supplementary file 1. Across these three experiments, no significant relationships between queen size and egg size were found for queens in small (RP = 0.11, n = 15, p=0.702), medium (RP = 0.21, n = 8, p=0.616), or large (RP = –0.22, n = 15, p=0.440) colonies.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80499/elife-80499-fig2-v2.jpg)
 
-**Figure 2.:** While queen size, measured as wing size, was not significantly different between queens in ‘large’ (L) and ‘small’ (S) colonies, ovaries were consistently lighter in queens from small colonies than in queens from large colonies. Total body weight of queens showed no significant difference between the two groups in the first (A) and second (B) experiments, but queens in large colonies were significantly heavier than queens in small colonies in the third experiment (C). NTest1 = 10, NTest2 = 8, NTest3 = 12 for all measures; simple ANOVAs were used for pairwise comparisons (*p<0.05, **p<0.01).Figure 2—source data 1.Figure 2—source data 2.Figure 2—source data 3.
+**Figure 2.:** While queen size, measured as wing size, was not significantly different between queens in ‘large’ (L) and ‘small’ (S) colonies, ovaries were consistently lighter in queens from small colonies than in queens from large colonies. Total body weight of queens showed no significant difference between the two groups in the first (A) and second (B) experiments, but queens in large colonies were significantly heavier than queens in small colonies in the third experiment (C). NTest1 = 10, NTest2 = 8, NTest3 = 12 for all measures; simple ANOVAs were used for pairwise comparisons (*p<0.05, **p<0.01).
 
-## Egg size is unaffected by an experimental hiatus in egg laying
+### Egg size is unaffected by an experimental hiatus in egg laying
 
 In our first experiment, we found that egg size was negatively correlated to egg number produced. To test whether small egg size is merely a passive consequence of high egg-laying rate, we thus assessed egg size before and after a 2-week period of queen caging, which prevented queens from laying any eggs. None of the four caged queens significantly changed her egg size (F(1,38) = 0.02–1.8, all p>0.1). None of the four queens in an unmanipulated control group during the same time changed her egg size either (F(1,38) = 0.005–0.6, all p>0.4), and egg sizes were similar between the restricted and unrestricted groups overall (Figure 3, Figure 3—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80499/elife-80499-fig3-v2.jpg)
 
-**Figure 3.:** After egg size of individual queens in large colonies was measured, treatment queens (triangular symbols) were confined on capped brood comb that did not allow any oviposition while the control queens (circle symbols) had free access to empty comb for oviposition. After 14 days, the egg size in neither group of queens changed significantly. Individual means ± SEM of 20 eggs are shown for each summary data point.Figure 3—source data 1.
+**Figure 3.:** After egg size of individual queens in large colonies was measured, treatment queens (triangular symbols) were confined on capped brood comb that did not allow any oviposition while the control queens (circle symbols) had free access to empty comb for oviposition. After 14 days, the egg size in neither group of queens changed significantly. Individual means ± SEM of 20 eggs are shown for each summary data point.
 
-## Queens adjust their egg size in response to perceived instead of actual colony size
+### Queens adjust their egg size in response to perceived instead of actual colony size
 
 To better understand how colony size influences queen egg-size regulation, the perceived but not the physical colony size of small colonies was extended. The queens in ‘small’ colonies, producing relatively large eggs, were paired via a double-screened tunnel with medium-sized hive boxes that either contained empty frames or a queenless, ‘medium’ colony. All three queens paired with a regular colony reduced the size of their eggs compared to their initial egg size (Q1: F(3,76) = 34.5, p<0.001; Q2: F(3,76) = 42.5, p<0.001; Q3: F(3,76) = 14.6, p<0.001; post-hoc tests indicated significant differences only between measurements before and after manipulation; Figure 4, Figure 4—source data 1). In contrast, none of the three control queens significantly changed their egg size during the experimental period (Q1: F(3,76) = 1.3, p=0.297; Q2: F(3,76) = 1.6, p=0.196; Q3: F(3,76) = 1.0, p=0.379; Figure 4, Figure 4—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/80499/elife-80499-fig4-v2.jpg)
 
-**Figure 4.:** After initial egg-size determination, queens in ‘small’ hives were either paired with an empty ‘mMedium’ hive box (controls: cyan color, #4, #5, and #6) or with a ‘medium’ hive box containing a colony (pink color, #1, #2, and #3). Queens in hives that were paired with another colony decreased their egg size, while queens in control colonies maintained their egg sizes. Individual means ± SEM are shown.Figure 4—source data 1.
+**Figure 4.:** After initial egg-size determination, queens in ‘small’ hives were either paired with an empty ‘mMedium’ hive box (controls: cyan color, #4, #5, and #6) or with a ‘medium’ hive box containing a colony (pink color, #1, #2, and #3). Queens in hives that were paired with another colony decreased their egg size, while queens in control colonies maintained their egg sizes. Individual means ± SEM are shown.
 
-## Ovary proteome comparisons suggest that egg size is increased by cellular transport and metabolism
+### Ovary proteome comparisons suggest that egg size is increased by cellular transport and metabolism
 
 To compare the ovary proteome of queens producing large eggs with that of queens producing small eggs, we identified a total of 2022 proteins and compared their relative abundance. Among the 290 proteins that exhibited significant quantitative differences, significantly more proteins were more abundant (275) than less abundant (15) in large-egg-producing ovaries compared to small-egg-producing ovaries (χ2 = 233.1, p<0.001; Figure 5A, Supplementary file 2).
 
@@ -86,19 +86,19 @@ The two largest GO term categories were ‘protein localization’ and ‘cytosk
 
 **Figure 6.:** The interaction analysis, carried out in STRING v10, linked 29 proteins into the network. The highlighted nodes depict proteins that have a direct interaction with Rho1, a central regulator of cytoskeletal organization and the second most connected protein in the network.
 
-## Rho1 in ovaries plays an important role in egg-size regulation
+### Rho1 in ovaries plays an important role in egg-size regulation
 
 Based on our proteomics results and functional evaluation of the top candidate genes, we hypothesized that Rho1 is important for egg-size regulation. RNAscope in situ hybridization enabled a fine-scale characterization of Rho1 expression in the ovary, which was consistent with this hypothesis; little Rho1 was expressed in the terminal filament but some expression was discernible in the germarium, concentrated in the cytocyst (incipient oocyte). Relative strong expression of Rho1 was found in the growing oocytes of the vitellarium in contrast to nurse and follicle cells at that developmental stage. In mature oocytes, Rho1 expression was again low (Figure 7A). In the oocytes, Rho1 was mainly located near the lateral cell cortex, which may represent areas of longitudinal growth (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/80499/elife-80499-fig7-v2.jpg)
 
-**Figure 7.:** Rho1 gene expression localization in the queen ovary via RNAscope in situ hybridization.(A) The expression of Rho1 (green color) is limited to the growth stages of the oocyte: In the germarium, Rho1 is expressed in cytocysts (CCs) and in the vitellarium, Rho1 is highly expressed in oocytes (OCs), particularly near the lateral cell surface (B). In contrast, nurse cells (NCs) and follicle cells (FCs) do not exhibit elevated Rho1 expression at this stage. Less expression of Rho1 is observed in mature oocytes (MOs). Blue DAPI staining indicates cell nuclei for comparison. Representative pictures are shown, and the same patterns were found in six queens investigated.
+**Figure 7.:** (A) The expression of Rho1 (green color) is limited to the growth stages of the oocyte: In the germarium, Rho1 is expressed in cytocysts (CCs) and in the vitellarium, Rho1 is highly expressed in oocytes (OCs), particularly near the lateral cell surface (B). In contrast, nurse cells (NCs) and follicle cells (FCs) do not exhibit elevated Rho1 expression at this stage. Less expression of Rho1 is observed in mature oocytes (MOs). Blue DAPI staining indicates cell nuclei for comparison. Representative pictures are shown, and the same patterns were found in six queens investigated.
 
 RNAi-mediated knockdown of Rho1 resulted in an average of 35.1% reduced Rho1 expression compared to controls (Figure 8A, Figure 8—source data 1). Expression of Rho1 was also on average 57.0% higher in control queens from small colonies that produce large eggs than queens from large colonies that produce small eggs (Figure 8A). The knockdown of Rho1 consistently decreased egg sizes (Figure 8B, Figure 8—source data 2) in all three queens in small colonies (Q10: F(1,38) = 177.8, p<0.001; Q11: F(1,38) = 139.7, p<0.001; Q12: F(1,38) = 44.6, p<0.001) and large colonies (Q4: F(1,38) = 63.7, p<0.001; Q5: F(1,38) = 42.8, p<0.001; Q6: F(1,38) = 28.1, p<0.001), while none of the six corresponding control queens exhibited significant egg-size changes (F(1,38) = 0.05–2.8, all p>0.1). Thus, Rho1 knockdown consistently reduced egg size even after the experimental queens increased (Q7–Q12 after transfer into small colonies: F(1,38) = 45.6–654.8, all p<0.001) or decreased (Q1–Q6 after transfer into large colonies: F(1,38) = 24.8–158.4, all p<0.001) the egg size that they had produced in medium-sized colonies at the start of the experiment (Figure 8B, Figure 8—source data 2). All eggs appeared to be viable and were similar in color and texture when size-measured. However, their viability could not be confirmed because our size measurement is a destructive assay. Across individuals from all treatment groups, Rho1 expression at the end of the experiment correlated almost perfectly with the produced egg size (RP = 0.98, n = 12, p<0.001; Supplementary file 6). The correlation between Rho1 expression and egg size was confirmed in a second dataset of 12 queens that produced small and large eggs due to different colony sizes (RP = 0.90, n = 12, p<0.001; Supplementary file 7).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/80499/elife-80499-fig8-v2.jpg)
 
-**Figure 8.:** Rho1 decreases egg size in both ‘small’ and ‘large’ colonies.(A) RT-qPCR results confirmed the experimental downregulation of Rho1 in ovaries of RNAi-injected queens and also showed that Rho1 was significantly more expressed in queens that were housed in small colonies and thus produced larger eggs. Treatment effects were assessed by ANOVA with N = 6 and **p<0.01 and ***p<0.001. Means are shown with SD. (B) The 12 sister queens were mated and introduced to medium-sized colonies to establish egg laying. Subsequently, queens were randomly divided into two groups that were either introduced to small or large colonies. After the predicted egg-size differences were confirmed, three randomly chosen queens in each group were injected with Rho1-siRNA mix, and the other three were injected with scramble siRNA. Final egg-size measurements 3 days after injection demonstrated a significant reduction of egg size in all Rho1 knockdown queens but not in control queens, regardless of colony environment. Means are shown with SEM.Figure 8—source data 1.Figure 8—source data 2.
+**Figure 8.:** (A) RT-qPCR results confirmed the experimental downregulation of Rho1 in ovaries of RNAi-injected queens and also showed that Rho1 was significantly more expressed in queens that were housed in small colonies and thus produced larger eggs. Treatment effects were assessed by ANOVA with N = 6 and **p<0.01 and ***p<0.001. Means are shown with SD. (B) The 12 sister queens were mated and introduced to medium-sized colonies to establish egg laying. Subsequently, queens were randomly divided into two groups that were either introduced to small or large colonies. After the predicted egg-size differences were confirmed, three randomly chosen queens in each group were injected with Rho1-siRNA mix, and the other three were injected with scramble siRNA. Final egg-size measurements 3 days after injection demonstrated a significant reduction of egg size in all Rho1 knockdown queens but not in control queens, regardless of colony environment. Means are shown with SEM.
 
 ## Discussion
 
@@ -122,11 +122,161 @@ Honey bee queens also adjust their egg size depending on whether a worker- or qu
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rho1-siRNA</td>
+      <td>GenePharma</td>
+      <td>Cat# A01001</td>
+      <td>See Supplementary file 8</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scramble siRNA</td>
+      <td>GenePharma</td>
+      <td>Cat# A06001</td>
+      <td>See Supplementary file 8</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td>Sangon Biotech</td>
+      <td></td>
+      <td>See Supplementary file 8</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT reagent kit</td>
+      <td>TaKaRa</td>
+      <td>Cat# RR047A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TB Green Fast qPCR Mix</td>
+      <td>TaKaRa</td>
+      <td>Cat# RR430A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent Reagent Kit v2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Probe- Amel-LOC409910-C1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 1061331-C1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiI stain</td>
+      <td>Beyotime</td>
+      <td>Cat# C1036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://Imagej.nih.gov/ij</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v8</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS Statistics 20.0</td>
+      <td>IBM</td>
+      <td>RRID:SCR_019096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xcalibur 3.0</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:SCR_014593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEAKS 8.5</td>
+      <td>Bioinformatics Solutions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Primer Premier 5.0</td>
+      <td>PREMIER Biosoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape v3.8.2</td>
+      <td>https://cytoscape.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TBtools</td>
+      <td>https://doi.org/10.1016/j.molp.2020.06.009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STRING</td>
+      <td>https://string-db.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metascape</td>
+      <td>http://metascape.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>geNorm</td>
+      <td>https://genorm.cmgg.be</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All studies were conducted in the Western honey bee, A. mellifera, using colonies of mixed origin and derived from commercial populations, which were kept in the research apiary of the University of North Carolina at Greensboro, NC, USA (UNCG: 2020) or in the research apiary of the Institute of Apicultural Research in Beijing, China (IAR: 2021). We used standard husbandry methods to house experimental colonies (Laidlaw and Page, 1997), monitoring and adjusting colony size and food status but refraining from any other treatments during the experiments. We defined three distinct colony sizes: ‘small’ colonies contained 500–700 worker bees and housed in mating hives (nucs) equipped with three half-frames of medium depth, ‘medium’ colonies contained 6000–8000 workers bees housed in a 5-frame Langstroth hive box with standard frames, and ‘large’ colonies with 16,000–20,000 worker bees in a standard 8-frame (UNCG) and 10-frame (IAR) Langstroth hive. Thus, all colony sizes were below the size of apicultural production colonies. Each separate experiment was conducted with a set of sister queens that we raised from offspring of a single mother to reduce genetic variation within experiments. Queen rearing followed standard methods (Laidlaw and Page, 1997), and queens were allowed to mate naturally.
 
-## Repeated transfer experiments
+### Repeated transfer experiments
 
 As an extension of our previous study (Amiri et al., 2020), an experiment was set up in the UNCG apiary to transfer one group of queens from ‘medium’ to ‘small’ to ‘large’ colonies and simultaneously transfer another group from ‘medium’ to ‘large’ to ‘small’ colonies. During each stage, egg size was measured from 20 eggs per queen twice (1 week apart). The measurements followed our previous protocol (Amiri et al., 2020), where eggs produced overnight were randomly selected in the next morning and transferred with a grafting tool from standard worker brood cells onto a 0.01 mm stage micrometer (Olympus, Japan). Eggs were laterally photographed under threefold magnification while ensuring that the egg was completely level. Each photo was then processed with the open-source ImageJ software (version 1.52p; National Institutes of Health, USA) by manually tracing the egg’s outline using the polygon-selection tool. The selected area was measured in mm2 (note that in our previous work [Amiri et al., 2020], a simple conversion mistake led to erroneous μm2 units) as a representation of egg size. This two-dimensional measure of egg size directly corresponds to egg mass, assuming a cylindrical egg shape, and is more precise than weight determination on any scale available to us. During our measures of hundreds of eggs, we did not observe any obvious deviations from a cylindrical egg shape, but any such deviations would make our measures imprecise.
 
@@ -140,15 +290,15 @@ A simpler, additional experiment was conducted to perform another comparison of 
 
 A third study of ovary size was performed with all queens at the end of the RNAi knockdown experiment (see below). For this purpose, the body weight, wing size, and ovary weight of the 12 queens were measured as described above (Figure 2C). In this instance, the body weight was measured before injection, while the wing size and ovary weight were measured after injection.
 
-## Oviposition restriction experiment
+### Oviposition restriction experiment
 
 Prompted by the equivocal evidence for a negative correlation between egg size and egg-laying rate in the first experiment and the lack of such a correlation in our previous study (Amiri et al., 2020), we explicitly tested the hypothesis that egg size is an invariant consequence of the egg-laying rate of honey bee queens. Eight sister queens were reared from a randomly selected source in the IAR apiary in July 2021, introduced as mature queen cells to ‘medium’ colonies for emergence, mating, and initiation of oviposition. Subsequently, the queens were transferred into ‘large’ colonies, and 2 weeks after acceptance their egg sizes were measured as described above. Subsequently, queens were randomly split into an oviposition restriction group and an unmanipulated control group. Queens in the oviposition restriction group were caged in push-in queen cages (36 cm × 18 cm) on top of capped brood combs without empty cells as egg-laying opportunities. Thus, queens in this treatment group experienced normal colony conditions without an opportunity to lay eggs, while the control queens were left unmanipulated. Immediately after these 2 weeks, all queens were caged on identical sections of comb with empty cells to measure their egg sizes again. Each queen was evaluated separately for significant differences in egg size between the start and end of the experiment with a simple ANOVA.
 
-## Colony extension experiment
+### Colony extension experiment
 
 To clarify how colony size influences queen oviposition, we tested whether physical contact or material transfers are necessary to alter the size of eggs produced by the queen. Six sister queens were reared from a randomly selected mother in the IAR apiary in July 2021. After maturation (as described above), these queens were introduced into ‘small’ colonies. After an acclimation period of 2 weeks, egg sizes produced by all queens were determined twice as described above (15th and 21st of August 2021). The colonies were randomly divided into two groups and connected via a double-screened tunnel to a ‘medium’ hive that contained either empty comb (control) or a ‘mMedium’ colony with corresponding amounts of food, brood, and workers, but no queen (treatment). Tunnels were 3 cm long, 10 cm wide, and 20 cm high. Both ends were screened with fine wire mesh to prevent any physical contact among the workers in opposing hives. Worker drifting between hives was prevented by pointing the hive entrances of the two connected units to opposite directions, as well as coloring and designing the entrances differently. One week later, egg-size measurements were performed (30th of August) and repeated once after an additional week (4th of September).
 
-## Ovary proteome analysis
+### Ovary proteome analysis
 
 In an unbiased search for differences, the protein content of ovaries that produce small eggs (from queens in ‘large’ colonies) and ovaries that produce large eggs (from queens in ‘small’ colonies) was studied with a label-free LC-MS/MS approach. A total of 18 ovaries, collected during the two UNCG experiments described above, were included. For both groups (small-egg-producing queens and large-egg-producing queens), nine ovaries were pooled randomly into three biological replicates.
 
@@ -166,13 +316,13 @@ Functional GO enrichment analysis of the quantitatively different proteins was p
 
 For the exploration of functional protein connections involved in the major enriched biological process terms, PPI networks were constructed among the differing proteins in STRING (Szklarczyk et al., 2015). A full STRING network was built with medium confidence (0.4) and FDR < 5%. The PPI networks were visualized using Cytoscape (version 3.8.2).
 
-## Examination of expression patterns of Rho1
+### Examination of expression patterns of Rho1
 
 Based on the proteomic analyses, the small GTPase Rho1 emerged as a candidate regulator of egg size during honey bee oogenesis, which motivated us to study its expression patterns in the ovary and inside the oocyte by RNAscope in situ hybridization (Wang et al., 2012). The probes were designed and prepared by Advanced Cell Diagnostics (ACD, Inc, Hayward, USA), and an RNAscope Fluorescent Multiplex Reagent kit (ACD) was used following the manufacturer’s instructions. Immediately following dissection, the ovary tissues of randomly selected, mature queens from the IAR apiary were fixed in 10% neutral buffered formalin for 32 hr at room temperature (RT). Thereafter, the samples were dehydrated using a standard ethanol series, followed by xylene. The dehydrated samples were embedded in paraffin and then cut into 1 µm sections using an RM2235 microtome (Leica, Germany) that were gently deposited onto glass microscope slides. The slides were then baked for 1 hr at 60°C and deparaffinized at RT. The sections were treated with hydrogen peroxide for 10 min at RT and then washed with fresh distilled water.
 
 Subsequently, the target retrieval step was performed using 1× RNAscope target retrieval reagent. The slides were air-dried briefly and then boundaries were drawn around each section using a hydrophobic pen (ImmEdge pen; Vector Laboratories, USA). After hydrophobic boundaries had dried, the sections were incubated in protease IV reagent for 2 min, followed by a 1× PBS wash. Each slide was then placed in a prewarmed humidity control tray (ACD) containing dampened filter paper and incubated in a mixture of Channel 1 probes (Rho1, ACD Cat #1061331-C1) for 2 hr in the HybEZ oven (ACD) at 40°C. Following probe incubation, the slides were washed two times in 1× RNAscope wash buffer and returned to the oven for 30 min after submersion in AMP-1 reagent. Washes and hybridization were repeated using AMP-2, AMP-3, and HRP-C1 reagents with a 30 min, 15 min, and 15 min incubation period, respectively. The slides were then submerged in TSA Plus FITC and returned to the oven for 30 min. After washing two times in 1× RNAscope wash buffer, the slides were incubated with HRP blocker for 15 min in the oven at 40°C. Finally, the slides were washed two times in 1× RNAscope wash buffer and incubated with DAPI for 1 min. The images were visualized with a Leica SP8 (Leica) confocal microscope and acquired with the sequence program of the Leica LAS X software.
 
-## RNAi-mediated downregulation of Rho1
+### RNAi-mediated downregulation of Rho1
 
 To test the hypothesis that Rho1 expression controls the size of the eggs that honey bee queens produce, we investigated the effects of RNAi-mediated downregulation of Rho1. Four specific siRNAs targeting Rho1 of A. mellifera (GenBank: LOC409910) were designed and synthesized by GenePharma RNAi Company (Shanghai, China). Scrambled siRNA of random sequence was used as a negative control (GenePharma). For all siRNA sequences, see Supplementary file 8.
 

@@ -20,18 +20,18 @@
 
 ### Affiliations
 
-1. https://ror.org/04cvxnb49 Institute of Clinical Pharmacology, Goethe - University Frankfurt Germany
-2. https://ror.org/01s1h3j07 Fraunhofer Institute for Translational Medicine and Pharmacology ITMP, and Fraunhofer Cluster of Excellence for Immune Mediated Diseases CIMD Frankfurt Germany
-3. https://ror.org/04cvxnb49 Goethe University, Department of Gynecology and Obstetrics Frankfurt Germany
-4. https://ror.org/02pqn3g31 German Cancer Consortium (DKTK) and German Cancer Research Center (DKFZ) Heidelberg Germany
-5. https://ror.org/04cvxnb49 Goethe University, University Cancer Center Frankfurt (UCT), Goethe University Hospital Frankfurt Germany
-6. https://ror.org/04k4vsv28 Oncology Center, Sana-Klinikum Offenbach Starkenburgring Germany
+1. Institute of Clinical Pharmacology, Goethe - University Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+2. Fraunhofer Institute for Translational Medicine and Pharmacology ITMP, and Fraunhofer Cluster of Excellence for Immune Mediated Diseases CIMD Frankfurt Germany ([ROR:01s1h3j07](https://ror.org/01s1h3j07))
+3. Goethe University, Department of Gynecology and Obstetrics Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+4. German Cancer Consortium (DKTK) and German Cancer Research Center (DKFZ) Heidelberg Germany ([ROR:02pqn3g31](https://ror.org/02pqn3g31))
+5. Goethe University, University Cancer Center Frankfurt (UCT), Goethe University Hospital Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+6. Oncology Center, Sana-Klinikum Offenbach Starkenburgring Germany ([ROR:04k4vsv28](https://ror.org/04k4vsv28))
 
 † Corresponding author
 
 ## Abstract
 
-Chemotherapy-induced peripheral neuropathy (CIPN) is a serious therapy-limiting side effect of commonly used anticancer drugs. Previous studies suggest that lipids may play a role in CIPN. Therefore, the present study aimed to identify the particular types of lipids that are regulated as a consequence of paclitaxel administration and may be associated with the occurrence of post-therapeutic neuropathy. High-resolution mass spectrometry lipidomics was applied to quantify d=255 different lipid mediators in the blood of n=31 patients drawn before and after paclitaxel therapy for breast cancer treatment. A variety of supervised statistical and machine-learning methods was applied to identify lipids that were regulated during paclitaxel therapy or differed among patients with and without post-therapeutic neuropathy. Twenty-seven lipids were identified that carried relevant information to train machine learning algorithms to identify, in new cases, whether a blood sample was drawn before or after paclitaxel therapy with a median balanced accuracy of up to 90%. One of the top hits, sphinganine-1-phosphate (SA1P), was found to induce calcium transients in sensory neurons via the transient receptor potential vanilloid 1 (TRPV1) channel and sphingosine-1-phosphate receptors.SA1P also showed different blood concentrations between patients with and without neuropathy. Present findings suggest a role for sphinganine-1-phosphate in paclitaxel-induced biological changes associated with neuropathic side effects. The identified SA1P, through its receptors, may provide a potential drug target for co-therapy with paclitaxel to reduce one of its major and therapy-limiting side effects. This work was supported by the Deutsche Forschungsgemeinschaft (German Research Foundation, DFG, Grants SFB1039 A09 and Z01) and by the Fraunhofer Foundation Project: Neuropathic Pain as well as the Fraunhofer Cluster of Excellence for Immune-Mediated Diseases (CIMD). This work was also supported by the Leistungszentrum Innovative Therapeutics (TheraNova) funded by the Fraunhofer Society and the Hessian Ministry of Science and Arts. Jörn Lötsch was supported by the Deutsche Forschungsgemeinschaft (DFG LO 612/16-1).
+Background:Chemotherapy-induced peripheral neuropathy (CIPN) is a serious therapy-limiting side effect of commonly used anticancer drugs. Previous studies suggest that lipids may play a role in CIPN. Therefore, the present study aimed to identify the particular types of lipids that are regulated as a consequence of paclitaxel administration and may be associated with the occurrence of post-therapeutic neuropathy.Methods:High-resolution mass spectrometry lipidomics was applied to quantify d=255 different lipid mediators in the blood of n=31 patients drawn before and after paclitaxel therapy for breast cancer treatment. A variety of supervised statistical and machine-learning methods was applied to identify lipids that were regulated during paclitaxel therapy or differed among patients with and without post-therapeutic neuropathy.Results:Twenty-seven lipids were identified that carried relevant information to train machine learning algorithms to identify, in new cases, whether a blood sample was drawn before or after paclitaxel therapy with a median balanced accuracy of up to 90%. One of the top hits, sphinganine-1-phosphate (SA1P), was found to induce calcium transients in sensory neurons via the transient receptor potential vanilloid 1 (TRPV1) channel and sphingosine-1-phosphate receptors.SA1P also showed different blood concentrations between patients with and without neuropathy.Conclusions:Present findings suggest a role for sphinganine-1-phosphate in paclitaxel-induced biological changes associated with neuropathic side effects. The identified SA1P, through its receptors, may provide a potential drug target for co-therapy with paclitaxel to reduce one of its major and therapy-limiting side effects.Funding:This work was supported by the Deutsche Forschungsgemeinschaft (German Research Foundation, DFG, Grants SFB1039 A09 and Z01) and by the Fraunhofer Foundation Project: Neuropathic Pain as well as the Fraunhofer Cluster of Excellence for Immune-Mediated Diseases (CIMD). This work was also supported by the Leistungszentrum Innovative Therapeutics (TheraNova) funded by the Fraunhofer Society and the Hessian Ministry of Science and Arts. Jörn Lötsch was supported by the Deutsche Forschungsgemeinschaft (DFG LO 612/16-1).
 
 ## Introduction
 
@@ -43,7 +43,7 @@ In this prospective clinical cohort study, plasma concentrations of 255 differen
 
 ## Materials and methods
 
-## Patients and study design
+### Patients and study design
 
 This was a prospective single-arm study enrolling patients with breast cancer. The study was conducted in accordance with the Declaration of Helsinki on Biomedical Research Involving Human Subjects and was approved by the Ethics Committee of the Medical Faculty of the Goethe-University, Frankfurt am Main, Germany (reference number 4/09). Informed written consent was obtained from each of the participants.
 
@@ -55,13 +55,13 @@ All patients provided a blood sample before chemotherapy; however, only 36 patie
 
 **Figure 1.:** UCT: University Cancer Center Frankfurt, PCA: principal component analysis, ESO: emergent self-organizing maps, cABC analysis: computed ABC analysis. The figure was created using Microsoft PowerPoint (Redmond, WA, USA) on Microsoft Windows 11 running in a virtual machine powered by VirtualBox 6.1.36 (Oracle Corporation, Austin, TX, USA) as guest on Linux, and then further modified with the free vector graphics editor “Inkscape version 1.2 for Linux, https://inkscape.org/.
 
-## Assessment of neuropathy
+### Assessment of neuropathy
 
 The occurrence and severity of peripheral neuropathy was assessed according to the guidelines of the NCI Common Terminology Criteria for Adverse Events (CTCAE) v5.0, Published: November 27, 2017, by the U.S. Department of Health and Human Services. Neuropathy assessment was performed prospectively, that is before the first paclitaxel treatment and again after the 12th treatment cycle. Neuropathy was assessed regularly upon visit of the patient. The last assessment was performed 4.5 years after initial chemotherapy (Supplementary file 1).
 
 The severity of neuropathy was graded into five grades: Grade 1 Mild; asymptomatic or mild symptoms; clinical or diagnostic observations only; intervention not indicated. Grade 2 Moderate; minimal, local or noninvasive intervention indicated; limiting age-appropriate instrumental ADL (activities of daily living). Grade 3 Severe or medically significant but not immediately life-threatening hospitalization or prolongation of hospitalization indicated; disabling; limiting self-care ADL. Grade 4 Life-threatening consequences; urgent intervention indicated. Grade 5 Death related to AE. In the present cohort, grades 1–3 were detected following paclitaxel chemotherapy (Supplementary file 1). Of the 31 patients with a full set of samples, 17 had neuropathy after chemotherapy (54.9%), 12 had grade 1, 3 had grade 2 and two patients with grade 3 (Supplementary file 1).
 
-## Lipidomics analysis using LC-MS/MS and LC-QTOFMS
+### Lipidomics analysis using LC-MS/MS and LC-QTOFMS
 
 Blood was collected from patients in EDTA tubes and immediately centrifuged at 2000 x g for 10 min at 4 °C.The supernatant was immediately frozen at –80 °C until further processing. Approximately 2–3 ml of plasma was considered sufficient for each patient. Liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis of eicosanoids oxidized linoleic acid metabolites (O(x)LAMs), prostanoids, endocannabinoids, LPAs, pterins, sphingolipids and ceramides, and lipidomics screening were performed as described previously (Sisignano et al., 2016; Shapiro et al., 2016; Brunkhorst-Kanaan et al., 2019). A total of 255 lipids were quantified in each plasma sample. These lipids belong to the groups of eicosanoids, oxidized linoleic acid metabolites, endocannabinoids, lysophosphatidic acids, pterins, sphingolipids, ceramides, cholesterols, cholesterol esters, diacylglycerols, triacylglycerols, phospholipids, lysophospholipids, and free fatty acids. Full details of the lipids detected are provided in Supplementary file 2.
 
@@ -69,27 +69,27 @@ Lipid extraction was performed using different solvents and methods based on the
 
 Arachidonic acid and linoleic acid were measured using 10 µl sample volume on an Agilent 1200 LC system with a Gemini NX C18 column and precolumn, coupled to a QTrap 5500 MS system in negative ionization mode. Eicosanoids and O(x)LAMs were measured using 200 µl sample volume on the same LC and MS systems. Prostanoids and endocannabinoids were measured using 200 µl and 100 µl sample volumes, respectively, on an Agilent 1290 Infinity LC system with an Acquity UPLC BEH C18 column and precolumn, coupled to a QTrap 6500+MS system in negative and positive ionization modes, respectively. Lysophosphatidic acids (LPA) were measured using 100 µl sample volume on an Agilent 1200 LC system with a Luna C18 column and precolumn, coupled to a QTrap 5500 MS system in negative ionization mode. Pterins were measured using 50 µl sample volume on an Agilent 1200 LC system with a Synergi Hydro RP 2.0x250 mm column, coupled to a QTrap 5500 MS system in negative ionization mode. Sphingolipids were measured using 10 µl sample volume on an Agilent 1200 LC system with an additional 1100 isocratic pump and a Zorbax Eclipse Plus C18 column with a Luna C18 precolumn, coupled to a QTrap 5500 MS system in positive ionization mode. Untargeted lipidomics was measured using 20 µl sample volume on a Nexera X2 UHPLC system with a Zorbax Eclipse Plus C8 column and precolumn, coupled to a TripleTOF 6600 MS system in both negative and positive ionization modes.Data Acquisition of the QTrap systems was done using Analyst Software 1.6.3 and quantification was performed with MultiQuant Software 3.0.2 (both Sciex, Darmstadt, Germany), employing the internal standard method (isotope dilution mass spectrometry). Calibration curves were calculated by linear regression with 1 /x weighting. Data acquisition of the TripleTOF was controlled by Analyst TF 1.7 software. Lipids were identified using exact mass (±5 ppm), isotope distribution and by MS/MS fragmentation pattern using MasterView 1.1 software and finally relatively quantified using MultiQuant 3.0.2 software (all Sciex, Darmstadt, Germany). Results were normalized to the first QC sample using the median peak ratio from MarkerView Software V1.21 (Sciex, Darmstadt, Germany) for positive and negative ionization mode, respectively.
 
-## Data analysis
+### Data analysis
 
 Programming was performed in the R language (Ihaka and Gentleman, 1996; version 4.1.2, for Linux), available free of charge from the Comprehensive R Archive Network (CRAN) at https://CRAN.R-project.org/ (R Development Core Team, 2008), and in the Python language (Van Rossum and Drake, 1995) (version 3.8.12), available at https://www.python.org (accessed March 1, 2022). The main packages used for R-based data analysis are given along with the description of the methods. The main packages used for the Python-based data analysis were the numerical Python package ‘numpy’ (https://numpy.org Harris et al., 2020), ‘pandas’ (https://pandas.pydata.org McKinney, 2010; pandas-dev/pandas, 2020), fundamental algorithms for scientific computing in Python ‘SciPy’ (https://scipy.org Virtanen et al., 2020) and ‘scikit-learn’ (https://scikit-learn.org/stable/ Pedregosa et al., 2011). Analyses were performed on an AMD Ryzen Threadripper 3970 X (Advanced Micro Devices, Inc, Santa Clara, CA, USA) computer running Ubuntu Linux 20.04.4 LTS (Canonical, London, UK).
 
 The data analysis (Figure 1) combined statistical and machine learning methods in a ‘mixture of experts’ approach shown to be superior to single method designs (Khadirnaikar et al., 2023; Hu et al., 1997) such as regression analysis alone (Leclercq et al., 2019). The reason for the preference for using several but one method is that all statistical models inherently rely on underlying assumptions about a data set, some of which can be tested, but in practical scenarios it is often difficult to determine the best model to describe a real data set. All tests were two-sided, that is without a directed hypothesis, without specific expectations as to which of the d=255 lipid markers would be regulated as an effect of paclitaxel and/or as a sign of neuropathy, and in which direction this regulation might occur. Data visualization followed advisees of Lötsch and Ultsch, 2023c. The data analysis included unsupervised and supervised methods (Figure 1). The former were used to determine whether the lipidomics data contained structures that supported prior classifications into baseline versus post-treatment samples, or into subjects with or without post-treatment neuropathy. Supervised methods were then used to identify lipid mediators that carried information relevant to this class structure of the data set. The detailed analyses are described below.
 
-## Data preprocessing
+### Data preprocessing
 
 Data preprocessing included examination of the distribution of the variables including evaluation of possible transformations along Tukey’s ladder of powers (Tukey, 1977; Box and Cox, 1964), supported by visualizing the data using quantile-quantile plots and assessing the normal distribution using D'Agostino and Pearson tests (D’Agostino and Pearson, 1973; D’agostino, 1971) implemented in the ‘SciPy’ Python package. This suggested logarithmic transformation. Imputation of missing values was performed by means of random forests (Ho, 1995; Breiman, 2001) implemented in our R library ‘pguIMP’ (https://cran.r-project.org/package=pguIMP Malkusch et al., 2021). Only variables or cases with less than 20% missing values were retained.
 
-## Unsupervised analysis of lipid markers to identify class structures
+#### Unsupervised analysis of lipid markers to identify class structures
 
 After log transformation and missing value imputation, lipid marker concentrations were analyzed using unsupervised methods to assess whether they contained structures consistent with a prior class structure, such as pre-/post-treatment samples or samples from patients with or without neuropathy. Z-standardized data were projected from the high-dimensional space onto lower dimensional planes by means of principal component analysis (PCA) (Hotelling, 1933; Pearson, 1901). However, among limitations of PCA is that it focuses on the dispersion (variance) of the data, while clustering/subgrouping attempts to identify concentrations (neighborhoods) within the data, making PCA and clustering opposing methods in this sense. Furthermore, PCA fails to separate data sets with non-linear relationships, for which other projection methods have been developed, such as the currently popular t-distributed stochastic neighborhood embedding (t-SNE) (Van der Maaten and Hinton, 2008), which also has limitations and occasionally provides class structure to data sets that do not have class structure (Lötsch and Ultsch, 2019). Considering these limitations, a second unsupervised approach was used to verify the agreement between the lipidomics data structure and the prior classification, using unsupervised machine-learning applied as self-organizing maps (SOM) of artificial neurons (Kohonen, 1982). Of note, as mentioned previously (Lötsch and Ultsch, 2019), there are two types of SOMs, with one using a small number of neurons that are identified with clusters and a second type of which one feature is the usage of a large number of neurons up to thousands (for details about the number of neurons, see Lötsch et al., 2018a), termed emergent SOM (ESOM), where emergence, that is the appearance of higher-level structures due to micro-scale interactions, can be observed by looking at structures like ridges or valleys consisting of groups of neurons (Ultsch et al., 2007). The latter was used in the present analysis, that is an emergent self-organizing map (ESOM) of artificial neurons, followed by visualization of class structure using a U-matrix (Ultsch and Lötsch, 2017; Ultsch and Locarek-Junge, 2003; Ultsch, 2003). In the present implementation, the network consisted of 4000 neurons arranged on a two-dimensional toroidal grid with 50 rows and 80 columns (Ultsch and Lötsch, 2017; Ultsch, 2003). Each neuron has a position vector on the grid and a vector containing ‘weights’ with the same dimensions as the input dimensions, which were the z-standardized lipid marker concentrations. The weights were first randomly drawn from the datasets and then fitted to the data during the 20-epoch learning phase. This resulted in a representation of the dataset instances on a two-dimensional toroidal map as localizations of the respective ‘best matching units’. Furthermore, the distances between the data points were calculated using the so-called U-matrix (Sieman HP, 1990; Lötsch and Ultsch, 2014), where the ‘height" represents the average high-dimensional distance of a prototype with respect to all immediately neighboring prototypes. The corresponding visualization technique uses a topographic map including coloring. These calculations were performed using our R package ‘Umatrix’ (https://cran.r-project.org/package=Umatrix Lötsch et al., 2018a).
 
-## Supervised analysis to identify lipid mediators relevant to the class structure of the dataset
+#### Supervised analysis to identify lipid mediators relevant to the class structure of the dataset
 
-## Segregation of validation data
+##### Segregation of validation data
 
 For the supervised machine learning approach, a validation subsample of 20% of cases from each subgroup was reserved for final model validation. This ensured a representative holdout set across categories, with all data points from selected participants completely separated from the main dataset. The validation subsample remained untouched during feature selection and classifier training, allowing for robust evaluation of machine learning model performance on unseen data and helping to avoid overfitting. The remaining 80% of the dataset was used for training and testing the models. Thus, the following analyses were performed on the 80% training/test subsample.
 
-## Feature selection
+### Feature selection
 
 To the relevant lipid mediators for the class structure, that is into pre- and posttreatment or neuropathy positive or negative after therapy, several feature selection methods (Guyon, 2003) were used. This used machine learning for knowledge discovery. The approach assumes that if a classifier can be trained to assign a patient to the correct class better than by guessing, then the features, that is the lipid mediators in the dataset needed by the classifier to accomplish this task, contain relevant information about the addressed class structure. In this way, the most informative lipids can be identified. In this use of feature selection, creating a powerful classifier is not the final goal, but feature selection takes precedence over classifier performance. This means that the analysis is considered as successful when the class assignment is just better than guessing and the variables needed for this assignment have been identified.
 
@@ -99,15 +99,15 @@ Algorithm-based feature selection was performed after 20% of the members of each
 
 A reduced feature set was determined from the sum count at which the variables had been selected in the different approaches. The sum score across the selections was subjected to cABC analysis, from which category ‘A’ provided a ‘reduced’ set of lipid mediators. To further narrow the focus to the most relevant variables, a nested cABC analysis was performed, which consists of repeating the cABC analysis for the items in category ‘A’ of a previous cABC analysis, providing a ‘sparse’ set of lipid mediators (separate method publication pending).
 
-## Feature validation
+### Feature validation
 
 Finally, it was assessed whether these sets of variables provided sufficient information for class separation in a sample not available during feature selection. The included algorithms were therefore trained with the full and reduced feature sets in a 5x20 nested cross-validation, using randomly selected subsets of 80% of the original training dataset for algorithm training, and applying the trained algorithms to random subsets comprising 80% of the validation dataset separated from the full original dataset before feature selection and classifier tuning. The balanced accuracy was used as the main parameter to evaluate the classification performance (Brodersen et al., 2010). In addition, the area under the receiver operator curve (roc-auc Peterson et al., 1954) was calculated. As elaborated above, the main goal was that the classification accuracy was better than by guessing, including that the 95% confidence interval (CI) of the balanced accuracy did not include the chance level of 0.5 (=50 %). The final set of lipid mediators was then analyzed for statistical differences according to the prior classification, that is pretreatment versus posttreatment and in the posttreatment sample, neuropathy versus no neuropathy, using Kruskal-Wallis tests (Kruskal and Wallis, 1952). Alpha correction for multiple testing was applied as suggested by Bonferroni, 1936.
 
-## Lipid mediators informative for assigning samples to before or after therapy in an independent second patient cohort
+### Lipid mediators informative for assigning samples to before or after therapy in an independent second patient cohort
 
 The algorithms trained on the analysis cohort data were then applied to data from the independent second cohort without further modification or training. Specifically, after excluding variables or cases with >20% missing values and imputing the remaining missing values as described for cohort 1, analyzed data of cohort consisted of a matrix of size 52×239 (52 instances/samples and 239 different lipid mediators). The classifiers trained at the analysis cohort separated samples from the first from those from the second day in the second patient cohort at balanced accuracy of 0.6–0-.62 and roc-auc of 0.65–0.69 (Table 3). Using permuted data for training resulted in algorithms incapable to separate sample 1 from sample 2 better than by guessing. After analysis, SA1P differed between samples 1 and 2, which was consistent with its top ranking in the respective feature selection analysis. From the second patient cohort, six patients were excluded from the analysis due to more than 20% incomplete lipidomics data.
 
-## Calcium Imaging with primary sensory neurons
+### Calcium Imaging with primary sensory neurons
 
 Primary sensory neurons were cultured as described previously (Sisignano et al., 2012). For calcium imaging experiments, neurons were stained with Fura-2-AM (Thermo Fisher) for at least 60 min at 37 °C and washed afterwards twice with Ringer’s solution consisting of 145 mM NaCl, 1.25 mM CaCl2 ×2H2 O, 1 mM MgCl2 x6 H2O, 5 mM KCl, 10 mM D-glucose, and 10 mM HEPES adjusted to a pH of 7.3. To investigate the effect of SA1P or LPC 24:0 on different TRP channels, sensory neurons were incubated with the lipids for 1 min at a concentration of 1 or 10 µM, respectively. The gold standard agonists for TRPV1 and TRPA1 were capsaicin (200 nM, 20 s) and AITC (allyl isothiocyanate, 75 µM, 30 s). Fingolimod was used at a concentration of 1 µM and pre-incubated for 1 hr prior to measurement. As a positive control, final stimulation with KCl (50 mM, 1 min) was used to depolarize all neurons. All stimulating compounds were dissolved in Ringer’s solution to their final concentrations.
 
@@ -117,15 +117,23 @@ The calcium imaging data were analyzed using descriptive statistics. All calcium
 
 All patients received paclitaxel as adjuvant or neoadjuvant therapy, without any other potentially neurotoxic substances. Of the 60 patients from our analysis cohort, two were excluded due to rescheduling of paclitaxel therapy. Blood samples were obtained from 31 patients before and after chemotherapy. Twenty lipid marker variables had >20% missing values. Following exclusion of these patients and variables and imputation, a data matrix for further analyses was obtained, sized 79×255 (79 data set instances, samples, and 255 different lipid mediators Figure 1). These included 48 samples drawn on day 1 before therapy and 31 samples drawn on day 2 after 12 cycles of paclitaxel therapy. On day 2, n=17 of the 31 patients had symptoms of neuropathy (54.9%), which is in line with previous clinical reports on occurrence and severity of paclitaxel-induced neuropathy (Pachman et al., 2011; Scripture et al., 2006). Most patients reported grade 1 neuropathy, although two patients experienced grade 3 neuropathy. Occurrence and degree of neuropathy were monitored 4.5 years after finishing chemotherapy. The neuropathy lasted for several months or, in many cases, still persisted for 4.5 years after chemotherapy at the last examination (Supplementary file 1).
 
-## Results of unsupervised analysis of structure in the lipidomics data supporting prior knowledge
+### Results of unsupervised analysis of structure in the lipidomics data supporting prior knowledge
 
 PCA yielded d=28 components with eigenvalues >1, which together explained 93.93% of the total variance in the lipid mediators (Figure 2—figure supplement 1). The d=86 lipid mediators that contributed most to the relevant PCs were identified based on the membership to category ‘A’ in the cABC analysis of the weighted variable contributions to each PC (Figure 2—figure supplement 1). This was carried over as one of the several feature-importance measures to the supervised analyses reported in the next chapter. On the emergent self-organizing map (ESOM, Figure 2a), a clear separation of two clusters was observed, which provided support that the lipid mediators contained a data structure contingent with the prior classification into pre- and posttherapy samples (Fisher’s exact test: p=0.01054, odds ratio: 3.57 with 95% confidence interval 1.28–10.52; Figure 2b). The separation of samples on the ESOM also corresponded, but to a lesser extent, with the occurrence of neuropathy observed at the time of the 2nd blood sample (p=0.0328, odds ratio 0.16, 95% confidence interval 0.0137–1.022).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig2-v1.jpg)
+
+**Figure 2.:** (a) 3D display of an emergent self-organizing map (ESOM), providing a three-dimensional U-matrix visualization (Thrun et al., 2016) of distance-based structures of the serum concentrations of d=255 lipid mediators following projection of the data points onto a toroid grid of 4000 neurons where opposite edges are connected. The dots represent the so-called ‘best matching units’ (BMU), that is neurons on the grid that after ESOM learning carried a data vector that was most similar to a data vector of a sample in the data set. Only those neurons of the originally 4000 neurons are shown that carried vectors of cases from the present data set. Please also note that one BMU can carry vectors of several cases, that is the number of BMUs is not necessarily equal to the number of cases. A cluster structure emerges from visualization of the distances between neurons in the high-dimensional space by means of a U-matrix (Izenmann, 2009). The U-matrix was colored as a geographical map with brown or snow-covered heights and green valleys with blue lakes, symbolizing high or low distances, respectively, between neurons in the high-dimensional space. Thus, valleys left and right of the ‘mountain range’ in the middle indicate clusters and watersheds, that is the line of large distances between neighboring points, indicate borderlines between different clusters. Tat is, the mountain range with ‘snow-covered’ heights separates main clusters according to probe acquisition at day 1 or day 2, that is before and after treatment with paclitaxel. BMUs belonging to the two different clusters are colored green or bluish. (b) Mosaic plot of the prior classes (day 1 or day 2) versus the ESOM/Umatrix based clusters. The separation corresponded to the previous classification into pre- and post-therapy probes (day1/2). Cluster #1 was composed of more probes taken on day #1, while probes from day 2 were overrepresented in cluster #2. The figure has been created using the R software package (version 4.1.2 for Linux; https://CRAN.R-project.org/ R Development Core Team, 2008), R library ‘ggplot2’ (https://cran.r-project.org/package=ggplot2 (94)) and our R package ‘Umatrix’ (https://cran.r-project.org/package=Umatrix Lötsch et al., 2018a).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Projection of data set instances consisting of samples drawn before and after the paclitaxel therapy (day 1 and day 2, respectively) from patients who on day 2 were positive or negative for clinical symptoms of neuropathy. The dots indicate the positions of single data set instances on the two-dimensional plane between PC1 and PC2. They are labeled as patient number, day of sampling (1 or 2) and neuropathy (0=negative, 1=positive). (b) PCA projection, with data points are represented by their prior class membership (Day 1 and day 2). The projection plane (dimension 2 versus dimension 1) consists of Voronoi cells around each data point, colored according to the prior class membership of the respective data point. (c) ABC analysis plot (blue line) showing the cumulative distribution function of the variables contribution to the PCA projection, along with the identity distribution, xi = constant (magenta line), that is each variable has the same contribution, and the uniform distribution, that is each variable had the same chance to contribute (for further details about cABC analysis, see Gornstein and Schwarz, 2014). The red lines indicate the borders between CABC subsets ‘A’, ‘B’ and ‘C’. (d) Contribution of each lipid marker variable to the principal components normalized for the contribution of each PC in explaining the total variance. The darker brown bars indicate the mediators that were placed in category ‘A’ by a cABC analysis of variable contributions.
+
 The results of the unsupervised analysis thus supported that the lipidomics data contained a structure contingent on a known prior classification. This supported the continuation of data analysis with supervised methods to determine which of the lipids carried relevant information to assign a probe to a particular prior class.
 
-## Results of supervised analyses identifying lipid mediators relevant to the class structure
+### Results of supervised analyses identifying lipid mediators relevant to the class structure
 
-## Lipid mediators informative for assigning samples to before or after paclitaxel therapy
+#### Lipid mediators informative for assigning samples to before or after paclitaxel therapy
 
 Based on the majority vote of the different approaches to feature selection including PCA importance and further univariate and multivariate feature selection methods, d=77 lipid mediators were found to provide relevant information on whether a sample was collected before or after paclitaxel therapy (Figure 3). When statistical (logistic regression) and machine learning (random forests, support vector machines - SVM) algorithms were trained with this set of lipid mediators, the assignment of a sample to day 1 or 2 was well above the guessing level (Table 1). By contrast, when the training data were randomly permuted, the performance fell to a balanced accuracy of 0.5, that is guessing level, which established that the obtained class assignment in the non-permuted scenario had not been due to overfitting. In addition, by rerunning the cABC analysis on the mediators assigned to subset ‘A’ in the first run (‘recursive’ cABC analysis Lötsch and Ultsch, 2023b), the informative set of lipid mediators could be further reduced to d=27 (Table 2, Table 3). With these mediators, SVM and random forest were still able to detect whether an instance of a lipidomics dataset was from before or after paclitaxel treatment at a balanced accuracy better than expected from guessing. In summary, with the top hits (‘sparse’ feature set), three different algorithms (logistic regression, random forests, support vector machines) could be trained to identify, in new cases, whether a blood sample was drawn before or after paclitaxel therapy with a median balanced accuracy of up to 90%.
 
@@ -133,15 +141,252 @@ Based on the majority vote of the different approaches to feature selection incl
 
 **Figure 3.:** Feature selection by 13 different methods. (a) Bar plot of the sum score of the number of selections for each lipid marker across the 13 methods. The colors of the bars correspond to the assignments of the lipid marker to category ‘A’ in a first cABC analysis (medium brown bars) and again to category ‘A’ in a second cABC analysis performed as a nested cABC analysis (dark brown bars). Light brown bars indicate that the marker was selected by too few methods to be considered further. (b) ABC plot (blue line) showing the cumulative distribution function of the sums of selections of each marker. The red lines show the boundaries between the CABC subsets ‘A’, ‘B’, and ‘C’. Category ‘A’ with d=77 lipid mediators is considered to include the most relevant variables for sample time discrimination. (c) ABC plot of a nested cABC analysis performed on the d=77 mediators placed in category ‘A’ by a first cABC analysis. The figure was created using Python version 3.8.12 for Linux (https://www.python.org) with the seaborn statistical data visualization package (https://seaborn.pydata.org, Waskom, 2021) and our Python package ‘ABCanalysis’ (https://pypi.org/project/cABCanalysis/).
 
-## Lipid mediators informative for assigning post-paclitaxel therapy samples to neuropathy
+**Table 1.**
+ Internal validation of the sets of lipid mediators resulting from the feature selection analysis.The different classifiers (linear support vector machine, SVM, random forests, and logistic regression) were trained with subsets of the training data set with all variables d=255 lipid mediators as ’full’ feature set and with the d=77 or d=27 lipid mediators that had resulted from the recursive cABC analysis applied on the sum score of selections by 17 different feature selection methods as ’reduced’ or ’sparse’ feature sets, respectively. The trained classifiers were applied to a validation sample comprising 20% of the data that had been removed in a class-proportional manner from the dataset at the beginning of feature selection and had not been touched until used in the classifier validation task presented in this table. In addition, the validation task was repeated with training the classifiers with permuted lipid mediators to observe possible overfitting. Shown are the medians and nonparametric 95% confidence intervals (2.5th to 97.5th percentiles) from 5x20 nested cross-validation runs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Classifier</th>
+      <th>Performance measure</th>
+      <th>Feature set</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Full</td>
+      <td>Reduced</td>
+      <td>Reduced permuted</td>
+      <td>Sparse</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of lipid mediators</td>
+      <td>255</td>
+      <td>77</td>
+      <td>77</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>Balanced accuracy</td>
+      <td>0.7 (0.48–0.92)</td>
+      <td>0.78 (0.61–1)</td>
+      <td>0.48 (0.23–0.76)</td>
+      <td>0.75 (0.54–0.91)</td>
+    </tr>
+    <tr>
+      <td>Random forests</td>
+      <td></td>
+      <td>0.7 (0.56–0.83)</td>
+      <td>0.75 (0.58–0.85)</td>
+      <td>0.46 (0.24–0.75)</td>
+      <td>0.74 (0.55–0.88)</td>
+    </tr>
+    <tr>
+      <td>Logistic regression</td>
+      <td></td>
+      <td>0.7 (0.52–0.85)</td>
+      <td>0.77 (0.58–0.92)</td>
+      <td>0.48 (0.29–0.7)</td>
+      <td>0.7 (0.49–0.89)</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>roc-auc</td>
+      <td>0.88 (0.67–1)</td>
+      <td>0.95 (0.85–1)</td>
+      <td>0.48 (0.16–0.77)</td>
+      <td>0.9 (0.81–0.99)</td>
+    </tr>
+    <tr>
+      <td>Random forests</td>
+      <td></td>
+      <td>0.86 (0.76–0.95)</td>
+      <td>0.88 (0.81–0.98)</td>
+      <td>0.48 (0.21–0.81)</td>
+      <td>0.9 (0.8–1)</td>
+    </tr>
+    <tr>
+      <td>Logistic regression</td>
+      <td></td>
+      <td>0.81 (0.64–1)</td>
+      <td>0.88 (0.75–1)</td>
+      <td>0.46 (0.16–0.79)</td>
+      <td>0.86 (0.69–0.98)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Lists of lipid mediators that were most informative in assigning a sample (i) to the first or second sampling time point or (ii) a sample from the second time point to a patient with or without neuropathy.Abbreviations: SA1P: sphinganine-1-phosphate, S1P: sphingosine-1-phosphate, LPE: lysophosphatidylethanolamine, LPC: lysophosphatidylcholine, 2-AG: 2-arachidonoylglycerol, OEA. Oleoylethanolamide.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Sample 1 versus sample 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SA1P</td>
+      <td>Sphingomyelin 42:1</td>
+      <td>Palmitic acid 16:0</td>
+      <td>Eicosaeinoic acid 20:1</td>
+      <td>PE 38:5</td>
+    </tr>
+    <tr>
+      <td>LacCeramid C16</td>
+      <td>LPE 22:6</td>
+      <td>Margaritic acid 17:0</td>
+      <td>2-AG</td>
+      <td>LPC 22:4</td>
+    </tr>
+    <tr>
+      <td>S1P</td>
+      <td>LPE 18:0 p</td>
+      <td>Sphingomyelin 42:3</td>
+      <td>OEA</td>
+      <td>Cholesterolsulfate</td>
+    </tr>
+    <tr>
+      <td>Sphingomyelin 36:3</td>
+      <td>LPE 18:0</td>
+      <td>LPC 18:0</td>
+      <td>Sphingomyelin 40:1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ceramide 18:0</td>
+      <td>LPC 20:1</td>
+      <td>LPC 18:1</td>
+      <td>Sphingomyelin 42:2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ceramide 24:0</td>
+      <td>Nervoneic acid 24:1</td>
+      <td>Dehydroepiandrosterone sulfate</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Sample 2: neuropathy versus no neuropathy</td>
+    </tr>
+    <tr>
+      <td>SA1P</td>
+      <td>Sphingomyelin 33:1</td>
+      <td>Sphingomyelin 43:1</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ External validation of the classifiers in an independent patient cohort.The different classifiers (linear support vector machine, SVM, random forests, and logistic regression) were trained with subsets of the training data set from the analysis cohort using the ‘sparse’ feature set. The trained classifiers were then applied to an independent second patient cohort. In addition, the validation task was repeated with permuted information from lipid mediators to observe possible overfitting. Shown are the medians and nonparametric 95% confidence intervals (2.5th to 97.5th percentiles) from 5x20 nested cross-validation runs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Classifier</th>
+      <th>Performance measure</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Sparse</td>
+      <td>Sparse permuted</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of lipid mediators</td>
+      <td>27</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>Balanced accuracy</td>
+      <td>0.6 (0.52–0.68)</td>
+      <td>0.5 (0.49–0.51)</td>
+    </tr>
+    <tr>
+      <td>Random forests</td>
+      <td></td>
+      <td>0.62 (0.5–0.68)</td>
+      <td>0.52 (0.37–0.65)</td>
+    </tr>
+    <tr>
+      <td>Logistic regression</td>
+      <td></td>
+      <td>0.62 (0.54–0.74)</td>
+      <td>0.51 (0.31–0.69)</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>roc-auc</td>
+      <td>0.65 (0.54–0.73)</td>
+      <td>0.51 (0.19–0.72)</td>
+    </tr>
+    <tr>
+      <td>Random forests</td>
+      <td></td>
+      <td>0.66 (0.55–0.75)</td>
+      <td>0.52 (0.24–0.76)</td>
+    </tr>
+    <tr>
+      <td>Logistic regression</td>
+      <td></td>
+      <td>0.69 (0.6–0.78)</td>
+      <td>0.49 (0.25–0.78)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Lipid mediators informative for assigning post-paclitaxel therapy samples to neuropathy
 
 The n=31 samples from day 2 were probably too small to detect whether a sample was from a patient with neuropathy. Although the three algorithms detected neuropathy in new cases, unseen during training, at balanced accuracy of up to 0.75, while only the guess level of 0.5 was achieved when using permuted data for training, the 95% CI of the performance measures was not separated from guess level. Therefore, multivariate feature selection was not considered a valid approach, since it requires that the algorithms from which the feature importance is read can successful perform their task of class assignment (Lötsch and Ultsch, 2023a). Therefore, univariate methods (Cohen’s d, FPR, FWE) were preferred, as well as a direct hypothesis transfer of the top hits from the above-mentioned day1/2 assessments to neuropathy. Classical statistics consisting of direct group comparisons using Kruskal-Wallis tests (Kruskal and Wallis, 1952) were performed. The small set of d=3 lipid mediators that emerged from all three univariate methods as top hits for neuropathy included sphingolipid sphinganine-1-phosphate (SA1P), also known as dihydrosphingosine-1-phosphate (DH-S1P) sphingomyelin 33:1, and sphingomyelin 43:1. Statistical group comparisons verified that the three mediators differed significantly between samples from neuropathy-positive and neuropathy-negative patients (Figure 4). An overview of the distribution of the entire lipid marker data is shown in Figure 4—figure supplement 1.
 
-## Biological in-vitro validation of the machine learning-based results
+![Figure 4.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig4-v1.jpg)
+
+**Figure 4.:** Individual data points are presented as dots on violin plots showing the probability density distribution of the variables, overlaid with box plots where the boxes were constructed using the minimum, quartiles, median (solid line inside the box) and maximum of these values. The whiskers add 1.5 times the interquartile range (IQR) to the 75th percentile or subtract 1.5 times the IQR from the 25th percentile. (a) Concentrations of SA1P (top hit for sample 1 versus sample 2 segregation) are presented separately for the first and second samples. (b) Concentrations of the top lipid mediators for neuropathy versus no neuropathy in the second sample presented separately for neuropathy-positive and -negative samples. The results of the group comparison statistics (Kruskal-Wallis tests Kruskal and Wallis, 1952) are given at the top of the graphs. The figure has been created using the R software package (version 4.1.2 for Linux; http://CRAN.R-project.org/, R Development Core Team, 2008) and the R library ‘ggplot2’ (https://cran.r-project.org/package=ggplot2, Wickham, 2009).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Log10-transformed concentrations of the analyzed lipid mediators presented as violin plots showing the probability density distribution of the variables. The single data points are shown as dots on overlaid on the violin plots. The presentation of the data has been arbitrarily split into two panels to enhance visibility. Sampling day 1 represents the timepoint before starting chemotherapy. Sampling day 2 represents the timepoint after 12 cycles of paclitaxel chemotherapy. The figure has been created using the R software package (version 4.1.2 for Linux; http://CRAN.R-project.org/ 1) and the R library ‘ggplot2’ (https://cran.r-project.org/package=ggplot2 2).
+
+### Biological in-vitro validation of the machine learning-based results
 
 The results of the supervised analysis thus established a limited set of lipid mediators to be regulated in association with paclitaxel therapy or with its side effect of inducing neuropathy. The top hit was sphinganine-1-phosphate (SA1P), providing a basis for in vitro validation of its biological effects in the present context of neuropathy.
 
 Calcium imaging measurements were performed on primary sensory neurons obtained from the murine dorsal root ganglia from at least four different animals. We stimulated the neurons with 1 and 10 µM SA1P (ranked as the primary hit) or LPC 24:0 (ranked as one of the least relevant lipids by machine learning analysis). We observed that SA1P caused a direct calcium transient in approximately 11.7% of KCl-responsive sensory neurons (Figure 5a and b). However, LPC 24:0 did not induce any notable activation of sensory neurons at concentration of 1 and 10 µM (Figure 5—figure supplement 1). To further characterize the SA1P-responding neurons, we investigated their responsiveness to agonists of the TRP channels TRPV1 (capsaicin) and TRPA1 (AITC, allyl isothiocyanate), both of which are hallmarks of subpopulations of primary sensory neurons (Julius, 2013). Stimulating SA1P-responsive neurons with capsaicin and AITC revealed that 73% of these neurons also responded to capsaicin and 25% of them responded to AITC, whereas only 9.6% responded to both stimuli. Neurons were identified as responders to KCl (50 mM, 1 min; Figure 5c and d).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig5-v1.jpg)
+
+**Figure 5.:** (a) Neurons were stimulated with SA1P (1 or 10 µM, 1 min or vehicle (0.7% methanol (v/v)). (b) Percentage of responding neurons to vehicle 0.7% methanol (v/v), 1 min), SA1P (1 µM, 1 min), AITC (allyl isothioncyanate, 75 µM, 30 s), or capsaicin (Cap, 200 nM, 20 s). (c) Representative traces of SA1P-responding neurons and their response to AITC, capsaicin and KCl. (d) Percentage of SA1P-responding neurons responding to AITC, capsaicin (Cap), AITC and capsaicin and KCl. Data are shown as mean ± SEM from at least six measurements per condition with at least 40 neurons per measurement, * p<0.05, ** p<0.01, *** p<0.01, One-way ANOVA.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Neurons were stimulated with LPC 24:0 (1 or 10 µM, 1 min) and depolarized with KCl (50 mM, 1 min) at the end of each experiment. (b) Statistical analysis of the amplitude of LPC 24:0-mediated calcium transients (1 µM, 1 min). (c) Statistical analysis of the number of LPC 24:0-responding neurons (as % of KCl-positives). Data represents mean ± SEM from at least five measurements per condition with at least 25 neurons per measurement, *** p<0.01, Student’s t-test with Welch’s correction.
 
 To identify the receptors or channels responsible for SA1P-mediated calcium transients in sensory neurons, the selective TRPV1 antagonist AMG9810 was used. Neurons were stimulated twice with SA1P (1 µM, 1 min) and AMG9810 (1 µM or vehicle) was added two minutes prior to the second SA1P stimulus. The second SA1P response was entirely abolished when the neurons were treated with AMG9810, but not with the vehicle (Figure 6a–c). The potency of AMG9810 was validated using the same measurement protocol as before but with capsaicin (200 nM, 20 s) instead of SA1P, which is the gold standard agonist of TRPV1. AMG9810 completely blocked the second capsaicin response (Figure 6d). The involvement of S1P-receptors previously suggested to be the receptors for SA1P (Magaye et al., 2019), was evident by studying S1PR1 and S1PR3 as the most highly expressed S1P receptors in sensory neurons (Quarta et al., 2017), which are also targets of the approved drug fingolimod. Sensory neurons were incubated with fingolimod or vehicle for one hour and stimulated the neurons with SA1P (Figure 6e and f). Comparing fingolimod- and vehicle-treated neurons, we observed that the response intensity to SA1P was similar (Figure 6g), while the number of neurons responding to SA1P was significantly decreased after fingolimod treatment (Figure 6h).
 
@@ -149,9 +394,17 @@ To identify the receptors or channels responsible for SA1P-mediated calcium tran
 
 **Figure 6.:** Sensory neurons were stimulated with SA1P twice (1 µM, 1 min) and either (a) vehicle (DMSO 0.003% (v/v), 2 min) or (b) the TRPV1 antagonist AMG9810 (1 µM, 2 min) prior to the second SA1P stimulus. Cells were depolarized with KCl (50 mM, 1 min) at the end of each experiment. (c) Statistical analysis of the amplitude of SA1P-mediated calcium transients in sensory neurons treated with either vehicle or AMG9810 (blue). (d) Statistical analysis of the amplitude of capsaicin-mediated calcium transients (Caps, 100 nM, 20 s) in sensory neurons treated with either vehicle or AMG9810 (blue). (e, f) Sensory neurons were stimulated with SA1P after preincubation with the S1P1 receptor modulator fingolimod (1 µM, 1 hr) or control. (g) Statistical analysis of the amplitude of SA1P-mediated calcium transients (1 µM, 1 min) in sensory neurons treated with either vehicle or fingolimod (1 µM, 1 hr, orange). (h) Statistical analysis of the number of SA1P-responding neurons (as % of KCl-positives) after treatment with either vehicle or fingolimod (1 µM, 1 hr, orange). Data represents mean ± SEM from at least five measurements per condition with at least 25 neurons per measurement, * p<0.05, ** p<0.01, *** p<0.01, Student’s t-test with Welch’s correction.
 
-## Support of the main results in an independent second patient cohort
+### Support of the main results in an independent second patient cohort
 
 The study lacked a separate validation cohort with similar data to the main cohort. However, an independent second cohort was available from another hospital (Oncological Center in Offenbach, Germany). This cohort consisted of 28 patients treated with the ‘paclitaxel weekly’ regimen (paclitaxel 80 mg/m², once weekly) as adjuvant or neoadjuvant therapy for breast or ovarian cancer. All patients provided informed consent into study participation and publication of the results. Blood samples were available from routine collections and were analyzed by LC-MS/MS (Figure 7—figure supplement 1, Supplementary file 3). In contrast to the main cohort, plasma from patients in the second cohort was collected after six cycles of paclitaxel treatment due to local routines. Therefore, the second cohort cannot be considered a state-of-the-art validation cohort. In addition, only six patients in this cohort had neuropathy after chemotherapy (26.5%), all with grade 1 neuropathy (Supplementary file 3). Despite these limitations, algorithms trained with lipid information from cohort 1 were able to successfully identify whether a probe was taken before or after paclitaxel therapy in the second cohort at a better than guessing level. Furthermore, a trend toward different SA1P concentrations in the plasma of patients after paclitaxel treatment was observed (p=0.086, Figure 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig7-v1.jpg)
+
+**Figure 7.:** Individual data points are presented as dots on violin plots showing the probability density distribution of the variables, overlaid with box plots where the boxes were constructed using the minimum, quartiles, median (solid line inside the box) and maximum of these values. The whiskers add 1.5 times the interquartile range (IQR) to the 75th percentile or subtract 1.5 times the IQR from the 25th percentile. (a) Concentrations of SA1P (top hit for sample 1 versus sample 2 segregation) are presented separately for the first and second samples. (b) Concentrations of S1AP in the second sample are shown separately for neuropathy-positive and -negative samples. Day 1 represents the timepoint before starting chemotherapy. Day 2 represents the timepoint after 12 cycles of paclitaxel chemotherapy. The results of the t-test group comparison statistics are given at the top of the graphs. The figure has been created using the R software package (version 4.1.2 for Linux; http://CRAN.R-project.org/, R Development Core Team, 2008) and the R library ‘ggplot2’ (https://cran.r-project.org/package=ggplot2, Wickham, 2009).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91941/elife-91941-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Log10-transformed concentrations of the analyzed lipid mediators presented as violin plots showing the probability density distribution of the variables. The single data points are shown as dots on overlaid on the violin plots. The presentation of the data has been arbitrarily split into two panels to enhance visibility. Sampling day 1 represents the timepoint before starting chemotherapy. Sampling day 2 represents the timepoint after six cycles of paclitaxel chemotherapy. The figure has been created using the R software package (version 4.1.2 for Linux; http://CRAN.R-project.org/ 1) and the R library ‘ggplot2’ (https://cran.r-project.org/package=ggplot2 2).
 
 ## Discussion
 
@@ -173,6 +426,6 @@ Several limitations need to be addressed. First, the size of our patient cohort 
 
 The identification of sphinganine-1-phosphate (SA1P) as a key lipid marker delineating the effects of paclitaxel was based on a comprehensive analysis performed by a ‘mixture of experts’ of machine learning and classical statistical methods, coupled with in vitro molecular experiments performed on sensory neurons. A rigorous validation process was applied to ensure that the results did not depend on the properties of any single statistical or AI model. This included verifying that the lipidomics data intrinsically supported the existing class structure (days 1/2) using two different data projection methods (PCA, neural network). In addition, the identification of the most relevant lipids associated with past exposure to paclitaxel relied on univariate and multivariate feature selection, and the results were verified by testing three different algorithms that finally could successfully identify from the concentrations of the top hits whether a blood sample was drawn before or after paclitaxel therapy. In addition, all data analyses were subjected to rigorous cross-validation. Results were first validated on a sample split from cohort #1 prior to any feature selection and classifier training, and again on the data from cohort #2. Then, the leading hit from machine learning, SA1P, was validated as a highly active mediator in a neuronal cell model, while a lipid maker deemed irrelevant by machine learning actually showed ineffectiveness in the cell model. The mechanistical details of altered sphingolipid metabolism reflected in their plasma concentrations of paclitaxel patients need to be investigated by further studies.
 
-## Conclusions
+### Conclusions
 
 Here, we demonstrate that the combination of state-of-the-art lipidomics using LC-MS/MS, LC-QTOF-MS, and machine learning-based data analysis can robustly lead to the generation of testable hypotheses and the identification of biologically relevant signaling mediators of neuropathy in an unbiased manner. Lipidomic profiles were compared within the same patients, allowing analysis of individual paclitaxel-induced lipidome changes in the same patients. These analyses led to the identification of a lipid mediator that can directly activate calcium transients in sensory neurons, thereby modulating nociceptive processing and sensory neuron activity. The identified SA1P, through its receptors, may provide a potential drug target for co-therapy with paclitaxel to reduce one of its major and therapy-limiting side effects.

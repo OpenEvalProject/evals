@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Department of Basic and Clinical Neuroscience, Maurice Wohl Clinical Neuroscience Institute, King’s College London London United Kingdom
-2. https://ror.org/0220mzb33 Department of Biostatistics and Health Informatics, King’s College London London United Kingdom
-3. https://ror.org/0220mzb33 NIHR Maudsley Biomedical Research Centre (BRC) at South London and Maudsley NHS Foundation Trust and King’s College London London United Kingdom
-4. https://ror.org/0220mzb33 Social, Genetic and Developmental Psychiatry Centre, Institute of Psychiatry, Psychology and Neuroscience, King’s College London London United Kingdom
-5. https://ror.org/04yn72m09 Perron Institute for Neurological and Translational Science Nedlands Australia
-6. https://ror.org/00r4sry34 Centre for Molecular Medicine and Innovative Therapeutics, Murdoch University Murdoch Australia
-7. https://ror.org/02jx3x895 Institute of Health Informatics, University College London London United Kingdom
-8. https://ror.org/03r9qc142 NIHR Biomedical Research Centre at University College London Hospitals NHS21 Foundation Trust London United Kingdom
-9. https://ror.org/044nptt90 King’s College Hospital London United Kingdom
+1. Department of Basic and Clinical Neuroscience, Maurice Wohl Clinical Neuroscience Institute, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+2. Department of Biostatistics and Health Informatics, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+3. NIHR Maudsley Biomedical Research Centre (BRC) at South London and Maudsley NHS Foundation Trust and King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+4. Social, Genetic and Developmental Psychiatry Centre, Institute of Psychiatry, Psychology and Neuroscience, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+5. Perron Institute for Neurological and Translational Science Nedlands Australia ([ROR:04yn72m09](https://ror.org/04yn72m09))
+6. Centre for Molecular Medicine and Innovative Therapeutics, Murdoch University Murdoch Australia ([ROR:00r4sry34](https://ror.org/00r4sry34))
+7. Institute of Health Informatics, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+8. NIHR Biomedical Research Centre at University College London Hospitals NHS21 Foundation Trust London United Kingdom ([ROR:03r9qc142](https://ror.org/03r9qc142))
+9. King’s College Hospital London United Kingdom ([ROR:044nptt90](https://ror.org/044nptt90))
 
 † Corresponding author
 
@@ -45,11 +45,11 @@ Accordingly, we conducted genome-wide local genetic correlation analysis across 
 
 ## Materials and methods
 
-## Sampled GWAS summary statistics
+### Sampled GWAS summary statistics
 
 We leveraged publicly accessible summary statistics from European ancestry GWAS meta-analyses of risk for AD (Kunkle et al., 2019), ALS (Van Rheenen et al., 2021), FTD (Ferrari et al., 2014), PD (Nalls et al., 2019), and schizophrenia (Trubetskoy et al., 2022). European ancestry data were selected to avoid LD mismatch between the GWAS sample and reference data from an external European population.
 
-## Procedure
+### Procedure
 
 Figure 1 summarises the analysis protocol for this study; further details are provided below.
 
@@ -57,7 +57,7 @@ Figure 1 summarises the analysis protocol for this study; further details are pr
 
 **Figure 1.:** SuSiE (sum of single effects) is a univariate fine-mapping approach implemented within the R package susieR. ‘coloc’ is an R package for bivariate colocalisation analysis between pairs of traits. h2 = heritability, rg = bivariate genetic correlation. The analysis steps shaded in blue have been implemented within a readily applied analysis pipeline available on GitHub, copy archived at Spargo, 2023.
 
-## Processing of GWAS summary statistics
+### Processing of GWAS summary statistics
 
 A standard data cleaning protocol was applied to each set of summary statistics (Pain et al., 2021). We retained only SNPs, excluding any non-SNP or strand-ambiguous variants. SNPs were filtered to those present within the 1000 Genomes phase 3 (1KG) European ancestry population reference dataset (Auton et al., 2015) (N = 503). They were matched to the 1KG reference panel by GRCh37 chromosomal position using bigsnpr (version 1.11.6) (Privé et al., 2018), harmonising allele order with the reference and assigning SNP IDs.
 
@@ -65,15 +65,15 @@ If not reported, and where possible, effective sample size (Neff) was calculated
 
 Further processing was performed where possible, excluding SNPs with p-values ≤0 or >1 and Neff >3 standard deviations from the median Neff. Imputation INFO scores indicate the probability of each genotype given the available data and reference panel - we removed variants with INFO <0.9 if indicated. We filtered to include only variants with minor allele frequency (MAF) ≥0.005 in both the reference and GWAS samples and excluded SNPs with an absolute MAF difference of >0.2 between the two.
 
-## Genome-wide analyses
+### Genome-wide analyses
 
-## Global heritability and genetic correlations
+#### Global heritability and genetic correlations
 
 LDSC (version 1.0.1) (Bulik-Sullivan et al., 2015; Bulik-Sullivan et al., 2015) was applied to estimate genome-wide univariate heritability (h2) for each trait on the liability scale. The software was also applied to derive ‘global’ (i.e., genome-wide) genetic correlation estimates between trait pairs and estimate sample overlap from the bivariate intercept. The latter of these outputs was taken forward as an input for the local genetic correlation analysis using LAVA (see 2.2.2.2). Since global genetic correlation analysis across the traits studied here is not novel and associations reported in past studies are congruent across different tools (Wainberg et al., 2023), the compatibility between LDSC and LAVA motivated our use of LDSC for this analysis.
 
 These analyses were performed using the HapMap3 (Altshuler et al., 2010) SNPs and the LD score files provided with the software, calculated in the 1KG European population. No further MAF filter was applied (therefore variants with MAF ≥0.005 were included) and the other settings were left to their defaults.
 
-## Local genetic correlation analysis
+#### Local genetic correlation analysis
 
 LAVA (version 0.1.0) (Werme et al., 2022) was applied to obtain local genetic correlation estimates across 2495 approximately independent blocks delineating the genome, based on patterns in LD. We used the blocks provided alongside the LAVA software which were derived from the 1KG European cohort. Bivariate intercepts from LDSC were provided to LAVA to estimate sample overlap between trait pairs.
 
@@ -81,9 +81,9 @@ LAVA was the most appropriate local genetic correlation approach for this study 
 
 In accordance with prior studies, genetic correlation analysis was performed following an initial filtering step. Univariate heritability was estimated for each genomic block across SNPs in-common between a pair of traits, and only loci with local h2 p-values below a threshold of 2.004 × 10−5 (0.05/2495) in both traits continued to the bivariate analysis. This step ensures that univariate heritability is sufficient in both traits for a robust correlation estimate.
 
-## Targeted genetic analyses
+### Targeted genetic analyses
 
-## Fine-mapping and colocalisation analysis
+#### Fine-mapping and colocalisation analysis
 
 Statistical fine-mapping and colocalisation techniques were applied to further analyse associations between trait pairs in regions where the false discovery rate (FDR) adjusted p-value of local genetic correlation analysis was below 0.05 (after adjusting for all bivariate comparisons performed). Additional analysis was conducted at loci where significant correlations occurred between two trait pairs but not between the final pairwise comparison across the three implicated traits.
 
@@ -91,7 +91,7 @@ Fine-mapping was performed with susieR (v0.12.27) (Zou et al., 2022; Wang et al.
 
 Colocalisation analysis was implemented with coloc (v5.1.0.1) (Wallace, 2021; Giambartolomei et al., 2018; Giambartolomei et al., 2014), which calculates posterior probabilities that a causal variant exists for neither, one, or both of two compared traits, testing also whether evidence for a causal variant in both traits suggests a shared variant (i.e., hypothesis 4 (H4); colocalisation) or independent signals (hypothesis 3 (H3)). Colocalisation analyses can be performed across all variants sampled in a region, under an assumption of at most one variant implicated per trait. It can also be performed using variants attributed to pairs of credible sets from SuSiE, relaxing the single variant assumption (Wallace, 2021). When evidence of a shared variant is found, the individual SNPs with the highest posterior probability of being that variant can be assessed. With a 95% confidence threshold, these are termed 95% credible SNPs.
 
-## Analysis pipeline
+### Analysis pipeline
 
 We conducted colocalisation and fine-mapping analysis within an open-access pipeline developed for this study using R (v4.2.2) (R Development Core Team, 2021): https://github.com/ThomasPSpargo/COLOC-reporter, copy archived at Spargo, 2023.
 
@@ -103,7 +103,7 @@ Fine-mapping is performed for each dataset with the coloc package runsusie funct
 
 Analysis parameters can be adjusted by the user in accordance with their needs. Various utilities are included to help interpretation of fine-mapping and colocalisation results, including identification of genes nearby to putatively causal signals, HTML reports to summarise completed analyses, and figures to visualise the results and compare the examined traits.
 
-## Current implementation
+### Current implementation
 
 In this study, LD correlation matrices were derived from the 1KG European cohort. SNPs flagged for potential allele flip issues in either of the compared traits were removed from the analysis. Fine-mapping was performed with the susie_rss refine=TRUE option to avoid local maxima during convergence of the algorithm, leaving the other settings to the runsusie defaults. Colocalisation analysis was performed using the default priors for coloc.susie (p1 = 1 × 10−4, p2 = 1 × 10−4, p12 = 5 × 10−6).
 
@@ -111,9 +111,73 @@ Colocalisation and fine-mapping analyses were performed initially using the geno
 
 ## Results
 
-## Genome-wide analyses
+### Genome-wide analyses
 
 Descriptive information and heritability estimates for the sampled traits and GWAS are presented in Table 1. ALS had nominally significant global genetic correlations with schizophrenia (p = 0.045), PD (p = 0.013), and AD (p = 0.006); no other bivariate genome-wide correlations were statistically significant (see Figure 2).
+
+**Table 1.**
+ Genome-wide association studies (GWAS) sampled.Each GWAS is a GWAS meta-analysis of disease risk across people of European ancestry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Trait</th>
+      <th rowspan="2">Estimated lifetime risk in population</th>
+      <th colspan="3">GWAS</th>
+      <th rowspan="2">Liability scale h2 (standard error)</th>
+    </tr>
+    <tr>
+      <th>Reference</th>
+      <th>N cases</th>
+      <th>N controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alzheimer’s disease</td>
+      <td>1/10, Chêne et al., 2015†</td>
+      <td>Kunkle et al., 2019</td>
+      <td>21,982</td>
+      <td>41,944</td>
+      <td>0.093 (0.0155)</td>
+    </tr>
+    <tr>
+      <td>Amyotrophic lateral sclerosis</td>
+      <td>1/350, Alonso et al., 2009; Johnston et al., 2006</td>
+      <td>Van Rheenen et al., 2021</td>
+      <td>27,205</td>
+      <td>110,881</td>
+      <td>0.0277 (0.003)</td>
+    </tr>
+    <tr>
+      <td>Frontotemporal dementia</td>
+      <td>1/742, Coyle-Gilchrist et al., 2016</td>
+      <td>Ferrari et al., 2014</td>
+      <td>2154</td>
+      <td>4308</td>
+      <td>0.0329 (0.0283)</td>
+    </tr>
+    <tr>
+      <td>Parkinson’s disease</td>
+      <td>1/37, Parkinson’s, 2017</td>
+      <td>Nalls et al., 2019</td>
+      <td>15,056(+18,618 proxies*)</td>
+      <td>449,056</td>
+      <td>0.0506 (0.0046)</td>
+    </tr>
+    <tr>
+      <td>Schizophrenia</td>
+      <td>1/250, Saha et al., 2005</td>
+      <td>Trubetskoy et al., 2022</td>
+      <td>53,386</td>
+      <td>77,258</td>
+      <td>0.1761 (0.0061)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Proxy cases from the UK Biobank Cohort.†Estimated from cumulative risk after age 45 after correcting for competing risk of mortality and assuming a lifespan of ~85 years. h2 = heritability._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88768/elife-88768-fig2-v1.jpg)
 
@@ -121,15 +185,244 @@ Descriptive information and heritability estimates for the sampled traits and GW
 
 A total of 605 local genetic correlation analyses were performed across all trait pairs in genomic regions where both traits passed the univariate heritability filtering step after restricting to SNPs sampled in both GWAS (see Table 2; Figure 3; Supplementary file 1a). The number of loci passing to bivariate analysis varied greatly across trait pairs and was congruent with the genome-wide heritability estimates (and their uncertainty) for each trait, reflecting differences in phenotypic variance explained by measured genetic variants and statistical power for each GWAS (see Table 1).
 
-## Targeted genetic analyses
+**Table 2.**
+ Comparison of genome-wide SNP significance against local genetic correlation significance thresholds in all trait pairs and loci analysed.All loci analysed showed sufficient local univariate heritability across compared traits to allow bivariate correlation analysis. Subsequent fine-mapping and colocalisation analyses were performed in this study for regions with at least a false discovery rate (FDR) adjusted significance for the local genetic correlation. SNP = single-nucleotide polymorphism.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Number of traits in pair with genome-wide significant (p &lt; 5 × 10−8) SNP in locus</th>
+      <th colspan="4">Smallest significance threshold for local genetic correlation</th>
+    </tr>
+    <tr>
+      <th>Bonferroni (p &lt; 8.26 × 10−5; 0.05/605)</th>
+      <th>FDR (pfdr &lt; 0.05)</th>
+      <th>Nominal (p &lt; 0.05)</th>
+      <th>Non-significant(p ≥ 0.05)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>17</td>
+      <td>77</td>
+      <td>394</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>18</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88768/elife-88768-fig3-v1.jpg)
+
+**Figure 3.:** The lower panel displays a heatmap of genetic correlations (rg) across genomic regions where any bivariate analyses were performed; white colouring indicates that the region was not analysed for a given trait pair owing to insufficient univariate heritability in one or both traits. The upper panel shows a Manhattan plot of p-values from each correlation analysis, denoting trait pairs by colour and comparisons passing defined significance thresholds by shape (square for a strict Bonferroni threshold and triangle for a false discovery rate [FDR] adjusted threshold); the hatched line indicates the threshold p-value above which pfdr < 0.05. The panels are both ordered by relative genomic position, with bars above and below indicating each chromosome. AD = Alzheimer’s disease, ALS = amyotrophic lateral sclerosis, FTD = frontotemporal dementia, PD = Parkinson’s disease, SZ = schizophrenia. Supplementary file 1a provides a complete summary of local genetic correlation analyses performed. Twenty-six bivariate comparisons were significant following FDR adjustment (pfdr < 0.05), two of which also passed the stringent Bonferroni threshold (p < 8.26 × 10−5; 0.05/605). While some regions included genome-wide significant single-nucleotide polymorphisms (SNPs) (p < 5 × 10−8) for one or both traits, others occurred in regions where genome-wide association studies (GWAS) associations were weaker (see Table 2). Five of these associations occurred at loci within the human leukocyte antigen (HLA) region (GRCh37: Chr6:28.48–33.45 Mb; 6p22.1–21.3, Genome Reference Consortium, 2023), and all five traits were implicated in at least one of these.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88768/elife-88768-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Distribution of genetic correlation estimates (rg) and p-values across trait pairs in local genetic correlation analysis. Trait pairs are denoted by colour and comparisons passing defined significance thresholds are denoted by shape (square for a strict Bonferroni threshold and triangle for a false discovery rate [FDR] adjusted threshold); the hatched line indicates the threshold p-value above which pfdr < 0.05. (B) Boxplots comparing FDR-significant loci with positive and negative local genetic correlations. Sub-panels are split row-wise by comparison measure: ‘−log10 p(A)’ and ‘−log10 p(B)’ show the p-value for the most significant variant in a given locus for each of the two analysed traits, with ‘A’ being the trait with more-significant and ‘B’ less-significant top variant; ‘Absolute rg’ shows the absolute correlation coefficient for the local genetic correlation between trait pairs in a given locus. The leftmost column of sub-panels displays the results across all significant loci and remaining columns split data by the number of traits in the pair with at least one fine-mapping credible set identified at that locus.
+
+### Targeted genetic analyses
 
 Univariate fine-mapping and bivariate colocalisation analyses were subsequently performed to test for variants jointly implicated between trait pairs in regions with local genetic correlation pfdr < 0.05. The ALS and schizophrenia trait pair was additionally examined at Chr6:32.22–32.45 Mb because significant genetic correlations were found between ALS and FTD and between schizophrenia and FTD at this locus. The correlation between ALS and schizophrenia at this locus had not been analysed owing to insufficient univariate heritability for ALS after restricting to SNPs in common with the schizophrenia GWAS.
 
 Fine-mapping identified at least one 95% credible set for each of the compared traits for 7 of the 27 comparisons performed (see Table 3), and for one trait only in a further 5 (see Supplementary file 1b; Supplementary file 1c). This analysis suggested two credible sets for schizophrenia in the Chr12:56.99–58.75 Mb locus, for AD in Chr6:32.45–32.54 Mb, and (only when harmonised to SNPs in common with the ALS GWAS) for FTD in Chr6:32.22–32.45 Mb (see Supplementary file 1c). Although both positive and negative local genetic correlations passed the FDR-adjusted significance threshold, we observed only positive local genetic correlations in loci where fine-mapping credible sets were identified for both traits in the pair. This reflects that the absolute correlation coefficients and variant associations from the analysed GWAS studies were generally stronger in the positively correlated loci (see Figure 3—figure supplement 1).
 
+**Table 3.**
+ Colocalisation analysis conducted across 95% credible sets identified during univariate fine-mapping of trait pairs.N SNPs refer to the number of SNPs present for both traits and the 1000 Genomes reference panel in the region within colocalisation and fine-mapping analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Trait</th>
+      <th rowspan="2">Genomic position (GRCh37)</th>
+      <th rowspan="2">Local genetic correlation estimate (95% confidence interval)</th>
+      <th colspan="2">Fine-mapping credible set for trait</th>
+      <th rowspan="2">N SNPs</th>
+      <th colspan="2">SNP with highest PIP for fine-mapping credible set (nearest gene; sense-strand base pair distance)</th>
+      <th colspan="5">Posterior probability for hypothesis¶</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>1</th>
+      <th>2</th>
+      <th>Trait 1</th>
+      <th>Trait 2</th>
+      <th>H0</th>
+      <th>H1</th>
+      <th>H2</th>
+      <th>H3</th>
+      <th>H4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AD</td>
+      <td>PD</td>
+      <td>Chr6:32576785–32639239†</td>
+      <td>0.406 (0.197, 0.648)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>958</td>
+      <td>rs9271247(HLA-DQA1; +15,844)</td>
+      <td>rs3129751(HLA-DQA1; +13,767)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>0.95</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>ALS</td>
+      <td>AD</td>
+      <td>Chr6:32629240–32682213*</td>
+      <td>0.974 (0.717, 1.000)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>475</td>
+      <td>rs9275477‡(MTCO3P1; +1260)</td>
+      <td>rs9275207 (MTCO3P1; +16,191)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>0.10</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ALS</td>
+      <td rowspan="2">FTD</td>
+      <td rowspan="2">Chr6:32208902–32454577§</td>
+      <td rowspan="2">0.723 (0.370, 1.000)</td>
+      <td rowspan="2">1</td>
+      <td>1</td>
+      <td rowspan="2">1709</td>
+      <td rowspan="2">rs9268833(HLA-DRB9; 0)</td>
+      <td>rs1980493 (BTNL2; 0)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>0.01</td>
+      <td>0.99</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>rs9767620(HLA-DRB9; +1498)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>0.01</td>
+      <td>0.99</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ALS</td>
+      <td rowspan="3">SZ</td>
+      <td>Chr6:32208902–32454577§</td>
+      <td>-</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1711</td>
+      <td>rs9268833 (HLA-DRB9; 0)</td>
+      <td>rs9268219 (C6orf10; 0)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>0.98</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Chr12:56987106–58748139</td>
+      <td rowspan="2">0.506 (0.218, 0.807)</td>
+      <td rowspan="2">1</td>
+      <td>1</td>
+      <td rowspan="2">2260</td>
+      <td rowspan="2">rs113247976 (KIF5A; 0)</td>
+      <td>rs12814239(LRP1; 0)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>1.00</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>rs324017 (NAB2; 0)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>1.00</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>PD</td>
+      <td>SZ</td>
+      <td>Chr17:43460501–44865832</td>
+      <td>0.595 (0.266, 0.950)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2453</td>
+      <td>rs58879558 (MAPT; 0)</td>
+      <td>rs62062288 (MAPT; 0)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>0.81</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>SZ</td>
+      <td>FTD</td>
+      <td>Chr6:32208902–32454577§</td>
+      <td>0.669 (0.379, 0.990)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1657</td>
+      <td>rs9268219 (C6orf10; 0)</td>
+      <td>rs9268877 (HLA-DRB9; 0)</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>1.00</td>
+      <td>&lt;0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Indicates comparisons with genetic correlation analysis p < 8.26 × 10−5 (0.05/605).†Denotes locus extended by ±10 kb for fine-mapping and colocalisation analysis.‡Variant identified in colocalisation as having the highest posterior probability of being shared variant assuming hypothesis 4 is true (see Figure 4).§Differences in fine-mapping solutions across trait pairs in the Chr6:32.21–32.45 Mb locus reflect differences in the SNPs retained after restricting to those in common between the compared genome-wide association studies (GWAS).¶H0 = no causal variant for either trait, H1 = variant causal for trait 1, H2 = variant causal for trait 2, H3 = distinct causal variants for each trait, H4 = a shared causal variant between traits. PIP = posterior inclusion probability, AD = Alzheimer’s disease, ALS = amyotrophic lateral sclerosis, FTD = frontotemporal dementia, PD = Parkinson’s disease, SZ = schizophrenia._
+
 Colocalisation analyses performed across fine-mapping credible sets and across all SNPs in a region generally gave support to the equivalent hypothesis (Table 3; Supplementary file 1b). Moreover, comparisons suggesting a signal was present in one trait only were largely concordant with the identification of fine-mapping credible sets in only that trait (Supplementary file 1b). Figure 4—figure supplement 1 compares per-SNP p-values across trait pairs for comparisons with evidence of a relevant signal in both traits. Figure 4—figure supplement 2 shows patterns of LD across SNPs assigned to credible sets for these analyses.
 
 Strong evidence was found for a shared variant between ALS and AD within the Human leukocyte antigen (HLA) region (posterior probability of shared variant = 0.9; see Figure 4). The 95% credible SNPs for this association were distributed around the MTCO3P1 pseudogene and rs9275477, the lead genome-wide significant SNP from the ALS GWAS in this region, had the highest posterior probability of being implicated in both traits. Figure 4—figure supplement 3 presents sensitivity analysis showing that the result is robust to a range of values for the shared-variant hypothesis prior probability.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88768/elife-88768-fig4-v1.jpg)
+
+**Figure 4.:** (A) Single-nucleotide polymorphism (SNP)-wise p-value distribution between ALS and AD across Chr6:32.63–32.68 Mb, in which colocalisation analysis found 0.90 posterior probability of the shared-variant hypothesis (see Table 3). (B) (upper) Per-SNP posterior probabilities for being a shared variant between ALS and AD, (lower) positions of HGNC gene symbols nearby to the 95% credible SNPs. Posterior probabilities for being a shared-variant sum to 1 across all SNPs analysed and are predicated on the assumption that a shared variant exists; 95% credible SNPs are those spanned by the top 0.95 of posterior probabilities. The x-axis for Panel B is truncated by the base pair range of the credible SNPs and genomic positions are based on GRCh37.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88768/elife-88768-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Colocalisation analysis supported the shared-variant hypothesis for the comparison in (A), and the presence of distinct variants for each trait in (B-G) (see Table 3). Colouring indicates fine-mapping credible sets assigned to SNPs across the traits compared; the legend above each panel is in the format 'Trait: credible set number'. The genomic position range shown above each panel is in Mb. AD = Alzheimer’s disease, ALS = amyotrophic lateral sclerosis, FTD = frontotemporal dementia, PD = Parkinson’s disease, SZ = schizophrenia.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88768/elife-88768-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** LD is shown relative to the single-nucleotide polymorphisms (SNPs) with the highest posterior inclusion probability (PIP) for each credible set, displaying all top PIP SNPs when ties occur. The y-axis splits by top PIP SNPs and the x-axis displays SNPs ordered by genomic position, marking only the positions of the top PIP SNPs. Credible set assignments for each variant are shown in the colour bar at the top of each panel and for the top PIP SNPs in the y-axis label; these are annotated in the format: ‘trait: credible set number’. The genomic range indicated at the top right of each panel refers to the positions spanned across all SNPs analysed and is in Mb. AD = Alzheimer’s disease, ALS = amyotrophic lateral sclerosis, FTD = frontotemporal dementia, PD = Parkinson’s disease, SZ = schizophrenia.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/88768/elife-88768-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The upper panels display analysis at Chr6:32629240–32682213 between amyotrophic lateral sclerosis (ALS) and Alzheimer’s disease (AD). The lower panels are for Chr17:43460501–44865832 between Parkinson’s disease (PD) and schizophrenia (SZ). Panels labelled ‘coloc.abf’ display analysis across all single-nucleotide polymorphisms (SNPs) in the region and ‘coloc.susie’ indicates analysis across the SNPs within the pair of fine-mapping credible sets identified across trait pairs. Plot points indicate posterior probability of each hypothesis (H0 = no causal variant for either trait, H1 = variant causal for the trait one, H2 = variant causal for trait two, H3 = distinct causal variants for each trait, H4 = a shared causal variant between traits), according to the prior probability of H4. The vertical hatched line indicates the prior H4 probability defined for the reported analysis; the black horizontal line indicates the defined threshold for acceptance of H4: posterior H4 probability >0.8. Cream shading of the plot area indicates prior H4 probabilities which yield a posterior probability of H4 above the threshold.
 
 The other comparisons that found fine-mapping credible sets in both traits suggested that overlaps from the correlation analysis were driven by distinct causal variants (see Table 3; Supplementary file 1b).
 

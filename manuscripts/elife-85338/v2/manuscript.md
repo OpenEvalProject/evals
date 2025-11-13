@@ -13,20 +13,20 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 School of Global Public Health, New York University New York United States
-2. https://ror.org/008s83205 Department of Obstetrics and Gynecology, Heersink School of Medicine, University of Alabama at Birmingham Birmingham United States
-3. https://ror.org/046rm7j60 Division of General Internal Medicine and Health Services Research, University of California, Los Angeles Los Angeles United States
+1. School of Global Public Health, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Department of Obstetrics and Gynecology, Heersink School of Medicine, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+3. Division of General Internal Medicine and Health Services Research, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 4. PCOS Challenge: The National Polycystic Ovary Syndrome Atlanta United States
-5. https://ror.org/046rm7j60 Department of Obstetrics and Gynecology, University of California, Los Angeles Los Angeles United States
-6. https://ror.org/012zs8222 Department of Health Policy, Management and Behavior, University at Albany, State University of New York Rensselaer United States
-7. https://ror.org/008s83205 Department of Medicine, Heersink School of Medicine, University of Alabama at Birmingham Birmingham United States
-8. https://ror.org/008s83205 Department of Healthcare Organization and Policy, School of Public Health, University of Alabama at Birmingham Birmingham United States
+5. Department of Obstetrics and Gynecology, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+6. Department of Health Policy, Management and Behavior, University at Albany, State University of New York Rensselaer United States ([ROR:012zs8222](https://ror.org/012zs8222))
+7. Department of Medicine, Heersink School of Medicine, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+8. Department of Healthcare Organization and Policy, School of Public Health, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
 
 † Corresponding author
 
 ## Abstract
 
-Polycystic ovary syndrome (PCOS) is the most common hormone disorder affecting about one in seven reproductive-aged women worldwide and approximately 6 million women in the United States (U.S.). PCOS can be a significant burden to those affected and is associated with an increased prevalence of mental health (MH) disorders such as depression, anxiety, eating disorders, and postpartum depression. We undertook this study to determine the excess economic burden associated with MH disorders in women with PCOS in order to allow for a more accurate prioritization of the disorder as a public health priority. Following PRISMA reporting guidelines for systematic review, we searched PubMed, Web of Science, EBSCO, Medline, Scopus, and PsycINFO through July 16, 2021, for studies on MH disorders in PCOS. Excluded were studies not in humans, without controls, without original data, or not peer reviewed. As anxiety, depression, eating disorders, and postpartum depression were by far the most common MH disorders assessed by the studies, we performed our meta-analysis on these disorders. Meta-analyses were performed using the DerSimonian–Laird random effects model to compute pooled estimates of prevalence ratios (PRs) for the associations between PCOS and these MH disorders and then calculated the excess direct costs related to these disorders in U.S. dollars (USD) for women suffering from PCOS in the U.S. alone. The quality of selected studies was assessed using the Newcastle-Ottawa Scale. We screened 78 articles by title/abstract, assessed 43 articles in full text, and included 25 articles. Pooled PRs were 1.42 (95% confidence interval [CI]: 1.32–1.52) for anxiety, 1.65 (95% CI: 1.44–1.89) for depression, 1.48 (95% CI: PR: 1.06–2.05) for eating disorders, and 1.20 (95% CI: 0.96–1.50) for postpartum depression, for PCOS relative to controls. In the U.S., the additional direct healthcare costs associated with anxiety, depression, and eating disorders in PCOS were estimated to be $1.939 billion/yr, $1.678 billion/yr, and $0.644 billion/yr in 2021 USD, respectively. Postpartum depression was excluded from the cost analyses due to the non-significant meta-analysis result. Taken together, the additional direct healthcare costs associated with anxiety, depression, and eating disorders in PCOS were estimated to be $4.261 billion/yr in 2021 USD. Overall, the direct healthcare annual costs for the most common MH disorders in PCOS, namely anxiety, depression, and eating disorders, exceeds $4 billion in 2021 USD for the U.S. population alone. Taken together with our prior work, these data suggest that the healthcare-related economic burden of PCOS exceeds $15 billion yearly, considering the costs of PCOS diagnosis, and costs related to PCOS-associated MH, reproductive, vascular, and metabolic disorders. As PCOS has much the same prevalence across the world, the excess economic burden attributable to PCOS globally is enormous, mandating that the scientific and policy community increase its focus on this important disorder. The study was supported, in part, by PCOS Challenge: The National Polycystic Ovary Syndrome Association and by the Foundation for Research and Education Excellence
+Background:Polycystic ovary syndrome (PCOS) is the most common hormone disorder affecting about one in seven reproductive-aged women worldwide and approximately 6 million women in the United States (U.S.). PCOS can be a significant burden to those affected and is associated with an increased prevalence of mental health (MH) disorders such as depression, anxiety, eating disorders, and postpartum depression. We undertook this study to determine the excess economic burden associated with MH disorders in women with PCOS in order to allow for a more accurate prioritization of the disorder as a public health priority.Methods:Following PRISMA reporting guidelines for systematic review, we searched PubMed, Web of Science, EBSCO, Medline, Scopus, and PsycINFO through July 16, 2021, for studies on MH disorders in PCOS. Excluded were studies not in humans, without controls, without original data, or not peer reviewed. As anxiety, depression, eating disorders, and postpartum depression were by far the most common MH disorders assessed by the studies, we performed our meta-analysis on these disorders. Meta-analyses were performed using the DerSimonian–Laird random effects model to compute pooled estimates of prevalence ratios (PRs) for the associations between PCOS and these MH disorders and then calculated the excess direct costs related to these disorders in U.S. dollars (USD) for women suffering from PCOS in the U.S. alone. The quality of selected studies was assessed using the Newcastle-Ottawa Scale.Results:We screened 78 articles by title/abstract, assessed 43 articles in full text, and included 25 articles. Pooled PRs were 1.42 (95% confidence interval [CI]: 1.32–1.52) for anxiety, 1.65 (95% CI: 1.44–1.89) for depression, 1.48 (95% CI: PR: 1.06–2.05) for eating disorders, and 1.20 (95% CI: 0.96–1.50) for postpartum depression, for PCOS relative to controls. In the U.S., the additional direct healthcare costs associated with anxiety, depression, and eating disorders in PCOS were estimated to be $1.939 billion/yr, $1.678 billion/yr, and $0.644 billion/yr in 2021 USD, respectively. Postpartum depression was excluded from the cost analyses due to the non-significant meta-analysis result. Taken together, the additional direct healthcare costs associated with anxiety, depression, and eating disorders in PCOS were estimated to be $4.261 billion/yr in 2021 USD.Conclusions:Overall, the direct healthcare annual costs for the most common MH disorders in PCOS, namely anxiety, depression, and eating disorders, exceeds $4 billion in 2021 USD for the U.S. population alone. Taken together with our prior work, these data suggest that the healthcare-related economic burden of PCOS exceeds $15 billion yearly, considering the costs of PCOS diagnosis, and costs related to PCOS-associated MH, reproductive, vascular, and metabolic disorders. As PCOS has much the same prevalence across the world, the excess economic burden attributable to PCOS globally is enormous, mandating that the scientific and policy community increase its focus on this important disorder.Funding:The study was supported, in part, by PCOS Challenge: The National Polycystic Ovary Syndrome Association and by the Foundation for Research and Education Excellence
 
 ## Introduction
 
@@ -38,23 +38,23 @@ In order to allow for a more accurate prioritization of the disorder as a public
 
 ## Materials and methods
 
-## Systematic review
+### Systematic review
 
 A systematic review was performed, adhering to the Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) Statement and Checklist (https://www.prisma-statement.org/), for reports examining the relationship of MH disorders and PCOS through July 16, 2021. The systematic review was conducted on the six English databases (i.e., PubMed, Web of Science, EBSCO, Medline, Scopus, and PsycINFO). The following keywords were used (mental health OR mental illness OR mental disorder OR psych* OR anxiety OR depression OR quality of life OR eating disorder OR bulimia OR postpartum depression) AND ('cost* OR 'economic burden' OR 'cost-of-illness OR 'burden of illness'), "Depressive Disorder/economics"[MAJR], "PCOS" AND "economic burden" OR "costs" OR "cost-of-illness" OR "burden of illness", "PCOS" AND "economic burden" AND "mental health", ‘polycystic ovary syndrome’ AND ‘anxiety, "Polycystic Ovary Syndrome/psychology"[MAJR] (Supplementary file 1; Azziz, 2023).
 
-## Study eligibility criteria
+### Study eligibility criteria
 
 Studies were eligible for inclusion if they: (1) were original peer-reviewed academic articles; and (2) were observational studies that presented accurate and precise data regarding the risk, including reporting relative risks, odds ratios (ORs), hazard ratios, or prevalence or incidence rates, of MH disorders in women with PCOS compared with a control group. MH disorders included depressive disorders, such as major depression disorder, dysthymia, minor depression or subclinical/subthreshold depression, or affective disorders containing depressive disorders, emotional distress, eating disorders, or mood and anxiety disorders. In the case of repeatedly published and studied literature based on the same batch of data or sample population, the most recent studies with the complete dataset were included. Studies were excluded if they: (1) were based on non-human species; (2) did not have full text available; (3) did not include a control group; (4) reported solely on diseases other than PCOS; or (5) were reviews, letters, or commentaries.
 
-## Study selection and data extraction
+### Study selection and data extraction
 
 Search strategy and study identification were performed by one investigator (S.Y.) using a standardized approach. Articles selected for inclusion were then screened by four authors (O.D., A.B., S.Y., and D.M.). Further, four investigators worked to independently extract data on study characteristics and outcomes (A.B., S.Y., O.D., and D.M.). Disagreements were discussed until consensus was reached.
 
-## Quality assessment
+### Quality assessment
 
 Four investigators worked in duplicate to independently assess the quality of eligible studies using the Newcastle-Ottawa Scale (S.Y., O.D., A.B., and R.A.) (https://www.ohri.ca/programs/clinical_epidemiology/oxford.asp).
 
-## Statistical analysis
+### Statistical analysis
 
 Following the systematic search, the data were submitted to a meta-analysis to estimate the degree of relationship between PCOS and four dichotomous outcomes including anxiety, depression, eating disorders, and postpartum depression. The meta-analysis was performed using the DerSimonian–Laird random effects model (DerSimonian and Laird, 1986) and the results of the analyses were summarized using the pooled PR and its 95% confidence intervals (CIs) for each of the above outcomes.
 
@@ -74,45 +74,97 @@ A total of 2018 studies were identified during the initial literature review, of
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85338/elife-85338-fig1-v2.jpg)
 
-## Excess prevalence of anxiety in women with PCOS
+### Excess prevalence of anxiety in women with PCOS
 
 Twelve studies, all assessed as ‘high quality’ (Supplementary file 2e), were initially identified, measuring an association between anxiety and PCOS (Alur-Gupta et al., 2019; Tan et al., 2017; Karjula et al., 2017; Tay et al., 2020; Kaur et al., 2019; Asik et al., 2015; Cesta et al., 2016; Hussain et al., 2015; Månsson et al., 2008; Jedel et al., 2010; Li et al., 2017; Damone et al., 2019). However, only ten studies were included in the meta-analysis, as two studies were excluded due to the lack of prevalence data (Jedel et al., 2010; Li et al., 2017). Compared to age-matched women without PCOS, those with PCOS had a higher prevalence of anxiety in the meta-analysis (random effects PR: 1.42; 95% CI: 1.32, 1.52; I2 43.82%; Figure 2A). For our economic burden calculations, we considered PCOS patients as having a 1.42-fold greater risk of anxiety compared to those without PCOS.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85338/elife-85338-fig2-v2.jpg)
+
+**Figure 2.:** Forest plots (random effects model) of risk of mental health disorders in women with PCOS, including anxiety (A), depression (B), eating disorders (C), and postpartum depression (D). See text for abbreviations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85338/elife-85338-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Trim and fill funnel plots (X axis is the log prevalence ratio/risk ratio; Y axis is the standard error of the log prevalence ratio/risk ratio) include 10 high-quality studies for anxiety. Observed studies are indicated by solid circles, and ‘filled’ studies are indicated by open circles.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85338/elife-85338-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Trim and fill funnel plots (X axis is the log prevalence ratio/risk ratio; Y axis is the standard error of the log prevalence ratio/risk ratio) include 10 high-quality studies for depression. Observed studies are indicated by solid circles, and ‘filled’ studies are indicated by open circles.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85338/elife-85338-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Trim and fill funnel plots (X axis is the log prevalence ratio/risk ratio; Y axis is the standard error of the log prevalence ratio/risk ratio) include six high-quality studies for eating disorders. Observed studies are indicated by solid circles, and ‘filled’ studies are indicated by open circles.
+
 Considering that comparably aged women of the general population have a prevalence of anxiety of 9.15%, the overall prevalence of anxiety in women with PCOS can be estimated to be 1.42 × 9.15% = 12.99%. The excess prevalence of anxiety due to PCOS is therefore 12.99–9.15% = 3.84%; the excess number of anxiety cases due to PCOS is 5,631,459 × 3.84% = 216,248 individuals.
 
-## Excess prevalence of depression in women with PCOS
+### Excess prevalence of depression in women with PCOS
 
 While 15 studies were initially identified (Alur-Gupta et al., 2019; Tan et al., 2017; Karjula et al., 2017; Tay et al., 2020; Kaur et al., 2019; Asik et al., 2015; Cesta et al., 2016; Hussain et al., 2015; Månsson et al., 2008; Damone et al., 2019; Hollinrake et al., 2007; Pastore et al., 2011; Cinar et al., 2011; Adali et al., 2008), we used only the 10 studies assessed as being of ‘high quality’ (Supplementary file 2e) for the meta-analysis. Compared to age-matched women without PCOS, those with PCOS had a higher prevalence of depression in the meta-analysis (random effects PR: 1.65; 95% CI: 1.44, 1.89; I2 63.0%; Figure 2B). For our economic burden calculations, we considered PCOS patients as having a 1.65-fold greater risk of depression compared to those without PCOS.
 
 Considering that comparably aged women of the general population have a prevalence of depression of 8.9%, the overall prevalence of depression in women with PCOS can be estimated to be 1.65 × 8.9% = 14.69%. The excess prevalence of depression due to PCOS is therefore 14.69–8.9% = 5.79%; the excess number of depression cases due to PCOS is 4,528,088 × 5.79% = 262,176 individuals.
 
-## Excess prevalence of eating disorders in women with PCOS
+### Excess prevalence of eating disorders in women with PCOS
 
 Six studies, all assessed as ‘high quality’ (Supplementary file 2e), were included for an association between eating disorders and PCOS (Karjula et al., 2017; Tay et al., 2020; Hussain et al., 2015; Damone et al., 2019; Adali et al., 2008; Lee et al., 2017). Compared to age-matched women without PCOS, those with PCOS had a higher prevalence of eating disorders in the meta-analysis (random effects PR: 1.48; 95% CI: 1.06, 2.05; I2 74.41%; Figure 2C).
 
 Considering that comparably aged women of the general population have a prevalence of eating disorders of 2.4%, the overall prevalence of eating disorders in women with PCOS can be estimated to be 1.48 × 2.4% = 3.55%. The excess prevalence of depression due to PCOS is therefore 3.55–2.4% = 1.15%. Therefore, the excess number of anxiety due to PCOS is 4,240,306 × 1.15% = 48,764 individuals.
 
-## Excess prevalence of postpartum depression in women with PCOS
+### Excess prevalence of postpartum depression in women with PCOS
 
 Six studies, all of high quality (Supplementary file 2e), were included examining the association between postpartum depression and PCOS (Koric et al., 2021; Joham et al., 2016; Muchanga et al., 2017; March et al., 2018; Tay et al., 2019; Alur-Gupta et al., 2021; Fugal et al., 2022). Compared to age-matched women without PCOS, those with PCOS had a higher prevalence of postpartum depression in the meta-analysis, however this association did not reach statistical significance (random effects PR: 1.20; 95% CI: 0.96, 1.50; Figure 2D). Because the association between PCOS and postpartum depression was not found to be statistically significant in this meta-analysis, postpartum depression was excluded from our calculations of economic burden.
 
-## Economic burden of anxiety in women with PCOS
+### Economic burden of anxiety in women with PCOS
 
 The cost of anxiety-related care per individual in need was estimated to be $2694 in 1990, which converts to $8966 in 2021 USD. Therefore, the excess cost of anxiety-related care in PCOS is 216,248 × $8966 = $1,938,879,568 USD in 2021 (Table 1).
 
-## Economic burden of depression in women with PCOS
+**Table 1.**
+ Estimates of the excess prevalence and economic burden associated with mental health (MH) morbidities of polycystic ovary syndrome (PCOS) as of 2021 in the United States.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>MH morbidities</th>
+      <th>Excess prevalence of morbidity in PCOS (%)</th>
+      <th>Annual costs in billions in 2021 USD (% of total costs in category)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anxiety</td>
+      <td>3.84</td>
+      <td>$1.939 (45.5)</td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>5.79</td>
+      <td>$1.678 (39.4)</td>
+    </tr>
+    <tr>
+      <td>Eating disorders</td>
+      <td>1.15</td>
+      <td>$0.644 (15.1)</td>
+    </tr>
+    <tr>
+      <td>Total excess cost of MH disorders in PCOS</td>
+      <td></td>
+      <td>4.261 (100)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Economic burden of depression in women with PCOS
 
 The cost of depression-related care per individual in need was estimated to be $5726 in 2018, which converts to $6401 in 2021 USD. Therefore, the excess cost of depression-related care in PCOS is 262,176 × $6401 = $1,678,188,576 USD in 2021 (Table 1).
 
-## Economic burden of eating disorders in women with PCOS
+### Economic burden of eating disorders in women with PCOS
 
 The cost of eating disorder-related care per individual in need was estimated to be $11,808 in 2018, which converts to $13,200 in 2021 USD. Therefore, the excess cost of eating disorder-related care in PCOS is 48,764 × $13,200 = $643,684,800 USD in 2021 (Table 1).
 
-## Assessing for the impact of self-reporting in PCOS
+### Assessing for the impact of self-reporting in PCOS
 
 We repeated the analyses after excluding studies where PCOS was self-reported (Supplementary file 3a, b). We observed that the point estimate for anxiety remained consistent with our original findings. Conversely, the point estimates for depression and eating disorders were slightly increased. Nevertheless, compared to our primary analysis, these variations were within the range of random variation, underscoring the robustness of our initial findings.
 
-## Assessing for potential publication bias
+### Assessing for potential publication bias
 
 To assess for possible publication bias, we recalculated the results using the ‘trim and fill’ method. In the ‘trim and fill’ analysis for PCOS-related anxiety the estimated number of missing studies was 4 and the corresponding pooled random effects PR estimate was 1.40 (95% CI: 1.31, 1.50, p < 0.001) (Figure 2—figure supplement 1). In the ‘trim and fill’ analysis for PCOS-related depression the estimated number of missing studies was 4 and the corresponding pooled random effects PR estimate was 1.50 (95% CI: 1.28, 1.76, p < 0.0001) (Figure 2—figure supplement 2). In the ‘trim and fill’ analysis for PCOS-related eating disorders the estimated number of missing studies was 2 and the corresponding pooled random effects PR estimate was 1.30 (95% CI: 0.92, 1.85; p = 0.1371) (Figure 2—figure supplement 3). We did not analyze the data for PCOS-related postpartum depression using the ‘trim and fill’ approach as these results were already not significant.
 
@@ -125,6 +177,117 @@ The ‘trim and fill’ method suggested that the results for anxiety and depres
 In the U.S., the additional direct healthcare costs associated with MH disorders in PCOS were estimated to be $1.939 billion/yr., $1.678 billion/yr., and $0.644 in 2021 USD for anxiety, depression, and eating disorders, respectively. The combined additional direct healthcare costs associated with depression and anxiety in PCOS was estimated to be $4.261 billion/yr. in 2021 USD, of which 45% can be attributable to anxiety, 40% to depression, and the remainder to eating disorders. While the prevalence of postpartum depression appeared to be increased in PCOS, the difference did not reach significance on meta-analysis and this outcome was not included in our economic burden calculations.
 
 Taken together, including our prior economic burden assessments (Azziz et al., 2005; Riestenberg et al., 2022), the total excess economic burden estimated for PCOS exceeds $15 billion annually in 2021 USD (Table 2). Of this cost, approximately 28% will be accounted for the cost of treating PCOS-related MH disorders, including anxiety, depression, and eating disorders; 29.5% will be accounted for the cost of treating reproductive endocrine morbidities (menstrual dysfunction/abnormal uterine bleeding, hirsutism, and infertility); 15.1% is attributable to obstetrical and pregnancy related disorders; and 10.1% and 16.1% is attributable to T2DM and strokes, respectively. The cost of the initial diagnostic evaluation of PCOS is very low ($166 million annually in 2021 USD; Table 2), accounting for only 1.1% of the total economic burden attributable to direct healthcare costs of the disorder estimated so far. These data strongly suggest that ensuring quality diagnosis and evaluation for all patients with PCOS is a cost-effective approach to ameliorating the complications and costs associated with the disorder.
+
+**Table 2.**
+ Direct healthcare-related economic burden in polycystic ovary syndrome (PCOS) as of 2021 in the United States.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Process/disorder</th>
+      <th>Original year economic burden published (reference)</th>
+      <th>Economic burden year of publication (in billions)*</th>
+      <th>Economic burden in 2021 USD (in billions)</th>
+      <th>% of total economic burden</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initial evaluation</td>
+      <td>2004 (2)</td>
+      <td>$0.093</td>
+      <td>0.166</td>
+      <td>1.09</td>
+    </tr>
+    <tr>
+      <td>Menstrual dysfunction/AUB</td>
+      <td>2004 (2)</td>
+      <td>$1.350</td>
+      <td>2.408</td>
+      <td>15.88</td>
+    </tr>
+    <tr>
+      <td>Infertility care</td>
+      <td>2004 (2)</td>
+      <td>$0.533</td>
+      <td>0.951</td>
+      <td>6.27</td>
+    </tr>
+    <tr>
+      <td>Hirsutism</td>
+      <td>2004 (2)</td>
+      <td>$0.622</td>
+      <td>1.109</td>
+      <td>7.31</td>
+    </tr>
+    <tr>
+      <td>GDM†</td>
+      <td>2020 (3)</td>
+      <td>$0.672†</td>
+      <td>0.684</td>
+      <td>4.51</td>
+    </tr>
+    <tr>
+      <td>gHTN†</td>
+      <td>2021 (3)</td>
+      <td>$0.208†</td>
+      <td>0.212</td>
+      <td>1.40</td>
+    </tr>
+    <tr>
+      <td>Preeclampsia†</td>
+      <td>2022 (3)</td>
+      <td>$0.137†</td>
+      <td>1.400</td>
+      <td>9.23</td>
+    </tr>
+    <tr>
+      <td>T2DM</td>
+      <td>2023 (3)</td>
+      <td>$1.500</td>
+      <td>1.527</td>
+      <td>10.07</td>
+    </tr>
+    <tr>
+      <td>Stroke</td>
+      <td>2024 (3)</td>
+      <td>$2.400</td>
+      <td>2.445</td>
+      <td>16.12</td>
+    </tr>
+    <tr>
+      <td>Anxiety</td>
+      <td>2021</td>
+      <td>Present study</td>
+      <td>1.939</td>
+      <td>12.79</td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>2021</td>
+      <td>Present study</td>
+      <td>1.678</td>
+      <td>11.07</td>
+    </tr>
+    <tr>
+      <td>Eating disorders</td>
+      <td>2021</td>
+      <td>Present study</td>
+      <td>0.644</td>
+      <td>4.25</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td></td>
+      <td>15.163</td>
+      <td>100.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Updated for inflation using medical CPI (https://www.in2013dollars.com/Medical-care-services/price-inflation).†Estimates of economic burden in prior publication updated for inflation using medical CPI (https://www.in2013dollars.com/Medical-care-services/price-inflation)._
 
 For perspective, the estimated direct healthcare costs attributable to ovarian cancer, lung cancer, prostate cancer, and breast cancer, in the U.S. are $7.8, $16.8, $26.7, and $20.5 billion in 2021 USD, respectively (Waters and Graf, 2018), compared to $15.2 billion for PCOS so far. Furthermore, the included costs are only for those morbidities that to date have been confirmed as increased in PCOS relative to controls after careful meta-analyses considering the quality of the studies. As further studies are undertaken it is likely that the economic burden of PCOS related to direct healthcare costs will continue to rise.
 

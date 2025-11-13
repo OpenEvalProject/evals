@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.19273.001 hIAPP fibrils are associated with Type-II Diabetes, but the link of hIAPP structure to islet cell death remains elusive. Here we observe that hIAPP fibrils are cytotoxic to cultured pancreatic β-cells, leading us to determine the structure and cytotoxicity of protein segments composing the amyloid spine of hIAPP. Using the cryoEM method MicroED, we discover that one segment, 19–29 S20G, forms pairs of β-sheets mated by a dry interface that share structural features with and are similarly cytotoxic to full-length hIAPP fibrils. In contrast, a second segment, 15–25 WT, forms non-toxic labile β-sheets. These segments possess different structures and cytotoxic effects, however, both can seed full-length hIAPP, and cause hIAPP to take on the cytotoxic and structural features of that segment. These results suggest that protein segment structures represent polymorphs of their parent protein and that segment 19–29 S20G may serve as a model for the toxic spine of hIAPP. DOI: http://dx.doi.org/10.7554/eLife.19273.001
+hIAPP fibrils are associated with Type-II Diabetes, but the link of hIAPP structure to islet cell death remains elusive. Here we observe that hIAPP fibrils are cytotoxic to cultured pancreatic β-cells, leading us to determine the structure and cytotoxicity of protein segments composing the amyloid spine of hIAPP. Using the cryoEM method MicroED, we discover that one segment, 19–29 S20G, forms pairs of β-sheets mated by a dry interface that share structural features with and are similarly cytotoxic to full-length hIAPP fibrils. In contrast, a second segment, 15–25 WT, forms non-toxic labile β-sheets. These segments possess different structures and cytotoxic effects, however, both can seed full-length hIAPP, and cause hIAPP to take on the cytotoxic and structural features of that segment. These results suggest that protein segment structures represent polymorphs of their parent protein and that segment 19–29 S20G may serve as a model for the toxic spine of hIAPP.
 
 ## Introduction
 
@@ -50,65 +50,253 @@ In closer agreement with earlier studies, we find that hIAPP preparations that c
 
 ## Results
 
-## hIAPP preparations that contain fibrils are cytotoxic to cultured rat pancreatic β-cells
+### hIAPP preparations that contain fibrils are cytotoxic to cultured rat pancreatic β-cells
 
-To compare the cytotoxic effects of oligomeric and fibrillar hIAPP, we generated hIAPP preparations that contained either amyloid oligomers or fibrils. We did this by aging the same concentration of hIAPP for 0 and 24 h time periods. Aging hIAPP for 24 h yielded amyloid fibrils and no detectable oligomers as assessed by Thioflavin-T (ThT) binding, negative-stain transmission electron microscopy (TEM), and a dot blot assay using the fibrillar oligomer-sensitive antibody, LOC (
+To compare the cytotoxic effects of oligomeric and fibrillar hIAPP, we generated hIAPP preparations that contained either amyloid oligomers or fibrils. We did this by aging the same concentration of hIAPP for 0 and 24 h time periods. Aging hIAPP for 24 h yielded amyloid fibrils and no detectable oligomers as assessed by Thioflavin-T (ThT) binding, negative-stain transmission electron microscopy (TEM), and a dot blot assay using the fibrillar oligomer-sensitive antibody, LOC (Figure 1A). Aging hIAPP for 0 h, which is a freshly dissolved hIAPP sample, yielded oligomers as assessed by a dot blot assay using LOC, and no amyloid fibrils (Figure 1—figure supplement 1A). Of note, we probed both hIAPP preparations with 25 different conformational antibodies that are known to bind soluble oligomers, but only LOC showed binding to any of our preparations. Although LOC was raised against hIAPP fibrils (Kayed et al., 2007), studies show that it also recognizes fibrillar oligomers (Wu et al., 2010), which share structural epitopes with amyloid fibrils and are structurally distinct from A11-positive pre-fibrillar oligomers.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig1-v1.jpg)
 
-**Figure 1.:** (A) Human IAPP (hIAPP) aged for 24 h contains amyloid fibrils and no detectable oligomers. Amyloid fibrils were observed using ThT binding and TEM. Oligomers were detected using a dot bot assay with the polyclonal anti-oligomer antibody, LOC. hIAPP oligomers were used as the positive control for LOC binding. The dashed line on the ThT binding graph indicates ThT fluorescence of vehicle alone. (B) and (C) hIAPP aged for 24 h is significantly more cytotoxic than hIAPP aged for 0 h. In these experiments, 50 μM human and mouse IAPP were aged for the designated time periods and then they were applied to cells at 5 μM final concentration. Mouse IAPP (mIAPP), which does not form amyloid fibrils, is not cytotoxic regardless of time period of aging. Black horizontal bars indicate the median (n = 12–15 across 4–5 biological replicates, each with three technical replicates). (B) Rin5F cells treated with hIAPP aged for 24 h reduce significantly less MTT dye than Rin5F cells treated with hIAPP aged for 0 h (ns=not significant; ****p<0.0001 using an unpaired t-test with equal standard deviations). (C) Rin5F cells treated with hIAPP aged for 24 h exhibit significantly higher caspase-3/7 activation than Rin5F cells treated with hIAPP aged for 0 h. Additionally, Rin5F cells treated with hIAPP aged for 24 h exhibit significantly higher caspase-3/7 activation than vehicle-treated cells (***p=0.0008 using an ordinary one-way ANOVA), but Rin5F cells treated with hIAPP aged for 0 h do not (p=0.4286 using an ordinary one-way ANOVA) (ns=not significant; **p=0.0011 using an unpaired t-test with equal standard deviations). (D) The insoluble fraction of hIAPP aged 24 h, which contains amyloid fibrils and no detectable oligomers, contains the cytotoxic species. Cytotoxicity was measured using MTT dye reduction and detection of caspase-3/7 activation (****p<0.0001; **p<0.0013; n = 9 across three biological replicates, each with three technical replicates). (E) Amino acid sequences of human IAPP and mouse IAPP. The location of the early onset familial mutation, S20G, is shown below the human sequence. Red residues in the mouse sequence differ from the human sequence. The amyloid spine of human IAPP and the corresponding region in the mouse sequence is enclosed in the gray box. (F). Schematic of protein segments that span the amyloid spine, hereon referred to as spine segments, targeted for characterization. (G) Fibrils of spine segments seed hIAPP fibril formation, suggesting that spine segments embody structural characteristics of full-length hIAPP fibrils. 10 μM hIAPP was seeded with 10% (v/v) monomer equivalent of pre-formed, unsonicated seed of each spine segment. mIAPP, which does not contain amyloid fibrils, does not seed hIAPP fibril formation. Curves show average of 4 technical replicates.DOI: http://dx.doi.org/10.7554/eLife.19273.003
+**Figure 1.:** (A) Human IAPP (hIAPP) aged for 24 h contains amyloid fibrils and no detectable oligomers. Amyloid fibrils were observed using ThT binding and TEM. Oligomers were detected using a dot bot assay with the polyclonal anti-oligomer antibody, LOC. hIAPP oligomers were used as the positive control for LOC binding. The dashed line on the ThT binding graph indicates ThT fluorescence of vehicle alone. (B) and (C) hIAPP aged for 24 h is significantly more cytotoxic than hIAPP aged for 0 h. In these experiments, 50 μM human and mouse IAPP were aged for the designated time periods and then they were applied to cells at 5 μM final concentration. Mouse IAPP (mIAPP), which does not form amyloid fibrils, is not cytotoxic regardless of time period of aging. Black horizontal bars indicate the median (n = 12–15 across 4–5 biological replicates, each with three technical replicates). (B) Rin5F cells treated with hIAPP aged for 24 h reduce significantly less MTT dye than Rin5F cells treated with hIAPP aged for 0 h (ns=not significant; ****p<0.0001 using an unpaired t-test with equal standard deviations). (C) Rin5F cells treated with hIAPP aged for 24 h exhibit significantly higher caspase-3/7 activation than Rin5F cells treated with hIAPP aged for 0 h. Additionally, Rin5F cells treated with hIAPP aged for 24 h exhibit significantly higher caspase-3/7 activation than vehicle-treated cells (***p=0.0008 using an ordinary one-way ANOVA), but Rin5F cells treated with hIAPP aged for 0 h do not (p=0.4286 using an ordinary one-way ANOVA) (ns=not significant; **p=0.0011 using an unpaired t-test with equal standard deviations). (D) The insoluble fraction of hIAPP aged 24 h, which contains amyloid fibrils and no detectable oligomers, contains the cytotoxic species. Cytotoxicity was measured using MTT dye reduction and detection of caspase-3/7 activation (****p<0.0001; **p<0.0013; n = 9 across three biological replicates, each with three technical replicates). (E) Amino acid sequences of human IAPP and mouse IAPP. The location of the early onset familial mutation, S20G, is shown below the human sequence. Red residues in the mouse sequence differ from the human sequence. The amyloid spine of human IAPP and the corresponding region in the mouse sequence is enclosed in the gray box. (F). Schematic of protein segments that span the amyloid spine, hereon referred to as spine segments, targeted for characterization. (G) Fibrils of spine segments seed hIAPP fibril formation, suggesting that spine segments embody structural characteristics of full-length hIAPP fibrils. 10 μM hIAPP was seeded with 10% (v/v) monomer equivalent of pre-formed, unsonicated seed of each spine segment. mIAPP, which does not contain amyloid fibrils, does not seed hIAPP fibril formation. Curves show average of 4 technical replicates.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) hIAPP aged for 0 h contains oligomers and no detectable amyloid fibrils as assessed by ThT binding, TEM, and a dot blot assay using the anti-oligomer antibody, LOC. hIAPP oligomers were used as the positive control for LOC binding. (B) The insoluble fraction of hIAPP aged for 24 h, which contains the cytotoxic species, is composed of amyloid fibrils and no detectable oligomers. The soluble fraction, which is not cytotoxic, contains no detectable amyloid fibrils or oligomers. The dashed line on the ThT binding graphs indicates ThT fluorescence of vehicle alone.DOI: http://dx.doi.org/10.7554/eLife.19273.004
+**Figure 1—figure supplement 1.:** (A) hIAPP aged for 0 h contains oligomers and no detectable amyloid fibrils as assessed by ThT binding, TEM, and a dot blot assay using the anti-oligomer antibody, LOC. hIAPP oligomers were used as the positive control for LOC binding. (B) The insoluble fraction of hIAPP aged for 24 h, which contains the cytotoxic species, is composed of amyloid fibrils and no detectable oligomers. The soluble fraction, which is not cytotoxic, contains no detectable amyloid fibrils or oligomers. The dashed line on the ThT binding graphs indicates ThT fluorescence of vehicle alone.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Fibrils and 3D crystals were formed by dissolving lyophilized protein segments at 1 mM in PBS and 1% DMSO and incubating them for one week at room temperature under quiescent conditions. Fibril and crystal formation occurred as quickly as a few hours (19–29 S20G) to as long as overnight (15–25 WT and 15–25 S20G). (A) 15–25 WT forms striated ribbons. (B) 15–25 S20G forms striated ribbons. (C) 19–29 WT forms both striated ribbons and twisted fibrils of varying widths. (D) 19–29 S20G forms 3D crystals only a few hundred nanometers thick. Right panel scale bar is 1 μm.DOI: http://dx.doi.org/10.7554/eLife.19273.005
+**Figure 1—figure supplement 2.:** Fibrils and 3D crystals were formed by dissolving lyophilized protein segments at 1 mM in PBS and 1% DMSO and incubating them for one week at room temperature under quiescent conditions. Fibril and crystal formation occurred as quickly as a few hours (19–29 S20G) to as long as overnight (15–25 WT and 15–25 S20G). (A) 15–25 WT forms striated ribbons. (B) 15–25 S20G forms striated ribbons. (C) 19–29 WT forms both striated ribbons and twisted fibrils of varying widths. (D) 19–29 S20G forms 3D crystals only a few hundred nanometers thick. Right panel scale bar is 1 μm.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** Figure 1G.(A) Fibrils of spine segments seed hIAPP fibril formation. All four technical replicates performed in the experiment in Figure 1G are shown. (B) Seeds of spine segments (1 μM) do not bind ThT. The graph shows mean ThT fluorescence across four technical replicates.DOI: http://dx.doi.org/10.7554/eLife.19273.006
+**Figure 1—figure supplement 3.:** (A) Fibrils of spine segments seed hIAPP fibril formation. All four technical replicates performed in the experiment in Figure 1G are shown. (B) Seeds of spine segments (1 μM) do not bind ThT. The graph shows mean ThT fluorescence across four technical replicates.
 
 We observe that hIAPP preparations that contain fibrils are significantly more cytotoxic to rat pancreatic β-cells than hIAPP preparations that contain oligomers but no detectable fibrils (Figure 1B and C). We assayed the cytotoxicity of the hIAPP preparations to Rin5F cells, a rat pancreatic β-cell line (Gazdar et al., 1980) using two metrics: 3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) dye reduction, an indicator of good metabolic health (Mosmann, 1983; Liu et al., 1997), and activation of caspase-3/7, an indicator of apoptosis (Budihardjo et al., 1999). Furthermore, the insoluble fraction of the hIAPP 24 h sample, which contains fibrils (Figure 1—figure supplement 1B), is cytotoxic, while the soluble fraction is not (Figure 1D), further suggesting that fibrils are the toxic aggregate in our studies.
 
 Although we do not detect oligomers in the 24 h sample, we cannot rule out the possibility that it may contain some undetectable population of slowly forming, yet highly toxic oligomers that associate with fibrils. Despite this possibility, we chose to focus on studying fibrillar structures of hIAPP.
 
-## Selection of amyloid spine segments for structural studies
+### Selection of amyloid spine segments for structural studies
 
 Given that hIAPP fibrils are cytotoxic, we sought to identify the residues that compose their amyloid spine. We identified residues 15–29 as the amyloid spine based on several lines of evidence and previous work by others (Westermark et al., 1990; Moriarty and Raleigh, 1999; Goldsbury et al., 2000; Tenidis et al., 2000). First, the sequence of mouse IAPP (mIAPP), which is non-amyloidogenic, differs from human IAPP only within this region (Figure 1E). Second, the only known familial disease mutation in hIAPP, hIAPP-S20G, also occurs within this region (Figure 1E) (Sakagashira et al., 2000; Cao et al., 2012). Third, previous work by our laboratory has shown that Phe15 may be part of the amyloid spine because it is required for stabilizing an on-pathway α-helical dimer and mutating this residue can delay fibril formation (Wiltzius et al., 2009b).
 
 For these reasons, we chose to focus on two overlapping 11-residue segments within this region of the sequence: residues 19–29 and residues 15–25. We chose to study the WT and early onset S20G mutation segments (Figure 1F). All four spine segments form amyloid fibrils or crystals (Figure 1—figure supplement 2) that seed full-length hIAPP fibril formation (Figure 1G, Figure 1—figure supplement 3), suggesting that the spine segments embody structural characteristics of full-length hIAPP fibrils.
 
-## Segment 19–29 S20G forms pairs of β-sheets tightly mated by a dry interface
+### Segment 19–29 S20G forms pairs of β-sheets tightly mated by a dry interface
 
-To determine the structure of segment 19–29 S20G, we used Micro-Electron Diffraction (MicroED). MicroED employs a standard cryo electron microscope (cryoEM) in diffraction mode for data collection from 3D crystals only a few hundred nanometers thick (
+To determine the structure of segment 19–29 S20G, we used Micro-Electron Diffraction (MicroED). MicroED employs a standard cryo electron microscope (cryoEM) in diffraction mode for data collection from 3D crystals only a few hundred nanometers thick (Figure 2A; Figure 3A) (Shi et al., 2013; Nannenga et al., 2014a, 2014b; Hattne et al., 2015; Liu et al., 2016). Such thin crystals are capable of producing measurable Bragg peaks because electrons interact with matter more strongly than X-rays. Indeed, we found that the nano-sized 3D crystals used for MicroED produced higher resolution diffraction than relatively larger crystals suited for structure determination at a microfocus X-ray beamline (Figure 2A). Evidently, micron-thick needle crystals are sufficient for X-ray structure determination with six or seven residue peptides, but not for 11-residue peptides. These experiences closely mirrored those in the determination of the atomic structure of the toxic core of α-synuclein (Rodriguez et al., 2015), an 11-residue segment that forms the spine of amyloid fibrils associated with Parkinson’s disease.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig2-v1.jpg)
 
-**Figure 2.:** (A) 3D crystals of 19–29 S20G (right, inset) diffract to 1.6 Å using MicroED, a whole angstrom better resolution than the microcrystals of 19–29 S20G (left, inset). (B) 3D crystals of 15–25 WT (right, inset) diffract to 1.4 Å using MicroED, whereas microcrystals of 15–25 WT diffract to 2.2 Å using Microfocus X-rays (left, inset).DOI: http://dx.doi.org/10.7554/eLife.19273.007
+**Figure 2.:** (A) 3D crystals of 19–29 S20G (right, inset) diffract to 1.6 Å using MicroED, a whole angstrom better resolution than the microcrystals of 19–29 S20G (left, inset). (B) 3D crystals of 15–25 WT (right, inset) diffract to 1.4 Å using MicroED, whereas microcrystals of 15–25 WT diffract to 2.2 Å using Microfocus X-rays (left, inset).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig3-v1.jpg)
 
-**Figure 3.:** (A) Electron micrograph of 3D crystals used for data collection. The red circle represents the area of the crystal used for diffraction. (B) Pairs of β-sheets are oriented face-to-face and they are tightly mated by a dry interface that excludes water. The dry interface is formed by tightly packed, interdigitating side-chains. This panel shows 5 β-strands or layers along the ‘a’ dimension of the unit cell; the average crystal used for data collection is 10,400 layers long in the ‘a’ dimension. (C) Orthogonal view of the steric-zipper formed by the dry interface. (D) The similarity between the fiber diffraction pattern calculated from the structure shown in Panel C and the fiber diffraction observed from full-length hIAPP fibrils supports the dry interface as a model for the amyloid spine of full-length hIAPP fibrils. Along the meridian (left panel), the dry interface and full-length hIAPP fibrils share reflections at 4.7 Å and and 2.4 Å (black arrows). Additionally, along the off-meridonal, the diffraction patterns share a reflection at 3.7 Å. It is difficult to see the reflection at 2.4 Å in the full-length hIAPP fiber diffraction image, but the reflection is clearly visible in the radial profile in Figure 3—figure supplement 1. Along the equator (right panel), the dry interface and full-length hIAPP fibrils share reflections at 10.0 Å and 5.0 Å (black arrows). The right panel is magnified 2X to more clearly show the low-resolution reflections along the equator.DOI: http://dx.doi.org/10.7554/eLife.19273.008
+**Figure 3.:** (A) Electron micrograph of 3D crystals used for data collection. The red circle represents the area of the crystal used for diffraction. (B) Pairs of β-sheets are oriented face-to-face and they are tightly mated by a dry interface that excludes water. The dry interface is formed by tightly packed, interdigitating side-chains. This panel shows 5 β-strands or layers along the ‘a’ dimension of the unit cell; the average crystal used for data collection is 10,400 layers long in the ‘a’ dimension. (C) Orthogonal view of the steric-zipper formed by the dry interface. (D) The similarity between the fiber diffraction pattern calculated from the structure shown in Panel C and the fiber diffraction observed from full-length hIAPP fibrils supports the dry interface as a model for the amyloid spine of full-length hIAPP fibrils. Along the meridian (left panel), the dry interface and full-length hIAPP fibrils share reflections at 4.7 Å and and 2.4 Å (black arrows). Additionally, along the off-meridonal, the diffraction patterns share a reflection at 3.7 Å. It is difficult to see the reflection at 2.4 Å in the full-length hIAPP fiber diffraction image, but the reflection is clearly visible in the radial profile in Figure 3—figure supplement 1. Along the equator (right panel), the dry interface and full-length hIAPP fibrils share reflections at 10.0 Å and 5.0 Å (black arrows). The right panel is magnified 2X to more clearly show the low-resolution reflections along the equator.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** The wet interface does not form the amyloid spine because (1) the fiber diffraction pattern calculated from this interface does not match the fiber diffraction pattern collected from full-length hIAPP fibrils, (2) it contains waters, and (3) it possesses less side-chain interdigitation than the dry interface. (A) View of crystal packing down the ‘a’ dimension of the unit cell reveals the two different interfaces. The unit cell is outlined in red; waters are shown in cyan. (B) Orthogonal view of the wet interface. The wet interface buries only 153 Å2 of surface area per strand and it possesses a shape complementarity of 0.64.DOI: http://dx.doi.org/10.7554/eLife.19273.009
+**Figure 3—figure supplement 1.:** The wet interface does not form the amyloid spine because (1) the fiber diffraction pattern calculated from this interface does not match the fiber diffraction pattern collected from full-length hIAPP fibrils, (2) it contains waters, and (3) it possesses less side-chain interdigitation than the dry interface. (A) View of crystal packing down the ‘a’ dimension of the unit cell reveals the two different interfaces. The unit cell is outlined in red; waters are shown in cyan. (B) Orthogonal view of the wet interface. The wet interface buries only 153 Å2 of surface area per strand and it possesses a shape complementarity of 0.64.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** The values for the 19–29 S20G and 15–25 WT atomic structures are highlighted in green and purple, respectively.DOI: http://dx.doi.org/10.7554/eLife.19273.010
+**Figure 3—figure supplement 2.:** The values for the 19–29 S20G and 15–25 WT atomic structures are highlighted in green and purple, respectively.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** (A) Side-by-side comparison of X-ray diffraction from 19–29 WT fibrils (left) and 19–29 S20G fibrils (right). (B). Overlaid radial profiles calculated from X-ray fiber diffraction in panel A. 19–29 WT (black) and S20G (gray) fibrils share strong reflections at 4.6 Å, 8.4–9 Å, and 34.7 Å.DOI: http://dx.doi.org/10.7554/eLife.19273.011
+**Figure 3—figure supplement 3.:** (A) Side-by-side comparison of X-ray diffraction from 19–29 WT fibrils (left) and 19–29 S20G fibrils (right). (B). Overlaid radial profiles calculated from X-ray fiber diffraction in panel A. 19–29 WT (black) and S20G (gray) fibrils share strong reflections at 4.6 Å, 8.4–9 Å, and 34.7 Å.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig3-figsupp4-v1.jpg)
 
-**Figure 3—figure supplement 4.:** Cytotoxic full-length hIAPP fibrils were prepared under the same conditions as in the cytotoxicity assays. Next, the fibrils were pelleted by centrifugation, washed with water to remove salt, and then applied between two glass capillary tubes as described by Sunde and co-workers (Sunde et al., 1997). The first peak on the left, which occurs at 37.3 Å, may represent a legitimate feature of full-length hIAPP fibrils, but it is too close to the beam stop to definitively makes this conclusion.DOI: http://dx.doi.org/10.7554/eLife.19273.012
+**Figure 3—figure supplement 4.:** Cytotoxic full-length hIAPP fibrils were prepared under the same conditions as in the cytotoxicity assays. Next, the fibrils were pelleted by centrifugation, washed with water to remove salt, and then applied between two glass capillary tubes as described by Sunde and co-workers (Sunde et al., 1997). The first peak on the left, which occurs at 37.3 Å, may represent a legitimate feature of full-length hIAPP fibrils, but it is too close to the beam stop to definitively makes this conclusion.
 
-The MicroED atomic structure of segment 19–29 S20G reveals pairs of parallel in-register β-sheets mated face-to-face by interdigitation of side-chains and exclusion of water molecules (Figure 3B and C;Table 1). This arrangement is termed a class I steric-zipper. Such features are observed for amyloid spines of other proteins and have been associated with pathology (Nelson et al., 2005; Sawaya et al., 2007; Ivanova et al., 2009; Colletier et al., 2011; Liu et al., 2011). This zipper contains a tightly packed hydrophobic core consisting of Phe23, Ala25, and Ile27. Phe23 is the central and largest contributor the hydrophobic core, consistent with multiple other experiments (Tenidis et al., 2000; Griffiths et al., 1995; Jack et al., 2006; Madine et al., 2008). The dry interface buries 265 Å2 of surface area per strand, which equates to 24 Å2 per residue. This interface is one of the largest and most complementary of any structurally determined steric-zipper interface (Supplementary file 1); it has a shape complementary of 0.85. The dry interface is nearly as large as the toxic core of α-synuclein (Rodriguez et al., 2015), but with higher shape complementarity.10.7554/eLife.19273.013Table 1.Statistics of MicroED data collection and atomic refinement.DOI: http://dx.doi.org/10.7554/eLife.19273.013Sample19–29 S20G 15–25 WTExcitation Voltage (kV)200200Electron Sourcefield emission gunfield emission gunWavelength (Å)0.02510.0251Total dose per crystal (e−/ Å2)3.42.9Frame rate (frame/s)0.3–0.5 0.3–0.5 Rotation rate (°/s)0.30.3# crystals used66Total angular rotation collected (°)6868Merging Statistics 19–29 S20G 15–25 WTspace groupP212121P1Unit cell dimensionsa, b, c (Å)4.78, 18.6, 70.811.68, 18.18, 19.93α, β, γ (°)90, 90, 9062.8, 88.9, 87.6Resolution (Å)1.91.4Rmerge10.6% (15.0%) 19.9% (50%) # of reflections1380 (221)9014 (153)Unique reflections548 (115)2180 (84)Completeness83% (65%) 75% (35.3%) Multiplicity2.5 (1.9) 4.1 (1.8) I/σ5.65 (3.65) 4.33 (1.10) CC1/2 (Diederichs, 2013)98.9% 98.5% Refinement Statistics 19–29 S20G 15–25 WTReflections in working set5462177Reflections in test set53218Rwork†22.75% 22.47% Rfree27.49% 25.90% RMSD bonds (Å)0.010.008RMSD angles (°)1.21.2Ramachandran (%)‡Favored100100Allowed00Outliers00PDB ID code5KNZ5KO0EMDB ID codeEMD-8272EMD-8273*Highest resolution shell shown in parenthesis.†Rfactor=100x∑||Fobs|−|Fcalc||/∑|Fobs| Fcalc and Fobs are the calculated and observed structure factor amplitudes, respectively. Rwork refers to the Rfactor for the data utilized in the refinement and Rfree refers to the Rfactor for 10% of the reflections randomly chosen that were excluded from the refinement.‡Percentage of residues in Ramachandran plot regions were determined using Molprobity (Chen et al., 2010).
+The MicroED atomic structure of segment 19–29 S20G reveals pairs of parallel in-register β-sheets mated face-to-face by interdigitation of side-chains and exclusion of water molecules (Figure 3B and C;Table 1). This arrangement is termed a class I steric-zipper. Such features are observed for amyloid spines of other proteins and have been associated with pathology (Nelson et al., 2005; Sawaya et al., 2007; Ivanova et al., 2009; Colletier et al., 2011; Liu et al., 2011). This zipper contains a tightly packed hydrophobic core consisting of Phe23, Ala25, and Ile27. Phe23 is the central and largest contributor the hydrophobic core, consistent with multiple other experiments (Tenidis et al., 2000; Griffiths et al., 1995; Jack et al., 2006; Madine et al., 2008). The dry interface buries 265 Å2 of surface area per strand, which equates to 24 Å2 per residue. This interface is one of the largest and most complementary of any structurally determined steric-zipper interface (Supplementary file 1); it has a shape complementary of 0.85. The dry interface is nearly as large as the toxic core of α-synuclein (Rodriguez et al., 2015), but with higher shape complementarity.
+
+**Table 1.**
+ Statistics of MicroED data collection and atomic refinement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>19–29 S20G</th>
+      <th>15–25 WT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excitation Voltage (kV)</td>
+      <td>200</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Electron Source</td>
+      <td>field emission gun</td>
+      <td>field emission gun</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.0251</td>
+      <td>0.0251</td>
+    </tr>
+    <tr>
+      <td>Total dose per crystal (e−/ Å2)</td>
+      <td>3.4</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <td>Frame rate (frame/s)</td>
+      <td>0.3–0.5</td>
+      <td>0.3–0.5</td>
+    </tr>
+    <tr>
+      <td>Rotation rate (°/s)</td>
+      <td>0.3</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td># crystals used</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Total angular rotation collected (°)</td>
+      <td>68</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>Merging Statistics</td>
+      <td>19–29 S20G</td>
+      <td>15–25 WT</td>
+    </tr>
+    <tr>
+      <td>space group</td>
+      <td>P212121</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td>Unit cell dimensions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>4.78, 18.6, 70.8</td>
+      <td>11.68, 18.18, 19.93</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 90</td>
+      <td>62.8, 88.9, 87.6</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>1.9</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>10.6% (15.0%)</td>
+      <td>19.9% (50%)</td>
+    </tr>
+    <tr>
+      <td># of reflections</td>
+      <td>1380 (221)</td>
+      <td>9014 (153)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>548 (115)</td>
+      <td>2180 (84)</td>
+    </tr>
+    <tr>
+      <td>Completeness</td>
+      <td>83% (65%)</td>
+      <td>75% (35.3%)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>2.5 (1.9)</td>
+      <td>4.1 (1.8)</td>
+    </tr>
+    <tr>
+      <td>I/σ</td>
+      <td>5.65 (3.65)</td>
+      <td>4.33 (1.10)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (Diederichs, 2013)</td>
+      <td>98.9%</td>
+      <td>98.5%</td>
+    </tr>
+    <tr>
+      <td>Refinement Statistics</td>
+      <td>19–29 S20G</td>
+      <td>15–25 WT</td>
+    </tr>
+    <tr>
+      <td>Reflections in working set</td>
+      <td>546</td>
+      <td>2177</td>
+    </tr>
+    <tr>
+      <td>Reflections in test set</td>
+      <td>53</td>
+      <td>218</td>
+    </tr>
+    <tr>
+      <td>Rwork†</td>
+      <td>22.75%</td>
+      <td>22.47%</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>27.49%</td>
+      <td>25.90%</td>
+    </tr>
+    <tr>
+      <td>RMSD bonds (Å)</td>
+      <td>0.01</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>RMSD angles (°)</td>
+      <td>1.2</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Ramachandran (%)‡</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PDB ID code</td>
+      <td>5KNZ</td>
+      <td>5KO0</td>
+    </tr>
+    <tr>
+      <td>EMDB ID code</td>
+      <td>EMD-8272</td>
+      <td>EMD-8273</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest resolution shell shown in parenthesis.†Rfactor=100x∑||Fobs|−|Fcalc||/∑|Fobs| Fcalc and Fobs are the calculated and observed structure factor amplitudes, respectively. Rwork refers to the Rfactor for the data utilized in the refinement and Rfree refers to the Rfactor for 10% of the reflections randomly chosen that were excluded from the refinement.‡Percentage of residues in Ramachandran plot regions were determined using Molprobity (Chen et al., 2010)._
 
 The β-sheets of the 19–29 S20G atomic structure possess a curvature that is not common in shorter hIAPP protein segments (Wiltzius et al., 2008, 2009a; Soriaga et al., 2015). To assess β-sheet curvature, we compared the root mean square deviations (RMSD’s) of sheets from planarity across all hIAPP protein segment atomic structures determined to date (Supplementary file 1). The 19–29 S20G structure ranks in the upper half of the list (Figure 3—figure supplement 2), containing both sheet curvature and a sharp kink. Most of the shorter peptides are nearly flat, but some have sharp kinks. The significance of deviation from planarity is not yet clear.
 
@@ -118,25 +306,25 @@ Structural studies performed here and elsewhere by others suggest that 19–29 W
 
 Although the WT and mutant segments likely form similar structures, the structure of the mutant segment may be more stable. The stability of the mutant segment may stem from the early onset Gly20 mutation, which adopts an unusual geometry (φ = −101.7° and ψ = 107.5°) that creates a kink in the peptide backbone. To investigate this hypothesis, we generated a model of 19–29 WT consisting of a mated pair of ten-stranded sheets. The model was identical to the 19–29 S20G atomic structure with the exception that we adjusted the backbone torsion angles of Ser20 to comply with the allowed regions of the Ramachandran plot for a non-glycine residue. We compared the energies of the WT and S20G structures after minimization with FoldIt (Cooper et al., 2010). The dry interfaces are nearly identical between the two segments, except near Asn21, where the altered backbone torsion angles break the canonical Asn ladder hydrogen bonding interactions with neighboring Asn21 residues within the sheet and instead, form hydrogen bonds with Ser29 from the opposing sheet. The alteration separates the pair of sheets by approximately 1.5 Å in this region, and therefore the 19–29 S20G structure has a slightly lower energy than 19–29 WT (−590 REU vs. −535 REU).
 
-## Segment 15–25 WT forms an arrangement of labile unmated β-sheets
+### Segment 15–25 WT forms an arrangement of labile unmated β-sheets
 
-The atomic structure of segment 15–25 WT, also determined using MicroED (
+The atomic structure of segment 15–25 WT, also determined using MicroED (Figure 2B; Figure 4A), shows an arrangement of unmated β-sheets composed of anti-parallel out-of-register β-strands that is uncharacteristic of pathogenic amyloid fibrils (Figure 4B;Table 1). Most pathogenic amyloid fibrils are composed of β-strands that stack perpendicular to the sheet-long axis, but the β-strands in out-of-register structures stack at an angle. Deviation of strands from the fibril perpendicular is a natural consequence of the registration shift implied by out-of-register structures. The out-of-register β-strands are stabilized by extensive hydrogen bonding. Within each sheet, the β-strands form two distinct, unequal interfaces: a stronger interface with twelve hydrogen bonds, and a weaker interface with eight hydrogen bonds (Figure 4B). This inequality between interfaces has been observed in previous examples of out-of-register sheets (Soriaga et al., 2015; Laganowsky et al., 2012; Liu et al., 2012; Yu et al., 2015). A view down the ‘proto-fibril axis’ of the crystal shows that the faces of adjacent sheets are wet and overlap only partially (Figure 4C); the asymmetric unit contains density for seven ordered water molecules and one thiocyanate molecule. The area buried between adjacent sheets is small (10.7 Å2 per residue) compared to the average steric-zipper (20.1 Å2 per residue). Hence, there is no dry interface between adjacent sheets in the crystal, and the structure seems labile compared to that of 19–29 S20G.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig4-v1.jpg)
 
-**Figure 4.:** (A) Electron micrograph of 3D crystals used for data collection. The red circle represents the area of the crystal used for diffraction. (B) A single β-sheet contains anti-parallel out-of-register β-strands stabilized by two distinct, unequal interfaces: a stronger interface with twelve hydrogen bonds, and a weaker interface with eight hydrogen bonds. The β-strands are out-of-register by two residues because Leu16 on the first β-strand is directly above His18 on the third β-strand. (C) The view down the proto-fibril axis reveals hydrated interfaces between partially overlapping β-sheets. Notice that adjacent β-sheets lack side-chain interdigitation. Water molecules are shown as cyan spheres. The thiocyanate molecule is highlighted in gold in the central β-sheet and colored gray in the peripheral β-sheets.DOI: http://dx.doi.org/10.7554/eLife.19273.014
+**Figure 4.:** (A) Electron micrograph of 3D crystals used for data collection. The red circle represents the area of the crystal used for diffraction. (B) A single β-sheet contains anti-parallel out-of-register β-strands stabilized by two distinct, unequal interfaces: a stronger interface with twelve hydrogen bonds, and a weaker interface with eight hydrogen bonds. The β-strands are out-of-register by two residues because Leu16 on the first β-strand is directly above His18 on the third β-strand. (C) The view down the proto-fibril axis reveals hydrated interfaces between partially overlapping β-sheets. Notice that adjacent β-sheets lack side-chain interdigitation. Water molecules are shown as cyan spheres. The thiocyanate molecule is highlighted in gold in the central β-sheet and colored gray in the peripheral β-sheets.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Equimolar concentrations of 15–25 WT and 19–29 S20G fibrils were treated with increasing amounts of SDS and then heated at 55°C for 20 min. (A) Turbidity measurements of the fibrils treated with heat and increasing amounts of SDS reveal that 15–25 WT fibrils disaggregate more readily than 19–29 S20G fibrils. Turbidity measurements were obtained by recording absorbance at 340 nm. (B) Negative-stain electron micrographs corroborate the results observed in the turbidity measurements. Scale bars are 1 μm.DOI: http://dx.doi.org/10.7554/eLife.19273.015
+**Figure 4—figure supplement 1.:** Equimolar concentrations of 15–25 WT and 19–29 S20G fibrils were treated with increasing amounts of SDS and then heated at 55°C for 20 min. (A) Turbidity measurements of the fibrils treated with heat and increasing amounts of SDS reveal that 15–25 WT fibrils disaggregate more readily than 19–29 S20G fibrils. Turbidity measurements were obtained by recording absorbance at 340 nm. (B) Negative-stain electron micrographs corroborate the results observed in the turbidity measurements. Scale bars are 1 μm.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** The values for the 19–29 S20G and 15–25 WT atomic structures are highlighted in green and purple, respectively.DOI: http://dx.doi.org/10.7554/eLife.19273.016
+**Figure 4—figure supplement 2.:** The values for the 19–29 S20G and 15–25 WT atomic structures are highlighted in green and purple, respectively.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** (A) Side-by-side comparison of X-ray diffraction from 15–25 WT fibrils (left) and 15–25 S20G fibrils (right). (B) Overlaid radial profiles calculated from X-ray fiber diffraction in panel A. 15–25 WT (black) and S20G (gray) fibrils display strong reflections at 4.7 Å, 9.3–9.8 Å, 18.2 Å, and 37.0 Å.DOI: http://dx.doi.org/10.7554/eLife.19273.017
+**Figure 4—figure supplement 3.:** (A) Side-by-side comparison of X-ray diffraction from 15–25 WT fibrils (left) and 15–25 S20G fibrils (right). (B) Overlaid radial profiles calculated from X-ray fiber diffraction in panel A. 15–25 WT (black) and S20G (gray) fibrils display strong reflections at 4.7 Å, 9.3–9.8 Å, 18.2 Å, and 37.0 Å.
 
 Consistent with our observation of unmated β-sheets in the atomic structure, we observe that 15–25 WT fibrils are relatively weak and reversible compared to 19–29 S20G fibrils, which possess a canonical pathogenic amyloid fibril architecture. Turbidity readings followed by negative-stain EM reveal that 15–25 WT fibrils completely disaggregate in the presence of heat and 1% SDS, but 19–29 S20G fibrils remain intact in up to 2% SDS (Figure 4—figure supplement 1).
 
@@ -144,23 +332,23 @@ Similar to 19–29 S20G, the 15–25 WT atomic structure reveals curved β-sheet
 
 X-ray fiber diffraction and radial profile analysis of 15–25 WT and 15–25 S20G fibrils indicate they form structures similar to each other (Figure 4—figure supplement 3). Taken together with the X-ray fiber diffraction data from the 19–29 segments, we conclude that the early onset S20G mutation does not confer a fibril morphology distinguishable from wild-type.
 
-## Structural polymorphs elicit different cytotoxic effects
+### Structural polymorphs elicit different cytotoxic effects
 
 Next we investigated the cytotoxic effects of the spine segments in order to determine if any of them were similarly cytotoxic to full-length hIAPP preparations. Although the cytotoxic mechanism of hIAPP is not fully understood, several reports show hIAPP induces mitochondrial dysfunction, alters cell metabolism, and initiates activation of pro-apoptotic machinery (Butler et al., 2003; Mulder and Ling, 2009; Zraika et al., 2010; Magzoub and Miranker, 2012; Tomasello et al., 2014). Based on these findings, we tested the cytotoxicity of the spine segments using MTT dye reduction (Mosmann, 1983; Liu and Schubert, 1997) and a FRET-based biosensor to assay altered metabolism and pro-apoptotic machinery activation (Paulsson et al., 2008), respectively.
 
-Using MTT dye reduction, we observe that the labile 15–25 fibrils are not cytotoxic to HEK293 cells (
+Using MTT dye reduction, we observe that the labile 15–25 fibrils are not cytotoxic to HEK293 cells (Figure 5A), whereas 19–29 S20G fibrils have comparable cytotoxicity to full-length hIAPP fibrils (Figure 5B). To verify the cytotoxic effects of each sample, we examined the morphology of the treated cells under a light microscope. Additionally, in the context of residues 19–29, the S20G segment is significantly more cytotoxic than the WT segment, consistent with parent full-length hIAPP (Sakagashira et al., 2000; Meier et al., 2016) (Figure 5B). We did not detect any oligomers present in the 15–25 WT or 19–29 S20G fibril samples using the LOC antibody (Figure 5—figure supplement 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig5-v1.jpg)
 
-**Figure 5.:** (A and B) Fibrils were formed by incubating the spine segments overnight under quiescent conditions, the same conditions used to prepared full-length hIAPP fibrils. Next, the samples were applied to HEK293 cells at the specified concentrationsand then cell viability was quantified using MTT dye reduction. Bars show median cell viability; dashed lines show median cell viability from 10 μM mIAPP and hIAPP. (A) 15–25 WT and 15–25 S20G fibrils are not toxic compared to full-length hIAPP fibrils (n = 12 across four biological replicates, each with three technical replicates). (B) 19–29 WT fibrils are mildly cytotoxic and 19–29 S20G fibrils are significantly more cytotoxic than 19–29 WT fibrils (****p<0.0001 using a Mann-Whitney U test; n = 12 across four biological replicates, each with three technical replicates). 19–29 S20G fibrils (10 μM) are similarly cytotoxic to full-length hIAPP fibrils at the same concentration (lower dashed line) (p=0.09 using an unpaired t-test with equal standard deviations). (C) The insoluble fraction of the 50 μM 19–29 S20G cytotoxic preparation contains the cytotoxic species. 19–29 S20G fibrils were formed overnight at room temperature and then pelleted by centrifugation. The soluble fraction was carefully removed and then filtered to ensure it contained no insoluble material. The insoluble material was resuspended in its original volume. Each sample was applied to HEK293 cells and then cell viability was quantified with MTT dye reduction (***p<0.0002 using an ordinary one-way ANOVA; n = 3 technical replicates) (D) and (E) Using a FRET-based biosensor assay for monitoring caspase-3 activity in real-time, 19–29 S20G fibrils induce the most caspase-3 activity, whereas segments 15–25 did not induce caspase-3 activity, consistent with the MTT dye reduction assay results. 50 μM of each spine segment seeded with 166 nM seeds was applied to stably transfected CHO cells. (D) Fold difference was recorded over 24 h. Datapoints represent average fold difference. The dashed line represents the 16 h mark. (E) Average levels of caspase-3 activation after a 16 h incubation relative to untreated cells (***p<0.0002; ****p<0.0001 using an ordinary one-way ANOVA, Bonferroni correction; n = 5 technical replicates).DOI: http://dx.doi.org/10.7554/eLife.19273.018
+**Figure 5.:** (A and B) Fibrils were formed by incubating the spine segments overnight under quiescent conditions, the same conditions used to prepared full-length hIAPP fibrils. Next, the samples were applied to HEK293 cells at the specified concentrationsand then cell viability was quantified using MTT dye reduction. Bars show median cell viability; dashed lines show median cell viability from 10 μM mIAPP and hIAPP. (A) 15–25 WT and 15–25 S20G fibrils are not toxic compared to full-length hIAPP fibrils (n = 12 across four biological replicates, each with three technical replicates). (B) 19–29 WT fibrils are mildly cytotoxic and 19–29 S20G fibrils are significantly more cytotoxic than 19–29 WT fibrils (****p<0.0001 using a Mann-Whitney U test; n = 12 across four biological replicates, each with three technical replicates). 19–29 S20G fibrils (10 μM) are similarly cytotoxic to full-length hIAPP fibrils at the same concentration (lower dashed line) (p=0.09 using an unpaired t-test with equal standard deviations). (C) The insoluble fraction of the 50 μM 19–29 S20G cytotoxic preparation contains the cytotoxic species. 19–29 S20G fibrils were formed overnight at room temperature and then pelleted by centrifugation. The soluble fraction was carefully removed and then filtered to ensure it contained no insoluble material. The insoluble material was resuspended in its original volume. Each sample was applied to HEK293 cells and then cell viability was quantified with MTT dye reduction (***p<0.0002 using an ordinary one-way ANOVA; n = 3 technical replicates) (D) and (E) Using a FRET-based biosensor assay for monitoring caspase-3 activity in real-time, 19–29 S20G fibrils induce the most caspase-3 activity, whereas segments 15–25 did not induce caspase-3 activity, consistent with the MTT dye reduction assay results. 50 μM of each spine segment seeded with 166 nM seeds was applied to stably transfected CHO cells. (D) Fold difference was recorded over 24 h. Datapoints represent average fold difference. The dashed line represents the 16 h mark. (E) Average levels of caspase-3 activation after a 16 h incubation relative to untreated cells (***p<0.0002; ****p<0.0001 using an ordinary one-way ANOVA, Bonferroni correction; n = 5 technical replicates).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Oligomers were probed using a dot bot assay with the polyclonal anti-oligomer antibody, LOC. hIAPP oligomers were used as the positive control for LOC binding.DOI: http://dx.doi.org/10.7554/eLife.19273.019
+**Figure 5—figure supplement 1.:** Oligomers were probed using a dot bot assay with the polyclonal anti-oligomer antibody, LOC. hIAPP oligomers were used as the positive control for LOC binding.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Chemical structure of EGCG. (B) Negative-stain electron micrographs reveal that EGCG mitigates 19–29 S20G fibril formation. 19–29 S20G was incubated overnight at room temperature under quiescent conditions in buffer alone or with equimolar concentration of ECGC. Next, the samples were spotted onto carbon-coated copper grids for negative-stain EM analysis. (C) EGCG mitigates 19–29 S20G cytotoxicity. Samples were generated as described in panel B and then applied to HEK293 cells. Cell viability was quantified using MTT dye reduction. Columns indicate median cell viability. Different symbols correspond to values observed in each independent experiment (***p=0.0004 using a unpaired t-test with Welch’s correction for unequal variances; n = 9 across three biological replicates, each with three technical replicates). (D) Negative-stain EM reveals that EGCG does not mitigate fibril formation of 15–25 WT, a spine segment that does not possess a hydrophobic core. 15–25 WT was incubated for five days under shaking conditions with equimolar concentrations of EGCG. Next, the samples were spotted onto carbon-coated copper grids for negative-stain EM.DOI: http://dx.doi.org/10.7554/eLife.19273.020
+**Figure 5—figure supplement 2.:** (A) Chemical structure of EGCG. (B) Negative-stain electron micrographs reveal that EGCG mitigates 19–29 S20G fibril formation. 19–29 S20G was incubated overnight at room temperature under quiescent conditions in buffer alone or with equimolar concentration of ECGC. Next, the samples were spotted onto carbon-coated copper grids for negative-stain EM analysis. (C) EGCG mitigates 19–29 S20G cytotoxicity. Samples were generated as described in panel B and then applied to HEK293 cells. Cell viability was quantified using MTT dye reduction. Columns indicate median cell viability. Different symbols correspond to values observed in each independent experiment (***p=0.0004 using a unpaired t-test with Welch’s correction for unequal variances; n = 9 across three biological replicates, each with three technical replicates). (D) Negative-stain EM reveals that EGCG does not mitigate fibril formation of 15–25 WT, a spine segment that does not possess a hydrophobic core. 15–25 WT was incubated for five days under shaking conditions with equimolar concentrations of EGCG. Next, the samples were spotted onto carbon-coated copper grids for negative-stain EM.
 
 Based on our examination of the insoluble and soluble fractions of the cytotoxic 19–29 S20G sample, we determine that the cytotoxicity of 19–29 S20G mainly resides in its fibrillar form. We tested the cytotoxicity of the total, insoluble and soluble fractions of the 19–29 S20G sample to HEK293 cells using MTT dye reduction. We observe that the insoluble fraction, which contains amyloid fibrils, is similarly cytotoxic to the total (Figure 5C), just as we observed with full-length hIAPP (Figure 1D, Figure 1—figure supplement 1B). These results suggest that 19–29 S20G may form the toxic spine of full-length hIAPP.
 
@@ -170,19 +358,19 @@ Next we tested whether the spine segments activate pro-apoptotic machinery using
 
 Using this system, we observe that segment 19–29 S20G elicits the most caspase-dependent cytotoxicity of the spine segments and segments 15–25 are not cytotoxic (Figure 5D and E). Segment 19–29 S20G is not as cytotoxic as full-length hIAPP in this assay, possibly because hIAPP interaction with heparan sulfate proteoglycans (HSPG) is important for apoptosis induction (Oskarsson et al., 2015), and residues 1–8, which are missing in all of the spine segments, are required for hIAPP binding to HSPG’s.
 
-## Fibril seeds of 15–25 WT reduce the cytotoxicity of full-length hIAPP
+### Fibril seeds of 15–25 WT reduce the cytotoxicity of full-length hIAPP
 
 Given that the spine segments seed full-length hIAPP fibril formation and that 19–29 S20G and 15–25 WT fibrils elicit different cytotoxic effects, we investigated whether seeding with either of the spine segments alters hIAPP cytotoxicity. To do this, we prepared seeded hIAPP at 10 μM with 10% monomer equivalent of pre-formed seeds, the same conditions used in the ThT assay in Figure 1G. For all cytotoxicity assays, we dilute samples 1 to 10 to the concentration specified in culture medium containing pre-plated cells. Thus, we tested the cytotoxicity of seeded hIAPP at 1 μM in order to preserve the conditions of the ThT assay.
 
-Using MTT dye reduction, we observe that hIAPP seeded with non-toxic 15–25 WT fibrils is less cytotoxic than hIAPP alone, but hIAPP seeded with stable, toxic 19–29 S20G fibrils is similarly cytotoxic to hIAPP alone (
+Using MTT dye reduction, we observe that hIAPP seeded with non-toxic 15–25 WT fibrils is less cytotoxic than hIAPP alone, but hIAPP seeded with stable, toxic 19–29 S20G fibrils is similarly cytotoxic to hIAPP alone (Figure 6). Likewise, hIAPP seeded with stable, toxic 19–29 S20G fibrils is significantly more cytotoxic than hIAPP seeded with labile, non-toxic 15–25 WT fibrils (Figure 6). Seeds alone are not cytotoxic, indicating the cytotoxic effects we observe originate from the interaction of each seed with hIAPP and not the seed alone.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig6-v1.jpg)
 
-**Figure 6.:** In this experiment, we incubated 10 μM hIAPP with or without 10% monomer equivalent of pre-formed seeds overnight under quiescent conditions, the same conditions used to seed full-length hIAPP fibril formation in Figure 1. Next, we diluted the samples 1 to 10 in culture media containing pre-plated Rin5F cells. Note: the concentration of IAPP used in this experiment is less than the IAPP concentrations used in the cytotoxicity assays in Figures 1 and 5. hIAPP seeded with stable, toxic 19–29 S20G fibrils is more cytotoxic to Rin5F cells than hIAPP seeded with labile, non-toxic 15–25 WT fibrils. Columns indicate median cell viability (ns = not significant; **p=0.006; ****p<0.0001 using an unpaired t-test with equal standard deviations, n = 9 across three biological replicates, each with three technical replicates). 19–29 S20G seeds and 15–25 WT seeds (100 nM each) are not cytotoxic to Rin5F cells.DOI: http://dx.doi.org/10.7554/eLife.19273.021
+**Figure 6.:** In this experiment, we incubated 10 μM hIAPP with or without 10% monomer equivalent of pre-formed seeds overnight under quiescent conditions, the same conditions used to seed full-length hIAPP fibril formation in Figure 1. Next, we diluted the samples 1 to 10 in culture media containing pre-plated Rin5F cells. Note: the concentration of IAPP used in this experiment is less than the IAPP concentrations used in the cytotoxicity assays in Figures 1 and 5. hIAPP seeded with stable, toxic 19–29 S20G fibrils is more cytotoxic to Rin5F cells than hIAPP seeded with labile, non-toxic 15–25 WT fibrils. Columns indicate median cell viability (ns = not significant; **p=0.006; ****p<0.0001 using an unpaired t-test with equal standard deviations, n = 9 across three biological replicates, each with three technical replicates). 19–29 S20G seeds and 15–25 WT seeds (100 nM each) are not cytotoxic to Rin5F cells.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Negative-stain electron micrographs reveal fibrils made by seeding with each spine segment do not have markedly different morphologies. Unseeded hIAPP forms pre-dominantly striated ribbons of uniform width that bundle together; some fibrils have twists (black arrow head). hIAPP fibrils made by seeding with stable, toxic 19–29 S20G fibrils form striated ribbons of varying widths and some twisted fibrils (black arrow head). hIAPP fibrils made by seeding with labile, non-toxic 15–25 WT fibrils form striated ribbons that appear slightly thinner than unseeded hIAPP fibrils. (B) and (C) X-ray fiber diffraction and radial profile analysis suggest hIAPP fibrils made by seeding with toxic and non-toxic segments have slightly different structures. hIAPP fibrils made by seeding with stable, toxic 19–29 S20G fibrils display shorter Bragg spacings compared to hIAPP fibrils made by seeding with labile, non-toxic 15–25 WT fibrils. The shorter spacings suggest tighter fibril packing.DOI: http://dx.doi.org/10.7554/eLife.19273.022
+**Figure 6—figure supplement 1.:** (A) Negative-stain electron micrographs reveal fibrils made by seeding with each spine segment do not have markedly different morphologies. Unseeded hIAPP forms pre-dominantly striated ribbons of uniform width that bundle together; some fibrils have twists (black arrow head). hIAPP fibrils made by seeding with stable, toxic 19–29 S20G fibrils form striated ribbons of varying widths and some twisted fibrils (black arrow head). hIAPP fibrils made by seeding with labile, non-toxic 15–25 WT fibrils form striated ribbons that appear slightly thinner than unseeded hIAPP fibrils. (B) and (C) X-ray fiber diffraction and radial profile analysis suggest hIAPP fibrils made by seeding with toxic and non-toxic segments have slightly different structures. hIAPP fibrils made by seeding with stable, toxic 19–29 S20G fibrils display shorter Bragg spacings compared to hIAPP fibrils made by seeding with labile, non-toxic 15–25 WT fibrils. The shorter spacings suggest tighter fibril packing.
 
 There are two possible explanations for the reduced cytotoxicity of the seeded 15–25 WT sample. First, the 15–25 WT seeds may seed a non-toxic species of full-length hIAPP, or second, the 15–25 WT seeds may interact with full-length hIAPP in some way that reduces its cytotoxicity.
 
@@ -196,11 +384,11 @@ These findings motivated us to determine the structure of the spine of hIAPP fib
 
 The experiments of this study show that the 19–29 S20G atomic structure recapitulates many of the structural features and cytotoxic properties of hIAPP. First, preparations of 19–29 S20G that contain fibrils are cytotoxic, as is the case for full-length hIAPP. Second, X-ray fiber diffraction calculated from the dry interface of the 19–29 S20G atomic structure shares key features with fiber diffraction collected from full-length hIAPP fibrils. Third, segment 19–29 S20G elicits cytotoxicity by altering cell metabolism and activating pro-apoptotic machinery, mechanisms by which full-length hIAPP fibrils are thought to contribute to pancreatic β-cell death during T2D. Fourth, the early onset S20G mutation confers greater cytotoxicity within segment 19–29 and within full-length hIAPP. Last, EGCG, a flavanol that mitigates full-length hIAPP fibril formation and cytotoxicity, likewise mitigates 19–29 S20G fibril formation and cytotoxicity. These results, taken together with the canonical pathogenic amyloid fibril architecture of segment 19–29 S20G, suggest it represents the toxic amyloid spine of hIAPP.
 
-Our studies begin to provide a framework for understanding which hIAPP fibril polymorphs may contribute to pancreatic β-cell death during T2D. Previous structural studies of hIAPP protein segments (
+Our studies begin to provide a framework for understanding which hIAPP fibril polymorphs may contribute to pancreatic β-cell death during T2D. Previous structural studies of hIAPP protein segments (Wiltzius et al., 2008, 2009a; Soriaga et al., 2015) and full-length hIAPP (Luca et al., 2007; Weirich et al., 2016; Goldsbury et al., 1997; Kajava et al., 2005; Bedrood et al., 2012; Wineman-Fisher et al., 2015) identified an array of structures with diverse side-chain and sheet arrangements; the 15 hIAPP protein segment structures that overlap the hIAPP amyloid spine belong to six different steric-zipper classes (Figure 7). These multiple diverse structures suggest there is significant polymorphism within the hIAPP amyloid spine, but exactly which of these polymorphs elicit cytotoxicity was not known. By studying the structures and cytotoxic effects of protein segments in parallel, we identify a cytotoxic hIAPP fibril structure that may contribute to pancreatic β-cell death during T2D. Additionally, our studies suggest that not all hIAPP fibril structures are cytotoxic.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/19273/elife-19273-fig7-v1.jpg)
 
-**Figure 7.:** Parallel (//) or Anti-parallel (A//) refers to the orientation of β-strands within β-sheets. Registry refers to the translational offset of β-sheets perpendicular to the fiber axis.DOI: http://dx.doi.org/10.7554/eLife.19273.023
+**Figure 7.:** Parallel (//) or Anti-parallel (A//) refers to the orientation of β-strands within β-sheets. Registry refers to the translational offset of β-sheets perpendicular to the fiber axis.
 
 Both atomic structures presented here reveal a new and potentially important observation: curved β-sheets. In the dry interface of the 19–29 S20G atomic structure, the curved β-sheets accommodate the tightly packed hydrophobic core, which includes a bulky phenylalanine, while maintaining high shape complementarity and large buried surface area. Paradoxically, in the 15–25 WT atomic structure, the curved β-sheets appear to have an opposite effect: the curved β-sheets appear to prevent adjacent sheets from associating to form a canonical pathogenic amyloid fibril architecture. In both atomic structures, the effect of the curved β-sheets is dictated by the registry of adjacent β-sheets (Supplementary file 1, Figure 7).
 
@@ -212,19 +400,19 @@ These findings, expedited by MicroED, may inform our understanding of hIAPP fibr
 
 ## Materials and methods
 
-## IAPP and protein segments
+### IAPP and protein segments
 
 Human IAPP(1–37)-NH2 wild-type and mouse IAPP(1–37)NH2 wild-type were synthesized by Innopep (San Diego, CA) and CS Bio (Menlo Park, CA) and purified to greater than 98% purity. Human and mouse IAPP were prepared by dissolving the lyophilized proteins at 0.25–1 mM in 100% HFIP and leaving them to dissolve for several hours to ensure complete solubility. Next, the HFIP was removed with a CentriVap Concentrator (Labconco, Kansas City, MO). After removal of the HFIP, the peptides were dissolved at 1 mM, 5 mM, or 10 mM in 100% DMSO. The DMSO peptide stocks were diluted 100-fold in filter-sterilized Dulbecco’s PBS (Cat. # 14200–075, Life Technologies, Carlsbad, CA). Samples were incubated at room temperature for the designated time periods.
 
 All four spine segments were synthesized by GenScript (Piscataway, NJ) and purified to greater than 98% purity. Fibrils were formed by dissolving lyophilized peptide at 1 mM in PBS and 1% DMSO.
 
-## Crystallization
+### Crystallization
 
 15-FLVHSSNNFGA-25 (15–25 WT). 15–25 WT was dissolved at 20 mg/ml in ice-cold, nano-pure water and then spin-filtered. Crystals were grown using the hanging drop vapor diffusion method at 4°C in 0.35 M NaSCN and 35% MPD. Crystals grew within several hours and reached maximum size in a week. 3D crystals only a few hundred nanometers thick grew alongside microcrystals in the same drops.
 
 19-SGNNFGAILSS-29 (19–29 S20G). Microcrystals were grown using the hanging drop vapor diffusion method at 30°C in 0.2M acetate salts and 40% MPD. 3D crystals only a few hundred nanometers thick were grown in batch by dissolving lyophilized peptide at 1 mM in PBS and 1% DMSO without seeding. Crystals grew on the bench top at room temperature in several hours.
 
-## MicroED data collection
+### MicroED data collection
 
 The procedures for MicroED data collection and processing largely follow published procedures (Hattne et al., 2015; Shi et al., 2016). Briefly, a 2–3 μL drop of crystals in suspension was deposited onto a Quantifoil holey-carbon EM grid then blotted and vitrified by plunging into liquid ethane using a Vitrobot Mark IV (FEI, Hillsboro, OR). Blotting times and forces were optimized to keep a desired concentration of crystals on the grid and to avoid damaging the crystals. Frozen grids were then either immediately transferred to liquid nitrogen for storage or placed into a Gatan 626 cryo-holder for imaging. Images and diffraction patterns were collected from crystals using an FEG-equipped FEI Tecnai F20 TEM operating at 200 kV and fitted with a bottom mount TVIPS TemCam-F416 CMOS-based camera. Diffraction patterns were recorded by operating the detector in a movie mode termed ‘rolling shutter’ with 2×2 pixel binning (Nannenga et al., 2014b). Exposure times for these images were either 2 or 3 s per frame. During each exposure, crystals were continuously unidirectionally rotated within the electron beam at a fixed rate of 0.3 degrees per second, corresponding to a fixed angular wedge of 0.6 or 0.9 degrees per frame.
 
@@ -238,7 +426,7 @@ For 19–29 S20G, data from six crystals were merged to assemble the dataset use
 
 For, 15–25 WT, data from six crystals were merged to assemble the dataset used for molecular replacement. Of note, the diffraction pattern from the 15-25 WT crystals diffracted with MicroED reveal a pseudo two-fold symmetry. In line with this observation, we indexed and integrated the diffraction images with space group C2, but the datasets had relatively poor statistics compared to the P1 datasets and our attempts at refining molecular replacement solutions from the C2 datasets failed.
 
-## Structure determination
+### Structure determination
 
 19–29 S20G. We determined the structure using molecular replacement. An idealized 7-residue poly-alanine strand led us to our atomic model. The solution was identified using Phaser (McCoy, 2007). A dataset merged from six crystals was used to identify the initial model, but subsequent rounds of model building and refinement were carried out using a dataset from a single crystal. Free R flags were copied over from the dataset merged from six crystals to the single crystal dataset. Subsequent rounds of model building and refinement were carried out using COOT and Phenix, respectively (Emsley and Cowtan, 2004; McCoy et al., 2005). Electron scattering factors were used for refinement.
 
@@ -246,21 +434,21 @@ For, 15–25 WT, data from six crystals were merged to assemble the dataset used
 
 Calculations of the area buried and shape complementarity (SC) were performed with AREAIMOL (Lee and Richards, 1971; Collaborative Computational Project, Number 4, 1994) and SC (Connolly, 1983; Richards, 1977; Lawrence and Colman, 1993), respectively.
 
-## ThT binding
+### ThT binding
 
 30 μL of human and mouse IAPP preparations used in the cytotoxicity assays in Figure 1 were pipetted into a black-wall 384-well plate and then mixed with 3 μL of 1 mM Thioflavin-T (ThT). Fluorescence was recorded with an excitation wavelength of 444 nm and an emission wavelength of 482 nm.
 
-## Dot blot assay
+### Dot blot assay
 
 1 μL of each sample generated for cytotoxicity assays in Figure 1 and Figure 5A and B was applied to a nitrocellulose membrane (Cat. # 162–0146, BioRad, Hercules, CA). Next, the membrane was blocked in 5% (w/v) nonfat dry milk in PBS-T (T = 0.1% (v/v) Tween-20 (Cat. #BP337-500, Fisher)) for 1 hr at room temperature. After blocking, the membrane was incubated with a 1:100 dilution of LOC polyclonal rabbit serum (Pacific Immunology, Ramona, CA) in 5% (w/v) milk in PBS-T at 4°C overnight. The membrane was washed in PBS-T for 10 min three times, and then incubated with anti-rabbit secondary antibody (RRID:AB_2307391; Cat. #111-035-144, Jackson ImmunoResearch, West Grove, PA) diluted 1:10,000 in PBS-T for 1 hr at RT. The membrane was washed three more times, and then the signal was developed with Clarity Western ECL Substrate (Cat. #170–5061, BioRad) and documented with a CCD camera. Exposures ranging from 5 s to 5 min were collected, but the 5 min exposure was used in all figures.
 
-## Imaging and negative stain transmission electron microscopy
+### Imaging and negative stain transmission electron microscopy
 
 Samples were spotted onto grids (holey or non-holey) and allowed to settle on the grid for 160 to 180 s. Remaining liquid was wicked off and grids were left to dry before analyzing. Sample grids were analyzed on the TF20 Electron Microscope (FEI, Hillsboro, OR). Images were collected at 3500 or 6000x magnification with an additional 1.4x post-column magnification and recorded using a TIETZ F415MP 16 megapixel CCD camera.
 
 Samples for negative-stain EM were spotted on non-holey carbon-coated grids andallowed to settle on the grid for 160 to 180 s. Remaining liquid was wicked off and then 2% uranyl acetate was applied to the grid. After 1 min, the uranyl acetate was wicked off. The grids were left to dry before analyzing on the T12 Electron Microscope (FEI). Images were collected at 3,200 or 15,000x magnification and recorded using a Gatan 2kX2k CCD camera.
 
-## Cell culture
+### Cell culture
 
 Rin5F cells were purchased from ATCC (RRID:CVCL_2177; Cat. # CRL-2058, Manassas, VA). Cells were cultured in RPMI media (ATCC, Cat. # 30–2001) plus 10% heat-inactivated fetal bovine serum. Cells were cultured at 37°C in a 5% CO2 incubator. They tested negative for mycoplasma using a MycoAlert PLUS Detection Kit (Cat. #: LT07-701, Lonza, Switzerland) and they were authenticated using Cytochrome C Oxidase 1 (COX1) gene analysis by Laragen (Culver City, CA).
 
@@ -268,25 +456,25 @@ HEK293 c18 cells (hereon referred to as HEK293) were a gift from Carol Eng in th
 
 CHO cells were purchased from ATCC (RRID:CVCL_0214; Cat. #: CCL-61). Cells were cultured in RPMI 1640 with 11 mM glucose (Sigma) with 10% FBS, and 1% pen-strep. Cells were cultured at 37°C in a 5% CO2 incubator. They tested negative for mycoplasma using a PCR-based method and they were authenticated using mRNA analysis.
 
-## Spine segment fibril formation
+### Spine segment fibril formation
 
 Spine segments were dissolved at 1 mM in PBS with 1% DMSO. Samples were incubated at room temperature for 15 hr or up to one week under quiescent conditions to form fibrils. The presence of fibrils was confirmed with electron microscopy. Fibril samples were diluted appropriately for cell viability assays and fibril formation assays.
 
-## Fiber diffraction and radial profile analysis
+### Fiber diffraction and radial profile analysis
 
 Fibrils were spun down and washed with water three times to remove any salt. Fibrils of spine segments were spun down using a tabletop microfuge. Full-length hIAPP fibrils and spine segment seeds were spun down using an Airfuge Ultracentrifuge set at 75,000 rpm for 1 hr (Beckman-Coulter, Brea, CA). The samples were concentrated 10x in water and applied between two capillary ends and then the samples were left to dry overnight. Dried fibrils of spine segments and full-length hIAPP in Figure 3D were analyzed with a RIGAKU R-AXIS HTC imaging plate detector using Cu K(alpha) radiation from a FRE+ rotating anode generator with VARIMAX HR confocal optics (Rigaku, Tokyo, Japan). Fiber diffraction from full-length hIAPP fibrils used in Figure 6 was recorded by an ADSC Q315 CCD detector at the Advanced Photon Source 24-ID-E beamline (Argonne, IL).
 
 Radial profiles were calculated using a program written in-house. The program calculates the average intensity as a function of distance from the beam center.
 
-## Thioflavin-T assays
+### Thioflavin-T assays
 
 Thioflavin-T (ThT) assays were performed in black 96-well plates (Nunc, Rochester, NY) sealed with UV optical tape. hIAPP and mIAPP were dissolved at 1 mM in 100% HFIP. The peptides were then diluted 100-fold in 20 mM sodium acetate pH 6.5 and 10 μM ThT. Unsonicated fibril seeds were added at 1 μM monomer equivalent concentration (10% v/v). ThT fluorescence was recorded with excitation and emission of 444 nm and 482 nm, respectively, using a SpectraMax M5 (Molecular Devices, Sunnyvale, CA). Experiments were performed in quadruplicate and readings were recorded every 3 min.
 
-## Model building and energy analysis of 19–29 WT and 19–29 S20G
+### Model building and energy analysis of 19–29 WT and 19–29 S20G
 
 To investigate whether 19–29 WT could form a similar structure to 19–29 S20G, we modeled a serine at position 20 in the 19–29 S20G atomic structure. We adjusted the backbone torsion angles so that they fell within the ‘allowed’ regions of the Ramachandran plot for a non-glycine residue (Emsley and Cowtan, 2004). We performed energy minimization using FoldIt (RRID:SCR_003788) (Cooper et al., 2010) and compared the energies of the resulting models of 19–29 WT and 19–29 S20G.
 
-## Cytotoxicity assays
+### Cytotoxicity assays
 
 HEK293 cells and Rin5F cells were plated at 10,000 and 27,000 cells per well in 90 μL, respectively, in 96-well plates (Cat. # 3596, Costar, Tewksbury, MA). Cells were allowed to adhere to the plate for 20–24 hr.
 
@@ -298,7 +486,7 @@ For all assays, 10 μL of sample was added to cells. By doing this, samples were
 
 The appropriate statistical test for significance was determined by assessing whether (1) The sample sets had a Gaussian distribution using a D’Agostino-Pearson omnibus normality test and (2) The sample sets had equal variance using a Bartlett’s test or F test. For samples with Gaussian distributions and equal variances, we employed an unpaired t-test with equal standard deviations. For samples with Gaussian distributions, but unequal variances, we employed an unpaired t-test with Welch’s correction. For samples with non-Gaussian distributions and unequal variances, we employed a Mann-Whitney U-test.
 
-## 3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) dye reduction assay for cell viability
+### 3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) dye reduction assay for cell viability
 
 After a 24 hr incubation of samples with cells, 20 μL of Thiazolyl Blue Tetrazolium Bromide MTT dye (Sigma, St. Louis, MO) was added to each well and incubated for 3.5 h at 37°C under sterile conditions. The MTT dye stock is 5 mg/mL in Dulbecco’s PBS. Next, the plate was removed from the incubator and 100 μL of MTT stop solution (Cat. #4101, Promega, Madison, WI) was added to each well. We ensured the MTT crystals were fully dissolved by placing the plates on an orbital shaker (slow speed) for about an hour prior to taking measurements. Alternatively, the MTT assay was stopped by carefully aspirating off the culture media and adding 100 μL of 100% DMSO to each well. Absorbance was measured at 570 nm using a SpectraMax M5. A background reading was recorded at 700 nm and subsequently subtracted from the 570 nm value.
 
@@ -306,11 +494,11 @@ Cells treated with vehicle alone (PBS + 0.1% DMSO) were designated at 100% via
 
 For the MTT reduction assay in Figure 6, a single data point from the mIAPP sample set was deemed an outlier based on 2 lines of evidence: (1) The data point was identified as an outlier using a Grubb’s test (α = 0.1) for outliers using the n = 9 sample set, and (2) When the sample set was pooled with more data collected for different experiments (n = 42), the data point was identified as an outlier using a more stringent Grubb’s test (α = 0.01).
 
-## Caspase-3/7 activation assay
+### Caspase-3/7 activation assay
 
 We used the caspase-3/7 GLO assay (Cat. # G8091, Promega, Madison, WI) to detect caspase-3/7 activation. For this assay, Rin5F cells were plated as previously described in white-walled 96-well plates (Cat. # 3917, Costar, Tewksbury, MA). After the designated aging period of each hIAPP preparation, 10 μL of sample was added to cells and thus diluted 1/10 from in vitro stocks. Experiments were performed in triplicate. Samples were incubated with cells for 24 h. Next, cell culture media, caspase-3/7 reagent, and the cells were brought to room temperature. All media was aspirated from wells and then replaced with 25 μL of media and 25 μL of caspase-3/7 reagent and mixed thoroughly. The plate was incubated at room temperature for 30 min and then luminescence was measured using a SpectraMax M5. Experimental points were normalized to vehicle-treated cells, which were designated as 100%. Cells treated with 2 μM staurosporine were used as a positive control to ensure the assay kit worked correctly.
 
-## FRET-based real-time monitoring of caspase-3 activity
+### FRET-based real-time monitoring of caspase-3 activity
 
 CHO cells were stably transfected with a vector producing EYFP and ECFP connected via a short linker containing the Asp-Glu-Val-Asp (DEVD) sequence targeted by activated caspase-3. The short linker allows fluorescence energy transfer (FRET) to occur between the two fluorophores. During apoptosis activated caspase-3 cleaves the linker resulting in a loss of FRET measured as a reduced 540 nm/480 nm emission ratio.
 
@@ -318,6 +506,6 @@ Cells were plated at 25,000 cells per well in black 96-well optical bottom plate
 
 hIAPP peptides (1–37, 15–25 WT and S20G, 19–29 WT and S20G) (final peptide concentration 50 μM in 1% DMSO) were mixed with sonicated, preformed fibrils (seeds) made of the same peptide (corresponding to 166 nM of monomers) and immediately added to the plated cells. FRET was monitored in real-time by measuring emission at 480 nm and 540 nm with 440 nm excitation in a FLUOstar Omega microplate reader (BMG Labtech) over 24 hr at 37°C.
 
-## SDS sensitivity assay
+### SDS sensitivity assay
 
 Fibrils of 15–25 WT and 19–29 S20G at monomer equivalent concentrations were allowed to form for one week to ensure complete fibril formation. The samples were homogenized with vortexing, and then aliquoted to 0.5 mL tubes with equal volumes. Each fibril sample was treated with water or increasing amounts of SDS, and then heated at 55°C for 20 min. Next, an aliquot of each sample was transferred to a 384-well plate and turbidity was measured by recording absorbance at 340 nm. Each fibril sample was spotted onto a grid for negative-stain EM to analyze fibril abundance. The experiment was repeated twice, but the results of 1 experiment are shown in Figure 4—figure supplement 1.

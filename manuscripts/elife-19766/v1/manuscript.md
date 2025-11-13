@@ -15,25 +15,65 @@
 
 ## Abstract
 
-10.7554/eLife.19766.001 Regeneration is a complex and dynamic process, mobilizing diverse cell types and remodelling tissues over long time periods. Tracking cell fate and behaviour during regeneration in active adult animals is especially challenging. Here, we establish continuous live imaging of leg regeneration at single-cell resolution in the crustacean Parhyale hawaiensis . By live recordings encompassing the first 4-5 days after amputation, we capture the cellular events that contribute to wound closure and morphogenesis of regenerating legs with unprecedented resolution and temporal detail. Using these recordings we are able to track cell lineages, to generate fate maps of the blastema and to identify the progenitors of regenerated epidermis. We find that there are no specialized stem cells for the epidermis. Most epidermal cells in the distal part of the leg stump proliferate, acquire new positional values and contribute to new segments in the regenerating leg. DOI: http://dx.doi.org/10.7554/eLife.19766.001
+Regeneration is a complex and dynamic process, mobilizing diverse cell types and remodelling tissues over long time periods. Tracking cell fate and behaviour during regeneration in active adult animals is especially challenging. Here, we establish continuous live imaging of leg regeneration at single-cell resolution in the crustacean Parhyale hawaiensis. By live recordings encompassing the first 4-5 days after amputation, we capture the cellular events that contribute to wound closure and morphogenesis of regenerating legs with unprecedented resolution and temporal detail. Using these recordings we are able to track cell lineages, to generate fate maps of the blastema and to identify the progenitors of regenerated epidermis. We find that there are no specialized stem cells for the epidermis. Most epidermal cells in the distal part of the leg stump proliferate, acquire new positional values and contribute to new segments in the regenerating leg.
 
 ## Introduction
 
 Many animals have the ability to regenerate parts of their body after suffering a severe injury. Like embryonic development, regeneration is a complex process, mobilising large numbers of cells in a regulated fashion to restore the missing parts to their original form and function. However, compared with embryonic development, regeneration is more difficult to study because it occurs in species and life stages that are less genetically tractable and accessible for continuous observation. Live imaging is particularly challenging for two reasons: first, regeneration is a lengthy process, unfolding on a timescale of weeks, and second, it occurs in larval and adult stages when animals tend to be large and highly mobile. These factors severely limit our ability to observe regenerating organs continuously, at sufficient temporal and spatial resolution. As a result, until now most regenerative studies have had to painstakingly reconstruct the dynamics of regeneration from series of static images, captured at different stages and across several individuals (e.g. Emmel, 1910). Recently, progress has been made in imaging the behaviour of stem cells in the context of physiological tissue turnover, repair and regeneration (Lo Celso et al., 2009; Xie et al., 2009; Eilken et al., 2009; Rompolas et al., 2012; Mateus et al., 2012; Ritsma et al., 2014; Bradshaw et al., 2015; Barbosa et al., 2015; Webster et al., 2016; Gurevich et al., 2016), but in all cases continuous imaging over long timescales has been challenging.
 
-We recently introduced the small amphipod crustacean
+We recently introduced the small amphipod crustacean Parhyale hawaiensis as an experimental model for regenerative studies (Konstantinides and Averof, 2014) (Figure 1A), joining the ranks of previously established models such as fish, amphibians, flatworms and hydrozoans (Goss, 1969; Reddien et al., 2004; Plickert et al., 2012; Gemberling et al., 2013). Adult Parhyale can fully regenerate their limbs throughout their lifetime. A range of genetic approaches have been established in this species, including transgenesis, CRISPR-mediated gene editing, gene knockdown, gene mis-expression, mosaic analysis and gene trapping (Pavlopoulos and Averof, 2005; Pavlopoulos et al., 2009; Liubicich et al., 2009; Ozhan-Kizil et al., 2009; Kontarakis et al., 2011; Konstantinides and Averof, 2014; Serano et al., 2016; Martin et al., 2016). Genomic resources include comprehensive transcriptomes and a draft assembly of the Parhyale genome (http://www.ncbi.nlm.nih.gov/genome/15533). Using these tools we started to investigate the process of limb regeneration in Parhyale (Konstantinides and Averof, 2014). Using clonal markers, we traced the contribution of different cell lineages to regenerated limbs, demonstrating that regenerated tissues arise from separate ectodermal and mesodermal progenitors, which reside locally in the amputated limb (Konstantinides and Averof, 2014). In the mesoderm, we discovered a population of Pax3/7-expressing satellite-like cells that can serve as muscle progenitors during leg regeneration (Konstantinides and Averof, 2014).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig1-v1.jpg)
 
-**Figure 1.:** Parhyale hawaiensis.(A) Amputated Parhyale adult mounted for imaging. The body of the animal is glued onto a coverslip, using a small piece of broken coverslip as a spacer (asterisk). The immobilized leg was amputated as marked with the dashed line. (B) Mounting of the coverslip carrying live Parhyale in a chamber for live imaging (see Materials and methods). (C) Outline of Parhyale thoracic leg (T4 or T5); individual podomeres are highlighted and the position of amputations marked with a dashed line. (D–D’’’) Cellular organization at the distal part of the amputated leg stump. Leg of a mosaic individual expressing H2B-EGFP specifically in the ectoderm (Konstantinides and Averof, 2014); fixed 63 hr post amputation and stained with antibodies for EGFP and acetylated tubulin to reveal ectodermal nuclei and neurons, respectively, and DAPI to label all nuclei. (E) 3-dimensional reconstruction of the same leg stump. (F) Single frame from live recording #04, showing histone-EGFP-labelled nuclei on the leg stump, 52 hr post amputation. Arrowheads and circles mark dividing cells in metaphase and telophase, respectively. (G) Leg stump of a mosaic individual expressing lyn-tdTomato and H2B-EGFP specifically in the mesoderm, 20 hr post amputation. Muscles persist in the proximal part of the leg stump but degenerate in the distal part (top right). The distal part of the leg stump contains a thin strand of interconnected mesodermal cells.DOI: http://dx.doi.org/10.7554/eLife.19766.002
+**Figure 1.:** (A) Amputated Parhyale adult mounted for imaging. The body of the animal is glued onto a coverslip, using a small piece of broken coverslip as a spacer (asterisk). The immobilized leg was amputated as marked with the dashed line. (B) Mounting of the coverslip carrying live Parhyale in a chamber for live imaging (see Materials and methods). (C) Outline of Parhyale thoracic leg (T4 or T5); individual podomeres are highlighted and the position of amputations marked with a dashed line. (D–D’’’) Cellular organization at the distal part of the amputated leg stump. Leg of a mosaic individual expressing H2B-EGFP specifically in the ectoderm (Konstantinides and Averof, 2014); fixed 63 hr post amputation and stained with antibodies for EGFP and acetylated tubulin to reveal ectodermal nuclei and neurons, respectively, and DAPI to label all nuclei. (E) 3-dimensional reconstruction of the same leg stump. (F) Single frame from live recording #04, showing histone-EGFP-labelled nuclei on the leg stump, 52 hr post amputation. Arrowheads and circles mark dividing cells in metaphase and telophase, respectively. (G) Leg stump of a mosaic individual expressing lyn-tdTomato and H2B-EGFP specifically in the mesoderm, 20 hr post amputation. Muscles persist in the proximal part of the leg stump but degenerate in the distal part (top right). The distal part of the leg stump contains a thin strand of interconnected mesodermal cells.
 
 Parhyale has a number of attributes that make it well suited for live imaging of regenerating limbs. First, limb regeneration in Parhyale is relatively rapid, requiring as little as one week for young adults to fully regenerate their legs. Second, the Parhyale exoskeleton (cuticle) is transparent and the limbs are less than 100 µm in diameter, allowing us to image with single-cell resolution through their entire thickness. Third, the chitinous exoskeleton provides a robust support for immobilizing the amputated limb, while protecting the underlying tissues; we can glue the exoskeleton to a solid support without influencing the regenerative process that occurs inside the limb stump. Finally, the transgenic tools that we have established in Parhyale allow us to label the cells of the limb using a range of genetically-encoded fluorescent reporters.
 
-Here we develop a method for immobilizing the amputated legs of active (non-anaesthetized) individuals, which allows us to image regeneration at cellular resolution, continuously over several days (Video 1, based on Konstantinides and Averof, 2014). Using transgenic lines expressing fluorescent proteins localized to nuclei or cell membranes, we are able to track individual cells, to trace their cell lineage and to observe their dynamic behaviours during the course of leg regeneration (Videos 2–10). Based on live imaging and cell tracking, we describe distinct phases of regeneration, characterized by different cell behaviours, we identify the progenitor cells for the regenerated epidermis of the leg, and present fate maps relating the position of cell progenitors in the regenerating limb bud (blastema) to their ultimate fate in the patterned, regenerated leg. Our method also provides an opportunity to re-evaluate the centuries-old concepts of epimorphosis and morphallaxis (Morgan, 1901) based on a direct observation of cell fates.10.7554/eLife.19766.003Video 1.Amputated Parhyale adult mounted for live imaging.Video of the individual shown in Figure 1A, moving extensively while an amputated leg remains immobilised on the coverslip. The amputated limb is marked by an arrowhead in the first frame of the movie.DOI: http://dx.doi.org/10.7554/eLife.19766.00310.7554/eLife.19766.004Video 2.Real-time imaging of amputated Parhyale leg, 5 min post amputation.This mosaic individual has an insertion of an EGFP-expressing transgene specifically in the Mav lineage, labelling haemocytes. We can observe bleeding and adherence of haemocytes to the wound surface. This individual was anaesthetised using clove oil and imaged without our usual mounting procedure.DOI: http://dx.doi.org/10.7554/eLife.19766.00410.7554/eLife.19766.005Video 3.Live imaging of two amputated Parhyale legs, 0 to 14 hr post amputation (hpa), using histone-EGFP to visualize all nuclei.Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. We can observe melanization of the wound at the distal end of each leg stump (arrowheads).DOI: http://dx.doi.org/10.7554/eLife.19766.00510.7554/eLife.19766.006Video 4.Live imaging of amputated Parhyale leg, 1 to 67 hr post amputation (hpa), using histone-EGFP to visualize all nuclei.Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after heat shock. Maximum projection of focal planes capturing the surface of the leg epithelium, from recording #07. We can observe the rapid motility of some cells, probably macrophages, and the slower movement of epithelial cells towards the wound site, located at the bottom of the frame (~15–40 hpa). The video was assembled from three separate clips (0:50–3:50, 4:20–18:20 and 18:55– 66:55 hpa) captured with different settings.DOI: http://dx.doi.org/10.7554/eLife.19766.00610.7554/eLife.19766.007Video 5.Live imaging of regenerating Parhyale leg, 48 to 111 hr post amputation (hpa), using histone-EGFP to visualize all nuclei.Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. Maximum projection of green fluorescence channel, from recording #03. The amputation plane is at the top-right corner of the frame.DOI: http://dx.doi.org/10.7554/eLife.19766.00710.7554/eLife.19766.008Video 6.Live imaging of regenerating Parhyale leg, 48 to 111 hr post amputation (hpa), using DsRed to visualize neurons.DsRed is expressed from the DC5>DsRed transgene. Maximum projection of red fluorescence channel, from recording #03 (same recording as Video 2).DOI: http://dx.doi.org/10.7554/eLife.19766.00810.7554/eLife.19766.009Video 7.Live imaging of regenerating Parhyale leg, 46 to 110 hr post amputation (hpa), using histone-EGFP to visualize all nuclei.Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. Arrowheads highlight two apoptotic nuclei. Maximum projection of focal planes capturing the surface of the leg epithelium, from recording #04. The amputation plane is to the right of the frame.DOI: http://dx.doi.org/10.7554/eLife.19766.00910.7554/eLife.19766.010Video 8.Live imaging of macrophages engulfing cellular debris in a regenerating Parhyale leg.Nuclei are marked by histone-EGFP (PhHS>H2B-EGFP transgene, in green) and neurons are marked by DsRed (DC5>DsRed transgene, in red). Starting around 35 hr post amputation (hpa), a fragment of DsRed-labelled debris becomes engulfed by macrophages (arrowhead). Maximum projection of multiple focal planes, from recording #05.DOI: http://dx.doi.org/10.7554/eLife.19766.01010.7554/eLife.19766.011Video 9.Live imaging of the onset of cell proliferation in a regenerating leg stump, 32 to 55 hr post amputation (hpa), visualized with a geminin-based cell cycle reporter.Cells in the S, G2 and M phases of the cell cycle are marked by EGFP-PhGemN (PhHS>EGFP-PhGemN transgene, in green) and all nuclei are marked by histone-mRuby (PhHS>H2B-mRuby transgene, in red) following a heat shock. The loss of the EGFP-PhGemN after mitosis can be seen clearly in a cell marked by an arrowhead. Maximum projection of several focal planes, from recording #13. The amputation plane is at the top-right corner of the frame.DOI: http://dx.doi.org/10.7554/eLife.19766.01110.7554/eLife.19766.012Video 10.Live imaging of mesoderm in two regenerating Parhyale leg stumps, 3 to 76 hr post amputation (hpa).Two adjacent legs are imaged in a mosaic individual expressing lyn-tdTomato (in white) and H2B-EGFP (in red) specifically in the mesoderm. Muscles at the proximal part of the legs persist, but those near the amputation plane (to the right) degenerate and the inner space of the stump becomes populated by proliferating mesenchymal cells. Maximum projection of multiple focal planes from recording #11. The amputation planes are at the right edge of the frame.DOI: http://dx.doi.org/10.7554/eLife.19766.012
+Here we develop a method for immobilizing the amputated legs of active (non-anaesthetized) individuals, which allows us to image regeneration at cellular resolution, continuously over several days (Video 1, based on Konstantinides and Averof, 2014). Using transgenic lines expressing fluorescent proteins localized to nuclei or cell membranes, we are able to track individual cells, to trace their cell lineage and to observe their dynamic behaviours during the course of leg regeneration (Videos 2–10). Based on live imaging and cell tracking, we describe distinct phases of regeneration, characterized by different cell behaviours, we identify the progenitor cells for the regenerated epidermis of the leg, and present fate maps relating the position of cell progenitors in the regenerating limb bud (blastema) to their ultimate fate in the patterned, regenerated leg. Our method also provides an opportunity to re-evaluate the centuries-old concepts of epimorphosis and morphallaxis (Morgan, 1901) based on a direct observation of cell fates.
+
+![Video 1.](https://cdn.elifesciences.org/articles/19766/elife-19766-media1.mp4.jpg)
+
+**Video 1.:** Video of the individual shown in Figure 1A, moving extensively while an amputated leg remains immobilised on the coverslip. The amputated limb is marked by an arrowhead in the first frame of the movie.
+
+![Video 2.](https://cdn.elifesciences.org/articles/19766/elife-19766-media2.mp4.jpg)
+
+**Video 2.:** This mosaic individual has an insertion of an EGFP-expressing transgene specifically in the Mav lineage, labelling haemocytes. We can observe bleeding and adherence of haemocytes to the wound surface. This individual was anaesthetised using clove oil and imaged without our usual mounting procedure.
+
+![Video 3.](https://cdn.elifesciences.org/articles/19766/elife-19766-media3.mp4.jpg)
+
+**Video 3.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. We can observe melanization of the wound at the distal end of each leg stump (arrowheads).
+
+![Video 4.](https://cdn.elifesciences.org/articles/19766/elife-19766-media4.mp4.jpg)
+
+**Video 4.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after heat shock. Maximum projection of focal planes capturing the surface of the leg epithelium, from recording #07. We can observe the rapid motility of some cells, probably macrophages, and the slower movement of epithelial cells towards the wound site, located at the bottom of the frame (~15–40 hpa). The video was assembled from three separate clips (0:50–3:50, 4:20–18:20 and 18:55– 66:55 hpa) captured with different settings.
+
+![Video 5.](https://cdn.elifesciences.org/articles/19766/elife-19766-media5.mp4.jpg)
+
+**Video 5.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. Maximum projection of green fluorescence channel, from recording #03. The amputation plane is at the top-right corner of the frame.
+
+![Video 6.](https://cdn.elifesciences.org/articles/19766/elife-19766-media6.mp4.jpg)
+
+**Video 6.:** DsRed is expressed from the DC5>DsRed transgene. Maximum projection of red fluorescence channel, from recording #03 (same recording as Video 2).
+
+![Video 7.](https://cdn.elifesciences.org/articles/19766/elife-19766-media7.mp4.jpg)
+
+**Video 7.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. Arrowheads highlight two apoptotic nuclei. Maximum projection of focal planes capturing the surface of the leg epithelium, from recording #04. The amputation plane is to the right of the frame.
+
+![Video 8.](https://cdn.elifesciences.org/articles/19766/elife-19766-media8.mp4.jpg)
+
+**Video 8.:** Nuclei are marked by histone-EGFP (PhHS>H2B-EGFP transgene, in green) and neurons are marked by DsRed (DC5>DsRed transgene, in red). Starting around 35 hr post amputation (hpa), a fragment of DsRed-labelled debris becomes engulfed by macrophages (arrowhead). Maximum projection of multiple focal planes, from recording #05.
+
+![Video 9.](https://cdn.elifesciences.org/articles/19766/elife-19766-media9.mp4.jpg)
+
+**Video 9.:** Cells in the S, G2 and M phases of the cell cycle are marked by EGFP-PhGemN (PhHS>EGFP-PhGemN transgene, in green) and all nuclei are marked by histone-mRuby (PhHS>H2B-mRuby transgene, in red) following a heat shock. The loss of the EGFP-PhGemN after mitosis can be seen clearly in a cell marked by an arrowhead. Maximum projection of several focal planes, from recording #13. The amputation plane is at the top-right corner of the frame.
+
+![Video 10.](https://cdn.elifesciences.org/articles/19766/elife-19766-media10.mp4.jpg)
+
+**Video 10.:** Two adjacent legs are imaged in a mosaic individual expressing lyn-tdTomato (in white) and H2B-EGFP (in red) specifically in the mesoderm. Muscles at the proximal part of the legs persist, but those near the amputation plane (to the right) degenerate and the inner space of the stump becomes populated by proliferating mesenchymal cells. Maximum projection of multiple focal planes from recording #11. The amputation planes are at the right edge of the frame.
 
 ## Results
 
-## Imaging Parhyale leg regeneration
+### Imaging Parhyale leg regeneration
 
 Confocal microscopy on fixed specimens reveals the basic organization of regenerating Parhyale legs. During the first 3 days post amputation, within the exoskeleton of the amputated leg we observe that cells are organized in two distinct layers: an outer epithelial layer and an inner mass of loosely arranged cells. By clonally labelling the ectoderm with EGFP (as described in Konstantinides and Averof, 2014) we can see that the outer layer consists of ectodermal cells whereas the inner cell mass contains mostly mesodermal cells and a few ectodermal cells (Figure 1D–D’’ and E). The latter are likely to represent neurons and glia, as they are associated with nerves, stained using antibodies for acetylated-tubulin (Figure 1D’’’). Muscles are no longer visible near the amputation site, but remain intact in more proximal parts of the leg (Figure 1G).
 
@@ -41,33 +81,186 @@ To study the dynamics of leg regeneration we turned to live imaging. A major cha
 
 To visualize individual cells and to track their behaviour we employed transgenes that express fluorescent proteins specifically localised to the nuclei and mitotic chromosomes of cells (H2B-EGFP) or to the cell membrane (lyn-tdTomato), under the ubiquitously-expressed heat-inducible PhHS promoter (Pavlopoulos et al., 2009). The T2A ribosome skipping sequence (Trichas et al., 2008) also allowed us to express both fluorescent proteins from the same transgene (PhHS>lyn-tdTomato-2A-H2b-EGFP). These transgenes allow us to track the position of each cell and to detect mitoses (Figure 1F, Video 7) and apoptotic events (seen as fragmenting nuclei, Video 7) throughout the leg, with single cell resolution. Haemocytes can be observed transiently, passing through the inner space of the leg (visible in single timelapse frames), and motile phagocytic cells (‘macrophages’) can be seen engulfing cellular debris (Video 8). A separate transgenic line, DC5>DsRed, expressing DsRed specifically in neurons (Konstantinides and Averof, 2014), reveals that neurons are present in the regenerating leg stump at all stages of regeneration. Nerves can be seen retracting from the distal tip of the amputated leg while at the same time extending new processes towards it (Video 6).
 
-Using these transgenic markers we captured 13 high-resolution recordings spanning the first 4.5 days of regeneration (summarized in
+Using these transgenic markers we captured 13 high-resolution recordings spanning the first 4.5 days of regeneration (summarized in Figure 2 and Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig2-v1.jpg)
 
-**Figure 2.:** For each recording (numbered #1 to #13) we indicate the time period covered relative to the time of amputation (hpa, hours post amputation), the onset of cell proliferation, molting events and survival. Further details on each recording are given in Table 1.DOI: http://dx.doi.org/10.7554/eLife.19766.013
+**Figure 2.:** For each recording (numbered #1 to #13) we indicate the time period covered relative to the time of amputation (hpa, hours post amputation), the onset of cell proliferation, molting events and survival. Further details on each recording are given in Table 1.
 
-## Distinct cell behaviours underpin different phases of leg regeneration
+**Table 1.**
+ Summary of live recordings by confocal microscopy.
 
-A specific sequence of events and cell behaviours unfolds during the course of regeneration at the distal 100–200 µm of the regenerating limb stump. Based on these events, we can subdivide the regenerative process into distinct phases (
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Transgenes</th>
+      <th>Start of recording (hpa)</th>
+      <th>Duration of recording (hours)</th>
+      <th>Timelapse interval (min)</th>
+      <th>Number of z slices</th>
+      <th>Step ofz slices (µm)</th>
+      <th>Videos and Figures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td>PhHS&gt;H2B-EGFP</td>
+      <td>24</td>
+      <td>40</td>
+      <td>30</td>
+      <td>22</td>
+      <td>4.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>PhHS&gt;H2B-EGFP</td>
+      <td>24</td>
+      <td>8</td>
+      <td>15</td>
+      <td>25</td>
+      <td>4.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>
+      <td>48</td>
+      <td>63</td>
+      <td>45</td>
+      <td>22</td>
+      <td>3.1</td>
+      <td>Figure 5, 6A Videos 5, 6</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>PhHS&gt;H2B-EGFP</td>
+      <td>46</td>
+      <td>64</td>
+      <td>30</td>
+      <td>28</td>
+      <td>2.1</td>
+      <td>Figures 1F, 6B Video 7</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>
+      <td>24</td>
+      <td>62*</td>
+      <td>30</td>
+      <td>19</td>
+      <td>3.5</td>
+      <td>Video 8</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>
+      <td>26</td>
+      <td>63</td>
+      <td>30</td>
+      <td>16</td>
+      <td>2.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td>PhHS&gt;H2B-EGFP</td>
+      <td>1</td>
+      <td>66</td>
+      <td>10, 15, 30</td>
+      <td>29</td>
+      <td>4.5</td>
+      <td>Video 4</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>PhHS&gt;lyn-tdTomato-2A-H2B-EGFP (unilateral ectoderm and mesoderm mosaic)</td>
+      <td>5</td>
+      <td>65</td>
+      <td>30</td>
+      <td>22</td>
+      <td>4.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td>PhHS&gt;EGFP-PhGemN, PhHS&gt;H2B-mRuby</td>
+      <td>25</td>
+      <td>64</td>
+      <td>25</td>
+      <td>23</td>
+      <td>3.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>PhHS&gt;lyn-tdTomato-2A-H2B-EGFP (mesoderm mosaic)</td>
+      <td>3</td>
+      <td>68</td>
+      <td>30</td>
+      <td>21</td>
+      <td>3.5</td>
+      <td>Figure 1G</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>PhHS&gt;lyn-tdTomato-2A-H2B-EGFP (mesoderm mosaic)</td>
+      <td>2</td>
+      <td>92*</td>
+      <td>30</td>
+      <td>24</td>
+      <td>3.5</td>
+      <td>Video 10</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>
+      <td>24</td>
+      <td>68*</td>
+      <td>30</td>
+      <td>21</td>
+      <td>3.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>PhHS&gt;EGFP-PhGemN, PhHS&gt;H2B-mRuby</td>
+      <td>6</td>
+      <td>88</td>
+      <td>30</td>
+      <td>20</td>
+      <td>3.8</td>
+      <td>Figure 6C Video 9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Animal died during the recording (see Figure 2)._
+
+### Distinct cell behaviours underpin different phases of leg regeneration
+
+A specific sequence of events and cell behaviours unfolds during the course of regeneration at the distal 100–200 µm of the regenerating limb stump. Based on these events, we can subdivide the regenerative process into distinct phases (Figure 3). Each phase does not occur at precisely the same time in every individual, but the succession of phases is always the same.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig3-v1.jpg)
 
-**Figure 3.:** Parhyale leg regeneration.Three phases of regeneration are defined based on distinct cellular events and behaviours observed by live imaging (see text). Immediately after amputation, haemocytes adhere to the wound surface and close the wound (phase 1). In the hours that follow, a melanized scab (shown in brown) forms at the site of the wound, surrounding the haemocytes (early phase 2). The leg epithelium (depicted as a thin line surrounding the leg) then closes over the wound, under the surface of the melanized scab. Muscles (shown in red) at the distal part of the limb stump usually detach and degenerate, while those in proximal parts remain intact. During phase 2 we observe very limited or no cell proliferation. Phase 3 is marked by the onset of extensive cell proliferation and cell movements, leading to extensive growth and morphogenesis. This phase results in the formation of an elongated and patterned leg primordium within the amputated limb stump. Mesodermal cells, haemocytes and macrophages (shown in red), as well as nerves (in blue), are present in the inner spaces of the leg stump throughout the regenerative process.DOI: http://dx.doi.org/10.7554/eLife.19766.015
+**Figure 3.:** Three phases of regeneration are defined based on distinct cellular events and behaviours observed by live imaging (see text). Immediately after amputation, haemocytes adhere to the wound surface and close the wound (phase 1). In the hours that follow, a melanized scab (shown in brown) forms at the site of the wound, surrounding the haemocytes (early phase 2). The leg epithelium (depicted as a thin line surrounding the leg) then closes over the wound, under the surface of the melanized scab. Muscles (shown in red) at the distal part of the limb stump usually detach and degenerate, while those in proximal parts remain intact. During phase 2 we observe very limited or no cell proliferation. Phase 3 is marked by the onset of extensive cell proliferation and cell movements, leading to extensive growth and morphogenesis. This phase results in the formation of an elongated and patterned leg primordium within the amputated limb stump. Mesodermal cells, haemocytes and macrophages (shown in red), as well as nerves (in blue), are present in the inner spaces of the leg stump throughout the regenerative process.
 
-The first event that takes place when a leg is amputated is wound closure (phase 1). Using two mosaic animals with EGFP-expressing haemocytes (with a
+The first event that takes place when a leg is amputated is wound closure (phase 1). Using two mosaic animals with EGFP-expressing haemocytes (with a PhHS>EGFP transgene integrated in the haemocyte lineage, but not in other cells of the amputated leg), we could observe bleeding immediately after leg amputation and very rapid closure of the wound through the adhesion of haemocytes to the wound surface (Figure 4A–A’’, Video 2); these events take place within minutes after amputation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig4-v1.jpg)
 
-**Figure 4.:** Parhyale leg regeneration.(A–A’’) Mosaic Parhyale expressing EGFP in haemocytes show the role of these cells in the early stages of wound closure (same individual as in Video 2). (A) EGFP-labelled haemocytes in the leg prior to amputation; the outline of the leg and the amputation plane are highlighted. (A’) In the first few minutes post amputation we observe bleeding (haemocytes marked by arrowhead) and haemocytes adhering to the wound. (A’’) 15 min post amputation the bleeding has stopped and the wound is plugged by a mass of adhering haemocytes. (B–B’’) Epithelial closure and wound melanization followed live in a transgenic animal expressing H2B-EGFP in all cells (still images from Video 3). (B) Amputated leg prior to epithelial closure and melanization; the amputation plane is marked with a dashed line. (B’) 5 hr post amputation (hpa) a new epithelial layer has formed under the wound (arrowhead); more distally, the mass of haemocytes is not yet melanized (curly bracket). (B’’) 9 hr post amputation, the distal part of the stump has been melanized; the haemocytes are embedded in the melanized scab and their fluorescence is no longer visible.DOI: http://dx.doi.org/10.7554/eLife.19766.016
+**Figure 4.:** (A–A’’) Mosaic Parhyale expressing EGFP in haemocytes show the role of these cells in the early stages of wound closure (same individual as in Video 2). (A) EGFP-labelled haemocytes in the leg prior to amputation; the outline of the leg and the amputation plane are highlighted. (A’) In the first few minutes post amputation we observe bleeding (haemocytes marked by arrowhead) and haemocytes adhering to the wound. (A’’) 15 min post amputation the bleeding has stopped and the wound is plugged by a mass of adhering haemocytes. (B–B’’) Epithelial closure and wound melanization followed live in a transgenic animal expressing H2B-EGFP in all cells (still images from Video 3). (B) Amputated leg prior to epithelial closure and melanization; the amputation plane is marked with a dashed line. (B’) 5 hr post amputation (hpa) a new epithelial layer has formed under the wound (arrowhead); more distally, the mass of haemocytes is not yet melanized (curly bracket). (B’’) 9 hr post amputation, the distal part of the stump has been melanized; the haemocytes are embedded in the melanized scab and their fluorescence is no longer visible.
 
 Within the next 24 hr (phase 2), two processes contribute to further closing the wound. First, the surface of the wound becomes covered by a thick melanized scab (Figure 4B–B’’, Video 3), a typical wounding reaction of arthropods mediated by blood cells (Theopold et al., 2004). Second, the epidermis of the leg migrates under the surface of the wound/scab, re-establishing an intact epithelial barrier between the scab and the inner tissues of the leg (Figure 4B–B’’).
 
-These events are followed by a ‘quiescent’ period, when epidermal cells continue to migrate slowly towards the site of the wound (
+These events are followed by a ‘quiescent’ period, when epidermal cells continue to migrate slowly towards the site of the wound (Figure 5B,B’, Video 4) but no other activity can be seen under the microscope (late phase 2). During this period we observe almost no cell proliferation (Video 4), consistent with the very small number of EdU-incorporating cells detected during the first 1–2 days post amputation (Konstantinides and Averof, 2014).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig5-v1.jpg)
 
-**Figure 5.:** Parhyale leg regeneration.(A) Cell lineages at the distal leg stump, tracked 48–111 hr post amputation (hpa) in recording #03. Vertical lines depict individual cells of the outer (blue) or inner (in red) cell layers tracked at successive timepoints. Cell divisions are depicted as lineage bifurcations and marked by a black dot. Incomplete lines indicate when a cell was not tracked throughout the recording. (A’) Histogram depicting the number of cell divisions observed at each timepoint. (B–B’’’) Tracks of individual epidermal cells during successive 15-hr time intervals, from recording #03 (Video 5), depicting cell movements at the distal leg stump. The amputation plane is at the top right corner of each panel. Each cell track is colour-coded such that the position of each cell at the start and the end of the given time interval are depicted in blue and red, respectively. (B, B’) Before the onset of extensive cell proliferation (48–78 hpa) cells show limited movements towards the wound surface or no movement. (B’’–B’’’) After the start of cell proliferation (78–108 hpa) epidermal cells participate in extensive morphogenetic movements. The length of the coloured bars corresponds to 50 microns.DOI: http://dx.doi.org/10.7554/eLife.19766.017
+**Figure 5.:** (A) Cell lineages at the distal leg stump, tracked 48–111 hr post amputation (hpa) in recording #03. Vertical lines depict individual cells of the outer (blue) or inner (in red) cell layers tracked at successive timepoints. Cell divisions are depicted as lineage bifurcations and marked by a black dot. Incomplete lines indicate when a cell was not tracked throughout the recording. (A’) Histogram depicting the number of cell divisions observed at each timepoint. (B–B’’’) Tracks of individual epidermal cells during successive 15-hr time intervals, from recording #03 (Video 5), depicting cell movements at the distal leg stump. The amputation plane is at the top right corner of each panel. Each cell track is colour-coded such that the position of each cell at the start and the end of the given time interval are depicted in blue and red, respectively. (B, B’) Before the onset of extensive cell proliferation (48–78 hpa) cells show limited movements towards the wound surface or no movement. (B’’–B’’’) After the start of cell proliferation (78–108 hpa) epidermal cells participate in extensive morphogenetic movements. The length of the coloured bars corresponds to 50 microns.
 
 This quiescent period is followed by a phase of extensive cell proliferation, cell movement and apoptosis (phase 3), starting around 1–3 days post amputation (Figures 1F, 2 and 5, Videos 5 and 7). The transition is abrupt: within a few hours a large number of cells at the distal part of the stump start to divide (Figure 5A’–A). Based on our tracking of ectodermal cells, we estimate that the initial division rate is in the order of 0.4 cell divisions per cell per day, compared to <0.03 cell divisions per cell per day in the same cell lineages tracked during the quiescent phase (see Materials and methods). This initial burst of cell proliferation persists for approximately 20 hr, after which proliferation continues at lower levels (Figures 5A,A’ and 7B).
 
@@ -77,27 +270,27 @@ Concurrent with cell proliferation, the regenerating leg also starts to display 
 
 Two mosaic animals, in which the PhHS>lyn-tdTomato-2A-H2B-EGFP transgene was specifically introduced in mesodermal lineages, allowed us to observe more specifically the behaviour of mesodermal cells (recordings #10 and #11). In the distal part of the limb stump we observe a population of mesenchymal cells that is particularly active during regeneration (Video 10). These cells are connected to each other, forming strands that run along the length of the leg stump, they proliferate and have active filopodial protrusions that extend in the inner space of the leg stump (Video 10).
 
-## Fate maps and ectodermal progenitors
+### Fate maps and ectodermal progenitors
 
 By tracking individual cells in our live recordings, we are able to trace the fate of cells during leg regeneration and to establish fate maps that connect the initial position of each cell in the regenerative bud (blastema) to its ultimate fate in the patterned leg.
 
 Using mosaic animals in which the marker transgene has been incorporated specifically in mesodermal cell lineages (recordings #10 and #11) we observe that the inner and the outer cell layers of the leg stump do not mix during the course of regeneration. As expected from our previous mosaic analysis (Konstantinides and Averof, 2014), we did not observe any cells moving from the mesoderm to the epidermis.
 
-Within the epidermal layer, we were able to track 54 cell lineages continuously in three independent recordings, over 25–64 hr periods, from the quiescent phase to segmented legs (recordings #03, #04 and #13,
+Within the epidermal layer, we were able to track 54 cell lineages continuously in three independent recordings, over 25–64 hr periods, from the quiescent phase to segmented legs (recordings #03, #04 and #13, Figure 6). Many more lineages were partially tracked. We find that most of these cells divide and contribute small (2–8 cell) clones to the epithelium of the newly patterned leg, irrespective of their initial location in the epithelium of the blastema (Figure 6A–C). Thus, it appears that there is no specialized population of progenitor cells with the task of regenerating the epidermis; in Parhyale legs, most epidermal cells have the ability to serve as epidermal progenitors.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig6-v1.jpg)
 
-**Figure 6.:** (A–C) Tracked cells and their clonal progeny are shown from three separate recordings, #03, #04 and #13, respectively. The illustrations depict the outline of the regenerating leg epithelium (grey line) at the start (left) and the end (right) of cell tracking. Individual nuclei and their clonal progeny are colour coded. The leg stumps are shown with their distal end to the right and ventral side down. The outline of the surrounding exoskeleton is depicted by a black line. (A’–C’) Same tracking data, colour-coded according to the proximo-distal location of each nucleus at the start of cell tracking. In panel 6B, two podomeres, the carpus (Ca) and the propodus (Pr), are labelled.DOI: http://dx.doi.org/10.7554/eLife.19766.018
+**Figure 6.:** (A–C) Tracked cells and their clonal progeny are shown from three separate recordings, #03, #04 and #13, respectively. The illustrations depict the outline of the regenerating leg epithelium (grey line) at the start (left) and the end (right) of cell tracking. Individual nuclei and their clonal progeny are colour coded. The leg stumps are shown with their distal end to the right and ventral side down. The outline of the surrounding exoskeleton is depicted by a black line. (A’–C’) Same tracking data, colour-coded according to the proximo-distal location of each nucleus at the start of cell tracking. In panel 6B, two podomeres, the carpus (Ca) and the propodus (Pr), are labelled.
 
 Next, we asked how the position of these cells in the epidermis of the limb stump relates to the position and contributions of their progeny in the patterned, regenerated leg. We find that the relative position of cells along the proximo-distal axis of the leg is roughly maintained from blastema to patterned leg. Although their spatial relationships become partly scrambled during morphogenesis, we observe that, on average, distally-located progenitors contribute to more distal portions of the regenerating leg than proximally-located progenitors (Figure 6A’–C’). In order to generate new distal segments, epidermal cells change their positional identity and become re-assigned to new leg segments (podomeres). For example, in recording #04, cells originating from the carpus of the amputated leg contribute both to the carpus and to the propodus of the regenerated leg (Figure 6B).
 
-## Morphogenesis of the leg
+### Morphogenesis of the leg
 
-Within two days from the onset of cell proliferation, the amputated limb stump is transformed into an elongated leg bearing the series of podomeres typical of
+Within two days from the onset of cell proliferation, the amputated limb stump is transformed into an elongated leg bearing the series of podomeres typical of Parhyale legs (see leg outlines in Figure 6). Our live recordings and cell tracking provide the first opportunity to investigate cell behaviours during this morphogenetic process. We focused on leg elongation. During the proliferative and morphogenetic phase of leg regeneration (phase 3, Figure 3), the length:width ratio of the proliferating epidermis increases by more than 2-fold. Individual cell elongation does not appear to be the basis for leg elongation (data not shown), but oriented cell division and/or cell rearrangements could be involved. To address this point, we directly measured the orientation of all epidermal cell divisions in recording #04. We find no evidence for a bias in the orientation of cell divisions, at any stage in the recording (Figure 7A). We therefore suggest that elongation is largely driven by cell rearrangements.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig7-v1.jpg)
 
-**Figure 7.:** Parhyale legs.(A) Orientation of cell divisions occurring during the proliferative phase in recording #04 (46–110 hr post amputation). Each point represents a cell division; divisions occurring along the direction of the proximo-distal axis of the leg are at 0˚. (B) Number of cell divisions occurring in successive 2-hr time intervals, in the same dataset (recording #04). (C) Overall shape of regenerating leg before and after elongation (from recording #04). The outer black line shows the exoskeleton of the amputated leg that constrains the regenerating leg. Arrows highlight the detachment of the epidermis from the exoskeleton and the retraction of the leg proximally. Coloured circles depict the proximal movement of four cell clones (taken from Figure 6B) in the proximal part of the blastema.DOI: http://dx.doi.org/10.7554/eLife.19766.019
+**Figure 7.:** (A) Orientation of cell divisions occurring during the proliferative phase in recording #04 (46–110 hr post amputation). Each point represents a cell division; divisions occurring along the direction of the proximo-distal axis of the leg are at 0˚. (B) Number of cell divisions occurring in successive 2-hr time intervals, in the same dataset (recording #04). (C) Overall shape of regenerating leg before and after elongation (from recording #04). The outer black line shows the exoskeleton of the amputated leg that constrains the regenerating leg. Arrows highlight the detachment of the epidermis from the exoskeleton and the retraction of the leg proximally. Coloured circles depict the proximal movement of four cell clones (taken from Figure 6B) in the proximal part of the blastema.
 
 In most arthropods, regenerating limbs have to grow within a limited space, constrained by the unyielding exoskeleton that surrounds the amputated limb stump (Goss, 1969; Maruzzo et al., 2013). Our recordings provide some insights into how this is achieved. First, the epidermis detaches from the cuticle and the proximal, non-proliferating parts of the leg retract slowly towards the body wall, making space for the growth of more distal regenerating tissues (Figure 7C, Video 7). As the epidermis of proximal leg segments detaches, motile cells, likely phagocytes, can be seen transiently in the space between the exoskeleton and the epidermis (data not shown). Second, the regenerating leg becomes folded to accommodate the elongating proximo-distal axis into the available space (Videos 5 and 7). The legs do not immediately grow to their full size; they require additional moults to reach the size of equivalent non-amputated legs. For the type of amputations that we performed, legs reach 80–90% of the length of controls at the first moult after regeneration.
 
@@ -121,7 +314,7 @@ Finally, our work uncovers events that resemble processes occurring during regen
 
 ## Materials and methods
 
-## Constructs, transgenic lines and mosaics
+### Constructs, transgenic lines and mosaics
 
 The PhHS>H2B-EGFP reporter, expressing the coding sequence of Drosophila histone 2B fused with EGFP under the PhHS cis-regulatory sequence (Pavlopoulos et al., 2009), was kindly provided by A. Pavlopoulos in plasmid pMi(3xP3>DsRed; PhHS>H2B-EGFP). A similar construct was used for histone 2B fused with mRuby (PhHS>H2B-mRuby).
 
@@ -133,7 +326,7 @@ To generate the cell cycle reporter, we identified a Parhyale Geminin orthologue
 
 Plasmids pMi(3xP3>DsRed; PhHS>H2B-EGFP), pMi(3xP3>EGFP; PhHS>lyn-tdTomato-2A-H2B-EGFP), pMi(3xP3>DsRed; DC5>DsRed) and pMi(3xP3>DsRed; PhHS>EGFP-PhGemN) were microinjected into Parhyale embryos to generate stable transgenic lines and mosaics using established methods (Pavlopoulos and Averof, 2005; Konstantinides and Averof, 2014).
 
-## Live imaging
+### Live imaging
 
 For live imaging, adult animals were subjected to heat-shock for 45 min at 37˚C to induce transgene expression via the PhHS promoter (Pavlopoulos et al., 2009) 24 hr before starting to record. To immobilize legs for live imaging we used surgical glue (2-octyl cyanoacrylate, Dermabond). The anesthetized animal was positioned laterally onto a round coverslip (Ø 30 mm #1, Thermo Fisher Scientific, USA) with its T4 and/or T5 legs glued onto the surface of the glass; a piece of broken coverslip was used as a spacer, glued to the body of the animal and to the round coverslip (Figure 1A, Video 1). The animal was allowed to recover in artificial seawater for at least 2 hr prior to amputation. The immobilized T4 or T5 leg was then amputated at the carpus (position shown in Figure 1C) using a micro knife (Fine Science Tools GmbH, Germany). The coverslip bearing the animal was placed into the lid of a 50 ml Falcon tube where a large circular window had been cut out, fixed by screwing the top end of the Falcon tube and sealed with vaseline (Figure 1B). The resulting chamber was filled with ~3 ml of artificial seawater (specific gravity 1.018).
 
@@ -141,7 +334,7 @@ Imaging was performed on a cLSM Zeiss 780 inverted confocal microscope using a 2
 
 The images shown in Figures 1A, 4A’’–A and Videos 1 and 2 were captured on a Zeiss Axio Zoom V16 microscope. The images shown in Figure 4B–B’’ and Video 3 were captured on a Leica M205FA stereoscope; the still images were processed using the HeliconFocus software to combine images taken at different focal planes.
 
-## Cell tracking, estimate of division rates
+### Cell tracking, estimate of division rates
 
 The timelapse recordings were cropped (and merged when necessary) in one multi-image TIFF hyperstack using Fiji (Schindelin et al., 2012). Nuclei were manually tracked in Fiji using the TrackMate plug-in (http://fiji.sc/TrackMate).
 

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.48628.001 Exceptionally high rates of tooth fracture in large Pleistocene carnivorans imply intensified interspecific competition, given that tooth fracture rises with increased bone consumption, a behavior that likely occurs when prey are difficult to acquire. To assess the link between prey availability and dental attrition, we documented dental fracture rates over decades among three well-studied populations of extant gray wolves that differed in prey:predator ratio and levels of carcass utilization. When prey:predator ratios declined, kills were more fully consumed, and rates of tooth fracture more than doubled. This supports tooth fracture frequency as a relative measure of the difficulty of acquiring prey, and reveals a rapid response to diminished food levels in large carnivores despite risks of infection and reduced fitness due to dental injuries. More broadly, large carnivore tooth fracture frequency likely reflects energetic stress, an aspect of predator success that is challenging to quantify in wild populations.
+Exceptionally high rates of tooth fracture in large Pleistocene carnivorans imply intensified interspecific competition, given that tooth fracture rises with increased bone consumption, a behavior that likely occurs when prey are difficult to acquire. To assess the link between prey availability and dental attrition, we documented dental fracture rates over decades among three well-studied populations of extant gray wolves that differed in prey:predator ratio and levels of carcass utilization. When prey:predator ratios declined, kills were more fully consumed, and rates of tooth fracture more than doubled. This supports tooth fracture frequency as a relative measure of the difficulty of acquiring prey, and reveals a rapid response to diminished food levels in large carnivores despite risks of infection and reduced fitness due to dental injuries. More broadly, large carnivore tooth fracture frequency likely reflects energetic stress, an aspect of predator success that is challenging to quantify in wild populations.
 
 ## Introduction
 
@@ -38,17 +38,102 @@ Previous work on tooth wear and fracture in mammals has focused on the relations
 
 ## Results
 
-## Overall fracture frequency
+### Overall fracture frequency
 
 The percentage of individuals with at least one tooth broken in life averaged 51% across all five samples, but ranged from less than 38% in the Scandinavian and early Yellowstone (1995–2006) populations to 72% in Isle Royale wolves (Table 1). The Isle Royale and later Yellowstone samples did not differ significantly from one another in the fraction of individuals with at least one broken tooth, 72% and 64%, respectively (p=0.3). Both of these samples exhibited significantly more individuals with broken teeth than either of the samples with known high prey:predator ratios, Scandinavia and early Yellowstone (p<0.001). Notably, the early and later Yellowstone samples differed significantly in the percentage of individuals with at least one broken tooth with and without including canine teeth (p=0.001); the fraction was 38% with canines (35% without) between 1996 and 2006, whereas in the following decade it rose to 64% with canines (63% without). It should be noted that the number of broken teeth per individual in the later Yellowstone sample is significantly greater than in the earlier sample but still usually represents less than ten percent of the entire tooth row (e.g. less than five of the 42 teeth per individual).
 
+**Table 1.**
+ List of gray wolf skull samples indicating the number of individual skulls examined for each (N skulls), the total number of teeth (N teeth), the percent of individuals with at least one tooth broken, the percent of total teeth broken both with canine teeth included (% broken teeth) and excluded.As noted in the text, fracture frequencies with and without canine teeth included did not differ significantly for any of the five samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>N (skulls)</th>
+      <th>N (teeth)</th>
+      <th>% individuals w/≥ 1 brkn tooth</th>
+      <th>% broken teeth</th>
+      <th>% broken teeth with canine teeth excluded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Isle Royale NP</td>
+      <td>64</td>
+      <td>1866</td>
+      <td>71.9</td>
+      <td>8.6</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td>Scandinavia﻿</td>
+      <td>94</td>
+      <td>3778</td>
+      <td>33</td>
+      <td>1.7</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Other NA wolves*</td>
+      <td>223</td>
+      <td>8619</td>
+      <td>47.1</td>
+      <td>3.4</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YNP, 1996–2006</td>
+      <td>77</td>
+      <td>2991</td>
+      <td>37.7</td>
+      <td>1.8</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>YNP, 2007–2016</td>
+      <td>83</td>
+      <td>3237</td>
+      <td>64</td>
+      <td>4.6</td>
+      <td>3.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*These include individuals from Alaska (n-74), Canada and Idaho (n = 66), and New Mexico and Texas (n = 83) For fracture frequency data for each of these, see Supplementary file 1, Table S1._
+
 Results were similar for fracture frequency on a per tooth basis. Isle Royale wolves displayed the highest fracture frequency (8.6%) and Scandinavian and early Yellowstone wolves the lowest, 1.7% and 1.8%, respectively (Table 1). Although the fracture rates per individual were similar between Isle Royale and later Yellowstone wolves, Isle Royale wolves exhibit significantly more tooth fracture on a per tooth basis, 8.6% as opposed to 4.6% in later Yellowstone wolves (p<0.001). As was the case for breakage per individual, later Yellowstone wolves significantly exceeded early Yellowstone wolves in fracture frequency (4.6% as opposed to 1.8%; p<0.001) when canines were included and also when only incisors and cheek teeth were considered (3.9% vs. 1.3%; p<0.001), thus removing any bias due to a prevalence of canine tooth fracture. Within each of the five samples, tooth fracture frequencies calculated with and without canine teeth were very similar and did not differ significantly (p=0.1–0.5, Table 1).
 
-## Tooth fracture by position
+### Tooth fracture by position
 
 The differences in fracture frequency among the five samples were not due to higher fracture frequency at any single tooth position such as the canines. Instead, elevated fracture frequencies usually occurred across the entire tooth row. For example, the two samples with the highest fracture frequencies, Isle Royale and later Yellowstone, broke all their teeth, incisors, canines, premolars, carnassials and post-carnassial molars, more often than was observed in the remaining three samples (Figure 2, top; Supporting Information Supplementary file 1 Table S2). Differences between these two samples and the remaining three were significant (p<0.05) at all tooth positions except the canines in the case of the two Yellowstone samples. Notably, the two Yellowstone samples differed most in the fracture frequencies of all teeth except the canines. Whereas canine tooth fracture rate increased approximately 50% between the first and second decade, fracture rates for incisors, premolars and carnassials more than tripled (Figure 2, top; Supporting Information Supplementary file 1 Table S2). Relative to both Scandinavian and other North American wolves, early Yellowstone wolves were unusual in exhibiting relatively high canine tooth fracture incidence along with low carnassial and post-carnassial molar fracture incidence.
 
-## Tooth fracture frequency vs. wear stage and age at death
+![Figure 2.](https://cdn.elifesciences.org/articles/48628/elife-48628-fig2-v1.jpg)
+
+**Figure 2.:** (Top) Percent of teeth broken for each tooth type within each sample. For tooth sample sizes see Supporting Information Supplementary file 1 Table S1. (Middle) Percentage of individuals assigned to each wear stage class within each sample. (Bottom) Percent of individuals in each age class (years) for the three samples with age data, YNP 1996–2006, YNP 2007–2016, and Isle Royale NP.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48628/elife-48628-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Note the blunting of the cusps of the carnassial in the moderate and heavily worn individuals relative to the slightly worn individual. Note also the broken and worn lower right canine tooth in the heavily worn individual. The three specimens are Yellowstone National Park gray wolves housed in the Yellowstone Heritage and Research Center; specimen numbers as follows, YHRC 199495 (top), YHRC 203219 (middle), YHRC 199497 (bottom).
+
+### Tooth fracture frequency vs. wear stage and age at death
 
 The high fracture frequencies for Isle Royale and later Yellowstone wolves are associated with a greater percentage of individuals with moderate and heavy tooth wear (Figure 2, middle; Supporting Information Supplementary file 1 Table S2). Over half (56%–64%) of the Scandinavian, early Yellowstone and other North American wolf samples, respectively, were classified as slight wear. By contrast, only 2% (1/64) of Isle Royale individuals fell into the slight category, and just 29% (24/83) of the later Yellowstone fell into the slight category (Supporting Information Supplementary file 1 Table S2). Because wear stage is positively correlated with an individual’s age, the preponderance of moderate and heavily worn individuals and associated higher tooth fracture rates within Isle Royale and the later Yellowstone samples might reflect a bias toward older individuals in these two samples rather than differences in diet or feeding behavior. Fortunately, it is possible to control for this potential bias because both the Yellowstone and Isle Royale samples have associated age data.
 
@@ -60,7 +145,15 @@ Analysis of the age distributions for the two Yellowstone and Isle Royale sample
 
 Tooth fracture rates also differed by age at death among the three samples with or without canine teeth included (Figure 4). The Isle Royale wolves have significantly more fractured teeth at any age relative to both groups of Yellowstone wolves. Between the two Yellowstone samples, the 2007–2016 sample consistently exhibited higher fracture frequencies. The difference approaches significance in the 4–6 year-old age class (p=0.08) and is highly significant (p<0.01) for the 7+ year-old age class. Whereas in the later Yellowstone sample, 10% (66/671) of the teeth in individuals older than 6 years were broken, the same figure was only 3% (16/562) for the earlier Yellowstone wolves.
 
-## Skeletal utilization
+![Figure 4.](https://cdn.elifesciences.org/articles/48628/elife-48628-fig4-v1.jpg)
+
+**Figure 4.:** Tooth fracture frequency on a per tooth basis relative to age class (in years) for Yellowstone 96–06, Yellowstone 07–16, and Isle Royale wolves, with canine teeth included (top) and excluded (bottom).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48628/elife-48628-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Test for significant difference in slope values were negative when all three samples were compared, and between the YNP2 and IRNP samples. However, the slopes did differ significantly between the two Yellowstone samples. Regression equations: (YNP1) y = 0.31x-0.42, slope 95% C.I. 0.2–0.42; (YNP2) 0.54x-0.7, slope 95% C.I. 0.46–0.62; (IRNP) y = 0.48x-0.2, slope C.I. 0.31–0.66.
+
+### Skeletal utilization
 
 Between 1996 and 2016, necropsies were performed on 2372 adult elk largely from Yellowstone’s northern range representing a total of 99,624 possible skeletal elements (excluding the pelvis and cranium) as categorized by the observers (Supplementary file 1, Tables S3, S4). Of these elements, approximately 17% were missing and presumed removed by wolves. Forelimb elements (scapula, humerus, radius + ulna, metacarpus) appear often to have been removed together and were more likely to be taken than hindlimb elements (Supplementary file 1, Table S3). This is not surprising given that the hindlimb has a bony articulation with the inominate (pelvis) bone, whereas the forelimb has a muscular attachment to the ribcage that is more easily severed. Like the hindlimb, vertebrae and dentary bones are more difficult to remove given their ligamentous and bony articulations and they were more likely to remain at kill sites on average than forelimb elements.
 
@@ -88,7 +181,7 @@ Finally, our study demonstrates the great value of preserving skeletons, or at l
 
 ## Materials and methods
 
-## Study samples
+### Study samples
 
 Isle Royale National Park (IRNP) is an approximately 544 km2 island in Lake Superior within the boundaries of the state of Michigan, USA. The island is inhabited by wolves and moose, both of which have been under intensive study since 1959. There are no other large carnivorans or ungulates on the island and it is essentially isolated from emigration or immigration. Other carnivorans on the island include red fox, pine marten, weasel, mink and river otter, none of which are likely competitors, although foxes are known to scavenge wolf kills. The numbers of wolves and moose are estimated annually from fixed wing aircraft or via ground surveys (Peterson et al., 2014). The wolf population has fluctuated, from a maximum of 50 in 1981 to its current minimum of two individuals at the time of this writing (Peterson et al., 2018). Over the last 50 years, the ratio of moose to wolf has varied over 8-fold, ranging from 20:1 to 160:1 with an average of 55:1 (Peterson et al., 2018). The 64 adult wolf skulls sampled for this paper span 1963–2009 and are housed at Michigan Technological University, Houghton, MI (Table 1). Whenever possible, an estimated age at death was recorded for each wolf. Between 1995 and 2008, necropsies were performed on 239 moose killed by wolves, and an estimate of carcass utilization was made that focused largely on the degree of skeletal disarticulation and proportion of bone consumed (Vucetich et al., 2012). Over the course of the study, increases in per capita kill rate (#kills/wolf/unit time) were significantly associated with decreases in the proportion of carcass utilized.
 
@@ -98,13 +191,13 @@ The Yellowstone National Park sample consists of 160 skulls of adult wolves that
 
 The historic sample of 223 wolf skulls without associated prey data includes individuals collected between 1874 and 1952 from three regions; 1) Alaska, 2) Texas and New Mexico, and 3) Idaho and adjacent Canada (Table 1). All these skulls are housed in the National Museum of Natural History, Washington, DC (see Supplementary file 1, Table S1).
 
-## Tooth wear and fracture
+### Tooth wear and fracture
 
 As in previous studies (Mann et al., 2017; Van Valkenburgh, 1988; Van Valkenburgh, 2009), individual skulls and associated mandibles were examined for dental wear and fracture. To avoid counting teeth that were broken post-mortem or just prior to death due to trap or other damage, teeth were recorded as broken only if there was clear evidence of a fracture (e.g., partially or fully broken cusp) and a blunted surface due to subsequent wear. Missing teeth were not counted as broken, even when alveolar resorption suggested tooth loss due to injury. Consequently, the number of broken teeth are likely underestimates. In addition to recording tooth condition, a qualitative estimate of overall wear stage for the individual was made as follows: 1) ‘slight’, little or no wear on shear facets or blunting of cusps; 2) ‘moderate’, shear facets apparent on carnassial teeth and cusps blunted on most teeth; or 3) ‘heavy’, carnassial teeth with strong shear facets and/or blunted cusps, premolars and molars with well-rounded cusps (Figure 2—figure supplement 1).
 
 Tooth fracture incidence was assessed on both a per-individual (percentage of individuals with one or more broken teeth) and a per-tooth (percentage of all teeth that are broken) basis. The distribution of tooth fracture across the tooth row was quantified by tooth type (incisors, canines, premolars, carnassials, post-carnassial molars). Because we were especially interested in detecting the impacts of increased bone consumption, tooth fracture rates were quantified and compared with canine teeth excluded as well as included. Although canine teeth may fracture when feeding on bones, they also may break during intra- and inter-specific combat, as well as when killing prey. Incisors and cheek teeth are used for gnawing and cracking bones, respectively (Van Valkenburgh, 1996), and thus are expected to wear more quickly when bone consumption increases. Tooth fracture rates were compared among the study samples using chi-square statistics and the software package SPSS version 25. For the analysis of the effects of age on tooth fracture and wear stage, linear regressions of the number of teeth broken against age for all individuals were performed to test for differences among populations, but results did not achieve significance due to a lack of normality and substantial scatter in the data (Figure 4—figure supplement 1). Consequently, comparisons were made among individuals placed into one of three age groups, 1–3 years, 4–6 years, and seven or more years.
 
-## Carcass utilization estimates
+### Carcass utilization estimates
 
 In the case of the Scandinavian and Isle Royale samples, carcass utilization data were taken from the literature. In Scandinavia, Sand et al. (2005) observed that approximately 70% of the edible biomass of each adult moose kill was consumed by the Scandinavian wolves in their sample, whereas Vucetich et al. (2012) estimated that on average, Isle Royale wolves consumed 90% of each moose kill. This difference is greater than it appears given that the Scandinavian estimate of the proportion of edible biomass consumed did not include bones as potential edible biomass. Had this been done, the proportion consumed would be less than 70%. The relatively low utilization rate in Scandinavia was ascribed to three factors, moose density was high, the moose were naïve to wolf predation, and human disturbance (Sand et al., 2005).
 

@@ -99,11 +99,9 @@ The eQTL mapping that we performed addresses the question. Most of the large dif
 
 13) Still in the same subsection. Is expression variation at a given locus bimodal (allelic effects?) or uniform (perhaps a quantitative trait with multilocus control)?
 
-The expression variation of the three candidate genes (Gde1, Knop1 and Coq7) in the chromosome 7 locus showed a continuous spectrum across the strains. The expression pattern indicates that the expression variations are not bimodal (first paragraph of the subsection headed “Integration of transcriptomic and association mapping data”).10.7554/eLife.05607.028Author response image 1.Variation in candidate gene expression among strains.The expression level of Gde1 (A), Knop1 (B) and Coq7 (C) among HMDP strains are shown. Results are presented as mean ± SD in log2 scale.DOI: http://dx.doi.org/10.7554/eLife.05607.028
+The expression variation of the three candidate genes (Gde1, Knop1 and Coq7) in the chromosome 7 locus showed a continuous spectrum across the strains. The expression pattern indicates that the expression variations are not bimodal (first paragraph of the subsection headed “Integration of transcriptomic and association mapping data”).10.7554/eLife.05607.028Author response image 1.Variation in candidate gene expression among strains.The expression level of Gde1 (A), Knop1 (B) and Coq7 (C) among HMDP strains are shown. Results are presented as mean ± SD in log2 scale.
 
 The expression level of Gde1 (A), Knop1 (B) and Coq7 (C) among HMDP strains are shown. Results are presented as mean ± SD in log2 scale.
-
-DOI: http://dx.doi.org/10.7554/eLife.05607.028
 
 14) In the subsection headed “Transcriptomic analysis of the liver and adipose tissue”. In addition to the analysis provided, it may be useful to perform two independent pathway enrichment analyses on genes that are positively or negatively correlated with hepatic TG, respectively.
 

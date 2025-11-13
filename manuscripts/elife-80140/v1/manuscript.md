@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04p491231 Department of Biochemistry and Molecular Biology, Pennsylvania State University State College United States
-2. https://ror.org/04p491231 Department of Chemistry, Pennsylvania State University State Park United States
+1. Department of Biochemistry and Molecular Biology, Pennsylvania State University State College United States ([ROR:04p491231](https://ror.org/04p491231))
+2. Department of Chemistry, Pennsylvania State University State Park United States ([ROR:04p491231](https://ror.org/04p491231))
 
 † Corresponding author
 
@@ -30,23 +30,41 @@ Powerful advancements in computational approaches have increased their applicati
 
 In this work, we expand our previous system by characterizing conformational shifts in a set of engineered receptors with altered ligand specificity and transactivation potential. We investigate conformational ensembles using a reconstructed ancestral steroid receptor, AncSR2. In transcriptional assays, AncSR2 was activated by 3-ketosteroid hormones, that is steroids with a non-aromatized A-ring and a keto substituent at the carbon 3 position, while remaining unresponsive to hormones with an aromatic A-ring, i.e., estrogens (Figure 1A; Eick et al., 2012). To produce a diverse set of receptors with a range of functional profiles, we created four AncSR2 variants by mutating Methionine 75 (M75), a critical residue located on helix 5 (H5) of the LBD that is conserved across modern steroid receptors and shown by us and others (Okafor et al., 2020; Harms et al., 2013) to be crucial for hormone recognition. We use cellular assays to characterize transcriptional activity of the variants with diverse ligands, followed by biophysical and structural analyses to dissect the structure-activity criteria underlying observed functional responses. We then use MD simulations to predict the conformational effects of M75 substitutions, generate conformational ensembles and observe population shifts that occur upon binding to aromatized and non-aromatized hormones. Finally, we correlate experimental results with shifts in computational ensembles to elucidate ligand-induced effects in a set of receptors.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig1-v1.jpg)
+
+**Figure 1.:** (A) Chemical structure of A-ring aromatized estrogen and non-aromatized 3-ketosteroid. (B) Met75 (H5) is positioned to form critical contacts with H3 and the hormone located in the ligand binding pocket. (C) Far-UV CD spectra of AncSR2 and its variants in the wavelength range 195–250 nm, showed mutants LBD remains in the folded state similarly as AncSR2. (D) Normalized heat-induced denaturation transition curves of AncSR2 and its variants monitored by change in the [θ]222 as function of temperature. Each curve represents averaged measurements from two replicates and two independent purifications.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Purity of the LBDs were assessed on 14% SDS-PAGE. (B) Gel filtration profile of AncSR2 and variants over ENrich SEC 70 (Bio-Rad, USA) gel filtration column at 4 °C. A 100 μl sample of mutants at concentrations of 0.2 mg-0.5 mg/ml was loaded on pre-equilibrated SEC70 gel filtration column and their elution profile was monitored at a wavelength 280 nm. (C) A higher concentration (0.8 mg/ml) of AncSR2 and M75L mutant proteins was loaded on the column to check the concentration effect on the elution profile. Mutant LBDs eluted as a single peak at identical positions as AncSR2 LBD, suggesting that LBD mutants maintain the AncSR2 globular conformation.
+
 We observed that the M75 mutations achieved a range of functional profiles in AncSR2, including constitutively active and completely inactive states, enabling a broad investigation into how receptor function affects population shifts within NR ensembles. Our studies reveal that ensembles generated are sensitive to both M75 mutations and ligand identity. In AncSR2 receptor variants, population shifts, assessed by clustering ligand-bound conformations with unliganded ensembles, correlated with functional properties of ligands. Changes in ensemble populations were predictive of strong, weak or no agonist activity in ligands. To reveal the origin of inactivity or constitutive activity in AncSR2 variant, we employed hydrogen deuterium exchange mass spectrometry and ligand binding assays. These studies confirm the inherent promise in this MD-based approach for characterizing diverse NR-ligand ensembles.
 
 ## Results
 
-## Substitution of M75 has minor effects on global structure and larger impact on local interactions
+### Substitution of M75 has minor effects on global structure and larger impact on local interactions
 
 Met75, located on helix 5 (H5) of AncSR2 holds structural, functional, and evolutionary significance for steroid receptors. Notably, M75 engages helix 3 (H3) residues via van der Waals contact (Figure 1B), an interaction that is conserved in extant glucocorticoid, mineralocorticoid, and progesterone receptors (Zhang et al., 2005). M75 was also shown to interact with bound hormones (Harms et al., 2013) representing an ideal position for mutagenesis to create a series of engineered receptors with altered potency and ligand specificity. We generated M75L, M75I, M75F, M75A mutants of AncSR2 and performed biophysical characterizations to ensure that mutations do not substantially impact structure and stability. Wildtype (WT) AncSR2 LBD and mutants were expressed and purified to homogeneity (Figure 1—figure supplement 1A). Gel filtration profiles show that similar to WT, mutant LBDs elute as a single peak, suggesting that mutations do not affect the globular nature of the protein (Figure 1—figure supplement 1B-C). We used circular dichroism spectroscopy (CD) to determine the impact of M75 mutations on the structure of AncSR2. Far-UV CD (195–250 nm) spectral measurements of the WT AncSR2 and mutants reveal features characteristic of α-helical proteins, that is, negative minima at 208 nm and 222 nm and positive maximum around 190 nm (Figure 1C). However, a slight decrease in the mean residue ellipticity at both negative minima was observed in mutants (M75L, M75A, M75F) as compared to WT AncSR2. Overall, CD measurements confirm that mutations do not affect the global secondary structure of AncSR2.
 
 We also tested the effect of mutations on the stability of AncSR2 and M75 variants by following changes in the CD signal at 222 nm as a function of temperature (Figure 1D). The equilibrium denaturation curves for each protein were analyzed to obtain melting temperatures (Tm). The apparent Tm values for M75L mutant and WT are identical, within experimental error. The apparent Tm values of M75A, M75F and M75I are respectively 2.3, 5.2, and 10.9 °C lower than AncSR2. Thus while mutant receptors retain secondary structural characteristics of WT AncSR2, stability is reduced in a few variants which may be reflective of local, structural effects.
 
-## Transcriptional responses in M75 variants span a broad activity spectrum
+### Transcriptional responses in M75 variants span a broad activity spectrum
 
 To characterize transcriptional activity in engineered AncSR2 variants, we measured transactivation in cell-based luciferase reporter assays using five hormones: four 3-ketosteroids (progesterone, DHT, hydrocortisone, aldosterone) and estradiol (Structures shown in Figure 2—figure supplement 1). All 3-ketosteroid hormones activate AncSR2 with EC50 in the sub-nanomolar range except DHT which had a nanomolar EC50, consistent with earlier reports (Eick et al., 2012; Figure 2A). As previously observed, estradiol is not able to activate the receptor (Figure 2A and G). In the M75 mutants, we observe a wide range of functional behavior. The M75A variant largely recapitulates the activity profile of WT with the largest differences being loss of DHT activation and reduced efficacy (Emax) in aldosterone (Figure 2B). Potency is reduced for all ligands in M75F activation (Figure 2C), with no activity observed in estradiol and DHT. Progesterone activation in M75F is reduced by ~3 orders of magnitude relative to WT AncSR2.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig2-v1.jpg)
+
+**Figure 2.:** Dose-response curves of AncSR2 and its variants in the presence of aromatized and non-aromatized hormones. Five hormones are used: progesterone (PROG), aldosterone (ALD), hydrocortisone (HCY), Dihydrotestosterone (DHT) and Estradiol (EST). (A) AncSR2 receptor showed differential response to non-aromatized hormones with no response to estradiol with ligand treatment up to 1 µM. (B) M75A substitution slightly increased the fold activation as compared to AncSR2 with no change in the receptor efficacy for progesterone, aldosterone, hydrocortisone. (C) M75F substitution decreased the receptor responsiveness for hormones. (D) M75L receptor efficacy is significantly reduced compared to WT AncSR2. In contrast to WT AncSR2, M75L was activated by estradiol. (E) M75I substitution completely abolished the ligand activation for both types of hormones. Each data point is an average of two to three biological replicates. The error bar associated with each data point represent SEM. (F) M75L and M75I receptors fold change over empty vector in the absence of hormone suggest that they exhibit constitutive activity. Two-tailed unpaired t-test, (****) p<0.0001, (*) p<0.05. (G). Table shows EC50 values obtained from the analysis of dose-response curves of individual receptors for different hormones. 95% confidence interval values are shown in parentheses.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The constitutive activity of M75L receptor was independent of the cell lines used. Fold change of AncSR2 and variants over empty vector in the absence of ligand (cell line: CHO). The error bars associated with each column represent SEM from three independent replicates. Two-tailed unpaired t-test, (***) p<0.0002, (*) p<0.05. (B) Western blot experiment showing that the expression of mutant proteins are comparable to WT AncSR2.
+
 None of the hormones activated M75I (Figure 2E), suggesting that this mutation may inhibit ligand binding. Strikingly, while the M75L variant is the only receptor activated by aromatized and non-aromatized hormones, the efficacies of the hormones are drastically reduced (Emax ~2–5) (Figure 2D) compared to AncSR2 (Emax = 11–16) (Figure 2B). We then assayed transactivation in the absence of ligands for all AncSR2 variants and confirmed the presence of basal activity in the M75L mutant (Figure 2F) that is independent of the cell line used (Figure 2—figure supplement 2A). To assess whether transcriptional responses observed in M75I and M75L variants are caused by differential expression of these receptors, we performed western blots and observed that mutant proteins are expressed at levels comparable to WT AncSR2 (Figure 2—figure supplement 2B).
 
-## Ligand binding and overall AncSR2 dynamics are impacted by M75 mutations
+### Ligand binding and overall AncSR2 dynamics are impacted by M75 mutations
 
 To investigate the molecular basis for the transactivation profiles of AncSR2 variants, particularly the unexpected results observed in M75I and M75L mutants, we developed a binding assay to probe hormone binding to AncSR2 and all variants. For this purpose, we have designed a probe by linking 11-deoxycorticosterone (11-DOC), a potent AncSR2 agonist (Eick et al., 2012) to fluorescein (FAM). By titrating purified AncSR2 LBD against a fixed concentration of 11-DOC-FAM (Figure 3A), we obtained a saturation binding curve with an equilibrium dissociation constant Kd = 180 nM (Figure 3B). To validate that 11-DOC-FAM binds the AncSR2 ligand binding pocket, we used a competition assay to measure the Ki (inhibition constant) of unlabeled 11-DOC. We observe that unlabeled 11-DOC outcompeted the 11-DOC-FAM with Ki = 33 nM, approximately five-fold lower than Kd (Figure 3C). Similarly, previous fluorescent probes for SRs have been reported with 10-fold lower Kd compared to the unlabeled ligand (Blommel et al., 2004). Using the same assay, we determined the Kds for M75L, M75A, M75F, and M75I variants (Figure 3B). No binding is observed in M75I while all other variants display reduced binding affinity compared to AncSR2.
 
@@ -58,11 +76,47 @@ We then used the competition assay to determine Kis of the five aforementioned h
 
 To learn how the M75L variant is constitutively active, we performed HDX-MS to probe structural and dynamical changes in the mutant at fast deuterium exchange time scales (t=1–60 min). With peptide coverage ranging from 85% to 89% (Figure 4A) for the AncSR2 and M75L LBDs, we monitored the dynamics of nearly the entire protein at different time points (Figure 4—figure supplements 1–4). First, we identified the effects of the M75L mutation on WT AncSR2 dynamics using a comparative HDX (ΔHDX) analysis (Figure 4B). An increase in deuterium uptake was observed in multiple regions of the M75L mutant, including residues in and adjacent to the ligand binding pocket: H3, H10, H6, and H7. This deprotection may indicate general destabilization of these LBD regions. However the localization of these changes to the binding pocket may also suggest that M75L allows the pocket to sample a range of conformations, including some that resemble ligand-bound states which may permit constitutive activity. Deprotection is also unexpectedly observed in distant regions such as H9 and the N-terminal end of H10.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig4-v1.jpg)
+
+**Figure 4.:** (A) Sequence coverage maps for WT AncSR2 (blue) and M75L (pink) in their apo, estradiol (EST), and progesterone (PROG) bound form. (B) The percentage difference in relative fractional uptake (ΔRFU) of deuterium at a time point (15 min) between M75L and WT AncSR2 apo states (M75LApo – WTApo). (C) ΔRFU between M75L-progesterone bound and M75L Apo state (M75LPROG-M75LApo). (D) ΔRFU between WT-progesterone bound and WT Apo state (WTPROG-WTApo). Color bar indicates the fractional difference in relative deuterium uptake for the two states compared. Positive percentage numbers (red) correspond to higher deuterium exchange in state A compared to state B, that is, deprotection, while negative numbers (blue) indicate lower exchange, that is, protection against deuteration exchange. Dark grey regions represent peptides with no sequence coverage.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** A positive difference indicates increased exchange in the apo M75L while a negative difference represents decrease in the deuterium exchange.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** AncSR2 in the PRO and EST-bound states showed significantly increased deuterium exchange. In M75L-PRO-bound states, no uptake difference was observed in most protein regions while significant decreased exchange was seen (close to significant threshold value –0.5 Da) in the peptide region (56-63).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Relative fractional uptake of M75L and WT AncSR2 in the apo state. Relative fractional uptake of WT AncSR2 apo state with WT-EST (B) and WT-PRO (C) bound state.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig4-figsupp4-v1.jpg)
+
 To explore the dynamic effects of the M75L mutation on ligand binding, we analyzed ΔHDX comparing the progesterone-bound forms to their apo counterparts for both WT and M75L receptors (Figure 4—figure supplement 2). While modest changes in deuterium exchange accompanied progesterone binding in M75L (Figure 4C), dramatic enhancement in dynamics was observed across AncSR2, including peptides 20AGYDNTQPDTTNYLL34, 48VVKWAKALPGFRNLHLDD65, 104NEQRMQQSAM113, 145LLSTVPKEGLKSQ160, suggesting that the two variants are differentially affected by the addition of progesterone (Figure 4D). A similar effect was seen in the estradiol-bound forms of the receptors (Figure S5). WT AncSR2 showed deprotection in several regions when bound to estradiol, while M75L showed no changes. However, a slight deprotection was observed which may highlight differences in M75L binding to estrogens vs 3-ketosteroids (Figure 4—figure supplement 2). These experimental observations strongly support a model in which the M75L mutation shifts the ensemble conformation to a ligand-bound state, allowing the receptor to be less dynamically responsive to the addition of ligand. This effect may also explain the reduced ligand binding ability observed in the M75L variant.
 
-## MD simulations reveal conformational effects of M75 mutations
+### MD simulations reveal conformational effects of M75 mutations
 
 A key goal of this study is to determine the extent to which conformational effects predicted by MD simulations describe outcomes from molecular experiments. From our previous work on AncSR2 (Okafor et al., 2020), it is known that contact between H3-H5, as well as interactions between M75 and hormones may predict how well a hormone can activate AncSR2 (Okafor et al., 2020). To reveal the impact of M75 mutations on residue and ligand contacts, we used classical MD simulations to model each variant in the presence of the five hormones. We included an unliganded (apo) simulation for each variant, generating a total of thirty complexes. Root mean square deviation (RMSD) analyses of trajectories fluctuated around 2 Å or lower, confirming stability of the complexes over the length of the simulation (Figure 5—figure supplement 1). To measure contacts between two residues, we determined the minimum distance between heavy atoms (See Materials and methods) of both residues across the simulations. First, we measured the distance between residue 75 and the hormone (Figure 5A). In all mutants and for all ligands, residue 75 is within 4.5 Å of the hormone which is within the threshold for a van der Waals contact (Figure 5B). Of all variants, M75I has the shortest distances for this contact, with values ranging from 3.5 to 3.7 Å. Distances in all other variants are higher, ranging from 3.7 to 4.0 Å.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig5-v1.jpg)
+
+**Figure 5.:** (A) AncSR2 structure indicating positions of M75 along with bound hormone and additional H5 and H3 residues used to determine contact measurements. To assess H3-H5 interhelical distances, measurements were performed between Leu42-Trp71 and Gln41-res75. (B) Average distances between residue 75 (H5) and A-ring of hormones. (C) Average distances between L42 Cα and Trp71 Cα atoms. M75A showed the smallest distances, M75F the largest, with all other complexes in between, indicating that the size of the sidechain determines the interhelical distance. (D) Average distances between Q41 Cα and res75 Cα atoms. This contact follows the same trends observed in (C). Individual data points in B, C, D represent distance measurements averaged over simulations. Each box and whisker representation displays the distribution of calculated distances for the five hormone-bound complexes and apo receptor. The lower bounds for each box in (C and D) correspond to the apo receptors. (E) Two potential explanations for enhanced activity in M75A are the proximity of Q41 (top) and Trp71 (bottom) to hormones, due to the reduced H3-H5 distances. (F) In estradiol-bound M75F, a pi-stacking triad is formed between Trp71, Phe75 and the hormone A-ring. This observation suggests an explanation for why the mutant is selectively activated by 3-ketosteroids but not by estrogens. (G) Simulations predict that the Ile sidechain of M75I is likely to insert into the binding pocket and interfere with ligand binding. This effect is not observed any of the other complexes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** All heavy atoms of either residues or ligands were used to determine the shortest distance between both (See Materials and methods – Analysis). The shortest distances over the length of the trajectory (75,000 points) were binned to generate the plots above.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Four different ligands used in the assay: progesterone (PRO), estradiol (EST), aldosterone (ALDO) and hydrocortisone (HCY). Each data point is average of six independent replicates from two biological experiment. The error bar associated with each data point represent SEM.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Red boxes indicate when pi stacking occurred between both rings. Numbers indicate the percentage of time spent by both rings in pi-stacking for all complexes.
 
 Next, we computed the H3-H5 interhelical distance in all variants by measuring Cα-Cα distances between two H3/H5 pairs: Gln41/res75 and Leu42/Trp71 (Figure 5C and D). Importantly, while the Ala sidechain is not able to form van der Waals contacts with any H3 residues, all other position 75 substitutes were bulky enough for contact (Data not shown). M75A and M75I complexes show the smallest interhelical distances, significantly shorter than other variants (Figure 5D). In several complexes, M75F shows the largest H3-H5 distances (as high as 8.1 Å between Leu42-Trp71) while M75L and WT AncSR2 show intermediate distances on average. Thus, we determined that while M75 mutations preserve the contact with hormones, they modulate the H3-H5 interhelical distance which may be a factor in the varying transcriptional responses observed here.
 
@@ -70,7 +124,7 @@ We then sought to visualize the conformational effects that accompany M75A, M75F
 
 In M75F complexes, in addition to having the largest interhelical distances, (Figure 5C and D). we observe that Phe75 engages Trp71 in a hydrophobic interaction. We measured the fraction of time that the aromatic sidechains engage in pi-stacking and interestingly, the occupancy was less than 9% for 3-ketosteroid complexes but rose to ~40% in the M75F-estradiol complex (Figure 5—figure supplement 4). Additionally, Trp71, Phe75 and the aromatic A-ring of estradiol form a triad in this complex (Figure 5F), which was absent in 3-ketosteroid complexes. Thus, M75F bears strong similarities with AncSR2, where the Phe sidechain, similar to the WT Met, engages in pi interactions with estrogens but not 3-ketosteroids (Okafor et al., 2020). Unsurprisingly, while potency is reduced by 1–2 orders of magnitude, M75F displays a similar activation profile to WT AncSR2 (Figure 2A and C). Notably, DHT does not activate M75F in our assay, which we believe results from the same reason that DHT weakly activates AncSR2, that is, the lack of a C17 acetyl substituent to stabilize the D-ring end of the hormone via hydrogen bonding. Because the main difference between WT and M75F mutants is the increased H3-H5 distance resulting from the bulky Phe substitution, the larger distance may be responsible for the suboptimal functional profile of this mutant, a hypothesis that would require testing in future studies. Simulations of the M75I variant with ligands showed that the β-branched Ile sidechain is positioned to enter the binding pocket and interfere with ligand binding (Figure 5G), providing an explanation for the lack of ligand binding and transcriptional activation observed (Figure 2E).
 
-## Clustering demonstrates that ligands selectively shift conformational states in AncSR2 variants
+### Clustering demonstrates that ligands selectively shift conformational states in AncSR2 variants
 
 We previously reported that that NR ensembles generated by MD simulations experience conformational shifts upon addition of ligand that may reflect the activation potency of ligands (Okafor et al., 2020). To characterize these ligand-induced effects in our engineered receptors, we used accelerated MD simulations to achieve enhanced sampling of the conformational space for each receptor-hormone combination. By lowering the energetic barrier for conformational transitions during simulations, this method allows us to visualize conformational states that may not be sampled in classical MD. We obtained 500 ns accelerated MD trajectories in the apo state for all five variants along with ligand-bound states (aldosterone, progesterone, estradiol, cortisol, DHT) for AncSR2, M75F, M75A, and M75L. Excluding the binding incompetent M75I variant, accelerated MD was performed on 25 complexes in total.
 
@@ -86,11 +140,21 @@ In M75L, all ligands cause a shift in the conformational ensemble resulting in n
 
 As a visual inspection of clustering results predicts a relationship between ligand activity and overlap in clustering, we quantified the ‘overlap fraction’ for each receptor-ligand complex, that is, the fraction of apo frames that emerge in the same cluster with ligand-bound frames (see Methods). Overlap fraction values range from 0 (no overlap, e.g., M75A-aldosterone) to 1 (complete overlap, e.g., M75F-aldosterone). We observe a correlation between the overlap fraction and ligand activity measured by (i) EC50 (Figure 6F), (ii) fractional fold activation at 10 nM and (iii) 100 nM (Figure 6G and H). Thus, results suggest that the ability of ligands to shift conformational ensembles of AncSR2 and variants may predict their in vitro transcription activity.
 
-## Conformational analysis of MD-generated ensembles
+### Conformational analysis of MD-generated ensembles
 
 Finally, we sought to reveal the conformational features defining the ensembles generated from M75 mutants. To quickly identify the most distinguishing features of each cluster from Figure 6B–E, we calculated root mean square fluctuations (RMSF) for all cluster populations (Figure 7—figure supplement 1). While these reveal that flexible regions of AncSR2 variants largely drive conformational differences between clusters, they also identify residues 100–125, that is H6 and H7 as a region that distinguishes clusters for all complexes, most prominently in WT AncSR2 complexes (Figure 7—figure supplement 1). Next, we performed more specific analyses on unliganded M75F, M75I, and M75L, as these three variants revealed a shift in the conformational ensemble when clustered with WT AncSR2 (Figure 6A). To achieve this conformational analysis, we obtained 100 representative structures each from the largest WT and mutant clusters of Figure 6A. We compared the subgroups using Ensemblator (Brereton and Karplus, 2018; Clark et al., 2015) to quantify both differences and similarities between mutant and WT populations. This method achieves local conformational comparison by calculating the similarity between backbone conformations based on dihedral angles (Clark et al., 2015). Global comparisons are performed based on an atom-level overlay of all 200 structures. Comparisons are represented by Discrimination Index (DI), a metric ranging between 0 and 1 that reveals the most significant local and global differences between both subgroups (See Materials and methods).
 
 Conformational changes are colored by calculated DI, where higher values identify structural differences in the mutant relative to WT (Figure 7A and B). Here, we observe small changes in local (<0.3) and global DI (<0.5) for most regions of the receptors (Figure 7—figure supplement 2), indicating that subtle conformational changes drive the structural effects detected via clustering. Thus, we have focused on analyzing these subtle differences between mutant and WT AncR2 structures. In all variants, M75 mutation induces a backbone change in H5 beginning at Met72 (M75I) or Trp71 (M75F, M75L). These changes propagate to the adjacent H8, subsequently influencing the H8-H9 loop and/or the H9-H10 loop (Figure 7C). Other regions impacted include H10 and the pre-H12 loop. Global changes vary more drastically between the three variants. M75F shows the largest effects in H8, H10 and the bottom of H3. Conversely, M75I undergoes global shifts >0.3 DI in nearly all helices, while M75L is most affected at H6, H7, H8, and H9/H10. Interestingly, we note that some of the large global changes in M75L (H6, H7, H9) coincide with regions predicted by HDX-MS to be destabilized by the M75L mutation (Figure 4B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig7-v1.jpg)
+
+**Figure 7.:** (A) Ensemblator analysis of local/backbone changes of M75 variants compared to WT AncSR2. Conformational changes are quantified and colored by the discrimination index (DI). Lower DI values indicate regions where structures are nearly identical between WT and mutant receptors while higher DI indicates changes in local backbone angles induced by mutations. Spheres on H5 identify position 75. (B) Ensemblator analysis of global changes in M75 mutants compared to WT. Structures are globally overlaid prior to analysis. Structures are colored by DI, where lower values correspond to highly similar regions in superimposed structures while higher values indicate regions of structural dissimilarity. Spheres on H5 identify position 75. (C) Overlay of 200 structures used for Ensemblator analysis showing conformational changes observed in H8-H9 and H9-H10 loops. Structures from WT AncSR2 are colored blue while mutant structures are shown in cyan, illustrating that structural variations are the result of mutation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Each graph contains the number of curves corresponding to the number of clusters from that analysis. Each curve is the calculated RMSF of all PDB frames in that cluster.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/80140/elife-80140-fig7-figsupp2-v1.jpg)
 
 ## Discussion
 
@@ -106,11 +170,476 @@ This work demonstrates that an in silico approach can be used for describing lig
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>New England Biolabs</td>
+      <td>C2527</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>New England Biolabs</td>
+      <td>C2987</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Hela</td>
+      <td>ATCC</td>
+      <td>-</td>
+      <td>Cell lines maintained in Penn State Sartorius Cell Culture facility</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>CHO</td>
+      <td>ATCC</td>
+      <td>-</td>
+      <td>Cell lines maintained in Penn State Sartorius Cell Culture facility</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gal4-DBD (Mouse monoclonal): (RK5C1)</td>
+      <td>Santacruz Biotechnology</td>
+      <td>sc-510</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>m-IgG Fc BP-HRP (Mouse polyclonal)</td>
+      <td>Santacruz Biotechnology</td>
+      <td>sc-525409</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>A2066</td>
+      <td>WB (1:8000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti Rabbit IgG H+L (HRP) (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab97051</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSG5-Gal4-DBD fused LBD (plasmid)</td>
+      <td>Reference Eick et al., 2012</td>
+      <td>-</td>
+      <td>Eick et al., 2012, Plos Genetics</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75L_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5'- CTGGATGGGCCTGTTGGCCTTCGCCAT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75L_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5’- ATGGCGAAGGCCAACAGGCCCATCCAG –3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75A_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5’-CCTGGATGGGCCTGGCGGCCTTCGCCATGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75A_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5’-CCATGGCGAAGGCCGCCAGGCCCATCCAGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75F_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5’- CTGGATGGGCCTGTTCGCCTT CGCCATGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75F_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5’-CCATGGCGAAGGCGAACAGGCCCATCCAG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75I_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5’-CCTGGATGGGCCTGATAGCCTTCGCCATG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75I_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5’-CATGGCGAAGGCTATCAGGCC CATCCAGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75A-Q41A_F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5'-GGCTGGCCGAGAAGGCGCTGGTGTCTGTGG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M75A-Q41A_R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>5'-CCACAGACACCAGCGCCTTCTCGGCCAGCC-3'</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleospin Plasmid purification kit</td>
+      <td>Clontech</td>
+      <td>Clontech:639647</td>
+      <td>Used for Plasmid DNA purification according to manufacturer’s protocol.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Glo Luciferase kit</td>
+      <td>Promega</td>
+      <td>E2980</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>FuGENE HD</td>
+      <td>Promega</td>
+      <td>E2311</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>β-Estradiol</td>
+      <td>Sigma Aldrich</td>
+      <td>E8875</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Progesterone</td>
+      <td>Acros Organics</td>
+      <td>AC225650050</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Aldosterone</td>
+      <td>CAYMAN Chemical</td>
+      <td>15273</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrocortisone 98% 1GR</td>
+      <td>Acros Organics</td>
+      <td>AC352450010. 103515–190</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>11-Deoxycorticosterone Acetate 97%</td>
+      <td>Acros Organics</td>
+      <td>460470010</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydrotestosterone(DHT)</td>
+      <td>Selleckchem.com</td>
+      <td>S4757</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl Sulfoxide (DMSO)</td>
+      <td>VWR</td>
+      <td>BDH115-1LP</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine 99+%, Molecularbiology grade, Ultrapure</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>J16407-A1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium Persulfate 98+% ACS reagent</td>
+      <td>Millipore Sigma</td>
+      <td>248614–500 G</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol Certified ACS</td>
+      <td>Fisher Scientific</td>
+      <td>G33-4</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-Dithotheitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>D0632-5G</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-Dithotheitol</td>
+      <td>Alfa Aesar</td>
+      <td>A15797</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Start Bradford 1 X</td>
+      <td>Bio-Rad</td>
+      <td>5000205</td>
+      <td>Used according to manufacturer’s protocol</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce ECL Western Blotting substrate</td>
+      <td>ThermoFisher Scientific</td>
+      <td>32109</td>
+      <td>Used according to manufacturer’s protocol</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>Graph Pad Prism</td>
+      <td>GPS-1988381</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AMBER 2020</td>
+      <td>Case, 2020</td>
+      <td>https://ambermd.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Carma</td>
+      <td>Glykos, 2006</td>
+      <td>https://utopia.duth.gr/ glykos/Carma.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MMTSB</td>
+      <td>Feig et al., 2004</td>
+      <td>http://blue11.bch.msu.edu/mmtsb/Main_Page</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VMD</td>
+      <td>Humphrey et al., 1996</td>
+      <td>RRID: SCR_001820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast Extract Powder</td>
+      <td>RPI</td>
+      <td>Y200250</td>
+      <td>Used for preparation of Luria Bertini Media. See in Methods subsection section’s “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tryptone</td>
+      <td>RPI</td>
+      <td>T60060</td>
+      <td>Used for preparation of Luria Bertini Media. See in Methods subsection section’s “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Trypsin</td>
+      <td>Corning</td>
+      <td>25–053 C1</td>
+      <td>See Methods subsection Western blotting and Luciferase reporter assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal Bovine Serum</td>
+      <td>Corning</td>
+      <td>35-072CV</td>
+      <td>See Methods subsection Western blotting and Luciferase reporter assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phosphate- Buffered Saline</td>
+      <td>Corning</td>
+      <td>21–040-CV</td>
+      <td>Used for washing of Hela and CHO cells during cell passage. See Methods subsection Western blotting and Luciferase reporter assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NaCl</td>
+      <td>RPI</td>
+      <td>Y200250</td>
+      <td>Used for preparation of Luria Bertini Media and different buffers. See in Methods subsection section’s “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ethidium Bromide solution</td>
+      <td>VWR</td>
+      <td>97064–970</td>
+      <td>Used to visualize electrophoresed DNA. See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tris-Base</td>
+      <td>Fisher Scientific</td>
+      <td>BP152-500</td>
+      <td>For preparation of protein purification buffers. See in Methods subsection section’s “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HEPES</td>
+      <td>Fisher Scientific</td>
+      <td>BP310-500</td>
+      <td>Used in ligand binding assay. See Methods subsections “Cloning, expression, and purification of ligand binding domain of WT and mutants” and ligand binding assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sodium Deoxycholate</td>
+      <td>Sigma</td>
+      <td>D6750</td>
+      <td>See Methods subsection Western blotting</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3X-Gel loading dye</td>
+      <td>New England Biolabs</td>
+      <td>B7703</td>
+      <td>For protein sample load during SDS-PAGE (Figure 1—figure supplement 1). See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>6X-Gel loading dye</td>
+      <td>New England Biolabs</td>
+      <td>B7025S</td>
+      <td>For DNA loading on agarose gels. See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pre-stained Protein Ladder</td>
+      <td>New England Biolabs</td>
+      <td>P04772S</td>
+      <td>See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Every Blot Blocking Buffer</td>
+      <td>Bio-Rad</td>
+      <td>12010020</td>
+      <td>Used according to manufacturer’s protocol. See Methods subsection Western blotting.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Syringe filter (0.22 micron)</td>
+      <td>Fisherbrand</td>
+      <td>09-720-511</td>
+      <td>See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants.”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Halt Protease &amp; Phosphatase Inhibitor</td>
+      <td>ThermoFisher Scientific</td>
+      <td>78440</td>
+      <td>Used according to manufacturer’s protocol. See Methods subsection Western blotting</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon-Ultra-15</td>
+      <td>Millipore, USA</td>
+      <td>UFC901024</td>
+      <td>See in Methods subsection section’s “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EcoRI-HF</td>
+      <td>New England Biolabs</td>
+      <td>R3101S</td>
+      <td>Used according to manufacturer’s protocol. See in Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HindIII-HF</td>
+      <td>New England Biolabs</td>
+      <td>R3104S</td>
+      <td>Used according to manufacturer’s protocol. See in Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DpnI</td>
+      <td>New England Biolabs</td>
+      <td>R0176S</td>
+      <td>Used according to manufacturer’s protocol for methylated DNA stand degradation. See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nuvia-IMAC</td>
+      <td>Bio-Rad</td>
+      <td>780–0812</td>
+      <td>See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ENrich SEC70</td>
+      <td>Bio-Rad</td>
+      <td>7801070</td>
+      <td>See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ENrich SEC650</td>
+      <td>Bio-Rad</td>
+      <td>7801650</td>
+      <td>See Methods subsection “Cloning, expression, and purification of ligand binding domain of WT and mutants”</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Sodium chloride, Tris base, glycine, sodium dodecyl sulphate, ethylenediaminetetraacetic acid (EDTA), imidazole, glycerol were purchased from Fischer scientific (USA). Ampicillin, tryptone, yeast extract, isopropyl β-D-1 thiogalactopyranoside (IPTG) were procured from RPI chemicals (USA). DTT was purchased from Alfa Aesar/Sigma, USA. Estradiol and ammonium persulphate were purchased from Sigma Chemical Co. (USA). Hydrocortisone, 11-Deoxycorticosterone (11-DOC), progesterone,, 11-Deoxcycortisterone acetate were purchased from Acros organics. Dihydrotestosterone and aldosterone purchased from Selleckchem, USA and Cayman Chemicals, respectively. Bioscale Nuvia-IMAC Ni-charged and ENrich SEC70 and SEC650 10/300 size exclusion columns were purchased from Biorad, USA and used with BioRad NGC Quest plus FPLC system. Syringe filters (0.2 micron) were procured from Millipore corporation. All reagents and chemicals were of analytical grade. HeLa and CHO cells have been used, obtained from ATCC. Mycoplasma testing confirmed no contamination.
 
-## Cloning, expression, and purification of ligand binding domain of WT and mutants
+### Cloning, expression, and purification of ligand binding domain of WT and mutants
 
 The gene encoding AncSR2 was PCR amplified from the vector pSG5-Gal4-DBD-SR2-LBD using forward and reverse primers containing EcoRI and HindIII restriction sites, respectively, to clone into pMALCH10T vector. Primers were designed (Supplementary file 1), followed by mutagenesis to generate M75L, M75A, M75I, and M75F mutants of AncSR2-LBD in both pSG5 and pMALCH10T vectors. Mutants were confirmed by DNA sequencing.
 
@@ -118,33 +647,41 @@ MBP-His-tagged LBDs of WT-AncSR2 and its mutants were expressed in and purified 
 
 For ligand binding assays, MBP-tagged AncSR2 LBD and mutants were expressed and purified (without protease treatment) as described above for the LBD, except for the use of 0.4 mM IPTG and 50 μM 11-DOC acetate for induction of protein expression, followed by overnight growth at 18 °C. The MBP tagged protein was purified by Ni-affinity chromatography, followed by gel filtration in pH 7.4 buffer containing 20 mM Tris (pH 7.4),150 mM NaCl and 10% glycerol. The final purification was performed using a SEC650 gel filtration column in a buffer containing 20 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, 5 mM DTT and 0.005% Triton X-100. The purified protein concentrated using 10 KDa cutoff Amicon.
 
-## Circular dichroism measurements
+### Circular dichroism measurements
 
-Far UV-CD measurements were done on a Jasco J-1500 spectrophotometer equipped with a temperature controller. The far-UV CD spectra of the WT and its mutants were measured in the wavelength range 195–250 nm. For spectral measurements,1 mm path length cuvette was used, with scan rate of 50 nm/s, 1 s response time and bandwidth of 1 nm and protein concentration used was 0.2 mg/ml. The CD instrument was continuously purged with N2 gas at 5–8 lit/min flow rate and routinely calibrated with D-10-camphorsulfonic acid. Each spectrum was an average of 3 consecutive scans and corrected by subtraction of the buffer (10 mM phosphate, pH 7.4 and 100 mM NaCl). The raw CD data was converted into mean residue ellipticity at a wavelength, [θ]λ(deg cm2dmol–1) by using the relation,(1)[θ]λ=M0θλ/10lc
+Far UV-CD measurements were done on a Jasco J-1500 spectrophotometer equipped with a temperature controller. The far-UV CD spectra of the WT and its mutants were measured in the wavelength range 195–250 nm. For spectral measurements,1 mm path length cuvette was used, with scan rate of 50 nm/s, 1 s response time and bandwidth of 1 nm and protein concentration used was 0.2 mg/ml. The CD instrument was continuously purged with N2 gas at 5–8 lit/min flow rate and routinely calibrated with D-10-camphorsulfonic acid. Each spectrum was an average of 3 consecutive scans and corrected by subtraction of the buffer (10 mM phosphate, pH 7.4 and 100 mM NaCl). The raw CD data was converted into mean residue ellipticity at a wavelength, [θ]λ(deg cm2dmol–1) by using the relation,
+
+$$
+[\theta]_{\lambda}=M_{0}\theta_{\lambda}/10lc
+$$
 
 where, Mo is mean residue weight of the protein, θλ is the observed ellipticity in millidegrees at λ wavelength, c is the concentration of protein in mg ml–1, and l represents the cuvette path length in centimeters.
 
-## Thermal denaturation measurements
+### Thermal denaturation measurements
 
 Thermal denaturation was followed by measuring changes in the CD signal at 222 nm as a function of temperature. The heating rate of 1 °C with bandwidth 4 nm, 2 s response time was used in the temperature range 20–70°C to follow the denaturation. The raw CD data was converted into the concentration independent parameter ([θ]λ) using equation 1. In the analysis of the denaturation curves, a two-state model (N=native state, D=denatured state) was assumed, and the temperature dependencies of pre- and post-denaturation baselines are linear. Stability curves (ΔG vs temperature) were constructed choosing values of ΔG (±1.3 kcal/mol) close to the midpoint of denaturation (Tm) that fall on the straight line. A linear least square analysis was used to estimate the entropy change at Tm (=- δΔG/δT)p which is then multiplied by Tm to get the values of apparent ΔHm. It should be noted that the heat-induced denaturation process was irreversible in the measured experimental conditions, so the stability parameter is defined here as apparent Tm.
 
-The fraction of denatured molecules (fD) was calculated by the relation:(2)fD=(y–yN/yD−yN)
+The fraction of denatured molecules (fD) was calculated by the relation:
+
+$$
+f_{D}=(y–y_{N}/y_{D}−y_{N})
+$$
 
 where y is the observed optical property of protein at temperature T, yN and yD are optical properties of native and denatured molecules at the same temperature.
 
-## Ligand binding and competition assay
+### Ligand binding and competition assay
 
 WT-AncSR2 and the M75L mutant were expressed and purified as MBP-tagged proteins. All fluorescence polarization experiments were performed buffer containing 20 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, 5 mM DTT and 0.005% Triton X-100. For saturation binding experiments, the binding affinity (Kd: dissociation constant) of the receptor for the probe dexamethasone-fluorescein (11-DOC-FAM) was determined using a constant concentration of 10 nM of the probe and a variable receptor protein concentration of 7.5x10–6 – 4.5x10–10 M in a 384 well plate. The plate was centrifuged at 500 RPM for 2 min and incubated overnight at 4 °C before reading. Fluorescence polarization measurements were performed on a Spectramax iD5 plate reader (Molecular Devices, USA) using excitation and emission wavelengths of 485 and 528, respectively. Six technical replicates and two biological replicates were obtained and data was plotted as the average mP (millipolarization) of all replicates versus receptor protein concentration. The saturation binding curve was analyzed by a one-site hyperbola binding model using GraphPad Prism vs 9 (GraphPad, Inc, La Jolla, USA). In the competition binding assay, 10 nM 11-DOC-FAM and protein concentration approximately 1.1–1.8 times Kd for 11-DOC-FAM were incubated with variable 10–10–10–5 M (competitive ligand overnight at 4 °C). The observed mP values in the presence of competitive ligands were plotted and fit by the Fit Ki model of GraphPad Prism vs 9. All data points were plotted after buffer subtraction.
 
-## Luciferase reporter assays
+### Luciferase reporter assays
 
 Hela cells were grown and maintained in phenol red free medium MEM-α supplemented with 10% charcoal-dextran stripped FBS. Cells were seeded in 96-well plates at 70–90% confluency and co-transfected with 1 ng Renilla (pRL-SV40), 50 ng 9x-UAS firefly luciferase reporter and 5 ng pSG5-Gal4DBD-LBD fusions of WT-AncSR2, M75L, M75A, M75I, and M75F receptor plasmids using FuGene HD (Promega). Cells were treated with DMSO or varying drug concentrations 24 hr after transfection, all in triplicate. Firefly and Renilla luciferase activities were measured 24 hr after drug treatment using Dual-Glo kit (Promega) using a Spectramax iD5 plate reader. Fold activation is represented as normalized luciferase over DMSO control. Dose response curves were generated by GraphPad Prism v9.0.
 
-## Western blotting
+### Western blotting
 
 Hela cells maintained in MEMa and 10% FBS at 37 °C. For transfection, 0.8–1x10–6 cells were seeded in six-well plate (Corning, USA). After 24 hr, 2 μg DNA of WT AncSR2 and mutant plasmids were transfected individually in different wells of the plate using FuGene HD transfection agent. Cells were then grown for 48 hr then harvested and lysed in a buffer (50 mM Tris, pH 8.0, 150 mM NaCl, 0.1% Triton X-100, 0.5% Sodium Deoxycholate and 1 mM Sodium azide and protease inhibitor (Thermofisher Scientific, USA) by incubating it on ice for 30 mins. The cell lysates were cleared by subjecting it to centrifugation at 12,000 rpm for 30 min at 4 °C. The sample concentration determined by comparing with standard plot of Bovine Serum Albumin. The protein concentration estimated by Bradford reagent (Bio-Rad, USA). An equal amount (40 μg) of total protein samples were electrophoresed on 12% SDS-PAGE and transferred to a PVDF membrane. Gal4-DBD fused protein was detected using ECL (Thermofisher Scientific, USA) after incubation of mouse monoclonal anti-GAL4DBD antibody (sc510, Santacruz Biotechnology, Santa cruz, USA)) and horse reddish peroxidase linked secondary antibody (sc-525409, Santacruz Biotechnology, Santa cruz, USA). The same blot stripped off and then restained with rabbit raised anti-actin polyclonal antibody (A2066, Millipore Sigma, USA) and detected by Goat raised anti-rabbit horse reddish peroxidase linked secondary antibody (ab97051, Abcam, USA).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Coordinates for AncSR2 ligand binding domain were obtained from PDB 4FN9, AncSR2 LBD-progesterone (Eick et al., 2012). Ligand complexes with the other hormones in this study (dihydrotestosterone, hydrocortisone, aldosterone, estradiol) were constructed by manually modifying the steroidal core of progesterone. All waters and surface-bound molecules from the crystallization buffer were deleted from the models. M75 mutant AncSR2 complexes were prepared by using Xleap in AmberTools20 (Case, 2020) to replace the M75 sidechain with alanine, leucine, isoleucine and phenylalanine respectively. In total, 30 complexes (5 AncSR2 variants, 5 hormones and 1 unliganded state per variant) were prepared for simulation. Unliganded states were prepared by removing the ligand from co-crystal structures followed by additional simulations.
 
@@ -152,21 +689,21 @@ All complexes were prepared using Xleap. Parameters for steroid hormones were ob
 
 Complexes were heated from 0 to 300 K using a 100 ps run with constant volume periodic boundaries and 5 kcal/mol Å2 restraints on all solute atoms. All simulations were performed using AMBER 2020 on GPUs (Götz et al., 2012; Salomon-Ferrer et al., 2013) Before production MD simulations, 10-ns simulations with 10 kcal/mol.Å2 restraints on all solute atoms were obtained in the NPT ensemble. This was followed by a second 10-ns simulation with restraints reduced to 1 kcal/mol.Å2. Finally, restraints were retained only on the ligand atoms for a third 10-ns equilibration step. Production trajectories were obtained on unrestrained complexes, each complex simulated for 500 ns in triplicate. All MD was performed with a 2 fs timestep and using the SHAKE algorithm (Ryckaert et al., 1977) to fix heavy atom hydrogen bonds. Simulations were performed with the NPT ensemble, a cutoff of 10 Å to evaluate long-range electrostatics and particle mesh Ewald and van der Waals forces.
 
-## Accelerated MD
+### Accelerated MD
 
 Accelerated MD was used as previously reported (Okafor et al., 2020; Hamelberg et al., 2004) to enhance conformational sampling for AncSR2 complexes. We apply a dual-boosting approach, selecting parameters for potential energy threshold (EP), dihedral energy threshold (ED), dihedral energy boost (aD) and total potential energy boost (aP) using published guidelines (Fratev, 2015). 500 ns accelerated MD simulations were performed for a total of 30 complexes (5 AncSR2 variants, 5 hormones, and 1 unliganded state per variant). All simulations were performed in AMBER 2020 and classical MD simulations were used to obtain Average dihedral energy (EavgD) and average total potential energy (EavgP).
 
-## Analysis
+### Analysis
 
 Structural averaging and analysis were performed with the CPPTRAJ module of AmberTools17 (Roe and Cheatham, 2013). The ‘strip’ and ‘trajout’ commands of CPPTRAJ were used to remove solvent atoms and obtain twenty-five thousand evenly spaced frames from each simulation for analysis. For each complex, triplicate runs were combined to yield seventy-five thousand frames for analysis. Two residues were defined to be within in Van der Waals contact if the distance between a pair of heavy atoms from each residue was <4.5 Å. To identify contacts, the ‘distance’ command of CPPTRAJ was used to measure the distance between all pairs of heavy atoms (i.e. non-H atoms) on both residues. For each frame in the analyses, the shortest pair distance was recorded and these values averaged at the end to obtain the miminum distance between heavy atoms.
 
-## Clustering and conformational analysis
+### Clustering and conformational analysis
 
 The MMTSB toolset (Feig et al., 2004) was used to perform clustering of accelerated MD trajectories. clustering analyses. For each complex, 25,000 evenly spaced conformations were obtained from each 500 ns trajectory for clustering. A 2.4 Å cutoff was used for all systems, which results in distinct numbers/sizes of clusters for each complexes but allows for an unbiased analysis. Clustering was performed between mutant and WT variants, as well as between liganded and apo complexes.
 
 To quantify the extent of the ligand-induced conformational change in accelerated MD, we defined the ‘overlap fraction’ as the fraction of apo frames that emerge in the same cluster with ligand-bound frames. For each cluster in a combined clustering analysis, a 5% cutoff is applied to determine whether the cluster is a mix of both ‘apo’ and ‘liganded’ frames: that is the size of the smaller component must be greater than or equal to 5% of the larger component. E.g. if cluster 1 has 293 ‘apo’ frames and 14287 ‘liganded’ frames, this cluster is not considered mixed, as 293<5% * 14287. If cluster 1 has 1554 ‘apo’ frames and 3269 ‘liganded’ frames, this cluster is considered mixed, as the 5% threshold is fulfilled. Next, the overlap fraction is calculated by summing over the total number of apo frames in all mixed clusters. This criteria ensures that all apo frames counted comprise a non-negligible population of the mixed cluster, identifying them as unliganded receptor conformations that are not eliminated (i.e. ‘shifted’) by addition of ligand. If no mixed clusters are present, the overlap fraction is 0, suggesting that ligand binding led to a ‘complete’ shift in the conformational ensemble. An overlap fraction of 1 is obtained if all clusters are mixed.
 
-## Amide hydrogen deuterium exchange mass spectrometry
+### Amide hydrogen deuterium exchange mass spectrometry
 
 Wild type and M75L AncSR2 samples were stored in 20 mM Tris, 150 mM NaCl, pH 7.4. To assess allostery in response to ligand binding (estradiol and progesterone), 10 μM SR2 samples were incubated with 200 µM ligand at 37 °C for 150 min before HDX. Deuterium labelling was carried out using a PAL RTC autosampler (LEAP technologies). All samples were diluted to a final concentration of 90.9% D2O to initiate the deuterium exchange reaction. Deuterium buffers were prepared by dilution of 20 X storage buffer in D2O. Deuterium exchange was carried out at room temperature (20 °C) maintained on a drybath for 10, 30, 60, 900, and 3600 s followed by rapidly quenching the reaction to minimize back exchange using 1.5 M GdnHCl and 0.1% FA on ice to bring the pH down to 2.5.
 
@@ -176,11 +713,11 @@ Undeuterated SR2 particles were sequenced by MSE to identify pepsin digested pep
 
 Average deuterium exchange in each peptide was measured relative to undeuterated control peptides using DynamX v3.0 (Waters, Milford, MA) by determining the centroid mass of each isotopic envelope. Subtractions of these centroids for each peptide from the undeuterated centroid determined the average number of deuterons exchanged in each peptide (Hoofnagle et al., 2003). Deuterium exchange for all peptides is represented using relative fractional uptake (RFU) plots. Each value reported is an average of three independent deuterium exchange experiments and not corrected for back-exchange (Lim et al., 2017). Difference plots were made by subtracting absolute centroid mass values between the two states under consideration. A difference of ±0.5 Da was considered a significance threshold for deuterium exchange (Houde et al., 2011). Deuteros 2.0 (Lau et al., 2021) was used to generate coverage maps and Woods plots with peptide level significance testing.
 
-## Synthesis of fluorescein labeled 11-DOC
+### Synthesis of fluorescein labeled 11-DOC
 
 Unless noted, materials and solvents were purchased from MilliporeSigma (Burlington, MA) and used without further purification. FAM-DBCO, 6-isomer was purchased from Lumiprobe Corporation (Hunt Valley, MD) and used without further purification. 5-bromovaleryl chloride was purchased from TCI America (Montgomeryville, PA) and used without further purification. Thin layer chromatography (TLC) was performed on Sorbent Technologies XHL 254 silica gel plates. Premium Rf 60 silica gel was used for column chromatography. 1H and 13C NMR spectra were obtained on a Bruker Avance Neo 400 MHz NMR spectromer or Bruker 500 MHz Avance III HD NMR Spectrometer with deuterated solvent as noted. Electrospray ionization (ESI) mass spectrometry was performed using a Thermo Q Exactive mass spectrometer with a Vanquish liquid chromatography system.
 
-## Synthesis
+### Synthesis
 
 2-((10 R,13S,17S)–10,13-dimethyl-3-oxo-2,3,6,7,8,9,10,11,12,13,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl)–2-oxoethyl 5-bromopentanoate (2) (Scheme 1). A solution of 21-hydroxyprogesterone (0.186 g, 0.563 mmol, 1.00 eq), triethylamine (0.157 mL, 1.13 mmol, 2.00 eq), and 4 mL dichloromethane (DCM) in a round bottom flask was cooled to 0 °C. To the solution was added 5-bromovaleryl chloride (0.150 mL, 1.20 mmol, 2.12 eq) dropwise over 5 min. The solution was allowed to warm to room temperature while continuing to stir for 3 hours. The reaction was diluted with more DCM then washed with water and 1 M K2CO3, dried with MgSO4, filtered, and evaporated. Column chromatography was performed (1:1 Ethyl Acetate:Hexanes, Rf = 0.5) to purify the compound, yielding 2 (0.184 g, 0.373 mmol, 66 %) as a white solid. 1H NMR (400 MHz, CDCl3) δ 5.73 (1 H, s), 4.74 (1 H, d, J=17), 4.51 (1 H, d, J=17), 3.42 (2 H, t, J=6.5), 2.52–0.92 (complex, 26 H), 1.17 (3 H, s), 0.69 (3 H, s); 13C NMR (100 MHz, CDCl3) δ 203.61, 199.73, 172.58, 171.10, 124.06, 69.22, 59.20, 56.29, 53.67, 50.92, 44.79, 38.69, 38.44, 35.80, 35.65, 34.02, 33.24, 32.86, 31.98, 31.90, 24.58, 23.50, 22.96, 21.10, 17.46, 13.30 .
 
@@ -190,6 +727,6 @@ Unless noted, materials and solvents were purchased from MilliporeSigma (Burling
 
 2-((10 R,13S,17S)–10,13-dimethyl-3-oxo-2,3,6,7,8,9,10,11,12,13,14,15,16,17-tetradecahydro-1H-cyclopenta[a]phenanthren-17-yl)–2-oxoethyl 5-(8-(6-(3',6'-dihydroxy-3-oxo-3H-spiro[isobenzofuran-1,9'-xanthene]–6-carboxamido)hexanoyl)–8,9-dihydro-1H-dibenzo[b,f](1,2,3)triazolo[4,5-d]azocin-1-yl)pentanoate (4) . A solution of 3 (0.027 g, 59.3 μmol, 1.22 eq), FAM-DBCO (0.033 g, 48.8 μmol, 1.00 eq), 6 mL DCM, and 3 mL methanol were combined in a round bottom flask and stirred at room temperature for 18 hr. The solution was evaporated and the compound was purified by reverse phase preparative HPLC (Agilent Technologies) using a ramp of 0% to 100% B over 10 min (retention time: 6.18 min) to yield 4 (0.009 g, 7.95 μmol, 13 %) as a yellow solid. ESI-MS m/z [M+H]+ observed: 1132.5, calculated: 1132.5.
 
-## Ensemblator analysis
+### Ensemblator analysis
 
 For structural comparison of WT and mutant ensembles, 100 conformations were obtained from each trajectory, based on combined clustering results. Structures selected represent the lowest RMSD members of the most populated WT or mutant clusters. Subgroups were identified as WT versus mutant groups. Briefly, Ensemblator performs local conformation comparisons by calculating a local overlaid dipeptide residual (LODR) score to measure residue-level backbone similarity (Brereton and Karplus, 2018; Clark et al., 2015). Global comparisons are performed following a least-squares overlay of all structures using common atoms. From both local and global comparisons, a discrimination index is calculated to access the significance of differences for each atom in both groups. Inter-subgroup variations are calculated as well as intra-subgroup comparisons. The DI is calculated for each atom as the mean of the pairwise distances between the groups minus the mean of the pairwise distances within the group, divided by the higher of the two values. Values range between 0 and 1, going from indistinguishable to structurally distinct ensembles.

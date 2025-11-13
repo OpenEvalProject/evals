@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00js3aw79 Department of Pharmacology, College of Basic Medical Sciences, Jilin University Changchun China
-2. https://ror.org/013xs5b60 Department of Neurology, Xuanwu Hospital, Capital Medical University Beijing China
-3. https://ror.org/013xs5b60 Neurology and Intracranial Hypertension & Cerebral Venous Disease Center National Health Commission of China, Xuanwu Hospital, Capital Medical University Beijing China
-4. https://ror.org/00js3aw79 School of Nursing, Jilin University Changchun China
+1. Department of Pharmacology, College of Basic Medical Sciences, Jilin University Changchun China ([ROR:00js3aw79](https://ror.org/00js3aw79))
+2. Department of Neurology, Xuanwu Hospital, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))
+3. Neurology and Intracranial Hypertension & Cerebral Venous Disease Center National Health Commission of China, Xuanwu Hospital, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))
+4. School of Nursing, Jilin University Changchun China ([ROR:00js3aw79](https://ror.org/00js3aw79))
 
 † Corresponding author
 
 ## Abstract
 
-Alzheimer’s disease (AD) is a complex degenerative disease of the central nervous system, and elucidating its pathogenesis remains challenging. In this study, we used the inverse-variance weighted (IVW) model as the major analysis method to perform hypothesis-free Mendelian randomization (MR) analysis on the data from MRC IEU OpenGWAS (18,097 exposure traits and 16 AD outcome traits), and conducted sensitivity analysis with six models, to assess the robustness of the IVW results, to identify various classes of risk or protective factors for AD, early-onset AD, and late-onset AD. We generated 400,274 data entries in total, among which the major analysis method of the IVW model consists of 73,129 records with 4840 exposure traits, which fall into 10 categories: Disease, Medical laboratory science, Imaging, Anthropometric, Treatment, Molecular trait, Gut microbiota, Past history, Family history, and Lifestyle trait. More importantly, a freely accessed online platform called MRAD ( https://gwasmrad.com/mrad/ ) has been developed using the Shiny package with MR analysis results. Additionally, novel potential AD therapeutic targets (CD33, TBCA, VPS29, GNAI3, PSME1) are identified, among which CD33 was positively associated with the main outcome traits of AD, as well as with both EOAD and LOAD. TBCA and VPS29 were negatively associated with the main outcome traits of AD, as well as with both EOAD and LOAD. GNAI3 and PSME1 were negatively associated with the main outcome traits of AD, as well as with LOAD, but had no significant causal association with EOAD. The findings of our research advance our understanding of the etiology of AD.
+Alzheimer’s disease (AD) is a complex degenerative disease of the central nervous system, and elucidating its pathogenesis remains challenging. In this study, we used the inverse-variance weighted (IVW) model as the major analysis method to perform hypothesis-free Mendelian randomization (MR) analysis on the data from MRC IEU OpenGWAS (18,097 exposure traits and 16 AD outcome traits), and conducted sensitivity analysis with six models, to assess the robustness of the IVW results, to identify various classes of risk or protective factors for AD, early-onset AD, and late-onset AD. We generated 400,274 data entries in total, among which the major analysis method of the IVW model consists of 73,129 records with 4840 exposure traits, which fall into 10 categories: Disease, Medical laboratory science, Imaging, Anthropometric, Treatment, Molecular trait, Gut microbiota, Past history, Family history, and Lifestyle trait. More importantly, a freely accessed online platform called MRAD (https://gwasmrad.com/mrad/) has been developed using the Shiny package with MR analysis results. Additionally, novel potential AD therapeutic targets (CD33, TBCA, VPS29, GNAI3, PSME1) are identified, among which CD33 was positively associated with the main outcome traits of AD, as well as with both EOAD and LOAD. TBCA and VPS29 were negatively associated with the main outcome traits of AD, as well as with both EOAD and LOAD. GNAI3 and PSME1 were negatively associated with the main outcome traits of AD, as well as with LOAD, but had no significant causal association with EOAD. The findings of our research advance our understanding of the etiology of AD.
 
 ## Introduction
 
@@ -38,69 +38,115 @@ In summary, in this work we attempt to identify risk or protective factors causa
 
 ## Results
 
-## Results of hypothesis-free Mendelian randomization analysis for Alzheimer’s disease
+### Results of hypothesis-free Mendelian randomization analysis for Alzheimer’s disease
 
 Based on hypothesis-free Mendelian randomization analysis for Alzheimer’s disease, this study generated a total of 400,274 data points. The major analysis method of the IVW model consists of 73,129 records with 4840 exposure traits, which fall into 10 categories: Disease (n=17,168), Medical laboratory science (n=15,416), Imaging (n=4,896), Anthropometric (n=4478), Treatment (n=4546), Molecular trait (n=17,757), Gut microbiota (n=48), Past history (n=668), Family history (n=1114), and Lifestyle trait (n=7038), as shown in Figure 1. To assess the robustness of the IVW results, sensitivity analysis was performed using six other models (MR-Egger with a total of 50,804 records, Weighted median with a total of 50,804 records, Simple mode with a total of 50,804 records, Weighted mode with a total of 50,804 records, Maximum likelihood with a total of 73,125 records, and Penalized weighted median with a total of 50,804 records).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig1-v1.jpg)
 
-## MRAD platform integration
+### MRAD platform integration
 
 Based on the 400,274 data points stated above, we created herein is an online data analysis platform for identifying the risk or protective factors for AD called MRAD (Mendelian randomization for Alzheimer’s disease, https://gwasmrad.com/mrad/). It contains six modules: (i) Home; (ii) Study Design; (iii) IVW interactive; (iv) IVW static; (v) Sensitivity analysis interactive; and (vi) Sensitivity analysis static; The platform provides a user-friendly search interface, allowing users to search, interactively visualize, analyze, and download the obtained results. MRAD User Guide is provided below in detail.
 
-## Home module (as shown in Figure 2)
+### Home module (as shown in Figure 2)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig2-v1.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig2-figsupp4-v1.jpg)
 
 The Home module allows users to search through 400,274 records. Users can enter search terms, such as exposure (e.g. LDL cholesterol) or id.exposure (e.g. ebi-a-GCST000759), in the search box. The search interface includes 20 control widgets, as shown in Figure 2—figure supplement 1. Among these control widgets, there are eight select boxes, including Classification I, Classification II, Classification III, id.outcome, method, effect_direction, Consortium, and Sex, allowing users to make single or multiple selections to filter the data. The control widgets also include two text input boxes, id.exposure and exposure, which allow users to search by text input (case-insensitive). The control widgets Min pval and Max pval allow users to search by numerical input (initial values: Min pval = 0, Max pval = 1). The Heterogeneity test and MR-Egger intercept test checkboxes provide users with a single-click option to obtain data results that have passed heterogeneity and horizontal pleiotropy tests (p>0.05). The Year range slider helps users to filter data based on the year of publication (range: 2007–2022). Additionally, we have supplemented relevant basic information on biomarker functions and pathways from the public database Uniprot. Users can search for information using the Uniprot Entry ID and Gene Names input boxes and can click on the Uniprot Entry ID Link in the table to go to the corresponding Uniprot page. The Download, Reset, and Back buttons, respectively, provide users with the ability to download the data in a.csv format, reset filter conditions of all control widgets, and return to the Home interface. Furthermore, in the Home module, users can also access the 10 category results of the IVW model (the major analysis method), by checking the corresponding checkbox on the right-hand side (note: only one checkbox can be checked at a time). For example, checking the ‘Disease’ checkbox will allow users to jump to the results page containing 17,168 disease records.
 
-## Study design module
+### Study design module
 
 The study design module provides users with a complete MR study design. Moreover, corresponding checkboxes are provided below to allow users to easily access the corresponding details (note: only one checkbox can be selected at a time), as illustrated in Figure 2—figure supplement 2.
 
-## IVW interactive and IVW static modules
+### IVW interactive and IVW static modules
 
 The IVW interactive module, as shown in Figure 2—source data 1, contains 21 control widgets, including the same search control widgets as in the Home module (due to a large amount of data, the initial values for Classification I and Classification II are set to ‘Medical laboratory science’ and ‘blood lipids and lipoproteins,’ respectively; users can reset the conditions as needed). In addition, the IVW interactive module includes the following new features: (i) a checkbox for ‘Exposures with no effect,’ which, when selected (checked by default), allows users to simultaneously remove all exposure traits that do not have a significant association (p>0.05) with any of the 16 outcome traits; (ii) a checkbox for ‘80 traits with consistent effect across three main outcome datasets,’ which, when selected (unchecked by default), provides users with the option to filter results that have a significant and consistent causal association with all the three main outcome traits of AD (p<0.05); (iii) Download Data and Download Interactive buttons provide users with the ability to download data in a.csv format and images in a.html format, respectively. The IVW interactive module also provides users with interactive visual results (Figure 2—figure supplement 3). Clicking on the dots on the image will display detailed information on the corresponding id.exposure, exposure, id.outcome, outcome, beta, OR_CI, pval, -log10(pval), nsnp, method, Heterogeneity test, and MR-Egger intercept test. The IVW static module is the same as the IVW interactive module in terms of all the control widgets except for the absence of the Download Interactive button, and contains only static graph results.
 
-## Sensitivity analysis interactive and sensitivity analysis static modules
+### Sensitivity analysis interactive and sensitivity analysis static modules
 
 The sensitivity analysis interactive module contains 21 control widgets, all of which are the same as those in the IVW interactive module, except that the ‘80 traits with consistent effects across three main outcome datasets’ checkbox is absent, and that the id.outcome option is only available for single selection (initial value: ieu-b-2, users can reset the conditions as needed). In addition, a sensitivity analysis passed select box widget has been added, which allows users to select one or more of the six sensitivity analysis models and obtain statistically significant results (p<0.05), as shown in Figure 2—source data 2. Interactive visual results are also provided to users. By clicking on the squares in the image, detailed information for id.exposure, exposure, id.outcome, outcome, beta, OR_CI, pval, nsnp, and method is displayed, as shown in Figure 2—figure supplement 4. The sensitivity analysis static module has the same control widgets as the Sensitivity Analysis Interactive module, except that it does not include the Download Interactive button and only contains static image results.
 
 In our view, as the first interactive comprehensive platform for AD MR research to date, this online platform would benefit the field of scientific research in AD in numerous ways. On the one hand, it would allow researchers to quickly identify risk or protective factors from their own research and generate novel hypothesis regarding the molecular mechanism of AD. On the other hand, it would allow researchers with complementary expertise to provide multiple characterizations of the same data. As the platform is hosted on a server and accessed through a web interface, which could meet the multi-terminal compatibility, thereby MRAD’s online presence could increase access to potential users.
 
-## MRAD utility data mining
+### MRAD utility data mining
 
 To demonstrate the utility of the MRAD platform, we focus on the IVW model-identified exposure traits that have significant and consistent effects across three main outcome traits of AD to demonstrate the performance of the MRAD platform. Detailed investigation and reporting of other factors will be carried out in future research.
 
 In this study, MR analysis was first performed on the three main outcome traits of AD to explore their potential risk or protective factors, leading to the identification of a total of 80 exposure traits (p<0.05), which fell into five Classification I categories: Medical laboratory science (n=51), Family history (n=10), Disease (n=9), Molecular trait (n=7), and Lifestyle trait (n=3). A total of 63 exposure traits (risk factors) were positively associated with all the three main outcome traits, while 16 exposure traits (protective factors) were negatively associated with the three main outcome traits, with Ulcerative colitis (ebi-a-GCST000964) being negatively associated with the AD outcome traits of ieu-b-2 and ieu-a-297, and positively associated with the AD outcome traits of ieu-b-5067. MR analysis was performed on the outcome traits of 13 different AD-finn subtypes to further examine the causal association between the above-identified key common exposure traits and different subtypes of AD outcome traits. The results are provided below in detail.
 
-## Causal association between medical laboratory science and the main outcome traits of AD
+### Causal association between medical laboratory science and the main outcome traits of AD
 
 In this study, the 51 medical laboratory science items that each had a causal effect on the main outcome traits of AD were grouped into three Classification II categories (blood lipids and lipoproteins (n=36), immunological tests (n=12), and plasma protein tests (n=3)).
 
-## Blood lipids and lipoproteins
+#### Blood lipids and lipoproteins
 
 A total of 36 blood lipids and lipoproteins items as exposure traits had effects on the main outcome traits of AD: (1) 32 of which were positively associated with the main outcome traits, seven of which, e.g., apolipoprotein B (ieu-b-108), were positively associated with EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO); free cholesterol in IDL (met-c-868) was positively associated with EOAD (finn-b-AD_EO); four of which, e.g., phospholipids in small LDL (met-d-S_LDL_PL), were positively associated with LOAD (finn-b-AD_LO), as shown in Figure 3A. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 1 and Supplementary file 1. (2) four of which were negatively associated with the main outcome traits, apolipoprotein A-I (ieu-b-107) was negatively associated with both EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO), and the negative causal association was slightly stronger for EOAD than for LOAD; phospholipids to total lipids ratio in chylomicrons and extremely large VLDL (met-d-XXL_VLDL_PL_pct) was negatively associated with LOAD (finn-b-AD_LO). These findings are illustrated in Figure 3B. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 2 and Supplementary file 1.
 
-## Immunological tests
+![Figure 3.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-v1.jpg)
+
+**Figure 3.:** (A) Thirty-two blood lipids and lipoproteins items that were positively associated with the main outcome traits of AD. (B) Four blood lipids and lipoproteins items that were negatively associated with the main outcome traits of AD. (C) Twelve immunological test items that were positively associated with the main outcome traits of AD. (D) Three plasma protein test items that were negatively associated with the main outcome traits of AD. (E) Ten family history items with causal effects on the main outcome traits of AD. (F) Nine disease items with causal effects on the main outcome traits of AD. (G). Seven molecular trait items with causal effects on the main outcome traits of AD. (H) Three lifestyle trait items with causal effects on the main outcome traits of AD. Note: The pink dots in the figure represent positive association, the blue dots in the figure represent negative association, with the color depth of the dots being positively proportional to the OR value (the darker the color, the larger the OR value), and the size of the dots being inversely proportional to the p-value (the smaller the p-value, the larger the dots). The gray dots represent no significant causal association (p>0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Note: (i) For column Inverse variance weighted, Mendelian randomization (MR) egger, Weighted median, Simple mode, Weighted mode, Maximum likelihood, and Penalized weighted median: the pink dots in the figure represent positive association, the blue dots represent negative association, with the color depth of the dots being positively proportional to the odds ratio (OR) value (the darker the color, the larger the OR value), and the size of the dots being inversely proportional to the p-value (the smaller the p-value, the larger the dots). The gray dots represent no significant causal association (p>0.05). The star mark(✪) represents that is significant at the Bonferroni threshold (p＜1.727e-07). (ii) For column Heterogeneity test: the pink dots in the figure represent the effect of heterogeneity was considered negligible (heterogeneity_pval >0.05). The gray dots represent significant association (p＜0.05). (iii) For column Egger intercept test: the pink dots in the figure represent there was no significant difference between Egger Intercept and 0, indicating no horizontal pleiotropy (Horizontal_pval>0.05). The gray dots represent significant association (p＜0.05). The dark gray dots are not applicable due to the quantity of single nucleotide polymorphism (SNP) being less than 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The figure note follows that of Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The figure note follows that of Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The figure note follows that of Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The figure note follows that of Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** The figure note follows that of Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** The figure note follows that of Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig3-figsupp8-v1.jpg)
+
+**Figure 3—figure supplement 8.:** The figure note follows that of Figure 3—figure supplement 1.
+
+#### Immunological tests
 
 A total of 12 immunological test items as exposure traits had positive effects on the main outcome traits of AD. Six of which, e.g., CD33 on Monocytic Myeloid-Derived Suppressor Cells (ebi-a-GCST90001952), were positively associated with LOAD (finn-b-AD_LO), as shown in Figure 3C. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 3 and Supplementary file 1.
 
-## Plasma protein tests
+#### Plasma protein tests
 
 A total of three plasma protein test items as exposure traits had negative effects on the main outcome traits of AD. The three exposure traits were C-reactive protein (ukb-d-30710_raw, ukb-d-30710_irnt, and ieu-b-4764). All the three exposure traits were negatively associated with EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO), as shown in Figure 3D. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 4 and Supplementary file 1.
 
-## Causal association between family history and the main outcome traits of AD
+### Causal association between family history and the main outcome traits of AD
 
 A total of 10 family history items as exposure traits had causal effects on the main outcome traits of AD. In particular, a parental or family history of AD increased the overall risk of developing AD, and was positively associated with both EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO), as shown in Figure 3E. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 5 and Supplementary file 1.
 
-## Causal association between diseases and the main outcome traits of AD
+### Causal association between diseases and the main outcome traits of AD
 
 In this study, the nine disease items that each had a causal effect on the main outcome traits of AD were grouped into four Classification II categories (dementia (n=5), neurodegenerative diseases (n=2), mental disorders associated with neurological diseases (n=1), and digestive system diseases (n=1)). Their causal effects with the main outcome traits of AD and the outcome traits of EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO) are shown in Figure 3F. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 6 and Supplementary file 1.
 
-## Causal association of molecular traits with the main outcome traits of AD
+### Causal association of molecular traits with the main outcome traits of AD
 
 A total of seven molecular trait items as exposure traits had causal effects on the main outcome traits of AD, among which Myeloid cell surface antigen CD33 (prot-a-439) was positively associated with the main outcome traits of AD, as well as with both EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO). The remaining six were all negatively associated with the main outcome traits of AD, and their causal effects on the outcome traits of 13 AD-finn subtypes were as follows: (i) tubulin-specific chaperone A (TBCA; prot-a-2930) and vacuolar protein sorting-associated protein 29 (VPS29; prot-a-3203) were negatively associated with both EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO); (ii) guanine nucleotide-binding protein G(k) subunit alpha (GNAI3; prot-a-1226) and proteasome activator complex subunit 1 (PSME1; prot-a-2420) were negatively associated with LOAD (finn-b-AD_LO), but had no significant causal association with EOAD (finn-b-AD_EO) (p>0.05); and (iii) neither glutamine (met-c-860) nor glutamine (met-d-Gln) had significant causal association with EOAD (finn-b-AD_EO) or LOAD (finn-b-AD_EO) (p>0.05), as shown in Figure 3G. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 7 and Supplementary file 1.
 
-## Causal association of lifestyle traits with the main outcome traits of AD
+### Causal association of lifestyle traits with the main outcome traits of AD
 
 A total of three lifestyle trait items as exposure traits had causal effects on the main outcome traits of AD. Their causal effects with the main outcome traits of AD and the outcome traits of EOAD (finn-b-AD_EO) and LOAD (finn-b-AD_LO) are shown in Figure 3H. The corresponding sensitivity analysis and Bonferroni correction results are shown in Figure 3—figure supplement 8 and Supplementary file 1.
 
@@ -130,17 +176,83 @@ In conclusion, this is one of the most comprehensive studies to provide importan
 
 ## Materials and methods
 
-## Database and software
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MRC IEU OpenGWAS</td>
+      <td>Elsworth et al., 2020</td>
+      <td>https://gwas.mrcieu.ac.uk/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UniProt</td>
+      <td>UniProt Consortium, 2018</td>
+      <td>https://www.uniprot.org/RRID:SCR_002380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EVenn</td>
+      <td>Tong et al., 2022</td>
+      <td>http://www.ehbio.com/test/venn/#/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (version 4.1.2) software</td>
+      <td>Simon Urbanek et al.</td>
+      <td>https://www.r-project.org/RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TwoSampleMR (version 0.5.8)</td>
+      <td>Hemani et al., 2018</td>
+      <td>https://github.com/MRCIEU/TwoSampleMRRRID:SCR_019010</td>
+      <td>TwoSampleMR package in the R (version 4.1.2) software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Shiny (version 1.8.0)</td>
+      <td>rstudio</td>
+      <td>https://shiny.posit.co/RRID:SCR_001626</td>
+      <td>Shiny package in R (version 4.1.2)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MRAD</td>
+      <td>this paper</td>
+      <td>https://gwasmrad.com/mrad/</td>
+      <td>This paper, a new online data analysis platform for identifying the risk or protective factors for AD called MRAD.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Database and software
 
 The following databases and software packages were used in this study: MRC IEU OpenGWAS (Elsworth et al., 2020; https://gwas.mrcieu.ac.uk/), UniProt (UniProt Consortium, 2018; https://www.uniprot.org/), EVenn (Chen et al., 2021; http://www.ehbio.com/test/venn/#/), R (version 4.1.2) software (R Development Core Team, 2021).
 
-## MR design for AD (Figure 4)
+### MR design for AD (Figure 4)
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig4-v1.jpg)
 
-## Data sources
+### Data sources
 
-## Exposure traits
+#### Exposure traits
 
 Inclusion criteria: datasets of the European population.
 
@@ -148,7 +260,7 @@ Exclusion criteria: (i) eQTL-related datasets; (ii) AD-related datasets.
 
 In this study, the GWAS datasets selected were derived from 42,335 GWAS datasets in the public database (MRC IEU OpenGWAS, https://gwas.mrcieu.ac.uk/). Based on the above inclusion and exclusion criteria, 19,942 eQTL-related datasets were excluded first, leaving 22,393 GWAS datasets. Next, the datasets with the European population were selected, and 18,117 GWAS datasets were obtained. Finally, 20 AD-related datasets were excluded; 18,097 GWAS datasets were obtained at the end as the exposure traits of this study (See Supplementary file 2 for basic information).
 
-## Outcome traits
+#### Outcome traits
 
 Inclusion criteria: (i) datasets of patients with AD with complete information and clear data sources; (ii) datasets of the European population.
 
@@ -158,11 +270,11 @@ Based on the above criteria, 16 GWAS datasets of outcome traits were selected fr
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96224/elife-96224-fig5-v1.jpg)
 
-## Selection of instrumental variables
+#### Selection of instrumental variables
 
 SNPs serve as instrumental variables for MR research. In this study, 18,097 exposures-variable SNPs were selected for MR research from the GWAS data (as mentioned in Exposure traits), respectively, with the selected SNPs fulfilling the following requirements: (i) a genome-wide significant association with risk factors (p<5 × 10–8) in the European 1000 Genomes Project reference panel; (ii) independent of one another (that is, the r2 of linkage disequilibrium (LD) is less than 0.001 within a 10,000 kb distance) to avoid potential biases caused by LD between SNPs in the analysis.
 
-## Statistical models for causal effect inference
+#### Statistical models for causal effect inference
 
 A random-effects IVW model was used in this study as the major analysis method to uncover potential risk or protective factors for AD. The random-effects IVW model is the gold standard for MR studies, its principle is to calculate the inverse of the variance of each IV as its weight, assuming all IVs are valid. The regression does not include an intercept term, and the final result is the weighted average of the effect estimates from all IVs (Bowden et al., 2017). This model indicates that the true effect values may vary across different studies due to both sampling error and the heterogeneity of the true effect. The weight of each study is jointly determined by its inverse variance and the estimated heterogeneity variance. Thus, as long as there is no pleiotropy, even when there is significant heterogeneity (p<0.05), this method is preferred.
 
@@ -170,10 +282,10 @@ To assess the robustness of the IVW results, sensitivity analysis was performed 
 
 The above analyses were performed using the TwoSampleMR (Hemani et al., 2018) package in the R (version 4.1.2) software. Association of exposures with outcomes was assessed using odds ratio (OR) and 95% confidence interval (95% CI), with OR >1 indicating a positive association (risk factor) and 0<OR < 1 indicating a negative association (protective factor). Differences with a two-sided p<.05 were considered statistically significant. Furthermore, owing to the relatively large number of exposure and outcome traits included in this study, the multiple testing correction method Bonferroni correction was added to identify significant hits, the threshold for Bonferroni-corrected was 0.05 divided by 289,552 tests (p<1.727e-07).
 
-## Building the MRAD platform
+##### Building the MRAD platform
 
 In this study, the online MRAD platform was developed using the Shiny package Shiny, 2024 in R (version 4.1.2) and hosted on an Ubuntu 20.04 server. By leveraging Shiny, we combined the computational capabilities of R with modern web technologies, allowing to us construct an interactive user interface with novel approaches.
 
-## Code availability
+### Code availability
 
 The MRAD platform can be freely accessed online at https://gwasmrad.com/mrad/. The main project development repository: https://github.com/ZhaoTianyu-zty/MRAD, (copy archived at Zhao, 2023).

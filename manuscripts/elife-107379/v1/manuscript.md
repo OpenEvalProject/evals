@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Department of Biology, University of Copenhagen Copenhagen Denmark
+1. Department of Biology, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
 
 † Corresponding author
 

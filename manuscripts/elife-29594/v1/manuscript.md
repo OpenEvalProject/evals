@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.29594.001 Intracellular parasitism often results in gene loss, genome reduction, and dependence upon the host for cellular functioning. Rozellomycota is a clade comprising many such parasites and is related to the diverse, highly reduced, animal parasites, Microsporidia. We sequenced the nuclear and mitochondrial genomes of Paramicrosporidium saccamoebae [Rozellomycota], an intranuclear parasite of amoebae. A canonical fungal mitochondrial genome was recovered from P. saccamoebae that encodes genes necessary for the complete oxidative phosphorylation pathway including Complex I, differentiating it from most endoparasites including its sequenced relatives in Rozellomycota and Microsporidia. Comparative analysis revealed that P. saccamoebae shares more gene content with distantly related Fungi than with its closest relatives, suggesting that genome evolution in Rozellomycota and Microsporidia has been affected by repeated and independent gene losses, possibly as a result of variation in parasitic strategies (e.g. host and subcellular localization) or due to multiple transitions to parasitism.
+Intracellular parasitism often results in gene loss, genome reduction, and dependence upon the host for cellular functioning. Rozellomycota is a clade comprising many such parasites and is related to the diverse, highly reduced, animal parasites, Microsporidia. We sequenced the nuclear and mitochondrial genomes of Paramicrosporidium saccamoebae [Rozellomycota], an intranuclear parasite of amoebae. A canonical fungal mitochondrial genome was recovered from P. saccamoebae that encodes genes necessary for the complete oxidative phosphorylation pathway including Complex I, differentiating it from most endoparasites including its sequenced relatives in Rozellomycota and Microsporidia. Comparative analysis revealed that P. saccamoebae shares more gene content with distantly related Fungi than with its closest relatives, suggesting that genome evolution in Rozellomycota and Microsporidia has been affected by repeated and independent gene losses, possibly as a result of variation in parasitic strategies (e.g. host and subcellular localization) or due to multiple transitions to parasitism.
 
 ## Introduction
 
@@ -44,27 +44,144 @@ To acquire the nuclear and mitochondrial genome of P. saccamoebae, the microbial
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig1-v1.jpg)
 
-**Figure 1.:** P.saccamoebae contigs from metagenomic assembly using multiple lines of evidence.(A) Emergent self-organizing map (ESOM) torroidal topology (topo map) with black outline representing the final area surrounding P. saccamoebae contigs. Individual points on the map represent 3000 bp windows of metagenomic assembly contigs, whose distance to other points on the map is determined by their tetramer frequency matrix, and green ‘valleys’ of the map represent windows who frequency matrix are more similar and tan or white ‘mountains’ separate winodws whose tetramer frequencies are more different. (B) Topo map overlaid with contig median coverage; the most common P. saccamoebae coverage class (50-59x) is highlighted in pink; this alone was not enough to identify P. saccamoebae-specific contigs. (C) Contigs with blastn hits to the de novo Trinity assembly are in yellow, and found in many parts of the map including concentrations in the P. saccamoebae area, whereas those contigs with no hit to the assembly (in white) are not found in P. saccamoebae area. (D) Phylogenetic classes mapped onto the topology (based on best blastn to GenBank ‘nr’ database). P. saccamoebae region contains contigs with hits to mostly Fungi, animals, NO HIT, plants, Nuclearia, Microsporidia, and the P. saccamoebae rDNA. There are a few hits to bacteria that map within the genome, which were further tested to insure they belong on contigs which have multiple fungal proteins on them as well.
+**Figure 1.:** (A) Emergent self-organizing map (ESOM) torroidal topology (topo map) with black outline representing the final area surrounding P. saccamoebae contigs. Individual points on the map represent 3000 bp windows of metagenomic assembly contigs, whose distance to other points on the map is determined by their tetramer frequency matrix, and green ‘valleys’ of the map represent windows who frequency matrix are more similar and tan or white ‘mountains’ separate winodws whose tetramer frequencies are more different. (B) Topo map overlaid with contig median coverage; the most common P. saccamoebae coverage class (50-59x) is highlighted in pink; this alone was not enough to identify P. saccamoebae-specific contigs. (C) Contigs with blastn hits to the de novo Trinity assembly are in yellow, and found in many parts of the map including concentrations in the P. saccamoebae area, whereas those contigs with no hit to the assembly (in white) are not found in P. saccamoebae area. (D) Phylogenetic classes mapped onto the topology (based on best blastn to GenBank ‘nr’ database). P. saccamoebae region contains contigs with hits to mostly Fungi, animals, NO HIT, plants, Nuclearia, Microsporidia, and the P. saccamoebae rDNA. There are a few hits to bacteria that map within the genome, which were further tested to insure they belong on contigs which have multiple fungal proteins on them as well.
+
+**Table 1.**
+ Genome statistics for P. saccamoebae and previously sequenced relatives.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Rozellomycota</th>
+      <th colspan="4">Microsporidia</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Rozella allomycis</th>
+      <th>Paramicrosporidium saccamoebae</th>
+      <th>Mitosporidium daphniae</th>
+      <th>Trachipleistophora hominis</th>
+      <th>Encephalitozoon cuniculi</th>
+      <th>Nematocida parisii</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genome size (Mb)</td>
+      <td>11.86</td>
+      <td>7.28</td>
+      <td>5.64</td>
+      <td>8.5</td>
+      <td>2.5</td>
+      <td>4.15</td>
+    </tr>
+    <tr>
+      <td>GC %</td>
+      <td>34.5</td>
+      <td>46.9</td>
+      <td>43</td>
+      <td>34.1</td>
+      <td>47.3</td>
+      <td>34.5</td>
+    </tr>
+    <tr>
+      <td>Number of scaffolds</td>
+      <td>1059</td>
+      <td>221</td>
+      <td>612</td>
+      <td>310</td>
+      <td>11</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>Longest scaffold (bp)</td>
+      <td>719,121</td>
+      <td>261,540</td>
+      <td>115,468</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>L50</td>
+      <td>52</td>
+      <td>29</td>
+      <td>51</td>
+      <td>212</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td># protein models</td>
+      <td>6350</td>
+      <td>3750</td>
+      <td>3331</td>
+      <td>3212</td>
+      <td>1996</td>
+      <td>2726</td>
+    </tr>
+  </tbody>
+</table>
 
 Phylogenetic analysis of a concatenated 53 protein data set, with 26,020 amino acid positions in the alignment, reconstructed a monophyletic clade that includes both Rozellomycota and Microsporidia (maximum likelihood bootstrap support [MLBP]=100), as sister to all the rest of Fungi (Figure 2). Within the clade, P. saccamoebae diverges within Rozellomycota after R. allomycis with strong support (MLBP = 100) but diverges before M. daphniae, which is still supported as the earliest diverging microsporidian species. With the current nomenclature, Rozellomycota is therefore reconstructed as paraphyletic. Hypothesis testing of alternative placements of P. saccamoebae and Microsporidia were all rejected, supporting a paraphyletic Rozellomycota (Figure 2—figure supplement 1), and reanalysis of the data following removal of Microsporidia species (excluding M. daphniae) also gave support for a monophyletic Kingdom Fungi (Figure 2—figure supplement 2), and for the branching order within Rozellomycota observed in analyses with Microsporidia included.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig2-v1.jpg)
+
+**Figure 2.:** All nodes have 100% bootstrap support except where marked. All Fungi are in shades of blue, and sequenced representatives of Amoebozoa are included as outgroups. Taxa, strains, and references for genomes used are included in Supplementary file 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Numbers next to each topology are the p-values of the approximately unbiased test. The top left tree is the topological result of the phylogenomic analysis (Figure 2).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig2-figsupp2-v1.jpg)
+
 We compared the predicted proteome of P. saccamoebae to R. allomycis, M. daphniae, 10 other Microsporidia, 19 other Fungi spanning the diversity of sequenced fungal lineages, and the outgroup, Fonticula alba (Figure 3A). We found P. saccamoebae shares the most of its 2470 orthogroups, 1975 (80%), with Spizellomyces punctatus (Figure 3B), a chytrid fungus which has been shown to share a few specific orthogroups with Microsporidia (Cuomo et al., 2012). Although a substantial number of P. saccamoebae orthogroups are also shared with R. allomycis (1,722; 70%) and M. daphniae (1,357;55%), it shares more with many other distantly related Fungi, including species in the derived fungal phyla of Ascomycota and Basidiomycota, than with these two closer relatives. The fewest P. saccamoebae orthogroups are shared with all other microsporidians sampled, 589 to 664 (24 to 27%). This pattern of orthology is similar to what is seen in both R. allomycis (Figure 3—figure supplement 1) and M. daphniae (Figure 3—figure supplement 2), whereby they share a higher percentage of their proteome with distant relatives than with one another. No orthogroups are universally present for Rozellomycota and microsporidians (Figure 3A), and very few clusters were specific to P. saccamoebae and either R. allomycis (12) or M. daphniae (13). There are 377 orthogroups that P. saccamoebae shares with other Fungi that are not found in R. allomycis, M. daphniae, or Microsporidia (Figure 3A). Of these, many have no hypothetical annotation, however, eight are related to oxidative phosphorylation functions in the mitochondrion, three are nuclear-pore-associated proteins, and two are proteins involved in converting ethanol to acetate (via alcohol and aldehyde dehydrogenases). Analysis of overall gene loss and gain revealed moderate loss leading to R. allomycis, followed by larger amounts of gene loss and lineage-specific gains in R. allomycis, P. saccamoebae, and M. daphniae (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig3-v1.jpg)
+
+**Figure 3.:** (A) Venn diagram of orthologous clusters shared and unique to P. saccamoebae, related taxa, and other Fungi. *At least one copy present in all 33 taxa. †Numbers reflect presence of at least one species from these groups in a cluster. (B) Graphical representation of percentage of P. saccamoebae orthologs shared with other Fungi (and the outgroup Fonticula alba). Its closest sequenced relatives, R. allomycis and M. daphniae, are in red text. (C) Ancestral reconstruction of orthologous cluster gains and losses highlighting the independent reductions in the mitochondrion (X) and loss of true mitochondrion (M) which unites the ‘core Microsporidia.’ Diameter of circles is relative to the number of orthogroups present in terminal taxa and reconstructed ancestors. To illustrate the quantity of both gains and losses throughout the evolution of this clade, the outside track shows relative amount of orthogroups gained (in shades of green), while the inside track is showing the relative amount of orthogroups lost (shades of red); the lighter the shade of green or red, the fewer respective gains or losses are reconstructed at that node.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Its closest sequenced relatives, P. saccamoebae and M. daphniae, are in red text.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Its closest sequenced relatives, P. saccamoebae and R. allomycis, are in red text.
+
 A circular mitochondrial genome that contains a standard complement of fungal mitochondrial genes was assembled onto a single contig of 25,401 bp with 41 predicted genes (Figure 4). All genes typically found in fungal mitochondrial genomes that are involved in oxidative phosphorylation are present including those of Complex I (nad1, nad2, nad3, nad4, nad4L, nad5, and nad6), Complex III (cob), Complex IV (cox1, cox2, and cox3), Complex V (atp6, atp8, and atp9), 23 tRNAs, one ribosomal protein (rps12), and the large and small rRNA subunits (rnL and rnS). This is in contrast to R. allomycis, M. daphniae, and the derived microsporidians, which have, respectively, lost all Complex I genes or the entire mitochondrial genome altogether (Figure 4—figure supplement 1). Like R. allomycis and M. daphniae, P. saccamoebae possesses rps12, not rps3 like most fungal mitochondrial genomes (Aguileta et al., 2014; Yang et al., 2017), indicating these proteins have been differentially retained between these two lineages (Figure 4—figure supplement 1). Due to the metagenomic nature of this sample, phylogenetic analysis was used to determine if the host (amoebozoan) mitochondrial genome had been inadvertently sequenced. Using the conserved mitochondrial genes (cob, cox1, cox2, cox3, and atp6), P. saccamoebae mitochondrion is placed as sister to R. allomycis and M. daphniae, and not with the available amoebozoan mitochondrial sequences (Figure 4—figure supplement 2). Moreover, supplementary genes involved in the electron transport chain (including ferrodoxin, ubiquinone, succinate dehydrogenase, etc.) are present in the nuclear genome of P. saccamoebae, in addition to being expressed, suggesting it possesses full oxidative phosphorylation functionality.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig4-v1.jpg)
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Presence of mitochondrial genes (x) are shown in the table with major loss of the seven NADH dehydrogenase genes highlighted in pink. Major losses of genes in Complex I of oxidative phosphorylation (large red X) and ribosomal proteins (with red strike through) are mapped onto the phylogenetic relationships (inferred from nuclear phylogeny, Figure 2). Hypothetical mitochondrial ribosomal protein content of the ancestor to Holomycota is inferred to have rps3, rps11, and rp12, which have been retained differentially across the three lineages shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** There were 1177 amino acid positions in the concatenated alignment, and the PROTGAMMAWAG model was used for phylogenetic reconstruction in RAxML.
 
 To analyze host dependency and energy acquisition, we analyzed genes involved in nucleotide and amino acid biosynthesis and import. The genes necessary for de novo nucleotide (both purine and pyrimidine) biosynthesis are all absent in P. saccamoebae, suggesting it is not capable of producing its own nucleotides, and it also lacks genes for converting nucleosides to nucleotides and vice versa (Figure 5). One of the most highly expressed transporter genes is a nucleoside transporter (PSACC_00918), which has homologs in many other Fungi including M. daphniae, but which is not found in R. allomycis. Another nucleoside transporter (PSACC_02618) was also identified and is expressed. Other highly expressed transporters include an ABC transporter (PSACC_00512), an Na+ dicarboxylate and phosphate transporter (PSACC_03652) and a general substrate transporter (PSACC_01530). There is no evidence for the presence of the horizontally acquired thymidine kinases found by Alexander et al. (2016) in both R. allomycis and several microsporidians.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig5-v1.jpg)
 
-**Figure 5.:** P.saccamoebae, and comparison with related taxa.Hollow arrows are proteins not identified in the P. saccamoebae genome. Differences with P. saccamoebae are highlighted as specified in the key at bottom. Figure design adapted from Dean et al. (2016).
+**Figure 5.:** Hollow arrows are proteins not identified in the P. saccamoebae genome. Differences with P. saccamoebae are highlighted as specified in the key at bottom. Figure design adapted from Dean et al. (2016).
 
 Many amino acid biosynthesis pathways are reduced or absent in P. saccamoebae (Figure 6A), and as a result it is likely that it does not produce histidine or tryptophan, and may require intermediates from the host to complete synthesis of the following: lysine, methionine, arginine, phenylalanine, isoleucine, leucine, valine, and proline. For synthesis of branched chain amino acids (valine, leucine, and isoleucine), a single protein, a homolog of branched chain amino acid aminotransferase (PSACC_01141 in P. saccamoebae), is present and expressed based on our mRNA-seq data. Our investigations also revealed similar yet unique profiles of reductions in amino acid biosynthesis enzymes in R. allomycis and M. daphniae as well (Figure 6A), while the rest of Microsporidia cannot produce any amino acids. We identified two expressed amino acid permeases (PSACC_02864 and PSACC_03255) that may offset these gene losses in the P. saccamoebae genome, which are homologous to a single permease in both R. allomycis and M. daphniae and most closely related to bacterial, not fungal, amino acid permeases (Figure 6B). There are three fungal chitin synthase domain containing proteins in P. saccamoebae (PSACC_00558, PSACC_00865, PSACC_01336). These are all Division I chitin synthases with homologs in R. allomycis. Unlike R. allomycis, no Division II chitin synthases were identified, a characteristic P. saccamoebae shares with Microsporidia.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig6-v1.jpg)
 
-**Figure 6.:** Mitosporidium daphniae and other Microsporidia.(A) Amino acid biosynthesis map for selected taxa, with end products and intermediates, for P. saccamoebae, R. allomycis, M. daphniae, all of which contain lineage specific enzyme retentions, while other pathways, specifically the ability to produce serine, glycine, alanine, and cysteine are maintained in all three taxa. (B) Phylogenetic analysis of amino acid permeases in P. saccamoebae, R. allomycis, and M. daphniae, which are not found in other Microsporidia or any other Fungi.
+**Figure 6.:** (A) Amino acid biosynthesis map for selected taxa, with end products and intermediates, for P. saccamoebae, R. allomycis, M. daphniae, all of which contain lineage specific enzyme retentions, while other pathways, specifically the ability to produce serine, glycine, alanine, and cysteine are maintained in all three taxa. (B) Phylogenetic analysis of amino acid permeases in P. saccamoebae, R. allomycis, and M. daphniae, which are not found in other Microsporidia or any other Fungi.
 
 P. saccamoebae has almost all of the conventional meiosis-related genes, including all known meiosis-specific genes (Rec8, Spo11-1, Dmc1, Hop2, Mnd1, Msh4, and Msh5; Figure 7A, Supplementary file 1). The only meiosis-related gene absent from the P. saccamoebae genome is a homolog of Mlh3 which is involved in DNA mismatch repair and appears to be absent in all other members of this earliest diverging fungal clade. The number of meiosis genes found in P. saccamoebae is greater than any other sequenced Rozellomycota or Microsporidia with available genomes. This indicates that this obligate intracellular parasite is theoretically able to undergo conventional meiotic recombination, which is bolstered by analysis of SNP frequencies that revealed that the vast majority of alleles possess a 50:50 ratio, indicating that P. saccamoebae is likely diploid, like most microsporidian species examined to date (Figure 7B) (Cuomo et al., 2012; Haag et al., 2013a, 2013b; Selman et al., 2013; Ndikumana et al., 2017; Pelin et al., 2016). Other P. saccamoebae genes potentially involved in mating include two putative homeodomains (HD1 and HD2 homologs) (PSACC_01945 and PSACC_01946) whose genome organization is strikingly similar to that found in loci that govern sexual identity in more derived Fungi, particularly Basidiomycota. However, heterozygosity and extensive allelic divergence typical of fungal MAT-loci is absent along those genes. Furthermore, their genome organization is not found to be conserved in other Rozellomycota and Microsporidia. Intriguingly, divergent copies of both HD1 and HD2 exist at other locations in the genome of the microsporidians Pseudoloma neurophilia and Nosema ceranae (Figure 7—figure supplement 1), but none of these show the organization or divergence expected for fungal-like MAT loci.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig7-v1.jpg)
+
+**Figure 7.:** (A) Venn diagram showing the presence or absence of the core genes known to be directly involved in meiotic processes. The presence or absence of these genes have been investigated in the genomes of P. saccamoebae and its relatives, including representative species belonging to the phylum Microsporidia, described in detail in Supplementary file 1. (B) Allele frequency analysis of P. saccamoebae genomic scaffolds. The histogram of allele frequency distribution is based on read counts of filtered bi-allelic SNPs and is overlapped by density curves (black). The vertical line (red) represents the 0.5 allelic frequency. A total of 3832 variable nucleotide positions were analyzed.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/29594/elife-29594-fig7-figsupp1-v1.jpg)
 
 To examine the evolution and history of the flagellum and its losses within Rozellomycota, a search was conducted for the dozens of genes involved in flagellum components and functioning. This revealed that unlike Rozella spp. and environmentally acquired Rozellomycota targeted using FISH (Jones et al., 2011), P. saccamoebae does not possess the ability to produce a flagellum (Supplementary file 2). Using hidden Markov models (HMMs) developed using alignments of known polar filament proteins (PFPs) in Microsporidia (Han and Weiss, 2017), we searched the predicted proteome of P. saccamoebae for sequence-based evidence of PFPs and found no significant hits (all conditional p>0.001). This likely reflects the rapid rate of evolution of these proteins, which are only known from species with a well-developed polar filament. Our HMMs similarly did not detect PFPs from M. daphniae, but detected all PFPs in the microsporidian Encephalitozoon romaleae.
 
@@ -88,13 +205,13 @@ This high-quality assembly (as evidenced by the CEGMA results, presence of meios
 
 ## Materials and methods
 
-## DNA isolation, sequencing, and assembly
+### DNA isolation, sequencing, and assembly
 
 Resting spores of P. saccamoebae strain KSL3 were obtained from infected Saccamoeba sp. grown on bacteria-coated non-nutritive agar plates and cleaned by filtration through a 0.5-µm membrane filter as previously described (Corsaro et al., 2014). Whole genomic DNA was extracted using the PowerLyzer PowerSoil DNA Isolation Kit (MOBIO Carlsbad, CA) per manufacturer’s instructions amended with an RNase A (Qiagen, Venlo Netherlands) step (6 µL for 30 min incubation at 37° C) and elution volume of 50 µL. A single PacBio SMRTcell was prepared and sequenced at the University of Michigan DNA Sequencing Core (UMDSC). Illumina library construction and DNA sequencing was completed on two lanes of paired end 101 cycle Illumina HiSeq 2000 at UMDSC and resulted in 178,089,240 raw reads. SmrtPortal v2.2.0 was used for assembly of the PacBio data, with the RS_HGAP_Assembly.3 program. This genome assembly with 437 scaffolds, 16.7 Mb, and an average 40x coverage, was exclusively bacterial in nature, and used to remove ‘non-target’ bacterial raw reads from the Illumina data. Raw Illumina reads were trimmed (of first 5 bases and last 16 bases for a total length of 80 bp) and filtered (all bases q-score ≥20) for quality using scripts as a part of the Fastx toolkit (Gordon, 2011), and then aligned to the PacBio assembly using Bowtie2 (Langmead and Salzberg, 2012) with default settings, resulting in 127,660,572 reads. These remaining reads (those that did not align) were assembled with Velvet v1.2.10 (Zerbino and Birney, 2008) with a kmer size of 53 and binned based on coverages estimated with MetaVelvet v1.2.02 (Namiki et al., 2012) before subsequent rerun of velvetg that resulted in a final metagenome assembly size of 72 Mb on 3843 contigs. To identify target genome contigs, analysis and visualization of tetramer frequencies was conducted using the emergent self-organizing map (ESOM) program (Ultsch and Mörchen, 2005) and associated scripts developed for metagenomic binning (Dick et al., 2009; Anderson et al., 2010) (Figure 1), with default settings and window size of 3000. Visualization within ESOM used the default settings except for the following: K-batch training algorithm, 150 rows, 210 columns, and a start radius value of 50. The resulting subsection of contigs is the one referred to in the results was used for all downstream analyses.
 
 The CEGMA program (v 2.5) was used to find core eukaryotic genes for assessment of genome assembly completeness (Parra et al., 2007).
 
-## RNA isolation, sequencing, and gene annotation
+### RNA isolation, sequencing, and gene annotation
 
 Spores of P. saccamoebae strain KSL3 previously collected and stored in 70% ethanol were pelleted by centrifugation. The supernatant was discarded and the spores were suspended in 450 µL of RNeasy mini kit (Qiagen) lysis buffer RLC and 200 µl of sterile glass beads (150–212 µM). The sample was incubated for 15 min at 56°C and mechanically disrupted in a shaker at 2500 rpm for 30 s every 5 min. RNA extraction was further performed using the RNeasy mini kit following manufacturer’s recommendations and a DNase I digestion on column was done. Final elution was in a volume of 20 µL in buffer TBE. The eluted RNA was quantified on a LabChip GX (PerkinElmer) showing a concentration of 69.3 ng/µL and further processed for library preparation with the Illumina stranded mRNA kit with poly A purification. One full lane of the library was sequenced on a HiSeq 2500 instrument on High-Output V4 paired-reads (2 × 125 bp) mode (Fasteris, Switzerland).
 
@@ -104,7 +221,7 @@ The Maker pipeline (Cantarel et al., 2008) was used for de novo gene annotation 
 
 MFAnnot was used to annotate genes and proteins for the mitochondrial genome (Beck and Lang, 2010). Manual annotation of the mitochondrial ribosomal large subunit gene (rnL) and NADH dehydrogenase subunit 6 (nad6) was conducted via homology searches for conserved regions using blastn procedures against nr and a selected list of LSU sequences from Fungi, and blastp with ‘No Adjustments’ setting for compositional adjustments against Genbank nr database for nad6. OGDRAW was used for visualization of the mitochondrial genome (Lohse et al., 2007).
 
-## Functional annotation of gene space
+### Functional annotation of gene space
 
 HMMs were built for polar filament proteins (PFPs) based on sequence alignments from Microsporidia species using Hmmer3 hmmbuild function (Eddy, 2011). Sequences (Supplementary file 4) were initially aligned using MUSCLE v 3.8.31 with default settings (Edgar, 2004). We then searched the predicted proteome of P. saccamoebae using hmmsearch of Hmmer3. To serve as controls, we applied the HMM searches to the microsporidian species Encephalitozoon romaleae and Mitosporidium daphniae proteomes.
 
@@ -116,7 +233,7 @@ To identify flagellum-related proteins, a blast database was created using the s
 
 For annotation of KEGGs in analyzed taxa, all protein models were uploaded to the KAAS server (Moriya et al., 2007), and the ‘for Eukaryotes’ representative set was chosen and amended with the following taxa: Neurospora crassa, Botrytis cinerea, Aspergillus fumigatus, Parastagonospora nodorum, Tuber melanosporum, Ustilago maydis, Nosema ceranae, and Monosiga brevicollis. Finally, other functional annotation was performed using BLAST+ v 2.2.29 against the Uniprot TrEMBL database downloaded May 20, 2016 (Boeckmann et al., 2003).
 
-## Phylogenomic analyses
+### Phylogenomic analyses
 
 To cluster orthologous proteins, the Fastortho implementation (Wattam et al., 2014) of orthoMCL (Li et al., 2003) was run using default settings and inflation parameter of three with select outgroups and target taxa (Supplementary file 3). Ancestral character estimation of orthogroups present or absent in the internal nodes of the tree were estimated using the ‘ace’ command as a part of the APE package in R (Paradis et al., 2004). Data were recoded into a presence/absence binary matrix of each orthogroup, and ancestral states estimated using a symmetrical model (SYM). A 50% inclusion cutoff was used, meaning the orthogroup was reconstructed as being present in the ancestral node if it received greater than 50% marginal likelihood.
 

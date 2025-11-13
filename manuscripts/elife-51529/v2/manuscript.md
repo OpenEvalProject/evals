@@ -32,25 +32,49 @@ Here, we examine the role of the Imp/Syp temporal gradient in regulating NB size
 
 ## Results
 
-## Imp promotes type I NB growth and division
+### Imp promotes type I NB growth and division
 
 To investigate the roles of the opposing Imp and Syp gradients in the NB, we used RNAi knockdown to manipulate the level of these RBPs (Figure 1—figure supplement 1). We studied the type I NBs, the most numerous NB type in the brain, which are also very convenient to analyse, as they have a simple division hierarchy with each asymmetric division producing a GMC that divides only once more to produce two neurons or glia (Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008). In the wandering L3 stage (wL3) brains all type I NBs express high levels of Syp and low of Imp (Figure 1—figure supplement 1A). We depleted Syp or Imp from the NBs with Syp knockdown and Imp knockdown RNAi constructs using the GAL4-UAS system, driven by insc-GAL4 (Betschinger et al., 2006). In NBs Imp and Syp negatively regulate each other and therefore the Syp knockdown results in Imp upregulation (Figure 1—figure supplement 1B) (Liu et al., 2015). We distinguished between direct effects of Syp depletion and indirect effects due to upregulated Imp expression by analysing Imp Syp double knockdown mutants (Figure 1—figure supplement 1C) (Yang et al., 2017a). We also examined Imp overexpression brains, but the UAS overexpression construct only produces a very limited upregulation of Imp in the type I NB at the wL3 stage (Figure 1—figure supplement 1D), as previously observed (Liu et al., 2015; Yang et al., 2017a). Therefore we primarily use the Syp knockdown to upregulate Imp.
 
 We first examined the roles that Imp and Syp play in influencing type I NB size. Our results show that higher Imp promotes larger size of type I NBs at wL3, and Syp acts indirectly through its negative regulation of Imp. Imp-depleted NBs are almost half the size of wild type NBs and NBs that overexpress Imp are 1.4-fold larger in midpoint area (Figure 1A,A’, Materials and methods). Syp-depleted NBs are 1.5-fold larger than wild type. We tested whether this effect is direct or indirect by studying the size of NBs in the Imp Syp double knockdown. Our results show that Imp depletion suppresses the increase in NB size observed in Syp knockdown mutants, which indicates that Syp only plays an indirect role in type I NB size, through its repression of Imp.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phalloidin was used to stain F-actin, marking the perimeter of each type I NB in the central brain (the largest cells, identified with Deadpan (Dpn) immunofluorescence (IF)). The area of each NB was measured at its largest point, and the average NB size per brain is plotted in (A’). NBs with diffuse Dpn (indicating nuclear envelope breakdown during mitosis) were excluded. (B) Larval brains were cultivated ex vivo with 25 μM EdU for four hours. All cells that underwent DNA synthesis in S phase are labelled with EdU. Dpn IF labels type I NBs. The number of progeny produced by each NB in the central brain was compared in wild type, Imp RNAi, Syp RNAi, double Imp Syp RNAi and Imp overexpression (OE) brains. The average number of progeny per NB in each brain is plotted in (B’). In A’) and B’), significance was calculated using a one-way ANOVA and Dunnett’s multiple comparisons test, with comparison to wild type. **p<0.01, ***p<0.001, ****p<0.0001. Each grey point represents one wL3 brain and for each genotype at least seven brains were measured, from three experimental replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Immunofluorescence (IF) staining against Syp and Imp in wL3 brains. Overexpression and knockdown UAS constructs driven with insc-GAL4. (A) At the wL3 stage, wild type type I NBs express high Syp and low Imp levels. (B) Syp knockdown depletes Syp expression, which relieves the repression of Imp, so Imp level in the NB increases. The phenotype may be due to the depletion of Syp or the consequent upregulation of Imp. (C) Imp Syp double knockdown additionally depletes Imp from the NB and is therefore used to distinguish the effects of Syp depletion and Imp upregulation. Imp protein is not knocked down in all brain cells so some Imp expression remains, perhaps in the glial cells surrounding the NB niche. (D) Imp overexpression with a UAS-Imp::FLAG construct (Liu et al., 2015) shows minimal Imp upregulation in the NB using IF against FLAG and Imp. Blue arrow indicates an example type I NB in each genotype.
+
 NB size is affected by both cell growth and division rate so we then tested whether NB division rate is also sensitive to Imp levels. We incubated ex vivo explanted brains in 5-ethynyl-2’-deoxyuridine (EdU)-containing media for four hours to label the progeny cells produced during this time (see Materials and methods). The number of labelled progeny was decreased by more than half in the Imp RNAi brains compared to wild type (Figure 1B,B’), which suggests that the decreased NB size in the Imp knockdown is not due to an increased division rate. The number of progeny was increased 1.4-fold in the Imp overexpressing brains and increased 1.6-fold in the Syp RNAi brains, in which Imp is strongly upregulated, compared to wild type. This phenotype is consistent with the increased proliferation rate previously observed in Syp knockdown brains with ex vivo culture and live imaging (Hailstone et al., 2019). However, the increased proliferation was lost in the Imp Syp double knockdown brains. These results, together with our previous findings that Imp overexpression prevents NB shrinkage in the pupa and extends NB lifespan (Yang et al., 2017a), suggest that low levels of Imp in the late larval NBs restrains NB growth and division, ensuring the brain growth is limited appropriately during its development.
 
-## Imp binds hundreds of mRNA targets in the brain, including myc
+### Imp binds hundreds of mRNA targets in the brain, including myc
 
 Imp is an RBP, so is likely to exert its function in the NB through regulation of the RNA metabolism of its key target mRNA transcripts. In an effort to identify strong candidate targets, we identified the transcripts bound by Imp in the brain. To achieve this aim we performed Imp RNA immunoprecipitation and sequencing (RIPseq) in larval brain lysates (see Materials and methods). We identified 318 mRNA targets that were significantly enriched in the Imp pulldown compared to input brain RNAseq (using the thresholds DESeq2.padj < 0.01 and DESeq2.log2FoldChange > 2) (Figure 2—figure supplement 1A,B, Supplementary file 1). The list of targets includes known Imp targets such as chickadee (target rank: 37) (Medioni et al., 2014), as well as mRNAs that have previously been shown to be regulated by Imp. Imp binds syp mRNA (target rank: 103), which indicates a post-transcriptional mechanism for the previously observed negative regulation of Syp by Imp (Liu et al., 2015). Another Imp target is chinmo (target rank: 55), which is known to be post-transcriptionally regulated by Imp to determine the progeny fate of NBs in the mushroom body (MB), the centre for memory and learning. Chinmo is also regulated by Imp in type II NBs (Liu et al., 2015; Ren et al., 2017; Syed et al., 2017) and during NB self renewal (Dillard et al., 2018; Narbonne-Reveau et al., 2016). Imp binds a number of long non-coding RNAs, including CR43283/cherub (target rank: 5). cherub is also a binding target of Syp and facilitates Syp asymmetric segregation during type II NB division (Landskron et al., 2018). The large number of Imp targets identified by RIPseq indicates that Imp has a broad range of roles in the developing brain. Imp has been shown to regulate mRNA localisation, stability, and translation (Degrauwe et al., 2016). Our results suggest that examining the Imp targets will provide further insight into the role of Imp in neurogenesis and the critical importance of post-transcriptional regulation.
 
 To identify the key candidate mRNA targets responsible for the Imp NB size and division phenotypes, we examined the gene ontology (GO) annotations of the top 40 Imp targets (Figure 2A). We searched for genes annotated to play a role in cell growth, cell size, cell cycle and neural development, as well as regulatory genes with RNA-binding or DNA-binding function (Figure 2B, Supplementary file 1). We identified myc (target rank: 13) as the top candidate that could explain the Imp phenotype, based on these GO categories. As discussed in the introduction, myc is a master transcription factor regulator of growth and division in diverse model systems. In Drosophila it is primarily known as a driver of cell growth (Grewal et al., 2005), and is a determinant of self renewal in the type II NB (Betschinger et al., 2006). We also identified a second member of the Myc transcriptional network, mnt, as an mRNA target bound by Imp (target rank: 36). Mnt competes with Myc for binding to Max, and promotes opposed transcriptional effects (Loo et al., 2005; Orian et al., 2003). We first focussed on myc, and later investigated mnt. myc is the 13th most enriched target of Imp and is a very promising candidate as a direct mediator of the Imp phenotype in NBs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ranked top 40 Imp RIPseq targets relative to baseline RNA expression as measured by RNAseq. Non-coding RNAs that overlap other genes are excluded. (B) Genes in panel A mapped to gene ontology (GO) terms related to cellular growth and division, neural development, and regulatory functions RNA- and DNA-binding. Each dot indicates the gene is annotated to one or more GO terms in that category. The colour of the dots reflects the total number of GO categories each gene maps to, out of the seven investigated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Imp::GFP was pulled down from brain lysates using GFP-trap beads (see Materials and methods). Western blot shows that Imp::GFP is enriched in the bound fraction, while α-Tubulin is depleted. (B) Targets of interest were validated with RIP-qPCR, comparing pulldown in the Imp::GFP brain lysate to a wild type untagged lysate. Statistical significance was calculated compared to the wild type control for each gene, using t-tests with correction for multiple comparisons using a False Discovery Rate allowance of 5%. *p<0.05, **p<0.01, ***p<0.001 C Reanalysis of previously published Imp iCLIP data in S2 cells (Hansen et al., 2015) showed Imp binding sites in the myc UTRs, particularly in the UTR extension of the long mRNA isoform. (D) Our Imp RIPseq in the wL3 brain also shows reads in the UTR extension. The full long isoform of myc is expressed in the brain RNAseq, (E), but is truncated in RNAseq from S2 cells, (F). One representative replicate is shown in each trace.
+
 To further examine the interaction between Imp and myc mRNA, we reanalysed a previously published dataset of Imp iCLIP (individual nucleotide resolution cross-linking and immunoprecipitation) performed in S2 cells (Hansen et al., 2015). The iCLIP data shows that Imp directly binds the myc transcript (Figure 2—figure supplement 1C), which supports our identification of myc mRNA as an Imp target in the brain. The iCLIP experiment identifies Imp binding sites primarily in the myc untranslated regions (UTRs) and binding signal is enriched in the extended 3’ UTR of the longer mRNA isoform. In our brain Imp RIPseq dataset, we also see reads throughout the extended 3’ UTR, suggesting that Imp binds to the long myc mRNA isoform (Figure 2—figure supplement 1D). Notably, the full myc 3’ UTR extension is expressed in the brain (Figure 2—figure supplement 1E) but it is truncated early in the S2 cells (Figure 2—figure supplement 1F), so the fully extended transcript in the brain may contain additional Imp binding sites. The results in S2 cells support our identification of myc mRNA as a target of Imp in the brain, highlighting the hypothesis that Imp is a key regulator of myc in the NB.
 
-## Myc expression is regulated by Imp levels
+### Myc expression is regulated by Imp levels
 
 To test the hypothesis that Myc protein levels are regulated by Imp, we used antibody staining in wild type and knockdown type I NB lineages. We found that Imp is required to maintain correct Myc levels in the NB. We observed Myc protein expression in type I NBs, but not in the surrounding GMCs or neurons (Figure 3A). Myc protein level was increased more than 2-fold in the Syp RNAi NBs compared to wild type (Figure 3B, quantitated in 3C), while this effect was lost in the double Imp Syp depleted NBs. Directly overexpressing Imp resulted in a small increase in Myc protein level (1.2-fold increase on wild type level) (Figure 3C). The effect of Imp overexpression on Myc protein level is smaller than that in Syp knockdown NBs as the overexpression construct produces a smaller upregulation of Imp (Figure 1—figure supplement 1). Imp knockdown produced a small decrease in Myc protein level (Figure 3C), as expected because Imp levels are already very low in wild type type I NBs. These data indicate that Imp upregulation increases Myc protein level in the NB, while Syp’s effect on Myc is indirect, as it requires Imp.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig3-v2.jpg)
+
+**Figure 3.:** (A) Antibody staining against Myc protein, with NBs labelled with Dpn. Myc protein is restricted to the NB in the wild type type I lineage. (B) In the Syp knockdown, Myc protein is increased in the NB, but this increase is lost in the Imp Syp double knockdown. The average Myc IF signal in NBs per brain is quantitated in C. D) Myc overexpression increases NB size, measured as NB area at the widest point. Myc RNAi results in a non-significant decrease in NB size. Myc Syp double knockdown reverses the phenotype of Syp single knockdown, resulting in small NBs compared to wild type. (E) EdU staining to count progeny produced in a 4 hr incubation shows that overexpression of Myc increases NB proliferation. Significance was calculated using a one-way ANOVA and Dunnett’s multiple comparisons test, with comparison to wild type. ns non significant, *p<0.05, ***p<0.001, ****p<0.0001 Each grey point represents one wL3 brain and for each genotype at least eight brains were measured, from three experimental replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) IF shows that Mnt is expressed in the type I NB and progeny cells in wL3 brains (Dpn marks the NBs). Mnt level is unchanged in Syp or Imp Syp double knockdown. (B) Overexpression of Myc (UAS-MycORF, FlyORF collection, Materials and methods) using the insc-GAL4 driver increases Myc expression in the NB and immature progeny cells. Phalloidin staining is used to mark the perimeter of the NBs.
 
 We next examined the effect of Imp and Syp on Mnt, the antagonist of Myc, also identified as an Imp target. Using antibody staining, we found that Mnt protein is expressed in the type I NB, as well as in the progeny cells of the lineage (Figure 3—figure supplement 1A). However, knockdowns of Imp and Syp have no effect on the levels of Mnt protein. Therefore, we conclude that Mnt is not likely to be a key target responsible for the NB growth and division phenotype of Imp.
 
@@ -58,9 +82,17 @@ We then asked whether the upregulation of Myc by Imp could be responsible for th
 
 We tested the effect of Myc overexpression on type I NB division rate, and observed an increased division rate in the Myc OE compared to wild type (Myc OE: 4.04 EdU-labelled progeny per NB, Figure 3E). The observed increase in division rate is a surprising result as previous work in the wing disc showed that Myc overexpression increased cell size without affecting division rate (Johnston et al., 1999), highlighting that Myc could regulate cell size and division rate in distinct ways in different tissue contexts. In the NB, we find that increased Myc protein levels can explain the increased size and division rate that occur in response to overexpressing Imp. However, Imp levels are very low in wL3 wild type type I NBs (Figure 1—figure supplement 1), which may limit Myc protein expression and restrain NB growth and division.
 
-## Imp stabilises myc mRNA
+### Imp stabilises myc mRNA
 
 In order to further characterise the regulation of myc mRNA by Imp, we visualised myc mRNA transcripts using smFISH in type I NBs (Yang et al., 2017b). The two annotated RNA isoforms of myc are identical except that the longer isoform includes a 3’ UTR extension of 5.7 kb (Figure 4A) (FlyBase, Thurmond et al., 2019). This additional UTR sequence potentially includes substantial regulatory sequence, including multiple binding sites for Imp according to iCLIP in S2 cells (Hansen et al., 2015) (Figure 2—figure supplement 1C), which could allow differential regulation of the two isoforms. smFISH probes against the myc intron and common exon show myc transcription and mature myc transcripts in the type I NB (Figure 4A,B, Figure 4—figure supplement 1A, Supplementary file 2). Co-staining with the common exon probe and a long-UTR-specific probe, showed that all cytoplasmic transcripts in the type I NB are positive for both probes (Figure 4A,C). This result shows that the extended UTR isoform of myc (myclong) is the predominant isoform expressed in the NB. Therefore, we used probes specifically against the myclong isoform for the following quantitative experiments.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig4-v2.jpg)
+
+**Figure 4.:** (A) We designed smFISH probes targeting the common exon (spanning the exon junction due to insufficiently long single exons), the intron, and the extended 3’ UTR. (B) smFISH against the myc exon and the intron shows that myc is transcribed in type I NBs. (C) smFISH using probes against the common exon and the 3’ UTR extension of myc shows that the long isoform of myc is expressed in the type I NBs. (D) myc transcript number is increased in the Syp knockdown. Z projection of 5 z planes. (E) The number of myclong transcripts was counted in individual NBs. The transcript number increased in the Syp RNAi but was unchanged in the double Imp and Syp RNAi. (F) The number of nascent transcripts was calculated using the integrated intensity from the transcription foci spot. The number of nascent transcripts was not significantly changed between genotypes. The counts of nascent and mature transcripts were then used to calculate myclong half-life and transcription rate (Bahar Halpern and Itzkovitz, 2016). (G) The myclong transcription rate is reduced in the Imp Syp double knockdown. (H) myclong mRNA is stabilised in the Syp RNAi but the half-life is unchanged in the Imp Syp double knockdown. Significance calculated by ANOVA and Dunnett’s multiple comparisons test, with comparison to wild type. ns = non significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. error bars represent s.e.m. Each grey point represents one NB and for each genotype wL3 brains were analysed from three experimental replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) myc mRNA is expressed in the NB and progeny cells. Z-projection of 9 z slices, 200 nm each. (B) smFISH against myc-long in Imp overexpression brains shows minimal differences between Imp overexpression and wild type NBs, compared to the increased myc-long signal observed in the Syp RNAi, which results in a much greater upregulation of Imp. (C) The raw images for smFISH quantitation are four colours marking DNA (DAPI), cell boundaries (Phalloidin), and mRNA (smFISH for myc exon and myc-long). The phalloidin channel is extracted to produce a 3D mask of the NB, using the FIJI plugin MorphoLibJ. This mask is applied to the myc-long smFISH channel for quantitation to exclude all signal from outside the NB (image shown as a projection). FISHquant is then used to identify spots in this cell and measure the intensity of the outlined transcription focus.
 
 Imp binds to myc mRNA and could upregulate Myc protein either through increasing myc mRNA levels or increasing Myc translation. To distinguish between these possibilities, we stained brains with myclong-specific smFISH probes and quantitated the RNA expression in individual NBs within the mixed-cell tissue (Figure 4—figure supplement 1B,C, Materials and methods, Mueller et al., 2013). We measured the effects of Imp knockdown, Imp upregulation using the Syp knockdown, and suppression in the Imp Syp double knockdown. Due to the minimal upregulation of Imp with the Imp overexpression construct (Figure 1—figure supplement 1) and correspondingly small upregulation of Myc protein (Figure 3C), we did not quantitate the myc mRNA expression in the Imp overexpression brains (Figure 4—figure supplement 1B). The number of myclong transcripts per NB is significantly reduced in the Imp knockdown, and is significantly increased in the Syp knockdown (Figure 4D,E). The transcript number is similar to wild type levels in the Imp Syp double knockdown, showing that Imp, rather than Syp, is the primary regulator of the number of myclong transcripts observed in the NB. We interpret our results as showing that the increase in myc transcript number observed when Imp is upregulated causes the observed increase in Myc protein level. In contrast, Imp is unlikely to upregulate Myc protein levels primarily through an increase in myc translation efficiency, although the data does not exclude the possibility that this mechanism makes a minor contribution to Myc protein upregulation.
 
@@ -70,19 +102,27 @@ To determine the post-transcriptional role of Imp in regulating myc transcript l
 
 To characterise the regulation of Myc in other cells in the type I NB lineage, we used smFISH to observe myc transcription and cytoplasmic transcripts in the whole lineage (Figure 4B,C, Figure 4—figure supplement 1). We found that while myc is transcribed and transcripts are present in all cells in the lineage, Myc protein is limited to the NB only (Figure 3A), suggesting that myc transcripts are translationally repressed in the progeny GMCs and neurons. The repression of Myc protein expression in the progeny cells was unaffected by manipulation of Imp and Syp levels, driven by insc-GAL4 (Figure 3B), suggesting that these two RBPs are not responsible for translational regulation of myc. While in the type II NB lineage, Brat is thought to translationally repress myc in progeny cells (Betschinger et al., 2006), it is not known to act in the type I lineage. We conclude that Myc is regulated in the NB lineages by mRNA stability through Imp and by translation, perhaps through a different RBP.
 
-## High Imp stabilises myc mRNA in mushroom body NBs
+### High Imp stabilises myc mRNA in mushroom body NBs
 
 The gradient of Imp level decline with developmental age is different between different NB types (Liu et al., 2015; Syed et al., 2017; Yang et al., 2017a). Therefore, we used smFISH to explore whether myc mRNA is also differentially stable in distinct NB types. Imp level declines more slowly in MB NBs compared to the rest of the type I NBs in the central brain and higher Imp expression remains in the MB NBs at wL3 (Liu et al., 2015; Yang et al., 2017a). In each NB, we used smFISH to measure myclong transcription, myclong mRNA half-life and myclong transcript number as well as NB size and Imp protein level (Figure 5A). We identified MB NBs by their elevated Imp expression (Figure 5A,B). We found that MB NBs are 1.5-fold larger than type I NBs (Figure 5C). The myc mRNA half-life is 2.5-fold higher in the MB NBs (type I NBs = 18.79 mins, MB NBs, 51.34 mins) (Figure 5D, Materials and methods), while myc transcription rate is slightly reduced in the MB NBs compared to the type I NBs (Figure 5E). Plotting these variables together shows clear differences between the type I NBs and MB NBs. While type I NBs show low Imp, unstable myc mRNA and small NB size, the MB NBs have higher Imp, more stable myc mRNA and larger NB size (Figure 5F). These results support our earlier finding that higher Imp promotes myc mRNA stability and NB growth and indicates that Imp is a key regulator of differences between different classes of NBs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig5-v2.jpg)
 
-**Figure 5.:** myc mRNA.(A) wL3 brains expressing Imp::GFP and stained with myc smFISH probes and phalloidin were used to measure Imp level, NB size, longmyc transcription rate and half-life in individual NBs. MB NBs are identified by their higher Imp expression compared to type I NBs. (longB–D) Each grey point represents one NB and for each NB type, brains were analysed from three experimental replicates. (B) MB NBs express higher Imp than type I NBs. The average intensity of cytoplasmic Imp signal is shown in arbitrary fluorescent units. (C) MB NBs are significantly larger than type I NBs, comparing NB area at the largest plane. (D) myc mRNA half-life is increased in MB NBs compared to type I NBs. (E) myc transcription rate is slightly lower in MB NBs than in type I NBs. (F) Plotting multiple measurements for each NB (Imp level against myc mRNA half-life, with NB size indicated by the colour scale) shows the differences between type I NBs (diamond point - low Imp, low myc mRNA stability, small) and MB NBs (circle point - high Imp, high myc mRNA stability, large). Imp level correlates with myc half-life. (G–H) Each grey point represents one brain and for each NB type, brains were analysed from three experimental replicates. (G) Myc protein is increased in MB NBs compared to type I NBs. (H) MB NBs produce more progeny in a four hour EdU incubation compared to type I NBs. Significance for each measurement was calculated using unpaired t-test, except for G) which uses a paired t-test. *p<0.01, ***p<0.001, ****p<0.0001.
+**Figure 5.:** (A) wL3 brains expressing Imp::GFP and stained with myclong smFISH probes and phalloidin were used to measure Imp level, NB size, myclong transcription rate and half-life in individual NBs. MB NBs are identified by their higher Imp expression compared to type I NBs. (B–D) Each grey point represents one NB and for each NB type, brains were analysed from three experimental replicates. (B) MB NBs express higher Imp than type I NBs. The average intensity of cytoplasmic Imp signal is shown in arbitrary fluorescent units. (C) MB NBs are significantly larger than type I NBs, comparing NB area at the largest plane. (D) myc mRNA half-life is increased in MB NBs compared to type I NBs. (E) myc transcription rate is slightly lower in MB NBs than in type I NBs. (F) Plotting multiple measurements for each NB (Imp level against myc mRNA half-life, with NB size indicated by the colour scale) shows the differences between type I NBs (diamond point - low Imp, low myc mRNA stability, small) and MB NBs (circle point - high Imp, high myc mRNA stability, large). Imp level correlates with myc half-life. (G–H) Each grey point represents one brain and for each NB type, brains were analysed from three experimental replicates. (G) Myc protein is increased in MB NBs compared to type I NBs. (H) MB NBs produce more progeny in a four hour EdU incubation compared to type I NBs. Significance for each measurement was calculated using unpaired t-test, except for G) which uses a paired t-test. *p<0.01, ***p<0.001, ****p<0.0001.
 
 We also measured Myc protein levels and NB division rates in MB NBs and type I NBs, although these could not be multiplexed into the same images as the smFISH measurements. We found that Myc protein level is 1.4-fold higher in MB NBs compared to type I NBs (Figure 5G). Finally, we measured NB division rate by incubation with EdU, which showed that MB NBs have a faster division rate than type I NBs (Figure 5H). Collectively, these results suggest that the higher level of Imp maintained into the late L3 stage in the MB NBs increases myc mRNA stability, causing increased Myc protein levels and increased NB growth and division relative to type I NBs at the same stage.
 
-## Imp regulates myc mRNA stability throughout neuroblast development
+### Imp regulates myc mRNA stability throughout neuroblast development
 
 Imp levels decline in NBs as larval development progresses (Liu et al., 2015) so we next asked what role Imp plays in myc regulation in earlier larval neurogenesis. We studied brains at 72 hr after larval hatching (ALH) when the Imp protein level in the NB is higher than at the later wL3 stage and there is substantial heterogeneity in Imp expression level between the individual NBs (Figure 6A). We first compared the average populations of 72 hr ALH NBs to wL3 NBs. Imp protein levels were measured from endogenous GFP-tagged Imp and found to be significantly increased in the 72 hr ALH NBs compared to wL3, as expected (Figure 6B). We then measured NB size and found that NBs are significantly larger at 72 hr ALH (Figure 6C). smFISH quantitation of myclong transcription and half-life at 72 hr ALH showed that myclong half-life is increased at 72 hr ALH (Figure 6D), but there was no significant difference in myclong transcription rate (Figure 6E). To validate the role of Imp in early larval neurogenesis, we measured NB size in Imp-depleted early NBs. NBs were much smaller in the Imp knockdown than in Imp::GFP (wild type) brains at 72 hr ALH (Figure 6F). This data supports the model that the decline in Imp levels during larval development reduces myc mRNA stability, restraining NB growth and division at the end of the larval stage.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig6-v2.jpg)
+
+**Figure 6.:** (A) Imp level (measured with endogenous Imp::GFP) is higher in NBs at 72 hr ALH compared to the wL3 stage, and is more variable between different type I NBs. Imp is very highly expressed in the progeny cells so the image is contrasted to show the Imp levels in the NBs. (B) Imp level quantitated in 72 hr ALH and wL3 type I NBs. (C) NBs are larger at 72 hr ALH compared to wL3. (D) myc mRNA half-life is longer in 72 hr ALH NBs compared to wL3. (E) The transcription rate of myc is not significantly different between 72 hr and wL3 NBs. Significance was calculated using unpaired t test. ns = not significant, **p<0.01, ****p<0.0001 F Measuring the size of type I NBs at 72 hr ALH shows wild type (imp::GFP) NBs are larger than Imp knockdown NBs. (G) In individual NBs at 72 hr ALH, increased Imp expression correlates with increased myc mRNA half-life. Imp level is normalised to the highest expressing NB from each imaging session. Each grey point represents one NB and for each stage, brains were analysed from three experimental replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** In each NB, five measurements were taken: Imp level, myc transcription rate, myc mRNA half-life, number of myc transcripts and NB size. A correlation matrix examines the relationship between these variables. Imp level correlates with myc mRNA half-life but not with the number of myc transcripts or the NB size. However the number of myc transcripts does correlate with NB size, suggesting additional layers of regulation. For each correlation, the Pearson r value and significance p value are shown. Significant correlations are highlighted in yellow.
 
 Pooled averages hide the substantial variation in between individual NBs at 72 hr ALH so we asked whether the Imp level in each NB determines myclong half-life. We used a correlation matrix to examine the relationships between the variables measured in each individual NB at 72 hr ALH (Figure 6G, Figure 6—figure supplement 1) and found that Imp level correlates with myclong half-life (r = 0.344, p<0.01) in individual NBs. We also found a significant correlation between myclong transcript number and NB size (r = 0.281, p<0.05), which supports the hypothesis that Myc is a significant regulator of NB size at this stage. However, we found no significant correlation between Imp levels and myclong transcript numbers or NB size. The myc transcript number is controlled on multiple levels through both transcriptional and post-transcriptional mechanisms, and transcriptional activation of myc is a downstream consequence of many signalling pathways in the brain. Imp regulates myc mRNA stability to modify the final number of transcripts in each cell and as Imp levels decline through development myc mRNA stability also decreases. These results support the hypothesis that intrinsic Imp levels provide a mechanism to fine-tune the amount of Myc protein produced in each NB, allowing NB growth and division to be determined in each NB independently throughout its lifespan.
 
@@ -92,9 +132,9 @@ Each NSC produces a characteristic number of progeny to build a functional brain
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51529/elife-51529-fig7-v2.jpg)
 
-**Figure 7.:** myc mRNA to promote NB growth and division.(A) Myc drives growth and proliferation in NBs. We show that Myc level is regulated by intrinsic levels of Imp through increased myc mRNA half-life. Syp negatively regulates Imp to affect Myc levels indirectly. In our model, the post-transcriptional regulation of myc by Imp overlays potential extrinsic growth signals (labelled with a ‘?’), activating myc transcription. Multiple layers of regulation control growth and proliferation in each NB through development. (B) In early larval brains, Imp level is high, myc mRNA is relatively more stable and NBs are large. In individual NBs Imp level correlates with myc mRNA half-life. At the wandering larval stage Imp level is low in type I NBs, myc mRNA is unstable and NBs are small and divide slowly. This is in contrast to the MB NBs which maintain higher Imp levels, have more stable myc mRNA, and are larger and faster dividing.
+**Figure 7.:** (A) Myc drives growth and proliferation in NBs. We show that Myc level is regulated by intrinsic levels of Imp through increased myc mRNA half-life. Syp negatively regulates Imp to affect Myc levels indirectly. In our model, the post-transcriptional regulation of myc by Imp overlays potential extrinsic growth signals (labelled with a ‘?’), activating myc transcription. Multiple layers of regulation control growth and proliferation in each NB through development. (B) In early larval brains, Imp level is high, myc mRNA is relatively more stable and NBs are large. In individual NBs Imp level correlates with myc mRNA half-life. At the wandering larval stage Imp level is low in type I NBs, myc mRNA is unstable and NBs are small and divide slowly. This is in contrast to the MB NBs which maintain higher Imp levels, have more stable myc mRNA, and are larger and faster dividing.
 
-## Post-transcriptional regulation of myc by Imp modulates NB growth and division
+### Post-transcriptional regulation of myc by Imp modulates NB growth and division
 
 Myc is known to promote stem cell character and must be switched off in progeny cells to allow correct differentiation (Betschinger et al., 2006; Gallant, 2013). We found that Myc overexpression increases both type I NB size and division rate, which is a very interesting result since Myc is best known to drive cell growth through activation of ribosome biogenesis (Grewal et al., 2005). Myc also promotes a shortened G1 phase in the wing disc, but this does not increase division rate as the G2 phase is proportionately lengthened (Johnston et al., 1999). In the NB, the increased division rate we observe with Myc overexpression could be the result of a direct effect of Myc driving cell cycle progression, which would be mechanistically different from the cells of the wing disc. Alternatively, division rate may be increased indirectly as a result of the larger cell size. Further experiments will be required to uncover the precise mechanism of Myc action in the NB.
 
@@ -102,7 +142,7 @@ Our discovery of Imp-dependent modulation of Myc levels adds another dimension o
 
 Our work also suggests a new potential mechanism by which NB growth and division is restrained toward the end of the stem cell lifespan, in preparation for the terminal division in the pupa. The intrinsic regulation of myc mRNA stability by Imp could explain why NBs are insensitive to the general growth signalling pathways at their late stages (Homem et al., 2014). Homem et al., show that activation or inhibition of signalling through insulin-like peptides or their effector FOXO, has no effect on NB shrinkage or termination. Our results demonstrate that in the late larval NBs, there is insufficient Imp to stabilise myc mRNA, so that upregulation of myc transcription would still lead to low levels of Myc protein.
 
-## Regulated Imp levels control myc mRNA stability in individual NBs and NB types
+### Regulated Imp levels control myc mRNA stability in individual NBs and NB types
 
 MB NBs are the longest lived NBs in the larval brain and their growth and division only finally slows at about 72 hr after pupal formation (Siegrist et al., 2010), 24 hr after the termination of the other type I NBs (Yang et al., 2017a). It was previously shown that NB decommissioning is initiated through a metabolic response to ecdysone signalling, via Mediator (Homem et al., 2014). Elevated Imp level inhibits Mediator in the MB NBs to extend their lifespan by preventing NB shrinkage (Yang et al., 2017a). However, Yang et al. (2017a), found that inhibition of the Mediator complex only partially explained the lack of cell shrinkage in the long-lived MB NBs, suggesting that other targets of Imp also play a role in MB NBs. Imp stabilisation of myc mRNA might additionally promote NB growth to contribute to extending the MB NB proliferative lifespan. In contrast, Imp levels decline faster in the other type I NBs, which would restrain their growth and division in preparation for their earlier decommissioning.
 
@@ -110,7 +150,7 @@ We also examined the role of Imp earlier in larval development, at 72 hr ALH whe
 
 We have identified a mechanism of cell-intrinsic regulation of individual NB division and growth, which we suggest plays a key role in ensuring the correct number of progeny is produced in each lineage to build the correct sub-regions and circuits in the brain. This intrinsic regulatory mechanism must be integrated with extrinsic growth signals in the brain to determine the growth and division of each stem cell throughout development. Systemic insulin and ecdysone signalling are known to promote the timing of developmental switches in NBs, at the exit from quiescence after larval hatching and the decommissioning of the NB in the pupa. In the final stages of larval development, brain growth is also driven locally to protect it from nutrient restriction, in a process called brain sparing, by which Jelly-Belly expressed by the glial niche bypasses the insulin signalling pathway (Cheng et al., 2011). It is plausible that this local extrinsic regulation might also be specific to individual NBs, for example through controlled expression level of Jelly-Belly in each glial niche. Future experiments will determine the interplay between the intrinsic regulation of myc stability by Imp that we have shown here, and other extrinsic systemic and local regulators of NB growth and division.
 
-## Declining Imp may restrain proliferation in diverse stem cell populations and systems
+### Declining Imp may restrain proliferation in diverse stem cell populations and systems
 
 c-myc, the mammalian homologue of Drosophila myc, is best known for its role in cancers, and so its regulation has been studied extensively (reviewed in Conacci-Sorrell et al., 2014; Farrell and Sears, 2014). It is therefore interesting to consider to what extent the mechanism we have uncovered is conserved between c-myc and Drosophila myc. The mammalian homologue of Imp, IGF2BP1, binds to c-myc mRNA and regulates its stability. However, IGF2BP binds to c-myc mRNA in the coding sequence, whereas Imp binds to myc UTRs in Drosophila. IGF2BP1 is known to stabilise c-myc transcripts by blocking translation-coupled decay (Bernstein et al., 1992; Doyle et al., 1998; Lemm and Ross, 2002; Weidensdorfer et al., 2009), but in Drosophila, Imp’s exact mechanism of stabilisation is not yet known. Nevertheless, the similarity of the two cases suggests that Imp regulation of myc stability might play a conserved role, coordinating stem cell growth and division with developmental progression.
 
@@ -118,13 +158,247 @@ The activity of stem cells in every context must be precisely restrained to prev
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Syncrip (Syp)</td>
+      <td></td>
+      <td>FBgn0038826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>IGF-II mRNA-binding protein (Imp)</td>
+      <td></td>
+      <td>FBgn0285926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Myc</td>
+      <td></td>
+      <td>FBgn0262656</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Mnt</td>
+      <td></td>
+      <td>FBgn0023215</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wild type OregonR</td>
+      <td>Bloomington</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Syp RNAi</td>
+      <td>VDRC</td>
+      <td>VDRC 33011</td>
+      <td>;P(GD9477)v33011</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Imp RNAi line</td>
+      <td>Bloomington</td>
+      <td>BL 34977</td>
+      <td>y(1) sc[*] v(1); P{y[+t7.7] v[+t1.8]=TRiP.HMS01168}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Imp OE line UAS-Imp-RM-FLAG</td>
+      <td>Liu et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Myc OE line</td>
+      <td>FLY-ORF collection</td>
+      <td>F001801</td>
+      <td>M{UAS-Myc.ORF.3xHA.GW}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Myc RNAi</td>
+      <td>Bloomington</td>
+      <td>BL 54154</td>
+      <td>y(1) v(1); P{y[+t7.7] v[+t1.8]=TRiP.HMC03189}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Imp::GFP</td>
+      <td>Toledano et al., 2012</td>
+      <td></td>
+      <td>Imp[CB04573]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>insc-GAL4</td>
+      <td>Betschinger et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Syncrip (guinea pig, polyclonal)</td>
+      <td>McDermott et al., 2014</td>
+      <td></td>
+      <td>1:2000 WB,1:500 IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-GFP (rat, monoclonal)</td>
+      <td>Chromotek</td>
+      <td>3H9 RRID:AB_10773374</td>
+      <td>1:1000 WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-αTubulin (mouse, monoclonal)</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>1:500 WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Imp (rabbit, polyclonal)</td>
+      <td>Gift from P. M. Macdonald</td>
+      <td></td>
+      <td>1:600 IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Deadpan (rat, monoclonal)</td>
+      <td>abcam</td>
+      <td>11D1BC7 RRID:AB_2687586</td>
+      <td>1:200 IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Myc (mouse, monoclonal)</td>
+      <td>Gift from R. N. Eisenman and DSHB</td>
+      <td>P4C4-B10</td>
+      <td>1:100 IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Mnt (mouse, monoclonal)</td>
+      <td>Gift from R. N. Eisenman</td>
+      <td></td>
+      <td>1:100 IF</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GFP-trap agarose beads</td>
+      <td>Chromotek</td>
+      <td>gta-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Stellaris DNA probes</td>
+      <td>Stellaris</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Phalloidin</td>
+      <td>Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNAspin Mini kit</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBNext Poly(A) mRNA Magnetic Isolation Module</td>
+      <td>NEB</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Ion Total RNA-Seq Kit v2 for Whole Transcriptome Libraries</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Agilent High Sensitivity DNA Kit</td>
+      <td>Agilent</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Click-iT EdU Alexa Fluor 488/594 Imaging Kit</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 7</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ version 2.0.0</td>
+      <td>Fiji</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FISHquant</td>
+      <td>Mueller et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Transquant</td>
+      <td>Bahar Halpern and Itzkovitz, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 Drosophila melanogaster fly stocks were kept at 18°C, but transferred to 25°C for crosses and experimental use. OregonR was the wild type strain. Flies were raised on standard cornmeal-agar medium.
 
-## Method details
+### Method details
 
-## RNA extraction
+#### RNA extraction
 
 Third instar larval brains were dissected in Schneider’s insect medium and then flash frozen in liquid nitrogen. Brains were homogenised using a pestle in IP buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl, 0.5% NP-40, 10% glycerol, one mini tablet of Complete EDTA-free protease inhibitor and 2 μl RNAse inhibitor (RNAsin Plus RNase Inhibitor, Promega). RNA was extracted using the RNASpin Mini kit (GE Healthcare) according to manufacturer’s instructions.
 
@@ -132,65 +406,116 @@ Reverse transcription and quantitative PCR cDNA was produced from extracted RNA 
 
 Real time quantitative PCR was performed using primers specific to a transcript of interest, and where possible spanning an exon junction. qPCR was performed using SYBR Green Master Mix with the CFX96 Touch Real-Time PCR Detection System (BioRad). Cycle threshold (C(T)) values were calculated from the BioRad CFX software using a second differential maximum method. Input samples were used for a dilution series and the percentage input of each gene was calculated in the IP samples as a measure of pulldown. For primer sequences see Table 1.
 
-## RNA immunoprecipitation
+**Table 1.**
+ qPCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rp49</td>
+      <td>GCTAAGCTGTCGCACAAA</td>
+      <td>TCCGGTGGGCAGCATGTG</td>
+    </tr>
+    <tr>
+      <td>pros</td>
+      <td>TATGCACGACAAGCTGTCACC</td>
+      <td>CGACCACGAAGCGGAAATTC</td>
+    </tr>
+    <tr>
+      <td>chic</td>
+      <td>CTGCATGAAGACAACACAAGC</td>
+      <td>CAAGTTTCTCTACCACGGAAGC</td>
+    </tr>
+    <tr>
+      <td>syp</td>
+      <td>TATGTGCGAAATCTTACCCAGGA</td>
+      <td>CGTTCCACTTTTCCGTATTGCTC</td>
+    </tr>
+    <tr>
+      <td>myc</td>
+      <td>CGGCAGCGATAGCATAAAAT</td>
+      <td>ACCTCGTCGGTAAGACTGTGA</td>
+    </tr>
+    <tr>
+      <td>Eip93F</td>
+      <td>cgatgtgaagtccgtcagag</td>
+      <td>gatttccgggcatctagctt</td>
+    </tr>
+    <tr>
+      <td>mamo</td>
+      <td>ccatcagagcccataaggtg</td>
+      <td>caaaacggacgtccttcaat</td>
+    </tr>
+  </tbody>
+</table>
+
+#### RNA immunoprecipitation
 
 Wandering larval brains were dissected and homogenised in IP buffer (see RNA extraction). Input samples were taken. Each experiment was done in triplicate. 200 Imp::GFP brains were used per IP for sequencing. The lysate was incubated with GFP-Trap agarose beads (Chromotek) at 4°C for two hours and the unbound supernatant was collected. Beads were washed in cold IP buffer for 4x quick washes. The bound material was eluted by incubation for 30 min at 65°C in Elution buffer (50 mM Tris HCl (pH 8), 10 mM EDTA, 1.3% SDS, protease inhibitor, RNase inhibitor). The elution step was repeated and the supernatants were pooled. RNA was extracted for IP samples and inputs and used for RT-qPCR or sequencing libraries.
 
-## Western blot
+#### Western blot
 
 Proteins were separated by SDS-PAGE on a 4–12% Novex gradient gel then transferred to nitrocellulose membrane with the Trans-Blot Turbo Transfer System (BioRad). Membranes were blocked in 50% Odyssey Blocking Buffer in 0.3% PBST (1x PBS with 0.3% Tween) for 1 hr at RT. The membrane was incubated with primary antibody overnight at 4°C. After rinsing, the membrane was incubated with fluorescently labelled secondary antibodies for LICOR (1:2000) for 2 hr at RT. Membranes were washed in 0.3% PBST and imaged with the LI-COR Odyssey.
 
-## polyA selection
+#### polyA selection
 
 For RNA sequencing, after RNA extraction mRNA was enriched through polyA selection with the NEBNext Poly(A) mRNA Magnetic Isolation Module (NEB) according to manufacturer’s instructions. Briefly RNA sample was added to washed beads with Binding buffer. Samples were incubated at 65°C for 5 min and then cooled to 4°C for RNA binding. Beads were washed in Wash Buffer and RNA was eluted at 80°C for 2 min. Binding, washing and elution steps were repeated to improve purification with final elution in 17 μl of Tris Buffer.
 
-## RNA sequencing
+#### RNA sequencing
 
 Three biological replicates (n = 3) were produced for each sample (whole transcriptome/input or immunoprecipitation). Poly(A) enriched RNA was then used for library production using the Ion Total RNA-Seq Kit v2 for Whole Transcriptome Libraries (Life Technologies). Libraries were produced according to the Ion Total RNA-Seq Kit v2 protocol. Following quality control steps, adaptors were hybridised to the RNA fragments and RT reaction was performed followed by cDNA amplification with Ion Xpress RNA Barcode primers. Prior to sequencing, quality of cDNA libraries were assessed using Agilent High Sensitivity DNA Kit with the Agilent 2100 Bioanalyser. Libraries were pooled to a total concentration of 100 pM, with three samples multiplexed per chip. Sequencing was performed on an in house Ion Proton Sequencer, using the Ion PI IC 200 Kit (Life Technologies). Ion PI chips were prepared following manufacturer’s instructions and loaded using the Ion Chef System.
 
-## Staining and imaging
+### Staining and imaging
 
-## Antibody staining for immunofluorescence (IF) in larval brains
+#### Antibody staining for immunofluorescence (IF) in larval brains
 
 Larval brains were carefully dissected in Schneider’s medium and collected into 0.2 ml PCR tubes. Samples were rinsed once with 0.3% PBSTX (0.3% Triton-X in 1x PBS) and then fixed in 4% paraformaldehyde (PFA) (4% PFA in 0.3% PSTX) for 25 min (for wL3) or 15 min (for 72 hr ALH) at room temperature (RT). Samples were rinsed briefly 3x in 0.3% PBSTX, and then washed 3 × 15 min in 0.3% PBSTX at RT. Blocking was for 1 hr at RT in Blocking Buffer (1% bovine serum albumin (BSA) in 0.3% PBSTX). Samples were incubated with primary antibody diluted in Blocking Buffer overnight at 4°C on a rocker (Note: we were unable to optimise Myc antibody staining in 72 hr ALH brains). Samples were rinsed and then washed 3 × 15 min in Blocking Buffer at RT. Alexa Fluor secondary antibody (Thermofisher) was added at 1:200 in Blocking Buffer and samples were incubated for 1 hr at RT in the dark. Samples were rinsed briefly and then washed 3 × 15 min in 0.3% PBSTX at RT. For nuclear staining, DAPI (4’,6-diamidino-2-phenylindole) was included at 1:500 in the second 15 min wash. Brains were mounted in VECTASHIELD anti-fade mounting medium (Vector Labs). Slides were either imaged immediately or stored at −20°C.
 
-## Single molecule RNA fluorescent in situ hybridisation (smFISH) for larval brains
+### Single molecule RNA fluorescent in situ hybridisation (smFISH) for larval brains
 
 smFISH probes were designed using the Stellaris Probe Designer version 4.2. The sequences against which the probes were designed are shown in Supplementary file 2. Stellaris DNA probes were gently resuspended in 95 μl fresh TE buffer and 5 ul RNAse inhibitor (RNAsin Plus RNase Inhibitor, Promega), and frozen at −80°C in 10 μl aliquots. Dissected brains from male larvae were rinsed once with 0.3% PBSTX and then fixed in 4% PFA (in 0.3% PSTX) for 25 min (for wL3) or 15 min (for 72 hr ALH) at RT. Samples were rinsed briefly and then washed 3 × 15 min in 0.3% PBSTX at RT. Samples were washed for 5 min in Wash Buffer (10% deionised formamide (stored at −80°C) and 2x SSC in DEPC water) and then incubated with 250 nM Stellaris DNA probes in Hybridisation Buffer (10% deionised formamide, 2x SSC and 5% dextran sulphate in DEPC water) overnight at 37°C on a rocker. Samples were rinsed briefly 3x in Wash Buffer, and then washed 3 × 15 min in Wash Buffer at 37°C. For nuclear staining DAPI (4’,6-diamidino-2-phenylindole) was included at 1:500 in the second wash. Brains were mounted in VECTASHIELD anti-fade mounting medium (Vector Labs). Slides were either imaged immediately or stored at −20°C.
 
-## Additional stains
+### Additional stains
 
 DAPI was used to stain nuclei, and was added at 1:500 in one of the final wash steps before mounting. Phalloidin was used to label F-actin and was added in one of the final wash steps and incubated for 1 hr at 37°C. Fluorescein 488 phalloidin was used at 5 μl per 100 μl, 647 Phalloidin was used at 2.5 μl per 100 μl.
 
-## 5-ethynyl-2’deoxyuridine (EdU) labelling
+### 5-ethynyl-2’deoxyuridine (EdU) labelling
 
 Brains were dissected in Schneider’s medium and then transferred to Brain Culture Medium (80% Schneider’s medium, 20% fetal bovine serum (Gibco ThermoFisher), 0.1 mg/ml insulin (Sigma)) with 25 μM EdU for 4 hr. Brains were then washed with Schneider’s medium and fixed for 25 min in 4% PFA in 0.3% PBSTX at RT. The samples were rinsed and then washed 3 × 15 min in 0.3% PBSTX at RT before blocking for 1 hr at RT in Blocking Buffer. Samples were incubated with anti-Dpn antibody in Blocking Buffer overnight at 4°C. The following day, samples were washed in Blocking Buffer and then incubated with Alexa Fluor secondary antibody (Thermofisher) at 1:200 in Blocking Buffer and samples were incubated for 1 hr at RT in the dark. Samples were washed 3 × 15 min in 0.3% PBSTX at RT and then fixed in 1% PFA in 0.3% PBSTX at RT for 15 min. Samples were washed and then incubated in Blocking Buffer for 1 hr. The Click-iT reaction was carried out with the Click-iT EdU Alexa Fluor 488 Imaging Kit (Invitrogen) following manufacturer’s instructions for 30 min at RT. Samples were washed in 0.3% PBST with 5 mM EDTA, once including DAPI, and then mounted in VECTASHIELD anti-fade mounting medium (Vector Labs). Samples were imaged on the same day.
 
-## Image acquisition
+### Image acquisition
 
 An inverted Olympus FV3000 Laser Scanning Microscope was used for fixed imaging of larval brains. Images were acquired using 60x/1.30 NA Si UApoN objective. For smFISH quantitation images, pixel size was 74 nm in x and y, and 200 nm in z.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Image analysis
+#### Image analysis
 
-## Replicates
+##### Replicates
 
 For all imaging experiments, staining and imaging was performed in three technical replicates (i.e. staining on three independent days). For each replicate the number of brains analysed ranged from 1 to 5 depending on availability of larvae. These are biological replicates. In Figures 1, 3 and 5G–H, the individual replicates are shown on all plots as individual points. In Figures 5B–D and 6, the individual NBs measured are shown as individual points on the plots.
 
-## Measuring NB size
+##### Measuring NB size
 
 We measured all type I NBs in the central brain on the ventral side. We used phalloidin staining to mark the NB cell boundary and the area at the widest z plane was manually measured using ImageJ. NBs undergoing mitosis were excluded. They were identified using Dpn staining, which is weak throughout the cell when the nuclear envelope has broken down during mitosis. In Figure 1 the average NB size per brain is plotted.
 
-## Measuring proliferation rates
+##### Measuring proliferation rates
 
 We measured all type I NBs in the central brain on the ventral side. Proliferation rate was measured with EdU labelling of progeny cells. The number of EdU +ve progeny per NB (labelled with Dpn) were counted manually. In Figure 1 the average number of progeny per NB in each brain is plotted.
 
-## NB segmentation
+##### NB segmentation
 
 Using ImageJ, single NBs were cropped and substacks were made to span the depth of each NB. The phalloidin staining was used to create a mask with the FIJI plugin MorphoLibJ, using the morphological segmentation feature (Legland et al., 2016). NBs undergoing mitosis (condensed chromatin in the DAPI channel) were excluded.
 
-## smFISH
+##### smFISH
 
 After segmentation as above, transcripts outside the NB boundary were removed. FishQuant (Mueller et al., 2013) was used in batch mode to count spots and calculate nascent transcripts using the integrated intensity calculation. In brief, an outline was produced for each NB, identifying the transcription focus (note that as myc is on the X chromosome, only male larvae were dissected so there was one transcription focus per NB). Transcription foci were easily identified as the largest spot in the nucleus, with relatively more signal from the more 5’ exon probe compared to the 3’ UTR probe. A single NB was analysed to set up the detection settings which were then applied in the batch mode of all NBs from each technical replicate. The filters were modified manually to optimise transcript detection, and then an average transcript was calculated from the entire batch and used to calculate the nascent transcript number.
 
@@ -200,7 +525,7 @@ Transcription and decay rates were calculated using the equations below. Decay r
 
 The calculation (Bahar Halpern and Itzkovitz, 2016) helps to unpick the differences in regulation of transcription or mRNA decay between different genotypes or cell types. However, the assumptions required for the method should be carefully considered in the interpretation of the results. The transcription rate calculation assumes a constant estimated transcription elongation rate without pauses or pulsing. The equations are based on a steady state but, while we excluded NBs undergoing mitosis, a dividing cell like the NB is unlikely to reach a true steady state.
 
-## Statistical analysis
+##### Statistical analysis
 
 Statistical analysis was performed using Prism (GraphPad Software). For image analysis (smFISH and phenotypic analysis) involving three or more comparison groups (genotypes), one-way ANOVA was used to identify difference between the results of different phenotypes and the wild type value. Dunnett’s multiple comparison test was then used to calculate significance values of each comparison. This applies to Figures 1, 3 and 4.
 
@@ -210,14 +535,14 @@ In Figure 6—figure supplement 1 and Figure 6G a correlation matrix was produce
 
 The qPCR data (Figure 2—figure supplement 1B) was analysed with a comparison for each gene between the test and control pulldowns. The significance was calculated using t-tests with correction for multiple comparisons with the False Discovery Rate method, using an allowance of 5%.
 
-## Bioinformatics methods
+### Bioinformatics methods
 
-## Analysis of RNAseq and RIPseq
+#### Analysis of RNAseq and RIPseq
 
 Reads from three Imp RIPseq libraries and three RNAseq libraries were mapped to the D. melanogaster genome (BDGP6.22.97) downloaded from ENSEMBL using the STAR aligner (2.5.3a) (Dobin et al., 2013). The aligned reads were then assigned to genes using htseq-count (0.11.2) (Anders et al., 2015). Imp RIPseq enrichment over baseline RNA expression (RNAseq) was calculated from gene counts after library size correction, and genes were ranked according to this ratio. We additionally used DESeq2 (1.24.0) (Love et al., 2014) to determine statistically significant difference between the RIPseq and RNAseq. Genes with very low abundance (those with total count of less than 10 across 3 RNAseq libraries) were ignored from ranking. Non-coding RNAs that overlap other genes were flagged up and not considered for Figure 2. This data is available in a tabular format in Supplementary file 1. To capture gene ontology (GO) terms linked to cell growth, neural development, and key regulatory processes, we extracted all GO terms using GO.db (3.8.2) (Carlson, 2019) and defined the following categories: cell growth (all GO terms that contain word ‘cell growth’), cell size (‘cell size’), cell division (‘cell division’), cell cycle (‘cell cycle’), neural development (‘nervous system development’, ‘neurogenesis’), RNA binding (‘RNA binding’), DNA binding (‘DNA binding’). The GO terms falling under these categories are listed in Supplementary file 1. Gene-to-GO term mapping was extracted from Biomart using the R package biomaRt (2.40.4) (Durinck et al., 2009). The data was analysed in R with the help of the tidyverse suite of packages (1.2.1) (Wickham, 2017). R libraries rtracklayer (1.44.3) (Lawrence et al., 2009) and GenomicRanges (1.36.0) (Lawrence et al., 2013) were used to extract information from the annotation (.gtf) file and determine gene lengths and overlaps. The plots shown in Figure 2 were made using ggplot2 (3.2.1) (Wickham, 2016). Further details of the analysis and code are available in Source code 1.
 
 The Hansen et al. (2015) S2 wild type RNAseq (SRX751581, SRX751582) and Imp RIPseq (SRX751579, SRX751580) datasets were downloaded from the Short Read Archive (SRA) using SRA toolkit (2.9.3) (SRA Toolkit Development Team, http://ncbi.github.io/sra-tools/). The reads were mapped to D. melanogaster genome (BDGP6.22.97) using the STAR (2.5.3a). Read counts per gene were calculated using HTSeq-count (0.11.2). The Hansen et al. (2015) Imp iCLIP-seq (SRX751573, SRX751574) and PAR-iCLIP-seq (SRX751575, SRX751576) datasets were downloaded from SRA. Illumina sequencing adapters were trimmed off using cutadapt (1.10) (Martin, 2011) and the first five bases (corresponding to molecular barcodes) were removed from sequence and appended to read name. The reads were then mapped to the D. melanogaster genome (BDGP6.22.97) using STAR (2.5.3a). xlsites from the iCount pipeline (Curk et al., 2019) was used to determine the number of unique crosslinked sites (unique cDNA molecules) for any given position. iCount peaks was then used to call significant peaks and iCount cluster to cluster significant peaks. To make the gene track plots for myc (Figure 2—figure supplement 1), brain and S2 RNAseq were converted to strand-specific bedgraphs using bedtools (v2.28.0) (Quinlan and Hall, 2010). The visualisation was done with Bioconductor package Sushi (1.22.0) (Phanstiel et al., 2014). For the S2 iCLIP-seq, (confident) peaks and corresponding clusters are shown. Only one, representative replicate for each data type is shown.
 
-## Data and code availability
+### Data and code availability
 
 The presented RNA sequencing data has been deposited with Gene Expression Omnibus (GEO), with accession number GSE140704. Further details of the analysis and code are available in Source code 1.

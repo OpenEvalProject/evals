@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.46440.001 It is common to find considerable genetic variation in susceptibility to infection in natural populations. We have investigated whether natural selection increases this variation by testing whether host populations show more genetic variation in susceptibility to pathogens that they naturally encounter than novel pathogens. In a large cross-infection experiment involving four species of Drosophila and four host-specific viruses, we always found greater genetic variation in susceptibility to viruses that had coevolved with their host. We went on to examine the genetic architecture of resistance in one host species, finding that there are more major-effect genetic variants in coevolved host-pathogen interactions. We conclude that selection by pathogens has increased genetic variation in host susceptibility, and much of this effect is caused by the occurrence of major-effect resistance polymorphisms within populations.
+It is common to find considerable genetic variation in susceptibility to infection in natural populations. We have investigated whether natural selection increases this variation by testing whether host populations show more genetic variation in susceptibility to pathogens that they naturally encounter than novel pathogens. In a large cross-infection experiment involving four species of Drosophila and four host-specific viruses, we always found greater genetic variation in susceptibility to viruses that had coevolved with their host. We went on to examine the genetic architecture of resistance in one host species, finding that there are more major-effect genetic variants in coevolved host-pathogen interactions. We conclude that selection by pathogens has increased genetic variation in host susceptibility, and much of this effect is caused by the occurrence of major-effect resistance polymorphisms within populations.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ Sigma viruses offer a novel way to test how coevolution with a pathogen alters t
 
 ## Results
 
-## Genetic variation in susceptibility to infection is greatest in coevolved host-virus associations
+### Genetic variation in susceptibility to infection is greatest in coevolved host-virus associations
 
 To test whether selection by viruses has increased genetic variation in susceptibility to infection, we compared endemic host-virus associations with novel associations that have no history of coevolution. We used four different species of Drosophila, each of which is naturally host to a different sigma virus (Longdon and Jiggins, 2012; Longdon et al., 2012; Longdon et al., 2017; Longdon et al., 2010; Longdon et al., 2011a). We collected four species from the wild and created genetically diverse populations in the laboratory. Using flies from these populations we crossed single males to single females to create full-sib families. The progeny of these crosses were then injected with either the virus isolated from that species, or a virus isolated from one of the other species (Figure 1). Studies on DMelSV have shown that loci that reduce loads when the virus is injected also reduce infection rates in both the lab and field (Bangham et al., 2008a; Longdon et al., 2012; Bregliano, 1970; Brun and Plus, 1980; Ohanessian-Guillemain, 1963; Wilfert and Jiggins, 2010b). As infection is costly, this is expected to increase host fitness. Fifteen days post infection we extracted RNA from the flies and measured viral load by quantitative RT-PCR. The differences between the viral load of different families allowed us to estimate the genetic variance (VG) in viral load – a measure of how much viral resistance varies in the population due to genetic as opposed to environmental causes. In total we infected 52,592 flies and measured the viral load in 4295 biological replicates (a vial containing a mean of 12 flies) across 1436 full-sib families (details of sample sizes in Additional Methods).
 
@@ -51,9 +51,17 @@ To test whether selection by viruses has increased genetic variation in suscepti
 
 **Figure 1.:** (A) Four species of Drosophila were independently infected both with a sigma virus with which they are naturally infected with in nature (red) and two viruses that naturally infect another species (black). (B) Phylogenies of the sigma viruses (inferred using the L gene) and their Drosophila hosts (inferred using COI, COII, 28S rDNA, Adh, SOD, Amyrel and RpL32 genes), redrawn from Longdon et al. (2015a) and Longdon et al. (2015b). Scale bars represent substitutions per site under a relaxed clock model. Posterior supports for nodes are all >0.99.
 
-Within populations of all four species, we found significantly greater genetic variance in susceptibility to the sigma virus that naturally infects that species compared to viruses from other species (Figure 2; Figure 2—figure supplement 1; Supplementary file 1 and 2). These different variances reflect considerable differences in the mean viral load between families (Figure 2A). For example, when families of D. obscura in the 2nd and 98th percentile were compared, there was a 1294 fold difference between the viral loads of the coevolved virus in the families (Figure 2A). In contrast, for the non-coevolved viruses there was a 27 fold difference in DMelSV loads and a 19 fold difference in DAffSV loads (see Figure 2A for statistics). The data in Figure 2 is zero-centred to allow comparison of the variances, but across the four species, there was no consistent difference between the mean viral load in coevolved versus non-coevolved associations (i.e. the coevolved virus does not always replicate to higher levels suggesting this is not an artefact of simply replicating poorly in a host – see Figure 2—figure supplement 1). Additionally, there was no correlation between the genetic variance in viral load and the mean viral load (Figure 2—figure supplement 1, Spearman’s correlation: ρ= -0.38, S=296, P=0.22).
+Within populations of all four species, we found significantly greater genetic variance in susceptibility to the sigma virus that naturally infects that species compared to viruses from other species (Figure 2; Figure 2—figure supplement 1; Supplementary file 1 and 2). These different variances reflect considerable differences in the mean viral load between families (Figure 2A). For example, when families of D. obscura in the 2nd and 98th percentile were compared, there was a 1294 fold difference between the viral loads of the coevolved virus in the families (Figure 2A). In contrast, for the non-coevolved viruses there was a 27 fold difference in DMelSV loads and a 19 fold difference in DAffSV loads (see Figure 2A for statistics). The data in Figure 2 is zero-centred to allow comparison of the variances, but across the four species, there was no consistent difference between the mean viral load in coevolved versus non-coevolved associations (i.e. the coevolved virus does not always replicate to higher levels suggesting this is not an artefact of simply replicating poorly in a host – see Figure 2—figure supplement 1). Additionally, there was no correlation between the genetic variance in viral load and the mean viral load (Figure 2—figure supplement 1, Spearman’s correlation: $ρ$= -0.38, S=296, P=0.22).
 
-## Major-effect genetic variants that are known to provide resistance to DMelSV do not protect against other viruses
+![Figure 2.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig2-v1.jpg)
+
+**Figure 2.:** The viral load was measured 15 days post infection by quantitative RT-PCR relative to a Drosophila reference gene (RpL32). (A) The points show model prediction family means from our GLM and are centred on zero. The number of families in each panel was down-sampled so the same number of families is shown for each virus. Coevolved host-virus associations are in red. (B) The genetic variance in log2 viral load was estimated from the between family variance assuming that all genetic variance is additive. The bars are 95% credible intervals. Posterior probabilities for significantly different genetic variances are shown in grey (see Supplementary file 1 and 2).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Viral load is measured by qRT-PCR relative to a housekeeping gene (RpL32). All viral loads were significantly different from one another (P<0.001 in all cases).
+
+### Major-effect genetic variants that are known to provide resistance to DMelSV do not protect against other viruses
 
 To examine whether the genetic basis of resistance to coevolved and non-coevolved viruses was different we estimated the genetic correlations (rg) in their viral loads. These represent the proportion of genetic variance in viral load between pairs of viruses that shares the same genetic causes. In D. melanogaster these were 0.40 for DMelSV-DAffSV, (95% CIs: 0.20, 0.61) and 0.25 for DMelSV-DObsSV (95% CIs: −0.01,0.47). Similar results were obtained using the D. melanogaster mapping population described below (Supplementary file 3). In the other species our estimates sometimes had wide credible intervals, but the genetic correlations between coevolved and non-coevolved viruses were mostly below 0.5 (Supplementary file 3; note correlations are frequently low between pairs of non-endemic viruses too). Therefore if natural selection increases genetic variation in susceptibility to a natural pathogen, there is expected to be a smaller effect on non-coevolved viruses.
 
@@ -65,9 +73,9 @@ To confirm these results we infected 1869 flies from 32 inbred D. melanogaster l
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig3-v1.jpg)
 
-**Figure 3.:** D. melanogaster lines carrying different alleles of CHKov1 and p62.Each point is the viral load of a separate inbred fly line carrying the resistant (Res) or susceptible (Sus) allele of P62 or CHKov1. Horizontal bars are medians. Viral load was measured 15 days post infection by quantitative RT-PCR relative to a Drosophila reference gene (RpL32).
+**Figure 3.:** Each point is the viral load of a separate inbred fly line carrying the resistant (Res) or susceptible (Sus) allele of P62 or CHKov1. Horizontal bars are medians. Viral load was measured 15 days post infection by quantitative RT-PCR relative to a Drosophila reference gene (RpL32).
 
-## There are a greater number of major-effect variants in coevolved host-virus associations
+### There are a greater number of major-effect variants in coevolved host-virus associations
 
 To investigate how coevolution shapes the genetics of resistance, we mapped loci controlling resistance using a D. melanogaster advanced intercross population (the DSPR panel [King et al., 2012]). This population samples genetic variation in a small number of genotypes from around the world (the experiments above sampled many genotypes from a single location). It was founded by allowing two sets of 8 inbred founder lines to interbreed for 50 generations, then creating recombinant inbred lines (RILs) whose genomes are a fine-scale mosaic of the original founder genomes. We used 377 RILs from these populations, which have up to 15 alleles of each gene (one founder line is shared between the two populations). We infected 15,916 flies across 1362 biological replicates (a vial containing a mean of 12 flies) with DMelSV, DAffSV or DObsSV and measured viral load as above (see Materials and methods).
 
@@ -75,7 +83,7 @@ We first estimated the genetic variance in viral load within our mapping populat
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46440/elife-46440-fig4-v1.jpg)
 
-**Figure 4.:** D. melanogaster.(A) The genetic variance in viral load within the mapping population (filled circles). The open circles are estimates of the genetic variance after accounting for the effects of the QTL in panel C. Error bars are 95% credible intervals. (B) QTL affecting viral load. The horizontal line shows a genome-wide significance threshold of p<0.05 that was obtained by permutation of Logarithm of odds (LOD) scores. (C) The effect of the seven QTL detected on the load of the three viruses. Only QTL that remained were significant following multiple regression with all the loci are shown. The coevolved virus is shown in red.
+**Figure 4.:** (A) The genetic variance in viral load within the mapping population (filled circles). The open circles are estimates of the genetic variance after accounting for the effects of the QTL in panel C. Error bars are 95% credible intervals. (B) QTL affecting viral load. The horizontal line shows a genome-wide significance threshold of p<0.05 that was obtained by permutation of Logarithm of odds (LOD) scores. (C) The effect of the seven QTL detected on the load of the three viruses. Only QTL that remained were significant following multiple regression with all the loci are shown. The coevolved virus is shown in red.
 
 To examine the genetic basis of virus resistance, we looked for associations between genotype and viral load across the genome (Figure 4B). In the coevolved association (DMelSV) we identified seven QTL associated with resistance, compared to one that affects DObsSV and none affecting DAffSV (Supplementary file 5; this excludes one DMelSV QTL on the X chromosome that did not remain significant after accounting for the other QTL). The QTL affecting DObsSV also has a significant effect on DMelSV. One of the QTL corresponded to p62 (2L 53 cM). The susceptible allele of CHKov1 was not present in the fly lines assayed.
 
@@ -103,15 +111,15 @@ In conclusion, we have demonstrated that selection by pathogens has increased th
 
 ## Materials and methods
 
-## Virus extraction and infection
+### Virus extraction and infection
 
 We extracted the sigma viruses DAffSV, DImmSV, DMelSV and DObsSV from infected stocks of D. affinis (line: NC10), D. immigrans (line: DA2), D. melanogaster (line: E320 Ex) and D. obscura (line: 10A) respectively (Longdon et al., 2017; Longdon et al., 2015a; Longdon et al., 2010; Longdon et al., 2011a; Brun and Plus, 1980). These infected lines were collected from the wild between 2007–2012 (all from the UK, bar D.affinis which was collected in the USA). Infected fly stocks were checked for infection by exposing the flies to 100% CO2 at 12°C for 15mins then paralysed flies were collected 30mins later. The DImmSV infected line does not show CO2 sensitivity and so was confirmed to have a high level of infection using RT-PCR. Infected flies were frozen at −80°C and later homogenised in ringers solution (2.5 μl per fly) and centrifuged at 13,000 g for 10 min at 4°C. The supernatant was collected, 2% v/v FBS was added then virus solutions were aliquoted and stored at −80°C.
 
-## Experimental design
+### Experimental design
 
 We set up a common garden experiment to measure genetic variation in susceptibility to natural and non-natural viruses across four host species. In a fractional factorial experiment each species was infected it with its own virus, as well as two viruses that do not infect that host species (see Figure 1). All of the viruses replicate in all hosts (with the exception of DImmSV in D. melanogaster that showed limited evidence of replication – this combination was not used in the experiment). All fly stocks used (see additional methods for stock details) were tested for existing sigma virus infection using RT-PCR over two generations. For all species we collected flies from the wild and we used a full-sib mating design. The progeny of these crosses were infected by injecting them with 69 nl of the viruses intrathoracically and measuring viral RNA loads 15 days post infection, as in Longdon et al. (2011c). This time point was selected as RNA viral load tends to plateau from around day 15 post infection and there is no mortality from infection in this period. The specifics for each host species, including sample sizes, are detailed in the additional methods.
 
-## Known resistance genes in D. melanogaster
+### Known resistance genes in D. melanogaster
 
 We genotyped parents of each D. melanogaster full sib family from the experiment above for two resistance alleles that are known to confer protection against DMelSV; p62 (Ref(2)P) and CHKov1. We genotyped parental flies using PCR assays that produce different sized products depending on whether flies carry resistant or susceptible alleles. Information on these PCRs and primer sequences can be found in Supplementary file 4. We then calculated the number of resistance alleles in each family by summing the number of alleles from both mothers and fathers. We produced genotype information for 230 of the 255 families.
 
@@ -119,7 +127,7 @@ Another resistance allele has been identified in the gene Ge-1 (Cao et al., 2016
 
 We further examined the effect of alleles known to affect susceptibility to DMelSV on all three viruses. Firstly, we infected 32 lines from the Drosophila Genetic Reference Panel (DGRP) (Mackay et al., 2012) that were susceptible for both p62 and CHKov1 (n = 11 lines), were resistant for CHKov1 only (n = 13 lines), or were resistant for both genes (n = 8 lines) with DMelSV, DAffSV and DObsSV. No lines in the panel were resistant for p62 and susceptible for CHKov1. We infected a mean of 18 flies per line (range = 3–22).
 
-## Mapping resistance genes in D. melanogaster
+### Mapping resistance genes in D. melanogaster
 
 We used 377 DSPR lines (154 from panel A and 223 from panel B, http://FlyRILs.org [King et al., 2012; Long et al., 2014]), kindly provided by S.J. Macdonald, University of Kansas) to carry out a Quantitative Trait Locus (QTL) study to examine the genetic basis of resistance to DAffSV, DMelSV and DObsSV in D. melanogaster.
 
@@ -127,19 +135,23 @@ Three females and three males from each DSPR line were placed into yeasted cornm
 
 Injections were carried out over 13 weeks. Each day of injection a mean of 47 unique lines (range 20–60) and 51 replicate vials were injected with 1–3 different viruses. In total we assayed 377 DSPR lines (108 lines had two biological replicates). Each replicate vial contained a mean of 12 flies (range 1–22). In total, 15,916 flies were injected across both panels of DSPR lines. We injected 319 lines with all three viruses, 38 with 2 viruses and 20 with one virus. The order of injection of lines and of viruses, was randomised across injection days. Independent biological replicates were injected on different days. Panel A and Panel B lines were assayed in two overlapping blocks.
 
-## Measuring viral load
+### Measuring viral load
 
 We measured the change in RNA viral load using qRT-PCR. The viral RNA load was expressed relative to the endogenous control housekeeping gene RpL32 (Rp49). RNA was extracted from flies homogenised in Trizol and reverse transcribed with GoScript reverse transcriptase (Promega) and random hexamer primers, and then diluted 1:10 with nuclease free water. The qRT-PCR was performed on an Applied Biosystems StepOnePlus system using Sensifast Hi-Rox Sybr kit (Bioline) with the following PCR cycle: 95°C for 2 min followed by 40 cycles of: 95°C for 5 s followed by 60°C for 30 s. Two qRT-PCR reactions (technical replicates) were carried out per sample with both the viral and endogenous control primers. Each qRT-PCR plate contained three standard samples, and all experimental samples were split across plates in a blocked design. A linear model was used to correct the cycle threshold (Ct) values for differences between qRT-PCR plates. Primer sequences are in Supplementary file 6.
 
 To estimate viral load, we calculated ΔCt as the difference between the qRT-PCR cycle thresholds of the virus and the endogenous control. Viral load calculated without using the endogenous control is strongly correlated to ΔCt for all species.
 
-## Statistical analysis full-sib experiments
+### Statistical analysis full-sib experiments
 
-We used a linear mixed model to examine the amount of genetic variation in susceptibility to the different viruses. We used a trivariate model with the load of the three viruses as the response variable. For each species the model was structured as:(1)yvfi=β1:v+uv:f+uv:d+evfi
+We used a linear mixed model to examine the amount of genetic variation in susceptibility to the different viruses. We used a trivariate model with the load of the three viruses as the response variable. For each species the model was structured as:
 
-Where yvfi is the log2 viral load of the ith biological replicate of full-sib family f infected with virus v. β are the fixed effects, with β1 being the mean viral load of each virus. u are the random effects for full-sib families (f) and for the day of injection (d), e are the residuals. By assuming that all the genetic variation in the population is additive (Hill et al., 2008), we estimated the genetic variance (VG) of the viral load as twice the between-family variance (Falconer, 1960; Falconer and Mackay, 1996). Both empirical data and theory suggest additive genetic variation makes up large proportion of the total genetic variance (Hill et al., 2008).
+$$
+y_{vfi}=\beta_{1:v}+u_{v:f}+u_{v:d}+e_{vfi}
+$$
 
-In addition, for D. melanogaster we ran a further model that included the additional fixed effects β2:v and β3:v that are the linear effects of the CHKov1 and p62 (Ref(2)P) resistance alleles. We assumed these genes had additive effects, and modelled their effects simply as the proportion of resistant alleles in a family (if one parent was heterozygous and the other homozygous susceptible, the value is 0.25).
+Where $y_{vfi}$ is the log2 viral load of the ith biological replicate of full-sib family f infected with virus v. $\beta$ are the fixed effects, with $\beta_{1}$ being the mean viral load of each virus. u are the random effects for full-sib families (f) and for the day of injection (d), e are the residuals. By assuming that all the genetic variation in the population is additive (Hill et al., 2008), we estimated the genetic variance (VG) of the viral load as twice the between-family variance (Falconer, 1960; Falconer and Mackay, 1996). Both empirical data and theory suggest additive genetic variation makes up large proportion of the total genetic variance (Hill et al., 2008).
+
+In addition, for D. melanogaster we ran a further model that included the additional fixed effects $\beta_{2:v}$ and $\beta_{3:v}$ that are the linear effects of the CHKov1 and p62 (Ref(2)P) resistance alleles. We assumed these genes had additive effects, and modelled their effects simply as the proportion of resistant alleles in a family (if one parent was heterozygous and the other homozygous susceptible, the value is 0.25).
 
 The model was fitted using the MCMCglmm package in R (Hadfield, 2010). The random effects (and residuals) are assumed to be multivariate normal with zero mean and covariance structure V ⊗ I. I is an identity matrix, and V a matrix of estimated variances and covariances. For the random effects V is a 3 × 3 covariance matrix describing the variances for each virus and the covariances between them. The off-diagonal elements of V for the residual were set to zero because the covariances between traits at these levels are not estimable by design.
 
@@ -147,21 +159,21 @@ Diffuse independent normal priors were placed on the fixed effects (means of zer
 
 We confirmed the results were not sensitive to the choice of prior by also fitting models with inverse-Wishart and flat priors for the variance covariance matrices (described in Longdon et al., 2011c), as well as fitting the models by REML in ASReml R (Gilmour et al., 2002). These analyses all gave qualitatively similar results (data not shown).
 
-## Statistical analysis of QTL experiment
+### Statistical analysis of QTL experiment
 
 Based on genotyping data, the probability that each Recombinant Inbred Line (RIL) in the DSPR panel was derived from each of the eight founder lines has been estimated at 10 kB intervals across the genome (King et al., 2012). To identify QTL affecting viral load we first calculated the mean viral load (ΔCt) across the biological replicates of each RIL. We then regressed the mean viral load against the eight genotype probabilities and calculated logarithm of odds (LOD) scores using the DSPRqtl package in R (King et al., 2012). These LOD scores were calculated separately for DSPR Panel A and Panel B, and then summed at each genomic location. To obtain a significance threshold, we permuted our mean viral load estimates across the RILs within each panel, repeated the analysis above and recorded the highest LOD score across the entire genome. This process was repeated 1000 times to obtain a null distribution of the maximum LOD score.
 
 To estimate the effect of each QTL we assumed that there was a single genetic variant affecting viral load, so the founder alleles could be assigned to two functionally distinct allelic classes. First, we regressed the mean viral load against the genotype probabilities (as described above), resulting in estimates of the mean viral load of each founder allele in the dataset. The two DSPR panels had one founder line (line 8) in common. For QTL where the line eight allele was present in both panels, this analysis included data from both panels, and ‘panel’ was included as a fixed effect in the analysis. When this was not the case, we analysed only data from the panel where the QTL was most significant. We then ranked the founder alleles by viral load estimate, and split this ranked list into all possible groups of two alleles. For each split, the genotype probabilities in the first group of founder alleles were summed. We then regressed mean viral load against each of these combined genotype probabilities. The regression model with the highest likelihood was taken as the most likely classification into allelic classes. The effect size of the QTL was then estimated from this model.
 
-To estimate the genetic variance in viral load within the DSPR panels we modified the model described in Equation 1 as follows. yvfi is the log2 viral load of the ith biological replicate of each RIL f infected with virus v. There was a single fixed effect, β, of the panel the line is from. u is the random effect for each RIL (f). The day of injection (d) was omitted. As all the RILs are homozygous, we estimated the genetic variance in viral load (VG) as half the between-RIL variance. This assumes all the genetic variation is additive.
+To estimate the genetic variance in viral load within the DSPR panels we modified the model described in Equation 1 as follows. $y_{vfi}$ is the log2 viral load of the ith biological replicate of each RIL f infected with virus v. There was a single fixed effect, $\beta$, of the panel the line is from. u is the random effect for each RIL (f). The day of injection (d) was omitted. As all the RILs are homozygous, we estimated the genetic variance in viral load (VG) as half the between-RIL variance. This assumes all the genetic variation is additive.
 
 To estimate the proportion of the genetic variance that is explained by the QTL we identified, we repeated this analysis but included the 7 QTL we identified as fixed effects in the model. Each QTL was included by estimating the probability that each line carried the resistant allele of the QTL and adding this as a fixed effect to the model. The between-RIL variance then allowed us to estimate the genetic variance in viral load after removing the effects of the QTL.
 
-## Additional methods
+### Additional methods
 
 All lines were screened for their retrospective sigma virus over two generations by RT-PCR, and infected isofemale lines discarded prior to the experiment.
 
-## Drosophila melanogaster
+### Drosophila melanogaster
 
 We created an outcrossed population by combining 150 isofemale lines of D. melanogaster (collected in Accra, Ghana (5.593,–0.188) in 2014) in a population cage. The population was maintained throughout the experiment with a large population size (~1500–2000 flies), with eggs collected from the population cage used to set up each subsequent generation. All rearing was carried out on cornmeal medium (recipe below) sprinkled with live yeast (‘yeasted’) at 25°C.
 
@@ -171,33 +183,79 @@ After 5 days these flies were injected with 69 nl of virus extract intra-abdomin
 
 Injections were carried out over 25 overlapping blocks. Each block consisted of 10 families, and each day, two vials per family were injected with two different viruses. Each replicate vial contained a mean of 14 flies (range 3–28 flies). In total we measured 255 families over 1567 biological replicates. We aimed to carry out a minimum of 2 replicates of each virus per family, but where possible we carried out 3 or four replicates (92 virus-family combinations had one replicate, 555 had two replicates, 82 had 3 replicates and 25 had four replicates.). 248 families had replicates for all three viruses. Blocks were staggered to overlap with at least 20 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.
 
-## D. immigrans
+### D. immigrans
 
 92 D. immigrans lines were collected from Madingley, Cambridge, UK (52.225, 0.043) in 2012 and 2015. Full-sib families were set up using crosses between the 92 isofemale lines of Drosophila immigrans. Flies were reared on malt food (recipe below) at 18°C. Crosses were between different isofemale lines (i.e. excluding reciprocal crosses) and maximising the number of lines used. Families were established from 2 to 4 day old single female and male virgin flies placed in the same vial for 7 days. These crosses were tipped onto fresh food every 7 days to generate replicate vials of each family. Eclosed males were collected 27–34 days after initial egg laying and injected with DImmSV, DMelSV or DObsSV 1–3 days post-collection, then maintained and frozen on day 15 post-infection as above.
 
 Injections were carried out over 18 overlapping blocks. Each block consisted of an average of 19 families and 46 replicate vials. Each replicate vial contained a mean of 14 flies (range: 4–26). In total we assayed 341 families over 812 biological replicates. We aimed to have a minimum of 2 replicates per virus per family (235 virus-family combinations had one replicate, 270 had two replicates, 11 had 3 replicates and 1 had four replicates). 140 families had replicates across two different viruses and 18 families had replicates for all three viruses. Blocks were staggered to overlap with a mean of 39 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.
 
-## D. affinis
+### D. affinis
 
-SiteNAthens, Georgia, USA, (33.946,–83.384) in 201213Great Smokey Mountain National Park, Gatlinburg, USA (35.698,–83.613) in 201523Rochester, New York, USA (43.135,–77.599) in 20124
+<table>
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Athens, Georgia, USA, (33.946,–83.384) in 2012</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Great Smokey Mountain National Park, Gatlinburg, USA (35.698,–83.613) in 2015</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Rochester, New York, USA (43.135,–77.599) in 2012</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 Full-sib families were set up using crosses between 40 isofemale lines of Drosophila affinis (see above for collection details) collected in the U.S. Flies were reared on malt food (recipe below) at 18°C. Crosses were between different isofemale lines (i.e. excluding reciprocal crosses) and maximising the number of lines used. Families were established from 6 day old single female and male virgin flies placed in the same vial for 7 days. These crosses were tipped onto fresh food every 7 days to generate replicate vials of each family. Eclosed males were collected 35–42 days after initial egg laying and then injected with DAffSV, DImmSV or DMelSV 1–3 days post-collection, then maintained and frozen on day 15 post-infection as above.
 
 Injections were carried out over 27 overlapping blocks. Each block consisted of an average of 19 families and 28 replicate vials. Each replicate vial contained a mean of 11 flies (range: 3–23). In total we assayed 520 families over 1003 biological replicates. We aimed to have a minimum of 2 replicates per virus per family (336 virus-family combinations had one replicate, 286 had 2 replicates and 30 had three replicates). 109 families had replicates across two different viruses and 12 families had replicates for all three viruses. Blocks were staggered to overlap with a mean of 23 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.
 
-## D. obscura
+### D. obscura
 
-SiteNDerbyshire Site A, UK (52.978,–1.440) in 20124Derbyshire Site C, UK (52.903,–1.374), in 20121Les Gorges du Chambon, France (45.622, 0.555) in 20121Madingley, Cambridge, UK (52.226, 0.046) in 201415
+<table>
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Derbyshire Site A, UK (52.978,–1.440) in 2012</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Derbyshire Site C, UK (52.903,–1.374), in 2012</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Les Gorges du Chambon, France (45.622, 0.555) in 2012</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Madingley, Cambridge, UK (52.226, 0.046) in 2014</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
 
 D. obscura were collected in the United Kingdom and France (see above). Males and females were separated, and females were placed in vials to establish isofemale lines. Full-sib families were set up using crosses between 21 isofemale lines of Drosophila obscura collected in the UK. Flies were reared on banana food (recipe below) at 18°C. Crosses were between different isofemale lines (i.e. excluding reciprocal crosses) and maximising the number of lines used. Families were established from 6 day old single female and male virgin flies placed in the same vial for 7 days. These crosses were tipped onto fresh food every 7 days to generate replicate vials of each family. Eclosed males were collected 35–42 days after initial egg laying and then injected with DAffSV, DMelSV, or DObsSV 1–3 days post-collection, then maintained and frozen on day 15 post-infection as above.
 
 Injections were carried out over 25 overlapping blocks. Each block consisted of a mean of 16 families with a mean of 76 vials being injected each day for 12 days. Each replicate vial contained a mean of 8 flies (range: 1–15). In total we assayed 320 families over 913 biological replicates. We aimed to have a minimum of 2 replicates per virus per family (126 virus-family combinations had one replicate, 314 had 2 replicates and 49 had 3 replicates and 3 had four replicates). 94 families had replicates across two different viruses and 39 families had replicates for all three viruses. Blocks were staggered to overlap with at least 10 families being infected on any one day. The order families were injected in was randomised, and the order the different viruses were injected was blocked across days.
 
-## Sample size estimation
+### Sample size estimation
 
 The number of full-sib families required for estimating genetic variance in susceptibility was determined by simulation using previous estimates of genetic variation to DMelSV in D. melanogaster (Magwire et al., 2012). After carrying out the full-sib experiment in D. melanogaster, we then down-sampled this data to calculate the minimum number of families required to provide accurate estimates for the other species. Sample sizes for the DSPR experiment were based on previous data (Faria et al., 2015).
 
-## Food recipes
+### Food recipes
 
 Banana:
 
@@ -211,7 +269,7 @@ Malt:
 
 Combine and bring to a boil for 5mins, cool to 70°C and then add 14 ml Nipagin (10%) and 5 ml propionic acid.
 
-## Data availability
+### Data availability
 
 Datasets and R code for estimating the amount of genetic variation in susceptibility https://doi.org/10.6084/m9.figshare.6743339
 

@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Department of Pharmaceutical and Biological Chemistry, School of Pharmacy, University College London London United Kingdom
-2. https://ror.org/00dn4t376 College of Engineering, Design and Physical Sciences, Brunel University London Uxbridge United Kingdom
-3. https://ror.org/01g9vbr38 High-Performance Computing Center, Oklahoma State University Stillwater United States
-4. https://ror.org/01g9vbr38 Department of Physiological Sciences, Oklahoma State University Stillwater United States
-5. https://ror.org/02jx3x895 UCL Centre for Advanced Research Computing, University College London London United Kingdom
+1. Department of Pharmaceutical and Biological Chemistry, School of Pharmacy, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. College of Engineering, Design and Physical Sciences, Brunel University London Uxbridge United Kingdom ([ROR:00dn4t376](https://ror.org/00dn4t376))
+3. High-Performance Computing Center, Oklahoma State University Stillwater United States ([ROR:01g9vbr38](https://ror.org/01g9vbr38))
+4. Department of Physiological Sciences, Oklahoma State University Stillwater United States ([ROR:01g9vbr38](https://ror.org/01g9vbr38))
+5. UCL Centre for Advanced Research Computing, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -52,13 +52,91 @@ In this study, we report a comprehensive analysis of globally collected whole ge
 
 ## Results
 
-## NSP10 residues have a low frequency of mutation
+### NSP10 residues have a low frequency of mutation
 
 The SARS-CoV-2 NSP10 sequence analysis was carried out in two phases. All sequences were obtained from the Global Initiative Sharing All Influenza Data (GISAID) database. In the first phase (January 30, 2022), after deleting the sequences with unknown residues (see Materials and methods) in NSP10, 7,070,539 WGS were used for sequence alignment analysis. We concentrated on non-synonymous mutations, those that change one amino acid into another, but ignored synonymous mutations. From these, 1747 unique mutations were identified at different specific amino acids as summarized in (Figure 2—figure supplement 1). This is in stark contrast to SARS-CoV-2 NSP1, for which 933 mutations have been identified in only 295,000 genome sequences (Mou et al., 2021). The naturally occurring mutations are distributed across the entire NSP10 structure and each and every residue has been mutated, albeit occurring at strikingly different frequencies. A summary table listing all occurring mutations and their frequencies is also provided (Figure 2—source data 1). The top three mutations that were identified were at amino acid positions T12, T102, and V104. The NSP10 variants at this position were sent for crystallographic structure determination.
 
 Since our first analysis in January 2022, the SARS-CoV-2 virus has constantly been evolving with multiple variants being reported across the world. Just before the submission of this work, we updated our sequence analysis. A total of 13,032,424 sequences were downloaded and reanalyzed (accessed on December 14, 2022). From these, 2564 unique sequences were identified and the % frequency for the highest occurring mutations was reported (Figure 2—figure supplement 2). The updated summary table (Figure 2—source data 2) listing all occurring mutations and their frequencies is provided. To our surprise, T12I, T102I, and A104V were still the most frequently occurring mutations, with T102I displaying the highest mutation count.
 
 Twenty-four of the 139 residues display a very low count of less than 100 from more than 13 million genome sequences. For example, the residues forming the two zinc finger domains in NSP10 through association with a zinc ion, fall into this category. The two zinc fingers are thought to provide structural stability to NSP10 although their detailed function remains elusive. Our analysis highlights the importance of the conservation of residues like cysteines and histidines in zinc finger motifs. Although these residues were mutated to various other amino acids, their low frequency of occurrence (below 50), indicates that the mutations at these positions are not favorable for the adaptation or evolution of the virus. The majority of residues, 62, display a medium propensity to mutate with a frequency between 100 and 1000. We then focused on variants with high frequency. In total, 53 mutations occurred more than 1000 times. From these, 39 are considered the most common mutations due to their high frequency compared to the rest of the mutations (Figure 2a) and their % frequency exceeded 0.1% (Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87884/elife-87884-fig2-v1.jpg)
+
+**Figure 2.:** (a) Mutation count of the top 39 mutations in NSP10 extracted from >13 million WGS. (b) Locations of top six mutations on the NSP10 structure. Mutation positions labeled in red are the most frequently occurring and were used in crystallographic studies. (c) The spatial position of the mutations relative to NSP14 and NSP16 structures. The local structural environment of (d) T12I, (e) T102I, and (f) A104V mutations (blue sticks) superimposed on the wild-type structure (white). The red discs represent regions where pairwise overlap of van der Waal radii occurs between the side chain atoms of the point mutation and the surrounding structural elements. The green discs represent regions where atoms are almost in contact.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87884/elife-87884-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The sequences have been saved in Figure 2—source data 1. Different colors represent various mutated amino acids.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87884/elife-87884-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The sequences have been saved in Figure 2—source data 2. Different colors represent various mutated amino acids.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87884/elife-87884-fig2-figsupp3-v1.jpg)
+
+**Table 1.**
+ Summary of the top three variants occurring in NSP10 calculated using Dynamut2.The percent frequency and effect on calculated protein stability are shown. A summary of the top 39 mutations has been listed in Figure 2—source data 3. Only mutations with a count larger than 1000 and a percent frequency larger than 0.01% have been included.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>Count</th>
+      <th>%Frequency</th>
+      <th>ΔΔGStability</th>
+      <th>Predicted effect onNSP10 stability</th>
+      <th colspan="3">NSP10-NSP14</th>
+      <th>NSP10-NSP16</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Interface</th>
+      <th>Deletrious</th>
+      <th>Interface</th>
+      <th>Deleterious</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T102I</td>
+      <td>21615</td>
+      <td>0.166</td>
+      <td>–0.11</td>
+      <td>destabilizing</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>T12I</td>
+      <td>17120</td>
+      <td>0.131</td>
+      <td>–0.68</td>
+      <td>destabilizing</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>A104V</td>
+      <td>13988</td>
+      <td>0.107</td>
+      <td>–0.1</td>
+      <td>destabilizing</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+  </tbody>
+</table>
 
 We next assessed the impact of the variants on the stability of NSP10 by analyzing the change in free energy (ΔΔGStability) compared to wild-type NSP10. The DynaMut2 algorithm combines Normal Mode Analysis (NMA) methods to capture protein motion and graph-based signatures to represent the wild-type environment to investigate the effects of single and multiple point mutations on protein stability and dynamics (Rodrigues et al., 2021). A negative value of ΔΔG refers to protein destabilization by the variant, whereas a positive value implies protein stabilization (Rodrigues et al., 2021). Ten mutations including A4V, P8S, L133F, R134C, R134H, R134S, P136L, P136S, M137I, and L138F were not considered as they were missing in the crystal structure. The missing residues are located at the N- and C-termini of NSP10, which suggests that the effects of these mutations may be negligible on the stability of NSP10. The percent frequency and the predicted effects on the stability of the top three NSP10 variants are listed in Table 1. A detailed list of all 39 variants is listed in Figure 2—source data 3.
 
@@ -68,7 +146,7 @@ In the native NSP10 structure, the methyl group in the side chain of T12 (helix 
 
 The low mutating frequency of NSP10 residues highlights the importance of the role NSP10 plays in the SARS-CoV-2 life cycle. NSP10 is a cofactor that is required for the proper function of two essential viral enzymes - NSP14 and NSP16. Any significant changes in the structure of NSP10 or the interactions that alter the binding of NSP10 with NSP14 or NSP16 would have deleterious effects on the survival of the virus in the host. Therefore, to adapt, evolve, and self-preserve, the virus ensures that the mutation frequency is low and with negligible effects that threaten its survival.
 
-## Thermal shift assays confirm predicted destabilizing effects in NSP10 variants
+### Thermal shift assays confirm predicted destabilizing effects in NSP10 variants
 
 In order to experimentally verify the predicted destabilizing effects of the NSP10 variants compared to native NSP10, their thermal stability was tested using Thermal Shift assays (Figure 3a and b; Huynh and Partch, 2015). The observed TM values for all three variants T12I, T102I, and A104V were 41.3 ± 0.1°C, 44.0 ± 0.1°C, and 44.9 ± 0.1°C, systematically lower than the TM value for native NSP10 (47.4 ± 0.0°C). All three variants display a significant change of more than 2 °C, in particular mutant T12I, whose TM value decreased by 6 °C. Based on the structural comparison, the mutants were predicted to be less stable than the native structure. In summary, these predictions of the stability of NSP10 variants match the experimental data.
 
@@ -76,21 +154,124 @@ In order to experimentally verify the predicted destabilizing effects of the NSP
 
 **Figure 3.:** (a) Melting curve of native NSP10 and its three variants. The red, yellow, green, and blue curves show the data measured for native NSP10, T12I, T102I, and A104V variants, respectively. (b) Derivative curves of NSP10 and its three variants using the same color code. (c) MST dose response curves for native NSP10 and its variants in the presence of NSP14 ExoN domain. The green, red, blue and brown curves represent native NSP10, T12I, T102I, and A104V, respectively. (d) MST dose response curves for native NSP10 and its variants in the presence of NSP16, with the same color codes as above. All experiments were conducted at least in triplicate.
 
-## The three frequent NSP10 variants have no significant effect on the binding affinities for NSP14 and NSP16
+### The three frequent NSP10 variants have no significant effect on the binding affinities for NSP14 and NSP16
 
 To quantify the interaction of NSP10 variants with their binding partners, NSP14 and NSP16, MST experiments were conducted (Figure 3c and d). With respect to NSP16, for wild-type NSP10, the Kd value was 957.1 nM ±181.5 nM, in a similar range as recently observed for NSP14 (Kozielski et al., 2022). Similarly, for T12I, the Kd value was 1000.2 nM ±195.0 nM, which does not show any significant difference compared to native NSP10. For variants T102I and A104V, Kd values were 359.4±97.8 nM and 473.5±117.4 nM, respectively. Their values are smaller than that of wild-type NSP10, indicating a slightly stronger binding to NSP16 (0.38–1.04 fold).
 
 Quantification of the binding affinity between wild-type and variant NSP10s and the ExoN domain of NSP14 MST was employed as previously reported but with a distinct labeling procedure. Instead of using the second-generation labeling dye we covalently attached the fluorescence marker, which allowed freezing and storing the protein at –80 °C the labeled protein for later use. For wild-type NSP10 we measured a Kd of binding to ExoN of 3.9±1.0 µM. For NSP10 variants T12I, T102I, and A104V, the measured Kd values were 1.46±0.38 M, 3.88±1.39 µM and 2.37±1.36 µM, indicating that as observed for NSP16, the variants either show values very close to wild-type NSP10 or display slightly better Kd values (0.37–0.99 fold). In summary, this signifies that the three variants have only marginal effects on the NSP10 binding affinity to NSP14 and NSP16 and show either the same or slightly improved affinities for complex formation. In no case did we observe a drop in affinity.
 
-## Variant T102I does not cause significant structural changes in NSP10
+### Variant T102I does not cause significant structural changes in NSP10
 
 Crystallization experiments were conducted for the three NSP10 variants but only T102I variant yielded protein crystals. The structure was determined by molecular replacement (Figure 4a and b) and refined to allow comparison with wild-type NSP10. Data collection and refinement statistics are shown in Table 2. Compared with native NSP10, T102I does not display any significant conformational changes. Both structures overlay with an RMSD of 0.26 Å (Figure 4c). Even locally, there are no structural changes in residues interacting with the T102I variant (Figure 4d). The only observable difference was the loss of a water bridge interaction between the hydroxyl group in the side chain of T102 and a water molecule (Figure 4d). This interaction is not present in the T102I mutant. Besides, there are also no structural changes in variant T102I.
+
+**Table 2.**
+ Data collection, data processing, and model refinement statistics for SARS-CoV-2 NSP10 variant T102I.Data in parenthesis correspond to the highest resolution shell.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection and refinement statistics</th>
+      <th>SARS-CoV-2 NSP10 variant T102I(PDB entry 8BZN)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9655</td>
+    </tr>
+    <tr>
+      <td>Resolution range [Å]</td>
+      <td>42.81–2.19 (2.269–2.19)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>I213</td>
+    </tr>
+    <tr>
+      <td>Unit cell parameters [Å;°]</td>
+      <td>a=b=c=104.867, α=β=γ=90</td>
+    </tr>
+    <tr>
+      <td>Molecules per asymmetric unit</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>23664 (1293)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>9432 (963)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>2.5 (2.6)</td>
+    </tr>
+    <tr>
+      <td>Completeness [%]</td>
+      <td>94.0 (97.8)</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma(I)</td>
+      <td>11.9 (2.2)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>40.45</td>
+    </tr>
+    <tr>
+      <td>R-meas [%]</td>
+      <td>6.6 (56.9)</td>
+    </tr>
+    <tr>
+      <td>Rpim [%]</td>
+      <td>3.8 (33.6)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 [%]</td>
+      <td>99.7 (72.4)</td>
+    </tr>
+    <tr>
+      <td>Reflections used in refinement</td>
+      <td>9432 (963)</td>
+    </tr>
+    <tr>
+      <td>Rcryst/Rfree [%]</td>
+      <td>17.8 (28.0/23.3 (35.6))</td>
+    </tr>
+    <tr>
+      <td>Total no. of non-hydrogen atoms (protein)</td>
+      <td>1005</td>
+    </tr>
+    <tr>
+      <td>No. of protein / ligand / solvent atoms</td>
+      <td>925 / 9 / 71</td>
+    </tr>
+    <tr>
+      <td>RMSD bond length, bond angles [Å;°]</td>
+      <td>0.012 / 1.04</td>
+    </tr>
+    <tr>
+      <td>RamachandranFavored / allowed / outliers / rotamer outliers [%]</td>
+      <td>95.9 / 4.1 / 0.0 / 1.0</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>4.38</td>
+    </tr>
+    <tr>
+      <td>Average B-factor / protein / ligands / solvent</td>
+      <td>44.8 / 44.7 / 55.3 / 45.6</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87884/elife-87884-fig4-v1.jpg)
 
 **Figure 4.:** (a) 2Fo-Fc map (1σ) of the NSP10-T102I variant. (b) Magnification of the I102 side chain in the electron density map. (c) Structural overlay of wild-type NSP10 (PDB entry 6ZCT; blue) and variant T102I (green). The position of T102I is illustrated as sticks (d) Overlay of T102 (blue) and I102 (green) side chains. The position of a water molecule present in wild-type NSP10 that makes interactions with the T102 side chain is shown. Zinc atoms are illustrated as grey spheres and water molecules are illustrated as red circles.
 
-## The wild-type and variants display similar conformational dynamics
+### The wild-type and variants display similar conformational dynamics
 
 A detailed comparison of the wild-type structure with that of the T102I variant structure did not reveal any obvious conformational differences. Thus, we performed enhanced sampling molecular dynamics simulations of the wild-type and the three T12I, T102I, and A104V variants. Well-tempered Metadynamics (WT-MetaD) introduces a time-dependent bias potential that is used to influence and accelerate the dynamics to explore conformations that were not previously visited. This ensures a fast spatial and temporal exploration of the Free Energy surface (FES) in the CV space. Comparing the differences in the free energy landscape sampled by the backbone dihedral angles of the wild-type and point mutations helps in understanding the structural changes induced by the mutations. The backbone dihedral angles contribute to the slow dynamics in proteins (Skliros et al., 2012, Naritomi and Fuchigami, 2013). A small number of low-frequency modes are sufficient to describe large fluctuations of a protein and significantly contribute to its conformational change. Besides describing the slow dynamics of a protein, we reasoned that the backbone dihedral angles will be independent of any changes introduced by the varying side chains of the mutations and will also be best suited to describe backbone entropy introduced by a point mutation. The choice of this CV has successfully been used to explore conformational changes in proteins (Barnes et al., 2018, Sangodkar et al., 2017, Taylor et al., 2019).
 
@@ -106,7 +287,11 @@ The most stable conformations were extracted and analyzed from the free energy m
 
 Studying and understanding the effects of novel variants of SARS-CoV-2 may provide a plausible explanation for the speed of spread, severity, and impact on immunity of COVID-19. Genome sequencing and alignments on SARS-CoV-2 genomic samples allow identifying variations in the viral genome and more specifically in the various viral proteins (van Dorp et al., 2020). The genome sequence data of SARS-CoV-2 is therefore highly valuable in studying the effects of mutations on the function of SARS-CoV-2.
 
-The results from the mutation screening indicate that all residues in NSP10 mutate, albeit with hugely different frequencies. There are only six unique positions in NSP10 that mutate, with an observed frequency greater than 0.1% (Figure 2b). The propensity of mutations for various SARS-CoV-2 genes (over the course of COVID19 pandemic) was further calculated using the changes in the number of amino acids observed in the variants of concern (VOC) as a reflection of functionally or adaptively successful mutations using the equation:MutationalPropensity=sumoftotalobservedaminoacidchangesinVOCLengthofprotein
+The results from the mutation screening indicate that all residues in NSP10 mutate, albeit with hugely different frequencies. There are only six unique positions in NSP10 that mutate, with an observed frequency greater than 0.1% (Figure 2b). The propensity of mutations for various SARS-CoV-2 genes (over the course of COVID19 pandemic) was further calculated using the changes in the number of amino acids observed in the variants of concern (VOC) as a reflection of functionally or adaptively successful mutations using the equation:
+
+$$
+MutationalPropensity=\frac{sumoftotalobservedaminoacidchangesinVOC}{Lengthofprotein}
+$$
 
 The propensities for all SARS-CoV-2 genes are shown in Figure 6. The results strongly suggest that NSP10, along with other cofactor proteins, have to date shown a lower propensity to mutation compared to the rest of the proteins. Consider spike protein for instance, 99,254 unique protein sequences have been identified in 2,111,175 quality controlled genomic sequences of SARS-CoV-2 available in the NCBI’s Genbank as of December 2022 (https://pandemics.okstate.edu/covid19/#methods). Similarly, for NSP3 115,373 unique protein sequences have been identified in 2,371,934 quality controlled genomic sequences, whereas for NSP10 only 735 unique protein sequences have been identified in 3,070,170 quality controlled genomic sequences. A plausible explanation of this could be because NSP10 acts as an essential cofactor and stimulator of NSP14 ExoN and NSP16 2’O-MTase activities. Any mutation that results in a structural change of NSP10 may alter its binding affinity to NSP14 and NSP16 and thereby affect their activities. This in turn may have an impact on the replication and survival of SARS-CoV-2. In addition, mutations in essential residues forming the two zinc finger domains in NSP10 may compromise structural integrity and therefore function.
 
@@ -126,33 +311,37 @@ In conclusion, we disclosed a full list of variants in SARS-CoV-2 NSP10 based on
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 10 kDa centrifuge filters were purchased from Sigma-Aldrich. Five ml HisTrap FF crude columns were bought from GE Healthcare. NuPAGE MES SDS Running Buffer (20 X), SeeBlue Plus2 Pre-stained Protein Standard, SimpleBlueTM SafeStain, NuPAGE Sample Reducing Agent (10 X), NuPAGE LDS Sample Buffer (4 X) and NuPAGENovex 4–12% Bis-Tris Protein Gels (1.0 mm 10 well) were obtained from Life Technologies. Quick StartTM Bradford 1 x Dye Reagent was from Bio-Raid. SnakeSkin Dialysis Tubing was purchased from Thermo Scientific. Linbro plates were bought from Hampton Research. NT. 115 premium capillaries were obtained from Nanotemper. NSP10 expression clones for mutants T12I, T102I, and A104V optimized for E. coli expression was purchased from Genscript.
 
-## Methods
+### Methods
 
-## Sequence retrieval
+#### Sequence retrieval
 
 Global Initiative Sharing All Influenza Data (GISAID) is an online repository that stores up-to-date genome sequences (https://www.gisaid.org) (Elbe and Buckland-Merrett, 2017, Khare et al., 2021, Shu and McCauley, 2017). In addition to Influenza virus data, GISAID also provides virological and epidemiological information regarding β-coronaviruses.(36) In this study, all genome sequences for SARS-CoV-2 were downloaded in FASTA format (Supplementary data). The sequences for NSP10 were then retrieved from the SARS-CoV-2 dataset and saved separately. The sequences for NSP10 with unknown residues (named X) were removed. Further analyses such as sequence alignment, mutation screening, and mutation effect studies were carried out on the remaining sequences. A workflow of the sequence retrieval and alignment is illustrated in Figure 2—figure supplement 3.
 
-## Sequence alignment
+#### Sequence alignment
 
-The sequence alignment between all WGS sequences and the Wuhan/WIV04/2019 reference genome was carried out in two phases. We first performed the sequence alignment using the CoVsurver application provided by GISAID (accessed on January 30, 2022 and totaled 7,070,539). The CoVsurver displayed the result of genome sequence alignments by listing all amino acid mutations at every location in the protein. In-house Python scripts were used to quantify this large dataset and identify all mutations in NSP10. The frequency in percentage for the top mutations in NSP10 was calculated using the following equation:%frequency=totalcountofmutationstotalnumberofsequences×100
+The sequence alignment between all WGS sequences and the Wuhan/WIV04/2019 reference genome was carried out in two phases. We first performed the sequence alignment using the CoVsurver application provided by GISAID (accessed on January 30, 2022 and totaled 7,070,539). The CoVsurver displayed the result of genome sequence alignments by listing all amino acid mutations at every location in the protein. In-house Python scripts were used to quantify this large dataset and identify all mutations in NSP10. The frequency in percentage for the top mutations in NSP10 was calculated using the following equation:
+
+$$
+%frequency=\frac{totalcountofmutations}{totalnumberofsequences}\times100
+$$
 
 The mutations detected in NSP10 were compiled into one Excel sheet (Figure 2—source data 1). From 1747 unique sequences, the top three variants were identified as T12I, T102I, and A104V, following which they were submitted for crystallographic structure determination.
 
 Just before the submission of the manuscript, we updated our sequence analysis (phase 2). A total of 13,032,424 sequences were analyzed (accessed on December 14, 2022). From this 2564 unique sequences were identified. The % frequency was reassessed, which again identified T12I, T102I, and A104V to be the highest occurring variants (Figure 2—source data 2). In this manuscript, we report on the updated sequence analysis.
 
-## Structural information for SARS-CoV-2 NSP10, NSP14, and NSP16
+#### Structural information for SARS-CoV-2 NSP10, NSP14, and NSP16
 
 The protein structures of native NSP10 (PDB entry 6ZCT; Rogstam et al., 2020), the NSP10-NSP14 complex (PDB entry 7MC5)(Moeller et al., 2022), and the NSP10-NSP16 complex (PDB entry 6W4H)(Rosas-Lemus et al., 2020) from SARS-CoV-2 were retrieved from the Protein Data Bank (PDB). The interface residues script (pymolwiki.org/index.php/InterfaceResidues) for Open-source-Pymol (https://github.com/bieniekmateusz/pymol-mdanalysis) was used to identify the interface residues between NSP10 and NSP14 and between NSP10 and NSP16. The identified interface residues are crucial to the binding of NSP10 to either NSP14 or NSP16 to form the NSP10-NSP14 and NSP10-NSP16 complexes (Bouvet et al., 2014).
 
-## Structural analysis
+### Structural analysis
 
 All trajectories were aligned to their crystal structure conformation using Moleculekit implemented in HTMD tools (Doerr et al., 2016). To visualize the structures representing each state, the structures collected from the PCCA distributions were loaded and superimposed in Pymol-mdanalysis (https://github.com/bieniekmateusz/pymol-mdnalysis). The structural analysis was performed using mdtraj (McGibbon et al., 2015) and MDAnalysis (Michaud-Agrawal et al., 2011). Figures capturing major conformational changes were generated using the Protein Imager (Tomasello et al., 2020). All plots were made using the matplotlib libraries (Hunter, 2007).
 
-## Subcloning, expression, and purification of NSP10 and its variants
+### Subcloning, expression, and purification of NSP10 and its variants
 
 Native NSP10 was subcloned, expressed, and purified as previously described (Rogstam et al., 2020). The expression vectors for variants T12I, T102I, and A104V in vector ppSUMO-2 were generated by introducing individual point mutations in the respective positions in the codon-optimized expression construct of wild-type NSP10, resulting in constructs coding for an N-terminal His-tag, followed by a SUMO tag, a ULP1 protease cleavage site, and the mutated NSP10 cDNA.
 
@@ -160,25 +349,25 @@ NSP10 mutants were expressed and purified as recently described for native NSP10
 
 Cell pellets were resuspended in lysis buffer (50 mM Sodium Phosphate pH 8.0, 300 mM NaCl, 20 mM Imidazole, and 1 mM PMSF) and sonicated for 10 rounds (30 s on 60 s off each round) on ice. Cell debris was removed by centrifugation at 20,000 rpm at 4 °C for 1 hr (Avanti J-E centrifuge from Beckman Coulter, rotor: JLA 25.50). The supernatant was collected and loaded onto a pre-equilibrated 5 ml His-Trap FF crude column. After washing the column with 250 ml wash buffer (50 mM Sodium Phosphate pH 8.0, 300 mM NaCl, 20 mM Imidazole), proteins were eluted with 100 ml elution buffer in 5 ml fractions (50 mM Sodium Phosphate, pH 8.0, 300 mM NaCl and 500 mM Imidazole). The elution fractions containing the nsp10 variant were pooled and divided into two protein samples to be treated differently. One protein sample was dialyzed in the final buffer (50 mM Tris pH 8.0 and 150 mM NaCl), concentrated to 50 mg/ml, and flash-frozen in liquid nitrogen before being stored at 80 °C for use in MST experiments. The second protein sample was dialyzed in dialysis buffer (0.1 mM Sodium Phosphate pH 8.0, 2 mM DTT, and 300 mM NaCl) with ULP1 protease overnight at 4 °C before being loaded to a second 5 ml His-Trap FF crude column followed by washing with 100 ml wash buffer. The flow-through and wash fractions containing cleaved NSP10 variants were both collected and pooled. Protein sample was dialyzed in dialysis buffer and then concentrated to 60 mg/ml.
 
-## Expression and purification of SARS-CoV-2 NSP14 and NSP16
+### Expression and purification of SARS-CoV-2 NSP14 and NSP16
 
 The N-terminal ExoN domain (residues 1–289; NSP141-289) of SARS-CoV-2 NSP14 was subcloned, expressed, and purified as previously described.(28) His-tagged ExoN was then pooled and cleaved overnight with ULP1 protease supplemented with 3 mM DTT. Simultaneous with the cleavage, the protein was also dialyzed against buffer containing 50 mM Tris pH 7.5 and 300 mM NaCl overnight. Thereafter, the protein was passed through the His-Trap column for a second time and washed with 50 mM Tris pH 7.5, 300 mM NaCl and 20 mM imidazole. The cleaved protein without His-SUMO tag was captured in the flow-through, which was then pooled and dialyzed for 18 hr in a buffer containing 50 mM HEPES pH 7.5 and 300 mM NaCl. Lastly, the protein was pooled and concentrated to 2 mg/mL, using an Amicon ultraconcentration device (Millipore) and prepared for MST assays. The expression clone of ppSUMO-2_SARS-CoV-2 NSP16 was obtained from Genscript. Expression was carried out in E. coli BL21-ArcticExpress (DE3)-RIL competent cells (Agilent Technologies, Santa Clara, CA, USA) in Terrific Broth modified medium (Melford, Chelsworth, UK) supplemented with 50 μg/ml kanamycin and 20 μg/ml gentamycin. Cultures were incubated at 37 °C, 220 rpm until the OD600 reached 0.6–1.0. NSP16 expression was induced by adding 1 mM IPTG and incubated at 10 °C, 220 rpm for 24–30 hr. Cells were harvested by centrifugation at 8000 g, 4 °C for 20 min. Cell pellets were resuspended in NSP16 buffer A (60 mM HEPES pH 7.0, 300 mM NaCl, 20 mM Imidazole and 1 mM PMSF), flash-frozen in liquid nitrogen, and stored at –80 °C.
 
 Cell pellets were thawed at room temperature and lysed by sonication on ice for 10 cycles (30 s on, 60 s off) with 16 μm amplitude. Cell debris was removed by centrifugation at 50,000 g, 4 °C for 1 hr. The supernatant was loaded into a HisTrap FF crude column (Cytiva, Uppsala, Sweden) pre-equilibrated with nsp16 buffer B (60 mM HEPES pH 7.0, 300 mM NaCl and 20 mM Imidazole). The column was washed with 50 CVs NSP16 buffer B, followed by eluting with 20 CVs NSP16 buffer C (60 mM HEPES pH 7.0, 300 mM NaCl, and 250 mM Imidazole). Samples containing NSP16 were pooled and furtherly purified through a HiLoad 16/600 Superdex 200 pg size exclusion column (Cytiva, Uppsala, Sweden) in nsp16 buffer D (60 mM HEPES pH 7.0, 300 mM NaCl and 1 mM DTT). Fractions containing pure nsp16 were pooled, aliquoted, flash-frozen in liquid nitrogen, and stored at –80 °C.
 
-## Protein crystallization
+### Protein crystallization
 
 Protein crystallization was performed in Linbro plates using the hanging drop method. All conditions were optimized using published crystallization conditions for native SARS-CoV-2 NSP10 (0.1 M Bis-Tris pH 5.5–6.5 and 1.8 M-2.4 M NaCl)(Moeller et al., 2022). Only NSP10 variant T102I formed crystals grown at 20 °C, whereas the other two variants did not yield any crystals, despite various attempts. Crystals were incubated in cryoprotectant solution for 5 min containing 1.2-fold of the reservoir solution supplemented with 20% DMSO, mounted in loops, flash frozen in liquid nitrogen, and stored in pucks in liquid nitrogen.
 
-## X-ray diffraction data collection, structure determination, and refinement
+### X-ray diffraction data collection, structure determination, and refinement
 
 Diffraction data for the NSP10 variant were collected automatically at ID30A-1 beamline at the European Synchrotron Radiation Facility (ESRF, France). For measurements, the beam size was adjusted to 50 µm to cover the entire crystal. A total of 230 images were collected with an oscillation range of 0.10° (23° in total). The data were processed with autoPROC to a resolution of 2.4 Å (Vonrhein et al., 2011). The structure was solved by molecular replacement with SARS-CoV-2 NSP10 as a search model (PDB entry 6ZCT) using PHASER-MR of the PHENIX suite (Adams et al., 2010). Electron density and difference density maps, all σA-weighted, were inspected, and the model was improved using Coot (Emsley et al., 2010). The structure was refined with PHENIX.(44) The calculation of Rfree used 5% of the data. Crystallographic and refinement statistics are provided in Table 1. In the NSP10 variant structure, there are no flexible regions, and the structure covers residues T7 to C130 and contains two zinc fingers.
 
-## Thermal shift assays (TSA)
+### Thermal shift assays (TSA)
 
 TSA assays were performed to compare the thermal stability of NSP10 variants with native NSP10. NSP10s were diluted to 120 μM using the appropriate buffer (50 mM Tris pH 8.0 and 150 mM NaCl) and mixed 1:1 with 20 x Sypro Orange Dye. Samples were distributed in 96-well PCR plates (40 µL samples each well) and sealed with transparent sealing film. The measurements were done in triplicate using a 7500 Real-Time PCR System (Thermo Fisher). The samples were heated from 25°C to 99°C at a rate of 1 °C/min. The data were analyzed using Applied Biosystems Protein Thermal Shift Software.
 
-## Determination of the NSP10-NSP16 and NSP10-NSP14 binding affinities using MicroScale Thermophoresis (MST)
+### Determination of the NSP10-NSP16 and NSP10-NSP14 binding affinities using MicroScale Thermophoresis (MST)
 
 His-tagged NSP16 was diluted to 400 nM in NSP16 buffer D and mixed with an equal volume of 100 nM RED-tris-NTA 2nd Generation labeling dye (NanoTemper Technologies GmbH, München, Germany). The mixture was incubated on ice for 1 hr and centrifuged at 15,000 g, 4 °C for 10 min to remove aggregates. An MST pre-test with 10 nM labeled sample was carried out to determine the labeling and sample quality. To determine the Kd values of native nsp10 and its three variants to nsp16, nsp10s were 2-fold serial diluted from 500 μM for 15 rounds in ligand buffer (50 mM Tris pH 8.0 and 150 mM NaCl). An equal volume of 20 nM labeled NSP16 was mixed with diluted samples and incubated on ice for 15 min prior to the measurements. All measurements were conducted by the Monolith NT.115 instrument using Monolith NT.115 Premium Capillaries. Binding affinity data was collected and measured by the MO.Control and MO.Affinity Analysis software.
 
@@ -186,15 +375,15 @@ Protein labeling was carried out by using NanoTemper Protein Labeling Kit RED-NH
 
 NSP141-289 was diluted to 20 nM using 1 x PBS-T buffer. Native NSP10 and the three variants were diluted to 500 µM. 20 µL NSP10 was transferred into the first well of a 96-well microplate. NSP10 was then diluted to final concentrations of 5E-1, 2.5E-1, 1.25E-1, 6.25E-2, 3.13E-2, 1.56E-2, 7.81E-3, 3.91E-3, 1.95E-3, 9.77E-4, 4.88E-4, 2.44E-4, 1.22E-4, 6.10E-5, 3.05E-5 and 1.53E-5 mM by serial dilution in 1 x PBS-T buffer. 10 µL of 20 nM NSP141-289 was added into each tube from 16 to 1 and mixed carefully. Monolith NT.115 premium capillaries were dipped into each tube from 1 to 16 and placed in positions 1–16 of the device tray for the measurements. Measurements were done in triplicate by using the Monolith NT.115 instrument (NanoTemper Technologies, Munich, Germany). The binding affinity tests for NSP14 ExoN and each NSP10 variant were repeated by the same procedure as carried out for native NSP10.
 
-## Effects of the variants on the stability of NSP10 and its complexes with NSP14 and NSP16
+### Effects of the variants on the stability of NSP10 and its complexes with NSP14 and NSP16
 
 Thermodynamics plays a critical role in examining the structural stability of proteins. In summary, such examination is achieved by comparing the free energies (∆G) of the wild-type and variant proteins; given that the two protein states, even of the same species, are likely to have very different free energies. The DynaMut2 algorithm predicts the effects of missense mutations on protein stability and dynamics (Rodrigues et al., 2021). It combines normal mode analysis to capture protein motion and graph-based signatures to represent the wild-type environment to assess the impact of point mutations on protein stability and dynamics, for example in our case, between wild-type and variant NSP10. It can accurately predict the effects of NSP10 variants by calculating the vibrational entropy and the Gibbs free energy changes of the variants. We further assessed the effects of single mutations in NSP10 on the protein-protein interactions in complexes using Mutabind2 software (Zhang et al., 2020). Mutabind2 predicts the effects of mutations by calculating the changes in binding affinities and binding free energies. Seven features are utilized, including those describing interactions of proteins with the solvent, evolutionary conservation of the site, and thermodynamic stability of the complexes. The output estimates whether the mutation will be detrimental to the complex.
 
-## Molecular dynamics set up
+### Molecular dynamics set up
 
 The crystal structure of NSP10 (PDB entry 6ZCT)(Rogstam et al., 2020) and NSP10-T102I variant (PDB entry 8BZN) were downloaded from the PDB and used as the starting geometry for wild-type and variant simulations, respectively. The high-throughput molecular dynamics (HTMD) protocol was employed to prepare the simulation systems (Doerr et al., 2016). The NSP10-T12I and NSP10-A104V variants, which we were unsuccessful in crystallizing, were generated from the wild-type by replacing the residues at position 12 and 104 using the HTMD package (Doerr et al., 2016). The protonation states for the side chains were calculated using proteinprepare implemented in the Moleculekit module (Martínez-Rosell et al., 2017). The protonated PDB file was subsequently adapted to the Zinc Amber force field (ZAFF) format by adopting the ZAFF nomenclature that best represented the coordination of the metal center (Peters et al., 2010). The system was then placed in a TIP3P waterbox whose edges were at least 10 Å from the solute atom (Price and Brooks, 2004) The systems were minimized with 5000 steps of steepest descent and equilibrated in the NPT ensemble for 5 ns. The Langevin thermostat and Berendsen barostat were used to keep the temperature at 300 K and pressure at 1 bar (Berendsen et al., 1984). Two independent simulations were run as replicates for each system, which included wild-type NSP10s (T12, T102 and A104) and the variant-type (T12I, T102I, and A104V). All the simulations were run using the ACEMD v3.5 MD engine (Harvey et al., 2009). The simulation protocol was identical for all simulations.
 
-## Free energy calculations using well-tempered metadynamics simulations
+### Free energy calculations using well-tempered metadynamics simulations
 
 Well-tempered metadynamics (WT-MetaD) simulations were run to study the influence of point mutations on finite sampling (Bonomi et al., 2009, Laio and Gervasio, 2008). The φ and ψ dihedral angles of the wild-type and point mutations (residues T12, T102, A104) were chosen as the collective variables for enhanced sampling simulations. The choice of the CVs was based on the observation that the slowest motions in a protein are a function of their backbone flexibility (Naritomi and Fuchigami, 2013, Skliros et al., 2012). The structural effects, resulting from the differences between the interactions of the wild-type and point mutation side chains should be observable in the dihedral angles.
 

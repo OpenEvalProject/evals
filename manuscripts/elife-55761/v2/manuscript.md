@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Anatomical similarity across the neocortex has led to the common assumption that the circuitry is modular and performs stereotyped computations. Layer 5 pyramidal neurons (L5PNs) in particular are thought to be central to cortical computation because of their extensive arborisation and nonlinear dendritic operations. Here, we demonstrate that computations associated with dendritic Ca 2+ plateaus in mouse L5PNs vary substantially between the primary and secondary visual cortices. L5PNs in the secondary visual cortex show reduced dendritic excitability and smaller propensity for burst firing. This reduced excitability is correlated with shorter apical dendrites. Using numerical modelling, we uncover a universal principle underlying the influence of apical length on dendritic backpropagation and excitability, based on a Na + channel-dependent broadening of backpropagating action potentials. In summary, we provide new insights into the modulation of dendritic excitability by apical dendrite length and show that the operational repertoire of L5PNs is not universal throughout the brain.
+Anatomical similarity across the neocortex has led to the common assumption that the circuitry is modular and performs stereotyped computations. Layer 5 pyramidal neurons (L5PNs) in particular are thought to be central to cortical computation because of their extensive arborisation and nonlinear dendritic operations. Here, we demonstrate that computations associated with dendritic Ca2+ plateaus in mouse L5PNs vary substantially between the primary and secondary visual cortices. L5PNs in the secondary visual cortex show reduced dendritic excitability and smaller propensity for burst firing. This reduced excitability is correlated with shorter apical dendrites. Using numerical modelling, we uncover a universal principle underlying the influence of apical length on dendritic backpropagation and excitability, based on a Na+ channel-dependent broadening of backpropagating action potentials. In summary, we provide new insights into the modulation of dendritic excitability by apical dendrite length and show that the operational repertoire of L5PNs is not universal throughout the brain.
 
 ## Introduction
 
@@ -32,31 +32,91 @@ If L5PNs indeed have a common repertoire of operations in support of canonical c
 
 We made whole-cell patch clamp recordings from ttL5 neurons in V1 and V2m in acutely prepared mouse brain slices. To ensure consistency in cell type, recordings were restricted to L5PNs projecting to the lateral posterior nucleus of thalamus (n = 117), identified using retrograde labelling with cholera toxin subunit B (CTB, Figure 1—figure supplement 1A–E), or to neurons labelled in the Colgalt2-Cre mouse line (n = 12) known to be ttL5 PNs (Groh et al., 2010; Kim et al., 2015). We were thus able to maintain cortical area as the primary variant when comparing V1 and V2m neurons (Figure 1—figure supplement 1F,G).
 
-## Thick-tufted layer 5 pyramidal neurons in V2m lack BAC firing
+### Thick-tufted layer 5 pyramidal neurons in V2m lack BAC firing
 
 To reproduce the conditions required for triggering BAC firing, we stimulated synaptic inputs near the distal tuft in L1 using an extracellular electrode in conjunction with somatic stimulation through the recording electrode (Figure 1A). To avoid recruiting inhibitory inputs during the extracellular stimulation and create the most favourable conditions to enable BAC firing (Pérez-Garci et al., 2006), we added the competitive GABAB receptor antagonist CGP52432 (1 µM) to the extracellular solution. Extracellular current pulses in L1 were adjusted to evoke either a subthreshold EPSP or a single action potential at the soma. Somatic injection of a 5 ms depolarizing current pulse through the recording electrode was used to trigger single APs. In V1 neurons, combined stimulation (with the L1 input triggered at the end of the somatic pulse) could evoke a prolonged plateau potential resulting in a burst of 3 APs. Cells were considered to be BAC firing if three or more APs could be evoked following combined somatic and L1 stimulation (each evoking no more than one AP individually). We repeated these experiments in ttL5 neurons located in V2m under the same recording conditions. Upon coincident somatic AP and extracellular L1 stimulation, BAC firing was almost never observed in V2m. In summary, BAC firing was observed in approximately half the recorded V1 neurons (10/21), while neurons in V2m showed an almost total lack of BAC firing (1/18, p = 4.6*10−3, Fisher’s exact test, Figure 1B).
 
-## Critical frequency ADP is diminished in V2m ttL5 neurons
+![Figure 1.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left: diagram of experimental configuration. Right: example traces during BAC firing protocol, recorded from V1 (red) and V2m (blue) ttL5 neurons. (B) Proportion of BAC firing neurons in V1 and V2m. (C) Left: diagram of experimental configuration. Right: example traces of V1 and V2m ttL5 neurons stimulated with 50 Hz and 120 Hz AP trains. Note the sustained after-depolarization following the 120 Hz spike train in the V1 neuron. Inset: ADP measured as the area between the 50 Hz trace and the higher frequency trace following the last spike. Inset scale bar: 5 ms x 5 mV. (D) Quantification of ADP area at each measured frequency for the example neurons in C. The peak integral value is highlighted in red. (E) Histogram of all recorded cells with defined critical frequency.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Coronal slice containing visual cortex and LP, showing the injection site and retrogradely labelled neurons (green), tdTomato-expressing Colgalt2-Cre neurons (magenta), a DAPI stain (blue), and neurons that have been filled with biocytin during intracellular recordings and stained with DyLight 594 (cyan). (B) Biocytin-filled ttL5 neuron in V2m. (C) Neighbouring tdTomato-expressing Colgalt2-Cre neurons. (D) CTB-labelled L5 neurons projecting to LP. (E) Composite image of the above. Arrowheads highlight two example cells labelled by both tdTomato and CTB. (F) Schematic of coronal sections, adapted from Franklin and Paxinos, 2007, showing approximate mediolateral locations of V1 (red) and V2m (blue) neurons recorded in the cfADP experiments (90 out of the 129 neurons recorded in total). For visualization, neurons were projected onto the closest of the five atlas sections shown. (G) Approximate anteroposterior locations of the neurons relative to bregma.
+
+### Critical frequency ADP is diminished in V2m ttL5 neurons
 
 To further investigate the prevalence of dendritic nonlinearities in ttL5 neurons across visual cortices, we recorded another hallmark of dendritic Ca2+ plateaus: a prominent somatic afterdepolarization (ADP) following a high-frequency train of somatic APs, termed critical frequency ADP or cfADP (Larkum et al., 1999a; Shai et al., 2015). We recorded the somatic membrane potential from ttL5 neurons and evoked three action potentials using 3 ms pulses of somatic current injection at frequencies ranging from 50 Hz to 200 Hz in 10 Hz increments (Figure 1C). In V1 neurons, increasing the AP frequency above a critical frequency typically resulted in a sudden increase in the ADP (Figure 1C, middle). However, when recording in V2m under the same experimental conditions, there was usually no change in ADP, even at firing frequencies as high as 200 Hz (Figure 1C, right). To quantify this effect, we aligned the peaks of the last AP for each frequency and measured the area of the ADP difference between the 50 Hz trace and the higher frequency traces in a 20 ms window (4–24 ms) following the last AP (Figure 1C, inset). This measure of ADP increased sharply above a critical frequency and was often largest around the value of this frequency (Figure 1D). For neurons with a defined critical frequency, the mean values in V1 (112 ± 31 Hz, n = 26) and in V2m neurons (109 ± 26 Hz, n = 11) did not differ significantly (p = 0.82; two-sample t-test; Figure 1E).
 
 Next, we measured the maximal ADP integral value for each cell (Figure 2A), regardless of the presence of a critical frequency. Neurons in V2m had significantly smaller ADP area (V1 mean = 91 ± 50 mV*ms, SD, n = 41; V2m mean = 42 ± 33 mV*ms, SD, n = 49; p = 4.54 * 10−6, D = 0.52; two-sample Kolmogorov-Smirnov test), reflecting that most of these cells lacked a critical frequency altogether. As there is considerable ambiguity regarding the extracellular Ca2+ concentration in vivo (Lopes and Cunha, 2019), we have used both 1.5 and 2 mM CaCl2 in the artificial cerebrospinal fluid (ACSF). Although some change in the magnitude of Ca2+ currents is expected, at the level of maximum ADP integral values there was no statistically significant difference between the two conditions in either V1 or V2m (p = 0.12, D = 0.36 for V1; p = 0.21, D = 0.29 for V2m; two-sample Kolmogorov-Smirnov test; Figure 2—figure supplement 1). Similarly, as there was no significant difference in the maximum ADP integral values across V2m neurons labelled retrogradely or by the Colgalt2-Cre line (p = 0.62, D = 0.24; two-sample Kolmogorov-Smirnov test, Figure 2—figure supplement 2), we pooled these populations. To obtain an unbiased count of cells showing cfADP, we classified the unlabelled maximum ADP values pooled from both V1 and V2m into two groups using k-means clustering with k = 2 (Figure 2A). The percentage of neurons with cfADP, as determined by the classification, was more than three times higher in V1 than in V2m (p = 2.6*10−5, Fisher’s exact test, Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig2-v2.jpg)
+
+**Figure 2.:** (A) Summary data of maximum ADP integral values for all recorded neurons. The dashed line denotes the division between the two groups of cells classified through k-means clustering; asterisk denotes p = 4.54 * 10−6, D = 0.52; two-sample Kolmogorov-Smirnov test. (B) Proportion of cells with cfADP in V1 and V2m. (C) Length of the apical trunk (soma to main bifurcation) plotted against the corresponding maximum ADP integral values. Dashed line is a linear fit (r2 = 0.154, p = 5.37*10-3, F-test); curves at the top and right are kernel density plots of the two variables in V1 and V2m; asterisk denotes p = 4.26*10−6, two-sample t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** p and D values are shown for a two-sample Kolmogorov-Smirnov test. All cells recorded during this study in 1.5 mM CaCl2 are included.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** p and D value are shown for a two-sample Kolmogorov-Smirnov test. All cells recorded during this study from Colgalt2-Cre animals are included.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative voltage traces for V1 and V2m neurons in response to 500 ms wide depolarizing current steps. The traces show stimulation at 60 pA (grey) and 180 pA (coloured or black) above rheobase for each cell. (B) Same as in A but for the detailed model with the long and short morphology. (C) Same as in A but for the reduced model with a trunk length of either 600 μm or 200 μm. (D) Quantification of a range of biophysical properties for both recorded and model neurons. Asterisk denotes p < 0.0083 (Bonferroni-corrected).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Full reconstructions of 6 neurons in V1 (top) and 7 neurons in V2m (bottom), labelled with CTB and filled with biocytin during recordings. Black: dendrites and soma. Green: axons. (B) Quantification of morphological parameters from the reconstructed neurons shown in A. Asterisk denotes p < 0.005 Bonferroni-corrected two-sample t-test. (C) Sholl analysis, showing number of dendritic intersections with concentric spheres in 10 μm increments from the soma.
+
 To establish parameters which may underlie the difference in dendritic Ca2+ electrogenesis between ttL5 neurons in V1 and V2m, we next characterized intrinsic properties of CTB labelled ttL5 neurons recorded during the cfADP experiments from V1 (n = 41) and V2m (n = 49; Figure 2—figure supplement 3A). The distribution of resting membrane potential, input resistance, sag amplitude, and rheobase were similar across the two populations (p > 0.05; two-sample t-test; Figure 2—figure supplement 3D). To capture a wide range of bursting behaviours, we devised a measure we termed the maximal burst ratio (see methods), where a high value represents strong bursting behaviour in a given neuron. In addition, we measured the number of spikes in the burst as well as the magnitude of the AHP immediately following the last spike in the burst. The maximal burst ratio, number of burst spikes, and measured AHP were significantly greater for V1 neurons than for V2m neurons (burst ratio: V1 = 12.9 ± 12.3 vs V2m = 5 ± 3.8, p = 6.1*10−5; burst spikes: V1 = 3 ± 0.7 vs V2m = 2.3 ± 0.6, p = 6.2*10−6; burst AHP: V1 = 17.9 ± 7 mV vs V2m = 13.6 ± 3 mV, p = 1.9*10−4, all two-sample t-tests; Figure 2—figure supplement 3D). Furthermore, neurons categorized as cfADP had significantly higher burst ratios (13.3 ± 11.9, n = 35 vs 5.7 ± 6.3, n = 55; for cfADP and non-cfADP neurons, respectively; p = 1.5*10−4, two-sample t-test) and more prominent AHP following the burst (17.9 ± 6.9 mV, n = 35 vs 14.1 ± 3.9 mV, n = 55; for cfADP and non-cfADP neurons, respectively; p = 1.6*10−3, two-sample t-test).
 
 These results show that under the same conditions and in the same operational ranges V2m ttL5 neurons have similar subthreshold, yet different firing properties compared to V1. Previous research has indicated the length of the apical trunk as a possible factor involved in determining the dendritic integrative capacity of ttL5 neurons in V1 (Fletcher and Williams, 2019). To test this, we reconstructed the apical trunk of 22 V1 and 26 V2m neurons from those recorded. Apical trunk lengths were significantly shorter in V2m than in V1 (V1 mean = 409 ± 64 µm, SD, n = 22 vs V2m mean = 313 ± 65 µm, SD, n = 26; p = 4.26*10−6, two-sample t-test, Figure 2C). Additionally, there was a correlation between maximum ADP integral values and apical trunk length across the two populations (p = 5.37*10−3; F-test). To further test how different aspects of morphology may affect our results, we created full morphological reconstructions of 6 V1 and 7 V2m recorded neurons (Figure 2—figure supplement 4A). Dendritic length and number of branchpoints for the tuft and basal dendrites as well as the number of oblique branches were similar between the two populations. Apical length, convex hull and largest Sholl radius, however, were significantly greater in the V1 neurons (p < 0.005 Bonferroni-corrected two sample t-test, Figure 2—figure supplement 4B,C). While dendritic signals typically attenuate with distance, these results suggest that there may be a counter-intuitive interaction between apical trunk length and dendritic Ca2+ electrogenesis in ttL5s – the further bAPs need to travel along the trunk, the more they can trigger Ca2+ plateaus.
 
-## BAC firing is absent in models of ttL5 neurons with short morphology
+### BAC firing is absent in models of ttL5 neurons with short morphology
 
 To investigate possible mechanisms underlying the dependence of bursting on apical trunk length, we ran numerical simulations in conductance-based compartmental models of ttL5 neurons. We first probed BAC firing in a morphologically detailed model developed by Hay et al., 2011, using the model parameters (biophysical model 3) and morphology (cell #1) favoured for reproducing BAC firing. As in the original paper, BAC firing was triggered by a 0.5 nA EPSC-like injection at the apical bifurcation coupled to a somatic action potential evoked by square-pulse current injection at the soma. Mirroring the responses seen in the subset of strongly bursting ttL5 neurons, coincident stimulation triggered BAC firing in the detailed model (Figure 3A, left). We then applied the same model parameters to an example V2m morphology with a shorter apical dendrite. The high density (‘hot’) Ca2+ zone was shortened to 100 µm to reflect the 50% reduction in apical trunk length and repositioned around the new apical branch point (350–450 µm from the soma vs 685–885 µm in the long morphology). Intrinsic properties of this shorter model remained within the physiological range (as well as within the range of V2m recordings; Figure 2—figure supplement 3D). The amplitude of the dendritic current injection in the shorter model (0.217 nA) was chosen to obtain the same EPSP amplitude (~6.2 mV) at the bifurcation in both model cells. With this short morphology from V2m, coincident tuft and somatic stimulation evoked only a single somatic spike and did not trigger a dendritic Ca2+ plateau (Figure 3A, right). To explore the sensitivity of Ca2+ plateaus to dendritic Ca2+ channel density in the long and short neurons, we scaled the total density of Ca2+ channels (gCa henceforth) to between 0 and 8 times their original quantities, while keeping the ratio of the two Ca2+ conductances (high voltage- and low voltage activated; HVA and LVA respectively) constant. The integral of the dendritic voltage at the bifurcation, acting as an indicator of the large and sustained depolarization during a Ca2+ plateau, increased proportionally to gCa in the long morphology. In the short morphology, however, the voltage integral stayed low across all gCa values (Figure 3B), consistent with the absence of Ca2+ plateaus. The underlying Ca2+ currents, while scaling with gCa, were 4 orders of magnitude smaller in the model with short morphology (Figure 3—figure supplement 1A). To explore if Ca2+ plateaus were at all possible in the short neuron model, we systematically changed both the dendritic current injection (range: 0.02–0.5 nA, the value used in the long morphology) and the time difference between the somatic and dendritic stimulus (range:± 20 ms). The current injection threshold of dendritic Ca2+ electrogenesis showed an asymmetric U-shaped relationship in the long morphology, as expected (Figure 3—figure supplement 1B; Larkum et al., 1999b). In the short morphology, Ca2+ plateaus could only be evoked by the largest coincident current injections (0.5 nA, ± 1 ms). While during the largest dendritic injection the evoked dendritic potential was substantially larger than in the long morphology, it resulted in only a small depolarization at the soma and no somatic spike burst was triggered when combined with a somatic spike (Figure 3—figure supplement 1C). Next we tested if the largest coincident dendritic injection (0.5 nA, ± 1 ms) could evoke BAC firing in the short morphology when combined with increased Ca2+ conductance. While the dendritic voltage integral scaled similarly to the long morphology, showing active contribution of Ca2+ currents (Figure 3—figure supplement 1D), the short neuron model never exhibited BAC firing. To further ensure comparability between the models with long and short morphology, dendritic electrogenesis was probed across a broad range of hot zone sizes (range: 50–200 µm) and different HVA:LVA ratios (range: 100:1 – 1:10). Neither the length of the hot zone (Figure 3—figure supplement 2C,F) nor the HVA:LVA ratio (Figure 3—figure supplement 2D) had a substantial effect on the difference between long and short morphologies in dendritic Ca2+ electrogenesis, BAC firing, or on somatic ADP measures (Figure 3—figure supplement 2). These results indicate that, although the size of the Ca2+ plateau depends on gCa, and to some extent on hot zone length and on the ratio of HVA and LVA channels, these factors alone are not sufficient to enable BAC or critical frequency firing in short neurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig3-v2.jpg)
+
+**Figure 3.:** (A) Left: detailed morphology of a ttL5 neuron from the model favoured by Hay et al., 2011 for reproducing BAC firing. Right: reconstructed morphology of the ttL5 neuron from V2m. Injected current and recorded voltage traces are shown for the soma (black), the apical trunk (blue, 400 and 200 µm from the soma), and the main bifurcation (red, 620 and 370 µm from the soma) under three different stimulation paradigms. (B) Integral of voltage at the branch point during coincident somatic and branch point stimulation, plotted against relative gCa. (C) Left: diagram of the reduced neuron model. Apical trunk length 600 μm. Injected current and recorded voltage traces as in A. Right: Same for a version of the reduced model modified to have an apical trunk length of 200 μm. (D) Heat map representing the normalised tuft voltage integral during combined somatic and tuft stimulation in the reduced model, plotted against the absolute density of Ca2+ channels in the tuft compartment and the length of the apical trunk compartment. Default gCa ≅ 0.45 mS/cm2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Calcium current densities at the apical bifurcation during coincident stimulation for different relative levels of tuft gCa (as in Figure 3B). N.B. there is a factor of 104 difference in scale between the traces for the long and short morphology. (B) Smallest dendritic current required to trigger a Ca2+ plateau in the long and short detailed models during coincident stimulation with different time intervals between the somatic and dendritic stimuli. Ca2+ plateau threshold: 1.25 μA/cm2. (C) Voltage traces for the short morphology during the strongest stimulation (Δt = 0; 0.5 nA). (D) Integral of the voltage at the apical bifurcation of the long and short models during the strongest stimulation (Δt = 0; 0.5 nA) with different levels of tuft gCa. (E) Same as in A, but for the reduced model. Trunk lengths of 300 μm and lower did not elicit Ca2+ plateaus for any amplitude of current injection.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Voltage traces recorded from different parts of the long neuronal morphology containing either a 200 μm (as in the original), or 100 μm long Ca2+ hot zone in the distal apical trunk. (B) Same as in A, but for the short morphology. (C) Integral of the voltage at the distal recording electrode during coincident stimulation for long and short morphologies with different sizes of Ca2+ hot zone sizes. The red points indicate the model parameters used in Figure 3. (D) As in C, but with different ratios of HVA to LVA Ca2+ conductances. The red points indicate the model parameters used in Figure 3. (E) Dendritic and somatic voltage traces during high-frequency somatic stimulation (120 Hz). The cfADP was measured as the integral (relative to the resting potential) in a 50 ms window following the last spike. Inset: magnification of quantified cfADP area (scale bar: 20 ms x 20 mV). (F) Quantification of cfADP integral shown in E for different Ca2+ hot zone sizes. The red points indicate the model parameters used in Figure 3.
 
 Next we set out to explore the effect of altered apical trunk length in isolation from complex interactions found in biological morphologies. Dendritic arbours can be usefully reduced to a small set of equivalent compartments where spatial detail is abstracted away while the essential electrotonic divisions of the neuron are maintained. We selected an existing reduction (Bahl et al., 2012) of the Hay et al., 2011 model for use in all subsequent in silico experiments. While altering apical trunk length in the reduced model, conductances were redistributed with the same decay constant to account for the change in apical length (see Materials and methods). Intrinsic properties remained within the physiological range as well as within the range of V1 and V2m recordings following these changes (Figure 2—figure supplement 3D). As with the morphologically detailed model, the reduced model (with the originally published parameters) displayed BAC firing triggered by coincident tuft and somatic stimulation (Figure 3C, left). Shortening the apical trunk was sufficient to eliminate this response (Figure 3C, right). As with the detailed model, the current injection threshold of dendritic Ca2+ electrogenesis at different inter-stimulus intervals showed an asymmetric U-shaped relationship that diminished with shorter trunk lengths (Figure 3—figure supplement 1E).
 
 We explored the dependence of BAC firing on apical trunk length and gCa by measuring the time-integral of tuft voltage as an indicator of Ca2+ plateau potentials (Figure 3D). The presence of a Ca2+ plateau depended strongly on apical trunk length and was only sensitive to gCa above a critical length of approximately 350 µm (≅ 0.35 λ). Below this length, no Ca2+ plateaus were triggered regardless of how high gCa was set to. These experiments show that a reduced model can also reproduce our results, allowing us to explore and dissect the underlying parameters in more detail.
 
-## Active propagation enhances voltage in long dendrites
+### Active propagation enhances voltage in long dendrites
 
 To obtain a better understanding of what causes the length dependence of bursting, we made recordings from the final segment of the apical trunk as well as the tuft using the reduced model of Figure 3C. To recreate the experimental conditions of Figure 1C, we triggered 3 spikes at 100 Hz through somatic current injection. As with coincident bAP and tuft input, increasing the length of the apical trunk facilitated dendritic Ca2+ plateau initiation (Figure 4A). Interestingly, the width and peak voltage in the tuft increased steadily with dendritic length (Figure 4B,C), even in the absence of Ca2+ conductances (gCa = 0). In the presence of voltage-gated Ca2+ channels, the increased amplitude of bAPs triggered a large all-or-none Ca2+ plateau above a certain threshold length.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of the simulation: stimulation site in the somatic compartment and recording sites at the distal end of the apical trunk (blue) and in the centre of the tuft (red). Stimulus shown in black. Solid lines: gCa = 0; dashed lines: original gCa. (B) Peak voltage reached in trunk (blue) and tuft (red) for a range of simulations with different trunk lengths. Length constant λ = 1009 µm. (C) Same as in B but plotting the width of the depolarization measured 2 mV above baseline. (D, E) Peak voltage, width, and integral values measured in the trunk and tuft for dendrites containing different Na+ channel densities in the apical trunk.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Backpropagation of a somatic spike elicited through a single 3 ms wide 2 nA square current step at the soma in a model neuron with 600 μm apical trunk length. Voltage recordings at different distances along the trunk. (B) Peak voltage and width measured at different absolute distances (same relative) for active model neurons. Width was measured as the interval between the voltage values 2 mV above baseline membrane potential. Shading indicates models with different apical trunk lengths. (C) Same as in B but with all voltage-dependent conductances removed from the trunk and tuft compartments. Inset: length constant (λ) for different trunk lengths. The slope of the linear fit was not significantly different from 0, indicating that voltage attenuation is independent of trunk length (r2 = 0.008; p = 0.89, F-test).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Same experiments as in Figure 3A but with uniform distribution of all active conductances in the apical trunk. Total conductance was maintained for each channel.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Plots of peak voltage, width and integral of bAPs under different relative gHCN (shades) in the tuft, both in the presence (dashed) or absence (solid) of Ca2+ channels. (B) Same as A, but varying gHCN in both tuft and trunk compartments. (C) Slope of tuft voltage vs apical trunk length plotted at different gHCN (from panel B) or gNa (from Figure 4E) values. (D) Threshold length for dendritic Ca2+ electrogenesis at different gHCN values. N.B. there is no dendritic Ca2+ electrogenesis under 0.91 gNa (marked with asterisk). Simulations were run in 5 µm trunk length and 1% conductance steps.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Plots of peak voltage, width, and voltage integral reached in the tuft and the last segment of the trunk for varying values of trunk length and axial resistance (Ra). Default Ra ≅ 382.22 Ω∙cm. The stimulus and recording conditions were the same as in Figure 4A, with 3 APs at 100 Hz triggered in the somatic compartment. Solid lines show simulations with gCa = 0, while dashed lines show the same simulations with the original gCa = 0.45 mS/cm2.
 
 We found that bAP amplitude in the tuft increased as a function of apical trunk length despite a decreasing bAP amplitude in the distal segment of the trunk (Figure 4B). Conversely, the width of the bAP (measured 2 mV above baseline to capture the long tail in the voltage response without contamination by spiking events) increased in both the tuft and trunk with length (Figure 4C). While waveform broadening is a natural consequence of passive filtering along dendrites, the sustained voltage in the distal trunk required active dendritic propagation. In the reduced model, this active propagation in the apical trunk was mediated primarily by voltage-gated Na+ channels. Removing these channels caused a substantial reduction in peak voltage and width of the depolarization in the distal trunk, and importantly also abolished the trend of increasing tuft voltages with longer dendritic trunks (Figure 4D,E). More generally, active propagation caused bAPs to be larger and broader at all distances along a long dendrite compared to the same absolute distances in shorter dendrites (Figure 4—figure supplement 1A,B). Consequently, when comparing the final positions along the trunk, the peak voltage is only marginally smaller in long dendrites despite the larger distance from the soma. This is not the case in a passive dendrite, where voltage attenuation depends almost exclusively on distance and not trunk length (Figure 4—figure supplement 1C), bar the end-effect in the last segment. We next tested how the specific distribution of active conductances affected the results. When all the various conductances were uniformly distributed along the apical trunk, the waveforms did not substantially change, and the enhanced voltage continued to trigger Ca+ plateaus only in neurons with long apical trunks (Figure 4—figure supplement 2). We have also tested the specific contribution of the H-current (Ih). Reducing Ih (i.e. gHCN) either in the tuft alone, or both in the trunk and tuft resulted in a slower increase of tuft depolarization, width and voltage integral with apical trunk length (Figure 4—figure supplement 3A and B). Crucially, tuft peak voltage remained positively correlated with apical trunk length even after the total removal of Ih (i.e. had positive slope), contrary to changes observed with varying the amount of sodium current in the apical trunk (Figure 4—figure supplement 3C). Furthermore, dendritic Ca2+ electrogenesis remained dependent on apical trunk length, albeit with the actual threshold length tracking the changes in Ih (Figure 4—figure supplement 3D). It has previously been suggested that axial resistance (Ra) in the apical dendrite may influence the backpropagation efficiency in dendrites and burstiness of ttL5 neurons (Fletcher and Williams, 2019). To test this hypothesis, we measured peak voltage and width in the trunk and tuft for different trunk lengths under different Ra conditions. We found that peak tuft voltage increased with increasing trunk Ra, reaching the highest voltage near the reduced model’s original value, and decreasing again for higher values (Figure 4—figure supplement 4). However, in these simulations both width and voltage integral increased monotonically with trunk length regardless of the specific value of Ra in both the tuft and the last segment of the trunk. This indicates that, although important, Ra is not the primary determinant for generating the length-dependent effect and if Ra indeed correlates with length, these effects may combine to further enhance the tuft voltage in long neurons. These results show that the general phenomenon of enhanced voltage propagation in longer dendrites resulting in amplification of tuft voltage does not depend on any of the particular model parameters above.
 
@@ -64,7 +124,7 @@ While it might seem counterintuitive that peak tuft voltage is increasing when t
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55761/elife-55761-fig5-v2.jpg)
 
-**Figure 5.:** 2+ electrogenesis.(A) Different width voltage steps (i) or same width under differing tuft membrane capacitance conditions (ii) injected into the trunk (blue). Recorded tuft voltage in red, Vrest = −65 mV. (B) Peak voltage values reached in the tuft for a range of trunk step widths and tuft capacitances. In the original model, tuft Cm ≅ 1.75 µF/cm2. (C) Same as in A but showing voltage steps of different width and amplitude with the same voltage integral in the trunk. For smaller integrals (i) the voltage remains subthreshold while for larger integrals (ii), the tuft voltage crosses the threshold for a Ca2+ plateau. (D) Voltage and width combinations for square voltage steps in the distal trunk which result in a Ca2+ plateau in the tuft. Coloured dots represent the value combinations illustrated in C. Grey lines indicate width and amplitude combinations with equal integral.
+**Figure 5.:** (A) Different width voltage steps (i) or same width under differing tuft membrane capacitance conditions (ii) injected into the trunk (blue). Recorded tuft voltage in red, Vrest = −65 mV. (B) Peak voltage values reached in the tuft for a range of trunk step widths and tuft capacitances. In the original model, tuft Cm ≅ 1.75 µF/cm2. (C) Same as in A but showing voltage steps of different width and amplitude with the same voltage integral in the trunk. For smaller integrals (i) the voltage remains subthreshold while for larger integrals (ii), the tuft voltage crosses the threshold for a Ca2+ plateau. (D) Voltage and width combinations for square voltage steps in the distal trunk which result in a Ca2+ plateau in the tuft. Coloured dots represent the value combinations illustrated in C. Grey lines indicate width and amplitude combinations with equal integral.
 
 Overall, it is the combination of increased width and a relatively small reduction in amplitude through active backpropagation that resulted in a trunk voltage integral that increased with trunk length, thereby passing more charge to the adjacent tuft compartment. When active backpropagation was reduced or absent, the trunk integral and resulting tuft voltage decreased with length (Figure 4D,E). The voltage integral in the distal trunk thus seemed to approximately determine the peak tuft voltage. To test this, we applied voltage-clamp to the end of the trunk and injected square steps with a range of integrals obtained through various combinations of width and amplitude (Figure 5C). This revealed a zone above a critical trunk integral for which many different width and depolarization combinations were sufficient to evoke a Ca2+ plateau in the tuft (Figure 5D). At the boundary of this Ca2+ plateau-evoking zone, iso-integral lines crossed asymmetrically into subthreshold combinations of width and depolarization. These results show that it is the complex interplay of width and amplitude with the tuft time constant that enables dendritic Ca2+ electrogenesis.
 
@@ -92,33 +152,162 @@ Our findings thus challenge the commonly held notion that the neocortex is compo
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6, male)</td>
+      <td>Colgalt2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:MMRRC_036504-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6)</td>
+      <td>Rbp4-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:MMRRC_031125-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6)</td>
+      <td>Ai14</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa Fluor 488-conjugated Cholera toxin subunit B (CTB)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat.# C34775</td>
+      <td>0.8% w/v</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP-52432</td>
+      <td>Tocris</td>
+      <td>Cat.# 1246</td>
+      <td>1 μM in ACSF</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DyLight 594-conjugated streptavidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat.# 21842</td>
+      <td>2 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Biocytin hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# B1758</td>
+      <td>0.5% w/v</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# D9542</td>
+      <td>5 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2018a</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.6</td>
+      <td></td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td></td>
+      <td>RRID:SCR_008058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON simulation environment 7.7.1</td>
+      <td>Carnevale and Hines, 2006</td>
+      <td>RRID:SCR_005393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida 360</td>
+      <td>MBF Bioscience</td>
+      <td>RRID:SCR_001775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6.37</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroMatic 2.5</td>
+      <td>Rothman and Silver, 2018</td>
+      <td>RRID:SCR_004186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal experiments were prospectively approved by the local ethics panel of the Francis Crick Institute (previously National Institute for Medical Research) and the UK Home Office under the Animals (Scientific Procedures) Act 1986 (PPL: 70/8935). Transgenic male mice were used; Tg(Colgalt2-Cre)NF107Gsat (RRID:MMRRC_036504-UCD, referred to as Colgalt2-Cre (also known as Glt25d2-Cre); n = 11 animals) and Tg(Rbp4-Cre)KL100Gsat (RRID:MMRRC_031125-UCD; n = 8 animals) lines were created through the Gensat project (Gerfen et al., 2013; Groh et al., 2010) and crossed with the Ai14 reporter line expressing tdTomato (RRID:IMSR_JAX:007908). As only male mice are transgenic in the Colgalt2-Cre line, all experiments were done on male animals. Animals were housed in individually ventilated cages under a normal 12 hr light/dark cycle.
 
-## Surgical procedures
+### Surgical procedures
 
 Surgeries were performed on mice aged 3–7 weeks using aseptic technique under isoflurane (2–4%) anaesthesia. Following induction of anaesthesia, animals were subcutaneously injected with a mixture of meloxicam (2 mg/kg) and buprenorphine (0.1 mg/kg). During surgery, the animals were head-fixed in a stereotactic frame and a small hole (0.5–0.7 mm) was drilled in the bone above the injection site. Alexa Fluor 488-conjugated Cholera toxin subunit B (CTB, 0.8% w/v, Invitrogen) was injected using a glass pipette with a Nanoject II (Drummond Scientific) delivery system at a rate of 0.4 nL/s. Injections of 100–200 nL were targeted to the lateral posterior (LP) thalamic nucleus, with stereotactic coordinates: 2.2–2.5 mm posterior to bregma, 1.45 lateral of the sagittal suture, 2.45 mm deep from the cortical surface. To reduce backflow, the pipette was left in the brain approximately 5 min after completion of the injection before being slowly retracted.
 
-## Slice preparation
+### Slice preparation
 
 Male mice (6–12 weeks old) were deeply anaesthetised with isoflurane and decapitated. In mice that were injected with CTB, this occurred at least 3 weeks after the injection. The brain was rapidly removed and placed in oxygenated ice-cold slicing ACSF containing (in mM): 125 sucrose, 62.5 NaCl, 2.5 KCl, 1.25 NaH2PO4, 26 NaHCO3, 2 MgCl2, 1 CaCl2, 25 dextrose; osmolarity 340–350 mOsm. Coronal slices (300 µm thick) containing visual cortex were prepared using a vibrating blade microtome (Leica VT1200S or Campden 7000smz-2). Slices were immediately transferred to a submerged holding chamber with regular ACSF containing (in mM): 125 NaCl, 2.5 KCl, 1.25 NaH2PO4, 26 NaHCO3, 1 MgCl2, 1.5 or 2 CaCl2, 25 dextrose; osmolarity 308–312 mOsm. The holding chamber was held in a water bath at 35°C for the first 30–60 min after slicing and was kept at room temperature (22°C) for the remaining time (up to 12 hr) after that. All solutions and chambers were continuously bubbled with carbogen (95% O2/5% CO2).
 
-## Electrophysiology
+### Electrophysiology
 
 After the 35°C incubation period, individual slices were transferred from the holding chamber to the recording chamber, where they were perfused at a rate of ~6 mL/min with regular ACSF (see above) continuously bubbled with carbogen and heated to 35 ± 1°C. Borosilicate thick-walled glass recording electrodes (3–6 MΩ) were filled with intracellular solution containing (in mM): 115 CH3KO3S, 5 NaCl, 3 MgCl2, 10 HEPES, 0.05 EGTA, 3 Na2ATP, 0.4 NaGTP, 5 K2-phosphocreatine, 0.5% w/v biocytin hydrochloride, 50 µM Alexa Fluor 488 hydrazide; osmolarity 290–295 mOsm; pH 7.3. To restrict recordings to ttL5 neurons, visually guided whole-cell patch-clamp recordings were made from neurons in layer 5 of medial V2 (V2m) and V1 that were fluorescently labelled with either CTB (n = 117 neurons) or with tdTomato (for Colgalt2-Cre mice, n = 12 neurons). Visual areas were defined based on approximate stereotaxic coordinates (Franklin and Paxinos, 2007; see Figure 1—figure supplement 1). All recordings were made in current-clamp mode. Extracellular monopolar stimulation was achieved by passing a DC current pulse (0.1–1 ms, 20–320 µA) through a glass patch-clamp pipette with a broken tip (~20 µm diameter) using a constant current stimulator (Digitimer DS3). Current was passed between two silver/silver chloride (Ag/AgCl) wires: one inside the pipette, which was filled with recording ACSF, and the other coiled around the outside of the pipette. In experiments using extracellular stimulation, 1 µM CGP52432 was added to the ACSF.
 
-## Immunohistochemistry and morphological reconstructions
+### Immunohistochemistry and morphological reconstructions
 
 After recording, slices were fixed overnight at 4°C in a 4% formaldehyde solution and were subsequently kept in PBS. For immunohistochemical detection, the fixed slices were first incubated for 1–2 hr at room temperature in blocking solution containing 0.5% Triton X-100% and 5% Normal Goat Serum (NGS) in PBS. Slices were then washed twice (10 min each) in PBS and incubated overnight in a staining solution containing 0.05% Triton X-100, 0.5% NGS, DyLight 594-conjugated streptavidin (2 µg/ml). Slices were then washed in PBS (3 times, 5 min each) and stained with DAPI (5 µg/ml) for 10 min. After another wash (3 times, 5 min each), slices were mounted on glass slides and images were acquired with a confocal microscope (Leica SP5, objective: 20x/0.7NA or 10x/0.4NA, pinhole size: 1 airy unit). The images were used to reconstruct the apical dendrites with Neurolucida 360 (MBF bioscience). For the detailed morphological analysis, a subset of neurons, selected based on the quality and completeness of staining, was reconstructed in full through the LMtrace service of https://ariadne.ai/lmtrace.
 
-## Data acquisition and analysis
+### Data acquisition and analysis
 
 Recorded signals were amplified and low-pass filtered through an 8 kHz Bessel filter using a MultiClamp 700B amplifier (Molecular Devices). Filtered signals were then digitized at 20 kHz with a National Instruments DAQ board (PCIe-6323). Acquisition and stimulus protocols were generated in Igor Pro with the Neuromatic software package (Rothman and Silver, 2018). Further analysis and data visualization were performed with custom macros and scripts written in Igor Pro and MATLAB (MathWorks). Confocal images were processed with Fiji (https://fiji.sc/). Classification of cfADP data in Figure 2 and related Figure 2—figure supplements 2 and 3 was done using the built-in MATLAB function kmeans(X,k) with k = 2. Raincloud plots (consisting of a scatter plot, a box plot, and a gaussian kernel density plot) were generated in MATLAB using published scripts (Allen et al., 2019). All box plots presented show the median, interquartile range, 2nd and 98th percentile of the dataset.
 
 Sag amplitude was calculated as the difference between peak and steady-state voltage during a current step leading to ~10 mV hyperpolarization. As bursting is typically defined based on the instantaneous firing rate, which is the reciprocal of the inter-spike interval (ISI), we devised a measure, termed burst ratio, as the largest ratio of two consecutive ISIs in any given current step. Because the strongest burst occurs at different current steps for different cells, we report the maximal burst ratio across all current steps. A long ISI preceded by a relatively short one indicates that the firing rate has instantaneously gone from high to low (as occurs at the end of a burst). Thus, the higher the maximal burst ratio, the stronger the burst. This ISI-based bursting measure allowed us to reliably quantify burst strength independently of other related factors such as the number of spikes in the burst or the amount of current required to elicit a burst.
 
-## Modelling
+### Modelling
 
 Simulations were performed with the NEURON simulation environment (7.7.1, Carnevale and Hines, 2006) embedded in Python 3.6. To model the consequences of morphological differences between V1 and V2m ttL5 neurons, we used existing models of ttL5 pyramidal cells with either accurate morphological detail (biophysical model 3, cell #1 from Hay et al., 2011), referred to as detailed model) or simplified multicompartment morphologies (Ca2+ enriched model 2 from Bahl et al., 2012, referred to as reduced model). To study the effect of morphology in the detailed model, biophysical model 3 from Hay et al., 2011 was applied to the reconstructed morphology of an example ttL5 neuron in V2m (which has a substantially shorter apical trunk than the morphology used in the original model). Each morphology contained a hot zone in a 100–200 µm long region around the main apical bifurcation, with 100 times higher low-voltage-activated (LVA) and 10 times higher high-voltage-activated (HVA) Ca2+ channel densities (same as in Hay et al., 2011).
 

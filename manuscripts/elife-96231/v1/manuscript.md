@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03dbr7087 Division of Clinical and Computational Neuroscience, Krembil Brain Institute, University Health Network and Department of Physiology, University of Toronto Toronto Canada
+1. Division of Clinical and Computational Neuroscience, Krembil Brain Institute, University Health Network and Department of Physiology, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 

@@ -90,7 +90,7 @@ Here, we aimed to determine the effects of HIV on the immune response to SARS-Co
 
 ## Results
 
-## HIV infection is associated with higher disease severity in the Beta variant infection wave
+### HIV infection is associated with higher disease severity in the Beta variant infection wave
 
 We initiated a longitudinal observational cohort study to enroll and track patients with a positive COVID-19 qPCR test presenting at three hospitals in Durban, South Africa. Patients presented due to either COVID-19 symptoms or because they were known contacts of a confirmed COVID-19 case.
 
@@ -100,6 +100,259 @@ Up to May 2021, 236 participants were enrolled in the study, for a total of 986 
 
 Out of 236 study participants, 93 (39%) were PLWH (Table 1) and 89% of study participants were of African descent. PLWH were significantly younger than HIV uninfected participants. Hypertension, diabetes and obesity, known risk factors for more severe COVID-19 disease (Zhou et al., 2020; the Northwell COVID-19 Research Consortium et al., 2020), were common: Hypertension and obesity were present in 24%, and 42% of study participants respectively, a similar prevalence to that reported in the province of KwaZulu-Natal where this study was performed (van Heerden et al., 2017; Malaza et al., 2012). Diabetes prevalence in our study was 18%, compared to 13% reported for South Africa (Federation, 2019). Hypertension and diabetes were significantly lower in the PLWH group (Table 1). 28 or 30% of PLWH were HIV viremic at any point in the study. For individuals on ART, median ART duration was 9 years. ART regimen was determined by liquid chromatography with tandem mass spectrometry (LC-MS/MS) and was predominately efavirenz (EFV) based, with some participants transitioning to a dolutegravir (DTG) based regimen. In addition, there was a small subset of PLWH on a ritonavir boosted lopinavir (LPV/r) as well as other ART combinations. About 12% of PLWH had no detectable ART despite a clinical record of ART, or were ART naive (Supplementary file 3). The absolute CD4 T cell count and the CD4 to CD8 T cell ratio was significantly lower in PLWH relative to HIV negative participants at enrollment. The incidence of active TB and the fraction of participants with a history of TB were much higher in the PLWH group (Table 1).
 
+**Table 1.**
+ Participant characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All (n=236)</th>
+      <th>HIV- (n = 143, 60.6%)</th>
+      <th>HIV+ (n=93, 39.4%)</th>
+      <th>Odds ratio (95% CI)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age years, median (IQR)</td>
+      <td>45 (35–57)</td>
+      <td>49 (35–62)</td>
+      <td>41 (35–50)</td>
+      <td>-</td>
+      <td>0.003*</td>
+    </tr>
+    <tr>
+      <td>Male sex, n (%)</td>
+      <td>82 (34.7)</td>
+      <td>48 (33.6)</td>
+      <td>34 (36.6)</td>
+      <td>1.1 (0.7–2.0)</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>Current smoker, n (%)</td>
+      <td>13 (5.5)</td>
+      <td>4 (2.8)</td>
+      <td>9 (9.7)</td>
+      <td>3.7 (1.2 – gt10)</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>Comorbidity, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypertension#, n=235</td>
+      <td>57 (24.1)</td>
+      <td>42 (29.4)</td>
+      <td>15 (16.1)</td>
+      <td>0.5 (0.2–0.9)</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>42 (17.8)</td>
+      <td>32 (22.4)</td>
+      <td>10 (10.8)</td>
+      <td>0.4 (0.2–0.9)</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>Obesity#, n=221</td>
+      <td>91 (42.3)</td>
+      <td>64 (47.1)</td>
+      <td>27 (29.0)</td>
+      <td>0.6 (0.3–1.0)</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>Active TB</td>
+      <td>10 (4.2)</td>
+      <td>1 (0.7)</td>
+      <td>9 (9.7)</td>
+      <td>&gt;10</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>History TB</td>
+      <td>32 (13.6)</td>
+      <td>3 (2.1)</td>
+      <td>29 (31.2)</td>
+      <td>&gt;10</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>HIV associated parameters</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV viremic, n (% of all HIV)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>28 (30.1)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Years ART, median (IQR)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>9.4 (3.9–13.2)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CD4 cells/μL median (IQR) n=221</td>
+      <td>633 (326–974)</td>
+      <td>887 (534–1148)</td>
+      <td>464 (200–702)</td>
+      <td>-</td>
+      <td>&lt;0.0001*</td>
+    </tr>
+    <tr>
+      <td>CD4/CD8</td>
+      <td>1.2 (0.8–1.7)</td>
+      <td>1.6 (1.2–2.1)</td>
+      <td>0.8 (0.4–1.1)</td>
+      <td>-</td>
+      <td>&lt;0.0001*</td>
+    </tr>
+    <tr>
+      <td>Disease severity, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asymptomatic</td>
+      <td>33 (14.0)</td>
+      <td>25 (17.5)</td>
+      <td>8 (8.6)</td>
+      <td>0.4 (0.2–1.0)</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>Ambulatory with symptoms</td>
+      <td>128 (54.2)</td>
+      <td>80 (55.9)</td>
+      <td>48 (51.6)</td>
+      <td>0.8 (0.5–1.4)</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>Supplemental oxygen</td>
+      <td>62 (26.3)</td>
+      <td>30 (21.0)</td>
+      <td>32 (34.4)</td>
+      <td>2.0 (1.1–3.5)</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>Death</td>
+      <td>13 (5.5)</td>
+      <td>8 (5.6)</td>
+      <td>5 (5.4)</td>
+      <td>1.0 (0.3–2.9)</td>
+      <td>&gt;0.99</td>
+    </tr>
+    <tr>
+      <td>COVID-19 treatment, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Corticosteroids</td>
+      <td>74 (31.2)</td>
+      <td>47 (32.9)</td>
+      <td>27 (29.0)</td>
+      <td>0.8 (0.5–1.5)</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>Anticoagulants</td>
+      <td>53 (22.5)</td>
+      <td>35 (24.5)</td>
+      <td>18 (19.4)</td>
+      <td>0.7 (0.4–1.4)</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>Symptom, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sore throat</td>
+      <td>88 (37.3)</td>
+      <td>55 (38.5)</td>
+      <td>33 (35.5)</td>
+      <td>0.9 (0.5–1.5)</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>Runny nose</td>
+      <td>53 (22.5)</td>
+      <td>30 (21.0)</td>
+      <td>23 (24.7)</td>
+      <td>1.2 (0.7–2.3)</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>Cough</td>
+      <td>153 (64.8)</td>
+      <td>91 (63.6)</td>
+      <td>62 (66.7)</td>
+      <td>1.1 (0.7–2.0)</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>History of fever#, n=235</td>
+      <td>58 (24.7)</td>
+      <td>29 (20.3)</td>
+      <td>29 (31.2)</td>
+      <td>1.8 (1.0–3.3)</td>
+      <td>0.063</td>
+    </tr>
+    <tr>
+      <td>Shortness of breath</td>
+      <td>148 (62.7)</td>
+      <td>87 (60.8)</td>
+      <td>61 (65.6)</td>
+      <td>1.2 (0.7–2.1)</td>
+      <td>0.49</td>
+    </tr>
+  </tbody>
+</table>
+
+_p-value calculated via 2-sided Fisher’s Exact test, except for * which was calculated via Mann-Whitney U test. # Not including pregnancy or unable to be measured._
+
 A minority of study participants (14%) were asymptomatic and presented at the hospital because of a close contact with a confirmed COVID-19 case. To include the asymptomatic participants in our analysis, we used time from diagnostic swab as our timescale, which was tightly distributed for symptomatic participants relative to symptom onset at a median of 3 to 4 days apart (Supplementary file 2).
 
 The majority of participants in the study (54%) had symptoms but did not progress beyond mild disease, defined here as not requiring supplemental oxygen during the course of disease and convalescence. Twenty-six percent of participants required supplemental oxygen but did not die and 6% of participants died. Our cohort design did not specifically enroll critical SARS-CoV-2 cases. The requirement for supplemental oxygen, as opposed to death, was therefore our primary measure for disease severity.
@@ -108,19 +361,212 @@ There was a significant difference in the frequency of participants requiring su
 
 To determine if the fraction of participants requiring supplemental oxygen differed between the first infection wave and the Beta variant dominated second infection wave, we compared disease severity between the first infection wave (Figure 1, Supplementary file 4), and the second infection wave (Figure 1, Supplementary file 5). In the first infection wave, there was no significant difference in the fraction of participants requiring supplemental oxygen between HIV-negative and PLWH participants (Supplementary file 4, p=0.5). However, significantly more PLWH required supplemental oxygen in the second wave (Supplementary file 5, odds ratio of 4.0 with 95% CI of 1.6–10.4, p=0.005). Comparing within the HIV-negative and PLWH groups, there was only a moderate increase in the fraction of participants requiring supplemental oxygen between SARS-CoV-2 infection wave 1 and infection wave 2 in HIV-negative participants (19% to 25%) which was not significant (Figure 1). In contrast, the number of PLWH participants requiring supplemental oxygen more than doubled from 24% to 57% (p=0.0025, Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig1-v3.jpg)
+
+**Figure 1.:** p=0.0025 by Fisher’s Exact test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) HIV viremia was calculated as the number of study timepoints in wave 1 or wave 2 with HIV RNA > 200 copies/ml divided by all measured timepoints for PLWH. (B) The fraction of timepoints with no detectable ART was calculated as the number of study timepoints in wave 1 or wave 2 where the concentration of none of the ART components was above level of quantification divided by the number of timepoints where ART was measured. p-values are * <0.05; ** <0.01; *** < 0.001, **** < 0.0001 as determined by Fisher’s Exact test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Disease severity was scored on a 3 point scale, where 1: asymptomatic, 2: mild, and 3: supplemental oxygen or death. EFV: efavirenz-based regimen. LPV: Lopinavir based regimen.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Plotted are the CD4 T cell count distributions for HIV negative, HIV ART suppressed, and HIV viremic participants. X-axis is the median CD4 count over all study visits, and y-axis is relative frequency of participants as percentage.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) HIV viremia was calculated as the number of study timepoints with HIV RNA > 200 copies/ml divided by all measured timepoints for PLWH. (B) The fraction of timepoints with no detectable ART was calculated as the number of study timepoints where the concentration of none of the ART components was above level of quantification divided by all measured PLWH timepoints. No significance for comparison in (A) or (B) as determined by Fisher’s Exact test.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Number of participants remaining SARS-CoV-2 positive by qPCR with time as a function of CD4 count. (B) Number of participants remaining SARS-CoV-2 positive by qPCR with time as a function of HIV status. Time is days post-diagnostic swab. Only participants who were tested with two conclusive tests result (either SARS-CoV-2 positive or negative) during the time-period were included.
+
 To examine whether the differences in the requirement for supplemental oxygen in PLWH were because of differences in the level of HIV control between waves, we examined the fraction of timepoints where participants showed HIV viremia. We excluded low level viremia and set the threshold at VL > 200 HIV RNA copies/mL (Ryscavage et al., 2014). Furthermore, we determined whether ART was detectable in the blood by LC-MS/MS. Second wave participants had approximately twofold higher fraction of timepoints where HIV viremia was detected (Figure 1—figure supplement 1A). In agreement with this, the fraction of participants with no detectable ART in the blood was also about twofold higher (Figure 1—figure supplement 1B). These observations are consistent with diminished suppression of HIV in second wave PLWH enrolled in this study. The specific HIV regimen had no discernible effect on disease severity (Figure 1—figure supplement 2).
 
 We compared comorbidities and other characteristics between the PLWH and HIV negative participants on supplemental oxygen (Table 2). Strikingly, the median age of PLWH on supplemental oxygen was 21 years younger relative to HIV negative (41 versus 62, p=0.003). PLWH had significantly lower frequency of comorbidities which are usually associated with more severe COVID-19 disease: both hypertension (p=0.03) and diabetes (p=0.03) were lower. In contrast, the median CD4 T cell count across all study visits was lower in PLWH (277 versus 339), although this difference did not reach statistical significance (p=0.07). There was no significant difference in the fraction of participants treated with corticosteroids (p=0.2).
+
+**Table 2.**
+ Characteristics by HIV status of participants requiring supplemental oxygen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All (n=68)</th>
+      <th>HIV- (n = 35, 51.5%)</th>
+      <th>HIV+ (n=33, 48.5%)</th>
+      <th>Odds ratio (95% CI)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age years, median (IQR)</td>
+      <td>51 (38–64)</td>
+      <td>62 (47–66)</td>
+      <td>41 (36–56)</td>
+      <td>-</td>
+      <td>0.003*</td>
+    </tr>
+    <tr>
+      <td>Male sex, n (%)</td>
+      <td>25 (36.8)</td>
+      <td>12 (34.3)</td>
+      <td>13 (39.4)</td>
+      <td>1.2 (0.5–3.3)</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Current smoker, n (%)</td>
+      <td>2 (2.9)</td>
+      <td>1 (2.9)</td>
+      <td>1 (3.0)</td>
+      <td>1.1 (&lt;0.1 – &gt;10)</td>
+      <td>gt0.99</td>
+    </tr>
+    <tr>
+      <td>Comorbidity, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>26 (38.2)</td>
+      <td>18 (51.4)</td>
+      <td>8 (24.2)</td>
+      <td>0.3 (0.1–0.8)</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>17 (25.0)</td>
+      <td>13 (37.1)</td>
+      <td>4 (12.1)</td>
+      <td>0.2 (0.1–0.8)</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>Obesity#, n=57</td>
+      <td>23 (40.4)</td>
+      <td>11 (31.4)</td>
+      <td>12 (36.4)</td>
+      <td>1.8 (0.6–5.1)</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Active TB</td>
+      <td>6 (8.8)</td>
+      <td>1 (2.9)</td>
+      <td>5 (15.2)</td>
+      <td>6.1 (0.9 – &gt;10)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>History TB</td>
+      <td>16 (23.5)</td>
+      <td>2 (5.7)</td>
+      <td>14 (42.4)</td>
+      <td>12.2 (2.7 – &gt;10)</td>
+      <td>lt0.001</td>
+    </tr>
+    <tr>
+      <td>HIV associated parameters</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV viremic, n (% of all HIV)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>9 (27.3)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Years ART, median (IQR)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>11.6 (6.1–13.3)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CD4 cells/μL median (IQR) n=65</td>
+      <td>309 (170–545)</td>
+      <td>339 (227–592)</td>
+      <td>277 (134–461)</td>
+      <td>-</td>
+      <td>0.072*</td>
+    </tr>
+    <tr>
+      <td>COVID-19 treatment, n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Corticosteroids</td>
+      <td>43 (63.2)</td>
+      <td>25 (71.4)</td>
+      <td>18 (54.5)</td>
+      <td>0.5 (0.2–1.3)</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Anticoagulants</td>
+      <td>31 (45.6)</td>
+      <td>18 (51.4)</td>
+      <td>13 (39.4)</td>
+      <td>0.6 (0.2–1.6)</td>
+      <td>0.34</td>
+    </tr>
+  </tbody>
+</table>
+
+_p-value calculated via two-sided Fisher’s Exact test, except for * which was calculated via Mann-Whitney U test. # Not including pregnancy or unable to be measured._
 
 Interestingly, when comparing HIV-negative participants requiring supplemental oxygen to those not requiring supplemental oxygen (Supplementary file 6), those on supplemental oxygen were significantly older (62 versus 47 years, p=0.002), and had significantly higher frequency of hypertension (p=0.002) and diabetes (p=0.02). This differed from PLWH, where differences in age and comorbidities were not significant between PLWH requiring supplemental oxygen and those not (Supplementary file 7), although there was a trend to a higher frequency for hypertension (p=0.1).
 
 HIV viremic participants showed lower CD4 counts relative to HIV suppressed or HIV negative participants (Figure 1—figure supplement 3). Surprisingly, there was no difference in either the fraction of HIV viremic timepoints or fraction of timepoints where ART was not detected in the blood between the group of PLWH requiring supplemental oxygen and the no supplemental oxygen group (Figure 1—figure supplement 4). We also analyzed the time of SARS-CoV-2 clearance as a function of CD4 count and HIV status and found that while participants with a low CD4 count (<200) showed a trend of longer time to SARS-CoV-2 clearance (p=0.11), HIV viremia had no effect (Figure 1—figure supplement 5). Hence, while the PLWH enrolled in the second wave had both worse control of HIV infection and had a higher fraction requiring supplemental oxygen, we did not observe that the PLWH requiring supplemental oxygen had a higher frequency of HIV viremia.
 
-## SARS-CoV-2 has differential effects on CD4 count and the neutrophil to lymphocyte ratio between infection waves in PLWH
+### SARS-CoV-2 has differential effects on CD4 count and the neutrophil to lymphocyte ratio between infection waves in PLWH
 
 We next determined whether the increased disease severity in PLWH in infection wave two was reflected in the cellular immune response to SARS-CoV-2 infection. We therefore examined the CD4 count and NLR, both known to be strongly associated with disease severity. We used a three-point scale for disease severity, where 1: asymptomatic, 2: mild, and 3: supplemental oxygen (at any point in the study) or death. Death was merged with supplemental oxygen because of the small number of participants who died, and was not excluded in any of the subsequent analyses.
 
 As expected, we observed a significant decrease in CD4 T cell count at the highest severity which included disease that required administration of supplemental oxygen and/or resulted in death (Figure 2A, see Figure 2—figure supplement 1 for all data points and number of data points per graph).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig2-v3.jpg)
+
+**Figure 2.:** (A) The concentration of CD4 T cells in the blood in all participants in all infection waves and at all timepoints as a function of disease severity. Disease severity was scored as 1: asymptomatic, 2: mild, and 3: on supplemental oxygen or death. CD4 counts in PLWH (B) and HIV negative (C) participants in wave 1 versus wave 2 during active SARS-CoV-2 infection and after SARS-CoV-2 clearance. (D) Neutrophil to lymphocyte ratio (NLR) in the blood in all participants in all infection waves and at all timepoints as a function of disease severity. NLR in PLWH (E) and HIV negative (F) participants in wave 1 versus wave 2 during active SARS-CoV-2 infection and after SARS-CoV-2 clearance. SARS-CoV-2 positive indicates a timepoint where SARS-CoV-2 RNA was detected. Data shown as violin plots with median and IQR, with the median denoted below each plot. Fold-change in the second wave versus first wave is indicated, with arrow denoting direction of change. p-values are * <0.05; ** <0.01; *** < 0.001, **** < 0.0001 as determined by Kruskal-Wallis test with Dunn's multiple comparison correction or by Mann-Whitney U test. Plots scales were restricted to highlight changes close to the median.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The concentration of CD4 T cells in the blood in all participants in all infection waves and at all time-points as a function of disease severity. Disease severity was scored as 1: asymptomatic, 2: mild, and 3: requiring supplemental oxygen and/or death. CD4 counts in PLWH (B) and HIV negative (C) participants in wave 1 versus wave 2 during active SARS-CoV-2 in during active SARS-CoV-2 infection and after SARS-CoV-2 clearance. (D) Neutrophil to lymphocyte ratio (NLR) in the blood in all participants in all infection waves and at all time-points as a function of disease severity. NLR in PLWH (E) and HIV-negative (F) participants in wave 1 versus wave 2 during active SARS-CoV-2 in during active SARS-CoV-2 infection and after SARS-CoV-2 clearance. SARS-CoV-2 positive indicates a timepoint where SARS-CoV-2 RNA was detected in the upper respiratory tract. Data shown as violin plots with median and IQR, with the median also denoted below each plot. Fold-change in the second wave versus first wave is indicated by the number above the second wave data, with arrow denoting direction of change. p-values are * <0.05; ** <0.01; *** < 0.001, **** < 0.0001 as determined by Kruskal-Wallis test with Dunn's multiple comparison correction for the left plots or by Mann-Whitney U test for the other data.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The fraction of measured timepoints at which HIV viremia was detected in infection wave 1 (left bars) or infection wave 2 (right bars) during active SARS-CoV-2 infection (SARS+) or convalescence (SARS-). HIV viremia was calculated as the number of study timepoints in wave 1 or wave 2 with HIV RNA > 200 copies/ml divided by all measured timepoints for PLWH. (B) The fraction of measured timepoints at which no ART was detected in infection wave 1 (left bars) or infection wave 2 (right bars) during active SARS-CoV-2 infection (SARS+) or convalescence (SARS-). The fraction of timepoints with no detectable ART was calculated as the number of study timepoints in wave 1 or wave 2 where the concentration of none of the ART components was above level of quantification divided by all measured PLWH timepoints.
 
 We then asked whether PLWH in infection wave two showed different CD4 T cell responses to SARS-CoV-2. Since decreased CD4 count could be due to HIV infection alone, we separated the data into timepoints when SARS-CoV-2 was detectable by qPCR and after SARS-CoV-2 was cleared. Upon SARS-CoV-2 clearance, the immune response of convalescent participants should start the return to baseline, and differences due to SARS-CoV-2 should decrease and reflect HIV mediated effects only.
 
@@ -130,9 +576,17 @@ The NLR had a remarkably similar pattern. An elevated NLR associated strongly wi
 
 The observed recovery of the CD4 count may result from improved access to ART due to the hospital visit in wave 2. We therefore checked whether the fraction of HIV viremic participants decreased upon convalescence and whether there was an associated decrease in the number of PLWH with undetectable ART. We observed no significant differences in either viremia or fraction of PLWH with undetectable ART in either wave between timepoints which were SARS-CoV-2 positive and those that were negative (Figure 2—figure supplement 1). This indicates that the increase in the CD4 was not due to better linkage to care after the hospital visit but rather due to SARS-CoV-2 clearance.
 
-## Differences in the frequencies and associations of immune cell subsets in PLWH and HIV-negative participants
+### Differences in the frequencies and associations of immune cell subsets in PLWH and HIV-negative participants
 
 To examine differences in immune cell subset associations between HIV-negative and PLWH participant groups, we conducted detailed phenotyping of immune cells using longitudinal fresh PBMC samples and correlated these to measured phenotypes and clinical parameters in both HIV-negative and PLWH groups (Figure 3; see Figure 3—figure supplement 1 for gating strategies). We used established approaches for gating of cell subsets (Sanz et al., 2019; Khodadadi et al., 2019). This was only performed for the first wave participants, where cells were available for additional phenotyping by flow cytometry.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig3-v3.jpg)
+
+**Figure 3.:** Spearman rank correlation values ($ρ$) are shown from red (1.0) to blue (−1.0). p-values per correlation are *< 0.5; **< 0.01; ***< 0.001. The number of matched pairs for HIV negative participants ranged from 77 to 229 and for PLWH from 48 to 164. Rectangles represent regions where a set of correlations is present in one group and absent in the other. Black dashed lines represent the divide between clinical and cellular parameters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67397/elife-67397-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Gating of T cell subsets. Live CD3+ cells were gated into CD4+ and CD8+ subsets, which were further divided based on CXCR3, HLA-DR, and PD-1 for CD8 T cells and CXCR3, CCR7, HLA-DR, and PD-1 for CD4 T cells. (B) Gating of B cell subsets. Live CD19+ cells were subdivided into memory, naive, and antibody secreting cells (ASC) based on CD27 and CD38. ASC were further subdivided into plasma cells and plasmablasts based on CD138. (C) Gating of NK cell subsets. Live CD19- CD3- cells were subdivided into CD56+ NK cells, which were further gated into CD56hiCD16- regulatory and CD56+CD16+ cytotoxic NK cell subsets.
 
 For HIV-negative participants, there were significant negative and positive correlations between CD4 T cell parameters, and between these and the CD8 T cell count and phenotypes (Figure 3, yellow box). There were negative correlations between CD4 and the CD8 CCR7+ T cell phenotype and CD56+CD16+ NK cells (purple box). The fraction of NK cells positively correlated with the CXCR3 fraction of CD4 T cells, with HLA-DR on CD8 T cells, and with PD-1 on both cell types (purple box). In addition, there were correlations between CD8 T cell count and CD19 B cell parameters, such as fractions of naÏve and memory B cells (red box). Interestingly, disease severity as well as the CD4/CD8 ratio showed correlations with B cell parameters, including the frequency of antibody secreting cells (ASC), which were lost in PLWH (orange box).
 
@@ -162,22 +616,22 @@ In summary, PLWH showed increased disease severity mostly restricted to the seco
 
 ## Materials and methods
 
-## Ethical statement and study participants
+### Ethical statement and study participants
 
 The study protocol was approved by the University of KwaZulu-Natal Institutional Review Board (approval BREC/00001275/2020). Adult patients (>18 years old) presenting at King Edward VIII, Inkosi Albert Luthuli Central, or Clairwood Hospitals in Durban, South Africa, between June 2020 to May 2021, diagnosed to be SARS-CoV-2 positive as part of their clinical workup and able to provide informed consent were eligible for the study. Written informed consent was obtained for all enrolled participants.
 
-## Clinical laboratory testing
+### Clinical laboratory testing
 
 An HIV rapid test and viral load quantification was performed from a 4 ml EDTA tube of blood at an accredited diagnostic laboratory (Molecular Diagnostic Services, Durban, South Africa) using the RealTime HIV negative1 viral load test on an Abbott machine. CD4 count, CD8 count, and a full blood count panel were performed by an accredited diagnostic laboratory (Ampath, Durban, South Africa). Depending on the volume of blood which was drawn, the CD8, CD4, and full blood count was not available for every participant, and numbers performed are detailed in the figure legends.
 
-## qPCR detection of SARS-CoV-2
+### qPCR detection of SARS-CoV-2
 
 RNA was extracted from combined oropharyngeal and nasophryngeal swabs from 140 μl viral transport medium using the QIAamp Viral RNA Mini kit (cat. no. 52906, QIAGEN, Hilden, Germany) according to manufacturer’s instructions, and eluted into 100 μl AVE buffer. To detect SARS-CoV-2 RNA, 5 μl RNA was added to the TaqPath 1-step RT-qPCR mastermix. 3 SARS-CoV-2 genes (ORF1ab, S and N) were amplified using the TaqPath COVID-19 Combo Kit and TaqPath COVID-19 CE-IVD RT-PCR Kit (ThermoFisher Scientific, Massachusetts, United States) in a QuantStudio 7 Flex Real-Time PCR system (ThermoFisher Scientific). Data was analyzed using the Design and Analysis software (ThermoFisher Scientific). For positive samples, Ct values are represented as the average of the Ct values of all three genes. A sample was scored positive where at least two out of the three genes were detected, and inconclusive if only one of the genes was detected.
 
-## PBMC isolation and immune phenotyping by flow cytometry
+### PBMC isolation and immune phenotyping by flow cytometry
 
 PBMC were isolated by density gradient centrifugation using Histopaque 1077 (Sigma-Aldrich, St. Louis, Missouri, United States) and SepMate separation tubes (STEMCELL Technologies, Vancouver, Canada). For T cell and NK cell phenotyping, 106 fresh PBMCs were surface stained in 50 microliter antibody mix with the following antibodies from BD Biosciences (Franklin Lakes, NJ, USA): anti-CD45 Hv500 (1:100 dilution, clone HI30, cat. 560777); anti-CD8 BV395 (1:50 dilution, clone RPA-T8, cat. 563795); anti-CD4 BV496 (1:25 dilution, clone SK3, cat. 564651); anti-PD1 BV421 (1:50 dilution, clone EH12.1, cat. 562516); anti-CXCR3 PE-CF594 (1:25 dilution, clone 1C6/CXCR3, cat. 562451). The following antibodies were from BioLegend (San Diego, CA, USA): anti-CD19 Bv605 (1:100 dilution, clone HIB19, cat. 302244); anti-CD16 Bv650 (1:50 dilution, clone 3G8, cat. 302042); anti-CD56 Bv711 (1:50 dilution, clone HCD56, cat. 318336); anti-CD3 Bv785 (1:25 dilution, clone OKT3, cat. 317330); anti-CXCR5 FITC (1:25 dilution, clone J252D4, cat. 356914); anti-HLA-DR PE (1:50 dilution, clone L243, cat. 307606); anti-CCR7 PerCP-Cy5.5 (1:25 dilution, clone G043H7, cat. 353220); anti-CD38 PE-Cy7 (1:25 dilution, clone HIT2, cat. 303516); anti-ICOS APC (1:25 dilution, clone C398.4A, cat. 313510) and anti-CD45RA AF700 (1:25 dilution, clone HI100, cat. 304120). PBMCs were incubated with antibodies for 20 min at room temperature. For B-cell phenotyping, the following antibodies were used: (all from BioLegend) anti-CD45 APC (1:25 dilution, clone HI30, cat. 304012); anti-CD3 Bv711 (1:50 dilution, clone OKT3, cat. 317328), anti-CD14 Bv711 (1:25 dilution, clone M5E2, cat. 301838); anti-CD19 Bv605 (1:50 dilution, clone HIB19, cat. 302244); anti-CD27 Hv500 (1:50 dilution, clone O323, cat. 302836); anti-CD38 PE-Cy7 (1:25 dilution, clone HIT2, cat. 303516) and anti-CD138 BV785 (1:25 dilution, clone MI15, cat. 356538). Cells were then washed twice in PBS and fixed in 2% paraformaldehyde and stored at 4°C before acquisition on FACSAria Fusion III flow cytometer (BD) and analyzed with FlowJo software version 9.9.6 (Tree Star). Depending on the volume of blood which was drawn, full phenotyping was only available for participants where sufficient blood was available for the assay.
 
-## Statistical analysis
+### Statistical analysis
 
 Data is described with the non-parametric measures of median and interquartile range, and significance determined using the non-parametric Mann-Whitney U test for pairwise comparisons, Fisher Exact test for pairwise comparisons of frequencies, and the Kruskal-Wallis test with multiple comparison correction by the Dunn Method for comparisons involved more than two populations. All tests were performed using Graphpad Prism eight or Stata software.

@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Cognitive Science, Johns Hopkins University Baltimore United States
-2. https://ror.org/00za53h95 Department of Psychological and Brain Sciences, Johns Hopkins University Baltimore United States
+1. Department of Cognitive Science, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Psychological and Brain Sciences, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -34,9 +34,120 @@ We found that social-affective features predict action similarity judgments bett
 
 ## Results
 
-## Disentangling visual, action, and social-affective features in natural videos
+### Disentangling visual, action, and social-affective features in natural videos
 
 We curated two sets of naturalistic three-second videos of everyday actions from the Moments in Time dataset (Monfort et al., 2020). The videos were selected from a larger set, ensuring that features of interest were minimally correlated. 18 common activities based on the National Bureau of Labor Statistics’ American Time Use Survey (ATUS, 2019) were represented (Table 1; see section ‘Behavior: Stimuli’). The two stimulus sets contained 152 videos (eight videos per activity and eight additional videos with no agents, included to add variation in the dataset, see section ‘Behavior: Stimuli’) and 65 videos (three or four videos per activity), respectively. The second set was used to replicate behavioral results in a separate experiment with different stimuli and participants.
+
+**Table 1.**
+ Activities from the American Time Use Survey (ATUS) included in each of the two stimulus sets, with the amount of daily hours spent performing each activity and the corresponding verb labels from the Moments in Time dataset.Note that control videos were only included in the first dataset. Fighting and hiking were added for variation in valence and action setting.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity</th>
+      <th>Hours</th>
+      <th>Verb labels (Moments in Time)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Childcare/taking care of children</td>
+      <td>0.37</td>
+      <td>Crying, cuddling, feeding, giggling, socializing</td>
+    </tr>
+    <tr>
+      <td>Driving</td>
+      <td>1.17</td>
+      <td>Driving, socializing</td>
+    </tr>
+    <tr>
+      <td>Eating</td>
+      <td>1.06</td>
+      <td>Chewing, eating</td>
+    </tr>
+    <tr>
+      <td>Fighting</td>
+      <td></td>
+      <td>Fighting</td>
+    </tr>
+    <tr>
+      <td>Gardening</td>
+      <td>0.17</td>
+      <td>Gardening, mowing, planting, shoveling, weeding</td>
+    </tr>
+    <tr>
+      <td>Grooming</td>
+      <td>0.68</td>
+      <td>Bathing, brushing, combing, trimming, washing</td>
+    </tr>
+    <tr>
+      <td>Hiking</td>
+      <td></td>
+      <td>Hiking</td>
+    </tr>
+    <tr>
+      <td>Housework</td>
+      <td>0.53</td>
+      <td>Cleaning, dusting, repairing, scrubbing, vacuuming</td>
+    </tr>
+    <tr>
+      <td>Instructing and attending class</td>
+      <td>0.22</td>
+      <td>Instructing, teaching</td>
+    </tr>
+    <tr>
+      <td>Playing games</td>
+      <td>0.26</td>
+      <td>Gambling, playing+fun, playing+videogames, socializing</td>
+    </tr>
+    <tr>
+      <td>Preparing food</td>
+      <td>0.60</td>
+      <td>Barbecuing, boiling, chopping, cooking, frying, grilling, rinsing, stirring</td>
+    </tr>
+    <tr>
+      <td>Reading</td>
+      <td>0.46</td>
+      <td>Reading</td>
+    </tr>
+    <tr>
+      <td>Religious activities</td>
+      <td>0.14</td>
+      <td>Praying, preaching</td>
+    </tr>
+    <tr>
+      <td>Sleeping</td>
+      <td>8.84</td>
+      <td>Resting, sleeping</td>
+    </tr>
+    <tr>
+      <td>Socializing and social events</td>
+      <td>0.64</td>
+      <td>Celebrating, dancing, marrying, singing, socializing, talking</td>
+    </tr>
+    <tr>
+      <td>Sports</td>
+      <td>0.34</td>
+      <td>Exercising, playing+sports, swimming, throwing</td>
+    </tr>
+    <tr>
+      <td>Telephoning</td>
+      <td>0.16</td>
+      <td>Calling, telephoning</td>
+    </tr>
+    <tr>
+      <td>Working</td>
+      <td>3.26</td>
+      <td>Working</td>
+    </tr>
+    <tr>
+      <td>Control videos</td>
+      <td></td>
+      <td>Blowing, floating, raining, shaking</td>
+    </tr>
+  </tbody>
+</table>
 
 Naturalistic videos of actions can vary along numerous axes, including visual features (e.g., the setting in which the action takes place or objects in the scene), action-specific features (e.g., semantic action category), and social-affective features (e.g., the number of agents involved or perceived arousal). For example, an action like ‘eating’ may vary in terms of context (in the kitchen vs. at a park), object (eating an apple vs. a sandwich), and number of agents (eating alone vs. together). Drawing these distinctions is crucial to disambiguate between context, actions, and agents in natural events. To evaluate these different axes, we quantified 17 visual, action-related, and social-affective features using image properties, labels assigned by experimenters, and behavioral ratings collected in online experiments (Figure 1a). Visual features ranged from low-level (e.g., pixel values) to high-level features related to scenes and objects (e.g., activations from the final layer of a pretrained neural network). Action-related features included transitivity (object-relatedness), activity (the amount of activity in a video), effectors (body parts involved), and action category based on the ATUS (ATUS, 2019). Finally, social-affective features included sociality, valence, arousal, and number of agents (see section ‘Representational similarity analysis’). Representational dissimilarity matrices (RDMs) were created for each feature by calculating pairwise Euclidean distances between all videos.
 
@@ -44,31 +155,63 @@ Naturalistic videos of actions can vary along numerous axes, including visual fe
 
 **Figure 1.:** (a) Correlations between feature representational dissimilarity matrices (RDMs). Note the low correlations between visual features and action/social-affective features (white rectangle). (b) Behavioral rating distributions in the two stimulus sets. The z-scored ratings were visualized as raincloud plots showing the individual data points, as well as probability density estimates computed using MATLAB’s ksdensity function (Allen et al., 2019).
 
-In both video sets, there were only weak correlations between visual features and the higher-level action/social-affective features (Figure 1a). The highest correlations were those within each of the three sets of features, including visual features (Experiment 1: Conv1 and image saturation/gist, τA = 0.29; Experiment 2: Conv1 and image hue, τA = 0.32), action features (Experiment 1: arousal and activity, τA = 0.31; Experiment 2: activity and effectors, τA = 0.33), and social features (sociality and number of agents; Experiment 1: τA = 0.31, Experiment 2: τA = 0.3).
+In both video sets, there were only weak correlations between visual features and the higher-level action/social-affective features (Figure 1a). The highest correlations were those within each of the three sets of features, including visual features (Experiment 1: Conv1 and image saturation/gist, $\tau_{A}$ = 0.29; Experiment 2: Conv1 and image hue, $\tau_{A}$ = 0.32), action features (Experiment 1: arousal and activity, $\tau_{A}$ = 0.31; Experiment 2: activity and effectors, $\tau_{A}$ = 0.33), and social features (sociality and number of agents; Experiment 1: $\tau_{A}$ = 0.31, Experiment 2: $\tau_{A}$ = 0.3).
 
 The distributions of action and social-affective features were not significantly different between the two stimulus sets (all Mann–Whitney z < 1.08, p>0.28). The width of these distributions suggests that the stimuli spanned a wide range along each feature (Figure 1b). In both experiments, transitivity was notable through its bimodal distribution, likely reflecting the presence or absence of objects in scenes, while other features had largely unimodal distributions.
 
 Behaviorally rated features differed in reliability in Experiment 1 (F(4,819) = 22.35, p<0.001), with sociality being the most reliable and arousal the least reliable (Figure 3—figure supplement 1). In Experiment 2, however, there was no difference in reliability (F(4,619) = 0.76, p=0.55). Differences in reliability were mitigated by our use of feature averages to generate feature RDMs.
 
-## Individual feature contributions to behavioral similarity
+### Individual feature contributions to behavioral similarity
 
 To characterize human action representations, we measured behavioral similarity for all pairs of videos in each set in two multiple arrangement experiments (see section ‘Multiple arrangement’). Participants arranged videos according to their similarity inside a circular arena (Figure 2). The task involved arranging different subsets of 3–8 videos until sufficiently reliable distance estimates were reached for all pairs of videos. Videos would play on hover, and participants had to play and move each video to proceed to the next trial. In Experiment 1, participants arranged different subsets of 30 videos out of the total 152, while in Experiment 2, participants arranged all 65 videos. To emphasize natural behavior, participants were not given specific criteria to use when judging similarity. Behavioral RDMs containing the Euclidean distances between all pairs of stimuli were reconstructed from each participant’s multiple arrangement data using inverse MDS (Kriegeskorte and Mur, 2012).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig2-v2.jpg)
 
-**Figure 2.:** Above: a multiple arrangement task was used to generate behavioral representational dissimilarity matrices (RDMs) in the two behavioral experiments. Below: electroencephalography (EEG) data was recorded during a one-back task, and time-resolved neural RDMs were generated using pairwise decoding accuracies. Cross-validated variance partitioning was used to assess the unique contributions of visual, social-affective, and action features to the behavioral and neural RDMs, quantified as the predicted squared Kendall’s  . The stimuli in this figure are public domain images similar to the types of videos used in the experiments.τA
+**Figure 2.:** Above: a multiple arrangement task was used to generate behavioral representational dissimilarity matrices (RDMs) in the two behavioral experiments. Below: electroencephalography (EEG) data was recorded during a one-back task, and time-resolved neural RDMs were generated using pairwise decoding accuracies. Cross-validated variance partitioning was used to assess the unique contributions of visual, social-affective, and action features to the behavioral and neural RDMs, quantified as the predicted squared Kendall’s $\tau_{A}$ . The stimuli in this figure are public domain images similar to the types of videos used in the experiments.
 
-The multiple arrangement task was unconstrained, which meant that participants could use different criteria. Although this may have introduced some variability, the adaptive algorithm used in the multiple arrangement task enabled us to capture a multidimensional representation of how actions are intuitively organized in the mind, while at the same time ensuring sufficient data quality. Data reliability was quantified using leave-one-subject-out correlations of the dissimilarity estimates and was above chance in both experiments (Kendall’s τA = 0.13 ± 0.08 and 0.18 ± 0.08 respectively, both p<0.001, permutation testing; Figure 3—figure supplement 1a). Reliability was significantly higher in Experiment 2 than in Experiment 1 (Mann–Whitney z = 3.21, p=0.0013), potentially reflecting differences in both participant pools and sampling methods (subsets of videos in Experiment 1 vs. full video dataset in Experiment 2; see section ‘Multiple arrangement’).
+The multiple arrangement task was unconstrained, which meant that participants could use different criteria. Although this may have introduced some variability, the adaptive algorithm used in the multiple arrangement task enabled us to capture a multidimensional representation of how actions are intuitively organized in the mind, while at the same time ensuring sufficient data quality. Data reliability was quantified using leave-one-subject-out correlations of the dissimilarity estimates and was above chance in both experiments (Kendall’s $\tau_{A}$ = 0.13 ± 0.08 and 0.18 ± 0.08 respectively, both p<0.001, permutation testing; Figure 3—figure supplement 1a). Reliability was significantly higher in Experiment 2 than in Experiment 1 (Mann–Whitney z = 3.21, p=0.0013), potentially reflecting differences in both participant pools and sampling methods (subsets of videos in Experiment 1 vs. full video dataset in Experiment 2; see section ‘Multiple arrangement’).
 
 We assessed the contribution of 17 different visual, social, and action features to behavior in both experiments by correlating each feature RDM to each participant’s behavioral RDM (Supplementary file 1b). In Experiment 1 (Figure 3), only two visual features were significantly correlated with the behavioral RDMs (environment and activations from the final fully connected layer FC8 of AlexNet). However, there were significant correlations between behavioral RDMs and all action-related RDMs (action category, effectors, transitivity, and activity), as well as all social-affective RDMs (valence, arousal, sociality, and number of agents).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig3-v2.jpg)
+
+**Figure 3.:** Feature-behavior correlations are plotted against the noise ceiling (gray). Each dot is the correlation between an individual participant’s behavioral representational dissimilarity matrix (RDM) and each feature RDM. Asterisks denote significance (p<0.005, sign permutation testing). The reliability of the data and feature ratings is presented in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Reliability of behavioral similarity estimates (leave-one-subject-out correlations) in the two datasets. (b) Reliability of features measured in behavioral experiments (leave-one-subject-out correlations). Since most ratings were collected using the larger video set, the video sets rated by each participant differed both in number and content. Only participants who rated at least five videos from each set were included in the analysis.
+
 In Experiment 2, the only visual feature that moderately correlated with behavior was the final fully connected layer of AlexNet (p=0.006, below our threshold for significance). Among action features, only effectors and activity were significantly correlated with the behavioral RDMs. However, we found significant correlations with all social-affective features. The results thus converge across both experiments in suggesting that social-affective and, to a lesser extent, action-related features, rather than visual properties, explain behavioral similarity.
 
-## Social-affective features explain the most unique variance in behavioral representations
+### Social-affective features explain the most unique variance in behavioral representations
 
 We performed a cross-validated variance partitioning analysis (Groen et al., 2018; Lescroart et al., 2015; Tarhan et al., 2021) to determine which features contributed the most unique variance to behavior (see section ‘Variance partitioning’). We selected the 10 features that contributed significantly to behavior in either experiment, that is, two visual features (environment and layer FC8 of AlexNet) and all action and social-affective features. To keep the analysis tractable and understand the contribution of each type of information, we grouped these features according to their type (visual, action, and social-affective) and used them as predictors in a cross-validated hierarchical regression (Figure 4). Note that there was no collinearity among the 10 predictors, with an average variance inflation factor of 1.34 (Experiment 1) and 1.37 (Experiment 2).
 
-Together, the 10 predictors explained most of the systematic variance in behavior. In Experiment 1, the predicted squared Kendall’s τA of the full model (τA2 = 0.06 ± 0.001) was higher on average than the true split-half squared correlation (τA2 = 0.04 ± 0.002). This is likely to be due to the lower reliability of the behavioral similarity data in this experiment and suggests that the 10 predictors are able to explain the data well despite the overall lower prediction accuracy. In Experiment 2, the full model achieved a predicted τA2 of 0.18 ± 0.1 on average compared to a true squared correlation of 0.25 ± 0.1, suggesting that the 10 predictors explain most of the variance (73.21%) in the behavioral data.
+![Figure 4.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig4-v2.jpg)
+
+**Figure 4.:** The unique variance explained by visual, action, and social-affective features is plotted against the split-half reliability of the data (gray). Significant differences are marked with asterisks (all p<0.001, Wilcoxon signed-rank tests). For control analyses on how individual features (e.g., action category and the number of agents) and their assignment to groups affect the results, see Figure 4—figure supplements 1–5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Correlations between the WordNet representational dissimilarity matrix (RDM) and the behavioral RDMs. (b) Variance partitioning results obtained after replacing the action category RDM with the WordNet RDM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) A motion energy model correlates with the behavioral similarity data in Experiment 1, but not in Experiment 2. (b) Adding the motion energy model to the group of visual features does not change the pattern of results in our variance partitioning analyses.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** This shows a striking contribution from social-affective features even when pitted against all other features.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** This control analysis shows that higher-level social-affective features explain most of the unique variance in our data, above and beyond the number of agents.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** This control analysis suggests that affective features explain most of the variance in the data, alongside the number of agents (particularly in Experiment 2). However, this analysis does not account for the contributions of other visual and action features.
+
+Together, the 10 predictors explained most of the systematic variance in behavior. In Experiment 1, the predicted squared Kendall’s $\tau_{A}$ of the full model ($\tau_{A}^{2}$ = 0.06 ± 0.001) was higher on average than the true split-half squared correlation ($\tau_{A}^{2}$ = 0.04 ± 0.002). This is likely to be due to the lower reliability of the behavioral similarity data in this experiment and suggests that the 10 predictors are able to explain the data well despite the overall lower prediction accuracy. In Experiment 2, the full model achieved a predicted $\tau_{A}^{2}$ of 0.18 ± 0.1 on average compared to a true squared correlation of 0.25 ± 0.1, suggesting that the 10 predictors explain most of the variance (73.21%) in the behavioral data.
 
 In both experiments, social-affective features contributed significantly more unique variance to behavior than visual or action features (Figure 4, all Wilcoxon z > 5.5, all p<0.001). While all three groups of features contributed unique variance to behavior in Experiment 1 (all p<0.001, randomization testing), in Experiment 2, only social-affective features contributed significantly to behavior (p<0.001), while visual and action features did not (p=0.06 and 0.47, respectively). Shared variance between feature groups was not a significant contributor in either dataset. Although the effect sizes were relatively low, social-affective features explained more than twice as much unique variance as either the visual or action features in Experiment 1, and six times as much in Experiment 2. Furthermore, given the limits placed on predictivity by the reliability of the behavioral data, affective features predicted a large portion of the explainable variance in both experiments.
 
@@ -82,21 +225,49 @@ Among the social-affective features we tested, the number of agents could be see
 
 Furthermore, an additional analysis looking at the separate contributions of the number of agents, sociality, and affective features (valence and arousal) found that the affective features contributed the greatest variance in both experiments (Figure 4—figure supplement 5). For technical reasons, this analysis compared the joint contribution of both affective features to each single social feature and did not discount the impact of variance shared with visual or action-related features. Despite these limitations, the results suggest that the contribution of the social-affective feature group is not driven by the number of agents or the variance it shares with sociality, and highlight the role of affective features (valence and arousal) in explaining behavior.
 
-## EEG patterns reflect behavioral similarity
+### EEG patterns reflect behavioral similarity
 
 We performed an EEG experiment to investigate how action-relevant features are processed over time. Participants viewed 500 ms segments of the 152 videos from Experiment 1 and performed a one-back action task in which they detected repetitions of the action category (see section ‘EEG: Experimental procedure’). To relate neural patterns to behavioral and feature RDMs, we computed time-resolved neural RDMs for each participant using decoding accuracies between all pairs of videos (Figures 2 and 5a). The time course of decoding performance was similar to that observed in previous E/MEG studies using still visual stimuli (Carlson et al., 2013; Cichy et al., 2014; Dima et al., 2018; Greene and Hansen, 2018; Isik et al., 2014). Decoding accuracy rose above chance at 50 ms after video onset, reached its maximum at 98 ms (63.88 ± 6.82% accuracy), and remained above chance until 852 ms after video onset (cluster-corrected p<0.05, sign permutation testing).
 
-To assess brain–behavior correlations, we related the average behavioral RDM obtained in Experiment 1 to the time-resolved neural RDMs (Kendall’s τA). The behavioral RDM correlated significantly with neural patterns during a cluster between 62 and 766 ms after video onset (Figure 5b), suggesting that the features guiding the intuitive categorization of naturalistic actions also underlie their neural organization.
+![Figure 5.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig5-v2.jpg)
 
-## Neural timescale of individual feature representations
+**Figure 5.:** (a) Time course of video decoding accuracy, averaged across all pairs of videos and participants (in gray: SEM across participants). The horizontal line marks above-chance performance (sign permutation testing, cluster-corrected p<0.05). (b) Behavioral similarity correlates with the neural representational dissimilarity matrices (RDMs). The noise ceiling is shown in light blue (leave-one-subject-out correlation, mean ± SEM). Horizontal lines mark significant time windows (sign permutation testing, cluster-corrected p<0.05). (c) The distribution of significant correlation onsets for each feature model across 1000 bootstrapping iterations (sign permutation testing, cluster-corrected p<0.05). Color rectangles show 90% confidence intervals. The time courses of all feature correlations are shown in Figure 5—figure supplement 1. The average electroencephalography (EEG) evoked response is visualized in Figure 5—figure supplement 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The first layer of AlexNet (Conv1) was included since it is known to provide the best match to early visual neural responses.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Grand average evoked response across participants. The average time course of the amplitude at each electrode is shown in black, with the global field power shown in red and the stimulus duration in light gray. (b) Average topography of the evoked response (re-referenced to the median), averaged across 0.2 s time windows.
+
+To assess brain–behavior correlations, we related the average behavioral RDM obtained in Experiment 1 to the time-resolved neural RDMs (Kendall’s $\tau_{A}$). The behavioral RDM correlated significantly with neural patterns during a cluster between 62 and 766 ms after video onset (Figure 5b), suggesting that the features guiding the intuitive categorization of naturalistic actions also underlie their neural organization.
+
+### Neural timescale of individual feature representations
 
 We assessed the correlations between EEG patterns and the 10 feature RDMs found to contribute to behavior in Experiment 1. We also included an additional feature RDM based on the first convolutional layer of AlexNet, which best captures early visual neural responses (Figure 5—figure supplement 1; see section ‘Multivariate analysis’). The feature RDMs that contributed to behavioral similarity also correlated with the EEG patterns (Figure 5—figure supplement 1), with a single exception (sociality).
 
 A bootstrapping analysis of the cluster onsets of these correlations (Figure 5c) suggests a progression from visual to action and social-affective features. Visual predictors correlated with the neural patterns between 65 ± 15ms (mean ± SD, Conv1) and 84 ± 62 ms (Environment), while action category also had an early onset (58 ± 9 ms). Other action-related features, however, emerged later (transitivity: 170 ± 67 ms, effectors: 192 ± 94 ms, activity: 345 ± 133 ms). Among social-affective features, the number of agents had the earliest correlation onset (178 ± 81 ms), while valence and arousal emerged later (395 ± 81 and 404 ± 91 ms, respectively). Importantly, these features are spontaneously extracted in the brain, as none of them, with the exception of action category, were directly probed in the one-back task performed by participants. In addition, all features were extracted during behaviorally relevant time windows (Figure 5b).
 
-## A temporal hierarchy in action perception
+### A temporal hierarchy in action perception
 
 A cross-validated variance partitioning analysis revealed different stages in the processing of naturalistic actions (Figure 6). Visual features dominated the early time windows (66–138 ms after video onset). Action features also contributed a significant amount of unique variance (162–598 ms), as well as variance shared with social-affective features (354–598 ms; Figure 6—figure supplement 1). Finally, social-affective features independently predicted late neural responses (446–782 ms). Importantly, visual features did not share a significant amount of variance with either action or social-affective features.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig6-v2.jpg)
+
+**Figure 6.:** (a) Unique variance explained by each group of features over time. The split-half reliability of the data is shown in gray (shaded area; see also Figure 5b). Horizontal lines mark significant time windows (sign permutation testing, cluster-corrected p<0.05). The time course of shared variance is displayed in Figure 6—figure supplement 1. See Figure 6—figure supplement 2 for the results of a fixed-effects analysis. Figure 6—figure supplement 3 shows how the addition of a motion energy model affects these results. (b) The distribution of effect onsets across 100 split-half iterations (sign permutation testing, cluster-corrected p<0.05). Color rectangles show 90% confidence intervals.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Time course of shared variance. (b) Onsets (with bootstrapped 90% CIs) for all significant portions of unique and shared variance.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** A hierarchical regression was performed with the average time-resolved representational dissimilarity matrix (RDM) as a response variable. Only the unique contributions of the three predictor groups are shown. Horizontal lines mark significant time windows (cluster-corrected p<0.001, permutation testing).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/75027/elife-75027-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (a) The motion energy model correlates with neural responses. (b) Including the motion energy model among visual features reduces the unique contribution of action features, but not social features, in the cross-validated variance partitioning analysis. (c) The temporal hierarchy, however, remains the same in the fixed-effects analysis.
 
 An analysis of effect onsets across 100 split-half iterations points to the hierarchical processing of these features, with a progression from visual to action to social-affective features. Social-affective features (mean onset 418 ± 89 ms) contributed unique variance significantly later than other feature sets, while action features (245 ± 104 ms) came online later than visual features (65 ± 8ms; all Wilcoxon z > 7.27, p<0.001; Figure 6b). A fixed-effects analysis revealed the same order of feature information with larger effect sizes (Figure 6—figure supplement 2).
 
@@ -106,7 +277,7 @@ Motion has been shown to drive the response of visual areas to naturalistic stim
 
 Here, we used a large-scale naturalistic stimulus set to disentangle the roles of different features in action perception. Two novel findings emerge from our study. First, our behavioral results suggest that social-affective features play the most important role in how we organize naturalistic everyday actions, above and beyond fundamental visual and action features like scene setting or action category. Second, these behaviorally relevant features are spontaneously extracted in the brain and follow a hierarchical sequence from visual to action-related and culminating with social-affective features. These results offer an account of how internal representations of everyday actions emerge in the mind and brain.
 
-## Behavioral representations: What features support action perception?
+### Behavioral representations: What features support action perception?
 
 Across two separate multiple arrangement experiments with large-scale naturalistic stimulus sets, we found that social-affective features predicted similarity judgments better than, and independently of, visual and action-related features. By sampling a comprehensive feature space ranging from low-level to conceptual, we were able to distinguish between components that often covary, such as scene setting and action category or sociality and transitivity. Previous studies have operationalized features in different ways, and an exhaustive investigation is thus difficult; however, our approach of including several important features from each group mitigated this, as suggested by the high amount of variance in behavior collectively explained by our features.
 
@@ -116,7 +287,7 @@ A hypothesis-driven approach will always pose challenges due to practical limita
 
 Among our social-affective features, the number of agents could be construed as a perceptual precursor to sociality. Indeed, previous fMRI work has suggested that neural representations of actions in the visual system reflect perceptual precursors of social features rather than higher-level social features (Wurm and Caramazza, 2019). Here, we found that high-level social-affective features (particularly valence and arousal) contributed significantly to behavior independently of the number of agents. Further, affective features explained significantly more unique variance in behavior than the number of agents in both experiments (Figure 4—figure supplements 4 and 5). Our findings suggest that high-level social-affective features, and in particular valence and arousal, uniquely drive human action representations.
 
-## Neural representations: How does action perception unfold over time?
+### Neural representations: How does action perception unfold over time?
 
 Using EEG, we tracked the temporal dynamics of naturalistic action perception. Using naturalistic stimuli and a rich feature space enabled us to disentangle the contributions of different features and investigate their relative timing. Visual, action, and social-affective features made unique contributions to the EEG patterns at different processing stages, revealing a representational hierarchy of spontaneously extracted features.
 
@@ -128,7 +299,7 @@ Variance partitioning revealed a clear temporal progression from visual features
 
 Our results add temporal characterization to previous fMRI findings, suggesting that the seemingly conflicting features revealed by previous studies, like the number of agents (Wurm and Caramazza, 2019), sociality (Tarhan and Konkle, 2020), or semantic action category (Tucciarelli et al., 2019), emerge at different stages during action observation. Thus, the existence of different organizing dimensions can be explained not just through spatial segregation within and across brain areas, but also through a temporal gradient starting with visual features and concluding with behaviorally relevant social and affective representations. More work is needed to understand where these dynamic representations emerge in the brain, and whether they are supported by overlapping or distinct networks. Future research could test this using EEG-fMRI fusion to track the spatiotemporal dynamics of action representations.
 
-## Actions in context
+### Actions in context
 
 As real-world actions tend to occur in a rich social context, studies of action perception should consider socially relevant features and the interactions between different systems for perceiving actions, agents, and their mental states (Quadflieg and Koldewyn, 2017). Recent work suggests that social perception enhances visual processing (Bellot et al., 2021; Papeo, 2020) and recruits dedicated neural circuits (Isik et al., 2017; Pitcher and Ungerleider, 2021). Our findings open exciting new avenues for connecting these areas of research. For example, future studies could more explicitly disentangle the perceptual and conceptual building blocks of social and affective features, such as body posture or facial expression, and their roles in action and interaction perception.
 
@@ -136,7 +307,7 @@ One fundamental question that lies at the root of this work is how actions shoul
 
 ## Materials and methods
 
-## Behavior: Stimuli
+### Behavior: Stimuli
 
 We curated two stimulus sets containing three-second videos of everyday actions from the Moments in Time dataset (Monfort et al., 2020). To broadly sample the space of everyday actions, we first identified the most common activities from the National Bureau of Labor Statistics’ American Time Use Survey (ATUS, 2019). Our final dataset included 18 social and nonsocial activities that lend themselves to visual representation (Table 1), to ensure a diverse and balanced stimulus set representative of the human everyday action space. We note that the ATUS distinctions are based on performed rather than observed actions. While imperfect, they provide ecologically relevant and objective criteria with which to define our action space.
 
@@ -148,25 +319,25 @@ We then selected two subsets of videos (1) that sampled all activities in a bala
 
 The first stimulus set contained 152 videos (eight videos per activity and eight additional videos with no agents) and was used in Experiment 1. The videos with no agents were included to provide variation in the dataset along visual properties that did not pertain to actions or agents, as well as variation in the overall dataset in terms of number of agents per video. From the remaining videos, a second set of 76 videos was sampled and manually adjusted to remove videos without agents (in the interest of experimental time) and any videos that were too similar visually to other videos in the same category (e.g., involving a similar number of agents in similar postures). The second stimulus set thus contained 65 videos (three or four videos per activity) and was used in Experiment 2. The videos were preprocessed to a frame rate of 24 frames per second using the videoWriter object in MATLAB and resized to 600 × 400 pixels. This was done by first resizing the videos in order to meet the dimension criteria (using MATLAB’s imresize function with bicubic interpolation). The videos were then cropped to the correct aspect ratio either centrally or using manually determined coordinates to make sure the action remained clear after cropping.
 
-## Behavior: Participants
+### Behavior: Participants
 
-## Behavioral ratings
+#### Behavioral ratings
 
 A total of 256 workers (202 after exclusions, located in the United States, worker age and gender not recorded) from the online platform Amazon Mechanical Turk provided sociality, valence, arousal, and activity ratings of the video stimuli, and 43 workers (35 after exclusions) provided transitivity ratings.
 
-## Multiple arrangement
+#### Multiple arrangement
 
 Two separate online multiple arrangement experiments were performed on each of the two stimulus sets. A total of 374 workers from Amazon Mechanical Turk took part in Experiment 1 (300 after exclusions, located in the United States, worker age and gender not recorded). Experiment 2 involved 58 participants (53 after exclusions, 31 female, 20 male, 1 non-binary, 1 not reported, mean age 19.38 ± 1.09) recruited through the Department of Psychological and Brain Sciences Research Portal at Johns Hopkins University.
 
 All procedures for online data collection were approved by the Johns Hopkins University Institutional Review Board (protocol number HIRB00009730), and informed consent was obtained from all participants.
 
-## Behavior: Experimental procedure
+### Behavior: Experimental procedure
 
-## Behavioral ratings
+#### Behavioral ratings
 
 Participants viewed subsets of 30–60 videos from the initially curated large-scale set and rated the events depicted on a five-point scale. In a first set of experiments, the dimensions rated were sociality (how social the events were, from 1 – not at all to 5 – very social); valence (how pleasant the events were, from 1 – very unpleasant to 5 – very pleasant); arousal (how intense the events were, from 1 – very calm to 5 – very intense); and activity (how active they were, from 1 – no action to 5 – very active). In separate experiments, participants provided transitivity ratings for the two final stimulus sets (i.e., to what extent the actions involved a person or people interacting with an object, from 1 – not at all to 5 – very much). Participants were excluded if they responded incorrectly to catch trials (approximately 10% of trials) requiring them to label the action shown in the prior video, or if they provided overly repetitive ratings (e.g., using only two unique values or fewer out of five possible ratings throughout the entire experiment). This amounted to an average of 17.46 ± 2.14 ratings per video (Experiment 1) and 18.22 ± 2.09 ratings per video (Experiment 2). The experiments were implemented in JavaScript using the jsPsych library (de Leeuw, 2015).
 
-## Multiple arrangement
+#### Multiple arrangement
 
 To characterize human action representations, we measured behavioral similarity using two multiple arrangement experiments. The experiments were conducted on the Meadows platform (https://meadows-research.com/) and required participants to arrange the videos according to their similarity inside a circular arena. Participants were free to use their own criteria to determine similarity, so as to encourage natural behavior.
 
@@ -180,9 +351,9 @@ The experiments included a training trial in which participants arranged the sam
 
 Inverse MDS was used to construct behavioral dissimilarity matrices containing normalized Euclidean distances between all pairs of videos (Kriegeskorte and Mur, 2012). In Experiment 1, the behavioral RDM contained 11,476 pairs with an average of 11.37 ± 3.08 estimates per pair; in Experiment 2, there were 2080 pairs arranged by all 53 participants.
 
-## Behavior: Data analysis
+### Behavior: Data analysis
 
-## Representational similarity analysis
+#### Representational similarity analysis
 
 Everyday actions can be differentiated along numerous axes. Perceptually, they can differ in terms of visual properties, like the setting in which they take place. They can also be characterized through action-related features, like semantic action category, or through social features, like the number of agents involved. Understanding how these features contribute to natural behavior can shed light on how naturalistic action representations are organized. Here, we used representational similarity analysis (RSA) to assess the contribution of visual, action, and social-affective features to the behavioral similarity data.
 
@@ -194,27 +365,27 @@ Action feature RDMs were based on transitivity and activity ratings (provided by
 
 Social-affective feature RDMs were based on sociality, valence, and arousal ratings (all provided by participants, see section ‘Behavioral ratings’ above) and the number of agents in each video, which was labeled by experimenters on a four-point scale (from 0, no agent present, to 3, three or more agents present).
 
-Each participant’s behavioral RDM was correlated to the feature RDMs, and the resulting Kendall’s τA values were tested against chance using one-tailed sign permutation testing (5000 iterations). P-values were omnibus-corrected for multiple comparisons using a maximum correlation threshold across all models (Nichols and Holmes, 2002).
+Each participant’s behavioral RDM was correlated to the feature RDMs, and the resulting Kendall’s $\tau_{A}$ values were tested against chance using one-tailed sign permutation testing (5000 iterations). P-values were omnibus-corrected for multiple comparisons using a maximum correlation threshold across all models (Nichols and Holmes, 2002).
 
 A noise ceiling was calculated by correlating each subject’s RDM to the average RDM (upper bound), as well as to the average RDM excluding the left-out subject (lower bound; Nili et al., 2014).
 
-## Variance partitioning
+#### Variance partitioning
 
 Despite low correlations between features of interest in both stimulus sets (Figure 1a), shared variance could still contribute to the RSA results. To estimate the unique contributions of the three primary groups of features, we performed a cross-validated variance partitioning analysis, excluding individual features that did not correlate with the behavioral data in the above RSA analysis. The three groups included visual features (scene setting and the last fully connected layer of AlexNet), action features (action category, effectors, transitivity, action), and social-affective features (number of agents, sociality, valence, arousal).
 
-The behavioral data were randomly split into training and test sets (100 iterations) by leaving out half of the individual similarity estimates for each pair of videos in Experiment 1 (since different participants saw different subsets of videos) or half of the participants in Experiment 2. We fit seven different regression models using the average training RDM (with every possible combination of the three groups of features), and we calculated the squared Kendall’s τA between the predicted responses and the average test RDM. These values were then used to calculate the unique and shared portions of variance contributed by the predictors (Groen et al., 2018; Lescroart et al., 2015; Tarhan et al., 2021).
+The behavioral data were randomly split into training and test sets (100 iterations) by leaving out half of the individual similarity estimates for each pair of videos in Experiment 1 (since different participants saw different subsets of videos) or half of the participants in Experiment 2. We fit seven different regression models using the average training RDM (with every possible combination of the three groups of features), and we calculated the squared Kendall’s $\tau_{A}$ between the predicted responses and the average test RDM. These values were then used to calculate the unique and shared portions of variance contributed by the predictors (Groen et al., 2018; Lescroart et al., 2015; Tarhan et al., 2021).
 
 The resulting values were tested against chance using one-tailed sign permutation testing (5000 iterations, omnibus-corrected for multiple comparisons). Differences between groups of features were assessed with two-sided Wilcoxon signed-rank tests.
 
-## EEG: Stimuli
+### EEG: Stimuli
 
 The stimulus set from behavioral Experiment 1 was used in the EEG experiment, containing 152 videos from 18 categories, as well as control videos. The three-second stimuli were trimmed to a duration of 0.5 s centered around the action as determined by visual inspection, to ensure that the shorter videos were easily understandable. This helped improve time-locking to the EEG signals and allowed for a condition-rich experimental design. An additional 50 videos were included as catch stimuli (25 easily identifiable pairs depicting the same action, manually chosen from the larger stimulus set).
 
-## EEG: Participants
+### EEG: Participants
 
 Fifteen participants (six female, nine male, mean age 25.13 ± 6.81) took part in the EEG experiment. All participants were right-handed and had normal or corrected-to-normal vision. Informed consent was obtained in accordance with the Declaration of Helsinki, and all procedures were approved by the Johns Hopkins University Institutional Review Board (protocol number HIRB00009835).
 
-## EEG: Experimental procedure
+### EEG: Experimental procedure
 
 Continuous EEG recordings with a sampling rate of 1000 Hz were made with a 64-channel Brain Products ActiCHamp system using actiCAP electrode caps in a Faraday chamber. Electrode impedances were kept below 25 kΩ when possible, and the Cz electrode was used as an online reference.
 
@@ -222,9 +393,9 @@ Participants were seated upright while viewing the videos on a back-projector sc
 
 The stimuli were presented using an Epson PowerLite Home Cinema 3000 projector with a 60 Hz refresh rate. Each trial started with a black fixation cross presented on a gray screen for a duration chosen from a uniform distribution between 1 and 1.5 s, followed by a 0.5 s video. The stimuli were presented on the same gray background and subtended approximately 15 × 13 degrees of visual angle. The fixation cross remained on screen, and participants were asked to fixate throughout the experiment. A photodiode was used to accurately track on-screen stimulus presentation times and account for projector lag. The paradigm was implemented in MATLAB R2019a using the Psychophysics Toolbox (Brainard, 1997; Kleiner et al., 2007; Pelli, 1997).
 
-## EEG: Data analysis
+### EEG: Data analysis
 
-## Preprocessing
+#### Preprocessing
 
 EEG data preprocessing was performed using MATLAB R2020b and the FieldTrip toolbox (Oostenveld et al., 2011). First, the EEG data were aligned to stimulus onset using the photodiode data to correct for any lag between stimulus triggers and on-screen presentation. The aligned data were segmented into 1.2 s epochs (0.2 s pre-stimulus to 1 s post-stimulus onset), baseline-corrected using the 0.2 s prior to stimulus onset, and high-pass filtered at 0.1 Hz.
 
@@ -234,7 +405,7 @@ Catch trials were removed from the data together with any trials that elicited a
 
 Prior to further analysis, the data were re-referenced to the median across all electrodes, low-pass filtered at 30 Hz to investigate evoked responses, and downsampled to 500 Hz.
 
-## Multivariate analysis
+#### Multivariate analysis
 
 We performed multivariate analyses to investigate (1) whether EEG patterns reflected behavioral similarity and (2) whether different visual, action, and social-affective features explained variance in the neural data.
 
@@ -242,12 +413,12 @@ First, time-resolved decoding of every pair of videos was performed using a line
 
 The entire procedure, from dataset splitting to classification, was repeated 10 times with different data splits. The average decoding accuracies between all pairs of videos were then used to generate a neural RDM at each time point for each participant. To generate the RDM, the dissimilarity between each pair of videos was determined by their decoding accuracy (increased accuracy representing increased dissimilarity at that time point).
 
-Next, we evaluated the correlations between each participant’s time-resolved neural RDM and the feature RDMs found to correlate with behavioral similarity (Experiment 1). To investigate the link between behavioral and neural representations, we also correlated neural RDMs with the average behavioral RDM obtained from the multiple arrangement task in Experiment 1. This analysis was performed using 10 ms sliding windows with an overlap of 6 ms. The resulting Kendall’s τA values were tested against chance using one-tailed sign permutation testing (5000 iterations, cluster-corrected for multiple comparisons across time using the maximum cluster sum, α = 0.05, cluster setting α = 0.05). A noise ceiling was calculated using the same procedure as in the behavioral RSA (see ‘Representational similarity analysis’). Effect latencies were assessed by bootstrapping the individual correlations 1000 times with replacement to calculate 90% confidence intervals around effect onsets.
+Next, we evaluated the correlations between each participant’s time-resolved neural RDM and the feature RDMs found to correlate with behavioral similarity (Experiment 1). To investigate the link between behavioral and neural representations, we also correlated neural RDMs with the average behavioral RDM obtained from the multiple arrangement task in Experiment 1. This analysis was performed using 10 ms sliding windows with an overlap of 6 ms. The resulting Kendall’s $\tau_{A}$ values were tested against chance using one-tailed sign permutation testing (5000 iterations, cluster-corrected for multiple comparisons across time using the maximum cluster sum, $\alpha$ = 0.05, cluster setting $\alpha$ = 0.05). A noise ceiling was calculated using the same procedure as in the behavioral RSA (see ‘Representational similarity analysis’). Effect latencies were assessed by bootstrapping the individual correlations 1000 times with replacement to calculate 90% confidence intervals around effect onsets.
 
-To quantify the contributions of visual, social-affective, and action features to the neural RDMs, a time-resolved cross-validated variance partitioning procedure was performed. Using 100 split-half cross-validation iterations, the neural RDM was entered as a response variable in a hierarchical regression with three groups of feature RDMs (visual, social-affective, and action) as predictors. This analysis employed the same 10 feature RDMs used in the behavioral variance partitioning (see section ‘Variance partitioning’), with the addition of activations from the first convolutional layer of AlexNet (Conv1). As Conv1 best captures early visual responses (Figure 5—figure supplement 1), its inclusion ensured that we did not underestimate the role of visual features in explaining neural variance. We did not use frame-wise RDMs to model these visual features; however, our approach of averaging features across video frames was justified by the short duration of our videos and the high correlation of CNN features across frames (Conv1: Pearson’s ρ=0.89±0.09; FC8: ρ=0.98±0.03).
+To quantify the contributions of visual, social-affective, and action features to the neural RDMs, a time-resolved cross-validated variance partitioning procedure was performed. Using 100 split-half cross-validation iterations, the neural RDM was entered as a response variable in a hierarchical regression with three groups of feature RDMs (visual, social-affective, and action) as predictors. This analysis employed the same 10 feature RDMs used in the behavioral variance partitioning (see section ‘Variance partitioning’), with the addition of activations from the first convolutional layer of AlexNet (Conv1). As Conv1 best captures early visual responses (Figure 5—figure supplement 1), its inclusion ensured that we did not underestimate the role of visual features in explaining neural variance. We did not use frame-wise RDMs to model these visual features; however, our approach of averaging features across video frames was justified by the short duration of our videos and the high correlation of CNN features across frames (Conv1: Pearson’s $ρ=0.89\pm0.09$; FC8: $ρ=0.98\pm0.03$).
 
-The analysis was carried out using 10 ms sliding windows with an overlap of 6 ms. The resulting predicted Kendall’s τA values were tested against chance using one-tailed sign permutation testing (5000 iterations, cluster-corrected for multiple comparisons using the maximum cluster sum across time windows and regressions performed, α = 0.05, cluster-setting α = 0.05). The distributions of effect onsets across the 100 split-half iterations were compared using two-sided Wilcoxon signed-rank tests.
+The analysis was carried out using 10 ms sliding windows with an overlap of 6 ms. The resulting predicted Kendall’s $\tau_{A}$ values were tested against chance using one-tailed sign permutation testing (5000 iterations, cluster-corrected for multiple comparisons using the maximum cluster sum across time windows and regressions performed, $\alpha$ = 0.05, cluster-setting $\alpha$ = 0.05). The distributions of effect onsets across the 100 split-half iterations were compared using two-sided Wilcoxon signed-rank tests.
 
-## Data availability
+### Data availability
 
 Behavioral and EEG data and results have been archived as an Open Science Framework repository (https://osf.io/hrmxn/). Analysis code is available on GitHub (https://github.com/dianadima/mot_action; Dima, 2021).

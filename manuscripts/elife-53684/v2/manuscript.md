@@ -20,27 +20,63 @@ Optical refraction causes light to bend at interfaces between optical media. Thi
 
 See Appendix 1 and Appendix 2 for the geometric consequences of Snell’s law at flat and curved interfaces, respectively.
 
-## Implications of the Fresnel equations
+### Implications of the Fresnel equations
 
-Only a portion of the incident light is transmitted into the water to reach the eye. We calculated the fraction of transmitted light according to the Fresnel equations. Assuming the light is unpolarized,T=1-Rs+Rp2,where T is the fraction of light transmitted across an air-water interface at incident angle ψa=ψaθ (See Appendices 1, 2), ψw=θ is the angle of the refracted light ray in water, andRs=(nacos⁡ψa(θ)−nwcos⁡θnacos⁡ψa(θ)+nwcos⁡θ)2Rp=(nacos⁡θ−nwcos⁡ψa(θ)nacos⁡θ+nwcos⁡ψa(θ))2are the reflectances for s-polarized (i.e. perpendicular) and p-polarized (i.e. parallel) light, respectively. When including the plastic dish in our simulations, we modified these equations to separately calculate the transmission fractions across the air-plastic and the plastic-water interfaces. We assumed that the full transmission fraction is the product of these two factors, thereby ignoring the possibility of multiple reflections within the plastic.
+Only a portion of the incident light is transmitted into the water to reach the eye. We calculated the fraction of transmitted light according to the Fresnel equations. Assuming the light is unpolarized,
 
-## Illustrating distorted sinusoidal gratings
+$$
+T=1-\frac{R_{s}+R_{p}}{2},
+$$
 
-For all image simulations in Figure 1c, we neglected the plastic and fixed the total distance between the fish and the virtual screen, da+dw, to be 1 cm, a typical distance in real-world experiments. The virtual screen was considered to be a 4 × 4 cm square with 250 pixels/cm resolution. Here we assumed that the virtual screen emits light uniformly at all angles, but this assumption is violated by certain displays, and our computational tool allows the user to specify alternate angular emission profiles. To transform images on the virtual screen, we shifted each light ray (i.e. image pixel) according to Snell’s law, scaled its intensity according to the Fresnel equations, and added the intensity value to a bin at the resulting apparent position. This simple model treats the fish eye as a pinhole detector, whereas real photoreceptors blur visual signals on a spatial scale determined by their receptive field. Consequently, our simulation compresses a large amount of light onto the overly thin border of the Snell window, and we saturated the grayscale color axes in Figure 1c to avoid this visually distracting artifact.
+where $T$ is the fraction of light transmitted across an air-water interface at incident angle $ψ_{a}=ψ_{a}\theta$ (See Appendices 1, 2), $ψ_{w}=\theta$ is the angle of the refracted light ray in water, and
 
-To make the image as realistic as possible, we mimicked real projector conditions using gamma-encoded gratings with spatial frequency 1 cycle / cm, such that[x(t)]1/2.2= sin⁡twith xt ranging from 1.0 to 500.0 lux, a standard range of physical illuminance for a lab projector. The exponent on the left represents a typical display gamma encoding with gamma = 2.2. To reduce moiré artifacts arising from ray tracing, we used a combination of ray supersampling (averaging the rays emanating from 16 sub-pixels for each virtual screen pixel) and stochastic sampling (the position of each ray was randomly jittered between -1 and 1 sub-pixels from its native position) (Dippé and Wold, 1985). In Figure 1c, we display the result of these operations followed by a gamma compression to mimic the perceptual encoding of the presented stimulus.
+$$
+R_{s}=(\frac{n_{a}cos⁡ψ_{a}(\theta)−n_{w}cos⁡\theta}{n_{a}cos⁡ψ_{a}(\theta)+n_{w}cos⁡\theta})^{2}R_{p}=(\frac{n_{a}cos⁡\theta−n_{w}cos⁡ψ_{a}(\theta)}{n_{a}cos⁡\theta+n_{w}cos⁡ψ_{a}(\theta)})^{2}
+$$
 
-## Corrections to looming visual stimuli
+are the reflectances for s-polarized (i.e. perpendicular) and p-polarized (i.e. parallel) light, respectively. When including the plastic dish in our simulations, we modified these equations to separately calculate the transmission fractions across the air-plastic and the plastic-water interfaces. We assumed that the full transmission fraction is the product of these two factors, thereby ignoring the possibility of multiple reflections within the plastic.
+
+### Illustrating distorted sinusoidal gratings
+
+For all image simulations in Figure 1c, we neglected the plastic and fixed the total distance between the fish and the virtual screen, $d_{a}+d_{w}$, to be 1 cm, a typical distance in real-world experiments. The virtual screen was considered to be a 4 × 4 cm square with 250 pixels/cm resolution. Here we assumed that the virtual screen emits light uniformly at all angles, but this assumption is violated by certain displays, and our computational tool allows the user to specify alternate angular emission profiles. To transform images on the virtual screen, we shifted each light ray (i.e. image pixel) according to Snell’s law, scaled its intensity according to the Fresnel equations, and added the intensity value to a bin at the resulting apparent position. This simple model treats the fish eye as a pinhole detector, whereas real photoreceptors blur visual signals on a spatial scale determined by their receptive field. Consequently, our simulation compresses a large amount of light onto the overly thin border of the Snell window, and we saturated the grayscale color axes in Figure 1c to avoid this visually distracting artifact.
+
+To make the image as realistic as possible, we mimicked real projector conditions using gamma-encoded gratings with spatial frequency 1 cycle / cm, such that
+
+$$
+[x(t)]^{1/2.2}= sin⁡t
+$$
+
+with $xt$ ranging from 1.0 to 500.0 lux, a standard range of physical illuminance for a lab projector. The exponent on the left represents a typical display gamma encoding with gamma = 2.2. To reduce moiré artifacts arising from ray tracing, we used a combination of ray supersampling (averaging the rays emanating from 16 sub-pixels for each virtual screen pixel) and stochastic sampling (the position of each ray was randomly jittered between -1 and 1 sub-pixels from its native position) (Dippé and Wold, 1985). In Figure 1c, we display the result of these operations followed by a gamma compression to mimic the perceptual encoding of the presented stimulus.
+
+### Corrections to looming visual stimuli
 
 We approximated the geometric parameters from Dunn et al. (2016a) (flat air-water interface, da = 0.5 mm, dw = 3 mm, dp = 1 mm, stimulus offset from the fish by 10 mm along the screen) and Temizer et al., 2015 (curved air-water interface, da = 8 mm, dw = 2 mm, dp = 1 mm, r = 17.5 mm, stimulus centered) to create Snell-transformed images of circular stimuli with sizes growing over time (Figure 2a–c). We used a refractive index of np = 1.55 for the polystyrene plastic. While Dunn et al. collected data from freely swimming fish, the height of the water was kept at approximately 5 mm, and 3 mm reflects a typical swim depth. Since freely swimming zebrafish can adjust their depth in water, it’s an approximation to treat dw as constant.
 
-We quantified the size of each transformed stimulus with its solid angle, the surface area of the stimulus shape projected onto the unit sphere. To calculate the solid angle for Temizer et al., we used the formula for a spherical cap, A=2π(1-cos⁡θ), where  A is the solid angle and 2θ is the apex angle. To calculate the solid angle for Dunn et al., in which stimuli were not spherical caps, we first represented stimulus border pixels in a spherical coordinate system locating the fish at the origin. The radial coordinate does not affect the solid angle, so we described each border pixel by two angles: the latitude, α, and longitude, β. To calculate the area, we used an equal-area sinusoidal (Mercator) projection given byx,y= β cos⁡α,α,which projects an arbitrary shape on the surface of a sphere onto the Cartesian plane. While distances and shapes are not preserved in this projection, area as a fraction of the sphere’s surface area is maintained. Thus, we could calculate the solid area of the stimulus in this projection by finding the area of the projected 2D polygon. To calculate the absolute and relative discrepancy 95% confidence intervals in Figure 2c, we used error propagation formulae for the difference and division of two distributions, respectively.
+We quantified the size of each transformed stimulus with its solid angle, the surface area of the stimulus shape projected onto the unit sphere. To calculate the solid angle for Temizer et al., we used the formula for a spherical cap, $A=2\pi(1-cos⁡\theta)$, where $A$ is the solid angle and $2\theta$ is the apex angle. To calculate the solid angle for Dunn et al., in which stimuli were not spherical caps, we first represented stimulus border pixels in a spherical coordinate system locating the fish at the origin. The radial coordinate does not affect the solid angle, so we described each border pixel by two angles: the latitude, α, and longitude, $\beta$. To calculate the area, we used an equal-area sinusoidal (Mercator) projection given by
 
-## Receptive field mapping
+$$
+x,y=\betacos⁡\alpha,\alpha,
+$$
 
-We simulated receptive field (RF) mapping experiments by tracing light paths from single pixels on a virtual screen to the fish (Figure 2d-f). We modeled a neuron’s RF as a Gaussian function on the sphere, defined the “true RF” to be the pixel-wise response pattern that would occur in the absence of the air-water interface, and defined the “apparent RF” as the pixel-wise response pattern that would be induced with light that bends according to Snell’s law at an air-water interface. More precisely, we modeled the neural response to pixel activation at position x asFx=TψaxP(ρx,μRF,σRF2),where Tψax is the fraction of light transmitted (Fresnel equations),  μRF and σRF are the mean and standard deviation of the Gaussian RF, ρ(x,μRF) is the distance along a great circle from the center of the RF to the pixel’s projected retinal location, and Pρ,σRF2=e-ρ2/2σRF2  is the Gaussian RF shape. We calculated the great circle distance between points on the sphere ascos⁡ρx,μRF= sin⁡αRFsin⁡αx+ cos⁡αRFcos⁡αxcos⁡βx-βRF,where αRF,βRF are the latitude and longitude coordinate of the RF center, and αx,βx are the latitude and longitude coordinates of the projected pixel location. We quantified the position of the RF as the maximum of Fx, converted to an angular coordinate along the screen. We quantified RF area as the solid angle of the shape formed by thresholding Fx at half its maximal value.
+which projects an arbitrary shape on the surface of a sphere onto the Cartesian plane. While distances and shapes are not preserved in this projection, area as a fraction of the sphere’s surface area is maintained. Thus, we could calculate the solid area of the stimulus in this projection by finding the area of the projected 2D polygon. To calculate the absolute and relative discrepancy 95% confidence intervals in Figure 2c, we used error propagation formulae for the difference and division of two distributions, respectively.
 
-## Computational tool for simulating and correcting optical distortions
+### Receptive field mapping
+
+We simulated receptive field (RF) mapping experiments by tracing light paths from single pixels on a virtual screen to the fish (Figure 2d-f). We modeled a neuron’s RF as a Gaussian function on the sphere, defined the “true RF” to be the pixel-wise response pattern that would occur in the absence of the air-water interface, and defined the “apparent RF” as the pixel-wise response pattern that would be induced with light that bends according to Snell’s law at an air-water interface. More precisely, we modeled the neural response to pixel activation at position $x$ as
+
+$$
+Fx=Tψ_{a}xP(ρx,\mu_{RF},\sigma_{RF}^{2}),
+$$
+
+where $Tψ_{a}x$ is the fraction of light transmitted (Fresnel equations), $\mu_{RF}$ and $\sigma_{RF}$ are the mean and standard deviation of the Gaussian RF, $ρ(x,\mu_{RF})$ is the distance along a great circle from the center of the RF to the pixel’s projected retinal location, and $Pρ,\sigma_{RF}^{2}=e^{-ρ^{2}/2\sigma_{RF}^{2}}$ is the Gaussian RF shape. We calculated the great circle distance between points on the sphere as
+
+$$
+cos⁡ρx,\mu_{RF}=sin⁡\alpha_{RF}sin⁡\alpha_{x}+cos⁡\alpha_{RF}cos⁡\alpha_{x}cos⁡\beta_{x}-\beta_{RF},
+$$
+
+where $\alpha_{RF},\beta_{RF}$ are the latitude and longitude coordinate of the RF center, and $\alpha_{x},\beta_{x}$ are the latitude and longitude coordinates of the projected pixel location. We quantified the position of the RF as the maximum of $Fx$, converted to an angular coordinate along the screen. We quantified RF area as the solid angle of the shape formed by thresholding $Fx$ at half its maximal value.
+
+### Computational tool for simulating and correcting optical distortions
 
 With this paper, we provide a computation tool for visualizing and correcting distortions (https://github.com/spoonsso/snell_tool/). The tool is written in Python and uses standard image processing libraries. The tool can be launched virtually over the web, without any need to install new software, using the MyBinder link in the README file hosted on the github repository. The source code can also be downloaded and run on the user’s local machine.
 

@@ -15,20 +15,20 @@
 
 ### Affiliations
 
-1. https://ror.org/02k5swt12 Department of Clinical and Toxicological Analyses, School of Pharmaceutical Sciences, University of São Paulo São Paulo Brazil
-2. https://ror.org/04p491231 Department of Biochemistry and Molecular Biology, Pennsylvania State University, University Park Harrisburg United States
-3. https://ror.org/04p491231 Huck Institutes Center for Eukaryotic Gene Regulation, Pennsylvania State University, University Park Harrisburg United States
-4. https://ror.org/04p491231 Huck Institutes Center for Malaria Research, Pennsylvania State University, University Park Harrisburg United States
-5. https://ror.org/03025ga79 Hospital AC Camargo, Centro Internacional de Pesquisa São Paulo Brazil
-6. https://ror.org/02k5swt12 Department of Parasitology, Institute of Biomedical Science, University of São Paulo São Paulo Brazil
-7. https://ror.org/04ttjf776 School of Health and Biomedical Sciences, RMIT University Bundoora Australia
-8. https://ror.org/04p491231 Department of Chemistry, Pennsylvania State University, University Park Harrisburg United States
+1. Department of Clinical and Toxicological Analyses, School of Pharmaceutical Sciences, University of São Paulo São Paulo Brazil ([ROR:02k5swt12](https://ror.org/02k5swt12))
+2. Department of Biochemistry and Molecular Biology, Pennsylvania State University, University Park Harrisburg United States ([ROR:04p491231](https://ror.org/04p491231))
+3. Huck Institutes Center for Eukaryotic Gene Regulation, Pennsylvania State University, University Park Harrisburg United States ([ROR:04p491231](https://ror.org/04p491231))
+4. Huck Institutes Center for Malaria Research, Pennsylvania State University, University Park Harrisburg United States ([ROR:04p491231](https://ror.org/04p491231))
+5. Hospital AC Camargo, Centro Internacional de Pesquisa São Paulo Brazil ([ROR:03025ga79](https://ror.org/03025ga79))
+6. Department of Parasitology, Institute of Biomedical Science, University of São Paulo São Paulo Brazil ([ROR:02k5swt12](https://ror.org/02k5swt12))
+7. School of Health and Biomedical Sciences, RMIT University Bundoora Australia ([ROR:04ttjf776](https://ror.org/04ttjf776))
+8. Department of Chemistry, Pennsylvania State University, University Park Harrisburg United States ([ROR:04p491231](https://ror.org/04p491231))
 
 † Corresponding author
 
 ## Abstract
 
-Dynamic control of gene expression is critical for blood stage development of malaria parasites. Here, we used multi-omic analyses to investigate transcriptional regulation by the chromatin-associated microrchidia protein, MORC, during asexual blood stage development of the human malaria parasite Plasmodium falciparum . We show that Pf MORC (PF3D7_1468100) interacts with a suite of nuclear proteins, including APETALA2 (ApiAP2) transcription factors ( Pf AP2-G5, Pf AP2-O5, Pf AP2-I, PF3D7_0420300, PF3D7_0613800, PF3D7_1107800, and PF3D7_1239200), a DNA helicase DS60 (PF3D7_1227100), and other chromatin remodelers ( Pf CHD1 and Pf EELM2). Transcriptomic analysis of Pf MORC HA-glmS knockdown parasites revealed 163 differentially expressed genes belonging to hypervariable multigene families, along with upregulation of genes mostly involved in host cell invasion. In vivo genome-wide chromatin occupancy analysis during both trophozoite and schizont stages of development demonstrates that Pf MORC is recruited to repressed, multigene families, including the var genes in subtelomeric chromosomal regions. Collectively, we find that Pf MORC is found in chromatin complexes that play a role in the epigenetic control of asexual blood stage transcriptional regulation and chromatin organization.
+Dynamic control of gene expression is critical for blood stage development of malaria parasites. Here, we used multi-omic analyses to investigate transcriptional regulation by the chromatin-associated microrchidia protein, MORC, during asexual blood stage development of the human malaria parasite Plasmodium falciparum. We show that PfMORC (PF3D7_1468100) interacts with a suite of nuclear proteins, including APETALA2 (ApiAP2) transcription factors (PfAP2-G5, PfAP2-O5, PfAP2-I, PF3D7_0420300, PF3D7_0613800, PF3D7_1107800, and PF3D7_1239200), a DNA helicase DS60 (PF3D7_1227100), and other chromatin remodelers (PfCHD1 and PfEELM2). Transcriptomic analysis of PfMORCHA-glmS knockdown parasites revealed 163 differentially expressed genes belonging to hypervariable multigene families, along with upregulation of genes mostly involved in host cell invasion. In vivo genome-wide chromatin occupancy analysis during both trophozoite and schizont stages of development demonstrates that PfMORC is recruited to repressed, multigene families, including the var genes in subtelomeric chromosomal regions. Collectively, we find that PfMORC is found in chromatin complexes that play a role in the epigenetic control of asexual blood stage transcriptional regulation and chromatin organization.
 
 ## Introduction
 
@@ -44,39 +44,202 @@ While most metazoans possess 5–7 MORC paralogs, apicomplexan parasites contain
 
 ## Results
 
-## Proteins that co-purify with PMORC represent gene regulatory and chromatin remodeling components
+### Proteins that co-purify with PMORC represent gene regulatory and chromatin remodeling components
 
 A previous study using Blue-Native PAGE identified a PfMORC complex in association with ApiAP2 proteins and chromatin remodeling machinery (Hillier et al., 2019). To validate this observation and expand the repertoire of PfMORC interactors, we used a targeted immunoprecipitation approach coupled to LC‒MS/MS proteomic quantification. We used a previously generated PfMORCGFP parasite line (Singh et al., 2021a) to carry out immunoprecipitation with an anti-GFP antibody at the trophozoite stage, where PfMORC is abundant (Singh et al., 2021b). The P. falciparum 3D7 strain expressing wild-type pfmorc was used as a negative control. Trophozoite lysates were incubated with anti-GFP-Trap-A beads (ChromoTek, gta-20), and the immunocaptured proteins were resolved by SDS‒PAGE (Figure 1—figure supplement 1A). We applied a label-free quantitative proteomics approach with a false discovery rate (FDR) of 1% and number of peptides ≥2 to excised gel samples to identify proteins interacting with PfMORCGFP. From three biological replicates, we identified 211, 617, and 656 proteins, respectively. We further identified the overlap between all three wild-type 3D7 and PfMORCGFP replicates and found a total of 132 and 142 proteins, respectively (Figure 1—figure supplement 1B–D, Supplementary file 1).
 
 To analyze the relative ratio of proteins between wild-type 3D7 and PfMORCGFP groups, we used the mean-normalized MS/MS count to calculate a fold change from PfMORCGFP/3D7, and selected differentially abundant proteins above a 1.5× cutoff filter. This high stringency threshold was used to preclude any mis-identification of PfMORC interactors caused by variability between the replicates (Figure 1A, Figure 1—figure supplement 1D). This analysis resulted in 143 significantly enriched proteins (Supplementary file 2). From these candidate PfMORC-interacting proteins, the top enriched protein (20.8-fold enrichment) was PfEELM2 (PF3D7_0519800, -log10 p-value 3.43). PfEELM2 was previously predicted as a PfMORC interactor (Hillier et al., 2019) and identified in a quantitative histone peptide pulldown to be consistently recruited to H2B.Z_K13/14/18a (Hoeijmakers et al., 2019). Similarly, EELM2 of the related Apicomplexan parasite T. gondii was recently identified in a TgMORC-associated complex (Farhat et al., 2020). We also detected numerous ApiAP2 transcription factors (PfAP2-G5, PfAP2-O5, PfAP2-I, PF3D7_1107800, PF3D7_0613800, PF3D7_0420300, and PF3D7_1239200) (Table 1), similar to results reported both by Hillier et al., 2019 and in the Toxoplasma studies which also predicted or experimentally identified many ApiAP2 interactions (Farhat et al., 2020; Srivastava et al., 2023; Antunes et al., 2024). PfAP2-G5 (PF3D7_1139300, -log10 p-value 0.22) and PfAP2-O5 (PF3D7_1449500, -log10 p-value 0.41) were enriched 20.5-fold and 14.99-fold, respectively, suggesting that these factors are likely major components in complex with PfMORC. To corroborate our results, we compared our PfMORCGFP coIPed proteins to a recently published, computationally predicted, protein–protein interaction network (Hillier et al., 2019; Bryant et al., 2020; Subudhi et al., 2023) and found many of ApiAP2 and EELM2 proteins shared across both datasets (Figure 1B). Collectively, our results demonstrate a direct association of PfMORC with various chromatin-associated factors, including at least seven ApiAP2 proteins.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig1-v1.jpg)
+
+**Figure 1.:** (A) Volcano plot illustrates the protein enrichment in label free LC-MS/MS analysis of PfMORC CoIPed proteins from three independent experiments at 32 hours post invasion (hpi). For normalized MS/MS counts, Student’s t-test was performed and proteins were ranked as -log2 fold-change (x-axis) versus statistical p-values (y-axis). Gray dashed horizontal line shows the p-value cutoff. (B) Comparative analysis showing the juxtaposition of specific proteins CoIPed in PfMORCGFP with selected proteins from recent works of Hillier et al., Bryant et al., and Subudhi et al., where ApiAP2 or ISW1 were used as bait in similar CoIP experiments. The Venn diagram illustrates the overlap between identified proteins, revealing that the intersecting proteins are primarily ApiAP2 and chromatin remodelers. (C) An interactive protein–protein interaction network is constructed with proteins known to interact with PfMORC, using proteins identified in this study and proteins documented in previously published works. Proteins identified in this study with known interaction networks from the STRING database were used to curate the network employing Cytoscape to enrich the network quality.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Coomassie-stained 6% SDS‒PAGE gel showing the parasite lysate of wild-type 3D7 and PfMORCGFP after coimmunoprecipitation with anti-GFP magnetic beads. Both lanes were used for mass spectrometry analysis. (B) Histogram shows the total proteins identified in mass spectrometry analysis from three biological replicates in wild-type 3D7 and PfMORCGFP coimmunoprecipitated samples. Venn diagram illustrates the labeled free LC-MS/MS enrichment of peptide hits obtained from (C) 3D7 control and (D) from PfMORCGFP parasites lysate. Briefly, 32 hpi (±4 hr) trophozoite stage parasites were harvested and lysed, followed by incubation with anti-GFP-Trap-A beads from three independent biological replicates were used for quantification. False discovery rate (FDR) of 1% and peptides ≥2 leads to identifying 191, 814, 589, and 211, 617, 656 significant proteins in 3D7 and PfMORCGFP, respectively. (E) MS/MS normalization of identified proteins from 3D7 parasites expressing PfMORC and transgenic parasites expressing GFP (PfMORCGFP) was carried out. Gene Ontology classification showing biological process, cellular component, and molecular function of PfMORCGFP/3D7 normalized proteins showing fold change ≥1.5.
+
+**Table 1.**
+ Potential PfMORC interacting proteins enriched in CoIP eluates and identified in LC-MS/MS from three independent experiments and fold change ≥1.5× GFP/3D7.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein ID</th>
+      <th>Annotation</th>
+      <th>Fold change</th>
+      <th>-log p-value</th>
+      <th>Known function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PF3D7_0519800</td>
+      <td>EELM2 domain-containing protein</td>
+      <td>20.79</td>
+      <td>3.45</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PF3D7_1139300</td>
+      <td>AP2 domain transcription factor AP2-G5</td>
+      <td>20.5</td>
+      <td>0.22</td>
+      <td>Repressor of commitment and early gametocyte development (Shang et al., 2021a)</td>
+    </tr>
+    <tr>
+      <td>PF3D7_1449500</td>
+      <td>AP2 domain transcription factor AP2-O5</td>
+      <td>14.99</td>
+      <td>0.41</td>
+      <td>Regulator of mature ookinete motility (Modrzynska et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>PF3D7_1468100</td>
+      <td>PfMORC</td>
+      <td>11.76</td>
+      <td>1.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PF3D7_1023900</td>
+      <td>SNF2 helicase, putative or Chromodomain-helicase-DNA-binding protein 1 homolog, CHD1</td>
+      <td>10.61</td>
+      <td>0.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PF3D7_1459000</td>
+      <td>ATP-dependent RNA helicase DBP5</td>
+      <td>10.24</td>
+      <td>0.46</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PF3D7_1227100</td>
+      <td>DNA helicase 60, DH60</td>
+      <td>6.55</td>
+      <td>0.41</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PF3D7_1007700</td>
+      <td>AP2 domain transcription factor AP2-I</td>
+      <td>4.65</td>
+      <td>0.08</td>
+      <td>Invasion (Santos et al., 2017; Josling et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>PF3D7_1107800</td>
+      <td>AP2 domain transcription factor</td>
+      <td>3.11</td>
+      <td>0.36</td>
+      <td>Master regulator of parasite growth, chromatin structure, and var gene expression (Subudhi et al., 2023)</td>
+    </tr>
+    <tr>
+      <td>PF3D7_0613800</td>
+      <td>AP2 domain transcription factor</td>
+      <td>2.43</td>
+      <td>0.28</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PF3D7_0420300</td>
+      <td>AP2 domain transcription factor (ApiAP2)</td>
+      <td>2.38</td>
+      <td>0.48</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PF3D7_0624600</td>
+      <td>SNF2 helicase, ISW1</td>
+      <td>2.09</td>
+      <td>0.001</td>
+      <td>var gene expression (Bryant et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>PF3D7_1239200</td>
+      <td>AP2 domain transcription factor</td>
+      <td>2.01</td>
+      <td>0.25</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
 The potential interactors of PfMORC that we detected in this experiment also included proteins implicated in DNA replication and repair, including the ATP-dependent RNA helicase DBP5 (PF3D7_1459000, -log10 p-value 0.46) and the DNA helicase 60 DH60 (PF3D7_1227100, -log10 p-value 0.41). PfDH60 exhibits DNA and RNA unwinding activities, and its high expression in the trophozoites suggests a role in DNA replication (Pradhan et al., 2005). We also identified two putative chromatin-associated proteins, chromodomain-helicase-DNA-binding protein 1 CHD1 (PF3D7_1023900, -log10 p-value 0.30) and the SNF2 chromatin-remodeling ATPase ISWI (PF3D7_0624600, -log10 p-value 0.001), which are associated with chromosome structure maintenance, DNA replication, DNA repair, and transcription regulation. PfISWI was previously reported to be associated with PfMORC in the context of var gene transcriptional activation during ring stage development (Bryant et al., 2020). Gene Ontology (GO) analysis was performed to identify enriched biological processes, cellular components, and molecular functions using a p-value cutoff of 0.05. We found significant enrichment of DNA-binding transcription factor activity and mRNA binding, transcription, and regulation of transcription activity (Figure 1—figure supplement 1E, Supplementary file 3). Overall, we again find that PfMORC forms a link between ApiAP2 TFs and chromatin remodelers (Figure 1C).
 
-## PfMORC localizes to multigene families in subtelomeric regions
+### PfMORC localizes to multigene families in subtelomeric regions
 
 To determine the genome-wide occupancy of the PfMORC chromatin-associated remodeling complex, we used chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq). Using purified, crosslinked nuclear extracts, we immunoprecipitated PfMORC from a 3xHA-tagged PfMORCHA-glmS parasite line (Singh et al., 2021a) for ChIP-seq at the trophozoite stage (30 hpi) and the schizont stage (40 hpi) in biological duplicates. These timepoints represent the stages at which PfMORC expression is the highest (Singh et al., 2021b). An independent ChIP-seq experiment in biological duplicate using anti-GFP and a PfMORCGFP parasite line (Singh et al., 2021b) at the schizont stage was used to confirm our findings, demonstrating that the protein tags do not affect PfMORC immunoprecipitation or genome-wide localization (Figure 2—figure supplement 1A and B). As an additional control, we correlated one no-epitope (3D7 wild type), negative control sample using the same anti-HA antibody on unmodified parasite lines for immunoprecipitation (Figure 2—figure supplement 1A and B; Bonnell et al., 2023), which resulted in an expected low correlation to the tagged samples. The biological ChIP-seq replicates showed high fold enrichment (Log2[IP/Input]) (Figure 2—figure supplement 1C) and were highly correlated with each other within each timepoint (Figure 2—figure supplement 1D–F).
 
 We identified PfMORC localized to subtelomeric regions on all chromosomes across the P. falciparum genome, with additional occupancy at internal heterochromatic islands (Figure 2A and B). Within the subtelomeric regions, PfMORC was bound upstream and within the gene bodies of many hypervariable multigene families (Figure 2C), including var genes (Figure 2—figure supplement 2), rif genes (Figure 2—figure supplement 3), and stevor genes (Figure 2—figure supplement 4). Predicted binding sites (across both biological replicates) between the 30 hpi and 40 hpi timepoints showed a high degree of overlap, suggesting that PfMORC binds many of the same regions throughout the later stages of asexual development when PfMORC is highly expressed (Figure 2D). The proportion of PfMORC-bound regions was similar across the 5′ upstream region of genes and the gene bodies throughout the genome, including subtelomeric regions (Figure 2E). As opposed to the binding of other proteins at the subtelomeric regions, such as the heterochromatin protein 1 (PfHP1) (Flueck et al., 2010), PfMORC occupancy is not widespread. Instead, it forms sharp peaks within, and adjacent to, HP1-bound regions (Figure 2F), suggesting a unique role for PfMORC in heterochromatin condensation, boundary demarcation, and gene repression.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig2-v1.jpg)
+
+**Figure 2.:** (A) Coverage tracks of PfMORC across all 14 P. falciparum chromosomes. Plotted values are fold enrichment (Log2[IP/Input]) of a representative replicate at 30 hr. (B) Zoom-in of the last 100 kb region of chromosome two from (A). Gene annotations represented in blue bars (P. falciparum 3D7 strain, version 3, release 57; PlasmoDB.org). (C) Mean fold enrichment of PfMORC occupancy across all var genes (top left), all rif genes (top right), and all stevor genes (bottom right), excluding pseudogenes. Graphical representation of exons to scale for each gene family annotated below enrichment plot in grey (e1 = exon one; e2 = exon two). (D) Quantitative Venn diagram comparing the number of MACS2 called peaks across each timepoint (light pink for 30 hr; dark pink for 40 hr). (E) Pie charts showing the type of genomic locations PfMORC peaks overlap at both 30 hr and 40 hr. Pink slices are 5` regions upstream of the ATG start site of genes, blue slices are coding sequences/gene bodies of genes, and green slices are 3` regions downstream of the stop codon of genes. (F) Zoom-in of the first 100 kb region (left) and the last 100 kb region (right) of chromosome two. Plotted are the ChIP-seq fold enrichment of PfMORC (top track; pink) and heterochromatin protein 1 (HP1; middle track; orange) with gene annotations (bottom track; blue bars; P. falciparum 3D7 strain, version 3, release 57; PlasmoDB.org).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Correlation plot (DeepTools PlotCorrelation) of the 30 hr samples compared to the negative control ChIP-seq sample. (B) Correlation plot (DeepTools PlotCorrelation) of the 40 hr samples compared to the negative control ChIP-seq sample. (C) Violin plot showing the ChIP-seq fold enrichment values of significantly called peaks in all six biological replicates. The two GFP samples were only used as additional controls for comparison purposes. (D) Venn diagram comparing the overlap of MACS2-called peaks between anti-HA biological replicates at 30 hr. (E) Venn diagram comparing the overlap of MACS2-called peaks between anti-HA biological replicates at 40 hr. (F) Venn diagram comparing the overlap of MACS2-called peaks between anti-GFP biological replicates at 40 hr.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (Top) Profile plot of the mean PfMORC ChIP-seq fold enrichment (Log2[IP/Input]) for all four samples across all PfEMP1 (var) gene 5` upstream regions and gene bodies. (Bottom) Heatmap of the PfMORC ChIP-seq fold enrichment (Log2[IP/Input]) for all four samples across all PfEMP1 (var) gene 5` upstream regions and gene bodies. (Inset to the right) Zoom-in on the average enrichment of PfMORC at var genes with annotated exons.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (Top) Profile plot of the mean PfMORC ChIP-seq fold enrichment (Log2[IP/Input]) for all four samples across all rif gene 5` upstream regions and gene bodies. (Bottom) Heatmap of the PfMORC ChIP-seq fold enrichment (Log2[IP/Input]) for all four samples across all rif gene 5` upstream regions and gene bodies. (Inset to the right) Zoom-in on the average enrichment of PfMORC at rif genes with annotated exons.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (Top) Profile plot of the mean PfMORC ChIP-seq fold enrichment (Log2[IP/Input]) for all four samples across all rif gene 5` upstream regions and gene bodies. (Bottom) Heatmap of the PfMORC ChIP-seq fold enrichment (Log2[IP/Input]) for all four samples across all rif gene 5` upstream regions and gene bodies. (Inset to the right) Zoom-in on the average enrichment of PfMORC at rif genes with annotated exons.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Red signifies high transcript abundance, and green signifies low transcript abundance. Both timepoints are organized into two major clusters (highlighted with the yellow bar and blue bar).
+
 We further defined PfMORC putative gene targets as genes displaying peaks within 2 kb upstream of the ATG start codon or within gene bodies. For those peaks between gene targets in a head-to-head orientation, the closest gene was chosen. This resulted in 149 putative gene targets at 30 hpi and 102 gene targets at 40 hpi. A close examination of the 84 overlapping genes shows that many are var genes, rRNA genes, and genes encoding exported proteins (Supplementary file 4), with GO terms related to cell adhesion, host‒pathogen interactions, and antigenic variation (Supplementary file 5). The 65 uniquely bound genes at the 30 hpi timepoint showed an enrichment of highly expressed tRNA and rRNAs genes, as well as conserved unknown genes, while those 18 unique to the 40 hpi timepoint included a variety of late-stage expressed genes. Transcript abundance (Chappell et al., 2020) of the predicted PfMORC gene targets at both the 30 hpi and 40 hpi timepoints form two major clusters: cluster 1 being genes expressed at the late ring/early trophozoite stage (10‒24 hpi) and cluster 2 at the late schizont stage (40‒48 hpi) (Figure 2—figure supplement 5). This two-cluster gene target pattern of expression mirrors the biphasic pattern of expression by PfMORC, suggesting that PfMORC could have distinct functions, forming complexes with different sets of transcriptional regulators, at various times during asexual proliferation. As determined in other eukaryotic organisms, MORC family proteins do not generally bind DNA in a sequence-specific manner; it is, therefore, likely that PfMORC is recruited to these genome-wide regions by sequence-specific transcription factors, such as the ApiAP2 proteins identified in our proteomics results.
 
-## Binding sites of PfMORC overlap with ApiAP2 proteins and epigenetic marks
+### Binding sites of PfMORC overlap with ApiAP2 proteins and epigenetic marks
 
 PfMORC has previously been found to interact with several ApiAP2 proteins (Hillier et al., 2019; Bryant et al., 2020; Singh et al., 2021b), as does the Toxoplasma ortholog (Farhat et al., 2020; Srivastava et al., 2023; Antunes et al., 2024). We identified a clear overlap between genome-wide PfMORC binding and putatively interacting ApiAP2 proteins using available ChIP-seq datasets. In addition to our protein–protein interaction results (Table 1), previous studies have also suggested that PfMORC interacts with a broad array of ApiAP2 TFs, such as PfAP2-G5, PfAP2-O5, PfAP2-I, PF3D7_1107800, PF3D7_0613800, PF3D7_0420300, and PF3D7_1239200 (Hillier et al., 2019; Bryant et al., 2020; Subudhi et al., 2023). Therefore, we compared binding sites between interacting ApiAP2s and PfMORC using available ChIP-seq data on PfAP2-G5, PfAP2-O5, PfAP2-I, PF3D7_1107800, PF3D7_0613800, and PF3D7_1239200 (Josling et al., 2020; Shang et al., 2021b, Shang et al., 2022). Interestingly, there is a degree of overlap between the binding sites of all six ApiAP2 TFs and PfMORC, suggesting that PfMORC and these ApiAP2 TFs may cooperate in the regulation of gene expression at these loci (Figure 3A and B, Figure 3—figure supplement 1). However, the available data cannot differentiate whether all these factors are in one complex together, form multiple smaller heterologous complexes, or are components of separate complexes in individual cells. DNA motif enrichment analysis (Bailey, 2021) identified several unique and significant DNA motifs at both the 30 hpi and 40 hpi timepoints, which suggests that more than one sequence-specific transcription factor may be responsible for recruiting PfMORC to specific genomic regions (Figure 3—figure supplement 2). The common motifs identified across replicates and timepoints are RGTGCAW or TGCACACA, both of which are similar or identical to the in vitro and/or in vivo DNA-binding motif of PfAP2-I (RGTGCAW) or PF3D7_0420300 (TGCACACA), respectively, suggesting that these ApiAP2 factors may play major roles in PfMORC recruitment (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig3-v1.jpg)
+
+**Figure 3.:** (A) Mean fold enrichment (Log2[IP/Input]) of PfMORC, six associated factors (AP2-G5, AP2-O5, AP2-I, PF3D7_1107800, PF3D7_0613800, and PF3D7_1239200), HP1, and a negative no-epitope control across PfMORC binding sites at the 30 hr timepoint. (B) Mean fold enrichment (Log2[IP/Input]) of PfMORC, six associated factors (AP2-G5, AP2-O5, AP2-I, PF3D7_1107800, PF3D7_0613800, and PF3D7_1239200), HP1, and a negative no-epitope control across PfMORC binding sites at the 40 hr timepoint. (C) Mean fold enrichment (Log2[IP/Input]) and heatmap of two H3K36me2 epigenetic mark timepoints across PfMORC binding sites at 30 hr. (D) Mean fold enrichment (Log2[IP/Input]) and heatmap of two H3K36me2 epigenetic mark timepoints across PfMORC binding sites at 40 hr.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Associated with Figure 3A and B. Mean fold enrichment (Log2[IP/Input]) summary plot (top) and full heatmap (bottom) of fold enrichment of PfMORC, six associated ApiAP2 factors (AP2-G5, AP2-O5, AP2-I, PF3D7_1107800, PF3D7_0613800, and PF3D7_1239200), HP1, and a negative no-epitope control across PfMORC binding sites at the 30 hr and 40 hr timepoints. (B) Quantitative Venn diagrams of the binding site overlap between PfMORC and the six associated ApiAP2 factors.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The values to the right of each motif contain the enrichment value, number of peaks containing that motif, and percent of the peaks the contain that motif calculated by Meme Suite.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig3-figsupp3-v1.jpg)
+
 In addition to overlapping occupancy with ApiAP2 TFs, we found that PfMORC co-localizes with the depletion of H3K36me2 (Figure 3C and D), which is demarcated by the SET2 methyltransferase (Jiang et al., 2013), both at 30 hpi and 40h pi. No other significant co-localization was found between PfMORC and other epigenetic marks (H2A.Z, H3K9ac, H3K4me3, H3K27ac, H3K18ac, H3K9me3, H3K36me2/3, H4K20me3, and H3K4me1) (Figure 3—figure supplement 3), suggesting it has a unique binding preference not shared with other heterochromatin markers. Therefore, it is likely that PfMORC co-localizes with other, as yet uncharacterized, epigenetic marks. In summary, PfMORC was found to be recruited to 5′-untranslated regions (UTRs), gene body regions, and subtelomeric regions of repressed, multigene families, and overlaps with other known ApiAP2 binding sites and DNA motifs.
 
-## Depletion of PfMORC results in the upregulation of late-stage genes associated with invasion
+### Depletion of PfMORC results in the upregulation of late-stage genes associated with invasion
 
 PfMORC association with chromatin remodelers has been shown (Bryant et al., 2020), but how PfMORC regulates gene expression in the asexual stage has not been evaluated. In T. gondii, the TgMORC:TgApiAP2 complex acts as a transcriptional repressor of sexual commitment (Farhat et al., 2020; Srivastava et al., 2023; Antunes et al., 2024). Here, we found that PfMORC co-immunoprecipitates with several chromatin remodeling proteins and many ApiAP2 transcription factors. Furthermore, our ChIP-seq data revealed that PfMORC is located at subtelomeric regions of the genome. Based on this evidence, we hypothesized that PfMORC may regulate transcriptional changes during blood stage development of the parasite. To knock down the expression of PfMORC (PfMORC-KD), sorbitol-synchronized MORCHA-glmS parasites (22–24 hpi) were subjected to 2.5 mM glucosamine (GlcN) treatment for little over 48 hr when they reached the trophozoite stage (32 hpi ±3 hpi), at which point parasites were harvested for RNA isolation for transcriptomic analysis. In parallel, another flask with PfMORCHA-glmS parasites was set up without GlcN and used as control for RNA-seq comparison. We previously demonstrated that treatment with 2.5 mM GlcN results in a 50% knockdown of PfMORC protein but does not cause any growth delay; using >2.5 mM GlcN caused a measurable slow growth and reduced parasitemia (Singh et al., 2021b). Three biological replicates with and without 2.5 mM GlcN were collected for knockdown transcriptomics to ensure reproducibility.
 
 For each PfMORC RNA-seq sample, gene counts were used to identify the differentially expressed genes (DEGs). Significant threshold parameters were assigned to a p-value<0.05, yielding a total of 2558 DEGs (Supplementary file 6). Applying a log2-fold change cutoff from >1 to <-1 and filtering out pseudogenes reduced this number to 163 DEGs. Among these, 60 genes display more abundant transcripts, whereas 103 genes were reduced relative to control parasites grown without GlcN (Figure 4A). Pathway and functional enrichment analysis yielded several genes from apical organelles. GO analysis revealed gene clusters enriched with molecular function (p-adj=0.0006) involved in the movement into the host environment and entry into the host, and molecular function of protein binding (p-adj=0.009) (Figure 4B, Supplementary file 7). More specifically, upregulated genes implicated in the invasion of merozoites were found to be expressed prematurely upon PfMORC KD; these include several rhoptry-associated genes, notably PfRON2 (PF3D7_1452000) and PfRON3 (PF3D7_1252100). Both PfRON2 and PfRON3 are part of a micronemal complex at the erythrocyte membrane where PfRON2 anchors PfAMA1 to facilitate merozoite invasion (Srinivasan et al., 2013). In addition, PfSUB3 (PF3D7_0507200), PfSERA5 (PF3D7_0207600), and PfDPAP3 (PF3D7_0404700), all of which are critical for schizont rupture (Yeoh et al., 2007; Arastu-Kapur et al., 2008), were among the upregulated DEGs (Figure 4C). In general, we found that depletion of PfMORC leads to the upregulation of invasion-related genes, which suggests that PfMORC has an additional function in the regulation of genes specifically associated with RBC invasion.
 
-## PfMORC-depleted parasites downregulate hypervariable gene families
+![Figure 4.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig4-v1.jpg)
+
+**Figure 4.:** (A) Volcano plot displaying the differential gene expression in PfMORC-KD compared to the PfMORC-WT phenotype. Tightly synchronized PfMORCHA-glmS parasites (32 hpi ± 3 hr) were split into two populations, one of which was treated with 2.5 mM GlcN to obtain the PfMORC knockdown phenotype and the other was not treated with GlcN to obtain wild-type phenotype. Total RNA-seq was performed, and significant threshold parameters for differentially expressed genes (DEGs) were assigned to a p-value <0.05 and -log2 fold change >1 from three biological replicates. (B) Scatter plot shows upregulated and downregulated DEGs which were further categorized for pathway and functional enrichment analysis using the KEGG database (p-adjusted value<0.05). The circle size at the vertical axis represents the number of genes in the enriched pathways and the horizontal axis represents gene richness as a ratio of DEGs in the pathways to the total genes in a specific pathway. (C) The violin plot of log2 fold change of genes belonging to the multigene family is constructed from PfMORC-KD vs. PfMORC-WT, which shows DEGs of multigene family proteins upon PfMORC knockdown. (D) The bar plot illustrates the upregulated DEGs of apical organelle origin in PfMORC-KD parasites involved in host cell invasion. (E) Venn diagram showing the comparison between genes obtained from ChIP-seq data and DEGs obtained from RNA-seq data. Both 30hpi and 40 hpi timepoints were taken for comparison and showed high overlap with each other but there was no overlap with RNA-seq data.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92201/elife-92201-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Volcano plot showing the differentially expressed genes in PfMORC-KD parasites relative to PfMORC-WT after 100 nM melatonin treatment for 5 hr from three independent experiments. (B) Venn diagram shows intersecting differentially expressed genes (DEGs) from the experiment with KD vs. WT with DEGs obtained from the experiment (KD vs. WT) treated with 100 nM melatonin for 5 hr. Number of DEGs is shown as up- (red) and downregulated (green). The intersecting region shows 282 upregulated and 340 downregulated genes. Heatmap showing significant DEGs based on p-values and log2FC for upregulating (C) and downregulating (D). These genes are taken from 622 intersecting DEGs showing partial changes in expression after melatonin treatment.
+
+### PfMORC-depleted parasites downregulate hypervariable gene families
 
 Among the genes with reduced mRNA abundance, DEGs linked to cytoadherence, antigenic variation, and interaction with host (Figure 4B and D) were over-represented in the GO analysis. Many of the genes enriched in the downregulated group belong to the clonally variant var multigene family that represents 60 members encoding the P. falciparum erythrocyte membrane proteins (PfEMP1), which upon switching expression aid in pathogenesis and immune evasion (Guizetti and Scherf, 2013). Furthermore, a cluster of genes encoding putative exported proteins were also enriched including members of the exported protein family (EPFs), Plasmodium exported protein (hyp), and Plasmodium exported protein (PHISTa/b). Other significantly overrepresented downregulated genes belonged to serine/threonine protein kinases, the FIKK family (Ward et al., 2004), most of which are exported to the RBC, and Maurer’s clefts two transmembrane proteins (Pfmc-2TM) (Figure 4D). Notably, expressed proteins are conserved across the Plasmodium family and remain confined to the hypervariable subtelomeric region of P. falciparum chromosomes (Sargeant et al., 2006).
 
-## Comparison of ChIP-seq gene targets and DEGs by RNA-seq
+### Comparison of ChIP-seq gene targets and DEGs by RNA-seq
 
 To identify whether genes found to be dysregulated after PfMORC knockdown are associated with the genome-wide occupancy of PfMORC, we correlated the gene targets identified by ChIP-seq with the DEGs determined by RNA-seq. We identified a total of 135 gene targets from the 30 hpi ChIP-seq timepoint, 72 gene targets from the 40 hpi ChIP-seq timepoint, and 163 DEGs by RNA-seq. The low correlation between the ChIP-seq gene targets and the RNA-seq DEGs suggests that PfMORC genome-wide occupancy is more likely involved in chromatin structure, rather than specific regulation of gene targets (Figure 4E). Likely, PfMORC localizes to these sites to aid in chromatin condensation, as shown in other eukaryotic systems (Zhang et al., 2019; Zhong et al., 2023).
 
@@ -98,27 +261,27 @@ Overall, this study shows that PfMORC interacts with different ApiAP2 TFs, in li
 
 ## Materials and methods
 
-## Plasmodium falciparum culture
+### Plasmodium falciparum culture
 
 The P. falciparum 3D7 strain (BEI Resources, MRA-102) and MORC constructs (3D7 background) were cultured at 37°C in RPMI 1640 medium supplemented with 0.5% Albumax II (Gibco) (Trager and Jensen, 1976). Parasites were grown under a 5% CO2, 5% O2, and 90% N2 atmosphere. Cultures were synchronized with 5% sorbitol (Lambros and Vanderberg, 1979). Parasites were tested negative for mycoplasma contamination using PCR.
 
-## Coimmunoprecipitation and mass spectrometry
+### Coimmunoprecipitation and mass spectrometry
 
 Infected erythrocytes at the trophozoite stage were collected from culture and washed twice in 1× phosphate-buffered saline (PBS). The culture pellet was suspended in PBS containing 0.05% (w/v) saponin to lyse the erythrocyte membrane and centrifuged at 8000 × g for 10 min. The supernatant was discarded, and the parasite pellet was washed three times in cold PBS. To perform the co-immunoprecipitation, we followed the manufacturer’s protocol (ChromoTek, gta-20). Samples were lysed in modified RIPA buffer (50 mM Tris, pH 7.5, 150 mM NaCl, 0.5% sodium deoxycholate, 1% Nonidet P-40, 10 µg/ml aprotinin, 10 µg/ml leupeptin, 10 µg/ml, 1 mM phenylmethylsulfonyl fluoride, benzamidine) for 30 min on ice. The lysate was precleared with 50 µl of protein A/G-Agarose beads at 4°C for 1 hr and clarified by centrifugation at 10,000 × g for 10 min. The precleared lysate was incubated overnight with an anti-GFP-Trap-A beads (ChromoTek, gta-20) antibody. The magnetic beads were then pelleted using a magnet (Invitrogen), and the beads were washed extensively using wash buffer (50 mM Tris, pH 7.5, 150 mM NaCl, 0.5% sodium deoxycholate, 1% Nonidet P-40) to minimize the detection of non-specific proteins. To elute the immunoprecipitated proteins, the magnetic beads were resuspended in 2× SDS loading buffer and resolved by SDS-PAGE. Following SDS-PAGE, the whole gel band for each sample was excised from three independent experiments and further analyzed by mass spectrometry. We used a service provider (CEFAP core-facility de Espectometria de Massa) to analyze GFP-coimmunoprecipitated proteins.
 
-## In-gel digestion and peptide desalting
+### In-gel digestion and peptide desalting
 
 Protein bands from polyacrylamide gels were cut into pieces (approximately 1 mm3), transferred to a clean 1.5 ml low binding tube and washed with washing solution (40% acetonitrile, 50 mM ammonium bicarbonate) until the bands were completely distained, and dehydrated with ACN 100% for 5 min followed by vacuum centrifugation. Proteins were then reduced with 10 mM dithiothreitol in 50 mM ammonium bicarbonate and incubated for 45 min at 56°C. Protein alkylation was performed with 55 mM iodoacetamide in 50 mM ammonium bicarbonate and incubated for 30 min at room temperature. Proteins were digested into peptides by trypsin overnight reaction at 37°C. The trypsin reaction was stopped with 10% TFA (1% TFA final concentration). The supernatant was collected into a new tube. Extraction buffer (40% ACN/0.1% TFA) was added to the gel pieces and incubated for 15 min on a thermomixer at room temperature. The supernatant was transferred to the same microtube. The peptide extraction was performed twice and then dried in a vacuum centrifuge. Peptides were resuspended in 0.1% TFA for desalting.
 
-## Nano LC-MS/MS analysis
+### Nano LC-MS/MS analysis
 
 The LC-MS/MS system employed was an Easy-nano LC 1200 system (Thermo Fisher Scientific Corp) coupled to an Orbitrap Fusion Lumos mass spectrometer equipped with a nanospray source (Thermo Fisher Scientific Corp). Samples were loaded onto a trapping column (Acclaim PepMap 0.075 mm, 2 cm, C18, 3 μm, 100 A; Thermo Fisher Scientific Corp.) in line with a nano-LC column (Acclaim PepMap RSLC 0.050 mm, 15 cm, C18, 2 μm, 100 A; Thermo Fisher Scientific Corp.). The gradient was 5–28% solvent B (A 0.1% FA; B 90% ACN, 0.1% FA) for 25 min, 28–40% B for 3 min, 40–95% B for 2 min, and 95% B for 12 min at 300 nl/min. Orbitrap Fusion Lumos mass spectrometer operated in positive mode. The full MS scan had an automatic gain control (AGC) of 5 × 105 ions and a maximum filling time of 50 ms. Each MS scan was acquired at 120K full width half maximum high resolution in the Orbitrap with a mass range of m/z 400–1600 Da. High-resolution dissociation with a normalized collision energy set at 30 was used for fragmentation. The resulting MS/MS fragment ions were detected in the Orbitrap mass analyzer at a resolution of 30,000. An AGC of 5 × 104 ions and a maximum injection time of 54 ms were used. All raw data were accessed in Xcalibur software (Thermo Scientific).
 
-## Database searches and bioinformatics analyses
+### Database searches and bioinformatics analyses
 
 Raw files were imported into MaxQuant version 1.6.17.0 for protein identification and quantification. For protein identification in MaxQuant, the database search engine Andromeda was used against the UniProt P. falciparum 3D7 strain (March 2021, 5388 entries release). The following parameters were used: carbamidomethylation of cysteine (57.021464 Da) as a fixed modification, oxidation of methionine (15.994915 Da), and N-terminal acetylation protein (42.010565 Da) were selected as variable modifications. Enzyme specificity was set to full trypsin with a maximum of two missed cleavages. The minimum peptide length was set to seven amino acids. For label-free quantification, the ‘match between runs’ feature in MaxQuant was used, which is able to identify the transfer between samples based on the retention time and accurate mass, with a 0.7 min match time window and 20 min alignment time window. Label-free quantification was performed using MaxQuant software with the ‘match between run’ and iBAQ features activated. Protein LFQ and iBAQ ratios were calculated for the two conditions, and the protein IDs were divided accordingly. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD036092. PlasmoDB database was used to perform GO analysis.
 
-## Total RNA extraction and RNAseq
+### Total RNA extraction and RNAseq
 
 Infected RBCs containing tightly synchronized trophozoite stage parasites (32 hpi ± 3 hr) were harvested and resuspended in TRIzol (Thermo Fisher Scientific). Total RNA was extracted from three independent experiments following the manufacturer’s protocol, and an RNA cleanup kit (QIAGEN) was used to achieve high-purity RNA. The isolated RNA was quantified using a NanoDrop ND-1000 UV/Vis spectrophotometer, and RNA quality was determined using an RNA ScreenTape System (Agilent 2200 TapeStation). Total RNA (10,000 ng) from each sample was stabilized in RNAStable (Biomatrica) and sent to the Micromon Genomics facility at Monash University for next-generation sequencing.
 
@@ -126,14 +289,14 @@ RNA samples were prepared using the MGITech RNA Directional Library Prep Kit V2 
 
 The quality of the RNA-seq libraries was evaluated using the FastQC tool. Next, we used Salmon (V1.9.0) (Patro et al., 2017) quant with default arguments to quantify the expression of all transcripts in the PlasmoDB release-58 Pfalciparum3D7 genome. The transcript expression was summarized to gene-level expression with tximport 1.22.0 (Soneson et al., 2015). Finally, the gene counts were used to detect DEGs with DESeq2 (1.34.0) (Love et al., 2014). Furthermore, only genes with >1 log2 fold change and adjusted p-value<0.1 were considered significant for further analysis.
 
-## Chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq)
+### Chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq)
 
 PfMORC ChIP-seq was performed similarly to previously published ChIP-seq experiments in P. falciparum (Josling et al., 2020; Singh et al., 2021a, Russell et al., 2022). Five samples in total were collected: biological duplicates using the PfMORCHA-glmS parasite line at the trophozoite stage (30 hpi), biological duplicates using the PfMORCHA parasite line at the schizont stage (40 hpi), and a single replicate using the PfMORCGFP parasite line at the schizont stage (40 hpi). In brief, the protocol includes five steps: (1) treated with 1% formaldehyde to crosslink the suspended PfMORCHA-glmS (or PfMORCGFP) parasite cultures (at least 108 trophozoite- or schizont-stage parasites synchronized with 10% sorbitol more than one cycle prior) at 37°C for 10 min; (2) collected parasite nuclei using prechilled glass Dounce homogenizer for 100 strokes per 109 trophozoites/schizonts; (3) lysed parasite nuclei and mechanically sheared chromatin until sufficiently sheared using Covaris Focus-Ultrasonicator M220 (5% duty cycle, 75 W peak incident power, 200 cycles per burst, 7°C, for 5 min). (4) We collected 10% of each sample for the non-immunoprecipitated ‘input’ control and then immunoprecipitated the remaining 90% of each sample. The remaining 90% of each sample was immunoprecipitated with 1:1000 anti-HA antibody (0.5 mg/ml Roche Rat Anti-HA High Affinity [11867423001]) or 1:1000 anti-GFP antibody (0.1 mg/ml Abcam Rabbit Anti-GFP [Ab290]) overnight at 4°C with rotation. (5) DNA was purified after reverse crosslinking using a MinElute column (QIAGEN) as directed and quantified by a Qubit fluorometer (Invitrogen).
 
-## ChIP-seq library prep for Illumina sequencing
+### ChIP-seq library prep for Illumina sequencing
 
 The PfMORC ChIP-seq libraries were performed similarly to previously published ChIP-seq experiments in P. falciparum (Josling et al., 2020; Singh et al., 2021b, Russell et al., 2022). DNA sequencing libraries were prepared for high-throughput Illumina sequencing on the NextSeq 2000 with the 150 × 150 single-end mode. The library prep underwent 12 rounds of amplification using KAPA HiFi polymerase. Completed libraries were quantified using the Qubit fluorometer (Invitrogen) for high-sensitivity DNA and library sequence length by the Agilent TapeStation 4150.
 
-## ChIP-seq data analysis and peak calling
+### ChIP-seq data analysis and peak calling
 
 The PfMORC ChIP-seq datasets were analyzed similar to previously published ChIP-seq experiments in P. falciparum (Josling et al., 2020; Singh et al., 2021b, Russell et al., 2022). Raw sequencing reads were trimmed (Trimmomatic v0.32.3) to remove Illumina adaptor sequences and low-quality reads below 30 Phred (SLIDINGWINDOW: 4:30). FastQC (v0.11.9) was used to check the quality after trimming. Processed reads were then mapped to the P. falciparum genome (release 57) using BWA-MEM (v0.7.17.2) simple Illumina mode with multiple mapped reads filtered out (MAPQ = 1). Once the sequences were mapped, MACS2 (v2.2.7.1) was used to call peaks with each biological replicate and its paired input sample using a standard significance cutoff (q-value = 0.01). Using BedTools Multiple Intersect (v2.29.2), the narrow peak output file for each replicate was overlapped to identify the significant peaks in the overlap between both ChIP-seq biological replicates. The overlapping regions were then used to identify an enriched DNA motif (STREME Meme Suite: Bailey, 2021), and putative gene targets of PfMORC were defined as genes with peaks within 2 kb upstream of the gene target ATG start codon or peaks within gene bodies. In a situation with any peaks between gene targets in a head-to-head orientation, the closest gene was chosen.

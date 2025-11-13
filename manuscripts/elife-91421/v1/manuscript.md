@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Department of Molecular Biology and Genetics, Aarhus University Aahrus Denmark
-2. https://ror.org/01aj84f44 Department of Biomedicine, Aarhus University Aarhus Denmark
-3. https://ror.org/01aj84f44 DANDRITE, The Danish Research Institute of Translational Neuroscience, Aarhus University Aahrus Denmark
-4. https://ror.org/01aj84f44 Center for Proteins in Memory – PROMEMO, Danish National Research Foundation, Aarhus University Aahrus Denmark
-5. https://ror.org/02xankh89 Cellular and Systems Neurobiology, Universidade Nova de Lisboa Lisbon Portugal
-6. https://ror.org/0081fs513 Instituto de Fisiología Biología Molecular y Neurociencias (IFIBYNE), Universidad de Buenos Aires Buenos Aires Argentina
+1. Department of Molecular Biology and Genetics, Aarhus University Aahrus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. Department of Biomedicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+3. DANDRITE, The Danish Research Institute of Translational Neuroscience, Aarhus University Aahrus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+4. Center for Proteins in Memory – PROMEMO, Danish National Research Foundation, Aarhus University Aahrus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+5. Cellular and Systems Neurobiology, Universidade Nova de Lisboa Lisbon Portugal ([ROR:02xankh89](https://ror.org/02xankh89))
+6. Instituto de Fisiología Biología Molecular y Neurociencias (IFIBYNE), Universidad de Buenos Aires Buenos Aires Argentina ([ROR:0081fs513](https://ror.org/0081fs513))
 
 † Corresponding author
 
@@ -37,25 +37,33 @@ This has motivated us to examine the impact of LTP stimuli delivered to one set 
 
 ## Results
 
-## Rationale for the approaches taken in this study
+### Rationale for the approaches taken in this study
 
 In general, to establish a causal link between changes in synaptic weight to the memory strength, we must fulfill a set of criteria. First, one must know which synapses encode the memory (Stevens, 1998). For this, it is necessary to probe the synaptic inputs whose strength can be measured and modified. One must further show that modifying these inputs produces a quantifiable behavioral readout (Abdou et al., 2018; Jeong et al., 2021; Kim and Cho, 2017; Klavir et al., 2017; Nabavi et al., 2014; Roy et al., 2016; Zhou et al., 2017). Additionally, to test the effect of heteroLTP, one must induce plasticity on an independent synaptic input that modifies the strength of the memory. This independent activation requires a means to selectively and independently activate the two synaptic inputs- a nontrivial task in an in vivo preparation (Klapoetke et al., 2014).
 
 To investigate the temporal and spatial properties of non-Hebbian plasticity in relation to memory and behavior, we chose the defensive circuit in the lateral amygdala (Fanselow and Poulos, 2005; Herry and Johansen, 2014; Janak and Tye, 2015; LeDoux, 2000; Maren and Quirk, 2004; Nabavi et al., 2014; Pape and Pare, 2010; Sah et al., 2008; Stevens, 1998; Tovote et al., 2015). First, most of its excitatory neurons receive inputs from two sources, the thalamus and auditory/associative cortex (Choi et al., 2021; Humeau et al., 2005). Second, when these neurons receive a neutral conditioned stimulus (tone, CS) followed by an aversive unconditioned stimulus (shock, US), their synapses are potentiated to encode a memory of the aversive experience (conditioned response, CR) (Fanselow and Poulos, 2005; Herry and Johansen, 2014; Janak and Tye, 2015; LeDoux, 2000; Maren and Quirk, 2004; Pape and Pare, 2010; Sah et al., 2008; Tovote et al., 2015). To gain synapse-specific access to the CS input, we replaced a tone with optogenetic stimulation of the thalamic input (Jeong et al., 2021; Kim and Cho, 2017; Nabavi et al., 2014). This allowed precise control and monitoring of the strength of the synaptic inputs encoding the memory (Jeong et al., 2021; Kim and Cho, 2017; Nabavi et al., 2014).
 
-## Weak associative conditioning does not produce a lasting memory
+### Weak associative conditioning does not produce a lasting memory
 
 The main objective of this work is to examine the efficacy of different forms of LTP in producing a lasting memory of an otherwise transient experience. Therefore, the memory under investigation must, by its nature, not be a lasting one. We have previously shown that an enduring CR can be produced by multiple pairs of optical co-activation of thalamic and auditory/associative cortical inputs with a footshock (Nabavi et al., 2014). We reasoned that reducing the number of pairings as well as the duration of the footshock should result in a less robust CR. As will become clear later, here we must be able to produce a CR by using only one input. Therefore, we asked whether pairing optical activation of thalamic inputs alone with footshock can produce a lasting CR, and whether we can reduce the CR by using fewer pairings of CS and US, and with shorter US duration.
 
 We injected an AAV virus expressing a fast, blue-shifted variant of channelrhodopsin, oChIEF (Lin et al., 2013), in the lateral thalamus. To optically activate the thalamic inputs to the LA, we implanted a fiber optic above the dorsal tip of the LA (Figure 1a, Figure 1—figure supplement 1). An optical CS alone did not produce a CR (Figure 1—figure supplement 1b), whereas temporal (but not non-temporal) multiple pairings of the optical CS with a footshock produced a freezing response (CR) measured 24 hrs later (60%±7), indicating the formation of a long-term associative memory (Figure 1—figure supplement 1b). Importantly, reducing the number of pairings with shorter US duration resulted in a significant reduction in the CR 24 hr following the conditioning (7%±2) (Figure 1a and b, Figure 1—figure supplement 1b).
 
-## HomoLTP stimulus produces a lasting memory in weak associative conditioning
+![Figure 1.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig1-v1.jpg)
+
+**Figure 1.:** (a) Diagram showing the experimental timeline. (b) Left: High frequency stimulation (HFS) of the thalamic inputs (Th) to the lateral amygdala (LA) applied either 24 hr (WTh + 24hHFSTh, corresponding to panel a, top branch), or immediately after a weak thalamic associative conditioning (WTh + HFSTh, corresponding to panel a, middle branch), significantly increased the CS-evoked freezing (n=9; One-way ANOVA, FInteraction (2, 23)=8.202, p-value = 0.0020). Right: HFS of the thalamic input immediately before (HFSTh + WTh, corresponding to panel a, bottom branch) (n=6) or after a weak associative conditioning (n=8) (WTh + HFSTh, corresponding to panel a, middle branch) is equally effective in increasing the CS-evoked freezing. Colors of the bar graphs represent the experimental protocols for each group of mice (colored boxes in panel a). Subscripts with blue font indicate stimulation of the blue-shifted channelrhodopsin oChIEF using the selective procedure. (c) Diagram showing the experimental setup of the in vivo electrophysiology recording (Rec) in anesthetized mice. Evoked field EPSP was produced by blue light stimulation (450 nm) of thalamic inputs expressing oChIEF. (d) Plot of average in vivo field EPSP slope (normalized to baseline period) in the LA before and after HFS (n=5). Right inset: Superimposed traces of in vivo field responses to single optical stimulus before (dashed line) and after (solid line) HFS. Scale bar, 0.1 mV, 5 ms. Results are reported as mean ± S.E.M. **p<0.01. Ctx: Cortical input; Th: Thalamic input; LA: lateral amygdala; HFS: High Frequency Stimulation; EPSP: excitatory postsynaptic potential; WTh: Recall session after a weak thalamic associative conditioning.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative image of a coronal section of mice expressing AAV-oChIEF-tdTomato in the lateral thalamus (Left). Scale bars, 1  mm. Axonal expression of AAV-oChIEF-tdTomato in lateral amygdala (Right). Scale bars, 500  μm. (b) The conditioned response (CR) is significantly higher after strong conditioning (n=8) compared to weak conditioning (n=9), and unpaired conditioning (n=7). Optical CS alone did not elicit any CR (n=4; Two-way ANOVA, FInteraction (3, 16)=34,68, p-value <0.0001). (c) Optic fiber placement of individual mice from Figure 1. (d) Diagram showing the experimental timeline. (e) The CR is significantly higher upon testing immediately after homoLTP induction (n=6; paired t-test, p-value = 0.0347). Results are reported as mean ± S.E.M. *p<0.05;****p<0.0001.
+
+### HomoLTP stimulus produces a lasting memory in weak associative conditioning
 
 We next examined the efficacy of the LTP protocol in producing a long-term memory at different time points from the weak conditioning protocol. Delivering an optical LTP stimulus immediately before or after such a conditioning protocol on the same inputs (homoLTP) produced a lasting CR (Figure 1b). Remarkably, a homoLTP stimulus, even when delivered 24 hr after the conditioning, could produce a rapid CR comparable in magnitude to that obtained with immediate homoLTP. (Figure 1a and b). HomoLTP was as effective in mice that were tested prior to the induction protocol as those that were not (Figure 1b, Figure 1—figure supplement 1d and e). It is notable that a homoLTP stimulus in naïve animals failed to produce a CR (Figure 1—figure supplement 1b); whereas it did produce a CR as long as the animals received the conditioning protocol (Figure 1b).
 
 To confirm that the optical homoLTP protocol was producing the expected effect on synaptic strength, we performed an in vivo recording from the LA in anesthetized mice expressing oChIEF in the thalamic inputs. Brief light pulses at the recording site produced in vivo field potentials which were potentiated by optical homoLTP stimulus (Figure 1c and d).
 
-## Toward independent optical activation of thalamic and cortical inputs: Rendering a red-shifted channelrhodopsin insensitive to blue light
+### Toward independent optical activation of thalamic and cortical inputs: Rendering a red-shifted channelrhodopsin insensitive to blue light
 
 In addition to the thalamic inputs, most neurons within the LA receive direct projections from the cortical regions (auditory/associative) (Choi et al., 2021; Humeau et al., 2005). We, therefore, asked whether synaptic potentiation on the cortical inputs (heteroLTP) following the weak conditioning of thalamic inputs is effective in producing a long-term CR, as predicted by computational models (O’Donnell and Sejnowski, 2014).
 
@@ -67,15 +75,35 @@ A previous study demonstrated that prolonged illumination of axons expressing a 
 
 **Figure 2.:** (a) Diagram showing ex vivo electrophysiology recordings in slices where ChrimsonR-expressing thalamic inputs to the lateral amygdala (black lines) were optically activated. Synaptic responses were evoked by pulses of 450 nm blue light (450 nm), or pulses of blue light co-illuminated with a 561 nm yellow light pulse (co-illumination). (b, c) Bar graph (normalized to blue light [450 nm] stimuli) (b), and example recording (scale bar, 50 pA, 20ms) (c), of optically driven synaptic responses to pulses of blue light (450 nm) or pulses of blue light co-illuminated with yellow light (450 nm with yellow underline). (d) Left: Diagram showing the experimental set up of electrophysiology recordings in freely moving mice where ChrimsonR-expressing thalamic inputs (Th) to the lateral amygdala (LA) were optically activated. Right: Comparison of a representative waveform average of the response to pulses of red light (638 nm), pulses of red light co-illuminated with a 500 ms yellow light pulse (638 nm with yellow underline), pulses of blue light (450 nm), and pulses of blue light co-illuminated with a 500 ms yellow light pulse (450 nm with yellow underline) (scale bar, 1 mV, 2 ms; n=3). (e) Left: Diagram showing the experimental set up of electrophysiology recordings in freely moving mice where oChIEF-expressing thalamic inputs (Th) to the lateral amygdala (LA) were optically activated. Right: Comparison of a representative waveform average of the response to pulses of red light (638 nm), pulses of blue light (450 nm), and pulses of blue light co-illuminated with a 500ms yellow light pulse (450 nm with yellow underline) (scale bar, 0.5 mV, 2 ms; n=3). (f) Left: Diagram showing the experimental setup of electrophysiology recordings in anesthetized mice where ChrimsonR-expressing thalamic inputs (Th) to the lateral amygdala (LA) were optically activated. Middle: Comparison of a representative waveform average of the response to pulses of blue light (450 nm), pulses of blue light co-illuminated with a 500 ms yellow light pulse (A), pulses of blue light following the yellow light pulse by 50 ms (B), or 500ms (C) (n=4). Right: Comparison of the waveform average responses to pulses of blue light (450 nm), pulses of blue light co-illuminated with a 500 ms yellow light pulse (450 nm with yellow underline), and pulses of blue light after sequentially applying NBQX and TTX, and later in a euthanized mouse (Dead), (n=4). Scale bar, 0.2 mV, 10 ms. (g, h) Representative traces for 10 Hz (g) and 85 Hz (h) stimulation of ChrimsonR-expressing thalamic inputs to the lateral amygdala, which were activated with blue light (450 nm, in blue). Yellow traces are the represantative evoked responses of the inputs to 10 Hz (g) and 85 Hz (h) blue light stimulation (450 nm) co-illuminated with a 561nm yellow light pulse (n=3).
 
-## Immediate heteroLTP stimulus produces a lasting memory in weak associative conditioning
+### Immediate heteroLTP stimulus produces a lasting memory in weak associative conditioning
 
 Mice were injected with AAV-ChrimsonR in the thalamic inputs and AAV-oChIEF in the cortical inputs to the LA (Figure 3a and b, Figure 3—figure supplement 1a). To optically activate either thalamic or cortical inputs, we implanted a fiber optic above the dorsal tip of the LA (Figure 3—figure supplement 1a and b). Within 5 min after weak conditioning on thalamic inputs, we delivered an optical LTP protocol on the cortical inputs (heterosynaptic LTP, heteroLTP), while blocking the activation of the thalamic inputs using the co-illumination. Mice were tested for their long-term memory retention 24 hr later (Figure 3a and b). Similar to homoLTP, the induction of heteroLTP protocol immediately after the weak conditioning produced a long-term CR (Figure 3c). In mice expressing opsin only in the thalamic inputs, the same manipulation failed to produce a CR (Figure 3c). This demonstrates that the observed CR is caused by the heteroLTP.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig3-v1.jpg)
+
+**Figure 3.:** (a, b) Diagram showing the experimental timeline of the heterosynaptic LTP protocol manipulation following a weak thalamic associative conditioning. HFS with yellow upperline indicates that the delivery of high frequency stimulation with blue light overlapped with long pulses of yellow light. This co-illumination prevents the activation of ChrimsonR-expressing thalamic inputs (Th) by blue light, while the oChIEF-expressing cortical inputs remain unaffected. Note that yellow light specifically renders ChrimsonR, and not oChIEF, insensitive to blue light. (c) Left: High frequency stimulation (HFS) of the thalamic input expressing ChrimsonR immediately following a weak associative conditioning on the same input (WTh + HFSTh, corresponding to panel b) (n=9) was ineffective in producing the CS-evoked freezing. HFS with yellow upperline indicates that HFS with blue light overlapped with long pulses of yellow light. This was to prevent the activation of ChrimsonR-expressing thalamic inputs by blue light, as described above and detailed in Figure 2. The same HFS protocol in mice that additionally, expressed oChIEF in the cortical inputs (WTh + HFSCtx, corresponding to panel a, bottom branch) (n=10), significantly increased the CS-evoked freezing (heterosynaptic LTP) (Unpaired t-test, p-value = 0.0100). Middle: HFS on the cortical input, induced 24 hr after a weak associative conditioning (WTh + 24hHFSCtx, corresponding to panel a, top branch) was ineffective in producing the CS-evoked freezing. (n=9; Paired t-test, p-value = 0.2193). Right: Comparison of the effect of homosynaptic LTP protocol (WTh +HFSTh) (same dataset from Figure 1b) and heterosynaptic LTP protocol (WTh +HFSCtx) (same dataset from panel c, left) (Unpaired t-test, p-value = 0.9740). Results are reported as mean ± S.E.M. **p<0.01. Subscripts with red font and blue font indicate stimulation of the red-shifted channelrhodopsin ChrimsonR and the blue-shifted channelrhodopsin oChIEF, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Representative image of a coronal section of mice expressing AAV-oChIEF-tdTomato in the LA-projecting cortical region and AAVChrimsonR-tdTomato in the LA-projecting thalamic region. Scale bars, 1  mm. Axonal expression of AAV-oChIEF-tdTomato and AAVChrimsonR-tdTomato in lateral amygdala. Scale bars, 500  μm. (b) Optic fiber placement of individual mice from Figure 2.
+
 As shown in the previous section, the delivery of an LTP protocol on the conditioned input (homoLTP) strengthens the memory even if delivered with a 24 hr delay. We then investigated whether the heteroLTP protocol similarly maintains its efficacy when a long period has elapsed since conditioning. Mice expressing AAV-ChrimsonR and AAV-oChIEF in the thalamic and cortical inputs received a weak conditioning protocol, followed 24 hr later by an LTP protocol on the cortical inputs (heteroLTP) (Figure 3c). In this condition, heteroLTP protocol, in contrast to homoLTP protocol, failed to produce a significant CR (Figures 1b and 3c).
 
-## Homo- and heteroLTP stimuli produce a lasting memory in unpaired conditioning
+### Homo- and heteroLTP stimuli produce a lasting memory in unpaired conditioning
 
 It has been shown that the thalamic→LA pathway, in addition to its role in the auditory-cued fear learning, is required for the formation of contextual fear memory (Barsy et al., 2020). This can be explained by the fact that the lateral thalamus, the thalamic gateway to the LA, collects signals from different brain regions of diverse modalities (Barsy et al., 2020; Kang et al., 2022; Khalil et al., 2023; Ledoux et al., 1987; Linke et al., 1999). We, therefore, asked if, in addition to cued associative conditioning, an LTP protocol can produce CR in an unpaired form of conditioning on the thalamic→LA pathway. First, we tested whether the thalamic inputs convey a footshock signal to the LA, which is a prerequisite for this paradigm. For this purpose, we took advantage of fiber photometry in freely moving mice. AAV virus expressing the genetically encoded Ca2+ indicator GCaMP7s (Dana et al., 2019) was expressed in the thalamic inputs. GCaMP signal was collected through a fiber optic implanted above the tip of the LA (Figure 4a, Figure 4—figure supplement 1a and b). The time-locked GCaMP activity of the thalamic projections to the onset of the footshock was evident, demonstrating that the thalamic inputs convey the footshock signal to the LA (Figure 4b), confirming previous findings (Barsy et al., 2020). To further confirm this, we recorded the activity of the LA during footshock in mice with ablated lateral thalamus. This was done by the co-injection of AAV vectors expressing DIO-taCapsase3 and Cre recombinase in the lateral medial thalamus and GCaMP8m (Zhang et al., 2023) postsynaptically in the basolateral amygdala (Figure 4c, Figure 4—figure supplement 1c and d). The control group underwent the same procedure, but the thalamus was spared (no Cre-recombinase was injected). In the thalamic-lesioned mice, the footshock-evoked response in the LA was significantly reduced (Figure 4d). This further demonstrates that the aversive signal to the LA is conveyed largely through the thalamic inputs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig4-v1.jpg)
+
+**Figure 4.:** (a) Diagram showing the experimental timelines for fiber photometry from thalamic inputs (Th) expressing GCaMP7s. (b) Averaged trace of the thalamic input activity in response to footshock (onset indicated by the dotted line), n=5. (c) Diagram showing the experimental timelines for fiber photometry from the lateral amygdala (LA) neurons expressing GCaMP8m with intact or lesioned thalamic inputs. (d) Averaged trace of the LA neurons activity in response to footshock (onset indicated by the dotted line) in mice with lesion (dash line) or no lesion (solid line) in the lateral thalamus (Th), n=6 per group. (e) Diagram showing the experimental timelines of the homosynaptic LTP protocol manipulation following an unpaired thalamic conditioning. (f) Unpaired conditioning on the thalamic inputs (UTh, corresponding to panel e, top branch) produced no CS-evoked freezing, while if unpaired conditioning was immediately followed by high frequency stimulation (HFS) on the same inputs (UTh + HFSTh, corresponding to panel e, bottom branch) it significantly increased the CS-evoked freezing (homosynaptic LTP), (n=11 per group; Mann-Whitney test, p-value = 0.0002). Subscripts with blue font indicate stimulation of the blue-shifted channelrhodopsin oChIEF using the selective procedure. (g) Diagram showing the experimental timelines of the heterosynaptic LTP protocol manipulation following an unpaired thalamic conditioning. (h) High frequency stimulation (HFS) of the thalamic input expressing red-shifted channelrhodopsin ChrimsonR immediately following an unpaired conditioning on the same input (UTh + HFSTh, corresponding to panel g, top branch) was ineffective in producing the CS-evoked freezing, while the same protocol in mice that, in addition, expressed oChIEF in the cortical inputs (UTh + HFSCtx, corresponding to panel g, bottom branch), significantly increased the CS-evoked freezing (heterosynaptic LTP) n=11 per group; Mann-Whitney test, p-value = 0.0002. During HFS, blue light pulses overlapped with long pulses of yellow light. This co-illumination prevents the activation of ChrimsonR-expressing thalamic inputs (Th) by blue light, while the oChIEF-expressing cortical inputs remain unaffected. Note that yellow light specifically renders ChrimsonR, and not oChIEF, insensitive to blue light. Subscripts with red font and blue font indicate stimulation of the red-shifted channelrhodopsin ChrimsonR and the blue-shifted channelrhodopsin oChIEF, respectively. (i) Diagram showing the experimental setup of the in vivo electrophysiology recordings (Rec) in anesthetized mice where the thalamic input expressing ChrimsonR and/or cortical input expressing oChIEF were optically activated independently. (j) Left: Plot of average in vivo field EPSP slope (normalized to baseline period) in LA evoked by optical activation of thalamic inputs, before and after footshock delivery (n=5; Paired t-test, p-value = 0.2916). Middle: Plot of average in vivo field EPSP slope (normalized to baseline period) in LA evoked by optical activation of cortical inputs (Ctx), before and after high frequency stimulation (HFS) of these inputs (n=6; Paired t-test, p-value = 0.0031). Right: Plot of average in vivo field EPSP slope (normalized to baseline period) in LA evoked by optical activation of thalamic inputs (Th), before and after HFS delivery on the cortical inputs (heterosynaptic LTP) (n=5; Paired t-test, p-value = 0.0074). HFS with yellow upperline indicates that the delivery of high frequency stimulation with blue light overlapped with long pulses of yellow light. This co-illumination prevents the activation of ChrimsonR-expressing thalamic inputs (Th) by blue light, while the oChIEF-expressing cortical inputs remain unaffected. Superimposed traces of in vivo field response to single optical stimulus before (dash line) and after (solid line) the induced protocols. Results are reported as mean ± S.E.M. **p<0.01; ***p<0.001. Scale bars, 0.2 mV, 5 ms.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Representative image of a coronal section of mice expressing AAV-GCaMP7s in the lateral thalamus (Left). Scale bars, 1  mm. Axonal expression of AAV-GCaMP7s in lateral amygdala. Scale bars, 500  μm. (b) Optic fiber placement of indi-vidual mice from Figure 3. (c) Overlay of the maximum extent of the lesion in the thalamic-lesioned group (n=6). (d) Optic fiber placement of individual mice from Figure 3f and h.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Comparison of the freezing levels evoked by high frequency stimulation of the thalamic input in naive mice (HFSTh, n=4) compared to mice subjected to unpaired conditioning (U; n=11) and to unpaired conditioning filled by high-frequency stimulation (HFS) (U+HFSTh, n=11; Two-way ANOVA, FInteraction (2,12)=10.04, p-value = 0.0027). (b) A paired comparison of the freezing levels evoked by thalamic axons activation when the thalamic LTP is applied 24 hr after the unpaired conditioning. the (n=7, Wilcox test, p-value = 0.0625). (c) Optic fiber placement of individual mice from Figure 3. Results are reported as mean ± S.E.M. *p<0.05; **p<0.01. (d) Plot of average in vivo field EPSP slope (normalized to baseline period) in LA evoked by optical activation of thalamic inputs (Th), before and after HFS delivery on the cortical inputs (heterosynaptic LTP) in absence of foot shock delivery (n=4; Paired t-test, p-value=0.9437). Sclae bar, 0.2 mV, 5 ms.
 
 Next, we asked whether the induction of synaptic potentiation in this pathway following an unpaired conditioning, where footshock is not paired with the CS, would produce a long-term CR. It must be noted that previously we have shown that this protocol does not produce a detectable post-conditioning synaptic potentiation (Nabavi et al., 2014). Mice expressing AAV-oChIEF in the thalamic inputs received optical homoLTP stimulus on these inputs either immediately or 24 hr after the unpaired conditioning (Figure 4e). Immediate homoLTP stimulus, indeed, proved to be effective in producing a lasting CR even for the unpaired conditioning (Figure 4f); it is noteworthy that neither unpaired conditioning alone, nor optical homoLTP stimulus in naïve animals produced a CR (Figure 4—figure supplement 2a). HomoLTP protocol when delivered 24 hr later, produced an increase in freezing; however, the value was not statistically significant (Figure 4—figure supplement 2b). This observation is consistent with a previous report using only the unconditioned stimulus footshock (Li et al., 2020). This phenomenon is distinct from the paired form of conditioning which is receptive to homoLTP manipulation irrespective of the time of the delivery (Figure 1b).
 
@@ -83,15 +111,23 @@ Next, we investigated the behavioral consequence of heteroLTP stimulus on the un
 
 Based on this observation, we asked whether heteroLTP stimulus can induce potentiation in the thalamic synaptic inputs which were activated merely by footshock. Indeed, we observed that following footshocks, optical LTP delivery on the cortical inputs induced lasting potentiation on the thalamic pathway despite the fact that footshock on its own did not produce any detectable form of postsynaptic potentiation (Figure 4i and j). Without a footshock, high-frequency stimulation (HFS) of the cortical inputs did not induce synaptic potentiation on the thalamic pathway (Figure 4—figure supplement 2d). Therefore, although footshock on its own does not produce a detectable synaptic potentiation in thalamic inputs, it is required for heterosynaptic potentiation of this pathway.
 
-## HeteroLTP stimulus produces lasting potentiation of synaptic inputs encoding memory in weak associative conditioning
+### HeteroLTP stimulus produces lasting potentiation of synaptic inputs encoding memory in weak associative conditioning
 
 We and others have shown that optical LTP protocols produce expected behavioral changes (Nabavi et al., 2014; Roy et al., 2016; Zhou et al., 2017), such as strengthening a memory (Figures 1, 3 and 4). However, we considered these approaches insufficient to establish a direct behavioral correlate of synaptic changes. To determine if synaptic potentiation accompanies increased fear response following heteroLTP induction, we resorted to in vivo recording in freely moving mice. We expressed AAV-ChrimsonR in the thalamic inputs, and AAV-oChIEF in the cortical inputs (Figure 5—figure supplement 1a). Six weeks after the injection, a customized optrode was implanted in the LA, which allows for the stimulation of the thalamic and cortical inputs as well as the measurement of the optically evoked field potential (Figure 5a, Figure 5—figure supplement 1b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig5-v1.jpg)
+
+**Figure 5.:** (a) Diagram showing the experimental setup of the in vivo electrophysiology recordings (Rec) in freely moving mice where the thalamic input expressing ChrimsonR and cortical input expressing oChIEF were optically activated independently. (b) Left: Plot of average in vivo field EPSP slope (normalized to baseline period) in LA evoked by optical activation of cortical inputs, before and 24 hr after a weak thalamic conditioning followed immediately by high-frequency stimulation (HFS) delivery on the same cortical inputs. Right: as left, except field EPSP was evoked by activation of thalamic inputs. The potentiation of the field EPSP of cortical (homosynaptic LTP) (n=4; Paired t-test, p=0.0082) as well as thalamic inputs (heterosynaptic LTP) (n=4; Paired t-test, p=0.0336) is evident 24 hr after the delivery of HFS. Superimposed traces of in vivo field response to single optical stimulus before (dash line) and after (solid line) HFS (Scale bars, 0.5 mV, 5 ms). (c) The behavioral responses of the mice tested for their homo- and hetero-synaptic plasticity in panel b. Note a significant CS-evoked freezing 24 hr after a weak thalamic conditioning followed immediately by HFS delivery on the cortical inputs (heterosynaptic LTP). These mice did not show a CS-evoked freezing prior to the protocol (BL) (n=4; Paired t-test, p=0.0478). (d) Positioning of the stimulating electrodes (Th. Stim and Ctx. Stim.) and the recording electrode. (e) (left) Weak stimulation of the thalamic input (purple circle) results in a transient LTP. No change was observed in the basal synaptic transmission of the cortical input (control pathway, yellow circle). Strong stimulation of the cortical input following the weak stimulation of the thalamic input stabilized synaptic potentiation of the thalamic input (right). Dash line indicates the onset of HFS induction. (f) A paired-comparison of the decay of synaptic potentiation of the thalamic input with (WTh + SCtx) or without (WTh) the strong stimulation of the cortical input. (10 animals, 15 slices; one cell per slice; Welch’s t test, p=0.0062). Results are reported as mean ± S.E.M. *p<0.05; **p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91421/elife-91421-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a, b) Diagram and histology of the brain sections showing the AAVs injection sites, and the optetrode implantation sites. Scale bars, 500 um. (c) Representative examples of the EPSP amplitude recorded in the LA by stimulation of cortical axons (left, repeated-measures Two-way RM ANOVA for group by light intensity, F Interaction (5, 20)=2.145 p-value = 0.1017 with Sìdak test correction), and thalamic axons (right, repeated-measures Two-way RM ANOVA for group by light intensity, F Interaction (5, 20)=3.049, p-value = 0.0332 with Sìdak test correction) before and after weak conditioning and cortical long-term potentiation (LTP). (d) Plot of average in vivo field EPSP slope (normalized to baseline period) in LA evoked by optical activation of thalamic inputs before, 2 hr, and 24 hr after a weak thalamic conditioning. In absence of high-frequency stimulation (HFS) of cortical input, there is no change in the field EPSP of thalamic input (n=3; repeated-measures Two-way RM ANOVA for group by time interaction, FInteraction (1.644, 3.288)=0.8228, p-value = 0.4900 with Tukey correction). Superimposed traces of in vivo field response to single optical stimulus before (black line), 2 hr (dash orange line) and 24 hr after (solid orange line) HFS. (e) Representative example of the EPSP amplitude recorded in the LA by stimulation of thalamic axons (repeated-measures Two-way RM ANOVA for group by light intensity, FInteraction (10, 10)=1.235 p-value = 0.3727). Results are reported as mean ± S.E.M. ***p<0.001.
 
 The baseline for the evoked field potential and the input-output curve of both pathways were recorded prior to the conditioning (Figure 5—figure supplement 1c). Blue light pulses produced smaller evoked responses when coincided with submilliwatt-long pulses of yellow light (data not shown). This further supports the efficacy of the dual optical activation approach that we adopted (Figure 2), which permits independent activation of the converging thalamic and cortical inputs in behaving mice. To induce a weak conditioning protocol on the thalamic inputs, mice received red light stimulation co-terminated with a footshock (Figure 5a). Within 5 min, we delivered an optical LTP protocol on the cortical inputs, while blocking the activation of the thalamic inputs using the co-illumination.
 
 On the following day (recall day), we recorded evoked field responses prior to the memory retrieval. We observed a left-shifted input-output curve as well as lasting potentiated field responses in both thalamic and cortical pathways (Figure 5b, Figure 5—figure supplement 1c). Fifteen minutes later, mice were moved to a new context and tested for their memory recall by activating their thalamic inputs. Mice showed significantly increased freezing response during optical stimulation (Figure 5c). A weak conditioning protocol that was not followed by an optical LTP protocol on the cortical inputs failed to produce synaptic potentiation of the thalamic inputs (tested 2 hr and 24 hr after the LTP protocol; Figure 5—figure supplement 1d and e).
 
-## HeteroLTP stimulus stabilizes a decaying form of synaptic potentiation in slices
+### HeteroLTP stimulus stabilizes a decaying form of synaptic potentiation in slices
 
 Up to this point, we have shown that a memory and the underlying synaptic weight can be strengthened by the induction of LTP on an independent pathway. However, the notion of change in synaptic strength using an independent pathway was originally observed in slices (Fonseca, 2013; Frey and Morris, 1997). We, therefore, tested if the two pathways which we used for our behavioral manipulations can undergo similar changes in synaptic weight in a slice preparation where we have a more precise control on the activation and monitoring of synaptic plasticity. Stimulation of the thalamic inputs with a weak induction protocol (Figure 5d) resulted in a transient form of potentiation that regressed to the baseline within 90 min (Figure 5e). However, when the weak conditioning protocol was followed by a strong conditioning protocol on the converging cortical inputs, it produced a stable form of potentiation that lasted for the entire duration of the recording (Figure 5e and f).
 
@@ -115,25 +151,175 @@ Consistent with this notion and complementary to our work, several studies have 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NeuN antibody (Mouse Monoclonal)</td>
+      <td>Merk Millipore</td>
+      <td>MAB377RRID: AB_2298772</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 Goat anti-Mouse</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A10521RRID: AB_1500665</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>D9542</td>
+      <td>5 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-8/2-hSyn1-oCHIEF_dTomato</td>
+      <td>VVF</td>
+      <td>V391-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-5/2-hSyn1-chI-jGCaMP7s</td>
+      <td>VVF</td>
+      <td>V406-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-5/2-mCaMKIIα-jGCaMP8m</td>
+      <td>VVF</td>
+      <td>V630-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-5/2-hSyn1-chI-ChrimsonR_tdTomato</td>
+      <td>VVF</td>
+      <td>V334-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fentanyl</td>
+      <td>Hameln</td>
+      <td>007007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Midazolam</td>
+      <td>Hameln</td>
+      <td>002124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Medetomidine</td>
+      <td>VM Pharma</td>
+      <td>087896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IsoFlo vet 100%</td>
+      <td>Zoetis</td>
+      <td>37071/4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>Sigma</td>
+      <td>U2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt hydrate</td>
+      <td>Sigma</td>
+      <td>N183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin citrate</td>
+      <td>Hellobio</td>
+      <td>HB1035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>1.53t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Doric Studio</td>
+      <td>Doric Lenses</td>
+      <td>5.4.1.23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks, Inc.</td>
+      <td>R2021b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photometry-Signal-Analysis</td>
+      <td>This paper; NabaviLab-Git, 2024</td>
+      <td>https://github.com/NabaviLab-Git/Photometry-Signal-Analysis</td>
+      <td>Code used for the Fiber photometry analysis.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male mice of the strain C67BL/6JRj were purchased from Janvier Labs, France. Mice are purchased at the age of 6–8 weeks. All mice were housed in 12 hr light/dark cycle at 23°C and had ad libitum food and water access. Mice were housed 4 per cage. All procedures that involved the use of mice were approved by the Danish Animal Experiment Inspectorate (permit numbers: 2020-15-0201-00421 and 2023-15-0201-01431).
 
-## Viruses
+### Viruses
 
 Recombinant adeno-associated viral vectors (AAV) were purchased from the viral vector facility VVF, at the University of Zurich, Switzerland. Serotype 8, AAV-2-hSyn1-oCHIEF_tdTomato(non-c.d.)-WPRE-SV40p(A) had physical titer of 6.6×10E12 vg/mL. Serotype 5, AAV-1/2-hSyn1-chI-ChrimsonR_tdTomato-WPRE-SV40p(A) had a physical titer of 5.3×10E12 vg/mL. Serotype 5, AAV-2-mCaMKIIα-jGCaMP8m-WPRE-bGHp(A) had a physical titer of 6.6×10E12 vg/mL. Serotype 5, AAV-2-hSyn1-chI-jGCaMP7s-WPRE-SV40p(A) had a physical titer of 7.7×10E12 vg/mL. Serotype 5, ssAAV-2-hEF1α-dlox-(pro)taCasp3_2 A_TEVp(rev)-dlox-WPRE-hGHp(A) had a physical titer of 4.7×10E12 vg/mL. Serotype 1, scAAV-1/2-hCMV-chI-Cre-SV40p(A) had physical titer of 1.0×10E13 vg/mL. Serotype 8, AAV-2-hSyn1-hM4D(Gi)_mCherry-WPRE-hGHp(A) had physical titer of 4.8×10E12 vg/mL.
 
-## Surgery
+### Surgery
 
 Mice were 7–9 weeks at the time of stereotaxic surgery. Mice were anesthetized with isoflurane and maintained at 1% throughout the surgery in the stereotaxic setup (Kopf 940) and a heating pad maintained body temperature at 37°C. Viruses were injected with a volume of 500–700 nL over 3–4 min. Auditory/associative cortex coordinates (all in mm and from Bregma) are (–2.85 AP, –4.4 ML, and +1.6 DV (from the skull surface)). Lateral thalamus coordinates are (–3.15 AP, –1.85 ML, and +3.5 DV (from the skull surface)). LA coordinates are (–1.65 AP, –3.45 ML, and +3.45 DV (from the skull surface)). Optic fiber cannulas were cemented with dental cement, Superbond (SUN MEDICAL, Japan). All the injections and optic fiber implantations were performed in the right hemisphere.
 
-## Optogenetics
+### Optogenetics
 
 ChR expressing AAVs were injected into the thalamic and the cortical regions projecting to the LA, and a 6–8 week expression time was given to allow for a high and stable expression in the axons. In freely moving mice, a 200 micrometer (Thorlabs 200 EMT, NA 0.39) optic fibers cannulae were implanted in the same surgery to target LA. The optic fiber cannulae were fabricated manually. The optic fiber was scored with an optic fiber scribe (Thorlabs s90 carbide scribe) and then pulled to break. Next, the optic fiber was inserted into the ferrule, and the output was measured with a power meter (Coherent Laser Check); 10 percent loss was the maximum allowed loss after coupling to the patch cord (Thorlabs 200 um NA 0.39). Afterward, the length was adjusted to 4 mm (the exposed optic fiber) and glued with a UV-curable glue. After gluing, the opposite end was scored and cut, and the output was measured again. The light output was confirmed to have a concentric-circle pattern.
 
 In experiments with oChIEF, a 450 nm laser diode (Doric) was used with a light intensity of 10–15 mW. In the experiments with ChRimsonR, a 638 nm laser diode (Doric) was used with a light intensity of 10–15 mW, and a 561 nm laser diode (Vortran Laser Technology, USA) at the intensity of 1 mW for co-illumination when performing independent optical activation. All the freely moving experiments were done with a rotary joint (Doric Lenses, Canada). After each experiment, the verification of the brain stimulation location was performed after PFA fixation and slicing. For optimal optic fiber tract marking, the whole head of the mouse was left in 10% formalin for a week with agitation. Mice were excluded if the viral expression and/or the optic fiber locations were off-target.
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
 Mice were anesthetized with Urethane, and Ethyl-Carbamate 2 mg/kg and placed in the stereotaxic setup, and a heating pad maintained the body temperature at 37°C. Multichannel system ME2100 was used for signal acquisition, and a Neuronexus opto-silicone probe with 32 channels was used to record the signal. Raw data were filtered (0.1–3000  Hz), amplified (100x), digitized, and stored (10  kHz sampling rate) for offline analysis with a tethered recording system (Multichannel Systems, Reutlingen, Germany). Analysis was performed using custom routines. The initial slope of field excitatory postsynaptic potentials was measured as described by Nabavi et al., 2014.
 
@@ -145,38 +331,38 @@ For in vivo electrophysiological recordings from freely moving mice, a customize
 
 Electrophysiological recordings were performed using a Neuralynx Cheetah 32 system. The electrical signal was sampled at 32  kHz and band-pass filtered between 0.1–8000  Hz.
 
-## Ex vivo slice electrophysiology (related to Figure 2a–c)
+### Ex vivo slice electrophysiology (related to Figure 2a–c)
 
 Experimental procedures were approved by the Animal Care and Use Committee of the University of Buenos Aires (CICUAL). Briefly, 4- week-old C57 mice (n=4) were injected with 250 nl of AAV-1/2-hSyn1-chI-ChrimsonR_tdTomato-WPRE-SV40p at the MGN. After 3 weeks of expression, the animals were sacrificed and the brain was removed and cut into 300 µm coronal slices in a solution composed of (in mM): 92 N-Methyl-D-glucamine, 25 glucose, 30 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 20 HEPES, 2 Thiourea, 5 Na-ascobate, 3 Na-pyruvate, 10 MgCl2, and 0.5 CaCl2 (equilibrated to pH 7.4 with 95% O2–5% CO2); chilled at 4 °C. Slices containing the BLA were transferred to a 37 °C warmed chamber filled with the same solution and incubated for 10 min. After this period slices were transferred to a standard ACSF solution of composition (in mM): 126 NaCl, 26 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 2 MgSO4, 2 CaCl2, and 10 Glucose (pH 7.4), at room temperature. Recordings started 1 hr later and were performed in this same ACSF solution. Patch-clamp recordings were done under a microscope (Nikon) connected to a Mightex Illumination system for 470 nm, and 532 nm light delivery. Whole-cell patch-clamp recordings were done using a K-gluconate-based intracellular solution of the following composition (in mM): 130 K-gluconate, 5 KCl, 10 HEPES, 0.6 EGTA, 2.5 MgCl2∙6H2O, 10 Phosphocreatine, 4 ATP-Mg, 0.4 GTP-Na3. Glutamatergic AMPA-mediated synaptic responses were recorded at –60 mV holding potential under blockage of GABAa and NMDA receptors (Picrotoxin 100 µM and APV 100 µM). Light stimulation consisted in 2ms pulses of 470 nm light at 10 mW, and co-illumination consisted of 450 ms of 532 nm light at 1 mW that co-terminated with stimulation light.
 
-## Ex vivo slice electrophysiology (related to Figure 5d–f)
+### Ex vivo slice electrophysiology (related to Figure 5d–f)
 
 A total of 15 slices prepared from 10 Black6/J mice (3–5 weeks old) were used for electrophysiological recordings. All procedures were approved by the Portuguese Veterinary Office (Direcção Geral de Veterinária e Alimentação - DGAV). Coronal brain slices (300 µm) containing the lateral amygdala were prepared as described previously (Fonseca, 2013). Whole-cell current-clamp synaptic responses were recorded using glass electrodes (7–10 MΩ; Harvard apparatus, UK), filled with internal solution containing (in mM): K-gluconate 120, KCl 10, Hepes 15, Mg-ATP 3, Tris-GTP 0.3 Na-phosphocreatine 15, Creatine-Kinase 20 U/ml (adjusted to 7.25 pH with KOH, 290mOsm). Putative pyramidal cells were selected by assessing their firing properties in response to steps of current. Only cells that had a resting potential of less than –60 mV without holding current were taken further into the recordings. Neurons were kept at –70 mV with a holding current below –0.25nA. In current clamp recordings, the series resistance was monitored throughout the experiment and ranged from 30 MΩ-40MΩ. Electrophysiological data were collected using an RK-400 amplifier (Bio-Logic, France) filtered at 1 kHz and digitized at 10 kHz using a Lab-PCI-6014 data acquisition board (National Instruments, Austin, TX), and stored on a PC. Offline data analysis was performed using a customized LabView-program (National Instruments, Austin, TX). To evoke synaptic EPSP, tungsten stimulating electrodes (Science Products, GmbH, Germany) were placed on afferent fibers from the internal capsule (thalamic input) and from the external capsule. Pathway independence was checked by applying two pulses with a 30 ms interval to either thalamic or cortical inputs and confirming the absence of crossed pair-pulse facilitation. EPSPs were recorded with a test pulse frequency for each individual pathway of 0.033 Hz. After 15 min of baseline, transient LTP was induced with a weak tetanic stimulation (25 pulses at a frequency of 100 Hz, repeated three times with an interval of 3 s) whereas long-lasting LTP was induced with a strong tetanic stimulation (25 pulses at a frequency of 100 Hz, repeated five times, with an interval of 3 s).
 
 As a measure of synaptic strength, the initial slope of the evoked EPSPs was calculated and expressed as percent changes from the baseline mean. Error bars denote SEM values. For the statistical analysis, LTP values were averaged over 5 min data bins immediately after LTP induction (T Initial) and at the end of the recording (T Final 95–100 min). LTP decay was calculated by [(T Initial –T Final)/T Final*100].
 
-## Fiber photometry
+### Fiber photometry
 
 GCaMP fluorescent signal was acquired by a Doric fiber photometry system and through an optic fiber that is identical to the optogenetics ones described above. A pigtailed rotary joint (Doric) was used for all fiber photometry experiments in freely moving mice. Doric Lenses single site Fiber Photometry Systems with a standard 405/465 nm system fluorescent minicube ilFMC4-G2_E(460-490)_F(500-540)_O(580-680)_S. The 405 nm was modulated at 208.616 Hz, and 465 nm was modulated at 572.205 Hz through the LED module driver. When the fiber photometry experiments were combined with optogenetics and/or electrophysiology recordings, the 638 nm laser diode was used to deliver the red light. A TTL generator device (Master 9) was used to time-stamp the signals. The data was acquired through Doric Studio and analyzed in Doric studio and by a custom MatLab script. The code used for the analysis is freely available at the following link: https://github.com/NabaviLab-Git/Photometry-Signal-Analysis, copy archived by NabaviLab-Git, 2024. Briefly, the signals were downsampled to 120 Hz using local averaging. A first-order polynomial was fitted onto the data, using the least squares method. To calculate the relative change in fluorescence, the raw GCaMP signal was normalized using the fitted signal, according to the following equation: \deltaF/F = (GCaMP signal - fitted signal)/(fitted signal). Behavioral events of interest were extracted and standardized using the mean and standard deviation of the baseline period.
 
-## Behavior
+### Behavior
 
 Eight weeks after the AAV injection, around 2 p.m., the mice were single-housed 20 min before the conditioning in identical cages to the home cages. Ugo Basile Aversive conditioning setup was used for all the experiments. The conditioning protocol was preceded by a pre-test, optical stimulation at 10 Hz for 30 s testing optical CS, identical to the one used in the 24 hr test. This step ensures that optical stimulation before conditioning and HFS does not cause any freezing or seizures. The strong conditioning protocol consisted of five pairings of a 2 s long optical CS at 10 hz, 20 pulses, co-terminated (last 15 pulses) with a 1.5 s foot shock 1 mA. The weak conditioning protocol was composed of three pairings of a 1.5 s long optical CS at 10 hz, 15 pulses, co-terminated (last 10 pulses) with a 1 s foot shock 1 mA. Twenty-four hours later, the mice were tested in a modified context with bedding on the context floor, and chamber lights switched off. The mice were given a 2 min baseline period or until they maintained a stable movement index and did not freeze at least 1 min before the delivery of the testing optical CS. The testing optical CS was delivered twice, 2 min apart. Freezing was automatically measured through Anymaze (Stoelting, Ireland; version 5.3). Freezing percentages indicated the time the mouse spent freezing (in the 2 CSs) divided by 60 and multiplied by 100. The unpaired conditioning had the same number of pairings and parameters of the optical CS and the foot shock, as the weak conditioning protocol, with the difference that they were never paired, separated by 1–3 min. Depending on the experiment, the HFS protocols (described above) were either delivered in the conditioning chamber within 5 min from the beginning or at the end of the conditioning session, or in the testing chamber within 5 min from the end of the 24 hr recall. The control groups remained in the same context for the same amount of time as the mice that received the HFS protocol.
 
-## Drugs
+### Drugs
 
 All drugs were dissolved in sterile PBS from stock solutions. NBQX at 50 micromolar (Sigma) and TTX 0.5 micromolar (HelloBio) were added to the silicone probe’s shank (5 microlitres). NBQX was added before the TTX.
 
-## Immunofluorescence
+### Immunofluorescence
 
 The mice were anesthetized with Isofluorane and euthanized by cervical dislocation. The heads were collected and stored for 7 days in 10% formalin at room temperature. Then, the brains were sliced into 100–120 µm thick slices in PBS on Leica Vibratome (VT1000 S).
 
 To exclude any virus-mediated toxicity, the brains were stained for NeuN. Slices were permeabilized with PBS-Triton X 0.5% plus 10% of Normal Goat Serum (NGS; Thermo Fisher Scientific, 16210064) and blocked in 10% Bovine Goat Serum (BSA; Sigma, A9647) for 90 min at room temperature. Subsequently, the slices were incubated with anti-NeuN antibody mouse (Merk Millipore, MAB377; 1:500) in PBS-Triton X 0.3%, 1% NGS, and 5% BSA. The incubation lasted for 72 hr at 4 °C. At the end of the 72 hr incubation, the slices were washed three times in PBS at room temperature. Next, the slices were incubated in Cyanine 3 (Cy3) goat anti-mouse (Thermo Fisher Scientific, A10521, 1:500) in PBS-Triton X 0.3%, 1% NGS, and 5% BSA for 24 hr at 4 °C. Finally, nuclear staining was performed using 1:1000 of DAPI (Sigma, D9542) for 30 min at room temperature. Brain slices were mounted on polysine glass slides (Thermo Scientific) with coverslips (Housein) using Fluoromount G (Southern Biotech) as mounting media.
 
-## Imaging
+### Imaging
 
 Imaging was performed by using a virtual slide scanner (Olympus VS120, Japan). Tile images were taken by the whole brain slides by using 10 X (UPLSAPO 2 10 x/0,40) or 20 X objective (UPLSAPO 20 x/0,75). The emission wavelength for Alexa 488 was 518 nm with 250 ms of exposure time. For Cy3, the emission wavelength was 565 nm with 250 ms of exposure time. The brain slices were visually inspected to confirm the virus expression in the thalamic and cortical regions projecting to the LA and to determine the optic fiber location in the LA.
 
-## Statistics
+### Statistics
 
 Statistical analyses were done via Prism 8.01 (GraphPad Software, San Diego, CA, USA). All the data are represented as mean ± SEM. Before choosing the statistical test, a normality test (Shapiro-Wilk and D'Agostino-Pearson normality test) was done on all data sets. If the data presented a normal distribution, then a parametric test was used to calculate the statistical differences between groups. The statistical methods and the p-values are mentioned in the figure legends.

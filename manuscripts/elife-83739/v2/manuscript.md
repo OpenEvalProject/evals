@@ -11,12 +11,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Biomedical Engineering, Johns Hopkins University Baltimore United States
-2. https://ror.org/00za53h95 Department of Biostatistics, Johns Hopkins University Baltimore United States
-3. https://ror.org/013meh722 Department of Zoology, University of Cambridge Cambridge United Kingdom
-4. https://ror.org/00tw3jy02 Neurobiology Division, MRC Laboratory of Molecular Biology Cambridge United Kingdom
-5. https://ror.org/013sk6x84 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
-6. https://ror.org/00za53h95 Department of Applied Mathematics and Statistics, Johns Hopkins University Baltimore United States
+1. Department of Biomedical Engineering, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Biostatistics, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Department of Zoology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. Neurobiology Division, MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
+5. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+6. Department of Applied Mathematics and Statistics, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -38,63 +38,200 @@ In this work, we compare the connectivity of the left and the right hemispheres 
 
 ## Results
 
-## Connectome of a larval Drosophila brain
+### Connectome of a larval Drosophila brain
 
 Recently, authors mapped a connectome of the brain of a D. melanogaster larva (Winding et al., 2023). To understand how the neurons in this brain were connected to each other, the authors first imaged this brain using electron microscopy (Ohyama et al., 2015), and then manually reconstructed each neuron and its pre- and post-synaptic contacts. This synaptic wiring diagram consists of 3016 neurons and over 548,000 synapses. We represent this connectome as a network, with nodes representing neurons and edges representing some number of synapses between them (Figure 1). Importantly, this work yielded a complete reconstruction of both the left and right hemispheres of the brain. In order to assess bilateral symmetry, we focused on the left-to-left and right-to-right (ipsilateral) induced subgraphs. While there are conceivable ways to define bilateral symmetry which include the contralateral connections, we did not consider them here in order to restrict our methods to the more widely applicable case of two-network-sample testing. More details on how we created the networks to compare here are available in Network construction. This process yielded a 1506 neuron network for the left hemisphere, and a 1506 neuron network for the right (note that the number of nodes in the two hemispheres need not have been exactly the same).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig1-v2.jpg)
 
-**Figure 1.:** Drosophila brain connectome from Winding et al., 2023.(A) Adjacency matrix for the full brain connectome network, sorted by brain hemisphere. Note that we ignore the left → right and right → left (contralateral) subgraphs in this work. (B) Network layouts for the left → left and right → right subgraphs.Figure 1—source data 1.Drosophila larva brain connectome.
+**Figure 1.:** (A) Adjacency matrix for the full brain connectome network, sorted by brain hemisphere. Note that we ignore the left → right and right → left (contralateral) subgraphs in this work. (B) Network layouts for the left → left and right → right subgraphs.
 
 We sought to understand whether these two networks were significantly different according to some definition, in order to characterize whether this brain was bilaterally symmetric. As with any statistical hypothesis test, this required that we make some modeling assumptions about the nature of the networks being compared. We stress that our subsequent results should be interpreted in light of these models and what they do (and do not) tell us about these networks (see Váša and Mišić, 2022, for an excellent discussion of this point in network neuroscience, and see Limitations for a discussion of alternative modeling assumptions). For all of our models, we treated the networks as directed (since we knew the direction of synapses), unweighted (creating an edge when there was one or more synapse between neurons unless otherwise specified), and loopless (since we ignored any observed self-loops). We made no assumptions about whether individual neurons in the left hemisphere correspond with individual neurons in the right hemisphere. Next, we detail a series of more specific models, what aspects of the networks they characterize, and how we construct a hypothesis test from each.
 
-## Density test
+### Density test
 
-Our first test of bilateral symmetry was based on perhaps the simplest network model, the Erdos-Renyi (ER) model (Gilbert, 1959; Erdős and Rényi, 1960), which models each potential edge as independently generated with the same probability, p. Comparing two networks under the ER model amounts to simply comparing their densities (Figure 2A).(1)H0:p(L)=p(R) vs. HA:p(L)≠p(R)
+Our first test of bilateral symmetry was based on perhaps the simplest network model, the Erdos-Renyi (ER) model (Gilbert, 1959; Erdős and Rényi, 1960), which models each potential edge as independently generated with the same probability, $p$. Comparing two networks under the ER model amounts to simply comparing their densities (Figure 2A).
+
+$$
+H_{0}:p^{(L)}=p^{(R)} vs. H_{A}:p^{(L)}\neqp^{(R)}
+$$
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig2-v2.jpg)
 
-**Figure 2.:** (A) Diagram of the methods used for testing based on the network density. See Erdos-Renyi model and density testing for more details. (B) The estimated density  (probability of any edge averaged across the entire network) for the left hemisphere is ~0.016, while for the right it is ~0.017 – this makes the left density ~0.93 that of the right. Vertical lines denote 95% confidence intervals for this estimated parameter p^. The p-value for testing the null hypothesis that these densities are the same is p^ (two-sided chi-squared test), meaning very strong evidence to reject the null that the left and right hemispheres have the same density.<10−23
+**Figure 2.:** (A) Diagram of the methods used for testing based on the network density. See Erdos-Renyi model and density testing for more details. (B) The estimated density $p^$ (probability of any edge averaged across the entire network) for the left hemisphere is ~0.016, while for the right it is ~0.017 – this makes the left density ~0.93 that of the right. Vertical lines denote 95% confidence intervals for this estimated parameter $p^$. The p-value for testing the null hypothesis that these densities are the same is $<10^{−23}$ (two-sided chi-squared test), meaning very strong evidence to reject the null that the left and right hemispheres have the same density.
 
 This comparison of probabilities can be tested using well-established statistical machinery for two-sample tests under the binomial distribution (see ER model and density testing for more details). We refer to this procedure as the density test.
 
-Figure 2B shows the comparison of the network densities between the left and right hemisphere networks. The densities of the left and right are ~0.016 and ~0.017, respectively, making the density of the left ~0.93 that of the right. To determine whether this is a difference likely to be observed by chance under the ER model, we ran a two-sided chi-squared test, which tests whether the probabilities of two independent binomials are significantly different. This test yielded a p-value <10−23, suggesting that we have strong evidence to reject this version of our hypothesis of bilateral symmetry. While the ratio of the estimated densities is only ~0.93, this extremely small p-value resulted from the large sample size for this comparison, as there are 2,266,530 potential edges on both the left and the right sides.
+Figure 2B shows the comparison of the network densities between the left and right hemisphere networks. The densities of the left and right are ~0.016 and ~0.017, respectively, making the density of the left ~0.93 that of the right. To determine whether this is a difference likely to be observed by chance under the ER model, we ran a two-sided chi-squared test, which tests whether the probabilities of two independent binomials are significantly different. This test yielded a p-value $<10^{−23}$, suggesting that we have strong evidence to reject this version of our hypothesis of bilateral symmetry. While the ratio of the estimated densities is only ~0.93, this extremely small p-value resulted from the large sample size for this comparison, as there are 2,266,530 potential edges on both the left and the right sides.
 
 To our knowledge, when neuroscientists have considered the question of bilateral symmetry, they have not meant such a simple comparison of network densities. In many ways, the ER model is too simple to be an interesting description of connectome structure. However, it is also striking that perhaps the simplest network comparison produced a significant difference between brain hemispheres for this brain. It is unclear whether this difference in densities is biological (e.g. a result of slightly differing rates of development for this individual), an artifact of how the data was collected (e.g. technological limitations causing slightly lower reconstruction rates on the left hemisphere), or something else entirely. Still, in addition to highlighting a simple departure from symmetry in this dataset, the density test result also provides important considerations for other tests. More complicated models of symmetry could compare other network statistics – say, the clustering coefficients, the number of triangles, and so on. These statistics, as well as the model-based parameters we will consider in this paper, are strongly related to the network density (Suarez et al., 2022; Chen et al., 2021). Thus, if the densities are different, it is likely that tests based on any of these other test statistics will also reject the null hypothesis of bilateral symmetry. Later, we describe methods for adjusting for a difference in density in other tests for bilateral symmetry.
 
-## Group connection test
+### Group connection test
 
-To understand whether this broad difference between the hemispheres can be localized to a specific set of connections, we next tested bilateral symmetry by making an assumption that the left and right hemispheres both come from a stochastic block model (SBM). Under the SBM, each neuron is assigned to a group, and the probability of any potential edge is a function of the groups to which the source and target neurons belong. For instance, the probability of a connection from a neuron in group k to a neuron in group l is set by the parameter Bk⁢l, where B is a K×K matrix of connection probabilities if there are K groups. Here, we used broad cell type categorizations from Winding et al., 2023, to determine each neuron’s group (see Figure 3—figure supplement 1 for the number of neurons in each group in each hemisphere, see Table 1 for naming conventions). Alternatively, there are many methods for estimating these assignments to groups for each neuron which we do not explore here (see Limitations for discussion on this point). Under the SBM with a fixed group assignment for each node, testing for bilateral symmetry amounts to testing whether the group-to-group connection probability matrices, B(L) and B(R), are the same.(2)H0:B(L)=B(R) vs. HA:B(L)≠B(R)
+To understand whether this broad difference between the hemispheres can be localized to a specific set of connections, we next tested bilateral symmetry by making an assumption that the left and right hemispheres both come from a stochastic block model (SBM). Under the SBM, each neuron is assigned to a group, and the probability of any potential edge is a function of the groups to which the source and target neurons belong. For instance, the probability of a connection from a neuron in group $k$ to a neuron in group $l$ is set by the parameter $B_{k⁢l}$, where $B$ is a $K\timesK$ matrix of connection probabilities if there are $K$ groups. Here, we used broad cell type categorizations from Winding et al., 2023, to determine each neuron’s group (see Figure 3—figure supplement 1 for the number of neurons in each group in each hemisphere, see Table 1 for naming conventions). Alternatively, there are many methods for estimating these assignments to groups for each neuron which we do not explore here (see Limitations for discussion on this point). Under the SBM with a fixed group assignment for each node, testing for bilateral symmetry amounts to testing whether the group-to-group connection probability matrices, $B^{(L)}$ and $B^{(R)}$, are the same.
 
-Rather than having to compare one probability as in Equation 1, we were interested in comparing all K2 group-to-group connection probabilities between the SBM models for the left and right hemispheres. We developed a novel statistical hypothesis test for this comparison, which uses many tests to compare each of the group-to-group connection probabilities, followed by appropriate correction for multiple comparisons (when examining the individual group-to-group connections) or combination of p-values (when assessing the overall null hypothesis in Equation 2). Details on the methodology used here is provided in SBM and group connection testing, and is shown as a schematic in Figure 3A. We refer to this procedure as the group connection test.
+$$
+H_{0}:B^{(L)}=B^{(R)} vs. H_{A}:B^{(L)}\neqB^{(R)}
+$$
 
-Figure 3B shows both of the estimated group-to-group probability matrices, B^(L) and B^(R). From a visual comparison of B^(L) and B^(R), the group-to-group connection probabilities appear qualitatively similar. Note also that some group-to-group connection probabilities are zero, making it nonsensical to do a comparison of probabilities. We highlight these elements in the matrices with explicit ‘0’s, and note that we did not run the corresponding test in these cases. Figure 3C shows the p-values from all 285 tests that were run to compare each element of these two matrices. After multiple comparisons correction, seven tests produced p-values less than α=0.05, indicating that we could reject the null hypothesis that those specific connection probabilities are the same between the two hemispheres. We also combined all (uncorrected) p-values, yielding an overall p-value for the entire null hypothesis (Equation 2) of equivalence of group-to-group connection probabilities of <10−7.
+**Table 1.**
+ Neuron group definitions, categorizations from Winding et al., 2023.
 
-Taken together, these results suggest that while the group-to-group connections are roughly similar between the two hemispheres, they are not the same under this model. Notably, there are seven group-to-group connections which were significantly different: Kenyon cells (KC) → KC, lateral horn neurons (LHN) → other, other → LHN, other → other, projection neurons (PN) → LHN, somatosensory projection neurons (PNSomato) →other, and PNSomato PNSomato. We stress that, as with any statistical test, a lack of a significant difference (e.g. in other subgraphs) could be the result of the null hypothesis of no difference being true, or simply from a lack of power against a particular alternative (see Figure 3—figure supplement 2 and Figure 3—figure supplement 3 for analysis of the power of this test in simulation, and Helwegen et al., 2023, for an excellent discussion on this point). Nevertheless, knowing some neuron groups which are wired significantly differently between the two hemispheres highlights the interpretability of this test. If a neuroscientist wanted to study mechanisms which could cause bilateral asymmetries in the brain, these seven group-to-group connections would be prime candidates for investigation.
 
-However, in Density test, we saw that the densities of the two networks are significantly different. p, the density of the network, can be thought of as a weighted average of the individual group-to-group connection probabilities, B. Should we then be surprised that if the density is different, the group-to-group connection probabilities are, too? Interestingly, for all the group-to-group connection probabilities which are different, the probability on the right hemisphere (which has the greater density) is higher (Figure 3D). We consider this phenomenon in the next section.
+<table>
+  <thead>
+    <tr>
+      <th>Acronym</th>
+      <th>Full name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ascending</td>
+      <td>Ascending neurons from the ventral nerve cord</td>
+    </tr>
+    <tr>
+      <td>CN</td>
+      <td>Convergence neurons, receiving input from lateral horn and mushroom body</td>
+    </tr>
+    <tr>
+      <td>DNSEZ</td>
+      <td>Descending neurons (to the sub-esophageal zone)</td>
+    </tr>
+    <tr>
+      <td>DNVNC</td>
+      <td>Descending neurons (to the ventral nerve cord)</td>
+    </tr>
+    <tr>
+      <td>KC</td>
+      <td>Kenyon cells</td>
+    </tr>
+    <tr>
+      <td>LHN</td>
+      <td>Lateral horn neurons</td>
+    </tr>
+    <tr>
+      <td>LN</td>
+      <td>Local neurons</td>
+    </tr>
+    <tr>
+      <td>MB-FBN</td>
+      <td>Mushroom body feedback neurons</td>
+    </tr>
+    <tr>
+      <td>MB-FFN</td>
+      <td>Mushroom body feedforward neurons</td>
+    </tr>
+    <tr>
+      <td>MBIN</td>
+      <td>Mushroom body input neurons</td>
+    </tr>
+    <tr>
+      <td>MBON</td>
+      <td>Mushroom body output neurons</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neurons lacking any other categorization</td>
+    </tr>
+    <tr>
+      <td>PN</td>
+      <td>Projection neurons</td>
+    </tr>
+    <tr>
+      <td>PNSomato</td>
+      <td>Somatosensory projection neurons</td>
+    </tr>
+    <tr>
+      <td>Pre-DNSEZ</td>
+      <td>Neurons projecting to DNSEZs</td>
+    </tr>
+    <tr>
+      <td>Pre-DNVNC</td>
+      <td>Neurons projecting to DNVNCs</td>
+    </tr>
+    <tr>
+      <td>RGN</td>
+      <td>Ring gland neurons</td>
+    </tr>
+    <tr>
+      <td>Sensory</td>
+      <td>Sensory neurons</td>
+    </tr>
+  </tbody>
+</table>
 
-## Density-adjusted group connection test
+Rather than having to compare one probability as in Equation 1, we were interested in comparing all $K^{2}$ group-to-group connection probabilities between the SBM models for the left and right hemispheres. We developed a novel statistical hypothesis test for this comparison, which uses many tests to compare each of the group-to-group connection probabilities, followed by appropriate correction for multiple comparisons (when examining the individual group-to-group connections) or combination of p-values (when assessing the overall null hypothesis in Equation 2). Details on the methodology used here is provided in SBM and group connection testing, and is shown as a schematic in Figure 3A. We refer to this procedure as the group connection test.
 
-Next, we examined whether the group-to-group connection probabilities on the right are simply a ‘scaled-up’ version of those on the left. Figure 3D showed that for all the individual connections which are significant, the connection probability on the right hemisphere is higher. This is consistent with the hypothesis stated above, which predicts that the connection probabilities in B(R) should be consistently higher than those in B(L).
+![Figure 3.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig3-v2.jpg)
 
-We thus created a test for this notion of bilateral symmetry in group-to-group connections (up to a density adjustment):(3)H0:B(L)=c⁢B(R)⁢ vs. ⁢HA:B(L)≠c⁢B(R)
+**Figure 3.:** (A) Description of methodology for the group connection test. See SBMs and group connection testing for more details. (B) Estimated group-to-group connection probabilities for both hemispheres. Note that they appear qualitatively similar. Estimated probabilities which are zero (no edge was present between that pair of groups) are indicated with a ‘0’ in those cells. (C) p-Values (after multiple comparisons correction) for each hypothesis test between individual elements of the connection probability matrices. Each cell represents a test for whether a specific group-to-group connection probability is the same on the left and right sides. ‘X’ denotes a significant p-value after multiple comparisons correction, with significance level $\alpha=0.05$. ‘B’ indicates that a test was not run since the estimated probability was zero on both hemispheres, ‘L’ indicates this was the case on the left only, and ‘R’ that it was the case on the right only. The individual (uncorrected) p-values were combined using Tippett’s method, resulting in an overall p-value (for the null hypothesis that the two group connection probability matrices are the same) of $<10^{−7}$. (D) Comparison of estimated group-to-group connection probabilities for the group pairs that are significantly different. In each case, the connection probability on the right hemisphere is higher.
 
-Note that these adjusted hypothesis do not test whether the density across all subgraphs of the left or right hemisphere networks are the same; rather, they are asking wither a single scaling factor (c in Equation 3) makes any significant density differences disappear from our previous comparison. To implement this hypothesis test, we first computed the density correcting constant c, which is simply the ratio of the left to the right hemisphere densities, finding that c≈ 0.93. Then, we replaced each of the component tests in the group connection test with a modified version of the standard chi-squared test for non-unity probability ratios (see Density-adjusted group connection testing for more details) (Miettinen and Nurminen, 1985). We refer to this procedure as the density-adjusted group connection test (Figure 4A). The p-values for each of the component tests for the density-adjusted group connection test are shown in Figure 4B. After correction for multiple comparisons, there are two group-to-group connections which are significantly different (at significance level 0.05): KC → convergence neurons (CN) and KC → mushroom body output neurons (MBON). Thus, all significant differences between the hemispheres under this version of the SBM are associated with the Kenyon cells.
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig3-figsupp1-v2.jpg)
 
-## Removing Kenyon cells
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig3-figsupp2-v2.jpg)
 
-Based on the results of Figure 4C, we sought to verify that the remaining differences in group-to-group connection probabilities after adjusting for a difference in density can be explained by asymmetry that is isolated to the Kenyon cells. To confirm this, we simply removed the Kenyon cells (i.e. all Kenyon cell nodes and edges to or from those nodes) from both the left and right hemisphere networks, and then re-ran each of the tests for bilateral symmetry presented here (Figure 5A). We observed significant differences between the left and right hemispheres for the density and group connection tests when excluding Kenyon cells, yielding p-values of <10−27 and <10−2, respectively (Figure 5B and C). However, for the density-adjusted group connection test, the p-value was ~0.60, indicating that we no longer rejected bilateral symmetry under this definition when the Kenyon cells are excluded from the analysis (Figure 5D). This sequence of results suggests that the difference between the left and right hemispheres (at least in terms of the high-level network statistics studied here) can be explained as the combination of a global effect (the difference in density) and a cell type-specific effect (the difference in Kenyon cell projection probabilities).
+**Figure 3—figure supplement 2.:** Simulated data (edge counts) were sampled from a $B⁢i⁢n⁢o⁢m⁢i⁢a⁢l⁢(n^{2},p)$ for one subgraph, and $B⁢i⁢n⁢o⁢m⁢i⁢a⁢l⁢(n^{2},0.8⁢p)$ for the other. $n$ represents the number of nodes in each subgraph and $p$ (base connection probability) represents the probability of an edge in this subgraph (subgraph density). For a varying number of nodes ($n$) and base connection probability ($p$), we sampled 1000 times from the two binomial models above, and then ran chi-squared tests (two-sided) on each pair of sampled data. The heatmap displays empirical power (probability of correctly rejecting the null hypothesis of equal connection probabilities) as a function of the number of nodes and base connection probability, with lines showing level sets for a power of 0.25, 0.5, and 0.9. Note that power increases both as the number of nodes (and thus, the number of possible edges) increases, but also as the connection probability approaches 0.5.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Simulation setting was similar to that in Figure 3—figure supplement 2, comparing data (edge counts) sampled from $B⁢i⁢n⁢o⁢m⁢i⁢a⁢l⁢(n_{1}^{2},p)$ vs. $B⁢i⁢n⁢o⁢m⁢i⁢a⁢l⁢(n_{2}^{2},0.8⁢p)$ via a two-sided chi-squared test. Here, n1 and n2 were the number of nodes for each of the two groups being compared, respectively, in the Drosophila larva brain connectome from Winding et al., 2023. $p$ was set to the mean connection probability for that subgraph across the left and right hemispheres. Heatmap displays empirical power across 1000 samples for this simulation setting, plotted as a function of the subgraphs being compared. ‘X’ denotes subgraphs which were significantly different in Group connection test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** See Power and validity of group connection test under various alternatives for more details on the simulation. (A) Cumulative distribution of p-values from Tippett’s method for combining p-values under the null, where the two group connection matrices $B^{(1)}$ and $B^{(2)}$ are the same. Note that the distribution of these p-values is sub- $U⁢n⁢i⁢f⁢o⁢r⁢m⁢(0,1)$, i.e., below the dashed line indicating the cumulative distribution of a $U⁢n⁢i⁢f⁢o⁢r⁢m⁢(0,1)$ random variable, meaning that the test is valid and the Type-I error is properly controlled for any level $\alpha$. (B) Power (probability of correctly rejecting the null hypothesis when it is false) as a function of the number of perturbed blocks ($t$) and the strength of each perturbation ($\delta$). The test is powerful against both a small number of strong perturbations and a large number of small perturbations, indicating its general applicability.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** The p-value for the overall test is $<10^{−7}$. Note that the same subgraphs are found to be significant as in Figure 3.
+
+Figure 3B shows both of the estimated group-to-group probability matrices, $B^^{(L)}$ and $B^^{(R)}$. From a visual comparison of $B^^{(L)}$ and $B^^{(R)}$, the group-to-group connection probabilities appear qualitatively similar. Note also that some group-to-group connection probabilities are zero, making it nonsensical to do a comparison of probabilities. We highlight these elements in the matrices with explicit ‘0’s, and note that we did not run the corresponding test in these cases. Figure 3C shows the p-values from all 285 tests that were run to compare each element of these two matrices. After multiple comparisons correction, seven tests produced p-values less than $\alpha=0.05$, indicating that we could reject the null hypothesis that those specific connection probabilities are the same between the two hemispheres. We also combined all (uncorrected) p-values, yielding an overall p-value for the entire null hypothesis (Equation 2) of equivalence of group-to-group connection probabilities of $<10^{−7}$.
+
+Taken together, these results suggest that while the group-to-group connections are roughly similar between the two hemispheres, they are not the same under this model. Notably, there are seven group-to-group connections which were significantly different: Kenyon cells (KC) → KC, lateral horn neurons (LHN) → other, other → LHN, other → other, projection neurons (PN) → LHN, somatosensory projection neurons ($PN^{Somato}$) →other, and $PN^{Somato}$ $PN^{Somato}$. We stress that, as with any statistical test, a lack of a significant difference (e.g. in other subgraphs) could be the result of the null hypothesis of no difference being true, or simply from a lack of power against a particular alternative (see Figure 3—figure supplement 2 and Figure 3—figure supplement 3 for analysis of the power of this test in simulation, and Helwegen et al., 2023, for an excellent discussion on this point). Nevertheless, knowing some neuron groups which are wired significantly differently between the two hemispheres highlights the interpretability of this test. If a neuroscientist wanted to study mechanisms which could cause bilateral asymmetries in the brain, these seven group-to-group connections would be prime candidates for investigation.
+
+However, in Density test, we saw that the densities of the two networks are significantly different. $p$, the density of the network, can be thought of as a weighted average of the individual group-to-group connection probabilities, $B$. Should we then be surprised that if the density is different, the group-to-group connection probabilities are, too? Interestingly, for all the group-to-group connection probabilities which are different, the probability on the right hemisphere (which has the greater density) is higher (Figure 3D). We consider this phenomenon in the next section.
+
+### Density-adjusted group connection test
+
+Next, we examined whether the group-to-group connection probabilities on the right are simply a ‘scaled-up’ version of those on the left. Figure 3D showed that for all the individual connections which are significant, the connection probability on the right hemisphere is higher. This is consistent with the hypothesis stated above, which predicts that the connection probabilities in $B^{(R)}$ should be consistently higher than those in $B^{(L)}$.
+
+We thus created a test for this notion of bilateral symmetry in group-to-group connections (up to a density adjustment):
+
+$$
+H_{0}:B^{(L)}=c⁢B^{(R)}⁢ vs. ⁢H_{A}:B^{(L)}\neqc⁢B^{(R)}
+$$
+
+Note that these adjusted hypothesis do not test whether the density across all subgraphs of the left or right hemisphere networks are the same; rather, they are asking wither a single scaling factor ($c$ in Equation 3) makes any significant density differences disappear from our previous comparison. To implement this hypothesis test, we first computed the density correcting constant $c$, which is simply the ratio of the left to the right hemisphere densities, finding that $c≈$ 0.93. Then, we replaced each of the component tests in the group connection test with a modified version of the standard chi-squared test for non-unity probability ratios (see Density-adjusted group connection testing for more details) (Miettinen and Nurminen, 1985). We refer to this procedure as the density-adjusted group connection test (Figure 4A). The p-values for each of the component tests for the density-adjusted group connection test are shown in Figure 4B. After correction for multiple comparisons, there are two group-to-group connections which are significantly different (at significance level 0.05): KC → convergence neurons (CN) and KC → mushroom body output neurons (MBON). Thus, all significant differences between the hemispheres under this version of the SBM are associated with the Kenyon cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig4-v2.jpg)
+
+**Figure 4.:** (A) Description of methodology for adjusting for a density difference between the two stochastic block models. See SBMs and group connection testing for more details. The adjustment factor (ratio of the left to the right density), c, is ~0.93. (B) p-Values for each group-to-group comparison after adjusting for a global density difference. p-Values are shown after correcting for multiple comparisons. Note that there are two significant p-values, and both are in group connections incident to Kenyon cells. These individual (uncorrected) p-values were combined using Tippett’s method, resulting in an overall p-value (for the null hypothesis that the two group connection probability matrices are the same after correcting for the density difference) of $<10^{−2}$.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** p-Values are shown for the overall test (left), as well as the individual p-values for the KC → KC (center) and KC → MBON (right) as example subgraphs. Distributions show p-values from 500 random edge removal experiments for both Fisher’s exact test and the chi-squared test. Dashed red line shows the single p-value from the analytic density-adjusted test used in Figure 4. Dashed black line and shaded regions indicate the p-values which were not significant at significance level 0.05 (left), or at the corresponding Bonferroni-adjusted level for the subgraph tests (center and right).
+
+### Removing Kenyon cells
+
+Based on the results of Figure 4C, we sought to verify that the remaining differences in group-to-group connection probabilities after adjusting for a difference in density can be explained by asymmetry that is isolated to the Kenyon cells. To confirm this, we simply removed the Kenyon cells (i.e. all Kenyon cell nodes and edges to or from those nodes) from both the left and right hemisphere networks, and then re-ran each of the tests for bilateral symmetry presented here (Figure 5A). We observed significant differences between the left and right hemispheres for the density and group connection tests when excluding Kenyon cells, yielding p-values of $<10^{−27}$ and $<10^{−2}$, respectively (Figure 5B and C). However, for the density-adjusted group connection test, the p-value was ~0.60, indicating that we no longer rejected bilateral symmetry under this definition when the Kenyon cells are excluded from the analysis (Figure 5D). This sequence of results suggests that the difference between the left and right hemispheres (at least in terms of the high-level network statistics studied here) can be explained as the combination of a global effect (the difference in density) and a cell type-specific effect (the difference in Kenyon cell projection probabilities).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig5-v2.jpg)
 
-**Figure 5.:** (A) Diagram of the methods used, indicating that Kenyon cells (and any incident edges) were simply removed from the network, and all previously mentioned tests were run again. (B) Comparison of network densities, as in Figure 2B. The p-value for this comparison is , indicating very strong evidence to reject the null that the two networks share the same density. (<10−27C) Comparison of group-to-group connection probabilities, as in Figure 3C. p-Values are shown for each group-to-group connection comparison (after multiple comparison correction). The (uncorrected) p-values were combined to yield an overall p-value of , showing evidence that the group connection probabilities are not the same even after removing Kenyon cells. (<10−2D) Comparison of group-to-group connection probabilities after density adjustment, as in Figure 4C. p-Values are shown for each group-to-group connection comparison (after multiple comparison correction). Note that there are no longer any significantly different connections. The (uncorrected) p-values were combined to yield an overall p-value of ~0.60. After removing Kenyon cells, there is no longer evidence to reject the null that the group connection probabilities are the same.
+**Figure 5.:** (A) Diagram of the methods used, indicating that Kenyon cells (and any incident edges) were simply removed from the network, and all previously mentioned tests were run again. (B) Comparison of network densities, as in Figure 2B. The p-value for this comparison is $<10^{−27}$, indicating very strong evidence to reject the null that the two networks share the same density. (C) Comparison of group-to-group connection probabilities, as in Figure 3C. p-Values are shown for each group-to-group connection comparison (after multiple comparison correction). The (uncorrected) p-values were combined to yield an overall p-value of $<10^{−2}$, showing evidence that the group connection probabilities are not the same even after removing Kenyon cells. (D) Comparison of group-to-group connection probabilities after density adjustment, as in Figure 4C. p-Values are shown for each group-to-group connection comparison (after multiple comparison correction). Note that there are no longer any significantly different connections. The (uncorrected) p-values were combined to yield an overall p-value of ~0.60. After removing Kenyon cells, there is no longer evidence to reject the null that the group connection probabilities are the same.
 
 It is noteworthy that the Kenyon cells were the specific cell type where we detected asymmetry after correcting for the density difference. Kenyon cells are involved in associative learning in Drosophila and other insects (Heisenberg, 2003; Aso et al., 2014; Eichler et al., 2017). Other studies have suggested that certain connections (specifically from antennal lobe projection neurons to Kenyon cells) are random (Caron et al., 2013; Eichler et al., 2017). The marked lack of symmetry we observed specifically in the Kenyon cells in the current study could be the result of these features, which suggest their uniquely non-stereotyped patterns of connectivity in this nervous system.
 
-## Edge weight thresholds
+### Edge weight thresholds
 
-Next, we sought to examine how the definition of an edge used to construct our binary network affects the degree of symmetry under each of the definitions considered here. For the networks considered in the previous sections, we considered an edge to exist if one or more synapses from neurons i to j were in the dataset. To understand how our analysis might change based on this assumption, we considered two types of edge weight threshold schemes for creating a binary network before testing: the first based simply on a threshold on the number of synapses, and the second based on a threshold of the proportion of a downstream neuron’s input (Figure 6A). By varying the threshold in both schemes, we were able to evaluate many hypotheses about bilateral symmetry, where higher thresholds meant that we only considered the symmetry present in strong edges (Figure 6B).
+Next, we sought to examine how the definition of an edge used to construct our binary network affects the degree of symmetry under each of the definitions considered here. For the networks considered in the previous sections, we considered an edge to exist if one or more synapses from neurons $i$ to $j$ were in the dataset. To understand how our analysis might change based on this assumption, we considered two types of edge weight threshold schemes for creating a binary network before testing: the first based simply on a threshold on the number of synapses, and the second based on a threshold of the proportion of a downstream neuron’s input (Figure 6A). By varying the threshold in both schemes, we were able to evaluate many hypotheses about bilateral symmetry, where higher thresholds meant that we only considered the symmetry present in strong edges (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig6-v2.jpg)
+
+**Figure 6.:** Diagrams of (A) two notions of edge weight and (B) application of edge weight thresholds to examine bilateral symmetry. See Edge weight thresholds for more explanation. (C) Distribution of synapse count edge weights. The right hemisphere consistently has more edges in each synapse count bin. (D) Distribution of input percentage edge weights. The right hemisphere has more edges in the lower ($<1%$) portion of this distribution, but the hemispheres match well for high edge weights. (E) p-Values for each test after synapse count thresholding, plotted as a function of the percentage of edges which are removed from the networks, as well as the corresponding weight threshold (lower x-axis). The p-values for all tests generally increased as a function of synapse count threshold, but the density test never reached a p-value >0.05 over this range of thresholds. (F) p-Values for each test after input percentage thresholding, plotted as a function of the percentage of edges which were removed from the networks, as well as the corresponding weight threshold (lower x-axis). Note that all tests yielded insignificant (>0.05) p-values after a threshold of around 1.25% input proportion. Compared to the results in (E), thresholding based on input percentage reached insignificant p-values faster as a function of the total amount of edges removed for all tests.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83739/elife-83739-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Dashed line ($\alpha^{*}$) indicates a Bonferonni-corrected significance level of 0.05, using the total number of tests run in Group connection test. The qualitative trends observed for the entire network hold for this subgraph in isolation, where for both thresholding methods p-values generally increase as the threshold increases, and this effect happens faster for the input percentage thresholding.
 
 Before running the tests for each of these notions of symmetry, we first examined the distributions of edge weights to get a sense for how we should expect these tests to perform. Figure 6C and D displays the distribution (total count) for the synapse count or input proportion edge weights, respectively. The right hemisphere has more connections than the left for all synapse count values (Figure 6C), hinting that the density of the right hemisphere will be slightly higher for any potential edge weight threshold using this definition. Conversely, the distributions of weights as an input percentage shows a different trend. For edge weights less than ~1.25%, the right appears to have more edges, but past this threshold, the counts of edges between left and right appear comparable (Figure 6D).
 
@@ -106,37 +243,97 @@ These findings are consistent with previous work in connectomics which has hinte
 
 ## Discussion
 
-## Summary
+### Summary
 
 We began with what was at its face a very simple question: is the connectivity on the left and the right side of this brain ‘different?’ We then described several ways that one could mathematically formalize notions of ‘different’ from the perspective of network model parameters: difference in density of connections across the entire network (Density test), difference in group connection probabilities (Group connection test), or difference in group connection probabilities while adjusting for a difference in density (Density-adjusted group connection test). We proposed a test procedure corresponding with each of these notions, relying on well-established statistical techniques for evaluating contingency tables and combining p-values to construct our tests. The results of these different test procedures varied markedly (Table 2). Specifically, we saw that the network densities were significantly different between the hemispheres. The group connection test also detected a difference, highlighting seven group-to-group connections which had significantly differing connection probabilities when comparing the hemispheres. However, when we added an adjustment to the group connection comparison to account for the difference in network density, this test had only two significant group connections, and both were projections from the Kenyon cells. Thus, the asymmetry observed (at least when viewed through the lens of these high-level network statistics) between the hemispheres can be thought of as a global density difference in addition to a cell type-specific effect shown in the Kenyon cells. We confirmed this finding by simply removing the Kenyon cells, and showing that the density-adjusted group connection test no longer rejected (Removing Kenyon cells). Finally, we examined whether the left and right hemisphere networks would become less dissimilar when only high-edge-weight edges were considered (Edge weight thresholds). We found that whether thresholding based on number of synapses or the proportion of input to the post-synaptic neuron, p-values generally increased for each test (i.e. less significant asymmetry was detected) as the edge weight threshold grew. However, we observed that thresholds based on neuron input proportion could achieve symmetry while removing fewer (only 20% for some tests) edges. These results are consistent with the idea that the nervous system evolved to preserve a relative balance of inputs to individual neurons, which has been suggested by previous studies on specific subcircuits in the larval and adult Drosophila nervous system (Gerhard et al., 2017; Tobin et al., 2017; Berck et al., 2016).
 
-## Limitations
+**Table 2.**
+ Summary of tests, models, hypotheses, whether Kenyon cells (KC) were included, and the resulting p-values for each evaluation of bilateral symmetry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Test method</th>
+      <th>Model</th>
+      <th>H0 (vs HA≠)</th>
+      <th>KC</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Density test</td>
+      <td>ER</td>
+      <td>p(L)=p(R)</td>
+      <td>+</td>
+      <td>&lt;10−23</td>
+    </tr>
+    <tr>
+      <td>Group connection test</td>
+      <td>SBM</td>
+      <td>B(L)=B(R)</td>
+      <td>+</td>
+      <td>&lt;10−7</td>
+    </tr>
+    <tr>
+      <td>Density-adjusted group connection test</td>
+      <td>DA-SBM</td>
+      <td>B(L)=c⁢B(R)</td>
+      <td>+</td>
+      <td>&lt;10−2</td>
+    </tr>
+    <tr>
+      <td>Density test</td>
+      <td>ER</td>
+      <td>p(L)=p(R)</td>
+      <td>-</td>
+      <td>&lt;10−27</td>
+    </tr>
+    <tr>
+      <td>Group connection test</td>
+      <td>SBM</td>
+      <td>B(L)=B(R)</td>
+      <td>-</td>
+      <td>&lt;10−2</td>
+    </tr>
+    <tr>
+      <td>Density-adjusted group connection test</td>
+      <td>DA-SBM</td>
+      <td>B(L)=c⁢B(R)</td>
+      <td>-</td>
+      <td>~0.60</td>
+    </tr>
+  </tbody>
+</table>
+
+### Limitations
 
 As with any statistical inference, our conclusions are valid under particular model assumptions. Therefore, it is important to highlight the assumptions which motivated each of our tests in order to understand what each p-value means (and what it does not). We highlight several of these assumptions below, and comment on alternative assumptions that one could make in each case.
 
-## What model?
+#### What model?
 
 First, while we motivated the tests presented here by assuming that some statistical model produced the connectivity of the left and the right hemispheres, these models do not literally describe the process which generated these networks. However, without knowledge of how genes and development give rise to the connectome, we know of no more correct model for how this connectome was generated (Vogelstein et al., 2019; Witvliet et al., 2021; Barabási and Barabási, 2020) (and even this would still be just a model). Without an agreed upon definition of bilateral symmetry, we chose to start from the simplest definition of what one could mean by bilateral symmetry. From this simplest network model, we iteratively added complexity to the definition of bilateral symmetry until we found the simplest model for which the Drosophila larva connectome displayed no significant asymmetry. We also note that previous studies have found associations between the test statistic we study here (graph or subgraph density) and various other biological properties, such as development (Witvliet et al., 2021), neurodegeneration (Pfeiffer et al., 2020), and phylogenetics (Suarez et al., 2022).
 
 However, many other network models could have been applied to examine different definitions of bilateral symmetry. For instance, SBM may fail to capture certain features of an empirically observed network, such as degree distributions. This led to the development of the popular degree-corrected SBM (Karrer and Newman, 2011), which adds parameters to account for heterogeneous node degrees. A modified group connection test which also compares these degree correction parameters would be a natural extension of the current work, but requires further study to establish as a valid statistical test. Tests based on the random dot product graph model (Tang et al., 2017; Athreya et al., 2018; Chung et al., 2022) would allow us to compare connection probabilities between hemispheres without assuming that neurons belong to a finite number of groups. Bravo-Hermsdorff et al., 2021, showed that a two-network-sample test could be constructed from subgraph counts, which they argue characterize a network’s ‘texture’ rather than its ‘backbone’ as studied in this work. We also did not use network models that incorporate edge weights, as two-network-sample tests for this case are even less developed than for the unweighted case. Further, a variety of neuroscience-specific network models (such as those which incorporate spatial information) have been proposed (Váša and Mišić, 2022). Nevertheless, we note that even if one is concerned with these more elaborate notions of symmetry, they are still related to the simple models studied here. For instance, the network density would affect a network’s latent positions under the random dot product graph model, as well as the count of any possible subgraph. Thus, even if one prefers a different definition of bilateral symmetry, the definitions presented here were worth testing.
 
-## What is a cell type?
+#### What is a cell type?
 
 Second, even if these networks were generated from SBMs, alternative groupings of neurons could have been used. We used broad cell type categorizations from previous literature (Winding et al., 2023) to partition our network into groups. However, we could have used a coarser partition, categorizing neurons as sensory, interneuron, and descending/output. Conversely, we could have used a finer partition, splitting the cell types used here into subgroups (such as whether a sensory neuron receives odor or visual information). As these different partitions likely lead to different subgraph sizes and connection probabilities, the statistical power of the group connection test would also be affected by these choices (Helwegen et al., 2023). Thus, the results presented for any group connection test need to be interpreted in terms of the specific cell type groupings used.
 
 Further, a rich literature exists on inferring the partition for an SBM from the observed connectivity (Lee and Wilkinson, 2019; Peixoto, 2014; Peixoto, 2017; Rohe et al., 2011; Sussman et al., 2012; Funke and Becker, 2019) – this is one perspective for clustering neurons based on their observed connectivity, much like clustering procedures are used to predict meaningful groups of neurons based on morphology, activity, or gene expression. Applying these techniques to a connectome would yield alternative groupings of neurons (as in Winding et al., 2023) to use for a group connection test, which again could change its conclusions. However, this approach requires further study, as it introduces a new source of uncertainty since more model parameters are estimated from the data.
 
-## What about neuron pairs?
+#### What about neuron pairs?
 
 Third, we assumed that the two networks we observed were unmatched – that is, the tests we applied did not use any pairing of individual neurons between hemispheres. In Drosophila, this 1-to-1 neuron correspondence is known to exist for most neurons, particularly in the larva. GAL-4 lines are able to reliably label bilateral neuron pairs on the basis of their gene expression (Jenett et al., 2012; Eschbach et al., 2020). These neurons tend to be similar in terms of their morphology and their connectivity (Winding et al., 2023; Ohyama et al., 2015; Pedigo et al., 2022; Schlegel et al., 2021; Eschbach et al., 2020; Gerhard et al., 2017; Schneider-Mizell et al., 2016). Methods which use this pairing (e.g. Tang et al., 2017; Ghoshdastidar and Von Luxburg, 2018; Bhadra et al., 2019, as well as tests based on correlated ER and SBM models) would be able to evaluate symmetry in light of edge correspondences between the two networks, and could have higher power at detecting certain asymmetries. However, these methods assume that the matching of nodes is perfect and complete – if even one neuron pairing is a mistake, or if even one neuron does not have a partner in the opposite hemisphere, then these tests could be invalid or inapplicable. We note that graph matching techniques could estimate a correspondence between nodes for all neurons (Fishkind et al., 2019; Vogelstein et al., 2015; Saad-Eldin et al., 2021; Winding et al., 2023; Pedigo et al., 2022); however, the statistical consequences of first learning this (likely imperfect) alignment prior to using a method which assumes the alignment is known and exact have not been thoroughly studied, so we did not explore it further here.
 
-## Outlook
+### Outlook
 
 We presented the first statistical comparison of bilateral networks in a neuron-level brain connectome. While we focused on the larval Drosophila brain connectome, these techniques could be applied to future connectomes to evaluate bilateral symmetry in other individuals or organisms. More generally, we presented several notions that can be used to compare two networks, a particularly relevant problem in the current age of connectomics. Human (macroscale) connectomics has seen an explosion in the number of network samples that can be obtained, allowing for different approaches for comparing connectomes across populations, from simple comparisons of edges (Ingalhalikar et al., 2014) to low-rank and sparse regressions across networks (Xia et al., 2020). However, nanoscale connectomics is still technologically limited in its acquisition rate, often to only one or at best a few (<10, e.g. Witvliet et al., 2021) individuals for a given experiment. Nevertheless, we wish to make valid inferences and comparisons between these connectomes (Vogelstein et al., 2019; Barsotti et al., 2021; Abbott et al., 2020; Galili et al., 2022). The framework for two-network-sample testing presented here will facilitate these kinds of comparisons. To make these comparisons more practical to neuroscientists, we demonstrated the importance of adjustments to simple null hypotheses – as we saw, even a difference in something as simple as a network density can be related to other network comparisons. For example, take the problem of comparing the connectome of the larval and adult Drosophila. Since the adult Drosophila brain has orders of magnitude more nodes (Raji and Potter, 2021; Winding et al., 2023; Bates et al., 2020), the density of this network is likely to be smaller than that of the larva. Therefore, we may want to consider a more subtle question – are the connectomes of the adult and larva different (and if so, how) after adjusting for this difference in density? These kinds of biologically motivated adjustments to out-of-the-box statistical hypotheses will be key to drawing valid inferences from connectomes which are also relevant to meaningful questions in neuroscience.
 
 ## Methods
 
-## Network construction
+### Network construction
 
 Here, we explain how we generated networks for the bilateral symmetry comparison. We started from a network of all neurons in the brain and sensory neurons which project into it for a larval Drosophila (Winding et al., 2023). As in Winding et al., 2023, we removed neurons which were considered partially differentiated. From this network, we selected only the left-to-left (ipsilateral) induced subgraph, and likewise for the right-to-right. We ignored a pair of neurons which had no left/right designation, as their cell bodies lie on the midline (Winding et al., 2023). To ensure we had fully connected networks on either hemisphere, we took the largest weakly connected component of neurons on the left, and likewise on the right.
 
@@ -144,84 +341,162 @@ With this selection for our nodes of interest, we then choose our set of edges t
 
 When comparing two networks, methods may make differing assumptions about the nature of the two networks being compared. One of the most important is whether the method assumes a correspondence between nodes (Tantardini et al., 2019). Some methods (matched comparisons, also called known node correspondence) require that the two networks being compared have the same number of nodes, and that for each node in network 1, there is a known node in network 2 which corresponds to it. Other methods (unmatched comparisons, also called unknown node correspondence) do not have this requirement. To make an analogy to the classical statistical literature on two-sample testing, this distinction is similar to that between an unpaired (unmatched) and a paired (matched) t-test. We focused on the unmatched case in this work, where we say nothing about whether any neurons on the left correspond with any specific neurons on the right.
 
-## Two-network-sample testing
+### Two-network-sample testing
 
 Here, we describe in more detail the methods used to evaluate bilateral symmetry, each of which is based on some generative statistical model for the network. For each model, we formally define the model, describe how its parameters can be estimated from observed data, and then explain the test procedure motivated by the model. A more thorough review of these models can be found in Chung et al., 2021.
 
-## Independent edge random networks
+### Independent edge random networks
 
-Many statistical network models fall under the umbrella of independent edge random networks, sometimes called the inhomogeneous ER model. Under this model, the elements of the network’s adjacency matrix A are sampled independently from a Bernoulli distribution:Ai⁢j∼B⁢e⁢r⁢n⁢o⁢u⁢l⁢l⁢i⁢(Pi⁢j)
+Many statistical network models fall under the umbrella of independent edge random networks, sometimes called the inhomogeneous ER model. Under this model, the elements of the network’s adjacency matrix $A$ are sampled independently from a Bernoulli distribution:
 
-If n is the number of nodes, the matrix P is an n×n matrix of probabilities with elements in [0,1]. Depending on how the matrix P is constructed, we can create different models. We next describe several of these choices. Note that for each model, we assume that there are no loops, or in other words the diagonal of the matrix P will always be set to zero.
+$$
+A_{i⁢j}∼B⁢e⁢r⁢n⁢o⁢u⁢l⁢l⁢i⁢(P_{i⁢j})
+$$
 
-## ER model and density testing
+If $n$ is the number of nodes, the matrix $P$ is an $n\timesn$ matrix of probabilities with elements in $[0,1]$. Depending on how the matrix $P$ is constructed, we can create different models. We next describe several of these choices. Note that for each model, we assume that there are no loops, or in other words the diagonal of the matrix $P$ will always be set to zero.
 
-Perhaps the simplest model of a network is the ER model. This model treats the probability of each potential edge in the network occurring to be the same. In other words, all edges between any two nodes are equally likely. Thus, for all (i,j),i≠j, with i and j both running from 1⁢…⁢n, the probability of the edge (i,j) occurring isP[Aij=1]=Pij=p
+### ER model and density testing
 
-where p is the global connection probability.
+Perhaps the simplest model of a network is the ER model. This model treats the probability of each potential edge in the network occurring to be the same. In other words, all edges between any two nodes are equally likely. Thus, for all $(i,j),i\neqj$, with $i$ and $j$ both running from $1⁢…⁢n$, the probability of the edge $(i,j)$ occurring is
 
-Thus, for this model, the only parameter of interest is the global connection probability, p. This is sometimes also referred to as the network density. For a directed, loopless network, with n nodes, there are n⁢(n-1) unique potential edges (since we ignore the n elements on the diagonal of the adjacency matrix). If the observed network A has m total edges, then the estimated density is simplyp^=mn(n−1).
+$$
+P[A_{ij}=1]=P_{ij}=p
+$$
 
-In order to compare two networks A(L) and A(R) under this model, we simply need to compute these estimated network densities (p^(L) and p^(R)), and then run a statistical test to see if these densities are significantly different. Under this model, the total number of edges m comes from a B⁢i⁢n⁢o⁢m⁢i⁢a⁢l⁢(n⁢(n-1),p) distribution. This is because the number of edges is the sum of independent Bernoulli trials with the same probability. If m(L) is the number of edges on the left hemisphere, and m(R) is the number of edges on the right, then we have: m(L)∼Binomial(n(L)(n(L)−1),p(L))
+where $p$ is the global connection probability.
 
-and independently, m(R)∼Binomial(n(R)(n(R)−1),p(R))
+Thus, for this model, the only parameter of interest is the global connection probability, $p$. This is sometimes also referred to as the network density. For a directed, loopless network, with $n$ nodes, there are $n⁢(n-1)$ unique potential edges (since we ignore the $n$ elements on the diagonal of the adjacency matrix). If the observed network $A$ has $m$ total edges, then the estimated density is simply
 
-To compare the two networks, we are interested in a comparison of p(L) vs. p(R). Formally, we are testing:H0:p(L)=p(R),Ha:p(L)≠p(R).
+$$
+p^=\frac{m}{n(n−1)}.
+$$
+
+In order to compare two networks $A^{(L)}$ and $A^{(R)}$ under this model, we simply need to compute these estimated network densities ($p^^{(L)}$ and $p^^{(R)}$), and then run a statistical test to see if these densities are significantly different. Under this model, the total number of edges $m$ comes from a $B⁢i⁢n⁢o⁢m⁢i⁢a⁢l⁢(n⁢(n-1),p)$ distribution. This is because the number of edges is the sum of independent Bernoulli trials with the same probability. If $m^{(L)}$ is the number of edges on the left hemisphere, and $m^{(R)}$ is the number of edges on the right, then we have:
+
+$$
+m^{(L)}∼Binomial(n^{(L)}(n^{(L)}−1),p^{(L)})
+$$
+
+and independently,
+
+$$
+m^{(R)}∼Binomial(n^{(R)}(n^{(R)}−1),p^{(R)})
+$$
+
+To compare the two networks, we are interested in a comparison of $p^{(L)}$ vs. $p^{(R)}$. Formally, we are testing:
+
+$$
+H_{0}:p^{(L)}=p^{(R)},H_{a}:p^{(L)}\neqp^{(R)}.
+$$
 
 Fortunately, the problem of testing for equal proportions under the binomial is well studied. In our case, we used a chi-squared test (Agresti, 2013) to run this test for the null and alternative hypotheses above.
 
-## SBMs and group connection testing
+### SBMs and group connection testing
 
-An SBM is a popular statistical model of networks (Holland et al., 1983). Put simply, this model treats the probability of an edge occurring between node i and node j as purely a function of the communities or groups that node i and j belong to. This model is parameterized by:
+An SBM is a popular statistical model of networks (Holland et al., 1983). Put simply, this model treats the probability of an edge occurring between node $i$ and node $j$ as purely a function of the communities or groups that node $i$ and $j$ belong to. This model is parameterized by:
 
-Thus, the probability of any specific edge (i,j) can be found by looking up the appropriate element of B:P[Aij=1]=Pij=Bτi,τj
+Thus, the probability of any specific edge $(i,j)$ can be found by looking up the appropriate element of $B$:
 
-In our case, we assume τ is known – in the case where it is not, or one simply wishes to estimate an alternative partition of the network, many methods exist for estimating τ. But with τ known, estimating B becomes simple, amounting to doing K2 subgraph density estimates. Specifically, let m⁢(k,l) be the number of edges from nodes in group k to nodes in group l. We then compute the density of this subgraph for each (k,l) pair (ignoring self-loops):B^k,l={m(k,l)nknl,if k≠lm(k,l)nk(nk−1),if k=l
+$$
+P[A_{ij}=1]=P_{ij}=B_{\tau_{i},\tau_{j}}
+$$
 
-where nk is the number of nodes in group k, and likewise for nl.
+In our case, we assume $\tau$ is known – in the case where it is not, or one simply wishes to estimate an alternative partition of the network, many methods exist for estimating $\tau$. But with $\tau$ known, estimating $B$ becomes simple, amounting to doing $K^{2}$ subgraph density estimates. Specifically, let $m⁢(k,l)$ be the number of edges from nodes in group $k$ to nodes in group $l$. We then compute the density of this subgraph for each $(k,l)$ pair (ignoring self-loops):
 
-Assuming the SBM, we are interested in comparing the group-to-group connection probability matrices, B, for the left and right hemispheres. The null hypothesis of bilateral symmetry becomes(4)H0:B(L)=B(R),HA:B(L)≠B(R)
+$$
+B^_{k,l}={\frac{m(k,l)}{n_{k}n_{l}},if k\neql\frac{m(k,l)}{n_{k}(n_{k}−1)},if k=l
+$$
 
-Rather than having to compare one proportion as in ER model and density testing, we are now interested in comparing all K2 probabilities between the SBM models for the left and right hemispheres. The hypothesis test above can be decomposed into K2 hypotheses. B(L) and B(R) are both K×K matrices, where each element Bk⁢l represents the probability of a connection from a neuron in group k to one in group l. We also know that group k for the left network corresponds with group k for the right. In other words, the groups are matched. Thus, we are interested in testing, for k,l both running from 1⁢…⁢K:(5)H0:Bkl(L)=Bkl(R),HA:Bkl(L)≠Bkl(R)
+where nk is the number of nodes in group $k$, and likewise for nl.
 
-Now, we are left with K2 p-values from Equation 5, each of which bears upon the overall null hypothesis in Equation 4. We therefore require some method of combining these p-values into one, or otherwise making a decision about the hypothesis in Equation 4. Many methods for combining p-values have been proposed. This problem of combining p-values can itself be viewed as a hypothesis testing problem. Denoting the (k,l) th p-value from Equation 5 as pk⁢l, we are testingH0:pk⁢l∼U⁢n⁢i⁢f⁢o⁢r⁢m⁢(0,1)
+Assuming the SBM, we are interested in comparing the group-to-group connection probability matrices, $B$, for the left and right hemispheres. The null hypothesis of bilateral symmetry becomes
 
-versus the alternative hypothesis that at least one of the p-values is distributed according to some non-uniform, non-increasing density with support [0,1] (Birnbaum, 1954; Heard and Rubin-Delanchy, 2018). Birnbaum, 1954, showed that no method of combining these p-values can be optimal in general to all alternatives, so we are left with a decision to make (with no universally preferred answer) about which methods to use to combine p-values (Heard and Rubin-Delanchy, 2018). Here, we select Tippett’s method (Tippett, 1931; Heard and Rubin-Delanchy, 2018) due to its ubiquity, simplicity, and power against various alternatives to bilateral symmetry under a simulation described in Power and validity of group connection test under various alternatives (Figure 3—figure supplement 4). In future work, specific classes of alternatives may motivate different methods for combining p-values, as described in Heard and Rubin-Delanchy, 2018.
+$$
+H_{0}:B^{(L)}=B^{(R)},H_{A}:B^{(L)}\neqB^{(R)}
+$$
 
-We also examined the p-values from each of the individual tests after Holm-Bonferroni correction to correct for multiple comparisons. As in ER model and density testing, we used chi-squared tests (Agresti, 2013) to perform each of the individual hypothesis tests in Equation 5. Note also that in some cases, an element of B(L) and/or B(R) could be 0; in each of these cases, we did not run that specific comparison between elements, as the notion of testing for proportions being the same becomes nonsensical. We indicated these tests in Figure 3C, Figure 4C, and Figure 5C–D, and note that these tests were not included when computing the number of comparisons for the Holm-Bonferroni correction. We also note that when few edges (say, <10 are present in a given subgraph), exact tests (e.g. Fisher’s exact test; Agresti, 2013) may be more appropriate, as they do not rely on asymptotic approximations. We found that in the current work, this choice of test did not substantially affect the results (Figure 3—figure supplement 5).
+Rather than having to compare one proportion as in ER model and density testing, we are now interested in comparing all $K^{2}$ probabilities between the SBM models for the left and right hemispheres. The hypothesis test above can be decomposed into $K^{2}$ hypotheses. $B^{(L)}$ and $B^{(R)}$ are both $K\timesK$ matrices, where each element $B_{k⁢l}$ represents the probability of a connection from a neuron in group $k$ to one in group $l$. We also know that group $k$ for the left network corresponds with group $k$ for the right. In other words, the groups are matched. Thus, we are interested in testing, for $k,l$ both running from $1⁢…⁢K$:
 
-## Density-adjusted group connection testing
+$$
+H_{0}:B_{kl}^{(L)}=B_{kl}^{(R)},H_{A}:B_{kl}^{(L)}\neqB_{kl}^{(R)}
+$$
 
-In density-adjusted group connection test, we considered the null hypothesis that the left hemisphere connection probabilities under the SBM are a scaled version of those on the right:(6)H0:B(L)=c⁢B(R)⁢ vs. ⁢HA:B(L)≠c⁢B(R).
+Now, we are left with $K^{2}$ p-values from Equation 5, each of which bears upon the overall null hypothesis in Equation 4. We therefore require some method of combining these p-values into one, or otherwise making a decision about the hypothesis in Equation 4. Many methods for combining p-values have been proposed. This problem of combining p-values can itself be viewed as a hypothesis testing problem. Denoting the $(k,l)$ th p-value from Equation 5 as $p_{k⁢l}$, we are testing
 
-The scale for this comparison is the ratio of the densities between the left and the right hemisphere networks: (7)c=p(L)p(R).
+$$
+H_{0}:p_{k⁢l}∼U⁢n⁢i⁢f⁢o⁢r⁢m⁢(0,1)
+$$
 
-Analogous to the group connection testing in Equation 5, this means that the individual group connection hypotheses become(8)H0:Bkl(L)=cBkl(R),HA:Bkl(L)≠cBkl(R).
+versus the alternative hypothesis that at least one of the p-values is distributed according to some non-uniform, non-increasing density with support $[0,1]$ (Birnbaum, 1954; Heard and Rubin-Delanchy, 2018). Birnbaum, 1954, showed that no method of combining these p-values can be optimal in general to all alternatives, so we are left with a decision to make (with no universally preferred answer) about which methods to use to combine p-values (Heard and Rubin-Delanchy, 2018). Here, we select Tippett’s method (Tippett, 1931; Heard and Rubin-Delanchy, 2018) due to its ubiquity, simplicity, and power against various alternatives to bilateral symmetry under a simulation described in Power and validity of group connection test under various alternatives (Figure 3—figure supplement 4). In future work, specific classes of alternatives may motivate different methods for combining p-values, as described in Heard and Rubin-Delanchy, 2018.
 
-where c can be viewed as a probability ratio:Bkl(L)=?cBkl(R)Bkl(L)Bkl(R)=?c
+We also examined the p-values from each of the individual tests after Holm-Bonferroni correction to correct for multiple comparisons. As in ER model and density testing, we used chi-squared tests (Agresti, 2013) to perform each of the individual hypothesis tests in Equation 5. Note also that in some cases, an element of $B^{(L)}$ and/or $B^{(R)}$ could be 0; in each of these cases, we did not run that specific comparison between elements, as the notion of testing for proportions being the same becomes nonsensical. We indicated these tests in Figure 3C, Figure 4C, and Figure 5C–D, and note that these tests were not included when computing the number of comparisons for the Holm-Bonferroni correction. We also note that when few edges (say, <10 are present in a given subgraph), exact tests (e.g. Fisher’s exact test; Agresti, 2013) may be more appropriate, as they do not rely on asymptotic approximations. We found that in the current work, this choice of test did not substantially affect the results (Figure 3—figure supplement 5).
 
-In essence, we wish to test whether this probability ratio for each subgraph matches a prespecified hypothesized value, c. To test Equation 5, we used a modified score test (Miettinen and Nurminen, 1985), which aims to determine whether the ratio of two proportions is significantly different from some known constant, c. Note that this test reduces to the standard chi-squared test when the probability ratio c=1. We used this score test in the individual group connection tests, with all other machinery (e.g. for combining p-values or correcting for multiple comparisons) remaining the same as in SBMs and group connection testing. We found that the results using this score test agreed well with an intuitive approach to performing the density adjustment wherein we randomly removed edges from the right hemisphere to set the densities of the networks equal, and then re-ran the standard group connection test over many resamples (Figure 4—figure supplement 1). Again, it is worth noting that when testing on very sparse subgraphs, exact versions of this test may be advisable, though these are computationally more difficult to implement (Chan, 1998).
+### Density-adjusted group connection testing
 
-## Edge weight thresholds
+In density-adjusted group connection test, we considered the null hypothesis that the left hemisphere connection probabilities under the SBM are a scaled version of those on the right:
 
-To examine the effect of which edges are used to define the left and right networks on the p-values from each test, we tested various edge weight thresholds used to define our binary networks for comparison. Given a set of edges (i.e. (i,j) pairs) with corresponding weights wi⁢j, a thresholding ℰ⁢(t) simply selects the subset of those edges for which wi⁢j is greater than or equal to some threshold, t.E(t)={(i,j):wij≥t}
+$$
+H_{0}:B^{(L)}=c⁢B^{(R)}⁢ vs. ⁢H_{A}:B^{(L)}\neqc⁢B^{(R)}.
+$$
 
-Let si⁢j be the observed number of synapses from neuron i to neuron j. We considered two thresholding schemes: the first was to simply use the number of synapses from neuron i to j as the edge weight and the second was to consider the edge weight from neuron i to j to be the number of synapses from i to j divided by the total number of observed synapses onto neuron j. We stress that the number of synapses onto neuron j is not necessarily equal to the weighted degree of neuron j. This is simply because we consider all annotated post-synaptic contacts onto neuron j, and some number of those contacts may not be connected to another neuron in the current networks considered here. We denote the number of synapses onto neuron j as Dj. To summarize:
+The scale for this comparison is the ratio of the densities between the left and the right hemisphere networks:
 
-Given either definition of the weighting scheme, we formed a series of networks by varying the edge weight threshold, t. We stress that edge weights were used only for the purposes of defining the edges to consider for our (binary) networks – the edge weights themselves were not used in the statistical tests. We then re-ran the density, group connection, and density-adjusted group connection tests for each network. The p-values for these tests are plotted against the weight thresholds and the proportion of edges removed in Figure 6E and F for the synapse number and input proportion thresholds, respectively.
+$$
+c=\frac{p^{(L)}}{p^{(R)}}.
+$$
 
-## Power and validity of group connection test under various alternatives
+Analogous to the group connection testing in Equation 5, this means that the individual group connection hypotheses become
 
-In SBMs and group connection testing, we considered the group connection test, where the goal was to test(9)H0:B(L)=B(R)⁢ vs. ⁢HA:B(L)≠B(R).
+$$
+H_{0}:B_{kl}^{(L)}=cB_{kl}^{(R)},H_{A}:B_{kl}^{(L)}\neqcB_{kl}^{(R)}.
+$$
 
-We saw that this set of hypotheses could be decomposed into K2 (where K is the number of groups) different hypotheses(10)H0:Bk⁢l(L)=Bk⁢l(R),HA:Bk⁢l(L)≠Bk⁢l(R),
+where $c$ can be viewed as a probability ratio:
 
-yielding a p-value for the (k,l) th test, pk⁢l. We now consider the problem of trying to combine these p-values into one which bears on the overall hypotheses in Equation 9. We proposed using Tippett’s method for combining p-values (Tippett, 1931), and we now demonstrate the utility of this method against various alternatives.
+$$
+B_{kl}^{(L)}=?cB_{kl}^{(R)}
+$$
 
-To do so, we performed the following simulation experiment. First, we consider two hypothetical group connection matrices, B(1) and B(2). We set B(1)=B^(L). We also consider the matrix M, which is a K×K matrix denoting the number of possible edges in each block of an SBM. Here, we again set M=M^(L), in other words, we use the number of potential edges for each block observed for the left hemisphere network. To analyze the sensitivity of Tippett’s method to different alternatives, we conducted the following simulation: Let t be the number of probabilities to perturb. Let δ represent the strength of the perturbation. We performed experiments using δ∈{0,0.1,0.2,0.3,0.4,0.5}Xt∈{0,25,50,75,100,125} (note that if δ=0 or t=0, then we are under the null hypothesis in Equation 9). For each (δ,t), we ran 50 replicates of the simulation below:
 
-We observed that the p-values obtained from Tippett’s method were valid – they controlled the probability of Type I error for any significance level (Figure 3—figure supplement 4A). Further, we observed that Tippett’s method was also powerful against differing alternatives to the null hypothesis (Figure 3—figure supplement 4B). Tippett’s method had a power of 1 against the alternative (t=25,δ=0.5), meaning a small number of large perturbations. It also had a power of ~0.8 against the alternative (t=125,δ=0.1), in other words, a large number of small perturbations. Thus, we concluded that Tippett’s method is a reasonable choice of method for combining p-values for our group connection test.
 
-## Code and data
+$$
+\frac{B_{kl}^{(L)}}{B_{kl}^{(R)}}=?c
+$$
+
+In essence, we wish to test whether this probability ratio for each subgraph matches a prespecified hypothesized value, $c$. To test Equation 5, we used a modified score test (Miettinen and Nurminen, 1985), which aims to determine whether the ratio of two proportions is significantly different from some known constant, $c$. Note that this test reduces to the standard chi-squared test when the probability ratio $c=1$. We used this score test in the individual group connection tests, with all other machinery (e.g. for combining p-values or correcting for multiple comparisons) remaining the same as in SBMs and group connection testing. We found that the results using this score test agreed well with an intuitive approach to performing the density adjustment wherein we randomly removed edges from the right hemisphere to set the densities of the networks equal, and then re-ran the standard group connection test over many resamples (Figure 4—figure supplement 1). Again, it is worth noting that when testing on very sparse subgraphs, exact versions of this test may be advisable, though these are computationally more difficult to implement (Chan, 1998).
+
+### Edge weight thresholds
+
+To examine the effect of which edges are used to define the left and right networks on the p-values from each test, we tested various edge weight thresholds used to define our binary networks for comparison. Given a set of edges (i.e. $(i,j)$ pairs) with corresponding weights $w_{i⁢j}$, a thresholding $ℰ⁢(t)$ simply selects the subset of those edges for which $w_{i⁢j}$ is greater than or equal to some threshold, $t$.
+
+$$
+E(t)={(i,j):w_{ij}\geqt}
+$$
+
+Let $s_{i⁢j}$ be the observed number of synapses from neuron $i$ to neuron $j$. We considered two thresholding schemes: the first was to simply use the number of synapses from neuron $i$ to $j$ as the edge weight and the second was to consider the edge weight from neuron $i$ to $j$ to be the number of synapses from $i$ to $j$ divided by the total number of observed synapses onto neuron $j$. We stress that the number of synapses onto neuron $j$ is not necessarily equal to the weighted degree of neuron $j$. This is simply because we consider all annotated post-synaptic contacts onto neuron $j$, and some number of those contacts may not be connected to another neuron in the current networks considered here. We denote the number of synapses onto neuron $j$ as $D_{j}$. To summarize:
+
+Given either definition of the weighting scheme, we formed a series of networks by varying the edge weight threshold, $t$. We stress that edge weights were used only for the purposes of defining the edges to consider for our (binary) networks – the edge weights themselves were not used in the statistical tests. We then re-ran the density, group connection, and density-adjusted group connection tests for each network. The p-values for these tests are plotted against the weight thresholds and the proportion of edges removed in Figure 6E and F for the synapse number and input proportion thresholds, respectively.
+
+### Power and validity of group connection test under various alternatives
+
+In SBMs and group connection testing, we considered the group connection test, where the goal was to test
+
+$$
+H_{0}:B^{(L)}=B^{(R)}⁢ vs. ⁢H_{A}:B^{(L)}\neqB^{(R)}.
+$$
+
+We saw that this set of hypotheses could be decomposed into $K^{2}$ (where $K$ is the number of groups) different hypotheses
+
+$$
+H_{0}:B_{k⁢l}^{(L)}=B_{k⁢l}^{(R)},H_{A}:B_{k⁢l}^{(L)}\neqB_{k⁢l}^{(R)},
+$$
+
+yielding a p-value for the $(k,l)$ th test, $p_{k⁢l}$. We now consider the problem of trying to combine these p-values into one which bears on the overall hypotheses in Equation 9. We proposed using Tippett’s method for combining p-values (Tippett, 1931), and we now demonstrate the utility of this method against various alternatives.
+
+To do so, we performed the following simulation experiment. First, we consider two hypothetical group connection matrices, $B^{(1)}$ and $B^{(2)}$. We set $B^{(1)}=B^^{(L)}$. We also consider the matrix $M$, which is a $K\timesK$ matrix denoting the number of possible edges in each block of an SBM. Here, we again set $M=M^^{(L)}$, in other words, we use the number of potential edges for each block observed for the left hemisphere network. To analyze the sensitivity of Tippett’s method to different alternatives, we conducted the following simulation: Let $t$ be the number of probabilities to perturb. Let $\delta$ represent the strength of the perturbation. We performed experiments using $\delta\in{0,0.1,0.2,0.3,0.4,0.5}Xt\in{0,25,50,75,100,125}$ (note that if $\delta=0$ or $t=0$, then we are under the null hypothesis in Equation 9). For each $(\delta,t)$, we ran 50 replicates of the simulation below:
+
+We observed that the p-values obtained from Tippett’s method were valid – they controlled the probability of Type I error for any significance level (Figure 3—figure supplement 4A). Further, we observed that Tippett’s method was also powerful against differing alternatives to the null hypothesis (Figure 3—figure supplement 4B). Tippett’s method had a power of 1 against the alternative $(t=25,\delta=0.5)$, meaning a small number of large perturbations. It also had a power of ~0.8 against the alternative $(t=125,\delta=0.1)$, in other words, a large number of small perturbations. Thus, we concluded that Tippett’s method is a reasonable choice of method for combining p-values for our group connection test.
+
+### Code and data
 
 Analyses relied on graspologic (Chung et al., 2019), NumPy (Harris et al., 2020), SciPy (Virtanen et al., 2020), Pandas (McKinney, 2010), statsmodels (Seabold and Perktold, 2010), and NetworkX (Hagberg et al., 2008). Plotting was performed using matplotlib (Hunter, 2007) and Seaborn (Waskom, 2021).

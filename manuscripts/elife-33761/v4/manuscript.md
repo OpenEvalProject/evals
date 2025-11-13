@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.33761.001 The CRISPR-Cas9 targeted nuclease technology allows the insertion of genetic modifications with single base-pair precision. The preference of mammalian cells to repair Cas9-induced DNA double-strand breaks via error-prone end-joining pathways rather than via homology-directed repair mechanisms, however, leads to relatively low rates of precise editing from donor DNA. Here we show that spatial and temporal co-localization of the donor template and Cas9 via covalent linkage increases the correction rates up to 24-fold, and demonstrate that the effect is mainly caused by an increase of donor template concentration in the nucleus. Enhanced correction rates were observed in multiple cell types and on different genomic loci, suggesting that covalently linking the donor template to the Cas9 complex provides advantages for clinical applications where high-fidelity repair is desired.
+The CRISPR-Cas9 targeted nuclease technology allows the insertion of genetic modifications with single base-pair precision. The preference of mammalian cells to repair Cas9-induced DNA double-strand breaks via error-prone end-joining pathways rather than via homology-directed repair mechanisms, however, leads to relatively low rates of precise editing from donor DNA. Here we show that spatial and temporal co-localization of the donor template and Cas9 via covalent linkage increases the correction rates up to 24-fold, and demonstrate that the effect is mainly caused by an increase of donor template concentration in the nucleus. Enhanced correction rates were observed in multiple cell types and on different genomic loci, suggesting that covalently linking the donor template to the Cas9 complex provides advantages for clinical applications where high-fidelity repair is desired.
 
 ## Introduction
 
@@ -49,7 +49,27 @@ To be able to measure HDR efficiencies of novel CRISPR-Cas9 variants in a rapid 
 
 In order to link the donor oligos to the Cas9 protein, we used the SNAP-tag technology, which allows covalent binding of O6-benzylguanine (BG)-labeled molecules to SNAP-tag fusion proteins (Keppler et al., 2003). To generate O6-benzylguanine (BG)-linked DNA repair templates, we first coupled amine-modified oligos to commercially available amine-reactive BG building blocks (Figure 3a, Figure 3—figure supplement 1c). The BG-linked oligos were further separated from unreacted oligos by HPLC (Figure 3b) and analyzed by liquid chromatography-mass spectrometry (LC-MS) to confirm their purity (Figure 3—figure supplement 1d). Next, we produced recombinant Cas9 proteins with a SNAP-tag fused to the C-terminus (Figure 3c,d). The fusion proteins were then complexed with the BG-coupled oligos, and covalent binding was confirmed by SDS-PAGE (Figure 3e–h). The protein-oligo conjugate was mixed with in vitro transcribed sgRNAs targeting the mutRFP locus (Figure 3—figure supplement 1g,h), finally generating the Cas9 ribonucleoprotein-DNA (RNPD) complex.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig3-v4.jpg)
+
+**Figure 3.:** (a) Band shift of the 81-mer amino-modified oligo after coupling to BG-GLA-NHS shown on a denaturing PAGE gel. Amino modified oligos were mixed with amine-reactive BG building blocks and the samples were taken prior to the reaction (uncoupled) and after the reaction (coupled). No BG coupling: no amine-reactive BG building block was added to the amino modified oligos. (b) LC-MS analysis of HPLC-purified BG-coupled and uncoupled DNA repair templates. (c,d) Coomassie Blue stained SDS-PAGE gels of the purified SpCas9-SNAP and the SadCas9-SNAP fusion proteins (functionality of the SNAP-tags is shown in Figure 3—figure supplement 1e,f). (e-h) Silver stained SDS-PAGE gels. Band shifts confirm covalent linkage of Cas9-SNAP proteins to BG-coupled 81-mers. Lower arrowheads: unbound Cas9-SNAP. Upper arrowheads: Cas9-SNAP covalently bound to oligos.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Quantification of HDR rates with DNA repair templates of different lengths by FACS. (b) Quantification of sgRNASpCas9(mutRFP) editing efficiency in the reporter cell line by FACS. (c) SYBR-Gold stained denaturing PAGE gel. Proportion of shifted 81-mer amino-modified oligos after the coupling reaction with different concentrations of BG-GLA-NHS building blocks. (d) Negative ion ESI mass spectra of HPLC purified BG-coupled (top panel) and uncoupled (bottom panel) oligos shown in Figure 3b. (e,f) SDS-PAGE gels of SpCas9-SNAP (e) and the SadCas9-SNAP (f) proteins labeled with BG-Vista Green (upper panels). Subsequently gels were silver stained for protein detection (lower panels). (g,h) Denaturing RNA gels (2% MOPS) with in vitro transcribed sgRNAs. (g) sgRNA used to create the DSB in the mutRFP locus (sgRNASpCas9(mutRFP)). (h) sgRNAs used to bind catalytically inactive SadCas9 to regions upstream (sgRNASadCas9(mutRFP)−1 and sgRNASadCas9(mutRFP)−2) and downstream (sgRNASadCas9(mutRFP)−3 and sgRNASadCas9(mutRFP)−4) of the mutRFP locus. Box and whiskers plot: min to max (**p<0.0021, *p<0.0332 with n = 7; n represents the number of biological replicates). Numerical data and the exact p values for all graphs are shown in the Figure 3—source data 1.
+
 To test if linking the donor oligo to Cas9 changes the ratio between indel formation and correction from the repair template, we used our reporter system to compare Streptococcus pyogenes Cas9 (SpCas9) complexes with linked repair oligos (Figure 4b) to the control SpCas9 complexes with unlinked repair oligos (SpCas9-SNAP with unlabeled oligos). Notably, the correction efficiency (percentage of corrections in edited cells) with bound complexes was significantly enhanced, from 2.1% to 22.5% with the 65-mers and from 8.9% to 25.7% with the 81-mers (Figure 4a, Figure 4—figure supplement 1a,b). In comparison to unbound complexes this represented 11- and 3-fold increases, respectively.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig4-v4.jpg)
+
+**Figure 4.:** (a) Comparison between the control Cas9 system (RNP unco.: SpCas9-SNAP plus unlabeled donor oligo) and our novel system (RNPD coup.: SpCas9-SNAP conjugated to BG-labeled donor oligo). Cells were analyzed 5 days after transfection by FACS. Results are presented as correction efficiency (percentage of correction in edited cells). (b) Illustration of our novel Cas9 system, in which the repair template is covalently bound to SpCas9-SNAP (RNPD coup.). (c) Schematic overview of the binding positions of different SadCas9 sgRNAs (sgRNAsSadCas9(mutRFP)-1-4) in comparison to the SpCas9 sgRNA targeting the mutRFP fluorophore (sgRNAsSpCas9(mutRFP)). (d) Illustration of the two-component system, where the repair template is linked to the catalytically inactive SadCas9-SNAP (RNP-RNPD coup.). (e) Comparison between the two-component system (RNP-RNPD coup.: SpCas9-SNAP + SadCas9-SNAP bound to BG-labeled donor oligo) and the corresponding control Cas9 system (RNP-RNP unco.: SpCas9-SNAP + SadCas9-SNAP + unlabeled repair oligo). (f) Transfection of the one component system (grey and pink panels) and two component system (black/grey and black/pink panels) into reporter cells at a 5-time lower concentrations. In the two component system sgRNASadCas9(mutRFP)-3 was used. (g) Comparison of two component systems with and without the sgRNA for the SadCas9 complex. RNP unco. (SpCas9-SNAP + uncoupled oligo + sgRNASpCas9(mutRFP)); RNPD coup. (SpCas9-SNAP-coupled BG-oligo + sgRNASpCas9(mutRFP)); RNP-RNP unco. (SpCas9-SNAP + sgRNASpCas9(mutRFP) + SadCas9-SNAP + uncoupled oligo + sgRNASadCas9(mutRFP)); RNP-RNPD coup. (SpCas9-SNAP + sgRNASpCas9(mutRFP) + SadCas9-SNAP-coupled BG-oligo + sgRNASadCas9(mutRFP)). All values are shown as mean ±s.e.m of biological replicates; *p<0.0332 with n = 3 (f) and n = 4 (a,e,g) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Numerical data and the exact p values for all graphs are shown in the Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (a–f) Quantification of reporter cells by FACS analysis 5 days after transfection. The absolute percentages of (a,c,e) precisely corrected cells (RFP/GFP double positive cells), and (b,d,f) all edited cells (RFP/GFP double positive cells plus RFP/GFP double negative cells). (a,b) Comparison of RNP uncoupled and RNPD coupled CRISPR complexes. (c,d,e,f) Comparison of RNP uncoupled, RNPD coupled, RNP-RNPD uncoupled and RNP-RNPD coupled CRISPR complexes. (e,f) Complexes were transfected at 5-fold lower concentrations. All values are shown as mean ±s.e.m of biological replicates. A one-tailed Mann-Whitney test was used for comparisons. Numerical data and the exact p values for all graphs are shown in the Figure 4—source data 2.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig4-figsupp2-v4.jpg)
+
+**Figure 4—figure supplement 2.:** (a–e) Quantification of reporter cells by FACS analysis 5 days after transfection. The absolute percentages of precisely corrected cells (RFP/GFP double positive cells) (a,d), all edited cells (RFP/GFP double positive cells plus RFP/GFP double negative cells) (b,e) and the correction efficiency (the percentage of precisely corrected of edited cells) are shown (c). (a–c) Comparison of SpCas9 WT and SpCas9-SNAP systems without an oligo and with either unco. or BG-coup. 65-mer oligos. (d,e) Comparison of two component systems with and without the sgRNA for the SadCas9 complex. All values are shown as mean ±s.e.m of biological replicates. (c) *p<0.0332 with n = 4 (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Numerical data and the exact p values for all graphs are shown in the Figure 4—source data 3.
 
 To further test our hypothesis that spatial and temporal co-localization of repair templates and Cas9 enhances correction rates, we next developed an independent approach where the donor oligo is not bound to the Cas9 complex that induces the DSB, but to a second catalytically inactive Cas9 complex that binds in close proximity to the DSB (RNP-RNPD system). To avoid the interchange of sgRNAs between both complexes, we designed a two-component system in which the DSB is induced by SpCas9, and the repair template is linked to a catalytically inactive Staphylococcus aureus (Sa)dCas9 (Figure 4c,d). We co-transfected both complexes into the reporter cell line, and quantified correction and indel formation rates. Notably, the correction efficiency increased from 4.1% to 29.9% with 65-mers, and from 11.6% to 32.3% with 81-mers (Figure 4e, Figure 4—figure supplement 1c,d), confirming our previous results with the RNPD system.
 
@@ -61,21 +81,66 @@ To validate our results from the HEK293T reporter cells, we next tested our appr
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig5-v4.jpg)
 
-**Figure 5.:** (a,b,c) Upper panels: Schematic overview of the target genomic regions of the Streptococcus pyogenes gRNAs. Black arrow indicates the introduced DSB site. The nucleotides that are exchanged in case of precise repair are shown in blue. Lower panels: NGS data quantification: Correction efficiency of the control Cas9 system (RNP unco.: SpCas9-SNAP plus unlabeled donor oligo) compared to our novel system (RNPD coup.: SpCas9-SNAP bound to BG-labeled donor oligo) is shown. (a) The HBB locus was targeted in a K562 cell line. The (b) Rosa26 and (c) Pcsk9 loci were targeted in mouse ESCs. All values are shown as mean ±s.e.m of biological replicates; *p<0.0332 with n = 4 (a) and n = 3 (b,c) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Allele plots, variant count tables and categorized variant count tables for these loci are available as Supplementary file 2–4. Numerical data and the exact p values for all graphs are shown in the Figure 5—source data 1.10.7554/eLife.33761.015Figure 5—source data 1.Figure 5.
+**Figure 5.:** (a,b,c) Upper panels: Schematic overview of the target genomic regions of the Streptococcus pyogenes gRNAs. Black arrow indicates the introduced DSB site. The nucleotides that are exchanged in case of precise repair are shown in blue. Lower panels: NGS data quantification: Correction efficiency of the control Cas9 system (RNP unco.: SpCas9-SNAP plus unlabeled donor oligo) compared to our novel system (RNPD coup.: SpCas9-SNAP bound to BG-labeled donor oligo) is shown. (a) The HBB locus was targeted in a K562 cell line. The (b) Rosa26 and (c) Pcsk9 loci were targeted in mouse ESCs. All values are shown as mean ±s.e.m of biological replicates; *p<0.0332 with n = 4 (a) and n = 3 (b,c) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Allele plots, variant count tables and categorized variant count tables for these loci are available as Supplementary file 2–4. Numerical data and the exact p values for all graphs are shown in the Figure 5—source data 1.
 
 In the previous experiments the RNPD system was always compared to Cas9 SNAP-tag fusion proteins with uncoupled donor oligos. To also directly compare the engineered RNPD system to the classical CRISPR-Cas9 system, we performed experiments where we used wild-type Cas9 with the uncoupled donor oligos as a control. We first targeted the fluorescent reporter locus and analyzed it by NGS. We found that while the mean percentage of corrected loci increased from 0.8% with the classical Cas9 system to 4.9% with the RNPD system, the number of incorrectly edited loci slightly decreased from 12.6% to 9.3% (Figure 6a, Supplementary file 2,3,4). This corresponds to a 7-fold increase in correction efficiency (Figure 6b). In addition, the analysis of three computationally predicted off-target sites (Lin et al., 2014b; Cradick et al., 2014) of the reporter locus, suggests that the risk for generating off-target mutations is not enhanced with the RNPD system (Figure 6c, Supplementary file 2,3,4). In the next step we also targeted and analyzed the endogenous loci HBB, empty spiracles homeobox 1 (EMX1), and C-X-C chemokine receptor type 4 (CXCR4) in HEK293T cells. NGS analysis revealed that in all three loci the mean correction efficiency of the RNPD system was markedly increased to: 34,4% at the HBB locus, 28.6% at the EMX1 locus and 33.1% at the CXCR4 locus (Figure 6d,e,f, Supplementary file 2,3,4). Compared to the classical CRISPR-Cas9 system this represents a 20-fold, a 10-fold, and a 24-fold increase, respectively (Figure 6d,e,f).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/33761/elife-33761-fig6-v4.jpg)
 
-**Figure 6.:** Classical Cas9 system (wild type SpCas9 plus unlabeled donor oligo); Our novel RNPD system (SpCas9-SNAP conjugated to BG-labeled donor oligo). (a) Targeting of the reporter locus in HEK293T cells. Illustration of the most frequent variants found by NGS in untreated samples (NT), in samples transfected with the classical Cas9 system (65-mer unco. (SpCas9 WT)), and in our engineered system (65-mer coup. (SpCas9-SNAP)). Alleles with a frequency above 0.5% in any of the nine samples are shown. For alleles with lower frequencies see Supplementary file 3. Abbreviations: Insertion (I), Deletion (D), Single nucleotide variant (SNV). Different colours in the x-axis indicate the three experimental replicates. A detailed description of the plot labels can be found in the Supplementary File 2 legend. (b,d,e,f) NGS data quantification of the (b) reporter locus, (d) HBB locus, (e) EMX1, and (f) CXCR4 locus targeted in HEK293T cells. In (a,b,c) the mutRFP sgRNA (see Figure 2b) was used. (c) Off target analysis for sgRNASpCas9(mutRFP): the percentage of edited alleles detected using NGS in untreated samples, in samples transfected with the classical Cas9 system, and in our engineered system. Information on the off target loci can be found in Supplementary file 1 – Supplementary Table 1. (d,e,f) Upper panels: Schematic overview of the target genomic regions of the gRNAs. Black arrow indicates the introduced DSB site. The nucleotides that are exchanged in case of precise repair are shown in blue. Lower panels: NGS data quantification. Correction efficiency of the classical Cas9 system compared to our novel system is shown. All values are shown as mean ±s.e.m of biological replicates. *p<0.0332 with n = 3 (b,c) and n = 4 (d,e,f) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Allele plots, complete variant count tables and categorized variant count tables for these loci are available as Supplementary file 2–4. Numerical data and the exact p values for all graphs are shown in the Figure 6—source data 1.10.7554/eLife.33761.017Figure 6—source data 1.Figure 6.
+**Figure 6.:** Classical Cas9 system (wild type SpCas9 plus unlabeled donor oligo); Our novel RNPD system (SpCas9-SNAP conjugated to BG-labeled donor oligo). (a) Targeting of the reporter locus in HEK293T cells. Illustration of the most frequent variants found by NGS in untreated samples (NT), in samples transfected with the classical Cas9 system (65-mer unco. (SpCas9 WT)), and in our engineered system (65-mer coup. (SpCas9-SNAP)). Alleles with a frequency above 0.5% in any of the nine samples are shown. For alleles with lower frequencies see Supplementary file 3. Abbreviations: Insertion (I), Deletion (D), Single nucleotide variant (SNV). Different colours in the x-axis indicate the three experimental replicates. A detailed description of the plot labels can be found in the Supplementary File 2 legend. (b,d,e,f) NGS data quantification of the (b) reporter locus, (d) HBB locus, (e) EMX1, and (f) CXCR4 locus targeted in HEK293T cells. In (a,b,c) the mutRFP sgRNA (see Figure 2b) was used. (c) Off target analysis for sgRNASpCas9(mutRFP): the percentage of edited alleles detected using NGS in untreated samples, in samples transfected with the classical Cas9 system, and in our engineered system. Information on the off target loci can be found in Supplementary file 1 – Supplementary Table 1. (d,e,f) Upper panels: Schematic overview of the target genomic regions of the gRNAs. Black arrow indicates the introduced DSB site. The nucleotides that are exchanged in case of precise repair are shown in blue. Lower panels: NGS data quantification. Correction efficiency of the classical Cas9 system compared to our novel system is shown. All values are shown as mean ±s.e.m of biological replicates. *p<0.0332 with n = 3 (b,c) and n = 4 (d,e,f) (n represents the number of biological replicates). A one-tailed Mann-Whitney test was used for comparisons. Allele plots, complete variant count tables and categorized variant count tables for these loci are available as Supplementary file 2–4. Numerical data and the exact p values for all graphs are shown in the Figure 6—source data 1.
 
 Direct delivery of Cas9 RNP complexes into tissues promises great potential for therapeutic applications. Compared to genetically encoded systems, RNPs avoid the danger of genomic integration, and due to their limited lifetime, the risk of off-target activities is low (Kim et al., 2014). In addition, procedures for large-scale production of recombinant proteins for clinical use are well established, and several recently developed protocols enable in vivo delivery of Cas9 RNP complexes in animal models (Wang et al., 2016; Zuris et al., 2015; Staahl et al., 2017; Lee et al., 2017). Here, we present a method where we enhance correction efficiency of Cas9-induced DSBs by conjugating the donor oligo to the Cas9 complex. Our data suggests that the increase in HDR efficiency is caused by enhanced nuclear concentration of the repair template. Unlike previous approaches that increase HDR rates by chemically modulating DNA repair pathways, our approach does not alter endogenous cellular processes, thus reducing risk of potential negative side effects. In addition, covalent linkage of the repair template to the Cas9 RNP complex also addresses another central challenge of in vivo gene editing therapies – namely that simultaneous delivery of the RNP complex and the repair template needs to be ensured. Taken together, we suggest that covalently linking the DNA repair template to the Cas9 RNP complex is poised to further drive the CRISPR/Cas technology towards clinical translation.
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant protein (Streptococcus pyogenes)</td>
+      <td>SpCas9-SNAP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Schwank and Jinek lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein (Staphylococcus aureus)</td>
+      <td>SadCas9-SNAP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Schwank and Jinek lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>NH2-modified oligo</td>
+      <td>Integrated DNA Technologies</td>
+      <td>-</td>
+      <td>Custom DNA oligos/ '5 C6 NH2 modif.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BG-GLA-NHS</td>
+      <td>New England Biolabs</td>
+      <td>ID_NEB:S9151S</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Please see Supplementary file 1-Supplementary Tables 1–6 for a list of the DNA sequences used in this manuscript.
 
-## Plasmids
+### Plasmids
 
 All plasmids used in this study (listed in Supplementary file 1-Supplementary Table 6) have been deposited for the TULIPs system, along with maps and sequences, in Addgene.
 
@@ -87,66 +152,66 @@ Cloning of pNS38-SadCas9-SNAP: pAD-SaCas9-GFP was generated by replacing the SpC
 
 Plasmid pMJ806 was a gift from Jennifer Doudna (Addgene plasmid # 39312) (Jinek et al., 2012).
 
-## Benzylguanine coupling reaction
+### Benzylguanine coupling reaction
 
 Synthetic oligonucleotides with a 5′-Amino Modifier C6 functional group (100 μM) (Integrated DNA Technologies) were incubated with benzylguanine-GLA-NHS (1 mM) (NEB) and Hepes pH8.5 (200mM) for 60 min at 30°C. Coupling reactions were performed in following ratios: 30:1, 60:1 and 100:1 BG-GLA-NHS: amino modified oligo. After the coupling reaction all oligos were purified by ethanol precipitation. Repair oligo sequences can be found in Supplementary file 1-Supplementary Table 4.
 
-## Denaturating PAGE
+### Denaturating PAGE
 
 The benzylguanine (BG) coupled reactions were run on 20% polyacrylamide TBE gel containing 8M urea at 200 V for 60 min. The gel was stained for 30 min in 1x TBE containing Sybr Gold (Invitrogen), and imaged with a UV transilluminator (Biorad).
 
-## HPLC purification and LC-MS analysis of the repair oligos
+### HPLC purification and LC-MS analysis of the repair oligos
 
 Benzylguanine coupled oligos were purified on an Agilent 1200 series preparative HPLC fitted with a Waters XBridge Oligonucleotide BEH C18 column, 10 × 50 mm, 2.5 μm at 65°C using a gradient of 5–25% buffer B over 8 min, flow rate = 5 ml min-1. Buffer A was 0.1 M triethylammonium acetate, pH 8.0. Buffer B was methanol. Fractions were pooled, dried in a speedvac and dissolved in H2O. Analysis of the purified BG-oligonucleotide was conducted on an Agilent 1200/6130 LC-MS system fitted with a Waters Acquity UPLC OST C18 column (2.1 × 50 mm, 1.7 μm) at 65°C, with a gradient of 5–35% buffer B in 14 min with a flowrate of 0.3 mL min−1. Buffer A was aqueous hexafluoroisopropanol (0.4 M) containing triethylamine (15 mM). Buffer B was methanol.
 
-## Expression and purification of Cas9-SNAP
+### Expression and purification of Cas9-SNAP
 
 Snap-tagged Streptococcus pyogenes Cas9 (SpCas9-SNAP), Staphylococcus aureus dCas9 (SadCas9-SNAP) and Wild Type Streptococcus pyogenes Cas9 (SpCas9 WT) proteins were expressed in Escherichia coli BL21 (DE3) Rosetta 2 (Novagen) fused to an N-terminal fusion protein containing a hexahistidine affinity tag, the maltose binding protein (MBP) polypeptide sequence, and the tobacco etch virus (TEV) protease cleavage site. The cells were lysed in 20 mM Tris pH 8.0, 500 mM NaCl, 5 mM Imidazole pH 8.0. Clarified lysate was applied to a 10 ml Ni-NTA (Qiagen) affinity chromatography column. The column was washed by increasing the imidazole concentration to 10 mM and bound protein was eluted in 20 mM Tris pH 8.0, 250 mM NaCl, 100 mM Imidazole pH 8.0. To remove the His6-MBP affinity tag, the eluted protein was incubated overnight in the presence of TEV protease. The cleaved protein was further applied to a heparin column (HiTrap Heparin HP, GE Healthcare) and eluted with a linear gradient of 0.1–1.0 KCl. The eluted protein was further purified by size exclusion chromatography using a Superdex 200 16/600 (GE Healthcare) equilibrated in 20 mM HEPES pH 7.5, 500 mM KCl.
 
-## Covalent binding of Cas9-SNAP protein and BG-coupled oligonucleotide
+### Covalent binding of Cas9-SNAP protein and BG-coupled oligonucleotide
 
 Repair oligo templates coupled to BG were incubated with Cas9-SNAP proteins on the same day when the transfection is performed. BG-coupled oligos (2.2 pmols) were mixed with either SpCas9-SNAP or SadCas9-SNAP (2.2 pmols) and incubated for 60 min at 30°C. The negative controls (wild-type Cas9 +BG oligo or Cas9-SNAP + unlabeled oligo) were treated in the same way.
 
-## SDS-PAGE gels
+### SDS-PAGE gels
 
 For confirming successful labeling of the Cas9-SNAP proteins with the BG-coupled oligonucleotides, BG-coupled and uncoupled oligonucleotides were mixed with either SpCas9-SNAP, SadCas9-SNAP or only the Cas9-SNAP proteins alone, reactions were incubated for one hour at 30°C. For the SNAP-Vista Green (NEB) substrate, the protein was incubated for 30 min on 30°C in the dark. After incubation, reactions (300 ng) were loaded on 6% SDS-PAGE gel and run at 80V for 160 min. Gels that were containing BG-Vista Green (NEB, SNAP-Vista Green), were imaged prior to silver staining. The green fluorescence signal of the SNAP-tag was detected with a UV transilluminator (Biorad). Subsequently, silver staining was completed using the Pierce Silver Stain Kit (Thermo Scientific) according to manufacturer instructions, and imaged with a UV transilluminator (Biorad).
 
-## Production of sgRNAs
+### Production of sgRNAs
 
 sgRNAs were generated from DNA templates using the T7 RNA Polymerase (Roche) in vitro transcription (IVT) kit. In short, sgRNA specific primers that also contain the T7 sequence were annealed with a common reverse primer that contains the sequence of the sgRNA scaffold (final concentrations 10 μM). DNA was purified with the QIAquick purification (Qiagen) kit and eluted in DEPC-treated water. PCR products were run on agarose to estimate concentration and to confirm amplicon size. In vitro transcription was performed at 37°C overnight. For purification, DNase I was added to the sgRNAs and incubated for 15 min at 37°C, and subsequently ethanol precipitation was performed overnight at −20°C. The sgRNAs were then further purified using RNA Clean and Concentrators (Zymo Research). Before use, all sgRNAs were checked on denaturing 2% MOPS gels. Complete sequences for all sgRNA protospacers, IVT primers and crRNAs can be found in Supplementary file 1-Supplementary Table 1, 2 and 3, respectively.
 
-## Lentivirus production
+### Lentivirus production
 
 HEK293T were PEI transfected with following plasmids: pNS19-LV-mutRFP-2A-eGFP, Pax2 and VSV-G. After 12 hr, the supernatant was discarded and changed to DMEM plus 10% FBS. 24 and 72 hr post-transfection, the media was collected and filtered through 0.45 μm filter and centrifuged at 20 000 G for 2:00 hr at 4°C. The pellet was then resuspended in 1 ml of DMEM and stored at −80°C.
 
-## Fluorescent reporter generation
+### Fluorescent reporter generation
 
 HEK293T cells were transduced with a lentiviral vector carrying the fluorescent reporter construct. Serial virus dilutions were used to isolate clonal populations using Puromycine selection (2 μg/ml) for 2 weeks.
 
-## Cell culture and reagents
+### Cell culture and reagents
 
 HEK293T cells were obtained from ATCC and verified mycoplasma free (GATC Biotech). The HEK293T reporter line was maintained in DMEM with GlutaMax (Gibco). Media was supplemented with 10% FBS (Sigma), and 100 μg/mL Penicillin-Streptomycin (Gibco). K562 cells were obtained from Sigma Aldrich, verified mycoplasma free and were maintained in RPMI 1640 medium with GlutaMax. Additional the medium supplemented with 10% FBS, and 100 μg/mL Penicillin-Streptomycin. Cells were passaged three times per week. Cells were grown at 37°C in a humidified 5% CO2 environment. WT E14 mESC line (ATCC CRL-1821) was cultured in Dulbecco’s Modified Eagle Media (DMEM) (Sigma-Aldrich), containing 15% of fetal bovine serum (FBS; Life Technologies), 100 U/mL LIF (Millipore), 0.1 mM 2-ß-mercaptoethanol (Life Technologies) and 1% Penicillin/Streptomycin (Gibco), on 0.2% gelatin-coated support in absence of feeder cells. The culture medium was changed daily. Cells were grown at 37°C in 8% CO2.
 
-## Transfection reactions
+### Transfection reactions
 
 HEK293T cells were seeded in 24-well plates at 120.000–140.000 cells per well, 1 day prior to transfection. K562 cells were 6 hr prior to transfection distributed in 24 well plates at a density of 220.000–240.000 cells per well. On the day of transfection, RNP and RNPD complexes (2.2 pmols) were complexed with sgRNA (3.88 pmols) in Opti-MEM (Invitrogen) and briefly vortexed, followed by adding 3 μl the Lipofectamine 2000 reagent (Invitrogen) with Opti-MEM. The resulting mixture was incubated for 15 min at room temperature to allow lipid particle formation. After 15 min of incubation at room temperature, the mixture was dropped slowly into the well. One day post-transfection, cells were transferred to an 10 cm dish. mESCs were transfected into 6-well plate using Lipofectamine 2000. Cells were plated 24 hr before transfection at a density of 20,000 cells/cm2 per well and cultured in culture medium without streptomycin and penicillin. The medium was changed to mESC culture medium 8 hr after transfection. Cells were collected 48 hr post-transfection.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 For flow cytometry analysis, HEK293T reporter cells were analysed 5 days after transfection. Cells were trypsinized with TrypLE Express Enzym (Gibco), and resuspended in FACS buffer containing PBS/1% FBS/1% EDTA. Sytox Red was added for the exclusion of dead cells. Data were acquired on a BD LSR Fortessa cell analyser (Becton-Dickinson) and were further analysed using FlowJo software (FlowJo 10.2). In all experiments, a minimum of 200.000 cells were analysed. Gating strategy: Forward versus side scatter (FSC-A vs SSC-A) gating was used to identify cells of interest. Doublets were excluded using the forward scatter height versus forward scatter area density plot (FSC-H vs. FSC-A). Live cells were gated based on Sytox-Red-negative staining. Live-gated cells were further used to quantify the percentage of eGFP negative and turboRFP positive populations. Correction efficiency (%) or (percentage of corrections in edited cells) was culculated as 100 * (eGFP/turboRFP double positive population / (eGFP/turboRFP double negative population + eGFP/turboRFP double positive population)).
 
-## Next Generation Sequencing
+### Next Generation Sequencing
 
 Transfected cells were collected by trypsinisation and were washed with PBS. PBS was discarded and DNA extraction was preformed using DNeasy Blood and Tissue kit (Qiagen) following manufacturer’s protocol. The PCR amplicons flanking the targeted site were generated using NEBNext High-Fidelity 2X PCR Master Mix (NEB), primers that were used are listed in Supplementary file 1-Supplementary Table 5. PCR cycling conditions used were as follows: 1 × 98°C for 3 min; 27 × 95°C for 15 s, 65°C for 15 s, 72°C for 30 s; 1 × 72°C for 5 min. Annealing temperature was optimized for each primer set to ensure that a single amplicon was produced. PCR amplicons were purified by solid phase reversible immobilization (SPRI) bead cleanup using Agencourt AMPure XP reagent (#A63881, Beckmann-Coulter, Indianapolis, IN, USA), per the manufacturer’s instructions. For the generation of the pooled sequencing libraries, the TruSeq (Illumina) Index Adaptor Sequences were added at the second amplification step. The resulting Illumina libraries with Index Adaptors were purified with AMPure XP reagent. Quality control for the final library was performed using the High sensitivity D1000 ScreenTape at Agilent 2200 TapeStation. The libraries were sequenced using an Illumina MiSeq sequencer (MiSeq Reagent Kit v2 (15M, 500 cycle kit) or MiSeq Reagent Micro Kit v2 (4M, 500 cycle kit), Illumina, San Diego, CA, USA). Sequences were received in the format of demultiplexed FASTQ files produced by Illumina's bcl2fastq software (v2.19.0). Reads were merged with Pear v0.9.8 (Zhang et al., 2014) and merged reads mapped to the amplicon sequences with BWA-MEM v0.7.13-r1126 (Li, 2010). Unmerged reads were discarded. Sequence analysis was performed in R using CrispRVariants v1.9.0 (Lindsay et al., 2016). Variants within the protospacer +PAM region were analysed. Reads that align linearly and do not match the guide sequence are considered ‘Edited’. Percentage of edited alleles is calculated as 100* Edited reads/Total reads (excluding non-linear alignments). Correction efficiency is 100* Perfectly corrected/Edited reads. The Scripts for mapping sequencing data, counting mutations and generating plots are available at https://github.com/HLindsay/Savic_CRISPR_HDR (Lindsay, 2018; copy archived at https://github.com/elifesciences-publications/Savic_CRISPR_HDR) Fastq files have been uploaded to ArrayExpress (Brazma et al., 2003), the accession number is E-MTAB-6808.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 HEK293T reporter cells were imaged 7 days after transfection. Transfected cells were grown on Poly-L-lysine coated 8-well glass chamber slides (Vitaris) to 80–90% confluence. Hoechst 33342 (Thermo Scientific, Pierce) was added in the cell culture media to a final concentration of 0.1 μg/ml, and cells were incubated for 10 min at 37°C, 5% CO2, prior to the image session. Confocal imaging was performed using a Leica DMI8-CS (ScopeM) with a sCMOS camera (Hamamatsu Orca Flash 4.0). The laser unit for confocal acquisition (AOBS system) contains 458, 477, 488, 496, 514 nm (Argon laser), 405 nm, 561 nm, 633 nm. Images were acquired using Leica LAS X SP8 Version 1.0 software, through using a 20 × 0.75 NA HC PLAN APO CS2 objective. Imaging conditions and intensity scales were matched for images presented together. Images were analysed using the Leica LAS AF (Lite) software version 3.3. Confocal images were processed using ImageJ software (Version 1.51 n).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were conducted using Graphpad’s Prism7 software. A Mann-Whitney T-test was conducted for two-sample analyses (P value style: 0.1234(ns), 0.0332(*), 0.0021(**)). All values are shown as mean ± s.e.m of biological replicates. The number of biological replicates for each experiment was detailed in the Figure Legends. Numerical data and the exact p values for all graphs have been included in the Source data files.
 
-## Data availability
+### Data availability
 
 The data that support the findings of this study are available within the paper, Supplementary files, Source data and NGS Fastq files have been uploaded to ArrayExpress.

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.48750.001 Nanobodies (nAbs) are small, minimal antibodies that have distinct attributes that make them uniquely suited for certain biomedical research, diagnostic and therapeutic applications. Prominent uses include as intracellular antibodies or intrabodies to bind and deliver cargo to specific proteins and/or subcellular sites within cells, and as nanoscale immunolabels for enhanced tissue penetration and improved spatial imaging resolution. Here, we report the generation and validation of nAbs against a set of proteins prominently expressed at specific subcellular sites in mammalian brain neurons. We describe a novel hierarchical validation pipeline to systematically evaluate nAbs isolated by phage display for effective and specific use as intrabodies and immunolabels in mammalian cells including brain neurons. These nAbs form part of a robust toolbox for targeting proteins with distinct and highly spatially-restricted subcellular localization in mammalian brain neurons, allowing for visualization and/or modulation of structure and function at those sites.
+Nanobodies (nAbs) are small, minimal antibodies that have distinct attributes that make them uniquely suited for certain biomedical research, diagnostic and therapeutic applications. Prominent uses include as intracellular antibodies or intrabodies to bind and deliver cargo to specific proteins and/or subcellular sites within cells, and as nanoscale immunolabels for enhanced tissue penetration and improved spatial imaging resolution. Here, we report the generation and validation of nAbs against a set of proteins prominently expressed at specific subcellular sites in mammalian brain neurons. We describe a novel hierarchical validation pipeline to systematically evaluate nAbs isolated by phage display for effective and specific use as intrabodies and immunolabels in mammalian cells including brain neurons. These nAbs form part of a robust toolbox for targeting proteins with distinct and highly spatially-restricted subcellular localization in mammalian brain neurons, allowing for visualization and/or modulation of structure and function at those sites.
 
 ## Introduction
 
@@ -38,9 +38,120 @@ Here, we describe the development and characterization of recombinant nAbs with 
 
 ## Results
 
-## Generation of nAbs against brain target proteins and their isolation by panning phage display libraries prepared from an immunized llama
+### Generation of nAbs against brain target proteins and their isolation by panning phage display libraries prepared from an immunized llama
 
 Neuronal proteins with a restricted localization in specific subcellular compartments were targeted for nAb development (Figure 1). We isolated lymphocytes from a single llama immunized with recombinant fragments of these five target proteins and generated nAb phage display cDNA libraries that were subsequently used to isolate target-specific nAbs via phage binding to the individual target proteins. After verifying target specificity by ELISA, we sequenced and evaluated unique ELISA-positive nAbs for use as intrabodies in heterologously expressing mammalian cells and in cultured hippocampal neurons expressing endogenous target proteins. We also evaluated unique ELISA-positive nAbs for use as immunolabels for immunofluorescence immunocytochemistry (IF-ICC) on heterologous cells, immunohistochemistry (IHC) on rat brain sections, and immunoblots (IB) on crude rat brain membranes. This stepwise screening approach (Figure 1) led to the identification of novel nAbs for use as intrabodies and as immunolabels (Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of nAb generation pipeline. See text for details. (B) Schematic of pipeline for validating ELISA-positive nAbs for utility as intrabodies and immunolabels.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Representative images of the intrabody positive anti-Homer1 nAb HS22 validated in the heterologous COS-1 cell intrabody assay. (A) Images of HS22-EGFP (green) and Homer1 (red) expressed alone in COS-1 cells. The scale bar on the top left panel is 10 μm and holds for all panels in the figure. (B) Images of HS22-EGFP (green) and Homer1 (red) coexpressed in COS-1 cells and demonstrating the loss of HS22-EGFP nuclear localization and its cytoplasmic colocalization with coexpressed Homer1. The graph shows the normalized fluorescence intensity values across the line scan depicted by the white line in the merged image, with the corresponding R2 value. (C) Images of EGFP (green) and Homer1 (red) coexpressed in COS-1 cells and demonstrating the lack of ran effect of Homer1 coexpression on the nuclear localization of EGFP. The graph shows the normalized fluorescence intensity values across the line scan depicted by the white line in the merged image, with the corresponding R2 value. Note the concordance of the red and green intensity values for HS22-EGFP and Homer1 but not EGFP and Homer1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative images of intrabody-positive nAbs bound to endogenous excitatory synapse targets after expression in cultured hippocampal neurons. (A) The top left panel shops the pattern of EGFP expression in the dendrites of a transfected neuron. The subsequent rows show neurons expressing nAb-EGFP fusions and showing EGFP fluorescence (green), target-specific mAb labeling (magenta), and the merged image, with an adjacent panel showing a magnified image of the inset marked by the dashed box. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the magenta and green intensity values for the target and the positive nAb-EGFP fusions, but not for EGFP itself. The scale bar in the top left panel is 5 μm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 μm. (B) Graph of Pearson’s Correlation Coefficient (PCC) values between nAb-EGFP and anti-target mAb labeling (Homer1: L113/130; IRSp53: L117/1; pan-SAPAP:N459/94). PCC values of Homer1 and IRSp53 mAb immunolabeling with EGFP fluorescence in cells expressing EGFP are also shown. (C) Size analysis of mAb-labeled puncta of target proteins between nAb-EGFP transfected and untransfected cells. Homer1: ns, p=0.3828; IRSp53: ns, p=0.5410; pan-SAPAP: ns, p=0.0706; two-tailed unpaired t-tests. Bars on all graphs are mean ± SD.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Representative images of intrabody-positive nAbs bound to endogenous targets after expression in cultured hippocampal neurons. (A) The top row shows the diffuse localization of EGFP in the dendrite (left) and soma (right) of an EGFP-transfected neuron. The subsequent rows show neurons expressing nAb-EGFP fusions and showing EGFP fluorescence (green), target-specific mAb labeling (magenta), and the merged image, with an adjacent panel showing a magnified image of the inset marked by the dashed box. The scale bar in the top left panel is 5 μm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 μm. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the nAb (green) and anti-target mAb (magenta) intensity values. (B) Graph of PCC values between nAb-EGFP fusions and anti-target mAb labeling (Gephyrin: L106/23; AMIGO-1: L86A/37). PCC values of Gephyrin and AMIGO-1 mAb immunolabeling with EGFP fluorescence in cells expressing EGFP are also shown. (C) Size analysis of mAb labeled puncta of target proteins between nAb-EGFP transfected and untransfected cells. Gephyrin: ns, p=0.8758; AMIGO-1: ns, p=0.1091; two-tailed unpaired t-tests. Bars on all graphs are mean ± SD.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Each row shows representative images of a nAb against an excitatory synaptic protein (Homer1L, IRSp53, SAPAP2) expressed in neurons as nAb-EGFP fusions (green), and immunolabeling for a mAb (K28/43) against the synaptic marker PSD95 (magenta). The scale bar in the top left panel is 5 μm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 μm. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the intensity values for the nAb-EGFP fusions (green) with PSD-95 labeling (magenta). (B) Graph of PCC values between the different nAb-GFP fusions and EGFP with immunolabeling for anti-PSD-95 mAb K28/43. (C) Size analysis of mAb labeled puncta of PSD-95 between nAb-EGFP transfected and untransfected cells. Homer1: ns, p=0.2093; IRSp53: ns, p=0.7063; pan-SAPAP: ns, p=0.2683; two-tailed unpaired t-tests. Bars on all graphs are mean ± SD.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Representative images of the colabeling for proteins related to targets of nAbs and expressed nAbs-EGFP in neurons. (A) Each row shows representative images of a nAb-EGFP fusions (green) against the inhibitory synaptic protein Gephyrin (top row) or the ER-PM junction protein AMIGO-1 (second row) and in magenta immunolabeling with mAbs that label synapses (the pan-synapsin mAb L125/129 that sees all synapsin isoforms,) or Kv2 channel-containing ER-PM junctions (mAb K89/34 against Kv2.1 to label. The scale bar in the top left panel is 5 μm and holds for all panels in figure except the magnified insets, for which the scale bar is 2 μm. Panels to the far right of each row are the normalized fluorescence intensity values across the individual line scans from the magnified inset, with the corresponding R2 values. Note the concordance of the intensity values for the nAb-EGFP fusions (green) with labeling for the compartment-specific markers (magenta). (B) Graph of PCC values between the different nAb-GFP fusions and EGFP with immunolabeling for synapses (L125/129) or ER-PM junctions (K89/34). (C) Size analysis of mAb labeled puncta. Left: synapses (labeled with anti-pan-synapsin mAb L125/126) in anti-Gephyrin nAb-EGFP transfected and untransfected cells: ns, p=0.7063. Right: Kv2.1-containing ER-PM junctions (labeled with anti-Kv2.1 mAb K89/34) in anti-AMIGO-1 nAb-EGFP transfected and untransfected cells: ns, p=0.6513. Two-tailed unpaired t-tests. Bars on all graphs are mean ± SD.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/48750/elife-48750-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Representative images of anti-Homer1 nAb labeling (green) of transiently transfected COS-1 cells expressing Homer1L double-labeled with the anti-Homer1 mAb L113/27 (red). The left column shows a mosaic of transfected and untransfected cells, nuclei are stained with Hoechst dye in blue. Note overlap of nAb and mAb labeling at both the cellular and subcellular level. The scale bar in the top left panel is 50 μm and holds for all panels in column. The three panels to the right show higher magnification views of the cells labeled with the asterisk in the left panels. The scale bar in the top left panel is 5 μm and holds for all panels in column. The graph to the right shows the normalized fluorescence intensity values across the line scans depicted by the white line in the merged images, with the corresponding R2 values.
+
+**Table 1.**
+ Summary of nanobody generation and validation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Primary selection and validation</th>
+      <th colspan="2">Validation as intrabodies</th>
+      <th colspan="3">Validation as immunolabels</th>
+    </tr>
+    <tr>
+      <th>Target</th>
+      <th>Phage clones selected</th>
+      <th>ELISA positives</th>
+      <th>Unique ELISA positives</th>
+      <th>COS-1 intrabody positives</th>
+      <th>Neuron intrabody positives</th>
+      <th>COS-1 IF-ICC positives</th>
+      <th>Brain IHC positives</th>
+      <th>Brain IB positives</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Homer1</td>
+      <td>180</td>
+      <td>135</td>
+      <td>39</td>
+      <td>32</td>
+      <td>12</td>
+      <td>33</td>
+      <td>25</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>IRSp53</td>
+      <td>160</td>
+      <td>33</td>
+      <td>17</td>
+      <td>8</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SAPAP2</td>
+      <td>172</td>
+      <td>32</td>
+      <td>15</td>
+      <td>7</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Gephyrin</td>
+      <td>182</td>
+      <td>78</td>
+      <td>24</td>
+      <td>9</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>AMIGO-1</td>
+      <td>173</td>
+      <td>38</td>
+      <td>18</td>
+      <td>13</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 The immunogens used were recombinant fragments of intracellular domains from a strategically chosen set of five neuronal protein targets involved in synaptic signaling and neuronal excitability (Homer1, IRSp53, SAPAP2, Gephyrin and AMIGO-1). Recombinant protein fragments were produced and purified from E. coli and combined in a cocktail to immunize a single llama (Figure 1). Antiserum was collected at intervals and assayed for immunoreactivity against the separate recombinant protein fragments by ELISA. We also purified IgG fractions corresponding to the conventional heavy and light chain subclass versus the heavy chain-only subclasses and assayed them for immunoreactivity against the individual target proteins by ELISA. Once a sufficient titer was achieved, we obtained whole blood and isolated the leukocytes to use as source of total RNA that served as a template for RT-PCR to specifically amplify cDNAs corresponding to the IgG heavy-chain variable fragments. These cDNAs were ligated into the pComb3XSS phagemid which allows for expression of the cDNA-encoded nAbs as PIII protein fusions on the pili of phage (Andris-Widhopf et al., 2000).
 
@@ -48,13 +159,13 @@ We subjected this phage display library (complexity ≈ 8 × 107) to panning aga
 
 Isolated phage were used to infect fresh cultures of E. coli bacteria ER2738 which were plated onto bacterial culture plates, from which single colonies were isolated and grown in liquid culture to express and secrete soluble nAbs. After centrifugation to remove bacteria, we validated the resultant nAb-containing bacteria culture supernatants (BC supes) by conventional ELISA against wells of microtiter plates coated with the respective purified recombinant target protein fragments. We next isolated phagemid DNA from the ELISA-positive bacterial colonies for sequencing. A summary of the results from these efforts is shown in Table 1. Plasmids with unique nAb sequences were archived as glycerol stocks and used as a source of DNA for cloning into mammalian expression plasmids for expression as intrabodies in mammalian cells or used as a source of bacterially-secreted nAbs for use as immunolabels.
 
-## A subset of ELISA-positive nAbs function as intrabodies that recognize exogenously expressed target proteins in mammalian cells
+### A subset of ELISA-positive nAbs function as intrabodies that recognize exogenously expressed target proteins in mammalian cells
 
 We determined which unique nAbs could function as intrabodies when expressed in the reducing environment of the mammalian cell cytoplasm. cDNA inserts encoding each of the 113 unique ELISA-positive nAbs listed in Table 1 were transferred from the pComb3XSS phagemid into the pEGFP-N1 or pEYFP-N1 mammalian expression plasmids by Gibson assembly (Gibson et al., 2009). This also involved the removal of the N-terminal bacterial leader sequence, addition of a start codon and removal of the sequences encoding the C-terminal PIII protein. The linker region containing 6XHis and HA tags between the nAb and C-terminal GFP was retained. After sequence verification, each of the 113 nAb mammalian expression plasmids was tested for nAb expression and intrabody function in mammalian cells by transient transfection into COS-1 cells. This assay entailed expression of each nAb and target protein either alone or together in separate wells of a 96 well microtiter plate. After two days of expression, cells were fixed, permeabilized, and subjected to IF-ICC performed with validated monoclonal antibodies (mAbs) against each target protein and analyses of the expression and subcellular localization of the nAb and target protein. Of note, COS-1 cells do not express detectable levels of any of these target proteins.
 
 We found that the vast majority of COS-1 cells expressing EGFP- or EYFP-tagged nAb alone had substantial fluorescence signal in the nucleus (Figure 1—figure supplement 1). Substantial nuclear localization was also observed for these fluorescent proteins alone, as expected from prior studies showing nuclear localization of GFP [e.g., (Seibel et al., 2007)]. In contrast, when the target proteins, such as Homer1 (Figure 1—figure supplement 1) were exogenously expressed in COS-1 cells, they were predominantly found in the cytoplasm, with the exception of the type I transmembrane protein AMIGO-1 (Kuja-Panula et al., 2003), which primarily accumulates in the ER membrane (Bishop et al., 2018). We next evaluated whether target protein coexpression led to a change in nAb subcellular localization, which we interpreted as being due to nAb binding to the cytoplasmic- or ER-localized target protein. We visually determined whether coexpression of the predominantly nuclear nAb with the cytoplasmic/ER target protein would alter the nuclear localization of the nAb such that it colocalized with the target protein, as an indication that the nAb functioned as a target-binding intrabody. Figure 1—figure supplement 1 shows a representative example of an anti-Homer1 nAb that was scored as a positive in this assay. While there was some variability in the extent of the target-protein-dependent impact on nAb localization between different cells in the population, and between different nAbs, likely reflecting cell-specific differences in the relative expression levels of nAb and target protein, the target protein-dependent altered distribution of nAbs provided a facile assay that allowed us to test every ELISA-positive nAb for whether they functioned as intrabodies in mammalian cells. A summary of the results of these intrabody screening assays on heterologous COS-1 cells is shown in Table 1.
 
-## A subset of the nAbs that function as intrabodies in heterologous cells recognize endogenously expressed target proteins in cultured rat and mouse hippocampal neurons
+### A subset of the nAbs that function as intrabodies in heterologous cells recognize endogenously expressed target proteins in cultured rat and mouse hippocampal neurons
 
 These experiments in heterologous cells yielded a subset of nAbs that exhibited altered localization in the presence of target proteins when expressed in mammalian cells, indicating that they functioned as intrabodies. We next tested whether these nAbs could recognize endogenous target proteins when expressed in cultured rat hippocampal neurons (CHNs). Each of the GFP-or YFP-tagged nAbs that were scored as positive as intrabodies in heterologous cells was subsequently transfected into CHNs at 7–10 DIV. At 48 hr post-transfection, the neurons were fixed and subjected to IF-ICC with target-specific mAbs, or with markers for specific subcellular compartments. We evaluated colocalization between the GFP- or YFP-tagged nAbs and target protein immunolabeling, relative to CHNs expressing GFP or YFP alone. For each target, we identified nAbs that colocalized with the endogenously expressed target protein (results summarized in Table 1). Examples of CHNs expressing nAbs for each target with the corresponding target-specific immunolabeling are shown in Figure 1—figure supplement 2 for the excitatory synaptic proteins Homer1, IRSp53 and SAPAP2, and Figure 1—figure supplement 3 for Gephyrin and AMIGO-1. Analysis by Pearson’s Correlation Coefficient (PCC) demonstrated that the nAb-GFP intrabodies were colocalized with the corresponding endogenous target protein (Figure 1—figure supplements 2 and 3). Importantly, the expression and subcellular localization of the endogenous target proteins were not altered by nAb expression, as quantified by a lack of significant change in target protein puncta size (Figure 1—figure supplements 2 and 3). For nAbs targeting the excitatory postsynaptic target proteins Homer1, IRSp53 and SAPAP proteins (Figure 1—figure supplement 2), the punctate pattern of nAb localization in dendrites was closely associated with immunolabeling for PSD95, a marker of the excitatory postsynaptic compartment (Figure 1—figure supplement 4), supporting that the nAb puncta were at excitatory synapses. Moreover, expression of the nAbs against target proteins at excitatory synapses did not impact the sizes of PSD-95 puncta (Figure 1—figure supplement 4). Similarly, anti-Gephyrin nAbs had a subcellular localization that not only colocalized with endogenous Gephyrin (Figure 1—figure supplement 3) but were also frequently found opposed to immunolabeling for the synaptic vesicle protein Synapsin (Figure 1—figure supplement 5), supporting the observation that these nAbs were localized at synapses. The sizes of the puncta of Gephyrin and Synapsin immunolabeling were not impacted by expression of anti-Gephyrin nAbs (Figure 1—figure supplements 3 and 5). In the case of AMIGO-1, we identified nAbs that colocalized with endogenous AMIGO-1 (Figure 1—figure supplement 3), which is present in large clusters at ER-PM junctions on the soma and proximal dendrites of CHNs (Bishop et al., 2018). Moreover, the AMIGO-1 nAb colocalized with labeling for Kv2.1, a partner subunit of AMIGO-1 in Kv2 channel complexes found at these sites (Figure 1—figure supplement 5). The sizes of AMIGO-1 and Kv2.1 puncta were not impacted by expression of anti-AMIGO-1 nAbs (Figure 1—figure supplements 3 and 5). These results indicate that these nAbs act as intrabodies that recognize their endogenous target proteins in CHNs, and the expression of the nAbs has little discernible impact on the expression and subcellular localization of their endogenous targets.
 
@@ -70,7 +181,7 @@ Compared to similarly sized mobile transport vesicles, synaptic puncta are rela
 
 **Figure 3.:** TIRF images of live cultured rat hippocampal neurons transfected with GFP (shown in A), or nAb-GFP fusions against Homer1 (clone HC12, shown in B), IRSp53 (clone IC65, shown in C), SAPAP2 (clone SS80, shown in D), Gephyrin (clone GC52, shown in E), or AMIGO-1 (clone AC50, shown in F). For each, two images (of the same field of view) taken one min apart are shown. To the right is an overlay of the initial image (in green) and the subsequent image (in magenta). Overlap of green and magenta yields a white signal. Arrows point to punctate structures. The column to the far right shows an analysis of the extent of overlap of pixels between the initial and subsequent images. The scale bar in the top left panel is 5 μm and holds for all panels in figure.
 
-## A distinct subset of nAbs function as immunolabels in heterologous cells and brain sections
+### A distinct subset of nAbs function as immunolabels in heterologous cells and brain sections
 
 Because of their relatively small size (≈15 kD, ≈2–4 nm in length), nAbs are potentially advantageous for immunolabeling due to enhanced sample penetration and a reduced distance between the labeling signal and target compared to conventional antibodies. However, a systematic evaluation of the utility of nAbs for immunolabeling endogenous target proteins in brain neurons has not been reported. Here, we took an unbiased approach by testing all of the ELISA-positive nAbs for immunolabeling of conventional formaldehyde fixed transfected heterologous cells and brain sections. We first transformed E. coli with each of the ELISA-positive nAb phagemids, and after induction of nAb expression and overnight culture, collected the bacterial cell culture media as bacterial culture supernatants (BC supes) containing secreted nAbs. We first tested these nAb-containing BC supes in IF-ICC against fixed COS-1 cells transiently transfected to heterologously express their cognate brain target protein in a subset of cells, an assay we routinely use for screening mAbs (Bekele-Arcuri et al., 1996; Gong et al., 2016). This assay allows for a facile determination of which candidate antibodies detect the target protein after fixation by providing a mosaic of numerous target-expressing and non-expressing cells in the same field. Here, we double-immunolabeled cells with candidate nAb BC supes and previously validated mouse mAbs against the same target protein to distinguish expressing versus non-expressing cells. We found that a substantial subset (33/39) of the ELISA-positive anti-Homer1 nAb BC supes tested exhibited robust immunolabeling of fixed and permeabilized COS-1 cells expressing Homer1L. Examples of positive immunolabeling with anti-Homer1 nAb BC supes are shown in Figure 1—figure supplement 6, which shows robust nAb labeling (green) that colocalizes with Homer1 mAb labeling (red). In contrast, none of the unique ELISA-positive nAb BC supes against the other targets yielded detectable immunoreactivity in this assay (Table 1).
 
@@ -80,7 +191,7 @@ We next determined whether the anti-Homer1 nAbs exhibiting positive immunolabeli
 
 **Figure 4.:** (A) Representative images of a whole brain section labeled with a nAb BC supe against Homer1 (HS15, in green), a mouse mAb against Homer1 (L113/27, in magenta) and a nuclear label (Hoechst, in grayscale) showing brain regions with high Homer1 labeling. Merge is of antibody labeling only. CPu = caudate putamen; CTX = cerebral cortex; HC = hippocampus. The scale bar in the HS15 panel is 1 mm and holds for all four panels. (B) Representative images of HC and CPu from brain sections labeled with several anti-Homer1 nAb BC supes (green) and a mouse mAb against Homer1 (L113/27, in magenta). Note that nAb HS12 was scored as negative in this application. The scale bar in the top L113/27 panel is 500 μm and holds for all panels in B and C. (C) Representative images from brain sections labeled with mouse mAb L113/130 that recognizes both the long and short splice variants of Homer1 (green), and mouse mAb L113/27 that recognizes only the long splice variants of Homer1 (magenta).
 
-## Directly conjugated nAbs function as nanoscale immunolabeling reagents for super-resolution fluorescence imaging of subcellular structures
+### Directly conjugated nAbs function as nanoscale immunolabeling reagents for super-resolution fluorescence imaging of subcellular structures
 
 To fully utilize the small size of nAbs as nanoscale immunolabeling reagents requires direct conjugation to detection reagents such as fluorescent organic dyes or gold particles. We selected a subset of nAbs that immunolabeled brain sections and made purified nAb preparations, taking advantage of the 6XHis tag engineered into the nAb C-terminus. We first validated the purified nAbs by immunolabeling brain sections (data not shown). We next directly conjugated a purified nAb (HS69) to the fluorescent organic dye Alexa Fluor 647 (Alexa647). We performed super-resolution microscopy employing a ground-state depletion system (Bretschneider et al., 2007; Fölling et al., 2008) to determine whether the Alexa647-nAb provided enhanced spatial resolution. In these experiments we compared CHNs immunolabeled with the directly conjugated HS69 nAb to that obtained with unlabeled HS69 nAb detected with Alexa647-conjugated anti-HA mAb, and that from a conventional anti-Homer1 mouse mAb (L113/27) detected with Alexa647-conjugated secondary antibody. As shown in Figure 5, there was a significant difference in the size of immunolabeled puncta for each of the labeling reagent combinations used. Directly conjugated Alexa647 nAb had the smallest overall cluster size, followed by the unlabeled nAb detected with the Alexa647-conjugated anti-HA antibody, with the conventional mAb detected with an Alexa647-conjugated secondary antibody having the largest cluster size (Figure 5). This provides an empirical demonstration that immunolabeling with a directly labeled nAb allows for enhanced resolution of target detection in super-resolution light microscopy.
 
@@ -88,7 +199,7 @@ To fully utilize the small size of nAbs as nanoscale immunolabeling reagents req
 
 **Figure 5.:** (A) Representative TIRF images of CHNs. Neurons were immunolabeled with anti-Homer1 nAb plus a mouse mAb against Homer1 (L113/27, in red), and an antibody against MAP2 (blue). Top row: Dendrites of a CHN immunolabeled with nAb HS69 directly conjugated to Alexa647 (HS69-647, in green). Bottom row: Dendrites of a CHN immunolabeled with HA-tagged HS69 nAb plus Alexa647 conjugated anti-HA mAb (HS69 + anti-HA-647, in green). Scale bar is 5 μm and holds for all panels in A. (B) Representative super-resolution Homer1 localization maps of neurons immunolabeled for Homer1 with a mouse mAb plus Alexa647-conjugated secondary Ab (L113/27 + anti IgG2a-647), with HS69 nAb plus Alexa647-conjugated anti-HA antibody (HS69 + anti-HA-647), or with directly Alexa647-conjugated HS69 nAb (HS69-647). Scale bar is 200 nm and holds for all images in panel B. (C) Bar plot of the mean Homer1 cluster area ± SD for the three different labeling groups described in B (n = 227, 403, and 593 clusters respectively from five different cells per group). p values were calculated using a one-way ANOVA and a Bonferroni’s multiple comparisons test.
 
-## Validation of nAbs as immunolabels for use in immunoblot analyses
+### Validation of nAbs as immunolabels for use in immunoblot analyses
 
 To complete the validation of nAbs for standard immunolabeling applications, we evaluated the utility of nAbs in our collection as immunolabels for detecting their respective target proteins in brain samples on immunoblots. We evaluated all 113 ELISA-positive unique nAb BC supes for immunolabeling of ‘strip’ blots containing a crude fraction of rat brain membrane proteins (Bekele-Arcuri et al., 1996; Gong et al., 2016; Rhodes et al., 1995). We found that a subset of the unique ELISA-positive nAbs against Homer1 (13/39; Table 1) detected a single robust band at the characteristic electrophoretic mobility of Homer1 (≈47 kDa) (Saito et al., 2002). The band recognized by the nAbs had characteristics corresponding to the band obtained with the validated anti-Homer1 mouse mAb L113/130 (Figure 6). A small subset of the unique ELISA-positive nAbs against Gephyrin (2/24; Table 1) detected a single band at the characteristic electrophoretic mobility (≈80 kDa) of Gephyrin (Feng et al., 1998) that comigrated with the immunoreactive band for the validated anti-Gephyrin mouse mAb L106/93 (Figure 6). No specific immunolabeling was detected with any of the ELISA-positive nAb BC supes against the other targets (Table 1). These results demonstrate that a subset of ELISA-positive nAbs can be used in IB-based applications.
 
@@ -110,11 +221,70 @@ In summary, we have generated a series of validated nAbs against neuronal protei
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS-1</td>
+      <td>ATCC Cat # CRL-1650, Lot # 59102713; PMID: 6260373</td>
+      <td>RRID:CVCL_0223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>numerous</td>
+      <td></td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pComb3XSS</td>
+      <td>PMID: 10986398</td>
+      <td>Addgene #63890 (Addgene RRID:SCR_002037)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe Systems</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Axiovision</td>
+      <td>Carl Zeiss MicroImaging</td>
+      <td>RRID:SCR_002677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Fiji</td>
+      <td>PMID: 22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures involving llamas were performed at Triple J Farms of Kent Laboratories (Bellingham, WA) in strict accordance with the Guide for the Care and Use of Laboratory Animals of the NIH. All procedures involving rats were approved by the University of California, Davis, Institutional Animal Care and Use Committee (IACUC) under protocols 20485 and 21265 and were performed in strict accordance with the Guide for the Care and Use of Laboratory Animals of the NIH. All rats were maintained under standard light-dark cycles and allowed to feed and drink ad libitum. All procedures involving mice were approved by the Stanford University IACUC under protocol 18846 and were performed in strict accordance with the Guide for the Care and Use of Laboratory Animals of the NIH.
 
-## Llama immunization and characterization of immune responses
+### Llama immunization and characterization of immune responses
 
 Recombinant fragments of neuronal target proteins (Supplementary file 2) were expressed in and purified from E. coli. Llama immunizations were performed using cocktail of these recombinant protein fragments employing five subcutaneous injections given at biweekly intervals. For each injection a total of 1 mg protein (200 µg of each protein in the cocktail) was mixed with Freund’s complete adjuvant (Sigma-Aldrich Cat# F5581) for the first immunization and Freund’s incomplete adjuvant (Sigma-Aldrich Cat# F5506) for all subsequent immunizations. The llama immune response against the individual target proteins was evaluated by ELISA beginning with antiserum collected after the third immunization.
 
@@ -122,7 +292,7 @@ A whole IgG fraction was purified from llama antiserum on rProtein A/G GraviTrap
 
 Conventional heavy and light chain IgG1 and heavy chain-only IgG2 and IgG3 subclasses were purified from llama antiserum on rProtein A GraviTrap (GE Healthcare Cat# GE28-9852-54) and Protein G GraviTrap (GE Healthcare Cat# GE28-9852-55) columns. Briefly, 0.5 mL of llama antiserum was diluted with an equal volume of phosphate-buffered saline (PBS, 5.2 mM Na2HPO4; 1.7 mM KH2PO4; 0.15 M NaCl, pH 7.4). The mixture was loaded onto a Protein G GraviTrap column, the unbound fraction collected, and the column washed with 20 mL PBS. The IgG3 fraction was first eluted with 58% acetic acid buffer (pH 3.5) containing 0.15 M NaCl. The IgG1 fraction was subsequently eluted with 0.1 M Glycine-HCl buffer (pH 2.7). The unbound fraction from the Protein G column was loaded onto on an rProtein A GraviTrap column, and the column washed with 20 mL PBS. The IgG2 fraction was eluted with 58% acetic acid buffer (pH 4.5) containing 0.15 M NaCl. All fractions were neutralized with 1:10 vol of 1 M Tris-HCl (pH 9.0) upon collection.
 
-## Phage display library construction and panning
+### Phage display library construction and panning
 
 A phage display library for nAb isolation was prepared in the pComb3XSS phagemid (AddGene #63890). This allows for generation of 6xHis and HA-tagged nAbs as PIII protein fusions on phage pili for phage display, and also for subsequent production of soluble protein lacking the PIII fusion partner in non-amber suppressor E. coli strains (Andris-Widhopf et al., 2000). Llama blood was collected after the fifth immunization and 10 mL used for isolation of total RNA using a LeukoLOCK total RNA isolation system (ThermoFisher Cat# AM1923). The resulting total RNA was reverse-transcribed to cDNA using the SuperScript III First Strand Synthesis System (ThermoFisher Cat# 18080–051). The IgG heavy chain variable fragments were amplified by PCR with llama-optimized primers (Supplementary file 3). The amplified PCR product and the phagemid vector pComb3XSS were digested with the Sfi I restriction enzyme (NEB Cat# R0123S) and the resulting fragments ligated. The ligation was transformed by electroporation into electrocompetent ER2738 E. coli bacteria (Lucigen Cat# 60522–2). The transformants were infected with M13KO7 helper phage (NEB Cat# N0315S) for packaging into phage displaying the nAb library on pili as PIII fusions. The library complexity was calculated as 8.0 × 107.
 
@@ -132,53 +302,53 @@ The eluted phage were collected and used to reinfect 5 mL of log-phase ER2738 E.
 
 For Homer1, SAPAP2 and Gephyrin, a parallel round of panning was performed using target proteins displayed using a sandwich technique. After confirmation of immunoreactivity against each of the individual target proteins by ELISA, 10 µg of a whole IgG fraction purified from antiserum obtained from the immunized llama was added to individual wells of a 96 well microplate and incubated at 4°C overnight. After removing unbound IgG by two rinses with PBS, 10 µg of individual target protein was added to the separate wells and incubated for 1 hr at RT. Unbound target protein was removed by eight rinses with PBST and eight rinses with PBS. The remainder of the panning procedure was then carried out as described above.
 
-## Production of soluble nAbs
+### Production of soluble nAbs
 
 Phage display positive samples were grown in liquid culture and plated onto LB + AMP plates. To prepare bacterially-expressed nAb culture supernatant (BC supe) for protein ELISA validation, isolated colonies were picked into 2 mL capacity deep well plates containing 0.5 mL of LB + AMP medium per well. After overnight incubation at 37°C with shaking at 250 rpm, 50 µL of these cultures were transferred into 1 mL of Super Broth + AMP until an A600 of 0.3–0.6 was reached. Expression of the nAb-PIII fusion proteins was induced by addition of 1 mM isopropyl-β-D-thiogalactopyranoside and incubation for 16 hr at 37°C. The media was harvested, and the BC supe collected after centrifugation at 1990 x g for 15 min at RT to pellet the bacteria.
 
 To prepare purified soluble nAbs lacking the PIII fusion protein, a subset of the nAb-pComb3XSS plasmids were isolated and transformed into the amber suppressor E. coli strain Top10F’. The induction of soluble nAb expression was performed in 1 L of Super Broth + AMP as described above. After pelleting the cells by centrifugation at 16,900 x g for 10 min at 4°C, the periplasmic proteins were released by osmotic shock (Olichon et al., 2007). The periplasmic extract was loaded onto a column of HisPur Ni-NTA Resin (ThermoFisher Cat# 88221), and after washing with 10 mL of PBS and 10 mL of 40 mM imidazole in PBS, the bound proteins were eluted with 5 mL of 200 mM imidazole in PBS. The eluted fraction was dialyzed against PBS to remove the imidazole. The protein concentration was determined by A280, and the concentration verified, and protein purity evaluated by SDS-PAGE and Coomassie blue staining.
 
-## Phage and nAb ELISAs
+### Phage and nAb ELISAs
 
 The binding activity of nAbs in vitro was evaluated by ELISA. Individual wells of a 96 well microtiter plate (Greiner Bio-One Cat# 655081) were coated overnight at 4°C with 10 µg of the individual target proteins. After removing unbound target protein by four rinses with PBST buffer, wells were blocked for 1 hr at RT with BLOTTO (4% nonfat dry milk powder in TBS-T buffer). Phage (for phage ELISAs) or soluble nAb (for nAb ELISAs) samples were added, followed by incubation for 1 hr at RT. For phage ELISAs, 1010 phage particles were added per well, while for nAb ELISAs, 50 µL of BC supe was added per well. Following four rinses with PBST buffer, wells were incubated for 1 hr at RT with 50 µL of anti-HA mouse IgG2b mAb 12CA5 at 1.14 µg/mL in BLOTTO. Following four rinses with PBST, wells were incubated for 1 hr at RT with 50 μL of goat anti-mouse IgG2b-HRP conjugated secondary antibody (Jackson Immunoresearch Laboratories Cat# 115-005-207) diluted 1:5000 in BLOTTO. Following four rinses with PBST buffer, wells were incubated with TMB substrate (Sigma-Aldrich Cat# T2885). Wells lacking phage or nAbs were used as negative controls. Phage or nAbs exhibiting an OD450 signal three-fold higher than the negative ‘no primary’ control were selected for further analysis. For target proteins that were fusions with GST (i.e., IRSp53 and AMIGO-1), parallel ELISAs were performed on plates whose wells were coated with an equal amount of GST protein. Phage or nAbs exhibiting a three-fold higher OD450 signal for the GST-target protein fusion versus GST alone were selected for further analysis.
 
-## Sequencing and transfer of unique nAbs into mammalian expression plasmids
+### Sequencing and transfer of unique nAbs into mammalian expression plasmids
 
 DNA in pComb3XSS phagemid was prepared from the ER2738 strain of E. coli bacteria for all ELISA-positive nAbs and the forward strand of the nAb insert subjected was sequenced using a primer (5’-TTAGGCACCCCAGGCTTTACACT-3’) that binds to the leader sequence of the pComb3XSS phagemid.
 
 All unique ELISA-positive nAb sequences were amplified by PCR and ligated into the pEYFP-N1 or pEGFP-N1 mammalian expression plasmids as GFP fusions by Gibson Assembly, employing a commercial Master Mix (NEB Cat# E2611S) according to the manufacturer's protocol, and employing a SmaI (NEB Cat# R0141S) restriction site present in the pEYFP-N1 or pEGFP-N1 plasmid. The primers used for the Gibson assembly reaction were Forward: 5’-ATTCTGCAGTCGACGGTACCGCGGGCCCTGGTTTCGCTACCGTGGCCCAGGCGGCC-3’ or 5'-CTTCGAATTCTGCAGTCGACGGTACCGCGGGGCCATGCAGKTGCAGCTCGTGGAGTC-3'; Reverse: 5’-CTCACCATGGTGGCGACCGGTGGATCCCTAGCGTAGTCCGGAACGTCGTACGGGTA-3’. Two independent colonies for each construct were selected for plasmid preparation, sequence determination and expression in mammalian cells. Plasmids encoding validated nAbs will be made publicly available in plasmid form from Addgene.
 
-## Mammalian COS-1 cell culture and transfection
+### Mammalian COS-1 cell culture and transfection
 
 COS-1 cells were obtained from ATCC. These were verified by ATCC to be exclusively of Cercopithecus aethiops (African green monkey) origin by cytochrome oxidase I (COI) assay, and to be mycoplasma negative at the time of cryopreservation. COS-1 cell cultures were subsequently tested for mycoplasma contamination on a monthly basis using the MycoAlert Mycoplasma Detection Kit (Lonza Catalog#: LT07-318). COS-1 cells were maintained in Dulbecco’s modified Eagle’s medium (ThermoFisher Cat# 11995065) supplemented with 10% Bovine Calf Serum (HyClone Cat# SH30072.04), 1% penicillin/streptomycin (ThermoFisher Cat# 15140122), and 1X GlutaMAX (ThermoFisher Cat# 35050061) in a humidified incubator at 37°C with 5% CO2. For testing nAbs for intrabody function, 2,500 COS-1 cells were plated in each well of a 96 well plate (Greiner Bio-One Cat# 655090), cultured overnight at 37 °C and then transfected using Lipofectamine 2000 (ThermoFisher Cat# 11668027) following the manufacturer’s protocol. Sets of individual wells were transfected with nAb or target expression plasmids separately, or cotransfected together, using 0.1 µg each of each plasmid. Cells were transiently transfected in DMEM without supplements, then returned to regular growth media 4 hr after transfection. Cells were used 40–48 hr post-transfection for IF-ICC.
 
 For testing nAbs for immunolabel function by IF-ICC, 3 × 104 COS-1 cells were plated on number 1.5 glass coverslips coated with poly-L lysine in 35 mm Petri dishes and incubated overnight. COS-1 cells were transiently transfected using Lipofectamine 2000 (ThermoFisher Cat# 11668027) with 1 µg of target protein plasmid following the manufacturer’s protocol. Mammalian expression plasmids encoding full-length mouse Homer1 (Origene Cat# MR222523), human IRSp53 (Addgene Plasmid# 31656), rat SAPAP2 (Addgene Plasmid# 40216), human Gephyrin (a gift from Dr. Stephen J. Moss, Tufts University), and mouse AMIGO-1 (a gift from Dr. Heikki Rauvala, University of Helsinki) were used for expression of the corresponding target proteins in COS-1cells.
 
-## Culture and transfection of rat hippocampal neurons
+### Culture and transfection of rat hippocampal neurons
 
 Hippocampi were dissected from embryonic day 18 rat embryos and dissociated enzymatically for 20 min at 37°C in 0.25% (w/v) trypsin (ThermoFisher Cat# 15050065) in HBSS and dissociated mechanically by triturating with glass polished Pasteur pipettes. Dissociated cells were suspended in plating medium containing Neurobasal (ThermoFisher Cat# 21103049) supplemented with 10% FBS (ThermoFisher Cat# 16140071), 2% B27 (ThermoFisher Cat# 17504044), 2% GlutaMAX (ThermoFisher Cat# 35050061), and 0.001% gentamycin (ThermoFisher Cat# 15710064) and plated at 60,000 cells per dish in glass bottom dishes (MatTek Cat# P35G-1.5–14 C) coated with 0.5 mg/mL poly-L-lysine (Sigma-Aldrich Cat# P2636). At 7 days in vitro (DIV), cytosine-D-arabinofuranoside (Sigma-Aldrich Cat# 251010) was added to a final concentration of 5 µM to inhibit non-neuronal cell growth. Neurons were transiently transfected with 1 µg of each nAb mammalian expression plasmid at 7–10 DIV using Lipofectamine 2000 (ThermoFisher Cat# 11668019) for 1.5 hr as described by the manufacturer. Neurons were used 40–48 hr post transfection for IF-ICC.
 
-## Examination of Homer1 nAbs delivered via lentivirus
+### Examination of Homer1 nAbs delivered via lentivirus
 
 Primary hippocampal cultures were generated by dissecting hippocampi from P0 CD1 mice, and cells were dissociated by papain (Worthington Cat# LS003127) digestion for 20 min at 37°C, filtered through a 70 µm cell strainer (Falcon Cat# 352350), and plated on Matrigel (Corning Cat# 356235)-coated 0 thickness glass coverslips (Assistant Cat# 01105209) in 24-well plates. Plating media contained 5% fetal bovine serum (Atlanta Biologicals Cat# S11550), B27 (ThermoFisher Cat# 17504044), 0.4% glucose (Sigma Cat# G8270), 2 mM glutamine (ThermoFisher Cat# 25030164), in 1x MEM (ThermoFisher Cat# 51200038). Culture media was exchanged to Growth media 24 hr later (1 DIV), which contained 5% fetal bovine serum, B27, 2 mM glutamine in Neurobasal A (ThermoFisher Cat# 10888022). Cytosine arabinofuranoside (Santa Cruz Biotechnology Cat# 221454A) was added at a final concentration of 4 µM on or around 3 DIV based on glial cell density in a 50% growth media exchange. Cultures were subsequently infected at 5 DIV and analyzed at 14 DIV. For production of lentiviruses, the lentiviral expression shuttle vector and three helper plasmids [pRSV-REV, pMDLg/pRRE and vesicular stomatitis virus G protein (VSVG)] were co-transfected into HEK293T cells (ATCC), using 5 µg of each plasmid per 25 cm2 culture area, respectively. Transfections were performed using the calcium-phosphate method in media lacking antibiotic (DMEM + 10% FBS). Media with viruses was collected at 48 hr after transfection, centrifuged at 5000 x g for 5 min to remove debris, and 50 µL of viral conditioned media was added directly to each well. For IF-ICC analysis, all solutions were made fresh and filtered with a 0.2 µm filter prior to starting experiments. Cells were washed briefly with PBS, fixed with 4% formaldehyde/FA (freshly prepared from paraformaldehyde/PFA)/4% sucrose/PBS for 20 min at 4°C, washed 3 × 5 min each in PBS, and permeabilized in 0.2% Triton X-100/PBS for 5 min at RT. Cells were subsequently placed in blocking buffer (5% BSA/PBS) for 1 hr at RT, and incubated with primary antibodies [Supplementary file 4; chicken anti-GFP (Aves Labs Cat# GFP1020, RRID:AB_10000240); rabbit anti-Homer1 (Synaptic Systems Cat# 160003, RRID:AB_887730), anti-MAP2 mouse IgG1 mAb AP-20 (Sigma Cat# M1406, RRID:AB_477171)] diluted in blocking buffer overnight at 4°C. Cells were washed 3 × 5 min each in PBS, incubated with diluted fluorescently-conjugated secondary antibodies (Life Technologies Cat# A11039, A11012, A21236) in blocking buffer for 1 hr, washed 3 × 5 min each in PBS, and mounted on UltraClear microscope slides (Denville Scientific Cat# M1021) using DAPI Fluoromount-G (Southern Biotech Cat# 010020).
 
-## Immunofluorescence immunocytochemistry
+### Immunofluorescence immunocytochemistry
 
 Fixation of COS-1 cells was performed as previously described (Bishop et al., 2015). Briefly, COS-1 cells were fixed in ice-cold 4% FA (freshly prepared from PFA, Sigma-Aldrich Cat# 158127) in PBS containing 0.1% Triton-X 100 for 15 min at 4°C, and CHNs in ice-cold 4% FA/4% sucrose in PBS for 15 min at 4°C. All subsequent procedures were performed at RT. Cells were washed for 3 × 5 min each in PBS and blocked and permeabilized for 1 hr in BLOTTO + 0.1% Triton-X 100 (BLOTTO-T). For assays determining the efficacy of nAbs as intrabodies, incubation with primary antibodies (Supplementary file 4) was performed using mAb tissue culture supernatants (TC supes) diluted 1:2 in BLOTTO-T for 1 h T. Following primary antibody incubation, and 3 × 5 min each washes in BLOTTO-T, cells were incubated with mouse IgG subclass-specific Alexa Fluor-conjugated secondary antibodies (all secondary antibodies from ThermoFisher) diluted 1:1500 in BLOTTO-T containing 500 ng/mL Hoechst 33258 (ThermoFisher Cat# H1399) for 1 hr, washed 3 × 5 min each in PBS, and mounted onto microscope slides using Prolong Gold (ThermoFisher Cat# P36930). For assays determining the efficacy of nAbs as immunolabels, a 1 hr primary antibody incubation was performed using undiluted nAb BC supes, followed by a 1 hr incubation with mouse mAb TC supes (Supplementary file 4) diluted 1:5 in BLOTTO-T. Following these serial primary antibody incubations, and 3 × 5 min each washes in BLOTTO-T, cells were incubated with anti-HA mouse IgG1 mAb 16B12 conjugated to Alexa Fluor 488 (ThermoFisher Cat# A-21287) diluted to 0.67 μg/mL in blocking solution to detect bound nAb, and mouse IgG subclass-specific Alexa Fluor 555 conjugated secondary antibodies (all secondary antibodies from ThermoFisher) diluted 1:1500 in BLOTTO-T to detect bound mAb, with dilutions performed in BLOTTO-T containing 500 ng/mL of the chromatin dye Hoechst 33258 (ThermoFisher Cat# H1399). After a 1 hr incubation, cells were washed 3 × 5 min each in PBS and mounted onto microscope slides using Prolong Gold (ThermoFisher Cat# P36930).
 
-## Immunofluorescence immunocytochemistry for super-resolution imaging
+### Immunofluorescence immunocytochemistry for super-resolution imaging
 
 The HS69 anti-Homer1 nAb (100 μg in 1 mL of 0.1 M sodium bicarbonate buffer, pH 8.3) was directly conjugated to Alexa647 using succinimidyl-Alexa647 (ThermoFisher Cat# A20186) for 1 hr at RT, followed by addition of 0.1 mL of 1.5 M hydroxylamine. Conjugated nAb was separated from free dye on a Sephadex G-25 column, followed by dialysis against PBS. Validation of immunolabeling of CHNs at 24 DIV with directly conjugated HS69-647 nAb as shown in Figure 5A was performed essentially as described in the previous section. For primary and secondary antibody incubations, neurons were divided into two groups. CHNs in both groups were immunolabeled with primary antibodies mouse anti-Homer1 mouse IgG2b mAb L113/27 TC supe at a 1:2 dilution, and rabbit anti-MAP2 (Millipore-Sigma, Cat# AB5662-I) at a 1:100 dilution, and with secondary antibodies goat anti-mouse IgG2b-subclass-specific Alexa Fluor 555-conjugated secondary antibody (ThermoFisher Cat# A21147) at a 1:1500 dilution to detect the anti-Homer1 mouse IgG2b mAb L113/27, and goat anti-rabbit IgG (H+L) Alexa Fluor 350-conjugated secondary antibody (ThermoFisher Cat# A-11046) at 1:1500 dilution to detect the rabbit anti-MAP2. For one set of CHNs, the primary antibody cocktail also included anti-Homer1 nAb HS69 directly conjugated to Alexa 647 (HS69-647) diluted to 10 μg/mL. For the other set, the primary antibody cocktail included unconjugated anti-Homer1 HS69 nAb diluted to 10 μg/mL, and the secondary antibody cocktail anti-HA mouse IgG1 mAb 2–2.2.14 conjugated to Alexa 647 (ThermoFisher Cat# 26183-A647) diluted to 1 μg/mL.
 
 For super-resolution imaging experiments (Figure 11B, C) CHNs at 24 DIV were fixed in ice-cold 3% FA (freshly prepared from PFA, Sigma-Aldrich Cat# 158127)/0.1% glutaraldehyde (Sigma-Aldrich Cat# G7651) in PBS for 15 min at 4°C. Unless otherwise stated, all remaining procedures were performed at RT. Fixed CHNs were washed for 3 × 5 min each in PBS, and free aldehydes reduced by incubating in 0.1% NBH4 (Sigma-Aldrich Cat# 213462) in dH2O for 5 min, followed by 3 × 5 min each washes in PBS. Neurons were blocked and permeabilized for 60 min in 3% BSA with 0.25% Triton-X 100 in PBS (blocking solution). For primary and secondary antibody incubations, neurons were divided into three groups. Group 1, mAb plus secondary: CHNs were incubated overnight at 4°C with anti-Homer1 mouse IgG2b mAb L113/27 TC supe at a 1:2 dilution in blocking solution, washed for 3 × 5 min each in blocking solution, and incubated for 1 hr with goat anti-mouse IgG2b secondary antibody conjugated to Alexa 647 (ThermoFisher Cat# A-21242) diluted to 1 μg/mL in blocking solution, followed by 3 × 5 min each washes in PBS. Group 2, nAb plus anti-HA-647: CHNs were incubated overnight at 4°C with HS69 anti-Homer1 nAb diluted to 10 μg/mL in blocking solution, washed for 3 × 5 min each in blocking solution, and incubated for 1 hr with anti-HA mouse IgG1 mAb 2–2.2.14 conjugated to Alexa 647 (ThermoFisher Cat# 26183-A647) diluted to 1 μg/mL in blocking solution, followed by 3 × 5 min each washes in PBS. Group 3, directly-conjugated nAb: CHNs were incubated overnight at 4°C with anti-Homer1 nAb HS69 directly conjugated to Alexa 647 (HS69-647) diluted to 10 μg/mL in blocking solution followed by 3 × 5 min each washes in PBS. Coverslips were mounted on microscope slides with a round cavity (NeoLab Migge Laborbedarf-Vertriebs GmbH, Germany) and sealed with Twinsil (Picodent, Germany). The imaging buffer contained 10 mM Cysteamine-HCl (Sigma-Aldrich Cat# M6500), 0.56 mg/mL glucose oxidase (Sigma-Aldrich Cat# G2133), 3.4 μg/ml catalase (Sigma-Aldrich Cat# C100), and 10% w/v glucose in 200 mM Tris-HCl pH 8, 10 mM NaCl.
 
-## Multiplexed fluorescence immunohistochemistry on brain sections
+### Multiplexed fluorescence immunohistochemistry on brain sections
 
 Rats were deeply anesthetized with 70 mg/kg Na-pentobarbital salt (Sigma-Aldrich Cat# P3761) in 0.9% NaCl solution through intraperitoneal injection, followed by boosts as needed. Once completely anesthetized, rats were transcardially perfused with 25 mL of ice-cold PBS containing 10 U/mL heparin, followed by an ice-cold fixative solution of 4% FA (freshly prepared from PFA, Sigma-Aldrich Cat# 158127) in 0.1 M sodium phosphate buffer (PB), pH 7.4, using a volume of 0.5 mL fixative solution per gram of rat weight. Following perfusions, brains were removed from the skull and cryoprotected in 10% sucrose in 0.1 M PB overnight at 4°C, then transferred to a solution of 30% sucrose in 0.1 M PB for 24–48 hr, until they sank to the bottom of the tube. Following cryoprotection, all brains were frozen, and cut on a freezing stage sliding microtome (Richard Allen Scientific) to obtain 30 µm-thick sagittal sections. Sections were collected in 0.1 M PB containing 10 mM sodium azide and processed for immunohistochemistry as free-floating sections.
 
 Multiplex immunofluorescence labeling of nAbs was performed on rat brain sections essentially as previously described (Manning et al., 2012). All incubations and washes were at RT with slow agitation, unless stated otherwise. Briefly, free-floating sections were washed 3 × 5 min each in 0.1 M PB and 10 mM sodium azide. Sections were incubated in blocking buffer (10% goat serum in 0.1 M PB, 0.3% Triton X-100, and 10 mM sodium azide) for 1 hr. Immediately after blocking, sections were incubated with the primary antibody cocktail containing the candidate nAb BC supe and the mouse anti-Homer1 mouse IgG2b mAb L113/27 TC supe, both diluted 1:5 in blocking buffer, followed by overnight incubation at 4°C with slow agitation. Sections were then washed 3 × 10 min each in 0.1 M PB and incubated for 1 hr with a secondary antibody cocktail of anti-HA mouse IgG1 mAb 16B12 conjugated to Alexa Fluor 488 (ThermoFisher Cat# A-21287), to detect bound nAb, and goat anti-mouse IgG2b-subclass-specific Alexa Fluor 555-conjugated secondary antibody (ThermoFisher Cat# A21147) to detect the L113/27 mAb, both diluted 1:2000 in blocking buffer containing 500 ng/mL Hoechst 33258. After 3 × 10 min each washes in 0.1 M PB, sections were mounted and dried onto gelatin-coated slides, treated with 0.05% Sudan Black (EM Sciences Cat# 21610) in 70% ethanol for 2 min, extensively washed in water, and coverslipped using Prolong Gold (ThermoFisher Cat# P36930) mounting medium.
 
-## Conventional diffraction-limited and super-resolution light microscopy
+### Conventional diffraction-limited and super-resolution light microscopy
 
 Images of fixed samples were acquired with an AxioCam MRm digital camera installed on a Zeiss AxioImager M2 microscope or with an AxioCam HRm digital camera installed on a Zeiss AxioObserver Z1 microscope with a 20X/0.8 NA plan-Apochromat objective or a 63X/1.40 NA plan-Apochromat oil immersion objective using an ApoTome structured illumination system for optical sectioning, with image acquisition controlled by Axiovision software (Zeiss, Oberkochen, Germany).
 
@@ -188,10 +358,10 @@ Live cell imaging of transfected hippocampal neurons was performed at the UC Dav
 
 A super resolution ground-state depletion system (SR-GSD, Leica) based on stochastic single-molecule localization was used to generate super-resolution images. Images were obtained using a 160X HCX Plan-Apochromat (NA 1.43) oil-immersion lens and an EMCCD camera (iXon3 897; Andor Technology). For all experiments, the camera was running in frame-transfer mode at a frame rate of 100 Hz. A total of 35,000 images were used to construct the localization maps. Homer1 cluster sizes were determined using binary masks of the images in ImageJ software (NIH).
 
-## Image analysis and statistics
+### Image analysis and statistics
 
 All post-acquisition image analysis was performed using Fiji (Schindelin et al., 2012) except for analyses of images of anti-Homer1 nAb localization in primary hippocampal cultures via lentivirus, which was performed using Nikon Elements Analysis software. For line scan analyses of fluorescence intensity, the raw intensity values in the line scan analyses were collected within FIJI and normalized to the maximum value collected. The linear relationship between the fluorescence intensity of the signals was performed in Excel using the normalized values. Pearson’s Correlation Coefficient (PCC) measurements were collected from ROIs manually drawn around dendrites (for nAbs targeting post-synaptic targets) or around the soma and proximal dendrites (for nAbs targeting AMIGO-1). Puncta size quantification was performed essentially as previous reported (Bishop et al., 2018; Kirmiz et al., 2018a; Kirmiz et al., 2018b). Briefly, images were identically background subtracted with a rolling ball radius of 10 pixels and converted into a binary image using automated local thresholding (Bernsen, 1986). Puncta sizes were then quantified using the ‘analyze particles’ function in Fiji. All data sets were imported into Prism Graphpad for statistical analysis and presentation. Statistical tests were performed as noted in each figure legend.
 
-## Immunoblotting against brain samples
+### Immunoblotting against brain samples
 
 Immunoblots were performed on crude membrane fractions prepared from adult rat brain as previously described (Trimmer, 1991). Following determination of protein concentration by BCA assay (ThermoFisher Cat# 23227), 3 mg of RBM protein was loaded onto a single well that spanned the entire SDS-PAGE gel, electrophoresed to size-fractionate the proteins, and transferred onto a nitrocellulose membrane (BioRad Cat# 1620115). The nitrocellulose membrane was cut into 30 vertical strips so that each contained 100 µg of RBM protein. All remaining procedures were performed at RT. Strips were blocked for 1 hr in BLOTTO. Primary antibody incubation was performed using nAb BC supes diluted 1:2 in BLOTTO for 1 hr. Positive control antibodies were anti-Homer1 mouse IgG1 mAb L113/130 and anti-Gephyrin mouse IgG2a mAb L106/93, both used as TC supes diluted 1:2 in BLOTTO. Following primary antibody incubation, and 3 × 5 min each washes in BLOTTO, nAb strips were incubated for 1 hr in anti-HA rat IgG1 mAb 3F10 conjugated to HRP (Sigma-Aldrich Cat# 12013819001) diluted 1:2000 in BLOTTO, or HRP-conjugated goat anti-mouse IgG H+L (SeraCare Cat# 52200458) diluted 1:10,000 in BLOTTO. Following 3 × 5 min each washes in PBS, the chemiluminescent signal was generated by incubation in Western Lightning Plus ECL substrate (Fisher Scientific Cat# 509049325) and subsequently visualized on HyBlot CL film (Denville Scientific Cat# E3018).

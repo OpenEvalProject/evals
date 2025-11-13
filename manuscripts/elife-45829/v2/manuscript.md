@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.45829.001 Tackling relapsing Plasmodium vivax and zoonotic Plasmodium knowlesi infections is critical to reducing malaria incidence and mortality worldwide. Understanding the biology of these important and related parasites was previously constrained by the lack of robust molecular and genetic approaches. Here, we establish CRISPR-Cas9 genome editing in a culture-adapted P. knowlesi strain and define parameters for optimal homology-driven repair. We establish a scalable protocol for the production of repair templates by PCR and demonstrate the flexibility of the system by tagging proteins with distinct cellular localisations. Using iterative rounds of genome-editing we generate a transgenic line expressing P. vivax Duffy binding protein (PvDBP), a lead vaccine candidate. We demonstrate that PvDBP plays no role in reticulocyte restriction but can alter the macaque/human host cell tropism of P. knowlesi . Critically, antibodies raised against the P. vivax antigen potently inhibit proliferation of this strain, providing an invaluable tool to support vaccine development.
+Tackling relapsing Plasmodium vivax and zoonotic Plasmodium knowlesi infections is critical to reducing malaria incidence and mortality worldwide. Understanding the biology of these important and related parasites was previously constrained by the lack of robust molecular and genetic approaches. Here, we establish CRISPR-Cas9 genome editing in a culture-adapted P. knowlesi strain and define parameters for optimal homology-driven repair. We establish a scalable protocol for the production of repair templates by PCR and demonstrate the flexibility of the system by tagging proteins with distinct cellular localisations. Using iterative rounds of genome-editing we generate a transgenic line expressing P. vivax Duffy binding protein (PvDBP), a lead vaccine candidate. We demonstrate that PvDBP plays no role in reticulocyte restriction but can alter the macaque/human host cell tropism of P. knowlesi. Critically, antibodies raised against the P. vivax antigen potently inhibit proliferation of this strain, providing an invaluable tool to support vaccine development.
 
 ## Introduction
 
@@ -42,17 +42,33 @@ Here, we establish CRISPR-Cas9 genome editing in P. knowlesi. Using an optimised
 
 ## Results
 
-## Homology mediated CRISPR-Cas9 genome editing is highly efficient in P. knowlesi
+### Homology mediated CRISPR-Cas9 genome editing is highly efficient in P. knowlesi
 
 Plasmodium parasites lack a canonical non-homologous end joining pathway, instead relying almost exclusively on homology-directed repair of double-stranded breaks (DSBs), such as those introduced by the Cas9 endonuclease. Effective CRISPR-Cas9 genome editing of malaria parasites therefore requires expression cassettes for the guide RNA and the Cas9 nuclease, and a DSB repair template (donor DNA) containing the desired change, flanked by two regions of homology to the genomic target.
 
 Whilst a variety of approaches have been used in P. falciparum, many of the earlier methods embed these elements into two plasmids, each expressing a different drug-selectable marker (Ghorbal et al., 2014; Crawford et al., 2017; Mogollon et al., 2016). This allows for selection of very rare events, but complicates construct design and is not ideal for multiple modifications of a given line – as both selectable markers must then be recycled. As transfection efficiency is significantly higher in P. knowlesi than P. falciparum (Grüring et al., 2014), we reasoned that we may be able to use a single positive drug selectable marker to cover all the required components for editing. Pairing the guide and Cas9 cassette on a single ‘suicide’ plasmid (Lu et al., 2016) with positive and negative selection cassettes would allow for indirect selection of a separate plasmid containing the repair template, as only parasites that took up the repair template as well as the Cas9 plasmid would be able to repair the DSB. A similar approach to this has been used successfully in P. falciparum and has allowed the generation of lines entirely free of resistant cassettes after dilution cloning (Knuepfer et al., 2017). Supporting this approach, co-transfection of plasmids expressing eGFP or mCherry revealed that ~30% of P. knowlesi transgenic parasites took up both plasmids, although the proportion expressing both declined rapidly in the following days (Figure 1—figure supplement 1A). Our two-plasmid CRISPR-Cas9 system comprises one plasmid (pCas9/sg) that provides Cas9, sgRNA (driven by the PkU6 promoter) and a hDHFR-yFCU fusion product for positive/negative selection, and a second plasmid (pDonor) providing the donor DNA with homology regions (HRs) flanking the DSB for repair by homologous recombination. To test this system, we designed constructs to integrate an eGFP expression cassette into the non-essential p230p locus (Figure 1A and Figure 1—figure supplement 1C). A 20 bp guide sequence targeting a seed sequence upstream of a protospacer adjacent motif (PAM) within the p230p gene was cloned into pCas9/sg (pCas9/sg_p230p), and a repair template plasmid was synthesized by including an eGFP expression cassette flanked by 400 bp HRs targeting either side of the PAM sequence (pDonor_p230p). Both plasmids (each 20 μg) were combined and introduced into P. knowlesi schizonts via electroporation (Moon et al., 2013) along with control transfections (pCas9/sg without guide sequence and repair template). To simplify synchronisation of parasites, the transfection procedure was altered to additionally include a 2 hr incubation of purified schizonts with 1 μM of the schizont egress inhibitor compound 2, immediately prior to transfection. This compound reversibly inhibits the cGMP-dependent protein kinase (PKG) (Collins et al., 2013) and facilitates accumulation of the fully segmented forms required for transfection. Parasites were placed under selection with pyrimethamine for 5 days after transfection and successful integration monitored by PCR. Correct integration at the p230p locus was detectable by PCR within 3 days of transfection and only low levels of wild type DNA was detectable after day 11 (Figure 1B). Expression of eGFP was confirmed by live microscopy (Figure 1C). The eGFP positivity rate was calculated the day after transfection (day 1), to evaluate transfection efficiency (8.4%±2.1 SD). In P. knowlesi, expression of GFP can be detected in any parasites that take up the eGFP cassette after transfection, regardless of whether on an episomal or linearised construct. This indicates that 8.4% of parasites successfully take up the construct, but only a very small fraction of these are likely to be integrated at this stage. Only the plasmid pCas9/sg is selected for with pyrimethamine, and so the number of parasites with non-integrated linear donor DNA decreases rapidly over time. The eGFP positivity was assessed again once parasites reached 0.5% parasitemia (day 12), indicating 83.3% (±1.8 SD) of the parasites had integrated the construct (Figure 1D); Figure 1—source data 1. Parasites transfected with pCas9/sg_p230p without providing pDonor_p230p were visible in culture several days after the integrated lines. An intact guide and PAM site was detected in these parasites, suggesting that a small population of parasites did not form DSB. Parasites transfected with pCas9/sg without a cloned sgRNA appeared in culture within a few days after transfection, with comparable growth rates to the eGFP plasmid, suggesting the Cas9 expression without a targeting sgRNA is not toxic (Figure 1E); Figure 1—source data 1. Integrated lines were grown for one week before negative selection with 5-Fluorocytosine and subsequent limiting dilution cloning. Clones were identified using a plaque-based assay (Figure 1—figure supplement 1B) previously used for P. falciparum (Thomas et al., 2016), and 10/10 genotyped clone’s harboured correctly integrated, markerless eGFP (Figure 1F).
 
-## A three-step PCR method enables rapid, cloning-free generation of donor constructs
+![Figure 1.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of CRISPR-Cas9 strategy. Integration of the eGFP expression cassette into the target p230p locus via homologous recombination. Arrows indicating oligo positions for diagnostic PCRs. (B) Parasites transfected with pCas9/sg_p230p and pDonor_p230p plasmids were analysed with diagnostic PCRs on consecutive days after transfection. PCR reactions detecting the wild type locus (ol49 +ol50), integration locus (ol01 +ol50) and a control PCR targeting an unrelated locus (ol75 +ol76) using approximately 3 ng/μl genomic DNA. For each day, three transfections are shown. (C) Representative live microscopy image of eGFP positive schizont transfected with pCas9/sg_p230p and pDonor_p230p plasmids. Scale bar represents 5 μm. (D) Proportion of eGFP positive parasites (%) counted after transfection with pCas9/sg_p230p and pDonor_p230p plasmids to show transfection efficiency on day one and integration efficiency after culture reached 0.5% parasitemia (day 12) (n = 3). Error bars denote ±1 SD. (E) Graph shows change in parasitemia (%) over time for parasite lines transfected with the dual plasmid Cas9 targeting vectors (pCas9/sg_p230p and pDonor_p230p), controls without an sgRNA (pCas9/sg), without homology repair template DNA (pCas9/sg_p230p) or with no DNA. A fifth control reaction shows outgrowth of an episomal control plasmid (pkconGFPep) (n = 3). Parasites were placed under drug selection on day 1. Error bars denote ±1 SD (F) Parasites transfected with pCas9/sg_p230p and pDonor_p230p plasmids were cloned by limiting dilution and four clones analysed by diagnostic PCR.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) P. knowlesi parasites were co-transfected with 20 μg of plasmid containing an eGFP expression cassette (pkconGFP) and 20 μg of plasmid containing an mCherry expression cassette (pkconmCherry) and the proportion of parasites expressing each fluorescent protein monitored on consecutive days after transfection. Graph shows mean proportion of parasites expressing eGFP, mCherry or both across three biological independent experiments. Error bars denote ±1 SD. (B) P. knowlesi parasites modified using CRISPR Cas9 were cloned by limiting dilution in 96 well plates. Infected wells were identified by scanning for parasite ‘plaques’ 10 days after initiating cloning plates. Images show three representative images of parasite plaques visualised using 4X objective of an inverted microscope. Scale bars indicate 200 μm. (C) Plasmid map of pCas9/sg indicates location and size of the expression cassettes of Cas9, sgRNA and hdhfr-yfcu.
+
+### A three-step PCR method enables rapid, cloning-free generation of donor constructs
 
 P. knowlesi readily accepts linearised plasmids for homologous recombination (Moon et al., 2013; Kocken et al., 2002; Moon et al., 2016), so we next tested whether we could use a PCR-based approach for scalable generation of repair templates. As no selectable marker is used within the repair template, this could be easily produced by using PCR to fuse 5’ and 3’ HRs with the region containing the desired insertion, dispensing with the need for a plasmid back-bone. Modifying a method used for homologous recombination in P. berghei (Ecker et al., 2006), we developed a three-step PCR scheme which first amplified the eGFP cassette and 400 bp HRs with eGFP cassette adaptors separately, with the second and third reactions fusing each HR to the eGFP cassette in turn (Figure 2A). The addition of nested primers for the second and third PCR step removed background bands and improved robustness. The final PCR construct (HR1-eGFPcassette-HR2) was transfected along with the pCas9/sg_p230p plasmid (Figure 2—figure supplement 1A), and resultant parasite lines demonstrated integration by PCR (Figure 2B), and an eGFP positivity rate of 74% (±8 SD), similar to that seen for the pDonor_p230p plasmid (Figure 2C); Figure 2—source data 1. The use of a high-fidelity, high-processivity polymerase for the construct production allowed each reaction to be completed in 40–90 min, thus providing a rapid method for generating repair templates.
 
-## Longer HRs increase the integration efficiency and offsets DSB distance efficiency loss
+![Figure 2.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the nested PCR method to generate linear donor constructs for transfection. First, homology regions (HRs), with eGFP adaptors in primers ol36 and ol37 and eGFP cassette were amplified by PCR with small overhangs (OH) and gel extracted. In a second nested step 5’HR and eGFP cassette were fused and again in the third step the 5’HR-eGFP product was fused with 3’HR. (B) Parasites transfected with pCas9/sg_p230p and PCR repair template (PCR donor), comprised of an eGFP cassette and 400 bp HRs, were analysed with diagnostic PCRs amplifying the wild type p230p locus (ol49 +ol50), integration locus (ol01 +ol50) and a control targeting an unrelated locus (ol75 +ol76). (C) After selection for integration, the proportion of eGFP positive parasites (%) was determined by fluorescent microscopy and compared between Cas9 transfections made with 400 bp HR plasmid (pDonor_p230p) or 400 bp HR PCR donor DNA. Data points represent the mean and error bars indicate ±1 SD of two biological independent experiments (n = 2). (D) The p230p locus was targeted using PCR donor DNA constructs using HRs with 50–1600 bp length. The bar chart shows, for each of the constructs with HRs of 50 to 1600 bp length, (E) the number of days for transfections to reach 1% parasitemia and (F) proportion of eGFP positive parasites (%) after selection. All transfections were carried out in two biological independent experiments (n = 2). (G) The p230p locus was targeted using PCR donor DNA constructs with HRs placed at varying distance from the Cas9 induced double strand break (DSB). For each construct based on distance to the DSB, the bar chart shows, (H) the number of days for transfections to reach 1% parasitemia and (I) proportion of eGFP positive parasites (%) after selection. Data points represent the mean and error bars denote ±1 SD of two biological independent experiments (n = 2). Results were all compared to the 400 bp HR construct at 0 kb from DSB as the control using a one-way ANOVA with Dunnett’s multiple comparison of means. ns p>0.05, *<0.05, **<0.01, ***<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of CRISPR-Cas9 strategy. Integration of the eGFP expression cassette into the target p230p locus via homologous recombination using PCR repair template. Arrows indicating oligo positions for diagnostic PCRs. (B–C) Three-step nested PCR products to generate CRISPR-Cas9 repair templates of varying sizes (B) and of distance from the double strand break (DSB) (C). In the first step homology region 1 (HR1) and HR2 are generated individually with eGFP cassette adaptors. Varying band sizes (e.g. for 50 to 400 bp HRs the same 800 bp product was generated) reflect different length of overhangs to allow a subsequent nested PCR step. In the second step HR1 and eGFP cassette are fused followed by the third and final step of fusing HR2 to the previous generated HR1-eGFP product. (D) Parasites transfected with pCas9/sg_p230p and PCR repair templates with HRs ranging from 50 to 1600 bp were analysed with diagnostic PCRs. PCRs of two transfections are shown. PCR reactions detecting the wild type locus, integration locus and a control PCR targeting an unrelated locus (ol75 +ol76) using approximately 3 ng/µl genomic DNA for each reaction. Forward primers for WT and integration PCRs are positioned approximately 100 bp before the start of the 5’HR. Reverse primers for WT are positioned approximately 100 bp after the end of the 3’HR. Reverse primer for eGFP integration is the same for all integration PCRs (ol809). (E) Parasites transfected with pCas9/sg_p230p and PCR repair templates with HRs of 400 bp or 800 bp of varying distances to the DSB were analysed with diagnostic PCRs. PCRs of two transfections are shown. PCR reactions detecting the wild type locus, integration locus and a control PCR targeting an unrelated locus (ol75 +ol76) using approximately 3 ng/µl genomic DNA. Forward primers for WT and integration PCRs are positioned approximately 100 bp before the start of the 5’HR. Reverse primers for WT are positioned approximately 100 bp after the end of the 3’HR. Reverse primer for eGFP integration is the same for all integration PCRs (ol809). All primer sequences are listed in Figure 5—source data 2.
+
+### Longer HRs increase the integration efficiency and offsets DSB distance efficiency loss
 
 We next used this PCR approach to investigate the optimal parameters and limits of the Cas9 system in P. knowlesi. Varying the length of HRs targeting the same p230p locus (Figure 2D), allowed us to determine the effect on integration efficiency as well as the size limits of the PCR approach. The largest construct generated in this way was 6.1 kb in length (2 × 1.6 kb HRs flanking the 2.9 kb eGFP expression cassette). Attempts to generate a larger 9.3 kb construct (2 × 3.2 kb HRs) failed during the final PCR step. PCR yields were lower for larger constructs, with the 6.1 kb construct yielding half that of the 3.7 kb construct. PCR repair templates with HRs ranging from 50 to 1600 bp generated single specific bands with exception of the 400 bp HRs which contained an additional lower band, due to a primer additionally annealing to a repeat region in HR1 (Figure 2—figure supplement 1B). The PCR constructs were transfected together with the pCas9/sg_p230p plasmid and integration efficiency monitored. All 6 HR lengths produced evidence of integration by PCR, but the efficiency rapidly declined with HRs shorter than 400 bp (Figure 2—figure supplement 1D).
 
@@ -62,15 +78,43 @@ To undertake large gene deletion or replacement experiments, HRs may need to be 
 
 Whilst all transfections were PCR positive for integration and reached 1% parasitemia at similar times (14–20 days) (Figure 2—figure supplement 1E, Figure 2H and Figure 2—source data 1), the integration efficiency declined with distance from DSB. This decline was surprisingly small, with HRs placed even 5 kb away from either side of the DSB yielding a 14% (±18 SD) integration efficiency (Figure 2I). Interestingly, we found that extending HR length to 800 bp restored integration efficiencies to 54.8% (±8.7 SD) at a 5 kb distance from DSB (Figure 2I; Figure 2—source data 1). Thus, HR length can directly offset efficiency losses due to distance from DSB and this system can readily remove genes at least as large as 10 kb in size from a single PAM site, accounting for ~98% of genes in the P. knowlesi genome (Pain et al., 2008). All primer pairs for template generation and diagnostic PCRs are shown in Figure 2—source data 2 and primer sequences are listed in Figure 5—source data 2.
 
-## Cas9-based PCR constructs enable rapid and flexible gene tagging in P. knowlesi
+### Cas9-based PCR constructs enable rapid and flexible gene tagging in P. knowlesi
 
 Having demonstrated consistent performance of an sgRNA sequence in the sgRNA/Cas9 suicide vector and PCR constructs for targeting a single control locus, we next sought to determine how robust the system is for targeting a range of loci. We therefore used the PCR-based approach for fusion of fluorescent or epitope tags to proteins of interest (Figure 3A). For C-terminal tags, the PCR repair templates were generated by creating fusions of the tag with HRs targeting the 3’end of the gene and the 3’UTR. Similarly, N-terminal tag repair templates were created by flanking the tag with HRs targeting the 5’UTR and 5’end of the coding region. In each case a PAM site was selected so that the 20 bp guide sequence crossed the stop codon (for C-terminal) or start codon (for N-terminal) such that integration of the tag alone, with no other exogenous sequence, was sufficient to disrupt the guide sequence. For genes, such as the Chloroquine Resistance Transporter (CRT), where the PAM site preceded the stop codon, intervening sequences were recodonised when generating the 5’HR to disrupt the PAM site using silent mutations. We selected five genes with disparate subcellular locations and functions to test this approach: the micronemal protein apical membrane antigen 1 (AMA1) (Bannister et al., 2003), rhoptry neck protein 2 (RON2) (Cao et al., 2009), inner membrane complex protein myosin A (MyoA) (Baum et al., 2006), digestive vacuole membrane protein involved in drug resistance CRT (Ehlgen et al., 2012), and a protein involved in artemisinin resistance in cytoplasmic foci Kelch13 (K13) (Birnbaum et al., 2017). A single sgRNA was selected for each, and repair templates were generated by fusion PCR to incorporate an eGFP, mCherry (both with 24 bp glycine linker) or a hemagglutinin (HA) tag (Figure 3—figure supplement 1A–E). An N-terminal tag was used for K13, as previous work in P. falciparum suggested that C-terminal tagging affected parasite growth (Birnbaum et al., 2017), and C-terminal tags used for all the other targets. All lines grew up quickly after transfection, reaching 1% after between 8 and 15 days, and PCR analysis indicated that correct integration had occurred (Figure 3B). All primers used for generating repair templates and for diagnostic PCRs are shown in Figure 3—source data 1 and Figure 5—source data 2.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of CRISPR-Cas9 system for C-terminal tagging. pCas9/sg plasmid with gene of interest (GOI) specific sgRNA, is combined with repair template generated by fusion PCR. Lightning bolt indicates Cas9 induced double strand break, which is repaired by insertion of the desired tag. (B) Diagnostic PCRs specific to each GOI locus were carried out to amplify the wild type locus (schematic positions olFwd1 +olRev2), integration locus (schematic positions olFwd1 +olRev3) and a control targeting an unrelated locus (ol75 +ol76). Specific primers used for each GOI is shown in Figure 3—figure supplements 1A–E, 2. As no DNA is removed in this process, the wild type specific locus primers also generate slightly larger amplicons in tagged lines, which can be seen as double bands for both the Myosin A and K13 PCRs. (C) Representative immunofluorescence images of HA-tagged Apical membrane antigen-1 (AMA1-HA) and Rhoptry neck protein 2 (RON2-HA) parasite lines, and live cell imaging of Chloroquine Resistance Transporter-eGFP (CRT-eGFP), Myosin A-eGFP (MyoA-eGFP) and mCherry-Kelch13 (K13). Panel shows brightfield (BF), DNA stain (blue) and anti-tag antibodies/live fluorescence (green or red) of schizont stage parasites from each line. Scale bars represent 2 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of CRISPR-Cas9 strategy. C-terminal integration of the hemagglutinin (HA) tag into the target Apical membrane antigen (AMA1) locus via homologous recombination. Arrows indicating oligo positions for diagnostic PCRs. (B) C-terminal integration of HA tag into the target Rhoptry neck protein 2 (RON2 locus). (C) C-terminal integration of eGFP into the target Chloroquine Resistance Transporter (CRT) locus. (D) C-terminal integration of eGFP into the target Myosin A locus. (E) N-terminal integration of mCherry into the target Kelch13 (K13) locus. (F) Western blot showing expression of tagged proteins in P. knowlesi saponin-lysed schizonts separated by SDS-PAGE and immunoblotting with anti-HA, anti-GFP or anti-mCherry primary antibodies. Control samples are saponin-lysed red blood cells (RBC) and wild type parasite line. Expected sizes of bands are indicated. CRT runs faster than its expected band size as shown in P. falciparum previously. All primer pairs to generate PCR repair templates are shown inFigure 3—source data 1 and primer sequences are listed in Figure 5—source data 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Table showing comparison of P. knowlesi and P. falciparum guanine-cytosine content and Protospacer adjacent Motif (PAM) sites for five selected genes that were successfully targeted and tagged in P. knowlesi.
+
 Whilst it is, to our knowledge, the first time each of these proteins have been tagged in P. knowlesi, all demonstrated localisation patterns were consistent with previous reports for P. falciparum (Figure 3C). AMA1, MyoA and K13 showed clear bands at the expected size on western blots. The CRT-eGFP fusion protein showed a band at ~50 kDa, in line with work in P. falciparum which showed CRT-eGFP migrates faster than its predicted size of 76 kDa (Figure 3—figure supplement 1F) (Ehlgen et al., 2012). We were unable to visualise a band for RON2-HA most likely due to poor blotting transfer of this 240 kDa protein. Together, these results demonstrate that the fusion PCR approach can be used to tag P. knowlesi genes rapidly and robustly at a variety of loci. Analysis of equivalent P. falciparum loci revealed only 2/5 had suitably positioned PAM sites, and equivalent UTR regions had an average GC-content of only 11.8% (36% for P. knowlesi), suggesting a similar approach would have been more challenging in P. falciparum (Figure 3—figure supplement 2). All sgRNA sequences with predicted on- and off-target scores that successfully targeted a gene of interest in this study are shown in Figure 3—source data 1.
 
-## Transgenic P. knowlesi orthologue replacement lines provide surrogates for P. vivax vaccine development and DBP tropism studies
+### Transgenic P. knowlesi orthologue replacement lines provide surrogates for P. vivax vaccine development and DBP tropism studies
 
 Having demonstrated the utility of this technique for rapidly manipulating genes of interest, we next sought to use this system to study P. vivax biology. The orthologous RBC ligands PkDBPα and PvDBP, mediate host cell invasion by binding to the DARC receptor on human RBCs in P. knowlesi and P. vivax, respectively (Adams et al., 1990; Horuk et al., 1993; Singh et al., 2005; Miller et al., 1975). PvDBP is currently the lead candidate for a P. vivax blood stage vaccine (Ntumngia et al., 2012; Payne et al., 2017a; Singh et al., 2018), thus P. knowlesi could provide an ideal surrogate for vaccine testing in the absence of a robust in vitro culture system for P. vivax. Whilst likely functionally equivalent, the DBP orthologues are antigenically distinct (~70% amino acid identity in binding region II) so we used genome-editing to generate transgenic P. knowlesi parasites in which DARC binding is provided solely by PvDBP. The donor DNA constructs required to fully reconstitute the DBP coding regions were large and UTR and coding sequences for each of the three PkDBP paralogues highly similar at the nucleotide level. Therefore, HRs were amplified from genomic DNA and cloned into a plasmid vector containing the recodonized PkDBPα or PvDBP genes rather than using the 3-step PCR to generate repair templates (Figure 4—source data 2). This allowed us to verify amplification of the correct DBP locus and avoid any chance of mutations within the 4.3 kb sized template DNA. We first carried out an orthologue replacement (OR) of the full-length PkDBPα with PvDBP in the P. knowlesi A1-H.1 line (PvDBPOR) – using a recodonised synthetic PvDBP gene flanked by HRs targeting the 5’ and 3’UTRs of the PkDBPα gene (Figure 4—figure supplement 1A). Once integrated, this deletes the PkDBPα gene and places the PvDBP gene under control of the PkDBPα regulatory sequences, enabling a precisely matched expression profile. As a control we also exchanged PkDBPα with a recodonised PkDBPα gene (PkDBPαOR) using the same sgRNA. Successful integration was readily achieved and limiting dilution cloning resulted in 100% integrated clones for PkDBPαOR and 40% for PvDBPOR (Figure 4A). The PkA1-H.1 line relies on the DARC receptor for invasion of human RBCs (Moon et al., 2013) and PkDBPα is required to mediate this interaction (Singh et al., 2005), thus the successful replacement indicates that the Pv orthologue can complement its role in DARC binding sufficiently well to maintain growth.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig4-v2.jpg)
+
+**Figure 4.:** (A) The P. knowlesi Duffy binding protein α (DBPα) gene was targeted for replacement with either a recodonised PkDBPα or P. vivax DBP repair template. Sequencing revealed a loss of ~44 kb in chromosome 14, including loss of PkDBPβ (PkDBPαOR/Δ14 and PvDBPOR/Δ14). These lines were then subsequently modified to knockout PkDBPγ (PkDBPαOR/Δ14Δγ and PvDBPOR/Δ14Δγ). Parasite lines were analysed using PCR reactions detecting the wild type (WT) locus PkDBPα (ol186 +ol188), orthologue replacement (OR) locus of PkDBPαOR (ol186 +ol189) or PvDBPOR (ol186 +ol187), WT PkDBPβ locus (ol480 +481), WT locus of PkDBPγ (ol483 +ol484), KO locus of PkDBPγ (ol483 +ol258) and a control PCR targeting an unrelated locus (ol75 +ol76). (B) The PkDBPαOR line was modified to knockout PkDBPβ (PkDBPαOR/Δβ). Parasite lines including the transfection line (TF) and three clones were analysed using PCR reactions detecting WT locus of PkDBPβ (ol480 +ol481), KO locus of PkDBPβ (ol284 +ol481) and a control PCR targeting an unrelated locus (ol75 +ol76). (C) Bar chart showing mean fold replication of parasites lines in FACS-based multiplication assays over one growth cycle (24 hr). Assays were carried out in eight biological independent experiments for human blood (hRBC) and three biological independent experiments for Macaca fascicularis blood (mRBC). Data points represent mean growth rates and error bars denote ±1 SD. Replication rates of the parasite lines were compared by using one-way ANOVA with Tukey’s multiple comparisons test of means. There are significant differences in fold multiplication rates of WT against PkDBPαOR/Δ14Δγ in hRBCs (p<0.05) and significant differences in fold multiplication rates of PkDBPαOR/Δ14Δγ against PvDBP OR/Δ14Δγ in mRBCs (p<0.01). (D) Graph showing fold multiplication of WT, PkDBPαOR/Δ14Δγ and PvDBP OR/Δ14Δγ P. knowlesi parasites in RBC over one intraerythrocytic growth cycle (24 hr). Assays were carried out in technical duplicates in Duffy positive RBC from 21 volunteers with three independent schizont purifications. Data points represent the mean multiplication rate and error bars denote ±1 SD, and were compared by using one-way ANOVA with Tukey’s multiple comparisons test of means. There are significant differences in fold multiplication rates of WT against PkDBPαOR/Δ14Δγ (p<0.001) and PkDBPαOR/Δ14Δγ against PvDBPOR/Δ14Δγ (p<0.001). (E) Graph showing fold multiplication of WT (F) PkDBPαOR/Δ14Δγ and (G) PvDBP OR/Δ14Δγ P. knowlesi parasites in RBC from 21 volunteer blood donors over one intraerythrocytic growth cycle (24 hr). Mean average of fold multiplication rates are plotted against Duffy phenotype [Fya, Fyb, and Fy(a+b+)]. Black bars indicate mean multiplication rate in each blood type. Data points represent the mean and error bars denote ±1 SD of three biological independent experiments (n = 3); Figure 4—source data 1. .ns p>0.05, *<0.05, **<0.01, ***<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of CRISPR-Cas9 strategy. Integration of the PvDBP into the target PkDBPα locus via homologous recombination. Arrows indicating oligo positions for diagnostic PCRs. (B) Schematic showing deletion of the target PkDBPγ locus and replacement with a spacer sequence. (C) Schematic showing deletion of the target PkDBPβ locus and replacement with a spacer sequence. All primer sequences are shown in Figure 5—source data 2. (D) Nucleotide sequence alignment of PkDBPα, PkDBPαOR, PkDBPβ and PkDBPγ guide sequences. The chosen guide sequences for transfections are highlighted in blue. PAM sites are highlighted in a red square. (E) Flow chart indicating generated transgenic DBP parasite lines. Wild type parasites that naturally lost 44 kb at one end of chromosome 14 (WTΔ14) were first edited by orthologous replacement of PkDBPα with the recodonised gene (PkDBPαOR) or P. vivax DBP (PvDBPOR) and clonal lines established by limiting dilution cloning. Both clonal parasite lines were edited by knockout of PkDBPγ (PkDBPαOR/Δ14Δγ and PvDBPOR/Δ14Δγ), which were cloned before use in invasion assays and assays of GIA. WT parasites without loss of 44 kb at the end of chromosome 14 were edited by knockout of PkDBPβ (PkDBPαOR/Δβ) (F) Bar chart showing mean fold replication of parasites lines in a FACS-based invasion assays over one growth cycle (24 hr). Assays were carried out in three biological independent experiments in human blood. Error bars denote ±1 SD. Data points represent the mean single cycle growth rate. Replication rates of the parasites lines were compared by using unpaired one-way ANOVA with Tukey’s multiple comparisons test of means. There are no significant differences in fold multiplication rates ns: p>0.05 (Figure 4—figure supplement 1—source data 1).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Table showing the five genes with highest off-target scores for the guide sequence targeting PkDBPα sgRNA. All five genes were PCR amplified and sequenced.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Mapping of Illumina reads of PvDBPOR/Δ14Δγ (orange) against P. knowlesi strain A1-H.1 wild type chromosomes of the reference genome (magenta) (Benavente et al., 2018). (A) PkDBPα locus on end of chromosome 6 of the A1-H.1 reference genome with flanking genes PKA1H_060029100 and PKA1H_060029300. (B) PvDBPOR/Δ14Δγ sequence mapped to A1-H.1 shows deletion of PkDBPα. (C) PvDBPOR/Δ14Δγ sequence mapped to a chimaeric A1-H.1 reference genome, generated in silico by replacing PkDBPα with PvDBP (blue), confirms successful orthologue replacement (D) PkDBPβ locus of the A1-H.1 reference genome with flanking genes on start of chromosome 14 with flanking genes from PKA1H_140005000 to PKA1H_140005900, (E) PvDBPOR/Δ14Δγ sequence mapped to A1-H.1 reveals a chromosome truncation of 44,921 bp, including loss of PkDBPβ and seven other genes. (F) PkDBPγ locus on end of chromosome 13 of the A1-H.1 reference genome with flanking genes PKA1H_130061300 and PKA1H_130061500. (G) PvDBPOR/Δ14Δγ sequence mapped to A1-H.1 shows deletion of DBPγ. Gene locations are indicated by arrows and last four digits of accession numbers are shown in the top panel above the arrows.
 
 P. knowlesi contains two DBPα paralogues, DBPβ and DBPγ, which are highly homologous at the nucleotide (91–93% identity) and amino acid (68–88% identity) levels, but are thought to bind to distinct sialic acid-modified receptors unique to macaque RBCs (Dankwa et al., 2016). The PkDBPα sgRNA was carefully designed to be distinct to equivalent DBPβ and DBPγ target sequences (85% identical to DBPγ and 47.8% to DBPβ), because, as in other systems, off-target Cas9-induced DSBs are a major issue (Figure 4—figure supplement 1D) (Zischewski et al., 2017; Wagner et al., 2014). We therefore sequenced the four most similar target sequences, including one in DBPγ, in the PvDBPOR lines (Figure 4—figure supplement 2) and did not detect any off-target mutations, suggesting that as for other malaria parasites (Ghorbal et al., 2014) the absence of non-homologous end joining ameliorates the potential for off-target mutations. However, diagnostic PCRs for DBPβ failed, as well as PCRs in genes flanking the DBPβ locus. Whole genome sequencing and mapping against the A1-H.1 reference genome revealed that the PkDBPαOR and PvDBPOR line have a ~ 44 kb truncation at one end of chromosome 14 (Figure 4—figure supplement 3), which also harbours DBPβ, therefore we renamed the lines PkDBPαOR/Δ14 and PvDBPOR/Δ14. The loss of the ~44 kb of chromosome 14 is also present in parasites that have been transfected simultaneously with pCas/sg_p230p, suggesting that the 44 kb deletion occurred in the A1-H.1 parental parasite line (wt/Δ14) prior to transfection and was not an artefact caused by targeting DBPα. Similar spontaneous deletions have been reported previously, including ~66 kb loss at the other end of chromosome 14 in the P. knowlesi A1-C line maintained in cynomolgus macaque blood that included the invasion ligand NBPXa (Moon et al., 2016), and a deletion of DBPγ in the PkYH1 line at the end of chromosome 13 (Dankwa et al., 2016). Furthermore, the PAM site of the DBPα targeting guide sequence is absent in DBPβ (Figure 4—figure supplement 1D) which makes it unlikely that the disruption of DBPβ was induced by Cas9 during DBPα targeting. To confirm this, another PkDBPαOR clonal line was generated in an independent transfection using the A1-H.1 parental parasite line with intact DBPβ locus.
 
@@ -88,7 +132,7 @@ Growth inhibition activity (GIA) assays revealed that all lines remained equally
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/45829/elife-45829-fig5-v2.jpg)
 
-**Figure 5.:** P. knowlesi orthologue replacement lines provide surrogates for P. vivax vaccine development.(A) Graph showing growth inhibition activity (GIA, %) of anti-DARC nanobody at 1.5 and 3 μg/ml and anti-MSP119 purified total rabbit IgG at 2.5 and 5 mg/ml on the parasite lines. Data points represent the mean and error bars denote ±1 SD of triplicate test wells (n = 3). GIAs of each antibody were compared across the parasite lines by using unpaired one-way ANOVA with Tukey’s multiple comparisons test of means. No significant changes were observed. (B) Graph shows the % GIA of a dilution series of IgG purified from sera of PvDBP_RII (SalI)-immunized rabbits as well as control IgG from the pre-immunisation sera of the same rabbits against wild type (WT) and PvDBPOR/Δ14 transgenic P. knowlesi lines and (C) against PkDBPαOR/Δ14Δγ and PvDBPOR/Δ14Δγ lines. Data points represent the mean and error bars denote ±1 SD of five or six replicates. (D) Bar chart showing % GIA of 2.5 mg/ml IgG purified from sera of PvDBPRII (SalI)-immunized rabbits as well as control IgG from the pre-immunisation sera of the same rabbits against wild type (WT) and PvDBPOR/Δ14 transgenic P. knowlesi lines and (E) against PkDBPαOR/Δ14Δγ and PvDBPOR/Δ14Δγ lines. Bars represent the mean and error bars denote ±1 SD of five or six replicates and were compared by using one-way ANOVA with Tukey’s multiple comparisons test of means. ns p>0.05, *<0.05, **<0.01, ***<0.001.10.7554/eLife.45829.021Figure 5—source data 1.10.7554/eLife.45829.022Figure 5—source data 2.
+**Figure 5.:** (A) Graph showing growth inhibition activity (GIA, %) of anti-DARC nanobody at 1.5 and 3 μg/ml and anti-MSP119 purified total rabbit IgG at 2.5 and 5 mg/ml on the parasite lines. Data points represent the mean and error bars denote ±1 SD of triplicate test wells (n = 3). GIAs of each antibody were compared across the parasite lines by using unpaired one-way ANOVA with Tukey’s multiple comparisons test of means. No significant changes were observed. (B) Graph shows the % GIA of a dilution series of IgG purified from sera of PvDBP_RII (SalI)-immunized rabbits as well as control IgG from the pre-immunisation sera of the same rabbits against wild type (WT) and PvDBPOR/Δ14 transgenic P. knowlesi lines and (C) against PkDBPαOR/Δ14Δγ and PvDBPOR/Δ14Δγ lines. Data points represent the mean and error bars denote ±1 SD of five or six replicates. (D) Bar chart showing % GIA of 2.5 mg/ml IgG purified from sera of PvDBPRII (SalI)-immunized rabbits as well as control IgG from the pre-immunisation sera of the same rabbits against wild type (WT) and PvDBPOR/Δ14 transgenic P. knowlesi lines and (E) against PkDBPαOR/Δ14Δγ and PvDBPOR/Δ14Δγ lines. Bars represent the mean and error bars denote ±1 SD of five or six replicates and were compared by using one-way ANOVA with Tukey’s multiple comparisons test of means. ns p>0.05, *<0.05, **<0.01, ***<0.001.
 
 We thus have created a transgenic P. knowlesi model, modified at two separate loci which recapitulates the P. vivax DBP invasion pathway. This parasite line is a vital new tool in PvDBP vaccine development.
 
@@ -122,74 +166,462 @@ In conclusion, we demonstrate that adaptation of CRISPR-Cas9 genome editing to P
 
 ## Materials and methods
 
-## Macaque and human RBCs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>A1-H.1 wild type (WT)</td>
+      <td>(Moon et al., 2013), Mike Blackman, Francis Crick Institute London</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>p230p eGFP cassette</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>AMA1-HA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>RON2-HA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>Myosin A-eGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>CRT-eGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>mCherry-K13</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>PkDBPαOR/Δ14</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>PvDBPOR/Δ14</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>PkDBPαOR/Δ14Δγ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>PvDBPOR/Δ14Δγ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>PkDBPαOR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium knowlesi)</td>
+      <td>PkDBPαOR/Δβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_p230p</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_PkDBPα</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_DBPβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_DBPγ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_AMA1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_RON2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_Myosin A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_K13</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pCas9/sg_CRT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pDonor_p230p</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pDonor_PkDBPαOR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pDonor_PvDBPOR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pDonor_PkDBPβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid)</td>
+      <td>pDonor_PkDBPγ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Can be obtained from Rob Moon, LSHTM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αPkMSP119 (rabbit polyclonal)</td>
+      <td>Ellen Knuepfer, Francis Crick Institute London</td>
+      <td></td>
+      <td>2.5 and 5 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DARC nanobody CA111 (camel)</td>
+      <td>Olivier Bertrand, INSERM, France (Smolarek et al., 2010)</td>
+      <td></td>
+      <td>1.5 and 3 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PvDBP_RII (rabbit polyclonal)</td>
+      <td>Simon Draper, Jenner Institute Oxford, (de Cassan et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor(TM) 594 Goat Anti-Rabbit IgG (H + L) highly cross-adsorbed (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A-11037</td>
+      <td>dilution 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA high affinity (3F10), 50 UG (rat monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat. #: 11867423001</td>
+      <td>dilution 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mCherry (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab183628</td>
+      <td>dilution 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat. #: 11814460001</td>
+      <td>dilution 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse HRP-conjugated secondary antibody (goat)</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: 1706516</td>
+      <td>dilution 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Duoclone Monoclonal</td>
+      <td>Lorne</td>
+      <td>Cat. #: 740010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG (clear)</td>
+      <td>Lorne</td>
+      <td>Cat. #: 401010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FyB Monoclonal</td>
+      <td>Lorne</td>
+      <td>Cat. #: 317002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FyA Monoclonal</td>
+      <td>Lorne</td>
+      <td>Cat. #: 774002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B Monoclonal</td>
+      <td>Lorne</td>
+      <td>Cat. #: 610010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-A Monoclonal</td>
+      <td>Lorne</td>
+      <td>Cat. #: 600010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-[7-[(dimethylamino) methyl]−2-(4-fluorphenyl) imidazo[1,2-a]pyridin-3 -yl]pyrimidin-2-amine (compound 2)</td>
+      <td>Michael Blackman, Francis Crick Institute London</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protospacer software</td>
+      <td>http://www.protospacer.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (http://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon Elements Advanced Research software package</td>
+      <td>https://www.microscope.healthcare.nikon.com/products/software/nis-elements</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Benchling Software</td>
+      <td>https://www.benchling.com/</td>
+      <td>RRID:SCR_013955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva 6.1.3 software</td>
+      <td>http://www.bdbiosciences.com/ca/instruments/clinical/software/flow-cytometry-acquisition/bd-facsdiva-software/bd-facsdiva-software-v-613/p/643629</td>
+      <td>RRID:SCR_001456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo_V10</td>
+      <td>https://www.flowjo.com/</td>
+      <td>RRID:SCR_008520</td>
+      <td>version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sambamba software</td>
+      <td>https://github.com/biod/sambamba</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID: SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAseq FX DNA Library Kit</td>
+      <td>Quiagen</td>
+      <td>Cat. #: 180473</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Protein A IgG Purification Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: 44667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Recombinant Protein G Agarose</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: 15920010</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Macaque and human RBCs
 
 Macaca fascicularis blood was collected by venous puncture. Animal work was reviewed and approved by the local National Institute for Biological Standards and Control Animal Welfare and Ethical Review Body (the Institutional Review Board) and by the United Kingdom Home Office as governed by United Kingdom law under the Animals (Scientific Procedures) Act 1986. Animals were handled in strict accordance with the ‘Code of Practice Part one for the housing and care of animals (21/03/05)’ available at https://www.gov.uk/research-and-testing-using-animals. The work also met the National Centre for the Replacement Refinement and Reduction of Animals in Research (NC3Rs) guidelines on primate accommodation, care, and use (https://www.nc3rs.org.uk/non-human-primate-accommodation-care-and-use), which exceed the legal minimum standards required by the United Kingdom Animals (Scientific Procedures) Act 1986, associated Codes of Practice, and the US Institute for Laboratory Animal Research Guide. For most experiments and routine parasite maintenance, human blood (Duffy (FY) positive) was obtained from the United Kingdom National Blood Transfusion Service under a research agreement. For the Duffy subtype experiment, venous blood (∼10 mL) from 21 healthy volunteers blood donors was collected into EDTA Vacutainer (SLS), after donors had provided informed consent. Blood samples were anonymized, and then RBCs washed with RPMI 1640 and stored at 4°C. All. The project, consent and protocol were approved by the LSHTM Observational Research Ethics Committee under project reference 5520–1.
 
-## Parasite maintenance, transfection and dilution cloning
+### Parasite maintenance, transfection and dilution cloning
 
 Parasites were maintained in complete media, comprising RPMI 1640 (Invitrogen) with the following additions: 2.3 g/L sodium bicarbonate, 4 g/L dextrose, 5.957 g/L HEPES, 0.05 g/L hypoxanthine, 5 g /L Albumax II, 0.025 g/L gentamycin sulfate, 0.292 g/L L-glutamine, and 10% (vol/vol) horse serum as described previously (Moon et al., 2016). Parasites were synchronized by using gradient centrifugation with 55% nycodenz (Progen) in RPMI to enrich schizonts, followed by a two-hour incubation with 4-[7-[(dimethylamino)methyl]−2-(4-fluorphenyl)imidazo[1,2-a]pyridin-3-yl]pyrimidin-2-amine (compound 2) which inhibits parasite egress (Collins et al., 2013). Incubations in compound 2 longer than 2 hr led to degeneration of schizonts and reduction in invasive capacity.
 
 Tightly synchronized mature schizonts were transfected as described previously using the Amaxa 4D electroporator (Lonza) and the P3 Primary cell 4D Nucleofector X Kit L (Lonza)(Moon et al., 2013). 10 μl DNA including at 20 µg repair template pDonor_p230p and 20 μg pCas9/sg_p230p plasmid was used for transfections to generate eGFP expressing lines. 10 μl DNA including 15 μg repair template and 7 μg pCas9/sg_p230p plasmid was used for transfections to integrate the eGFP expression cassette into the p230p locus with PCR repair templates. For generating tagged lines 10 μg pCas/sg_GOI plasmid and 20 μg PCR repair templates were used. After 24 hr, and at daily intervals for 5 days, the medium was replaced with fresh medium containing 100 nM pyrimethamine (Sigma). Parasites were cloned out by limiting dilution. Parasites were diluted to 0.3 parasites/100 μl and 100 μl of 2% haematocrit culture was transferred to 96 flat-bottom plates in culture medium containing 200 mM L-glutamax (Sigma). After 7 days the media was changed and 0.2% fresh blood added. On day 11 the plate was screened for plaques, in an assay modified from P. falciparum (Thomas et al., 2016). Plaque positive cultures were transferred to 24 well plates containing 1 ml media with 2% haematocrit and used for genotyping.
 
-## DNA constructs and PCRs
+### DNA constructs and PCRs
 
 Preparative DNA for plasmid cloning and PCR fusion constructs was amplified with CloneAmp (Takara) using the following cycle conditions: 32 cycles of 5 s at 98°C, 20 s at 55°C, and 5 s/kb at 72°C. Genomic DNA was prepared using DNeasy blood and tissue kit (Qiagen).
 
-## Cloning of pkcon_mCherry plasmid
+#### Cloning of pkcon_mCherry plasmid
 
 The plasmid pkconGFP (Moon et al., 2013) was modified to replace the GFP coding sequence with mCherry using XmaI and SacII restriction sites. The mCherry sequence was amplified with primers fwd-ATATCCCGGGATGGTGAGCAAGGGCGAGGAG and rev-ATATCCGCGGTTACTTGTACAGCTCGTCCATGCC.
 
-## Cloning of pCas9/sg
+#### Cloning of pCas9/sg
 
 The pUF1 plasmid (Ghorbal et al., 2014) was modified by replacing the yDHODH expression cassette with hDHFR-yFCU fusion with PkEF1a 5’UTR and Pbdhfr 3’UTR using EcoRI and SacII. The PfU6 promoter for gRNA expression of the pL6 plasmid (Ghorbal et al., 2014) was replaced with the PkU6 5’ regulatable region of 1244 bp (amplified with primers fwd-ATATCCATGGGGCCAGGGAAGAACGGTTAGAG and rev-atattcgcgagcgatgagttcctaggAATAATATACTGTAAC) using NruI and NcoI and the entire cassette inserted into the pCas9 plasmid with PvuI and ApaI restriction sites. Each target specific 20 bp guide sequence was chosen with the Protospacer software (http://www.protospacer.com/), with off-target score <0.03. On-target scores were retrieved from Benchling Software (Benchling, 2018). All guide sequences are listed in Figure 4—source data 2. Subsequently each guide was inserted into the BtgZI linearized pCas9/sg plasmid by In-Fusion cloning (Takara) using primers fwd-TTACAGTATATTATT(N20)GTTTTAGAGCTAGAA and rev-TTCTAGCTCTAAAAC(N20)AATAATATACTGTAA. Briefly, 50 bp primer pairs containing the 20 bp guide sequence flanked by 15 bp overhangs homologous to the 5’ and 3’ ends of pCas9/sg were denatured by incubation at 95°C for 10 min and annealed by slow cooling. 0.5 μM annealed primers and 50 ng BtgZI linearized pCas/sg vector were incubated with In-fusion Premix (Takarta) at 50°C for 15 min. The resulting plasmid was transformed into XL10 gold competent E. coli cells (Agilent). Plasmids for transfection were prepared by Midi-preps (QIAGEN) and ethanol precipitated. The DNA pellet was washed twice with 70% ethanol and resuspended in sterile TE buffer.
 
-## Cloning of pDonor_p230p
+#### Cloning of pDonor_p230p
 
 A plasmid containing a multiple cloning site with SacII, SpeI, NotI, BlpI and NcoI was designed (subsequently called pDonor) and obtained from Geneart (Thermo Fisher Scientific). Homology region 1 (HR1) was amplified from A1-H.1 wild type genomic DNA with primers olFM007 and olFM008 and added with SacII and SpeI restriction sites. HR2 was amplified with primers olFM005 and olFM006 and was added with BlpI and NcoI sites. The eGFP cassette was amplified from the pkconGFPp230p plasmid with primers olFM151and olFM152 and inserted into the plasmid with SpeI and BlpI sites. The final vector was linearised with PvuI restriction enzyme and ethanol precipitated as described above.
 
-## Cloning of pDonor_pkdbpα
+#### Cloning of pDonor_pkdbpα
 
 Plasmid pDonor was modified by restriction cloning to include two 500 bp HRs from PkDBPa 5’ and 3’UTRs using primers olFM062 and olFM063 (adding SacII/SpeI sites) and primers olFM064 and olFM065 (adding NotI/NcoI sites) respectively. Recodonised sequences of PkDBPα and PvDBP of the P. vivax Salvador I strain flanked with SpeI and NcoI restriction sites were obtained from Geneart (Thermo Fisher Scientific) and subsequently cloned between both HRs of the modified pDonor plasmid using SpeI and NcoI sites. The resulting plasmid was linearised with PvuI restriction enzyme and ethanol precipitated as described above. Primer pairs are shown in Figure 4—source data 2 and primer sequences in Figure 5—source data 2.
 
-## Cloning of pDonor_ pkdbpγ
+#### Cloning of pDonor_ pkdbpγ
 
 Plasmid pDonor was modified by restriction cloning to include two HRs from PkDBPγ 5’ and 3’UTRs using primers olFM245 and olFM0246 (adding SacII/SpeI sites) and primers olFM0247 and olFM248 (adding NotI/NcoI sites) respectively. A spacer sequence, to aid in subsequent diagnostic PCRs was generated by polymerase cycling assembly (PCA). Briefly, the spacer sequence was synthesised by using primers of 60 bp length with 20 bp homologous sequence to the adjacent primers on each side. Final concentrations of 0.6 μM for outer primers (ol488 and ol492) and 0.03 μM of inner primers (ol489, ol490, ol491 and ol503 were used for PCA with the same cycle conditions as described for PCR. The final product was inserted with SpeI and NcoI restriction sites between the HRs as described for pDonor_ pkdbpα cloning, to replace the deleted DBPγ genes. Primer pairs are shown in Figure 4—source data 2 andprimer sequences in Figure 5—source data 2.
 
-## Three-step nested PCR
+### Three-step nested PCR
 
 Generation of each PCR repair template was carried out by a three-step nested PCR method to fuse together HRs with the insert DNA (eGFP expression cassette, eGFP with N-terminal linker or mCherry with C-terminal linker). In a first set of PCRs, the DNA insert (eGFP expression cassette or tag) and the HRs for integration into the region of interest were individually amplified in duplicate. The HRs included at least 50 bp overhangs (OH) so that nested PCRs could be carried out in the next PCR step, without shortening the final size of HRs. Nested PCRs were carried out to increase the yield of PCR product. The HRs contained at least 20 bp and 58°C Tm overhangs with homology to the insert DNA (HR1 with C-term overhang homologous to the N-term of insert DNA and HR2 with N-term overhang homologous to the C-term of the insert DNA). All duplicates were pooled and products were extracted from agarose gel (Qiagen) to remove primers and background amplicons. In a second nested PCR HR1 was fused to the donor amplicon in duplicate with double the amount of time allowed for the elongation step (10 s/kb) and again the product was gel extracted. In the final step the HR1-insert and HR2 were fused together resulting in the final product HR1-insert-HR2 (Figure 2A). PCR repair templates for HA tagging were generated in a two-step PCR method. First the HRs were individually amplified with addition of 27 bp HA sequence overhangs on the 3’end of HR1 and the 5’end of HR2. In the second nested PCR HR1 and HR2 were fused.
 
 All primers are listed in Figure 5—source data 2 and all primer combinations for each contruct are listed in Figure 2—source data 2. Six to eight 50 μl reactions of the final construct PCRs were pooled (300 to 400 μl final volume and 20 μg DNA), ethanol precipitated and resuspended into sterile TE buffer for transfection. DNA concentrations were determined using Nano-Drop and band intensity measurement with BioRad Image lab software.
 
-## DNA analysis
+### DNA analysis
 
 Genomic DNA from transfected parasite lines was extracted (QIAGEN) and analysed by PCR with GoTaq Master Mix (Promega) using the following conditions: 3 min at 96°C, then 30 cycles of 25 s at 96°C, 25 s at 52°C, and 1 min/kb at 64°C.
 
-## Western blotting
+### Western blotting
 
 To detect tagged proteins of interest, soluble cell extracts were prepared by lysing Nycodenz-enriched schizonts in 0.15% saponin. Parasite pellets were washed several times with cold PBS and centrifugation at 13,000 rpm for 3 min at 4°C to remove haemoglobin and red cell debris. Pellets were lysed in five pellet volumes of RIPA buffer (25 mM Tris, 150 mM NaCl, 1% Triton X-100, 0.5% Sodium deoxycholate, 0.1% SDS, pH 7.5, 1x Roche Protease Inhibitors) supplemented with 50 units BaseMuncher (Expedeon) on ice for 20 min. This whole cell lysate was clarified by centrifugation at 13,000 rpm for 30 min at 4°C. Soluble extracts were separated on Mini-Protean 4–20% TGX gels (Bio-Rad) and transferred to nitrocellulose using the Trans-blot Turbo system (Bio-Rad). Equivalent uninfected red cell lysate or wild type P. knowlesi schizont lysates were analysed alongside lysates containing tagged proteins of interest. Membranes were blocked overnight, and tagged proteins were detected with mouse anti-GFP (Sigma, 1:5,000), rat anti-HA (Sigma 3F10 clone, 1:5,000), or rabbit anti-mCherry (Abcam, 1:5,000). Primary antibodies were detected using HRP-conjugated secondary antibodies (Bio-Rad, 1:5,000) and ECL (ThermoFisher Pierce). Chemiluminescence was captured using the Azure c600 system.
 
-## Immunofluorescence assays and live cell imaging
+### Immunofluorescence assays and live cell imaging
 
 Immunofluorescence assays were performed using blood smears fixed with 4% paraformaldehyde for 30 min followed by washing in PBS and permeabilisation in 0.1% Triton-X100 for 10 min. Slides of HA-tagged parasite lines were blocked overnight at 4°C in 3% bovine serum albumin/PBS and then labelled with rabbit anti-HA high affinity (1:250) and Alexa Fluor 488-conjugated α-rabbit IgG (1:5,000) (Thermo Fisher Scientific). The smears were mounted in ProLong Antifade mountant with DAPI (Thermo Fisher Scientific). For live cell imaging parasites were stained with Hoechst 33342 (New England Biolabs), transferred to poly-L-lysine-coated μ-slides VI (Ibidi, Martinsried, Germany). Both live and fixed preparations were viewed with a Nikon Ti E inverted microscope using a 100x oil immersion objective and imaged with an ORCA Flash 4.0 CMOS camera (Hamamatsu). Images were acquired and processed using the Nikon Elements Advanced Research software package.
 
-## Parasite multiplication rate assays
+### Parasite multiplication rate assays
 
 In this flow cytometry-based assay the fold increase in parasitemia following one round of asexual growth is measured. Purified schizonts were set up in technical duplicate cultures with human RBCs, at a 2% hematocrit and ~0.5% parasitemia in 24 well plates. Parasitemia was measured with a flow cytometry (FACS)-based assay before and after incubation at 37°C in a gassed chamber for 24 hr. Samples were fixed with 2% paraformaldehyde (Sigma) and 0.2% glutaraldehyde (Sigma) in PBS for 1 hr at 4°C, washed, permeabilized with 0.3% Triton X-100, and then washed again before 1 hr RNase (MP Biomedicals) treatment, staining with SYBR Green I (Life Technologies), and FACS analysis. The samples were analyzed on a Becton Dickenson LSR-II. Data were acquired using FACSDiva 6.1.3 software and analyzed using FlowJo_V10.
 
 Data was normalised to a 1% starting parasitemia to enable comparison of fold multiplication between lines. For comparison of growth in human and macaque blood, three biological independent experiments were carried out in Macaca fascicularis blood and eight biological independent experiments were carried out in human blood. Biological independent experiments include set up of experiments on different days with different parasite preparations and blood samples. Each biological replicate includes two technical replicates. For statistical analysis one-way ANOVA with Tukey’s with multiple comparisons test of unpaired data was used. For investigation of the association between Duffy phenotype and growth rates, blood samples were collected from 21 volunteers, washed and then set up in technical dublicate cultures at a 2% haematrocrit and with ~0.5% parasitemia in 96 well plates. Parasites were maintained in 96-well microtiter plates for 24 hr and the parasitaemia monitored by FACS. Data of three independent schizont preparations were analysed for each blood sample.
 
-## Blood typing
+### Blood typing
 
 Venous blood (∼10 mL) collected into EDTA Vacutainer (SLS) was anonymized, and then RBCs washed with RPMI 1640 and stored at 4°C. Blood Grouping Reagents for ABO, Rhesus D, and Duffy antigen (FyA, FyB) were used according to the manufacturer’s instructions (Lorne Laboratories).
 
-## Growth inhibition activity assays
+### Growth inhibition activity assays
 
 Assays of growth inhibition activity (GIA), in the presence of anti-PvDBP_RII antibodies, were carried out using total IgG purified from rabbit sera using protein G columns (Pierce). Immunisation of rabbits against PvDBP_RII (SalI) has been described previously (de Cassan et al., 2015). Purified IgG was buffer-exchanged into RPMI 1640 medium, concentrated using ultra centrifugal devices (Millipore) and filter sterilized through a 0.22 μm filter (Millipore) prior to being aliquoted and frozen at −20°C until use.
 
 P. knowlesi parasites were synchronized by magnetic separation (MACS LS columns, Miltenyi Biotech). Synchronized trophozoites were adjusted to 1.5% parasitemia, and 20 μL aliquots were pipetted into 96-well flat/half area tissue culture cluster plates (Appleton Woods). 20 μL purified IgG were added to triplicate test wells at eight final concentrations (10, 5, 2.5, 1.25, 0.625, 0.312, 0.15 and 0.075 mg/mL) and incubated for one cycle (26–30 hr). Parasitemia was measured using the lactate dehydrogenase (pLDH) activity assay following standard protocols (Kennedy et al., 2002). An anti-DARC Fy6 VHH nanobody, a kind gift from Dr Olivier Bertrand (INSERM, France), was included in the test plate as a positive control in every assay (final concentration 1.5 or 3 µg/mL) and purified control IgG from the pre-immunisation sera of matched rabbits were used as the negative control. Anti-PkMSP119 rabbit sera, a kind gift from Ellen Knuepfer (Crick Institute, UK), was also tested in a similar manner. GIA of the purified IgG was expressed as percent inhibition calculated as follows: 100 − [(OD650 of infected erythrocytes with test IgG − OD650 of normal erythrocytes only) / (OD650 of infected erythrocytes without any IgG − OD650 of normal erythrocytes only) x 100%].
 
-## Whole genome sequencing
+### Whole genome sequencing
 
 Genomic DNA was prepared for the PvDBPOR/Δ14Δγ using the DNeasy Blood and Tissue Kit (Qiagen). DNA libraries were prepared using the QIAseq FX DNA Library Kit (Qiagen) as per manufacturer’s instructions. A 20 min fragmentation step was optimized for Plasmodium samples. Whole genome sequencing was performed using Illumina MiSeq technology with 150-base paired end fragment sizes. Raw sequence data for the A1-H.1 parental line was extracted from the European Nucleotide Archive as per (Moon et al., 2016; Benavente et al., 2018). The raw sequence data (accession number ERS3042513) was processed as previously described (Campino et al., 2016). In brief, the raw sequence data was aligned onto the A1-H.1 reference genome using the bwa-mem short read alignment algorithm, and coverage statistics were obtained using the sambamba software to be plotted using R.

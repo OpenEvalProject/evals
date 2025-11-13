@@ -16,18 +16,18 @@
 ### Affiliations
 
 1. Department of Ophthalmology and Visual Sciences Salt Lake City United States
-2. https://ror.org/03r0ha626 Department of Neurobiology, University of Utah Salt Lake City United States
+2. Department of Neurobiology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 3. Department of Ophthalmology and Visual Sciences Syracuse United States
-4. https://ror.org/040kfrw16 Department of Cell and Developmental Biology, SUNY Upstate Medical University Syracuse United States
-5. https://ror.org/00py81415 Department of Ophthalmology, Duke Eye Center, Duke University Durham United States
-6. https://ror.org/040kfrw16 Department of Biochemistry and Molecular Biology, SUNY Upstate Medical University Syracuse United States
-7. https://ror.org/03r0ha626 Department of Bioengineering, University of Utah Salt Lake City United States
+4. Department of Cell and Developmental Biology, SUNY Upstate Medical University Syracuse United States ([ROR:040kfrw16](https://ror.org/040kfrw16))
+5. Department of Ophthalmology, Duke Eye Center, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+6. Department of Biochemistry and Molecular Biology, SUNY Upstate Medical University Syracuse United States ([ROR:040kfrw16](https://ror.org/040kfrw16))
+7. Department of Bioengineering, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
 ## Abstract
 
-The risk for developing primary open-angle glaucoma (POAG) correlates with the magnitude of ocular hypertension (OHT) and the concentration of transforming growth factor-β2 (TGFβ2) in the aqueous humor. Effective treatment of POAG requires a detailed understanding of the interaction between pressure sensing mechanisms in the trabecular meshwork (TM) and biochemical risk factors. Here, we employed molecular, optical, electrophysiological, and tonometric strategies to establish the role of TGFβ2 in transcription and functional expression of mechanosensitive channel isoforms alongside studies of TM contractility in biomimetic hydrogels and intraocular pressure (IOP) regulation in a mouse model of TGFβ2-induced OHT. TGFβ2 upregulated expression of Trpv4 and Piezo1 transcripts and time-dependently augmented functional TRPV4 activation. TRPV4 agonists induced contractility of TM-seeded hydrogels, whereas pharmacological inhibition suppressed TGFβ2-induced hypercontractility and abrogated OHT in eyes overexpressing TGFβ2. Trpv4 -deficient mice resisted TGFβ2-driven increases in IOP, but nocturnal OHT was not additive to TGFβ-evoked OHT. Our study establishes the fundamental role of TGFβ as a modulator of mechanosensing in nonexcitable cells, identifies the TRPV4 channel as the final common mechanism for TM contractility and circadian and pathological OHT, and offers insights for future treatments that can lower IOP in the sizeable cohort of hypertensive glaucoma patients that resist current treatments.
+The risk for developing primary open-angle glaucoma (POAG) correlates with the magnitude of ocular hypertension (OHT) and the concentration of transforming growth factor-β2 (TGFβ2) in the aqueous humor. Effective treatment of POAG requires a detailed understanding of the interaction between pressure sensing mechanisms in the trabecular meshwork (TM) and biochemical risk factors. Here, we employed molecular, optical, electrophysiological, and tonometric strategies to establish the role of TGFβ2 in transcription and functional expression of mechanosensitive channel isoforms alongside studies of TM contractility in biomimetic hydrogels and intraocular pressure (IOP) regulation in a mouse model of TGFβ2-induced OHT. TGFβ2 upregulated expression of Trpv4 and Piezo1 transcripts and time-dependently augmented functional TRPV4 activation. TRPV4 agonists induced contractility of TM-seeded hydrogels, whereas pharmacological inhibition suppressed TGFβ2-induced hypercontractility and abrogated OHT in eyes overexpressing TGFβ2. Trpv4-deficient mice resisted TGFβ2-driven increases in IOP, but nocturnal OHT was not additive to TGFβ-evoked OHT. Our study establishes the fundamental role of TGFβ as a modulator of mechanosensing in nonexcitable cells, identifies the TRPV4 channel as the final common mechanism for TM contractility and circadian and pathological OHT, and offers insights for future treatments that can lower IOP in the sizeable cohort of hypertensive glaucoma patients that resist current treatments.
 
 ## Introduction
 
@@ -41,13 +41,21 @@ In this study, we tested these hypotheses through investigation of reciprocal TR
 
 ## Results
 
-## TGFβ2 drives overexpression of genes that encode fibrotic markers and mechanosensitive ion channels
+### TGFβ2 drives overexpression of genes that encode fibrotic markers and mechanosensitive ion channels
 
 Human TM cells respond to TGFβ2 with increased biosynthesis, deposition and degradation of ECM, altered autophagy, upregulation of F-actin stress fibers, α-smooth muscle actin (Li et al., 2022b; Fleenor et al., 2006; Montecchi-Palmer et al., 2017; Nettesheim et al., 2019; Li et al., 2022a), but it is unclear whether cells undergoing TGFβ2-induced fibrotic remodeling also exhibit altered capacity for sensing and transduction of mechanical stimuli. We thus profiled genes that encode known TM mechanochannels together with a selection of key cytoskeletal, ECM, and fibrotic markers in primary TM cells (pTM) isolated from three to seven donors without history of visual dysfunction (Figure 1A–C). Five-day exposure of pTM cells to a physiological concentration of TGFβ2 (1 ng/ml) increased the expression of EMT-promoting transcription factor SNAI1 (SNAIL1, p = 0.0094) and fibronectin (FN1, p = 0.0263), while expression of connective tissue growth factor 2 (CCN2, alternatively CTGF) was elevated in 5/5 pTM cell strains without reaching significance (p = 0.0909). Expression of fibroblast-specific protein 1 (FSP1, a calcium-binding fibroblast marker), yes-associated protein 1 (YAP1, a stiffness-induced hippo-pathway transcription factor), and ACTA2 (αSMA, associated with cell contractility) was not consistently impacted by TGFβ2, while transcription of myocilin (MYOC) decreased across 4/4 pTM strains (p = 0.0055) (Figure 1B). Indicative of feedback inhibition (Yan et al., 2018), TGFβ2 treatment downregulated transcript levels of transforming growth factor beta receptor 2 (TGFBR2, p = 0.0219) and upregulated the expression of autoinhibitory SMAD family protein 7 (SMAD7, p = 0.0461) without affecting SMAD2 or SMAD3 expression. TGFβ2 thus promotes selective upregulation of ECM and fibrosis-related genes together with cell dedifferentiation and activation of autoregulatory SMAD mechanisms.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Five-day TGFβ2 treatment (1 ng/ml) significantly altered expression of TGFβ pathway effectors, cytoskeletal machinery, and canonical fibrotic markers. (C) TGFβ2 treatment significantly increased TRPV4 and PIEZO1 expression, but not TREK1 and TRPC1 expression. Mean ± SEM shown. N = 4–8 experiments, each gene tested in 3–7 different pTM strains (see Table 1). Two-tailed one-sample t-test of TGFβ2-induced gene expression levels as a percent of control samples. (D) Isolation of membrane proteins from two separate pooled pTM samples suggests TGFβ2 treatment drives increased TRPV4 membrane insertion. N = 2 independent pooled samples, 3 pTM strains were pooled per sample. *p < 0.05, **p < 0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** N = 3–4 independent experiments. Within each gene, symbols indicate paired samples. Wilcoxon matched-pairs signed rank test and paired t-test used, respectively.
+
 Analysis of genes encoding mechanosensitive channels implicated in outflow modulation (Luo et al., 2014; Yarishkin et al., 2021; Carreon et al., 2017; Yarishkin et al., 2018a) showed a 102.5% increase in expression of TRPV4 (p = 0.0193) and a 78.9% increase in PIEZO1 expression (p = 0.0114) across eight replicates that included seven distinct pTM strains (Figure 1C). Conversely, TGFβ2 exposure did not affect expression of the TRPC1 gene (p = 0.261) and had variable, strain-dependent effects on transcript levels of KCNK2 (p = 0.293, encoding the TREK-1 channel). Thus, TGFβ2 promotes selective transcriptional upregulation of genes that encode a subset of mechanosensitive proteins alongside fibrotic upregulation and cell dedifferentiation. Finally, we tested whether TGFβ2-induced upregulation of TRPV4 and Piezo1 is TRPV4 dependent. Inclusion of the selective TRPV4 inhibitor HC067-47 (HC-06; 5 mM), however, had no effect on transcriptional upregulation compared to TGFβ2 treatment alone (Figure 1—figure supplement 1).
 
-## TGFβ2 exposure time-dependently augments TRPV4-mediated current and Δ[Ca2+]i
+### TGFβ2 exposure time-dependently augments TRPV4-mediated current and Δ[Ca2+]i
 
 To assess the functional relevance of TGFβ2-dependent transcriptional upregulation, we determined the membrane expression and functional activation of TRPV4, which mediates the pressure-activated current and calcium signaling, regulates cytoskeletal dynamics, and modulates conventional outflow resistance in vitro (Ryskamp et al., 2016; Lakk and Križaj, 2021). TGFβ2 exposure produces an increase in levels of membrane-bound TRPV4 protein (Figure 1D) in western blot of two grouped pTM membrane protein samples. While low amounts of TRPV4 were visible in the membrane fractions in control samples, TGFβ2 treatment produced an increase in the higher weight TRPV4 band, suggesting there may be isoform-specific TGFβ2-induced responses and increased TRPV4 translation leading to elevated TRPV4 trafficking, membrane insertion, and/or lipid raft interaction (Lakk et al., 2021).
 
@@ -55,23 +63,59 @@ Functional expression was assessed by tracking [Ca2+]i changes in cells exposed 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig2-v1.jpg)
 
-**Figure 2.:** 2+ influx is potentiated by 5-day TGFβ2 treatment.(A) Five-day TGFβ2 treatment (1 ng/ml) increased TRPV4 agonist-induced (GSK101, 10 nM) Ca2+ influx in primary trabecular meshwork (pTM) cells compared to serum-free media alone treated cells tested on the same day (N = 5 pTM strains, n = 3–5 slides/condition/day, individual data points over mean ± SEM). Two-tailed one-sample t-test of TGFβ2-treated cell average GSK101 response as a percent of control samples from the same pTM strain on the same day. (B) Violin plots showing the distribution of GSK101-induced Ca2+ responses for each pTM strain tested in A. Thick dashed line indicates mean, while light dashed line indicates quartiles. (C) Representative traces showing TRPV4 agonist-induced Ca2+ influx (seen as an increase in F340/F380) in pTM (mean ± SEM of 4 representative cells/group), alongside example Fura-2-loaded pTM cells before (i), during (ii), and after (iii) GSK101 application. Scale bar = 50 µm. **p < 0.01.
+**Figure 2.:** (A) Five-day TGFβ2 treatment (1 ng/ml) increased TRPV4 agonist-induced (GSK101, 10 nM) Ca2+ influx in primary trabecular meshwork (pTM) cells compared to serum-free media alone treated cells tested on the same day (N = 5 pTM strains, n = 3–5 slides/condition/day, individual data points over mean ± SEM). Two-tailed one-sample t-test of TGFβ2-treated cell average GSK101 response as a percent of control samples from the same pTM strain on the same day. (B) Violin plots showing the distribution of GSK101-induced Ca2+ responses for each pTM strain tested in A. Thick dashed line indicates mean, while light dashed line indicates quartiles. (C) Representative traces showing TRPV4 agonist-induced Ca2+ influx (seen as an increase in F340/F380) in pTM (mean ± SEM of 4 representative cells/group), alongside example Fura-2-loaded pTM cells before (i), during (ii), and after (iii) GSK101 application. Scale bar = 50 µm. **p < 0.01.
 
 To gain insight into the time- and dose-dependence of TGFβ2-dependent TRPV4 signaling modulation, pTM cells were treated for 24 hr, at 1 and 5 ng/ml concentrations of TGFβ2. GSK101-stimulated Ca2+ influx was not significantly increased by 24 hr TGFβ2 treatment at 1 ng/ml (∆peak/baseline F340/F380 = 117.0% ± 23.6% of control) or 5 ng/ml (∆peak/baseline F340/F380 = 133.6% ± 34.5% of control) Figure 3; Figure 3—figure supplement 1; the potentiation of both was significantly lower relative to the 1-day 1 ng/ml TGFβ2 treatment (p < 0.0011; Figure 3A). GSK101 evoked a moderately outwardly rectifying nonselective current (IGSK − Ibaseline) with reversal potential at ~0 mV (Figure 3C). While its amplitude was variable, mean current density consistently increased in cells treated for 1 day with TGFβ2 (n = 10; 5 ng/ml) relative to the control group (n = 11). The potentiating effect of TGFβ2 on TRPV4 activity appears to be time dependent, reaching significance after chronic exposure to relatively low-dose TGFβ2.
 
-## TGFβ2-induced TM contractility requires TRPV4 activation
+![Figure 3.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig3-v1.jpg)
+
+**Figure 3.:** (A) TGFβ2 treatments for 24 hr at 1 ng/ml (N = 6 pTM strains, n = 3–5 slides/condition/day) or 5 ng/ml (N = 5 pTM strains, n = 3–5 slides/condition/day) did not show potentiation of GSK101-evoked TRPV4 Ca2+ influx (Figure 3—figure supplement 1) and were significantly lower than cells treated with TGFβ2 for 5 days at 1 ng/ml (5 days TGFβ2 results from Figure 2A). Individual data points over mean ± SEM. One-way ANOVA with Tukey’s multiple comparisons test, statistics for individual 1 day treatment groups compared to control groups shown in Figure 1. (B) Representative traces for GSK101 response following 24 hr TGFβ2 treatment, traces show mean ± SEM of 3–4 cells. (C) Average current density in response to GSK101 (24 hr control: n = 11 cells, 24 hr TGFβ2: n = 10 cells) shows generally increased current in TGFβ2-treated cells. Data show mean ± SEM (D, E). Violin plots of individual cell strains shown in A. Thick dashed line indicates mean, while light dashed line indicates quartiles. **p < 0.01, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Individual statistical analysis of experiments shown in Figure 3A (1 ng/ml: p = 0.138, 5 ng/ml: p = 0.095), one sample t-test.
+
+### TGFβ2-induced TM contractility requires TRPV4 activation
 
 The IOP-lowering effectiveness of Rho kinase inhibitors and latrunculins (Li et al., 2022a; Honjo, 2001; Rao et al., 2017; Ethier et al., 2006) indicates that sustained increases in outflow resistance require tonic actin polymerization and contractility. TGFβ2 drives the TM myofibroblast contractile response (Li et al., 2022a), while the role of mechanosensation remains unknown. To ascertain whether TRPV4 upregulation (Figures 1 and 2) contributes to the contractile response, we seeded pTM cells into high-compliance type I collagen hydrogels (Li et al., 2022a; Figure 4—figure supplements 1 and 2). Hydrogels that were incubated with TGFβ2 (5 ng/ml) exhibited marked increases (p < 0.0003) in the rate and the magnitude of contraction at all time points (Figure 4, Figure 4—figure supplements 1 and 2). Simultaneous treatment with HC-06 (5 µM) significantly reduced the extent of TGFβ2-induced TM contractility (p < 0.0001). To determine whether TRPV4 activation is sufficient to induce the contractile response, the antagonist was washed out and hydrogels supplemented with GSK101 (25 nM). Fifteen minutes post-treatment, the constructs responded to the agonist with transient contraction (Figure 4C; Figure 4—figure supplement 1, p < 0.01), with a time course mirroring GSK101-induced [Ca2+]i elevations (Figures 2 and 3). The effects of TRPV4 inhibition and activation were consistent across all pTM strains tested (N = 3). TRPV4-mediated Ca2+ influx is therefore sufficient to induce TM contractility and necessary for pTM hypercontractility induced by TGFβ2.
 
-## TRPV4 activity is required to maintain TGFβ2-induced OHT
+![Figure 4.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative longitudinal 24-well plate scans of collagen type I hydrogels seeded with primary TM (pTM) subjected to the different treatments (dashed lines outline size of contracted constructs). (B) Longitudinal quantification of hydrogel construct size compared to the control group at the 0 min time point. (C) Detailed comparisons between groups at each experimental time point. n = 6 hydrogels/group. One-way ANOVA with Tukey’s multiple comparisons test, data in (B, C) show individual data points over mean ± SD. One pTM strain shown: TGFβ2-induced contractility induction, HC-06-mediated rescue of hypercontractility, and GSK101-induced transient (15 min) contraction were consistent across (3/3) pTM strains tested (Figure 4—figure supplement 1). **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, D) Representative longitudinal 24-well plate scans of collagen type I hydrogels seeded with two distinct primary TM (pTM) strains (pTM 1: A–C, pTM 2: D–F) subjected to the different treatments as in Figure 4. (B, E) Longitudinal quantification of hydrogel construct size. (C, F) Detailed comparisons between groups at each experimental time point (N = 6 experimental replicates/pTM strain). One-way ANOVA with Tukey multiple comparisons test, data in (B, D) show individual data points over mean ± SEM. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** High-resolution representative image of collagen gels used for contractility experiments without a circle around the periphery of the gel.
+
+### TRPV4 activity is required to maintain TGFβ2-induced OHT
 
 To test whether TRPV4 contributes to TGFβ2-induced OHT in vivo, we utilized the lentiviral TGFβ2 overexpression model developed by Patil et al., 2022 in which adult C57BL/6J mice (N = 5) were intravitreally injected with lentivirus overexpressing constitutively active human TGFβ2 (LV-TGFβ2). LV-TGFβ2-injected eyes, but not the contralateral eyes injected with a lentivirus containing a scrambled transgene (LV-Ctrl), exhibited significant IOP elevations 1-week post-transduction (Figure 5A, Week 2, ΔTGF-Ctrl = 4.0 mm Hg, p = 0.0143). By 2 weeks post-transfection, IOP in LV-TGFβ2 eyes reached 19.9 ± 4.7 mm Hg, whereas IOP in LV-Control eyes remained at control levels (14.0 ± 1.2 mm Hg), with ΔTGF-Ctrl = 5.9 mm Hg (p = 0.0002). IOP remained elevated throughout the 4 weeks after the injection (Week 5, ΔTGF-Ctrl = 4.9 mm Hg, p = 0.0008). HC-06 (100 µM) microinjection into the anterior chamber of LV-TGFβ2 and LV-Ctrl eyes lowered IOP in LV-TGFβ2 eyes to 12.2 ± 1.7 mm Hg after 24 hr (ΔpostHC-preHC = −5.8 mm Hg) with no difference observed in IOP from LV-Ctrl eyes (12.6 ± 1.9 mm Hg, ΔpostHC-preHC = −0.3 mm Hg). LV-Ctrl eyes remained close to pre-injection levels post-HC-06 treatment (Figure 5A, B). IOP in LV-TGFβ2 eyes returned to hypertensive levels by 1 week post-HC-06 injection (Weeks 6 and 7, ΔTGF-Ctrl = 3.9 mm Hg, p = 0.0201). To determine the effect of the bolus injection alone, LV-TGFβ2 and LV-Ctrl eyes were reinjected with PBS 2 weeks after re-establishing the OHT baseline. The sham injection transiently reduced IOP in LV-TGFβ2 (ΔpostPBS-prePBS = −4.5 mm Hg) and LV-Ctrl (ΔpostPBSpre-PBS = −1.2 mm Hg) eyes; however, LV-TGFβ2 eyes returned to hypertensive levels by 48 hr post-injection (ΔTGF-Ctrl = 3.6 mm Hg, p = 0.0465) and to pre-injection levels after 72 hr (ΔTGF-Ctrl = 5.4 mm Hg, p = 0.0002). Bolus injection was less effective than HC-06 at all time points 24 hr post-injection (Weeks 8 and 9, Figure 5B). These data indicate that selective pharmacological inhibition of TRPV4 effectively and reversibly blocks TGFβ2-induced OHT.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig5-v1.jpg)
+
+**Figure 5.:** (A) Intravitreal injection of LV-TGFβ2 (Week 1), but not LV-Control, elevates intraocular pressure (IOP) in WT mice (N = 5 eyes/group) as early as 1-week post-injection. Injection of TRPV4 antagonist HC-06, but not PBS, produced multiday IOP reduction in LV-TGFβ2-treated eyes. HC-06 and PBS injections did not affect IOP in LV-Control injected eyes. Two-way ANOVA with Bonferroni post hoc analysis (B) Direct comparison of the results of PBS and HC-06 injections in the eyes shown in A. Two-way ANOVA with Bonferroni post hoc analysis. (C) Intravitreal injection of LV-TGFβ2 in Trpv4−/− mice (N = 6 eyes/group) resulted in only mild OHT; plotted against WT eyes at matching timepoints (3 WT cohorts including the 5 WT eyes shown in A, B, N = 8–15 eyes/group). (D) Statistical comparison of the IOP values shown in C. The IOP in LV-TGFβ2 WT eyes was significantly elevated compared to the LV-TGFβ2 Trpv4−/− eyes from 2 weeks post-injection. LV-Control injected eyes in WT or Trpv4−/− eyes remain close to the baseline value and are not significantly different. Two-way ANOVA with Bonferroni post hoc analysis. (A, C) shows mean ± SEM. Data in (B, D) show individual data points over mean ± SEM, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Intraocular pressure (IOP) in LV-TGFβ2-injected eyes was significantly elevated compared to both LV-Ctrl injected WT and Trpv4−/− eyes, as well as LV-TGFβ2-injected Trpv4−/− eyes (N = 6 eyes/condition).
+
 To further evaluate the TRPV4 dependence of TGFβ-induced OHT, we took advantage of mice with global Trpv4 knockdown (Liedtke and Friedman, 2003; Ryskamp et al., 2011; Yarishkin et al., 2018b). Trpv4−/− mice (N = 6) were injected with LV-TGFβ2 and LV-Ctrl vectors in contralateral eyes (Figure 5C). Additionally, two littermate control mice injected alongside the Trpv4−/− animals were added to previously collected WT LV-injected cohorts measured at the same timepoints (N = 8–15, Figure 5C). Pre-LV injection, IOP levels in Trpv4−/− animals were comparable to the WT cohort, indicating that TRPV4 activity does not regulate normotension. Similarly, IOP in LV-Ctrl-injected eyes was not significantly different between WT and Trpv4−/− animals at any point in the experiment (peak ΔCtrlKO-CtrlWT = −1.2 mm Hg, Figure 5D, Figure 5—figure supplement 1). By 2 weeks post-injection (Week 3), LV-TGFβ2-treated Trpv4−/− eyes exhibited significantly lower IOP compared to the LV-TGFβ2 WT cohort (ΔTGFKO-TGFWT = −3.1 mm Hg, p = 0.0009, Figure 5C). LV-TGFβ2 injected Trpv4−/− eyes exhibited mild OHT but the effect was significantly reduced compared to WT eyes, and IOP decreased by 2 weeks post-injection (Figure 5C, D).
 
-## TGFβ2-induced and nocturnal OHT are non-additive but require TRPV4
+### TGFβ2-induced and nocturnal OHT are non-additive but require TRPV4
 
 Mammalian IOP is modulated by the circadian rhythm, with levels elevated at night and nocturnal IOP fluctuations implicated in POAG (Patel et al., 2021; Redmon et al., 2024; Ikegami and Masubuchi, 2022). We measured nocturnal (9:00–10:00 PM) IOP in LV-TGFβ2 (N = 4) and LV-Ctrl WT eyes (N = 4) from isoflurane-anesthetized mice ~2 months post-LV injection to determine whether nocturnal OHT is additive to TGFβ2-induced elevation observed during the daytime (12:00–2:00 PM, Figure 6A). LV-TGFβ2 injected eyes showed significant IOP elevation compared to LV-Ctrl eyes during daytime measurements (diurnal ΔTGFβ-Ctrl = 7.9 mm Hg, p < 0.0001) but the difference vanished at night (nocturnal ΔTGFβ-Ctrl = 0.2 mm Hg), indicating that TGFβ2-induced OHT is not additive to the circadian OHT. To test whether the IOP measurement was influenced by isoflurane-induced anesthesia, we repeated the nocturnal measurements in awake animals (N = 4–6 eyes/group). We observed no difference in nocturnal IOP between the two groups of animals was observed (Figure 6A–D, Figure 6—figure supplement 1). To determine whether physiological (nocturnal) OHT requires TRPV4, we microinjected LV-Ctrl (N = 4) and hypertensive LV-TGFβ2 (N = 4) eyes with PBS or HC-06. PBS injection did not affect IOP in LV-Ctrl or LV-TGFβ2 eyes at day or night (Figure 6E, F) except for a single LV-TGFβ2 eye that exhibited abnormally high nocturnal IOP (37 mm Hg) at the 4-day timepoint. Conversely, HC-06 injection blocked LV-TGFβ2-induced IOP during the day (P<0.001) and significantly lowered IOP in LV-Ctrl and LV-TGFβ2 eyes at night (~5 mm Hg; p < 0.01). These data indicate that (1) TRPV4 activation is necessary for OHT in the TGFβ2 overexpression mouse model (Figures 5 and 6) and the circadian IOP elevations, (2) TGFβ2-evoked OHT does not affect nocturnal IOP elevation in mice, and (3) TRPV4 inhibition does not disrupt the mechanisms that maintain daytime normotensive IOP (Figures 5 and 6).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) Post-LV injection daytime (12–2:00 P.M) and nocturnal (9–10:00 P.M.) IOP compared in WT mice (N = 4–6 eyes/group) before drug treatment. LV-TGFβ2 eyes were elevated at daytime, but nocturnal ocular hypertension (OHT) was not significantly different between LV-Ctrl and LV-TGFβ2 eyes in two separate cohorts of mice measured under isoflurane anesthesia (A) or while awake (B). (C, D) Anesthesia had no significant effect on measured nocturnal IOP. One-way ANOVA with Tukey’s multiple comparisons test. (E, F) PBS-injected eyes did not exhibit changes in daytime or nighttime intraocular pressure; however, HC-06 injection reduced TGFβ2-induced IOP elevations during the day and LV-Ctrl and LV-TGFβ2 nocturnal IOPs (N = 4 eyes/group); two-way ANOVA with Bonferroni post hoc analysis. Figures show data points over mean ± SEM, *p < 0.05, **p < 0.01, ****p < 0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104894/elife-104894-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Expanded time series of IOP measured weekly from a second cohort of mouse eyes (Figure 6B) injected with LV-Ctrl (n = 6 eyes) or LV-TGFβ2 (n = 4 eyes). LV-TGFβ2 resulted in elevated diurnal IOP, which gradually approached the IOP seen in nocturnal measurements but did not further elevate IOP above nocturnal values. In this cohort, both diurnal and nocturnal measurements were made in awake animals.
 
 ## Discussion
 
@@ -95,13 +139,132 @@ In conclusion, this study bridges biomechanical and biochemical paradigms of gla
 
 ## Methods
 
-## Animals
+### Animals
 
 C57BL/6J mice were from JAX laboratories (Bar Harbor, ME), Trpv4−/− (Trpv4tm1.1Ldtk Tg(KRT14-cre/ERT)20Efu/0; MGI:5544606) mice were a gift from Wolfgang Liedtke (Duke University) (Liedtke and Friedman, 2003; Ryskamp et al., 2011). The animals were maintained in a pathogen-free facility with a 12-hr light/dark cycle and ad libitum access to food and water, at a temperature of ~22–23°C. Mice were 2–6 months in age prior to LV injection; data from both male and female sexed animals were included in this study.
 
-## Human TM culture
+### Human TM culture
 
 De-identified postmortem eyes from donors with no history of glaucoma (pTM cells) were procured from Utah Lions Eye Bank with written informed consent of the donor’s families. TM cells were isolated from juxtacanalicular and corneoscleral regions as previously described (Ryskamp et al., 2016; Yarishkin et al., 2021). pTM cells were cultured in Trabecular Meshwork Cell Medium (TMCM; Sciencell Research Laboratories, Carlsbad, CA) in collagen-I-coated culture flasks and glass coverslips at 37°C in a humidified atmosphere with 5% CO2. Fresh media was supplied every 2–3 days. Serum-free (SF) media was mixed as needed by excluding fetal bovine serum (FBS, Sciencell) from the TMCM. A list of all pTM strains used is available in Table 1; all cells were used between passages 2 and 4. Cell lines were chosen based on availability at the time of experiments.
+
+**Table 1.**
+ Donor information for primary human trabecular meshwork (pTM) strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Donor age</th>
+      <th>Donor sex</th>
+      <th>Experiments used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Utah</td>
+      <td>55</td>
+      <td>M</td>
+      <td>PCR, Electrophysiology</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>76 (a)</td>
+      <td>F</td>
+      <td>PCR, WB, Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>76 (b)</td>
+      <td>F</td>
+      <td>PCR, Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>78</td>
+      <td>M</td>
+      <td>PCR, Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>64 (a)</td>
+      <td>F</td>
+      <td>PCR, WB, Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>64 (b)</td>
+      <td>F</td>
+      <td>PCR, Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>70 (a)</td>
+      <td>F</td>
+      <td>PCR, WB, Ca2+ Img., Electrophysiology</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>70 (b)</td>
+      <td>F</td>
+      <td>PCR</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>53</td>
+      <td>M</td>
+      <td>Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>26</td>
+      <td>M</td>
+      <td>Ca2+ Img., Electrophysiology</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>73</td>
+      <td>F</td>
+      <td>Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>56</td>
+      <td>M</td>
+      <td>Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>73</td>
+      <td>M</td>
+      <td>Ca2+ Img.</td>
+    </tr>
+    <tr>
+      <td>Utah</td>
+      <td>80</td>
+      <td>M</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>SUNY</td>
+      <td>39</td>
+      <td>M</td>
+      <td>Contractility</td>
+    </tr>
+    <tr>
+      <td>SUNY</td>
+      <td>50</td>
+      <td>F</td>
+      <td>Contractility</td>
+    </tr>
+    <tr>
+      <td>SUNY</td>
+      <td>56</td>
+      <td>F</td>
+      <td>Contractility</td>
+    </tr>
+  </tbody>
+</table>
 
 TM cell lines were authenticated in accordance with consensus recommendations (Keller et al., 2018) and validated as described (Ryskamp et al., 2016; Yarishkin et al., 2021) with DEX-induced upregulation of MYOC. There was no evidence of mycoplasma infection (i.e., DNA fragmentation/TUNEL, apoptosis, or reduced cell growth rate).
 
@@ -109,46 +272,176 @@ For contractility experiments, pTM cells were isolated from healthy donor cornea
 
 The experiments were conducted according to the tenets of the Declaration of Helsinki for the use of human tissue.
 
-## Reagents
+### Reagents
 
 The TRPV4 antagonist HC-067047 (HC-06) was purchased from Millipore-Sigma (Burlington, MA) or Cayman Biotech (Ann Arbor, MI) and dissolved in DMSO at 20 mM. The TRPV4 agonist GSK1016790A (GSK101; Cayman Biotech) was dissolved in DMSO at 1 mM. Aliquots were diluted into working concentrations (10–25 nM, GSK101; 5–100 µM, HC-06). Recombinant human TGFβ2 protein (R&D Systems) was reconstituted in sterile 4 mM HCl with 0.1% BSA at 20 µg/ml.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Gene-specific primers were used to detect the expression of target genes, as described (Phuong et al., 2017). Total RNA was isolated using the Arcturus PicoPure RNA isolation kit (Thermo Fisher Scientific). cDNA was generated from total RNA using qScript XLT cDNA Supermix (Quanta Bio, Beverly, MA). SYBR Green-based real-time PCR was performed with 2X GREEN Master Mix (Apex Bioresearch Products; Houston, TSX). GAPDH was used as an endogenous control to normalize fluorescence signals. Gene expression relative to GAPDH was measured using the comparative CT method (2−[ΔCT(gene) − ΔCT(GAPDH)]). All genes were assessed in four to eight individual samples taken from three to seven different pTM strains. The primer sequences, expected product length, and gene accession are provided in Table 2.
 
-## Western blot
+**Table 2.**
+ Sequences, product size, and reference numbers for PCR primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+      <th>Product length (bp)</th>
+      <th>NCBI reference number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GAPDH</td>
+      <td>CTCCTGTTCGACAGTCAGCC</td>
+      <td>GACTCCGACCTTCACCTTCC</td>
+      <td>89</td>
+      <td>NM_002046.5</td>
+    </tr>
+    <tr>
+      <td>SMAD2</td>
+      <td>GGGTTTTGAAGCCGTCTATCAGC</td>
+      <td>CCAACCACTGTAGAGGTCCATTC</td>
+      <td>149</td>
+      <td>NM_005901.6</td>
+    </tr>
+    <tr>
+      <td>SMAD3</td>
+      <td>CAAGTGGCCGCGTGTAAAAA</td>
+      <td>AGTCCAGAACAGCCGAGTTG</td>
+      <td>181</td>
+      <td>NM_005902.4</td>
+    </tr>
+    <tr>
+      <td>SMAD7</td>
+      <td>CTGCTCCCATCCTGTGTGTT</td>
+      <td>CCTTGGGTTATGACGGACCA</td>
+      <td>120</td>
+      <td>NM_005904.3</td>
+    </tr>
+    <tr>
+      <td>TGFΒR2</td>
+      <td>AACCTCTAGGCACCCTCCTC</td>
+      <td>AACCTCTAGGCACCCTCCTC</td>
+      <td>100</td>
+      <td>NM_001024847.3</td>
+    </tr>
+    <tr>
+      <td>FSP1</td>
+      <td>GCTTCTTCTTTCTTGGTTTGATCCT</td>
+      <td>AAGTCCACCTCGTTGTCCCT</td>
+      <td>250</td>
+      <td>NM_002961.3</td>
+    </tr>
+    <tr>
+      <td>SNAIL1</td>
+      <td>GGCTCCTTCGTCCTTCTCCTCTAC</td>
+      <td>CTGGAGATCCTTGGCCTCAGAGAG</td>
+      <td>124</td>
+      <td>NM_005985.4</td>
+    </tr>
+    <tr>
+      <td>CCN2</td>
+      <td>CCCCAGACACTGGTTTGAAG</td>
+      <td>CCCACTGCTCCTAAAGCCAC</td>
+      <td>100</td>
+      <td>NM_001901.3</td>
+    </tr>
+    <tr>
+      <td>YAP1</td>
+      <td>ACAGGGAAGTGACTTTGTACA</td>
+      <td>GCACTGAATATTGCACCCAC</td>
+      <td>183</td>
+      <td>NM_001130145.</td>
+    </tr>
+    <tr>
+      <td>FN1</td>
+      <td>CTGAAAGACCAGCAGAGGCA</td>
+      <td>GTGTAGGGGTCAAAGCACGA</td>
+      <td>110</td>
+      <td>M10905.1</td>
+    </tr>
+    <tr>
+      <td>SMA (ACTA2)</td>
+      <td>GTCACCCACAATGTCCCCAT</td>
+      <td>GGAATAGCCACGCTCAGTCA</td>
+      <td>123</td>
+      <td>NM_001141945.2</td>
+    </tr>
+    <tr>
+      <td>MYOC</td>
+      <td>CCACGTGGAGAATCGACACA</td>
+      <td>TCCAGTGGCCTAGGCAGTAT</td>
+      <td>118</td>
+      <td>NM_000261.1</td>
+    </tr>
+    <tr>
+      <td>TRPV4</td>
+      <td>TCCCATTCTTGCTGACCCAC</td>
+      <td>AGGGCTGTCTGACCTCGATA</td>
+      <td>217</td>
+      <td>NM_021625.4</td>
+    </tr>
+    <tr>
+      <td>PIEZO1</td>
+      <td>GGCCAACTTCCTCACCAAGA</td>
+      <td>GGGTATTTCTTCTCTGTCTC</td>
+      <td>106</td>
+      <td>NM_001142864.3</td>
+    </tr>
+    <tr>
+      <td>TREK1</td>
+      <td>AGGGATTTCTACTTGGCGGC</td>
+      <td>CAAGCACTGTGGGTTTCGTG</td>
+      <td>99</td>
+      <td>NM_001017424.3</td>
+    </tr>
+    <tr>
+      <td>TRPC1</td>
+      <td>TGCGTAGATGTGCTTGGGAG</td>
+      <td>CGTTCCATTAGTTTCTGACAACCG</td>
+      <td>107</td>
+      <td>X89066.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blot
 
 Three SF- or TGFβ2-treated samples were pelleted and pooled together from three different pTM samples within the same condition. To separate membrane proteins from heavier cellular debris, the pooled cell pellets were homogenized in a hypotonic lysis buffer (20 mM Tris-HCl, 3 mM MgCl2, 10 mM NaCl, 10 mM PMSF, 0.5 mM DTT, 20 mM NaF, 2 mM NaV, 0.5 µg/ml leupeptin) before centrifuging at 300 × g for 5 min (4°C). The resulting supernatant was removed and centrifuged again at >12,500 rpm for 30 min to pellet membrane proteins, which were then resuspended in RIPA Buffer (Santa Cruz). Proteins were separated on a 10% SDS–PAGE gel and transferred to polyvinylidene difluoride membranes (Bio-Rad). Membranes were blocked with 5% skim milk/2% BSA in TBST and incubated at 4°C overnight with a primary antibody against TRPV4 (1:250, Alomone Labs #ACC-034; Jerusalem, Israel) or rabbit antibody against β-tubulin (1:2000, Abcam #EPR1330; Waltham, MA). Appropriate secondary antibodies conjugated to HRP were used to visualize protein expression on an iBright CL750 imaging system (Thermo Fisher Scientific). β-Tubulin expression was used to standardize protein levels between samples.
 
-## Calcium Imaging
+### Calcium Imaging
 
 Primary human TM cells were seeded onto collagen-I-coated coverslips and cultured in TMCM media (ScienCell) as described (Yarishkin et al., 2021; Lakk and Križaj, 2021). The cells were serum starved for 24 hr followed by SF TMCM with or without TGFβ2 (1 or 5 ng/ml) for 24 hr or 5 days. The cells were loaded with 10 µM of the ratiometric indicator Fura-2 AM Kd at RT = 225 nM (Invitrogen/Thermo Fisher) for 30–60 min. Coverslips were placed in an RC-26G chamber platform (Warner Instrument Corp, Hamden, CT) and perfused with external saline (pH 7.4) (in mM): 80 NaCl, 4.7 KCl, 1.2 MgCl2, 10 D-glucose, 19.1 HEPES sodium salt, 2 CaCl2, and osmolality adjusted to 300 mOsm using D-mannitol. External solutions were delivered via a manually controlled gravity-fed eight-line manifold system, with perfusion speed kept constant to minimize changes in shear. Epifluorescence imaging was performed using an inverted Nikon Ti microscope with a 40× 1.3 N.A. oil objective and Nikon Elements AR software. 340 and 380 nm excitation were delivered by a high-intensity 150 W Xenon arc lamp (Lambda DG-4; Sutter Instruments), high pass-filtered at 510 nm and detected with a 12-bit Delta Evolve camera (Teledyne Photometrics; Tucson, CA). GSK101 10 nM evoked Δ[Ca2+]i was assessed as ∆R/R (dividing the difference between the peak GSK-evoked F340/F380 signal during stimulation and baseline F340/F380 signal by the baseline F340/F380 signal). Every data point represents a separate experimental day and pTM cell strain, each with three to five control and three to five TGFβ2-treated slides tested on the same day. TGFβ2 data points represent the average GSK101 evoked ∆R/R across all TGFβ2 cells as a % of the average ∆R/R of control cells from the same cell strain on the same day.
 
-## Collagen hydrogel contraction assay
+### Collagen hydrogel contraction assay
 
 Rat tail collagen type I (Thermo Fisher Scientific) was prepared at a concentration of 1.5 mg/ml according to the manufacturer’s instructions. Five hundred microliters of the hydrogel solution were pipetted into 24-well culture plates. Upon complete collagen polymerization, pTM cells were seeded at 1.5 × 105 cells/well atop the hydrogels and cultured in DMEM + 10% FBS + 1% PSG for 48 hr to facilitate even cell spreading. Next, constructs were cultured in SF DMEM + 1% PSG supplemented with: (i) control (vehicle: 0.008 mM HCl + 0.0004% BSA; 0.025% DMSO), (ii) TGFβ2 (5 ng/ml; R&D Systems), or (iii and iv) TGFβ2 + HC067047 (5 µM in DMSO) for 36 hr before carefully releasing the hydrogels from the walls using a sterile 10 µl pipette tip to facilitate contraction. The next morning, fresh SF DMEM + 1% PSG supplemented with 0.0025% DMSO = vehicle was added to groups i–iii; group iv received SF DMEM + 1% PSG supplemented with GSK1016790A (25 nM in DMSO). Plates were longitudinally imaged at 600 dpi resolution with a CanoScan LiDE 300 flatbed scanner at 0, 15, 30, 60, and 120 min. Hydrogel construct size was quantified using FIJI software (National Institutes of Health) (Schindelin et al., 2012).
 
-## Electrophysiology
+### Electrophysiology
 
 Borosilicate patch-clamp pipettes (WPI) were pulled using a P-2000 horizontal micropipette puller (Sutter Instruments), with a resistance of 6–8 MΩ. The internal solution contained (mM): 125 K-gluconate, 10 KCl, 1.5 MgCl2, 10 HEPES, 10 EGTA, pH 7.4. Patch clamp data were acquired with a Multiclamp 700B amplifier, pClamp 10.6 software, and Digidata 1440A interface (Molecular Devices; San Jose CA), sampled at 5 kHz and analyzed with Clampfit 10.7. Current–voltage relationships were assessed using Vm steps from –100 to +100 mV against a holding potential of –30 mV. Current density was measured as the average current during GSK101 exposure subtracted by the average current from the same cell during baseline perfusion.
 
-## IOP measurements
+### IOP measurements
 
 A TonoLab rebound tonometer (Colonial Medical Supply; Franconia NH) was used to measure IOP of awake mice between 12 and 2 PM. IOP was determined from the mean of 10–20 tonometer readings. Nocturnal measurements were conducted between 9 and 10 PM in awake animals or under 2.5% isoflurane delivered by a Somnosuite isoflurane vaporizer (Kent Scientific; Torrington, CT). After animals recovered from intracameral HC-06/PBS injections, IOP was measured daily. IOP was measured every day for 4–5 consecutive days to confirm a stable return to baseline. IOP data for individual cohorts were binned into weeks of experimental time to group values for analysis.
 
-## Lentiviral transduction
+### Lentiviral transduction
 
 Lentiviral stock for TGFβ2 (C226,228S) was purchased from VectorBuilder Inc (Chicago, IL) (VB170816-1094fnw, pLV[Exp]-CMV> {hTGFB2[NM_003238.3](C226,228S)}) (Patil et al., 2022). Scrambled control lentivirus was purchased from SignaGen Laboratories (Frederick, MD) (LM-CMV-Null-Puro). Mice were anesthetized with an intraperitoneal injection of ketamine/xylazine (90 mg/10 mg/kg body weight), followed by eyedrops containing 0.5% proparacaine hydrochloride and 1% tropicamide ophthalmic solution to numb the eyes and dilate the pupils. Anesthetized mice were secured to allow stereotaxic injection of lentivirus. Intravitreal injections were conducted by creating a guide hole with a 30-gauge needle 1–2 mm equatorial of the cornea–scleral border, followed by insertion of a 12° beveled 33-gauge Hamilton syringe, secured to a stereotaxic rig (World Precision Instruments; Sarasota, FL) used to insert the needle 2–3 mm into the eye. Each eye was injected with a 2-µl bolus of lentivirus diluted to 1 × 106 TU/µl over the course of 1 min, before the needle was quickly drawn and the pilot hole treated with erythromycin ophthalmic ointment USP (Bausch & Lomb; Laval, Canada). The efficiency of LV-TGFβ2 OHT induction in WT animals was close to 100%. No differences in observable health post-injection were detected between wild-type and Trpv4−/− animals or LV-Ctrl and LV-TGFβ2 injected animals.
 
-## Intracameral microinjections
+### Intracameral microinjections
 
 Mice were anesthetized and treated with eyedrops as above, before being placed on an isothermal heating pad. HC-06 (100 µM) or PBS with DMSO (0.5%) as a vehicle were injected into the anterior chamber using a blunt tip Hamilton syringe through a guide hole made using a 30-gauge needle. At the end of each injection, a small air bubble was introduced to seal the cornea and minimize fluid outflow. 0.5% erythromycin ophthalmic ointment USP (Bausch & Lomb) was applied to the eye after the procedure. Intracameral injections were not associated with observable inflammation, corneal opacity, or behavioral changes. For the nocturnal IOP experiments in Figure 6, both eyes of two animals were injected with PBS while two were injected with HC-06. When OHT was stably reestablished a week post-injection, the treatment groups were switched, and experiments repeated, resulting in four eyes/treatment group for Figure 6E, F.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 9 was used for statistical analysis. Means are plotted ± SEM unless otherwise noted. One-sample t-tests were used to determine whether TGFβ2-treated groups were significantly different than untreated control groups, while one- or two-way ANOVA along with Tukey or Bonferroni’s multiple comparisons test were used to compare multiple groups.
 
-## Study approval
+### Study approval
 
 The animal experimental protocols were conducted in accordance with the NIH Guide for the Care and Use of Laboratory Animals and the ARVO Statement for the Use of Animals in Ophthalmic and Vision Research and were approved by the Institutional Animal Care and Use Committee at the University of Utah (protocol 25-00001905).

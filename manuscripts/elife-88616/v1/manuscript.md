@@ -18,17 +18,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00vtgdb53 School of Biodiversity, One Health and Veterinary Medicine, University of Glasgow Glasgow United Kingdom
-2. https://ror.org/00a0jsq62 Department of Disease Control, London School of Hygiene & Tropical Medicine London United Kingdom
-3. https://ror.org/00a0jsq62 Centre on Climate Change and Planetary Health, London School of Hygiene & Tropical Medicine London United Kingdom
-4. https://ror.org/02e91jd64 Faculty of Veterinary Medicine, Universiti Putra Malaysia Selangor Malaysia
-5. https://ror.org/04f2nsd36 Lancaster University, Bailrigg Lancaster United Kingdom
-6. https://ror.org/03svjbs84 Liverpool School of Tropical Medicine, Pembroke Place Liverpool Liverpool United Kingdom
-7. https://ror.org/03kk7td41 School of Biosciences, Cardiff University Cardiff United Kingdom
-8. https://ror.org/01dzyb381 Wildlife Health, Genetic and Forensic Laboratory, Sabah Wildlife Department, Wisma Muis Kota Kinabalu Malaysia
-9. https://ror.org/01dzyb381 Danau Girang Field Centre, Sabah Wildlife Department Kinabalu Sabah Malaysia
-10. https://ror.org/00a0jsq62 Department of Infection Biology, London School of Hygiene & Tropical Medicine London United Kingdom
-11. https://ror.org/01tgyzw49 Saw Swee Hock School of Public Health, National University of Singapore Singapore Singapore
+1. School of Biodiversity, One Health and Veterinary Medicine, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+2. Department of Disease Control, London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+3. Centre on Climate Change and Planetary Health, London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+4. Faculty of Veterinary Medicine, Universiti Putra Malaysia Selangor Malaysia ([ROR:02e91jd64](https://ror.org/02e91jd64))
+5. Lancaster University, Bailrigg Lancaster United Kingdom ([ROR:04f2nsd36](https://ror.org/04f2nsd36))
+6. Liverpool School of Tropical Medicine, Pembroke Place Liverpool Liverpool United Kingdom ([ROR:03svjbs84](https://ror.org/03svjbs84))
+7. School of Biosciences, Cardiff University Cardiff United Kingdom ([ROR:03kk7td41](https://ror.org/03kk7td41))
+8. Wildlife Health, Genetic and Forensic Laboratory, Sabah Wildlife Department, Wisma Muis Kota Kinabalu Malaysia ([ROR:01dzyb381](https://ror.org/01dzyb381))
+9. Danau Girang Field Centre, Sabah Wildlife Department Kinabalu Sabah Malaysia ([ROR:01dzyb381](https://ror.org/01dzyb381))
+10. Department of Infection Biology, London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+11. Saw Swee Hock School of Public Health, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
 
 † Corresponding author
 
@@ -60,17 +60,54 @@ A systematic literature review was conducted in Medline, Embase, and Web of Scie
 
 Overall, records report on a total of 6322 primates, with the largest proportion sampled from Peninsular Malaysia (48.5%, n=3069/6322). Primate surveys were primarily conducted on Long-tailed macaques (Macaca fascicularis) (90.5%, n=5720/6322) followed by Pig-tailed macaques (M. nemestrina; n=532/6322; Amir et al., 2020; Lee et al., 2011; Muehlenbein et al., 2015; Putaporntip et al., 2010; Appendix 1—table 3). Reported prevalence of Plasmodium knowlesi in NHPs ranged from 0% to 100%. Only 87 of the surveys (58.8%, n=87/148) reported a positive diagnosis, with the remaining 61 sites finding no molecular evidence of P. knowlesi infection (41.2%) in any primates tested. A full breakdown of P. knowlesi infection rates according to reported primate characteristics can be found in Appendix 1.
 
-## Meta-analysis of P. knowlesi prevalence
+### Meta-analysis of P. knowlesi prevalence
 
 To quantify regional heterogeneity in simian cases of P. knowlesi, a one-stage meta-analysis of prevalence (number positive out of the number sampled) was conducted on primate malaria survey data. Overall pooled estimate for P. knowlesi prevalence was 11.99% (CI95% 9.35–15.26). Overall heterogeneity was assessed using the I2 statistic. Substantial between-study heterogeneity (I2 ≥75%) was found across all prevalence records (I2=80.5%; CI95% 77.3–83.1). In the sub-group analysis by region, pooled prevalence estimates are consistently low for Thailand (2.0%, CI95% 1.1–3.5%), moderate in Peninsular Malaysia (14.3%, CI95% 11.1–18.2) and elevated in Singapore (23.3%, CI95% 11.0–42.8) and Malaysian Borneo (41.1%, CI95% 20.8–64.9) (Figure 2). Sub-group heterogeneity was assessed using prediction intervals, derived from τ 2 statistic used to describe between-study variability. Prediction intervals indicate high heterogeneity of estimates within regions, consistent with expectations of high variability of prevalence across individual study sites. Detailed forest plots for individual prevalence estimates can be found in Appendix 3—figure 2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88616/elife-88616-fig2-v1.jpg)
 
-**Figure 2.:** P. knowlesi prevalence across Southeast Asia.(A) Forest plot of pooled estimates for P. knowlesi prevalence (%) in all non-human primates tested (n=6322) across Southeast Asia, disaggregated by species and sampling site (k=148). Random-effects meta-analysis sub-grouped by region, with 95% confidence intervals and prediction intervals. (B) Map of regional prevalence estimates for P. knowlesi prevalence in NHP in Southeast Asia from meta-analysis. Point colour denotes pooled estimate (%). Size denotes total primates tested per region (n). Shading indicates data availability.
+**Figure 2.:** (A) Forest plot of pooled estimates for P. knowlesi prevalence (%) in all non-human primates tested (n=6322) across Southeast Asia, disaggregated by species and sampling site (k=148). Random-effects meta-analysis sub-grouped by region, with 95% confidence intervals and prediction intervals. (B) Map of regional prevalence estimates for P. knowlesi prevalence in NHP in Southeast Asia from meta-analysis. Point colour denotes pooled estimate (%). Size denotes total primates tested per region (n). Shading indicates data availability.
 
-## Risk factor analysis
+### Risk factor analysis
 
 Covariate data and P. knowlesi prevalence data were used to fit additional models to explore the relationships between localised landscape configuration and NHP malaria prevalence. Environmental covariates were extracted from satellite-derived remote sensing datasets (Table 1) at either true sampling sites (GPS coordinates) or 10 random pseudo-sampling sites to account for geographic uncertainty in prevalence data. Host species was grouped as ‘Macaca fascicularis’ or ‘Other’ due to sample counts of <10 for certain primate species. Only 57.4% (n=85/148 records) of data included year of sampling, deemed to be insufficient to assess temporal patterns in prevalence. Tree canopy cover ranged from negligible to near total cover (100%) within buffer radii (Appendix 4—table 2). Details of covariate data processing is illustrated in Appendix 4.
+
+**Table 1.**
+ Spatial and temporal resolution (res.) and sources for environmental covariates.Summary metrics extracted within 5, 10 and 20 km circular buffers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Covariate</th>
+      <th>Spatial res.</th>
+      <th>Temporal res.</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human density (p/km2)</td>
+      <td>1 km</td>
+      <td>2012</td>
+      <td>WorldPop, 2018</td>
+    </tr>
+    <tr>
+      <td>Elevation (m)</td>
+      <td>1 km</td>
+      <td>2003</td>
+      <td>SRTM 90 m Digital Elevation v4.1 Jarvis et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Tree cover (1/0)*</td>
+      <td>30 m</td>
+      <td>Annual</td>
+      <td>Hansen’s Global Forest Watch Hansen et al., 2013</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Derivatives: Proportion canopy cover (%), Perimeter: area ratio (PARA >0)_
 
 Following a two-stage approach for selection of explanatory variables, tree cover and fragmentation (measured by perimeter: area ratio, PARA) were retained at 5 km as linear terms, human population density was retained at both 5 km and 20 km and primate species was retained as a categorical variable. Spearman’s rank tests for residual correlation between final variables at selected scales indicates a strong negative correlation between tree cover and fragmentation index (PARA; ρ = –0.75; Appendix 6—figure 2).
 
@@ -96,17 +133,17 @@ There are limitations to consider in the available data and interpretation of th
 
 Results show important regional ecological trends, but broad geographic patterns may not be generalisable at individual levels, or to all putative host species in all geographic contexts (Zhang et al., 2016). Follow-up studies should be conducted at higher spatial and temporal resolution to characterise the effect of local landscape configuration on wildlife P. knowlesi prevalence. Effects of fragmentation are likely to be dependent on land conversion type, species composition and surrounding matrix habitat (Fornace et al., 2019b). Use of perimeter: area ratio (PARA) as a fragmentation index was justified given high canopy coverage in study sites (Wang et al., 2014), although Edge Density (ED) or normalised Landscape Shape Index (nLSI) might be more appropriate in future analyses to account for variation in forest abundance. Specific land configurations have previously been linked to P. knowlesi exposure in Borneo (Fornace et al., 2019b), notably in areas where palm oil plantation is a dominant industry. Given this, broad forest classifications used here may mask important differences in P. knowlesi prevalence between land classes. As it was not possible to include contemporary land cover classifications in this analysis, future studies would also benefit from looking at specific habitat type (e.g., primary forest, agroforest, plantation).
 
-## Concluding remarks
+### Concluding remarks
 
 Strong links have been identified between land use and land cover change and ecosystem perturbation that favours the transmission of vector-borne diseases (Loh et al., 2016). Prevalence of P. knowlesi in macaques is likely to be a crucial determinant of human infection risk, and more representative estimates of P. knowlesi prevalence derived here can better inform regional transmission risk models. This study also characterises landscape risk factors for heightened prevalence of P. knowlesi in NHPs. Findings provide evidence that P. knowlesi in primate hosts is partly driven by landscape modification across Southeast Asia. While the full complexity is not captured by the covariates used, it is clear that P. knowlesi infection in NHPs is not restricted to densely forested areas. This study also demonstrates the utility of systematic meta-analysis tools and remote-sensing datasets in the investigation of macroecological disease trends, in conjunction with methods to standardise a spatially heterogeneous dataset and data-driven selection of spatial scales. Gaps identified in data reporting should inform more systematic and localised primatological surveys to disentangle precise mechanisms. Notwithstanding limitations, this study highlights the marked spatial heterogeneity and role of landscape complexity in driving P. knowlesi infection rates in NHPs. Given the clear intersection between human epidemiology and wildlife ecology, it is essential that infection dynamics within wildlife reservoirs are considered in future public health interventions.
 
 ## Methods
 
-## Study site
+### Study site
 
 This study focused on the simian malaria Plasmodium knowlesi across Southeast Asia, within 28°30'00.0"N, 92°12'00.0"E and 11°00'00.0"S, 141°00'00.0"E. Climate mainly corresponds to the equatorial tropical zone, with high temperatures and high humidity.
 
-## Data assembly
+### Data assembly
 
 A systematic literature review was conducted under the CoCoPop framework (Condition, Context, Population) (Ruiz Cuenca et al., 2022; Munn et al., 2015). All studies identified in the literature review were screened for data on NHPs with a confirmed P. knowlesi diagnosis or absence data (zero counts of P. knowlesi with appropriate diagnostic methods). Exclusion criteria included (a) studies exclusively relying on microscopy (Antinori et al., 2013) (b) laboratory, animal model or experimental infection studies (c) data from outside of Southeast Asia. No limit was set on the temporal range for primate survey records. Duplicate records reporting results from the same surveys were removed, with one record per survey retained. Critical appraisal of the studies was conducted using the Joanna Briggs Institute (JBI) checklist for prevalence studies (Munn et al., 2015; see Appendix 1 for details and criteria). A flowchart of the selection process is illustrated in Appendix 1—figure 3, with a full list of articles included provided in Appendix 1—table 2.
 
@@ -114,25 +151,25 @@ Primary outcome was defined as P. knowlesi prevalence (p, proportion positive fo
 
 In most studies identified, study site was only geolocated to a geographic area or descriptive location. Geolocation was assigned at the lowest available level of administrative polygon (i.e. district/state/country) by cross-referencing reported sampling location with GADM (v3.6) administrative boundaries. If specific location was given, GPS coordinates were assigned via Google Maps. For data visualisation, point coordinates were plotted in QGIS (3.10.14) and R (4.1.0) software.
 
-## Meta-analysis of P. knowlesi prevalence
+### Meta-analysis of P. knowlesi prevalence
 
 Meta-analysis was conducted using methods that are standard in the analysis of human disease prevalence for individual participant datasets (IDP) (Liberati et al., 2009; Stewart et al., 2012). Data were disaggregated by geographic location (site) and primate species, to illustrate variance in prevalence by survey unit (Stewart et al., 2012). One-stage meta-analysis is considered appropriate for studies where the outcome may be infrequent, so data was included in a single model under the ‘DerSimonian and Laird’ variance estimator (Munn et al., 2015). Sensitivity analyses were conducted to compare methods for the back-transformation of prevalence estimates. For studies where prevalence estimates tend towards 0% or 100%, variance tends towards 0. To stabilise the variance and enable back-transformation of zero prevalence records, logit method was selected for the transformation of prevalence, with the inverse variance method used for individual study weights (see Appendix 3 for details).
 
 Overall heterogeneity of prevalence records was assessed using the I2 statistic (von Hippel, 2015), a relative estimate of true between-study variance. Sub-group analysis was conducted according to geographic region, with the heterogeneity of reported prevalence within regional sub-groups assessed using prediction intervals derived from the τ 2 statistic. Small-study effects, including selection and publication biases, were assessed by examining funnel plots and imputing ‘missing’ estimates using the trim-and-fill method (Lin and Chu, 2018). Full rationale and details of small-study effect assessments can be found in Appendix 3.
 
-## Remote sensing data
+### Remote sensing data
 
 Satellite-derived remote sensing datasets were used to assemble local environmental and anthropogenic covariates. Gridded UN-adjusted human population estimates were assembled at 1 km resolution from WorldPop, 2018. Elevation data was obtained from NASA SRTM 90 m Digital Elevation Database v4.1 (CGIAR-CSI) (Jarvis et al., 2008) with a spatial resolution of 1 km. Contemporaneous tree cover was derived from Hanson’s Global Forest Watch (30 m) (Hansen et al., 2013), extracted for every year between 2006 and 2020.Tree cover was classified as ≥50% crown density, and then matched to primate data by sample site geolocation and by year of sample collection to account for rapid forest loss (Appendix 4—figure 1). Where a broad timeframe of sampling was provided (≥3 years), median year was used. Full details for variable selection and processing can be found in Appendix 4.
 
 Perimeter: area ratio (PARA, ratio of patch perimeter length to patch surface area) of given land class is a key metric for habitat conversion, where a higher PARA provides a measure of boundary complexity and indicates a more fragmented landscape (McGarigal et al., 2021). Mean PARA was extracted from canopy cover within circular buffers. Habitat fragmentation has been shown to correlate with disease transmission parameters (Borremans et al., 2019; Faust et al., 2018), but definitions often lack precision and can be considered with respect to ‘separation effects’ (division and isolation of patches) and ‘geometric effects’ (changes to ratios of perimeter and core habitat; Wilkinson et al., 2018). PARA provides a measure of edge density within the buffer area (PARA >0) and has been shown to provide a good index of fragmentation and good discrimination of spatial aggregation across areas where habitat abundance (tree canopy cover) is high (Wang et al., 2014; Appendix 4—table 2, Appendix 4—figure 4).
 
-## Covariate assembly
+### Covariate assembly
 
 For studies with exact GPS coordinates, precise environmental data at a single site could be obtained. For surveys published without GPS coordinates, there is considerable geographic uncertainty in the exact sampling location (Appendix 5). Uncertainty in the spatial and environmental determinants of prevalence generates a sampling bias, with the precision of covariates correlated to certain studies. Use of a single centroid proxy site is standard procedure, but often generates erroneous estimates in large or heterogenous sampling units (Cheng et al., 2021). Alternative strategies were employed to account for and mitigate the effect of spatial uncertainty and spatial bias. Each prevalence observation was replicated and assigned a random sample of environmental realisations. 10 random sampling points were generated within the sampling area provided by the study, and covariates were extracted at each proxy sampling site (Appendix 5—figure 1). Selection of random points was validated by visual inspection of the stability of model coefficients with the inclusion of an increasing number of points. Number of points was selected conservatively at the point where coefficients stabilised (n=10).
 
 For every georeferenced sampling point, mean values for all selected covariates were extracted within buffer radii at 5 km, 10 km, and 20 km (Appendix 4). Buffer area sizes were selected to investigate multiple spatial scales over which associations between risk factors and P. knowlesi prevalence might occur. A minimum radius of 5 km was chosen to approximate the maximum ranging distance for M. fascicularis (Waxman et al., 2014), with wider radii (10–20 km) included to account for the geographic uncertainties in areal data. Flowchart of data processing chain can be found in Appendix 4—figure 2.
 
-## Analysis of environmental risk factors
+### Analysis of environmental risk factors
 
 Generalised linear mixed-effect regression models (GLMM) were fitted to NHP prevalence data using a binomial distribution with a logit link. To account for within-study correlation in reported average prevalence, a unique identifier combining author and study was included as a random intercept in all models. Artificial inflation of sample size in the replicated data (10 pseudo-sampling sites for data geolocated to administrative areas) was accommodated by reducing individual observation weights to 1/10th within the model.
 

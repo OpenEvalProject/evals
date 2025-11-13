@@ -128,145 +128,145 @@
 
 1. ERN-ITHACA-European Reference Network Soria Spain
 2. Pediatric Neurology Unit, Department of Pediatrics, Navarra Health Service Hospital Pamplona Spain
-3. https://ror.org/01ygm5w19 CIBERER, ISCIII Madrid Spain
-4. https://ror.org/030eybx10 Centro Singular de Investigación en Medicina Molecular y Enfermedades Crónicas (CIMUS), Universidade de Santiago de Compostela Santiago de Compostela Spain
-5. https://ror.org/04wn09761 Universidade Federal do Rio Grande do Norte, Departamento de Analises Clinicas e Toxicologicas Natal Brazil
-6. https://ror.org/015g99884 Genomics Division, Instituto Tecnológico y de Energías Renovables Santa Cruz de Tenerife Spain
-7. https://ror.org/025h0r574 Fundación Pública Galega de Medicina Xenómica, Sistema Galego de Saúde (SERGAS) Santiago de Compostela Spain
-8. https://ror.org/01s1q0w69 Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz IDIPAZ Madrid Spain
-9. https://ror.org/00qyh5r35 Unit of Infectious Diseases, Hospital Universitario 12 de Octubre, Instituto de Investigación Sanitaria Hospital 12 de Octubre (imas12) Madrid Spain
-10. https://ror.org/00ca2c886 Spanish Network for Research in Infectious Diseases (REIPI RD16/0016/0002), Instituto de Salud Carlos III Madrid Spain
-11. https://ror.org/00ca2c886 CIBERINFEC, ISCIII Madrid Spain
+3. CIBERER, ISCIII Madrid Spain ([ROR:01ygm5w19](https://ror.org/01ygm5w19))
+4. Centro Singular de Investigación en Medicina Molecular y Enfermedades Crónicas (CIMUS), Universidade de Santiago de Compostela Santiago de Compostela Spain ([ROR:030eybx10](https://ror.org/030eybx10))
+5. Universidade Federal do Rio Grande do Norte, Departamento de Analises Clinicas e Toxicologicas Natal Brazil ([ROR:04wn09761](https://ror.org/04wn09761))
+6. Genomics Division, Instituto Tecnológico y de Energías Renovables Santa Cruz de Tenerife Spain ([ROR:015g99884](https://ror.org/015g99884))
+7. Fundación Pública Galega de Medicina Xenómica, Sistema Galego de Saúde (SERGAS) Santiago de Compostela Spain ([ROR:025h0r574](https://ror.org/025h0r574))
+8. Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz IDIPAZ Madrid Spain ([ROR:01s1q0w69](https://ror.org/01s1q0w69))
+9. Unit of Infectious Diseases, Hospital Universitario 12 de Octubre, Instituto de Investigación Sanitaria Hospital 12 de Octubre (imas12) Madrid Spain ([ROR:00qyh5r35](https://ror.org/00qyh5r35))
+10. Spanish Network for Research in Infectious Diseases (REIPI RD16/0016/0002), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+11. CIBERINFEC, ISCIII Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 12. Hospital General Santa Bárbara de Soria Soria Spain
-13. https://ror.org/03atdda90 Navarra Health Service, NavarraBioMed Research Group Pamplona Spain
-14. https://ror.org/016p83279 Hospital Universitario Virgen Macarena, Neumología Sevilla Spain
-15. https://ror.org/049nvyb15 Department of Genetics & Genomics, Instituto de Investigación Sanitaria-Fundación Jiménez Díaz University Hospital - Universidad Autónoma de Madrid (IIS-FJD, UAM) Madrid Spain
-16. https://ror.org/00bvhmc43 Spanish National Cancer Research Centre, Human Genotyping-CEGEN Unit Madrid Spain
-17. https://ror.org/0111es613 Department of Child and Adolescent Psychiatry, Institute of Psychiatry and Mental Health, Hospital General Universitario Gregorio Marañón (IiSGM) Madrid Spain
-18. https://ror.org/02p0gd045 School of Medicine, Universidad Complutense Madrid Spain
+13. Navarra Health Service, NavarraBioMed Research Group Pamplona Spain ([ROR:03atdda90](https://ror.org/03atdda90))
+14. Hospital Universitario Virgen Macarena, Neumología Sevilla Spain ([ROR:016p83279](https://ror.org/016p83279))
+15. Department of Genetics & Genomics, Instituto de Investigación Sanitaria-Fundación Jiménez Díaz University Hospital - Universidad Autónoma de Madrid (IIS-FJD, UAM) Madrid Spain ([ROR:049nvyb15](https://ror.org/049nvyb15))
+16. Spanish National Cancer Research Centre, Human Genotyping-CEGEN Unit Madrid Spain ([ROR:00bvhmc43](https://ror.org/00bvhmc43))
+17. Department of Child and Adolescent Psychiatry, Institute of Psychiatry and Mental Health, Hospital General Universitario Gregorio Marañón (IiSGM) Madrid Spain ([ROR:0111es613](https://ror.org/0111es613))
+18. School of Medicine, Universidad Complutense Madrid Spain ([ROR:02p0gd045](https://ror.org/02p0gd045))
 19. Biocruces Bizkai HRI Bizkaia Spain
-20. https://ror.org/03nzegx43 Cruces University Hospital, Osakidetza Bizkaia Spain
-21. https://ror.org/00ca2c886 Centre for Biomedical Network Research on Mental Health (CIBERSAM), Instituto de Salud Carlos III Madrid Spain
+20. Cruces University Hospital, Osakidetza Bizkaia Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))
+21. Centre for Biomedical Network Research on Mental Health (CIBERSAM), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 22. Fundació Docència I Recerca Mutua Terrassa Barcelona Spain
-23. https://ror.org/00bvhmc43 Spanish National Cancer Research Centre, CNIO Biobank Madrid Spain
+23. Spanish National Cancer Research Centre, CNIO Biobank Madrid Spain ([ROR:00bvhmc43](https://ror.org/00bvhmc43))
 24. Hospital General de Occidente Zapopan Jalisco Mexico
-25. https://ror.org/043xj7k26 Centro Universitario de Tonalá, Universidad de Guadalajara Tonalá Jalisco Mexico
-26. https://ror.org/043xj7k26 Centro de Investigación Multidisciplinario en Salud, Universidad de Guadalajara Tonalá Jalisco Mexico
-27. https://ror.org/05b1rsv17 Universidad Católica San Antonio de Murcia (UCAM) Murcia Spain
-28. https://ror.org/053j10c72 Instituto Murciano de Investigación Biosanitaria (IMIB-Arrixaca) Murcia Spain
-29. https://ror.org/03em6xj44 Hospital Universitario de Salamanca-IBSAL, Servicio de Medicina Interna-Unidad de Enfermedades Infecciosas Salamanca Spain
+25. Centro Universitario de Tonalá, Universidad de Guadalajara Tonalá Jalisco Mexico ([ROR:043xj7k26](https://ror.org/043xj7k26))
+26. Centro de Investigación Multidisciplinario en Salud, Universidad de Guadalajara Tonalá Jalisco Mexico ([ROR:043xj7k26](https://ror.org/043xj7k26))
+27. Universidad Católica San Antonio de Murcia (UCAM) Murcia Spain ([ROR:05b1rsv17](https://ror.org/05b1rsv17))
+28. Instituto Murciano de Investigación Biosanitaria (IMIB-Arrixaca) Murcia Spain ([ROR:053j10c72](https://ror.org/053j10c72))
+29. Hospital Universitario de Salamanca-IBSAL, Servicio de Medicina Interna-Unidad de Enfermedades Infecciosas Salamanca Spain ([ROR:03em6xj44](https://ror.org/03em6xj44))
 30. Escola Tecnica de Saúde, Laboratorio de Vigilancia Molecular Aplicada Brasilia Brazil
-31. https://ror.org/047908t24 Federal University of Pernambuco, Genetics Postgraduate Program Recife Brazil
-32. https://ror.org/011335j04 Hospital Universitario Mutua Terrassa Barcelona Spain
-33. https://ror.org/05n7xcf53 Instituto de Investigación Sanitaria de Santiago (IDIS), Xenética Cardiovascular Santiago de Compostela Spain
-34. https://ror.org/00s29fn93 CIBERCV, ISCIII Madrid Spain
-35. https://ror.org/020yb3m85 Cardiovascular Genetics Center, Institut d’Investigació Biomèdica Girona (IDIBGI) Girona Spain
-36. https://ror.org/01xdxns91 Medical Science Department, School of Medicine, University of Girona Girona Spain
-37. https://ror.org/04g27v387 Hospital Josep Trueta, Cardiology Service Girona Spain
-38. https://ror.org/04vfhnm78 Institute of Biomedicine of Seville (IBiS), Consejo Superior de Investigaciones Científicas (CSIC)- University of Seville- Virgen del Rocio University Hospital Seville Spain
-39. https://ror.org/04vfhnm78 Departamento de Medicina, Hospital Universitario Virgen del Rocío, Universidad de Sevilla Seville Spain
-40. https://ror.org/050q0kv47 CIBERESP, ISCIII Madrid Spain
-41. https://ror.org/03em6xj44 Hospital Universitario de Salamanca-IBSAL, Servicio de Medicina Interna Salamanca Spain
-42. https://ror.org/02f40zc51 Universidad de Salamanca Salamanca Spain
-43. https://ror.org/02g7qcb42 Osakidetza, Cruces University Hospital Bizkaia Spain
-44. https://ror.org/00ca2c886 Centre for Biomedical Network Research on Diabetes and Metabolic Associated Diseases (CIBERDEM), Instituto de Salud Carlos III Madrid Spain
-45. https://ror.org/000xsnr85 University of Pais Vasco, UPV/EHU Bizkaia Spain
+31. Federal University of Pernambuco, Genetics Postgraduate Program Recife Brazil ([ROR:047908t24](https://ror.org/047908t24))
+32. Hospital Universitario Mutua Terrassa Barcelona Spain ([ROR:011335j04](https://ror.org/011335j04))
+33. Instituto de Investigación Sanitaria de Santiago (IDIS), Xenética Cardiovascular Santiago de Compostela Spain ([ROR:05n7xcf53](https://ror.org/05n7xcf53))
+34. CIBERCV, ISCIII Madrid Spain ([ROR:00s29fn93](https://ror.org/00s29fn93))
+35. Cardiovascular Genetics Center, Institut d’Investigació Biomèdica Girona (IDIBGI) Girona Spain ([ROR:020yb3m85](https://ror.org/020yb3m85))
+36. Medical Science Department, School of Medicine, University of Girona Girona Spain ([ROR:01xdxns91](https://ror.org/01xdxns91))
+37. Hospital Josep Trueta, Cardiology Service Girona Spain ([ROR:04g27v387](https://ror.org/04g27v387))
+38. Institute of Biomedicine of Seville (IBiS), Consejo Superior de Investigaciones Científicas (CSIC)- University of Seville- Virgen del Rocio University Hospital Seville Spain ([ROR:04vfhnm78](https://ror.org/04vfhnm78))
+39. Departamento de Medicina, Hospital Universitario Virgen del Rocío, Universidad de Sevilla Seville Spain ([ROR:04vfhnm78](https://ror.org/04vfhnm78))
+40. CIBERESP, ISCIII Madrid Spain ([ROR:050q0kv47](https://ror.org/050q0kv47))
+41. Hospital Universitario de Salamanca-IBSAL, Servicio de Medicina Interna Salamanca Spain ([ROR:03em6xj44](https://ror.org/03em6xj44))
+42. Universidad de Salamanca Salamanca Spain ([ROR:02f40zc51](https://ror.org/02f40zc51))
+43. Osakidetza, Cruces University Hospital Bizkaia Spain ([ROR:02g7qcb42](https://ror.org/02g7qcb42))
+44. Centre for Biomedical Network Research on Diabetes and Metabolic Associated Diseases (CIBERDEM), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+45. University of Pais Vasco, UPV/EHU Bizkaia Spain ([ROR:000xsnr85](https://ror.org/000xsnr85))
 46. Oncology and Genetics Unit, Instituto de Investigacion Sanitaria Galicia Sur, Xerencia de Xestion Integrada de Vigo-Servizo Galego de Saúde Vigo Spain
-47. https://ror.org/05jk45963 Hospital Universitario Río Hortega Valladolid Spain
-48. https://ror.org/044knj408 Servicio de Medicina intensiva, Complejo Hospitalario Universitario de A Coruña (CHUAC), Sistema Galego de Saúde (SERGAS) A Coruña Spain
-49. https://ror.org/03ayjn504 Tecnológico de Monterrey Monterrey Mexico
-50. https://ror.org/00ggpsq73 Department of Microgravity and Translational Regenerative Medicine, Otto von Guericke University Magdeburg Germany
-51. https://ror.org/04tqrbk66 Hospital Universitario Mostoles, Unidad de Genética Madrid Spain
-52. https://ror.org/05p0enq35 Instituto Aragonés de Ciencias de la Salud (IACS) Zaragoza Spain
-53. https://ror.org/03njn4610 Instituto Investigación Sanitaria Aragón (IIS-Aragon) Zaragoza Spain
+47. Hospital Universitario Río Hortega Valladolid Spain ([ROR:05jk45963](https://ror.org/05jk45963))
+48. Servicio de Medicina intensiva, Complejo Hospitalario Universitario de A Coruña (CHUAC), Sistema Galego de Saúde (SERGAS) A Coruña Spain ([ROR:044knj408](https://ror.org/044knj408))
+49. Tecnológico de Monterrey Monterrey Mexico ([ROR:03ayjn504](https://ror.org/03ayjn504))
+50. Department of Microgravity and Translational Regenerative Medicine, Otto von Guericke University Magdeburg Germany ([ROR:00ggpsq73](https://ror.org/00ggpsq73))
+51. Hospital Universitario Mostoles, Unidad de Genética Madrid Spain ([ROR:04tqrbk66](https://ror.org/04tqrbk66))
+52. Instituto Aragonés de Ciencias de la Salud (IACS) Zaragoza Spain ([ROR:05p0enq35](https://ror.org/05p0enq35))
+53. Instituto Investigación Sanitaria Aragón (IIS-Aragon) Zaragoza Spain ([ROR:03njn4610](https://ror.org/03njn4610))
 54. Preventive Medicine Department, Instituto de Investigacion Sanitaria Galicia Sur, Xerencia de Xestion Integrada de Vigo-Servizo Galego de Saúde Vigo Spain
 55. Unidad Diagnóstico Molecular, Fundación Rioja Salud La Rioja Spain
-56. https://ror.org/03em6xj44 Hospital Universitario de Salamanca-IBSAL, Servicio de Cardiología Salamanca Spain
-57. https://ror.org/025gxrt12 IDIVAL Cantabria Spain
-58. https://ror.org/01w4yqf75 Hospital U M Valdecilla Cantabria Spain
-59. https://ror.org/046ffzj20 Universidad de Cantabria Cantabria Spain
-60. https://ror.org/03f27y887 Universidad Nacional de Asunción, Facultad de Politécnica Paraguay United States
-61. https://ror.org/044knj408 Urgencias Hospitalarias, Complejo Hospitalario Universitario de A Coruña (CHUAC), Sistema Galego de Saúde (SERGAS) A Coruña Spain
-62. https://ror.org/00ca2c886 Unidad de Infección Viral e Inmunidad, Centro Nacional de Microbiología (CNM), Instituto de Salud Carlos III (ISCIII) Madrid Spain
-63. https://ror.org/02tzt0b78 Grupo de Investigación en Interacciones Gen-Ambiente y Salud (GIIGAS) - Instituto de Biomedicina (IBIOMED), Universidad de León León Spain
+56. Hospital Universitario de Salamanca-IBSAL, Servicio de Cardiología Salamanca Spain ([ROR:03em6xj44](https://ror.org/03em6xj44))
+57. IDIVAL Cantabria Spain ([ROR:025gxrt12](https://ror.org/025gxrt12))
+58. Hospital U M Valdecilla Cantabria Spain ([ROR:01w4yqf75](https://ror.org/01w4yqf75))
+59. Universidad de Cantabria Cantabria Spain ([ROR:046ffzj20](https://ror.org/046ffzj20))
+60. Universidad Nacional de Asunción, Facultad de Politécnica Paraguay United States ([ROR:03f27y887](https://ror.org/03f27y887))
+61. Urgencias Hospitalarias, Complejo Hospitalario Universitario de A Coruña (CHUAC), Sistema Galego de Saúde (SERGAS) A Coruña Spain ([ROR:044knj408](https://ror.org/044knj408))
+62. Unidad de Infección Viral e Inmunidad, Centro Nacional de Microbiología (CNM), Instituto de Salud Carlos III (ISCIII) Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+63. Grupo de Investigación en Interacciones Gen-Ambiente y Salud (GIIGAS) - Instituto de Biomedicina (IBIOMED), Universidad de León León Spain ([ROR:02tzt0b78](https://ror.org/02tzt0b78))
 64. IDIS Seongnam Republic of Korea
-65. https://ror.org/01ehe5s81 Hospital Universitario de Getafe, Servicio de Genética Madrid Spain
+65. Hospital Universitario de Getafe, Servicio de Genética Madrid Spain ([ROR:01ehe5s81](https://ror.org/01ehe5s81))
 66. Ministerio de Salud Ciudad de Buenos Aires Buenos Aires Argentina
-67. https://ror.org/02f01mz90 Hospital Universitario Virgen de las Nieves, Servicio de Análisis Clínicos e Inmunología Granada Spain
-68. https://ror.org/05n7v5997 IIS La Fe, Plataforma de Farmacogenética Valencia Spain
-69. https://ror.org/043nxc105 Universidad de Valencia, Departamento de Farmacología Valencia Spain
-70. https://ror.org/049nvyb15 Data Analysis Department, Instituto de Investigación Sanitaria-Fundación Jiménez Díaz University Hospital - Universidad Autónoma de Madrid (IIS-FJD, UAM) Madrid Spain
-71. https://ror.org/02mhbdp94 Universidad de los Andes, Facultad de Ciencias Bogotá Colombia
-72. https://ror.org/03ezapm74 SIGEN Alianza Universidad de los Andes - Fundación Santa Fe de Bogotá Bogotá Colombia
-73. https://ror.org/004qj2391 Hospital General de Segovia, Medicina Intensiva Segovia Spain
-74. https://ror.org/00tvate34 Facultad de Farmacia, Universidad San Pablo-CEU, CEU Universities, Urbanización Montepríncipe Boadilla del Monte Spain
-75. https://ror.org/00qyh5r35 Hospital Universitario 12 de Octubre, Department of Immunology Madrid Spain
+67. Hospital Universitario Virgen de las Nieves, Servicio de Análisis Clínicos e Inmunología Granada Spain ([ROR:02f01mz90](https://ror.org/02f01mz90))
+68. IIS La Fe, Plataforma de Farmacogenética Valencia Spain ([ROR:05n7v5997](https://ror.org/05n7v5997))
+69. Universidad de Valencia, Departamento de Farmacología Valencia Spain ([ROR:043nxc105](https://ror.org/043nxc105))
+70. Data Analysis Department, Instituto de Investigación Sanitaria-Fundación Jiménez Díaz University Hospital - Universidad Autónoma de Madrid (IIS-FJD, UAM) Madrid Spain ([ROR:049nvyb15](https://ror.org/049nvyb15))
+71. Universidad de los Andes, Facultad de Ciencias Bogotá Colombia ([ROR:02mhbdp94](https://ror.org/02mhbdp94))
+72. SIGEN Alianza Universidad de los Andes - Fundación Santa Fe de Bogotá Bogotá Colombia ([ROR:03ezapm74](https://ror.org/03ezapm74))
+73. Hospital General de Segovia, Medicina Intensiva Segovia Spain ([ROR:004qj2391](https://ror.org/004qj2391))
+74. Facultad de Farmacia, Universidad San Pablo-CEU, CEU Universities, Urbanización Montepríncipe Boadilla del Monte Spain ([ROR:00tvate34](https://ror.org/00tvate34))
+75. Hospital Universitario 12 de Octubre, Department of Immunology Madrid Spain ([ROR:00qyh5r35](https://ror.org/00qyh5r35))
 76. Instituto de Investigación Sanitaria Hospital 12 de Octubre (imas12), Transplant Immunology and Immunodeficiencies Group Madrid Spain
-77. https://ror.org/03ezapm74 Fundación Santa Fe de Bogota, Departamento Patologia y Laboratorios Bogotá Colombia
+77. Fundación Santa Fe de Bogota, Departamento Patologia y Laboratorios Bogotá Colombia ([ROR:03ezapm74](https://ror.org/03ezapm74))
 78. Unidad de Genética y Genómica Islas Baleares Islas Baleares Spain
-79. https://ror.org/05jmd4043 Hospital Universitario Son Espases, Unidad de Diagnóstico Molecular y Genética Clínica Islas Baleares Spain
-80. https://ror.org/059n1d175 Genomics of Complex Diseases Unit, Research Institute of Hospital de la Santa Creu i Sant Pau, IIB Sant Pau Barcelona Spain
-81. https://ror.org/02xfp8v59 Universidade de Brasília, Faculdade de Medicina Brasília Brazil
-82. https://ror.org/02xfp8v59 Programa de Pós-Graduação em Ciências Médicas (UnB) Brasília Brazil
-83. https://ror.org/02xfp8v59 Programa de Pós-Graduação em Ciencias da Saude (UnB) Brazila Brazil
-84. https://ror.org/028d75n58 Hospital El Bierzo, Unidad Cuidados Intensivos León Spain
-85. https://ror.org/04tqrbk66 Hospital Universitario Mostoles, Medicina Interna Madrid, Spai Spain
-86. https://ror.org/03ha64j07 Universidad Francisco de Vitoria Madrid Spain
-87. https://ror.org/02xfp8v59 Departamento de Genética e Morfologia, Instituto de Ciências Biológicas, Universidade de Brasília Brasília Brazil
-88. https://ror.org/02xfp8v59 Programa de Pós-Graduação em Biologia Animal (UnB) Brasília Brazil
-89. https://ror.org/02xfp8v59 Programa de Pós-Graduação Profissional em Ensino de Biologia (UnB) Brasília Brazil
-90. https://ror.org/02p0gd045 Universidad Complutense de Madrid, Department of Immunology, Ophthalmology and ENT Madrid Spain
-91. https://ror.org/03q9sr818 Universidade Federal do Pará, Núcleo de Pesquisas em Oncologia Belém Brazil
-92. https://ror.org/03vfjzd38 Infectious Diseases, Microbiota and Metabolism Unit, CSIC Associated Unit, Center for Biomedical Research of La Rioja (CIBIR) Logroño Spain
+79. Hospital Universitario Son Espases, Unidad de Diagnóstico Molecular y Genética Clínica Islas Baleares Spain ([ROR:05jmd4043](https://ror.org/05jmd4043))
+80. Genomics of Complex Diseases Unit, Research Institute of Hospital de la Santa Creu i Sant Pau, IIB Sant Pau Barcelona Spain ([ROR:059n1d175](https://ror.org/059n1d175))
+81. Universidade de Brasília, Faculdade de Medicina Brasília Brazil ([ROR:02xfp8v59](https://ror.org/02xfp8v59))
+82. Programa de Pós-Graduação em Ciências Médicas (UnB) Brasília Brazil ([ROR:02xfp8v59](https://ror.org/02xfp8v59))
+83. Programa de Pós-Graduação em Ciencias da Saude (UnB) Brazila Brazil ([ROR:02xfp8v59](https://ror.org/02xfp8v59))
+84. Hospital El Bierzo, Unidad Cuidados Intensivos León Spain ([ROR:028d75n58](https://ror.org/028d75n58))
+85. Hospital Universitario Mostoles, Medicina Interna Madrid, Spai Spain ([ROR:04tqrbk66](https://ror.org/04tqrbk66))
+86. Universidad Francisco de Vitoria Madrid Spain ([ROR:03ha64j07](https://ror.org/03ha64j07))
+87. Departamento de Genética e Morfologia, Instituto de Ciências Biológicas, Universidade de Brasília Brasília Brazil ([ROR:02xfp8v59](https://ror.org/02xfp8v59))
+88. Programa de Pós-Graduação em Biologia Animal (UnB) Brasília Brazil ([ROR:02xfp8v59](https://ror.org/02xfp8v59))
+89. Programa de Pós-Graduação Profissional em Ensino de Biologia (UnB) Brasília Brazil ([ROR:02xfp8v59](https://ror.org/02xfp8v59))
+90. Universidad Complutense de Madrid, Department of Immunology, Ophthalmology and ENT Madrid Spain ([ROR:02p0gd045](https://ror.org/02p0gd045))
+91. Universidade Federal do Pará, Núcleo de Pesquisas em Oncologia Belém Brazil ([ROR:03q9sr818](https://ror.org/03q9sr818))
+92. Infectious Diseases, Microbiota and Metabolism Unit, CSIC Associated Unit, Center for Biomedical Research of La Rioja (CIBIR) Logroño Spain ([ROR:03vfjzd38](https://ror.org/03vfjzd38))
 93. Inditex, A Coruña Corunna Spain
 94. GENYCA Madrid Spain
-95. https://ror.org/02vz80y09 Instituto Mexicano del Seguro Social (IMSS), Centro Médico Nacional Siglo XXI, Unidad de Investigación Médica en Enfermedades Infecciosas y Parasitarias Mexico City Mexico
-96. https://ror.org/004vn8r55 Instituto Mexicano del Seguro Social (IMSS), Centro Médico Nacional La Raza, Hospital de Infectología Mexico City Mexico
+95. Instituto Mexicano del Seguro Social (IMSS), Centro Médico Nacional Siglo XXI, Unidad de Investigación Médica en Enfermedades Infecciosas y Parasitarias Mexico City Mexico ([ROR:02vz80y09](https://ror.org/02vz80y09))
+96. Instituto Mexicano del Seguro Social (IMSS), Centro Médico Nacional La Raza, Hospital de Infectología Mexico City Mexico ([ROR:004vn8r55](https://ror.org/004vn8r55))
 97. Clinica Comfamiliar Risaralda Pereira Colombia
-98. https://ror.org/0008xqs48 Bellvitge Biomedical Research Institute (IDIBELL), Neurometabolic Diseases Laboratory, L’Hospitalet de Llobregat Barcelona Spain
-99. https://ror.org/0371hy230 Catalan Institution of Research and Advanced Studies (ICREA) Barcelona Spain
+98. Bellvitge Biomedical Research Institute (IDIBELL), Neurometabolic Diseases Laboratory, L’Hospitalet de Llobregat Barcelona Spain ([ROR:0008xqs48](https://ror.org/0008xqs48))
+99. Catalan Institution of Research and Advanced Studies (ICREA) Barcelona Spain ([ROR:0371hy230](https://ror.org/0371hy230))
 100. Hospital Ophir Loyola, Departamento de Ensino e Pesquisa Belém Brazil
-101. https://ror.org/00mpdg388 Unidad de Cuidados Intensivos, Hospital Clínico Universitario de Santiago (CHUS), Sistema Galego de Saúde (SERGAS) Santiago de Compostela Spain
-102. https://ror.org/01cby8j38 Department of Preventive Medicine and Public Health, School of Medicine, Universidad Autónoma de Madrid Madrid Spain
-103. https://ror.org/017bynh47 IdiPaz (Instituto de Investigación Sanitaria Hospital Universitario La Paz) Madrid Spain
-104. https://ror.org/027pk6j83 IMDEA-Food Institute, CEI UAM+CSIC Madrid Spain
+101. Unidad de Cuidados Intensivos, Hospital Clínico Universitario de Santiago (CHUS), Sistema Galego de Saúde (SERGAS) Santiago de Compostela Spain ([ROR:00mpdg388](https://ror.org/00mpdg388))
+102. Department of Preventive Medicine and Public Health, School of Medicine, Universidad Autónoma de Madrid Madrid Spain ([ROR:01cby8j38](https://ror.org/01cby8j38))
+103. IdiPaz (Instituto de Investigación Sanitaria Hospital Universitario La Paz) Madrid Spain ([ROR:017bynh47](https://ror.org/017bynh47))
+104. IMDEA-Food Institute, CEI UAM+CSIC Madrid Spain ([ROR:027pk6j83](https://ror.org/027pk6j83))
 105. Complejo Asistencial Universitario de León León Spain
-106. https://ror.org/026yy9j15 Instituto de Investigación Biosanitaria de Granada (ibs GRANADA) Granada Spain
-107. https://ror.org/04njjy449 Universidad de Granada, Departamento Bioquímica, Biología Molecular e Inmunología III Granada Spain
+106. Instituto de Investigación Biosanitaria de Granada (ibs GRANADA) Granada Spain ([ROR:026yy9j15](https://ror.org/026yy9j15))
+107. Universidad de Granada, Departamento Bioquímica, Biología Molecular e Inmunología III Granada Spain ([ROR:04njjy449](https://ror.org/04njjy449))
 108. Hospital Infanta Elena, Allergy Unit, Valdemoro Madrid Spain
-109. https://ror.org/049nvyb15 Instituto de Investigación Sanitaria-Fundación Jiménez Díaz University Hospital - Universidad Autónoma de Madrid (IIS-FJD, UAM) Madrid Spain
-110. https://ror.org/03ha64j07 Faculty of Medicine, Universidad Francisco de Vitoria Madrid Spain
-111. https://ror.org/05nfzf209 Hospital Universitario Infanta Leonor Madrid Spain
-112. https://ror.org/02p0gd045 Complutense University of Madrid Madrid Spain
+109. Instituto de Investigación Sanitaria-Fundación Jiménez Díaz University Hospital - Universidad Autónoma de Madrid (IIS-FJD, UAM) Madrid Spain ([ROR:049nvyb15](https://ror.org/049nvyb15))
+110. Faculty of Medicine, Universidad Francisco de Vitoria Madrid Spain ([ROR:03ha64j07](https://ror.org/03ha64j07))
+111. Hospital Universitario Infanta Leonor Madrid Spain ([ROR:05nfzf209](https://ror.org/05nfzf209))
+112. Complutense University of Madrid Madrid Spain ([ROR:02p0gd045](https://ror.org/02p0gd045))
 113. Gregorio Marañón Health Research Institute (IiSGM) Madrid Spain
-114. https://ror.org/059n1d175 Haemostasis and Thrombosis Unit, Hospital de la Santa Creu i Sant Pau, IIB Sant Pau Barcelona Spain
-115. https://ror.org/04fffmj41 Hospital Clinico Universitario de Valladolid, Servicio de Anestesiologia y Reanimación Valladolid Spain
-116. https://ror.org/01fvbaw18 Universidad de Valladolid, Departamento de Cirugía Valladolid Spain
-117. https://ror.org/04fffmj41 Hospital Clinico Universitario de Valladolid, Servicio de Hematologia y Hemoterapia Valladolid Spain
-118. https://ror.org/05te51w08 Hospital de Niños Ricardo Gutierrez Buenos Aires Argentina
-119. https://ror.org/02yr3f298 Fundación Universitaria de Ciencias de la Salud Bogotá Colombia
-120. https://ror.org/00bvhmc43 Spanish National Cancer Research Centre, Familial Cancer Clinical Unit Madrid Spain
-121. https://ror.org/01j5v0d02 University Hospital of Burgos Burgos Spain
-122. https://ror.org/02njbw696 Universidad Simón Bolívar, Facultad de Ciencias de la Salud Barranquilla Colombia
+114. Haemostasis and Thrombosis Unit, Hospital de la Santa Creu i Sant Pau, IIB Sant Pau Barcelona Spain ([ROR:059n1d175](https://ror.org/059n1d175))
+115. Hospital Clinico Universitario de Valladolid, Servicio de Anestesiologia y Reanimación Valladolid Spain ([ROR:04fffmj41](https://ror.org/04fffmj41))
+116. Universidad de Valladolid, Departamento de Cirugía Valladolid Spain ([ROR:01fvbaw18](https://ror.org/01fvbaw18))
+117. Hospital Clinico Universitario de Valladolid, Servicio de Hematologia y Hemoterapia Valladolid Spain ([ROR:04fffmj41](https://ror.org/04fffmj41))
+118. Hospital de Niños Ricardo Gutierrez Buenos Aires Argentina ([ROR:05te51w08](https://ror.org/05te51w08))
+119. Fundación Universitaria de Ciencias de la Salud Bogotá Colombia ([ROR:02yr3f298](https://ror.org/02yr3f298))
+120. Spanish National Cancer Research Centre, Familial Cancer Clinical Unit Madrid Spain ([ROR:00bvhmc43](https://ror.org/00bvhmc43))
+121. University Hospital of Burgos Burgos Spain ([ROR:01j5v0d02](https://ror.org/01j5v0d02))
+122. Universidad Simón Bolívar, Facultad de Ciencias de la Salud Barranquilla Colombia ([ROR:02njbw696](https://ror.org/02njbw696))
 123. Centro para el Desarrollo de la Investigación Científica Asunción Paraguay
-124. https://ror.org/00ca2c886 Centre for Biomedical Network Research on Neurodegenerative Diseases (CIBERNED), Instituto de Salud Carlos III Madrid Spain
-125. https://ror.org/00tse2b39 Research Center and Memory clinic, ACE Alzheimer Center Barcelona, Universitat Internacional de Catalunya Barcelona Spain
-126. https://ror.org/053zwpg96 CIEN Foundation/Queen Sofia Foundation Alzheimer Center Madrid Spain
-127. https://ror.org/04cxs7048 Hospital Universitario de Valme, Unidad Clínica de Enfermedades Infecciosas y Microbiología Sevilla Spain
-128. https://ror.org/058thx797 Sección Genética Médica - Servicio de Pediatría, Hospital Clínico Universitario Virgen de la Arrixaca, Servicio Murciano de Salud Murcia Spain
-129. https://ror.org/03p3aeb86 Departamento Cirugía, Pediatría, Obstetricia y Ginecología, Facultad de Medicina, Universidad de Murcia (UMU) Murcia Spain
-130. https://ror.org/00ca2c886 Grupo Clínico Vinculado, Centre for Biomedical Network Research on Rare Diseases (CIBERER), Instituto de Salud Carlos III Madrid Spain
-131. https://ror.org/03dbr7087 Department of Anthropology, University of Toronto at Mississauga Mississauga Canada
-132. https://ror.org/03ayjn504 Tecnologico de Monterrey, Escuela de Medicina y Ciencias de la Salud Monterrey Mexico
-133. https://ror.org/005a3p084 Research Unit, Hospital Universitario Nuestra Señora de Candelaria, Instituto de Investigación Sanitaria de Canarias Santa Cruz de Tenerife Spain
-134. https://ror.org/00bqe3914 Department of Clinical Sciences, University Fernando Pessoa Canarias Las Palmas de Gran Canaria Spain
-135. https://ror.org/00ca2c886 Centre for Biomedical Network Research on Respiratory Diseases (CIBERES), Instituto de Salud Carlos III Madrid Spain
+124. Centre for Biomedical Network Research on Neurodegenerative Diseases (CIBERNED), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+125. Research Center and Memory clinic, ACE Alzheimer Center Barcelona, Universitat Internacional de Catalunya Barcelona Spain ([ROR:00tse2b39](https://ror.org/00tse2b39))
+126. CIEN Foundation/Queen Sofia Foundation Alzheimer Center Madrid Spain ([ROR:053zwpg96](https://ror.org/053zwpg96))
+127. Hospital Universitario de Valme, Unidad Clínica de Enfermedades Infecciosas y Microbiología Sevilla Spain ([ROR:04cxs7048](https://ror.org/04cxs7048))
+128. Sección Genética Médica - Servicio de Pediatría, Hospital Clínico Universitario Virgen de la Arrixaca, Servicio Murciano de Salud Murcia Spain ([ROR:058thx797](https://ror.org/058thx797))
+129. Departamento Cirugía, Pediatría, Obstetricia y Ginecología, Facultad de Medicina, Universidad de Murcia (UMU) Murcia Spain ([ROR:03p3aeb86](https://ror.org/03p3aeb86))
+130. Grupo Clínico Vinculado, Centre for Biomedical Network Research on Rare Diseases (CIBERER), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+131. Department of Anthropology, University of Toronto at Mississauga Mississauga Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+132. Tecnologico de Monterrey, Escuela de Medicina y Ciencias de la Salud Monterrey Mexico ([ROR:03ayjn504](https://ror.org/03ayjn504))
+133. Research Unit, Hospital Universitario Nuestra Señora de Candelaria, Instituto de Investigación Sanitaria de Canarias Santa Cruz de Tenerife Spain ([ROR:005a3p084](https://ror.org/005a3p084))
+134. Department of Clinical Sciences, University Fernando Pessoa Canarias Las Palmas de Gran Canaria Spain ([ROR:00bqe3914](https://ror.org/00bqe3914))
+135. Centre for Biomedical Network Research on Respiratory Diseases (CIBERES), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 
 † Corresponding author
 
 ## Abstract
 
-The genetic basis of severe COVID-19 has been thoroughly studied, and many genetic risk factors shared between populations have been identified. However, reduced sample sizes from non-European groups have limited the discovery of population-specific common risk loci. In this second study nested in the SCOURGE consortium, we conducted a genome-wide association study (GWAS) for COVID-19 hospitalization in admixed Americans, comprising a total of 4702 hospitalized cases recruited by SCOURGE and seven other participating studies in the COVID-19 Host Genetic Initiative. We identified four genome-wide significant associations, two of which constitute novel loci and were first discovered in Latin American populations ( BAZ2B and DDIAS ). A trans-ethnic meta-analysis revealed another novel cross-population risk locus in CREBBP . Finally, we assessed the performance of a cross-ancestry polygenic risk score in the SCOURGE admixed American cohort. This study constitutes the largest GWAS for COVID-19 hospitalization in admixed Latin Americans conducted to date. This allowed to reveal novel risk loci and emphasize the need of considering the diversity of populations in genomic research.
+The genetic basis of severe COVID-19 has been thoroughly studied, and many genetic risk factors shared between populations have been identified. However, reduced sample sizes from non-European groups have limited the discovery of population-specific common risk loci. In this second study nested in the SCOURGE consortium, we conducted a genome-wide association study (GWAS) for COVID-19 hospitalization in admixed Americans, comprising a total of 4702 hospitalized cases recruited by SCOURGE and seven other participating studies in the COVID-19 Host Genetic Initiative. We identified four genome-wide significant associations, two of which constitute novel loci and were first discovered in Latin American populations (BAZ2B and DDIAS). A trans-ethnic meta-analysis revealed another novel cross-population risk locus in CREBBP. Finally, we assessed the performance of a cross-ancestry polygenic risk score in the SCOURGE admixed American cohort. This study constitutes the largest GWAS for COVID-19 hospitalization in admixed Latin Americans conducted to date. This allowed to reveal novel risk loci and emphasize the need of considering the diversity of populations in genomic research.
 
 ## Introduction
 
@@ -278,19 +278,275 @@ The Spanish Coalition to Unlock Research on Host Genetics on COVID-19 (SCOURGE) 
 
 ## Results
 
-## Meta-analysis of COVID-19 hospitalization in admixed Americans
+### Meta-analysis of COVID-19 hospitalization in admixed Americans
 
-## Study cohorts
+#### Study cohorts
 
 Within the SCOURGE consortium, we included 1608 hospitalized cases and 1887 controls (not hospitalized COVID-19 patients) from Latin American countries and from recruitments of individuals of Latin American descent conducted in Spain (Supplementary file 1). Quality control details and estimation of global genetic inferred ancestry (GIA) (Figure 1—figure supplement 1) are described in ‘Materials and methods’, whereas clinical and demographic characteristics of patients included in the analysis are shown in Table 1. Summary statistics from the SCOURGE cohort were obtained under a logistic mixed model with the SAIGE model (‘Materials and methods’). Another seven studies participating in the COVID-19 HGI consortium were included in the meta-analysis of COVID-19 hospitalization in admixed Americans (Figure 1).
 
-## GWAS meta-analysis
+![Figure 1.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig1-v1.jpg)
+
+**Figure 1.:** Stage I of the study involved a meta-analysis of the Latin American genome-wide association studies (GWAS) from SCOURGE and the COVID-19 Host Genetics Initiative. The resulting meta-analysis was leveraged to prioritize genes by using a transcriptome-wide association study (TWAS), Bayesian fine-mapping and functional annotations, and to assess the generalizability of polygenic risk score (PGS) cross-population models in Latin Americans. Stage II involved two additional cross-population GWAS meta-analyses to further investigate the replicability of findings.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** European (EUR), African (AFR), and Native American (AMR) GIA was derived with ADMIXTURE from a reference panel composed of Aymaran, Mayan, Nahuan, and Quechuan individuals of Native American genetic ancestry and randomly selected samples from the EUR and AFR 1KGP populations. The colors represent the different geographical sampling regions from which the admixed American individuals from SCOURGE were recruited.
+
+**Table 1.**
+ Demographic characteristics of the SCOURGE Latin American cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Variable</th>
+      <th>Non-hospitalized (N = 1887)</th>
+      <th>Hospitalized(N = 1625)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Age, mean years ±SD</td>
+      <td>39.1 ± 11.9</td>
+      <td>54.1 ± 14.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Sex, N (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female (%)</td>
+      <td>1253 (66.4)</td>
+      <td>668 (41.1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Global genetic inferred ancestry, % mean ± SD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>European</td>
+      <td>54.4 ± 16.2</td>
+      <td>39.4 ± 20.7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>African</td>
+      <td>15.3 ± 12.7</td>
+      <td>9.1 ± 11.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Native American</td>
+      <td>30.3 ± 19.8</td>
+      <td>51.3 ± 26.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Comorbidities, N (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vascular/endocrinological</td>
+      <td>488 (25.9)</td>
+      <td>888 (64.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cardiac</td>
+      <td>60 (3.2)</td>
+      <td>151 (9.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nervous</td>
+      <td>15 (0.8)</td>
+      <td>61 (3.8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Digestive</td>
+      <td>14 (0.7)</td>
+      <td>33 (2.0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Onco-hematological</td>
+      <td>21 (1.1)</td>
+      <td>48 (3.00)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Respiratory</td>
+      <td>76 (4.0)</td>
+      <td>118 (7.3)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### GWAS meta-analysis
 
 We performed a fixed-effects GWAS meta-analysis using the inverse of the variance as weights for the overlapping markers. The combined GWAS sample size consisted of 4702 admixed AMR hospitalized cases and 68,573 controls.
 
 This GWAS meta-analysis revealed genome-wide significant associations at four risk loci (Table 2, Figure 2; a quantile‒quantile plot is shown in Figure 2—figure supplement 1), two of which (BAZ2B and DDIAS) were novel discoveries. A Meta-Analysis Model-based Assessment of replicability (MAMBA) approach to leverage the strength and consistency of associations across the contributing studies supported >90% likelihood for one of the novel loci to likely replicate in future studies (Table 3). Four lead variants were identified, linked to other 310 variants (Supplementary files 2 and 3). A gene-based association test revealed a significant association in BAZ2B and in previously known COVID-19 risk loci: LZTFL1, XCR1, FYCO1, CCR9, and IFNAR2 (Supplementary file 4).
 
+**Table 2.**
+ Lead independent variants in the admixed AMR genome-wide association studies (GWAS) meta-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SNP rsID</th>
+      <th>chr:pos</th>
+      <th>EA</th>
+      <th>NEA</th>
+      <th>OR (95% CI)</th>
+      <th>p-Value</th>
+      <th>EAF cases</th>
+      <th>EAF controls</th>
+      <th>Nearest gene</th>
+      <th>Mamba PPR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs13003835</td>
+      <td>2:159407982</td>
+      <td>T</td>
+      <td>C</td>
+      <td>1.20 (1.12–1.27)</td>
+      <td>3.66E-08</td>
+      <td>0.563</td>
+      <td>0.429</td>
+      <td>BAZ2B</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>rs35731912</td>
+      <td>3:45848457</td>
+      <td>T</td>
+      <td>C</td>
+      <td>1.65 (1.47–1.85)</td>
+      <td>6.30E-17</td>
+      <td>0.087</td>
+      <td>0.056</td>
+      <td>LZTFL1</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>rs2477820</td>
+      <td>6:41535254</td>
+      <td>A</td>
+      <td>T</td>
+      <td>0.84 (0.79–0.89)</td>
+      <td>1.89E-08</td>
+      <td>0.453</td>
+      <td>0.517</td>
+      <td>FOXP4-AS1</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>rs77599934</td>
+      <td>11:82906875</td>
+      <td>G</td>
+      <td>A</td>
+      <td>2.27 (1.7–3.04)</td>
+      <td>2.26E-08</td>
+      <td>0.016</td>
+      <td>0.011</td>
+      <td>DDIAS</td>
+      <td>0.95</td>
+    </tr>
+  </tbody>
+</table>
+
+_EA: effect allele; NEA: noneffect allele; EAF: effect allele frequency in the SCOURGE study; PPR: posterior probability of replicability._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig2-v1.jpg)
+
+**Figure 2.:** Probability thresholds at p=5 × 10–8 and p=5 × 10–5 are indicated by the horizontal lines. Genome-wide significant associations with COVID-19 hospitalizations were found on chromosome 2 (within BAZ2B), chromosome 3 (within LZTFL1), chromosome 6 (within FOXP4), and chromosome 11 (within DDIAS).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** A lambda inflation factor of 1.015 was obtained.
+
+**Table 3.**
+ Novel variants in the SC-HGIALL and SC-HGI3POP meta-analyses (with respect to HGIv7).Independent signals after LD clumping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SNP rsID</th>
+      <th>chr:pos</th>
+      <th>EA</th>
+      <th>NEA</th>
+      <th>OR (95% CI)</th>
+      <th>p-Value</th>
+      <th>Nearest gene</th>
+      <th>Analysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs76564172</td>
+      <td>16:3892266</td>
+      <td>T</td>
+      <td>G</td>
+      <td>1.31 (1.19–1.44)</td>
+      <td>9.64E-09</td>
+      <td>CREBBP</td>
+      <td>SC-HGI3POP</td>
+    </tr>
+    <tr>
+      <td>rs66833742</td>
+      <td>19:4063488</td>
+      <td>T</td>
+      <td>C</td>
+      <td>0.94 (0.92–0.96)</td>
+      <td>1.89E-08</td>
+      <td>ZBTB7A</td>
+      <td>SC-HGI3POP</td>
+    </tr>
+    <tr>
+      <td>rs66833742</td>
+      <td>19:4063488</td>
+      <td>T</td>
+      <td>C</td>
+      <td>0.94 (0.92–0.96)</td>
+      <td>2.50E-08</td>
+      <td>ZBTB7A</td>
+      <td>SC-HGIALL</td>
+    </tr>
+    <tr>
+      <td>rs2876034</td>
+      <td>20:6492834</td>
+      <td>A</td>
+      <td>T</td>
+      <td>0.95 (0.93–0.97)</td>
+      <td>2.83E-08</td>
+      <td>CASC20</td>
+      <td>SC-HGIALL</td>
+    </tr>
+  </tbody>
+</table>
+
+_EA: effect allele; NEA: non-effect allele._
+
 Located within the BAZ2B gene, the sentinel variant rs13003835 (Figure 3) is an intronic variant associated with an increased risk of COVID-19 hospitalization (odds ratio [OR]=1.20, 95% confidence interval [CI] = 1.12–1.27, p=3.66 × 10–8). This association was not previously reported in any GWAS of COVID-19 published to date. Interestingly, rs13003835 did not reach significance (p=0.972) in the COVID-19 HGI trans-ancestry meta-analysis including the five population groups (Kanai et al., 2023).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig3-v1.jpg)
+
+**Figure 3.:** (A) Regional association plots for rs1003835 at chromosome 2 and rs77599934 at chromosome 11. (B) Allele frequency distribution across the 1000 Genomes Project populations for the lead variants rs1003835 and rs77599934. Retrieved from The Geography of Genetic Variants Web or GGV.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Colored in red, the variants allocated to the credible set at the 95% confidence according to the Bayesian fine mapping. In blue, the sentinel variant.
 
 The other novel risk locus is led by the sentinel variant rs77599934 (Figure 3), a rare intronic variant located in chromosome 11 within DDIAS and associated with the risk of COVID-19 hospitalization (OR = 2.27, 95% CI = 1.70–3.04, p=2.26 × 10–8).
 
@@ -300,15 +556,15 @@ The GWAS meta-analysis also pinpointed two significant variants at known loci, L
 
 None of the lead variants was associated with the comorbidities included in Table 1.
 
-## Functional mapping of novel risk variants
+### Functional mapping of novel risk variants
 
 Variants belonging to the lead loci were prioritized by positional and expression quantitative trait loci (eQTL) mapping with FUMA, resulting in 31 mapped genes (Supplementary file 5). Within the region surrounding the lead variant in chromosome 2, FUMA prioritized four genes in addition to BAZ2B (PLA2R1, LY75, WDSUB1, and CD302). rs13003835 (allele C) is an eQTL of LY75 in the esophagus mucosa (NES = 0.27) and of BAZ2B-AS in whole blood (NES = 0.27), while rs2884110 (R2 = 0.85) is an eQTL of LY75 in lung (NES = 0.22). As for the chromosome 11, rs77599934 (allele G) is in moderate-to-strong LD (r2 = 0.776) with rs60606421 (G deletion, allele -), which is an eQTL associated with a reduced expression of DDIAS in the lungs (NES = −0.49, allele -). The sentinel variant for the region in chromosome 16 is in perfect LD (r2 = 1) with rs601183, an eQTL of ZNF774 in the lung.
 
-## Bayesian fine mapping
+#### Bayesian fine mapping
 
 We performed different approaches to narrow down the prioritized loci to a set of most likely genes driving the associations. First, we computed credible sets at the 95% confidence level for causal variants and annotated them with VEP and V2G aggregate scoring. The 95% confidence credible set from the region of chromosome 2 around rs13003835 included 76 variants, which can be found in Supplementary file 6 and a regional plot is shown in Figure 3—figure supplement 1 (VEP and V2G annotations are included in Supplementary files 7 and 8). TheV2G score prioritized BAZ2B as the most likely gene driving the association. However, the approach was unable to converge allocating variants in a 95% confidence credible set for the region in chromosome 11.
 
-## Transcriptome-wide association study (TWAS)
+#### Transcriptome-wide association study (TWAS)
 
 Five novel genes, namely, SLC25A37, SMARCC1, CAMP, TYW3, and S100A12 (Supplementary file 9), were found to be significantly associated in the cross-tissue TWAS. To our knowledge, these genes have not been reported previously in any COVID-19 TWAS or GWAS analyses published to date. In the single-tissue analyses, ATP5O and CXCR6 were significantly associated in the lungs, CCR9 was significantly associated in whole blood, and IFNAR2 and SLC25A37 were associated in lymphocytes.
 
@@ -316,9 +572,17 @@ Likewise, we carried out TWAS analyses using the models trained in the admixed p
 
 All mapped genes from analyses conducted in AMR populations are shown in Figure 4, and associations for the two novel variants with expression are shown in Figure 4—figure supplement 1.
 
-## Genetic architecture of COVID-19 hospitalization in AMR populations
+![Figure 4.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig4-v1.jpg)
 
-## Allele frequencies of rs13003835 and rs77599934 across ancestries
+**Figure 4.:** Genome-wide association studies (GWAS) catalog association for BAZ2B-AS was with FEV/FCV ratio. Literature-based evidence is further explored in ‘Discussion’.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93666/elife-93666-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** rs1003835 (chromosome 2) maps to BAZ2B, LY75, and PLA2R1 genes. As for the lead variant of chromosome 11, rs77599934, since it was not an eQTL, we used an LD proxy variant (rs60606421). DDIAS and PRCP genes map closely to this variant. NES and p-values correspond to the normalized effect size (and direction) of eQTL-gene associations and the p-value for the tissue, respectively.
+
+### Genetic architecture of COVID-19 hospitalization in AMR populations
+
+#### Allele frequencies of rs13003835 and rs77599934 across ancestries
 
 Neither rs13003835 (BAZ2B) nor rs77599934 (DDIAS) were significantly associated in the COVID-19 HGI B2 cross-population or population-specific meta-analyses. Thus, we investigated their allele frequencies (AF) across populations and compared their effect sizes.
 
@@ -330,7 +594,7 @@ According to gnomAD v3.1.2, the T allele at rs13003835 (BAZ2B) has an AF of 43% 
 
 rs77599934 (DDIAS) had an AF of 1.1% for the G allele in the non-hospitalized controls (Table 2), in line with the recorded gnomAD AF of 1% in admixed AMR groups. This variant has the potential to be a population-specific variant, given the allele frequencies in other population groups, such as EUR (0% in Finnish, 0.025% in non-Finnish), EAS (0%) and SAS (0.042%), and its greater effect size over AFR populations (Figure 5). Examining the LAI, the G allele occurs at a 10.8% frequency in the African component, while it is almost absent in the Native American and European. Due to its low MAF, rs77599934 was not analyzed in the COVID-19 HGI B2 cross-population meta-analysis and was only present in the HGI B2 AFR population-specific meta-analysis, precluding the comparison (Figure 5). For this reason, we retrieved the variant with the lowest p-value within a 50 kb region around rs77599934 in the COVID-19 HGI cross-population analysis to investigate whether it was in moderate-to-strong LD with our sentinel variant. The variant with the smallest p-value was rs75684040 (OR = 1.07, 95% CI = 1.03–1.12, p=1.84 × 10–3). However, LD calculations using the 1KGP phase 3 dataset indicated that rs77599934 and rs75684040 were poorly correlated (r2 = 0.11). As for AFR populations, the variant with the lowest p-value was rs138860115 (p=8.3 × 10–3), but it was not correlated with the lead SNP of this locus.
 
-## Cross-population meta-analyses
+#### Cross-population meta-analyses
 
 We carried out two cross-ancestry inverse variance-weighted fixed-effects meta-analyses with the admixed AMR GWAS meta-analysis results to evaluate whether the discovered risk loci replicated when considering other population groups. In doing so, we also identified novel cross-population COVID-19 hospitalization risk loci.
 
@@ -340,7 +604,7 @@ In this cross-ancestry meta-analysis, we replicated two associations that were n
 
 In a second analysis, we also explored the associations across the defined admixed AMR, EUR, and AFR ancestral sources by combining through meta-analysis the SCOURGE Latin American GWAS results with the HGI studies in EUR, AFR, and admixed AMR and excluding those from EAS and SAS (Supplementary file 13). We refer to this as the SC-HGI3POP meta-analysis. The association at rs13003835 (BAZ2B, OR = 1.01, 95% CI = 0.98–1.03, p=0.605) was not replicated, and rs77599934 near DDIAS could not be assessed, although the association at the ZBTB7A locus was confirmed (rs66833742, OR = 0.94, 95% CI = 0.92–0.96, p=1.89 × 10–8). The variant rs76564172 located near CREBBP also reached statistical significance (OR = 1.31, 95% CI = 1.25–1.38, p=9.64 × 10–9). The sentinel variant of the region linked to CREBBP (in the trans-ancestry meta-analysis) was also subjected to a Bayesian fine mapping (Supplementary file 6). Eight variants were included in the credible set for the region in chromosome 16 (meta-analysis SC-HGI3POP).
 
-## Polygenic risk score models
+### Polygenic risk score models
 
 Using the 49 variants associated with disease severity that are shared across populations according to the HGIv7, we constructed a PGS model to assess its generalizability in the admixed AMR (Supplementary file 14). First, we calculated the PGS for the SCOURGE Latin Americans and explored the association with COVID-19 hospitalization under a logistic regression model. The PGS model was associated with a 1.48-fold increase in COVID-19 hospitalization risk per every PGS standard deviation. It also contributed to explaining a slightly larger variance (∆R2 = 1.07%) than the baseline model.
 
@@ -376,9 +640,110 @@ This study provides novel insights into the genetic basis of COVID-19 severity, 
 
 ## Materials and methods
 
-## GWAS in Latin Americans from SCOURGE
+**Key resources table**
 
-## The SCOURGE Latin American cohort
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chemagic DNA Blood 100 kit</td>
+      <td>PerkinElmer Chemagen Technologies GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axiom Analysis Suite</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>Version 4.0.3.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PLINK</td>
+      <td>Purcell et al., 2007; https://www.cog-genomics.org/plink/</td>
+      <td>RRID:SCR_001757</td>
+      <td>Version 1.9; v2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TOPMed Imputation Server</td>
+      <td>https://imputation.biodatacatalyst.nhlbi.nih.gov/</td>
+      <td></td>
+      <td>Version 2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ADMIXTURE</td>
+      <td>Alexander et al., 2009; https://dalexander.github.io/admixture/</td>
+      <td>RRID:SCR_001263</td>
+      <td>Version 1.3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAIGEgds</td>
+      <td>Zheng and Davis, 2021; https://www.bioconductor.org/packages/release/bioc/html/SAIGEgds.html</td>
+      <td></td>
+      <td>Version 1.10.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>METAL</td>
+      <td>Willer et al., 2010; https://csg.sph.umich.edu/abecasis/metal/</td>
+      <td>RRID:SCR_002013</td>
+      <td>Version 2011-03-25</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FUMA</td>
+      <td>Watanabe et al., 2017; https://fuma.ctglab.nl/</td>
+      <td>RRID:SCR_017521</td>
+      <td>Version 1.5.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAMBA</td>
+      <td>McGuire et al., 2021; https://github.com/dan11mcguire/mamba</td>
+      <td></td>
+      <td>Version 1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>S-PrediXcan; S-MultiXcan</td>
+      <td>Barbeira et al., 2018; https://github.com/hakyimlab/MetaXcan</td>
+      <td>RRID:SCR_016739</td>
+      <td>Version 1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GTEx v8 mashr prediction models</td>
+      <td>https://predictdb.org/post/2021/07/21/gtex-v8-models-on-eqtl-and-sqtl/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GWAS Catalog</td>
+      <td>https://www.ebi.ac.uk/gwas/</td>
+      <td>RRID:SCR_012745</td>
+      <td>Section ‘Definition of the genetic risk loci and putative functional impact’</td>
+    </tr>
+  </tbody>
+</table>
+
+### GWAS in Latin Americans from SCOURGE
+
+#### The SCOURGE Latin American cohort
 
 A total of 3729 COVID-19-positive cases were recruited across five countries from Latin America (Mexico, Brazil, Colombia, Paraguay, and Ecuador) by 13 participating centers (Supplementary file 1) from March 2020 to July 2021. In addition, we included 1082 COVID-19-positive individuals recruited between March and December 2020 in Spain who either had evidence of origin from a Latin American country or showed inferred genetic admixture between AMR, EUR, and AFR (with <0.05% SAS/EAS). These individuals were excluded from a previous SCOURGE study that focused on participants with European genetic ancestries (Cruz et al., 2022). We used hospitalization as a proxy for disease severity and defined COVID-19-positive patients who underwent hospitalization as a consequence of the infection as cases and those who did not need hospitalization due to COVID-19 as controls.
 
@@ -386,29 +751,29 @@ Samples and data were collected with informed consent after the approval of the 
 
 Samples and data were processed following normalized procedures. The REDCap electronic data capture tool (Harris et al., 2009; Harris et al., 2019), hosted at Centro de Investigación Biomédica en Red (CIBER) from the Instituto de Salud Carlos III (ISCIII), was used to collect and manage demographic, epidemiological, and clinical variables. Subjects were diagnosed with COVID-19 based on quantitative PCR tests (79.3%) or according to clinical (2.2%) or laboratory procedures (antibody tests: 16.3%; other microbiological tests: 2.2%).
 
-## SNP array genotyping
+#### SNP array genotyping
 
 Genomic DNA was obtained from peripheral blood and isolated using the Chemagic DNA Blood 100 kit (PerkinElmer Chemagen Technologies GmbH), following the manufacturer’s recommendations.
 
 Samples were genotyped with the Axiom Spain Biobank Array (Thermo Fisher Scientific) following the manufacturer’s instructions in the Santiago de Compostela Node of the National Genotyping Center (CeGen-ISCIII; http://www.usc.es/cegen). This array contains probes for genotyping a total of 757,836 SNPs. Clustering and genotype calling were performed using Axiom Analysis Suite v4.0.3.3 software.
 
-## Quality control steps and variant imputation
+#### Quality control steps and variant imputation
 
 A quality control (QC) procedure using PLINK 1.9 (Purcell et al., 2007) was applied to both samples and the genotyped SNPs. We excluded variants with a minor allele frequency (MAF) <1%, a call rate <98%, and markers strongly deviating from Hardy–Weinberg equilibrium expectations (p<1 × 10–6) with mid-p adjustment. We also explored the excess of heterozygosity to discard potential cross-sample contamination. Samples missing >2% of the variants were filtered out. Subsequently, we kept the autosomal SNPs, removed high-LD regions, and conducted LD pruning (windows of 1000 SNPs, with a step size of 80 and an r2 threshold of 0.1) to assess kinship and estimate the global ancestral proportions. Kinship was evaluated based on IBD values, removing one individual from each pair with PI_HAT > 0.25 that showed a Z0, Z1, and Z2 coherent pattern (according to the theoretical expected values for each relatedness level). Genetic principal components (PCs) were calculated with PLINK with the subset of LD pruned variants.
 
 Genotypes were imputed with the TOPMed version r2 reference panel (GRCh38) using the TOPMed Imputation Server, and variants with Rsq < 0.3 or with MAF <1% were filtered out. A total of 4348 individuals and 10,671,028 genetic variants were included in the analyses.
 
-## Genetic admixture estimation
+#### Genetic admixture estimation
 
 Global GIA, referred to the genetic similarity to the used reference individuals, was estimated with ADMIXTURE (Alexander et al., 2009) v1.3 software following a two-step procedure. First, we randomly sampled 79 European (EUR) and 79 African (AFR) samples from The 1000 Genomes Project (1KGP) (Auton et al., 2015) and merged them with the 79 Native American (AMR) samples from Mao et al., 2007 keeping the biallelic SNPs. LD-pruned variants were selected from this merge using the same parameters as in the QC. We then ran an unsupervised analysis with K = 3 to redefine and homogenize the clusters and to compose a refined reference for the analyses by applying a threshold of ≥95% of belonging to a particular cluster. As a result, 20 AFR, 18 EUR, and 38 AMR individuals were removed. The same LD-pruned variants data from the remaining individuals were merged with the SCOURGE Latin American cohort to perform supervised clustering and estimate admixture proportions. A total of 471 samples from the SCOURGE cohort with >80% estimated European GIA were removed to reduce the weight of the European ancestral component, leaving a total of 3512 admixed Latin American (AMR) subjects for downstream analyses.
 
-## Association analysis
+#### Association analysis
 
 The results for the SCOURGE Latin American GWAS were obtained by testing for COVID-19 hospitalization as a surrogate of severity. To accommodate the continuum of GIA in the cohort, we opted for a joint testing of all the individuals as a single study using a mixed regression model as this approach has demonstrated a greater power and sufficient control of population structure (Wojcik et al., 2019). The SCOURGE cohort consisted of 3512 COVID-19-positive patients: cases (n = 1625) were defined as hospitalized COVID-19 patients, and controls (n = 1887) were defined as non-hospitalized COVID-19-positive patients.
 
 Logistic mixed regression models were fitted using the SAIGEgds (Zheng and Davis, 2021) package in R, which implements the two-step mixed SAIGE (Zhou et al., 2018) model methodology and the SPA test. Baseline covariables included sex, age (continuous), and the first 10 PCs. To account for potential heterogeneity in the recruitment and hospitalization criteria across the participating countries, we adjusted the models by groups of the recruitment areas classified into six categories: Brazil, Colombia, Ecuador, Mexico, Paraguay, and Spain. This dataset has not been used in any previously published GWAS of COVID-19.
 
-## Meta-analysis of Latin American populations
+### Meta-analysis of Latin American populations
 
 The results of the SCOURGE Latin American cohort were meta-analyzed with the AMR HGI-B2 data, conforming our primary analysis. Summary results from the HGI freeze 7 B2 analysis corresponding to the admixed AMR population were obtained from the public repository (April 8, 2022: https://www.covid19hg.org/results/r7/), summing up 3077 cases and 66,686 controls from seven contributing studies. We selected the B2 phenotype definition because it offered more power, and the presence of population controls not ascertained for COVID-19 does not have a drastic impact on the association results.
 
@@ -416,19 +781,19 @@ The meta-analysis was performed using an inverse-variance weighting method in ME
 
 Heterogeneity between studies was evaluated with Cochran’s Q-test. The inflation of results was assessed based on a genomic control (lambda).
 
-## Replicability of associations
+#### Replicability of associations
 
 The model-based method MAMBA (McGuire et al., 2021) was used to calculate the posterior probabilities of replication for each of the lead variant (PPR; PP that an SNP has a non-zero replicable effect). We defined PPR <0.1 as a low posterior probability of replication, following the original paper, whereas those with a PPR >90% were considered consistent and likely to replicate in future studies. Variants with p<1 × 10–05 were clumped and combined with random pruned variants from the 1KGP AMR reference panel. Then, MAMBA was applied to the set of significant and non-significant variants.
 
 Each of the lead variants was also tested for association with the main comorbidities in the SCOURGE cohort with logistic regression models (adjusted by the same base covariables as the GWAS).
 
-## Definition of the genetic risk loci and putative functional impact
+### Definition of the genetic risk loci and putative functional impact
 
-## Definition of lead variant and novel loci
+#### Definition of lead variant and novel loci
 
 To define the lead variants in the loci that were genome-wide significant, LD-clumping was performed on the meta-analysis data using a threshold p-value<5 × 10–8, clump distance = 1500 kb, independence set at a threshold r2 = 0.1 and the SCOURGE cohort genotype data as the LD reference panel. Independent loci were deemed as a novel finding if they met the following criteria: (1) p-value<5 × 10–8 in the meta-analysis and p-value>5 × 10–8 in the HGI B2 ALL meta-analysis or in the HGI B2 AMR and AFR and EUR analyses when considered separately; (2) Cochran’s Q-test for heterogeneity of effects is <0.05/Nloci, where Nloci is the number of independent variants with p<5 × 10–8; and (3) the nearest gene has not been previously described in the latest HGIv7 update.
 
-## Annotation and initial mapping
+#### Annotation and initial mapping
 
 Functional annotation was performed with FUMA (Watanabe et al., 2017) for those variants with a p-value<5 × 10–8 or in moderate-to-strong LD (r2 > 0.6) with the lead variants, where the LD was calculated from the 1KGP AMR panel. Genetic risk loci were defined by collapsing LD blocks within 250 kb. Then, genes, scaled CADD v1.4 scores, and RegulomeDB v1.1 scores were annotated for the resulting variants with ANNOVAR in FUMA (Watanabe et al., 2017). Gene-based analysis was also performed using MAGMA (de Leeuw et al., 2015) as implemented in FUMA under the SNP-wide mean model using the 1KGP AMR reference panel. Significance was set at a threshold p<2.66 × 10–6 (which assumes that variants can be mapped to a total of 18,817 genes).
 
@@ -436,27 +801,27 @@ FUMA allowed us to perform initial gene mapping by two approaches: (1) positiona
 
 Subsequently, to assign the variants to the most likely gene driving the association, we refined the candidate genes by fine mapping the discovered regions.
 
-## Bayesian fine-mapping
+#### Bayesian fine-mapping
 
 To conduct a Bayesian fine mapping, credible sets for the genetic loci considered novel findings were calculated on the results from each of the three meta-analyses to identify a subset of variants most likely containing the causal variant at the 95% confidence level, assuming that there is a single causal variant and that it has been tested. We used corrcoverage (https://cran.rstudio.com/web/packages/corrcoverage/index.html) for R to calculate the posterior probabilities of the variant being causal for all variants with an r2 > 0.1 with the leading SNP and within 1 Mb except for the novel variant in chromosome 19, for which we used a window of 0.5 Mb. Variants were added to the credible set until the sum of the posterior probabilities was ≥0.95.
 
-## VEP and V2G annotation
+#### VEP and V2G annotation
 
 We used the Variant-to-Gene (V2G) score to prioritize the genes that were most likely affected by the functional evidence based on eQTL, chromatin interactions, in silico functional predictions, and distance between the prioritized variants and transcription start site (TSS), based on data from the Open Targets Genetics portal (Ghoussaini et al., 2021). Details of the data integration and the weighting of each of the datasets are described in detail at https://genetics-docs.opentargets.org/our-approach/data-pipeline. V2G is a score for ranking the functional genomics evidence that supports the connection between variants and genes (the higher the score the more likely the variant to be functionally implicated on the assigned gene). We used VEP release 111 (https://www.ensembl.org/info/docs/tools/vep/index.html; accessed April 10, 2024; McLaren et al., 2016) to annotate the following: gene symbol, function (exonic, intronic, intergenic, non-coding RNA, etc.), impact, feature type, feature, and biotype.
 
 We queried the GWAS catalog (date of accession: 1/07/2024) for evidence of association of each of the prioritized genes with traits related to lung diseases or phenotypes. Lastly, those which were linked to COVID-19, infection, or lung diseases in the revised literature were classified as ‘literature evidence’.
 
-## Transcription-wide association studies
+### Transcription-wide association studies
 
 TWAS were conducted using the pretrained prediction models with MASHR-computed effect sizes on GTEx v8 datasets (Barbeira et al., 2019a; Barbeira et al., 2021). The results from the Latin American meta-analysis were harmonized and integrated with the prediction models through S-PrediXcan (Barbeira et al., 2018) for lung, whole blood, lymphocyte, and esophageal mucosal tissues. Statistical significance was set at p-value<0.05 divided by the number of genes that were tested for each tissue. Subsequently, we leveraged results for all 49 tissues and ran a multitissue TWAS (S-MultiXcan) to improve the power for association, as demonstrated recently (Barbeira et al., 2019b). TWAS was also performed using recently published gene expression datasets derived from a cohort of African Americans, Puerto Ricans, and Mexican Americans (GALA II-SAGE) (Kachuri et al., 2023).
 
-## Cross-population meta-analyses
+### Cross-population meta-analyses
 
 We conducted two additional meta-analyses to investigate the ability of combining populations to replicate our discovered risk loci. This methodology enabled the comparison of effects and the significance of associations in the novel risk loci between the results from analyses that included or excluded other population groups.
 
 The first meta-analysis comprised the five populations analyzed within HGI (B2-ALL). Additionally, to evaluate the three GIA components within the SCOURGE Latin American cohort (Bryc et al., 2010), we conducted a meta-analysis of the admixed AMR, EUR, and AFR cohorts (B2). All summary statistics were retrieved from the HGI repository. We applied the same meta-analysis methodology and filters as in the admixed AMR meta-analysis.
 
-## Cross-population polygenic risk score
+### Cross-population polygenic risk score
 
 A PGS for critical COVID-19 was derived by combining the variants associated with hospitalization or disease severity that have been discovered to date. We curated a list of lead variants that were (1) associated with either severe disease or hospitalization in the latest HGIv7 release (Kanai et al., 2023) (using the hospitalization weights) or (2) associated with severe disease in the latest GenOMICC meta-analysis (Pairo-Castineira et al., 2023) that were not reported in the latest HGI release. A total of 48 markers were used in the PGS model (see Supplementary file 13) since two variants were absent from our study.
 

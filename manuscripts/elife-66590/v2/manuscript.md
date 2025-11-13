@@ -42,6 +42,201 @@ The projection involved four steps. First, we determined the long-term decline i
 
 We applied our projection approach to the national populations of 18 European countries (see Table 1 for the included countries) using country, sex, and age-specific all-cause mortality and exposure data for the 1990–2014 period from the Human Mortality Database (HMD and University of California, Berkeley (USA), and Max Planck Institute for Demographic Research (Germany), 2019), and similar data for lifestyle-attributable mortality and non-lifestyle-attributable mortality from a recent study (Janssen et al., 2021). We were restricted in both the starting year and the end year because lifestyle-attributable mortality data was available only for this period.
 
+**Table 1.**
+ Comparison of observed gains in life expectancy at birth (e0) between 1990 and 2014 with the gains when the effects of smoking, obesity, and alcohol are removed ( = for non-lifestyle-attributable mortality), 18 European countries, by country and sex.Table 1—source data 1.Data behind Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Country</th>
+      <th colspan="4">Gain e0 1990–2014</th>
+    </tr>
+    <tr>
+      <th colspan="2">Observed</th>
+      <th colspan="2">Non-lifestyle-attributable mortality</th>
+    </tr>
+    <tr>
+      <th>Men</th>
+      <th>Women</th>
+      <th>Men</th>
+      <th>Women</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Austria</td>
+      <td>6.69</td>
+      <td>4.87</td>
+      <td>5.05</td>
+      <td>5.29</td>
+    </tr>
+    <tr>
+      <td>Belgium</td>
+      <td>5.88</td>
+      <td>4.18</td>
+      <td>4.22</td>
+      <td>4.90</td>
+    </tr>
+    <tr>
+      <td>Czech Republic</td>
+      <td>8.19</td>
+      <td>6.33</td>
+      <td>5.50</td>
+      <td>6.62</td>
+    </tr>
+    <tr>
+      <td>Denmark</td>
+      <td>6.54</td>
+      <td>4.94</td>
+      <td>4.98</td>
+      <td>5.01</td>
+    </tr>
+    <tr>
+      <td>Finland</td>
+      <td>7.19</td>
+      <td>4.96</td>
+      <td>5.19</td>
+      <td>5.56</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>6.56</td>
+      <td>4.47</td>
+      <td>4.95</td>
+      <td>4.84</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>6.52</td>
+      <td>4.92</td>
+      <td>4.99</td>
+      <td>5.45</td>
+    </tr>
+    <tr>
+      <td>Greece</td>
+      <td>3.80</td>
+      <td>4.18</td>
+      <td>3.44</td>
+      <td>4.23</td>
+    </tr>
+    <tr>
+      <td>Hungary</td>
+      <td>7.12</td>
+      <td>5.47</td>
+      <td>5.61</td>
+      <td>6.16</td>
+    </tr>
+    <tr>
+      <td>Ireland</td>
+      <td>7.03</td>
+      <td>5.52</td>
+      <td>5.97</td>
+      <td>5.90</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>6.92</td>
+      <td>4.91</td>
+      <td>4.67</td>
+      <td>4.97</td>
+    </tr>
+    <tr>
+      <td>Netherlands</td>
+      <td>6.05</td>
+      <td>3.20</td>
+      <td>4.20</td>
+      <td>4.50</td>
+    </tr>
+    <tr>
+      <td>Norway</td>
+      <td>6.58</td>
+      <td>4.29</td>
+      <td>6.10</td>
+      <td>5.21</td>
+    </tr>
+    <tr>
+      <td>Poland</td>
+      <td>7.41</td>
+      <td>6.13</td>
+      <td>6.56</td>
+      <td>7.04</td>
+    </tr>
+    <tr>
+      <td>Slovenia</td>
+      <td>8.20</td>
+      <td>6.00</td>
+      <td>5.62</td>
+      <td>6.39</td>
+    </tr>
+    <tr>
+      <td>Sweden</td>
+      <td>5.54</td>
+      <td>3.66</td>
+      <td>5.09</td>
+      <td>4.35</td>
+    </tr>
+    <tr>
+      <td>Switzerland</td>
+      <td>6.98</td>
+      <td>4.40</td>
+      <td>5.25</td>
+      <td>4.76</td>
+    </tr>
+    <tr>
+      <td>United Kingdom</td>
+      <td>6.41</td>
+      <td>4.49</td>
+      <td>4.89</td>
+      <td>4.67</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>6.64</td>
+      <td>4.83</td>
+      <td>5.13</td>
+      <td>5.33</td>
+    </tr>
+    <tr>
+      <td>Min</td>
+      <td>3.80</td>
+      <td>3.20</td>
+      <td>3.44</td>
+      <td>4.23</td>
+    </tr>
+    <tr>
+      <td>Max</td>
+      <td>8.20</td>
+      <td>6.33</td>
+      <td>6.56</td>
+      <td>7.04</td>
+    </tr>
+    <tr>
+      <td>Variance</td>
+      <td>0.92</td>
+      <td>0.66</td>
+      <td>0.51</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>Annual change</td>
+      <td>0.28</td>
+      <td>0.20</td>
+      <td>0.21</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Forerunners*</td>
+      <td>4.81</td>
+      <td>4.81</td>
+      <td>5.00</td>
+      <td>5.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_*French, Italian, and Spanish women (unweighted average). For Spanish women, the gain in e0 (1990–2014) was 5.05 years for all-cause mortality and 5.20 years for non-lifestyle-attributable mortality._
+
 We obtained estimates of life expectancy at birth (e0), including 95% projection intervals up to 2065, by applying standard life table techniques to the projected mortality rates for ages 0–130 (Preston et al., 2001). We focussed on life expectancy at birth because it is a very common summary measure of health, and the most common output measure of mortality forecasts. We have chosen a relatively large projection horizon (2015–2065) given the comparatively short historical time series available (1990–2014) to illustrate that our approach is able to generate reliable outcomes for the long-term future.
 
 We compared our projection outcomes with the outcomes of the benchmark Lee–Carter extrapolation (Lee and Carter, 1992) applied to all-cause mortality and examined the separate effects of incorporating lifestyle factors, and of including the mortality experiences of other countries. We report the outcomes of additional projections and comparisons in the Results section ‘The differences explained’. We also compared our outcomes to the official forecasts by Eurostat and United Nations (see the Discussion section ‘Comparison with other projections’).
@@ -50,15 +245,29 @@ More detailed information on the data and methods can be found in Appendix 1.
 
 ## Results
 
-## Underlying long-term increase in life expectancy
+### Underlying long-term increase in life expectancy
 
 Over the 1990–2014 period, life expectancy at birth (e0) increased, on average, across the 18 European countries studied by 6.6 years for men (from 71.8 to 78.3 years) and by 4.8 years for women (from 78.6 to 83.4 years) (see Table 1). These values translate into a yearly increase in e0 of 0.28 years for men and 0.20 years for women. This difference between men and women can largely be attributed to lifestyle factors. Without the impact of smoking, obesity, and alcohol, the increase in e0 over the 1990–2014 period was more similar between men (5.1 years; 0.21 annually) and women (5.3 years; 0.22 annually). In addition, the increase in e0 was more similar between countries for non-lifestyle-attributable mortality (variance: 0.5 for men, 0.6 for women) than for all-cause mortality (variance: 0.9 for men, 0.7 for women).
 
 The greater increase in e0 for all-cause mortality than for non-lifestyle-attributable mortality among men can be explained by the significant declines in lifestyle-attributable mortality men experienced (see Figure 1). These declines stemmed predominantly from large declines in smoking-attributable mortality (Figure 1—figure supplement 1), after a period of sharp increases. In contrast, the past increases in lifestyle-attributable mortality among women were driven by increases in all three factors (except alcohol in Eastern Europe) (Figure 1—figure supplement 2) and resulted in smaller increases in e0 for all-cause mortality than for non-lifestyle-attributable mortality.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig1-figsupp2-v2.jpg)
+
 Figure 2 and Figure 2—figure supplement 1 show that whereas trends in e0 since 1950 have been rather unstable, the trends in e0 without lifestyle factors can be regarded as more stable. This is indicated by (1) the more stable trend in e0 for non-smoking-related mortality for men in the 1950s and 1960s, which seems to be in line with the more recent trends in e0 for non-lifestyle-attributable mortality and (2) the close correspondence among women between the recent trends in e0 for non-lifestyle-attributable mortality and the trends in e0 for all-cause mortality in the 1950s–1960s that were probably affected only minimally by lifestyle factors.
 
-## Projected future level of life expectancy
+![Figure 2.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig2-v2.jpg)
+
+**Figure 2.:** *Based on the available information. Reproduced from various panels in Supplementary Figure 3a from Janssen et al., 2021, under the terms of a Creative Commons Attribution License (CC-BY 4.0; https://creativecommons.org/licenses/by/4.0/).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** *Based on the available information. Reproduced from various panels in Supplementary Figure 3b from Janssen et al., 2021, under the terms of a Creative Commons Attribution License (CC-BY 4.0; https://creativecommons.org/licenses/by/4.0/).
+
+### Projected future level of life expectancy
 
 We extrapolated the more universal and more stable mortality trends that we observed for non-lifestyle-attributable mortality, while assuming that the trends for men and women in the individual countries will eventually move towards the more favourable long-term trends for women in France, Spain, and Italy. We selected these populations as the forerunner populations in terms of life expectancy in Europe because they exhibit both very high recent e0 values and very favourable long-lasting past trends in e0 (Stoeldraijer, 2019).
 
@@ -66,13 +275,293 @@ We added to these projections the projected levels of lifestyle-attributable mor
 
 We project that in the 18 European countries studied, life expectancy at birth will increase from, on average, 78.3 years for men and 83.4 years for women in 2014 to 90.5 years for men and 92.8 years for women in 2065 (Table 2; Figure 3). This represents an average increase per year of 0.24 years for men and 0.18 years for women. The projected increase is greater for men than for women because all-cause mortality levels are currently further away from non-lifestyle-attributable mortality levels for men than for women and because lifestyle-attributable mortality is higher among men than among women. There is, therefore, more room for improvement for men than for women.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig3-v2.jpg)
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/66590/elife-66590-fig3-figsupp3-v2.jpg)
+
+**Table 2.**
+ Observed (2014) and projected (2065) life expectancy at birth (e0), by country and sex, according to our projection methodology, which takes into account the impact of smoking, obesity, and alcohol and the mortality experiences of forerunner countries (‘lifestyle and coherent’); the benchmark Lee–Carter extrapolative mortality projection applied to all-cause mortality (‘Lee–Carter’); and when purely accounting for smoking, obesity, and alcohol (‘adding lifestyle’).Table 2—source data 1.Data behind Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Country</th>
+      <th colspan="4">Men</th>
+      <th colspan="4">Women</th>
+    </tr>
+    <tr>
+      <th rowspan="2">e0 2014</th>
+      <th colspan="3">e0 2065</th>
+      <th rowspan="2">e0 2014</th>
+      <th colspan="3">e0 2065</th>
+    </tr>
+    <tr>
+      <th>Lee–Carter</th>
+      <th>Adding lifestyle</th>
+      <th>Lifestyle and coherent</th>
+      <th>Lee–Carter</th>
+      <th>Adding lifestyle</th>
+      <th>Lifestyle and coherent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Austria</td>
+      <td>78.91</td>
+      <td>88.91</td>
+      <td>89.02</td>
+      <td>90.38</td>
+      <td>83.73</td>
+      <td>91.42</td>
+      <td>92.57</td>
+      <td>92.54</td>
+    </tr>
+    <tr>
+      <td>Belgium</td>
+      <td>78.57</td>
+      <td>87.76</td>
+      <td>88.20</td>
+      <td>90.93</td>
+      <td>83.52</td>
+      <td>90.09</td>
+      <td>92.43</td>
+      <td>92.98</td>
+    </tr>
+    <tr>
+      <td>Czechia</td>
+      <td>75.72</td>
+      <td>87.77</td>
+      <td>87.23</td>
+      <td>88.86</td>
+      <td>81.73</td>
+      <td>90.87</td>
+      <td>92.28</td>
+      <td>91.37</td>
+    </tr>
+    <tr>
+      <td>Denmark</td>
+      <td>78.56</td>
+      <td>87.72</td>
+      <td>88.48</td>
+      <td>90.50</td>
+      <td>82.67</td>
+      <td>89.66</td>
+      <td>93.33</td>
+      <td>93.08</td>
+    </tr>
+    <tr>
+      <td>Finland</td>
+      <td>78.13</td>
+      <td>88.25</td>
+      <td>88.30</td>
+      <td>90.22</td>
+      <td>83.85</td>
+      <td>90.90</td>
+      <td>92.65</td>
+      <td>92.69</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>79.28</td>
+      <td>89.11</td>
+      <td>90.03</td>
+      <td>91.40</td>
+      <td>85.44</td>
+      <td>92.77</td>
+      <td>94.24</td>
+      <td>94.01</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>78.43</td>
+      <td>88.36</td>
+      <td>88.67</td>
+      <td>90.18</td>
+      <td>83.35</td>
+      <td>90.78</td>
+      <td>92.60</td>
+      <td>92.62</td>
+    </tr>
+    <tr>
+      <td>Greece</td>
+      <td>78.46</td>
+      <td>85.07</td>
+      <td>86.32</td>
+      <td>90.97</td>
+      <td>83.83</td>
+      <td>89.75</td>
+      <td>90.51</td>
+      <td>92.44</td>
+    </tr>
+    <tr>
+      <td>Hungary</td>
+      <td>72.26</td>
+      <td>81.74</td>
+      <td>85.89</td>
+      <td>88.64</td>
+      <td>79.24</td>
+      <td>87.09</td>
+      <td>90.21</td>
+      <td>90.96</td>
+    </tr>
+    <tr>
+      <td>Ireland</td>
+      <td>79.15</td>
+      <td>89.59</td>
+      <td>90.57</td>
+      <td>90.95</td>
+      <td>83.23</td>
+      <td>91.67</td>
+      <td>94.38</td>
+      <td>93.40</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>80.55</td>
+      <td>89.25</td>
+      <td>89.14</td>
+      <td>91.43</td>
+      <td>85.16</td>
+      <td>92.30</td>
+      <td>93.34</td>
+      <td>93.53</td>
+    </tr>
+    <tr>
+      <td>Netherlands</td>
+      <td>79.87</td>
+      <td>88.67</td>
+      <td>88.73</td>
+      <td>91.11</td>
+      <td>83.29</td>
+      <td>88.80</td>
+      <td>92.59</td>
+      <td>93.18</td>
+    </tr>
+    <tr>
+      <td>Norway</td>
+      <td>80.03</td>
+      <td>88.86</td>
+      <td>90.23</td>
+      <td>90.87</td>
+      <td>84.09</td>
+      <td>90.72</td>
+      <td>93.48</td>
+      <td>93.35</td>
+    </tr>
+    <tr>
+      <td>Poland</td>
+      <td>73.66</td>
+      <td>85.21</td>
+      <td>88.28</td>
+      <td>89.37</td>
+      <td>81.41</td>
+      <td>90.44</td>
+      <td>92.74</td>
+      <td>91.88</td>
+    </tr>
+    <tr>
+      <td>Slovenia</td>
+      <td>77.96</td>
+      <td>88.68</td>
+      <td>88.95</td>
+      <td>89.91</td>
+      <td>83.69</td>
+      <td>92.20</td>
+      <td>93.79</td>
+      <td>92.60</td>
+    </tr>
+    <tr>
+      <td>Sweden</td>
+      <td>80.35</td>
+      <td>88.37</td>
+      <td>89.18</td>
+      <td>90.64</td>
+      <td>84.05</td>
+      <td>89.92</td>
+      <td>92.27</td>
+      <td>93.01</td>
+    </tr>
+    <tr>
+      <td>Switzerland</td>
+      <td>80.93</td>
+      <td>89.77</td>
+      <td>89.31</td>
+      <td>90.88</td>
+      <td>85.11</td>
+      <td>91.41</td>
+      <td>92.70</td>
+      <td>93.16</td>
+    </tr>
+    <tr>
+      <td>United Kingdom</td>
+      <td>79.25</td>
+      <td>88.99</td>
+      <td>89.35</td>
+      <td>91.04</td>
+      <td>82.99</td>
+      <td>89.93</td>
+      <td>92.70</td>
+      <td>93.34</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>78.34</td>
+      <td>87.89</td>
+      <td>88.66</td>
+      <td>90.46</td>
+      <td>83.35</td>
+      <td>90.59</td>
+      <td>92.71</td>
+      <td>92.78</td>
+    </tr>
+    <tr>
+      <td>Min</td>
+      <td>72.26</td>
+      <td>81.74</td>
+      <td>85.89</td>
+      <td>88.64</td>
+      <td>79.24</td>
+      <td>87.09</td>
+      <td>90.21</td>
+      <td>90.96</td>
+    </tr>
+    <tr>
+      <td>Max</td>
+      <td>80.93</td>
+      <td>89.77</td>
+      <td>90.57</td>
+      <td>91.43</td>
+      <td>85.44</td>
+      <td>92.77</td>
+      <td>94.38</td>
+      <td>94.01</td>
+    </tr>
+    <tr>
+      <td>Variance</td>
+      <td>4.98</td>
+      <td>3.77</td>
+      <td>1.41</td>
+      <td>0.62</td>
+      <td>2.02</td>
+      <td>1.73</td>
+      <td>1.07</td>
+      <td>0.55</td>
+    </tr>
+  </tbody>
+</table>
+
 Compared to the average past increases (1990–2014) in e0 (0.28 years for men; 0.20 years for women), these projected increases are lower, particularly for men. This is because – as mentioned – the increase in e0 for men over the 1990–2014 period is actually an acceleration compared to the underlying trend in non-lifestyle-attributable mortality because of the decline in lifestyle-attributable mortality, predominantly in smoking-attributable mortality.
 
 The highest e0 in 2065 is projected for France among women (94.0) and for Italy among men (91.4). Hungary is the country with the lowest projected e0 in 2065, at 88.6 years among men and 91.0 years among women. These countries also had in 2014, respectively, the (second) highest and the lowest values. We project the largest gains in life expectancy for Hungary and Poland, particularly among men, in line with past large increases in non-lifestyle-attributable mortality due to a process of catch-up (Table 1), and large projected declines in lifestyle-attributable mortality in these countries (Figure 1). Among women, we project large gains as well for Denmark and the United Kingdom, which can be attributed to their high current levels of lifestyle-attributable mortality, predominantly due to their high levels of smoking-attributable mortality, and the large projected (continued) declines therein (Figure 1—figure supplement 2). The smallest gains are projected for Switzerland, which could be related to the relatively small projected declines in lifestyle-attributable mortality resulting from a long projected continuation of increases in obesity prevalence.
 
 The sex difference in e0 is projected to decline from, on average, 5.0 years in 2014 to 2.3 years in 2065 (Supplementary file 1A; Figure 3). The gap is projected to be smallest in Greece, at 1.5 years; and largest in Slovenia, at 2.7 years. Among the explanations for the projected convergence of the sex gap in e0 is that the sex differences are smaller for non-lifestyle-attributable mortality than for all-cause mortality; the sex differences in lifestyle-attributable mortality are smaller in the long run; and our assumption that the trends in non-lifestyle-attributable mortality will converge.
 
-## Comparison with the benchmark Lee–Carter mortality projection
+### Comparison with the benchmark Lee–Carter mortality projection
 
 Compared to the benchmark Lee–Carter (LC) extrapolative mortality projection, our projection results in higher future e0 in 2065 for all populations under study (Table 2). On average, the projected e0 values in 2065 are 2.6 years higher for men and 2.1 years higher for women in our projection than in the individual Lee–Carter mortality projection, which projected e0 values of 87.9 years for men and 90.6 years for women in 2065 (Table 2). For men, particularly in Hungary, the differences between our projected values and those of the LC projection are considerable, mainly because of large projected declines in lifestyle-attributable mortality. Also for Dutch women a considerable difference between our projection and the LC projection can be observed. For Dutch women not only large declines in lifestyle-attributable mortality are projected, but they also experienced a more favourable trend in non-lifestyle-attributable mortality than in all-cause mortality.
 
@@ -82,7 +571,7 @@ In addition, the sex difference in e0 in 2065 is projected to be 2.7 years in th
 
 Moreover, unlike the LC mortality projection, our projection results in non-linear future increases in e0 (Figure 3; Figure 3—figure supplement 2). Particularly for men in Belgium, Greece, the Czech Republic, Hungary, and Poland, but also for women in Hungary, Denmark, and the United Kingdom, we see faster projected increases in life expectancy in the early decades, but slower increases in life expectancy further in the future, in line with the projections of lifestyle-attributable mortality. The LC projection, by contrast, anticipates more constant future increases in life expectancy at birth.
 
-## The differences explained
+### The differences explained
 
 The observed differences between our projection and the Lee–Carter projection can stem from either the lifestyle dimension, the coherent dimension, or both. Within the lifestyle dimension, two mechanisms apply: first, the projection of non-lifestyle mortality instead of all-cause mortality, and, second, the effect of projected lifestyle-attributable mortality itself.
 
@@ -94,7 +583,7 @@ The smaller sex differences in projected e0 values in our projection stem purely
 
 ## Discussion
 
-## Appraisal of our projection methodology
+### Appraisal of our projection methodology
 
 An important element of our projection approach is the identification of the underlying long-term mortality trend that can be extrapolated into the future. We illustrated that past trends in non-lifestyle-attributable mortality serve this purpose better than past trends in all-cause mortality. For non-lifestyle-attributable mortality, the differences in past trends between countries and between men and women are smaller, and the trends are more robust. In contrast, the trends in all-cause mortality exhibit a wave-shaped fluctuation due to initial increases in smoking-, obesity-, and alcohol-attributable mortality, followed (eventually) by declines. This pattern leads, first, to a deceleration of increases in e0, and a move away from the underlying increase in e0 in non-lifestyle attributable mortality, followed by an acceleration of increases in e0, and a move back towards the underlying increase in e0 in non-lifestyle-attributable mortality. Thus, extrapolating past declines in all-cause mortality will lead to non-reliable outcomes: i.e., the outcomes will be either too low when decelerating increases are extrapolated or too high when accelerating increases are extrapolated. Similarly, the extrapolation of past trends in all-cause mortality will result in non-robust outcomes, when updating the projection after a few years. Because the past trends in non-lifestyle-attributable mortality are more linear than the past trends in all-cause mortality, especially from a historical point of view, our projection is less dependent on the data period used for the extrapolation.
 
@@ -106,7 +595,7 @@ To the projected long-term trend in non-lifestyle-attributable mortality, we add
 
 However, in our view, the added value of integrating lifestyle into mortality projections outweighs the uncertainties that come with it. First, trends in non-lifestyle-attributable mortality provide a better approximation of the underlying mortality trend. Second, our projection is driven not only by data, but also by theory, and is preceded by a careful study of past trends. Third, by distinguishing between the underlying mortality trend and the additional effect of the three lifestyle factors combined, these projections provide much greater transparency and insight than a mere mechanical extrapolation of past trends could. Fourth, our approach resulted in more realistic differences between countries and sexes than those projected by other approaches (see the next section as well). The abovementioned four added values of our mortality projection approach can be clearly linked to important criteria for evaluating the performance of mortality forecasts in addition to accuracy: namely, robustness, plausibility, reasonableness, and transparency (Cairns et al., 2009). Moreover, the outcomes of our projection approach – which rely above all on the coherent projection of non-lifestyle-attributable mortality – are less dependent on the explicit choices that underlie general mortality forecasts (e.g., the choice of the forerunner populations and the historical time period).
 
-## Comparison with other projections
+### Comparison with other projections
 
 Compared to the benchmark Lee–Carter mortality extrapolation, our projection approach results in higher e0 in the long run; smaller differences in future e0 between countries and sexes; and non-linear future increases in e0, in line with the shift towards the higher e0 values for non-lifestyle-attributable mortality.
 
@@ -116,7 +605,7 @@ The added value of our projection approach over pure coherent mortality forecast
 
 Among the advantages of taking the effects of obesity and alcohol in addition to those of smoking into account is that e0 values for non-lifestyle-attributable mortality are higher than e0 values for non-smoking-attributable mortality (Figure 2, Figure 2—figure supplement 1), and thus have the potential for larger future increases. In addition, as was illustrated, the effects of both obesity-attributable mortality and alcohol-attributable mortality (particularly among Eastern European men) on past and future life expectancy trends are large.
 
-## Overall conclusion and implications
+### Overall conclusion and implications
 
 All in all, the outcomes of our projection approach, which simultaneously takes into account the lifestyle factors smoking, obesity and alcohol, and the mortality experiences of forerunner populations, can be considered more realistic, more robust, and more insightful than previous extrapolative mortality projections, including those by the United Nations and Eurostat.
 
@@ -126,6 +615,6 @@ Our findings of higher projected life expectancy values than those estimated by 
 
 In addition, our findings of (1) higher projected life expectancy values than those currently used in most mortality projection methodologies and (2) of a rather robust long-term increase in e0 after the effects of smoking, obesity, and alcohol are controlled for, indicate that a limit to human life expectancy (average lifespan) is not within reach – an issue that continues to spark scientific debate (see the first paragraph of the introduction).
 
-## Data sharing
+### Data sharing
 
 Some of our original data regarding lifestyle-attributable mortality were based on previous publications, which, in turn, used data that are openly available. The all-cause mortality data and the exposure data can be obtained through the Human Mortality Database. We have provided source data files for all our tables and figures. These comprise the numerical data that are represented in the different figures, and the output on which the different tables are based. In addition, one excel file with all the final numerical/output data that were used as input for the tables and figures will be made available at the Open Science Framework: https://osf.io/ghu45/. In addition, we will upload there the underlying observed age-specific mortality rates (all-cause mortality, non-lifestyle-attributable mortality, lifestyle-attributable mortality) as well as the adjusted and projected age-specific mortality rates (medians and 90% and 95% projection intervals). The different R codes used for the different steps of the data analyses will be shared – as well – through the Open Science Framework link above.

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.41548.001 The turquoise killifish, Nothobranchius furzeri , is a promising vertebrate model in ageing research and an emerging model organism in genomics, regenerative medicine, developmental biology and ecotoxicology. Its lifestyle is adapted to the ephemeral nature of shallow pools on the African savannah. Its rapid and short active life commences when rains fill the pool: fish hatch, grow rapidly and mature in as few as two weeks, and then reproduce daily until the pool dries out. Its embryos then become inactive, encased in the dry sediment and protected from the harsh environment until the rains return. This invertebrate-like life cycle (short active phase and long developmental arrest) combined with a vertebrate body plan provide the ideal attributes for a laboratory animal.
+The turquoise killifish, Nothobranchius furzeri, is a promising vertebrate model in ageing research and an emerging model organism in genomics, regenerative medicine, developmental biology and ecotoxicology. Its lifestyle is adapted to the ephemeral nature of shallow pools on the African savannah. Its rapid and short active life commences when rains fill the pool: fish hatch, grow rapidly and mature in as few as two weeks, and then reproduce daily until the pool dries out. Its embryos then become inactive, encased in the dry sediment and protected from the harsh environment until the rains return. This invertebrate-like life cycle (short active phase and long developmental arrest) combined with a vertebrate body plan provide the ideal attributes for a laboratory animal.
 
 ## Introduction
 
@@ -57,11 +57,11 @@ N. furzeri are opportunistic and generalist predators of small invertebrates. In
 
 ## Biotic interactions
 
-## Predators
+### Predators
 
 Potential predators include wading and diving birds, such as herons, hammerheads, storks and kingfishers. These birds prey on killifish, tadpoles and, perhaps, larger invertebrates. Large predatory waterbugs are abundant in many pools and readily consume adult killifish in captivity. These sit-and-wait predators may hunt killifish, especially in pools with dense vegetation. Lungfish (Protopterus annectens) commonly coexist with N. furzeri and may also prey on them, though they are not their typical predator (Reichard et al., 2014). The eggs of N. furzeri are likely predated by a range of invertebrates. For instance, freshwater crabs can be abundant in N. furzeri habitats and probably extract killifish eggs from the sediment.
 
-## Parasites
+### Parasites
 
 The parasites of wild N. furzeri have been well characterised (Nezhybová et al., 2017). All recorded animal parasites were endoparasites, infecting muscles and internal organs. Perhaps most notably, killifish predominantly hosted intermediate stages of the parasites, forming an important link in the transmission cascade to the final hosts: fish-eating birds. The metacercariae larval stage of parasitic trematodes was by far the most abundant parasite, typically with tens of them infecting the muscle tissue. A surprisingly high diversity of flukes (Trematoda), roundworms (Nematoda) and tapeworms (Cestoda) also reside in N. furzeri muscle, intestine, cerebral and abdominal cavities, gallbladder and gills. It is clear that N. furzeri are challenged by a multitude of infections over their short lifespan and capable of encysting parasites that penetrated their bodies, providing a potential to study their immune responses.
 

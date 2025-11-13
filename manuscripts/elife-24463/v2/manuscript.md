@@ -21,13 +21,21 @@
 
 ## Abstract
 
-10.7554/eLife.24463.001 The cytosol-facing membranes of cellular organelles contain proteins that enable signal transduction, regulation of morphology and trafficking, protein import and export, and other specialized processes. Discovery of these proteins by traditional biochemical fractionation can be plagued with contaminants and loss of key components. Using peroxidase-mediated proximity biotinylation, we captured and identified endogenous proteins on the outer mitochondrial membrane (OMM) and endoplasmic reticulum membrane (ERM) of living human fibroblasts. The proteomes of 137 and 634 proteins, respectively, are highly specific and highlight 94 potentially novel mitochondrial or ER proteins. Dataset intersection identified protein candidates potentially localized to mitochondria-ER contact sites. We found that one candidate, the tail-anchored, PDZ-domain-containing OMM protein SYNJ2BP, dramatically increases mitochondrial contacts with rough ER when overexpressed. Immunoprecipitation-mass spectrometry identified ribosome-binding protein 1 (RRBP1) as SYNJ2BP’s ERM binding partner. Our results highlight the power of proximity biotinylation to yield insights into the molecular composition and function of intracellular membranes.
+The cytosol-facing membranes of cellular organelles contain proteins that enable signal transduction, regulation of morphology and trafficking, protein import and export, and other specialized processes. Discovery of these proteins by traditional biochemical fractionation can be plagued with contaminants and loss of key components. Using peroxidase-mediated proximity biotinylation, we captured and identified endogenous proteins on the outer mitochondrial membrane (OMM) and endoplasmic reticulum membrane (ERM) of living human fibroblasts. The proteomes of 137 and 634 proteins, respectively, are highly specific and highlight 94 potentially novel mitochondrial or ER proteins. Dataset intersection identified protein candidates potentially localized to mitochondria-ER contact sites. We found that one candidate, the tail-anchored, PDZ-domain-containing OMM protein SYNJ2BP, dramatically increases mitochondrial contacts with rough ER when overexpressed. Immunoprecipitation-mass spectrometry identified ribosome-binding protein 1 (RRBP1) as SYNJ2BP’s ERM binding partner. Our results highlight the power of proximity biotinylation to yield insights into the molecular composition and function of intracellular membranes.
 
 ## Introduction
 
 The mitochondrion and endoplasmic reticulum (ER) are two centrally important cellular organelles, and their cytosol-facing membranes engage in a wide variety of essential processes, including calcium exchange, cell death, immune signaling, lipid biosynthesis, and protein translation, secretion, and import. High quality proteomic maps of each of these membranes—the outer mitochondrial membrane (OMM) and the ER membrane (ERM)—would be extremely valuable for clarifying the sub-organellar location of known mitochondrial and ER-resident proteins, and likely identify novel proteins not previously associated with either organelle. Yet such maps remain elusive. Each organelle has been mapped in its entirety via mass spectrometry (MS)-based proteomics multiple times (Calvo and Mootha, 2010; Chen et al., 2010). However, even proteomes such as MitoCarta 2.0 (Calvo et al., 2016), which appear close to complete with respect to mitochondrial matrix, inner membrane, and intermembrane space (IMS) proteins, under-represent OMM proteins, likely because the outer membrane is depleted during purification of the organelle. OMM material can be specifically enriched for MS analysis through osmotic shock lysis of the outer membrane of purified mitochondria followed by sucrose gradient ultracentrifugation (Niemann et al., 2013; Schmitt et al., 2006; Zahedi et al., 2006), but this fractionation protocol is highly disruptive and imperfect, which compromises the quality of the resulting datasets. Furthermore, mammalian OMMs have never previously been mapped. For whole-ER datasets, the propensity of ER-derived microsomes to co-centrifuge with virtually all other cellular compartments (Sadowski et al., 2008) has rendered these proteomes, which include both ERM and ER lumen contents, similarly unclean with poor overlap between independent datasets (Chen et al., 2010). Rapoport and coworkers were able to obtain a highly specific list of 25 abundant ERM proteins via microsome enrichment from dog pancreas (Shibata et al., 2010), but these represent only a miniscule fraction of the proteins thought to reside at mammalian ER membranes.
 
 Because OMM and ER membranes are so difficult to purify to homogeneity, and existing enrichment protocols also lose large fractions of resident proteins, these membranes are ideal candidates for an alternative proteomic approach known as proximity biotinylation. In this approach (Figure 1A), which bypasses biochemical fractionation and organelle purification altogether, a 27 kDa engineered monomeric peroxidase called APEX2 (Lam et al., 2015) is genetically targeted to the cellular region of interest. Addition of hydrogen peroxide (H2O2) and a membrane-permeant substrate for APEX2, biotin-phenol (BP), results in the covalent biotinylation of endogenous proteins within a few nanometers of APEX2. Because labeling is performed over a one-minute time window while cells and organelles are intact, spatial relationships between proteins are preserved, resulting in their specific tagging by the biotin probe (Hung et al., 2014; Loh et al., 2016; Rhee et al., 2013). After labeling, cells are lysed, and biotinylated proteomes are enriched with streptavidin beads and analyzed by MS.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme of APEX2-catalyzed biotinylation at the endoplasmic reticulum membrane (ERM, top) and outer mitochondrial membrane (OMM, bottom). APEX2 (green) was targeted to the ERM facing the cytosol, via fusion to the N-terminal 27 amino acids of the ER-resident protein P450 oxidase 2C1 and to the OMM via fusion to the C-terminal 31 amino acids of mitochondrial antiviral-signaling protein MAVS. Live cells were pre-incubated with biotin-phenol (red B = biotin) for 30 min, and hydrogen peroxide (H2O2) was added to initiate the biotinylation reaction for 1 min. Cells were quenched and then lysed, and the biotinylated proteins were enriched with streptavidin beads and analyzed by mass spectrometry. IMS, intermembrane space. IMM, inner mitochondrial membrane. (B) Confocal fluorescence imaging of ERM-APEX2 and APEX2-OMM fusion constructs. Constructs were introduced into COS-7 cells using lentivirus. Two days after transduction, the cells were fixed and stained with anti-V5 to detect ERM-APEX2 (Alexa Fluor 568 (AF568) readout), or anti-Flag to detect APEX2-OMM (AF568 readout). Anti-RCN2 was used to visualize the ER, or anti-Tom20 to visualize mitochondria (AF488 readout). Fluorescence channels are not normalized. Scale bars, 5 µm. The insets show a zoomed in portion of the cell. DIC, differential interference contrast. (C) Electron microscopy (EM) characterization of ERM-APEX2 and APEX2-OMM localization. ERM-APEX2 and APEX2-OMM genes were introduced into human embryonic kidney (HEK) 293T cells using lentivirus. Cells were fixed and overlaid with a solution of diaminobenzidine and H2O2. APEX2 catalyzes the localized polymerization of diaminobenzidine, which then reacts with osmium to provide contrast for EM (Lam et al., 2015; Martell et al., 2012). Dark regions indicate APEX2 activity. ER indicated by arrowheads. M, mitochondria. Untransduced HEK cell shown for comparison. Scale bars, 500 nm. The untransduced and APEX2-OMM images in this figure overlap with data shown in Supplementary Figure 7 of Lam et al. (2015). (D) Analysis of ERM-APEX2 and APEX2-OMM-catalyzed biotinylation by streptavidin blot. HEK 293T cells stably expressing ERM-APEX2, APEX2-OMM, APEX2-NES (NES = nuclear export sequence), or no APEX2 construct (lane 10) were labeled live as in (A). Whole cell lysates were separated by gel electrophoresis and blotted with streptavidin-horseradish peroxidase (streptavidin-HRP) on the left, or stained with Ponceau on the right. BP, biotin-phenol. The red bracket indicates a molecular weight range where the banding patterns produced by these APEX2 constructs differ notably. (E) Analysis of streptavidin-enriched biotinylated proteomes by silver stain. ERM-APEX2, APEX2-OMM, and APEX2-NES stable cells were labeled live as in (A), lysed, and incubated with streptavidin beads to enrich for biotinylated proteins. Eluted proteins were separated by gel electrophoresis and visualized by silver stain.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** HEK 293T cells stably expressing ERM-APEX2, APEX2-OMM, or a cytosolic APEX2 construct (APEX2-NES, NES = nuclear export sequence) were labeled live as in Figure 1A. The cells were then fixed and stained with neutrAvidin-AF647 conjugate to detect biotinylated proteins and with either anti-V5 to detect ERM-APEX2 or anti-Flag to detect APEX2-OMM and APEX2-NES. The anti-V5/anti-Flag channel is not normalized across image sets. DIC, differential interference contrast. Scale bars, 10 µm.
 
 Importantly, we have shown that the APEX-generated biotin-phenoxyl radical does not cross cellular membranes (Rhee et al., 2013). Therefore, in this study, the proteomic mapping should be specific for proteins on the outer leaflet of the ER membrane and not tag proteins inside the ER lumen. The OMM contains porins that allow free passage of molecules <5 kDa, including the BP radical. Hence, we expect some biotinylation of IMS-resident proteins and some IMM (inner mitochondrial membrane) proteins with IMS exposure. However, no BP radical should enter the mitochondrial matrix (Figure 1A).
 
@@ -39,19 +47,27 @@ By mining our OMM and ERM proteomic data, we discovered that the tail-anchored O
 
 ## Results
 
-## Targeting APEX2 to the OMM and ERM and characterization of biotin labeling
+### Targeting APEX2 to the OMM and ERM and characterization of biotin labeling
 
 To target APEX2, we fused the gene to 31- and 27-amino acid targeting domains of the native OMM and ERM proteins MAVS (Seth et al., 2005) and cytochrome P450 2C1 (Ahn et al., 1993), respectively (Figure 1B). Correct localization was confirmed by fluorescence microscopy in conjunction with mitochondrial and ER markers (Figure 1B). For higher-resolution analysis, we capitalized on the ability of APEX2 to generate contrast for electron microscopy (EM) (Lam et al., 2015; Martell et al., 2012). After cell fixation, targeted APEX2 catalyzed the oxidative polymerization and local deposition of 3,3’-diaminobenzidine (DAB) in the presence of H2O2. The DAB polymer recruits electron-dense osmium, which provides contrast for EM. Figure 1C shows that APEX2-OMM stains the outer membrane of mitochondria, while ERM-APEX2 darkly stains the ERM. The DAB/osmium density of ERM-APEX2 spreads into the cytosol but is excluded from the ER lumen, confirming that APEX2 faces the cytosol rather than the ER lumen, as designed.
 
 Because APEX2 has a weak dimerization tendency (Lam et al., 2015), high expression levels on organellar membranes can give rise to undesired aggregation or morphological perturbation (Lam et al., 2015; Snapp et al., 2003). To avoid these, we generated HEK 293T cells stably expressing APEX2-OMM or ERM-APEX2 at low levels following lentiviral infection. To check for adequate biotinylation activity under these low expression conditions, we pre-incubated APEX2 cells with biotin-phenol for 30 min and added H2O2 for 1 min, then fixed and stained with neutrAvidin-fluorophore conjugate to visualize biotinylated proteins. Figure 1—figure supplement 1 shows that each sample displayed robust biotinylation, as visualized by neutrAvidin staining, compared to a negative control with APEX2 omitted. Next, we repeated the live cell biotinylation, lysed the cells, and analyzed the whole cell lysates by streptavidin blotting (Figure 1D). Each APEX2 fusion biotinylates a wide range of endogenous proteins, and encouragingly, the banding patterns are distinguishable from one another and from that of APEX2-NES, a soluble whole-cytosol APEX2 control (NES is a nuclear export sequence).
 
-## Proteomic mapping of the OMM and ERM
+### Proteomic mapping of the OMM and ERM
 
 Because the OMM and ERM are ‘open’ subcellular domains continuous with the cytosol and lacking membrane enclosures to trap the biotin-phenoxyl radical, we employed our previously described ‘ratiometric SILAC’ approach (Hung et al., 2016, Hung et al., 2014) to ensure high spatial specificity in proteomic mapping. In this approach, each protein is quantified not only by its extent of biotinylation by targeted APEX2 (APEX2-OMM or ERM-APEX2), but also by its extent of biotinylation by a reference APEX2 construct, in this case cytosolic APEX2-NES. Thus, a cytosolic, non-OMM protein such as kinesin may be weakly biotinylated by APEX2-OMM, but if it is biotinylated to a greater extent by the more proximal APEX2-NES, it will be filtered out of the final OMM proteome.
 
 Before generating proteomic samples, we tested our streptavidin enrichment conditions (Figure 1E). Lysates from cells biotinylated with APEX2-OMM, ERM-APEX2, or APEX2-NES were incubated with streptavidin-coated magnetic beads and then subjected to a series of denaturing washes intended to remove all proteins except those directly covalently biotinylated by APEX2. After boiling in SDS to elute from beads, the biotinylated proteomes were run on SDS-PAGE and visualized by silver stain. Figure 1E shows that our protocol enriches much more protein from experimental samples than from negative controls with APEX2, H2O2, or BP omitted. The residual bands in these negative controls likely represent the endogenous biotinylated proteins present in all mammalian cells (Chapman-Smith and Cronan, 1999) in addition to some non-specific bead binders not removed by the washes.
 
 We generated proteomic samples for ratiometric SILAC analysis according to the scheme in Figure 2A. Two replicates were performed for the OMM, and two for the ERM. Each replicate consisted of three cellular samples: one cultured with heavy isotope-labeled arginine and lysine (‘H’) and biotinylated with APEX2-OMM or ERM-APEX2; one cultured in medium-isotope arginine and lysine (‘M’) and biotinylated with the reference construct APEX2-NES; and one negative control sample cultured in light amino acids (‘L’) with either APEX2 or H2O2 omitted. After separate treatment with biotin-phenol followed by quenching and cell lysis, the H, M, and L lysates of each replicate were pooled, and the mixture was subjected to streptavidin bead enrichment as in Figure 1E. Eluted proteins were run on SDS-PAGE to reduce sample complexity, and 16 gel bands were excised and individually digested with trypsin and analyzed by liquid chromatography-tandem MS (LC-MS/MS).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig2-v2.jpg)
+
+**Figure 2.:** (A) Design of two 3-state SILAC (Stable Isotope Labeling by Amino acids in in Cell culture) experiments. HEK 293T cells stably expressing APEX2-OMM or ERM-APEX2 were cultured in media containing heavy (H) isotopes of arginine and lysine. APEX2-NES stable cells were cultured in media with medium (M) isotopes of arginine and lysine, and negative control cells where either expression of APEX2 was omitted or ERM-APEX2 or APEX2-OMM stable cells were not treated with H2O2 were cultured in light (L) media. All dishes were then identically treated with biotin-phenol and H2O2 except for the negative controls mentioned before. The cells were separately lysed, and the three lysates in each replicate were combined 1:1:1 by protein mass. The mixture was then enriched using streptavidin beads and analyzed by mass spectrometry. (B) Scatter plot showing log2(H/M) versus log2(H/L) for Replicate 1 for the OMM proteomic experiment (left) and the ERM proteomic experiment (right). For each of the 5296 proteins detected in Replicate 1 of the OMM proteomic experiment, the log2(H/M) value was plotted against the log2(H/L) value. Known OMM proteins (members of our OMM true positive list, Supplementary file 2a) are shown in green; proteins without prior mitochondrial annotation according to MitoCarta (Pagliarini et al., 2008), Gene Ontology Cell Component (GOCC) (Ashburner et al., 2000) annotation, or the APEX-mapped mitochondrial matrix (Rhee et al., 2013) or mitochondrial intermembrane space (IMS) (Hung et al., 2014) proteomes are shown in red; all other proteins are shown in black. SILAC ratio cut-offs used to filter the OMM mass spectrometric data and obtain the final OMM proteome are shown by the dashed lines. On the right, a similar analysis was conducted for the 4799 proteins detected in Replicate 1 of the ERM proteomic experiment. Known ERM proteins (from our ERM true positive list, Supplementary file 2b) are shown in green; proteins with cytosolic annotation are shown in red; all others are shown in black. (C) Characterization of the specificity of the OMM and ERM proteomes. The first two columns show the percentage of proteins in the entire human proteome and our OMM proteome with prior mitochondrial annotation according to MitoCarta (Pagliarini et al., 2008), GOCC (Ashburner et al., 2000), and our APEX-mapped mitochondrial matrix (Rhee et al., 2013) and mitochondrial IMS (Hung et al., 2014) proteomes. The next two columns show the breakdown of proteins with GOCC sub-mitochondrial annotation available (mitochondrial matrix, IMM, IMS, or OMM). If a protein had more than one sub-mitochondrial annotation, we assigned it to one of the four categories in this priority: OMM>IMS>IMM>matrix. Columns 5 and 6 show the percentage of proteins with secretory pathway annotation according to GOCC (Ashburner et al., 2000) or Phobius (Käll et al., 2004, Käll et al., 2007) in the entire human proteome and our ERM proteome, respectively. The last two columns show the breakdown of proteins with GOCC sub-secretory annotation available. Protein assignments were based on the following priority: endoplasmic reticulum>Golgi apparatus>plasma membrane. (D) Fluorescence imaging of endogenous C2CD3, a mitochondrial orphan, in COS-7 cells. COS-7 cells were transfected with mitochondrially-targeted blue fluorescent protein (mito-BFP) and mCherry-KDEL (not shown). The cells were fixed and stained with an antibody against endogenous C2CD3. Scale bar, 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantitative correlation between the proteomic experiments. For the OMM proteomic experiment (top row) and the ERM proteomic experiment (bottom row), the log2(H/L) value for a protein from Replicate 2 is plotted against the log2(H/L) value from Replicate 1 (left). The graphs on the right show the same analysis for the log2(H/M) values. (B) Histograms of log2(H/L) and log2(H/M) values for replicates 1 and 2 of the OMM proteomic experiment. Bin size = 0.1. (C) Histograms of log2(H/L) and log2(H/M) values for replicates 1 and 2 of the ERM proteomic experiment. Bin size = 0.1. A zoomed in view of the log2(H/L) distribution is shown for Replicate 1; the complete data are shown in the inset. (D) True positive (TP) and false positive (FP) analysis of the OMM proteomic experiment. The purpose of the log2(H/L) ratio is to separate biotinylated proteins from non-specific streptavidin bead binders. In the log2(H/L) histograms for both replicates (top), the distribution of the true positives, known OMM proteins, is plotted in green, and the distribution of false positives, soluble mitochondrial matrix proteins, is plotted in red. The purpose of the log2(H/M) ratio is to separate OMM proteins from non-mitochondrial proteins. In the log2(H/M) histograms for both replicates (bottom), the distribution of true positives, which are again known OMM proteins, is plotted in green, and the distribution of false positives, proteins without prior mitochondrial annotation, is plotted in red. The dashed lines indicate the SILAC ratio cut-offs calculated in (F). (E) TP and FP analysis of the ERM proteomic experiment. Analysis for the log2(H/L) histogram was similar to that in (D), where the true positives are known ERM proteins (green), and the false positives are soluble mitochondrial matrix proteins (red). Analysis for the log2(H/M) histogram was also similar, where the true positives are known ERM proteins (proteins in Supplementary file 2b, green), and the false positives are all proteins not on the ERM true positive proteins list (red). The dashed lines indicate the SILAC ratio cut-offs calculated in (F). (F) Receiver operating characteristic and true positive rate - false positive rate analysis to determine cut-offs. For each replicate of the OMM proteomic experiments (top two rows) and the ERM proteomic experiments (bottom two rows), the experiment quality was assessed by plotting receiver operating characteristic (ROC) curves, shown in rows 1 and 3. Proteins were ranked in descending order of SILAC ratio of interest. The true positive rate (TPR) and the false positive rate (FPR) were calculated at every possible cut-off. TPR is defined as the fraction of detected true positives above the cut-off. FPR is defined as the fraction of detected false positives above the cut-off. The true positive and false positive proteins for each ratio and for each experiment were the same as in (D) and (E). The graphs in rows 2 and 4 depict the difference between the TPR and FPR at every SILAC ratio cut-off. In each case, the SILAC ratio where the difference between TPR and FPR was maximal was chosen to be the cut-off.
 
 Due to our experimental design, each MS-detected protein was associated with three quantified MS peaks—H, M, and L—reflecting its respective enrichment in the APEX2-OMM or ERM-APEX2 sample, in the cytosolic APEX2 reference sample, and in the negative control. We used SILAC ratios, which normalize for variations in absolute protein abundance across replicates, to quantify parameters of interest: log2(H/L) for the extent of protein biotinylation by APEX2-OMM or ERM-APEX2; log2(M/L) for the extent of protein biotinylation by APEX2-NES; and most importantly, log2(H/M) for the relative biotinylation of any given protein by OMM- or ERM-targeted APEX2 versus cytosolic APEX2-NES, which is a measure of protein proximity to the OMM or ERM versus the open cytosol.
 
@@ -61,7 +77,7 @@ To define OMM and ERM proteomes, we calculated SILAC ratio cut-offs, above which
 
 After application of both log2(H/L) and log2(H/M) cut-offs and intersection of the two replicates, we obtained a final proteome of 137 proteins for the OMM (Supplementary file 1a) and a final proteome of 634 proteins for the ERM (Supplementary file 1b).
 
-## Analysis of OMM and ERM proteomes
+### Analysis of OMM and ERM proteomes
 
 With our OMM and ERM proteomes defined, we proceeded to characterize the quality of each dataset in terms of specificity and sensitivity (depth-of-coverage). First, we analyzed the mitochondrial specificity of the OMM proteome. In the entire human proteome, 8% of proteins have mitochondrial annotation according to MitoCarta (Pagliarini et al., 2008), the Gene Ontology Cell Component (GOCC) database (Ashburner et al., 2000), our APEX-mapped mitochondrial matrix (Rhee et al., 2013) or IMS (Hung et al., 2014) proteomes, or literature. In our OMM proteome, 84% have prior mitochondrial annotation (Figure 2C). The remaining 16% of proteins could be either false positives or ‘mitochondrial orphans’ (Supplementary file 1c)—true positives not previously known to be mitochondrial but identified as such by our study. Several of these 22 proteins have ER annotation and thus could be ER proteins that interact with mitochondria. For example, CANX and TMX1 have both been enriched in MAM preparations (Lynes et al., 2012). We obtained an antibody against one of the mitochondrial orphans, C2CD3, and confirmed by immunofluorescence staining that it is indeed localized to mitochondria (Figure 2D). This result has interesting implications, as C2CD3 is associated with the centriole during interphase and mitosis and is required for recruitment of distal appendage proteins (Ye et al., 2014); our result hints at a possible link between mitochondria and cilium formation.
 
@@ -75,21 +91,29 @@ The coverage of our OMM proteome was estimated by first generating a true positi
 
 In summary, like previous proteomes mapped with APEX, the OMM and ERM proteomes obtained in this study feature high specificity paired with moderate coverage and should be valuable resources for biologists studying signaling processes on mitochondrial and ER membranes.
 
-## Overlap between OMM and ERM proteomes
+### Overlap between OMM and ERM proteomes
 
 Our focus on ER and mitochondrial membranes provides a unique opportunity to mine for insights into contact regions between these organelles. For MS proteomic analysis, the only existing method to enrich mitochondria-ER contact sites is to purify MAMs by subjecting crude mitochondria to an additional round of centrifugation. Loosely associated ER-derived microsomes separate into a distinct layer—the MAM layer—apart from purified mitochondria, and this layer is extracted for proteomic analysis. Several MAM proteomic studies have generated lists up to 1212 proteins long (Poston et al., 2013). Most of these are populated with contaminants, including proteins known to localize to the mitochondrial matrix or ER lumen.
 
 We sought to mine our OMM and ERM proteomes, which were obtained without biochemical fractionation, for novel proteins that might reside at mitochondria-ER contact sites. Intersecting the 137 OMM and 634 ERM proteins, we found that 68 proteins were enriched by both APEX2-OMM and ERM-APEX2 (Supplementary file 1e). While many of these could be dual-localized to both mitochondrial and ER membranes (e.g. ACSL1 (Lewin et al., 2001; Milger et al., 2006), MARCH5 (Nakamura et al., 2006; Sugiura et al., 2013; Yonashiro et al., 2006), and ARMC10 (Huang et al., 2003; López-Doménech et al., 2012)), some proteins could be specific residents of mitochondria-ER contact sites. Encouragingly, our intersected list includes MFN2, PTPIP51 (also known as FAM82A2), MFF, TMX1, and ATAD3A—proteins linked to mammalian mitochondria-ER contact sites by previous studies (de Brito and Scorrano, 2008; Friedman et al., 2011; Issop et al., 2015; Krols et al., 2016; Stoica et al., 2014). DRP1, a predominantly cytosolic protein that localizes to mitochondria-ER contact sites during mitochondrial fission (Friedman et al., 2011), did not give enough unique MS-detected peptides to enter our datasets.
 
-## An overexpression screen identifies SYNJ2BP
+### An overexpression screen identifies SYNJ2BP
 
 To identify proteins in our intersected list with a potential role in tethering the ERM to the OMM, analogous to the ERMES complex in yeast, we developed a gain-of-function assay. Proteins with a role in tethering might increase the extent of mitochondria-ER overlap upon overexpression. Hence, we obtained V5 epitope-tagged plasmids for 40 proteins in our list, and for the 38 genes with correct sequences, we overexpressed them via Lipofectamine 2000 transfection in COS-7 cells. We used fluorescence microscopy to check for increased overlap between mitochondria and ER markers in these cells (Supplementary file 1e). Only a single protein in our screen produced such a phenotype, synaptojanin-2 binding protein, or SYNJ2BP. Interestingly, SYNJ2BP also had the highest combined enrichment across both OMM and ERM proteomes (Supplementary file 1e). As shown in Figure 3A, low expression of SYNJ2BP-V5 produces cells with distinct and well-separated ER and mitochondrial morphologies, whereas high expression causes mitochondria and ER to re-organize and strongly co-localize. We obtained the same results using a SYNJ2BP overexpression plasmid lacking any epitope tag, showing that the observed phenotype is tag-independent (data not shown). To examine this effect at higher spatial resolution, we repeated the assay using EM, which more clearly visualizes the spatial relationships between ER and mitochondrial membranes. Figure 3B and Figure 3—figure supplement 1B show that SYNJ2BP-V5 overexpression causes ER membranes to dramatically ‘zip up’ and form extended contacts along mitochondrial surfaces. Quantitation across ≥7 fields of view per condition showed that the median percentage of mitochondrial surface in contact with ER increased from 6% to 25% per mitochondrion upon SYNJ2BP-V5 overexpression. We were also very intrigued to find that the induced mitochondria-ER contacts were highly uniform in width (~45 nm spacing between mitochondria and ER membranes), and nearly all were filled with ribosomes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig3-v2.jpg)
+
+**Figure 3.:** (A) SYNJ2BP overexpression assay in COS-7 cells. COS-7 cells were transfected with SYNJ2BP-V5 and mCherry-KDEL (an ER marker) using Lipofectamine 2000. ~26 hr later, cells were fixed and stained with anti-V5 to detect SYNJ2BP and anti-Tom20 to visualize mitochondria. Based on anti-V5 signal intensity, cells with high or low SYNJ2BP expression were identified and imaged within the heterogeneous population. Scale bars, 10 µm. (B) EM characterization of HEK 293T cells overexpressing SYNJ2BP-V5. HEK 293T were transfected with 1 µg V5-APEX2-NLS (NLS = nuclear localization signal) alone, left, or with 2 µg SYNJ2BP-V5 and 1 µg V5-APEX2-NLS, using Lipofectamine 2000. The cells were fixed, stained with DAB and osmium, and then processed for EM. Micrographs are shown for cells with positive nuclear staining, indicating transfection (see zoomed out views in Figure 3—figure supplement 1B). ‘M’, mitochondria. Arrowheads point to ER. Bottom image shows zoom of the boxed region. Arrows point to ribosomes. Scale bars, 500 nm. (C) Correlation between replicates of the SYNJ2BP-V5 immunoprecipitation-mass spectrometry (IP-MS) experiment. To identify binding partners of SYNJ2BP, a population of HeLa cells stably expressing SYNJ2BP-V5 with endogenous SYNJ2BP knocked out was generated. SYNJ2BP-V5 was enriched from whole cell lysates using anti-V5 antibody coupled to protein G beads. The scatter plot shows the correlation between two independent IP-MS replicate experiments. Proteins deemed significantly enriched (by a moderated t-test; p-value<0.02) are colored in red and all others in black. (D) Structural domains of SYNJ2BP and RRBP1. For RRBP1 (top), regions in green vary among isoforms; isoforms vary in the number of decapeptide repeats (up to 54 repeats) and in the presence or absence of three amino acids after the decapeptide repeat region. The C-terminus of RRBP1 contains a consensus PDZ-binding domain (S/T-X-Φ-COOH, where X is any amino acid and Φ is a hydrophobic amino acid, usually V/I/L; TSV in RRBP1). SYNJ2BP is a tail-anchored OMM protein with a cytosolic PDZ domain.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fluorescence microscopy of endogenous SYNJ2BP. COS-7 cells were transfected with mito-BFP and mCherry-KDEL, mitochondrial and ER markers, respectively. The cells were then fixed and stained with an antibody against endogenous SYNJ2BP and imaged by confocal microscopy. Bottom row shows zoom of boxed region. Scale bars, 5 µm. (B) Zoomed-out views of the EM micrographs in Figure 3B. The dark stain in the nucleus (from APEX2-NLS) indicates that these cells were transfected. Scale bars, 1 µm. (C) Characterization of the lines used for SYNJ2BP IP-MS. Whole cell lysates from wild type HeLa cells (lane 1), HeLa cell populations stably expressing Cas9 and a control guide RNA (gRNA) that does not target anything in the genome (lane 2), cells stably expressing Cas9 and a gRNA against SYNJ2BP (lane 3), and cells stably expressing Cas9, a gRNA against SYNJ2BP, and SYNJ2BP-V5 (lane 4) were separated on a gel and analyzed by anti-SYNJ2BP western blot. Ponceau stain of the same blot is shown below. (D) SYNJ2BP IP-MS scheme to identify binding partners. 117 and 116 are two cultures of HeLa cells stably overexpressing SYNJ2BP-V5 with endogenous SYNJ2BP knocked out. 115 and 114 are negative control cultures with endogenous SYNJ2BP knocked out, or nothing knocked out respectively. The cultures were separately lysed, and separately enriched with anti-V5 antibody. The enriched material was digested on-bead with trypsin, and the peptides were labeled with iTRAQ (isobaric Tags for Relative and Absolute Quantification) reagents (114–117, as indicated). The labeled peptides from each of the four samples were combined and analyzed by mass spectrometry.
 
 SYNJ2BP is a 16 kDa tail-anchored OMM protein with a cytosol-facing PDZ domain. PDZ domains are almost exclusively found in soluble proteins that help anchor signaling components at the plasma membrane (Fanning and Anderson, 1999; Romero et al., 2011)—for example, PSD-95, which anchors synaptic receptors to the cytoskeleton. The presence of a PDZ domain in a transmembrane mitochondrial protein is highly unusual and suggestive of a binding partner. While no previous study has pinpointed a mitochondrial function for SYNJ2BP, multiple interaction partners have been identified, including synaptojanin 2A, an inositol 5’-phosphatase (Nemoto and De Camilli, 1999), low density liproprotein receptor-related protein (LRP), and megalin (Gotthardt et al., 2000). SYNJ2BP has also been reported as a negative regulator of angiogenesis (Adam et al., 2013) and an inhibitor of tumor growth and metastasis (Liu et al., 2016). A splice variant of SYNJ2BP in mice with a different C-terminus, ARIP2, was reported to localize to the cytoplasm and bind ACTRIIA and ACTRIIB, although it was never addressed whether ARIP2 was mitochondrial (Matsuzaki et al., 2002).
 
 By immunofluorescence staining, endogenous SYNJ2BP protein localizes throughout the mitochondrion and does not appear enriched at sites of ER overlap (Figure 3—figure supplement 1A). If SYNJ2BP plays a role in mitochondria-ER tethering under physiological conditions (without overexpression) perhaps only a subset of the protein (e.g., a post-translationally modified form) engages with the ER membrane.
 
-## Discovery of RRBP1 as a binding partner for SYNJ2BP
+### Discovery of RRBP1 as a binding partner for SYNJ2BP
 
 Having identified SYNJ2BP as a protein with a possible role in mitochondria-ER tethering, we sought to identify its binding partner on the ERM. To do this, we used CRISPR (clustered regularly interspaced short palindromic repeats)/Cas9 (Ran et al., 2013) to remove endogenous SYNJ2BP and selected for HeLa cells stably expressing V5-tagged SYNJ2BP as a replacement (Figure 3—figure supplement 1C). We performed two replicate immunoprecipitations of SYNJ2BP-V5 with anti-V5 coated beads alongside negative control cells lacking SYNJ2BP-V5. Samples were separately digested to peptides, labeled with iTRAQ reagents (isobaric Tags for Relative and Absolute Quantification (Ross et al., 2004)), mixed together, and analyzed by LC-MS/MS (Figure 3—figure supplement 1D). The scatter plot in Figure 3C shows the 56 proteins (colored red) that were significantly enriched (moderated t-test false discovery rate of p-value<0.02) in the experimental sample over the negative control in both replicates (Supplementary file 3a). As expected, we enriched the known SYNJ2BP binding partner E-SYT1 (Christianson et al., 2012). Strikingly, we also enriched the entire MARS (multi aminoacyl tRNA synthetase) complex of 11 proteins (Lee et al., 2004), and other proteins related to protein translation (the signal recognition particle receptor subunit beta SRPRB, dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3A, ribophorin 1 RPN1, eIF-2-alpha kinase activator GCN1L1, and mitochondrial ribosomal proteins MRPS34 and MRPS27).
 
@@ -97,11 +121,27 @@ We searched the list of 56 SYNJ2BP interactors for an ER-localized, PDZ-binding 
 
 To validate the interaction between SYNJ2BP and RRBP1, we performed immunoprecipitation on HEK 293T cells transiently overexpressing SYNJ2BP-V5 and blotted for endogenous RRBP1 in the V5-enriched material. Figure 4A shows that anti-V5 immunoprecipitation enriches RRBP1, which appears as multiple bands due to its various splice isoforms. We were unable to perform the reverse immunoprecipitation due to the lack of antibodies suitable for immunoprecipitating endogenous RRBP1 and the intractability of cloning recombinant RRBP1 with its many repeats.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig4-v2.jpg)
+
+**Figure 4.:** (A) Pull down of SYNJ2BP-V5 from cells treated with protein translation inhibitors. HEK 293T cells expressing SYNJ2BP-V5 (Lipofectamine 2000 transfection) were treated with 200 µM cycloheximide or puromycin for 2 hr before cell lysis. Lysates were enriched with anti-V5 coated beads and blotted for endogenous RRBP1 (top) and SYNJ2BP-V5 (bottom), left. Lanes 4–6 show untransfected controls. Right, gels show same analysis of whole cell lysates prior to anti-V5 enrichment. Black arrows indicate RRBP1 bands. (B) EM of HEK 293T cells overexpressing SYNJ2BP-V5 in the presence versus absence of RRBP1 knockout (KO). SYNJ2BP-V5 and Flag-APEX2-NLS (a nuclear marker) were transfected into wild-type cells, left, and two different RRBP1 KO clonal cell lines, middle and right. After 24 hr, the cells were fixed, stained with DAB and osmium, and processed for EM. Micrographs are shown for cells with positive nuclear stain (indicating transfection). Additional fields of view in Figure 4—figure supplement 1B. Scale bars, 500 nm. (C) EM of HEK 293T cells overexpressing SYNJ2BP-V5 and treated with protein translation inhibitors as in (A). The cells were fixed and stained as in (B). Scale bars, 500 nm. Additional EM fields of view in Figure 4—figure supplement 2A. (D) Quantitation of EM images in (C) and Figure 4—figure supplement 2A. Box plots showing the percent of mitochondrial surface in contact (<80 nm) with the ER. Untransfected cells also analyzed for comparison (left). (E) Same as D, but a single percentage is shown for each condition that reflects the total length of mitochondrial perimeter in contact with ER (total, rough, or smooth), divided by the total length of mitochondrial perimeter measured across ≥6 fields of view per condition (15–68 total mitochondria per condition).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Characterization of RRBP1 and SYNJBP knockout cells. Whole cell lysate from clonal HEK 293 T cells expressing Cas9 and either a control gRNA, one of two different gRNAs against SYNJ2BP, and one of two different gRNAs against RRBP1 were separated on a gel and analyzed by western blotting with an anti-RRBP1 or anti-SYNJ2BP antibody. Blotting with an anti-actin antibody as a loading control is also shown. (B) Additional electron microscopy images of the samples from Figure 4B. Scale bars, 500 nm. (C) Fluorescence imaging of endogenous and overexpressed RRBP1. To analyze the localization of endogenous RRBP1 (top row), COS-7 cells were transfected with mito-BFP and mCherry-KDEL. The cells were fixed and stained with an antibody against RRBP1, and the sample was imaged by confocal microscopy. To analyze the localization of overexpressed RRBP1 (bottom row), COS-7 cells were transfected with a V5- and GFP-tagged RRBP1, mito-BFP, and mCherry-KDEL. The cells were fixed and imaged by confocal microscopy. Scale bars, 10 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Additional electron microscopy images of the samples from Figure 4C. Arrows denote the start and end of a mitochondria-rough ER contact. Arrowheads denote the start and end of a mitochondria-smooth ER contact. Scale bars, 500 nm. (B) EM of wild-type cells treated with protein translation inhibitors. Wild-type HEK 293T cells were transfected with V5-APEX2-NLS and treated with cycloheximide, puromycin, or no drug and then fixed and processed for EM as in Figure 4C. Scale bars, 800 nm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/24463/elife-24463-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Morphology of the mitochondria and ER in SYNJ2BP KO cells by fluorescence microscopy. HeLa cells stably expressing Cas9 were separately transfected with two different gRNAs targeting SYNJ2BP. An untransfected sample was processed in parallel as a negative control. Five days after transfection, cells were incubated for 30 min with MitoTracker Deep Red, fixed, and stained with antibodies against SYNJ2BP and an ER marker, protein disulfide isomerase (PDI). Samples were imaged by confocal microscopy. Scale bars, 10 µm. (B) Morphology of the mitochondria and ER in RRBP1 KO cells by fluorescence microscopy. Selected populations of HeLa cells stably expressing Cas9 and a non-targeted gRNA or one of two different RRBP1 gRNAs were transfected with mCherry-KDEL, a fluorescent ER marker. About 24 hr after transfection, the cells were incubated for 30 min with MitoTracker Deep Red, fixed, stained anti-RRBP1 antibody, and imaged by confocal microscopy. The MitoTracker Deep Red channel is not normalized. Scale bars, 10 µm. (C) Growth curves of HEK 293T SYNJ2BP and RRBP1 KO cell lines. Clonal cell lines of HEK293T with knockouts of SYNJ2BP, RRBP1, or a non-targeted gRNA control were plated in triplicate in matched 96-well plates. At each time point, a plate was removed and processed with the Cell-Titer Glo assay (Promega) to quantify viable cells. Signal from each cell line was normalized to the initial signal at the time of plating. Error bars, one sample standard deviation. (D) Relative cell viability of SYNJ2BP and RRBP1 KO lines cultured in glucose- or galactose-containing media. Cell lines from (C) were plated in triplicate in a 96-well plates. After 24 hr, the media was exchanged into either glucose-containing or galactose-containing media and the cells were cultured for another 72 hr before analysis by Cell-Titer Glo to quantify viable cells. Shown are the normalized signals of viability in glucose relative to viability in galactose. Error bars, one sample standard deviation. (E) Protein synthesis in SYNJ2BP or RRBP1 KO lines. For each clonal HEK 293T cell line expressing a non-targeted gRNA or with knockouts of SYNJ2BP or RRBP1, 10,000 cells were plated in a 96-well plate in triplicate. Two days later, the protein synthesis was measured using the Click-iT assay (Thermo Fisher Scientific). After fixation, all samples were stained with Hoechst 33342 dye to estimate cell numbers and AF488 alkyne to detect L-azidohomoalanine incorporation. Error bars, one sample standard deviation.
+
 To determine if RRBP1 is the relevant binding partner for mediating overexpressed SYNJ2BP’s ability to increase mitochondria-ER contacts, we repeated our gain-of-function assay in RRBP1 CRISPR-mediated knockout cells. Figure 4—figure supplement 1A shows that endogenous RRBP1 protein is indeed absent from these cells. By EM, the induced mitochondria-ER contacts we previously observed upon SYNJ2BP overexpression were absent. In parallel, a positive control with SYNJ2BP overexpressed in wild-type cells (without knockout of endogenous RRBP1) showed the same robust induction of mitochondria-ER contacts (Figure 4B and Figure 4—figure supplement 1B) as before (Figure 3B). Therefore, RRBP1 is essential for SYNJ2BP’s unique gain-of-function phenotype, perhaps because the two proteins bind across mitochondria-ER junctions, via a probable PDZ domain-PDZ binding motif interaction (Figure 3D).
 
 Finally, we performed imaging of endogenous RRBP1, stained in COS-7 cells with anti-RRBP1 antibody. RRBP1 localization extended across the ER, without any clear enrichment at sites of mitochondria-ER overlap (Figure 4—figure supplement 1C). If RRBP1 plays a role in mitochondria-ER tethering under physiological, non-overexpression conditions, perhaps only a subset of the protein (a specific splice variant or post-translationally modified form of RRBP1) localizes to mitochondria-ER contact sites.
 
-## A link to protein translation
+### A link to protein translation
 
 Due to RRBP1’s reported functions in ribosome and/or mRNA binding, the striking appearance of ribosomes in mitochondria-ER contacts induced by SYNJ2BP overexpression (Figure 3B), and the numerous translation-related proteins enriched in our SYNJ2BP-V5 pull down (Figure 3C), we hypothesized that the SYNJ2BP-RRBP1 tether may be linked to protein translation. To examine this hypothesis, we repeated the immunoprecipitation/Western blot experiment after treatment of SYNJ2BP-V5-expressing live cells with protein translation inhibitors. Figure 4A shows that while cycloheximide treatment had no effect, puromycin reduced the extent of SYNJ2BP-V5 interaction with endogenous RRBP1 without changing the total abundance of either protein. Because puromycin is known to disassemble polysomes, while cycloheximide inhibits translation while keeping polysomes intact (Blobel and Sabatini, 1971; Wettstein et al., 1964), perhaps polysomes—a hallmark of active protein translation—regulates the extent of SYNJ2BP-RRBP1 interaction.
 
@@ -109,7 +149,7 @@ To examine this effect in greater detail, we repeated the assay but used EM as o
 
 The next question that arises is whether protein translation inhibitors affect mitochondria-rough ER contacts in wild-type cells that do not overexpress SYNJ2BP-V5. We examined this, but found no significant effect (Figure 4—figure supplement 2B). Because mitochondria-rough ER contacts are so scarce in wild-type HEK 293T cells, and EM is not a high-throughput method, greater statistical power may be needed to observe a significant effect, if one exists.
 
-## Analysis of SYNJ2BP and RRBP1 knockout cells
+### Analysis of SYNJ2BP and RRBP1 knockout cells
 
 If SYNJ2BP and RRBP1 function as a mitochondria-ER tethering complex under physiological conditions, we might expect to observe a phenotype upon knockout of either protein. We used CRISPR/Cas9 to generate HEK 293T and HeLa cells missing either SYNJ2BP or RRBP1 (Figure 4—figure supplement 1A, Figure 4—figure supplement 3A, and B). Fluorescence microscopy showed no clear reduction in mitochondria-ER overlap in these cells (Figure 4—figure supplement 3A and B). Due to the connection to protein translation observed in the experiments above, we also assayed for differences in cell growth rates (Figure 4—figure supplement 3C), preferential utilization of glucose versus galactose as a carbon source (Figure 4—figure supplement 3D), and protein synthesis rates (Figure 4—figure supplement 3E). None of these assays produced significant differences between the knockout cell lines and wild-type HEK 293T or HeLa cells.
 
@@ -131,29 +171,94 @@ In conclusion, our study extends APEX2 proximity biotinylation to unbounded intr
 
 ## Materials and methods
 
-## Plasmids and cloning
+### Plasmids and cloning
 
 Standard restriction enzyme digest and ligation with T4 DNA ligase or Gibson cloning was used to generate all constructs. Except for those listed in the table below, the V5-tagged constructs used in our overexpression screen were obtained from the Broad Institute. Dr. Jeffrey Martell (MIT) provided the pDisplay-mCherry-KDEL plasmid.
 
-## Summary of plasmids
+### Summary of plasmids
 
-NameFeaturesPromoter/VectorDetailsERM-APEX2C1(1-27)-APEX2-V5-StopCMV/pLX304Soybean APEX2 has four mutations relative to wild-type ascorbate peroxidase: K14D, W41F, E112K, and A134P (Lam et al., 2015). C1(1-27) indicates the first 27 amino acids from rabbit cytochrome P450 2C1 (Ahn et al., 1993): MDPVVVLGLCLSCLLLLSLW KQSYGGG V5: GKPIPNPLLGLDST This lentiviral vector carries a blasticidin resistance marker.APEX2-OMMFlag-APEX2-MAVS(510-540)-StopCMV/pLX304Flag: DYKDDDDK MAVS(510-540) (Seth et al., 2005): RPSPGALWLQVAVTGVLVVT LLVVLYRRRLH This lentiviral vector carries a blasticidin resistance marker.APEX2-NESFlag-APEX2-NES-StopCMV/pLX304NES: LQLPPLERLTLD This lentiviral vector carries a blasticidin resistance marker.SYNJ2BP-V5SYNJ2BP-linker-V5-StopCMV/pLX_TRC208The SYNJ2BP gene was originally obtained as SYNJ2BP-linker-V5 in pLX304 from the Broad Institute. We made a CRISPR-resistant version and moved the construct to this pLX_TRC208. Linker: CPTFLYKVV This lentiviral vector carries a hygromycin resistance marker.mito-tagBFPmito-tagBFP-StopCMV/pcDNA3The tagBFP (blue fluorescent protein) gene was cloned from pHR-SFFV-dCas9-BFP, a gift from Stanley Qi and Jonathan Weissman (Addgene plasmid # 46910) (Gilbert et al., 2013). Mitochondrial matrix targeting sequence (‘mito’): MLATRVFSLVGKRAISTSVCVRV5-GFP-RRBP1Calreticulin signal peptide-V5-GFP-RRBP1-StopCMV/pcDNA4 HisMaxGFP (green fluorescent protein)-RRBP1 in pcDNA4 HisMax was a gift from Alexander F. Palazzo (University of Toronto) (Cui et al., 2012). The RRBP1 gene is the full-length version with 54 decapeptide repeats and the three amino acids after the decapeptide repeat region.V5-APEX2-NLSV5-APEX2-NLS-StopCMV/pcDNA3NLS: SRADPKKKRKVDPKKKRKVD PKKKRKVFlag-APEX2-NLSFlag-APEX2-NLS-StopCMV/pcDNA3Flag-APEX2-CAAXFlag-APEX2-CAAX-StopCMV/pcDNA3CAAX: RSKLNPPDESGPGCMSCKCV LS
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Features</th>
+      <th>Promoter/Vector</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ERM-APEX2</td>
+      <td>C1(1-27)-APEX2-V5-Stop</td>
+      <td>CMV/pLX304</td>
+      <td>Soybean APEX2 has four mutations relative to wild-type ascorbate peroxidase: K14D, W41F, E112K, and A134P (Lam et al., 2015). C1(1-27) indicates the first 27 amino acids from rabbit cytochrome P450 2C1 (Ahn et al., 1993): MDPVVVLGLCLSCLLLLSLW KQSYGGG V5: GKPIPNPLLGLDST This lentiviral vector carries a blasticidin resistance marker.</td>
+    </tr>
+    <tr>
+      <td>APEX2-OMM</td>
+      <td>Flag-APEX2-MAVS(510-540)-Stop</td>
+      <td>CMV/pLX304</td>
+      <td>Flag: DYKDDDDK MAVS(510-540) (Seth et al., 2005): RPSPGALWLQVAVTGVLVVT LLVVLYRRRLH This lentiviral vector carries a blasticidin resistance marker.</td>
+    </tr>
+    <tr>
+      <td>APEX2-NES</td>
+      <td>Flag-APEX2-NES-Stop</td>
+      <td>CMV/pLX304</td>
+      <td>NES: LQLPPLERLTLD This lentiviral vector carries a blasticidin resistance marker.</td>
+    </tr>
+    <tr>
+      <td>SYNJ2BP-V5</td>
+      <td>SYNJ2BP-linker-V5-Stop</td>
+      <td>CMV/pLX_TRC208</td>
+      <td>The SYNJ2BP gene was originally obtained as SYNJ2BP-linker-V5 in pLX304 from the Broad Institute. We made a CRISPR-resistant version and moved the construct to this pLX_TRC208. Linker: CPTFLYKVV This lentiviral vector carries a hygromycin resistance marker.</td>
+    </tr>
+    <tr>
+      <td>mito-tagBFP</td>
+      <td>mito-tagBFP-Stop</td>
+      <td>CMV/pcDNA3</td>
+      <td>The tagBFP (blue fluorescent protein) gene was cloned from pHR-SFFV-dCas9-BFP, a gift from Stanley Qi and Jonathan Weissman (Addgene plasmid # 46910) (Gilbert et al., 2013). Mitochondrial matrix targeting sequence (‘mito’): MLATRVFSLVGKRAISTSVCVR</td>
+    </tr>
+    <tr>
+      <td>V5-GFP-RRBP1</td>
+      <td>Calreticulin signal peptide-V5-GFP-RRBP1-Stop</td>
+      <td>CMV/pcDNA4 HisMax</td>
+      <td>GFP (green fluorescent protein)-RRBP1 in pcDNA4 HisMax was a gift from Alexander F. Palazzo (University of Toronto) (Cui et al., 2012). The RRBP1 gene is the full-length version with 54 decapeptide repeats and the three amino acids after the decapeptide repeat region.</td>
+    </tr>
+    <tr>
+      <td>V5-APEX2-NLS</td>
+      <td>V5-APEX2-NLS-Stop</td>
+      <td>CMV/pcDNA3</td>
+      <td>NLS: SRADPKKKRKVDPKKKRKVD PKKKRKV</td>
+    </tr>
+    <tr>
+      <td>Flag-APEX2-NLS</td>
+      <td>Flag-APEX2-NLS-Stop</td>
+      <td>CMV/pcDNA3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flag-APEX2-CAAX</td>
+      <td>Flag-APEX2-CAAX-Stop</td>
+      <td>CMV/pcDNA3</td>
+      <td>CAAX: RSKLNPPDESGPGCMSCKCV LS</td>
+    </tr>
+  </tbody>
+</table>
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 Human embryonic kidney (HEK) 293T, HeLa, or COS-7 cells were obtained from ATCC. These cells were not independently authenticated or tested for mycoplasma. All lines were cultured in a 1:1 Dulbecco’s Modified Eagle’s Medium (DMEM) with 4.5 g/l glucose and L-glutamine:Minimum Essential Medium (MEM) mixture supplemented with 10% fetal bovine serum (FBS), 100 units/ml penicillin, and 100 µg/ml streptomycin at 37°C under 5% CO2. For confocal microscopy experiments, cells were plated on 7 mm x 7 mm glass coverslips pre-coated for at least 20 min at 37°C under 5% CO2 with 50 µg/ml human fibronectin (Millipore) in Dulbecco’s Phosphate Buffered Saline (DPBS).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Confocal microscopy was performed using a Zeiss AxioObserver.Z1 microscope equipped with a Yokogawa spinning disk confocal head, Cascade IIL:512 camera, and a Quad-band notch dichroic mirror (405/488/568/647 nm). The samples were excited using solid state 405 nm, 491 nm, 561 nm, and 640 nm lasers. Slidebook 5.0 software (Intelligent Imaging Innovations) was used to collect the images through a 48x or 63x oil-immersion objective for BFP (445/40 emission filter), YFP/AF488 (528/38 emission filter), AF568 (617/73 emission filter), AF647 (700/75 emission filter), and differential interference contrast (DIC) channels. Acquisition times ranged from 100 to 2000 ms.
 
-## Characterization of ERM-APEX2 and APEX2-OMM localization by fluorescence microscopy (related to Figure 1B)
+### Characterization of ERM-APEX2 and APEX2-OMM localization by fluorescence microscopy (related to Figure 1B)
 
 COS-7 cells were plated on human fibronectin-coated glass coverslips in wells of a 48-well plate so they were at 30–40% confluent the next day. Then, 30 µl of the ERM-APEX2 or APEX2-OMM lentivirus that was used to generate the stable cells for proteomics was combined with 170 µl of full cell culture media each and added to the cells. The cells were transduced for 48 hr, after which they were washed three times with warm DPBS and fixed with 4% paraformaldehyde in ‘fixation buffer’ (60 mM PIPES, 25 mM HEPES, 10 mM EGTA, 2 mM MgCl2, 120 mM sucrose, pH 7.4) for 15 min at room temperature. The samples were washed three times with 1x phosphate buffered saline (PBS) and then permeabilized by adding cold methanol and placing the plate at −20°C for 5 min. The samples were washed three times with 1x PBS and then blocked for 1 hr at room temperature in 3% bovine serum albumin (BSA) in 1x PBS.
 
 Samples transduced with ERM-APEX2 lentivirus were rocked for 1 hr at room temperature in 1:1000 mouse anti-V5 antibody (Life Technologies, catalog no. R960-25) and 1:50 rabbit anti-RCN2 antibody (Proteintech, catalog no. 10193–2-AP) in 1% BSA in 1x PBS. Samples transduced with APEX2-OMM lentivirus were rocked for 1 hr at room temperature in 1:500 mouse anti-Flag (Agilent, catalog no. 200472) and 1:400 rabbit anti-Tom20 (Santa Cruz Biotechnology, catalog no. sc-11415) in 1% BSA in 1x PBS. The samples were then washed four times with 1x PBS for five minutes each time. All wells were then rocked in 1:2000 anti-mouse Alexa Fluor 568 (AF568), 1:1000 anti-rabbit AF488 in 1% BSA in 1x PBS for 30 min at room temperature. The cells were washed again four times with 1x PBS for five minutes each time. The last wash was replaced with fresh 1x PBS, and the cells were imaged using confocal microscopy. The data in this figure are representative of three independent experiments with >10 fields of view each.
 
-## Characterization of ERM-APEX2 and APEX2-OMM by electron microscopy (related to Figure 1C)
+### Characterization of ERM-APEX2 and APEX2-OMM by electron microscopy (related to Figure 1C)
 
 ERM-APEX2 and APEX2-OMM lentiviruses were prepared as previously described (Lam et al., 2015). Briefly, HEK 293T cells were plated at 60–70% confluency in 6-well plates and transfected with 1000 ng of either pLX304-ERM-APEX2 or pLX304-APEX2-OMM, 900 ng dr8.91, and 100 ng of pVSV-G with 10 µl of Lipofectamine 2000 (Invitrogen) in MEM. The transfection solution was replaced with full cell culture media after 3 hr. About 60 hr post-transfection, the cell culture supernatant was filtered through a 0.45 µm filter and used to transduce fresh HEK 293T at 50% confluency in poly-D-lysine-coated glass-bottom dishes that were pretreated with 50 µg/ml human fibronectin. In parallel, a separate sample of HEK 293T cells were plated at 60–80% confluence and transfected with 0.7 µl Lipofectamine 2000 and 100 ng of pcDNA3-APEX2-CAAX (Lam et al., 2015). The untransfected cells in this sample served as a negative control.
 
@@ -161,17 +266,17 @@ After 48 hr of transduction with lentivirus or 18–24 hr post-transfection, the
 
 The data presented in this figure are representative of ≥3 fields of view from one experiment for each sample.
 
-## Generation and concentration of ERM-APEX2, APEX2-OMM, and APEX2-NES lentiviruses for proteomic samples and fluorescence microscopy (related to Figure 1B, D and E, and Figure 1—figure supplement 1)
+### Generation and concentration of ERM-APEX2, APEX2-OMM, and APEX2-NES lentiviruses for proteomic samples and fluorescence microscopy (related to Figure 1B, D and E, and Figure 1—figure supplement 1)
 
 HEK 293T cells were plated in T150 flasks to make lentiviruses for each of the three APEX2 constructs. The cells in each T150 flask were transfected with 120 µl of polyethylenimine (Sigma), 15 µg of pLX304 plasmid carrying an APEX2 construct, 13.5 µg of dr8.91, and 1.5 µg of pVSV-G in MEM. MEM was added to a final volume of 15 ml. This mixture was added to cells for 6 hr at 37°C, 5% CO2, after which it was removed and replaced with 22 ml of full cell culture media. After approximately 40 hr at 37°C, 5% CO2, the supernatant containing lentivirus was filtered using a 0.45 µm filter and stored at 4°C until needed.
 
 The filtered supernatant was then divided into 10 ml fractions and concentrated by ultracentrifugation at 25,000xg for 2 hr at 4°C. The supernatant was decanted, and the tube was dried by inverting the tube and blotting on an ethanol-soaked paper towel for ~1 min. Each fraction of lentivirus was resuspended in 500 µl DPBS by careful pipetting to avoid bubbles, and all of the fractions were pooled together and separated into 120 µl aliquots in 0.6 ml low binding tubes (Fisher Scientific, catalog no. 07-200-183). The tubes were frozen in liquid nitrogen and stored at −80°C.
 
-## Generation of ERM-APEX2, APEX2-OMM, and APEX2-NES stable cell lines (related to Figure 1D and E, and Figure 1—figure supplement 1)
+### Generation of ERM-APEX2, APEX2-OMM, and APEX2-NES stable cell lines (related to Figure 1D and E, and Figure 1—figure supplement 1)
 
 Low passage HEK 293T cells were plated at ~30% confluency in 6-well plates. Each well was transduced with 30 µl of concentrated lentivirus for ERM-APEX2, APEX2-OMM, or APEX2-NES. After 47 hr at 37°C, 5% CO2, each well was split into two T25 flasks in media containing 8 µg/ml blasticidin S HCl. Each day, the media was changed to fresh 8 µg/ml blasticidin S HCl media. Cells were split and expanded before reaching full confluency. After 8–11 days, one T75 flask for each cell line was made into cell stocks, after which the cells were passaged in drug-free media.
 
-## Characterization of ERM-APEX, APEX2-OMM, and APEX2-NES biotinylation by fluorescence microscopy (related to Figure 1—figure supplement 1)
+### Characterization of ERM-APEX, APEX2-OMM, and APEX2-NES biotinylation by fluorescence microscopy (related to Figure 1—figure supplement 1)
 
 HEK 293T cells stably expressing ERM-APEX2, APEX2-OMM, APEX2-NES, or no APEX2 construct were grown in SILAC media for 11 days (see ‘SILAC labeling of proteomic samples, biotinylation, and processing for mass spectrometry’ below) and plated on human fibronectin-coated glass coverslips in 48-well plates. The next day, the cells were incubated with 200 µl of 500 µM biotin-phenol in media for 30 min at 37°C, 5% CO2. Hydrogen peroxide (H2O2) was then added to a final concentration of 1 mM for 1 min at room temperature to initiate the biotinylation reaction. The reaction was then quenched by washing three times with ‘quencher solution’ (10 mM sodium ascorbate, 10 mM sodium azide, and 5 mM Trolox in DPBS). The cells were then fixed with 3.7% formaldehyde in DPBS for 15 min at room temperature. After fixation, the cells were washed three times with DPBS. Cold methanol was added to permeabilize the cells, and the samples were placed at −20°C for five minutes. The samples were then washed three times with DPBS. The cells were blocked for 1 hr at 4°C with 3% BSA in DPBS.
 
@@ -179,7 +284,7 @@ The samples were rocked in primary antibody (1:500 mouse anti-Flag for APEX2-OMM
 
 The data in this figure are representative of three independent experiments with >10 fields of view each.
 
-## Western blot analysis of biotin-phenol labeling (related to Figure 1D)
+### Western blot analysis of biotin-phenol labeling (related to Figure 1D)
 
 Wild-type HEK 293T cells or HEK 293T cells stably expressing ERM-APEX2, APEX2-OMM, or APEX2-NES were plated in T25 flasks. The next day, the cells were pre-incubated with 4 ml 500 µM biotin-phenol in cell culture media for 30 min at 37°C, 5% CO2. Then, H2O2 was added to a final concentration of 1 mM for 1 min at room temperature. Negative control samples that omitted biotin-phenol or H2O2 were included for each APEX2-expressing cell line. The reaction was quenched by washing three times with 5 ml of quencher solution. The cells were collected in 5 ml of quencher solution by gently pipetting and then pelleted by centrifuging at 3,000xg for 10 min at 4°C. The supernatant was removed, and the cells were stored at −80°C.
 
@@ -189,7 +294,7 @@ Transfer to a nitrocellulose membrane, Ponceau staining, and blotting with strep
 
 The data in this experiment are representative of two independent experiments.
 
-## Silver stain analysis of streptavidin enriched proteins (related to Figure 1E)
+### Silver stain analysis of streptavidin enriched proteins (related to Figure 1E)
 
 Biotinylated whole cell lysate samples were prepared as described in ‘Western blot analysis of biotin-phenol labeling,’ except the cells were grown in 6-well plates, and the cell pellets were lysed in 100 µl of RIPA lysis buffer with 1x protease inhibitor cocktail, 1 mM PMSF, 10 mM sodium azide, 10 mM sodium ascorbate, and 5 mM Trolox. About 10 µl of each whole cell lysate was set aside to do a western blot to check for biotinylation. A magnetic rack was used to remove the buffer from 550 µl of streptavidin-coated magnetic bead slurry (Pierce, catalog no. 88817). The beads were washed twice and resuspended with 550 µl RIPA lysis buffer. Pipette tips used to handle the beads had their tips sawed off with a clean razor. The remaining 90 µl of whole cell lysate for each sample was incubated with 50 µl of the streptavidin-coated magnetic beads. To facilitate rotation, an additional 500 µl of RIPA was added to each tube. The tubes were rotated at room temperature for 1 hr at room temperature to enrich for biotinylated proteins.
 
@@ -199,7 +304,7 @@ To elute the enriched proteins, the beads were boiled in 30 µl of 3x SDS prote
 
 This silver stain was performed once as described above and once with the samples generated for the proteomic experiment.
 
-## SILAC labeling of proteomic samples, biotinylation, and processing for mass spectrometry
+### SILAC labeling of proteomic samples, biotinylation, and processing for mass spectrometry
 
 Young passage (passage number <12) APEX2-OMM, ERM-APEX2, and APEX2-NES stable HEK 293T cells, and wild-type HEK 293T cells, were seeded into T25 flasks. The cells were then split and cultured in SILAC media (Ong et al., 2002), which consisted of DMEM lacking lysine and arginine (Caisson Laboratories) with 10% dialyzed fetal bovine serum (Sigma), 100 units/ml penicillin, 100 µg/ml streptomycin, glutamine, and 4.5 g/l glucose supplemented with different isotopes of L-arginine and L-lysine. Heavy SILAC media contained L-arginine [13C6,15N4]HCl (Arg-10) and L-lysine [13C6,15N2]HCl (Lys-8) (Sigma); medium SILAC media contained L-arginine [13C6]HCl (Arg-6) and L-lysine-4,4,5,5-d4 (Lys-4) (Sigma); light SILAC media contained light L-arginine (Arg-0) and L-lysine (Lys-0) (Sigma). Cell cultures were established as illustrated in Figure 2A and as previously described (Hung et al., 2016, Hung et al., 2014): experimental APEX2-OMM and ERM-APEX2 sample cells were grown in heavy SILAC media, APEX2-NES cells were grown in medium SILAC media, and negative control cells (where either APEX2 expression or H2O2 was omitted) were grown in light SILAC media. Spike-in samples, where APEX2-OMM and ERM-APEX2 stable cells were treated identically to their heavy experimental sample counterparts, were grown in light SILAC media. Cells were passaged every 2–3 days before reaching confluency such that after 11 days, there was one T75 flask of each spike-in sample grown in light SILAC media, two T150 flasks of APEX2-OMM cells grown in heavy SILAC media, two T150 flasks of ERM-APEX2 cells grown in heavy SILAC media, and four T150 flasks of APEX2-NES cells grown in medium SILAC media.
 
@@ -211,7 +316,7 @@ A Pierce 660 nm kit (Thermo Fisher Scientific) was used to measure the protein c
 
 Each of the four resulting whole cell lysate mixtures was incubated with 500 µl of streptavidin-coated magnetic beads that were washed twice with RIPA lysis buffer. The samples were rotated at room temperature for 1 hr and washed as described in ‘Silver stain analysis of streptavidin enriched proteins’ with 1 mL washes per mixture. The biotinylated proteins were eluted from the beads by boiling for 10 min at 95°C in 65 µl of 3x SDS protein loading buffer supplemented with 2 mM biotin and 20 mM DTT. The samples were vortexed, cooled on ice, and briefly spun down. A magnetic rack was used to pellet the beads. The supernatant was collected and moved to a fresh tube.
 
-## In gel protein digestion and mass spectrometry of the OMM and ERM proteomic samples
+### In gel protein digestion and mass spectrometry of the OMM and ERM proteomic samples
 
 Biotinylated proteins eluted from streptavidin beads were separated on a NuPAGE Novex Bis-Tris 4–12% gel (Thermo Fisher Scientific) for 1 hr at 130V. The gel was stained overnight with SimplyBlue Coomassie SafeStain (Thermo Fisher Scientific) and washed with water for several hours. For each gel lane, 16 gel bands were excised, cut into ~1 mm2 bits, and transferred to fresh tubes. Gel pieces were washed once with 200 µl of 100 mM ammonium bicarbonate, pH 8.0. Gel pieces were further destained with 200 µl of 1:1 acetonitrile:100 mM ammonium bicarbonate, pH 8.0 for several hours, washed once with 100 µl of 100 mM ammonium bicarbonate, pH 8.0, and dehydrated for 5 min with 100 µl of 100% acetonitrile. Dehydrated gel pieces were incubated with 100 µl of 10 mM DTT in 100 mM ammonium bicarbonate, pH 8.0 for one hour with shaking, followed by 100 µl of 55 mM iodoacetamide for 45 min in the dark, and then dehydrated with 100 µl of 100% acetonitrile. Proteins were digested overnight by adding 10–50 µl of 10 ng/µl sequencing grade Trypsin (Promega) to the gel pieces. Peptides were extracted by incubating the gel pieces three times with 15–20 µl of 60% MeCN:0.1% trifluoracetic acid (TFA) solution and then one time with 15–20 µl of 100% acetonitrile. The extraction solution was dried down by vacuum centrifugation. Samples were desalted exactly as previously described using C18 stage tips (Hung et al., 2016).
 
@@ -221,7 +326,7 @@ MS data were analyzed using MaxQuant software version 1.3.0.5 (Cox and Mann, 200
 
 The proteomic experiment was performed once.
 
-## Determination of SILAC ratio cut-offs (related to Figure 2—figure supplement 1)
+### Determination of SILAC ratio cut-offs (related to Figure 2—figure supplement 1)
 
 Each of the two replicates for the OMM and ERM proteomic experiments was analyzed separately. Proteins marked as contaminants or reverse hits by MaxQuant software (Cox et al., 2011; Cox and Mann, 2008) were removed. ‘Detected proteins,' which we defined as those with at least two unique, sequenced peptides, were retained for further analysis. To normalize the SILAC ratios, we used the unnormalized protein SILAC ratios from Maxquant and calculated the median of the distribution of heavy/light (H/L) or heavy/medium (H/M) ratios for the subset of soluble mitochondrial matrix proteins (Rhee et al., 2013) detected in each experiment. We then divided the ratio for each detected protein by this median and then took the log2 of the normalized ratios. The log2(normalized ratios) were used for all other analysis, and only proteins possessing both H/L and H/M ratios in both replicates were used for subsequent analysis.
 
@@ -231,17 +336,50 @@ To obtain log2(H/M) cut-offs for the OMM proteomic experiment, the proteins were
 
 Our proteomes consisted of proteins that fell above the log2(H/L) and log2(H/M) cut-offs in both replicates of the proteomic experiment. These cut-offs (truncated to two decimal points) are shown in the table below.
 
-## SILAC ratio cut-offs used to define the final proteomes
+### SILAC ratio cut-offs used to define the final proteomes
 
-ProteomeReplicatelog2(H/L) cut-offlog2(H/M) cut-offOMM11.060.6821.070.74ERM10.490.0820.370.10
+<table>
+  <thead>
+    <tr>
+      <th>Proteome</th>
+      <th>Replicate</th>
+      <th>log2(H/L) cut-off</th>
+      <th>log2(H/M) cut-off</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">OMM</td>
+      <td>1</td>
+      <td>1.06</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1.07</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ERM</td>
+      <td>1</td>
+      <td>0.49</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.37</td>
+      <td>0.10</td>
+    </tr>
+  </tbody>
+</table>
 
-## Scatter plot analysis (related to Figure 2B)
+### Scatter plot analysis (related to Figure 2B)
 
 All proteins in Replicate 1 of the OMM proteomic experiment were classified as: (1) known OMM proteins (Supplementary file 2a), (2) proteins that lack prior mitochondrial annotation by MitoCarta (Pagliarini et al., 2008), GOCC (Ashburner et al., 2000), our previous mitochondrial matrix (Rhee et al., 2013) or mitochondrial IMS (Hung et al., 2014) proteomes, or literature, or (3) all others. In the scatter plot of log2(H/M) versus log2(H/L), class (1) proteins are plotted in green, class (2) proteins are plotted in red, and class (3) proteins are plotted in black.
 
 Similarly, proteins in Replicate 1 of the ERM proteomic experiment were separated into three classes: (1) known ERM proteins (Supplementary file 2b), (2) proteins with the gene ontology (GO) term GO:0005829 for cytosol that lacked annotated or predicted transmembrane domains according to UniProt or the transmembrane hidden Markov model (TMHMM) (Krogh et al., 2001; Sonnhammer et al., 1998), and (3) all other proteins. As before, class (1) proteins are colored in green, class (2) proteins are colored in red, and class (3) proteins are colored in black.
 
-## Specificity analysis (related to Figure 2C)
+### Specificity analysis (related to Figure 2C)
 
 We retrieved the human proteome from the UniProt-GO Annotation database in April 2014. To generate column 1, we generated a list of mitochondrial GO terms from the AmiGo database by searching for ‘mitochon’ and only retaining GOCC terms. Cell-type specific terms such as those that were specific to sperm were discarded. Proteins that had at least one of these mitochondrial GOCC terms or were present in MitoCarta (Pagliarini et al., 2008), our previous mitochondrial matrix proteome (Rhee et al., 2013), or our previous IMS proteome (Hung et al., 2014) were labeled as mitochondrial. In addition, we also included proteins in the OMM proteome that were identified as mitochondrial in literature. For column 2, we asked which proteins in the OMM proteome had prior mitochondrial annotation according to the same metrics.
 
@@ -251,7 +389,7 @@ For secretory pathway specificity, we generated a list of GO terms by searching 
 
 For sub-secretory pathway specificity of the human proteome (column 7), we took the subset of proteins with the following GO terms: GO:0005783 for endoplasmic reticulum, GO:0005794 for Golgi apparatus, and GO:0005886 for plasma membrane and classified them according to this priority: endoplasmic reticulum>Golgi apparatus>plasma membrane. We then took the subset of proteins in the ERM proteome with these GO terms and plotted their percentages in column 8.
 
-## Characterization of endogenous C2CD3 expression by fluorescence microscopy (related to Figure 2D)
+### Characterization of endogenous C2CD3 expression by fluorescence microscopy (related to Figure 2D)
 
 COS-7 cells were plated at ~70% confluency on 50 µg/ml human fibronectin-coated glass coverslips in a 48-well plate. The next day, the cells were transfected with 100 ng of mito-tagBFP, 100 ng of mCherry-KDEL, and 0.8 µl of Lipofectamine 2000 in MEM for four hours. The transfection solution was then replaced with full cell culture media. About 24 hr post-media change, the cells were washed three times with warmed DPBS. The cells were fixed with 250 µl of 4% paraformaldehyde in fixation buffer for 15 min at room temperature and then washed three times with 1x PBS. The sample was permeabilized with cold methanol, and the plate was placed at −20°C for 5 min. Then, the cells were washed three times with 1x PBS and blocked overnight at 4°C in 3% BSA in 1x PBS.
 
@@ -259,7 +397,7 @@ The next day, the cells were rocked in 1:250 rabbit anti-C2CD3 (Novus Biological
 
 The image shown in this figure is representative of 22 fields of view from one experiment.
 
-## Characterization of SYNJ2BP-V5 overexpression by fluorescence microscopy (related to Figure 3A)
+### Characterization of SYNJ2BP-V5 overexpression by fluorescence microscopy (related to Figure 3A)
 
 COS-7 cells were plated at ~70% confluency on glass cover slips pre-coated with 50 µg/ml human fibronectin. The next day, the cells were transfected with 200 ng of pLX304-SYNJ2BP-V5 and 150 ng of mCherry-KDEL with 0.8 µl Lipofectamine 2000 in MEM for 4 hr before media change to full cell culture media. About 26 hr later, the cells were washed three times with DPBS and fixed with 4% paraformaldehyde in fixation buffer for 15 min at room temperature. The sample was then washed three times with 1x PBS and permeabilized with cold methanol. The plate was placed at −20°C for 5 min. The samples were then washed three times with 1x PBS and blocked overnight in 3% BSA in 1x PBS at 4°C.
 
@@ -267,7 +405,7 @@ The cells were then incubated in 1:1000 mouse anti-V5 antibody and 1:400 rabbit 
 
 These images are representative of five independent experiments with at least 14 fields of view per experiment.
 
-## Characterization of endogenous SYNJ2BP, endogenous RRBP1, and transfected V5-GFP-RRBP1 by fluorescence microscopy (related to Figure 3—figure supplement 1A and Figure 4—figure supplement 1C)
+### Characterization of endogenous SYNJ2BP, endogenous RRBP1, and transfected V5-GFP-RRBP1 by fluorescence microscopy (related to Figure 3—figure supplement 1A and Figure 4—figure supplement 1C)
 
 COS-7 cells were plated on 50 µg/ml human fibronectin-coated glass coverslips in a 48-well plate. The next day, the cells were ~70% confluent. All wells were transfected with 100 ng of mito-tagBFP, 100 ng of mCherry-KDEL, and 0.8 µl of Lipofectamine 2000 in MEM. One well was also co-transfected with 200 ng V5-GFP-RRBP1. After four hours, the transfection solution was removed and replaced with full cell culture media.
 
@@ -277,7 +415,7 @@ The next day, the sample used to detect endogenous SYNJ2BP was rocked in 1:100 r
 
 The data in Figure 3—figure supplement 1A are representative of two independent experiments with ≥11 fields of view each. The data in Figure 4—figure supplement 1C are representative of two independent experiments with ≥17 fields of view each.
 
-## Generation of CRISPR knockout cell lines (related to Figure 4—figure supplement 1A)
+### Generation of CRISPR knockout cell lines (related to Figure 4—figure supplement 1A)
 
 First, lentivirus was generated using HEK 293T cells as previously described (Lam et al., 2015) carrying plentiCas9-Blast (Addgene #52962 (Sanjana et al., 2014)). The lentivirus was titered in HeLa and HEK 293T cells to achieve a multiplicity of infection <1. Transduced HeLa and HEK 293T cells stably expressing Cas9 were selected with 8 µg/ml blasticidin S HCl. Three guide RNA sequences from the Broad Institute’s Avana library (Doench et al., 2016) were selected each for SYNJ2BP and for RRBP1 and cloned into lentiGuide-Puro vectors (Addgene #52963 (Sanjana et al., 2014)).
 
@@ -285,9 +423,44 @@ HEK 293T cells were plated in a 24-well plate. The next day, these were transfec
 
 In order to make clonal SYNJ2BP and RRBP1 knockout cell lines, two populations of HEK 293T cells that stably expressed Cas9 and a guide RNA (each population expressed a different guide RNA; see the table below) were counted and plated into duplicate 10-cm cell culture dishes at 100 and 1000 cells per plate in 10 ml media with 1 µg/ml puromycin and 8 µg/ml blasticidin S HCl. The cells were monitored for about two weeks while growing in the incubator, with drug media being added when needed. Individual colonies were first identified under a microscope and encased in cloning cylinders (EMD Millipore, catalog no. TR-1004) before being lifted with trypsin into wells in a 48-well plate and expanded.
 
-## Guide RNA (gRNA) sequences used to generate knockout lines
+### Guide RNA (gRNA) sequences used to generate knockout lines
 
-Target geneGuide RNASequence 5’−3’None (does not target any sequence in the mammalian genome)AACACCGAAGCACCTGTACGTSYNJ2BP1AAGAGATCAATCTTACCAGASYNJ2BP2GTAAAACATGAACGGAAGAGRRBP11ACAGGAGCAACGATAATGGGRRBP12GGCGTTTCAGAATCGCCACA
+<table>
+  <thead>
+    <tr>
+      <th>Target gene</th>
+      <th>Guide RNA</th>
+      <th>Sequence 5’−3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>None (does not target any sequence in the mammalian genome)</td>
+      <td>A</td>
+      <td>ACACCGAAGCACCTGTACGT</td>
+    </tr>
+    <tr>
+      <td>SYNJ2BP</td>
+      <td>1</td>
+      <td>AAGAGATCAATCTTACCAGA</td>
+    </tr>
+    <tr>
+      <td>SYNJ2BP</td>
+      <td>2</td>
+      <td>GTAAAACATGAACGGAAGAG</td>
+    </tr>
+    <tr>
+      <td>RRBP1</td>
+      <td>1</td>
+      <td>ACAGGAGCAACGATAATGGG</td>
+    </tr>
+    <tr>
+      <td>RRBP1</td>
+      <td>2</td>
+      <td>GGCGTTTCAGAATCGCCACA</td>
+    </tr>
+  </tbody>
+</table>
 
 Knockout of SYNJ2BP or RRBP1 was confirmed by western blotting of whole cell lysate. In the case of the blots shown in Figure 4—figure supplement 1A, clonal non-targeted Cas9, SYNJ2BP knockout, or RRBP1 knockout HEK 293T cells from wells of a 6-well plate were lysed in 100 µl RIPA buffer with 1x protease inhibitor cocktail and 1 mM PMSF. The lysates were clarified by centrifuging at 15,000xg for 10 min at 4°C, and the supernatant was moved to clean tubes. For each sample, 20 µg of whole cell lysate was combined with SDS protein loading buffer and boiled for 10 min at 95°C. Then, the whole cell lysates were separated either on a 9% SDS gel (to analyze RRBP1 knockout) or a 12% SDS gel (to analyze SYNJ2BP knockout) at 180 V. The proteins were transferred to nitrocellulose membranes at 400 mA for 2 hr. Ponceau S staining (10 min in 0.1% w/v Ponceau S in 5% acetic acid/water) was used to confirm transfer.
 
@@ -297,7 +470,7 @@ The membrane used to analyze SYNJ2BP knockout was blocked for 1 hr and 12 min in
 
 The blots were imaged with a UVP gel imager. Knockout of SYNJ2BP or RRBP1 in these cell lines was reconfirmed after the initial characterization either by western blotting or fluorescence imaging using antibodies against endogenous SYNJ2BP or RRBP1, respectively, each time the line was used for an experiment.
 
-## Generation of the stable cell lines for pull down of SYNJ2BP-V5 and immunoprecipitation-mass spectrometry (related to Figure 3—figure supplement 1C)
+### Generation of the stable cell lines for pull down of SYNJ2BP-V5 and immunoprecipitation-mass spectrometry (related to Figure 3—figure supplement 1C)
 
 Lentivirus carrying CRISPR-resistant SYNJ2BP-V5 or a control, non-targeted guide RNA was generated by transfecting HEK 293T cells in 6-well plates with 1000 ng of CRISPR-resistant SYNJ2BP-V5 in pLX_TRC208 or the plasmid encoding a guide RNA sequence that does not target the mammalian genome (Doench et al., 2016; Sanjana et al., 2014), 900 ng of dr8.91, and 100 ng of pVSV-G with 8 µl of Lipofectamine 2000. After four hr of transfection, the media was changed to complete cell culture media. The cells were returned to the incubator for ~2.5 days, after which the supernatant was collected, filtered through a 0.45 µm filter, and stored at 4°C.
 
@@ -307,7 +480,7 @@ To make HeLa cells expressing a non-targeted Cas9, Cas9 stable cells were plated
 
 To assess the level of SYNJ2BP in these lines, 15 µg of whole cell lysate was combined with SDS protein loading buffer, boiled, cooled, and spun down. The denatured lysates were then separated by gel electrophoresis and transferred to a nitrocellulose membrane. The membrane was blocked overnight at 4°C in 3% BSA in 1x TBST and then incubated face down in 1:500 rabbit anti-SYNJ2BP (Sigma Aldrich, catalog no. HPA000866) in 3% BSA in 1x TBST for 1 hr. Further processing was performed as above. This blot was performed once.
 
-## Pull down of SYNJ2BP-V5 and immunoprecipitation-mass spectrometry (related to Figure 3C)
+### Pull down of SYNJ2BP-V5 and immunoprecipitation-mass spectrometry (related to Figure 3C)
 
 HeLa cells stably expressing non-targeted Cas9, HeLa cells stably overexpressing CRISPR-resistant SYNJ2BP-V5 in a SYNJ2BP knockout background, and a population of Hela cells with SYNJ2BP knocked out were seeded and expanded so there were four T150 flasks for each of the four samples illustrated in Figure 3—figure supplement 1D. The cells were then washed twice with 12 ml of DPBS and scraped into 5 ml of DPBS. An additional 5 ml of DPBS was used to wash the flask and collect the remaining cells, which were then added to the suspension of scraped cells. The cells were pelleted at 3,000xg for 10 min at 4°C and stored at −80°C so that there were four pellets for each sample.
 
@@ -325,7 +498,7 @@ For data analysis, contaminants and proteins identified as reverse hits were rem
 
 The IP-MS experiment was performed once.
 
-## Western blot analysis of SYNJ2BP-V5 pull downs in the presence of translation inhibitors (related to Figure 4A)
+### Western blot analysis of SYNJ2BP-V5 pull downs in the presence of translation inhibitors (related to Figure 4A)
 
 HEK 293T cells were plated in a 6-well plate. The next day, three out of the six wells were transfected with 2000 ng of pLX_TRC208-SYNJ2BP-V5 with 8 µl Lipofectamine 2000 in MEM for 4 hr, with the remaining three wells untransfected. After 4 hr, the media was changed back to complete cell culture media. After 24 hr, the media in one transfected well and one untransfected well was replaced with 2 ml of 200 µM cycloheximide in media, and the media in another pair of an untransfected well and a transfected well was replaced with 2 ml of 200 µM puromycin in media. The plate was incubated at 37°C, 5% CO2 for 2 hr. The cells were washed three times with DPBS, collected in 1 ml DPBS, and pelleted by centrifugation at 3000xg for 10 min at 4°C. The supernatant was removed, and the pellets were stored at −80°C overnight.
 
@@ -339,7 +512,7 @@ The eluates were separated on a 9% SDS gel, and the whole cell lysates and flowt
 
 The data in this figure are representative of two independent experiments.
 
-## Preparation of EM samples related to SYNJ2BP overexpression in wild type or RRBP1 knockout cells with or without protein translation inhibitors (related to Figures 3B, 4B and C, Figure 4—figure supplement 1B, and Figure 4—figure supplement 2)
+### Preparation of EM samples related to SYNJ2BP overexpression in wild type or RRBP1 knockout cells with or without protein translation inhibitors (related to Figures 3B, 4B and C, Figure 4—figure supplement 1B, and Figure 4—figure supplement 2)
 
 Wild-type HEK 293T cells or RRBP1 knockout cells were plated in 6-well plates pre-coated with 50 µg/ml human fibronectin such that there would be two wells of cells for each sample. Each well was transfected at 70% confluence with 8 µl of Lipofectamine 2000 in MEM and 2000 ng of pLX_TRC208-SYNJ2BP-V5, with 1000 ng of V5-APEX2-NLS serving as a co-transfection marker. For Figure 4B and Figure 4—figure supplement 1B, the wells were transfected with 1000 ng of Flag-APEX2-NLS as a co-transfection marker instead of V5-APEX2-NLS. The SYNJ2BP-V5 construct was omitted in the negative controls. The cells were transfected for 4 hr, and then the media was changed to complete cell culture media. For experiments with protein translation inhibitors, approximately 24 hr post-media change, the media in all of the wells was changed to 2 ml of complete cell culture media. For the samples that were treated with protein synthesis inhibitors, the media contained 200 µM cycloheximide or 200 µM puromycin. The plates were returned to the incubator (37°C, 5% CO2) for 2 hr. If the experiment did not involve protein translation inhibitors, the samples proceeded directly to the fixation step about 24 hr post-media change.
 
@@ -351,7 +524,7 @@ The cells were brought to room temperature and rinsed with Millipore water. Then
 
 The data in Figure 3B are representative images from two independent experiments with ≥7 fields of view each. Figure 4B and Figure 4—figure supplement 1B are representative images from one experiment with ≥6 fields of view for each cell line. The images in Figure 4C and Figure 4—figure supplement 2 are from one experiment with ≥6 fields of view for each condition.
 
-## Quantification of mitochondria-ER contacts in EM images (related to Figure 4D and E)
+### Quantification of mitochondria-ER contacts in EM images (related to Figure 4D and E)
 
 Images from the samples in Figure 4C and Figure 4—figure supplement 2 that were taken at 4800x magnification or higher were blinded and then imported into ImageJ. Images that contained wrinkles caused by imperfect sectioning were discarded. In cells depicting clear nuclear contrast as a result of the co-transfection APEX2-NLS marker, the mitochondrial perimeter for each clearly defined mitochondrion was outlined by drawing a freehand line and measured. Any segment of an ER tubule less than 80 nm from a mitochondrion was considered to be in contact with it. Rough ER was defined as an ER tubule with ribosomes along the visible segment of that tubule, regardless of which side of the tubule they were on. Smooth ER lacked ribosomes for the visible segment of that tubule. To measure the distance in between mitochondria and the ER, several evenly spaced measurements about 10–20 nm apart were taken along the length of the contact, with the first and last measurements marking the beginning and end of the contact. All of the measurements taken along this length were averaged to give the average distance in between the two organelles. These values were then averaged to find the average distance between the two organelles for a given sample. The mitochondrial perimeter demarcated by the first and last measurements was retraced with a freehand line to determine the length of the mitochondrion-ER contact.
 
@@ -359,7 +532,7 @@ For each sample, the fraction of mitochondrial surface in contact with ER was me
 
 The second metric calculated was the fraction of total mitochondrial surface in contact with the ER in a given sample. This was determined by summing the lengths of the mitochondrial surface in contact with ER in the whole sample and dividing it by the total mitochondrial perimeter (the sum of the lengths of all of the mitochondrial perimeters) present in the sample. This analysis was repeated for the fraction of mitochondrial surface in contact with rough or smooth ER (Figure 4E). As before, mitochondria that had a contact with an ER tubule that could not be confidently assigned as rough or smooth were not used.
 
-## Assessment of mitochondrial and ER morphology in SYNJ2BP knockout cells (related to Figure 4—figure supplement 3A)
+### Assessment of mitochondrial and ER morphology in SYNJ2BP knockout cells (related to Figure 4—figure supplement 3A)
 
 HeLa cells stably expressing Cas9 from a confluent T25 flask were trypsinized and resuspended in 10 ml of cell culture media. 250 µl of this cell suspension was plated per well in a 24-well plate. The next day, the cells were transfected with 500 ng of SYNJ2BP guide RNA (gRNA)-1 or SYNJ2BP gRNA-2 plasmid and 2 µl of Lipofectamine 2000 in MEM for 3 hr, after which the transfection solution was replaced with full cell culture media. Untransfected cells were processed in parallel. After another two days, each well from the 24-well plate was expanded into one well of a 12-well plate. After three days, the cells in each well were suspended in 1 ml of cell culture media, and 200 µl of each of these cell suspensions was plated on glass coverslips pre-coated with 50 µg/ml human fibronectin in DPBS in a 48-well plate. The next day, the cells were incubated for 30 min with pre-warmed 300 nM MitoTracker Deep Red (Invitrogen, catalog no. M22426) in full cell culture media at 37°C, 5% CO2, washed three times with prewarmed DPBS, and then fixed with 3.7% paraformaldehyde in DPBS for 15 min on ice. The samples were then washed three times with DPBS and permeabilized with ice-cold methanol (−20°C) for 5 min. Then, the cells were washed three times with DPBS.
 
@@ -367,7 +540,7 @@ The samples were blocked with 3% BSA in DPBS for 1 hr at 4°C and then incubated
 
 This experiment was performed once.
 
-## Assessment of mitochondrial and ER morphology in RRBP1 knockout cells (related to Figure 4—figure supplement 3B)
+### Assessment of mitochondrial and ER morphology in RRBP1 knockout cells (related to Figure 4—figure supplement 3B)
 
 HEK 293T cells were plated in a 6-well plate to generate lentiviruses carrying either RRBP1 gRNA-1 or RRBP1 gRNA-2. The next day, when the cells were ~70% confluent, the cells were transfected with 1000 ng of the guide RNA plasmid (see ‘Generation of CRISPR knockout cell lines’), 100 ng of pVSV-G, and 900 ng of dr8.91 with 8 µl of Lipofectamine 2000 in MEM. After four hours, the transfection solution was removed and replaced with full cell culture media, and the plate was returned to the incubator.
 
@@ -377,13 +550,13 @@ These stable cells were then plated on glass coverslips pre-coated with 50 µg/m
 
 This experiment was performed once.
 
-## Comparative cell growth assay (related to Figure 4—figure supplement 3C)
+### Comparative cell growth assay (related to Figure 4—figure supplement 3C)
 
 Five sterile, black, clear bottom, 96-well plates were pre-coated with 100 µl of 50 µg/ml human fibronectin in DPBS for at least 20 min at 37°C under 5% CO2. The wells were washed twice with 100 µl of DPBS. Clonal cell lines of HEK 293T expressing non-targeted Cas9, SYNJ2BP knockout, or RRBP1 knockout were seeded in triplicate into wells of each plate at 2000 cells/well. An additional triplicate of coated wells without cells served as background subtraction in each plate. One plate was immediately assayed after plating for cell viability by the CellTiter-Glo Luminescnt Viability assay (Promega). Subsequent plates were assayed at 24 hr intervals for four consecutive days.
 
 This experiment was performed once.
 
-## Glucose/galactose cell viability assay (related to Figure 4—figure supplement 3D)
+### Glucose/galactose cell viability assay (related to Figure 4—figure supplement 3D)
 
 As calcium signaling at mitochondria-ER contacts has previously been associated with stimulation of mitochondrial tricarboxylic acid cycle dehydrogenases (Rimessi et al., 2008), we assayed our knockout lines for defects in mitochondrial oxidative phosphorylation (OXPHOS). As an indirect measure of OXPHOS activity, we evaluated the comparative viability of knockout cells in media supplemented with glucose or galactose. Mammalian cells cultured in galactose are forced to rely on mitochondrial OXPHOS to generate ATP (Reitzer et al., 1979), causing cells with impaired OXPHOS to be at a growth disadvantage (Gohil et al., 2010; Robinson et al., 1992).
 
@@ -391,7 +564,7 @@ Two sterile, black, clear bottom, 96-well plates were pre-coated with 100 µl of
 
 This experiment was performed once.
 
-## Click-iT assay (related to Figure 4—figure supplement 3E)
+### Click-iT assay (related to Figure 4—figure supplement 3E)
 
 A sterile, black, clear bottom 96-well plate was pre-coated with 100 µl of 50 µg/ml human fibronectin in DPBS and washed as in ‘Comparative cell growth assay’ above. A clonal HEK 293T cell line expressing non-targeted Cas9, two clonal HEK 293T SYNJ2BP knockout cell lines, and two clonal HEK 293T RRBP1 knockout cell lines were plated at 10,000 cells/well in triplicate. One triplicate set of cells expressing non-targeted Cas9 was treated with 200 µM puromycin in full growth medium 1.5 hr prior to the addition of L-azidohomoalanine (AHA). Then, the media in all wells was changed to AHA medium (DMEM with 4.5 g/l glucose, no glutamine, methionine, or cysteine (Thermo Fisher Scientific) supplemented with 10% dialyzed FBS (Sigma), 4 mM L-glutamine (Thermo Fisher Scientific), 0.20 mM L-cysteine (Alfa Aesar), 100 units/ml penicillin, 100 µg/ml streptomycin, and 50 µM AHA) except for one triplicate set of cells expressing non-targeted Cas9, which served as an omit AHA negative control to measure AF488 alkyne non-specific sticking. The media for the puromycin-treated samples was replaced with AHA medium containing 200 µM puromycin. The plate was incubated at 37°C, 5% CO2 for 35 min. The cells were then washed once with 1x PBS, pH 7.4 and then fixed with 4% paraformaldehyde in fixation buffer for 20 min at room temperature. The plate was kept under foil from this step until it was read in the platereader. All subsequent steps were performed according to the manufacturer’s instructions for the Click-iT kit (Thermo Fisher Scientific). Measurements were recorded using a Tecan platereader.
 

@@ -16,19 +16,19 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Department of Human Oncology, University of Wisconsin School of Medicine and Public Health Madison United States
-2. https://ror.org/04ehecz88 Department of Pediatrics, Children's Hospital of Pittsburgh, University of Pittsburgh Medical Center Pittsburgh United States
-3. https://ror.org/01y2jtd41 Department of Chemistry, University of Wisconsin-Madison Madison United States
+1. Department of Human Oncology, University of Wisconsin School of Medicine and Public Health Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Department of Pediatrics, Children's Hospital of Pittsburgh, University of Pittsburgh Medical Center Pittsburgh United States ([ROR:04ehecz88](https://ror.org/04ehecz88))
+3. Department of Chemistry, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
 ## Abstract
 
-Mutations in the ubiquitin (Ub) chaperone Ubiquilin 2 (UBQLN2 ) cause X-linked forms of amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD) through unknown mechanisms. Here, we show that aggregation-prone, ALS-associated mutants of UBQLN2 (UBQLN2 ALS ) trigger heat stress-dependent neurodegeneration in Drosophila . A genetic modifier screen implicated endolysosomal and axon guidance genes, including the netrin receptor, Unc-5, as key modulators of UBQLN2 toxicity. Reduced gene dosage of Unc-5 or its coreceptor Dcc/frazzled diminished neurodegenerative phenotypes, including motor dysfunction, neuromuscular junction defects, and shortened lifespan, in flies expressing UBQLN2 ALS alleles. Induced pluripotent stem cells (iPSCs) harboring UBQLN2 ALS knockin mutations exhibited lysosomal defects while inducible motor neurons (iMNs) expressing UBQLN2 ALS alleles exhibited cytosolic UBQLN2 inclusions, reduced neurite complexity, and growth cone defects that were partially reversed by silencing of UNC5B and DCC . The combined findings suggest that altered growth cone dynamics are a conserved pathomechanism in UBQLN2-associated ALS/FTD.
+Mutations in the ubiquitin (Ub) chaperone Ubiquilin 2 (UBQLN2) cause X-linked forms of amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD) through unknown mechanisms. Here, we show that aggregation-prone, ALS-associated mutants of UBQLN2 (UBQLN2ALS) trigger heat stress-dependent neurodegeneration in Drosophila. A genetic modifier screen implicated endolysosomal and axon guidance genes, including the netrin receptor, Unc-5, as key modulators of UBQLN2 toxicity. Reduced gene dosage of Unc-5 or its coreceptor Dcc/frazzled diminished neurodegenerative phenotypes, including motor dysfunction, neuromuscular junction defects, and shortened lifespan, in flies expressing UBQLN2ALS alleles. Induced pluripotent stem cells (iPSCs) harboring UBQLN2ALS knockin mutations exhibited lysosomal defects while inducible motor neurons (iMNs) expressing UBQLN2ALS alleles exhibited cytosolic UBQLN2 inclusions, reduced neurite complexity, and growth cone defects that were partially reversed by silencing of UNC5B and DCC. The combined findings suggest that altered growth cone dynamics are a conserved pathomechanism in UBQLN2-associated ALS/FTD.
 
 ## Introduction
 
-## Ubiquilins and proteostasis
+### Ubiquilins and proteostasis
 
 Defective protein folding and proteostatic stress are common pathogenic mechanisms linking genetically and anatomically diverse neurodegenerative diseases (Ling et al., 2013). The steady state levels—and ultimately neurotoxicity—of aggregation-prone proteins are determined through a balance of protein production and protein clearance (Prahlad and Morimoto, 2009). The convergence of aging-dependent declines in protein degradation and nuclear import with environmental stresses may push this equation toward irreversible protein aggregation that sets the stage for neurodegenerative processes (Morimoto, 2008). Thus, enhancing protein degradation capacity—or reducing the aggregation potential of aggregation-prone proteins—represents a promising therapeutic avenue for amyotrophic lateral sclerosis (ALS) and other neurodegenerative proteinopathies.
 
@@ -36,7 +36,7 @@ The highly conserved ubiquilin (UBQLN) gene family fulfills diverse roles in pro
 
 Although specific functions of individual ubiquilins in mammals are largely unknown, a generic model for UBQLN function holds that the UBA domain engages ubiquitylated substrate while the UBL domain engages the proteasome, leading to substrate degradation (Itakura et al., 2016). STI1-like repeats form a hydrophobic groove that is thought to engage hydrophobic regions of client proteins (Fry et al., 2021). It has been reported that UBQLN deficiency (Df) leads to defects in autophagy and ER-associated protein degradation (Rothenberg et al., 2010; Lim et al., 2009; N’Diaye et al., 2009; Lee et al., 2013). The central methionine-rich domain has been shown to bind transmembrane domains of mitochondrial proteins, which appears central to their UBQLN-dependent triage and degradation (Itakura et al., 2016).
 
-## UBQLN2 mutations in ALS/dementia
+### UBQLN2 mutations in ALS/dementia
 
 Interest in ubiquilin function was greatly stimulated by the discovery that dominant mutations in UBQLN2 cause X-linked ALS/frontotemporal dementia (FTD) (Deng et al., 2011; Gellera et al., 2013). Most ALS-associated mutations in UBQLN2 are clustered within 42-amino acid proline-rich repeat (PRR) that is unique to UBQLN2 (Deng et al., 2011) however, disease-linked mutations outside this region have also been described (Synofzik et al., 2012; Daoud et al., 2012). In addition, UBQLN2-mutant patients exhibit a range of phenotypes that includes FTD, ALS, and spastic paraplegia (Gkazi et al., 2019). Interestingly, ubiquilin-positive aggregates are a near universal occurrence in TDP-43-positive ALS, as well as ALS linked to C9ORF72 expansions (C9-ALS) (Brettschneider et al., 2012). These correlative findings suggest that ubiquilin pathology may contribute to the molecular pathogenesis of ALS even in the absence of UBQLN2 gene mutations.
 
@@ -46,19 +46,43 @@ In previous work, we reported that expression of ALS-associated UBQLN2 mutants c
 
 ## Results
 
-## An aggregation-prone UBQLN24XALS allele exhibits heat stress-dependent eye toxicity
+### An aggregation-prone UBQLN24XALS allele exhibits heat stress-dependent eye toxicity
 
 We previously reported that homozygous expression of single-copy human UBQLN2ALS alleles caused mild eye toxicity when expressed under control of an eye-specific GMR driver at 22°C (Kim et al., 2018). Reasoning that UBQLN2-associated phenotypes may be worsened by heat stress (HS), we compared eye morphologies between flies expressing UBQLN2WT, a clinical UBQLN2P497H allele, and a highly aggregation-prone UBQLN24XALS mutant that harbors four different clinical mutations (P497H, P506T, P509S, and P525S, Figure 1A; Kim et al., 2018). None of the UBQLN2 transgenes caused an overt external eye phenotype when expressed from a hemizygous GMR>UBQLN2 Chr2 locus at 22°C (Figure 1B). By contrast, GMR>UBQLN24XALS flies—but not GMR>UBQLN2WT or GMR>UBQLN2P497H flies—exhibited a moderately severe rough eye (RE) phenotype that was characterized by eye depigmentation and loss of ommatidial facets in both male and female flies (Figure 1B). As expected, UBQLN24XALS was significantly less soluble than UBQLN2WT and UBQLN2P497H at both 22°C and 29°C; however, the relative proportion of insoluble UBQLN24XALS was comparable at both temperatures, suggesting that increased aggregation of UBQLN24XALS cannot wholly account for its enhanced toxicity at 29°C (Figure 1—figure supplement 1A, B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of UBQLN2 and amyotrophic lateral sclerosis (ALS)-associated mutations. Approximate locations of ubiquitin-like (UBL); STI1-like (STI); proline-rich repeat (PRR); and ubiquitin-associated (UBA) domains are shown, as are ALS-associated mutations investigated in this study. (B) Eye images from flies expressing UBQLN2WT, UBQLN2P497H, UBQLN2P525S, or UBQLN24XALS under control of the eye-specific GMR driver at 22°C and 29°C. Note depigmentation and destruction of ommatidial facets in UBQLN24XALS flies reared at 29°C.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression and RIPA solubility of UBQLN2 proteins in head extracts prepared from GMR>UBQLN2 flies of the indicated genotype. Ten flies per genotype. (B) Quantification of RIPA solubility of UBQLN2 proteins in head extracts prepared from GMR>UBQLN2 flies of the indicated genotype. Triplicate of 10 flies per genotype. The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis. *p≤0.05, ***p≤0.001. (C) Relative abundance of Drosophila Ubqln (dUbqln) and human UBQLN2 (hUBQLN2) in GMR > UBQLN2 flies. Head extracts from flies of the indicated genotypes were analyzed by mass spectrometry (MS) to determine peptide spectral matches (PSM) for dUbqln and hUBQLN2 at 22°C and 29°C. MS was carried out using 100 flies per genotype. The bars represent mean with SEM from triplicate samples. Unpaired t-test was used for statistical analysis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Venn diagram of differentially expressed genes (DEGs) (amyotrophic lateral sclerosis [ALS]) from comparisons of GMR>UBQLN2WT, GMR>UBQLN2P497H, and GMR>UBQLN24XALS to GMR-Gal4 control flies reared at 29°C. (B) Principle component analysis of RNA-Seq data from whole heads of GMR, GMR>UBQLN2WT, GMR>UBQLN2P497H, and GMR>UBQLN24XALS flies reared at 22°C or 29°C. (C) Venn diagram of DEGs from comparisons of GMR-Gal4 control, GMR>UBQLN2P497H, and GMR>UBQLN24XALS to GMR>UBQLN2WTflies reared at 29°C. (D) Heat map of genes differentially expressed between GMR>UBQLN2WT and GMR>UBQLN24XALS fly heads at 29°C. (E) Volcano plot depicting genes differentially expressed between GMR>UBQLN2WT and GMR>UBQLN24XALS flies at 29°C. Downregulated photoreceptor genes, upregulated innate immunity genes, and upregulated small HSPs are highlighted. (F) DEGs common to GMR>UBQLN2P497H and GMR>UBQLN24XALS flies in comparison to GMR>UBQLN2WT flies at 29°C.
+
 We also performed quantitative mass spectrometry (MS) to assess relative abundance of UBQLN2WT, UBQLN24XALS, and endogenous Drosophila Ubqln (dUbqln) in whole-head extracts. The average number of peptide spectral matches for hUBQLN2 was comparable between GMR>UBQLN2WT and GMR>UBQLN24XALS flies reared at 22°C and 29°C (Figure 1—figure supplement 1C). hUBQLN2-unique peptides were ~6-fold more abundant than dUbqln peptides in both GMR>UBQLN2WT and GMR>UBQLN24XALS heads, providing a lower limit of hUBQLN2 overexpression (Figure 1—figure supplement 1C). As expected, given the heat inducibility of UAS, absolute numbers of hUBQLN2 peptides were higher in GMR>UBQLN2WT and GMR>UBQLN24XALS flies reared at 29°C versus 22°C; however, the difference was not statistically significant across three replicates. Altogether these findings established HS-dependent toxicity of UBQLN24XALS that is not solely due to increased protein expression.
 
-## Transcriptomic analysis of UBQLN2ALS flies
+### Transcriptomic analysis of UBQLN2ALS flies
 
 We next performed RNA-Seq analysis of whole heads from GMR>UBQLN2WT, GMR>UBQLN2P497H, GMR>UBQLN24XALS. Each of the three GMR>UBQLN2 lines exhibited hundreds of gene expression changes relative to GMR-Gal4 controls, suggesting that UBQLN2 overexpression has a substantial impact on cellular regulation (Figure 1—figure supplement 2A). Consistent with their more severe eye phenotype, GMR>UBQLN24XALS flies exhibited a distinct RNA-Seq gene expression signature relative to GMR>UBQLN2WT and GMR>UBQLN2P497H flies, which clustered together in principle component analysis (Figure 1—figure supplement 2B). Using an FDR of <0.05, 629 genes were uniquely changed in GMR>UBQLN24XALS flies versus GMR>UBQLN2WT, GMR>UBQLN2P497H, and GMR-Gal4 controls at 29°C (Figure 1—figure supplement 2C, Figure 1—figure supplement 2—source data 1). Of these, 402 genes were upregulated and 227 genes were downregulated in GMR>UBQLN24XALS flies (Figure 1—figure supplement 2D, E, Supplementary Dataset 1 and 2, respectively). Gene ontology (GO) analysis revealed that mRNAs involved in eye development and phototransduction, including inaC, ninaE, and Rh3, were broadly downregulated in GMR>UBQLN24XALS flies, likely reflecting degenerative cell loss (Figure 1—figure supplement 2D, E, Supplementary Dataset 2). Upregulated GO terms included response to biotic stimulus, which includes Drosophila innate immunity genes such as Dro, AttB, AttC, and Listericin, and response to UV light, which includes the small heat-shock protein-encoding genes Hsp23, Hsp26, and Hsp27 (Figure 1—figure supplement 2D, E, Supplementary Dataset 1). Upregulation of HSPs may be driven by UBQLN24XALS misfolding. In contrast to the profound differences between GMR>UBQLN24XALS and GMR>UBQLN2WT flies, only 64 genes were differentially expressed between GMR>UBQLN2WT and GMR>UBQLN2P497H flies, which is consistent with their qualitatively similar eye phenotypes. Finally, 28 differentially expressed genes were common to GMR>UBQLN24XALS and GMR>UBQLN2P497H flies relative to GMR>UBQLN2WT flies (Figure 1—figure supplement 2F). Overall, these findings reveal that the strong eye phenotype of GMR>UBQLN24XALS is accompanied by robust changes in gene expression.
 
-## Df screens for UBQLN2ALS modifier genes
+### Df screens for UBQLN2ALS modifier genes
 
 The RE phenotype of GMR>UBQLN24XALS flies allowed us to perform genetic modifier screens. To this end, we screened a Bloomington Df library of 194 lines spanning 85% of chromosome 2 (Figure 2A). The screen was carried out at 29°C and eye phenotypes were scored on a scale of 1–5, with a score of ‘1’ representing a morphologically normal eye; a score of ‘3’ representing the unmodified UBQLN24XALS eye phenotype; and a score of ‘5’ representing eyes harboring >50% necrotic patches (Figure 2B). Lethal enhancers were also noted. While the mild eye phenotype of GMR>UBQLN2P497H flies largely precluded identification of suppressors, the side-by-side screening of this line allowed us to identify shared and/or mutation-specific enhancers. Candidate modifier Dfs were subjected to secondary screens against UBQLN2WT, UBQLN2P497H, and UBQLN24XALS.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of deficiency (Df) screen for UBQLN2 modifiers. (B) Representative eye images and scoring rubric for F1 progeny of GMR>UBQLN24XALS flies crossed to Df lines. (C) Representative UBQLN24XALS modifier genes. Eye images were taken of F1 progeny from crosses of GMR>UBQLN24XALS to indicated Df lines at 1–3 days post eclosion. Suppressors and enhancers are shown in top and bottom rows, respectively. (D) Representative eye images of UBQLN2P497H enhancers. Arrows indicate foci of eye degeneration. Eye degeneration scores are displayed below each eye image (B, C, D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Genomic map of BSC37. The region spanning the Rab5 gene is boxed. (B) Representative eye images from GMR>UBQLN24XALS/BSC37 and GMR>UBQLN24XALS/CyO flies. (C) Differential effects of Rab5 knockdown on GMR>UBQLN2 eye phenotypes at 22°C and 29°C. Recombinant GMR>UBQLN2 flies of indicated genotypes were crossed to flies expressing shRNAs targeting Rab5 (shRab5) or luciferase (shLuci). F1 progeny were processed for eye imaging 2–3 days after eclosion. (D, E) UBQLN2 expression levels in whole heads of GMR-Gal4, GMR>UBQLN2WT, GMR>UBQLN2P497H, or GMR>UBQLN24XALS flies on the genetic backgrounds of shLuci or shRab5. (E) Rab5 knockdown did not impact UBQLN2 expression. Quantification of UBQLN2 expression normalized to β-tubulin. The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis. (F) GFP-Rab5 overexpression rescued the UBQLN24XALS RE phenotype at 29°C. GMR>UBQLN2 flies of indicated genotypes were crossed to flies harboring UAS-GFP or UAS-GFP-Rab5 transgenes. Eye degeneration scores are displayed below each eye image (B, C, F). (G, H) UBQLN2 expression levels in whole heads of GMR-Gal4, GMR>UBQLN2WT, GMR>UBQLN2P497H, or GMR>UBQLN24XALS flies on the genetic backgrounds of GFP or GFP-Rab5 overexpression. (H) Quantification of UBQLN2 expression normalized to β-tubulin. The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of BSC180, ED4651, C144, and the lilli gene locus. (B) Reduced expression of lilli rescued the UBQLN24XALS RE phenotype at 29°C. Representative eye phenotypes from GMR>UBQLN24XALS flies harboring the indicated alleles. Eye degeneration scores are displayed below each eye image. (C) UBQLN2 expression levels in whole heads of GMR>UBQLN24XALS flies on the genetic backgrounds of lilli mutation or CyO control. Quantification of UBQLN2 expression normalized to β-tubulin (right panel). The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis.
 
 The UBQLN24XALS screen identified seven suppressors, three of which overlapped a common genomic interval, and 23 enhancers, including 15 lethal enhancers (Figure 2C). The UBQLN2P497H screen identified six enhancers, two of which were also identified in the UBQLN24XALS screen (Figure 2D). Notably, all Dfs that enhanced the GMR>UBQLN2P497H eye phenotype also caused enhanced eye phenotypes in GMR>UBQLN2WT flies.
 
@@ -66,9 +90,17 @@ A combination of iterative Df screening and RNAi screening was then used to map 
 
 A similar approach was used to map the causal UBQLN24XALS suppressor gene in BSC180. Two different overlapping Dfs (C144 and ED4651) rescued UBQLN24XALS eye toxicity to a similar extent as BSC180 (Figure 2—figure supplement 2A, B). Within this overlap we identified lilliputian (lilli) as a gene of interest. lilli encodes a transcriptional elongation factor that is orthologous to mammalian AF4/FMR2 (fragile X mental retardation 2) (Wittwer et al., 2001). Interestingly, lilli mutations were recently shown to suppress toxicity of TDP-43 and C9ORF72-derived dipeptide repeat proteins (DPRs) in Drosophila (Chung et al., 2018; Yuva-Aydemir et al., 2019). In support of lilli as a UBQLN24XALS suppressor, a lilliA17-2 LOF allele diminished UBQLN24XALS-mediated eye toxicity to a similar extent as lilli-spanning Dfs (Figure 2—figure supplement 2B, C). Thus, lilli may be of interest as a general suppressor of toxicity arising from misexpression of neurodegeneration-associated genes in Drosophila.
 
-## Unc-5 mutations suppress UBQLN2 toxicity
+### Unc-5 mutations suppress UBQLN2 toxicity
 
 Next, we mapped a UBQLN24XALS suppressor in the genetic interval spanned by ED2426 and BSC346, which suppressed GMR>UBQLN24XALS eye phenotypes to a similar extent (Figure 3A and B). The region of overlap between ED2426 and BSC346 contains Unc-5, which encodes a transmembrane dependence receptor that mediates axonal repulsion and apoptosis suppression in response to secreted netrin ligands (Boyer and Gupton, 2018; Labrador et al., 2005; Keleman and Dickson, 2001; Llambi et al., 2005; Wang et al., 2009; Ahn et al., 2020).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic depiction of ED2426 and overlapping deficiencies (Dfs) in relation to the Unc-5 gene locus. (B) Representative eye images of GMR>UBQLN24XALS flies crossed to Df lines ED2426 and BSC346. (C) Single allele expression of Unc-5 LOF alleles (left panels) or three independent Unc-5 RNAi alleles diminished the rough eye (RE) phenotype of GMR>UBQLN24XALS flies at 29°C. (D, E) UBQLN2 expression levels in whole heads of GMR>UBQLN24XALS flies on the indicated genetic backgrounds. (E) Quantification of UBQLN2 expression normalized to β-tubulin. The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis. (F) fra silencing reduced the RE phenotype of GMR>UBQLN24XALS flies. Shown are representative eye phenotypes of F1 progeny from GMR>UBQLN24XALS flies crossed to control (shLuci, shmCherry), or fra RNAi lines at 29°C. Eye degeneration scores are displayed below each eye image (B, C, F).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative eye images of GMR>eGFP (control), GMR>FUSWT, GMR>FUSR518K, or GMR>FUSR521C flies harboring the indicated shRNA alleles. Eye degeneration scores are displayed below each eye image.
 
 In support of a genetic interaction between Unc-5 and UBQLN24XALS, two Unc-5 LOF alleles (Labrador et al., 2005), and three different RNAi lines diminished the RE phenotype of GMR>UBQLN24XALS flies without affecting UBQLN2 expression (Figure 3C, D and E). By contrast, Unc-5 knockdown had no effect on the RE phenotype caused by the expression of ALS-associated FUS alleles that cause severe degenerative phenotypes in Drosophila (Figure 3—figure supplement 1; Lanson et al., 2011; Kwiatkowski et al., 2009; Vance et al., 2009). This suggests that genetic interaction with Unc-5 may be specific to UBQLN2 versus other ectopically expressed ALS-associated proteins in Drosophila.
 
@@ -78,21 +110,29 @@ To evaluate the impact of Unc-5 silencing on motor function, we measured climbin
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig4-v2.jpg)
 
-**Figure 4.:** Unc-5 silencing in Drosophila suppressed UBQLN24XALS-associated neuronal phenotypes.(A) Recombinant D42>UBQLN24XALS flies expressing UBQLN2 under control of the motor neuron-specific D42 driver were crossed to the indicated RNAi lines. Climbing potential of male (left) and female (right) progeny reared at 29°C was measured 7 days after eclosion as described in Materials and methods. Data analysis was performed using ordinary one-way ANOVA. Data are shown as mean ± SEM. n>100 flies, ****p≤0.0001. (B) Neuromuscular junction (NMJ) morphology analysis of D42>UBQLN24XALS larvae expressing the indicated shRNAs. NMJs dissected from third instar larvae were stained with α-HRP and α-CSP antibodies and imaged by confocal microscopy. Scale bar: 10μm. (C) Number of NMJs harboring indicated phenotypes were tabulated from greater than 50 NMJs per genotype. Unpaired t-test was used for statistical analysis. Data are shown as mean ± SEM. (D) Pan-neuronal Unc-5 knockdown enhances lifespan of Elav>UBQLN24XALS flies. Recombinant Elav>UBQLN24XALS or a Elav>Gal4 flies were crossed to the indicated RNAi lines (shLuci or shUnc5). Lifespan of male (left panel) and female (right panel) progeny reared at 27°C was measured as described in Materials and methods. n>50 flies.Figure 4—source data 1.Figure 4A, C, D.
+**Figure 4.:** (A) Recombinant D42>UBQLN24XALS flies expressing UBQLN2 under control of the motor neuron-specific D42 driver were crossed to the indicated RNAi lines. Climbing potential of male (left) and female (right) progeny reared at 29°C was measured 7 days after eclosion as described in Materials and methods. Data analysis was performed using ordinary one-way ANOVA. Data are shown as mean ± SEM. n>100 flies, ****p≤0.0001. (B) Neuromuscular junction (NMJ) morphology analysis of D42>UBQLN24XALS larvae expressing the indicated shRNAs. NMJs dissected from third instar larvae were stained with α-HRP and α-CSP antibodies and imaged by confocal microscopy. Scale bar: 10μm. (C) Number of NMJs harboring indicated phenotypes were tabulated from greater than 50 NMJs per genotype. Unpaired t-test was used for statistical analysis. Data are shown as mean ± SEM. (D) Pan-neuronal Unc-5 knockdown enhances lifespan of Elav>UBQLN24XALS flies. Recombinant Elav>UBQLN24XALS or a Elav>Gal4 flies were crossed to the indicated RNAi lines (shLuci or shUnc5). Lifespan of male (left panel) and female (right panel) progeny reared at 27°C was measured as described in Materials and methods. n>50 flies.
 
 Consistent with their climbing defects, D42>UBQLN24XALS flies exhibited neuromuscular junction (NMJ) abnormalities, including increased numbers of satellite boutons and reduced numbers of mature boutons. Both phenotypes were corrected by Unc-5 silencing (Figure 4B and C). Finally, we also measured the effect of Unc-5 silencing on lifespans of flies expressing UBQLN24XALS under control of a pan-neuronal Elav driver. Elav>UBQLN24XALS/shUnc-5 flies showed a significant increase in lifespan relative to Elav>UBQLN24XALS flies crossed to shLuci, with the effect being most pronounced in female flies (Figure 4D). Unc-5 knockdown also modestly increased the lifespan of Elav-Gal4 male flies relative to Elav-Gal4/shLuci flies while having no impact on lifespan of Elav-Gal4 female flies (Figure 4D). Altogether, these experiments suggest that aberrant Unc-5 signaling contributes to neuronal phenotypes in UBQLN24XALS flies.
 
-## The motor neuron guidance factor beat-1b suppresses UBQLN24XALS eye toxicity
+### The motor neuron guidance factor beat-1b suppresses UBQLN24XALS eye toxicity
 
 The identification of Unc-5 as a UBQLN24XALS suppressor raised the possibility that axonal guidance defects are particularly relevant to the UBQLN2 toxicity mechanism. Interestingly, the overlapping genetic interval spanned by the UBQLN24XALS suppressors Exel6038 and r10 contains beat-1b and beat-1c, two members of the beaten path (beat) family of axon guidance genes (Figure 5A–C; Vactor et al., 1993). Neuronally expressed Beat proteins regulate motor axon guidance and defasciculation in response to Sidestep (Side) ligands expressed on target substrates (Fambrough and Goodman, 1996; Sink et al., 2001; Siebert et al., 2009; de Jong et al., 2005). UBQLN24XALS flies crossed to a Beat-1b shRNA line exhibited less severe eye degeneration than UBQLN24XALS flies expressing shRNAs targeting luciferase, mCherry, or beat-1c (Figure 5D, E and F). GMR>UBQLN24XALS flies heterozygous for a p-element insertion in the beat-1b ORF also exhibited improved eye phenotype relative to control GMR>UBQLN24XALS controls (Figure 5D). These findings support the idea that Beat-1b signaling contributes to UBQLN2 toxicity and further implicate axonal guidance defects as a contributing pathomechanism to UBQLN2-associated neurodegeneration.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig5-v2.jpg)
 
-**Figure 5.:** beat-1b is a UBQLN24XALS suppressor.(A) Schematic of the beat-1b gene locus. (B) Representative eye phenotypes of GMR>UBQLN24XALS flies harboring the indicated deficiency (Df) alleles. (C) UBQLN2 expression levels and RIPA solubility in whole heads of GMR>UBQLN24XALS/Exel6038 and GMR>UBQLN24XALS/CyO flies. (D) Representative eye phenotypes of GMR>UBQLN24XALS flies expressing the indicated shRNAs. Eye degeneration scores are displayed below each eye image (B, D). (E, F) Knockdown of Beat-1b or Beat-1c does not inhibit UBQLN2 expression in GMR>UBQLN24XALS flies. (F) Quantification of UBQLN2 expression normalized to β-tubulin. The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis. .Figure 5—source data 1.Figure 5C, E, F.
+**Figure 5.:** (A) Schematic of the beat-1b gene locus. (B) Representative eye phenotypes of GMR>UBQLN24XALS flies harboring the indicated deficiency (Df) alleles. (C) UBQLN2 expression levels and RIPA solubility in whole heads of GMR>UBQLN24XALS/Exel6038 and GMR>UBQLN24XALS/CyO flies. (D) Representative eye phenotypes of GMR>UBQLN24XALS flies expressing the indicated shRNAs. Eye degeneration scores are displayed below each eye image (B, D). (E, F) Knockdown of Beat-1b or Beat-1c does not inhibit UBQLN2 expression in GMR>UBQLN24XALS flies. (F) Quantification of UBQLN2 expression normalized to β-tubulin. The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis. .
 
-## iPSC models for UBQLN2-associated ALS
+### iPSC models for UBQLN2-associated ALS
 
 We employed CRISPR/CAS9 to introduce ALS-associated mutations into the X-linked UBQLN2 gene in neonatal male induced pluripotent stem cells (iPSCs) (WC031i-5907-6, see Materials and methods, and Du et al., 2015). During the course of this work, we serendipitously derived an UBQLN2 allele harboring clinical P497H and P525S mutations (termed UBQLN22XALS) as well as a UBQLN2I498X allele that truncated the UBQLN2 ORF at codon 498 within the PRR. The expression and RIPA solubility of UBQLN2P497H, UBQLN22XALS, and UBQLN24XALS were comparable to UBQLN2WT in undifferentiated iPSCs, while UBQLN2I498X could not be detected by Western blotting suggesting it is a null allele (Figure 6A). We also failed to detect cytologic UBQLN2P497H, or UBQLN24XALS aggregates in immunostaining experiments, indicating that endogenous ALS mutations are insufficient to promote UBQLN2 aggregation in undifferentiated iPSCs (Figure 6B). As expected, UBQLN2I498X iPSCs exhibited very weak immunoreactivity with UBQLN2 antibodies.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig6-v2.jpg)
+
+**Figure 6.:** (A) Extracts from UBQLN2WT, UBQLN2P497H, UBQLN22XALS, UBQLN2I498X, or UBQLN24XALS iPSCs (clone 1 [C1] and clone 2 [C2]) were separated into soluble and insoluble fractions in 1% Triton X-100 (TX-100) buffer and immunoblotted with α-UBQLN2, and α-β-tubulin antibodies. (B) Localization patterns of wild-type and UBQLN2ALS proteins in iPSCs. UBQLN2WT, UBQLN2P497H, UBQLN24XALS, and UBQLN2I498X iPSCs were stained with α-UBQLN2 and α-TIAR antibodies and imaged by confocal microscopy. Note the lack of cytosolic aggregates. (C) Cell extracts from iPSCs of the indicated genotypes were incubated at room temperature with increasing amounts of chymotrypsin for 5 min. After separation by SDS-PAGE, the proteins were immunoblotted with α-UBQLN2 antibodies. Positions of full-length and cleaved UBQLN2 are denoted by arrows. *: non-specific band. (D) Autophagy inhibition with BafA1 reduced solubility of endogenous UBQLN2ALS proteins. UBQLN2WT, UBQLN2P497H, UBQLN24XALS, and UBQLN2I498X iPSCs were treated with 100 nM of BafA1 for 16 hr followed by BafA1 washout and incubation in BafA1-free growth media for 8 hr. Detergent extracts were separated into soluble and insoluble fractions and analyzed by SDS-PAGE and immunoblotting using UBQLN2, UBQLN1, LC3A/B, and β-tubulin antibodies. (E) Quantification of UBQLN2 solubility in UBQLN2WT, UBQLN2P497H, and UBQLN24XALS iPSCs from (D). The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis. *p≤0.05, ***p≤0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) UBQLN2WT, UBQLN2P497H, UBQLN24XALS, and UBQLN2I498X induced pluripotent stem cells (iPSCs) were treated with 100 nM of BafA1 for 16 hr and processed for immunostaining with UBQLN2 and Lamp1 antibodies. Arrowheads indicate colocalization of UBQLN2 and Lamp1. (B) UBQLN2WT, UBQLN2P497H, UBQLN24XALS, and UBQLN2I498X iPSCs were immunostained with UBQLN2 and Rab5 antibodies after incubation in 100 nM BafA1 for 16 hr. (C, D) Increased lysosomal size and number in UBQLN2ALS mutant iPSCs. (C) Representative images from UBQLN2WT, UBQLN2P497H, UBQLN24XALS, and UBQLN2 I498X iPSCs following labeling with LysoTracker Red DND-99 for 1 hr and costaining with Hoechst 33342. Scale bar: 10μm. (D) Size and numbers of LysoTracker-positive compartments were analyzed on a per cell basis using Fiji. Unpaired t-test was used for statistical analysis. Data are shown as mean ± SEM. *p≤0.05, ***p≤0.001, ****p≤0.0001.
 
 Previous work demonstrated that the 4XALS mutation increased the chymotrypsin sensitivity of purified UBQLN2, likely due to defective folding of the PRR (Kim et al., 2018). To determine whether the 4XALS mutation altered the folding of endogenous UBQLN2, we incubated detergent extracts from UBQLN2WT, UBQLN2P497H, UBQLN24XALS iPSCs with increasing concentrations of chymotrypsin. As shown in Figure 6C, UBQLN24XALS exhibited a unique chymotryptic fragmentation pattern relative to UBQLN2WT and UBQLN2P497H, suggesting that endogenous UBQLN24XALS is misfolded.
 
@@ -100,9 +140,21 @@ Reasoning that transient inhibition of protein degradation may potentiate UBQLN2
 
 We next evaluated the localization of wild-type and ALS-mutant UBQLN2 proteins to endolysosomal structures. UBQLN2WT, UBQLN2P497H, and UBQLN24XALS partially localized with the lysosomal marker LAMP1 in BafA1-treated iPSCs (Figure 6—figure supplement 1A). By contrast, UBQLN2 punctae did not significantly overlap with Rab5-positive endosomes (Figure 6—figure supplement 1B). Given colocalization of UBQLN2 with LAMP1, we evaluated impacts of P497H and 4XALS mutations on lysosomal number and size in live cells using the lysosome-tropic fluorescent probe, LysoTracker. Both the abundance and average size of lysosomes were significantly elevated in UBQLN2P497H and UBQLN24XALS iPSCs, relative to UBQLN2WT or UBQLN2I498X iPSCs, which exhibited qualitatively similar LysoTracker staining patterns (Figure 6—figure supplement 1C). In particular, the frequency of lysosomes greater than 5 μm and 10 μm was significantly elevated in UBQLN24XALS iPSCs versus UBQLN2P497H iPSCs (Figure 6—figure supplement 1D). These findings support the existence of endolysosomal defects in UBQLN2ALS iPSCs.
 
-## UBQLN2ALS iMNs exhibit axonal inclusions and neurite defects
+### UBQLN2ALS iMNs exhibit axonal inclusions and neurite defects
 
 A failure to detect UBQLN2ALS aggregates in untreated iPSCs could be due to continuous cytosolic dilution of UBQLN2 during mitotic cell division or may reflect the absence of neuron-specific stimuli that promote UBQLN2 aggregation. To explore these ideas, we carried out immunostaining experiments using UBQLN2WT, UBQLN2P497H, or UBQLN24XALS iMNs (Figure 7A). UBQLN2WT, UBQLN2P497H showed largely diffuse localization patterns, whereas UBQLN24XALS formed discrete aggregates distributed throughout iMN cell bodies and axons (Figure 7A). UBQLN2 aggregation was also observed in iMNs differentiated from an independently generated UBQLN24XALS iPSC clone (Clone 2, Figure 7—figure supplement 1A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig7-v2.jpg)
+
+**Figure 7.:** (A) UBQLN2WT, UBQLN2P497H, and UBQLN24XALS iMNs were immunostained for UBQLN2 and Tuj1. Magnified images of UBQLN24XALS iMN soma (i), axons (ii), and neurite terminals (iii) are shown; aggregates are marked with arrows. (B) UBQLN2 localizes to growth cone lamellipodia and filopodia. Differentiated iMNs of the indicated genotypes were costained for UBQLN2, Tuj1, and filamentous actin (phalloidin). Note reduced complexity of the UBQLN24XALS growth cone. Arrowheads indicate UBQLN24XALS aggregates. Scale bars = 10 μm. (C) Schematic of Sholl analysis. Tracing example of an iMN (i) displays the paths representing individual neuron structure, with nodes (Ni) and edges (Ej) corresponding to the dendrogram on (ii) and (iii). (D) UBQLN24XALS iMNs exhibit reduced complexity. UBQLN2WT, UBQLN2P497H, and UBQLN24XALS iMNs were stained with α-Tuj1 and imaged by confocal microscopy. One hundred neurons of the indicated genotypes were traced using Simple Neurite Tracer (SNT) and subjected to Sholl image analysis to quantify total neurite projection path length (i), primary neurite length (ii), terminal neurite length (iii), neurite branch points (iv), and Sholl decay (v). Data analysis was performed using ordinary one-way ANOVA. Data are shown as mean ± SEM. n>100 iMNs, **p≤0.01, ****p≤0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) UBQLN24XALS (C2) iMNs were immunostained for UBQLN2 and Tuj1. Aggregates are marked with arrowheads. (B) Growth cone morphologies in UBQLN24XALS (C2) iMNs. iMNs were stained with α-UBQLN2, α-Tuj1, and phalloidin. Note reduced growth cone elaboration in UBQLN24XALS (C2) iMNs. Scale bars = 10 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Inducible motor neurons (iMNs) of the indicated genotypes were immunostained with α-UBQLN2 and α-DCC antibodies, and phalloidin. Scale bars = 10 μm.
 
 F-actin labeling with phalloidin revealed that UBQLN2WT and UBQLN2P497H were evenly distributed throughout growth cone lamellipodia and filopodia. Lamellipodial UBQLN24XALS staining was generally weaker, except for occasional brightly staining aggregates that were observed in ~50% of growth cones examined (Figure 7B). Notably, the UBQLN24XALS mutation did not significantly impact the localization of DCC, which was highly enriched in filopodial spikes in iMNs of all UBQLN2 genotypes (Figure 7—figure supplement 2).
 
@@ -112,11 +164,23 @@ Given that autophagy inhibition with BafA1 induced UBQLN24XALS aggregation in iP
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig8-v2.jpg)
 
-**Figure 8.:** 4XALS aggresomes in inducible motor neurons (iMNs).(A) UBQLN2WT, UBQLN2P497H, and UBQLN24XALS iMNs were treated with BafA1 (50 nM) for 16 hr and processed for immunostaining with UBQLN2 and p62. Arrowheads indicate UBQLN24XALS aggregates that were colocalized with p62. (B) The number of UBQLN24XALS aggregates was analyzed on a per cell basis using Fiji. Data analysis was performed using ordinary one-way ANOVA. Data are shown as mean ± SEM. n>50 iMNs, ****p≤0.0001. (C) UBQLN24XALS iMNs were treated with BafA1 and processed for immunostaining with UBQLN2 and Lamp1, Rab5, or LC3. Arrowheads indicate UBQLN24XALS colocalization with Lamp1. Scale bars = 10 μm. (D) Pearson’s correlation coefficients for colocalization assays. Pearson’s coefficients were plotted as a bar graph to compare the colocalization of UBQLN2 with p62, LAMP1, Rab5, or LC3. n=10 iMNs, Error bars represent SEM, ****p≤0.0001 (ordinary one-way ANOVA).Figure 8—source data 1.Figure 8B, D.
+**Figure 8.:** (A) UBQLN2WT, UBQLN2P497H, and UBQLN24XALS iMNs were treated with BafA1 (50 nM) for 16 hr and processed for immunostaining with UBQLN2 and p62. Arrowheads indicate UBQLN24XALS aggregates that were colocalized with p62. (B) The number of UBQLN24XALS aggregates was analyzed on a per cell basis using Fiji. Data analysis was performed using ordinary one-way ANOVA. Data are shown as mean ± SEM. n>50 iMNs, ****p≤0.0001. (C) UBQLN24XALS iMNs were treated with BafA1 and processed for immunostaining with UBQLN2 and Lamp1, Rab5, or LC3. Arrowheads indicate UBQLN24XALS colocalization with Lamp1. Scale bars = 10 μm. (D) Pearson’s correlation coefficients for colocalization assays. Pearson’s coefficients were plotted as a bar graph to compare the colocalization of UBQLN2 with p62, LAMP1, Rab5, or LC3. n=10 iMNs, Error bars represent SEM, ****p≤0.0001 (ordinary one-way ANOVA).
 
-## UNC5B and DCC silencing reduce neurite and growth cone defects in UBQLN24XALS iMNs
+### UNC5B and DCC silencing reduce neurite and growth cone defects in UBQLN24XALS iMNs
 
 Mammals harbor a single fra ortholog, DCC, and four closely related paralogs with homology to Unc-5: UNC5A, UNC5B, UNC5C, and UNC5D. Among these, we focused on UNC5B, which is widely expressed in nervous tissue and has well-described roles in axon guidance and apoptosis regulation (Wang et al., 2009; Ahn et al., 2020; Pradella et al., 2021; Tang et al., 2008). To assess contributions of DCC and UNC5B signaling to UBQLN2-associated toxicity, we transduced UBQLN24XALS iPSCs with lentiviral shRNA vectors targeting DCC or UNC5B and differentiated the cells into iMNs for neurite analysis. qPCR confirmed that expression of UNC5B and DCC was reduced ~40–60% in their respective shRNA-transduced iPSCs relative to iPSCs transduced with an NT shRNA vector (Figure 9—figure supplement 1A, B). UBQLN24XALS iMNs expressing DCC shRNA also showed reduced DCC immunoreactivity at filopodial spikes (Figure 9—figure supplement 1C). Both UNC5B and DCC knockdown significantly increased average total neurite length, primary neurite length, and branch length in UBQLN24XALS iMNs relative to UBQLN24XALS iMNs expressing a non-targeting (NT) control shRNA (Figure 9A). Neither UNC5B nor DCC silencing affected the size or number of UBQLN24XALS aggregates (Figure 9—figure supplement 2), suggesting they influence toxicity pathway(s) downstream of UBQLN2 aggregation.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig9-v2.jpg)
+
+**Figure 9.:** (A) UBQLN24XALS iMNs expressing shNT, shUNC5B, or shDCC were subjected to Sholl analysis of neurite length and complexity as described in Figure 7. Data analysis was performed using ordinary one-way ANOVA. Data are shown as mean ± SEM. n>100 iMNs, *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. (B) Growth cone morphologies in UBQLN24XALS iMNs. UBQLN2WT, UBQLN2P497H, and UBQLN24XALS iMNs. iMNs of the indicated genotypes were stained with α-UBQLN2, α-Tuj1, and phalloidin. Note reduced growth cone elaboration in UBQLN24XALS iMNs. (C) Enhanced growth cone elaboration in UBQLN24XALS iMNs expressing DCC or UNC5B shRNAs. iMNs of the indicated genotype were stained with α-UBQLN2, α-Tuj1, and phalloidin. Arrowheads denote growth cones. (D) Quantification of growth cones in UBQLN2WT, UBQLN2P497H, and UBQLN24XALS, and UBQLN24XALS iMNs expressing the indicated shRNAs. Data analysis was performed using ordinary one-way ANOVA. Data are shown as mean ± SEM. n>100 iMNs, *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** mRNA levels of UNC5B (A) and DCC (B) were analyzed by RT-qPCR in iPSCs expressing the indicated shRNAs. The bars represent mean with SEM of triplicate samples. Unpaired t-test was used for statistical analysis. *p≤0.05, **p≤0.01. (C) Inducible motor neurons (iMNs) of the indicated genotypes were immunostained with α-DCC antibodies. Note reduced filopodial DCC signal intensity in UBQLN24XALS: shDCC iMNs.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** UNC5B (A) or DCC (B) knockdown iMNs were immunostained with α-UBQLN2 antibodies. Aggregates are marked with arrowheads.
 
 We next evaluated growth cone morphology in wild-type and UBQLN2ALS iMNs stained with phalloidin. Compared to UBQLN2WT or UBQLN2P497H iMNs, UBQLN24XALS iMNs showed a high proportion of blunt-end termini versus growth cone termini, suggesting a defect in growth cone elaboration (Figure 9B and D). A preponderance of blunt-end termini was also observed in UBQLN24XALS (Clone 2) iMNs, suggesting they are a specific consequence of the 4XALS mutation (Figure 7—figure supplement 1B). By contrast, UBQLN24XALS iMNs expressing UNC5B or DCC shRNAs exhibited supernumerary growth cones along primary and secondary neurites and an increase in growth cone size and abundance relative to blunt-end termini (Figure 9C and D). These findings suggest that aberrant DCC-UNC5 signaling suppresses growth cone elaboration in UBQLN24XALS iMNs and that axon guidance defects contribute to toxicity phenotypes in fly and iMN models for UBQLN2-associated ALS.
 
@@ -126,7 +190,7 @@ In this study we investigated how ALS-associated mutations in the Ub chaperone U
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/84382/elife-84382-fig10-v2.jpg)
 
-**Figure 10.:** ALS toxicity suppression through the UNC5 pathway.(Left panel) Wild-type motor neurons exhibit healthy neurites and well-elaborated growth cones devoid of UBQLN2 aggregates. (Center panel) Amyotrophic lateral sclerosis (ALS)-associated mutations in the proline-rich repeat (PRR) of UBQLN2 promote its misfolding and assembly into aggregates that trigger UNC5/DCC-dependent axonal retraction. UBQLN2ALS aggregates may directly initiate pathologic UNC5/DCC signaling or impact other aspects of cellular regulation, including the endolysosomal-autophagosomal pathway, leading to proteostasis deregulation and growth cone retraction. (Right panel) Suppression of UNC5/DCC signaling with rationally designed antibodies or small molecules (not shown) rescues growth cone defects in UBQLN2ALS motor neurons.
+**Figure 10.:** (Left panel) Wild-type motor neurons exhibit healthy neurites and well-elaborated growth cones devoid of UBQLN2 aggregates. (Center panel) Amyotrophic lateral sclerosis (ALS)-associated mutations in the proline-rich repeat (PRR) of UBQLN2 promote its misfolding and assembly into aggregates that trigger UNC5/DCC-dependent axonal retraction. UBQLN2ALS aggregates may directly initiate pathologic UNC5/DCC signaling or impact other aspects of cellular regulation, including the endolysosomal-autophagosomal pathway, leading to proteostasis deregulation and growth cone retraction. (Right panel) Suppression of UNC5/DCC signaling with rationally designed antibodies or small molecules (not shown) rescues growth cone defects in UBQLN2ALS motor neurons.
 
 A genetic Df screen in Drosophila identified 35 loci (7 suppressors and 28 enhancers) that influenced toxicity of UBQLN2ALS mutants. Key to the identification of phenotypic suppressors was a UBQLN24XALS allele that showed elevated HS-dependent toxicity relative to UBQLN2ALS point mutants, whose toxicities were difficult to discern from overexpressed UBQLN2WT (Figures 1B and 2D). The reason for enhanced toxicity of UBQLN24XALS is unclear; however, its enhanced aggregation potential may overwhelm cellular proteostasis machinery and/or accelerate disease mechanisms that are slow to manifest in neurons harboring ALS point mutations. This is consistent with the fact that UBQLN24XALS toxicity in flies was unmasked by HS, which is a well-known inducer of proteotoxicity. While caution must be taken when interpreting experiments employing the UBQLN24XALS allele, it may serve as useful discovery tool for pathway identification in UBQLN2-associated ALS.
 
@@ -148,70 +212,521 @@ Finally, while findings in flies and iMNs support a conserved role for axon guid
 
 ## Materials and methods
 
-## Drosophila methods
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Deficiency</td>
+      <td>BDSC</td>
+      <td>BDSC7521</td>
+      <td>w[1118]; Df(2L)Exel6038, P{w[+mC]=XPU}Exel6038/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>beat-1c/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC64528</td>
+      <td>y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=TRiP.HMC05547}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>beat-1b/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC55938</td>
+      <td>y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=TRiP.HMC04226}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rab5/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC34832</td>
+      <td>y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=TRiP.HMS00147}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Luciferase/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC31603</td>
+      <td>y(1) v(1); P{y[+t7.7] v[+t1.8]=TRiP.JF01355}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rab5/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC30518</td>
+      <td>y(1) v(1); P{y[+t7.7] v[+t1.8]=TRiP.JF03335}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>beat-1b/P element</td>
+      <td>BDSC</td>
+      <td>BDSC18802</td>
+      <td>w[1118]; PBac{w[+mC]=WH}beat-Ib[f04746]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rab5/overexpression</td>
+      <td>BDSC</td>
+      <td>BDSC43336</td>
+      <td>w[*]; P{w[+mC]=UAS-GFP-Rab5}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc-5/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC33756</td>
+      <td>y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=TRiP.HMS01099}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc-5/RNAi</td>
+      <td>VDRC</td>
+      <td>VDRC8138</td>
+      <td>GD RNAi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc-5/RNAi</td>
+      <td>VDRC</td>
+      <td>VDRC110155</td>
+      <td>KK RNAi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GFP/overexpression</td>
+      <td>BDSC</td>
+      <td>BDSC5430</td>
+      <td>w[1118]; P{w[+mC]=UAS-EGFP}34/TM3, Sb(1)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Deficiency</td>
+      <td>BDSC</td>
+      <td>BDSC24370</td>
+      <td>w[1118]; Df(2R)BSC346/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>mCherry/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC35787</td>
+      <td>y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=UAS-mCherry.VALIUM10}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>frazzled/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC31469</td>
+      <td>y(1) v(1); P{y[+t7.7] v[+t1.8]=TRiP.JF01231}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>frazzled/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC31664</td>
+      <td>y(1) v(1); P{y[+t7.7] v[+t1.8]=TRiP.JF01457}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>frazzled/RNAi</td>
+      <td>BDSC</td>
+      <td>BDSC40826</td>
+      <td>y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=TRiP.HMS01147}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Deficiency (lilli)</td>
+      <td>BDSC</td>
+      <td>BDSC9610</td>
+      <td>BSC180</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Deficiency (Rab5)</td>
+      <td>BDSC</td>
+      <td>BDSC7144</td>
+      <td>BSC37</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Deficiency (lilli)</td>
+      <td>BDSC</td>
+      <td>BDSC94697</td>
+      <td>ED4651</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Deficiency (lilli)</td>
+      <td>BDSC</td>
+      <td>BDSC99</td>
+      <td>C144</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Lilli (LOF allele)</td>
+      <td>BDSC</td>
+      <td>BDSC5726</td>
+      <td>lilli[A17-2] cn(1) bw(1)/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc-5 (LOF)</td>
+      <td>Greg Bashaw; Labrador et al., 2005</td>
+      <td>https://doi.org/10.1016/j.cub.2005.06.058</td>
+      <td>Unc-53</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc-5 (LOF)</td>
+      <td>Greg Bashaw; Labrador et al., 2005</td>
+      <td>https://doi.org/10.1016/j.cub.2005.06.058</td>
+      <td>Unc-58</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc-5/overexpression</td>
+      <td>Greg Bashaw</td>
+      <td></td>
+      <td>HA-Unc-5 (Chr2)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Unc-5/overexpression</td>
+      <td>Greg Bashaw</td>
+      <td></td>
+      <td>HA-Unc-5 (Chr3)</td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>UBQLN2WT</td>
+      <td>WC031i-5907–6</td>
+      <td>WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>UBQLN2P497H</td>
+      <td>This paper</td>
+      <td>P497H</td>
+      <td>Mutation using CRISPR</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>UBQLN22XALS</td>
+      <td>This paper</td>
+      <td>P497H, P525S</td>
+      <td>Mutation using CRISPR</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>UBQLN24XALS</td>
+      <td>This paper</td>
+      <td>P497H, P506T, P509S, P525S</td>
+      <td>Mutation using CRISPR</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>UBQLN2I498X</td>
+      <td>This paper</td>
+      <td>I498X</td>
+      <td>Mutation using CRISPR</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (humani PSCs)</td>
+      <td>shUNC5B</td>
+      <td>Sigma-Aldrich</td>
+      <td>TRCN0000442978</td>
+      <td>Lentiviral construct to transfect and express the shRNA in iPSCs</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human iPSCs)</td>
+      <td>shDCC</td>
+      <td>Sigma-Aldrich</td>
+      <td>TRCN0000010318</td>
+      <td>Lentiviral construct to transfect and express the shRNA in iPSCs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UBQLN2 (Mouse monoclonal antibody)</td>
+      <td>Abcam</td>
+      <td>Cat#: Ab190283</td>
+      <td>IF (1:1000), WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UBQLN2 (Rabbit polyclonal antibody)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 85509</td>
+      <td>IF (1:500), WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Tubulin (Mouse monoclonal antibody)</td>
+      <td>EMD Millipore</td>
+      <td>Cat#: 05–661</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3A/B (Rabbit polyclonal antibody)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 12741S</td>
+      <td>IF (1:500), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LAMP1 (Mouse monoclonal antibody)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-20011</td>
+      <td>IF (1:500), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rab5A (Rabbit polyclonal antibody)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 46449S</td>
+      <td>IF (1:500), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UBQLN1 (Rabbit polyclonal antibody)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 14526</td>
+      <td>IF (1:500), WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tuj1 (Mouse monoclonal antibody)</td>
+      <td>EMD Millipore</td>
+      <td>Cat#: MAB1637MI</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DCC (Rabbit polyclonal antibody)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: PA5-50946</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DLG(Mouse monoclonal antibody)</td>
+      <td>DSHB</td>
+      <td>Cat#: 4F3</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HRP- Cy3-conjugated (Goat polyclonal antibody)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#:123-165-021</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH-F</td>
+      <td>Sigma-Aldrich</td>
+      <td>qPCR primers</td>
+      <td>GTCTCCTCTGACTTCAACAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH-R</td>
+      <td>Sigma-Aldrich</td>
+      <td>qPCR primers</td>
+      <td>ACCACCCTGTTGCTGTAGCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UNC5B-F</td>
+      <td>Sigma-Aldrich</td>
+      <td>pPCR primers</td>
+      <td>ACTGCCGTGACTTCGACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UNC5B-R</td>
+      <td>Sigma-Aldrich</td>
+      <td>qPCR primers</td>
+      <td>GCCTTGCCGTCTTAAAGTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DCC-F</td>
+      <td>Sigma-Aldrich</td>
+      <td>qPCR primers</td>
+      <td>GACTTTACCAATGTGAGGCATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DCC-R</td>
+      <td>Sigma-Aldrich</td>
+      <td>qPCR primers</td>
+      <td>GGTCCTGCTACTGCAACTTTT</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Tocris</td>
+      <td>4423</td>
+      <td>Chemical compound, drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMH-1</td>
+      <td>Tocris</td>
+      <td>4126</td>
+      <td>Chemical compound, drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Stemgent</td>
+      <td>04-0010</td>
+      <td>Chemical compound, drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinoic acid</td>
+      <td>Stemgent</td>
+      <td>04-0021</td>
+      <td>Chemical compound, drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Purmorphamine</td>
+      <td>Stemgent</td>
+      <td>04-0009</td>
+      <td>Chemical compound, drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Compound E</td>
+      <td>EMD Millipore</td>
+      <td>565790</td>
+      <td>Chemical compound, drug</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm for RNA-Seq analysis</td>
+      <td>Drosophila melanogaster genome (dmel-all-chromosome-r6.27, FlyBase)</td>
+      <td>https://github.com/ENCODE-DCC/rna-seq-pipeline; ENCODE DCC, 2022 STAR 2.7.1a</td>
+      <td>DESeq2,MetaScape website</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm for mass spectrometry analysis</td>
+      <td>MetaMorpheus software program</td>
+      <td></td>
+      <td>FlashLFQ</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila methods
 
 Flies were maintained with the standard cornmeal-yeast medium (Nutri-Fly BF #66-112, Genesee Scientific) supplemented with propionic acid and all crosses were performed at 22°C. For HS experiments, all crosses were performed at indicated temperatures (27°C or 29°C). Note: the UAS-Gal4 promoter contains heat-shock elements that increase transgene expression at 27°C and 29°C. Generation of isogenic UAS-UBQLN2 stocks using PhiC31 integration was previously described.
 
-## RNA-Seq and gene expression
+### RNA-Seq and gene expression
 
 Total RNA was isolated from 100 male fly heads using the TRIzol reagent (Invitrogen, 15596018) following the manufacturer’s protocol and treated with TURBO Dnase (Invitrogen, AM2239). RNA samples were prepared with three biological replicates for each genotype and each temperature. Then RNA samples were sent to Novogene (Novogene Co., Ltd, Sacramento, CA, USA) for non-stranded cDNA library building and sequencing at PE150 with NovoSeq 6000. Raw reads adapters were trimmed by fastp (Chen et al., 2018) and then were mapped to D. melanogaster genome (dmel-all-chromosome-r6.27, FlyBase) by STAR with the setting suggested by ENCODE project (https://github.com/ENCODE-DCC/rna-seq-pipeline, Dobin et al., 2013 STAR 2.7.1a). The number of RNA-Seq reads mapped to each transcript was summarized with featureCounts (Liao et al., 2014) and differential expression was called using DESeq2 (Love et al., 2014). The GO analysis was performed on MetaScape website (Zhou et al., 2019).
 
-## Fly brain immunohistochemistry
+### Fly brain immunohistochemistry
 
 The protocol for fly brain immunohistochemistry was adapted from a previously published protocol (Zhan et al., 2013). Adult fly brains were dissected using a pair of fine forceps in PBS (or 0.3% TX-100 in PBS), fixed, blocked with normal goat serum (NGS), and stained with primary antibodies at 1:500 dilution for two overnights at 4°C. After subsequent secondary antibody staining, DAPI was added for the nuclear staining. Images were acquired using a Nikon A1 confocal microscope using a 60× oil lens.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Fly lysates were prepared by homogenizing 100 male fly heads in 200 μl of lysis buffer containing 20 mM Tris-HCl (pH 8.0), 138 mM NaCl, 10 mM KCl, 1 mM MgCl2, 1 mM EDTA, 0.5% sodium deoxycholate w/v, and 0.1% SDS w/v (RIPA buffer w/o NP-40). Samples were centrifuged at 20,000 × g for 10 min and soluble fractions subjected to tryptic digestion and orbitrap MS using the filter aided sample preparation method (Wiśniewski et al., 2009). We performed two technical replicates for each of the three biological replicates. The tryptic digest solution was desalted/concentrated using an Omix 100 μl (80 μg capacity) C18 tip and the peptides were analyzed by HPLC-ESI-MS/MS using a system consisting of a high-performance liquid chromatograph (nanoAcquity, Waters) connected to an electrospray ionization Orbitrap mass spectrometer (QE HF, Thermo Fisher Scientific). HPLC separation employed a 100×365 μm fused silica capillary micro-column packed with 20 cm of 1.7 μm diameter, 130 Å pore size, C18 beads (Waters BEH), with an emitter tip pulled to approximately 1 μm using a laser puller (Sutter Instrument). Peptides were loaded on-column at a flow rate of 400 nl/min for 30 min and then eluted over 120 min at a flow rate of 300 nl/min with a gradient of 5–35% acetonitrile, in 0.2% formic acid. Full-mass profile scans were performed in the FT orbitrap between 375 and 1500 m/z at a resolution of 120,000, followed by MS/MS HCD scans of the 10 highest intensity parent ions at 30% relative collision energy and 15,000 resolution, with a mass range starting at 100 m/z. Dynamic exclusion was enabled with a repeat count of one over a duration of 30 s. The MetaMorpheus software program was used to identify peptides and proteins in the samples (Shortreed et al., 2015; Solntsev et al., 2018). Protein fold changes were quantified by FlashLFQ (Millikin et al., 2020; Yin et al., 2019; Millikin et al., 2018).
 
-## Genetic screening
+### Genetic screening
 
 We employed the Bloomington Deficiency Kit for chromosome 2 (DK2L and DK2R) comprised of 194 different lines. All 194 lines were crossed to GMR-Gal4/CyO or homozygous GMR>UBQLN2P497H or GMR>UBQLN24XALS flies at 29°C. A minimum of 30 F1 progeny containing GMR>UBQLN2 either the Df chromosome or balancer chromosome were analyzed for eye morphology 1–3 days post eclosion using a blinded, 1–5 grading system, with a score of 1 representing a control (GMR-Gal4) eye; 3 corresponding to the unmodified UBQLN24XALS phenotype at 29°C; and 5 representing severe eye degeneration featuring more than 50% necrotic tissue. We were unable to derive UBQLN2 progeny for a handful Df lines crossed to UBQLN24XALS, suggesting lethal genetic interactions. All putative modifier Dfs were retested in secondary screens that included side-by-side crosses to GMR-Gal4, GMR>UBQLN2WT, GMR>UBQLN2P497H, and GMR>UBQLN24XALS. Those Dfs that were confirmed to modify GMR > UBQLN2 eye phenotypes in both screens were deemed bona fide modifier Dfs. Sexually dimorphic phenotypes were also scored. Drosophila eye pictures were acquired using Leica S9 i Stereomicroscope.
 
-## Drosophila climbing assay
+### Drosophila climbing assay
 
 Climbing assay was modified from methods described previously (Kim et al., 2018). Climbing ability was measured by tapping ~10 flies to the bottom of a graduated testing vial (15 cm) and taking videos over of fly movement over the course of 10 s. More than 100 flies for each genotype and each gender were used for climbing ability. Video frames at the 5 s time point were used to record the position of each fly using the multi-point plugin in ImageJ. Using the final positions of every fly and respective starting points also marked with ImageJ’s multi-point, the vertical displacement and velocity of every fly was calculated. Data showing velocity of each individual fly were graphed as scattered plots with mean climbing distance and SEM. Unpaired t-test with Welch’s correction were used for statistical analysis for different groups of flies.
 
-## Drosophila NMJ assay
+### Drosophila NMJ assay
 
 NMJ assay was modified from methods described previously (Kim et al., 2018). Third-instar, wandering larvae from the F1 generation were rinsed in ice-cold PBS (Lonza, 17512F) and dissected along the dorsal midline. All tissues except the brain and nerves were removed to expose the muscles and NMJs. The dissected larval pelt was fixed in 4% paraformaldehyde for 20 min at room temperature. The larval pelts were given a wash with PBS followed by blocking with 5% NGS in 0.1% PBST (0.1% TX-100 in PBS). Following blocking, the larval pelts were probed with primary antibodies overnight at 4°C. They were then washed several times with 0.1% PBST followed by incubation with secondary antibodies for 2 hr at room temperature, subsequently followed by washes with 0.1% PBST. Larvae were then mounted onto slides using Prolong Gold mounting media. Confocal images were acquired using Zeiss LSM 710 confocal microscope and a 60× oil objective was used to image the NMJs. Both primary and secondary antibody solutions were prepared in 5% NGS in 0.1% PBST. For primary antibodies, the following dilutions were used: 1:100 Cy3-conjugated goat anti-HRP (Jackson ImmunoResearch, 123-165-021); 1:100 mouse anti-DLG 4F3 (DSHB). For secondary antibodies, the following antibody dilutions were used: 1:250 Alexa Fluor 647-conjugated phalloidin (Invitrogen, A22287); 1:500 goat anti-mouse Alexa Fluor 488 (Invitrogen, A-11029). For the analyses, NMJs innervating muscle 4 on segments A2-A3 were imaged and analyzed for synaptic bouton quantification. Mature boutons are defined as boutons that are included in a chain of two or more boutons. Satellite boutons are defined as a single bouton that is not included in a chain of boutons, and instead, sprout off of a mature bouton or branch. The groups were compared using unpaired Student’s t-test on GraphPad Prism software. p-Value less than 0.05 was considered statistically significant.
 
-## Drosophila longevity assays
+### Drosophila longevity assays
 
 Longevity assay was modified from methods described previously (Zhan et al., 2013). For survival analysis, flies were aged at 27°C with no more than 15 flies per vial. Total more than 100 flies were used for each genotype. Vials were changed on a 2- to 3-day cycle. Death events were scored on a daily basis. Rescue in longevity was defined as greater than 5% increase in median lifespan in addition to the statistical threshold according to the Log-rank (Mantel-Cox) test, p<0.05. In the survival graphs shown, each set of experiments was done in the same time period with the corresponding control subjects in order to control longevity variation caused by environmental factors. Both genders were used in the survival assay unless otherwise specified.
 
-## iPSC culture and motor neuron differentiation
+### iPSC culture and motor neuron differentiation
 
 A normal iPSC line (WC031i-5907-6, fibroblasts from neonatal male) was obtained from WiCell Research Institute (Yin et al., 2019). Into this line we introduced the following mutations using CRISPR/CAS9: P497H, 2XALS (P497H, P525S), 4XALS (P497H, P506T, P509S, P525S), and I498X, which harbors a 1 nt deletion in codon 497 that leads to frameshift and translation termination at codon 498. UBQLN2P497H, UBQLN22XALS, and UBQLN24XALS lines were sequenced for the top five ranking off-target cleavages (none were found) and confirmed for expression of pluripotency markers. All iPSCs have normal karyotypes, express stem cell markers, exhibit pluripotency (as assessed by capacity to differentiate into three germ layers), and were mycoplasma negative (Yin et al., 2019). STR analysis defines profile for each line, confirms clonality and purity to 95–98% confidence. Fifteen loci were tested, all matched appropriate source fibroblasts. iPSCs were cultured with mTeSR1 (Stemcell Technologies) on Matrigel (Corning). iPSCs on Matrigel were passaged with 0.5 mM EDTA. iPSC colonies were passaged every 4–7 days at a 1:3 to 1:6 split ratio.
 
 Differentiation of iPSCs into iMNs was carried out as previously described (Du et al., 2015). In brief, iPSCs were dissociated and placed in Matrigel-coated plates. On the following day, the iPSC medium was replaced with a chemically defined neural differentiation medium, including DMEM/F12, Neurobasal medium at 1:1, 0.5×N2, 0.5×B27, and 1×Glutamax (all are from Invitrogen). CHIR99021 (3 μM, Torcris), 2 μM DMH-1 (Torcris), and 2 μM SB431542 (Stemgent) were added in the medium. The culture medium was changed every other day. Human iPSCs maintained under this condition for 7 days were induced into neuroepithelial progenitors (NEP). The NEP cells were then dissociated with dispase (1 mg/ml) and split at 1:6 with neural differentiation medium described above. Retinoic acid (RA, 0.1 μM, Stemgent) and 0.5 μM purmorphamine (Stemgent) were added in combination with 1 μM CHIR99021, 2 μM DMH-1, and 2 μM SB431542. The medium was changed every other day. NEP cells maintained under this condition for 7 days differentiated into OLIG2+ motor neuron progenitors (MNPs). To induce motor neuron differentiation, OLIG2+ MNPs were dissociated with EDTA (0.5 mM) and cultured in suspension in the above neural differentiation medium with 0.1 μM RA and 0.1 μM purmorphamine. The medium was changed every other day. OLIG2+ MNPs under this condition for 6 days differentiated into HB9+ NMPs. The HB9+ NMPs were then dissociated with Accutase (Invitrogen) into single cells and plated on Matrigel-coated plates. The HB9+ NMPs were cultured with 0.1 μM RA, 0.1 μM purmorphamine, and 0.1 μM Compound E (Millipore) for 6 days to mature into CHAT+ iMNs.
 
-## Microscopy
+### Microscopy
 
 For immunostaining, iPSCs and iMNs were fixed with 4% paraformaldehyde in PBS, permeabilized with 0.2% PBST, blocked with 2% BSA, and stained with primary antibodies for overnight at 4°C and then stained with α-rabbit-Alex-488 and α-mouse-Alexa-594-conjugated secondary antibodies. Images were acquired using a Nikon A1 confocal microscope using either a 20× lens or a 60× oil lens. For Lysotracker assays, iPSCs were incubated with 70 nM LysoTracker Red DND-99 (L7528, Invitrogen) for 1 hr at 37°C in culture medium. Live microscopy of lysosomes was performed using a Nikon A1 confocal microscope with a heated chamber and an objective to maintain the cells at 37°C using a 60× oil lens.
 
-## Immunoblotting
+### Immunoblotting
 
 Fly lysates were prepared by homogenizing 10 fly heads in 50 μl of RIPA lysis buffer. The soluble fraction was taken after centrifugation at 21,000 × g in a microcentrifuge for 10 min iPSC extract were prepared using in lysis buffer containing 20 mM Tris-HCl (pH 8.0), 138 mM NaCl, 10 mM KCl, 1 mM MgCl2, 1 mM EDTA, and 1% Triton-X 100 vol/vol (TX buffer). All lysis buffers were supplemented with protease inhibitor cocktail (Sigma, P8340), 10 mM NaF, and 1 mM DTT. Following centrifugation at 21,000 × g for 15 min, the insoluble pellet was washed twice with PBS, then suspended and boiled in Laemmli buffer. For immunoblotting, samples were separated by SDS-PAGE and transferred to PVDF membranes and immunoblotted with primary antibodies and LI-COR IRDye secondary antibodies (IRDye 800CW goat anti-rabbit and IRDye 680RD goat anti-mouse) as described. Signals were acquired using Odyssey bio-systems (LI-COR Biosciences). Immunoblotting results were analyzed and organized with ImageStudio Lite software (LI-COR).
 
-## Limited proteolysis
+### Limited proteolysis
 
 iPSCs were lysed in buffer containing 20 mM Tris-HCl (pH 8.0), 138 mM NaCl, 10 mM KCl, 1 mM MgCl2, 1 mM EDTA, and 0.2% NP-40 vol/vol. A total of 20 μg of each protein lysate in 10 μl was digested with increasing amounts of chymotrypsin (0.05–0. 2 μg/ml, final volume, Sigma) for 5 min at room temperature. Digestion was terminated by addition of Laemmli loading dye and boiling at 95°C for 5 min. The digested proteins were analyzed by Western blotting with anti-UBQLN2 antibodies.
 
-## Sholl analysis
+### Sholl analysis
 
 Sholl analysis was done by determining the number of neurite branches at various radial distances from the cell body. The rate at which branching decreases as a function of distance is the Sholl regression coefficient, or Sholl decay. Digitizing individual neurite branching patterns, or tracing, was performed using the Simple Neurite Tracer (SNT) plugin in ImageJ. Semi-automatic tracing of β-tubulin staining in iMNs was carried out blinded on individual neurons. SNT’s Python application programming interface was implemented to measure the number of branch points and their respective radial distances. Other morphological descriptors including neurite length, branching number, and primary neurite number were measured in a similar way and graphed as scatter plots in GraphPad. Using the Python programming language, linear regression was fitted to the semi-log plots of the total branch points for every 1 μm radial distances.
 
-There are a variety of ways to perform curve fitting for Sholl analysis, including linear mixed models. However, mixed models are necessary for samples with extensive clustering or heterogenity (Wilson et al., 2017). Since each sample was differentiated, immunostained, and imaged simultaneously and in the same way, a simple linear regression model was appropriate. To ensure each linear fit was an accurate approximation of branch point distribution, only linear fits with a high Pearson’s correlation (R2>0.8) were used to calculate the Sholl coefficient (Equation 1). Individual neuron Sholl decay was graphed as scatter plots using GraphPad, where each neuron was one data point. Since neurons with a low Pearson’s correlation were excluded in this analysis, all neurons of a given genotype were combined into one Sholl plot, in an additional, more inclusive analysis. This was accomplished by plotting the average number of branch points at 1 μm intervals among all neurons of a given genotype. Due to high variation of branching within each sample, only branch points that fell within the 10–90 percentile were linearly fitted to yield the overall Sholl decay for each genotype.(1)log⁡Npr2= -kr+mN=# branch points (intersections)r=  radial distance from somak=  Sholl regression coefficientm=  y intercept of linear fitted line
+There are a variety of ways to perform curve fitting for Sholl analysis, including linear mixed models. However, mixed models are necessary for samples with extensive clustering or heterogenity (Wilson et al., 2017). Since each sample was differentiated, immunostained, and imaged simultaneously and in the same way, a simple linear regression model was appropriate. To ensure each linear fit was an accurate approximation of branch point distribution, only linear fits with a high Pearson’s correlation (R2>0.8) were used to calculate the Sholl coefficient (Equation 1). Individual neuron Sholl decay was graphed as scatter plots using GraphPad, where each neuron was one data point. Since neurons with a low Pearson’s correlation were excluded in this analysis, all neurons of a given genotype were combined into one Sholl plot, in an additional, more inclusive analysis. This was accomplished by plotting the average number of branch points at 1 μm intervals among all neurons of a given genotype. Due to high variation of branching within each sample, only branch points that fell within the 10–90 percentile were linearly fitted to yield the overall Sholl decay for each genotype.
 
-## Growth cone analysis
+$$
+log⁡\frac{N}{pr^{2}}= -kr+m
+$$
+
+
+
+$$
+N=# branch points (intersections)
+$$
+
+
+
+$$
+r=  radial distance from soma
+$$
+
+
+
+$$
+k=  Sholl regression coefficient
+$$
+
+
+
+$$
+m=  y intercept of linear fitted line
+$$
+
+### Growth cone analysis
 
 Neurite terminals to the cell body were classified as growth cones (filopodial and lamellipodial ends, Figure 9B, arrows in UBQLN2WT and UBQLN2P497H) or blunt ends (Figure 9B UBQLN24XALS). The percent of neurite terminals classified as growth cones was measured for individual neurons.
 
-## Pearson’s correlation coefficients for colocalization analysis
+### Pearson’s correlation coefficients for colocalization analysis
 
 For the fluorescence quantification of colocalization images, neuronal cell body regions were extracted from each image using ImageJ/Fiji’s selection tool. Thresholding of every region removed background signals. Pearson’s colocalization coefficients of each cell body region were determined using ImageJ/Fiji’s colocalization package. Pearson’s coefficients were plotted as a bar graph to compare the colocalization (rho = 1) or exclusion (rho = –1) of UBQLN2 with LC3, Rab5, LAMP1, or P62. Ten sight fields for each group were analyzed.
 
-## Statistical processing
+### Statistical processing
 
 Statistical analysis information including individual replicates and biological replicates number, mean or median, and error bars are explained in the figure legends. The statistical tests and resulting p-values are shown in the figure legends and/or figure panels.

@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0293rh119 Institute of Neuroscience, University of Oregon Eugene United States
-2. https://ror.org/0293rh119 Institute of Molecular Biology, University of Oregon Eugene United States
-3. https://ror.org/01sdtdd95 Humans and the Microbiome Program, CIFAR Toronto Canada
+1. Institute of Neuroscience, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+2. Institute of Molecular Biology, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+3. Humans and the Microbiome Program, CIFAR Toronto Canada ([ROR:01sdtdd95](https://ror.org/01sdtdd95))
 
 † Corresponding author
 

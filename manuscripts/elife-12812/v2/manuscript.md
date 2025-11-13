@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.12812.001 Using ultra-high field 7 Tesla (7T) functional magnetic resonance imaging (fMRI), we map the cortical and perceptual responses elicited by intraneural microstimulation (INMS) of single mechanoreceptive afferent units in the median nerve, in humans. Activations are compared to those produced by applying vibrotactile stimulation to the unit’s receptive field, and unit-type perceptual reports are analyzed. We show that INMS and vibrotactile stimulation engage overlapping areas within the topographically appropriate digit representation in the primary somatosensory cortex. Additional brain regions in bilateral secondary somatosensory cortex, premotor cortex, primary motor cortex, insula and posterior parietal cortex, as well as in contralateral prefrontal cortex are also shown to be activated in response to INMS. The combination of INMS and 7T fMRI opens up an unprecedented opportunity to bridge the gap between first-order mechanoreceptive afferent input codes and their spatial, dynamic and perceptual representations in human cortex. DOI: http://dx.doi.org/10.7554/eLife.12812.001
+Using ultra-high field 7 Tesla (7T) functional magnetic resonance imaging (fMRI), we map the cortical and perceptual responses elicited by intraneural microstimulation (INMS) of single mechanoreceptive afferent units in the median nerve, in humans. Activations are compared to those produced by applying vibrotactile stimulation to the unit’s receptive field, and unit-type perceptual reports are analyzed. We show that INMS and vibrotactile stimulation engage overlapping areas within the topographically appropriate digit representation in the primary somatosensory cortex. Additional brain regions in bilateral secondary somatosensory cortex, premotor cortex, primary motor cortex, insula and posterior parietal cortex, as well as in contralateral prefrontal cortex are also shown to be activated in response to INMS. The combination of INMS and 7T fMRI opens up an unprecedented opportunity to bridge the gap between first-order mechanoreceptive afferent input codes and their spatial, dynamic and perceptual representations in human cortex.
 
 ## Introduction
 
@@ -35,43 +35,296 @@ Several studies have previously assessed the cortical response to vibrotactile s
 
 ## Results
 
-A total of 33 mechanoreceptive afferents were found (17 FA1, 14 SA1, 1 FA2 and 1 SA2) in 4 participants during 10 experimental sessions. We focused our study on the cortical response to stimulation of type 1 afferents (FA1 and SA1), as these units are far more numerous in the volar hand than type 2 units (FA2 and SA2) (
+A total of 33 mechanoreceptive afferents were found (17 FA1, 14 SA1, 1 FA2 and 1 SA2) in 4 participants during 10 experimental sessions. We focused our study on the cortical response to stimulation of type 1 afferents (FA1 and SA1), as these units are far more numerous in the volar hand than type 2 units (FA2 and SA2) (Vallbo and Johansson, 1984). Example recordings from FA1 and SA1 units are shown in Figures 1a and b respectively, demonstrating that good quality signals can be recorded from single mechanoreceptive afferents in the environment of a 7T magnetic resonance scanner. INMS of single units produced distinct sensations: FA1 stimulation was typically felt as vibration or buzzing, while SA1 stimulation elicited a sensation of pressure or pulling (see Table 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12812/elife-12812-fig1-v2.jpg)
 
-**Figure 1.:** Example microneurography recording (top) along with the instantaneous firing frequency (bottom) for (a) an FA1 afferent (U1; see Table 1) and (b) an SA1 afferent collected inside the 7T MR scanner environment. In (a), mechanical taps were delivered to the center of the FA1’s receptive field and (b) a long-lasting mechanical indentation was applied at the center of the SA1’s receptive field, using a wooden stick (see gray blocks). (c) Location of the afferents that were microstimulated during 7T fMRI (see Table 1). U9 was located on the right hand, but has been transposed onto the left hand for this schematic. The ‘undefined’ (x) afferent relates to a sensation that was felt as a line, which likely indicates two single afferents in close proximity being stimulated simultaneously.DOI: http://dx.doi.org/10.7554/eLife.12812.003
+**Figure 1.:** Example microneurography recording (top) along with the instantaneous firing frequency (bottom) for (a) an FA1 afferent (U1; see Table 1) and (b) an SA1 afferent collected inside the 7T MR scanner environment. In (a), mechanical taps were delivered to the center of the FA1’s receptive field and (b) a long-lasting mechanical indentation was applied at the center of the SA1’s receptive field, using a wooden stick (see gray blocks). (c) Location of the afferents that were microstimulated during 7T fMRI (see Table 1). U9 was located on the right hand, but has been transposed onto the left hand for this schematic. The ‘undefined’ (x) afferent relates to a sensation that was felt as a line, which likely indicates two single afferents in close proximity being stimulated simultaneously.
+
+**Table 1.**
+ Mechanoreceptive afferent units in which INMS was performed during 7T fMRI. The table details the unit type and location, as well as the frequency and perception of applied INMS. All units were located on the left hand unless stated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Participant</th>
+      <th>Unit</th>
+      <th>Type</th>
+      <th>Location</th>
+      <th>Physiology</th>
+      <th>Sensation</th>
+      <th>Frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>FA1</td>
+      <td>Palm</td>
+      <td>Yes</td>
+      <td>Buzzing</td>
+      <td>30 Hz</td>
+    </tr>
+    <tr>
+      <td rowspan="5">2</td>
+      <td>2</td>
+      <td>FA1</td>
+      <td>Base of digit 1</td>
+      <td>Yes</td>
+      <td>Small dots</td>
+      <td>60 Hz</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SA1</td>
+      <td>Middle of digit 1</td>
+      <td>Yes</td>
+      <td>Pulling</td>
+      <td>30 Hz</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>SA1</td>
+      <td>Base of digit 1</td>
+      <td>Yes</td>
+      <td>Pulling</td>
+      <td>30 Hz 60 Hz</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>FA1</td>
+      <td>Middle of digit 1</td>
+      <td>Yes</td>
+      <td>Vibration</td>
+      <td>60 Hz</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>FA1</td>
+      <td>Digit 3 fingertip</td>
+      <td>No</td>
+      <td>Tapping, vibration</td>
+      <td>30 Hz 60 Hz 90 Hz</td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td>7</td>
+      <td>FA1</td>
+      <td>Base of digit 3</td>
+      <td>Yes</td>
+      <td>Small, round point of tingle sensation</td>
+      <td>30 Hz</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>FA1</td>
+      <td>Digit 3 fingertip</td>
+      <td>No</td>
+      <td>Small, round point of tingle sensation</td>
+      <td>30 Hz 60 Hz 90 Hz</td>
+    </tr>
+    <tr>
+      <td rowspan="3">4</td>
+      <td>9</td>
+      <td>FA1</td>
+      <td>Middle of digit 1 (right hand)</td>
+      <td>No</td>
+      <td>Prickle, flutter</td>
+      <td>30 Hz</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Undefined</td>
+      <td>Digit 4 fingertip</td>
+      <td>No</td>
+      <td>Small line*</td>
+      <td>30 Hz</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>FA1</td>
+      <td>Middle of digit 4</td>
+      <td>No</td>
+      <td>Flutter</td>
+      <td>30 Hz</td>
+    </tr>
+  </tbody>
+</table>
+
+_*A small line sensation is indicative of the simultaneous stimulation of two afferents that are in close proximity._
 
 Due to the technically challenging set-up (e.g. 2 units were lost on moving the participant into the scanner bore) and the nature of the method (e.g. the stimulated unit corresponds to the unit from which recordings were previously made only around 50% of the time [Torebjörk et al., 1987]), INMS was carried out during concurrent fMRI in 11 units (U1-U11) that gave single-point sensations, 6 of which were electrophysiologically-characterized (see Table 1). The receptive field locations for these units are shown in Figure 1c.
 
-## Cortical responses to single unit INMS and vibrotactile stimulation in S1
+### Cortical responses to single unit INMS and vibrotactile stimulation in S1
 
-Clear and reproducible BOLD responses were found in somatosensory regions, when INMS was perceived. Occasionally, participants reported that the sensation evoked by the INMS stopped, likely due to a minor dislodgement of the microelectrode. This occurred for U7 where a projected sensation was perceived prior to scanning, but no sensation was felt during the fMRI run. For some units, the sensation was weak (U2, U3; possibly due to difficulty in attending to the stimulus sensation when inside the scanner), or lost during the fMRI run (U5, U6, U8). We compared the location of fMRI responses of all perceived INMS units in contralateral S1 with the digit representation obtained from both vibrotactile stimulation of the microstimulated unit’s receptive field and the fMRI somatotopy maps formed from the traveling-wave (phase-encoding) vibrotactile paradigm (
+Clear and reproducible BOLD responses were found in somatosensory regions, when INMS was perceived. Occasionally, participants reported that the sensation evoked by the INMS stopped, likely due to a minor dislodgement of the microelectrode. This occurred for U7 where a projected sensation was perceived prior to scanning, but no sensation was felt during the fMRI run. For some units, the sensation was weak (U2, U3; possibly due to difficulty in attending to the stimulus sensation when inside the scanner), or lost during the fMRI run (U5, U6, U8). We compared the location of fMRI responses of all perceived INMS units in contralateral S1 with the digit representation obtained from both vibrotactile stimulation of the microstimulated unit’s receptive field and the fMRI somatotopy maps formed from the traveling-wave (phase-encoding) vibrotactile paradigm (Figure 2). We found that fMRI responses to INMS of single units (all except for U1; Figure 3—figure supplement 1) were spatially localized within the relevant S1 digit representation identified from vibrotactile stimulation. Figure 2a shows example maps of digit somatotopy defined from the vibrotactile traveling-wave paradigm for Participant 4 in the right and left hemispheres (left and right of the figure, respectively). Figure 2b shows the BOLD response to INMS of U11 (right) and U9 (left) for Participant 4. These responses are well-localized within regions of the somatotopic map for digit 4 of the left hand and digit 1 of the right hand, respectively. Figure 2c shows the activation generated in S1 by applying vibrotactile stimulation to the receptive field of U11 (right) and U9 (left). Fits to the hemodynamic responses evoked in S1 by INMS and the application of vibrotactile stimulation to the unit’s receptive field can be seen in Figure 2d.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12812/elife-12812-fig2-v2.jpg)
 
-**Figure 2.:** Activation maps related to stimulation of two different afferents in Participant 4 are rendered onto a flattened cortical patch spanning the central sulcus of the right (left of figure) and left (right of figure) hemispheres. Dark gray represents the sulci and light gray the gyri. (a) Digit somatotopy, where phase values (in radians) and corresponding preferred stimulus location (fingertip) are shown. Orderly representation of the digits is found on the posterior bank of the central sulcus (white line) and the post-central gyrus (dashed black line), corresponding to S1. (b) Statistical maps (Z > 3.08, FDR-adjusted) from INMS of U11 (left) and U9 (right). BOLD activation is localized within the expected digit ROI identified from digit somatotopy, as shown by the blue (digit 4) and red (digit 1) lines, which denote phase values encoded by the blue (3.77–5.03 rad) and orange (0–1.26 rad) colors respectively. The solid black line indicates the SI hand mask (calculated by dilating the somatotopy map by 5 voxels) within which FDR correction was performed. (c) Statistical maps (Z > 3.08, FDR-adjusted) for vibrotactile stimulation of the corresponding receptive fields of U11 (top) and U9 (bottom). (d) HRF estimated from the GLM analysis for INMS and vibrotactile stimulation averaged across voxels of the ROI (U10, top; U9, bottom). Error bars show voxel-wise parameter standard errors averaged across voxels of the ROI.DOI: http://dx.doi.org/10.7554/eLife.12812.005
+**Figure 2.:** Activation maps related to stimulation of two different afferents in Participant 4 are rendered onto a flattened cortical patch spanning the central sulcus of the right (left of figure) and left (right of figure) hemispheres. Dark gray represents the sulci and light gray the gyri. (a) Digit somatotopy, where phase values (in radians) and corresponding preferred stimulus location (fingertip) are shown. Orderly representation of the digits is found on the posterior bank of the central sulcus (white line) and the post-central gyrus (dashed black line), corresponding to S1. (b) Statistical maps (Z > 3.08, FDR-adjusted) from INMS of U11 (left) and U9 (right). BOLD activation is localized within the expected digit ROI identified from digit somatotopy, as shown by the blue (digit 4) and red (digit 1) lines, which denote phase values encoded by the blue (3.77–5.03 rad) and orange (0–1.26 rad) colors respectively. The solid black line indicates the SI hand mask (calculated by dilating the somatotopy map by 5 voxels) within which FDR correction was performed. (c) Statistical maps (Z > 3.08, FDR-adjusted) for vibrotactile stimulation of the corresponding receptive fields of U11 (top) and U9 (bottom). (d) HRF estimated from the GLM analysis for INMS and vibrotactile stimulation averaged across voxels of the ROI (U10, top; U9, bottom). Error bars show voxel-wise parameter standard errors averaged across voxels of the ROI.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12812/elife-12812-fig3-v2.jpg)
 
-**Figure 3.:** (a) Statistical maps (Z > 3.08, FDR-adjusted) from INMS of seven single units in participants 2, 3 and 4. In each case the activation map is rendered onto a flattened cortical patch spanning the central sulcus of the right hemisphere. Dark gray represents the sulci and light gray the gyri. The solid black line indicates the SI hand mask (calculated by dilating the somatotopy map by 5 voxels) within which FDR correction was performed. Activation is localized within the expected digit ROI (black line) identified from the digit somatotopy (see color legend). (b) Statistical maps (Z > 3.08, FDR-adjusted) for vibrotactile stimulation of the corresponding receptive field of units. (c) Z-scores (FDR-corrected) of the INMS BOLD response averaged across voxels for each of the digit ROIs identified from the traveling-wave analysis. Error bars indicate standard error across voxels in ROI. (d) Proportion of voxels activated by the INMS paradigm at Z>3.08 (FDR-corrected) for each digit ROI. The source data for plots in panels (c) and (d) are available in the Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.12812.00610.7554/eLife.12812.007Figure 3—source data 1.This matlab file contains variables for each individual unit (U4, U5, U6, U8, U9, U11) with fields ‘micro_stats’ and ‘vibro_stats’ containing a structure with the results for single unit INMS and vibrotactile stimulation of the unit’s receptive field, respectively. Each structure has the following fields: ‘zetaMean’, ‘betaSem’: (5 digits x 1)-vector containing mean Z-score (FDR-corrected) and standard error across voxels for each Digit ROI; ‘PropActVox’: (5 digits x 1)-vector containing proportion of active voxels (Z>3.08, FDR-corrected) in each Digit ROI; and ‘betaMean’, ‘betaSem’: (5 digits x 1)-vector containing mean GLM parameter estimate and standard error across voxels for each Digit ROI. GLM parameter estimates are not plot in Figure 3 but are used for subsequent group analysis.DOI: http://dx.doi.org/10.7554/eLife.12812.007
+**Figure 3.:** (a) Statistical maps (Z > 3.08, FDR-adjusted) from INMS of seven single units in participants 2, 3 and 4. In each case the activation map is rendered onto a flattened cortical patch spanning the central sulcus of the right hemisphere. Dark gray represents the sulci and light gray the gyri. The solid black line indicates the SI hand mask (calculated by dilating the somatotopy map by 5 voxels) within which FDR correction was performed. Activation is localized within the expected digit ROI (black line) identified from the digit somatotopy (see color legend). (b) Statistical maps (Z > 3.08, FDR-adjusted) for vibrotactile stimulation of the corresponding receptive field of units. (c) Z-scores (FDR-corrected) of the INMS BOLD response averaged across voxels for each of the digit ROIs identified from the traveling-wave analysis. Error bars indicate standard error across voxels in ROI. (d) Proportion of voxels activated by the INMS paradigm at Z>3.08 (FDR-corrected) for each digit ROI. The source data for plots in panels (c) and (d) are available in the Figure 3—source data 1.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/12812/elife-12812-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Statistical maps overlaid on a high resolution T2*-weighted structural image. (a) Digit somatotopic maps obtained with the traveling-wave paradigm for both hands, showing the location of the maps in the posterior bank of the central sulcus. (b) Map of veins identified using T2*-weighted magnitude and phase images. Phase images are unwrapped and high-pass filtered. A map of veins is approximated by thresholding the unwrapped, filtered phase image and convolving the identified voxels with a 2 mm kernel. (c) Statistical maps (Z > 3.08, FDR-adjusted) for INMS of U1. Note, there is no activation in the S1 hand area, as shown by the ROIs delineating each of the digits. (d) Time series of the BOLD response to INMS of U1 for the digit 2 ROI, denoted by the green line in image (upper panel) and of a region of activation co-localized with a vein as indicated by the white circle (lower panel).DOI: http://dx.doi.org/10.7554/eLife.12812.008
+**Figure 3—figure supplement 1.:** Statistical maps overlaid on a high resolution T2*-weighted structural image. (a) Digit somatotopic maps obtained with the traveling-wave paradigm for both hands, showing the location of the maps in the posterior bank of the central sulcus. (b) Map of veins identified using T2*-weighted magnitude and phase images. Phase images are unwrapped and high-pass filtered. A map of veins is approximated by thresholding the unwrapped, filtered phase image and convolving the identified voxels with a 2 mm kernel. (c) Statistical maps (Z > 3.08, FDR-adjusted) for INMS of U1. Note, there is no activation in the S1 hand area, as shown by the ROIs delineating each of the digits. (d) Time series of the BOLD response to INMS of U1 for the digit 2 ROI, denoted by the green line in image (upper panel) and of a region of activation co-localized with a vein as indicated by the white circle (lower panel).
+
+Figure 3 shows the spatial localization of the activation produced in S1 by the seven perceived INMS units (U4-U6, U8-U11) (Figure 3a) and corresponding vibrotactile stimulation of each units’ receptive field (Figure 3b). In general, the BOLD responses due to INMS and vibrotactile stimulation were well localized within the expected digit ROI, as defined from the traveling-wave somatotopy paradigm. Figure 3c plots the average INMS z-score (FDR corrected) in each digit ROI, and Figure 3d shows the proportion of active voxels to the INMS paradigm that were classified to each digit ROI (z>3.08, FDR corrected). As expected, the average z-score and proportion of active voxels in the digit ROIs corresponding to digits in which the INMS was sensed was higher than in the neighboring digits. Figure 4 plots the group-level response to show the spatial spread of the INMS and vibrotactile response to neighboring digits. Figure 4a shows the mean z-score, Figure 4b the proportion of active voxels and Figure 4c the GLM parameter estimate to INMS (top) and vibrotactile stimulation of the unit’s receptive field (bottom). ANOVA results showed a significant difference in mean Z-score (F4,30=14.08, p<10-5; F4,30=12.97, p<10-5), proportion of active voxels (F4,30=16.12, p<10-6; F4,30=17.64, p<10-6) and GLM parameter estimates (F4,30=13.52, p<10-5; F4,30=14.1, p<10-5) across the stimulated and neighboring digit classification (INMS; vibrotactile). A multiple pairwise comparison, adjusted for multiple comparisons, showed that measures for the stimulated digit were significantly higher than those of the neighboring digits for mean Z-score (p<0.0001 INMS; p<0.005 vibrotactile stimulation), proportion of active voxels (p<0.00005 for INMS and vibrotactile stimulation) and GLM parameter estimates (p0.01 for INMS and vibrotactile stimulation).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12812/elife-12812-fig4-v2.jpg)
 
-**Figure 4.:** (a) Z-scores (FDR-corrected) of INMS response in digit ROIs (defined from digit somatotopy) averaged across ROIs for the stimulated digit (N = 7) compared to neighboring digits (1st degree neighbors, N = 11; 2nd degree neighbors, N = 9, 3rd degree neighbors, N = 5, 4th degree neighbors, N = 3). The z-score for the stimulated digit was significantly different to that of neighboring digits. ***p<0.0001, **p<0.005, statistical significance corrected for multiple comparison using Bonferroni correction. (b) Proportion of voxels activated by the INMS (top) and vibrotactile (bottom) paradigm at Z>3.08 (FDR-corrected) for the stimulated digit compared to the neighboring digits. Mean and standard error across ROIs. The proportion of active voxels in the stimulated digit ROI was significantly different to that of neighboring digits. ***p<0.00005, statistical significance corrected for multiple comparison using Bonferroni procedure. (c) GLM parameter estimates of the INMS (top) and vibrotactile (bottom) paradigm for the stimulated digit compared to the neighboring digits. The parameter estimate in the stimulated digit ROI was significantly higher than that of neighboring digits. **p<0.01, statistical significance corrected for multiple comparison using Bonferroni procedure. For all plots (a–c) the mean and standard error across N measures is shown. The source data used for the ANOVA tests are available in the Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.12812.00910.7554/eLife.12812.010Figure 4—source data 1.This matlab file contains the 2D-matrices (11 x 5), related to each panel in Figure 4, that were used for the 1-way analysis of variance (performed using the ‘anova1’ matlab command). Each matrix row contains data for each of the 7 units (there are up to eleven 1st degree neighboring digit ROIs) and each matrix columns represents the ‘proximity’ to the stimulated digit ROI (stimulated digit ROI, 1st degree, 2nd degree, 3rd degree and 4th degree neighboring digit ROIs). ‘Zeta_micro’ and ‘Zeta_vibro’ are the matrices containing the Z-score (FDR-corrected) values, ‘PerVox_micro’ and ‘PerVox_vibro’ contain the proportion of active voxels (Z>3.08, FDR-corrected) and’ Beta_micro’ and ‘Beta_vibro’ contain the GLM parameter estimates for INMS and vibrotactile stimulation respectively. ANOVA results show a significant difference in mean Z-score (F4,30=14.08, p<10-5; F4,30=12.97, p<10-5), proportion of active voxels (F4,30=16.12, p<10-6; F4,30=17.64, p<10-6) and GLM parameter estimates (F4,30=13.52, p<10-5; F4,30=14.1, p<10-5) across the stimulated and neighboring digit classification (INMS; vibrotactile).DOI: http://dx.doi.org/10.7554/eLife.12812.010
+**Figure 4.:** (a) Z-scores (FDR-corrected) of INMS response in digit ROIs (defined from digit somatotopy) averaged across ROIs for the stimulated digit (N = 7) compared to neighboring digits (1st degree neighbors, N = 11; 2nd degree neighbors, N = 9, 3rd degree neighbors, N = 5, 4th degree neighbors, N = 3). The z-score for the stimulated digit was significantly different to that of neighboring digits. ***p<0.0001, **p<0.005, statistical significance corrected for multiple comparison using Bonferroni correction. (b) Proportion of voxels activated by the INMS (top) and vibrotactile (bottom) paradigm at Z>3.08 (FDR-corrected) for the stimulated digit compared to the neighboring digits. Mean and standard error across ROIs. The proportion of active voxels in the stimulated digit ROI was significantly different to that of neighboring digits. ***p<0.00005, statistical significance corrected for multiple comparison using Bonferroni procedure. (c) GLM parameter estimates of the INMS (top) and vibrotactile (bottom) paradigm for the stimulated digit compared to the neighboring digits. The parameter estimate in the stimulated digit ROI was significantly higher than that of neighboring digits. **p<0.01, statistical significance corrected for multiple comparison using Bonferroni procedure. For all plots (a–c) the mean and standard error across N measures is shown. The source data used for the ANOVA tests are available in the Figure 4—source data 1.
 
 For those units lost during the fMRI run (U5, U6, U8), no areas were found to show a significant correlation with an additional (parametric) regressor when modelling linear reductions in induced response over time (to model gradual losses of unit responses), likely due to the sudden rather than gradual loss of the unit. Thus parameter estimates to INMS stimulation were not significantly different between the GLM including a parametric regressor and modelling the INMS stimulation alone.
 
-## Comparison of cortical activity patterns between single unit INMS and vibrotactile stimulation
+### Comparison of cortical activity patterns between single unit INMS and vibrotactile stimulation
 
-Participants freely described the mechanical, point-vibrotactile stimulus applied to each unit’s receptive field as feeling very similar in extent and quality to the INMS, especially for the sensations generated from FA1 units.
+Participants freely described the mechanical, point-vibrotactile stimulus applied to each unit’s receptive field as feeling very similar in extent and quality to the INMS, especially for the sensations generated from FA1 units. Figure 5a compares the mapping of INMS-induced fMRI responses (yellow) for all FA1 single units to maps of the responses produced by applying vibrotactile stimulation to the units’ receptive fields (blue). Overlapping cortical responses are shown in green. Activation maps show the conjunction of the individual FA1 unit responses, using the same statistical threshold (Z > 3.08, false discovery rate (FDR) correction) for both INMS and vibrotactile stimulation. BOLD responses to single unit INMS were detected in a number of sensory-related brain areas, including S1, S2 (Brodmann areas (BA) 40 and 43), premotor cortex (PMC; SMA and dorsal PMC), M1, insula (anterior insula cortex (AIC) and posterior insula cortex (PIC)), prefrontal cortex (PFC) and PPC. Table 2 details the location and statistical significance (mean and standard error across units) of the BOLD responses produced in these areas by INMS of the five FA1 single units in the left hand. Common areas of activation for INMS and vibrotactile stimulation included S1, S2, PMC, M1, and contralateral PIC; however, INMS gave rise to significant activity in additional brain regions, including the AIC, PPC and contralateral PFC (Table 2). Figure 5b shows that the HRFs generated in these regions by INMS were similar in both onset and duration to the INMS-elicited responses in S1 and S2.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12812/elife-12812-fig5-v2.jpg)
 
-**Figure 5.:** (a) Cortical activation patterns in MNI space. Transverse slices and surface reconstructions showing areas of activation in response to INMS (red clusters) and mechanical vibrotactile stimulation applied directly to the respective unit’s receptive field (blue clusters), as well as areas of overlap (green clusters). Clusters represent common regions of significant activation from all single FA1 units on the left hand (U1, U4, U6, U8, and U11). Individual statistical maps for each afferent were thresholded at Z < 3.08 after correcting for multiple comparisons (FDR) and cluster-corrected at p=0.01, prior to forming the conjunction map. (b) BOLD time courses due to INMS for U4 in different cortical areas. Responses contralateral (right) to the hand stimulation site are shown in red and ipsilateral (left) responses are shown in blue.DOI: http://dx.doi.org/10.7554/eLife.12812.011
+**Figure 5.:** (a) Cortical activation patterns in MNI space. Transverse slices and surface reconstructions showing areas of activation in response to INMS (red clusters) and mechanical vibrotactile stimulation applied directly to the respective unit’s receptive field (blue clusters), as well as areas of overlap (green clusters). Clusters represent common regions of significant activation from all single FA1 units on the left hand (U1, U4, U6, U8, and U11). Individual statistical maps for each afferent were thresholded at Z < 3.08 after correcting for multiple comparisons (FDR) and cluster-corrected at p=0.01, prior to forming the conjunction map. (b) BOLD time courses due to INMS for U4 in different cortical areas. Responses contralateral (right) to the hand stimulation site are shown in red and ipsilateral (left) responses are shown in blue.
+
+**Table 2.**
+ Cortical areas showing significant activation to INMS of single mechanoreceptive afferents and the corresponding vibrotactile stimulation. Results show the mean and standard error across the five FA1 mechanoreceptive afferents subject to INMS at 30 Hz and corresponding vibrotactile stimulation of the perceived sensation, showing the number of units showing significant activation, MNI coordinates, beta values, Z-score and number of voxels in ROI. R=contralateral, L=ipsilateral. Source files for Table 2—source data 1 and Table 2—source data 2 contain single unit INMS and vibrotactile stimulation results, respectively, for each of the 5 (U1, U4, U6, U8, U11) individual units.Table 2—source data 1.Source files for single unit INMS.This matlab file contains 2D-matrices (19x5) with the results for single unit INMS for each of the 5 individual units (U1, U4, U6, U8, U11) in each of the 19 ROIs. 'BetaValues’ contains mean across voxels of the beta values, ‘Z-score’ contains the mean Z_score (FDR- corrected) across voxels and ‘NumberVoxels’ contains the number of significant active voxels (Z > 3.08, FDR-corrected) in the ROI. Table 2 summarizes the results by showing the mean and standard error across the 5 units.Table 2—source data 2.Source files for vibrotactile stimulation.This matlab file contains 2D-matrices (19 ROIs x 5 units) with the results for vibrotactile stimulation applied to the receptive field for each of the 5 individual units (U1, U4, U6, U8, U11) in each ROI. ‘BetaValues ‘contains mean across voxels of the beta values, ‘Z_score’ contains the mean Z-score (FDR- corrected) across voxels and ‘NumberVoxels’ contains the number of significant active voxels (Z > 3.08, FDR-corrected) in the ROI. Table 2 summarizes the results by showing the mean and standard error across the 5 units.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th colspan="3">Single unit INMS</th>
+      <th colspan="3">Vibrotactile stimulation</th>
+    </tr>
+    <tr>
+      <th>ROI</th>
+      <th>No. Units</th>
+      <th>x, y, z MNI co-ordinates</th>
+      <th>Beta</th>
+      <th>Z</th>
+      <th>Voxels</th>
+      <th>Beta</th>
+      <th>Z</th>
+      <th>Voxels</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SI R SI L</td>
+      <td>4 3</td>
+      <td>54, -12, 46 -52, -12, 44</td>
+      <td>1.4 ± 0.2 1.2 ± 0.2</td>
+      <td>5.9 ± 0.5 5.6 ± 0.8</td>
+      <td>38 ± 7 20 ± 9</td>
+      <td>1.3 ± 0.3 1.6 ± 0.3</td>
+      <td>5.4 ± 0.3 5.2 ± 0.2</td>
+      <td>41 ± 12 19 ± 1</td>
+    </tr>
+    <tr>
+      <td>BA 40 R BA 40 L</td>
+      <td>5 4</td>
+      <td>60, -22, 16 -60, -22, 16</td>
+      <td>1.4 ± 0.2 1.5 ± 0.4</td>
+      <td>4.9 ± 0.2 5.3 ± 0.2</td>
+      <td>56 ± 5 73 ± 5</td>
+      <td>1.4 ± 0.1 1.4 ± 0.2</td>
+      <td>4.8 ± 0.2 5.0 ± 0.1</td>
+      <td>54 ± 7 72 ± 12</td>
+    </tr>
+    <tr>
+      <td>BA 43 R BA 43 L</td>
+      <td>2 3</td>
+      <td>60, -4, 10 -58, -12, 14</td>
+      <td>1.1 ± 0.4 1.0 ± 0.4</td>
+      <td>5.4 ± 0.1 4.8 ± 0.3</td>
+      <td>45 ± 6 33 ± 8</td>
+      <td>1.2 ± 0.4 1.7 ± 0.3</td>
+      <td>4.4 ± 0.2 4.2 ± 0.2</td>
+      <td>30 ± 20 26 ± 11</td>
+    </tr>
+    <tr>
+      <td>SMA R SMA L</td>
+      <td>5 5</td>
+      <td>4, 0, 60 -2, 0, 60</td>
+      <td>1.2 ± 0.2 1.2 ± 0.2</td>
+      <td>4.8 ± 0.3 4.5 ± 0.3</td>
+      <td>93 ± 27 66 ± 19</td>
+      <td>1.3 ± 0.2 1.2 ± 0.1</td>
+      <td>4.8 ± 0.2 4.5 ± 0.3</td>
+      <td>43 ± 21 29 ± 6</td>
+    </tr>
+    <tr>
+      <td>PMC R PMC L</td>
+      <td>4 5</td>
+      <td>54, 0, 50 -52, -2, 50</td>
+      <td>0.8 ± 0.2 1.1 ± 0.1</td>
+      <td>4.7 ± 0.2 5.5 ± 0.3</td>
+      <td>36 ± 11 37 ± 7</td>
+      <td>1.1 ± 0.2 1.2 ± 0.1</td>
+      <td>5.0 ± 0.2 4.3 ± 0.1</td>
+      <td>46 ± 9 20 ± 8</td>
+    </tr>
+    <tr>
+      <td>M1 R M1 L</td>
+      <td>3 2</td>
+      <td>54, -6, 48 -52, -6, 48</td>
+      <td>0.9 ± 0.2 1.5 ± 0.2</td>
+      <td>5.2 ± 0.5 6.3 ± 0.1</td>
+      <td>51 ± 20 66 ± 36</td>
+      <td>0.8 ± 0.2 1.3 ± 0.1</td>
+      <td>5.0 ± 0.7 5.3 ± 0.5</td>
+      <td>31 ± 10 21 ± 3</td>
+    </tr>
+    <tr>
+      <td>PIC R PIC L</td>
+      <td>5 5</td>
+      <td>46, -2, 10 -42, -2, 10</td>
+      <td>0.8 ± 0.2 0.8 ± 0.1</td>
+      <td>4.2 ± 0.2 4.4 ± 0.2</td>
+      <td>45 ± 12 38 ± 14</td>
+      <td>0.8 ± 0.2 -</td>
+      <td>4.7 ± 0.2 -</td>
+      <td>27 ± 3 -</td>
+    </tr>
+    <tr>
+      <td>AIC R AIC L</td>
+      <td>4 4</td>
+      <td>34, 26, 4 -32, 26, 4</td>
+      <td>1.2 ± 0.1 1.1 ± 0.1</td>
+      <td>4.7 ± 0.2 4.4 ± 0.2</td>
+      <td>146 ± 20 106 ± 21</td>
+      <td>- -</td>
+      <td>- -</td>
+      <td>- -</td>
+    </tr>
+    <tr>
+      <td>PPC R PPC L</td>
+      <td>4 5</td>
+      <td>38, -48, 50 -38, -48, 56</td>
+      <td>1.2 ± 0.1 1.0 ± 0.1</td>
+      <td>4.4 ± 0.3 4.4 ± 0.3</td>
+      <td>168 ± 44 172 ± 43</td>
+      <td>- -</td>
+      <td>- -</td>
+      <td>- -</td>
+    </tr>
+    <tr>
+      <td>PFC R</td>
+      <td>4</td>
+      <td>42, 34,18</td>
+      <td>1.2 ± 0.2</td>
+      <td>4.5 ± 0.3</td>
+      <td>78 ± 22</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -95,29 +348,29 @@ Ten experimental sessions were conducted on four right-handed participants (30�
 
 Participants lay on the scanner bed with their arm (the left arm in all cases except one experiment on the right arm) immobilized using cushions. Survey, reference and B0-map scans were acquired, and an image-based shimming approach (Sanchez-Panchuelo et al., 2010) used to minimize magnetic field inhomogeneity, with the optimized shim currents remaining fixed throughout the subsequent fMRI runs. The participant was moved out of the bore of the magnet to perform Steps (1) and (2).
 
-## Microneurography
+### Microneurography
 
-In Step 1, the median nerve was accessed at the wrist in order to isolate single axonal responses from mechanoreceptive afferents in the volar hand, on which to perform INMS (
+In Step 1, the median nerve was accessed at the wrist in order to isolate single axonal responses from mechanoreceptive afferents in the volar hand, on which to perform INMS (Trulsson et al., 2001). A high-impedance (~300–500 kΩ), insulated, tungsten recording/stimulating electrode (15 mm length, shaft diameter 0.2 mm, tip diameter ~5 µm; FHC, Bowdoin, ME) was inserted percutaneously into the skin, ~3 cm from the wrist fold between the flexor carpi radialis and the flexor palmaris longus tendons. An uninsulated reference electrode was inserted subcutaneously 3–5 cm away, on the ulnar side of the recording/stimulating electrode, and a ground electrode was attached further up the participant’s arm (Figure 6). The recording/stimulating electrode was advanced into the median nerve, which was located 0.3–1 cm below the skin surface. The preamplifier was taped to the participant’s arm, and the acquisition hardware and stimulator were located at the outer edge of the scanner room (Figure 6). Differential responses were amplified (x10,000) using a preamplifier (NeuroAmpEX; ADInstruments, Castle Hill, Australia), band-pass filtered (0.3–5 kHz) and sampled at 10 kHz using PowerLab hardware and LabChart 7 software (ADInstruments, Castle Hill, Australia).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12812/elife-12812-fig6-v2.jpg)
 
-**Figure 6.:** The PowerLab, NeuroAmp EX and ML180 stimulator were placed just inside the magnet room at a field strength not exceeding 5 mT. Placement of the interface equipment within the magnet room was preferred for safety reasons, as isolated cables connected to the participant did not then pass into the control room. The USB interface and trigger cables were passed through the radio frequency shield via a waveguide aperture. An amplifier and loudspeaker was driven from the NeuroAmp EX audio output to give audio feedback to the microneurographer. In addition, a projection of the computer screen could be viewed for visual confirmation of nerve signals. A switch was used to connect the electrodes to either the stimulator or the NeuroAmp head-stage pre-amplifier. In addition, a resistive shunt was placed across the stimulation leads to remove any build-up of charge before connecting or disconnecting the stimulator. Disconnection of the stimulator was necessary because of the high level of noise introduced when it was connected. Star-quad cable was used within the magnet environment to reduce the likelihood of induced currents due to scanner operation affecting the stimulus presentation.DOI: http://dx.doi.org/10.7554/eLife.12812.015
+**Figure 6.:** The PowerLab, NeuroAmp EX and ML180 stimulator were placed just inside the magnet room at a field strength not exceeding 5 mT. Placement of the interface equipment within the magnet room was preferred for safety reasons, as isolated cables connected to the participant did not then pass into the control room. The USB interface and trigger cables were passed through the radio frequency shield via a waveguide aperture. An amplifier and loudspeaker was driven from the NeuroAmp EX audio output to give audio feedback to the microneurographer. In addition, a projection of the computer screen could be viewed for visual confirmation of nerve signals. A switch was used to connect the electrodes to either the stimulator or the NeuroAmp head-stage pre-amplifier. In addition, a resistive shunt was placed across the stimulation leads to remove any build-up of charge before connecting or disconnecting the stimulator. Disconnection of the stimulator was necessary because of the high level of noise introduced when it was connected. Star-quad cable was used within the magnet environment to reduce the likelihood of induced currents due to scanner operation affecting the stimulus presentation.
 
 The microneurographer delivered light, stroking touch to the palm to evoke activity in low-threshold mechanoreceptive afferents. A loudspeaker in the scanner room allowed the microneurographer to hear the nerve activity and a projector displayed the recording onto the scanner exterior for visual inspection. The microneurographer systematically searched for the nerve until modulations of the signal from the electrode corresponded to mass activity from mechanoreceptive afferents as a result of touch were heard. Using fine adjustments, the electrode was manipulated within the nerve to an intra-fascicular location and single units were searched for by stroking the participant’s hand.
 
 Single mechanoreceptive afferents were characterized by their audio and visual signals, and the extent of the receptive field of each afferent was explored using a wooden stick. The location of the receptive field was mapped using von Frey monofilaments and the minimal force required for mechanoreceptor activation noted. Afferents were identified as being myelinated Aβ mechanoreceptors, namely FA1, SA1, FA2 or SA2 afferents (Vallbo and Johansson, 1984). The middle of the receptive field was marked on the skin. Recordings of individual mechanoreceptive afferents in response to mechanical stimulation were made (e.g. Figure 1a,b) and analyzed in MATLAB (The Mathworks; Natick, MA). Data were preprocessed to verify the single-unit nature of all recorded mechanoreceptive afferents with an offline pattern-matching algorithm.
 
-## Single unit INMS
+### Single unit INMS
 
 Once a single mechanoreceptive afferent was identified, INMS was carried out to ascertain the sensation produced by a low-current electrical pulse sequence (Step 2). Trains of 30 Hz pulses (200 µs, positive, square-wave pulses over 0.5 s) were delivered (via Stimulus Isolator; ADInstruments, Castle Hill, Australia and controlled using the LabChart 7 software). The experimenter delivered 2–3 pulse sequences, while the current was increased slowly from 0 µA, in 1 µA steps, until the participant felt a sensation. Once a clear sensation was felt, the precise location of the sensation and its quality were recorded and tested to confirm whether the previously mapped receptive field spatially aligned with that perceived by the participant during INMS. This was done by a process of questioning the participant to determine whether mechanical touch to the receptive field matched the projected sensory field sensation during INMS to within ~1 mm. If so, it was deemed that microstimulation was being applied to the afferent from which recordings had been made. If the participant felt a clear small, point-sensation in the projected sensory field that did not align with the mapped receptive field, the stimulated unit was nevertheless explored. These units were included if the perceived sensation (e.g. pressure from an SA1) was similar in quality to those in matched physiology-INMS trials (e.g. perceived size, shape, sensation) (see Table 1). The stimulating current intensity which generated a sensation was recorded, along with the stimulation currents delivered during each fMRI run. INMS of a stable, single mechanoreceptive afferent could be carried out successfully for up to ~45 min, although Step 3 was completed successfully for only a subset of mechanoreceptive afferents (see Results).
 
-## fMRI paradigm
+### fMRI paradigm
 
 Each fMRI run consisted of a block paradigm, comprising 8 cycles of alternating periods of 8 s INMS followed by 23 s rest (acquisition time ~4 mins). The 8 s INMS period consisted of 0.5 s burst of stimulation (30 Hz pulse frequency; 200 μs pulse width) each second. For each afferent, 1–3 fMRI repeats of the INMS paradigm were conducted. In some cases, the stimulation current was adjusted between runs, e.g. due to loss of perception (Vallbo et al., 1984), to ensure a clear and stable sensation. If the INMS-induced sensation remained stable, other parameters were also tested, including changing the stimulation frequency to 60 Hz, and increasing the stimulation current to investigate the effect of recruiting further mechanoreceptive afferents (Vallbo et al., 1984).
 
 After Steps 1–3, fMRI of mechanical vibrotactile stimulation at each microstimulated afferent’s receptive field was carried out with identical timings to the INMS paradigm. Vibrotactile stimuli were delivered at 30 Hz to ~1 mm2 of the skin using a piezo-electric device (Dancer Design, St-Helens, UK). In addition, the digit tips of each participant’s left hand (and right hand for participant 4) were stimulated with 5 independently-controlled piezo-electric devices using a traveling-wave or phase-encoding paradigm (Sanchez-Panchuelo et al., 2010), analogous to that used in retinotopic mapping, in which each individual digit of the hand is sequentially stimulated to create a travelling wave of activity across cortical regions containing a somatotopic map of the hand. Vibrotactile stimulation at 30 Hz was delivered to each digit tip in periods of 4 s (intermittent stimulation with 0. 1 s gap every 0.5 s), over a 20 s cycle. Data were collected during two runs of 12 cycles each; with stimulation delivered in a forward (digit 1 to 5) and reverse order (digit 5 to 1).
 
-## fMRI acquisition
+### fMRI acquisition
 
 MRI data were collected on a 7T scanner (Achieva; Philips, Amsterdam, Netherlands) using a head volume transmit coil and 32-channel receive coil (Nova Medical; Wilmington, MA). Functional data were acquired using T2*-weighted, multi-slice, single-shot gradient-echo, echo-planar imaging (EPI) with echo time (TE) 25 ms, repetition time (TR) 2000 ms, flip angle (FA) 75°, SENSE reduction factor 3 in the right-left direction. The in-plane spatial resolution was 1.5 mm, field of view of 174 × 192 mm2 in right-left and anterior-posterior directions. A slice thickness of 2.5 mm was used to achieve full brain coverage (80 mm in foot-head direction) within the TR period. For the traveling-wave paradigm, the slice thickness was reduced to 1.5 mm (48 mm coverage) as it was only necessary to span S1.
 
@@ -125,11 +378,11 @@ Following the functional runs, a high-resolution T2*-weighted FLASH dataset was 
 
 fMRI raw time series and structural MRI scans for each subject can be found at figshare (Sanchez Panchuelo, RM; Ackerley, R; Glover, PM; Bowtell, RW; Wessberg, J; Francis, ST; McGlone, F | 2016 | fMRI to intraneural microstimulation of single mechanoreceptive afferents | Available at figshare under a CC0 Public Domain.)
 
-## fMRI data analysis
+### fMRI data analysis
 
 fMRI data sets were realigned to the last volume of the data set using AFNI (http://afni.nimh.nih.gov/afni), and statistical analysis performed using mrTools (http://www.cns.nyu.edu/heegerlab) in MATLAB. To account for scanner drift and other low-frequency signals, all time-series were high-pass filtered (0.01 Hz cut-off) and data converted to percent signal change. To address the key aims, three analyses were performed:
 
-## Cortical responses to single unit INMS and vibrotactile stimulation in S1
+#### Cortical responses to single unit INMS and vibrotactile stimulation in S1
 
 The spatial localization of microstimulated afferents in S1 was compared with digit somatotopic maps formed for each participant using a traveling-wave paradigm (Sanchez-Panchuelo et al., 2010). The somatotopic map was used to define ROIs specific to each of the 5 digits of the hand, these were subsequently used as independent ROIs to allow group-level inference tests to be conducted (as performed in Besle, 2013). Here, data were not spatially smoothed in order to retain high spatial resolution. Both the INMS data, and data acquired during vibrotactile stimulation applied to the skin location where each afferent was perceived, were analyzed using a general linear model (GLM) employing a canonical HRF model and its orthogonalized temporal derivative. FDR adjustment (Benjamini and Hochberg﻿ 1995) was performed using an adaptive step-up method (Benjamini et al., 2006). All adjusted P-values were converted to quantiles of standard normal distribution (Z-score). Analysis was restricted to voxels identified using the traveling-wave localizer (dilated by 5 voxels to ensure complete coverage of the S1 hand area) to reduce the number of inference tests on both the INMS and vibrotactile stimulation data to compute FDR corrected Z-scores. We investigated the spread of INMS induced activations, and vibrotactile stimulation to each unit’s receptive field, by computing the mean Z-score, proportion of active voxels, and GLM parameter estimates in each digit ROI. Subsequently, to quantify spread of responses into neighboring digits at the group-level, INMS and vibrotactile responses for the ROI corresponding to the stimulated digit were combined, by averaging the mean Z-score, proportion of active voxels, and GLM parameter estimates (N=7 units; 3 Digit 1 ROIs, 2 Digit 3 ROIs, 2 Digit 4 ROIs). This procedure was then repeated for the 1st degree (N = 11), 2nd degree (N = 9), 3rd degree (N = 5) and 4th degree (N = 3) neighboring digit ROIs. A one-way analysis of variance (ANOVA) tests was then performed on this data, and post-hoc multiple pairwise comparison, adjusted for multiple comparisons using Bonferroni correction.
 
@@ -137,12 +390,12 @@ For those units for which the stimulus sensation was lost during the fMRI run, a
 
 Functional statistical maps from each microstimulated afferent and the traveling-wave localizer were rendered onto flattened representations of the central sulcus obtained using the mrFlatMesh algorithm (VISTA software, http://white.stanford.edu/software/) based on cortical segmentations from the whole head T1-weighted anatomical data obtained using Freesurfer (http://surfer.nmr.mgh.harvard.edu/). Having aligned functional data to the participant’s whole head T1-weighted anatomical reference volume (see Alignment of functional data), statistical maps were transformed to flattened space using linear interpolation and displayed at the central cortical depth.
 
-## Whole brain analysis
+#### Whole brain analysis
 
 This was performed to compare those brain areas responding to INMS of a single mechanoreceptive afferent with those responding to vibrotactile stimulation. Data were spatially smoothed with a Gaussian FWHM 3 mm and a second GLM analysis was performed on the whole volume for both the INMS data and the vibrotactile stimulation data to the unit’s receptive fields. The resulting Z-score statistical maps were threshold at Z<3.08 after FDR-adjustment and cluster-correction (p<0.01) to visualize activation maps and to compute binary masks for each stimulated mechanoreceptive unit (and for corresponding vibrotactile stimulation to each unit’s receptive field).
 
 Functional statistical maps from all five single FA1 afferents of the left hand stimulated during INMS at 30 Hz (U1, U4, U6, U8, and U11) were projected onto standard MNI space to identify active brain areas from probabilistic brain atlases (Harvard-Oxford cortical structure and Talairach Daemon labels, in FSL). Functional maps were transformed into the participant’s whole head anatomical reference volume (see Alignment of functional data). The whole-head anatomical T1-weighted MPRAGE from each participant was aligned to a standard T1-weighted MNI template using first an affine FLIRT registration, followed by a FNIRT non-linear registration algorithm (FSL, FNIRT). This alignment was then applied to the statistical maps from the participant’s INMS unit to warp the data into standard MNI space. A map was computed of the intersection of responses to all five FA1 afferents, from which to define significant regions of interest (ROIs). These ROIs were transformed to native EPI space for each individual afferent and the beta values, Z-scores and number of active voxels were interrogated for each significant ROI, in each afferent’s native space. Similarly, the corresponding BOLD maps resulting from vibrotactile stimulation applied to the skin location where each afferent was perceived were transformed into MNI space and identical analyses performed.
 
-## Alignment of functional data to participant’s whole head anatomical reference volume
+#### Alignment of functional data to participant’s whole head anatomical reference volume
 
 Statistical maps were moved from functional acquisition space into whole-head anatomical T1-weighted space for detailed comparison with digit somatotopy in flattened reconstructions of the cortical space and for combination in standard MNI space (see Whole brain analysis). We estimated the alignment between the (distorted) reference EPI volume from the motion correction and the undistorted T2*-weighted anatomical volume using FNIRT. Functional maps were non-linearly transformed into structural T2*-weighted volume space using FNIRT’s ‘applywarp' and then linearly transformed from the structural T2*-weighted to whole-head T1-weighted volume space. Note that this registration was only used for the display of statistical maps; all statistical analyses of functional data were performed in native EPI space.

@@ -31,7 +31,7 @@ Tetrapod long bones are regionalised in three parts mirrored from midshaft (Figu
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig1-v1.jpg)
 
-**Figure 1.:** A) and amphibians (B).Four conditions are figured here. They are separated by yellow dashed lines: A1, condition in crocodiles (interpreted from Haines, 1938); A2, condition in mammals at an early developmental stage before the appearance of the secondary ossification centre (Anderson and Shapiro, 2010; Tanaka, 1976); B1, condition in Triturus (Cynops) pyrrhogaster (Quilhac et al., 2014; Tanaka, 1976); B2, condition in Rana catesbeiana (Francillon, 1981; Tanaka, 1976). Abbreviations: c., cortex; Dia., diaphysis; e., endosteal bone; Epi., epiphysis; h.c., hypertrophied chondrocytes; Meta., metaphysis; m.p., marrow process; s., sinusoids; sept., septum; trab., trabeculae.
+**Figure 1.:** Four conditions are figured here. They are separated by yellow dashed lines: A1, condition in crocodiles (interpreted from Haines, 1938); A2, condition in mammals at an early developmental stage before the appearance of the secondary ossification centre (Anderson and Shapiro, 2010; Tanaka, 1976); B1, condition in Triturus (Cynops) pyrrhogaster (Quilhac et al., 2014; Tanaka, 1976); B2, condition in Rana catesbeiana (Francillon, 1981; Tanaka, 1976). Abbreviations: c., cortex; Dia., diaphysis; e., endosteal bone; Epi., epiphysis; h.c., hypertrophied chondrocytes; Meta., metaphysis; m.p., marrow process; s., sinusoids; sept., septum; trab., trabeculae.
 
 In extant amniotes, long-bone elongation results from the proliferation of longitudinal columns of hypertrophic cartilage cells, called hypertrophic chondrocytes (Francillon-Vieillot et al., 1990; Haines, 1942; Xie et al., 2020; Figure 1A). The latter express collagen type X which facilitates the calcification of the surrounding matrix (Gudmann and Karsdal, 2016; Lüllmann-Rauch, 2015). To do so, the hypertrophic chondrocytes secrete matrix vesicles containing calcium phosphate crystals (Amizuka, 2012; Anderson and Shapiro, 2010). The vesicles align longitudinally along the septa. The crystals penetrate the vesicle membranes to form stellate clusters of needle-shaped apatite in the extra cellular matrix (Amizuka, 2012). The mineralisation thus propagates following the longitudinal organisation of the septa (Amizuka, 2012; Anderson and Shapiro, 2010; Figure 1A). Blood vessels and marrow processes invade the growth plate along these columns of hypertrophic cartilage (Lüllmann-Rauch, 2015; Figure 1A). Lytic enzymes secreted by the bone-marrow cells degrade the cartilage matrix, which is progressively substituted by bone deposition (Lüllmann-Rauch, 2015; Suzuki et al., 1981). Growth factors, such as the vascular endothelial growth factor (VEGF), trigger cartilage calcification and regulate endochondral ossification through stimulation of blood-vessel ingrowth into the diaphysis (Gerber et al., 1999). The lines of calcifying stellate clusters of crystals therefore form a scaffold for future trabecular bone deposition (Amizuka, 2012). This results in the formation of a bony mesh of longitudinal trabeculae (Figure 1A), which is progressively incorporated into the metaphysis where haematopoietic stem cell (HSC) niches (Figure 1A) are located (Calvi et al., 2003; Zhang et al., 2003) in the close vicinity of trabecular/endothelial surfaces (Gong, 1978; Nilsson et al., 2001; Wilson and Trumpp, 2006). HSC form localised niches whose environment is greatly controlled and regulated (Orkin and Zon, 2008; Sipkins et al., 2005; Zhang et al., 2003). Often in mature animals the growth plate disappears, causing the senescence of long-bone elongation (Kilborn et al., 2002). In most amniotes, the trabecular mesh in the metaphysis can be vastly remodelled (Haines, 1975). HSC can thereafter be observed adjacent to epiphyseal trabeculae (Askenasy and Farkas, 2002).
 
@@ -43,83 +43,236 @@ Is the urodele model the plesiomorphic or the derived condition for tetrapod lon
 
 The diaphyseal and metaphyseal microarchitectures of the stem tetrapods Eusthenopteron and Hyneria were described by Sanchez et al., 2014 and Kamska et al., 2018, respectively. The diaphysis of Discosauriscus (Sanchez et al., 2008), Apateon (Sanchez et al., 2010a; Sanchez et al., 2010b), Metoposaurus (Konietzko-Meier and Sander, 2013) and Seymouria (Estefa et al., 2020) were thoroughly described, but the metaphyseal organisation of their humeri was only succinctly mentioned in the cited articles. Here, we provide a detailed description of them (Table 1) in 3D when possible.
 
-## Apateon caducus, juvenile specimen GPIM-N 1297, humerus
+**Table 1.**
+ Table summarising the material used.Skull length measurements and ontogenetic stages determined by Berman et al., 1987b; Sanchez et al., 2008; Sanchez et al., 2010a and Klembara et al., 2006.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Collection number</th>
+      <th>Skull length (cm)</th>
+      <th>Ontogenetic stage</th>
+      <th>Bone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Apateon caducus</td>
+      <td rowspan="3">GPIM-N 1297</td>
+      <td rowspan="3">1.52</td>
+      <td rowspan="3">Juvenile</td>
+      <td>Humerus</td>
+    </tr>
+    <tr>
+      <td>Radius</td>
+    </tr>
+    <tr>
+      <td>Ulna</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GPIM-N 1572</td>
+      <td rowspan="2">Estimated to 1.60</td>
+      <td rowspan="2">Adult</td>
+      <td>Radius</td>
+    </tr>
+    <tr>
+      <td>Ulna</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Apateon pedestris</td>
+      <td rowspan="3">SMNS 54981</td>
+      <td rowspan="3">0.86</td>
+      <td rowspan="3">Adult</td>
+      <td>Humerus</td>
+    </tr>
+    <tr>
+      <td>Radius</td>
+    </tr>
+    <tr>
+      <td>Ulna</td>
+    </tr>
+    <tr>
+      <td rowspan="3">SMNS 54988</td>
+      <td rowspan="3">1.06</td>
+      <td rowspan="3">Adult</td>
+      <td>Humerus</td>
+    </tr>
+    <tr>
+      <td>Radius</td>
+    </tr>
+    <tr>
+      <td>Ulna</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Seymouria sanjuanensis</td>
+      <td>MNG 7747</td>
+      <td>5.6</td>
+      <td>Juvenile</td>
+      <td>Humerus</td>
+    </tr>
+    <tr>
+      <td>CM 28597</td>
+      <td>8.8</td>
+      <td>Adult</td>
+      <td>Humerus</td>
+    </tr>
+    <tr>
+      <td>Discosauriscus austriacus</td>
+      <td>SNM Z 15568</td>
+      <td>6.2</td>
+      <td>Subadult</td>
+      <td>Humerus</td>
+    </tr>
+    <tr>
+      <td>Metoposaurus sp.</td>
+      <td>MUZ PGI OS-220/171</td>
+      <td>-</td>
+      <td>Subadult or adult</td>
+      <td>Humerus</td>
+    </tr>
+  </tbody>
+</table>
+
+### Apateon caducus, juvenile specimen GPIM-N 1297, humerus
 
 As the humerus was crushed (Figure 2A), only a small region of the metaphysis could be sectioned and visualised (Figure 2B). Nevertheless, a relatively complete sequence of calcification (extending over 600 µm) can be described here. The upper part of the section reflects the irregular surface of the calcification front (separating the unpreserved eroded non-calcified cartilage from the preserved calcified cartilage) (Figure 2B). Under this region, obvious figures of globuli ossei are entrapped in Liesegang’s rings (g.o. and l.r., Figure 2Bb1-2). They are numerous and unevenly arranged. Their sizes (ranging from 9 to 15 µm in diameter) seem as well unevenly distributed. The trabeculae are very few in this thin section (t., Figure 2Bb2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig2-v1.jpg)
 
-**Figure 2.:** Apateon caducus, GPIM-N 1297.(A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the proximal end of the humerus. (C) Epiphyseal and metaphyseal histology of the proximal end of the radius (c2-3) and ulna (c1). Abbreviations: c.b., cortical bone; c.c., cluster of chondrocytes; c.f., calcification front; c.m., cartilage matrix; dia., diaphysis; e.b., erosion bay; e.l., erosion lacunae; g.o., globuli ossei; H., humerus; l.r., Liesegang’s rings; meta., metaphysis; m.f., mineralisation front; o.n., ossification notch; Prox., proximal end; R. and U., radius and ulna; t., trabeculae.
+**Figure 2.:** (A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the proximal end of the humerus. (C) Epiphyseal and metaphyseal histology of the proximal end of the radius (c2-3) and ulna (c1). Abbreviations: c.b., cortical bone; c.c., cluster of chondrocytes; c.f., calcification front; c.m., cartilage matrix; dia., diaphysis; e.b., erosion bay; e.l., erosion lacunae; g.o., globuli ossei; H., humerus; l.r., Liesegang’s rings; meta., metaphysis; m.f., mineralisation front; o.n., ossification notch; Prox., proximal end; R. and U., radius and ulna; t., trabeculae.
 
-## A. caducus, juvenile specimen GPIM-N 1297, radius and ulna
+### A. caducus, juvenile specimen GPIM-N 1297, radius and ulna
 
 Both bones exhibit large sequences of cartilage calcification which spread over more than a third of the total bone length on each side of the long bone (Figure 2C). The mineralisation front (m.f., Figure 2C) is located relatively far under the ossification notch (400 µm) (o.n., Figure 2C). Numerous globuli ossei can be visualised in the metaphysis (g.o., Figure 2Cc1,3). They are unevenly distributed and their size ranges between 8 and 25 µm. Clusters of chondrocytes can be observed (c.c., Figure 2Cc3). The top of the epiphysis probably exhibited a uniform matrix of uncalcified cartilage before the fossilisation that was not preserved afterwards. The mesh of ossified trabeculae is very scattered and shows no preferential orientation (t., Figure 2Cc1).
 
-## A. caducus, adult specimen GPIM-N 1572, radius and ulna
+### A. caducus, adult specimen GPIM-N 1572, radius and ulna
 
 The epiphysis and metaphysis of the radius and ulna of this individual (Figure 3A) are more hollowed than those of the specimen GPIM-N 1297, with less cartilaginous matrix between the mineralised trabeculae (Figure 3B). Fewer globuli ossei are visible (g.o., Figure 3Bb1). Instead, large empty lacunae can be observed (75 µm) (e.l., Figure 3Bb1). Large bays of erosion open as well between these lacunae (e.b., Figure 3Bb2). The process of mineralisation therefore seems more advanced but no obvious trabecular organisation can be observed.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig3-v1.jpg)
 
-**Figure 3.:** Apateon caducus, GPIM-N 1572.(A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the proximal end of the radius (b1) and ulna (b2). Abbreviations: c.b., cortical bone; c.m., cartilage matrix; dia., diaphysis; e.b., erosion bay; e.l., erosion lacunae; g.o., globuli ossei; H., humerus; l.r., Liesegang’s rings; meta., metaphysis; Prox., proximal end; R. and U., radius and ulna.
+**Figure 3.:** (A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the proximal end of the radius (b1) and ulna (b2). Abbreviations: c.b., cortical bone; c.m., cartilage matrix; dia., diaphysis; e.b., erosion bay; e.l., erosion lacunae; g.o., globuli ossei; H., humerus; l.r., Liesegang’s rings; meta., metaphysis; Prox., proximal end; R. and U., radius and ulna.
 
-## Apateon pedestris, adult specimen SMNS 54981, humerus
+### Apateon pedestris, adult specimen SMNS 54981, humerus
 
 In the humerus of SMNS 54981 (Figure 4A), the process of mineralisation seems relatively advanced as the globuli ossei only remain along a few mineralised trabeculae (g.o., Figure 4B). They are 16 µm large. In the metaphysis, the cartilage has been removed by erosional process (e.b., Figure 4B). The uncalcified cartilage in the epiphysis has not been preserved during the fossilisation (at least in this slide).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig4-v1.jpg)
 
-**Figure 4.:** Apateon pedestris, SMNS 54981.(A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the distal end of the humerus. (C) Epiphyseal and metaphyseal histology of the proximal end of the radius (c2) and ulna (c1). Abbreviations: c.b., cortical bone; c.c.t., calcified-cartilage trabecula; Dist., distal end; e.b., erosion bay; g.o., globuli ossei; H., humerus; l.r., Liesegang’s rings; meta., metaphysis; m.f., mineralisation front; m.t., mineralised trabecula; Prox., proximal end; R. and U., radius and ulna.
+**Figure 4.:** (A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the distal end of the humerus. (C) Epiphyseal and metaphyseal histology of the proximal end of the radius (c2) and ulna (c1). Abbreviations: c.b., cortical bone; c.c.t., calcified-cartilage trabecula; Dist., distal end; e.b., erosion bay; g.o., globuli ossei; H., humerus; l.r., Liesegang’s rings; meta., metaphysis; m.f., mineralisation front; m.t., mineralised trabecula; Prox., proximal end; R. and U., radius and ulna.
 
-## A. pedestris, adult specimen SMNS 54981, radius and ulna
+### A. pedestris, adult specimen SMNS 54981, radius and ulna
 
 The quantity of calcified cartilage is higher in the zeugopod (i.e. radius and ulna) than in the stylopod (i.e. humerus) (Figure 4Cc1-2). Most of the uncalcified cartilage has been eroded. The calcified cartilage is hollowed, thereby forming multiple bays of erosion (e.b., Figure 4Cc2). Nevertheless, the globuli ossei remain connected to each other by calcified-cartilage trabeculae (c.c.t., Figure 4Cc2) or mineralised trabeculae (m.t., Figure 4C) present in the metaphysis.
 
-## A. pedestris, adult specimen SMNS 54988, humerus
+### A. pedestris, adult specimen SMNS 54988, humerus
 
 This thin section in the humerus of SMNS 54988 (Figure 5A) shows a very remodelled bone with large bays of erosion in the cartilaginous matrix (e.b., Figure 5Bb) and only a few remaining globuli ossei at the surface of the bone trabeculae (g.o., Figure 5Bb). Most of the cartilaginous matrix has been eroded. There is no preserved cartilage in the epiphysis. The bony trabeculae have no preferential orientation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig5-v1.jpg)
 
-**Figure 5.:** Apateon pedestris, SMNS 54988.(A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the distal end of the humerus. (C) Epiphyseal and metaphyseal histology of the proximal end of the radius and ulna. Abbreviations: c.b., cortical bone; c.m., cartilage matrix; dia., diaphysis; Dist., distal end; e.b., erosion bay; e.l., erosion lacunae; g.o., globuli ossei; H., humerus; meta., metaphysis; Prox., proximal end; R. and U., radius and ulna.
+**Figure 5.:** (A) Skeleton. (a) Right limb. (B) Epiphyseal and metaphyseal histology of the distal end of the humerus. (C) Epiphyseal and metaphyseal histology of the proximal end of the radius and ulna. Abbreviations: c.b., cortical bone; c.m., cartilage matrix; dia., diaphysis; Dist., distal end; e.b., erosion bay; e.l., erosion lacunae; g.o., globuli ossei; H., humerus; meta., metaphysis; Prox., proximal end; R. and U., radius and ulna.
 
-## A. pedestris, adult specimen SMNS 54988, radius and ulna
+### A. pedestris, adult specimen SMNS 54988, radius and ulna
 
 As for the zeugopod of the specimen SMNS 54988 (Figure 5Aa), the globuli ossei seem to be replaced by large empty lacunae (30 µm, e.l., Figure 5C). A certain amount of uncalcified cartilage has been eroded in the distal epiphyses and metaphyses. Nevertheless, a large amount of cartilage is still present in the proximal metaphyses of both long bones (c.m., Figure 5C). No or very few trabeculae can be observed.
 
-## Metoposaurus sp., (sub-)adult specimen MUZ PGI OS-220/171, humerus
+### Metoposaurus sp., (sub-)adult specimen MUZ PGI OS-220/171, humerus
 
 Transverse thin sections were made in the metaphysis of the femur (Konietzko-Meier and Sander, 2013) of Metoposaurus diagnosticus krasiejowensis (Sulej, 2002) recently re-diagnosed as Metoposaurus krasiejowensis (Brusatte et al., 2015). They revealed a dense trabecular mesh. The longitudinal virtual thin sections, made with PPC-SRµCT and presented here, were made in the proximal and distal metaphyses of a humerus of Metoposaurus sp. and confirm the presence of a dense trabecular mesh in the overall humerus (Figure 6Aa1-2). Additionally, a directional coloured light effect (cf. Materials and method section, Sanchez et al., 2014) shows that this mesh is oriented longitudinally and exhibits a fan-like shape in the metaphyses (purple trabeculae, Figure 6Aa2). The trabecular mesh covers the entire volume of the metaphysis and spreads into the diaphysis (Figure 6Aa1-2). The mineralisation front (m.f., Figure 6Aa1) contacts the sediment in which the bone is embedded (Figure 6Ba). The surface of the mineralisation front is irregular. No ossified epiphysis was found, thereby suggesting that a cartilaginous cap was probably covering the bone. This cap did not preserve over the fossilisation. In the metaphysis, the trabeculae are homogeneously distributed (t., Figure 6Bb). Some remnants of calcified cartilage are visible through Liesegang’s rings forming within the cartilage remaining between the metaphyseal trabeculae (Figure 6Bc). The mean thickness of the trabeculae is 117 µm (Table 2). Tubular structures can be observed (m.p., Figure 6Ba). They end blindly at the location of the mineralisation front. They are well defined tubes (248 µm in diameter, Table 2), although anastomosed. They ossified through endochondral ossification. These tubes are locally slightly eroded (Figures 6Ba and 10A). The size of these tubes, their intimate connection to each other and their location strongly support their identification as marrow processes (Haines, 1938).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig6-v1.jpg)
 
-**Figure 6.:** Metoposaurus sp., MUZ PGI OS-220/171 imaged using PPC-SRµCT.(A) Frontal view. (a1) Longitudinal virtual thin section (40 µm thick) and (a2) longitudinal virtual thin section of the segmented model of the bone (50 µm thick). The longitudinally-oriented trabeculae are highlighted in purple (white arrows), while the transversally-oriented trabeculae appear in green. (B) Ventral view. (a) Longitudinal virtual thin section of the proximal metaphysis (40 µm thick), (b) transverse virtual thin section made in the metaphysis and (c) longitudinal thin section made in the distal metaphysis. Abbreviations: c.b., cortical bone; dia., diaphysis; Dist., distal end; l.r., Liesegang’s rings; meta., metaphysis; m.f., mineralisation front; m.p., marrow process; Prox., proximal end; s., sediment; t., trabeculae.
+**Figure 6.:** (A) Frontal view. (a1) Longitudinal virtual thin section (40 µm thick) and (a2) longitudinal virtual thin section of the segmented model of the bone (50 µm thick). The longitudinally-oriented trabeculae are highlighted in purple (white arrows), while the transversally-oriented trabeculae appear in green. (B) Ventral view. (a) Longitudinal virtual thin section of the proximal metaphysis (40 µm thick), (b) transverse virtual thin section made in the metaphysis and (c) longitudinal thin section made in the distal metaphysis. Abbreviations: c.b., cortical bone; dia., diaphysis; Dist., distal end; l.r., Liesegang’s rings; meta., metaphysis; m.f., mineralisation front; m.p., marrow process; Prox., proximal end; s., sediment; t., trabeculae.
 
-## Seymouria sanjuanensis, juvenile specimen MNG 7747, humerus
+**Table 2.**
+ Microanatomical measurements made on the samples using VGStudio MAX (version 3.2, Volume Graphics Inc, Germany).The protocol details are provided by Estefa et al., 2020.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Species</th>
+      <th colspan="2">Thickness of the trabeculae (µm)</th>
+      <th>Diameter of the marrow processes (µm)</th>
+    </tr>
+    <tr>
+      <th>Diaphysis</th>
+      <th>Metaphysis</th>
+      <th>Metaphysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Metoposaurus sp. (Subadult or Adult, MUZ PGI OS-220/171)</td>
+      <td>131</td>
+      <td>117</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Seymouria sanjuanensis (Juvenile, MNG 7747)</td>
+      <td>94</td>
+      <td>25</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>S. sanjuanensis (Adult, CM 28597)</td>
+      <td>79</td>
+      <td>30</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Discosauriscus austriacus (Subadult, SNM Z 15568)</td>
+      <td>80</td>
+      <td>54</td>
+      <td>111</td>
+    </tr>
+  </tbody>
+</table>
+
+### Seymouria sanjuanensis, juvenile specimen MNG 7747, humerus
 
 This specimen was investigated using PPC-SRµCT. The spongiosa occupies the entire bone area (Figure 7A). The metaphyseal trabeculae are about four times thinner (25 µm on average) than the diaphyseal trabeculae (94 µm on average, Table 2 and Estefa et al., 2020). A longitudinal section reveals that the trabecular mesh becomes denser towards the distal and proximal ends of the bone (Figure 7Aa1-2). As the shape of the bone widens and flattens from midshaft towards the metaphyseal surfaces, the longitudinal trabeculae tilt, thereby forming a fan-like configuration (Figure 7Aa2). In the metaphysis, the trabecular mesh is mostly arranged longitudinally (obviously appearing purple and progressively shifting to green as the deltopectoral crest tilts to 90 degrees, Figure 7Aa2) although a few anastomoses (highlighted in green in most of the metaphysis apart from the tilted region of the deltopectoral crest, Figure 7Aa2) run radially. A few remnants of calcified cartilage (Francillon-Vieillot et al., 1990) are very rarely visible (Estefa et al., 2020). Marrow processes form an intricate network, while anastomosing to each other, and connecting to cavities of irregular shapes and sizes (Figure 7Ba,c and 10B). These tubular structures are around 100 µm in diameter under the mineralisation front (Table 2). They contact each other when they reach the mineralisation front (Figure 10B). No ossified epiphysis was found. The humeral epiphysis was probably not preserved due to being unmineralised cartilage.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig7-v1.jpg)
 
-**Figure 7.:** Seymouria sanjuanensis, MNG 7747 imaged using PPC-SRµCT.(A) Frontal view. (a1) Longitudinal virtual thin section (40 µm thick), the darker part is an artefact in the original data due to electron reinjection in the synchrotron storage ring (refilling) during the scan and (a2) longitudinal virtual thin section of the segmented model of the bone (250 µm thick). The longitudinally-oriented trabeculae (pointed by horizontal arrows) are highlighted in purple, while the transversally-oriented trabeculae appear in green. Note that, due to the shape of the metaphysis, the trabeculae exhibit an overall fan-like configuration which progressively tilts to 90 degrees at the location of the deltopectoral crest (Asterisk). For that reason, the longitudinal trabeculae appear green and the transverse trabeculae appear purple at this location. (B) Ventral view. (a) Longitudinal virtual thin section in the proximal metaphysis (40 µm thick), (b) transverse virtual thin section in the metaphysis, the large ring artefact results from the synchrotron electron refilling visible in a1, (c) detail of (b) showing marrow processes and cavities in transverse section. Abbreviations: c., cavity; dia., diaphysis; Dist., distal end; meta., metaphysis; m.f., mineralisation front; m.p., marrow process; Prox., proximal end; s., sediment; t., trabeculae.
+**Figure 7.:** (A) Frontal view. (a1) Longitudinal virtual thin section (40 µm thick), the darker part is an artefact in the original data due to electron reinjection in the synchrotron storage ring (refilling) during the scan and (a2) longitudinal virtual thin section of the segmented model of the bone (250 µm thick). The longitudinally-oriented trabeculae (pointed by horizontal arrows) are highlighted in purple, while the transversally-oriented trabeculae appear in green. Note that, due to the shape of the metaphysis, the trabeculae exhibit an overall fan-like configuration which progressively tilts to 90 degrees at the location of the deltopectoral crest (Asterisk). For that reason, the longitudinal trabeculae appear green and the transverse trabeculae appear purple at this location. (B) Ventral view. (a) Longitudinal virtual thin section in the proximal metaphysis (40 µm thick), (b) transverse virtual thin section in the metaphysis, the large ring artefact results from the synchrotron electron refilling visible in a1, (c) detail of (b) showing marrow processes and cavities in transverse section. Abbreviations: c., cavity; dia., diaphysis; Dist., distal end; meta., metaphysis; m.f., mineralisation front; m.p., marrow process; Prox., proximal end; s., sediment; t., trabeculae.
 
-## S. sanjuanensis, adult specimen CM 28597, humerus
+### S. sanjuanensis, adult specimen CM 28597, humerus
 
 A longitudinal virtual thin section from the PPC-SRµCT data shows that the trabecular network remains relatively dense in the metaphyses (Figure 8A) at the adult stage. The trabecular mesh is longitudinally and radially oriented like a fan although slightly less organised than in the juvenile specimen (purple trabeculae, Figure 8Aa2). The trabeculae appear to be more remodelled, leaving large cavities resulting from an intense erosional process (Figure 8Aa2). The cortex is almost inexistent in the metaphysis (Figure 8Bb). The thickness of the trabeculae averages 30 µm (Table 2, Estefa et al., 2020), which is equivalent to the thickness of the trabeculae in the juvenile metaphysis (MNG 7747). There is no endosteal bone on the surface of the medullary cavity. Very few remnants of calcified cartilage were found in the metaphysis of the adult humerus, that is in much lower frequency than in the juvenile specimen (Estefa et al., 2020). The spongiosa contains a few longitudinal interconnected marrow processes (100 µm in diameter, Figure 8Bb-c and 10C, Table 2). When present, these processes exhibit the same distribution as in the juvenile humerus. The epiphyses were not ossified. A resting surface (yellow arrow, Figure 8Aa2), red arrows, (Figure 8—figure supplement 1A), can be observed 2-to-4 mm under the mineralisation front. It is observed as well in the distal metaphysis (Figure 8—figure supplement 1A). This resembles Harris lines identified in mammals (Garn et al., 1968; Harris, 1933) and birds (Wegner, 1874). Although these lines are very common in mammals (including extant and extinct taxa, Duckler and Van Valkenburgh, 1998), they have not been comprehensively studied in other groups. We find that they can also be encountered in groups with no secondary ossification centre such as chelonians (e.g. Centrochelys sulcata, Figure 8—figure supplement 1B) and crocodilians (e.g. Crocodylus niloticus, P.T. pers. obs.). Harris lines seem to result from both short- and long-term pressures (e.g. starvation – Park, 1964; disease and deficiencies – Duckler and Van Valkenburgh, 1998).
 
-## Discosauriscus austriacus, subadult specimen SNM Z 15568, humerus
+![Figure 8.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig8-v1.jpg)
+
+**Figure 8.:** (A) Frontal view. (a1) Longitudinal virtual thin section (40 µm thick) and (a2) longitudinal section of the segmented model of the bone (450 µm thick). The longitudinally-oriented trabeculae (pointed by horizontal arrows) are highlighted in purple, while the transversally-oriented trabeculae appear in green. Note that, due to the shape of the metaphysis, the trabeculae exhibit an overall fan-like configuration which progressively tilts to 90 degrees at the location of the deltopectoral crest (Asterisk). For that reason, the longitudinal trabeculae appear green and the transverse trabeculae appear purple at this location. (B) Dorsal view. (a) Longitudinal virtual thin section of the proximal metaphysis (40 µm thick), (b) transverse virtual thin section in the metaphysis (40 µm thick), (c) detail of (b) showing marrow processes and cavities in transverse section. Abbreviations: c., cavity; dia., diaphysis; Dist., distal end; meta., metaphysis; m.f., mineralisation front; m.p., marrow process; Prox., proximal end; s., sediment; t., trabeculae.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Radiography of the humerus of S. sanjuanensis in anterior view (on the left) and ventral view (on the right). The red arrows show the presence of a resting surface both in the proximal and distal metaphyses. (B) Virtual 5 mm-thick section made in the humerus of C. sulcata. Both metaphyses are zoomed in (as 2-mm-thick sections) to show the presence of multiple resting surfaces (red arrows). Abbreviations: Prox., proximal end.
+
+### Discosauriscus austriacus, subadult specimen SNM Z 15568, humerus
 
 Thin sections were made and described in the distal metaphysis of the femur of the specimen KO224 of D. austriacus (Sanchez et al., 2008). They revealed a dense trabecular mesh and the absence of calcified cartilage. Virtual thin sections from three-dimensional PPC-SRµCT scans in the humerus SNM Z 15568 complete these observations despite the fact that the metaphyseal spongiosa is partly crushed (Figure 9Aa2). As the femur KO224 (Sanchez et al., 2008), the humerus SNM Z 15568 exhibits a dense trabecular mesh in both the proximal and distal metaphyses with a fan-like trabecular orientation (purple trabeculae, Figure 9Aa2). The trabeculae are homogeneously distributed in the metaphysis. They are 54 µm thick on average (Table 2). They are eroded at the base of the metaphysis (Figure 9Aa1-2). Some tubular marrow processes (average diameter: 111 µm, Table 2) open up directly towards the diaphysis into the metaphyseal space of the medullary cavity left vacant after erosion (Figures 9B and 10D). The surface of the mineralisation front is irregular (Figure 9Ba). The latter probably was covered by uncalcified cartilage.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig9-v1.jpg)
 
-**Figure 9.:** Discosauriscus austriacus, SNM Z 15568 imaged using PPC-SRµCT.Due to processing to convert the scan data into a stack of images, the images have been flipped, thereby resulting in a flipped 3D model. (A) Frontal view. (a1) Longitudinal virtual thin section (40 µm thick) and (a2) longitudinal section of the segmented model of the bone (160 µm thick). The longitudinally-oriented trabeculae are highlighted in purple, while the transversally-oriented trabeculae appear in green. (B) Ventral view. (a) Longitudinal virtual thin section of the proximal metaphysis (40 µm thick) and (b) transverse virtual thin section in the proximal metaphysis (40 µm thick). Abbreviations: c.b., cortical bone; dia., diaphysis; Dist., distal end; meta., metaphysis; m.f., mineralisation front; m.p., marrow process; Prox., proximal end; s., sediment; t., trabeculae.
+**Figure 9.:** Due to processing to convert the scan data into a stack of images, the images have been flipped, thereby resulting in a flipped 3D model. (A) Frontal view. (a1) Longitudinal virtual thin section (40 µm thick) and (a2) longitudinal section of the segmented model of the bone (160 µm thick). The longitudinally-oriented trabeculae are highlighted in purple, while the transversally-oriented trabeculae appear in green. (B) Ventral view. (a) Longitudinal virtual thin section of the proximal metaphysis (40 µm thick) and (b) transverse virtual thin section in the proximal metaphysis (40 µm thick). Abbreviations: c.b., cortical bone; dia., diaphysis; Dist., distal end; meta., metaphysis; m.f., mineralisation front; m.p., marrow process; Prox., proximal end; s., sediment; t., trabeculae.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig10-v1.jpg)
+
+**Figure 10.:** (MUZ PGI OS-220/171); B, Seymouria sanjuanensis (MNG 7747); C, S. sanjuanensis (CM 28597); D, Discosauriscus austriacus (SNM Z 15568). (a1, b1, c1, d1) Longitudinal virtual thin section (60 µm thick); (a2, b2, c2, d2) marrow processes and cavities segmented; (a3, b3, c3, d3) 3D models of the segmentations. Note that the marrow cavities have not been completely segmented in 3D to allow the full visualisation of the marrow processes; (a4, b4, c4, d4) respective locations of a3, b3, c3, d3 in the humeri. Abbreviations: l.e., region of local erosion; m.c., marrow cavity; m.f., mineralisation front; m.p., marrow process.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (MNHN-ZA-AC-2005–72, Museum national d’Histoire naturelle, Paris, France). (a1) Longitudinal virtual thin section (60 µm thick), (a2) marrow processes segmented, (a3) 3D model of the segmentation and (a4) location of a3 in the humerus. The humerus of Andrias has been imaged using the protocol published by Sanchez et al., 2014. Abbreviations: c.b., cortical bone; m.f., mineralisation front; m.p., marrow process; sept., septa; spc., spaces.
 
 ## Discussion
 
 The trabecular bone tissues observed in these long bones exhibit characteristics of endochondral ossification (remnants of calcified cartilage, globuli ossei and/or columnar trabecular mesh) as seen in stem- (Sanchez et al., 2014; Sanchez et al., 2016) and crown-tetrapods (Estefa et al., 2020; Francillon-Vieillot et al., 1990; Sanchez et al., 2008; Sanchez et al., 2010a).
 
-## Early evolution of tetrapod limb-bone elongation
+### Early evolution of tetrapod limb-bone elongation
 
 Although all limb bones studied here have cartilaginous epiphyses, their metaphyseal organisation, and the underlying long-bone elongation processes, can greatly differ between taxa.
 
@@ -127,7 +280,7 @@ The long-bone elongation in Apateon probably results from the hypertrophying act
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig11-v1.jpg)
 
-**Figure 11.:** Ruta and Coates, 2007; Schoch, 2019).Hypothesis on haematopoietic activity is herein contextualised. Black silhouettes represent the taxa studied. Crosses (†) have been attributed to fossil taxa.
+**Figure 11.:** Hypothesis on haematopoietic activity is herein contextualised. Black silhouettes represent the taxa studied. Crosses (†) have been attributed to fossil taxa.
 
 On the contrary, the metaphyseal trabecular meshes in the limb bones of Metoposaurus, Seymouria and Discosauriscus all exhibit the same fan-like pattern of longitudinal trabeculae. This implies that the growth plate comprised longitudinal columns of hypertrophic cells where endochondral ossification occurred through columnar cartilage-to-bone substitution (Francillon-Vieillot et al., 1990; Kronenberg, 2003) as seen in turtles and crocodiles (e.g. Haines, 1938; Haines, 1942), lepidosaurs (e.g. Haines, 1969), dinosaurs (De Ricqlès, 1968; Horner et al., 2000; Horner et al., 2001), birds (e.g. Horner et al., 2001) and mammals (e.g. Jacenko et al., 1993; Figure 11). Although this fan-like trabecular configuration can be greatly remodelled in extant amniotes, it is only slightly remodelled here in the adult Seymouria and subadult Discosauriscus (Figures 8 and 9).
 
@@ -135,7 +288,7 @@ Therefore, our study shows that the amniote-like long-bone elongation is more co
 
 The mineralisation processes in extant amphibians and amniotes largely differ in many points: (1) their timing and microstructural relationships (i.e. ossification dependant on a calcified scaffold in amniotes, Amizuka, 2012, but not in amphibians, Felisbino and Carvalho, 2001), (2) their initiation (i.e. stacks of hypertrophic cells in amniotes, Lüllmann-Rauch, 2015, versus isolated hypertrophic cells in amphibians, De Ricqlès, 1965; Quilhac et al., 2014) and (3) their molecular mechanisms (i.e. collagen type X secreted in amniotes, Gudmann and Karsdal, 2016; versus fibrillar collagens in amphibians, Quilhac et al., 2014). How could such distinct mineralisation processes play the same functional role in long-bone elongation in different vertebrates? In addition to a columnar pattern of trabeculae, several remnants of Liesegang’s rings could be observed in the fossil limb bones of Metoposaurus (Figure 6Bc and Konietzko-Meier and Sander, 2013) and, to a lesser extent, Seymouria (Estefa et al., 2020) and stem-tetrapods (i.e. Hyneria, Eusthenopteron and Acanthostega, Kamska et al., 2018; Sanchez et al., 2014; Sanchez et al., 2016). The most parsimonious evolutionary scenario therefore suggests that stem tetrapods were able to produce globular calcified cartilage although they were elongating their bone through a columnar configuration (Figure 11). Long-bone elongation exclusively based on the intensive production of globuli ossei would have been a derived feature emerging within temnospondyls and restricted to extant batrachians and their close dissorophoid temnospondyl relatives (e.g. Apateon and Doleserpeton). Within amniotes – including stem amniotes – the globular calcification of the cartilage would have drastically reduced to be fully abandoned to the benefit of an exclusive columnar elongation (Figure 11). Two exceptions persist in amniotes: (1) large aquatic animals usually produce a large amount of globular calcified cartilage to balance their buoyancy or in extremely retarded developmental conditions, such as paedomorphosis (e.g. pachy-osteosclerotic amniotes, De Buffrénil et al., 2008; De Ricqlès and De Buffrénil, 2001; crocodiles, Haines, 1938), (2) diseased amniotes can have osteosclerotic problems which result in the production and retention of globuli ossei (Gussen, 1967). In such cases, the production of globuli ossei is not solely located in the epiphysis and does not play any role in the elongation process of limb bones. Even though these cases reflect derived and/or rare conditions, they show that amniotes keep the ability to produce globuli ossei although they do not allocate them to the limb-bone elongation process.
 
-## Discussion on the batrachian limb-bone elongation strategy
+### Discussion on the batrachian limb-bone elongation strategy
 
 It was hypothesised that a large number of globuli ossei would be associated with a slow limb-bone endochondral ossification and development (De Ricqlès, 1972; Haines, 1938). This was based on the observation of globular calcification in small extant amphibians and neotenic aquatic forms, as well as the rarity or even absence of globuli ossei in fast growing juvenile mammals and birds (De Ricqlès, 1972; De Ricqlès, 1979; Haines, 1942; Quilhac et al., 2014). The observations contained herein clearly show that long-bone developmental dynamics does not seem to be the leading or unique factor for performing one or the other of the elongation and calcification processes. Indeed, the stem tetrapods Hyneria, Eusthenopteron and Acanthostega (with a humerus remaining cartilaginous for several years), all exhibit the characteristics of a slow appendicular development (and slow somatic development as a whole for Eusthenopteron and Acanthostega [Sanchez et al., 2014; Sanchez et al., 2016]) but only produce very few globuli ossei (Kamska et al., 2018; Sanchez et al., 2014; Sanchez et al., 2016). On the contrary, they all present an obvious longitudinal metaphyseal spongiosa strongly supporting the development of a hypertrophic columnar cartilaginous growth plate.
 
@@ -145,7 +298,7 @@ Felisbino and Carvalho, 2001 investigated the limb-bone ossification of the amph
 
 The use of exclusive globular calcification and globuli ossei for long-bone endochondral ossification and elongation would therefore probably result from the combination of multiple factors shared by both batrachians and dissorophoids. In order to precisely identify these factors, an extended histological study will have to be carried out within temnospondyls (considering as many environmental factors as possible, including their ecologies and sizes) to draw strong and broad conclusions on this evolutionary pattern and the reasons for it to be that restricted in the evolutionary history of tetrapods. Nevertheless, the current study shows that amphibians, often considered as models for exhibiting primitive tetrapod features, should be regarded as a clade with a significantly derived evolutionary history, at least with respect to their skeleton.
 
-## Evolution of limb-bone marrow processes
+### Evolution of limb-bone marrow processes
 
 As the long bones of Apateon were thin sectioned, it was not possible to assess the 3D organisation of the trabecular mesh nor the calcified cartilage mass to check out the potential presence of marrow processes.
 
@@ -157,7 +310,7 @@ Based on these observations, the full compartmentalisation of the marrow process
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 We focus on studying the limb-bone growth plate and marrow processes of the temnospondyls A. pedestris, A. caducus, and Metoposaurus sp., considered as stem amphibians (or at least stem batrachians – including anurans and urodeles) by most authors (e.g. Anderson, 2008; Milner, 1988; Pardo et al., 2017; Ruta and Coates, 2007; Schoch, 2019; Schoch and Milner, 2004; Sigurdsen and Green, 2011; Trueb and Cloutier, 1991) – although we are aware that some authors have proposed diverging hypotheses (e.g. Marjanović and Laurin, 2013; Vallin and Laurin, 2004). We also investigate the bone histology of the seymouriamorphs S. sanjuanensis and D. austriacus, which we consider stem amniotes following general consensus (e.g. Anderson, 2007; Klembara et al., 2014; Ruta and Coates, 2007).
 
@@ -171,13 +324,13 @@ The humerus of D. austriacus originates from the Lower Permian of Kochov-Horka i
 
 None of these last three specimens were physically sectioned, they were studied using PPC-SRµCT, following the protocols developed for virtual bone histology (Sanchez et al., 2012; see Methods section).
 
-## Methods
+### Methods
 
-## Thin sectioning and microscopic observations
+#### Thin sectioning and microscopic observations
 
 The limbs of A. pedestris and A. caducus were removed from their slabs and embedded in resin (Sanchez et al., 2010a; Sanchez et al., 2010b). The blocks were sawed with a diamond powder disk, and polished following the protocol published by Lamm, 2013. All thin sections were observed and photographed using an optical microscope under natural light (Nikon Eclipse 80i mounted with a Nikon D300 digital camera).
 
-## Propagation phase-contrast X-ray synchrotron radiation micro-computed tomography and data reconstruction
+#### Propagation phase-contrast X-ray synchrotron radiation micro-computed tomography and data reconstruction
 
 The specimens were imaged at the European Synchrotron Radiation Facility (France; beamline ID19) using Propagation Phase-Contrast X-ray Synchrotron Radiation Micro-Computed Tomography (PPC-SRµCT) (Tafforeau et al., 2006). Technical details for the scan data of D. austriacus and S. sanjuanensis were provided in a former publication (Estefa et al., 2020). Here is the protocol used for scanning the humerus of Metoposaurus sp. It was imaged with a voxel size of 11.79 µm using a PCO Edge 4.2 camera mounted on a tandem optic composed of Hasselblad 100 mm and Canon 50 mm objectives coupled to a 500 µm thick LuAG:Ce scintillator. The white beam produced by the ID19 wiggler set at a gap of 52 mm was filtered with 1.4 mm of diamond and 12 mm of copper. The resulting detected average energy was about 123 keV. The sample was imaged in half acquisition mode, rotating over 360 degrees with the centre of rotation on the right side of the field of view to enlarge the lateral field of view. 5000 projections of 48 ms each (resulting from an accumulation of 4 sub-frames of 12 ms each) were taken over 360 degrees. The fossil was placed at a propagation distance of 13 m from the detector in order to maximise the phase-contrast effect.
 
@@ -185,12 +338,12 @@ Tomographic slices were reconstructed using filtered back-projection algorithm u
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/51581/elife-51581-fig12-v1.jpg)
 
-**Figure 12.:** Seymouria sanjuanensis (CM 28597).(A) Tomogram showing low frequency artefacts resulting in an image divided into a darker and brighter part, (B) image processed with a filter for tomographic texture enhancement to remove low frequency artefacts (Cau et al., 2017) and (C) overlap of A and the bone segmentation with the aid of B used to produce Figure 8Aa2. The segmentation is highlighted by the blue line in C.
+**Figure 12.:** (A) Tomogram showing low frequency artefacts resulting in an image divided into a darker and brighter part, (B) image processed with a filter for tomographic texture enhancement to remove low frequency artefacts (Cau et al., 2017) and (C) overlap of A and the bone segmentation with the aid of B used to produce Figure 8Aa2. The segmentation is highlighted by the blue line in C.
 
-## Virtual bone histology
+#### Virtual bone histology
 
 For each sample, virtual thin sections and 3D models were made using VGStudio MAX (version 3.2, Volume Graphics Inc, Germany). We used a directional coloured light system to highlight the general orientation of the trabeculae (Sanchez et al., 2014). The longitudinal trabeculae appear in purple and the transverse ones in green.
 
-## Measurements
+#### Measurements
 
 Measurements in the humeri (i.e. thickness of the trabeculae and diameter of the marrow processes) were made with VGStudio MAX (version 3.2, Volume Graphics Inc, Germany) (Estefa et al., 2020).

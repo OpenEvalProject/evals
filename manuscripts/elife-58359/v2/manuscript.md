@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Dopamine powerfully controls neural circuits through neuromodulation. In the vertebrate striatum, dopamine adjusts cellular functions to regulate behaviors across broad time scales, but how the dopamine secretory system is built to support fast and slow neuromodulation is not known. Here, we set out to identify Ca 2+ -triggering mechanisms for dopamine release. We find that synchronous dopamine secretion is abolished in acute brain slices of conditional knockout mice in which Synaptotagmin-1 is removed from dopamine neurons. This indicates that Synaptotagmin-1 is the Ca 2+ sensor for fast dopamine release. Remarkably, dopamine release induced by strong depolarization and asynchronous release during stimulus trains are unaffected by Synaptotagmin-1 knockout. Microdialysis further reveals that these modes and action potential-independent release provide significant amounts of extracellular dopamine in vivo. We propose that the molecular machinery for dopamine secretion has evolved to support fast and slow signaling modes, with fast release requiring the Ca 2+ sensor Synaptotagmin-1.
+Dopamine powerfully controls neural circuits through neuromodulation. In the vertebrate striatum, dopamine adjusts cellular functions to regulate behaviors across broad time scales, but how the dopamine secretory system is built to support fast and slow neuromodulation is not known. Here, we set out to identify Ca2+-triggering mechanisms for dopamine release. We find that synchronous dopamine secretion is abolished in acute brain slices of conditional knockout mice in which Synaptotagmin-1 is removed from dopamine neurons. This indicates that Synaptotagmin-1 is the Ca2+ sensor for fast dopamine release. Remarkably, dopamine release induced by strong depolarization and asynchronous release during stimulus trains are unaffected by Synaptotagmin-1 knockout. Microdialysis further reveals that these modes and action potential-independent release provide significant amounts of extracellular dopamine in vivo. We propose that the molecular machinery for dopamine secretion has evolved to support fast and slow signaling modes, with fast release requiring the Ca2+ sensor Synaptotagmin-1.
 
 ## Introduction
 
@@ -27,6 +27,26 @@ A requirement for Ca2+-triggering of secretion is the presence of Ca2+ sensors. 
 ## Results and discussion
 
 We here set out to identify Ca2+-triggering mechanisms for rapid dopamine signaling. First, we analyzed the dependence of striatal dopamine release on the extracellular Ca2+ concentration ([Ca2+]ex) in acute brain slices. We generated mice that express channelrhodopsin-2 (ChR2) selectively in dopamine neurons using mouse genetics (Figure 1A) and measured optogenetically evoked dopamine transients in slices of the dorsal striatum using carbon fiber amperometry (Figure 1—figure supplement 1). Similar to electrical stimulation paradigms (Brimblecombe et al., 2015; Ford et al., 2010), optogenetically triggered dopamine release was steeply [Ca2+]ex dependent below 2 mM [Ca2+]ex (Figure 1B and C). At 2 mM [Ca2+]ex, the 20–80% rise time was 1.91 ± 0.13 ms, which includes the diffusion of dopamine from the release site to the electrode, and rise times slowed down in low [Ca2+]ex (Figure 1D). Together, these data establish that action potential-triggered dopamine release is mostly synchronous, and suggest the presence of a fast, low-affinity Ca2+ sensor.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58359/elife-58359-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the experimental setup for Cre-dependent expression of channelrhodopsin variants using mutant mice (B–D) and AAVs (F–I). (B–D) Sample traces (B, average of four sweeps), and quantification of peak amplitudes (C) and 20–80% rise times (D) of dopamine release evoked by optogenetic activation (1 ms light pulse at 470 nm) at different [Ca2+]ex, n = 7 slices/4 mice at each [Ca2+]ex. (E) Schematic of the generation of dopamine neuron specific Synaptotagmin-1 knockout (Syt1-cKODA) mice. (F, G) Sample traces (F, average of four sweeps) and quantification of peak amplitudes (G) of dopamine release evoked by a 1 ms light pulse, Syt-1 control n = 8 slices/4 mice, Syt-1 cKODAn = 8/4. (H, I) Sample traces (H, average of four sweeps) and quantification (I) of dopamine release evoked by ten 1 ms light pulses at 10 Hz. Amplitudes are normalized to the average first amplitude in Syt-1 control, Syt-1 control n = 8/4, Syt-1 cKODA n = 8/4. All data are shown as mean ± SEM, *p<0.05, ***p<0.001. Recordings are performed in 2 mM [Ca2+]ex unless noted otherwise, statistical significance was determined by one-way ANOVA followed by Dunnett’s multiple comparisons test in C and D, by Mann-Whitney test in G, and by two-way ANOVA followed by Sidak’s multiple comparisons test in I (*** for genotype, stimulus number and interaction, post-tests: *** for stimuli 1 and 2, ** for stimulus three and p>0.05 for stimuli 4–10).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58359/elife-58359-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sample traces and summary plot of the calibration of a carbon fiber electrode (CFE) with different concentrations of dopamine applied to the electrode by a puff pipette. The standard curve generated by linear regression confirms a linear relationship. Calibrations were done for each electrode, each electrode was only used for one day, and on each day of recording a control and test littermate animal were compared with the same electrode. (B) Sample traces of CFE currents in response to 20 µM dopamine puffs at different [Ca2+]ex. The sensitivity of the CFE is not dependent on changes in [Ca2+]ex. (C, D) Sample traces (average of four sweeps) and quantification of peak dopamine release evoked by optogenetic stimulation performed as in Figure 1A–D, but at 2 mM vs. 4 mM [Ca2+]ex, n = 7 slices/3 mice. The modest enhancement of peak dopamine detected in response to increasing [Ca2+]ex from 2 mM to 4 mM is likely due to the high initial release probability of dopamine secretion at 2 mM [Ca2+]ex, which we described before (Liu et al., 2018). Data in D are shown as mean ± SEM, *p<0.05, statistical significance was determined by paired Student’s t-test in D.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58359/elife-58359-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of the striatal synaptosome preparation. (B, C) Sample confocal images (B) and quantification (C) of striatal synaptosomes stained for Synaptotagmin-1, the release site marker Bassoon and the dopamine neuron marker TH. Consistent with experiments from cultured midbrain neurons (Mendez et al., 2011), Syt-1 is often present in synaptosomes that are positive for Bassoon and TH (solid arrowhead). It is infrequently present in TH-positive particles that do not contain Bassoon (arrow) and is sometimes present in TH negative synaptosomes that contain Bassoon and are from non-dopaminergic axons (hollow arrowheads, striatal synapses rely in part on Syt-9 instead of Syt-1 [Xu et al., 2007]), n = 21 images/2 mice, each circle represents the average result of an image containing 300–600 synaptosomes. Data are mean ± SEM, ***p<0.001, statistical significance was determined by one-way ANOVA followed by Dunnett’s multiple comparisons test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58359/elife-58359-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of the extracellular recording. Dopamine axonal firing was induced optogenetically in the dorsal striatum and field potentials were recorded with an extracellular recording pipette filled with ACSF. Recordings were performed as described in the Materials and methods, and it was previously established that these potentials reflect action potential firing of dopamine axons (Liu et al., 2018). (B–E) Sample traces (B, C, average of 100 sweeps) and analyses (D, E) of extracellular potentials recorded during a 10 Hz train in Syt-1 control and Syt-1 cKODA slices. The response to the 1st stimulus in B is magnified in C and shown as before (black) and after (grey) application of the sodium channel blocker TTX (1 µM). Quantification of the amplitude before and after TTX is shown in D, quantification of all responses in the 10 stimulus 10 Hz train normalized to the average first amplitude in Syt-1 control is shown in E, Syt-1 control n = 6 slices/3 mice, Syt-1 cKODA n = 6/3 in D and E. (F, G) Same experiment as in B and E but at a stimulation frequency of 40 Hz, the first 10 of a total of 40 stimuli are shown. The higher stimulation frequency leads to action potential failures and depression of the normalized amplitudes after the first stimulus, Syt-1 control n = 5/4, Syt-1 cKODA n = 4/4. Data are mean ± SEM, **p<0.01, statistical significance was determined by one-way ANOVA followed by Sidak’s multiple comparisons test in D, and two-way ANOVA followed by Sidak’s multiple comparisons test in E (ns, p>0.05 for genotype, stimulus number and interaction) and G (***p<0.001 for stimulus number, p>0.05 for genotype and interaction).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58359/elife-58359-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic of the experiment. Electrical stimulation activates dopamine fibers and cholinergic interneurons, and cholinergic innervation of dopamine axons accounts for as much as ~90% of the extracellular dopamine detected upon electrical stimulation and leads to enhanced depression of dopamine release during stimulus trains (Liu et al., 2018; Threlfell et al., 2012; Zhou et al., 2001). (B) Sample traces (single sweep) and (C) quantification of peak dopamine release in Syt-1 control and Syt-1 cKODAslices evoked by single electrical stimuli at increasing intensities (10–90 µA), Syt-1 control n = 7 slices/3 mice, Syt-1 cKODA n = 7/3. (D, E) Sample traces (D, average of four sweeps) and (E) all responses normalized to the average first amplitude in Syt-1 control, evoked by 10 Hz 10-stimulus train using electrical stimulation. Syt-1 control n = 3/3 mice, Syt-1 cKODA n = 5/3. Data are mean ± SEM, ***p<0.001, statistical significance in C and E were determined by two-way ANOVA (C, E: *** for genotype, stimulus number and interaction) followed by Sidak’s multiple comparisons test (C: *** each for 40–90 μA; E: *** for first stimulus).
 
 The Allen Brain Atlas and single cell sequencing data (Lein et al., 2007; Saunders et al., 2018) suggest that of the putative Ca2+ sensors, Synaptotagmin-1 and –7 expression levels are high in midbrain dopamine neurons, while expression of the other candidates, Synaptotagmin-2 and −9, Doc2 and otoferlin, appears to be low. Using subcellular fractionation, we found that Synaptotagmin-1 is present in striatal synaptosomes that were positive for the dopamine cell marker tyrosine hydroxylase (TH) and the active zone protein Bassoon (Figure 1—figure supplement 2). We hypothesized that Synaptotagmin-1 is the main Ca2+ sensor for dopamine release. We generated conditional knockout mice in which we deleted Synaptotagmin-1 from dopamine neurons (Syt-1 cKODA mice, Figure 1E) by crossing mice with ‘floxed’ conditional alleles for Synaptotagmin-1 (Skarnes et al., 2011; Zhou et al., 2015) to DATIRES-Cre mice (Bäckman et al., 2006). In these mice, we expressed oChiEF-citrine, a fast channelrhodopsin, selectively in dopamine neurons using AAVs (Figure 1A) to optogenetically evoke dopamine release through triggering of axonal action potentials (Liu et al., 2018). A 1 ms light pulse triggered dopamine release with a rise time of 1.81 ± 0.23 ms in control mice, but in Syt-1 cKODA mice dopamine release was effectively abolished (Figure 1F and G). During short stimulus trains (10 stimuli at 10 Hz), dopamine release strongly depressed in Syt-1 control mice (Figure 1H and I), which was not due to action potential failures (Figure 1—figure supplement 3), but likely a consequence of the high initial release probability (Figure 1—figure supplement 1C and D, and Liu et al., 2018). In Syt-1 cKODA mice, stimulus trains failed to evoke measurable dopamine release. Hence, Synaptotagmin-1 is likely the main Ca2+ sensor that mediates synchronous dopamine release.
 
@@ -52,15 +72,144 @@ Here, we find that synchronous striatal dopamine release requires the fast Ca2+ 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.SJL-Slc6a3tm1.1(cre)Bkmm/J; DATIRES-Cre</td>
+      <td>Bäckman et al., 2006</td>
+      <td>JAX 006660, RRID:IMSR_JAX:006660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze; Ai32</td>
+      <td>Madisen et al., 2012</td>
+      <td>JAX 012569, RRID:IMSR_JAX:012569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6NTac-Syt1tm1a(EUCOMM)Wtsi/WtsiCnrm; Syt-1 floxed; Syt1lox/lox</td>
+      <td>Skarnes et al., 2011; Zhou et al., 2015; obtained from Dr. T.C. Südhof</td>
+      <td>EUCOMM (EM:06829), RRID:IMSR_EM:06829</td>
+      <td>Conditional Synaptotagmin-1 floxed mice</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat#: CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-flex-oChIEF-citrine</td>
+      <td>Addgene; Lin et al., 2009</td>
+      <td>Plasmid# 50973, RRID:Addgene_50973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nomifensine</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG2a anti-Bassoon SAP7F407 (A85)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat# ADI-VAM-PS003-F, RRID:AB_11181058</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-Tyrosine hydroxylase (A111)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 213 104, RRID:AB_2619897</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Synaptotagmin-1 antiserum (A24)</td>
+      <td>gift from Dr. T.C. Südhof</td>
+      <td>V216</td>
+      <td>ICC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microdialysis probe</td>
+      <td>Harvard Apparatus</td>
+      <td>Item# CMA8309581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Carbon fiber filaments</td>
+      <td>Goodfellow</td>
+      <td>Item# C 005722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285, https://imagej.net/Fiji/Downloads</td>
+      <td>Used for confocal synaptosome and 3D-SIM slice experiments</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoftWoRX</td>
+      <td>GE Healthcare</td>
+      <td>http://incelldownload.gehealthcare.com/bin/download_data/SoftWoRx/7.0.0/SoftWoRx.htm</td>
+      <td>Used for 3D reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom MATLAB code</td>
+      <td>Liu et al., 2018</td>
+      <td>https://github.com/hmslcl/3D_SIM_analysis_HMS_Kaeser-lab_CL (Liu, 2017)</td>
+      <td>Used for analysis of 3D-SIM and synaptosome images</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798, https://www.graphpad.com/scientific-software/prism</td>
+      <td>Used for statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 DATIRES-Cre mice (Bäckman et al., 2006) express Cre recombinase under the dopamine transporter (DAT) gene locus, and were obtained from the Jackson laboratories (RRID:IMSR_JAX: 006660, B6.SJL-Slc6a3tm1.1(cre)Bkmm/J). Mice for the Cre-dependent expression of ChR2 (Madisen et al., 2012) (Ai32, RRID:IMSR_JAX:012569, B6.129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze), obtained from the Jackson Laboratories, were crossed to DATIRES-Cre mice, and mice used for experiments were heterozygote for both DATIRES-Cre and ChR2. The conditional Synaptotagmin-1 knockout mice were generated by EUCOMM (EM:RRID:IMSR_EM:06829, C57BL/6NTac-Syt1tm1a(EUCOMM)Wtsi/WtsiCnrm) (Skarnes et al., 2011), described in Zhou et al., 2015, and obtained from Dr. T.C. Südhof. Syt-1 cKODA mice were generated by crossing Syt-1 floxed mice with DATIRES-Cre mice, and for all experiments, Syt-1 cKODA mice were mice homozygote for the Syt-1 floxed allele and heterozygote for DATIRES-Cre. Syt-1 control mice were siblings of Syt-1 cKODA mice with two wild type Syt-1 alleles and a heterozygote DATIRES-Cre allele, except for KCl puffing experiments in Figure 2F–I and electrical stimulation experiments in Figure 1—figure supplement 4. In these experiments, Syt-1 controls were either heterozygote for the Syt-1 floxed allele and for DATIRES-Cre, or homozygote for the Syt-1 floxed allele without a DATIRES-Cre allele. Mice were group housed in a 12 hr light-dark cycle with free access to water and food, and experiments were done in male and female mice. All animal experiments were done in accordance with approved protocols of the Harvard University Animal Care and Use Committee.
 
-## Production of AAV viruses and stereotaxic surgeries
+### Production of AAV viruses and stereotaxic surgeries
 
 In Syt-1 control and Syt-1 cKODA mice striatal dopamine fibers were activated after transduction of dopamine neurons with AAVs for Cre-dependent expression of oChIEF-citrine (Lin et al., 2009), a fast channelrhodopsin variant (p867, RRID:Addgene_50973). AAVs (serotype AAV2/5) were generated in HEK293T cells (purchased as identified, mycoplasma free cell line from ATCC, Cat#: CRL-3216, RRID:CVCL_0063) using calcium phosphate transfection. 72 hr after transfection, cells were collected, lysed, and viral particles were extracted and purified from the 40% layer after iodixanol gradient ultracentrifugation. Quantitative rtPCR was used to measure the genomic titer (2.31–2.75 × 1012 genome copies/ml). For stereotaxic surgeries, mice were anesthetized using 5% isoflurane and mounted on a stereotaxic frame. 1.5–2% isoflurane was used to maintain a stable anesthesia during the surgery. 1 μl of viral solution was injected unilaterally into the right substantia nigra pars compacta (SNc – 0.6 mm anterior, 1.3 mm lateral of Lambda and 4.2 mm below pia) of Syt-1 control and Syt-1 cKODA mice at P25-29 using a microinjector (PHD ULTRA syringe pump, Harvard Apparatus) at the rate of 100 nl/min. After surgery, the mice obtained analgesia and were allowed to recover for at least 21 d prior to recording. Stereotaxic surgeries were performed according to protocols approved by the Harvard University Animal Care and Use Committee.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Male and female mice (42–113 days old) were deeply anesthetized with isoflurane and decapitated. 250 µm thick sagittal brain sections containing the striatum were cut using a vibratome (Leica, VT1200s) in ice-cold cutting solution with (in mM): 75 NaCl, 75 sucrose, 2.5 KCl, 7.5 MgSO4, 26.2 NaHCO3, 1 NaH2PO4, 12 glucose, 1 sodium ascorbate, 1 myo-inositol, 3 sodium pyruvate, (pH 7.4, 300–310 mOsm). Slices were incubated at room temperature for 1 hr in incubation solution bubbled with 95% O2 and 5% CO2 containing (in mM): 126 NaCl, 2.5 KCl, 1.3 MgSO4, 2 CaCl2, 26.2 NaHCO3, 1 NaH2PO4, 12 glucose, 1 sodium ascorbate, 1 myo-inositol, 3 sodium pyruvate (pH 7.4, 305–310 mOsm). Recording was done at 34–36°C, and slices were continuously perfused with artificial cerebrospinal fluid (ACSF) at 3–4 ml/min bubbled with 95% O2 and 5% CO2. ACSF contained (in mM): 126 NaCl, 2.5 KCl, 2 CaCl2 (unless noted otherwise), 1.3 MgSO4, 1 NaH2PO4, 12 glucose, 26.2 NaHCO3, pH 7.4, 300–310 mOsm. Recordings were completed within 5 hr of slicing. In Figure 3A–E, 10 µM nomifensine (Tocris, Catalogue No.#1992) was applied to block the dopamine transporter (DAT). For all genotype comparisons, each littermate pair was recorded on the same day with interleafed recordings, and the experimenter was blind to genotype throughout recording and data analyses. All data acquisition and analyses for electrophysiology was done using pClamp10 (Clampex, Axon Instruments).
 
@@ -76,26 +225,26 @@ For experiments in variable [Ca2+]ex, CFEs were first tested with a 20 µM dopam
 
 Extracellular recordings in Figure 1—figure supplement 3 were performed with an ACSF filled glass pipette (2–3 µm tip diameter) that was placed 20–60 µm below the slice surface in areas of the dorsolateral striatum with uniform citrine fluorescence. Optogenetic stimulation was applied as a 10 Hz train (Figure 1—figure supplement 3B–3E) or a 40 Hz train (Figure 1—figure supplement 3F and G) every 10 s and 100 sweeps were averaged for quantification (Figure 1—figure supplement 3B–3G). Sodium channels were blocked using 1 µM TTX (Tocris, Catalogue No.# 1078) and extracellular potentials evoked by 10 Hz trains were recorded before and after TTX. To quantify the reduction by TTX, the amplitude evoked by the 1st stimulus in the 10 Hz train before and after TTX was analyzed in Syt-1 control and Syt-1 cKODA mice (Figure 1—figure supplement 3C and D).
 
-## Immunostaining of brain sections
+### Immunostaining of brain sections
 
 Male and female Syt-1 control and cKODA littermate mice (99–111 days old) were deeply anesthetized with 5% isoflurane and perfused transcardially with ice-cold 30–50 ml phosphate buffer saline (PBS), followed by 50 ml of 4% paraformaldehyde (PFA) in PBS at 4°C. Brains were then left in 4% PFA for 12–16 hr followed by incubation in 30% sucrose + 0.1% sodium azide in PBS overnight or until they sank to the bottom of the tube. Coronal striatal sections (20 µm thick) were cut using a vibratome (Leica, VT1000s) in ice-cold PBS. Antigen retrieval was performed on slices overnight at 60⁰C in 150 mM NaCl, 1 mM EDTA, 0.05% Tween 20, 10 mM Tris Base, pH 9.0. After antigen retrieval, slices were washed in PBS, and incubated in Image-iT FX signal enhancer (Invitrogen, I36933) for 30 min at room temperature. Slices were washed in PBS for 10 min and non-specific binding was blocked in 10% goat serum in 0.25% Triton X-100 in PBS (PBST) for 1 hr at room temperature. Slices were stained with primary antibodies for 12 hr at 4°C, and the following primary antibodies were used: mouse monoclonal IgG2a anti-Bassoon (1:500, A85, RRID:AB_11181058) and guinea pig polyclonal anti-TH (1:1000, A111, RRID:AB_2619897). Next, slices were washed three times in PBST for 10 min and incubated in secondary antibodies (1:500, goat anti-mouse IgG2a Alexa 488, S8, RRID:AB_2535771, and goat-anti guinea pig Alexa 568, S27, RRID:AB_2534119) for 2 hr at room temperature in PBST. Sections were washed three times in PBST for 10 min and then mounted on Poly-D-lysine coated #1.5 cover glasses (GG-18–1.5-pdl, neuVitro) with H-1000 mounting medium (Vectashield). At all times, the experimenter was blind to the genotype of the mice.
 
-## 3D-SIM image acquisition and analysis
+### 3D-SIM image acquisition and analysis
 
 Image acquisition and analyses were done essentially as described before (Liu et al., 2018) using a DeltaVision OMX V4 Blaze structured illumination microscope (GE Healthcare) with a 60 x, 1.42 N.A. oil immersion objective and Edge 5.5 sCMOS cameras (PCO) for each channel. Z stacks were acquired with 125 nm step size and 15 raw images per plane (five phases, three angles). Immersion oil matching was used to minimize spherical aberration. Lateral shift between green and red channels was measured using a control slide to generate a calibration image and all images were reconstructed using this calibration to remove lateral shifts. All raw images were aligned and reconstructed to obtain superresolved images using the image registration function in softWoRx. Image volumes (40 × 40 × 6 µm3) were acquired from 7 to 8 regions within the dorsolateral striatum in each section. For image analysis, regions of interest (ROIs) ranging from 20 × 20 × 2.5 µm3 to 25 × 25 × 2.5 µm3 were selected manually in each image stack. ROIs were analyzed to characterize TH and Bassoon signals and to determine their overlap using a custom written MATLAB code (Liu et al., 2018) (available at https://github.com/hmslcl/3D_SIM_analysis_HMS_Kaeser-lab_CL; Liu, 2017). Briefly, intensity thresholding using Otsu and size thresholding (0.04–20 µm3 for TH axons, 0.003–0.04 µm3 for Bassoon) were applied to each ROI. The volume occupied by TH was quantified and was divided by the total image volume (Figure 2B). The TH signals were skeletonized to determine TH axon length by 3D Gaussian filtering and a homotypic thinning algorithm. TH axon length was divided by the total image volume in Syt-1 control and Syt-1 cKODA mice (Figure 2C). The volume of Bassoon clusters and percentage overlap of Bassoon with TH was calculated, and >40% overlap of Bassoon with TH was considered to be a positive association (Liu et al., 2018; Figure 2D and E). For generating controls using local shuffling, each Bassoon object was randomly shuffled within 1 × 1 × 1 µm3 for 1000 rounds of shuffling and for each ROI, and the overlap between the average of shuffled Bassoon and TH was calculated. Sample images in Figure 2A were generated using Imaris 9.0.2 (Oxford Instruments) from masked images of either ‘Bassoon + TH’ or ‘Bassoon within TH’ derived from the custom written MATLAB code. Adjustments of contrast, intensity and surface rendering were done identically for each condition for illustration, but after quantification. For all 3D-SIM data acquisition and analyses, the experimenter was blind to the genotype of the mice.
 
-## Striatal synaptosome preparation and immunostaining
+### Striatal synaptosome preparation and immunostaining
 
 Striatal synaptosome preparations were performed as previously described (Liu et al., 2018). Wild type mice (P21-70) were deeply anesthetized, decapitated, and brains were harvested into ice-cold PBS. Dorsal striata were dissected and placed into a pre-cooled detergent-free glass tube and 1 ml of ice-cold homogenizing buffer containing (in mM): 4 4-(2-hydroxyethyl)−1-piperazineethanesulfonic acid (HEPES), 320 sucrose, pH 7.4, and 1x of a mammalian protease inhibitor cocktail was added. A detergent-free ice-cold glass-teflon homogenizer was used to homogenize the tissue using 12 strokes. The striatal homogenate was added to 1 ml of homogenizing buffer and centrifuged at 1,000 g for 10 min at 4°C. The supernatant (S1) was collected and centrifuged at 12,500 g for 15 min at 4°C. The supernatant (S2) was removed and the pellet (P2) was re-homogenized in 1 ml homogenizing buffer with six strokes. A sucrose density gradient was prepared with 5 ml of both 0.8 M and 1.2 M sucrose in thin wall ultracentrifugation tubes (Beckman Coulter, Cat # 344059). The P2 homogenate was mixed with 1 ml of homogenizing buffer, and 1.5 ml was added to the top of the sucrose gradient and was centrifuged at 69,150 x g for 70 min at 4°C (SW 41 Ti Swinging-Bucket Rotor, Beckman Coulter, Cat. # 331362). The synaptosome layer (1–1.5 ml) was collected from the interface of the two sucrose layers. Synaptosomes were then diluted 20–30 times in homogenizing buffer and spun (4000 x g, 10 min) onto Poly-D-lysine coated #1.5 coverslips at 4°C. Excess homogenizing buffer was pipetted out and synaptosomes were fixed using 4% PFA in PBS for 20 min at 4⁰C. Non-specific binding block and permeabilization was done in 3% bovine serum albumin + 0.1% Triton X-100 in PBS at room temperature for 45 mins. Primary antibody staining was done for 12 hr at 4°C, followed by three washes for 15 mins each. Secondary antibody staining was done for 2 hr at room temperature in blocking solution followed by three washes each for 15 mins. The primary antibodies used were: mouse monoclonal IgG2a anti-Bassoon (1:1000, A85, RRID:AB_11181058), guinea pig polyclonal anti-TH (1:1000, A111, RRID:AB_2619897), and rabbit polyclonal anti-Synaptotagmin-1 antiserum (1:1000, A24, V216, a gift from Dr. T.C. Südhof). The secondary antibodies were: goat anti-mouse IgG2a Alexa 488 (1:500, S8, RRID:AB_2535771), goat anti-rabbit Alexa 555 (1:500, S22, RRID:AB_2535849), and goat anti-guinea pig Alexa 633 (1:500, S34, RRID:AB_2535757).
 
-## Confocal microscopy and image analysis of striatal synaptosomes
+### Confocal microscopy and image analysis of striatal synaptosomes
 
 Single optical sections of synaptosomes (105 × 105 µm2) stained for Bassoon (detected via Alexa 488), Synaptotagmin-1 (detected via Alexa-555) and TH (detected via Alexa 633) were imaged with an oil immersion 60 x objective and 1.5 x optical zoom using an Olympus FV1000 confocal microscope. For quantification, images were processed for background subtraction in Fiji using the ‘rolling ball’ algorithm with a radius of 1 µm for each channel. Each background subtracted image was analyzed in a custom MATLAB program (available at https://github.com/hmslcl/3D_SIM_analysis_HMS_Kaeser-lab_CL; Liu, 2017). Otsu intensity thresholds, size thresholds (0.2–1 µm2) and shape thresholds (ratio of x to y axis <1.5) were applied for object detection. These threshold settings were identical for each image and allowed for unbiased and automated detection of Bassoon-positive (Bassoon+), TH-positive (TH+) and Synaptotagmin-1-positive (Syt-1+) ROIs in each image, with a total of 300–600 synaptosome objects detected per image. These ROIs were then used to generate the Bassoon+TH+, Bassoon-TH+, Bassoon+TH- ROIs displayed in Figure 1—figure supplement 2C. The extent of overlap of Synaptotagmin-1+ ROIs with the various Bassoon/TH ROIs was quantified and a 20–100% overlap criterion was applied to define Synaptotagmin-1 positivity for the various Bassoon/TH ROIs. Sample images in Figure 1—figure supplement 2B were generated in Fiji with adjustments of brightness and contrast.
 
-## Microdialysis
+### Microdialysis
 
 Microdialysis was performed according to previously established methods (Liu et al., 2018). The probes (6 kDa MW cut-off, CMA 11, Harvard Apparatus, Catalogue# CMA8309581) were calibrated with freshly made dopamine solutions (0, 4 and 8 µM) dissolved in ACSF before each experiment. A fresh probe was used for each mouse. The microdialysis probe was continuously perfused with ACSF containing (in mM): 155 NaCl, 1.2 MgCl2, 2.5 KCl, 1.2 CaCl2, and 5 glucose at a speed of 1 µl/min. After probe calibration, the probe was inserted into dorsal striatum (coordinates: 1.0 mm anterior, 2.0 mm lateral of bregma, and 3.3 mm below pia) of anesthetized male and female mice using stereotaxy (73–103 days old). Striatal dialysates were collected every 15 min and the concentration of dopamine was measured using an HPLC (HTEC-510, Amuza Inc) connected to an electrochemical detector (Eicom). The data during the first 75 min were not plotted because during this time window dopamine levels stabilize after surgery. Average dopamine levels from the 76th - 120th min of Syt-1 control mice were used to normalize all dopamine values. 10 µM TTX dissolved in ACSF was applied using reverse dialysis starting at 121 min to inhibit firing of dopamine axons as described before (Liu et al., 2018). For all microdialysis data acquisition and analyses, the experimenter was blind to the genotype of the mice.
 
-## Statistical analyses
+### Statistical analyses
 
 Data are expressed as mean ± SEM. All statistical analyses were performed in Graphpad Prism. Student’s unpaired t-tests were used in Figure 2B and C, paired t-test in Figure 1—figure supplement 1D, Wilcoxon tests in Figure 3B and C, Mann Whitney tests in Figures 1G, 2H, I, 3D and E, one-way ANOVA followed by Dunnett’s multiple comparisons in Figure 1C and D and Figure 1—figure supplement 2C, one-way ANOVA followed by Sidak’s multiple comparisons tests in Figure 2D and E and Figure 1—figure supplement 3D, two-way ANOVA followed by Sidak’s multiple comparisons tests in Figures 1I and 3G, Figure 1—figure supplement 3E and Figure 1—figure supplement 4C, and two-way ANOVA mixed-effects analysis followed by Sidak’s multiple comparisons tests in Figure 1—figure supplement 3G and Figure 1—figure supplement 4E. For all genotype comparisons, the experimenter was blind to genotype during data acquisition and analyses.

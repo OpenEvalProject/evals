@@ -35,9 +35,45 @@ In general, such emergent functions are difficult to study in isolated cortical 
 
 ## Results
 
-## IC and CE are functionally coupled and acquire CS information
+### IC and CE are functionally coupled and acquire CS information
 
 Given the known anatomical connectivity between IC and CE, we first explored whether the IC and CE also form a discrete functional unit in brain networks. To this end, small animal resting state fMRI emerges as an effective technology for monitoring global brain states and their interactions with local circuitry (Gozzi et al., 2010; Griessner et al., 2018). Seed-based brain-wide correlation of the IC blood oxygenation level dependent signal in wild-type mice revealed functional coupling of the IC to the CE (Figure 1Ai top, n = 4; see Figure 1—figure supplement 1A, B for seed placement/correlation matrix). Conversely, CE seed-based analysis showed coupling with the anterior (aIC) and the posterior (pIC) portion of the IC (Figure 1Ai bottom). This brain-wide, unbiased approach delineated a network that functionally couples the IC with the CE. Intriguingly, this network includes the NBM as a potential relay between CE and IC (Figure 1Aii, Figure 1—figure supplement 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-v1.jpg)
+
+**Figure 1.:** (A) (i) Seed-based functional connectivity of the bilateral IC (top) showed coupling to CE and NBM. Seeding the CE (bottom) showed coupling to the aIC, pIC and NBM (radiological view). Significant z-scored correlations to seed nodes are displayed in orange (positive) and blue (negative). (ii) Bottom-view of region-based functional connectivity of ROIs (see correlation matrix in Figure 1—figure supplement 1B). Edge thickness depicts connectivity strength. Only nodes and edges with significant correlations to IC and CE are shown. Edges between IC, CE, and NBM are highlighted in black. (B) Schematic depiction of experimental recordings. Top, left: mice were chronically implanted with single-site silicon or multi-site tetrode probes in aIC and pIC. Top, right: SST::Cre, PKCδ::Cre, or wild-type mice were chronically implanted with a GRIN lens above CE in animals injected with AAVs carrying GCaMP6. Bottom: Experimental timeline of the four-stage discriminatory Pavlovian learning paradigm. (C) (i) Decoder accuracy (Da) of a multi-layer perceptron (MLP) classifier trained to detect CS information in the activity of 200 random draws of 40 neurons per IC subregion for each CS and stage. Mean of both CSs is shown (significant stage x subregion interaction in a two-way ANOVA F9,6384=13.69, p<0.0001). * Indicates significant differences from the respective habituation stage. (ii) MLP, trained on 400 random draws of neurons as in (i), to detect R(F)-CS, but applied on F(R)-CS within the habituation and recall stages (significant stage x subregion interaction in a two-way ANOVA, F3,6392=42.10, p<0.0001). * Indicates significant differences from the habituation stage. (iii) Mean Da of an MLP trained on the activity of 400 random draws of 40 neurons per IC subregion to detect R-US or F-US applied on R-CS or F-CS, respectively, within the Cearly and Clate stages (significant stage x subregion interaction in a two-way ANOVA F3,6392=50.14, p<0.0001). * Indicates significant differences from the Cearly stage. (D) (i) Da of an MLP trained to detect CS information in the activity of 200 random draws of neurons for each CE population (30 neurons for each CESST and CEPKCδ and seven neurons for CEm), CS and stage. Mean of both CSs is shown (significant stage x population interaction in a two-way ANOVA F15,9576=9.30, p<0.0001). * Indicates significance as in Ci. (ii) MLP, trained on 400 random draws of neurons as in (i), to detect R(F)-CS, but applied on F(R)-CS within the habituation and recall stages (significant stage x population interaction in a two-way ANOVA, F5,9588=30.40, p<0.0001). (iii) Mean Da of an MLP trained on the activity of 400 random draws of neurons (30 neurons each for CESST and CEPKCδ, and 10 from CEm) to detect R-US or F-US and applied on R-CS or F-CS, respectively, within the Cearly and Clate stages (significant stage x population interaction in a two-way ANOVA F5,9588=339.60, p<0.0001). Holm-Sidak post hoc for all analyses, ****p<0.0001. Only non-significant differences to shuffled data are explicitly indicated (‘ns’). All data presented as mean ± SEM. Full statistical report in Appendix 1—table 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Seed region masks used for functional connectivity of the anterior insular cortex (aIC) and central nucleus of amygdala (CE). (B) Functional connectivity in the CESHAM group with significant (one sample t-test, p<0.05) Fisher z-transformed Pearson correlation coefficients between each pair of brain regions (blue-to-red scale) is shown (significance of correlations reflected by the size of the square). (C) Region-based functional connectivity of IC, CE, and Nucleus Basalis of Meynert (NBM; from the correlation matrix in B). Edge thickness depicts connectivity strength.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Example waveforms of five single units (top, left) and their corresponding representation in PC space (right) from two recording sessions on separate days (bottom, left). (B) Nissl staining of tissue from an animal implanted with multi-site tetrodes in aIC (top, left) and pIC (top, right) and corresponding summary schema of all multi-site implantation sites (bottom). Red ‘X’s indicate corresponding electrolytic lesion sites in both staining and schema. Scalebar = 500 μm. (C) Nissl staining from tissue of animals implanted with single-site 16 Channel silicon probes in aIC (top, left) and pIC (top, right) and corresponding summary schema of all single-site implantation sites (bottom). Red lines indicate corresponding electrolytic lesion sites between staining and schema. Scalebar = 500 μm. (D) Viral expression of Cre-dependent hM4-mCherry (top, left) and ChR2-YFP (top, right) in the CE and corresponding projection fields with optic fiber (400 μm) position above NBM (bottom) in two multi-site recorded PKCδ::Cre animals. Scalebar = 100 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Schematic coronal sections of targeted areas and from all calcium recording groups. SST::Cre and PKCδ::Cre mice were injected with AAV-hSyn-DIO-GCaMP6f in the right lateral central amygdala (CEl). WT mice were injected with AAV-hSyn-GCaMP6m in the right medial central amygdala (CEm). Rectangular dashed shape indicates GRIN lens placement (Ø=500 µm); scalebar = 200 µm. BLA – basolateral amygdala, BMA – basomedial amygdala, CEc, capsular part of central amygdala.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Green overlay corresponds to automatically detected and manually selected units to exclude artifacts. Scalebar = 100 µm (top). Five representative traces from each FOV with detected calcium events in green. Vertical scalebar corresponds to four standard deviations of ΔF/F calcium signal, horizontal scalebar corresponds to 10 s (bottom).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** In all panels, black lines indicate significant differences (p<0.05) between subregions, as determined by Holm-Sidak post hoc analyses, while colored lines indicate significant differences (p<0.05) from zero for each subregion, as determined by one-sample t-tests. All data presented as mean ± SEM. (A) (i) PETH of CS-evoked population responses of IC subregions for (left) R-CS (significant effect of time in a two-way RM ANOVA, F52,11180=1.61, p=0.0037) and (right) F-CS (significant time x subregion interaction in a two-way RM ANOVA, F52,11076=2.23, p<0.0001) at habituation. (ii) Percentage of neurons responsive to task stimuli, determined by trial-averaged neuronal responses above a z-score of 1.65 at habituation. (iii) PETH of CS-evoked responses of IC responders (from ii) for (left) R-CS (significant effect of time in a two-way RM ANOVA, F52,1664=5.682, p<0.0001) and (right) F-CS (significant time x subregion interaction in a two-way RM ANOVA, F52,884=1.782, p=0.0007) at habituation. (B) (i) Percentage of neurons responsive to task stimuli, as determined by trial-averaged neuronal responses above a z-score of 1.65 in RC. (ii) Average z-scored population responses of IC subregions as PETH upon R-US (significant time x subregion interaction in a two-way RM ANOVA, F52,14248=1.87, p=0.0002). (iii) Percentage of neurons responsive to task stimuli, as determined by trial-averaged neuronal responses above a z-score of 1.65 in FC. (iv) Average z-scored population responses as PETH of IC subregions upon F-US (significant time x subregion interaction in a two-way RM ANOVA, F50,7100=2.29, p<0.0001). (C) (i) PETH of CS-evoked population responses at recall of IC subregions for (left) R-CS (no significant effect in a two-way RM ANOVA) and (right) F-CS (significant effect of time in a two-way RM ANOVA, F52,14560=2.42, p<0.0001). (ii) Percentage of neurons responsive to task stimuli, determined by trial-averaged neuronal responses above a z-score of 1.65 at recall. (iii) PETH of CS-evoked responses of IC responders (from ii) for (left) R-CS (significant effect of time in a two-way RM ANOVA, F52,1924=2.984, p<0.0001) and (right) F-CS (significant time x subregion interaction in a two-way RM ANOVA, F52,1716=2.159, p<0.0001) at recall. Full statistical report in Appendix 1—table 1.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** In all panels, black lines indicate significant differences (p<0.05) between populations, as determined by Holm-Sidak post hoc analyses, while colored lines indicate significant differences (p<0.05) from zero for each population, as determined by one-sample t-tests. All data presented as mean ± SEM. (A) (i) PETH of CS-evoked population responses of CE subpopulations for (left) R-CS (significant time x population interaction in a two-way RM ANOVA, F64,3232=2.76, p<0.0001) and (right) F-CS (significant time x population interaction in a two-way RM ANOVA, F64,4032=2.43, p<0.0001) at habituation. (ii) Percentage of neurons responsive to task stimuli, as determined by trial-averaged neuronal responses above a z-score of 1.65 at habituation. (iii) PETH of CS-evoked population responses of CE responders (from ii) for (left) R-CS (significant effect of time in a two-way RM ANOVA, F32,800=7.436, p<0.0001) and (right) F-CS (significant time x population interaction in a two-way RM ANOVA, F64,1056=1.721, p=0.0005) at habituation. (B) (i) Percentage of neurons responsive to task stimuli, as determined by trial-averaged neuronal responses above a z-score of 1.65 in RC. (ii) Average z-scored population responses of CE subpopulations as PETH upon R-US (significant time x population interaction in a two-way RM ANOVA, F56,3976=2.45, p<0.0001). (iii) Percentage of neurons responsive to task stimuli, as determined by trial-averaged neuronal responses above a z-score of 1.65 in FC. (iv) Average z-scored population responses as PETH of CE subpopulations upon F-US (significant time x population interaction in a two-way RM ANOVA, F56,4480=4.22, p<0.0001). (C) PETH of CS-evoked population responses at recall of CE subpopulations for (left) R-CS (significant time x population interaction in a two-way RM ANOVA, F72,9684=2.81, p<0.0001) and (right) F-CS (significant time x population interaction in a two-way RM ANOVA, F72,9072=2.01, p<0.0001). (ii) Percentage of neurons responsive to task stimuli, as determined by trial-averaged neuronal responses above a z-score of 1.65 at recall. (iii) PETH of CS-evoked responses at recall of CE responders (from ii) for (left) R-CS (significant time x population interaction in a two-way RM ANOVA, F72,2952=3.577, p<0.0001) and (right) F-CS (significant time x population interaction in a two-way RM ANOVA, F72,3240=2.273, p<0.0001) at recall. All data presented as mean ± SEM. Full statistical report in Appendix 1—table 1.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Decoder accuracy (Da) of an MLP trained to detect CS information in the activity of 200 random draws of 40 neurons per IC subregion for (i) R-CS (significant stage x subregion interaction in a two-way ANOVA, F9,3184=5.68, p<0.0001) and (ii) F-CS (significant stage x subregion interaction in a two-way ANOVA, F9,3184=11.50, p<0.0001) and 200 random draws of CE neurons (30 for each CESST and CEPKCδ and seven for CEm) per stage upon (iii) R-CS (significant stage x population interaction in a two-way ANOVA, F15,4776=29.17, p<0.0001) and (iv) F-CS (significant stage x population interaction in a two-way ANOVA, F15,4776=7.93, p<0.0001). * Indicate significant differences from the respective habituation stage within each subregion/population by a designated post hoc test. Only non-significant differences to shuffled data are explicitly indicated (‘ns’). (B) Alternative classification approach to Figure 1Cii, Dii for CS discrimination. An MLP was trained to discriminate between preCS, R-CS, and F-CS. Graphs show average Da for classifying the correct CS, given the bin is within any CS period and was classified as such. (i) 200 random draws of 40 neurons each for aIC and pIC (significant stage x subregion interaction in a two-way ANOVA, F3,1592=18.53, p<0.0001) and (ii) of 30 neurons from CEPKCδ and CESST and 7 CEm neurons (significant stage x population interaction in a two-way ANOVA, F5,2366=15.58, p<0.0001). (C) (i) Da of an MLP trained to detect US information in the activity of 200 random draws of 40 neurons per IC subregion, 30 for CEPKCδ and CESST and 10 neurons for CEm for R-US (IC: significant stage x subregion interaction in a two-way ANOVA, F3,1592=16.06, p<0.0001; CE: significant stage x population interaction in a two-way ANOVA, F5,2228=5.40, p<0.0001) and F-US (IC: significant effect of subregion in a two-way ANOVA, F3,1592=1619.00, p<0.0001, CE: significant stage x population interaction in a two-way ANOVA, F5,2388=4.01, p=0.0013). This classifier was used for the CS←US task. (ii) Projection of US properties by application of the MLP from (i) to the respective CS (IC/RC: significant stage x subregion interaction in a two-way ANOVA, F9,3192=242.50, p<0.0001; IC/FC: significant stage x subregion interaction in a two-way ANOVA, F9,3192=9.97, p<0.0001; CE/RC: significant stage x population interaction in a two-way ANOVA, F5,4788=18.39, p<0.0001; CE/FC: significant stage x population interaction in a two-way ANOVA, F5,4788=603.30, p<0.0001). All data presented as mean ± SEM. Full statistical report in Appendix 1—table 1.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** In all panels, black lines indicate significant differences (p<0.05) between subregions/populations, as determined by Holm-Sidak post hoc analyses, while colored lines indicate significant differences (p<0.05) from zero for each subregion/population, as determined by one-sample t-tests. All data presented as mean ± SEM. (A) Performance of individual mice in the reward (left) and fear (right) domain in IC and CE, as determined by the p-value from t-tests comparing the number of port visits (reward) and freezing episode onsets (fear) before and during CS presentations at recall. Color assignment of individual points according to a median split of p-values (red – performer, gray – non-performer). The median performer was assigned to the ‘performer’ group if its p-value was ≤0.5. (B) PETH of population responses according to performance for aIC upon (i) R-US (significant time x performance interaction in a two-way RM ANOVA, F52,7592=1.63, p=0.0029) and (ii) F-US (significant time x performance interaction in a two-way RM ANOVA, F50,3950=2.47, p<0.0001), and of pIC upon (iii) R-US (significant time x performance interaction in a two-way RM ANOVA, F52,6552=9.86, p<0.0001) and (iv) F-US (significant time x performance interaction in a two-way RM ANOVA, F50,3050=3.27, p<0.0001). (C) PETH of population responses according to performance for aIC upon (i) R-CS (significant time x performance interaction in a two-way RM ANOVA, F52,8268=2.09, p<0.0001) and (ii) F-CS (significant time x performance interaction in a two-way RM ANOVA, F52,8268=1.36, p=0.0434) and for pIC upon (iii) R-CS (no significant effect in a two-way RM ANOVA) and (iv) F-CS (significant time x performance interaction in a two-way RM ANOVA, F52,6188=1.81, p=0.0003). (D) (i-iii) PETH of population responses according to performance at recall for CESST upon R-US (top, significant time x performance interaction in a two-way RM ANOVA, F28,3052 = 2.33, p<0.0001; middle, significant effect of performance in a two-way RM ANOVA, F1,109=5.70, p=0.0187) and (bottom) F-US (significant time x performance interaction in a two-way RM ANOVA, F28,1344=2.22, p=0.0003). (iv-vi) PETH of population responses according to performance at recall for CEPKCδ upon R-US (top, significant time x performance interaction in a two-way RM ANOVA, F28,3192=3.07, p<0.0001; middle, significant time x performance interaction in a two-way RM ANOVA, F28,3220=1.56, p=0.0262) and (bottom) F-US (significant time x performance interaction in a two-way RM ANOVA, F28,1848=2.96, p<0.0001). (vii-ix) PETH of population responses according to performance at recall for CEm upon R-US (top, significant effect of time in a two-way RM ANOVA, F28,1512=3.95, p<0.0001; middle, significant time x performance interaction in a two-way RM ANOVA, F28,1512=2.92, p<0.0001) and (bottom) F-US (significant effect of time in a two-way RM ANOVA, F28,1204=22.73, p<0.0001). Full statistical report in Appendix 1—table 1.
 
 These data suggest that the IC↔CE/NBM network could operate as a functional unit. We next set out to deconstruct functional interactions of key elements in this network. The IC can be functionally parcellated into anterior and posterior domains (aIC and pIC) (Geuter et al., 2017). In humans, such rostro-caudal gradients correlate with abstract rule learning and cognitive control (Badre and D’Esposito, 2007; Bahlmann et al., 2015; Koechlin and Jubault, 2006). Within CE, somatostatin+ (SST::Cre, CESST), protein kinase C-δ+ (PKCδ::Cre, CEPKCδ), and CEm neurons are critical components for affective learning and behavioral gating (Fadok et al., 2018; Haubensak et al., 2010; Kim et al., 2017; Li et al., 2013). Taken together, these individual elements might constitute a hierarchical network encoding Pavlovian stimuli to control conditioned responding.
 
@@ -57,9 +93,41 @@ Interestingly, IC subregions dissociated the primary valence of both USs, as ind
 
 In summary, we propose a model wherein CESST and CEm differentiate intrinsic CS salience at habituation (Figure 1Dii). After learning, these intrinsic differences are overridden by the uniform salience component of CS-US associations (in either valence domain) (Figure 1Diii, see Figure 1—figure supplement 7Cii for valence-resolved transfer). Importantly, in this model, early CS salience in CEPKCδ is replaced by CS valence information in later learning stages, driving CS discrimination in CE (Figure 1Dii and Figure 1—figure supplement 7Bii).
 
-## IC–CE information flow facilitates conditioned responding
+### IC–CE information flow facilitates conditioned responding
 
 The representation of CS salience and valence components are distributed across the IC–CE network. In turn, the exchange of this information may be required for conditioned responding in Pavlovian learning. To characterize such cortico-limbic interactions, we first assessed synaptic connectivity between a/pIC and CEl populations by retrograde tracing (Figure 2—figure supplement 1A) and slice electrophysiology (Figure 2A, Figure 2—figure supplement 1B). We found that aIC and pIC innervate CEl subpopulations symmetrically (92% of PKCδ+/91% of SST+ neurons responsive to aIC and 100% of PKCδ+/SST+ neurons to pIC input) (Figure 2B and ‘IC–CE circuit architecture’ in Appendix 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-v1.jpg)
+
+**Figure 2.:** (A) Fraction of SST+ and PKCδ+ neurons in CEl that responded with EPSCs upon optogenetic stimulation of aIC or pIC input. (B) Scheme for IC inputs to CEl populations. (C) Performance-dependent transfer entropy (TE) between IC and CE nodes for (i) correct (port visits during R-CS and freezing episodes during F-CS) and (ii) incorrect (port visits or freezing outside of corresponding CS) behavioral episodes (±2 s of bin containing behavioral episode onset). RF Decoder accuracy (Da) for decoding behavioral episodes shown above networks. Node color corresponds to RF-associated feature importance, indicating information most relevant for RF classification (see Figure 2—figure supplement 2Ai). (D) (i) Experimental approach to functionally dissect aIC and pIC inputs to CE during a Pavlovian learning task. (ii) Behavioral performance of optogenetic experimental groups in Cearly and Clate stages. Significant MANOVA in Cearly (F2,44=3.60, p=0.0126) and Clate (F2,44=6.43, p=0.0004). (iii) Behavioral performance of the optogenetic (left) and chemogenetic (hM4(pIC)–CE, right) IC–CE treatment cohorts during manipulation-free recall. Significant MANOVA at recall for the aIC-CE manipulation (F1,13=8.18, p=0.005) and pIC-CE manipulation (F1,17=6.81, p=0.0067). Data shown as mean ± SEM. nGFP=9/12 naIC–CE=7, npIC–CE=9/8. Holm post hoc as difference to control is noted as #, between manipulation groups is noted as $. #/$p<0.05, ##p<0.01, ###p<0.001, $$$$p<0.0001. Full statistical report in Appendix 1—table 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Stereotactic injection of fluorescently labelled CTB into CE (left) with representative backlabeling in aIC and pIC (middle) and quantification (right). Each data point represents a single animal. (B) To assess synaptic connectivity between IC subregions and CE subpopulations in Figure 2A, PKCδ::Cre mice received injections of AAVs carrying Cre-dependent GFP into CE and syn-ChR2 into aIC or pIC (left). Exemplary slice showing GFP expression in CEPKCδ (green) and biocytin-filled fluorescently labelled streptavidin-stained patched neurons (magenta) (right).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) RF Da (left) and associated feature importance distribution (right) for (i) correct/incorrect behavior during conditioning and recall (one-way ANOVA, F9,156190=5184.00, p<0.0001), (ii) correct/incorrect CS in conditioning (one-way ANOVA, F9,73454=2437.00, p<0.0001), (iii) CS in conditioning (one-way ANOVA, F9,77790=5185.00, p<0.0001), (iv) US in conditioning (one-way ANOVA, F9,77821=2126.00, p<0.0001) and (v) CS in habituation for control and hM4(CEPKCδ) conditions (one-way ANOVA, F9,77619=1766.00, p<0.0001). For Da, * indicates a significant difference as determined by two-sample t-tests, $ indicates a significant difference as determined by one-sample t-tests to random (0.5). For feature importance, Holm-Sidak post hoc was used for all analyses. *p<0.05, **p<0.01, ****/$$$$p<0.0001. (B) Summary of differential feature importance between conditions. Colors were used for all TE network projections.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Principle of the quantification of TE between neuron n1 and neuron n2, where k refers to past states and i and j label the sample subset of n1,i and n2,j of size v in each region. n2 future signal (time = t+1) can be predicted from the pattern of past activity (time = t-1) in n1. (B) Mean TE between all pairs of neurons for each CS-type and stage (RC, FC, recall), calculated for the entire network for 1 s binned data with history windows of 1, 2, or 3 s.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (top, left) Exemplary pictures of AAV-Syn-Arch injection sites in aIC and pIC (scalebar = 900 µm) and optic fiber placement above CE (scalebar = 100 µm). (bottom, left) Representation of the injection spread in aIC and pIC; heatmap corresponds to the fluorescence intensity. (right) Schematic placement of the optic fiber tip above CE marked with ‘x’.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) (i) Approach behavior in the RC stage quantified by the differential rate of port visits per minute (port visits/min during CS – port visits/min before CS onset)(significant session x treatment interaction in a two-way RM ANOVA, F14,154=3.40, p<0.0001). (ii) Avoidance behavior in the FC stage quantified as the percent of time spent freezing during baseline (1 min) and each CS presentation (10 s) (significant treatment x trial interaction in a two-way RM ANOVA, F10,110=4.71, p<0.0001). (B) Quantification of CS-specific (i) approach (visits/min) (significant effect of treatment in a two-way RM ANOVA, F2,22=3.95, p=0.0343) and (ii) avoidance behavior (percent of time spent freezing) (significant CS x treatment interaction in a two-way RM ANOVA, F4,44=3.17, p=0.0225) during a single recall session with four presentations per R-CS and F-CS, without optogenetic manipulation of aIC/pIC–CE pathways. Holm-Sidak post hoc was used for all analyses. */#/$p<0.05, **/##/$$p<0.01, ***/$$$p<0.001, ****p<0.0001, where ‘#’ indicates comparison to the control and ‘$’ comparison to the other treatment group; nGFP=9 naIC–CE=7, npIC–CE=9. All data presented as mean ± SEM. Full statistical report in Appendix 1—table 1.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (left) Exemplary pIC and aIC AAV-DIO-hM4-mCherry injection site and (middle) terminal hM4-mCherry field in CE and pIC; scalebar = 900 (full sections) and 100 µm (zoom-in). (right) Quantification of GFP and hM4 infection rate in aIC and pIC presented as percent of GFP/hM4 positive neurons over DAPI (data shown as mean ± SEM).
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Learning curves of the aIC–pIC and pIC–CE cohorts for approach behavior of the (i) control (significant CS x session interaction in a two-way RM ANOVA, F13,130=5.97, p<0.0001), (ii) hM4(pIC)-CE (significant CS x session interaction in a two-way RM ANOVA, F13,91=9.07, p<0.0001) and (iii) hM4(aIC)-pIC groups (significant CS x session interaction in a two-way RM ANOVA, F13,104=3.30, p=0.0003). (iv) Learning curves of avoidance behavior of control and treatment groups during the FC stage (significant effect of trial in a two-way RM ANOVA, F5,125=174.70, p<0.0001). (B) (i) Quantification of CS-specific (left) approach (significant effect of CS in a two-way RM ANOVA, F2,36=31.88, p<0.0001) and (right) avoidance behavior (significant effect of treatment in a two-way RM ANOVA, F1,18=8.65, p=0.0087) at drug-free recall in mice that underwent chemogenetic pIC–CE inhibition during conditioning. nGFP = 12 nhM4(pIC–CE)=8. (ii) Quantification of CS-specific (left) approach (significant effect of CS in a two-way RM ANOVA, F2,38=30.32, p<0.0001) and (right) avoidance behavior (significant effect of treatment in a two-way RM ANOVA, F1,19=15.80, p=0.0008) at drug-free recall in mice that underwent chemogenetic aIC–pIC inhibition during conditioning. nControls = 12, nhM4(aIC)-pIC=9. Note that the control group was shared between the hM4(pIC)-CE and hM4(aIC)-pIC cohorts, as they were trained in parallel. Holm-Sidak post hoc was used for all analyses. */#/$p<0.05, **/##p<0.01, ***p<0.001, ****p<0.0001, where ‘#’ indicates comparison to the control group. All data presented as mean ± SEM. Full statistical report in Appendix 1—table 1.
 
 To investigate whether CS information in the IC–CE network is relevant for conditioned responding, we trained a random forest (RF) classifier to assess the performance of the network in the representation of CS-bound behavior in iterative random draws of 100 neurons from IC and CE combined (see ‘Multi-region decoding’ in Materials and methods). A behavioral episode was considered ‘correct’ if it occurred during the presentation of the respective CS, and ‘incorrect’ if it occurred before CS onset. This analysis showed that successful association of CS and behavior was linked to correct trial performance (Figure 2—figure supplement 2Ai left; RF-associated feature importance in right is projected onto the elements of the network graph - see below). We then probed information exchange between IC and CE by quantifying the transfer entropy (TE) from event-aligned (electrophysiological spike or calcium event) 1s-binned activity centered on the onset of behavioral episodes (port visits for R-CS; freezing onsets for F-CS) (Figure 2—figure supplement 3A; Magrans de Abril et al., 2018). Stimuli or behaviors evoke a state that is generalizable across individuals within our circuit architecture, which makes this approach feasible (Lizier et al., 2011). After exploring TE parameter space by considering all possible neuron pairs within each CS and stage, as well as within and across regions, we applied the peak TE from a 1 s history for all subsequent analyses (Figure 2—figure supplement 3B). This analysis revealed significant information transfer from IC to CE for correct behavioral decisions (Figure 2Ci). Specifically, a subnetwork-specific transfer from aIC to CEPKCδ and CESST indicated correct port visits (Figure 2Ci green), while a transfer from pIC to CESST indicated correct freezing onsets (Figure 2Ci blue). This top-down information transfer was absent in incorrect behavioral episodes occurring outside of the CS presentation (Figure 2Cii). Taken together, this suggests that the information transfer in the IC↔CE/NBM network is critical for conditioned responding.
 
@@ -69,9 +137,21 @@ To test for effects on memory formation, mice underwent a recall session without
 
 Collectively, these data demonstrate a functional role for IC–CE interaction in both Pavlovian reward and fear learning, in line with the underlying information flow predicted from TE. We found that the IC innervates CE subpopulations symmetrically, while IC subregions drive conditioned responding antagonistically. Both projections implement Pavlovian memory to adapt behavior for future encounters of sensory cues.
 
-## Learning establishes a performance-linked intra-cortical hierarchy
+### Learning establishes a performance-linked intra-cortical hierarchy
 
 The previous experiments suggest a link between CS value and behavioral performance. To explore signatures of CS value in the network, we sought to separate CS-driven networks generated from CS periods that lead to a correct behavioral response (port visit during R-CS/freezing episode during F-CS) from CS periods with an incorrect behavioral response (unspecific or absent behavior). This analysis showed that correct conditioned responding is characterized by top-down TE from aIC to pIC (Figure 3Ai). These characteristics were different in unsuccessful trials, where TE from aIC to pIC was missing (Figure 3Aii). This finding paralleled the observed poorer decoding of CSs not containing correct behavioral episodes, as assessed by RF classification (Figure 2—figure supplement 2Aii for RF decoder accuracy and feature importance).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig3-v1.jpg)
+
+**Figure 3.:** (A) TE networks generated from CSs during which correct (i) and incorrect/no (ii) behavior occurred during CS presentations. RF decoder accuracy (Da) for decoding correct/incorrect CSs shown above network. Node color corresponds to feature importance from RF classification. (B) (i) Scheme of recordings from aIC and pIC multi-site implanted animals, examined for interregional interactions at the habituation and recall stages. (ii, iii) STA from the (ii) habituation and (iii) recall stages of 200 ms pIC LFP traces centered around the occurrence of 2388 preCS/2526 CS (habituation) and 7132 preCS/6920 CS (recall) aIC spikes. (iv, v) pIC LFP power-normalized SFC of STAs for (iv) habituation and (v) recall. (C) (i) Experimental strategy for the chemogenetic inhibition of the aIC–pIC pathway. (ii) Quantification of behavioral performance in reward and fear domains at recall with a significant MANOVA (F1,18=3.64, p=0.0471), nControls=12, nM4(aIC)-pIC=9. Data shown as mean ± SEM. Holm post hoc as difference to control, #p<0.05. Full statistical report in Appendix 1—table 1. (D) (i) TE network of incorrect CS (from Aii), with node color showing contrast feature importance between incorrect and correct CS. * Depict significantly different feature importance (Figure 2—figure supplement 2Aii). RF Da for decoding incorrect CSs shown above network. (ii) TE network (from Figure 2Cii) with node color illustrating contrast feature importance between incorrect and correct behavioral episodes. * Depict significantly different feature importance (Figure 2—figure supplement 2Ai). RF Da for decoding incorrect behavioral episodes shown above network.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Valence-resolved STA of 200 ms pIC LFP traces centered around the occurrence of spikes from aIC and the resulting pIC LFP power-normalized SFC thereof for habituation and recall for animal MS1 (as in Figure 3B).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Valence-resolved STA of 200 ms pIC LFP traces centered around the occurrence of spikes from aIC and the resulting pIC LFP power-normalized SFC thereof for habituation and recall for worse-performing animals (MS2 and MS3 in Figure 1—figure supplement 8A). (B) Valence-resolved STA of 200 ms aIC LFP periods centered around the occurrence of spikes from pIC and the resulting aIC LFP power-normalized SFC thereof for habituation and recall for animal MS1 (as in Figure 3B).
 
 Directional aIC–pIC communication places aIC above pIC in a cortical hierarchy. Top-down processes can ascribe predictions for sensory input to lower elements in the hierarchy, which may facilitate interpretation (Kok et al., 2014). To probe for a neurophysiological correlate of an intra-cortical hierarchy in vivo, we simultaneously recorded from aIC and pIC during the Pavlovian learning task (Figure 3Bi). We related local spikes (aIC) to distant local field potentials (LFPs in pIC) to assess coherence, which is a proposed mechanism through which neuronal networks exchange information by adjusting gain (Fries, 2015). Because performance should scale with learning progress, we chose the best performer in the fear domain at the recall stage (Figure 1—figure supplement 8A, ‘MS1’). Spike-triggered averages (STAs) of the pIC LFP were generated around spikes from aIC. During habituation, STA amplitudes were similar during CS presentation and a 10 s period immediately preceding CS onset (preCS) (Figure 3Bii). Strikingly, during recall, we observed a stimulus-induced increase in STA amplitude, revealing oscillatory synchronization (Figure 3Biii). To eliminate potential changes in total LFP amplitudes, we normalized the STA spectrum to the absolute pIC LFP amplitude, yielding spike-field coherence (SFC). During habituation, we observed SFC peaks in the β- and γ-range for preCS, which decreased during CS presentation (Figure 3Biv). However, at recall, we observed CS-specific tuning of aIC spikes to pIC LFP, with maximum SFC at 33 Hz (Figure 3Bv). SFC was stronger in the negative valence domain, indicating an asymmetry in aIC–pIC communication (Figure 3—figure supplement 1). Synchronization was not present in worse performers (Figure 3—figure supplement 2A) or when performing the converse analysis (pIC–aIC, Figure 3—figure supplement 2B). Taken together, these data reveal stimulus-driven top-down gain modulation within the aIC–pIC network, which correlates with experience and performance.
 
@@ -79,9 +159,25 @@ We then determined the functional relevance of aIC–pIC crosstalk for Pavlovian
 
 As information flow from aIC is critical for Pavlovian learning, we next tested whether this is also reflected in the distribution of CS- and behavior-related information. We contrasted the feature importance obtained from RF classification between correct/incorrect CSs (Figure 3A; Figure 2—figure supplement 2Aii) or behavioral episodes (Figure 2C; Figure 2—figure supplement 2Ai). Indeed, feature importance for decoding in aIC was reduced in incorrect compared to correct CS presentations (Figure 3Di), as well as for CS-unspecific behavioral episodes (Figure 3Dii). Taken together, these data suggest that CS information in the aIC is critical for Pavlovian learning.
 
-## The basal forebrain mediates bottom-up recruitment of IC activity
+### The basal forebrain mediates bottom-up recruitment of IC activity
 
 Neural systems require mechanisms signaling insufficient CS value to drive learning. To probe for network signatures of insufficient value, we quantified TE between network elements at the time of CS presentation during learning, when only limited CS-US associations have occurred. TE maps during these CS presentations show significant bottom-up transfer from CE to IC, indicating potential recruitment of IC by CE (Figure 4A; see ‘Control’ in Figure 2—figure supplement 2Aiii for RF decoder accuracy and feature importance). However, there is no known anatomical projection that could mediate this transfer.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig4-v1.jpg)
+
+**Figure 4.:** (A) (i) Network depicting significant TE during CSs generated from data acquired from RC and FC stages. RF decoder accuracy (Da) for decoding CSs at RC and FC stages shown above network. Node color corresponds to feature importance from RF classification (Figure 2—figure supplement 2Aiii). (B) Chronic CENMDA reduced NBM resting-state functional connectivity to the right aIC compared to the CESHAM group. Two-sample t-test between CESHAM (n = 4) and CENMDA (n = 3) groups, followed by Gaussian Random Field Theory Multiple Comparison Correction (voxel-level p-value=0.05, cluster-level p-value=0.05). Differential z-score between CENMDA and CESHAM indicates depleted correlation (blue). (C) Fraction of magnocellular (mc)/parvocellular (pc) neurons in the NBM that responded with IPSCs upon optogenetic stimulation of CESST or CEPKCδ input. (D) (i) In vivo optogenetic stimulation of the right CEPKCδ–NBM pathway in two IC multi-site recorded, freely moving animals. (ii) Peri-laser stimulus time histograms of aIC (top) and pIC (bottom) channel-averaged LFP traces averaged over 60 (405, 470 nm) and 40 (470 nm-TZP) laser pulses. Traces represent averages of all available channels in aIC (11Ch) and pIC (12Ch). Insets depict respective minima of LFP traces within 20 ms after laser pulse onset. Significant one-way RM ANOVA for aIC (F1,116,11,16=153.00, p<0.0001) and pIC (F1,340,14,74=23.60, p<0.0001). (iii) Quantification of IC LFP minima upon CEPKCδ–NBM stimulation under control conditions. Significant one-way ANOVA (F2,32=209.40, p<0.0001). All data presented as mean ± SEM. Holm-Sidak post hoc analysis was used for comparison between treatments/regions (*) and one-sample t-test for individual differences to zero ($), */$p<0.05, ***/$$$p<0.001, ****/$$$$p<0.0001. Full statistical report in Appendix 1—table 1. (E) (i) STA from the recall stage of 200 ms pIC LFP traces centered around aIC spikes after systemic administration of TZP. (ii) SFC resulting from pIC LFP power-normalized STA from (i). (F) Circuit model of the bottom-up IC↔CE/NBM pathway consistent with experimental data. Dotted line represents a connection not assessed, but consistent with previous studies (Jolkkonen et al., 2002; Kapp et al., 1994).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) (top) Mice received a bilateral injection of NMDA (N-methyl-D-aspartate, CENMDA, n = 3) or saline (CESHAM, n = 4, Figure 1A and see Figure 1—figure supplement 1) into CE. (bottom) Representative staining with NeuN from a mouse from the CENMDA group. scalebar = 100 µm. BLA – basolateral amygdala, Pir – piriform cortex. (B) Functional connectivity in the CENMDA group with significant (one sample t-test, p<0.05) Fisher z-transformed Pearson correlation coefficients between each pair of brain regions (blue-to-red scale) are shown (significance of correlations reflected by the size of the square). (C) Seed region mask used for functional connectivity of the NBM in Figure 4B.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) (i) Schematic of stereotactic injection of CTB into the NBM with (ii) exemplary backlabeling in CE (red) and PKCδ counterstain (magenta) and (iii) quantification according to identified CEl populations. Each data point represents a single animal. (B) (i) To assess synaptic connectivity between CEl subpopulations and NBM shown in Figure 4C, SST::Cre and PKCδ::Cre mice received injections of an AAV carrying Cre-dependent DIO-ChR2 in the CE. (ii) Representative slice showing biocytin-filled and fluorescently labelled streptavidin-stained patched neurons (green) and immunolabeled ChAT+ neurons (red) in NBM. Arrows indicate exemplary magnocellular (mc, filled) and parvocellular neurons (pv, hollow).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Peri-laser stimulus time histograms of single unit activity in aIC and pIC upon the (i) control stimulus (405 nm, 60 5 ms pulses), (ii) CEPKCδ-NBM stimulation (470 nm, 60 5 ms pulses) and (iii) CEPKCδ-NBM stimulation after systemic administration of TZP (470 nm-TZP, 40 5 ms pulses). Gray area indicates 95% confidence interval (CI). (B) Summary table of responding neurons above 95% CI after laser stimulation.
 
 Interestingly, our fMRI survey had identified strong coupling between CE and the cholinergic NBM (Figure 1Ai bottom, Figure 1Aii). Because electrical stimulation of CE via the basal forebrain (Kapp et al., 1994) and activation of putative CEPKCδ (Gozzi et al., 2010) are known to trigger cortical arousal, we hypothesized that the CE–NBM pathway may facilitate IC coupling to CE. The topological organization of NBM projections suggests that distinct subareas innervate specific cortical patches (Zaborszky et al., 2015), which could allow NBM inputs to coordinate arousal in selected cortical regions. To investigate this, we made bilateral lesions in CE by injecting N-methyl-D-aspartate (CENMDA, n = 3, Figure 4—figure supplement 1A; see Figure 4—figure supplement 1B for correlation matrix) to identify regions displaying depleted functional coupling to NBM when compared to CE sham-lesioned control animals (CESHAM). NBM-seeded global brain correlations in the CENMDA group showed decreased coupling to the right aIC, suggesting that CE input to NBM selectively triggers NBM–aIC interactions (Figure 4B; see Figure 4—figure supplement 1C for seed placement). To explore this possibility, we assessed synaptic connectivity between CEl populations and NBM neurons by retrograde tracing (Figure 4—figure supplement 2A) and slice electrophysiology (see Figure 4—figure supplement 2B and ‘CE–NBM circuit architecture’ in Appendix 1). We found that CEl subpopulations, which are mostly GABAergic (Cassell et al., 1999), primarily innervate putatively local parvocellular (pc) interneurons (IN) versus corticopetal magnocellular (mc) neurons, supporting a disinhibitory mechanism of CE input gating NBM output (Figure 4C).
 
@@ -93,9 +189,37 @@ Because synchronization in the γ-range has been associated with M1R signaling (
 
 Collectively, these data support a model whereby CE input to the NBM predominantly inhibits putative GABAergic IN to disinhibit corticopetal ChAT+/- mc neurons (Figure 4F). Importantly, these results identify a missing link by which behavioral decisions in the CE may recruit the IC–CE pathway via the NBM (Gehrlach et al., 2019; Venniro et al., 2017).
 
-## The CE–NBM pathway promotes top-down information for Pavlovian learning
+### The CE–NBM pathway promotes top-down information for Pavlovian learning
 
 In Pavlovian learning, USs serve as primary prediction error signals to update the CS as a US predictor. TE of the post-US period revealed recurrent dynamics between and within CE populations, as well as bottom-up TE from pIC to aIC. Interestingly, we found bottom-up recruitment of the CEPKCδ–aIC pathway, which linked hierarchies during an instructive US (Figure 5A). Collectively, an impinging US largely uncoupled the network compared to a CS (Figure 4A) and shifted the network TE toward sensory bottom-up signaling (pIC–aIC; see ‘Control’ in Figure 2—figure supplement 2Aiv for RF decoder accuracy and feature importance). To determine whether this phenomenon is solely attributable to primary prediction error, or whether network dynamics represent a general feature of value ambiguity, we examined CS presentations where information on valence was low but relative salience was high. These conditions are best satisfied during habituation, as RF mean decoding accuracy for CS classification was significantly higher compared to conditioning (Figure 5—figure supplement 1A). CS-aligned TE networks during habituation were remarkably similar to US-aligned networks at conditioning, suggesting that the CE–NBM–aIC pathway was engaged under conditions of value ambiguity (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig5-v1.jpg)
+
+**Figure 5.:** (A) Network depicting significant TE after US; generated from data acquired from RC and FC. RF decoder accuracy (Da) for decoding USs at RC and FC stages shown above network. Node color corresponds to feature importance resulting from RF classification under control conditions (see Figure 2—figure supplement 2Aiv). (B) Network depicting significant TE during CS in the habituation stage. RF Da for decoding CSs at habituation. Nodes are colored according to the feature importance resulting from RF classification (see Figure 2—figure supplement 2Av). (C) Network depicting significant TE during CS generated from data acquired during RC and FC. aIC/pIC data has been replaced by a dataset recorded during chemogenetic inhibition of CEPKCδ (aIC’, pIC’) in the same animals (hM4(CEPKCδ)). RF Da for decoding CSs at RC and FC stages during hM4(CEPKCδ) shown above network. Feature importance given as differential from control conditions, with * indicating significant differences (see Figure 2—figure supplement 2Aiii). (D) (i) Experimental approach for optogenetic inhibition of the CEPKCδ-NBM pathway during CS presentations at conditioning. (ii) Quantification of approach and avoidance behavior at recall (nGFP = 7, nCE-PKCδ–NBM=6; significant MANOVA, F1,10=9.76, p=0.0045). Data presented as mean ± SEM. Holm post hoc as difference to control, ##p<0.01. (E) (i) Scheme for chemogenetic inhibition of aIC (hM4(aIC)) during CE population recordings. (ii) Mean CS Da of an MLP trained to detect CS information in the activity of 20 CESST, 30 CEPKCδ, and 10 CEm best neurons per treatment to detect CS information at recall during control conditions (PBS) and hM4(aIC) (significant treatment x population interaction in a two-way ANOVA, F5,4788=117.50, p<0.0001). (iii) Mean CS Da of an MLP trained on the activity of 20 CESST, 30 CEPKCδ, and 10 CEm best neurons per treatment to detect R(F)-CS applied on F(R)-CS at recall during control conditions (PBS) and hM4(aIC) (significant treatment x population interaction in a two-way ANOVA, F5,9588=306.50). (iv) Mean CS Da of an MLP trained on the activity of 20 CESST, 30 CEPKCδ, and 10 CEm best neurons to detect R-US or F-US applied on R-CS or F-CS, respectively, in the conditioning stages during control conditions (PBS) and hM4(aIC) (significant treatment x population interaction in a two-way ANOVA, F5,9588=163.90, p<0.0001). * Indicates significant differences between treatments within population, as determined by Holm-Sidak post hoc analysis, ****p<0.0001. Only non-significant differences to shuffled data are explicitly indicated (‘ns’). Full statistical report in Appendix 1—table 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) RF Da for decoding CS under control conditions in the respective stages (one-way ANOVA, F2,5997=271.60, p<0.0001). Holm-Sidak post hoc for all analyses, ****/$$$$ p<0.0001, * Indicates a significant difference as determined by two-sample t-tests, $ indicates a significant difference as determined by one-sample t-tests to random (0.5). Full statistical report in Appendix 1—table 1. (B) TE networks for (i) US in conditioning and (ii) CS in habituation under the hM4(CEPKCδ) condition. Node color corresponds to feature importance from RF decoding shown in Figure 2—figure supplement 2Aiv and v, respectively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** CESST and CEPKCδ injection sites of AAV-DIO-Arch/NpHR3.0-YFP (scalebar = 900 µm) (top) and optic fiber placement in NBM (scalebar = 100 µm) (bottom). Schematic placement of the optic fiber tip above the terminal field in NBM marked with ‘x’ (bottom, right).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Learning curves of approach behavior of the CEPKCδ-NBM cohort in (i) controls (significant CS x session interaction in a two-way RM ANOVA, F9,54=2.54, p=0.0163) and (ii) the CEPKCδ-NBM inhibition group (no significant effect in a two-way RM ANOVA). (iii) Learning curves for avoidance behavior in the control and CEPKCδ-NBM inhibition group during the FC stage (significant effect of trial in a two-way RM ANOVA, F5,60=15.37, p<0.0001). (B) Quantification of CS-specific (i) approach (visits/min)(significant CS x treatment interaction in a two-way RM ANOVA, F2,22=3.97, p=0.0338) and (ii) avoidance behavior (percent time spent freezing) (significant CS x treatment interaction in a two-way RM ANOVA, F2,22=3.11, p=0.0095) at the recall session. ##p<0.01 (compared to control group), **/##p<0.01, ****p<0.0001; nGFP = 7, nCE-PKCδ–NBM=6, Data presented as mean ± SEM. (C) Learning curves of approach behavior for the CESST-NBM cohort in (i) controls (significant CS x session interaction in a two-way RM ANOVA, F9,72=2.63, p=0.0109) and (ii) the CESST-NBM inhibition group (significant CS x session interaction in a two-way RM ANOVA, F9,108=4.75, p<0.0001). (iii) Learning curves for avoidance behavior of the control and CESST-NBM inhibition groups during the FC stage (significant effect of treatment in a two-way RM ANOVA, F1,20=10.70, p=0.0038). (D) Quantification of CS-specific (i) approach (significant effect of CS in a two-way RM ANOVA, F2,40=11.59, p=0.0001) and (ii) avoidance behavior (significant effect of CS in a two-way RM ANOVA, F2,40=77.68, p<0.0001) at recall for the CESST-NBM cohort. Holm-Sidak post hoc for all analyses, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. nGFP = 9, nCE-SST–NBM=13. All data presented as mean ± SEM. Full statistical report in Appendix 1—table 1.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Injection site of AAV-DIO-hM4-mCherry and AAV::Cre into aIC. Scalebar = 200 µm. AIC – agranular insula, Cl – claustrum, G/DIC – granular/dysgranular insula, Pir – piriform cortex, rf – rhinal fissure.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Same decoding approach as in Figure 1D, using best neurons (see ‘Single-region decoding’ in Materials and methods) for (i) CS information (significant stage x population interaction in a two-way ANOVA, F15,9576=34.91, p<0.0001), (ii) CS similarity (significant stage x population interaction in a two-way ANOVA, F5,9588=311.70, p<0.0001) and (iii) the CS←US task (significant stage x population interaction in a two-way ANOVA, F5,9588=163.90, p<0.0001). (B) Alternative decoding approach for CS discrimination (as in Figure 1—figure supplement 7B), using best neurons in control conditions (PBS) and aIC inhibition (hM4(aIC)) at recall (significant treatment x population interaction in a two-way ANOVA, F5,2387=29.37, p<0.0001). (C) Projection of US properties by application of an MLP trained to detect US information in best neurons of CE populations under control conditions (PBS) and aIC inhibition (hM4(aIC)), applied to the respective CS (RC: significant treatment x population interaction in a two-way ANOVA, F5,4788=186.13, p<0.0001; FC: significant treatment x population interaction in a two-way ANOVA, F5,4788=195.10, p<0.0001). * Indicates significant differences between stages, within population. Holm-Sidak post hoc for all analyses, *p<0.05, **p<0.01, ***p<0.001, ****/####p<0.0001. All data presented as mean ± SEM. Full statistical report in Appendix 1—table 1.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/60336/elife-60336-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** (Left) Stimulus salience at the lower hierarchical level in the amygdala promotes interoceptive models from the IC via CEPKCδ when uncertain about value. In the absence of interoceptive value in CE CS salience engages NBM-aIC interaction to update intra-insular models. (Right) Insular interoceptive models about stimulus values are recruited by CE and segregate into salience and valence dimensions, which are differentially projected onto CE microcircuitry.
 
 To further validate these predictions, we recorded from the IC (as in Figure 1B) in mice undergoing conditioning stages when CEPKCδ was chemogenetically silenced. To recalculate TE networks, neural activity from aIC and pIC was replaced with their respective activity from recordings when CEPKCδ was silenced in the same mice (Figure 5C; aIC‘, pIC‘ in hM4(CEPKCδ); Figure 4A for control network). In these networks, we still found bottom-up TE from CE to IC. However, recruitment of top-down transfer from IC to CE was absent, reminiscent of TE networks during an incorrectly assigned CS (Figure 3Aii). These results indicate that CEPKCδ may be required for IC recruitment. In addition, intra-IC communication displayed pIC to aIC directionality, resembling US/habituation networks (Figure 5A,B). This suggests that CEPKCδ activity facilitates top-down information transfer, while sensory bottom-up signaling predominates during CEPKCδ inhibition (Figure 5C). Notably, RF CS decoding revealed a shift in feature importance from aIC to pIC (Figure 5C, Figure 2—figure supplement 2Aiii), which is fully recapitulated in the post-US period (TE: Figure 5—figure supplement 1Bi, feature importance: Figure 2—figure supplement 2Aiv) and partially recapitulated for CS in habituation (TE: Figure 5—figure supplement 1Bii, feature importance: Figure 2—figure supplement 2Av).
 
@@ -121,76 +245,286 @@ In conclusion, we propose that distributed neural ensembles in a cortico-limbic 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>wild-type</td>
+      <td>Charles River Laboratories</td>
+      <td></td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>PKCδ::Cre</td>
+      <td>doi:10.1038/nature09553</td>
+      <td>Prkcd::GluClα::Cre</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>SST::Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>SOM-IRES::Cre; stock no: 013044</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DIO-GFP</td>
+      <td>This paper</td>
+      <td>AAV5.EF1a.DIO.GFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:9.73E+10</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>syn-GFP</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.hsyn.eGFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:1.15E+13</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>syn-ChR2</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.hsyn.hChR2(H134R).eYFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:1.87E+13</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DIO-ChR2</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.EF1a.DIO.hChR2(H134R).eYFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:1.30E+13</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>syn-Arch</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.hsyn.ArchT.YFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:4.68E+12</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DIO-Arch</td>
+      <td>BI Biberach</td>
+      <td>AAV5. Ef1a.DIO.eArch.eYFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:6.00E+12</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DIO-NpHR</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.Ef1a.DIO.eNpHR3.0-eYFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:2.59E+12</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GCaMP6m</td>
+      <td>BI Biberach</td>
+      <td>AAV9.hsyn.GCaMP6m.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:1.00E+12</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DIO-GCaMP6f</td>
+      <td>Penn Vector Core</td>
+      <td>AAV1.hsyn.DIO.GCaMP6f.WPRE.</td>
+      <td>AAV vectors to transduce brain tissue; Titer:1.00E+13</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV::Cre</td>
+      <td>Vector Biolabs</td>
+      <td>AAV5.CMV.Cre</td>
+      <td>AAV vectors to transduce brain tissue; Titer:1.00E+12</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CAV::Cre</td>
+      <td>Montpellier Vector Platform</td>
+      <td>CAV2.Cre</td>
+      <td>CAV vectors to transduce brain tissue; Titer:5.50E+12</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DIO-hM4</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.hsyn.DIO.hM4D.mCherry.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer:1.01E+13</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Life technologies</td>
+      <td>DAPI</td>
+      <td>1 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TZP</td>
+      <td>Sigma</td>
+      <td>CAS #147416-96-4</td>
+      <td>(3 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PKCδ (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat. #610398</td>
+      <td>Lot#4080743 IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FOXO3/NeuN (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #ab131624</td>
+      <td>Lot#GR88877-12 – IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ChAT (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. #AB144P</td>
+      <td>Lot#2280814 – IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse (goat polyclonal)</td>
+      <td>Life technologies</td>
+      <td>Cat. #A21052</td>
+      <td>Lot#1712097 – IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken (goat polyclonal)</td>
+      <td>Life technologies</td>
+      <td>Cat. #A11041</td>
+      <td>Lot#1383072 – (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat (donkey polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #A11057</td>
+      <td>Lot#819578 – IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-Alexa Fluor</td>
+      <td>Life technologies</td>
+      <td>Cat. #S11223</td>
+      <td>Lot#18585036 – IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CTB-Alexa Fluor</td>
+      <td>Invitrogen</td>
+      <td>Cat. #C34775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7 and 8</td>
+      <td>GraphPad Software, Inc</td>
+      <td>Version 8.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scikit-learn package</td>
+      <td>doi:10.1007/s13398-014-0173-7.2</td>
+      <td>Python 3</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male mice aged between 2 and 6 months were group housed in a colony on a 14 hr light/10 hr dark period and allowed water and food ad libitum, unless noted otherwise. Animal procedures were performed in accordance with institutional guidelines and were approved by the four respective Austrian (BGBl nr. 501/1988, idF BGBl I no. 162/2005) and European authorities (Directive 86/609/EEC of 24 November 1986, European Community) and covered by the license M58/002220/2011/9. Wild-type C57BL/6J mice were in-house bred and provided by the Research Institute of Molecular Pathology animal facility or ordered from Charles River Laboratories (strain C57BL/6J). Transgenic animals (Prkcd::GluClα::Cre [Haubensak et al., 2010] BAC transgenic mice, PKCδ::Cre and SOM-IRES::Cre transgenic mice, SST::Cre; stock no: 013044, Jackson Laboratory) were maintained on the C57BL/6J background. All mice were handled by the experimenters for several days prior starting any behavioral procedures.
 
-## Resting state functional magnetic resonance imaging (resting state fMRI)
+### Resting state functional magnetic resonance imaging (resting state fMRI)
 
 Animals (CEsham/CENMDA) were subjected to resting state fMRI on a 15.2 T Bruker system (Bruker BioSpec, Ettlingen, Germany) with a 23 mm quadrature birdcage coil. Prior to imaging, all mice were anesthetized with 4% isoflurane, and care was taken to adjust the isoflurane levels immediately so that respiration did not fall below 140 breaths per minute (bpm) at any time. During imaging, respiration was maintained between 140 and 160 bpm. For the resting state fMRI study, a single shot echo planar imaging (EPI) sequence with spin echo readout was used (TR = 3000 ms, TE = 19.7 ms, FOV = 16×16 mm2, voxel size = 250×250 µm2, 30 slices 0.5 mm thick, one average, 240 repetitions, 12 min total imaging time). Following the resting state scan, a high-resolution T1-weighted anatomical scan was acquired using gradient echo sequence (TR = 500 ms, TE = 3 ms, FOV = 16×16 mm2, voxel size = 125×125 µm2, 30 slices 0.5 mm thick, four averages).
 
-## Data processing for resting state fMRI
+### Data processing for resting state fMRI
 
 Resting state fMRI data were processed using the Data Processing Assistant for Resting-state fMRI Advanced Edition (DPARSF-A) toolbox, which is part of the Data Processing and Analysis of Brain Imaging (DPABI) toolbox version 2.1 (http://rfmri.org/dpabi) (Chao-Gan, 2010). The first 10 volumes were removed from each data set to ensure that steady state magnetization was reached. Data were processed in series of steps that included slice-timing correction, realignment, co-registration, normalization, and segmentation using in-house created mouse masks for cerebrospinal fluid (CSF), white matter (WM), and gray matter (GM). Nuisance covariates related to motion were regressed out using Friston 24-parameter model (Friston et al., 1996). In addition, WM and CSF mean time-series were used as nuisance regressors in the general linear model to reduce influence of physiological noise (Margulies et al., 2007). Data were analyzed with and without linear regression of global signal (Murphy et al., 2009; Murphy and Fox, 2017; Saad et al., 2012). Data were spatially smoothed with a 2.4 pixel full-width half-maximum Gaussian kernel. A narrow band pass filter (0.054-0.083 Hz) (Wee et al., 2012) was used following nuisance regression. All data were co-registered to the in-house generated mouse atlas with 80 distinct brain regions. For the seed-based functional connectivity analysis, the mean time series signal from the region of interest (seed) was calculated and correlated with the time series signal from each pixel of the brain. Between group comparison was done using pairwise t-test followed by Gaussian Random Field (GRF) Theory Multiple Comparison Correction (voxel-level p-value=0.05, cluster-level p-value=0.05). Within group comparison was done using one-sample t-test followed by GRF multiple comparison correction (voxel-level p-value=0.05, cluster-level p-value=0.05). For the functional connectivity matrix, mean time course signal from 80 brain region was calculated. Fisher’s z-transformed Pearson correlation coefficients between each pair of brain regions were calculated for all groups (Song et al., 2011). One-sample t-test was used to find a significant pair of brain regions within a group, with p<0.05 considered significant. All analyses were performed using freely available R-project software (R Development Core Team, 2011). The network visualization was performed with BrainNet Viewer (Xia et al., 2013). Resting state fMRI results shown here use global signal regression (GSR). An alternative approach for noise correction was also performed (Behzadi et al., 2007), and no significant differences among results were found (data not shown). We chose to interpret results following GSR, as this approach improved specificity of positive correlations (Fox et al., 2009; Weissenbacher et al., 2009) and aided in symptom prediction following focal brain lesions in humans (Boes et al., 2015).
 
-## Stereotactic surgery for virus/toxin injection, fiber-optic cannula/lens/electrode implantations
+### Stereotactic surgery for virus/toxin injection, fiber-optic cannula/lens/electrode implantations
 
 General surgical procedures: Mice were deeply anesthetized with isoflurane and maintained at 1.5-2% throughout the procedure (Univentor 400). Animals were mounted in a stereotactic frame (Kopf), while body temperature was kept constant at 36°C via a rectal temperature-controlled heating pad (FHC). Before incision, local anesthesia was provided underneath the skin by injection of 0.1 ml of lidocaine (Xylanaest, 1%). The exposed skull was drilled through above the area of interest, relative to bregma (Paxinos and Franklin, 2007). Animals were provided with post-surgical analgesics (250 mg/ml Carprofen; Rimadyl, Pfizer) and antibiotics (400 mg/l Enrofloxacin; Baytril, KVP pharma) via drinking water for 7 days. Opto-chemogenetic experiments: For optogenetic experiments, animals were bilaterally injected with the appropriate viruses (CEl 80 nl, AP -1.38, ML ±2.9, DV -4.85 mm; aIC 100 nl, AP +1.54, ML ±3.17, DV -3.55; pIC 80 nl, AP -0.7, ML ±4.2, DV -4 mm) and bilaterally implanted with fiber-optic cannulas (Doric Lenses, 200-400μm, NA 0.37-0.53) 0.5 mm above the target coordinates (CEl AP -1.38, ML ±2.9, DV -4.35 mm; NBM AP -0.4, ML ± 1.6, V -4.3 mm). For chemogenetic inhibition, we used the Cre-dependent hM4 DREADD system (AAV::DIO-hM4) injected bilaterally into aIC (100 nl) or pIC (80 nl). The Cre-expressing construct (CAV::Cre) was delivered bilaterally to pIC or CEl. For Ca2+ imaging, mice were unilaterally injected with an AAV carrying a Ca2+ indicator into CEm (60 nl, AAV::GCaMP6m; AP -1.06, ML +2.25, DV -4.5 mm) or into CEl (50 nl, AAV::DIO-GCaMP6f; AP -1.38, ML +2.9, DV -4.85 mm). At ≥4 weeks post-injection, a lens was implanted above the injection site (Inscopix microendoscope 0561 Part ID:1050-002182). After a 1-week recovery period, the baseplate was cemented onto the skull (Inscopix microscope baseplate V2, Part ID:1050-002192). For in vivo electrophysiology, silicon probes (single-site; Neuronexus) or custom-built tetrodes (multi-site; 30 μm Nichrome wires, California Fine Wire; two bundles per site) were affixed to fiber-optic cannulas and implanted. Ground screws were mounted above the contralateral prefrontal cortex and cerebellum. All implants were fixed to the skull with dental cement (SuperBond C&B kit, Prestige Dental Products).
 
-## In vivo electrophysiology and data acquisition
+### In vivo electrophysiology and data acquisition
 
 Mice were handled and habituated to the recording room for several days prior to experimental recordings. Implanted electrodes were connected, via an Omnetics connector, to a 16-channel unity-gain headstage (Plexon), after which mice were left in the home cage for 10 min. The headstage was connected to a pre-amplifier, and the signal was band-pass filtered (3 Hz-1khz) and amplified. Neural activity was digitized at 40 kHz and highpass-filtered for spikes (800 Hz) and LFPs (3–200 Hz) for offline analysis. Spikes were sorted with Offline Sorter v4 (OFS, Plexon). All recording sessions for each mouse were merged, and principal component (PC) analysis was performed on unsorted waveforms. Spikes were manually sorted with OFS. Single units were sorted manually in 3D PC feature space for each session and declared a single unit if the spike cluster was separable from noise and other clusters and no refractory period infringements were detected. To avoid multi-sampling of single units, cross-correlograms of units from adjacent channels were inspected for co-firing and respective units removed from analysis.
 
-## Ca2+ imaging and data acquisition
+### Ca2+ imaging and data acquisition
 
 Deep-brain calcium imaging was performed with an in vivo miniature endoscope (Inscopix). Mice were handled and habituated to the mounted microscope for several days prior to experimental recordings. nVista HD System v2.0.32 (Inscopix) was used for the acquisition of Ca2+ signals. Images were obtained at 20 fps with automatically set exposure time, 3.25 gain, and LED power set to 40%. Data was processed and analyzed with Mosaic v1.2.0 software (Inscopix). The aligned videos were down-sampled 2x2 (time x space) and the Ca2+ signal was calculated as the relative change of fluorescence over the entire recording session (ΔF(t)/F0=(F(t)-F0)/F0). The individual neurons and their Ca2+ traces were extracted by applying PCA-ICA analysis. Spatial filters obtained by PCA-ICA were then manually selected to avoid duplicates or false units in further analysis. Ca2+ traces were then filtered (0.5 Hz low pass filter) and automated Ca2+ event detection was applied (ΔF(t)/F0 > 3xMAD (median absolute deviation), τoff=0.2 s). Exported events were further analyzed with Neuroexplorer software v5.114 (Plexon).
 
-## Peri-event time histogram (PETH) analysis of neural recordings
+### Peri-event time histogram (PETH) analysis of neural recordings
 
 Data from in vivo electrophysiology and calcium recordings were processed in Neuroexplorer. Neuronal firing and calcium signals were extracted as 500 ms binned events. Neuronal events were then exported as PETH and z-scored per recording stage. Only data within -8 – 18s relative to CS onset was considered and smoothed with a Gaussian filter (degree of 5 for IC and 8 for CE data). The electrical shock artefact was masked, and neural activity originating from a channel showing prolonged LFP black-out at a given trial was replaced with the population average of the same bin.
 
-## Behavioral design for in vivo electrophysiological experiments
+### Behavioral design for in vivo electrophysiological experiments
 
 Mice underwent 3 habituation sessions (6 presentations per CS in blocks of 2) and 3 port training sessions (random water delivery at the port), each 30 min after intraperitoneal injection of either PBS, CNO, or TZP (treatment order counterbalanced). For RC, mice were separated into a PBS and CNO groups, receiving respective daily intraperitoneal injections. After 8-12 RC sessions (20 CS-US pairings/session), mice were subjected to an FC session (3-4 CS-US pairings), receiving the same treatment as in RC. After three to four recall sessions (using the same treatments as in habituation, four to six presentations per CS in blocks of two), mice underwent single RC and FC sessions with the respective converse treatment (PBS or CNO), followed by three recall sessions, each with a different treatment (PBS, CNO, or TZP). Reward-specific behavior was scored when a mouse broke the IR beam while entering the port (‘port visits’), whereas freezing onsets were scored (1s minimum time immobile, 1s sliding window, Motion Threshold=80) on recorded videos with Cineplex Editor v3.6 (Plexon) and aligned to electrophysiological data offline.
 
-## Behavioral design for Ca2+ imaging experiments
+### Behavioral design for Ca2+ imaging experiments
 
 Mice underwent two habituation sessions with four presentations of each CS in blocks of two and two port training sessions (random water delivery in the port). Thirty minutes before each session, mice received an intraperitoneal injection of either PBS or CNO (treatment order was counterbalanced). All mice subsequently underwent 6-10 RC sessions with 12 CS-US pairings, receiving a daily intraperitoneal injection of PBS before RC sessions, and one session with a prior CNO injection. Next, mice were subjected to two FC sessions with two CS-US pairings each, receiving an injection of either PBS or CNO (in balanced order). Thereafter, all mice were subjected to 4 recall sessions (two PBS and two CNO sessions). Reward-specific behavior was scored when a mouse broke the IR beam while entering the port (‘port visits’), whereas freezing onsets were scored on recorded videos with Ethovision v12.0 (Noldus) offline (1s minimum time immobile, <0.5% area change for a 1s sliding window).
 
-## Neural decoding
+### Neural decoding
 
 Neural decoding was performed on raw recorded neural data (X) to determine the representation of stimuli (y) within the recorded brain regions. We reasoned that operations on raw data, while not maximizing decoder accuracy, will allow for more straightforward comparisons between conditions, as minimal non-linearities introduced by independent data pre-processing steps are minimized. Decoding was performed by solving classification problems (y=f(X)) with classes y (defined for Task 1 'CS': bins before CS onset, bins during CS; for Task 2 'US': bins before CS, bins after US).
 
 Three different types computation were performed: 1. Single-region decoding, 2. identification of similarity between neural activity patterns for single regions, and 3. multi-region decoding. The computations were performed using Jupyter Notebooks, Python 3, and the scikit-learn package (Fabian et al., 2011). 1s bin data was used for all the computations.
 
-## Combined Pavlovian reward and fear conditioning for behavioral cohorts
+### Combined Pavlovian reward and fear conditioning for behavioral cohorts
 
 Animals from all experimental cohorts were water deprived for 16 hr at all stages of the experiment, while their weight was continuously monitored to ensure it never fell below 80% of their initial weight. Prior to conditioning experiments, animals underwent a port training session where they learned to associate the port with the delivery of a water drop in context A (light on, water delivery port, neutral grid). Only after successful port training did the animals proceed to reward conditioning (RC). All cohorts underwent at least 8 RC sessions in context A, where they received between 12 and 24 pairings of a neutral sound (50 ms white noise, 0.9 Hz for 10 s at 70dB, ‘R-CS’) with the subsequent delivery of a water drop (valve opened for 1s). Thereafter, mice underwent a single fear conditioning (FC) session in context B (no light, port removed, shock grid) where they received five pairings of a different neutral sound (3kHz continuous for 10s at 70dB, ‘F-CS’) with the delivery of a mild 1s foot shock (0.5 mA, Coulbourn). Memory testing was conducted in context A by presenting both unreinforced sounds four times each interleaved in blocks of two (2x(2R-CS + 2F-CS)). Reward-specific behavior was scored when a mouse broke the IR beam while entering the port (‘port visits’), whereas freezing behavior was scored on recorded videos with Ethovision v12.0 (Noldus) offline (1s minimum time immobile, <0.5% area change for a 1s sliding window).
 
-## Circuit manipulations
+### Circuit manipulations
 
 For optogenetic manipulations, mice were handled and habituated to attachment of the fiber-optic patch cord (Doric Lenses) to the fiber implants for several days prior to the experiment. For behavioral cohorts, activation of Channelrhodopsin-2 (ChR2) was achieved with a 473 nm laser, delivering 10 ms pulses at an intensity of 10 mW at the fiber tip at a stimulation frequency of 20 Hz for IC projections to CE. Neuronal inhibition was achieved by activation of Halorhodopsin or Archaerhodopsin using an 489 nm laser at constant 7-8 mW light intensity at the fiber tip. Intensity was adjusted before experiments with a power meter (Thorlabs, PM100D). The laser was triggered by a custom Matlab (v2014b) script during conditioning experiments for conditioned stimulus (CS) periods only. CE–NBM stimulation during in vivo electrophysiological recordings was performed with 5 ms pulses from a 470 nm LED (Doric Lenses). For chemogenetic/pharmacological manipulations, mice were handled and habituated to intraperitoneal PBS injections for 3 days. PBS, CNO (Sigma), and TZP (Sigma) injections were performed 30 min prior to the start of the experiment, and mice were returned to their home cage after injection. Volume was adjusted to 0.1 ml for all experiments. A final dosage of 3 mg/kg for TZP and 5 mg/kg for CNO was used for all chemogenetic experiments other than RC sessions, for which the dosage was adjusted to 2.5 mg/kg.
 
-## Transfer entropy
+### Transfer entropy
 
-Transfer entropy TEn1−n2 between neurons n1 and n2 was computed using the Python package PyInform (https://github.com/ELIFE-ASU/PyInform), which is a wrapper of the inform library using Jupyter Notebooks and Python 3. For each treatment, a sound and stage 'network' (as for the multi-region decoding) was created with 1s bin data. 500 neurons were subsequently drawn randomly from this matrix, considering the percentage distribution between the regions. The TE was computed pairwise between all neurons. The local maximum per pair was taken. Only the upper 50% of all pairs per region combination were considered. TE between regions was defined by the average TE of neurons belonging to the regions (as in Lizier et al., 2011).TEk,v(n1−n2)=⟨TEk(n1,i−n2,j)i,j⟩
+Transfer entropy $TE_{n_{1}−n_{2}}$ between neurons n1 and n2 was computed using the Python package PyInform (https://github.com/ELIFE-ASU/PyInform), which is a wrapper of the inform library using Jupyter Notebooks and Python 3. For each treatment, a sound and stage 'network' (as for the multi-region decoding) was created with 1s bin data. 500 neurons were subsequently drawn randomly from this matrix, considering the percentage distribution between the regions. The TE was computed pairwise between all neurons. The local maximum per pair was taken. Only the upper 50% of all pairs per region combination were considered. TE between regions was defined by the average TE of neurons belonging to the regions (as in Lizier et al., 2011).
+
+$$
+TE_{k,v}(n_{1}−n_{2})=⟨TE_{k}(n_{1,i}−n_{2,j})_{i,j}⟩
+$$
 
 Where k refers to past states and i and j label the sample subset of Regiona,i and Regionb,j of size v in each region.
 
 Significance was tested as in Timme and Lapish, 2018. The null hypothesis was that n2 does not depend on n1. 1000 surrogate datasets were created by shuffling the time-series and computing the region-wise TE. The proportion of TEsurrogate>=TEreal was used as the p-value for significance testing (α<0.05).
 
-## Brain slice preparation and electrophysiology
+### Brain slice preparation and electrophysiology
 
 Three weeks prior to electrophysiological recordings, male WT mice received injections of AAV-ChR2 in the IC, while transgenic SST- and PKCδ::Cre mice received injections of AAV-DIO-ChR2 in the CE. At 2–3 months of age, mice were deeply anesthetized with isoflurane, decapitated, and their brains quickly chilled in sucrose-based dissection buffer bubbled with 95% O2/5% CO2 containing the following (in mM): 220 Sucrose, 26 NaHCO3, 2.4 KCl, 10 MgSO4, 0.5 CaCl2, 3 Sodium Pyruvate, 5 Sodium Ascorbate, and 10 glucose. Coronal brain slices (300 µm thick) were cut in dissection buffer using a Vibratome (Leica, VT1000S), and immediately incubated for a 15 min recovery phase in oxygenated artificial cerebrospinal fluid (aCSF) comprised of the following (in mM): 126 NaCl, 2.5 KCl, 1.25 NaH2PO4, 26 NaHCO3, 2.5 CaCl2, 2.5 MgCl2, and 25 glucose in 95% O2/5% CO2 at 32°C. This was followed by a slice resting phase with oxygenated aCSF for at least 45 min at room temperature (RT). Individual brain slices containing target regions (CE for IC injections, NBM for CE injections) were placed on the stage of an upright, infrared-differential interference contrast microscope (Olympus BX50WI) mounted on a X-Y table (Olympus) and visualized with a 40x water immersion objective by an infrared sensitive digital camera (Hamamatsu, ORCA-03). Slices were fully submerged and continuously perfused at a rate of 1–2 ml per min with oxygenated aCSF. Patch pipettes were pulled on a Flaming/Brown micropipette puller (Sutter, P-97) from borosilicate glass (1.5 mm outer and 0.86 mm inner diameter, Sutter) to final resistances ranging from 3 to 5 MΩ. The Internal solution for recording responses to optogenetic stimulation of PKC-δ/SST neuronal input to NBM contained the following (in mM): 135 KCl, 0.2 EGTA, 10 HEPES, 2 MgATP, 0.5 Na2GTP, 10 Na2phosphocreatine, and 0.2% (w/w) Biocytin. For recording responses to optogenetic stimulation of IC neuronal input in CE, the internal solution contained the following (in mM): 135 K-Gluconate, 5 KCl, 10 HEPES, 2 MgCl2, 0.2 EGTA, 1 Na2ATP, 0.4 NaGTP, 10 Na2Phosphocreatine, 0.2% (w/w) Biocytin, and 280–290 mOsmol. Membrane currents were recorded with a Multiclamp 700B amplifier (Molecular Devices). Electrophysiological signals were low-pass filtered at 3 kHz, sampled at 10 kHz (Digidata 1440A, Axon Instruments) and further analyzed with pClamp 10 software (Molecular Devices). Recordings started 5 min after letting the cell reestablish constant activity post break-in. Inputs from IC to CE or CE to NBM were stimulated in voltage-clamp (−70 mV) with 20 ms blue light pulses through a 40x electrophysiology microscope objective, driven by a 120W mercury lamp (X-Cite 120 PC Q). The amplitude of 4 pulses, 1 s apart, was averaged as postsynaptic responses of specific cell types in the CE or NBM. Cell identity was confirmed using biocytin and post hoc immunohistochemistry.
 
-## Histological evaluation
+### Histological evaluation
 
 For verification of injection targeting, implant placement, and virus expression, mice were deeply anesthetized by an intraperitoneal injection of a mixture of Ketamine (10 mg/ml, OGRIS Pharma) and Medetomidine (Domitor, ORION Pharma) in phosphate-buffered saline (PBS), and transcardially perfused with cold 10 ml PBS and 30 ml of 4% Paraformaldehyde (PFA). Brains were immediately removed and post-fixed overnight in 4% PFA at 4°C. 20μm cryo-sections were obtained from brains from all cohorts except animals subjected to electrophysiological recordings or Ca2+ imaging, for which 80-μm-thick vibratome sections were collected.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Sections were permeabilized with PBS-T (0.1% Triton X-100 in PBS or 0.2% for ex vivo electrophysiology sections) and subsequently blocked with 2% bovine serum albumin (BSA, in PBS-T) for 1 hr to attenuate unspecific binding. Slides were incubated overnight with primary antibodies (Key Resources Table) in BSA at 4°C. Slides were then washed in PBS-T and incubated with fluorescently conjugated secondary antibodies (Key Resources Table) in BSA for 2h at room temperature. After washing, slides were mounted with fluorescence mounting medium (Dako) and images were acquired on a confocal microscope (Zeiss) and slide scanner (3DHistech).
 
-## Data analyses and statistical tests
+### Data analyses and statistical tests
 
 Sample sizes were in line with estimates derived from previous experiments using G*Power Version 3.1.9.6. For neural recording experiments, three to five animals were required (effect size 0.3; Groessl et al., 2018). For behavioral experiments, the target sample size was in the range of 8-10 animals (effect size 0.45, Groessl et al., 2018). Animals were randomly assigned to experimental cohorts. The behavioral experimenter was blind to the treatment wherever possible. Behavioral and neural data analyses was carried out blinded and/or computationally wherever applicable. Establishment of the behavioral assay, neural recordings, and circuit manipulation were performed in independent experiments with separate animal cohorts (Figures 2, 5, Figure 2—figure supplements 5, 7, Figure 5—figure supplement 3; biological replicates). Basic behavior was replicated across experiments for control groups. Circuit manipulations were replicated using different technologies on separate experiments and cohorts (Figures 2, Figure 2—figure supplements 5, 7; biological replicates). Neural activity recordings were replicated in independent animals (biological replicates) and across sessions within animals (technical replicates) (Figures 1, 5, Figure 1—figure supplements 5, 6 and 8, Figure 5—figure supplement 5). For behavioral experiments, 8/97 animals were excluded for failing port training, low virus expression, or misplaced/broken fibers. For in vivo electrophysiology and calcium imaging, 4/14 and 13/26 animals were excluded due to absent Calcium signals or absent/low quality signals, respectively. After unit identification, no further animals were excluded in either case. Statistical significance was determined using parametric statistics (assuming normality of the data) or permutation tests. All statistical tests were performed using Graph Pad Prism (versions 7 & 8) and custom R and/or Python codes. Significant results are indicated as described in the figure legends and Appendix 1—table 1.

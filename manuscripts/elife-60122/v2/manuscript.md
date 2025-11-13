@@ -37,31 +37,65 @@ In this study, we quantified IgG and IgM antibody kinetics and RNA detection pro
 
 ## Results
 
-## Data extraction
+### Data extraction
 
 We extracted data from 21 preprints and peer-reviewed articles reporting data on SARS-CoV-2 RNA or IgG, IgM or neutralizing antibodies against the virus in humans (see Materials and methods). When available, disease severity information was classified into three groups: asymptomatic/subclinical (n = 11 individuals), mild/moderate (n = 166), and severe/critical (n = 58). Unfortunately, the sample size for the asymptomatic group was too low for quantitative analyses. For 359 individuals, insufficient data were available for disease severity categorization, and these individuals were therefore excluded from analyses of the impact of disease severity. Published results were variously reported as exact days, intervals up to 22 days, or mean times for multiple individuals, while test results were reported as values for one individual or mean values for multiple individuals. Data after 30 days post-symptom onset were particularly underrepresented, but included because in aggregate they provide key insights. When reporting enzyme-linked immunosorbent assay (ELISA) results in the main text, IgG results are shown for assays targeting the nucleoprotein (NP) antigen (ELISA-NP), and IgM results are shown for assays targeting the Spike antigen (ELISA-Spike; whole or subunit), as these assays are most often used for the two antibody types (To et al., 2020; Sethuraman et al., 2020). Results for other assays and antigens are shown in Figure 1—figure supplements 1 and 2.
 
-## The distribution of seroconversion times
+### The distribution of seroconversion times
 
 Stepwise bootstrapping was used to estimate seroconversion times, using 270 data points from 99 individuals for IgG and 240 data points from 71 individuals for IgM. Mean IgG seroconversion time is 13.3 days post-symptom onset when using ELISA-NP and 12.6 for IgM using ELISA-Spike (Figure 1a). These results do not differ significantly (t = 0.22, df = 7.7, p=0.84) and are similar for magnetic chemiluminescence enzyme immunoassay (MCLIA; Figure 1b). Variation in seroconversion times is substantial regardless of assay, for both IgG (sd = 5.7) and IgM (sd = 5.8).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig1-v2.jpg)
+
+**Figure 1.:** (A) IgG and IgM detected using ELISA. (B) IgG and IgM detected using MCLIA. (C) IgM and (D) IgG seroconversion related to disease severity. IgG and IgM ELISA results are shown for the NP and Spike antigens, respectively, because these had the largest sample sizes. Lines indicate fitted normal distributions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Sparse distributions are the result of low sample sizes in the study. These sparse results are included for informative reasons and should not be interpreted as representative of the real distribution.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Sparse distributions are the result of low sample sizes in the study. These sparse results are included for informative reasons and should not be interpreted as representative of the real distribution.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Sparse distributions are the result of low sample sizes in the study. These sparse results are included for informative reasons and should not be interpreted as representative of the real distribution.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Sparse distributions are the result of low sample sizes in the study. These sparse results are included for informative reasons and should not be interpreted as representative of the real distribution.
+
 Disease severity does not significantly affect seroconversion time, for IgM or for IgG (Figure 1c–d). Mean IgM seroconversion time for mild/moderate cases is 12.3 days post-symptom onset vs 13.2 for severe/critical cases (t = −0.2, df = 23.5, p=0.83). Mean IgG seroconversion time for mild/moderate cases is 12.9 days post-symptom onset, vs 15.5 for severe/clinical cases (t = −0.96, df = 14.8, p=0.35). A detailed overview of seroconversion time results including means and standard deviations is provided in Figure 1—figure supplements 3–5 and Figure 1—source data 1.
 
-## Antibody detection probability
+### Antibody detection probability
 
 While estimates of seroconversion time provide information about the first moment at which antibodies can be detected, changes in detection probability over time provide useful information about the proportion of individuals that has detectable antibodies, and hence the expected test sensitivity at the population scale. Sample sizes for these analyses (see Materials and methods) are 8053 data points for IgG and 7935 for IgM, with daily mean sample sizes of 224 and 220, respectively. The probability of detecting IgG (ELISA-NP) increases over time, reaching a maximum around 25–27 days post-symptom onset, at which point between 98% and 100% of individuals test positive (Figure 2a). Detection probability remains at this maximum level for the remainder of the days available in the studies existing at the time of writing (up to 60 days for ELISA-Spike, Figure 2—figure supplement 1). This pattern is consistent across assays (Figure 2—figure supplement 1). IgM (ELISA-Spike) detection probability is similar to that of IgG until its peak near 90% around 23–25 days post-symptom onset, after which it starts to decrease, reaching roughly 65% detection probability around 60 days post-symptom onset (Figure 2, Figure 2—figure supplement 2). Although data on neutralizing antibody presence were sparse, we observe that detection probability rapidly rises to near 100%, where it remains up to the last time available in the dataset (Figure 2—figure supplement 3; 29 days post-symptom onset). Patterns in detection probability do not differ significantly between mild/moderate and severe/clinical cases, aside from a slightly steeper rise for severe/critical cases (Figure 2—figure supplement 4). Figure 2—source datas 1–2 provide the estimated detection probabilities over time for IgG and IgM.
 
-## RNA detection probability
+![Figure 2.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig2-v2.jpg)
+
+**Figure 2.:** Points are mean values for each day. Bold lines are flexible smoothed splines fit to the data. Error bars indicate binomial exact 95% confidence intervals of the mean, based on daily sample size. Note that error bars after day 30 tend to be large, due to the limited available data. IgG and IgM values are those detected using any assay/antigen. After day 25, results are pooled into 3-day periods in order to improve estimates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig2-figsupp4-v2.jpg)
+
+### RNA detection probability
 
 Samples sizes for observed and interpolated data are 7443 and 1793 for upper and lower respiratory samples and 1179 for fecal samples, with mean daily sample sizes of 226, 72 and 39, respectively. The probability of detecting viral RNA in respiratory and fecal samples is high (80–100%) at symptom onset and is consistently highest for lower respiratory tract samples (Figure 2b). Detection probability decreases rapidly at rates dependent on sample type, and most rapidly for upper respiratory tract samples, but the proportion of positive samples approaches zero around 30 days post-symptom onset for each sample type. Raw RNA detection probability data are provided in Figure 2—source datas 3–5.
 
-## Antibody level kinetics
+### Antibody level kinetics
 
 Antibody kinetics were analyzed by fitting a Gompertz growth rate function using Bayesian MCMC. While all subsets of the data were fit well by this model, we found some differences in antibody level kinetics depending on antibody, assay and antigen (Figure 3A). Full model fitting results for each assay can be found in Appendix 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig3-v2.jpg)
 
-**Figure 3.:** A) and disease severity for IgM (B) and IgG (C).Measured using ELISA Spike and ELISA NP, respectively. Fitted functions use the posterior mean values for increase rate and start of the increase phase (displacement). Dotted lines show upper and lower 95% credible intervals. Note that the upper CI of IgM ELISA severe overlaps with the lower CI of mild cases, as do the upper CIs of IgG ELISA mild and severe. In order to allow the comparison of increase rate patterns, normalized peak antibody levels were set to one for all functions.  Figure 3—source data 1.  Figure 3—source data 2.Posterior differences between means were calculated by subtracting the posterior mean value for the antibody/assay in the second column from that of the first column, for each MCMC iteration. Differences were considered significant when zero was not included in the 95% credible interval (indicated in bold font).  Figure 3—source data 3.  Figure 3—source data 4.Posterior differences between means were calculated by subtracting the posterior mean value for the antibody/assay in the second column from that of the first column, for each MCMC iteration. Differences were considered significant when zero was not included in the 95% credible interval (indicated in bold font).
+**Figure 3.:** Measured using ELISA Spike and ELISA NP, respectively. Fitted functions use the posterior mean values for increase rate and start of the increase phase (displacement). Dotted lines show upper and lower 95% credible intervals. Note that the upper CI of IgM ELISA severe overlaps with the lower CI of mild cases, as do the upper CIs of IgG ELISA mild and severe. In order to allow the comparison of increase rate patterns, normalized peak antibody levels were set to one for all functions.
 
 Peak antibody level is reached around days 14–20 post-symptom onset, and the timing depends on antigen: both IgG and IgM peak levels are reached earlier when measured using ELISA NP than when using ELISA Spike (ELISA NP mean = 14.3 days, 95% CrI 12.0–16.1; ELISA Spike mean = 20.0 days, 95% CrI 17.6–22.4; 95% CrI for the difference = 2.7 to 9.2). The peak timing does not differ significantly between IgG and IgM when both are measured using ELISA Spike (IgG mean = 20.4 days, 95% CrI 16.8–24.1; IgM mean = 19.1 days, 95% CrI 15.6–22.4; 95% CrI for the difference = −6.4 to 3.5), nor when using ELISA NP (IgG mean = 15.2 days, 95% CrI 12.8–17.2, IgM mean = 12.2, 95% CrI 7.8–16.2; 95% CrI for the difference = −1.8 to 7.8). All estimates and pairwise statistics, including those for antibody levels measured using MCLIA, are shown in Figure 3—source datas 1–2.
 
@@ -72,6 +106,45 @@ Disease severity does not significantly affect the time at which peak levels are
 ## Discussion
 
 By leveraging and integrating multiple data sources on key aspects of the antibody response against SARS-CoV-2, we were able to produce quantitative estimates of the mean and variation of seroconversion timing, antibody level kinetics, and the changes in antibody and RNA detection probabilities. These results provide critical reference information for serological surveys, assay sensitivity and risk of false-negative results, transmission models and herd immunity assessments. By combining data from 21 different studies using different assays, antigens, protocols and patient groups, we were able to quantify the means and, crucially, the extent of variation of important serologic and RNA detection parameters. Together, these antibody and RNA detection probability patterns provide an essential evidence base for informing sampling designs (Table 1). Figure 4 provides an overview of the key patterns.
+
+**Table 1.**
+ Examples of how improved knowledge of antibody and RNA detection patterns can inform sampling designs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>What to test for</th>
+      <th>Optimal timing to test</th>
+      <th>Comments</th>
+      <th>Importance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Has an individual been exposed in the past?</td>
+      <td>IgG</td>
+      <td>25-60(+) days post symptom onset</td>
+      <td>IgG persistence: possibly 1–2 years based on other human coronaviruses (Chang et al., 2005).</td>
+      <td>Transmission models (Weitz et al., 2020; Kucharski et al., 2020) Herd immunity (Lassaunière et al., 2020; Theel et al., 2020).</td>
+    </tr>
+    <tr>
+      <td>Is an individual currently infected?</td>
+      <td>Viral RNA</td>
+      <td>&lt;30 days post-symptom onset</td>
+      <td>Preferable: sequential tests because of extensive variation in detection (Wölfel et al., 2020). Detection probability highest for lower respiratory tract or fecal samples, but upper respiratory tract samples are necessary to assess transmission potential.</td>
+      <td>Assess transmission risk to others; contact tracing Giordano et al., 2020; Parameterization of transmission models (Weitz et al., 2020; Kucharski et al., 2020).</td>
+    </tr>
+    <tr>
+      <td>How recently was an individual exposed?</td>
+      <td>IgM, IgG</td>
+      <td>&gt;25 days post-symptom onset</td>
+      <td>IgG indicates exposure, which is more likely to be recent if IgM is also present, and longer ago if IgM is absent.</td>
+      <td>Recent exposure is more likely correlated with transmission risk, and is a useful measure for prioritizing contact tracing, notably for asymptomatic cases (Okba et al., 2020).</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig4-v2.jpg)
 
@@ -95,19 +168,17 @@ In summary, this study provides an up-to-date, comprehensive reference of key an
 
 ## Materials and methods
 
-## Article selection
+### Article selection
 
 We considered preprints and peer-reviewed articles reporting the presence (positive or negative) or levels for IgG, IgM or neutralizing antibodies against SARS-CoV-2 or SARS-related CoV RaTG13 measured by enzyme-linked immunosorbent assay (ELISA), magnetic chemiluminescence enzyme immunoassay (MCLIA), lateral flow immunoassay (LFIA) or plaque reduction neutralization test (PRNT). In addition, we considered studies reporting PCR data from various biological samples, based on various PCR protocols. To be included in the study, we required that data were associated with information about time since symptom onset at the moment of sample collection. The search terms ‘SARS-CoV-2’ and ‘COVID-19’ were used in combination with the following search terms: serolog*, antibod*, IgG, IgM, RNA, shedding. This strategy was used in the databases Google Scholar, Pubmed and medRxiv. This resulted in about 850 candidate articles and preprints. Within these results, a first selection of candidate articles was performed by assessing the titles, in order to filter articles containing new data (i.e. excluding reviews, opinion articles, modeling studies, etc.). This narrowed down the list of candidate articles to 37, which were screened in detail. The final selection step required articles and preprints to show raw data in tables or figures and include data on time post-symptom onset. A selection process flowchart is shown in Figure 5. We included articles available up to May 1 2020 that contained data that could be used for the analyses in this study. This resulted in a final subset containing 19 peer-reviewed articles and two preprints (Yongchen et al., 2020; Du et al., 2020; To et al., 2020; Wölfel et al., 2020; Okba et al., 2020; Zhao et al., 2020; Haveri et al., 2020; Xiao et al., 2020; Jiang et al., 2020; Lee et al., 2020; Liu et al., 2020a; Long et al., 2020; Lou et al., 2020; Thevarajan et al., 2020; Xiang et al., 2020; Zhang et al., 2020a; Zhou et al., 2020; Young et al., 2020; Zhang et al., 2020b; Liu et al., 2020b; Zhang et al., 2020c; Adams et al., 2020; Zou et al., 2020). Note that initial article selection sample sizes are approximate due to the way in which Google Scholar reports the number of results. It was crucial for these searches to use Google Scholar in order to find preprints that are not included in databases such as Web of Science. Figure 5—source data 1 provides an overview of all articles that were included for analysis, with key features noted. Analyses were done in parallel for a dataset excluding data from preprints, which did not change any qualitative results (not shown). The supplementary R code (Source code 1) includes the option to generate all results with or without data from preprints. Data were extracted from published material, and were digitized from figures when necessary using WebPlotDigitizer (Rohatgi, 2019). All data are available as Source data 1.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60122/elife-60122-fig5-v2.jpg)
 
-**Figure 5.:** Figure 5—source data 1.Note that sample sizes indicate those reported in the articles, not all of which were used for quantitative analysis.
-
-## Disease severity classification
+### Disease severity classification
 
 Disease severity information was classified into three groups: asymptomatic/subclinical, mild/moderate, and severe/critical. Individuals were assigned a classification of asymptomatic/subclinical (N = 11) if they were referred to as ‘healthy’, ‘having no symptoms related to COVID-19’, or ‘asymptomatic’. Inclusion criteria for classification as mild/moderate or severe/critical are based on definitions from the Centers for Disease Control and Prevention (Centers for Disease Control and Prevention, 2019), the Chinese National Health Commission (Released by National Health Commission & National Administration of Traditional Chinese Medicine on March 3, 2020, 2020), and the World Health Organization (World Health Organization, 2020). When disease severity was not specified in the manuscript, patients who did not require supplemental oxygen therapy or transfer to the intensive care unit (ICU) were classified as mild/moderate, while those who did were classified as severe/critical.
 
-## Estimating the distribution of seroconversion times
+### Estimating the distribution of seroconversion times
 
 A major goal of this study is to estimate the means and variation of IgG and IgM seroconversion times (time between symptom onset and first antibody detection) for different assays, antigens, and disease severity. We developed a stepwise weighted bootstrapping procedure to do this using data on seroconversion times that have been reported in a diverse number of ways (from exact days to periods up to 22 days, and as raw results for one individual or means for groups of individuals). Our approach ensures that the best data (i.e. high-resolution data in the form of one specific seroconversion time for one individual) have the most influence on estimates of the means and standard deviations (sd) of seroconversion times.
 
@@ -117,19 +188,19 @@ The first step used only the best available resolution of seroconversion data (i
 
 Seroconversion times were sometimes reported as a mean time (± error) instead of an exact time or time period. In these cases, the standard deviation of time around the mean was calculated (using reported sample size and standard error), and a random time was drawn from this normal distribution. Some studies report seroconversion times for groups of individuals simultaneously. In this case, each individual group member was treated as a separate individual that can be sampled randomly. Data from cumulative seroconversion curves were incorporated by assigning the seroconversion time at which the curve increases to the number of individuals being reported to seroconvert at that time. In the bootstrapping procedure, each of these individuals could then be sampled in the same way as any other individual. Aside from increasing sample size (and hence the confidence in the estimates) and the density of the histogram/distribution, there were no significant differences between distributions estimated using different maximum time periods (Figure 1—figure supplement 5).
 
-## Detection probability of IgG and IgM
+### Detection probability of IgG and IgM
 
 The probability of detecting SARS-CoV-2 specific IgG or IgM in plasma or serum samples was estimated by integrating data on whether an individual tested positive or negative on a given day post-symptom onset. Data containing information on detection probability on a given day are reported in diverse ways, using different resolutions of sample size (from one individual to results reported for groups) or time (results reported on specific days or as a range of days). Additionally, time series data from individuals sampled multiple times contain information about detection probability for times between measurements. These diverse data sources were integrated using different rules. When antibody levels were reported, the cut-off provided in the studies was used to determine the negative or positive status of samples. Individual results for a specific day were included as reported. When time was reported as a period, the midpoint time was used. When a proportion of positive samples was reported together with a sample size, the number of positive and negative samples were calculated and used as independent samples. When two samples that are part of a longitudinal time series showed the same result, the individual was assumed to have the same result for all times within the interval. When such samples had different results, the (interpolated) samples in the early half of the interval were assigned the same result as the first sample, and those in the later half were assigned the same result as the second sample. This procedure resulted in a dataset where each day post-symptom onset has a number of positive and negative observed samples that could be used to estimate a daily detection probability. Binomial exact confidence intervals of the means were calculated and shown.
 
-## Detection probability of RNA
+### Detection probability of RNA
 
 The probability of detecting RNA in upper and lower respiratory samples, and in fecal samples, was estimated using the same procedure used for IgG and IgM, but excluding the assumption that days in the interval between two samples of a time series have the same result, that is not including any interpolated samples. This was based on the fact that RNA detection has been observed to be highly variable (Wölfel et al., 2020; Kucirka et al., 2020). Respiratory sample types were classified as upper (saliva, naso- or oropharyngeal) or lower (sputum, tracheal aspirate, bronchoalveolar lavage) respiratory tract samples. As RT-PCR protocols based on different target sequences resulted in similar sensitivities (Sethuraman et al., 2020), all data were pooled for our analysis of detection probability.
 
-## Antibody level kinetics
+### Antibody level kinetics
 
 To characterize the kinetics of antibody levels, we fit models to all individuals for whom longitudinal data were available (i.e. at least three samples are available, one of which has to be positive). Our goal was to estimate the rate of increase, and the timing and magnitude of the peak antibody level. Assays, antigens and reporting units differed extensively between studies, so antibody levels were normalized by dividing the level of each sample in a study by the maximum value observed in that study. This allowed us to compare antibody level kinetic patterns between different studies. Antibody level normalization using scaling to a mean of zero and standard deviation of one resulted in the same patterns (results not shown). All time-series are shown in Appendix 1.
 
-As there were no (or very limited) data available for the later phase of kinetics, when antibody levels decay from their peak, we focused on the early phase of antibody increase up to peak level. These early-phase dynamics follow a standard growth rate pattern, for which well-described functions are available. Of these functions, a three-parameter Gompertz function, y(t)=ae-be-ct, was an excellent candidate, as its three parameters correspond to clinically significant measures of antibody level (y) dynamics over time (t). The asymptote (a) corresponds to the peak level, displacement (b) corresponds to the seroconversion time, and growth rate (c) corresponds with the antibody level increase rate. Antibody levels (y and a) were log-transformed.
+As there were no (or very limited) data available for the later phase of kinetics, when antibody levels decay from their peak, we focused on the early phase of antibody increase up to peak level. These early-phase dynamics follow a standard growth rate pattern, for which well-described functions are available. Of these functions, a three-parameter Gompertz function, $y(t)=ae^{-be^{-ct}}$, was an excellent candidate, as its three parameters correspond to clinically significant measures of antibody level (y) dynamics over time (t). The asymptote (a) corresponds to the peak level, displacement (b) corresponds to the seroconversion time, and growth rate (c) corresponds with the antibody level increase rate. Antibody levels (y and a) were log-transformed.
 
 We fit this function to the observed time series of normalized antibody levels using Bayesian Markov Chain Monte Carlo inference, using R-JAGS (Plummer, 2019). All parameters were fit separately for each individual, with the assumption that they arise from the same population-level distribution, which was implemented as a hierarchical Bayesian model with hyperpriors for each parameter.
 

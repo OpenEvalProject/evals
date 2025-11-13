@@ -29,9 +29,21 @@ T cell immune activation is associated with increases in mRNA translation, amino
 
 ## Results
 
-## Selective remodelling of T cell proteomes by Myc
+### Selective remodelling of T cell proteomes by Myc
 
 To explore how Myc controls T cell function we used a Cd4Cre+Mycfl/fl (MyccKO) mouse model in which Myc is conditionally deleted during late thymic development (Dose et al., 2009; Mycko et al., 2009; Trumpp et al., 2001). As shown previously (Wang et al., 2011), Myc-deficient CD4+ and CD8+ T cells do not substantially increase cell size or proliferate in response to immune activation with anti-CD3/anti-CD28 agonist antibodies (Figure 1A, Figure 1—figure supplement 1A). To examine how Myc loss impacts proteome remodelling during immune activation we performed quantitative label-free high-resolution mass spectrometry on 24 hour CD3/CD28 activated wild-type (Cd4Cre +, MycWT) and MyccKO CD4+ and CD8+ T cells. This time point was chosen as it is when we observe maximal increase in cell size of the immune activated cells with no difference in survival between MycWT and MyccKO T cells. Moreover, at this time point there is minimal impact of autocrine secreted cytokine IL-2 on Myc expression (Figure 1—figure supplement 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig1-v2.jpg)
+
+**Figure 1.:** (A) Forward scatter area (FSC-A) of IL-7 maintained or 24 hr anti-CD3 + anti-CD28 (TCR) activated Cd4Cre+ (MycWT) and Cd4Cre+Mycfl/fl (MyccKO) T cells. (B–C, E–O) Quantitative proteomics data of ex vivo naïve WT and 24 hr TCR activated CD4+ and CD8+ T cells from MycWT and MyccKO mice. (B) Total protein content (µg/million cells). (C) Mean protein copy number per cell estimated using proteomic ruler (Wiśniewski et al., 2014) of Myc. (D) Myc expression measured by flow cytometry in 24 hr TCR activated MycWT and MyccKO CD4+ and CD8+ T cells. Proteins from 24 hr TCR activated MycWT (E) CD8+ and (F) CD4+ T cells were ranked by mass contribution and the mean cumulative protein mass was plotted against protein rank (left panel). Numbers in each quartile indicate total proteins summed with those in the quartiles below. Volcano plots show foldchange in protein copy number between TCR activated MyccKO and MycWT T cells, with proteins that contribute the top 75% of the T cell mass shown in red (right panel). (G) Heat maps of naïve and TCR activated MycWT and MyccKO CD8+ and CD4+ proteomes. Relative protein abundance is graded from low (blue) to high (yellow) per row. Input data for heatmaps is listed in Supplementary file 1. Mean protein copy number per cell for activation markers (H) IL7ra (J) CD69 and (K) CD44 and key transcription factors (I) Klf2, (L) Rel, (M) JunB, (N) Tbet, and (O) Irf4. Symbols on bar charts represent biological replicates: error bars show mean ± S.E.M. Quantitative proteomics was performed on biological triplicates. Fold-change calculations and statistical testing comparing naïve WT vs TCR MycWT, naïve WT vs TCR MyccKO, and TCR MycWT vs TCR MyccKO protein copy number per cell is listed in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) CFSE labelled lymph node cells from Cd4Cre+ (MycWT) and Cd4Cre+ Mycfl/fl (MyccKO) mice were stimulated with anti-CD3 and anti-CD28 (both 0.5 µg/mL) for 48 hr and CFSE dilution was measured. Representative of technical duplicate plots. (B) Lymph node cells from GFP-MycKI mice were stimulated with anti-CD3 (1 µg/ml) and anti-CD28 (3 µg/ml) in the presence of IL-2 receptor-blocking antibody PC61 (2 µg/ml) or isotype control and GFP-Myc expression was measured over time. Symbols show biological replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Naïve WT and 24 hr TCR activated MycWT and MyccKO proteomic data was generated as described in Figure 1 and Materials and methods. (A) Venn diagram showing that there were a larger number of proteins that were classified as differentially regulated in CD8+ T cells compared to CD4+ T cells, where differentially regulated is defined as proteins that were more than 2-fold regulated and p<0.05 between MycWT vs MyccKO TCR activated conditions. (B) Heat maps of proteins that were Myc-regulated in CD4+ T cells only, both CD4+ and CD8+ T cells or CD8+ T cells only show similar qualitative effects of Myc-deficiency for most proteins. Relative protein abundance is graded from low (blue) to high (yellow) per row. (C) Mean copy number per cell for examples of proteins classified as Myc-regulated in CD8+ T cells only. Protein expression was much higher in MycWT CD8 T cells compared MycWT CD4+ T cells, whereas expression levels in MyccKO CD4+ and CD8+ T cells are reduced to a similar extent thus giving a larger quantitative effect of Myc-deficiency in CD8+ T cells. Examples include important transcription factors such as Nfkb1 and Nfkb2, the integrin Icam1 and cytokine receptor components such as Il2rb. Symbols show biological replicates. Mean ± S.E.M. Fold-change calculations and statistical testing comparing naïve WT vs TCR MycWT, naïve WT vs TCR MyccKO, and TCR MycWT vs TCR MyccKO protein copy number per cell is listed in Supplementary file 1.
 
 >7000 proteins were identified and protein mass and copy number per cell was estimated by the ‘proteomic ruler’ method which uses the mass spectrometry signal of histones as an internal standard (Supplementary file 1; Wiśniewski et al., 2014). The data in Figure 1B show that in contrast to Myc T cells, CD3/CD28 activated MyccKO T cells fail to increase protein content above the level of naive ex vivo isolated MycWT T cells. Hence, the increase in cell biomass that accompanies T cell activation is dependent on Myc. Notably, the protein content of immune activated MycWT CD4+ T cells was lower than activated CD8+ T cells and this correlates with higher levels of Myc in immune activated CD8+ versus CD4+ MycWT T cells (Figure 1C–D).
 
@@ -41,7 +53,7 @@ The selective effects of Myc-deficiency on protein expression in activated CD8+ 
 
 Collectively, these data show that immune activated T cell proteome remodelling comprises both Myc dependent and independent processes and that Myc has a qualitatively similar, but dose-dependent effect on CD4+ and CD8+ T cell proteomes.
 
-## Selective remodelling of T cell metabolic pathways by Myc
+### Selective remodelling of T cell metabolic pathways by Myc
 
 When examining the selective effects of Myc-deficiency on T cell immune activation we observed that MyccKO T cells increased expression of the glucose transporters Slc2a1 and Slc2a3 (Glut1 and Glut3 respectively) equal to, or exceeding the level seen in MycWT T cells in response to T cell activation (Figure 2A–B). The ability of immune activated MyccKO T cells to upregulate expression of Slc2a1 and Slc2a3 glucose transporters was unexpected as it has been reported that Myc-deficient T cells have abnormal glycolytic metabolism and defective induction of glucose transporter mRNA (Wang et al., 2011). Moreover, Slc2a1 has been implicated as a direct transcriptional target of Myc (Osthus et al., 2000). In this context, CD3/CD28 triggering increases expression of glycolytic enzymes in both MycWT and MyccKO CD4+ and CD8+ T cells (Figure 2C, left panel). Although the cumulative levels of glycolytic enzymes in MyccKO are reduced by 58% and 30% in CD8+ and CD4+ T cells respectively compared with MycWT controls, they still comprise a large percentage of the proteomes of immune activated MyccKO T cells (Figure 2C, right panel). It was however striking that Myc had a large impact on lactate transporter expression, particularly on the numerically dominant lactate transporter Slc16a1 (Figure 2D). Lactate transporters control a critical rate limiting step for glycolytic flux (Tanner et al., 2018). Their absence would prevent lactate export and feedback to suppress glycolytic flux (Doherty et al., 2014). Slc16a1 expression increases from <10,000 copies per naïve T cell to ~140,000 and~80,000 copies per immune activated CD8+ and CD4+ MycWT T cell respectively. In contrast, Slc16a1 expression in immune activated MyccKO T cells remains equivalent to naive levels (Figure 2D, Supplementary file 1). These data display the selectivity of Myc importance for expression of key components of the glycolysis machinery and point to control of lactate export as a mechanism whereby Myc controls glycolytic flux in T cells.
 
@@ -51,9 +63,29 @@ When examining the selective effects of Myc-deficiency on T cell immune activati
 
 Another key Myc controlled metabolic process is glutamine catabolism (Wang et al., 2011; Wise et al., 2008). Once imported glutamine can be metabolised in a number of different processes, including the hexosamine pathway, nucleotide biosynthesis processes, and the citric acid cycle (Figure 2E). The present data reveal the selectivity of the Myc requirement for expression of important enzymes for glutamine metabolism. Myc controls expression of glutaminase (Gls), Cad and Ppat, the enzymes that control the first steps in glutaminolysis, and pyrimidine and purine biosynthesis respectively. However, expression of Gfpt1, the first and rate limiting step in the hexosamine pathway and Glud1, the enzyme that converts glutamate to a-ketoglutarate are still expressed in MyccKO T cells (Figure 2F and Supplementary file 1).
 
-## Myc controls amino acid transporter expression in immune activated T cells
+### Myc controls amino acid transporter expression in immune activated T cells
 
 One major effect of Myc loss on immune activated T cells is failure to increase cell mass (Figure 1A–B). In this context, immune activation of T cells decreases expression of translational repressors and drives increased expression of ribosomes and mRNA translational machinery (Geiger et al., 2016; Howden et al., 2019; Ron-Harel et al., 2016; Tan et al., 2017). The data in Figure 3—figure supplement 1A–C shows that Myc loss does not prevent loss of the translational repressor Pdcd4 in activated T cells. Myc-deficiency did however suppress CD3/CD28 mediated increases in expression of ribosomes, eukaryotic initiation factor 4 (eIF4F) complexes that translate methyl capped mRNAs and EIF2 complexes which controls tRNA transfer to ribosomes. Although increasing expression of translational machinery is important, an absolutely fundamental requirement for a substantial increase in cell mass is availability of amino acids (Hosios et al., 2016). Therefore, it is striking that the loss of Myc prevents the upregulation of expression of multiple amino acid transporters in activated T cells (Figure 3A–B). The most abundant amino acid transporters expressed on CD3/CD28 activated CD4+ and CD8+ T cells are Slc7a5 (leucine, methionine, tryptophan), Slc1a5 (glutamine, serine, threonine, alanine), Slc38a1 and Slc38a2 (glutamine, methionine) and Slc7a1(arginine, lysine) (Figure 3A, Supplementary file 1). Naïve T cells have very low levels of all of these transporters, expressing ~500–2500 copies per cell (Figure 3A, Supplementary file 1). Upon activation, amino acid transporters are some of the most highly induced proteins in MycWT T cells, exhibiting up to 100-fold increases relative to naïve cells (Figure 3A–B). In contrast, immune activated MyccKO T cells only express amino acid transporters at near naïve levels (Figure 3A–B, Supplementary file 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig3-v2.jpg)
+
+**Figure 3.:** Naïve WT and 24 hr TCR activated MycWT and MyccKO CD4+ and CD8+ T cell proteomic data was generated as described in Figure 1 and Materials and methods. (A) Mean copy number per cell of abundant amino acid transporters in T cells. (B) Fold-change in amino acid transporter protein copy number from naïve WT to 24 hr TCR activated MycWT and MyccKO, mean (min, max). Transport by system L amino acid transporters was measured by uptake of fluorescent (emission 450 nm when excited at 405 nm) Tryptophan metabolite, Kynurenine (Kyn) (Sinclair et al., 2018) in (C) 2 hr IL-7 maintained and (D-E) 4 hr IL-7 maintained or TCR activated splenic CD4+ and CD8+ WT, MyccKO and Slc7a5cKO T cells or (F) 20 hr TCR activated Myc-GFP reporter CD4+ T cells. In (C,E) system-L uptake is represented as the ratio of BCH (a system L inhibitor) untreated: treated T cells. In (E) dotted line indicates Slc7a5cKO uptake level. (G) Forward scatter and CD69 expression of IL-7 maintained or 24 hr TCR activated wild-type and Slc7a5cKO (Cd4Cre+ Slc7a5fl/fl) T cells. (H-K) Quantitative proteomics data of naïve WT and 24 hr TCR activated CD4+ and CD8+ T cells from Ly5.1 (Slc7a5WT) and Slc7a5cKO mice. Baseline naïve WT data is the same as used for the MyccKO dataset. (H) Total protein content (µg/million cells). (I) Heat map of naïve and TCR activated Slc7a5WT and Slc7a5cKO CD4+ T cell proteomes. Relative protein abundance is graded from low (blue) to high (yellow) per row. Input data for heatmaps is listed in Supplementary file 1. (J) Venn diagram showing the overlap in TCR regulated proteins that are more than 2-fold regulated and p<0.05 in MycWT vs MyccKO and Slc7a5WT vs Slc7a5cKO TCR activated CD4+ T cells. (K) Volcano plots of TCR regulated proteins comparing Slc7a5WT and Slc7a5cKO datatsets. Proteins > 2 fold different between MycWT and MyccKO TCR activated T cells are highlighted in red; proteins reduced in the MyccKO (left panel), proteins higher MyccKO (right panel). Symbols in bar charts represent biological replicates: error bars show mean ± S.E.M. Dot plot in (F) is representative of biological triplicate data. Quantitative proteomics was performed on biological triplicates. Fold-change calculations and statistical testing comparing naïve WT vs TCR MycWT, naïve WT vs TCR MyccKO, TCR MycWT vs TCR MyccKO, naïve WT vs TCR Slc7a5WT, naïve WT vs TCR Slc7a5cKO and TCR Slc7a5WT vs TCR Slc7a5cKO protein copy number per cell is listed in Supplementary file 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Naïve WT and 24 hr TCR activated MycWT and MyccKO proteomic data was generated as described in Figure 1 and Materials and methods. Diagram and mean copy number per cell of (A) translation initiation complex and (B) 43S preintiaition complex components. (C) Protein content of 40S and 60S ribosome (µg/million cells). Symbols show biological replicates. Mean ± S.E.M. Fold-change calculations and statistical testing comparing naïve WT vs TCR MycWT, naïve WT vs TCR MyccKO, and TCR MycWT vs TCR MyccKO protein copy number per cell is listed in Supplementary file 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Transport by system L amino acid transporters was measured by uptake of fluorescent (emission 450 nm when excited at 405 nm) Tryptophan metabolite, Kynurenine (Kyn) in 6 or 24 hr IL-7 maintained or anti-CD3/anti-CD28 (TCR) activated CD4+ and CD8+ WT and MyccKO T cells. Histograms are representative of at least three biological replicates.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Naïve WT and 24 hr TCR activated MycWT and MyccKO proteomic data was generated as described in Figure 1 and Materials and methods. Diagram and mean copy number per cell of proteins involved in (A) Methionine metabolism and (B) Branched-chain amino acid metabolism. Symbols show biological replicates. Mean ± S.E.M. Fold-change calculations and statistical testing comparing naïve WT vs TCR MycWT, naïve WT vs TCR MyccKO, and TCR MycWT vs TCR MyccKO protein copy number per cell is listed in Supplementary file 1.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/53725/elife-53725-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Protein content of ribosomes (excluding mitochondrial) from naïve WT and 24 hr TCR activated MycWT and MyccKO proteomics data (generated as described in Figure 1 and Materials and methods). (B) Protein content of ribosomes (excluding mitochondrial) and (C) Slc2a3 mean copy number per cell from naïve WT and 24 hr TCR activated Slc7a5WT and Slc7a5cKO proteomics data (generated as described in Figure 3 and Materials and methods). Symbols show biological replicates. Mean ± S.E.M. Fold-change calculations and statistical testing comparing naïve WT vs TCR MycWT, naïve WT vs TCR MyccKO, TCR MycWT vs TCR MyccKO, naïve WT vs TCR Slc7a5WT, naïve WT vs TCR Slc7a5cKO and TCR Slc7a5WT vs TCR Slc7a5cKO protein copy number per cell is listed in Supplementary file 1. Splenocytes from MycWT, MyccKO and Slc7a5cKO were stimulated with anti-CD3 and anti-CD28 for 24 hr and; (D) Golgi plug with or without PdBU and ionomycin was added to the cultures for the last 4 hr prior to harvest and IFNgamma expression was measured in CD8+ T cells by flow cytometry; or (E) Granzyme B was measured in CD8+ T cells by flow cytometry. Histograms are representative of at least three biological replicates.
 
 The high levels of protein production in activated T cells would need to be fuelled by amino acid supply (Hosios et al., 2016). Moreover, T cells that lack expression of key amino acid transporters such as Slc7a5 and Slc1a5 are defective in their response to T cell activation (Nakaya et al., 2014; Sinclair et al., 2013). We therefore questioned whether the ability of Myc to control T cell growth could be explained by Myc control of amino acid transporter expression. Accordingly, we examined the impact of Myc expression on the functional capacity of T cells to transport amino acids and we assessed whether the loss of amino acid transporter expression could recapitulate the striking impact of Myc deletion on T cell protein production. We focused on the system L transporter Slc7a5, as this is the most abundant amino acid transporter expressed on immune activated T lymphocytes (Figures 3A and 4B, Supplementary file 1) and mediates transport of many essential amino acids including methionine, leucine, isoleucine, valine, phenylalanine and tryptophan (Sinclair et al., 2019; Sinclair et al., 2018; Sinclair et al., 2013). Low basal levels of Slc7a5 in naïve T cells mediate amino acid uptake that is not dependent on Myc (Figure 3C). Within 4 hr of T cell activation there is already increased system L transport activity in MycWT T cells and this increase is substantially lower in MyccKO CD4+ and CD8+ T cells (Figure 3D–E). There was also a strong correlation between the levels of Myc protein expressed by activated T cells and system L amino acid transport capacity (Figure 3F) and while system L transport increased substantially over the first 24 hr of T cell activation in MycWT T cells this did not occur in MyccKO T cells (Figure 3—figure supplement 2). Downstream of Slc7a5 amino acid uptake, Myc-deficient T cells also fail to increase expression of several key enzymes in metabolic pathways that utilise branch-chain amino acid (Leucine, Isoleucine, Valine) pathways and methionine (Figure 3—figure supplement 3A–B). Collectively, these data show that Myc plays a critical role in regulating system L amino acid transport and amino acid metabolism in immune activated T cells.
 
@@ -67,7 +99,7 @@ Overall, deficiency in a single Myc controlled amino acid transporter, Slc7a5, l
 
 To explore the mechanism for Myc control of amino acid transport in activated T cells we examined the relationship between Myc and amino acid transporter mRNA expression. Single cell RNAseq analysis of antigen activated OT1 CD8+ T cells (Richard et al., 2018) shows a strong correlation at the single cell level of Myc mRNA expression and expression of mRNA for Slc7a5, Slc7a1 and Slc1a5 (Figure 4A). Expression of Myc mRNA clearly precedes increased expression of mRNA for Slc7a5 and Slc1a5 (Figure 4A). More importantly, in a proteomics time course of OT1 CD8+ T cell activation, expression of Myc protein precedes antigen induced increases in expression of most amino acid transporters (Figure 4B). Proteomics data shows that expression of amino acid transporters increases gradually over time (Figure 4B), and Kyn uptake experiments confirm that this increase in transporter number corresponds with higher system L uptake (Figure 3—figure supplement 2). CD3/CD28 activation of MycWT CD4+ and CD8+ T cells drives increases in Slc7a5, Slc1a5 and Slc7a1 mRNA, whereas activated MyccKO CD4+ and CD8+ T cells do not increase expression of Slc7a5 or Slc1a5 mRNA and show reduced expression of Slc7a1 mRNA (Figure 4C).
 
-## Myc induction of amino acid transport initiates a positive feedforward loop
+### Myc induction of amino acid transport initiates a positive feedforward loop
 
 The current data are consistent with a model that Myc controls T cell growth by controlling the upregulation of amino acid transporter expression required for T cell activation. However one possible inconsistency is that previous studies have shown that Slc7a5 is required for expression of Myc protein (but not mRNA) in activated CD8+ T cells (Sinclair et al., 2013). We considered that an explanation for this discrepancy would be if there were a positive feedforward loop whereby the initial rapid expression of Myc during immune activation is not Slc7a5 dependent but the sustained expression is. To directly interrogate this model we measured Myc expression over time in CD3/CD28 activated WT and Slc7a5cKO T cells. These data (Figure 4D) show that Slc7a5 is not required for the immediate and rapid upregulation of Myc expression that accompanies T cell activation but is required for activated T cells to sustain Myc protein.
 
@@ -83,19 +115,512 @@ One key conclusion from the present data is that a primary function of Myc is to
 
 ## Materials and methods
 
-## Lead contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd4Cre</td>
+      <td>PMID: 27345256, PMID: 11728338</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd4Cre+ Mycfl/fl</td>
+      <td>PMID: 19423665, PMID: 19342639, PMID: 11742404</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd4Cre+ Slc7a5fl/fl</td>
+      <td>PMID: 23525088, PMID: 24586861</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>GFP-MycKI</td>
+      <td>PMID: 18196519, PMID: 26136212, PMID: 23021216</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>OT1</td>
+      <td>PMID: 8287475</td>
+      <td></td>
+      <td>maintained in house as an OT1 TCR transgene heterozygote on a CD45.1 (Ly5.1) background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3 (armenian hamster, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 14-0031-82, RRID:AB_467049</td>
+      <td>T cell activation: 0.5 or 1 μg/ml as indicated in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD28 (syrian hamster, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 16-0281-82, RRID:AB_468921</td>
+      <td>T cell activation: 0.5 or 3 μg/ml as indicated in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 553650, RRID:AB_394970; Cat# 552775, RRID:AB_394461; Cat# 553047, RRID:AB_394583</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4 (rat, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 47-0042-82, RRID:AB_1272183</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8a (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 100708, RRID:AB_312747; Cat# 100722, RRID:AB_312761 Cat# 100738, RRID:AB_11204079</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8a (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 551162, RRID:AB_394081</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD69 (armenian hamster, monoclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 17-0691-82, RRID:AB_1210795</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD69 (armenian hamster, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 104514, RRID:AB_492843</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD69 (armenian hamster, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553237, RRID:AB_394726</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553087, RRID:AB_394617</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NK1.1 (mouse, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 108706, RRID:AB_313393</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 101206, RRID:AB_312789</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD25 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553072, RRID:AB_394604</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD62L (rat, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-0621-83, RRID:AB_465722</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCRb (armenian hamster, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 45-5961-82, RRID:AB_925763</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 559250, RRID:AB_398661</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Thy1.2 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553006, RRID:AB_394545</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.1 (mouse, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 110714, RRID:AB_313503</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.2 (mouse, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 109816, RRID:AB_492868</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/CD32 Fc Block, (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 553141, RRID:AB_394656</td>
+      <td>Fc block 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Myc (D84C12) XP (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 5605, RRID:AB_1903938</td>
+      <td>intracellular staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit A647 (goat)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat # 4414, RRID:AB_10693544</td>
+      <td>intracellular staining 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IFNg (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 505810, RRID:AB_315404</td>
+      <td>intracellular cytokine staining 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Granzyme B</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 17-8898-82, RRID:AB_2688068</td>
+      <td>intracellular cytokine staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1306</td>
+      <td>1 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kynurenine</td>
+      <td>Sigma</td>
+      <td>Cat# K8625</td>
+      <td>200 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BCH</td>
+      <td>Sigma</td>
+      <td>Cat# A7902</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Merck/Calbiochem</td>
+      <td>Cat# 553211</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rneasy minikit</td>
+      <td>Qiagen</td>
+      <td>Cat # 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis kit</td>
+      <td>Biorad</td>
+      <td>Cat#1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBRGreen Supermix</td>
+      <td>Biorad</td>
+      <td>Cat# 1725121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZQ protein quantitation kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R33200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Sera-Mag SpeedBead Carboxylate-modified magnetic particles (hydrophilic)</td>
+      <td>GE Lifesciences</td>
+      <td>cat# 45152105050250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Sera-Mag SpeedBead Carboxylate-modified magnetic particles (hydrophobic)</td>
+      <td>GE Lifesciences</td>
+      <td>cat# 65152105050250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CBQCA protein quantitation kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C6667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiPPR Detergent Removal Spin Column Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 88305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep CD8 T cell isolation kit</td>
+      <td>STEMCELL Technologies, UK</td>
+      <td>Cat # 19853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Golgi Plug</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 555029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>eBioscience Intracellular Fixation and Permeabilization Buffer Set</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 88-8824-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CFSE</td>
+      <td>Thermo Fisher Scientific/Invitrogen</td>
+      <td>Cat# C34554</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL7</td>
+      <td>Peprotech</td>
+      <td>Cat# 217–17</td>
+      <td>5 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL2</td>
+      <td>Novartis, UK</td>
+      <td>Proleukin</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL12</td>
+      <td>Peprotech</td>
+      <td>Cat#210–12</td>
+      <td>2 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>Slc7a5 forward primer</td>
+      <td></td>
+      <td></td>
+      <td>AAG GCT GCG ACC CGT GTG</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>Slc7a5 reverse primer</td>
+      <td></td>
+      <td></td>
+      <td>ATC ACC TTG TCC CAT GTC CTT CC</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>Slc7a1 forward primer</td>
+      <td></td>
+      <td></td>
+      <td>GGA GCT TTG GC CTT CAT CAC T</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>Slc7a1 reverse primer</td>
+      <td></td>
+      <td></td>
+      <td>CAG CAC CCC AGG AGC ATT CA</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>Slc1a5 forward primer</td>
+      <td></td>
+      <td></td>
+      <td>GCC ATC ACC TCC ATC AAC GAC T</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>Slc1a5 reverse primer</td>
+      <td></td>
+      <td></td>
+      <td>AGA GCG GAA GGC AGC AGA CAC</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>TBP forward primer</td>
+      <td></td>
+      <td></td>
+      <td>GTG AAT CTT GGC TGT AAA CTT GAC CT</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>TBP reverse primer</td>
+      <td></td>
+      <td></td>
+      <td>CGC AGT TGT CCG TGG CTC T</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software</td>
+      <td>Treestar</td>
+      <td></td>
+      <td>versions 9 and 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Maxquant</td>
+      <td>https://www.maxquant.org, PMID: 19029910</td>
+      <td></td>
+      <td>version 1.6.2.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>https://www.maxquant.org/perseus, PMID: 27348712</td>
+      <td></td>
+      <td>version 1.6.6.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI 1640</td>
+      <td>Thermo Fisher Scientific/GIBCO</td>
+      <td>Cat# 21875–034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI - glutamine</td>
+      <td>Thermo Fisher Scientific/GIBCO</td>
+      <td>Cat# 42401–018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI - methionine</td>
+      <td>DC Biosciences Ltd</td>
+      <td></td>
+      <td>custom made RPMI without methionine and arginine - supplemented back the arginine (0.2 g/L) to RPMI levels</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI - leucine</td>
+      <td>Sigma</td>
+      <td>Cat# R1780 SAFC</td>
+      <td>supplemented back arginine (0.2 g/L) and lysine (0.04 g/L)to RPMI levels</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HBSS</td>
+      <td>Thermo Fisher Scientific/GIBCO</td>
+      <td>Cat# 14025–050</td>
+      <td>used this as amino acid-free media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS</td>
+      <td>Thermo Fisher Scientific/GIBCO</td>
+      <td>Cat # 10270106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS, dialyzed</td>
+      <td>Thermo Fisher Scientific/GIBCO</td>
+      <td>Cat# 26400044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Arginine</td>
+      <td>Sigma</td>
+      <td>Cat# A5006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lysine</td>
+      <td>Sigma</td>
+      <td>Cat# L5501</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Doreen Cantrell (d.a.cantrell@dundee.ac.uk).
 
-## Experimental model details
+### Experimental model details
 
-## Mice
+#### Mice
 
 Cd4Cre+, Cd4Cre+ Mycfl/fl (Dose et al., 2009; Mycko et al., 2009; Trumpp et al., 2001), Cd4Cre+ Slc7a5fl/fl (Sinclair et al., 2013), Ly5.1, OT1 and Myc-eGFP (Nie et al., 2012) mice were bred and maintained in the WTB/RUTG, University of Dundee in compliance with UK Home Office Animals (Scientific Procedures) Act 1986 guidelines. Male Cd4Cre+ and Cd4Cre+ Mycfl/fl and female Ly5.1 and Cd4Cre+ Slc7a5fl/fl mice were used for proteomics studies at 12 weeks of age. 1 group of female and 2 groups of male OT1 mice aged 7–28 weeks were used for OT1 time course proteomics. Age/sex matched male and female mice were used for other experiments between 8–30 weeks of age.
 
-## Method details
+### Method details
 
-## Cell culture
+#### Cell culture
 
 All cells were activated and cultured at 37 °C with 5% CO2 in complete culture medium - RPMI 1640 containing glutamine (Invitrogen), supplemented with 10% FBS (Gibco), penicillin/streptomycin (Gibco) and 50 μM β-mercaptoethanol (Sigma) unless otherwise indicated.
 
@@ -113,7 +638,7 @@ For CFSE assay, lymph node suspensions at 1 million cells per mL in PBS 1%FCS we
 
 For IFNγ and Granzyme B intracellular staining, splenocytes were activated with anti-CD3 and anti-CD28 (both 0.5 µg/mL) for 20 hr at a density of 1 million cells/mL. Golgi plug (1:1000, BD Biosciences) +/- PdBU (20 ng/mL) and ionomycin (500 ng/mL) were added to the culture for 4 hr then cells were harvested after 24 hr total time in culture.
 
-## Cell sorting
+#### Cell sorting
 
 Cell sorting was performed on a BD Influx cell sorter. Staining, sorting and cell collection was performed in RPMI 1640 containing glutamine, supplemented with 1% FBS.
 
@@ -127,7 +652,7 @@ Naïve CD4 and CD8 T cells for proteomics and qPCR were sorted from lymph nodes 
 
 In all cases, sorted cells were washed twice with HBSS before being snap frozen in liquid nitrogen and stored at −80°C until further processing.
 
-## Flow cytometry
+#### Flow cytometry
 
 Flow cytometry data was acquired on a FACSVerse using FACSuite software or FACSCanto, or LSR II Fortessa with FACS DIVA software (BD Biosciences). Data was analysed using Flowjo software version 9.9.6 (Treestar).
 
@@ -137,11 +662,11 @@ For Myc intracellular staining, cells were fixed and permeabilised overnight in 
 
 For IFNγ and Granzyme B intracellular staining cells were fixed and permeabilised using eBioscience Intracellular Fixation and Permeabilisation kit (eBioscience) as per manufacturer instructions. Cells were stained with anti-IFNγ (XMG1.2) and anti-Granzyme B (NGZB) at 1:100 and 1:200 respectively.
 
-## Kynurenine uptakes
+#### Kynurenine uptakes
 
 Kynurenine uptake assay were performed as described in Sinclair et al. (2018). Briefly, antibodies against surface markers were added to culture (37°C 5% CO2) for 10 min prior to uptake assay in order to identify cell types. ~ 3 million cells per condition were harvested, washed with warm HBSS and split into three wells/tubes in warm HBSS. For each condition either HBSS, Kynurenine (200 µM final concentration) or BCH (10 mM, a system L inhibitor) + Kynurenine were added and placed back at 37°C. Uptakes were stopped after 5 min by addition of PFA (final concentration 1%) for 30 min at room temp. After fixation cells were washed with PBS 1%FBS before analysis on flow cytometer. Kynurenine is excited by the 405 nm laser and is detected in the 450/50 BP filter.
 
-## qPCR
+#### qPCR
 
 Total RNA was isolated from sorted pellets using RNeasy Minikit (Qigen) with on column DNase (Qiagen) digestion and cDNA transcribed using iScript cDNA Synthesis kit (Biorad, cat#1708891) all as per manufacturer instructions. Quantitative Real-Time PCR was performed using iTaq Universal SYBRGreen Supermix (Biorad, cat#1725121) on a Bio-Rad iQ5 Multicolor Real-Time PCR Detection System, with Bio-Rad iQ5 software. mRNA fold-change was quantified relative to naïve CD4 MycWT T cells using the ΔΔCt method, with TBP as the loading control. Primer sequences were as follows:
 
@@ -153,13 +678,13 @@ Slc1a5:
 
 TBP:
 
-## Proteomics sample preparation
+#### Proteomics sample preparation
 
 Cell pellets were lysed at room temperature in 4% SDS, 50 mM TEAB pH 8.5, 10 mM TCEP under agitation (5 min, 1200 rpm on tube shaker), boiled (5 min, 500 rpm on tube shaker), then sonicated with a BioRuptor (30 s on, 30 s off x30 cycles). Protein concentration was determined using EZQ protein quantitation kit (Invitrogen) as per manufacturer instructions. Lysates were alkylated with 20 mM iodoacetamide for 1 hr at room temperature in the dark, before protein clean up by SP3 procedure (Hughes et al., 2014). Briefly, 200 µg of 1:1 mixed Hydrophobic and Hydrophilic Sera-Mag SpeedBead Carboxylate-Modified Magnetic Particles were added per protein sample then acidified to ~pH 2.0 by addition 10:1 Acetonitrile: Formic Acid. Beads were immobilised on a magnetic rack and proteins washed with 2 × 70% ethanol and 1 × 100% acetonitrile. Rinsed beads were reconstituted in 0.1% SDS 50 mM TEAB pH 8.5, 1 mM CaCl2 and digested overnight with LysC followed by overnight digestion with Trypsin, each at a 1:50 enzyme to protein ratio. Peptide clean up was performed as per SP3 procedure (Hughes et al., 2014). Briefly, protein-bead mixtures were resuspended and 100% acetonitrile added for 10 min (for the last 2 min of this beads were immobilised on a magnetic rack). Acetonitrile and digest buffer were removed, peptides were washed with acetonitrile and eluted in 2% DMSO. Peptide concentration was quantified using CBQCA protein quantitation kit (Invitrogen) as per manufacturer protocol. Formic acid was added to 5% final concentration.
 
 Samples were fractionated using high pH reverse phase liquid chromatography. Samples were loaded onto a 2.1 mm x 150 mm XBridge Peptide BEH C18 column with 3.5 μm particles (Waters). Using a Dionex Ultimate3000 system, the samples were separated using a 25 min multistep gradient of solvents A (10 mM formate at pH 9 in 2% acetonitrile) and B (10 mM ammonium formate pH 9 in 80% acetonitrile), at a flow rate of 0.3 mL/min. Peptides were separated into 16 fractions which were consolidated into eight fractions. Fractionated peptides were dried in vacuo then dissolved in 5% Formic Acid for analysis by LC-ES-MS/MS. For MycWT naïve and OT1 TCR time course proteomics samples clean up was performed on the 8th fraction of each sample using HIPPR detergent removal spin column kit (ThermoFisher Scientific) as per manufacturer protocol.
 
-## Liquid chromatography electrospray tandem mass spectrometry analysis (LC-ES-MS/MS)
+#### Liquid chromatography electrospray tandem mass spectrometry analysis (LC-ES-MS/MS)
 
 ≤1 µg of peptide was analysed per fraction in all experiments.
 
@@ -167,13 +692,13 @@ For label-free proteomics of MycWT and MyccKO and Slc7a5WT and Slc7a5cKO 24 hr 
 
 For label-free proteomics of naïve WT T cells and N4 activated OT-I T cell time course, samples were injected onto a nanoscale C18 reverse-phase chromatography system (UltiMate 3000 RSLC nano, Thermo Scientific) before being electrosprayed into a Q Exactive Plus mass spectrometer (Thermo Scientific). The chromatography buffers used were as follows: HPLC buffer A (0.1% formic acid), HPLC buffer B (80% acetonitrile in 0.1% formic acid) and HPLC buffer C (0.1% formic acid). Samples (15 µL) were injected and washed with Buffer C (10 ul/min) for 5 min prior to valve switch on an Acclaim PepMap100 nanoViper C18 trap column (100 µm inner diameter, 2 cm; Thermo Scientific). After trap enrichment, peptides were eluted onto an EASY-Spray PepMap RSLC nanoViper, C18, 2 µm, 100 Å column (75 µm, 50 cm; Thermo Scientific) using the following buffer gradient: 2% to 5% B (0 to 5 min), 5% to 35% B (5 to 130 min), 35% to 98% B (130 to 132 min), 98% B (132 to 152 min), 98% to 2% B (152 to 153 min), and equilibrated in 2% B (153 to 170 min) at a flow rate of 0.3 µl/min. The eluting peptide solution was automatically electrosprayed into the Q Exactive Plus mass spectrometer using an EASY-Spray nanoelectrospray ion source at 50° and a source voltage of 2.0 kV (Thermo Scientific). The mass spectrometer was operated in positive ion mode. Data were collected using data- dependent acquisition: the 15 most intense peptide ions from the preview scan in the Q Exactive Plus were fragmented by higher-energy collisional dissociation. The following settings were applied: MS1 scan resolution: 70 000; MS1 AGC target: 1e6; MS1 maximum IT: 20 ms; MS1 scan range: 350–1600 Th; MS2 scan resolution: 17 500; MS2 AGC target: 2e5; MS2 maximum IT: 100 ms; isolation window: 1.4 Th; first fixed mass: 200 Th; NCE: 27; minimum AGC target: 2e3; only charge states 2 to 6 considered; peptide match: preferred; exclude isotopes: on; dynamic exclusion: 45 s.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Proteomics data analysis
+#### Proteomics data analysis
 
 The data were processed, searched and quantified with the MaxQuant software package, Version 1.6.2.6. For the protein and peptide searches we generated a hybrid database from databases in Uniprot release 2019 07. This consisted of all manually annotated mouse SwissProt entries, combined with mouse TrEMBL entries with protein level evidence available and a manually annotated homologue within the human SwissProt database. The following MaxQuant search parameters were used: protein N-terminal acetylation, methionine oxidation, glutamine to pyroglutamate, and glutamine and asparagine deamidation were set as variable modifications and carbamidomethylation of cysteine residues was selected as a fixed modification; Trypsin and LysC were selected as the enzymes with up to two missed cleavages permitted; the protein and PSM false discovery rate was set to 1%; matching of peptides between runs was switched off. Data filtering and protein copy number quantification was performed in the Perseus software package, version 1.6.6.0. Proteins were quantified from unique peptides and razor peptides (peptides assigned to a group, but not unique to that group). Quantification quality was categorized based on the following: quantification was considered high accuracy if proteins had eight or more unique and razor peptides assigned and at least 75% of these peptides were unique; proteins were considered medium accuracy if they were assigned at least three unique and razor peptides with 50% of these being unique; proteins below these thresholds were considered low accuracy. The data set was filtered to remove proteins categorised as ‘contaminants’, ‘reverse’ and ‘only identified by site’. Mean copy number per cell was calculated using the “proteomic ruler’ plugin as described in Wiśniewski et al. (2014). Briefly, this method sets the summed peptide intensities of the histones to the number of histones in a diploid mouse cell then uses the ratio between the histone peptide intensity and summed peptide intensities of other identified proteins to estimate the protein copy number per cell for all the identified proteins. Data was further filtered to only include proteins for which at least one condition had peptides detected in ≥2 biological replicates.
 
-## Statistics and calculations
+#### Statistics and calculations
 
 Mass contribution of proteins (g/cell) was calculated as (protein copy number) * (molecular weight (Daltons)) / (Avogadro’s constant). Protein content per cell plots for glycolytic enzymes in Figure 2C were calculated based upon proteins defined as: KEGG term ‘glycolysis + gluconeogenesis’ manually filtered to exclude enzymes not directly part of the glycolysis pathway illustrated in Figure 2A.
 

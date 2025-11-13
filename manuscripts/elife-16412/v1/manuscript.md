@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.16412.001 As the outbreak of Ebola virus disease (EVD) in West Africa is now contained, attention is turning from control to future outbreak prediction and prevention. Building on a previously published zoonotic niche map ( Pigott et al., 2014 ), this study incorporates new human and animal occurrence data and expands upon the way in which potential bat EVD reservoir species are incorporated. This update demonstrates the potential for incorporating and updating data used to generate the predicted suitability map. A new data portal for sharing such maps is discussed. This output represents the most up-to-date estimate of the extent of EVD zoonotic risk in Africa. These maps can assist in strengthening surveillance and response capacity to contain viral haemorrhagic fevers. DOI: http://dx.doi.org/10.7554/eLife.16412.001
+As the outbreak of Ebola virus disease (EVD) in West Africa is now contained, attention is turning from control to future outbreak prediction and prevention. Building on a previously published zoonotic niche map (Pigott et al., 2014), this study incorporates new human and animal occurrence data and expands upon the way in which potential bat EVD reservoir species are incorporated. This update demonstrates the potential for incorporating and updating data used to generate the predicted suitability map. A new data portal for sharing such maps is discussed. This output represents the most up-to-date estimate of the extent of EVD zoonotic risk in Africa. These maps can assist in strengthening surveillance and response capacity to contain viral haemorrhagic fevers.
 
 ## Introduction
 
@@ -40,43 +40,235 @@ Consequently, to contribute to these broader discussions, the original paper (Pi
 
 ## Results
 
-Six additional records of EVD were incorporated into the disease occurrence database: one human outbreak in the Democratic Republic of Congo (
+Six additional records of EVD were incorporated into the disease occurrence database: one human outbreak in the Democratic Republic of Congo (Maganga et al., 2014); two reports of infections in animals in Zambia (Ogawa et al., 2015); and three animal infections in Central African Republic(Morvan et al., 1999) (Figure 1). Of these new occurrences, two in southern Central African Republic are found in areas predicted to be at-risk by the previous model (Pigott et al., 2014), with the index case from the Democratic Republic of Congo located in close proximity (<10 km) to at-risk areas. The occurrences in Zambia and northern Central African Republic lie, respectively, to the south and north of previously predicted at-risk regions.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig1-v1.jpg)
 
-**Figure 1.:** Human index cases are represented by red circles, animal occurrences in blue. New occurrence information is indicated by the black circle. The coordinates of polygon centroids are displayed for occurrences defined by an area greater than 5 km x 5 km.DOI: http://dx.doi.org/10.7554/eLife.16412.002
+**Figure 1.:** Human index cases are represented by red circles, animal occurrences in blue. New occurrence information is indicated by the black circle. The coordinates of polygon centroids are displayed for occurrences defined by an area greater than 5 km x 5 km.
+
+Figure 2 depicts the three new consolidated bat distributions. The revised distribution of the Group 1 bats (i.e. those found to have been Ebolavirus RNA positive) is broadly consistent with that published in the original paper except that the peripheries of Central Africa are now predicted to be environmentally suitable for these bats, as well as some parts of East Africa, particularly Tanzania, Mozambique and Madagascar. The Group 2 and Group 3 bat species are predicted to be distributed across much of Africa stretching from West to East Sub-Saharan Africa, as well as much of the coastline of the continent.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig2-v1.jpg)
 
-**Figure 2.:** For each layer the species specific suitability maps were combined to produce a surface approximating the probability that any bat species in that group may be present. Regions in blue (1) are most environmentally similar to locations reporting bat records. Areas in yellow (0) are the least environmentally similar. The top left panel depicts Group 1, top right Group 2 and bottom left Group 3 bats.DOI: http://dx.doi.org/10.7554/eLife.16412.003
+**Figure 2.:** For each layer the species specific suitability maps were combined to produce a surface approximating the probability that any bat species in that group may be present. Regions in blue (1) are most environmentally similar to locations reporting bat records. Areas in yellow (0) are the least environmentally similar. The top left panel depicts Group 1, top right Group 2 and bottom left Group 3 bats.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** The environmental suitability for each of the three bat species in Group 1 are displayed. Regions in dark blue (1) are most environmentally similar to locations reporting bat records. Areas in white (0) are the least environmentally similar. The black outline depicts the expert opinion range maps as determined by the International Union for the Conservation of Nature (Schipper et al., 2008) and the black dots represent occurrence records reported by the Global Biodiversity Information Facility (www.gbif.org/) and from published peer-reviewed articles. From top left, clockwise: Epomops franqueti, Hypsignathus monstrosus, summary Group 1 layer combining all three maps, and Myonycteris torquata.DOI: http://dx.doi.org/10.7554/eLife.16412.004
+**Figure 2—figure supplement 1.:** The environmental suitability for each of the three bat species in Group 1 are displayed. Regions in dark blue (1) are most environmentally similar to locations reporting bat records. Areas in white (0) are the least environmentally similar. The black outline depicts the expert opinion range maps as determined by the International Union for the Conservation of Nature (Schipper et al., 2008) and the black dots represent occurrence records reported by the Global Biodiversity Information Facility (www.gbif.org/) and from published peer-reviewed articles. From top left, clockwise: Epomops franqueti, Hypsignathus monstrosus, summary Group 1 layer combining all three maps, and Myonycteris torquata.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** The environmental suitability for each of the five bat species in Group 2 are displayed. Regions in dark blue (1) are most environmentally similar to locations reporting bat records. Areas in white (0) are the least environmentally similar. The black outline depicts the expert opinion range maps as determined by the International Union for the Conservation of Nature (Schipper et al., 2008) and the black dots represent occurrence records reported by the Global Biodiversity Information Facility (www.gbif.org/). From top left, clockwise: Tadarida condylura, Rousettus aegyptiacus, Miniopterus pusillus, summary Group 2 layer combining all five maps, Eidolon helvum, and Epomophorus gambianus.DOI: http://dx.doi.org/10.7554/eLife.16412.005
+**Figure 2—figure supplement 2.:** The environmental suitability for each of the five bat species in Group 2 are displayed. Regions in dark blue (1) are most environmentally similar to locations reporting bat records. Areas in white (0) are the least environmentally similar. The black outline depicts the expert opinion range maps as determined by the International Union for the Conservation of Nature (Schipper et al., 2008) and the black dots represent occurrence records reported by the Global Biodiversity Information Facility (www.gbif.org/). From top left, clockwise: Tadarida condylura, Rousettus aegyptiacus, Miniopterus pusillus, summary Group 2 layer combining all five maps, Eidolon helvum, and Epomophorus gambianus.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** The environmental suitability for each of the seven bat species in Group 3 are displayed. Regions in dark blue (1) are most environmentally similar to locations reporting bat records. Areas in white (0) are the least environmentally similar. The black outline depicts the expert opinion range maps as determined by the International Union for the Conservation of Nature (Schipper et al., 2008) and the black dots represent occurrence records reported by the Global Biodiversity Information Facility (www.gbif.org/). From top left, clockwise: Epomops buettikoferi, Miniopterus schreibersii, Epomophorus labiatus, Miniopterus inflatus, summary Group 3 layer combining all seven maps, Otomops martiensseni, Hipposideros gigas, and Rhinolophus eloquens.DOI: http://dx.doi.org/10.7554/eLife.16412.006
+**Figure 2—figure supplement 3.:** The environmental suitability for each of the seven bat species in Group 3 are displayed. Regions in dark blue (1) are most environmentally similar to locations reporting bat records. Areas in white (0) are the least environmentally similar. The black outline depicts the expert opinion range maps as determined by the International Union for the Conservation of Nature (Schipper et al., 2008) and the black dots represent occurrence records reported by the Global Biodiversity Information Facility (www.gbif.org/). From top left, clockwise: Epomops buettikoferi, Miniopterus schreibersii, Epomophorus labiatus, Miniopterus inflatus, summary Group 3 layer combining all seven maps, Otomops martiensseni, Hipposideros gigas, and Rhinolophus eloquens.
 
-The revised niche map, incorporating the updated bat covariates and disease occurrence database, is presented in
+The revised niche map, incorporating the updated bat covariates and disease occurrence database, is presented in Figure 3. The map shows the predicted areas of environmental suitability for zoonotic Ebola virus transmission to be consistent with previous attempts, but the relative environmental suitability within this distribution differs from the previous estimates. Figure 3—figure supplement 1 demonstrates that Cameroon, Gabon, Republic of Congo and mainland Equatorial Guinea are now predicted to be more environmentally suitable than in the previous analysis. The regions of Central Africa (particularly Gabon and the Republic of Congo) identified as being most environmentally suitable for zoonotic EVD transmission in the previous analysis remain so in this analysis. The revised number of predicted at-risk countries, determined by thresholding the map by a probability that captures 95% of the occurrence dataset, is 23 (Table 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig3-v1.jpg)
 
-**Figure 3.:** Areas closer to dark red (1) are most environmentally similar to locations reporting Ebola virus occurrences; areas in light yellow (0) are least similar. Countries with borders outlined are those which are predicted to contain at-risk areas for zoonotic transmission based on a thresholding approach. Output displayed generated from model using the three consolidated bat covariates.DOI: http://dx.doi.org/10.7554/eLife.16412.007
+**Figure 3.:** Areas closer to dark red (1) are most environmentally similar to locations reporting Ebola virus occurrences; areas in light yellow (0) are least similar. Countries with borders outlined are those which are predicted to contain at-risk areas for zoonotic transmission based on a thresholding approach. Output displayed generated from model using the three consolidated bat covariates.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Generated by subtracting the original eLife publication pixel probabilities from the newly generated values and restricted to those areas determined to be at-risk. Areas in yellow are essentially consistent. Areas in purple have probability values greater than the previous output; areas in green have probability values lower than previous outputs.DOI: http://dx.doi.org/10.7554/eLife.16412.008
+**Figure 3—figure supplement 1.:** Generated by subtracting the original eLife publication pixel probabilities from the newly generated values and restricted to those areas determined to be at-risk. Areas in yellow are essentially consistent. Areas in purple have probability values greater than the previous output; areas in green have probability values lower than previous outputs.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/16412/elife-16412-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Areas closer to dark red (1) are most environmentally similar to locations reporting Ebola virus occurrences; areas in light yellow (0) are least similar. Countries with borders outlined are those which are predicted to contain at-risk areas for zoonotic transmission based on a thresholding approach. Output displayed generated from model using individual bat covariate layers.DOI: http://dx.doi.org/10.7554/eLife.16412.009
+**Figure 3—figure supplement 2.:** Areas closer to dark red (1) are most environmentally similar to locations reporting Ebola virus occurrences; areas in light yellow (0) are least similar. Countries with borders outlined are those which are predicted to contain at-risk areas for zoonotic transmission based on a thresholding approach. Output displayed generated from model using individual bat covariate layers.
 
-The similar AUC values (0.85 ± 0.04 compared to 0.8236 ± 0.080) between the previous and current iterations suggest that the updated model fits the new occurrence dataset as well as the previous model fitted the older dataset. Mean enhanced vegetation index (EVI) remains the highest relative predictor covariate for zoonotic EVD transmission while the relative importance of Group 1 bat distributions moved from being the fifth most important to the second. Mean night-time land surface temperature (LST), elevation and mean daytime LST complete the top five predictors (Table 2).10.7554/eLife.16412.011Table 2.Comparison of previous and revised niche models.DOI: http://dx.doi.org/10.7554/eLife.16412.011Revised niche map (with summary bat layers)Revised niche map (with individual bat layers)Previous eLife niche map (Pigott et al., 2014)AUC0.8236 ± 0.080.8195 ± 0.080.85 ± 0.04Occurrencesn = 57 (animals), n = 31 (humans)n = 57 (animals), n = 31 (humans)n = 51 (animals), n = 30 (humans)Ranked relative contributionsEVI mean (0.55)EVI mean (0.46)EVI mean (0.65)Group 1 bat distribution (0.18)Hypsignathus monstrosus (0.15)Elevation (0.12)LST mean (night) (0.08)Epomops franqueti (0.08)LST mean (night) (0.08)Elevation (0.06)Otomops martiensseni (0.06)PET mean (0.06)LST mean (day) (0.04)Epomophorus labiatus (0.04)Bat distribution (0.04)
+**Table 1.**
+ National populations at risk.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Country</th>
+      <th>Population-at-risk (in 100,000s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Countries previously reporting index cases</td>
+      <td>Democratic Republic of the Congo</td>
+      <td>170.18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Uganda</td>
+      <td>21.58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Guinea</td>
+      <td>17.61</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Côte d’Ivoire</td>
+      <td>4.08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gabon</td>
+      <td>3.65</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>South Sudan</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Republic of Congo</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td>Countries with no reported index cases</td>
+      <td>Nigeria</td>
+      <td>29.13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cameroon</td>
+      <td>22.90</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Central African Republic</td>
+      <td>7.62</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Liberia</td>
+      <td>5.88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ghana</td>
+      <td>4.04</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sierra Leone</td>
+      <td>3.94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Angola</td>
+      <td>3.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Togo</td>
+      <td>1.78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ethiopia</td>
+      <td>1.75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Equatorial Guinea</td>
+      <td>1.22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tanzania</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Burundi</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mozambique</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Madagascar</td>
+      <td>&lt;0.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kenya</td>
+      <td>&lt;0.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Malawi</td>
+      <td>&lt;0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+The similar AUC values (0.85 ± 0.04 compared to 0.8236 ± 0.080) between the previous and current iterations suggest that the updated model fits the new occurrence dataset as well as the previous model fitted the older dataset. Mean enhanced vegetation index (EVI) remains the highest relative predictor covariate for zoonotic EVD transmission while the relative importance of Group 1 bat distributions moved from being the fifth most important to the second. Mean night-time land surface temperature (LST), elevation and mean daytime LST complete the top five predictors (Table 2).
+
+**Table 2.**
+ Comparison of previous and revised niche models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Revised niche map (with summary bat layers)</th>
+      <th>Revised niche map (with individual bat layers)</th>
+      <th>Previous eLife niche map (Pigott et al., 2014)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AUC</td>
+      <td>0.8236 ± 0.08</td>
+      <td>0.8195 ± 0.08</td>
+      <td>0.85 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>Occurrences</td>
+      <td>n = 57 (animals), n = 31 (humans)</td>
+      <td>n = 57 (animals), n = 31 (humans)</td>
+      <td>n = 51 (animals), n = 30 (humans)</td>
+    </tr>
+    <tr>
+      <td>Ranked relative contributions</td>
+      <td>EVI mean (0.55)</td>
+      <td>EVI mean (0.46)</td>
+      <td>EVI mean (0.65)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Group 1 bat distribution (0.18)</td>
+      <td>Hypsignathus monstrosus (0.15)</td>
+      <td>Elevation (0.12)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LST mean (night) (0.08)</td>
+      <td>Epomops franqueti (0.08)</td>
+      <td>LST mean (night) (0.08)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Elevation (0.06)</td>
+      <td>Otomops martiensseni (0.06)</td>
+      <td>PET mean (0.06)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LST mean (day) (0.04)</td>
+      <td>Epomophorus labiatus (0.04)</td>
+      <td>Bat distribution (0.04)</td>
+    </tr>
+  </tbody>
+</table>
 
 When separate bat layers were used in the model, as opposed to the consolidated covariates, the predictions were geographically similar (Figure 3—figure supplement 2) however, four bat species were identified as explaining more of the variation than the rest; Hypsignathus monstrosus, Epomops franqueti (from both of which Ebolavirus RNA has been isolated), Otomops martiensseni and Epomophorus labiatus (both from Group 3). The explanatory power of this model (evaluated using AUC) was comparable to the model results described above (AUC = 0.819 ± 0.080).
 
@@ -92,7 +284,7 @@ Geographic datasets such as these provide context to broader discussions as our 
 
 ## Materials and methods
 
-## Updating the occurrence database
+### Updating the occurrence database
 
 Since the previous publication, an outbreak of EVD occurred in humans in the Democratic Republic of the Congo (Maganga et al., 2014). The outbreak is thought to have originated in Inkanamongo, a village near Boende, Équateur province and resulted in 66 probable and confirmed cases and 49 probable and confirmed deaths (Rosello et al., 2015). A polygon of radius 10 km centered on the town of Boende was included to capture the location of the index case, increasing the database of assumed independent animal-to-human spillover events to 31 as part of 24 distinct reported outbreaks (Mylne et al., 2014).
 
@@ -100,9 +292,88 @@ In addition, a re-analysis of the literature available on infections in animal s
 
 In total six new records of EVD occurrence in animals were identified and included within the database to increase the total to 57. These records were obtained from two research articles. The first of these assessed Ebolavirus load in a variety of mammal species and identified PCR-positivity in a number of small mammals across three sites in Central African Republic (Morvan et al., 1999). In total, four separate occurrences, consisting of three different species, were identified as being PCR positive: a member of the Praomys complex, Peter’s mouse (Mus setulosus) and the greater forest shrew (Sylvisorex ollula). The second study investigated serological responses in straw-coloured fruit bats (Eidolon helvum) caught in two districts in Zambia (Ogawa et al., 2015). Specific latitudes and longitudes of the study sites were supplied for the Central African Republic study and were used to generate point occurrences. For the Zambian study it was necessary to use administrative data representing the two districts where the bats were caught (Serenje and Ndola districts).
 
-## Expanding potential bat reservoir species
+### Expanding potential bat reservoir species
 
-Potential bat reservoir species were stratified into three groupings based upon the strength of evidence suggesting their reservoir status (Table 3). Group 1 contained the three species of bat from which Ebolavirus RNA has been detected and therefore have the strongest evidence to support potential reservoir status (Leroy et al., 2005). Group 2 species are those that, using a variety of serological tests, have been reported to be Ebolavirus seropositive, suggesting potential reservoir status. A previous review (Olival and Hayman, 2014), identified nine species as seropositive for Ebolavirus. This was reduced to five species after the removal of the three species already categorised in Group 1 and Leschenault’s Rousette, Rousettus leschenaultii, which is not found in Africa.10.7554/eLife.16412.012Table 3.Final bats included in analysis classified by evidence grouping.DOI: http://dx.doi.org/10.7554/eLife.16412.012GroupingBatOccurrencesGroup 1Franquet’s epauletted fruit bat (Epomops franqueti)442Hammerheaded fruit bat (Hypsignathus monstrosus)254Little collared fruit bat (Myonycteris torquata)107Group 2Angolan free-tailed bat (Tadarida condylura, formerly Mops condylurus)179Egyptian fruit bat (Rousettus aegyptiacus)177Gambian epauletted fruit bat (Epomophorus gambianus)166Peter’s dwarf epauletted fruit bat (Micropteropus pusillus)208Straw-coloured fruit bat (Eidolon helvum)282Group 3Buettikofer’s epauletted fruit bat (Epomops buettikoferi)50Common bent-wing bat (Miniopterus schreibersii)31Eloquent horseshoe bat (Rhinolophus eloquens)61Ethiopian epauletted fruit bat (Epomophorus labiatus)187Giant leaf-nosed bat (Hipposideros gigas)21Greater long-fingered bat (Miniopterus inflatus)56Large-eared free-tailed bat (Otomops martiensseni)33
+Potential bat reservoir species were stratified into three groupings based upon the strength of evidence suggesting their reservoir status (Table 3). Group 1 contained the three species of bat from which Ebolavirus RNA has been detected and therefore have the strongest evidence to support potential reservoir status (Leroy et al., 2005). Group 2 species are those that, using a variety of serological tests, have been reported to be Ebolavirus seropositive, suggesting potential reservoir status. A previous review (Olival and Hayman, 2014), identified nine species as seropositive for Ebolavirus. This was reduced to five species after the removal of the three species already categorised in Group 1 and Leschenault’s Rousette, Rousettus leschenaultii, which is not found in Africa.
+
+**Table 3.**
+ Final bats included in analysis classified by evidence grouping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Grouping</th>
+      <th>Bat</th>
+      <th>Occurrences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Group 1</td>
+      <td>Franquet’s epauletted fruit bat (Epomops franqueti)</td>
+      <td>442</td>
+    </tr>
+    <tr>
+      <td>Hammerheaded fruit bat (Hypsignathus monstrosus)</td>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>Little collared fruit bat (Myonycteris torquata)</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Group 2</td>
+      <td>Angolan free-tailed bat (Tadarida condylura, formerly Mops condylurus)</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>Egyptian fruit bat (Rousettus aegyptiacus)</td>
+      <td>177</td>
+    </tr>
+    <tr>
+      <td>Gambian epauletted fruit bat (Epomophorus gambianus)</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <td>Peter’s dwarf epauletted fruit bat (Micropteropus pusillus)</td>
+      <td>208</td>
+    </tr>
+    <tr>
+      <td>Straw-coloured fruit bat (Eidolon helvum)</td>
+      <td>282</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Group 3</td>
+      <td>Buettikofer’s epauletted fruit bat (Epomops buettikoferi)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Common bent-wing bat (Miniopterus schreibersii)</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Eloquent horseshoe bat (Rhinolophus eloquens)</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>Ethiopian epauletted fruit bat (Epomophorus labiatus)</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>Giant leaf-nosed bat (Hipposideros gigas)</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Greater long-fingered bat (Miniopterus inflatus)</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Large-eared free-tailed bat (Otomops martiensseni)</td>
+      <td>33</td>
+    </tr>
+  </tbody>
+</table>
 
 Finally, Group 3 species were identified via generalized boosted regression analysis, which discriminates the bats reported to be filovirus-positive by learning trait patterns that distinguish them from all other bat species (Han et al., 2016). Generalized boosted regression (Elith et al., 2008) was applied to traits describing all bat species, including life history, physiological, ecological, morphological and demographic variables collected from numerous published sources. In addition to traits, the filovirus status of each bat species was assigned as a binary score (0 – not currently known to be positive for any filoviruses; 1 – published evidence). This analysis produces a rank list of all bat species according to their probability of being a filovirus carrier on the basis of their trait similarities with known filovirus-positive bat species. Bats found in the 90th percentile of likely filovirus carriers were initially considered, and then filtered to include only those which have home ranges in Africa (Schipper et al., 2008). As per the original publication, occurrence records were extracted from the Global Biodiversity Information Facility (GBIF). Species for which there were fewer than 20 unique GBIF records in Africa were dropped from the analysis due to data paucity. Table 3 reports the bat species and corresponding numbers of occurrences included in the analysis.
 
@@ -112,11 +383,11 @@ A total of 34 articles were identified for inclusion, from which 564 additional 
 
 All bat species were modelled separately using boosted regression trees (Elith et al., 2008) utilising the same modelling procedure as outlined in the original article except that 100, rather than 50, bootstrap models were fitted. This resulted in 15 individual environmental suitability maps for bat species (see Figure 2—figure supplements 1, 2 and 3), as well as three consolidated bat layers combining the environmental suitability maps for the bats within each of the three groupings (Figure 2).
 
-## Revising the predicted zoonotic niche map
+### Revising the predicted zoonotic niche map
 
 A species distribution model, specifically a boosted regression trees approach (Elith et al., 2008), was implemented. The model generates regression trees based upon binary splits of linked covariates, which are iteratively improved upon by boosting. The regression trees are capable of characterising complex environmental interactions and correlations since each tree is built from a hierarchy of multiple nodes, each based upon different successive binary splits of the covariates. The model extracts environmental information for each reported occurrence of Ebolavirus to define an optimal relationship between presence of the disease and environmental factors. Predictive performance is improved by including a comparison background dataset that acts as a hypothesised environmental negative control (Phillips et al., 2009). As per the previous analysis, this dataset was generated by randomly sampling across Africa biased towards areas of high population density. By including human population density in this way, some potential sampling biases present in human index case reporting can be mitigated as cases are more likely to be reported in more populous areas. The boosted regression trees were re-run using the same parameters and covariates (elevation, mean evapotranspiration rate, and mean and range measures of enhanced vegetation index, daytime land surface temperature (LST), and night-time LST) as the previous publication except for the inclusion of the new occurrence data outlined above and the new bat layers. Two model iterations were run: one with the three consolidated bat layers (i.e. Groups 1, 2 and 3) and the other with all the bat species layers considered separately.
 
-## Estimating populations at risk
+### Estimating populations at risk
 
 The continuous suitability surface was converted into a binary at-risk versus not-at-risk surface by determining a threshold value that included 95% of the estimated suitability values of pixels with reported human index cases (Pigott et al., 2015). For sites represented by a specific latitude and longitude the suitability score was taken from the corresponding pixel; for polygon estimates covering a number of cells, the mean suitability was taken across all pixels covered by the polygon.
 

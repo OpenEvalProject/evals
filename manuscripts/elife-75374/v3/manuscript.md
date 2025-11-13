@@ -24,25 +24,25 @@
 ### Affiliations
 
 1. Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London London United Kingdom
-2. https://ror.org/0524sp257 MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom
+2. MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 3. Population Health Sciences, Bristol Medical School Bristol United Kingdom
-4. https://ror.org/01nrxwf90 Centre for Genomic and Experimental Medicine, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom
-5. https://ror.org/046rm7j60 Department of Human Genetics, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States
-6. https://ror.org/041kmwe10 Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London London United Kingdom
-7. https://ror.org/01qg3j183 Department of Hygiene and Epidemiology, School of Medicine, University of Ioannina Ioannina Greece
-8. https://ror.org/007ps6h72 Public Health Sciences Division, Fred Hutchinson Cancer Research Center Seattle United States
-9. https://ror.org/00cvxb145 Department of Epidemiology, School of Public Health, University of Washington Seattle United States
-10. https://ror.org/01ej9dk98 Department of Clinical Pathology, Melbourne Medical School, University of Melbourne Parkville Australia
-11. https://ror.org/03bx60s49 Cancer Prevention Institute of California Fremont United States
+4. Centre for Genomic and Experimental Medicine, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+5. Department of Human Genetics, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+6. Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+7. Department of Hygiene and Epidemiology, School of Medicine, University of Ioannina Ioannina Greece ([ROR:01qg3j183](https://ror.org/01qg3j183))
+8. Public Health Sciences Division, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+9. Department of Epidemiology, School of Public Health, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+10. Department of Clinical Pathology, Melbourne Medical School, University of Melbourne Parkville Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+11. Cancer Prevention Institute of California Fremont United States ([ROR:03bx60s49](https://ror.org/03bx60s49))
 12. National Institute for Health Research (NIHR) Bristol Biomedical Research Centre, University Hospitals Bristol and Weston NHS Foundation Trust and the University of Bristol Bristol United Kingdom
-13. https://ror.org/046rm7j60 Department of Biostatistics, Fielding School of Public Health, University of California, Los Angeles Los Angeles United States
+13. Department of Biostatistics, Fielding School of Public Health, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 14. Novo Nordisk Research Centre Oxford United Kingdom
 
 † Corresponding author
 
 ## Abstract
 
-Epigenetic clocks have been associated with cancer risk in several observational studies. Nevertheless, it is unclear whether they play a causal role in cancer risk or if they act as a non-causal biomarker. We conducted a two-sample Mendelian randomization (MR) study to examine the genetically predicted effects of epigenetic age acceleration as measured by HannumAge (nine single-nucleotide polymorphisms (SNPs)), Horvath Intrinsic Age (24 SNPs), PhenoAge (11 SNPs), and GrimAge (4 SNPs) on multiple cancers (i.e. breast, prostate, colorectal, ovarian and lung cancer). We obtained genome-wide association data for biological ageing from a meta-analysis (N = 34,710), and for cancer from the UK Biobank (N cases = 2671–13,879; N controls = 173,493–372,016), FinnGen (N cases = 719–8401; N controls = 74,685–174,006) and several international cancer genetic consortia (N cases = 11,348–122,977; N controls = 15,861–105,974). Main analyses were performed using multiplicative random effects inverse variance weighted (IVW) MR. Individual study estimates were pooled using fixed effect meta-analysis. Sensitivity analyses included MR-Egger, weighted median, weighted mode and Causal Analysis using Summary Effect Estimates (CAUSE) methods, which are robust to some of the assumptions of the IVW approach. Meta-analysed IVW MR findings suggested that higher GrimAge acceleration increased the risk of colorectal cancer (OR = 1.12 per year increase in GrimAge acceleration, 95% CI 1.04–1.20, p = 0.002). The direction of the genetically predicted effects was consistent across main and sensitivity MR analyses. Among subtypes, the genetically predicted effect of GrimAge acceleration was greater for colon cancer (IVW OR = 1.15, 95% CI 1.09–1.21, p = 0.006), than rectal cancer (IVW OR = 1.05, 95% CI 0.97–1.13, p = 0.24). Results were less consistent for associations between other epigenetic clocks and cancers. GrimAge acceleration may increase the risk of colorectal cancer. Findings for other clocks and cancers were inconsistent. Further work is required to investigate the potential mechanisms underlying the results. FMB was supported by a Wellcome Trust PhD studentship in Molecular, Genetic and Lifecourse Epidemiology (224982/Z/22/Z which is part of grant 218495/Z/19/Z). KKT was supported by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme) and by the Hellenic Republic’s Operational Programme ‘Competitiveness, Entrepreneurship & Innovation’ (OΠΣ 5047228). PH was supported by Cancer Research UK (C18281/A29019). RMM was supported by the NIHR Biomedical Research Centre at University Hospitals Bristol and Weston NHS Foundation Trust and the University of Bristol and by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme). RMM is a National Institute for Health Research Senior Investigator (NIHR202411). The views expressed are those of the author(s) and not necessarily those of the NIHR or the Department of Health and Social Care. GDS and CLR were supported by the Medical Research Council (MC_UU_00011/1 and MC_UU_00011/5, respectively) and by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme). REM was supported by an Alzheimer’s Society project grant (AS-PG-19b-010) and NIH grant (U01 AG-18-018, PI: Steve Horvath). RCR is a de Pass Vice Chancellor’s Research Fellow at the University of Bristol.
+Background:Epigenetic clocks have been associated with cancer risk in several observational studies. Nevertheless, it is unclear whether they play a causal role in cancer risk or if they act as a non-causal biomarker.Methods:We conducted a two-sample Mendelian randomization (MR) study to examine the genetically predicted effects of epigenetic age acceleration as measured by HannumAge (nine single-nucleotide polymorphisms (SNPs)), Horvath Intrinsic Age (24 SNPs), PhenoAge (11 SNPs), and GrimAge (4 SNPs) on multiple cancers (i.e. breast, prostate, colorectal, ovarian and lung cancer). We obtained genome-wide association data for biological ageing from a meta-analysis (N = 34,710), and for cancer from the UK Biobank (N cases = 2671–13,879; N controls = 173,493–372,016), FinnGen (N cases = 719–8401; N controls = 74,685–174,006) and several international cancer genetic consortia (N cases = 11,348–122,977; N controls = 15,861–105,974). Main analyses were performed using multiplicative random effects inverse variance weighted (IVW) MR. Individual study estimates were pooled using fixed effect meta-analysis. Sensitivity analyses included MR-Egger, weighted median, weighted mode and Causal Analysis using Summary Effect Estimates (CAUSE) methods, which are robust to some of the assumptions of the IVW approach.Results:Meta-analysed IVW MR findings suggested that higher GrimAge acceleration increased the risk of colorectal cancer (OR = 1.12 per year increase in GrimAge acceleration, 95% CI 1.04–1.20, p = 0.002). The direction of the genetically predicted effects was consistent across main and sensitivity MR analyses. Among subtypes, the genetically predicted effect of GrimAge acceleration was greater for colon cancer (IVW OR = 1.15, 95% CI 1.09–1.21, p = 0.006), than rectal cancer (IVW OR = 1.05, 95% CI 0.97–1.13, p = 0.24). Results were less consistent for associations between other epigenetic clocks and cancers.Conclusions:GrimAge acceleration may increase the risk of colorectal cancer. Findings for other clocks and cancers were inconsistent. Further work is required to investigate the potential mechanisms underlying the results.Funding:FMB was supported by a Wellcome Trust PhD studentship in Molecular, Genetic and Lifecourse Epidemiology (224982/Z/22/Z which is part of grant 218495/Z/19/Z). KKT was supported by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme) and by the Hellenic Republic’s Operational Programme ‘Competitiveness, Entrepreneurship & Innovation’ (OΠΣ 5047228). PH was supported by Cancer Research UK (C18281/A29019). RMM was supported by the NIHR Biomedical Research Centre at University Hospitals Bristol and Weston NHS Foundation Trust and the University of Bristol and by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme). RMM is a National Institute for Health Research Senior Investigator (NIHR202411). The views expressed are those of the author(s) and not necessarily those of the NIHR or the Department of Health and Social Care. GDS and CLR were supported by the Medical Research Council (MC_UU_00011/1 and MC_UU_00011/5, respectively) and by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme). REM was supported by an Alzheimer’s Society project grant (AS-PG-19b-010) and NIH grant (U01 AG-18-018, PI: Steve Horvath). RCR is a de Pass Vice Chancellor’s Research Fellow at the University of Bristol.
 
 ## Introduction
 
@@ -62,11 +62,11 @@ The aim of this two-sample MR study was to examine the genetically predicted eff
 
 ## Materials and methods
 
-## Reporting guidelines
+### Reporting guidelines
 
 This study has been reported according to the STROBE-MR guidelines (Skrivankova et al., 2021; Supplementary file 2).
 
-## Genetic instruments for epigenetic age acceleration
+### Genetic instruments for epigenetic age acceleration
 
 We obtained summary genetic association estimates for epigenetic age acceleration measures of HannumAge (Hannum et al., 2013), Intrinsic HorvathAge (Horvath, 2013), PhenoAge (Levine et al., 2018), and GrimAge (Lu et al., 2019a) from a recent GWAS meta-analysis of biological ageing (McCartney et al., 2021), which included 34,710 participants of European ancestry. Across the 28 European ancestry studies considered in the analysis, 57.3% of participants were female. A detailed description of the methods that were used can be found in the publication by McCartney et al., 2021. In short, the Horvath epigenetic age calculator software (https://dnamage.genetics.ucla.edu) or standalone scripts were used to calculate age adjusted DNAm estimates. Outlier samples with clock methylation estimates of +/−5 s.d. from the mean were excluded from further analysis. SNPs were genotyped and imputed independently for each cohort included in the meta-analysis. Genotypes were imputed using either the HRC or the 1000 Genomes Project Phase 3 reference panels in all cohorts but the Sister Study (which did not have imputed data at the time of analysis) and the Genetics of Lipid Lowering Drugs and Diet Network Study (which used whole-genome sequencing data). GWAS summary statistics were obtained in each cohort using additive linear models adjusted for sex and genetic principal components, and they were later processed and harmonised using the ‘EasyQC’ R package. Fixed effect meta-analyses were performed using the METAL software (Willer et al., 2010).
 
@@ -74,17 +74,126 @@ We used the clump_data function in the ‘TwoSampleMR’ R package to select GWA
 
 We identified 9 independent SNPs for HannumAge, 24 for Intrinsic HorvathAge, 11 for PhenoAge and 4 for GrimAge (Supplementary file 1 — Table 1). The proportions of trait variance explained by genetic instruments (R2) and instrument strength (F-statistic) were calculated using the following formulae: R2 = (2β2×MAF×(1-MAF))/(2β2×MAF×(1-MAF) + 2 N × MAF × (1-MAF)×SE2) and F = (R2×(N-2))/(1-R2) (where MAF = effect allele frequency, β = effect estimate of the SNP in the exposure GWAS, SE = standard error, N = sample size) (Palmer et al., 2012). The genetic instruments for HannumAge, Intrinsic HorvathAge, PhenoAge and GrimAge acceleration explained 1.48%, 4.41%, 1.86%, and 0.47% of the trait variance, respectively. All the selected SNPs had F-statistics greater than 10 (HannumAge median 38 and range 31–99, Intrinsic HorvathAge median 47 and range 31–240, PhenoAge median 45 and range 32–89, GrimAge median 36 and range 31–45).
 
-## Genetic Association Data sources for cancer outcomes
+**Table 1.**
+ Numbers of overall cancer cases and controls by data source.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cancer type</th>
+      <th>Source</th>
+      <th>N cases (%)*</th>
+      <th>N controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Breast</td>
+      <td>BCAC</td>
+      <td>122,977 (53.7%)</td>
+      <td>105,974</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UK Biobank</td>
+      <td>13,879 (6.5%)</td>
+      <td>198,523</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FinnGen</td>
+      <td>8401 (7.8%)</td>
+      <td>99,321</td>
+    </tr>
+    <tr>
+      <td>Ovarian</td>
+      <td>OCAC</td>
+      <td>25,509 (38.4%)</td>
+      <td>40,941</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UK Biobank</td>
+      <td>1218 (0.6%)</td>
+      <td>198,523</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FinnGen</td>
+      <td>719 (0.7%)</td>
+      <td>99,321</td>
+    </tr>
+    <tr>
+      <td>Prostate</td>
+      <td>PRACTICAL</td>
+      <td>79,148 (56.4%)</td>
+      <td>61,106</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UK Biobank</td>
+      <td>9132 (5.0%)</td>
+      <td>173,493</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FinnGen</td>
+      <td>6311 (7.8%)</td>
+      <td>74,685</td>
+    </tr>
+    <tr>
+      <td>Lung</td>
+      <td>ILCCO</td>
+      <td>11,348 (41.7%)</td>
+      <td>15,861</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UK Biobank</td>
+      <td>2671 (0.7%)</td>
+      <td>372,016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FinnGen</td>
+      <td>1681 (1.0%)</td>
+      <td>173,933</td>
+    </tr>
+    <tr>
+      <td>Colorectal</td>
+      <td>GECCO</td>
+      <td>58,131 (46.3%)</td>
+      <td>67,347</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UK Biobank</td>
+      <td>5657 (1.5%)</td>
+      <td>372,016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FinnGen</td>
+      <td>3022 (1.7%)</td>
+      <td>174,006</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Percentage (%) of cases within each study source was calculated using the following formula: 100 * N cases / (N cases + N controls).BCAC, Breast Cancer Association Consortium; OCAC, Ovarian Cancer Association Consortium; PRACTICAL, Prostate Cancer Association Group to Investigate Cancer Associated Alterations in the Genome; ILCCO, International Lung Cancer Consortium; GECCO, Genetics and Epidemiology of Colorectal Cancer Consortium._
+
+### Genetic Association Data sources for cancer outcomes
 
 We obtained summary-level genetic association data for cancer outcomes from the UK Biobank, FinnGen and several international cancer genetic consortia: the Breast Cancer Association Consortium (BCAC), the Ovarian Cancer Association Consortium (OCAC), the Consortium of Investigators of Modifiers of BRCA1/2 (CIMBA), the Prostate Cancer Association Group to Investigate Cancer Associated Alterations in the Genome (PRACTICAL), the International Lung Cancer Consortium (ILCCO) and the Genetics and Epidemiology of Colorectal Cancer Consortium (GECCO) (Table 1). Further details of the studies and the data obtained are described in Appendix 1.
 
 We extracted genetic association data for the selected SNPs from each cancer GWAS (for breast, prostate, colorectal, ovarian and lung cancers). LD proxies (r2 >0.8) were used when the SNPs of interest were missing from the cancer GWAS dataset. The proxies were located using the MR-Base platform, which calculates LD using the European subset of individuals from the 1000 Genomes Project reference panel as above (Hemani et al., 2018). The ‘LDlinkR’ R package version 1.1.2 was used to find proxies for cancer data that were not included in the MR-Base platform. The exposure and outcome datasets were then harmonised to ensure the genetic associations reflect the same effect allele. Palindromic SNPs with minor allele frequencies (MAF) <0.3 were aligned, while those with MAF ≥0.3 or mismatching strands were excluded.
 
-## Power calculations
+### Power calculations
 
 Statistical power was calculated using an online calculator for MR available at: https://shiny.cnsgenomics.com/mRnd/. Calculations were performed separately for each clock-cancer combination. They were based on a type one error rate of 0.05, the proportion of phenotypic variance explained by genetic variants (R2) for each measure of epigenetic age acceleration, and the total number of cases and controls included in the meta-analysis for each cancer. Across combinations of the four epigenetic clock acceleration and five cancer measures, we had 80% power to detect ORs as small as 1.04–1.39 (Supplementary file 1 — Table s2).
 
-## Statistical analysis
+### Statistical analysis
 
 We estimated the genetically predicted effects of epigenetic age acceleration (as measured by HannumAge Hannum et al., 2013, Horvath Intrinsic Age Horvath, 2013, PhenoAge Levine et al., 2018 and GrimAge Lu et al., 2019a) on multiple cancers (i.e. breast, prostate, colorectal, ovarian, and lung cancer) using a two-sample MR framework (Figure 1).
 
@@ -92,13 +201,13 @@ We estimated the genetically predicted effects of epigenetic age acceleration (a
 
 **Figure 1.:** Abbreviations: BCAC, Breast Cancer Association Consortium; OCAC, Ovarian Cancer Association Consortium; PRACTICAL, Prostate Cancer Association Group to Investigate Cancer Associated Alterations in the Genome; ILCCO, International Lung Cancer Consortium; GECCO, Genetics and Epidemiology of Colorectal Cancer Consortium; LD, linkage disequilibrium; IVW, inverse variance weighted; MR, Mendelian randomization; FDR, false discovery rate; GWAS, genome-wide association study; CAUSE, Causal Analysis Using Summary Effect estimates, SNP, single-nucleotide polymorphism.
 
-## Main analyses
+### Main analyses
 
 Main analyses were performed using multiplicative random effects inverse variance weighted (IVW) MR, a method that combines the genetically predicted effect of epigenetic age acceleration on cancer across genetic variants (Burgess et al., 2013). This is the default IVW MR method in the ‘TwoSampleMR’ R package, as it accounts for excess heterogeneity across SNP-specific estimates (as opposed to the fixed effect IVW method) and it does not affect the relative weights of individual SNP estimates (in contrast to the additive random effects IVW method) (Bowden et al., 2017).
 
 We used fixed effect meta-analysis to pool results across studies (i.e. UK Biobank, FinnGen and international consortia). For colorectal cancer, we only pooled FinnGen and GECCO estimates, since UK Biobank participants were already included in GECCO. I2 statistics and their corresponding confidence intervals were used to estimate heterogeneity across study estimates (von Hippel, 2015). A Benjamini-Hochberg false discovery rate (FDR) < 5% was used to correct the pooled main IVW results for multiple testing (Benjamini and Hochberg, 1995). This correction was applied considering a total of 20 independent statistical tests (4 clocks x 5 cancers = 20).
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 MR assumes genetic instruments for epigenetic age acceleration are (1) associated with epigenetic age acceleration (relevance assumption), (2) independent of confounders of the association between the instruments and cancer (independence assumption), and (3) only associated with cancer through their effect on epigenetic age acceleration (exclusion restriction assumption) (Didelez and Sheehan, 2007; Davies et al., 2018).
 
@@ -110,7 +219,7 @@ Where associations between genetically predicted epigenetic age acceleration and
 
 We also used Causal Analysis using Summary Effect Estimates (CAUSE) (Morrison et al., 2020), a method that uses genome-wide summary statistics to disentangle causality (i.e. SNPs are associated with cancer through their effect on epigenetic age acceleration) from correlated horizontal pleiotropy (i.e. SNPs are associated with epigenetic age acceleration and cancer through a shared heritable factor), while taking into account uncorrelated horizontal pleiotropy (i.e. SNPs are associated with epigenetic age acceleration through separate mechanisms). It uses Bayesian modelling to assess whether the sharing model (i.e. model that fixes the causal effect at zero) fits the data at least as well as the causal model (i.e. model that allows a causal effect different from zero).
 
-## Secondary analyses
+### Secondary analyses
 
 As a secondary analysis, we conducted two-sample MR of epigenetic age acceleration and cancer subtypes (i.e. breast cancer: ER+, ER-, triple negative, luminal B/HER2-negative-like, HER2-enriched-like, luminal A-like, luminal B-like, BRCA1 and BRCA2; ovarian cancer: high-grade serous, low-grade serous, invasive mucinous, clear cell, endometrioid, BRCA1 and BRCA2; prostate cancer: advanced, advanced [vs non-advanced], early onset, high risk [vs low risk], and high risk [vs low and intermediate risk]; lung cancer: adenocarcinoma and squamous cell; colorectal cancer: colon-specific, proximal colon-specific, distal colon-specific, rectal-specific, male and female) (Appendix 1).
 
@@ -126,7 +235,7 @@ All MR analyses were performed using R software version 4.0.2. Two sample MR ana
 
 ## Results
 
-## Breast cancer
+### Breast cancer
 
 We did not find strong evidence of causality between epigenetic age acceleration and breast cancer (GrimAge IVW OR = 0.98, 95% CI 0.95–1.00, p = 0.08; PhenoAge IVW OR = 0.99, 95% CI 0.98–1.01, p = 0.23; HannumAge IVW OR = 0.99, 95% CI 0.97–1.02, p = 0.63; and Intrinsic HorvathAge IVW OR = 0.99, 95% CI 0.98–1.00, p = 0.13) (Figure 2, Appendix 2—figure 1, Appendix 2—figure 2, Appendix 2—figure 3, Appendix 2—figure 4, Appendix 2—figure 5, Appendix 2—figure 6, Appendix 2—figure 7, Appendix 2—figure 8, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6).
 
@@ -134,23 +243,23 @@ We did not find strong evidence of causality between epigenetic age acceleration
 
 **Figure 2.:** Odds ratios and 95% confidence intervals are reported per 1 year increase in (A) GrimAge acceleration, (B) PhenoAge acceleration, (C) HannumAge acceleration and (D) Intrinsic HorvathAge acceleration. GrimAge, PhenoAge, HannumAge and Intrinsic HorvathAge acceleration were instrumented by 4, 11, 9, and 24 genetic variants, respectively. All meta-analysis estimates were calculated using data from UK Biobank, FinnGen and international consortia, except for colorectal cancer estimates, which exclude UK Biobank data to avoid double counting.
 
-## Ovarian cancer
+### Ovarian cancer
 
 There was also limited evidence of causality between epigenetic age acceleration and ovarian cancer (GrimAge IVW OR = 0.99, 95% CI 0.93–1.06, p = 0.78; PhenoAge IVW OR = 0.98, 95% CI 0.96–1.01, p = 0.24; HannumAge IVW OR = 1.00, 95% CI 0.96–1.04, p = 0.95; and Intrinsic HorvathAge IVW OR = 1.00, 95% CI 0.97–1.02, p = 0.89) (Figure 2, Appendix 2—figure 1, Appendix 2—figure 2, Appendix 2—figure 3, Appendix 2—figure 4, Appendix 2—figure 5, Appendix 2—figure 6, Appendix 2—figure 7, Appendix 2—figure 8, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6).
 
-## Prostate cancer
+### Prostate cancer
 
 Meta-analysed IVW MR findings suggested that genetically predicted GrimAge acceleration decreased the risk of prostate cancer (OR = 0.93 per year increase in GrimAge acceleration, 95% CI 0.87–0.99, p = 0.02) (Figure 2, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6). Although the direction of the genetically predicted effect was consistent across main and sensitivity MR analyses (i.e. MR-Egger, weighted median and weighted mode) (Appendix 2—figure 1, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6), the main IVW result for GrimAge and prostate cancer did not withstand multiple testing correction (FDR p = 0.16) (Supplementary file 1 — Table s6).
 
 We did not find consistent evidence of causality between other measures of epigenetic age acceleration and prostate cancer (PhenoAge IVW OR = 1.01, 95% CI 0.99–1.03, p = 0.31; HannumAge IVW OR = 0.98, 95% CI 0.95–1.02, p = 0.39; and Intrinsic HorvathAge IVW OR = 0.99, 95% CI 0.98–1.01, p = 0.42) (Figure 2, Appendix 2—figure 1, Appendix 2—figure 2, Appendix 2—figure 3, Appendix 2—figure 4, Appendix 2—figure 5, Appendix 2—figure 6, Appendix 2—figure 7, Appendix 2—figure 8, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6).
 
-## Lung cancer
+### Lung cancer
 
 Meta-analysed IVW MR findings suggested that genetically predicted Intrinsic HorvathAge acceleration decreased the risk of lung cancer (OR = 0.97 per year increase in Intrinsic HorvathAge acceleration, 95% CI 0.93–1.00, p = 0.03) (Figure 2, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6). However, these results did not survive multiple testing correction (FDR p = 0.21) and were not strongly supported by sensitivity analyses (Appendix 2—figure 1, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6).
 
 We did not find evidence of causality between other measures of epigenetic age acceleration and lung cancer (GrimAge IVW OR = 1.00, 95% CI 0.91–1.09, p = 0.96; PhenoAge IVW OR = 0.97, 95% CI 0.94–1.00, p = 0.06; and HannumAge IVW OR = 0.99, 95% CI 0.95–1.04, p = 0.82) (Figure 2, Appendix 2—figure 1, Appendix 2—figure 2, Appendix 2—figure 3, Appendix 2—figure 4, Appendix 2—figure 5, Appendix 2—figure 6, Appendix 2—figure 7, Appendix 2—figure 8, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6).
 
-## Colorectal cancer
+### Colorectal cancer
 
 Meta-analysed IVW MR findings suggested that genetically predicted GrimAge acceleration increased the risk of colorectal cancer (OR = 1.12 per year increase in GrimAge acceleration, 95% CI 1.04–1.20, p = 0.002) (Figure 2, Supplementary file 1 — Table s3, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6). These results survived multiple testing correction (FDR p = 0.04) and there was little evidence of heterogeneity across FinnGen and GECCO estimates (I2 = 0%, 95% CI ‘NA’, p = 0.61). Additionally, the direction of the genetically predicted effect was consistent across main and sensitivity MR analyses (i.e. MR-Egger, weighted median, and weighted mode) (Figure 3, Supplementary file 1 — Table s3, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6) and results were consistent when using UK Biobank data alone (IVW OR = 1.15, 95% CI 1.04–1.28, p = 0.007) (Figure 2, Supplementary file 1 — Table s4).
 
@@ -180,7 +289,7 @@ These findings were further supported by evidence of a positive association betw
 
 We did not find consistent evidence of causality between other measures of epigenetic age acceleration and colorectal cancer (PhenoAge IVW OR = 1.00, 95% CI 0.97–1.02, p = 0.73; HannumAge IVW OR = 1.02, 95% CI 0.97–1.08, p = 0.37; and Intrinsic HorvathAge IVW OR = 1.00, 95% CI 0.97–1.02, p = 0.79) (Figure 2, Appendix 2—figure 1, Appendix 2—figure 2, Appendix 2—figure 3, Appendix 2—figure 4, Appendix 2—figure 5, Appendix 2—figure 6, Appendix 2—figure 7, Appendix 2—figure 8, Supplementary file 1 — Table s3, Supplementary file 1 — Table s4, Supplementary file 1 — Table s5, Supplementary file 1 — Table s6).
 
-## Telomere length
+### Telomere length
 
 In bidirectional MR analyses, we found evidence that genetically predicted GrimAge acceleration may be a cause of telomere shortening (IVW beta coefficient = −0.07 per year increase in GrimAge acceleration, 95% CI –0.09 to –0.05, p < 0.001) and that genetically predicted longer telomere length may increase Intrinsic HorvathAge acceleration (IVW beta coefficient = 0.57 per standard deviation increase in telomere length, 95% CI 0.39–0.77, p = 0.002) (Appendix 2—figure 13, Supplementary file 1 — Table s14).
 

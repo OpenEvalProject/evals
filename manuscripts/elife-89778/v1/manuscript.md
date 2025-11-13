@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Department of Orthopaedic Surgery, New York University Grossman School New York United States
-2. https://ror.org/03v76x132 Department of Orthopaedics and Rehabilitation, Yale University School of Medicine New Haven United States
+1. Department of Orthopaedic Surgery, New York University Grossman School New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Department of Orthopaedics and Rehabilitation, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 

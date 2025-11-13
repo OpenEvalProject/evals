@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05gq02987 Department of Molecular Biology, Cellular Biology, Biochemistry, Brown University Providence United States
+1. Department of Molecular Biology, Cellular Biology, Biochemistry, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 
@@ -37,43 +37,71 @@ Furthermore, the introduction of sea urchin AGS into sea star embryos induces ra
 
 ## Results
 
-## The N-terminal TPR domain is vital for restricting SpAGS localization and function at the vegetal cortex
+### The N-terminal TPR domain is vital for restricting SpAGS localization and function at the vegetal cortex
 
 AGS consists of two functional domains: the N-terminus contains tetratricopeptide repeats (TPR) and the C-terminus contains G-protein regulatory motifs (GoLoco, GL) (Bernard et al., 2001). AGS switches between a closed and open structure based on the intramolecular interaction between the TPR and GL motifs (Du and Macara, 2004; Johnston et al., 2009; Nipper et al., 2007; Pan et al., 2013). The TPR motifs regulate protein–protein interaction with various partners such as inscuteable (Insc) for its proper cortical localization or nuclear mitotic apparatus (NuMA) for its microtubule-pulling force generation. In contrast, the GL motifs interact with the heterotrimeric G-protein subunit Gαi for its anchoring to the cortex (Bowman et al., 2006; Culurgioni et al., 2011; Culurgioni et al., 2018; Du and Macara, 2004; Parmentier et al., 2000; Wang et al., 2011; Yu et al., 2000). Studies investigating AGS mechanisms in fly and mammals reveal that Pins/LGN (AGS orthologs) generally remain in the autoinhibited form in the cell (Du and Macara, 2004; Johnston et al., 2009; Nipper et al., 2007; Figure 1C). At the time of ACD, Insc recruits Pins/LGN to the cortex, which is then established and maintained there through Gαi interaction for the subsequent steps. This Gαi-binding releases Pins/LGN from its autoinhibition and allows it to interact with NuMA, which recruits the motor protein dynein to generate pulling forces on the microtubules and facilitate ACD (Bowman et al., 2006; Culurgioni et al., 2011; Izumi et al., 2006; Parmentier et al., 2000; Schaefer et al., 2001; Siller et al., 2006; Williams et al., 2014; Yu et al., 2000; Yuzawa et al., 2011; Zhu et al., 2011).
 
 To test whether sea urchin (S. purpuratus; Sp) AGS functions in ACD similarly to its orthologs, we first investigated the role of its N-terminus by constructing a series of GFP-tagged deletion mutants (Figure 2A; Figure 2—figure supplement 1). AGS-1F is missing the first three TPR motifs, AGS-2F the first four, and AGS-3F the entire TPR domain of SpAGS open-reading frame (ORF). The mRNA for these deletion constructs was co-injected with 2x-mCherry-EMTB, a microtubule marker, to visualize the cell cycle phase, spindle location, and orientation. We counted the number of embryos with vegetal cortical localization and conducted a quantitative analysis by measuring the ratio of vegetal to animal cortical signal intensity at the 16–32-cell stage (Figure 2B and C). Embryos injected with full-length SpAGS (Full AGS) or AGS-1F exhibited vegetal cortex-specific localization. In contrast, AGS-2F and AGS-3F showed uniform cortical localization (Figure 2B and C). These results suggest that TPR4-6 is necessary for restricting AGS to the vegetal cortex, whereas TPR1-3 appears to play a less critical role in controlling AGS localization.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig2-v1.jpg)
+
+**Figure 2.:** (A) Design of SpAGS-GFP N-terminal deletion constructs used in this study. TPR motifs are marked in blue, and GL motifs are in orange. (B) Representative 2D-projection images of the embryo injected with AGS-1F-GFP or AGS-3F-GFP and 2x-mCherry-EMTB, exhibiting vegetal (upper panel, arrowhead) and uniform (lower panel, arrow) cortical localization. The magnified images next to each panel demonstrate how we measured the mean intensities of the vegetal cortex (yellow squared) and animal cortex (magenta squared) using ImageJ. The results of the analysis are summarized in the corresponding graph (C). Embryos were injected with 0.15–0.3 μg/μl stock of SpAGS-GFP mRNA and 0.5 μg/μl stock of 2x-mCherry-EMTB mRNA. Z-stack images were taken at 1 μm intervals to cover a layer of the embryo. (C) Percentage of the embryos with vegetal cortical localization of SpAGS (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) at 16–32-cell embryos. Statistical analysis was performed against Full AGS by one-way ANOVA. (D) Representative 2D-projection confocal image of a 16-cell stage embryo injected with AGS-1F-GFP. The largest cell (macromere) and the smallest cell (micromere) diameters were measured using ImageJ. Z-stack images were taken at 1 μm intervals to cover a layer of the embryo. (E) The diameter ratio of the smallest cell (micromere-like cell) over the largest cell (macromere-like cell) was quantified for the embryos injected with the SpAGS mutants or EMTB-only (control). (F) Percentage of the embryos forming micromere-like cells was scored for each SpAGS mutant and EMTB-only (control). ‘Micromere formation’ is defined as the formation of a group of four cells that are smaller in size and made through a vertical cell division at the vegetal pole at the 16-cell stage. Since none of the AGS-3F-injected embryos formed normal micromeres, ‘micromere-like cells’ were counted based on their vertical cell division, not relative to their size. Statistical analysis was performed against control by one-way ANOVA. (G, H) Brightfield images show the representative phenotypes scored in the corresponding graph (H) at 2 dpf. We categorized embryos into three groups, namely, ‘full development’, with embryos reaching the pluteus stage with complete gut formation and skeleton; ‘delayed development’, with some gastrulation but no proper skeleton; and ‘failed gastrulation’. As many of the abnormal-looking embryos fell into the median of the latter two categories, we scored only the embryos reaching full development in the graph. Control represents embryos injected with a RITC dye only. Statistical analysis was performed against control by one-way ANOVA. (I) Single Z-slice confocal imaging was used to focus on the vegetal cortex. Embryos were stained with AGS (orange) and Gɑi (green) antibodies. White arrows and arrowheads indicate the signals at the vegetal cortex and ectopic cortical signals, respectively. Images represent over 80% of the embryos observed (n = 30 or larger) per group. n indicates the total number of embryos scored. *p<0.05, **p<0.01, and ****p<0.0001. Each experiment was performed at least three independent times. Error bars represent standard error. Scale bars = 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The construct design of SpAGS-GFP, including the restriction enzyme sites used to prepare SpAGS mutants. (B) The protein sequence of SpAGS. Predicted domains are labeled based on NCBI blast results, and the sequence portions deleted for each N-terminal construct are marked. The sequences for each GL motif used for deletion or swapping are indicated in orange. The internal restriction enzyme sites for BbvCI and BsmI are shown in green.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** All AGS are similar in the N-terminus with the predicted conserved TPR motifs (blue) but are highly variable in the C-terminus with the predicted GL motifs (yellow).
+
 In the EMTB-only control and the AGS-1F group, micromeres were approximately half the size of the macromeres. In contrast, they were three-quarters the size in the AGS-2F group and almost the same size in the AGS-3F group (Figure 2D and E), resulting in failed micromere formation even in the presence of the endogenous SpAGS (Figure 2F). In these embryos, we also scored embryonic development at 2 days post fertilization (dpf) when gastrulation occurs. The AGS-1F mutant mostly showed normal development with extended skeletal rods, whereas AGS-2F and AGS-3F dramatically compromised development with incomplete skeleton extension or gut formation (Figure 2G and H). Since these N-terminal deletions appear to cause a dominant negative phenotype, we did not knock down endogenous SpAGS in these experiments.
 
 These results suggest that the N-terminal TPR domain is necessary to restrict SpAGS localization at the vegetal cortex. The TPR deletion prevents AGS mutants from maintaining the autoinhibited form. It may thus induce their binding to Gαi at every cortex and compete out the endogenous SpAGS at the vegetal cortex. Notably, Gαi localization was also recruited to the exact ectopic location as AGS-2F and -3F mutants (Figure 2I), suggesting that the SpAGS C-terminus is sufficient to control the Gαi localization at the vegetal cortex. Protein sequences of AGS orthologs across echinoderms are almost identical in their N-termini, suggesting that the AGS N-terminus serves as a core functional domain (Figure 2—figure supplement 2). In contrast, the AGS C-terminus appears highly variable across echinoderms.
 
-## The C-terminal GL1 motif is essential for SpAGS localization and function in ACD
+### The C-terminal GL1 motif is essential for SpAGS localization and function in ACD
 
 To test whether a variable AGS C-terminus creates functional diversity in ACD, we made a series of GFP-tagged C-terminus deletion mutants of SpAGS (Figure 3A). SpAGS mutants missing GL1 (ΔGL1), GL3 (ΔGL3), or all GL motifs (ΔGL1-4) failed to localize at the vegetal cortex compared to the Full AGS control (Figure 3B–D), suggesting that GL1 and GL3 are essential for cortical localization of AGS. Of note, sea urchin embryos randomly show enriched nuclear signal of any fluorescent dye or the GFP signal, likely due to extra space available in the nucleus during early embryogenesis (Fernandez-Nicolas et al., 2022). Since the nuclear AGS signal appeared only randomly in some embryos, we did not analyze such signals in this study.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig3-v1.jpg)
 
-**Figure 3.:** (A) Design of SpAGS-GFP C-terminal deletion mRNAs tested in this study. TPR motifs are marked in blue, and GL motifs are in orange. See Figure 2—figure supplement 2 for protein sequence. (B) Single Z-slice confocal imaging was used to focus on the vegetal cortex. Representative embryos injected with SpAGS-GFP or SpAGSΔGL1-GFP are shown. Embryos were injected with 0.3 μg/μl stock of SpAGS-mutant-GFP mRNA (green) and 0.5 μg/μl stock of 2x-mCherry-EMTB mRNA (magenta). The white arrowhead indicates vegetal cortical localization of AGS-GFP. (C, D) Representative 2D-projection images of the embryo injected with SpAGS-GFP mRNA and 2x-mCherry-EMTB mRNA, exhibiting vegetal cortical (upper panel, AGSΔGL2, arrowhead) and uniform cytoplasmic (lower panel, AGSΔGL1) localization. The magnified images next to each panel demonstrate how we measured the mean intensities of the vegetal cortex (yellow squared) and animal cortex (magenta squared) using ImageJ. The results of the analysis are summarized in the corresponding graph (D). Z-stack images were taken at 1 μm intervals to cover a layer of the embryo. Percentage of the embryos that had the GFP signal at the vegetal cortex (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) during the 16–32-cell stage were scored in the graphs. Statistical analysis was performed against Full AGS by one-way ANOVA. (E, F) Brightfield images show the representative phenotypes scored in the corresponding graph (F) at the 16-cell stage. White arrowhead shows micromeres. Embryos were injected with 0.15 μg/μl stock of SpAGS-GFP mRNAs and 0.75 mM SpAGS MO. The number of embryos forming micromeres was scored and normalized to that of Full AGS in the graph. Statistical analysis was performed by one-way ANOVA. (G, H) Brightfield images show the representative phenotypes scored in the corresponding graph (H) at 2 dpf. Embryos were injected with 0.15 μg/μl stock of SpAGS-GFP mRNAs and 0.75 mM SpAGS MO. The number of embryos developing to the pluteus stage was scored and normalized to that of Full AGS in the graph. Statistical analysis was performed by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Each experiment was performed at least three independent times. Error bars represent standard error. Scale bars = 10 μm.Figure 3—source data 1.Figure 3D.Figure 3—source data 2.Figure 3F.Figure 3—source data 3.Figure 3H.
+**Figure 3.:** (A) Design of SpAGS-GFP C-terminal deletion mRNAs tested in this study. TPR motifs are marked in blue, and GL motifs are in orange. See Figure 2—figure supplement 2 for protein sequence. (B) Single Z-slice confocal imaging was used to focus on the vegetal cortex. Representative embryos injected with SpAGS-GFP or SpAGSΔGL1-GFP are shown. Embryos were injected with 0.3 μg/μl stock of SpAGS-mutant-GFP mRNA (green) and 0.5 μg/μl stock of 2x-mCherry-EMTB mRNA (magenta). The white arrowhead indicates vegetal cortical localization of AGS-GFP. (C, D) Representative 2D-projection images of the embryo injected with SpAGS-GFP mRNA and 2x-mCherry-EMTB mRNA, exhibiting vegetal cortical (upper panel, AGSΔGL2, arrowhead) and uniform cytoplasmic (lower panel, AGSΔGL1) localization. The magnified images next to each panel demonstrate how we measured the mean intensities of the vegetal cortex (yellow squared) and animal cortex (magenta squared) using ImageJ. The results of the analysis are summarized in the corresponding graph (D). Z-stack images were taken at 1 μm intervals to cover a layer of the embryo. Percentage of the embryos that had the GFP signal at the vegetal cortex (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) during the 16–32-cell stage were scored in the graphs. Statistical analysis was performed against Full AGS by one-way ANOVA. (E, F) Brightfield images show the representative phenotypes scored in the corresponding graph (F) at the 16-cell stage. White arrowhead shows micromeres. Embryos were injected with 0.15 μg/μl stock of SpAGS-GFP mRNAs and 0.75 mM SpAGS MO. The number of embryos forming micromeres was scored and normalized to that of Full AGS in the graph. Statistical analysis was performed by one-way ANOVA. (G, H) Brightfield images show the representative phenotypes scored in the corresponding graph (H) at 2 dpf. Embryos were injected with 0.15 μg/μl stock of SpAGS-GFP mRNAs and 0.75 mM SpAGS MO. The number of embryos developing to the pluteus stage was scored and normalized to that of Full AGS in the graph. Statistical analysis was performed by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Each experiment was performed at least three independent times. Error bars represent standard error. Scale bars = 10 μm.
 
 Next, we knocked down endogenous AGS by morpholino antisense oligonucleotides (MO), which was previously validated for the specificity (Poon et al., 2019). We tested whether these deletion mutants could rescue micromere formation (Figure 3E). The GL1 deletion significantly reduced micromere formation. In contrast, the GL2, GL3, or GL4 deletion showed no or little significant difference in micromere formation compared to the Full AGS control group (Figure 3F). Consequently, the GL1 deletion showed significant disruption in embryonic development at 2 dpf, likely due to a lack of micromeres’ inductive signaling at the 16-cell stage (Figure 3G and H).
 
 These results suggest GL1 is critical for both AGS localization and function at the vegetal cortex for micromere formation. GL3 and GL4 are important for intramolecular binding to the TPR domain in other organisms, which may impact the proper open-close control of AGS protein (Du and Macara, 2004; Johnston et al., 2009; Nipper et al., 2007; Pan et al., 2013).
 
-## The position of GL1 is important for SpAGS function in ACD
+### The position of GL1 is important for SpAGS function in ACD
 
 To determine whether the sequence or positioning of GL1 is essential for the SpAGS function, we next made a series of mutants where the GL motifs were interchanged or replaced (Figure 4A). For instance, AGS1111 has all GL motifs replaced with the sequence of GL1, whereas AGS4234 has the sequence of GL1 replaced with that of GL4. Most embryos that formed micromeres displayed vegetal cortical localization for all mutants except for AGS1111 and AGS2222 that severely inhibited micromere formation (Figure 4B and C). A small portion (4.14% ± 2.65, n = 170) of AGS2222 embryos formed micromeres. Among the embryos that formed micromeres, AGS2222 always showed vegetal cortical localization, suggesting that AGS localization and micromere formation are closely linked to each other. Additionally, most of the AGS1111 (99.36% ± 0.64, n = 182) and AGS2222 embryos (98.06% ± 1.94, n = 170) displayed ectopic cortical localization around the entire embryo (Figure 4B and C). We did not observe this phenotype in the Full AGS control nor in the other two mutants (AGS2134 and AGS4234).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig4-v1.jpg)
 
-**Figure 4.:** (A) Design of SpAGS-GFP C-terminal mutant constructs tested in this study. TPR motifs are marked in blue, and GL motifs are in orange. Red boxes show interchanged GL motifs. (B) Single Z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing localization of SpAGS1111-GFP mutant. Embryos were injected with 0.3 μg/μl stock of SpAGS-mutant GFP mRNAs and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. White arrowheads indicate vegetal cortical localization of AGS-GFP proteins and ectopic localization of AGS1111 mutant. (C) The ratio of the vegetal cortex-to-animal cortex mean intensity in 16–32-cell embryos. Statistical analysis was performed against Full AGS by one-way ANOVA. (D–F) Embryos were injected with 0.15 μg/μl stock of SpAGS-GFP mRNAs and 0.75 mM SpAGS MO. The number of embryos making micromeres (D) and developing to gastrula or pluteus stage (F) was scored and normalized to that of the Full AGS control group. Brightfield images (E) show the representative phenotypes scored in the corresponding graph (F) at 2 dpf. Of note, AGS1111 and AGS2222 mutants caused substantial toxicity, degrading many embryos by 2 dpf and resulting in inconsistent scoring. Thus, we scored embryos reaching the pluteus stage, which revealed delayed development in this analysis. Statistical analysis was performed by one-way ANOVA. (G) Design of GFP-SpAGS C-terminal mutant constructs tested in this study. In AGS4444, we replaced all GL motifs with GL4. In AGS-GL1GL2, GL1 is shifted adjacent to GL2. TPR motifs are marked in blue, and GL motifs are in orange. Red boxes show modified GL motifs. (H) Single Z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing localization of GFP-SpAGS-GL1GL2 mutant. Embryos were injected with 0.3 μg/μl stock of GFP-SpAGS mRNA and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. The white arrowhead indicates the vegetal cortical localization of GFP-AGS. (I) Percentage of the embryos with vegetal cortical localization of SpAGS mutants (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) in 16–32-cell embryos. Statistical analysis was performed against Full AGS by one-way ANOVA. (J, K) Embryos were injected with 0.15 μg/μl stock of GFP-SpAGS mRNAs and 0.75 mM SpAGS MO. The number of embryos making micromeres (J) and developing to gastrula or pluteus stage (K) was scored and normalized to that of the Full AGS. Statistical analysis was performed by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.Figure 4—source data 1.Figure 4C.Figure 4—source data 2.Figure 4D.Figure 4—source data 3.Figure 4F.Figure 4—source data 4.Figure 4I.Figure 4—source data 5.Figure 4J.Figure 4—source data 6.Figure 4K.
+**Figure 4.:** (A) Design of SpAGS-GFP C-terminal mutant constructs tested in this study. TPR motifs are marked in blue, and GL motifs are in orange. Red boxes show interchanged GL motifs. (B) Single Z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing localization of SpAGS1111-GFP mutant. Embryos were injected with 0.3 μg/μl stock of SpAGS-mutant GFP mRNAs and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. White arrowheads indicate vegetal cortical localization of AGS-GFP proteins and ectopic localization of AGS1111 mutant. (C) The ratio of the vegetal cortex-to-animal cortex mean intensity in 16–32-cell embryos. Statistical analysis was performed against Full AGS by one-way ANOVA. (D–F) Embryos were injected with 0.15 μg/μl stock of SpAGS-GFP mRNAs and 0.75 mM SpAGS MO. The number of embryos making micromeres (D) and developing to gastrula or pluteus stage (F) was scored and normalized to that of the Full AGS control group. Brightfield images (E) show the representative phenotypes scored in the corresponding graph (F) at 2 dpf. Of note, AGS1111 and AGS2222 mutants caused substantial toxicity, degrading many embryos by 2 dpf and resulting in inconsistent scoring. Thus, we scored embryos reaching the pluteus stage, which revealed delayed development in this analysis. Statistical analysis was performed by one-way ANOVA. (G) Design of GFP-SpAGS C-terminal mutant constructs tested in this study. In AGS4444, we replaced all GL motifs with GL4. In AGS-GL1GL2, GL1 is shifted adjacent to GL2. TPR motifs are marked in blue, and GL motifs are in orange. Red boxes show modified GL motifs. (H) Single Z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing localization of GFP-SpAGS-GL1GL2 mutant. Embryos were injected with 0.3 μg/μl stock of GFP-SpAGS mRNA and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. The white arrowhead indicates the vegetal cortical localization of GFP-AGS. (I) Percentage of the embryos with vegetal cortical localization of SpAGS mutants (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) in 16–32-cell embryos. Statistical analysis was performed against Full AGS by one-way ANOVA. (J, K) Embryos were injected with 0.15 μg/μl stock of GFP-SpAGS mRNAs and 0.75 mM SpAGS MO. The number of embryos making micromeres (J) and developing to gastrula or pluteus stage (K) was scored and normalized to that of the Full AGS. Statistical analysis was performed by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.
 
 We quantified the function of these AGS mutants in the endogenous AGS-knockdown background. AGS1111 and AGS2222 mutants failed to restore micromere formation at the 16-cell stage, while AGS4234 and AGS2134 mutants rescued micromere formation similarly to Full AGS (Figure 4D). Furthermore, Full AGS, AGS2134, and AGS4234 showed comparable development at 2 dpf. In contrast, the AGS1111 and AGS2222 embryos showed disrupted development (Figure 4E and F). These results suggest that the GL1 sequence is not essential, but its position is vital. In contrast, the sequence of GL3 or GL4 appears to be critical for restricting AGS localization to the vegetal cortex, perhaps by maintaining the autoinhibited form of AGS through their interaction with the TPR domains. AGS1111 and AGS2222 mutants were thus unable to sustain a closed/inactive state, resulting in a constitutively active form all around the cortex. These constitutive active AGS mutants likely further randomized the embryonic polarity in the absence of endogenous AGS, resulting in even worse developmental outcomes than the negative control (Figure 4F).
 
 To test this model further, we made two additional SpAGS mutants, AGS4444 and AGS-GL1GL2 (Figure 4G). AGS4444 localized properly at the vegetal cortex, whereas AGS-GL1GL2 showed significantly fewer embryos with vegetal cortical localization (Figure 4H and I). Furthermore, AGS-GL1GL2 showed impaired function in micromere formation and development compared to Full AGS control (Figure 4J and K). On the other hand, AGS4444 showed no significant difference in the proportion of embryos with micromeres at the 16-cell stage and normal development at 2 dpf compared to the Full AGS control. These results further support the hypothesis that GL3 and GL4 are essential for maintaining SpAGS in a closed conformation. Additionally, the position of GL1 is critical for SpAGS localization and function.
 
-## The molecular evolution of the AGS C-terminus facilitates the ACD diversity among AGS orthologs
+### The molecular evolution of the AGS C-terminus facilitates the ACD diversity among AGS orthologs
 
 To understand if/how SpAGS functions uniquely compared to other echinoderm AGS orthologs, we cloned sea star (P. miniata; Pm) and pencil urchin (E. tribuloides; Et) AGS into the GFP-reporter construct (Figure 5A) and introduced them into the sea urchin zygotes. EtAGS showed no significant difference in localization and function compared to the SpAGS control, whereas PmAGS failed in vegetal cortical localization and micromere formation and function (Figure 5B–E). Hence, PmAGS is incapable of inducing micromere formation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig5-v1.jpg)
+
+**Figure 5.:** (A) Design of GFP-AGS constructs from three different species tested in this study, namely, S. purpuratus (Sp), E. tribuloides (Et), and P. miniata (Pm). TPR motifs are marked in blue, and GL motifs are in orange. (B) Single Z-slice confocal images of sea urchin embryos at 16-cell stage showing localization of each GFP-AGS. Embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNAs and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. The white arrowhead indicates vegetal cortical localization of GFP-AGS. (C) Percentage of embryos with vegetal cortical localization of GFP-AGS (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) in 16–32-cell embryos. Statistical analysis was performed against SpAGS by one-way ANOVA. (D, E) Embryos were injected with 0.15 μg/μl stock of GFP-AGS mRNAs and 0.75 mM SpAGS MO. The number of embryos making micromeres (D) and developing to pluteus stage (E) was scored and normalized to that of the Full AGS. Statistical analysis was performed by one-way ANOVA. (F) Design of GFP-AGS C-terminal chimeric mutant constructs tested in this study. TPR motifs are marked in blue, and GL motifs are in orange. The brown section shows the SpAGS portion, and the red and dark gray boxes show the non-sea urchin (non-SpAGS) C-terminal sequence introduced. Protein sequences used include Drosophila Pins (Dm), P. miniata AGS (Pm), E. tribuloides AGS (Et), H. sapiens AGS3 (AGS3), and H. sapiens LGN (LGN). (G) Single Z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing localization of each GFP-AGS. Embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNA and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. The white arrowheads indicate vegetal cortical localization of GFP-AGS. (H) Percentage of the embryos with vegetal cortical localization of GFP-AGS chimeric mutants (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) in 16–32-cell embryos. Statistical analysis was performed against Full AGS by one-way ANOVA. (I, J) Embryos were injected with 0.15 μg/μl stock of GFP-AGS mRNAs and 0.75 mM SpAGS MO. The number of embryos making micromeres (I) and developing to gastrula or pluteus stage (J) was scored and normalized to that of the Full AGS. Statistical analysis was performed by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Design of 2x-GFP-AGS constructs that contain AGS orthologs from two different species tested in this study, namely, S. purpuratus (Sp; sea urchin), and S. briareus (Sb; sea cucumber). TPR motifs are marked in blue, and GL motifs are in orange. (B) Alignment of GL1 motif sequences among echinoderms. (C) Single Z-slice confocal images of sea urchin (Sp) or sea cucumber (Sb) embryos at the 16-cell stage showing localization of 2x-GFP-AGS. Embryos were injected with 0.2–0.3 μg/μl stock of GFP-AGS mRNA and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. The white arrowhead indicates vegetal cortical localization of GFP-AGS. (D) Left graph: the number of embryos with vegetal cortical localization of 2x-GFP-AGS in 16–32-cell embryos was scored and normalized to that of the control group (SpAGS). Right graph: the ratio of the vegetal cortex-to-animal cortex mean intensity. Statistical analysis was performed against the control (SpAGS) by t-test. n indicates the total number of embryos scored. *p<0.05. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Alignment of linker domain between echinoderms including sea urchin (SpAGS), pencil urchin (EtAGS), and sea star (PmAGS). Bold letters represent the conserved core linker domain. The yellow, blue, or green highlights indicate the CK1, Aurora, or CMGC/CDK phosphorylation sites predicted by GPS 6.0. The red letters indicate PmAGS amino acids mutated to those of SpAGS to construct the PmAGS-SpLinker mutant. (B) Design of GFP-AGS mutant constructs tested in this study. TPR motifs are marked in blue, and GL motifs are in orange. The brown section indicates the SpAGS sequence, and the red and gray boxes show the non-sea urchin (non-SpAGS) introduced at the C-terminus. The dotted lines represent single amino acid mutations. (C) Single z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing localization of GFP-AGS-S389A mutant. Embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNA and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. The white arrowhead indicates vegetal cortical localization of GFP-AGS. (D) Percentage of the embryos with vegetal cortical localization of GFP-AGS mutants (left) and the ratio of the vegetal cortex-to-animal cortex mean intensity (right) in 16–32-cell embryos. Statistical analysis was performed against Full AGS by one-way ANOVA. (E, F) Embryos were injected with 0.15 μg/μl stock of GFP-AGS mRNAs and 0.75 mM SpAGS MO. The number of embryos forming micromeres (E) and developing to gastrula or pluteus stage (F) was scored, each of which was then normalized to that of the Full AGS. Statistical analysis was performed by one-way ANOVA. (G) Design of GFP-AGS constructs tested in this study from S. purpuratus (Sp) and P. miniata (Pm). TPR motifs are marked in blue, and GL motifs are in orange. The dotted lines represent single amino acid mutations. (H) Single Z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing localization of GFP-AGS. Embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNAs and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. The white arrowhead indicates vegetal cortical localization of GFP-AGS. (I) The number of embryos with vegetal cortical localization of GFP-AGS mutants in 16–32-cell embryos was scored and normalized to that of the SpAGS (left graph). Right graph shows the ratio of the vegetal cortex-to-animal cortex mean intensity. Statistical analysis was performed against SpAGS by one-way ANOVA. (J, K) Embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNAs and 0.75 mM SpAGS MO. The number of embryos making micromeres (J) and developing to gastrula or pluteus stage (K) was scored and normalized to that of the SpAGS. Statistical analysis was performed by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05, **p<0.01, and ***p<0.001. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Sea urchin S. purpuratus (SpAGS_GL), Drosophila (DmPins_GL), sea star P. miniata (PmAGS_GL), pencil urchin E. tribuloides (EtAGS_GL), human H. sapiens LGN (HsLGN_GL), and human H. sapiens AGS3 (HsAGS3_GL). Bold letters indicate GoLoco motif sequences. The green highlight indicates additional serine amino acid present uniquely in HsAGS3_GL and mutated to alanine in AGS_AGS3GL_3S/A mutant. The highlighted amino acids between GL2 and GL3 and within GL3 are those mutated to match HsLGN_GL in AGS_AGS3GL_GL2GL3 mutant.
 
 Since the N-terminal sequences of SpAGS and PmAGS are almost identical (Figure 2—figure supplement 2), we hypothesize that the variable C-terminus made a difference in AGS localization and function at the vegetal cortex. To test this hypothesis, we constructed a series of chimeric SpAGS mutants that replaced its C-terminus with that of other AGS orthologs (Figure 5F). These AGS orthologs include human LGN, Drosophila (Dm) Pins, and EtAGS, which are all involved in ACD (Gönczy, 2008; Schaefer et al., 2000; Wavreil and Yajima, 2020; Zhu et al., 2011, 2011b), as well as human AGS3 and PmAGS, neither of which is involved in ACD (Saadaoui et al., 2017).
 
@@ -93,27 +121,51 @@ Overall, we conclude that the variable C-terminus of AGS orthologs primarily fac
 
 **Figure 6.:** (A) A model for the mechanism of SpAGS localization and function at the vegetal cortex. In a closed conformation, GL1 is critical for SpAGS recruitment and anchoring at the cortex through Gαi binding, while GL3 and GL4 maintain the autoinhibition. The TPR domain is hypothesized to interact with a polarity factor such as Insc to restrict SpAGS localization to the vegetal cortex. Upon Gαi binding, SpAGS adopts an open conformation, allowing all four GLs to bind to Gαi and the TPR domain to interact with NuMA for force generation on the astral microtubules. (B) A series of mutants that showed normal vegetal localization and functions. The position of GL1 is a more determining factor since mutants with GL1 replaced with other GL sequences localized and functioned properly. (C) A series of mutants that showed a reduced vegetal localization and/or function. The GL3 and GL4 are necessary to regulate AGS localization and function, likely by mediating its autoinhibitory mechanism through their binding to TPRs. Furthermore, AGS-DmGL and -PmGL were categorized in this group due to the reduced number of GL motifs. (D) A series of mutants that showed broad AGS localization and ectopic function. The TPR domain is critical for restricting AGS localization at the vegetal cortex since its removal spreads the AGS signal around all cortices. The sequences of GL3 and GL4 are also crucial for the SpAGS function. (E) A series of mutants that showed neither vegetal localization nor function. Removing or displacing GL1 led to significant disturbances in AGS localization and function, suggesting that having a GL motif at this specific position is critical for AGS interaction with Gαi and its anchoring to the cortex.
 
-## SpAGS is a dominant factor for micromere formation
+### SpAGS is a dominant factor for micromere formation
 
 Since AGS is a part of the conserved ACD machinery, we next sought to understand how dominant SpAGS is for micromere formation. The other conserved ACD factors include Insc, Discs large (Dlg), NuMA, and Par3 (Figure 1C). Insc controls cortical localization of Pins and LGN in flies and humans, respectively (Schaefer et al., 2000; Williams et al., 2014; Yu et al., 2000; Culurgioni et al., 2011; Culurgioni et al., 2018). Dlg appears to bind to the phosphorylated linker domain of Pins, which recruits microtubules to the cortex in flies (Johnston et al., 2009; Siegrist and Doe, 2005). NuMA (Mud in Drosophila) interacts with LGN/Pins to generate pulling forces on the microtubules in humans and flies. Par3 (Baz in Drosophila) is part of the PAR complex with Par6 and aPKC and binds to Insc to help localize LGN/Pins at the cortex (Culurgioni et al., 2011; Parmentier et al., 2000; Schaefer et al., 2000; Schober et al., 1999; Wodarz et al., 2000; Yu et al., 2000).
 
 We cloned the sea urchin orthologs of these ACD factors and tagged each ORF with a GFP reporter. GFP live imaging or immunofluorescence of these ACD factors showed the highest signal enrichment at the vegetal cortex during or upon micromere formation, as well as on the spindle of all blastomeres to some extent (Figure 7A, Figure 7—figure supplement 1; Poon et al., 2019). Furthermore, we tested for physical interaction by performing a proximity ligation assay (PLA) for AGS and ACD factors (Insc, NuMA, Dlg). Many of these ACD factors are primarily enriched at the vegetal cortex and secondarily localized on the spindle area of all cells (Figure 7A; Poon et al., 2019). In this study, however, the PLA signal was restricted to the vegetal cortex with the current resolution of the system. The results suggest these ACD factors physically interact with AGS primarily at the vegetal cortex (Figure 7B). Hence, the core ACD machinery is present at the vegetal cortex and interacts with AGS. We also observed AGS interacting with a fate determinant, Vasa, that is known to be enriched in micromeres at the vegetal cortex (Figure 7B; Voronina and Wessel, 2006). These results indicate that AGS may recruit both ACD factors and fate determinants to the vegetal cortex, directly facilitating rapid lineage segregation of micromeres.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig7-v1.jpg)
+
+**Figure 7.:** (A) Single Z-slice confocal imaging was used to focus on the vegetal cortex. Representative images of embryos during the metaphase and at the 16-cell stage show localization of each GFP-ACD factor, SpInsc, SpDlg, SpNuMA, and SpPar3. Embryos were injected with 0.5 μg/μl stock of GFP-ACD factor mRNAs and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. White arrowheads indicate vegetal cortical localization of GFP constructs. Images represent over 80% of the embryos observed (n = 30 or larger) per group across at least two independent cycles of experiments. (B) Single Z-slice confocal images of sea urchin embryos at the 8–16-cell stage showing the signals at the vegetal cortex by proximity ligation assay (PLA) assay with Flag and AGS antibodies. Embryos were injected with 0.3–1 μg/μl stock of 3xFlag-ACD factor mRNA. White arrowheads indicate the colocalization of AGS and another ACD factor at the vegetal cortex. The average % of the 8-cell and 8–16-cell embryos with the PLA signal across two independent cycles of experiments is indicated in each image. All embryos were scored independently of the angle since it was hard to identify the angle at the 8-cell stage. (C–F) Representative 2D-projection images of the embryo stained with Insc (C), NuMA (E), and β-catenin (G) antibodies (green) by immunofluorescence. Embryos were stained with Gɑi antibody (magenta) and Hoechst dye (blue) as well. Z-stack images were taken at 1 μm intervals to cover a layer of the embryo. White arrowheads indicate the signal in micromeres. Embryos were injected with 0.75 mM control MO or 0.75 mM SpAGS MO. The number of embryos showing the localization of Insc (D), NuMA (F), and β-catenin (H) in micromeres was scored and normalized to that of the control MO. Statistical analysis was performed by t-test. n indicates the total number of embryos scored. *p<0.05. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Endogenous Insc protein localization by immunofluorescence. Embryos were stained with three Insc antibodies (green) designed for different Insc amino acid sequence sections. Embryos were stained with Gɑi antibody (magenta) and Hoechst dye (blue). During the 16-cell stage, all antibodies show signal enriched at the vegetal pole. With #2 and #3 antibodies, some nonspecific cortex signals were also observed around the entire embryo. (B) Insc immunoblot analysis. Embryos were collected at 0, 2, 4.5, 15, 24, 48, 72, and 96 hr post fertilization and subjected to immunoblot with Insc #1 antibody. Actin (42 kDa) was used as a loading control. The expected size of Insc is 53 kDa. (C) Peptide competition assay with Insc #1 antibody. The 24 hr lysate was used. Each experiment was performed at least two independent times. Scale bars = 10 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Embryos were co-injected with 2x-mCherry-EMTB (0.5 μg/μl stock) mRNA with or without GFP-AGS (0.5 μg/μl stock) mRNA. (B) Embryos were co-injected with mCherry-NuMA (0.15 μg/ul) mRNA with or without GFP-AGS (0.5 μg/μl stock). (C) Embryos were co-injected with Vasa-GFP (1 μg/μl stock) mRNA with or without AGS-mCherry (0.5 μg/μl stock) mRNA. The intensity of each signal, from one cortex to the other, was measured and plotted from point 1 to 2 on the corresponding graph (right) using ImageJ. White arrows indicate the cortical colocalization of each construct. All images represent over 50% of the embryos observed (n = 30 or larger) per group. Scale bars = 20 μm.
+
 Consistent with this observation, SpAGS knockdown reduced the signal enrichment of ACD factors and another fate determinant of micromeres, β-catenin (Logan et al., 1999; Figure 7C–H). In our previous study (Poon et al., 2019), we also identified that SpAGS recruits the spindle poles to every cortex when overexpressed (Figure 7—figure supplement 2A, arrows). Similarly, SpAGS at least partially recruits its partner proteins to the ectopic cortical region, which we never observed in the control group (Figure 7—figure supplement 2B and C, arrows). These results support the idea that SpAGS directly recruits the molecules essential for micromere lineage segregation. Indeed, in situ hybridization (ISH) analysis suggests that the downstream genes regulated by micromere signaling, such as endomesoderm marker genes (wnt8, foxa, blimp1b, and endo16), decreased their expression territories in the AGS-knockdown embryos (Figure 8). In contrast, ectoderm (foxq2) and skeletogenic mesoderm (ets1, alx1, tbr1, and sm50) marker genes showed no significant change in their expressions by AGS knockdown. Overall, these results suggest that SpAGS directly recruits multiple ACD factors and fate determinants necessary for micromere formation and functions as an organizer, facilitating the downstream gene expressions necessary for endomesoderm specification.
 
-## AGS serves as a variable factor in the conserved ACD machinery
+![Figure 8.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig8-v1.jpg)
+
+**Figure 8.:** Embryos were injected with 0.75 mM control MO or 0.75 mM SpAGS MO. Brightfield images (A) show the representative in situ hybridization (ISH) staining for each cell lineage marker scored in the corresponding graph (B). The number of embryos showing the normal signal patterns of each marker gene was scored and normalized to that of the control MO. Statistical analysis was performed by t-test. n indicates the total number of embryos scored. *p<0.05. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 20 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Blue, yellow, and green highlights indicate the PDZ, SH3, and GUK domains, respectively.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Blue, yellow, and green highlights indicate the PDZ, SH3, and GUK domains, respectively.
+
+### AGS serves as a variable factor in the conserved ACD machinery
 
 AGS shows a variable C-terminal domain and appears to be a primary factor facilitating ACD diversity. However, is AGS the only variable factor among the ACD machinery? To test this question, we cloned and injected orthologs of other ACD factors, such as Insc and Dlg, from pencil urchins (Et) or sea stars (Pm) into sea urchins. Both Insc and Dlg possess relatively conserved functional domains among the three echinoderms with an extra PDZ domain present in PmDlg (Figure 9A and B; Figure 8—figure supplements 1 and 2). Importantly, these Pm and Et ACD factors showed cortical localization at the vegetal cortex in the sea urchin embryo (Figure 9C–F). These results are in stark contrast to the earlier results of Pm/Et AGS, which showed varied localization and function in ACD. Therefore, Insc and Dlg might not be the significant variable factors controlling ACD.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig9-v1.jpg)
 
-**Figure 9.:** (A, B) Design of GFP-Dlg (A) and GFP-Insc (B) constructs that were tested in this study. Of note, EtDlg was unavailable in the database due to the limited genomic information available for this species. (C–F) Representative 2D-projection images of sea urchin embryos at the 8–16-cell stage showing localization of each echinoderm GFP-Dlg (C) and GFP-Insc (E). Z-stack images were taken at 1 μm intervals. Embryos were injected with 0.5 μg/μl stock of GFP-Dlg or GFP-Insc mRNAs and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. White arrowheads indicate vegetal cortical localization of GFP constructs. The number of embryos with vegetal cortical localization of GFP-Dlg (D) and GFP-Insc (F) in 16–32-cell embryos was scored and normalized to that of the GFP-SpDlg or GFP-SpInsc (left graph). Right graph shows the ratio of the vegetal cortex-to-animal cortex mean intensity. Statistical analysis was performed by t-test or one-way ANOVA. n indicates the total number of embryos scored. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.Figure 9—source data 1.Figure 9D.Figure 9—source data 2.Figure 9F.
+**Figure 9.:** (A, B) Design of GFP-Dlg (A) and GFP-Insc (B) constructs that were tested in this study. Of note, EtDlg was unavailable in the database due to the limited genomic information available for this species. (C–F) Representative 2D-projection images of sea urchin embryos at the 8–16-cell stage showing localization of each echinoderm GFP-Dlg (C) and GFP-Insc (E). Z-stack images were taken at 1 μm intervals. Embryos were injected with 0.5 μg/μl stock of GFP-Dlg or GFP-Insc mRNAs and 0.25 μg/μl stock of 2x-mCherry-EMTB mRNA. White arrowheads indicate vegetal cortical localization of GFP constructs. The number of embryos with vegetal cortical localization of GFP-Dlg (D) and GFP-Insc (F) in 16–32-cell embryos was scored and normalized to that of the GFP-SpDlg or GFP-SpInsc (left graph). Right graph shows the ratio of the vegetal cortex-to-animal cortex mean intensity. Statistical analysis was performed by t-test or one-way ANOVA. n indicates the total number of embryos scored. Each experiment was performed at least two independent times. Error bars represent standard error. Scale bars = 10 μm.
 
 To determine how dominantly SpAGS facilitates ACD diversity, we introduced SpAGS, EtAGS, or PmAGS into the pencil urchin, an ancestral type of sea urchin, and compared their function. We co-introduced Vasa-mCherry to identify the development of the germline, which is one of the micromere descendants. Pencil urchin embryos typically form 0–4 micromere-like cells randomly (Figure 10A). Notably, only SpAGS injection increased the formation of micromere-like cells in the resultant pencil urchin embryos. In contrast, EtAGS and PmAGS showed no significant difference from the negative control (Vasa-mCherry only, Figure 10B). This result suggests that SpAGS increases the frequency of micromere-like cell formation in pencil urchin embryos.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/100086/elife-100086-fig10-v1.jpg)
 
-**Figure 10.:** (A) Representative brightfield images of pencil urchin (Et) embryos with or without micromere-like cells. Black arrowhead indicates micromere-like cells. (B) Et embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNAs and 1 μg/μl stock of Vasa-mCherry mRNA. The number of embryos making micromere-like cells was scored and normalized to that of the Vasa-mCherry only. Statistical analysis was performed against Vasa-mCherry only by one-way ANOVA. (C) Representative 2D-projection images of the injected Et embryos. Z-stack images were taken at 1 μm intervals to cover a layer of the embryo. White arrowheads indicate micromere-like cells. Scale bars = 10 μm. (D) The number of embryos showing Vasa enrichment in the micromere-like cells was scored and shown in percentage (%). Only the embryos that formed micromere-like cells were scored. Statistical analysis was performed against Vasa-mCherry only by one-way ANOVA. (E) Percentage of total embryos showing co-enrichment of Vasa and AGS in the micromere-like cells. Statistical analysis was performed against GFP-SpAGS by one-way ANOVA. (F, G) Representative 2D-projection images of Et embryos at 1 dpf. White arrowhead indicates Vasa enrichment in germ cells. Z-stack images were taken at 1 μm intervals. Percentage of total embryos showing Vasa enrichment in germ cells at 1 dpf was scored. Et embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNAs. Statistical analysis was performed against Vasa-mCherry only by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05 **p<0.01. Each experiment was performed at least three independent times. Error bars represent standard error. Scale bars = 20 μm.Figure 10—source data 1.Figure 10B.Figure 10—source data 2.Figure 10D.Figure 10—source data 3.Figure 10E.Figure 10—source data 4.Figure 10G.
+**Figure 10.:** (A) Representative brightfield images of pencil urchin (Et) embryos with or without micromere-like cells. Black arrowhead indicates micromere-like cells. (B) Et embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNAs and 1 μg/μl stock of Vasa-mCherry mRNA. The number of embryos making micromere-like cells was scored and normalized to that of the Vasa-mCherry only. Statistical analysis was performed against Vasa-mCherry only by one-way ANOVA. (C) Representative 2D-projection images of the injected Et embryos. Z-stack images were taken at 1 μm intervals to cover a layer of the embryo. White arrowheads indicate micromere-like cells. Scale bars = 10 μm. (D) The number of embryos showing Vasa enrichment in the micromere-like cells was scored and shown in percentage (%). Only the embryos that formed micromere-like cells were scored. Statistical analysis was performed against Vasa-mCherry only by one-way ANOVA. (E) Percentage of total embryos showing co-enrichment of Vasa and AGS in the micromere-like cells. Statistical analysis was performed against GFP-SpAGS by one-way ANOVA. (F, G) Representative 2D-projection images of Et embryos at 1 dpf. White arrowhead indicates Vasa enrichment in germ cells. Z-stack images were taken at 1 μm intervals. Percentage of total embryos showing Vasa enrichment in germ cells at 1 dpf was scored. Et embryos were injected with 0.3 μg/μl stock of GFP-AGS mRNAs. Statistical analysis was performed against Vasa-mCherry only by one-way ANOVA. n indicates the total number of embryos scored. *p<0.05 **p<0.01. Each experiment was performed at least three independent times. Error bars represent standard error. Scale bars = 20 μm.
 
 Sea urchin embryos show Vasa enrichment in micromeres at the 16-cell stage. In contrast, pencil urchin embryos show such enrichment later in the larval stage (3–4 dpf), which is more similar to the timing of the germline segregation in sea star embryos (Juliano and Wessel, 2009). We observed that SpAGS increased the Vasa signal enrichment in micromere-like cells compared to the control (Vasa-mCherry only) at the 16-cell stage. On the other hand, other AGS orthologs showed no significant difference from the control (Figure 10C and D). Nearly 80% (80.12% ± 3.75) of the SpAGS-injected embryos showed co-enrichment of AGS and Vasa in micromere-like cells, while the EtAGS and PmAGS groups showed only 49.2% ± 8.94 and 43.37% ± 3.94 enrichment, respectively (Figure 10E). Consistently, the SpAGS group showed the earlier segregation of Vasa-positive cells similar to sea urchin embryos at 1 dpf (Figure 10F and G), potentially accelerating the lineage segregation of the germline in the pencil urchin embryo.
 
@@ -133,46 +185,434 @@ Overall, we conclude that the GL1 motif unique to sea urchin AGS orthologs is cr
 
 ## Materials and methods
 
-## Animals and echinoderm embryos
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SpAGS (rabbit serum)</td>
+      <td>Voronina and Wessel, 2006; doi:10.1111/j.1440-169X.2006.00895.x</td>
+      <td>N/A</td>
+      <td>IF (1:300)PLA (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gαi (mouse monoclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-56536</td>
+      <td>IF (1:30)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin (rabbit polyclonal)</td>
+      <td>Yazaki et al., 2015; doi:10.1017/S0967199414000033</td>
+      <td>N/A</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SpInsc (rabbit polyclonal)</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Insc antibody production and validation’WB (1:2000)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SpNuMA (rabbit polyclonal)</td>
+      <td>Poon et al., 2019; doi:10.1038/s41467-019-11560-8</td>
+      <td>N/A</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (8H10D10) (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3700S</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>F1804</td>
+      <td>PLA (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated goat anti-rabbit IgG (goat polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4412</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 555-conjugated goat anti-mouse IgG (goat polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4409</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-Protein A antibody (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab7245</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-mouse IgG (horse polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>7076</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Digoxigenin-AP, Fab fragments (sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>11093274910</td>
+      <td>ISH (0.1–0.5 ng/μl)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>62249</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris buffered saline, with tween (TBST)</td>
+      <td>MilliporeSigma</td>
+      <td>T9039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris-MOPS-SDS Running Buffer</td>
+      <td>GenScript</td>
+      <td>M00138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Transfer buffer powder</td>
+      <td>GenScript</td>
+      <td>M00139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DIG RNA labeling mix</td>
+      <td>Roche</td>
+      <td>11277073910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE SP6 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAscript SP6 Transcription kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAscript T7 Transcription kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning</td>
+      <td>Clontech</td>
+      <td>639648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink In Situ Red Starter Kit Mouse/Rabbit</td>
+      <td>MilliporeSigma</td>
+      <td>DUO92101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: SpAGS-GFP</td>
+      <td>Poon et al., 2019; doi:10.1038/s41467-019-11560-8</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids: SpAGS-dC-term-GFP, SpAGS-dGL1/2/3/4-GFP, SpAGS1111/2222/2134/4234-GFP</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids: SpAGS-dN-term-GFP</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: SpAGS-mCherry</td>
+      <td>Poon et al., 2019; doi:10.1038/s41467-019-11560-8</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: GFP-SpAGS, GFP-EtAGS, GFP-PmAGS, 2x-GFP-SpAGS, 2x-GFP-SbAGS</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: GFP-SpAGS4444/GL1GL2/LGNGL/DmGL/EtGL/AGS3GL/PmGL/S389A/AGS3GL-3S/A/AGS3GL-GL2GL3</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: GFP-PmAGS-SpLinker</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: GFP-SpDlg/PmDlg</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: GFP-SpInsc/EtInsc/PmInsc</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: GFP-NuMA</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: mCherry-NuMA</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: GFP-Par3</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: Vasa-GFP</td>
+      <td>Yajima and Wessel, 2011; doi:10.1242/dev.054940</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: Vasa-mCherry</td>
+      <td>Uchida and Yajima, 2018; doi:10.1016/j.ydbio.2018.06.015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: 3xFlag-GFP-SpAGS/SpDlg/SpNuMA, 3xFlag-Vasa-GFP</td>
+      <td>This article</td>
+      <td>N/A</td>
+      <td>See ‘Plasmid construction’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: 2x-mCherry-EMTB</td>
+      <td>Addgene</td>
+      <td>26742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EchinoBase</td>
+      <td>http://www.echinobase.org/Echinobase/</td>
+      <td>N/A</td>
+      <td>Echinoderm protein sequences</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBI blast</td>
+      <td>https://blast.ncbi.nlm.nih.gov/Blast.cgi</td>
+      <td>N/A</td>
+      <td>Protein motif search</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>https://www.ebi.ac.uk/Tools/msa/clustalo/</td>
+      <td>N/A</td>
+      <td>Protein sequence alignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>N/A</td>
+      <td>Quantitative analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad PRISM 8</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td>N/A</td>
+      <td>Statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpAGS-MO</td>
+      <td>NM_001040405.1</td>
+      <td>Morpholino antisense oligos</td>
+      <td>GGCCCGTTTCACAAAGCCTTTGTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpAlx1</td>
+      <td>XM_011663478.2</td>
+      <td>ISH probe primers</td>
+      <td>F: GGATATTTTCTCGACCGGGATCR: CGAGTAACCGTTCATCATCCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpBlimp1b</td>
+      <td>NM_214574.3</td>
+      <td>ISH probe primers</td>
+      <td>F: ATGGGGTGCAACGACAACGCCGTGR: CTATGATTTGTTCGTACGATTGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpEndo16</td>
+      <td>NM_214519.1</td>
+      <td>ISH probe primers</td>
+      <td>F: GCAGAGTTCAACAGAATCGACR: GCCAGTAGACGTAGCAGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpEts1</td>
+      <td>XM_030976919.1</td>
+      <td>ISH probe primers</td>
+      <td>F: TCAATCATGGCGTCTATGCACTGR: ACAGCTGCAGGGATAACAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpFoxA</td>
+      <td>NM_001079542.1</td>
+      <td>ISH probe primers</td>
+      <td>F: ATGGCCAATAGTGCCATGATCTCG R: TCACATTGCATGGTTTGCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpFoxQ2</td>
+      <td>XM_003731512.3</td>
+      <td>ISH probe primers</td>
+      <td>F: ATGACTTTATTCAGCATTGACAACR: TAGCAGGATCCTACAGAAGACCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpSm50</td>
+      <td>NM_214610.3</td>
+      <td>ISH probe primers</td>
+      <td>F: ATGAAGGGAGTTTTGTTTATTGTGGCTAGTCR: GTTATGCCAACGCGTCTGCCTCTTGAAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpTbr1</td>
+      <td>XM_786173.5</td>
+      <td>ISH probe primers</td>
+      <td>F: CCACCGCTGCACCAGACGACR: CTGCCGGCTGGCGCCAATTGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpWnt8</td>
+      <td>NM_214667.1</td>
+      <td>ISH probe primers</td>
+      <td>F: ATGGATGTTTTTACGGAATTTGTTCGR: CTACAGCCTCGATCCAACGGGCTG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and echinoderm embryos
 
 S. purpuratus (sea urchins) were collected from the ocean by Pat Leahy, Kerchoff Marine Laboratories, California Institute of Technology, or Josh Ross, South Coast Bio-Marine LLC, Long Beach, CA, and kept in an aquarium cooled to 16°C. E. tribuloides (pencil urchins) were collected from the ocean by KP Aquatics LLC., Tavernier, FL, and maintained in the aquarium at room temperature. Gametes were acquired via 0.5 M KCl injections. Eggs were collected in seawater (SW), and sperm was collected dry. For injection, eggs were de-jellied using pH 4.0 SW and placed in a plate coated with protamine sulfate. These eggs were then fertilized and injected in the presence of 1 mM 3-amino triazole (Sigma, St. Louis, MO) to prevent crosslinking of fertilization envelopes, and embryos were cultured in SW at 16°C. For protein collection for immunoprecipitation, eggs were fertilized in 1 mM 3-amino triazole. Fertilization envelopes were removed by pipetting, and fertilized eggs were placed in a plate coated with the fetal bovine serum to prevent eggs from sticking to the plate.
 
-## Plasmid construction
+### Plasmid construction
 
 All constructs were prepared in pSP64 or pCS2 vectors, which were optimized for in vitro transcription. SpAGS was previously identified in the sea urchin (Voronina and Wessel, 2006) and SpAGS-GFP was constructed by PCR amplification of the SpAGS ORF, then subcloned into the pSp6 β-globin UTR plasmid between the Xenopus β-globin 5′ and 3′ UTRs as described in Poon et al., 2019 (Figure 2—figure supplement 1A). To remove GL1 (473aa DNFFEALSRFQSNRMDEQRCSF 495aa) from SpAGS-GFP, the internal Bbvc1 (458a) and Bsm1 (532aa) sites were used to remove the sequence, including GL1, and the corresponding sequence lacking only GL1 (gBlock, IDT, IA) was fused back using In-Fusion HD Cloning kit according to manufacturer’s protocol (#639648, Clontech, USA) (Figure 2—figure supplement 1B). The other C-terminal deletion constructs were created following the same method using the internal BbvC1 (458aa) and vector Apa1 sites to remove the original sequence and replace it with each DNA fragment (gBlock, IDT) with the desired sequence. The N-terminal deletion constructs were constructed by removing the entire AGS ORF from the SpAGS-GFP plasmid using the vector Bgl2 and Apa1 sites, then replacing it with a custom DNA fragment (gBlock, IDT), each with the appropriate deletion. The ORF of SbAGS (GenBank ID is GAUT01023097.1) was synthesized by IDT, which was then inserted into the Sp64-2xGFP vector at Not1 and Spe1 sites. The ORF of Insc, Dlg, NuMA, and Par3 was PCR amplified and subcloned into the pSP64-GFP/mCherry vector. The 3xFlag DNA fragment (gBlock, IDT) was inserted into pSP64-GFP-SpInsc/SpDlg/NuMA and pSP64-Vasa-GFP for PLA analysis. pCS2-2x-mCherry-EMTB (#26742 Addgene) (Miller and Bement, 2009) was obtained from Addgene. pSP64-Vasa-mCherry was previously constructed in Uchida and Yajima, 2018. pSP64-Vasa-GFP and pSP64-AGS-mCherrywere previously built and used (Fernandez-Nicolas et al., 2022; Poon et al., 2019; Yajima and Wessel, 2011; Yajima and Wessel, 2015).
 
-## mRNA injection and microscopy
+### mRNA injection and microscopy
 
 Constructs were linearized with the appropriate restriction enzymes overnight (Not1 for pCS2-2x-mCherry-EMTB constructs, SmaI, SalI, or EcoRI for all pSP64 constructs), then transcribed in vitro with mMESSAGE mMACHINE SP6 Transcription Kit (#AM1340, Thermo Fisher Scientific), which involved a 4 hr incubation at 37°C, followed by a DNaseI treatment and LiCl precipitation overnight at –20°C. Sea urchin embryos were injected at the one-cell stage with 0.15–1 μg/μl of each mRNA as individually indicated. A morpholino antisense oligonucleotide (MO) that explicitly blocks the translation of SpAGS was previously designed and used in Poon et al., 2019. The SpAGS MO sequence is listed below (Table S1Key resources table). For knockdown experiments, embryos were co-injected with 0.75 mM MO with or without 0.15 μg/μl of SpAGS-GFP mRNA. Embryos were imaged using the Nikon CSU-W1 Spinning disk laser microscope.
 
-## Insc antibody production and validation
+### Insc antibody production and validation
 
 Three affinity-purified rabbit antibodies against SpInsc were made by GenScript (Piscataway, NJ). Antibody #1 showed the most specific vegetal cortex signal by immunofluorescence (Figure 7—figure supplement 1A). This antibody detected multiple bands yet still displayed the primary band at the expected size (53 kDa) by immunoblot (Figure 7—figure supplement 1B). The competition assay with SpInsc-peptide removed all bands except for the band at 15 kDa (Figure 7—figure supplement 1C). Thus, the larger bands detected by this antibody may be the complexes of Insc proteins since Insc is known to form dimers and hexamers with LGN (Culurgioni et al., 2018).
 
-## Immunoblotting
+### Immunoblotting
 
 Samples were run on a 10% Tris-glycine polyacrylamide gel (Invitrogen, Carlsbad, CA) before transfer on a nitrocellulose membrane for immunoblotting with Insc antibodies used at 1:2000 dilution with 1.5% BSA, or Actin (#3700S, Cell Signaling Technology) antibody at 1:5000 dilution with 0% BSA, followed by treatment with HRP-conjugated anti-Protein A (ab7245, Abcam) for Insc or HRP-conjugated anti-mouse (#7076, Cell Signaling Technology) secondary antibody for Actin at 1:2000. The reacted proteins were detected by incubating the membranes in the chemiluminescence solution (luminol, coumaric acid, hydrogen peroxide, Tris pH 6.8) and imaged by the ChemiDoc Gel Imaging System (Bio-Rad, USA).
 
-## Immunofluorescence
+### Immunofluorescence
 
 The final concentrations of primary antibodies were anti-SpInsc at 1:200, anti-SpAGS (Poon et al., 2019) and anti-β-catenin (Yazaki et al., 2015) at 1:300, anti-SpNuMA (Poon et al., 2019) at 1:500, and anti-Gαi (#sc-56536, Santa Cruz Biotech) at 1:30. The secondary antibodies were used at a dilution of 1:300 Alexa 488-conjugated goat anti-rabbit (#4412, Cell Signaling Technology) or Alexa 555-conjugated goat anti-mouse (#4409, Cell Signaling Technology). Hoechst dye (#62249, Thermo Fisher Scientific) at 1:1000 (10 mg/ml stock) was used to visualize DNA. Embryos of the desired developmental stage were fixed with 90% cold methanol for more than 1 hr at –20°C, washed with 1× PBS, and incubated with the primary antibody overnight at 4°C, followed by 10 washes with 1× PBS, then incubated with the secondary antibody at room temperature for 3 hr. The secondary antibody was washed 10 times with 1× PBS and Hoechst treatment for 15 min. Samples were plated onto slides. All fluorescent images were taken under the Nikon CSU-W1 Spinning disk laser microscope.
 
-## Proximity ligation assay
+### Proximity ligation assay
 
 Embryos at the 8–16-cell stage were fixed with 90% cold methanol for over 1 hr at –20°C, washed with 1× PBS, and treated with 0.05% Triton-X for 15 min. PLA was processed following a manufacturer’s protocol (#DUO92101, MilliporeSigma). The concentration of primary antibodies was anti-SpAGS (Voronina and Wessel, 2006) at 1:300 and anti-Flag (#F1804, MilliporeSigma) at 1:100. Embryos were taken images under the Nikon CSU-W1 Spinning disk laser microscope.
 
-## In situ hybridization
+### In situ hybridization
 
 The embryos were fixed using 4% paraformaldehyde at the ideal stage. Fixed embryos were washed with MOPS buffer and stored in 70% EtOH at –20°C until needed. ISH was performed as previously described (Minokawa et al., 2004; Perillo et al., 2021). Sequences used to make antisense probes were PCR amplified from 1 dpf embryonic cDNA of sea urchin using the primers listed in the literature and Key resources table (Rizzo et al., 2006; Ettensohn et al., 2003; Cary et al., 2017) and cloned into TOPO vector (#45-124-5, Thermo Fisher Scientific) (Key resources table). The TOPO plasmids were linearized using BamHI or HindIII (T7 transcription) and NotI or XhoI (SP6 transcription) for subsequent in vitro transcription using either SP6 or T7 MEGAscript Transcription kit (#AM1330 or AM1333, Thermo Fisher Scientific) with DIG RNA labeling mix (#11277073910, Roche; Indianapolis, IN).
 
-## Data analysis
+### Data analysis
 
 All quantitative data were analyzed using GraphPad Prism 8.3.1 software. Each experiment was repeated at least two independent times. Statistical significance was determined by a t-test or one-way ANOVA.*p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
 
-## Blast and motif analysis
+### Blast and motif analysis
 
 All echinoderm sequences were obtained from Echinobase.org. Protein sequence alignment and molecular phylogenetic tree were constructed using Clustal Omega and CIPRES Science Gateway V. 3.3. Protein structural motif analysis was performed through the NCBI blast search of the database CDD v3.17 with the value threshold of 0.02. The GoLoco (GL) motif found in the C-terminal of AGS-family proteins is defined by a conserved core of 19 amino acids except for the C. elegans, where the single GL motif is 18 amino acids long (Willard et al., 2004). In Figure 1B, some GL or TPR motifs were considered partial as they are predicted to be less than 18 amino acids long, or a few amino acids are altered in the motif, respectively. Each GL motif was numbered according to sequence similarity to that of S. purpuratus AGS GL motifs.
 
-## Materials availability statement
+### Materials availability statement
 
 Major plasmid constructs made in this study are available through Addgene upon completion of the depository process. All other materials are available through the corresponding author upon reasonable requests.

@@ -27,23 +27,23 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 UCL Cancer Institute, Paul O'Gorman Building, University College London London United Kingdom
-2. https://ror.org/0220mzb33 Comprehensive Cancer Centre, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom
-3. https://ror.org/0220mzb33 Richard Dimbleby Laboratory of Cancer Research, School of Cancer & Pharmaceutical Sciences, King's College London London United Kingdom
-4. https://ror.org/0220mzb33 Breast Cancer Now Research Unit, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom
-5. https://ror.org/0220mzb33 Tumor Immunology Group, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom
-6. https://ror.org/0220mzb33 Centre for Clinical, Oral & Translational Science, King’s College London London United Kingdom
-7. https://ror.org/0220mzb33 Systems Cancer Immunology, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom
-8. https://ror.org/055werx92 Daiichi Sankyo Incorporated Newark United States
-9. https://ror.org/043jzw605 The Institute of Cancer Research London United Kingdom
-10. https://ror.org/0220mzb33 Institute for Mathematical and Molecular Biomedicine, King’s College London London United Kingdom
-11. https://ror.org/02y750690 Saddle Point Science Ltd London United Kingdom
+1. UCL Cancer Institute, Paul O'Gorman Building, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. Comprehensive Cancer Centre, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+3. Richard Dimbleby Laboratory of Cancer Research, School of Cancer & Pharmaceutical Sciences, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+4. Breast Cancer Now Research Unit, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+5. Tumor Immunology Group, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+6. Centre for Clinical, Oral & Translational Science, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+7. Systems Cancer Immunology, School of Cancer & Pharmaceutical Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+8. Daiichi Sankyo Incorporated Newark United States ([ROR:055werx92](https://ror.org/055werx92))
+9. The Institute of Cancer Research London United Kingdom ([ROR:043jzw605](https://ror.org/043jzw605))
+10. Institute for Mathematical and Molecular Biomedicine, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+11. Saddle Point Science Ltd London United Kingdom ([ROR:02y750690](https://ror.org/02y750690))
 
 † Corresponding author
 
 ## Abstract
 
-Advanced head and neck squamous cell carcinoma (HNSCC) is associated with a poor prognosis, and biomarkers that predict response to treatment are highly desirable. The primary aim was to predict progression-free survival (PFS) with a multivariate risk prediction model. Experimental covariates were derived from blood samples of 56 HNSCC patients which were prospectively obtained within a Phase 2 clinical trial (NCT02633800) at baseline and after the first treatment cycle of combined platinum-based chemotherapy with cetuximab treatment. Clinical and experimental covariates were selected by Bayesian multivariate regression to form risk scores to predict PFS. A ‘baseline’ and a ‘combined’ risk prediction model were generated, each of which featuring clinical and experimental covariates. The baseline risk signature has three covariates and was strongly driven by baseline percentage of CD33 + CD14 + HLADR high monocytes. The combined signature has six covariates, also featuring baseline CD33 + CD14 + HLADR high monocytes but is strongly driven by on-treatment relative change of CD8 + central memory T cells percentages. The combined model has a higher predictive power than the baseline model and was successfully validated to predict therapeutic response in an independent cohort of nine patients from an additional Phase 2 trial (NCT03494322) assessing the addition of avelumab to cetuximab treatment in HNSCC. We identified tissue counterparts for the immune cells driving the models, using imaging mass cytometry, that specifically colocalized at the tissue level and correlated with outcome. This immune-based combined multimodality signature, obtained through longitudinal peripheral blood monitoring and validated in an independent cohort, presents a novel means of predicting response early on during the treatment course. Daiichi Sankyo Inc, Cancer Research UK, EU IMI2 IMMUCAN, UK Medical Research Council, European Research Council (335326), Merck Serono. Cancer Research Institute, National Institute for Health Research, Guy’s and St Thomas’ NHS Foundation Trust and The Institute of Cancer Research. NCT02633800 .
+Background:Advanced head and neck squamous cell carcinoma (HNSCC) is associated with a poor prognosis, and biomarkers that predict response to treatment are highly desirable. The primary aim was to predict progression-free survival (PFS) with a multivariate risk prediction model.Methods:Experimental covariates were derived from blood samples of 56 HNSCC patients which were prospectively obtained within a Phase 2 clinical trial (NCT02633800) at baseline and after the first treatment cycle of combined platinum-based chemotherapy with cetuximab treatment. Clinical and experimental covariates were selected by Bayesian multivariate regression to form risk scores to predict PFS.Results:A ‘baseline’ and a ‘combined’ risk prediction model were generated, each of which featuring clinical and experimental covariates. The baseline risk signature has three covariates and was strongly driven by baseline percentage of CD33+CD14+HLADRhigh monocytes. The combined signature has six covariates, also featuring baseline CD33+CD14+HLADRhigh monocytes but is strongly driven by on-treatment relative change of CD8+ central memory T cells percentages. The combined model has a higher predictive power than the baseline model and was successfully validated to predict therapeutic response in an independent cohort of nine patients from an additional Phase 2 trial (NCT03494322) assessing the addition of avelumab to cetuximab treatment in HNSCC. We identified tissue counterparts for the immune cells driving the models, using imaging mass cytometry, that specifically colocalized at the tissue level and correlated with outcome.Conclusions:This immune-based combined multimodality signature, obtained through longitudinal peripheral blood monitoring and validated in an independent cohort, presents a novel means of predicting response early on during the treatment course.Funding:Daiichi Sankyo Inc, Cancer Research UK, EU IMI2 IMMUCAN, UK Medical Research Council, European Research Council (335326), Merck Serono. Cancer Research Institute, National Institute for Health Research, Guy’s and St Thomas’ NHS Foundation Trust and The Institute of Cancer Research.Clinical trial number:NCT02633800.
 
 ## Introduction
 
@@ -61,9 +61,21 @@ By extracting information from patient samples at baseline and after the first c
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The clinical study design of the Phase 2 study (NCT02633800) and its associated exploratory analysis are shown in Figure 1A. Eighty-seven patients were enrolled in the clinical trial. Peripheral blood samples were collected at baseline before initiation of treatment (C1) and immediately before the second cycle of treatment (C2). Thirty-one patients were excluded due to incomplete paired biological datasets, leaving 56 patients for analysis. Amongst these patients, there was no difference in PFS as demonstrated by Kaplan-Meier survival curve analysis (Figure 1—figure supplement 1) regardless of whether the patients received patritumab, which reflected the results published in the clinical trial. The baseline clinical characteristics of these 56 patients are shown in Supplementary file 1 together with a comparison that shows there is no significant difference between the clinicopathological characteristics pertaining to the discovery cohort and the whole cohort of study.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of clinical trial design and timepoints at which peripheral blood was obtained. (B) Fifty-six (n=56) paired blood samples, obtained pre-treatment (C1) and after one cycle of treatment (C2) were subjected to flow cytometry, Förster resonance energy transfer-fluorescence lifetime imaging microscopy (FRET-FLIM) imaging, and droplet digital polymerase chain reaction (ddPCR) analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Progression-free survival data was obtained from 53 patients and stratified according to patients who received patritumab and the cohort which received placebo.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Peripheral immune cell populations analysed in this study are indicated in corresponding gates. (A) Subpopulations of CD3+CD4+and CD3+CD8+T cells were further identified by using markers CCR7 and CD45RO as effector (Eff., CD45RO-CCR7-), naïve (CD45RO- CCR7+), central memory (CM, CD45RO+CCR7+), and effector memory (EM, CD45RO+CCR7-). The activation status of CD4+ regulatory T cells (Tregs, CD127-/lo CD25hi) was defined by markers CD45RO and HLA-DR as indicated: naïve Tregs (HLA-DR-CD45RO), activated Tregs (Act. Tregs, HLA-DR+CD45RO+), and memory Tregs (Mem. Tregs, HLA-DR-CD45RO+). (B) CD19+ B cell subpopulations were identified with markers CD24, CD38, and CD27: plasma cells (CD38+CD27+); mature (CD24loCD38lo), memory (CD24hiCD38-), transitional (TBC, CD24hiCD38hi); or a combination of IgD and CD27: naïve (IgD+CD27-), memory pre-switch (IgD+CD27+), memory post-switch (IgD-CD27+), or double-negative B cells (DN, IgD-CD27-). CD33+ CD14+ monocytes were defined as CD3-CD19-CD33+CD16+CD14+.
 
 PBMC samples were analysed using flow cytometry to generate unique immunological subpopulations. Exosomes were extracted from the serum and analysed for EGFR-ErbB3 dimerization and miRNA-21-5p and miRNA-142-3p (Figure 1B). These analyses yielded a total of 29 unique biological covariates. Each covariate was obtained in pairs (C1 and C2), generating a total of 58 laboratory-based covariates for the multivariate analysis (Figure 1B). To mitigate individual baseline variations between patients, the biological data obtained from the C2 timepoint was evaluated as relative change with respect to the baseline value of the same covariate at C1 (in the form of log2-fold change [lfc] of the variable of interest) instead of absolute values of those parameters. A list of the laboratory-based and clinical covariates is provided in Supplementary file 2.
 
@@ -73,7 +85,7 @@ Written informed consent was obtained. Approval was obtained from ethics committ
 
 The design of the EACH trial (NCT03494322) that was used to validate the signature is shown in Figure 5—figure supplement 1A. The aim of the EACH trial was to evaluate the safety and anti-tumour activity of avelumab and cetuximab in R/M squamous cell carcinomas. Sixteen patients were enrolled in the study. Four patients were excluded due to lack of blood samples at both timepoints. One patient was excluded due to lack of outcome data. Two patients only had a baseline biopsy. Written informed consent was obtained from all patients. Study approval was obtained from ethics committees (Research Ethics Committee reference: 18/LO/0021). PBMCs underwent a quality control step to check viability which resulted in the exclusion of one of the patients (Figure 5—figure supplement 1B). One patient died before their first response evaluation scan and was therefore classified as having progressive disease as the cause of death was identified to be the illness.
 
-## Statistical analysis
+### Statistical analysis
 
 To examine whether the covariates indicated different prognostic outcomes, we built a model for predicting PFS. Using Bayesian multivariate proportional hazards regression, covariates were ranked and selected by predictive importance (Grigoriadis et al., 2018). We derived two models using separate datasets: firstly, a baseline predictive model containing a dataset of 42 baseline covariates (29 laboratory parameters at baseline (C1) and 13 clinical characteristics). The second, a combined predictive model, consists of 71 covariates, that is, the 42 baseline covariates and a further 29 derived from the on-treatment change of the value of a lab-based parameter relative to its value in the same patient at baseline denoted as lfc of that variable.
 
@@ -83,23 +95,23 @@ Covariates were normalized to zero mean and unit standard deviation such that th
 
 Validation of the signatures was performed by calculating the risk score for each patient in the validation trial (EACH) using the combined risk signature covariate weights and performing a correlation test versus the iRECIST outcome for that trial. The covariates were obtained from flow cytometry analysis on the PBMCs of the validation cohort and patient age at registration. As detailed tumour site information was not available for the validation cohort, these covariates were replaced in the signature by the average values from the discovery cohort.
 
-## Flow cytometry
+### Flow cytometry
 
 Frozen PBMC samples were thawed and stained with Fixable viability dye (Yellow Live/Dead, Thermo Fisher Scientific) followed by two different panels of membrane markers. Two different panels were used, a simple one for the discovery cohort and a more thorough panel for the validation cohort (full list of both antibody panels in Supplementary file 4 and Supplementary file 5). These two panels allow definition of immune cell populations as described in Figure 1—figure supplement 2. Patients’ samples and corresponding Fluorescence Minus One (FMO) Controls were acquired in a Fortessa II flow cytometer (BD, Berkshire, UK) and analysed with FlowJo software (Tree Star).
 
-## Isolation of serum exosomes
+### Isolation of serum exosomes
 
 Exosomes were prepared using an optimized centrifugation method (Monypenny et al., 2018). Diluted serum was centrifuged at 300 × g for 10 min to remove cell debris, 5000× g for 20 min to remove large vesicles and membrane fragments, and 12,200× g for 30 min to deplete microvesicles. This was followed by 100,000 × g ultracentrifugation for 120 min at 4°C to pellet exosomes with a TLA-55 rotor (Beckman Coulter). After a second 100,000 × g ultracentrifugation for 60 min, the resulting pellets were washed and resuspended in PBS. Purified exosomal fractions were diluted and used for nanoparticle tracking analysis using a Nanosight LM-14 system.
 
-## RNA extraction and miRNA expression analysis
+### RNA extraction and miRNA expression analysis
 
 RNA from cancer patients’ serum exosomes was extracted using the TRIzol Plus RNA Purification Kit (Thermo Fisher, UK) according to the manufacturer’s instructions. Quantification of gene expression in circulating exosomes was performed by droplet digital polymerase chain reaction (ddPCR) (Bio-Rad QX100 system). Normalization of the RNA, between cycle 1 and cycle 2 therapy of each patient, was performed using the expression levels of the housekeeping gene 18S (Assay ID, Hs99999901_s1). For each sample, equal volume of RNA was used as template and cDNA synthesis performed using the SuperScript VILO MasterMix (Thermo Fisher, UK) according to the manufacturer’s instructions. MicroRNAs were reverse-transcribed individually using the TaqMan MicroRNA Reverse Transcription Kit (Thermo Fisher, UK). For each sample, the normalized amount of RNA was reverse-transcribed in a 15 μl reaction using the standard protocol and primers specific for each miRNA: miR-21-5p (assay ID, 000397), miR-142-3p (assay ID, 000464). Then, 7.5 μl of cDNA was added to a 20 μl reaction containing 12.5 μl 2× ddPCR Supermix for Probes (Bio-Rad) and 1 μl 20× TaqMan miRNA PCR primer probe set; each reaction was carried out in duplicate. Thermo cycling conditions were as follows: 95°C for 10 min, then 50 cycles of 95°C for 10 s and 61°C for 30 s and a final inactivation step at 98°C for 12 min. PCR products were analysed using the QuantaSoft Software (Bio-Rad).
 
-## ErbB3-EGFR dimer quantification in exosomes
+### ErbB3-EGFR dimer quantification in exosomes
 
-Exosomes were imaged on an ‘Open’ fluorescence lifetime imaging microscopy (FLIM) system (Barber et al., 2013). Analysis was performed with the TRI2 software (v2.7.8.9, CRUK/MRC Oxford Institute for Radiation Oncology, Oxford) as described previously (Barber et al., 2009; Rowley et al., 2016). Interfering effects of autofluorescence were minimized with a lifetime filtering algorithm and the FRET efficiency value for each patient calculated by: FRET = 1− τDAτD , where τD and τDA are the average lifetime of Alexa Fluor 546 in the matching donor (D) and donor-acceptor (DA) images.
+Exosomes were imaged on an ‘Open’ fluorescence lifetime imaging microscopy (FLIM) system (Barber et al., 2013). Analysis was performed with the TRI2 software (v2.7.8.9, CRUK/MRC Oxford Institute for Radiation Oncology, Oxford) as described previously (Barber et al., 2009; Rowley et al., 2016). Interfering effects of autofluorescence were minimized with a lifetime filtering algorithm and the FRET efficiency value for each patient calculated by: FRET = 1− $\frac{\tau_{DA}}{\tau_{D}}$ , where τD and τDA are the average lifetime of Alexa Fluor 546 in the matching donor (D) and donor-acceptor (DA) images.
 
-## Imaging mass cytometry
+### Imaging mass cytometry
 
 Formalin-fixed paraffin-embedded (FFPE) histological slides were stained with a panel of metal conjugated antibodies (full list of antibodies listed in Supplementary file 6).
 
@@ -109,19 +121,19 @@ Ablation and data acquisition of multiple regions of interest per tissue section
 
 ## Results
 
-## The model with baseline covariates reveal immune subpopulations and age predict PFS
+### The model with baseline covariates reveal immune subpopulations and age predict PFS
 
 Bayesian multivariate proportional hazards regression was performed on the 42 covariates derived at baseline (C1) and PFS outcome. We utilized the stringent selection criteria based on a proportional hazards regression model to minimize overfitting based on the cross-validation performance (Figure 2A). This revealed two baseline immune subpopulations with a β value which exceeded the critical β value threshold, that is, CD14+CD16+CD33+CD11b+ monocytes thereafter referred to as CD33+CD14+ monocytes according to previous nomenclature (Cravens et al., 2007) and double negative (CD27-IgD-) B cells (DN B cells), as well as one clinical covariate – age (Figure 2B). Missingness covariates were included in this analysis and did not affect the outcome of the signature.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig2-v2.jpg)
 
-**Figure 2.:** +CD14+ monocytes and double negative B cells predict progression-free survival (PFS).(A) Covariates were ranked for importance and selected by a proportional hazards regression model with cross-validation. (B) Proportional hazards regression revealed three covariates which exceed the beta critical value – CD33+CD14+ monocytes, double negative B cells, and age. (C) Forest plot of the three covariates within PFS risk score with dotted line indicating the range, around 1, of typical random covariates. (D) PFS risk signature performance, low risk score (n=27) and high-risk score (n=26). Log rank p-value = 6.0e-5, with numbers at risk demonstrated under Kaplan-Meier curve. The multivariate analysis resulted in risk signatures that are linear combinations of weighted covariates. Their ability to predict outcome is demonstrated with data split by signature value.
+**Figure 2.:** (A) Covariates were ranked for importance and selected by a proportional hazards regression model with cross-validation. (B) Proportional hazards regression revealed three covariates which exceed the beta critical value – CD33+CD14+ monocytes, double negative B cells, and age. (C) Forest plot of the three covariates within PFS risk score with dotted line indicating the range, around 1, of typical random covariates. (D) PFS risk signature performance, low risk score (n=27) and high-risk score (n=26). Log rank p-value = 6.0e-5, with numbers at risk demonstrated under Kaplan-Meier curve. The multivariate analysis resulted in risk signatures that are linear combinations of weighted covariates. Their ability to predict outcome is demonstrated with data split by signature value.
 
 Evaluation of the individual β values reveal that baseline CD33+CD14+ monocytes and DN B cells have a β value of –1.05 and –0.53, respectively, and hence a higher baseline value of both populations is predictive of better PFS. Age, with a β value of 0.47, is associated with poorer PFS. The HRs of the individual covariates are depicted in Figure 2C. The baseline risk scores correlated strongly with PFS (C-index=0.60, τ=−0.33, p=0.0005). The risk score equation is given in Supplementary file 7.
 
 The risk scores generated from this signature were split at the median value to generate low-risk and high-risk cohorts (Figure 2D). The median PFS of the low-risk and high-risk cohorts are 8.3 and 3.6 months, respectively (log rank p-value = 6.0e-5).
 
-## Incorporating laboratory-based covariates after one cycle of treatment improves ability to predict PFS benefit
+### Incorporating laboratory-based covariates after one cycle of treatment improves ability to predict PFS benefit
 
 We subsequently evaluated if the incorporation of early laboratory-based changes into the signature improves its predictive ability. A separate predictive model incorporating an additional 29 new covariates, that is, relative on treatment changes in laboratory-based parameters at cycle 2 with respect to the value at baseline (C1).
 
@@ -133,23 +145,51 @@ As before, we used a proportional hazards regression to determine a set of varia
 
 A multivariate analysis employing linear combinations of these six weighted covariates generated a risk signature. The combined risk scores exhibited a stronger correlation with PFS than the baseline risk scores (C-index=0.69, τ=−0.49, p=7e-7). Their ability to predict outcome is demonstrated with data split by risk score, shown in Figure 3C. In this combined predictive signature, the median PFS of the low-risk and high-risk cohorts are 6.8 and 3.6 months, respectively (log rank p-value 0.004) (Figure 3C). The risk score equation is given in Supplementary file 7.
 
-## EGFR-ErbB3 FRET on exosomes may contribute to predictive signature
+### EGFR-ErbB3 FRET on exosomes may contribute to predictive signature
 
 While the combined predictive signature comprised predominantly of immunological parameters, there is a suggestion that FRET difference may carry a degree of predictive value. In Figure 3A (fourth covariate from the bottom), the difference in EGFR-ErbB3 FRET (FRET.delta) was associated with a negative β value which suggests a better PFS. However, the stringency that we have applied to optimal covariate selection means that this covariate fell marginally short of featuring in the eventual predictive signature. Nonetheless, this is the first time that this assay, (explained in Figure 4B), has been used within the context of a randomized controlled trial in exosomes and the suggested predictive value of the dimer warrants some discussion. Figure 4A displays intensity images and donor lifetime map of exosomes labelled with anti-EGFR and anti-ErbB3 antibodies.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig4-v2.jpg)
+
+**Figure 4.:** (A) Time-resolved fluorescence intensity images and donor lifetime map of exosomes labelled with Anti-EGFR-IgG-Alexa 546 and Anti-ErbB3-IgG-Cy5 extracellular antibodies. (B) Schematic illustration of the fluorescent labelling geometry on exosomes and distance dependence of FRET efficiency. (C) Progression-free survival of subpopulations divided by median FRET difference, FRET.delta low (n=21) and FRET.delta high (n=22). Log rank p-value = 0.2, with numbers at risk demonstrated under Kaplan-Meier curve.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** τ=0.43, p=0.02. miR21: MicroRNA-21-5p, lfc: log2-fold change.
+
 By dividing the patients with available FRET values by the median FRET.delta (n=43), there was a suggestion that patients with a high FRET.delta exhibited a better PFS than patients with a low FRET.delta. This difference was not statistically significant (log rank p-value = 0.2) (Figure 4C). The predictive capacity of this univariate is limited (τ=–0.13, p=0.2, C-index=0.586). Nonetheless, these results suggest a trend within a small patient cohort and can be explored in future prospective studies. While none of the remaining exosome derived perimeters correlated with PFS, miRNA signatures have been implicated as a useful classifier for myeloid cell subsets (Bronte et al., 2016). By correlating the miRNA changes in our study with this monocytic subpopulation, a significant correlation was identified between the log fold changes of miR-21-5p with the corresponding log fold changes of CD33+CD14+ monocytes (r=0.43, p=0.02, Figure 4—figure supplement 1).
 
-## Validation of the risk signature in an independent cohort
+### Validation of the risk signature in an independent cohort
 
 The validation cohort of 16 patients was obtained from the EACH trial (NCT03494322) which evaluated the combination of avelumab with cetuximab in HNSCC patients. As the risk signature consisted predominantly of immune subpopulations, we successfully obtained PBMCs from eight patients at the pre-treatment timepoint and after one cycle of cetuximab hence matching the timepoints of the original cohort. PFS data in the validation cohort was not entirely available at the time of analysis, hence we used best objective response (BOR) using iRECIST criteria to validate the combined risk signature. We confirmed that in the original test cohort, patient PFS data strongly and inversely correlated with BOR (τ=−0.52, p=3e-6) (Figure 5A). Age and site information were not available for the validation cohort and were replaced in the risk signatures by average values from the discovery cohort.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-v2.jpg)
+
+**Figure 5.:** (A) Correlation between progression-free survival (PFS) and best objective response (BOR) in the original cohort (τ=−0.52, p=3e-6). (B) Correlation between the combined risk signature and the BOR of the patients in the validation cohort (τ=0.74, p=0.02). (C) Kaplan-Meier curves of PFS split by median percentage of baseline CD33+CD14+ value. (D) Kaplan-Meier curves of PFS split by median value of on treatment fold change of CD8+ central memory T cells relative to baseline. lfc: log2-fold change. (E) Table summarizes C-index, rank correlation, and log rank p-value based on type and number of covariates in both cohorts.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic representation of the trial design. Blood samples were collected at the indicated timepoints. For the validation cohort we assessed the PBMCs obtained before the first cycle of cetuximab treatment and just before second cycle of therapy which was a combination of cetuximab and avelumab. (B) Histogram showing frequency distribution of the viability of the thawed patient PBMCs. Dashed line indicates the viability cut-off used for the validation cohort.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** CD14+CD16lowCD33+CD11b+ monocytes also express high levels of HLA-DR and CD11c.
+
 The combined risk signature strongly correlated with a poorer treatment outcome (τ=0.73, p=0.02) (Figure 5B). Separately, each of the variates showed similar trends in the validation cohort to those observed in the test cohort yet only two key immune populations showed interesting strong correlations (Figure 5—figure supplement 2). High pre-treatment levels of CD33+CD14+monocytes significantly correlated with a worse disease outcome in all patients except for a single outlier who exhibited a complete response to treatment. A post-treatment increase in CD8+ central memory cells (lfcCD8CM) also correlated with a poorer treatment outcome. Interestingly, both covariates were the strongest drivers of the risk signature in the discovery cohort with the baseline level of CD33+CD14+monocytes being a key covariate in both signatures. Given this result we assessed their ability to predict PFS as univariates in the original cohort. Figure 5C shows Kaplan-Meier curves of PFS by median of each of these covariates. We observed a modest split that reached significance only in the case of baseline CD33+CD14+ monocyte (log rank p-value = 0.03) and not in the case of lfcCD8CM cells (log rank p-value = 0.1). lfcCD8CM more strongly predicted PFS (C-index=0.74, τ=−0.36, p=0.01) than base line CD33+CD14+ monocytes (C-index=0.39, τ=0.22, p=0.07). Due to the consistency with which the CD33+CD14+ monocyte population appeared across our study, we wanted to further characterize this population to determine its phenotype hence we expanded the antibody panel for the validation set and determined that these CD14+CD16+CD33+CD11b+ monocytes also express high levels of HLA-DR (Figure 5—figure supplement 3).
 
-## Imaging mass cytometry of tissue reveals correlation of CD33+HLADRhigh myeloid cell with tissue CD74+ macrophages interacting with tissue CD8+ memory T cells
+### Imaging mass cytometry of tissue reveals correlation of CD33+HLADRhigh myeloid cell with tissue CD74+ macrophages interacting with tissue CD8+ memory T cells
 
 Having established that two immune subsets in peripheral blood predict therapeutic response within a multivariate signature, we subsequently explored the relationship between the immune findings in peripheral blood with tumour infiltrating leukocytes (TILs). We obtained sufficient tissue from the biopsy at trial enrolment for in-depth profiling by imaging mass cytometry from nine patients.
 
 Standard FFPE samples from these patients were stained using a custom immune focused imaging mass cytometry panel (Supplementary file 6). The cells were segmented and then classified into superpopulations using a trained machine learning approach. These segmented cells were divided into subpopulations by unsupervised clustering using uniform manifold approximation and projection (Figure 6A). The distribution of the superpopulations per patient is shown in Figure 6B, yet none of which correlated with PFS (Figure 6—figure supplement 1). The phenotypes of the subclusters are shown by heat maps (Figure 6C). The key populations were then manually annotated and, in some cases, merged to compensate for over clustering and analysed for their correlation with PFS as well as peripheral immune populations. The complete list of these correlations can be seen in Figure 6—figure supplement 1. We focused on the two main populations highlighted by the validation cohort, being CD33+CD14+monocytes and CD8CM to understand how they are represented at the tumoural level. The peripheral intermediate monocyte population strongly correlated with a tissue CD14+CD33+CD74+CD68+ macrophage population while the CD8CM inversely correlated with CD45RO+CD27+CD8+ tissue resident memory T cell (CD8Trm) population. Both of those populations positively correlated with PFS. Interestingly, the peripheral CD33+ monocyte population strongly correlated with CD8Trm (Figure 6D). To understand whether this correlation resulted in cellular levels of interactions, we assessed the average number of cell-to-cell contact that CD8Trms had with each of the clustered subpopulations. We found these cells were significantly more likely to be in contact with a CD74+ macrophage than any other identified population suggesting this interaction is biologically driven and not random (Figure 6E).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig6-v2.jpg)
+
+**Figure 6.:** (A) Uniform manifold approximation and projections (UMAP) of the segmented cells from the combined patient sections showing their distribution across the superpopulations. (B) Relative abundance of the cells across the patient samples arranged in increasing order of progression-free survival (PFS). (C) Marker expression pattern across each of the clustered subpopulations. (D) Correlations between peripheral PBMC populations and tissue immune populations or between tissue immune populations and PFS. (E) Average number of interactions between the CD8+ tissue resident memory T cells and each of the clustered subpopulations. Arrow indicates the population of tissue macrophage that corresponds to peripheral CD33+CD14+monocyte.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73288/elife-73288-fig6-figsupp1-v2.jpg)
 
 ## Discussion
 

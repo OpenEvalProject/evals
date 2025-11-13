@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/026vcq606 Science for Life Laboratory & Swedish e-Science Research Center, Department of Applied Physics, KTH Royal Institute of Technology Stockholm Sweden
-2. https://ror.org/04ev03g22 Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University Stockholm Sweden
+1. Science for Life Laboratory & Swedish e-Science Research Center, Department of Applied Physics, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))
+2. Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University Stockholm Sweden ([ROR:04ev03g22](https://ror.org/04ev03g22))
 
 † Corresponding author
 
@@ -32,27 +32,206 @@ Here, we present the first cryo-EM structure of GLIC in a closed conformation wi
 
 ## Results
 
-## MSM and cryo-EM data resolve lipid-protein interactions
+### MSM and cryo-EM data resolve lipid-protein interactions
 
 We previously reported cryo-EM structures of GLIC in multiple closed states (Rovšnik et al., 2021) and demonstrated how MSM can predict shifts in the GLIC gating landscape under resting versus activating conditions (Bergh et al., 2021). In this work, we have combined new cryo-EM reconstructions with simulations newly extended to achieve better sampling of lipids, which made it possible to identify five previously uncharacterized lipid poses interacting with each subunit in the closed state of GLIC (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the molecular dynamics (MD) simulation system with GLIC (gray surface) embedded in a lipid bilayer (light blue carbon atoms) with interacting lipids highlighted (yellow carbon atoms). Lipid oxygens are shown in red; phosphorus, orange; nitrogen, dark blue. Water molecules and ions have been omitted for clarity. (B) Markov state models were used to cluster simulations conducted under resting (R) or activating (A) conditions into five states, including closed (left of the light or dark orange lines) and open (right of the light or dark blue lines). Black lines mark edges of other state clusters derived from MSM eigenvectors. Experimental structures are highlighted as white circles. (C) To characterize the stability of lipid interactions, duration times were measured in individual, unclustered, trajectories. (D) To identify lipid binding sites, lipid-occupied densities were obtained from state-clustered frames for closed (orange) and open (blue) states. (E) Further simulations were performed to test the role of residues involved in extensive lipid interactions through single residue mutations around lipid binding sites. (F) View of a manually built cryo-EM model of closed GLIC (gray) with computationally derived lipid occupancies in orange (semi-transparent). (G) Cryo-EM reconstruction of closed GLIC (gray), with partly defined non-protein densities (orange). (H) Equivalent view of a manually built cryo-EM model as in F, with newly built lipids shown as sticks (yellow, heteroatom; phosphorus, orange; oxygen, red; nitrogen, blue).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Lipid occupational densities obtained from simulation frames of open states at resting (dark blue) and activating (light blue) conditions for each of the five ion channel subunits. (B) Lipid occupational densities obtained from simulation frames of closed states at resting (red) and activating (orange) conditions for each of the five ion channel subunits. (C) Overlay of computational densities of the outer leaflet with built lipids from the cryo-EM structure (yellow sticks). (D) Overlay of computational densities in the inner leaflet with built lipids from the cryo-EM structure (yellow sticks).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative micrograph from a dataset collected on a Titan Krios, showing detergent-solubilized GLIC particles (top). Representative 2D class averages at 0.82 Å/px in a 256×256 pixel box and a 180 Å mask (bottom). (B) Overview of the cryo-EM processing pipeline for merged GLIC data. (C) FSC curves for unmasked (red) and masked (blue) map.
 
 For computational quantification of lipid interactions and binding sites, we used molecular simulations of GLIC conducted under either resting or activating conditions (Bergh et al., 2021). As described in Materials and methods, resting conditions corresponded to neutral pH with most acidic residues deprotonated; activating conditions corresponded to acidic pH with several acidic residues protonated. Both open and closed conformations were present in both conditions, albeit with different probabilities. Simulation frames previously identified as either closed or open (Figure 1B) were clustered to their corresponding state, and used to generate densities occupied by lipids that contacted the protein in at least 40% of simulation frames (Figure 1D and F). Although the stochastic nature of simulations resulted in nonidentical lipid densities associated with the five GLIC subunits, patterns of lipid association were notably symmetric (Figure 1—figure supplement 1). In order to distinguish presumed functional endpoints, snapshots classified into macrostates other than closed or open (Figure 1B, colored boundaries) were excluded from occupancy calculations, except as indicated below. In parallel, mean duration times of lipid contacts were quantified for each amino acid residue in each 1.7 µs trajectory (50 seeds × 2 conditions × 5 subunits=500 trajectories; Figure 1C). In some cases, we validated notable contacts by additional simulations in the presence of targeted mutations (Figure 1E).
 
 In our cryo-EM work, a new GLIC reconstruction was generated by merging previously reported datasets collected at pH 7, 5, and 3 (Rovšnik et al., 2021). The predominant class from the merged data corresponded to an apparently closed channel at an overall resolution of 2.9 Å, the highest resolution yet reported for GLIC in this state (Figure 1—figure supplement 2, Table 1). After building all residues, additional non-protein densities were evident in both the outer and inner leaflets of the predicted membrane region. These were further sharpened by post-processing with ResolveCryoEM (Terwilliger et al., 2020) and LocScale (Jakobi et al., 2017). From the combined observations of these cryo-EM densities (Figure 1G) and occupied densities in closed-state simulations (Figure 1F), five lipids were built in association with each of the five GLIC subunits, for a total of 25 lipid molecules (Figure 1H, Figure 1—figure supplement 1C and D).
 
+**Table 1.**
+ Cryogenic electron microscopy (cryo-EM) data collection and model refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td>FEI Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>165,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>~40</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>–2.6 to –3.8</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C5</td>
+    </tr>
+    <tr>
+      <td>Number of images</td>
+      <td>~18,982</td>
+    </tr>
+    <tr>
+      <td>Particles picked</td>
+      <td>~2.7 million</td>
+    </tr>
+    <tr>
+      <td>Particles refined</td>
+      <td>16,586</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor</td>
+      <td>–80</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen protein atoms</td>
+      <td>12,010</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1555</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B-factor (Å2)</td>
+      <td>144</td>
+    </tr>
+    <tr>
+      <td>RMSD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.584</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.84</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>6.82</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>92.6</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 Lipids built in this structure formed close contacts with GLIC residues in several membrane-proximal regions. These included an ECD motif with a characteristic proline/cysteine-rich turn, known as the Pro-loop (or Cys-loop in eukaryotes); N-terminal residues of the M1 helix; regions in and surrounding the M2-M3 loop; interfacial residues at the C-terminal end of M3; and inward- and outward-facing regions of M4 (Figure 2A). In several cases, these regions corresponded to longer-duration lipid interactions in molecular simulations (Figure 2B and C). In the inner leaflet, relatively long-lasting interactions were found at the subunit interface, involving buried residues in both the M1 and M3 helices. In the outer leaflet, longer interactions were focused around the pre-M1 and M2-M3 loops. Lateral lipid diffusion coefficients were estimated to 1.47 nm2/µs for bulk lipids and 0.68 nm2/µs for lipids of the first lipid shell (Figure 2—figure supplement 1A), which is relatively slow compared to the timescales of each trajectory (1.7 µs). However, multiple residues throughout the M1, M3, and M4 helices exchanged contacts with two to four different lipid molecules in individual simulations (Figure 2C). Furthermore, 1.7 µs root mean square displacement of lipids originally in the first lipid shell was 2.15 nm, and 3.16 nm in the bulk bilayer, indicating such exchanges are not limited to nearby lipids (Figure 2—figure supplement 1B). Thus, exchange events and diffusion estimates indicate that the duration of lipid contacts observed in this work can be at least partly attributed to interaction stabilities and not solely to sampling limitations.
 
-## Protein and lipid determinants of state-independent inner-leaflet binding
+![Figure 2.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig2-v1.jpg)
+
+**Figure 2.:** (A) Cryo-EM reconstruction of closed GLIC with distance to the interacting lipids colored according to the bar below. (B) Mean duration time of lipid-residue interactions, scaled (white-red) according to the color bar below, projected onto the closed-state GLIC structure (PDB ID: 4NPQ). For both panels, a single subunit is displayed in cartoon. (C) Secondary structure schematic for GLIC (top), mean duration time of each lipid-residue interaction (middle), and number of lipids interacting with each residue during simulations (bottom). Light gray points represent numbers from individual trajectories and black lines ensemble averages (500 trajectories).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mean square displacements for lipids initially in the first lipid shell (<4 Å from the protein surface, orange) and bulk lipids (>4 Å from the protein surface, blue), averaged over all trajectories. Lighter bands represent standard deviations. Self-diffusion coefficients for lipids of the first shell, Df , and bulk lipids, Db, are shown above each mean square displacement line. (B) Illustration of average distances traveled by lipids initially in the first lipid shell (orange) and bulk (blue) by the end of individual simulations (1.7 µs). Distances apply in all directions of the membrane plane but are here shown as radial displacements with respect to the surface of the protein.
+
+### Protein and lipid determinants of state-independent inner-leaflet binding
 
 In the inner leaflet, occupied densities from closed-state simulation snapshots were largely superimposable with those from open snapshots (Figure 3A, Figure 1—figure supplement 1), indicating lipid interactions in this region were not notably state-dependent. In both states, three types of inner-leaflet computational densities could be observed; accordingly, our cryo-EM reconstruction included three types of forked densities, which could be built as three independent lipids per subunit (Figure 3B). One density spanned the principal M3 and complementary M1 helices of neighboring subunits; one was located between M3 and M4 on the principal face of each subunit; and another spanned M1 and M4 on the complementary face of each subunit. Interfacial and principal-face inner-leaflet lipids have been resolved in previous open-state X-ray structures of GLIC (Bocquet et al., 2009) as well as other pLGIC structures (Thompson and Baenziger, 2020), while the complementary inner-leaflet GLIC site, to our knowledge, has not been reported before.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig3-v1.jpg)
+
+**Figure 3.:** (A) Computationally derived densities from the open (blue) and closed (orange) states generally agree. (B) Modeled lower leaflet lipids (yellow, stick, heteroatom coloring) from cryogenic electron microscopy (cryo-EM) densities (brown mesh). (C) Zoom-in view of the lower leaflet buried lipid interaction site at the M1-M3 subunit interface. Lipids particularly interact with residues T274 (purple) and W217 (magenta). (D) The 100 simulation frames that best fit the computational densities clustered into two distinct binding poses at the T274 binding site. When the tail with a double bond (yellow sphere) is situated in the pocket lipid heads are directed out from the channel (left panel), while a larger variety of poses are sampled when the lipid tail without a double bond occupies the site, allowing the head to enter into a crevice on the bottom of the channel, approaching the pore (right panel). The M4 helix is not shown for clarity in the top panels. (E) Number of contacts made by specific 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) lipid atoms with residue T274 in simulations at both resting and activating conditions (colors span 0 contacts, white, to 137,015 contacts, dark red). For the tail with an unsaturation, interactions are concentrated around the double-bond region while the saturated tail displays interactions interspersed along the tail. (F) Mutation of residue W217, lining this pocket, reveals shortened interactions at the T274 binding site (magenta).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Mean duration time (µs) of lipid interaction time for GLIC wild type (black, top row), T274A mutant (purple, middle row) and T274W mutant (light purple, bottom row).
 
 The lipid occupying the subunit interface accounted for some of the longest-lived interactions in the simulations, both with M1 and M3 (Figure 3C and F). A particularly frequent contact at this site in our simulations was the unsaturated C=C bond of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) (Figure 3D and E). Interestingly, lipids adopted two types of poses in this site, depending on the placement of the unsaturated tail. The double bond was frequently wedged between M3-T274 and M1-W217 at the intersubunit cleft, with the remainder of the lipid projecting out toward the membrane (Figure 3D, left). When the double bond exited the pocket, the more flexible saturated tail was able to enter the intersubunit cleft and sample a range of poses characterized by contacts distributed more broadly across the lipid tail (Figure 3E), resulting in some deeply buried poses (Figure 3D, right).
 
 To further explore the influence of specific amino acid contacts on this interfacial lipid pose, we performed additional MD simulations with mutations in targeted sites. Interestingly, the buried M3 position 274 remained the contact of longest duration, even when mutated from threonine to a smaller (alanine) or larger (tryptophan) residue (Figure 3—figure supplement 1). Conversely, removing the bulky tryptophan sidechain at position 217 (W217A) dramatically shortened lipid contacts at the more deeply buried T274 (Figure 3F). These results confirm the importance of specific sidechain identities on the protein surface (W217) in influencing lipid binding pose, whereas even long-lived contacts (T274) may be sustained more by their buried position than sidechain size.
 
-## Intrasubunit lipids and state dependence in the outer leaflet
+### Intrasubunit lipids and state dependence in the outer leaflet
 
 In the outer leaflet, closed-state cryo-EM densities enabled confident building of two lipid poses, associated with either the principal or complementary face of each subunit (Figure 4A, left). Lipids have previously been resolved in open and inhibited X-ray structures of GLIC at a complementary-face outer-leaflet site between the M1 and M4 helices (Bocquet et al., 2009; Nury et al., 2011; Basak et al., 2017; Hu et al., 2018, Figure 4A, right), comparable to that observed here in the cryo-EM closed state. To our knowledge, no lipid has been reported at any other outer-leaflet site in GLIC, though a principal-face density was built as a detergent molecule in at least one open-state X-ray structure (Hu et al., 2018, Figure 4A, right).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig4-v1.jpg)
+
+**Figure 4.:** (A) Zoom view of the outer transmembrane domain of the closed GLIC cryogenic electron microscopy (cryo-EM) structure (left, gray), showing non-protein cryo-EM densities (brown mesh) overlaid with built lipids (yellow). For comparison, the same region is shown of an open-state X-ray structure (PDB ID: 6HZW) (Hu et al., 2018) with built lipid and detergent in equivalent positions (right). Conformational changes of the M2-M3 loop, including residue P250, in channel opening are highlighted. Lipids are colored by heteroatom (phosphorus, orange; oxygen, red; nitrogen, blue). (B) Same region as in (A) showing densities occupied by lipids (>40%) in simulation frames clustered as closed (left, orange) or open (right, blue) states (top). Open-state differences include an enhanced density on the right-hand side of the intersubunit cleft, and a more deeply penetrating density in the intrasubunit cleft (Figure 4—figure supplement 1). Overlaid densities for each state represent simulations conducted under resting (dark shades) or activating (light shades) conditions, which were largely superimposable within each state. (C) Radial distribution of the lipid atoms closest to the upper pore, showing closer association of lipids in the open (light blue, dark blue) versus closed (orange, red) states. (D) Same region and cryo-EM densities (mesh) as in (A) overlaid with lipids from a few simulation frames where the lipids had the highest correlation with the closed-state computational occupancies in (B). (E) Snapshots from simulation frames that had the highest correlation with the occupancies (activating conditions) in (B). The open states are characterized by an additional lipid at the intersubunit site, interacting with the oxygen of P250. (F) The minimum distance between P250 and the closest lipid projected onto the free energy landscapes obtained from Markov state modeling. P250-lipid interactions are possible in the open state, but not in the closed state.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Side view of a single-subunit lipid density with >40% occupancy. (B) Side view of a single-subunit lipid density with >10% occupancy. (C) Top view of the full lipid density with >10% occupancy. Black arrows indicate the outer-leaflet complementary intrasubunit lipid site, while purple arrows indicate the inner-leaflet intersubunit site.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Radial distributions of nearest lipid atom from the upper pore, with a presumed pre-desensitized state displaying the highest probability of lipid tail penetration (pink), followed by open states (dark blue, light blue) and closed states (red, orange). (B) Radial distance to the –2’ gate projected onto the tIC space at activating conditions. The presumed pre-desensitized state is marked in pink. (C) Lipid densities derived from simulations with >40% occupancies, representing open (blue) and closed (orange) states. (D) Lipid densities from closed-state simulation frames with >40% occupancy (orange) and >30% (white). Built cryo-EM lipids are shown in yellow.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/86016/elife-86016-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Minimum residue-lipid distance projected onto the activating condition free energy landscape for residues Q193, S196, and P250. (B) The normalized number of residue-lipid atom contacts displayed for each of the residues in (A), with red areas highlighting atoms with close interactions with the residue. (C) Representative GLIC open and closed state simulation frames with the highest correlations between lipid positions and the computational occupancies (Figure 4B). (D) The probabilities of P250-lipid contact formation (<4 Å) and pore hydration (>20 water molecules in the pore) projected onto the main reaction coordinate describing the gating process.
 
 In closed-state simulation snapshots, outer-leaflet densities largely corresponded to our closed-state cryo-EM data, including distinct interaction sites on the complementary and principal faces (Figure 4B, left, Figure 1—figure supplement 1C). In these and other sites, occupancies and distributions were largely superimposable when calculated from Markov state models constructed independently under resting versus activating conditions (Figure 4B and C, Figure 1—figure supplement 1), indicating reproducibility of the approach and relative insensitivity of the lipid-interaction landscape to pH. However, comparing open- versus closed-state occupancies suggested state-dependent differences in lipid interactions, as described below (Figure 4B).
 
@@ -86,13 +265,17 @@ Finally, this work demonstrates the combined power of cryo-EM and MD simulations
 
 ## Materials and methods
 
-## MD simulations and analysis
+### MD simulations and analysis
 
 We analyzed previously published MSMs of GLIC gating under both resting and activating conditions (Bergh et al., 2021). Resting conditions corresponded to pH 7, at which GLIC is nonconductive in functional experiments, with all acidic residues modeled as deprotonated. Activating conditions corresponded to pH 4.6, at which GLIC is conductive and has been crystallized in an open state (Bocquet et al., 2009). These conditions were modeled by protonating a group of acidic residues (E26, E35, E67, E75, E82, D86, D88, E177, E243; H277 doubly protonated) as previously described (Nury et al., 2011). In order to sample lipid movement more extensively, each of the 100 simulations was extended to 1.7 µs, resulting in an additional 50 µs sampling compared to Bergh et al., 2021. For state classification, the additional simulation frames were projected onto the MSMs trained on the previously published simulations.
 
-Time-based measures of protein-lipid interactions, such as mean duration times and exchange of interactions, were calculated for the 100× 1.7-µs-long simulations using prolintpy (Sejdiu and Tieleman, 2021) with a 4 Å interaction cutoff. Analysis of lateral lipid diffusion in individual simulations was carried out for two disjoint sets of lipids: the first lipid shell defined as lipids with any part within 4 Å of the protein surface (∼90 lipids), and bulk lipids consisting of all other lipids (∼280 lipids). Mean square displacements of each lipid set were calculated using GROMACS 2021.5 (Abraham et al., 2015) with contributions from the protein center of mass removed. Diffusion coefficients for each set, DA, were calculated using the Einstein relation (Equation 1) by estimating the slope of the linear curve fit to the data.(1)limt→∞⟨‖ri(t)−ri(0)‖2⟩i∈A=4DAt
+Time-based measures of protein-lipid interactions, such as mean duration times and exchange of interactions, were calculated for the 100× 1.7-µs-long simulations using prolintpy (Sejdiu and Tieleman, 2021) with a 4 Å interaction cutoff. Analysis of lateral lipid diffusion in individual simulations was carried out for two disjoint sets of lipids: the first lipid shell defined as lipids with any part within 4 Å of the protein surface (∼90 lipids), and bulk lipids consisting of all other lipids (∼280 lipids). Mean square displacements of each lipid set were calculated using GROMACS 2021.5 (Abraham et al., 2015) with contributions from the protein center of mass removed. Diffusion coefficients for each set, $D_{A}$, were calculated using the Einstein relation (Equation 1) by estimating the slope of the linear curve fit to the data.
 
-where ri(t) is the coordinate of the center of mass of lipid i of set A at time t and DA is the self-diffusion coefficient.
+$$
+limt→∞⟨‖r_{i}(t)−r_{i}(0)‖^{2}⟩_{i\inA}=4D_{A}t
+$$
+
+where $r_{i}(t)$ is the coordinate of the center of mass of lipid $i$ of set $A$ at time $t$ and $D_{A}$ is the self-diffusion coefficient.
 
 To investigate state-dependent protein-lipid interactions, all trajectory frames were classified according to the five clusters in Bergh et al., 2021, resulting in 19,555 and 21,941 frames for the closed and open protonated states, respectively, and 20,632 and 13,452 frames for the closed and open deprotonated states, respectively. Occupied densities were calculated from the frames corresponding to each cluster using VMD’s volmap tool (Humphrey et al., 1996) for a selection of all whole lipids within 3 Å of the protein surface. In order to get representative snapshots of the protein-lipid interactions, we calculated global correlations between the computational densities and the selection of lipids used to derive the same densities using GROmaps (Briones et al., 2019) and extracted 100 frames with the highest correlations. To ensure that all frames would not originate from a single trajectory, a maximum of 40% of the highest-correlating frames were allowed to originate from a single trajectory.
 
@@ -100,19 +283,19 @@ To explore the effect of mutations, we ran sets of 8×1.7 µs simulations on ope
 
 Conformational analysis and visualization of protein and lipids were performed with MDAnalysis (Michaud-Agrawal et al., 2011; Gowers et al., 2016), PyEMMA 2.5.7 (Scherer et al., 2015), and VMD (Humphrey et al., 1996).
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 Experiments used in this project were previously reported in Rovšnik et al., 2021. Briefly, C43(DE3) E. coli transformed with GLIC-MBP in vector pET-20b were cultured overnight at 37°C. Cells were then inoculated 1:100 into the 2xYT media containing 100 µg/mL ampicillin and grown at 37°C until they reached OD600=0.7. Next, the cells were induced with 100 µM isopropyl-β-D-1-thiogalactopyranoside, and shaken overnight at 20°C. Membranes were harvested from cell pellets by sonication and ultracentrifugation in buffer A (300 mM NaCl, 20 mM Tris-HCl pH 7.4) supplemented with 1 mg/mL lysozyme, 20 µg/mL DNase I, 5 mM MgCl2, and protease inhibitors. At this point, the cells were either frozen or immediately solubilized in 2% n-dodecyl-β-D-maltoside (DDM). Amylose affinity resin (NEB) was used for purification of fusion protein in batch which was eluted in buffer B (buffer A with 0.02% DDM) with 2–20 mM maltose followed by size exclusion chromatography in buffer B. After overnight thrombin digestion, GLIC was isolated from its fusion partner by size exclusion in buffer B at pH 7, or in buffer B with citrate at pH 5 or 3 substituted for Tris. The purified protein was concentrated to 3–5 mg/mL by centrifugation.
 
 Quantifoil 1.2/1.3 Cu 300 mesh grids (Quantifoil Micro Tools) were used for sample preparation. The grids were glow-discharged in methanol vapor directly before 3 µL of sample was applied to them. Following a 1.5 s blot they were plunge-frozen into liquid ethane using an FEI Vitrobot Mark IV. Movies were collected on an FEI Titan Krios 300 kV microscope with a K2-Summit direct electron detector camera at nominal ×165,000 magnification, equivalent to a pixel spacing of 0.82 Å. A total dose of 40.8 e-/Å2 was used to collect 40 frames over 6 s, with defocus values ranging from –2.0 to –3.8 µm.
 
-## Image processing
+### Image processing
 
 Processing was performed through the RELION 4.0-beta-2 pipeline (Kimanius et al., 2021). Data from three different grids, at pH 7, 5, and 3, were merged and processed together. Motion correction was performed with Relion’s own implementation (Zivanov et al., 2019), followed by a defocus estimation from the motion-corrected micrographs using CtfFind4 (Rohou and Grigorieff, 2015). Following manual picking, initial 2D classification was performed to generate references for autopicking. Particles were extracted after autopicking and binned, followed by a 2D classification of the entire dataset. A smaller subset of particles was used to generate an initial model. All subsequent processing steps were done using fivefold symmetry. The initial model was used in a consecutive 3D auto-refinement and the acquired alignment parameters were used to identify and remove noisy particles through multiple rounds of pre-aligned 2D and 3D classification. The final set of particles was then refined, using the best 3D reconstruction as reference.
 
 Particle polishing and per-particle CTF parameters were estimated from the resulting reconstruction using RELION 4.0-beta-2. Global beam-tilt was estimated from the micrographs and correction applied. Micelle density was subtracted and the final 3D auto-refinement was performed using a soft mask covering the protein, followed by post-processing. Local resolution was estimated using the Relion implementation. Autosharpen map tool in PHENIX 1.19.2-4158 (Adams et al., 2010) was used to improve the visibility of peripheral lipid and detergent densities around the protein.
 
-## Model building
+### Model building
 
 The model was built from a template cryo-EM structure determined at pH 7 (PDB ID: 6ZGD; Rovšnik et al., 2021). A monomer of that model was fit to the reconstructed density and fivefold symmetry was applied with PHENIX 1.19.2-4158 through NCS restraints detected from the reconstructed cryo-EM map, to generate a complete channel. The model was incrementally adjusted in COOT 0.9.6 EL (Emsley and Cowtan, 2004) and re-refined until conventional quality metrics were optimized in agreement with the reconstruction. Model statistics are summarized in Table 1.
 

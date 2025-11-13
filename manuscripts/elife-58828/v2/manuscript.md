@@ -45,9 +45,17 @@ Here, we used sucrose gradient sedimentation and fractionation coupled with quan
 
 ## Results
 
-## A polysome-proteomics pipeline to identify factors associated with collided ribosomes
+### A polysome-proteomics pipeline to identify factors associated with collided ribosomes
 
 To develop a platform to systematically identify proteins associated with collided ribosomes, we first identified conditions that induce global ribosomal collisions. Previous studies reported that global ribosome-collisions can be induced using low, but not high, doses of translational elongation inhibitors such as cycloheximide, anisomycin and emetine (Juszkiewicz et al., 2018; Simms et al., 2017); such low doses of elongation inhibitors are expected to stall a subset of elongating ribosomes leading to widespread collisions (Figure 1A). We selected emetine because its binding to ribosomes is essentially irreversible (compared to cycloheximide and anisomycin) (Grollman, 1968; Juszkiewicz et al., 2018) and its effects would thus not be reversed during downstream extract manipulations.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of transcriptome-wide ribosomal collisions induced over a range of emetine concentrations; untreated, low-dose (1.8 µM emetine), high-dose (360 µM emetine). (B) Lysates of HCT116 cells treated with no emetine (0 µM, green), 1.8 µM emetine (orange) and 360 µM emetine (red) for 15 min were fractionated over 10-50% sucrose gradients and the resulting UV (A260) absorbance across collected fractions is shown. TCA precipitated proteins were resolved by SDS-PAGE and immunoblotted with antibodies against the indicated proteins. (n=2) (C) (Top) UV (A258) absorbance across 10-50% sucrose gradients from lysates of HCT116 cells left untreated (untreated, UT x 3, blue traces) or treated with 1.8 µM emetine (low-dose emetine, EL x 3, orange traces) for 15 min. (Bottom) Overview of quantitative polysome proteomics pipeline to monitor fold change in intensity of proteins in low-dose emetine-treated compared to untreated samples. (D) Hierarchical clustering of 4288 proteins identified across all fractions. Columns refer to log2(EL/UT) across density gradient fractions (1-10), rows represent individual proteins. *, cluster of proteins (see text) that exhibits progressive enrichment in log2(EL/UT) that track with A260 profile. (E) Volcano plots of fold change in the abundance of identified proteins in low-dose emetine-treated compared to untreated samples (log2(EL/UT), x-axis) against its statistical significance (-log10(p-value), y-axis); red: significant, fold change (EL/UT) ≥1.6, p-value ≤ 0.05. Top panel, fraction 8; bottom panel, fraction 9 (also see Figure 1—figure supplement 1). (F, G) Mean value of the ratio of relative TMT intensity (EL/UT) for indicated proteins; error bars, SD for n=3. (H) Hierarchical clustering of EDF1 and r-proteins. Columns, log2(EL/UT) across fractions; rows, individual proteins. (I) UV (A258) absorbance across 10-50% sucrose gradients from lysates of HCT116 cells untreated (blue) or treated with 1.8 µM (orange, low-dose) or 360 µM (red, high-dose) emetine for 15 min. TCA precipitated fractions were analyzed by immunoblotting (IB) for EDF1. (n=3) (J) Same as panel (I) except with 0.19 µM anisomycin treatment, 15 min (red). (n=2) (K) Same as panel (I) except samples were treated with 600J/m2 UV (magenta). (n=2) See also Figure 1—figure supplement 1 and Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) UV (A258) absorbance across 10-35% sucrose gradients from RNase A digested lysates of HCT116 cells treated with 0 µM emetine (blue trace) or 1.8 µM emetine (orange trace) for 15 min. (B) PCA plots of fractions 1-11 across the polysome profile. Symbols for fractions 1-11 colored from light to dark blue. PC1 (x-axis) and PC2 (y-axis) accounted for 82.8% and 7.8% respectively, of the contribution of the variance. (C–M) Volcano plots of the fold change in the intensity of identified proteins in low-dose emetine-treated compared to untreated samples (log2(EL/UT), x-axis) against its statistical significance (-log10(p-value), y-axis) across fractions 1-11; red: significant; gray square: fold change (EL/UT) >1.6, p-value ≤ 0.05; blue dots, 60S r-proteins; orange dots, 40S r-proteins. Candidates of interest are indicated with arrows. (N) Line plots of log2(EL/UT) for 60S (blue) and 40S r-proteins (orange) across fractions 1-10. (O) Median log2(EL/UT) for 60S (blue) and 40S r-proteins (orange) are plotted across fractions 1-10 with log2(EL/UT) of indicated proteins. (P) Mean value of the ratio of relative TMT intensity (EL/UT) in fraction 4 and fraction 5 (monosomes) for specified factors; error bars, SD for n=3.
 
 First, we optimized concentrations of emetine to maximize transcriptome-wide ribosomal collisions in HCT116 cells. We monitored collisions by treating cell lysates with ribonuclease A (RNase A) and resolving ribosomal sub-populations across 10–35% sucrose gradients (Figure 1—figure supplement 1A). In untreated cells, the majority of polysomes collapsed into monosomes upon RNase A treatment, while in cells treated with low doses of emetine (1.8 µM, 15 min), we observed a significant increase in the fraction of nuclease-resistant disomes (2°) and trisomes (3°).
 
@@ -67,7 +75,7 @@ A subset of proteins was particularly enriched (more than 2-fold in terms of fol
 
 Overall, our polysome proteomics workflow provided enrichment maps of a set of ribosome-associated proteins that serve as a platform to decipher the ribosome-interactome under basal growth conditions and upon induction of ribotoxic stress.
 
-## Characterization of EDF1 as a novel ribosome-mediated quality control factor
+### Characterization of EDF1 as a novel ribosome-mediated quality control factor
 
 We focused our attention on EDF1 because it was the most enriched protein in heavy polysome fractions of emetine-treated samples (Figure 1E, Figure 1—figure supplement 1H–1L, Figure 1—figure supplement 1O). Importantly, previous genetic studies had implicated its yeast homolog Mbf1 in preventing ribosomal frameshifting on iterated rare codon stretches known to trigger ribosome-mediated QC pathways (Wang et al., 2018). We began by looking in more detail at EDF1’s enrichment distribution in our polysome proteomics data set. We were unable to detect EDF1 on 40S, 60S and 80S fractions, but saw strong enrichment ([EL/UT]~7–10) on polysome fractions of emetine-treated samples (Figure 1G, Figure 1—figure supplement 1O). We compared the enrichment pattern of EDF1 to the cohort of r-proteins (shown in Figure 1H and Figure 1—figure supplement 1O) – these analyses indicated that EDF1 was barely present in polysomes of untreated cells ([EDF1UT, polysomes] << [EDF1EL, polysomes] resulting in high EDF1 [EL/UT] ratios).
 
@@ -77,17 +85,29 @@ Finally, we wanted to ask whether EDF1 accumulated on collided ribosomes under c
 
 Taken together, these data identify EDF1 as a highly-enriched factor that is recruited to collided ribosomes under conditions of translational distress.
 
-## Recruitment of EDF1 and GIGYF2 to collided ribosomes is ZNF598 independent
+### Recruitment of EDF1 and GIGYF2 to collided ribosomes is ZNF598 independent
 
 ZNF598 (Hel2 in yeast) is an early-acting ribosome-mediated QC factor that catalyzes site-specific ubiquitylation of eS10 and uS10 at the collided ribosomal interface (Juszkiewicz et al., 2018; Juszkiewicz and Hegde, 2017; Matsuo et al., 2017; Simms et al., 2017; Sundaramoorthy et al., 2017); while the mechanistic role of eS10 and uS10 ubiquitylation is unclear, it is widely thought to regulate the recruitment other ribosome-mediated QC factors, some of which have well-characterized ubiquitin binding domains. For example, Hel2 in yeast was shown to act upstream of the endonuclease Cue2 (N4BP2 in mammals), which contains four putative ubiquitin binding domains (including the namesake CUE for coupling of ubiquitin binding to ER degradation), and catalyzes the degradation of problematic mRNAs (D'Orazio et al., 2019; Ikeuchi et al., 2019; Simms et al., 2017). CUE domains are also present in Cue3 (ASCC2 in mammals) which is a part of the trimeric RQT complex (along with yKR023W and Slh1; known as TRIP4 and ASCC3 respectively in mammals) that promotes dissociation of collided ribosomes (Matsuo et al., 2020; Matsuo et al., 2017). While Ltn1-mediated nascent peptide degradation is compromised in yeast carrying ubiquitin binding mutants of Cue3 (Matsuo et al., 2017), whether the recruitment of the RQT complex is dependent on Hel2-mediated ubiquitination events is currently unclear (Juszkiewicz et al., 2020). Finally, in mammals, ZNF598 was previously shown to associate with the cap-dependent translational initiation repressor EIF4E2 (also called 4EHP) through its binding to the Grb10-interacting GYF protein 2 (GIGYF2) (Garzia et al., 2017; Tollenaere et al., 2019). Given the strong enrichment of GIGYF2, EIF4E2, EDF1, and other ribosome-mediated QC components on polysomes of emetine-treated cells (Figure 1F–G), we wondered whether their recruitment to collided ribosomes might be dependent on ZNF598.
 
 To test ZNF598-dependent recruitment of QC factors, we performed polysome proteomics in HCT116 parental (WT), ΔZNF598, and ZNF598-overexpression (ZNF598-OE) cell lines (Sundaramoorthy et al., 2017), without (UT, 0 µM) or with low-dose emetine treatment (EL, 1.8 µM, 15 min); in this case, we pooled fractions from 10–50% sucrose gradients corresponding to monosomes (fraction 5) and polysomes (fractions 6–10) for each sample (Figure 2A). Peptides from individual samples were then subjected to TMTpro-MS (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig2-v2.jpg)
+
+**Figure 2.:** (A) UV (A258) absorbance across 10–50% sucrose gradients from lysates of HCT116 WT, ΔZNF598 and ZNF598-overexpression (OE) cells treated with 0 µM emetine (untreated, UT, blue traces) or 1.8 µM emetine (low-dose emetine, EL, orange traces) for 15 min; fraction five isolated for monosomes; fractions 6–10 pooled for polysomes. (B) Schematic of polysome proteomics pipeline to monitor fold change in protein intensity in response to emetine treatment between ΔZNF598 or ZNF598-OE and parental (WT) HCT116 cells. (C) Ratio of relative TMT intensity of individual replicates to mean WT-UT intensity for EDF1 in untreated (blue) or low dose (1.8 µM) emetine treated (orange) samples. (D, E) Volcano plot of ratio of fold change in protein abundance in response to emetine treatment between ΔZNF598 and WT cells (D), or ZNF598-OE and WT cells (E). (F) UV (A258) absorbance across 10–50% sucrose gradients from lysates of HCT116-ΔZNF598 cells left untreated (blue) or treated with 1.8 µM emetine for 15 min (orange). TCA precipitated fractions analyzed by immunoblotting with EDF1 antibodies (n = 3). (G) Whole cell extracts from untreated (UT) or low-dose of emetine (EL, 1.8 µM, 15 min) treated cells transfected with non-targeting (SCR) or EDF1 siRNAs were analyzed by SDS-PAGE and immunoblotted (IB) with the indicated antibodies. The ubiquitin-modified proteins are indicated. Long, denotes longer exposure. (n = 3) (H) Quantification of relative TMT abundance (n = 4) of the doubly modified diGly eS10-K138/139 peptide (SAVPPGADKKAEAGAGSATEFQFR) normalized to eS10 protein abundance from polysomes of WT and ΔEDF1 cells treated with or without low dose emetine (1.8 µM) for 15 min (also see Figure 2—figure supplement 2F). Error bars denote SD for n = 4. (I) UV absorbance across 10–50% sucrose gradients from lysates of HCT116 cells treated with non-targeting (SCR) or RACK1 siRNAs with 0 µM emetine (blue) or 1.8 µM emetine treatment for 15 min (orange). TCA precipitated fractions were analyzed by immunoblotting with EDF1, RACK1, or RPL10A antibodies (n = 3). Total lysates (inset) analyzed for RACK1 depletion after siRNA treatment using RACK1 antibody. See also Figure 2—figure supplement 1, Figure 2—figure supplement 2, Figure 2—source data 1 and Figure 2—figure supplement 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Volcano plots of fold change in the intensity of proteins identified in pooled polysomes of low-dose emetine-treated HCT116 WT cells compared to untreated cells. Gray square: p-value cutoff ≤ 0.05; 60S and 40S r-proteins denoted in blue and orange respectively. (B–C) Volcano plots of log2(EL/UT) against -log10(p-value) for ΔZNF598 cells (B), and ZNF598-OE cells (C). Candidate proteins of interest are indicated with arrows.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Ubiquitin remnant proteomic profiling of HEK293T cells treated with 0 µM (UT) or 1.8 µM (EL) emetine for 15 min. Volcano plot of fold change in abundance of identified peptides (log2(EL/UT), x-axis) against -log10(p-value), y-axis. Inset: cartoon of collided ribosomes showing uS3, uS10, eS10 and eS31 decorating the disome interface. (also see Figure 2—figure supplement 2—source data 1). (B) (Top) UV (A258) absorbance across 10-50% sucrose gradients from lysates of HEK293T cells transfected with non-targeting (SCR) or EDF1 siRNAs, and treated with 0 µM (UT) or 1.8 µM (EL) emetine for 15 min; (bottom) Immunoblots of monosomes or pooled polysomes showing eS10 ubiquitylation in untreated (UT) or 1.8 µM emetine-treated (EL) samples. Long, indicates longer exposure. (n=2). (C) Growth curves at 37°C. At each time point, cells were trypsinized from three plates, pooled, and three measurements were taken for each condition. Result shown is quantified for one experiment representative of ≥ 3 independent observations. (D) Representative immunoblots from whole cell lysates demonstrating loss of EDF1 protein in ΔEDF1 cells, and loss of EDF1 and ZNF598 proteins in ΔEDF1ΔZNF598 cells. *, non-specific band observed with ZNF598 antibody in whole cell lysates. (E) HEK293 Flp-In T-REx WT and ΔEDF1 cells were left untreated or subjected to UV irradiation (0.02 J/cm2) and allowed to recover for 1 h. Cell extracts were collected, analyzed by SDS-PAGE and immunoblotted for EDF1, eS10 and uS10. (F) MS/MS spectrum annotation of quantified eS10 peptide modified with K-GG at both K138 and K139 positions (SAVPPGADKKAEAGAGSATEFQFR). Peptide sequence (top) marked with the locations of matched fragment ions, the annotated mass spectrum (middle), and visualization of mass error in parts-per-million for all matched fragment ions (bottom). (G) Effect of EDF1 deletion on the emetine-induced recruitment of ZNF598 to polysomes of WT and ΔEDF1 cells treated with or without low dose emetine (1.8 µM) for 15 min. Unique identified and quantified peptides for ZNF598 are shown. Error bars, SD for n=4. Dashed line at 1 indicates no abundance change in emetine-dependent recruitment to polysomes between WT and ΔEDF1 cells. (H) Immunoblots of whole cell extracts showing levels of total and phospho-p38 induced by low-dose emetine treatment (EL, 1.8 µM, 15 min) compared to untreated cells (UT) in HEK293T cells transfected with non-targeting (SCR) or EDF1 siRNAs (n=2).
+
 Surprisingly, we noticed that the recruitment of most proteins, including known ribosome-mediated QC factors, to emetine-dependent collided ribosomes occurred in the absence of ZNF598 (log2[ΔZNF598(EL/UT)] > 0, Figure 2—figure supplement 1B). Among these, EDF1 was the most enriched protein accumulating on polysomes of emetine-treated WT, ΔZNF598, and ZNF598-OE cell lines (Figure 2C, Figure 2—figure supplement 1A-C, Figure 2—source data 1). To comprehensively identify factors whose recruitment to collided ribosomes depended on ZNF598, we plotted the ratio of the fold change in protein recruitment in response to emetine treatment between ΔZNF598 and WT cells against their statistical significance (Figure 2D, Figure 2—source data 1). Proteins whose emetine-dependent polysomal abundance are depleted in ΔZNF598 lines should have an enrichment value less than zero (log2[{ΔZNF598(EL/UT)}/{WT(EL/UT)}] < 0); strikingly, under these conditions we see few proteins whose recruitment exhibits strong dependence on ZNF598 (Figure 2D, top left quadrant). As a control, we found that r-proteins were enriched in emetine-treated polysome fractions of ΔZNF598 cells (enrichment value > 0), and this effect was largely reversed upon over-expression of ZNF598 (compare r-proteins in Figure 2D to Figure 2E); these data are consistent with previous results suggesting that clearance of stalled ribosomes is compromised in the absence of ZNF598 (Juszkiewicz et al., 2018). Using this analysis, we found that the enrichment of EDF1 to collided ribosomes was unperturbed in the absence of ZNF598, or upon ZNF598 overexpression (Figure 2D-E, enrichment value ≥ 0). We further validated these results by immunoblot analyses of fractionated lysates from untreated or low dose emetine treated (1.8 µM, 15 min) ΔZNF598 cells, which showed emetine-dependent accumulation of EDF1 on polysomes (Figure 2F). Taken together, our results demonstrate that EDF1 recruitment to collided ribosomes is ZNF598 independent.
 
 Interestingly, our enrichment analysis also revealed that the recruitment of known ribosome-mediated QC factors (such as GIGYF2, TRIP4, ASCC3, PELO, HBS1L and N4BP2), some with known Ub-binding domains, to collided ribosomes was largely unperturbed (enrichment value ≥ 0) in ΔZNF598 and ZNF598-OE cells (Figure 2D-E, Figure 2—source data 1). Taken together, these results suggest that while ZNF598 plays an important role in the recognition of ribosomal stalls (Juszkiewicz et al., 2018; Juszkiewicz and Hegde, 2017; Simms et al., 2017; Sundaramoorthy et al., 2017), the recruitment of many known QC factors to collided ribosomes is not dependent on ZNF598.
 
-## Loss of EDF1 decreases ZNF598-mediated ubiquitylation of eS10 and uS10
+### Loss of EDF1 decreases ZNF598-mediated ubiquitylation of eS10 and uS10
 
 As mentioned previously, a key molecular signature of colliding ribosomes is the ubiquitylation of the r-proteins eS10 and uS10 by ZNF598 (Juszkiewicz and Hegde, 2017; Simms et al., 2017; Sundaramoorthy et al., 2017). Since the recruitment of EDF1 to collided ribosomes does not depend on ZNF598 (Figure 2C–F), we instead wondered whether loss of EDF1 impairs ZNF598-mediated ubiquitylation of r-proteins.
 
@@ -101,15 +121,27 @@ As a final approach to characterize eS10 ubiquitylation, we quantified the level
 
 Recent studies have shown that the MAPKKK ZAKα recognizes collided ribosomes to trigger the stress-activated signaling cascade by phosphorylation of p38 and JNKs (Wu et al., 2020). We find that compared to WT cells, the emetine-stimulated increase in phospho-p38 level was reduced upon partial depletion of EDF1 with siRNAs (Figure 2—figure supplement 2H).
 
-## Recruitment of EDF1 to collided ribosomes is RACK1 dependent
+### Recruitment of EDF1 to collided ribosomes is RACK1 dependent
 
 Since recruitment of EDF1 to collided ribosomes is ZNF598 independent, we searched for factors that might enable EDF1 to recognize collided ribosomes. We hypothesized that the unique interface formed between collided disomes may contain binding determinants that enable EDF1 recruitment. Two inter-ribosomal interfaces are formed when ribosomes collide (Ikeuchi et al., 2019; Juszkiewicz et al., 2018). Interface one is defined by eS1, uS11, eS26 and eS28 of the stalled ribosome and uS4 of the collided ribosome, and interface two is decorated by RACK1 of the stalled ribosome and eS10, uS3, uS10 of the collided ribosome respectively (Ikeuchi et al., 2019; Juszkiewicz et al., 2018). We focused our attention on RACK1 because proximity-labeling proteomic analysis of the yeast homolog Asc1 identified Mbf1 as a putative Asc1-interacting protein (Opitz et al., 2017). Additionally, Asc1 was shown to cooperate with Mbf1 to prevent +1 frameshifting of ribosomes on problematic codon stretches (Wang et al., 2018; Wolf and Grayhack, 2015).
 
 HCT116 cells were treated with non-targeting (SCR) or RACK1-specific siRNAs, without or with low-dose emetine (1.8 µM, 15 min), lysed and resolved across 10–50% sucrose gradients. Treatment with RACK1-specific siRNAs did not distort the distribution of polysomes as shown by the A260 traces or RPL10A distribution across the non-targeting (SCR) and RACK1i sucrose gradients (Figure 2I). However, emetine-dependent EDF1 accumulation on polysomes was compromised in the RACK1 depleted cells (Figure 2I). These results indicate that RACK1 either directly or through its role in stabilizing the collision interface is critical for EDF1 recruitment.
 
-## Structure and recruitment of EDF1 and Mbf1 to collided ribosomes
+### Structure and recruitment of EDF1 and Mbf1 to collided ribosomes
 
 To understand at a molecular level how EDF1 associates with ribosomes, we performed structural analysis of affinity purified EDF1•ribosome complexes using cryo-EM. To that end, we overexpressed N-terminally FLAG-tagged EDF1 in HEK293 cells and purified EDF1-bound complexes. Notably, despite the enrichment of EDF1 in polysomes following low-dose emetine treatment, we failed to purify significant amounts of EDF1•ribosomal complexes from this fraction, possibly due to masking of the tag. However, we did successfully purify EDF1•80S ribosome complexes which were subjected to cryo-EM analysis (Figure 3—figure supplement 1A). After 3D classification (Figure 3—figure supplement 2A), the structure of a non-rotated ribosomal complex showing extra density near the mRNA entry tunnel and in the ribosomal A site was determined at an average resolution of 2.9 Å (Figure 3A, Figure 3—figure supplement 1B, Figure 3—figure supplement 1D–1E top panels). Whereas the density in the A site was identified as the cell growth-regulating nucleolar protein LYAR, the density near the mRNA entry channel belonged to EDF1, for which a near complete molecular model was built from residues Ser-24 to Arg-133 (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overview of EM map and models of the 40S subunit of human non-rotated EDF1-bound ribosome. Selected r-proteins and EDF1 (orange) are shown as models in the EDF1•80S map (PDB: 6ZVH). (B) Overview of Mbf1 (violet red) bound to the yeast rotated ribosome with hybrid tRNAs. (PDB: 6ZVI). (C) Alignment of EDF1 and Mbf1 sequences colored by conservation and domain architecture of EDF1. (D) Overall structure of ribosome-bound EDF1 and Mbf1 showing a highly similar fold and binding mode with the C-terminus sandwiched between helix 16 (h16) and helix 33 (h33) of the 18S rRNA and the r-protein uS3 close to the mRNA entry channel, and the N-terminus forming a helix at the base of helix 16. (E) EDF1 and Mbf1 interact with rRNA helix 18 (h18), displacing the C-terminus of eS30. Binding of EDF1 and Mbf1 shifts helix 16 towards the ribosome, resulting in a clash of the canonical eS30 position with the new position of helix 16. See also Figure 3—figure supplement 1, Figure 3—figure supplement 2 and Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) SDS-PAGE of the 3xFLAG-3C-EDF1 immunoprecipitation. (B) Cryo-EM map of the EDF1-ribosome. (C) Cryo-EM map of the Mbf1-ribosome. (D) Map of the final EDF1- and Mbf1-ribosome, filtered and colored according to local resolution (E) Fourier shell correlation (FSC) curves corresponding to the final volumes shown in (D). FSC curves of the final cryo-EM density maps (black), indicating average resolutions (FSC = 0.143, dashed black line), and FSC curves calculated between the cryo-EM density map and the final model (purple) as calculated by Relion.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) In silico classification scheme. Intermediate densities are shown with the ribosome in grey and masked regions are colored. For details see experimental methods section for data processing.
 
 Since our tagged EDF1 immunoprecipitation did not yield actively elongating polysome-bound EDF1 complexes, we took advantage of the well described collision-inducing SDD1 mRNA in yeast, which allows for affinity purification of stalled polysomes from programmed cell-free extracts (Ikeuchi et al., 2019; Matsuo et al., 2020). In stalled trisomes isolated from this system, we observed Mbf1 occupying the same position on the ribosome at an average resolution of 3.2 Å (Figure 3B–D, Figure 3—figure supplement 1C, Figure 3—figure supplement 1D–1E bottom panels, Figure 3—figure supplement 2B). Although Mbf1 was found associated with the collided ribosome which adopted a rotated state with hybrid tRNAs in the A/P and P/E positions (Figure 3B, Figure 3—figure supplement 2B), EDF1 and Mbf1 displayed identical structures and modes of binding (Figure 3C–D). These observations are consistent with the fact that the conformation of the 40S subunit itself is indistinguishable between the non-rotated state of the EDF1 complex and the rotated state of the Mbf1 complex (Matsuo et al., 2020; Tesina et al., 2020).
 
@@ -123,17 +155,37 @@ Interestingly, the stretch linking the N-terminal alpha-helix of EDF1/Mbf1 on h1
 
 Notably, when analysing the Mbf1 occupancy of individual ribosomes we observed that Mbf1 was exclusively bound to collided ribosomes found in the rotated state (Figure 4E, Figure 3—figure supplement 2B). We did not find Mbf1 in the first stalled ribosome, which in the case of the SDD1 mRNA, is found in a non-rotated canonical post state. Moreover, by analysis of neighboring ribosomes, we found that Mbf1 is present in both the first and the second collided ribosome, with a slight preference for the second one (Figure 4E, Figure 3—figure supplement 2B). We conclude that EDF1 and Mbf1 are more likely to be recruited to trailing ribosomes following the initial stalling event. The abnormally long-lived rotated state of the collided ribosome, which is unable to complete the tRNA-mRNA translocation step, may serve as a molecular cue for Mbf1/EDF1 recruitment. We speculate that the highly conserved N-terminus of Mbf1/EDF1, which is delocalized in our structures, may play a role in sensing neighboring ribosomes after collision and thus in specific recruitment to colliding ribosomes.
 
-## Defining the EDF1-interactome under normal and ribotoxic-stress conditions
+### Defining the EDF1-interactome under normal and ribotoxic-stress conditions
 
 In light of its critical binding site on colliding ribosomes and its general impact on reactions critical to cellular signaling, we wondered whether EDF1 might act as a molecular scaffold to recruit other QC factors to the disome interface. To define the interactome of EDF1 under basal growth conditions and under conditions that induce ribotoxic stress, we performed both traditional immunoaffinity purification and proximity-based labeling (BioID) approaches (Roux et al., 2013; Zuzow et al., 2018). To avoid artefacts associated with protein overexpression, and in light of the natural high abundance of EDF1 (~105 copies per cell, Wiśniewski et al., 2014), we first immunoaffinity purified endogenous EDF1 from untreated (UT) HEK293T cells or those treated with low dose emetine (EL; 1.8 µM, 15 min) using Protein A coupled EDF1-antibody (Figure 5A and Figure 5—figure supplement 1A). MS analysis of IP eluates identified TCOF1 along with the translational repressors GIGYF2 and EIF4E2 as strong EDF1-interacting proteins (Figure 5A, Figure 5—source data 1). Other ribosome-mediated QC factors were also identified including ZNF598 and components of the RQT complex, as well as kinases (mTOR, casein kinase II (CKII), and ribosomal protein S6 kinase (RPS6K)) involved in the phosphorylation of r-proteins (Figure 5A, Figure 5—source data 1). Interestingly, we find that an interaction between EDF1 and N4BP2 is greatly enhanced under conditions that induce ribosomal collisions (1.8 µM emetine) (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig5-v2.jpg)
+
+**Figure 5.:** (A) Immunoaffinity purification of endogenous EDF1 from untreated (UT) or low dose emetine treated (EL; 1.8 µM, 15 min) HEK293T cells using Protein A-coupled EDF1-antibody. Scatter plot showing log2(LFQ) intensity of proteins identified under EL (y-axis) and UT (x-axis) conditions. (B) BioID analyses of BirA*-EDF1 with and without doxycycline induction. Volcano plot of fold change in protein LFQ intensity with or without BirA*-EDF1 expression induction by doxycycline (dox). Selected candidates highlighted in red. A cutoff of (+dox/-dox) ≥16 fold and p-value ≤ 0.01 was set to eliminate known BioID contaminants. See also Figure 5—figure supplement 1, Figure 5—source data 1, and Figure 5—source data 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic for immunoaffinity purification of endogenous EDF1 from untreated (UT) or low dose emetine treated (EL; 1.8 µM, 15 min) HEK293T cells. (B) BioID analyses of BirA*-EDF1 with and without doxycycline induction for 16 hr. Hierarchical clustering of proteins identified with or without BirA*-EDF1 induction. Columns refer to LFQ intensity of replicates +/- doxycycline induction, rows represent individual proteins. (C) Volcano plot of fold change in protein intensity with or without BirA*-EDF1 induction against -log10(p-value). Exemplary interactors not depicted in Figure 5B now highlighted in red.
 
 We complemented our AP-MS studies with BioID analyses using stable inducible HEK293 cell lines expressing mutant BirA (R118G) tagged to EDF1 (BirA*-EDF1) (Samavarchi-Tehrani et al., 2020). We compared the fold change in the intensity of identified proteins with or without BirA*-EDF1 induction against their statistical significance (Figure 5B, Figure 5—figure supplement 1B–1C, Figure 5—source data 2). Consistent with results obtained from the EDF1 affinity purification, our EDF1-BioID analysis showed that the translational repressors GIGYF2•EIF4E2 along with TCOF1 were among the most significantly enriched proteins (Figure 5B). Other notable interactors of EDF1 including components of the ribosome-mediated and mRNA QC machinery are highlighted in Figure 5—figure supplement 1C.
 
 Overall, we mapped the EDF1 interactome in cells using complementary approaches which revealed a strong overlap in the top candidates including GIGYF2, EIF4E2, TCOF1, and known components of the ribosome-mediated QC machinery.
 
-## EDF1 recruits GIGYF2•EIF4E2 to collided ribosomes
+### EDF1 recruits GIGYF2•EIF4E2 to collided ribosomes
 
 Our affinity purification and BioID data suggested that EDF1 interacts, directly or indirectly, with the translational repressors GIGYF2 and EIF4E2. To get a comprehensive overview of factors whose recruitment to collided ribosomes depends on EDF1, we set up a polysome proteomics experiment in HEK293 Flp-In T-REx WT and ΔEDF1 cell lines. As previously, cells from WT or ΔEDF1 lines were left untreated (UT x four replicates) or treated with low-dose emetine (EL x four replicates, 1.8 µM, 15 min), lysates were quantified and resolved across 10–50% sucrose gradients (Figure 6A). Light (fractions 6–8) and heavy (fractions 9–11) polysomal fractions were pooled separately to distinguish between factors that differentially migrate within these pools. Digested peptides from individual samples from each set were labeled and subjected to TMTpro-MS analyses (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig6-v2.jpg)
+
+**Figure 6.:** (A) (Left) UV (A258) absorbance across 10–50% sucrose gradients from lysates of HEK293 Flp-In TREx WT and ΔEDF1 cells left untreated (UT, blue trace) or treated with 1.8 µM emetine (EL, orange trace) for 15 min; fractions 6–8 pooled for light polysomes; fractions 9–11 pooled for heavy polysomes (n = 4). (Right) Schematic of polysome proteomics pipeline to monitor relative change in protein intensity in response to emetine treatment in light and heavy polysomes between WT and ΔEDF1 cells. (B, C) Volcano plot of log2 indicated ratio (x-axis) against -log10(p-value) (y-axis) for light (B) or heavy (B) polysomes. (D) UV (A258) absorbance across 10–50% sucrose gradients from lysates of HEK293-Flp-In TREx WT and ΔEDF1 cells left untreated (UT, blue trace) or treated with 1.8 µM emetine (EL, orange trace) for 15 min; TCA precipitated proteins from individual fractions were resolved by SDS-PAGE and analyzed by immunoblotting using GIGYF2 and uS3 antibodies. (n = 2) (E) Relative GFP intensity from HEK293 Flp-In TREx WT, ΔEDF1, ΔZNF598, and ΔEDF1ΔZNF598 cells transfected with the GFP-(KAAA)20-RFP stalling reporter without (white bars, non-targeting siRNA, SCRi) or with siRNA-mediated depletion of GIGYF2 and EIF4E2 (green bars; GIGYF2i•EIF4E2i). Error bars denote SD for n = 3. p-values were determined by one-way ANOVA and Tukey’s post hoc correction for multiple comparisons. See also Figure 6—figure supplement 1, Figure 6—figure supplement 2 and Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Volcano plot of the fold change in the intensity of proteins identified in light polysomes of low-dose emetine-treated HEK293-Flp-In TREx WT cells compared to untreated cells (log2(EL/UT), x-axis) against -log10(p-value) (y-axis). (B) Volcano plot of log2(EL/UT) against -log10(p-value) for light polysomes in HEK293-Flp-In TREx ΔEDF1 cells. (C) Volcano plot of log2(EL/UT) against -log10(p-value) for heavy polysomes in HEK293-Flp-In TREx WT cells. (D) Volcano plots of log2(EL/UT) against -log10(p-value) for heavy polysomes in HEK293-Flp-In TREx ΔEDF1 cells.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Relative GFP intensity from HEK293-Flp-In TREx WT, GIGYF2i•EIF4E2i, ΔEDF1 and ΔEDF1 cell lines rescued with C-terminal Strep II-tagged full-length EDF1 (ΔEDF1:EDF1FL), or an N-terminal fragment of EDF1 (ΔEDF1:EDF1N-term, amino acids 1–74), or a C-terminal fragment of EDF1 (ΔEDF1:EDF1C-term, amino acids 73–148). Cells were transfected with the GFP-(KAAA)20-RFP stalling reporter. Error bars denote SD for n = 3. p-values were determined by one-way ANOVA and Tukey’s post hoc correction for multiple comparisons. (B) Whole cell extracts from ΔEDF1:EDF1FL, ΔEDF1:EDF1N-term and ΔEDF1:EDF1C-term cells were analyzed by SDS-PAGE and immunoblotted with a Strep II antibody. (C) 10–50% sucrose gradients from lysates of ΔEDF1:EDF1FL, ΔEDF1:EDF1N-term and ΔEDF1:EDF1C-term cells untreated (UT) or treated with low-dose emetine (EL, 1.8 µM, 15 min) were fractionated and analyzed by immunoblotting with a Strep II antibody. (D) Relative RFP:GFP ratio from HEK293 Flp-In TREx WT, ΔEDF1, ΔZNF598, and ΔEDF1ΔZNF598 cells transfected with the GFP-(KAAA)20-RFP stalling reporter without (white bars, non-targeting siRNA, SCRi) or with siRNA-mediated depletion of GIGYF2 and EIF4E2 (green bars; GIGYF2i•EIF4E2i). Error bars denote SD for n = 3. p-values were determined by one-way ANOVA and Tukey’s post hoc correction for multiple comparisons (related to Figure 6E). (E) The corresponding RFP:GFP ratios for the experiment described in A. Error bars, SD for n = 3. p-values were determined by one-way ANOVA and Tukey’s post hoc correction for multiple comparisons. (F) Relative GFP intensity from HEK293 Flp-In TREx WT, ΔEDF1, ΔZNF598, and ΔEDF1ΔZNF598 cells transfected with the GFP-RFP reporter with no intermediate stalling sequence [(KAAA)0 reporter] without (white bars, non-targeting siRNA, SCRi) or with siRNA-mediated depletion of GIGYF2 and EIF4E2 (green bars; GIGYF2i•EIF4E2i). Error bars represent SD for n = 3. p-values were determined by one-way ANOVA and Tukey’s post hoc correction for multiple comparisons. (G) The corresponding RFP:GFP ratios are depicted for the experiment described in F. (H) Relative Renilla luciferase (RLuc) intensity from HEK293 Flp-In TREx WT, ΔEDF1, ΔZNF598 cells, and ΔEDF1ΔZNF598 cells transfected with the RLuc-2A-XBP1u-2A-FLuc stalling reporter or a control reporter with no intervening XBP1u stalling sequence. Values for individual biological replicates (n = 5 or 6) plotted with median represented as black bar. p-values were determined by one-way ANOVA and Tukey’s post hoc correction for multiple comparisons. (I) The corresponding FLuc: RLuc ratios for the experiment described in H.
 
 As seen with HCT116 cells (Figure 1 and Figure 2), EDF1 was one of the most enriched proteins in light and heavy polysome fractions of emetine-treated HEK293 WT cells, but was missing in the ΔEDF1 cell line (compare Figure 6—figure supplement 1A and B for light polysomes, and Figure 6—figure supplement 1C and D for heavy polysomes). EIF5B, LRRFIP2 and FUS were also enriched to varying degrees on light and heavy polysomes of emetine-treated samples (Figure 6—figure supplement 1A–1D). As before, we captured significant enrichment of GIGYF2 and EIF4E2 in heavy but not light polysomal fractions of emetine-treated WT samples (compare Figure 6—figure supplement 1A and C). These data suggest that translation initiation repressors are predominantly recruited to defective mRNAs with longer queues of collided ribosomes.
 
@@ -147,11 +199,19 @@ If EDF1 recruits GIGYF2•EIF4E2 to collided ribosomes, then its depletion shoul
 
 In an orthogonal set of reporter experiments, loss of EDF1, but not ZNF598, led to an increase in the bulk translation output (as measured by a significant increase in Renilla luciferase (RLuc) activity) on a reporter with an unspliced Xbp1 mRNA (Xbp1u) peptide-pausing sequence (Shanmuganathan et al., 2019; Yanagitani et al., 2011) previously reported to trigger ribosome collisions (Han et al., 2020; Figure 6—figure supplement 2H for relative RLuc activity, and Figure 6—figure supplement 2I for Fluc:RLuc ratios). Taken together, these data establish that EDF1 recruits the translational repressors GIGYF2•EIF4E2 to multiple types of problematic mRNA sequences.
 
-## EDF1 is critical for JUN-mediated transcriptional response to ribosomal collisions
+### EDF1 is critical for JUN-mediated transcriptional response to ribosomal collisions
 
 Previous studies identified EDF1 as an evolutionarily conserved transcriptional coactivator that initiates transcriptional reprogramming in response to cellular stresses (Baltz et al., 2012; Jaimes-Miranda and Chávez Montes, 2020; Jindra et al., 2004; Kabe et al., 1999; Takemaru et al., 1998; Takemaru et al., 1997). For example, in flies and in mammals, EDF1 was shown to bind the protein product of the jun locus, JUN/AP-1, to mount a transcriptional response during oxidative stress (Jindra et al., 2004; Miotto and Struhl, 2006). Importantly, while there are many JUN transcriptional targets that respond to various JUN/AP-1 complexes, a well-characterized target is jun itself which is regulated through a positive feedback loop to mount a sustained cellular response (Angel et al., 1988). In light of these connections, we wondered whether an EDF1•JUN nexus is involved in coordinating a transcriptional response in response to collision-inducing stresses.
 
 First, to examine JUN activation in response to collision-inducing stresses, cells were treated with emetine to induce ribosomal collisions. As anticipated, we observed maximal ubiquitylation of eS10 at intermediate but not high concentrations of emetine (Figure 7A). Additionally, we observed that the phosphorylation of JUN (at Ser 73) phenocopied the eS10 ubiquitylation dose-response, consistent with a model where JUN is activated in response to ribosomal collisions (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig7-v2.jpg)
+
+**Figure 7.:** (A) Immunoblots of HEK293-Flp-In TREx WT cell extracts showing phosphorylation of JUN at serine 73, and ubiquitylation of eS10 in response to emetine treatment at the indicated concentrations for 15 min. (n = 2) (B) Schematic for RNA sequencing analyses of HEK293-Flp-In TREx WT and ΔEDF1 treated with 0 µM (UT) and 1.8 µM emetine for 30 (EL30) and 120 min (EL120). (C) Volcano plots of fold change of normalized transcript reads in emetine-treated compared to untreated samples for HEK293-Flp-In TREx WT cells at 30 (left) and 120 (right) minutes. (D) Scatter plot of log2(EL/UT) fold change of normalized transcript reads from emetine-treated HEK293-Flp-In TREx WT cells after 30 min (x-axis) or 120 min (y-axis). (E) Volcano plots of the ratio of fold change in normalized transcript abundance in response to emetine treatment between ΔEDF1 and WT cells at 30 (left) and 120 (right) minutes. (F) Normalized transcript reads of selected genes for untreated (UT) and 1.8 µM emetine treated samples at 30 (EL30) and 120 min (EL120) in WT (filled circle) and ΔEDF1 (open circle) cell lines. (G) Cartoon showing the multifaceted roles of EDF1 in coordinating different arms of the ribosome-mediated QC pathway and promoting a JUN-centric transcriptional program in response to ribosome collisions. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/58828/elife-58828-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Volcano plot of fold change in normalized transcript abundance in untreated ΔEDF1 and WT cells (log2[{ΔEDF1-UT}/{WT-UT}], x-axis) against -log10(p-value) (y-axis). (B) Scatter plots of fold change in normalized transcript abundance in response to emetine treatment between WT (log2[WT(EL/UT)], x-axis) and ΔEDF1 (log2[ΔEDF1(EL/UT)], y-axis) cells at 30 min (left) and at 120 min (right). (C) Overlap between genes upregulated in response to emetine treatment at 30 (left) and 120 min (right) in HEK293-Flp-In TREx WT compared to HEK293-Flp-In TREx ΔEDF1 cells. p-values computed using hypergeometric test. (D) Comparison of relative expression profiles of the indicated proteins across the proteome of 375 cell lines from the Cancer Cell Line Encyclopedia (Nusinow et al., 2020). Data were sourced from https://depmap.org. Pearson’s correlation coefficients (r) and two-tailed p-values for the indicated comparisons are reported.
 
 We next evaluated the transcriptional response of cells treated with low doses of emetine, and the dependence of this response on EDF1. RNA-sequencing libraries (in triplicate) were prepared from parental (WT) or ΔEDF1 HEK293-Flp-In TREx cells, untreated (UT) or treated (EL) with low-dose emetine (1.8 µM) for 30 min and 120 min (Figure 7B). The resulting libraries were analyzed by differential expression analyses using the DESeq2 pipeline (Love et al., 2014). First, we plotted the fold change of normalized transcript reads in emetine-treated compared to untreated samples against its statistical significance for WT cells, and looked for transcripts differentially regulated at 30 and 120 min (Figure 7C–D). We observed a striking and progressive increase in the transcript abundance of JUN following low-dose emetine treatment at 30 and 120 min by ~4 and~8 fold respectively (Figure 7C–D, Figure 7F). We also observed increased expression of other transcripts including FOS, EGR1, ATF3, TXNIP and DUSP1, all transcriptional and signaling regulators that function in diverse stress response pathways (Figure 7C–D; Abraham and Clark, 2006; Chen et al., 1996; p. 3; Chiu et al., 1988; Halazonetis et al., 1988; Khachigian et al., 1996, p. 1; Slack et al., 2001). Our initial findings are consistent with a model where ribosomal collisions activate a sustained transcriptional stress response program, with JUN featuring prominently among the upregulated genes.
 
@@ -181,158 +241,833 @@ Overall, these data reveal a new paradigm for ribotoxic stress responses that or
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p38 (Thr180/Tyr182) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #4511S RRID:AB_2139682</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p38 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #9212 RRID:AB_330713</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (13E5)-HRP conjugate (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #5125 RRID:AB_1903890</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASCC3 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat #A304-014A RRID:AB_2620362</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZNF598 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat #A305-108A RRID:AB_2631503</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EDF1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #ab174651</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RACK1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #5432 RRID:AB_10705522</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat #A8592 RRID:AB_439702</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPL10A (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat #A305-062A RRID:AB_2631457</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPS10 (eS10) (rabbit polyclonal)</td>
+      <td>LS Bio</td>
+      <td>Cat #LS-C335612-20</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPS20 (uS10) (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #ab133776 RRID:AB_2714148</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPS3 (uS3) (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #ab140688</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GIGYF2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #Sc-393918</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EIF4E2 (mouse monoclonal)</td>
+      <td>Novus Biological</td>
+      <td>Cat #H00009470-M01 RRID:AB_1505961</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-c-Jun (Ser73) (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat #9164 RRID:AB_330892</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Jun (60A8) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat #9165 RRID:AB_2130165</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Strep II (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat #NBP2-41075</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-rabbit IgG-HRP (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #sc-2357 RRID:AB_628497</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG2a-HRP (goat polyclonal)</td>
+      <td>Jackson Immuno Research Laboratories Inc</td>
+      <td>Cat #115-035-2006</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Diglycyl Lysine (Clone GX41) antibody (mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #MABS27 RRID:AB_10807824</td>
+      <td>Ubiquitin remnant immunoaffinity profiling</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRISPR: EDF1 sgRNA exon 1</td>
+      <td>GPP, Broad Institute</td>
+      <td>EDF1 sgRNA exon 1</td>
+      <td>5’-GAGCGACTGGGACACGGTGA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRISPR: EDF1 sgRNA exon 3</td>
+      <td>GPP, Broad Institute</td>
+      <td>EDF1 sgRNA exon 3</td>
+      <td>5’-ACATTCTATTACCAAGAACA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: ON-TARGETplus non-targeting control pool siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #D-001810-01-50</td>
+      <td>SMARTPool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: ON-TARGETplus RACK1 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-006876-00-0020</td>
+      <td>SMARTPool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: ON-TARGETplus EDF1 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-009697-00-0020</td>
+      <td>SMARTPool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: ON-TARGETplus Human GIGYF2 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-013918-01-0020</td>
+      <td>SMARTPool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: ON-TARGETplus Human EIF4E2 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-019870-01-0020</td>
+      <td>SMARTPool</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-GFP-2A-VHP-(KAAA)20-2A-ChFP</td>
+      <td>Juszkiewicz and Hegde, 2017</td>
+      <td>Addgene Cat #105688</td>
+      <td>Stalling reporter based on poly(A) sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-GFP-2A-VHP-2A-ChFP (linker control)</td>
+      <td>Juszkiewicz and Hegde, 2017</td>
+      <td>Addgene Cat #105686</td>
+      <td>Linker control without the internal poly(A) stalling sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psiCHECK2-Renilla-2A-3xFLAG-MsXbp1u-2A-Firefly</td>
+      <td>Han et al., 2020</td>
+      <td>N/A</td>
+      <td>Stalling reporter based on Xbp1u peptide stalling sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psiCHECK2-Renilla-2A-3xFLAG-2A-Firefly (linker control)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Linker control without the internal Xbp1u stalling sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOG44 Flp-recombinase expression vector</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #V600520</td>
+      <td>Expression of Flp recombinase in mammalian cells when co-transfected with pcDNA5/FRT plasmid.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5-FRT-tetO-FLAG-BirA*-EDF1</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Human EDF1 tagged with FLAG-BirA* at the N-terminus for mammalian expression.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5-FRT-tetO-EDF1-FL (full-length) Strep II</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Human EDF1 tagged with Strep-II at the C-terminus for mammalian expression.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5-FRT-tetO-EDF1-N-term (1-74) Strep II</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Human EDF1 truncation (amino acids 1–74) tagged with Strep-II at the C-terminus for mammalian expression.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5-FRT-tetO-EDF1-C-term (73-148) Strep II</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Human EDF1 truncation (amino acids 73–148) tagged with Strep-II at the C-terminus for mammalian expression.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5-FRT-tetO-3xFLAG-3C-EDF1</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Human EDF1 tagged with 3xFLAG-HRV-3C at the N-terminus for mammalian expression.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrisprV2</td>
+      <td>Addgene</td>
+      <td>Cat #52961 RRID:Addgene_52961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T WT</td>
+      <td>ATCC</td>
+      <td>CRL-3216 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCT116 WT</td>
+      <td>ATCC</td>
+      <td>CCL-247 RRID:CVCL_0291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>HCT116 ∆ZNF598</td>
+      <td>Sundaramoorthy et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>HCT116 ZNF598-OE</td>
+      <td>Sundaramoorthy et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-WT</td>
+      <td>Thermo Fisher</td>
+      <td>R78007 RRID:CVCL_U427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-∆ZNF598</td>
+      <td>Garzia et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-∆EDF1 #3–1</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9 targeting EDF1, clonal selection</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-∆EDF1∆ZNF598 #1–5</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9 targeting EDF1 and ZNF598, clonal selection</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-∆EDF1:EDF1-FL (full-length) Strep II</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>∆EDF1 cells co-transfected with pcDNA5-FRT-tetO-EDF1-FL (full-length) Strep II and pOG44 Flp-recombinase expression vectors, and selected with hygromycin.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-∆EDF1:EDF1-N-term (1-74) Strep II</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>∆EDF1 cells co-transfected with pcDNA5-FRT-tetO-EDF1-N-term (1-74) Strep II and pOG44 Flp-recombinase expression vectors, and selected with hygromycin.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-∆EDF1:EDF1-C-term (73-148) Strep II</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>∆EDF1 cells co-transfected with pcDNA5-FRT-tetO-EDF1-C-term (73-148) Strep II and pOG44 Flp-recombinase expression vectors, and selected with hygromycin.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-In T-REx-3xFLAG-3C-EDF1</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>HEK293-Flp-In T-Rex co-transfected with pcDNA5-FRT-tetO-3xFLAG-3C-EDF1 and pOG44 Flp-recombinase expression vectors, and selected with hygromycin.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetine</td>
+      <td>Cayman Chemical</td>
+      <td>Cat #21048</td>
+      <td>Used to induce ribosome collisions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anisomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #A9789</td>
+      <td>Used to induce ribosome collisions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma</td>
+      <td>D9891-10G</td>
+      <td>Used to induce gene expression in Flp-In T-Rex cell lines</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin</td>
+      <td>ThermoFisher</td>
+      <td>10687010</td>
+      <td>selection antibiotic</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>InvivoGen</td>
+      <td>ant-pr-1</td>
+      <td>selection antibiotic</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Trypsin</td>
+      <td>Promega</td>
+      <td>V511C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lys-C</td>
+      <td>Wako</td>
+      <td>129–02541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SUPERase•In RNase inhibitor</td>
+      <td>Ambion</td>
+      <td>AM2696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RNAse A</td>
+      <td>Ambion</td>
+      <td>AM2270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Superscript III</td>
+      <td>Invitrogen</td>
+      <td>56575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gateway BP Clonase II Enzyme mix</td>
+      <td>ThermoFisher</td>
+      <td>11789020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gateway LR Clonase II Enzyme Mix</td>
+      <td>ThermoFisher</td>
+      <td>11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Turbo DNAse</td>
+      <td>ThermoFisher</td>
+      <td>AM2239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phosphatase inhibitor</td>
+      <td>Cell Signaling Technology</td>
+      <td>5870S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cOmplete, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>5056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mammalian Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>P8340-5mL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dual-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>E2940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Direct-zolRNA Miniprep kit</td>
+      <td>Zymo Research</td>
+      <td>R2051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Zymo-Seq RiboFree Total RNA Library Kit</td>
+      <td>Zymo Research</td>
+      <td>R3000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads Protein A</td>
+      <td>Thermo Fisher</td>
+      <td>10008D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher</td>
+      <td>10009D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ANTI-FLAG M2 Affinity Gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PierceStreptavidin-conjugated agarose beads</td>
+      <td>Thermo Fisher</td>
+      <td>20353</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TMT 6plex Label Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>90068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TMTpro 16plex Label Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>A44520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>3M Empore SPE Disks C18</td>
+      <td>Sigma</td>
+      <td>66883 U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Sep-Pak C18 Cartridge</td>
+      <td>Waters Corporation</td>
+      <td>WAT054960 and WAT054925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>High pH Reversed-Phase Peptide Fractionation Kit</td>
+      <td>Thermo Fisher</td>
+      <td>84868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Pierce Quantitative Colorimetric Peptide Assay</td>
+      <td>Thermo Fisher</td>
+      <td>23275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Maxquant</td>
+      <td>Tyanova et al., 2016a</td>
+      <td>Version 1.6.10.43 RRID:SCR_014485</td>
+      <td>Data analysis, mass spectrometry-based proteomics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Comet-based (v2018.01 rev.2) in-house software pipeline</td>
+      <td>Eng et al., 2013; Huttlin et al., 2010</td>
+      <td>N/A</td>
+      <td>Data analysis, mass spectrometry-based proteomics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>Tyanova et al., 2016b</td>
+      <td>Version 1.6.10 RRID:SCR_015753</td>
+      <td>Statistical analysis of proteomics data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Differential Expression Proteomics (DEP)</td>
+      <td>Zhang et al., 2018</td>
+      <td>N/A</td>
+      <td>Statistical analysis of proteomics data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>InCyte software for Guava easyCyte</td>
+      <td>Millipore Sigma</td>
+      <td>0500–4120</td>
+      <td>Data analysis for single-cell flow-cytometry</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td>STAR_2.5.3a_modified RRID:SCR_015899</td>
+      <td>RNA-seq aligner</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salmon</td>
+      <td>Patro et al., 2017</td>
+      <td>Version 1.2.1</td>
+      <td>Transcript quantification, RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td>Version 3.11 RRID:SCR_015687</td>
+      <td>Differential gene expression analysis, RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gencode</td>
+      <td>Frankish et al., 2019</td>
+      <td>v33 RRID:SCR_014966</td>
+      <td>Genome annotation, RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom software (Python 2.7) for RNA sequencing analysis</td>
+      <td>https://github.com/greenlabjhmi/EDF1_elife_2020 (Zinshteyn and Green, 2020; copy archived at https://github.com/elifesciences-publications/EDF1_elife_2020)</td>
+      <td></td>
+      <td>Analyses and visualization of RNA-seq data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>Zivanov et al., 2018</td>
+      <td>3.0 and 3.1 RRID:SCR_016274</td>
+      <td>Single particle analyses and reconstruction, cryo-EM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td>1.18</td>
+      <td>Tool for automated structure refinement, cryo-EM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WinCOOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>0.8.9.2</td>
+      <td>Model building, refinement and validation, Cryo-EM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>Goddard et al., 2018</td>
+      <td>1.0</td>
+      <td>Visualization of cryo-EM data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software Inc</td>
+      <td>Version 8.4.1</td>
+      <td>Statistical analysis, graphs</td>
+    </tr>
+  </tbody>
+</table>
+
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact Rachel Green (ragreen@jhmi.edu).
 
-## Plasmids
+### Plasmids
 
 The pCMV-GFP-2A-VHP-2A-RFP (linker control) and pCMV-GFP-2A-VHP-(KAAA)20-2A-RFP dual-fluorescence translation stall reporter plasmids described here (Figure 6E, Figure 6—figure supplement 2A, Figure 6—figure supplement 2D–2G) were a generous gift from Manu Hegde (MRC, Cambridge, UK) and its use has been described elsewhere (Juszkiewicz and Hegde, 2017; Sundaramoorthy et al., 2017). The psiCHECK2-Renilla-2A-3xFLAG-MsXbp1u-2A-Firefly dual-luciferase translation stall reporter plasmid (Figure 6—figure supplement 2H–2I) was a generous gift from Shintaro Iwasaki (Han et al., 2020). The EDF1 codon region was recombined into the pcDNA5-FRT-tetO-Flag-BirA* destination using Gateway (Thermo Fisher) cloning methods.
 
-## Cell lines, maintenance, and transfections,
+### Cell lines, maintenance, and transfections,
 
 HEK293T (CRL-3216) and HCT116 (CCL-247) parental cell lines were obtained from ATCC; HEK293-Flp-In T-REx (R78007) parental cell lines were obtained Thermo Fisher. CRISPR knockout and over-expression lines derived from parental backgrounds are listed in the Key Resources Table. Cell lines were tested, and reported to be negative for mycoplasma contamination. All cell lines were thawed and grown for more than two passages prior to any experiment. Unless otherwise stated, HEK293 and HCT116 cell lines and their variants were grown in DMEM (high glucose, pyruvate, and L-Glutamine) supplemented with 10% fetal bovine serum (FBS), maintained in a 5% CO2 humidified incubator and passaged every 2–3 days. siRNA knockdown experiments involved two siRNA transfections on consecutive days at a concentration of 10–25 nM siRNA per day, using Lipofectamine RNAiMax (Thermo Fisher) according to the manufacturer’s guidelines. All expression plasmid transfections were performed using Lipofectamine 3000 (Thermo Fisher) according to the manufacturer’s guidelines. siRNA and plasmid co-transfections (when applicable) were performed using Lipofectamine 3000 (Thermo Fisher) according to the manufacturer’s guidelines.
 
-## Generation of ΔEDF1 knockout lines
+### Generation of ΔEDF1 knockout lines
 
 EDF1 knockout lines were constructed using a CRISPR/Cas9 approach. The following sgRNAs were cloned into the pLentiCRISPRv2 plasmid (Addgene #52961) (Sanjana et al., 2014), corresponding to exon 1 and exon 3, respectively, of the EDF1 locus.
 
-Resultant plasmids were sequenced to confirm the appropriate insertion. HEK293 Flp-In T-REx WT and ∆ZNF598 cells were seeded into 12-well plates at a density of 3.8 x 10^5 cells/well. The next day, each well was transfected with one of the plasmids containing an EDF1 sgRNA, or a control vector containing no sgRNA. On the following day, wells were treated with 0.95 µg/ml puromycin. After 4 days of selection, cells were taken off puromycin and replaced with fresh DMEM, and allowed to grow for 1-4 more days, at which point they were trypsinized and seeded into 96-well plates at a density of 1 cell per well. Single colonies (verified by eye) were grown to confluency and transferred to larger plates until they were able to be frozen. Potential ΔEDF1 lines were lysed, tested by immunoblotting against an anti-EDF1 antibody, and confirmed ΔEDF1 lines were frozen. The frameshifts observed in the ∆EDF1#3-1 line used in this paper (Figures 6 and 7) were confirmed by next generation sequencing as previously described (Joung et al., 2017), demonstrating a frameshift deletion of 2 bp and 14 bp, respectively, within exon 1 of the EDF1 locus at >99% of reads (within sequencing error).
+Resultant plasmids were sequenced to confirm the appropriate insertion. HEK293 Flp-In T-REx WT and ∆ZNF598 cells were seeded into 12-well plates at a density of $3.8x10^5$ cells/well. The next day, each well was transfected with one of the plasmids containing an EDF1 sgRNA, or a control vector containing no sgRNA. On the following day, wells were treated with 0.95 µg/ml puromycin. After 4 days of selection, cells were taken off puromycin and replaced with fresh DMEM, and allowed to grow for 1-4 more days, at which point they were trypsinized and seeded into 96-well plates at a density of 1 cell per well. Single colonies (verified by eye) were grown to confluency and transferred to larger plates until they were able to be frozen. Potential ΔEDF1 lines were lysed, tested by immunoblotting against an anti-EDF1 antibody, and confirmed ΔEDF1 lines were frozen. The frameshifts observed in the ∆EDF1#3-1 line used in this paper (Figures 6 and 7) were confirmed by next generation sequencing as previously described (Joung et al., 2017), demonstrating a frameshift deletion of 2 bp and 14 bp, respectively, within exon 1 of the EDF1 locus at >99% of reads (within sequencing error).
 
-## Cell growth analysis
+### Cell growth analysis
 
 HEK293 Flp-In T-REx WT, ∆EDF1, ∆ZNF598, and ∆ZNF598;∆EDF1, cells were seeded into 24-well plates at a low starting density of 7,500 cells/well in 500 uL DMEM + 10% FBS. At each timepoint, cells from three independent wells were washed, trypsinized in 333 µL trypsin, and pooled into a single tube. Cells were stained with trypan blue, and three cell counts were taken from each tube using the Tc20 Automated Cell Counter (BioRad #145–0103).
 
-## Treatment with elongation inhibitors
+### Treatment with elongation inhibitors
 
 Emetine (Cayman Chemical) stock solutions were prepared fresh to 100 mM in water, frozen at −20 °C, and used within 2 weeks. If frozen, emetine stocks were thawed and equilibrated to room temperature before use. Anisomycin (Sigma-Aldrich) stock solutions were prepared to 94.2 mM (25 mg/ml) in DMSO and frozen at −20 °C. HCT116 or HEK293 cells were seeded at 2–4 million cells per 100 mm TC plate and allowed to grow for 48 hr. At 48 hr (approx. 1–2 hr before emetine treatment), cells were replenished with fresh DMEM supplemented with 10% FBS. Ribosomal collisions were induced by adding emetine to a final concentration of 1.8 µM directly to media, gently swirling the plate, and returning the cells to 37 °C for 15 min, after which cells were lysed. Unless indicated, treatment with other elongation inhibitors were also for 15 min at 37 °C with following concentrations; emetine low dose (1.8 µM) or high-dose (360 µM); anisomycin low dose (0.19 µM) or high dose (75 µM).
 
-## Sample preparation and cell lysis
+### Sample preparation and cell lysis
 
 Cells were lysed by aspirating media, immediately rinsed with warm PBS (37 °C, pH 7.4; Thermo Fisher) supplemented with 360 µM emetine to freeze ribosomes in situ, and lysed by adding 300–400 µl ice cold lysis buffer dropwise to the plate (lysis buffer: 50 mM HEPES pH 7.4, 100 mM KOAc, 15 mM Mg(OAc)2, 5% Glycerol, 0.5% Triton X-100 supplemented with 360 µM emetine (Cayman Chemical), 1x phosphatase inhibitor cocktail (Cell Signaling Technology), 10 mM N-ethylmaleimide (freshly prepared; Sigma Aldrich), 2x cOmplete EDTA-free Protease Inhibitor Cocktail tablets (Roche), 1 mM PMSF (Sigma), 1x mammalian protease inhibitor cocktail (Sigma), 1 mM TCEP (Gold-Bio; TCEP was omitted when samples were prepared for immunoprecipitation) and eight units/ml Turbo DNase (Thermo Fisher)). Plates were swirled to distribute lysis buffer; cells were scraped from the plate using a cell scraper, gently pipetted to homogenize the cell lysate, and transferred to ice for 5–10 min to complete lysis. Lysates were clarified by brief centrifugation at 8000xg (5–7 min, 4 °C), and the clarified supernatant was transferred to a fresh tube on ice. Lysates were prepared fresh and used immediately for sucrose gradients and immunoprecipitations to avoid artifacts associated with freeze-thawing. For immunoblots of whole cell lysates, samples were sometimes flash frozen in liquid nitrogen and stored at −80 °C.
 
-## Sucrose gradient fractionation
+### Sucrose gradient fractionation
 
 Stock solutions of 10x gradient buffer (250 mM HEPES pH 7.4, 1M KOAc, 50 mM Mg(OAc)2) and 60% (w/v) sucrose in water were prepared, filter-sterilized through a 0.22 µm filter, and stored at room temperature. On the day of the experiment, gradients were prepared from two freshly-made sucrose buffers containing 1x gradient buffer, 1 mM TCEP, 360 µM emetine, 200 units SUPERase•In RNase inhibitor (Thermo Fisher), and sucrose to the appropriate concentration (usually 10% and 50% (w/v) sucrose buffers, unless otherwise stated). To prepare gradients, 6 ml of 10% sucrose buffer was added to a SW41 ultracentrifuge polypropylene tube (Seton Scientific), after which 6 ml of 50% sucrose was added to the bottom of the tube using a 10 ml syringe and cannula; 10–50% sucrose gradients prepared on a Biocomp Gradient Master. Gradients were stored at 4 °C until use on the same day. To normalize RNA loading, triplicate A260 measurements from 1:10 dilutions of each clarified sample were read using a NanoDrop UV-Vis spectrophotometer. Background A260 measurement from lysis buffer was subtracted from each reading. Equal RNA load (~100–300 µg, depending on the experiment) was layered on top of each sucrose gradient; gradients were ultra-centrifuged in a Beckman SW41 swinging bucket rotor (40,000 rpm; 105 min). Gradients were fractionated and UV (A260) absorbance across 10–50% sucrose gradients was measured using a top-down Biocomp Piston Gradient Fractionator as per manufacturer’s instructions. For polysome proteomics individual or pooled fractions were flash frozen in liquid nitrogen and processed as described in the polysome proteomics section below. For SDS-PAGE and immunoblotting, proteins from individual fractions were TCA-precipitated using standard protocol and stored at −20 °C overnight (Link and LaBaer, 2011). The following day, TCA-precipitated fractions were centrifuged at 20,000xg (30 min, 4 °C), the supernatant aspirated, pellets washed (x 3) in 500 µl acetone and centrifuged at 20,000xg (10 min, 4 °C), the supernatant aspirated after each wash; after the final wash step pellets were vacuum-dried briefly (~5 min, 42 °C) in a vacuum evaporator, resuspended in Laemmli buffer, pH neutralized with Tris-HCl pH 8.0, boiled (95 °C, 5 min) and resolved by SDS-PAGE.
 
-## RNase A treatment
+### RNase A treatment
 
 Clarified cell lysates were treated with RNase A (Ambion) using the following condition – 1 µg RNase A was added per 100 µg RNA in a 250 µl reaction volume, shaken at 500 rpm (20 min, 25 °C) on a table-top thermo-mixer (Eppendorf); the reaction was quenched by the addition of SUPERase•In RNase inhibitor (~200 units per 100 µg RNA). RNase A digested lysates were layered on top of 10–35% sucrose gradients and processed as described above.
 
-## UV treatment
+### UV treatment
 
 Cells in DMEM + 10% FBS were removed from 37 °C incubator and placed in a Stratalinker UV 1800 Crosslinker with lids removed. Cells were treated with 0.06 J/cm2 (Figure 1K) or 0.02 J/cm2 (Figure 2—figure supplement 2E), returned to the 37 °C incubator and recovered for 30 min (Figure 1K) or 1 hr (Figure 2—figure supplement 2E), after which samples were lysed and processed as described previously.
 
-## Immunoblotting
+### Immunoblotting
 
 Samples for immunoblotting were prepared either directly from clarified cell lysates resuspended in Laemmli buffer to 1X, or from TCA-precipitated sucrose gradient fractions resuspended in 6X Laemmli buffer (see section on ‘Sucrose Gradient Fractionation’) and boiled at 95 °C for 5 min. For immunoblotting of whole cell lysates, triplicate A260 measurements from 1:10 dilutions of each clarified sample were read using a NanoDrop UV-Vis spectrophotometer. Background A260 measurement from lysis buffer was subtracted from each reading. Normalized samples were loaded into 4–12% bis-tris polyacrylamide gels (Criterion Bio-Rad); gel electrophoresis was performed in MES running buffer (150V; 1 hr). Gels were transferred to PVDF membranes using Trans-Blot Turbo Transfer System (Bio-Rad) per the manufacturer’s instructions. Membranes were blocked in 5% non-fat milk (Santa Cruz Biotechnology) resuspended in TBST (30 min, 25 °C) followed by overnight incubation with primary antibody in 5% non-fat milk in TBST at 4 °C, followed by 4 × 10 min washes in TBST at 25 °C, followed by incubation with the secondary antibody in 5% non-fat milk in TBST (1 hr, 25 °C), followed by 4 × 10 min washes in TBST. All incubation steps were performed with gentle rocking. Primary and secondary antibodies were used at recommended concentrations (key resources table). Western blots were visualized by HRP chemiluminescence using Super Signal West HRP substrate (Thermo Fisher); films were developed in a dark room at multiple exposures.
 
-## Stall reporter assays and flow cytometry
+### Stall reporter assays and flow cytometry
 
 For siRNA mediated knockdown studies, cells were transfected using Lipofectamine RNAiMAX (Thermo Fisher) according to manufacturer guidelines. Cells were then transfected with the pCMV-GFP-2A-VHP-(KAAA)20-2A-ChFP dual-fluorescence stall reporter plasmid using Lipofectamine 3000 (Thermo Fisher) according to manufacturer guidelines 24 hr after the siRNA transfection, or 24 hr after seeding for non-siRNA studies. Single-cell RFP and GFP fluorescence intensities for 10,000 individual events were measured 48 hr following reporter transfection on a Millipore Sigma Guava easyCyte benchtop flow cytometer (Millipore Sigma) using 532 nm and 488 nm excitation lasers respectively. Flow data were analyzed using InCyte software for Guava easyCyte HT systems (Millipore Sigma). For reporter assays using Flp-In cell lines, the reporter was transfected 48 hr prior to analysis by cytometry. Transgene expression was induced using doxycycline (1 µg/ml) 24 hr after reporter transfection. Prism (version 8.4.2) was used for data and statistical analyses (Figure 6E, Figure 6—figure supplement 2A, Figure 6—figure supplement 2D–2G). The ROUT method (Q = 10%) was used to identify outliers. p-values were determined by one-way ANOVA and Tukey’s post hoc correction for multiple comparisons.
 
-## Luciferase assay
+### Luciferase assay
 
 HEK293 Flp-In TREx WT, ΔEDF1, ΔZNF598 cells, and ΔEDF1ΔZNF598 cells were seeded in a 96-well plate at a density of 15000 cells per well in 200 µl DMEM supplemented with 10% FBS. The following day, wells were transfected with 100 ng of psiCHECK2-Renilla-2A-3xFLAG-MsXbp1u-2A-Firefly stalling reporter (Han et al., 2020) or the psiCHECK2-Renilla-2A-3xFLAG-2A-Firefly linker control plasmid using Lipofectamine 3000 according to manufacturer guidelines. Approximately 48 hr later, Renilla and Firefly Luciferase activities were measured using the Dual-Glo Luciferase Assay System (Promega, #E2940) in a Synergy H1 microplate reader (BioTek). Renilla (RLuc) and Firefly Luciferase (Fluc) values for six biological replicates for each condition were averaged and the Fluc:RLuc ratio was computed.
 
-## Polysome proteomics (related to Figure 1, Figure 2, Figure 6 and Figure 1—source data 1, Figure 2—source data 1 and Figure 6—source data 1)
+### Polysome proteomics (related to Figure 1, Figure 2, Figure 6 and Figure 1—source data 1, Figure 2—source data 1 and Figure 6—source data 1)
 
-## Sample preparation and digestion
+#### Sample preparation and digestion
 
 Collected sucrose gradient fractions were supplemented with Urea (6 M final) (Figure 1) or SDS (1% final) (Figure 2 and Figure 6) and subjected to disulfide bond reduction with 5 mM TCEP (room temperature, 10 min) and alkylation with 25 mM chloroacetamide (room temperature, 20 min) followed by TCA precipitation, prior to protease digestion. Samples were resuspended in 100 mM EPPS, pH 8.5 containing 0.1% RapiGest and digested at 37°C for 2 hr with LysC (Figure 1) protease at a 200:1 protein-to-protease ratio. Trypsin was added at a 100:1 protein-to-protease ratio and the reaction was incubated for 6 hr at 37°C. Following incubation, digestion efficiency of a small aliquot was tested. Tandem mass tag labeling of each sample was performed by adding indicated amount of the 20 ng/μl stock of TMT or TMTpro reagent along with acetonitrile to achieve a final acetonitrile concentration of approximately 30% (v/v). 5 μl of TMTpro 16plex reagent was added for Figures 2 and 6; 4 μl of TMT 6plex reagent was added for Figure 1. Following incubation at room temperature for 1 hr, labeling efficiency of a small aliquot was tested, and the reaction was then quenched with hydroxylamine to a final concentration of 0.5% (v/v) for 15 min. The TMT-labeled samples were pooled together at a 1:1 ratio. The sample was vacuum centrifuged to near dryness, resuspended in 5% formic acid for 15 min, centrifuged at 10000 × g for 5 min at room temperature and subjected to C18 solid-phase extraction (SPE) (Sep-Pak, Waters).
 
-## Off-line basic pH reversed-phase (BPRP) fractionation
+#### Off-line basic pH reversed-phase (BPRP) fractionation
 
-## Relevant to Figure 2
+##### Relevant to Figure 2
 
 Dried peptides were fractionated according to manufacturer’s instructions using High pH reversed-phase peptide fractionation kit (Thermo Fisher Scientific) for a final six fractions and subjected to C18 StageTip desalting prior to MS analysis.
 
-## Relevant to Figure 6
+##### Relevant to Figure 6
 
 Dried TMT-labeled sample was resuspended in 100 μl of 10 mM NH4HCO3 pH 8.0 and fractionated using BPRP HPLC (Paulo et al., 2016). Briefly, samples were offline fractionated over a 90 min run, into 96 fractions by high pH reverse-phase HPLC (Agilent LC1260) through an aeris peptide xb-c18 column (Phenomenex; 250 mm x 3.6 mm) with mobile phase A containing 5% acetonitrile and 10 mM NH4HCO3 in LC-MS grade H2O, and mobile phase B containing 90% acetonitrile and 10 mM NH4HCO3 in LC-MS grade H2O (both pH 8.0). The 96 resulting fractions were then pooled in a non-continuous manner into 24 fractions (as outlined in Supplemental Figure 5 of Paulo et al., 2016) and 12 fractions (even numbers) were used for subsequent mass spectrometry analysis. Fractions were vacuum centrifuged to near dryness. Each consolidated fraction was desalted via StageTip, dried again via vacuum centrifugation, and reconstituted in 5% acetonitrile, 1% formic acid for MS analysis.
 
-## Liquid chromatography and tandem mass spectrometry
+#### Liquid chromatography and tandem mass spectrometry
 
-## Relevant to Figure 1
+##### Relevant to Figure 1
 
 Mass spectrometry data were collected using an Orbitrap Fusion Lumos mass spectrometer, coupled to a Proxeon EASY-nLC1200 liquid chromatography (LC) pump (Thermo Fisher Scientific). Peptides were separated on a 100 μm inner diameter microcapillary column packed in house with ~35 cm of Accucore150 resin (2.6 μm, 150 Å, Thermo Fisher Scientific, San Jose, CA) with a gradient consisting of 5–22% (0–100 min), 22–28% (100–110 min) (ACN, 0.1% FA) over a total 120 min run at ~550 nL/min. For analysis, we loaded 1/3 of each fraction onto the column. To reduce ion interference compared to MS2 quantification, each analysis used the Multi-Notch MS3-based TMT method (McAlister et al., 2014), combined with newly implemented Real Time Search analysis software (Erickson et al., 2019; Schweppe et al., 2020). The scan sequence began with an MS1 spectrum (Orbitrap analysis; resolution 120,000 at 200 Th; mass range 350–1400 m/z; automatic gain control (AGC) target 1 × 106; maximum injection time 240 ms). Precursors for MS2 analysis were selected using a 3 s TopSpeed method. MS2 analysis consisted of collision-induced dissociation (quadrupole ion trap analysis; Rapid scan rate; AGC 2.5 × 104; isolation window 0.7 Th; normalized collision energy (NCE) 35; maximum injection time 60 ms). Monoisotopic peak assignment was used, previously interrogated precursors were excluded using a dynamic window (120 s ± 7 ppm), and dependent scan was performed on a single charge state per precursor. Following acquisition of each MS2spectrum, a synchronous-precursor-selection (SPS) API-MS3 scan was collected on the top 10 most intense ions b or y-ions matched by the online search algorithm in the associated MS2 spectrum (Erickson et al., 2019; Schweppe et al., 2020). MS3 precursors were fragmented by high energy collision-induced dissociation (HCD) and analyzed using the Orbitrap (NCE 65; AGC 2.5 × 105; maximum injection time 200 ms, resolution was 15,000 at 200 Th). The closeout was set at two peptides per protein per fraction, so that MS3s were no longer collected for proteins having two peptide-spectrum matches (PSMs) that passed quality filters (Schweppe et al., 2020).
 
-## Relevant to Figure 2
+##### Relevant to Figure 2
 
 Mass spectrometry data were collected using an Orbitrap Fusion Lumos mass spectrometer, coupled to a Proxeon EASY-nLC1200 liquid chromatography (LC) pump (Thermo Fisher Scientific). Peptides were separated on a 100 μm inner diameter microcapillary column packed in house with ~35 cm of Accucore150 resin (2.6 μm, 150 Å, Thermo Fisher Scientific, San Jose, CA) with a gradient consisting of 4–14% (0–70 min), 14–21% (70–80 min) (ACN, 0.1% FA) over a total 90 min run at ~550 nl/min. For analysis, we loaded 1/3 of each fraction onto the column. To reduce ion interference compared to MS2 quantification, each analysis used the Multi-Notch MS3-based TMT method (McAlister et al., 2014), combined with newly implemented Real Time Search analysis software (Erickson et al., 2019; Schweppe et al., 2020). The scan sequence began with an MS1 spectrum (Orbitrap analysis; resolution 120,000 at 200 Th; mass range 350–1400 m/z; automatic gain control (AGC) target 1 × 106; maximum injection time 50 ms). Precursors for MS2 analysis were selected using a 3 s TopSpeed method. MS2 analysis consisted of collision-induced dissociation (quadrupole ion trap analysis; Rapid scan rate; AGC 2.5 × 104; isolation window 0.7 Th; normalized collision energy (NCE) 35; maximum injection time 35 ms). Monoisotopic peak assignment was used, previously interrogated precursors were excluded using a dynamic window (120 s ± 10 ppm), and dependent scan was performed on a single charge state per precursor. Following acquisition of each MS2spectrum, a synchronous-precursor-selection (SPS) API-MS3 scan was collected on the top 10 most intense ions b or y-ions matched by the online search algorithm in the associated MS2 spectrum (Erickson et al., 2019; Schweppe et al., 2020). MS3 precursors were fragmented by high energy collision-induced dissociation (HCD) and analyzed using the Orbitrap (NCE 45; AGC 2.5 × 105; maximum injection time 200 ms, resolution was 50,000 at 200 Th). The closeout was set at two peptides per protein per fraction, so that MS3s were no longer collected for proteins having two peptide-spectrum matches (PSMs) that passed quality filters (Schweppe et al., 2020).
 
-## Relevant to Figure 2H and Figure 6
+##### Relevant to Figure 2H and Figure 6
 
 Mass spectrometry data were collected using an Orbitrap Fusion Lumos mass spectrometer combined with a high-field asymmetric waveform ion mobility spectrometry (FAIMS) Pro interface, coupled to a Proxeon EASY-nLC1200 liquid chromatography (LC) pump (Thermo Fisher Scientific). Peptides were separated on a 100 μm inner diameter microcapillary column packed in house with ~35 cm of Accucore150 resin (2.6 μm, 150 Å, Thermo Fisher Scientific, San Jose, CA) with a gradient consisting of 5–15% (0–70 min), 15–23% (70–85 min) (ACN, 0.1% FA) over a total 95 min run at ~550 nL/min. For analysis, we loaded 1/3 of each fraction onto the column. To reduce ion interference compared to MS2 quantification, each analysis used the Multi-Notch MS3-based TMT method (McAlister et al., 2014), combined with newly implemented Real Time Search analysis software (Erickson et al., 2019; Schweppe et al., 2020) and the FAIMS Pro Interface. The scan sequence began with an MS1 spectrum (Orbitrap analysis; resolution 120,000 at 200 Th; mass range 400–1600 m/z; automatic gain control (AGC) target 8 × 105; maximum injection time 50 ms). Precursors for MS2 analysis were selected using a cycle type of 1.25 s/CV method (FAIMS CV=-40/–60/-80 previously optimized for TMT multiplexed samples Schweppe et al., 2019). MS2 analysis consisted of collision-induced dissociation (quadrupole ion trap analysis; Rapid scan rate; AGC 1.0 × 104; isolation window 0.7 Th; normalized collision energy (NCE) 35; maximum injection time 35 ms). Monoisotopic peak assignment was used, precursor fit filter was used (70% for a fit window of 0.7 Th), previously interrogated precursors were excluded using a dynamic window (150 s ± 10 ppm), and dependent scan was performed on a single charge state per precursor. Following acquisition of each MS2spectrum, a synchronous-precursor-selection (SPS) API-MS3 scan was collected on the top 10 most intense ions b or y-ions matched by the online search algorithm in the associated MS2 spectrum (Schweppe et al., 2020). MS3 precursors were fragmented by high energy collision-induced dissociation (HCD) and analyzed using the Orbitrap (NCE 45; AGC 2.5 × 105; maximum injection time 200 ms, resolution was 50,000 at 200 Th). The closeout was set at two peptides per protein per fraction, so that MS3s were no longer collected for proteins having two peptide-spectrum matches (PSMs) that passed quality filters (Schweppe et al., 2020).
 
-## Data analysis (relevant to Figures 1, 2 and 6)
+#### Data analysis (relevant to Figures 1, 2 and 6)
 
 Mass spectra were processed using a Comet-based (v2018.01 rev.2) in-house software pipeline (Eng et al., 2013; Huttlin et al., 2010). Spectra were converted to mzXML using a modified version of ReAdW.exe. Database searching included all canonical entries from the human Reference Proteome UniProt database (SwissProt – 2019–01), as well as an in-house curated list of contaminants. This database was concatenated with one composed of all protein sequences in the reversed order. Trypsin was used as the digestion enzyme, two missed cleavages were allowed, and the minimal peptide length was set to seven amino acids. Searches were performed using a 20 ppm precursor ion tolerance for total protein level analysis. The recommended product ion parameters for ion trap ms/ms were used (1.0005 tolerance, 0.4 offset (mono masses), theoretical fragment ions = 1). TMT tags on lysine residues and peptide N termini (+229.163 Da for Amino-TMT or +304.2071 Da for TMTpro) and carbamidomethylation of cysteine residues (+57.021 Da) were set as static modifications, while oxidation of methionine residues (+15.995 Da) was set as a variable modification. Peptide-spectrum matches (PSMs) were adjusted to a 1% false discovery rate (FDR) and PSM filtering was performed using a linear discriminant analysis, as described previously (Huttlin et al., 2010), while considering the following parameters: Comet Log Expect and Diff Seq. Delta Log Expect, missed cleavages, peptide length, charge state, and precursor mass accuracy. For protein-level comparisons, PSMs were identified, quantified, and collapsed to a 1% peptide false discovery rate (FDR) and then collapsed further to a final protein-level FDR of 1% using the Picked FDR method (Savitski et al., 2015). For TMT-based reporter ion quantitation, we extracted the summed signal-to-noise (S:N) ratio for each TMT channel and found the closest matching centroid to the expected mass of the TMT reporter ion (integration tolerance of 0.003 Da). Reporter ion intensities were adjusted to correct for the isotopic impurities of the different TMT reagents according to the manufacturer’s specifications. Moreover, protein assembly was guided by principles of parsimony to produce the smallest set of proteins necessary to account for all observed peptides. Proteins were quantified by summing reporter ion counts across all matching PSMs using in-house software, as described previously (Huttlin et al., 2010). PSMs with poor quality, MS3 spectra with more than 4 TMT reporter ion channels missing, or isolation specificity less than 0.5 (0.2 for Figure 6), or with TMT reporter summed signal-to-noise ratio that were less than 200 (100 for Figure 1) or had no MS3 spectra were excluded from quantification.
 
 Protein quantification values were exported for further analysis in Microsoft Excel and Perseus (Tyanova et al., 2016b) and statistical test and parameters used are indicated in the corresponding Source Data Tables. Briefly, Welch’s t-test analysis was performed to compare two datasets, using s0 parameter (in essence a minimal fold change cut-off) and correction for multiple comparison was achieved by the permutation-based FDR method, both functions that are built-in in Perseus software. Spectrum annotation for RPS10 diGly site (Figure 2—figure supplement 2F) was generated using IPSA (Brademan et al., 2019).
 
-## EDF1 co-immunoprecipitation (related to Figure 5A and Figure 5—source data 1)
+### EDF1 co-immunoprecipitation (related to Figure 5A and Figure 5—source data 1)
 
 HEK293 cells were seeded at 4 million cells per plate and allowed to grow for 48 hr. At 48 h cells were replenished with fresh DMEM supplemented with 10% FBS. Ribosomal collisions were induced by adding emetine to a final concentration of 1.8 µM directly to media, gently swirling the plate, and returning the cells to 37 °C for 15 min, after which cells were lysed in the following lysis buffer (50 mM HEPES pH 7.4, 100 mM KOAc, 15 mM Mg(OAc)2, 5% Glycerol) supplemented with 0.5% Triton-X-100, 360 µM emetine, 1x phosphatase inhibitor cocktail (Cell Signaling Technology), 10 mM N-ethylmaleimide, 2x cOmplete EDTA-free Protease Inhibitor Cocktail tablets (Roche), 1 mM PMSF (Sigma), 1x mammalian protease inhibitor cocktail (Sigma) and eight units/ml Turbo DNase (Thermo Fisher). Lysates were clarified as described previously and equal amounts of lysates for untreated (UT) and low dose emetine treated (EL) samples were incubated with Dynabeads Protein A coupled EDF1 antibody for 2 hr (at 4 °C) with gentle rocking. EDF1 antibody (Abcam # ab174651) was used at a concentration of 3.6 µg/mg of protein in clarified lysate. Dynabeads Protein A used according to manufacturer guidelines and preincubated with EDF1 antibody prior to addition to clarified lysate. Following incubation, the samples bound to Dyna-Mag magnet as per manufacturer guidelines, the flow-through was removed, and the Dynabeads Protein A-Ab-Ag complex was washed with lysis buffer supplemented with 0.1% Triton-X-100, 360 µM emetine (4 × 10 min, 4 °C), followed by 4 × 10 min (4 °C) washes with lysis buffer not containing glycerol or detergent. Proteins were eluted from the beads using 50 mM glycine pH 2.8, pH neutralized and processed for MS.
 
-## Protein digestion
+#### Protein digestion
 
 Protein extracts (~10 µg) were diluted up to 300 µl in 10 mM triethyl ammonium bicarbonate (TEAB) and were reduced with 15 µl of 7.5 mg/ml DL-dithiothreitol (DTT) (60°C, 1 hr). After cooling to room temperature, samples were alkylated with 15 µl of 18.5 mg/ml iodoacetamide for 15 min at room temperature in the dark. Reduced and alkylated proteins were buffer-exchanged on a 30 kDa molecular weight spin cartridge (Amicon Ultra 0.5 ml, Millipore Sigma) and washed four times with 400 µl 10 mM TEAB. Proteins were digested overnight at 37°C on the filter with 300 µl Trypsin (20 µg in 3 ml 10 mM TEAB, Promega Sequencing Grade Modified Trypsin). Additional Trypsin (100 µl of 10 mg/ml) was added the next morning (37°C, 1 hr). Peptides were removed from the top of the filter and the filter was washed twice with 300 2% acetonitrile, 0.1% formic acid. All washes were combined and dried.
 
-## Liquid Chromatography and mass spectrometry
+#### Liquid Chromatography and mass spectrometry
 
 Peptides were analyzed by liquid chromatography interfaced with tandem mass spectrometry (LC/MS/MS) using an Easy-LC 1000 UPLC system (Thermo Fisher) interfaced with an Orbitrap Q-Exactive Plus Mass Spectrometer (Thermo Fisher). As part of the desalting step using the Oasis plates (Waters Corporation), the peptides were dissolved in 100 µl 0.1%TFA, washed with 0.1%TFA, but then eluted in a step-wise fashion using the following basic pH buffers: 10 mM TEAB (pH 8.5), followed by 5%, 10%, 25%, and 50% acetonitrile in 10 mM TEAB. The first two fractions were combined due to low complexity, then all fractions were dried. The four fractions were resuspended in 20 µl loading buffer (2% acetonitrile in 0.1% formic acid) and analyzed by reverse phase liquid chromatography coupled to tandem mass spectrometry. Peptides (25%, approx. 0.5 µg) were loaded onto a C18 trap (S-10 µM, 120 Å, 75 µm x 2 cm, YMC, Japan) and subsequently separated on an in-house packed PicoFrit column (75 µm x 200 mm, 15 u, +/- 1 µm tip, New Objective) with C18 phase (ReproSil-Pur C18-AQ, 3 µm, 120 Å, www.dr-maisch.com) using 2–90% acetonitrile gradient at 300 nl/min over 120 min. Eluting peptides were sprayed at 2.0 kV directly into the Q-Exactive Plus.
 
 Survey scans (full MS) were acquired from 350 to 1800 m/z with data-dependent monitoring with a loop count of 15. Each precursor individually isolated in a 1.4 Da window and fragmented using HCD activation collision energy 28 and 15 s dynamic exclusion, first mass being 120 m/z. Precursor and the fragment ions were analyzed at resolutions 70,000 and 35,000, respectively, with automatic gain control (AGC) target values at 3e6 with 50 ms maximum injection time (IT) and 1e5 with 100 ms maximum IT, respectively.
 
-## Data analyses
+#### Data analyses
 
 Raw data were processed and analyzed using the MaxQuant (1.6.7.0) software suite (Tyanova et al., 2016a). four fractions (corresponding to individual RAW files; UT_F1-F4; EL_F1-F4) were set for the untreated (UT) and low dose emetine treated (1.8 µM, EL) samples. Default settings were used except that ‘Match between runs’ was turned on to transfer peptide identification from an LC-MS run, in which the peptide has been identified by MS/MS, to another LC-MS run, in which no MS/MS data for the same peptide was acquired or no peptide was assigned (Tyanova et al., 2016a). Search parameters were as follows: a maximum of two missed cleavages were allowed, cysteine carbamidomethyl was included as a fixed modification, and variable modifications included oxidation of methionine, protein N-terminal acetylation, deamidation of glutamine and asparagine, and K-GG ubiquitin remnant on lysines. Trypsin was used as the digestion enzyme, and the minimal peptide length was set to seven amino acids. Searches were performed using a 20-ppm precursor ion tolerance for total protein level analysis. Database search was performed with Andromeda against Uniprot human database (UP000005640_9606.fasta; downloaded on 09/10/2018) with common serum contaminants and enzyme sequences. False discovery rate (FDR) was set to 1% at peptide spectrum match (PSM) and protein level. Minimum peptide count required for protein quantification was set to two. Protein groups were further analyzed using the Perseus (Tyanova et al., 2016b). Common contaminants, reverse proteins and proteins only identified by site were filtered out. LFQ values were transformed to log2 space and intensity distributions were checked to ensure that data were normally distributed.
 
-## BioID proximity-labeling proteomics (related to Figure 5B and Figure 5—source data 2)
+### BioID proximity-labeling proteomics (related to Figure 5B and Figure 5—source data 2)
 
 The EDF1 codon region was recombined into the FRT-tetO-Flag-BirA* destination using Gateway (Thermo Fisher) cloning methods. 293 Flp-In T-REx cell lines were transfected with Flp recombinase vector (pOG44) and FRT-tetO-expression vectors and stable cell lines were selected with hygromycin. Protein expression was either uninduced or induced by adding 1 µg/ml doxycycline to the growth media for 16–20 hr prior to cell harvesting. Both induced and uninduced conditions were supplemented with 50 µM biotin 16 hr before harvesting cells. Frozen cell pellets were lysed in mammalian cell lysis buffer (0.5% NP-40, 150 mM NaCl, 50 mM Tris pH 7.8, protease inhibitors) at 4°C at an approximate 2:1 (v:v) ratio per pellet. Lysates were sonicated and clarified by centrifugation. Total protein was quantified using a BCA protein assay (Pierce). Lysates were mixed with 80 µl (1:1 slurry) of streptavidin-conjugated agarose beads. After overnight incubations, the resin was washed 3X in wash buffer (0.1% NP-40, 150 mM NaCl, 50 mM Tris pH 7.8, protease inhibitors) followed by three washes in cold PBS. Trypsin (400 ng) was added to the washed resin and incubated overnight. Trypsin digested samples were desalted using the C18 stage-tip method. The desalted peptides were vacuum dried and reconstituted with 12 µl of peptide reconstitution buffer (5% Formic acid/5% Acetonitrile) for the LC-MS/MS analysis.
 
-## Liquid chromatography and tandem mass spectrometry
+#### Liquid chromatography and tandem mass spectrometry
 
 The samples were analyzed by nLC-MS/MS using a Q-Exactive mass spectrometer (Thermo Scientific, San Jose, CA) coupled with an EASY-nLC 1000 (Thermo Scientific) chromatography system. Briefly, peptides were first separated by reverse-phase chromatography using a fused silica microcapillary column (75 µm ID, 15 cm) packed with C18 reverse-phase resin (ReproSil-pur 120 C18-AQ, 1.9 μm, Dr. Maisch GmbH) using an in-line nano-flow EASY-nLC 1000 UHPLC. Peptides were eluted over a 100 min 2–30% ACN gradient, a 5 min 30–60% ACN gradient, a 5 min 60–95% ACN gradient, with a final 10 min step at 0% ACN for a total run time of 120 min at a flow rate of 250 nl/min. All gradient mobile phases contained 0.1% formic acid. MS/MS data were collected in a data-dependent fashion using a top 10 method with a full MS mass range from 400 to 1800 m/z, 70,000 resolution, and an AGC target of 3e6. MS2 scans were triggered when an ion intensity threshold of 1e5 was reached with a maximum injection time of 60 ms. Peptides were fragmented using a normalized collision energy setting of 25. A dynamic exclusion time of 40 s was used, and the peptide match setting was disabled. Singly charged ions, charge states above eight and unassigned charge states were excluded. The RAW files were searched on the Maxquant software (version 1.6.10.43) against the UniProt Human reference proteome database (downloaded in year 2017). For the Maxquant analysis, default parameters were used except the following changes- The ‘Label Free Quantification’ (LFQ) and ‘re-quantification’ options were enabled in the group specific parameters settings and the ‘match between runs’ option was enabled in the global parameters settings. The statistical analysis was done on the Maxquant output file ‘proteinGroups.txt’ by the interactive analysis using the Differential Expression Proteomics (DEP) Shiny apps in the R-studio environment (Zhang et al., 2018). Briefly, proteins were filtered that were identified in 2 out of 3 replicates of at least one condition. Filtered protein intensity values were normalized using the Variance Stabilizing Normalization. Missing values were imputed using the MiniProb method by randomly selecting values from a Gaussian distribution centered on a minimal value of the dataset. Protein-wise linear models combined with empirical Bayes statistics were used for the differential enrichment analysis. Fold change ratio and the p-values were calculated. Proteins with p<0.05 and log2 fold change >1 in comparison with at least one of the controls were considered as significant.
 
-## Ubiquitin remnant immunoaffinity profiling (related to Figure 2—figure supplement 2A and Figure 2—figure supplement 2—source data 1)
+### Ubiquitin remnant immunoaffinity profiling (related to Figure 2—figure supplement 2A and Figure 2—figure supplement 2—source data 1)
 
 HEK293 Flp-In T-REx WT were seeded at 8 million cells per 15 cm dish and allowed to grow for 48 h. At 48 h cells were replenished with fresh DMEM supplemented with 10% FBS. Cells were either left untreated (UT), or treated with low dose emetine (1.8 µM, EL) for 15 min. Cells from 3 x 15 cm dishes were combined for each replicate. Three biological replicates were used for each condition (UT x 3 or EL x 3; that is total of 9 plates per condition). Following emetine treatment, cells were quickly rinsed with warm PBS (37°C, pH 7.4; Thermo Fisher) and lysed immediately in denaturing lysis buffer (8 M Urea, 50 mM HEPES pH 7.4, 100 mM KOAc, 1 mM sodium fluoride (NaF), 1 mM β-glycerophosphate (β-Gly), 1 mM sodium orthovanadate, and 5 mM N-ethylmaleimide (NEM)). The lysate was clarified by centrifugation at 20,000xg for 15 min at 25°C to pellet insoluble material. Protein concentration of the clarified supernatants was determined by standard BCA assay; equal amount of protein per sample (~20 mg) was used for each replicate. The clarified supernatant was reduced (5 mM DTT, 55°C, 30 min) and alkylated (2 µg/ml iodoacetamide, 25°C, 15 min in the dark), diluted to 4M urea with 50 mM HEPES pH 7.4 lysis buffer (not supplemented with urea), digested with LysC (1:100 enzyme: substrate (w/w)) for 2 h at 37°C, further diluted to 1M urea with 50 mM HEPES pH 7.4 lysis buffer (not supplemented with urea), supplemented with 1 mM CaCl2, followed by overnight digestion with trypsin (TPCK treated, Sigma) at 37°C (1:100 enzyme: substrate (w/w)). Overnight digestion was stopped by addition of 0.4% TFA followed by brief centrifugation at 300xg (15 min, 25°C) to remove insoluble aggregates; peptides from each sample were desalted and purified using Sep-Pak C18 columns, and eluted sequentially with 3 ml (x 2) 50% ACN and 0.5% HAcO. The eluate was flash frozen in liquid nitrogen, stored at -80°C for 4 days, and lyophilized for ~2 days to remove residual TFA. The lyophilized peptides were resuspended in immunoprecipitation (IP) buffer (10 mM Na2HPO4, 50 mM NaCl, 50 mM MOPS pH 7.2). Peptides were immunoprecipitated with mouse anti-Diglycyl Lysine (Clone GX41) antibody (Millipore Sigma MABS27) coupled to Dynabeads Protein G for 2 h at 4°C. Following incubation, the samples bound to Dyna-Mag magnet, flow-through was removed, and the Dynabeads Protein A-Ab-Ag complex was washed (4x) with IP buffer, followed by 2 x 1 ml washes with PBS (10 min). Peptides were eluted with 0.1% TFA in water, concentrated and desalted by stage-tip chromatography and analyzed by liquid chromatography interfaced with tandem mass spectrometry (LC/MS/MS) using an Easy-LC 1000 UPLC system (Thermo Fisher) interfaced with an Orbitrap Q-Exactive Plus Mass Spectrometer (Thermo Fisher) as described previously in the section for “EDF1 Co-Immunoprecipitation”.
 
-## Data analyses
+#### Data analyses
 
-Raw data were processed and analyzed using the MaxQuant (1.6.7.0) software suite (Tyanova et al., 2016a) as described previously. Default settings were used except that ‘Match between runs’ was turned on to transfer peptide identification from an LC-MS run, in which the peptide has been identified by MS/MS, to another LC-MS run, in which no MS/MS data for the same peptide was acquired or no peptide was assigned (Tyanova et al., 2016a). Search parameters were as follows: Trypsin/LysC were selected as the digestion enzymes, a maximum of two missed cleavages were allowed, cysteine carbamidomethyl and K-ε-GG ubiquitin remnant on lysines were included as a fixed modification, and variable modifications included oxidation of methionine, protein N-terminal acetylation, deamidation of glutamine and asparagine; the minimal peptide length was set to 7 amino acids. Searches were performed using a 20-ppm precursor ion tolerance. Database search was performed with Andromeda against Uniprot human database (UP000005640_9606.fasta; downloaded on 09/10/2018) with common serum contaminants and enzyme sequences. False discovery rate (FDR) was set to 1% at peptide spectrum match (PSM). The statistical analysis was done on the Maxquant output file “peptides.txt” using Perseus (Tyanova et al., 2016b). Common contaminants, reverse proteins and proteins only identified by site were filtered out. LFQ values were transformed to log2 space and intensity distributions were checked to ensure that data was normally distributed. Peptides were filtered that were identified in 2 out of 3 replicates of at least one condition. Missing values were imputed using functions that are built-in in Perseus (1.6.7) software (Tyanova et al., 2016b). Two-sided t-test analysis was performed to compare the UT and EL datasets, using s0 parameter (in essence a minimal fold change cut-off) and a truncation based on permutation-based FDR method (default: 0.05), both functions that are built-in in Perseus software.
+Raw data were processed and analyzed using the MaxQuant (1.6.7.0) software suite (Tyanova et al., 2016a) as described previously. Default settings were used except that ‘Match between runs’ was turned on to transfer peptide identification from an LC-MS run, in which the peptide has been identified by MS/MS, to another LC-MS run, in which no MS/MS data for the same peptide was acquired or no peptide was assigned (Tyanova et al., 2016a). Search parameters were as follows: Trypsin/LysC were selected as the digestion enzymes, a maximum of two missed cleavages were allowed, cysteine carbamidomethyl and K-$\epsilon$-GG ubiquitin remnant on lysines were included as a fixed modification, and variable modifications included oxidation of methionine, protein N-terminal acetylation, deamidation of glutamine and asparagine; the minimal peptide length was set to 7 amino acids. Searches were performed using a 20-ppm precursor ion tolerance. Database search was performed with Andromeda against Uniprot human database (UP000005640_9606.fasta; downloaded on 09/10/2018) with common serum contaminants and enzyme sequences. False discovery rate (FDR) was set to 1% at peptide spectrum match (PSM). The statistical analysis was done on the Maxquant output file “peptides.txt” using Perseus (Tyanova et al., 2016b). Common contaminants, reverse proteins and proteins only identified by site were filtered out. LFQ values were transformed to log2 space and intensity distributions were checked to ensure that data was normally distributed. Peptides were filtered that were identified in 2 out of 3 replicates of at least one condition. Missing values were imputed using functions that are built-in in Perseus (1.6.7) software (Tyanova et al., 2016b). Two-sided t-test analysis was performed to compare the UT and EL datasets, using s0 parameter (in essence a minimal fold change cut-off) and a truncation based on permutation-based FDR method (default: 0.05), both functions that are built-in in Perseus software.
 
-## Cryo-EM (related to Figure 3, Figure 3—figure supplement 1, Figure 3—figure supplement 2, and Figure 4)
+### Cryo-EM (related to Figure 3, Figure 3—figure supplement 1, Figure 3—figure supplement 2, and Figure 4)
 
-## EDF1 affinity purification
+#### EDF1 affinity purification
 
 HEK293 Flp-In T-Rex cells expressing EDF1 with an N-terminal 3xFLAG-3C Protease cleavage site tag were lysed in lysis buffer (20 mM HEPES pH 7.5, 150 mM KOAc, 5 mM MgCl2, 0.5% IGEPAL CA-630 (Sigma), 0.1 mM Na3VO4, 0.5 mM NaF, 1 mM DTT, 1x cOmplete EDTA-free Protease Inhibitor Cocktail tablets (Roche)). The crude lysate was consecutively sonicated four times for 10 s followed by 30 s on ice each. The lysate was clarified by two subsequent centrifugation steps at 2960 x g and 4°C for 15 min and 36,500 x g and 4°C for 25 min. The resulting supernatant was incubated with ANTI-FLAG M2 Affinity Gel (Sigma) at 4°C for 120 min. The affinity beads were washed twice with NP-40 washing buffer (20 mM HEPES pH 7.5, 150 mM KOAc, 5 mM MgCl2, 0.01% IGEPAL CA-630 (Sigma), 0.1 mM Na3VO4, 0.5 mM NaF, 1 mM DTT) and once with Nikkol washing buffer (20 mM HEPES pH 7.5, 150 mM KOAc, 5 mM MgCl2, 0.05% octaethylene glycol monododecyl ether, 1 mM DTT). After transferring the beads to a 1 mL Mobicol spin-column (MoBiTech) they were washed once with Nikkol washing buffer. For elution, the beads were incubated in elution buffer (20 mM HEPES pH 7.5, 150 mM KOAc, 5 mM MgCl2, 0.05% octaethylene glycol monododecyl ether, 1 mM DTT, 0.352 mg/mL 3C Protease (homemade)) at 4°C for 60 min. The eluate was collected by centrifugation and subjected to cryo-EM.
 
-## In vitro translation of SDD1 mRNA and purification of RNCs
+#### In vitro translation of SDD1 mRNA and purification of RNCs
 
 SDD1 stalled ribosomes were generated and purified as described previously (Matsuo et al., 2020). The purified RNCs were applied to a 10–50% sucrose gradient, and ribosomal fractions were separated via centrifugation for 3 hr at 202,048 x g at 4°C in a SW40 rotor.
 
-## Cryo-EM analysis of 3x-FLAG-EDF-ribosome and SDD1 trisome complexes
+#### Cryo-EM analysis of 3x-FLAG-EDF-ribosome and SDD1 trisome complexes
 
 Freshly prepared samples of the EDF1-80S or SDD1 trisome fraction were applied to holey carbon support grids (R3/3 with 2 nm continuous carbon support, Quantifoil), which had been glow discharged at 2.1 × 10−1 mbar for 20 s. Grids were incubated for 45 s at 4°C and subsequently plunge frozen in liquid ethane using a Vitrobot Mark IV (FEI Company). Data were collected on a Titan Krios at 300 kV using a K2 Summit direct electron detector (Gatan) with a nominal pixel size of 1.059 Å and a defocus range from 0.5 to 2.5 μm at low-dose conditions. For each movie, 40 frames with approximately 1.12 e- Å−2 exposure were gain corrected and aligned using MotionCor2 (Zheng et al., 2017). Contrast-transfer function (CTF) parameters of the summed micrographs were estimated with Gctf (Zhang, 2016), before micrographs were manually screened for quality.
 
-## Data processing of the EDF1 data set
+#### Data processing of the EDF1 data set
 
 The EDF1-80S data set was processed using Relion 3.1 (Zivanov et al., 2018). After two-dimensional (2D) classification, 95,832 particles from 4260 micrographs were subjected to a 3D classification. First, 80S states and low-resolution particles of the ribosome were separated in five 3D classes. Approximately 85% of the particles represented post-state ribosomes with high EDF1 occupancy which were refined to an overall resolution of 3.1 Å. Post-processing, CTF corrections and a focused refinement with a soft mask around the 40S subunit yielded an overall resolution of 2.9 Å and improved the density of EDF1 for interpretation. This map was filtered according to local resolution with a negative B-factor of 20 and used for model building.
 
-## Data processing of the SSD1 trisome data set
+#### Data processing of the SSD1 trisome data set
 
 The trisome data set was processed as an 80S dataset in Relion 3.0 and Relion 3.1 (Zivanov et al., 2018). In brief, individual 80S particles were picked using the Laplacian of Gaussian mode of Relion Autopicker and subjected to 2D classification. A total 398,371 particles from 4109 micrographs were selected after 2D classification. Initial refinement followed by masked 3D classification into five classes were performed, with the 3D classification focusing on differentiating between tRNA states. Of the observed ribosomes, 23% were occupied by P/P tRNA, 64% by A/P, P/E tRNA (in three classes) and 13% had A-site tRNA. The three classes representing rotated ribosomes with A/P and P/E tRNAs were merged for further processing. Sub-classification of these ribosomes into three classes with a mask around the 40S beak and rRNA helix 16 gave one class (31%) with extra density where helix 16 was shifted compared to the other classes. After CTF-refinement and subsequent sub-classification in two classes, one well resolved class with 77% of the particles was observed. Focused 3D refinement with a soft mask around the 40S subunit yielded a map with an overall resolution of 3.0 Å which was filtered according to local resolution with a negative B-factor of 30 and used for model building.
 
-## Model building
+#### Model building
 
 To generate molecular models, we used our previously refined models of stalled yeast and human 80S ribosome (Thoms et al., 2020) (PDB 6ZMI) and disome (Ikeuchi et al., 2019) (PDB 6I7O). First, individual subunits and tRNAs were fitted as rigid bodies into the densities. These models were then remodeled in COOT (Emsley et al., 2010) and refined in Phenix (Adams et al., 2010). Cryo-EM structures and models were displayed using UCSF ChimeraX (Goddard et al., 2018). Detailed statistics of model refinements and validations are listed in Figure 3—source data 1.
 
-## RNA sequencing (related to Figure 7)
+### RNA sequencing (related to Figure 7)
 
-HEK293 Flp-In T-REx WT and ∆EDF1 cells were seeded in 6-well plates at  2 x 10^5 cells/well and allowed to grow for 48 hr. At 48 h cells were replenished with fresh DMEM supplemented with 10% FBS. Cells were either left untreated (UT), or treated with low dose (1.8 µM) emetine for 30 min (EL30) or 120 min (EL120) to induce ribosomal collisions, after which samples were harvested by aspiration of media and addition of 1 ml TRIzol reagent (Thermo Fisher) directly to each well of the plate. Samples were homogenized by pipetting up and down several times. RNA was extracted with Direct-zol RNA Miniprep kit (R2051) following the manufacturer’s protocol. RNA sequencing libraries were prepared from 1 µg of total RNA using the Zymo-Seq RiboFree Total RNA Library Kit following the manufacturer’s instructions and sequenced by GENEWIZ on an Illumina Hiseq 2500 using 150 nt paired-end reads. Raw sequencing data were deposited in the GEO database under the accession number GSE149565. Secure token for reviewers: uzajoeeultgrpsr.
+HEK293 Flp-In T-REx WT and ∆EDF1 cells were seeded in 6-well plates at $2x10^5$ cells/well and allowed to grow for 48 hr. At 48 h cells were replenished with fresh DMEM supplemented with 10% FBS. Cells were either left untreated (UT), or treated with low dose (1.8 µM) emetine for 30 min (EL30) or 120 min (EL120) to induce ribosomal collisions, after which samples were harvested by aspiration of media and addition of 1 ml TRIzol reagent (Thermo Fisher) directly to each well of the plate. Samples were homogenized by pipetting up and down several times. RNA was extracted with Direct-zol RNA Miniprep kit (R2051) following the manufacturer’s protocol. RNA sequencing libraries were prepared from 1 µg of total RNA using the Zymo-Seq RiboFree Total RNA Library Kit following the manufacturer’s instructions and sequenced by GENEWIZ on an Illumina Hiseq 2500 using 150 nt paired-end reads. Raw sequencing data were deposited in the GEO database under the accession number GSE149565. Secure token for reviewers: uzajoeeultgrpsr.
 
-## RNA-sequencing data analysis
+#### RNA-sequencing data analysis
 
 Genome and transcript sequences and annotations were downloaded from Gencode v31 (Frankish et al., 2019). Transcript levels were quantified using Salmon (Patro et al., 2017) with optional parameters --libType A --gcBias --seqBias --validateMappings. Reads or TPMs (transcripts per million) were summed across all transcripts for a given gene for downstream analysis. To compute fold changes and statistical significance, total counts for each gene were rounded to the nearest integer and processed with DESeq2 (Love et al., 2014). To determine the effect of EDF1Δ on the emetine response of each gene, we used and experimental design with and interaction term in DESeq2: design = ~ genotype + condition + genotype:condition, where genotype grouped samples by their EDF1 status, and condition grouped samples by emetine treatment (untreated (UT), 1.8 µM emetine 30 min (EL30), 1.8 µM emetine 120 min (EL120)). Statistically significant genes were chosen based on a Benjamini-Hochberg adjusted p-value of 0.01.

@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Biochemistry Stanford University Stanford United States
-2. https://ror.org/00f54p054 Department of Biomedical Data Science Stanford University New Haven United States
-3. https://ror.org/03v76x132 Departments of Medicine (Cardiology) and Genetics Yale University New Haven United States
+1. Department of Biochemistry Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Department of Biomedical Data Science Stanford University New Haven United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Departments of Medicine (Cardiology) and Genetics Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
 ## Abstract
 
-Targeted low-throughput studies have previously identified subcellular RNA localization as necessary for cellular functions including polarization, and translocation. Furthermore, these studies link localization to RNA isoform expression, especially 3’ Untranslated Region (UTR) regulation. The recent introduction of genome-wide spatial transcriptomics techniques enables the potential to test if subcellular localization is regulated in situ pervasively. In order to do this, robust statistical measures of subcellular localization and alternative poly-adenylation (APA) at single-cell resolution are needed. Developing a new statistical framework called SPRAWL, we detect extensive cell-type specific subcellular RNA localization regulation in the mouse brain and to a lesser extent mouse liver. We integrated SPRAWL with a new approach to measure cell-type specific regulation of alternative 3’ UTR processing and detected examples of significant correlations between 3’ UTR length and subcellular localization. Included examples, Timp3 , Slc32a1 , Cxcl14 , and Nxph1 have subcellular localization in the mouse brain highly correlated with regulated 3’ UTR processing that includes the use of unannotated, but highly conserved, 3’ ends. Together, SPRAWL provides a statistical framework to integrate multi-omic single-cell resolved measurements of gene-isoform pairs to prioritize an otherwise impossibly large list of candidate functional 3’ UTRs for functional prediction and study. In these studies of data from mice, SPRAWL predicts that 3’ UTR regulation of subcellular localization may be more pervasive than currently known.
+Targeted low-throughput studies have previously identified subcellular RNA localization as necessary for cellular functions including polarization, and translocation. Furthermore, these studies link localization to RNA isoform expression, especially 3’ Untranslated Region (UTR) regulation. The recent introduction of genome-wide spatial transcriptomics techniques enables the potential to test if subcellular localization is regulated in situ pervasively. In order to do this, robust statistical measures of subcellular localization and alternative poly-adenylation (APA) at single-cell resolution are needed. Developing a new statistical framework called SPRAWL, we detect extensive cell-type specific subcellular RNA localization regulation in the mouse brain and to a lesser extent mouse liver. We integrated SPRAWL with a new approach to measure cell-type specific regulation of alternative 3’ UTR processing and detected examples of significant correlations between 3’ UTR length and subcellular localization. Included examples, Timp3, Slc32a1, Cxcl14, and Nxph1 have subcellular localization in the mouse brain highly correlated with regulated 3’ UTR processing that includes the use of unannotated, but highly conserved, 3’ ends. Together, SPRAWL provides a statistical framework to integrate multi-omic single-cell resolved measurements of gene-isoform pairs to prioritize an otherwise impossibly large list of candidate functional 3’ UTRs for functional prediction and study. In these studies of data from mice, SPRAWL predicts that 3’ UTR regulation of subcellular localization may be more pervasive than currently known.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ SPRAWL was developed to be a non-parametric single-cell resolved measure of RNA 
 
 SPRAWL is a publicly available Python package that can be installed using pypi with pip install subcellular-sprawl and has also been implemented in Nextflow (Di Tommaso et al., 2017) and Docker for reproducible analyses at large scale in high-performance or cloud computing environments. SPRAWL source code and documentation are available on GitHub, (copy archived at Bierman, 2024).
 
-## SPRAWL quantifies peripheral and central subcellular RNA patterning with rank statistics
+### SPRAWL quantifies peripheral and central subcellular RNA patterning with rank statistics
 
 Examples of RNA localized to the plasma membrane include Actin and Tubulin in mammalian cells (Lawrence and Singer, 1986), ASH1 in yeast (Bertrand et al., 1998), and Oskar in fly oocytes (Rongo et al., 1995). These foundational examples motivate the unbiased statistical detection of RNA localization patterns in reference to the cell-boundary. To satisfy this need, we’ve created the SPRAWL peripheral metric (Figure 1) which quantifies the extent to which the RNA spots of a gene of interest are more extremely proximal or distal from the cell-membrane than expected by chance.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig1-v1.jpg)
+
+**Figure 1.:** (a) RNAs are ranked from closest to furthest from the cell-boundary to calculate the median peripheral rank of the gene of interest. For the central metric, distances from the cell centroid are used for ranking instead. (b) Under the null hypothesis of each rank being equally likely, the probability mass function of the median is exactly calculable. (c) The intuitive SPRAWL score per gene per cell, X, will be near +1 for highly-peripheral patterns, near 0 for randomly-peripheral patterns, and near –1 for anti-peripheral patterns. (d) Peripheral significance of a gene within a cell-type is estimated from per cell SPRAWL scores using the Lyapunov Central Limit Theorem (CLT). Overlaying cell outlines are a result of viewing 3D slices from the top down.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) SPRAWL scores for permuted null datasets, reds, have expected mean values of zero regardless of either the number of cells per cell-type or the gene abundance. The permuted datasets have an expectedly lower variance for higher cells per cell-type and gene abundance. The real data, blue, shows expected means near 0 for the central and peripheral metrics, but higher scores for the punctate and radial metrics. (b) Under null simulations, red lines, all gene/cell-type pairs are deemed insignificant at an alpha level of 0.05 (vertical dashed line) for the four metrics. In the real data, blue lines, more gene/cell-type pairs are significant, after Benjamini-Hochberg correction, with higher cell-type and RNA abundance. (c) The fraction of significant gene/cell-type pairs in the BICCN samples are consistent across abundance levels measured as gene/cell-type median spot counts. (d) Peripheral and central scores are strongly anti-correlated for gene/cell-type scores while the radial and punctate scores are positively correlated. (e) To test whether peripheral localization patterns were driven artifactually by incorrect cell boundary calling, the cell boundary locations were computationally shrunk by a factor of 0.8 in the x and y direction, discarding spots that fell outside the new boundaries. In both the BICCN MOp and Vizgen Brainmap datasets, a Pearson correlation coefficient of greater than 0.85 was observed between the shrunk and original median gene/cell-type periphery scores. (f) SPRAWL scores are not conflated with cell size (g) Similar fractions of gene/cell-types are significant between the different datasets and metrics.
 
 To calculate the SPRAWL peripheral metric for a given gene in a given cell, first, the minimum euclidean distance is calculated between each RNA spot, regardless of gene identity, and the cell-boundary. These distances are then used to rank the spots from 1 to n corresponding to the nearest and furthest RNA spot from the boundary, respectively (Figure 1a). The median rank is calculated for the m RNA spots of the gene. Under the null hypothesis that the gene is not peripherally localized, the expected value is (n+1)/2. Genes with lower median ranks than the expected value are more peripherally localizing, while larger median ranks correspond with anti-peripheral localization.
 
@@ -47,7 +55,7 @@ The probability mass function (PMF) of observing each possible median peripheral
 
 One of the main advantages of using a rank-based formulation of the periphery and centrality scores is the insensitivity to cell size and rotation. This feature facilitates direct comparisons of SPRAWL scores between cells and even samples. The simplicity of the statistically-backed metrics provides both effect size and p-value handles for detecting extreme RNA patterning in either the positive (peripheral/central) or negative (anti-peripheral/anti-central) direction of effect. Finally, it is worth noting that while the peripheral and central scores are strongly anti-correlated (Figure 1—figure supplement 1c), there are clear examples of RNA with simultaneously central and peripheral localization in a cell when the cell-boundary runs near to the cell centroid.
 
-## SPRAWL detection of punctate and radial patterning relies on gene-label permutations
+### SPRAWL detection of punctate and radial patterning relies on gene-label permutations
 
 While some RNAs are known to be peripherally or centrally localizing as discussed above, others are known to be trafficked to organelles (Chang et al., 2004), cell-poles (Rongo et al., 1995; Hachet and Ephrussi, 2004), or neuronal processes (Minis et al., 2014; Zappulo et al., 2017; Das et al., 2019). In all cases, RNA molecules of the same gene will be more spatially aggregated than expected by chance. To detect such patterning, SPRAWL punctate and radial metrics have been defined to respectively identify RNA species that tend to aggregate by euclidean distance or in one angular sector of the cell.
 
@@ -61,13 +69,21 @@ When calculating the punctate score for a gene of interest with m>1 RNA spots in
 
 Unlike the peripheral and central metrics, the radial and punctate scores rely on permutation testing to create a null distribution for each gene in each cell. The advantages of permutation testing are that the metrics can be of any complexity, but the disadvantage is the increased compute time in comparison with the simpler rank-based approaches. The permutation-based metrics retain the critical insensitivity to cell size, shape, and orientation present in the rank-based metrics.
 
-## SPRAWL robustly detects subcellular localization in massively multiplexed FISH datasets
+### SPRAWL robustly detects subcellular localization in massively multiplexed FISH datasets
 
 The SPRAWL peripheral, central, punctate, and radial metrics described above have been used to analyze spatial datasets comprising a total of 26 experiments over six mice processed by three different research groups and two technologies (Eng et al., 2019; Zhang et al., 2021; Vizgen, 2024; Liu et al., 2022). Applying SPRAWL to these datasets revealed: (1) gene/cell-type localization patterns have a high correlation between biological replicates; (2) differential subcellular localization patterns of the same gene in different cell-types; and (3) differential subcellular regulation corresponding with cell-type differential 3’ UTR length from associated single-cell RNA sequencing (scRNA-seq) datasets (Yao et al., 2021) for 26 genes including Slc32a1, Cxcl14, Nxph1, and Timp3.
 
-## SPRAWL detects cell-type specific localization patterns across biological replicates
+### SPRAWL detects cell-type specific localization patterns across biological replicates
 
 We applied SPRAWL to the BICCN motor cortex (MOp) (Zhang et al., 2021), Vizgen Brainmap, and Vizgen Liver datasets (Vizgen, 2024) which each contained either biological or technical replicates. The median SPRAWL gene/cell-type scores were significantly positively correlated between replicates within all three datasets for all four spatial metrics having significant Pearson correlation with coefficients larger than 0.47 at an alpha level of 0.05 (Figure 3a: blue).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig3-v1.jpg)
+
+**Figure 3.:** (a) BICCN MERFISH, Vizgen Brainmap, and Vizgen Liver biological replicates (rows top to bottom) have Pearson correlation coefficients (blue) larger than 0.47 for SPRAWL peripheral, radial, punctate, and central metrics (columns left to right). Randomly permuting gene labels in these datasets eliminates underlying spatial patterning and yields insignificant Pearson correlation coefficients (orange) between biological replicates. Dotted lines indicate zero-valued SPRAWL gene-cell type scores. (b) In the motor cortex (MOp) BRAIN Initiative Cell Census Network (BICCN) dataset 87% of gene/cell-type pairs have positive punctate RNA patterning (blue), compared to 50% in the gene-label permuted data (orange). Similarly extreme trends of 95% and 52% are observed for the radial metric. Cldn5 RNA is consistently highly punctate and radial in all cell-types that express it, depicted by purple x-axis ticks.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The Vizgen Liver showcase dataset provides spatial information for 2 mouse livers with two slices each. Cell annotation data was not provided in the Vizgen Liver Showcase, instead, clusters produced from off-the-shelf Leiden clustering (python Scanpy package) were used as pseudo cell-types. All four datasets were combined without reference to biological or technical replicate by first normalizing the read counts per cell, identifying highly variable genes, reducing to the first 10 principle components (b), and then computing a neighbor graph with n=40 which resulted in 100 clusters which had a similar number of cells from each animal (c) As well as having a high Pearson correlation coefficient between mice (d), the technical replicates were highly correlated within both Liver 1 (e) and Liver 2 (f).
 
 Given the observed high pervasiveness of subcellular patterning in all datasets, we tested the specificity of SPRAWL by using permuted data. By permuting the gene-label of the RNA spots in a cell, we create negative control datasets that are known not to have significant spatial patterning. Assuringly, SPRAWL median gene/cell-type scores were not significantly correlated between biological replicates in any permuted dataset (Figure 3a: orange). Furthermore, in these negative control datasets, SPRAWL does not call any gene to be significantly localized in any cell-type after correcting for multiple hypothesis testing.
 
@@ -77,37 +93,49 @@ To test whether the SPRAWL peripheral score was sensitive to cell-segmentation, 
 
 While SPRAWL’s specificity can be benchmarked with multiple approaches, estimating SPRAWL’s sensitivity on real datasets is confounded by a lack of known true positive subcellular RNA patterning by cell-type. As a proxy for ground-truth, we hypothesized that RNAs encoding proteins with a signal recognition particle (SRP+) would have more centralized patterning than RNAs without (SRP-) due to their known trafficking to the endoplasmic reticulum. Surprisingly, the scores of all SPRAWL metrics were indistinguishably distributed between SRP+ and SRP- genes (Figure 5—figure supplement 1a). In an additional approach, we tested whether highly central RNAs were enriched in single-nucleus sequencing (snRNA-seq), compared to scRNA-seq, which was true for only a subset of genes (Figure 5—figure supplement 1b). A potential reason for both ground-truth proxies behaving unexpectedly is the nucleus is not necessarily centrally localized and RNAs may not be detectable when protein-bound.
 
-## Cell-type specific subcellular localization is regulated in BICCN MOp replicates
+### Cell-type specific subcellular localization is regulated in BICCN MOp replicates
 
 In the MOp dataset, SPRAWL detects hundreds of significantly patterned gene/cell-type groups. The MOp dataset imaged 252 genes through multiplexed barcoding, including 10 negative-control barcodes, and profiled nearly 300,000 cells from the mouse motor cortex (Zhang et al., 2021). Biological replicates were present from two mice (Figure 3a: top row) with six slices taken from each animal. Conservative filtering of cells and cell-types (see Methods: SPRAWL Filtering) resulted in 220 unique genes and 19 distinct cell-types, with 1999 of 4180 (47.8 %) possible gene/cell-type combinations observed. After BH multiple hypothesis testing corrections over both biological replicates, 1511 (75.6%) gene/cell-type pairs were called significant by the SPRAWL peripheral metric, 1492 (74.6%) by the central metric, 1475 (73.8%) by the radial metric, and 1448 (72.4%) by the punctate metric. Spatial patterning was extensive and consistent between replicates with more than 77.8% of the gene/cell-type pairs having the same direction of effect, positive or negative, between the two replicates. Additionally, 176 of 220 (80%) unique genes were found to be significantly spatially regulated in at least one cell-type in all metrics, but not necessarily the same cell-type in all metrics. Similarly, all 19 cell-types were observed to be significant with at least one gene in each metric.
 
-## Cell-type specific subcellular localization is regulated in Vizgen Brain replicates
+### Cell-type specific subcellular localization is regulated in Vizgen Brain replicates
 
 The Vizgen Brainmap dataset contains nine MERFISH experiments from three coronal sections of a mouse brain. Each section contains three adjacent cryotome slices from the same animal that are considered pseudo-biological replicates (Figure 3a: middle row). Approximately 70,000 cells and 649 genes, of which 165 were blank-code negative controls, were imaged. Cell-type annotations were not provided for this dataset, and instead, a simple clustering of cells by gene count from the spatial data was performed using Scanpy (Wolf et al., 2018) that resulted in 42 cell-type proxies (Methods, Brainmap clustering). Analysis of the three brain slices resulted in 158 (54.7%), and 159 (55.0%), 139 (48.1%), and 156 (54.0%) unique genes significant in at least one cell type for the peripheral, central, radial, and punctate analysis, respectively. For the peripheral metric, 2535 of 2877 (88.1%) gene/cell-type groups present in all three tissue slices had significant Benjamini-Hochberg corrected p-values (ɑ=0.05). A similar 87.7% of gene/cell-types were significant according to the centrality metric. For the radial metric, 1194 of 2877 (51.6%) gene/cell-type groups were significant, while the punctate metric identified 2196 of 2877 (76.3%) of the gene/cell-type pairs as significant.
 
 All slices from all sections were pairwise significantly correlated for the peripheral, radial, and punctate metrics with a minimum Pearson correlation coefficient of 0.55. Cell-type SPRAWL correlation results were insensitive to different cell-type clustering parameters (Figure 3—figure supplement 1), suggesting that the agreement between biological replicates found by SPRAWL is robust to different granularities of clustering; a desirable trait since cell-type clustering approaches vary widely.
 
-## Cell-type specific subcellular localization is regulated in Vizgen Liver replicates
+### Cell-type specific subcellular localization is regulated in Vizgen Liver replicates
 
 The Vizgen Liver dataset consists of two mice, each with two replicates for a total of four MERFISH experiments (Figure 3a: bottom row). Spatial data was collected on more than 1 million liver cells across all four datasets and 589 distinct genes were imaged, of which 127 were blank-codes. As with the Vizgen Brainmap dataset, no cell-type annotations were provided and naive clustering was performed to generate pseudo-annotations. After filtering out gene/cell-type groups with fewer than 20 cells, SPRAWL detected 112 (29.1%) peripheral, 112 (29.1%) central, 118 (30.6%) radial, and 134 (34.8%) punctate genes significant in at least one cell-type. Median SPRAWL scores per gene/cell-type were highly correlated between the biological replicates with Pearson correlation coefficients of 0.79, 0.56, 0.75, and 0.76 for the peripheral, central, radial, and punctate metrics, respectively. The peripheral metric identified 1399 of 1642 (85.2%) significant gene/cell-type pairs after restricting to median RNA spot count greater than or equal to 5, and presence in both biological replicates. Similar percentages of 85.1%, 51.4%, and 77.4% of gene/cell-type pairs were found to be significantly patterned in the central, radial, and punctate metrics.
 
-## Significant SPRAWL punctate and radial scores are highly skewed towards aggregation
+### Significant SPRAWL punctate and radial scores are highly skewed towards aggregation
 
 Over 99% of the significant gene/cell-type groups have positive (X>0) radial and punctate scores, revealing a significant and general tendency of RNAs to colocalize with other RNAs of the same gene both by euclidean distance (punctate metric), and angular dispersion (radial metric). In comparison, the SPRAWL peripheral metric in the BICCN MOp dataset identifies 56.1% of significant gene/cell-type pairs as more positively peripheral (X>0) and the remaining 43.9% are anti-peripheral (X<0). Similarly, the SPRAWL central metric identifies 45.2% of significantly positive scoring gene/cell-type pairs. Empirical CDF plots of SPRAWL metric scores provide an alternate view for the same phenomenon (Figure 1—figure supplement 1a, b). Additionally, null simulated datasets did not have a bias towards positive radial or punctate scoring (Figure 3a orange).
 
 SPRAWL detects 112 of 252 genes (44.4%) as globally positively punctate and radial in all cell-types which express them including extreme genes, such as Claudin 5 (Cldn5) which has a median SPRAWL punctate and radial score of 0.85 and 0.84, respectively (Figure 3b purple ticks) as well as VEGFR-1 (Flt1) which has a median SPRAWL punctate and radial score of 0.83 for both metrics (Figure 3b). Cldn5 protein product is the primary integral membrane protein component of tight junctions in mouse brain and knockouts result in postnatal death (Nitta et al., 2003). Flt1 is a transmembrane tyrosine kinase receptor that binds vascular endothelial growth factor (VEGFR) and also has a shortened alternative soluble protein isoform (Shibuya et al., 1990; Jin et al., 2012). The consistent positive punctate and radial scores of Flt1, and lack of differential localization patterns, could indicate that either only one isoform of Flt1 is expressed across all cell-types, or that the two mRNA isoforms are alternatively expressed but do not have differential subcellular localization patterns. It is currently not known in the literature whether Cldn5 or Flt1 RNA localization is regulated, but a followup targeted FISH experiment could be insightful. We note that imaging errors resulting in calling a single RNA molecule as two nearby molecules could be artificially inflating the radial and punctate scores leading to more significant calls.
 
-## SPRAWL detects genes with opposite and cell-type dependent RNA localization
+### SPRAWL detects genes with opposite and cell-type dependent RNA localization
 
 We defined opposite-directionality genes as those that have the pattern of being significantly positively scoring in one cell-type, while being significantly negatively scoring in another cell-type for the same metric, such as peripheral vs. anti-peripheral. Significant spatial patterning of a gene in only a subset of cell-types suggests differences in either cis or trans-acting regulatory factors. For the BICCN dataset out of 252 genes, 92 (36%) peripheral, 96 (38%) central, 2 (1%) radial, and 10 (4%) punctate genes are opposite-directionality (Supplemental Table 1 in Supplementary file 1). We define an additional class of genes as cell-type dependent, but not opposite-directionality patterning. These genes are significant in at least one cell-type, but insignificantly localized in at least one other cell-type and account for approximately 55% of genes in peripheral and central metrics, and 20% for the radial and punctate metrics across all datasets. SPRAWL’s ability to detect cell-type specific regulation of subcellular patterning generates testable hypotheses for follow-up analysis and experimentation. A computationally tractable hypothesis of interest inspired by the known presence of ‘zip code’ elements, is whether there exist general correlations between 3’ UTR isoform and localization across cell-types.
 
-## Subcellular RNA localization is enriched for correlations with 3’ UTR length
+### Subcellular RNA localization is enriched for correlations with 3’ UTR length
 
 Alternative 3’ UTRs and splice isoforms are known to result in differential mRNA localization (Kislauskis et al., 1994). Inclusion or exclusion of specific sequence elements can disrupt RNA binding proteins (RBPs) from binding and localizing the transcript. RBPs that have been identified as controlling transcript localization can have cell-type specific expression, including at the isoform level (Yisraeli, 2005; Müller-McNicoll and Neugebauer, 2013; Hentze et al., 2018). Examples of such RBPs include members of the RNA-transport granule (Kanai et al., 2004), providing a model for why RNAs may be cell type specifically localized as a function of their isoform. Conversely, differential localization of the same isoform can occur if the trans-acting localization factor is differentially expressed in different cell-types.
 
 We coupled a recent statistical method to measure 3’ UTR length called the ReadZS (Meyer et al., 2021) with SPRAWL to identify genes with spatial localization correlated with 3’ UTR regulation (Booeshaghi et al., 2021). We used ReadZS to statistically quantify 3’ UTR lengths at single-cell resolution, and then computed the median ReadZS score by cell-type and gene on cell-type-matched 10Xv3 scRNA-seq datasets from the BICCN consortium (BRAIN Initiative Cell Census Network (BICCN), 2021). Spatial localization SPRAWL scores and ReadZS 3’ UTR lengths were correlated by gene/cell-type (Figure 4a). Twenty-six genes were detected as having significant SPRAWL/ReadZS correlation after BH multiple hypothesis correction at an FDR level of 0.05, a twofold enrichment compared to what is expected by chance (see Methods: Correlation analysis between SPRAWL and ReadZS). No significant gene/metric pairs were detected from the CZB mouse kidney/liver dataset which was the only other dataset with matched scRNA-seq. The lack of significant correlations between the SPRAWL metric score and 3’ UTR length in this dataset could be due to multiple factors, including this dataset having fewer coarser cell-type definitions.
 
-## Slc32a1, Cxcl14, and Nxph1 3’ UTR length predicts sub-cellular localization
+![Figure 4.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig4-v1.jpg)
+
+**Figure 4.:** (a) Workflow to calculate median 3’ UTR length and spatial score per gene/cell-type. (b) Slc32a1 median centrality, (c) Cxcl14 radial, and (d) Nxph1 punctate SPRAWL scores from the BRAIN Initiative Cell Census Network (BICCN) MERFISH dataset correlate significantly with 3’ UTR length determined from 10 X scRNA-seq data by ReadZS. The left-column boxplots show individual SPRAWL cell scores as overlaid dots. The cell-types are sorted by increasing median score marked in red. The two cell-types with the highest and lowest median SPRAWL scores are plotted individually while the remaining cell-types are collapsed into the ‘Other’ category. Gene/cell examples are shown to the left of the boxplots for each extreme cell-type group. The density plots in the middle column show estimated 3’ UTR lengths for each read mapping within the annotated 3’ UTR, stratified by cell-type. Lengths were approximated as the distance between the annotated start of the 3’ UTR and the median read-mapping position. Each density plot is normalized by cell-type to show relative shifts in 3’ UTR length with median lengths depicted with red lines. The scatterplots show the significant correlations between the median SPRAWL score and the median 3’ UTR length. The two cell-types with the highest, and the two with the lowest SPRAWL median scores are highlighted.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) ReadZS detects statistically significant 3’ UTR length differences in the human TIMP3 3’ UTR in endothelial cell-types from the Tabula Sapiens consortium datasets across conditions. HuR binding sites from PAR-CLIP are shown above the Timp3 gene structure diagram. The last track shows high vertebrate sequence conservation throughout the UTR. Normalized expression of TIMP3 against (b) ACTIN and (c) GAPDH shows decreasing expression of TIMP3 throughout increasing culture direction in all tissue compartments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Subset of computationally predicted 3’ UTRs from the miRWalk database for Slc32a1, Cxcl4, and Nxph1 indicate a potential mechanism of regulation for 3’ UTRs of different lengths. (b) Three genes Ubash3b, Igfbp4, and Wipf3 show significant negative correlation between various Subcellular Patterning Ranked Analysis With Labels (SPRAWL) metrics and estimated 3’ UTR length.
+
+### Slc32a1, Cxcl14, and Nxph1 3’ UTR length predicts sub-cellular localization
 
 SPRAWL detects 26 unique genes and 84 pairs of gene/metric combinations (i.e. gene1/peripheral, gene1/radial) with significant correlations to that gene’s 3’ UTR length. From this list, Slc32a1, Cxcl14, and Nxph1 were selected as representatives of the central, radial, and punctate metrics, respectively. All have significant evidence for cell-type differential expression of un-annotated 3’ UTRs and an unusually high degree of 3’ UTR conservation. Figure 4 depicts the SPRAWL scores and predicted 3’ UTR lengths for Slc32a1, Cxcl14, and Nxph1 in multiple cell-types. Representative low and high-scoring cells for each gene/cell-type pair were chosen randomly after filtering for SPRAWL scores less than –0.2 and greater than 0.2, respectively, having 5 or more RNA spots of the gene of interest.
 
@@ -119,9 +147,17 @@ Nxph1, neurexophilin-1, is a ligand of Nrxn1 and is expressed in inhibitory neur
 
 All three genes, Slc32a1, Cxcl14, and Nxph1, have predicted miRNA binding sites tiling their 3’ UTRs suggesting possible mechanisms of differential 3’ UTR post-transcriptional selection and regulation (Figure 4—figure supplement 2a). We show an additional three genes with correlated spatial and 3’ UTR length show similar patterns (Figure 4—figure supplement 2b).
 
-## Timp3 3’ UTR length predicts peripheral localization
+### Timp3 3’ UTR length predicts peripheral localization
 
 In the BICCN data, Timp3 has the largest observed variation in estimated 3’ UTR length between cell-types, with the most divergent read-buildup between layer-6 corticothalamic (L6 CT) and endothelial cells reflecting at least two dominant 3’ UTRs differing in length by >2 kilobases (Figure 5a). These 3’ UTR read densities were consistent across mouse biological sequencing replicates within 10 X scRNA-seq experiments. Only one UTR is annotated, though a gene antisense to Timp3, Sync3 on the minus strand, overlaps its transcriptional radius. We are confident that observed reads can be confidently attributed to Timp3 as Sync3’s nearest exon is ~5 kb from Timp3’s UTR and plus-strand mapping reads alone were analyzed.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig5-v1.jpg)
+
+**Figure 5.:** (a) ReadZs detects two major alternative 3’ UTRs in mouse Timp3 from 10 X scRNA-seq which correspond to miR-181c-5p and miR-221–3 p binding sites. Reads from L6 critical threshold (CT) cells predominantly map to a novel upstream shortened 3’ UTR while endothelial cells primarily express the longer annotated 3’ UTR. The UCSC genome browser placental animal sequence conservation shows highly conserved regions in blue. Fisher’s exact test was highly significant between the two peaks denoted by the dotted lines between the two cell types. (b) Timp3 mean periphery score is significantly correlated with Timp3 median ReadZs score across MOp cell-types with Pearson correlation coefficient of –0.91 and p<<0.05. (c) Fraction of TIMP3 RNA full-length 3’ UTR reads, gray box, and (d) bar plots, decreases during human lung tissue culture.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Genes encoding signal recognition peptides do not have significantly differential SPRAWL scores while (b) genes such as Wipf3 and Slc30a3 have significantly lower peripheral scores in cell-types with higher nuclear expression. Satb2 shows the opposite unexpected correlation.
 
 Timp3 is a secreted matrix metalloprotease inhibitor that has been implicated in multiple diseases ranging from cardiomyopathies to macular dystrophies (Weber et al., 1994; Schrimpf et al., 2012), but subcellular RNA localization patterns have not been reported. Elevated Timp3 gene expression (Capone et al., 2016) is linked to compromised cerebral blood flow, and the RNA is experimentally validated to be a target of microRNA (miRNA) regulation (Fiorentino et al., 2013). We observe Timp3 RNA to be significantly peripheral in L6 IT neurons; while being insignificantly peripherally localized in Sst cells. SPRAWL and ReadZS 3’ UTR scores had a significant negative correlation of R=−0.68 and p<<0.05 Pearson BH-corrected p-value. Timp3’s longer, annotated 3’ UTR isoform is expressed in cell-types with significantly less peripheral localization as compared to shorter unannotated isoforms (Figure 5b).
 
@@ -131,9 +167,17 @@ Both mouse and human Timp3 show high conservation within its 3’ UTR. Conservat
 
 Together, we hypothesize that Timp3 may have both secreted and non-secreted isoforms, with a precedent set by Cd47 (Berkovits and Mayr, 2015). Furthermore, we hypothesize that this regulation is controlled by alternative 3’ UTR isoform lengths that determine subcellular RNA localization through interaction with RBPs and microRNAs that specifically bind the longer isoform. This example illustrates the power of SPRAWL for unsupervised discovery of subcellular localization and its integration with isoform-resolved, annotation-free analysis of scRNA-seq to generate testable biological hypotheses regarding isoform-specific regulation and function.
 
-## Human brain pericyte cell culture shows differential temporal Timp3 3’ UTR usage
+### Human brain pericyte cell culture shows differential temporal Timp3 3’ UTR usage
 
 Motivated by the findings that (1) mouse brain cell-types expressing shorter Timp3 3’ UTR isoforms were correlated with increasingly peripherally localized Timp3 RNA (Figure 5b), and (2) Timp3 3’ UTR lengths decrease throughout human lung slice culture (Figure 5c and d), we hypothesized that Timp3 protein secretion would be sensitive to RNA localization and/or 3’ UTR length. We tested this hypothesis using a human brain pericyte cell-line known to express Timp3 protein. The pericytes were cultured over 5 d with supernatant samples collected at 6, 24, 48, and 72 after plating. At each timepoint, the number of cells, total extracellular protein concentration (BCA), extracellular Timp3 protein (ELISA), and Timp3 RNA (qPCR) were measured (Figure 6a).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig6-v1.jpg)
+
+**Figure 6.:** (a) Experimental setup for human pericyte cell culture with reverse-transcriptase quantitative PCR (RT-qPCR) and extracellular TIMP3 protein ELISA readouts at four-timepoints. (b) TIMP3 protein secretion per cell per hour does not significantly change throughout culture time, even though the total protein measured by BCA does change. (c) qPCR experiment design with proximal and distal qPCR primers to distinguish long and short 3’ UTR isoforms. The proximal qPCR primer can detect both long and short isoforms while the distal primer can only amplify the long 3’ UTR. (d) The ratio of distal to proximal primer-template abundances significantly decreases throughout culture time, implying increased usage of the short TIMP3 3’ UTR compared to the long isoform. (e) TIMP3 3’ UTR abundance, normalized by 18 s housekeeper abundance, fluctuates from halving to doubling between culture timepoints for both distal and proximal primers.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87517/elife-87517-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Of the two proximal and two distal primer pairs, only proximal primer 1 had low efficiency at 81.9%. The remaining three primers showed nearly perfect 100% efficiency, where a cDNA dilution of 2 X resulted in a critical threshold value increase of 1. Dots indicate critical threshold (CT) readings of technical replicates done in triplicate with shaded regions between them. Dashed lines indicate 100% efficiency curves.
 
 We observed that the rate of per-cell Timp3 protein secretion, as measured by ELISA, does not significantly change throughout culture time, averaging 350 Timp3 protein molecules per-cell per-hour. The approximately 15- hr half-life of Timp3 protein in cell culture (Mao et al., 2021) was taken into account when making these calculations (Methods Timp3 protein production estimation). However, total extracellular protein per-cell slightly decreased from 6 to 24 hr of cell culture as measured by BCA (Figure 6b). Taken together these findings suggest that Timp3 protein production is not variable during cell culture.
 
@@ -161,7 +205,108 @@ There exists no directly competing method to SPRAWL which is able to leverage hi
 
 ## Materials and methods
 
-## SPRAWL input data and preprocessing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPRAWL</td>
+      <td>This paper, Bierman, 2024</td>
+      <td>https://github.com/salzman-lab/SPRAWL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Human brain vascular pericytes</td>
+      <td>Sciencell</td>
+      <td>#1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Proximal_primer_1_fwd</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>GGGAACTATCCTCCTGGCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Proximal_primer_1_rev</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>TTCTGGCATGGCACCAGAAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Proximal_primer_2_fwd</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>AGGTCTATGCTGTCATATGGGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Proximal_primer_2_rev</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>TGGGGCCAGGAGGATAGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Distall_primer_1_fwd</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>AATTGGCTCTTTGGAGGCGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Distal_primer_1_rev</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>GCGGATGCTGGGAGAATCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Distal_primer_2_fwd</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>TAGCCAGTCTGCTGTCCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Distal_primer_2_rev</td>
+      <td>This paper</td>
+      <td>Timp3 qPCR primer</td>
+      <td>GGGTTCGAGATCTCTTGTTGG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qPCR Kit</td>
+      <td>BioRad</td>
+      <td>SsoAdvanced Universal supermix</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human TIMP-3 ELISA Kit</td>
+      <td>Invitrogen</td>
+      <td># EH458RB</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### SPRAWL input data and preprocessing
 
 SPRAWL takes as input processed datasets from MERFISH, Vizgen, and SeqFISH + requiring cell-boundary and RNA spot x,y, and gene label information. For MERFISH and Vizgen, this data is the product of applying MERlin (Emanuel and Babcock, 2020) on the raw MERFISH microscopy images to align the images between sequencing rounds, call RNA spots, and perform cell segmentation using a seeded watershed approach described in a prior MERFISH work (Moffitt et al., 2018). SeqFISH + utilizes a similar approach to identify and decode RNA spots, but then simply defines the cell boundary as the convex hull around all points (Eng et al., 2019).
 
@@ -177,7 +322,7 @@ The CZB kidney/liver dataset contained a single mouse kidney and liver sample th
 
 We have specified a simple HDF5 format to standardize the different data sources. In brief, data is stored in a cell-centric manner, consolidating RNA spots and cell boundaries into the same object. This flexible format is described in detail in the GitHub repository, (copy archived at Bierman, 2024) and includes vignettes with example datasets. For MERFISH and Vizgen datasets, the RNA spots and cell boundaries were assigned locations in a global coordinate, but lacked cell assignments for each RNA spot. We have written simple and fast scripts to make these assignments using the python Rtree and shapely (Gillies et al., 2007) packages. The GitHub repository includes the next flow pipelines used to transform the downloaded datasets to this HDF5 format.
 
-## SPRAWL methodology
+### SPRAWL methodology
 
 SPRAWL preprocesses spatial datasets into a standardized HDF5 file that contains cell boundary, cell-type, and RNA location information generated from MERFISH/Vizgen and SeqFISH + datasets (Figure 1a). Next per-gene/per-cells are calculated. For the peripheral metric, all RNA spots are ranked based on their minimum distance to the cell boundary (Figure 1b), and then their means are used to generate a gene/cell-type score and p-value (Figure 1c). Scores near 1 indicate a gene is highly peripheral in a cell-type, while scores near –1 indicate a pattern of RNA molecules far from the cell-boundary. Intuitively, if a gene is not significant it will not be close or far from the cell boundary and its peripheral score will be near 0, and its p-value will be insignificant. The centrality metric is conceptually similar, where ranking is determined by minimum distance to the cell centroid and positive values indicate unexpectedly centrally-biased distributions. Empirically, the centrality and peripherality metrics are anti-correlated (Figure 1—figure supplement 1b), but not perfectly, as it is possible for an RNA spot to be simultaneously close to the periphery and cell centroid with certain cell shapes such as a ‘dumbbell.’ Only the ranking step is different between the peripheral and central metrics; all downstream steps are identical.
 
@@ -185,128 +330,178 @@ Under the null hypothesis that a gene is not subcellularly patterned within a ce
 
 The resulting values y are used to calculate two-sided p-values using the CDF of the standard normal. Multiple hypothesis testing from the numerous gene/cell-type pairs is controlled using the Benjamini-Hochberg correction (Benjamini and Hochberg, 1995).
 
-## SPRAWL peripheral and central metric definition
+### SPRAWL peripheral and central metric definition
 
-Each gene-cell pair is assigned a SPRAWL score by (1) ranking all RNA spots, (2) calculating median ranks per gene, and (3) normalizing by the expected median rank. Consider a single cell, with a single z-slice, that has n total RNA spots, and g unique genes with each gene having m1,m2,m3,...,mg spots such that ∑igmi=n.
+Each gene-cell pair is assigned a SPRAWL score by (1) ranking all RNA spots, (2) calculating median ranks per gene, and (3) normalizing by the expected median rank. Consider a single cell, with a single z-slice, that has $n$ total RNA spots, and $g$ unique genes with each gene having $m_{1},m_{2},m_{3},...,m_{g}$ spots such that $\sumigm_{i}=n$.
 
-For the peripheral metric, let d1,d2,d3,...,dn represent the minimum euclidean distance to the periphery of each RNA spot, for the central metric these distances are instead measured from the cell centroid. Each spot is assigned a rank from 1 to n such that the spot with rank 1 is argmind1,d2,d3,...,dn and the spot with rank n is argmaxd1,d2,d3,...,dn randomly breaking ties where needed.
+For the peripheral metric, let $d_{1},d_{2},d_{3},...,d_{n}$ represent the minimum euclidean distance to the periphery of each RNA spot, for the central metric these distances are instead measured from the cell centroid. Each spot is assigned a rank from 1 to n such that the spot with rank 1 is $argmind1,d_{2},d_{3},...,d_{n}$ and the spot with rank $n$ is $argmaxd1,d_{2},d_{3},...,d_{n}$ randomly breaking ties where needed.
 
-The ranks are then grouped by gene to calculate the median ranks t1,t2,t3,...,tg. The peripheral/central SPRAWL gene/cell score xi for 1≤i≤g, is the median rank ti normalized by the expected median rank te which is n+1/2 for all genes independent of mi:xi=te−tite−1
+The ranks are then grouped by gene to calculate the median ranks $t_{1},t_{2},t_{3},...,t_{g}$. The peripheral/central SPRAWL gene/cell score $x_{i}$ for $1\leqi\leqg$, is the median rank $t_{i}$ normalized by the expected median rank $t_{e}$ which is $n+1/2$ for all genes independent of $m_{i}$:
 
-Note that −1≤xi≤1 since minti=1 yields xi=1, and maxti=n yields xi=−1.
+$$
+x_{i}=\frac{t_{e}−t_{i}}{t_{e}−1}
+$$
 
-To generalize the definition of the peripheral/central SPRAWL score in the case that a cell has multiple z-slices with a unique cell-boundary and set of spots for each, the distances di are calculated from each RNA spot to the cell-boundary/centroid in the same z-slice, and then the ranks are assigned across all z-slices.
+Note that $−1\leqx_{i}\leq1$ since $minti=1$ yields $x_{i}=1$, and $maxti=n$ yields $x_{i}=−1$.
 
-## SPRAWL radial metric definition
+To generalize the definition of the peripheral/central SPRAWL score in the case that a cell has multiple z-slices with a unique cell-boundary and set of spots for each, the distances $d_{i}$ are calculated from each RNA spot to the cell-boundary/centroid in the same z-slice, and then the ranks are assigned across all z-slices.
+
+### SPRAWL radial metric definition
 
 The radial SPRAWL score is assigned to each gene-cell pair by performing gene-label swapping bootstrapping iterations and measures the tendency of genes to be in one sector of a cell or to be radially dispersed.
 
-Consider a single cell, with a single z-slice, that has n total RNA spots, and g unique genes with each gene having m1,m2,m3,...,mg spots such that ∑igmi=n. We restrict to mi>2 since genes with a single spot do not conceptually have a radial bias.
+Consider a single cell, with a single z-slice, that has $n$ total RNA spots, and $g$ unique genes with each gene having $m_{1},m_{2},m_{3},...,m_{g}$ spots such that $\sumigm_{i}=n$. We restrict to $m_{i}>2$ since genes with a single spot do not conceptually have a radial bias.
 
-Before permuting the gene labels, we randomly select a pair of RNA spots for each gene and measure the angle between them with respect to the cell-boundary centroid. Let θ represent the minimum angle formed by the three points of the location of RNA spot 1 x1,y1, the cell centroid xc,yc, and RNA spot 2 x2,y2. The cell centroid xc,yc is approximated as the mean of all vertices in the cell boundary polygon. This process is repeated 10 times and averaged to calculate the mean observed angle of each gene.
+Before permuting the gene labels, we randomly select a pair of RNA spots for each gene and measure the angle between them with respect to the cell-boundary centroid. Let $\theta$ represent the minimum angle formed by the three points of the location of RNA spot 1 $x_{1},y_{1}$, the cell centroid $x_{c},y_{c}$, and RNA spot 2 $x_{2},y_{2}$. The cell centroid $x_{c},y_{c}$ is approximated as the mean of all vertices in the cell boundary polygon. This process is repeated 10 times and averaged to calculate the mean observed angle of each gene.
 
 The same process is repeated after randomly swapping gene labels but keeping the RNA spot locations the same. We perform 1000 bootstrap iterations. These mean permuted angles serve as the null distribution of mean angles which are used in conjunction with the mean observed angle to calculate both mean and variance. In the case that a cell has multiple z-slices, the mean cell centroid over all slices is used to calculate pairwise angles without regard to z-slices.
 
-## SPRAWL punctate score definition
+### SPRAWL punctate score definition
 
 The punctate SPRAWL score is conceptually identical to the radial score and also relies on bootstrapping. The punctate score is assigned to each gene-cell pair measuring euclidean distances instead of angles between randomly selected gene pairs. The null distribution is created using the same process as the radial score. In the case that a cell has multiple z-slices, the scoring is performed by projecting all points onto the same (x,y) plane before measuring euclidean distances. This simplification can be readily replaced with true 3D pairwise distances.
 
-## Theoretical features of the SPRAWL peripheral score
+### Theoretical features of the SPRAWL peripheral score
 
-While the punctate and radial metrics are calculated using bootstrapping and estimated statistics, the SPRAWL peripheral and central metrics have known properties under the null hypothesis that the gene of interest is not spatially regulated in the given cell. Under this null, the ranks of the gene of interest are chosen with equal probability. In an alternate hypothesis such as a gene being peripherally localized in a cell, RNA spots of the gene of interest will have a skewed probability of being assigned lower ranks, closer to the cell boundary. Under the null hypothesis EXi=0, since ETi=te for gene 1≤i≤g.
+While the punctate and radial metrics are calculated using bootstrapping and estimated statistics, the SPRAWL peripheral and central metrics have known properties under the null hypothesis that the gene of interest is not spatially regulated in the given cell. Under this null, the ranks of the gene of interest are chosen with equal probability. In an alternate hypothesis such as a gene being peripherally localized in a cell, RNA spots of the gene of interest will have a skewed probability of being assigned lower ranks, closer to the cell boundary. Under the null hypothesis $EX_{i}=0$, since $ET_{i}=t_{e}$ for gene $1\leqi\leqg$.
 
-VarXi depends on the total number of RNA spots in a cell n, and the number of spots of the gene i, mi. For example, in the extreme case where mi=n, every spot in a cell is the gene of interest, and  VarXi = 0. VarXi for any gene can be calculated under the null by iterating over all possible values of x∈X since X is a discrete R.V.Var[X]=∑xP(T=te+x(1−te))∪te−x(1−te)
+$VarX_{i}$ depends on the total number of RNA spots in a cell $n$, and the number of spots of the gene $i$, $m_{i}$. For example, in the extreme case where $m_{i}=n$, every spot in a cell is the gene of interest, and  $VarX_{i}$ = 0. $VarX_{i}$ for any gene can be calculated under the null by iterating over all possible values of $x\inX$ since $X$ is a discrete R.V.
 
-When there are an odd number of gene spots m, t is the m+1/2 rank order statistic, and under the null hypothesis where the ranks are chosen uniformly, the probability of the r-th order statistic taking the value t equals:P(T=t)=t−1r−1n−tm−rnm
+$$
+Var[X]=\sumxP(T=t_{e}+x(1−t_{e}))∪t_{e}−x(1−t_{e})
+$$
 
-Where n is the total number of RNA spots, m is the number of RNA spots for the gene of interest, and r=m+1/2.P(R0=r)=r−1m+12−1n−rm−m+12nm
+When there are an odd number of gene spots $m$, $t$ is the $m+1/2$ rank order statistic, and under the null hypothesis where the ranks are chosen uniformly, the probability of the $r$-th order statistic taking the value $t$ equals:
 
-Calculating VarX when m is even-valued requires significantly more calculation. We still need to calculatePX2=x2=P
+$$
+P(T=t)=\frac{\frac{t−1}{r−1}\frac{n−t}{m−r}}{\frac{n}{m}}
+$$
 
-But t is no longer an order statistic and does not have a closed-form calculation. Instead, t is the average of the ‘left of center’ m2-th order-statistic L, and the ‘right of center’ m2+1-th order statistic R. Then for a given x and corresponding t:P(T=t)=P(L+R2=t)
+Where $n$ is the total number of RNA spots, $m$ is the number of RNA spots for the gene of interest, and $r=m+1/2$.
 
-We calculate PT=t by summing the probabilities of observing all possible pairs of L and R that sum to 2t. We can think of starting L and R as close to t as possible, and then ‘walking’ L and R away from t one rank at a time in lockstep summing over all i’s such that 1≤t−1≤n where n is the total number of spots in the cell:P(L+R2=t)=∑iP(L=t−i∩R=t+i)=∑iP(R=t+1∨L=t−1)P(L=t−1)
+$$
+P(R_{0}=r)=\frac{\frac{r−1}{\frac{m+1}{2}−1}\frac{n−r}{m−\frac{m+1}{2}}}{\frac{n}{m}}
+$$
 
-Omitted for clarity, the ceiling of t−1 is taken and the floor of t+1 above to account for non-integer t.
+Calculating $VarX$ when $m$ is even-valued requires significantly more calculation. We still need to calculate
 
-PR=r∨L=l has an intuitive interpretation that simplifies to an order statistic probability. Since we observe L=l we know that the R-th order statistic must be one of the ranks between l+1 and n inclusively. We can renumber these ranks to be between 1 and n−l+1 and we are interested in the probability that the 1-st order statistic takes the value r−l in the renumbering. This has the same closed-form solution as described in the odd-valued m case.
+$$
+PX^{2}=x^{2}=P
+$$
 
-Computing VarX for even-valued m is On2 since we have to iterate over all possible medians, and then for each median we have to ‘walk’ L and R outwards which is itself On. In comparison, the computation of VarX for odd-valued m is On. Through various optimizations, multiprocessing, and caching, SPRAWL calculated VarX in under an hour for all processed samples.
+But $t$ is no longer an order statistic and does not have a closed-form calculation. Instead, $t$ is the average of the ‘left of center’ $\frac{m}{2}$-th order-statistic $L$, and the ‘right of center’ $\frac{m}{2}+1$-th order statistic $R$. Then for a given $x$ and corresponding $t$:
 
-## SPRAWL is not highly sensitive to exact cell boundary segmentation
+$$
+P(T=t)=P(\frac{L+R}{2}=t)
+$$
+
+We calculate $PT=t$ by summing the probabilities of observing all possible pairs of $L$ and $R$ that sum to $2t$. We can think of starting $L$ and $R$ as close to $t$ as possible, and then ‘walking’ $L$ and $R$ away from $t$ one rank at a time in lockstep summing over all $i$’s such that $1\leqt−1\leqn$ where $n$ is the total number of spots in the cell:
+
+$$
+P(\frac{L+R}{2}=t)=\sumiP(L=t−i∩R=t+i)=\sumiP(R=t+1∨L=t−1)P(L=t−1)
+$$
+
+Omitted for clarity, the ceiling of $t−1$ is taken and the floor of $t+1$ above to account for non-integer $t$.
+
+$PR=r∨L=l$ has an intuitive interpretation that simplifies to an order statistic probability. Since we observe $L=l$ we know that the $R$-th order statistic must be one of the ranks between $l+1$ and $n$ inclusively. We can renumber these ranks to be between 1 and $n−l+1$ and we are interested in the probability that the 1-st order statistic takes the value $r−l$ in the renumbering. This has the same closed-form solution as described in the odd-valued $m$ case.
+
+Computing $VarX$ for even-valued $m$ is $On^{2}$ since we have to iterate over all possible medians, and then for each median we have to ‘walk’ $L$ and $R$ outwards which is itself $On$. In comparison, the computation of $VarX$ for odd-valued $m$ is $On$. Through various optimizations, multiprocessing, and caching, SPRAWL calculated $VarX$ in under an hour for all processed samples.
+
+### SPRAWL is not highly sensitive to exact cell boundary segmentation
 
 Sensitivity of SPRAWL to segmentation and cell-boundary locations was tested by computationally shrinking the cell-boundaries. Median peripheral scores per gene/cell-type were significantly correlated between original cell-boundaries and shrunk cell-boundaries with a Pearson correlation coefficient of 0.85 on the mouse motor cortex datasets (Figure 1—figure supplement 1e), suggesting empirically that SPRAWL would have low sensitivity to potential cell-segmentation errors.
 
-## SPRAWL gene/cell-type scoring
+### SPRAWL gene/cell-type scoring
 
-Consider a cell-type with k cells with non-zero counts of a gene of interest where each cell is assigned a SPRAWL score X1,X2,...,Xk. Note that the Xi are not i.i.d. due to having different VarXi resulting from different values of m and n as described above.
+Consider a cell-type with k cells with non-zero counts of a gene of interest where each cell is assigned a SPRAWL score $X_{1},X_{2},...,X_{k}$. Note that the $X_{i}$ are not i.i.d. due to having different $VarX_{i}$ resulting from different values of $m$ and $n$ as described above.
 
-However, we do make the assumption that the Xi are independent, which has the biological interpretation that the localization of the gene of interest in one cell does not depend on its localization in another cell. Under this assumption, we utilize the Lyapunov Central Limit Theorem Billingsley, 1995 to estimate that limk→∞1∑i=1kσi2∑i=1k(Xi−μi)→N(0,1)indistribution.
+However, we do make the assumption that the $X_{i}$ are independent, which has the biological interpretation that the localization of the gene of interest in one cell does not depend on its localization in another cell. Under this assumption, we utilize the Lyapunov Central Limit Theorem Billingsley, 1995 to estimate that
 
-Under the assumption of bounded variance of the Xi satisfying Theorem 27.2 and Corollary 27.3 from Billingsley, 1995:limk→∞1(∑i=1kσi)2+δ∑i=1kE[|Xi−μi|2+δ]=0
+$$
+\frac{limk→∞1}{\sqrt{\sumi=1k\sigma_{i}^{2}}}\sumi=1k(X_{i}−\mu_{i})→N(0,1)indistribution.
+$$
 
-We approximate values of y for each gene/cell-type using the observed xi and theoretical mean and variance whose calculation is described above. These y are used to calculate two-sided p-values from the CDF of the standard normal.
+Under the assumption of bounded variance of the $X_{i}$ satisfying Theorem 27.2 and Corollary 27.3 from Billingsley, 1995:
 
-Multiple hypothesis testing over all gene/cell-type pairs is controlled using the Benjamini-Hochberg correction (Benjamini and Hochberg, 1995) at a significance level of α=0.05.
+$$
+\frac{limk→∞1}{(\sumi=1k\sigma_{i})^{2+\delta}}\sumi=1kE[|X_{i}−\mu_{i}|^{2+\delta}]=0
+$$
 
-We calculate the effect size for each gene/cell-type as the mean gene/cell score 1k∑ikxi.
+We approximate values of $y$ for each gene/cell-type using the observed $x_{i}$ and theoretical mean and variance whose calculation is described above. These $y$ are used to calculate two-sided p-values from the CDF of the standard normal.
 
-## SPRAWL is highly specific in identifying genes with subcellular patterning conditional on cell boundaries
+Multiple hypothesis testing over all gene/cell-type pairs is controlled using the Benjamini-Hochberg correction (Benjamini and Hochberg, 1995) at a significance level of $\alpha=0.05$.
+
+We calculate the effect size for each gene/cell-type as the mean gene/cell score $\frac{1}{k}\sumikx_{i}$.
+
+### SPRAWL is highly specific in identifying genes with subcellular patterning conditional on cell boundaries
 
 If the gene labels of RNA spots within cells of real datasets are permuted to remove any underlying spatial patterning (Methods), none of the metrics detect significant gene/cell-type patterning after Benjamini Hochberg (BH) multiple hypothesis correction with an FDR of 0.05 for any of the four datasets tested (Benjamini and Hochberg, 1995). All metrics were observed to produce uniform p-values under this null dataset regardless of the number of cells per cell-type, as indicated by theory. The median score per gene/cell-type is dependent on the number of cells, with larger groups having median scores closer to zero (Figure 1—figure supplement 1). The lack of any false positive calls under the permuted null is consistent at an FDR of 0.05.
 
-## SPRAWL filtering
+### SPRAWL filtering
 
 For all datasets sparse cells and cell-types were filtered out by removing cells with fewer than 10 unique genes and/or fewer than 200 unique RNA spots. Gene/cell-type pairs with fewer than 20 cells were removed from consideration. Further filtering for the radial and punctate metrics requires the removal of genes from cells that have only a single RNA spot. These spots are removed and then the remaining spots can still be scored in this cell for other genes. All filtering steps are implemented as user-accessible parameters and have made SPRAWL more conservative, increasing the confidence of positive hits, but reducing the power to detect real localization differences that occur for lowly expressed genes and/or rare cell-types.
 
-## ReadZS usage and modifications
+### ReadZS usage and modifications
 
 The ReadZS (Meyer et al., 2021) detects read buildup differences between cell-types from single-cell RNA-seq datasets in an annotation-independent manner using equal-sized windows tiling the genome. We modified the ReadZS to analyze at the 3’ UTR-level of just the ~250 genes imaged in the BICCN MOp dataset. The 10 X scRNA-seq data was processed individually for the four different mouse donors while the SS2 cells across 45 donors were processed as a single sample due to limited cell counts per mouse.
 
-## Correlation analysis between SPRAWL and ReadZS for MERFISH MOp datasets
+### Correlation analysis between SPRAWL and ReadZS for MERFISH MOp datasets
 
 For a given SPRAWL gene and spatial metric, the median ReadZS score of that gene for each cell-type was correlated against the median SPRAWL score over the same cell-types. For positive-strand genes, a larger ReadZS score indicates longer 3’ UTR isoforms, and vice versa for negative-strand genes. A proxy for 3’ UTR length was defined as the distance between the annotated start of the 3’ UTR and the RNA mapping position. The span in estimated 3’ UTR lengths was measured as the difference between the longest and shortest median cell-type 3’ UTR proxy lengths.
 
-## Vizgen Brainmap and Liver showcase clustering to produce cell-type proxies
+### Vizgen Brainmap and Liver showcase clustering to produce cell-type proxies
 
 Neither the Vizgen MERFISH Mouse Brain Map nor Liver showcase datasets provided cell-type annotations. We decided to roughly cluster the cells into groups to serve as a proxy for cell-type. The Leiden clustering method was used to find well-connected clusters in all of the filtered 90% highest spot-count cells using the Scanpy python package (Wolf et al., 2018). First, each dataset was normalized so that each cell had 10,000 spots, then the top 40 principal components were used to build the neighborhood graph with 10 neighbors and perform the Leiden clustering. This resulted in 22 clusters for the Brainmap dataset and 100 clusters for the Liver dataset. The fraction of cells in each cluster was consistent across biological replicates for the Vizgen Liver (Figure 3—figure supplement 1) and Vizgen Brainmap (data not shown) indicating that cells were primarily clustering by type, and not by batch. To estimate the batch effect, we calculated the probability that two cells originated from the same biological replicate given that they were in the same cluster, and compared this to the overall probability that two cells are from the same biological replicate. All clusters were within 0.05 of the overall probability of two cells sharing a batch.
 
-## Simulations to benchmark SPRAWL sensitivity and specificity
+### Simulations to benchmark SPRAWL sensitivity and specificity
 
 Null simulated datasets were created from the MERFISH BICCN spatial dataset by randomly permuting the RNA-spot gene labels within each cell across the entire dataset. The cell-boundaries, RNA-spot counts, and RNA (x,y,z) coordinates were preserved in the null dataset.
 
-## Identification of RBP and miRNA binding to Timp3 3’ UTR
+### Identification of RBP and miRNA binding to Timp3 3’ UTR
 
 The RNAInter v4.0 RNA interactome repository was used to search for RBPs and miRNAs with experimental evidence of binding in the 3’ UTR of the Mus musculus Timp3, Slc32a1, Cxcl14, and Nxph1 genes (Kang et al., 2022). Target regions for RBPs were taken from RNAInter, while miRNA binding sites were generated and cross-checked against TargetScan release 8.0 (McGeary et al., 2019) and miRWalk (Sticht et al., 2018). Only miRNAs shared by RNAInter, TargetScan, and miRWalk results with experimental evidence were considered.
 
-## RNAs with signal peptides do not have significant central or peripheral localization
+### RNAs with signal peptides do not have significant central or peripheral localization
 
 We hypothesized that RNAs encoding a signal recognition peptide (SRP) for translation on the rough endoplasmic reticulum would be nuclear localized and would, therefore, be more centrally localized than genes without signal peptides. We predicted the presence of SRPs using DeepSig (Savojardo et al., 2018) with protein sequences downloaded from Gencode release M28 protein-coding transcripts fasta for all genes present across the MOp, Vizgen Brainmap, and SeqFISH + cortex datasets. For genes with multiple protein isoforms, the longest isoform was selected for SRP prediction. In all datasets, the per-gene per-cell peripheral and central scores were not significantly different according to a Kolmogorov Smirnov test (Figure 5—figure supplement 1a).
 
-## Genes enriched in single-nucleus RNAseq are marginally correlated with periphery score
+### Genes enriched in single-nucleus RNAseq are marginally correlated with periphery score
 
 We tested whether nuclear-localizing genes would be assigned higher SPRAWL central periphery scores utilizing both the 10 X single-cell RNAseq (scRNA-seq) as well as 10 X single-nucleus RNAseq (snRNA-seq) from the BICCN consortium (BRAIN Initiative Cell Census Network (BICCN), 2021). The single-cell sequencing data was first normalized to the number of counts per gene per cell per one million (TPM) reads for both the cell and nuclear datasets. The median gene/cell-type TPM for both sequencing datasets was determined, and the nuclear-fraction score was determined to be snRNA-seq-TPM/(snRNA-seq-TPM +scRNA-seq TPM). The median periphery score per gene/cell-type was correlated against the median snRNA-seq-TPM, scRNA-seq-TPM, and nuclear-fraction. In all comparisons, the correlation coefficients were small in magnitude, but were significantly positive for the snRNA-seq, indicating a link between X tendency and peripherality, and significantly negative in the nuclear-fraction analyses, indicating a link between the gene’s enrichment in nuclear reads and its distance from the cell periphery. The small effect size was detectable due to the approximately 8000 gene/cell-type data points and provides weak support for the hypothesis. We investigated which genes, if any, are differentially nuclear-enriched across cell-types by sequencing and concordantly by peripheral score and discovered Wipf3 (Figure 5—figure supplement 1b) and Slc30a3, which were highly negatively correlated with mean Pearson correlation coefficients of –0.86 and –0.93 across MERFISH MOp samples. Surprisingly, Satb2 was also discovered to be significant, but had a highly positive mean Pearson correlation coefficient of 0.95. All genes were determined to be significant after Benjamini Hochberg’s multiple hypothesis correction.
 
-## Pericyte culture experimental setup with ELISA, qPCR, and BCA readouts
+### Pericyte culture experimental setup with ELISA, qPCR, and BCA readouts
 
 Human brain vascular pericytes (PCs, Sciencell) were cultured up to passage 5 in low-glucose DMEM (Gibco) supplemented with 10% FBS. ~1.2 × 105 PCs were seeded in each well of a six-well plate pre-coated with 0.1% gelatin. PC lysates and conditioned media were collected 6 hr after seeding for RNA isolation and ELISA applications. Similar samples were collected on 24, 48, 72, and 120 hr after seeding. The 120- hr timepoint was not considered for analysis since the cells had lifted off from the culture dish. RNA was isolated with the PureLink RNA Kit (Invitrogen) and reverse transcribed with the iScript cDNA Synthesis Kit (Bio-Rad) and qRT-PCR was performed on a CFX96 Real-Time System (Bio-Rad) using SsoAdvanced Universal supermix (Bio-Rad). Transcript levels of TIMP3 with short or long 3’ UTR relative to housekeeping gene (B-actin or GAPDH or 18 S rRNA) were determined for each timepoint with four biological replicates and three technical replicates.
 
 ELISA measurements were made using the Human TIMP-3 ELISA Kit from Invitrogen (Catalog # EH458RB) and precisely following the manufacturer’s instructions.
 
-## Timp3 protein production estimation
+### Timp3 protein production estimation
 
 An estimate of the rate of Timp3 protein production per cell per hour was calculated using the ELISA Timp3 measurements and cell counts at each hour. The extracellular Timp3 concentration from the ELISA measurements was converted from ng/mL to ng’s of Timp3 per cell using the known culture volume of 2 mLs and the cell counts at the same timepoint. This value represents the amount of extracellular Timp3 per cell; in order to calculate how much Timp3 is produced, the amount of degraded Timp3 between timepoints is estimated from the tissue-culture half-life estimate of 15 hr (Mao et al., 2021). The Timp3 protein production per cell at time t2 is estimated to be the difference between the amount of Timp3 at t2 and the previous timepoint t1, plus the degraded Timp3 fraction from t1, divided by the number of cells at t2.
 
-## qPCR analysis of pericyte culture Timp3 3’ UTR abundance
+### qPCR analysis of pericyte culture Timp3 3’ UTR abundance
 
-Our goal is to estimate the relative abundance of the short vs. long TIMP3 3' UTR isoforms at multiple timepoints during cell culture. The ratio of short to long TIMP3 3' UTR isoform in a sample can be estimated using the proximal and distal qPCR primer critical threshold (CT) values. Let the amount of template present in the sample which can be amplified by the proximal qPCR primer be represented as P. Similarly let the un-amplified amount of template for the distal primer be represented as D.
+Our goal is to estimate the relative abundance of the short vs. long TIMP3 3' UTR isoforms at multiple timepoints during cell culture. The ratio of short to long TIMP3 3' UTR isoform in a sample can be estimated using the proximal and distal qPCR primer critical threshold (CT) values. Let the amount of template present in the sample which can be amplified by the proximal qPCR primer be represented as $P$. Similarly let the un-amplified amount of template for the distal primer be represented as $D$.
 
-At the critical threshold number of cycles for both the distal CTD and proximal CTP qPCR primers, the absorbances will be equal. Assuming that the initial amount of template P and D doubles in each cycle we can create an equation to solve for the ratio of PDP∗2CTP=D∗2CTDPD=2CTD2CTP=2CTD−CTP
+At the critical threshold number of cycles for both the distal $CT_{D}$ and proximal $CT_{P}$ qPCR primers, the absorbances will be equal. Assuming that the initial amount of template $P$ and $D$ doubles in each cycle we can create an equation to solve for the ratio of $\frac{P}{D}$
 
-Since the proximal primers can amplify both the short and long isoforms, while the distal primers can only amplify the long isoforms we can rewrite the previous equation with S and L representing the amount of short and long TIMP3 3' UTR template in each sample.S+LL=2CTD−CTP
+$$
+P∗2^{CT_{P}}=D∗2^{CT_{D}}
+$$
 
-Since S>0 and L>0, we expect 2CTD−CTP>1, however, we observe 219 of 240 qPCR biological/technical replicates having 2CTD−CTP<1.
+
+
+$$
+\frac{P}{D}=\frac{2^{CT_{D}}}{2^{CT_{P}}}=2^{CT_{D}−CT_{P}}
+$$
+
+Since the proximal primers can amplify both the short and long isoforms, while the distal primers can only amplify the long isoforms we can rewrite the previous equation with $S$ and $L$ representing the amount of short and long TIMP3 3' UTR template in each sample.
+
+$$
+\frac{S+L}{L}=2^{CT_{D}−CT_{P}}
+$$
+
+Since $S>0$ and $L>0$, we expect $2^{CT_{D}−CT_{P}}>1$, however, we observe 219 of 240 qPCR biological/technical replicates having $2^{CT_{D}−CT_{P}}<1$.
 
 We at first considered that this discrepancy may be due to differences in the amplification efficiency of the proximal and distal qPCR primers which are assumed to be equal and 100% efficient with a doubling in each PCR cycle. However, if for some reason the proximal and distal primers had different efficiencies, it would be incorrect to directly compare their CT values. We estimated the efficiencies of the proximal 1, proximal 2, distal 1, and distal 2 qPCR primers by measuring the CT values at twofold dilutions of the same cDNA template and observed that all primer pairs had near 100% efficiency except for proximal primer 1 which had 82% efficiency (Figure 6—figure supplement 1). For the qPCR analyses presented in this paper, proximal primer 2 and distal primer 2 were used. Efficiency calculations were made by finding the slope, m, of the line of best fit for (x=log2 cDNA dilution) vs. (y=CT), and then converting slope to efficiency as (100/2^(m-1)).
 
-Given that qPCR efficiency is not the cause of the widely observed S+LL<1 ratios, we believe that the existence of a template which is only amplified by the distal and not the proximal qPCR primer pairs could be confounding. Such templates could arise from incomplete reverse transcription or spliced Timp3 3' UTR isoforms. While we do not have a way to control for this in the current qPCR experiment, we might expect to observe the same external effect at each timepoint.
+Given that qPCR efficiency is not the cause of the widely observed $\frac{S+L}{L}<1$ ratios, we believe that the existence of a template which is only amplified by the distal and not the proximal qPCR primer pairs could be confounding. Such templates could arise from incomplete reverse transcription or spliced Timp3 3' UTR isoforms. While we do not have a way to control for this in the current qPCR experiment, we might expect to observe the same external effect at each timepoint.

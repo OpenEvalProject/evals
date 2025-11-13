@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.29280.001 After cardiac ischaemia, a prolonged decrease of coronary microvascular perfusion often occurs even after flow is restored in an upstream artery. This 'no-reflow' phenomenon worsens patient prognosis. In the brain, after stroke, a similar post-ischaemic 'no-reflow' has been attributed to capillary constriction by contractile pericytes. We now show that occlusion of a rat coronary artery, followed by reperfusion, blocks 40% of cardiac capillaries and halves perfused blood volume within the affected region. Capillary blockages colocalised strongly with pericytes, where capillary diameter was reduced by 37%. The pericyte relaxant adenosine increased capillary diameter by 21% at pericyte somata, decreased capillary block by 25% and increased perfusion volume by 57%. Thus, cardiac pericytes constrict coronary capillaries and reduce microvascular blood flow after ischaemia, despite re-opening of the culprit artery. Cardiac pericytes are therefore a novel therapeutic target in ischaemic heart disease.
+After cardiac ischaemia, a prolonged decrease of coronary microvascular perfusion often occurs even after flow is restored in an upstream artery. This 'no-reflow' phenomenon worsens patient prognosis. In the brain, after stroke, a similar post-ischaemic 'no-reflow' has been attributed to capillary constriction by contractile pericytes. We now show that occlusion of a rat coronary artery, followed by reperfusion, blocks 40% of cardiac capillaries and halves perfused blood volume within the affected region. Capillary blockages colocalised strongly with pericytes, where capillary diameter was reduced by 37%. The pericyte relaxant adenosine increased capillary diameter by 21% at pericyte somata, decreased capillary block by 25% and increased perfusion volume by 57%. Thus, cardiac pericytes constrict coronary capillaries and reduce microvascular blood flow after ischaemia, despite re-opening of the culprit artery. Cardiac pericytes are therefore a novel therapeutic target in ischaemic heart disease.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ In the brain and retina, blood flow is partly regulated by contractile pericytes
 
 ## Results
 
-## Pericytes associate with capillaries and sympathetic axons, and express actin
+### Pericytes associate with capillaries and sympathetic axons, and express actin
 
 The left ventricular coronary capillary bed comprises an array of parallel capillaries linked by occasional connector capillaries running roughly orthogonal to the main direction of flow (Figure 1A). Labelling capillaries with FITC- or Alexa647-isolectin B4, and pericytes in rat with antibody to NG2 (Figure 1A) or PDGFRβ (Figure 1C), or in mouse with transgenic expression of DsRed under the NG2 promoter (Figure 1C), showed that the great majority of coronary capillaries were contacted by pericytes. Pericytes differ from vascular smooth muscle cells in that their somata are spatially separated along the capillary, located either with a bump-on-a-log appearance on the straight parts of capillaries, or at the branch points of capillaries (Attwell et al., 2016). More of the parallel capillaries than of the connector capillaries linking adjacent parallel capillaries received pericyte contacts (92% vs 66%, p=2.2×10−5, Figure 1B).The great majority of pericytes labelled for both NG2 and PRGFRβ (Figure 1D), although a small fraction (6.4 ± 0.2%) of PDGFRβ-expressing pericytes did not express NG2 (p=2.3×10−7). Overall there is one pericyte every ~60 μm along rat coronary capillaries, independent of location in the left ventricle (Figure 1F) although there is variability around this mean distance (Figure 1A,G).
 
@@ -39,7 +39,7 @@ Pericytes extend circumferential processes (Figure 1E,G), the contraction of whi
 
 Pericytes are conventionally assumed to constrict capillaries using α-smooth muscle actin (α-SMA: Joyce et al., 1985; Skalli et al., 1989), but variability in the labelling observed for α-SMA and data showing expression of other actin isoforms in pericytes has led to a suggestion, for CNS pericytes, that γ-actin might instead be the relevant actin isoform (DeNofrio et al., 1989; Grant et al., 2017). We therefore examined antibody labelling for α-SMA, β-actin and γ-actin (Figure 1K–M). α-SMA labelling occurred in 36.4 ± 6.7% of 57 pericytes (Figure 1N), and was rarer than labelling for β-actin (62.3 ± 2.8% of 30 pericytes) or γ-actin (76.0 ± 3.4% of 47 pericytes). α-SMA-expressing pericytes were most commonly observed in capillaries closer to the arteriole end of the capillary bed, while β- and γ-actin were seen in pericytes across the capillary bed.
 
-## No-reflow occurs after coronary ischaemia
+### No-reflow occurs after coronary ischaemia
 
 To examine the possible role of contraction of pericytes in ischaemic pathology, we occluded the left anterior descending (LAD) coronary artery for 45 mins, depriving the anterior wall of the left ventricle and part of the right ventricle of blood (see Materials and methods). We then removed the occlusion to allow reperfusion for 15 mins, so that any rapidly reversible obstruction of blood vessels produced by ischaemia would be removed, leaving only long-lasting vessel obstruction contributing to the no-reflow phenomenon. At the end of this period FITC-albumin in gelatin was perfused to visualise vessels where flow was present, and the tissue was sectioned and labelled with isolectin B4 conjugated to Alexa Fluor 647 to visualise non-perfused vessels. In control (sham LAD artery occlusion) hearts, perfusion was visible throughout the whole cross section of the left and right ventricles (Figure 2A). The perfused blood volume per unit area (assessed from the mean FITC-albumin intensity in regions of interest) was fairly uniform around the left ventricle (Figure 2C), although somewhat higher in the posterior wall (regions of interest (ROIs) 4–6 of Figure 2C). In contrast, occlusion and reperfusion of the LAD artery resulted in microvascular perfusion being greatly reduced after the period of ischaemia in half of the left and right ventricles (Figure 2B), as quantified for the left ventricle in Figure 2C (reduced by 49% compared to sham-operated animals in ROIs 7–10: p=0.0004).
 
@@ -47,9 +47,17 @@ To examine the possible role of contraction of pericytes in ischaemic pathology,
 
 **Figure 2.:** (A, B) Low power view of sham-operated heart (A) and a heart after LAD coronary artery occlusion and reperfusion (B), with perfusion volume assessed as intensity of FITC-albumin (green). In (B) vessels are also labelled with isolectin B4 - Alexa Fluor 647 (purple) to define location of unperfused tissue. Regions of interest (ROIs) for analysing the intensity of FITC-albumin fluorescence are shown in yellow. (C) Perfused volume (assessed from mean FITC-albumin intensity), in ROIs indexed with numbers starting at the interventricular septum and proceeding clockwise around the left ventricle (as seen from above), for five sham-operated hearts (control), six hearts made ischaemic and reperfused (ischaemia), and eight hearts made ischaemic and exposed to adenosine starting 5 min before reperfusion (isch + ado). (D) Percentage of capillaries blocked in the anterior wall of the left ventricle for the three experimental conditions (numbers on bars are of ‘capillaries examined, image stacks examined’). Data are mean ± s.e.m. P values are corrected for multiple comparisons.
 
-## Pericytes constrict capillaries after ischaemia
+### Pericytes constrict capillaries after ischaemia
 
 Higher magnification images revealed that in control hearts only 3% of capillaries were blocked (i.e. not perfused by FITC-albumin) in the left ventricle. In contrast, LAD artery occlusion and reperfusion increased this to 40% in the affected area (Figure 2D). Some capillaries were completely perfused and some were completely unperfused throughout the imaged area, while some capillaries showed an abrupt cessation of perfusion (Figure 3A–F), with a profound decrease of FITC-albumin intensity that occurred over a few microns (Figure 3G). Since leukocytes are both larger and less deformable than erythrocytes (Schmid-Schönbein et al., 1981; Downey et al., 1990; Komatsu et al., 1990; Doerschuk et al., 1993), it seemed more likely that leukocytes rather than red blood cells would get stuck at capillary regions of reduced diameter. Surprisingly, labelling with antibody to neutrophil elastase or ICAM-1 revealed no leukocytes lodged at 46 blockage sites examined (although, as a positive control, they were seen outside vessels, Figure 3K, usually post-capillary venules). Similarly, labelling for the erythrocyte protein glycophorin A revealed red blood cells (Figure 3L) associated with only a small percentage of blockage sites (18% of 44 blockages), and even where red blood cells were trapped at capillary constrictions it did not always lead to a block of blood flow (as shown by FITC-albumin passing the red blood cells). However, examining NG2 labelling at the sites of block revealed that many blockages occurred close to pericytes, in some cases with pericyte processes appearing to visibly constrict the capillary at the block location (Figure 3A–C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29280/elife-29280-fig3-v2.jpg)
+
+**Figure 3.:** (A) Image of perfused and non-perfused capillaries in post-ischaemic left ventricle. Isolectin B4 labelling (white) defines positions of all vessels, while FITC-albumin labelling (green) shows vessels that are perfused. Bottom left capillary is completely non-perfused; top green capillary is fully perfused; lower green capillary is blocked halfway across the image. (B, C): NG2-labelling of pericytes (B) and merge (C) of the images (A) and (B) show pericyte processes constricting vessel at block site. (D–F) Another example set of images as in (A–C), showing two capillaries blocked near pericyte somata. (G) Normalised intensity of (background-subtracted) FITC-albumin (green) labelling along the centre of the capillary lumen across 20 block sites. (H) Cumulative probability distribution for the distance from capillary blockage sites to the nearest pericyte soma (black) and for the position expected (see Figure 3—figure supplement 1) if blocks occurred at positions independent of pericyte locations (significantly different, p=3.9×10−5). Comparing the experimental distribution with a theoretical distribution increasing linearly to one at a distance of 30 μm (see Image Analysis in Materials and methods) also showed a significant difference (p=7.6×10−8). (I) Ratio of capillary diameter at pericyte somata to the diameter at positions ~ 10 μm upstream after ischaemia, after ischaemia with adenosine (ado), and for sham-operated hearts (Con). (J) Diameter at pericyte somata after ischaemia, after ischaemia with adenosine, and for sham-operated hearts (Con) (all pericyte locations were measured, not just those associated with capillary blockages, for which the mean diameter after ischaemia was smaller: 3.19 ± 0.24 μm, n = 30). (K) Capillary blockage in an area of the heart with a neutrophil (labelled for neutrophil elastase, NE, bottom left) present outside the capillaries. (L) Pericyte (labelled with isolectin B4) near a blockage constricting a vessel with two red blood cells (RBCs, labelled for glycophorin A) trapped in the constriction. (M) Blockage-associated pericyte (labelled for NG2) that also labels for α-SMA. Numbers on bars are of pericytes. Data are mean ± s.e.m. P values in I-J are from Mann-Whitney tests and are corrected for multiple comparisons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29280/elife-29280-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Diagram showing the calculation of the probabilities on the right of the panel. (B) Cumulative probability distribution for the position of a randomly placed block on this capillary. Figure 3H was calculated by averaging over 42 such distributions for capillaries where block was observed.
 
 To assess rigorously whether block occurred disproportionately close to pericytes, we measured the distance of 42 blockages to the nearest pericyte soma. The cumulative probability distribution of this distance showed the median distance to be 3.6 μm (Figure 3H). In contrast, when we used the same 42 images to calculate what the average distance of a blockage to the nearest pericyte soma would be if blockages were randomly placed on the blocked capillaries in the images (see Figure 3—figure supplement 1), the cumulative probability distribution for that distance predicted a median distance of 11.6 μm (Figure 3H; significantly different, p=3.9×10−5). Thus, ischaemia-evoked capillary block occurs disproportionately close to pericytes.
 
@@ -59,7 +67,7 @@ Pericytes near blockage sites were tested for labelling of the different actin i
 
 Since cardiac catecholamine transporters reverse and release noradrenaline and adrenaline in ischaemia (Lameris et al., 2000), and noradrenaline acts on pericytes in the brain to constrict capillaries (Peppiatt et al., 2006), we assessed whether blocking adrenergic α1 receptors reduced the percentage of capillaries blocked after ischaemia. We found no effect of injecting terazosin (0.5 mg/kg i.v., 5 mins before occluding the LAD artery, which produced a 20–33 mm Hg decrease of blood pressure), with 48.8 ± 3.7% of capillaries blocked in the presence of terazosin (in 13 images covering 383 capillaries in 2 hearts; not significantly different from the 44.7 ± 4.9% seen for 14 images covering 366 capillaries in 2 hearts in interleaved experiments without terazosin, p=0.52). We therefore sought an alternative pharmacological approach to reducing no-reflow after ischaemia.
 
-## Adenosine reduces pericyte constriction and no-reflow
+### Adenosine reduces pericyte constriction and no-reflow
 
 Adenosine has been suggested to reduce no-reflow after cardiac ischaemia, although its clinical utility remains uncertain (Berg and Buhari, 2012; Su et al., 2015). Adenosine is also thought to relax pericytes (Matsugi et al., 1997; Li and Puro, 2001; Gaudin et al., 2014). We infused adenosine intravenously (at 0.5 mg/kg/min, similar to doses used previously to treat no-reflow in humans and other animals: see Materials and methods), from 5 mins before the end of ischaemia until 10 mins of reperfusion had occurred (see Materials and methods), and examined its effect on capillary block. Adenosine significantly reduced (p=0.03) the decrease of coronary perfusion seen after ischaemia (Figure 2C, the mean value in ROIs 7–10 in Figure 2C was increased by 57% compared to ischaemia without adenosine, and was not significantly different from that in control conditions, p=0.77). This increase of flow could reflect adenosine acting both on arteriolar smooth muscle and on pericytes. However, adenosine also reduced by one quarter the percentage of capillaries that were blocked after reperfusion, from ~40% to ~30% (p=0.007, Figure 2D). An analysis like that in Figure 3H showed that the remaining sites of block were still significantly associated with pericyte locations (p=0.001). Since the capillary blockages induced by ischaemia in the absence of adenosine are disproportionately associated with pericytes, and since the adenosine was only applied around the period of reperfusion, these data suggest that, at least in part, adenosine reduces no-reflow by reversing the constriction of pericytes that ischaemia induces. To test this hypothesis, we compared the diameter of capillaries at pericyte somata with the diameter 10 μm upstream of the soma and found that adenosine significantly (p=0.0045) reduced the constriction evoked by ischaemia at pericyte somata (Figure 3I), implying a specific effect on pericytes (rather than a general capillary dilation produced by upstream arteriole dilation). The absolute capillary diameter at pericyte somata after ischaemia was increased by 21% using adenosine (p=0.025, Figure 3J). Thus, adenosine decreases no-reflow by relaxing pericytes.
 
@@ -77,37 +85,229 @@ Previously, a combination of myocyte swelling, endothelial cell blebbing and leu
 
 ## Materials and methods
 
-## Pericyte anatomy
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rattus norvegicus (Sprague Dawley, male)</td>
+      <td>Rat</td>
+      <td>UCL Biological Services</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Mus musculus/spretus, male and female)</td>
+      <td>NG2-DsRed mice</td>
+      <td>doi: 10.1242/dev.004895</td>
+      <td>JAX 008241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-NG2 (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>AB5320</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-NG2 (mouse monoclonal)</td>
+      <td>AbCam</td>
+      <td>ab50009</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PDGF receptor beta (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-432</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-tyrosine hydroxylase (sheep polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>AB1542</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-alpha smooth muscle actin (rabbit polyclonal)</td>
+      <td>AbCam</td>
+      <td>ab5694</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-beta actin (mouse monoclonal)</td>
+      <td>Abbiotec</td>
+      <td>251815</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-gamma actin (mouse monoclonal)</td>
+      <td>AbCam</td>
+      <td>ab123034</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-glycophorin A (mouse monoclonal)</td>
+      <td>AbCam</td>
+      <td>ab9520</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-neutrophil elastase (goat monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc9521</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-ICAM1 (mouse monoclonal)</td>
+      <td>AbCam</td>
+      <td>Ab171123</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa Fluor 405 goat anti-rabbit (polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>A31556</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa Fluor 555 donkey anti-rabbit (polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>A31572</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa Fluor 555 donkey anti-mouse (polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>A31570</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>chemical compound</td>
+      <td>isolectin B4 - Alexa Fluor 647</td>
+      <td>Molecular Probes</td>
+      <td>I32450</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>chemical compound</td>
+      <td>isolectin B4 - FITC</td>
+      <td>Sigma-Aldrich</td>
+      <td>L2895</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>chemical compound</td>
+      <td>adenosine</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound</td>
+      <td>gelatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>G2625</td>
+      <td>5% in PBS</td>
+    </tr>
+    <tr>
+      <td>chemical compound</td>
+      <td>FITC-albumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9771</td>
+      <td>1:200 in 5% gelatin</td>
+    </tr>
+    <tr>
+      <td>chemical compound</td>
+      <td>DAPI</td>
+      <td>Molecular Probes</td>
+      <td>D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound</td>
+      <td>terazosin</td>
+      <td>Sigma</td>
+      <td>T4680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software</td>
+      <td>Spike2</td>
+      <td>www.ced.co.uk</td>
+      <td></td>
+      <td>in vivo data acquisition</td>
+    </tr>
+    <tr>
+      <td>software</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+      <td>image analysis</td>
+    </tr>
+    <tr>
+      <td>software</td>
+      <td>OriginPro</td>
+      <td>www.originlab.com/Origin</td>
+      <td></td>
+      <td>statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Pericyte anatomy
 
 Adult Sprague-Dawley rats or, to illustrate morphology, NG2-DsRed mice (Zhu et al., 2008) expressing the fluorescent protein DsRed in pericytes, of either sex, were sacrificed by UK government approved methods (anaesthetic overdose with 5% isoflurane in 100% O2, followed by cervical dislocation). Hearts were harvested and immersion-fixed in ice cold 4% paraformaldehyde (PFA). Immunohistochemistry was performed on 150 μm thick transverse ventricular slices.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Pericytes were labelled by expression of DsRed under control of the NG2 promoter (in mice), or with anti-NG2 (Merck Millipore AB5320 1:200 or AbCam ab50009 1:200) or anti-PDGFRβ (Santa Cruz Biotechnology sc-432 1:200) antibodies (in rats), and the capillary basement membrane was labelled with isolectin B4 congugated to Alexa Fluor 647 (Molecular Probes, I32450) or FITC (Sigma-Aldrich, UK, L2895) as described (Mishra et al., 2014). Pericyte association with sympathetic terminals was imaged using antibody to tyrosine hydroxylase (Merck Millipore AB1542 1:500). Z-stacks for cell counting were acquired using laser-scanning confocal microscopy (Zeiss LSM 700). Pericyte intersoma distance was calculated between pairs of pericytes on capillaries within the same imaging plane. Antibodies to α-SMA, β-actin and γ1 actin were AbCam ab5694 (1:100), Abbiotec 251815 (1:100) and AbCam ab123034 (1:100). Red blood cells were labelled with antibody to glycophorin A (AbCam ab9520, 1:2000). Neutrophils were labelled with antibodies to neutrophil elastase (Santa Cruz, sc9521 (M-18), 1:50) or ICAM1 (Abcam, Ab171123, 1:100).
 
-## Animal preparation for ischaemia experiments
+### Animal preparation for ischaemia experiments
 
 Adult male Sprague-Dawley rats (200–220 g) were anaesthetized with pentobarbital sodium (induction 60 mg/kg i.p.; maintenance 10–15 mg/kg/h i.v.). The right carotid artery and jugular vein were cannulated for measurement of arterial blood pressure and administration of anaesthetic and tested substances, respectively. Stable levels of blood pressure and heart rate were maintained, and adequate anaesthesia was monitored by the absence of a withdrawal response to a paw pinch. The trachea was cannulated, and the animal was mechanically ventilated with room air using a positive pressure ventilator (tidal volume of 1 ml/100 g of body weight, ventilator frequency ∼60 strokes min−1). PO2, PCO2 and pH of the arterial blood were measured regularly and, if required, ventilation was adjusted to maintain values within their physiological ranges. Arterial BP and a standard lead II ECG were recorded using a Power1401 interface and Spike2 software (Cambridge Electronic Design). Body temperature was maintained at 37.0 ± 0.5°C with a servo-controlled heating pad.
 
-## Myocardial ischaemia and reperfusion
+### Myocardial ischaemia and reperfusion
 
 The heart was exposed via a left thoracotomy and a 4–0 prolene suture was passed around the left anterior descending (LAD) coronary artery to induce a temporary occlusion as previously described (Mastitskaya et al., 2012; Basalay et al., 2016). The animals were subjected to 45 min of LAD artery ligation, followed by 15 min of reperfusion. Successful LAD occlusion was confirmed by paling of the myocardial tissue distal to the suture, elevation of the ST-segment in the ECG, and an immediate 15–30 mm Hg fall in the ABP. In rats LAD occlusion deprives of blood not only the anterior wall of the left ventricle but also part of the right ventricle (Samsamshariat and Movahed, 2005), as seen in Figure 2. Control (sham operated) animals underwent the same procedures, except that after the suture was passed around the LAD coronary artery it was not drawn tight to occlude the vessel. Ischaemia and sham animals were alternately interleaved.
 
 In some experiments i.v. adenosine (Sigma-Aldrich, St. Louis, Missouri) was administered (with the aim of relaxing pericytes), starting 5 min before the end of ischaemia and continuing until 10 min of reperfusion (0.5 mg/kg/min in saline, 2 mg/ml, cumulative dose 7.5 mg/kg), which lowered the blood pressure reversibly by 10–15 mm Hg (10%). Control animals received vehicle (saline) infusion. For comparison, in cats 0.5 mg/kg/min is approximately the upper limit (Portellos et al., 1995) for restricting the adenosine-induced fall of blood pressure to less than 10%, in rats a cumulative dose of 3 mg/kg reduced infarct size by 31% (Shafy et al., 2012), and in humans infusing 0.07 mg/kg/min for 3 hr during reperfusion (a cumulative dose of 12.6 mg/kg) reduced infarct size by 57% in the AMISTAD-II trial (Ross et al., 2005), although the REFLO-STEMI trial found no beneficial effect of adenosine (Nazir et al., 2016).
 
-## Animal perfusion and tissue preparation for imaging
+### Animal perfusion and tissue preparation for imaging
 
 At the end of ischaemia/reperfusion animals were overdosed with pentobarbital sodium and transcardially perfused with saline (200 ml) followed by 4% paraformaldehyde (PFA, 200 ml) for fixation and then 20 ml of 5% gelatin (Sigma-Aldrich, G2625) solution containing FITC-albumin conjugate (Sigma-Aldrich, A9771) to enable visualization of the perfused coronary microvasculature. The hearts were then fixed overnight in 4% PFA, and 150 µm transverse sections made for immunofluorescence staining. Pericytes were labelled with anti-NG2 antibodies (Merck Millipore) and the capillary basement membrane and pericytes were labelled (Mishra et al., 2014) with isolectin B4-Alexa Fluor 647 (Molecular Probes, I32450).
 
 The capillary diameters we measure with this protocol are not affected by vessels being compressed by myocyte contraction. The initial perfusion with calcium-free saline stops the heart in diastole. Evidence that the heart is indeed arrested in diastole is provided by the large volume visible within the left ventricle (Figure 2A,C), which matches that seen during diastole in magnetic resonance images of rat heart, which also show that the volume during systole is far smaller (see Figure 2B of Crowley et al., 1997). Indeed, it is clear that the observation of occluded capillaries after ischaemia does not reflect compression by arrest in systole, because essentially no capillary block was observed in control hearts that were not made ischaemic (only 3% of capillaries were blocked, compared to 40% after ischaemia: see Figure 2D). Another demonstration that the observation of occluded capillaries does not reflect compression by arrest in systole is provided by the fact that capillary occlusion (Figure 2D) and reduction of FITC-albumin labelling (Figure 2B) were only seen on the side of the heart where the blood supply was transiently interrupted, and not on the normally perfused side of the heart, and were specifically associated with pericytes (Figure 3H). Furthermore, our mean capillary diameter in control hearts (5.38 ± 0.28 microns, see Figure 3J) is similar to that estimated for capillaries in diastole in rat hearts (measured in relaxed hearts as 5.3 microns with a suggested correction to 5 microns: see Henquell et al., 1976) and is greater than the diameter estimated for systole (~4 microns: Henquell et al., 1976).
 
-## Imaging of vessels after ischaemia experiments
+### Imaging of vessels after ischaemia experiments
 
 Image z-stacks of overall left ventricular myocardial blood volume, the perfusion of capillaries in the area at risk, and individual vessel blockages, were acquired using laser scanning confocal microscopy (Zeiss LSM 700), and analysed using ImageJ software (NIH, Bethesda, MD, USA). To quantify blood volume across the left ventricular myocardium,~30 low power z-stacks were taken of an entire transverse section of each heart (using a 5X air objective), maximum intensity projected, and stitched together using the MosaicJ plugin (Thévenaz and Unser, 2007) of ImageJ (n = 6 hearts for ischaemia, n = 8 for ischaemia +adenosine, n = 5 for control). Usually some FITC-albumin labelled blood remained within the lumen of the ventricles (although this blood often became detached during tissue processing). For ease of interpretation of the images in Figure 2, this labelling (and also the area outside the imaged heart) was digitally recoloured black using Photoshop. All quantification of the FITC labelling was carried out on the unedited images.
 
 For quantification of the percentage of capillaries that were perfused, three randomly selected regions of the anterior left ventricle wall were imaged in both ischaemia and sham animals, as this region of myocardium consistently included the ischaemic area (which showed visible pallor and oedema of the myocardium). The person quantifying the images was blinded to the condition that the heart was exposed to. 75 stacks (160 μm square, and 20 μm deep) in 12 different animals were taken (ischaemia n = 4, ischaemia +adenosine n = 5, control n = 3). Blockages of flow in the ischaemic area at risk were identified by abrupt terminations in FITC-IB4 signal. For ischaemia 42 blockages were imaged; for ischaemia +adenosine 14 blockages were imaged. Clots (or red blood cell rouleaux) were very rarely observed.
 
-## Image analysis
+### Image analysis
 
 For low power blood volume analysis, 12 regions of interest (ROI) were drawn clockwise around the left ventricle (when looked at from above) from the mid-point of the septum (as in Figure 2A), and the mean intensity of FITC-albumin signal was recorded for each ROI, and normalised to the highest intensity measured in any ROI. These data were averaged over hearts and renormalized so that the mean value in positions 1–3 of Figure 2C was 1. This signal is assumed to be proportional to the volume of blood perfusing the myocardium. To compare perfusion in the ischaemic zone, we averaged the plotted values over ROIs 7–10 for each heart in the different conditions, and compared the mean values averaged over all the hearts studied in each condition.
 
@@ -123,6 +323,6 @@ and p(x).dx=0 for x > L A,
 
 with the total probability (integrated along the capillary length) summing to 1. For more complicated geometries (e.g. two pericytes on the blocked capillary, or branching capillaries) the same approach was used to calculate p(x), taking into account all possible positions on the capillaries. The resulting probability distribution was then averaged over all 42 images used for Figure 3H. To generate a predicted cumulative probability distribution with the same resolution as that obtained for the experimentally observed blockages, this smooth distribution was then sampled at 42 equi-probability points as shown in Figure 3H.The resulting distribution shows a deviation from a linear increase to a value of 1, at 30 μm distance, because of the factors mentioned above.
 
-## Statistics
+### Statistics
 
 Statistical analysis employed OriginPro. Data normality was assessed with Shapiro-Wilk tests. Comparisons of normally distributed data were made using 2-tailed Student’s t-tests. Equality of variance was assessed with an F test, and heteroscedastic t-tests were used if needed. Data that were not normally distributed were analysed with Mann-Whitney tests. P values were corrected for multiple comparisons using a procedure equivalent to the Holm-Bonferroni method (for N comparisons, the most significant p value is multiplied by N, the 2nd most significant by N-1, the 3rd most significant by N-2, etc.; corrected p values are significant if they are less than 0.05). Cumulative probability distributions were compared using the Kolmogorov-Smirnov test. An estimate of the sample size needed for a typical experiment is as follows: For a control response of 100%, a response standard deviation of 25%, a response after a manipulation (ischaemia or adenosine) of 50% (50% inhibition), a power of 80% and p<0.05, 6 samples are needed (http://www.biomath.info/power/ttest.htm) in each of the control and manipulation groups. The exact numbers depend on the effect size for the manipulation and the standard error of the data.

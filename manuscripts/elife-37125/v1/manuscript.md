@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.37125.001 The descending pain modulatory system (DPMS) constitutes a network of widely distributed brain regions whose integrated function is essential for effective modulation of sensory input to the central nervous system and behavioural responses to pain. Animal studies demonstrate that young rodents have an immature DPMS, but comparable studies have not been conducted in human infants. In Goksan et al. (2015) we used functional MRI (fMRI) to show that pain-related brain activity in newborn infants is similar to that observed in adults. Here, we investigated whether the functional network connectivity strength across the infant DPMS influences the magnitude of this brain activity. FMRI scans were collected while mild mechanical noxious stimulation was applied to the infant’s foot. Greater pre-stimulus functional network connectivity across the DPMS was significantly associated with lower noxious-evoked brain activity (p = 0.0004, r = -0.86, n = 13), suggesting that in newborn infants the DPMS may regulate the magnitude of noxious-evoked brain activity.
+The descending pain modulatory system (DPMS) constitutes a network of widely distributed brain regions whose integrated function is essential for effective modulation of sensory input to the central nervous system and behavioural responses to pain. Animal studies demonstrate that young rodents have an immature DPMS, but comparable studies have not been conducted in human infants. In Goksan et al. (2015) we used functional MRI (fMRI) to show that pain-related brain activity in newborn infants is similar to that observed in adults. Here, we investigated whether the functional network connectivity strength across the infant DPMS influences the magnitude of this brain activity. FMRI scans were collected while mild mechanical noxious stimulation was applied to the infant’s foot. Greater pre-stimulus functional network connectivity across the DPMS was significantly associated with lower noxious-evoked brain activity (p = 0.0004, r = -0.86, n = 13), suggesting that in newborn infants the DPMS may regulate the magnitude of noxious-evoked brain activity.
 
 ## Introduction
 
@@ -33,23 +33,270 @@ In our previous paper, we used fMRI to demonstrate that patterns of noxious-evok
 
 ## Results and discussion
 
-## Pre-stimulus functional connectivity in the infant DPMS
+### Pre-stimulus functional connectivity in the infant DPMS
 
 Mild experimental noxious stimulation was applied to the infant's foot using a 128 mN PinPrick stimulator. To ascertain the pre-stimulus functional connectivity, we extracted the demeaned BOLD signal from the three volumes recorded immediately prior to the application of the stimulus, which were acquired within the 10 s pre-stimulus period (see Materials and methods and Figure 3—figure supplement 2A). We extracted these time courses for the DPMS Network, and for brain regions in two control networks - the first, referred to as the ‘Control Network’ has similar topography to the DPMS Network, and the second network is a well-recognised resting state network (the Default Mode Network). The DPMS Network comprised the bilateral AI, ACC, amygdala (AMY), RVM, PAG, and the middle frontal gyri (mFG) situated within the dorsolateral prefrontal cortex (Figure 1A). This includes the main brain structures identified in the adult DPMS (McMahon et al., 2013; Schweinhardt and Bushnell, 2010). The Control Network comprised a set of brain regions that are not reported to be involved in descending pain modulation, but included distinct cortical, subcortical and brainstem structures, and had similar topographic distribution to the DPMS brain regions. Whilst the Control Network is not a known functional network within the brain, this network controls for global signal confounds for example respiratory or cardiovascular signals. The brain regions in the Control Network are the bilateral calcarine cortices (CAL), caudate (CAU), hippocampus (HIP), pontine nuclei (PON), recti gyri (RGY) and the supplementary motor areas (SMA) (Figure 1C). As an additional control, the Default Mode Network (an established network that has been identified in adults and term infants) (Doria et al., 2010; Raichle, 2015) allowed us to test the specificity of the relationship between the pre-stimulus functional connectivity of the DPMS and the noxious-evoked BOLD activity. The Default Mode Network included the posterior cingulate cortex (PCC), the inferior parietal lobules (IPL) and the medial superior frontal gyrus (mSFG) situated within the medial prefrontal cortex (mPFC) (Figure 1E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig1-v1.jpg)
+
+**Figure 1.:** Schematic representation showing approximate locations of brain regions in sagittal and coronal slices in the (A) DPMS Network, (C) Control Network and (E) Default Mode Network. Each anatomical region of interest is identified in Figure 1—figure supplement 1 and the source data is provided in Figure 1—source data 1. Figure 1—figure supplement 2 shows the registration of two example masks from template to functional space and example time series. Network schematics of the mean pre-stimulus functional connectivity between pairs of regions in the (B) DPMS Network, (D) Control Network and (F) Default Mode Network. For abbreviations see main text.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Numbers by the top left of each transverse image represent coordinate locations in infant template space. The location of each transverse slice is demonstrated (red lines) on the sagittal template brain on the right. The source data (Figure 1—source data 1) contains all the brain regions in standard space for all networks.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Registration of masks from (A) template to (B) structural and finally to (C) functional space (blue mask = ACC, yellow mask = mFG). (D) Examples of the resulting time series within the ACC (blue) and mFG (yellow). Black circles highlight the pre-stimulus data points.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Average pre-stimulus connectivity in the DPMS Network across infants prior to each of the 10 stimuli. Error bars indicate mean and standard deviation.
+
 The overall mean pre-stimulus functional connectivity was calculated for each network (Figure 1B,D,F). This was not significantly different between the DPMS Network and the Control Network (mean pre-stimulus functional connectivity: DPMS Network = 0.08 ± 0.10; Control Network = 0.15 ± 0.12). Unsurprisingly, given that the Default Mode Network is a canonical network that has been identified in both adult and infant resting state data (Doria et al., 2010; Raichle, 2015), the functional connectivity of the Default Mode Network was significantly greater (mean pre-stimulus functional connectivity: Default Mode Network = 0.24 ± 0.18) than connectivity within the DPMS and the Control Network (p = 0.0014, repeated measures ANOVA, Tukey post-hoc comparison of DPMS and Control Network: p = 0.06, Default Mode Network and DPMS: p < 0.001, Default Mode Network and Control Network: p = 0.047).
 
-## Characterisation of noxious-evoked brain activity in infants
+### Characterisation of noxious-evoked brain activity in infants
 
 Consistent with previous reports (Goksan et al., 2015; Williams et al., 2015), we identified positive clusters of noxious-evoked BOLD activity in the bilateral postcentral gyrus (somatosensory cortices), thalamus, anterior cingulate cortex and contralateral posterior insular cortex (Figure 2, Table 1). We report a reduction in the number of active brain regions compared with our previous publication (Goksan et al., 2015), and demonstrate more highly localised clusters of significant activity within distinct anatomical regions (Figure 2). For example, clusters of activity can now be identified in the medial surface of the somatosensory cortex, which encodes the somatotopic foot representation (Figure 2 and Figure 2—source data 1). These differences have arisen due to improvements in the data analysis pipeline to incorporate recent recommendations and methodological advances. Importantly, the statistical cluster-defining threshold has increased from z = 2.3 to z = 3.1, to account for potential inflation in family wise error rates that have been observed across a broad range of MRI studies (Eklund et al., 2016). Improved filtering of head motion parameters using FIX (Griffanti et al., 2014; Salimi-Khorshidi et al., 2014) and an infant-specific haemodynamic response function (Arichi et al., 2012) were also used (see Materials and methods). The brain regions identified in this more stringent analysis represent the most robustly activated clusters of noxious-evoked brain activity in the infant, and are consistent with those most commonly reported in adults (Tracey and Mantyh, 2007). Our previous report that the infant pattern of pain-related brain activity is similar to that observed in adults is reconfirmed here (Goksan et al., 2015).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig2-v1.jpg)
 
-**Figure 2.:** (A) Sagittal and coronal views of the significant group activity from the 13 infants. Red lines indicate how the two images (and the transverse image at z = 42, in B) relate to one another. (B) Transverse images showing significant group activity. The source data is provided in Figure 2—source data 1). Numbers by the top left of each image represent coordinate locations in infant template space. The location of each transverse slice is demonstrated (red lines) on the sagittal template brain in the top right. The activity map is overlaid on a standard template of an infant brain at 40 weeks’ gestational age (Serag et al., 2012). Letters in italics depict axis labels: L = left, R = right, P = posterior. Statistical maps are of cluster thresholded z-statistics (z > 3.1, cluster significance threshold p < 0.05).10.7554/eLife.37125.008Figure 2—source data 1.
+**Figure 2.:** (A) Sagittal and coronal views of the significant group activity from the 13 infants. Red lines indicate how the two images (and the transverse image at z = 42, in B) relate to one another. (B) Transverse images showing significant group activity. The source data is provided in Figure 2—source data 1). Numbers by the top left of each image represent coordinate locations in infant template space. The location of each transverse slice is demonstrated (red lines) on the sagittal template brain in the top right. The activity map is overlaid on a standard template of an infant brain at 40 weeks’ gestational age (Serag et al., 2012). Letters in italics depict axis labels: L = left, R = right, P = posterior. Statistical maps are of cluster thresholded z-statistics (z > 3.1, cluster significance threshold p < 0.05).
 
-## Relationship between the pre-stimulus functional connectivity of the DPMS and noxious-evoked brain activity
+**Table 1.**
+ Significant positive clusters of noxious-evoked brain activity, observed across the whole group (n = 13, cluster forming threshold: z = 3.1, cluster significance threshold, p = 0.05).This table provides an anatomical description and the location of the peak z-statistic within each active brain region. The group activity reported consisted of 14 distinct clusters, some of which spanned multiple brain regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Anatomical description of location of activity</th>
+      <th rowspan="2">Maximum z-statistic within cluster</th>
+      <th colspan="3">Coordinates of maximum z-statistic in infant template space</th>
+    </tr>
+    <tr>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Post-central gyrus</td>
+      <td>Contra</td>
+      <td>4.8</td>
+      <td>7.7</td>
+      <td>−27.5</td>
+      <td>50.7</td>
+    </tr>
+    <tr>
+      <td>Ipsi</td>
+      <td>4.7</td>
+      <td>−23.2</td>
+      <td>−27.5</td>
+      <td>43.8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Posterior cingulate sulcus</td>
+      <td>Contra</td>
+      <td>4.8</td>
+      <td>6.9</td>
+      <td>−23.2</td>
+      <td>36.0</td>
+    </tr>
+    <tr>
+      <td>Ipsi</td>
+      <td>3.8</td>
+      <td>−6.0</td>
+      <td>−20.6</td>
+      <td>34.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Superior parietal lobule</td>
+      <td>Contra</td>
+      <td>4.8</td>
+      <td>12.9</td>
+      <td>−44.6</td>
+      <td>47.2</td>
+    </tr>
+    <tr>
+      <td>Ipsi</td>
+      <td>4.7</td>
+      <td>−14.6</td>
+      <td>−43.8</td>
+      <td>43.8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Thalamus</td>
+      <td>Contra</td>
+      <td>4.7</td>
+      <td>16.3</td>
+      <td>−19.7</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <td>Ipsi</td>
+      <td>4.6</td>
+      <td>−13.8</td>
+      <td>−24.0</td>
+      <td>16.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Supra-marginal gyrus</td>
+      <td>Ipsi</td>
+      <td>4.7</td>
+      <td>−25.8</td>
+      <td>−29.2</td>
+      <td>37.8</td>
+    </tr>
+    <tr>
+      <td>Contra</td>
+      <td>4.6</td>
+      <td>30.1</td>
+      <td>−24.9</td>
+      <td>28.3</td>
+    </tr>
+    <tr>
+      <td>Superior frontal sulcus</td>
+      <td>Contra</td>
+      <td>4.7</td>
+      <td>16.3</td>
+      <td>−4.3</td>
+      <td>44.6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Middle frontal gyrus</td>
+      <td>Ipsi</td>
+      <td>4.7</td>
+      <td>−27.5</td>
+      <td>0.9</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <td>Contra</td>
+      <td>4.0</td>
+      <td>24.1</td>
+      <td>5.2</td>
+      <td>33.5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cuneus</td>
+      <td>Contra</td>
+      <td>4.7</td>
+      <td>7.7</td>
+      <td>−53.2</td>
+      <td>26.6</td>
+    </tr>
+    <tr>
+      <td>Ipsi</td>
+      <td>4.2</td>
+      <td>−5.1</td>
+      <td>−50.7</td>
+      <td>23.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Superior parietal lobe / Precuneus</td>
+      <td>Contra</td>
+      <td>4.7</td>
+      <td>5.2</td>
+      <td>−35.2</td>
+      <td>39.5</td>
+    </tr>
+    <tr>
+      <td>Ipsi</td>
+      <td>4.0</td>
+      <td>−0.9</td>
+      <td>−43.8</td>
+      <td>41.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pre-central gyrus / Central sulcus</td>
+      <td>Contra</td>
+      <td>4.6</td>
+      <td>24.1</td>
+      <td>−14.6</td>
+      <td>45.5</td>
+    </tr>
+    <tr>
+      <td>Ipsi</td>
+      <td>3.9</td>
+      <td>−8.6</td>
+      <td>−23.2</td>
+      <td>53.2</td>
+    </tr>
+    <tr>
+      <td>Posterior insula</td>
+      <td>Contra</td>
+      <td>4.6</td>
+      <td>19.0</td>
+      <td>−19.7</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <td>Parietal operculum</td>
+      <td>Ipsi</td>
+      <td>4.6</td>
+      <td>−34.4</td>
+      <td>−21.4</td>
+      <td>18.0</td>
+    </tr>
+    <tr>
+      <td>Superior temporal gyrus / Posterior operculum</td>
+      <td>Contra</td>
+      <td>4.6</td>
+      <td>31.0</td>
+      <td>−27.5</td>
+      <td>22.3</td>
+    </tr>
+    <tr>
+      <td>Occipital gyrus</td>
+      <td>Ipsi</td>
+      <td>4.6</td>
+      <td>−12.0</td>
+      <td>−63.5</td>
+      <td>21.4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Anterior cingulate cortex</td>
+      <td>Ipsi</td>
+      <td>4.2</td>
+      <td>−1.7</td>
+      <td>14.7</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <td>Contra</td>
+      <td>3.9</td>
+      <td>4.3</td>
+      <td>12.1</td>
+      <td>25.7</td>
+    </tr>
+    <tr>
+      <td>Superior temporal gyrus</td>
+      <td>Ipsi</td>
+      <td>4.2</td>
+      <td>−27.5</td>
+      <td>−28.3</td>
+      <td>12.8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Relationship between the pre-stimulus functional connectivity of the DPMS and noxious-evoked brain activity
 
 For each infant, the mean pre-stimulus functional connectivity across the DPMS Network and the control networks were calculated, and related to the mean percentage change in BOLD activity evoked by the noxious stimulation (calculated for each individual participant across all the voxels where significant group activity was identified). There was a significant inverse relationship between the magnitude of pre-stimulus DPMS functional connectivity and the percentage change in noxious-evoked BOLD activity (Pearson correlation coefficient (r) = -0.86, p = 0.0004, parameter estimate (β) = -0.74, linear model also included gestational age in weeks as an explanatory variable, Figure 3A). Infants with greater functional connectivity across their DPMS Network prior to noxious stimulation had lower noxious-evoked brain activity. In contrast, the mean functional connectivity in the Control Network and in the Default Mode Network were not related to the mean change in noxious-evoked BOLD activity (Control Network: r = -0.36, p = 0.26, β = -0.25; Default Mode Network: r = 0.06, p = 0.88, β= -0.03 Figure 3B,C). The absence of a significant relationship between the functional connectivity of the Default Mode Network and the noxious-evoked BOLD activity suggests that the influence of the DPMS on the noxious-activity is not generalisable across all established brain networks.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig3-v1.jpg)
+
+**Figure 3.:** Linear regression models (blue lines) were used to compare pre-stimulus functional connectivity (psFC) with the percentage change in BOLD activity in the (A) DPMS Network, (B) Control Network and (C) the Default Mode Network (DMN). Noxious-evoked brain activity for each infant (calculated within a mask of the group activity, see Figure 2) was adjusted for gestational age (in weeks) at the time of study. Coloured circles represent data from individual infants within the DPMS (red) and control networks (light blue). Figure 3—source data 1 provides the individual PAG and RVM functional masks for each infant. Figure 3—figure supplement 1 shows the relationship between the percentage change in BOLD activity and the psFC in the DPMS Network and Control Network with the brainstem regions removed. (D) The brain schematic highlights the pairs of brain regions where psFC was significantly correlated with percentage change in the BOLD response (dashed yellow lines). (E,F,G) The three pairs of regions within the DPMS Network which demonstrated strong correlations between mean psFC and noxious-evoked brain activity.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Linear regression model (blue lines) comparison of the pre-stimulus functional connectivity (psFC) with the percentage change in BOLD activity in the (A) DPMS Network and (B) Control Network with the brainstem regions removed. The DPMS psFC was calculated between the AI, ACC, amygdala and middle frontal gyri, and the Control Network psFC was calculated in the bilateral calcarine cortices, caudate, hippocampus, recti gyri and the supplementary motor areas. Coloured circles represent data from individual infants within the DPMS Network (red) and Control Network (light blue) .
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37125/elife-37125-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Data from an individual infant showing (A) the mean time series within all DPMS brain regions and (B) the resulting connectivity matrix. Black circles overlaid on the time series indicate pre-stimulus points. Vertical blue lines indicate the point of stimulation. The minimum inter-stimulus interval was 25 s. (C) Examples of statistical COPE values related to the magnitude of noxious-evoked brain activity and (D) the change in BOLD signal within a single voxel (red) plotted over the expected model fit (black). The statistical COPE map has been masked with the group activity mask (see Figure 2); therefore, coloured regions represent voxels that survive cluster thresholding at the group level. The baseline (light blue) is the temporal mean used to calculate percentage change in BOLD.
 
 To explore the relative contribution of different brain regions within the DPMS Network, the relationship between the functional connectivity and the mean change in noxious-evoked BOLD activity was calculated for each pair of brain regions. Increased pre-stimulus functional connectivity between the ACC and PAG was associated with a substantial reduction in noxious-evoked BOLD activity (adjusted for age, p = 0.0012, β = -0.22, Figure 3E). Functional connectivity between the AI-mFG and ACC-AI were also strongly related to the change in noxious-evoked BOLD activity (p = 0.02, β = -0.23 and p = 0.03, β = -0.17 respectively, Figure 3F,G). For all other pairs of brain regions, the functional connectivity strength did not influence the magnitude of noxious-evoked brain activity. The observation that a high degree of functional connectivity between the ACC and PAG is strongly associated with a reduction in pain-related brain activity in the infant is interesting in light of observations in adults where greater co-variation in the functional activity of the rostral ACC and PAG relates to an increase in the efficacy of endogenous analgesia elicited by placebo treatment (Petrovic et al., 2002). Anticipation of placebo has been associated with greater pre-stimulus activity in the PAG, and leads to a placebo-induced reduction in evoked brain activity in the thalamus and rostral ACC (Wager et al., 2004). The importance of the PAG, as part of the DPMS, has also been demonstrated in animal studies, where direct stimulation of the PAG is associated with a reduction in incoming nociceptive information from the peripheral nervous system (Reynolds, 1969). In adult rodents, descending modulation (evidenced by PAG activation) preferentially modulates C-fibre input (McMullan and Lumb, 2006; Waters and Lumb, 2008), whereas the noxious stimulus applied in this study likely preferentially activates A-delta fibres, which may be differentially modulated compared with C fibre input. However, it is not known how other supraspinal components of the DPMS respond to activity in subclasses of nociceptors in humans. Further work is needed to understand the developmental trajectory of the PAG-RVM axis in humans and the maturation of its connections to the spinal cord.
 
@@ -63,25 +310,25 @@ In summary, this study suggests that in term infants the DPMS may be influential
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Seventeen newborn term-aged infants were recruited from the Maternity Unit at the John Radcliffe Hospital, Oxford, UK. All infants completed the full study protocol. The National Research Ethics Service provided ethical approval: REC reference 12/SC/0447. Informed written parental consent was obtained prior to each study. The study was carried out in accordance with the standards set by the Declaration of Helsinki and Good Clinical Practice guidelines.
 
 Data from four infants were excluded from the analysis because the most caudal region of interest, the rostral ventral medulla in the brainstem, fell outside of the field of view. Therefore, 13 term infants (average gestational age (GA) at study = 40 weeks, range 38 to 43 weeks) were included in this analysis. The average postnatal age at the time of the study was 4 days (range 1 to 8 days). Eight of the 13 infants included in this analysis were also included in our previous publication (Goksan et al., 2015).
 
-## Study protocol
+### Study protocol
 
 Infant recruitment criteria, experimental study design and MRI study protocol were identical to that described previously by Goksan et al., 2015. In brief, all infants were scanned at the Centre for Functional Magnetic Resonance Imaging of the Brain (FMRIB), John Radcliffe Hospital, Oxford. Prior to scanning infants were fed and swaddled and provided with three levels of ear protection: ear putty (Mack’s Kids size earplugs, McKeon Products Inc., MI), ear muffs (Minimuffs, Natus Medical Inc., Galway, Ireland) and hearing defenders (Em's 4 Bubs Baby Earmuffs, Em's 4 Kids, Brisbane, Australia), with noise reduction ratings of 22 dB, 7 dB, and 22 dB, respectively. Infants were then placed in a vacuum-positioning mattress and all scanning was done when infants were settled or asleep.
 
 During all MRI sessions, T2-weighted structural images were collected prior to acquisition of functional echo planar imaging (EPI) scans. During individual infant’s functional scans, acute experimental noxious stimulation was applied using a calibrated nociceptive stimulator (force: 128 mN, PinPrick Stimulators, MRC Systems). Noxious stimulation was applied 10 times to the heel of the left foot by the same experimenter and with a minimum inter-stimulus interval of 25 s. The interval was chosen based on the neonatal term infant haemodynamic response function (HRF) described by Arichi et al. (2012) and the interval was extended if necessary to ensure the infant was settled at the time of stimulation.
 
-## MRI acquisition
+### MRI acquisition
 
 Images were collected using a Siemens 3-Tesla Magnetom Verio scanner (Erlangen, Germany) with a 32-channel adult head coil. T2-weighted turbo spin echo structural scans were acquired for each infant (sequence parameters: repetition time/echo time (TR/TE) = 14740/88 ms; flip angle 150 ̊; resolution 1 mm3; slices = 85, field of view (FOV) = 192×192 mm, acceleration = GRAPPA 2, slice order = interleaved, with no slice overlap). BOLD images were acquired using a T2*-weighted EPI acquisition (sequence parameters: TR/TE = 2500/40 ms; flip angle = 90°; FOV = 192×192 mm; imaging matrix 64×64; resolution 3×3×3 mm; slices = 33, collected in descending order; average total volumes = 142). Prospective Acquisition Correction for head motion (PACE) was applied during all EPI scans (Thesen et al., 2000), as described previously in Goksan et al., 2015). Field map images were obtained for post-acquisition correction of gradient field effects (sequence parameters: TR = 400 ms; TE1/TE2 = 5.19/7.65 ms; flip angle = 60°; FOV = 192×192 mm; imaging matrix 64×64; resolution 3×3 ×3 mm; slices = 36, slice order = interleaved; inter-slice gap = 0.75 mm). The noxious stimuli were time-locked to the fMRI recording using Neurobehavioural Systems (Presentation, www.neurobs.com) software; coded to detect an experimenter’s button-press each time an experimental stimulus was applied to the participant's foot.
 
-## Data analysis
+### Data analysis
 
-## MR data processing
+#### MR data processing
 
 All MR data pre-processing were done using FMRIB Software Library (FSL) (www.fmrib.ox.ac.uk/fsl), Versions 5.0.10 and 4.1.9. Version 5.0.10 was used to prepare the structural and field map images. FSL’s Brain Extraction Tool (BET) was used in order to extract brain-tissue signal from the non-brain structures in each infant’s structural image (Smith, 2002). The fractional intensity threshold and threshold gradient parameters within BET were adjusted in order to obtain the most accurate brain extraction per subject. A mask of each infant’s brain-extracted structural scan was registered to the fieldmap and used to guide fieldmap preparation. All fMRI data registrations were done using FMRI Expert Analysis Tool (FEAT) Version 5.98 (FSL Version 4.1.9) to avoid boundary-based registration (BBR), due to hard coding of the adult-appropriate BBR-slope parameter, which is unsuitable for infant fMRI data. Functional images were registered to a standard average infant template (40 week GA template; downloaded from www.brain-development.org). Each EPI was initially registered to the infant’s structural image (FLIRT: rigid body transformation with six DOF [Jenkinson et al., 2002; Jenkinson and Smith, 2001]). Subsequently, images in structural space were non-linearly registered to the neonatal-specific template image, which corresponded to the GA of the infant at the time of the study (Serag et al., 2012) and then to the standard infant 40-week gestation template (FNIRT: non-linear transformation with twelve DOF).
 
@@ -91,7 +338,7 @@ MR data statistical analysis was conducted using FSL (Version 5.0.10). Time-seri
 
 Group analysis was run in FSL (Version 5.0.10), using mixed effects FLAME 1 and 2 in FEAT (Version 6.00), with automatic outlier detection. The first contrast of the parameter estimate (COPE) statistical image of each participant was input into the higher group analysis, therefore only taking into account the first basis function described by Arichi et al. (2012). This function closely resembles a double gamma function with a peak at 7 s and an undershoot to positive peak ratio of 0.49. Two neonatal-specific atlases, the University of North Carolina’s (UNC) atlas (Shi et al., 2011) and an Imperial College London (ICL) atlas (Serag et al., 2012), and an adult atlas (Mai et al., 2008) were used to guide description of the resulting group activity (in Table 1). Three atlases were required because each atlas provided varying levels of anatomical specificity. The ICL atlas was the most general, describing all the lobes of the brain, as well as some deep brain nuclei and maps of the CSF, grey and white matter. Despite this broad labelling, the ICL atlas also provided the most accurate partition between anatomical boundaries. The UNC infant atlas was used as it contained more specific anatomical masks. However, the partitions between anatomical boundaries were less good; therefore the ICL atlas was used in conjunction to define boundaries. Finally when describing the anatomical location of peaks within the group activity (see Table 1), an adult atlas was used as it provided further guidance for labelling specific gyri and sulci. Clusters that extended across more than one brain region were described separately only when a region of activity with a separate local peak voxel was observed within the adjacent brain region. For all regions named in the table, masks were hand drawn and aimed to include all the active voxels within each region, however given the subjective nature of this task it is possible that small regions of activity that formed part of the same cluster may have been overlooked. The function Cluster, available within FSL, was then used to obtain maximum z-statistics and their coordinate locations.
 
-## Pre-stimulus functional connectivity (psFC)
+### Pre-stimulus functional connectivity (psFC)
 
 Mean time series were calculated in 15 brain regions. Six regions were identified as key regions within the DPMS: anterior cingulate cortex (ACC), amygdala (AMY), anterior insula (AI), middle frontal gyrus (mFG) (a region within the dorsolateral prefrontal cortex - dlPFC); assessed using the following papers (Rajkowska and Goldman-Rakic, 1995; Sallet et al., 2013; Stagg et al., 2013), periaqueductal grey (PAG) and rostal ventral medulla (RVM). A further nine brain regions, without a known role in the DPMS, were included within the two control networks. The Control Network included the calcarine cortex (CAL), caudate (CAU), hippocampus (HIP), pons (PON), recti gyri (RGY) and the supplementary motor area (SMA). Three regions were identified in the Default Mode Network – the posterior cingulate cortex (PCC), inferior parietal lobules (IPL) and the medial superior frontal gyrus (mSFG). The mSFG was chosen in place of the medial prefrontal cortex (commonly reported as part of the DMN) because a medial prefrontal cortex mask was not available as part of the UNC or ICL infant atlases; therefore, the mSFG was taken as the representative of this region.
 

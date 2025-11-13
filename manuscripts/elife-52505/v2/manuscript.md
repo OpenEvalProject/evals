@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Cation-chloride-cotransporters (CCCs) catalyze transport of Cl - with K + and/or Na + across cellular membranes. CCCs play roles in cellular volume regulation, neural development and function, audition, regulation of blood pressure, and renal function. CCCs are targets of clinically important drugs including loop diuretics and their disruption has been implicated in pathophysiology including epilepsy, hearing loss, and the genetic disorders Andermann, Gitelman, and Bartter syndromes. Here we present the structure of a CCC, the Mus musculus K + -Cl - cotransporter (KCC) KCC4, in lipid nanodiscs determined by cryo-EM. The structure, captured in an inside-open conformation, reveals the architecture of KCCs including an extracellular domain poised to regulate transport activity through an outer gate. We identify binding sites for substrate K + and Cl - ions, demonstrate the importance of key coordinating residues for transporter activity, and provide a structural explanation for varied substrate specificity and ion transport ratio among CCCs. These results provide mechanistic insight into the function and regulation of a physiologically important transporter family.
+Cation-chloride-cotransporters (CCCs) catalyze transport of Cl- with K+ and/or Na+across cellular membranes. CCCs play roles in cellular volume regulation, neural development and function, audition, regulation of blood pressure, and renal function. CCCs are targets of clinically important drugs including loop diuretics and their disruption has been implicated in pathophysiology including epilepsy, hearing loss, and the genetic disorders Andermann, Gitelman, and Bartter syndromes. Here we present the structure of a CCC, the Mus musculus K+-Cl- cotransporter (KCC) KCC4, in lipid nanodiscs determined by cryo-EM. The structure, captured in an inside-open conformation, reveals the architecture of KCCs including an extracellular domain poised to regulate transport activity through an outer gate. We identify binding sites for substrate K+ and Cl- ions, demonstrate the importance of key coordinating residues for transporter activity, and provide a structural explanation for varied substrate specificity and ion transport ratio among CCCs. These results provide mechanistic insight into the function and regulation of a physiologically important transporter family.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ Here we report the structure of Mus musculus KCC4 in lipid nanodiscs determined 
 
 ## Results
 
-## Structure of KCC4 in lipid nanodiscs
+### Structure of KCC4 in lipid nanodiscs
 
 Mus musculus KCC4 was heterologously expressed in Spodoptera frugiperda (Sf9) insect cells for purification and structure determination (Figure 2—figure supplement 2). To assess the activity of KCC4 in these cells, we utilized an assay that depends on the ability of KCCs to transport Tl+ in addition to K+ (Zhang et al., 2010). In cells loaded with the Tl+-sensitive fluorophore FluxOR red, Tl+ uptake from the extracellular solution results in an increase in fluorescence signal (Figure 1A). Cells infected with virus encoding KCC4, but not cells infected with a virus encoding an anion-selective volume-regulated ion channel SWELL1 (Kern et al., 2019) or uninfected Sf9 cells, displayed increased fluorescence over time consistent with KCC4 activity (Figure 1B,C). No significant difference in activity was observed between N- and C-terminally GFP-tagged mouse KCC4 (Figure 1B,C), in contrast to a previous report for KCC2 (Agez et al., 2017), and C-terminally tagged KCC4 was used for subsequent study.
 
@@ -45,17 +45,61 @@ We reconstituted KCC4 into lipid nanodiscs in order to study the structure of th
 
 An unmasked reconstruction of KCC4 in nanodiscs is shown in Figure 2A contoured to highlight the position of the lipid belt surrounding the transmembrane region. To achieve the highest resolution reconstruction, the nanodisc density was subtracted and particles were subjected to focused classification and subsequent refinement (Figure 2—figure supplement 4). The resulting map, at 3.65 Å overall resolution, enabled complete de novo modeling of the transmembrane and extracellular region of KCC4 and includes two partial extracellular glycosylation sites, a bound K+ ion, and a bound Cl- ion (Figure 2C,D, Figure 2—figure supplements 5 and 6).
 
-## Overall architecture
+![Figure 2.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cryo-EM map from an unmasked refinement viewed from the membrane plane showing the position of nanodisc, transmembrane region (blue), and extracellular region (green). (B) Final map, (C) corresponding atomic model, and (D) cartoon representation of KCC4. In (C), bound K+ and Cl- ions are shown as green and violet spheres, respectively. Two disulfides and two N-linked glycosylation sites are shown as sticks and labeled in the cartoon (a third disulfide between TM2 and TM11 is not visible).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sequence alignment of mouse CCC family transporters. Sequence numbering is indicated at the left and right of each line. Secondary structure for KCC4 is indicated above the sequence. Residues discussed in the text are indicated with circles above the sequence: green, K+ coordinating residues; violet, Cl- coordinating residues; gray, Na+ coordinating residues in NKCC1; yellow, disulfide bond forming residues; brown, glycosylated residues; cyan, extracellular gate forming residues; black, putative dimerization interfaces. (B) Cladogram of CCC family made using sequences from mouse. (C) Percentage sequence identity between members of the mouse CCC family.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative chromatogram from a Superose six gel filtration of KCC4 purified in DDM/CHS. (B) Coomassie-stained SDS-PAGE fractions (indicated by alternating gray and blue bands in (A)) with band corresponding to KCC4 labeled. KCC4 is present in two species: an earlier eluting, broader peak one and a later eluting, sharper peak 2. Fractions in the later eluting peak correspond to monodisperse KCC4 and were used for structure determination. (C) Representative chromatogram from Superose six gel filtration of KCC4 reconstituted in MSP1D1 lipid nanodiscs. (D) Coomassie-stained SDS-PAGE of final pooled KCC4-MSP1D1 nanodisc sample (indicated by purple shading in (C)). (E) Coomassie-stained SDS-PAGE of peak 1 and peak two pools (as indicated in (A,B)) before (-) and after (+) treatment with PNGase. (F) Coomassie-stained SDS-PAGE of KCC4 crosslinked with different concentrations of glutaraldehyde (bands within each gel correspond to 0.02, 0.01, 0.005, 0.0025, and 0% glutaraldehyde, respectively). Peak 1 and peak two samples were pooled as indicated in (A,B), concentrated, and crosslinked (left pair of gels) or deglycosylated with PNGase prior to crosslinking (right pair of gels).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative micrograph and (B) selected class averages of KCC4 in detergent (DDM/CHS) micelles. (C) Representative micrograph and (D) selected class averages of KCC4 in MSP1D1 lipid nanodiscs. Red arrowheads in (D) point to blurred density features on the intracellular side of the membrane consistent with flexible N-terminal regions or CTDs.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A, B) Initial stages of cryo-EM data processing in Relion and cryoSPARC2. (C) Final stages of cryo-EM data processing in Relion. See Materials and methods for details.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Angular distribution of particles used in final refinement with final map for reference. (B) Local resolution estimated in Relion colored as indicated on the final map. (Right) A view from the membrane plane showing relatively weaker local resolution in TM11-12 and (left) a view rotated 90°. (C) Fourier Shell Correlation (FSC) relationships between (black) the two unfiltered half-maps from refinement and used for calculating overall resolution at 0.143, (red) final map versus model, (orange) half-map one versus model, and (green) half-map two versus model.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Cryo-EM density is shown carved around each transmembrane helix with the atomic model of KCC4 drawn as sticks.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Coomassie-stained SDS-PAGE of purified mouse KCC4 sample used for mass spectrometry. The band indicated by dashed line box was excised for analysis. (B) Identified peptides (bold) are indicated on the purified KCC4 sequence. Boxed region indicates boundaries of KCC4 observed by cryo-EM. (C) Summary of mass spectrometry data.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Overlaid fluorescence chromatograms from a Superose six gel filtration of KCC4 expressed in SF9 cells and extracted/run in DDM:CHS/DDM:CHS (black; conditions used in KCC4 structure determination) DDM:CHS/GDN (orange; conditions used in KCC1 structure determination), and LMNG/digitonin (blue; conditions used in NKCC1 structure determination). (B) As in (A), but for KCC1 expressed in SF9 cells. (C) As in (A), but for KCC1 expressed in HEK293T cells. (D) Overlaid fluorescence chromatograms of KCC4 (black) and KCC1 (red) expressed in SF9 cells and extracted/run in DDM:CHS/DDM:CHS. (E) As in (D), but for KCC4 (black) and KCC1 (red) expressed in KEK293T cells.
+
+### Overall architecture
 
 KCC4 is monomeric in the nanodisc structure. Density for the N-terminal region and C-terminal domain (CTD), which together comprise approximately half the expressed protein mass, is not observed in the cryo-EM maps (Figure 2). The N-terminal region is weakly conserved, variable in length among CCCs (Figure 2—figure supplement 1), and is likewise unresolved in the structures of NKCC1 or KCC1 (Chew et al., 2019; Liu et al., 2019). We presume it is highly flexible in KCC4. The C-terminal domain, while similarly unresolved in KCC1 (Liu et al., 2019), is well conserved, has documented roles in regulation, expression, and trafficking (Arroyo et al., 2013; Marcoux et al., 2017; Payne, 2012; Hartmann and Nothwang, 2014; Rinehart et al., 2009), and mediates homodimerization of NKCC1 and the Archaean CCC (MaCCC) (Chew et al., 2019; Warmuth et al., 2009). We found no evidence of proteolytic cleavage of either region. Mass spectrometry of purified KCC4 showed high coverage (47%) and abundance (81% of all KCC4 peptides) for the CTD (Figure 2—figure supplement 7). We observe a progressive loss of detailed features and decrease in local resolution in TM11 and TM12 that connect the CTD to the core transmembrane region (Figure 2—figure supplements 5B and 6). Some two-dimensional class averages show a blurred cytoplasmic feature in the position we expect the CTD to emerge (Figure 2—figure supplement 3B,D), but attempts to classify distinct conformations of this feature were unsuccessful. We conclude that the monomeric structure reported here corresponds to full-length mouse KCC4 with flexible and/or disordered terminal regions.
 
 The monomeric structure of KCC4 contrasts with recent homodimeric structures of Danio rerio NKCC1 (Chew et al., 2019) and H. sapiens KCC1 (Liu et al., 2019), although dimerization of NKCC1 and KCC1 involve completely distinct interfaces (Figure 3A,C). Disruption of putative tightly associated KCC4 homodimers during purification or sample preparation was excluded for the following reasons: (i) The portion of KCC4 in an early-eluting broad peak from a sizing column (Figure 2—figure supplement 2A) displays nonspecific aggregation by cryo-EM. (ii) KCC4 is monomeric before and after reconstitution in nanodiscs as assessed by cryo-EM (Figure 2—figure supplements 2 and 3). (iii) Cross-linking of purified KCC4 was observed only at high concentrations of crosslinker and was reduced when KCC4 was first deglycosylated (Figure 2—figure supplement 2F), suggesting some cross-linking in glycosylated KCC4 is from intermolecular glycan-glycan or protein-glycan linkages rather than through transmembrane regions or CTDs (Chew et al., 2019). (iv) No substantial differences were observed in the apparent size of KCC4 or KCC1 (assessed by gel filtration) transporters extracted from different expression host cells or treated with different combinations of detergents used in the CCC structure reports to date (Chew et al., 2019; Liu et al., 2019; Figure 2—figure supplement 8).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overlay of monomeric KCC4 (blue) and dimeric KCC1 (protomer one purple, protomer two white, PDB 6KKT) structures viewed from the membrane. (B) Magnified top views of the extracellular protein-protein interaction region of KCC1 (dashed box in (A)) shown alone with residues in KCC1 labeled (upper) or with KCC4 overlaid (lower) and KCC4 residues labeled. (C) Overlay of KCC4 (blue) and dimeric NKCC1 (protomer one orange, protomer two white, PDB 6NPL) structures viewed from the membrane. (D) Magnified view of the intracellular protein-protein interaction region of NKCC1 (dashed box in (C)). Residues in NKCC1 for which corresponding KCC4 mutations were made are labeled. (E) Partial sequence alignments between KCC4 and NKCC1 (above) and human and mouse KCC1 and KCC4 (below) for the regions highlighted in (B,D). Residues mutated in KCC4 are numbered in bold. (F) Normalized activity of KCC4 mutations. Wild-type KCC4 1 ± 0.11 (n = 11); S404E, R405E, G407E 0.85 ± 0.11 (n = 8); L678R, V680R 0.59 ± 0.10 (n = 8); L670R, A673R 0.64 ± 0.10 (n = 8); S780R, L783R 0.56 ± 0.11 (n = 6); KCC4ΔC (1–658 0.40 ± 0.09 (n = 7); mean ± SEM, one-way Anova (*p<0.05, **p<0.01 ***p<0.001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52505/elife-52505-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative fluorescence chromatograms from a Superose six gel filtration of wild-type KCC4-GFP (black) compared to each mutant KCC4-GFP. Traces for mutations in ion binding sites are colored red, mutations in the extracellular gate are colored orange, and mutations in putative dimerization interfaces are colored blue.
+
 We asked whether there are functional consequences of putative KCC4 dimerization through interfaces similar to those observed in KCC1 or NKCC1 structures. The KCC1 dimeric interface is mediated predominantly through protein-detergent interactions between TM regions and protein-protein interactions between an extracellular loop (Liu et al., 2019; Figure 3A,B). Notably, this loop is poorly conserved in KCCs (Figure 3E). In KCC4, the loop is incompatible with forming a dimer interface without substantial rearrangement due to steric clashes (Figure 3B). A triple mutation designed to disrupt interaction between extracellular loops in KCC4 (S404E, R405E, G407E) has no effect on transport activity (Figure 3B,F). This mutation (and those described later) did not substantially alter KCC4 folding or expression (Figure 3—figure supplement 1). We conclude dimerization as observed in the KCC1 structure (Liu et al., 2019) is not functionally relevant for KCC4.
 
 In NKCC1, dimerization is mediated predominantly through extensive protein-protein interactions in the CTD (Chew et al., 2019). These regions appear well conserved in KCCs (Figure 3E, Figure 2—figure supplement 1). Three pairs of mutations designed to disrupt CTD-CTD interactions in KCC4 (L678R, V680R; L670R, A673R; and S780R, L783R) resulted in a similar, but incomplete, reduction in KCC4 activity (by an average of 36, 41, and 44%, respectively) (Figure 3C,D,F). This reduction is comparable to that observed in a truncated KCC4 construct missing the entire C-terminal region (KCC4ΔC, which includes amino acids 1–658) (Figure 3F). These results suggest that monomeric KCC4 is active and that dimerization through the CTDs in a manner analogous to NKCC1 increases transport activity.
 
-## Transporter conformation
+### Transporter conformation
 
 KCC4 adopts an inward-open conformation. The outer surface of the transporter is sealed from the extracellular solution, while a continuous cavity extends from the center of the transmembrane region to the cytoplasmic side (Figure 4). The transmembrane region consists of twelve helices (TM1-TM12) with TM1-TM5 related to TM6-TM10 through an inverted repeat. TM2 and TM11 in KCC4 are linked by a membrane buried disulfide bond between amino acids C163 (TM2) and C626 (TM11) conserved between KCCs, but not other CCCs (Figure 2—figure supplement 1).
 
@@ -73,7 +117,7 @@ On the intracellular side of KCC4, a hydrophilic cavity is formed by TM1, TM3, T
 
 The cavity surface is markedly electropositive (Figure 4E). From the intracellular solution up to the position of the Cl-, charged and polar side chains (from R440, R528, R535, N131, N274, N439, and N521), backbone amides (from IL1), and a helical dipole (from TM6B) contribute electropositive character. Since intracellular Cl- ions are typically present at lower concentrations than K+ ions, this may serve to favor accumulation of the less abundant substrate near its binding site within transporter. Above the Cl- site and around the K+ site, the accessible surface becomes electronegative and would favor cation binding. The extracellular surface of the transporter outside of the sealed gate is markedly electronegative. How this relates to mechanisms for ion binding and release in outward-open states awaits additional structural information.
 
-## Ion binding sites
+### Ion binding sites
 
 The central discontinuities in TM1 and TM6 result in protein backbone carbonyls and amides not involved in regular hydrogen bonding that are utilized in other APC transporters for substrate binding (Shi, 2013). Around this region, we observe two prominent non-protein density features (Figure 5A,D). Based on structural, functional, and comparative analyses described below, we model these sites as bound K+ and Cl- ions.
 
@@ -99,25 +143,203 @@ The structure of KCC4 provides insight into the architecture of KCCs and the mec
 
 ## Materials and methods
 
-## Cloning and protein expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>KCC4</td>
+      <td>Synthesized (Thermo Fisher)</td>
+      <td>Uniprot Q80WG5</td>
+      <td>Codon-optimized for Spodoptera frugiperda</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>KCC1</td>
+      <td>Synthesized (Thermo Fisher)</td>
+      <td>Uniprot Q9QY75</td>
+      <td>Codon-optimized for Spodoptera frugiperda</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACEBAC1</td>
+      <td>Geneva Biotech</td>
+      <td>pACEBac1</td>
+      <td>Modified as described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell Line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Expression Systems</td>
+      <td>Catalog Number: 94–001F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Catalog Number: CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (H. sapiens)</td>
+      <td>HEK293T GnTI-</td>
+      <td>ATCC</td>
+      <td>Catalog Number: CRL-3022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MSP1D1</td>
+      <td>Prepared as described in doi: 10.1016/S0076-6879(09)64011–8</td>
+      <td></td>
+      <td>His-tag cleaved</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DDM</td>
+      <td>Anatrace</td>
+      <td>Part Number: D310S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CHS</td>
+      <td>Anatrace</td>
+      <td>Part Number: CH210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Digitonin</td>
+      <td>EMD Chemicals</td>
+      <td>CAS 11024-24-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GDN</td>
+      <td>Anatrace</td>
+      <td>Part Number: GDN101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>18:1 (Δ9-Cis) PE (DOPE) lipid</td>
+      <td>Avanti Polar Lipids</td>
+      <td>SKU: 850725C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>16:0-18:1 PS (POPS) lipid</td>
+      <td>Avanti Polar Lipids</td>
+      <td>SKU: 840034C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>16:0-18:1 PC (POPC) lipid</td>
+      <td>Avanti Polar Lipids</td>
+      <td>SKU: 850457C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>FluxOR Red Potassium Ion Channel Assay</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Catalog Number: F20019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>doi: 10.7554/eLife.42166</td>
+      <td>Relion 3.0.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cryosparc</td>
+      <td>doi: 10.1038/nmeth.4169</td>
+      <td>Cryosparc2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ctffind</td>
+      <td>doi: 10.1016/j.jsb.2015.08.008</td>
+      <td>Ctffind 4.1.13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyEM</td>
+      <td>doi:10.5281/zenodo.3576630.</td>
+      <td>PyEM</td>
+      <td>https://zenodo.org/record/3576630#.XmptWJNKjUI</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>UCSF</td>
+      <td>RRID:SCR_004097</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td></td>
+      <td>RRID:SCR_014222</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td></td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>PyMOL Molecular Graphics System, Schrodinger LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>https://www.pymol.org/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and protein expression
 
 Cloning, expression, and purification were performed similarly to that described for LRRC8A (Kern et al., 2019). The sequence for KCC4 and KCC1 from Mus musculus were codon optimized for Spodoptera frugiperda and synthesized (Thermo Fisher, Cambridge, MA). Sequences were cloned into a custom vector based on the pACEBAC1 backbone (MultiBac; Geneva Biotech, Geneva, Switzerland) with an added C-terminal PreScission protease (PPX) cleavage site, linker sequence, superfolder GFP (sfGFP), and 7xHis tag, generating a construct for expression of mmKCC4-SNS-LEVLFQGP-SRGGSGAAAGSGSGS-sfGFP-GSS-7xHis. Mutations were introduced using standard PCR techniques with partially overlapping primers. MultiBac cells were used to generate bacmids according to manufacturer’s instructions. Spodoptera frugiperda (Sf9) cells were cultured in ESF 921 medium (Expression Systems, Davis, CA) and P1 virus was generated from cells transfected with Escort IV Transfection Reagent (Sigma, Carlsbad, CA) according to manufacturer’s instructions. P2 virus was generated by infecting cells at 2 × 106 cells/mL with P1 virus at a MOI ~ 0.1. Infection monitored by fluorescence of sfGFP-tagged protein and P2 virus was harvested at 72 hr post infection. P3 virus was generated in a similar manner to expand the viral stock. The P3 viral stock was then used to infect 1 L of Sf9 cells at 4 × 106 cells/mL at a MOI ~ 2–5. At 60 hr post-infection, cells were harvested by centrifugation at 2500 x g and frozen at −80°C.
 
-## Transporter assay
+### Transporter assay
 
 The FluxOR-Red Potassium Ion Channel Assay (Thermo Fisher Scientific) was adapted for transport assays in Sf9 insect cells by adjusting the osmolarity of all buffers to 380 mOsm (by addition of sodium methylsulfonate). Cells were infected at a density of 1.5 × 106 cells/ml and grown in suspension for 60–72 hr for robust KCC4-GFP expression. 100 uL of cells at 1 × 106 cells/ml were plated and allowed to adhere for 1 hr before the assay. For experiments in Figures 3–5, 100 uL of cells at 1 × 106 cells/ml were plated and allowed to adhere for 1 hr before viral infection. Cells were grown for 60–72 hr for robust transporter expression prior to assay. Growth media was replaced with 1X Loading Buffer and incubated at 27°C away from light for 1 hr. The FluxOR Red reagent is a non-fluorescent indicator dye which is loaded into cells as a membrane-permeable acetoxymethyl (AM)-ester. The non-fluorescent AM ester of the FluxOR Red reagent is cleaved by endogenous esterases into a fluorogenic Tl+-sensitive indicator. 1X Loading Buffer was subsequently removed and replaced with Dye-free Assay Buffer and FluxOR Background Suppressor. The assay was performed in 96-well, black-walled, clear-bottom plates (Costar). For data in Figure 1, fluorescence was measured on a Perkin-Elmer Envision Multilabel Plate Reader using bottom read fluorescence and a BODIPY TMR FP filter set (excitation 531 nm and 25 nm bandwidth, emission 595 nm and 60 nm bandwidth). For data in Figures 3–5, Fluorescence was measured on a Molecular Devices SpectraMax M3 using bottom read fluorescence and an excitation 560 nm with auto cutoff at 590 nm and emission 590 nm. The recordings were baseline corrected by subtracting the average fluorescence from 180 s prior to the addition of Basal Potassium Stimulus buffer and time zero is defined as the first data point recorded after the addition of stimulus. Global fits of all data to a one phase association model Y=(Plateau)*(1-e(-x/𝜏)) are displayed with 95% confidence interval bands (Figure 1B). Alternatively, the final 50 counts were averaged as a measure of final fluorescence increase and normalized to wild-type KCC4 fluorescence increase from experiments performed on the same day. In some experiments, average GFP fluorescence was measured between FluxOR fluorescence measurements and used to normalize FluxOR fluorescence values to account for differences in expression level. This normalization did not change results in a significant way and so was not performed for the final data presented.
 
-## Protein purification
+### Protein purification
 
 Cells from 1 L of culture (~7–12.5 mL of cell pellet) were thawed in 100 mL of Lysis Buffer (50 mM Tris, 150 mM KCl, 1 mM EDTA, pH 8.0). Protease inhibitors were added to the lysis buffer immediately before use (final concentrations: E64 (1 µM), Pepstatin A (1 µg/mL), Soy Trypsin Inhibitor (10 µg/mL), Benzimidine (1 mM), Aprotinin (1 µg/mL), Leupeptin (1 µg/mL), and PMSF (1 mM)). Benzonase (5 µl) was added after cells thawed. Cells were then lysed by sonication and centrifuged at 150,000 x g for 45 min. The supernatant was discarded, and residual nucleic acid was removed from the top of the membrane pellet by rinsing with DPBS. A 10%/2% and 10%/1% w/v solution of DDM/CHS was clarified by bath sonication in 200 mM Tris pH 8.0 and subsequently added to buffers at the indicated final concentrations. Membrane pellets were transferred to a glass dounce homogenizer containing Extraction Buffer (50 mM Tris, 150 mM KCl, 1 mM EDTA, 1% w/v n-Dodecyl-β-D-Maltopyranoside (DDM, Anatrace, Maumee, OH), 0.2% w/v Cholesterol Hemisuccinate Tris Salt (CHS, Anatrace), pH 8.0). Membrane pellets were homogenized in Extraction Buffer and this mixture (100 mL final volume) was gently stirred at 4°C for 1 hr. The extraction mixture was centrifuged at 33,000 x g for 45 min. The supernatant, containing solubilized KCC4-sfGFP, was bound to 5 mL of Sepharose resin coupled to anti-GFP nanobody for 1 hr at 4°C. The resin was collected in a column and washed with 20 mL of Buffer 1 (20 mM Tris, 150 mM KCl, 1 mM EDTA, 0.025% DDM, 0.005% CHS, pH 8.0), 50 mL of Buffer 2 (20 mM Tris, 500 mM KCl, 1 mM EDTA, 0.025% DDM, 0.005% CHS, pH 8.0), and 20 mL of Buffer 1. Washed resin was resuspended in 6 mL of Buffer 1 with 0.5 mg of PPX and rocked gently in the capped column overnight. Cleaved KCC4 protein was eluted with an additional 25 mL of Buffer 1. The eluted pool was concentrated to ~500 µl with an Amicon Ultra spin concentrator 100 kDa cutoff (MilliporeSigma, USA) and subjected to size exclusion chromatography using a Superose 6 Increase column (GE Healthcare, Chicago, IL) run in Buffer 3 (20 mM Tris pH 8.0, 150 mM KCl, 1 mM EDTA, 0.025% DDM, 0.0025% CHS) on a NGC system (Bio-Rad, Hercules, CA). Peak fractions containing KCC4 transporter were collected and concentrated.
 
-## Fluorescence Size Exclusion Chromatography (FSEC)
+### Fluorescence Size Exclusion Chromatography (FSEC)
 
 Sf9 cells were plated at 1 × 106 cells/ml into six well plates and allowed to adhere for 1 hr prior to viral infection at a ratio of 1:30 (v/v). Cells were harvested after 60–72 hr, pelleted by centrifugation, and frozen. Transfected HEK 293T GNTI- cells were prepared using Lipofectamine 2000 according to manufacturer’s instructions. Media was switched 18 hr post-transfection to fresh media with 10 mM sodium butyrate. Cells were incubated for 19 hr longer at 30°C, harvested, pelleted by centrifugation, and frozen.
 
 Frozen samples containing ~8 million infected Sf9 cells and ~1 million transfected HEK 293T GNTI- cells were thawed, extracted for 1 hr at 4°C, and pelleted at 21,000 x g at 4°C for 1 hr. Supernatant was run on a Superose 6 Increase column with fluorescence detection for GFP. For mutant comparisons (Figure 3—figure supplement 1), extraction buffer was (50 mM Tris pH 8, 150 mM KCl, 1 mM EDTA, all protease inhibitors used for protein purification, 1% DDM, 0.2% CHS) and running buffer was (20 mM Tris pH8, 150 mM KCl, 1 mM EDTA, 0.025% DDM, 0.0025% CHS). The same buffers were used for the ‘DDM/CHS’ conditions in Figure 2—figure supplement 8A,B,C and in Figure 2—figure supplement 8D,E except that running buffer in Figure 2—figure supplement 8E contained (0.025% DDM, 0.005% CHS). The ‘GDN’ condition used in Figure 2—figure supplement 8A,B,C corresponds to conditions used for KCC1 structure determination (Liu et al., 2019). Extraction buffer was (20 mM Tris pH8, 150 mM KCl, all protease inhibitors used for protein purification, 2% DDM, 0.2% CHS). Running buffer was (20 mM Tris pH8, 150 mM KCl, 0.06% GDN). The ‘Digitonin’ condition used in Figure 2—figure supplement 8A,B,C corresponds to conditions used for NKCC1 structure determination (Chew et al., 2019). Extraction buffer was (50 mM Tris pH 8, 150 mM KCl, 1 mM EDTA, all protease inhibitors used for protein purification, 1% LMNG, 0.01% CHS) and running buffer was (20 mM Tris pH8, 150 mM KCl, 1 mM EDTA, 0.06% Digitonin).
 
-## Cross linking and mass spectrometry
+### Cross linking and mass spectrometry
 
 Fractions corresponding to peaks 1 and 2 from size exclusion chromatography were separately pooled and concentrated to 0.5 mg/mL. Crosslinking was performed by adding 1 uL of glutaraldehyde from 10X stock solutions in water to 10 uL of KCC4 to achieve final glutaraldehyde concentrations of 0.02, 0.01, 0.005, 0.0025, and 0%. Samples were incubated for 30 min prior to quenching by addition of 1 uL 1M Tris-HCl and analysis by SDS-PAGE on 4–12% Tris-glycine gel (BioRad, USA). Deglycosylated samples were pretreated with 1:10 vol purified PNGase at 1 mg/mL (Addgene 114274) for 1 hr at 4°C prior to the addition of glutaraldehyde.
 
@@ -125,19 +347,184 @@ For mass spectrometry, the band corresponding to purified KCC4 was excised from 
 
 Protein identification was done with Integrated Proteomics Pipeline (IP2, Integrated Proteomics Applications, Inc San Diego, CA) using ProLuCID/Sequest, DTASelect2 and Census (Xu et al., 2015; Tabb et al., 2002; Park et al., 2008). Tandem mass spectra were extracted into ms1 and ms2 files from raw files using RawExtractor (McDonald et al., 2004). Data was searched against a Spodoptera frugiperda protein database with the purified mouse KCC4 sequence added, supplemented with sequences of common contaminants, and concatenated to form a decoy database (Peng et al., 2003). LTQ data was searched with 3000.0 milli-amu precursor tolerance and the fragment ions were restricted to a 600.0 ppm tolerance. All searches were parallelized and searched on the VJC proteomics cluster. Search space included all half tryptic peptide candidates with no missed cleavage restrictions. Carbamidomethylation (+57.02146) of cysteine was considered a static modification. In order to identify authentic termini, we required one tryptic terminus for each peptide identification. The ProLuCID search results were assembled and filtered using the DTASelect program with a peptide false discovery rate (FDR) of 0.001 for single peptides and a peptide FDR of 0.005 for additional peptides for the same protein. Under such filtering conditions, the estimated false discovery rate was less than 1%.
 
-## Nanodisc reconstitution
+### Nanodisc reconstitution
 
 Freshly purified and concentrated KCC4 in Buffer three was reconstituted into MSP1D1 nanodiscs with a mixture of lipids (DOPE:POPS:POPC at 2:1:1 molar ratio, Avanti, Alabaster, Alabama) at a final molar ratio of KCC4:MSP1D1:lipids of 0.2:1:50. Lipids in chloroform were prepared by mixing, drying under argon, washing with pentane, drying under argon, and placing under vacuum overnight. The dried lipid mixture was rehydrated in Buffer 4 (20 mM Tris, 150 mM KCl, 1 mM EDTA pH 8.0) and clarified by bath sonication. DDM was added to a final concentration of 8 mM and the detergent solubilized lipids were sonicated until clear. Lipids, Buffer 4 containing 8 mM DDM, and KCC4 protein were mixed and incubated at 4°C for 30 min before addition of purified MSP1D1. After addition of MSP1D1, the nanodisc formation solution was 47.5 µM KCC4, 104 µM MSP1D1, 13 mM DOPE:POPS:POPC, and 4 mM DDM in Buffer 4 (final concentrations). After mixing at 4°C for 30 mins, 60 mg of Biobeads SM2 (Bio-Rad, USA) (prepared by sequential washing in methanol, water, and Buffer four and weighed damp following bulk liquid removal) were added and the mixture was rotated at 4°C overnight (~12 hr). Nanodisc-containing supernatant was collected and spun for 10 min at 21,000 x g before loading onto a Superose 6 Increase column in Buffer 4. Peak fractions corresponding to KCC4-MSP1D1 were collected and spin concentrated using a 100 kDa cutoff for grid preparation.
 
-## Grid preparation
+### Grid preparation
 
 The KCC4-MSP1D1 nanodisc sample was concentrated to ~1 mg/mL and centrifuged at 21,000 x g for 10 min at 4°C prior to grid preparation. A 3 uL drop of protein was applied to a freshly glow discharged Holey Carbon, 400 mesh R 1.2/1.3 gold grid (Quantifoil, Großlöbichau, Germany). A Vitrobot Mark IV (FEI/Thermo Scientific, USA) was utilized for plunge freezing in liquid ethane with the following settings: 4°C, 100% humidity, one blot force, 3 s blot time, 5 s wait time. The KCC4 detergent sample was frozen at 4.5 mg/mL and centrifuged at 21,000 x g for 10 min at 4°C prior to grid preparation. A 3 µL drop of protein was applied to a freshly glow discharged Holey Carbon, 400 mesh R 1.2/1.3 gold grid. A Vitrobot Mark IV (FEI/Thermo Scientific, USA) was utilized for plunge freezing in liquid ethane with the following settings: 4°C, 100% humidity, one blot force, 4 s blot time, 1 s wait time. Grids were clipped in autoloader cartridges for data collection.
 
-## Data collection
+### Data collection
 
 KCC4-MSP1D1 grids were transferred to a Talos Arctica cryo-electron microscope (FEI/Thermo Scientific, USA) operated at an acceleration voltage of 200 kV. Images were recorded in an automated fashion with SerialEM (Mastronarde, 2005) using image shift with a target defocus range of −0.7 ~ −2.2 µm over 5 s as 50 subframes with a K3 direct electron detector (Gatan, USA) in super-resolution mode with a super-resolution pixel size of 0.5685 Å. The electron dose was 9.333 e- / Å (Marcoux et al., 2017)/s (0.9333 e-/ Å2/frame) at the detector level and total accumulated dose was 46.665 e-/Å2. KCC4-detergent grids were transferred to a Titan Krios cryo-electron microscope (FEI/Thermo Scientific, USA) operated at an acceleration voltage of 300 kV. Images were recorded in an automated fashion with SerialEM (Mastronarde, 2005) with a target defocus range of −0.7 to −2.2 µm over 9.6 s as 48 subframes with a K2 direct electron detector (Gatan, USA) in super-resolution mode with a super-resolution pixel size of 0.5746 Å. The electron dose was 6.092 e- / Å (Marcoux et al., 2017)/s (1.2184 e- / Å (Marcoux et al., 2017)/frame) at the detector level and total accumulated dose was 58.4832 e-/Å (Marcoux et al., 2017). See also Table 1 for data collection statistics.
 
-## Data processing
+**Table 1.**
+ Cryo-EM data collection and structure refinement statistics.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Total movie #</td>
+      <td>1572</td>
+    </tr>
+    <tr>
+      <td>Selected movie #</td>
+      <td>1401</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>36,000x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>46.665</td>
+    </tr>
+    <tr>
+      <td>Frame #</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−0.7 to −2.5</td>
+    </tr>
+    <tr>
+      <td>Super resolution pixel size (Å)</td>
+      <td>0.5685</td>
+    </tr>
+    <tr>
+      <td>Binned pixel size (Å)</td>
+      <td>1.137</td>
+    </tr>
+    <tr>
+      <td colspan="2">Processing</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>887,132</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>110,143</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Map resolution</td>
+    </tr>
+    <tr>
+      <td>Masked (Å, FSC = 0.143/ FSC=0.5)</td>
+      <td>3.6/4.2</td>
+    </tr>
+    <tr>
+      <td>Unmasked (Å, FSC = 0.143/ FSC=0.5)</td>
+      <td>3.9/4.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å, FSC = 0.143/ FSC=0.5)</td>
+      <td>3.5/3.9</td>
+    </tr>
+    <tr>
+      <td>Map-sharpening B factor (Å2)</td>
+      <td>−150</td>
+    </tr>
+    <tr>
+      <td colspan="2">Composition</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td>4103</td>
+    </tr>
+    <tr>
+      <td>Number of protein residues</td>
+      <td>536</td>
+    </tr>
+    <tr>
+      <td>Ligands total</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>K+</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Cl-</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>NAG-NAG-BMA</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.731</td>
+    </tr>
+    <tr>
+      <td colspan="2">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>4.59</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>92.48</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>7.52</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td colspan="2">Mean B factors (Å2)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>75.41</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>106.62</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data processing
 
 The processing pipeline is shown in Figure 2—figure supplement 4A–C. We used Cryosparc2 (Punjani et al., 2017) for initial model generation and refinement until reconstructions reached 4–5 Å resolution. Bayesian polishing and nanodisc subtraction in Relion 3.0.7 (Zivanov et al., 2019; Zivanov et al., 2018) were used to achieve highest resolution reconstructions. While the contribution of disordered or flexible N- and C-terminal regions to alignments is unknown, the remaining 55 kDa asymmetric membrane protein is among the smallest in terms of resolved mass resolved by cryo-EM to date.
 
@@ -145,6 +532,6 @@ A total of 1572 movie stacks were collected, motion-corrected and binned to 1.13
 
 Particle positions and angles from the final cryoSPARC2 refinement job were input into Relion (using csparc2relion.py from the UCSF PyEM [Asarnow, 2016]) and 3D refined to generate a 4.18 Å map (6 Å low-pass filter, 0.9 degrees initial sampling, 0.9 degrees local searches) (Figure 2—figure supplement 4C). A second 3D refinement following Bayesian particle polishing improved the map and reported resolution (4.01 Å) (6 Å low-pass filter, 0.9 degrees initial sampling, 0.9 degrees local searches). CTF refinement with beam tilt group estimation and per-particle defocus was performed, although subsequent 3D refinement did not markedly improve the map. Particle subtraction was performed to remove the contribution of the nanodisc density from alignments and subsequent 3D refinement markedly improved the map (reported resolution 3.86 Å or 3.72 Å after postprocessing) (6 Å low-pass filter, 0.9 degrees initial sampling, 0.9 degrees local searches). A final improvement in map quality and reported resolution and was obtained by removing poor particles with a 3D classification job (two classes, 10 Å initial low-pass filter, 16 tau fudge, no angular sampling). The final particle set (110,143) was subjected to 3D refinement to generate a final map at 3.72 Å resolution (3.65 Å after postprocessing) (6 Å low-pass filter, 0.9 degrees initial sampling, 0.9 degrees local searches). Particle distribution and local resolution was calculated using Relion (Figure 2—figure supplement 5A,B). FSCs reported in Figure 2—figure supplement 5 were calculated using Phenix.mtriage.
 
-## Modeling, refinement, and structure analysis
+### Modeling, refinement, and structure analysis
 
 The final cryo-EM maps were sharpened using Phenix.autosharpen (Adams et al., 2010). The structure was modeled de novo in Coot and refined in real space using Phenix.real_space_refine with Ramachandran and NCS restraints. Validation tools in Phenix, EMRinger (Barad et al., 2015), and Molprobity (Chen et al., 2010) were used to guide iterative rounds of model adjustment in Coot and refinement in Phenix. Cavity measurements were made with HOLE implemented in Coot (Emsley et al., 2010). Electrostatic potential was calculated using APBS-PDB2PQR (Dolinsky et al., 2004) Pymol plugin. Figures were prepared using PyMOL, Chimera, ChimeraX, Fiji, Prism, Adobe Photoshop, and Adobe Illustrator software.

@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03qxff017 Risk-Management Ecology Lab, Department of Ecology, Evolution & Behavior The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem Jerusalem Israel
-2. https://ror.org/04dese585 Theoretical Ecology and Evolution Lab, Centre for Ecological Sciences, Indian Institute of Science Bengaluru India
-3. https://ror.org/03qxff017 The National Natural History Collections, The Hebrew University of Jerusalem Jerusalem Israel
+1. Risk-Management Ecology Lab, Department of Ecology, Evolution & Behavior The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
+2. Theoretical Ecology and Evolution Lab, Centre for Ecological Sciences, Indian Institute of Science Bengaluru India ([ROR:04dese585](https://ror.org/04dese585))
+3. The National Natural History Collections, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
 
 † Corresponding author
 
@@ -37,6 +37,107 @@ The predicted negative association between moisture and macro-decomposition in d
 
 To test this novel hypothesis, we examined the climate dependency of plant litter decomposition by microorganisms, meso-decomposers, and macro-decomposers along a sharp aridity gradient spanning from mean annual precipitation (MAP) of 22–526 mm. This gradient represents hyper-arid, arid, semiarid, and dry sub-humid Mediterranean climates (Table 1, Figure 2A). We repeated the experiment during hot summer with no precipitation and again during cooler and wetter winter. We hypothesized that both microbial and mesofaunal decomposition should increase with increasing precipitation during the winter, but during the dry summer contribute only minimally to plant litter decomposition across the aridity gradient. In the dry summer, macrofaunal decomposition should follow a hump-shaped response to precipitation, increasing from hyper-arid to arid sites and decreasing gradually in more mesic semiarid and Mediterranean sites. We also predicted that the opposing climatic dependencies of macrofauna and microorganisms and mesofauna should lead to similar overall decomposition rates across the precipitation gradient except in the hyper-arid sites in which decomposers activity is predicted to be minimal regardless of organism size (Figure 1). To reveal the mechanism, we sampled macro-decomposers across the aridity gradient and the two seasons, using pitfall traps. We predicted hump-shaped relationships between precipitation and the abundance, richness, and biomass of macro-decomposers that peak in arid ecosystems.
 
+**Table 1.**
+ Properties of the seven experimental sites.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>Abb.</th>
+      <th>Coordinates</th>
+      <th>MAT* [°C]</th>
+      <th>MAP* [mm]</th>
+      <th>AIU* (MAP/PET)</th>
+      <th>Climate</th>
+      <th>Winter experiment</th>
+      <th>Summer experiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ramat Hanadiv</td>
+      <td>RH</td>
+      <td>32°33′22.4″N 34°56′26.6″E</td>
+      <td>20.2</td>
+      <td>526</td>
+      <td>0.518</td>
+      <td>Dry sub-humid Mediterranean</td>
+      <td>3.12.2020–27.6.2021</td>
+      <td>27.6–27.10.2021</td>
+    </tr>
+    <tr>
+      <td>Bet Guvrin</td>
+      <td>BG</td>
+      <td>31°35′54.7″N 34°54′14.2″E</td>
+      <td>20.9</td>
+      <td>403</td>
+      <td>0.370</td>
+      <td>Semiarid</td>
+      <td>2.12.2020–13.6.2021</td>
+      <td>13.6–21.10.2021</td>
+    </tr>
+    <tr>
+      <td>Havat Shikmim</td>
+      <td>HS</td>
+      <td>31°30′49.7″N 34°41′18.8″E</td>
+      <td>19.8</td>
+      <td>367</td>
+      <td>0.364</td>
+      <td>Semiarid</td>
+      <td>2.12.2020–13.6.2021</td>
+      <td>13.6–21.10.2021</td>
+    </tr>
+    <tr>
+      <td>Sayeret Shaked</td>
+      <td>SS</td>
+      <td>31°16′05.7″N 34°39′12.9″E</td>
+      <td>20.0</td>
+      <td>148</td>
+      <td>0.145</td>
+      <td>Arid</td>
+      <td>26.11.2020–23.5.2021</td>
+      <td>23.5–21.10.2021</td>
+    </tr>
+    <tr>
+      <td>Avdat</td>
+      <td>AV</td>
+      <td>30°47′02.3″N 34°46′13.3″E</td>
+      <td>18.7</td>
+      <td>84</td>
+      <td>0.089</td>
+      <td>Arid</td>
+      <td>26.11.2020–23.5.2021</td>
+      <td>23.5–21.10.2021</td>
+    </tr>
+    <tr>
+      <td>Meishar</td>
+      <td>MS</td>
+      <td>30°27′04.2″N 34°56′03.0″E</td>
+      <td>20.8</td>
+      <td>33</td>
+      <td>0.029</td>
+      <td>Hyper-arid</td>
+      <td>10.12.2020–12.7.2021</td>
+      <td>12.7–8.11.2021</td>
+    </tr>
+    <tr>
+      <td>Nahal Shita</td>
+      <td>NS</td>
+      <td>30°08′29.4″N 35°07′36.6″E</td>
+      <td>22.3</td>
+      <td>22</td>
+      <td>0.017</td>
+      <td>Hyper-arid</td>
+      <td>10.12.2020–12.7.2021</td>
+      <td>12.7–8.11.2021</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Climatic data extracted from http://www.meteo-tech.co.il/hanadiv_new/hanadiv_en.asp (RH), courtesy of Shaily Dor-Haim (SS), and extracted from https://ims.gov.il/en (all other sites)._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/93656/elife-93656-fig2-v1.jpg)
 
 **Figure 2.:** (A) Locations and landscapes of the seven experimental sites across a precipitation gradient from 22 to 526 mm mean annual precipitation (MAP). (B) A block of three litter baskets in the Sayeret Shaked site. Macro-basket in front, meso-basket on the right, and micro-basket on the left. The precipitation map courtesy of the Hebrew University GIS center.
@@ -48,6 +149,89 @@ Litter removal rate differed across seasons, sites, and mesh sizes, and all inte
 ![Figure 3.](https://cdn.elifesciences.org/articles/93656/elife-93656-fig3-v1.jpg)
 
 **Figure 3.:** Asterisks represent significant differences between mesh sizes within site and season: *p-value <0.05, **p-value <0.01, ***p-value <0.001 (Tukey’s Honestly Significant Difference). Each bar represents 25 samples, total n = 1050. NS – Nahal Shita; MS – Meishar; AV – Avdat; SS – Sayeret Shaked; HS – Havat Shikmim; BG – Bet Guvrin; RH – Ramat Hanadiv. Negative values may represent cases in which physical cleaning and ash correction failed to correct for all dust accumulation on the litter or cases in which exogenous litter may have penetrated the baskets. Our findings were not sensitive to these negative values.
+
+**Table 2.**
+ Results of a full-factorial analysis of variance in litter removal rate across mesh sizes, experimental sites, and seasons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Df</th>
+      <th>Sum Sq</th>
+      <th>Mean Sq</th>
+      <th>F value</th>
+      <th>Pr(&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Site</td>
+      <td>6</td>
+      <td>0.002092</td>
+      <td>0.000349</td>
+      <td>171.946</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Season</td>
+      <td>1</td>
+      <td>0.000679</td>
+      <td>0.000679</td>
+      <td>334.94</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Mesh size</td>
+      <td>2</td>
+      <td>0.000267</td>
+      <td>0.000133</td>
+      <td>65.77</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Site:season</td>
+      <td>6</td>
+      <td>0.00112</td>
+      <td>0.000187</td>
+      <td>92.044</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Site:mesh size</td>
+      <td>12</td>
+      <td>0.000392</td>
+      <td>3.27E−05</td>
+      <td>16.11</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Season:mesh size</td>
+      <td>2</td>
+      <td>1.77E−05</td>
+      <td>8.9E−06</td>
+      <td>4.368</td>
+      <td>0.0129</td>
+    </tr>
+    <tr>
+      <td>Site:season:mesh size</td>
+      <td>12</td>
+      <td>0.000129</td>
+      <td>1.08E−05</td>
+      <td>5.306</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Residuals</td>
+      <td>1008</td>
+      <td>0.002044</td>
+      <td>0.000002</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93656/elife-93656-fig4-v1.jpg)
 
@@ -85,16 +269,16 @@ In conclusion, our work revealed that decomposers of varying size categories hav
 
 We performed a manipulative litter mass loss experiment across seven sites representing a sharp MAP gradient ranging from hyper-arid desert to Mediterranean maquis (Figure 2A, Table 1). All sites were chosen to be on calcareous soils formed upon sedimentary limestone rock in natural habitats. The mean annual temperature varies only slightly across sites from 18.7 to 22.3°C. The exact study sites were determined to ensure minimal human disturbance during the year-long experiment. In each of the seven sites we installed litter baskets of three different mesh sizes that control organismal access to litter: micro-baskets allowing entry of only microorganisms (<200 μm), meso-baskets allowing entry of microorganisms and mesofauna (<2 mm), and macro-baskets that were identical to the meso-baskets but with side openings that allow entry of macrofauna (<2 cm). Litter baskets were filled with leaf litter belonging to the annual grass Stipa capensis Thunb. that is native to all seven study sites. This approach allowed us to compare decomposition rates across sites without using exogenous litter that may decompose in a very different rate than local litter (Joly et al., 2023). Twenty-five blocks, each including the three basket types (Figure 2B), were installed in each site for two consecutive experimental periods – a wet cool winter and a dry hot summer (2 periods × 7 sites × 3 treatments × 25 blocks = 1050 baskets in total). We also characterized the macro-decomposer assemblage in each site during the two seasons using pitfall trapping.
 
-## Litter basket experiment
+### Litter basket experiment
 
 We collected S. capensis litter from the Avdat site in the summer of 2020 and air dried it. We sorted the litter to remove litter belonging to any other species and assigned 3 ± 0.0001 g (Mettler Toledo MS105DU) to each litter basket. Thirty additional litter samples were oven dried at 60°C for 48 hr and weighed again for determination of initial moisture content. The 14 × 13 × 3.6 cm litter baskets were prepared of a 12-mm mesh galvanized welded metal, lined at the bottom with a 1.5-mm fiberglass mesh to prevent litter loss, and covered from all sides (including top and bottom) with a 2-mm metal mesh to exclude termites. In the macro-baskets, three 2 × 2 cm windows were cut at each of the four sides. The windows were cut approximately 1 cm above ground level to allow macrofaunal access but prevent accidental litter spill. This may slightly reduce macrofaunal access, making our estimations of the macrofaunal effect conservative. In the micro-baskets, we placed the litter within a polyethylene 200-μm mesh bag. In the macro- and meso-baskets, we laid a 2-cm heavy metal mesh over the litter to minimize litter loss due to wind.
 
 We installed the first batch of 525 litter baskets in the field in November–December 2020. All blocks were placed around similarly sized bushes of locally distributed species and tethered to the ground using metal stakes. We collected the baskets in May–July 2021 and replaced them with a new similar batch that was later collected in October–November 2021. At the end of each season, the collected baskets were transported to the laboratory in sealed Ziplock bags. Any litter spilled during transportation was weighed and the weight loss was incorporated in the calculations. Leaf litter in each basket was first screened for adulteration from leaf litter of other species, following which the S. capensis litter was oven dried at 60°C for 48 hr and weighed. To account for dust accumulation on the litter we applied an ash correction procedure (Barney et al., 2015). We burned and weighed five sub-samples from each site–season–treatment combination (550°C for 5 hr) and calculated the combination-specific mean ash content. The final litter mass was corrected for ash content based on these calculations. We burned and weighed 15 additional samples of S. capensis litter that were not placed in the field and calculated the mean ash content of the initial litter. The initial litter mass was corrected accordingly. The rate of litter removal from each basket was calculated as the difference between the ash corrected final dry litter mass and the ash and moisture corrected initial litter mass, divided by the number of days the litter spent in the field.
 
-## Pitfall trapping
+### Pitfall trapping
 
 We characterized the macro-decomposer assemblages by setting up 20 pitfall traps for 5–7 days at each site during each experimental period. Wet season traps were opened in February 2021, whereas the dry season traps were opened between late August and early October. We installed traps by placing two 10 cm diameter × 7.5 cm deep plastic containers one inside another such that the opening was flushed with the ground. We added to each trap 150 ml of preservative, which comprised of 40% absolute ethanol, 40% distilled water, and 20% propylene glycol. Traps were covered with steel mesh of large mesh size to prevent small mammals and reptiles from falling inside. At the end of the 5–7 days, samples were collected and transferred to 70% ethanol. Samples were sorted and identified to morphospecies level in the lab. Only animals larger than 2 mm were included in the analysis. Sub-samples were freeze-dried and weighed (Mettler Toledo MS105DU) for biomass estimation of each morphospecies.
 
-## Analytical procedures
+### Analytical procedures
 
 We first fitted a linear mixed model to the litter removal rate data, including experimental site, experimental season, mesh size, and all interaction terms as fixed effects. The random effect of the experimental spatial blocks was found insignificant using a simulation test with 9999 simulations (RLRT = 2.1, p-value = 0.07). Therefore, we assessed the effects of the site, season, and mesh size on the litter removal rate using a full factorial analysis of variance, followed by Tukey’s Honestly Significant Difference pairwise comparisons. We calculated the contribution of each size group to litter mass loss by block. Microbial contribution was defined as the mass loss from micro-baskets; mesofaunal contribution was calculated as the difference between mass loss from meso- and micro-baskets; macrofaunal contribution was calculated as the difference between mass loss from macro- and meso-baskets; whole-community decomposition was defined as the mass loss from macro-baskets. We modeled the relationship between MAP and each of these contributions using Locally Estimated Scatterplot Smoothing. We used the same method to model the relationship between MAP and the macro-decomposer abundance, biomass, and morphospecies richness in each season. We assessed differences in the macro-decomposer assemblage among experimental sites and seasons using a principal coordinates analysis (PCoA) with individual traps as the sampling units and BC index as the dissimilarity metric. We tested for differences across sites and seasons in macro-decomposer assemblage using a permutational multivariate analysis of variance, followed by pairwise comparisons between sites using the Benjamini–Hochberg p-value adjustment. BC indices between site–season combinations were calculated as well, based on the summed abundances across traps. To explore which macro-decomposer groups dominate the different sites and seasons, we classified the identified morphospecies to ten macro-decomposer taxa: Archaeognatha (bristletails), Coleoptera (beetles), Diplopoda (millipedes), Formicidae (ants), Gastropoda (snails and slugs), Grylloidea (crickets), Isoptera (termites), Lumbricina (earthworms), Oniscidea (woodlice), and Zygentoma. Then we summed the abundance, richness, and biomass from each group in each trap. We used the abundance data to fit the group scores onto the PCoA ordination. Litter removal data was analyzed using the ‘stats’, ‘lme4’ (Bates et al., 2015), and ‘RLRsim’ (Scheipl et al., 2008) packages from R software (version 4.3.0) (R Development Core Team, 2022), whereas assemblage data was analyzed using the ‘vegan’ package (Oksanen et al., 2022).

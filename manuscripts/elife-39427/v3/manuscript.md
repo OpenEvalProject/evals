@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.39427.001 Reduced cardiac contractility during heart failure (HF) is linked to impaired Ca 2+ release from Ryanodine Receptors (RyRs). We investigated whether this deficit can be traced to nanoscale RyR reorganization. Using super-resolution imaging, we observed dispersion of RyR clusters in cardiomyocytes from post-infarction HF rats, resulting in more numerous, smaller clusters. Functional groupings of RyR clusters which produce Ca 2+ sparks (Ca 2+ release units, CRUs) also became less solid. An increased fraction of small CRUs in HF was linked to augmented ‘silent’ Ca 2+ leak, not visible as sparks. Larger multi-cluster CRUs common in HF also exhibited low fidelity spark generation. When successfully triggered, sparks in failing cells displayed slow kinetics as Ca 2+ spread across dispersed CRUs. During the action potential, these slow sparks protracted and desynchronized the overall Ca 2+ transient. Thus, nanoscale RyR reorganization during HF augments Ca 2+ leak and slows Ca 2+ release kinetics, leading to weakened contraction in this disease.
+Reduced cardiac contractility during heart failure (HF) is linked to impaired Ca2+ release from Ryanodine Receptors (RyRs). We investigated whether this deficit can be traced to nanoscale RyR reorganization. Using super-resolution imaging, we observed dispersion of RyR clusters in cardiomyocytes from post-infarction HF rats, resulting in more numerous, smaller clusters. Functional groupings of RyR clusters which produce Ca2+ sparks (Ca2+ release units, CRUs) also became less solid. An increased fraction of small CRUs in HF was linked to augmented ‘silent’ Ca2+ leak, not visible as sparks. Larger multi-cluster CRUs common in HF also exhibited low fidelity spark generation. When successfully triggered, sparks in failing cells displayed slow kinetics as Ca2+ spread across dispersed CRUs. During the action potential, these slow sparks protracted and desynchronized the overall Ca2+ transient. Thus, nanoscale RyR reorganization during HF augments Ca2+ leak and slows Ca2+ release kinetics, leading to weakened contraction in this disease.
 
 ## Introduction
 
@@ -40,15 +40,23 @@ The advent of super-resolution microscopy techniques has markedly improved our a
 
 ## Results
 
-## dSTORM imaging reveals dispersion of CRUs in failing myocytes
+### dSTORM imaging reveals dispersion of CRUs in failing myocytes
 
 Imaging was performed on isolated, fixed cardiomyocytes with antibody labelling of RyR2. Using diffraction-limited confocal imaging (resolution ≈250 nm) and Structured Illumination Microscopy (SIM, resolution ≈120 nm), the localization of RyRs along z-Lines was clearly apparent, but organization of RyRs within CRUs was not discernable (Figure 1A). With dSTORM imaging, spatial resolution was markedly improved (mean localization precision = 21 ± 3 nm) enabling detailed CRU geometry to be assessed. For analysis of RyR cluster and CRU configuration, acquired raw images were fitted to a 30 × 30 nm grid, corresponding to the quatrefoil structure of the RyR protein (Baddeley et al., 2009). Thresholding was then performed to create binary images (Figure 1B), enabling quantification of RyR clusters, with an RyR counted as present if >half the area of a 30 nm square was above threshold. RyR clusters were defined by occupied, neighbouring grid positions, and CRUs were delineated by collecting neighbouring RyR clusters located within 150 nm (Macquaide et al., 2015) (red boundaries in Figure 1B) or 100 nm (Baddeley et al., 2009; Hou et al., 2015) (Figure 2—source data 1). RyR organization was compared in cardiomyocytes from rats with post-infarction HF and cells from Sham-operated controls. Overall RyR expression was similar in Sham and HF, as evidenced by Western blotting of ventricular homogenates (Figure 2— figure supplement 1), and equivalent RyR labeling density in cardiomyocytes (41.9 ± 1.4 RyR/µm, 40.4 ± 1.3 RyR/µm in Sham, HF respectively). In both groups, RyR staining showed a predominantly transverse, striated pattern (Figure 2A). However, despite rather similar organization of RyRs at the macroscale, nanoscale dSTORM imaging revealed fragmentation of RyR clusters in failing cardiomyocytes (see insets in Figure 2A). Cluster breakup resulted in a reduction in the number of RyRs per cluster, and a greater proportion of small clusters in HF (Figure 2B). The overall number of clusters increased accordingly in failing cells (Figure 2D), and inter-cluster distance was reduced (Figure 2E; see Figure 2—source data 1 for mean data across animals). Consistent with fragmentation of clusters into smaller adjacent groupings, the number of clusters contained in a CRU increased in HF (Figure 2F), although the number of RyRs per CRU decreased (Figure 2C) since RyR clusters were markedly reduced in size. Convex hull analysis (see methods) revealed a consequent decrease in CRU solidity in HF (Figure 2G). Thus, RyR reorganization in failing cells resulted in CRUs with a more sparse, dispersed configuration of smaller sub-clusters.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig1-v3.jpg)
 
-**Figure 1.:** 2+ release units (CRUs).RyR imaging was performed with antibody labelling of isolated and fixed rat ventricular cardiomyocytes. (A). Imaging of RyRs with confocal microscopy (left panel) or Structured Illumination Microscopy (SIM, centre panel) revealed a predominantly striated pattern of RyR localization across cells, but individual CRUs could not be discerned (magnified regions in lower panels). dSTORM imaging provided markedly improved spatial resolution enabling identification of RyR clusters (scale bars = 5 µm). (B). Quantification of RyR localization was performed by fitting raw images to a 30 × 30 nm grid (Baddeley et al., 2009), and performing thresholding to create binary images; an RyR was counted as present if > half the area of a 30 nm square was suprathreshold. CRUs were defined as collections of RyR clusters with an edge-to-edge distance < 150 nm (Macquaide et al., 2015) (red boundaries) or < 100 nm (Baddeley et al., 2009; Hou et al., 2015). (Scale bar = 2 µm).
+**Figure 1.:** RyR imaging was performed with antibody labelling of isolated and fixed rat ventricular cardiomyocytes. (A). Imaging of RyRs with confocal microscopy (left panel) or Structured Illumination Microscopy (SIM, centre panel) revealed a predominantly striated pattern of RyR localization across cells, but individual CRUs could not be discerned (magnified regions in lower panels). dSTORM imaging provided markedly improved spatial resolution enabling identification of RyR clusters (scale bars = 5 µm). (B). Quantification of RyR localization was performed by fitting raw images to a 30 × 30 nm grid (Baddeley et al., 2009), and performing thresholding to create binary images; an RyR was counted as present if > half the area of a 30 nm square was suprathreshold. CRUs were defined as collections of RyR clusters with an edge-to-edge distance < 150 nm (Macquaide et al., 2015) (red boundaries) or < 100 nm (Baddeley et al., 2009; Hou et al., 2015). (Scale bar = 2 µm).
 
-## RyR dispersion in HF augments ‘silent’ RyR Ca2+ leak
+![Figure 2.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig2-v3.jpg)
+
+**Figure 2.:** Alterations in nanoscale RyR organization were examined in cardiomyocytes from rats with post-infarction heart failure (HF). Representative images show that macroscale organization of RyRs was similar in HF and Sham-operated controls (A), upper panels). However, nanoscale examination revealed that RyR clusters were broken apart in HF. For the magnified regions in (A), conversion from raw dSTORM to binary images is shown in the middle and lower panels (saturation levels indicated by high-low look-up table). Mean measurements showed fewer RyRs per cluster in failing cells, with an increased fraction of small clusters (B). Dispersion of RyR clusters into smaller fragments resulted in an increased overall number of clusters (D), reduced inter-cluster distances (E) and inclusion of more clusters in each CRU (F). Overall CRU composition became less solid in failing cells ((G), assessed by convex-hull analysis), as the average CRU contained fewer RyRs (C). See Figure 2—source data 1 for analysis of 100 nm vs 150 nm CRU inclusion criterion (ncells = 46, 50 in Sham, HF; *=P < 0.05 vs Sham).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Western blotting was performed on homogenates of left ventricles from post-MI HF rats and Sham-operated controls. Representative immunoblots are shown at left, with mean values at right, normalized to Sham. (JPH2 = junctophilin 2; nhearts = 5, 5 in Sham, HF; P = NS).
+
+### RyR dispersion in HF augments ‘silent’ RyR Ca2+ leak
 
 We examined the functional implications of altered nanoscale organization of RyRs, first hypothesizing that RyR dispersion would augment SR Ca2+ leak in failing cardiomyocytes. Total Ca2+ leak was assessed in SR microsomes obtained from the left ventricle of Sham and failing hearts.
 
@@ -60,21 +68,45 @@ Following initiation of microsomal Ca2+ uptake by addition of ATP, SERCA functio
 
 To investigate whether increased silent Ca2+ leak could be linked to RyR dispersion, we employed a mathematical model of the dyad (illustrated schematically in Figure 4—figure supplement 1A) that enabled simulation of Ca2+ sparks with varied placement of RyRs within the CRU. We first incorporated small idealized CRUs containing as few as 4 RyRs (Figure 4A), as our dSTORM imaging indicated that HF cells contain an increased fraction of small CRUs (Figure 2C). During repeated simulations, a single RyR was opened at a random position within the CRU, and subsequent triggered RyR openings were allowed to proceed stochastically. Simulated Ca2+ release events with amplitudes ΔF/F0 ≥0.4 were defined as sparks, based on the detection threshold determined experimentally (see methods). Ca2+ release from the smallest CRUs was never detected, but a progressively greater proportion of events yielded visible sparks as the number of RyRs in these idealized dyad geometries was increased (Figure 4A). These results support the assertion that an increased fraction of small CRUs in HF promotes undetectable, silent Ca2+ leak.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig4-v3.jpg)
+
+**Figure 4.:** A mathematical model of the dyad was employed to examine the effects of CRU dispersion on Ca2+ sparks and non-spark mediated RyR leak. (A). As dSTORM imaging indicated an increased fraction of small CRUs in HF (Figure 2C), small idealized CRUs were initially modelled with as few as 4 RyRs. Simulated Ca2+ sparks (300 consecutive simulations) were never detected for the smallest CRUs, based on an experimentally determined spark detection threshold of ΔF/F0 = 0.4. Higher probability of visible spark generation (fidelity) was observed for larger CRUs. (B). Real CRU geometries obtained by dSTORM imaging were employed to simulate sparks from larger dyads. Four configurations were modelled with varying numbers of constituent RyR clusters, but similar total RyR number (≈55). While the single-cluster CRU exhibited high Ca2+ spark fidelity, lower probability of spark generation was observed in dispersed, multi-cluster CRUs (fidelity indicated by colour scale). These data support that CRU rearrangement during HF promotes silent RyR leak, due to an increased fraction of both small CRUs as well as larger CRUs with dispersed, irregular configurations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Graphical representation of the computational domain of the model. The junctional SR (jSR) was shaped to encompass idealized RyR geometries or dSTORM-based CRU contours. (B) To understand the role of the jSR geometry in determining the maximum inter-cluster distance permissive of functional coupling, and thus CRU definition, we spread two square 16-RyR clusters at variable distances up to 144 nm edge-to-edge (i.e. 4 RyR lengths). Coupling could occur at distances up to ~ 150 nm but only when the jSR was contiguous between clusters. (C) Similar effects could be observed in the realistic 7-cluster geometry, where a fully contiguous jSR was sufficient to functionally couple clusters at distances between 100 and 150 nm.
+
 We next examined whether dispersion of clusters in larger more realistic CRUs could similarly contribute to increased silent Ca2+ leak in failing cells. To this end we incorporated real CRU geometries obtained by dSTORM imaging into the model (Figure 4B). Four CRUs were selected containing roughly the same number of RyRs, but with different numbers of RyR clusters (1, 3, 7 or 10 clusters). As in the simulations described above for idealized CRU geometries, a single, randomly chosen RyR was opened in each simulation, to determine the likelihood that such triggering would result in a detectable Ca2+ spark. While relatively high fidelity spark generation was observed for the single-cluster CRU, Ca2+ release was more rarely observed to propagate between clusters, and spark fidelity was significantly lower in multi-cluster CRUs (Figure 4B). This reduced efficiency of Ca2+ spark triggering in dispersed CRUs partly resulted from greater Ca2+ diffusion distance between neighbouring clusters, as demonstrated by progressively increasing the distance between RyR clusters in an idealized dyad (Figure 4—figure supplement 1B). Furthermore, released Ca2+ is less efficiently confined in the dyadic space when the junctional SR has a more distributed and irregular shape. This latter point was demonstrated in the model by altering the amount of junctional SR surrounding the CRU; increasing junctional SR ‘padding’ increased spark fidelity in both idealized dyads (Figure 4—figure supplement 1B) and dSTORM-based geometries (Figure 4—figure supplement 1C).
 
 In summary, these results indicate that nanoscale reorganization of RyRs in HF promotes non-spark-mediated SR Ca2+ leak by two mechanisms: (1) by creating smaller CRUs which produce Ca2+ release events below the detection limit, and (2) by creating more distributed CRU configurations in which multiple RyR clusters are less likely to co-operatively generate sparks.
 
-## CRU dispersion in HF causes slowing of Ca2+ sparks
+### CRU dispersion in HF causes slowing of Ca2+ sparks
 
 We next hypothesized that CRU dispersion would slow cardiomyocyte Ca2+ release; a hallmark of HF. Representative confocal recordings of Ca2+ sparks and their temporal profiles are shown in Figure 5A. Spark kinetics in Sham cells generally exhibited rapid rising and declining phases. While some sparks also showed fast kinetics in HF cells, others were markedly slow to rise and decay (Figure 5A). Indeed, measurements of spark rise time and duration exhibited broader distributions and were, on the average, prolonged in HF compared to Sham (Figure 5B). To investigate whether CRU dispersion in HF could underlie slowing of Ca2+ spark kinetics, we again employed our mathematical model with dSTORM-based CRU configurations. During the simulations, the time to opening of each RyR was registered, and the time course of the overall Ca2+ spark determined. Representative simulations show that RyR opening times were delayed in the dispersed, multi-cluster CRUs compared to the solid, single-cluster CRU (Figure 6A). Simulations of Ca2+ spark time courses further showed that the delayed RyR openings in multi-cluster CRUs resulted in more variable kinetics and overall slowing of spark rise time (Figure 6B, mean data Figure 6C), reproducing experimental observations. Of note, although CRUs were observed to contain fewer RyRs in HF than Sham (Figure 2C), simply reducing the RyR number to an equivalent degree in the mathematical model did not markedly alter Ca2+ spark kinetics (Figure 6—source data 1), further confirming a key role of CRU fragmentation in failing cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig5-v3.jpg)
 
-**Figure 5.:** 2+ spark kinetics are slowed in HF.(A) Representative line-scan images of Ca2+ sparks in Sham and HF, selected from the cell-wide scans presented in Figure 3E. Temporal profiles (right panels) show that spark kinetics were generally tightly constrained in Sham, with low values for both time to peak (TTP) and duration (full duration at half maximum, FDHM). Although many sparks were also brief in HF cells, a subset of sparks exhibited slowed kinetics. (B) Distributions of measurements for TTP and FDHM were right-shifted in HF, and mean values were significantly increased. Spark magnitudes tended to be larger in HF than Sham. (nsparks = 130, 100 from 75, 72 cells in Sham, HF; *=P < 0.05 vs Sham).
+**Figure 5.:** (A) Representative line-scan images of Ca2+ sparks in Sham and HF, selected from the cell-wide scans presented in Figure 3E. Temporal profiles (right panels) show that spark kinetics were generally tightly constrained in Sham, with low values for both time to peak (TTP) and duration (full duration at half maximum, FDHM). Although many sparks were also brief in HF cells, a subset of sparks exhibited slowed kinetics. (B) Distributions of measurements for TTP and FDHM were right-shifted in HF, and mean values were significantly increased. Spark magnitudes tended to be larger in HF than Sham. (nsparks = 130, 100 from 75, 72 cells in Sham, HF; *=P < 0.05 vs Sham).
 
-## Slow Ca2+ sparks promote slowing and de-synchronization of the Ca2+ transient
+![Figure 6.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig6-v3.jpg)
+
+**Figure 6.:** To examine whether altered CRU morphology could slow Ca2+ spark kinetics in HF, spark profiles were simulated for a variety of dSTORM-derived RyR configurations. (A) Sparks were triggered by opening a single RyR (circled) which was randomly placed in consecutive simulations (example RyR opening trajectories are shown in the upper panels, with a family of spark time-courses illustrated below). Time to opening was registered for each RyR in the CRU, and the resultant time course of the Ca2+ spark was plotted until the final RyR closure, at which point the simulation was stopped for computational efficiency. Opening times were similar for individual RyRs within a solid, single cluster CRU, and the overall temporal profile of elicited sparks showed rapid kinetics which were rather consistent between consecutive simulations. By contrast, delayed and variable opening times were observed for individual RyRs in multi-cluster CRUs. This resulted in variable and slowed Ca2+ spark kinetics with these CRU configurations, as indicated by temporal spark profiles (A), a right-shifted distribution of time-to-peak measurements (B) and mean data (C). (*=P < 0.05 vs single-cluster CRU).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** To examine whether out-of-focus Ca2+ release events could artefactually alter assessment of Ca2+ spark parameters, simulated Ca2+ release profiles were compared in ‘linescans’ collected at various depths of the 2 × 2 µm computational domain (54 RyR single cluster model). Vertical, stepwise displacement from the central plane resulted in a rapid decrease in measured spark amplitude (A). Indeed, events > 0.5 µm displaced from the focal plan were undetectable. While displacement of the focal plane also slowed apparent Ca2+ spark kinetics, such effects were negligible within the range where sparks were detectable (B).
+
+### Slow Ca2+ sparks promote slowing and de-synchronization of the Ca2+ transient
 
 Finally, we examined the consequences of increased variability in Ca2+ spark kinetics for the Ca2+ transient in failing cells. We observed that field-stimulated Ca2+ transients were significantly slower to rise in HF than Sham (Figure 7A–C). This slowing of Ca2+ release was associated with marked de-synchronization of the Ca2+ transient, which we quantified by measuring the variability in time to reach half-maximal fluorescence (TTF50) across the cell (see lower panels in Figure 7A). This ‘dyssynchrony index’ (Louch et al., 2006) was significantly increased in HF compared to Sham, with a strongly right-shifted distribution of values (Figure 7D). T-tubule disruption in failing cells (Figure 7—figure supplement 1) has been previously established in this model of HF (Frisk et al., 2016), and is a recognized cause of Ca2+ release dyssynchrony in this disease (Song et al., 2006; Louch et al., 2006; Heinzel et al., 2008). We examined whether alterations in Ca2+ spark kinetics also promote dyssynchrony, by examining local Ca2+ transients within narrow, 2 µm regions of the line scan. These regions were centered at the locations of spontaneous Ca2+ sparks observed when electrical pacing was halted. We specifically distinguished between locations with ‘slow’ sparks, defined by a rise time >13 ms (ie. 1 S.D. > mean rise time in Sham), and remaining ‘fast’ sparks. By this definition, 24% of sparks in HF cells were defined as slow, while only 13% of Sham sparks fit this definition. Representative examples of such sparks and their temporal profiles are shown in Figure 7E, with corresponding positions along the line scan indicated in Figure 7A. Local transients from slow spark locations in HF exhibited markedly slower rise times than those from fast spark locations in both HF and Sham (Figure 7F). The association between slow sparks and slow local transients was also apparent in ‘heat map’ plots (Figure 7G). These results show that by protracting Ca2+ sparks, CRU dispersion during HF slows and desynchronizes the overall Ca2+ transient.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig7-v3.jpg)
+
+**Figure 7.:** (A) Representative confocal linescan images of Ca2+ transients in field-stimulated cells (stimulus illustrated as a horizontal line). The overall Ca2+ transient was slowed in HF compared to Sham, as indicated by plots of spatially-averaged Ca2+ transients ((A), right panel), and measurements of half rise time (TTF50, (B)) and time to peak (C). Slowed Ca2+ transient kinetics included de-synchronization of Ca2+ release across HF cells, as indicated by profiles of local TTF50 (lower panels in A). The standard deviation of these values, defined as the dyssynchrony index (Louch et al., 2006), showed a right-shifted distribution in HF compared to Sham (D). To examine the relationship between slowed Ca2+ spark kinetics and de-synchronized Ca2+ transients in HF, local Ca2+ transients were examined within 2 µm regions of the linescan centered at the location of recorded sparks. Paired representative recordings of sparks and local Ca2+ transients are shown in (E and F), respectively, corresponding to indicated positions in A) (vertical arrows). Local Ca2+ release at ‘slow’ spark locations (rise time > 13 ms) was protracted during the action potential, in comparison with local transients with ‘fast’ sparks in both HF and Sham (F). This association is demonstrated by clustering of locations with slow Ca2+ spark and local transient kinetics in ‘heat maps’ (G), and links slowing of Ca2+ release kinetics at the level of the single CRU and whole cell. (Ca2+ transients: ncells = 43 in Sham, 57 in HF; nfast sparks= 18 in Sham, 19 in HF; nslow sparks= 18 in HF; *=P < 0.05 vs Sham).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/39427/elife-39427-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Isolated cardiomyocytes were stained with di-8-ANEPPS and examined by confocal microscopy (A). Zoomed regions enlarged in (B). In agreement with previous work employing the same post-infarction rat model (Frisk et al., 2016), we observed marked remodeling of t-tubular structure in HF. Skeletonized images (C, D) indicate that this reorganization included a loss of transverse t-tubule elements (colored white) and the appearance of additional longitudinal tubules running in the axial, perpendicular orientation (colored red). Scale bar = 5 µm.
 
 ## Discussion
 
@@ -94,15 +126,123 @@ In conclusion, our results contribute to an emerging understanding that cardiomy
 
 ## Materials and methods
 
-## Rat model of post-myocardial infarction congestive HF
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus, M)</td>
+      <td>Male Wistar- Hannover rats</td>
+      <td>Janvier-labs</td>
+      <td>RjHan: WI; RGD: 13792727</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse-anti-RyR2 primary antibody</td>
+      <td>ThermoFischer Scientific</td>
+      <td>Cat# MA3-916; RRID:AB_2183054</td>
+      <td>IHC, 1:100; WB, 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluo 647 conjugated goat-anti-mouse secondary Ab</td>
+      <td>Molecular Probes/Invitrogen</td>
+      <td>Cat# A-21237; RRID:AB_2535806</td>
+      <td>IHC, 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat IgG-HRP linked whole antibody</td>
+      <td>R and D Systems</td>
+      <td>Cat# HAF109; RRID:AB_357236</td>
+      <td>WB, 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG HRP linked Whole Ab</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA931V; RRID:AB_772210</td>
+      <td>WB, 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG HRP linked Whole Ab</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA934V; RRID: AB_772206</td>
+      <td>WB, 1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-GAPDH Polyclonal antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-20357; RRID:AB_641107</td>
+      <td>WB, 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti- Junctophilin-2 Polyclonal Antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-51313; RRID:AB_2296391</td>
+      <td>WB, 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BIN1 (Amphiphysin II (2F11) Antibody)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-23918; RRID:AB_667901</td>
+      <td>WB, 1:500</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dense Stochastic Sampling Imaging (DSSI) algorithm</td>
+      <td>SoftWoRx, GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dSTORM image post-processing algorithm</td>
+      <td>PMID: 26490742</td>
+      <td></td>
+      <td>Described in the Github repository (Kolstad, 2018; copy archived at https://github.com/elifesciences-publications/Ryanodine_Receptor_Dispersion_during_Heart_Failure)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mathematical Model</td>
+      <td>PMID: 22495592; PMID: 23708355; this paper</td>
+      <td></td>
+      <td>Described in the Github repository (Kolstad, 2018; copy archived at https://github.com/elifesciences-publications/Ryanodine_Receptor_Dispersion_during_Heart_Failure)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>SigmaPlot</td>
+      <td>RRID:SCR_003210</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Rat model of post-myocardial infarction congestive HF
 
 All experiments were approved by the Norwegian National Animal Research Authority (project license no. FOTS 5982, 7786), and were performed in accordance with the National Institute of Health guidelines (NIH publication No. 85 – 23, revised 2011) and European Directive 2010/63/EU. Large anterolateral myocardial infarctions were induced in ~300 g male Wistar-Hannover rats, by ligation of the left coronary artery as previously described (Lunde et al., 2012). Development of HF was verified six weeks later using a Vevo 2100 echocardiography imaging system (VisualSonics, Toronto, Canada). Inclusion of failing animals was based on established criteria (Sjaastad et al., 2000), including dilation of the left atrium (diameter >5 mm) and ventricle, and increased lung weight (>2.5 g). Sham-operated rats served as controls. Experiments were performed over a two year period, using animals from 10 rounds of animal surgery. Sample sizes were determined by power analysis, assuming that only 50% of post-infarction animals would be included in the final data set, and based on a pilot project of variability in CRU morphology in healthy controls.
 
-## Cell isolation
+### Cell isolation
 
 Cardiac myocytes from failing and Sham-operated rats were isolated using a standard enzymatic dispersion technique (Louch et al., 2011). Excised hearts were mounted on a Langendorff setup, and retrogradely perfused through the aorta with Ca2+-free solution containing (in mmol/L): 130 NaCl, 25 Hepes, 5.4 KCl, 0.5 MgCl2, 0.4 NaH2PO4, 5.5 D-glucose, pH 7.4. Once cleared of blood, hearts were then perfused with the above solution including collagenase (2 mg/mL, Worthington Biochemical Corp., Lakewood, NJ, USA) and low [Ca2+] (0.05 mmol/L). After 10 min of digestion, hearts were cut down, minced, and filtered, and isolated cardiomyocytes were allowed to sediment.
 
-## Immunostaining
+### Immunostaining
 
 Isolated cardiomyocytes were transferred to cell culture medium (DMEM 1X, Life Technologies with 10% FBS, Biowest Nuaillé, France and 1% Penicillin-Streptomycin, Sigma), and plated on laminin-coated, glass bottom culture dishes (MatTek corporation, Ashland MA). Staining was performed according to a described protocol (Swift et al., 2007), with consecutive steps for chemical fixation (4% Formaldehyde in 1 mol/L HEPES buffer, 10 min), quenching (PBS + 100 mmol/L Glycine, 10 min), permeabilization (PBS + 0,03% Triton X-100, 10 min), and blocking (NaCl 150 mmol/L, Na3 citrate 17.5 mmol/L, 5% goat serum, 3% BSA, 0.02% NaN3, 2 hr). PBS washing was performed in between each step. The cells were then incubated overnight with 1/100 diluted mouse-anti-RyR2 primary antibody (ThermoFischer Scientific, MA3–916) in low blocking buffer, containing 150 mmol/L NaCl, 17.5 mmol/L Na3 citrate, 2% goat serum, 1% BSA, and 0.02% NaN3 at 4°C. This protocol has previously been reported to result in the binding of multiple primary antibodies to each RyR tetramer (Baddeley et al., 2009). The following day, cells were washed with PBS and incubated with 1/200 diluted secondary antibody (Alexa Fluo 647 conjugated goat-anti-mouse secondary Ab, Molecular Probes/Invitrogen) in low blocking buffer for 2 hr. Cells were then washed and stored in PBS until image acquisition. Of note, the fab-fragment secondary antibody employed places the fluorescent label far closer to the epitope than traditional antibodies. Thus, under our experimental conditions, the steric error is generally <10 nm, and dwarfed by the localization of the dSTORM technique (≈20 nm, see below). dSTORM imaging was performed using an OMX V4 system (Applied Precision, GE Healthcare) with a 60 × 1.49 NA TIRF objective (Olympus), a pco.edge sCMOS camera (PCO), a 100 mW 642 nm laser, and a 683/40 emission filter. Focusing was performed with a 30V300nanoX CL focusing unit (Piezosystem, Jena). Cells were placed in ‘switching buffer’ (0.5 mg/mL glucose oxidase, 40 μg/mL catalase, 10% wt/vol glucose, 50 mmol/L β-mercaptoethylamine in Tris-buffer, pH 8.0, all Sigma–Aldrich), and fluorophores were pushed into the dark state by illumination with the 642 nm laser at a highly inclined, but sub-TIRF angle (Highly Inclined and Laminated Optical sheet, HILO; Tokunaga et al., 2008). Spontaneous blinking occurred without the use of an activation laser, and was recorded at a depth of 200–500 nm during ten-thousand frames per field of view (20.48 × 20.48 µm), with a maximum of 350,000 blinks recorded.
 
@@ -112,7 +252,7 @@ Images were further processed using a custom analysis program written in Python,
 
 To address whether unspecific secondary antibody binding affected measurements of RyR configurations, dSTORM imaging of cardiomyocytes was performed in the absence of primary antibody. The obtained signal was then added to RyR-labeled images obtained by the standard protocol (primary plus secondary antibodies), and RyR configuration was analyzed. Non-specific labeling was observed to only negligibly increase the number of RyRs/cluster and RyRs/CRU by 3.7% and 3.2%, respectively. Similarly, RyR density was increased by 0.5%, and inter-cluster distance was reduced by 0.2%, supporting that unspecific labelling had a minute influence on the dataset.
 
-## Ca2+ spark and transient imaging and analysis
+### Ca2+ spark and transient imaging and analysis
 
 Using an LSM 7Live confocal microscope (Zeiss), Ca2+ sparks were recorded from quiescent cardiomyocytes loaded with fluo-4 AM (20 µmol/L, Molecular Probes, Eugene, OR) and superfused with a HEPES Tyrode solution containing (in mmol/L): 140 NaCl, 1.0 CaCl2, 0.5 MgCl2, 5.0 HEPES, 5.5 glucose, 0.4 NaH2PO4, 5.4 KCl, pH 7.4, 37°C. Scans were performed with a 1024 pixel line drawn along the longitudinal axis of the cell with a temporal resolution of 1.5 ms. Ca2+ sparks were analysed with a custom program (CaSparks 1.01, D. Ursu, 2003), as previously (Louch et al., 2013). Sparks were defined as local increases in fluorescence with a minimum amplitude (ΔF/F0) of 0.4, to minimise the inclusion of false positives. Linescan images of cells obtained during inhibition of Ca2+ sparks (prolonged exposure to 10 mM caffeine) confirmed the appropriateness of this detection threshold. Ca2+ spark frequency was normalized to cell length and recording time, and spark geometry was assessed by measurements of time to peak (TTP), full width at half maximum (FWHM), and full duration at half maximum (FDHM). Spark-mediated Ca2+ leak was calculated as the product of spark mass (amplitude X FWHM X FDHM) and frequency.
 
@@ -120,13 +260,13 @@ Ca2+ transients were elicited by field-stimulation through a pair of platinum wi
 
 SR Ca2+ content was assessed by rapidly applying 10 mM caffeine and measuring the amplitude of the elicited Ca2+ transient.
 
-## Microsomal Ca2+ uptake, leak and release
+### Microsomal Ca2+ uptake, leak and release
 
 Ca2+ handling was additionally examined using crude homogenates from rat left ventricle, based on methods described by O’Brien and modified by Li et al. (O'Brien, 1990; Li et al., 2002). Fresh ventricular tissue was weighed and homogenized in ice cold buffer (1:10 wet weight/vol, pH 7.9) containing (in mmol/L): 300 sucrose, 5 NaN3, 1 EDTA, 40 L-histidine, 40 Tris HCl and protease inhibitors. Homogenization was performed with a Polytron 1200 (Kinematica AG, Luzern, Switzerland) at 25000 rpm for 3 × 20 s, with a 20 s break between bursts. Homogenates were then aliquoted, frozen in liquid N2, and stored at −80°C until use.
 
 Ca2+ uptake and release were measured in 2.2 ml of assay buffer, containing (in mmol/L): 165 KCl, 22 Hepes, 7.5 oxalate, 11 NaN3, 0.0055 TPEN, 4.5 MgCl2, 9 Tris HCl and 0.002 fura-2 salt (pH = 7.0, 37°C). Ca2+ fluxes were monitored with an LS50B luminescence spectrometer (Perkin Elmer Ltd, Beaconsfield, Buckinghamshire, United Kingdom) after addition of 100 µl of freshly-thawed and vortexed homogenate. Ca2+ uptake by the vesicles was initiated by addition of Na4ATP (2.2 mmol/L), and then blocked by application of thapsigargin (1.5 µmol/L) to assess RyR leak. Releasable SR Ca2+ content was estimated by measuring Ca2+ release induced by application of the RyR opener 4-chloro-m-cresol (4-CMC) (5.5 mmol/L). The fluorescence ratio was calibrated to [Ca2+] using the following equation: [Ca2+]=Kd *((R - Rmin)/(Rmax - R))*(Sf2/Sb2), where R is the 340 nm/380 nm fluorescence ratio, Kd is the dissociation constant of fura-2 and Sf2/Sb2 is the ratio of measured fluorescence intensity at 380 nm when fura-2 is Ca2+ free or saturated, respectively. Rmin is the ratio at very low [Ca2+]i and Rmax is the ratio at saturating [Ca2+]i, obtained by adding 3.3 mmol/L EGTA and 4.8 mmol/L CaCl2 respectively to the cuvette at the end of each recording.
 
-## Western blotting
+### Western blotting
 
 Frozen tissue from rat left ventricles was homogenized in cold buffer (210 mM sucrose, 2 mM EGTA, 40 mM NaCl, 30 mM HEPES, 5 mM EDTA) with the addition of a Complete EDTA free protease inhibitor cocktail tablet (Roche Diagnostics, Oslo, Norway) and a PhosSTOP tablet (Roche). SDS was then added to the homogenates to a final concentration of 1%, and protein concentrations were quantified using a micro BCA protein assay kit (Thermo Fischer Scientific Inc, Rockford, IL). Bovine serum albumin (BSA) was used as standard protein.
 
@@ -134,40 +274,140 @@ The following primary antibodies were employed for immunoblotting: RyR (1:1000; 
 
 Protein homogenates (5 or 15 µg/lane) were size fractionated on 4–15% or 15% Criterion TGX gels (Biorad Laboratories, Oslo, Norway) and transferred to 0.45 μM PVDF-membranes (GE Healthcare). The membranes were blocked in 5% non-fat milk or 5% Casein (Roche Diagnostics) in Tris-buffered saline with 0.1% Tween (TBS-T) for 1 hr at room temperature, and then incubated with primary antibody overnight at 4°C. Secondary antibodies were incubated for 1 hr at room temperature and blots were developed using Enhanced Chemiluminescence (ECL prime, GE healthcare). Chemiluminiscense signals were detected by a LAS 4000 (GE healthcare) and protein levels were quantified using ImageQuant software (GE Healthcare).
 
-## Mathematical model
+### Mathematical model
 
-A mathematical model was created to simulate the effects of varied RyR localization and CRU geometry on Ca2+ spark characteristics. We have made all simulation results, geometries, and code specific to this study available in an online repository (Kolstad, 2018), along with code for the full reaction-diffusion simulator. The model extended from the work of Hake et al. (2012), with included RyR stochasticity developed from previous work by Cannell and colleagues (Cannell et al., 2013). We have chosen this model for the relative simplicity of its gating (no direct inter-RyR coupling, or explicit luminal Ca2+ regulation), and because it was built for a similarly constructed (spatially discretized) geometry, (Cannell et al., 2013) unlike most other recent RyR2 gating (Williams et al., 2011; Wescott et al., 2016). A set of coupled partial differential equations was employed to describe the temporal evolution of the free and bound [Ca2+] in the SR and cytosol:∂c∂t=Dc∇2c−∑i=14Ri(c,bi), x∈ΩC∂bi∂t=Di∇2bi+Ri(c,bi), i=1,2,3,4 x∈ΩC∂s∂t=Ds∇2s−R5(s,b5), x∈ΩS∂b5∂t=R5(s,b5), x∈ΩS
+A mathematical model was created to simulate the effects of varied RyR localization and CRU geometry on Ca2+ spark characteristics. We have made all simulation results, geometries, and code specific to this study available in an online repository (Kolstad, 2018), along with code for the full reaction-diffusion simulator. The model extended from the work of Hake et al. (2012), with included RyR stochasticity developed from previous work by Cannell and colleagues (Cannell et al., 2013). We have chosen this model for the relative simplicity of its gating (no direct inter-RyR coupling, or explicit luminal Ca2+ regulation), and because it was built for a similarly constructed (spatially discretized) geometry, (Cannell et al., 2013) unlike most other recent RyR2 gating (Williams et al., 2011; Wescott et al., 2016). A set of coupled partial differential equations was employed to describe the temporal evolution of the free and bound [Ca2+] in the SR and cytosol:
 
-Here ΩC is this cytosolic domain, including the cleft space, and ΩS is the SR, including both junctional and network SR components. Four buffers were included in ΩC: ATP, calmodulin, troponin and Fluo-4, and one buffer, calsequestrin, was included in ΩS. These buffers are numbered from 1 to 5 and their corresponding concentrations are denoted bi. Troponin and calsequestrin were regarded to be stationary, and the corresponding diffusion coefficients (σ) were therefore set to zero (see Supplementary file 1). The calcium concentrations in ΩC and ΩS are denoted c and s respectively.
+$$
+\frac{∂c}{∂t}=D_{c}∇^{2}c−\sumi=14R_{i}(c,b_{i}), x\inΩ_{C}
+$$
 
-The buffering reactions are of the formRc,bi= koncBtot-bi-koffbiwhere B tot  is the total buffer concentration, and k on  and k off  are the on and off rates for the buffer, respectively.
 
-The two domains are coupled through a flux condition over the SR membrane:Dc∂c∂n=−Ds∂s∂n=J(c,s)whereJ(c,s)={JRyRx∈ΓRyRJSercax∈ΓSerca0elsewhere
 
-The RyR flux is computed by:JRyR(c,s)=gRyRγ(c−s)where γ∈0,1 is a stochastic variable that switches between the conductive (O) and non-conductive (C) states according to:k+C⇄O.k-
+$$
+\frac{∂b_{i}}{∂t}=D_{i}∇^{2}b_{i}+R_{i}(c,b_{i}), i=1,2,3,4 x\inΩ_{C}
+$$
 
-While we have chosen a different form for the equations expressing the default transition rates, they are equivalent to those in the original model of Cannell et al. (2013) with the exception that we have set limits to both k+ and k- at low dyadic calcium:k+c=fcK+n+, kmin+, kmax+k-c=fcK-n-, kmin-, kmax-where for a<b:f(y,a,b)={a, if y<ay, if a≤y≤bb, if y>b
+
+
+$$
+\frac{∂s}{∂t}=D_{s}∇^{2}s−R_{5}(s,b_{5}), x\inΩ_{S}
+$$
+
+
+
+$$
+\frac{∂b_{5}}{∂t}=R_{5}(s,b_{5}), x\inΩ_{S}
+$$
+
+Here $Ω_{C}$ is this cytosolic domain, including the cleft space, and $Ω_{S}$ is the SR, including both junctional and network SR components. Four buffers were included in $Ω_{C}$: ATP, calmodulin, troponin and Fluo-4, and one buffer, calsequestrin, was included in $Ω_{S}$. These buffers are numbered from 1 to 5 and their corresponding concentrations are denoted $b_{i}$. Troponin and calsequestrin were regarded to be stationary, and the corresponding diffusion coefficients ($\sigma$) were therefore set to zero (see Supplementary file 1). The calcium concentrations in $Ω_{C}$ and $Ω_{S}$ are denoted $c$ and $s$ respectively.
+
+The buffering reactions are of the form
+
+$$
+Rc,b_{i}=k_{on}cB_{tot}-b_{i}-k_{off}b_{i}
+$$
+
+where $B_{ tot }$ is the total buffer concentration, and $k_{ on }$ and $k_{ off }$ are the on and off rates for the buffer, respectively.
+
+The two domains are coupled through a flux condition over the SR membrane:
+
+$$
+D_{c}\frac{∂c}{∂n}=−D_{s}\frac{∂s}{∂n}=J(c,s)
+$$
+
+where
+
+$$
+J(c,s)={J_{RyR}x\inΓ_{RyR}J_{Serca}x\inΓ_{Serca}0elsewhere
+$$
+
+The RyR flux is computed by:
+
+$$
+J_{RyR}(c,s)=g_{RyR}\gamma(c−s)
+$$
+
+where $\gamma\in0,1$ is a stochastic variable that switches between the conductive (O) and non-conductive (C) states according to:
+
+$$
+k^{+}C⇄O.k^{-}
+$$
+
+While we have chosen a different form for the equations expressing the default transition rates, they are equivalent to those in the original model of Cannell et al. (2013) with the exception that we have set limits to both $k^{+}$ and $k^{-}$ at low dyadic calcium:
+
+$$
+k^{+}c=f\frac{c}{K^{+}}^{n^{+}},k_{min}^{+},k_{max}^{+}
+$$
+
+
+
+$$
+k^{-}c=f\frac{c}{K^{-}}^{n^{-}},k_{min}^{-},k_{max}^{-}
+$$
+
+where for $a<b$:
+
+$$
+f(y,a,b)={a, if y<ay, if a\leqy\leqbb, if y>b
+$$
 
 The parameters are given in Supplementary file 1.
 
-The SERCA formulation is taken from Tran et al. (2009) and is of the form:JSerca(c,s)=a1c2−a2s2a3c2+a4s2+a5.
+The SERCA formulation is taken from Tran et al. (2009) and is of the form:
 
-## Geometry, numerics, and implementation
+$$
+J_{Serca}(c,s)=\frac{a_{1}c^{2}−a_{2}s^{2}}{a_{3}c^{2}+a_{4}s^{2}+a_{5}}.
+$$
 
-The computational domain in our model (ΩS∪Ωc) was a (2 µm) cube containing a single CRU (Illustrated in Figure 4—figure supplement 1A). Unlike the original work of Cannell and colleagues, for which RyR locations were fixed for all simulations, our simulations involve algorithm-defined changes in the jSR geometry and location of RyRs to reflect the structural differences captured by the dSTORM recordings. In all geometries the domain consisted of a 12 nm wide cleft space sandwiched between the junctional SR (jSR) surface and the t-tubular surface. The latter was represented as a non-conductive slab inside Ωc, serving as a barrier to diffusion. RyRs were located on the opposing jSR surface, each occupying a space 36 × 36 nm, with neighbouring RyRs placed 36 nm apart (centre-to-centre distance). The jSR was modeled as a physical extension (‘padding’) around each RyR by a defined distance equivalent to 1 RyR diameter (36 nm). As mentioned above, RyRs were arranged according to dSTORM-derived locations, and the jSR shape was adjusted according to the RyR locations. In some simulations (Figure 4A, Figure 6—source data 1) the geometries of the jSR were fixed while idealized RyR lattice geometries were varied to explore the independent effect of modifying RyR number with fixed jSR volume and the locally releasable calcium pool (Figure 4A). To specifically investigate the effects of RyR dispersal, example dSTORM-identified RyR patterns were selected with similar total RyR number but with arrangement into a varied number of sub-clusters (1, 3, 7, or 10). The ratio of RyR number to jSR volume for these example CRUs is presented in Figure 4—source data 1. To limit the effect variation in jSR volume has on the releaseable Ca2+ store, we fixed the total SR volume (and thus initial SR Ca2+ content) across all geometries by modifying the non-junctional SR (nSR) volume as required. Of note, while nSR concentration was modeled as a continuum, global SR calcium concentration was effectively clamped at initial values as expected for the time-scale and spatial-scale simulated.
+### Geometry, numerics, and implementation
 
-Dyadic Ca2+ release was initiated by opening a single RyR in the CRU; this ‘trigger’ RyR was selected randomly and varied between consecutive simulations. Simulated triggered Ca2+ release from the CRU was then allowed to proceed, with the above equations discretized in space with a finite volume approach (12 nm edge length throughout the domain), and solved in time using explicit Euler time stepping. Specifically, we used operator splitting and solved each of the reaction and diffusion sub-problems with a fixed ∆t = 0.1µs, except when calculating the RyR release current. Due to the small element volumes and high fluxes this calculation is very stiff, so instead we solve it analytically. If we use x to denote the SR calcium concentration and y to denote the cleft calcium concentration, we can write this sub-problem as:x˙=K(y−x)y˙=K(x−y)where K is the channel conductance per element volume. The solution to this subsystem is given by:x(t)=S−De−2Ktyt=S+De-2Kt
+The computational domain in our model ($Ω_{S}∪Ω_{c}$) was a (2 µm) cube containing a single CRU (Illustrated in Figure 4—figure supplement 1A). Unlike the original work of Cannell and colleagues, for which RyR locations were fixed for all simulations, our simulations involve algorithm-defined changes in the jSR geometry and location of RyRs to reflect the structural differences captured by the dSTORM recordings. In all geometries the domain consisted of a 12 nm wide cleft space sandwiched between the junctional SR (jSR) surface and the t-tubular surface. The latter was represented as a non-conductive slab inside $Ω_{c}$, serving as a barrier to diffusion. RyRs were located on the opposing jSR surface, each occupying a space 36 × 36 nm, with neighbouring RyRs placed 36 nm apart (centre-to-centre distance). The jSR was modeled as a physical extension (‘padding’) around each RyR by a defined distance equivalent to 1 RyR diameter (36 nm). As mentioned above, RyRs were arranged according to dSTORM-derived locations, and the jSR shape was adjusted according to the RyR locations. In some simulations (Figure 4A, Figure 6—source data 1) the geometries of the jSR were fixed while idealized RyR lattice geometries were varied to explore the independent effect of modifying RyR number with fixed jSR volume and the locally releasable calcium pool (Figure 4A). To specifically investigate the effects of RyR dispersal, example dSTORM-identified RyR patterns were selected with similar total RyR number but with arrangement into a varied number of sub-clusters (1, 3, 7, or 10). The ratio of RyR number to jSR volume for these example CRUs is presented in Figure 4—source data 1. To limit the effect variation in jSR volume has on the releaseable Ca2+ store, we fixed the total SR volume (and thus initial SR Ca2+ content) across all geometries by modifying the non-junctional SR (nSR) volume as required. Of note, while nSR concentration was modeled as a continuum, global SR calcium concentration was effectively clamped at initial values as expected for the time-scale and spatial-scale simulated.
 
-Where:S=(y0+x(0))2D=(y0-x(0))2
+Dyadic Ca2+ release was initiated by opening a single RyR in the CRU; this ‘trigger’ RyR was selected randomly and varied between consecutive simulations. Simulated triggered Ca2+ release from the CRU was then allowed to proceed, with the above equations discretized in space with a finite volume approach (12 nm edge length throughout the domain), and solved in time using explicit Euler time stepping. Specifically, we used operator splitting and solved each of the reaction and diffusion sub-problems with a fixed ∆t = 0.1µs, except when calculating the RyR release current. Due to the small element volumes and high fluxes this calculation is very stiff, so instead we solve it analytically. If we use x to denote the SR calcium concentration and y to denote the cleft calcium concentration, we can write this sub-problem as:
+
+$$
+x˙=K(y−x)
+$$
+
+
+
+$$
+y˙=K(x−y)
+$$
+
+where K is the channel conductance per element volume. The solution to this subsystem is given by:
+
+$$
+x(t)=S−De^{−2Kt}
+$$
+
+
+
+$$
+yt=S+De^{-2Kt}
+$$
+
+Where:
+
+$$
+S=\frac{(y0+x(0))}{2}
+$$
+
+
+
+$$
+D=\frac{(y0-x(0))}{2}
+$$
 
 Using this scheme it is possible to take arbitrarily long time steps without introducing instabilities.
 
 For the RyR gating model half-maximal activation was achieved at 80 µM Ca2+, which allowed cooperative opening of adjacent RyR clusters located up to ≈150 nm apart (ie. 4 RyR lengths) if the clusters shared jSR (Figure 4—figure supplement 1B,C). Thus, we defined CRUs as groupings of RyR clusters with edge-to-edge distances < 150 nm, in agreement with recent work (Macquaide et al., 2015), but also compared data with a stricter CRU definition (cluster distances < 100 nm) employed in other publications (Baddeley et al., 2009; Hou et al., 2015). RyR rates are shown in Supplementary file 2.
 
-## Statistical analyses
+### Statistical analyses
 
 All results are expressed as mean values ± standard error of the mean. All statistical significance was calculated in SigmaPlot by Student’s t-test or ANOVA with Bonferroni post-hoc comparison for normally distributed data, as appropriate. Skewed distributions of experimental and modelled Ca2+ spark parameters were respectively assessed by the nonparametric Mann-Whitney Rank Sum Test and Kruskal-Wallis ANOVA with Dunn’s test for post-hoc comparisons. dSTORM-based measurements of RyR geometries were compared with averages taken both across cells and animals, with respective statistical testing by t-tests and linear mixed effects models (Lindstrom and Bates, 1988). Statistical significance was defined as p<0.05.
 
-## Access to raw experimental data and analysis source code
+### Access to raw experimental data and analysis source code
 
 All raw data acquired and analyzed in this study are publicly available at https://github.com/TerjePrivate/Ryanodine_Receptor_Dispersion_during_Heart_Failure (Kolstad, 2018; copy archived at https://github.com/elifesciences-publications/Ryanodine_Receptor_Dispersion_during_Heart_Failure).

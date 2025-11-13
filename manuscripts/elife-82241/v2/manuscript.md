@@ -11,17 +11,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02pttbw34 Molecular Virology and Microbiology, Baylor College of Medicine Houston United States
-2. https://ror.org/02pttbw34 Graduate Program in Integrative Molecular and Biomedical Sciences, Baylor College of Medicine Houston United States
-3. https://ror.org/008zs3103 Systems, Synthetic, and Physical Biology Program, Rice University Houston United States
-4. https://ror.org/02pttbw34 Molecular and Human Genetics, Baylor College of Medicine Houston United States
-5. https://ror.org/02pttbw34 Dan L Duncan Comprehensive Cancer Center, Baylor College of Medicine Houston United States
+1. Molecular Virology and Microbiology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+2. Graduate Program in Integrative Molecular and Biomedical Sciences, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+3. Systems, Synthetic, and Physical Biology Program, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))
+4. Molecular and Human Genetics, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+5. Dan L Duncan Comprehensive Cancer Center, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
 
 † Corresponding author
 
 ## Abstract
 
-Bidirectional DNA replication complexes initiated from the same origin remain colocalized in a factory configuration for part or all their lifetimes. However, there is little evidence that sister replisomes are functionally interdependent, and the consequence of factory replication is unknown. Here, we investigated the functional relationship between sister replisomes in Escherichia coli , which naturally exhibits both factory and solitary configurations in the same replication cycle. Using an inducible transcription factor roadblocking system, we found that blocking one replisome caused a significant decrease in overall progression and velocity of the sister replisome. Remarkably, progression was impaired only if the block occurred while sister replisomes were still in a factory configuration – blocking one fork had no significant effect on the other replisome when sister replisomes were physically separate. Disruption of factory replication also led to increased fork stalling and requirement of fork restart mechanisms. These results suggest that physical association between sister replisomes is important for establishing an efficient and uninterrupted replication program. We discuss the implications of our findings on mechanisms of replication factory structure and function, and cellular strategies of replicating problematic DNA such as highly transcribed segments.
+Bidirectional DNA replication complexes initiated from the same origin remain colocalized in a factory configuration for part or all their lifetimes. However, there is little evidence that sister replisomes are functionally interdependent, and the consequence of factory replication is unknown. Here, we investigated the functional relationship between sister replisomes in Escherichia coli, which naturally exhibits both factory and solitary configurations in the same replication cycle. Using an inducible transcription factor roadblocking system, we found that blocking one replisome caused a significant decrease in overall progression and velocity of the sister replisome. Remarkably, progression was impaired only if the block occurred while sister replisomes were still in a factory configuration – blocking one fork had no significant effect on the other replisome when sister replisomes were physically separate. Disruption of factory replication also led to increased fork stalling and requirement of fork restart mechanisms. These results suggest that physical association between sister replisomes is important for establishing an efficient and uninterrupted replication program. We discuss the implications of our findings on mechanisms of replication factory structure and function, and cellular strategies of replicating problematic DNA such as highly transcribed segments.
 
 ## Introduction
 
@@ -43,29 +43,97 @@ Here, we investigated the physical and functional relationship between sister re
 
 ## Results
 
-## Quantifying fluorescent replication proteins suggests that sister replisomes are colocalized for about half of the replication period
+### Quantifying fluorescent replication proteins suggests that sister replisomes are colocalized for about half of the replication period
 
 We sought to determine the duration of sister replisome pairing under slow and fast growth conditions in the common lab strain MG1655 using 3D fluorescence imaging. Replisomes were tagged at the sliding clamp protein (DnaN-YPet) or single stranded binding protein (SSB-YPet), the later which afforded superior fluorescence under slow growth conditions. To improve detection of foci at the top and bottom of cells, multiple z-planes were imaged and deconvolved, rendering 3D data with exceptional spatial resolution (Figure 2A). Quantification of resolvable SSB-YPet foci in >3000 slowly growing cells (τ = 125 min) indicated that >99% of cells contained either 0, 1, or 2 foci per cell (Figure 2B). From independently measured parameters of origins per cell and growth rate (Figure 2C), the cell cycle was delineated with timelines of replication forks, origins, and termini per cell (Figure 2D, top; Materials and methods).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig2-v2.jpg)
+
+**Figure 2.:** (A) Three-dimensional (3D) replisome imaging. E. coli cells with an SSB-YPet tag were grown to mid-exponential phase in M9 minimal media at 37°C then imaged at 0.2 µm z-plane increments, deconvoluted, and combined into a single maximum intensity projection (MIP). (B) Distribution of resolvable SSB-YPet foci. (C) Origins per cell measured by flow cytometry after RIF runout (n = 30,000 cells). Cell cycle parameters are shown. (D) Cell cycle schematic with three models of replisome pairing. Top panel indicates the number of replication forks, origins, and termini per cell as a function of cell age as determined by flow cytometry (Materials and methods). Lower panel indicates the expected number of replisome foci per cell from three models: no replisome pairing (Tracking model), full-time replisome pairing (Factory model), and 20-min transitory replisome pairing (Splitting model). (E) Fitness of replisome modeling. (Left) Overlay of theoretical (colored bars) and SSB-YPet (gray bars) foci per cell histograms. (Right) Kolmogorov–Smirnov (KS) cumulative plots with dissimilarity indexes indicating the difference between modeled and measured data. (F) Heatmap of KS dissimilarity indexes obtained with varying replisome pairing times for the Splitting model. The optimal pairing time (20 min, arrow) is indicated. (G–L) As in (A–F) except cells were grown in Luria-Bertani (LB) media at 37°C and replisomes were tagged with DnaN-YPet. Graphical representation of a newborn cell under fast growth conditions with multiple rounds of replication initiated in prior cell generations (G, right panel). Optimal (lowest D) replisome pairing times under fast growth conditions for Splitting (13 min) and Splitting with cousins (21 min) models are indicated (L).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Arrangement of replisomes and DNA in cell drawings are speculative and are based solely on measurements of genomic content and number of DnaN-YPet foci per cell (Figure 2H, I).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Image of DnaN-mCherry-expressing wild-type cells (DB2962) under fast growth conditions. (B) Distribution of DnaN-mCherry foci per cell. (C) Fitness of replisome modeling as in Figure 2K. (D) Heatmap of KS dissimilarity indexes as in Figure 2L.
 
 From the timeline of replication forks per cell, theoretical timelines of replisome foci per cell were generated for different models of sister replisome pairing (Figure 2D, bottom panel). Replisome pairing varied from always separate (Tracking model) to always together (Factory model). A third model in which replisomes start out together then separate at a specific time (Splitting model) was created for all possible durations (at 1-min resolution) of pairing from 0 to 46 min, the length of the C-period. Applying these timelines to an exponential age population function yielded theoretical focus distributions (Figure 2E, histogram, colored bars) that were compared to the actual distribution from SSB-YPet imaging (gray bars). Theoretical distributions were evaluated by Kolmogorov–Smirnov analysis, which quantifies a dissimilarity index (D) between cumulative curves of theoretical and SSB-YPet focus distributions, with D = 1 indicating no similarity and D = 0 indicating identical distributions (Figure 2E, Cum.). This analysis showed that neither the Tracking nor Factory models fit well to the SSB-YPet data (D = 0.17, 0.21; Figure 2E). Splitting model distributions more closely matched SSB-YPet, with optimal duration of replisome pairing found to be 20 min (D = 0.04; Figure 2F). This value is similar to previous estimates using synchronized cells and a DnaX-GFP replisome tag (Bates and Kleckner, 2005).
 
 Next, cells were grown under fast growth conditions (τ = 22 min) and DnaN-YPet foci were quantified in >1000 cells (Figure 2G). Cells contained between 1 and 10 foci, with ~70% of cells having either 2, 6, or 8 foci (Figure 2H), and 4 or 8 chromosomes per cell (Figure 2I). Under these conditions, the cell cycle is comprised of three overlapping rounds of replication; the ‘grandmother’ round initiated two generations previously, the ‘mother’ round initiated in the previous generation, and the current round (Figure 2J). The resulting cell cycle timeline predicts that cells contained either 4, 6, or 12 replication forks. Although the expected average number of forks per cell (9.9) is roughly twice the number of DnaN-YPet foci per cell (5.7), supporting the Factory model, the predicted distribution of foci from the Factory model poorly matched the observed focus distribution (D = 0.26; Figure 2K). The Splitting model yielded a more similar focus distribution, with optimal replisome pairing of 13 min (D = 0.18; Figure 2K, L). Additional inclusion of cousin replisome pairing into the model, resulting in a transitory higher-order four-replisome structure for part of sister replisome pairing, provided the best match (D = 0.03) with an optimal sister replisome pairing time of 21 min (Splitting with cousins model). Because these inferences of replisome structures are based on indirect data (foci number), we do not exclude the possibility that replisomes form complexes no larger than two owing to missed foci or imperfect cell cycle modeling. Thus, including both splitting and splitting with cousins models, we estimate that that sister replisomes are paired between 13 and 21 min under fast growth conditions and about 20 min under slow growth conditions. These intervals correspond to 32–51% of the replication period. Imaging replisomes using a monomeric DnaN-mCherry fusion protein yielded similar focus distributions as dimeric DnaN-Ypet fusion protein (Figure 2—figure supplement 2), suggesting that focus dynamics were not influenced by tag multimerization.
 
-## Blocking one replisome early in the replication cycle inhibits progression of its sister replisome
+### Blocking one replisome early in the replication cycle inhibits progression of its sister replisome
 
 A sister replisome splitting time of 20 min corresponds to a genetic position about 1 Mb from the origin. To evaluate whether early association of sister replisomes promotes fork progression, we inserted an array of tet operators at varying distances from oriC, which, when bound by inducible Tet repressor, create a potent replisome barrier or ‘roadblock’ (Figure 3A). After allowing one to three rounds of replication to occur with one chromosome arm roadblocked, progression of the unblocked ‘orphaned’ replisomes was analyzed by sequencing, which provides high resolution DNA copy number. Assuming the rate of replication initiation is unchanged, replication fork velocity is inversely proportional to the slope along the unblocked arm, where a steeper profile indicates slower progression, and a flatter profile indicates faster progression. If indeed association between sister replisomes is beneficial to progression, then blocking one fork early in the replication cycle (near oriC) should affect progression of the other fork more than if the block occurred late in the replication cycle.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental approach. Strains carrying an inducible tetO array replication barrier (top) are roadblocked and progression of the unblocked orphaned replisome is quantified by sequencing. Hypothetically, oriC-proximal roadblocks, but not oriC-distal roadblocks, will negatively affect progression of the unblocked replisome. (B) DNA sequencing profiles along the unblocked chromosome arm under slow growth conditions. Values indicate the number of sequencing reads per kilobase relative to oriC, converted to log2 to show fold changes in copy number from oriC. (C) Relative progression of the unblocked replisome under slow growth conditions. Fork progression was quantified as slope−1 of raw sequencing profiles (B), relative to the most oriC-distal roadblock strain (+1.10 Mb). (D, E) As above (B–D) except under fast growth conditions and with additional roadblocks as indicated. Profiles are 100 kb moving average of the means of two to five independent experiments. Error bars are ±1 standard deviation (s.d.); two-tailed t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Profiles along the blocked chromosome arm are approximately flat between the tetO array and the most distal ter site, which terminates replication emanating from the unblocked arm. Profile noise is a consequence of low copy number under slow growth conditions (see Figure 3—figure supplement 2 for comparison). Strains are DB2185 (+0.13 Mb block), DB2193 (+0.34 Mb block), and DB2146 (+1.10 Mb block).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Slight slope on the blocked chromosome arm downstream of the tetO array indicates partial ‘read-through’ of opposite arm forks through the terminus region, eventually stopping at the tetO array. Strains are DB3216 (−0.35 Mb block), DB2185 (+0.13 Mb block), DB3198 (+0.32 Mb block), DB2193 (+0.34 Mb block), DB3264 (+0.58 Mb block), DB3195 (+0.63 Mb block), and DB2146 (+1.10 Mb block).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Sequencing profiles for +0.13 Mb roadblock (DB2185) every 30 min after TetR-YFP induction (n = 1). (B) Change in progression of the unblocked (left) replisome after roadblocking relative to time zero, showing little change in progression after 60 min.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** DB2972 cells were roadblocked at +0.13 Mb from oriC for 2 hr and imaged for replisomes (red, DnaN-mCherry) and the roadblock (yellow, TetR-YFP). Multiple dispersed replisome foci rarely colocalizing with the roadblock suggests that unblocked replisomes were unattached to any residual replication factory structure.
+
 Sequencing reads per kilobase were normalized to the number of reads at oriC, and log2 transformed to indicate fold changes in DNA abundance relative to oriC. Under slow growth conditions, copy number profiles of the unblocked arm were slightly steeper in cells with an oriC-proximal roadblock (+0.13 and +0.34 Mb from oriC) than in cells with an oriC-distal roadblock (+1.10 Mb from oriC, Figure 3B). Slope analysis suggests that fork progression was reduced by 39 ± 5% in cells with an oriC-proximal roadblock relative to cells with an oriC-distal roadblock (Figure 3C). We observed a similar difference between oriC-proximal and oriC-distal roadblocked cells, under fast growth conditions, with proximal blocked cells having on average a 43 ± 7% reduction in fork progression of the unblocked replisome relative to distal blocked cells (Figure 3D, E). Importantly, unblocked arm slopes remained constant after 1 hr of Tet repressor induction, indicating that once all preexisting forks completed, orphaned replisome progression was similarly affected through several rounds of replication initiation (Figure 3—figure supplement 3). Additional roadblock positions were tested at +0.32, +0.58, and +0.63 Mb from oriC, the results showing that all roadblocks within ~0.6 Mb from oriC resulted in reduced progression of the unblocked replisome, while all roadblocks downstream of ~0.6 Mb had negligible effect on progression. Importantly, reduced fork progression in oriC-proximal blocked cells was observed regardless of whether the blocking array was placed on the left or right chromosome arm (−0.35 Mb strain), strongly suggesting that the replication defect was not due to reduced copy number of a specific gene or region. We also observed that some replication profiles appeared to show a progression defect before the other replisome had reached its roadblock (e.g., +0.58 Mb, Figure 3D). Assuming this is not a visual artifact of smoothing (curves are 100 kb moving average) and natural undulations in replication profiles, advanced (upstream) reductions in orphaned fork progression may result from fork stoppage several tens of kilobases before the roadblock (manuscript in prep), which is cumulative through several rounds of blocked replication.
 
-## oriC-proximal roadblocks reduce sister replisome velocity by rifampicin runout
+### oriC-proximal roadblocks reduce sister replisome velocity by rifampicin runout
 
 Because sequencing is a bulk assay, it is possible that the effects observed after oriC-proximal roadblocking result from poor replication in only a subset of cells. To address this concern, we analyzed replication progression by flow cytometry, which measures DNA content in individual cells. Exponentially growing cells under fast growth conditions were roadblocked at two oriC-proximal positions (−0.35 and +0.34 Mb) and two oriC-distal positions (+0.63 and +1.10 Mb), then the rate of replication was measured by timed rifampicin runout. In this assay, replication initiation and cell division are blocked with rifampicin and cephalexin, respectively, and DNA content is monitored every 5 min by DAPI (4’,6-diamidino-2-phenylindole) staining and flow cytometry (Figure 4A, top). Wild-type cells (no block) initially exhibit a dispersed genomic content (black profile, 0’, Figure 4A), which gradually matures into a characteristic biphasic distribution at 80 min with peaks at 4 and 8 genome equivalents. As expected, roadblocked cells accumulate intermediate genome contents consistent with their roadblock position (Figure 4A, colored profiles). Quantifying flow cytometry histograms via KS analysis (Figure 4—figure supplements 1 and 2), we find that unblocked cells achieved 90% runout by 53 ± 4 min (Figure 4B, top panel). This time includes the interval required for forks to travel from oriC to ter (~41 min, Figure 2I) plus the time required for drug entry and action. Conversely, the two oriC-proximal blocked strains did not achieve 90% runout until 70 ± 3 min (Figure 4B, middle panel), while both oriC-distal blocked strains behaved similarly to unblocked cells, achieving 90% runout by 56 ± 5 min (bottom panel). Relative to cells not receiving a roadblock, this equates to a 32 ± 3% reduction in replication speed when one arm was blocked near the origin, versus a negligible reduction (3 ± 3%) in replication speed when one arm was blocked ≥0.6 Mb from the origin (Figure 4C). Interestingly, −0.35 and +0.34 Mb blocked strains exhibited different flow cytometry profiles despite having blocks ~equidistant from oriC. We believe this stems from slight differences in growth rate in the two strains after roadblocking (27 and 23 min, respectively), shifting the timing of DNA replication in the cell cycle. As −0.35 and +0.34 Mb blocked strains have very similar runout times, we conclude that the observed growth differences do not affect fork velocity.
 
-## Premature sister replisome separation causes increased fork collapse
+![Figure 4.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig4-v2.jpg)
+
+**Figure 4.:** (A) Replication elongation measured as a change in cellular DNA content over time after inhibiting replication initiation with rifampicin (RIF) and cell division with cephalexin (CEP). (Top) Experimental procedure. Representative DNA histograms of runout samples in wild-type MG1655 cells (no block) or cells with one replisome blocked proximally or distally to the origin are shown. DNA contents were measured by flow cytometry every 5 min for 90 min after rifampicin treatment (20-min intervals shown) with 90 min time points (light gray) overlaid for comparison. (B) Completion of replication (% runout) quantified by KS dissimilarity analysis between DNA histograms at each time point and at 90 min. Exponential regressions and times at 90% runout (vertical lines) are shown. (C) Change in fork velocity relative to unblocked cells. Values are average time to 90% runout (n = 2 replicates per strain) as determined in (B) relative to unblocked cells. Error bars are ±1 standard deviation (s.d.); two-tailed t-test. All cells were grown under fast growth conditions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** DNA histograms are shown at 5-min intervals with 90-min time point overlayed (gray). Strains are MG1655 (No block), DB2146 (+1.10 Mb block), DB3195 (+0.63 Mb block), DB3216 (−0.35 Mb block), and DB2193 (+0.34 Mb block).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Cumulative curves of DNA histograms (Figure 4—figure supplement 1) with 90-min time point overlayed (gray).
+
+### Premature sister replisome separation causes increased fork collapse
 
 Fork stalling is a frequent event in wild-type cells, with replisome dissociation estimates as high as 4–5 times per replication cycle (Mangiameli et al., 2017a). Although the majority of stalled forks are restarted quickly via PriA-mediated reloading of the replicative helicase, an estimated 5–20% experience breakage by shearing or collision from a second fork, forming a so-called broken or collapsed fork, which requires recombination-mediated strand invasion steps to reestablish a fork structure (Courcelle et al., 2015; Michel et al., 2018). Because oriC-proximal blocked cells had replication runout histograms with peaks that could not be fully resolved (Figure 4), we reasoned that some forks probably experienced increased collapse in addition to reduced velocity. This was tested by examining whether roadblocked cells could complete ongoing rounds of replication in the absence of the RecBCD recombination-dependent restart complex. As in the previous rifampicin runout experiments, replisomes were roadblocked before or after the natural replisome splitting transition and cells were treated with rifampicin and cephalexin. Cells were incubated for an additional 2 hr to allow ongoing viable forks to complete replication and then copy number profiles of the unblocked arm were determined by deep sequencing. In the absence of a roadblock, wild-type cells produced a flat profile, indicating complete runout (Figure 5A, No block, recB+). As expected, inactivating the RecBCD complex via a ∆recB mutation resulted in a profile with a slight downward slope, indicating that some cells experienced a spontaneous fork stalling event requiring RecB to restart at random locations on the chromosome (No block, recB−). Similar profiles were observed for cells with one fork roadblocked far from oriC (Figure 5A, +1.10 Mb block), suggesting there was no significant increase in collapsed forks. In contrast, when the roadblock was proximal to oriC, recB− profiles were more steeply sloped (Figure 5A, +0.34 and +0.13 Mb blocks), suggesting a more frequent rate of fork collapse. Quantifying percent replication fork stalling as the fraction of forks on the unblocked chromosome arm in recB− cells that remained after rifampicin runout (Materials and methods), we found that oriC-proximal roadblocking resulted in 21 ± 3% and 26 ± 2% fork stalling, while oriC-distal roadblocking resulted in only 5 ± 1% fork stalling (Figure 5B). Cells with no roadblock experienced 4 ± 1% fork stalling.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig5-v2.jpg)
+
+**Figure 5.:** (A) Raw sequencing profiles of the unblocked chromosome arm in recB+ and recB− cells after rifampicin runout. Strains contained either no block (wild-type MG1655 or its recB− derivative), an oriC-distal block at +1.10 Mb, or an oriC-proximal block at +0.34 Mb or +0.13 Mb as indicated (n = 2 replicates per strain). Dashed lines indicate the theoretical DNA profile after complete (100%) runout. (B) The frequency of stalled forks relative to unblocked recB+ . Stalled forks are quantified as the number of remaining forks on the unblocked arm after rifampicin runout (Materials and methods). Cells were grown under fast growth conditions. Error bars are ±1 standard deviation (s.d.); two-tailed t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Data as described in Figure 5A. Strains are MG1655 (recB+, No block), DB2257 (recB−, No block), DB2185 (recB+, +0.13 Mb block), DB2403 (recB−, +0.13 Mb block), DB2193 (recB+, +0.34 Mb block), DB2722 (recB−, +0.34 Mb block), DB2146 (recB+, +1.10 Mb block), and DB2725 (recB−, +1.10 Mb block).
+
 To confirm that the inability to finish replication in the absence of RecB when one replisome was blocked near oriC was due to collapsed replication forks, we mapped binding of the Holliday junction (HJ) binding protein, RDG, a catalytically deficient derivative of RuvC resolvase (Xia et al., 2016). HJs are four-way DNA junctions formed at stalled forks by either regression of the fork and subsequent annealing of the newly replicated strands (Atkinson and McGlynn, 2009), or by homologous recombination during fork remodeling (Michel et al., 2018). Thus, HJs are hallmarks of stalled forks, which are effectively detected by RDG (Xia et al., 2016). RDG binding across the genome was determined by chromatin immunoprecipitation and sequencing (ChIP-seq) after roadblocking at two oriC-proximal sites and one oriC-distal site. RDG-binding profiles in roadblocked cells show large peaks at the tetO array site and at the replication terminus (Figure 6A). These concentrations of RDG correspond to the expected locations of fork stalling in every roadblocked strain (Mei et al., 2021), and are not informative to the current study. Unreplicated regions downstream of the roadblocks showed low RDG binding, and we assume this region is essentially free of stalled forks. All three roadblocked strains showed elevated RDG binding along the left chromosome arm, but visibly more so in the two oriC-proximal blocked strains. To quantify stalling of the orphaned replisome, the increase in average RDG binding along the left arm (region LA) over average RDG binding on the unreplicated portion of the right arm (region RA) was determined in all four strains (Figure 6B, top diagram). Thus, quantification excludes hyper RDG-bound regions at the roadblock and terminus. This analysis indicates that orphaned replisomes experienced 50 ± 9% more stalling that wild-type replisomes in oriC-distal blocked cells (+1.10 Mb) and 116 ± 6% more stalling than wild-type replisomes in oriC-proximal blocked cells (+0.13 and +0.34 Mb). Thus, replisomes orphaned soon after replication initiation stalled significantly more than replisomes orphaned late in the replication period. Identification of the major peaks of RDG binding revealed about 30 hotspots on the unblocked chromosome arm in oriC-proximal blocked cells, with ~80% of peaks shared among the two strains (Figure 6—figure supplement 2). Interestingly, RDG peaks were dispersed along the unblocked arm, implying that fork collapse was not restricted to regions that are normally replicated by colocalized sister replisomes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-v2.jpg)
+
+**Figure 6.:** (A) Genome binding of the Holliday junction protein RuvCDef-GFP (RDG) by chromatin immunoprecipitation and sequencing (ChIP-seq). RDG-expressing cells either contained no roadblock (DB2945) or were roadblocked at position +0.13, +0.34, or +1.10 Mb as indicated. Chromatin immunoprecipitation was performed using RuvC antibody. Log2 ChIP-seq reads (pull down/input) values >0 indicate RDG enrichment. (B) Percent change in RDG binding on the unblocked chromosome arm. Values are average RDG binding on the left arm between −2 Mb and oriC (region LA) divided by average RDG binding on the right arm (region RA). All cells were grown under fast growth conditions (n = 2–3). Error bars are ±1 standard deviation (s.d.); ***P < 0.001; **P < 0.01; two-tailed t-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Frequency indicates the percentage of RDG chromatin immunoprecipitation and sequencing (ChIP-seq) IP/input values in 0.2-increment bins for wild-type DB2945 (No RB), DB3124 (+1.10 Mb blocked), DB2956 (+0.34 Mb blocked), and DB2954 (+0.13 Mb blocked).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Unblocked chromosome arm is shown between −2 Mb and oriC. Peaks (dashed lines) are locations of RDG signal ≥4 standard deviation (s.d.) above the 100 kb local median.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/82241/elife-82241-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Nucleoid protein-binding profiles (black) and consensus RDG-binding peaks (dashed lines). (B) Correlation plots of nucleoid protein and RDG binding (average +0.13 Mb, +0.34 Mb blocked cells). All data are along the unblocked chromosome arm only, between oriC and −2 Mb.
 
 ## Discussion
 
@@ -79,62 +147,481 @@ In contrast to protein linker models, we propose that sister replisomes are inst
 
 ## Materials and methods
 
-## Strain construction and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>AB1157 dnaN-mCherry FRTKanFRT</td>
+      <td>Moolman et al., 2014</td>
+      <td>BN1682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>AB1157 dnaN-ypet FRT</td>
+      <td>This paper</td>
+      <td>DB1568</td>
+      <td>RRL190 flipped to KmS w/pCP20</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ lac, pDM15 (+1.10 Mb block)</td>
+      <td>Joshi et al., 2011</td>
+      <td>DB2146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ glnA, pDM15 (+0.13 Mb block)</td>
+      <td>Joshi et al., 2011</td>
+      <td>DB2185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ dnaB, pDM15 (+0.34 Mb block)</td>
+      <td>Joshi et al., 2011</td>
+      <td>DB2193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 ΔrecB FRTKanFRT</td>
+      <td>This paper</td>
+      <td>DB2257</td>
+      <td>MG1655 × P1.JW2788</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ gln, ΔrecB FRTKanFRT, pDM15 (+0.13 Mb block)</td>
+      <td>This paper</td>
+      <td>DB2403</td>
+      <td>DB2185 × P1.JW2788</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ dnaB, ΔrecB FRTKanFRT, pDM15 (+0.34 Mb block)</td>
+      <td>This paper</td>
+      <td>DB2722</td>
+      <td>DB2193 × P1.JW2788</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ lac, ΔrecB FRTKanFRT, pDM15 (+1.10 Mb block)</td>
+      <td>This paper</td>
+      <td>DB2725</td>
+      <td>DB2146 × P1.JW2788</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 dnaN-mCherry FRTKanFRT</td>
+      <td>This paper</td>
+      <td>DB2943</td>
+      <td>MG1655 × P1.BN1682</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 λcIts857 PR::ruvCDef-gfp FRTKanFRT (42°C inducible RDG cassette)</td>
+      <td>This paper</td>
+      <td>DB2945</td>
+      <td>SMR19379 recombineered with primers P1/P2; P3/P4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ gln, λcIts857 PR::ruvCDef-gfp FRTKanFRT, pDM15 (+0.13 Mb block, RDG)</td>
+      <td>This paper</td>
+      <td>DB2954</td>
+      <td>DB2185 × P1.DB2945</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ dnaB, λcIts857 PR::ruvCDef-gfp FRTKanFRT, pDM15 (+0.34 Mb block, RDG)</td>
+      <td>This paper</td>
+      <td>DB2956</td>
+      <td>DB2193 × P1.DB2945</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 dnaN-mCherry FRT</td>
+      <td>This paper</td>
+      <td>DB2962</td>
+      <td>DB2943 flipped to KmS w/pCP20</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ glnA, pDM15 (+0.13 Mb block) dnaN-mCherry FRTKanFRT</td>
+      <td>This paper</td>
+      <td>DB2970</td>
+      <td>DB2185 × P1.BN1682</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ glnA, pDM15 (+0.13 Mb block) dnaN-mCherry FRT</td>
+      <td>This paper</td>
+      <td>DB2972</td>
+      <td>DB2970 flipped to KmS w/pCP20</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 yjiC::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3094</td>
+      <td>JW4288 × pJZ087 &amp; pCP20</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 yjbL::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3096</td>
+      <td>JW4007 × pJZ087 &amp; pCP20</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 141x tetO array @ lac, λcIts857 PR::ruvCDef-gfp FRTKanFRT, pDM15 (+1.10 Mb block, RDG)</td>
+      <td>This paper</td>
+      <td>DB3124</td>
+      <td>DB2146 × P1.DB2945</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yjiC::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3191</td>
+      <td>MG16556 × P1.DB3094</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yjbL::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3193</td>
+      <td>MG1655 × P1.DB3096</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yjiC::141x tetO array FRT, pDM15 (+0.63 Mb block)</td>
+      <td>This paper</td>
+      <td>DB3195</td>
+      <td>DB3191 × pDM15</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yjbL::141x tetO array FRT pDM15 (+0.32 Mb block)</td>
+      <td>This paper</td>
+      <td>DB3198</td>
+      <td>DB3193 × pDM15</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 yhgN::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3212</td>
+      <td>JW3397 × pJZ087 &amp; pCP20</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yhgN::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3214</td>
+      <td>MG1655 × P1.3212</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yhgN::141x tetO array FRT, pDM15 (−0.35 Mb block)</td>
+      <td>This paper</td>
+      <td>DB3216</td>
+      <td>DB3214 × pDM15</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 yjgZ::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3258</td>
+      <td>JW4236 × pJZ087 &amp; pCP20</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yjgZ::141x tetO array FRT</td>
+      <td>This paper</td>
+      <td>DB3262</td>
+      <td>MG1655 × P1.DB3258</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 yjgZ::141x tetO array FRT, pDM15 (+0.58 Mb block)</td>
+      <td>This paper</td>
+      <td>DB3264</td>
+      <td>DB3262 × pDM15</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 ΔrecB FRTKanFRT</td>
+      <td>Baba et al., 2006</td>
+      <td>JW2788</td>
+      <td>Keio collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 ∆yhgN FRTKanFRT</td>
+      <td>Baba et al., 2006</td>
+      <td>JW3397</td>
+      <td>Keio collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 ∆yjbL FRTKanFRT</td>
+      <td>Baba et al., 2006</td>
+      <td>JW4007</td>
+      <td>Keio collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 ∆yjgZ FRTKanFRT</td>
+      <td>Baba et al., 2006</td>
+      <td>JW4236</td>
+      <td>Keio collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BW25113 ∆yjiC FRTKanFRT</td>
+      <td>Baba et al., 2006</td>
+      <td>JW4288</td>
+      <td>Keio collection Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>AB1157dnaN-ypet FRTKanFRT</td>
+      <td>Reyes-Lamothe et al., 2010</td>
+      <td>RRL190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>AB1157 ssb-ypet::Kan</td>
+      <td>Reyes-Lamothe et al., 2008</td>
+      <td>RRL32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MG1655 PN25tetO::ruvCDef-gfp FRT</td>
+      <td>Xia et al., 2016</td>
+      <td>SMR19425</td>
+      <td>Doxycycline-inducible RDG cassette</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RuvC (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-53437, RRID:AB_630213</td>
+      <td>IP (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCP20</td>
+      <td>Cherepanov and Wackernagel, 1995</td>
+      <td></td>
+      <td>Flippase FLP ApR recombinase</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJZ087</td>
+      <td>Wang et al., 2019</td>
+      <td></td>
+      <td>FRT-141x tetO GmR integration</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKD46</td>
+      <td>Datsenko and Wanner, 2000</td>
+      <td></td>
+      <td>FRTKanFRT for RDG cassette</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDM15</td>
+      <td>Magnan and Bates, 2015a</td>
+      <td></td>
+      <td>PnahG::tetR-yfp CmR expression</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P1</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGTATATCTCCTTCTTAAAGTTAAACAAAATTATTTCTAGAAGGGTTATGCGTTGTTCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P2</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GTTTCATGCTATGCCAAACGAGAATGATTATCAAATTCATGTGTAGGCTGGAGCTGCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P3</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CCCTAATTCGATGAAGATTCTTGCTCAATTGTTATCAGCGTGTAGGCTGGAGCTGCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P4</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>AGACGTTTGGCTGATCGGCAAGGTGTTCTGGTCGGCGATTCCGGGGATCCGTCGACC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Cat #: FC-131-1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MiSeq Reagent Kit v3 (150-cycle)</td>
+      <td>Illumina</td>
+      <td>Cat #: MS-102-3001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anhydrotetracycline hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: 37919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium salicylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: S3007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FocusCounter</td>
+      <td>https://github.com/DavidBatesLab/Matlab-scripts.git; Joshi et al., 2013</td>
+      <td>Matlab script</td>
+      <td>Counting replisome foci</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo LLC</td>
+      <td></td>
+      <td>Quantifying flow cytometry histograms</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sequencingcompile.m</td>
+      <td>https://github.com/DavidBatesLab/Matlab-scripts.git</td>
+      <td>Matlab script</td>
+      <td>Extracting read coordinates from bam files</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sequencingcompile2.m</td>
+      <td>https://github.com/DavidBatesLab/Matlab-scripts.git</td>
+      <td>Matlab script</td>
+      <td>Binning reads into 1 kb bins</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain construction and growth conditions
 
 All bacterial strains are derivatives of E. coli K-12 wild-type strain MG1655 and are listed in the Key Resources Table. All strains and plasmids are freely available upon request. Mutant alleles were moved by P1 transduction. FRT-flanked kan genes were removed by transforming flippase plasmid pCP20 (Cherepanov and Wackernagel, 1995) and subsequent curing at 42°C. Tet array roadblocking sites at −0.35, +0.32, +0.58, and +0.63 Mb were constructed by integrating an FRT-141x tetO array GmR cassette into a Keio strain (Baba et al., 2006) carrying an FRT-flanked gene deletion at the desired location by co-transformation with linearized pJZ087 (Wang et al., 2019) and pCP20, followed by curing at 42°C. The GmR tetO array was then moved into MG1655 by P1 transduction and transformed with TetR-YFP expression plasmid pDM15 (Magnan et al., 2015b). For RDG ChIP-seq, the RDG expression cassette (Xia et al., 2016) was placed under control of the temperature-inducible lambda PR promoter by recombineering using primers P1 and P2 and marked with FRTKanFRT from pKD13 using primers P3 and P4.
 
 For all experiments, cells were diluted 1:2000 in Luria-Bertani (LB) medium (fast growth) or M9 minimal medium supplemented with 0.2% succinate (slow growth) at 37°C with shaking to OD600 = 0.2. Antibiotics were used at the following concentrations: chloramphenicol (50 µg/ml), kanamycin (30 µg/ml), ampicillin (30 µg/ml), and gentamicin (5.5 µg/ml). Conditioned LB media was made by growth of wild-type MG1655 in LB for 2 hr (OD600 ~ 0.1) followed by centrifugation and two passes through a 0.2-µm filter.
 
-## Fluorescence imaging and quantification of replisomes
+### Fluorescence imaging and quantification of replisomes
 
 Two different replisome fluorescent tags were used to image replisomes due to very low signal intensity of DnaN-YPet in minimal medium and large, non-spherical foci with SSB-YPet in LB. DnaN-mCherry was used to test if tag diimerization affected focus dynamics (Figure 2—figure supplement 2). Exponentially growing cells of replisome-labeled cells were applied directly to an agarose-coated slide containing growth medium and immediately imaged as previously described (Joshi et al., 2013). Using agarose slides places cells in a flat plane and prevents movement, facilitating 3D imaging of multiple cells per field without blurring. Images were taken with a Zeiss AxioImager Z1 fluorescence microscope equipped with a 10-nm motorized stage and Hamamatsu Electron Multiplier charge-coupled device camera. Cells were imaged at five z-planes positioned 0.2 µm apart. Images were deconvoluted using the Nearest Neighbor algorithm (Zeiss Axiovision) and combined into a single maxiumum intensity projection. Foci were counted using a custom image analysis program, FocusCounter (Joshi et al., 2013), freely available online at https://www.bcm.edu/research/labs/david-bates/focuscounter.
 
-## Replication roadblocking at tetO arrays
+### Replication roadblocking at tetO arrays
 
 During strain construction and routine propagation, roadblocking strains were grown in the presence of 200 nM anhydrotetracycline to inhibit background-expressed (leaky) TetR-YFP from binding to the tetO array. TetR-YFP was induced in exponentially growing cells with 20 µM sodium salicylate for 2 hr before cells were collected for analysis. For experiments performed under fast growth conditions, cultures were maintained at or below OD600 0.2 for the duration of the roadblock induction period by twofold dilution with pre-warmed conditioned media containing antibiotics and sodium salicylate every 30 min.
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 Genomic DNA was prepared from 10 ml (LB media) or 100 ml (minimal media) cells by the CTAB method (Maniatis et al., 1982). Genomic sequencing libraries were prepared using the Nextera XT Sample Preparation Kit from 1 ng of genomic DNA per the manufacturer’s instructions. Paired-end sequencing was performed on an Illumina MiSeq sequencer using the re-sequencing workflow with a 2 × 75-cycle MiSeq Reagent Kit v3. Sequencing reads were mapped to the E. coli MG1655 reference genome (NCBI RefSeq accession: NC_000913.3) using MiSeq integrated analysis software. Mapped reads were sorted into 4639 1-kb bins spanning the E. coli MG1655 chromosome and exported to Excel format using two custom MATLAB (Mathworks) scripts, sequencingcompile.m and sequencingcompile2.m. To reduce noise, bins containing repetitive sequences, deleted genes, or having read counts greater or <3 standard deviation (s.d. from a 200-kb) moving average trendline were excluded, totaling ≤1.4% of reads for any one sample in the current study. On average, samples contained 2.4-million reads after filtering. Binned data were then corrected for sequencing bias (regions that sequence more or less efficiently than average), by normalizing to a non-replicating stationary phase control sample, in which all sequences on the chromosome are present at equal copy number. Finally, normalized binned read counts were set relative to the mean read count for the 20 kb surrounding oriC and converted to log2 values.
 
-## RDG chromatin immunoprecipitation
+### RDG chromatin immunoprecipitation
 
 The production of RDG protein was controlled by the phage λPR promoter, which is repressed by the temperature-sensitive CI857 repressor. Cultures carrying λcIts857, ruvCDef-gfp, and a replication roadblocking tetO array and TetR expression plasmid, were grown as described above except at 30°C, then shifted to 37°C 1 hr before roadblocking to induce RDG expression. After roadblocking, cells were cross-linked in 1% paraformaldehyde for 20 min at room temperature, followed by quenching in 0.5 M glycine for 5 min. Cells were lysed and RDG-bound DNA was immunoprecipitated with RuvC antibody (Santa Cruz Biotechnology) as previously described (Xia et al., 2016). Samples were also prepared without immunoprecipitation for a copy number (input) control. DNA was purified and sequencing libraries were prepared as previously described (Xia et al., 2016), and sequencing was performed as described above except that reads >3 s.d. outside a 200-kb moving average trendline were not filtered. RDG binding was quantified for each kb of the chromosome as the ratio of reads in the pull-down sample to reads in the input sample. RDG peaks were defined as bins with an RDG signal ≥4 s.d. above the local 100-kb median.
 
-## Flow cytometry and rifampicin replication runout assay
+### Flow cytometry and rifampicin replication runout assay
 
 Cultures were treated with 150 µg/ml rifampicin, which blocks replication initiation but does not block elongation of already initiated forks, and 10 µg/ml cephalexin, which blocks cell division. Cultures were further incubated with shaking at 37°C for the indicated time. Samples were fixed by pelleting 1 ml cells, washing in 1 ml cold TE, and resuspending (by vortexing) in cold 70% ethanol. Cells were then pelleted, washed in filtered phosphate-buffered saline (PBS), resuspended in 1 ml PBS with 2 µg/ml DAPI, and incubated overnight at 4°C in the dark. Flow cytometry was performed with a Becton-Dickinson LSR II Cell Analyzer, measuring DAPI fluorescence in 30,000 cells per sample. DNA histograms were exported into Excel for Kolmogorov–Smirnov analysis (below).
 
-## Defining cell cycle parameters from DNA histograms and growth rate
+### Defining cell cycle parameters from DNA histograms and growth rate
 
-The timing of replication initiation is derived from the fraction of cells in an exponential culture that have initiated. The fraction of initiated cells is equal to the fraction of cells in the larger (greater DNA content) peak in a rifampicin runout DNA histogram, quantified using FlowJo software. The fraction of initiated cells (%i) is then converted to the time of initiation (Ti) by applying an exponential age distribution function (adapted from Lindmo, 1982):Ti=ln[(1+%i)÷2]÷−ln2×τ
+The timing of replication initiation is derived from the fraction of cells in an exponential culture that have initiated. The fraction of initiated cells is equal to the fraction of cells in the larger (greater DNA content) peak in a rifampicin runout DNA histogram, quantified using FlowJo software. The fraction of initiated cells (%i) is then converted to the time of initiation (Ti) by applying an exponential age distribution function (adapted from Lindmo, 1982):
 
-where τ is the mass doubling time in minutes, determined from optical density measurements of exponentially growing cells averaged among three independent measurements. The duration of DNA replication was determined by fitting a theoretical DNA histogram to actual histograms from flow cytometry using the cell cycle modeling program by Stokke et al., 2012. The time of replication termination (Tt) was calculated as follows (adapted from Molina and Skarstad, 2004):Tt=Ti+C−[τ×(n−1)]
+$$
+T_{i}=ln[(1+%_{i})\div2]\div−ln2\times\tau
+$$
 
-where n is the number of overlapping replication cycles (e.g., 3 under fast growth conditions). Finally, the duration of the D-period (D) was calculated as follows (adapted from Molina and Skarstad, 2004):D=(τ×n)−Ti−C
+where τ is the mass doubling time in minutes, determined from optical density measurements of exponentially growing cells averaged among three independent measurements. The duration of DNA replication was determined by fitting a theoretical DNA histogram to actual histograms from flow cytometry using the cell cycle modeling program by Stokke et al., 2012. The time of replication termination (Tt) was calculated as follows (adapted from Molina and Skarstad, 2004):
 
-## Modeling replisome pairing from fluorescence imaging
+$$
+T_{t}=T_{i}+C−[\tau\times(n−1)]
+$$
 
-The number of observed foci of fluorescent replisome tags is always less than the actual number of replisomes due to undetected foci, a low and quantifiable fraction (below), and overlapping foci, resulting from coincidental overlap and active replisome pairing. To ascertain the timing and duration of replisome pairing, we compared replisome focus distributions from DnaN-YPet (fast growth conditions) and SSB-YPet (slow growth conditions) to theoretical focus distributions generated for each of four pairing models: tracking (no pairing), factory (sister replisomes paired continuously), splitting (sister replisomes paired for a determined interval), and splitting with cousins (sister and cousin replisomes paired for a determined interval; applicable only to fast growth). To generate theoretical focus distributions, timelines of predicted foci per cell for each model were created based on the forks per cell timelines (Figure 2D, J), which were then quantified by integrating an exponential population function for each stage in the timelines (adapted from Skarstad et al., 1985): Fa1:a2=∫a1a2n(a)daor,n(a)=2×e−a×ln(2)
+where n is the number of overlapping replication cycles (e.g., 3 under fast growth conditions). Finally, the duration of the D-period (D) was calculated as follows (adapted from Molina and Skarstad, 2004):
+
+$$
+D=(\tau\timesn)−T_{i}−C
+$$
+
+### Modeling replisome pairing from fluorescence imaging
+
+The number of observed foci of fluorescent replisome tags is always less than the actual number of replisomes due to undetected foci, a low and quantifiable fraction (below), and overlapping foci, resulting from coincidental overlap and active replisome pairing. To ascertain the timing and duration of replisome pairing, we compared replisome focus distributions from DnaN-YPet (fast growth conditions) and SSB-YPet (slow growth conditions) to theoretical focus distributions generated for each of four pairing models: tracking (no pairing), factory (sister replisomes paired continuously), splitting (sister replisomes paired for a determined interval), and splitting with cousins (sister and cousin replisomes paired for a determined interval; applicable only to fast growth). To generate theoretical focus distributions, timelines of predicted foci per cell for each model were created based on the forks per cell timelines (Figure 2D, J), which were then quantified by integrating an exponential population function for each stage in the timelines (adapted from Skarstad et al., 1985):
+
+$$
+F_{a1:a2}=\int_{a1}^{a2}n(a)daor,n(a)=2\timese^{−a\timesln(2)}
+$$
 
 where Fa1:a2 is the fraction of cells in an exponential culture between age a1 and a2, and n(a) is the probability of a cell to be age a, 0–1. Stages were then summed and adjusted for undetected foci due to coincidental overlap (Joshi et al., 2011), 0.6% for SSB-YPet and 2.9% for DnaN-YPet, yielding theoretical focus distributions for each model.
 
 For slow growth, 47 theoretical focus distributions were generated, one for every possible duration of sister replisome pairing (in 1-min intervals) from 0 to 46 min, the length of the C-period in minimal media. For fast growth, 903 theoretical focus distributions were generated for all possible combinations of sister and cousin replisome pairing, from 0 to 41 min each, the length of the C-period in rich media. Model fitness was evaluated by comparing theoretical and actual focus distributions by Kolmogorov–Smirnov analysis, which defines a dissimilarity index (D) as the maximum difference between cumulative curves of the two distributions.
 
-## Estimating fork progression and fork stalling from sequencing data
+### Estimating fork progression and fork stalling from sequencing data
 
-Copy number profiles from whole-genome sequencing of a growing population of cells are highest at the origin and lowest at the terminus, owing to continual initiation of replication. In a steady-state exponential culture, the profile will be a straight line on a log scale with slope inversely proportional to the density of replication forks:Forkspermegabase=|Δlog2CNori:ter/ΔMbori:ter|−1
+Copy number profiles from whole-genome sequencing of a growing population of cells are highest at the origin and lowest at the terminus, owing to continual initiation of replication. In a steady-state exponential culture, the profile will be a straight line on a log scale with slope inversely proportional to the density of replication forks:
+
+$$
+Forkspermegabase=|Δlog_{2}CN_{ori:ter}/ΔMb_{ori:ter}|^{−1}
+$$
 
 Fork density is a product of the rate of replication initiation and the rate of replication fork progression, thus assuming that initiations are in steady state, sequencing profile slope is an accurate gauge of fork progression. For our roadblocked samples, each underwent a comparable number of initiation events during roadblock induction, as evidenced by similar ratios of origin DNA to unreplicated DNA downstream of the roadblocks under both slow growth conditions (−0.96 ± 0.12; Figure 3—figure supplement 1) and fast growth conditions (−3.12 ± 0.19; Figure 3—figure supplement 2). To assess fork progression, sequencing profile slopes were calculated over a 2-Mb region along the unblocked chromosome arm beginning at oriC and excluding the terminus region, which showed highly variable copy number in left and right arm roadblocked samples.
 
-Percent stalled forks in recB+ and recB− cells were calculated as the fraction of forks remaining on the unblocked arm after roadblocking and rifampicin runout:%forkstalling=#forksremainingafterRIFrunout#forksinitiated=2|log2CNterpost−RIF|−12|log2CNarraypre−RIF|−1
+Percent stalled forks in recB+ and recB− cells were calculated as the fraction of forks remaining on the unblocked arm after roadblocking and rifampicin runout:
+
+$$
+%forkstalling=\frac{#forksremainingafterRIFrunout}{#forksinitiated}=\frac{2^{|log_{2}CN_{ter}post−RIF|}−1}{2^{|log_{2}CN_{array}pre−RIF|}−1}
+$$
 
 where CNter post-RIF is DNA copy number at the terminus on the unblocked chromosome arm after rifampicin runout, and CNarray pre-RIF is DNA copy number at the roadblocking array before rifampicin runout. To avoid the effects of DNA degradation at the terminus, which occurs in recB− strains (Michel et al., 2018), ter copy number was extrapolated from a linear regression of data between oriC and ±2.0 Mb on the unblocked arm.
 
-## Determining replication elongation rates by rifampicin runout flow cytometry
+### Determining replication elongation rates by rifampicin runout flow cytometry
 
 We estimated total replication time by measuring the change in DNA content by flow cytometry over time after blocking further initiations with rifampicin (RIF runout). Cumulative curves were generated for all DNA histograms (DAPI fluorescence) and the curves from each time point were compared to the final time point (90 min) by Kolmogorov–Smirnov analysis. No further change was observed after 90 min in any of the samples (data not shown). Dissimilarity index values were normalized from 0% (zero time point) to 100% (90-min time point) and plotted as percent runout (1 − dissimilarity index). Data were fitted to a logarithmic regression (average R2 = 0.92 ± 0.08), which is the expected runout kinetics of an exponential culture. Regression intercepts at 90% runout equal the time of replication fork elongation from oriC to about ±2.1 Mb, plus the time required for rifampicin to enter cells and block replication initiation.
 
-## Data availability
+### Data availability
 
 Sequencing data generated in this study have been deposited in the National Center for Biotechnology (NCBI) Sequence Read Archive (SRA), BioProject PRJNA860928. Custom Matlab scripts that were used to compile and sort sequencing data are freely available on the GitHub repository (https://github.com/DavidBatesLab/Matlab-scripts (Chen, 2022; copy archived at swh:1:rev:cb370d3f4d22e13bea8cbd30c0d296ec3ba22bc6)).

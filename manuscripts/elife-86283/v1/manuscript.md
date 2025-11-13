@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/019av8481 State Key Laboratory of Palaeobiology and Stratigraphy, Nanjing Institute of Geology and Palaeontology and Center for Excellence in Life and Paleoenvironment, Chinese Academy of Sciences Nanjing China
-2. https://ror.org/05qbk4x57 University of Chinese Academy of Sciences Beijing China
-3. https://ror.org/00ysfqy60 Department of Integrative Biology, Oregon State University Corvallis United States
+1. State Key Laboratory of Palaeobiology and Stratigraphy, Nanjing Institute of Geology and Palaeontology and Center for Excellence in Life and Paleoenvironment, Chinese Academy of Sciences Nanjing China ([ROR:019av8481](https://ror.org/019av8481))
+2. University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+3. Department of Integrative Biology, Oregon State University Corvallis United States ([ROR:00ysfqy60](https://ror.org/00ysfqy60))
 4. Beijing Xiachong Amber Museum Beijing China
 
 † Corresponding author
@@ -34,13 +34,13 @@ Here, we report 16 additional mermithid nematodes associated with their insect h
 
 ## Results
 
-## Systematic palaeontology
+### Systematic palaeontology
 
 Fossil nematodes can be attributed to the family Mermithidae based mainly on their relatively large size, coiled posture, and morphological comparison with extant mermithids (body shape, length, diameter, tail structure, etc.) (Poinar, 2011). They can also be distinguished from nematomorphs due to the lack of small elevations of irregular areas (areoles) on their epicuticles (Poinar, 2001b). Due to palaeontological inability to adequately detect all biological adult characters, it is impossible to place in or refer fossil mermithid nematodes to any natural extant genus. This is why fossil collective genera have been erected under the same guidelines as recent collective genera for difficult nematodes. The importance of placing nematode species in collective genera is to underpin or establish the time, place and hosts of these parasitic lineages. For Cretaceous Mermithidae not assignable to any previously known genus or lacking biologically preferred diagnostic characters, the collective genus Cretacimermis was erected (but invalidly, see remarks for Cretacimermis below) (Poinar, 2001b). Putative hosts were determined by noting nematodes emerging from their bodies or completely emerged nematodes adjacent to potential hosts, especially if there is physical evidence that a particular insect was parasitized.
 
-## Family Mermithidae Braun, 1883
+#### Family Mermithidae Braun, 1883
 
-## Collective genus Cretacimermis Poinar, gen. nov.
+##### Collective genus Cretacimermis Poinar, gen. nov.
 
 urn:lsid:zoobank.org:act:152E262D-5A65-4EB8-A059-D380D53D32F8
 
@@ -54,7 +54,7 @@ Age and occurrence. Cretaceous; Lebanese and Kachin ambers.
 
 Remarks. The genus name ‘Cretacimermis’ was invalidly established in Poinar, 2001b due to the lack of a formal definition (International Commission on Zoological Nomenclature, 1999: Art. 13.1.1). Here, we formally erect this genus.
 
-## Cretacimermis incredibilis Luo & Poinar, sp. nov. (Figures 1A and 2A–D)
+##### Cretacimermis incredibilis Luo & Poinar, sp. nov. (Figures 1A and 2A–D)
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86283/elife-86283-fig1-v1.jpg)
 
@@ -62,7 +62,7 @@ Remarks. The genus name ‘Cretacimermis’ was invalidly established in Poinar,
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86283/elife-86283-fig2-v1.jpg)
 
-**Figure 2.:** Cretacimermis incredibilis sp. nov., holotype, NIGP201872 (A–D), Cretacimermis calypta sp. nov., holotype, NIGP201870 (E–H), and Cretacimermis adelphe sp. nov. (upper specimen is holotype and lower specimen is paratype), NIGP201876 (I–K).(A) Habitus of C. incredibilis, some trophosome remains are marked by triangular black arrows. (B) Fine ridges in areas of body bends. (C) Head (arrowed). (D) Tail and the exit wound on the host (arrowed). (E) Habitus except head part of C. calypta, some trophosome remains are marked by triangular black arrows. (F) Detail of body. (G) Head. (H) Tail. (I) Habitus of upper specimen (holotype), opaque body and pointed head. (J) Detail of head. (K) Detail of tail. Scale bars = 0.5 mm (A, E), 0.2 mm (H, I), 0.1 mm (B–D, F, G, J, K). Abbreviations: he, head; ta, tail.
+**Figure 2.:** (A) Habitus of C. incredibilis, some trophosome remains are marked by triangular black arrows. (B) Fine ridges in areas of body bends. (C) Head (arrowed). (D) Tail and the exit wound on the host (arrowed). (E) Habitus except head part of C. calypta, some trophosome remains are marked by triangular black arrows. (F) Detail of body. (G) Head. (H) Tail. (I) Habitus of upper specimen (holotype), opaque body and pointed head. (J) Detail of head. (K) Detail of tail. Scale bars = 0.5 mm (A, E), 0.2 mm (H, I), 0.1 mm (B–D, F, G, J, K). Abbreviations: he, head; ta, tail.
 
 urn:lsid:zoobank.org:act:22E141CC-8BEE-42F6-85BB-84243D13C1A9
 
@@ -78,7 +78,7 @@ Description. Body brownish, partially transparent (Figure 2A); cuticle smooth, l
 
 Remarks. While the nematode has completely exited from the host, the tail end is adjacent to an exit wound on the host (Figure 2D) indicating a true parasitic association.
 
-## Cretacimermis calypta Luo & Poinar, sp. nov. (Figures 1B and 2E-H)
+##### Cretacimermis calypta Luo & Poinar, sp. nov. (Figures 1B and 2E-H)
 
 urn:lsid:zoobank.org:act:3F29A451-1993-4EE7-B24E-81D8A1F5B8B7
 
@@ -94,7 +94,7 @@ Description. Body white with clear partially transparent portions (Figure 2E); c
 
 Remarks. Although no exit wound can be clearly found, most of the body coils are adjacent to the head of the adjacent damselfly, indicating that the nematode was just emerging from the host.
 
-## Cretacimermis adelphe Luo & Poinar, sp. nov. (Figures 1C and 2I-K)
+##### Cretacimermis adelphe Luo & Poinar, sp. nov. (Figures 1C and 2I-K)
 
 urn:lsid:zoobank.org:act:B2858585-3B4C-4E06-B5AA-7CCD37F7CC5A
 
@@ -110,11 +110,11 @@ Description. Upper specimen (holotype): body dark gray, opaque, coiled (Figure 2
 
 Remarks. The posterior part of the abdomen of the earwig has been damaged, so it is most likely that these mermithids exited from the host through this wound.
 
-## Cretacimermis directa Luo & Poinar, sp. nov. (Figures 1D, 3A and B)
+##### Cretacimermis directa Luo & Poinar, sp. nov. (Figures 1D, 3A and B)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/86283/elife-86283-fig3-v1.jpg)
 
-**Figure 3.:** Cretacimermis directa sp. nov., holotype, NIGP201873 (A, B) and Cretacimermis longa sp. nov., holotype, NIGP201875 (C–F), paratype, NIGP201877 (G–J).(A) Detail of head. (B) Detail of tail. (C) Host, an adult of Mesoblattinidae (Blattodea), note the hollow abdomen (arrowed) that probably contained the developing nematode. (D) Detail of body. (E) Enlarged details of body. (F) Head. (G) Host, a juvenile of Mesoblattinidae (Blattodea). (H) The termination of the nematode, note the mermithid was in the process of emerging from the host’s body (arrowed). (I) Detail of body. (J) Head, showing loose outer cuticle. Scale bars = 1.0 mm (C, G), 0.5 mm (D), 0.2 mm (H, I), 0.1 mm (A, B, E, F, J). Abbreviations: he, head; ta, tail.
+**Figure 3.:** (A) Detail of head. (B) Detail of tail. (C) Host, an adult of Mesoblattinidae (Blattodea), note the hollow abdomen (arrowed) that probably contained the developing nematode. (D) Detail of body. (E) Enlarged details of body. (F) Head. (G) Host, a juvenile of Mesoblattinidae (Blattodea). (H) The termination of the nematode, note the mermithid was in the process of emerging from the host’s body (arrowed). (I) Detail of body. (J) Head, showing loose outer cuticle. Scale bars = 1.0 mm (C, G), 0.5 mm (D), 0.2 mm (H, I), 0.1 mm (A, B, E, F, J). Abbreviations: he, head; ta, tail.
 
 urn:lsid:zoobank.org:act:3565ACFE-BD87-441D-9923-DC75F640EDC2
 
@@ -130,7 +130,7 @@ Description. Body well preserved, elongate except for a small coil at anterior e
 
 Remarks. There is no distinct wound on this cricket’s body, but the nematode is adjacent to it, and there is no other insect nearby. Therefore, it is most likely that the mermithid had just emerged from the host.
 
-## Cretacimermis longa Luo & Poinar, sp. nov. (Figures 1E,F,3C-J)
+##### Cretacimermis longa Luo & Poinar, sp. nov. (Figures 1E,F,3C-J)
 
 urn:lsid:zoobank.org:act:4EE8DDA3-FEB8-4B4E-ABD2-2D9A9587FB1A
 
@@ -146,11 +146,11 @@ Description. Nematode from adult cockroach, first piece (Figures 1E and 3C–F):
 
 Remarks. These two nematodes are still in the process of exiting. Also, the cavity in the abdomen of the adult cockroach (Figure 3C) indicates the location of the developing parasite.
 
-## Cretacimermis perforissi Luo & Poinar, sp. nov. (Figures 1G,H,4)
+##### Cretacimermis perforissi Luo & Poinar, sp. nov. (Figures 1G,H,4)
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/86283/elife-86283-fig4-v1.jpg)
 
-**Figure 4.:** Cretacimermis perforissi sp. nov., holotype, NIGP201868 (A–E) and paratype, NIGP201878 (F–H).(A) Host, Perforissidae (Hemiptera: Fulgoromorpha), note the hollow abdomen (arrowed) which probably contained the developing nematode. (B) Habitus of the coiled body of C. perforissi, some trophosome remains are marked by triangular black arrows. (C) Detail of body, note artefact ridges on cuticle. (D) Head. (E) Tail. (F) Host, Perforissidae (Hemiptera: Fulgoromorpha), note the broken abdomen that is probably due to the emergence of the mermithid. (G) Front view of host, indicating it is a perforissid planthopper. (H) Detail of body, showing smooth cuticle and dark, fractured trophosomes (arrowed). Scale bars = 0.5 mm (A, B, F), 0.2 mm (G), 0.1 mm (C–E, H). Abbreviations: he, head; ta, tail.
+**Figure 4.:** (A) Host, Perforissidae (Hemiptera: Fulgoromorpha), note the hollow abdomen (arrowed) which probably contained the developing nematode. (B) Habitus of the coiled body of C. perforissi, some trophosome remains are marked by triangular black arrows. (C) Detail of body, note artefact ridges on cuticle. (D) Head. (E) Tail. (F) Host, Perforissidae (Hemiptera: Fulgoromorpha), note the broken abdomen that is probably due to the emergence of the mermithid. (G) Front view of host, indicating it is a perforissid planthopper. (H) Detail of body, showing smooth cuticle and dark, fractured trophosomes (arrowed). Scale bars = 0.5 mm (A, B, F), 0.2 mm (G), 0.1 mm (C–E, H). Abbreviations: he, head; ta, tail.
 
 urn:lsid:zoobank.org:act:32C1C1E1-C177-4E25-90FE-E5D48A0E471E
 
@@ -166,7 +166,7 @@ Description. First piece (Figure 4A–E): body complete, mostly grayish and opaq
 
 Remarks. The abdomen of the first perforissid planthopper is empty, which probably contained the developing nematode. The abdomen of the second perforissid planthopper is broken, which is consistent with an emerging mermithid.
 
-## Cretacimermis manicapsoci Luo & Poinar, sp. nov. (Figures 5A,B,6A-G)
+##### Cretacimermis manicapsoci Luo & Poinar, sp. nov. (Figures 5A,B,6A-G)
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86283/elife-86283-fig5-v1.jpg)
 
@@ -174,7 +174,7 @@ Remarks. The abdomen of the first perforissid planthopper is empty, which probab
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/86283/elife-86283-fig6-v1.jpg)
 
-**Figure 6.:** Cretacimermis manicapsoci sp. nov., holotype, NIGP201879 (A–D), paratype, NIGP201880 (E–G), and Cretacimermis psoci sp. nov., holotype, NIGP201874 (H–J).(A) Barklouse host, Manicapsocidae (Psocoptera). (B) Detail of body. (C) Head. (D) Tail. (E) Barklouse host, Manicapsocidae. (F) Coiled body. (G) Head. (H) Barklouse host, Compsocidae (Psocoptera), note the broken abdomen that is probably due to the emergence of the mermithid. (I) Detail of body. (J) Tail, note artefactual cuticular ridges. Scale bars = 0.5 mm (A), 0.2 mm (E, F, H), 0.1 mm (B–D, G, I, J). Abbreviations: he, head; ta, tail.
+**Figure 6.:** (A) Barklouse host, Manicapsocidae (Psocoptera). (B) Detail of body. (C) Head. (D) Tail. (E) Barklouse host, Manicapsocidae. (F) Coiled body. (G) Head. (H) Barklouse host, Compsocidae (Psocoptera), note the broken abdomen that is probably due to the emergence of the mermithid. (I) Detail of body. (J) Tail, note artefactual cuticular ridges. Scale bars = 0.5 mm (A), 0.2 mm (E, F, H), 0.1 mm (B–D, G, I, J). Abbreviations: he, head; ta, tail.
 
 urn:lsid:zoobank.org:act:B0C34BAB-A6F5-4E39-86CF-D87A1A61C2E4
 
@@ -190,7 +190,7 @@ Description. First piece (Figure 6A–D): body complete, essentially a dark tube
 
 Remarks. First piece: there is no distinct wound on the barklouse’s body, but the nematode is adjacent to it, and there is no other sizeable insect nearby. Therefore, it is most likely that the mermithid had just emerged from the host. Second piece: the abdomen of the second perforissid planthopper is partly lost, which is consistent with an emerging mermithid.
 
-## Cretacimermis psoci Luo & Poinar, sp. nov. (Figures 5C and 6H-J)
+##### Cretacimermis psoci Luo & Poinar, sp. nov. (Figures 5C and 6H-J)
 
 urn:lsid:zoobank.org:act:13C60738-C5FA-4EBC-914A-1E68149DF282
 
@@ -206,7 +206,7 @@ Description. Body incomplete, tanned, partially transparent (Figure 6I); cuticle
 
 Remarks. The nematode is adjacent to the host and the empty abdomen indicates the area that contained the developing parasite.
 
-## Cretacimermis cecidomyiae Luo & Poinar, sp. nov. (Figures 5D and 7A-C)
+##### Cretacimermis cecidomyiae Luo & Poinar, sp. nov. (Figures 5D and 7A-C)
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/86283/elife-86283-fig7-v1.jpg)
 
@@ -226,7 +226,7 @@ Description. Body grayish with white areas; cuticle smooth, lacking cross fibres
 
 Remarks. The mermithid is preserved in the process of emerging from the host’s body.
 
-## Cretacimermis chironomae Poinar, 2011 (Figures 5E-H and 7D-Q)
+##### Cretacimermis chironomae Poinar, 2011 (Figures 5E-H and 7D-Q)
 
 Type host. A non-biting midge of the family Chironomidae (Diptera: Culicomorpha).
 
@@ -252,16 +252,69 @@ Nematode body fossils are scarce and mainly known from amber (De Baets et al., 2
 
 **Figure 9.:** (A) Pie diagrams, the quantity of fossil species is indicated below the orders. (B) Stacked bar plots, error bars represent 95% binomial confidence intervals (for data, see also Table 1).
 
+**Table 1.**
+ The quantity of invertebrate–nematode associations from the mid-Cretaceous Kachin amber (~99 Ma), Eocene Baltic amber (~45 Ma) and Miocene Dominican amber (~18 Ma).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Amber source</th>
+      <th>Host type</th>
+      <th>Quantity</th>
+      <th>FOI</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Kachin amber</td>
+      <td>Holometabola</td>
+      <td>10</td>
+      <td rowspan="2">58.33%</td>
+      <td rowspan="2">38.80–75.56%</td>
+    </tr>
+    <tr>
+      <td>Other invertebrates</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Baltic amber</td>
+      <td>Holometabola</td>
+      <td>16</td>
+      <td rowspan="2">20.00%</td>
+      <td rowspan="2">7.49–42.18%</td>
+    </tr>
+    <tr>
+      <td>Other invertebrates</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Dominican amber</td>
+      <td>Holometabola</td>
+      <td>32</td>
+      <td rowspan="2">20.00%</td>
+      <td rowspan="2">10.24–35.01%</td>
+    </tr>
+    <tr>
+      <td>Other invertebrates</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+_95 % CI is calculated using the Agresti-Coull method of the “binom.confint” function from the binom R package (https://cran.r-project.org/package=binom) of R 4.2.2. Abbreviations: FOI, frequency of other invertebrates; CI, confidence intervals._
+
 Finally, discovering these nematodes in mid-Cretaceous Kachin amber brings new opportunities to study the evolution of parasitism through the medium of amber. Amber is a unique form of fossilization (Hsieh and Plotnick, 2020). Although amber is patchily distributed in space and time, it is still especially suitable for investigating the evolution of terrestrial parasites associated with arthropods due to preservation potential (De Baets and Littlewood, 2015; Leung, 2017; De Baets et al., 2021a; De Baets et al., 2021b; Leung, 2021; Poinar, 2021). The high diversity of mermithid nematodes during the mid-Cretaceous as shown here provides a glimpse into the structure of ancient parasitic nematode–host associations and their evolution over the past 100 million years.
 
 ## Materials and methods
 
-## Provenance and deposition
+### Provenance and deposition
 
 The specimens described here are from the Cretaceous deposits in the Hukawng Valley located southwest of Maingkhwan in Kachin State (26°20’ N, 96°36’ E) in Myanmar (Thu and Zaw, 2017). Radiometric U–Pb zircon dating determined the age to be 98.79±0.62 Ma (Shi et al., 2012), a date consistent with an ammonite trapped in the amber (Yu et al., 2019).
 
 Fourteen specimens (NIGP201868–201881) are deposited in the NIGPAS, and two specimens (LYD-MD-NG001, 002) are deposited in Linyi University. The fossils were collected in full compliance with the laws of Myanmar and China (work on this manuscript began in early 2016). To avoid any confusion and misunderstanding, all authors declare that to their knowledge, the fossils reported in this study were not involved in armed conflict and ethnic strife in Myanmar, and were acquired prior to 2017. All specimens are permanently deposited in well-established, public museums, in full compliance with the International Code of Zoological Nomenclature and the Statement of the International Palaeoentomological Society (International Commission on Zoological Nomenclature, 1999; Szwedo et al., 2020).
 
-## Optical photomicrography
+### Optical photomicrography
 
 Observations were performed using a Zeiss Stemi 508 microscope. The photographs were taken with a Zeiss Stereo Discovery V16 microscope system in the Nanjing Institute of Geology and Palaeontology, Chinese Academy of Sciences, and measurements were taken using Zen software. Photomicrographic composites of 10–150 individual focal planes were digitally stacked using the software HeliconFocus 6.7.1 for a better illustration of 3D structures. Photographs were adjusted using Adobe Lightroom Classic and line drawings were prepared using CorelDraw 2019 graphic software.

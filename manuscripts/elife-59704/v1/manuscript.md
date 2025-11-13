@@ -40,19 +40,59 @@ The NLRP3 inflammasome is activated through several routes which have been terme
 
 Following publication of the cryo-electron microscopy (cryo-EM) structure of VRAC (Deneka et al., 2018) with inhibitor 4-(2-butyl-6,7-dichloro-2-cyclopentyl-indan-1-on-5-yl)oxobutyric acid (DCPIB) (Figure 1A; Kern et al., 2019), we were able to investigate the interaction of established VRAC inhibitors with the channel using molecular modelling. DCPIB was first computationally redocked using Molecular Operating Environment (MOE 2015.08, Chemical Computing Group, Canada) into the homohexameric VRAC structure (PDB code 6NZW, resolution 3.2 Å) (Kern et al., 2019). The resulting pose produced a reasonable overlay with the cryo-EM conformation of DCPIB, giving a root-mean-square deviation in atomic position of 2.6 Å (Figure 1B,C). DCPIB exhibits an ionic interaction of its carboxylate group with the cationic side-chain of one of the Arg103 residues comprising the electropositive selectivity filter of VRAC (Kern et al., 2019). Known VRAC inhibitors (Daniels et al., 2016; Hélix et al., 2003; Droogmans et al., 1999) possessing carboxylic acid groups (flufenamic acid (FFA)), mefenamic acid (MFA) and N-((4-methoxy)−2-naphthyl)−5-nitroanthranilic acid (MONNA), the tetrazole moiety (NS3728) and sulfonic acid groups (4-sulfonic calix[6]arene) were then docked into the DCPIB site of VRAC. The most favourably bound poses of these ligands were similarly found to block the pore in a cork-in-bottle manner (Kern et al., 2019) at the selectivity filter; the ligands’ ionised acidic groups formed strong electrostatic interactions with Arg103 (Figure 1D–H). Tamoxifen, a basic inhibitor of VRAC was also docked into the cryo-EM structure (Figure 1I). Accordingly, tamoxifen docked with its cationic tertiary amino group remote to the Arg103 side-chains (Figure 1l and Figure 1—figure supplement 1); these side-chains instead formed cation-π interactions with the phenyl group of tamoxifen (Figure 1l). The interaction of the tamoxifen pose was computed as having a calculated ligand-binding affinity of −6.5 kcal mol−1 via the molecular mechanics/generalised Born volume integration (MM/GBVI) method (Labute, 2008; Galli et al., 2014). The binding energies of the anionic ligands were also predicted as favourable, ranging from −5.1 (DCPIB) to −5.8 kcal mol−1 (MONNA). This range excludes the larger 4-sulfonic calix[6]arene (calixarene), which gave a binding energy of −9.9 kcal mol−1; we note that the GBVI implicit solvent model may be underestimating the high desolvation cost of this polyanionic ligand and therefore overestimating the magnitude of the corresponding binding energy of this compound.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig1-v1.jpg)
+
+**Figure 1.:** (A) Two orthogonal views: a side view with two chains removed from the hexameric LRRC8A protein with bound DCPIB and a top view for the hexameric VRAC channel (PDB:6NZW). (B, D–I) Docked VRAC inhibitors (orange) in the VRAC Arg103 extracellular selectivity filter. Protein surface coloured according to electrostatics: electronegative (red), electropositive (blue), and electroneutral (white). (B) MM/GBVI binding energies of docked DCPIB (orange) in VRAC (−5.2 kcal mol−1) in a side view superimposed on the cryo-EM DCPIB pose (black). (C) Top-view of cryo-EM pose of DCPIB (black) in VRAC. (D) Flufenamic acid (−5.1 kcal mol−1) (E) Mefenamic acid (−5.2 kcal mol−1) (F) MONNA (−5.8 kcal mol−1) (G) NS3728 (−6.4 kcal mol−1) (H) 4-sulfonic calix[6]arene (−9.9 kcal mol−1) (I) Tamoxifen (−6.5 kcal mol−1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top view and (B) side view of the cryo-EM structure of DCPIB in the arginine pore of VRAC (C–I). Molecular surfaces coloured by electrostatic potential for the docked poses of VRAC inhibitors, indicating regions of negative (red) and positive (blue) potential. (C) Cryo-EM pose of DCPIB. Docked poses of (D) Flufenamic acid (E) Mefenamic acid (F) MONNA (G) NS3728 (H) 4-sulfonic calix[6]arene and (I) tamoxifen.
+
 We then tested the ability of six of the compounds described in Figure 1 (DCPIB, calixarene (Calix), tamoxifen, FFA, MONNA, NS3728) to inhibit hypotonicity-induced VRAC-dependent Cl- flux using the iodide (I-) quenching of halide-sensitive YFP H148Q/I152L (Galietta et al., 2001) in live HeLa cells (Figure 2A). In this model, I- enters the cell through open Cl- channels to induce quenching of a mutant EYFP. In response to hypotonic shock to induce VRAC opening, YFP fluorescence was immediately quenched, which was significantly inhibited by tamoxifen (10 µM), MONNA (50 µM), DCPIB (10 µM), FFA (100 µM), and NS3728 (10 µM), but not calixarene (100 µM) (Figure 2A,B). VRAC also regulates RVD in response to cell swelling (Qiu et al., 2014; Voss et al., 2014). We measured the RVD by measuring the change in cellular fluorescence in calcein-loaded primary mouse bone-marrow-derived macrophages (BMDMs) in response to hypotonicity. Hypotonicity caused a rapid increase in cell volume which declined over time, characteristic of an RVD response (Figure 2C). Similar to the quenching assay, RVD was also significantly inhibited in the presence of tamoxifen, MONNA, DCPIB, FFA and NS3728, but not calixarene (Figure 2C,D). These data suggest that all the molecules in our panel, except calixarene, are bona-fide VRAC inhibitors at the concentrations tested.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig2-v1.jpg)
 
-**Figure 2.:** - channel opening and regulatory volume decrease (RVD).(A) Cl- channel opening measured in HeLa cells transiently expressing the halide-sensitive EYFP (H148Q/I152L). HeLa cells were pre-treated with a vehicle control (DMSO) or DCPIB (10 µM) and incubated in an isotonic (310 mOsm kg−1) or hypotonic (215 mOsm kg−1) solution for 5 min before quenching by addition of NaI (40 mM). (B) Normalised EYFP (H148Q/I152L) fluorescence values from HeLa cells pre-treated with either a vehicle control (DMSO), tamoxifen (Tam, 10 µM), 4-sulfonic calix[6]arene (Calix, 100 µM), MONNA (MON, 50 µM), DCPIB (10 µM), flufenamic acid (FFA, 100 µM) or NS3728 (NS3, 10 µM). Cells were incubated an isotonic (310 mOsm kg−1) or hypotonic (215 mOsm kg−1) solution for 5 min before quenching by addition of NaI. Fluorescent measurement was taken 30 s after NaI addition (n = 6–12). (C) Relative cell size of murine bone-marrow-derived macrophages (BMDMs) incubated in isotonic (340 mOsm kg−1) or hypotonic (117 mOsm kg−1) solution, pre-treated with a vehicle control (DMSO) or DCPIB (10 µM). BMDMs were labelled with the fluorescent dye calcein and area of fluorescence was measured over time. (D) Area under the curve of BMDMs incubated in a hypotonic solution (117 mOsm kg−1) in the presence of either a vehicle control (DMSO), tamoxifen (Tam, 10 µM), 4-sulfonic calix[6]arene (Calix, 100 µM), MONNA (MON, 50 µM), DCPIB (10 µM), flufenamic acid (FFA, 100 µM) or NS3728 (NS3, 10 µM) (n = 3). *p<0.05, **p<0.01, ***p<0.01 determined by a one-way ANOVA with Dunnett’s (vs vehicle control) post hoc analysis. Values shown are mean plus the SEM.Figure 2—source data 1.Figure 2A and Figure 2C.
+**Figure 2.:** (A) Cl- channel opening measured in HeLa cells transiently expressing the halide-sensitive EYFP (H148Q/I152L). HeLa cells were pre-treated with a vehicle control (DMSO) or DCPIB (10 µM) and incubated in an isotonic (310 mOsm kg−1) or hypotonic (215 mOsm kg−1) solution for 5 min before quenching by addition of NaI (40 mM). (B) Normalised EYFP (H148Q/I152L) fluorescence values from HeLa cells pre-treated with either a vehicle control (DMSO), tamoxifen (Tam, 10 µM), 4-sulfonic calix[6]arene (Calix, 100 µM), MONNA (MON, 50 µM), DCPIB (10 µM), flufenamic acid (FFA, 100 µM) or NS3728 (NS3, 10 µM). Cells were incubated an isotonic (310 mOsm kg−1) or hypotonic (215 mOsm kg−1) solution for 5 min before quenching by addition of NaI. Fluorescent measurement was taken 30 s after NaI addition (n = 6–12). (C) Relative cell size of murine bone-marrow-derived macrophages (BMDMs) incubated in isotonic (340 mOsm kg−1) or hypotonic (117 mOsm kg−1) solution, pre-treated with a vehicle control (DMSO) or DCPIB (10 µM). BMDMs were labelled with the fluorescent dye calcein and area of fluorescence was measured over time. (D) Area under the curve of BMDMs incubated in a hypotonic solution (117 mOsm kg−1) in the presence of either a vehicle control (DMSO), tamoxifen (Tam, 10 µM), 4-sulfonic calix[6]arene (Calix, 100 µM), MONNA (MON, 50 µM), DCPIB (10 µM), flufenamic acid (FFA, 100 µM) or NS3728 (NS3, 10 µM) (n = 3). *p<0.05, **p<0.01, ***p<0.01 determined by a one-way ANOVA with Dunnett’s (vs vehicle control) post hoc analysis. Values shown are mean plus the SEM.
 
 We tested whether the panel of VRAC inhibitors characterised above could block NLRP3 inflammasome activation and release of IL-1β in response to DAMP stimulation. Primary BMDMs were primed with LPS (1 µg mL−1, 4 hr), before activation of NLRP3 by ATP (5 mM, 2 hr). Inhibitors were given at the same dose they inhibited VRAC above in HeLa cells 15 min before the addition of ATP and were then present for the duration of the experiment. Of the panel of verified VRAC inhibitors, only MONNA, FFA and NS3728 consistently inhibited ATP-induced IL-1β release (Figure 3A). At the dose used in this assay, DCPIB did not consistently inhibit ATP-induced IL-1β release (Figure 3A), but at higher concentrations did inhibit NLRP3 activation (Figure 3—figure supplement 1). Likewise, pyroptosis, as measured by LDH release, was significantly reduced by MONNA and FFA, and was unaffected by tamoxifen or calixarene (Figure 3B). The inhibitors that blocked ATP-induced IL-1β release also inhibited ASC oligomerisation, caspase-1 activation, and gasdermin D cleavage (Figure 3C). These data show that some very effective VRAC inhibitors failed to inhibit activation of the NLRP3 inflammasome and release of IL-1β, suggesting that VRAC may not be the molecular target of these molecules inhibiting the inflammasome.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig3-v1.jpg)
+
+**Figure 3.:** (A) IL-1β release was determined by ELISA on supernatants from murine bone marrow derived macrophages (BMDMs). LPS-primed (1 µg mL−1, 4 hr) BMDMs were pre-treated with either a vehicle control (DMSO), tamoxifen (Tam, 10 µM), 4-sulfonic calix[6]arene (Calix, 100 µM), MONNA (MON, 50 µM), DCPIB (10 µM), flufenamic acid (FFA, 100 µM), or NS3728 (NS3, 10 µM) before stimulation with ATP (5 mM, 2 hr) (n = 6). (B) Cell death determined by an LDH assay of cells treated in (A). (C) Western blot of Triton x-100 insoluble crosslinked ASC oligomers and soluble total BMDM cell lysates (cell lysate + supernatant) probed for ASC, GSDMD, caspase-1 and IL-1β. LPS-primed (1 µg mL−1, 4 hr) BMDMs were pre-treated with either a vehicle control (DMSO), tamoxifen (Tam, 10 µM), 4-sulfonic calix[6]arene (Calix, 100 µM), MONNA (MON, 50 µM), DCPIB (10 µM), flufenamic acid (FFA, 100 µM), NS3728 (NS3, 10 µM) or the NLRP3 inhibitors MCC950 (MCC, 10 µM) and NBC19 (NBC, 10 µM) before stimulation with ATP (5 mM, 2 hr) (n = 3). (D) IL-1β release from LPS-primed (1 µg mL−1, 4 hr) BMDMs pre-treated with a vehicle control (DMSO), flufenamic acid (FFA, 100 µM), or NS3728 (NS3, 10 µM) before stimulation with nigericin (10 µM, 2 hr) (n = 6). (E) IL-1β release from LPS-primed (1 µg mL−1, 4 hr) BMDMs pre-treated with a vehicle control (DMSO), flufenamic acid (FFA, 100 µM) or NS3728 (NS3, 10 µM) before stimulation with imiquimod (75 µM, 2 hr) (n = 6). (F) Western blot of Triton x-100 insoluble crosslinked ASC oligomers and soluble total BMDM cell lysates (cell lysate + supernatant) probed for ASC, GSDMD, and caspase-1. LPS-primed (1 µg mL−1, 4 hr) BMDMs were pre-treated with either a vehicle control (DMSO), flufenamic acid (FFA, 100 µM), NS3728 (NS3, 10 µM), the NLRP3 inhibitor MCC950 (MCC, 10 µM) or KCl (K+, 25 mM) before stimulation with nigericin (10 µM, 2 hr) or imiquimod (75 µM, 2 hr) (n = 3). *p<0.05, **p<0.01, determined by a one-way ANOVA with Dunnett’s (vs vehicle control) post hoc analysis. Values shown are mean plus the SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** IL-1β release detected by ELISA on supernatants from LPS-primed (1 µg mL−1, 4 hr) bone-marrow-derived macrophages (BMDM) pre-treated with the indicated dose of DCPIB (0.03–100 µM, 15 min) before stimulation with ATP (5 mM), nigericin (10 µM), or silica (300 µg mL−1) for 2 hr (n = 6). Experiments with different stimuli were performed in parallel. IL-1β release was normalised to that of vehicle (DMSO)-treated BMDMs. Dose-response curves were fitted using a three parameter logistical (3PL) model. Values shown are mean ± the SEM.
 
 ATP-induced NLRP3 activation is dependent upon K+ efflux, whereas NLRP3 activation by treatment with the imidazoquinoline compound imiquimod is K+ efflux-independent (Groß et al., 2016). We therefore sought to test if VRAC inhibitors that were effective at blocking ATP-induced inflammasome activation were specific to K+ efflux-sensitive mechanisms. FFA (100 µM) and NS3728 (10 µM) were effective at blocking IL-1β release after treatment with the K+ ionophore nigericin (10 µM, 2 hr) (Figure 3D), but were unable to block imiquimod (75 µM, 2 hr)-induced IL-1β release (Figure 3E). Similarly, ASC oligomerisation, caspase-1 activation and gasdermin D cleavage induced by nigericin were sensitive to FFA and NS3728 pre-treatment (Figure 3F). However, ASC oligomerisation, caspase-1 activation and gasdermin D cleavage induced by imiquimod were not affected by FFA and NS3728 pre-treatment (Figure 3F). Increased extracellular KCl (25 mM) was sufficient to block nigericin-induced activation, but not imiquimod, demonstrating the K+ dependency of nigericin (Figure 3F). These data suggest that these Cl- channel inhibiting compounds exclusively target the K+-dependent canonical pathway of NLRP3 activation.
 
 Many Cl- channel inhibiting drugs are known to inhibit multiple Cl- channels, and we established that very effective VRAC inhibitors (tamoxifen and DCPIB) had negligible effect on NLRP3 activation at VRAC inhibiting concentrations. Thus, to conclusively determine the role of VRAC in NLRP3 inflammasome activation we generated a macrophage specific LRRC8A knockout (KO) mouse using CRISPR/Cas9 (Figure 4A). The generation of a macrophage-specific LRRC8A KO was required as whole animal LRRC8A KO mice do not survive beyond 4 weeks and have retarded growth (Kumar et al., 2014). Lrrc8afl/fl mice were bred with mice constitutively expressing Cre under the Cx3cr1 promoter, as previously shown to be expressed in monocyte and macrophage populations (Yona et al., 2013). This generated mice with the genotype Lrrc8afl/fl:Cx3cr1cre (KO) with littermates Lrrc8afl/fl:Cx3cr1WT (WT). Cell lysates were prepared from BMDMs and peritoneal macrophages isolated from WT and KO mice and were western blotted for LRRC8A confirming that Lrrc8a KO cells were knocked out for LRRC8A (Figure 4B). Functional loss of LRRC8A was confirmed using the calcein RVD assay described above. BMDMs were subjected to a hypotonic shock and changes in calcein fluorescence measured over time. In WT cells, there was a characteristic RVD (Figure 4C). However, in Lrrc8a KO cells there was complete loss of the RVD response (Figure 4C,D). The absence of RVD was also strikingly evident by observation of the cells by phase contrast microscopy (Figure 4E, Videos 1 and 2). Treatment of Lrrc8a KO BMDMs with DCPIB and subsequent hypotonic shock resulted in a further dysregulation of cell volume compared to WT cells or KO cells treated with hypotonic shock alone, suggesting that additional Cl- channels act to constrain cell volume in the absence of a functional RVD (Figure 4—figure supplement 1). These data confirm functional KO of the VRAC channel in macrophages.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig4-v1.jpg)
+
+**Figure 4.:** (A) Generation of LRRC8A conditional allele. LRRC8A is found on mouse chromosome two and consists of four exons. Untranslated sequences are represented by black boxes, and coding sequences by grey boxes. Exon three contains the vast majority of coding sequence and was flanked by loxP sites in two sequential steps, first integrating the 5’ LoxP by CRISPR-Cas9 (scissors) mediated double strand break and the supply of a homology flanked ssODN repair template containing the loxP site (grey triangle). This 5’ fl background was then bred to establish a colony and the process repeated to integrate the second 3’ loxP on this background. At each step, integration of loxP was confirmed by PCR and Sanger sequencing. Finally crossing with a Cre driver knocked into the Cx3cr1 locus results in recombinase mediated excision of Exon 3. (B) Western blot of LRRC8A from wild-type (WT) or Lrrc8a knockout (KO) bone-marrow-derived macrophages (BMDMs) and peritoneal macrophages (Mϕ) (n = 3). (C) Regulatory volume decrease measured by calcein fluorescence in WT or Lrrc8a KO BMDMs incubated in a hypotonic buffer (117 mOsm kg−1) (n = 4–5). (D) Area under the curve (AUC) analysis of (C) (n = 4–5). (E) Representative phase contrast images of WT or Lrrc8a KO BMDMs incubated in a hypotonic buffer (117 mOsm kg−1) at indicated time points (n = 3, Scale = 20 µm). ***p<0.001 determined by an unpaired t-test. Values shown are mean plus the SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Relative cell size of wild-type (WT) or Lrrc8a knockout (KO) murine bone marrow derived macrophages (BMDMs) incubated in isotonic (340 mOsm kg−1) or hypotonic (117 mOsm kg−1) solution, pre-treated with a vehicle control (DMSO) or DCPIB (10 µM) (n = 5). BMDMs were labelled with the fluorescent dye calcein and area of fluorescence was measured over time. These data were generated from the same experiment shown for the Figure 4C–D (vehicle traces). Values shown are mean plus the SEM.
+
+![Video 1.](https://cdn.elifesciences.org/articles/59704/elife-59704-video1.mp4.jpg)
+
+**Video 1.:** WT BMDMs were incubated in an isotonic buffer (340 mOsm kg−1) for 5 min before dilution to a hypotonic solution (117 mOsm kg−1) for the duration of the recording. Images were captured every minute (n = 3, Scale = 20 µm).
+
+![Video 2.](https://cdn.elifesciences.org/articles/59704/elife-59704-video2.mp4.jpg)
+
+**Video 2.:** Lrrc8a KO BMDMs were incubated in an isotonic buffer (340 mOsm kg−1) for 5 min before dilution to a hypotonic solution (117 mOsm kg−1) for the duration of the recording. Images were captured every minute (n = 3, Scale = 20 µm).
+
 We next used the Lrrc8a KO macrophages to test the hypothesis that VRAC and the RVD were important for NLRP3 inflammasome activation and IL-1β release in response to DAMP stimulation. WT BMDMs and Lrrc8a KO BMDMs were primed with LPS (1 µg mL−1, 4 hr) and then treated with the NLRP3 inflammasome activators ATP (5 mM, 2 hr), nigericin (10 µM, 2 hr), silica (300 µg mL−1, 2 hr), or imiquimod (75 µM, 2 hr). Knocking out LRRC8A had no effect on the release of IL-1β (Figure 5A) or cell death (Figure 5B). We then used western blotting to determine ASC oligomerisation and caspase-1 activation. In response to the NLRP3 inflammasome activators nigericin, ATP, and imiquimod, there was no effect of LRRC8A KO on ASC oligomerisation or caspase-1 activation (Figure 5C). Furthermore, IL-1β release in response to ATP or nigericin was still inhibited by the VRAC inhibitors flufenamic acid (FFA, 100 µM), and NS3728 (10 µM) in the Lrrc8a KO BMDMs, confirming that these inhibitors are inhibiting NLRP3 inflammasome activation by a VRAC-independent mechanism (Figure 5D). Flufenamic acid and NS3728 also inhibited ASC oligomerisation and caspase-1 activation as determined by western blot in the Lrrc8a KO BMDMs to the same extent as in the WT (Figure 5E). We then used a murine peritonitis model described previously (Daniels et al., 2016) to investigate the role of LRRC8A in vivo. First, we tested if the VRAC inhibitor NS3728 was effective at blocking NLRP3 in vivo. Wild-type C57BL6/J mice were injected intraperitoneally with NS3728 (50 mg kg−1), the NLRP3 inhibitor MCC950 (50 mg kg−1), or vehicle control, at the same time as LPS (1 µg, 4 hr). NLRP3 was then further activated by intraperitoneal injection of ATP (100 mM, 500 µL, 15 min) and IL-1β release was measured by ELISA of the peritoneal lavage (Figure 5F) and plasma (Figure 5G). Addition of ATP induced a significant increase in the release of IL-1β into peritoneal lavage and this was inhibited by MCC950 and NS3728, indicating an NLRP3-dependent response. IL-6 levels were unaltered in both peritoneal lavage and plasma by addition of NS3728 (Figure 5—figure supplement 1A,B). These data show that NS3728 was able to inhibit NLRP3 in vivo. To determine the role of VRAC in this model, we repeated this experiment in our macrophage Lrrc8a KO mice and their littermate controls. Macrophage Lrrc8a KO mice exhibited normal proportions of myeloid cells in the peritoneum as assessed by flow cytometry (Figure 5—figure supplement 1C–G). Loss of macrophage LRRC8A had no effect on the IL-1β levels in the peritoneal lavage in response to LPS and ATP (Figure 5H), or in the plasma (Figure 5I). Moreover, similar to our in vitro findings, NS3728 was still effective at inhibiting this response in the absence of LRRC8A (Figure 5H,I). These data suggested that VRAC was dispensable for NLRP3 activation by DAMP stimulation, and that the VRAC inhibitors are effective at inhibiting NLRP3 in the absence of VRAC, suggesting the presence of another target.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig5-v1.jpg)
+
+**Figure 5.:** (A) IL-1β release was determined by ELISA on supernatants from wild-type (WT) or Lrrc8a knockout (KO) bone-marrow-derived macrophages (BMDMs). Naïve or LPS-primed (1 µg mL−1, 4 hr) BMDMs were stimulated with either vehicle, ATP (5 mM), nigericin (Nig, 10 µM), silica (300 µg mL−1) or imiquimod (IQ, 75 µM) for 2 hr (n = 5). (B) Cell death determined by an LDH assay of cells treated in (A) (n = 3). (C) Western blot of Triton x-100 insoluble crosslinked ASC oligomers and soluble total BMDM cell lysates (cell lysate + supernatant) probed for ASC and caspase-1. LPS-primed (1 µg mL−1, 4 hr) WT or Lrrc8a KO BMDMs were stimulated with either nigericin (Nig, 10 µM), ATP (5 mM) or imiquimod (IQ, 75 µM) for 2 hr (n = 3). (D) IL-1β release from LPS-primed (1 µg mL−1, 4 hr) WT or Lrrc8a KO BMDMs pre-treated with a vehicle control (DMSO), flufenamic acid (FFA, 100 µM) or NS3728 (NS3, 10 µM) and then stimulated with ATP (5 mM) or nigericin (10 µM) for 2 hr (n = 3). (E) Western blot of Triton x-100 insoluble crosslinked ASC oligomers and soluble total BMDM cell lysates (cell lysate + supernatant) probed for ASC, caspase-1 and IL-1β. LPS-primed (1 µg mL−1, 4 hr) WT or Lrrc8a KO BMDMs were pre-treated with a vehicle control, flufenamic acid (FFA, 100 µM) or NS3728 (NS3, 10 µM) and stimulated with nigericin (10 µM, 2 hr) (n = 5). (F–G) IL-1β detected by ELISA in the peritoneal lavage (F) or plasma (G) from WT mice. Mice were pre-treated intraperitoneally (i.p.) with a vehicle control, NS3728 (NS3, 50 mg kg−1) or MCC950 (MCC, 50 mg kg−1) and LPS (1 µg). 4 hr after injection with LPS, mice were anaesthetised and injected with additional vehicle control, NS3728 (NS3, 50 mg kg−1) or MCC950 (MCC, 50 mg kg−1) before i.p. injection of ATP (100 mM, 500 µL, 15 min) (n = 5). (H–I) IL-1β detected by ELISA in the peritoneal lavage (H) or plasma (I) from Lrrc8a KO and WT littermates as treated in (F) (n = 3–5). **p<0.01, ***p<0.001, ****p<0.0001 determined by a one-way ANOVA with Dunnett’s (vs vehicle control) post hoc analysis (F,G) or a two-way ANOVA with Tukey’s post hoc analysis (A,B,D,H,I). Values shown are mean plus the SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59704/elife-59704-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) IL-6 detected by ELISA in the peritoneal lavage (A) or plasma (B) from wild-type mice. Mice were pre-treated intraperitoneally (i.p.) with a vehicle control, NS3728 (NS3, 50 mg kg−1) or MCC950 (MCC, 50 mg kg−1) and LPS (1 µg). 4 hr after injection with LPS, mice were anaesthetised and injected with additional vehicle control, NS3728 (NS3, 50 mg kg−1) or MCC950 (MCC, 50 mg kg−1) before i.p. injection of ATP (100 mM, 500 µL, 15 min) (n = 5). NS3728 treatment did not significantly alter IL-6 levels. Injection of MCC950 significantly enhanced IL-6 release in the peritoneum and plasma compared to vehicle. (C–G) Flow cytometry of immune cells in naïve peritoneal lavage from WT or Lrrc8a KO mice (n = 3–5). Representative gating strategy (C) and quantification of immune cells (D–G). Immune cells were initially gated on CD45+ve/CD11b+ve cells and cell populations were identified as follows: neutrophils (LY6Ghi), monocyte-derived-macrophages (MDMs) (LY6G-ve/MHCIIhi/F4/80-ve), resident macrophages (Mϕ) (LY6G-ve/F4/80hi), and Ly6Chi monocytes (LY6G-ve/MHCII-ve/F4/80-ve/CX3CR1hi/Ly6Chi). ns not significant, **p<0.01 determined by a one-way ANOVA with Dunnett’s (vs vehicle control) post hoc analysis (A,B) or an unpaired t-test (D–G). Values shown are mean plus the SEM.
 
 RVD in response to hypo-osmotic-induced cell swelling is documented as an inducer of NLRP3 inflammasome activation and IL-1β release (Perregaux et al., 1996; Compan et al., 2012). Since Lrrc8a KO BMDMs could no longer control their volume in response to hypotonic shock, we tested whether NLRP3 inflammasome activation by hypotonicity was altered. LPS-primed (1 µg mL−1, 4 hr) BMDMs were incubated in a hypotonic solution (4 hr) which caused IL-1β and LDH release from WT cells, and which was significantly inhibited in Lrrc8a KO BMDMs (Figure 6A,B). There was no difference in IL-1β release or cell death between ATP-stimulated WT and KO BMDMs (Figure 6A,B). Caspase-1 cleavage and IL-1β processing induced by hypotonicity were also completely inhibited in the absence of LRRC8A (Figure 6C), indicating the response was completely dependent on both NLRP3 and VRAC. Moreover, hypotonicity-induced ASC oligomerisation was also dependent on VRAC (Figure 6D). These data show that in response to hypo-osmotic stress, VRAC was essential for NLRP3 inflammasome activation.
 
@@ -74,37 +114,285 @@ In summary, we have reported that hypotonicity-induced NLRP3 inflammasome activa
 
 ## Materials and methods
 
-## Computational chemistry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Charles River</td>
+      <td>C57BL/6NCrl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J.LRRC8AEm1Uman (Lrrc8afl/fl)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Line maintained by David Brough lab, University of Manchester</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6J.B6N(Cg)-Cx3cr1tm1.1(cre)Jung/J</td>
+      <td>Jackson lab</td>
+      <td>Stock No: 025524 RRID:IMSR_JAX:025524</td>
+      <td>Obtained from breeding colony managed by John Grainger lab (University of Manchester)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Bone-marrow-derived macrophages (BMDMs)</td>
+      <td>In house</td>
+      <td></td>
+      <td>Generated from bone marrow from above mouse lines</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Peritoneal macrophages</td>
+      <td>In house</td>
+      <td></td>
+      <td>Generated by peritoneal lavage from above mouse lines</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo Sapien)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>HeLa (ATCC CCL-2) RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-1β (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF-401-NA RRID:AB_416684</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Caspase1 + p10 + p12 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab179515</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- mouse GSDMD (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab209845 RRID:AB_2783550</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse ASC/TMS1 (D2W8U) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>67824 RRID:AB_2799736</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LRRC8A (8H9) (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-517113</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin−Peroxidase (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>A3854 RRID:AB_262011</td>
+      <td>(1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Immunoglobulins HRP (goat polyclonal)</td>
+      <td>Agilent</td>
+      <td>P044801-2 RRID:AB_2617138</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse Immunoglobulins HRP (rabbit polyclonal)</td>
+      <td>Agilent</td>
+      <td>P026002-2 RRID:AB_2636929</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat Immunoglobulins HRP (rabbit polyclonal)</td>
+      <td>Agilent</td>
+      <td>P044901-2</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 Hygro EYFP H148Q/I152L</td>
+      <td>Addgene</td>
+      <td>25874 RRID:Addgene_25874</td>
+      <td>A gift from Peter Haggie</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CytoTox 96 Non-Radioactive Cytotoxicity (LDH) Assay</td>
+      <td>Promega</td>
+      <td>G1780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-1β/IL-1F2 DuoSet ELISA</td>
+      <td>R and D systems</td>
+      <td>DY401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharides from Escherichia coli O26:B6</td>
+      <td>Sigma</td>
+      <td>L2654</td>
+      <td>For in vitro experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharides from Escherichia coli O127:B8 (in vivo)</td>
+      <td>Sigma</td>
+      <td>L3880</td>
+      <td>For in vivo experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine Triphosphate (ATP)</td>
+      <td>Sigma</td>
+      <td>A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nigericin sodium salt</td>
+      <td>Sigma</td>
+      <td>N7143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Silica</td>
+      <td>U.S. Silica</td>
+      <td>MIN-U-SIL 15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imiquimod</td>
+      <td>InvivoGen</td>
+      <td>R837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Sulfonic calix[6]arene Hydrate</td>
+      <td>Thermo Fisher</td>
+      <td>10494735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-[(2-Butyl-6,7-dichloro-2-cyclopentyl-2,3-dihydro-1-oxo-1H-inden-5-yl)oxy]butanoic acid (DCPIB)</td>
+      <td>Tocris</td>
+      <td>1540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flufenamic acid (FFA)</td>
+      <td>Sigma</td>
+      <td>F9005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NS3728</td>
+      <td>David Brough Lab, University of Manchester</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CP-456773 sodium salt (MCC950)</td>
+      <td>Sigma</td>
+      <td>PZ0280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBC19</td>
+      <td>David Brough Lab, University of Manchester</td>
+      <td>PMID:28943355</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein, AM, cell-permeant dye</td>
+      <td>Thermo Fisher</td>
+      <td>C1430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Disuccinimidyl suberate (DSS)</td>
+      <td>Thermo Fisher</td>
+      <td>21555</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Computational chemistry
 
 Docking of ligands to VRAC employed the recently solved cryo-EM structure of VRAC (PDB: 6NZW, resolution 3.2 Å) (Kern et al., 2019). Tautomeric and ionisation states of VRAC amino acid residues at pH 7.4 were assigned using MOE (MOE 2015.08, Chemical Computing Group, Canada). Similarly, ligands were modelled in their ionised forms according to physiological conditions. Docking was performed with the Triangle Matcher placement method of MOE using the London dG scoring function (MOE 2015.08, Chemical Computing Group, Canada). The pocket into which the VRAC inhibitors were docked was that occupied by the (S)-isomer of DCPIB in the cryo-EM structure of VRAC. Rescoring of poses used the molecular mechanics (MM)/generalised Born/volume integral (GBVI) potential (Labute, 2008).
 
-## Cell culture
+### Cell culture
 
 Primary bone-marrow-derived macrophages (BMDMs) and peritoneal macrophages were isolated from male and female wild-type C57BL6/J mice. Bone marrow was harvested from both femurs, red blood cells were lysed and resulting marrow cells were cultured in 70% DMEM (10% v/v FBS, 100 U/mL penicillin, 100 μg/mL streptomycin) supplemented with 30% L929 mouse fibroblast-conditioned media for 6–7 days. BMDMs were seeded out the day before at a density of 1 × 106 mL−1 in DMEM (10% v/v FBS, 100 U mL−1 penicillin, 100 μg mL−1 streptomycin). Peritoneal macrophages were isolated by peritoneal lavage and seeded out overnight at a density of 1 × 106 mL−1 in DMEM (10% v/v FBS, 100 U mL−1 penicillin, 100 μg mL−1 streptomycin). HeLa cells were seeded out at 0.1 × 106 mL−1 in DMEM (10% v/v FBS, 100 U mL−1 penicillin, 100 μg mL−1 streptomycin). HeLa cells were obtained from ATCC (HeLa (ATCC CCL-2)) and are periodically tested for mycoplasma.
 
-## Inflammasome activation assays
+### Inflammasome activation assays
 
 Primary BMDMs were primed with LPS (1 µg mL−1, 4 hr) in DMEM (10% v/v FBS, 100 U mL−1 penicillin, 100 μg mL−1 streptomycin). After priming, the media was replaced with serum-free DMEM, or when specified an isotonic buffer (132 mM NaCl, 2.6 mM KCl, 1.4 mM KH2PO4, 0.5 mM MgCl2, 0.9 mM CaCl2, 20 mM HEPES, 5 mM NaHCO3, 5 mM Glucose, pH 7.3, 340 mOsm/kg) or hypotonic buffer (27 mM NaCl, 0.54 mM KCl, 0.3 mM KH2PO4, 0.5 mM MgCl2, 0.9 mM CaCl2, 20 mM HEPES, 5 mM NaHCO3, 5 mM Glucose, pH 7.3, 117 mOsm kg−1). When used, VRAC inhibitors were added 15 min before stimulation of the NLRP3 inflammasome.
 
 For analysis of IL-1β release and pyroptosis, cell supernatants were collected. IL-1β release was determined by ELISA (DuoSet, R and D Systems) according to the manufacturer’s instructions. Cell death was assessed by lactate dehydrogenase (LDH) release using CytoTox 96 nonradioactive cytotoxicity assay (Promega) according to manufacturer’s instructions. For western blotting, total cell lysates were made by directly adding protease inhibitor cocktail and Triton x-100 (1% v/v) to each well containing cells and supernatant.
 
-## ASC oligomerisation assay
+### ASC oligomerisation assay
 
 1 × 106 primary BMDMs were seeded out overnight into 12-well plates. After LPS priming (1 µg mL−1, 4 hr), cells were incubated in either serum-free DMEM, an isotonic or a hypotonic buffer (as described above) and stimulated as described. BMDMs were lysed directly in-well by addition of protease inhibitor cocktail and Triton x-100 (1% v/v) and lysed on ice. Total cell lysates were then spun at 6800xg for 20 min at 4°C to separate the lysate into Triton x-100 soluble and insoluble fractions. The Triton x-100 insoluble fraction (pellet) was then chemically crosslinked by addition of disuccinimidyl suberate (DSS, 2 mM, 30 min, RT) in PBS. Following crosslinking, the insoluble fraction was spun at 6800xg for 20 min and the resulting pellet was resuspended and boiled in 40 µL 1X Laemlli buffer. The Triton x-100 soluble fraction was concentrated by trichloroacetic acid (TCA) precipitation. Triton x-100 soluble lysate was mixed 1:1 with TCA (20% w/v) and spun at 14,000xg for 10 min at 4°C. The pellet was then washed in acetone, spun at 14,000xg for 10 min at 4°C, and resuspended in 2X Laemlli buffer.
 
-## Western blotting
+### Western blotting
 
 Cell lysates were separated by Tris-glycine SDS PAGE and transferred onto nitrocellulose or PVDF membranes using a semidry Trans-Blot Turbo system (Bio-Rad). Membranes were blocked (1 hr, RT) in milk (5% w/v) in PBS containing Tween 20 (0.1% v/v, PBS-T) before incubation (overnight, 4°C) with indicated primary antibodies in bovine serum albumin (5% w/v) in PBS-T. Membranes were washed three times for 5 min in PBS-T before incubation (1 hr, RT) with appropriate HRP-conjugated secondary antibodies (Dako). After a further three washes in PBS-T, membranes were incubated with Amersham ECL prime detection reagent (GE healthcare) and chemiluminescence was visualised using a G:Box Chemi XX6 (Syngene).
 
-## Regulatory volume decrease (RVD) assay
+### Regulatory volume decrease (RVD) assay
 
 5 × 104 BMDMs were seeded out into black walled 96-well plates overnight. Cells were loaded with calcein (10 µM, 1 hr, 37°C) in an isotonic buffer (132 mM NaCl, 2.6 mM KCl, 1.4 mM KH2PO4, 0.5 mM MgCl2, 0.9 mM CaCl2, 20 mM HEPES, 5 mM NaHCO3, 5 mM Glucose, pH 7.3, 340 mOsm kg−1). Following loading, BMDMs were washed three times with isotonic buffer before incubation with VRAC inhibitors or vehicle control at indicated concentrations for 5 min. GFP fluorescence was then imaged for a further 5 min before hypotonic shock was induced by a fivefold dilution with a hypotonic buffer (0.9 mM CaCl2, 20 mM HEPES, 5 mM NaHCO3, 5 mM Glucose, pH 7.3), resulting in a final osmolarity of 117 mOsm kg−1. GFP fluorescence was measured on an Eclipse Ti inverted microscope (Nikon) and analysed using Image J software. Point visiting was used to allow multiple positions to be imaged within the same time-course and cells were maintained at 37°C and 5% CO2. For experiments with VRAC inhibitors, combined treatment with hypotonicity and VRAC inhibitors resulted in some cells undergoing lytic cell death over the course of the experiment and loss of calcein fluorescence. Therefore, GFP fluorescence was used to identify the area of living cells.
 
-## Iodide YFP quenching assay
+### Iodide YFP quenching assay
 
 HeLa cells were seeded at a density of 0.1 × 106 ml−1 in black-walled, clear bottom 96-well plates (Greiner). Transient transfection with the halide-sensitive YFP mutant pcDNA3.1 EYFP H148Q/I152L, a gift from Peter Haggie (Addgene plasmid # 25872), was performed using Lipofectamine 3000 (Thermo Fisher). 18–24 hr post-transfection, HeLa cells were washed twice with isotonic buffer (140 mM NaCl, 5 mM KCl, 20 mM HEPES, pH 7.4, 310 mOsm kg−1) before 5 min incubation in 50 µL isotonic buffer containing either drug at indicated concentrations, or vehicle. 50 µL isotonic or hypotonic (5 mM KCl, 20 mM HEPES, 90 mM mannitol, pH 7.4, 120 mOsm kg−1) buffer containing either drug or vehicle was then added and cells were incubated for a further 5 min. NaI (200 mM, 25 µL) was then added directly to the well, and fluorescence readings were take every 2 s using the FlexStation3 plate reader.
 
-## Generation of Lrrc8afl/fl mice
+### Generation of Lrrc8afl/fl mice
 
 We used CRISPR-Cas9 to generate the floxed LRRC8A allele on C57BL/6J background. LRRC8A is a four exon gene spanning 26 kb on mouse chromosome 2. Only two of these exons contain coding sequence, with exon three harbouring >85% of the coding sequence and possessing large introns, and thus an ideal candidate for floxing. We initially attempted the 2-sgRNA, 2-oligo approach described previously (Yang et al., 2013), but failed to obtain mice with both loxP integrated on the same allele (Gurumurthy et al., 2019). Instead, a colony from a single founder with the 5’ LoxP integrated was established, bred to homozygosity, and used as a background to integrate the second 3’ loxP. For both steps, we used the Sanger WTSI website (http://www.sanger.ac.uk/htgt/wge/, Hodgkins et al., 2015) to design sgRNA that adhered to our criteria for off target predictions (guides with mismatch (MM) of 0, 1 or two for elsewhere in the genome were discounted, and MM3 were tolerated if predicted off targets were not exonic). sgRNA sequences were purchased as crRNA oligos, which were annealed with tracrRNA (both oligos supplied IDT; Coralville, USA) in sterile, RNase-free injection buffer (TrisHCl 1 mM, pH 7.5, EDTA 0.1 mM) by combining 2.5 µg crRNA with 5 µg tracrRNA and heating to 95°C, which was allowed to slowly cool to room temperature.
 
@@ -112,14 +400,14 @@ For 5’ targeting the sgRNA GTCTAGTTAGGGACTCCTGG-GGG was used, with the ssODN r
 
 For this second round of targeting, we generated embryos from the LRRC8A-5’fl colony by IVF using homozygous LRRC8A-5’fl mice, and used electroporation (Nepa21 electroporator, Sonidel) to deliver the sgRNA:Cas9 RNP complex and ssODN to the embryos, AltR crRNA:tracrRNA:Cas9 complex (200 ng μL−1; 200 ng μL−1; 200 ng μL−1 respectively) and ssDNA HDR template (500 ng μL−1) (Kaneko, 2017). Zygotes were cultured overnight and the resulting two-cell embryos surgically implanted into the oviduct of day 0.5 post-coitum pseudopregnant mice. Potential founder mice were identified by extraction of genomic DNA from ear clips, followed by PCR using primers that flank the homology arms and sgRNA sites (Geno F2 atccccactgcttttctgga and Geno R2 ccactcaagagccagcaatg). WT sequences produced a 371 bp band, and loxP knock in 411 bp, which is also susceptible to KpnI digest. As before, Pups with a larger band were reserved, the band isolated and amplified using high fidelity Phusion polymerase (NEB), gel extracted and subcloned into pCRblunt (Invitrogen). Colonies were mini-prepped and Sanger sequenced with M13 Forward and Reverse primers, and aligned to predicted knock-in sequence. Positive pups were bred with a WT C57BL6/J to confirm germline transmission and a colony established (Lrrc8afl/fl). Lrrc8afl/fl mice were bred with Cx3cr1cre mice (as previously described Yona et al., 2013) to generate Lrrc8afl/fl Cx3cr1cre/+ mice, which specifically induce removal of LRRC8A in cells expressing CX3CR1 (Lrrc8a KO). CX3CR1-cre mice were obtained from a breeding colony at the University of Manchester managed by John Grainger. Experiments using Lrrc8a KO cells were compared to wild-type littermate controls (Lrrc8afl/fl Cx3cr1+/+).
 
-## In vivo peritoneal inflammation model
+### In vivo peritoneal inflammation model
 
 All procedures were performed with appropriate personal and project licenses in place, in accordance with the Home Office (Animals) Scientific Procedures Act (1986), and approved by the Home Office and the local Animal Ethical Review Group, University of Manchester. Eight to ten week-old male wild type (WT) C57BL/6J mice (Charles River) were used to test efficacy of NS3728 and MCC950. Mice were treated intraperitoneally with LPS (2 µg mL−1, 500 µL) and either a vehicle control (5% DMSO (v/v), 5% Cremophor (v/v), 5% ethanol (v/v) in PBS), NS3728 (50 mg kg−1) or MCC950 (50 mg kg−1) for 4 hr. Mice were then anesthetised with isofluorane (induced at 3% in 33% O2, 67% NO2, maintained at 1–2%) before injection with a vehicle control, NS3728 or MCC950 as before and ATP (0.5 mL, 100 mM in PBS, pH 7.4) or PBS for 15 min. The peritoneum was then lavaged with RPMI 1640 (3 mL) and blood was collected via cardiac puncture. For experiments using Lrrc8a knockout (KO) mice, 8- to 10-week-old male and female Lrrc8a KO and WT littermate controls were used and treated as described above. Plasma and lavage fluid was used for cytokine analysis. BCA analysis was performed on the peritoneal lavage fluid to normalise cytokine release to total protein level. Murine studies were performed with the researcher blinded to genotype and treatment for the duration of the experiment.
 
-## Flow cytometry
+### Flow cytometry
 
 Eight to ten-week-old male and female Lrrc8a KO and WT littermate controls were anesthetised with isofluorane (induced at 3% in 33% O2, 67% NO2, maintained at 1–2%) and the peritoneal cavity was lavaged with 6 mL RPMI (3% v/v FBS, 100 U mL−1 penicillin, 100 μg mL−1 streptomycin, 1 mM EDTA) before sacrifice. Red blood cells were lysed using Pharmlyse (BD Biosciences) in H2O. Cells were surface stained with fluorescence-conjugated anti-CD45, anti-CD11b, anti-Ly6G, anti-MHCII, anti-F4/80, anti-Ly6C and anti-CX3CR1 antibody cocktail containing Fc block (anti-CD16/CD32) and Tris-EDTA (1 mM). Cells were then fixed (10 min, room temperature) with paraformaldehyde (2% w/v). Live/Dead Fixable Blue stain was used to exclude dead cells. Samples were analysed on an LSRII flow cytometer (Becton-Dickinson) and cell populations characterised as follows:- neutrophils (CD45hi/CD11bhi/Ly6Ghi), monocyte-derived-macrophages (CD45hi/CD11bhi/Ly6G-/MHCIIhi/F4/80-), resident macrophages (CD45hi/CD11bhi/Ly6G-/F4/80hi), Ly6Chi monocytes (CD45hi/CD11bhi/Ly6G-/MHCII-/F4/80-/CX3CR1hi/Ly6Chi), using FlowJo software.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data are presented as mean values plus the SEM. Accepted levels of significance were *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Statistical analyses were carried out using GraphPad Prism (version 8). Data where comparisons were made against a vehicle control, a one way ANOVA was performed with a Dunnett’s post hoc comparison was used. Experiments with two independent variables were analysed using a two-way ANOVA followed by a Tukey’s post hoc corrected analysis. Equal variance and normality were assessed with Levene’s test and the Shapiro–Wilk test, respectively, and appropriate transformations were applied when necessary. n represents experiments performed on individual animals or different passages for experiments involving HeLa cells.

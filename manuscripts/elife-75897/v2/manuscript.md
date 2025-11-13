@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00ygt2y02 Ernst Strüngmann Institute (ESI) for Neuroscience in Cooperation with Max Planck Society Frankfurt Germany
+1. Ernst Strüngmann Institute (ESI) for Neuroscience in Cooperation with Max Planck Society Frankfurt Germany ([ROR:00ygt2y02](https://ror.org/00ygt2y02))
 2. International Max Planck Research School for Neural Circuits Frankfurt Germany
-3. https://ror.org/04cvxnb49 Brain Imaging Center, Goethe University Frankfurt Frankfurt Germany
-4. https://ror.org/04cvxnb49 Department of Psychology, Goethe University Frankfurt Frankfurt Germany
-5. https://ror.org/016xsfp80 Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands
+3. Brain Imaging Center, Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+4. Department of Psychology, Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+5. Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
@@ -42,19 +42,27 @@ Trial structure, stimuli, and stimulus color coordinates are shown in Figure 1 a
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75897/elife-75897-fig1-v2.jpg)
 
-**Figure 1.:** (A) Temporal structure of one trial. After fixation onset, a gray baseline was shown for 1.2 s, followed by 0.3–2 s of stimulation with a stimulus disk. Then, a change spot appeared at a random position on the disk (indicated here with an arrow, not visible in the actual experiment), which the participants needed to report. Upon correct report, a smiley was shown. (B) Human cone sensitivity spectra (Stockman and Sharpe, 2000) plotted on an estimate of perceptual wavelength color. (C) DKL coordinates for all eight stimulus colors shown in this study, relative to the background. Letters indicate stimulus labels used in Results. Note that color hues of these color disks, when displayed on a noncalibrated monitor or printout, will not fully correspond to the hues shown in the study. (D) To compare the strength of induced gamma responses between color and grating stimuli, some trials showed a grating instead of a color stimulus.Figure 1—source data 1.DKL- (relative to gray background), CIELAB- (relative to standard illuminant D65), and cone-contrast coordinates of the stimuli and the background shown in this study.
+**Figure 1.:** (A) Temporal structure of one trial. After fixation onset, a gray baseline was shown for 1.2 s, followed by 0.3–2 s of stimulation with a stimulus disk. Then, a change spot appeared at a random position on the disk (indicated here with an arrow, not visible in the actual experiment), which the participants needed to report. Upon correct report, a smiley was shown. (B) Human cone sensitivity spectra (Stockman and Sharpe, 2000) plotted on an estimate of perceptual wavelength color. (C) DKL coordinates for all eight stimulus colors shown in this study, relative to the background. Letters indicate stimulus labels used in Results. Note that color hues of these color disks, when displayed on a noncalibrated monitor or printout, will not fully correspond to the hues shown in the study. (D) To compare the strength of induced gamma responses between color and grating stimuli, some trials showed a grating instead of a color stimulus.
 
 The eight colors were sampled from an ellipse on a DKL equiluminance plane, such that they were DKL equiluminant to each other and to the background (Figure 1C). Color coordinates are given in Figure 1—source data 1. To simplify reporting, we will refer to colors on the L-M axis as ‘red’ and ‘green’, to colors on the S-(L+M) axis as ‘blue’ and ‘yellow’, and to colors with components from both axes as ‘red-blue’, ‘red-yellow’, ‘green-blue’, and ‘green-yellow’. Note that these labels do not fully correspond to subjective perceptual labels: For example, monochromatic light strongly activating S-cones but not L-/M-cones would look purple to the observer, as can be seen from the spectral sensitivities of the S/M/L-cones (Figure 1B, Stockman and Sharpe, 2000).
 
 Note that the colors were constrained to equalized cone contrast levels, while the grating was chosen to generate a maximally strong gamma signal for comparison. Differences in the strength of neuronal responses between grating and colors are therefore difficult to interpret, because it is unclear how input strength could be equalized.
 
-## Subjects show hue dependence in reaction times and detection thresholds
+### Subjects show hue dependence in reaction times and detection thresholds
 
 As set by the staircase, participants’ report accuracy was close to 85% (grating: 83%, CI95% = [76–87%], colors: 87%, CI95% = [86–87%], all confidence intervals based on nonparametric bootstraps). However, change-detection performance, as defined by the color contrast of the stimulus change on which the per-color staircases converged, differed across hues (F(7,203) = 82.18, p < 3 × 10−16). Participants reached 85% accuracy with a change color contrast toward background between 20% (CI95% = [17%, 23%]) for red-yellow and 37% (CI95% = [31%, 45%]) for red-blue stimuli (Figure 2D). There was one notable outlier: For blue stimuli, the necessary change color contrast toward background was 71% (CI95% = [66%, 76%]), significantly higher than for other hues (t(29) = 18.01, p < 3 × 10−16).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75897/elife-75897-fig2-v2.jpg)
+
+**Figure 2.:** (A) Grating-evoked ERF, averaged over V1 dipoles and participants. Error region shows 95% CI over participants. (B) Color-evoked ERFs, averaged over V1 dipoles and participants. Black bar indicates significant differences across colors, tmax corrected for multiple comparisons. Line colors reflect stimulus colors, but have been darkened for readability. (C) ERF N70 dipole moment (relative to baseline variability), averaged over V1 dipoles and participants. Error bars represent 95% CIs over participants, bar orientation represents stimulus orientation in DKL space. In gray, the average grating-induced ERF dipole moment is shown for comparison. (D) Average relative contrast steps toward the background color needed to achieve 85% target detection accuracy for all stimuli. Error bars represent 95% CIs over participants, bar orientation represents stimulus orientation in DKL space. For C, D, the length of the scale bar corresponds to the distance from the edge of the hexagon to the outer ring.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75897/elife-75897-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Average prepeak slope of the N70 ERF component (extracted from 2 to 12 ms before per-color, per-participant peak time) for all colors. (B) Average peak time of the N70 ERF component for all colors. (C) Average reaction times for all stimuli. For panels A–C, error bars represent 95% CIs over participants, bar orientation represents stimulus orientation in DKL space. The length of the scale bar corresponds to the distance from the edge of the hexagon to the outer ring.
+
 On average, participants took 496 ms (CI95% = [467 ms, 524 ms]) to report the change location on grating stimuli. For color stimuli, they took on average 547 ms (CI95% = [521 ms, 570 ms]). Across the different color hues, reaction times differed (F(7,203) = 9.26, p < 7 × 10−10). Subjects were quickest to detect contrast changes on red stimuli (mean = 509 ms, CI95% = [483 ms, 540 ms]), and slowest for green-yellow stimuli (mean = 562 ms, CI95% = [535 ms, 587 ms], Figure 2—figure supplement 1C).
 
-## Event-related fields are weakest for blue stimuli
+### Event-related fields are weakest for blue stimuli
 
 Both grating stimuli and equiluminant color disks induced clear visual event-related fields (ERFs) in area V1 (Figure 2A), with a shape and timing similar to visually evoked potentials recorded in macaque V1 (Figure 5B in Rols et al., 2001). ERFs were z-scored relative to the per-trial baseline (see Methods). The ERF differed across stimuli during a prominent component, 57- to 94-ms poststimulus onset (Figure 2B, F(3.48, 101.04) = 30.32, pGG < 3 × 10−15), which we suspect to be of similar origin as the N70 component recorded in Rols et al., 2001. The N70 component was stronger for grating compared to color stimuli (Figure 2C) and t(9) = 6.80, p < 2 × 10−7). Across stimulus hues, the N70 component was strongest for red (mean = −0.83, CI95% = [−0.96, −0.71]) and green-yellow stimuli (mean = −0.82, CI95% = [−0.94, −0.70]), and weakest for blue stimuli (mean = −0.33, CI95% = [−0.38, −0.29]).
 
@@ -62,9 +70,25 @@ The initial ERF slope is sometimes used to estimate feedforward drive. We extrac
 
 The peak time of the N70 component was significantly later for blue stimuli (mean = 88.6 ms, CI95% = [84.9 ms, 92.1 ms]) compared to all (all pHolm < 0.02) but yellow, green, and green-yellow stimuli, for yellow (mean = 84.4 ms, CI95% = [81.6 ms, 87.6 ms]) compared to red and red-blue stimuli (all pHolm < 0.03), and fastest for red stimuli (mean = 77.9 ms, CI95% = [74.5 ms, 81.1 ms]) showing a general pattern of slower N70 peaks for stimuli on the S-(L+M) axis, especially for blue (Figure 2—figure supplement 1B).
 
-## Color stimuli induce V1 gamma oscillations measurable in MEG
+### Color stimuli induce V1 gamma oscillations measurable in MEG
 
 In addition, color and grating stimuli induced significant visual narrowband gamma-band power increases in early visual cortex (Figure 3A–D, G, H). Color stimuli induced gamma-power increases at the subject-specific gamma peak of on average 19% (CI95% = [14–26%]) relative to the baseline, whereas grating stimuli induced gamma-power increases of 100% (CI95% = [80–120%], tdifference(29) = 8.32, p < 4 × 10−9).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75897/elife-75897-fig3-v2.jpg)
+
+**Figure 3.:** (A) Stimulus-induced power changes over baseline for one example participant that showed strong gamma-band responses (averaged over V1 dipoles). Top: grating-induced power changes. Error region shows 95% CI over trials. Bottom: color-induced power changes. (B) Same as A, but averaged over participants. Error region shows 95% CI over participants. (C) Same as B, but peak-aligned before averaging. For A–C, line colors reflect stimulus colors, but have been darkened for readability. (D) Average stimulus-induced power change in V1 as a function of time and frequency. Top: for grating stimuli. Bottom: for green stimuli. (E) Average stimulus-induced gamma-power change (individual gamma peak ±10 Hz) for all stimuli. Error bars represent 95% CIs over participants, bar orientation represents stimulus orientation in DKL space. In gray, the average grating-induced gamma-power strength is shown for comparison. The length of the scale bar corresponds to the distance from the edge of the hexagon to the outer ring. (F) Gamma-peak frequencies of the first and second gamma peak for all participant–color combinations in which a first and a second gamma peak was found. Dot color corresponds to stimulus color. Dotted line indicates the expected frequency relationship, if first and second peak frequencies were harmonics of each other. (G) The inflated template brain. Black-to-white shading indicates areas V1, V2, V3, and V4. (H) Average stimulus-induced gamma-power change (individual gamma peak ±10 Hz), source projected to all cortical dipoles. Values are significance masked using false discovery rate control (Benjamini and Yekutieli, 2001), black-to-white shading indicates areas V1, V2, V3, and V4. All panels show power change 0.3–1.3 s after stimulus onset, relative to baseline.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75897/elife-75897-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Per participant, per color, the induced gamma-power change peak in dB was fitted with a Gaussian added to an offset (for full description, see Methods). Plotted is the resulting Gaussian, with peak power and variance averaged over participants. (B) Average induced gamma-peak frequency of the lower gamma peak for all stimuli. Bar orientation represents stimulus orientation in DKL space. In gray, the same is shown for the grating stimulus. (C) Same as B, but for stimulus-induced power at the upper gamma-peak frequency. (D) Same as B, but for the upper gamma-peak frequency. In panels B–D, error bars represent 95% CIs over participants and the length of the scale bar corresponds to the distance from the edge of the hexagon to the outer ring.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75897/elife-75897-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Per-color average induced power-change spectra. Banding shows 95% confidence intervals over participants. Note that the y-axis varies between colors. (B) Stimulus-induced power changes over baseline (averaged over V1 dipoles) for all 30 participants and the eight presented colors.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75897/elife-75897-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Average stimulus-induced power change in V1 as a function of time and frequency, plotted for each color.
 
 Grating- and color-induced gamma source-localized to similar sources, being strongest in areas V1/V2 and extending into parietal and temporal cortex (Figure 3H). For both grating and color stimuli, induced gamma-power changes were strongest in areas V1 (grating: 142%; color: 21%), V2 (grating: 131%, color: 19%), V3 (grating: 113%, color: 19%), and V4 (grating: 91%, color: 17%), respectively.
 
@@ -72,7 +96,7 @@ To test for the existence of gamma peaks, we fit the power-change spectra (per p
 
 There was a significant difference between the average lower gamma-peak frequencies induced by grating (51.6 Hz, CI95% = [49.4 Hz, 53.7 Hz]) and color stimuli (45.9 Hz, CI95% = [42.6 Hz, 49.1 Hz], pdifference < 3 × 10−3). Across participants, the gamma-peak frequencies induced by grating and by color stimuli were correlated (r = 0.64, p < 3 × 10−4). However, none of the different color pairs showed significantly differing peak frequencies in pairwise comparisons within participants across different colors (Figure 3—figure supplement 1B, all pHolm > 0.36), also indicating that input drive was roughly equalized across colors (Lewis et al., 2021; Ray and Maunsell, 2010; Roberts et al., 2013). The higher peak did not differ in peak frequencies induced by grating (96.5 Hz, CI95% = [91.8 Hz, 101.3 Hz]) and color stimuli (97.1 Hz, CI95% = [95.0 Hz, 99.1 Hz], pDifference = 0.68) and showed no significant differences in pairwise comparisons across different colors (Figure 3—figure supplement 1C,D all pHolm > 0.37).
 
-## Induced gamma power does not differ between equiluminant red and green stimuli
+### Induced gamma power does not differ between equiluminant red and green stimuli
 
 Crucially, for the red and green stimuli that were chosen to have equal absolute L-M contrast, the induced gamma-power change was not statistically different between the two (Figure 3E, red: 30.8%, CI95% = [20.3%, 43.5%], green: 31.2%, CI95% = [21.2%, 42.2%], t(29) = 0.135, pHolm = 0.89, BF01 = 7.0). The Bayes factor can be interpreted as meaning that the data are 7.0 times more likely to occur under a hypothesis of no differences between red and green stimuli compared to a hypothesis assuming differences.
 
@@ -82,7 +106,7 @@ To attempt to control for potential remaining differences in input drive that th
 
 As we found differences in initial ERF slope especially for blue stimuli, we checked if this was sufficient to explain weaker induced gamma power for blue stimuli. While blue stimuli still showed weaker gamma-power change residuals than yellow stimuli when regressing out changes in N70 slope and amplitude (blue: −11.23, CI95% = [−16.89, −5.57], yellow: −6.35, CI95% = [−11.20, −1.50]), this difference did not reach significance (t(29) = 1.65, pHolm = 0.88). This suggests that lower levels of input drive generated by equicontrast blue versus yellow stimuli might explain the weaker gamma oscillations induced by them.
 
-## Performance, ERF, and induced gamma power are related across colors
+### Performance, ERF, and induced gamma power are related across colors
 
 Higher change-detection performance (defined as lower final staircased target color contrast) was correlated with stronger average V1 dipole moment (i.e., the negative ERF amplitude during the N70 component) across colors, in the time period from 67- to 93-ms poststimulus onset (Figure 4A, rmax = 0.43, all pTmax < 0.03, corrected for multiple comparisons across time). Higher change-detection performance was also correlated with stronger induced V1 power across colors, for several gamma frequency ranges (Figure 4B; at 34–37 Hz: rmax = −0.27, all pTmax ≤ 0.03; at 39–40 Hz: rmax = −0.23, all pTmax < 0.04; at 44–53 Hz: rmax = −0.31, all pTmax ≤ 0.03, corrected for multiple comparisons across frequency).
 
@@ -112,7 +136,7 @@ When comparing our results to previous reports based on intracranial recordings,
 
 The localization accuracy of source-localized MEG is limited by subject movement, uncertainties in head tracking and source spread. However, with careful head stabilization and exclusion of subjects showing excessive head movements (as practiced here), spatial resolution can be brought down to between 0.45 and 7 mm, depending on dipole location (Nasiotis et al., 2017). Additionally, the high similarity between early (source-localized) V1 ERF components recorded here and intracortical V1 ERP components recorded in macaque (Rols et al., 2001) suggests that our V1-localized activity in MEG captures the underlying intracortical voltage signal in V1.
 
-## Gamma responses to colored stimuli
+### Gamma responses to colored stimuli
 
 In several previous studies in non-human and human primates analyzing early visual cortex gamma-band responses to colored stimuli, a red effect, that is stronger induced gamma power for red versus non-red colors, was reported. In most of these studies, the presented colors were not equiluminant and did not have equal color contrasts to the background.
 
@@ -130,7 +154,7 @@ In total, all previous studies not explicitly controlling for cone contrast foun
 
 Interestingly, a similar case has been found before in other measures of V1 activation: Macaque V1 glucose uptake, intrinsic signal imaging and 2-photon calcium imaging found strongest responses for the employed red and blue stimuli (Garg et al., 2019; Li et al., 2021; Liu et al., 2020; Tootell et al., 1988; Xiao et al., 2007). These so-called end-spectral biases were likely at least partially an effect of the respective stimulus presentation and color coordinate systems, insofar as their red and blue colors induced maximal cone contrasts in the L-M pathway – highest L-M excitation for their red stimuli, and highest L excitation for their blue stimuli (Li et al., 2021; Liu et al., 2020; Mollon, 2009; Valverde Salzmann et al., 2012).
 
-## Lower responses for short-wavelength stimuli
+### Lower responses for short-wavelength stimuli
 
 In our data and in a previous report (Peter et al., 2019), induced gamma power was not equal between equicontrast stimuli on the S-(L+M) axis: Blue stimuli showed no or very weak gamma-power increases. Similarly, we found that change-detection performance was worse and ERF amplitudes were smaller. This asymmetry on the S-(L+M) axis might be driven by underlying physiology: Compared to L- and M-cones, S-cones are sparser (DeMonasterio et al., 1981) and show slower light responses, higher noise levels, and higher activation thresholds (Baudin et al., 2019; Cole et al., 1993; Lee et al., 2009). Additionally, S-(L+M)-sensitive neurons are sparser than L-M-sensitive ones in the LGN (Derrington et al., 1984) and V1 (Li et al., 2021). Within V1, neurons sensitive to S-cone inputs reside in different cortical layers and respond later than other color-sensitive neurons (Cottaris and De Valois, 1998). Likely, S-cone-induced signals are comparatively weak within LGN and are amplified and transformed in V1 (De Valois et al., 2000; Mullen et al., 2008; Xiao, 2014).
 
@@ -138,17 +162,17 @@ Contrary to the unified pathway for L-M activation, stimuli high and low on the 
 
 The source localization to V1, the dependence on input drive (L-M contrast), and the size dependence (Peter et al., 2019) are features that gamma responses induced by L-M input share with gamma responses induced by luminance contrast. This points to common principles in the generation of gamma for both chromatic and achromatic stimuli. Yet, the fact that colored disks as compared to gratings often induced a second, higher-frequency gamma peak suggests differences in underlying circuits and/or dynamics.
 
-## A potential source of V1 gamma selectivity across color hues
+### A potential source of V1 gamma selectivity across color hues
 
 In sum, color-induced gamma responses in area V1 match LGN-to-V1 input strength in three measured aspects: (1) along the L-M axis, stimuli driving LGN to an equal degree induce gamma oscillations that do not differ measurably in strength across the population; (2) gamma oscillations are strongly diminished for S-cone-driving stimuli, which are encoded by smaller populations of LGN neurons and which provide weaker excitatory input into V1, compared to L-M-cone-driving stimuli; (3) the amplitude of the early, input-driven N70 component is correlated with later induced gamma power over stimuli. Previous reports of high color specificity of V1 gamma oscillations might therefore be explained by a positive relationship between the strength of feedforward input into V1 and the power of V1 gamma oscillations.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A sample size of 30 was chosen based on current standards in the MEG field. Thirty participants were recruited from the general public, 18 of them female. They were between 18 and 36 years old (average: 26 years). As participants were recruited via public advertisements, most of them had not participated in vision-science experiments before. They were screened to be free of metal implants, did not take medication during the study period except for contraceptives, had never been diagnosed with any neurological or psychological disorder, had normal or corrected-to-normal vision and did not show red-green color vision deficiencies. The screening criterion for red-green deficiencies was correct answer to all of a nine-plate subset of the 38-plate Ishihara test (Ishihara, 1979). A further five subjects were recruited but excluded due to equipment malfunctions or excessive movements (>5 mm) during the experiment. The study was approved by the ethics committee of the medical faculty of the Goethe University Frankfurt (Resolution E 36/18).
 
-## Paradigm
+### Paradigm
 
 Participants were seated in a dark, magnetically shielded, sound-dampened room. Stimuli were shown on a backprojection screen with a distance of 58 cm to their eyes using a Propixx projector (resolution: 960 × 520 px, refresh rate: 480 Hz), controlled with Psychtoolbox-3 (Kleiner et al., 2007). Eye position and pupil size were recorded using an infrared eye tracking system (EyeLink 1000). Before the experiment, participants were trained to minimize saccades and blinks during the baseline and trial periods.
 
@@ -156,23 +180,23 @@ The 540 total trials of the experiment were split into two blocks, with 240 colo
 
 A gray background and a dark-gray fixation spot was shown throughout the experiment. Each trial was initiated once the participant fixated the central fixation spot. After a baseline of 1.2 s, the stimulus was shown as a central 10 dva diameter disk with broadly antialiased, smoothed edges. After a per-trial randomly chosen period of 0.3–2 s (randomized, Cauchy distributed with x0 = 1.65 s, FWHM = 0.2 s), a to-be-detected local color change (a circular, Gaussian-shaped color step toward the background color, 3.7 dva diameter) was shown at a random position on the stimulus. Participants were instructed to speedily report the left–right position of the target relative to the fixation dot using a button press (left thumb to indicate left, right thumb to indicate right). The relative transparency of the target to the stimulus was QUEST staircased (Kleiner et al., 2007; Watson and Pelli, 1983) for each stimulus condition and participant to 85% correct responses. After a button press or after 1 s, the trial was terminated and, if the correct button had been pressed, a smiley was shown for 0.5 s. A random 5% of trials were target-free catch trials.
 
-## Stimuli
+### Stimuli
 
 Participants were shown equiluminant colors on an isoluminant background as well as a grating stimulus. To define equiluminance, the projector base-color spectral power distributions were measured using an Ocean Insight FLAME-T spectrometer and used to define per-color cone excitation values using human cone spectral sensitivities for 10 dva diameter stimuli (Stockman and Sharpe, 2000; Stockman et al., 1999). Then, cone excitation values of the neutral gray background and the stimuli themselves were used to define per-color coordinates in DKL color space, an opponent modulation space originally developed to describe responses of LGN neurons to color stimuli (Derrington et al., 1984; Westland et al., 2012). kLum, kL-M, and kS-L+M were chosen such that on-axis stimuli with unit pooled cone contrast gave unit coordinates in the three DKL axes (Brainard, 1996). The eight color stimuli were chosen from the DKL equiluminance plane to a common, gray background and were chosen to be distributed along an ellipse filling the projector color gamut with equal distances between the color coordinates along the ellipse. For the grating condition, a 1.5 cycle/dva antialiased square wave grating rotated 22.5° clockwise from vertical was used.
 
-## MEG recording
+### MEG recording
 
 Data were recorded using a CTF Systems 275 axial gradiometer MEG system, low-pass filtered (300 Hz) and digitized (1200 Hz). Initial head position was set to minimize distance between the occipital pole and posterior MEG gradiometers. Head position was monitored continuously throughout the experiment, and experiment sessions were aborted and excluded from analysis when participants moved their head more than 5 mm from its initial position. Flexible head fixation using memory foam cushions and medical tape was used throughout the experiment.
 
-## Data analysis
+### Data analysis
 
 Data were analyzed using custom Matlab and R code and the FieldTrip toolbox (Oostenveld et al., 2011). Line noise was removed using DFT filters at 50 Hz and its higher harmonics. The recording was cut into trials from -1 s to 1.3 s relative to stimulus onset. Trials with stimulus changes before 1.3 s after stimulus onset, trials with missing/early responses, and catch trials were removed. Blink, muscle, and SQUID-jump artifacts were detected using a semiautomated artifact detection process. For further analysis, trials were segmented into epochs as detailed below, and analyses were only run for epochs devoid of artifacts. The described trial removal and artifact epoch rejection procedures rejected 19% of all trials.
 
-## Source localization
+### Source localization
 
 Analyses localizing power at the participant-specific gamma peak used dynamic imaging of coherent sources beamforming (Gross et al., 2001). For other analyses, linearly constrained minimum variance (LCMV) beamforming (Van Veen et al., 1997) was used to generate virtual dipole timecourses for all analyzed dipoles. For both beamformers, the covariance matrix was not regularized (λ = 0%), and dipoles were placed at all vertices of both hemispheres of the 32 k HCP-MMP1.0 atlas (Glasser et al., 2016a). The atlas was registered to subject-specific T1- and T2-weighted MRI scans (T1: 1 mm3 MPRAGE with TR = 2530 ms, TE = 2.27 ms; T2: 1 mm3 TSE with TR = 1500 ms and TE = 356 ms, acquired on a 3T Siemens Magnetom Prisma) using Freesurfer (Fischl, 2012) and HCP Workbench (Glasser et al., 2016b). Area-specific analyses (e.g., analyses focusing on area V1) averaged results over all dipoles within the specific area of the atlas (1618 dipoles within V1). For the calculation of full spectra, to reduce computational demand, a reduced MMP1.0 atlas subsampled to 6.25% of all 64,000 dipole positions was used, which corresponds to 106 dipoles in area V1. Virtual dipole timecourses were computed by multiplying the sensor-level data with the LCMV filters.
 
-## Behavioral, ERF, and spectral analysis
+### Behavioral, ERF, and spectral analysis
 
 Per-stimulus change-detection performance was defined as the target-change color contrast the per-stimulus staircase had converged to, averaged over the last 10 presentations of each stimulus.
 
@@ -184,7 +208,7 @@ To determine per-stimulus, per-participant gamma-peak frequencies, the trial-ave
 
 To correlate per-color average ERFs and induced spectra with each other and with behavioral performance, we averaged per-stimulus V1 ERFs and per-stimulus V1 change spectra over trials within each participant. Then, for each timepoint/frequency bin, the per-stimulus value was correlated to the per-stimulus change-detection performance. The results were corrected for multiple comparisons over timepoints/frequency bins using tmax multiple-comparison correction (Blair et al., 1994).
 
-## Statistical analysis
+### Statistical analysis
 
 Reported tests were two tailed, alpha was set to α = 0.05. To calculate evidence toward the null hypothesis for pairwise comparisons and Spearman’s rank correlations, we computed Bayes factors of H0 over H1 using a prior scale of one (Rouder et al., 2009).
 

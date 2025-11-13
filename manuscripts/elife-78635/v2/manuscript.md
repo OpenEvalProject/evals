@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Montréal Neurological Institute, McGill University Montreal Canada
-2. https://ror.org/05c22rx21 Mila - Quebec Artificial Intelligence Institute Montreal Canada
-3. https://ror.org/04mhzgx49 School of Neurobiology, Biochemistry and Biophysics, Tel Aviv University Tel Aviv Israel
-4. https://ror.org/008xxew50 Center for Neurogenomics and Cognitive Research, Vrije Universiteit Amsterdam Amsterdam Netherlands
-5. https://ror.org/01kg8sb98 Psychological and Brain Sciences, Indiana University Bloomington United States
+1. Montréal Neurological Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Mila - Quebec Artificial Intelligence Institute Montreal Canada ([ROR:05c22rx21](https://ror.org/05c22rx21))
+3. School of Neurobiology, Biochemistry and Biophysics, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
+4. Center for Neurogenomics and Cognitive Research, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+5. Psychological and Brain Sciences, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
 
 † Corresponding author
 
@@ -42,17 +42,109 @@ Taking advantage of the harmonized imaging and reconstruction protocols, we quan
 
 The MaMI data set consists of high-resolution ex vivo diffusion and structural (T1- and T2-weighted) MRI scans of 124 species. Since there is no species-specific template, all connectomes were reconstructed using a uniformly applied 200-node parcellation. Having equally sized networks facilitates graph comparison but also implies a lack of direct correspondence between nodes across species. However, because our focus is on the statistics of connectomes’ topology, this does not impact our analyses. As the size of the network is kept constant across all species, voxel size is normalized to brain volume. Figure 1 shows the distribution of connectomes across 10 mammalian orders (out of the 12 present in the data set). We focus on the 6 orders that contain 5 or more distinct species (within the Laurasiatheria and Euarchontoglires superorders); these include Chiroptera, Rodentia, Cetartiodactyla, Carnivora, Perissodactyla, and Primates, resulting in a total of 111 different animal species and 203 brain scans. A complete list of the animal species included in the data set is provided in Figure 1—figure supplement 1.
 
-## Connectome-based inter-species distances
+![Figure 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig1-v2.jpg)
+
+**Figure 1.:** The MaMI data set encompasses high-resolution ex vivo structural and diffusion MRI scans of 124 animal species spanning 12 morphologically and phylogenetically defined taxonomic orders: Cetartiodactyla, Carnivora, Chiroptera, Eulipotyphla, Hyracoidea, Lagomorpha, Marsupialia, Perissodactyla, Primates, Rodentia, Scandentia, and Xenarthra. (a) Hierarchical relationships across 10 (out of the 12 included in the data set) morphological and phylogenetic taxonomic orders. Numbers outside the parenthesis correspond to the number of unique species within each order, and numbers inside the parenthesis correspond to the number of samples (including replicas). (b) Connectivity matrices for five randomly chosen sample species within each of the six orders included in the analyses (i.e. Cetartiodactyla, Carnivora, Chiroptera, Perissodactyla, Primates, and Rodentia). Only orders with at least five different species were included for the analyses. Nodes are organized according to their community affiliation obtained from consensus clustering applied on the connectivity matrix (see ‘Materials and methods’). Communities in (b) correspond to the partition for which the resolution parameter $\gamma=1.0$ (Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Modularity as a function of resolution the resolution parameter $\gamma$, which controls for the size of the identified modules (see ‘Multi-resolution community detection’). (b) Modularity distributions for each taxonomic order ($\gamma=1$).
+
+### Connectome-based inter-species distances
 
 Similarity between species’ network architectures is estimated using two network-based distance metrics: spectral distance, based on the eigenspectrum of the normalized Laplacian of the connectivity matrix (see Figure 2—figure supplement 1; de Lange et al., 2014), and topological distance, based on a combination of multiscale graph features of the binary and weighted connectivity matrices (Figure 2—figure supplements 2 and 3 show the distribution of individual local and global graph features, respectively; Rubinov and Sporns, 2010). For completeness, Figure 2—figure supplements 4 and 5 show the cumulative distribution of binary and weighted local features, respectively, for individual species. Both methods measure how similar the architectures of two connectomes are. To identify brain connectivity differences across species, we need to be able to analyse data in a shared frame of reference. The normalized Laplacian eigenspectrum and the graph features of the connectivity matrix allow us to translate connectomes into a common feature space in which they are comparable, despite the fact that they come from different species, and that the nodes do not correspond to one another (Mars et al., 2021). To account for the fact that some of the species have more than one scan, we randomly select one sample per species and estimate (spectral and topological) inter-species distances. We repeat this procedure 10,000 times and report the average across iterations.
 
-Figure 2a shows the spectral distances between species’ connectomes. In general, we observe smaller distances among members of the same order (outlined in yellow). Figure 2b confirms this intuition by showing that spectral distances within orders (i.e. values along the diagonal) tend to be smaller than distances between orders (i.e. values off the diagonal). Figure 2c shows the distributions of intra- and inter-order distances. The mean/median intra-order distance is significantly smaller than the mean/median inter-order distance (two-sample Welch’s t-test: mean intra- and inter-order distances are 0.43 and 0.55, respectively, p<10−4 two-tailed, and Cohen’s d effect size = 0.67; two-sample Mann–Whitney U-test: median intra- and inter-order distances are 0.44 and 0.55, respectively, p<10−4 two-tailed, and common-language effect size = 68%; Figure 2c). We find comparable results when estimating species similarity using topological distance (two-sample Welch’s t-test: mean intra- and inter-order distances are 0.41 and 0.53, respectively, p<10−4 two-tailed, and Cohen’s d effect size = 0.59; two-sample Mann–Whitney U-test: median intra- and inter-order distances are 0.41 and 0.53, respectively, p<10−4 two-tailed, and common-language effect size = 66%; Figure 2d–f). Figure 2—figure supplement 6 shows the same results as in Figure 2, but using all samples including replicas (i.e. without random resampling). Altogether, results suggest that species with similar genetics, morphology, and behaviour tend to have similar connectome architecture. In other words, variations in connectome architecture reflect phylogeny.
+Figure 2a shows the spectral distances between species’ connectomes. In general, we observe smaller distances among members of the same order (outlined in yellow). Figure 2b confirms this intuition by showing that spectral distances within orders (i.e. values along the diagonal) tend to be smaller than distances between orders (i.e. values off the diagonal). Figure 2c shows the distributions of intra- and inter-order distances. The mean/median intra-order distance is significantly smaller than the mean/median inter-order distance (two-sample Welch’s t-test: mean intra- and inter-order distances are 0.43 and 0.55, respectively, $p<10^{−4}$ two-tailed, and Cohen’s $d$ effect size = 0.67; two-sample Mann–Whitney U-test: median intra- and inter-order distances are 0.44 and 0.55, respectively, $p<10^{−4}$ two-tailed, and common-language effect size = 68%; Figure 2c). We find comparable results when estimating species similarity using topological distance (two-sample Welch’s t-test: mean intra- and inter-order distances are 0.41 and 0.53, respectively, $p<10^{−4}$ two-tailed, and Cohen’s $d$ effect size = 0.59; two-sample Mann–Whitney U-test: median intra- and inter-order distances are 0.41 and 0.53, respectively, $p<10^{−4}$ two-tailed, and common-language effect size = 66%; Figure 2d–f). Figure 2—figure supplement 6 shows the same results as in Figure 2, but using all samples including replicas (i.e. without random resampling). Altogether, results suggest that species with similar genetics, morphology, and behaviour tend to have similar connectome architecture. In other words, variations in connectome architecture reflect phylogeny.
 
-## Architectural features differentiate species
+![Figure 2.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-v2.jpg)
+
+**Figure 2.:** (a) Spectral distance between species-specific connectomes. Lower distances indicate greater similarity. Yellow outlines indicate morphologically and genetically defined orders. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. Lower distances indicate greater similarity. Yellow outlines indicate morphologically and genetically defined orders. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen’s $d$ estimator corresponding to a two-sample Welch’s t-test ($p<10^{−4}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann–Whitney U-test are used.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Spectral plots were obtained by convolving the eigenspectrum of the normalized Laplacian matrix of the graph with a Gaussian kernel. The eigenvalues of the normalized Laplacian of the connectivity matrix, and their multiplicities, capture distinct topological properties of the graph (Banerjee and Jost, 2009; Banerjee and Jost, 2008; Newman, 2001; Grone et al., 1990; Grone and Merris, 1994; Das, 2004), thus acting like a spectroscopy of its underlying topology. More importantly, it has the advantage of situating graphs of different sizes and with non-homologous node correspondence in a common frame of reference in which they can be compared.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Distributions of average local features are shown for each order. Features are normalized relative to a set of 1000 randomly rewired graphs that preserve the degree sequence and distribution of the nodes (Maslov and Sneppen, 2002). Features are computed for both the binary (left) and weighted (right) connectomes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Distributions of global features are shown for each order. Features are normalized relative to a set of 1000 randomly rewired graphs that preserve the degree sequence and distribution of the nodes (Maslov and Sneppen, 2002). Features are computed for both the binary (left) and weighted (right) connectomes.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The cumulative distributions of individual features are shown for each individual sample within each order.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** The cumulative distributions of individual features are shown for each individual sample within each order.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** All samples, including replicas, were used to estimate inter-species spectral and topological distance. (a) Spectral distance between species-specific connectomes. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen’s $d$ estimator corresponding to a two-sample Welch’s t-test ($p<10^{−4}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann-Whitney U-test are used.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** Results were replicated using a 100-node parcellation. (a) Spectral distance between species-specific connectomes. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen’s $d$ estimator corresponding to a two-sample Welch’s t-test ($p<10^{−4}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann-Whitney U-test are used.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** Results were replicated using a 300-node parcellation. (a) Spectral distance between species-specific connectomes. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen’s $d$ estimator corresponding to a two-sample Welch’s t-test ($p<10^{−4}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann–Whitney U-test are used.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** To allow comparison with previous reports, Gaussian kde smoothing is applied to the Laplacian eigenspectrum of individual species, before estimating inter-species distances. Spectral distance with (a) and without (b) kernel density estimation smoothing. Left: inter-species spectral distance. Centre: median inter-species spectral distance. Right: intra- vs. inter-order spectral distance distributions. Effect sizes correspond to Cohen’s $d$ estimator from a two-sample Welch’s t-test ($p<10^{−4}$).
+
+### Architectural features differentiate species
 
 Next we consider which network features contribute to the differentiation (Figure 2—figure supplements 2 and 3 show the distributions of local and global graph features, respectively). To address this question, we recompute inter-species topological distances using different sets of graph features (Figure 3). We find that the difference between intra- and inter-order topological distances tends to be larger when only local (node-level) features are included in the estimation of the topological distance (i.e. degree, clustering coefficient, betweenness, and closeness; Figure 3b and e) compared to when only global features are considered (i.e. characteristic path length, transitivity, and assortativity; Figure 3c and f). This is the case for both the binary and weighted versions of these features (top and bottom rows in Figure 3, respectively). Figure 3—figure supplement 1 shows the same results as in Figure 3, but using all samples including replicas (i.e. without random resampling). These results suggest that differentiation of orders is better explained by differences in local network topology; conversely, global network topology appears to be conserved across species. An illustration of this principle is depicted in Figure 3—figure supplement 2 showing that the relative local connectivity of the anterior and the posterior ends of the cortex changes across taxonomic orders (Barrett et al., 2020; Krubitzer and Kaas, 2005; Krubitzer and Kahn, 2003).
 
-A similar conclusion can be drawn when the eigenvalue distributions of the (normalized) Laplacian of the connectivity matrices are compared across species (Figure 2—figure supplement 1). In spectral graph theory, the presence of eigenvalues with high multiplicities or eigenvalues symmetric around λi=1 provides information about the network’s local organization that results from the recursive manipulation of connectivity motifs (Banerjee and Jost, 2008; Banerjee and Jost, 2009; de Lange et al., 2014). For instance, node duplication (i.e. the presence of nodes with the same connectivity profile) results in an increase of λi=1. The duplication of edge motifs (i.e. the multiple presence of pairs of connected nodes with the same connectivity profile), on the other hand, produces eigenvalues at equal distances to λi=1. Visually inspecting their Laplacian eigenspectra, one can notice that, across taxonomic orders, species tend to differ mostly around the interval 0.5≤λi≤1.5, both in terms of the multiplicity of λi=1, as well as in the width of the bell-shaped curve around λi=1. While differences in the multiplicity of λi=1 indicate differential amounts of duplicated node motifs present in the network, differences in the value and multiplicity of eigenvalues around λi=1 indicate the presence of distinct edge motifs with disparate numbers of duplications in the network. Therefore, differences across taxonomic orders are most likely due to the presence of different local connectivity fingerprints in the connectivity matrix (Figure 2—figure supplement 1; de Lange et al., 2014; Mars et al., 2018a; Mars et al., 2018b). Determining which are specifically these node and edge motifs cannot be done by simply examining the Laplacian eigenspectra, and is out of the scope of this study. Additional evidence supporting the idea that spectral distance captures mostly differences in local network topology is the fact that the correlation between spectral and topological distance is maximum when only local features are included in the estimation of the topological distance (Figure 3—figure supplement 3).
+![Figure 3.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-v2.jpg)
+
+**Figure 3.:** Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions, please see ‘Materials and methods.’ Effect sizes correspond to Cohen’s $d$ estimator from a two-sample Welch’s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann–Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{−4}$). The same conclusions can be drawn after controlling for network density (Figure 3—figure supplement 6).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** All samples, including replicas, were used to estimate inter-species topological distance. Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. Effect sizes correspond to Cohen’s $d$ estimator from a two-sample Welch’s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann–Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{−4}$).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Distribution across taxonomic orders of the difference in average local network topology between the 10% most anterior and the 10% most posterior brain regions (i.e. the anterior–posterior difference). Local features considered include: binary (average) degree, clustering, betweenness centrality and closeness. (b) Top 5% strongest connections of the 10% most anterior (red) and the 10% most posterior (blue) brain regions for exemplar species within each taxonomic order. Separate one-way ANOVAs were performed to compare the effect of taxonomic order on anterior–posterior differences in local: (i) degree: $F_{5}=20.29$, $P=2.57\times10^{-16}$, (ii) clustering: $F_{5}=15.88$, $P=3.88\times10^{-13}$, (iii) betweenness: $F_{5}=17.97$, $P=1.14\times10^{-14}$; and (iv) closeness: $F_{5}=13.54$, $P=2.36\times10^{-11}$.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Pearson’s correlation between inter-species distances computed using topological distance (abscissa) and spectral distance (ordinate). Correlations are shown for (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Distribution of network density is shown for each taxonomic order. Connection density is estimated as the ration of existent connections to the total number of possible connections.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Network density is regressed out from (a) binary local, (b) weighted local, (c) binary global and (d) weighted global topological features (see ‘Materials and methods’).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Network density is regressed out from topological features (see ‘Materials and methods’), and topological distance is computed using multiple local and global connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions please see ‘Materials and methods.’ Effect sizes correspond to Cohen’s $d$ estimator from a two-sample Welch’s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann–Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{−4}$).
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Multidimensional scaling (MDS) with cosine distance is applied to (a) spectral and (b–j) topological features to generate a low-dimensional (2D) projection of the data set. MDS was implemented using the MDS function in the manifold module of the Scikit-learn Python package (Pedregosa et al., 2011). Details of the implementation can be found in the publicly available code repository. Specifically, MDS was applied to (a) the Laplacian eigenspectra, (b) all (binary, weighted, local, and global), (c) all local (binary and weighted), (d) all global (binary and weighted), (e) all binary (local and global), (f) only binary local, (g) only binary global, (h) all weighted (local and global), (i) only weighted local, and (j) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. Each dot in the scatter plots represents a sample from a different order. Visual inspection of the 2D projections shows that, generally speaking, local features tend to provide a better class separation compared to global features.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** Hierarchical clustering was applied to the (a) spectral and (b–j) topological distance matrices to assess the extent to which data-driven clustering of mammalian species recapitulates traditional taxonomies based on morphology and genetics. Hierarchical clustering was implemented using the hierarchy.linkage function in the cluster module of the Scipy Python package (Virtanen et al., 2020). Details of the implementation can be found in the publicly available code repository. Specifically, hierarchical clustering was applied to the inter-species distance matrix estimated using (a) the Laplacian eigenspectra, (b) all (binary, weighted, local, and global), (c) all local (binary and weighted), (d) all global (binary and weighted), (e) all binary (local and global), (f) only binary local, (g) only binary global, (h) all weighted (local and global), (i) only weighted local, and (j) only weighted global topological features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. Each heat map represents an inter-species distance matrix. Coloured rectangles represent the order each sample belongs to. Visual inspection of the results shows that, generally speaking, local features tend to provide a clustering solution that resembles more traditional taxonomies.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp9-v2.jpg)
+
+**Figure 3—figure supplement 9.:** Results were replicated using a 100-node parcellation. Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions, please see ‘Materials and methods.’ Effect sizes correspond to Cohen’s $d$ estimator from a two-sample Welch’s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann–Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{−4}$).
+
+![Figure 3—figure supplement 10.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp10-v2.jpg)
+
+**Figure 3—figure supplement 10.:** Results were replicated using a 300-node parcellation. Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions, please see ‘Materials and methods.’ Effect sizes correspond to Cohen’s $d$ estimator from a two-sample Welch’s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann–Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{−4}$).
+
+A similar conclusion can be drawn when the eigenvalue distributions of the (normalized) Laplacian of the connectivity matrices are compared across species (Figure 2—figure supplement 1). In spectral graph theory, the presence of eigenvalues with high multiplicities or eigenvalues symmetric around $\lambda_{i}=1$ provides information about the network’s local organization that results from the recursive manipulation of connectivity motifs (Banerjee and Jost, 2008; Banerjee and Jost, 2009; de Lange et al., 2014). For instance, node duplication (i.e. the presence of nodes with the same connectivity profile) results in an increase of $\lambda_{i}=1$. The duplication of edge motifs (i.e. the multiple presence of pairs of connected nodes with the same connectivity profile), on the other hand, produces eigenvalues at equal distances to $\lambda_{i}=1$. Visually inspecting their Laplacian eigenspectra, one can notice that, across taxonomic orders, species tend to differ mostly around the interval $0.5\leq\lambda_{i}\leq1.5$, both in terms of the multiplicity of $\lambda_{i}=1$, as well as in the width of the bell-shaped curve around $\lambda_{i}=1$. While differences in the multiplicity of $\lambda_{i}=1$ indicate differential amounts of duplicated node motifs present in the network, differences in the value and multiplicity of eigenvalues around $\lambda_{i}=1$ indicate the presence of distinct edge motifs with disparate numbers of duplications in the network. Therefore, differences across taxonomic orders are most likely due to the presence of different local connectivity fingerprints in the connectivity matrix (Figure 2—figure supplement 1; de Lange et al., 2014; Mars et al., 2018a; Mars et al., 2018b). Determining which are specifically these node and edge motifs cannot be done by simply examining the Laplacian eigenspectra, and is out of the scope of this study. Additional evidence supporting the idea that spectral distance captures mostly differences in local network topology is the fact that the correlation between spectral and topological distance is maximum when only local features are included in the estimation of the topological distance (Figure 3—figure supplement 3).
 
 We also observe that that the difference between intra- and inter-order topological distances is greater for binary than for weighted features (Figure 3a–c and d–f, respectively), independently of being local or global. This suggests that the strength of the connections is less important than the binary architecture of the connectivity matrix.
 
@@ -60,7 +152,7 @@ Some of the features used for the estimation of the topological distance depend 
 
 Altogether, our results show that the subset of features that best differentiate species across taxonomic orders are the binary local topological features. We perform a set of complementary analyses to assess which subset of features produces the best partition of animal species relative to traditional taxonomies. To do so, we (1) project the data on a 2D plane using multidimensional scaling (Figure 3—figure supplement 7) and (2) apply hierarchical clustering to inter-species distance matrices (Figure 3—figure supplement 8). Visual inspection of these results suggests that, consistent with our previous results (Figure 3), local features compared to global features (ignoring panel a, centre vs. right column, respectively, in Figure 3—figure supplements 7 and 8), as well as binary features compared to weighted features (ignoring panel a, centre vs. bottom row, respectively, in Figure 3—figure supplements 7 and 8), yield species partitions that more closely reflect established phylogenetic relationships, further supporting the idea that connectome organization recapitulates traditional taxonomic relationships that are based on morphology and genetics.
 
-## Conservation of small-world architecture
+### Conservation of small-world architecture
 
 Anatomical brain networks are thought to simultaneously reconcile the opposing demands of functional integration and segregation by combining the presence of functionally specialized clusters with short polysynaptic communication pathways (Tononi et al., 1994; Sporns, 2013; Sporns et al., 2005; Bassett and Bullmore, 2006). Such architecture is often referred to as small-world and is observed in a wide variety of naturally occurring and engineered networks (Watts and Strogatz, 1998). Here, we explore whether these principles of segregation and integration in global connectome organization are consistent across phylogeny. To do so, we estimate for each species the ratio of clustering coefficient to characteristic path length, normalized relative to a set of randomly rewired graphs that preserve the degree sequence of the nodes (Humphries and Gurney, 2008; Maslov and Sneppen, 2002; Rubinov and Sporns, 2010; Figure 4). Consistent with previous reports in individual species’ connectomes (Hilgetag and Kaiser, 2004; Sporns and Zwi, 2004; Bassett and Bullmore, 2006), we find that all connectomes display high and diverse levels of small-worldness, suggesting that simultaneously highly segregated and integrated networks is a global trait conserved across mammalian brains.
 
@@ -68,9 +160,17 @@ Anatomical brain networks are thought to simultaneously reconcile the opposing d
 
 **Figure 4.:** Clustering coefficient vs. characteristic path length normalized relative to a set of 1000 randomly rewired graphs that preserve the degree sequence of the nodes (Maslov and Sneppen, 2002). For definitions of each graph measure, see ‘Materials and methods.’ Each data point represents a different animal species. Data points above the identity line are said to have small-world architecture. The inset on the right bottom corner is a zoom on the abscissa; dots correspond to the median and error bars correspond to the standard deviation across species within the same taxonomic order.
 
-## Conservation of edge classes across species
+### Conservation of edge classes across species
 
 The topological and spatial arrangement of connections in connectomes is thought to shape the segregation and integration of information and, ultimately, their computational capacity (Faskowitz et al., 2021). To investigate inter-species differences in the topological and spatial distribution of connections, we stratify edges into different classes in four commonly studied partitions. Partitions include inter- and intra-modular connections (Figure 5a), inter- and intra-hemispheric connections (Figure 5b), connection length distribution (short-, medium-, and long-range connections; Figure 5c and Figure 5—figure supplement 1), and rich-club (rich-club, feeder and peripheral connections; Figure 5d). Overall, we find that, along the four partitions, the relative proportions of each connection class are conserved across taxonomic orders, despite differences in connection density. Collectively, this is consistent with the results from the previous sections showing that global architectural features of connectomes are consistent across phylogeny.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig5-v2.jpg)
+
+**Figure 5.:** Mean proportion of (a) inter- and intra-modular connections, (b) inter- and intra-hemispheric connections, (c) short- (length ≤ 25%), medium- (25% < length ≤ 75%) and long-range connections (length ≥ 75%), and (d) rich-club (connecting two rich-club nodes), feeder (connecting one rich-club and one non-rich-club node) and peripheral (connecting two non-rich-club nodes) connections. Error bars indicate 95% confidence intervals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The connection length distributions of individual species for each taxonomic order.
 
 ## Discussion
 
@@ -92,96 +192,142 @@ By encoding connectomes into a common frame of reference, we quantitatively asse
 
 ## Materials and methods
 
-## Brain samples
+### Brain samples
 
 The MaMI database includes a total of 225 ex vivo diffusion and T2- and T1-weighted brain scans of 125 different animal species (Figure 1—figure supplement 1). No animals were deliberately euthanized for this study. All brains were collected based on incidental death of animals in zoos in Israel or natural death collected abroad, and with the permission of the national park authority (approval no. 2012/38645) or its equivalent in the relevant countries. All scans were performed on excised and fixated tissue. Animals’ brains were extracted within 24 hr of death and placed in formaldehyde (10%) for a fixation period of a few days to a few weeks (depending on the brain size). Approximately 24 hr before the MRI scanning session, the brains were placed in phosphate-buffered saline for rehydration. Given the limited size of the bore, small brains were scanned using a 7-T 30/70 BioSpec Avance Bruker system, whereas larger brains were scanned using a 3-T Siemens Prisma system. To minimize image artefacts caused by magnet susceptibility effects, the brains were immersed in fluorinated oil (Flourinert, 3M) inside a plastic bag during the MRI scanning session.
 
-## MRI acquisition
+### MRI acquisition
 
 A unified MRI protocol was implemented for all species. The protocol included high-resolution anatomical scans (T2- or T1-weighted MRI), which were used as an anatomical reference, and diffusion MR scans. Diffusion MRI data were acquired using high angular resolution diffusion imaging (HARDI), which consists of a series of diffusion-weighted, spin-echo, echo-planar-imaging images covering the whole brain, scanned in either 60 (in the 7-T scanner) or 64 gradient directions (in the 3-T scanner) with an additional three non-diffusion-weighted images (B0). The b value was 1000 smm-2 in all scans. In the 7-T scans, TR was longer than 12,000 ms (depending on the number of slices), TE was 20 ms, and Δ/δ = 10/4.5 ms. In the 3-T scans, TR was 3500 ms, with a TE of 47 ms and Δ/δ = 17/23 ms.
 
 To linearly scale according to brain size the two-dimensional image pixel resolution (per slice), the size of the matrix remained constant across all species (128 × 96). Due to differences in brain shape, the number of slices varied between 46 and 68. Likewise, the number of scan repetitions and the acquisition time were different for each species, depending on brain size and desired signal-to-noise ratio (SNR) levels. To keep SNR levels above 20, an acquisition time of 48 hr was used for small brains (∼0.15 ml) and 25 min for large brains (>1000 ml). SNR was defined as the ratio of mean signal strength to the standard deviation of the noise (an area in the non-brain part of the image). Full details are provided in Assaf et al., 2020.
 
-## Connectome reconstruction
+### Connectome reconstruction
 
 The ExploreDTI software was used for diffusion analysis and tractography (Leemans et al., 2009). The following steps were used to reconstruct fibre tracts:
 
 The end result of the tractography analysis is a list of streamlines starting and ending between pairs of voxels. Recent studies have shown that fibre tracking tends to present a bias where the vast majority of end points reside in the white matter (Tournier et al., 2004). To avoid this, the CSD tracking implemented here ensures that approximately 90% of the end points reside in the cortical and subcortical grey matter.
 
-## Network generation and analysis
+### Network generation and analysis
 
 Before the reconstruction of the networks, certain fibre tracts were removed from the final list of tracts. These include external projection fibres that pass through the cerebral peduncle, as well as cerebellar connections. Inner-hemispheric projections, such as the thalamic radiation, were included in the analysis. Brains were parcellated into 200 nodes using a k-means clustering algorithm. All the fibre end-point positions were used as input, and cluster assignment was done based on the similarity in connectivity profile between pairs of end points. Therefore, vertices with similar connectivity profile have a higher chance of grouping together. The clustering was performed twice, once for each hemisphere. Nodes were defined as the mass centre of the resulting 200 clusters. Connectivity matrices were generated by indexing the number of streamlines between any two nodes (Assaf et al., 2020). The resulting connectivity matrices are hence sparse and weighted adjacency matrices. For the analysis of the Laplacian eigenspectrum, connectivity matrices were binarized by setting connectivity values to 1 if the connection exists and 0 otherwise.
 
 Even though the sizes of the regions differ across species, we opted for a uniform parcellation scheme (i.e. 200 nodes) for several reasons. First, to our knowledge, there is no MRI parcellation for the brains of the majority of the species studied here. Second, how brain regions correspond to one another across species (i.e. homologues) is still not completely understood for many regions and for many species. Third, comparing networks of different sizes introduces numerous analytical biases because most network measures trivially depend on size, making the comparison challenging. We therefore opted to implement a uniform parcellation scheme across species, allowing us to translate connectomes into a common reference feature space in which they can be compared (see ‘Spectral distance’ and ‘Topological distance’ sections). Note that this approach does not take into account species-specific regional delineations, nor does it capture homologies between nodes across species, which are still not completely understood. To ensure that the results are not idiosyncratic to the choice of parcellation and parcellation scale, we replicated all results using a lower resolution (100 node; Figure 2—figure supplement 7 and Figure 3—figure supplement 9) and higher resolution (300 node; Figure 2—figure supplement 8 and Figure 3—figure supplement 10) parcellation.
 
-## Controlling for the scanning resolution and acquisition parameters
+### Controlling for the scanning resolution and acquisition parameters
 
 As the size of the matrix was kept constant across species (i.e. 200 nodes), voxel dimensions were linearly scaled with brain volume, thus resulting in different scanning resolutions across the samples. To verify that this was a reasonable assumption, several tests were performed: (1) the diffusion-based connectome of the mouse was previously compared against one derived from tract-tracing (see Assaf et al., 2020 for details), obtaining a strong correlation between both networks. (2) Results on the connectivity conservation principle presented in Assaf et al., 2020 were invariant to different scanning and parcellation parameters across nine different species. (3) The diffusion-weighted imaging method was able to reconstruct specific ground truth fibre systems across brains, and these fibre bundles scaled in size with brain volume.
 
-## Spectral distance
+### Spectral distance
 
-To estimate similarities between species’ connectome organization, we computed the Laplacian eigenspectrum of each graph. The Laplacian eigenspectrum acts like a spectroscopy of the graph and summarizes distinct aspects of the underlying topology (Banerjee and Jost, 2009; Banerjee and Jost, 2008; Newman, 2001; Grone et al., 1990; Grone and Merris, 1994; Das, 2004). We considered the normalized Laplacian matrix L for undirected graphs with binary adjacency matrix A defined as L=I-D-1⁢A, where D is a diagonal matrix with D⁢(i,i)= deg i, and deg i is the binary degree of vertex i.L(i,j)={1ifi=j−1degiifiandjareconnected0otherwise
+To estimate similarities between species’ connectome organization, we computed the Laplacian eigenspectrum of each graph. The Laplacian eigenspectrum acts like a spectroscopy of the graph and summarizes distinct aspects of the underlying topology (Banerjee and Jost, 2009; Banerjee and Jost, 2008; Newman, 2001; Grone et al., 1990; Grone and Merris, 1994; Das, 2004). We considered the normalized Laplacian matrix $L$ for undirected graphs with binary adjacency matrix $A$ defined as $L=I-D^{-1}⁢A$, where $D$ is a diagonal matrix with $D⁢(i,i)=$ deg $i$, and deg $i$ is the binary degree of vertex $i$.
 
-with i and j representing two vertices of the graph. The Laplacian spectrum is then given by the set of all the eigenvalues of L. Importantly, the eigenspectrum of the normalized Laplacian has the advantage that all eigenvalues are in the range [0,2] (Chung, 1996), facilitating comparison across species. Furthermore, the normalized Laplacian is unitarily equivalent to the symmetric normalized Laplacian (Chung, 1996), that is, Ls⁢y⁢m⁢m=I-D-12⁢A⁢D12, thus the eigenvalues of both Laplacians are real. The spectral distance between every pair of animal species was then estimated as 1 minus the cosine similarity of their Laplacian eigenvalue distributions, where eigenvalue distributions were assumed to be vectors in a high-dimensional space.
+$$
+L(i,j)={1ifi=j−\frac{1}{degi}ifiandjareconnected0otherwise
+$$
 
-To allow comparison of our results with previous reports (de Lange et al., 2014), in addition to comparing species using their connectome’s Laplacian eigenspectra straightaway, we smoothed the eigenvalue distribution (i.e. λ1, λ2, …, λn) by convolving eigenvalue frequencies with a Gaussian kernel. The new estimated density is given byΓ(x)=∑i=1n12πσ2exp(−|x−λi|22σ2)
+with $i$ and $j$ representing two vertices of the graph. The Laplacian spectrum is then given by the set of all the eigenvalues of $L$. Importantly, the eigenspectrum of the normalized Laplacian has the advantage that all eigenvalues are in the range $[0,2]$ (Chung, 1996), facilitating comparison across species. Furthermore, the normalized Laplacian is unitarily equivalent to the symmetric normalized Laplacian (Chung, 1996), that is, $L_{s⁢y⁢m⁢m}=I-D^{-\frac{1}{2}}⁢A⁢D^{\frac{1}{2}}$, thus the eigenvalues of both Laplacians are real. The spectral distance between every pair of animal species was then estimated as 1 minus the cosine similarity of their Laplacian eigenvalue distributions, where eigenvalue distributions were assumed to be vectors in a high-dimensional space.
 
-with n being the number of eigenvalues in the approximated distribution, and σ being a smoothing factor of 0.015. We used a step of 0.001, which resulted in a total of n=2000 points. The approximated distribution was normalized such that area under the curve is 1. For the smoothing, we used the KernelDensity function in the neighbors module of the Scikit-learn Python package (Pedregosa et al., 2011). Details of the implementation can be found in the publicly available code repository. As with the Laplacian eigenspectrum, the spectral distance between every pair of animal species was estimated as 1 minus the cosine similarity of their smoothed (normalized) Laplacian eigenvalue distributions. Results of this supplementary analysis can be found in Figure 2—figure supplement 9.
+To allow comparison of our results with previous reports (de Lange et al., 2014), in addition to comparing species using their connectome’s Laplacian eigenspectra straightaway, we smoothed the eigenvalue distribution (i.e. $\lambda_{1}$, $\lambda_{2}$, …, $\lambda_{n}$) by convolving eigenvalue frequencies with a Gaussian kernel. The new estimated density is given by
 
-## Topological distance
+$$
+Γ(x)=\sumi=1n\frac{1}{\sqrt{2\pi\sigma^{2}}}exp(−\frac{|x−\lambda_{i}|^{2}}{2\sigma^{2}})
+$$
+
+with $n$ being the number of eigenvalues in the approximated distribution, and $\sigma$ being a smoothing factor of 0.015. We used a step of 0.001, which resulted in a total of $n=2000$ points. The approximated distribution was normalized such that area under the curve is 1. For the smoothing, we used the KernelDensity function in the neighbors module of the Scikit-learn Python package (Pedregosa et al., 2011). Details of the implementation can be found in the publicly available code repository. As with the Laplacian eigenspectrum, the spectral distance between every pair of animal species was estimated as 1 minus the cosine similarity of their smoothed (normalized) Laplacian eigenvalue distributions. Results of this supplementary analysis can be found in Figure 2—figure supplement 9.
+
+### Topological distance
 
 An alternative way to estimate inter-species distances in connectome organization is to compute the correlation between their network features. We estimated a set of local and global graph theory measures of the connectivity matrix. Local measures include node degree, clustering coefficient, node betweenness, and closeness. Global measures include characteristic path length, transitivity, and assortativity. We included both the binary and the weighted versions of these measures. We constructed a vector of local and global topological features for every animal species. Because there are as many local features as nodes in a network, we only used the average and the standard deviation of these measures. Similar to the spectral distance, the topological distance between every pair of animal species was estimated as 1 minus the cosine similarity of their topological feature vectors. All local and global features were estimated using the Python version of the Brain Connectivity Toolbox (https://github.com/aestrivex/bctpy; Sporns et al., 2022; Rubinov and Sporns, 2010). Definitions of these topological metrics can be found below.
 
-## Local features
+#### Local features
 
-## Global features
+#### Global features
 
-## Small-world organization
+### Small-world organization
 
-We use the index proposed in Humphries and Gurney, 2008 to measure connectomes’ small-worldness level. The index is given byγ=CCrandλ=LLrandS=γλ
+We use the index proposed in Humphries and Gurney, 2008 to measure connectomes’ small-worldness level. The index is given by
 
-where L and C are the corresponding characteristic path length and clustering coefficient of each connectome, respectively, and Lr⁢a⁢n⁢d and Cr⁢a⁢n⁢d are the corresponding average quantities for a set of 1000 randomly rewired graphs that preserve the degree sequence and distribution of the nodes (Maslov and Sneppen, 2002). A network is said to possess a small-world architecture if S≥1, that is, if it situates above the identity line in a γ vs. λ plot.
+$$
+\gamma=\frac{C}{C_{rand}}
+$$
 
-## Multi-resolution community detection
 
-We used the Louvain algorithm to determine the optimal community structure of connectomes (Blondel et al., 2008). Briefly, this algorithm extracts communities from large networks by optimizing a modularity score. Here, we use the Q-metric as the objective function (Blondel et al., 2008; Fortunato and Barthélemy, 2007):Q⁢(γ)=12⁢m⁢∑i⁢j[Ai⁢j-γ⁢ki⁢kj2⁢m]⁢δ⁢(ci,cj)
 
-where A corresponds to the adjacency matrix of the network, ki is the degree of node i, m is the sum of all connections in the graph, ci is the community affiliation of node i, and δ is the Kronecker delta function (i.e. δ⁢(x,y)=1 if x=y,0 otherwise). The size of the partition is controlled by a resolution parameter γ (higher γ values result in a larger number of modules). Because the Louvain method is a greedy algorithm, we first found multiple (250) optimal partitions at γ=1, and then we determined a single partition using a consensus clustering approach (Bassett et al., 2013).
+$$
+\lambda=\frac{L}{L_{rand}}
+$$
 
-## Classification of edges
+
+
+$$
+S=\frac{\gamma}{\lambda}
+$$
+
+where $L$ and $C$ are the corresponding characteristic path length and clustering coefficient of each connectome, respectively, and $L_{r⁢a⁢n⁢d}$ and $C_{r⁢a⁢n⁢d}$ are the corresponding average quantities for a set of 1000 randomly rewired graphs that preserve the degree sequence and distribution of the nodes (Maslov and Sneppen, 2002). A network is said to possess a small-world architecture if $S\geq1$, that is, if it situates above the identity line in a $\gamma$ vs. $\lambda$ plot.
+
+### Multi-resolution community detection
+
+We used the Louvain algorithm to determine the optimal community structure of connectomes (Blondel et al., 2008). Briefly, this algorithm extracts communities from large networks by optimizing a modularity score. Here, we use the Q-metric as the objective function (Blondel et al., 2008; Fortunato and Barthélemy, 2007):
+
+$$
+Q⁢(\gamma)=\frac{1}{2⁢m}⁢\sumi⁢j[A_{i⁢j}-\gamma⁢\frac{k_{i}⁢k_{j}}{2⁢m}]⁢\delta⁢(c_{i},c_{j})
+$$
+
+where $A$ corresponds to the adjacency matrix of the network, ki is the degree of node $i$, $m$ is the sum of all connections in the graph, ci is the community affiliation of node $i$, and $\delta$ is the Kronecker delta function (i.e. $\delta⁢(x,y)=1 if x=y,0 otherwise$). The size of the partition is controlled by a resolution parameter $\gamma$ (higher $\gamma$ values result in a larger number of modules). Because the Louvain method is a greedy algorithm, we first found multiple (250) optimal partitions at $\gamma=1$, and then we determined a single partition using a consensus clustering approach (Bassett et al., 2013).
+
+### Classification of edges
 
 Connectomes’s connections were classified into different categories based on four criteria. The first criterion is based on the modular structure of the network and classifies connections depending on whether they link brain regions within the same module (i.e. intra-modular) or regions across different modules (i.e. inter-modular); the second criterion is whether connections link brain regions within the same hemisphere (i.e. intra-hemispheric connections) or across hemispheres (inter-hemispheric connections); the third criterion is based on the physical length of the connections (i.e. short-, medium-, and long-range connections); and the fourth criterion is based on the rich-club structure of the network (i.e. rich-club, feeder, and peripheral connections).
 
-## Inter- vs. intra-modular connections
+#### Inter- vs. intra-modular connections
 
 To classify connections as being either inter- or intra-modular, a consensus clustering algorithm was applied on each connectome to determine a partition of the network into different modules (see ‘Community detection’). Once modules are identified, inter-modular connections correspond to those linking brain regions across different modules, whereas intra-modular connections correspond to those linking brain regions belonging to the same module.
 
-## Connection length
+#### Connection length
 
 Euclidean distance between regions’ centres was used as a proxy for connection length. To subdivide connections into short-, medium-, and long-range, connection lengths were estimated as a percentage with respect to the maximum distance between regions. Short-range connections correspond to those that are less than or equal to 25% of the maximum distance; medium-range connections are above 25% but less than or equal to 75% of the maximum distance; and long-range connections are those above 75% of the maximum distance.
 
-## Rich-club vs. feeder vs. peripheral connections
+#### Rich-club vs. feeder vs. peripheral connections
 
-To classify edges as being either rich-club, feeder, or peripheral connections, it is necessary to identify first the rich-club of hubs in the network, that is, the densely interconnected core of nodes that have a disproportionately high number of connections (van den Heuvel and Sporns, 2011; van den Heuvel et al., 2012). To do so, we compute the rich-club coefficients Φ⁢(k) across a range of degree k of the unweighted (binary) connectomes. For binary networks, all nodes that show a degree ≤k are removed from the network, and for the remaining set of nodes (i.e. a sub-graph), the rich-club coefficient is estimated as the ratio of connections present in the sub-graph, to the total number of possible connections that would be present if the resulting sub-graph was fully connected. Formally, the rich-club coefficient is given by Zhou and Mondragon, 2004; Colizza et al., 2006; McAuley et al., 2007ϕ(k)=2E>kN>k(N>k−1)
+To classify edges as being either rich-club, feeder, or peripheral connections, it is necessary to identify first the rich-club of hubs in the network, that is, the densely interconnected core of nodes that have a disproportionately high number of connections (van den Heuvel and Sporns, 2011; van den Heuvel et al., 2012). To do so, we compute the rich-club coefficients $Φ⁢(k)$ across a range of degree $k$ of the unweighted (binary) connectomes. For binary networks, all nodes that show a degree $\leqk$ are removed from the network, and for the remaining set of nodes (i.e. a sub-graph), the rich-club coefficient is estimated as the ratio of connections present in the sub-graph, to the total number of possible connections that would be present if the resulting sub-graph was fully connected. Formally, the rich-club coefficient is given by Zhou and Mondragon, 2004; Colizza et al., 2006; McAuley et al., 2007
 
-In random networks, such as the Erdős–Rényi model, nodes with a higher degree have a higher probability of being interconnected by chance alone, thus showing an increasing function of Φ⁢(k). For this reason, the rich-club coefficient is typically normalized relative to a set of m comparable random networks of equal size and node degree sequence and distribution (Maslov and Sneppen, 2002; Colizza et al., 2006; McAuley et al., 2007). The normalized rich-club coefficient is then given byϕnorm(k)=ϕ(k)ϕrandom(k)
+$$
+ϕ(k)=\frac{2E_{>k}}{N_{>k}(N_{>k}−1)}
+$$
 
-where ϕr⁢a⁢n⁢d⁢o⁢m corresponds to the average rich-club coefficient over the m random networks. In our particular case, m=1000. An increasing normalized coefficient Φnorm>1 over a range of k reflects the existence of rich-club organization.
+In random networks, such as the Erdős–Rényi model, nodes with a higher degree have a higher probability of being interconnected by chance alone, thus showing an increasing function of $Φ⁢(k)$. For this reason, the rich-club coefficient is typically normalized relative to a set of $m$ comparable random networks of equal size and node degree sequence and distribution (Maslov and Sneppen, 2002; Colizza et al., 2006; McAuley et al., 2007). The normalized rich-club coefficient is then given by
 
-To assess the statistical significance of rich-club organization, we used permutation testing (Bassett and Bullmore, 2009; van den Heuvel et al., 2010). Briefly, the population of the m random networks yields a null distribution of rich-club coefficients. For the range of k expressing rich-club organization (i.e. Φnorm>1), we tested whether ϕ⁢(k) significantly exceeds Φr⁢a⁢n⁢d⁢o⁢m⁢(k). Next, we identify the kth level at which the maximum significant Φn⁢o⁢r⁢m occurs. Nodes with a degree ≥k are said to belong to the kth-core of the network. Next, we identify the hubs, that is, nodes whose degree is above the average degree of the network plus 1 standard deviation. Therefore, rich-club nodes were identified as those nodes that are both hubs and belong to the kth-core of the network.
+$$
+ϕ_{norm}(k)=\frac{ϕ(k)}{ϕ_{random}(k)}
+$$
+
+where $ϕ_{r⁢a⁢n⁢d⁢o⁢m}$ corresponds to the average rich-club coefficient over the $m$ random networks. In our particular case, $m=1000$. An increasing normalized coefficient $Φ_{norm}>1$ over a range of $k$ reflects the existence of rich-club organization.
+
+To assess the statistical significance of rich-club organization, we used permutation testing (Bassett and Bullmore, 2009; van den Heuvel et al., 2010). Briefly, the population of the $m$ random networks yields a null distribution of rich-club coefficients. For the range of $k$ expressing rich-club organization (i.e. $Φ_{norm}>1$), we tested whether $ϕ⁢(k)$ significantly exceeds $Φ_{r⁢a⁢n⁢d⁢o⁢m}⁢(k)$. Next, we identify the kth level at which the maximum significant $Φ_{n⁢o⁢r⁢m}$ occurs. Nodes with a degree $\geqk$ are said to belong to the kth-core of the network. Next, we identify the hubs, that is, nodes whose degree is above the average degree of the network plus 1 standard deviation. Therefore, rich-club nodes were identified as those nodes that are both hubs and belong to the kth-core of the network.
 
 Once rich-club nodes are identified, rich-club connections are defined as edges between rich-club nodes; feeder connections are edges connecting rich-club to non-rich-club nodes, and peripheral connections are edges between non-rich-club nodes.
 
-## Controlling for replicas
+### Controlling for replicas
 
 Because some of the species have multiple scans, this could bias the distribution of intra- and inter-order distances, which could be dominated by those species with a large number of replicas. To account for that, we randomly sample a single connectome per species, and we calculated inter-species distances. We repeated this procedure iteratively 10,000 times. The reported intra- and inter-order distance distributions correspond to the average distances across iterations.
 
-## Controlling for density
+### Controlling for density
 
-Some of the graph features used for the estimation of the topological distance are highly dependent on the density of the network. To regress out the effects of network density on a graph feature, a univariate linear and an exponential model are fitted using density as the explanatory variable, and each feature as response variable. That is,Linear: y=a⁢x+bExponential: y=a⁢eb⁢x+c
+Some of the graph features used for the estimation of the topological distance are highly dependent on the density of the network. To regress out the effects of network density on a graph feature, a univariate linear and an exponential model are fitted using density as the explanatory variable, and each feature as response variable. That is,
 
-where y represents network features and x corresponds to density. Network features are then replaced by the residuals of the model. The decision to fit either a linear, an exponential, or no model at all was based on the variance explained by the model or R2. The model with the largest R2 is selected. Only those features with R2>0.1 were controlled to account for density (features in Figure 3—figure supplement 5 with a regression line).
+$$
+Linear: y=a⁢x+b
+$$
 
-## Code availability
+
+
+$$
+Exponential: y=a⁢e^{b⁢x}+c
+$$
+
+where $y$ represents network features and $x$ corresponds to density. Network features are then replaced by the residuals of the model. The decision to fit either a linear, an exponential, or no model at all was based on the variance explained by the model or $R^{2}$. The model with the largest $R^{2}$ is selected. Only those features with $R^{2}>0.1$ were controlled to account for density (features in Figure 3—figure supplement 5 with a regression line).
+
+### Code availability
 
 All codes used for data analysis and figure generation are publicly available on GitHub (https://github.com/netneurolab/suarez_connectometaxonomy; Suarez, 2022 copy archived at swh:1:rev:0d8e98f65a51a77784b31ec3ca59176d9119d927) and are built on top of the following open-source Python packages: rnns (https://github.com/estefanysuarez/rnns.git; Suarez, 2021), Netneurotools (https://github.com/netneurolab/netneurotools; Markello et al., 2022), Numpy (Harris et al., 2020; van der Walt et al., 2011; Oliphant, 2006), Scipy (Virtanen et al., 2020), Pandas (McKinney, 2010), Scikit-learn (Pedregosa et al., 2011), bctpy (https://github.com/aestrivex/bctpy; Sporns et al., 2022; Rubinov and Sporns, 2010), Matplotlib (Hunter, 2007), and Seaborn (Waskom et al., 2016).

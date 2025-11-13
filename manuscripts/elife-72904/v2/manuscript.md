@@ -37,29 +37,29 @@
 
 ### Affiliations
 
-1. https://ror.org/016xsfp80 Donders Institute for Brain, Cognition, and Behavior, Radboud University Nijmegen Netherlands
-2. https://ror.org/05wg1m734 Department of Cognitive Neuroscience, Radboud University Medical Center Nijmegen Netherlands
-3. https://ror.org/00jmfr291 Department of Psychiatry, University of Michigan Ann Arbor United States
-4. https://ror.org/04pp8hn57 Department of Psychiatry, Utrecht University Medical Center Utrecht Netherlands
-5. https://ror.org/01xtthb56 Department of Psychology, University of Oslo Oslo Norway
-6. https://ror.org/00j9c2840 Norwegian Center for Mental Disorders Research (NORMENT), University of Oslo, and Oslo University Hospital Oslo Norway
-7. https://ror.org/0220mzb33 Department of Psychological Medicine, Institute of Psychiatry, Psychology and Neuroscience, King’s College London London United Kingdom
-8. https://ror.org/02jx3x895 Centre for Medical Image Computing, Medical Physics and Biomedical Engineering, University College London London United Kingdom
-9. https://ror.org/02jx3x895 Dementia Research Centre, UCL Queen Square Institute of Neurology London United Kingdom
-10. https://ror.org/05rrcem69 The Medical Investigation of Neurodevelopmental Disorders (MIND) Institute and Department of Psychiatry and Behavioral Sciences, UC Davis School of Medicine, University of California, Davis Sacramento United States
-11. https://ror.org/05grdyy37 Amsterdam UMC, Vrije Universiteit, Psychiatry, Amsterdam Public Health Research Institute Amsterdam Netherlands
-12. https://ror.org/01x2d9f70 GGZ inGeest, Amsterdam Neuroscience Amsterdam Netherlands
-13. https://ror.org/01ej9dk98 Centre for Youth Mental Health, University of Melbourne Melbourne Australia
-14. https://ror.org/00ej70p06 Orygen Youth Health Melbourne Australia
-15. https://ror.org/0220mzb33 National Institute for Health Research Mental Health Biomedical Research Centre, South London and Maudsley National Health Service Foundation Trust and King’s College London London United Kingdom
-16. https://ror.org/0220mzb33 Department of Psychosis Studies, Institute of Psychiatry, King’s College London London United Kingdom
-17. https://ror.org/05grdyy37 Department of Psychiatry, Amsterdam UMC, Location AMC Amsterdam Netherlands
-18. https://ror.org/05wg1m734 Department of Psychiatry, Radboud University Medical Center Nijmegen Netherlands
-19. https://ror.org/05hs6h993 Department of Psychology, Michigan State University East Lansing United States
-20. https://ror.org/00jmfr291 Department of Psychology, University of Michigan Ann Arbor United States
-21. https://ror.org/01xtthb56 KG Jebsen Centre for Neurodevelopmental Disorders Research, Institute of Clinical Medicine, University of Oslo Oslo Norway
-22. https://ror.org/0220mzb33 Centre for Affective Disorders at the Institute of Psychiatry, King's College London London United Kingdom
-23. https://ror.org/052gg0110 Centre for Functional MRI of the Brain (FMRIB), Nuffield Department of Clinical Neurosciences, Wellcome Centre for Integrative Neuroimaging, University of Oxford Oxford United Kingdom
+1. Donders Institute for Brain, Cognition, and Behavior, Radboud University Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
+2. Department of Cognitive Neuroscience, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+3. Department of Psychiatry, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+4. Department of Psychiatry, Utrecht University Medical Center Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+5. Department of Psychology, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+6. Norwegian Center for Mental Disorders Research (NORMENT), University of Oslo, and Oslo University Hospital Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
+7. Department of Psychological Medicine, Institute of Psychiatry, Psychology and Neuroscience, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+8. Centre for Medical Image Computing, Medical Physics and Biomedical Engineering, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+9. Dementia Research Centre, UCL Queen Square Institute of Neurology London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+10. The Medical Investigation of Neurodevelopmental Disorders (MIND) Institute and Department of Psychiatry and Behavioral Sciences, UC Davis School of Medicine, University of California, Davis Sacramento United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+11. Amsterdam UMC, Vrije Universiteit, Psychiatry, Amsterdam Public Health Research Institute Amsterdam Netherlands ([ROR:05grdyy37](https://ror.org/05grdyy37))
+12. GGZ inGeest, Amsterdam Neuroscience Amsterdam Netherlands ([ROR:01x2d9f70](https://ror.org/01x2d9f70))
+13. Centre for Youth Mental Health, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+14. Orygen Youth Health Melbourne Australia ([ROR:00ej70p06](https://ror.org/00ej70p06))
+15. National Institute for Health Research Mental Health Biomedical Research Centre, South London and Maudsley National Health Service Foundation Trust and King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+16. Department of Psychosis Studies, Institute of Psychiatry, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+17. Department of Psychiatry, Amsterdam UMC, Location AMC Amsterdam Netherlands ([ROR:05grdyy37](https://ror.org/05grdyy37))
+18. Department of Psychiatry, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+19. Department of Psychology, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+20. Department of Psychology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+21. KG Jebsen Centre for Neurodevelopmental Disorders Research, Institute of Clinical Medicine, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+22. Centre for Affective Disorders at the Institute of Psychiatry, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+23. Centre for Functional MRI of the Brain (FMRIB), Nuffield Department of Clinical Neurosciences, Wellcome Centre for Integrative Neuroimaging, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -77,6 +77,89 @@ A hurdle to the widespread application of normative modeling is a lack of well-d
 
 To this end, we assemble a large neuroimaging data set (Table 1) from 58,836 individuals across 82 scan sites covering the human lifespan (aged 2–100, Figure 1A) and fit normative models for cortical thickness and subcortical volumes derived from Freesurfer (version 6.0). We show the clinical utility of these models in a large transdiagnostic psychiatric sample (N=1985, Figure 2). To maximize the utility of this contribution, we distribute model coefficients freely along with a set of software tools to enable researchers to derive subject-level predictions for new data sets against a set of common reference models.
 
+**Table 1.**
+ Sample description and demographics.mQC refers to the manual quality checked subset of the full sample. ‘All’ rows=Train+Test. Clinical refers to the transdiagnostic psychiatric sample (diagnostic details in Figure 2A).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>N (subjects)</th>
+      <th>N (sites)</th>
+      <th>Sex (%F/%M)</th>
+      <th>Age (Mean, S.D)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full</td>
+      <td>All</td>
+      <td>58,836</td>
+      <td>82</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Training set</td>
+      <td>29,418</td>
+      <td>82</td>
+      <td>51.1/48.9</td>
+      <td>46.9, 24.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Test set</td>
+      <td>29,418</td>
+      <td>82</td>
+      <td>50.9/49.1</td>
+      <td>46.9, 24.4</td>
+    </tr>
+    <tr>
+      <td>mQC</td>
+      <td>All</td>
+      <td>24,354</td>
+      <td>59</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Training set</td>
+      <td>12,177</td>
+      <td>59</td>
+      <td>50.2/49.8</td>
+      <td>30.2, 24.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Test set</td>
+      <td>12,177</td>
+      <td>59</td>
+      <td>50.4/49.4</td>
+      <td>30.1, 24.2</td>
+    </tr>
+    <tr>
+      <td>Clinical</td>
+      <td>Test set</td>
+      <td>1985</td>
+      <td>24</td>
+      <td>38.9/61.1</td>
+      <td>30.5, 14.1</td>
+    </tr>
+    <tr>
+      <td>Transfer</td>
+      <td>Test set</td>
+      <td>546</td>
+      <td>6</td>
+      <td>44.5/55.5</td>
+      <td>24.8, 13.7</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/72904/elife-72904-fig1-v2.jpg)
 
 **Figure 1.:** (A) Age density distribution (x-axis) of each site (y-axis) in the full model train and test, clinical, and transfer validation set. (B) Age count distribution of the full sample (N=58,836). (C, D) Examples of lifespan trajectories of brain regions. Age is shown on x-axis and predicted thickness (or volume) values are on the y-axis. Centiles of variation are plotted for each region. In (C), we show that sex differences between females (red) and males (blue) are most pronounced when modeling large-scale features such as mean cortical thickness across the entire cortex or total gray matter volume. These sex differences manifest as a shift in the mean in that the shape of these trajectories is the same for both sexes, as determined by sensitivity analyses where separate normative models were estimated for each sex. The explained variance (in the full test set) of the whole cortex and subcortex is highlighted inside the circle of (D). All plots within the circle share the same color scale. Visualizations for all ROI trajectories modeled are shared on GitHub for users that wish to explore regions not shown in this figure.
@@ -88,6 +171,22 @@ To this end, we assemble a large neuroimaging data set (Table 1) from 58,836 ind
 ## Results
 
 We split the available data into training and test sets, stratifying by site (Table 1, Supplementary files 1 and 2). After careful quality checking procedures, we fit normative models using a set of covariates (age, sex, and fixed effects for site) to predict cortical thickness and subcortical volume for each parcel in a high-resolution atlas (Destrieux et al., 2010). We employed a warped Bayesian linear regression model to accurately model non-linear and non-Gaussian effects (Fraza et al., 2021), whilst accounting for scanner effects (Bayer et al., 2021; Kia et al., 2021). These models are summarized in Figure 1 and Figure 3, Figure 3—figure supplements 1–3, and with an online interactive visualization tool for exploring the evaluation metrics across different test sets (overview of this tool shown in Video 1). The raw data used in these visualizations are available on GitHub (Rutherford, 2022a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72904/elife-72904-fig3-v2.jpg)
+
+**Figure 3.:** The distribution of evaluation metrics in four different test sets (full, mQC, patients, and transfer, see Materials and methods) separated into left and right hemispheres and subcortical regions, with the skew and excess kurtosis being measures that depict the accuracy of the estimated shape of the model, ideally both would be around zero. Note that kurtosis is highly sensitive to outlying samples. Overall, these models show that the models fit well in term of central tendency and variance (explained variance and MSLL) and model the shape of the distribution well in most regions (skew and kurtosis). Code and sample data for transferring these models to new sites not included in training is shared.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72904/elife-72904-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The patterns appear to be robust and consistent across the different test sets.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72904/elife-72904-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/72904/elife-72904-fig3-figsupp3-v2.jpg)
+
+![Video 1.](https://cdn.elifesciences.org/articles/72904/elife-72904-video1.mp4.jpg)
+
+**Video 1.:** The code for creating this website can be found on GitHub (https://github.com/saigerutherford/brainviz-app; copy archived at swh:1:rev:021fff9a48b26f2d07bbb4b3fb92cd5202418905; Rutherford, 2022b).
 
 We validate our models with several careful procedures: first, we report out of sample metrics; second, we perform a supplementary analysis on a subset of participants for whom input data had undergone manual quality checking by an expert rater (Table 1 – mQC). Third, each model fit was evaluated using metrics (Figure 3, Figure 3—figure supplements 1–3) that quantify central tendency and distributional accuracy (Dinga et al., 2021; Fraza et al., 2021). We also estimated separate models for males and females, which indicate that sex effects are adequately modeled using a global offset. Finally, to facilitate independent validation, we packaged pretrained models and code for transferring to new samples into an open resource for use by the community and demonstrated how to transfer the models to new samples (i.e., data not present in the initial training set).
 
@@ -115,11 +214,19 @@ In addition to the sample-specific inclusion criteria, inclusion criteria for th
 
 QC is an important consideration for large samples and is an active research area (Alfaro-Almagro et al., 2018; Klapwijk et al., 2019; Rosen et al., 2018). We consider manual quality checking of images both prior to and after preprocessing to be the gold standard. However, this is labor intensive and prohibitive for very large samples. Therefore, in this work, we adopt a pragmatic and multi-pronged approach to QC. First, a subset of the full data set underwent manual quality checking (mQC) by author S.R. Papaya, a JavaScript-based image viewer. Manual quality checking was performed during December 2020 when the Netherlands was in full lockdown due to COVID-19 and S.R. was living alone in a new country with a lot of free time. Data included in this manual QC step was based on what was available at the time (Supplementary file 2). Later data sets that were included were not manually QC’d due to resource and time constraints. Scripts were used to initialize a manual QC session and track progress and organize ratings. All images (T1w volume and Freesurfer brain.finalsurfs) were put into JSON files that the mQC script would call when loading Papaya. Images were rated using a ‘pass/fail/flag’ scale and the rating was tracked in an automated manner using keyboard inputs (up arrow=pass, down arrow=fail, F key=flag, and left/right arrows were used to move through subjects). Each subject’s T1w volume was viewed in 3D volumetric space, with the Freesurfer brain.finalsurfs file as an overlay, to check for obvious quality issues such as excessive motion, ghosting or ringing artifacts. Example scripts used for quality checking and further instructions for using the manual QC environment can be found on GitHub(Rutherford, 2022c copy archived at swh:1:rev:70894691c74febe2a4d40ab0c84c50094b9e99ce). We relied on ABCD consortium QC procedures for the QC for this sample. The ABCD study data distributes a variable (freesqc01.txt; fsqc_qc = = 1/0) that represents manual quality checking (pass/fail) of the T1w volume and Freesurfer data, thus this data set was added into our manual quality checked data set bringing the sample size to 24,354 individuals passing manual quality checks. Note that QC was performed on the data prior to splitting of the data to assess generalizability. Although this has a reduced sample, we consider this to be a gold-standard sample in that every single scan has been checked manually. All inferences reported in this manuscript were validated against this sample. Second, for the full sample, we adopted an automated QC procedure that quantifies image quality based on the Freesurfer Euler Characteristic (EC), which has been shown to be an excellent proxy for manual labeling of scan quality (Monereo-Sánchez et al., 2021; Rosen et al., 2018) and is the most important feature in automated scan quality classifiers (Klapwijk et al., 2019). Since the distribution of the EC varies across sites, we adopt a simple approach that involves scaling and centering the distribution over the EC across sites and removing samples in the tail of the distribution (see Kia et al., 2021 for details). While any automated QC heuristic is by definition imperfect, we note that this is based on a conservative inclusion threshold such that only samples well into the tail of the EC distribution are excluded, which are likely to be caused by true topological defects rather than abnormalities due to any underlying pathology. We separated the evaluation metrics into full test set (relying on automated QC) and mQC test set in order to compare model performance between the two QC approaches and were pleased to notice that the evaluation metrics were nearly identical across the two methods.
 
-Normative modeling was run using python 3.8 and the PCNtoolkit package (version 0.20). Bayesian Linear Regression (BLR) with likelihood warping was used to predict cortical thickness and subcortical volume from a vector of covariates (age, sex, and site). For a complete mathematical description and explanation of this implementation, see Fraza et al., 2021. Briefly, for each brain region of interest (cortical thickness or subcortical volume), y is predicted as:(1)y=wTϕx+ϵ
+Normative modeling was run using python 3.8 and the PCNtoolkit package (version 0.20). Bayesian Linear Regression (BLR) with likelihood warping was used to predict cortical thickness and subcortical volume from a vector of covariates (age, sex, and site). For a complete mathematical description and explanation of this implementation, see Fraza et al., 2021. Briefly, for each brain region of interest (cortical thickness or subcortical volume), $y$ is predicted as:
 
-where wT is the estimated weight vector, ϕx is a basis expansion of the of covariate vector x, consisting of a B-spline basis expansion (cubic spline with five evenly spaced knots) to model non-linear effects of age, and ϵ=η0,β a Gaussian noise distribution with mean zero and noise precision term β (the inverse variance). A likelihood warping approach (Rios and Tobar, 2019; Snelson et al., 2003) was used to model non-Gaussian effects. This involves applying a bijective non-linear warping function to the non-Gaussian response variables to map them to a Gaussian latent space where inference can be performed in closed form. We employed a ‘sinarcsinsh’ warping function, which is equivalent to the SHASH distribution commonly used in the generalized additive modeling literature (Jones and Pewsey, 2009) and which we have found to perform well in prior work (Dinga et al., 2021; Fraza et al., 2021). Site variation was modeled using fixed effects, which we have shown in prior work provides relatively good performance (Kia et al., 2021), although random effects for site may provide additional flexibility at higher computational cost. A fast numerical optimization algorithm was used to optimize hyperparameters (L-BFGS). Computational complexity of hyperparameter optimization was controlled by minimizing the negative log-likelihood. Deviation scores (Z-scores) are calculated for the n-th subject, and d-th brain area, in the test set as:(2)Znd=ynd−y^ndσd2+(σ∗2)d
+$$
+y=w^{T}ϕx+ϵ
+$$
 
-Where ynd is the true response, y^nd is the predicted mean, σd2 is the estimated noise variance (reflecting uncertainty in the data), and σ2d is the variance attributed to modeling uncertainty. Model fit for each brain region was evaluated by calculating the explained variance (which measures central tendency), the mean squared log-loss (MSLL, central tendency, and variance) plus skew and kurtosis of the deviation scores (2) which measures how well the shape of the regression function matches the data (Dinga et al., 2021). Note that for all models, we report out of sample metrics.
+where $w^{T}$ is the estimated weight vector, $ϕx$ is a basis expansion of the of covariate vector x, consisting of a B-spline basis expansion (cubic spline with five evenly spaced knots) to model non-linear effects of age, and $ϵ=η0,\beta$ a Gaussian noise distribution with mean zero and noise precision term β (the inverse variance). A likelihood warping approach (Rios and Tobar, 2019; Snelson et al., 2003) was used to model non-Gaussian effects. This involves applying a bijective non-linear warping function to the non-Gaussian response variables to map them to a Gaussian latent space where inference can be performed in closed form. We employed a ‘sinarcsinsh’ warping function, which is equivalent to the SHASH distribution commonly used in the generalized additive modeling literature (Jones and Pewsey, 2009) and which we have found to perform well in prior work (Dinga et al., 2021; Fraza et al., 2021). Site variation was modeled using fixed effects, which we have shown in prior work provides relatively good performance (Kia et al., 2021), although random effects for site may provide additional flexibility at higher computational cost. A fast numerical optimization algorithm was used to optimize hyperparameters (L-BFGS). Computational complexity of hyperparameter optimization was controlled by minimizing the negative log-likelihood. Deviation scores (Z-scores) are calculated for the n-th subject, and d-th brain area, in the test set as:
+
+$$
+Z_{nd}=\frac{y_{nd}−y^_{nd}}{\sqrt{\sigma_{d}^{2}+(\sigma_{∗}^{2})_{d}}}
+$$
+
+Where $y_{nd}$ is the true response, $y^_{nd}$ is the predicted mean, $\sigma_{d}^{2}$ is the estimated noise variance (reflecting uncertainty in the data), and $\sigma_{}^{2}_{d}$ is the variance attributed to modeling uncertainty. Model fit for each brain region was evaluated by calculating the explained variance (which measures central tendency), the mean squared log-loss (MSLL, central tendency, and variance) plus skew and kurtosis of the deviation scores (2) which measures how well the shape of the regression function matches the data (Dinga et al., 2021). Note that for all models, we report out of sample metrics.
 
 To provide a summary of individual variation within each clinical group, deviation scores were summarized for each clinical group (Figure 2B–C) by first separating them into positive and negative deviations, counting how many subjects had an extreme deviation (positive extreme deviation defined as Z>2, negative extreme deviation as Z<−2) at a given ROI, and then dividing by the group size to show the percentage of individuals with extreme deviations at that brain area. Controls from the same sites as the patient groups were summarized in the same manner for comparison. We also performed classical case versus control group difference testing on the true data and on the deviation scores (Figure 2D) and thresholded results at a Benjamini-Hochberg false discovery rate of p<0.05. Note that in both cases, we directly contrast each patient group to their matched controls to avoid nuisance variation confounding any reported effects (e.g., sampling characteristics and demographic differences).
 

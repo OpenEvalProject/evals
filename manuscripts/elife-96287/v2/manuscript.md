@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/036jqmy94 Department of Neurology, University of Iowa Iowa City United States
-2. https://ror.org/036jqmy94 Department of Mathematics, University of Iowa Iowa City United States
-3. https://ror.org/036jqmy94 The Iowa Neuroscience Institute Iowa City United States
+1. Department of Neurology, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+2. Department of Mathematics, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+3. The Iowa Neuroscience Institute Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ We tested this hypothesis with a combination of optogenetics, neuronal ensemble 
 
 ## Results
 
-## Mouse-optimized interval timing
+### Mouse-optimized interval timing
 
 We investigated cognitive processing in the striatum using a well-described mouse-optimized interval timing task which requires mice to respond by switching between two nosepokes after a 6-s interval (Figure 1A; see Methods; Balci et al., 2008; Bruce et al., 2021; Larson et al., 2022; Tosun et al., 2016; Weber et al., 2023). In this task, mice initiate trials by responding at a back nosepoke, which triggers auditory and visual cues for the duration of the trial. On 50% of trials, mice were rewarded for nosepoking after 6 s at the designated ‘first’ front nosepoke; these trials were not analyzed. On the remaining 50% of trials, mice were rewarded for nosepoking at the ‘first’ nosepoke and then switching to the ‘second’ nosepoke; initial nosepokes at the second nosepoke after 18 s triggered reward when preceded by a first nosepoke. The first nosepokes occurred before switching responses and the second nosepokes occurred much later in the interval in anticipation of reward delivery at 18 s (Figure 1B–D). During the task, movement velocity peaked before 6 s as mice traveled to the front nosepoke (Figure 1E).
 
@@ -45,35 +45,236 @@ We investigated cognitive processing in the striatum using a well-described mous
 
 We focused on the switch response time, defined as the moment mice exited the first nosepoke before entering the second nosepoke. Switch responses are a time-based decision guided by temporal control of action; indeed, mice switch nosepokes only if nosepoking at the first nosepoke is not rewarded after 6 s (Figure 1B–E). Switch responses are guided by internal estimates of time as no external cue indicates when to switch from the first to the second nosepoke (Balci et al., 2008; Bruce et al., 2021; Tosun et al., 2016; Weber et al., 2023). We defined the first 6 s after trial start as the ‘interval’, because during this epoch mice are estimating whether 6 s have elapsed and if they need to switch responses. In 30 mice, switch response times were 9.3 s (8.4–9.7; median (IQR)); see Table 1 for a summary of mice, experiments, trials, and sessions. We studied dorsomedial striatal D2-MSNs and D1-MSNs using a combination of optogenetics and neuronal ensemble recordings in nine transgenic mice (four D2-Cre mice switch response time 8.2 (7.7–8.7) s; five D1-Cre mice switch response time 9.7 (7.0–10.3) s; rank sum p = 0.73; Table 1).
 
-## Opposing D2-MSN and D1-MSN dynamics
+**Table 1.**
+ Summary of mice, sessions, # of switch trials, and medium spiny neurons (MSNs) (medians (Q1–Q3)).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Figure</th>
+      <th>Cohort</th>
+      <th>Mice</th>
+      <th># sessions</th>
+      <th># of switch responses</th>
+      <th>Neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interval timing behavior</td>
+      <td>Figure 1B, C</td>
+      <td>1</td>
+      <td>30 wild-type mice</td>
+      <td>2 (2–2)</td>
+      <td>34 (25–42)</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Optogenetic tagging of D2-MSNs</td>
+      <td>Figures 2 and 3</td>
+      <td rowspan="2">2</td>
+      <td>4 D2-Cre mice</td>
+      <td>1 (1–1)</td>
+      <td>24 (22–25)</td>
+      <td>32 D2-MSNs</td>
+    </tr>
+    <tr>
+      <td>Optogenetic tagging of D1-MSNs</td>
+      <td>Figures 2 and 3</td>
+      <td>5 D1-Cre mice</td>
+      <td>1 (1–1)</td>
+      <td>22 (10–28)</td>
+      <td>41 D1-MSNs</td>
+    </tr>
+    <tr>
+      <td>Drift-diffusion models (DDM)</td>
+      <td>Figure 4A–D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Optogenetic inhibition of D2-MSNs</td>
+      <td>Figure 5A, B</td>
+      <td rowspan="4">3</td>
+      <td>10 D2-Cre mice</td>
+      <td>6 (4–8)</td>
+      <td>127 (78–135)</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Optogenetic inhibition of D1-MSNs</td>
+      <td>Figure 5C, D</td>
+      <td>6 D1-Cre mice</td>
+      <td>6 (4–8)</td>
+      <td>80 (60–106)</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Optogenetic D2-MSN controls</td>
+      <td>Figure 5—figure supplement 2</td>
+      <td>5 D2-Cre mice</td>
+      <td>6 (4–7)</td>
+      <td>103 (60–140)</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Optogenetic D1-MSN controls</td>
+      <td>Figure 5—figure supplement 2</td>
+      <td>5 D1-Cre mice</td>
+      <td>6 (4–7)</td>
+      <td>102 (78–128)</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Pharmacological D2 blockade</td>
+      <td>Figure 5E, F</td>
+      <td rowspan="2">4</td>
+      <td rowspan="2">10 wild-type mice</td>
+      <td>2 (2–2)</td>
+      <td>28 (17–36)</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Pharmacological D1 blockade</td>
+      <td>Figure 5G, H</td>
+      <td>2 (2–2)</td>
+      <td>28 (25–30)</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>MSN ensemble recording – saline</td>
+      <td>Figures 6 and 7</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">4 wild-type mice,5 D2-cre mice, and2 D1-cre mice</td>
+      <td>1 (1–1)</td>
+      <td>23 (20–30)</td>
+      <td>158 MSNs</td>
+    </tr>
+    <tr>
+      <td>MSN ensembles – D2 blockade</td>
+      <td>Figures 6 and 7</td>
+      <td>1 (1–1)</td>
+      <td>15 (11–22)</td>
+      <td>167 MSNs</td>
+    </tr>
+    <tr>
+      <td>MSN ensembles – D1 blockade</td>
+      <td>Figures 6 and 7</td>
+      <td>1 (1–1)</td>
+      <td>16 (12–26)</td>
+      <td>144 MSNs</td>
+    </tr>
+  </tbody>
+</table>
+
+### Opposing D2-MSN and D1-MSN dynamics
 
 Striatal neuronal populations are largely composed of MSNs expressing D2- or D1-dopamine receptors. We optogenetically tagged D2-MSNs and D1-MSNs by implanting optrodes in the dorsomedial striatum and conditionally expressing channelrhodopsin (ChR2; Figure 2—figure supplement 1A) in four D2-Cre (two female) and five D1-Cre transgenic mice (two female). This approach expressed ChR2 in D2-MSNs or D1-MSNs, respectively (Figure 2A, B; Kim et al., 2017). We identified D2-MSNs or D1-MSNs by their response to brief pulses of 473 nm light; neurons that fired within 5 ms were considered optically tagged putative D2-MSNs (Figure 2—figure supplement 1B, C). We tagged 32 putative D2-MSNs and 41 putative D1-MSNs in a single recording session during interval timing. There were no consistent differences in overall firing rate between D2-MSNs and D1-MSNs (D2-MSNs: 3.4 (1.4–7.2) Hz; D1-MSNs 5.2 (3.1–8.6) Hz; F = 2.7, p = 0.11; all neuronal analyses account for variance between mice using linear mixed-effects models). Peri-event rasters and histograms from a tagged putative D2-MSN (Figure 2C) and from a tagged putative D1-MSN (Figure 2D) demonstrate prominent modulations for the first 6 s of the interval after trial start. Z-scores of average peri-event time histograms (PETHs) from 0 to 6 s after trial start for each putative D2-MSN are shown in Figure 2E and for each putative D1-MSN in Figure 2F. These PETHs revealed that for the 6-s interval immediately after trial start, many putative D2-MSN neurons appeared to ramp up while many putative D1-MSNs appeared to ramp down. For 32 putative D2-MSNs average PETH activity increased over the 6-s interval immediately after trial start, whereas for 41 putative D1-MSNs, average PETH activity decreased. Accordingly, D2-MSNs and D1-MSNs had differences in activity early in the interval (0–5 s; F = 4.5, p = 0.04 accounting for variance between mice) but not late in the interval (5–6 s; F = 1.9, p = 0.17 accounting for variance between mice). Examination of a longer interval of 10 s before to 18 s after trial start revealed the greatest separation in D2-MSN and D1-MSN dynamics during the 6-s interval after trial start (Figure 2—figure supplement 2). Strikingly, these data suggest that D2-MSNs and D1-MSNs display distinct dynamics during interval timing.
 
-## Differences between D2-MSNs and D1-MSNs
+![Figure 2.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig2-v2.jpg)
+
+**Figure 2.:** (A) D2-MSNs in the indirect pathway, which project from the striatum to the globus pallidus external segment (GPe; sagittal section) and internal segment (GPi) and (B) D1-MSNs, which project from the striatum to the GPe, GPi, and substantia nigra (SNr; sagittal section). Peri-event raster (C) from an optogenetically tagged putative D2-MSN (red) and (D) from an optogenetically tagged putative D1-MSN (blue). Shaded area is the bootstrapped 95% confidence interval. (E) Peri-event time histograms (PETHs) from all D2-MSNs and (F) from all D1-MSNs were binned at 0.2 s, smoothed using kernel-density estimates using a bandwidth of 1, and z-scored. Average activity from PETHs revealed that (G) D2-MSNs (red) tended to ramp up, whereas (H) D1-MSNs (blue) tended to ramp down. Shaded area is standard error. Data from 32 tagged D2-MSNs in 4 D2-Cre mice and 41 tagged D1-MSNs in 5 D1-Cre mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Recording locations in the dorsomedial striatum (targeting AP +0.4, ML −1.4, DV −2.7). Electrode reconstructions for D2-Cre (red), D1-Cre (blue), and wild-type mice (green). Only the left striatum was implanted with electrodes in all animals. (B) Medium spiny neuron (MSN) classification by waveform criteria for sessions with optogenetic tagging. (C) Example of an optogenetically tagged MSN. This neuron expresses ChR2 and fired action potentials within 5 ms of 473 nm laser pulses (red line). Spikes from laser trials shown as red ticks; trials without laser shown as blue ticks. Inset on bottom right – waveforms from laser trials (red) and trials without laser (blue). Across 73 tagged neurons, waveform correlation coefficients for laser trials vs trials without laser was r = 0.97 (0.92–0.99), indicating that optogenetically triggered spikes were similar to non-optogenetically triggered spikes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Tagged D2-MSN from Figure 2C shown over a longer interval, and (B) tagged D1-MSN from Figure 2D shown over a longer interval. (C) Peri-event time histograms from D2-MSNs and (D) from D1-MSNs over a longer interval. (E) We noticed that on average, D2-MSNs and D1-MSNs had the biggest differences in dynamics during the 6-s interval after trial start, where they tended to have distinct slopes (Figure 3C, D); slope analyses were less reliable for other epochs. Data from 32 tagged D2-MSNs in 4 D2-Cre mice and 41 tagged D1-MSNs in 5 D1-Cre mice as in Figure 2.
+
+### Differences between D2-MSNs and D1-MSNs
 
 To quantify differences between D2-MSNs vs D1-MSNs in Figure 2G, H, we turned to principal component analysis (PCA), a data-driven tool to capture the diversity of neuronal activity (Kim et al., 2017). Work by our group and others has uniformly identified PC1 as a linear component among corticostriatal neuronal ensembles during interval timing (Bruce et al., 2021; Emmons et al., 2020; Emmons et al., 2019; Emmons et al., 2017; Kim et al., 2017; Narayanan et al., 2013; Narayanan and Laubach, 2009; Parker et al., 2014; Wang et al., 2018). We analyzed PCA calculated from all D2-MSN and D1-MSN PETHs over the 6-s interval immediately after trial start. PCA identified time-dependent ramping activity as PC1 (Figure 3A), a key temporal signal that explained 54% of variance among tagged MSNs (Figure 3B; variance for PC1 p = 0.009 vs 46 (44–49)% for any pattern of PC1 variance derived from random data; Narayanan, 2016). Consistent with population averages from Figure 2G, H, D2-MSNs and D1-MSNs had opposite patterns of activity with negative PC1 scores for D2-MSNs and positive PC1 scores for D1-MSNs (Figure 3C; PC1 for D2-MSNs: –3.4 (−4.6 to 2.5); PC1 for D1-MSNs: 2.8 (−2.8 to 4.9); F = 8.8, p = 0.004 accounting for variance between mice; Figure 3—figure supplement 1; Cohen’s d = 0.7; power = 0.80; no reliable effect of sex (F = 0.4, p = 0.51) or switching direction (F = 1.7, p = 0.19)). Importantly, PC1 scores for D2-MSNs were significantly less than 0 (signrank D2-MSN PC1 scores vs 0: p = 0.02), implying that because PC1 ramps down, D2-MSNs tended to ramp up. Conversely, PC1 scores for D1-MSNs were significantly greater than 0 (signrank D1-MSN PC1 scores vs 0: p = 0.05), implying that D1-MSNs tended to ramp down. Thus, analysis of PC1 in Figure 3A–C suggested that D2-MSNs (Figure 2G) and D1-MSNs (Figure 2H) had opposing ramping dynamics.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig3-v2.jpg)
+
+**Figure 3.:** (A) Principal component analysis revealed that the first component (PC1) exhibited time-dependent ramping. (B) The first principal component explained ~54% of variance across tagged medium spiny neuron (MSN) ensembles. (C) Differences between D2-MSNs (red) and D1-MSNs (blue) were captured by PC1 which exhibited time-dependent ramping. (D) These differences were also apparent in the linear slope of firing rate vs time in the interval, with D1-MSNs (blue) having a more negative slope than D2-MSNs (red). In C and D, each point represents data from a tagged MSN. *p < 0.05 via linear mixed effects models accounting for variance between mice. Data from 32 tagged D2-MSNs in 4 D2-Cre mice and 41 tagged D1-MSNs in 5 D1-Cre mice.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Effects in individual mice from optogenetic tagging experiments for (A) PC1 and (B) trial-by-trial generalized linear modeling (GLM) slope of firing rate over the interval; red = D2-MSN, and blue = D1-MSN. All statistics analyzing these data used linear mixed-effects models as incorporating a random effect for each mouse into the model allows to account for inherent between-mouse variability.
 
 To interrogate these dynamics at a trial-by-trial level, we calculated the linear slope of D2-MSN and D1-MSN activity over the first 6 s of each trial using generalized linear modeling (GLM) of effects of time in the interval vs trial-by-trial firing rate (Latimer et al., 2015). Note that this analysis focuses on each trial rather than population averages as in Figures 2G, H, 3A–C. Nosepokes were included as a regressor for movement. GLM analysis also demonstrated that D2-MSNs had significantly different slopes (–0.01 spikes/s (−0.10 to 0.10)), which were distinct from D1-MSNs (–0.20 (−0.47 to −0.06; Figure 3D; F = 8.9, p = 0.004 accounting for variance between mice; Figure 3—figure supplement 1); Cohen’s d = 0.8; power = 0.98; no reliable effect of sex (F = 0.0, p = 0.88) or switching direction (F = 1.7, p = 0.19)). We found that D2-MSNs and D1-MSNs had significantly different slopes even when excluding outliers (four outliers excluded outside of 95% confidence intervals; F = 7.5, p = 0.008 accounting for variance between mice) and when the interval was defined as the time between trial start and the switch response on a trial-by-trial basis for each neuron (F = 4.3, p = 0.04 accounting for variance between mice). Trial-by-trial GLM slope was strongly correlated with PC1 scores in Figure 3A–C (PC1 scores vs GLM slope r = –0.60, p = 10–8), explaining 37% of variance. These data demonstrate that D2-MSNs and D1-MSNs had distinct slopes of firing rate across the interval and were consistent with analyses of average activity and PC1, which exhibited time-related ramping.
 
 Our findings could not be easily explained by movement because (1) only 25% of switch responses occurred before 6 s (Figure 1B, C), (2) our GLM included a regressor accounting for the nosepokes when present, and (3) nosepoke GLM βs were not reliably different between D2-MSNs and D1-MSNs (F = 1.5, p = 0.22 accounting for variance between mice). In summary, analyses of average activity, PC1, and trial-by-trial firing-rate slopes over the interval provide convergent evidence that D2-MSNs and D1-MSNs had distinct dynamics during interval timing. These data provide insight into temporal processing by striatal MSNs.
 
-## Drift-diffusion models of opposing D2-MSN and D1-MSN dynamics
+### Drift-diffusion models of opposing D2-MSN and D1-MSN dynamics
 
-Our analysis of average activity (Figure 2G, H) and PC1 (Figure 3A–C) suggested that D2-MSNs and D1-MSNs might have opposing dynamics. However, past computational models of interval timing have relied on drift-diffusion dynamics that increases over the interval and accumulates evidence over time (Nguyen et al., 2020; Simen et al., 2011). To reconcile how these complementary MSNs dynamics might effect temporal control of action, we constructed a four-parameter drift-diffusion model (DDM). Our goal was to construct a DDM inspired by average differences in D2-MSNs and D1-MSNs that predicted switch response time behavior. We constructed a DDM where x\begin{document}$x$\end{document} represents the neuronal firing rate of an ‘output’ unit collecting evidence on the activity of striatal D2-MSNs or D1-MSNs, t\begin{document}$t$\end{document} represents time measured in seconds, and dx\begin{document}$dx$\end{document} and dt\begin{document}$dt$\end{document} mean ‘change’ in x\begin{document}$x$\end{document} and t\begin{document}$t$\end{document}, respectively (equivalent to the derivative dx/dt\begin{document}$dx/dt$\end{document}):(1)dx=(F−x)Ddt+σdξ(t)\begin{document}$$\displaystyle dx=\left (F-x\right)Ddt+\sigma d\xi \left (t\right)$$\end{document}(2)x(0)=b\begin{document}$$\displaystyle x\left (0\right)=b$$\end{document}
+Our analysis of average activity (Figure 2G, H) and PC1 (Figure 3A–C) suggested that D2-MSNs and D1-MSNs might have opposing dynamics. However, past computational models of interval timing have relied on drift-diffusion dynamics that increases over the interval and accumulates evidence over time (Nguyen et al., 2020; Simen et al., 2011). To reconcile how these complementary MSNs dynamics might effect temporal control of action, we constructed a four-parameter drift-diffusion model (DDM). Our goal was to construct a DDM inspired by average differences in D2-MSNs and D1-MSNs that predicted switch response time behavior. We constructed a DDM where $x$ represents the neuronal firing rate of an ‘output’ unit collecting evidence on the activity of striatal D2-MSNs or D1-MSNs, $t$ represents time measured in seconds, and $dx$ and $dt$ mean ‘change’ in $x$ and $t$, respectively (equivalent to the derivative $dx/dt$):
 
-The model has four independent parameters F,D\begin{document}$F,D$\end{document}, σ,\begin{document}$\sigma ,$\end{document} and b\begin{document}$b$\end{document} (described below) and a threshold value T\begin{document}$T$\end{document} defined by(3)T=T(F,b)= (1−14b)F+14b(1−F)\begin{document}$$\displaystyle T=T\left (F,b\right)=\ \left (1-\frac{1}{4}b\right)F+\frac{1}{4}b\left (1-F\right)$$\end{document}
+$$
+dx=(F−x)Ddt+\sigmadξ(t)
+$$
 
-The firing rate is set initially at baseline b\begin{document}$b$\end{document} (see Equation 2), then driven by input F\begin{document}$F$\end{document} akin to the dendritic current induced by the overlap of corticostriatal postsynaptic potentials (Shepherd, 2013). With each unit of time dt, we suppose there is corticostriatal stimulation that provides incremental input proportional to the activity itself, F-xD\begin{document}$\left (F-x\right)D$\end{document}, to reach a decision. D\begin{document}$D$\end{document} is the drift rate for the event sequence and can be interpreted as a parameter inversely proportional to the neural activity’s integration time constant. The drift, together with noise ξt\begin{document}$\xi \left (t\right)$\end{document} (of zero mean and strength σ\begin{document}$\sigma $\end{document}), leads to fluctuating accumulation which eventually crosses a threshold T\begin{document}$T$\end{document} (see Equation 3; Figure 4A, B). The time t∗\begin{document}$t^{*}$\end{document} it takes the firing rate to reach the threshold, xt*=T,\begin{document}$x\left (t^{*}\right)=T,$\end{document} is the switch response time.
 
-Our model aimed to fit statistical properties of mouse behavioral responses while incorporating MSN network dynamics. The model does not attempt, however, to fit individual neurons’ activity, because our model predicts a single behavioral parameter – switch time – that can be caused by a diversity of neuronal activity. We first analyzed trial-based aggregated activity of MSN recordings from each mouse (xj(t))\begin{document}$\left (x_{j}\left (t\right)\right)$\end{document} where j=1,…,N\begin{document}$j=1,\ldots ,N$\end{document} neurons. For D2-MSN or D1-MSN ensembles of N > 11, we found linear combinations of their neuronal activities, with some βj\begin{document}$\beta _{j}$\end{document} coefficients,x(t)= ∑j=1Nβj xj(t)\begin{document}$$\displaystyle  x\left (t\right)=\ \sum \limits_{j=1}^{N}\beta _{j}\ x_{j}\left (t\right)$$\end{document}
 
-that could predict the trial-by-trial switch response times (accuracy >90%, Figure 4—figure supplement 1; compared with <20% accuracy for Poisson-generated spikes of same trial-average firing rate). The predicted switch time tpred*\begin{document}$t_{pred}^{*}$\end{document} was defined by the time when the weighted ensemble activity xt\begin{document}$x\left (t\right)$\end{document} first reached the value x(tpred∗)\begin{document}$x(t_{pred}^{*})$\end{document} = 0.5. Finally, we built DDMs to account for this opposing trend (increasing vs decreasing) of MSN dynamics and for ensemble threshold behavior defining tpred*\begin{document}$t_{pred}^{*}$\end{document}; see the resulting model (Equations 1–3) and its simulations (Figure 4A, B).
+$$
+x(0)=b
+$$
 
-This instantiation of DDMs captured the complimentary D2-MSN and D1-MSN dynamics that we discovered in our optogenetic tagging experiments (Figure 2G, H vs Figure 4A, B). The model’s parameters were chosen to fit the distribution of switch response times: F=1,b=0.52\begin{document}$F=1,\, b=0.52$\end{document} (so T=0.87,D=0.135,σ=0.052\begin{document}$T=0.87, D=0.135, \sigma =0.052$\end{document}) for intact D2-MSNs (Figure 4A, in black); and F=0,b=0.48\begin{document}$F=0,\, b=0.48$\end{document} (so T=0.12,\begin{document}$T=0.12,$\end{document}D=0.141,σ=0.052\begin{document}$D=0.141, \sigma =0.052$\end{document}) for intact D1-MSNs (Figure 4B, in black). See Methods and Figure 4—figure supplement 2 for how the model parameters were chosen and how we quantified the model’s explanatory power for behavior. Interestingly, we observed that two-parameter gamma distributions strongly accounted for the model dynamics (D2-MSNs: Gamma parameters α = 6.08, β = 0.69, R2 Gamma vs Model = 0.99; D1-MSNs α = 5.89, β = 0.69; R2 Gamma vs Model = 0.99; Figure 4C, D, dotted black lines; Figure 4—figure supplement 3). Gamma distributions also provided a surprisingly good approximation for the probability distribution and cumulative distribution functions of mouse switch response times (Figure 1B–D; R2 Data vs Gamma = 0.94 for D1-MSNs and for D2-MSNs). Thus, in the next sections, we used gamma distributions as a proxy for both the distribution of times generated by the model and the distribution of mice switch response times, when comparing those for the goodness of fit. Our model provided the opportunity to computationally explore the consequences of disrupting D2-MSNs or D1-MSNs. Because both D2-MSNs and D1-MSNs accumulate temporal evidence, disrupting either MSN type in the model changed the slope. The results were obtained by simultaneously decreasing the drift rate D (equivalent to lengthening the neurons’ integration time constant) and lowering the level of network noise σ: D =0.129,σ=0.043\begin{document}$=0.129, \sigma =0.043$\end{document} for D2-MSNs in Figure 4A (in red; changes in noise had to accompany changes in drift rate to preserve switch response time variance. See Methods); and D=0.122,σ=0.043\begin{document}$D=0.122, \sigma =0.043$\end{document} for D1-MSNs in Figure 4B (in blue). The model predicted that disrupting either D2-MSNs or D1-MSNs would degrade the temporal accumulation of evidence, increase switch response times (Figure 4C, D), and shift MSN dynamics. In the next section, we interrogated these ideas with a combination of optogenetics, behavioral pharmacology, and electrophysiology.
+The model has four independent parameters $F,D$, $\sigma,$ and $b$ (described below) and a threshold value $T$ defined by
 
-## Disrupting D2-MSNs or D1-MSNs increases switch response times
+$$
+T=T(F,b)= (1−\frac{1}{4}b)F+\frac{1}{4}b(1−F)
+$$
+
+The firing rate is set initially at baseline $b$ (see Equation 2), then driven by input $F$ akin to the dendritic current induced by the overlap of corticostriatal postsynaptic potentials (Shepherd, 2013). With each unit of time dt, we suppose there is corticostriatal stimulation that provides incremental input proportional to the activity itself, $F-xD$, to reach a decision. $D$ is the drift rate for the event sequence and can be interpreted as a parameter inversely proportional to the neural activity’s integration time constant. The drift, together with noise $ξt$ (of zero mean and strength $\sigma$), leads to fluctuating accumulation which eventually crosses a threshold $T$ (see Equation 3; Figure 4A, B). The time $t^{∗}$ it takes the firing rate to reach the threshold, $xt^{*}=T,$ is the switch response time.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig4-v2.jpg)
+
+**Figure 4.:** (A) We modeled interval timing with a low parameter diffusion process with a drift rate D, noise $ξt,$ and a baseline firing rate b that drifts toward a threshold T indicated by dotted lines. With D2-MSNs disrupted (solid red curves), this drift process decreases and takes longer to reach the threshold. (B) The same model also accounted for D1-MSNs with an opposite drift. With D1-MSNs disrupted (solid blue curves), the drift process again takes longer to reach the threshold. Because both D2-MSNs and D1-MSNs contribute to the accumulation of temporal evidence, this model predicted that (C) disrupting D2-MSNs would increase response times during interval timing (dotted red line) and (D) disrupting D1-MSNs would also increase response times (dotted blue line). Threshold T depends on b and target firing F. For details on the selection of parameter values in drift-diffusion model (DDM), see Methods and Figures 1—3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Exemplar integral of network activity $x(t)=\sum\beta_{j}x_{j}(t)$ generated from an ensemble of 13 D2-MSNs for a single animal on a single trial. The coefficients $\beta_{j}$ were computed from the logistic regression fit to the switch time $t^{*}$ using the neurons firing rates $(x_{j}(t))_{j}$ as the predictor matrix (see Methods). On this trial, this integral drifted toward the response threshold 0.5, and logistic regression accurately predicted the switch response time. (B) Exemplar integral network activity $x(t)$ generated from an ensemble of 15 D1-MSNs in a single animal on a single trial. (C) Across all D2-MSN and D1-MSN ensembles per individual mouse, we found that the trial-by-trial accuracy increased with ensemble size, exceeding >90% when D2-MSN and D1-MSN ensembles were >11 neurons. Neuronal data from 5 D1-Cre (blue dots) and 4 D2-Cre (red dots) mice in Figures 2 and 3. Corresponding light blue/light red dots show accuracy values computed in 100 simulations of respective D2-MSN/D1-MSN ensembles with Poisson spikes matched to MSN firing rates.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The relative error of simulated mean (μs) to the behavioral gamma-fit mean $\mu_{M}$, or $E^{\mu}=|(\mu_{S}-\mu_{M})/\mu_{M}|,$ for (A) D2-Cre mice with Laser Off and for (B) D2-MSN inhibition. The absolute error of the DDM computed coefficient of variation $CV_{S}$ relative to the behavioral gamma-fit $CV_{M}$ , or ($E^{cv}=CV_{S}-CV_{M}$), for (C) D2-Cre mice with Laser Off and for (D) D2-MSN inhibition. The relative error of simulated mean (μs) to the behavioral gamma-fit mean ($\mu_{M}$), for (E) D1-Cre mice with Laser Off and for (F) D1-MSN inhibition. The absolute error of the DDM computed coefficient of variation $CV_{S}$ relative to the behavioral gamma-fit $CV_{M}$ for (G) D1-Cre mice with Laser Off and for (H) D1-MSN inhibition. Black squares and triangles represent parameters $D$ and $\sigma$ for Figure 4.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Histograms of behavioral data from D2-Cre mice with (A) Laser Off and (B) D2-MSN inhibition (red). Data from D1-Cre mice with (C) Laser Off and with (D) D1-MSN inhibition (blue). (E–H) model predictions. (I–L) Comparisons of empirical data vs model. All panels: fits for the gamma distribution with dotted circles; see Supplementary file 1 for the parameter values defining each gamma distribution. Behavioral data from 10 D2-Cre mice and 6 D1-mice from Figure 5A–D. Model data from numerical simulations of the drift-diffusion model (DDM) model shown in Figure 4.
+
+Our model aimed to fit statistical properties of mouse behavioral responses while incorporating MSN network dynamics. The model does not attempt, however, to fit individual neurons’ activity, because our model predicts a single behavioral parameter – switch time – that can be caused by a diversity of neuronal activity. We first analyzed trial-based aggregated activity of MSN recordings from each mouse $(x_{j}(t))$ where $j=1,…,N$ neurons. For D2-MSN or D1-MSN ensembles of N > 11, we found linear combinations of their neuronal activities, with some $\beta_{j}$ coefficients,
+
+$$
+x(t)= \sumj=1N\beta_{j} x_{j}(t)
+$$
+
+that could predict the trial-by-trial switch response times (accuracy >90%, Figure 4—figure supplement 1; compared with <20% accuracy for Poisson-generated spikes of same trial-average firing rate). The predicted switch time $t_{pred}^{*}$ was defined by the time when the weighted ensemble activity $xt$ first reached the value $x(t_{pred}^{∗})$ = 0.5. Finally, we built DDMs to account for this opposing trend (increasing vs decreasing) of MSN dynamics and for ensemble threshold behavior defining $t_{pred}^{*}$; see the resulting model (Equations 1–3) and its simulations (Figure 4A, B).
+
+This instantiation of DDMs captured the complimentary D2-MSN and D1-MSN dynamics that we discovered in our optogenetic tagging experiments (Figure 2G, H vs Figure 4A, B). The model’s parameters were chosen to fit the distribution of switch response times: $F=1,b=0.52$ (so $T=0.87,D=0.135,\sigma=0.052$) for intact D2-MSNs (Figure 4A, in black); and $F=0,b=0.48$ (so $T=0.12,$$D=0.141,\sigma=0.052$) for intact D1-MSNs (Figure 4B, in black). See Methods and Figure 4—figure supplement 2 for how the model parameters were chosen and how we quantified the model’s explanatory power for behavior. Interestingly, we observed that two-parameter gamma distributions strongly accounted for the model dynamics (D2-MSNs: Gamma parameters α = 6.08, β = 0.69, R2 Gamma vs Model = 0.99; D1-MSNs α = 5.89, β = 0.69; R2 Gamma vs Model = 0.99; Figure 4C, D, dotted black lines; Figure 4—figure supplement 3). Gamma distributions also provided a surprisingly good approximation for the probability distribution and cumulative distribution functions of mouse switch response times (Figure 1B–D; R2 Data vs Gamma = 0.94 for D1-MSNs and for D2-MSNs). Thus, in the next sections, we used gamma distributions as a proxy for both the distribution of times generated by the model and the distribution of mice switch response times, when comparing those for the goodness of fit. Our model provided the opportunity to computationally explore the consequences of disrupting D2-MSNs or D1-MSNs. Because both D2-MSNs and D1-MSNs accumulate temporal evidence, disrupting either MSN type in the model changed the slope. The results were obtained by simultaneously decreasing the drift rate D (equivalent to lengthening the neurons’ integration time constant) and lowering the level of network noise σ: D $=0.129,\sigma=0.043$ for D2-MSNs in Figure 4A (in red; changes in noise had to accompany changes in drift rate to preserve switch response time variance. See Methods); and $D=0.122,\sigma=0.043$ for D1-MSNs in Figure 4B (in blue). The model predicted that disrupting either D2-MSNs or D1-MSNs would degrade the temporal accumulation of evidence, increase switch response times (Figure 4C, D), and shift MSN dynamics. In the next section, we interrogated these ideas with a combination of optogenetics, behavioral pharmacology, and electrophysiology.
+
+### Disrupting D2-MSNs or D1-MSNs increases switch response times
 
 DDMs captured opposing MSN dynamics and predicted that disrupting either D2-MSNs or D1-MSNs should slow temporal processing and increase switch response times (Figure 4). We tested this idea with optogenetics. We bilaterally implanted fiber optics and virally expressed the inhibitory opsin halorhodopsin in the dorsomedial striatum of 10 D2-Cre mice (5 female) to inhibit D2-MSNs (Figure 5; fiber optic locations in Figure 5—figure supplement 1; this group of mice was entirely separate from the optogenetic tagging mice). We found that D2-MSN inhibition reliably increased switch response times (Figure 5A, B; Laser Off: 8.6 s (8.3–9.3); Laser On: 10.2 s (9.4–10.2); signed rank p = 0.002, Cohen’s d = 1.7). To control for heating and nonspecific effects of optogenetics, we performed control experiments in D2-cre mice without opsins using identical laser parameters; we found no reliable effects for opsin-negative controls (Figure 5—figure supplement 2). Remarkably, DDM predictions were highly concordant with D2-MSN inhibition behavioral data (R2 Data vs Model = 0.95; Figure 4—figure supplement 3) as well as with behavioral data from laser off trials (R2 Data vs Model = 0.94; parameters chosen to fit laser off trials; Figure 4—figure supplement 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig5-v2.jpg)
+
+**Figure 5.:** (A) As predicted by our drift-diffusion model (DDM) in Figure 4, optogenetic inhibition of D2-MSNs (red) shifted cumulative distributions of response times to the right, and (B) increased response times; data from 10 D2-Cre mice expressing halorhodopsin (Halo). Also as predicted by our DDM, (C) optogenetic inhibition of D1-MSNs shifted cumulative distribution functions to the right, and (D) increased response times; data from 6 D1-Cre mice expressing Halo. Similarly, (E) pharmacologically disrupting D2-dopamine receptors (red) with the D2 antagonist sulpiride shifted cumulative distribution functions to the right, and (F) increased response times; data from 10 wild-type mice. Also, (G) pharmacologically disrupting D1-dopamine receptors (blue) with the D1 antagonist SCH23390 shifted cumulative distribution functions to the right, and (H) increased response times; data from the same 10 wild-type mice as in (E, F). In (B, D, F, and H) connected points represent the mean response time from each animal in each session, and horizontal black lines represent group medians. *p = <0.05, signed rank test. See Figure 5—figure supplement 2 for data from opsin-negative controls.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Fiber optic locations from (A) an opsin-expressing mouse with mCherry-tagged halorhodopsin and bilateral fiber optics, and (B) across 10 D2-Cre mice (red) and 6 D1-cre mice (blue) with fiber optics (targeting AP +0.9, ML +/–1.3, DV –2.5).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** To control for heating and nonspecific effects of optogenetics, we conducted control experiments with identical laser exposures except a virus without opsin was used. Experiments in D2-Cre mice injected with virus without opsins did not reliably affect (A) cumulative density functions (CDFs) or (B) switch response times (signed rank p = 0.44). Experiments in D1-Cre mice expressing virus without opsins did not reliably affect (C) CDFs or (D) switch response times (signed rank p = 0.81). Laser parameters (589 nm laser, 12 mW, 18-s duration) were identical to experimental animals in Figure 5.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** We measured nosepoke duration (time of nosepoke entry to exit) on switch responses. During interval timing there was no effect of optogenetic inhibition (red) of dorsomedial striatal D2-MSNs on (A, B) nosepoke duration (p = 0.63) or (C) the traversal time between the first and second nosepokes (p = 0.49); traversal time is distinct from the switch response, which is the moment animals depart the first nosepoke prior to arriving at the second nosepoke. There was also no effect of optogenetic inhibition (blue) of dorsomedial striatal D1-MSNs on nosepoke duration (D, E; p = 0.31) or (F) traversal time (p = 0.22). Data from the same 10 D2-Cre mice and 6 D1-Cre mice, as in Figure 5. Horizontal black lines in B, C, E, and F represent group medians.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Standard deviation of switch response times for D2-MSN inhibition sessions (signed rank test, p = 0.19) and (B) D1-MSN inhibition sessions (p = 0.84), and the number of total rewards for (C) D2-MSN inhibition sessions (p = 0.07) and (D) D1-MSN inhibition sessions (p = 0.25). Data from 10 D2-Cre mice and 6 D1-Cre mice as in Figure 5.
 
 Next, we investigated D1-MSNs (Kravitz et al., 2010). In six D1-Cre mice (three female), optogenetic inhibition of dorsomedial striatal D1-MSNs increased switch response times (Figure 5C, D; Laser Off: 8.7 (8.0–9.1) s; Laser On: 10.5 (9.6–11.1) s; signed rank p = 0.03, Cohen’s d = 1.4). As with D2-MSNs, we found no reliable effects with opsin-negative controls in D1-MSNs (figure supplement 8). DDM predictions again were highly concordant with D1-MSN inhibition behavioral data R2 Data vs Model = 0.95; parameters chosen to fit D1-MSN inhibition trials andwith laser off trials (R2 Data vs Model = 0.94; Figure 4—figure supplement 3).
 
@@ -83,15 +284,27 @@ In the same 10 wild-type mice, systemic drugs blocking D1-dopamine receptors (D1
 
 We found no evidence that inhibiting D2-MSNs in the dorsomedial striatum changed task-specific movements such as nosepoke duration (i.e., time of nosepoke entry to exit; Figure 5—figure supplement 3) or switch traversal time between the first and second nosepokes (Figure 5—figure supplement 3). Similarly, we found no evidence that D1-MSN inhibition changed nosepoke duration (Figure 5—figure supplement 2) or traversal time (Figure 5—figure supplement 2). Furthermore, disrupting D2-MSNs or D1-MSNs did not change switch response time standard deviations or the number of rewards (Figure 5—figure supplement 4). Our data suggest that disrupting D2-MSNs and D1-MSNs specifically slowed interval timing without consistently changing task-specific movements. Together, our findings suggest that optogenetically or pharmacologically disrupting dorsomedial striatal D2-MSNs and D1-MSNs degraded the accumulation of temporal evidence shown in Figure 4, resulted in increased switch response times.
 
-## D2 blockade and D1 blockade shift MSN dynamics
+### D2 blockade and D1 blockade shift MSN dynamics
 
 MSN ensembles strongly encode time (Bruce et al., 2021; Emmons et al., 2017; Gouvêa et al., 2015; Mello et al., 2015; Wang et al., 2018), but it is unknown how disruptions in D2- or D1-dopamine receptors affect these ensembles (Yun et al., 2023). Although nonspecific, pharmacological experiments have two advantages over optogenetics for recording experiments: (1) many clinically approved drugs target dopamine receptors, and (2) they are more readily combined with recordings than optogenetic inhibition, which silences large populations of MSNs. We recorded from dorsomedial striatal MSN ensembles in 11 separate mice during sessions with saline, D2 blockade with sulpiride, or D1 blockade with SCH23390 (Figure 6A; Figure 6—figure supplements 1–3; data from one recording session each for saline, D2 blockade, and D1 blockade during interval timing).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig6-v2.jpg)
+
+**Figure 6.:** (A) We recorded dorsomedial striatal medium spiny neuron (MSN) ensembles during interval timing in sessions with saline, D2 blockade with sulpiride, or D1 blockade with SCH23390. (B–D) Example peri-event raster from MSNs in sessions with saline (black), D2-dopamine blockade (red), or D1-dopamine blockade (blue). Shaded area is the bootstrapped 95% confidence interval. (E) MSNs from 99 neurons in 11 mice from saline, D2 blockade, or D1 blockade session; MSNs were matched across sessions based on waveforms and interspike interval. Each row represents a peri-event time histogram (PETH) binned at 0.2 s, smoothed using kernel-density estimates using a bandwidth of 1, and z-scored. Colors indicate z-scored firing rate. See Figure 6—figure supplement 1 for analyses that assume statistical independence. (F) Principal component analysis (PCA) identified MSN ensemble patterns of activity. The first principal component (PC1) exhibited time-dependent ramping. (G) PC1 explained 54% of population variance among MSN ensembles; higher components were not analyzed. (H) PC1 scores were closer to zero and significantly different with D2 or D1 blockade; *p < 0.05 via linear mixed effects; data from 99 MSNs in 11 mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Principal component analysis (PCA) identified MSN ensemble patterns of activity. The first principal component (PC1) exhibited time-dependent ramping. (B) PC1 explained 55% of population variance among MSN ensembles. (C) PC1 scores were shifted and significantly different with D2 or D1 blockade as when all sessions were sorted together in Figure 6 (D2 blockade vs saline: F = 5.5, p = 0.02; D1 blockade vs saline: F = 4.9, p = 0.03; all analyses accounting for variance between mice). PC1 scores inverted to match Figure 6F, H. *p < 0.05 via linear mixed effects models; all analyses assumed statistical independence.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig6-figsupp2-v2.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/96287/elife-96287-fig6-figsupp3-v2.jpg)
 
 We analyzed 99 MSNs in sessions with saline, D2 blockade, and D1 blockade. We matched MSNs across sessions based on waveform and interspike intervals; waveforms were highly similar across sessions (correlation coefficient between matched MSN waveforms: saline vs D2 blockade r = 1.00 (0.99–1.00 rank sum vs correlations in unmatched waveforms p = 3 × 10–44; waveforms; saline vs D1 blockade r = 1.00 (1.00–1.00), rank sum vs correlations in unmatched waveforms p = 4 × 10–50). There were no consistent changes in MSN average firing rate with D2 blockade or D1 blockade (saline: 5.2 (3.3–8.6) Hz); D2 blockade 5.1 (2.7–8.0) Hz; F = 1.1, p = 0.30 accounting for variance between MSNs; D1 blockade 4.9 (2.4–7.8) Hz; F = 2.2, p = 0.14 accounting for variance between MSNs; Figure 6—figure supplement 2).
 
 We noticed differences in MSN activity across the interval with D2 and D1 blockades at the individual MSN level (Figure 6B–D) as well as at the population level (Figure 6E). We used PCA to quantify effects of D2 or D1 blockade (Bruce et al., 2021; Emmons et al., 2017; Kim et al., 2017). We constructed principal components (PCs) from z-scored PETHs of firing rate from saline, D2 blockade, and D1 blockade sessions for all mice together. The first component (PC1), which explained 54% of neuronal variance, exhibited ‘time-dependent ramping’, or monotonic changes over the 6-s interval immediately after trial start (Figure 6F, G; variance for PC1 p = 0.001 vs 46 (45–47)% for any pattern of PC1 variance in random data; Narayanan, 2016). As with the optogenetic tagging dataset, trial-by-trial GLM slopes were strongly correlated with PC1 scores (PC1 scores vs GLM slope r = –0.66, p = 10–14), explaining 44% of variance. Interestingly, PC1 scores shifted with D2 blockade (Figure 6H; PC1 scores for D2 blockade: –0.6 (−3.8 to 4.7) vs saline: –2.3 (−4.2 to 3.2), F = 5.1, p = 0.03 accounting for variance between MSNs; no reliable effect of sex (F = 0.2, p = 0.63) or switching direction (F = 2.8, p = 0.10)). PC1 scores also shifted with D1 blockade (Figure 6H; PC1 scores for D1 blockade: –0.0 (−3.9 to 4.5), F = 5.8, p = 0.02 accounting for variance between MSNs; no reliable effect of sex (F = 0.0, p = 0.93) or switching direction (F = 0.9, p = 0.34)). There were no reliable differences in PC1 scores between D2 and D1 blockades. Furthermore, PC1 was distinct even when sessions were sorted independently and assumed to be fully statistically independent (Figure 6—figure supplement 1). Higher components explained less variance and were not reliably different between saline and D2 or D1 blockade. Taken together, this data-driven analysis shows that D2 and D1 blockades produced similar shifts in MSN population dynamics represented by PC1. When combined with the major contributions of D1/D2 MSNs to PC1 (Figure 3C) these findings indicate that pharmacological D2 and D1 blockades disrupt ramping-related activity in the striatum.
 
-## D2 and D1 blockades degrade MSN temporal decoding
+### D2 and D1 blockades degrade MSN temporal decoding
 
 Finally, we quantified striatal MSN temporal decoding via a naive Bayesian classifier that generates trial-by-trial predictions of time from MSN ensemble firing rates (Figure 7A–C; Bruce et al., 2021; Emmons et al., 2017). Our DDMs predict that disrupted temporal decoding would be a consequence of an altered DDM drift rate. We used leave-one-out cross-validation to predict objective time from the firing rate within a trial. Saline sessions generated strong temporal predictions for the first 6 s of the interval immediately after trial start (0–6 s; R2 = 0.91 (0.83–0.94)) with weaker predictions for later epochs (6–12 s: R2 = 0.55 (0.34–0.70); rank sum p = 0. 000002 vs 0–6 s, Cohen d = 2.0; 12–18 s: R2 = 0.18 (0.10–0.62); rank sum p = 0.000003 vs 0–6 s, Cohen d = 2.4; all analyses considered each epoch statistically independent; Figure 7D). We found that temporal decoding early in the interval (0–6 s) was degraded with either D2 blockade (R2 = 0.69 (0.58–0.84); rank sum p = 0.0002 vs saline, Cohen d = 1.4) or D1 blockade (R2 = 0.71 (0.47–0.87); rank sum p = 0.004 vs saline, Cohen d = 1.1; Figure 7D), consistent with predictions made from DDMs. Later in the interval (6–12 and 12–18 s), there were no significant differences between saline sessions and D2 or D1 blockade (Figure 7D).
 
@@ -119,65 +332,77 @@ In summary, we examined the role of dorsomedial striatal D2-MSNs and D1-MSNs dur
 
 ## Materials and methods
 
-## Rodents
+### Rodents
 
 All procedures were approved by the Institutional Animal Care and Use Committee (IACUC) at the University of Iowa, and all experimental methods were performed in accordance with applicable guidelines and regulations (Protocol #0062039). We used five cohorts of mice, summarized in Table 1: (1) 30 wild-type C57BL/6J mice (17 female) for behavioral experiments (Figure 1); (2) 4 Drd2-cre+ mice derived from Gensat strain ER44 (2 female) and 5 Drd1-cre+ mice derived from Gensat strain EY262 (2 female) for optogenetic tagging and neuronal ensemble recordings in Figures 2 and 3; (3) 10 Drd2-cre+ (5 female), and 6 Drd1-cre+ mice (3 female) for optogenetic inhibition (Figure 5) with 5 Drd2-cre+ and 5 Drd1-cre+ controls; (4) 10 wild-type mice for behavioral pharmacology (Figure 5); and (5) 11 mice (4 C57BL/6J (2 female), 5 Drd2-cre+ mice (2 female), and 2 Drd1-cre+ mice (0 female)) for combined behavioral pharmacology and neuronal ensemble recording (Figures 6 and 7; Table 1). Our recent work shows that D2 and D1 blockades have similar effects in both sexes (Stutt et al., 2024).
 
-## Interval timing switch task
+### Interval timing switch task
 
 We used a mouse-optimized operant interval timing task described in detail previously (Balci et al., 2008; Bruce et al., 2021; Tosun et al., 2016; Weber et al., 2023). Briefly, mice were trained in sound-attenuating operant chambers, with two front nosepokes flanking either side of a food hopper on the front wall, and a third nosepoke located at the center of the back wall. The chamber was positioned below an 8 kHz, 72 dB speaker (Figure 1A; MedAssociates, St. Albans, VT). Mice were 85% food restricted and motivated with 20 mg sucrose pellets (Bio-Serv, Flemington, NJ). Mice were initially trained to receive rewards during fixed ratio nosepoke response trials. Nosepoke entry and exit were captured by infrared beams. After shaping, mice were trained in the ‘switch’ interval timing task. Mice self-initiated trials at the back nosepoke, after which tone and nosepoke lights were illuminated simultaneously. Cues were identical on all trial types and lasted the entire duration of the trial (6 or 18 s). On 50% of trials, mice were rewarded for a nosepoke after 6 s at the designated first ‘front’ nosepoke; these trials were not analyzed. On the remaining 50% of trials, mice were rewarded for nosepoking first at the ‘first’ nosepoke location and then switching to the ‘second’ nosepoke location; the reward was delivered for initial nosepokes at the second nosepoke location after 18 s when preceded by a nosepoke at the first nosepoke location. Multiple nosepokes at each nosepoke were allowed. Early responses at the first or second nosepoke were not reinforced. Initial responses at the second nosepoke rather than the first nosepoke, alternating between nosepokes, going back to the first nosepoke after the second nosepoke were rare after initial training. Error trials included trials where animals responded only at the first or second nosepoke and were also not reinforced. We did not analyze error trials as they were often too few to analyze; these were analyzed at length in our prior work (Bruce et al., 2021).
 
 Switch response time was defined as the moment animals departed the first nosepoke before arriving at the second nosepoke. Critically, switch responses are a time-based decision guided by temporal control of action because mice switch nosepokes only if nosepokes at the first location did not receive a reward after 6 s. That is, mice estimate if more than 6 s have elapsed without receiving a reward to decide to switch responses. Mice learn this task quickly (3–4 weeks), and error trials in which an animal nosepokes in the wrong order or does not nosepoke are relatively rare and discarded. Consequently, we focused on these switch response times as the key metric for temporal control of action. Traversal time was defined as the duration between first nosepoke exit and second nosepoke entry and is distinct from switch response time when animals departed the first nosepoke. Nosepoke duration was defined as the time between first nosepoke entry and exit for the switch response times only. Trials were self-initiated, but there was an intertrial interval with a geometric mean of 30 s between trials.
 
-## Surgical and histological procedures
+### Surgical and histological procedures
 
 Surgical procedures were identical to methods described previously (Bruce et al., 2021). Briefly, mice were anesthetized using inhaled 4% isoflurane and surgical levels of anesthesia were maintained at 1–2% for the duration of the surgery. Craniotomies were drilled above bilateral dorsal striatal anatomical targets, and optogenetic viruses (AAV5-DIO-eNHPR2.0 (halorhodopsin), AAV5-DIO-ChR2(H134R)-mcherry (ChR2), or AAV5-DIO-cherry (control) from the University of North Carolina Viral Vector Core) were injected into the dorsal striatum (0.5 µl of virus, +0.9, ML +/–1.3, DV –2.7). Either fiber optics (Doric Lenses, Montreal Quebec; AP +0.9, ML +/–1.3, DV –2.5) or 4 × 4 electrode or optrode arrays (AP +0.4, ML –1.4, DV –2.7 on the left side only; Microprobes, Gaithersburg, MD) were positioned in the dorsal striatum. Holes were drilled to insert skull screws to anchor headcap assemblies and/or ground electrode arrays and then sealed with cyanoacrylate (‘SloZap’, Pacer Technologies, Rancho Cucamonga, CA), accelerated by ‘ZipKicker’ (Pacer Technologies) and methyl methacrylate (AM Systems, Port Angeles, WA). Following postoperative recovery, mice were trained on the switch task and acclimated to experimental procedures prior to undergoing experimental sessions.
 
-## Optogenetics
+### Optogenetics
 
 We leveraged cell-type-specific optogenetics to manipulate D2-MSNs and D1-MSNs in D2- or D1-cre mice. In animals injected with optogenetic viruses, optical inhibition was delivered via bilateral patch cables for the entire trial duration of 18 s via 589 nm laser light at 12 mW power on 50% of randomly assigned trials. To control for heating and nonspecific effects of optogenetics, we performed control experiments in mice without opsins using identical laser parameters in D2- or D1-cre mice (Figure 5—figure supplement 2). We did not stimulate for epochs less than the interval because we did not want to introduce a cue during the interval. For optogenetic tagging, putative D1- and D2-MSNs were optically identified via 473 nm photostimulation (Figure 2—figure supplement 1). Units with mean post-stimulation spike latencies of ≤5 ms and a stimulated-to-unstimulated waveform correlation ratio of >0.9 were classified as putative D2-MSNs or D1-MSNs (Ryan et al., 2018; Shin et al., 2018). Only one recording session was performed for each animal per day, and one recording session was included from each animal.
 
-## Behavioral pharmacology procedures
+### Behavioral pharmacology procedures
 
 C57BL/6J mice were injected IP 20–40 min before interval timing trials with either SCH23390 (C17H18ClNO; D1 blockade), sulpiride (C15H23N3O4S; D2 blockade), or isotonic saline. The sulpiride dosage was 12.5 mg/kg, 0.01 ml/g, and the SCH23390 was administered at a dosage of 0.05 mg/kg, 0.01 ml/g. Behavioral performance was compared with interval timing behavior on the prior day when isotonic saline was injected IP. Only one recording session was performed for each animal per day, and one recording session was included from saline, D2 blockade, and D1 blockade sessions.
 
-## Electrophysiology
+### Electrophysiology
 
 Single-unit recordings were made using a multi-electrode recording system (Open Ephys, Atlanta, GA). After the experiments, Plexon Offline Sorter (Plexon, Dallas, TX), was used to remove artifacts. PCA and waveform shape were used for spike sorting. Single units were defined as those (1) having a consistent waveform shape, (2) being a separable cluster in PCA space, and (3) having a consistent refractory period of at least 2 ms in interspike interval histograms. The same MSNs were sorted across saline, D2 blockade, and D1 blockade sessions by loading all sessions simultaneously in Offline Sorter and sorted using the preceding criteria. MSNs had to have consistent firing in all sessions to be included. Sorting integrity across sessions was quantified by comparing waveform similarity via correlation coefficients between sessions.
 
 Spike activity was analyzed for all cells that fired between 0.5 and 20 Hz over the entire behavioral session. Putative MSNs were further separated from striatal fast-spiking interneurons based on hierarchical clustering of the waveform peak-to-trough ratio and the half-peak width (fitgmdist and cluster.m; Figure 2—figure supplement 1; Berke, 2011). We calculated kernel density estimates of firing rates across the interval (–4 s before trial start to 22 s after trial start) binned at 0.2 s, with a bandwidth of 1. We used PCA to identify data-driven patterns of z-scored neuronal activity, as in our past work (Bruce et al., 2021; Emmons et al., 2017; Kim et al., 2017). The variance of PC1 was empirically compared against data generated from 1000 iterations of data from random timestamps with identical bins and kernel density estimates. Average plots were shown with Gaussian smoothing for plotting purposes only.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Following completion of experiments, mice were transcardially perfused with ice-cold 1× phosphate-buffered saline and 4% paraformaldehyde (PFA) after anesthesia using ketamine (100 mg/kg IP) and xylazine (10 mg/kg IP). Brains were then fixed in solutions of 4% PFA and 30% sucrose before being cryosectioned on a freezing microtome. Sections were stained for tyrosine hydroxylase with primary antibodies for >12 hr (rabbit anti-TH; Millipore MAB152; 1:1000) at 4°C. Sections were subsequently visualized with Alexa Fluor fluorescent secondary antibodies (goat anti-rabbit IgG Alexa 519; Thermo Fisher Scientific; 1:1000) matched to host primary by incubating 2 hr at room temperature. Histological reconstruction was completed using postmortem analysis of electrode placement by slide-scanning microscopy on an Olympus VS120 microscope (Olympus, Center Valley, PA).
 
-## Trial-by-trial GLMs
+### Trial-by-trial GLMs
 
 To measure time-related ramping over the first 6 s of the interval, we used trial-by-trial GLMs at the individual neuron level in which the response variable was firing rate and the predictor variable was time in the interval or nosepoke rate (Shimazaki and Shinomoto, 2007). For each neuron, its time-related ‘ramping’ slope was derived from the GLM fit of firing rate vs time in the interval, for all trials per neuron. GLMs accounted for nosepoke movements unless there were no nosepokes within the 0- to 6-s interval. All GLMs were run at a trial-by-trial level to avoid the effects of trial averaging (Latimer et al., 2015) as in our past work (Bruce et al., 2021; Emmons et al., 2017). We performed additional sensitivity analyses excluding outliers outside of 95% confidence intervals and measuring the firing rate from the start of the interval to the time of the switch response on a trial-by-trial level for each neuron.
 
-## Machine-learning analyses
+### Machine-learning analyses
 
 To predict time, we used a naive Bayesian classifier to evaluate neuronal ensemble decoding as in our past work (Emmons et al., 2020; Emmons et al., 2017; Gouvêa et al., 2015; Kim et al., 2017; Mello et al., 2015). Data from neurons with more than 20 trials across all mice with the goal of evaluating how the decoding of time is affected by the epoch in the interval and by D2/D1 blockade. To preclude edge effects that might bias classifier performance, we included data from 6 s before trial start and 6 s after the end of the interval. We used leave-one-out cross-validation to predict an objective time from the firing rate within a trial. Classifier performance was quantified by computing the R2 of objective time vs predicted time, only for bins during the interval (0–6, 6–12, and 12–18 s; see Figure 7). Classifier performance was compared using time-shuffled firing rates via a Wilcoxon signed-rank test.
 
-## Drift-diffusion models
+### Drift-diffusion models
 
-We constructed a four-parameter DDM (see Equations 1–3 in Results) that accounted for the ensemble threshold behavior observed in the neural data, then used it to simulate switch response times compatible with mice behavioral data. The model was implemented in MATLAB, starting from initial value b\begin{document}$b$\end{document} and with discrete computer simulation steps xnew=xold+(F−xold)DΔt+σΔtN(0,1)\begin{document}$x_{new}=x_{old}+ (F-x_{old})D\Delta t+\sigma \sqrt{\Delta t}N (0,1)$\end{document}. Here N(0,1)\begin{document}$N (0,1)$\end{document} represents random values generated from the standardized Gaussian distribution (mean = 0 and standard deviation = 1). The integration timestep was Δt=0.1\begin{document}$\Delta t=0.1$\end{document}. For each numerical simulation, the ‘switch response time’ was defined as the time t∗\begin{document}$t^{*}$\end{document} when variable x\begin{document}$x$\end{document} first reached the threshold value T=F(1−b/4)+(1−F)b/4\begin{document}$T=F (1-b/4)+ (1-F)b/4$\end{document} For each condition, we ran 500 simulations of the model (up to 25 s per trial) and recorded the switch response times. Examples of firing rate x\begin{document}$x$\end{document} dynamics are shown in Figure 4A, B. We observed that the distributions of interval timing switch response times could be fit by a gamma probability distribution function PDF(x)=βαΓ(α)xα−1e−βx\begin{document}$PDF (x)=\frac{\beta ^{\alpha }}{\mathrm{\Gamma } (\alpha)}\, x^{\alpha -1}\, e^{-\beta x}$\end{document} with shape α and rate β (see Figure 4—figure supplement 3 and Supplementary file 1). Tenfold cross-validation revealed highly stable fits between gamma, models, and data.
+We constructed a four-parameter DDM (see Equations 1–3 in Results) that accounted for the ensemble threshold behavior observed in the neural data, then used it to simulate switch response times compatible with mice behavioral data. The model was implemented in MATLAB, starting from initial value $b$ and with discrete computer simulation steps $x_{new}=x_{old}+(F−x_{old})DΔt+\sigma\sqrt{Δt}N(0,1)$. Here $N(0,1)$ represents random values generated from the standardized Gaussian distribution (mean = 0 and standard deviation = 1). The integration timestep was $Δt=0.1$. For each numerical simulation, the ‘switch response time’ was defined as the time $t^{∗}$ when variable $x$ first reached the threshold value $T=F(1−b/4)+(1−F)b/4$ For each condition, we ran 500 simulations of the model (up to 25 s per trial) and recorded the switch response times. Examples of firing rate $x$ dynamics are shown in Figure 4A, B. We observed that the distributions of interval timing switch response times could be fit by a gamma probability distribution function $PDF(x)=\frac{\beta^{\alpha}}{Γ(\alpha)}x^{\alpha−1}e^{−\betax}$ with shape α and rate β (see Figure 4—figure supplement 3 and Supplementary file 1). Tenfold cross-validation revealed highly stable fits between gamma, models, and data.
 
-## Selection of DDM parameters
+### Selection of DDM parameters
 
-Our goal was to build DDMs with dynamics that produce ‘response times’ according to the observed distribution of mice switch times. The selection of parameter values in Figure 4 was done in three steps. First, we fit the distribution of the mice behavioral data with a Gamma distribution and found its fitting values for shape αM and rate βM (Supplementary file 1 and Figure 4—figure supplement 3; R2 Data vs Gamma ≥0.94). We recognized that the mean μM\begin{document}$\mu _{M}$\end{document} and the coefficient of variation CVM\begin{document}$CV_{M}$\end{document} are directly related to the shape and rate of the Gamma distribution by formulas μM=αM/βM\begin{document}$\mu _{M}=\alpha _{M}/\beta _{M}$\end{document} and CVM=1/αM\begin{document}$CV_{M}=1/\sqrt{\alpha _{M}}$\end{document}. Next, we fixed parameters F\begin{document}$F$\end{document} and b\begin{document}$b$\end{document} in DDM (e.g., for D2-MSNs: F=1\begin{document}$F=1$\end{document}, b=0.52\begin{document}$b=0.52$\end{document}) and simulated the DDM for a range of values for D\begin{document}$D$\end{document} and σ\begin{document}$\sigma $\end{document}. For each pair (D,σ\begin{document}$D, \sigma $\end{document}), one computational ‘experiment’ generated 500 response times with mean μ and coefficient of variation CV\begin{document}$CV$\end{document}. We repeated the ‘experiment’ 10 times and took the group median of μ and CV\begin{document}$CV$\end{document} to obtain the simulation-based statistical measures μS\begin{document}$\mu _{S}$\end{document} and CVS\begin{document}$CV_{S}$\end{document}. Last, we plotted Eμ=|(μS−μM)/μM|\begin{document}$E^{\mu }=| (\mu _{S}-\mu _{M})/\mu _{M}|$\end{document} and Ecv=|CVS-CVM|\begin{document}$E^{cv}=|CV_{S}-CV_{M}|$\end{document}, the respective relative error and the absolute error to data (Figure 4—figure supplement 2). We considered that parameter values (D,σ\begin{document}$D, \sigma $\end{document}) provided a good DDM fit of mice behavioral data whenever Eμ≤0.05\begin{document}$E^{\mu }\leq 0.05$\end{document} and Ecv≤0.02\begin{document}$E^{cv}\mathrm \leq 0.02$\end{document} (Figure 4—figure supplement 2).
+Our goal was to build DDMs with dynamics that produce ‘response times’ according to the observed distribution of mice switch times. The selection of parameter values in Figure 4 was done in three steps. First, we fit the distribution of the mice behavioral data with a Gamma distribution and found its fitting values for shape αM and rate βM (Supplementary file 1 and Figure 4—figure supplement 3; R2 Data vs Gamma ≥0.94). We recognized that the mean $\mu_{M}$ and the coefficient of variation $CV_{M}$ are directly related to the shape and rate of the Gamma distribution by formulas $\mu_{M}=\alpha_{M}/\beta_{M}$ and $CV_{M}=1/\sqrt{\alpha_{M}}$. Next, we fixed parameters $F$ and $b$ in DDM (e.g., for D2-MSNs: $F=1$, $b=0.52$) and simulated the DDM for a range of values for $D$ and $\sigma$. For each pair ($D,\sigma$), one computational ‘experiment’ generated 500 response times with mean μ and coefficient of variation $CV$. We repeated the ‘experiment’ 10 times and took the group median of μ and $CV$ to obtain the simulation-based statistical measures $\mu_{S}$ and $CV_{S}$. Last, we plotted $E^{\mu}=|(\mu_{S}−\mu_{M})/\mu_{M}|$ and $E^{cv}=|CV_{S}-CV_{M}|$, the respective relative error and the absolute error to data (Figure 4—figure supplement 2). We considered that parameter values ($D,\sigma$) provided a good DDM fit of mice behavioral data whenever $E^{\mu}\leq0.05$ and $E^{cv}\leq0.02$ (Figure 4—figure supplement 2).
 
-## Analysis and modeling of mouse MSN ensemble recordings
+### Analysis and modeling of mouse MSN ensemble recordings
 
-Our preliminary analysis found that, for sufficiently large number of neurons (N > 11), each recorded ensemble of MSNs on a trial-by-trial basis could predict when mice would respond. We took the following approach: First, for each MSN, we convolved its trial-by-trial spike train Spk(t)\begin{document}$Spk (t)$\end{document} with a 1-s exponential kernel K(t)=we−t/w\begin{document}$K (t)=w e^{-t/w}$\end{document} if t>0\begin{document}$t\gt 0$\end{document} and K(t)=0\begin{document}$K(t)=0$\end{document} if  t≤0\begin{document}$t\leq 0$\end{document} (here w=1 s). Therefore, the smoothed, convolved spiking activity of neuron j\begin{document}$j$\end{document} (j=1,2,…N\begin{document}$j=1,2,\ldots N$\end{document}),xj(t)=(Spkj∗K)(t)=∫−∞∞K(s)Spkj(t−s)ds=∫0∞K(s)Spkj(t−s)ds\begin{document}$$\displaystyle  x_{j} (t)= \left (Spk_{j}*K\right) (t)= \int _{-\infty }^{\infty }K (s)Spk_{j}\left (t-s\right)ds= \int _{0}^{\infty }K (s)Spk_{j}\left (t-s\right)ds$$\end{document}
+Our preliminary analysis found that, for sufficiently large number of neurons (N > 11), each recorded ensemble of MSNs on a trial-by-trial basis could predict when mice would respond. We took the following approach: First, for each MSN, we convolved its trial-by-trial spike train $Spk(t)$ with a 1-s exponential kernel $K(t)=we^{−t/w}$ if $t>0$ and $K(t)=0$ if  $t\leq0$ (here w=1 s). Therefore, the smoothed, convolved spiking activity of neuron $j$ ($j=1,2,…N$),
 
-tracks and accumulates the most recent (one second, in average) firing-rate history of the j\begin{document}$j$\end{document} th MSN, up to moment t\begin{document}$t$\end{document}. We hypothesized that the ensemble activity (x1(t),x2(t),…,xN(t))\begin{document}$(x_{1} (t), x_{2}(t), \ldots , x_{N} (t))$\end{document}, weighted with some weights βj\begin{document}$\beta _{j}$\end{document} , could predict the trial switch time t∗\begin{document}$t^{*}$\end{document} by considering the sumx(t)=∑j=1Nβjxj(t)\begin{document}$$\displaystyle  x (t)= \sum \limits_{j=1}^{N}\beta _{j} x_{j}(t)$$\end{document}
+$$
+x_{j}(t)=(Spk_{j}∗K)(t)=\int_{−∞}^{∞}K(s)Spk_{j}(t−s)ds=\int_{0}^{∞}K(s)Spk_{j}(t−s)ds
+$$
 
-and the sigmoidy(t)=11+exp(−(x(t)−0.5)/t)=11+exp[−(β^0+∑j=1Nβ^jxj(t))]\begin{document}$$\displaystyle  y (t)=\frac{1}{1+{\rm exp} \left(-(x(t)-0.5)/t \right)}=\frac{1}{1+{\rm{exp}} \left[-\left(\hat{\beta}_0+\sum\limits_{j=1}^{N}{\hat{\beta}_jx_j(t)} \right) \right]} $$\end{document}
+tracks and accumulates the most recent (one second, in average) firing-rate history of the $j$ th MSN, up to moment $t$. We hypothesized that the ensemble activity $(x_{1}(t),x_{2}(t),…,x_{N}(t))$, weighted with some weights $\beta_{j}$ , could predict the trial switch time $t^{∗}$ by considering the sum
 
-that approximates the firing rate of an output unit. Here parameter k\begin{document}$k$\end{document} indicates how fast x(t)\begin{document}$x (t) $\end{document} crosses the threshold 0.5 coming from below (if k>0\begin{document}$k\gt 0$\end{document}) or coming from above (if k<0\begin{document}$k \lt 0$\end{document}) and relates the weights βj\begin{document}$\beta _{j}$\end{document} to the unknowns β^j=βj/k\begin{document}$\hat{\beta }_{j}= \beta _{j}/k$\end{document} and β^0=−0.5/k\begin{document}$\hat{\beta}_{0}=-0.5/k$\end{document}. Next, we ran a logistic fit for every trial for a given mouse over the spike count predictor matrix (x1(t),x2(t),…,xN(t))\begin{document}$(x_{1} (t), x_{2} (t), \ldots , x_{N} (t))$\end{document} from the mouse MSN recorded ensemble, and observed value t∗\begin{document}$t^{*}$\end{document}, estimating the coefficients β^0\begin{document}$\hat{\beta }_{0}$\end{document} and β^j\begin{document}$\overset{\hat }{\beta }_{j}$\end{document}, and so, implicitly, the weights βj\begin{document}$\beta _{j}$\end{document}. From there, we compute the predicted switch time tpred*\begin{document}$t_{pred}^{*}$\end{document} by condition x(t)=0.5\begin{document}$x(t)=0.5$\end{document}. Accuracy was quantified comparing the predicted accuracy within a 1-s window to switch time on a trial-by-trial basis (Figure 4—figure supplement 1).
+$$
+x(t)=\sumj=1N\beta_{j}x_{j}(t)
+$$
 
-## Statistics
+and the sigmoid
+
+$$
+y(t)=\frac{1}{1+exp(−(x(t)−0.5)/t)}=\frac{1}{1+exp[−(\beta^_{0}+\sumj=1N\beta^_{j}x_{j}(t))]}
+$$
+
+that approximates the firing rate of an output unit. Here parameter $k$ indicates how fast $x(t)$ crosses the threshold 0.5 coming from below (if $k>0$) or coming from above (if $k<0$) and relates the weights $\beta_{j}$ to the unknowns $\beta^_{j}=\beta_{j}/k$ and $\beta^_{0}=−0.5/k$. Next, we ran a logistic fit for every trial for a given mouse over the spike count predictor matrix $(x_{1}(t),x_{2}(t),…,x_{N}(t))$ from the mouse MSN recorded ensemble, and observed value $t^{∗}$, estimating the coefficients $\beta^_{0}$ and $\beta^_{j}$, and so, implicitly, the weights $\beta_{j}$. From there, we compute the predicted switch time $t_{pred}^{*}$ by condition $x(t)=0.5$. Accuracy was quantified comparing the predicted accuracy within a 1-s window to switch time on a trial-by-trial basis (Figure 4—figure supplement 1).
+
+### Statistics
 
 All data and statistical approaches were reviewed by the Biostatistics, Epidemiology, and Research Design Core (BERD) at the Institute for Clinical and Translational Sciences (ICTS) at the University of Iowa. All code and data are made available at https://narayanan.lab.uiowa.edu/article/datasets. We used the median to measure central tendency and the interquartile range to measure spread. We used Wilcoxon nonparametric tests to compare behavior between experimental conditions and Cohen’s d to calculate effect size. Analyses of putative single-unit activity and basic physiological properties were carried out using custom routines for MATLAB.
 

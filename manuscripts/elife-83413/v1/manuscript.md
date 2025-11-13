@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03wkt5x30 UMR 7179, Mécanismes Adaptatifs et Évolution (MECADEV), Muséum National d’Histoire Naturelle, CNRS Paris France
-2. https://ror.org/01wka8n18 Structure and Motion Laboratory, Department of Comparative Biomedical Sciences, Royal Veterinary College Hatfield United Kingdom
-3. https://ror.org/01dadvw90 UMR 7205, Institut de Systématique, Évolution, Biodiversité (ISYEB), Muséum National d’Histoire Naturelle, CNRS, Sorbonne Université, EPHE, UA, Paris, France Paris France
-4. https://ror.org/02en5vm52 UMR 7207, Centre de Recherche en Paléontologie - Paris (CR2P), Muséum National d’Histoire Naturelle, CNRS, Sorbonne Université Paris France
+1. UMR 7179, Mécanismes Adaptatifs et Évolution (MECADEV), Muséum National d’Histoire Naturelle, CNRS Paris France ([ROR:03wkt5x30](https://ror.org/03wkt5x30))
+2. Structure and Motion Laboratory, Department of Comparative Biomedical Sciences, Royal Veterinary College Hatfield United Kingdom ([ROR:01wka8n18](https://ror.org/01wka8n18))
+3. UMR 7205, Institut de Systématique, Évolution, Biodiversité (ISYEB), Muséum National d’Histoire Naturelle, CNRS, Sorbonne Université, EPHE, UA, Paris, France Paris France ([ROR:01dadvw90](https://ror.org/01dadvw90))
+4. UMR 7207, Centre de Recherche en Paléontologie - Paris (CR2P), Muséum National d’Histoire Naturelle, CNRS, Sorbonne Université Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
 
 † Corresponding author
 
@@ -26,11 +26,82 @@ Dimorphism has been reported in every major dinosaur clade and has often been at
 
 Here, we studied the intraspecific femoral variation among a remarkably dense and well preserved population of ornithomimosaurs (Allain et al., 2014, Allain et al., 2022) from the Angeac-Charente Lagerstätte (Lower Cretaceous of France). Rozada et al., 2014 and Rozada et al., 2021 demonstrated that at least 61 ornithomimosaur individuals belonged to the same herd and were deposited in a mass mortality event relying on several evidences (e.g. very limited transport; quality of bone preservation; abundance of individuals with a high skeletal representation preserved in a restricted spatial distribution; catastrophic age profile of the group; deposition of sediment and bones under coeval, poorly oxygenated burial and diagenesis conditions given by their rare earth elements and Yttrium profiles). Thus, the ornithomimosaur herd of Angeac-Charente represents a unique occasion to study subtle parameters such as intraspecific variation in extinct dinosaurs. Moreover, the exceptionally high minimal number of individuals among the herd, represented by tibiae and femora (Table 1), offers a singular opportunity to test for the presence of dimorphism and characterize its variation. Indeed, and in addition of being the most abundant bones discovered from the Angeac-Charente ornithomimosaur, many hypotheses of sexual dimorphism were formulated based on the hindlimb morphology of non-avian dinosaurs (Colbert, 1990; Raath, 1990; Larson, 1994; Benton et al., 2000; Britt and Chure, 2000; Carrano et al., 2002; Bunce et al., 2003; Piechowski et al., 2014) but also observed in extant archosaurs (Schnell et al., 1985; Farlow et al., 2005; Charuta et al., 2007; Bonnan et al., 2008; Elzanowski and Louchart, 2022).
 
+**Table 1.**
+ Number of femora and tibiae from the Angeac-Charente ornithomimosaur discovered between 2010 and 2020.Minimum Number of Elements (MNEs) and Minimum Number of Individuals (MNIs) are given for each fragmented and complete femora.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Femora</th>
+      <th>Tibiae</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left proximal (MNE)</td>
+      <td>31</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Right proximal (MNE)</td>
+      <td>35</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Left distal (MNE)</td>
+      <td>18</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Right distal (MNE)</td>
+      <td>22</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Left complete (MNE)</td>
+      <td>8</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Right complete (MNE)</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>MNI</td>
+      <td>46</td>
+      <td>61</td>
+    </tr>
+  </tbody>
+</table>
+
 We used a 3D geometric morphometric (3D GM) approach that combines anatomical landmarks and sliding semilandmarks along curves and surfaces on both complete and fragmented femora and tibiae (Figure 1—figure supplement 1A–B; Gunz et al., 2005; Gunz and Mitteroecker, 2013). This method is well suited to study biological objects, including limb bones, and to detect subtle intraspecific shape variations (Zelditch et al., 2012; Botton-Divet et al., 2016) such as dimorphism (Fabre et al., 2014). We then investigated the resulting dataset using PCAs and Gaussian mixture modeling (GMM) as clustering analyses. This clustering analysis calculates the number of Gaussian distributions present in a dataset by maximum likelihood estimations and has been demonstrated as a well-suited method for the identification of dimorphism (Godfrey et al., 1993; Dong, 1997; Fabre et al., 2014; Manin et al., 2016; Mallon, 2017; Saitta et al., 2020).
 
 ## Results
 
 We highlight a dimorphic variation in femora from the ornithomimosaur herd of Angeac-Charente (Figure 1A–B). This dimorphic variation is localized along the diaphysis (i.e. lateromedial curvature) and toward the distal epiphysis (i.e. lateromedial width) of the femur (Figure 1C–D). Distributions along the PC1 of complete femora (28.8%) and distal epiphyses (27.9%) are best described by two clusters with a ratio close to 1:1 according to GMM analyses (see Supplementary file 1 for details). PC1 scores from both analyses are not significantly correlated to the log centroid size, indicating that size-related effects have no impact on the observed dimorphism (p-value>0.1 for complete femora and distal epiphyses, Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-v1.jpg)
+
+**Figure 1.:** Minimal (left) and maximal (right) mean shapes per group for (C) complete femora in posterior view and (D) distal epiphyses in posterior (top) and distal (bottom) views. Abbreviations: L, lateral; P, posterior; Pr, proximal.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp5-v1.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp6-v1.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/83413/elife-83413-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** This figure highlights that the same dimorphism observed in this study is represented along PC2 when taphonomically distorted specimens are included. The taphonomically distorted specimens are located in the most negative area of the PC1 and are spread along the PC2; hence most likely interfering with the biological intraspecific variation.
 
 The most important morphological variation of complete femora is a medial to lateral curvature of the femur (Figure 1C). The proximal third of the femur appears deviated toward the lateral side in specimens on the negative part of the PC1 axis, whereas specimens located on the positive part have straight to medially curved femora (Figure 1C). Coincidentally, the femoral head is directed medially in the negative cluster while it is inclined ventromedially in the positive one (Figure 1C). Regarding distal epiphyses, we selected 6 (out of 10) epiphyses from complete femora because the other 4 were taphonomically altered or pyrite encrusted only in the distal area, which would appear relatively more important in analyses restricted only to this area rather than on the complete morphology (Supplementary file 2). Nevertheless, for distal epiphyses, the most important morphological variation along PC1 is the expansion of the lateromedial width relative to the anteroposterior length, which is greater in specimens on the positive part of the PC1 axis than on the negative one (Figure 1D). In addition, we highlight that the 6 distal epiphyses from complete femora are consistently attributed to the same clusters between the two analyses (Figure 1A, B; Supplementary file 2). Hence, our study shows that the straighter the shaft is, the more robust the epiphysis is and that this relationship is dimorphic.
 
@@ -48,20 +119,20 @@ We did not identify any other dimorphism in either the proximal part of the femu
 
 Our results did not permit to confidently sex each morphotype. Most modern occurrences of femoral sexual dimorphism indicate a wider distal epiphysis among males than females, but Elzanowski and Louchart, 2022 showed that the opposite was also true for modern and subfossils ostriches. Furthermore, our results indicated that femora with the narrowest distal epiphyses (females in most of modern occurrences) had a laterally deviated shaft. However, Duggan et al., 2015 demonstrated that only juvenile male Pekin ducks had a laterally deviated shaft, which is not congruent with our results that the widest epiphyses were associated with a straighter morphotype. Paleohistological analyses could enable to verify sex assignment by assessing the presence of medullary bone, as some gravid females may have died during their egg-laying cycle at the time of the mass-mortality event recorded at Angeac-Charente. Indeed, medullary bone was recently demonstrated as probably the most reliable indicator of sex with an extensive distribution across the skeleton (Canoville et al., 2019). A paleohistological investigation could also confirm the ontogenetic homogeneity among our femoral sample, as recommended by Griffin and Nesbitt, 2016, Hone et al., 2017 and Mallon, 2017.
 
-## Conclusion
+### Conclusion
 
 Our results demonstrate that the femoral morphology among a large herd of coeval ornithomimosaurs is dimorphic. We identify bimodal distributions along size-independent features that were already reported to vary between sexes in modern archosaurs and other tetrapods (e.g. the width of the distal epiphyses and the lateral deviation of the shaft). Therefore, we infer these features to indicate sexual dimorphism in the Angeac-Charente ornithomimosaurs according to the EPB approach. Our findings inform about the intraspecific variation in non-avian theropods and emphasize the need for description of size-independent dimorphism in modern and closely related taxa with a priori knowledge of the sex. In the future, our results should be completed by paleohistological studies to (1) sex each morphotype and (2) identify the extent of ontogenetic variations within our sample. Additionally, we show that the sex-ratio of the Angeac-Charente ornithomimosaur is close to 1:1 and thus, likely Fisherian (Fisher, 1930). It was demonstrated that in extant archosaurs, Fisherian populations are only observed among clutches and hatchlings (Mayr, 1939; Clutton-brock, 1986; Liker et al., 2013) and become generally biased toward females in sub-adult and adult populations, as demonstrated on crocodilians (Woodward and Murray, 1993; González et al., 2019) and ratites (Magige, 2012; Prokopenko et al., 2021). Therefore, paleohistological investigations could help characterize the variation of sex ratio along ontogeny in an extinct dinosaur population and inform if it was truly Fisherian, unlike their extant relatives, or if it also experienced skewness along aging. More broadly, understanding how sex impacted the morphology of an extinct species could shed light on complex evolutionary mechanism such as trade-off between sexually dimorphic features, ecological adaptations, and life-history traits.
 
 ## Materials and methods
 
-## Sample and data acquisition
+### Sample and data acquisition
 
 Several complete and fragmented femora and complete tibiae from the Angeac-Charente ornithomimosaur were discovered between 2010 and 2020 (Table 1). We removed 158 specimens that were too fragmented and altered by too much oxidized pyrite and trampling (femora: 6 complete, 37 proximal, and 19 distal epiphyses; tibiae: 4 complete, 36 proximal, and 56 distal epiphyses). We selected only fragmented femora that preserved: (1) the most proximal point of the fourth trochanter for proximal epiphyses; (2) the most proximal point of the anteromedial flange for distal epiphyses (Figure 1—figure supplement 4A). In total, we digitized 152 specimens (femora: 13 complete, 29 proximal, and 21 distal epiphyses; tibiae: 21 complete, 30 proximal, and 38 distal epiphyses) using the Artec EVA with Artec Studio Professional v. 12.1.1.12 (Artec 3D, Luxembourg, Luxembourg) and the NextEngine with Scan Studio Pro v. 2.0.2 (Next Engine Inc, Santa Monica, United States) for a few specimens (Supplementary file 3). After re-examination of digitized specimens, we removed 3 complete femora, 14 proximal and 8 distal epiphyses, and 4 complete tibiae that were distorted (Figure 1—figure supplement 7). We thus integrated 10 complete femora, 13 distal and 15 proximal femoral epiphyses, and 17 complete tibiae.
 
-## 3D geometric morphometrics
+### 3D geometric morphometrics
 
 3D GM is a well-established method for quantifying biological shape variations and has already enabled to identify sexual dimorphism in past studies (Kaliontzopoulou et al., 2007; Cavaignac et al., 2016). We followed a high-density morphometrics approach using a combination of single anatomical landmarks and sliding semilandmarks along curves and surfaces (Bookstein, 1997; Gunz et al., 2005). Indeed, most anatomical landmarks are usually concentrated on both ends of limb bones, hence why the use of sliding semilandmarks on the surface was justified on the shaft (Gunz and Mitteroecker, 2013; Botton-Divet et al., 2016). We digitized 619 landmarks on complete femora (25 anatomical landmarks, 99 sliding semilandmarks on curves, and 495 on surfaces), 479 on proximal (11 anatomical landmarks, 26 sliding semilandmarks on curves, and 442 on surfaces) and distal epiphyses (10 anatomical landmarks, 45 sliding semilandmarks on curves, and 424 on surfaces), and 725 on complete tibiae (23 anatomical landmarks, 219 sliding semilandmarks on curves, and 483 on surfaces; see details in Figure 1—figure supplement 4; Supplementary files 4 and 5) using the IDAV Landmark software v. 3.0.0.6 (Wiley et al., 2005). We digitized anatomical landmarks and sliding semilandmarks along curves on each specimen and sliding semilandmarks along surfaces on one specimen (ANG 10 90), referred to as ‘the template’ hereafter (Cornette et al., 2013). We then automatically projected the sliding semilandmarks along surfaces of the template onto every other specimen following the spline relaxation of semilandmarks along curves using the function ‘placePatch’ of the Morpho package v. 2.8 (Schlager, 2017). Then, we performed 5 iterations of another spline relaxation between landmark configurations of the template and the ones from every other specimen using the function ‘relaxLM’ of Morpho. Finally, we performed a partial Procrustes fitting in order to compute a Procrustes consensus of every configuration and used it as a target for the 2 last iterations of spline relaxation using the function ‘slideLM’ of Morpho. These 3 steps of spline relaxations (Source code 2) ensured that every semilandmark position was geometrically homogeneous in all specimens (Gunz et al., 2005). Finally, we performed a generalized Procrustes analysis (GPA) using the function ‘gpagen’ of the R package geomorph v. 3.3.1 (Adams et al., 2013) in order to align each femur in the Cartesian coordinate system by superimposing them based on their landmark configuration and to rule out the effect of size, location, and orientation of the different landmark configurations (Gower, 1975; Rohlf and Slice, 1990; Zelditch et al., 2012).
 
-## Statistical analyses and clustering
+### Statistical analyses and clustering
 
 We performed a PCA in order to reduce dimensionalities of the variation and isolate different components of shape variation (Gunz and Mitteroecker, 2013). The quantification of repeatability was performed by digitizing landmarks iteratively (n=10) on three morphologically close specimens for complete femora and tibiae, which resulted in 30 configurations for each bone. We then computed a PCA for the two bones (30 configurations each), which showed that all 10 repetitions for each specimen were grouped together and isolated from those of the other specimens along the first two PC axes (Figure 1—figure supplements 5 and 6 ). This ensured that biological variation was greater than the operator effect, which refers to the ability to reproduce accurately the same landmark configuration multiple times on the same specimen. As recommended by Mallon, 2017, we performed mixture modeling analyses without a priori knowledge about the number of groups in order to estimate how many morphological clusters would stand out in our dataset, if any, along each PC axis. Gaussians functions are well suited to describe a biological population, especially when applied to a morphometric dataset (Baylac et al., 2003). We used the R package Mclust v. 5.4.7, which calculates the most probable number of clusters in a dataset based on the detection of Gaussian distributions by maximum likelihood estimations (Scrucca et al., 2016). Bayesian Information Criteria (BIC; e.g. an approximation of Bayes factors for comparing likelihood) were used to choose which model, among the several ones available, fitted best with our dataset (i.e. the model with the highest BIC), while simultaneously estimating the number of Gaussian distributions (Fraley and Raftery, 2007). We computed 3D visualizations that highlighted which feature varied the most along each axis, and between clusters when dimorphism was identified. To do so, we first computed a 3D consensual mesh of all specimens of the sample by using the function ‘tps3d’ from the R package Morpho v. 2.8 (Schlager, 2017) which performed a spline relaxation that minimized the bending energy of a thin plate spline (TPS) between the template landmark configuration and a mean landmark configuration (obtained during the GPA). Then, the function used the resulting TPS deformation to warp the 3D mesh of the template onto the mean shape in order to compute a 3D consensual mesh (Bardua et al., 2019). Next, we calculated the mean coordinates of every specimen in each cluster along the PC axis identified as dimorphic by the mixture modeling analysis. Finally, we warped the mean shape, and its associated 3D mesh, onto the mean landmark configurations of each cluster by using the ‘shape.predictor’ function of geomorph v. 3.3.1 (Adams et al., 2013) in order to visualize the 3D shape variation associated with the dimorphic PC axis. We studied the allometry within our sample (i.e. the size-related morphological variation [Klingenberg, 2016]), using Pearson’s correlation between each PC scores and the log-transformed centroid sizes using the R function ‘cor.test.’ The code for the totality of these steps is provided in Source code 1.

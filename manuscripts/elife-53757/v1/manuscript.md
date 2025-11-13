@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Eukaryotic 5’−3’ mRNA decay plays important roles during development and in response to stress, regulating gene expression post-transcriptionally. In Caenorhabditis elegans , deficiency of DCAP-1/DCP1, the essential co-factor of the major cytoplasmic mRNA decapping enzyme, impacts normal development, stress survival and ageing. Here, we show that overexpression of dcap-1 in neurons of worms is sufficient to increase lifespan through the function of the insulin/IGF-like signaling and its effector DAF-16/FOXO transcription factor. Neuronal DCAP-1 affects basal levels of INS-7, an ageing-related insulin-like peptide, which acts in the intestine to determine lifespan. Short-lived dcap-1 mutants exhibit a neurosecretion-dependent upregulation of intestinal ins-7 transcription, and diminished nuclear localization of DAF-16/FOXO. Moreover, neuronal overexpression of DCP1 in Drosophila melanogaster confers longevity in adults, while neuronal DCP1 deficiency shortens lifespan and affects wing morphogenesis, cell non-autonomously. Our genetic analysis in two model-organisms suggests a critical and conserved function of DCAP-1/DCP1 in developmental events and lifespan modulation.
+Eukaryotic 5’−3’ mRNA decay plays important roles during development and in response to stress, regulating gene expression post-transcriptionally. In Caenorhabditis elegans, deficiency of DCAP-1/DCP1, the essential co-factor of the major cytoplasmic mRNA decapping enzyme, impacts normal development, stress survival and ageing. Here, we show that overexpression of dcap-1 in neurons of worms is sufficient to increase lifespan through the function of the insulin/IGF-like signaling and its effector DAF-16/FOXO transcription factor. Neuronal DCAP-1 affects basal levels of INS-7, an ageing-related insulin-like peptide, which acts in the intestine to determine lifespan. Short-lived dcap-1 mutants exhibit a neurosecretion-dependent upregulation of intestinal ins-7 transcription, and diminished nuclear localization of DAF-16/FOXO. Moreover, neuronal overexpression of DCP1 in Drosophila melanogaster confers longevity in adults, while neuronal DCP1 deficiency shortens lifespan and affects wing morphogenesis, cell non-autonomously. Our genetic analysis in two model-organisms suggests a critical and conserved function of DCAP-1/DCP1 in developmental events and lifespan modulation.
 
 ## Introduction
 
@@ -40,29 +40,63 @@ In the current study, we provide evidence that DCAP-1 activity in the nervous sy
 
 ## Results
 
-## Neuronal decapping regulates lifespan
+### Neuronal decapping regulates lifespan
 
 We have previously reported that expression of a dcap-1::gfp transgene driven by the native dcap-1 promoter, can fully rescue all the defects of dcap-1(tm3163) mutants, including their short lifespan (Rousakis et al., 2014). In order to explore the tissue-specific requirement of DCAP-1 in lifespan regulation, we generated a series of transgenic lines that overexpress this dcap-1::gfp fusion gene in different tissues of dcap-1 worms. We found that restoring the function of dcap-1 gene specifically in the nervous system (unc-119p-synEx293 array) could significantly increase lifespan of dcap-1 mutants, rendering it comparable to that of wild type (wt/N2) animals at 20°C (Figure 1A). Similar results were obtained by creating a second transgenic strain that expresses the fusion under the control of a different pan-neuronal promoter (rab-3p-synEx345) (Figure 1—source data 1). This effect was also evident at 25°C (Figure 1E), where dcap-1(tm3163) phenotypes are exaggerated and lifespan is even shorter (Rousakis et al., 2014). In contrast, overexpression of dcap-1::gfp in the epidermis (col-10p-synEx364) or in muscles (hlh-1p-synEx326) only modestly improved lifespan at 20°C, and had practically no effect at 25°C (Figure 1B,C,F,G). An intermediate result was observed in dcap-1 mutants overexpressing dcap-1::gfp in the intestine (ges-1p-synEx328) at both 20°C and 25°C (Figure 1D,H).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig1-v1.jpg)
 
-**Figure 1.:** dcap-1 rescues the short lifespan of dcap-1 mutants.Lifespan of dcap-1 worms overexpressing a dcap-1::gfp fusion in neurons, epidermis, muscles or intestine at (A–D) 20°C and (E–H) 25°C. Statistical significance is calculated in comparison to dcap-1. ****p<0.0001. Log-rank (Mantel-Cox) test.Figure 1—source data 1.dcap-1(tm3163) worms that overexpress a dcap-1::gfp fusion tissue-specifically at 20°C.Figure 1—source data 2.dcap-1(tm3163) worms that overexpress a dcap-1::gfp fusion tissue-specifically at 25°C.
+**Figure 1.:** Lifespan of dcap-1 worms overexpressing a dcap-1::gfp fusion in neurons, epidermis, muscles or intestine at (A–D) 20°C and (E–H) 25°C. Statistical significance is calculated in comparison to dcap-1. ****p<0.0001. Log-rank (Mantel-Cox) test.
 
 The results of our complementation analysis suggest that dcap-1 gene activity affects lifespan, albeit to a different extent depending on the tissue. The fact that overexpression of this dcap-1::gfp transgene exclusively in the nervous system was able to fully rescue the short-lived mutant phenotype, suggests a strong positive regulation of lifespan even though dcap-1 is missing from other tissues. We therefore examined the impact of overexpressing all tissue-specific dcap-1::gfp fusions on the lifespan of otherwise wt animals. As shown in Figure 2A, neuronal overexpression of dcap-1::gfp under the unc-119 promoter (synEx293) resulted in a significant increase of both median and maximum lifespan of N2 worms, by ~16% and~26%, respectively (Figure 2—source data 1). Comparable results were obtained when expression was driven by rab-3 promoter (synEx345,~13% and~18% lifespan increase) (Figure 2—source data 1). In agreement with our observations from the complementation analysis, expression in either muscles (synEx326) or epidermis (synEX364) did not have any effect on the longevity of wt animals, whereas a smaller extension of lifespan (~8% in median and ~10% in maximum) was achieved by overexpressing dcap-1 in the intestine (synEx328) (Figure 2B, C, D). Most importantly, lifespan extension in all cases was accompanied by an analogous delay in the onset of age-dependent movement impairment, which is considered a reliable marker of ageing (Son et al., 2019), with worms remaining responsive to touch longer than their respective controls (Video 1). Therefore, neuronal (and to a lesser extent intestinal) overexpression of dcap-1 can extend the lifespan and healthspan of both dcap-1 and wt animals. Moreover, the mechanism underlying their longevity completely depends on mRNA decapping, as the effect of neuronal or intestinal overexpression was absent in dcap-2(ok2023) mutants that lack decapping catalytic subunit activity (Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig2-v1.jpg)
 
-**Figure 2.:** dcap-1 extends lifespan through mRNA decapping, DAF-16/FOXO and IIS.Lifespan at 20°C of (A–D) wt worms overexpressing a dcap-1::gfp fusion in neurons, epidermis, muscles or intestine, (E) worms overexpressing neuronal or intestinal dcap-1::gfp in dcap-2 mutant genetic background, (F) worms overexpressing neuronal dcap-1::gfp in daf-16 mutant genetic background, (G) worms overexpressing neuronal dcap-1::gfp under post-developmental daf-16 RNAi knockdown, (H) worms overexpressing neuronal dcap-1::gfp during post-developmental daf-2 RNAi knockdown. *p<0.05, **p<0.01, ****p<0.0001. Log-rank (Mantel-Cox) test.Figure 2—source data 1.dcap-1::gfp fusion tissue-specifically in wtgenetic background at 20°C.Figure 2—source data 2.daf-2 or daf-16 at 20°C.Figure 2—source data 3.dcap-2(ok2023) worms that overexpress a dcap-1::gfp fusion tissue-specifically at 20°C.
+**Figure 2.:** Lifespan at 20°C of (A–D) wt worms overexpressing a dcap-1::gfp fusion in neurons, epidermis, muscles or intestine, (E) worms overexpressing neuronal or intestinal dcap-1::gfp in dcap-2 mutant genetic background, (F) worms overexpressing neuronal dcap-1::gfp in daf-16 mutant genetic background, (G) worms overexpressing neuronal dcap-1::gfp under post-developmental daf-16 RNAi knockdown, (H) worms overexpressing neuronal dcap-1::gfp during post-developmental daf-2 RNAi knockdown. *p<0.05, **p<0.01, ****p<0.0001. Log-rank (Mantel-Cox) test.
 
-## Neuronal decapping regulates lifespan through IIS and DAF-16/FOXO
+![Video 1.](https://cdn.elifesciences.org/articles/53757/elife-53757-video1.mp4.jpg)
+
+### Neuronal decapping regulates lifespan through IIS and DAF-16/FOXO
 
 Control of lifespan by genetic manipulations in the nervous system often involves the action of neuroendocrine signals that adjust the function of longevity-regulating genetic pathways, most of which converge at DAF-16 transcription factor (Sun et al., 2017). To evaluate the effect of daf-16 deficiency on the longevity of animals overexpressing neuronal dcap-1, we transferred synEx293 (unc-119p::dcap-1::gfp) transgene in worms homozygous for the daf-16(mu86) null allele. Neuronal dcap-1 overexpression under such DAF-16-deficient conditions did not have any impact on longevity, with daf-16(mu86);synEx293 animals living as daf-16(mu86) mutants (Figure 2F). Even post-developmental knockdown of daf-16 by RNAi was sufficient to largely suppress the long lifespan of worms overexpressing neuronal dcap-1 (Figure 2G). The little residual longevity observed in these animals is most likely to reflect the inability of post-developmental RNAi to completely eliminate DAF-16 activity. Collectively, our results suggest that the effect of neuronal DCAP-1 in adult life is mediated by DAF-16. It is noteworthy that we did not find any significant difference in lifespan between double dcap-1(tm3163);daf-16(mu86) and single daf-16(mu86) mutants, suggesting that loss of dcap-1 reduces lifespan through negative regulation of DAF-16 activity or that daf-16 is epistatic to dcap-1 in lifespan determination (Figure 2—source data 2).
 
 Given that C. elegans neurons are fairly refractory to RNAi (Kamath et al., 2003) our data suggest that neuronal DCAP-1 acts in a cell non-autonomous manner, involving signals that influence DAF-16 behavior in distal tissues. The prevalent pathway that integrates intercellular signals to regulate DAF-16 activity, with a great impact on longevity, is IIS. We thus reassessed the lifespan of synEx293 (unc-119p::dcap-1::gfp) animals, under conditions of reduced IIS, caused by post-developmental knockdown of insulin/IGF-1 receptor gene daf-2. As expected, daf-2 RNAi resulted in extreme longevity in wt animals but completely masked the effect of neuronal dcap-1 overexpression, which failed to further extend lifespan (Figure 2H). This lack of an additive effect indicates that decapping in the nervous system acts through IIS to regulate DAF-16 activity.
 
-## Neuronal dcap-1 regulates INS-7 to confer longevity
+### Neuronal dcap-1 regulates INS-7 to confer longevity
 
 In C. elegans, DAF-2 receives input from at least 40 insulin-like peptides (ILPs) that act as agonists or antagonists to regulate stress resistance, reproduction, development and ageing (Fernandes de Abreu et al., 2014). Expression of ILPs has been detected in diverse tissues, but interestingly, those that regulate lifespan are expressed mainly in the nervous system and often act in non-neuronal cells to influence DAF-16 activity and ageing (Artan et al., 2016; Murphy et al., 2007; Libina et al., 2003). We therefore examined the effect of dcap-1 depletion or neuronal dcap-1 overexpression on ins-7, daf-28, ins-33, ins-1 and ins-6 ILPs with a well-established role in neuroendocrine lifespan control (Artan et al., 2016; Murphy et al., 2007). Our qRT-PCR analysis revealed that although daf-28, ins-33, ins-1 and ins-6 mRNA levels are similar among all genetic backgrounds, ins-7 abundance is almost doubled in young dcap-1 animals (1 day old), and even more upregulated in mid-aged mutants (9 days old), compared to wt worms of the same age ( Figure 3A). Importantly, mRNA levels of ins-7 were significantly lower in mid-aged synEx293 worms (that overexpress neuronal dcap-1) paralleled to wt (Figure 3A). INS-7 is a DAF-2 agonist, expressed predominantly in neurons and scarcely in the intestine of young animals, but in aged worms intestinal expression is considerably enhanced (Murphy et al., 2007). In line with this, our results show an increase of ins-7 mRNA abundance in aged worms of all genotypes. However, this age-dependent increment from days 1 to 9 is significantly enhanced in dcap-1 (seven times) compared to wt (5.5 times), and suppressed in neuronal dcap-1 overexpressing worms (2.5 times).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-v1.jpg)
+
+**Figure 3.:** (A) mRNA levels of lifespan-regulating ILPs in young (1 day old) and mid-aged (9 days old) wt, dcap-1 and neuronal dcap-1 overexpressing worms. (B) Fluorescence intensity of ins-7p::gfp reporter in whole worms or head neurons of wt and dcap-1 animals. (C–D) Total fluorescence intensity of ins-7p::gfp reporter in neurosecretion defective unc-31 or unc-13 mutants. (E) ins-7 mRNA levels in 9 days old worms overexpressing dcap-1::gfp in neurons (synEx293) or intestine (synEx328). (F) Total fluorescence intensity of ins-7p::gfp reporter in ins-7 mutants. (G) ins-7 mature mRNA/pre-mRNA ratio in ins-7 and dcap-1;ins-7 animals that carry a neuronally expressed unc-119p::ins-7 transgene. (H) Lifespan of wt and neuronal dcap-1 overexpressing worms sensitized for neuronal RNAi during post-developmental ins-7 RNAi knockdown. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Error bars indicate mean ± SD. Unpaired t-test (A–G); Log-rank (Mantel-Cox) test (F).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative confocal images (maximum projections) of wt or dcap-1(tm3163) worms that express gfp under the control of ins-7 promoter (array wwEX66) at various ages. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Fluorescence intensity of ges-1p::GFP reporter in wild type and dcap-1 mutant worms at day 1 of adulthood. (B) Representative fluorescent images of wt and dcap-1 mutant worms expressing a ges-1p::gfp transgene. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Representative confocal images (maximum projections) of unc-31(e928) or dcap-1(tm3163);unc-31(e928) worms that express gfp under the control of ins-7 promoter (array wwEX66) at various ages. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Total fluorescence intensity of ins-7p::gfp reporter in neurosecretion defective unc-31 and dcap-1;unc-31 1 day and 3-day-old adults under control conditions (C) or daf-16 knockdown (daf-16i).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Representative confocal images (maximum projections) of unc-13(e450) or dcap-1(tm3163);unc-13(e450) worms that express gfp under the control of ins-7 promoter (array wwEX66) at various ages. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Representative confocal images (maximum projections) of ins-7(ok1573) or dcap-1(tm3163);ins-7(ok1573) worms that express gfp under the control of ins-7 promoter (array wwEX66) at various ages. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** eft-3 (F31E3.5) mature mRNA/pre-mRNA ratio in ins-7 and dcap-1;ins-7 animals that carry a neuronally expressed unc-119p::ins-7 transgene.
 
 In order to clarify whether DCAP-1 affects ins-7 mRNA abundance transcriptionally or post-transcriptionally, we monitored the fluorescence of wt and dcap-1 animals carrying a transcriptional ins-7p::gfp reporter (wwEx66 array) (Ritter et al., 2013), at various ages of their adult lifespan (days 1 to 15). We detected fluorescence mainly in head neurons and some intestinal cells, with advanced age resulting in increased intestinal fluorescence for both strains (Figure 3B—figure supplement 1). Even so, total fluorescence intensity of dcap-1;wwEx66 worms was greater at all examined ages compared to single wwEx66, with the difference fluctuating between 1.6- and 2.1-fold (Figure 3B). Such an increase in promoter activity argues in favor of DCAP-1 regulating ins-7 expression at the level of transcription. In particular, we observed that this effect is restricted to the intestine of dcap-1;wwEx66 worms, as there was no discernible effect on neuronal cells of the head region or elsewhere, in respect to wwEx66 animals (Figure 3B—figure supplement 1). This induction is specific for ins-7 promoter since intestinal fluorescence of a ges-1p::gfp transgene did not show an analogous increase in dcap-1 background (Figure 3—figure supplement 2). Therefore, the observed differences in ins-7 mRNA abundance between wt and dcap-1 probably reflect transcriptional changes in the intestine.
 
@@ -72,19 +106,39 @@ Altogether, our data show that DCAP-1 activity in neurons regulates ins-7 expres
 
 Previous work has shown that INS-7 serves as a carrier of FOXO-to-FOXO intertissue signaling coordinating the rate of ageing (Murphy et al., 2007). Consequently, the deficit in ins-7 induction during ageing in neuronal dcap-1 overexpressing animals, could be the reason for their prolonged lifespan. To support this theory, we assessed the longevity of wt and synEx345 (rab-3p::dcap-1::gfp) worms under post-developmental ins-7 RNAi that should eliminate differences in ins-7 expression between strains. To achieve efficient systemic RNAi, both strains were genetically modified for enhanced neuronal RNAi (see Materials and methods). As expected, ins-7 RNAi increased lifespan of wt, but failed to cause an additive effect and further promote longevity in synEx345 animals (Figure 3H). These data suggest that low levels of INS-7 may trigger lifespan extension in worms overexpressing neuronal dcap-1.
 
-## Neuronal decapping affects stress resistance in aged animals
+### Neuronal decapping affects stress resistance in aged animals
 
 It is well documented that stress resistance and longevity are frequently linked aspects of organismal physiology, with IIS and DAF-16 providing a link between them. Thus, we examined whether dcap-1 depletion affects the translocation of DAF-16 to the nucleus during heat-shock by exposing wt and dcap-1 young adults that carry a daf-16::gfp translational fusion (muIs71) at high temperature (35°C). Notably, although muIs71 control animals started to show an increase in DAF-16::GFP positive nuclei after just 15 min of heat-shock (data not shown), no such response was evident in dcap-1;muIs71 worms, unless we exposed them for more than 30 min, and the number of DAF-16::GFP nuclei per animal was significantly lower in dcap-1 mutants compared to wt at all examined time points, including unstressed worms (Figure 4A—figure supplement 1). Therefore, dcap-1 depletion seems to hinder the translocation of DAF-16 to the nucleus, under normal conditions and the early stages of heat-shock; longer exposure times (over 60 min) ultimately surmounted this inhibitory effect, leading to almost complete translocation of DAF-16::GFP to the nucleus in both strains (data not shown). Conversely, neuronal overexpression of DCAP-1 (synEx293) in worms carrying a daf-16a::rfp translational fusion (lpIs12) revealed a significant increase in the number of red fluorescent nuclei per synEx293;lpIs12 animal, compared to single lpIs12 worms, even in the absence of stress (Figure 4B—figure supplement 2). The difference in DAF-16 nuclear accumulation between the two strains remained significant after 5 min heat-shock but started to diminish at 15 min, as nuclear enrichment is enhanced in both backgrounds (Figure 4B—figure supplement 2). The different fluorophores combined with variations in transgene copy-number could account for the differential kinetics of DAF-16a::GFP and DAF-16a::RFP translocation in the same background (Figure 4—source data 1).
 
 Given that dcap-1 depletion affects DAF-16 localization, we postulated that restoring dcap-1 function in neurons could also rescue the reported mutant’s sensitivity to stress (Rousakis et al., 2014). Unexpectedly, we found that neuronal rescuing of dcap-1 by either pan-neuronal promoter (synEx293/synEx345) failed to alleviate the sensitivity of 1 day old dcap-1 adults in either heat-sock or oxidative stress (Figure 4C). Accordingly, neuronal expression of dcap-1 (synEx293) in wt background did not increase tolerance to heat shock or oxidative stress of young adult worms (Figure 4D). However, the ability of an organism to cope with stress declines with age and mechanisms that preserve cellular homeostasis and genome integrity are of great importance during ageing. In line with this notion, prolonged exposure to low concentration of sodium arsenite revealed that synEx293 provides resistance to oxidative stress in ageing animals, which becomes evident after the 3rd day of adulthood, and is maintained throughout their lifespan (Figure 4E). Similarly, synEx293 animals exhibited increased resistance when subjected to heat shock at the 9th day of their adult life, compared to their wt counterparts (Figure 4F). This implies that neuronal dcap-1 overexpression provides increased stress resistance in old ages, probably as a result of a slower ageing rate.
 
-## Expression levels of DCP1 affect lifespan in D. melanogaster
+![Figure 4.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig4-v1.jpg)
+
+**Figure 4.:** (A) Quantification of DAF-16a::GFP positive nuclei during early stages of heat shock response in 1-day-old wt and dcap-1 mutant worms. (B) Quantification of DAF-16a::RFP positive nuclei during early stages of heat shock response in 1-day-old wt and neuronal dcap-1::gfp overexpressing worms. (C) Survival of 1-day-old dcap-1 worms that express dcap-1::gfp in their neurons, after acute exposure to high temperature or high concentration of sodium arsenite. (D) Survival of 1-day-old wt worms overexpressing neuronal dcap-1::gfp after acute exposure to high temperature or high concentration of sodium arsenite. (E) Survival of wt worms overexpressing neuronal dcap-1::gfp during sustained exposure to low concentration of sodium arsenite. (F) Survival of 9 days old wt worms overexpressing neuronal dcap-1::gfp after acute exposure to high temperature. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Error bars indicate mean ± SD. Unpaired t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Representative confocal images (maximum projections) of wt and dcap-1(tm3163) worms that express a daf-16a::gfp fusion under the control of the native daf-16 promoter, after mild heat shock at 35°C. Arrowheads point to nuclei. Scale bar = 50 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Representative confocal images (maximum projections) of wt and neuronal dcap-1 overexpressing worms (synEx293) that express a daf-16a::rfp fusion under the control of the native daf-16 promoter, after mild heat shock at 35°C. Arrowheads point to nuclei. Scale bar = 50 μm.
+
+### Expression levels of DCP1 affect lifespan in D. melanogaster
 
 Given the strict evolutionary conservation of both the 5’−3’ mRNA decay machinery and the neuronal mechanisms of longevity, we reasoned that the connection between neuronal decapping and ageing might not be restricted to C. elegans. We therefore studied this relationship in the fly D. melanogaster. Because null mutants of DCP1 (the ortholog of dcap-1) are pupal lethal (Lin et al., 2006), we specifically induced knock-down of DCP1 in the nervous system, by crossing two independent UAS:IRDCP1 lines with elav:GAL4, which is expressed in neurons at all developmental stages (Robinow and White, 1988). The subsequent neuron-specific knockdown of DCP1, verified by qRT-PCR (Figure 5A), resulted in a significant reduction of lifespan, as elav:GAL4 >UAS:IRDCP1 progeny of either UAS:IRDCP1 strain were extremely short-lived compared to their parental elav:GAL4 flies at 25°C, and at 29°C where UAS/GAL4 system is most effective (Figure 5B, C). While this is a strong hint that neuronal mRNA decapping is involved in lifespan regulation in Drosophila, reduced longevity of these animals could also arise from a general sickness due to malfunction of the decapping complex.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig5-v1.jpg)
+
+**Figure 5.:** (A) DCP1 mRNA levels in heads of two fly strains subjected to neuronal DCP1 knockdown. (B, C) Lifespan of flies subjected to neuronal DCP1 knockdown. (D) Lifespan of flies that neuronally overexpress a DCP1:eGFP fusion post-developmentally. (E, F) Malformations of adult flies subjected to neuron-specific DCP1 knockdown during their development (see text). Arrowheads point to wing morphology, arrows to the difference in cuticle tanning and asterisks to the crossing of postscutellar bristles. **p<0.01, ****p<0.0001. Error bars indicate mean ± SD. Unpaired t-test (A); Log-rank (Mantel-Cox) test (B–D).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** DCP1 mRNA levels in heads of flies with expanded or non-expanded wings, subjected to neuronal DCP1 knockdown.
+
 Next, we examined whether neuronal overexpression of DCP1 has the opposite effect and induces longevity, similarly to worms. We generated a UAS:DCP1:eGFP strain and crossed it with elav:GAL4 flies to achieve overexpression of DCP1:eGFP transgene in the nervous system. In contrast to our expectations, elav:GAL4 >UAS:DCP1:eGFP flies grown at 25°C or 29°C did not live longer than their parental elav:GAL4 strain (Figure 5—source data 1). However, given the implication of neuronal DCP1 in development, we argued that abnormally high expression caused by the transgene might be harmful during early life stages, masking or counteracting any potential lifespan-extending effect of DCP1 overexpression during adulthood. For this reason, we used GAL80ts, a temperature-sensitive inducible GAL4 inhibitor, to switch on neuronal DCP1:eGFP transgene overexpression after completion of development. elav:GAL4 >UAS:DCP1:eGFP;GAL80ts flies were grown at the permissive temperature for GAL80ts (18°C) and transferred to the restrictive temperature (29°C) upon the onset of adulthood. Interestingly, these flies that overexpress neuronal DCP1 post-developmentally exhibited a significant increase of both median (~42%) and maximum (~27%) lifespan compared to their parental elav:GAL4 strain (Figure 5D). Thus, high levels of DCP1 in neurons (or neuron precursors) are detrimental during development, but have an opposing lifespan-extending effect during adulthood.
 
-## Neuronal DCP1 affects wing imaginal disc and adult wing development
+### Neuronal DCP1 affects wing imaginal disc and adult wing development
 
 While studying elav:GAL4 >UAS:IRDCP1 flies we noticed that neuronal DCP1 knockdown causes a characteristic phenotype, defined by malformed/unexpanded wings (Figure 5E) in ~50% of the population at 25°C (n = 178 for GD31442 and n = 244 for KK105638). This effect did not correlate with the efficiency of the knockdown, since all flies exhibited the same levels of DCP1 mRNA regardless of their wing phenotype (Figure 5—figure supplement 1), neither with their lifespan, which was short in all cases. Nonetheless, penetrance reached a remarkable 95% at 29°C (n = 167). Notably, wing malformations always coincided with the presence of additional morphological aberrations, which include an unexpanded thorax (judged by the crossing of postscutellar bristles) and the lack of cuticle tanning (melanisation and hardening) (Figure 5E and F). Such defects indicate that mRNA decapping in the nervous system can affect development in non-neuronal cells of D. melanogaster. Like most external structures of the mature fly, adult wings derive from imaginal discs, which are created during larval development and undergo extreme changes during metamorphosis (Fristrom, 1993). To examine whether the origins of wing malformation can be traced in early events of their morphogenesis, we dissected wing imaginal discs from third instar larvae with neuronal DCP1 knockdown (elav:GAL4 >UAS:IRDCP1) and examined cell and tissue morphology by visualizing F-actin. Despite the neuronal DCP1 knockdown, 15 out of 23 isolated discs exhibited widespread structural anomalies, associated with abnormal epithelial folding, which were absent in discs from age-matched larvae of parental UAS:IRDCP1 and elav:GAL4 strains (Figure 6A).
 
@@ -95,6 +149,14 @@ While studying elav:GAL4 >UAS:IRDCP1 flies we noticed that neuronal DCP1 knockd
 To rule out any leakage in the specificity of our system that could lead to DCP1 knockdown in wing disc epithelial cells and affect their morphology cell autonomously (Casas-Tintó et al., 2017), we monitored elav:GAL4-driven GFP fluorescence in tissues derived from elav:GAL4 >UAS:DCP1:eGFP third instar larvae. As expected we observed strong fluorescence in the majority of neuronal brain cells but we detected no fluorescent signal in wing imaginal discs (Figure 6B). Additionally, we used an en:GAL4 driver to examine the effect of DCP1 deficiency in wing disc epithelial cells by knocking down its expression only in the posterior part of the disc. This did not result in any structural differences between the anterior and the posterior part of en:GAL4 >UAS:IRDCP1 wing discs, both of which had normal morphology in 12 out of 13 examined wing imaginal discs (Figure 6C). These results implicate neuronal DCP1 in a cell non-autonomous mechanism that uses neuronally derived signals to orchestrate wing disc development.
 
 Interestingly, abnormal wing discs and malformed adult wings appeared with a similar frequency of 50–60% in elav:GAL4 >UAS:IRDCP1 flies grown at 25°C, suggesting a cause-and-effect relationship between them. To uncouple these two phenotypes, we performed temperature-shift experiments to temporally control the induction of neuronal DCP1 knockdown. Unsurprisingly, elav:GAL4 >UAS:IRDCP1;tubGAL80ts animals were superficially wild type at 18°C (‘DCP1-ON’ state), and exhibited both abnormal wing discs and malformed wings when grown at 29°C (‘DCP1-OFF’ state). Switching between DCP1-ON and OFF states at different developmental stages (Figure 7) revealed that restricting neuronal knockdown in embryonic and larval stages leads to the formation of abnormal wing discs (five out of nine examined wing imaginal discs displayed abnormalities in tissue folding and F-actin accumulation) (Figure 7—figure supplement 1) but does not affect the phenotype of adult wings. Congruently, starting knockdown from the white pupa stage, when wing discs are already formed is sufficient for causing malformed wings. Therefore, abnormalities in wing imaginal discs tissue pattern and aberrant adult wing morphology represent two unconnected outcomes of neuronal DCP1 deficiency, which occur independently at different developmental stages. Of note, we were not able to induce malformation of adult wings by switching to DCP1-OFF state past the 2-day pupa stage, while switching to DCP1-ON after the 3-day pupa stage resulted in adults with malformed wings (Figure 7). Taking into account, the potential latency between any temperature shift and the subsequent effect in gene expression, we can safely place the crucial period where neuronal DCP1 activity impacts adult wing development between the white pupa and the 3-day pupa stages. Supporting this notion, switching to DCP1-ON at white pupa and back to DCP1-OFF at pharate pupa stage results in adults with normal wings (Figure 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig7-v1.jpg)
+
+**Figure 7.:** The crucial period where DCP1 activity affects adult wing expansion is traced between the 1-day and the 3-day pupa stages.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53757/elife-53757-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Phalloidin staining of wing imaginal discs derived from 3rd instar larvae subjected to neuron-specific DCP1 knockdown at 29°C. Yellow arrows indicate aberrant F-actin accumulation and red asterisks abnormalities in epithelial folding. Scale bar = 50 μm.
 
 ## Discussion
 
@@ -116,34 +178,310 @@ Collectively, our data have uncovered an evolutionarily conserved role for the r
 
 ## Materials and methods
 
-## C. elegans strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>dcap-1</td>
+      <td>www.wormbase.org</td>
+      <td>CELE_Y55F3AM.12</td>
+      <td>WormBase ID: WBGene00021929</td>
+    </tr>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>dcap-2</td>
+      <td>www.wormbase.org</td>
+      <td>CELE_F52G2.1</td>
+      <td>WormBase ID: WBGene00003582</td>
+    </tr>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>daf-16</td>
+      <td>www.wormbase.org</td>
+      <td>CELE_R13H8.1</td>
+      <td>WormBase ID: WBGene00000912</td>
+    </tr>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>ins-7</td>
+      <td>www.wormbase.org</td>
+      <td>CELE_ZK1251.2</td>
+      <td>WormBase ID: WBGene00002090</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>DCP1</td>
+      <td>www.flybase.org</td>
+      <td>CG11183</td>
+      <td>FlyBase ID: FBgn0034921</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>OP50</td>
+      <td>For standard NGM plates</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>HT115</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>HT115(DE3)</td>
+      <td>For RNAi plates</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>C. elegans strains used in this study</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>D. melanogaster strains used in this study</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primers used in this study</td>
+      <td>This study</td>
+      <td></td>
+      <td>Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>promoterless dcap-1::gfp</td>
+      <td>Borbolis et al., 2017 doi: 10.1098/rsob.160313</td>
+      <td>PS#302</td>
+      <td>pBluescript KS(+);4181 bp dcap-1::gfp</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>unc-119p::dcap-1::gfp</td>
+      <td>Borbolis et al., 2017 doi: 10.1098/rsob.160313</td>
+      <td>PS#293</td>
+      <td>pBluescript KS(+);2200 bp unc-119p;4181 bp dcap-1::gfp</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rab-3p::dcap-1::gfp</td>
+      <td>This study</td>
+      <td>PS#345</td>
+      <td>pBluescript KS(+); 1200 bp rab-3p;4181 bp dcap-1::gfp</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ges-1p::dcap-1::gfp</td>
+      <td>Borbolis et al., 2017 doi: 10.1098/rsob.160313</td>
+      <td>PS#328</td>
+      <td>pBluescript KS(+);1541 bp ges-1p;4181 bp dcap-1::gfp</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hlh-1p::dcap-1::gfp</td>
+      <td>Borbolis et al., 2017 doi: 10.1098/rsob.160313</td>
+      <td>PS#326</td>
+      <td>pBluescript KS(+);3100 bp hlh-1p; 4181 bp dcap-1::gfp</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>col-10p::dcap-1::gfp</td>
+      <td>Borbolis et al., 2017 doi: 10.1098/rsob.160313</td>
+      <td>PS#364</td>
+      <td>pBluescript KS(+);2000 bp col-10p; 4181 bp dcap-1::gfp</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ges-1p::gfp</td>
+      <td>This study</td>
+      <td>PS#176</td>
+      <td>pPD95.77;1541 bp ges-1p</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>unc-119p::ins-7</td>
+      <td>This study</td>
+      <td>PS#478</td>
+      <td>pBluescript SK II; 2200 bp unc-119p; 1082 bp ins-7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UAS:DCP1:eGFP</td>
+      <td>This study</td>
+      <td>PS#394</td>
+      <td>pUASTattB; 1116 bp dcp1; 924 bp egfp</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>daf-16 RNAi</td>
+      <td>This study</td>
+      <td>PS#48</td>
+      <td>pPD129.36(L4440);1721 bp genomic DNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>daf-2 RNAi</td>
+      <td>This study</td>
+      <td>PS#36</td>
+      <td>pPD129.36(L4440);1393 bp genomic DNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ins-7 RNAi</td>
+      <td>This study</td>
+      <td>PS#452</td>
+      <td>pPD129.36(L4440);743 bp genomic DNA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep spin Miniprep Kit (50)</td>
+      <td>QIAGEN</td>
+      <td>QIA.27104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiaquick PCR purification kit</td>
+      <td>QIAGEN</td>
+      <td>QIA.28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleospin RNA XS</td>
+      <td>Macherey-Nagel</td>
+      <td>740902.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FIREScipt RT cDNA Synthesis kit</td>
+      <td>SOLIS BIODYNE</td>
+      <td>06-15-00200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Maxima H Minus First Strand cDNA Synthesis Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>K1682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA SYBR FAST 2X MasterMix, Universal</td>
+      <td>Kapa Biosystems</td>
+      <td>KK4602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA oligos synthesis</td>
+      <td>IDT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tri Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>FUdR</td>
+      <td>Sigma-Aldrich</td>
+      <td>F0503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>Graphpad Software</td>
+      <td>N/A</td>
+      <td>www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Image J</td>
+      <td>N/A</td>
+      <td>imagej.net/Fiji</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator CS6</td>
+      <td>Adobe</td>
+      <td></td>
+      <td>www.adobe.com/products/illustrator.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS6</td>
+      <td>Adobe</td>
+      <td></td>
+      <td>www.adobe.com/products/photoshop.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HCI Imaging</td>
+      <td>HAMAMATSU</td>
+      <td></td>
+      <td>hcimage.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite Advanced Fluorescence</td>
+      <td>Leica</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains and culture conditions
 
 Standard methods of culturing and handling worms were used (Brenner, 1974). Worms were cultured on NGM plates seeded with Escherichia coli OP50. RNAi experiments were performed on plates seeded with HT115(DE3) bacteria, expressing dsRNA for the indicated gene. For their preparation, bacteria transformed with the corresponding RNAi constructs were grown overnight at 37°C in LB medium with ampicillin (50 μg/ml) and tetracycline (10 μg/ml). On the following day, fresh cultures with ampicillin were induced with 1 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) and seeded on RNAi plates. Bacteria carrying the empty vector (pL4440) were treated likewise and used as control cultures. Whenever it was deemed necessary, bacterial lawn was killed by UV irradiation and plates where supplemented with 50 μg/ml 5-fluoro-2’-deoxyuridine (FUdR) to prevent progeny growth. Wild type Bristol N2 and mutant strains were provided by the Caenorhabditis Genetics Center (CGC, University of Minnesota), which is supported by NIH Office of Research Infrastructure Programs (P40 OD010440). dcap-1(tm3163) mutant strain was provided by the Mitani Laboratory through the National Bio-Resource of the MEXT, Japan. All C. elegans strains used in this study are presented in Supplementary file 3. All single mutants were crossed at least three times with N2 and double mutants were generated by crossing the corresponding strains. Relevant mutations were tracked in F2 progeny either by PCR or phenotypic selection. Primers used for genotyping are presented in Supplementary file 5. BRF410 transgenic animals were generated by microinjection of plasmid DNA into to the gonad of dcap-1(tm3163) young adults, using rol-6(su1006) as a co-transformation marker. Multiple lines were observed and screened for the representative expression pattern (Mello and Fire, 1995). To enhance the effectiveness of neuronal RNAi by feeding, strains that express SID-1 dsRNA transporter ectopically in neurons were used (Calixto et al., 2010).
 
-## D. melanogaster strains and culture conditions
+### D. melanogaster strains and culture conditions
 
 All fly stocks and crosses were raised on standard cornmeal medium and kept at 25°C except for temperature shift experiments. elav:GAL4 (P{w[+mW.hs]=GawB}elav[C155] – BL#458) and en:GAL4 (y[1] w[*]; P{w[+mW.hs]=en2.4 GAL4}e16E – BL#30564) driver strains were obtained by Bloomington Drosophila Stock Center (BDSC). UAS:IRDCP1 strains were obtained from Vienna Drosophila Resource Center (VDRC – ID GD31442 and KK105638). UAS:DCP1:eGFP was generated by microinjection of the appropriate construct in embryos that carry the attP element in the 86Fb site (BestGene). All D. melanogaster strains used in this study are presented in Supplementary file 4.
 
-## Constructs
+### Constructs
 
 For C. elegans RNAi constructs, a corresponding gene-specific genomic DNA fragment was inserted in L4440 feeding vector (pPD129.36) (Timmons and Fire, 1998). In the case of daf-16 and daf-2, a 1.7 kb HindIII/XhoI and a 1.4 kb BamHI/XhoI fragment were used, respectively. For ins-7 RNAi, a 750 bp fragment was amplified by PCR and inserted as an XbaI/XhoI fragment. To generate the rab-3p::dcap-1::gfp construct, a 1.2 kb DNA fragment was amplified from genomic DNA by PCR and inserted as a PstI/BamHI fragment in a previously described promoterless dcap-1::gfp vector (Borbolis et al., 2017). For the unc-119p::ins-7 construct, a 2.2 kb fragment, corresponding to the promoter of unc-119, was amplified from genomic DNA by PCR and cloned into pBluescript SK II as an XhoI/PstI fragment, followed by a 1.1 kb fragment containing ins-7 coding region and its 3’ UTR, which was amplified from genomic DNA by PCR and cloned as PstI/XbaI fragment. For the ges-1p::gfp construct, a 1.5 kb PstI fragment, amplified from genomic DNA by PCR was cloned into pPD95.77 gfp-containing vector. D. melanogaster’s DCP1:eGFP construct was generated by inserting a 1.1 kb EcoRI/BglII fragment containing DCP1 coding sequence (amplified from cDNA clone GH04763 Drosophila Genomics Resource Center) and a 924 bp BglII/XhoI fragment containing the eGFP sequence (amplified from vector pEGFP-N1 (Clonetech)) into pUASTattB vector Drosophila Genomics Resource Center). All primers used for the amplification of insert fragments are shown in Supplementary file 5.
 
-## Lifespan assays
+### Lifespan assays
 
 C. elegans lifespan analysis was conducted at 20°C or at 25°C as described previously (Syntichaki et al., 2007). Briefly, mid to late L4 larvae of each strain were transferred to NGM plates (30–40 per plate) seeded with OP50 or HT115 (for RNAi) bacteria and moved to fresh plates every 2–4 days. Viability was scored daily and worms that failed to respond to stimulation by touch were considered dead. Bagged or raptured worms and animals that crawled off the plates are referred as censored in the analysis. In D. melanogaster lifespan assays, the desired male flies were crossed with appropriate virgin females and F1 progeny were divided in vials of 20–30 individuals. Vials were incubated at the desired temperature inclined in order to prevent drowning. Flies were transferred to fresh ones every 2–4 days and viability was scored daily. Flies that died accidentally or escaped were scored as censored. All crosses and lifespan assays were carried out at 29°C, with the exception of post-developmental DCP1 overexpression where crosses were performed at 18°C and progeny were transferred at 29°C as 1 day old adults. Statistical analysis was performed by comparing each population to the appropriate control and p-values were determined using the log-rank (Mantel-Cox) test.
 
-## RNA isolation and quantitative reverse transcription PCR (qRT-PCR)
+### RNA isolation and quantitative reverse transcription PCR (qRT-PCR)
 
 Total RNA was prepared form frozen worm pellets (200–300 worms per sample) or fly heads (at least 10 per sample) of the indicated genetic background and age, using Tri Reagent (Sigma-Aldrich) or NucleoSpin RNA XS kit (Macherey-Nagel). C. elegans worms were cultured at 20°C in the presence of 50 μM FUdR to avoid progeny growth. At least three populations were harvested and analyzed independently in each experiment. D. melanogaster flies were raised in the indicated temperature until they reached the desired age or developmental stage where their heads were dissected and frozen. Quality and quantity of RNA samples were determined using Nanodrop 2000 Spectrophotometer (Thermo Scientific). Reverse transcription was carried out with FIREScipt RT cDNA Synthesis KIT (Solis BioDyne) and quantitative PCR was performed using KAPA SYBR FAST Universal Kit (Kapa Biosystems) in the MJ MiniOpticon system (BioRad). Relative amounts of mRNA were determined using the comparative Ct method for quantification and each sample was independently normalized to its endogenous reference (ama-1 for C. elegans, Rpp20 for D. melanogaster). Gene expression data are presented as the mean fold change ± SEM of all biological replicates relative to control. Statistical analysis was performed by comparing each sample to the appropriate control and p-values were determined using unpaired t-test. Primer sequences used for qRT-PCR are shown in Supplementary file 5.
 
-## Microscopy
+### Microscopy
 
 Microscopic analysis of fluorescent C. elegans worms was performed by monitoring levamisole-treated animals mounted on 3% agarose pads on glass microscope slides. Images were captured by confocal microscopy using a Leica TCS SP5 II laser scanning confocal imaging system on a DM6000 CFS upright microscope and a 10x objective or by fluorescent microscopy using a Leica DMRA upright fluorescent microscope equipped with a Hamamatsu ORCA-flash 4.0 camera and 20x or 40x objectives. Microscopy settings were kept stable throughout each experiment. All worms were cultured at 20°C in the presence of 50 μM FUdR to avoid progeny growth. DAF-16::GFP and DAF-16::RFP animals were fixed with 4% PFA in 1xPBS for 10 min and washed twice with M9 buffer prior to visualization to avoid DAF-16 translocation as result of handling. ins-7p::gfp and ges-1p::gfp driven fluorescence intensity was measured with ImageJ 1.52p (Fiji). For ins-7p::gfp sum slices projections of z-stacks were used. Fluorescence of 20–30 worms was measured for each strain and time point. DAF-16::GFP positive nuclei were counted manually using maximum intensity projections of z-stacks generated in ImageJ. DAF-16::RFP-positive nuclei were counted using Fiji macro scripts, which we developed for this purpose. Approximately 20 worms per strain and time point were scored. In all cases, the mean ± SEM of calculated values in each time point was plotted. Statistical analysis was performed by comparing each sample to the appropriate control in the same time point and p-values were determined using unpaired t-test. Microscopic analysis of D. melanogaster imaginal discs and brains was performed after dissection in 1xPBS using fine forceps. The tissues were fixed with 4% PFA in 1xPBS for 10–20 min in RT and washed with 1xPBS. F-actin was labelled using Alexa-Fluor-488 phalloidin. Mounting of tissues was performed using Vectashield. Images were captured using Leica SP5 II laser scanning confocal imaging system on a DMI6000 CFS inverted microscope and a 20x objective. Shown images are single optical sections.
 
-## Stress resistance assays
+### Stress resistance assays
 
 Heat shock assays in 1-day-old worms were performed by shifting synchronous populations from 20°C to 35°C for 6 hr. In the case of 9-day-old adults, worms were incubated at 35°C for 8 hr in plates seeded with UV-killed bacteria, supplemented with 50 μg/ml FUdR. Survival was scored after 16 hr of recovery at 20°C. Acute oxidative stress was inflicted by transferring 1-day-old worms to plates seeded with UV-killed bacteria containing 5 mM sodium arsenite. Survival was scored after 24 hr. For chronic oxidative stress 1-day-old adults were transferred to plates seeded with UV-killed bacteria containing 2.5 mM sodium arsenite and viability was scored daily. In all cases, the mean ± SEM of at least three independent experiments was plotted. Statistical analysis was performed by comparing each sample to the appropriate control and p-values were determined using unpaired t-test.
 
-## Statistics
+### Statistics
 
 Statistical analysis in all case was performed with GraphPad Prism version 8.0.0 for Windows (GraphPad Software, San Diego, California USA, www.graphpad.com.). Significance is depicted as follows: **** p<0.0001; *** p=0.0001–0.001; ** p=0.001–0.01; * p=0.01–0.05; ns indicates not significant with p-value≥0.05.

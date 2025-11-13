@@ -17,12 +17,12 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Biology, University of Oxford Oxford United Kingdom
-2. https://ror.org/016gb1631 Synthetic and Systems Biology Unit, Biological Research Centre, Eötvös Loránd Research Network Szeged Hungary
-3. https://ror.org/01pnej532 Doctoral School of Multidisciplinary Medical Sciences, University of Szeged Szeged Hungary
-4. https://ror.org/05v9jqt67 Guangdong Provincial Key Laboratory of Veterinary Pharmaceutics Development and Safety Evaluation, South China Agricultural University Guangzhou China
-5. https://ror.org/04kx2sy84 Fujian Provincial Key Laboratory of Soil Environmental Health and RegulaWon, College of Resources and Environment, Fujian Agriculture and Forestry University Fuzhou China
-6. https://ror.org/04v3ywz14 Beijing Advanced Innovation Centre for Food Nutrition and Human Health, College of Veterinary Medicine, China Agricultural University Beijing China
+1. Department of Biology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Synthetic and Systems Biology Unit, Biological Research Centre, Eötvös Loránd Research Network Szeged Hungary ([ROR:016gb1631](https://ror.org/016gb1631))
+3. Doctoral School of Multidisciplinary Medical Sciences, University of Szeged Szeged Hungary ([ROR:01pnej532](https://ror.org/01pnej532))
+4. Guangdong Provincial Key Laboratory of Veterinary Pharmaceutics Development and Safety Evaluation, South China Agricultural University Guangzhou China ([ROR:05v9jqt67](https://ror.org/05v9jqt67))
+5. Fujian Provincial Key Laboratory of Soil Environmental Health and RegulaWon, College of Resources and Environment, Fujian Agriculture and Forestry University Fuzhou China ([ROR:04kx2sy84](https://ror.org/04kx2sy84))
+6. Beijing Advanced Innovation Centre for Food Nutrition and Human Health, College of Veterinary Medicine, China Agricultural University Beijing China ([ROR:04v3ywz14](https://ror.org/04v3ywz14))
 
 † Corresponding author
 
@@ -42,21 +42,172 @@ MCR-1 transfers phosphoethanolamine (pEtN) to lipid-A in the cell membrane, resu
 
 In this article, we test the hypothesis that evolving colistin resistance via MCR gene acquisition provides bacteria with increased resistance to host AMPs. mcr-1 is usually carried on conjugative plasmids from a diversity of plasmid incompatibility types (such as IncX4, IncI2, IncHI2, and IncP1) that carry a large number of housekeeping and cargo genes (Wang et al., 2018; Yang et al., 2017). We assessed the importance of this diversity by transferring a diversity of naturally occurring plasmids and synthetic MCR-1 expression vectors to a single recipient strain of E. coli. To assess the impact of MCR on resistance to host AMPs, we screened a panel of strains carrying naturally occurring and synthetic MCR plasmids against a collection of AMPs. Given the importance of agricultural animals as reservoirs of mcr-1, we tested AMPs that play important roles in the innate immunity of humans, pigs, and chickens (Table 1). Next, we examined the role of MCR-1 in complex host environments and bacterial virulence using human serum resistance assays and in vivo virulence assays in the Galleria mellonella infection model system. The key innovation in this study is that we have taken a systematic approach to testing the pleiotropic effects of the dominant mechanism of colistin resistance evolution, including assessing the impact of AMP resistance on bacterial virulence.
 
+**Table 1.**
+ List of natural mobile colistin resistance (MCR) plasmids and antimicrobial peptides (AMPs) used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">AMPs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Abbreviation</td>
+      <td>Major cell and tissue sources</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LL-37 cathelicidin</td>
+      <td>LL37</td>
+      <td>Epithelial cells of the testis, skin, gastrointestinal tract, respiratory tract, and in leukocytes, such as monocytes, neutrophils, T cells, NK cells, and B cells</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Human beta-defensin-3</td>
+      <td>HBD3</td>
+      <td>Neutrophils and epithelial surfaces (e.g., skin, oral, mammary, lung, urinary, eccrine ducts, and ocular)</td>
+    </tr>
+    <tr>
+      <td>Cecropin P1*</td>
+      <td>CP1</td>
+      <td>Small intestine</td>
+      <td rowspan="5"></td>
+    </tr>
+    <tr>
+      <td>PR39</td>
+      <td>PR39</td>
+      <td>Mucosa and lymphatic tissue of the respiratory tract</td>
+    </tr>
+    <tr>
+      <td>Protegrin 1</td>
+      <td>PRO1</td>
+      <td>Bone marrow, leukocytes, and neutrophils</td>
+    </tr>
+    <tr>
+      <td>Prophenin-1</td>
+      <td>PROPH</td>
+      <td>Bone marrow and leukocytes</td>
+    </tr>
+    <tr>
+      <td>PMAP-23</td>
+      <td>PMAP23</td>
+      <td>Myeloid tissue, bone marrow, and liver</td>
+    </tr>
+    <tr>
+      <td>Chicken cathelicidin-2</td>
+      <td>CATH2</td>
+      <td>Bone marrow, respiratory tract, gastrointestinal tract, normal intact skin, and multiple lymphoid organs</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Fowlicidin 3</td>
+      <td>FOW3</td>
+      <td>Bone marrow, lung, and spleen</td>
+    </tr>
+    <tr>
+      <td>Colistin</td>
+      <td>COL</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">MCR plasmids</td>
+    </tr>
+    <tr>
+      <td>Name (type)</td>
+      <td>Size (bp)</td>
+      <td>mcr gene</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>PN16 (IncI2)</td>
+      <td>60,488</td>
+      <td>mcr-1</td>
+      <td>Yang et al., 2017</td>
+    </tr>
+    <tr>
+      <td>PN21 (IncI2)</td>
+      <td>60,989</td>
+      <td>mcr-1</td>
+      <td>Yang et al., 2017</td>
+    </tr>
+    <tr>
+      <td>PN23 (IncX4)</td>
+      <td>33,858</td>
+      <td>mcr-1</td>
+      <td>Yang et al., 2017</td>
+    </tr>
+    <tr>
+      <td>PN42 (IncX4)</td>
+      <td>32,995</td>
+      <td>mcr-1</td>
+      <td>Yang et al., 2017</td>
+    </tr>
+    <tr>
+      <td>WJ1 (IncHI2)</td>
+      <td>261,119</td>
+      <td>mcr-3</td>
+      <td>Yin, 2017</td>
+    </tr>
+    <tr>
+      <td>481 (IncP1)</td>
+      <td>53,660</td>
+      <td>mcr-3</td>
+      <td>Wang et al., 2019</td>
+    </tr>
+  </tbody>
+</table>
+
+_*From pig intestinal parasitic nematode._
+
 ## Results
 
-## Host AMPs select for MCR-1
+### Host AMPs select for MCR-1
 
 To assess the consequences of MCR acquisition without any confounding effects from backbone and cargo genes found in naturally occurring MCR plasmids, we cloned mcr-1 and its promoter into a non-conjugative expression vector (pSEVA121) that has a similar copy number to naturally occurring MCR plasmids (approximately five copies per cell). As a first approach to assess the impact of MCR-1 on resistance to host AMPs, we measured the competitive ability of pSEVA:MCR-1 across a concentration gradient of a randomly selected representative set of host AMPs and colistin, which acts as a positive control for MCR selection (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig1-v2.jpg)
+
+**Figure 1.:** E. coli carrying mcr-1 expression vector (pSEVA:MCR-1) or an empty vector control (pSEVA:EV) were competed against a tester strain carrying a chromosomally integrated GFP across a range of AMP concentrations (n = 6 biological replicates per competition). Plotted points show the competitive fitness effect of the MCR-1 expressing strain relative to the empty vector control (±SE). To facilitate comparisons across AMPs, fitness is plotted as a function of relative AMP concentration, and the dashed line represents equal fitness.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** In this figure, we have plotted fitness data for colistin and five host AMPs together for each genotype. Fitness was calculated by competing the pSEVA plasmid strains against GFP-labeled E. coli (see ‘Methods’).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Figures show cell density of fluorescent (GFP-labeled E. coli; gate – UR) and nonfluorescent cells (E. coli pSEVA EV or E. coli pSEVA:MCR-1; gate – LR) before (a, b) and after the competition (c, d) in the absence of an antimicrobial peptide (AMP). Cells were gated using FL1-H and forward scatter properties. Data are provided in Supplementary file 2.
+
 Consistent with previous work (Yang et al., 2017), mcr-1 imposed a significant fitness burden in the absence of AMPs, reducing competitive ability by 3% (p=1.174e-15, two-sided Mann–Whitney U-test, Figure 1—figure supplement 1). However, mcr-1 provided a significant competitive fitness advantage at concentrations of host AMPs between ¼ and ½ of minimum inhibitory concentration (MIC) (Figure 1, Supplementary file 2). Although mcr-1 provided a greater fitness advantage in the presence of colistin as compared to host AMPs, the minimal selective concentration for colistin, ¼ MIC, was only marginally lower (Figure 1). It is important to note that the sub-MICs required for the selection of mcr-1 overlap with the range of physiological concentration of host AMPs. For example, the concentration of LL-37 required to select for MCR-1 (~3.4 μM) falls well within the reported physiological concentration range (up to 10 μM) (Barlow et al., 2010; Srakaew et al., 2014).
 
-## MCR increases resistance to host defense AMPs
+### MCR increases resistance to host defense AMPs
 
 To test the hypothesis that MCR increases resistance to host AMPs more broadly, we measured the resistance of MCR-E. coli to a panel of AMPs. Given the importance of agricultural animals as reservoirs of MCR (Liu et al., 2016), we tested AMPs that are known to play important roles in the innate immunity of chickens, pigs, and humans. The panel of AMPs used in our assay have diverse mechanistic and physicochemical properties (Supplementary file 1) and include AMPs that are known to have clinical relevance and play key roles in mediating innate immunity (Table 1 and Supplementary file 1). For example, the human cathelicidin LL-37 and defensin HBD-3 have immunomodulatory activities in addition to their antimicrobial activity (Mookherjee et al., 2020; Zasloff, 2002b; Zhang and Gallo, 2016).
 
 We tested the AMP resistance of both E. coli carrying pSEVA:MCR-1, which provides a clean test for the effect of the mcr gene, and transconjugants carrying diverse mcr-1 and mcr-3 natural plasmids. These plasmids represent the dominant platforms for MCR found in clinical and agricultural sources in Southeast Asia (Wang et al., 2018), and plasmid diversity may play an important role in mediating the effect of MCR due to variation in plasmid copy number and the effect of other plasmid genes on AMP resistance.
 
 One key difference between resistance to AMPs and antibiotics is that AMP resistance genes typically give much smaller increases in resistance than antibiotic resistance genes, typically on the order of one- to twofold increases in MIC (Kintses et al., 2019). No standardized methods exist to measure resistance to AMPs, and we measured AMP resistance using an established assay that had the sensitivity to capture small differences in bacterial resistance that are missed by conventional antibiotic resistance assays (i.e., less than twofold changes in MIC) (Kintses et al., 2019; Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig2-v2.jpg)
+
+**Figure 2.:** Heatmaps depict the effect of MCR plasmids on resistance to colistin (a) and host AMPs (b). Bacterial susceptibility to AMPs was tested by measuring minimum inhibitory concentrations (MICs), and changes in resistance were assessed relative to control strains lacking MCR (n = 3 biological replicates per MIC). Natural plasmids carried either MCR-1 or MCR-3 are shown according to plasmid incompatibility group. Resistance for these plasmids was measured relative to the E. coli J53 parental strain. The impact of the synthetic pSEVA:MCR-1 plasmid on resistance was measured relative to a strain with a pSEVA empty vector. Dashed lines represent control strain. Bar plots show average changes in MIC for natural MCR plasmids and did not include pSEVA:MCR1 (±SE; n = 9 for host AMPs, n = 6 for plasmids; *p<0.05 one-sample t-test, LL37- 0.033; HBD3- 0.0088; CP1- 0.032; PR39- 0.353; PRO1- 0.0424; PROPH- 0.5964; PMAP23- 0.0136; CATH2- 0.030; FOW3- 0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The minimum inhibitory concentration (MIC) assays were carried out in MHBII (cation-adjusted) medium. Error bars indicate standard errors based on three biological replicates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Bacterial susceptibility to colistin (a) and host AMPs (b-d). Growth is shown relative to growth in the absence of the given AMP (y-axis). Error bars indicate standard errors based on three biological replicates. Black line, WT control strain; yellow line, WT strain carrying IncX4 plasmid with mcr-1 gene; green line, WT strain carrying IncX4 plasmid without mcr-1 gene.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Principal component analysis (PCA) of the physicochemical properties of AMPs. (b) PR39 and PROPH peptides can be distinguished from other AMPs based on their higher proline content (significant differences from Welch’s two-sample t-test, p=0.0086, n = 2 and n = 8 for PR39 and PROPH, and others, respectively).
 
 The significance of changes in antibiotic resistance is usually determined by comparing the MIC of strains carrying a resistance gene to established clinical breakpoints. No such breakpoints exist for AMP resistance, and we tested for statistically significant changes in resistance to AMPs associated with MCR. On average, MCR plasmids provided increased resistance to host AMPs by 62% (mean fold change in MIC = 1.62; SEM = 0.11; t = 5.615; p<0.0001; Figure 2; Supplementary file 3). However, the average change in resistance conferred by MCR plasmids varied significantly between AMPs as MCR plasmids increased resistance to most AMPs, but generated collateral sensitivities to both PROPH and PR39 (Figure 2b; F8,40 = 7.85; p<0.0001). Our AMP resistance assay did not use standardized culture media that are used to assess antibiotic resistance (i.e., cation-adjusted MHBII) as AMPs act differently than antibiotics and there are no established methodologies to measuring resistance. However, carrying out a subset of AMP resistance assays in standardized media recovered the key result of our assay – that MCR increases AMP resistance (Figure 2—figure supplement 1).
 
@@ -68,11 +219,11 @@ To better understand the origins of the high colistin resistance phenotype assoc
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84395/elife-84395-fig3-v2.jpg)
 
-**Figure 3.:** Moraxella MCR (MCR-MOR) on bacterial susceptibility to antimicrobial peptides (AMPs) (a) and on cell surface charge (b).(a) AMP susceptibility of E. coli carrying pSEVA:MCR-1 and Moraxella version of MCR (pSEVA:MCR-MOR). The impact of the pSEVA:MCR-1 and pSEVA:MCR-MOR on resistance was measured relative to a strain with a pSEVA empty vector control (dashed line). Error bars indicate standard errors based on three biological replicates. (b) Relative cell surface charge of E. coli strains expressing MCR-1 and MCR-MOR compared to an empty vector control. Cell surface was determined by FITC-PLL binding assay (n = 6 biological replicates/strain). Statistical significance was determined by pairwise comparisons using the two-sided Mann–Whitney U-tests, and double asterisks show differences with a p-value<0.01.
+**Figure 3.:** (a) AMP susceptibility of E. coli carrying pSEVA:MCR-1 and Moraxella version of MCR (pSEVA:MCR-MOR). The impact of the pSEVA:MCR-1 and pSEVA:MCR-MOR on resistance was measured relative to a strain with a pSEVA empty vector control (dashed line). Error bars indicate standard errors based on three biological replicates. (b) Relative cell surface charge of E. coli strains expressing MCR-1 and MCR-MOR compared to an empty vector control. Cell surface was determined by FITC-PLL binding assay (n = 6 biological replicates/strain). Statistical significance was determined by pairwise comparisons using the two-sided Mann–Whitney U-tests, and double asterisks show differences with a p-value<0.01.
 
 Loss of negative membrane charge has been argued to play an important role in the colistin resistance provided by mcr-1. MCR-1 is a pEtN transferase enzyme that facilitates the addition of pEtN to the lipid A component of lipopolysaccharide (LPS), resulting in reduced binding of colistin. However, MCR-1 and MCR-MOR have similar effects on cell surface charge (Figure 3b, p=0.470, two-sided Mann–Whitney U-test), supporting the idea that MCR-1-mediated colistin resistance is also attributable to other factors, such as the increased protection of the cytoplasmic membrane from colisitin (Sabnis et al., 2021). Given that MCR-MOR does not confer broad resistance to host AMPs, our results suggest that MCR-1 was able to evolve to increase resistance to both colistin and relevant host AMPs.
 
-## MCR confers serum resistance and increases virulence
+### MCR confers serum resistance and increases virulence
 
 The above experiments focused on measuring the impact of MCR-1 on bacterial resistance to individual host AMPs. To better understand the protective role of MCR-1 in a complex host environment, we measured bacterial susceptibility to human serum, which contains a complex mixture of antimicrobials, including complement. For this assay, we selected IncI2 and IncX4 plasmids as they are the most dominant MCR-1 plasmid types (Wang et al., 2018; Sun et al., 2018). Interestingly, these MCR plasmids conferred high levels of resistance to human serum, showing that MCR-1 is effective at providing protection against even complex mixtures of antimicrobials (Figure 4a). To rule out that the observed serum resistance is due to MCR-1 and not because of pleiotropic effects of other genes present on the plasmid, we tested serum susceptibility of a strain carrying an MCR-1 knockout IncX4 plasmid. We found no difference in serum resistance between wild-type (carrying no plasmid) and strain with MCR-1 knockout plasmid, suggesting that indeed the observed serum resistance phenotype was due to MCR-1 (Figure 4b).
 
@@ -104,59 +255,67 @@ A further limitation of our study is the challenge of understanding the selectiv
 
 ## Methods
 
-## Bacterial strains, MCR plasmids, and growth medium
+### Bacterial strains, MCR plasmids, and growth medium
 
 All the experiments were done in E. coli strain J53 genetic background. All bacterial strains and MCR plasmids used in this study are listed in Supplementary file 5 and Supplementary file 6. Experiments were conducted in Mueller–Hinton (MH) medium and Luria–Bertani (LB) medium. All components were purchased from Sigma-Aldrich.
 
-## Antimicrobial peptides
+### Antimicrobial peptides
 
 AMPs were custom-synthesized by BioServ UK Ltd, except for HBD-3 and colistin. HBD-3 was custom-synthesized by PeptideSynthetics UK, and colistin was purchased from Sigma-Aldrich. AMP solutions were prepared in sterile water and stored at −80°C until further use.
 
-## Oligonucleotides
+### Oligonucleotides
 
 A full list of DNA oligonucleotides used in this work is provided in Supplementary file 4. All oligos were ordered with standard desalting from Thermo Scientific.
 
-## pSEVA:MCR-1 vector construction
+### pSEVA:MCR-1 vector construction
 
 A synthetic MCR-1 plasmid was constructed by cloning mcr-1 gene into pSEVA121 plasmid (Silva-Rocha et al., 2013). The mcr-1 gene along with its natural promoter was PCR-amplified from the natural PN16 (IncI2) plasmid using Q5 High-Fidelity DNA Polymerase (New England BioLabs). The amplified and purified mcr-1 fragment was cloned into PCR-amplified pSEVA121 backbone using NEBuilder HiFi DNA Assembly Master Mix according to the manufacturer’s instructions. Assembled products were then transformed into E. coli J53 strain using the standard electroporation method. Briefly, pSEVA121:MCR-1 plasmid-carrying cells were grown overnight in MHB medium supplemented with 100 µg/ml ampicillin. Plasmid DNA isolation was performed using GeneJET Plasmid Miniprep Kit (Thermo Scientific) according to the manufacturer’s instructions. 1 µl of the purified plasmid DNA was transformed by electroporation into 50 µl of electrocompetent E. coli J53 cells. Electroporation was carried out with a standard protocol for a 1 mm electroporation cuvette. Cells were recovered in 1 ml SOC medium, followed by 1 hr incubation at 37°C. Different dilutions of transformant mixture were made and were plated onto Petri dishes containing LB agar supplemented with 100 µg/ml ampicillin. The culture plates were incubated at 37°C overnight.
 
 PCR and sequence verification by Sanger sequencing were performed to ensure the presence of the correctly assembled recombinant plasmid. A full list of the primers used is given in Supplementary file 4.
 
-## Construction of Δmcr-1 PN23 (IncX4) plasmid
+### Construction of Δmcr-1 PN23 (IncX4) plasmid
 
 Gibson assembly was used to construct Δmcr-1 PN23 (IncX4) mutant where mcr-1 gene was replaced by ampicillin resistance marker. The primers used for the Gibson assembly are listed in Supplementary file 4. The overlap between fragments to be assembled was in the range of 20–40 bp. To avoid any mutation incorporation in the assembly, Q5 High-Fidelity 2X Master Mix (New England BioLabs) was used for PCR amplification. Five PCR fragments (leaving MCR-1 out) were generated using natural PN23 IncX4 plasmid as template DNA in Q5 High-Fidelity 2X Master Mix with corresponding primer sets (Supplementary file 4). An ampicillin resistance marker was amplified separately.
 
 To remove any plasmid DNA template contamination, the amplified PCR products were digested with DpnI (New England BioLabs) for 1 hr at 37°C, followed by 20 min heat inactivation at 80°C. The digested PCR products were subjected to gel purification using GeneJET Gel Extraction and DNA Cleanup Micro Kit (Thermo Scientific). The gel-purified PCR products were assembled together with the ampicillin marker fragment using NEBuilder HiFi DNA Assembly Master Mix according to the manufacturer’s instructions. The resulting assembled plasmid DNA was transformed into E. coli strain MG1655, rather transforming directly into E. coli J53. This extra step was to ensure efficient transformation of the assembled plasmid. E. coli MG1655 is a well lab-adapted strain and shows high transformation efficiency, especially for large plasmids. The transformants were selected on LB agar containing ampicillin 100 µg/ml. The presence and right orientation of all six fragments were confirmed by PCR amplification of fragments junction. Similarly, the absence of mcr-1 gene was also confirmed by PCR. Following the confirmation of the Δmcr-1 PN23 (IncX4) plasmid, a conjugation experiment was carried out to transfer Δmcr-1 PN23 (IncX4) plasmid into E. coli J53.
 
-## Conjugation experiments
+### Conjugation experiments
 
 Conjugation experiments were carried out in LB broth medium at 37°C using E. coli strain J53 as the recipient and MCR-1-positive E. coli (MCRPEC) natural strains as the donor. The overnight grown cultures of both the donor and recipient strain were washed with fresh LB medium and mixed at a 1:1 ratio. The mixed culture was incubated at 37°C overnight without shaking. Transconjugants were selected on LB agar containing 150 µg/ml sodium azide and 2 µg/ml colistin. In the case of mcr-knockout plasmid mutant (Δmcr-1 PN23 IncX4), E. coli MG1655 was used as the donor and the transconjugants were selected on 150 µg/ml sodium azide and 100 µg/ml ampicillin. The presence of plasmids in transconjugants was confirmed by PCR.
 
-## Construction of pSEVA:MCR-MOR plasmid
+### Construction of pSEVA:MCR-MOR plasmid
 
 Moraxella species have been identified as potential sources of MCR-1 (Sun et al., 2018; Gao et al., 2016). To study the Moraxella version of MCR (MCR-MOR), we custom-synthesized (Twist Bioscience) MCR-MOR gene (Moraxella osloensis, GenBank: AXE82_07515) and cloned this gene into pSEVA121 plasmid using Gibson assembly method. For cloning, the MCR-MOR fragment (insert DNA 1709 bp) and pSEVA backbone (vector DNA 4001 bp) containing ampicillin resistance marker were amplified by PCR with corresponding primers (Supplementary file 4) in Q5 High-Fidelity 2X Master Mix (New England BioLabs). Both the insert (MCR-MOR) and vector fragments were gel-purified using GeneJET Gel Extraction and DNA Cleanup Micro Kit (Thermo Scientific). The gel-purified PCR products were assembled together using NEBuilder HiFi DNA Assembly Master Mix (New England BioLabs) according to the manufacturer’s instructions. Following the assembly, 2 ul of the assembly mixture was transformed into E. coli strain J53 and transformants were selected on LB agar containing 100 µg/ml ampicillin. The assembly of pSEVA MCR-MOR plasmid was verified by PCR.
 
-## Physicochemical properties of AMPs
+### Physicochemical properties of AMPs
 
 Protein amino acid frequencies and the fraction of polar and non-polar amino acids were counted with an in-house R script. PepCalc (Innovagen) calculator was used to calculate the net charge. Isoelectric point and hydrophobicity were calculated using Peptide Analyzing Tool (Thermo Scientific). Percentage of the disordered region, beta-strand region, coiled structure, and alpha-helical region was calculated with Pasta 2.0. The ExPasy ProtParam tool was used for calculating aliphatic index and hydropathicity. Aggregation hotspots were calculated by AggreScan.
 
-## Determination of MIC
+### Determination of MIC
 
 MICs were determined with a standard serial broth dilution technique with a minor modification that we previously optimized for AMPs (Kintses et al., 2019). Specifically, smaller AMP concentration steps were used (typically 1.2–1.5-fold) because AMPs have steeper dose–response curves than standard antibiotics (Yu et al., 2018; Lazzaro et al., 2020), and therefore bigger concentration steps (such as twofold dilutions) cannot capture 90% growth inhibitions (i.e., MIC). 10-steps serial dilution was prepared in fresh MHB medium in 96-well microtiter plates where AMP was represented in nine different concentrations. Three wells contained only medium to monitor the growth in the absence of AMP. Bacterial strains were grown in MHB medium supplemented with appropriate antibiotic (100 μg/ml ampicillin for E. coli pSEVA MCR-1 and 1 μg/ml colistin for MCR natural plasmid) at 30°C overnight. Following overnight incubation, approximately 5 × 105 cells were inoculated into the wells of the 96-well microtiter plate. We used three independent replicates for each strain and the corresponding control. The top and bottom rows in the 96-well plate were filled with MHB medium to obtain the background OD value of the medium. Plates were incubated at 30°C with continuous shaking at 250 rpm. After 20–24 hr of incubation, OD600 values were measured in a microplate reader (Biotek Synergy 2). After background subtraction, MIC was defined as the lowest concentration of AMP where the OD600 < 0.05. Bacterial susceptibility to human serum was also measured using the similar MIC assay described above. Human serum was purchased from Sigma.
 
-## Membrane surface charge measurement
+### Membrane surface charge measurement
 
 To measure bacterial membrane surface charge, we carried out a fluorescein isothiocyanate-labeled poly-L-lysine (FITC-PLL) (Sigma) binding assay. FITC-PLL is a polycationic molecule that binds to an anionic lipid membrane in a charge-dependent manner and is used to investigate the interaction between cationic peptides and charged lipid bilayer membranes (Rossetti et al., 2004). The assay was performed as previously described (Spohn et al., 2019; Kintses et al., 2019). Briefly, bacterial cells were grown overnight in MHB medium, centrifuged, and washed twice with 1× PBS buffer (pH 7.4). The washed bacterial cells were resuspended in 1× PBS buffer to a final OD600 of 0.1. A freshly prepared FITC-PLL solution was added to the bacterial suspension at a final concentration of 6.5 µg/ml. The suspension was incubated at room temperature for 10 min and pelleted by centrifugation. The remaining amount of FITC-PLL in the supernatant was determined fluorometrically (excitation at 500 nm and emission at 530 nm) with or without bacterial exposure. The quantity of bound molecules was calculated from the difference between these values. A lower binding of FITC-PLL indicates a less net negative surface charge of the outer bacterial membrane.
 
-## In vitro competition assay
+### In vitro competition assay
 
-To directly test the selective fitness benefits of MCR-1, we carried out in vitro competition experiment using a flow cytometry-based sensitive and reproducible method developed in our lab (Yang et al., 2017; San Millan et al., 2016; Gifford et al., 2018). Flow cytometry was performed on an Accuri C6 (Becton Dickinson, Biosciences, UK). We measured the competitive fitness of E. coli strain J53 harboring pSEVA MCR-1 in the absence and presence of an AMP. For this assay, we randomly selected five AMPs and colistin. E. coli harboring pSEVA plasmid without MCR-1 (called pSEVA empty vector [EV]) was used as a control to calculate the relative fitness of E. coli pSEVA:MCR-1. These strains were competed against a GFP-labeled E. coli strain J53 to measure the relative fitness (see Figure 1—figure supplement 2). All competitions were carried out in MHB medium with six biological replicates per strain, as previously described (Yang et al., 2017; San Millan et al., 2016). Briefly, the bacterial cells were grown in MHB medium supplemented with 100 ug/ml ampicillin at 30°C overnight. The overnight grown cultures were washed with filtered PBS buffer to remove any antibiotic residues. The washed cells were diluted into a fresh MHB medium and mixed approximately at 1:1 ratio with GFP-labeled E. coli J53. Before starting the competition, the total cell density in the competition mix was around half million cells, as we also used for MIC assay. The initial density of fluorescent and nonfluorescent cells was estimated in the mix using medium flow rate, recoding 10,000 events, and discarding events with forward scatter (FSC) < 10,000 and side scatter (SSC) < 8000. After confirming the actual ratio close to 1:1, the competition plates were incubated at 30°C with shaking at 250 rpm. After overnight incubation, the competition mix was diluted in PBS buffer and cell densities were adjusted around 1000/µl. The final density of fluorescent and nonfluorescent cells was estimated in the competition mix. Using the initial and final density of fluorescent and nonfluorescent cells, the relative fitness was calculated as follows:Relativefitness=log2(d1(non−fluorescent)d0(non−fluorescent))log2(d1(fluorescent)d0(fluorescent)),
+To directly test the selective fitness benefits of MCR-1, we carried out in vitro competition experiment using a flow cytometry-based sensitive and reproducible method developed in our lab (Yang et al., 2017; San Millan et al., 2016; Gifford et al., 2018). Flow cytometry was performed on an Accuri C6 (Becton Dickinson, Biosciences, UK). We measured the competitive fitness of E. coli strain J53 harboring pSEVA MCR-1 in the absence and presence of an AMP. For this assay, we randomly selected five AMPs and colistin. E. coli harboring pSEVA plasmid without MCR-1 (called pSEVA empty vector [EV]) was used as a control to calculate the relative fitness of E. coli pSEVA:MCR-1. These strains were competed against a GFP-labeled E. coli strain J53 to measure the relative fitness (see Figure 1—figure supplement 2). All competitions were carried out in MHB medium with six biological replicates per strain, as previously described (Yang et al., 2017; San Millan et al., 2016). Briefly, the bacterial cells were grown in MHB medium supplemented with 100 ug/ml ampicillin at 30°C overnight. The overnight grown cultures were washed with filtered PBS buffer to remove any antibiotic residues. The washed cells were diluted into a fresh MHB medium and mixed approximately at 1:1 ratio with GFP-labeled E. coli J53. Before starting the competition, the total cell density in the competition mix was around half million cells, as we also used for MIC assay. The initial density of fluorescent and nonfluorescent cells was estimated in the mix using medium flow rate, recoding 10,000 events, and discarding events with forward scatter (FSC) < 10,000 and side scatter (SSC) < 8000. After confirming the actual ratio close to 1:1, the competition plates were incubated at 30°C with shaking at 250 rpm. After overnight incubation, the competition mix was diluted in PBS buffer and cell densities were adjusted around 1000/µl. The final density of fluorescent and nonfluorescent cells was estimated in the competition mix. Using the initial and final density of fluorescent and nonfluorescent cells, the relative fitness was calculated as follows:
 
-where d0 and d1 represent cell density before and after the competition, respectively. Using this formula, the fitness of E. coli pSEVA:MCR-1 and E. coli pSEVA EV control was calculated (relative to GFP-labeled strain). In Figure 1, we expressed the fitness of E. coli pSEVA:MCR-1 strain relative to the control strain (i.e., E. coli pSEVA EV) and followed the procedure of error propagation to account for the uncertainty of the estimates:SE=(SDmcr1−fmcr1)2+(SDEV−fEV)2
+$$
+Relativefitness=\frac{log_{2}(\frac{d1_{(non−fluorescent)}}{d0_{(non−fluorescent)}})}{log_{2}(\frac{d1_{(fluorescent)}}{d0_{(fluorescent)}})},
+$$
+
+where d0 and d1 represent cell density before and after the competition, respectively. Using this formula, the fitness of E. coli pSEVA:MCR-1 and E. coli pSEVA EV control was calculated (relative to GFP-labeled strain). In Figure 1, we expressed the fitness of E. coli pSEVA:MCR-1 strain relative to the control strain (i.e., E. coli pSEVA EV) and followed the procedure of error propagation to account for the uncertainty of the estimates:
+
+$$
+SE=\sqrt{(\frac{SD_{mcr1}}{−f_{mcr1}})^{2}+(\frac{SD_{EV}}{−f_{EV}})^{2}}
+$$
 
 where -f and SD are a mean estimate and its standard deviation for each corresponding strain based on six biological replicates. MCR1 and EV represent E. coli J53 carrying pSEVA:MCR-1 and E. coli J53 carrying empty vector control strain, respectively. See Figure 1—figure supplement 2 for the gating strategy.
 
-## In vivo virulence assay
+### In vivo virulence assay
 
 Age and weight-defined TruLarv G. mellonella caterpillars were obtained in bulk from BioSystems Technology (Exeter, UK) and stored at 15°C in the absence of food. E. coli J53 pSEVA:MCR-1 and empty vector control strain was grown overnight in MHB broth and washed twice with sterile PBS. In the case of every experiment, treatment solutions were injected into the hemocoels of the larvae via the first right proleg using 10 μl Hamilton syringes (Reno, NV). Larvae were incubated in Petri dishes lined with filter paper at 37°C for 48 hr, and survival was documented every 6 hr. Insects were considered dead if they failed to respond to touch. Pretreatment was administered approximately 24 hr before bacterial injection, and in this time period the survival of the animals was not recorded. Before bacterial injection, the dead or sick animals were excluded from further experiments.
 

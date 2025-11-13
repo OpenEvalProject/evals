@@ -8,12 +8,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00qjgza05 Center for Advanced Studies and Technology – CAST, University G. d’Annunzio of Chieti-Pescara Chieti Italy
-2. https://ror.org/00qjgza05 Department of Neuroscience, Imaging, and Clinical Sciences, University G. d’Annunzio of Chieti-Pescara Chieti Italy
-3. https://ror.org/001kjn539 St Vincent’s Hospital Centre for Applied Medical Research, St Vincent’s Hospital Darlinghurst Australia
-4. https://ror.org/03r8z3t63 School of Clinical Medicine, UNSW Medicine & Health, St Vincent's Healthcare Clinical Campus, Faculty of Medicine and Health, UNSW Sydney Sydney Australia
-5. https://ror.org/00qjgza05 Institute for Advanced Biomedical Technologies – ITAB, University G. d’Annunzio of Chieti-Pescara Chieti Italy
-6. https://ror.org/00qjgza05 Institute of Neurology, SS Annunziata University Hospital, University G. d’Annunzio of Chieti-Pescara Chieti Italy
+1. Center for Advanced Studies and Technology – CAST, University G. d’Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))
+2. Department of Neuroscience, Imaging, and Clinical Sciences, University G. d’Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))
+3. St Vincent’s Hospital Centre for Applied Medical Research, St Vincent’s Hospital Darlinghurst Australia ([ROR:001kjn539](https://ror.org/001kjn539))
+4. School of Clinical Medicine, UNSW Medicine & Health, St Vincent's Healthcare Clinical Campus, Faculty of Medicine and Health, UNSW Sydney Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+5. Institute for Advanced Biomedical Technologies – ITAB, University G. d’Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))
+6. Institute of Neurology, SS Annunziata University Hospital, University G. d’Annunzio of Chieti-Pescara Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))
 
 † Corresponding author
 
@@ -35,11 +35,85 @@ So far, more than 210 rodent models have been generated to recapitulate AD’s c
 
 Differences in genetic background, transgenes, breeding and handling strategies, housing conditions, protocols for quantifying phenotypic traits, and endless additional variables make it challenging, if not impossible, to frame the information generated through these models within a consistent and comprehensive picture. Some of these issues have been discussed elsewhere (Errington, 2024; Mullane and Williams, 2019; Padmanabhan and Götz, 2023; Reynolds, 2022). Here, we will focus on the transgenic mouse models' shortcomings in terms of why they offer limited support for the ACH and why their use as preclinical models needs to be taken with caution (Table 1).
 
+**Table 1.**
+ Most common first- and second-generation transgenic models of Alzheimer’s disease (AD).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mouse line</th>
+      <th>Transgene(s)</th>
+      <th>Ref(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">First-generationAPP transgenic mice</td>
+      <td>PDAPP</td>
+      <td>APP V717F (Indiana)</td>
+      <td>Games et al., 1995; Rockenstein et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Tg2576</td>
+      <td>APP K670N, M671L (Swedish)</td>
+      <td>Hsiao et al., 1996</td>
+    </tr>
+    <tr>
+      <td>APP23</td>
+      <td>APP K670N, M671L (Swedish)</td>
+      <td>Kelly et al., 2003; Van Dam et al., 2003</td>
+    </tr>
+    <tr>
+      <td>J20</td>
+      <td>APP K670N, M671L (Swedish), V717F (Indiana)</td>
+      <td>Mucke et al., 2000</td>
+    </tr>
+    <tr>
+      <td>TgCRND8</td>
+      <td>APP K670N, M671L (Swedish), V717F (Indiana)</td>
+      <td>Chishti et al., 2001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">APP and PSEN transgenic mice</td>
+      <td>APPPS1</td>
+      <td>APP K670N, M671L (Swedish);PSEN1 L166P</td>
+      <td>Radde et al., 2006</td>
+    </tr>
+    <tr>
+      <td>5xFAD</td>
+      <td>APP K670N, M671L (Swedish), I716V (Florida), and V717I (London);PSEN1 M146L and L286V</td>
+      <td>Oakley et al., 2006; Tang et al., 2016</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Second-generation knock-in APP transgenic mice</td>
+      <td>App knock-in (humanized Aβ)</td>
+      <td>App G676R, F681Y, R684H (humanized Aβ)</td>
+      <td>Serneels et al., 2020</td>
+    </tr>
+    <tr>
+      <td>APPNL-F</td>
+      <td>Humanized Aβ+APP K670N, M671L (Swedish), I716F (Iberian)</td>
+      <td rowspan="2">Saito et al., 2014</td>
+    </tr>
+    <tr>
+      <td>APPNL-G-F</td>
+      <td>Humanized Aβ+APP K670N, M671L (Swedish), I716F (Iberian), E693G (Arctic)</td>
+    </tr>
+    <tr>
+      <td>APPSAA</td>
+      <td>Humanized Aβ+APP K670N, M671L (Swedish), E693G (Arctic), T714I (Austrian)</td>
+      <td>Xia et al., 2022</td>
+    </tr>
+  </tbody>
+</table>
+
 In the following sections, we will summarize the limitations in the preclinical modeling of AD that are sketched – in broad brush strokes – at the qualitative, quantitative, temporal, and context-dependent levels. However, we also discuss the opportunities offered by mouse models for addressing some still unresolved scientific questions.
 
-## Qualitative
+### Qualitative
 
-## Mice with APP and PSEN mutations
+#### Mice with APP and PSEN mutations
 
 Most preclinical studies employ transgenic rodent models that, to different degrees, express human genes whose mutations are associated with the familial form of AD (fAD). Mutations in PSEN1 [encoding presenilin 1 (PSEN1)], PSEN2 [encoding presenilin 2 (PSEN2)], and/or APP [encoding amyloid precursor protein (APP)] affect APP processing and are causally implicated in the development of autosomal dominant AD (Figure 1). In many cases, to drive any phenotype, the mice express more than one of such mutations. However, the very low prevalence of fAD – less than 1% of total cases (Pavisic et al., 2020) – makes the findings obtained in these models impossible to generalize to the broad spectrum of sporadic AD cases (sAD), causing misleading overinterpretation of the results.
 
@@ -55,19 +129,19 @@ The topological distribution and the mechanisms of – albeit modest – neurona
 
 To circumvent the drawbacks posed by the first-generation overexpressing models, researchers have developed second-generation knock-in transgenic mice in which the App gene is humanized with the addition of fAD mutations. These models exhibit alterations of Aβ metabolism that precede subtle cognitive deficits, Aβ42 overproduction, increased Aβ42/Aβ40 ratio, and neuroinflammation without the pitfalls associated with APP overexpression. Although the approach bypasses the limitations posed by first-generation mice, critical drawbacks and divergence with clinical observations remain. For instance, to produce Aβ neuropathology, knock-in models require the presence of multiple APP mutations not found in humans. The AppNL mice, a model that carries only the ‘pathogenic’ Swedish mutation, failed to develop amyloid pathology up to 22 months of age (Saito et al., 2014). Surprisingly, AppNL mice are proposed as a negative control for the multiple App knock-in strains (Alzforum, 2023b; Saito et al., 2014). Notably, assessment of synaptic functioning in App knock-in mice revealed only presynaptic alterations and not the postsynaptic alterations seen in humans. This suggests again that other factors like presenilins or gross inflammation, rather than a direct action of Aβ per se, may cause human post-synaptic dysfunction and neuronal loss (Benitez et al., 2021). Similarly, the novel App knock-in mouse model AppSAA harbors multiple disease-causing mutations (Swedish, Arctic, and Austrian) to promote Aβ pathology. Surprisingly, and in contrast to AD patients, AppSAA mice exhibit increased brain metabolism (measured by FDG-PET) as Aβ pathology progresses (Xia et al., 2022). Like the first-generation models, knock-in mice do not develop tau pathology nor generate overt signs of neurodegeneration.
 
-## Mice with tau mutations
+#### Mice with tau mutations
 
 Several mouse lines have been engineered to mimic the inclusions of hyperphosphorylated tau observed in AD patients, which may potentially overcome the lack of tau pathology of APP strains. Tau pathology is considered an accurate correlate of AD-related neurodegeneration, as the extent and topological distribution of tau accumulation mirrors the disease’s clinical course more faithfully than other biomarkers (Knopman et al., 2021). While they are often considered models of AD, most tau models overexpress the human MAPT gene, harboring mutations absent in AD cases but associated with frontotemporal lobar degeneration (FTLD). Unlike APP models, these mice better phenocopy some of the clinical features of AD, like NFT inclusions, neurodegeneration, and cognitive deficits. However, the strong genetic drive required to display an overt tau pathology raises questions on the generalizability of the findings when applied to sporadic forms of tauopathies, including AD.
 
 An additional caveat is that tau isoforms differ between humans and mice. In humans, alternative splicing of the MAPT gene gives rise to six tau isoforms characterized by differences in length, N-terminal sequences, and the presence of three- (3 R) or four- (4 R) repeated microtubule-binding sequences (Hernández et al., 2020). Compared to the human homolog, murine tau differs in terms of the number of repeats (tau 3 R is absent in adult mice) as well as in the sequence of the N-terminal domain (11 amino acids shorter in mice) (Hernández et al., 2020). These features might be critical for shaping the physiological and pathological properties of the protein. For instance, the N-terminal domain is relevant for the tau-driven modulation of proteins involved in neuronal functioning (i.e. NMDA receptors Miyamoto et al., 2017, Synapsin-1, and Synaptotagmin-1, among others Hernández et al., 2020; Stefanoska et al., 2018). Changes in the ratio between 3 R and 4 R isoforms are also different from what is found in neurodegenerative tauopathies, including AD (Bowles et al., 2022; Cherry et al., 2021; Ginsberg et al., 2006). Therefore, substantial over-expression of the human form of tau in mice, an experimental setting in which tau and its binding partners are profoundly different, may result in potential artifacts and findings with poor translational value. Notably, recent findings concerning immune-mediated neurodegeneration in animal models suggest new mechanisms of degeneration in human tauopathies (Chen et al., 2023). If the evidence continues to stack up, immune dysfunction in the tau mice may become a model of disease, at the very least for tauopathy, and could be worth pursuing.
 
-## Mice with multiple transgenes
+#### Mice with multiple transgenes
 
 Age-dependent Aβ accumulation is common to many non-human species (i.e. non-human primates, dogs, sheep). However, whether this impacts animal cognition remains unclear, with the neuropathological features of AD mostly a matter for human beings. No other non-human animal – except possibly the Octodon degus (Steffen et al., 2016) – displays the coexistence of Aβ pathology, NFT inclusions, glucose dysmetabolism, and neurodegeneration (Walker and Jucker, 2017). To generate a more robust phenotype, transgenic models harboring mutations on the APP and/or PSEN and the MAPT gene have been developed, like the 3xTg-AD or the TauPS2APP (Grueninger et al., 2010; Oddo et al., 2003). These examples indicate that extreme measures are required to generate models encompassing some of the critical features of AD. This is in stark contrast to humans, where the vast majority of AD cases occur without these gene mutations.
 
 The failure of APP mutants to recapitulate disease without human tau mutations may, at the very least, point to the possible importance of crosstalk between Aβ and tau. Mapt knock-out mice crossbred with APP transgenic models show reduced neuronal deficits and improved memory performance compared to mice harboring the wild-type Mapt gene. These results suggest that tau confers toxicity to Aβ and not vice versa (Roberson et al., 2007; Ittner et al., 2010; Sasaguri et al., 2017). In addition, recently generated double knock-in mice harboring all six human MAPT isoforms and the humanized AppNL-F gene have been characterized. Notably, the humanization of the murine tau gene was found sufficient to accelerate the propagation of pathological tau independently of the presence of Aβ (Saito et al., 2019). These observations suggest that tau in fact may sit above Aβ in the cascade of events leading to AD.
 
-## Quantitative
+### Quantitative
 
 In vitro and in vivo studies are primarily performed in settings in which Aβ concentrations are several orders of magnitude above the physiological range (Figure 1). In vitro evidence, is designed to demonstrate the neurotoxic properties of synthetic Aβ adducts – in their different lengths and flavors –, was based on cultured neurons exposed to nanomolar concentrations of low-molecular-weight oligomeric forms of the peptide. These levels are a thousand-fold higher than the concentration found in vivo, usually in the picomolar range (Kepp et al., 2023a). The physiological relevance of such high Aβ concentrations is dubious. Mounting evidence suggests that physiological Aβ levels exert neurotrophic-like effects on synaptogenesis, neuronal survival, growth, and differentiation (Giuffrida et al., 2009; Yankner et al., 1990; Zhou et al., 2022). This dichotomic behavior (where low concentrations have opposite effects than high concentrations) is common to many molecules, like for instance, neurotrophins where the balance between proBDNF and mature BDNF levels acts on the opposite side of the neurodegenerative-plasticity spectrum (Brem and Sensi, 2018).
 
@@ -79,7 +153,7 @@ As above, the transgenic animal models drive very high levels of APP production,
 
 ‘Quantitative’ concerns also apply to tau models of AD. Although high levels of total tau have been reported in AD patients, there is no consensus that tau overexpression occurs in AD (Hier et al., 2022). The PS19 and the rTg4510 are two of the most widely used models of tau pathology for AD. They harbor the human 4 R tau with the P301S and the P301L mutation, respectively. However, these models generate expression levels that are 5- (for PS19) to 13-fold (for rTg4510) higher than the endogenous murine tau (Jankowsky and Zheng, 2017). The results are early signs of tau hyperphosphorylation, NFTs formation, neurodegeneration, overt cognitive and motor deficits, and early lethality (Lewis et al., 2000). Similar traits, however, have been reported in mice overexpressing wild-type murine tau. These findings thereby indicate that, in mice, tau overexpression is sufficient to promote neurotoxicity independently of the tau genotype (Adams et al., 2009).
 
-## Temporal
+#### Temporal
 
 Despite decades of research efforts, aging remains the primary risk factor for AD (Herrup, 2010; Mattson and Arumugam, 2018). Aging offers the ideal battleground where multiple molecular determinants could wreak havoc in the brain. This aspect has not been adequately considered as a cofactor in the preclinical modeling of the disease or the critical interpretation of the results (Padmanabhan and Götz, 2023). The time-dependent loss of physiological fitness impinges on many of the very same mechanisms linked to AD pathogenesis, like oxidative stress, mitochondrial dysfunction, impaired DNA repair, altered cellular metabolism, ion dyshomeostasis, aberrant neuronal network functioning, neuroinflammation, vascular disease, senescence, and stem cell exhaustion (López-Otín et al., 2013; Mattson and Arumugam, 2018). The gist is: is the dysregulation of Aβ and tau that accelerates cellular demise during aging, or is a yet unidentified perturbation of the trajectory of physiological aging that results in the accumulation of misfolded proteins as a byproduct?
 
@@ -91,7 +165,7 @@ The early and aggressive presentation of amyloid- and tau-pathology observed in 
 
 A temporal explanation is also called in support of the fact that first- and second-generation fAD models fail to develop tau pathology and brain atrophy. The case is frequently made that lack of neurofibrillary tangles and overt neuronal loss rely on the AD time course since the short lifespan of rodents prevents the development of Aβ-driven tauopathy and neurodegeneration observed in humans. However, these arguments do not align with observations from non-human primates (Walker and Jucker, 2017). These mammals show steeper aging trajectories when compared to humans, with extensive cerebral Aβ deposition that occurs at ages proportional to their lifespan and in the absence of tau pathology or overt signs of dementia (Finch and Sapolsky, 1999; Walker and Jucker, 2017).
 
-## Context
+#### Context
 
 The accumulated clinical evidence indicates that several genetic and environmental factors, with different potency, have been acknowledged as AD contributors (Frisoni et al., 2022; Knopman et al., 2021; Livingston et al., 2020).
 
@@ -111,13 +185,13 @@ For what concerns preclinical models, additional differences in the underlying b
 
 Finally, the experimental conditions under which laboratory animals are typically housed often overlook the significant impact of an enriched environment, social engagement, physical activity, and natural pathogens or pollutants – all crucial factors observed in real-world scenarios – on the development and progression of AD (de Sousa et al., 2023; Dhana et al., 2024; Kivipelto et al., 2018). These environmental elements play a core role in influencing molecular mechanisms that promote brain resilience against age-related insults, like the activation of neurotrophic and bioenergetic signaling pathways, vital factors for maintaining cognitive health and mitigating the effects of neurodegeneration (Cotman and Berchtold, 2002; Mattson and Arumugam, 2018). Incorporating these environmental features within experimental models is essential for capturing the holistic impact of lifestyle elements on AD pathology and developing more translatable therapeutic strategies.
 
-## Implications for the ACH
+#### Implications for the ACH
 
 First-generation of APP (or tau) overexpressing mouse models remain the primary tools in use for studying AD (Table 1). The original findings with these and similar AD model mice were considered strong support of the ACH. In hindsight, studies showing that overloading the brain from birth with foreign protein/s generates a phenotype, while its/their removal has some subsequent benefit, may have been over-interpreted in support of the ACH. The interpretation is problematic not only in the context of the qualitative, quantitative, temporal, and contextual limitations of the models as discussed herein but also because of the absence of adequate controls for extensive protein overload.
 
 While the data do not exclude that Aβ and/or tau may contribute to dementia, additional risk factor-related genes (e.g. TREM2, MS4A, CLU, etc.) or environmental cues should be tested in enriched preclinical settings. Embracing the complexity of the molecular mechanisms of AD could substantially advance our comprehension of the disease and help therapeutic strategies.
 
-## Is all lost?
+#### Is all lost?
 
 While a purely Aβ-centric view of dementia is no longer tenable (Granzotto and Sensi, 2024; Herrup, 2015; Kepp et al., 2023a; Morris et al., 2018; Morris et al., 2014), preclinical mouse models may still provide answers to disease-related questions in three primary respects.
 
@@ -127,7 +201,7 @@ Second, the commonly used mice expressing full-length mutant APP and/or mutant P
 
 Third, a reconceptualization of murine models is needed. A question remains whether mice engineered with humanized genes (such as APP, MAPT, APOEε4, TREM2, and so on) will prove valuable for modeling human AD. Many of us are hopeful, but it is still unclear how biochemical and cellular signaling mechanisms in mice interact with human genes, an area in need of further consideration.
 
-## Alternative possibilities and future directions
+#### Alternative possibilities and future directions
 
 Collective efforts are underway to develop better, more informative, and predictive models to improve translation from animal to humans (Vitek et al., 2020). These include the generation of mice combining multiple genetic and environmental risk factors (Ganesan et al., 2024; Rizzo et al., 2023) or the development of novel strains to evaluate the impact of naturally occurring genetic variations (limited in laboratory strains) on the AD phenotype (Neuner et al., 2019; Onos et al., 2019). In that respect, we are cautiously excited by the MODEL-AD project (MODEL-AD Consortium, 2024). The outcomes of these studies designed to generate sAD-relevant models could be highly informative (Kotredes et al., 2023). In addition, AD involves complex mechanisms beyond amyloid plaques and tau tangles, like synaptic dysfunction, mitochondrial impairment, Ca2+ dysregulation, neuroinflammation, oxidative stress, metal ion dyshomeostasis, and disruptions in neuronal signaling. As we noted above, there are also questions about the effects of the environment and natural pathogens on the brain, which are also not well modeled in pristine mouse facilities. Animal models often fail to fully replicate the complex interplay of the environment and the molecular and cellular processes that are strongly associated with disease symptoms. A better modeling and a deeper exploration of these mechanisms – alone or in synergy with the pathological features of AD – could inform the development of more targeted interventions.
 
@@ -141,7 +215,7 @@ To bridge these gaps, there is now mounting interest in larger animal models, in
 
 These diversified preclinical settings must be supplemented with human studies and clinical research data. In this regard, integrating in silico studies has great potential. One area revolves around developing multi-scale computational models, which provide an eco-system for integrating and interrogating molecular, cellular, and network-level interactions (Rollo et al., 2023). In silico work can also foster the development of personalized medicine approaches for AD, including factors acting inside and outside the CNS (Doraiswamy et al., 2018; Lee et al., 2019; Massetti et al., 2024). By incorporating individual patient data, including genetic profiles and environmental exposures, computational models can help predict disease progression and identify optimal treatment strategies tailored to each patient’s unique circumstances (Forloni, 2020). Finally, in silico analysis can be employed to explore the heterogeneity of AD cases, considering the diverse clinical presentations and progression patterns observed among patients.
 
-## Conclusions
+### Conclusions
 
 In conclusion, the limitations of current preclinical AD models and the questionable benefit observed in anti-Aβ clinical trials call for an urgent reconsideration of our strategies (Granzotto and Sensi, 2024; Høilund-Carlsen et al., 2023; Kepp et al., 2023b).
 

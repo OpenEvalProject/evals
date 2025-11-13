@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02kpeqv85 Department of Pharmacology, Kyoto University Graduate School of Medicine Kyoto Japan
+1. Department of Pharmacology, Kyoto University Graduate School of Medicine Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
 
 † Corresponding author
 

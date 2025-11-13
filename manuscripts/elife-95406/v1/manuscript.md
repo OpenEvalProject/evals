@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/013q1eq08 Institutes of Brain Science, State Key Laboratory of Medical Neurobiology and MOE Frontiers Center for Brain Science, Department of Neurobiology, Zhongshan Hospital, Fudan University Shanghai China
+1. Institutes of Brain Science, State Key Laboratory of Medical Neurobiology and MOE Frontiers Center for Brain Science, Department of Neurobiology, Zhongshan Hospital, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))
 
 † Corresponding author
 
@@ -31,9 +31,25 @@ To unambiguously track OLs from different embryonic origins, we first generated 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95406/elife-95406-fig1-v1.jpg)
 
-**Figure 1.:** (A) Scheme for generating the Opalin allele. (P2A-Flpo-T2A-tTA2B) Southern blot confirmation of correctly targeted embryonic stem cell clone. (C) Genomic polymerase chain reaction (PCR) to genotype F1 offspring. (D) OL labeling by Flp. (E) OL labeling by tTA2. High magnification images of the boxed region showing co-localization of red fluorescent protein (RFP) with myelin basic protein (MBP) staining, which further demonstrated the myelination ability of labeled OLs. (F) Quantification of labeling specificity (left panel) and efficiency (right panel) by colacalization with OL marker CC1. Both reporting systems are highly specific, as shown by the complete co-localization of fluorescent protein (XFP) with OL marker (CC1) and lack of co-staining with neuronal marker (NeuN) or astrocyte marker (Sox9). Quantification bar graph was not presented for NeuN and Sox9 as zero co-localizations were observed in all analyzed regions. Close to complete OL labeling was achieved by Flp-dependent H2B-GFP reporter in all analyzed regions (green dots), while sparser labeling with variable regional density was achieved by tTA2-dependent tdTomato reporter driven by TRE promoter (red dots). NCx: neocortex. Pir: piriform cortex. cc: corpus callosum. ac: anterior commissure. Scale bar: 50 μm in low magnification images, 5 μm in high magnification images. Quantification: n = 3. Dots represent data from individual mice.Figure 1—source data 1.Figure 1B.Figure 1—source data 2.Figure 1B.Figure 1—source data 3.Figure 1C.Figure 1—source data 4.Figure 1C.Figure 1—source data 5.Figure 1F.
+**Figure 1.:** (A) Scheme for generating the OpalinP2A-Flpo-T2A-tTA2 allele. (B) Southern blot confirmation of correctly targeted embryonic stem cell clone. (C) Genomic polymerase chain reaction (PCR) to genotype F1 offspring. (D) OL labeling by Flp. (E) OL labeling by tTA2. High magnification images of the boxed region showing co-localization of red fluorescent protein (RFP) with myelin basic protein (MBP) staining, which further demonstrated the myelination ability of labeled OLs. (F) Quantification of labeling specificity (left panel) and efficiency (right panel) by colacalization with OL marker CC1. Both reporting systems are highly specific, as shown by the complete co-localization of fluorescent protein (XFP) with OL marker (CC1) and lack of co-staining with neuronal marker (NeuN) or astrocyte marker (Sox9). Quantification bar graph was not presented for NeuN and Sox9 as zero co-localizations were observed in all analyzed regions. Close to complete OL labeling was achieved by Flp-dependent H2B-GFP reporter in all analyzed regions (green dots), while sparser labeling with variable regional density was achieved by tTA2-dependent tdTomato reporter driven by TRE promoter (red dots). NCx: neocortex. Pir: piriform cortex. cc: corpus callosum. ac: anterior commissure. Scale bar: 50 μm in low magnification images, 5 μm in high magnification images. Quantification: n = 3. Dots represent data from individual mice.
 
 Next, we established two types of genetic combinatorial fate-mapping strategies to directly visualize OLs from different embryonic origins (Figure 2): (1) combining OpalinFlp and ProgenitorCre with intersectional reporters Ai65 to label OLs derived from Cre+ progenitor domain by RFP (Figure 2A); (2) combining OpalinFlp and ProgenitorCre with RC::FLTG (Plummer et al., 2015) to simultaneously label OLs derived from Cre+ progenitors by green fluorescent protein (GFP) and OLs derived from the complementing Cre− progenitors by RFP (Figure 2B, Figure 2—figure supplement 1A). The first approach allowed us to track dOLs and MPOLs (Figure 2C, E). The second approach empowered us to observe and compare OLs generated from dorsal and ventral origins (Figure 2—figure supplement 1B), or those from Gsh2+ and Gsh2− progenitors, in the same brain (Figure 2—figure supplement 1C). Importantly, the subtraction power enabled us to target OLs derived from LGE/CGE progenitors that express neither Emx1 nor Nkx2.1 (Figure 2D and Figure 2—figure supplement 1D). In addition, these strategies greatly facilitated the identification of OLs derived from specific origin which exist at relatively low density in certain regions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/95406/elife-95406-fig2-v1.jpg)
+
+**Figure 2.:** (A) Strategy for intersectional labeling. Flp-AND-Cre labels oligodendrocytes (OLs) from Cre-expressing progenitors with RFP. (B) Strategy for subtractional labeling of OLs derived from non-Cre-expressing progenitors with RFP. The eGFP expressing OLs derived from Cre-expressing progenitors were not used for analysis in this scenario and thereby were not highlighted by color. Schematics showing intersectional labeling of dOLs in OpalinFlp::Emx1Cre::Ai65 (C), subtractional labeling of LCOLs in OpalinFlp::Emx1Cre::Nkx2.1Cre::RC::FLTG (D), intersectional labeling of MPOLs in OpalinFlp::Nkx2.1Cre::Ai65 (E), and cortical OLs derived from all three origins (F). (G–I) Representative images (left panels) and quantifications (right panels) of RFP+ cell density in motor cortex (Mo), somatosensory cortex (SS), and piriform cortex (Pir). (J) Quantification of differential contribution to ASPA+ OLs by three embryonic origins to Mo, SS, and Pir. Representative images (K–M) and quantifications (N) of differential contribution to ASPA+ OLs by three embryonic origins in the two major commissure white matter tracts: corpus callosum (cc) and anterior commissure (ac). MPOLs and LCOLs preferentially reside in the medial and lateral cc (cc-m and cc-l), respectively. Scale bar: 1 mm in low magnification images in (G–I), 250 μm in high magnification images of the boxed area in (G–I) and low magnification images in (K–M), 100 μm in high magnification images of the boxed area (cc-m and cc-l) in (K–M). n = 3 for dOLs and LCOLs; n = 4 for MPOLs. Dots represent data from individual mice. Error bar: standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95406/elife-95406-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Strategy for simultaneous labeling of OLs derived from complementary origins. Flp-NOT-Cre labels OLs from non-Cre-expressing progenitors with RFP, while Flp-AND-Cre labels OLs from Cre-expressing progenitors with eGFP. (B) Coronal sections showing GFP+ OLs from dorsal origin (dOLs) and RFP+ OLs from ventral origin (vOLs) in OpalinFlp::Emx1Cre::RC::FLTG. (C) Coronal sections showing GFP+ OLs derived from Gsh2+ progenitors (Gsh2+OL) and RFP+ OLs derived from Gsh2− progenitors (Gsh2−OL) in OpalinFlp::Gsh2Cre::RC::FLTG. (D) Coronal sections showing GFP+ OLs from dorsal and medial ganglionic eminence/preoptic area (MGE/POA) origin (dOLs+MP OLs) and RFP+ OLs from lateral/caudal ganglionic eminences (LGE/CGE) origin (LCOLs) in OpalinFlp:: Emx1Cre:: Nkx2.1Cre::RC::FLTG. Scale bar: 1 mm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95406/elife-95406-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematics of cortical regions chosen for quantifications and for showing representative images (boxed regions). Every fourth coronal section between Bregma +1.94 and −2.80 mm was analyzed. Positions (P) 1–5 correspond to sections from which representative images were taken from. P2 corresponds to the sections shown in Figure 2G–I. (B–D) For each cortical region, two representative images at the rostral (r) and caudal (c) ends were presented for each combination. (E, F) Quantification of rostral–caudal distribution of neocortical dOLs, LCOLs, and MPOLs. Neocortical area of slices ranging from Bregma +1.94 to −2.80 (gray shaded region in E) was quantified and grouped into seven evenly divided bins along the rostral–caudal axis. Densities of dOLs and LCOLs showed no significant change across bins, while MPOLs exhibited lower density in more caudal regions. (G) Distributions of dOLs, LCOLs, and MPOLs across six layers in SS. Similar to the total oligodendrocyte (OL) distribution quantified based on aspartoacylase (ASPA) staining, more dOLs and LCOLs reside in deeper layers. In contrast, MPOLs are highly enriched in L4 at the cost of L6 with significant deviation from the total OLs. (H) Representative image of SS from 1-year-old OpalinFlp::Nkx2.1Cre::Ai65 mouse. Scale bar: 200 μm. n = 3 for dOLs and LCOLs; n = 4 for MPOLs and ASPA. Dots represent data from individual mice. Error bar: standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/95406/elife-95406-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Coronal sections showing both dOLs and MPOLs labeled by RFP in OpalinFlp::Emx1Cre::Nkx2.1Cre::Ai65. (B) Higher magnification images showing ASPA+RFP+ dOLs/MPOLs (closed arrow heads) and ASPA+RFP− putative LCOLs (open arrow heads). The latter cells were difficult to find in neocortical regions such as motor cortex (Mo) and somatosensory cortex (SS), and corpus callosum (cc), but were frequently encountered in piriform cortex (Pir) and anterior commissure (ac). Scale bar: 1 mm in low magnification images, 200 μm in Mo, SS, cc, and ac, 10 μm in high magnification images of boxed area.
 
 Deploying these strategies, we assessed the differential contributions of dOLs, LCOLs, and MPOLs by analyzing RFP+ cells in the following mice: OpalinFlp::Emx1Cre::Ai65 (Figure 2C), OpalinFlp::Emx1Cre::Nkx2.1Cre::RC::FLTG (Figure 2D), and OpalinFlp::Nkx2.1Cre::Ai65 (Figure 2E). To better assess their contributions to the total OL population (Figure 2F), we co-stained RFP with the mature OL marker aspartoacylase (ASPA) (Huang et al., 2023; Figure 2G–I) and quantified the ratio of co-localization (Figure 2J). Notably, all RFP+ cells are ASPA+, reassured the specificity of our label strategies. We observed two significant differences from the traditional model in the neocortex. The first major deviation is that, instead of comparable contributions by dOLs and LCOLs, the vast majority of neocortical OLs were dOLs but not LCOLs. The densities (Figure 2G–I and Figure 2—figure supplement 2A–F) and ASPA ratios (Figure 2J) of dOLs are much higher than those of LCOLs. Considering the possibility of incomplete recombination in combinatorial reporters, and the relatively low Cre activity in the dorsal MGE of Nkx2.1Cre (Xu et al., 2008), the genuine contribution of LCOLs to the neocortex could be even lesser than our current observation. Therefore, the large quantity of neocortical OLs labeled by Gsh2Cre in previous study (Kessaris et al., 2006) or by GFP in OpalinFlp::Gsh2Cre::RC::FLTG (Figure 2—figure supplement 1C) most likely were predominantly dOLs generated by Gsh2+ dorsal progenitors (Zhang et al., 2020), rather than bona fide LCOLs.
 
@@ -55,18 +71,252 @@ In addition to the new framework of forebrain OL origins (Figure 3), we also gen
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Nkx2.1Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain#: 008661; RRID: IMSR_JAX:008661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gsh2Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain#: 025806; RRID: IMSR_JAX:025806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Emx1Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain#: 005628; RRID: IMSR_JAX:005628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ai65</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain#: 021875; RRID: IMSR_JAX:021875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>RC::FLTG</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain#: 026932; RRID: IMSR_JAX:026932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ai62</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain#: 022731; RRID: IMSR_JAX:022731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>HG-FRT</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain#: 028581; RRID: IMSR_JAX:028581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>OpalinP2A-Flpo-T2A-tTA2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Mice</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (goat polyclonal)</td>
+      <td>SICGEN</td>
+      <td>Cat# AB0081-200; RRID: AB_2333095</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat# 600-401-379; RRID: AB_2209751</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1020; RRID: AB_10000240</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MBP (rat polyclonal)</td>
+      <td>AbD Serotec</td>
+      <td>Cat# MCA409S; RRID: AB_325004</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CC1 (rabbit polyclonal)</td>
+      <td>Oasis Biofarm</td>
+      <td>Cat# OB-PRB070; RRID: AB_2934254</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CC1 (mouse polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# OP80; RRID: AB_2057371</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ASPA (rat polyclonal)</td>
+      <td>Oasis Biofarm</td>
+      <td>Cat# OB-PRT005; RRID: AB_2938679</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sox9 (rabbit polyclonal)</td>
+      <td>Chemicon</td>
+      <td>Cat# AB5535; RRID: AB_2239761</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NeuN (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB377; RRID: AB_2298772</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Opalin-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCCTATGTTTGATTTCCAGCACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Opalin-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGCACTTATGACTGCTGAGCCGTTC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tail lysis buffer</td>
+      <td>Viagen</td>
+      <td>Cat# 102-T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Beyotime</td>
+      <td>Cat# ST535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pentobarbital</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P3761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Donkey Serum</td>
+      <td>Abcam</td>
+      <td>Cat# ab7475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# X100PC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Citrate buffer</td>
+      <td>Oasis-Biofarm</td>
+      <td>Cat# BR-AB001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aqua-mount</td>
+      <td>Southern Biotech</td>
+      <td>Cat# 0100-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat# D1306</td>
+      <td>(10 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>RRID: SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuPath</td>
+      <td>Queen’s University Belfast</td>
+      <td>RRID: SCR_018257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe Systems</td>
+      <td>RRID: SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v8.0.1</td>
+      <td>GraphPad Software</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mouse studies were carried out in strict accordance with the guidelines of the Institutional Animal Care and Use Committee of School of Basic Medical Sciences, Fudan University. All husbandry and experimental procedures were reviewed and approved by the same committee (Permit Number: 20210302-137). All applicable institutional and/or national guidelines for the care and use of animals were followed. The following transgenic mouse lines were used in this study: Nkx2.1Cre (Jax 008661) (Xu et al., 2008), Gsh2Cre (Jax 025806) (Kessaris et al., 2006), Emx1Cre (Jax 005628) (Gorski et al., 2002), Ai65 (Jax 021875) (Madisen et al., 2015), and RC::FLTG (Jax 026932) (Plummer et al., 2015). The tTA2-dependent tdTomato reporter (TRE-RFP) was derived from Ai62 (Jax 022731) (Madisen et al., 2015), by removing LoxP-STOP-LoxP with E2a-Cre (Jax 003724). The Flp-dependent H2B-GFP reporter (HG-FRT) was derived from HG-dual (Jax 028581) via removal of loxP flanking STOP cassette by CMV-Cre (He et al., 2016). The OpalinP2A-Flpo-T2A-tTA2 allele was generated by targeted insertion of the T2A-Flpo-P2A-tTA2 sequence immediately before the STOP codon of the endogenous Opalin gene using homologous recombination. Gene targeting vector was generated using PCR-based cloning approach as described before (He et al., 2016). More specifically, a 4.7-kb 5′ homology arm, a loxP flanking Neo-positive selection cassette, a T2A-Flpo-P2A-tTA2 cassette and a 2.7-kb 3′ homology arm were cloned into a building vector containing the DTA-negative selection cassette to generate the targeting vector. Targeting vector was linearized and transfected into a C57/black6 ES cell line. ES clones that survived through negative and positive selections were first screened by genomic PCR, then confirmed by Southern blotting using appropriate DIG-dUTP-labeled probes. One positive ES cell clone was used for blastocyst injection to obtain male chimera mice carrying the modified allele following standard procedures. Chimera males were bred with C57BL/6J females to confirm germline transmission by genomic PCR. The Neo selection cassette was self-excised during spermatogenesis of F0 chimeras. Heterozygous F1 siblings were bred with one another to establish the colony. Targeting vector construction, ES cell transfections and screening, blastocyst injections, and chimera breeding were performed by Cyagen.
 
-## Genomic PCR
+### Genomic PCR
 
 Genomic DNA was prepared from mouse tails. Tissue was lysed by incubation in tail lysis buffer (Viagen, 102-T) with 0.1 mg/ml proteinase K (Diamond, A100706) overnight at 55°C followed by 45 min at 90°C in an air bath to inactivate proteinase K. The lysate was cleared by centrifugation at maximum speed (21,130 G) for 15 min in a table-top centrifuge. Supernatant containing genomic DNA was used as the PCR template for amplifying DNA products. The following primers were used:
 
-## Immunohistochemistry and microscopy
+### Immunohistochemistry and microscopy
 
 Mice were anesthetized by intraperitoneal injection of 1.5% sodium pentobarbital (0.09 mg/g body weight) and then intracardially perfused with saline followed by 4% paraformaldehyde in 0.1 M phosphate buffer. Following post fixation at 4°C for 24 hr, brain samples were sectioned at 30 μm using a vibratome (Leica VT1000S), or transferred into 30% sucrose in 0.1 M PB for cryoprotection, embedded in optimal cutting temperature (OCT) compound, and sectioned using a cryostat (Leica CM1950). For CC1 immunostaining, antigen retrieval was performed prior to blocking by boiling for 3 min in 10 mM citrate buffer (pH 6.0). Sections were blocked in phosphate buffered saline (PBS) containing 0.05% Triton and 5% normal donkey serum and then incubated with the following primary antibodies in the blocking solution at 4°C overnight: RFP (goat polyclonal antibody, 1:2000, SICGEN AB0081-200; rabbit polyclonal antibody, 1:2000, Rockland 600-401-379), GFP (chicken polyclonal antibody, 1:1000, Aves Labs, GFP-1020), MBP (rat polyclonal antibody, 1:500, AbD Serotec, MCA409S), CC1 (rabbit polyclonal antibody, 1:500, Oasis Biofarm, OB-PRB070, mouse polyclonal antibody, 1:300, Millipore, OP80), ASPA (rat polyclonal antibody, 1:200, Oasis Biofarm, OB-PRT005), Sox9 (rabbit polyclonal antibody, 1:2000, Chemicon, AB5535), and NeuN (mouse monoclonal antibody, 1:500, Millipore, MAB377). Sections were then incubated with appropriate Alexa fluor dye-conjugated IgG secondary antibodies (1:500, Thermo Fisher Scientific) or CF dye-conjugated IgG secondary antibodies (1:250, Sigma) in blocking solution and mounted in Aqua-mount (Southern Biotech, 0100-01). Sections were counterstained with DAPI (4',6-diamidino-2-phenylindole). Sections were imaged with confocal microscopy (Olympus FV3000), fluorescence microscopy (Nikon Eclipse Ni; Olympus VS120; Olympus VS200), and fluorescent stereoscope (Nikon SMZ25). All quantifications were performed in 2-month-old adult mice from coronal sections between Bregma +1.94 and −2.80 mm. Anatomical regions were identified according to the Paxinos ‘The Mouse Brain’ Atlas and the Allen Reference Atlas, and their areas were measured in ImageJ for density calculations, whenever applicable. For cortical regions, every fourth section within the range of selection was analyzed. For whiter matter tracts, three consecutive sections at Bregma 0.14 were analyzed. At least three brains were analyzed for each genotype. To quantify density and co-localization, cells were identified and counted in Adobe Photoshop or ImageJ in conjugation with QuPath.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism version 8.0.1 was used for statistical calculations. No statistical methods were used to predetermine sample sizes, but our sample sizes are similar to those reported in previous publications. Data collection and analysis were performed blind to the conditions of the experiments whenever possible. No animals or data points were excluded from the analysis. Normalcy was assessed using Shapiro–Wilk test. Equal variances were assessed using F test or Bartlett’s test. Statistical significance was tested using two-tailed unpaired t-test, Welch’s t-test, one-way analysis of variance (ANOVA), and two-way ANOVA followed by Tukey’s or Bonferroni post hoc test, wherever appropriate. Data are presented as mean ± standard error of the mean. p < 0.05 was considered significant. Significance is marked as *p < 0.05, **p < 0.01, and ***p <0.001.

@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Cell Biology and Physiology, Washington University School of Medicine St Louis United States
-2. https://ror.org/01yc7t268 Department of Neuroscience, Washington University School of Medicine St Louis United States
+1. Department of Cell Biology and Physiology, Washington University School of Medicine St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Department of Neuroscience, Washington University School of Medicine St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
 
 † Corresponding author
 
@@ -24,7 +24,7 @@ Fragile X syndrome (FXS) is the leading monogenic cause of intellectual disabili
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig1-v1.jpg)
 
-**Figure 1.:** Fmr1 knockout (KO) mice.(A) Schematic illustration of dentate circuit organization and recordings of action potentials (APs) from MCs. Note, for simplicity and clarity, we only show one type of interneurons (IN) with axons terminating onto distal dendrites of a granule cell (GC). The arrow indicates axons of GCs projecting to CA3. ML, molecular layer; GCL, granule cell layer. (B) Sample traces of spontaneous APs recorded at different membrane potentials from MCs in wildtype (WT) (black) and Fmr1 KO (red) mice. (C) Summary data for experiments exemplified in (B) showing decreased number of APs at membrane potentials of –61 through –55 mV in KO MCs. Scatter circles indicate individual data points for this and all subsequent bar graphs in this study. (D) Determination of AP threshold and rheobase by a ramp current injection (lower trace, ramp rate 0.15 pA/ms). Only the first APs (arrows, which were expanded and aligned by the time of threshold in inset) were used to estimate AP parameters. The horizontal lines (inset) indicate threshold of the first APs. In the lower panel, RbWT and RbKO denote rheobase current intensity at threshold time point, and the area (integrating time and input current) enclosed by dotted line, current ramp and RbWT (or RbKO) are rheobase charge transfer. (E–H) Summary data showing decreased number of APs during 2 s ramp (E), increased voltage threshold (F), rheobase (G), and rheobase charge transfer (H) in KO MCs. (I–N) AP upstroke maximum rise rate (I), rise time (J), fall time (K), duration (L), peak potential (M), and amplitude (N). *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+**Figure 1.:** (A) Schematic illustration of dentate circuit organization and recordings of action potentials (APs) from MCs. Note, for simplicity and clarity, we only show one type of interneurons (IN) with axons terminating onto distal dendrites of a granule cell (GC). The arrow indicates axons of GCs projecting to CA3. ML, molecular layer; GCL, granule cell layer. (B) Sample traces of spontaneous APs recorded at different membrane potentials from MCs in wildtype (WT) (black) and Fmr1 KO (red) mice. (C) Summary data for experiments exemplified in (B) showing decreased number of APs at membrane potentials of –61 through –55 mV in KO MCs. Scatter circles indicate individual data points for this and all subsequent bar graphs in this study. (D) Determination of AP threshold and rheobase by a ramp current injection (lower trace, ramp rate 0.15 pA/ms). Only the first APs (arrows, which were expanded and aligned by the time of threshold in inset) were used to estimate AP parameters. The horizontal lines (inset) indicate threshold of the first APs. In the lower panel, RbWT and RbKO denote rheobase current intensity at threshold time point, and the area (integrating time and input current) enclosed by dotted line, current ramp and RbWT (or RbKO) are rheobase charge transfer. (E–H) Summary data showing decreased number of APs during 2 s ramp (E), increased voltage threshold (F), rheobase (G), and rheobase charge transfer (H) in KO MCs. (I–N) AP upstroke maximum rise rate (I), rise time (J), fall time (K), duration (L), peak potential (M), and amplitude (N). *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
 
 Abnormal neural excitability in FXS has been often linked to dysregulated expression and/or function of various ion channels (Deng and Klyachko, 2021), and particularly the family of K+ channels, which control neuronal excitability by regulating the action potential (AP) threshold, duration, frequency, and firing patterns. Kv7 (KCNQ) channels are a subthreshold-activated and non-inactivating K+ conductance that plays key roles in regulating neuronal excitability throughout the brain (Brown and Passmore, 2009; Delmas and Brown, 2005; Jones et al., 2021; Liu et al., 2021), including hippocampal neurons (Gu et al., 2005; Incontro et al., 2021; Martinello et al., 2015; Peters et al., 2005). Increasing evidence suggests that Kv7 channels contribute to synaptic plasticity, learning/memory, and behavior (Baculis et al., 2020), and their dysfunction contributes to a variety of neurodevelopmental disorders (Baculis et al., 2020; Gilling et al., 2013; Jentsch, 2000; Jones et al., 2021; Liu et al., 2021; Miceli et al., 2015; Miceli et al., 2008; Nappi et al., 2020; Peters et al., 2005; Springer et al., 2021). Two members of the Kv7 family (Kv7.2 and Kv7.3) have been identified as targets of FMRP’s translational regulation (Darnell et al., 2011), yet it is unknown whether Kv7 expression/function is affected by FMRP loss and plays a role in pathophysiology of FXS.
 
@@ -32,7 +32,7 @@ Here, we report an unexpected hypo-excitability of MCs in FXS mouse model, resul
 
 ## Results
 
-## Decreased excitability of dentate MCs in the Fmr1 KO mice
+### Decreased excitability of dentate MCs in the Fmr1 KO mice
 
 MCs comprise a large fraction of the cells in the dentate hilar region and are implicated in multiple pathological conditions (Scharfman, 2016; Scharfman, 2018). To investigate whether MCs are involved in the pathophysiology of FXS, we first examined the excitability of MCs in wildtype (WT) and Fmr1 KO mice, the FXS mouse model. APs were recorded from MCs at different membrane potentials (from –64 to –55 mV, set by constant current injection). Unexpectedly, we found that loss of FMRP significantly decreased excitability of MCs, as evident by the reduced number of APs fired (Figure 1B and C; statistical data for every measurement in this study are listed in Supplementary file 1). This hypo-excitability is opposite to the changes previously observed in other excitatory neurons in FXS models, which typically exhibit hyperexcitability (Contractor et al., 2015; Deng and Klyachko, 2021). To verify this observation, we employed a ramp protocol to evoke APs and examined various AP parameters (Deng et al., 2021; Deng et al., 2019; Deng et al., 2022). Similarly, we found a decreased number of APs fired (Figure 1D and E), as well as increased voltage threshold, rheobase, and rheobase charge transfer in MCs of Fmr1 KO mice (Figure 1D and F–H), confirming the hypo-excitable state of MCs in the absence of FMRP. There were no significant changes in AP maximum rise rate, rise time, fall time, duration, peak potential, and amplitude in KO MCs (Figure 1I–N), indicating that the transient Na+ current and fast activating K+ conductances are likely unaffected in MCs of Fmr1 KO mice.
 
@@ -40,11 +40,19 @@ The MC hypo-excitability in Fmr1 KO mice can be attributed to cell-autonomous an
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig2-v1.jpg)
 
-**Figure 2.:** Fmr1 knockout (KO) mossy cells.(A, B) Resting membrane potential (RMP, A) and membrane capacitance (B) of mossy cells. (C) Input resistance measured at RMP level. (D) Input resistance measured at –45 mV. Sample traces of the depolarization current step (lowermost panel) induced voltage responses before (basal, upper panel) and during XE991 (+XE991, middle panel). (E) Summary data of input resistance before (basal) and during XE991. (F) Effects of XE991 on increasing of input resistance. Note XE991 have stronger effect on KO mossy cells. *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+**Figure 2.:** (A, B) Resting membrane potential (RMP, A) and membrane capacitance (B) of mossy cells. (C) Input resistance measured at RMP level. (D) Input resistance measured at –45 mV. Sample traces of the depolarization current step (lowermost panel) induced voltage responses before (basal, upper panel) and during XE991 (+XE991, middle panel). (E) Summary data of input resistance before (basal) and during XE991. (F) Effects of XE991 on increasing of input resistance. Note XE991 have stronger effect on KO mossy cells. *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
 
-## Enhanced Kv7 function causes MC hypo-excitability in Fmr1 KO mice
+### Enhanced Kv7 function causes MC hypo-excitability in Fmr1 KO mice
 
 Among conductances active at sub-threshold potentials, Kv7 channels are known to play a major role in determining the input resistance (Baculis et al., 2020; Greene and Hoshi, 2017; Jones et al., 2021; van der Horst et al., 2020). We thus tested whether the reduced input resistance in Fmr1 KO MCs is associated with Kv7 dysfunction. We found that the Kv7 blocker XE991 (10 μM) increased input resistance in all tested MCs from both WT and Fmr1 KO (Figure 2E), with a significantly larger effect in KO mice (Figure 2F). Importantly, XE991 abolished the difference in input resistance at –45 mV between WT and Fmr1 KO cells (Figure 2E). Moreover, Kv7 inhibition with XE991 also caused a larger shift in the holding current in KO than WT MCs (Figure 3A), and a larger membrane depolarization in KO than WT MCs when the membrane potential was initially set at –45 mV (Figure 3B). We further observed that loss of FMRP increased Kv7 currents in MCs as measured by a ramp protocol (Figure 3C and D). Together, these results strongly suggest that Kv7 function is increased in Fmr1 KO MCs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig3-v1.jpg)
+
+**Figure 3.:** (A) Changes in holding current at –45 mV in response to XE991. Left, sample traces; right, summary data. (B) Changes in membrane potential in response to XE991 when the initial potential being set at –45 mV. Left, sample traces; right, summary data. (C) Kv7 current was induced by a ramp protocol (from –95 to +5 mV with a rate of 0.02 mV/ms) and determined by XE991 sensitivity. Insets, the enlargements of boxed areas in main traces. (D) The I–V curves were constructed from ramp-evoked Kv7 currents every 5 mV (quasi-steady-state current, averages over 0.01 mV intervals) and normalized to respective cell capacitances. Inset, Kv7 current at –45 mV. (E–H) Increased threshold (E), rheobase (F), and rheobase charge transfer (H), as well as decreased number of action potentials (APs) (H) in pharmacologically isolated KO MCs. XE991 abolished these differences between genotypes. *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Western blot analysis of KCNQ2 (A) and KCNQ3 (B) in the whole brain lysate. Ponceau staining was used as a loading control for the lysate (lower panel). (C, D) The same as (A, B), but for dentate gyrus lysate. ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
 
 The ‘classical’ Kv7 current is carried predominantly by heteromeric KCNQ2/KCNQ3 channels (Brown and Passmore, 2009). KCNQ2 and KCNQ3 have been identified as targets of FMRP translational regulation (Darnell et al., 2011) and are highly expressed in the hippocampus (Tzingounis et al., 2010). We thus examined whether KCNQ2 and KCNQ3 levels were altered by FMRP loss, but found no changes in expression of either isoform in the whole brain lysate as measured by western blot (Figure 3—figure supplement 1A and B). To exclude the possibility that expression variation among brain regions masked KCNQ changes in a particular area, we performed the same experiment on dentate gyrus lysate only. We found no detectable changes in expression of KCNQ2 or KCNQ3 in Fmr1 KO mice (Figure 3—figure supplement 1C and D). We did not further investigate the precise mechanisms underlying enhancement of Kv7 function in the absence of FMRP since this study primarily focuses on the functional consequences of abnormal cellular and circuit excitability.
 
@@ -52,15 +60,31 @@ To verify the role of elevated Kv7 function in decreased excitability of Fmr1 KO
 
 Together, these results indicate that the hypo-excitability of MCs in Fmr1 KO mice has primarily a cell-autonomous origin and can be attributed to abnormally elevated Kv7 function.
 
-## MC hypo-excitability dominates adaptive circuit changes in Fmr1 KO mice
+### MC hypo-excitability dominates adaptive circuit changes in Fmr1 KO mice
 
 Next we examined whether, in addition to cell-autonomous Kv7-mediated defects, there is also a circuit contribution to MC hypo-excitability. First, we measured spontaneous and miniature excitatory postsynaptic currents (sEPSCs and mEPSCs) and found that the excitatory drive onto MCs was increased, as evident by the elevated number and instantaneous frequency of both sEPSCs and mEPSCs in KO MCs (Figure 4A and B, Figure 4—figure supplement 1A and B), without changes in their amplitudes (Figure 4E, Figure 4—figure supplement 1C). We note that this increase in excitatory drive cannot explain the MCs’ hypo-excitability; rather these results likely reflect the hyper-excitable state of granule cells (Deng et al., 2022), which provide the majority of excitatory drive onto MCs. We next examined inhibitory inputs onto MCs and found that the number and instantaneous frequency of spontaneous inhibitory postsynaptic currents (sIPSCs) was also increased in KO MCs (Figure 4C and D) without changes in amplitude (Figure 4F). However, we did not observe significant differences in miniature inhibitory postsynaptic currents (mIPSCs) in KO MCs (Figure 4—figure supplement 1D–F). Because the overall circuit contribution to MC excitability is determined by the net effect of both excitatory and inhibitory drives, we examined the E/I ratio of these inputs, a parameter which integrates changes in both excitatory and inhibitory drives into a single variable and thus allows us to determine the net circuit effect on MCs excitability. Given that the amplitudes of sEPSCs and sIPSCs were indistinguishable between genotypes (Figure 4E and F), we could estimate the E/I ratio simply by using the mean frequency of spontaneous synaptic events (Figure 4G and H) and observed an increased E/I ratio in Fmr1 KO MCs (↑~20%, Figure 4I) which acts in opposition to the intrinsic hypo-excitability observed in MCs. Thus, these adaptive circuit changes likely function as a compensatory mechanism to the intrinsic MCs’ hypo-excitability in Fmr1 KO mice, similarly to adaptive circuit changes also seen in the cortex (Antoine et al., 2019). However, this circuit adaptation is insufficient to compensate for MC excitability defects because we observed overall hypo-excitability in Fmr1 KO MCs in the intact circuits.
 
-## MC defects reduce excitatory drive onto hilar interneurons in Fmr1 KO mice
+![Figure 4.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig4-v1.jpg)
+
+**Figure 4.:** (A) Distribution of spontaneous excitatory postsynaptic current (sEPSC) instantaneous frequency in MCs. A bin size of 2 Hz was used to calculate sEPSC frequency distribution from a 30-s-long trace per cell. The number of sEPSCs within each bin was normalized to the total number of the respective cells for pooling the data from all cells. Note that sEPSC events in KO mice had a shift toward high frequency. Inset, sample traces of sEPSCs for wildtype (WT) (black) and KO (red) mice. (B) Cumulative probability of sEPSC instantaneous frequency in MCs. Bar graph, number of sEPSCs per minutes. Note that both cumulative probability and number of sEPSCs reveal increased excitatory drive onto MCs. (C, D) Spontaneous inhibitory postsynaptic currents (sIPSCs) recorded from KO and WT MCs, aligned in the same way as in (A, B), respectively. The IPSC signals were downward here and also in Figure 5, Figure 4—figure supplement 1, and Figure 5—figure supplement 1, due to a high chloride electrode solution being used in these experiments. Note the increased sIPSC frequency and number in KO MCs. (E, F) Summary data for sEPSC amplitude (E) and sIPSC amplitude (F) recorded from MCs. Insets, sample sEPSC (E) and sIPSC (F) events for WT (black) and KO (red) MCs. Scale: 5 ms (horizontal) and 25 pA (vertical). (G, H) Mean frequency of sEPSCs (G) and sIPSCs (H) recorded from MCs. Note that loss of fragile X messenger ribonucleoprotein (FMRP) increased mean frequency of both sEPSC and sIPSC. (I) E/I ratio evaluated by sEPSC and sIPSC frequencies (mean values from G and H, respectively). Note the increased E/I ratio in Fmr1 KO mice. *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Distribution of miniature excitatory postsynaptic current (mEPSC) instantaneous frequency in MCs. A bin size of 2 Hz was used to calculate mEPSC frequency distribution from a 30-s-long trace per cell. The number of mEPSCs within each bin was normalized to the total number of the respective cells for pooling the data from all cells. Note that mEPSC events in KO mice had a shift toward high frequency. Inset, sample traces of mEPSCs for wildtype (WT) (black) and KO (red) mice. (B) Cumulative probability of mEPSC instantaneous frequency in MCs. Bar graph, number of mEPSCs per minutes. Note that both cumulative probability and number of mEPSCs reveal increased excitatory drive onto MCs. (C) Summary data for mEPSC amplitude. Inset, sample mEPSC events for WT (black) and KO (red) MCs. Scale: 5 ms (horizontal) and 25 pA (vertical). (D–F) Miniature inhibitory postsynaptic currents (mIPSCs) recorded from KO and WT MCs, aligned in the same way as in (A–C), respectively. *p<0.05; **p<0.01. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+### MC defects reduce excitatory drive onto hilar interneurons in Fmr1 KO mice
 
 The principal output of the dentate circuit is determined by granule cell firing, which is largely controlled by the balance of the excitatory inputs to granule cells from the stellate cells of the entorhinal cortex via the perforant path (PP), local excitatory inputs from MCs and inhibitory inputs from local interneurons. In the Fmr1 KO mice, stellate cells have normal excitability (Deng and Klyachko, 2016); the granule cells are hyper-excitable (Deng et al., 2022), while MCs are hypo-excitable. We thus next probed excitability of the hilar interneurons, the remaining component of this circuit that has not been examined thus far. Because these inhibitory neurons exhibit both morphological and electrophysiological diversity and no clear correlation between morphology and electrophysiological properties has been observed (Mott et al., 1997), here we classified a total of 66 recorded interneurons into three types according to AP firing pattern: (1) fast-spiking interneurons (high-frequency non-adapting firing); (2) regular-spiking interneurons (slower and adapting firing); and (3) stuttering-like interneurons (high-frequency irregular bursting firing) (Golomb et al., 2007; Figure 5—figure supplement 1A). Chi-square test showed no significant differences in the ratios of the three types of interneurons between WT and KO mice (Figure 5—figure supplement 1A). Furthermore, we found that the passive membrane properties (RMP, capacitance and input resistance) and threshold of these interneurons were not significantly different between genotypes and among cell types (thus data were pooled, Figure 5—figure supplement 1B–E). These results indicate that the intrinsic excitability of hilar interneurons is not affected significantly in the absence of FMRP, suggesting that alterations in synaptic drive onto these cells may play a critical role in determining changes in local inhibition in Fmr1 KOs.
 
 Therefore, we next examined excitatory and inhibitory drives onto hilar interneurons by recording spontaneous and miniature synaptic inputs to these cells. We found that the number and instantaneous frequency of sEPSCs and mEPSCs were markedly decreased in Fmr1 KO mice (Figure 5A and B, Figure 5—figure supplement 1F and G) with no changes in amplitudes (Figure 5E, Figure 5—figure supplement 1H). Further, the number and instantaneous frequency of sIPSCs were also decreased in KO interneurons (Figure 5C and D) without change in amplitude (Figure 5F), while no significant changes in mIPSCs was observed (Figure 5—figure supplement 1I–K). We then estimated the balance of E/I inputs onto interneurons using the same approach as above for MCs and observed a markedly decreased E/I ratio of inputs onto Fmr1 KO interneurons (↓~60%, Figure 5I). We note that changes in the excitatory drive onto interneurons include both mEPSC and sEPSC frequencies, which reflect not only potential deficits in excitability of their input cells, such as MCs, but also changes in synaptic connectivity/function, that may arise from homeostatic circuit reorganization/compensation (see ‘Discussion’).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig5-v1.jpg)
+
+**Figure 5.:** (A) Distribution of spontaneous excitatory postsynaptic current (sEPSC) instantaneous frequency in hilar interneurons. Note that KO sEPSC events had a shift toward low frequency. Inset, sample traces of sEPSCs for wildtype (WT) (black) and KO (red) interneurons. (B) Cumulative probability of sEPSC instantaneous frequency in interneurons. Bar graph shows number of sEPSCs per minutes. Note that both cumulative probability and number of sEPSCs reveal decreased excitatory drive onto interneurons. (C, D) Spontaneous inhibitory postsynaptic currents (sIPSCs) recorded from interneurons, aligned in the same way as in (A, B), respectively. Note the decreased sIPSC frequency and number in KO interneurons. (E, F) Summary data for sEPSC amplitude (E) and sIPSC amplitude (F) recorded from interneurons. Insets, sample sEPSC (E) and sIPSC (F) events for WT (black) and KO (red) mossy cells (MCs). Scale: 5 ms (horizontal) and 25 pA (vertical). (G, H) Mean frequency of sEPSCs (G) and sIPSCs (H) recorded from interneurons. Note loss of FMRP decreased mean frequency of both sEPSC and sIPSC. (I) E/I ratio evaluated by sEPSC and sIPSC frequencies in interneurons (mean values from G and H, respectively). Note the decreased E/I ratio in Fmr1 KO mice. *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Sample traces (left) of three types of interneurons classified by firing pattern. Upper trace, fast-spiking interneurons with high-frequency non-adapting firing (wildtype [WT] 20/37 and KO 18/29, where numerator denotes the number of cells for a given type and denominator is the total number of tested cells for a given genotype); middle trace, regular-spiking interneurons with slower and adapting firing (WT 4/37, KO 3/29); lower trace, stuttering-like interneurons with high-frequency irregular bursting firing (WT 13/37, KO 8/29). Stack bar graph (right) shows the percentage of three interneuron types (color-coded as the traces in the left panel). No significant differences in the ratios of three interneuron types between WT and KO mice. (B–E) We pooled resting membrane potential (RMP) (B), capacitance (C), input resistance (D), and threshold (E) from three types of interneurons due to no significant differences observed among types. (F) Distribution of miniature excitatory postsynaptic current (mEPSC) instantaneous frequency in interneurons. A bin size of 2 Hz was used to calculate mEPSC frequency distribution from a 30-s-long trace per cell. The number of mPSCs within each bin was normalized to the total number of the respective cells for pooling the data from all cells. Note that mEPSC events in KO mice had a shift toward low frequency. Inset, sample traces of mEPSCs for WT (black) and KO (red) mice. (G) Cumulative probability of mEPSC instantaneous frequency in interneurons. Bar graph shows number of mEPSCs per minutes. Note that both cumulative probability and number of mEPSCs reveal decreased excitatory drive onto interneurons. (H) Summary data for mEPSC amplitude. Inset, sample mEPSC events for WT (black) and KO (red) mossy cells (MCs). Scale: 5 ms (horizontal) and 25 pA (vertical). (I–K) Miniature inhibitory postsynaptic currents (mIPSCs) recorded from KO and WT interneurons, aligned in the same way as in (F–H), respectively. **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
 
 Considering that excitability of stellate cells is largely unaffected and granule cells show profound hyperexcitability in Fmr1 KO mice, our observations suggest that it is the MCs that provide the dominant excitatory drive to hilar interneurons, causing a marked decrease in E/I ratio of inputs onto interneurons in Fmr1 KO mice. To determine whether this is indeed the case, we took advantage of different properties of PP, granule cell, and MC axonal terminals (Chancey et al., 2014; Chiu and Castillo, 2008; Shigemoto et al., 1997). Specifically, granule cell and PP axonal terminals contain group II mGluRs (Shigemoto et al., 1997), while MC axonal terminals express type I cannabinoid (CB1) receptors (Chancey et al., 2014; Chiu and Castillo, 2008). Accordingly, mGluR group II agonist DCG-IV (1 μM) selectively inhibits granule cell- and PP-derived EPSCs onto hilar interneurons, while the CB1 agonist WIN 55212-2 (WIN, 5 μM) selectively inhibits MC-derived EPSCs onto these interneurons. In this analysis, for simplicity and better comparison among cells, we normalized the rate of sEPSCs to its own baseline before agonist application (i.e., normalized frequency). We observed that DCG-IV had little effect on the normalized frequency of sEPSCs recorded in interneurons in both genotypes (Figure 6A, C, D and F), indicating that granule cell- and PP-derived EPSCs comprise a limited portion of excitatory drive onto hilar interneurons in both genotypes. As a control for DCG-IV effectiveness, we observed that DCG-IV strongly reduced the normalized frequency of sEPSCs recorded from MCs that primarily receive excitatory inputs from granule cells (Figure 6G–I). In contrast, WIN markedly reduced the normalized frequency of sEPSCs in interneurons of both WT and KO mice (Figure 6B, C, E and F), while it failed to affect the normalized frequency of sEPSC recorded from MCs (Figure 6H and I), suggesting that MCs provide a significant proportion of excitatory drive onto hilar interneurons. Together with the observations above, this analysis supports the notion that the hypo-excitability of MCs in Fmr1 KO mice is a major factor contributing to the reduction of excitatory drive onto hilar interneurons, which ultimately results in reduced local inhibition.
 
@@ -68,21 +92,49 @@ Considering that excitability of stellate cells is largely unaffected and granul
 
 **Figure 6.:** (A) Sample traces of spontaneous excitatory postsynaptic currents (sEPSCs) recorded from an interneuron of wildtype (WT) mouse before and during DCG-IV. (B) The same as in (A), but for WIN55212-2 in an interneuron of WT mouse. (C) Effect of DCG-IV or WIN55212-2 on the sEPSC normalized frequency recorded from interneurons of WT mice. (D–F) The same as in (A–C) but for interneurons of knockout (KO) mice. Note that WIN55212-2 had comparable effects on normalized frequency of sEPSCs in KO and WT interneurons, but DCG-IV did not have measurable effects on both genotypes. (G) Control experiment showing effectiveness of DCG-IV. Sample traces of sEPSCs recorded from MCs before and during DCG-IV. (H) Sample traces of sEPSCs recorded from MCs before and during WIN 55212-2. (I) Summary data of changes in the normalized frequency of MC sEPSCs in response to DCG-IV (47.6 ± 7.2% of basal) and WIN55212-2 (114.5 ± 6.7% of basal). Note that, compared to interneurons (A–F), MCs exhibited opposite response to these two agonists, indicating the effectiveness of both agonists. **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
 
-## Circuit-wide inhibition of Kv7 channels increased local inhibitory drive and abolished differences in granule cell excitability between genotypes
+### Circuit-wide inhibition of Kv7 channels increased local inhibitory drive and abolished differences in granule cell excitability between genotypes
 
 If upregulation of Kv7 function is largely limited to MCs in the dentate circuit of Fmr1 KO mice, then our findings suggest that inhibition of Kv7 channels would be more efficient to enhance MC excitability in KO than WT mice and thus may be more effective to boost the inhibitory drive onto Fmr1 KO granule cells, thus reducing granule cell hyperexcitability in KO mice. To test this hypothesis, we first simultaneously recorded sEPSCs and sIPSCs in the granule cells to get a better quantitative analysis of the E/I input onto these cells. Granule cells were held at –40 mV, resulting in sEPSC appearing as a downward current, with sIPSC appearing as upward current, which was verified by selective blockers of GABAA or AMPA and NMDA receptors (Figure 7—figure supplement 1A). We found that loss of FMRP did not affect the mean frequencies, amplitudes, and charge transfer of sEPSCs and sIPSCs onto granule cells (Figure 7B and C, Figure 7—figure supplement 1B–G), and thus did not alter the baseline E/I ratio as determined by any of these parameters (Figure 7D, Figure 7—figure supplement 1D–G). In line with our hypothesis, circuit-wide inhibition of Kv7 channels with bath application of XE991 markedly increased sIPSC frequency in the granule cells of Fmr1 KO but not in WT mice (Figure 7C), while having no effect on sEPSC frequency in either genotype (Figure 7B). As a result, XE991 application shifted the E/I balance toward stronger inhibition in the Fmr1 KO, but not in WT mice (Figure 7D). These results indicate that circuit-wide inhibition of Kv7 channels could be effective in reducing granule cell hyperexcitability in the KO mice. We noted that XE991 also slightly reduced both sEPSC and sIPSC amplitudes, but to a similar extent in both genotypes (Figure 7—figure supplement 1B and C), and without detectable changes in charge transfer (Figure 7—figure supplement 1E and F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig7-v1.jpg)
+
+**Figure 7.:** (A) Sample traces of simultaneous recording of spontaneous excitatory postsynaptic current (sEPSC) (downward events) and spontaneous inhibitory postsynaptic current (sIPSC) (upward events) from granule cells (also see Figure 7—figure supplement 2A). (B) Summary data for sEPSC mean frequency in basal (upper) and during XE991 (lower). Horizontal lines (with or without dropdown) denote comparison between genotypes; vertical lines indicate comparison between before and during XE991 within genotypes. (C) The same as in (B), but for sIPSC simultaneously recorded from the same granule cells. Note that XE991 increase sIPSC frequency only in KO mice, but not in wildtype (WT) mice. (D) Excitation/inhibition (E/I) ratio evaluated by frequency. XE991 (lower) significantly decreased the E/I ratio in KO mice only. (E) Evaluation of granule cell excitability by recording action potentials (APs). Sample traces for multistep-current (lowermost panel) evoked APs in WT and KO granule cells in the pharmacologically isolated granule cells in the absence (upper) or presence of XE991 (lower). (F) Summary data for number of APs exemplified in (E) showing increased excitability of the pharmacologically isolated granule cells in the absence (upper) or presence of XE991 (lower). Also, note that XE991 increased number of AP in both WT and KO granule cells. Horizontal lines (with dropdown) denote comparison between genotypes; vertical lines indicate comparison between in the absence and presence of XE991 within genotypes. (G) The same as in (E), but for granule cells with intact dentate circuit. (H) The same as in (F), but for granule cells with intact circuit. Note that XE991 abolished the difference of AP count between genotypes. *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Example traces for simultaneous recording of spontaneous excitatory postsynaptic current (sEPSC) and spontaneous inhibitory postsynaptic current (sIPSC) from granule cells (holding at –40 mV). In the absence of blockers against glutamate and GABA ionotropic receptors, both sEPSC (downward) and sIPSC (upward) were exhibited (upper trace). In the presence of APV and DNQX (blockade of NMDA and AMPA receptors), only upward sIPSC was kept (middle trace). In contrast, in the presence of gabazine (blockade of GABAA receptors), only downward sEPSC was observed (lower trace). (B, C) Amplitudes of simultaneously recorded sEPSC (B) and sIPSC (C) before (basal, upper bars) and during XE991 (+XE991, lower bars). (D) Excitation/inhibition (E/I) ratio evaluated by amplitude before (basal, upper bars) and during XE991 (+XE991, lower bars). (E, F) The same as (B, C), but for charge transfers of simultaneously recorded sEPSC (E) and sIPSC (F). (G) The same as (D), but evaluated by charge transfer. *p<0.05; **p<0.01; ns, not significant. Horizontal lines denote comparison between genotypes; vertical lines indicate comparison between before and during XE991 within genotypes. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) XE991 can directly increase excitability of GCs, leading to increase action potential (AP) firing. The direct effect of XE991 on AP firing was defined as the differences between before and during XE991 in the isolated GCs (Figure 7F), that is, values of (7Flower – 7Fupper), where 7Flower and 7Fupper are the mean values from Figure 7F lower and upper panels, respectively. Note that XE991 directly increases number of AP largely independent of step current intensity in both genotypes, but with relative larger effect in knockout (KO) mice. (B) XE991 can also modulate GC excitability to change AP firing via its circuit effect. Values were estimated from the differences before and during XE991, between isolated GCs (Figure 7F) and GCs with intact circuit (Figure 7H), that is, values of [(7Hlower – 7Hupper) - (7Flower – 7Fupper)], where 7F and 7H are the mean values from Figure 7F and H (lower or upper panel, accordingly). Note that the circuit effect of XE991 on AP firing was also independent of step current intensity (little effect in WT mice as shown by values fluctuating around 0; but dampening ~6 APs in KO mice).
 
 To examine more directly whether circuit-wide inhibition of Kv7 channels could be effective in reducing granule cell hyperexcitability in the KO mice, we performed analyses of granule cell firing – the ultimate measure of cellular excitability. APs were evoked by a multistep current injection (55–75 pA, Figure 7E). To disentangle the direct- and circuit-mediated actions of Kv7 inhibition, we first synaptically isolated granule cells from the circuit using the same pharmacological approach as described above and observed that loss of FMRP strongly increased the AP firing in granule cells (Figure 7E and F, upper panels), as we reported previously (Deng et al., 2022). Inhibition of Kv7 channels with XE991 (10 μM) further increased AP firing in both genotypes, with significantly higher number of APs still observed in the isolated granule cells of Fmr1 KO mice (Figure 7E and F, lower panels). These results indicate that intrinsic hyperexcitability of granule cells in Fmr1 KO mice is largely unrelated to Kv7 channels. Indeed, we have demonstrated that this intrinsic defect is caused by abnormal extrasynaptic GABAA receptor activity in the absence of FMRP (Deng et al., 2022). We then performed the same recordings in granule cells with intact dentate circuit and again observed markedly increased excitability in the Fmr1 KO, as evident by much larger number of APs fired by KO than WT granule cells (Figure 7G and H, upper panels). In line with our hypothesis, circuit-wide inhibition of Kv7 channels with XE991 abolished the difference in the number of APs between genotypes (Figure 7G and H, lower panels).
 
 To further clarify this notion, we compared the effects of XE991 between isolated- (Figure 7F) and circuit-intact granule cells (Figure 7H), and probed the origin of XE991 contribution to granule cell excitability. Specifically, even though the direct action of XE991 on granule cells was to increase excitability in both genotypes (Figure 7—figure supplement 2A), the circuit action of XE991 resulted in suppressing granule cell excitability in Fmr1 KO mice (↓~6 APs, Figure 7—figure supplement 2B), while having minimal effect in WT mice (changes fluctuating around 0, Figure 7—figure supplement 2B). This is in line with the observations above that XE991 increased sIPSC frequency but not sEPSC frequency, and only in the KO but not in WT mice (Figure 7A–D). Together with our findings that the interneuron activity is driven in a large part by excitatory input from the MCs, these results indicate that the primary site of action of XE991 is the MCs in Fmr1 KO mice. Thus, our findings support the notion that circuit-wide inhibition of Kv7 channels boosted up inhibitory drive onto granule cells and abolished differences in granule cell excitability between genotypes by enhancing the local inhibitory circuit function.
 
-## Implications of MC hypo-excitability and circuit E/I imbalance to dentate function
+### Implications of MC hypo-excitability and circuit E/I imbalance to dentate function
 
 Granule cell excitability and dentate output are not only dependent on basal synaptic inputs (i.e., basal E/I balance, as evident in Figure 7), but more importantly these cellular/circuit functions are controlled by a delicately tuned dynamic E/I balance during circuit activity. By providing the major excitatory drive to local interneurons, MCs play a key role in controlling circuit inhibition onto granule cells via a three-synapse pathway (granule cells→MCs→interneurons→granule cells, Figure 8—figure supplement 3A). Accordingly, we hypothesized that the Kv7-dependent hypo-excitability of MCs in the Fmr1 KO mice compromises the effectiveness of this critical inhibitory pathway.
 
 To test this possibility, we recorded compound postsynaptic current (cPSC) in granule cells by stimulating PP and holding cells at –45 mV. This holding potential was chosen as it was an intermediate potential between the excitatory and inhibitory reversal potentials ensuring comparable driving force for excitatory and inhibitory conductances. The PP-stimulation-evoked cPSC is the summation of largely overlapping excitatory and inhibitory postsynaptic currents, which shows as an initial downward excitatory component followed by an upward inhibitory component (Figure 8—figure supplement 1A). At the end of each recording, the pure EPSC was isolated by adding GABAA receptor blocker gabazine (5 μM) (Figure 8—figure supplement 1B), which then was averaged to create an EPSC template for each cell in order to isolate underlying EPSC and IPSC from the cPSC and calculate E/I ratio (Figure 8—figure supplement 1C and D). For better comparison among cells, we normalized the cPSC and underlying IPSC to their respective underlying EPSC, which reflects the PP stimulation intensity (Figure 8—figure supplement 1E).
 
 In line with our observations above, loss of FMRP significantly decreased the inhibitory component of cPSC and the underlying IPSC (Figure 8D and E, upper panels), while the excitatory component of cPSC was comparable between genotypes (Figure 8C, upper panel). As a result, E/I ratio of the inputs onto granule cells was abnormally increased in Fmr1 KO mice (Figure 8F and G, upper panels). Moreover, we also observed a wider excitation window (defined as the duration of cPSC excitatory component, Figure 8—figure supplement 1C) in the granule cells of the KO mice (Figure 8H, upper panel). In support of our hypothesis, circuit-wide inhibition of Kv7 with XE991 significantly increased the inhibitory component of cPSC and underlying IPSC in Fmr1 KO (Figure 8D and E, lower panels), but not in WT mice. Consequently, inhibition of Kv7 normalized E/I ratio (Figure 8F and G, lower panels), as well as the excitation window in the granule cells of Fmr1 KO mice (Figure 8H, lower panel). These results indicate that Kv7-dependent hypo-excitability of MCs in Fmr1 KO mice is a critical defect in the dentate circuit and that circuit-wide inhibition of Kv7 is sufficient to normalize circuit E/I balance.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig8-v1.jpg)
+
+**Figure 8.:** (A) Sample traces of perforant path (PP)-stimulation-evoked compound postsynaptic currents (cPSC) and their respective underlying excitatory postsynaptic current (EPSC) and inhibitory postsynaptic current (IPSC), in the basal state. For better comparison, the traces were normalized to their own underlying EPSC, which reflects stimulation intensity. Red vertical lines denote the excitation window that is summarized in (H). Stimulation artifacts were removed and baseline before stimulation was shifted to be 0 for presentation purpose. (B) The same as in (A), but in the presence of XE991. (C–E) Summary data of normalized excitatory component (C), inhibitory component (D), and underlying IPSC (E), in the absence (basal, upper panels) and presence of XE991 (+XE991, lower panels). (F) Summary data of excitation/inhibition (E/I) ratio evaluated by the peaks of underlying EPSC and IPSC in the absence (basal, upper panel) and presence of XE991 (+XE991, lower panel). (G) The same as in (F), but evaluated by the charge transfers of underlying EPSC and IPSC. (H) Summary data of excitation window in the absence (basal, upper panel) and presence of XE991 (+XE991, lower panel). (I) Sample traces of theta–gamma coupling stimulation-evoked action potentials (APs) in granule cells from wildtype (WT) mice, in the absence of (basal, upper panel) or presence of XE991 (+XE991, middle panel). Lower panel shows stimulation protocols: control, 15 stimuli at 5 Hz; test, a burst of gamma stimulation (five stimuli at 50 Hz, arrow) 200 ms before 15 stimuli at 5 Hz. AP probability in test train was calculated in 1-s-bin (i.e., binned in first, second, or third second) and plotted in (K). (J) The same as in (I), but for KO mice. (K) Summary data of gamma suppression of dentate output in response to PP stimulation at theta frequency in the absence of (basal, upper) or presence of XE991 (+XE991, lower). Note loss of fragile X messenger ribonucleoprotein (FMRP) compromised gamma suppression of AP output in granule cells, and Kv7 blocker XE991 restored the gamma burst-induced suppressive effect on dentate output in Fmr1 KO mice. *p<0.05; **p<0.01; ns, not significant. Horizontal lines (with or without dropdown) denote comparison between genotypes; vertical lines indicate comparison between in the absence and presence of XE991 within genotypes. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A, B) cPSC was recorded from granule cells by holding membrane potential at –45 mV. The cPSC (A) shows an initial excitatory component (downward) followed by an inhibitory component (upward). Dotted line denotes the baseline before stimulation. At the end of each recording, the pure EPSC (B) was recorded by keeping the same stimulation intensity and in the presence of gabazine, which was used to create EPSC template (an average of at least 20 uncontaminated EPSCs) for the same cell. Note that the amplitude and decay trajectory of pure EPSC were largely different from excitatory component of cPSC. Stimulation artifacts were removed. Boxed area in (A) was enlarged to show the procedure of approximation of underlying EPSC. (C) Zoom-in of boxed area in (A) showing approximation of underlying EPSC. The EPSC template was repeatedly scaled to each data point (black circles) of cPSC ‘approximating segment’ (AS) to obtain a set of scaled EPSCs (gray traces). All scaled EPSCs were then averaged to approximate an underlying EPSC (orange trace) for a given cPSC (black trace). The cPSC ‘approximating segment’ was defined as 25–65% height of cPSC excitatory component (but not beyond 2.5 ms after stimulation). Excitation window was defined as the full duration of cPSC excitatory component. Stimulation artifact was removed. ‘S’ denotes the stimulation time point. (D) The underlying IPSC (blue trace) was isolated by subtracting the underlying EPSC (orange trace as that in C) from corresponding cPSC (black trace). For the purpose of view, the baseline before stimulation was shifted to be 0 in the figure. The two vertical red lines delimit the excitation window. (E) Normalized traces of cPSC, underlying EPSC and IPSC. For better comparison, we normalized the cPSC and underlying IPSC to their respective underlying EPSC, which reflects the PP stimulation intensity. The underlying EPSC and IPSC were then used to estimate excitation/inhibition (E/I) ratio by their peak amplitudes or charge transfers (amplitude-time integration within 100 ms). The letters (c), (d), and (e) indicate the normalized peak amplitudes of cPSC excitatory, inhibitory components, and underlying IPSC, which are summarized in Figure 8C, D and E, respectively.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Sample traces of EPSP in response to theta–gamma coupling stimulation of perforant path (PP). Traces were zoomed in vertically (i.e., amplitude dimension) and action potentials (APs) were truncated (indicated by double-slash) to emphasize EPSP size. Excitatory postsynaptic current (EPSC) amplitude was defined by the voltage difference between EPSC peak and –70 mV level (cyan line). Lowermost panel shows the stimulation paradigm. Up-pointing arrow indicates gamma stimulation. (B) Summary data for experiments exemplified in (A) showing stable EPSP amplitude in control stimulation (left panel) and gamma suppression of EPSP amplitude (right panel). Inset, real EPSP amplitude in control stimulation. (C) The same as in (A), but in the presence of XE991. (D) The same as in (B), but in the presence of XE991. Note that XE991 significantly dampened EPSP amplitude in KO mice (right panel) and the EPSP were largely comparable between genotypes. *p<0.05; **p<0.01; ns, not significant. The statistical data are listed in Supplementary file 1. Data are mean ± SEM.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/92563/elife-92563-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A) The diagram shows dentate gyrus output in response to theta–gamma coupling stimulation of perforant path (PP) in the wildtype (WT) mice. Here, we focus on the three-synapse indirect feedback inhibition pathway: granule cells (GCs)→MCs→interneurons (INs)→GCs (thickness of arrows indicating synaptic drive weight). Because MCs (rather than GCs) provide the main source of excitatory drive onto INs, the three-synapse indirect feedback inhibition likely surpasses the canonical two-synapse feedback inhibition (i.e., GCs→INs→GCs). This model indicates that, in the normal condition, MCs integrate the incoming excitatory input and then relay and expand it to INs, which secure a sufficient and well-timed inhibition feedback onto GCs to maintain a dynamically balanced excitation/inhibition (E/I) inputs onto GCs and a narrow excitation window, and thus ensures sparse action potential (AP) firing in GCs. Red arrows designate excitation and blue arrows inhibition. The arrow entering shading areas from left side represents PP input (theta–gamma coupling stimulation). The downward arrow exiting the shading area indicates dentate output to CA3. The thinly semi-transparent arrows are synaptic connections whose contribution to cellular excitability has not been evaluated in this study. The thickness of arrows denotes the synaptic drive weight of excitation (or inhibition). It is noteworthy that the actual synaptic drive weight of each synapse varies dynamically to maintain the precisely well-timed circuit E/I balance and then proper information processing. Thus, one may imagine that the thickness of each arrow (i.e., synaptic drive weight) changes dynamically and sequentially (due to neurotransmission direction and synaptic delays) to understand dynamic E/I balance. (B) The same as in (A), but for KO mice. Loss of fragile X messenger ribonucleoprotein (FMRP) caused these changes (for details, see Figures 1, 4—6 and 8): (1) the GCs are hyper-excitable (highlighted by yellow explosion marker), and dentate output are increased (thicker arrow compared with that of WT mice in A); (2) MCs are hypo-excitable (shadow font) and MCs’ output are decreased (thinner arrow); (3) both excitatory and inhibitory inputs onto MCs are increased (thicker arrows); and (4) both excitatory and inhibitory inputs onto INs are reduced (thinner arrows). (C) The same as in (B), but in the presence of XE991 (circuit-wide inhibition of Kv7 channels). XE991 caused these changes in the KO mice (for details, see Figure 8 and Figure 8—figure supplement 2): (1) owing to the abnormal enhanced Kv7 function in KO MCs, XE991 boosted up MC excitability (explosion marker) to enhance excitatory output (thicker red arrow) onto INs, which increases INs’ excitability (explosion marker); and (2) XE991 increased inhibitory drive onto GCs (thicker blue arrow onto GCs compared with that of in B), which dampens EPSP integration (due to summation of enhanced inhibitory input) in GCs and suppresses dentate gyrus output.
 
 Finally, we asked what are the functional consequences of MC hypo-excitability and dentate circuit E/I imbalance in Fmr1 KO mice? The power of theta–gamma oscillations is particularly high in the dentate gyrus (Csicsvari et al., 2003) and plays a critical role in many dentate functions, such as pattern separation (Leutgeb et al., 2007), information coding (Mizuseki et al., 2009; Pernía-Andrade and Jonas, 2014), and thus learning/memory (Bott et al., 2016; Lisman and Jensen, 2013; Neves et al., 2022). In order to evaluate the contribution of MC defects in Fmr1 KO mice to this critical dentate function, we used a protocol of double-oscillation interplay at the single-cell level (Hasselmo et al., 2007; Mircheva et al., 2019). In this paradigm, gamma (~50 Hz) frequency stimulation of PP suppresses granule cell output driven by PP stimulation at the theta (~5 Hz) frequency range (gamma suppression, for brevity). The experiments included two stimulation protocols: a control protocol at 5 Hz (theta stimulation, whose intensity was adjusted to achieve AP probability of ~0.5 and the intensity was then kept in the following test protocol for the same cell); and a test protocol with a gamma burst (five stimuli at 50 Hz) included 200 ms before the 5 Hz theta train. Theta stimulation of the PP evoked a steady baseline firing in granule cells (Figure 8I–K, upper panels). In line with previous studies (Hasselmo et al., 2007; Mircheva et al., 2019), a preceding gamma stimulation suppressed granule cell output in response to theta train in both genotypes (Figure 8I–K, upper panels). However, this gamma suppression was much less efficient in the KO than in WT mice, as evident by the significant higher AP probability in KO mice (Figure 8I–K, upper panels). Considering that granule cells are the only output neurons in the dentate gyrus and thus integrate all dentate circuit operations, these results indicate that loss of FMRP causes abnormal dentate information processing, leading to excessive dentate output.
 
@@ -106,11 +158,182 @@ Taken together, these findings provide a proof-of-principle demonstration that a
 
 ## Materials and methods
 
-## Animals and slice preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse, FVB, male)</td>
+      <td>Fmr1 KO mouse (FVB.129P2-Pde6b+ Tyrcc-ch Fmr1tm1Cgr/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>004624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse, FVB, male)</td>
+      <td>Control for Fmr1 KO mouse (FVB.129P2-Pde6b+ Tyrcc-ch /AntJ)</td>
+      <td>The Jackson Laboratory</td>
+      <td>004828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α tubulin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab18251, RRID:AB_2210057</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FMRP (rabbit polyclonal)</td>
+      <td>Cell Science Technology</td>
+      <td>Cat# 4317, RRID:AB_1903978</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kv7.2 (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat# APC-050, RRID:AB_2040101</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kv7.3 (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat# APC-051, RRID:AB_2040103</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(2S)–3-[[(1S)–1-(3,4-Dichlorophenyl)ethyl]amino-2-hydroxypropyl](phenylmethyl)phosphinic acid hydrochloride (CGP55845)</td>
+      <td>Tocris Bioscience</td>
+      <td>1248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-(2-Hydroxyethyl)piperazine-1-ethanesulfonic acid, N-(2-Hydroxyethyl)piperazine-N′-(2-ethanesulfonic acid) (HEPES)</td>
+      <td>MilliporeSigma</td>
+      <td>H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4,5,6,7-Tetrahydroisoxazolo[5,4c]pyridin-3-ol hydrochloride (THIP)</td>
+      <td>Tocris Bioscience</td>
+      <td>0807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6,7-Dinitroquinoxaline-2,3-dione(DNQX)</td>
+      <td>Tocris Bioscience</td>
+      <td>2312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5'-triphosphate disodium (Na2-ATP)</td>
+      <td>MilliporeSigma</td>
+      <td>A1852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5'-triphosphate magnesium (Mg-ATP)</td>
+      <td>MilliporeSigma</td>
+      <td>A9187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guanosine 5′-triphosphate sodium (Na-GTP)</td>
+      <td>MilliporeSigma</td>
+      <td>G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Horseradish peroxidase (rabbit IgG conjugated)</td>
+      <td>Thermo Fisher</td>
+      <td>656120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin (PTX)</td>
+      <td>Tocris Bioscience</td>
+      <td>1128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX-314</td>
+      <td>MilliporeSigma</td>
+      <td>552233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR 95531 hydrobromide (Gabazine, GBZ)</td>
+      <td>Tocris Bioscience</td>
+      <td>1262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (TTX)</td>
+      <td>Tocris Bioscience</td>
+      <td>1069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabView</td>
+      <td>National Instrument</td>
+      <td>LabView 8.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>MATLAB 2012b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin</td>
+      <td>Origin Labs</td>
+      <td>Origin 8.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mini Analysis</td>
+      <td>Synaptosoft Inc</td>
+      <td>Version 6.0.3</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and slice preparation
 
 Fmr1 KO (FVB.129P2-Pde6b+ Tyrc-ch Fmr1tm1Cgr/J; stock #004624) and WT control mice (FVB.129P2-Pde6b+Tyrc-ch/AntJ; stock #004828) were obtained from The Jackson Laboratory. Slices were prepared as previously described (Deng et al., 2022). In brief, male 21―23-day-old mice were used. After being deeply anesthetized with CO2, mice were decapitated and their brains were dissected out in ice-cold saline containing the following (in mm): 130 NaCl, 24 NaHCO3, 3.5 KCl, 1.25 NaH2PO4, 0.5 CaCl2, 5.0 MgCl2, and 10 glucose, pH 7.4 (saturated with 95% O2 and 5% CO2). Horizontal hippocampal slices (350 μm) were cut using a vibrating microtome (Leica VT1100S) (Deng et al., 2022). Slices were initially incubated in the above solution at 35°C for 1 hr for recovery and then kept at room temperature (~23°C) until use. All animal procedures were in compliance with the US National Institutes of Health Guide for the Care and Use of Laboratory Animals, and conformed to Washington University Animal Studies Committee guidelines.
 
-## AP recording
+### AP recording
 
 AP recordings using a Multiclamp 700B amplifier (Molecular Devices) were made from MCs, interneurons or granule cells with infrared video microscopy and differential interference contrast optics (Olympus BX51WI). All of the recordings were conducted at near-physiological temperature (33–34°C). The recording electrodes were filled with the following in this study (unless stated otherwise) (in mM): 130 K-gluconate, 10 KCl, 0.1 EGTA, 2 MgCl2, 2 ATPNa2, 0.4 GTPNa, and 10 HEPES (pH 7.3). The extracellular solution contained (in mM) 125 NaCl, 24 NaHCO3, 3.5 KCl, 1.25 NaH2PO4, 2 CaCl2, 1 MgCl2, and 10 glucose, pH 7.4 (saturated with 95% O2 and 5% CO2).
 
@@ -120,19 +343,19 @@ Hilar interneurons were easily distinguished from MCs according to the differenc
 
 Granule cells were identified by the location (granule cell layer) and characteristic electrophysiological properties (relative to interneurons) (Deng et al., 2022): very hyperpolarizing RMP (~ –80 mV), very low sEPSC frequency (<20 events/min), and smaller capacitance (~20 pF). Cells that could not be definitively classified into the three categories above were not included in further analyses. To avoid recording from newly generated immature granule cells, we used cells located at the outer regions of the granule cell layer (Deng et al., 2022). For step-current-evoked AP output in granule cells, we used multistep current (50–75 pA with an increase of 5 pA/step for 600 ms) to evoke APs from granule cells. The RMP was set to –80 mV by constant current injection (if necessary) for better comparison among cells. The number of APs was averaged over 5–8 trials in each cell. For PP stimulation-evoked AP in granule cells, the stimulation protocol consisted of a train of 5 Hz; the stimulation electrodes positioned in the middle molecular layer of dentate gyrus to stimulate medial PP. The RMP of granule cells was set to –70 mV for facilitating AP firing and the stimulation intensity was adjusted so that the AP probability was ~0.5 (under 5 Hz stimulation). A burst of gamma stimulation (five stimuli at 50 Hz, 200 ms before the first stimulus of 5 Hz train) was used to evaluate gamma stimulation-induced suppression of granule cell output in response to PP theta stimulation. Granule cell output was expressed as the AP probability. When PP stimulation failed to evoke APs, we measured the amplitude of EPSPs, which was defined as the voltage differences between individual EPSP peaks and the initial baseline before gamma-stimulation (set to be –70 mV). For better comparison, the EPSP amplitudes were normalized to their own controls. AP probability was calculated from at least 10 trials in each cell.
 
-## Measurement of RMP, capacitance, and input resistance
+### Measurement of RMP, capacitance, and input resistance
 
 RMP was measured immediately after whole-cell formation. Cell capacitance is determined by the amplifier’s auto whole-cell compensation function with slightly manual adjustment to optimize the measurement if needed. For input resistance, assessment was performed using the canonical method, in which the voltage response to a negative current injection (−60 pA for 500 ms) at RMP was used to calculate input resistance. For measurement of input resistance around threshold levels, we pharmacologically isolated MCs using blockers against both glutamate and GABA receptors (in μM, 10 NMDA, 50 APV, 10 MPEP, 5 gabazine, and 2 CGP55845) to isolate MCs from the dentate circuit. TTX (1 μM) and CdCl2 (10 μM) were also used to block Na+ and Ca2+ channels, respectively. Under these conditions, a positive current injection (+60 pA for 500 ms) at –45 mV (set by constant current injection) was used to evoke voltage response, which was then used to calculate input resistance.
 
-## Determination of changes in holding current and membrane potential
+### Determination of changes in holding current and membrane potential
 
 Holding current was recorded by holding cells at –45 mV in pharmacologically isolated MCs, and in the presence of TTX (1 μM) and 10 μM CdCl2. Changes in holding current were the differences in holding current before and during XE991 (10 μM). For determining changes in membrane potentials in response to Kv7 inhibition, membrane potentials were initially set at –45 mV (by constant current injection). Under these conditions, the differences in membrane potentials before and during XE991 (10 μM) were calculated as the changes in membrane potential.
 
-## Kv7 current recording
+### Kv7 current recording
 
 We used a depolarizing voltage ramp (–95 to +5 mV, 0.02 mV/ms) to evoke Kv7 current from MCs using the same internal and external solutions as those in holding current recordings. Cell capacitance was compensated. Series resistance compensation was enabled with 80–90% correction and 16 μs lag. Kv7 current was isolated by subtracting current in 10 μM XE991 from that before XE991. The I-V curves were constructed from ramp-evoked Kv7 currents every 5 mV and normalized to respective cell capacitances (mean current value over 0.01 mV intervals from averages of 4–5 trials for each cell to approximate quasi-steady-state current).
 
-## Recordings of spontaneous and miniature postsynaptic currents
+### Recordings of spontaneous and miniature postsynaptic currents
 
 sEPSCs were recorded from hilar MCs (holding at –65 mV) and interneurons (at –60 mV). The pipette solution was the same as that used in AP recording, except that QX-314 (1 mM) was included in the pipette solution to block possible action current. The bath solution was supplemented with gabazine (5 μM) to block GABAAR responses. The solutions used for recording of mEPSCs were the same as those for sEPSCs, except that TTX (1 μM) was included in the bath solution to block AP-dependent responses.
 
@@ -140,14 +363,14 @@ For recording of sIPSCs, the recording pipette solution contained (in mM) 130 Cs
 
 For simultaneous recording of sEPSCs and sIPSCs from granule cells, the recording pipette solution contained (in mM) 135 K-gluconate, 2 MgCl2, 0.1 CaCl2, 2 MgATP, 0.3 NaGTP, 4 Na2-phosphocreatine, 0.2 EGTA, and 10 HEPES (pH 7.3). External solution was the same as AP recordings (without any blockers, unless stated otherwise). The membrane potential was held at –40 mV. Under this condition, EPSC is downgoing signal (inward current) and IPSC upgoing signal (outward current). The events detection threshold was 10 pA for sEPSC and sIPSC detection; the automatic detection was visually verified.
 
-## Recording of cPSC and isolation of underlying EPSC and IPSC
+### Recording of cPSC and isolation of underlying EPSC and IPSC
 
 The cPSC was recorded from granule cells by stimulation of medial PP at 0.2 Hz and using the same pipette solution as that of simultaneous recording of sEPSCs and sIPSCs, except that QX314 (1 mM) was included to block action current. Granule cells were held at –45 mV, which is an intermediate potential between the excitatory and inhibitory reversal potentials ensuring comparable driving force for excitatory and inhibitory conductances. The PP-stimulation-evoked cPSC had an initial downward excitatory component followed by an upward inhibitory component (Figure 8—figure supplement 1A). The cPSC excitation window was defined as the full duration of excitatory component (Figure 8—figure supplement 1C). At the end of each recording, the pure EPSC (Figure 8—figure supplement 1B) was recorded by adding GABAA blocker gabazine (5 μM) and keeping the same stimulation intensity, which was used to create an EPSC template (average of at least 20 uncontaminated EPSCs) for each cell. The EPSC template was then repeatedly scaled to each data point of cPSC ‘approximating segment’ to obtain a set of scaled EPSCs (Figure 8—figure supplement 1C). All scaled EPSCs were then averaged to approximate an underlying EPSC for a given cPSC (Figure 8—figure supplement 1C). The ‘approximating segment’ of cPSC was defined as 25–65% height of cPSC excitatory component, but not beyond 2.5 ms after stimulation. The underlying IPSC was isolated by subtracting the underlying EPSC from corresponding cPSC (Figure 8—figure supplement 1D). For better comparison, we normalized the cPSC and underlying IPSC to their respective underlying EPSC, which reflects the PP stimulation intensity (Figure 8—figure supplement 1E). The underlying EPSC and IPSC were then used to estimate E/I ratio by their peak amplitudes or charge transfer (amplitude-time integration within 100 ms). Data for each cell were averages from 20 to 25 uncontaminated cPSC events.
 
-## Western blotting
+### Western blotting
 
 Whole brains or dentate gyrus regions (isolated from the brain slices) were lysed in 2% sodium dodecyl sulfonate (SDS) with protease and phosphatase inhibitors (Roche Applied Sciences) and manually homogenized. Protein concentration was determined by DC protein assay (Bio-Rad Laboratories) against bovine serum albumin standards. Then, 50 μg total protein was run on NuPage 4–12% Bis-Tris polyacrylamide gels (Life Technologies) and transferred to nitrocellulose membranes. Membranes were blotted with antibodies directed against the following proteins: actin, FMRP, KCNQ2, KCNQ3, rabbit IgG conjugated to horseradish peroxidase. Blots were developed with SuperSignal West Dura (Thermo Fisher) and imaged with a ChemiDoc MP imaging system (Bio-Rad Laboratories).
 
-## Statistical analysis
+### Statistical analysis
 
 The data were analyzed in MATLAB, except for the postsynaptic currents (sEPSC, mEPSC, sIPSC, and mIPSC) that were analyzed by MiniAnalysis. All figures were made in Origin or MATLAB. Data are presented as mean ± SEM. Student’s t-test, one-way ANOVA, Kolmogorov–Smirnov (K-S) test, or chi-square test were used for statistical analysis as appropriate. Significance was set as p<0.05. The n is the number of cells tested in electrophysiological experiments, which was from at least three different mice for each condition. The N in western blotting is the number of animals used. All statistical values can be found in Supplementary file 1.

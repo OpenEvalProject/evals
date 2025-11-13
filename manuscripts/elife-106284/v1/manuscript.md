@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04gbhgc79 Centre for Research in Neuroscience, Brain Repair and Integrative Neuroscience Program, Departments of Neurology & Neurosurgery and Medicine, The Research Institute of the McGill University Health Centre, Montreal General Hospital Montreal Canada
-2. https://ror.org/05k4ema52 Université Côte d’Azur, CNRS UMR7275, Institute of Molecular and Cellular Pharmacology Valbonne France
-3. https://ror.org/01pxwe438 Integrated Program in Neuroscience, McGill University Montreal Canada
-4. https://ror.org/00t33hh48 Gerald Choa Neuroscience Institute & School of Biomedical Sciences, The Chinese University of Hong Kong Hong Kong China
+1. Centre for Research in Neuroscience, Brain Repair and Integrative Neuroscience Program, Departments of Neurology & Neurosurgery and Medicine, The Research Institute of the McGill University Health Centre, Montreal General Hospital Montreal Canada ([ROR:04gbhgc79](https://ror.org/04gbhgc79))
+2. Université Côte d’Azur, CNRS UMR7275, Institute of Molecular and Cellular Pharmacology Valbonne France ([ROR:05k4ema52](https://ror.org/05k4ema52))
+3. Integrated Program in Neuroscience, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+4. Gerald Choa Neuroscience Institute & School of Biomedical Sciences, The Chinese University of Hong Kong Hong Kong China ([ROR:00t33hh48](https://ror.org/00t33hh48))
 
 † Corresponding author
 
 ## Abstract
 
-In the textbook view, NMDA receptors (NMDARs) act as coincidence detectors in Hebbian plasticity by fluxing Ca 2+ when simultaneously depolarized and glutamate bound. Hebbian coincidence detection requires that NMDARs be located postsynaptically, but enigmatic presynaptic NMDARs (preNMDARs) also exist. It is known that preNMDARs regulate neurotransmitter release, but precisely how remains poorly understood. Emerging evidence suggests that NMDARs can also signal non-ionotropically, without the need for Ca 2+ flux. At synapses between developing visual cortex layer-5 (L5) pyramidal cells (PCs), preNMDARs rely on Mg 2+ and Rab3-interacting molecule 1αβ (RIM1αβ) to regulate evoked release during periods of high-frequency firing, but they signal non-ionotropically via c-Jun N-terminal kinase 2 (JNK2) to regulate spontaneous release regardless of frequency. At the same synapses, timing-dependent long-term depression (tLTD) depends on preNMDARs but not on frequency. We, therefore, tested in juvenile mouse visual cortex if tLTD relies on non-ionotropic preNMDAR signaling. We found that tLTD at L5 PC→PC synapses was abolished by pre- but not postsynaptic NMDAR deletion, cementing the view that tLTD requires preNMDARs. In agreement with non-ionotropic NMDAR signaling, tLTD prevailed after channel pore blockade with MK-801, unlike tLTP. Homozygous RIM1αβ deletion did not affect tLTD, but wash-in of the JNK2 blocker SP600125 abolished tLTD. Consistent with a presynaptic need for JNK2, a peptide blocking the interaction between JNK2 and Syntaxin-1a (STX1a) abolished tLTD if loaded pre- but not postsynaptically, regardless of frequency. Finally, low-frequency tLTD was not blocked by the channel pore blocker MK-801, nor by 7-CK, a non-competitive NMDAR antagonist at the co-agonist site. We conclude that neocortical L5 PC→PC tLTD relies on non-ionotropic preNMDAR signaling via JNK2/STX1a. Our study brings closure to long-standing controversy surrounding preNMDARs and highlights how the textbook view of NMDARs as ionotropic coincidence detectors in plasticity needs to be reassessed.
+In the textbook view, NMDA receptors (NMDARs) act as coincidence detectors in Hebbian plasticity by fluxing Ca2+ when simultaneously depolarized and glutamate bound. Hebbian coincidence detection requires that NMDARs be located postsynaptically, but enigmatic presynaptic NMDARs (preNMDARs) also exist. It is known that preNMDARs regulate neurotransmitter release, but precisely how remains poorly understood. Emerging evidence suggests that NMDARs can also signal non-ionotropically, without the need for Ca2+ flux. At synapses between developing visual cortex layer-5 (L5) pyramidal cells (PCs), preNMDARs rely on Mg2+ and Rab3-interacting molecule 1αβ (RIM1αβ) to regulate evoked release during periods of high-frequency firing, but they signal non-ionotropically via c-Jun N-terminal kinase 2 (JNK2) to regulate spontaneous release regardless of frequency. At the same synapses, timing-dependent long-term depression (tLTD) depends on preNMDARs but not on frequency. We, therefore, tested in juvenile mouse visual cortex if tLTD relies on non-ionotropic preNMDAR signaling. We found that tLTD at L5 PC→PC synapses was abolished by pre- but not postsynaptic NMDAR deletion, cementing the view that tLTD requires preNMDARs. In agreement with non-ionotropic NMDAR signaling, tLTD prevailed after channel pore blockade with MK-801, unlike tLTP. Homozygous RIM1αβ deletion did not affect tLTD, but wash-in of the JNK2 blocker SP600125 abolished tLTD. Consistent with a presynaptic need for JNK2, a peptide blocking the interaction between JNK2 and Syntaxin-1a (STX1a) abolished tLTD if loaded pre- but not postsynaptically, regardless of frequency. Finally, low-frequency tLTD was not blocked by the channel pore blocker MK-801, nor by 7-CK, a non-competitive NMDAR antagonist at the co-agonist site. We conclude that neocortical L5 PC→PC tLTD relies on non-ionotropic preNMDAR signaling via JNK2/STX1a. Our study brings closure to long-standing controversy surrounding preNMDARs and highlights how the textbook view of NMDARs as ionotropic coincidence detectors in plasticity needs to be reassessed.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Here, we explored how NMDARs signal in tLTD. We found that, regardless of freque
 
 ## Results
 
-## tLTD relies on presynaptically located NMDARs
+### tLTD relies on presynaptically located NMDARs
 
 We previously reported pharmacological and imaging evidence for preNMDARs at L5 PC→PC synapses that are necessary for neocortical tLTD (Abrahamsson et al., 2017; Buchanan et al., 2012; Sjöström et al., 2003; Sjöström et al., 2007), but their existence has been disputed (Christie and Jahr, 2009). We, therefore, wanted to directly challenge our previous findings by sparsely knocking out (KO) the obligatory GluN1 NMDAR subunit (see Methods) and then measuring tLTD at synaptically connected L5 PC→PC pairs that lacked NMDARs pre- or postsynaptically.
 
@@ -49,13 +49,29 @@ With this approach, we found that preNMDAR deletion abolished high-frequency (HF
 
 Throughout this study, boxplots show medians and quartiles, with whiskers denoting extremes, but data is reported as mean ± SEM, with n indicating the number of connections.
 
-## tLTD does not rely on ionotropic NMDAR signaling
+### tLTD does not rely on ionotropic NMDAR signaling
 
 We previously imaged preNMDAR-mediated Ca2+ supralinearities in axons (Abrahamsson et al., 2017; Buchanan et al., 2012). We also found that Mg2+-sensitive ionotropically signaling preNMDARs boost neurotransmitter release during periods of high-frequency activity at L5 PC→PC synapses and that this frequency dependence is inherited from the Mg2+ blockade of the preNMDAR channel (Abrahamsson et al., 2017; Wong et al., 2024). Since tLTD is not frequency dependent (Sjöström et al., 2003), we hypothesized that tLTD is not sensitive to blockade of the NMDAR channel pore. To test this hypothesis, we relied on the NMDAR pore blocker MK-801 (Song et al., 2018).
 
 We first wanted to establish a positive control. MK-801 is known to block hippocampal LTP (Nabavi et al., 2013) as well as tLTP at excitatory inputs onto neocortical L2/3 PCs (Bender et al., 2006; Nevian and Sakmann, 2006; Rodríguez-Moreno et al., 2011). At L5 PC→PC synapses, tLTP relies on different NMDARs than tLTD (Sjöström et al., 2003), but the MK-801 sensitivity has, to our knowledge, not been explored. Here, we found that MK-801 wash-in abolished potentiation (Figure 2), suggesting that L5 PC→PC tLTP relies on ionotropically signaling postNMDARs, like tLTP at other neocortical synapses (Bender et al., 2006; Nevian and Sakmann, 2006). We also verified that MK-801 wash-in had no effect on baseline responses elicited at low frequency (Figure 2—figure supplement 1), as expected (Abrahamsson et al., 2017; Buchanan et al., 2012; Sjöström et al., 2003; Wong et al., 2024).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/106284/elife-106284-fig2-v1.jpg)
+
+**Figure 2.:** (A) At this sample connection (PC 1→2, see Alexa 594 fills at left, scale bar: 50 µm), tLTP induction was successful (after/before = 210%, p<0.001). Traces (right) were averaged over time periods indicated in black/gray. To avoid MK-801 affecting short-term depression (Abrahamsson et al., 2017; Sjöström et al., 2003), baseline spiking was 0.1 Hz. Scale bars: 5ms, 0.2 mV. (B) In this sample, MK-801 abolished tLTP with the same induction protocol (after/before = 95.44%, p=0.55). Baseline spiking and scale bars as in (A). (C, D) Ensemble data revealed that tLTP was robustly expressed in controls (black) but abolished in MK-801 (red). (E) CV analysis indicated that tLTP was expressed both pre- and postsynaptically to varying degrees across different pairs (φ=11°±15°, n=10, p=0.44, two data points without potentiation were excluded, see Methods), in agreement with our prior work (Sjöström et al., 2007).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106284/elife-106284-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Washing in MK-801 had no appreciable effect on EPSP amplitude (one-sample t-test for normalized EPSP vs. 100%, p=0.076). Presynaptic cells spiked once every 10 s. This outcome is consistent with the finding that preNMDAR activation requires firing above a critical frequency (Abrahamsson et al., 2017; Buchanan et al., 2012; Sjöström et al., 2003; Wong et al., 2024). Before (blue) and after lines (light blue) indicate periods used for EPSP normalization.
+
 With this positive control established, we next explored if L5 PC→PC tLTD and tLTP were equally sensitive to MK-801. However, MK-801 had no effect on tLTD (Figure 3). Since the action of MK-801 is activity and voltage-dependent (Huettner and Bean, 1988), we were concerned that HF tLTD and low-frequency (LF) tLTD (see Methods) might be differentially affected by this drug, but we found no difference (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/106284/elife-106284-fig3-v1.jpg)
+
+**Figure 3.:** (A) At this sample connection (PC 1→2, see Alexa 594 fills left, scale bar: 50 µm), HF tLTD was successfully induced in the presence of MK-801 (after/before = 74%, p<0.001). Traces were averaged over time periods indicated in blue/light blue. Baseline spiking was 0.1 Hz. Scale bars: 5 ms, 0.5 mV. (B) In this sample, LF tLTD at 1 Hz (see Methods) was successful in MK-801 (after/before = 78%, p<0.001). Baseline spiking and scale bars as in A. (C, D) Ensembles revealed robust tLTD at both low and high frequencies in MK-801 (blue triangles) compared to no-induction MK-801 controls (gray, Welch ANOVA p<0.01), suggesting that tLTD does not rely on ionotropic NMDAR signaling. (E) CV analysis indicated that tLTD at both induction frequencies was presynaptically expressed (HF LTD: φ=13°±5°, n=6, p<0.05; LF LTD: 15°±4°, n=5, p<0.05), in agreement with our prior findings (Figure 1; Sjöström et al., 2003; Sjöström et al., 2007). One experiment with <5% plasticity was excluded, see Methods.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/106284/elife-106284-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Washing in 7-CK drastically reduced EPSP amplitude (one-sample t-test for normalized EPSP vs. 100%, p<0.001). Presynaptic cells spiked once every 10 s. Experiments with 7-CK (Figure 4), therefore, required waiting for responses to asymptotically stabilize. Blue and light-blue lines indicate periods used for the quantification of EPSP amplitude. (B) CV analysis of the 7-CK-mediated suppression gave rise to data points above the diagonal (φ = –11°±4°, n=7, p<0.05), suggesting reduced quantal amplitude (Brock et al., 2020). This outcome is consistent with 7-CK also acting as a competitive inhibitor of L-glutamate transport into synaptic vesicles (Bartlett et al., 1998), so that after 7-CK, vesicles may contain less neurotransmitter. However, 1/CV2 was also decreased (after/before = 0.6 ± 0.06, n=7, one-sample t-test vs. 1, p<0.001), suggesting that prelease was simultaneously reduced (Brock et al., 2020).
 
 Even with the positive tLTP control (Figure 2), we were concerned that the absence of effect of MK-801 on tLTD was a negative result (Figure 3). We, therefore, wished to strengthen our findings by complementing them with another approach. We thus attempted to block tLTD using 7-chlorokynurenate (7-CK), a co-agonist site blocker that abolishes NMDAR currents (Nabavi et al., 2013) without hindering glutamate binding (Kemp et al., 1988). In control experiments, we found that 7-CK suppressed synaptic responses (Figure 3—figure supplement 1) in a manner consistent with its known additional action as a competitive inhibitor of L-glutamate transport into synaptic vesicles (Bartlett et al., 1998). We, therefore, waited for synaptic responses to stabilize before inducing tLTD in 7-CK. With this approach, we found that 7-CK was unable to block tLTD (Figure 4).
 
@@ -65,7 +81,7 @@ Even with the positive tLTP control (Figure 2), we were concerned that the absen
 
 A parsimonious interpretation of these experiments is that tLTP but not tLTD requires ionotropic NMDAR signaling. This interpretation additionally helps to explain why tLTD is not frequency dependent (Sjöström et al., 2003).
 
-## tLTD relies on JNK2 but not on RIM1αβ
+### tLTD relies on JNK2 but not on RIM1αβ
 
 We previously found that ionotropic preNMDAR-mediated regulation of evoked release at L5 PC→PC synapses relies on RIM1αβ (Abrahamsson et al., 2017). Additionally, RIM1α is required for endocannabinoid-mediated LTD in hippocampus (Castillo et al., 2002; Chevaleyre et al., 2007) as well as for LTP in amygdala (Fourcaudot et al., 2008). We, therefore, explored if RIM1αβ signaling similarly contributed to L5 PC→PC tLTD, by conditionally deleting RIM1αβ in excitatory neurons (see Methods and Abrahamsson et al., 2017).
 
@@ -77,7 +93,7 @@ We found that L5 PC→PC tLTD was robust in Emx1Cre/+; RIM1αβfl/fl animals (Fi
 
 Since we previously found that non-ionotropic preNMDAR signaling requires JNK2 to control spontaneous release (Abrahamsson et al., 2017), we were curious to test the potential need for JNK2 in tLTD. We blocked JNK2 signaling by pre-incubating (see Methods) with the specific inhibitor SP600125 (Bennett et al., 2001), which abolished tLTD (Figure 5B–E). Taken together, our results show that tLTD relies on JNK2 but not on RIM1αβ.
 
-## tLTD relies on presynaptic JNK2 signaling regardless of frequency
+### tLTD relies on presynaptic JNK2 signaling regardless of frequency
 
 To selectively disrupt JNK2/STX1a interactions and associated signaling, we loaded a cell-impermeable variant of the JGRi1 peptide (Marcelli et al., 2019) into pre- or postsynaptic PCs via the patch pipettes. When loaded presynaptically, HF tLTD was abolished, whereas when loaded postsynaptically, HF tLTD could be induced (Figure 6A–D). As before, tLTD was expressed presynaptically (Figure 6E and F). This suggested that tLTD was mediated by preNMDAR signaling via the JNK2/STX1a complex.
 
@@ -93,7 +109,7 @@ Taken together, these results demonstrate that, regardless of induction frequenc
 
 The role of preNMDARs in tLTD has long been enigmatic (Duguid and Sjöström, 2006; Sjöström et al., 2003). Our study provides resolution to this long-standing enigma by showing for the first time that tLTD relies on non-ionotropic preNMDAR signaling via JNK2. Our findings thereby further challenge the traditional view of NMDA receptors as ionotropic coincidence detectors and reveal how non-ionotropic preNMDAR signaling can shape STDP.
 
-## Reconciling decades of preNMDAR controversy
+### Reconciling decades of preNMDAR controversy
 
 Although evidence for preNMDARs has been reported for decades (Aoki et al., 1994; Berretta and Jones, 1996; DeBiasi et al., 1996; Glitsch and Marty, 1999; Liu et al., 1997), this receptor type has been controversial. For instance, one study (Christie and Jahr, 2009) could not find the preNMDARs that we reported as underlying L5 PC→PC tLTD (Sjöström et al., 2003; Sjöström et al., 2007). Several other studies, however, largely corroborated our findings of preNMDARs at L4 PC → L2/3 PC synapses and elsewhere (Banerjee et al., 2014; Banerjee et al., 2009; Bender et al., 2006; Brasier and Feldman, 2008; Corlew et al., 2007; Rodríguez-Moreno and Paulsen, 2008). Then again, one study argued that the NMDARs that underlie L4 PC → L2/3 PC tLTD are actually postsynaptic (Carter and Jahr, 2016). Similar disagreements exist in cerebellum, with some studies reporting preNMDARs (Casado et al., 2000; Casado et al., 2002; Glitsch and Marty, 1999) and others arguing that they do not exist (Christie and Jahr, 2008).
 
@@ -109,13 +125,13 @@ Our finding that preNMDAR signaling in L5 PC→PC tLTD is non-ionotropic explain
 
 Overall, our finding that non-ionotropically signaling preNMDARs are key to L5 PC→PC tLTD thus aligns with much of the prior literature while simultaneously bringing closure to long-standing controversies (Bouvier et al., 2018). Our genetic deletion approach furthermore firmly situates the NMDARs needed for tLTD in the pre- rather than the postsynaptic cell of L5 PC→PC pairs (Carter and Jahr, 2016).
 
-## A hitherto unappreciated role for JNK2 in tLTD
+### A hitherto unappreciated role for JNK2 in tLTD
 
 JNKs are serine-threonine kinases that belong to the mitogen-activated protein kinase family and mediate stress stimuli, e.g., cytokines, ultraviolet irradiation, and heat shock. There are three closely related vertebrate genes: JNK1 and JNK2 are ubiquitous, while JNK3 is primarily neuronal (Yamasaki et al., 2012). In the brain, JNKs are key developmental regulators, for instance, of neuronal migration, dendrite formation, and axon maintenance (Yamasaki et al., 2012).
 
 We previously demonstrated that tLTD at L5 PC→PC connections requires simultaneous activation of preNMDARs and endocannabinoid CB1 receptors (Sjöström et al., 2003). It has long been known that JNK is activated by NMDARs (Coffey, 2014; Mukherjee et al., 1999) as well as by CB1 receptors (Rueda et al., 2000). More recently, we and others established that preNMDARs regulate spontaneous release by signaling via JNK2 (Abrahamsson et al., 2017; Nisticò et al., 2015) and that this regulation critically depends on an interaction between JNK2 and STX1a (Marcelli et al., 2019). Interestingly, it was previously proposed that JNK2 signaling is involved in behavioral learning as well as in classical NMDAR-dependent LTD (Curran et al., 2003; Morel et al., 2018). Our study, however, is to our knowledge the first to show a need for JNK2 signaling specifically in tLTD, which relies on mechanistic underpinnings that differ from classical LTD, such as retrograde endocannabinoid signaling (Bender et al., 2006; Nevian and Sakmann, 2006; Sjöström et al., 2003). Furthermore, in our hands, the activation of JNK2 is achieved by non-ionotropic preNMDAR action. Our present study thus extends the prior literature by suggesting that JNK2 signaling may be a general principle that applies to distinct forms of long-term plasticity.
 
-## Diverse preNMDAR signaling across different synapse types
+### Diverse preNMDAR signaling across different synapse types
 
 In our hands, the NMDAR channel pore blocker MK-801 surprisingly did not block tLTD at L5 PC→PC connections, even though several other studies of tLTD at L4 PC → L2/3 PC synapses reported that MK-801 abolishes tLTD (Banerjee et al., 2014; Larsen et al., 2014; Rodríguez-Moreno et al., 2013; Rodríguez-Moreno et al., 2011; Rodríguez-Moreno and Paulsen, 2008). This difference is likely due to non-ionotropic versus ionotropic preNMDAR tLTD at L5 PC→PC and L4 PC → L2/3 PC synapses, respectively. This mechanistic distinction is generally consistent with the view that STDP depends on synapse type (Larsen and Sjöström, 2015; McFarlan et al., 2023). In fact, tLTD is mediated by distinct mechanisms even for different synaptic input types onto the same L2/3 PCs (Banerjee et al., 2009; Larsen et al., 2014).
 
@@ -125,7 +141,7 @@ Curiously, preNMDARs at L5 PC→PC connections signal ionotropically to boost ne
 
 Another corollary from non-ionotropic preNMDAR signaling in tLTD is that removing Mg2+ to unblock the channel pore should not induce LTD at L5 PC→PC synapses during low-frequency firing. In agreement, reduced Mg2+ does not elicit LTD but actually boosts neurotransmission (Abrahamsson et al., 2017; Wong et al., 2024). Whether or not Mg2+ washout promotes LTD at L4 PC → L2/3 synapses has not been explored, as far as we know.
 
-## Caveats
+### Caveats
 
 We relied on JNK2 blockade as a proxy for non-ionotropic preNMDAR signaling, as we established this hallmark feature of flux-independent preNMDAR signaling of L5 PCs in a previous study (Abrahamsson et al., 2017). It is, however, presently unclear how well this proxy generalizes. A drug that specifically blocks non-ionotropic but not ionotropic NMDAR signaling would resolve this, much like MK-801 does the vice versa. To our knowledge, such a drug presently does not exist.
 
@@ -135,7 +151,7 @@ NMDAR signaling that does not involve ion flux has sometimes been termed metabot
 
 Our experiments were conducted in juvenile visual cortex, so caution is warranted when extrapolating our findings to mature circuits, which may rely on different plasticity mechanisms (Banerjee et al., 2009; Corlew et al., 2007; Larsen et al., 2014; Martínez-Gallego et al., 2022). Further studies in older animals will be important to determine whether the adult brain relies on non-ionotropic preNMDAR signaling in STDP.
 
-## Future directions and implications for disease
+### Future directions and implications for disease
 
 Our study provides a fresh perspective on non-ionotropic function for preNMDARs in tLTD at neocortical synapses. By engaging JNK2-mediated signaling independent of Ca2+ influx, preNMDARs contribute to STDP in a manner that has not been previously appreciated. Our findings challenge the traditional view of NMDARs as coincidence detectors in Hebbian plasticity and highlight the diversity of synaptic plasticity mechanisms (Larsen and Sjöström, 2015; McFarlan et al., 2023). Future studies will be needed to explore the broader implications of non-ionotropic NMDAR signaling in other brain regions and under different physiological conditions.
 
@@ -143,19 +159,19 @@ It is crucial to understand how NMDARs operate, as they are hotspots for major s
 
 ## Methods
 
-## Animals and ethics statement
+### Animals and ethics statement
 
 The animal study was reviewed as Animal Use Protocol (AUP) 6041 and approved by the Montreal General Hospital Facility Animal Care Committee (The MGH FACC) and adhered to the guidelines of the Canadian Council on Animal Care (CCAC). At postnatal days 11–18, male or female mice were anaesthetized with isoflurane and sacrificed once the hind-limb withdrawal reflex was lost. Transgenic animals had no abnormal phenotype. Sparse NMDAR deletion was achieved by removing the obligatory GluN1 subunit in a subset of L5 PCs by neonatal injection (Kim et al., 2014) of AAV-eSYN-mCherry-iCre into V1 of Grin1fl/fl mice (a.k.a. NR1flox) obtained from The Jackson Laboratory (#005246, see below), thus achieving sparse and conditional KO of the Grin1 gene in these mice. A Cre-loxP recombinase strategy (Nagy, 2000) was used to generate transgenic mice after two generations with the Rims1 gene homozygously conditionally deleted in excitatory cells, as genome-wide Rims1 KO impairs survival (Mittelstaedt et al., 2010). Homozygous Emx1Cre/Cre mice (Gorski et al., 2002) were obtained from The Jackson Laboratory (#005628). Homozygous RIM1αβfl/fl mice (Kaeser et al., 2008) were kindly gifted by Pascal Kaeser (Harvard University, MA). Heterozygous Emx1Cre/+; RIM1αβfl/+ mice were generated by crossing Emx1Cre/Cre with RIM1αβfl/fl mice. Emx1Cre/+; RIM1αβ+/+ and RIM1αβfl/fl mice were generated by crossing Emx1Cre/Cre; RIM1αβfl/+ mice with RIM1αβfl/+; no-Cre mice (Abrahamsson et al., 2017). These were distributed in a Mendelian fashion and had viability indistinguishable from that of C57BL/6 mice. To determine the genotype of each animal, tail biopsy and tattooing were performed on mice before the age of P6. Genotyping was carried out using standard methodology with Jackson Laboratory primers (RIM1: 12061, 12062; Emx1: oIMR1084, oIMR1085, oIMR4170, oIMR4171) using QIAGEN HotStarTaq DNA Polymerase kit (203203) and dNTPs from Invitrogen/Thermo Fisher (18427–013) (Abrahamsson et al., 2017). WT denotes C57BL/6 J (Jackson Laboratory #000664), RIM1αβfl/fl; no-Cre and genetically unaffected littermates (Emx1Cre/+; RIM1αβ+/+).
 
-## Viral injections
+### Viral injections
 
 Cre recombinase was delivered by viral injection of AAV9-eSYN-mCherry-T2A-iCre-WPRE (Vector Biolabs, Cat No. VB4856) into the primary visual cortex of Grin1fl/fl neonates (P0-2) to generate a conditional NMDAR deletion through Cre-loxP recombination at the site of the Grin1 gene. This cuts the Grin1 genetic sequence, thus preventing the cell from producing the GluN1 subunit. As the GluN1 subunit is obligate, the cells expressing the virus will not express functional NMDARs. Cells expressing the viral construct were detected via an mCherry tag. Pups were anesthetized by putting them on ice and viral injection was delivered with a needle syringe held in a stereotactic injection setup and connected to a microinjector apparatus. The animal head was held in place with ear bars and the tip of the injection needle was zeroed to lambda. The needle was then positioned to the following coordinates: x = ±1.10; y=0.00. The needle was lowered until it reached the pial surface, where the z coordinate was zeroed. Three injections of 0.2–0.3 μl each were performed at z1=–0.20; z2=–0.15; and z3=–0.10. Both hemispheres were injected to increase the number of slices available for experiments and to reduce the risk of seeing no expression in an animal on the experimental day, both of which enhanced productivity. The AAV9 serotype has a particularly high tropism for the central nervous system (Foust et al., 2009) and the enhanced synapsin (eSYN) promoter specifically targets neurons (Hioki et al., 2007). T2A is a self-cleaving peptide and facilitates co-expression of Cre recombinase and mCherry (Liu et al., 2017). Finally, the Woodchuck Hepatitis Virus (WHP) Posttranscriptional Regulatory Element (WPRE) enhances expression levels of the viral-encoded proteins (Klein et al., 2006), allowing successful expression in neocortical neurons, including pyramidal cells. By controlling the viral titer, expression levels were regulated to achieve sparse genetic deletion of NMDARs in primary visual cortex neurons (Kim et al., 2014).
 
-## Acute slice preparation
+### Acute slice preparation
 
 After decapitation, the brain was removed and placed in ice-cold (∼4 °C) artificial cerebrospinal fluid (ACSF), containing in mM: 125 NaCl, 2.5 KCl, 1 MgCl2, 1.25 NaH2PO4, 2 CaCl2, 26 NaHCO3, and 25 glucose, bubbled with 95% O2/5% CO2. Osmolarity of the ACSF was adjusted to 338 mOsm with glucose. Oblique coronal 300-µm-thick acute brain slices were prepared using a Campden Instruments 5000 mz-2 vibratome (Lafayette Instrument, Lafayette, IN, USA). Brain slices were kept at ~33 °C in oxygenated ACSF for ~15 min and then allowed to cool at room temperature for at least 1 hr before we started the recordings.
 
-## Electrophysiology
+### Electrophysiology
 
 Experiments were carried out with ACSF heated to 32–34°C with a resistive inline heater (Scientifica Ltd), with temperature recorded and verified offline. If outside this range, recordings were truncated or not used. Patch pipettes with a resistance of 4–6 MΩ were pulled using a P-1000 electrode puller (Sutter Instruments, Novato, CA, USA) from medium-wall capillaries. Pipettes were filled with K-gluconate internal solution containing in mM: KCl, 5; K-Gluconate, 115; K-HEPES, 10; MgATP, 4; NaGTP, 0.3; Na-Phosphocreatine, 10; and 0.1% w/v Biocytin, adjusted with KOH to pH 7.2–7.4 and sucrose to osmolality of 310 mOsm (Abrahamsson et al., 2017). 40 µM and 80 µM Alexa Fluor 594 or Alexa Fluor 488 dyes, respectively, were supplemented to internal solution to permit post-hoc analysis of cell morphology with two-photon laser-scanning microscopy (Blackman et al., 2014; Lalanne et al., 2016). Neurons were patched using infrared video Dodt contrast (built in-house with Thorlabs equipment) with an Olympus LUMPlanFL N ×40/0.80 objective on a customized microscope (SliceScope, Scientifica Ltd, UK). Primary visual cortex (V1) was distinguished from surrounding V2 based on the presence of cortical layer 4. PCs in L5 of V1 were targeted based upon their prominent apical dendrite and large triangular somata. Morphometry and cell identity were verified using 2-photon microscopy of Alexa 594/488 fluorescence. Whole-cell recordings were carried out using BVC-700A amplifiers (Dagan Corporation, Minneapolis, MN). Recordings in current-clamp mode were acquired at 40 kHz with PCI-6229 boards (National Instruments, Austin, TX) using our in-house MultiPatch software (Watanabe et al., 2023) (https://github.com/pj-sjostrom/MultiPatch) (Sjöström, 2025) running in Igor Pro 7–9 (WaveMetrics Inc, Lake Oswego, OR).
 
@@ -163,7 +179,7 @@ Since the rate of connectivity in rodent primary visual cortex among L5 PCs is o
 
 In paired recordings, synaptic responses were strictly unitary and subthreshold (Chou et al., 2025; Song et al., 2005), ensuring that inhibitory circuits were not inadvertently recruited. There was, therefore, no need to pharmacologically block GABAergic transmission.
 
-## STDP Experiments
+### STDP Experiments
 
 We induced tLTD by evoking postsynaptic firing 25ms before presynaptic firing, either at 20 Hz or at 1 Hz (Sjöström et al., 2001; Sjöström et al., 2003), which we refer to as HF and LF tLTD, respectively, throughout the present study. tLTP was induced by evoking presynaptic firing 10ms before postsynaptic cell firing at 50 Hz (Sjöström et al., 2001).
 
@@ -175,12 +191,12 @@ To determine the locus of neocortical STDP expression, analysis of the CV of EPS
 
 As a clarification regarding the use of different baseline spiking patterns, we note that the presence of preNMDARs complicates the use of paired-pulse stimulation during baseline periods, since preNMDARs enhance release during high-frequency activity (Abrahamsson et al., 2017; Sjöström et al., 2003; Wong et al., 2024). Therefore, repeated stimulation can suppress synaptic responses when preNMDARs are blocked, potentially confounding interpretation. For this reason, we limited PPR analysis to Figures 5 and 6, where conditions were appropriate.
 
-## Pharmacology
+### Pharmacology
 
 MK-801 maleate (Hello Bio) and 7-CK (Alomone Labs) were washed in at 2 mM and 100 µM, respectively (Nabavi et al., 2013; Sjöström et al., 2003), and slices were incubated for at least 30 min before the start of recordings. We used this high MK-801 concentration to match the mM-range concentrations commonly used intracellularly (Berretta and Jones, 1996; Brasier and Feldman, 2008; Buchanan et al., 2012; Corlew et al., 2007; Larsen et al., 2011; Nevian and Sakmann, 2006; Rodríguez-Moreno et al., 2011; Rodríguez-Moreno and Paulsen, 2008), allowing a direct comparison of extra/intracellular MK-801 application. Lower extracellular MK-801 concentrations in the µM range (e.g. Huettner and Bean, 1988; Kemp et al., 1988; Tovar and Westbrook, 1999) were thus avoided to ensure robust NMDAR blockade and avoid false negatives due to incomplete inhibition. In JNK2 blockade experiments, slices were incubated in ACSF containing 4 μM SP600125 (Sigma-Aldrich) (Bennett et al., 2001) for at least 2 hr before the start of recordings. This concentration is specific for JNK2 over JNK1 and JNK3 (Abrahamsson et al., 2017; Nisticò et al., 2015).
 
 The peptide used to selectively disrupt JNK2/STX1a interaction was synthesized by Université de Sherbrooke and corresponds to 12 residues (IEQSIEQEEGLNRS) that are part of the N-terminal amino acid sequence of STX1a interacting with JNK2 (Marcelli et al., 2019). Patch pipettes were loaded with 10 μM of the peptide. Neurons were patched for at least 30 min before tLTD induction.
 
-## Statistics
+### Statistics
 
 Unless stated otherwise, results are reported as the mean ± standard error of the mean, with n indicating the number of connections. Boxplots show medians and quartiles, with whiskers denoting extremes. Significance levels are denoted using asterisks (*p<0.05, **p<0.01, ***p<0.001). Pairwise comparisons were carried out using a two-tailed Student’s t-test for equal means, unless otherwise indicated. If the equality of variances F-test gave p<0.05, we employed the unequal variances t-test. Wilcoxon-Mann-Whitney’s non-parametric test was used in parallel, with a similar outcome to the t-test. Comparisons to a single value were done with a one-sample t-test, e.g., for CV analysis φ. Multiple comparisons were carried out using one-way ANOVA with Bonferroni’s post-hoc correction. Pairwise comparisons were only made if ANOVA permitted it at the p<0.05 level. Based on the outcome of Bartlett’s test, we used homo- or heteroscedastic (Welch) ANOVA. Statistical tests were performed in Igor Pro and Prism 7.0 (GraphPad Software).

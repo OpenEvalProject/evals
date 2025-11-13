@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04mhzgx49 The Shmunis School of Biomedicine and Cancer Research, The George S. Wise Faculty of Life Sciences, Tel Aviv University Tel Aviv Israel
+1. The Shmunis School of Biomedicine and Cancer Research, The George S. Wise Faculty of Life Sciences, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
 
 † Corresponding author
 
 ## Abstract
 
-Telomeres cap and protect the linear eukaryotic chromosomes. Telomere length is determined by an equilibrium between positive and negative regulators of telomerase activity. A systematic screen for yeast mutants that affect telomere length maintenance in the yeast Saccharomyces cerevisiae revealed that mutations in any of ~500 genes affects telomere length. One of the genes that, when mutated, causes telomere elongation is ELG1 , which encodes an unloader of PCNA, the processivity factor for replicative DNA polymerases. PCNA can undergo SUMOylation on two conserved residues, K164 and K127, or ubiquitination at lysine 164. These modifications have already been implicated in genome stability processes. We report that SUMOylated PCNA acts as a signal that positively regulates telomerase activity. We also uncovered physical interactions between Elg1 and the CST (Cdc13-Stn1-Ten) complex and addressed the mechanism by which Elg1 and Stn1 negatively regulates telomere elongation, coordinated by SUMO. We discuss these results with respect to how chromosomal replication and telomere elongation are coordinated.
+Telomeres cap and protect the linear eukaryotic chromosomes. Telomere length is determined by an equilibrium between positive and negative regulators of telomerase activity. A systematic screen for yeast mutants that affect telomere length maintenance in the yeast Saccharomyces cerevisiae revealed that mutations in any of ~500 genes affects telomere length. One of the genes that, when mutated, causes telomere elongation is ELG1, which encodes an unloader of PCNA, the processivity factor for replicative DNA polymerases. PCNA can undergo SUMOylation on two conserved residues, K164 and K127, or ubiquitination at lysine 164. These modifications have already been implicated in genome stability processes. We report that SUMOylated PCNA acts as a signal that positively regulates telomerase activity. We also uncovered physical interactions between Elg1 and the CST (Cdc13-Stn1-Ten) complex and addressed the mechanism by which Elg1 and Stn1 negatively regulates telomere elongation, coordinated by SUMO. We discuss these results with respect to how chromosomal replication and telomere elongation are coordinated.
 
 ## Introduction
 
@@ -30,35 +30,142 @@ Previous studies found that telomeric proteins, and in particular the CST, can b
 
 ## Results
 
-## The long telomeres phenotype of elg1Δ strains requires PCNA SUMOylation
+### The long telomeres phenotype of elg1Δ strains requires PCNA SUMOylation
 
 Previous results suggested that the Elg1 protein preferentially interacts with the SUMO machinery and with SUMOylated PCNA (Parnas et al., 2011; Parnas et al., 2010; Shemesh et al., 2017). To test whether PCNA modifications play any role in the elongated telomere phenotype of elg1Δ, we combined the ELG1 deletion with mutations in the POL30 gene, encoding PCNA. We mutated either lysine 127, lysine 164, or both (hereafter referred as pol30-K127R, pol30-K164R, and pol30-RR, respectively) in the elg1Δ background. Figure 1 shows that the mutations in POL30 have little effect by themselves. Importantly, whereas the single mutants did not affect the long telomeres of elg1Δ, mutating both lysine residues of each PCNA subunit completely abrogated the long telomere phenotype. Lysine 164 can be modified by both SUMO and ubiquitin; mutating only this residue prevents ubiquitination, but not SUMOylation. Figure 1 demonstrates that this mutant shows no effect. To ensure that SUMO, and not ubiquitin, is the modification responsible for the long telomeres of elg1Δ, we deleted RAD18, encoding the E3 ubiquitin ligase required to ubiquitinate PCNA (Hoege et al., 2002; Stelter and Ulrich, 2003). Figure 1 shows that lack of Rad18 has no effect on the elongated telomeres of elg1Δ. (Deletion of the SUMO E3 ligases SIZ1 and SIZ2 [to prevent SUMOylation] by itself alters telomere length [Hang et al., 2011] and thus they could not be used here.) We conclude that SUMOylation of PCNA is required for the long telomeres phenotype of elg1Δ mutants.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig1-v1.jpg)
 
-**Figure 1.:** (A) Southern blot (Teloblot) showing that lack of SUMOylation of PCNA prevents telomere elongation. Independently created colonies were passaged ten times, its DNA extracted, digested with XhoI, and run in an agarose gel. The DNA was then transferred to a nitrocellulose membrane, which was incubated with a radioactive probe that detects telomeres, and a size marker. (B) Teloblot showing that overexpression of wild-type PCNA or Pol30-RR-SUMO fusion, but not Pol30-ubiquitin fusion or Pol30-RR causes telomere elongation.Figure 1—source data 1.
+**Figure 1.:** (A) Southern blot (Teloblot) showing that lack of SUMOylation of PCNA prevents telomere elongation. Independently created colonies were passaged ten times, its DNA extracted, digested with XhoI, and run in an agarose gel. The DNA was then transferred to a nitrocellulose membrane, which was incubated with a radioactive probe that detects telomeres, and a size marker. (B) Teloblot showing that overexpression of wild-type PCNA or Pol30-RR-SUMO fusion, but not Pol30-ubiquitin fusion or Pol30-RR causes telomere elongation.
 
 These results suggest that SUMOylated PCNA may play a central role in determining telomere length also in cells with wild-type Elg1 activity. We thus next asked whether artificially overexpressing modified and unmodified PCNA may mimic the long telomere phenotype of elg1Δ. Since it is hard to force ubiquitination or SUMOylation of PCNA in vivo, we used covalent fusions between PCNA and either ubiquitin or SUMO. These have been shown in the past to mimic naturally modified PCNA molecules (Parker et al., 2007; Takahashi et al., 2020). We overexpressed either wild-type Pol30, Pol30-RR (which cannot be modified) ,or Pol30-RR fused either to ubiquitin or to SUMO, in pol30-RR cells, unable to carry out modifications of the PCNA encoded by the genome. Figure 1B shows that telomeres become elongated upon overexpression of the wild-type protein (which can be modified), or the Pol30-RR version fused to SUMO, but do not elongate upon overexpression of the unmodifiable Pol30-RR version, or the one fused to ubiquitin. These results, together with those of Figure 1A, show that accumulation of SUMOylated PCNA, and not unmodified or ubiquitinated PCNA, is both necessary and sufficient for telomere elongation in the presence or in the absence of Elg1.
 
-## Genetic and physical interactions between Elg1 and Stn1
+### Genetic and physical interactions between Elg1 and Stn1
 
 The elongated telomere phenotype of Elg1 was identified in systematic screens of the yeast knockout collection (Askree et al., 2004; Gatbonton et al., 2006), together with ~200 additional mutants of similar phenotypes. To identify the pathway of telomere length maintenance in which Elg1 participates, we systematically combined the elg1Δ mutant with all the other mutants with long telomeres. Most double mutants exhibited telomeres longer than each of the single mutants, indicating that they affect different pathways. One of the mutants showing clear epistasis (the double mutant was not longer than the single mutants) carried a deletion of RRP8, a gene involved in modification of the ribosomal RNA. Further analysis demonstrated that the knockout of RRP8 exhibited the ‘neighboring gene effect,’ and in fact the deletion of RRP8 caused a decrease in the expression of its neighboring gene, STN1 (Ben-Shitrit et al., 2012). We confirmed the genetic interactions between ELG1 and STN1 alleles by combining elg1Δ with the stn1-13 and stn1-164 alleles (Grandin et al., 1997), which exhibit long telomeres. The telomeres of the double mutants are not longer than those of the single mutants (Figure 2A), indicating that Elg1 works in the same TLM pathway as Stn1.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig2-v1.jpg)
 
-**Figure 2.:** ELG1 and STN1.(A) Teloblot showing epistasis between elg1Δ and stn1 mutants. (B) Co-Immunoprecipitation experiment showing physical interaction between Elg1 and Stn1 and reduced physical interaction between Elg1-sim and Stn1. No interaction could be detected between Elg1 and Cdc13 or Ten1.Figure 2—source data 1.
+**Figure 2.:** (A) Teloblot showing epistasis between elg1Δ and stn1 mutants. (B) Co-Immunoprecipitation experiment showing physical interaction between Elg1 and Stn1 and reduced physical interaction between Elg1-sim and Stn1. No interaction could be detected between Elg1 and Cdc13 or Ten1.
 
 Given the epistatic relations between the ELG1 and STN1 genes, we addressed, by co-immunoprecipitation (IP) and yeast two-hybrid (YTH) assay, whether the proteins in the CST complex interact with Elg1. IP of epitope-tagged Elg1 pulled down Stn1 but not the other two members of the CST complex, Cdc13 or Ten1 (Figure 2B). For our YTH experiments, the Elg1 protein was divided into three main functional domains: an N-terminal domain (amino acids 1–234), a central AAA domain (amino acids 235–514), and a C-terminal domain (amino acids 515–791) (Itzkovich et al., 2023; Figure 3A). The AAA and C-terminal domains contain the conserved RFC boxes and are required for the interactions with the small RFC subunits, shared by all RFC-like domains. The N-terminal domain (hereafter referred to as NTD) is unique to Elg1 (Arbel et al., 2021). We thus concentrated on this domain and used the C-terminus as a negative control as it does not interact with any of the proteins tested here.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of the Elg1 protein. The three SIM motifs, the WalkerA motif and the two threonines at the interface with PCNA, are shown. (B) Yeast two-hybrid (YTH) interaction of Cdc13 and Elg1 in a wild-type strain. AD: protein fused to the activating domain of Gal4; BD: protein fused to the DNA binding domain of Gal4. e.v.: empty vector. (C) YTH interaction of Stn1 and Elg1 in a wild-type strain. (D) YTH experiments in the siz1Δ siz2Δ and pol30-RR background. (E) Co-Immunoprecipitation experiment showing physical interaction between Cdc13 and PCNA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Results of yeast two-hybrid (YTH) experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig3-figsupp2-v1.jpg)
+
 The NTD contains SUMO-interacting motifs (SIMs), which were previously shown to interact with SUMO and the SUMO machinery (Parnas et al., 2011; Parnas et al., 2010; Figure 3A). We used the YTH technique to test potential interactions between Elg1 and the CST components, and their dependency on SUMO. The N-terminus of Elg1 interacted strongly with Cdc13 and Stn1, and weakly with Ten1 (Figure 3B, C, Figure 3—figure supplement 1). In contrast, no interaction was detected with Elg1’s CTD. We could also detect interactions of Cdc13, Stn1, and Elg1’s NTD with SUMO (Figure 3). These were used as positive controls in all our experiments. Since the results with Ten1 were much weaker than those with Cdc13 and Stn1, we concentrated on these two last proteins. Below, we dissect, using YTH in various genetic backgrounds, the interactions between Elg1, Stn1, Cdc13, and PCNA. The results are also summarized in Table 1.
+
+**Table 1.**
+ Summary of all yeast two-hybrid (YTH) interactions presented.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Plasmid</th>
+      <th>Interaction w/Stn1</th>
+      <th>Interaction w/Cdc13</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild type</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Wild type</td>
+      <td>Elg1-sim</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>siz1Δ siz2Δ</td>
+      <td>Elg1-NTD</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>pol30-RR</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>elg1Δ</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>elg1-sim</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>elg1-DD</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>elg1-sim+DD</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>elg1-WalkerA</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>cdc13-snm</td>
+      <td>Elg1-NTD</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Wild type</td>
+      <td>Elg1-NTD</td>
+      <td>-</td>
+      <td>snm: no</td>
+    </tr>
+  </tbody>
+</table>
+
+_elg1-sim: mutation in the SUMO-interacting motif of Elg1; elg1-DD: TT386/7DD; elg1-sim+DD: combination of mutations in the SIM and in TT386/7; elg1-WalkerA: mutation that eliminates ATPase and unloading activity of Elg1. cdc13-snm: allele of Cdc13 that cannot be SUMOylated._
 
 Interestingly, the interaction of Elg1’s NTD with Stn1, but not with Cdc13, was abolished when the SIM motifs (amino acids I27A, I93K, I121A, and I122A) were mutated (Figure 3B and C). We confirmed these results by co-immunoprecipitation (co-IP) (Figure 2B). These results suggest that the interaction with Stn1 is mediated by SUMOylation of a protein, whereas the interaction of Cdc13 with Elg1-NTD is independent of the SIM in the plasmid-borne copy of Elg1. We confirmed this result by deleting the genes encoding the SUMO-specific E3 enzymes, SIZ1 and SIZ2 in the genome (a double deletion is necessary, as many times each protein can compensate for the lack of the other). Figure 3D shows that indeed deletion of the genes encoding these enzymes abolishes the interaction of Stn1 and Cdc13 with Elg1’s NTD. We conclude that SUMO plays a role in mediating the Elg1-CST interactions. Since Elg1 preferentially interacts with SUMOylated PCNA (Parnas et al., 2010) and Stn1 can bind SUMO noncovalently in YTH (Figure 3C), we reckoned that SUMOylated PCNA may mediate the interaction between Stn1 and Elg1. We therefore tested whether abolishing PCNA’s SUMOylation sites in the genome (pol30-RR) had an effect on the Stn1-Elg1 interaction. We found, however, that Elg1 and Stn1 could still interact in the pol30-RR strain (Figure 3D), despite the fact that PCNA cannot become SUMOylated. Consequently, a different SUMOylated target seems to mediate the interaction between Elg1 and Stn1, or else either one of the proteins is SUMOylated. Despite numerous attempts, we were unsuccessful in observing SUMOylation of either Stn1 or Elg1.
 
 We also noted that, despite the fact that mutation in the plasmid-borne NTD’s SIM had no effect on the interaction with Cdc13 (Figure 3B), deletion of SIZ1 and SIZ2, and mutation in the SUMOylation sites in PCNA completely abolished the interactions between Elg1’s NTD and Cdc13 (Figure 3D). This implies that PCNA SUMOylation is necessary for the interaction between Elg1 and Cdc13. We confirmed by co-IP that Cdc13 indeed physically interacts with PCNA (Figure 3E). The interaction between Cdc13 and PCNA was almost completely abolished when PCNA could not be SUMOylated (Figure 3—figure supplement 2), In summary, the interaction between Cdc13 and both PCNA and Elg1, but not that of Elg1 with Stn1, is dependent on SUMOylation of PCNA.
 
-## Elg1’s functional activity is essential for its interaction with Cdc13
+### Elg1’s functional activity is essential for its interaction with Cdc13
 
 When we repeated the YTH assays in a strain in which the ELG1 gene is deleted from the genome, we were surprised to see that now Cdc13 failed to interact with the plasmid-borne Elg1-NTD (Figure 4A, compare to Figure 3B). In contrast, the interaction between Stn1 and Elg1-NTD was not affected by the deletion of the genomic ELG1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig4-v1.jpg)
+
+**Figure 4.:** (A) Yeast-two-hybrid (YTH) experiment in a elg1Δ strain. (B) YTH experiment in a elg1-sim strain. (C) YTH experiment in a elg1-TT386/7DD strain. (D) YTH experiment in a elg1-sim+DD strain. (E) YTH experiment in a elg1-Walker AB strain. (F) Lack of interaction between cdc13-snm and Elg1 (in a wild-type strain).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Western blot results.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The sumo-no-more allele of Cdc13 has no effect on the yeast-two-hybrid (YTH) interactions between wt Cdc13 or Stn1 and the N-terminus of Elg1. (B) The C-terminus of Stn1 interacts with the N-terminus of Elg1 in wild-type and elg1Δ strains.
 
 Taken together, these results imply that whereas Stn1 interacts directly with the plasmid-borne Elg1-NTD, via its SIM-mediated SUMO-binding, the interaction with Cdc13 require both PCNA SUMOylation and the genomic ELG1 gene. We can envision two formal possibilities for the latter requirement: either (1) the interaction with Cdc13 requires parts of the Elg1 protein not present in the plasmid-borne NTD (e.g., the AAA or CTD domain) or (2) Elg1’s activity (e.g., PCNA unloading) may be required to facilitate the physical interaction of the NTD with Cdc13.
 
@@ -68,23 +175,29 @@ We found that in strains carrying genomic elg1-DD and elg1-sim+DD alleles, Cdc13
 
 We conclude that whereas the interaction with Stn1 is direct and mediated by the SUMOylation of a protein (different from PCNA), the interaction between Elg1’s NTD and Cdc13 is indirect and can only take place after PCNA has been SUMOylated and unloaded. This suggests a model for the coordination of telomerase activity and DNA replication: the presence of SUMOylated PCNA at telomeres may serve as a positive signal for telomerase activity. Once Elg1 unloads PCNA, however, Stn1-Elg1 can bind Cdc13, ending telomerase activity. In this context, it is possible to understand the results seen in Figure 3D, showing that mutations in the SUMO E3 enzymes or in the sites of SUMOylation of PCNA, both of which prevent PCNA SUMOylation, show the same effect as the sim+DD or walkerA mutations in the genomic ELG1 copy, which prevent PCNA unloading activity.
 
-## SUMOylation of Cdc13 is needed for interaction with Elg1
+### SUMOylation of Cdc13 is needed for interaction with Elg1
 
 Cdc13 undergoes SUMOylation, and this modification plays an essential role in the negative regulation of telomere length (Hang et al., 2011). Thus, Cdc13 is a good candidate for the target of SUMOylation required for the interaction between Elg1 and Stn1. Accordingly, mutations of the Cdc13 SUMOylation sites (cdc13-snm, ‘SUMO no more’) weaken its interaction with Stn1 and lead to elongated telomere phenotype (Hang et al., 2011). We therefore checked whether the cdc13-snm mutation affects also the interaction with Elg1. Figure 4F shows that indeed preventing SUMOylation of Cdc13 abolishes the interaction between this protein and Elg1. Note that the strain used expresses a wild type genomic copy of CDC13. Thus, SUMOylation of the plasmid-borne version of Cdc13 (i.e., in cis) is required for these interactions in the YTH assay. No effect was observed when the YTH plasmid carried a wild-type copy of CDC13, and the genomic copy was the cdc13-snm allele (Figure 4—figure supplement 2A). In summary, the N-terminus of Elg1 interacts with Cdc13 only if (1) Cdc13 can be SUMOylated (Figure 4F), (2) PCNA can be SUMOylated (Figure 3D), and (3) PCNA can be unloaded (Figure 4A, C–E).
 
-## The interaction of Elg1 with Stn1 takes place only at late S-phase
+### The interaction of Elg1 with Stn1 takes place only at late S-phase
 
 The fact that the interactions of the Elg1 NTD with Cdc13 are dependent on PCNA modification and unloading, whereas those with Stn1 are not, suggests that the interaction with Cdc13 may be mediated by, or dependent on, the interaction of Elg1 with Stn1. To further dissect this point, we divided the Stn1 protein into an NTD (first 281 amino acids) and a CTD (amino acids 282–495). The later has been shown to be the region that interacts with Cdc13 (Petreaca et al., 2007). Figure 4—figure supplement 2B shows that the NTD of Elg1 also interacts with Stn1 via its C-terminal domain, both in WT and elg1∆ strains.
 
 Having established Stn1 as the main interactor of Elg1 in the CST complex, we next examined the interaction between these proteins throughout the cell cycle phases. We arrested a strain with tagged Elg1, Stn1, and DNA Polymerase Delta in G1 with alpha factor. Cells were released into the cell cycle and samples were taken at intervals during two cell cycles. This allowed us to map the timing of interaction between Elg1 and Stn1 proteins, and whether this interaction is codependent on the movement of replication fork. Figure 5—figure supplement 1 shows that the total level of these proteins does not change throughout the cell cycle. We immunoprecipitated Elg1 and measured the level of the other two proteins by western blot (Figure 5A–C). Pol3 was co-IPed with Elg1 strongly only during the S-phase (40–70 min, 120–140 min), whereas Stn1 was only detected in late S-phase (60–70 min, 140–160 min) for both cell cycles and was barely detected in G1 (Figure 5A–C). This pattern coincides with telomerase activity at telomeres, which is low in early to mid S-phase and peaks in late S-phase (Puglisi et al., 2008; Taggart et al., 2002).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig5-v1.jpg)
+
+**Figure 5.:** (A) Co-IP experiment with synchronized cells. Aliquots were taken at time intervals, Elg1 was immunoprecipitated, and the level of Stn1 and Pol3 (the large subunit of DNA polymerase Delta) was monitored by western blot. Strains with single tags are shown as controls. Whole-cell extract results are shown in Figure 5—figure supplement 1. (B) Quantitation of the western shown in (A). (C) DNA content of the cells used in (A) by cell cytometry. (D) Chromatin immunoprecipitation at telomeres (Telo-ChIP) in synchronized cells showing PCNA occupancy. (E) Interaction between Stn1 and Cdc13 in a wild type and a elg1Δ strain. (F) Quantitation of three independent biological repeats of the experiment shown in (E). **p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86990/elife-86990-fig5-figsupp1-v1.jpg)
+
 To monitor the arrival of the replication fork to telomeres, we performed chromatin immunoprecipitation at telomeres (Telo-ChIP) in synchronized cells. Figure 5D shows that the timing of arrival of PCNA to the telomeres (60–70 min into the cell cycle) coincides with the timing of the co-IP between Elg1 and Stn1 (Figure 5A–C). Thus, our results are consistent with the idea that Elg1 moves with the replication fork, and interacts with Stn1 at the end of S-phase, when telomeres are replicated and telomerase is activated.
 
-## The interaction between Cdc13 and Stn1 is dependent on Elg1
+### The interaction between Cdc13 and Stn1 is dependent on Elg1
 
 Our YTH and IP data suggest that unlike the relationship between Cdc13 and Elg1, the interaction between Stn1 and Elg1 is direct (Figures 2 and 3). Since both Elg1 and Cdc13 bind Stn1 at its C-terminus (Figure 4—figure supplement 1 and Petreaca et al., 2007), it is possible that the absence of Elg1 may affect the interaction between the two CST members. We thus measured the co-IP of Cdc13 and Stn1 in a wild-type or an elg1Δ strain. Cells were cell-cycle synchronized in S-phase as the interaction between these two proteins was barely seen when immunoprecipitated in an asynchronous culture. When Elg1 was absent, Stn1 exhibited a strong reduction in its co-precipitation with Cdc13 (Figure 5E and F). This suggests that the interaction between Stn1 and Cdc13 is, at least partly, dependent on Elg1.
 
-## Model: Elg1 negatively regulates the telomere length by forming an interaction with the CST complex
+### Model: Elg1 negatively regulates the telomere length by forming an interaction with the CST complex
 
 Taken together, our results suggest the following model (Figure 6).
 
@@ -106,19 +219,434 @@ Many proteins in the cell become SUMOylated at one point or another. This modifi
 
 ## Materials and methods
 
-## Yeast strains, plasmids, and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBD424</td>
+      <td>Takahashi et al., 2020</td>
+      <td></td>
+      <td>Empty yeast two-hybrid vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBD424-Pol30</td>
+      <td>Takahashi et al., 2020</td>
+      <td></td>
+      <td>Overexpresses wt PCNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBD424-Pol30-RR</td>
+      <td>Takahashi et al., 2020</td>
+      <td></td>
+      <td>Overexpresses unmodifiable PCNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBD424-ubiquitin-Pol30-RR</td>
+      <td>Takahashi et al., 2020</td>
+      <td></td>
+      <td>Overexpresses unmodifiable PCNA fused to ubiquitin</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBD424-SUMO-Pol30-RR</td>
+      <td>Takahashi et al., 2020</td>
+      <td></td>
+      <td>Overexpresses unmodifiable PCNA fused to SUMO</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBU9</td>
+      <td>Parnas et al., 2010</td>
+      <td></td>
+      <td>Yeast two-hybrid vector</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae MATa strain)</td>
+      <td>PJ69-4A</td>
+      <td>James et al., 1996</td>
+      <td></td>
+      <td>Yeast two-hybrid strain</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alpha Factor</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein A sepharose beads</td>
+      <td>Sigma-Aldrich</td>
+      <td>17-1279-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein G sepharose beads</td>
+      <td>Sigma-Aldrich</td>
+      <td>17-0618-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pronase</td>
+      <td>Sigma-Aldrich</td>
+      <td>P5147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc7392</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (mouse polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>9E10, SC-40</td>
+      <td>1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains, plasmids, and media
 
 All yeast strains used are described in Table 2. All plasmids are described in Table 3. Yeast extract-peptone-dextrose (YPD) medium was prepared with a ready-to-use mixture (Formedium). Synthetic complete (SC) minimal medium was prepared with 2% dextrose (Formedium), yeast nitrogen base without amino acids (Difco), and all necessary amino acids. A 2% agar (Difco) was added for solid medium. Standard yeast genetic procedures were used to create single and double mutants. Unless stated otherwise, all experiments were carried out at 30oC.
 
-## PCNA overexpression
+**Table 2.**
+ Yeast strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain number</th>
+      <th>Name</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>13237</td>
+      <td>BY4741</td>
+      <td>MATa his3del, leu2del, met15del, ura3del</td>
+    </tr>
+    <tr>
+      <td>12480</td>
+      <td>BY elg1Δ::HygMX</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, elg1::HYG</td>
+    </tr>
+    <tr>
+      <td>14421</td>
+      <td>BY pol30-K127R</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, pol30-K127R::LEU2</td>
+    </tr>
+    <tr>
+      <td>14425</td>
+      <td>BY pol30-K164R</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, pol30-K164R::LEU2</td>
+    </tr>
+    <tr>
+      <td>14423</td>
+      <td>BY pol30-KK127,164RR</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, pol30-RR::LEU2</td>
+    </tr>
+    <tr>
+      <td>14426</td>
+      <td>BY pol30-K127R elg1Δ</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, pol30-K127R::LEU2, elg1::HYG</td>
+    </tr>
+    <tr>
+      <td>14430</td>
+      <td>BY pol30-K164R elg1Δ</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, pol30-K164R::LEU2, elg1::HYG</td>
+    </tr>
+    <tr>
+      <td>14428</td>
+      <td>BY pol30-KK127,164RR elg1Δ</td>
+      <td>MATa his3del, leu2del, met15del, ura3del,pol30-RR::LEU2,elg1::HYG</td>
+    </tr>
+    <tr>
+      <td>14398</td>
+      <td>BY rad18Δ:: KanMX</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, rad18::KanMX.</td>
+    </tr>
+    <tr>
+      <td>14401</td>
+      <td>BY rad18D::KanMX elg1D::HygMX</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, rad18::KanMX, elg1::HYG</td>
+    </tr>
+    <tr>
+      <td>19606</td>
+      <td>BY pol30-KK127,164RR Elg1-HA</td>
+      <td>MATa his3del, leu2del, met15del, ura3del ELG1-HA-NAT pol30-KK127,164RR:HIS3</td>
+    </tr>
+    <tr>
+      <td>20622</td>
+      <td>BY bar1 CDC13-HA ELG1-HA</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, bar1::LEU2, CDC13:3HA:HISMX, ELG1-HA-KanMX</td>
+    </tr>
+    <tr>
+      <td>18418</td>
+      <td>BY STN1-Myc Elg1-HA</td>
+      <td>MATa his3del, leu2del, met15del, ura3del stn1::HYG CEN LEU2 STN1-(G)9-(myc)7 ELG1-HA-KanMx</td>
+    </tr>
+    <tr>
+      <td>18790</td>
+      <td>BY bar1 STN1-Myc ELG1-HA POL3-FLAG</td>
+      <td>MATa his3del, leu2del, met15del, ura3del bar1::NatMX stn1::HYG CEN LEU2 STN1-(G)9-(myc)7 ELG1-HA-KanMx POL3-FLAG-URA3</td>
+    </tr>
+    <tr>
+      <td>19552</td>
+      <td>BY bar1 CDC13-HA POL30-FLAG</td>
+      <td>MATa his3del, leu2del, met15del ura3del, bar1:: NatMX CDC13-3HA::HISMX, POL30-FLAG::KanMX,</td>
+    </tr>
+    <tr>
+      <td>20625</td>
+      <td>BY CDC13-HA STN1-Myc</td>
+      <td>MATa his3del, leu2del, met15del, ura3del, CDC13-3HA::HISMX, stn1::HYG CEN LEU2 STN1-(G)9-(myc)7,</td>
+    </tr>
+    <tr>
+      <td>20626</td>
+      <td>BY CDC13-HA STN1-Myc elg1D</td>
+      <td>MATa his3del, leu2del, met15del, ura3del,CDC13-3HA::HISMX, stn1::HYG,CEN LEU2 STN1-(G)9-(myc)7,elg1::KanMx</td>
+    </tr>
+    <tr>
+      <td>20623</td>
+      <td>BY TEN1-FLAG</td>
+      <td>MATa his3del, leu2del, met15del, ura3del trp1del Lys2del can1:: STE2pr-Sp_HIS5 ten1::KanMX, Elg1-HA-NAT CEN URA3 TEN1-(G)8-(FLAG)3</td>
+    </tr>
+    <tr>
+      <td>17611</td>
+      <td>W303-1a</td>
+      <td>MATa leu2-3, 112 ura3-1 his3-11,15, trp1-1, ade2-1, can1- 100</td>
+    </tr>
+    <tr>
+      <td>9842</td>
+      <td>W303 elg1Δ::HygMX</td>
+      <td>MATa leu2-3, 112 ura3-1 his3-11,15, trp1-1, ade2-1, can1- 100, elg1::KanMx</td>
+    </tr>
+    <tr>
+      <td>9551</td>
+      <td>W303 stn1-13</td>
+      <td>MATa leu2-3, 112 ura3-1 his3-11,15, trp1-1, ade2-1, can1- 100, stn1-13</td>
+    </tr>
+    <tr>
+      <td>9848</td>
+      <td>W303 elg1Δ::HygMX stn1-13</td>
+      <td>MATa leu2-3, 112 ura3-1 his3-11,15, trp1-1, ade2-1, can1- 100 elg1::KanMx, stn1-13</td>
+    </tr>
+    <tr>
+      <td>12357</td>
+      <td>W303 stn1-164</td>
+      <td>MATa leu2-3, 112 ura3-1 his3-11,15, trp1-1, ade2-1, can1- 100, stn1Δ::Hyg+pRS-stn1-L164A (pVL3571)</td>
+    </tr>
+    <tr>
+      <td>12358</td>
+      <td>W303 stn1-164 elg1Δ: KanMX</td>
+      <td>MATa leu2-3, 112 ura3-1 his3-11,15, trp1-1, ade2-1, can1- 100, elg1::KanMx, stn1Δ::Hyg+pRS-stn1-L164A (pVL3571)</td>
+    </tr>
+    <tr>
+      <td>12062</td>
+      <td>PJ69-4</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ</td>
+    </tr>
+    <tr>
+      <td>15017</td>
+      <td>PJ elg1D</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ elg1::HYG</td>
+    </tr>
+    <tr>
+      <td>19774</td>
+      <td>PJ siz1 siz2</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ siz1::KanMX siz2::HYG</td>
+    </tr>
+    <tr>
+      <td>11069</td>
+      <td>PJ pol30-RR</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ POL30-RR:: leu2:: KANMX</td>
+    </tr>
+    <tr>
+      <td>20624</td>
+      <td>PJ STN1-Myc</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ elg1-sim::KanMx, stn1::HYG,CENLEU2 STN1-(G)9-(myc)7</td>
+    </tr>
+    <tr>
+      <td>19916</td>
+      <td>PJ elg1-sim-Myc</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ elg1-SIM-MYC-KANMX</td>
+    </tr>
+    <tr>
+      <td>18798</td>
+      <td>PJ elg1-DDMyc</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ elg1-DD-MYC-KANMX</td>
+    </tr>
+    <tr>
+      <td>19917</td>
+      <td>PJ elg1-DD+sim-Myc</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ elg1-DDsim-MYC-KANMX</td>
+    </tr>
+    <tr>
+      <td>19915</td>
+      <td>PJ elg1-Walker A</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ, elg1 KK343/4DD:MYC:KanMX</td>
+    </tr>
+    <tr>
+      <td>19486</td>
+      <td>PJ cdc13-snm</td>
+      <td>MAT@ trp1-901 leu2-3,112 ura3-52 his3-200 gal4del gal80del GAL2-ADE2 LYS2:: GAL1-HIS3 met2::GAL7-lacZ cdc13-snm</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain number</th>
+      <th>Genotype</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4239</td>
+      <td>pGad424 (LEU2)</td>
+      <td>Kupiec lab</td>
+    </tr>
+    <tr>
+      <td>4238</td>
+      <td>pGad424-POL30</td>
+      <td>Helle Ulrich lab</td>
+    </tr>
+    <tr>
+      <td>4237</td>
+      <td>pGad424-pol30-k127r,k164r</td>
+      <td>Helle Ulrich lab</td>
+    </tr>
+    <tr>
+      <td>4236</td>
+      <td>pGad424-pol30-k127r,k164r-SMT3</td>
+      <td>Helle Ulrich lab</td>
+    </tr>
+    <tr>
+      <td>4235</td>
+      <td>pGAD424-pol30-k127r,k164r-UBI</td>
+      <td>Helle Ulrich lab</td>
+    </tr>
+    <tr>
+      <td>4147</td>
+      <td>CEN LEU2 STN1-(G)9-(myc)7</td>
+      <td>Victoria Lundblad lab</td>
+    </tr>
+    <tr>
+      <td>4144</td>
+      <td>CEN URA3 TEN1-(G)8-(FLAG)3</td>
+      <td>Victoria Lundblad lab</td>
+    </tr>
+    <tr>
+      <td>2201</td>
+      <td>pCN181 pACT2-STN1 (LEU2)</td>
+      <td>Constance Nugent lab</td>
+    </tr>
+    <tr>
+      <td>2205</td>
+      <td>pVL855 pACT2-CDC13</td>
+      <td>Constance Nugent lab</td>
+    </tr>
+    <tr>
+      <td>2168</td>
+      <td>pACT2 - TEN1</td>
+      <td>Michel Charbonneau lab</td>
+    </tr>
+    <tr>
+      <td>1775</td>
+      <td>pGBU9 (URA3)</td>
+      <td>Kupiec lab</td>
+    </tr>
+    <tr>
+      <td>1973</td>
+      <td>pGBU9-ELG1-NTD(1-234)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>3301</td>
+      <td>pGBU9-ELG1-CTD(541-791)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>2260</td>
+      <td>pGBU9-ELG1-NTDsim(1-234)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>2241</td>
+      <td>pGBU9-SMT3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>2419</td>
+      <td>pGAD424-Stn1-Nt(1-282)</td>
+      <td>David Shore lab</td>
+    </tr>
+    <tr>
+      <td>2420</td>
+      <td>pGAD424-Stn1-Ct(282-494)</td>
+      <td>David Shore lab</td>
+    </tr>
+    <tr>
+      <td>2169</td>
+      <td>pGAD424-Stn1-13</td>
+      <td>Michel Charbonneau lab</td>
+    </tr>
+    <tr>
+      <td>2418</td>
+      <td>pGAD424-Stn1-63</td>
+      <td>David Shore lab</td>
+    </tr>
+    <tr>
+      <td>4287</td>
+      <td>pACT-cdc13-snm</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### PCNA overexpression
 
 The high copy number pGAD424 plasmid alone, or carrying the wild-type POL30, the mutant pol30-KK127,164RR (pol30-RR), or the pol30-RR fused to ubiquitin or to SUMO (Parker et al., 2007; Takahashi et al., 2020) were transformed into pol30-RR strains and grown under selective conditions.
 
-## Southern teloblots
+### Southern teloblots
 
 For each genotype, at least three independently created strains were tested after 10 consecutive passages on YPD plates (Harari and Kupiec, 2018; Harari et al., 2013; Harari et al., 2017; Rubinstein et al., 2014). Genomic DNA was isolated by pelleting 15 ml saturated overnight yeast culture grown in YPD, then beating the cells using 0.5 mm glass beads in 500 μl lysis buffer and 500 μl phenol chloroform. Cells were spun down for 10 min at 14,000 rpm, and ∼500 μl of the top clear solution, containing the genomic DNA, was carefully taken out. DNA was precipitated using 1000 μl of 95% ethanol and then pelleted. The supernatant was discarded, and 500 μl of 70% ethanol was added. Pellets were left to dry before resuspension in 300 μl TE with RNaseA for 10 min at 65°C. The DNA was precipitated by adding 130 μl of 7.5 M ammonium acetate (pH 7) and 1 ml of 95% ethanol at −20°C, spun, and resuspended in 50 μl of TE. About 10 μl of genomic DNA was digested using XhoI overnight at 37°C. Digested gDNA and ladder were loaded onto a 0.8% agarose gel and electrophoresed overnight at ∼67 V in 1× TBE. The gel was denatured for 30 min in a rocking shaker (1.5 M NaCl, 0.5 M NaOH) and was neutralized for 15 min (1.5 M NaCl, 0.5 M Tris, pH 7.0). The DNA on the gel was transferred onto a hybond nylon membrane (GE Healthcare GERPN303B) with 10× SSC (1.5 M NaCl 0.17 M NaCitrate, dihydrate) and UV cross-linked before blocking in Church buffer (0.5 M Na2HPO4, pH 7.2, 7% SDS, 1 mM EDTA, 1% BSA) for ∼2 hr at 65°C. 32P radiolabeled PCR fragments were added onto the membrane and left to incubate overnight. The membrane was washed 3–4 times for 15 min each, with 1× SSC 0.1%SDS buffer before drying and exposing it to X-ray film. The teloblots blots were exposed for 1–8 d at –70°C before the film was developed.
 
-## Telomeric probe
+### Telomeric probe
 
 S. cerevisiae-specific telomeric probe was labeled by random priming of 20–25 ng of a telomeric fragment and of 20–25 ng of size-control fragments using the DNA labeling mix from Biological Industries. Both fragments were generated by PCR using the primers indicated below. For the telomeric probe, a specific region of the left telomere of chromosome VII was amplified to generate a product 370 bp long. As size-control probe, a specific region of chromosome II was amplified to generate a product 1100 bp long. Since it contains an XhoI site, the size-control probe detects two bands in the sizes of 2044 bp, 779 bp in the Southern blot.
 
@@ -126,30 +654,30 @@ The primers for the Y' element product are
 
 Telomere length was determined using TelQuant (Rubinstein et al., 2014).
 
-## Yeast two-hybrid
+### Yeast two-hybrid
 
 The yeast two-hybrid assays were performed using PJ69-4A (James et al., 1996) strains cotransformed with a LEU2-marked plasmid containing genes fused to the GAL4 activating domain (pACT or pGAD424) and a URA3- marked plasmid containing genes fused to the GAL4 DNA binding domain (pGBU9). Strains containing the test plasmids were grown for 24 hr at 30°C in SC-Ura-Leu liquid medium and were plated on the reporter maker SC-His medium.
 
-## Protein extraction and immunoprecipitation (IP) assays
+### Protein extraction and immunoprecipitation (IP) assays
 
 Cells were grown to mid-logarithmic phase, washed once with water, and resuspended in lysis buffer (20 mm Tris-HCl, pH 7.5, 0.5 mm EGTA, 0.5 mm EDTA, 1 mm DTT, 125 mm potassium acetate, 12.5% glycerol, 0.1% Triton X-100, protease inhibitor mixture, and 1 mm phenylmethylsulfonyl fluoride). Cells were broken for 45 min with glass beads, centrifuged for 10 min at 10,000 × g, and the supernatant was collected. 20–30 μg of total protein extract was resolved on SDS-PAGE using 10% acrylamide gels. For immunoprecipitation, 1000 μg of proteins were prepared and pre-cleared with 20 μl of protein A-Sepharose and protein G-Sepharose beads mixture (GE Healthcare). 2 μl of (HA, Santa Cruz Biotechnology [sc7392; 1:1000] or MYC, Santa Cruz Biotechnology [9E10, SC-40; 1:1000]) antibodies were added to the cleared extract and incubated overnight at 4°C. The beads were washed once with lysis buffer, once with lysis buffer containing 0.5 m NaCl, and twice with buffer A (50 mm Tris-HCl, pH 7.5, 0.1 mm EGTA, 0.1% β-mercaptoethanol). The resulting immunoprecipitates were used for in vitro kinase assays.
 
-## Western blotting
+### Western blotting
 
 Cells were collected by centrifugation, resuspended in 600 ul of phosphate-buffered saline with 1% Triton X-100 (PBST), supplemented with a protease inhibitor cocktail (Roche), and subjected to mechanical rupture using glass beads. The cell debris were removed by centrifugation, and the supernatants were applied onto 0.1 M dithiothreitol, and incubated at 80°C for 10 min before sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) (resolving gel: 30% acrylamide, 1.5 M Tris-HCl pH 8.8, 10% SDS [pH 7.2], 9.7 ml H2O, 100 ul 10% APS, and 10 ul TEMED; stacking gel: 30% bis/acrylamide, 1 M Tris-HCl pH 6.8, 10% SDS [pH 7.2], 5.5 ml H2O, 800 ul 10% APS, and 8 ul TEMED). The samples were run with SDS-PAGE buffer at 100 V until the samples have passed the stacking gel and then at 160 V until the samples have been fully separated. Transfer to nitrocellulose was done in transfer buffer (200 ml methanol, 3.03 g Tris base, 14.4 g glycine) at 500 mAmp and verified by staining with Ponceau-S dye. The blot was blocked with Milk for at least 60 min at room temperature. Primary antibody was added for 12 hr at 4°C. The blot was washed 3 × 5 min with TBST (Tris-buffered saline Tween-20) and secondary antibody was added for 1 hr. The blot was washed 3 × 5 min with TBST and subjected to electro-chemiluminiscence.
 
-## Cell cycle synchronization
+### Cell cycle synchronization
 
 To assay Elg1 and Stn1 interaction during the cell cycle, the triple-tagged strain was grown in YPD to OD600 0.6–0.8, followed by the addition of 500 ng/ml α factor and was grown until ∼90% of the cells appeared unbudded or exhibit Shmoo formation (for ∼2 hr). The α-factor was removed by centrifugation and washing cells 2–3 times with warm YPD. Cells were released into YPD at OD600 0.6–0.8 with addition of pronase at a final concentration of 0.1 mg/ml. Cells were collected for both FACS and western blot analysis at different time points after release. Cells for FACS analysis were fixed in 70% ethanol, digested with RNase overnight, washed again and stained with propidium iodide (15 μg/ml), and analyzed by flow cytometry.
 
-## Flow cytometry
+### Flow cytometry
 
 200 µl of a logarithmic cell culture (0.6 OD600) were harvested, resuspended in 60 µl of 50 mM Tris pH 7.5, and 140 µl of ethanol was added; cells were then kept overnight at 4°C. Fixed cells were centrifuged and washed once in 200 µl of 50 mM Tris pH 7.5 buffer and resuspended in 100 µl RNAse (0.2 mg/ml in 50 mM Tris pH 7.5) for 2 hr at 37°C. In addition, proteinase-K (0.2 mg/ml in 50 mM Tris pH 7.5) was added to each tube and cells were incubated for 60 additional minutes at 50°C. 20 µl of the sample was taken into a new tube and a 180 µl of 18 µg/ml propidium iodide 50 mM Tris pH 7.5 was added. The samples were kept in the dark at 4°C overnight, sonicated twice at low setting (20% power) for 3–5 s, and stored in the dark at 4°C. The flow cytometry MACSQuant system was used for reading. Results were analyzed using either the Flowing Software or the FlowJo program.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 50 ml of each strain were grown to OD600 ≈ 1 in YPD. 1.5 ml formaldehyde (37% solution) was added for 15 min, and the formaldehyde was quenched with 2.5 ml of 2.5 M glycine for 5 min. Cells were harvested, washed once with 15 ml cold PBS, and broken down for 10 min with glass beads in 600 μl lysis buffer (50 mM HEPES-KOH pH 7.5, 140 mM NaCl, 1 mM EDTA, 1% Triton X100, 0.1% Na-deoxycholic acid). The supernatant (lysate) was removed to a new tube. The glass beads were washed with 500 μl lysis buffer, centrifuged, and the supernatant was added to the lysate. The lysate was sonicated 6–8 times for 10–15 s at 80% amplitude with 1 min on ice between each time. The sonicated material was centrifuged for 20 min at 2500 rpm. The supernatant was used for immunoprecipitations (IP). The sonicated proteins were pre-cleared with a 25 μl protein A sepharose and protein G sepharose beads mixture (GE Healthcare), and the appropriate antibodies were added to the cleared extract and incubated overnight at 4°C. PCNA were immunoprecipitated with 2–5 μg of anti-PCNA antibody (Sigma). A total of 10% of the extract was saved as input. The beads after the IP were washed once with lysis buffer, once with lysis buffer with 360 mM NaCl, once with washing buffer (10 mM Tris/HCl pH 8, 0.25 M LiCl, 0.5% NP40, 0.5% Na-deoxycholic acid, 1 mM EDTA), and once with TE (10 mM Tris/HCl pH 8 and 10 mM EDTA). The washed beads and the input were treated with elution buffer (50 mM Tris/HCl pH 8, 10 mM EDTA, 1% SDS) overnight at 65°C. The DNA was precipitated, resuspended in water, and used for PCR real-time analysis (ABI StepOnePlus Real-Time PCR System); primer concentration and cycles number were calibrated individually for each reaction. All experiments are plotted as the average of at least three independent biological repeats, and each biological repeat is the average of three technical PCR repeats. The oligonucleotides used are
 
-## Materials availability
+### Materials availability
 
 All materials in this article can be available upon contact with the corresponding author.

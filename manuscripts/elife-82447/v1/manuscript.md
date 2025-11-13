@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/044w3nw43 Bioinformatics Institute (A*STAR) Singapore Singapore
-2. https://ror.org/027m9bs27 Department of Chemistry, Manchester Institute of Biotechnology, The University of Manchester Manchester United Kingdom
-3. https://ror.org/01tgyzw49 Department of Biological Sciences, 16 Science Drive 4, National University of Singapore Singapore Singapore
-4. https://ror.org/04p491231 Department of Chemistry, The Pennsylvania State University University Park United States
-5. https://ror.org/027m9bs27 School of Biological Sciences, Faculty of Biology, Medicine and Health, Manchester Institute of Biotechnology, The University of Manchester Manchester United Kingdom
+1. Bioinformatics Institute (A*STAR) Singapore Singapore ([ROR:044w3nw43](https://ror.org/044w3nw43))
+2. Department of Chemistry, Manchester Institute of Biotechnology, The University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+3. Department of Biological Sciences, 16 Science Drive 4, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+4. Department of Chemistry, The Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
+5. School of Biological Sciences, Faculty of Biology, Medicine and Health, Manchester Institute of Biotechnology, The University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
 
 † Corresponding author
 
@@ -27,6 +27,14 @@ Flaviviruses are enveloped viruses which include human pathogens that are predom
 Flaviviruses belong to a family of enveloped positive-sense, single-stranded RNA viruses which are transmitted by arthropod vectors, predominantly mosquitoes and ticks. The family includes human pathogens such as dengue (DENV), yellow fever (YFV), Zika, tick-borne encephalitis (TBEV), Japanese encephalitis (JEV) and West Nile virus (WNV), which can be subdivided into a neurotropic and non-neurotropic group of infectious agents (Gaunt et al., 2001). The non-neurotropic group of flaviviruses, associated with haemorrhagic disease, is primarily transmitted via Aedes mosquitoes and is mainly present in the tropical and subtropical regions of the world (Bhatt et al., 2013; Kraemer et al., 2015)⁠. In recent years, partly as a result of global warming, the mosquito distribution has been rapidly expanding into temperate regions and is now co-distributed with the majority of the human population (Brady et al., 2012; Kamal et al., 2018; Kraemer et al., 2019)⁠.
 
 Flaviviral particles consist of an internal nucleocapsid and a surface-facing envelope, which is composed of a membrane and two types of embedded viral proteins. An envelope (E) protein is exposed to the surface of the virus and appears as a first point of contact between the virus and host immune system, whereas a smaller membrane (M) protein, which plays a role in viral maturation, localizes underneath the E protein and is concealed from the exterior. Both proteins are embedded in the viral membrane via transmembrane (TM) helices, and together they form stable heterotetrameric (E2M2) complexes (Zhang et al., 2013a; Kostyuchenko et al., 2013; Sirohi et al., 2016; Sevvana et al., 2018). In the mature virion, 90 E2M2 units are organised in a tight-knit herringbone-like pattern with three heterotetramers arranged in parallel to form a raft. In total, 30 rafts form a complete viral envelope and are likely a functional unit for immune recognition (Zhang et al., 2013a; Sevvana et al., 2018⁠; Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig1-v1.jpg)
+
+**Figure 1.:** (A) A top-down view on the flaviviral envelope protein raft consisting of three E2M2 heterotetramers organised in a parallel fashion. Chains differ in the context of their immediate environment and are described in terms of the symmetry fold, which is repeated across the entire viral particle. In this model, the majority of interchain contacts is retained for the central dimer (consisting of two 2-fold symmetry chains), while the edge 3-fold symmetry chains are not bordering neighbouring rafts as in the full virion. (B) The curvature of the envelope membrane is imposed by that of the protein rafts. See also Figure 1—figure supplement 1. (C) Top and side views of the E2M2 heterotetramer shown in ribbon representation and coloured by functional domains. Protein surface is shown as a transparent outline. The six flaviviral strains differ in length, and residue numbers on the key correspond to the alignment of all strains and to DENV1, 2, and 4. By convention, individual residues mentioned in the text are always matched with DENV2 numbering.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The EM map is depicted as a single plane spanning the centre of the viral particle. For clarity, the raft model is visualised as a thin slice overlaid with the cryo-EM map. Raft chains are shown in alternating light and dark blue surfaces, while membrane phosphorus atoms are shown in green spheres.
 
 During the viral entry process, the virion is internalised via clathrin-mediated endocytosis (Mosso et al., 2008; Acosta et al., 2008⁠) and is contained within endosomes. A gradually acidifying environment inside the compartment (~pH 5–6.5; Randolph and Stollar, 1990)⁠ triggers a large-scale conformational change within the envelope whereupon E proteins dissociate from their E2 dimeric state, which lies flat on the surface of the virus, and instead form trimeric spikes with conserved fusion loops positioned at the tips (Modis et al., 2004⁠). The fusion loops anchor the virus to the host membrane, effectively creating a bridge that spans the gap between the viral and endosomal membranes. A series of putative conformational changes in the spike trimer catalyse membrane fusion, penetrating the endosome and allowing for the viral nucleocapsid with its RNA genome to be released into the host cytoplasm (Harrison, 2015)⁠.
 
@@ -42,7 +50,7 @@ Here, we use large-scale co-solute molecular dynamics (MD) simulations to explor
 
 ## Results and discussion
 
-## Benzene binding increases solvent protein accessibility without affecting the secondary structure
+### Benzene binding increases solvent protein accessibility without affecting the secondary structure
 
 High concentrations of apolar probes can potentially lead to undesirable unfolding events by invading and disrupting the hydrophobic core of the protein, resulting in a shift towards biologically irrelevant conformations (Schmidt et al., 2019). Thus, in the current work, we first confirmed that the addition of benzene to flaviviral raft systems increases the total SASA without affecting protein secondary structures (Figure 2A–B). The unperturbed secondary structure suggests that the increased SASA of the sampled conformations of the rafts is not due to protein unfolding, but instead is a result of subtle side chain rearrangements, benzene incorporation into protein-protein interfaces, and cryptic pocket opening events. Additionally, very similar RMSF profiles for water-only and benzene simulations demonstrated that the overall dynamic fluctuations were comparable in behaviour despite the differences in solvent composition (Figure 2C). Highly dynamic loop regions (such as the N153 glycan loop) had fractionally lower RMSFs compared to water-only simulations. This effect might be due to stabilisation imposed by benzene interacting with the disordered loop regions and the ordered surface beneath, thus providing a stable interaction surface for the flexible portions of the protein.
 
@@ -50,11 +58,19 @@ High concentrations of apolar probes can potentially lead to undesirable unfoldi
 
 **Figure 2.:** (A) The total SASA across all viral systems increases with the addition of hydrophobic benzene probes to the solvent. The first 50 ns of each simulation was considered as equilibration and therefore omitted from the analysis. (B) The number of residues participating in secondary structure (defined as constituent elements of ⍺-helices, β-sheets, β-bridges, or turns) remains largely unaffected in benzene systems and closely corresponds to the values describing the experimentally derived cryo-EM structures. (C) The RMSF values describing whole-residue fluctuations are similar across solvent types and viral serotypes. The gaps in lines are due to the sequence alignment which accounts for differences in length or deletions/insertions between different flavivirus envelope proteins, ensuring that the corresponding residues are vertically aligned. All values displayed in panels are averaged across repeats and, in the case of RMSF, across all chains of the system. Standard error is shown as a transparent ribbon around the mean value.
 
-## Benzene binding patterns are sequence-dependent
+### Benzene binding patterns are sequence-dependent
 
 Flaviviral serotypes, although similar in structure, exhibit subtle serotype-specific differences in envelope dynamics. Even though the polyprotein sequence similarity between the presently explored flaviviruses is relatively high (42% for all six serotypes and 71% for DENV serotypes only), a large number of mutations localise on the surface-exposed portions of the envelope protein (Figure 3—figure supplement 1A–B). This is unsurprising in the context of viral evolution, as mutations arise in the surface-exposed areas in order for the virus to evade the host immune response. However, certain exposed regions of the E protein are highly conserved because they play specific functional roles in the viral life cycle and are therefore less likely to accumulate mutations.
 
 Shared sites of benzene binding reflect residue conservation patterns on the E protein and mostly localise around the conserved fusion loop and at the pr-binding interface (Figure 3 and Figure 3—figure supplement 1C). The fusion loop (residues 98–111) is conserved among flaviviruses as it inserts into the endosomal membrane, which is essential for catalysing the membrane fusion event leading to genome release into the host cell cytoplasm (Allison et al., 2001). Similarly, the pr portion of the prM protein protects the fusion loop from premature insertion during the maturation process, and its interaction surface on the E protein is therefore also conserved to a high degree (Heinz et al., 1994;⁠ Figure 3—figure supplement 1A and C). It is interesting to note that protein-protein interfaces have similar characteristics to drug-binding hotspots (DeLano, 2002; Mattos and Ringe, 1996; Zerbe et al., 2012)⁠ and the methods used for detecting one are also likely to detect the other type of protein surface. This was well demonstrated by benzene mapping, as we found that benzene molecules preferentially interacted with the pr-binding interface, highlighting it as a potential hotspot.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig3-v1.jpg)
+
+**Figure 3.:** (Left) The average number of benzene contacts per residue is shown on viral raft structures. The values for individual chains are averaged across repeats. For patterns of residue conservation and phylogenetic relationships between strains, see Figure 3—figure supplement 1. (Right) In each upper graph, the mean value of benzene contacts per residue averaged across all chains and repeats is shown in black line, with standard error displayed as a grey ribbon. In each lower graph, the average change in SASA is shown in nm (Bhatt et al., 2013), calculated as (SASA+bnz - SASA-bnz), with an increase shown in green and decrease in red. As with Figure 2, the gaps in lines are due to flavivirus-specific sequence alignment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Raft residue conservation as shown on the raft surface. The surface side is turned towards the exterior of the viral particle, while the membrane side is interacting with the lipid bilayer and is for the most part hidden from the host immune system. (B) Phylogenetic relationship of six flaviviruses presented by an unrooted neighbour joining (NJ) tree. DENV1 and DENV3 are most closely related viral serotypes, while YFV is comparatively distant in evolutionary terms to the DENV group. (C) The E protein dimer showing the pr interface (green surface) and the fusion loop (red ribbon; residues 98–111). The dimer is shown in a surface representation with individual chains coloured in shades of grey. (D) Correlation analyses of properties associated with the selected viral serotypes. Sequence identity matrix shows percentage identity of E and M protein sequences in a pairwise fashion. This matrix reflects evolutionary relationships between viruses shown in panel B. Other matrices display pairwise correlations of viral properties obtained from MD simulations. The values of SASA, RMSF, and number of structured residues were derived from water-only simulations, while benzene contacts and pocket densities were taken from benzene simulations. All correlations were calculated using the Spearman’s rank correlation coefficient method.
 
 Overall, though, the surface patterns of benzene binding and, consequently, increased SASA, were variable and serotype-dependent (Figure 3). The external E protein surface is mostly unconserved and correspondingly showed a significant degree of variability in benzene binding patterns across serotypes. Notably, a central portion of DII was benzene-depleted (conservatively, residues 58–65, 120–125, 215–235, 252–267), suggesting that it is unlikely to be an attractive drug-binding hotspot. The width of this depleted band was sequence-dependent, with it being the narrowest in DENV4 and the widest in YFV. There are currently no known flaviviral antibodies that specifically target the central band of the raft, corroborating the observation that poor benzene binding sites are also unlikely to be involved in the formation of protein-protein interfaces. The benzene interaction sites slightly differed depending upon the position of the chain within the raft (Figure 1A). Protein-protein interfaces that were positioned on the raft edges were more easily accessible to benzene molecules than the interfaces engaged in interchain interactions. Despite this, benzene mapping was highly similar across chains and displayed clear serotype-specific patterns of binding.
 
@@ -62,9 +78,17 @@ The areas of frequent benzene binding also matched increases in SASA, showcasing
 
 Correlation analyses of serotype properties, especially SASA, recapitulated phylogenetic relationships between the viruses (Figure 3—figure supplement 1D). Serotypes that are more closely related generally exhibited more similar dynamic behaviour, highlighting the importance of sequence conservation in yielding shared characteristics such as SASA, benzene binding, or pocket formation. Interestingly, not all residue-based properties showed an equally high degree of correlation with sequence – notably, the RMSF correlations were poorly reflective of flaviviral evolutionary relationships, suggesting a more complex interplay of properties causing residue fluctuations than sequence alone (Figure 3—figure supplement 1D). Instead, the RMSF values showed remarkable similarity across all six viral serotypes (Figure 2C).
 
-## The open/closed state ratio of β-OG pocket is specific to the viral serotype
+### The open/closed state ratio of β-OG pocket is specific to the viral serotype
 
 The β-OG cryptic pocket was first detected in DENV2 sE protein crystal structures (Modis et al., 2003)⁠ where a single detergent molecule intercalated within the hydrophobic pocket located at the DI-DII interface of each chain (Figure 4A). The binding pocket was absent in apo-structures as the position of the kl loop obscured the entry to the site (Figure 1C). Functionally, the DI-DII interface is a hinge region and its movement is essential for the E protein to undergo pH-dependent conformational changes leading to the formation of fusogenic trimers (Zhang et al., 2004)⁠. However, the co-crystallised β-OG molecule was absent from sE dimer structures of other flaviviruses (Kanai et al., 2006; Nybakken et al., 2006)⁠, and even from the E protein structures of the same viral serotype (Zhang et al., 2004)⁠ despite the addition of the detergent in the crystallisation buffer. Nonetheless, other studies have shown that the β-OG pocket is likely present in at least some flaviviruses. The JEV apo-sE crystal structure showed that the kl loop is positioned in a way to reveal a pocket large enough to accommodate β-OG, even in the absence of the ligand (Luca et al., 2012)⁠. Indeed, pyrimidine compounds and cyanohydrazones (both groups exhibiting inhibitory effects on the fusion events of DENV2, WNV, JEV, and Zika viruses) appear to bind inside the β-OG pocket, as demonstrated by loss-of-binding site-directed mutagenesis and photocrosslinking experiments (de Wispelaere et al., 2018; Li et al., 2019)⁠.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig4-v1.jpg)
+
+**Figure 4.:** (A) The β-OG detergent molecule co-crystallised inside the cryptic pocket of the DENV2 sE protein (PDB code: 1OKE) (Modis et al., 2003) ⁠. The protein is shown as a combination of white ribbon and transparent surface representations. The β-OG molecule is shown in yellow sticks, with oxygen atoms highlighted in red. The residues surrounding the ligand are accentuated in stick representation and coloured based on their conservation scores calculated in Consurf (Ashkenazy et al., 2016)⁠. Residue labels correspond to DENV2. (B) A representative simulation snapshot of benzene molecules occupying the β-OG pocket in the DENV2 system. Benzenes are shown in yellow stick representation. Other elements of the system are visualised in the same way as in panel A. (C) Cumulative SASA for all residues lining the pocket (labelled in panel A) across six flaviviral serotypes. The data was visualised as a swarm plot, where a SASA measurement for each sampled frame was represented as a horizontally stacked non-overlapping point. The spread of points therefore describes the distribution of SASA measurements for systems in absence (-bnz) or presence of benzene (+bnz). Pocket SASA values are shown separately depending on the solvent composition. Open and closed conformations of the pockets were differentiated by applying a k-means clustering algorithm (details in the Methods section). The percentage of the β-OG pocket observed in an open conformation is specified for each simulation system. The indicated experimental SASA value of the pocket is that measured for the crystal structure (panel A) averaged across the two chains. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) SASA calculated for β-OG pocket residues shown in split violin plots, where the blue area represents pocket SASA in water-only simulations, while the yellow surface represents simulations with benzene molecules present in the solvent. Experimental SASA value corresponds to the crystal structure pockets averaged across two chains. The division of pockets based on chain positions on the raft follows the labelling convention described in Figure 1A. Scores underneath the violin plots indicate the significance of SASA difference for water-only and benzene simulations. Pairwise scores above the plots describe a significant difference between chain types (across both solvent types). Significance is calculated using a Wilcoxon signed-rank test (ns: p>0.5; *: p≤0.5; **: p≤0.01; ***: p≤0.001; ****: p≤0.0001). (B) The number of benzene contacts occupying the β-OG pocket at any given point throughout the course of simulations. The values are shown for individual viruses and chain types.
 
 Using the benzene mapping simulation approach on raft systems, we explored the characteristics of the β-OG pocket in different flaviviral serotypes. We observed that the ratios of open/closed states of the pocket differ greatly depending upon the particular virus (Figure 4C), with the biggest pocket exposure attributed to DENV4 followed by DENV2, with YFV exhibiting comparatively the lowest pocket SASA even in the presence of benzene. Pocket properties were also affected by solvent composition, with simulations containing benzene manifesting, on average, higher SASA values. Benzene molecules can enter the hydrophobic pocket and transiently interact with residues lining the site (Figure 4B). The number of benzenes that occupied the pocket during the course of the trajectory was in direct correlation with the pocket SASA (Figure 4—figure supplement 1B), with DENV2 and DENV4 showing the highest propensity for accommodating benzene molecules within the pocket, both in terms of number and frequency. In contrast, YFV β-OG pockets were the least likely to contain any benzene. Therefore, the presence of benzene probes in the system modified pocket exposure and, consequently, its SASA, either by locking the pocket in an open conformation or by inducing the opening of the pocket in the first place.
 
@@ -76,9 +100,17 @@ The evident differences in pocket exposure can only be partially explained by th
 
 Remarkably, the SASA value measured for the open β-OG pocket in the crystal DENV2 sE structure (Modis et al., 2003)⁠ closely corresponded to the mean pocket value in simulated DENV2, suggesting that the benzene simulations successfully sampled biologically relevant open conformations of the pocket that match experiment. Despite some of the serotypes exhibiting predominantly closed states of the pocket even with the addition of benzene, those β-OG pockets are not necessarily absent. Instead, the kinetics of site opening might be serotype-dependent, resulting in pockets of some of the viruses predominantly residing in closed states. Thus, successful inhibition of the fusion events in Zika in the presence of β-OG pocket-binding inhibitors suggests that the pocket is sufficiently druggable, despite its presently observed low fraction (13.1%) of open states.
 
-## The ⍺ pocket located on the domain interfaces is conserved and contains a buried cluster of charges
+### The ⍺ pocket located on the domain interfaces is conserved and contains a buried cluster of charges
 
 Our previous studies of a single DENV2 E2M2 heterotetramer identified a novel cryptic pocket (referred to as ⍺) located on domain interfaces (Zuzic et al., 2020;⁠ Figure 5). Here, we found that this pocket was consistently present in all explored flaviviral serotypes and for all raft chains (Figure 5—figure supplement 1). The increase in SASA in the presence of benzene was evident for all mapped ⍺ pockets, confirming its cryptic character. Interestingly, properties of the ⍺ pocket across serotypes appeared to be more consistent than those of the β-OG pocket, and this uniformity could be linked to a higher degree of residue conservation (47% for all explored flaviviruses; 70% for the DENV group). SASA was also less affected by the location of the chain within the raft for the ⍺ pocket, likely due to the fact that it is positioned peripherally and is therefore less dependent on intra-raft contacts. We cannot exclude that the dynamics of the ⍺ pocket opening might be affected by inter-raft contacts not present in our models.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig5-v1.jpg)
+
+**Figure 5.:** (A) Left side: The ⍺ pocket density displayed as a transparent grey surface located on the intrachain DI-DIII and interchain DII-DIII interface. The E protein is shown in ribbon representation and coloured according to domain assignments (as seen in Figure 1). The plane represents a directional slice of the pocket shown on the right side of the panel. Right side: The protein is shown in white surface representation and the residues lining the pocket are displayed as sticks and coloured according to their Consurf conservation score. The pocket is highlighted in yellow. (B) The selection of E and M protein residues according to the properties of conservation, burial, and ionizability. Residues characterised by a high degree of conservation (Consurf score ≤–1.0) and solvent inaccessibility (SASA ≤0.2 nm2) are shown in the inset. Additionally, titratable residues are labelled and displayed on the E2M2 structure, where it becomes apparent that almost all selected residues occupy the DI-DIII interface region associated with the ⍺ pocket. For ⍺ pocket SASA measurements across flaviviral strains, see Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Grouping categories and the methods for calculating statistical significance are described in Figure 2A.
 
 The pocket is elongated and functionally divided into two parts - the fusion loop interface, representing the interchain interaction surface; and the DI-DIII cryptic pocket segment that is located underneath the N153-glycosylation loop (Figure 5A). A closer inspection of the cryptic segment reveals that it is well conserved, with surface residues showing a greater degree of variability, and buried residues appearing overall more conserved. The N153-glycan loop obstructing the entrance to the pocket was highly flexible in our simulations for all DENV serotypes (Figure 1C). Although we omitted the glycan component from our models, the simulations were in agreement with the hydrogen-deuterium exchange experiments performed on the whole DENV2 particle that demonstrate a high degree of flexibility in the glycosylation loops (Lim et al., 2017)⁠. Furthermore, cryo-EM structures of the whole viral particles (Zhang et al., 2013a; Sevvana et al., 2018; Renner et al., 2021)⁠, as well as crystal structures of E proteins expressed in insect cells (Modis et al., 2003; Zhang et al., 2004; Modis et al., 2005; Barba-Spaeth et al., 2016)⁠ indicate that the N153-loop is unstructured. Interestingly, E protein dimers expressed in bacterial systems (Luca et al., 2012; Lu et al., 2019)⁠ appear to have the N153-loop structured as an ⍺-helix, suggesting a role of the glycan moiety in loop secondary structure organisation. The flexibility of the N153-loop indicates that it might aid cryptic pocket opening and transient solvent accessibility of residues lining the ⍺ pocket.
 
@@ -86,9 +118,33 @@ The DI-DIII cryptic segment of the pocket contains a conserved His144 residue (F
 
 Generally, the only residues that have tended to be considered in the context of pH-sensing roles in the flaviviral E proteins have been histidines as their intrinsic sidechain pKa values (~6.0, as determined from titration experiments of compounds outside the protein environment) can rapidly protonate under relatively mild acidic conditions. However, this approach disregards the effect of the surroundings on residue pKa (García-Moreno et al., 1997; Isom et al., 2011⁠) and the fact that the residues, especially buried ones, are located in a low dielectric environment. Under such conditions, pKa values can be dramatically altered – specifically, Asp/Glu residues have the potential to be upshifted (Srivastava et al., 2007)⁠ and act as pH-sensing or pH-coupled residues (Sazanavets and Warwicker, 2015)⁠. When E and M protein residues were explored in the context of their burial, conservation, and potential for being titrated, only six of them fulfilled the criteria and, remarkably, all but one were located on the DI-DIII interface associated with the ⍺ pocket region (Figure 5B). Four conserved residues – Arg9, Asp42, His144, and Glu368 – were found to closely interact and formed a distinct cluster of charges bridging the DI-DIII interface. In addition, the N-terminus (N-ter) – characterised by its burial and ionisability, and unaffected in terms of conservation – was in close proximity to the residues in question and was also a part of the cluster. The presence of closely coupled residues within the cluster suggests that any pH-dependent protonation event on His144 would have to be considered in the context of other charges within the cluster. The effects of pH on the cluster protonation and dynamic behaviour were next explored in constant-pH simulations.
 
-## Disruption of the ⍺ pocket charge cluster at low pH
+### Disruption of the ⍺ pocket charge cluster at low pH
 
 We performed 0.88 µs of constant-pH simulations on the sE dimer of DENV2 across a broad pH range of 0–9. The convergence of the examined pKa values is shown in Figure 6—figure supplement 1. The focus of our analysis was the ⍺ pocket charged cluster (N-ter, Arg9, Asp42, His144, Glu368) and its behaviour at different pH conditions (Figure 6). Interestingly, even though preliminary pKa calculations based on the static structure obtained from cryo-EM predicted His144 to be inaccessible for protonation (Figure 6—figure supplement 2A), conformational sampling during constant-pH simulations revealed transient solvent accessibility of the charge cluster that likely allows for histidine protonation at endosomal pH (pKa(His144)=4.84; Figure 6—figure supplement 2B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig6-v1.jpg)
+
+**Figure 6.:** For convergence of pKa values in constant-pH simulations, see Figure 6—figure supplement 1. (A) Disruption of the charge cluster (assessed via its radius of gyration) in relation to the charge pattern (violin plots in the foreground) and overall cluster charge (boxplots in the background). The measurements were obtained over a range of pH values (pH 0–9). The violin plots represent the distribution of y-values (radius of gyration measurements) for each protonation state, where the total area of violin(s) for each protonation state is constant. The codes in the legend describe residue charges for the residues that were titrated in the simulation system: Asp42, His144, and Glu368. N-ter and Arg9 had a fixed positive charge and were therefore omitted. For predicted pKa values of selected residues, see Figure 6—figure supplement 2. (B) Occurrence of distinct protonation states at different pH conditions. Point sizes correspond to the population sizes at each value. D-H0E- is a dominant pattern of charge in high and neutral pH conditions, whereas the remaining seven patterns (representing +1,+2, and+3 total cluster charge) appear at low pH conditions. See also Figure 6—figure supplement 3. (C) PCA describing cluster conformations based on the intra-cluster distances. The axes corresponding to the original variables are shown on the right side of the plot (labels for the smallest axes His144-Glu368 and Asp42-His144 omitted for clarity). Clustering analysis of the five residues (details in the Methods section) generated nine distinct conformations which are projected onto the PCA and shown in insets around the plot. Conformations 8 and 9 had a negligible contribution to the total number of structures and were therefore excluded from the visualisation. The snapshots corresponding to structures undergoing a greater conformational change at low pH are visualised in ribbon representation (trajectories shown in Figure 6—videos 1; 2). Transparent surfaces represent the starting sE dimer conformation, demonstrating the extent of the conformational shift. Ribbon colours correspond to the specific charge patterns under which the conformational change had occurred (green and yellow for D-H+E0 and D0H+E0, respectively). For SASA of the ⍺ pocket across different charge states of the cluster, see Figure 6—figure supplement 4. For the effects of benzene on the conserved cluster behaviour, see Figure 6—figure supplement 5.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** pKas were calculated from a deprotonated fraction of each residue of interest and using the Hendersson-Hasselbalch equation. The pKas were calculated using progressively longer simulation times (1, 2, 5, 10, 15, and 20 ns, as well as the full-length trajectory). The pKa convergence is satisfied within ~5 ns of simulation, with buried residues (Asp42, His144, Glu368) converging more slowly as compared to the surface-exposed residues.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) A pKa prediction for all titratable residues of the E protein calculated by the FD/DH method. The values are averaged across three chains in the asymmetric unit and standard errors are shown as whiskers. (B) Titration of selected residues derived from constant-pH simulations of the DENV2 sE dimer. The values are averaged across both chains and all repeats, with the standard errors shown as whiskers. The curves are fitted according to the Hill equation, where n is a Hill coefficient describing cooperativity between proton binding sites (n<1, negative cooperative binding; n=1, independent binding; n>1, positive cooperative binding).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Conformation 1 is predominant at all charge states, whereas other conformations are enriched at higher charges (+2 and+3) occurring at low pH. The labelled percentages describe the population proportion belonging to conformation 1.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The SASA measurements were calculated from constant-pH simulations and across a range of pH values (pH 0–9). The violin plots (in the foreground) represent the distribution of SASA values for each protonation state, and the boxplots (in the background) show the distribution of SASA for each charge cluster. The codes in the legend are residue charges for the residues that were titrated in the simulation system (Asp42, His144, and Glu368).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/82447/elife-82447-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Number of benzene contacts for each residue within the cluster of charges (Nter-Arg9-Asp42-His144-Glu368) and across examined virus species. (B) The radius of gyration (measuring cluster disruption) in relation to the number of benzene molecules interacting with His144 across all examined flaviviruses. The increased number of benzene molecules within the ⍺ pocket leads to a greater disorder within the cluster. A point-to-point line connects the mean values of all groups (whereas boxplots highlight the median values of groups).
 
 The disruption of cluster contacts (assessed by measuring the radius of gyration of the cluster residues, with higher values corresponding to overall greater disorder) was assessed in relation to the patterns of charges. Considering that the charge cluster is broken apart in the postfusion trimer (Modis et al., 2004)⁠, it is expected that a decrease in pH would be accompanied by disruption of the cluster. The cluster underwent a charge shift as consequence of lowering pH (Figure 6B), which indeed led to a gradual increase in disorder (Figure 6A), most noticeable following a total cluster charge shift from 0 to +3.
 
@@ -102,7 +158,7 @@ Even though we observed protein-wide conformational changes only in more extreme
 
 Based on our findings, we propose that the drivers of conformational change at low pH are more complex than the simplistic histidine switch hypothesis, which limits possibilities for pH-sensing residues exclusively to histidines. As shown in our simulations, the solitary His144 protonation event has little effect upon overall sE dimer stability; instead, the conformational change appears to be inextricably linked to an interconnected network of conserved titratable residues that jointly contribute to the pH-dependent formation of the fusogenic spike. The cluster effect might also explain incongruous results in loss-of-function experiments which have shown that E proteins with an H144N mutation can still undergo the fusion event (Nelson et al., 2009)⁠, suggesting that His144 plays a part, but is not indispensable for triggering trimer formation.
 
-## Limitations
+### Limitations
 
 In this work, we modelled the portion of the flaviviral envelope with the aim of detecting cryptic pockets on its protein components, but we omitted 1–2 glycan molecules (at position N67 for DENV1-4 only, and at N153 for all addressed flaviviral species). At the time of conducting the research, the benzene mapping method had not been verified against systems containing sugar moieties, and we hypothesised that the shielding effect of glycans might hinder effective benzene exploration of the protein surface. Furthermore, the experimental data available regarding glycan types on each glycosylation site is scarce and is dependent on the viral species and the examined host (Hacker et al., 2009)⁠. However, the ⍺ pocket that contains the cluster of charges implicated in pH-dependent conformational change is located underneath the N153-glycan loop and as such, it is expected to at least partially affect the dynamics of pocket opening. This aspect of flaviviral envelope dynamics remains unaddressed at this time, and a topic for the future.
 
@@ -110,13 +166,13 @@ The membrane was modelled under geometric and compositional constraints. The cur
 
 The constant-pH simulations were performed on a truncated model of the E protein dimer, and the titrations were performed only on a small number of ionisable residues (specifically, the identified cluster charge residues and conserved histidines). The constant-pH method utilised the Generalised Born solvation model to attempt protonation, while the conformational sampling was performed in an explicit water environment. These aspects of the constant-pH simulation setup may be limiting in terms of accuracy of the used model and the comprehensiveness of the protonation sampling. Therefore, the future continuation of this research may involve constant-pH simulation approaches that allow for simulations of bigger systems and with titration coordinates applied to all acid-ionisable residues, such as a recently developed method reported by Aho et al., 2022⁠.
 
-## Perspectives on cryptic hotspot discovery in flaviviruses
+### Perspectives on cryptic hotspot discovery in flaviviruses
 
 Prophylactic or therapeutic approaches for fighting flaviviral disease that utilise vaccines or antibodies might be suboptimal because of the danger of ADE. Instead, antiviral drugs that could target the flaviviral life cycle could be an effective alternative. Specifically, a potential drug targeting the early stages of the life cycle would not have to be membrane-soluble as it would target the viral particle in the extracellular environment. Furthermore, inhibiting the fusion step would contribute to prevention of ADE, because it would pre-empt viral escape from the endosome prior to degradation. Hence, antiviral drugs would not only offer protection on their own, but could also act in concert with vaccines. The inhibitory action of antiviral drugs by binding to the β-OG pocket has already been demonstrated for a range of flaviviruses (de Wispelaere et al., 2018; Li et al., 2019)⁠, likely by preventing a hinge-like movement of the DI-DII interface necessary for formation of the fusogenic trimer. Similarly, targeting drug-like molecules to the ⍺ pocket could modulate charge cluster behaviour, effectively disrupting the pH-dependent dissociation of DI-DIII that is an essential step in the endosomal conformational change. Consistent with the cluster disruption and domain dissociation observed under low pH conditions, the surface area of the ⍺ pocket also increases with the net charge of the cluster (Figure 6—figure supplement 4). A drug molecule binding inside the pocket and stabilising it – both under neutral or low pH conditions – could conceivably prevent domain dissociation and pH-induced conformational changes of the viral envelope.
 
 His144 is the most accessible to benzene probes in all examined flaviviral serotypes and thus likely to be a primary interaction moiety for potential antiviral drugs (Figure 6—figure supplement 5A). Our simulations show that benzene interactions with His144 also lead to an increased disorder within the cluster (Figure 6—figure supplement 5), which is an effect that would need to be considered in the context of drug design. Nonetheless, the proximity of other cluster residues suggests that all of them have the potential to play a role in drug-binding and in turn be modulated in their response to a low pH environment.
 
-## Conclusions
+### Conclusions
 
 Our simulation studies of DENV1-4, YFV and Zika rafts provide a detailed perspective of the dynamic behaviour of flaviviral envelopes in the presence of benzene. We elaborated on a wider context of shared hotspot characteristics and potentially druggable cryptic pockets that could be utilised in the inhibition of the early stages of the viral life cycle. We have demonstrated that conserved surfaces share not only residue identity, but also similar patterns of benzene binding and increased SASA, highlighting the importance of residue conservation in the context of detection of shared binding hotspots. We also provided a detailed view of the β-OG pocket behaviour in different flaviviral species that exhibited a high degree of serotype specificity when examined for pocket opening events.
 
@@ -124,29 +180,120 @@ Furthermore, the ⍺ pocket was mapped across flaviviral serotypes and revealed 
 
 ## Methods
 
-## Benzene mapping of flaviviral rafts
+### Benzene mapping of flaviviral rafts
 
-## Raft modelling
+#### Raft modelling
 
 A raft encompasses a large surface area of the viral envelope and therefore exhibits a distinct curvature in its quaternary structure, which manifests itself in angled contacts between neighbouring E proteins (Figure 1B). In comparison, crystal structures of ectodomain dimers (Modis et al., 2003; Lu et al., 2019; Dai et al., 2016)⁠ are invariably assembled outside the confines of a viral envelope, resulting in a ‘flat’ conformation of the dimeric structure. Such crystal structures are thus unable to fully replicate native interchain contacts present in the spherical particle, highlighting the necessity of using cryo-electron microscopy (cryo-EM) structures to produce a reliable raft assembly. Currently, there are only two published cryo-EM structures of the mature DENV particle at atomic resolution, both of which are of the DENV2 serotype (Zhang et al., 2013a; Renner et al., 2021)⁠. We selected a raft segment from a viral envelope cryo-EM structure solved at 3.6 Å resolution (PDB code: 3J27) and used it as a model for the DENV2 raft. We then created the remaining DENV serotypes (DENV1, 3, and 4) by mutating individual residues in Modeller 9.19 (Sali and Blundell, 1993)⁠, based on the DENV2 raft template. Sequence differences between YFV and DENV were deemed too great to create a reliable model of YFV based on the DENV2 template alone (Figure 3—figure supplement 1B). Instead, we used an existing crystal structure of the YFV ectodomain (PDB code: 6IW4; Lu et al., 2019)⁠ and modelled the missing loops (residues 269–272) with Modeller 9.19. Next, we used homology modelling based on the DENV2 template to create the missing TM regions and M proteins. Finally, the chains were aligned with the cryo-EM-derived DENV raft to reproduce the quaternary arrangement and curvature of a spherical viral particle. The Zika raft structure was taken from the existing cryo-EM Zika virus structure (PDB code: 6CO8) solved at 3.1 Å resolution10⁠.
 
 Protein rafts were embedded within a membrane (see below) and equilibrated during a series of simulations with position restraints of gradually decreasing force constants applied to the stem and TM regions of the proteins. Position restraints on the TM regions were necessary to retain the curvature of the raft. All structures were initially equilibrated for 200 ns with position restraints on the backbone atoms of stem and TM regions (E protein residues: 396–495; M protein residues: 21–72; numbering scheme corresponds to DENV2) using a force constant of 1000 kJ mol–1 nm–2, followed by another 200 ns equilibration with weaker position restraints (Fc = 50 kJ mol–1 nm–2) on the TM region Cα atoms only (E protein residues: 450–495; M protein residues: 39–72; numbering scheme corresponds to DENV2).
 
-## Membrane modelling
+#### Membrane modelling
 
 We used CHARMM-GUI (Sunhwan et al., 2008; Wu et al., 2015)⁠ to embed the DENV2 raft in a membrane containing 1-palmitoyl-2-oleoyl-phosphatidylcholine (POPC), 1-palmitoyl-2-oleoyl-phosphatidylethanolamine (POPE), and 1-palmitoyl-2-oleoyl-phosphatidylserine (POPS) lipids in 6:3:1 ratio, which reflected a simplified membrane composition of flaviviral envelopes expressed in a C6/36 mosquito cell line (Perera et al., 2012; Zhang et al., 2012)⁠. The produced membrane was initially modelled as a flat sheet, which resulted in lateral raft dimers being incorrectly submerged in the bilayer. In order to induce membrane curvature, we simulated the raft-membrane system with position restraints applied on all backbone atoms of the raft. Within ~400 ns of the simulation, the membrane gradually curved and accommodated the shape of the raft (Figure 1—figure supplement 1), with the TM regions transversing the bilayer and the amphipathic stem helices localising between hydrophilic headgroup and hydrophobic tail regions of the membrane (Figure 1B). In total, the membrane was equilibrated for 785 ns of unrestrained simulation time.
 
-## Benzene mapping simulation setup
+#### Benzene mapping simulation setup
 
 The strategy using benzene probes for mapping pockets in membrane-bound proteins was adapted from our previous work (Zuzic et al., 2020)⁠. A massless virtual site was placed at the centre of mass of a benzene molecule, which was used as a point of repulsion between hydrophobic benzene molecules so as to prevent aggregation. Additionally, the same site was used as a point of repulsion between benzene probes and membrane lipids in order to hinder benzene sequestration into the bilayer. Benzene probes were added to a simulation box at 0.6 M concentration (1148 benzene molecules per system). We tested this concentration for signs of protein unfolding or probe aggregation and found no evidence of either process occurring in our simulation systems (Figure 2B). The raft-membrane system containing benzene was solvated in TIP3P water (Jorgensen et al., 1983)⁠ and neutralised with NaCl, to a final salt concentration of 0.15 M.
 
-## Benzene mapping simulation protocol
+#### Benzene mapping simulation protocol
 
 All simulations were performed with the CHARMM36m force field (Huang and MacKerell, 2013)⁠ and in Gromacs 2018.2 simulation software (Abraham et al., 2015)⁠. Initially, systems were minimized using the steepest descent algorithm until forces converged or reached a maximum value of 100 kJ mol–1 nm–1. Temperature was set to 310 K and regulated using a velocity-rescaling thermostat (Bussi et al., 2007)⁠ with a time constant of 0.1 ps and applied on two coupled groups, one containing proteins and lipids, and the other, solute components. The Parrinello-Rahman barostat (Parrinello and Rahman, 1981)⁠ with semi-isotropic coupling and with a time constant of 2 ps was used to maintain a pressure of 1 atm. The compressibility was set to 4.5×10–5 bar–1 for both x/y and z directions. The leapfrog algorithm integration step was set to 2 fs, while the LINCS constraint algorithm (Hess et al., 1997)⁠ was applied to all bonds associated with hydrogen atoms in the system. Computation of long-range electrostatic interactions was performed using the particle mesh Ewald (PME) method (Darden et al., 1993; Essmann et al., 1995)⁠, with a 1.2 nm cutoff for real-space interactions and with the integration of a Coulomb potential-shift modifier. The cutoff value for Van der Waals interactions was set to 1.2 nm, with a force-switch modifier applied at 1.0 nm.
 
 The system was run in the canonical (NVT) ensemble for 1 ns and with strong position restraints (Fc = 1000 kJ mol–1 nm–2) applied in all three dimensions to heavy atoms of both the protein and membrane components of the system. A subsequent 5-ns NPT equilibration involved position restraints on protein heavy atoms only, while the membrane was allowed to relax unrestrained. Finally, a production run was performed for 300 ns, with weak position restraints (Fc = 50 kJ mol–1 nm–2) applied to the TM region Cα atoms of the proteins (E protein residues: 450–495; M protein residues: 39–72; in DENV2 numbering system) in order to retain the curvature in the membrane model. A summary of all simulations and the corresponding number of repeats is listed in Table 1. In total, 14.4 µs of production runs were generated.
 
-## Constant-pH MD simulations on DENV2 soluble E protein dimer
+**Table 1.**
+ Flaviviral envelope raft simulations in presence or absence of benzene in the simulation system.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Solvent*</th>
+      <th>Time / ns</th>
+      <th>Repeats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DENV1-PVP159</td>
+      <td>water</td>
+      <td>300</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DENV1-PVP159</td>
+      <td>0.6 M benzene</td>
+      <td>300</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>DENV2-NGC</td>
+      <td>water</td>
+      <td>300</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DENV2-NGC</td>
+      <td>0.6 M benzene</td>
+      <td>300</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>DENV3-H87</td>
+      <td>water</td>
+      <td>300</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DENV3-H87</td>
+      <td>0.6 M benzene</td>
+      <td>300</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>DENV4-H241</td>
+      <td>water</td>
+      <td>300</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DENV4-H241</td>
+      <td>0.6 M benzene</td>
+      <td>300</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>YFV-17D</td>
+      <td>water</td>
+      <td>300</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>YFV-17D</td>
+      <td>0.6 M benzene</td>
+      <td>300</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>ZIKA-H/PF/2013</td>
+      <td>water</td>
+      <td>300</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ZIKA-H/PF/2013</td>
+      <td>0.6 M benzene</td>
+      <td>300</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Both types of solvent contained charge-neutralising 0.15 M NaCl._
+
+### Constant-pH MD simulations on DENV2 soluble E protein dimer
 
 For constant-pH MD simulations we used a soluble portion of the E protein (sE) in a dimeric form (residues 1–395). The structure of the sE was taken from the DENV2 cryo-EM structure (PDB: 3J27) (Zhang et al., 2013a)⁠. As the E protein was truncated for the purposes of simulation, we capped the C-terminus with an N-methyl amide (NME) group. Residues His27, Asp42, His144, His244, His317, and Glu368 in both chains were selected to titrate. His282, although present in the structure and implicated in pH-dependent conformational change, was excluded from the selection as it is natively interacting with the stem region (not present in this setup) and was therefore in a biologically irrelevant environment. Native disulfide bonds were included in the structure. The sE dimer was placed in an octahedron box and solvated with ~84,000 TIP3P water molecules (Jorgensen et al., 1983)⁠ and neutralising 0.15 M NaCl.
 
@@ -154,18 +301,18 @@ The simulations were performed with the Amber ff99SB force field (Hornak et al.,
 
 Constant-pH simulations were run in quadruplicates, resulting in a total production time of 880 ns.
 
-## Analysis procedures
+### Analysis procedures
 
-## Sequence analysis
+#### Sequence analysis
 
 Flaviviral polyprotein sequences were accessed from GenBank using following accession codes: DENV1 strain PVP159: AEM92304.1; DENV2 strain NGS-C: P14340.2; DENV3 strain H87: P27915.1; DENV4 strain H241: Q58HT7.1; YFV strain 17D: P03314.1; Zika strain H/PF/2013: A0A024B7W1.1. Sequence similarity was determined using the Sequence Identity and Similarity (SIAS) software. Multiple sequence alignment of the E and M proteins was performed using MUSCLE (Edgar, 2004)⁠. Alignment visualisation and generation of the neighbour-joining (NJ) tree was performed using Jalview 2.11.1.4 (Waterhouse et al., 2009)⁠. Conservation assessment and scoring was carried out using the Consurf Server (Ashkenazy et al., 2016)⁠, where a multiple sequence alignment was generated using the HMMER homolog search algorithm in the UNIREF-90 database with an E-value cutoff of 0.0001.
 
-## MD simulations analysis
+#### MD simulations analysis
 
 After removing the position restraints from benzene probes, the system required additional equilibration time during which benzene established interactions with protein surfaces. We therefore excluded the first 50 ns of all production runs from the analysis. Simulation properties, including solvent-accessible surface area (SASA) (Eisenhaber et al., 1995)⁠, secondary structure content (Kabsch and Sander, 1983)⁠, radius of gyration, select residue distances, root-mean-square deviations (RMSDs) and root-mean-square fluctuations (RMSFs), were analysed using Gromacs 2018.2 analysis tools (Abraham et al., 2015)⁠. Contact distances between benzene and residues of interest were calculated using VMD 1.9.3 (Humphrey et al., 1996). In order to avoid counting contacts with the β-OG pocket residues that occur when the probes are outside the binding site, we counted only benzene proximal to at least two oppositely positioned pocket residues. The initial detection of protein pockets was performed with the MDpocket software (Schmidtke et al., 2011)⁠. Correlation of raft pocket densities across serotypes was calculated using the Fit in Map tool in ChimeraX 1.0 (Pettersen et al., 2021)⁠.
 
 Protonation states of all titrated residues were extracted using the chpstats tool implemented in AmberTools21 (Case et al., 2005)⁠. pKa predictions of titratable residues based on a static structure were calculated on the DENV2 E proteins (PDB: 3J27) (Zhang et al., 2013a)⁠ in an asymmetric unit using the Finite difference Poisson-Boltzmann/Debye-Hückel (FD/DH) method (Warwicker, 2004)⁠.
 
-## Statistical analysis
+#### Statistical analysis
 
 All residue-based analyses across serotypes were performed after alignment, ensuring that the residues corresponded to their shared evolutionary origin. All correlation analyses were calculated with a non-parametric Spearman’s rank correlation method. β-OG pocket clustering was performed with a k-means clustering algorithm (k=2) based on the measurements of pocket SASA and the number of contacts established between all the residues lining the pocket. All pairwise significance levels were determined with a Wilcoxon signed-rank test used in comparison of two non-parametric samples. Cluster analysis of the charge cluster residues, applied to all atoms within the group, was based on the gromos algorithm (Daura et al., 1999)⁠ implemented in Gromacs with a specified cutoff value of 0.26 nm. Principal component analysis (PCA) of the charge cluster descriptors – all combinations of intra-cluster distances – was performed on a scaled and centered sample containing all structures across pH values, chains, and constant-pH simulation repeats. Visualisation of the original variable axes used the ggbiplot package in R 3.6.3. Additional data processing, analysis and visualisation were carried out in R 3.6.3.

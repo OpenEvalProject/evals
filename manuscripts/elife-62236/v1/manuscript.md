@@ -36,7 +36,7 @@
 
 ## Abstract
 
-Glucocorticoids are among the most commonly prescribed drugs, but there is no biomarker that can quantify their action. The aim of the study was to identify and validate circulating biomarkers of glucocorticoid action. In a randomized, crossover, single-blind, discovery study, 10 subjects with primary adrenal insufficiency (and no other endocrinopathies) were admitted at the in-patient clinic and studied during physiological glucocorticoid exposure and withdrawal. A randomization plan before the first intervention was used. Besides mild physical and/or mental fatigue and salt craving, no serious adverse events were observed. The transcriptome in peripheral blood mononuclear cells and adipose tissue, plasma miRNAomic, and serum metabolomics were compared between the interventions using integrated multi-omic analysis. We identified a transcriptomic profile derived from two tissues and a multi-omic cluster, both predictive of glucocorticoid exposure. A microRNA (miR-122-5p) that was correlated with genes and metabolites regulated by glucocorticoid exposure was identified (p=0.009) and replicated in independent studies with varying glucocorticoid exposure (0.01 ≤ p≤0.05). We have generated results that construct the basis for successful discovery of biomarker(s) to measure effects of glucocorticoids, allowing strategies to individualize and optimize glucocorticoid therapy, and shedding light on disease etiology related to unphysiological glucocorticoid exposure, such as in cardiovascular disease and obesity. The Swedish Research Council (Grant 2015-02561 and 2019-01112); The Swedish federal government under the LUA/ALF agreement (Grant ALFGBG-719531); The Swedish Endocrinology Association; The Gothenburg Medical Society; Wellcome Trust; The Medical Research Council, UK; The Chief Scientist Office, UK; The Eva Madura’s Foundation; The Research Foundation of Copenhagen University Hospital; and The Danish Rheumatism Association. NCT02152553 .
+Background:Glucocorticoids are among the most commonly prescribed drugs, but there is no biomarker that can quantify their action. The aim of the study was to identify and validate circulating biomarkers of glucocorticoid action.Methods:In a randomized, crossover, single-blind, discovery study, 10 subjects with primary adrenal insufficiency (and no other endocrinopathies) were admitted at the in-patient clinic and studied during physiological glucocorticoid exposure and withdrawal. A randomization plan before the first intervention was used. Besides mild physical and/or mental fatigue and salt craving, no serious adverse events were observed. The transcriptome in peripheral blood mononuclear cells and adipose tissue, plasma miRNAomic, and serum metabolomics were compared between the interventions using integrated multi-omic analysis.Results:We identified a transcriptomic profile derived from two tissues and a multi-omic cluster, both predictive of glucocorticoid exposure. A microRNA (miR-122-5p) that was correlated with genes and metabolites regulated by glucocorticoid exposure was identified (p=0.009) and replicated in independent studies with varying glucocorticoid exposure (0.01 ≤ p≤0.05).Conclusions:We have generated results that construct the basis for successful discovery of biomarker(s) to measure effects of glucocorticoids, allowing strategies to individualize and optimize glucocorticoid therapy, and shedding light on disease etiology related to unphysiological glucocorticoid exposure, such as in cardiovascular disease and obesity.Funding:The Swedish Research Council (Grant 2015-02561 and 2019-01112); The Swedish federal government under the LUA/ALF agreement (Grant ALFGBG-719531); The Swedish Endocrinology Association; The Gothenburg Medical Society; Wellcome Trust; The Medical Research Council, UK; The Chief Scientist Office, UK; The Eva Madura’s Foundation; The Research Foundation of Copenhagen University Hospital; and The Danish Rheumatism Association.Clinical trial number:NCT02152553.
 
 ## Introduction
 
@@ -54,43 +54,366 @@ The aim of this exploratory study was to define multi-omic patterns derived from
 
 ## Results
 
-## Clinical experimental study
+### Clinical experimental study
 
-## Patient characteristics
+#### Patient characteristics
 
 Eleven subjects with well-defined Addison’s disease and no other endocrinopathies were recruited and included in the study between September 2013 and September 2015. One subject discontinued the study after randomization and before the first intervention because of persistent orthostatic hypotension. Ten subjects (four women with three of them post-menopausal) with a median age of 50 years (range, 25–57) and a median disease duration of 23.5 years (range, 1–33) completed all aspects of the study between May 2014 and October 2015. The median daily replacement dose of hydrocortisone (HC) prior to the study was 30 mg (range, 20–30), and 9 out of 10 subjects had treatment with fludrocortisone (mineralocorticoid) at a median daily dose of 0.1 mg (range, 0.1–0.2).
 
-## Clinical and biochemical outcomes
+#### Clinical and biochemical outcomes
 
 The main time points for sample collection in each intervention were at 9 AM on the first intervention day (‘before start’) and at 7 AM on the second intervention day (‘morning’) (Figure 1B). The subjects’ last ordinary oral HC dose was administered the day before admission to the study unit.
 
 Infusion of HC mixed with isotonic saline (‘GC exposure’) had no effect on systolic and diastolic blood pressure, body weight, serum sodium and potassium, or plasma glucose concentrations compared to the same amount of isotonic saline infusion alone (‘GC withdrawal’) (Table 1). HC and saline infusion achieved the intended differences in GC exposure. Both median morning serum cortisol and cortisone during the HC infusion were within the physiological range (298 and 81.2 nmol/L, respectively) and markedly lower during the saline infusion (44.4 and 42 nmol/L, respectively, both p<0.001) (Figure 2). Serum cortisol and cortisone were detected in all subjects’ morning samples during the saline infusion, but both overnight (between 12 AM and 7 AM) urinary cortisol and cortisone excretion were below the limit of detection. Both HC and saline infusions were well-tolerated, and no serious adverse events were observed. Three subjects reported mild physical and/or mental fatigue, and one subject reported mild salt craving during the GC withdrawal period.
 
+**Table 1.**
+ Clinical and biochemical tests assessed or collected immediately before each intervention and at 7 AM on the second intervention day during both interventions (n = 10).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">9 AM before start of intervention (first intervention day)</th>
+      <th colspan="2">7 AM (second intervention day)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Median (IQR)</th>
+      <th>p-Value</th>
+      <th>Median (IQR)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">S-cortisol (nmol/L)</td>
+      <td>HC</td>
+      <td>43.2 (38.0–55.1)</td>
+      <td>0.36</td>
+      <td>298 (228–359)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>46.7 (43.1–61.7)</td>
+      <td></td>
+      <td>44.4 (36.8–52.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Overnight U-free cortisol (µg/7 hr)*,†</td>
+      <td>HC</td>
+      <td>–</td>
+      <td></td>
+      <td>678 (459–814)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>–</td>
+      <td></td>
+      <td>&lt;0.01‡</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">S-cortisone (nmol/L)</td>
+      <td>HC</td>
+      <td>40.7 (29.5–49.2)</td>
+      <td>0.76</td>
+      <td>81.2 (60.5–94.9)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>42.1 (29.7–50.4)</td>
+      <td></td>
+      <td>42.0 (28.9–47.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Overnight U-free cortisone (µg/7 hr)*,†</td>
+      <td>HC</td>
+      <td>–</td>
+      <td></td>
+      <td>136 (106–151)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>–</td>
+      <td></td>
+      <td>&lt;0.01‡</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">SBP (mmHg)</td>
+      <td>HC</td>
+      <td>122 (111–134)</td>
+      <td>0.88</td>
+      <td>123 (107–139)</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>127 (112–131)</td>
+      <td></td>
+      <td>124 (101–137)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">DBP (mmHg)</td>
+      <td>HC</td>
+      <td>76 (63–83)</td>
+      <td>0.88</td>
+      <td>69 (59–76)</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>72 (67–80)</td>
+      <td></td>
+      <td>65 (60–70)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">S-sodium (mmol/L)</td>
+      <td>HC</td>
+      <td>141 (139–142)</td>
+      <td>0.85</td>
+      <td>140 (138–141)</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>141 (138–142)</td>
+      <td></td>
+      <td>140 (138–141)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">S-potassium (mmol/L)</td>
+      <td>HC</td>
+      <td>4.4 (4.3–4.7)</td>
+      <td>0.27</td>
+      <td>4.4 (4.3–4.8)</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>4.2 (4.0–4.5)</td>
+      <td></td>
+      <td>4.4 (4.3–4.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">P-glucose (mmol/L)</td>
+      <td>HC</td>
+      <td>5.0 (4.5–5.3)</td>
+      <td>0.79</td>
+      <td>5.6 (5.2–5.8)</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>5.0 (4.6–5.1)</td>
+      <td></td>
+      <td>5.2 (5.2–5.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Body weight (kg)</td>
+      <td>HC</td>
+      <td>72.2 (69.6–77.3)</td>
+      <td>0.53</td>
+      <td>72.8 (69.3–77.7)</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Saline</td>
+      <td>73.5 (70.5–79.5)</td>
+      <td></td>
+      <td>74.0 (70.5–79.2)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Overnight U-free cortisol and cortisone were collected from midnight to morning (12 AM to 7 AM) during physiological GC exposure (HC infusion) and GC withdrawal (saline infusion).†One of the 10 subjects was not included in the analysis because of a problem during sample collection.‡Below the limit of detection.DBP: diastolic blood pressure; GC: glucocorticoid; HC: hydrocortisone; IQR: interquartile range; P: plasma; S: serum; SBP: systolic blood pressure; U: urinary._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig2-v1.jpg)
 
 **Figure 2.:** Individual data and changes for morning (7 AM) serum cortisol and cortisone (A, B), and overnight (12 AM to 7 AM) urinary-free (U-free) cortisol and cortisone (C, D) from both interventions. Boxes represent interquartile range (IQR); whiskers mark spread of points within 1.5 times IQR; violins demonstrate distribution of results with the maximum width representing the highest density within each violin. Difference of median values between interventions is presented with p-values. HC: hydrocortisone.
 
-## Differentially regulated ‘omic elements associated with response to GCs
+### Differentially regulated ‘omic elements associated with response to GCs
 
 Similarity network fusion (SNF) was used to demonstrate overall similarity between subjects across and between ‘omic layers, prior to analysis (Appendix 1 and Appendix 1—figure 1). Differential gene expression was associated with GC response in both PBMC and adipose tissue (Appendix 1). Differential expression of metabolites and miRNA was identified in blood in relation to GC response (Appendix 1). Differentially expressed ‘omic elements (DEOEs) are presented in Table 2 and Supplementary file 1a–d. All DEOEs were used for integrated analysis, and false discovery rate (FDR)-corrected DEOEs were used for all other analyses (Table 2). DEOEs from the PBMC and adipose tissue transcriptomes were shown to have limited overlap in response to GC but were enriched for shared pathways, revealing an overlap that indicated shared mechanism in relation to GC exposure (Appendix 2 and Appendix 2—figure 3).
 
-We assessed the impact of differential expression on the entire interactome to aid in the identification of similar GC-related function. Interactome network models were generated using differentially expressed genes (DEGs) from both the PBMC transcriptome and the adipose tissue transcriptome. These were shown to be consistent with one another (Appendix 2 and  Appendix 2—figures 1 and 2) despite the limited overlap of DEGs. GC-responsive genes were shown to have higher connectivity in the human interactome than expected by chance, demonstrated using 10,000 permutations of this network model (Appendix 2).
+**Table 2.**
+ Summary of differentially expressed ‘omic elements in association with response to glucocorticoids.
 
-## Integration of PBMC and adipose tissue transcriptomes with plasma miRNAomic and serum metabolomic data
+
+<table>
+  <thead>
+    <tr>
+      <th>‘Omic data set</th>
+      <th>Total number of ‘omic elements</th>
+      <th>Number of significant elements (p&lt;0.05)</th>
+      <th>Number of significant elements (FDR &lt; 0.05)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PBMC transcriptome</td>
+      <td>28,869</td>
+      <td>4426</td>
+      <td>3997</td>
+    </tr>
+    <tr>
+      <td>Adipose tissue transcriptome</td>
+      <td>28,869</td>
+      <td>3520</td>
+      <td>3115</td>
+    </tr>
+    <tr>
+      <td>Plasma miRNAome</td>
+      <td>252</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Serum metabolome</td>
+      <td>164</td>
+      <td>38</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+
+_FDR: false discovery rate; miRNA: microRNA; PBMC: peripheral blood mononuclear cell._
+
+We assessed the impact of differential expression on the entire interactome to aid in the identification of similar GC-related function. Interactome network models were generated using differentially expressed genes (DEGs) from both the PBMC transcriptome and the adipose tissue transcriptome. These were shown to be consistent with one another (Appendix 2 and Appendix 2—figures 1 and 2) despite the limited overlap of DEGs. GC-responsive genes were shown to have higher connectivity in the human interactome than expected by chance, demonstrated using 10,000 permutations of this network model (Appendix 2).
+
+### Integration of PBMC and adipose tissue transcriptomes with plasma miRNAomic and serum metabolomic data
 
 Hypernetworks are network structures where edges are not restricted to defining a relationship between two nodes but may be shared between many nodes. As such, these structures can be used to describe complex relationships that link multiple elements. Hypernetworks also allow for the same pair of nodes to be connected by multiple edges. This means that relationships between nodes can be ranked by the number of edges shared between them. Hypernetworks allow for the summary of correlation matrices, compressing the high-dimensional relationships between data points (transcripts/miRNA/metabolites) into a single metric of similarity. Hypernetworks facilitate integration of ‘omic data and can be used to define strongly associated elements. Elements with large numbers of shared edges are more similar and likely to be of functional relevance; clustering allows refinement of large ‘omic data sets to highly associated elements (Figure 3A, B). Hypernetworks are robust to random error and act to filter out false-positive correlations as these will not have a uniform pattern of correlation across all ‘omic elements.
 
-To assess similarity, we defined the correlation coefficient between each differentially expressed ‘omic measurement and assessed as 'present' in the network model those correlations with an r-value >| 1.5 | standard deviations (sd). Edges were defined as PBMC transcripts with shared correlations, for example, two PBMC transcripts that are both correlated with the same three metabolites are connected by three edges. We summarized the shared correlations as a measure of similarity between each pair of GC-responsive PBMC transcripts, counting correlations across the other ‘omic data sets (Figure 3—figure supplement 1). The greatest number of correlations shared was between PBMC and adipose tissue transcriptome (525 genes, Figure 3C), reinforcing the observation that, while the gene-level overlap of differential expression was limited, common pathways are active in both tissues related to GC action, which involve similar networks of co-expressed genes. The rank order of the number of correlations shared with the GC-responsive PBMC transcriptome was adipose tissue transcriptome > plasma miRNAome > serum metabolome, and this was confirmed both by comparison of the heat maps (Figure 3—figure supplement 1) and by a Venn diagram (Figure 3D). The Venn diagram also reveals a strong correspondence between the serum metabolome and both PBMC and adipose tissue transcriptomes.
+![Figure 3.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig3-v1.jpg)
 
-## Identification and validation of a shared transcriptomic profile in both PBMCs and adipose tissue predicting GC response
+**Figure 3.:** (A) Hypernetworks differ from traditional networks in that edges can connect more than two nodes. Nodes are represented by black circles, edges by colored lines and surfaces. This demonstration shows how one edge can connect (i) two nodes as a one-dimensional line, (ii) three nodes as a two-dimensional surface, and (iii) four nodes as a three-dimensional structure. Hypernetworks of ‘omic data can have edges shared between hundreds of nodes. (B) Hypernetwork diagram illustrating how a pair of nodes (a–h) can be connected by more than one edge. In this example, nodes e and d share two edges, as do b and d. (C) A hypernetwork plotted as a heat map can be used to investigate clustering of blood peripheral blood mononuclear cell (PBMC) transcripts, based on correlation to, for example, adipose tissue transcriptome. A central cluster, defined using hierarchical clustering, groups PBMC transcripts based on high numbers of shared edges (red square, n = 965). This approach was applied to define groups of PBMC transcripts with similar profiles when correlated against each other ‘omic layer. (D) Gene probe level overlaps between PBMC transcriptome clusters identified by hypernetwork shared with the other ‘omic data sets. PBMC transcriptomic changes are correlated with changes in miRNAome, adipose tissue transcriptome, and metabolome (gas chromatography-mass spectrometry and liquid chromatography-mass spectrometry overlaps combined); overlaps are common PBMC transcripts with correlation to the ‘omic data sets. Values in brackets represent the size of PBMC transcriptomic clusters drawn from all differentially expressed PBMC transcripts (n = 4426, p<0.05). Data demonstrates a fundamental relationship in glucocorticoid response between PBMC and adipose tissue (965 genes) and reinforces the presence of common pathways in these two independent tissues.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The analyses were performed to quantify groups of highly correlated ‘omic data sets. Hypernetwork heat maps show clusters of correlated peripheral blood mononuclear cell (PBMC) transcripts (total 4426, 3.9 × 10−8 < p<0.05) with differential expression (glucocorticoid [GC] exposure vs. GC withdrawal) shared with (A) adipose tissue transcriptome (red square, n = 965), (B) plasma miRNA (red square, n = 768), (C) serum metabolome measured gas chromatography-mass spectrometry (red square, n = 915), and (D) serum metabolome measured by liquid chromatography-mass spectrometry (red square, n = 312). Increasing numbers of shared correlations appear as a scale from blue to white as shown in the keys.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Peripheral blood mononuclear cell (PBMC) transcriptome probe-level log-intensity distribution. (B) Adipose tissue transcriptome probe-level log-intensity distribution. Density distributions represent intensity per probe, normalized to proportion of overall measurements at each intensity. (C) PBMC transcriptome per-sample log-intensity distribution (D) Adipose tissue transcriptome per-sample log-intensity distribution. Boxplots represent distribution of intensity per sample; boxes represent interquartile range, with median values and whiskers represent the range. All figures were generated in R from measurements generated by the R package ‘oligo’.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Distribution before and following normalization of (A) gas chromatography-mass spectrometry (GC-MS) samples, (B) GC-MS metabolites, (C) liquid chromatography-mass spectrometry (LC-MS) samples, and (D) LC-MS metabolites. For all figures, distribution of concentration values is provided as boxplots and density distributions for individual samples and metabolites. Boxes represent interquartile range with median values, and whiskers represent the range; outliers are denoted as individual points. Density distributions represent overall distribution of concentrations combined across samples or metabolites. All figures were produced using R package ‘MetaboanalystR’.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Hypernetworks were generated, dichotomizing the data using a range of cut-off r-values, from 0.1 to 0.9 by steps of 0.05, in order to generate the hypernetwork incidence matrix $M$. Overall chi-squared distance was calculated for each hypernetwork as the sum of chi-squared distance across the hypernetwork matrix $sM$. A general additive model was used to fit a curve through these data using ggplot2. This approach determines how edges are assigned between pairs of ‘omic elements and, therefore, the number of shared edges represented by the hypernetwork matrix $sM$. Chi-squared distance represents the signal window present in a hypernetwork by measuring the spread of values (numbers of shared edges). The greatest spread in values here was found when dichotomizing around an r-value of 0.5. Above and below this threshold, the range of values in the hypernetwork was reduced, limiting the ability to refine a set of interacting ‘omic elements supported by most edges.
+
+To assess similarity, we defined the correlation coefficient between each differentially expressed ‘omic measurement and assessed as 'present' in the network model those correlations with an r-value $>|1.5|$ standard deviations (sd). Edges were defined as PBMC transcripts with shared correlations, for example, two PBMC transcripts that are both correlated with the same three metabolites are connected by three edges. We summarized the shared correlations as a measure of similarity between each pair of GC-responsive PBMC transcripts, counting correlations across the other ‘omic data sets (Figure 3—figure supplement 1). The greatest number of correlations shared was between PBMC and adipose tissue transcriptome (525 genes, Figure 3C), reinforcing the observation that, while the gene-level overlap of differential expression was limited, common pathways are active in both tissues related to GC action, which involve similar networks of co-expressed genes. The rank order of the number of correlations shared with the GC-responsive PBMC transcriptome was adipose tissue transcriptome > plasma miRNAome > serum metabolome, and this was confirmed both by comparison of the heat maps (Figure 3—figure supplement 1) and by a Venn diagram (Figure 3D). The Venn diagram also reveals a strong correspondence between the serum metabolome and both PBMC and adipose tissue transcriptomes.
+
+### Identification and validation of a shared transcriptomic profile in both PBMCs and adipose tissue predicting GC response
 
 Robustness testing was performed in which hypernetworks were generated to model dissimilarity based on the absence of correlations with PBMC transcripts. Any genes that were highlighted by these hypernetworks were removed from the downstream predictive analysis. Using this approach, we defined 271 of 965 PBMC transcripts with maximum predictive potential. This set of genes perfectly classified the HC- and saline-treated groups using partial least squares discriminant analysis (PLS-DA) (Figure 4A). We identified variables of importance using Random Forest and modeled the background experimental noise using permutation analysis (BORUTA) (Figure 4B). This identified a set of 59 genes as variables of importance with fold changes in the same directions in both transcriptomic data sets that perfectly classified HC from saline treatment (Supplementary file 1e). Nine of these genes were significantly differentially expressed in both PBMC and adipose tissue transcriptomes (Figure 4C), and, of these nine genes, six were associated with GC response via gene ontology (IL18RAP, JAK2, MTSS1, RIN2, KIF1B, and BCL9L) (Figure 4D). The gene set (n = 59) that we identified, which classified both PBMC and adipose tissue transcriptomes in relation to GC exposure, was validated (area under the curve [AUC] 0.70–0.96) by further testing in five other previous studies of GC action by other research groups in cellular models (Table 3). Further robustness of the random forest observations was provided by demonstrating that the minimal depth at which the variables of importance became active in prediction was small (Figure 4—figure supplement 1).
 
-## Integration of circulating ‘omic data sets leads to miRNA and metabolite markers of GC action
+![Figure 4.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig4-v1.jpg)
+
+**Figure 4.:** These analyses were performed to depict the common predictive genes in PBMCs and adipose tissue. (A) Partial least squares discriminant analysis (PLSDA) showing complete separation of hydrocortisone (HC) infusion (GC exposure, blue points) from saline infusion (GC withdrawal, orange points) using 271 of 965 PBMC transcripts confirmed as robust in the hypernetwork by analysis of dissimilarity. X-variates 1 and 2: PLSDA components; expl. var: explained variance. (B) BORUTA feature selection identifies variables (genes) of importance in classification using a Random Forest approach to model experimental background noise (green: confirmed classification; yellow: tentative classification: red: rejected classification; blue: ‘shadow’ variable modeling experimental noise). Of 271 transcripts initially used, 59 were identified as important (confirmed [green] or tentative [yellow]) in separating GC exposure from GC withdrawal, as well as having the same direction fold change in both PBMC and adipose tissue transcriptomic data sets. (C) Predictive genes that are significantly differentially expressed between GC exposure and GC withdrawal in both PBMC and adipose tissue transcriptomes and display fold change in the same direction in both tissues (n = 9). (D) Association of predictive genes (six out of nine) with GC response through gene ontology. Data demonstrates the presence of a robust transcriptomic profile predicting GC response in two independent tissues.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Distribution of minimal depth among trees from random forest generated in Figure 4B. Minimal depth equals the depth of the node closest to the root, which is capable of splitting participants into groups. Minimal depth for variables in this tree is very low as all variables are significantly different between groups at an uncorrected p-value<0.05. Figure generated using R package ‘randomForestExplainer’.
+
+**Table 3.**
+ Validation of the predictive genes from the current exploratory study against previous studies examining GC response in cellular systems.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study title</th>
+      <th>GEO #</th>
+      <th>PMID</th>
+      <th>N</th>
+      <th>AUC (95% CI)</th>
+      <th>OOB* AUC†</th>
+      <th>OOB* error rate‡ (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dexamethasone effect on epidermal keratinocytes in vitro</td>
+      <td>GSE26487</td>
+      <td>17095510 (Stojadinovic et al., 2007)</td>
+      <td>20</td>
+      <td>0.70 (0.51–0.89)</td>
+      <td>0.80</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Dexamethasone effect on GC-resistant and -sensitive lymphoblastic leukemia cell lines</td>
+      <td>GSE22152</td>
+      <td>21092265 (Carlet et al., 2010)</td>
+      <td>24</td>
+      <td>0.71 (0.52–0.90)</td>
+      <td>0.78</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>In vivo GC effect on non-leukemic peripheral blood lymphocytes</td>
+      <td>GSE22779</td>
+      <td>21092265 (Carlet et al., 2010)</td>
+      <td>16</td>
+      <td>0.88 (0.63–1.0)</td>
+      <td>0.96</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Osteosarcoma cell line response to activation of specific GC receptor alpha isoforms</td>
+      <td>GSE6711</td>
+      <td>17682054 (Lu et al., 2007) 22174376 (Jewell et al., 2012)</td>
+      <td>60</td>
+      <td>0.96 (0.89–1.0)</td>
+      <td>0.99</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>GC effect on lens epithelial cells</td>
+      <td>GSE3040</td>
+      <td>16319822 (Gupta et al., 2005)</td>
+      <td>12</td>
+      <td>0.83 (0.63–1.0)</td>
+      <td>0.72</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+
+_*OOB data, the bootstrapping approach of Random Forest, ensures that every tree is built using ~63% of the available data, leaving ~ 37% that can be used for a validation test.†AUC up to 0.96 demonstrates a high probability of correctly classifying a randomly selected sample from each study.‡OOB error rate = prediction error using the OOB validation data.The gene set that classified both PBMC and adipose tissue transcriptomes in relation to GC exposure with fold change in the same direction (see Figure 4B – 59 genes) was validated by further testing in five other publicly available studies of GC action in cellular systems.AUC: area under the curve of the receiver operating characteristic; CI: confidence interval; GC: glucocorticoid; GEO: Gene Expression Omnibus; GEO #: study number deposited with GEO; N: study number size; OOB: out-of-bag; PBMC: peripheral blood mononuclear cell; PMID: PubMed ID number of the manuscript describing the data._
+
+### Integration of circulating ‘omic data sets leads to miRNA and metabolite markers of GC action
 
 We further examined interactions between the circulating ‘omics data associated with GC exposure (Figure 3D). All of the circulating ‘omics data was combined to form a correlation matrix and hierarchical clustering used to identify ‘omic data points with similar correlation (Figure 5—figure supplement 1). Eleven clusters including transcriptomic, miRNAomic, and metabolomic data were identified, and these clusters were shown to have enrichment within the interactome network model (Supplementary file 1f and Appendix 2).
 
 We then quantified the number of correlations between all the circulating ‘omic data associated with GC exposure (n = 336) using a hypernetwork. This approach was used to define a group of highly connected multi-omic elements with a relationship to GC exposure (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig5-v1.jpg)
+
+**Figure 5.:** These analyses were performed to lead to putative biomarkers of GC action. (A) Hypernetwork summary heat map of shared correlations between all circulating ‘omic elements (peripheral blood mononuclear cell transcriptome, plasma microRNA [miRNA], serum metabolome; n = 336) with differential expression between GC exposure and GC withdrawal. (B) Network representation of central cluster (red square in A [n = 139], of which 120 map to genes/miRNA/metabolites). Blue circles: genes with differential expression; red circle: differentially expressed metabolites; green: differentially expressed miRNA. Red box highlights DCK, one of the nine genes identified as a classifier of GC response (see Figure 4C). (C) Module decomposition of the hypernetwork. Genes modules (hexagons representing multiple highly connected genes) named by the most central gene in each module. miR-122-5p is present in the core of two modules (shown); color of modules represents centrality hierarchy: red: most central in the network; green: least central in the network.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62236/elife-62236-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Along the diagonal 11 clusters including peripheral blood mononuclear cell transcriptomic, miRNAomic and metabolomic data were identified (depicted in squares with their numbers). Color scale represents correlation coefficient. .
 
 A hypernetwork model of the core group of 139 highly connected elements was generated (Figure 5B). DCK was the only gene shared with the GC-dependent adipose tissue transcriptome that also had predictive value (highlighted with a red square in Figure 5B). Deletion of the DCK gene region has been shown to be associated with increased sensitivity to GCs (Malani et al., 2017), an observation in alignment with the reduction in expression we found in both PBMC and adipose tissue transcriptomes in association with GC exposure (Figure 4C).
 
@@ -102,7 +425,7 @@ Targeted replication of the plasma miR-122-5p fold change from the experimental 
 
 **Figure 6.:** Targeted replication of plasma miR-122-5p fold change from the current study population between subjects with Addison’s disease during GC exposure and GC withdrawal showed a significant down-regulation of miR-122-5p expression with increased GC exposure (p=0.009) conducted using an independent RNA separation procedure in the same samples.
 
-## Replication of miRNA findings in independent study groups
+### Replication of miRNA findings in independent study groups
 
 Based on (i) the functional association of a circulating miRNA with gene expression and metabolomics, and (ii) the correlation between the PBMC transcriptome and plasma miRNAome (Figure 3D), a targeted replication of the plasma miRNA findings was conducted using an independent RNA separation procedure. Twelve miRNAs were re-analyzed in the current study and in three other independent studies including subjects with different GC exposures: (i) in 60 subjects with rheumatoid arthritis with and without tertiary adrenal insufficiency after a short-term stop in their GC treatment (low vs. physiological GC exposure, respectively) (Borresen et al., 2017); (ii) in 20 subjects with Addison’s disease receiving HC replacement therapy and in 20 matched healthy control subjects (low vs. physiological GC exposure, respectively) (Bergthorsdottir et al., 2017); and (iii) acute low, medium, and excessive GC exposure in 20 healthy subjects (Stimson et al., 2017).
 
@@ -136,13 +459,254 @@ In this clinical biomarker discovery study, we identified genes, miRNA, and meta
 
 ## Materials and methods
 
-## Experimental study design
+**Key resources table**
 
-## Study design
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GeneChip WT PLUS Reagent Kit</td>
+      <td>Affymetrix Inc</td>
+      <td>Other</td>
+      <td>P/N 703174 Rev. 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Gene 1.0 ST array</td>
+      <td>Affymetrix Inc</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Gene 1.1 ST array</td>
+      <td>Affymetrix Inc</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Gene 2.0 ST array</td>
+      <td>Affymetrix Inc</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRCURY LNA Universal RT microRNA PCR, Polyadenylation, and cDNA Synthesis Kit</td>
+      <td>Exiqon</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRCURY RNA Isolation Kit-Biofluids</td>
+      <td>Exiqon</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Solu-Cortef</td>
+      <td>Pfizer Inc</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Agilent Masshunter Profinder</td>
+      <td>Agilent Technologies, Inc</td>
+      <td>Other</td>
+      <td>Version B.08.00</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rstudio</td>
+      <td>Rstudio</td>
+      <td>RRID:SCR_000432</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaboAnalystR</td>
+      <td>–</td>
+      <td>RRID:SCR_016723</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Moduland algorithm</td>
+      <td>–</td>
+      <td>https://www.linkgroup.hu/docs/ModuLand-ESM1-v5.pdf</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>Cytoscape</td>
+      <td>RRID:SCR_003032</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Qlucore</td>
+      <td>Qlucore Omics Explorer</td>
+      <td>https://www.qlucore.com/bioinformatics</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Robust Multi-Array Average algorithm</td>
+      <td>–</td>
+      <td>http://www.molmine.com</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChromaTOF</td>
+      <td>LECO</td>
+      <td>https://www.leco.com</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2016a</td>
+      <td>Mathworks</td>
+      <td>https://www.mathworks.com</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Roche LC software</td>
+      <td>Roche Molecular Systems, Inc</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NormFinder</td>
+      <td>Aarhus University Hospital, Denmark</td>
+      <td>RRID:SCR_003387</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIST MS 2.0 software</td>
+      <td>NIST</td>
+      <td>https://chemdata.nist.gov</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LightCycler 480 Real-Time PCR System</td>
+      <td>Roche Molecular Systems, Inc</td>
+      <td>RRID:SCR_020502</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agilent 1290 Infinity UHPLC-system</td>
+      <td>Agilent Technologies, Inc</td>
+      <td>https://www.agilent.com</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agilent 2100 Bioanalyzer system</td>
+      <td>Agilent Technologies, Inc</td>
+      <td>RRID:SCR_018043</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agilent 6550 iFunnel Q-TOF LC/MS</td>
+      <td>Agilent Technologies, Inc</td>
+      <td>RRID:SCR_019433</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ENCODE</td>
+      <td>Stanford University</td>
+      <td>RRID:SCR_015482</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UCSC Genome Browser</td>
+      <td>UCSC</td>
+      <td>RRID:SCR_005780</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TarBase</td>
+      <td>DIANA Tools</td>
+      <td>RRID:SCR_010841</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>miRecords</td>
+      <td>Biolead.org</td>
+      <td>RRID:SCR_013021</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TargetScan</td>
+      <td>Whitehead Institute for Biomedical Research</td>
+      <td>RRID:SCR_010845</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BioGRID</td>
+      <td>TyersLab.com</td>
+      <td>RRID:SCR_007393</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ingenuity Pathway Analysis</td>
+      <td>Qiagen</td>
+      <td>RRID:SCR_008653</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental study design
+
+#### Study design
 
 The study was a prospective, single-center, single-blind, randomized, two-period/crossover clinical trial.
 
-## Study subjects
+#### Study subjects
 
 Men and women with Addison’s disease for >12 months on stable cortisol replacement (with HC 15–30 mg/day) for ≥3 months followed at the Center for Adrenal diseases in the Out-patient Clinic at the Department of Endocrinology-Diabetes-Metabolism, Sahlgrenska University Hospital (tertiary referral hospital), Gothenburg, Sweden, were eligible for inclusion. Other inclusion criteria were age 20–60 years, body mass index 20–30 kg/m2, and ability to comply with the protocol procedures. Exclusion criteria were GC replacement therapy for indication other than Addison’s disease, any treatment with sex hormones including contraceptive drugs, treatment with levothyroxine, renal or hepatic failure, significant and symptomatic cardiovascular disease, diabetes mellitus, current infectious disease with fever, and pregnancy or breastfeeding. Recruitment was stopped when all eligible subjects had been asked to participate.
 
@@ -150,31 +714,31 @@ Power calculation was not performed because of the exploratory nature of the stu
 
 The study was approved by the Ethics Review Board of the University of Gothenburg, Sweden (permit no. 374-13, 8 August 2013) and conducted in accordance with the Declaration of Helsinki. Written informed consent was obtained from all subjects before participation. The study was registered at ClinicalTrials.gov with identifier NCT02152553.
 
-## Study treatment
+#### Study treatment
 
 HC infusion was prepared by adding 0.4 mL of Solu-Cortef 50 mg/mL to 999.6 mL 0.9% saline, which resulted in 1 mg HC per 50 mL intravenous infusion. HC infusion was adjusted in accordance with previous observations in healthy males (Kerrigan et al., 1993) and interventions in both sexes (Løvås and Husebye, 2007; Figure 1B). The aim was to achieve a near-physiological circadian cortisol curve with early morning rise in serum cortisol that would peak at 7 AM and trough concentrations at midnight. In the GC-withdrawal intervention, 0.9% saline infusion alone was administered using the same volume as during the HC infusion. Thus, a person weighing 75 kg received 2 L of intravenous infusion over 22 hr during each intervention.
 
-## Interventions
+#### Interventions
 
 All subjects were admitted after an overnight fast to the in-patient Endocrinology Department at the Sahlgrenska University Hospital at 8 AM (first intervention day) and were discharged at 12 PM the following day (second day). Subjects were randomized using a free randomization plan (generated at http://www.randomization.com/ on 27 April 2014) before the first intervention to receive either HC infusion or only saline infusion in a single-blind, crossover manner at least 2 weeks apart (Figure 1B). The researcher responsible for the clinical study generated the randomization plan, enrolled the study subjects, and assigned participants to interventions. Female subjects (when fertile) were studied during the early follicular phase (days 5–10) of their regular cycle under both interventions. Subjects were told not to take their ordinary mineralocorticoid dose on the day before each intervention but to take their ordinary HC dose. Subjects received standard meals at fixed times during both interventions. Their consumption of coffee or tea was recorded during the first intervention in order to consume the same amount and at the same time points during the second intervention.
 
 During each intervention, the subjects’ blood pressure, body temperature, and weight were monitored. Because of the study design and the variations in circadian rhythm, blood sampling was collected at exactly the same time before the start of intervention, at midnight (12 AM), and in the morning of the second intervention day (7 AM). Urine was collected between midnight and morning (overnight), and abdominal subcutaneous fat was collected in the morning of the second intervention day immediately after blood and urine sampling. Adipose tissue was collected after local injection with lidocaine under the umbilicus on the right side of the abdomen during saline infusion and on the left side during HC infusion. The study was unblinded for each study subject after the completion of all aspects of the study (the second intervention).
 
-## Replication studies
+### Replication studies
 
-## Baseline samples in subjects treated with prednisolone for rheumatoid arthritis
+#### Baseline samples in subjects treated with prednisolone for rheumatoid arthritis
 
 This was a cross-sectional clinical study of prednisolone-induced adrenal insufficiency undertaken at the Department of Medical Endocrinology and Metabolism, at University Hospital, Rigshospitalet, Copenhagen, Denmark, between 2012 and 2018 (Borresen et al., 2017). In the current replication analysis, 60 subjects were included. All subjects had rheumatoid arthritis, received long-term prednisolone treatment (minimum 6 months), and treated with a current prednisolone dose of 5 mg/day. Of the 60 subjects, 23 had an insufficient response to the Synacthen test (GC-induced adrenal insufficiency, AI group) and 37 had a normal response (normal group). The samples included in the replication analysis were collected in the morning after an approximately 48 hr pause of prednisolone dosing (before the Synacthen test) and after overnight fasting. Plasma miRNA analysis of frozen samples was performed at Exiqon Services, Denmark.
 
-## Case–control study in subjects with or without Addison’s disease
+#### Case–control study in subjects with or without Addison’s disease
 
 This was an observational, cross-sectional, single-center, case–control study undertaken in our unit in Gothenburg, Sweden, between 2005 and 2009 (Bergthorsdottir et al., 2017). In the current replication analysis, the subgroup of 20 subjects with Addison’s disease under daily replacement therapy with oral HC ≥ 30 mg (AD group) and their 20 healthy control subjects with no GC therapy matched for age and gender (control group) were included. The samples included in the replication analysis were collected in the morning between 8 AM and 10 AM after an overnight fast, and for the cases after morning administration of their oral HC, which means a very low cortisol exposure during the night before sample collection. Plasma miRNA analysis of frozen samples was performed at Exiqon Services, Denmark.
 
-## Randomized, crossover study in healthy subjects
+#### Randomized, crossover study in healthy subjects
 
 This was a randomized, double-blind study in 20 lean healthy male volunteers undertaken at the Edinburgh Clinical Research Facility between July 2010 and April 2012. The full protocol has been published previously (Stimson et al., 2017). Volunteers were randomized to receive either a low- or medium-dose insulin infusion (10 subjects in each group) and attended on three occasions after overnight fasting. Subjects received metyrapone (to inhibit adrenal cortisol secretion) with and without HC infusion (over 6.5 hr) in order to produce low, medium, or excessive GC levels (Low/Med/ExcessGC during high insulin and low insulin cohorts, respectively). The samples included in the replication analysis were collected in the afternoon at the end of each intervention (approximately 6.5 hr after start) on three occasions (low, moderate, or excessive high GC levels). Plasma miRNA analysis of frozen samples was performed at Exiqon Services, Denmark.
 
-## Generation and preparation of ‘omic data
+### Generation and preparation of ‘omic data
 
 Plasma cortisol and cortisone were analyzed using liquid chromatography-mass spectrometry (LC-MS), and urinary-free cortisol and cortisone were analyzed using gas chromatography-mass spectrometry (GC-MS) at the Mass Spectrometry Core Laboratory, Centre for Cardiovascular Science, University of Edinburgh, Edinburgh, UK. PBMCs were isolated on-site from whole blood using a gradient-based separation procedure and Ficoll-Paque PREMIUM (GE Healthcare).
 
@@ -186,11 +750,11 @@ Metabolic profiling of serum by GC-MS and LC-MS was performed at the Swedish Met
 
 Preprocessing of ‘omics data sets was carried out in the following ways. PBMC and adipose tissue transcriptomes were normalized using robust multichip average (RMA) via the R package oligo (Carvalho and Irizarry, 2010), which corrects for background variation, quantile normalizes, and summarizes features to gene-probe set level (Figure 3—figure supplement 2). GC-MS and LC-MS metabolomic data sets were analyzed using the R package MetaboanalystR (Chong and Xia, 2018), which filters variables based on ranked interquartile range, normalizes metabolites to sample median, and log transforms the resultant intensities (Figure 3—figure supplement 3). Qlucore Omics Explorer (version 3.3, Lund, Sweden) was used to scale and mean center miRome data. How all these analyses were performed is described in detail in Appendix 3.
 
-## Data analysis of differential gene expression
+### Data analysis of differential gene expression
 
 Principal component analysis (PCA) was performed to provide further quality control and define the relationship of variance between samples, allowing structure within the data set to be defined (Qlucore Omics Explorer 3.3). Quality control of transcriptomic data was performed using PCA with cross-validation and data consistency was confirmed. No outliers were identified. Differential gene expression was determined by a paired t-test comparing the two interventions. Network analysis of DEGs was performed using Advaita Bio’s iPathwayGuide (https://www.advaitabio.com/ipathwayguide); gene ontology performed using this software analysis tool implements the ‘Impact Analysis’ approach that takes into consideration the direction and type of all signals on a pathway, and the position, role, and type of every gene (Ahsan and Drăghici, 2017).
 
-## Gene ontology, gene expression regulated by miRNA, and causal network analysis
+### Gene ontology, gene expression regulated by miRNA, and causal network analysis
 
 Gene ontologies were associated with differentially regulated gene lists (Ingenuity Pathway Analysis [IPA], Qiagen, Redwood City, CA). miRNAs were paired with genes that were theoretically regulated by specific miRNAs using IPA. The databases used for this mapping were TarBase (Vlachos et al., 2015), miRecords (Xiao et al., 2009), and peer-reviewed biomedical literature, as well as predicted miR–mRNA interactions from TargetScan (Agarwal et al., 2015).
 
@@ -198,37 +762,47 @@ The Encyclopedia of DNA Elements (ENCODE) data (Rosenbloom et al., 2013) was use
 
 Causal network analysis (CNA) allows the identification and prioritization of regulatory system elements within transcriptomic models. CNA was performed within IPA (Krämer et al., 2014). CNA identifies upstream molecules, up to three steps distant, that potentially control the expression of the genes in the data set (Krämer et al., 2014). A prediction of the activation state for each regulatory factor (master regulator), based on the direction of change, was calculated (Z-score) using the gene expression patterns of the transcription factor and its downstream genes. An absolute Z-score of ≥|1.4| and a corrected p-value<0.05 (Fisher’s exact test) were used to compare the regulators identified.
 
-## Network model construction and comparison
+### Network model construction and comparison
 
 Lists of DEGs were used to generate network models of protein interactions in Cytoscape 2.8.3 (Smoot et al., 2011) by inference using the BioGRID (3.4.137) database (Chatr-Aryamontri et al., 2015).
 
 The Cytoscape plug-in Moduland (Kovács et al., 2010; Szalay-Beko et al., 2012) was applied to identify overlapping modules, an approach that models complex modular architecture within the human interactome (Chang et al., 2013) by accounting for the non-discrete nature of network modules (Kovács et al., 2010). Modular hierarchy was determined using a centrality score and further assessed using hierarchical network layouts (summarizing the underlying network topology). The central module cores (metanode of the 10 most central elements) was determined and used as a basis to integrate the miRNA and metabolomic data. Transcriptomic and metabolomic data were combined to form a single network model using the Metscape (Karnovsky et al., 2012) plug-in for Cytoscape. Differential ‘omic data was compared and clustered in a correlation matrix using the corrplot plug-in (Murdoch and Chow, 1996) for R (R Development Core Team, 2020).
 
-## Similarity network fusion
+### Similarity network fusion
 
 Subject-level similarity network fusion (SNF) (Wang et al., 2014) was performed on ‘omic data as a test for similarity. To perform SNF, the SNFTool R-package was used (Wang et al., 2014). First, Euclidean distances were calculated between gene probe sets, and these were then combined using a nonlinear nearest neighbor method over 20 iterations. The fused data was subjected to spectral clustering and presented as a heat map.
 
-## Hypernetworks
+### Hypernetworks
 
 We modeled the dynamics of potentially relevant PBMC and adipose tissue transcripts, miRNAs, and metabolites by assessing their activity as measured by the number of shared correlations against the background of all ‘omic elements called present after data processing.
 
 A matrix (m rows and n columns) was generated of correlation distances (r-values) between the significantly differentially expressed multi-omic data (forming m rows) and all ‘omic data called present (forming n columns). The r-values were normally distributed.
 
-A similarity matrix was defined by dichotomizing the correlation distance based on an r-value threshold of ≥| 1.5 |sd (if sd of | r |≥1.5 , then value = 1; if sd of | r |<1.5, then value = 0); the new matrix was termed M and represents the incidence matrix of the hypernetwork. An element of M, mij, where i and j are elements of m and n respectively, is defined as follows:mij={ 1,  &| r |≥1.5 sd0,  &| r |<1.5 sd
+A similarity matrix was defined by dichotomizing the correlation distance based on an r-value threshold of $\geq|1.5|$sd (if sd of $|r|\geq1.5 $, then value = 1; if sd of $|r|<1.5$, then value = 0); the new matrix was termed M and represents the incidence matrix of the hypernetwork. An element of M, $m_{ij}$, where $i$ and $j$ are elements of $m$ and $n$ respectively, is defined as follows:
 
-To generate the hypernetwork, we multiplied M  by the transpose of M, MT (Johnson, 2011; Ha et al., 2020), the elements of the resulting square matrix (sM, an m×m matrix) are the number of correlations shared by each pair of interacting ‘omic elements; this is also the number of edges connecting each pair of nodes. sM was clustered using hierarchical clustering to identify the group of highly connected ‘omic elements.
+$$
+m_{ij}={1,  &|r|\geq1.5 sd0,  &|r|<1.5 sd  
+$$
 
-The dichotomization parameters were shown to correspond to maximum signal window in the data using chi-squared distance metric (Figure 3—figure supplement 4). The chi-squared distance (X 2) was defined asΧ2=∑i=1N(mi−me)2mewhere N is the order of the matrix sM, i is the i'th element, mi, of sM, and me is the expected value of an element of sM. The expected value of an element of sM was calculated at any chosen dichotomization threshold by dividing the total number of correlations by the order of the matrix.
+To generate the hypernetwork, we multiplied $M $ by the transpose of $M$, $M^{T}$ (Johnson, 2011; Ha et al., 2020), the elements of the resulting square matrix ($sM$, an $m\timesm$ matrix) are the number of correlations shared by each pair of interacting ‘omic elements; this is also the number of edges connecting each pair of nodes. $sM$ was clustered using hierarchical clustering to identify the group of highly connected ‘omic elements.
+
+The dichotomization parameters were shown to correspond to maximum signal window in the data using chi-squared distance metric (Figure 3—figure supplement 4). The chi-squared distance ($X ^{2}$) was defined as
+
+$$
+Χ^{2}=\sumi=1N\frac{(m_{i}−m_{e})^{2}}{m_{e}}
+$$
+
+where $N$ is the order of the matrix $sM$, $i$ is the $i'th$ element, $m_{i}$, of $sM$, and $m_{e}$ is the expected value of an element of $sM$. The expected value of an element of $sM$ was calculated at any chosen dichotomization threshold by dividing the total number of correlations by the order of the matrix.
 
 Differential expression analysis was performed to refine genes for hypernetwork analysis. This approach serves to identify potentially relevant ‘omic elements. FDR-corrected p-values for all elements selected for hypernetwork integration are presented in Supplementary file 1g. We identified 4426 DEGs in PBMCs, 3520 adipose tissue DEGs, 38 metabolites (17 LC-MS, 21 GC-MS), and 12 miRNAs below an uncorrected p-value of 0.05. Data was analyzed across nine matching samples (normalized log2 score was inverted between GC exposure and GC withdrawal, i.e., +1 and –1, respectively).
 
 A hypernetwork is inherently robust as individual correlations are not considered significant; rather hypernetworks model higher order interactions between nodes (‘omic elements) based on large numbers of shared edges (correlations). This approach only highlights ‘omic elements that are supported by the majority of the data and, as such, is robust to a wide range of r-value thresholds as well as small sample sizes.
 
-Further, robustness of the hypernetwork observations was determined using a dissimilarity matrix derived from the original similarity matrix (i.e., the complement of the similarity matrix). The elements assessed as dissimilar were subtracted from those defined as similar. Elements within the M×MT  output of the dissimilarity analysis that were also similar were eliminated from further predictive analysis.
+Further, robustness of the hypernetwork observations was determined using a dissimilarity matrix derived from the original similarity matrix (i.e., the complement of the similarity matrix). The elements assessed as dissimilar were subtracted from those defined as similar. Elements within the $M\timesM^{T} $ output of the dissimilarity analysis that were also similar were eliminated from further predictive analysis.
 
 The BORUTA R package (Kursa, 2014; Kursa and Rudnicki, 2010) was used for feature selection of transcriptomic data with predictive value. Random Forest (Breiman, 2001) was implemented in R using 5000 trees to determine the predictive value expressed as the area under the curve of the receiver operating characteristic.
 
-## Statistical analyses
+### Statistical analyses
 
 Unsupervised analysis of metabolomic and transcriptomic data to assess how GC exposure grouped the study subjects was performed using Orthogonal Projections to Latent Structures Discriminant Analysis in SIMCA 13.0 (Sartorius) or PLS-DA MixOmics plug-in (Rohart et al., 2017) for R.
 

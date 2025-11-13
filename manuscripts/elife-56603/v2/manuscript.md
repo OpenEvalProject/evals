@@ -34,7 +34,7 @@ To address this issue, we use magneto-encephalography (MEG) and structural magne
 
 ## Results
 
-## Subjective reports of stimulus identity are categorical
+### Subjective reports of stimulus identity are categorical
 
 To investigate the brain and computational bases of perceptual recognition, we used visual characters as described in King and Dehaene, 2014a. These stimuli can be parametrically morphed between specific letters and digits by varying the contrast of their individual edges, hereafter referred to as pixels (Figure 1A–B).
 
@@ -48,23 +48,77 @@ We adapted this experimental paradigm for an MEG experiment by modifying three m
 
 Perceptual reports followed a similar sigmoidal pattern to Experiment 1: performance was worse for more ambiguous trials (65%) as compared to unambiguous trials (92%, p<0.001). In addition, reaction time slightly, and consistently, increased with uncertainty (i.e. how ambiguous the stimulus is). For example, highly ambiguous stimuli were identified within 690 ms, whereas nonambiguous stimuli were identified within 624 ms (z = −21.68, p<0.001) (Figure 1E–F). Although subjects were asked to respond as quickly as possible, the observed reaction times were overall quite slow, reflecting the difficulty of the task.
 
-## Neural representations are functionally organized over time and space
+### Neural representations are functionally organized over time and space
 
 Here, we aimed to decompose the sequence of decisions that allow subjects to transform raw visual input into perceptual reports. To this aim, we localized the MEG signals onto subjects’ structural MRI with dynamic statistical parametric mapping (dSPM, Dale et al., 2000), and morphed these source estimates onto a common brain coordinate (Fischl, 2012; Gramfort et al., 2014). The results confirmed that the stimuli elicited, on average, a sharp response in the primary visual areas around 70 ms, followed by a fast feedforward response along the ventral and dorsal visual pathways within the first 150–200 ms. After 200 ms, the activity appeared sustained and widely distributed across the associative cortices up until 500–600 ms after stimulus onset (Figure 1G and Video 1).
 
+![Video 1.](https://cdn.elifesciences.org/articles/56603/elife-56603-video1.mp4.jpg)
+
+**Video 1.:** Activity is plot in noise-normalized dSPM units, and shown on an inflated cortical surface (center) as well as a two-dimensional ‘glass brain’ that shows activity averaged over the transverse plane (bottom right).
+
 To separate the processing stages underlying these neural responses, we applied (i) mass-univariate; (ii) temporal decoding and (iii) spatial decoding analyses based on the five orthogonal features varying in our study: (1) the position of the stimulus, (2) its identity, (3) its perceived category, (4) its uncertainty and (5) its corresponding button press.
 
-## Mass-univariate
+#### Mass-univariate
 
 First, we modeled the source localized neural responses over time and space as a function of the five predictors of interest (multivariate in feature space, univariate in source space). Regressor beta coefficients were estimated for each subject separately, then submitted to a spatio-temporal cluster test (Figure 2A, details provided in Materials and methods). For stimulus position two clusters were found. One in the left hemisphere (number of sources = 2562, mean t-value = 2.87, 20–1560 ms, p=0.001); and one in the right (number of sources = 2562, mean t-value = 2.92, 40–1560 ms, p=0.0005). Stimulus identity also elicited two clusters. One in the left hemisphere (number of sources = 1946, mean t-value = 2.54, 100–840 ms, p=0.0005); and one in the right (number of sources = 2118, mean t-value = 2.48, 120–860 ms, p=0.001). No significant clusters were found for decision, but the largest cluster ranged from 210 to 320 ms (mean t-value = 1.79, p=0.21). Uncertainty elicited two clusters. One in the left hemisphere (number of sources = 2485, mean t-value = 2.42, 280–1560, p=0.001); and one in the right (number of sources = 2319, mean t-value = 2.4, 340–1560 ms, p=0.008). Motor side resulted in two clusters. One in the left hemisphere (number of sources = 2523, mean t-value = 2.56, 280–1560, p=0.0005); and one in the right (number of sources = 2525, mean t-value = 2.66, 280–1560 ms, p=0.0005). See Figure 2—figure supplements 4–8 for a full display of these results.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mass-univariate statistics. Each row plots the average-across-subjects beta coefficients obtained from regression between single-trial evoked activity and each of the five features orthogonally varying in this study. These results are displayed in Video 2. Colors are thresholded based on t-values that exceed an uncorrected p<0.1. We chose this threshold because the perceptual category did not exceed the significance threshold in the univariate tests. (B) Spatial-decoders, consisting of linear models fit across all time sample for each source separately, summarize where each feature can be decoded. Lines indicate significant clusters of decoding scores across subjects cluster-corrected p<0.05. (C) Temporal-decoders, consisting of linear models fit across all MEG channels, for each time sample separately, summarize when each feature can be decoded. To highlight the sequential generation of each representation, decoding scores are normalized by their respective peaks. Additional non-normalized decoding timecourses are available in Figure 2—figure supplements 1 and 2. (D) The peak and the start of temporal decoding plotted for each subject (dot) and for each feature (color). (E) The peak spatial decoding plotted for each subject (dot) and for each feature (color).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Shaded area indicates significant decoding as confirmed with a one-sample temporal cluster test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Shaded area indicates significant decoding as confirmed with a one-sample temporal cluster test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Localized sources that are contained in a significant (p<0.05) cluster and the specified time-points are highlighted in black.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Localized sources that are contained in a significant (p<0.05) cluster and the specified time-points are highlighted in black.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Localized sources that are contained in a significant (p<0.05) cluster and the specified time-points are highlighted in black.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** Localized sources that are contained in a significant (p<0.05) cluster and the specified time-points are highlighted in black.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** Localized sources that are contained in a significant (p<0.05) cluster. Colormap indicates for how many time-points the vertex was included in a cluster.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** Localized sources that are contained in a significant (p<0.05) cluster in the spatial decoding analysis.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp10-v2.jpg)
+
+**Figure 2—figure supplement 10.:** Note that each feature is has a different color-map threshold.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig2-figsupp11-v2.jpg)
+
+**Figure 2—figure supplement 11.:** Timing is locked to stimulus onset (above) and motor response onset (below). Unlike the analysis of Ambiguity (blue line) in the main test, here we median-split the ambiguity variable to fit a logical regression and thus show the AUC values in comparison to the other features.
+
 The perceived category did not yield significant results after correction for multiple comparisons. Thus, the rest of our analyses are based on multivariate techniques (univariate in feature space, multivariate in source space), which provide highly superior statistical sensitivity to our experimental manipulations. The direct comparison between the sensitivity of the mass-univariate versus multivariate approaches are shown in Figure 2.
 
-## Temporal and spatial decoding
+#### Temporal and spatial decoding
 
 To overcome the poor SNR of single-trial MEG responses, we next applied multivariate decoding analyses to identify when and where low-level visual features are represented in brain activity. We estimated, at each time sample separately, the ability of an l2-regularized regression to predict, from all MEG sensors, the five stimulus features of interest. Overall, the multivariate analyses were far more sensitive than the univariate tests.
 
 Stimulus position (the location of the stimulus on the computer screen: left versus right) was decodable between 41 and 1500 ms and peaked at 120 ms (AUC = 0.94; SEM = 0.007; p<0.001 as estimated with second-level non-parametric temporal cluster test across subjects, Figure 2C). To summarize where stimulus position was represented in the brain, we implemented ‘spatial decoders’: l2-regularized logistic regressions fit across all time samples (0–1500 ms) for each estimated brain source separately. Spatial decoding peaked in early visual areas and was significant across a large variety of visual and associative cortices as estimated with a second-level non-parametric spatial cluster test across subjects (Figure 2B). Stimulus position was encoded in the timecourse of all sources, in both the left hemisphere (mean t-value = 9.42, p=0.0005) and the right (mean t-value = 9.97, p=0.0005). These signals peaked in the early visual cortex (mean MNI [x = 27.59; y = −74.15; z = −1.07]), and propagated along the ventral and dorsal streams during the first 200 ms (Figure 2A, Video 2); confirming the retinotopic organization of the visual hierarchy (Hagler and Sereno, 2006; Wandell et al., 2007).
+
+![Video 2.](https://cdn.elifesciences.org/articles/56603/elife-56603-video2.mp4.jpg)
+
+**Video 2.:** For each regressor of interest, the trajectory of normalized decoding accuracy is plot over time. The beta coefficients from the univariate spatio-temporal analysis are plot on the inflated brains, averaged over subjects. The timing of the beta coefficients corresponds to the timing of the normalized decoding accuracy, as shown in the ms counter at the bottom.
 
 Second, we aimed to isolate more abstract representations related to stimulus identity. Stimulus identity can be analyzed either from an objective referential (what stimulus is objectively presented?) or from a subjective referential (i.e. what stimulus did subjects report having seen?). We first focus on decoding features of the stimulus that are not ambiguous, such that subjective and objective representations are confounded. To this aim, we grouped stimuli along common continua (e.g. The eight stimuli along the 4-H continuum belong to the same morph and are here considered to share a common identity) and fit logistic regression classifiers across morphs (i.e. E-6 versus 4-H). The corresponding stimulus identity was decodable between 120 and 845 ms and peaked at 225 ms (AUC = 0.59; SEM = 0.01; p<0.001). Spatial decoding revealed decodability from all sources (mean t-value = 7.9, p<0.0001). These effects peaked more anteriorly than those of stimulus position (mean MNI: x = 27.75; y = −62.75; z = −1.55; p<0.001).
 
@@ -78,7 +132,7 @@ Finally, temporal decoders of subjects’ button press (left versus right index 
 
 Overall, the time at which representations became maximally decodable correlated with their peak location along the postero-anterior axis (Figure 2D–E) (r = 0.57, p<0.001). The specific hierarchical organization of the stimulus features was in some cases surprising. For example, the letter/digit contrast peaked remarkably late (∼400 ms). Furthermore, Uncertainty was one of the latest features to come online, and extended into responses to the subsequent trial. These results thus strengthen the classic notion that perceptual processes are hierarchically organized across space, time and function. Importantly, however, this cascade of representations spreads over more than 600 ms and largely exceeds the time it takes the feedforward response to ignite the ventral and dorsal pathways (Figure 1G and Video 1).
 
-## A hierarchy of recurrent layers explains the spatio-temporal dynamics of neural representations
+### A hierarchy of recurrent layers explains the spatio-temporal dynamics of neural representations
 
 The above results show that the brain sequentially generates, over an extended time period, a hierarchy of representations that ultimately account for perceptual reports.
 
@@ -102,17 +156,37 @@ It is difficult to determine, with MEG alone, whether such dynamic maintenance r
 
 Together, source and TG analyses thus suggest that the slow and sequential generation of increasingly abstract representations depends on a hierarchy of recurrent layers that generate, maintain and broadcast representations across the cortex.
 
-## Hierarchical recurrence induces an accumulation of delays
+### Hierarchical recurrence induces an accumulation of delays
 
 Can a hierarchy of recurrent processes account for the variation in single-trial dynamics? To address this issue, we hypothesized that recurrent processes would take variable amounts of time to converge to each intermediary representation. In this view, (i) each feature is predicted to propagate across brain areas at distinct moments, and (ii) the successive rise of decodable representations is thus predicted to incrementally correlate with reaction times (Figure 5A–E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) Recurrent processing at a given processing stage is hypothesized to take a variable amount of time to generate adequate representations. (C) According to this hypothesis, the rise of the corresponding and subsequent representations would correlate with reaction times. (D, left) Predictions when delays are only induced by the perceptual stage of processing. (D, middle) Predictions when delays are only induced by the motor processing processing stage. (D, right) Predictions when delays are induced by all processing stages. (E) TG scores aligned to training time, split into trials within the fastest and slowest reaction-time quantile and averaged across reaction times bins. Dark and light lines indicate the average decoding performance for trials with fastest and slowest reaction times respectively. (F) Each subject (dot) mean peak decoding time (y-axis) as a function of reaction time (x-axis) color-coded from dark (fastest) to light (slowest). The beta coefficients indicate the average delay estimate. (G) The average slope between processing delay and reaction time for each feature. Error-bars indicate the SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The top ‘empirical’ figure shows the temporal generalization matrix for decoding ambiguity split into the trials that were responded to the fastest (top 25%) and slowest (bottom 25%). The cartoon below shows the method for estimating latency curves. First we re-align the temporal generalization matrices such that the test-time is shifted relative to the diagonal plane. Then, we average over training times, to yield the latency curve for subsequent analyses.
 
 To test this hypothesis, we estimated how the peak of each temporal decoder varied with reaction times. For clarity purposes, we split reaction times into four quantiles, and averaged the time courses of temporal decoders relative to their training time. This method allowed us to assess the extent to which neural processes are ‘sped up’ or ‘slowed down’ relative to the average processing speed, as represented by the diagonal axis (Figure 5—figure supplement 1 summarizes this method). These analyses showed that the latencies of (i) perceptual category (r = 0.35; p=0.006), (ii) stimulus uncertainty (r = 0.37; p=0.004) and (iii) button press (r = 0.66; p<0.001) increasingly correlated with reaction times (Figure 5F–G).
 
 Overall, these results show that we can track with MEG, a series of decisions generated by hierarchical recurrent processes. This neural architecture partially accounts for subjects’ variable and relatively slow reaction times.
 
-## Hierarchical recurrence implements a series of all-or-none decisions
+### Hierarchical recurrence implements a series of all-or-none decisions
 
 An architecture based on successive decisions predicts a loss of ambiguous information akin to all-or-none categorization across successive processing stages (Figure 6A). To test this prediction, we quantified the extent to which the decoding of ‘percept category’ and of ‘motor action’ varied linearly or categorically with (i) categorical evidence and (ii) motor evidence respectively (i.e. the extent to which the stimulus (i) objectively looks like a letter or a digit and (ii) should have led to a left or right button press given its pixels). Note that due to the limitations of our experimental design, we can only assess the effect of stimulus evidence at these two level of representations: stimulus evidence only varied as a function of decision and motor response but was orthogonal to stimulus position and stimulus identity.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig6-v2.jpg)
+
+**Figure 6.:** (A) Hypothesis space for when responses become categorical: during sensory, perceptual or motor processing. (B, top) Time course of decoding the perceptual decision. (B, bottom) Classifier predictions split into different levels of sensory evidence. (C) Averaging probabilities in different time-windows shows the linear-categorical shift in how information is represented. (D, top) Time course of decoding the motor decision. (D, bottom) Splitting classifier predictions into different levels of uncertainty. (E) Different windows of classifier predictions, showing the categorical responses throughout processing.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The purple line corresponds to decoding the difference between unambiguous end-points and one step. A temporal cluster test revealed no significant above-chance decodability. The blue line corresponds to the unambiguous end-points versus two steps. Decoding was significantly above chance from 750 to 900 ms (p<0.001) and again from 1300 to 1400 ms (p=0.007). The teal line corresponds to the unambiguous end-points versus three steps. Decoding was significant from 270 to 1570 ms (p<0.001).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56603/elife-56603-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** For the active trials, the classifier is fit with a k-fold cross-validation – training on active trials and testing on active trials. For the passive trials, the classifier is trained on all of the active trials and tested on the 320 passive trials. Note that the actively presented letter/digit stimuli (4, 6 vs H, E) were different from the passively presented ones (9, 8 vs. A, C), thus any significant generalization of neural responses demonstrates a true ‘letter/digit’ percept, which is not specific to particular pixel arrangements. Thicker lines in the decoding timecourses show the timing of significant above-chance decoding for passive trials and active trials separately. Shaded grey areas show when the two timecourses significantly diverge. Both statistical tests used a temporal permutation cluster test and clusters are displayed that are significant at p<0.05.
 
 The probabilistic decoding predictions of percept category correlated linearly with sensory evidence between 210 and 530 ms (r = 0.38 ±0.03, temporal-cluster p<0.001). The spatial decoders fit from 200 to 400 ms clustered around the VWFA (mean t-value=4.6; p=0.02; 224 vertices). These results suggest that this region first represents the stimulus objectively (i.e. in its full ambiguity).
 
@@ -144,27 +218,43 @@ Finally, our results constitute an important confirmation of modern theories of 
 
 ## Materials and methods
 
-## Target stimuli
+### Target stimuli
 
 Using the font designed in King and Dehaene, 2014a, the stimuli were made from 0, 4, 5, 6, 8, 9, A, C, E, H, O, S, or from a linear combination of two of these characters varying in a single black bar (hereafter ‘pixel’). The corresponding ‘morphs’ were created by adjusting the contrast of the remaining pixel along eight equally spaced steps between 0 (no bar) and 1 (black bar).
 
-## Experiment 1
+### Experiment 1
 
 Eight subjects with normal or corrected vision, seated ~60 cm from a 19’ CRT monitor (60 Hz refresh rate, resolution: 1024 × 768), performed a stimulus identification task with continuous judgements across 28 variably ambiguous stimuli generated from digit stimuli. Ten euros were provided in compensation for this 1 hr experiment.
 
 Subjects performed four blocks of 50 trials, each organized in the following way. After a 200 ms fixation, a target stimulus, randomly selected from one of the 28 stimuli, was flashed for 83 ms on a 50% gray background to the left or to the right of fixation. The orientation of the reporting disk (e.g 5-6-8-9 versus 5-9-8-6) was counterbalanced across subjects. Subjects had then up to 10 s to move a cursor on a large disk to report their percepts. The radius on the disk indicated subjective visibility (center = did not see the stimulus, disk border = max visibility). The angle on the disk indicated subjective identity (e.g. 5, 6, 8, 9 for the top left, top right, bottom right, and bottom left ‘corners’, respectively). Inter-trial interval was 500 ms. To verify that subjects provided meaningful reports, the target stimulus was absent 15% of the trials. Absent trials were rated with a low visibility (defined as radius below 5% of the disk radius) in most cases. Absent trials and trials reported with a low visibility were excluded from subsequent analyses (16% ± 1.4%). The report distribution plotted in Figure 1B were generated with Seaborn’s bivariate Gaussian kernel density estimate function with default parameters.
 
-## Modeling categorical reports
+#### Modeling categorical reports
 
 To test whether subjective reports of stimulus identity varied linearly or categorically with sensory evidence, we analyzed how reports’ angle (i.e. subjective identity) varied with the expected angle given the stimulus (i.e. sensory evidence).
 
-For each morph (5–6, 5–8, 9–8 and 6–8) separately, we fit a linear model: (1)y^←β1⁢x+β0and a sigmoidal model:(2)y^←11+exp⁡(β1⁢x+β2)+β0where y^ is the report angle predicted by the model, x is expected angle given the stimulus pixels and β0 is a free bias parameter.
+For each morph (5–6, 5–8, 9–8 and 6–8) separately, we fit a linear model: 
 
-To minimize the effects of noise, behavioral reports were first averaged within each level of evidence, sorted from the stimulus with the least pixels (e.g. 5, in 5–6 morph) to the stimulus with the most pixels (e.g. 6 in the 5–6 morph). The resulting averages were normalized to range between 0 and 1 within each subject. The β parameters were fit with Scipy’s ‘curve_fit’ function (Jones et al., 2001) to minimize a mean squared error across trials i:(3)argminβ∑i(yi−y^i)2
+$$
+y^←\beta_{1}⁢x+\beta_{0}
+$$
 
-Because the linear and sigmoidal models have distinct numbers of free parameters, we compared them within a five-split cross-validation. Specifically, the two models were repeatedly fit and tested on independent trials. A Pearson correlation coefficient r summarized the ability of each model to accurately predict yt⁢e⁢s⁢t given xt⁢r⁢a⁢i⁢n, yt⁢r⁢a⁢i⁢n and xt⁢e⁢s⁢t. Finally, a Wilcoxon test was applied across subjects to test whether the two models were consistently above chance (r>0) and consistently different from one another (rs⁢i⁢g⁢m⁢o⁢i⁢d>rl⁢i⁢n⁢e⁢a⁢r).
+and a sigmoidal model:
 
-## Experiment 2
+$$
+y^←\frac{1}{1+exp⁡(\beta_{1}⁢x+\beta_{2})}+\beta_{0}
+$$
+
+where $y^$ is the report angle predicted by the model, x is expected angle given the stimulus pixels and $\beta_{0}$ is a free bias parameter.
+
+To minimize the effects of noise, behavioral reports were first averaged within each level of evidence, sorted from the stimulus with the least pixels (e.g. 5, in 5–6 morph) to the stimulus with the most pixels (e.g. 6 in the 5–6 morph). The resulting averages were normalized to range between 0 and 1 within each subject. The β parameters were fit with Scipy’s ‘curve_fit’ function (Jones et al., 2001) to minimize a mean squared error across trials i:
+
+$$
+argmin\beta\sumi(y_{i}−y^_{i})^{2}
+$$
+
+Because the linear and sigmoidal models have distinct numbers of free parameters, we compared them within a five-split cross-validation. Specifically, the two models were repeatedly fit and tested on independent trials. A Pearson correlation coefficient r summarized the ability of each model to accurately predict $y_{t⁢e⁢s⁢t}$ given $x_{t⁢r⁢a⁢i⁢n}$, $y_{t⁢r⁢a⁢i⁢n}$ and $x_{t⁢e⁢s⁢t}$. Finally, a Wilcoxon test was applied across subjects to test whether the two models were consistently above chance ($r>0$) and consistently different from one another ($r_{s⁢i⁢g⁢m⁢o⁢i⁢d}>r_{l⁢i⁢n⁢e⁢a⁢r}$).
+
+### Experiment 2
 
 This experiment was performed at Neurospin, Gif usr Yvette, thanks to the support of Stanislas Dehaene. Seventeen subjects performed a discrete identification task across 22 variably ambiguous stimuli generated from letters and digits inside an Elekta Neuromag MEG scanner (204 planar gradiometers and 102 magnetometers). Seventy euros were provided in compensation to the 1 hr experiment and 30 min of preparation.
 
@@ -178,31 +268,47 @@ A total of 1920 trials, grouped into 40 blocks, were performed by each subject, 
 
 All experiments were approved by the local ethics committee. All subjects signed an informed consent form.
 
-## Structural MRI
+### Structural MRI
 
-For each subject, an anatomical MRI with a resolution of 1×1×1.1 mm was acquired after the MEG experiment with a 3T Siemens scanner. Gray and white matter were segmented with Freesurfer ‘recon-all’ pipeline (Fischl, 2012) and coregistered with each subject’s digitized head shapes along with fiducial points.
+For each subject, an anatomical MRI with a resolution of $1\times1\times1.1$ mm was acquired after the MEG experiment with a 3T Siemens scanner. Gray and white matter were segmented with Freesurfer ‘recon-all’ pipeline (Fischl, 2012) and coregistered with each subject’s digitized head shapes along with fiducial points.
 
-## Preprocessing
+### Preprocessing
 
 The continuous MEG recording was noise-reduced using Maxfilter’s SSS correction on the raw data, bandpass-filtered between 0.5 and 40 Hz using MNE-Python’s default parameters with firwin design (Gramfort et al., 2014) and downsampled to 250 Hz. Epochs were then segmented between −300 ms and +1500 ms relative to stimulus onsets.
 
 After coregistering the MEG sensor data with subjects’ structural MRI and the head position coils, we computed the forward model using a 1-layer (inner skull) boundary element model, for each subject separately and fit a minimum-norm inverse model (signal to noise ratio: 3, loose dipole fitting: 0.2, with normal orientation of the dipole relative to the cortical sheet) using the noise covariance across sensors averaged over the pre-stimulus baseline across trials. Finally, the inverse model was applied to single-trial data resulting in a dynamic Statistical Parameter Map (dSPM) (Dale et al., 2000) value for each source at each time sample.
 
-## Modeled features
+### Modeled features
 
 We investigated whether single-trial source and sensor evoked responses varied as a function of five features: (1) the position of the stimulus on the computer screen (left versus right of fixation), (2) the morph from which the stimulus is generated (E-6 versus H-4), (3) the category of the stimulus (letter versus digit), (4) the uncertainty of the trial (maximum uncertainty = stimuli with pixel at 50% contrast; minimally uncertain stimuli with pixels at 0% or 100% contrast), and (5) the response button used to report the stimulus (left versus right button). By design, these five features are independent of one another.
 
 It is challenging to dissociate brain responses that represent objective sensory information from those that represent perceptual decisions as the two are generally collinear. To address this issue, we first fit univariate and multivariate models to predict perceptual category: that is, whether the button press indicated a character that belongs to the digit or to the letter category. This feature is independent of the button press (e.g. the letter E and the digit 4 can be reported with the same button in a given block). Furthermore, this feature is not necessary to perform the task (i.e. knowing whether E and H are letters is unnecessary to discriminate them). We reasoned that if subjects automatically generates letter/digit representations during perceptual categorization, then we should be able to track the generation of this abstract feature from brain activity.
 
-## Mass univariate statistics
+### Mass univariate statistics
 
-To estimate whether brain responses correlated with each of these five features, we first fit, within each subject, mass univariate analyses at each source location and for each time sample with a linear regression:(4)β=(XT⁢X)-1⁢X⁢ywhere X∈ℝn,f is a design matrix of n epochs by f=5 features and y∈ℝn is the univariate brain response at a given source and at given time. The effect sizes β were then passed to second-level statistics across subjects corrected for multiple comparisons using non-parametric spatio-temporal cluster testing (see below).
+To estimate whether brain responses correlated with each of these five features, we first fit, within each subject, mass univariate analyses at each source location and for each time sample with a linear regression:
 
-## Decoding
+$$
+\beta=(X^{T}⁢X)^{-1}⁢X⁢y
+$$
 
-Decoding analyses consists in predicting each feature from multivariate brain responses. Decoding analyses were performed within a five-split stratified K-Fold cross-validation using l2-regularized linear models. Classifiers consisted of logistic regressions (with scikit-learn Pedregosa, 2011’s default parameters: C=1):(5)argminβ∑ilog(1+exp(−yiβTx→i))+C‖β‖2where yi∈{±1} is the feature to be decoded at trial i and xi is the multivariate brain response.
+where $X\inℝ^{n,f}$ is a design matrix of n epochs by $f=5$ features and $y\inℝ^{n}$ is the univariate brain response at a given source and at given time. The effect sizes β were then passed to second-level statistics across subjects corrected for multiple comparisons using non-parametric spatio-temporal cluster testing (see below).
 
-Regressors consisted of ridge regression (with scikit-learn Pedregosa, 2011’s default parameters: α=1).(6)argminβ∑i(yi−βTxi)2+α‖β‖2
+### Decoding
+
+Decoding analyses consists in predicting each feature from multivariate brain responses. Decoding analyses were performed within a five-split stratified K-Fold cross-validation using l2-regularized linear models. Classifiers consisted of logistic regressions (with scikit-learn Pedregosa, 2011’s default parameters: $C=1$):
+
+$$
+argmin\beta\sumilog(1+exp(−y_{i}\beta^{T}x→_{i}))+C‖\beta‖^{2}
+$$
+
+where $y_{i}\in{\pm1}$ is the feature to be decoded at trial i and xi is the multivariate brain response.
+
+Regressors consisted of ridge regression (with scikit-learn Pedregosa, 2011’s default parameters: $\alpha=1$).
+
+$$
+argmin\beta\sumi(y_{i}−\beta^{T}x_{i})^{2}+\alpha‖\beta‖^{2}
+$$
 
 For each subject independently, decoding performance was summarized across trials, with an area under the curve (AUC) and a Spearman r correlation score for classifiers and regressors, respectively.
 
@@ -212,25 +318,37 @@ Spatial decoding consists in fitting a series of decoders at each brain source i
 
 Temporal decoding consists in fitting a series of decoders at each time sample independently, across all 306 MEG sensors. This analysis results in a decoding time course that indicates when a feature can be linearly decoded from MEG signals. These decoding time courses were then passed to cluster-corrected second-level statistics across subjects.
 
-Temporal generalization (TG) consists in testing whether a temporal decoder fit on a training set at time t can decode a testing set at time t′ (King and Dehaene, 2014b). TG can be summarized with a square training time × testing time decoding matrix. To quantify the stability of neural representations, we measured the duration of above-chance generalization of each temporal decoder. To quantify the dynamics of neural representations, we compared the mean duration of above-chance generalization across temporal decoders to the duration of above-chance temporal decoding (i.e. the diagonal of the matrix versus its rows). These two metrics were assessed within each subject and tested with second-level statistics across subjects.
+Temporal generalization (TG) consists in testing whether a temporal decoder fit on a training set at time t can decode a testing set at time $t^{′}$ (King and Dehaene, 2014b). TG can be summarized with a square training time × testing time decoding matrix. To quantify the stability of neural representations, we measured the duration of above-chance generalization of each temporal decoder. To quantify the dynamics of neural representations, we compared the mean duration of above-chance generalization across temporal decoders to the duration of above-chance temporal decoding (i.e. the diagonal of the matrix versus its rows). These two metrics were assessed within each subject and tested with second-level statistics across subjects.
 
-## Permutation cluster test
+### Permutation cluster test
 
 To evaluate the statistical significance of the univariate and multivariate analyses, we used a one-sample permutation cluster test as implemented in MNE-Python (Gramfort et al., 2014). We use the default parameters of the ‘spatio temporal cluster one sample test’ from mne version 0.17.1.
 
 First we center the data around the theoretical chance level (e.g. 0.5 for AUC, 0 for Spearman correlation or beta coefficient). A one-sample t-test is performed at each location in time and space. Then, spatio-temporally adjacent data-points are clustered based on a cluster-forming threshold of p<0.05. The test statistic for each cluster is the sum of the t-values across time and space. Randomized data are generated with random sign flips, and a new set of clusters are formed. The null distribution is created based on the summed t-values that are generated from 5000 random permutations of the data. This analysis follows Maris and Oostenveld, 2007.
 
-## Linear versus categorical
+### Linear versus categorical
 
-To test whether neural representations varied as a function of (i) reaction times (RTs, split into four quantiles), (ii) sensory evidence (i.e. the extent to which the stimulus objectively corresponds to a letter) and (iii) motor evidence (i.e. whether the stimulus should have led to the left button press), we analyzed the extent to which decoders’ predictions covaried with each of these three variables z: (7)f⁢(z,βT⁢X)where f is a linear or a sigmoidal model, X is the multivariate brain response and β is the decoder’s coefficient fit with cross-validation.
+To test whether neural representations varied as a function of (i) reaction times (RTs, split into four quantiles), (ii) sensory evidence (i.e. the extent to which the stimulus objectively corresponds to a letter) and (iii) motor evidence (i.e. whether the stimulus should have led to the left button press), we analyzed the extent to which decoders’ predictions covaried with each of these three variables z: 
 
-## Statistics
+$$
+f⁢(z,\beta^{T}⁢X)
+$$
+
+where f is a linear or a sigmoidal model, X is the multivariate brain response and β is the decoder’s coefficient fit with cross-validation.
+
+### Statistics
 
 Univariate, decoding and TG models were fit within subjects, and tested across subjects. In case of repeated estimates (e.g. temporal decoding is repeated at each time sample), statistics derived from non-parametric cluster-testing with 10,000 permutations across subjects with MNE-Python’s default parameters (Gramfort et al., 2014).
 
-## Simulations
+#### Simulations
 
-To formalize how distinct neural architectures lead to distinct spatio-temporal dynamics, we modeled discrete linear dynamical systems forced with a transient input U. Specifically:(8)Xt+1=A⁢Xt+B⁢Utwhere X is a multidimensional times series (i.e. neurons x time), A is the architecture, and corresponds to square connectivity matrix (i.e. neurons x neurons), B is an input connectivity matrix (i.e. inputs x neurons), and U is the input vector.
+To formalize how distinct neural architectures lead to distinct spatio-temporal dynamics, we modeled discrete linear dynamical systems forced with a transient input U. Specifically:
+
+$$
+X_{t+1}=A⁢X_{t}+B⁢U_{t}
+$$
+
+where X is a multidimensional times series (i.e. neurons x time), A is the architecture, and corresponds to square connectivity matrix (i.e. neurons x neurons), B is an input connectivity matrix (i.e. inputs x neurons), and U is the input vector.
 
 Distinct architectures differ in the way units are connected with one another. For simplicity purposes, we order units in the A matrix such that their row index correspond to their hierarchical levels.
 

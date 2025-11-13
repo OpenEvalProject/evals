@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Department of Anatomy and Cell Biology, Western University London Canada
-2. https://ror.org/0420zvk78 Department of Biology, Concordia University Montreal Canada
-3. https://ror.org/0420zvk78 Department of Computer Science and Software Engineering, Concordia University Montreal Canada
-4. https://ror.org/04mhzgx49 Shmunis School of Biomedical and Cancer Research, The George S. Wise Faculty of Life Sciences, Tel Aviv University Tel Aviv-Yafo Israel
-5. https://ror.org/00f54p054 Department of Chemical and Systems Biology, Stanford University Stanford United States
-6. https://ror.org/02grkyz14 Department of Biochemistry, Western University London Canada
+1. Department of Anatomy and Cell Biology, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. Department of Biology, Concordia University Montreal Canada ([ROR:0420zvk78](https://ror.org/0420zvk78))
+3. Department of Computer Science and Software Engineering, Concordia University Montreal Canada ([ROR:0420zvk78](https://ror.org/0420zvk78))
+4. Shmunis School of Biomedical and Cancer Research, The George S. Wise Faculty of Life Sciences, Tel Aviv University Tel Aviv-Yafo Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
+5. Department of Chemical and Systems Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+6. Department of Biochemistry, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 
 ## Abstract
 
-Candida albicans, an opportunistic human pathogen, poses a significant threat to human health and is associated with significant socio-economic burden. Current antifungal treatments fail, at least in part, because C. albicans can initiate a strong drug tolerance response that allows some cells to grow at drug concentrations above their minimal inhibitory concentration. To better characterize this cytoprotective tolerance program at the molecular single-cell level, we used a nanoliter droplet-based transcriptomics platform to profile thousands of individual fungal cells and establish their subpopulation characteristics in the absence and presence of antifungal drugs. Profiles of untreated cells exhibit heterogeneous expression that correlates with cell cycle stage with distinct metabolic and stress responses. At 2 days post-fluconazole exposure (a time when tolerance is measurable), surviving cells bifurcate into two major subpopulations: one characterized by the upregulation of genes encoding ribosomal proteins, rRNA processing machinery, and mitochondrial cellular respiration capacity, termed the Ribo-dominant ( Rd ) state; and the other enriched for genes encoding stress responses and related processes, termed the Stress-dominant ( Sd ) state. This bifurcation persists at 3 and 6 days post-treatment. We provide evidence that the ribosome assembly stress response (RASTR) is activated in these subpopulations and may facilitate cell survival.
+Candida albicans, an opportunistic human pathogen, poses a significant threat to human health and is associated with significant socio-economic burden. Current antifungal treatments fail, at least in part, because C. albicans can initiate a strong drug tolerance response that allows some cells to grow at drug concentrations above their minimal inhibitory concentration. To better characterize this cytoprotective tolerance program at the molecular single-cell level, we used a nanoliter droplet-based transcriptomics platform to profile thousands of individual fungal cells and establish their subpopulation characteristics in the absence and presence of antifungal drugs. Profiles of untreated cells exhibit heterogeneous expression that correlates with cell cycle stage with distinct metabolic and stress responses. At 2 days post-fluconazole exposure (a time when tolerance is measurable), surviving cells bifurcate into two major subpopulations: one characterized by the upregulation of genes encoding ribosomal proteins, rRNA processing machinery, and mitochondrial cellular respiration capacity, termed the Ribo-dominant (Rd) state; and the other enriched for genes encoding stress responses and related processes, termed the Stress-dominant (Sd) state. This bifurcation persists at 3 and 6 days post-treatment. We provide evidence that the ribosome assembly stress response (RASTR) is activated in these subpopulations and may facilitate cell survival.
 
 ## Introduction
 
@@ -47,21 +47,33 @@ Here, we use the fungal DROP-seq system (Bettauer et al., 2020) to explore pheno
 
 ## Results
 
-## C. albicans exhibits drug tolerance 2 days after exposure to FCZ
+### C. albicans exhibits drug tolerance 2 days after exposure to FCZ
 
 To uncover molecular events associated with the emergence of drug tolerance in C. albicans, we performed a series of disk diffusion assays, focusing on a 6-day time series with FCZ, detailed in Appendix 1. When assayed at 48 hr, both disk assays and broth microdilution assays report on tolerance (Rosenberg et al., 2018). Drug tolerance increased significantly between days 1 and 2 (p<0.001, Kruskal-Wallis χ2 test) and increased slightly at day 3, after which the tolerance level did not change. Thus, tolerant cells are present in all cultures starting at day 2. Since these populations originate from a single isogenic colony, we assume that tolerant and non-tolerant cells in the same culture differentially express pathways and processes relevant to their ability to grow (or not grow) in the presence of the drug. We do not observe widespread drug resistance at any time point.
 
-## An optimized sc profiling assay to explore drug tolerance in C. albicans
+### An optimized sc profiling assay to explore drug tolerance in C. albicans
 
 Although sc profiling with a commercial system is feasible in S. cerevisiae (Jackson et al., 2020), specific aspects of fungal biology motivated us to develop a low-cost alternative tailored for fungi, specifically C. albicans. We first optimized the removal of the cell wall, as well as the time and concentration parameters to fix the transcriptome (Materials and methods, ‘Strains, media, and drug treatment’, ‘Spheroplasts’). We then built a nanoliter droplet-based system modified from Macosko et al., 2015, using in-house components as described previously (Booeshaghi et al., 2019), to reduce the device and assay costs. The profiles reported here combine our preliminary effort (Bettauer et al., 2020) with additional data and analyses to provide increased power to examine the technical and biological efficacy of our system.
 
 C. albicans populations were grown in rich media alone (UT) or with an antifungal compound: FCZ (1 µg/ml), caspofungin (CSP; 1 ng/ml), or rapamycin (RAPA; 0.5 ng/ml) (Materials and methods, ‘Strains, media, and drug treatment’). UT samples were collected during the logarithmic growth phase and treated samples were collected at days 2 and 3 post-drug exposure. This is the period when FCZ tolerance becomes evident. To explore whether subpopulations observed at days 2 and 3 persisted at later time points, we resuspended the FCZ day 3 population in fresh medium and profiled the samples on day 6 after 3 days of growth without drug (Figure 1A). The vast majority of cells were in the yeast white morphology with less than 0.2% of cells exhibiting a filamentous morphology (hyphae or pseudohyphae).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig1-v2.jpg)
+
+**Figure 1.:** (A) The time series experiment begins with three replicates of untreated (UT) cells followed by profiling of rapamycin (RAPA), caspofungin (CSP), and fluconazole (FCZ, 2 replicates at day 2, and 3 replicates at day 3). After 3 days in FCZ, cells were transferred to YPD; recovered cells were profiled at day 6 (i.e., 3 days after resuspension). (B) Bar plot (left) depicts the number of high-quality cells per sample. Violin plots (right) the distribution in the number of reads assigned to each cell.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The bioinformatics pipeline begins with the Read1 (left) and Read2 (right) fastq files (Materials and methods, ‘Quality control, basic processing, and normalization of the sc profiles’). Sc sequence data was processed using the Alevin-Fry (He et al., 2021) pipeline based on a reference index covering the spliced transcriptome. Cells were labeled as good quality if their profiles significantly deviated from the ambient RNA pool (FDR < 0.01) following the EmptyDrops approach (Lun et al., 2018). Pseudo-bulk profiles were obtained by either summing counts across selected cells and genes (filtered pseudo-bulk) or by mapping reads to the reference genome but ignoring cell barcodes (unfiltered pseudo-bulk) (Materials and methods, ‘Construction of pseudo-bulk profiles’). (B) Violin plots with data points describing the number of genes detected in each high-quality cell for each sample (drug_day_replicate). (C) Histogram depicting the number of cells in which a gene is expressed. We selected genes that were expressed in at least 20 cells across all samples (red dotted line).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The upper left and lower right coordinates show the distribution of gene counts in single-cell profiles of fluconazole (FCZ)-treated cells at day 2 (FCZ_2) and day 3 (FCZ_3) respectively. Counts for each high-quality cell in both day 2 and day 3 replicates were summed and normalized (filtered pseudo-bulk; counts per million [CPM]). The upper right and lower left quadrants report the Pearson correlation and scatterplot depicting how genes are expressed in the two filtered pseudo-bulk samples, respectively. (B) The density plots compare the normalized counts in the bulk profile of FCZ-treated cells at day 2 for genes that were consistently detected in every FCZ (unfiltered) pseudo-bulk (red) versus genes that were not consistently identified (blue). Unfiltered pseudo-bulk samples were obtained by aligning single-end reads while ignoring its paired-read that contains the cell barcode (A). (C) The diagonal of the matrix shows the distribution of normalized gene counts, measured as the log2(CPM + 1) in each FCZ-treated sample (bulk or (*) unfiltered pseudo-bulk). The values above the diagonal report the Pearson correlations between pairs of samples, and the scatterplots below the diagonal depict normalized log2(CPM + 1) expression of genes in each pair of samples (bulk or (*) unfiltered pseudo-bulk).
+
 After processing with the DROP-seq device, samples were sequenced following the original protocol (Macosko et al., 2015) but with cell concentration and PCR cycle numbers optimized for C. albicans (Materials and methods, ‘Cell preparation for sc profiling’). Sc sequence data was processed using a reference index that covers the spliced transcriptome and the Alevin-Fry package (He et al., 2021) (Materials and methods, ‘Quality control, basic processing, and normalization of the sc profiles’). Gene and cell quality control are challenging exercises in all sc profiling efforts (Svensson, 2019), and especially in fungi because of the small amount of RNA per cell, especially under the stress of growth in antifungal drugs (Jariani et al., 2020). A series of quality control procedures were used to estimate gene/cell expression levels (Figure 1—figure supplement 1A, Materials and methods, ‘Quality control, basic processing, and normalization of the sc profiles’).The pipeline identified 18,854 high-quality cells across the 11 drug/time point conditions with an average of 1714 cells per sample. On average, 184 transcripts were identified in each cell, however there is large dispersion in the right tail representing many cells with significantly more transcripts (max. 1984) (Figure 1B). On average, these transcripts arose from 94 unique genes per cell, again with large right tail dispersion (max. 825) (Figure 1—figure supplement 1B and C). Since theoretical results highlight the importance of many cells over the number of identified genes per cell (Zhang et al., 2020), we reasoned that inclusion of the sparse cells (left tail) would strengthen the analyses and help identify large subpopulations with strong differentially expressed transcriptional programs across the different treatments. Moreover, although the gene by cell count matrix was sparse, there was very high concordance between FCZ pseudo-bulk profiles (i.e., aggregated sc counts) at day 2 and day 3 (R=0.82; Figure 1—figure supplement 2A), indicating that the assay robustly quantifies the expression of genes across different batches.
 
 To further investigate the robustness of the assay, we performed bulk RNA-sequencing of FCZ-treated cells at day 2 post-treatment (Materials and methods, ‘Bulk transcriptomics’) and compared this bulk profile with the pseudo-bulk derived from mapping sc reads to the reference genome but ignoring barcodes (unfiltered ‘pseudo-bulk’ profiles; Materials and methods, ‘Construction of pseudo-bulk profiles’). The comparison identified 6071 genes with only 172 genes not detected in one or more of the pseudo-bulk profiles. We note that missing genes were mostly lowly expressed genes in the bulk profile (Figure 1—figure supplement 2B). Moreover, day 2 and day 3 pseudo-bulk replicates were significantly correlated with the bulk RNA-sequencing (Figure 1—figure supplement 2C). This strongly suggests that the DROP-seq-derived profiles sample the C. albicans transcriptome, capture true biological signals, and primarily miss transcripts expressed at lower levels.
 
-## In isogenic UT cells, differences in cell transcriptional profiles highlight metabolic and stress responses coupled with cell cycle checkpoints
+### In isogenic UT cells, differences in cell transcriptional profiles highlight metabolic and stress responses coupled with cell cycle checkpoints
 
 As described above, mid-log phase cells grown under standard conditions were collected for sc profiling. In addition to sc transcriptomes, ‘bulk’ DNA-sequencing profiles were generated to verify strain isogenicity (Materials and methods, ‘Whole-genome DNA-sequencing’).
 
@@ -69,13 +81,33 @@ To identify the main sources of cell-to-cell variability in UT cells (N=5062 cel
 
 The score of each signature was measured in each UT cell profile (Materials and methods, ‘Cell clustering, trajectory, and signature analyses’); the most variable signatures are displayed in Figure 2A and B. One large group of cells exhibited elevated expression of genes involved in both M phase and the heat-shock response (cell indices >3000), consistent with a study linking these two processes (Senn et al., 2012). We also found that a small group of cells with very high expression of heat-shock response exhibited the lowest expression of M and S phase, glycolysis, and RP-coding-related genes (cell indices ~2700–3000). These few cells likely experienced cell cycle arrest due to high levels of cellular stress. Most other M phase cells with relatively high expression of heat-shock protein-coding genes (indices 3000–5000) also exhibited high expression of glycolysis-related genes. In contrast, cells with the least evidence of M phase expression, sometimes exhibited high S phase gene expression, low expression of the heat-shock signature, and relatively high expression of the oxidative stress signature (cell indices 0–2700, Figure 2A and B). Overall, these results indicate that expression heterogeneity in UT cells is primarily related to different cell cycle phases, distinct stress responses, and metabolic states. Of note, the UT cells were grown in rich media without exposure to any known stressors.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Expression levels (VISION scores) of curated signatures for individual UT cells. Cell order is the same in all graphs. (C) Scatterplot of cells (dots) based on expression level after imputation. Colors indicate: red, TTR1 expression >1.2 and HSP70 expression <1.2; green, TTR1 expression <1.2 and HSP70 expression >1.2; black, both TTR1 and HSP70 expression >1.2; and gray, expression of both genes was <1.2. Distributions of expression are illustrated in histograms above and to the right and the number of cells in each group is provided in the top right of the figure. (D) Representative fluorescence micrographic image of RFP-tagged TTR1(red) and GFP-tagged HSP70 (green) in a population of isogenic cells showing the mutually exclusive nature of their expression in individual cells. (E) Plot of the mean intensities captured in microscopy images of RFP-tagged TTR1 (red) and GFP-tagged HSP70 (green).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Note the mutually exclusive expression: cells usually express either HSP70 or TTR1, but not both.
+
 To further investigate the hypothesis that UT cells differentially express genes involved in specific stress responses, we chose gene pairs predicted to have mutually exclusive expression in any given cell based on the sc transcriptomics profiles; for example, heat-shock protein 70 (HSP70) and dithiol glutaredoxin (TTR1), which is involved in the oxidative stress response (Figure 2C; McNemar test, p-value <0.001). We constructed a dual fluorescent reporter strain expressing GFP-labeled Hsp70 and RFP-labeled Ttr1 (Materials and methods, ‘Cell imaging’). During growth in rich medium, fluorescence microscopy revealed a notable level of expression with only one of the two markers detectable in a given cell as predicted from the sc profiles (Figure 2D, E, Figure 2—figure supplement 1, McNemar test, p-value <0.001). Thus, the distinct transcriptional stress responses observed in the UT population data are not due to stress responses during sc profiling. Instead, they most likely represent the cell cycle stage and/or the metabolic condition of the cell, emphasizing the significance of metabolic- and stress-sensitive phases in the progression of the cell cycle. These results align with several previous reports that associate cell cycle phase with the expression of stress response and metabolism-related genes (Brauer et al., 2008; Chiu et al., 2011; Hossain et al., 2021; Senn et al., 2012).
 
-## Cells display distinct survival responses to FCZ
+### Cells display distinct survival responses to FCZ
 
 We next investigated the C. albicans response to antifungal compounds using fungistatic FCZ (1 µg/ml, 1–2 × MIC50, Figure 3—figure supplement 1A), and fungicidal CSP (1 ng/ml, <0.03 × MIC). These concentrations were chosen to ensure a sufficient number of survivors. FCZ targets Erg11p, which encodes an enzyme central to ergosterol biosynthesis and membrane integrity (Odds et al., 2003; Thamban Chandrika et al., 2018; Wertheimer et al., 2016). At these concentrations, FCZ treatment slows growth relative to UT controls in the first days after exposure (Figure 3—figure supplement 1B). Since tolerance to FCZ should be evident after 2 days of incubation in the presence of the drug (Gerstein and Berman, 2020), we profiled our C. albicans cell subpopulations at 2 and 3 days post-exposure using drug disk assays (Appendix 1). Finally, we also investigated the C. albicans response to low doses of RAPA (MIC80 <1 µg/ml, 0.5 ng/ml; 0.0005× MIC) (Cruz et al., 2001). RAPA is known to inhibit tolerance to FCZ (Rosenberg et al., 2018).
 
 We focused on 11,309 good-quality cells captured at 2 or 3 days post-exposure to FCZ, CSP, and RAPA, in addition to the 5062 UT cells. Unsupervised analysis was used to identify similar clusters of cells. The analysis first uses a deep generative neural network (scVI) to transform the high-dimensional expression profiles down to lower dimensions, followed by Leiden clustering to identify groups of cells that have similar expression profiles (Materials and methods, ‘Quality control, basic processing, and normalization of the sc profiles’, ‘Cell clustering, trajectory, and signature analyses’). This revealed five main clusters containing 92% of all N=16,371 cells, in addition to ~20 small clusters. We used Uniform Manifold Approximation and Projection (UMAP) to visualize these patterns in 2D; cells are colored by their cluster assignment (Figure 3A). To investigate the resilience of the cell clusters, we randomly repeated the clustering process 100 times, each time using a random subset consisting of 95% of the cells. Cells originally assigned to four of the main clusters almost always remained in that cluster (Figure 3—figure supplement 1C). A significant portion of cells allocated to the (smaller) cluster 5 (5-purple, N=501 cells, 3%) were categorized together with cluster 3 cells, which is indicative of only subtle gene expression differences and suggests the two clusters are collapsed (Figure 3—figure supplement 1C). The most variable signatures across clusters are displayed in Figure 3C, where color corresponds to the average score (z-score, color bar) across all cells within each cluster. UT cells are primarily found in cluster 3-green and to a lesser extent in cluster 2-pink (Figure 3B). CSP cells were mostly found in cluster 1-darkpink while RAPA cells were mostly found in cluster 2-lightpink (Figure 3B). Biological inferences associated with each of these clusters are further described in Appendix 2. The remaining 3% of cells (N=573) were outliers scattered across ~20 distinct clusters (‘comet’-like cluster-darkblue; Figure 3A). The ‘comet-like’ clusters appear in random directions from the five main clusters. This pattern suggests that the small set of cells in each comet have strong transcriptional similarity, but each such comet is transcriptionally distinct from other comets. The comets were primarily observed in FCZ survivors at 2 days (Figure 3B); an investigation of the relevant biology underlying comets is discussed in Appendix 2.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig3-v2.jpg)
+
+**Figure 3.:** (A) Uniform Manifold Approximation and Projection (UMAP) embedding of all cells including untreated (UT) cells and cells treated with fluconazole (FCZ) (days 2 and 3), rapamycin (RAPA) (day 2), and caspofungin (CSP) (day 2). Leiden clustering identified five main clusters and ~20 sparsely populated ‘comets’. (B) Dotplot describing relative size of cluster populations. Rows correspond to clusters and columns correspond to drug_day conditions. Dot diameter is proportional to the fraction of cells from each condition for a given cluster. The dot color is proportional to the fraction of cells from each cluster for a given condition as shown in the color bar. Numbers in parentheses indicate the total cell count in clusters and drug_day conditions. (C) A heatmap depicting the level of activation (VISION z-scores) of different signatures. (D–G) The UMAP embedding from panel (A) but where color depicts: (D) density of FCZ at day 2 cells, (E) density of FCZ at day 3 cells. (F,G) Signature scores for expression of (F) ribosomal protein (RP), (G) and heat-shock stress (HSP) signatures.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Minimum inhibitory concentration (MIC) of fluconazole (FCZ) determined for strain SC5314. Optical density of cultures grown in liquid YPD for 24 and 48 hr at 30°C in the presence of indicated concentrations of FCZ. Dotted line indicates the threshold for 50% reduction in growth relative to the no-drug control at 24 hr (MIC50). Data represents four technical replicates; means are depicted as solid lines. (B) Growth curves for three biological replicates of untreated (UT) cells and of FCZ-treated cells. (C) To assess cluster stability, unsupervised clustering was performed 100 times, each time choosing a random subset of 95% of the cells. The heatmap represents the number of times each cell (x-axis) was assigned to each of the main five clusters from Figure 3C. We can see that cells that were originally classified as cluster 3 or 5 were often placed in the same cluster, suggesting these two clusters may be collapsed together. The remaining clusters (1, 2, 4) are all highly stable, meaning that there is strong evidence of differences in the underlying transcriptional profiles of cells in these clusters.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Empirical cumulative distribution function (ECDF) of signature scores for each cell in the distinct clusters (color) presented in Figure 3B. The y-axis provides the proportion of cells in each cluster whose score falls below a certain value (x-axis). (B) Gene ontology (GO) enrichment for genes identified as differentially expressed in fluconazole (FCZ) Ribo-dominant (Rd) cell cluster 1 compared to FCZ Stress-dominant (Sd) cell cluster 4 using pseudo-bulk differential expression analysis (N=223 and 463 genes overexpressed in Rd [left] and Sd [right] cells, respectively; FDR <0.1). The size of the dot is proportional to the number of genes in the list which overlap with the corresponding GO term. (C) Empirical cumulative distribution function (ECDF) of signature scores for each distinct cluster (color) across the processes of Figure 3C.
 
 Interestingly, a clear bifurcation in the FCZ survivor cell population was evident in the sc transcriptional profile by day 2 (Figure 3D), corresponding to clusters 1-darkpink and 4-turquoise of Figure 3A. We term these two distinct states the Ribo-dominant (Rd) state and the Stress-dominant (Sd) state, respectively. The bifurcation between the Rd and Sd states becomes more pronounced by day 3 (Figure 3E), with nearly every surviving FCZ-treated cell appearing in either the Rd or Sd state.
 
@@ -87,7 +119,7 @@ By contrast, 567 genes are more highly expressed in the Sd state; this set of ge
 
 The sc profiles revealed that isogenic cells that survived FCZ treatment are found in one of two distinct states at days 2 and 3. This highlights the heterogeneity of cellular responses to FCZ treatment, which may be associated with drug tolerance and clarifies that one state (Rd) is enriched in ribosome and translation-related functions while the other state (Sd) is enriched in genes related to genes identified in the stress responses including the UPR and drug tolerance.
 
-## Drug tolerance in C. albicans may involve the ribosome assembly stress response to facilitate a transition from the Rd to Sd state
+### Drug tolerance in C. albicans may involve the ribosome assembly stress response to facilitate a transition from the Rd to Sd state
 
 The Rd state, evident on days 2 and 3, is marked by increased expression of RP and rRNA processing genes. Proper ribosomal biogenesis requires a balance between the synthesis of RP and rRNA. An imbalance between RP and rRNA processing can lead to proteotoxic stress and RP aggregation (Tye et al., 2019). This stress and aggregation activate the ribosome assembly stress response (RASTR) in yeast, which involves heat-shock transcription factor Hsf1 (Albert et al., 2019). Hsf1 subsequently upregulates HSP90 and other protein folding-related genes, including HSP70, which are upregulated in the Sd state cells. In this context, we propose that the drug tolerance response in C. albicans may involve RP aggregation (in Rd cells), which activates RASTR, and induces the expression of Hsf1 (in Sd cells). This process might allow cells to transition from the Rd to Sd state, where genes implicated in drug tolerance are expressed.
 
@@ -95,11 +127,52 @@ To test this hypothesis, we collected a list of C. albicans orthologs of S. cere
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81406/elife-81406-fig4-v2.jpg)
 
-**Figure 4.:** Figure 3A, which contains fluconazole (FCZ) day 2 and day 3 cells.Here, each Ribo-dominant (Rd) and Stress-dominant (Sd) cell is colored by its signature score for: (A) C. albicans orthologs of genes upregulated in ribosome assembly stress response (RASTR) and (B) constitutive targets of Hsf1.
+**Figure 4.:** Here, each Ribo-dominant (Rd) and Stress-dominant (Sd) cell is colored by its signature score for: (A) C. albicans orthologs of genes upregulated in ribosome assembly stress response (RASTR) and (B) constitutive targets of Hsf1.
+
+**Table 1.**
+ (A) Orthologous genes in C. albicans associated with ribosome assembly stress response (RASTR) in S. cerevisiae.(B) Constitutive Hsf1 target genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">RASTR signature (Albert et al., 2019)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DOWN</td>
+      <td>Ribosome processing</td>
+      <td>ASC1, RPL10, RPL10A, RPL11, RPL12, RPL13, RPL14, RPL16A, RPL17B, RPL18, RPL19A, RPL2, RPL20B, RPL21A, RPL23A, RPL24A, RPL25, RPL27A, RPL28, RPL30, RPL32, RPL35, RPL37B, RPL38, RPL39, RPL42, RPL5, RPL6, RPL8B, RPL9B, RPP0, RPP1B, RPS1, RPS10, RPS12, RPS13, RPS14B, RPS15, RPS16A, RPS17B, RPS18, RPS19A, RPS20, RPS21, RPS21B, RPS22A, RPS23A, RPS25B, RPS26A, RPS27, RPS27A, RPS3, RPS5, RPS6A, RPS7A, RPS8A, RPS9B, UBI3, YST1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">UP</td>
+      <td>Protein folding, response to heat, proteolysis</td>
+      <td>UBI4, RPN4, PIN3, STF2, KAR2, MSI3, HSP60, HSP90, HSP70, SIS1, SSA2, HSP104, HSP78, STI1</td>
+    </tr>
+    <tr>
+      <td>Glucose and pyruvate metabolic process</td>
+      <td>CYP1, PMA1, GLK1, TDH3, CDC19, PGK1</td>
+    </tr>
+    <tr>
+      <td>Unknown function</td>
+      <td>MBF1, KRE30, YDJ1, YBN5, ACT1, UBC4</td>
+    </tr>
+    <tr>
+      <td colspan="3">Hsf1 constitutive targets (Leach et al., 2016)</td>
+    </tr>
+    <tr>
+      <td colspan="3">ACE2, ADAEC, AHA1, ALO1, ALS1, ALS3, ALS4, ASR1, BOI2, BUL1, CCP1, CDC37, CDC48, CPR6, CRD2, CTF1, CYC1, CYP1, ERG2, GAP1, GIT3, GLX3, GOR1, GPX2, GPX3, GRP2, HCH1, HSF1, HSP104, HSP21, HSP60, HSP70, HSP78, HSP90, IFA14, ITR1, KAR2, MDJ1, MGE1, MIA40, MNN24, MSI3, PDC11, PGA56, PGA62, POR1, ROB1, RPM2, RPN4, RPS27A, SBA1, SBP1, SGT2, SIS1, SOK1, SSA2, SSC1, STI1, TRX1, TSA1, TSA1B, YDJ1, YWP1, ZCF35, ZPR1, ZWF1</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+    </tr>
+  </tbody>
+</table>
 
 Ifh1 is also a key component of RASTR control and signaling (Albert et al., 2019), and the vast majority of the targets for this transcription factor are RP genes (N=144 genes of which 41 are putative or uncharacterized genes; 64 RP) (Wade et al., 2004). Of these, 103 are detected at significant levels in our sc profiles. As shown previously, the RP genes are highest in Rd and lowly expressed in Sd.
 
-## The Rd and Sd subpopulations persist at 6 days post-FCZ treatment
+### The Rd and Sd subpopulations persist at 6 days post-FCZ treatment
 
 Next, we explored whether the Rd and Sd subpopulations would persist once they were no longer exposed to the drug. On day 3 the FCZ-exposed cultures were transferred to YPD without drug and sc profiling was conducted 3 days later (FCZ day 6, Figure 1A, Materials and methods, ‘Strains, media, and drug treatment’). Figure 5A shows the UMAP embedding of the sc transcriptional profiles, using only the FCZ day 3 and FCZ day 6 survivor populations.
 
@@ -133,19 +206,19 @@ Whereas nearly every RAPA-treated cell had an Sd transcriptional profile, nearly
 
 After resuspension in fresh media and 3 days of growth (day 6), both the Sd and Rd subpopulations persist. In fact, now Sd outnumbers the Rd subpopulation. Their persistence hints that these surviving cells have some ‘memory’ of treatment with FCZ. In the case of Rd cells, there are few transcriptional changes between days 3 and 6. For Sd, there is a downregulation of the heat-shock response and an increase in the alcohol dehydrogenase pathway, suggestive of cellular proliferation in the fresh medium. Sd cells at day 6 still however largely retain differential expression of genes, pathways, and proteins identified in Sd cells at day 3.
 
-## Conclusions
+### Conclusions
 
 The use of a nanoliter droplet-based assay adapted for fungal cells enabled a detailed sc analysis of C. albicans in the absence and presence of antifungal drugs over a period of days. The assay was cost-effective and encountered minimal issues or failed runs. Studies of thousands of individual cells enriched our understanding of community structure and population heterogeneity. Specifically, this study refines published bulk transcriptome studies by differentiating between genes, pathways, and responses that are expressed universally in all cells, and those that are restricted to specific subpopulations. Here, by examining cellular trajectories across populations in a high-throughput manner, we obtained new insights into time-sensitive processes, such as the emergence of drug tolerance during 2–3 days of drug exposure and the existence of cells with Rd and Sd states, which reflect two different cellular states within the RASTR response described as a molecular signature of an S. cerevisiae stress response. If the Rd response proves generalizable to other drug treatments, disrupting the Rd to Sd tolerance transition or the Sd response itself could represent an innovative therapeutic approach for other antifungal treatments.
 
 ## Materials and methods
 
-## Strains, media, and drug treatment
+### Strains, media, and drug treatment
 
-## C. albicans cultures for sc-RNA-, bulk RNA- and DNA-sequencing
+#### C. albicans cultures for sc-RNA-, bulk RNA- and DNA-sequencing
 
 C. albicans SC5314 cells were streaked out from glycerol stocks in –80°C on YPD agar plates (2% D-glucose, 2% peptone, 1% yeast extract, 0.01% uridine, 2% agar) and incubated at 30°C for 48 hr. Afterward, a single colony of cells was transferred into YPD liquid media (2% D-glucose, 2% peptone, 1% yeast extract, 0.01% uridine) and incubated at 30°C for 12–16 hr.
 
-## Preparation for sc profiling via DROP-seq
+#### Preparation for sc profiling via DROP-seq
 
 For UT cells, a single colony of SC5314 cells were transferred to 5 ml YPD and grown overnight to yield ~108 cells/ml. Cultures were then diluted to an OD600 of 0.1 in fresh 50 ml YPD liquid and incubated at 30°C in a shaker incubator. Cells were collected when OD reached 0.5–0.9 in order to maximize the number of cells in mid-log phase. Cells were pelleted by centrifugation, 1 ml of RNAlater was added (Sigma # R0901), the suspended cells were incubated for 10 min at room temperature, and the resulting culture was frozen at –20°C for later use.
 
@@ -155,21 +228,21 @@ FCZ (Sigma #F8929) was used at 1 µg/ml, which is from 1× to 2× the dosage rel
 
 At each time point, cultures were collected and strained (pluriStrainer 20 µm, pluriSelect) before placement in fresh tubes. Straining was done in order to minimize the likelihood of clogging in the microfluidic due to rare but large hyphae and pseudohyphae morphologies. We observed that germ tubes up to four times the length of the mother cell can still be processed for DROP-seq analysis. Such cells are well within the hyphal transcriptional profile (Nantel et al., 2002), suggesting that our results may contain some profiles of hyphae and pseudohyphae cells. After filtering, the vast majority of cells were in the yeast white morphology with less than 0.2% of cells in a filamentous morphology (hyphae or pseudohyphae) after manual counting ~100 microscopy images with an average of ~50 cells per slide for each such population. All cultures yielded a sufficient population of survivors for downstream sc transcriptional profiling, bulk transcriptional profiling, bulk DNA genomic profiling, and/or microscopy. Cultures were washed with 1 ml of RNAlater twice. Cells were then resuspended in 1 ml RNAlater and incubated at room temperature for 10 min before storage at –20°C until sc profiling with DROP-seq.
 
-## Cultures for OD600 analyses
+#### Cultures for OD600 analyses
 
 Three cultures were inoculated with single cultures and incubated overnight in YPD at 30°C. The following morning, cultures were diluted to an OD600 of ~0.5 in either fresh YPD or YPD with 1 µg/ml FCZ (same concentration used for the DROP-seq experiment). OD600 was measured immediately without dilution, then every 24 hr via a 1:100 dilution for a total of 72 hr (Figure 3—figure supplement 1A). To investigate the growth of day 3 FCZ survivors, three cultures previously grown for 72 hr in either YPD or YPD with 1 ug/ml FCZ were diluted to an OD600 of ~0.5 in fresh YPD without drug. OD600 was measured immediately without dilution and then every 24 hr via a 1:100 dilution for a total of 72 hr (Figure 5I).
 
-## Spheroplasts
+### Spheroplasts
 
 The C. albicans setting required an optimized protocol for the removal of the cell wall and to induce stable spheroplasts for sc profiling. Toward this end, we experimented with different concentrations of zymolyase (0.1, 0.2, and 0.4 U zymolyase (BioShop # ZYM002) with 107 cells in 100 µl of sorbitol 1M) at different time points (incubated at 37°C for 10, 20, 30 min) before processing with the DROP-seq. To compare cultures grown under different conditions, cells were stained with calcofluor white and imaged using a Leica DM6000 microscope. We concluded that concentrations in the range 0.15–0.25 U after 25 min are able to induce spheroplasts that remain sufficiently stable for processing with our DROP-seq.
 
-## Sample preparation for sc profiling
+### Sample preparation for sc profiling
 
 At the time of DROP-seq profiling, an aliquot of 107 (OD600=0.68) cells was separated from the culture in Materials and methods, ‘Strains, media, and drug treatment’, and washed three times with sorbitol 1M solution. The cells were then resuspended in 100 μl sorbitol 1M+0.25 U zymolyase and incubated at 37°C for 25 min (as per our findings in Materials and methods, ‘Spheroplasts’). Next, the cells were pelleted and resuspended again in 0.5 ml of cold and fresh RNAlater for 5 min. Now, the cells were washed (centrifuged and pelleted) with 1 ml of washing buffer (1 M sorbitol, 10 mM TRIS pH 8, 100 µg/ml BSA) three times. Finally, 106 cells (OD600=0.08) were resuspended in 1.2 ml of the washing buffer. This cell suspension was then used as input to the DROP-seq device.
 
 Sample preparation generally follows the protocol given by Macosko et al., 2015, with some exceptions. Whereas Macosko et al. recommend a ratio of 100K mammalian cells to 120K beads for DROP-seq, we found that a ratio of 1M cells for 120K beads generated a sufficient yield of cDNA as per the Tapestation (Agilent Inc) device. Jackson et al., 2020, use 5M cells as input to the Chromium (10X Inc) system. Furthermore, whereas Macosko et al. use 1 ml of lysis buffer, we use 1.2 ml. Instead of 13 PCR cycles, we use 17 (Jackson et al. uses 10 cycles). Samples were sequenced using a NEXT-seq 500 (Illumina Inc) following the standard Macosko et al. protocol set to yield an estimated 200 million reads/sample.
 
-## Quality control, basic processing, and normalization of the sc profiles
+### Quality control, basic processing, and normalization of the sc profiles
 
 All computations were performed using Python version 3.9.6 (van Rossum and Drake, 2009) or R version 4.0.4 (R Development Core Team, 2021). Gene abundances were estimated from raw sequencing data using the end-to-end pipeline alevin-fry (He et al., 2021) which performs UMI deduplication and reduces the number of discarded (multimapped) reads. The pipeline utilizes a reference index covering the spliced transcriptome extracted from the latest version of C. albicans strain SC5314_A22 (haplotype A, version 22; GCF_000182965.3). The Unspliced-Spliced-Ambiguous (USA) mode was used to separately keep track of the types of transcripts from which UMIs are sampled. A gene-by-cell matrix for each sample was obtained by summing reads labeled as either ‘spliced’ or ‘ambiguous’ by alevin-fry.
 
@@ -177,17 +250,17 @@ We started by filtering genes from downstream analyses with a zero sum count (th
 
 We then use scVI (Gayoso et al., 2021; Lopez et al., 2018) version 0.12.2, a Bayesian deep neural network architecture which implements a probabilistic model of mRNA capture and uses a variational autoencoder to estimate priors across batches and conditions. Models were built using default parameters for different grouping of samples: (i) UT cells, (ii) UT cells and CSP, RAPA, FCZ treated at day 2 (and 3), and (iii) FCZ-treated cells at days 3 and 6. All models were adjusted for batch and library size. We trained scVI’s variational autoencoder and stored the latent representation for visualization and downstream analyses. We reduced the inferred latent spaces to two dimensions via the UMAP tool using the implementation of umap-learn (McInnes et al., 2020) in SCANPY (Wolf et al., 2018) (min_dist = 0.3). When analyzing the level of expression of individual genes, missing or dropout values were first imputed using MAGIC (van Dijk et al., 2018).
 
-## Bulk transcriptomics
+### Bulk transcriptomics
 
 Total RNA was extracted from FCZ-treated cells at day 2 post-exposure, which were grown according to Materials and methods, ‘Preparation for sc profiling via DROP-seq:’, using the QIAGEN RNeasy mini kit protocol. RNA quality and quantity were determined using a Bioanalyzer (Agilent Inc). Paired-end read sequencing (2×50 bp) was carried out on a NextSeq500 sequencer (0.5 Flowcell High Output; Illumina Inc). Raw reads were pre-processed with the sequence-grooming tool cutadapt (Martin, 2011) version 0.4.1 with quality trimming and filtering parameters: --phred33 --length 36 -–2colour 20 --stringency 1 -e 0.1. Each read pair was mapped against C. albicans strain SC5314_A22 (haplotype A, version 22; GCF_000182965.3) downloaded from the NCBI using STAR (Dobin et al., 2013) version 2.7.9a with the following filtering parameters: --outSAMmultNmax 1 --outSAMunmapped Within --outSAMstrandField intronMotif. We obtained ~13 million reads of which 88% were uniquely mapped along the genome. The read alignments and C. albicans genome annotation strain SC5314_A22 (haplotype A, version 22; GCF_000182965.3) were provided as input to featureCounts() from the Rsubread package (Liao et al., 2019) version 2.4.3 to estimate gene abundances. The following parameters were used: isPairedEnd = TRUE, countReadPairs = TRUE, requireBothEndsMapped = TRUE, checkFragLength = FALSE, countChimericFragments = FALSE, countMultiMappingReads = TRUE, fraction = TRUE.
 
-## Construction of pseudo-bulk profiles
+### Construction of pseudo-bulk profiles
 
 Throughout the manuscript, pseudo-bulk profiles refer to transcriptional profiles that are derived from the sc reads by ignoring barcodes. This pipeline is depicted in Figure 1—figure supplement 2A. By ignoring the R1 (left) read of the sc profile that contains the cellular barcode, we are effectively performing ‘bulk’ RNA-sequencing using only the R2 (right) read that aligns to a transcript in the sample. This collapses all cells to a single profile. We compared two different techniques to compute pseudo-bulk profiles, or we can first use the barcoded reads to partition cells into classes (e.g., Rd versus Sd) and then form a pseudo-bulk profile specific to each of the classes. The unfiltered pseudo-bulk data is derived from counting raw reads aligned to the reference genome using the STAR tool (Dobin et al., 2013). The filtered pseudo-bulk dataset is obtained by first applying our sc pipeline (alevin-fry followed by EmptyDrops) and then summing across all cells. The first is closer in spirit to true bulk (single read) profiling, while the second approach filters reads, cells, and genes in the same manner as sc analyses and therefore represents a middle point between bulk and sc profiling. A comparison of filtered pseudo-bulk FCZ profiles at day 2 and 3 datasets indicated that the assay is robustly quantifying the expression of genes across different batches (Figure 1—figure supplement 2A).
 
 A comparison of bulk profiles versus unfiltered pseudo-bulk for the FCZ profiles at days 2 and 3 indicated that both methods identified all but 297 of the same genes. The missed genes tended to be expressed at low levels in the bulk profiles (Figure 1—figure supplement 2B). Moreover, day 2 and day 3 pseudo-bulk profiles were significantly correlated with ‘true’ bulk RNA-sequencing profiles (R ranges from 0.67 to 0.74; Figure 1—figure supplement 2C). Here ‘true’ bulk RNA-sequencing profiles were generated as described in Materials and methods, ‘Bulk transcriptomics’.
 
-## Whole-genome DNA-sequencing
+### Whole-genome DNA-sequencing
 
 C. albicans populations were grown as described in Materials and methods, ‘Strains, media, and drug treatment’, although we did not apply a cell filtration step to remove filamentous cells. Preparation of genomic DNA used the MasterPure Yeast DNA Purification Kit (Lucigen # MPY80200) with a NextSeq500 – 1 flowcell mid output (130M fragments), 150 cycles pair-end reads (maximum 2×80 nt), yielding on average 23.9 million reads per sample (1 UT, FCZ at days 2, 3, 6, and 12). This gives an expected sequencing depth of 224 since the size of the C. albicans genome is ~16 Mb.
 
@@ -195,7 +268,7 @@ Raw reads were pre-processed with the sequence-grooming tool cutadapt (Martin, 2
 
 Restricting attention to the UT samples, our observed sequencing depth was just under 200 and we identified approximately the same number of single nucleotide polymorphisms (N=3304) and the same number of insertions/deletions (181/255 resp.) as a previous whole-genome sequencing effort (Cuomo et al., 2019) using their bioinformatic pipeline. Although mutations were observed in some reads at some genomic loci, the samples were not enrichment for mutations that occurred more often than the rate of sequencing error which is 10–3 after correcting for multiple testing. This error rate is in line with estimates of the spontaneous mutation rate for C. albicans (Ene et al., 2018), together suggesting that the population is near isogenic without any significantly large subclones. Given that the error rate for copy number variants (e.g. loss, amplification) is lower than polymorphisms (Ene et al., 2018) and the duration of cell expansion before drug exposure (<2 days), it would be unlikely that spontaneous mutations explain the degree of heterogeneity that was observed 2–3 days post-drug exposure.
 
-## Cell clustering, trajectory, and signature analyses
+### Cell clustering, trajectory, and signature analyses
 
 To identify subpopulations of cells with similar gene expression patterns in an unbiased, unsupervised manner, we applied Leiden clustering (Traag et al., 2019) on the latent space generated by scVI (resolution of 0.5 for the analysis combining UT, FCZ day 2 and 3, CSP, and RAPA-treated cells and resolution of 0.4 for FCZ day 3–6 analyses). To test the robustness of the clustering process, we repeated the clustering process 100 times, each time using a random subset of 95% of the cells. With each such random set, we repeated the scVI model building, followed by Leiden clustering to identify clusters. The mapping from the original clusters to the new clusters was then established based on the maximum overlap in cell membership between the original and newly formed clusters. Finally, we counted the frequency that each cell was assigned to each cluster over all the iterations.
 
@@ -207,19 +280,19 @@ Briefly, signatures of cell cycle phases were identified as transcriptional expr
 
 The signature analyses start with the VISION tool which estimates a signature score for every cell (DeTomaso et al., 2019) using the batch-adjusted normalized counts returned by scVI’smodel. The distribution of individual scores for cells classified in each cluster can be depicted using the empirical cumulative distribution function. These distributions were further compared using the Kolmogorov-Smirnov test. We then used the median to summarize signatures scores of cells within each cluster and selected signatures which were the most variable across clusters (sd >0.05 for the analysis combining UT, FCZ- day 2 and 3, CSP-, and RAPA-treated cells or combining FCZ-treated cells at days 3 and 6; ). Heatmaps were used to depict the median scores (z-score, color bar) of the selected signatures for each cluster.
 
-## DGE analysis
+### DGE analysis
 
-## Sc differential gene expression (DGE)
+#### Sc differential gene expression (DGE)
 
 scVI’s model allows us to approximate the posterior probability of the alternative hypotheses (genes are different) and that of the null hypotheses through repeated sampling from the variational distribution, thus obtaining a low variance estimate of their ratio (i.e., Bayes factor). We used this approach to identify genes differentially expressed in the combined and individual comet clusters compared to the other clusters (Appendix 2—figure 2A, B).
 
-## Pseudo-bulk DGE and gene ontology (GO) enrichment analysis
+#### Pseudo-bulk DGE and gene ontology (GO) enrichment analysis
 
 We also conducted pseudo-bulk differential gene expression analyses which allow for a dramatic reduction in the number of zeros in the data by aggregating cells within each replicate. This approach has been found to achieve the highest fidelity to the experimental ground truths significantly reducing the risk of false discoveries (Squair et al., 2021). As described in Materials and methods, ‘Construction of pseudo-bulk profiles’, filtered pseudo-bulk profiles were obtained by summing counts of selected cells within each replicate. In order to use DESeq2 (Love et al., 2014), a standard R/Biocoductor package used for differential analysis of count data, we require at least two replicates within each group of comparison. If only one replicate was available (e.g., FCZ at day 6), we partitioned the selected cells of a single replicate into two groups randomly before forming pseudo-bulk profiles. We then used DESeq2 default parameters to perform DE analysis and selected genes with Benjamini-Hochberg FDR <0.1 (Benjamini and Hochberg, 1995). Models were adjusted for batch affects where relevant.
 
 Finally, we identified enrichment of biological processes in lists of significantly over- and under-expressed genes using the R/Bioconductor ViSEAGO package (Brionne et al., 2019). ViSEAGO includes all algorithms developed in the R/Bioconductor topGO package including the weight01 fisher test that takes into account the topology of the GO graph (Alexa et al., 2006). Biological processes with weight01 p-value <0.01 were defined as significantly enriched in the gene list.
 
-## Cell imaging
+### Cell imaging
 
 To validate the subpopulation structure identified by the sc transcriptomics, we choose markers representative of distinct clusters. Cells were transformed with GFP and RFP fusion constructs for HSP70 and TTR1 marker genes respectively using a CRISPR/Cas9 protocol (Min et al., 2016) with primers described in Figure 2—source data 2. Strain SN76(his1Δ/his1Δ, arg4Δ/arg4Δ, ura3Δ/ura3Δ) was chosen for gene tagging since it is a derivative strain of SC5314 but with multiple auxotrophic markers. These markers allow for convenient selection of successfully transformed cells.
 

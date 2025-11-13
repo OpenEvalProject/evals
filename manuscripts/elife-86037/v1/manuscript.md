@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/049s0rh22 Center for Cognitive Neuroscience, Dartmouth College Hanover United States
-2. https://ror.org/00hx57361 Princeton Neuroscience Institute, Princeton University Princeton United States
-3. https://ror.org/01111rn36 Department of Medical and Surgical Sciences (DIMEC), University of Bologna Bologna Italy
-4. https://ror.org/02mgzgr95 IRCCS, Istituto delle Scienze Neurologiche di Bologna Bologna Italy
+1. Center for Cognitive Neuroscience, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))
+2. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+3. Department of Medical and Surgical Sciences (DIMEC), University of Bologna Bologna Italy ([ROR:01111rn36](https://ror.org/01111rn36))
+4. IRCCS, Istituto delle Scienze Neurologiche di Bologna Bologna Italy ([ROR:02mgzgr95](https://ror.org/02mgzgr95))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ In summary, we demonstrate that a target participant’s individualized category
 
 ## Results
 
-## High-fidelity prediction with CHA
+### High-fidelity prediction with CHA
 
 We predicted category-selective topographies by projecting other participants’ functional localizer data into each participant’s native cortical topography using a new, enhanced CHA algorithm. For each participant, we calculated transformation matrices based on functional connectivity estimated during movie viewing in an iterative way (see Materials and methods). These transformation matrices resample fMRI data from others’ brains into a given participant’s cortex. We then projected the functional localizer data for all other participants into the given participant’s native cortical space and calculated independent functional contrasts based on that participant’s own localizer data and based on other participants’ localizer data projected into that participant’s cortex. We also estimated functional topographies by projecting others’ localizer data into that participant’s cortex based on high-performing surface-based anatomical alignment as a control analysis. We calculated the correlations between topographies based on participants’ own localizer contrasts and on other participants’ data. Because the localizer task comprises several scanning runs, we calculated the reliability of the localizer across runs with Cronbach’s alpha to provide an estimate of the noise ceiling for these correlations. We repeated this procedure for all participants.
 
@@ -43,21 +43,97 @@ We tested the estimation of visual category-selective functional topographies (f
 
 Category-selective topographies estimated with CHA recovered the idiosyncrasies of individuals’ topographies, capturing fine details of the individual-specific configuration and extent. By contrast, topographies estimated with anatomical alignment generated highly blurred maps that were essentially the same for all participants, losing individual-specific idiosyncratic features (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig1-v1.jpg)
+
+**Figure 1.:** (A) Face-selective topographies (faces-vs-all) and zoomed-in views of an example participant estimated from this participant’s own localizer (Own Localizer), and other participants’ localizers using CHA, and surface anatomical alignment (AA). (B) Scatter plots display the Pearson correlation coefficients between estimated face-selective topographies based on own localizer data and other participants’ localizer data in individual participants in four different datasets. The y-axis corresponds to correlations between each target participant’s own localizer-based face-selective topographies and face-selective topographies estimated from other participants using CHA. The x-axis corresponds to correlations between each target participant’s own localizer-based face-selective topographies and face-selective topographies estimated from other participants with surface-based anatomical alignment. (C) Bar plots show the mean correlations across participants in four datasets (Budapest & Sraiders: n = 20; Forrest: n = 15; Raiders: n = 9. Same sample sizes in other figures for each dataset unless noted.) and for all four category-selective topographies. Black bars stand for the mean Cronbach’s alphas across participants. Error bars indicate ±1 standard error of the mean. Category topographies were defined based on contrasts between the target category and all other categories. (D) Scatter plots of Pearson correlation coefficients using CHA and response hyperalignment (RHA) for individual participants within four different datasets for the face-selective topography. Values on the y-axis stand for correlations between each target participant’s own localizer-based topographies and topographies estimated from other participants in the same dataset using RHA. Values on the x-axis stand for correlations between each target participant’s own localizer-based topographies and topographies estimated from other participants in the same dataset using CHA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** In the enhanced connectivity hyperalignment (CHA) analysis, transformation matrices derived from projecting connectome based on the movie data in each training participant’s cortical space to the target participant’s space were applied to each training participant’s localizer runs. These steps were iterated six times, and in each step, the connectome and the localizer data were both updated. The original localizer runs were used to calculate category-selective topographies for each training participant and averaged across runs and participants to obtain the surface alignment predicted topography for the target participant. The localizer runs hyperaligned after all iteration steps were used to obtain CHA predicted topographies with similar procedures. Outside of this loop, each target participant’ own original localizer runs were used to obtain this participant’s own localizer estimated topographies.
+
 The superior performance of CHA-based estimation over anatomical-alignment-based estimation was consistent across participants, visual stimulus categories, and datasets. In all four category-selective topographies and in all four datasets, correlations between estimations based on hyperalignment and their own localizer data were significantly higher than the correlations between estimations based on anatomical alignment and each participant’s own localizer (Fisher z-transformed, p<0.001, Bonferroni corrected). We compared these correlations between topographies estimated from a participant’s own localizer data and those from other participants’ data to the reliability of the localizer, calculated with Cronbach’s alpha. Predictions made with hyperalignment were close to and sometimes even exceeded the reliability values (Figure 1B), which indicate that the predicted category-selective topographies from other participants’ data using hyperalignment were as precise and sometimes even better than the topographies estimated with their own localizer data.
 
 Estimates using CHA to calculate transformation matrices were also equivalent to estimates using RHA (Figure 1D). RHA, however, requires that all subjects watch the same movie, whereas CHA can use connectivity matrices derived from responses to different movies, potentially making our new approach more flexible. Next we tested the validity of estimating topographies using transformation matrices that were based on functional connectivities calculated from responses to different movies for the test participant and other participants.
 
-## CHA enables cross-movie predictions
+### CHA enables cross-movie predictions
 
 Experimental design considerations and constraints can make using the same stimulus across all studies and participants inadvisable, and datasets are often collected under diverse conditions. Here, we aim to test whether connectivity-based hyperalignment can predict category-selective topographies in new individuals even if their connectomes are estimated from data collected while they watched a different movie. Using this method, participants across datasets without matched time-locked functional series can benefit from those who have functional localizer data but were scanned with different naturalistic stimuli.
 
 We estimated category-selective topographies for each participant in each dataset from participants in the other dataset that used the same type of localizer (dynamic or static) by calculating transformation matrices based on functional connectivities measured while watching different movies. We also estimated topographies based on anatomical alignment. The cross-movie predictions using CHA outperformed predictions based on anatomical alignment and were nearly as precise as within-movie predictions (Figure 2A). The superior performance was consistent across datasets and categories (p<0.001 for all comparisons, Figure 2B) and in all individual participants (Figure 2—figure supplement 2). Similarly, accuracies of these predictions matched and sometimes even exceeded the reliability measures of their own localizer runs (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig2-v1.jpg)
+
+**Figure 2.:** (A) Scatter plots of Pearson correlation coefficients for individual participants in four different datasets and for four categories. Values on the y-axis stand for correlations between each target participant’s own localizer-based topographies and topographies estimated from other participants in the same movie using connectivity hyperalignment (CHA). Values on the x-axis stand for correlations between each target participant’s own localizer-based topographies and topographies estimated from participants in another dataset based on cross-movie CHA. (B) Bar plots display the mean Pearson correlation coefficients (r) and Cronbach’s alphas across participants in all four datasets for all four categories. Error bars stand for ±1 standard error of the mean. S to B: Sraiders to Budapest, B to S: Budapest to Sraiders, R to F: Raiders to Forrest, F to R: Forrest to Raiders.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Bar plots display the mean Pearson correlation coefficients (r) and Cronbach’s alphas across participants in all four datasets for all four categories. Error bars stand for ±1 standard error of the mean. The abbreviations are the same in all figures, including this one. S to B: Sraiders to Budapest, F to B: Forrest to Budapest, R to B: Raiders to Budapest, B to S: Budapest to Sraiders, F to S: Forrest to Sraiders, R to S: Raiders to Sraiders, R to F: Raiders to Forrest, B to F: Budapest to Forrest, S to F: Sraiders to Forrest, F to R: Forrest to Raiders, B to R: Budapest to Raiders, S to R: Sraiders to Raiders.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Prediction performance (Pearson r) for the face-selective topography for each individual participant using response hyperalignment (RHA), connectivity hyperalignment (CHA), cross-movie CHA, and surface alignment (AA) in all four datasets. Black dots stand for individual participants’ Cronbach’s alphas of their own face-selective topographies across localizer runs. Dashed lines are the mean values across participants. S to B: Sraiders to Budapest, F to B: Forrest to Budapest, R to B: Raiders to Budapest, B to S: Budapest to Sraiders, F to S: Forrest to Sraiders, R to S: Raiders to Sraiders, R to F: Raiders to Forrest, B to F: Budapest to Forrest, S to F: Sraiders to Forrest, F to R: Forrest to Raiders, B to R: Budapest to Raiders, S to R: Sraiders to Raiders.
+
 Cross-movie predictions of cortical topographies based on different localizer types (static to dynamic or dynamic to static) produced lower correlations than did cross-movie predictions based on the same localizer type (Figure 2—figure supplement 1), consistent with previous reports showing significant differences between topographies estimated by static and dynamic localizers, especially in superior temporal and frontal cortices (Fox et al., 2009; Pitcher et al., 2011).
 
 To demonstrate how hyperalignment increased prediction performance for individual participants from a different dataset, we plotted topographies estimated using hyperalignment and anatomical alignment, as well as from their own localizer runs (Figure 3, Figure 3—figure supplement 1 and Figure 3—figure supplement 2). Topographies between datasets recovered similar idiosyncratic features as the topographies predicted within datasets.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig3-v1.jpg)
+
+**Figure 3.:** Contrast maps for face-selective topographies (faces-vs-all) and their zoomed-in views of the ventral temporal cortex were plotted in four sample participants in (A) Budapest, (B) Sraiders, (C) Forrest, and (D) Raiders. In all four subplots, in the left-most panel, faces-vs-all maps were plotted on the sample participants’ own cortical surfaces. The next two columns display maps estimated from other participants’ data. In the right two columns, the first column presents predicted face-selective topographies from participants in the same dataset using connectivity hyperalignment (CHA). The next column presents face-selective topographies from participants in another dataset (cross-movie CHA). The zoomed-in panels are displayed accordingly with the whole-brain map. The color bar is the same as that in Figure 1. S to B: Sraiders to Budapest, B to S: Budapest to Sraiders, R to F: Raiders to Forrest, F to R: Forrest to Raiders.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Contrast maps for face-selective topographies (faces-vs-all) and their enlarged views of the ventral temporal cortex were plotted in sample participants in (A) Budapest, (B) Sraiders, (C) Forrest, and (D) Raiders. In all five subplots for the whole-brain maps, the faces-vs-all maps were plotted on the sample participants’ own cortical surfaces (left single panel). The second column presents predicted face-selective topographies from participants in the same dataset using connectivity hyperalignment (top) and surface alignment (bottom). The next three columns present face-selective topographies from participants in another dataset with the same (second column) and a different type (the last two columns) of localizers. In the four right columns, the top row presents the map using hyperalignment (HA), and the bottom row presents the map using surface alignment (AA). The enlarged panels were displayed accordingly with the whole-brain map. The color bar was the same as that in Figure 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Contrast maps of the other three categories were plotted in participants in (A) Budapest, (B) Sraiders, (C) Forrest, and (D) Raiders. In all five subplots for the whole-brain maps, the maps estimated from their own localizer runs were plotted on the sample participant (left single panel). The other columns present predicted topographies from participants in the same dataset using connectivity hyperalignment (top) and surface alignment (bottom).
+
 To further examine the topographies predicted using different datasets and compare the prediction performances to reliability measures, we calculated local correlations between maps estimated from each participant’s own localizer runs and those estimated from other participants’ runs with a searchlight analysis. We also calculated Cronbach’s alpha across localizer runs in each searchlight. Generally, searchlights in the high-level visual areas and with strong category selectivity (e.g., ventral temporal cortex, lateral temporal cortex) showed the highest mean correlation values, which often exceeded 0.8 (Figure 4, Figure 4—figure supplement 1, Figure 4—figure supplement 3, and Figure 4—figure supplement 10). The lower mean correlations in other cortices (e.g., sensorimotor cortex) reflect low reliabilities of the localizer runs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-v1.jpg)
+
+**Figure 4.:** (A, B, C, and D) The left-most column presents Cronbach’s alphas of the own-localizer-based face-selective topographies in each dataset using a searchlight analysis (15 mm radius). The next two columns present local correlations (correlation maps) using the searchlight analysis between face-selective maps estimated from participants’ own localizers and from other participants based on within-movie and between-movie connectivity hyperalignment (CHA) (hyperalignment [HA], top row) and surface alignment (AA, bottom row). Histogram plots present Cronbach’s alphas (dark gray) and coefficients for the correlation maps above (estimated with CHA in color, with AA in light gray). The left and right hemisphere histograms were plotted separately. B to S: Budapest to Sraiders, S to B: Sraiders to Budapest, R to F: Raiders to Forrest, F to R: Forrest to Raiders.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B, C, and D) The left-most column shows the Cronbach’s alphas of the own localizer-based face-selective topographies in each dataset using a searchlight analysis (15 mm radius). The next four columns show local correlations (correlation maps) using the searchlight analysis between the face-selective maps estimated from other participants based on within-movie (second column, top row) and between-movie (the next three columns, top row) connectivity hyperalignment (CHA) and surface alignment (AA, bottom row).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Histogram plots of local Cronbach’s alphas (dark gray) and local correlation coefficients between face-selective topographies estimated from own and others’ localizers across the cortex (hyperalignment [HA] in color, light gray for surface alignment [AA]) in major cortices (ventral temporal, dorsal temporal, occipital, frontal, and parietal) in the four datasets (see Figure 4 for the whole-brain maps and distributions). The left and right hemisphere histograms were plotted separately in each cortical parcel.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A, B, C, and D) The left-most column shows the Cronbach’s alphas of the own localizer-based topographies in each dataset using a searchlight analysis (15 mm radius). The next four columns show local correlations (correlation maps) using the searchlight analysis between the category-selective maps estimated from other participants based on within-movie (second column, top row) and between-movie (the next three columns, top row) connectivity hyperalignment (CHA) and surface alignment (AA, bottom row).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) In each subplot, each line with dots showed the improvement of the mean correlation across participants between the category-selective maps estimated from each participant’s own localizer runs and those estimated from participants’ data in other datasets from step 1 to step 6 using our new advanced iterative CHA algorithm. Horizontal dotted lines are the mean Cronbach’s alphas (gray) and the mean performance using response hyperalignment (RHA) (colored). (B, C, and D) had the same layout as A with participants in Sraiders, Forrest, and Raiders dataset as the prediction target.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) In each subplot, each line with dots showed the improvement of the mean correlation across participants between the category-selective maps (faces, bodies, scenes, and objects) estimated from each participant’s own localizer runs and those estimated from other participants’ data using the 1, 1–2, 1–3, 1–4, and all five runs of the Budapest movie or all four runs of the Sraiders movie. The length of each movie-viewing run in the Budapest dataset is 598 s, 498 s, 535 s, 618 s, and 803 s accordingly, and 840 s for each of the four runs in the Sraiders dataset. Horizontal dotted lines are the mean Cronbach’s alphas (red) and the mean performance based on surface alignment (gray). (B) In each subplot, each line with dots showed the improvement of the mean correlation across participants between the category-selective maps (faces, bodies, scenes, and objects) estimated from each participant’s own localizer runs and those estimated from other participants’ data using 5, 10, 15, or all 20 participants in the Budapest dataset. Horizontal dotted lines are the mean Cronbach’s alphas (red) and gray lines with dots showing the mean performance based on surface alignment.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Bar plots display the mean Pearson correlation coefficients (r) and Cronbach’s alphas across participants in all four datasets for all four categories. Bars with solid outlines stand for results based on the 1-step method, and bars with dashed outlines are based on the 2-step method. Error bars stand for ±1 standard error of the mean.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** (A, B, and C) Scatter plots of Pearson correlation coefficients with Budapest dataset, using response hyperalignment (RHA), connectivity hyperalignment (CHA), and cross-movie from Sraiders to Budapest for individual participants for the face, body, scene, and object-selective topographies. Values on the y-axis stand for correlations between each target participant’s own localizer-based topographies and topographies estimated from other participants when transformation matrices were applied to the localizer time series. Values on the x-axis stand for correlations between each target participant’s own localizer-based topographies and topographies estimated from other participants when transformation matrices were applied directly to contrast maps. (D) In each subplot, each line with dots showed the mean correlation across participants between the category-selective maps estimated from each participant’s own localizer runs and those estimated from participants’ data in other datasets from step 1 to step 6 using the new advanced iterative CHA algorithm. Darker shades stand for the performance when transformation matrices were applied to localizer time series, and lighter shades stand for the mean performance when transformation matrices were applied directly to contrast maps. Horizontal dotted lines are the mean Cronbach’s alphas (red) and the mean performance using only surface alignment (gray).
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp8-v1.jpg)
+
+**Figure 4—figure supplement 8.:** Bar plots display the mean Pearson correlation coefficients (r) across participants using all or part of the training participants for face-selective topography using connectivity hyperalignment (CHA) with the Budapest dataset. Participants were divided based on their connectivity profile similarities to the target participant and were measured using a 10 mm searchlight in the right ventral temporal cortex that was roughly at the location of the posterior fusiform face area (rpFFA). Bars in color are based on CHA, and bars in gray are based on surface alignment. Error bars stand for ±1 standard error of the mean.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp9-v1.jpg)
+
+**Figure 4—figure supplement 9.:** (A) For each participant in the Budapest and the Sraiders dataset, connectomes that described the connectivity between each target in the searchlight and each vertex on the cortex were calculated for each dataset and correlated across the two datasets. This whole-brain map shows the mean correlations across participants. (B) Histogram plots of the correlation coefficients in A in the left and the right hemisphere. (C) The two datasets were split into two halves, and similarities of the fine-grained connectivity between the two halves within and across the two movies were calculated following the same procedures above. This plot shows the mean correlations across participants and searchlights.
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/86037/elife-86037-fig4-figsupp10-v1.jpg)
+
+**Figure 4—figure supplement 10.:** Each set of brain maps shows the averaged local correlations between the category-selective map (column) estimated from other participants in the Budapest dataset based on enhanced connectivity hyperalignment (CHA) and the map estimated from their own localizers using a specific size of searchlight (row). Local correlations remained relatively similar across different searchlight sizes for all categories.
 
 ## Discussion
 
@@ -77,59 +153,59 @@ In summary, our study demonstrated that accurate predictions of individualized c
 
 ## Materials and methods
 
-## Datasets
+### Datasets
 
-## The Budapest dataset
+#### The Budapest dataset
 
 The Budapest dataset included 20 participants (mean age 27.2 years, 10 females) for this analysis. These participants were scanned while watching both Grand Budapest Hotel and Raiders of the Lost Ark and were a subset of the dataset in Jiahui et al., 2020. The Grand Budapest Hotel dataset contained five movie runs (~50 min, each part lasting 9–13 min each) and four dynamic localizer runs. Before entering the scanner, participants watched the first part of the movie (~45 min) outside. The rest of the movie was divided into five parts (each part lasting 9–13 min, ~50 min in total) and participants watched each part/run with audio. The dynamic localizer data were collected in a separate scanning section (Pitcher et al., 2011). This dataset comprised four blocked-designed runs (3.9 min each), and each run comprised 10 blocks (18 s each), two per category (faces, bodies, scenes, objects, and scrambled objects). Each block comprised six 3-s-long video clips in random order. Participants did a one-back task during the localizer scan to maintain attention.
 
 All scans in the Grand Budapest Hotel dataset were acquired using a 3 T S Magnetom Prisma MRI scanner with a 32-channel head coil at the Dartmouth Brain Imaging Center. BOLD images were acquired in an interleaved fashion using gradient-echo echo-planar imaging with pre-scan normalization, fat suppression, multiband (i.e., simultaneous multi-slice) acceleration factor of 4 (using blipped CAIPIRINHA), and no in-plane acceleration (i.e., GRAPPA acceleration factor of 1): TR/TE = 1000/33 ms, flip angle = 59°, resolution = 2.5 mm3 isotropic voxels, matrix size = 96 × 96, FoV = 240 × 240 mm2, 52 axial slices with full brain coverage and no gap, anterior-posterior phase encoding. See more details in Visconti di Oleggio Castello et al., 2020.
 
-## The Sraiders dataset
+#### The Sraiders dataset
 
 The same participants were included for analysis in the Sraiders dataset as in the Budapest dataset. The movie Raiders of the Lost Ark was split into eight parts (~15 min each), and the first four parts were watched outside of the scanner prior to the scanning (~56 min). The later four parts were watched in the scanner (57 min) with audio (Nastase, 2018). The Sraiders dataset and the Budapest dataset shared the same dynamic localizer data. The Sraiders dataset was collected with the same scan protocols as the Budapest dataset (Nastase, 2018; Feilong et al., 2022).
 
-## The Forrest dataset
+#### The Forrest dataset
 
 This dataset contains scans from 15 adults (mean age 29.4 years, 6 females). Participants were scanned at the Otto-von-Guericke University in Germany and were native German speakers (Hanke et al., 2016; Sengupta et al., 2016). The dataset is publicly available at http://www.studyforrest.org/ (Hanke et al., 2014). A shortened version of the movie Forrest Gump was divided into eight parts with each part lasting approximately 15 min. Participants watched each part/run in the scanner with audio (Hanke et al., 2016). A category-selective localizer using still images was included in this dataset. This static localizer comprised four runs (5.2 min each). Each run comprised two 16 s blocks for each of the six categories (human faces, human bodies without heads, small objects, houses and outdoor scenes that include nature and street scenes, and phase scrambled images). In each block, 16 images from one category were displayed (900 ms display + 100 ms intertrial interval each). Participants were asked to do a one-back task to maintain attention.
 
 Scanning was carried out using a whole-body 3 T Philips Achieva dStream MRI scanner equipped with a 32-channel head coil. Data were collected with gradient-echo, 2 s repetition time (TR), 30 ms echo time (TE), 90° flip angle, 1943 Hz/px bandwidth, and parallel acquisition with sensitivity encoding (SENSE) reduction factor 2. Each volume comprised 35 axial slices with anterior-to-posterior phase-encoding direction that were collected in ascending order, which mostly covered the entire brain. Each slice was 3.0 mm thick with a 10% inter-slice gap, and had a 240×240 mm2 field-of-view comprising 80×80 3 mm2 isotropic voxels. More acquisition parameters can be found in Hanke et al., 2016, and Sengupta et al., 2016.
 
-## The Raiders dataset
+#### The Raiders dataset
 
 A subset of nine participants from the original eleven participants (7 men, mean age = 24.8 years) participated in the face and object study at Dartmouth in Haxby et al., 2011, and were included in this dataset. The audio-visual movie Raiders of the Lost Ark was split into eight parts (~15 min each), similarly to those used in the Sraiders Dataset. Participants watched all eight parts in the scanner with audio (one part/per run). The Raiders dataset contains a static localizer that was similarly designed as in the Forrest dataset.
 
 Brain images were acquired using a 3 T Philips Intera Achieva scanner with an eight-channel head coil at Dartmouth College. For the movie study, whole-brain volumes of 413-mm-thick sagittal images (TR = 2.5 s, TE = 35 ms, flip angle = 90°, 80×80 matrix, FOV = 240×240 mm2, resolution = 0.938×0.938×1.0 mm3) were obtained in an interleaved slice order. For more details see Haxby et al., 2011.
 
-## MRI preprocessing
+#### MRI preprocessing
 
 All datasets were preprocessed with fMRIPrep (Esteban et al., 2019), using version 20.1.1 for the Budapest dataset, 20.2.0 for the Sraiders dataset, 20.1.1 for the Forrest dataset, and 20.1.1 for the Raiders dataset. After fMRIPrep, functional data were projected onto a standard cortical surface aligned to the fsaverage template (Fischl et al., 1999) based on cortical folding patterns. The datasets were further preprocessed following Jiahui et al., 2020; Feilong et al., 2018. The datasets were resampled to a cortical mesh with 18,742 vertices across both hemispheres (approximately 3 mm vertex spacing; 20,484 vertices before removing non-cortical vertices). Six motion parameters and their derivatives, global signal, framewise displacement (Power et al., 2014), six principal components from cerebrospinal fluid and white matter (Behzadi et al., 2007), and polynomial trends up to second order were rf out from both movie and localizer data for each run independently.
 
-## Searchlight hyperalignment
+### Searchlight hyperalignment
 
-## CHA (step 1)
+#### CHA (step 1)
 
 Each participant’s connectivity profile was built based on that participant’s movie data. We first defined the connectivity seeds and targets. In this analysis, the connectivity seeds were the same as the surface cortical vertices. The connectivity targets were defined using a sparser cortical surface with 642 vertices in each hemisphere before removing the medial wall. We then centered a 13 mm searchlight on each of these vertices and computed the average time series for the searchlight over vertices from the denser cortical model. The mean time series was assigned to the center vertex to serve as the connectivity target. For each hemisphere, the connectivity profile was calculated as the correlation between the connectivity seeds in this hemisphere and the whole-brain 1175 connectivity targets. The connectivity profile of each participant was normalized to zero mean and unit variance for each connectivity seed before hyperalignment.
 
 We used an optimized hyperalignment method that directly transforms one participant’s connectivity profile to another participant’s cortical space, without the interim step of projecting the connectome into a common model space (Jiahui et al., 2020). In detail, for each 15 mm searchlight, a participant’s patterns of connectivity to targets were aligned to another participant’s connectivity patterns using the Procrustes transformation. The transformation matrices from each searchlight in a hemisphere were then aggregated into a single transformation matrix for each pair of participants.
 
-## Response hyperalignment
+#### Response hyperalignment
 
 RHA was applied with the same steps as the CHA. The only difference is that instead of using connectivity profiles in each searchlight for each participant, we directly used the response pattern of the movie (time points of the movie × vertices in the searchlight) to align a pair of participants. In this method, response patterns in a pair of participants must be from neural responses to the same movie. Due to this restriction, RHA was only applied to participants from the same dataset.
 
-## Advanced CHA
+#### Advanced CHA
 
 Using dense connectivity targets (e.g., using all 18,742 vertices on the surface) with anatomically aligned data usually generates poor functional correspondence across participants (Busch et al., 2021). It is, however, beneficial to include more targets for calculating connectivity patterns after the first iteration of CHA and repeated iterations to lead to a better solution by gradually aligning the information at finer scales.
 
 We used six steps to further improve the CHA method. Step 1 was the initial CHA step as described above that was based on the raw anatomically aligned movie data. The resultant transformation matrices were applied to those movie runs, and the hyperaligned data were then used in step 2 to calculate new connectivity patterns and calculate new transformation matrices. We repeated this procedure iteratively six times and derived transformation matrices for each step. In steps 1, 2, and 3, 642×2 (icoorder3, before removing the medial wall) connectivity targets were defined with 13 mm searchlights. In steps 4 and 5, 2562×2 (icoorder 4, before removing the medial wall) connectivity targets were used with 7 mm searchlights to calculate target mean time series. In the final step 6, all 18,742 vertices were included as separate connectivity targets, using each vertex’s time series rather than calculating the mean in a searchlight. Each step of this advanced CHA algorithm increased the prediction performance (Figure 4—figure supplement 2).
 
-## Predicting individual contrast maps
+### Predicting individual contrast maps
 
-## Estimating contrast maps from each participant’s own localizer data
+#### Estimating contrast maps from each participant’s own localizer data
 
 We estimated each participant’s category-selective maps by calculating the unthresholded GLM univariate contrasts using his/her own localizer data in each run and averaging the t-values across all the localizer runs. We included face-, body-, scene-, and object-selective maps in the analysis. The contrast maps in each category were calculated based on the contrast of the target category vs. all the other categories. For example, the face-selective map was calculated using faces vs. all the other categories in the localizer data (e.g., bodies, objects).
 
-## Estimating contrast maps from other participants’ localizer data
+#### Estimating contrast maps from other participants’ localizer data
 
 Transformation matrices from each participant to a target participant derived from hyperalignment were applied to the localizer runs of all other participants to project their localizer data into that target participant’s cortical anatomy. These hyperaligned localizer runs and anatomical surface aligned localizer runs were used separately for GLM univariate analysis for each run in each other participant, and then averaged across the t-maps from all runs and all other participants to estimate the target participant’s contrast maps for each category.
 

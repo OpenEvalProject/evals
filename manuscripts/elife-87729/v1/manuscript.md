@@ -6,14 +6,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Center for Functionally Integrative Neuroscience, Department of Clinical Medicine, Aarhus University Aarhus Denmark
-2. https://ror.org/052gg0110 Department of Psychiatry, Oxford University Oxford United Kingdom
+1. Center for Functionally Integrative Neuroscience, Department of Clinical Medicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. Department of Psychiatry, Oxford University Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
 ## Abstract
 
-Each brain response to a stimulus is, to a large extent, unique. However this variability, our perceptual experience feels stable. Standard decoding models, which utilise information across several areas to tap into stimuli representation and processing, are fundamentally based on averages. Therefore, they can focus precisely on the features that are most stable across stimulus presentations. But which are these features exactly is difficult to address in the absence of a generative model of the signal. Here, I introduce genephys , a generative model of brain responses to stimulation publicly available as a Python package that, when confronted with a decoding algorithm, can reproduce the structured patterns of decoding accuracy that we observe in real data. Using this approach, I characterise how these patterns may be brought about by the different aspects of the signal, which in turn may translate into distinct putative neural mechanisms. In particular, the model shows that the features in the data that support successful decoding—and, therefore, likely reflect stable mechanisms of stimulus representation—have an oscillatory component that spans multiple channels, frequencies, and latencies of response; and an additive, slower response with a specific (cross-frequency) relation to the phase of the oscillatory component. At the individual trial level, still, responses are found to be highly variable, which can be due to various factors including phase noise and probabilistic activations.
+Each brain response to a stimulus is, to a large extent, unique. However this variability, our perceptual experience feels stable. Standard decoding models, which utilise information across several areas to tap into stimuli representation and processing, are fundamentally based on averages. Therefore, they can focus precisely on the features that are most stable across stimulus presentations. But which are these features exactly is difficult to address in the absence of a generative model of the signal. Here, I introduce genephys, a generative model of brain responses to stimulation publicly available as a Python package that, when confronted with a decoding algorithm, can reproduce the structured patterns of decoding accuracy that we observe in real data. Using this approach, I characterise how these patterns may be brought about by the different aspects of the signal, which in turn may translate into distinct putative neural mechanisms. In particular, the model shows that the features in the data that support successful decoding—and, therefore, likely reflect stable mechanisms of stimulus representation—have an oscillatory component that spans multiple channels, frequencies, and latencies of response; and an additive, slower response with a specific (cross-frequency) relation to the phase of the oscillatory component. At the individual trial level, still, responses are found to be highly variable, which can be due to various factors including phase noise and probabilistic activations.
 
 ## Introduction
 
@@ -27,77 +27,260 @@ Given the effects that we observe in the stimulus processing literature, and usi
 
 ## Methods
 
-## A generative model of empirical electrophysiological signals: genephys
+### A generative model of empirical electrophysiological signals: genephys
 
-While the system is unperturbed, genephys is based on sampling spontaneously varying instantaneous frequency and amplitude (i.e. square root of power) time series, frest and arest, respectively, that are analytically combined to form the sampled signal x. Amplitude and frequency are allowed to oscillate within ranges rf and ra . Instantaneous frequency here refers to angular frequency, from which we can obtain the ordinary frequency in Hertz as F2πfrest, where F is the sampling frequency of the signal. Both frest and arest are sampled separately from autoregressive processes of order one, endowing them with chaotic, non-oscillatory dynamics. Specifically, given autoregressive parameters  bf,ba<1, and Gaussian-noise variables eft,eat, I generate frest and arest for a given channel asf0rest=ef0ftrest=bfft−1rest+eftfort>0a0rest=ea0atrest=baat−1rest+eatfort>0
+While the system is unperturbed, genephys is based on sampling spontaneously varying instantaneous frequency and amplitude (i.e. square root of power) time series, $f^{rest}$ and $a^{rest}$, respectively, that are analytically combined to form the sampled signal $x$. Amplitude and frequency are allowed to oscillate within ranges $r^{f}$ and $r^{a}$ . Instantaneous frequency here refers to angular frequency, from which we can obtain the ordinary frequency in Hertz as $\frac{F}{2\pi}f^{rest}$, where $F$ is the sampling frequency of the signal. Both $f^{rest}$ and $a^{rest}$ are sampled separately from autoregressive processes of order one, endowing them with chaotic, non-oscillatory dynamics. Specifically, given autoregressive parameters  $b^{f},b^{a}<1$, and Gaussian-noise variables $e_{f_{t}}$,$e_{a_{t}}$, I generate $f^{rest}$ and $a^{rest}$ for a given channel as
 
-Without stimulation, a phase time series φrest is then built asφ0rest=0φtrest=φt-1rest+ftrest
+$$
+f_{0}^{rest}=e_{f_{0}}
+$$
 
-Then, given some Gaussian-distributed measurement noise ϵt with standard deviation σϵ , I build x (in absence of stimulation) asxtrest=atrestsin⁡φtrest+ϵt
+
+
+$$
+f_{t}^{rest}=b_{f}f_{t−1}^{rest}+e_{f_{t}}fort>0
+$$
+
+
+
+$$
+a_{0}^{rest}=e_{a_{0}}
+$$
+
+
+
+$$
+a_{t}^{rest}=b_{a}a_{t−1}^{rest}+e_{a_{t}}fort>0
+$$
+
+Without stimulation, a phase time series $\phi^{rest}$ is then built as
+
+$$
+\phi_{0}^{rest}=0
+$$
+
+
+
+$$
+\phi_{t}^{rest}=\phi_{t-1}^{rest}+f_{t}^{rest}
+$$
+
+Then, given some Gaussian-distributed measurement noise $ϵ_{t}$ with standard deviation $\sigma_{ϵ}$ , I build $x$ (in absence of stimulation) as
+
+$$
+x_{t}^{rest}=a_{t}^{rest}sin⁡\phi_{t}^{rest}+ϵ_{t}
+$$
 
 This process is done separately per channel and per trial. Note that, under no stimulation, the channel time series are (asymptotically) uncorrelated. We can think of them as dipoles in brain space. We can induce correlations for instance by projecting these time series onto a higher-dimensional space, which we can consider to be in sensor space, or by using correlated noise. Altogether, this generates chaotic oscillatory data relatively akin to real data.
 
-When a stimulus k is presented at time point τ of the trial, a perturbation is introduced into the system on the p channels that are stimulus relevant (which can be a subset of the total number of channels). When a channel is not relevant, it does not respond; when it is relevant, it responds to the stimulus with a given probability:
+When a stimulus k is presented at time point τ of the trial, a perturbation is introduced into the system on the $p$ channels that are stimulus relevant (which can be a subset of the total number of channels). When a channel is not relevant, it does not respond; when it is relevant, it responds to the stimulus with a given probability:
 
-where θj is a hyperparameter representing a channel-specific probability. In simpler words, relevant channels might respond in some trials, but not in others. In all the simulations, I set all channel probabilities to a single value, θj=θ, but other configurations are possible.
+where $\theta_{j}$ is a hyperparameter representing a channel-specific probability. In simpler words, relevant channels might respond in some trials, but not in others. In all the simulations, I set all channel probabilities to a single value, $\theta_{j}=\theta$, but other configurations are possible.
 
-Given some stimulus presentation at time point τ, a channel may respond:
+Given some stimulus presentation at time point $\tau$, a channel may respond:
 
-The timing of the effect is controlled by a response function. I use an double logarithmic response function, asymmetric around the time of maximum effect tmax . For the left side (i.e. before tmax), this function is parametrised by: δ1 , reflecting the latency of the response in number of time points; and δ2 , reflecting how many time points it takes the logarithmic function to go from zero to its maximum before it changes to the right-side logarithmic function. Therefore, tmax=δ1+δ2+τ. I introduce some noise in δ1 per trial to make the timing of the response to vary, as per δ1∼Uniform(0,σδ1) , where σδ1 is a model hyperparameter. This latency noise could be fixed for all channels (absolute stochastic latency) or has a value per channel (relative stochastic latency; Vidaurre et al., 2021). It is also possible to use different response function parametrisations per channel. For example, we can induce a diversity of latencies for the different channels by using different values of δ1 per channel, so that some channels (e.g. those more closely related to primary sensory areas) respond earlier than others (e.g. those related to associative areas). Once the activation reaches its maximum at tmax , the decay is also parametrised by a logarithmic function with a parameter δ3 , reflecting how many time points it takes the logarithmic function to go from its maximum (at tmax) to zero. A different response function can be used for each type of effect, which can be combined. The next subsection provides a full mathematical specification of the response function.
+The timing of the effect is controlled by a response function. I use an double logarithmic response function, asymmetric around the time of maximum effect $t_{max}$ . For the left side (i.e. before $t_{max}$), this function is parametrised by: $\delta_{1}$ , reflecting the latency of the response in number of time points; and $\delta_{2}$ , reflecting how many time points it takes the logarithmic function to go from zero to its maximum before it changes to the right-side logarithmic function. Therefore, $t_{max}=\delta_{1}+\delta_{2}+\tau$. I introduce some noise in $\delta_{1}$ per trial to make the timing of the response to vary, as per $\delta_{1}∼Uniform(0,\sigma_{\delta_{1}})$ , where $\sigma_{\delta_{1}}$ is a model hyperparameter. This latency noise could be fixed for all channels (absolute stochastic latency) or has a value per channel (relative stochastic latency; Vidaurre et al., 2021). It is also possible to use different response function parametrisations per channel. For example, we can induce a diversity of latencies for the different channels by using different values of $\delta_{1}$ per channel, so that some channels (e.g. those more closely related to primary sensory areas) respond earlier than others (e.g. those related to associative areas). Once the activation reaches its maximum at $t_{max}$ , the decay is also parametrised by a logarithmic function with a parameter $\delta_{3}$ , reflecting how many time points it takes the logarithmic function to go from its maximum (at $t_{max}$) to zero. A different response function can be used for each type of effect, which can be combined. The next subsection provides a full mathematical specification of the response function.
 
-With respect to the phase reset and frequency entrainment effect, the phase reset occurs before tmax , when the target phase is reached. Given condition or stimulus k, for each trial and channel,φt=φt-1+1-gtftrest+gt∇t
+With respect to the phase reset and frequency entrainment effect, the phase reset occurs before $t_{max}$ , when the target phase is reached. Given condition or stimulus k, for each trial and channel,
 
-with∇t={φk−φt,ifφk−φt∈[−π,π]φk−φt−2π,ifφk−φt>πφk−φt+2π,ifφk−φt<π
+$$
+\phi_{t}=\phi_{t-1}+1-g_{t}f_{t}^{rest}+g_{t}\nabla_{t}
+$$
 
-where, for each trial, φk is randomly sampled from a von Mises distribution with mean equal the target phase φk¯ and standard deviation σφ ; ∇t is the polar gradient between the target phase and the ongoing phase φt-1 ; and gt is the value taken by the response function at time point t. After tmax , phase resetting is over, and the phase entrainment period starts,φt=φt-1+gtfk+1-gtftrest
+with
 
-The system then entrains to a possibly stimulus-specific, possibly channel-specific, target frequency fk, with a strength that logarithmically decreases as t moves away from tmax .
+$$
+∇_{t}={\phi^{k}−\phi_{t},if\phi^{k}−\phi_{t}\in[−\pi,\pi]\phi^{k}−\phi_{t}−2\pi,if\phi^{k}−\phi_{t}>\pi\phi^{k}−\phi_{t}+2\pi,if\phi^{k}−\phi_{t}<\pi
+$$
 
-With respect to the additive oscillatory response, we consider a sinusoidal oscillator, which is damped by the action of the response function gt:yt=gtαksinωkt+γk
+where, for each trial, $\phi^{k}$ is randomly sampled from a von Mises distribution with mean equal the target phase $\phi^{k}¯$ and standard deviation $\sigma_{\phi}$ ; $\nabla_{t}$ is the polar gradient between the target phase and the ongoing phase $\phi_{t-1}$ ; and $g_{t}$ is the value taken by the response function at time point $t$. After $t_{max}$ , phase resetting is over, and the phase entrainment period starts,
 
-Here, αk reflects the amplitude of the additive oscillation, ωk its frequency, and γk its phase.
+$$
+\phi_{t}=\phi_{t-1}+g_{t}f^{k}+1-g_{t}f_{t}^{rest}
+$$
 
-For the amplitude modulation, I apply a multiplying factor to the ongoing amplitude time series:at=1+gtmkatrest
+The system then entrains to a possibly stimulus-specific, possibly channel-specific, target frequency $f^{k}$, with a strength that logarithmically decreases as $t$ moves away from $t_{max}$ .
 
-where mk is a proportional increment; for example, mk=0.1 would produce an increment of 10% in amplitude at tmax .
+With respect to the additive oscillatory response, we consider a sinusoidal oscillator, which is damped by the action of the response function $g_{t}$:
 
-With respect to the additive non-oscillatory response, we have:zt=gtsk
+$$
+y_{t}=g_{t}\alpha^{k}sin\omega^{k}t+\gamma^{k}
+$$
 
-where sk is sampled from a Gaussian distribution, N(zk¯,σz) , where zk¯ is stimulus specific.
+Here, $\alpha^{k}$ reflects the amplitude of the additive oscillation, $\omega^{k}$ its frequency, and $\gamma^{k}$ its phase.
 
-Given these elements, the signal is built asxt=atsin⁡φt+zt+yt+ϵt
+For the amplitude modulation, I apply a multiplying factor to the ongoing amplitude time series:
 
-This model can be trivially extended to have correlated noise ϵt across channels.
+$$
+a_{t}=1+g_{t}m^{k}a_{t}^{rest}
+$$
 
-Figure 1 shows two examples of how the effect of stimulation looks for one trial and one channel. The left panel corresponds to a phase resetting plus frequency entrainment effect, and the middle panel corresponds to an additive oscillation; both are accompanied by an additive non-oscillatory response. Here, the sampled signal x is shown in blue on top, and the phase φ, frequency f, amplitude a, additive non-oscillatory response z, and additive oscillatory response y are shown in red underneath. For comparison, the right panel shows real MEG data from a passive visual experiment where a number of images are shown to the subjects at a rate of one image per second (Cichy et al., 2016); the measured (filtered) signal is shown in blue, while the red curves correspond to analytical phase, frequency, and amplitude (computed via the Hilbert transform on the filtered signal). Table 1 summarises all the hyperparameters that configure the model.
+where $m^{k}$ is a proportional increment; for example, $m^{k}=0.1$ would produce an increment of 10% in amplitude at $t_{max}$ .
+
+With respect to the additive non-oscillatory response, we have:
+
+$$
+z_{t}=g_{t}s^{k}
+$$
+
+where $s^{k}$ is sampled from a Gaussian distribution, $N(z^{k}¯,\sigma_{z})$ , where $z^{k}¯$ is stimulus specific.
+
+Given these elements, the signal is built as
+
+$$
+x_{t}=a_{t}sin⁡\phi_{t}+z_{t}+y_{t}+ϵ_{t}
+$$
+
+This model can be trivially extended to have correlated noise $ϵ_{t}$ across channels.
+
+Figure 1 shows two examples of how the effect of stimulation looks for one trial and one channel. The left panel corresponds to a phase resetting plus frequency entrainment effect, and the middle panel corresponds to an additive oscillation; both are accompanied by an additive non-oscillatory response. Here, the sampled signal $x$ is shown in blue on top, and the phase $\phi$, frequency $f$, amplitude $a$, additive non-oscillatory response $z$, and additive oscillatory response $y$ are shown in red underneath. For comparison, the right panel shows real MEG data from a passive visual experiment where a number of images are shown to the subjects at a rate of one image per second (Cichy et al., 2016); the measured (filtered) signal is shown in blue, while the red curves correspond to analytical phase, frequency, and amplitude (computed via the Hilbert transform on the filtered signal). Table 1 summarises all the hyperparameters that configure the model.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87729/elife-87729-fig1-v1.jpg)
 
 **Figure 1.:** Right: real (filtered) magnetoencephalography data collected during passive stimuli viewing; the red curves are the analytically computed phase, frequency, and amplitude (via the Hilbert transform).
 
-## A full mathematical description of the response function
+**Table 1.**
+ genephys configuration hyperparameters.
 
-Assuming the stimulus was presented at time point τ within a given trial, and that both t and τ are expressed in number of time points, the response function is asymmetric around tmax , when the function takes the value 1.0 from both sides. In the experiments above, both left and right parts are logarithmic. Mathematically,gt=G(t;τ)=0.0,ift<δ1+τgt=G(t;τ)=−log⁡(1+(δ1+δ2+τ−t−1T1)ς1)+C1,ift∈[δ1+τ,δ1+δ2+τ]gt=G(t;τ)=−log⁡(1+(t−τ−δ1−δ2−1T2)ς2)+C2,ift∈[δ1+δ2+τ,δ1+δ2+δ3+τ]gt=G(t;τ)=0.0,ift>τ+δ1+δ2+τ+1+T2
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Math. notation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frequency autoregressive parameter</td>
+      <td>bf</td>
+    </tr>
+    <tr>
+      <td>Amplitude autoregressive parameter</td>
+      <td>ba</td>
+    </tr>
+    <tr>
+      <td>Frequency range</td>
+      <td>rf</td>
+    </tr>
+    <tr>
+      <td>Amplitude range</td>
+      <td>ra</td>
+    </tr>
+    <tr>
+      <td>Measurement noise standard deviation</td>
+      <td>σϵ</td>
+    </tr>
+    <tr>
+      <td>Channel activation probability</td>
+      <td>θ</td>
+    </tr>
+    <tr>
+      <td>Number of relevant channels</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>Response function—latency</td>
+      <td>δ1</td>
+    </tr>
+    <tr>
+      <td>Response function—rise slope</td>
+      <td>δ2</td>
+    </tr>
+    <tr>
+      <td>Response function—fall slope</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Target phase, mean</td>
+      <td>φk¯</td>
+    </tr>
+    <tr>
+      <td>Target phase, standard deviation</td>
+      <td>σφ</td>
+    </tr>
+    <tr>
+      <td>Additive oscillatory response, phase</td>
+      <td>γk</td>
+    </tr>
+    <tr>
+      <td>Additive oscillatory response, amplitude</td>
+      <td>αk</td>
+    </tr>
+    <tr>
+      <td>Additive oscillatory response, frequency</td>
+      <td>ωk</td>
+    </tr>
+    <tr>
+      <td>Amplitude modulation</td>
+      <td>mk</td>
+    </tr>
+    <tr>
+      <td>Additive non-oscillatory response, mean</td>
+      <td>zk¯</td>
+    </tr>
+    <tr>
+      <td>Additive non-oscillatory response, standard deviation</td>
+      <td>σz</td>
+    </tr>
+  </tbody>
+</table>
+
+### A full mathematical description of the response function
+
+Assuming the stimulus was presented at time point τ within a given trial, and that both $t$ and $\tau$ are expressed in number of time points, the response function is asymmetric around $t_{max}$ , when the function takes the value 1.0 from both sides. In the experiments above, both left and right parts are logarithmic. Mathematically,
+
+$$
+g_{t}=G(t;\tau)=0.0,ift<\delta_{1}+\tau
+$$
+
+
+
+$$
+g_{t}=G(t;\tau)=−log⁡(1+(\frac{\delta_{1}+\delta_{2}+\tau−t−1}{T_{1}})^{ς_{1}})+C_{1},ift\in[\delta_{1}+\tau,\delta_{1}+\delta_{2}+\tau]
+$$
+
+
+
+$$
+g_{t}=G(t;\tau)=−log⁡(1+(\frac{t−\tau−\delta_{1}−\delta_{2}−1}{T_{2}})^{ς_{2}})+C_{2},
+$$
+
+
+
+$$
+ift\in[\delta_{1}+\delta_{2}+\tau,\delta_{1}+\delta_{2}+\delta_{3}+\tau]
+$$
+
+
+
+$$
+g_{t}=G(t;\tau)=0.0,ift>\tau+\delta_{1}+\delta_{2}+\tau+1+T_{2}
+$$
 
 where
 
-- δ1 reflects the latency of the response in number of time points,
+- $\delta_{1}$ reflects the latency of the response in number of time points,
 
-- δ2 is how many time points it takes the left logarithmic function to go from 0.0 to 1.0,
+- $\delta_{2}$ is how many time points it takes the left logarithmic function to go from 0.0 to 1.0,
 
-- δ3 is how many time points it takes the right logarithmic function to go from 1.0 to 0.0,
+- $\delta_{3}$ is how many time points it takes the right logarithmic function to go from 1.0 to 0.0,
 
-- tmax=δ1+δ2+τ is the time point of maximum response (i.e. the changing point between the two functions),
+- $t_{max}=\delta_{1}+\delta_{2}+\tau$ is the time point of maximum response (i.e. the changing point between the two functions),
 
-- C1 , C2 , T1 , and T2 are normalisation constants chosen such that the logarithmic functions are bounded between 0.0 and 1.0, and Gtmax;τ=1.0 from both sides,
+- $C_{1}$ , $C_{2}$ , $T_{1}$ , and $T_{2}$ are normalisation constants chosen such that the logarithmic functions are bounded between 0.0 and 1.0, and $Gt_{max};\tau=1.0$ from both sides,
 
-- ς1andς2 determine the shape of the logarithmic functions (here chosen to 2 and 4, respectively).
+- $ς_{1}andς_{2}$ determine the shape of the logarithmic functions (here chosen to 2 and 4, respectively).
 
-Note that, thanks to the normalisation constants, both the left and the right sides of the response function take values between 0.0 and 1.0. There is also the possibility of using an exponential function—which is faster to decay—in either side, but I did not use it in the experiments. For example, in the left part, this would take the form:e−0.5(δ1+δ2+τ−t)2C3C4,
+Note that, thanks to the normalisation constants, both the left and the right sides of the response function take values between 0.0 and 1.0. There is also the possibility of using an exponential function—which is faster to decay—in either side, but I did not use it in the experiments. For example, in the left part, this would take the form:
 
-where C3 and C4 are normalisation constants.
+$$
+\frac{e^{−\frac{0.5(\delta_{1}+\delta_{2}+\tau−t)^{2}}{C_{3}}}}{C_{4}},
+$$
 
-## Decoding accuracy to characterise structured invariance
+where $C_{3}$ and $C_{4}$ are normalisation constants.
+
+### Decoding accuracy to characterise structured invariance
 
 One possible approach to characterise the stable aspects of brain responses to stimulation is the analysis of average evoked responses potentials or fields (ERP/F) (Dawson, 1954; Luck and Kappenman, 2011; Pfurtscheller and Lopes da Silva, 1999). However, this approach is limited because perceptual experiences emerge from activity patterns across multiple brain areas acting in a distributed fashion, whereas ERP/Fs are separately evaluated channel by channel. Also, ERP/F analyses are not concerned with what aspects of the signal carry specific information about the stimulus—that is they are not predictive of the stimulus (Kragel et al., 2018).
 
@@ -115,13 +298,13 @@ I confronted genephys to classification-based decoding analysis to characterise 
 
 For reference, I considered MEG data recorded while participants viewed object images across 118 categories, as presented in Cichy et al., 2016. Each image category was presented 30 times. Presentation occurred during the first 500 ms of the trial, and trials were 1 s long, sampled at 250 Hz. The multi-channel sensor-space data, epoched around the presentation of each visual stimulus, can be used to train a decoder to predict which visual image is being presented (Cichy et al., 2016; Vidaurre et al., 2021). Here, I decoded whether the image corresponded to an animate category (a dog) or inanimate (a pencil). Figure 2A shows a TGM for an example subject, where some archetypal characteristics are highlighted. In the experiments below, specifically, I focus on the strong narrow diagonal at the beginning of the trial, the broadening of accuracy later in the trial, and the vertical/horizontal bars of higher-than-chance accuracy. Importantly, given the variability observed across subjects (as seen in Figure 2B, which shows TGMs for six subjects), this example is only meant as a reference; therefore I did not optimise the model hyperparameters to this TGM (except in the last subsection), or showed any quantitative metric of similarity.
 
-## Oscillatory components underlying the observed decoding patterns
+### Oscillatory components underlying the observed decoding patterns
 
 In real data, we often see oscillatory patterns in the TGM, indicating that the subspace of brain activity that carries information about the stimulus must have oscillatory elements. At least two distinct mechanisms may be behind this phenomenon: first, an ongoing oscillation might reset its phase and then entrain to a given frequency in a stimulus-specific fashion; second, a stimulus-specific oscillatory response might by added to the signal after stimulus presentation on top of the existing ongoing oscillation. Essentially, the difference between the two is that, in the phase-resetting case, the ongoing oscillations are altered; while in the other case the additive oscillation coexists with the ongoing oscillations. Next, I use genephys together with decoding analysis to compare between these two alternatives, showing that both can produce decoding patterns similar to what we observe empirically in real experiments.
 
-In the simulations, all 32 channels convey information but with a relatively low activation probability (θ=1/6). For phase resetting and frequency entrainment, I considered a diverse range of entrainment frequencies (between 0.1 and 0.2 in angular frequency) and latencies of response (δ1=0−160ms) across channels. For the additive oscillatory response, I considered a similar range of frequencies and latencies of response across channels. (I will show below that channel stochasticity and frequency diversity are both important to produce realistic decoding patterns.) The difference between the two fictitious stimuli lied in their different target frequencies (i.e. φk¯ for phase resetting and γk for the additive oscillation; see specification of the model in Methods). I also included an additive non-oscillatory response with a stimulus-specific amplitude, which (as I will also show later) is important to produce realistic decoding results. I did not optimise the parameters of the model to reflect the fine details from real-data TGMs, since TGMs vary across subjects (see Figure 2B) and experimental paradigms (King and Dehaene, 2014).
+In the simulations, all 32 channels convey information but with a relatively low activation probability ($\theta=1/6$). For phase resetting and frequency entrainment, I considered a diverse range of entrainment frequencies (between 0.1 and 0.2 in angular frequency) and latencies of response ($\delta_{1}=0−160ms$) across channels. For the additive oscillatory response, I considered a similar range of frequencies and latencies of response across channels. (I will show below that channel stochasticity and frequency diversity are both important to produce realistic decoding patterns.) The difference between the two fictitious stimuli lied in their different target frequencies (i.e. $\phi^{k}¯$ for phase resetting and $\gamma^{k}$ for the additive oscillation; see specification of the model in Methods). I also included an additive non-oscillatory response with a stimulus-specific amplitude, which (as I will also show later) is important to produce realistic decoding results. I did not optimise the parameters of the model to reflect the fine details from real-data TGMs, since TGMs vary across subjects (see Figure 2B) and experimental paradigms (King and Dehaene, 2014).
 
-Figure 3 shows TGMs (top) together with one-channel ERPs (where each stimulus is represented by a different tonality of blue or red; bottom) for the sampled signal x and its various constitutive elements: ongoing phase φ, frequency f, amplitude a, additive non-oscillatory response z, and, when applicable, an additive oscillatory response y. The left panels show results for phase reset plus frequency entrainment, where we can see an effect on the ongoing phase. The middle panels show results for the additive oscillation; here, there is no effect on the ongoing phase, and, instead, the additive oscillatory response y is shown at the bottom. The right panels show an example from real data, where phase, frequency, and amplitude were computed analytically using the Hilbert transform on the filtered data.
+Figure 3 shows TGMs (top) together with one-channel ERPs (where each stimulus is represented by a different tonality of blue or red; bottom) for the sampled signal $x$ and its various constitutive elements: ongoing phase $\phi$, frequency $f$, amplitude $a$, additive non-oscillatory response $z$, and, when applicable, an additive oscillatory response $y$. The left panels show results for phase reset plus frequency entrainment, where we can see an effect on the ongoing phase. The middle panels show results for the additive oscillation; here, there is no effect on the ongoing phase, and, instead, the additive oscillatory response $y$ is shown at the bottom. The right panels show an example from real data, where phase, frequency, and amplitude were computed analytically using the Hilbert transform on the filtered data.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87729/elife-87729-fig3-v1.jpg)
 
@@ -129,11 +312,11 @@ Figure 3 shows TGMs (top) together with one-channel ERPs (where each stimulus is
 
 Although the exact details differ from the right panels of the figure, both types of effects produce patterns reproducing the characteristic signatures of real data. These include the strong diagonal, the vertical/horizontal bands of high generalisation accuracy, and the broadening of accuracy in later stages of the trial. Note that phase resetting plus frequency entrainment is, everything else held constant, a stronger effect than the additive oscillatory response. This is because, for the latter, the ongoing oscillations (here, non-stimulus specific) can interfere with the phase of the additive response, impeding cross-trial phase locking throughout the trial. For phase resetting, on the other hand, the ongoing oscillation is the effect and there is no interference. In this particular example, anyway, the range for the additive oscillation (0.1–0.2) was much narrower than that of the ongoing oscillation (0.01–0.25π), making the interference more unlikely; that is, the ongoing oscillation phase is approximately averaged out, and treated as noise by the decoding algorithm.
 
-## The distribution of stimulus-specific information spans multiple channels and is stochastic
+### The distribution of stimulus-specific information spans multiple channels and is stochastic
 
 Next, I use genephys to show that the stimulus-specific information spans a large number of channels, and do so stochastically. I focus on the additive oscillatory response effect, which, as shown in the previous section, can produce comparable results to phase resetting plus frequency entrainment.
 
-I varied the number of relevant channels p as well as the probability of activation θ for the relevant channels, so that the subset of channels that activate is different for every trial. Figure 4 shows the TGMs for various combinations of p and θ, from a configuration where there are few relevant channels that always respond (p=1,θ=1) to another where there are many relevant channels that only respond sparsely (p=32,θ=1/8). As previously, channels have diverse frequencies and latencies of response. An additive non-oscillatory response is also included as an effect.
+I varied the number of relevant channels $p$ as well as the probability of activation $\theta$ for the relevant channels, so that the subset of channels that activate is different for every trial. Figure 4 shows the TGMs for various combinations of $p$ and $\theta$, from a configuration where there are few relevant channels that always respond ($p=1,\theta=1$) to another where there are many relevant channels that only respond sparsely ($p=32,\theta=1/8$). As previously, channels have diverse frequencies and latencies of response. An additive non-oscillatory response is also included as an effect.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87729/elife-87729-fig4-v1.jpg)
 
@@ -141,17 +324,25 @@ I varied the number of relevant channels p as well as the probability of activat
 
 Contrary to empirical TGMs (which have a relatively stylised diagonal), having only a few relevant channels (first three panels of Figure 4) produces unrealistically geometric patterns. This indicates that, in real data, the subspace of the data that contains information about the stimulus needs to be multi-dimensional; that is, that the amount of relevant channels must be relatively high (as in the fourth panel of Figure 4). However, the contribution of each channel must entail some sort of noise or instability (in this case expressed by having probabilistic activations), or else the decoding accuracy becomes unrealistically perfect. In summary, the subspace of brain activity that carries out information about the condition is highly stochastic at the single-trial level.
 
-## The oscillatory effect spans multiple frequencies and latencies
+### The oscillatory effect spans multiple frequencies and latencies
 
 In the previous sections, I showed that a noisy, additive oscillation effect (or, alternatively, a phase reset plus frequency entrainment effect) across multiple channels can generate decoding patterns as we see in real data. Next, I demonstrate that the effect must span a diversity of frequencies across channels, as well as a diversity of latencies of response. In real data, frequency diversity can be expressed as, for example, a gradient of frequencies from primary towards more associative areas; while latency diversity could reflect phenomena such that primary areas responding earlier than associative areas.
 
-For frequency diversity, each channel is endowed with a different effect-related frequency, such that frequencies are not multiples of each other (specifically, they have different values of ωk between 0.1 and 0.2 in angular frequency; see Methods). For latency diversity, channels do not respond simultaneously but with different values of δ1 between 0 and 120 ms. Figure 5 shows a two-by-two design. On the left column, I set genephys to have a uniform frequency of response (i.e. all channels have the same frequency of response), while on the right column it uses a diversity of frequencies. On the top row, we have a uniform latency of response (i.e. all channels have the same latency of response), whereas on the bottom row we have a diversity of latencies of response. See Figure 5—figure supplement 1 for a similar result for phase resetting followed by frequency entrainment.
+For frequency diversity, each channel is endowed with a different effect-related frequency, such that frequencies are not multiples of each other (specifically, they have different values of $\omega^{k}$ between 0.1 and 0.2 in angular frequency; see Methods). For latency diversity, channels do not respond simultaneously but with different values of $\delta_{1}$ between 0 and 120 ms. Figure 5 shows a two-by-two design. On the left column, I set genephys to have a uniform frequency of response (i.e. all channels have the same frequency of response), while on the right column it uses a diversity of frequencies. On the top row, we have a uniform latency of response (i.e. all channels have the same latency of response), whereas on the bottom row we have a diversity of latencies of response. See Figure 5—figure supplement 1 for a similar result for phase resetting followed by frequency entrainment.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87729/elife-87729-fig5-v1.jpg)
+
+**Figure 5.:** Top row, single latency of response; bottom row, diverse latencies across channels. Left column, single frequency; right column, diverse frequencies across channels. Bottom-right is the most realistic temporal generalisation matrix (TGM).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87729/elife-87729-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Top row, single latency of response; bottom row, diverse latencies across channels; left column, single frequency; right column; diverse frequencies across channels.
 
 As mentioned, real data normally yield a relatively tight band of high decoding accuracy along the diagonal, often accompanied from contiguous parallel bands of below-baseline accuracy. Critically, the fact that we do not typically observe a chequer pattern means that the trajectory of phase across channels does not repeat itself periodically. If it did, it would show patterns as in the top-left panel, where the uniformity of frequencies and latencies gives rise to an unrealistically regular pattern—such that a decoder trained at a certain time point will become equally accurate again after one cycle at the entrained frequency. Having a diversity of latencies but not of frequencies produces another regular pattern consisting of alternating, parallel bands of higher/lower than baseline accuracy. This, shown in the bottom-left panel, is not what we see in real data either. Having a diversity of frequencies but not of latencies gets us closer to a realistic pattern, as we see in the top-right panel. Finally, having diversity of both frequencies and latencies produces the most realistic pattern, as we can see by comparing to the examples in Figure 2, and many others throughout the literature (King and Dehaene, 2014). Similar conclusions can be drawn from Figure 5—figure supplement 1 for phase resetting plus frequency entrainment.
 
 In summary, these results show that it is not only important for the stimulus-relevant subspace of activity to be spatially high dimensional, but also temporally high dimensional.
 
-## A slower additive component is coupled with the oscillatory response
+### A slower additive component is coupled with the oscillatory response
 
 In real data, we normally see a broadening of decoding accuracy in the TGM as time progresses throughout the trial (see Figure 2). This is often interpreted as neural representations becoming more stable at latter stages of the trial, which is putatively linked to memory encoding and higher cognitive processes. In Figure 6, I show that this effect can be reproduced on synthetic data through the addition of a slowly progressing, non-oscillatory response.
 
@@ -159,11 +350,11 @@ In real data, we normally see a broadening of decoding accuracy in the TGM as ti
 
 **Figure 6.:** (A) By increasing the strength of the non-oscillatory response, the broadening of accuracy becomes more prominent. (B) Changing the nature of the phasic relationship between the slower and the faster (oscillatory component) greatly influences the TGM, from having all channels in-phase (left) towards having all channels anti-phase (right).
 
-Specifically, I set up a response function such that, after stimulus presentation, the non-oscillatory additive response ramps up to a stimulus-specific target value in about 100 s, and then slowly decays to finally vanish at around 800 ms. Also, I modulate the strength of the oscillatory response using values of zk¯ (see Methods) that differ between the two stimuli by a magnitude that ranges from 0.0 (no difference) to 1.0 (for reference, the examples in the previous figures had a difference of 0.5). As seen in Figure 6A, the strength of decoding accuracy grows as the difference in the slow response increases.
+Specifically, I set up a response function such that, after stimulus presentation, the non-oscillatory additive response ramps up to a stimulus-specific target value in about 100 s, and then slowly decays to finally vanish at around 800 ms. Also, I modulate the strength of the oscillatory response using values of $z^{k}¯$ (see Methods) that differ between the two stimuli by a magnitude that ranges from 0.0 (no difference) to 1.0 (for reference, the examples in the previous figures had a difference of 0.5). As seen in Figure 6A, the strength of decoding accuracy grows as the difference in the slow response increases.
 
-Another feature commonly seen on real data are the vertical and horizontal bars of high accuracy stemming from the time point of maximum accuracy (see Figure 2A), which is sometimes interpreted as evidence of stimulus representation recurrence in the brain. I show in Figure 6B that this feature emerges from a phase coupling between the oscillatory component and the slower component (with respect to the stimuli). For example, following the notation established in Methods, an in-phase relationship means that the sign of (φ1¯−φ2¯) at tmax is the same than the sign of (z1¯−z2¯). Note that the sign of (z1¯−z2¯) will likely be maintained for most of the trial since this component is slow, therefore creating the effect in the TGM. That was the case for all panels of Figure 6A. For Figure 6B, while keeping (z1¯−z2¯) = 0.5 (as in the middle panel of Figure 6A), I varied the phase consistency between the oscillatory and the non-oscillatory components. In the leftmost panel, the oscillatory and the non-oscillatory components are in-phase for all channels, while in the rightmost panel, they are anti-phase for all channels; in between, 25%, 50%, and 75% of the channels are in-phase (and 75%, 50%, and 25% are anti-phase, respectively). As observed, the type of phase consistency between the oscillatory and the non-oscillatory component has a strong impact on the TGM. In particular, the in-phase relation bears the most consistent patterns with the considered real data.
+Another feature commonly seen on real data are the vertical and horizontal bars of high accuracy stemming from the time point of maximum accuracy (see Figure 2A), which is sometimes interpreted as evidence of stimulus representation recurrence in the brain. I show in Figure 6B that this feature emerges from a phase coupling between the oscillatory component and the slower component (with respect to the stimuli). For example, following the notation established in Methods, an in-phase relationship means that the sign of $(\phi^{1}¯−\phi^{2}¯)$ at $t_{max}$ is the same than the sign of $(z^{1}¯−z^{2}¯)$. Note that the sign of $(z^{1}¯−z^{2}¯)$ will likely be maintained for most of the trial since this component is slow, therefore creating the effect in the TGM. That was the case for all panels of Figure 6A. For Figure 6B, while keeping $(z^{1}¯−z^{2}¯)$ = 0.5 (as in the middle panel of Figure 6A), I varied the phase consistency between the oscillatory and the non-oscillatory components. In the leftmost panel, the oscillatory and the non-oscillatory components are in-phase for all channels, while in the rightmost panel, they are anti-phase for all channels; in between, 25%, 50%, and 75% of the channels are in-phase (and 75%, 50%, and 25% are anti-phase, respectively). As observed, the type of phase consistency between the oscillatory and the non-oscillatory component has a strong impact on the TGM. In particular, the in-phase relation bears the most consistent patterns with the considered real data.
 
-## Amplitude increases modulate the size of the effect
+### Amplitude increases modulate the size of the effect
 
 Are modulations in the amplitude of the stimulus-specific oscillation necessary for the effects we observe in real data? They are not, but they can enhance the already existing patterns.
 
@@ -173,11 +364,11 @@ I generated data sets with an additive oscillatory component effect. In each of 
 
 **Figure 7.:** Two features of the TGM are highlighted: the diagonal, and a vertical slice at the time point of maximum accuracy.
 
-## Fitting an empirical TGM
+### Fitting an empirical TGM
 
 The previous analyses were descriptive in the sense that they did not quantify how much the generated TGMs resembled a specific empirical TGM. This was deliberate, because empirical TGMs vary across subjects and experiments, and I aimed at characterising them as generally as possible by looking at some characteristic features in broad terms. For example, while TGMs typically have a strong diagonal and horizontal/vertical bars of high accuracy, questions such as when these effects emerge and for how long are highly dependent on the experimental paradigm. For the same reason, I did not optimise the model hyperparameters, limiting myself to observing the behaviour of the model across some characteristic configurations. But, often, one’s interests are more specific. Then, it would be interesting to optimise some key hyperparameters of the model to maximise the correlation with a particular empirical TGM.
 
-To illustrate how a data set could be more explicitly considered, I took an empirical TGM computed from the visual experiment in Cichy et al., 2016. Specifically, this is a cross-average TGM (over 10 subjects) obtained from decoding animate versus inanimate stimuli. Using an additive oscillatory response, and fixing the rest of the hyperparameters to a sensible configuration (the one that produced the middle panel in Figure 6A), I varied, within a reasonable range, two parameters of the response function that control the temporal shape of the effect: the rise slope δ2 and the fall slope δ3 ; see Methods. From each pair of parameters, I generated 10 data sets and computed 10 TGMs; I then correlated the average of these with the empirical TGM from real data. Figure 8 shows a heatmap of the resulting correlations. For a specific configuration (δ2=0.06s,δ3=0.09s), the correlation peaks at r = 0.7.
+To illustrate how a data set could be more explicitly considered, I took an empirical TGM computed from the visual experiment in Cichy et al., 2016. Specifically, this is a cross-average TGM (over 10 subjects) obtained from decoding animate versus inanimate stimuli. Using an additive oscillatory response, and fixing the rest of the hyperparameters to a sensible configuration (the one that produced the middle panel in Figure 6A), I varied, within a reasonable range, two parameters of the response function that control the temporal shape of the effect: the rise slope $\delta_{2}$ and the fall slope $\delta_{3}$ ; see Methods. From each pair of parameters, I generated 10 data sets and computed 10 TGMs; I then correlated the average of these with the empirical TGM from real data. Figure 8 shows a heatmap of the resulting correlations. For a specific configuration ($\delta_{2}=0.06s,\delta_{3}=0.09s$), the correlation peaks at r = 0.7.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/87729/elife-87729-fig8-v1.jpg)
 
@@ -197,6 +388,6 @@ Also importantly, I have shown that standard decoding analysis can differentiate
 
 Overall, the results obtained from applying genephys suggest that the stable aspects of brain activity regarding stimulus processing comprise phasic modulations of an oscillatory component coupled with a slower component, with an important role played by the nature of this coupling. The subspace of brain activity induced by the effect is high dimensional in both the spatial domain (it must span many channels) and the frequency domain (it must involve a great diversity of frequencies and exhibit a diversity of latencies). This effect may be accompanied by an amplitude modulation. Above and beyond these average patterns, the stimulus-specific subspace of brain responses remains highly stochastic at the trial level.
 
-## Code accessibility
+### Code accessibility
 
 The model is available as a Python package in PyPI and Github.

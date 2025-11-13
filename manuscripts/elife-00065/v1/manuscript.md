@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.00065.001 Fibroblast growth factor-21 (FGF21) is a hormone secreted by the liver during fasting that elicits diverse aspects of the adaptive starvation response. Among its effects, FGF21 induces hepatic fatty acid oxidation and ketogenesis, increases insulin sensitivity, blocks somatic growth and causes bone loss. Here we show that transgenic overexpression of FGF21 markedly extends lifespan in mice without reducing food intake or affecting markers of NAD+ metabolism or AMP kinase and mTOR signaling. Transcriptomic analysis suggests that FGF21 acts primarily by blunting the growth hormone/insulin-like growth factor-1 signaling pathway in liver. These findings raise the possibility that FGF21 can be used to extend lifespan in other species. DOI: http://dx.doi.org/10.7554/eLife.00065.001
+Fibroblast growth factor-21 (FGF21) is a hormone secreted by the liver during fasting that elicits diverse aspects of the adaptive starvation response. Among its effects, FGF21 induces hepatic fatty acid oxidation and ketogenesis, increases insulin sensitivity, blocks somatic growth and causes bone loss. Here we show that transgenic overexpression of FGF21 markedly extends lifespan in mice without reducing food intake or affecting markers of NAD+ metabolism or AMP kinase and mTOR signaling. Transcriptomic analysis suggests that FGF21 acts primarily by blunting the growth hormone/insulin-like growth factor-1 signaling pathway in liver. These findings raise the possibility that FGF21 can be used to extend lifespan in other species.
 
 ## Introduction
 
@@ -45,37 +45,159 @@ Dwarf mice, including the pituitary loss-of-function Ames and Snell strains and 
 
 We previously described FGF21-Tg mice in which the FGF21 transgene is selectively expressed in hepatocytes under the control of the apoE promoter (Inagaki et al., 2007, 2008). Circulating concentrations of FGF21 are ∼5–10-fold higher in the FGF21-Tg mice than under fasted conditions. Younger FGF21-Tg mice (<8-month-old) have significant decreases in serum insulin, IGF-1, glucose, triglycerides and cholesterol and in hepatic triglyceride levels (Inagaki et al., 2007, 2008). Similar effects on insulin, glucose, triglycerides and cholesterol levels were seen in FGF21-Tg mice in which the FGF21 transgene was under the control of the albumin promoter (Kharitonenkov et al., 2005).
 
-We examined whether these and additional metabolic parameters were altered in groups of older (26–27-month-old) wild-type and FGF21-Tg mice. There were no differences in food intake, physical activity, oxygen consumption or respiratory exchange ratio (
+We examined whether these and additional metabolic parameters were altered in groups of older (26–27-month-old) wild-type and FGF21-Tg mice. There were no differences in food intake, physical activity, oxygen consumption or respiratory exchange ratio (Figure 1A–D). Although both male and female FGF21-Tg mice weighed less than their wild-type littermates, there were no differences in their percent fat and lean mass (Figure 1E,F). Accordingly, plasma leptin levels were not significantly changed in FGF21-Tg mice (Table 1). Plasma adiponectin concentrations were significantly higher in male FGF21-Tg mice (Table 1), with increases in both the monomeric and more active oligomeric forms (Figure 1G). There was no significant change in either the total amount or the different forms of adiponectin in females (Table 1, Figure 1G). Plasma ketone body levels were significantly higher in female but not male FGF21-Tg mice (Table 1). Hepatic triglyeride concentrations were lower in female but not male FGF21-Tg mice (Table 1). Plasma and hepatic cholesterol concentrations were unchanged in FGF21-Tg mice (Table 1). As expected (Wei et al., 2012), FGF21-Tg mice had reduced bone mass (Figure 1H).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00065/elife-00065-fig1-v1.jpg)
 
-**Figure 1.:** (A) Food intake, (B) physical activity, including total horizontal and ambulatory activity, (C) respiratory exchange ratio (VCO2/VO2) and (D) oxygen consumption (VO2) data for 30-month-old male wild-type (WT) and FGF21-transgenic (Tg) mice (n=6/group) housed singly in metabolic cages. For (D), the area under the curve (AUC) data are shown in the right panel. (E) Body weights of male and female mice measured at 6, 12 and 26 months. Measurements were done on all surviving mice in the cohorts (n=27–54/group). (F) Fat and lean mass percentages were measured in 26-month-old mice (n=5–6/group). (G) Adiponectin oligomer forms, including high molecular weight (HMW), medium molecular weight (MMW) and low molecular weight (LMW) forms, were measured in plasma from 26- to 27-month-old male and female WT and FGF21-Tg mice. Representative western blots using plasma from single animals are shown together with the ratios of the different adiponectin forms in FGF21-Tg and WT plasma (n=4/group). (H) Quantification of trabecular bone volume by μCT analysis using tibiae from 33- to 35-month-old male WT and FGF21-Tg mice (n=4–5/group). All data are presented as the mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.00065.003
+**Figure 1.:** (A) Food intake, (B) physical activity, including total horizontal and ambulatory activity, (C) respiratory exchange ratio (VCO2/VO2) and (D) oxygen consumption (VO2) data for 30-month-old male wild-type (WT) and FGF21-transgenic (Tg) mice (n=6/group) housed singly in metabolic cages. For (D), the area under the curve (AUC) data are shown in the right panel. (E) Body weights of male and female mice measured at 6, 12 and 26 months. Measurements were done on all surviving mice in the cohorts (n=27–54/group). (F) Fat and lean mass percentages were measured in 26-month-old mice (n=5–6/group). (G) Adiponectin oligomer forms, including high molecular weight (HMW), medium molecular weight (MMW) and low molecular weight (LMW) forms, were measured in plasma from 26- to 27-month-old male and female WT and FGF21-Tg mice. Representative western blots using plasma from single animals are shown together with the ratios of the different adiponectin forms in FGF21-Tg and WT plasma (n=4/group). (H) Quantification of trabecular bone volume by μCT analysis using tibiae from 33- to 35-month-old male WT and FGF21-Tg mice (n=4–5/group). All data are presented as the mean ± SEM.
 
-We next examined glucose homeostasis in older mice. Under 4 hr fasted conditions, plasma glucose concentrations were lower in both male and female FGF21-Tg mice, while plasma insulin concentrations were significantly lower in male FGF21-Tg mice (
+**Table 1.**
+ Plasma and hepatic parameters
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Male</th>
+      <th colspan="3">Female</th>
+    </tr>
+    <tr>
+      <th>WT</th>
+      <th>Tg</th>
+      <th>p</th>
+      <th>WT</th>
+      <th>Tg</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">Plasma</td>
+    </tr>
+    <tr>
+      <td>IGF-1* (ng/mL)</td>
+      <td>381.52±42.31</td>
+      <td>250.1±13.76</td>
+      <td>0.03</td>
+      <td>427.94±56.35</td>
+      <td>171.84±11.71</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Insulin* (ng/mL)</td>
+      <td>0.90±0.13</td>
+      <td>0.45±0.09</td>
+      <td>0.04</td>
+      <td>0.63±0.12</td>
+      <td>0.34±0.04</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Glucose* (mg/dL)</td>
+      <td>155±9.21</td>
+      <td>111.6±8.03</td>
+      <td>0.008</td>
+      <td>181.75±19.77</td>
+      <td>121.4±7.50</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>Ketone bodies* (μM)</td>
+      <td>118.38±30.51</td>
+      <td>221.02±38.10</td>
+      <td>0.07</td>
+      <td>140.61±17.46</td>
+      <td>294.56±48.10</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Adiponectin (μg/mL)</td>
+      <td>9.43±1.65</td>
+      <td>23.42±2.65</td>
+      <td>0.006</td>
+      <td>24.13±2.82</td>
+      <td>31.71±7.97</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Leptin (ng/mL)</td>
+      <td>3.20±1.02</td>
+      <td>4.14±1.09</td>
+      <td>0.55</td>
+      <td>4.80±1.82</td>
+      <td>7.46±2.89</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>75.14±9.23</td>
+      <td>51.82±8.63</td>
+      <td>0.11</td>
+      <td>50.28±10.31</td>
+      <td>21.79±6.23</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Cholesterol (mg/dL)</td>
+      <td>83.20±10.18</td>
+      <td>81.45±2.32</td>
+      <td>0.88</td>
+      <td>79.82±9.44</td>
+      <td>70.56±13.58</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td colspan="7">Liver</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/g)</td>
+      <td>11.62±2.23</td>
+      <td>6.67±0.75</td>
+      <td>0.11</td>
+      <td>22.42±3.75</td>
+      <td>10.33±0.68</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Cholesterol (mg/g)</td>
+      <td>4.29±0.50</td>
+      <td>4.07±0.20</td>
+      <td>0.71</td>
+      <td>4.52±0.22</td>
+      <td>4.54±0.13</td>
+      <td>0.94</td>
+    </tr>
+  </tbody>
+</table>
+
+_Measurements were made using 26–27-month-old mice (n=4–5 mice/group).*4 hr fasting data._
+
+We next examined glucose homeostasis in older mice. Under 4 hr fasted conditions, plasma glucose concentrations were lower in both male and female FGF21-Tg mice, while plasma insulin concentrations were significantly lower in male FGF21-Tg mice (Table 1). Plasma IGF-1 concentrations were also lower in both male and female FGF21-Tg mice, with the decrease particularly striking in females (Table 1). In oral glucose tolerance tests done in mice fasted for 16 hr, there was no difference in glucose excursion between wild-type and FGF21-Tg mice, but the FGF21-Tg mice had significantly lower insulin levels in response to the glucose challenge (Figure 2A). In insulin tolerance tests done in male mice fasted for 4 hr, plasma glucose concentrations decreased more in FGF21-Tg mice than in wild-type mice (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00065/elife-00065-fig2-v1.jpg)
 
-**Figure 2.:** 26–27-month-old wild-type (WT) and FGF21-transgenic (Tg) male and female mice (n=5/group) were subjected to (A) oral glucose tolerance tests or (B) insulin tolerance tests. Plasma glucose and insulin levels were measured as indicated. Quantification of the area under the curve (AUC) is shown in the panels to the right. (C, D) Hyperinsulinemic-euglycemic clamp studies were performed on 6- to 8-month-old male WT and FGF21-Tg mice (n=6/group). Insulin was infused at 2 mU/kg/min and (C) blood glucose (upper panel) was clamped at 120 mg/dL during the steady-state period (t=110–150 min) using a variable glucose infusion rate (lower panel). The glucose infusion rate in FGF21-Tg mice is statistically different (p<0.05) from WT mice at all points after t=0 min. (D) Rates of hepatic glucose production (upper panel) and whole-body glucose disposal (lower panel) in WT (n=6) and FGF21-Tg (n=3) mice during the basal and steady-state periods of the clamp.DOI: http://dx.doi.org/10.7554/eLife.00065.005
+**Figure 2.:** 26–27-month-old wild-type (WT) and FGF21-transgenic (Tg) male and female mice (n=5/group) were subjected to (A) oral glucose tolerance tests or (B) insulin tolerance tests. Plasma glucose and insulin levels were measured as indicated. Quantification of the area under the curve (AUC) is shown in the panels to the right. (C, D) Hyperinsulinemic-euglycemic clamp studies were performed on 6- to 8-month-old male WT and FGF21-Tg mice (n=6/group). Insulin was infused at 2 mU/kg/min and (C) blood glucose (upper panel) was clamped at 120 mg/dL during the steady-state period (t=110–150 min) using a variable glucose infusion rate (lower panel). The glucose infusion rate in FGF21-Tg mice is statistically different (p<0.05) from WT mice at all points after t=0 min. (D) Rates of hepatic glucose production (upper panel) and whole-body glucose disposal (lower panel) in WT (n=6) and FGF21-Tg (n=3) mice during the basal and steady-state periods of the clamp.
 
 These data suggested that the FGF21-Tg mice have increased insulin sensitivity. To address this directly, hyperinsulinemic-euglycemic clamp experiments were performed. The exogenous glucose infusion rate required to maintain euglycemia under clamp conditions was markedly higher in FGF21-Tg mice than in wild-type mice, demonstrating enhanced whole-body insulin sensitivity (Figure 2C). Glucose tracer kinetic analysis revealed that insulin-stimulated suppression of hepatic glucose production and activation of whole-body glucose disposal were significantly greater in FGF21-Tg mice than in wild-type mice (Figure 2D). Clamp insulin levels were similar between wild-type and FGF21-Tg mice (7.0±2.0 and 8.3±2.3 ng/mL, respectively; not significantly different). Together, these data demonstrate that glucose tolerance and whole-body insulin sensitivity are dramatically increased in FGF21-Tg mice.
 
-Given the effects of long-term FGF21 exposure on carbohydrate and lipid parameters, especially insulin and IGF-1 concentrations, we measured the lifespan of FGF21-Tg mice. Longevity was significantly extended in FGF21-Tg mice compared to wild-type littermates (hazard ratio=0.22 [0.15, 0.34], p=2.7e
+Given the effects of long-term FGF21 exposure on carbohydrate and lipid parameters, especially insulin and IGF-1 concentrations, we measured the lifespan of FGF21-Tg mice. Longevity was significantly extended in FGF21-Tg mice compared to wild-type littermates (hazard ratio=0.22 [0.15, 0.34], p=2.7e−12), with a 36% increase in the median survival time for FGF21-Tg mice (Figure 3A). Although there was no difference in longevity between male and female wild-type mice, the difference in lifespan between male and female FGF21-Tg mice was statistically significant (hazard ratio=2.42 [1.37, 4.26], p=0.0023) (Figure 3B,C). Cox proportional-hazards regression analysis shows that FGF21 reduced the risk of death by 65% in males (hazard ratio=0.35 [0.20, 0.60], p=0.00017) and 88% in females (hazard ratio=0.12 [0.059, 0.25], p=1.8e−08) (Figure 3B,C). Overall, there was a strong interaction between the presence of the FGF21 transgene and sex (p=0.01). Notably, at the time of this analysis >30% of the age-matched female FGF21-Tg mice were still alive at 44 months of age.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00065/elife-00065-fig3-v1.jpg)
 
-**Figure 3.:** (A–C) Kaplan–Meyer survival curves for wild-type (WT) and FGF21-transgenic (Tg) mice are shown. (A) Combined male and female data; (B) male data; (C) female data. (D) Median survival time (at 50th percentile) and maximum lifespan (at 95th percentile) for each cohort. Hazard ratios (HR) and 95% confidence intervals are shown for Tg vs WT mice.DOI: http://dx.doi.org/10.7554/eLife.00065.006
+**Figure 3.:** (A–C) Kaplan–Meyer survival curves for wild-type (WT) and FGF21-transgenic (Tg) mice are shown. (A) Combined male and female data; (B) male data; (C) female data. (D) Median survival time (at 50th percentile) and maximum lifespan (at 95th percentile) for each cohort. Hazard ratios (HR) and 95% confidence intervals are shown for Tg vs WT mice.
 
-Since FGF21 is induced by fasting and elicits diverse aspects of the adaptive starvation response, we examined whether chronic FGF21 exposure mimics nutrient deprivation with respect to changes in gene expression. Comprehensive transcriptome analysis was performed by microarray using RNA from liver, gastrocnemius muscle and epididymal white adipose tissue of wild-type and FGF21-Tg mice and mice subjected to either caloric restriction or a 24 hr fast. Using a false discovery rate <0.10 and fold change >2 as criteria, we found that expression of 33, 8 and 22 genes was changed in liver, muscle and adipose of FGF21-Tg mice, respectively (
+Since FGF21 is induced by fasting and elicits diverse aspects of the adaptive starvation response, we examined whether chronic FGF21 exposure mimics nutrient deprivation with respect to changes in gene expression. Comprehensive transcriptome analysis was performed by microarray using RNA from liver, gastrocnemius muscle and epididymal white adipose tissue of wild-type and FGF21-Tg mice and mice subjected to either caloric restriction or a 24 hr fast. Using a false discovery rate <0.10 and fold change >2 as criteria, we found that expression of 33, 8 and 22 genes was changed in liver, muscle and adipose of FGF21-Tg mice, respectively (Figure 4A). Many more genes were regulated by caloric restriction or fasting than by the FGF21 transgene in all three tissues. As expected, Fgf21 was strongly induced in liver by fasting. Surprisingly, however, Fgf21 was not induced by the caloric restriction regimen (Figure 4B). Likewise, there was no increase in plasma FGF21 concentrations in response to caloric restriction (data not shown). While the molecular basis for this differential regulation of Fgf21 by fasting and caloric restriction is not yet known, these data indicate that FGF21 is not an endogenous mediator of the caloric restriction response. Notably, 30 of the 33 genes with changed expression in liver of FGF21-Tg mice were also regulated by caloric restriction, while 20 of these genes were regulated by fasting (Figure 4B). Eight of the genes with altered expression in liver of FGF21-Tg mice (highlighted in red in Figure 4B; see Discussion) are similarly regulated in long-lived dwarf mice (Swindell, 2007). In contrast, there was little overlap in genes regulated by FGF21 and either caloric restriction or fasting in muscle or adipose. These data suggest that FGF21 may extend lifespan by regulating a small subset of genes also regulated by caloric restriction in liver.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00065/elife-00065-fig4-v1.jpg)
 
-**Figure 4.:** (A) Venn diagrams showing overlap of genes significantly regulated in liver, muscle and adipose tissue of FGF21-transgenic (Tg) vs wild-type (WT) mice (FDR<0.10, >twofold regulation) compared to the same gene expression analysis in calorically restricted (CR) vs ad libitum (AL) or fasted vs AL mice. (B) Heat map of genes significantly regulated in liver of FGF21-Tg vs WT (FDR<0.10, >twofold regulation) compared to expression of the same liver gene set regulated by fasting or CR. Microarray analysis was performed using liver, epididymal white adipose tissue and gastrocnemius muscle from wild-type and FGF21-Tg male mice and male C57BL/6J mice subjected to 60% caloric restriction for 2 weeks or a 24 hr fast. All mice used in these studies were 3 months old at the end of the study.DOI: http://dx.doi.org/10.7554/eLife.00065.007
+**Figure 4.:** (A) Venn diagrams showing overlap of genes significantly regulated in liver, muscle and adipose tissue of FGF21-transgenic (Tg) vs wild-type (WT) mice (FDR<0.10, >twofold regulation) compared to the same gene expression analysis in calorically restricted (CR) vs ad libitum (AL) or fasted vs AL mice. (B) Heat map of genes significantly regulated in liver of FGF21-Tg vs WT (FDR<0.10, >twofold regulation) compared to expression of the same liver gene set regulated by fasting or CR. Microarray analysis was performed using liver, epididymal white adipose tissue and gastrocnemius muscle from wild-type and FGF21-Tg male mice and male C57BL/6J mice subjected to 60% caloric restriction for 2 weeks or a 24 hr fast. All mice used in these studies were 3 months old at the end of the study.
 
-Increases in AMP kinase and sirtuin activity and decreases in mTOR activity are associated with increased longevity (
+Increases in AMP kinase and sirtuin activity and decreases in mTOR activity are associated with increased longevity (Bishop and Guarente, 2007; Kenyon, 2010). To begin to assess whether these pathways are affected by FGF21, we measured phosphorylated and total levels of AMP kinase and the mTOR targets S6 and 4E-BP1in liver, muscle and adipose tissue of male and female wild-type and FGF21-Tg mice. We also determined mitochondrial DNA content in liver as a downstream measure of AMP kinase activity. Phospho-AMP kinase levels were not increased in tissues from FGF21-Tg mice (Figure 5A–C). Consistent with these data, mitochondrial DNA content was unchanged in liver (Figure 5D). While Phospho-S6 and phospho-4E-BP1 levels were decreased in muscle of male FGF21-Tg mice (Figure 5B), they were unchanged in muscle of longer-lived FGF21-Tg females or in liver or adipose from either sex (Figure 5A–C). We also did not observe increases in NAD+ concentrations (Figure 5E) or the mRNA levels of Sirtuins 1–7 (data not shown) in liver of FGF21-Tg mice, suggesting that sirtuin activity is unlikely to be increased. Taken together, these data suggest that FGF21 may increase longevity through a mechanism independent of the AMP kinase, mTOR and sirtuin pathways.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00065/elife-00065-fig5-v1.jpg)
 
-**Figure 5.:** Phosphorylated levels of AMP kinase, S6, and 4E-BP1 in (A) liver, (B) gastrocnemius muscle, and (C) epididymal white adipose tissue; (D) mitochondrial DNA content and (E) NAD+ concentrations in liver of 26_28-month-old male and female wild-type (WT) and FGF21-transgenic (Tg) mice (n=4/group except for female adipose tissue, where n=2/group; all data are presented as the mean ± SEM; *p<0.05).DOI: http://dx.doi.org/10.7554/eLife.00065.008
+**Figure 5.:** Phosphorylated levels of AMP kinase, S6, and 4E-BP1 in (A) liver, (B) gastrocnemius muscle, and (C) epididymal white adipose tissue; (D) mitochondrial DNA content and (E) NAD+ concentrations in liver of 26_28-month-old male and female wild-type (WT) and FGF21-transgenic (Tg) mice (n=4/group except for female adipose tissue, where n=2/group; all data are presented as the mean ± SEM; *p<0.05).
 
 ## Discussion
 
@@ -91,58 +213,58 @@ In summary, we show that chronic exposure to FGF21, a naturally-occurring hormon
 
 ## Materials and methods
 
-## Animal experiments
+### Animal experiments
 
 FGF21-Tg mice and wild-type littermates (Inagaki et al., 2007) were maintained on C57Bl/6J background in a specific-pathogen-free facility with 12:12 light:dark cycle, and fed 2916 global diet (Harlan). Littermates were housed in the same cage with a maximum number of five mice per cage. Cages were changed every week and nesting material was provided. Animals were sacrificed if they had wounds from fighting, developed severe dermatitis, tumors or other signs of morbidity. Caloric restriction experiments were performed with C57Bl/6J mice. Eight-week-old male mice were individually caged and fed ad libitum. Food intake was measured for 1 week. For the following 2 weeks, each mouse was fed at 4 p.m. every day with food equal to 40% of the daily consumption in the first week. Body weight and total body fat composition were measured 1 hr before feeding. The control group received food ad libitum. At the end of the study, mice from the caloric restricted group, ad libitum fed group, and a 24 hr fast group were sacrificed between 2 and 4 p.m. and blood and tissues were collected for analysis. All animal experiments were approved by the Institutional Animal Care and Research Advisory Committee at the University of Texas Southwestern Medical Center.
 
-## Metabolic cage analysis
+### Metabolic cage analysis
 
 Mice were individually housed in CLAMS system metabolic cages and were allowed to acclimate for 1 day. Oxygen consumption, CO2 production, activity and food intake data were collected for 3 days as described (Kalaany et al., 2005).
 
-## Body composition and bone analyses
+### Body composition and bone analyses
 
 Body fat and lean mass were measured using an EchoMRI-100 (Echo Medical Systems, LLC). Bone mass was determined by μCT using tibiae as described (Wei et al., 2012).
 
-## Plasma analyses
+### Plasma analyses
 
 Blood was collected into EDTA-coated tubes (Starstedt, Newton, NC). Plasma was separated by centrifugation and assayed using commercially-available kits for IGF-1 (Alpco), total cholesterol (Thermo Scientific), triglycerides (Thermo Scientific), total ketone bodies (Wako Chemicals), leptin and total adiponectin (Millipore). The oligomeric forms of adiponectin were measured essentially as described (Waki et al., 2003). Briefly, 0.5 μL of plasma from individual mice was subjected to SDS-PAGE under non-reducing and non-heat-denaturing conditions and western blot analysis performed using anti-adiponection mouse polyclonal antiserum (a gift from Philipp Scherer).
 
-## Glucose and insulin tolerance tests
+### Glucose and insulin tolerance tests
 
 Glucose tolerance tests were performed on overnight fasted mice. Twenty percent D-glucose (Sigma) (1 g/kg body weight) was administered by oral gavage. At 0, 20, 40, 60, and 120 min after administration, blood was collected by tail vein bleeding. Glucose levels were measured by enzymatic assay (Wako Chemicals). Insulin levels were measured by ELISA (Crystal Chem). Insulin tolerance tests were performed on mice after a 4 hr fast. 0.75 U/kg of human insulin (Sigma) was intraperitoneally injected into mice. At 0, 20, 40, 60, and 90 min after injection, tail vein blood was drawn and glucose levels measured using a One Touch Ultra glucometer (Life Scan).
 
-## Hyperinsulinemic-euglycemic clamp analysis
+### Hyperinsulinemic-euglycemic clamp analysis
 
 Insulin sensitivity was evaluated in 6- to 8-month-old male WT and FGF21-Tg mice (n=6/group) by performing hyperinsulinemic-euglycemic clamp experiments as described (Ayala et al., 2006; Berglund et al., 2009). Briefly, 5 days prior to the clamp studies, infusion catheters were implanted in the right jugular vein under isofluorane anesthesia, tunneled subcutaneously, and exteriorized at the back of the neck. On the morning of the experiment, mice were transferred to sterile cages with bedding and water to begin a 4 hr fast. At t=−90 min, water was removed and a primed continuous infusion of HPLC-purified [3-3H]glucose (5 μCi bolus + 0.05 μCi/min) was started for the assessment of glucose turnover. Blood samples were obtained from the cut tail at t=−15 and −5 min for the measurement of basal blood glucose (AlphaTRAK glucometer, Abbott, Chicago, IL). At t=0 min, a primed continuous infusion of insulin (6 mU + 2.0mU/kg/min; Humulin) was started to induce hyperinsulinemia, and the [3-3H]glucose infusion rate was doubled (0.1 μCi/min) to minimize alterations in specific activity. Blood glucose was measured every 10 min thereafter, while 50% dextrose was infused at a variable rate to maintain target glycemic levels at 120 mg/dL. Glucose turnover was calculated during the basal (t=−15 to −5 min) and steady-state (t=110–150 min) periods of the clamp using Steele's steady-state equation (Steele et al., 1956).
 
-## Liver lipid measurements
+### Liver lipid measurements
 
 Liver triglyceride and cholesterol were extracted from 0.1 g of liver tissue by the Folch method as described (Kalaany et al., 2005). Total cholesterol or triglycerides were measured by colorimetric enzymatic assays (Thermo Scientific).
 
-## Western blot analysis
+### Western blot analysis
 
 Liver and adipose tissue proteins were extracted as described (Inagaki et al., 2008; Dutchak et al., 2012). Gastrocnemius protein was extracted in 140 mM NaCl, 10 mM Tris-HCl (pH 8.1), 1 mM CaCl2, 1 mM MgCl2, 10% glycerol, 1% NP-40 with Complete protease inhibitor cocktail (Roche diagnostics). 30 mg of whole liver lysate was resolved on a SDS-polyacrylamide gels and electrotransferred to a PVDF membrane (Amersham). The membrane was then hybridized with antibodies against total AMPK, phospho-AMPK (T172), total S6 and phospho-S6 (S240/244) (Cell Signaling) and total and phospho-4E-BP1 (T70) (Cell Signaling). Protein was detected by chemiluminescence (ECL kit, Amersham). Results were quantified by densitometry using ImageJ Software (NIH).
 
-## Mitochondrial DNA content
+### Mitochondrial DNA content
 
 Genomic DNA was isolated from liver using a DNeasy Blood and Tissue kit (Qiagen). The mitochondrial gene COX-1 was measured by quantitative real-time PCR with β-globin used as a control as described (Sahin et al., 2011).
 
-## NAD+ measurements
+### NAD+ measurements
 
 Frozen liver tissues were extracted and NAD+ levels were measured using HPLC as described (Ramsey et al., 2009).
 
-## Survival analysis
+### Survival analysis
 
 Survival time was calculated from the date of birth until the last date of the observation. Mice that were still alive at the end of study or sacrificed during the study were censored at the last date of the observation. Survival curves were estimated using the Kaplan–Meier curves (Kaplan and Meier, 1958) and were compared using the log-rank test. The univariate and multivariate survival analyses were performed using Cox proportional-hazards analysis (Collett, 2003). Median survival time was calculated as the shortest survival time for which the survivor function is ≤0.5. Maximum lifespan was calculated as the shortest survival time for which the survivor function is ≤0.95.
 
-## Microarray data analysis
+### Microarray data analysis
 
 RNA was prepared from liver, epididymal white adipose and gastrocnemius muscle from 3-month-old wild-type and FGF21-Tg mice. RNA was reverse transcribed into cRNA and biotin-UTP labeled using the Illumina TotalPrep RNA Amplification Kit (Ambion) and hybridized to the Illumina mouseRefseq-8v2 Expression BeadChips. Hybridizations were done in triplicate with each replicate containing cRNA from 1 to 3 different mice. Image data were converted into unnormalized Sample Probe Profiles using the Illumina BeadStudio software and raw expression data were processed using the Model-Based Background Correction method (Xie et al., 2009). All gene expression values were log2 transformed and quantile normalized. Significance Analysis of Microarrays (Tusher et al., 2001) was used to identify differentially expressed genes among different groups using a false discovery rate of less than 10% and fold-change >2 as criteria.
 
-## Statistical analyses
+### Statistical analyses
 
 Results were analyzed by a Student’s unpaired t-test using GraphPad Prism (GraphPad Software, Inc.). All data are presented as the mean ± SEM.
 
-## Accession numbers
+### Accession numbers
 
 The microarray data have been deposited in the NCBI Gene Expression Omnibus with accession number GSE39313.

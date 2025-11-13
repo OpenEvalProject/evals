@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03xez1567 Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies La Jolla United States
-2. https://ror.org/02n96ep67 New Cornerstone Science Laboratory, Center for Motor Control and Disease, Key Laboratory of Brain Functional Genomics, East China Normal University Shanghai China
-3. https://ror.org/03xez1567 Systems Neurobiology Laboratories, The Salk Institute for Biological Studies La Jolla United States
-4. https://ror.org/02vpsdb40 NYU–ECNU Institute of Brain and Cognitive Science, New York University Shanghai Shanghai China
+1. Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))
+2. New Cornerstone Science Laboratory, Center for Motor Control and Disease, Key Laboratory of Brain Functional Genomics, East China Normal University Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))
+3. Systems Neurobiology Laboratories, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))
+4. NYU–ECNU Institute of Brain and Cognitive Science, New York University Shanghai Shanghai China ([ROR:02vpsdb40](https://ror.org/02vpsdb40))
 
 † Corresponding author
 
@@ -33,11 +33,39 @@ Here, using a G-deleted rabies system in mice (Klug et al., 2018; Osakada et al.
 
 A modified rabies virus system (Klug et al., 2018; Osakada et al., 2011; Wall et al., 2013) was employed to label and functionally target the specific cortical neurons projecting to striatal D1- versus D2-SPNs. Specifically, D1- or A2a-Cre mice (Gong et al., 2007) were injected with Cre-dependent helper viruses (AAV5/EF1α-Flex-TVA-mCherry, AAV8/CA-Flex-RG) in the dorsal striatum (Klug et al., 2018; Wall et al., 2013; Figure 1A–B; see Materials and Methods). Three weeks later, either (EnvA) SAD-∆G Rabies-GFP or (EnvA) SAD-∆G Rabies-ChR2-mCherry was injected into the same striatal location to retrogradely infect the presynaptic cortical neurons projecting to D1- or D2-SPNs (Figure 1B). We first injected (EnvA) SAD-∆G Rabies-GFP in a subgroup of mice to validate the corticostriatal anatomy. In both D1- and A2a-Cre tracing experiments, intensive labeling was found in different cortical regions as expected, including the midcingulate cortex (MCC; van Heukelum et al., 2020; Vogt and Paxinos, 2014) and the primary motor cortex (M1), which targets mainly the dorsal medial and dorsal lateral striatum, respectively (Aoki et al., 2019; Bolam et al., 2000; Pan et al., 2010; Shepherd, 2013; Figure 1C and D). For functional studies, (EnvA) SAD-∆G Rabies-ChR2-mCherry was utilized to express ChR2 in the presynaptic cortical neurons projecting to D1- or D2-SPNs. To validate the functional expression of ChR2 in the cortex, whole-cell patch clamp recordings were performed from the mCherry-positive layer V pyramidal neurons in M1 around day 7 post rabies injection (Figure 1E–G; see Materials and methods). Both the current-voltage relationship revealed by somatic current injections (Figure 1H) and the spiking activity elicited by blue laser frequency stimulation (Figure 1I; Figure 1—figure supplement 1) confirmed the overall health and the functional expression of ChR2 in the rabies-infected cortical neurons. These results thus demonstrate that we were able to successfully target and functionally express ChR2 in presynaptic cortical neurons projecting to either striatal D1- or D2-SPNs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of SAD-ΔG-Rabies-ChR2-mCherry construct with the glycoprotein deleted and replaced with ChR2-mCherry. (B) Timeline of viral injections of Cre-dependent helper viruses and the modified rabies virus for slice and behavioral experiments. (C) Example of coronal brain section with rabies-eGFP injection in the dorsal medial striatum of D1-Cre (top) or A2a-Cre (bottom) mouse shows enriched eGFP expression in the MCC. Scale bar, 1 mm. Inset (right): Higher magnification of retrogradely labeled striatal D1- or D2-SPN projecting neurons in the MCC expressing eGFP. Dotted lines demarcate cortical lamina. Scale bar, 200 µm. (D) Similar experiments of labeling striatal D1- vs. D2-SPN projecting neurons in M1 with rabies-eGFP. (E) Cartoon brain schematic of ChR2-mCherry expressing M1 neurons projecting to SPNs (red) during whole-cell patch clamp recordings. (F) Example of coronal brain section with rabies-ChR2-mCherry injection in the dorsal lateral striatum of A2a-Cre mouse. Scale bar, 1 mm. Inset (right): Higher magnification of retrogradely labeled striatal D2-SPN projecting neurons in the M1 showed clear membrane expression of ChR2-mCherry. Scale bar, 200 µm. (G) (left) 10× epifluorescent (red channel) of ChR2-mCherry-positive neurons in M1. Scale bar, 250 µm. (middle) 40× image of a patched layer 5 pyramidal neuron under DIC optics. Scale bar, 50 µm. (right) Epifluorescent image (red channel) showing patched layer 5 pyramidal neuron somas expressing ChR2-mCherry signal. Red dotted line denotes patched neuron. Scale bar, 50 µm. (H) Current-voltage traces of a ChR2-mCherry positive layer 5 M1 neuron under current clamp responding to hyperpolarizing and depolarizing current injection steps. Scale bars, 200 ms, 25 mV. (I) Optogenetic stimulation (20 Hz) elicits robust action potentials with high fidelity in a ChR2-mCherry positive D1-SPN projecting M1 neuron in layer 5. Scale bars, 100 ms, 20 mV.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** 5 Hz optogenetic stimulation elicits action potentials with high fidelity in a ChR2-mCherry positive M1 pyramidal neuron in layer 5 projecting to striatal D1-SPNs. Scale bars, 200 ms, 25 mV.
+
 Taking advantage of this rabies-ChR2 system, we first sought to determine how many functional excitatory inputs that the striatal D1- and D2-SPNs might share. The possible functional organization of excitatory inputs to D1- and D2-SPNs at the single cell level, like the corticostriatal projections, could be completely segregated, totally overlapping, or partially mixed (Figure 2A). In order to differentiate these possibilities, we made whole-cell recordings from D1- or D2-SPNs in brain slice by optogenetic stimulation of rabies-ChR2-infected excitatory terminals in striatum. We asked what the probability is that a D1- or D2-SPN is targeted by the same presynaptic excitatory inputs projecting to the nearby D1- or D2-SPN population. D1- or A2a-Cre mice were crossed to the D1- or D2-eGFP reporter line for visualizing striatal D1- vs. D2-SPNs in slice recordings (see Materials and methods). Following the helper viruses and rabies-ChR2-mCherry injection in the D1-/A2a-Cre x D1-/D2-eGFP mice, the mCherry negative striatal SPNs were selected to be recorded in the whole-cell mode and D1- vs. D2-SPNs can be further separated based on the eGFP expression. Picrotoxin, a GABAA antagonist, was added throughout the recordings to isolate the excitatory postsynaptic currents (EPSCs). Following the blue laser stimulation of ChR2-positive presynaptic terminals in striatum, the short-latency (<10 ms) EPSCs recorded were considered as the direct excitatory inputs on D1- or D2-SPNs (Klug et al., 2018; Kress et al., 2013), which can be blocked by glutamate antagonists NBQX/APV (see Materials and methods).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic for the possible organization of the excitatory inputs to striatal D1- vs. D2-SPNs from completely segregated (left), totally overlapping (middle), to partially mixed (right). The red and black filled circles indicate the individual neurons projecting to D1- vs. D2-SPNs, respectively. The half red and half black circles imply the neurons projecting to both. (B) (left) Schematic of rabies-ChR2 labeling of the inputs to D1-SPNs and whole-cell recordings of rabies-negative striatal D1-SPNs with local optogenetic stimulation. (right) Example of the average EPSC trace showing short latency response to paired pulses (50 ms ISI) stimulation (black), that is blocked by AMPAR and NMDAR antagonists (gray). All recordings were conducted in the presence of picrotoxin (PTX) to isolate excitatory transmission. Scale bar, 25 ms, 100 pA. Same conditions applied to all following recordings. (C) Whole-cell recording of rabies-negative striatal D2-SPNs with local optogenetic stimulation with rabies-ChR2 labeling of the inputs to D2-SPNs. (D) The likelihood of the inputs to D1-SPNs forming a functional connection with nearby non-starter D1-SPNs, and the likelihood of the D2-SPN situation. Numbers above the bars denote the number of cells that show functional connectivity within total recorded. Fisher’s exact test, p=0.3137. Number of animals in each group: D1-projecting to D1 EGFP(+), N=7; D1-projecting to D2 EGFP(−), N=8; D2-projecting to D2 EGFP(+), N=10; D2-projecting to D1 EGFP(−), N=8. (E–F) Whole-cell recording of rabies-negative striatal D2-SPNs with local optogenetic stimulation with rabies-ChR2 labeling of the inputs to D1-SPNs (E), and recording of rabies-negative D1-SPNs with stimulation of inputs to D2-SPNs (F). (G) The likelihood of the inputs to D1-SPNs forming a functional connection with nearby non-starter D2-SPNs, and the likelihood of the inputs to D2-SPNs forming a functional connection with nearby non-starter D1-SPNs. Fisher’s exact test, p=0.0079. **, p<0.01. Number of animals in each group: D1-projecting to D2 EGFP(+), N=8; D1-projecting to D1 EGFP(−), N=7; D2-projecting to D1 EGFP(+), N=8; D2-projecting to D2 EGFP(−), N=10.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) The EPSC latency (A), amplitudes (B), paired pulse ratio (C), and variation (D) of whole-cell recordings of rabies-negative striatal D1- or D2-SPNs, with optogenetic stimulation of the terminals of D1- or D2-SPN retrogradely labeled cortical neurons. n.s., p>0.05, not statistically significant. Data are expressed as mean ± SEM.
 
 Recordings from the mCherry-negative, non-starter striatal D1-SPNs in striatal D1-rabies-ChR2-infected mice revealed that with high probability (~63%) a D1-SPN receives the inputs from the presynaptic excitatory neurons projecting to surrounding D1-SPNs (Figure 2B and D; Figure 2—figure supplement 1). This is true from recordings in non-starter D1-SPNs identified both as mCherry (−) / eGFP (+) in D1-Cre x D1-eGFP mice and mCherry (−) / eGFP (−) in D1-Cre x D2-eGFP mice (Figure 2B and D). Similarly, recordings from mCherry-negative non-starter striatal D2-SPNs in striatal D2-rabies-ChR2-tracing mice revealed that with a very high probability (~79%) a D2-SPN receives the inputs from the presynaptic excitatory neurons that project to surrounding D2-SPNs (Figure 2C and D; Figure 2—figure supplement 1). Again, it is similar to recordings in non-starter D2-SPNs identified both as mCherry (−) / eGFP (+) in A2a-Cre x D2-eGFP mice and mCherry (−) / eGFP (−) in A2a-Cre x D1-eGFP mice (Figure 2C and D). However, recordings from striatal D2-SPNs in the striatal D1-rabies-ChR2-tracing mice revealed that the chance for a D2-SPN to receive excitatory inputs from the presynaptic neurons projecting to surrounding D1-SPNs is rather low (~40%, Figure 2E and G; Figure 2—figure supplement 1). In contrast, recordings from striatal D1-SPNs in the striatal D2-rabies-ChR2-tracing mice revealed that the chance for a D1-SPN to receive the excitatory inputs from the presynaptic neurons projecting to surrounding D2-SPNs is remarkably high (~73%, Figure 2F and G; Figure 2—figure supplement 1). These data unveil a complex picture including both parallel and crosstalk between the excitatory inputs to D1- and D2-SPNs. Notably, the likelihood that the input connectivity was significantly higher from the presynaptic excitatory inputs of D2-SPNs to D1-SPNs than from the presynaptic excitatory inputs of D1-SPNs to D2-SPNs (Figure 2D and G). Together, these results suggest largely segregated yet asymmetrically overlapping excitatory projections to striatum where the majority of excitatory inputs to D1-SPNs only target the D1-SPNs, while most excitatory inputs to D2-SPNs target both D2- and D1-SPNs.
 
 Based on this asymmetrically overlapping functional organization, one would predict that the excitatory inputs to D1-SPNs mostly control the striatal direct pathway, while the inputs to D2-SPNs would drive both the indirect and direct pathways (Figure 3A). To test whether this is the case, we injected rabies-ChR2-mCherry into the dorsal striatum of D1- or A2a-Cre mice as before, and implanted optic fibers bilaterally in either MCC or M1 (see Materials and methods). This allows us to selectively activate D1- or D2-SPN projecting neurons in MCC or M1 and determine the optogenetic effects on behavior. For comparison, we performed behavioral experiments by optogenetic stimulation of striatal D1- or D2-SPNs in dorsal medial (DMS) and dorsal lateral striatum (DLS), two areas that receive dense excitatory projections from MCC and M1, respectively (Aoki et al., 2019; Shepherd, 2013; see Materials and methods). Consistent with the previous observations (Kravitz et al., 2010), optogenetic stimulation (20 Hz) of D1-SPNs in the DMS or DLS facilitated locomotion (Figure 3B, C, E and F). Conversely, optogenetic stimulation (20 Hz) of D2-SPNs in DMS significantly suppressed locomotion (Figure 3B and D), which is less obvious in DLS (Figure 3E and G).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of largely segregated yet partially overlapping excitatory inputs to striatal D1- vs. D2-SPNs. (B) Schematic of dorsal medial striatum (DMS) injection of Cre-dependent AAV-ChR2 and optogenetic stimulation in D1- or A2a-Cre mice. (C) (top) Example of locomotion path under control (black) and following 20 Hz optogenetic stimulation (gray) of DMS D1-SPNs in open field. Scale bar, 5 cm, same for below. (bottom) Stimulation of D1-SPNs in DMS facilitates locomotion (n=5, unpaired two-tailed t-test, t=3.386, p=0.0046). **, p<0.01. Data are expressed as mean ± SEM. (D) 20 Hz stimulation of D2-SPNs in DMS suppresses locomotion (n=5, unpaired two-tailed t-test, t=2.559, p=0.0227). *, p<0.05. Data are expressed as mean ± SEM. (E) Schematic for dorsal lateral striatum (DLS) optogenetics. (F–G) 20 Hz stimulation of D1-SPNs in DLS facilitates locomotion (F, n=5, unpaired two-tailed t-test, t=4.736, p=0.0003), while stimulation of D2-SPNs in DLS does not significantly suppress locomotion in open field (G, n=5, unpaired two-tailed t-test, t=1.026, p=0.3224). ***, p<0.001. Data are expressed as mean ± SEM. (H) Schematic of rabies-ChR2 labeling of the inputs to D1 or D2-SPNs and optogenetic stimulation in MCC. (I–J) 20 Hz stimulation of MCC neurons projecting to D1-SPNs facilitates locomotion (I, n=9, unpaired two-tailed t-test, t=2.344, p=0.0344), while stimulation of MCC neurons projecting to D2-SPNs does not alter locomotion (J, n=10, unpaired two-tailed t-test, t=1.214, p=0.2447). *, p<0.05. Data are expressed as mean ± SEM. (K) Schematic of rabies-ChR2 labeling of the inputs to D1 or D2-SPNs and optogenetic stimulation in M1. (L–M) 20 Hz stimulation of the M1 neurons projecting to D1-SPNs facilitates locomotion (L, n=7, unpaired two-tailed t-test, t=3.276, p=0.0055), while stimulation of the M1 neurons projecting to D2-SPNs does not significantly alter locomotion (M, n=8, Unpaired two-tailed t-test, t=0.5796, p=0.5714). **, p<0.01. Data are expressed as mean ± SEM. (N) Schematic of a mouse performing intracranial self-stimulation (ICSS) behavior. (O–P) D1-SPN (red) but not D2-SPN stimulation (black) drives ICSS behavior in both the DMS (O: D1, n=6, permutation test, slope = 1.5060, p=0.0378; D2, n=5, permutation test, slope = –0.2214, p=0.1021; one-tailed Mann Whitney test, Day 7 D1 vs. D2, p=0.0130) and the DLS (P: D1, n=6, permutation test, slope = 28.1429, p=0.0082; D2, n=5, permutation test, slope = –0.3429, p=0.0463; one-tailed Mann Whitney test, Day 7 D1 vs. D2, p=0.0390). *, p<0.05. Data are expressed as mean ± SEM. (Q) Timeline of helper virus injections, rabies-ChR2 injections and optogenetic stimulation for ICSS behavior. (R–S) Optogenetic stimulation of the cortical neurons projecting to either D1- or D2-SPNs induces ICSS behavior in both the MCC (R: MCC-D1, n=5, permutation test, Day1-Day7, slope = 2.5857, p=0.0034; MCC-D2, n=5, Day2-Day7, permutation test, slope = 1.4229, p=0.0344; no significant effect on Day7, MCC-D1 vs. MCC-D2, two-tailed Mann Whitney test, p=0.9999) and the M1 (S: M1-D1, n=5, permutation test, Day1-Day7, slope = 1.8214, p=0.0259; M1-D2, n=5, Day1-Day7, permutation test, slope = 1.8214, p=0.0025; no significant effect on Day7, M1-D1 vs. M1-D2, two-tailed Mann-Whitney test, p=0.3810). n.s., not statistically significant. Data are expressed as mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) 5 Hz optogenetic stimulation on MCC neurons projecting to either D1- or D2-SPNs didn’t change the locomotion activity. MCC – D1, n=9, unpaired two-tailed t-test, t=0.1906, p=0.8516. MCC – D2, n=10, unpaired two-tailed t-test, t=1.015, p=0.3275. Data are expressed as mean ± SEM. (C) 5 Hz optogenetic stimulation of M1 neurons projecting to D1-SPNs didn’t change the locomotion activity. n=7, unpaired two-tailed t-test, t=0.276, p=0.7866. Data are expressed as mean ± SEM. (D) 5 Hz optogenetic stimulation of M1 neurons projecting to D2-SPNs slightly increased locomotion activity. n=8, unpaired two-tailed t-test, t=2.48, p=0.0265. *, p<0.05. Data are expressed as mean ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic of dorsal medial striatum (DMS) injection of Cre-dependent AAV-ChR2 in D1- and A2a-Cre mice with optogenetic stimulation in M1. (B) 20 Hz optogenetic stimulation of M1 in mice expressing ChR2 in striatal D1-SPNs didn’t change the locomotion activity. n=5, unpaired two-tailed t-test, t=0.1016, p=0.9194. Data are expressed as mean ± SEM. (C) 20 Hz optogenetic stimulation of M1 in mice expressing ChR2 in striatal D2-SPNs didn’t alter the locomotion activity. n=5, unpaired two-tailed t-test, t=1.155, p=0.2525. Data are expressed as mean ± SEM.
 
 Notably, high-frequency (20 Hz) but not low-frequency (5 Hz) optogenetic stimulation of MCC neurons that project to D1-SPNs significantly facilitated locomotion in the open field (Figure 3H, I; Figure 3—figure supplement 1), similar to D1-SPN activation in DMS. However, optogenetic stimulation (20 Hz) of D2-SPN projecting MCC neurons in the same location did not alter locomotion in the open field (Figure 3H and J), in contrast with the effects of stimulation of D2-SPNs in DMS (Figure 3D). Similarly, high-frequency optogenetic stimulation (20 Hz) of M1 neurons that project to D1-SPNs facilitated locomotion in the open field (Figure 3K and L; Figure 3—figure supplement 1), while 20 Hz stimulation of the M1 neurons projecting to D2-SPNs did not significantly alter locomotion (Figure 3K and M). Further control experiments employing the same optogenetic stimulation in the exact cortical locations but with ChR2 expression only in the striatum do not generate any behavioral phenotypes (Figure 3—figure supplement 2). It thus rules out the possibility that the behavioral effects observed by cortical stimulation in the rabies-ChR2 mice were triggered through direct striatal activation due to the light penetration into the striatum. These results are consistent with the functional connectivity in which the excitatory inputs to D1-SPNs mostly drive the direct pathway, and the inputs to D2-SPNs target both the indirect and direct pathways (Figure 3A). It also suggests that the cortical neurons in the same cortical layer and spatial location could differently control actions depending on their striatal projection targets, in a pathway- and cell type-specific manner.
 
@@ -49,7 +77,7 @@ Corticostriatal circuitry is critical for action sequence learning and execution
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92992/elife-92992-fig4-v1.jpg)
 
-**Figure 4.:** (A) Schematic of a mouse performing FR8 sequence. (B) Optogenetic stimulation (20 Hz) of the D1-SPN projecting MCC neurons during FR8 sequence. Example lever pressing (black bar) in control (top) vs. stimulation (middle) trials aligned to the first press, where the blue transparent rectangle corresponds to the window of optogenetic stimulation (20 Hz, 8 s). The black and blue lines in the PETH (bottom) indicate the lever press rate for control and stimulation conditions, respectively, same for below. (C) Optogenetic stimulation (20 Hz) of the D2-SPN projecting MCC neurons during FR8 sequence. (D) Average percent lever press rate change during optogenetic stimulation of D1- vs. D2-SPN projecting MCC neurons compared to control (MCC – D1, n=8; MCC – D2, n=7; Unpaired two-tailed t-test, t=2.774, p=0.0097). **, p<0.01. Effects compared to a theoretical percentage change of 0 of each individual manipulation (MCC-D1, n=8, one-sample two-tailed t-test, t=2.814, p=0.0131, 95% CI, 15.49–112.2; MCC-D2, n=7, one-sample two-tailed t-test, t=0.8481, p=0.4117, 95% CI, –21.78–9.502). Data are expressed as mean ± SEM. (E) Timeline of helper virus injections, rabies-ChR2 injections and optogenetic stimulation during action sequence performance. (F–G) Optogenetic stimulation (20 Hz) of the D1- (F) or D2-SPN (G) projecting M1 neurons during FR8 sequence. (H) Average percent lever press rate change during optogenetic stimulation of D1- vs. D2-SPN projecting M1 neurons compared to control (M1 – D1, n=6; M1 – D2, n=7; Unpaired two-tailed t-test, t=0.7651, p=0.4511). Effects compared to a theoretical percentage change of 0 of each individual manipulation (M1-D1, n=6, one-sample two-tailed Wilcoxon signed-rank test, p=0.0046, 97.75% CI, –0.7866–151.0; M1-D2, n=7, one-sample two-tailed Wilcoxon signed-rank test, p=0.0479, 96.48% CI, 2.350–62.86). Data are expressed as mean ± SEM.Figure 4—source data 1.
+**Figure 4.:** (A) Schematic of a mouse performing FR8 sequence. (B) Optogenetic stimulation (20 Hz) of the D1-SPN projecting MCC neurons during FR8 sequence. Example lever pressing (black bar) in control (top) vs. stimulation (middle) trials aligned to the first press, where the blue transparent rectangle corresponds to the window of optogenetic stimulation (20 Hz, 8 s). The black and blue lines in the PETH (bottom) indicate the lever press rate for control and stimulation conditions, respectively, same for below. (C) Optogenetic stimulation (20 Hz) of the D2-SPN projecting MCC neurons during FR8 sequence. (D) Average percent lever press rate change during optogenetic stimulation of D1- vs. D2-SPN projecting MCC neurons compared to control (MCC – D1, n=8; MCC – D2, n=7; Unpaired two-tailed t-test, t=2.774, p=0.0097). **, p<0.01. Effects compared to a theoretical percentage change of 0 of each individual manipulation (MCC-D1, n=8, one-sample two-tailed t-test, t=2.814, p=0.0131, 95% CI, 15.49–112.2; MCC-D2, n=7, one-sample two-tailed t-test, t=0.8481, p=0.4117, 95% CI, –21.78–9.502). Data are expressed as mean ± SEM. (E) Timeline of helper virus injections, rabies-ChR2 injections and optogenetic stimulation during action sequence performance. (F–G) Optogenetic stimulation (20 Hz) of the D1- (F) or D2-SPN (G) projecting M1 neurons during FR8 sequence. (H) Average percent lever press rate change during optogenetic stimulation of D1- vs. D2-SPN projecting M1 neurons compared to control (M1 – D1, n=6; M1 – D2, n=7; Unpaired two-tailed t-test, t=0.7651, p=0.4511). Effects compared to a theoretical percentage change of 0 of each individual manipulation (M1-D1, n=6, one-sample two-tailed Wilcoxon signed-rank test, p=0.0046, 97.75% CI, –0.7866–151.0; M1-D2, n=7, one-sample two-tailed Wilcoxon signed-rank test, p=0.0479, 96.48% CI, 2.350–62.86). Data are expressed as mean ± SEM.
 
 ## Discussion
 
@@ -73,11 +101,175 @@ But how are the dynamically different activities in the striatal direct and indi
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Drd1-Cre</td>
+      <td>The JacksonLaboratory</td>
+      <td>stock # 030329; RRID:IMSR_JAX:030329</td>
+      <td>maintained on a C57BL/6 J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Adora2a-Cre</td>
+      <td>The JacksonLaboratory</td>
+      <td>stock # 036158; RRID:MMRRC_036158-UCD</td>
+      <td>maintained on a C57BL/6 J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>The JacksonLaboratory</td>
+      <td>stock # 000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>D1-eGFP</td>
+      <td>MMRRC</td>
+      <td>MMRRC_000297-MU; RRID:MMRRC_000297-MU</td>
+      <td>GENSAT: X60</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>D2-eGFP</td>
+      <td>MMRRC</td>
+      <td>MMRRC_00230-UNC; RRID:MMRRC_000230-UNC</td>
+      <td>GENSAT: S118</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated virus)</td>
+      <td>AAV5/EF1α-Flex-TVA-mCherry</td>
+      <td>UNC Viral Vector Core</td>
+      <td>RRID:SCR-002448</td>
+      <td>3–4.3×1012 particles/mL</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated virus)</td>
+      <td>AAV8/CA-Flex-RG</td>
+      <td>UNC Viral Vector Core</td>
+      <td>RRID:SCR-002448</td>
+      <td>1.2–4.3×1012 particles/mL</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudotyped rabies virus)</td>
+      <td>(EnvA) SAD-∆G Rabies-eGFP</td>
+      <td>Salk Vector Core</td>
+      <td>RRID:SCR_014847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudotyped rabies virus)</td>
+      <td>(EnvA) SAD-∆G Rabies-ChR2-mCherry</td>
+      <td>Salk Vector Core</td>
+      <td>RRID:SCR_014847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated virus)</td>
+      <td>AAV5-EF1α-DIO-ChR2(H134R)-mCherry</td>
+      <td>Salk Vector Core</td>
+      <td>RRID:SCR_014847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt hydrate</td>
+      <td>MilliporeSigma</td>
+      <td>Cat.#. N183</td>
+      <td>10 µM (final)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-APV</td>
+      <td>MilliporeSigma</td>
+      <td>Cat.#. A5282</td>
+      <td>50 µM (final)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat.#. P1675</td>
+      <td>50–100 µM (final)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX-314</td>
+      <td>MilliporeSigma</td>
+      <td>Cat.#. L5783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji / ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 9.2</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MED PC</td>
+      <td>MED Associates</td>
+      <td>RRID:SCR_012156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Allen Reference Atlas</td>
+      <td></td>
+      <td>RRID:SCR_013286</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were approved by the Salk Institute Institutional Animal Care and Use Committee (IACUC; protocol 12–00032) and followed NIH guidelines for the care and use of laboratory animals. Group-housed male and female mice (2–6 months old) were used in this study. Animals were housed on a 12 hr dark/12 hr light cycle (dark from 6 pm to 6 am). Heterozygous Drd1-Cre (The Jackson Laboratory, stock # 030329, GENSAT: EY217) and Adora2a-Cre (The Jackson Laboratory, stock # 036158, GENSAT: KG139) mice were obtained from MMRRC and were backcrossed to C57BL/6 J mice, stock # 000664 (>9 generations; Cui et al., 2013; Jin et al., 2014; Madisen et al., 2012; Tecuapetla et al., 2016). BAC reporter lines D1-eGFP (MMRRC: MMRRC_000297-MU; GENSAT: X60) and D2-eGFP (MMRRC: MMRRC_00230-UNC; GENSAT: S118; Gong et al., 2007) were crossed to Drd1-Cre (D1-Cre) and Adora2a-Cre (A2a-Cre) mice to identify D1- and D2-SPNs for electrophysiological recordings.
 
-## Surgery and viral injection
+### Surgery and viral injection
 
 For G-deleted rabies-mediated retrograde tracing and functional determination (slice recordings; Smith et al., 2016), all surgeries were performed under aseptic conditions with animals anesthetized with ketamine (100 mg/kg) / xylazine (10 mg/kg) while mounted on a stereotaxic device (Kopf Instruments; Tujunga, CA). The skull was leveled at bregma and lambda, and a small hole was drilled at the coordinate (from bregma and midline) of AP +0.5 mm, ML ±1.8 mm. A Hamilton syringe (33-gauge needle) containing 1 µl freshly mixed AAV5/EF1α-Flex-TVA-mCherry (UNC Vector Core; Chapel Hill, NC) and AAV8/CA-Flex-RG (UNC Vector Core; Chapel Hill, NC) was slowly lowered to DV - 2.2 mm from the dura to target dorsal central striatum. The virus cocktail was injected slowly over ~10 min, and the needle was left in place for ~5 additional minutes afterwards. Then, the needle was slowly retracted over 5 min to reduce the virus from moving into the needle track. After injection, mice were sutured and returned to their home cage with ibuprofen (50 mg/kg/day) in their drinking water for the following four days. They were given 3 weeks to allow for maximal expression of helper viruses before they were injected with 1.5 µl of (EnvA) SAD-∆G Rabies-eGFP or 1.5 µl of (EnvA) SAD-∆G Rabies-ChR2-mCherry (Salk Vector Core, La Jolla, CA) on an angle (18°) to avoid labeling any neurons in the initial injection tract in the same target region. Injecting locations were identical in D1-Cre and A2a-Cre animals. All the injections were done unilaterally for anatomical and slice physiology experiments and bilaterally for behavioral experiments.
 
@@ -85,7 +277,7 @@ To prepare animals for optogenetic behavior experiments testing D1- or D2-SPN pr
 
 For striatal opto-ICSS and open field experiments, D1- or A2a-Cre mice were injected bilaterally with AAV5-EF1α-DIO-ChR2(H134R)-mCherry (Salk Vector Core, La Jolla, CA) in DMS (AP 0.5 mm, ML ±1.5 mm, DV –2.2 mm) or DLS (AP 0.5 mm, ML ±2.5 mm, DV –2.2 mm), and fiber optics were implanted ~0.2 mm above the injection site. In control experiments for testing striatal activation by light penetration from cortical optic fibers (Figure 3—figure supplement 2), D1- or A2a-Cre mice were injected with AAV5-EF1α-DIO-ChR2(H134R)-mCherry bilaterally in DMS, and fiber optics were bilaterally implanted into M1 of the same coordinates as previously described.
 
-## Ex vivo brain slice electrophysiology
+### Ex vivo brain slice electrophysiology
 
 4–8 days were allowed for expression and optimal cell health post unilateral (EnvA) SAD-∆G Rabies-ChR2-mCherry injection before electrophysiology recordings on acute slice were carried out (Klug et al., 2018; Smith et al., 2016). Mice were anesthetized with ketamine/xylazine and transcardially perfused with ~20 mL ice-cold, bubbling (95% O2/5% CO2) NMDG cutting solution [consisting of (in mM): NMDG 105, HCl 105, KCl 2.5, NaH2PO4 1.2, NaHCO3 26, Glucose 25, Sodium L-Ascorbate 5, Sodium Pyruvate 3, Thiourea 2, MgSO4 10, CaCl2 0.5, 300 mOsm, pH = 7.4]. The extracted brain was blocked coronally with a brain matrix (Zivic Instruments; Pittsburg, PA) and acute coronal slices (300 µm) were cut on a vibratome (VT1000S, Leica Microsystems; Buffalo Grove, IL) through the striatum in ice-cold, bubbling NMDG-based cutting solution. Slices recovered for 15 min at 32 °C in bubbling NMDG cutting solution, then transferred to a holding chamber containing normal aCSF [consisting of (in mM): NaCl 125, KCl 2.5, NaH2PO4 1.25, NaHCO3 25, D-Glucose 12.5, MgCl2 1, CaCl2 2, pH = 7.4, 295 mOsm] bubbling (95% O2/5% CO2) at 28 °C. At least 1 hr after recovery, the slices were placed in the recording chamber, in which normal aCSF (33~34 °C, bubbling with 95% O2/5% CO2) was perfused over the slices at ~2 mL/min throughout recordings. Dorsal striatal SPNs were visualized under IR-DIC optics (Zeiss Axioskop2; Oberkocken, Germany) at 40 x and D1- or D2-SPNs were confirmed by eGFP expression with brief observation in the epifluorescent channel. D1-SPNs (eGFP-positive in D1-eGFP mice, or eGFP-negative in D2-eGFP mice) or D2-SPNs (eGFP-positive in D2-eGFP mice, or eGFP-negative in D1-eGFP mice) that were ChR2-mCherry-negative, but in the injection site and surrounded by cells expressing ChR2-mCherry were targeted for recording. This configuration ensured that the distance between recorded and starter cells did not exceed 100 µm, maintaining close anatomical proximity and thereby preserving the likelihood of shared cortical innervation within the examined circuitry. Only animals with high-efficiency labeling throughout the cortex were used for recordings to determine collateralization.
 
@@ -93,15 +285,15 @@ Voltage clamp recordings were performed using 3–4 MΩ patch pipettes (WPI; Sa
 
 For current clamp recordings of rabies-positive pyramidal neurons in the cortex, a potassium methanesulfonate-based internal solution [(in mM): KMeSO4 135, KCl 5, CaCl2 0.5, HEPES 5, EGTA 5, Mg-ATP 2, Na-GTP 0.3, (pH = 7.3, 305 mOsm)] was used. 750ms current injections (−250–200 pA) were given to test the membrane potential response of rabies-ChR2 positive pyramidal neurons, in primary motor cortex layer 5, and followed by 20 Hz or 5 Hz optogenetic stimulation to test the response of these neurons to light. Current clamp recordings were filtered and digitized at 10 kHz. All recordings were performed using a Multiclamp 700 A amplifier (Molecular Devices; Sunnyvale, CA), digitized with Digidata 1440 (Molecular Devices; Sunnyvale, CA) and collected with pClamp 9 software (Molecular Devices; Sunnyvale, CA). Data were analyzed with Clampfit 9.
 
-## Open field
+### Open field
 
 After helper viruses’ injections in the striatum, animals were put back on food and allowed to recover and viral expression. They were then injected with (EnvA) SADΔG-ChR2-mCherry virus in the striatum and implanted with fiber optics in the MCC or M1 as described above (see Surgery and Viral Injection). Then animals were allowed to recover over 3 days. On the fourth day post-injection and implantation, animals went through an open field test. They were connected to fiber-optic leads (Doric) that connected to a laser through a commutator for free movement. An additional light shield was attached at the fiber optic connection to the mouse to mask the laser light output. Following habituation to the fiber optic connections in a home cage, the mice were placed in the middle of a 41 cm x 41 cm square, white and evenly illuminated open field chamber. Custom MEDPC code delivered 20 Hz or 5 Hz stimulation (473 nm blue laser, 5 mW power at connection to mouse, 10 ms pulse width) for 15 s after every 3 min and 45 s, and each animal received three to four replicates. Mice with AAV5-EF1α-DIO-ChR2(H134R)-mCherry injected bilaterally in DMS or DLS went through similar open field tests after 4 days of recovery from surgery, with optic stimulation in DMS, DLS, or M1. Video was collected for each run and analyzed in Ethovision 8.5. To analyze the open field data, the behavior was binned in 10 s bins and distance traveled during laser on period was normalized to the averaged distances during preceding 45 s just prior to stimulation onset.
 
-## Optogenetic intracranial self-stimulation (opto-ICSS)
+### Optogenetic intracranial self-stimulation (opto-ICSS)
 
 In opto-ICSS experiments, two different subsets of animals were used: to stimulate D1- and D2-SPNs in DMS and DLS, or to stimulate D1- or D2-SPN-projecting cortical neurons in MCC and M1, respectively. Mice that had never experienced the operant chamber were injected with virus and implanted with fiber optics using the procedure described above. From the fourth day following surgery, the mice received ICSS training for 7 consecutive days. They were attached to fiber-optic patch cords and placed in an operant chamber. Each session began with the illumination of a house light and the extension of two levers: one active (left) and one inactive (right). Every time the mouse pressed the active lever, a 20 Hz stimulation was triggered (473 nm blue laser, 5 mW power at connection to mouse, 10 ms pulse width, 1 s duration) targeting the cell bodies in MCC or M1 that project to D1- or D2-SPNs. Each session concludes after 90 min with the retraction of the levers and the house light turning off. Continuous pressing of the lever during stimulation will not lengthen the stimulation period. Pressing of the inactive lever had no consequence and was used as a control of general activity measure of non-contingent lever pressing. All protocols were custom written in MEDPC (Med Associates).
 
-## Sequence training and optogenetic stimulation
+### Sequence training and optogenetic stimulation
 
 Prior to the injection of the rabies virus, animals were pre-trained for three weeks in fixed ratio 8 (FR8) or fixed ratio 4 (FR4) task (Jin and Costa, 2010; Jin et al., 2014). Briefly, animals were food-restricted (30 hr) to start training and weighed daily to monitor their bodyweight. They were fed approximately 2–2.5 g regular chow/mouse/day after each behavioral training session concluded to maintain around 85% of their initial weight. Animals were trained in operant chambers (21.6 cm (L) x 17.8 cm (W) x 12.7 cm (H)) housed in a sound-attenuating box (Med-Associates, St. Albans, VT) with two retractable levers to the left and right of a central food magazine and a house light (3 W, 24 V) opposite to the levers and magazine. Sucrose solution (15 µl, 10%) was delivered by a syringe pump into a metal bowl as a reinforcer. Magazine entries were recorded using an infrared beam break detector. Behavioral chambers were controlled by MED-PC IV software (MED Associates, VT) that recorded all timestamps of lever presses and magazine entries with a resolution of 10 ms.
 
@@ -111,10 +303,10 @@ On the fourth day after rabies injection and fiber optic implant, and after open
 
 All sequence data were analyzed in MATLAB using custom scripts. To construct the peri-event time histograms (PETH), all lever presses before the reward (control or stimulation trials) were aligned to the first press of the FR4 or FR8 sequence, averaged in 100 ms bins, and filtered with a Gaussian low-pass filter (window size = 5, standard deviation = 5). All the PETHs were plotted with the first press omitted for illustration and comparison clarity. The effects of optogenetic modulation on press rate were qualitatively similar for FR4 and FR8 sequences and thus combined for statistics.
 
-## Histology and microscopy
+### Histology and microscopy
 
 Approximately twelve days following rabies injection or after behavior tests, mice were anesthetized with an overdose of ketamine/xylazine and transcardially perfused with 0.01 M PBS (30–40 mL) followed by 4% paraformaldehyde (PFA)/0.1 M PB, pH 7.4 (30–40 mL), with a peristaltic perfusion pump (Cole Parmer, Vernon Hills, IL; Klug et al., 2018; Smith et al., 2016). The brain was carefully extracted and post-fixed in 4% PFA/0.1 M PB overnight (16–24 hr), then transferred to 30% sucrose/0.1 M PB for 1–2 days until the brain equilibrated and sunk. On the day of cutting, it was coronally blocked with a brain matrix (Zivic Instruments; Pittsburg, PA) and mounted on a freezing microtome. Coronal slices were collected from the most rostral to the most caudal sites at 50 µm resolution in 96 well plates containing cryoprotectant (0.1 M phosphate buffer, ethylene glycol, glycerol) to maintain AP position. Brain slices surrounding the injection site and fiber implant site were mounted on super frost plus slides (Thermo Fisher Scientific, Waltham, MA), counterstained for DAPI and cover slipped with Aqua-Poly/Mount mounting media (Polysciences, Inc; Warrington, PA). Slides were scanned on an automated slide scanner (Olympus VS120) at 10 x in the blue and red channels. Images were batch converted to composite TIFFs and saved for image analysis.
 
-## Statistics
+### Statistics
 
 Statistics were conducted in Graph Pad Prism 6.01 (La Jolla, CA). Fisher’s exact test was used in comparing the likelihood of connections in slice recordings. Student unpaired two-tailed t-test was used in open field test and sequence operant task to analyze optogenetic stimulation effects. Non-parametric Mann-Whitney U Test was conducted when distributions significantly deviated from normal distributions. The reinforcing effect of each group in the ICSS task was assessed using a permutation test (10,000 permutations per group). A one-sample two-tailed t-test or Wilcoxon signed-rank test was used to assess the effectiveness of optogenetic activation in each individual group during the sequence operant task.

@@ -18,13 +18,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00m8d6786 Division of Immunology and Allergy, Department of Medicine Solna, Karolinska Institutet, Karolinska University Hospital Stockholm Sweden
-2. https://ror.org/056d84691 Division of Infectious Diseases, Department of Medicine Solna, Karolinska Institutet Stockholm Sweden
-3. https://ror.org/00m8d6786 Department of Infectious Diseases, Karolinska University Hospital Stockholm Sweden
+1. Division of Immunology and Allergy, Department of Medicine Solna, Karolinska Institutet, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
+2. Division of Infectious Diseases, Department of Medicine Solna, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+3. Department of Infectious Diseases, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
 4. SomaLogic Operating Co., Inc Boulder United States
 5. Boulder Bioconsulting Inc Boulder United States
-6. https://ror.org/056d84691 Department of Microbiology, Tumor and Cell Biology, Karolinska Institutet Stockholm Sweden
-7. https://ror.org/00m8d6786 Department of Clinical Microbiology, Karolinska University Hospital Stockholm Sweden
+6. Department of Microbiology, Tumor and Cell Biology, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+7. Department of Clinical Microbiology, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
 
 † Corresponding author
 
@@ -44,59 +44,289 @@ Here, we determined monocyte and DC subset distribution, maturation and function
 
 ## Results
 
-## Study subject characteristics
+### Study subject characteristics
 
 During five consecutive influenza seasons (2016–2020), 121 adults with symptoms of ILI were included in the study. Blood, nasal swabs, and nasopharyngeal aspirates were collected (Figure 1A). IAV infection was confirmed by PCR in 70 patients while 51 patients had other infections (IBV: 10, RSV: 6, SARS-CoV-2: 35) despite presenting with similar symptoms (Figure 1B), consistent with inclusion based on ILI. No annual pattern of viral etiology was observed across the 5 years, except for SARS-CoV-2 which emerged in late 2019 and was only seen in patients from 2020 (Figure 1C). The severity of disease in patients was categorized as ‘mild’ or ‘moderate’ (detailed description in Methods). Of the 121 patients, 35 had moderately severe disease and 64 were hospitalized (Table 1). Of the SARS-CoV-2 patients, 15 were characterized as mild and 20 had moderate disease. Twenty healthy controls (HCs) were included and sampled identically.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig1-v2.jpg)
+
+**Figure 1.:** (A) Nasal swabs, nasopharyngeal aspirates (NPA), and peripheral blood samples were collected from patients with acute symptoms of influenza-like symptoms and during their convalescence as well as from healthy controls (HCs). (B) Forty of 64 patients with influenza-like symptoms were confirmed to be infected with IAV by PCR and were included in the study. Further, 27 of the IAV patients were infected with H1N1, and 22 with H3N2. A variety of analyses were performed on acute (n=121) and convalescent (n=11) samples from the IAV patients and HC (n=20). (C) Graph depicts the relative distribution of IAV, IBV, respiratory syncytial virus (RSV), and severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) cases during each year of inclusion to illustrate the shifting trends in circulating respiratory viral illnesses over time. (D–F) Scatter plots show data from individual subjects and lines indicate median values. IAV patients with mild disease, as defined by peak respiratory sequential organ failure assessment (SOFA) or modified SOFA (mSOFA) score of 1 or 2 are indicated in black and those with moderate disease (mSOFA score of 3 or 4) are indicated in pink. (D) ×106 PBMCs (per mL blood, filled circles) and ×106 total NPA cells (open circles) obtained from IAV patients and HCs. (E) Cell viability of PBMCs and NPA from patients and HCs was assessed using Trypan Blue exclusion staining and manual counting. (F) Frequency of lineage (CD3, CD19, CD20, CD56, CD66abce) negative HLA-DR+ cells (monocytes and myeloid dendritic cells) of live CD45+ cells in blood and NPA from HCs (n=16) and IAV patients (n=22). Differences between IAV patients and HCs were assessed using Mann-Whitney test and considered significant at p<0.05 (**p<0.01, ****p<0.0001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Representative sample showing gating on live CD45+ single cells, excluding cells expressing lineage markers (CD3, CD20, CD56, and CD66abce) and identification of HLA-DR-expressing cells. From the live CD45+, lineage negative, HLA-DR+ (lin–HLA-DR+) cells, CD11c– cells were gated upon to identify CD123+ plasmacytoid dendritic cells (DCs) (teal). From the CD11c+ myeloid cells, intermediate (CD14+CD16+) (IM, red) and nonclassical (NCM, CD14−CD16+) (blue) monocytes were identified. From CD11c+CD14 + cells, true classical monocytes (CD14+CD16−) (CM, green), and CD11c+CD14+CD1c+ monocyte-derived DCs (purple) were identified. From CD14−CD16− cells, two myeloid DC subsets cDC2 (coral) and cDC1 (maroon) were identified. Representative samples of using the antibody panel and gating strategy to analyse all seven subsets (CMs, IMs, NCMs, plasmacytoid DCs [PDCs], cDC1s, cDC2s, and monocyte-derived DCs [mo-DCs]) in blood samples from a (A) healthy control (HC) and (B) influenza A virus (IAV) patient and NPA samples from a (C) HC and (D) IAV patient are shown.
+
+**Table 1.**
+ Patient and control characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cohort</th>
+      <th>IAV</th>
+      <th>IBV</th>
+      <th>RSV</th>
+      <th>SARS-CoV-2</th>
+      <th>Healthy controls</th>
+      <th>p-Value*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>70</td>
+      <td>10</td>
+      <td>6</td>
+      <td>35</td>
+      <td>20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age, median (range)</td>
+      <td>59 (20–98)</td>
+      <td>54 (25–89)</td>
+      <td>63 (32–88)</td>
+      <td>52 (26–76)</td>
+      <td>44 (22–59)</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Male gender,n (%)</td>
+      <td>29 (41)</td>
+      <td>6 (60)</td>
+      <td>2 (33)</td>
+      <td>18 (51)</td>
+      <td>12 (60)</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Onset to inclusion, days, median [IQR]</td>
+      <td>4 [2–5]</td>
+      <td>5 [4–6]</td>
+      <td>6 [4–7]</td>
+      <td>12 [10–22]</td>
+      <td>–</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Hospital admission, n (%)</td>
+      <td>34 (49)</td>
+      <td>2 (20)</td>
+      <td>4 (67)</td>
+      <td>24 (69)</td>
+      <td>–</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td colspan="7">Comorbidities</td>
+    </tr>
+    <tr>
+      <td>CCI, median [IQR]</td>
+      <td>1.5 [0.0–4.0]</td>
+      <td>0.0 [0.0–3.0]</td>
+      <td>2.50 [2.0–3.0]</td>
+      <td>1.0 [0.0–3.0]</td>
+      <td>–</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>BMI, median [IQR]</td>
+      <td>25.9 [23.0–31.6]</td>
+      <td>26.3 [23.4–29.4]</td>
+      <td>26.0 [22.6–29.9]</td>
+      <td>27.0 [25.4–30.5]</td>
+      <td>–</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Hypertension,n (%)</td>
+      <td>20 (29)</td>
+      <td>1 (10)</td>
+      <td>2 (33)</td>
+      <td>9 (26)</td>
+      <td>–</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Diabetes,n (%)</td>
+      <td>7 (10)</td>
+      <td>2 (20)</td>
+      <td>2 (33)</td>
+      <td>9 (26)</td>
+      <td>–</td>
+      <td>0.073</td>
+    </tr>
+    <tr>
+      <td>Current smoker,n (%)</td>
+      <td>11 (17)</td>
+      <td>1 (11)</td>
+      <td>0</td>
+      <td>2 (5.9)</td>
+      <td>–</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td colspan="7">Laboratory analyses</td>
+    </tr>
+    <tr>
+      <td>CRP (mg/L), median [IQR]</td>
+      <td>40 [24–67]</td>
+      <td>34 [9–39]</td>
+      <td>44 [33–62]</td>
+      <td>102 [24–182]</td>
+      <td>0 (0–0)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>WBC (×109/L), median (IQR)</td>
+      <td>6.4 [5.0–8.3]</td>
+      <td>5.8 [5.3–9.0]</td>
+      <td>8.9 [NA]</td>
+      <td>6.7 [4.5–7.9]</td>
+      <td>6.0 [5.0–6.8]</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (×109/L), median [IQR]</td>
+      <td>1.0 [0.7–1.3]</td>
+      <td>0.8 [0.7–0.9]</td>
+      <td>1.1 [NA]</td>
+      <td>1.20 [0.8–1.7]</td>
+      <td>1.7 [1.5–2.0]</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>Neutrophils (×109/L), median [IQR]</td>
+      <td>4.7 [2.7–6.3]</td>
+      <td>4.6 [3.3–6.8]</td>
+      <td>5.6 [NA]</td>
+      <td>4.4 [2.7–6.6]</td>
+      <td>3.2 [3.0–3.8]</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Monocytes (×109/L), median [IQR]</td>
+      <td>0.7 [0.5–0.8]</td>
+      <td>0.5 [0.5–0.6]</td>
+      <td>0.8 [NA]</td>
+      <td>0.4 [0.3–0.6]</td>
+      <td>0.5 [0.4–0.5]</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Ct value, median [IQR]</td>
+      <td>25.1 [22.1–31.1]</td>
+      <td>27.2 [22.4–31.8]</td>
+      <td>30.1 [25.8–35.9]</td>
+      <td>27.1 [23.0–29.2]</td>
+      <td>–</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td colspan="7">Treatment</td>
+    </tr>
+    <tr>
+      <td>Tamiflu prescribed, n (%)</td>
+      <td>35 (54)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Antibiotics prescribed,n (%)</td>
+      <td>21 (33)</td>
+      <td>2 (22)</td>
+      <td>3 (50)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td colspan="7">Peak severity score</td>
+    </tr>
+    <tr>
+      <td>Mild disease,n (%)</td>
+      <td>57 (81)</td>
+      <td>10 (100)</td>
+      <td>4 (67)</td>
+      <td>15 (43)</td>
+      <td>–</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Moderate disease,n (%)</td>
+      <td>13 (19)</td>
+      <td>0</td>
+      <td>2 (33)</td>
+      <td>20 (57)</td>
+      <td>–</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Statistical significance was determined by Kruskal-Wallis rank sum test; Fisher’s exact test. CCI: Charlson comorbidity index. BMI: body mass index. CRP: C-reactive protein. WBC: white blood cells. Ct: cycle threshold. Normal range: BMI: 18.5–24.9, CRP <3 mg/L, WBC 3.5×109/L to 8.8×109/L, lymphocytes 1.1×109/L to 3.5×109/L, neutrophils 1.6×109/L to 5.9×109/L, monocytes 0.2×109/L to 0.8×109/L._
+
 IAV patients had a median age of 59 (range: 20–98 years) and sought medical attention after a median of 4 days following onset of symptoms (IQR: 2–5) (Table 1). HCs had a median age of 44 (range: 22–59 years). IAV patients had a median Charlson comorbidity index (CCI) of 1.5 (IQR: 0–4), and 36 IAV patients had at least one underlying comorbidity (chronic heart/lung diseases, reduced lung function, kidney insufficiency, diabetes mellitus, asplenia/hyposplenia, and malignancies).
 
-## Human IAV infection is characterized by an influx of CD11c+ cells into the nasopharynx
+### Human IAV infection is characterized by an influx of CD11c+ cells into the nasopharynx
 
 Blood from IAV patients yielded significantly fewer PBMCs/mL compared to HCs (Figure 1D). In contrast, threefold higher cell numbers were recovered from the nasopharynx of IAV patients compared to HCs (median 0.77 vs. 0.25 × 106 cells). In fact, 43% of IAV patients had more than 1×106 cells recovered from their NPA sample. Viability of PBMCs and NPA cells was variable across individuals, with no statistically significant differences between patient or HC groups (Figure 1E). We determined the immune cell distribution in blood and the nasopharynx by flow cytometry (Figure 1—figure supplement 1) on matched PBMC and NPA samples with a minimum 105 cells and ≥70% viability (n=22 IAV patients and n=16 HCs) to obtain high-quality data (stained with identical panels and clones of antibodies). The frequencies of live CD45+ immune cells were increased in the NPA of patients as compared to HCs but remained similar in blood between the groups (data not shown). Among the immune cells, we found significantly higher frequencies of lineage (CD3, CD19, CD20, CD56, CD66abce) negative, HLA-DR+ cells, the compartment where monocytes and MDCs can be identified, in both blood (p<0.0001) and the NPA (p<0.01) of IAV patients as compared to HCs (Figure 1E). Therefore, our data show that acute IAV infection results in an influx of monocytes and DCs to the nasopharynx.
 
-## Increased frequencies of CM and IM in the nasopharynx during IAV infection
+### Increased frequencies of CM and IM in the nasopharynx during IAV infection
 
 To identify which monocyte and DC subsets contributed to the changes observed in the myeloid cell compartment during IAV infection, we compared the distribution of the different cell subsets. As expected, CMs were the most frequent monocytes in blood in both patients and HCs, and remained comparable. However, in the nasopharynx of IAV patients as compared to HCs, blood CM frequencies were significantly increased (Figure 2A). Strikingly, IM frequencies were significantly elevated, in both blood and NPA of IAV patients (Figure 2B), while blood NCM appeared to be lower in patients compared to HCs (Figure 2C). In HCs, the nasopharynx was virtually devoid of DCs– cDC2s, cDC1s, PDCs, and CD14+CD1c+ monocyte-derived DCs (mo-DCs) were only identified in a subset of HCs (Figure 1—figure supplement 1 and Figure 2D). In contrast, during acute IAV infection, all DC subsets were significantly decreased in the blood of patients (Figure 2E–H). Meanwhile in the nasopharynx, cDC2, cDC1, and PDC frequencies were significantly higher in IAV patients compared to HCs (Figure 2E–H). Additionally, we looked from the rare cDC1s with low CD11c expression (Figure 2—figure supplement 1). Despite very low numbers, the same trend of significant reduction in blood and increased presence in the nasopharynx was observed for these cells as well.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Scatter plots show frequencies of (A) CD14+CD16–CD1c– classical monocytes (CMs), (B) CD14+CD16+ intermediate monocytes (IMs), and (C) CD14–CD16+ nonclassical monocytes (NCMs) in PBMCs and nasopharyngeal aspirates (NPA) from healthy controls (HCs) (n=12) and IAV patients (n=22). (D) Scatter plots shows the frequencies of cDC2s (coral), cDC1s (maroon), CD123+ plasmacytoid dendritic cells (PDCs) (teal) and CD14+ monocyte-derived DCs (mo-DCs) (purple) in the NPA from HCs (n=16). (E–H) Graphs show frequencies of (E) cDC2s, (F) cDC1s, (G) CD123+ PDCs, and (H) mo-DCs expressed as a frequency of lin–HLA-DR+ cells in PBMCs and NPA from HCs (n=12) and IAV patients (n=22). Lines (A–H) indicate median values. Differences between IAV patients and HCs were assessed using Mann-Whitney test and considered significant at p<0.05 (**p<0.01, ***p<0.001, ****p<0.0001). (I–K) Scatter plots and line of fit display bivariate linear regression analysis between age of IAV patients and IM frequency in (I) blood and (J) NPA; and (K) between age and frequency of cDC2s in blood. The shaded area represents the 95% confidence region for the fitted line. R represents Spearman ρ and differences were considered significant at p<0.05. (L) Graphs depict frequencies of classical monocytes (CMs) (green), intermediate monocytes (IMs) (red), and cDC2s (coral) in blood (n=8) and the NPA (n=6) in the acute (upward triangles) and convalescent phase (downward triangles) in IAV patients. Dashed lines depict median frequency values from HCs in blood and NPA. Differences between acute and convalescent phase values were assessed using Wilcoxon matched-pairs signed rank test and considered significant at p<0.05 (*p<0.05 and **p<0.01).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative samples showing gating on lin–HLA-DR+ CD11c–CD123– cells, CD141+ cells were gated upon to identify CD11clow cDC1s (indigo). (B) Scatter plots show the frequencies of CD11clow cDC1s (indigo), expressed as a frequency of lin–HLA-DR+ cells in PBMCs (filled) and NPA (empty) from healthy controls (HCs) (n=12) and influenza A virus (IAV) patients (n=22). Lines indicate median values. Differences between IAV patients and HCs were assessed using Mann-Whitney test and considered significant at p<0.05 (*p<0.05, **p<0.01).
 
 We also compared the frequency of IMs in blood and nasopharynx with the age of IAV patients and found a negative correlation in blood (R=–0.55, p=0.0008) (Figure 2H) but a positive correlation in the nasopharynx (R=0.46, p=0.045) (Figure 2I). In HCs, age and IM frequencies were not significantly correlated in blood or NPA (data not shown). In contrast to IMs, we found an inverse correlation between age and the frequency of cDC2s in NPA (R=–0.558, p=0.016) in IAV patients (Figure 2K).
 
 A subset of IAV patients (n=11) returned for sampling during convalescence (≥4 weeks after initial sampling). We observed that frequencies of CMs (in blood), IMs (blood and NPA), and cDC2s (blood) in convalescent individuals were reduced and closer to values seen in HCs (Figure 2L). Collectively, we found that the increased immune cell presence in the nasopharynx during acute IAV infection could be, to a large extent, attributed to increased frequencies of IMs as well as CMs which normalized during convalescence. Acute IAV infection resulted in altered monocyte distribution, in particular at the site of infection and was more pronounced in older patients.
 
-## Monocytes and DCs recruited to the human nasopharynx during IAV infection are mature
+### Monocytes and DCs recruited to the human nasopharynx during IAV infection are mature
 
 We next analysed the maturation status of DCs and monocytes in blood and nasopharynx samples from IAV patients and HCs (Figure 3A–D). Cells from HCs had low and comparable levels of surface HLA-DR in both blood and the nasopharynx (Figure 3A). In contrast, in IAV patients, monocytes and DCs in the nasopharynx expressed higher levels of HLA-DR than those in blood (Figure 3A and C). We also found that in IAV patients, nasopharyngeal cDC2s, and cDC1s expressed more CD86 than cells in blood (Figure 3D), while nasopharyngeal PDCs showed significant upregulation of CD83 during IAV infection as compared to blood PDCs (Figure 3E). When we compared maturation of CM and cDCs (i.e., CD86 expression) with viral RNA load (i.e., cycle threshold [Ct] values – number of cycles required to amplify viral RNA), we observed a significant inverse correlation (R=–0.696, p=0.0019), implying that higher viral RNA loads (low Ct value) were associated with increased maturation of CMs (Figure 3F). We also observed a positive correlation between CD86 expression on nasopharyngeal CMs, and both nasopharyngeal cDC2s (R=0.735, p=0.0012) and cDC1s (R=0.832, p=0.0001) (Figure 3G and H, respectively). This indicates that in patients with greater viral RNA load who also have more mature CMs in the nasopharynx, there is a greater likelihood of finding mature MDCs in the nasopharynx as well.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig3-v2.jpg)
 
-**Figure 3.:** (A–D) Scatter plots depict MFI of (A, C) HLA-DR and (B, D) CD86 surface expression on (A–B) monocyte (CD14+CD16– classical monocyte (CM): green, CD14+CD16+ intermediate monocyte (IM); red and CD14–CD16+ nonclassical monocyte (NCM): blue) and (C–D) dendritic cell (DC) (cDC2: coral; cDC1: maroon and plasmacytoid dendritic cell [PDC]: teal) subsets in blood (filled circles) and in the nasopharyngeal aspirates (NPA) (open circles) in healthy controls (HCs) (left, n=11) and IAV patients (right, n=19). (E) Scatter plot depicts MFI of CD83 expression on PDCs in blood (filled circles) and in the NPA (open circles). Differences between IAV patients and HCs were assessed by Mann-Whitney test and considered significant at p<0.05 (*p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001). (F–H) Scatter plots and lines of fit display bivariate linear regression analysis between monocyte maturation status (CD86 surface expression [MFI]) of NPA CMs in IAV+ patients and (F) cycle threshold (Ct) values, (G) maturation status (CD86 surface expression [MFI]) of NPA CD1c+ myeloid DCs (MDCs) in IAV patients and (H) maturation status (CD86 surface expression [MFI]) of NPA CD141+ MDCs in in IAV patients. The shaded area represents the 95% confidence region for the fitted line. R represents Spearman ρ and differences were considered significant at p<0.05.Figure 3—source data 1.Figure 3A.Figure 3—source data 2.Figure 3B.Figure 3—source data 3.Figure 3C.Figure 3—source data 4.Figure 3D.Figure 3—source data 5.Figure 3E.Figure 3—source data 6.Figure 3F.Figure 3—source data 7.Figure 3G.Figure 3—source data 8.Figure 3H.
+**Figure 3.:** (A–D) Scatter plots depict MFI of (A, C) HLA-DR and (B, D) CD86 surface expression on (A–B) monocyte (CD14+CD16– classical monocyte (CM): green, CD14+CD16+ intermediate monocyte (IM); red and CD14–CD16+ nonclassical monocyte (NCM): blue) and (C–D) dendritic cell (DC) (cDC2: coral; cDC1: maroon and plasmacytoid dendritic cell [PDC]: teal) subsets in blood (filled circles) and in the nasopharyngeal aspirates (NPA) (open circles) in healthy controls (HCs) (left, n=11) and IAV patients (right, n=19). (E) Scatter plot depicts MFI of CD83 expression on PDCs in blood (filled circles) and in the NPA (open circles). Differences between IAV patients and HCs were assessed by Mann-Whitney test and considered significant at p<0.05 (*p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001). (F–H) Scatter plots and lines of fit display bivariate linear regression analysis between monocyte maturation status (CD86 surface expression [MFI]) of NPA CMs in IAV+ patients and (F) cycle threshold (Ct) values, (G) maturation status (CD86 surface expression [MFI]) of NPA CD1c+ myeloid DCs (MDCs) in IAV patients and (H) maturation status (CD86 surface expression [MFI]) of NPA CD141+ MDCs in in IAV patients. The shaded area represents the 95% confidence region for the fitted line. R represents Spearman ρ and differences were considered significant at p<0.05.
 
-## Elevated cytokine levels observed in plasma and nasopharyngeal secretions correlate with increased monocyte frequencies in the respective compartment
+### Elevated cytokine levels observed in plasma and nasopharyngeal secretions correlate with increased monocyte frequencies in the respective compartment
 
 Cytokinemia is a hallmark of severe influenza disease (Tisoncik et al., 2012). In order to characterize the degree of inflammation in IAV patients, we measured local and systemic cytokine levels. In agreement with earlier reports (Cole et al., 2017; Oshansky et al., 2014; Gill et al., 2008; Gill et al., 2005), we observed elevated levels of TNFα, IL-6, and IFNα in nasopharyngeal secretions (Figure 4A–C) as well as in plasma of IAV patients as compared to HCs (Figure 4D–F). We also observed elevated levels of plasma IL-10, IL-15, and IL-18 in IAV patients as compared to HCs (data not shown). We compared soluble TNFα levels against frequencies of monocytes and DCs (i.e., potential cellular sources) at the respective anatomical sites; and found a positive correlation between soluble TNFα and CM frequency, both in blood (Figure 4G) and in the nasopharynx of IAV patients (Figure 4H). However, such correlation was not observed for DCs in blood or NPA (data not shown). Interestingly, we also observed positive associations between age and level of TNFα in plasma and NPA in IAV patients (Figure 4I). Furthermore, we observed that plasma IFNα levels were positively correlated with Ct value (suggesting inverse correlation with viral RNA load) (Figure 4J). Patients with higher viral RNA loads had lower amounts of IFNα in circulation, which may suggest incomplete protection from infection. For a subset of patients, we assessed chemokines (CCL2, CCL3, and CCL7) in circulation and at the site of infection. Interestingly, in blood, elevated plasma levels of CCL2 correlated positively with IM frequencies (R=0.639, p=0.048), which were significantly elevated in IAV patients, indicating a role for CCL2 in the changes to the IMs during infection (Figure 4K). Moreover, during convalescence, TNFα and IL-6 were also reduced both in the nasopharynx and in blood suggesting ablation of both local and systemic inflammation (Figure 4L).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig4-v2.jpg)
 
-**Figure 4.:** (A–F) Graphs show concentrations of (A and D) TNFα, (B and E) IL-6, (C and F) IFNα in (A–C) nasopharyngeal aspirates (NPA) (open circles), and (D–F) plasma (filled circles) from healthy controls (HCs) (n=12) and IAV patients (n=31) as determined by ELISA. Lines indicate median concentration. Differences between IAV patients and HCs were assessed using Mann-Whitney test and considered significant at p<0.05 (*p<0.05, **p<0.01, ****p<0.0001). (G–K) Scatter plots and lines of fit display bivariate linear regression analysis between variables. The shaded area represents the 95% confidence region for the fitted line. R represents Spearman ρ and differences were considered significant at p<0.05. (G) Log10 plasma TNFα values vs. CD14+CD16 classical monocyte (CM) frequency in blood of IAV patients; (H) log10 NPA TNFα vs CM frequency in the NPA of IAV patients; (I) age vs. log10 TNFα values in plasma (pink) and NPA (blue) in IAV patients; (J) cycle threshold (Ct) values vs. log10 IFNα values in IAV patients (light green) and (K) log10 plasma CCL2 vs. intermediate monocyte (IM) frequency in blood of IAV patients. (L) Graphs depict TNFα and IL-6 levels in the NPA (n=4) and plasma (n=8) during the acute (upward triangles) and convalescent phase (downward triangles) in IAV patients. Dashed lines depict median frequency values from HCs in blood and NPA. Differences between acute and convalescent phase values were assessed using Wilcoxon matched-pairs signed rank test and considered significant at p<0.05 (*p<0.05 and **p<0.01).Figure 4—source data 1.Figure 4A.Figure 4—source data 2.Figure 4B.Figure 4—source data 3.Figure 4C.Figure 4—source data 4.Figure 4D.Figure 4—source data 5.Figure 4E.Figure 4—source data 6.Figure 4F.Figure 4—source data 7.Figure 4G.Figure 4—source data 8.Figure 4H.Figure 4—source data 9.Figure 4I.Figure 4—source data 10.Figure 4J.Figure 4—source data 11.Figure 4K.Figure 4—source data 12.Figure 4L.
+**Figure 4.:** (A–F) Graphs show concentrations of (A and D) TNFα, (B and E) IL-6, (C and F) IFNα in (A–C) nasopharyngeal aspirates (NPA) (open circles), and (D–F) plasma (filled circles) from healthy controls (HCs) (n=12) and IAV patients (n=31) as determined by ELISA. Lines indicate median concentration. Differences between IAV patients and HCs were assessed using Mann-Whitney test and considered significant at p<0.05 (*p<0.05, **p<0.01, ****p<0.0001). (G–K) Scatter plots and lines of fit display bivariate linear regression analysis between variables. The shaded area represents the 95% confidence region for the fitted line. R represents Spearman ρ and differences were considered significant at p<0.05. (G) Log10 plasma TNFα values vs. CD14+CD16 classical monocyte (CM) frequency in blood of IAV patients; (H) log10 NPA TNFα vs CM frequency in the NPA of IAV patients; (I) age vs. log10 TNFα values in plasma (pink) and NPA (blue) in IAV patients; (J) cycle threshold (Ct) values vs. log10 IFNα values in IAV patients (light green) and (K) log10 plasma CCL2 vs. intermediate monocyte (IM) frequency in blood of IAV patients. (L) Graphs depict TNFα and IL-6 levels in the NPA (n=4) and plasma (n=8) during the acute (upward triangles) and convalescent phase (downward triangles) in IAV patients. Dashed lines depict median frequency values from HCs in blood and NPA. Differences between acute and convalescent phase values were assessed using Wilcoxon matched-pairs signed rank test and considered significant at p<0.05 (*p<0.05 and **p<0.01).
 
-## Monocytes are a potent source of systemic TNFα during IAV infection
+### Monocytes are a potent source of systemic TNFα during IAV infection
 
 The localization of mature monocytes and DCs in the nasopharynx during IAV infection and increased cytokine levels in both compartments led us to question whether the cells in circulation were directly involved in inflammation during ongoing infection, or primarily provided a cache of differentiated cells that can migrate to the site of infection. Limited by the number of viable cells obtained from the nasopharynx, we tested the functional response of circulating monocytes and DCs to in vitro stimulation with a TLR7/8 agonist which mimics ssRNA and then quantified the frequency of TNF-producing cells in each monocyte subset and in cDCs (Figure 5A and B). We observed that blood monocytes and DCs from IAV patients produced TNFα spontaneously, in the absence of any external stimulus, with most of the cytokine coming from monocytes (CMs > IMs > NCMs) (Figure 5C). In contrast, blood monocytes and DCs from HCs only produced TNFα upon stimulation with TLR7/8L (Figure 5D). Importantly, while many of the IAV patients had cells producing TNFα spontaneously, monocytes and DCs remained responsive and had the potential for further increased frequency of TNF-producing cells in response to TLR7/8L stimulation (Figure 5D). In summary, our data suggest that during IAV infection, mature monocytes and DCs accumulate in the nasopharynx, and blood monocytes and DCs function as a general source of TNFα, potentially contributing to the systemic inflammatory effects accompanying influenza infections.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig5-v2.jpg)
 
-**Figure 5.:** (A) TNFα release assay: the capture antibody (green) immobilizes secreted TNFα on the cell surface of the TNFα-secreting cell. The PE-labelled detection antibody (pink) together with the phenotypic antibody panel allows detection of TNFα production in individual cell subsets by flow cytometry. (Illustrations were modified from Servier Medical Art, licensed under a Creative Commons Attribution 3.0 Unported License.) (B) Representative flow cytometry plots of TNFα-producing blood classical monocytes (CMs) from one healthy control (HC) after 2 hr at 37°C without (unstimulated) or with TLR7/8L stimulation. (C) Bar graphs display median frequency of TNFα-producing cells in CD14+CD16− CMs (green), CD14+CD16+ intermediate monocytes (IMs) (red), CD14–CD16+ nonclassical monocytes (NCMs) (blue), plasmacytoid DCs (PDCs) (teal), and total cDCs (orange) in blood in HCs (open, n=5) and IAV patients (filled, n=9) in the absence of TLR stimulation. Each dot represents an individual donor. (D) Graph displays frequency of TNFα-producing cells in monocyte and DC subsets from HCs (open, n=5) and IAV patients (filled n=9) in the absence (–) or presence (+) of TLR7/8L stimulation. Differences between IAV patients and HCs in (C) were assessed by Mann-Whitney test and in (D) with two-way ANOVA using Sidak’s multiple comparisons test and considered significant at p<0.05. (*p<0.05, **p<0.01, and ***p<0.001).Figure 5—source data 1.Figure 5C.Figure 5—source data 2.Figure 5D.
+**Figure 5.:** (A) TNFα release assay: the capture antibody (green) immobilizes secreted TNFα on the cell surface of the TNFα-secreting cell. The PE-labelled detection antibody (pink) together with the phenotypic antibody panel allows detection of TNFα production in individual cell subsets by flow cytometry. (Illustrations were modified from Servier Medical Art, licensed under a Creative Commons Attribution 3.0 Unported License.) (B) Representative flow cytometry plots of TNFα-producing blood classical monocytes (CMs) from one healthy control (HC) after 2 hr at 37°C without (unstimulated) or with TLR7/8L stimulation. (C) Bar graphs display median frequency of TNFα-producing cells in CD14+CD16− CMs (green), CD14+CD16+ intermediate monocytes (IMs) (red), CD14–CD16+ nonclassical monocytes (NCMs) (blue), plasmacytoid DCs (PDCs) (teal), and total cDCs (orange) in blood in HCs (open, n=5) and IAV patients (filled, n=9) in the absence of TLR stimulation. Each dot represents an individual donor. (D) Graph displays frequency of TNFα-producing cells in monocyte and DC subsets from HCs (open, n=5) and IAV patients (filled n=9) in the absence (–) or presence (+) of TLR7/8L stimulation. Differences between IAV patients and HCs in (C) were assessed by Mann-Whitney test and in (D) with two-way ANOVA using Sidak’s multiple comparisons test and considered significant at p<0.05. (*p<0.05, **p<0.01, and ***p<0.001).
 
-## Nasopharyngeal aspirates allow assessment of in situ immune responses to mild infections with other respiratory viruses including SARS-CoV-2
+### Nasopharyngeal aspirates allow assessment of in situ immune responses to mild infections with other respiratory viruses including SARS-CoV-2
 
 In order to determine whether our findings were specific to IAV or a reflection of immune responses to respiratory viral infections in general, we analysed samples from patients with confirmed IBV, RSV, or SARS-CoV-2 infections. All patient groups were relatively close in age (Table 1). SARS-CoV-2 patients tended to seek medical attention later: median 12 days with symptoms (SARS-CoV-2) as compared to 4 days (IAV), 5 days (IBV), and 6 days (RSV) (Table 1). Similar to IAV patients, patients with SARS-CoV-2 and RSV had a higher yield of cells in the nasopharynx than HCs (Figure 6A). The expansion in monocyte (IM) frequencies in blood we saw in IAV patients was not observed in other infections. Interestingly, in the nasopharynx, monocytes and DCs were significantly elevated during IAV infection, but not during IBV infection (Figure 6B). Within the monocyte compartment, we noted differences between the different pathogens. IMs were not increased during IBV or SARS-CoV-2 infection but were increased during RSV infection in both blood and the nasopharynx (Figure 6C). The DC compartment too showed differences between the groups in NPA. In blood, all DC subsets were decreased in all groups (Figure 6D). cDC2s were increased in the nasopharynx only during IAV and SARS-CoV-2 infections. Interestingly, cDC1s were significantly increased in the nasopharynx only during IAV infection. PDCs in NPA were increased in all groups.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77345/elife-77345-fig6-v2.jpg)
 
-**Figure 6.:** (A–B) Scatter plots show data from individual subjects and lines indicate median values. (A) Cell yield per mL blood (×106 PBMCs, filled circles) and total nasopharyngeal aspirates (NPA) cells (×106 cells, open circles) obtained from patients (IAV n=22, SARS-CoV-2 n=8, influenza B virus [IBV] n=5 and respiratory syncytial virus [RSV] n=5), and healthy controls [HCs] (n=12). (B) Frequency of lineage negative HLA-DR+ cells of live CD45+ cells in blood (filled circles) and NPA (open circles) from HCs and patients. (C–D) Scatter plots show frequencies of (D) monocyte subsets (CD14+CD16− CM: green, CD14+CD16+ intermediate monocyte [IM]: red, CD14−CD16− nonclassical monocyte [NCM]: blue), and (E) dendritic cell [DC] subsets (cDC2: coral, cDC1: maroon, PDC: teal) in PBMCs (filled circles) and NPA (open circles) from HCs and patients. Graphs show data from individual subjects and lines represent median values. Differences between HCs or IAV patients and other patient groups were assessed using Kruskal-Wallis test with Dunn’s multiple comparisons test and considered significant at p<0.05 (*p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001). (E) Graphs show concentrations of TNFα, IL-6, and IFNα in plasma (filled circles) and NPA (open circles) from HCs and patients as determined by ELISA. Lines indicate median concentration. Differences between IAV patients and HCs were assessed using Mann-Whitney test and considered significant at p<0.05 (*p<0.05, **p<0.01, and ***p<0.001).Figure 6—source data 1.Figure 6A – blood.Figure 6—source data 2.Figure 6A – nasopharyngeal aspirates (NPA).Figure 6—source data 3.Figure 6B – blood.Figure 6—source data 4.Figure 6B – nasopharyngeal aspirates (NPA).Figure 6—source data 5.Figure 6C – classical monocyte (CM).Figure 6—source data 6.Figure 6C – intermediate monocyte (IM).Figure 6—source data 7.Figure 6C nonclassical monocyte (NCM).Figure 6—source data 8.Figure 6D – cDC2.Figure 6—source data 9.Figure 6D – cDC1.Figure 6—source data 10.Figure 6D – plasmacytoid dendritic cell (PDC).Figure 6—source data 11.Figure 6E – blood.Figure 6—source data 12.Figure 6E – nasopharyngeal aspirates (NPA).
+**Figure 6.:** (A–B) Scatter plots show data from individual subjects and lines indicate median values. (A) Cell yield per mL blood (×106 PBMCs, filled circles) and total nasopharyngeal aspirates (NPA) cells (×106 cells, open circles) obtained from patients (IAV n=22, SARS-CoV-2 n=8, influenza B virus [IBV] n=5 and respiratory syncytial virus [RSV] n=5), and healthy controls [HCs] (n=12). (B) Frequency of lineage negative HLA-DR+ cells of live CD45+ cells in blood (filled circles) and NPA (open circles) from HCs and patients. (C–D) Scatter plots show frequencies of (D) monocyte subsets (CD14+CD16− CM: green, CD14+CD16+ intermediate monocyte [IM]: red, CD14−CD16− nonclassical monocyte [NCM]: blue), and (E) dendritic cell [DC] subsets (cDC2: coral, cDC1: maroon, PDC: teal) in PBMCs (filled circles) and NPA (open circles) from HCs and patients. Graphs show data from individual subjects and lines represent median values. Differences between HCs or IAV patients and other patient groups were assessed using Kruskal-Wallis test with Dunn’s multiple comparisons test and considered significant at p<0.05 (*p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001). (E) Graphs show concentrations of TNFα, IL-6, and IFNα in plasma (filled circles) and NPA (open circles) from HCs and patients as determined by ELISA. Lines indicate median concentration. Differences between IAV patients and HCs were assessed using Mann-Whitney test and considered significant at p<0.05 (*p<0.05, **p<0.01, and ***p<0.001).
 
 In plasma, individuals with SARS-CoV-2 infection had elevated levels of TNFα in comparison with HCs and IAV patients (Figure 6E). SARS-CoV-2 infection was associated with elevated levels of IL-6 compared to HCs, but not compared to the IAV and IBV groups. In NPA, only the IAV and IBV groups had increased levels of IL-6. Despite having increased frequencies of PDCs in NPA, nasopharyngeal levels of IFNα were not elevated in SARS-CoV-2 patients. Together, these data show different patterns of monocyte and DC engagement in the nasopharynx and in blood, and also between IAV, IBV, RSV, and SARS-CoV-2, suggesting a requirement for further scrutiny.
 
-## Innate immunity-related proteins are differentially expressed in plasma and nasopharyngeal secretions of IAV and SARS-CoV-2 infected patients
+### Innate immunity-related proteins are differentially expressed in plasma and nasopharyngeal secretions of IAV and SARS-CoV-2 infected patients
 
 To further emphasize the distinctive aspects of immune responses between anatomical compartments, and across infections, we utilized SomaScan, an aptamer-based proteomics platform assay to provide a broad assessment of the human proteome (n=7288 analyses targeting 6595 unique human protein measurements) between acute (IAV and SARS-CoV-2) patients and HCs. Based on PCA, plasma and nasopharyngeal proteome composition displayed an overlap regardless of infection or healthy status, separating mainly on the basis of biological site (Figure 7A). In IAV patients compared to HCs, more proteins were differentially expressed in blood (n=548) than in the nasopharynx (n=281) (Figure 7B), with an overlap of only 8.4% between anatomical sites (n=60 proteins) (Figure 7C–D). Interestingly, in SARS-CoV-2 patients compared to HCs, the nasopharynx (n=1868) had considerably more differentially expressed proteins than blood (n=693), over 1500 of which were unique to the nasopharynx. Also, in both anatomical compartments, many differentially expressed proteins were unique to IAV or SARS-CoV-2 (Figure 7D, right panels). Pathway analysis was performed to identify significantly enriched GO biological processes and pathways across the four t test models. The number and type of enriched pathways varied across models (Figure 7E and Supplementary file 2). The largest cluster, primarily mapped to IAV (plasma and NPA), and to a lesser extent, to SARS-CoV-2 NPA, where proteins mapped to host immune responses and innate immunity, supporting the data described elsewhere in this study. Notably, pathways containing TNF, IL-6, ISG15, IL-18R, CCL7, CXCL10 (IP-10), CXCL11, GZMB, SEMA4A, S100A8, S100A9 were all associated with the nasopharynx in IAV patients, with IL-6 pathways showing significant association with nasopharynx in SARS-CoV-2 patients. Both NPA models had the greatest number of significantly enriched pathways (IAV = 51 and SARS-CoV-2=64) compared to the plasma models (IAV = 12 and SARS-CoV-2=19).
 
@@ -128,48 +358,48 @@ The present study augments our current understanding of the role of monocyte and
 
 ## Methods
 
-## Study subjects
+### Study subjects
 
 Patients seeking medical attention for ILI at the Emergency Department at the Karolinska University Hospital in Stockholm, Sweden, during three consecutive influenza seasons (January-March) of 2016–2018 were recruited to the study following informed consent. The inclusion criteria for enrolment of patients were (1) age >18 years, (2) no known immunodeficiency, (3) not taking antibiotics, immunomodulatory, or anti-inflammatory medication at time of inclusion, (4) presenting with fever and at least one of the following symptoms of ILI: cough, nasal congestion, headache, or muscle ache. For the current study, only data from patients who had confirmed IAV, IBV, RSV, or (later) SARS-CoV-2 infections were used. Convalescent samples were collected after at least 4 weeks, ensuring absence of respiratory symptoms in the prior week. Healthy volunteers were recruited and sampled similarly outside of influenza season. During the COVID-19 pandemic, additional patients were included between April and May 2020 at the Infectious Diseases ward at the Karolinska University Hospital or the Haga Outpatient Clinic (Haga Närakut) in Stockholm, Sweden, as well as mild/asymptomatic household contacts of patients with confirmed COVID-19 were screened by PCR and enrolled if positive. Clinical data were obtained from the patients and medical records (Table 1) and are extensively discussed in a previous publication (Falck-Jones et al., 2021). Total burden of comorbidities was assessed using the CCI (Charlson et al., 1987).
 
 The severity of disease was categorized using the respiratory domain of the sequential organ failure assessment (SOFA) score (Vincent et al., 1996). In the absence of arterial partial pressure of oxygen (PaO2), peripheral transcutaneous haemoglobin saturation (SpO2) was used instead to calculate a modified SOFA score (mSOFA) (Grissom et al., 2010). Fraction of inspired oxygen (FiO2) estimation based on O2 flow was done in accordance with the Swedish Intensive Care register definition (Intensivvårdsregistret, 2018). Mild disease was defined as PaO2/FiO2 (PFI)>53 kPa (>400 mmHg) or SpO2/FiO2 (SFI)>400. Moderate disease was defined as PFI >27–53 kPa (>200–400 mmHg) or SFI 235–400. The disease severity score is more extensively described in a previous publication (Falck-Jones et al., 2021).
 
-## Sample collection
+### Sample collection
 
 Blood, nasal swabs, and nasopharyngeal aspirates (NPA) were obtained from all patients (acute and convalescent phase samples) and HCs (Figure 1A). Briefly, up to 30 mL venous blood was collected in Vacutainer tubes containing EDTA, for blood counts and PBMC isolation. Nasopharyngeal swabs (Sigma Virocult) were collected for diagnostic qPCR. NPA samples were collected into a vacuum trap by inserting a thin catheter through the naris, deep into the nasopharynx and applying gentle suction for 1–3 min. The vacuum trap and tubing were rinsed out with 3 mL sterile PBS. All samples were processed within 2 hr of sampling.
 
-## Diagnostic tests to determine etiology of infection
+### Diagnostic tests to determine etiology of infection
 
 Nasal swab samples were analysed for IAV, IBV, and RSV by real-time PCR using the commercial Simplexa system (Svensson et al., 2014), as well as bacteria (by culture methods). The tests were performed at the Department of Clinical Microbiology, Karolinska University Laboratory as part of routine diagnostics for respiratory viral infections. Ct values from the Simplexa assay were considered as semi-quantitative measures of virus levels in statistical analyses. Bacterial culture results were retrieved wherever available from the Department of Clinical Microbiology at the Karolinska University Hospital. Convalescent individuals and HCs were confirmed IAV– by qPCR. SARS-CoV-2 infection was diagnosed similarly using the GeneXpert SARS-CoV-2 detection system (Cepheid). Supplementary data on bacterial cultures were retrieved from the microbiology lab/clinical records.
 
-## Isolation of cells from blood and nasopharyngeal aspirates
+### Isolation of cells from blood and nasopharyngeal aspirates
 
 Blood samples were centrifuged at 800 g/10 min/room temperature (RT) and plasma was frozen at –20°C. The blood volume was reconstituted with sterile PBS and PBMCs were obtained by density-gradient centrifugation using Ficoll-Paque Plus (GE Healthcare) after centrifugation at 900 g/25 min/RT (without brake). NPA samples were centrifuged at 400 g/5 min/RT and the supernatant was frozen at –20°C. The cells were washed with 5 mL sterile PBS to remove mucus, by filtering through a 70 μm cell strainer followed by centrifugation for 400 g/5 min/RT. Cell counts and viability were assessed using Trypan Blue (Sigma) exclusion and an automated Countess cell counter (Invitrogen) or manual counting using a light microscope (when the counter was unable to distinguish live and dead NPA cells). Cells were used fresh for flow cytometry (all NPA cells when samples contained >105 cells and had ≥70% viability; and at least 1×106 PBMCs) or frozen in RNALater (<105 NPA cells) (Thermo Fisher). Excess PBMCs were cryopreserved in FBS (Gibco) + 10% DMSO (Sigma) and stored in liquid nitrogen.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Phenotypic analysis was performed on NPA cells and PBMCs using Live/Dead Blue; lineage markers CD3 (SK7; BD), CD19 (HIB19; Biolegend), CD20 (L27, BD), CD45 (HI30; BD), CD56 (HCD56, BD) and CD66abce (TET2, Miltenyi Biotec); HLA-DR (TU36, Life Technologies), CD14 (M5E2, BD), CD16 (3GE, Biolegend), CD11c (B-Ly6, BD), CD1c (AD5-8E7; Miltenyi), CD141 (AD5-14H12; Miltenyi), CD123 (7G3; BD); maturation markers CD83 (HB15e, Biolegend) and CD86 (2331; BD); adhesion marker CD62L (SK11, BD); and migration markers CCR2 (K036C2, Biolegend) and CCR7 (150503: BD); and fixed with 1% paraformaldehyde for flow cytometry. Samples were acquired on an LSRFortessa flow cytometer (BD Biosciences) and analysed using FlowJo software v10 (Tree Star).
 
-## TNF-α release assay
+### TNF-α release assay
 
 TNFα secretion from fresh PBMCs in response to TLR stimulation was assessed using the TNF-α Secretion Assay-Detection Kit (PE) (130-091-268, Miltenyi Biotec) according to the manufacturer’s instructions. TNFα secretion was measured over 2 hr of incubation at 37°C with shaking (200 rpm) in the presence or absence of 1 μg/mL 3M-019 (7/8L) (Invivogen). Briefly, the capture antibody immobilized all secreted TNFα on the surface of the cell, and the detection antibody (PE-labelled) was incorporated into the above panel of antibodies to determine the cellular source of TNFα. Secretion of TNFα was quantified using flow cytometry.
 
-## ELISA and Luminex
+### ELISA and Luminex
 
 Plasma samples and NPA supernatants were assayed for soluble markers using ELISA and Luminex. Human IFNα All Subtype ELISA was performed according to the manufacturer’s instructions (PBL Assay Science). TNFα and IL-6 ELISAs were performed using DuoSet kits (R&D Systems). Luminex assays were performed using custom-designed 9-plex (IFNγ, IL-8, IL-10, IL-18, CCL2, CCL3, CCL7, IL-1β, and IL-12p70) kit (R&D Systems) and analysed on the Bio-Plex 200 instrument (Bio-Rad).
 
-## SomaScan assay
+### SomaScan assay
 
 Proteomic profiling of NPA and EDTA plasma samples was conducted using SomaScan v4.1 (SomaLogic). The SomaScan proteomic platform has been described previously (Rohloff et al., 2014). Briefly, the platform utilizes DNA-based binding reagents (slow off-rate modified aptamers) to quantify by fluorescence the availability of binding epitopes (which represents protein abundance, shape, and charge) for over 7000 protein targets with high specificity and limits of detection comparable to antibody-based assays. The assay captures both high- and low-abundance proteins over a dynamic range of detection of approximately 10 logs (Williams et al., 2022). Normalization of SomaScan data was performed on plasma and NPA samples separately for all statistical analysis except PCA visualization. This was done because of the dramatically different signal distributions observed for the two anatomical compartments. Median scaling of samples to the global population median was performed. Additional normalization methods were evaluated and resulted in similar outcomes and performance (data not shown). Only samples derived from patients with a disease severity ≤ 4 (moderate severity) were evaluated. Outlier samples were detected and removed based on correlation with other samples. All pairwise correlations for a given sample with other samples in the same tissue type were calculated. If the median pairwise correlation for a given sample fell below 3 robust standard deviations (MAD) of the median pairwise correlation for all samples that sample was considered an outlier and removed from t test and pathway analysis (see below).
 
-## Statistics
+### Statistics
 
 Data were analysed using GraphPad Prism v6.0 (GraphPad Software), JMP, v14.2 (SAS Institute Inc, Cary, NC, 1989–2019) and R (v4.0.3). Differences between frequencies in IAV patients and HCs were assessed using nonparametric tests after assessing normality, using the Mann-Whitney test (at 95% confidence intervals). For comparisons between exposure conditions, two-way ANOVA with Sidak’s multiple comparisons test was applied. For comparisons between acute and convalescent phase data, Wilcoxon matched-pairs signed rank test was used. Bivariate and multivariate linear regression analysis was performed using JMP, choosing Spearman’s rank correlation coefficient for nonparametric analyses. Differences between HCs or IAV patients and other patient groups were assessed using nonparametric tests after assessing normality, using the Kruskal-Wallis test with Dunn’s multiple comparisons test (at 95% confidence intervals). Data were considered significant at p<0.05. Principal components analysis was performed to visualize the global impact of NPA and plasma tissue type and the impact of either IAV or SARS-CoV-2 infection. Non-parametric ellipses cover 95% of samples within a group; t tests were performed comparing the acute phase samples with HCs. Test populations were stratified by tissue type and infectious agent. Differentially expressed proteins were selected based on a p<0.05 and absolute fold-change >1.5 criteria. In cases where individual SOMAmers may interrogate more than one gene product (EnsembleGene) the different genes were separated for Venn diagrams and pathway analysis. Final gene lists are made up of unique gene lists because of the one-to-many and many-to-one relationship between SOMAmer reagents and protein/gene products.
 
-## Pathway analysis
+### Pathway analysis
 
 Analysis of enriched pathways was performed for the four t test comparisons representing IAV and SARS-CoV-2 from either NPA or plasma specimens. Differentially expressed proteins detected by t test (p<0.05) and absolute fold-change >1.5 were used as input for the g:profiler pathway enrichment method using gprofiler2 v0.2.1 (Kolberg et al., 2020; Raudvere et al., 2019) in R. Annotated gene sets representing Gene Ontology biological processes, Hallmark pathways, C6 Oncogenic signature gene sets, and Canonical Pathways (incl. Biocarta, KEGG, PID, Reactome, and Wikipathways) were downloaded from the Molecular Signatures Database v7.5.1 for use as target pathways (Liberzon et al., 2011). Due to the semi-targeted nature of the SomaScan protein quantification method, a unique list of all proteins (ensembleGeneSymbol) interrogated on the platform (n=6370) were used as a statistical null background. An FDR threshold of q<0.05 was used to select enriched gene sets for further analysis. The Cytoscape Enrichment Map plugin v3.3.4 (Merico et al., 2010) was used for clustering and visualization of significantly enriched gene sets detected for each cell line xenograft model. Default clustering parameters were applied. Singleton gene sets were removed from visualization if only a single t test comparison contributed to enrichment and the gene set was not connected to a larger functional cluster.
 
-## Study approval
+### Study approval
 
 Informed consent was obtained from all patients and volunteers following verbal and written information. The study was approved by the Swedish Ethical Review Authority (No. 2015/1949-31/4) and performed according to the Declaration of Helsinki.

@@ -28,23 +28,55 @@ Here, we present structures of cASIC1 solubilized without the use of detergent, 
 
 ## Results
 
-## Isolation and structure determination of cASIC1 in SMA copolymer
+### Isolation and structure determination of cASIC1 in SMA copolymer
 
 To elucidate structures of cASIC1 bound with endogenous lipids, we extracted and purified recombinant channels in the presence of SMA copolymer. After a two-step chromatographic purification procedure, cASIC1-SMA protein was ~95% pure as judged by SDS-PAGE and was monodisperse as measured by fluorescence-detection size exclusion chromatography (FSEC) (Kawate and Gouaux, 2006; Figure 1—figure supplement 1A–B). Negative stain transmission electron microscopy also demonstrated good particle distribution and limited aggregation (Figure 1—figure supplement 1C).
 
 We next pursued single-particle cryo-EM of cASIC1-SMA, obtaining reconstructions of ASIC1 channels in low pH desensitized (pH 7.0) and high pH resting (pH 8.0) conformations at estimated resolutions of ~2.8 and 3.7 Å, respectively, as estimated by gold-standard FSC (Rosenthal and Henderson, 2003; Figure 1A–B, Supplementary File 1, Figure 1—figure supplements 2–5). While pH50 for cASIC1 is ~6.7 (29, 31), extensive 3D classification of the pH 7.0 dataset did not indicate the presence of either open or resting channels. This observation is consistent with previous electrophysiological analysis of steady-state desensitization curves for cASIC1, which demonstrated very little proton-evoked current after conditioning with ~pH 7.0 solution (Yoder et al., 2018a). Accordingly, we speculate that our cryo-EM reconstruction is representative of the long-lived desensitized state occupied by cASIC1 channels following extended exposure to low, but sub-threshold, pH conditions (Babini et al., 2002).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig1-v2.jpg)
+
+**Figure 1.:** (a-b) Cryo-EM maps of cASIC1-SMA at pH 7.0 (a) and pH 8.0 (b). (c) Cartoon diagram of cASIC1 with single subunit shown colored by domain. (d-e) Pore profiles for cASIC1-SMA in a desensitized (d) and resting (e) state calculated with HOLE software (pore radius: red <1.15 Å<green < 2.3 Å<purple). (g) Single subunit superposition of cASIC1-SMA in a desensitized state (blue) and the desensitized state X-ray structure (Baconguis et al., 2014; Gonzales et al., 2009) (PDB 4NYK, grey). Detailed view of the collapsed acidic pocket is shown in the inset. (h) Single subunit superposition of cASIC1-SMA in a resting state (salmon) and the resting state X-ray structure (Yoder et al., 2018a) (PDB 5WKU, grey). Detailed view of the expanded acidic pocket is shown in the inset.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a-b) SDS-PAGE (a) and FSEC (b) analysis of SMA-solubilized EGFP-cASIC1 particles after size-exclusion chromatography. (c) Negative stain transmission electron microscopy of SMA-solubilized EGFP-cASIC1 particles.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a-b) Representative micrograph (a) and 2D classes (b) of cASIC1-SMA at pH 7.0. (c–e) Local resolution estimation (c) angular distribution (d) and gold standard FSC resolution estimation (e) from final non-uniform refinement in cryoSPARC V2.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Data processing strategy for cASIC1-SMA pH 7.0 dataset.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a-b) Representative micrograph (a) and 2D classes (b) of cASIC1-SMA at pH 8.0. (c–e) Local resolution estimation (c) angular distribution (d) and gold standard FSC resolution estimation (e) from final non-uniform refinement in cryoSPARC V2.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Data processing strategy for cASIC1-SMA pH 8.0 dataset.
+
 In accord with previously solved structures, the homotrimeric ASIC1 channel resembles a clenched fist (Jasti et al., 2007), harboring domain-swapped TM2 helices (Baconguis et al., 2014; Figure 1C). Both the desensitized and resting channels adopt closed ion channel gates, as evidenced by a constriction between residues 433–436 within the upper third of the TMD (Figure 1D–E). At pH 7.0, cASIC1-SMA particles prepared at pH 7.0 populate a desensitized state that mirrors the overall architecture of the existing X-ray structure (Gonzales et al., 2009), including the presence of a proton-bound ‘collapsed’ acidic pocket (Figure 1F). In contrast, cASIC1-SMA particles maintained at pH 8.0 occupy a high pH resting conformation, characterized by an expanded acidic pocket (Figure 1G) that resembles the high pH, resting state structures solved by X-ray crystallography and single particle cryo-EM (Yoder et al., 2018a). We propose that the limited resolution of the resting channel structure, while presumably impacted by cryo-EM grid conditions, including thicker ice than for the pH 7.0 grids, may also be due to structural flexibility inherent to the resting channel conformation in the absence of divalent cations, which serve to stabilize an expanded acidic pocket at high pH (Yoder and Gouaux, 2018b) but which are incompatible with current SMA-based purification strategies.
 
-## Amino terminal residues form a reentrant loop
+### Amino terminal residues form a reentrant loop
 
 Numerous experiments have implicated residues within the pre-TM1 region of ASICs and ENaCs in both gating and selectivity (Grunder et al., 1997; Gründer et al., 1999; Coscoy et al., 1999). Indeed, the highly conserved HG motif is located within the pre-TM1 region of ASICs and ENaCs and its disruption lowers the open probability in ENaCs and underlies PHA type 1 disorder (Grunder et al., 1997; Chang et al., 1996). In contrast to existing structures of ASICs solubilized in detergent micelles, we observed strong protein density corresponding to amino terminal residues in cryo-EM maps of both desensitized and resting cASIC1-SMA channels maintained in a lipid environment (Figure 2A–B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig2-v2.jpg)
+
+**Figure 2.:** (a-b) Cryo-EM density corresponding to amino terminal residues of cASIC1-SMA at pH 7.0 (a) and pH 8.0 (b). (c–d) Side (c) and top-down (d) views of the TMD from cASIC1-SMA in a desensitized state at low pH. A single subunit is shown, colored by domain. (e) Schematic depicting the TMD topology of cASIC1 channels. (f) Backbone superposition of cASIC1-SMA in the desensitized (colored by domain) and resting (grey) states.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56527/elife-56527-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Polar interactions between the reentrant loop and neighboring residues. (b) Surface representation of lower TMD showing interfaces between the reentrant loop residues and TM1 and TM2b helices.
 
 The quality of the 2.8 Å density map of the desensitized channel was sufficient to build amino terminal residues into the density map, beginning with Val 17, in the context of the previously determined desensitized state structure (Baconguis et al., 2014; Gonzales et al., 2009) (PDB 4NYK) (Figure 1—figure supplement 2). The pre-TM1 residues, from Val 17 to Leu 40, form a reentrant loop comprised of two short helical segments (Re-1 and Re-2) separated by a turn, positioned on the cytoplasmic side of the GAS belt (Figure 2C–E). Interestingly, the presence of the reentrant loop does not noticeably impact the position of either TM helix from those observed in prior X-ray or cryo-EM structures. Rather, the reentrant loop residues are ‘pinned’ within the inverted ‘v-shaped’ cavity formed between the lower TM helices and maintained primarily by virtue of intra-subunit contacts with TM2b and TM1 (Figure 2—figure supplement 1).
 
 While the quality of the resting channel density map that includes the pre-TM1 residues was not sufficient for unambiguous model building (Figure 1—figure supplement 4), no significant differences in reentrant loop conformation were observed between the desensitized or resting channels at the current resolutions (Figure 2F), allowing us to rigid body fit the pre-TM1 structural element derived from the desensitized state structure into the resting state map. In contrast with the discovery of new density for the pre-TM1 region, we neither observed interpretable density associated with the carboxy terminus, nor for amino terminal residues preceding Val 17, in either the desensitized or resting state maps, thus suggesting that even in SMA-solubilized protein, these regions are disordered.
 
-## The reentrant loop harbors the HG motif
+### The reentrant loop harbors the HG motif
 
 Separated by more than 400 residues in the amino acid sequence, the GAS and HG motifs are highly conserved amongst ENaC/DEG and ASIC channels (Figure 3A) and have been implicated in gating (Gründer et al., 1999) and ion selectivity (Kellenberger et al., 1999a; Kellenberger et al., 1999b; Kellenberger and Schild, 2002; Kellenberger et al., 2001). Interestingly, the HG motif, which contains a well-characterized disease mutation in ENaCs at the universally conserved glycine residue (Grunder et al., 1997; Chang et al., 1996), is situated on the turn between the reentrant helices where it buttresses the TM2a/b domain swap and GAS belt residues from ‘below’ (Figure 3B). Residing along the ion permeation pathway and at a subunit interface, the HG motif is capped by the carboxy terminus of TM2a via an intra-subunit hydrogen bonding interaction with Ile 442 and participates in an inter-subunit hydrogen bonding interaction with a neighboring GAS belt residue via Ser 445 (Figure 3C). This intricate network of intra- and inter-subunit interactions, formed between highly conserved motifs via the TM2 domain swap and amino terminal reentrant loop, is consistent with the lower pore architecture playing an important role in ASIC, and by extension, in ENaC function.
 
@@ -52,7 +84,7 @@ Separated by more than 400 residues in the amino acid sequence, the GAS and HG m
 
 **Figure 3.:** (a) Sequence alignment of selected ASIC1, ASIC3 and ENaC channels covering the pre-TM1 and TM2 domains with GAS domain and HG motif residues highlighted in pink and light blue, respectively, and with secondary structure for cASIC1 shown above the sequences. (b–c) View of the chemical environment around the reentrant loop (b) with a detailed view of the GAS domain and HG motif interface (c).
 
-## Pre-TM1 residues form the lower ion permeation pathway
+### Pre-TM1 residues form the lower ion permeation pathway
 
 In structures of both desensitized and resting cASIC1-SMA channels, the ‘upper’ ion permeation pathway is comprised of TM2a residues and contains a closed gate between Gly 432 and Gly 436, in agreement with existing X-ray and cryo-EM models (Figure 4A). However, where structures of ASIC1 in resting (Yoder et al., 2018a), open (Baconguis et al., 2014) and desensitized (Gonzales et al., 2009) conformations highlight a ‘lower’ ion permeation pathway comprised entirely of TM2b residues that expands outwards to form a wide intracellular vestibule, pre-TM1 residues of the SMA-isolated cASIC1 channels line a more narrow ion permeation pathway extending below the GAS belt (Figure 4A–B).
 
@@ -64,7 +96,7 @@ The ‘lower’ ion conduction pathway of resting and desensitized cASIC1-SMA ch
 
 In the X-ray structure of an open channel conformation, hydrated Na+ ions encounter a constriction at the GAS belt TM2 domain swap (Baconguis et al., 2014) which has long been thought to underpin ion selectivity in ENaC/DEG channels (Kellenberger et al., 1999a; Kellenberger and Schild, 2002; Snyder et al., 1999). Recently, however, residues along TM2a and TM2b both ‘above’ and ‘below’ the GAS belt have been demonstrated to be important determinants of selectivity in ASIC1a (Lynagh et al., 2017). Despite the presence of an ordered reentrant loop and a narrower pore, we did not observe a change in the position of either TM2a/b or the GAS belt residues between the resting and desensitized conformations. Additional studies of the open state, perhaps under SMA isolation conditions, will be required to illuminate the structure of the activated, ion conducting state of the channel.
 
-## Density features suggest TMD-lipid interactions
+### Density features suggest TMD-lipid interactions
 
 The reconstitution of membrane proteins into lipid nanodiscs is a well-established technique in structural biochemistry that permits the study of sensitive membrane proteins embedded in phospholipid bilayers (McLean et al., 2018; Bayburt et al., 1998). While a reconstitution approach provides for a controlled and defined lipid environment, the necessity of an initial detergent-based extraction step may disrupt protein-lipid interactions integral to the structural integrity of TM segments. In contrast with nanodisc reconstitution, SMA copolymers extract membrane proteins directly from the lipid bilayer, permitting the study of membrane proteins in the presence of endogenous lipids (Esmaili and Overduin, 2018; Sun et al., 2018) and, in principle, maintaining the native protein-lipid interactions (Teo et al., 2019).
 
@@ -98,30 +130,152 @@ Our studies of the cASIC1-SMA complex provide a structural basis for contributio
 
 ## Materials and methods
 
-## Expression and purification of cASIC1 channels
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Gallus gallus)</td>
+      <td>Acid-sensing ion channel isoform 1</td>
+      <td>Synthetic</td>
+      <td>NCBI Reference Sequence: NP_001035557.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S GnTI-</td>
+      <td>doi:10.1073/pnas.212519299</td>
+      <td>RRID:CVCL_A785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam</td>
+      <td>doi:10.1038/nprot.2014.173</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SL30010 (SMALP 30010 P)</td>
+      <td>Polyscope</td>
+      <td></td>
+      <td>http://polyscope.eu/markets/polyscience/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>doi:10.1038/nmeth.4193</td>
+      <td>RRID:SCR_016499</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>doi:10.1016/j.jsb.2015.11.003</td>
+      <td>RRID:SCR_016500</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/Gctf/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoG Picker</td>
+      <td>doi:10.1016/j.jsb.2009.01.004</td>
+      <td>RRID:SCR_016655</td>
+      <td>https://omictools.com/dog-picker-tool</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSparc V2</td>
+      <td>doi:10.1038/nmeth.4169</td>
+      <td>RRID:SCR_016501</td>
+      <td>https://cryosparc.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bsoft</td>
+      <td>doi:10.1006/jsbi.2001.4339</td>
+      <td>RRID:SCR_016503</td>
+      <td>https://lsbr.niams.nih.gov/bsoft/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>doi:10.1107/S0907444910007493</td>
+      <td>RRID:SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>doi:10.1107/S2059798318006551</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>doi:10.1107/S0907444909042073</td>
+      <td>RRID:SCR_014226</td>
+      <td>http://molprobity.biochem.duke.edu</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>PyMOL Molecular Graphics System, Schrodinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>doi:10.1002/jcc.20084</td>
+      <td>RRID:SCR_004097</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>doi:10.1002/pro.3235</td>
+      <td>RRID:SCR_015872</td>
+      <td>http://cgl.ucsf.edu/chimerax/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of cASIC1 channels
 
 Recombinant full-length acid-sensing ion channels (Gallus gallus) were expressed in HEK293S GnTI- cells and membrane fractions were isolated as previously described (Yoder et al., 2018a). Membrane pellets were resuspended in ice cold Tris-buffered saline (TBS, 20 mM Tris pH 8.0 and 150 mM NaCl) containing protease inhibitors, dispersed using a dounce homogenizer, and solubilized for 1 hr at 4°C by addition of SL 30010 (Polyscope) SMA copolymers to 2% (w/v) final concentration. Membrane debris was removed via centrifugation at 125,171 rcf for 30 min at 4°C and the supernatant was incubated with Ni-NTA beads overnight at 4°C in the presence of 10 mM imidazole.
 
 The Ni-NTA bead suspension was then transferred to a XK-16 column and subject to two washes, first with three column volumes of TBS containing 10 mM imidazole and last with three column volumes of TBS containing 30 mM imidazole. The cASIC1-SMA protein was eluted with TBS containing 250 mM imidazole, and peak fractions were pooled and concentrated to ~5 mg/ml. The His8 EGFP tag was removed via overnight thrombin digestion at room temperature (RT) using a ratio of cASIC1 to thrombin of 25:1. The following day, the cASIC1-SMA protein was purified via size-exclusion chromatography (Superose 6 10/300) using a mobile buffer composed of TBS supplemented with 1 mM DTT. A single peak fraction was collected and concentrated to ~1 mg/ml for cryo-EM sample preparation.
 
-## Cryo-EM of cASIC1-SMA
+### Cryo-EM of cASIC1-SMA
 
 Quantifoil holey carbon grids (R1.2/1.3 200 mesh Au) were glow discharged for 1 min at 15 mA, carbon side facing up. For structure determination of cASIC1-SMA particles at high pH, purified protein at ~1 mg/ml was used immediately for grid preparation. For structure determination at low pH, the pH of the sample was adjusted to 7.0 by addition of MES, pH 6.0, following concentration of purified protein to ~1.0 mg/ml. A 4 μl droplet of sample, applied to the carbon side of the grid, was blotted manually with pre-cooled filter paper (Whatman, grade 1) and the grids were vitrified in ethane/propane mix using a custom-built manual-plunge apparatus housed in a 4°C cold room with 60–70% relative humidity.
 
-## Cryo-EM data acquisition for cASIC1-SMA
+### Cryo-EM data acquisition for cASIC1-SMA
 
 For the resting channel structure at high pH, data were collected on a Titan Krios cryo-electron microscope (ThermoFisher) operated at 300 keV. Images were recorded on a Gatan K3 camera positioned after an energy filter (20 eV slit width) operating in super-resolution mode with a binned pixel size of 0.648 Å. Data were collected with SerialEM (Mastronarde, 2003) and dose-fractionated to 50 frames for a total exposure time of 2–3 s and a total dose of 40–50 e- Å−2.
 
 For the desensitized state structure at pH 7.0, data were recorded on a Titan Krios cryo-electron microscope operated at 300 kV and equipped with a spherical aberration corrector. Images were recorded on a Gatan K2 Summit camera in super-resolution mode with a binned pixel size of 1.096 Å. Data were acquired using Leginon (Suloway et al., 2005) and dose-fractionated to 48 frames at 0.15 s per frame for a total exposure time of 7.25 s and a total dose of 50 e- Å−2.
 
-## Cryo-EM data processing for cASIC1-SMA
+### Cryo-EM data processing for cASIC1-SMA
 
 Images were motion corrected using UCSF MotionCor2 (Zheng et al., 2017) and CTF estimation was performed using Gctf (Zhang, 2016). Particles picked using DoG Picker (Voss et al., 2009) were subjected to reference-free 2D classification in cryoSPARC V2 (Punjani et al., 2017). Following initial classification, an ab-initio model was generated in cryoSPARC V2 and used for iterative rounds of 3D classification and refinement in cryoSPARC V2. For the pH 7.0 dataset, per-particle CTF estimation was performed using Gctf. Final reconstructions for both datasets were obtained via non-uniform refinement (C3 symmetry) in cryoSPARC V2.
 
-## Model building and refinement for cASIC1-SMA
+### Model building and refinement for cASIC1-SMA
 
 Using UCSF Chimera (Goddard et al., 2007), the X-ray structures for resting (PDB 5WKU) (Yoder et al., 2018a) and desensitized (PDB 4NYK) (Baconguis et al., 2014; Gonzales et al., 2009) channels were docked into cryo-EM density maps corresponding to pH 8.0 and pH 7.0 datasets, respectively. Docked models were used as templates for iterative rounds of manual model building in Coot (Emsley et al., 2010) and real-space refinement in Phenix (Afonine et al., 2018). The final models contain residues 17–462 of cASIC1 and were validated using MolProbity (Chen et al., 2010; Supplementary file 1). Secondary structure predictions for full-length cASIC1 were conducted using the Jpred4 secondary structure prediction server (Drozdetskiy et al., 2015).
 
-## Cell lines
+### Cell lines
 
 HEK293S GnTI- cells were provided by kindly provided by Dr. Gobind Khorana (Reeves et al., 2002) and no further authentication was conducted. Cells are routinely tested for mycoplasma contamination and all cells are mycoplasma free.

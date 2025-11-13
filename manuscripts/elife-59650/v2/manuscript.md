@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Retrograde BMP signaling and canonical pMad/Medea-mediated transcription regulate diverse target genes across subsets of Drosophila efferent neurons, to differentiate neuropeptidergic neurons and promote motor neuron terminal maturation. How a common BMP signal regulates diverse target genes across many neuronal subsets remains largely unresolved, although available evidence implicates subset-specific transcription factor codes rather than differences in BMP signaling. Here we examine the cis- regulatory mechanisms restricting BMP-induced FMRFa neuropeptide expression to Tv4-neurons. We find that pMad/Medea bind at an atypical, low affinity motif in the FMRFa enhancer. Converting this motif to high affinity caused ectopic enhancer activity and eliminated Tv4-neuron expression. In silico searches identified additional motif instances functional in other efferent neurons, implicating broader functions for this motif in BMP-dependent enhancer activity. Thus, differential interpretation of a common BMP signal, conferred by low affinity pMad/Medea binding motifs, can contribute to the specification of BMP target genes in efferent neuron subsets.
+Retrograde BMP signaling and canonical pMad/Medea-mediated transcription regulate diverse target genes across subsets of Drosophila efferent neurons, to differentiate neuropeptidergic neurons and promote motor neuron terminal maturation. How a common BMP signal regulates diverse target genes across many neuronal subsets remains largely unresolved, although available evidence implicates subset-specific transcription factor codes rather than differences in BMP signaling. Here we examine the cis-regulatory mechanisms restricting BMP-induced FMRFa neuropeptide expression to Tv4-neurons. We find that pMad/Medea bind at an atypical, low affinity motif in the FMRFa enhancer. Converting this motif to high affinity caused ectopic enhancer activity and eliminated Tv4-neuron expression. In silico searches identified additional motif instances functional in other efferent neurons, implicating broader functions for this motif in BMP-dependent enhancer activity. Thus, differential interpretation of a common BMP signal, conferred by low affinity pMad/Medea binding motifs, can contribute to the specification of BMP target genes in efferent neuron subsets.
 
 ## Introduction
 
@@ -45,13 +45,21 @@ Here we provide evidence for a second model, in which low affinity BMP-RE motifs
 
 A 445 bp enhancer region mediates Tv4-neuron-specific expression of the FMRFa gene (Benveniste et al., 1998; Benveniste and Taghert, 1999). We recently sub-mapped this enhancer and defined two short cis-elements that are together necessary for enhancer activity, but are not individually sufficient (Berndt et al., 2015). Toward defining the information encoded by each cis-element, we found that concatemers for both cis-elements independently generate highly specific Tv4-neuron activity in late embryos. Thus, both contain sufficient information for Tv4-specific activity. This allowed us to explore their transcription factor inputs, leading to their definition as a homeodomain-responsive cis-element (HD-RE) and a BMP-responsive cis-element (BMP-RCE). The HD-RE recruits and is activated by the LIM-homeodomain transcription factor, Apterous, but does not require BMP-signaling for activation. The BMP-RCE requires BMP-signaling for its activity and recruits pMad sequence-specifically at a GGCGCC site (Berndt et al., 2015; Figure 1A).
 
-## The 15 bp FMRFa BMP-responsive cis-element contains a novel pMad/Medea-binding motif
+![Figure 1.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig1-v2.jpg)
+
+**Figure 1.:** The 445 bp Tv4-enhancer depicted in (A) contains two cis-elements critical for FMRFa activation, the homeodomain response element (HD-RE that recruits Apterous), and the BMP response element (BMP-RCE) that binds pMad and mediates the BMP-dependence of the Tv4-enhancer. (B) Output from the UCSC Browser shows sequence conservation through the BMP-RE across 21 Drosophila species. Capitalized letters are conserved across all species. Highlighted sequences include the putative Mad/Brinker binding site (magenta), two 5’ optimal GNCV Medea binding sequences with non-canonical spacing (green), and three 3’ sequences that deviate from a non-stringent GNCN sequence in one critical nucleotide (yellow, orange). The yellow GTAT motif is ideally spaced but has a C > A switch. The orange GTTACA contains two motifs (GTTA with a C > T switch, and TACA with a G > T switch). (C) Comparison of a putative FMRFa BMP-RE with the well-defined BMP-SE and BMP-AE motifs. (D-F) FMRFa immunoreactivity in Tv4-neurons is lost in Medea nulls (E,F) compared to controls (D). Insets show mean number of FMRFa-positive Tv4-neurons per VNC ± SD. (D’-F’’) Fluorophore splits of single Tv -clusters in A-C, showing Tv-neurons (circled) labeled by anti-Eya (green) and anti-FMRFa (magenta) expression in each genotype.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (B,C) We compared the in vivo activity of the wildtype Tv4WT-enhancer (Tv4WT-EGFP) and a full-length Tv4-enhancer reporter that was substitution mutagenized to eliminate both GNCV sequences within the BMP-RE (Tv4m5’BMP-RE) (shown in A; sequences shown in Supplementary file 1a). Both the Tv4WT-EGFP (n = 14 animals) and Tv4m5’BMP-RE (n = 9 animals) reporters generated wildtype activity; therefore, neither of these canonical GNCV motifs are essential for BMP-dependent FMRFa expression. Insets show the mean ± SD of EGFP-positive Tv4-neurons. (D–I) Comparison of anti-FMRFa and FMRFa enhancer fragment reporter expression in controls (MedC246/+) and Medea nulls (MedC246/Med13 ). Panels show expression of the Tv4WT-EYFP reporter (D,E), the HD-RE-EYFP reporter (F,G) and the BMP-RCE-EYFP reporter (H,I). Medea is required for expression of the BMP-dependent Tv4WT-EYFP and BMP-RCE-EYFP reporters, but not for the expression of the BMP-independent HD-RE-EYFP reporter. Insets show the mean number of EYFP-positive Tv4-neurons per VNC ± SD.
+
+### The 15 bp FMRFa BMP-responsive cis-element contains a novel pMad/Medea-binding motif
 
 Here we explored how the 39 bp BMP-RCE encodes activity that is BMP-dependent and Tv4-neuron-specific. We previously defined the necessity of a palindromic GGCGGC pMad-binding sequence, but not its associated Medea-binding sequence (Berndt et al., 2015). Here we find two GNCV-types sequences 5’ of the GGCGCC sequence; spaced 3 and 11 nucleotides away (green highlight in Figure 1B). Although not of canonical 5nt length, BMP-AE motifs with altered linker lengths have been shown to retain activity (Weiss et al., 2010; Chayengia et al., 2019; Esteves et al., 2014). We substitution mutagenized the 15 bp region containing these sequences, within the context of a full-length 445 bp Tv4-enhancer (Figure 1—figure supplement 1A). This mutant reported wildtype levels of enhancer activity in Tv4-neurons; therefore, we discounted all sequences 5’ of the pMad-binding site as essential (Figure 1—figure supplement 1B,C).
 
 Within sequences 3’ of pMad-binding site in the remainder of the minimal 39 bp region, there are no consensus GNCV or GTCT motifs. However, three sequences deviate from the consensus by only a single nucleotide, including a perfectly conserved GTAT sequence spaced five nucleotides from the pMad site (yellow highlight in Figure 1B), and a conserved GTTACA spaced 12nt from the pMad motif, with partially overlapping GTTA and TACA sequences (orange highlight in Figure 1B).
 
-## pMad and Medea are direct activators of FMRFa
+### pMad and Medea are direct activators of FMRFa
 
 The lack of a canonical Medea site, necessary for BMP-RE motif activity, led us to test if Medea is even required for FMRFa expression. In two different null Medea backgrounds, immunoreactivity to the FMRFa prepropeptide was entirely lost (Figure 1D–F). Anti-Eya staining revealed that all four Tv neurons were generated. We also examined EYFP reporter expression driven from the full length 445 bp TvWT-EYFP enhancer, and from the concatemerized BMP-RCE and HD-RE reporters (Berndt et al., 2015). As expected, TvWT-EYFP and BMP-RCE-EYFP expression were eliminated, while the BMP-insensitive HD-RE-EYFP exhibited expression comparable to controls (Figure 1—figure supplement 1D–I). Thus, Medea is selectively required for the BMP input that activates FMRFa expression.
 
@@ -59,21 +67,29 @@ The apparent dichotomy of Mad and Medea-dependence in the absence of a canonical
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig2-v2.jpg)
 
-**Figure 2.:** brinker nor schnurri are required for BMP-dependent FMRFa.(A,B) Expression of the BMP-dependent FMRFa prepropeptide and the Tv4 reporter were not affected in WT-EYFPbrk mutants. (C,D) Loss of FMRFa prepropeptide and Tv4 in WT-EYFPwit nulls was not rescued by the loss of brk in the double mutant of brk and wit. Thus, FMRFa is not lost in wit mutants due to the de-repression of brk. (E) Quantification of data in A-D (n = 7–12 animals per group, *p<0.01 compared to controls using One-way ANOVA with Tukey HSD post-hoc). (F,G) No change in the number of FMRFa-positive Tv4-neurons was observed between control and shn nulls in late stage 17 embryos. Mean ± SD number of FMRFa-positive Tv4-neurons per VNC shown in inset, n = 5 per genotype. (H) In a Brinker de-repression model, brinker would act as an FMRFa repressor by binding to the BMP-LA element (at the GGCGCC motif). When the BMP signaling pathway is active, the activated pMad/Medea complex would translocate to the nucleus and bind to the brk BMP-SE element, recruiting Schnurri, and silencing brk expression. This would allows expression of FMRFa, activated by other transcription factors and/or direct binding of a pMad/Medea complex. (I) In a direct pMad/Medea complex activation model, FMRFa is only expressed when an activated pMad/Medea complex binds to the BMP-LA sequence. Our work indicates that this latter model is likely correct, as neither brk nor shn manipulation modulates BMP-dependent FMRFa expression. Genotypes: Control (Tv control in F (WT-nEYFP). brk (brkXA/Y;;TvWT-nEYFP/TvWT-nEYFP). wit (TvWT-nEYFP,witA12/TvWT-nEYFP,witB11). brk;;wit (brkXA/Y;; TvWT-nEYFP,witA12/TvWT-nEYFP,witB11). shnw;shn﻿. 1/+)shn null in G (shn).1/shn1
+**Figure 2.:** (A,B) Expression of the BMP-dependent FMRFa prepropeptide and the Tv4WT-EYFP reporter were not affected in brk mutants. (C,D) Loss of FMRFa prepropeptide and Tv4WT-EYFP in wit nulls was not rescued by the loss of brk in the double mutant of brk and wit. Thus, FMRFa is not lost in wit mutants due to the de-repression of brk. (E) Quantification of data in A-D (n = 7–12 animals per group, *p<0.01 compared to controls using One-way ANOVA with Tukey HSD post-hoc). (F,G) No change in the number of FMRFa-positive Tv4-neurons was observed between control and shn nulls in late stage 17 embryos. Mean ± SD number of FMRFa-positive Tv4-neurons per VNC shown in inset, n = 5 per genotype. (H) In a Brinker de-repression model, brinker would act as an FMRFa repressor by binding to the BMP-LA element (at the GGCGCC motif). When the BMP signaling pathway is active, the activated pMad/Medea complex would translocate to the nucleus and bind to the brk BMP-SE element, recruiting Schnurri, and silencing brk expression. This would allows expression of FMRFa, activated by other transcription factors and/or direct binding of a pMad/Medea complex. (I) In a direct pMad/Medea complex activation model, FMRFa is only expressed when an activated pMad/Medea complex binds to the BMP-LA sequence. Our work indicates that this latter model is likely correct, as neither brk nor shn manipulation modulates BMP-dependent FMRFa expression. Genotypes: Control (TvWT-nEYFP). brk (brkXA/Y;;TvWT-nEYFP/TvWT-nEYFP). wit (TvWT-nEYFP,witA12/TvWT-nEYFP,witB11). brk;;wit (brkXA/Y;; TvWT-nEYFP,witA12/TvWT-nEYFP,witB11). shn control in F (w;shn﻿1/+). shn null in G (shn1/shn1).
 
 The BMP-responsive GGCGCC sequence in the FMRFa BMP-RCE matches this Brk consensus motif (Zhang et al., 2001). If a Brk de-repression model were correct for FMRFa expression (Figure 2H), BMP-induced pMad, Medea, and Schnurri (Shn) would be required to silence brk, resulting in FMRFa de-repression (Marty et al., 2000; Müller et al., 2003). Thus, we would expect that Brk expression would be increased in wit nulls, resulting in FMRFa repression. To test this model genetically, we first examined brkXA/Y hemizygotes, but observed no change in either anti-FMRFa immunoreactivity or Tv4WT-EYFP reporter expression (Figure 2B,E). Second, we tested brk;;wit double mutants to test if the absence of FMRFa in wit mutants is due to upregulation of the brk repressor. Contrary to this hypothesis, FMRFa expression was absent in brk/Y;;witA12/witB11 double mutants (Figure 2D,E), phenocopying wit mutants (Figure 2C,E).
 
 However, this analysis did not rule out the possibility that FMRFa activation requires de-repression by brk as well as direct activation by pMad/Medea, as occurs at BMP-AE motifs regulating dad (Weiss et al., 2010). In such a model, the absence of FMRFa in brk; ;wit nulls may be due to a lack of activation by pMad/Medea. Therefore, we tested FMRFa expression in shn nulls. In this genotype, Brinker and pMad/Medea would all be expressed. In shn (Allan and Thor, 2015) null mutants, we found that FMRFa immunoreactivity was wildtype in late stage 17 embryos, the latest age testable in these mutants due to shn (Allan and Thor, 2015) late embryonic lethality (Figure 2G). Thus, brk de-repression cannot function as the primary mechanism for BMP-dependent FMRFa expression. We conclude that FMRFa is directly activated by pMad/Medea (Figure 2I), with no apparent involvement for shn and brk-mediated de-repression.
 
-## The 15 bp FMRFa BMP-RE has reduced pMad/Medea binding relative to canonical BMP-REs
+### The 15 bp FMRFa BMP-RE has reduced pMad/Medea binding relative to canonical BMP-REs
 
 These data led us to test if the pMad/Medea complex is recruited by a non-canonical motif within the FMRFa BMP-RCE. We used an Electrophoretic Mobility Shift Assay (EMSA) to examine nucleotides essential for pMad/Medea binding. We activated BMP signaling in S2 cells, by transfecting S2 cells with FLAG::Mad, Myc::Medea, and activated BMP type I receptor Thickveins (TkvQD) (Gao et al., 2005). From these cells, we obtained total cell lysates to perform EMSA tests on IRDye700-tagged DNA oligonucleotides containing a 27 bp BMP-RE sequence. In Figure 3, we show that co-transfection of all three plasmids was required for a band shift of the FMRFa BMP-RCE probe by BMP-activated S2 cell lysates. Addition of either an anti-Myc or anti-FLAG IgG to the lysate super-shifted the band, whereas a control IgG had no effect. Thus, a BMP-activated pMad/Medea complex isolated from S2 cells bind and band shift the FMRFa BMP-RCE.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig3-v2.jpg)
 
-**Figure 3.:** FMRFa BMP-RE.EMSA using IRDye700-tagged DNA oligonucleotides of the FMRFa BMP-RE incubated with S2 cell extracts transfected with FLAG::Mad and/or Myc::Medea, and/or activated BMP-receptor TkvQD. Lanes 2–7 showed no specific band shift that differed from empty vector transfected cells (lane 1). Co-transfection of FLAG::Mad, Myc::Medea and TkvQD together generated a strong band shift (lane 8). Addition of antibodies to Myc (lane 10) or FLAG (lane 11) caused a super-shifted band that was not seen upon addition an IgG antibody control (lane 9). Thus, Mad, Medea, and activated Tkv receptor were capable of generating a band-shift of the FMRFa BMP-RE.
+**Figure 3.:** EMSA using IRDye700-tagged DNA oligonucleotides of the FMRFa BMP-RE incubated with S2 cell extracts transfected with FLAG::Mad and/or Myc::Medea, and/or activated BMP-receptor TkvQD. Lanes 2–7 showed no specific band shift that differed from empty vector transfected cells (lane 1). Co-transfection of FLAG::Mad, Myc::Medea and TkvQD together generated a strong band shift (lane 8). Addition of antibodies to Myc (lane 10) or FLAG (lane 11) caused a super-shifted band that was not seen upon addition an IgG antibody control (lane 9). Thus, Mad, Medea, and activated Tkv receptor were capable of generating a band-shift of the FMRFa BMP-RE.
 
 Next, we tested which sequences within the BMP-RCE are required for pMad/Medea recruitment. We generated an IRDye-700 tagged wildtype FMRFa BMP-RCE probe comprising a reduced 27 bp FMRFa BMP-RCE (AGAGGCGCCACAATGTATCCCGTTACA), necessary for appropriate in vivo expression (Figure 1—figure supplement 1A). We first tested candidate pMad and Medea binding sites by generating untagged probes with mutant sequence to test their ability to outcompete the wildtype tagged BMP-RE probe when pre-incubated at 10× or 100× excess. We confirmed that mutation of the pMad-binding sequence GGCGCC eliminated binding of the activated pMad/Medea complex (Figure 4A), as previously demonstrated (Berndt et al., 2015). Next, we tested candidate Medea-binding sequences by mutating the GTAT sequence (to TTAT) and the sequence CCCG (to AATT). We found that only mutation of the GTAT sequence reduced binding of the activated pMad/Medea complex (Figure 4B). This indicated that a 15 bp GGCGCC(N5)GTAT motif likely represents the pMad/Medea-recruitment motif for the FMRFa BMP-RCE. We further corroborated these data by comparing the ability of the pMad/Medea complex to bind IRDye-700-tagged BMP-RE oligonucleotides that were either wildtype or contained GTAT mutations predicted to abrogate Medea binding (ACTA or TTAT). Our results demonstrated that pMad/Medea had reduced binding to the mutant sequences (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig4-v2.jpg)
+
+**Figure 4.:** We performed EMSA gels in which we ran IRDye700-tagged FMRFa BMP-RE DNA oligonucleotides (of sequence AGAGGCGCCACAATGTATCCCGTTACA) pre-incubated with lysates from S2 cells transfected with either empty vectors (EV; lane 1) or FLAG::Mad, Myc::Medea and activated BMP-receptor, TkvQD (MMT lysate; lanes 2–8 or 2–10) (A-B). The MMT lysate generated a band shift indicative of pMad/Medea binding to the tagged probe (lane 2 in A,B). In lanes 3–8 (A) or 3–10 (B), we ran MMT lysates pre-incubated with tagged probe and a stoichiometric excess of untagged (cold) DNA oligonucleotides with either wildtype or mutated sequence (shown below each gel). Loss of a band shift indicates that the untagged probe is capable of binding activated pMad/Medea. (A) We pre-incubated with untagged (cold) competitors of wildtype (WT) sequence or GGCGCC >TAGTAG mutated sequence (ΔMad) in 1×, 10×, 100× excess. At 100× excess, competition by the WT cold probe reduced the band shift (lane 5). In contrast, the mutated cold probe failed to reduce the band shift at 100× excess (lane 8). (B) We pre-incubated with 10x and 100x excess of cold probes of wildtype (WT) or mutated sequences, including of G and C nucleotides within candidate Medea-binding sequences GTAT (>TTAT, termed ΔGTAT), CCCG (>AATT, termed ΔCCCG), and a mutant to both of these sequences (Δboth). At 100× excess, the wildtype (lane 4) and ΔCCCG (lane 10) greatly reduced the band shift to the same extent; thus, the CCCG sequence does not contribute to pMad/Medea binding. By contrast, the ΔGTAT (lane 6) and Δboth (lane 8) cold probes only partially reduced the band shift, indicating that their ability to bind pMad/Medea was compromised. These data suggest that the minimal BMP-RE comprises a GGCGCC(N5)GTAT sequence. (C-D) The MMT lysate generated a band shift indicative of pMad/Medea binding to the tagged probe (lane 2). We added untagged (cold) BMP-RE DNA oligonucleotides at 100× stoichiometric excess with mutations in the sequences shown in red. (C) Nucleotide mutations are shown as red within the pMad-binding site. (D) Nucleotide mutations are shown as red within the linker region. (E) Nucleotide mutations are shown as red within the Medea-binding site. Examining the ability of each cold competitor to compete with tagged FMRFa BMP-RE, we reveal a necessary BMP-RE sequence of GGCGGGacaatGTaT, where capitalized nucleotides are found most necessary for pMad/Medea recruitment. (F,G) In these EMSA, we additionally transfected S2 cell extracts with a 1×, 5×, and 10× stoichiometric excess of untagged competitors (sequences shown in H). (F) Competition for the tagged BMP-LA by the untagged wildtype (BMP-LA) or the AE-like mutant. A 10× excess (lane 5) of untagged wildtype BMP-LA reduced but did not eliminate the band shift (lane 5). By contrast, the BMP-AE-like mutant totally out-competed the tagged BMP-LA at a 5× excess (lane 7 compared to lane 4) and significantly out-competed the tagged BMP-LA even at equimolar ratio (lane 6 compared to lane 3). (G) Competition for the tagged BMP-LA by the untagged wildtype or the SE-like mutant. The SE-like mutant totally out-competed the tagged BMP-LA at a 5× excess (lane 15 compared to lane 12) and significantly out-competed the tagged BMP-LA even at equimolar ratio (lane 14 compared to lane 11).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** EMSA analysis in which we ran lysates from S2 cells transfected with either empty vectors (lanes 1–3) or with FLAG::Mad, Myc::Medea and activated BMP-receptor, TkvQD (MMT lysate) (lanes 4–6) that were pre-incubated with IRDye700-tagged FMRFa BMP-RE DNA oligonucleotides of wildtype sequence (lanes 1, 4), or GTAT mutated sequence (lanes 2, 3, 5, 6). Only S2 cell lysates with activated pMad/Medea band shifted any of the tagged DNA probes. Comparing lane 4 with lanes 5 and 6, we find that mutation of the GTAT sequence to either ACTA or TTAT reduced binding.
 
 We wished to define the sequence requirements for this novel 15 bp BMP-Response Element (BMP-RE). Therefore, we examined band shifts of BMP-activated S2 cell lysates pre-incubated with tagged wildtype BMP-RE DNA oligonucleotides and a 100× stoichiometric excess of cold mutants in which a single nucleotide through the 15 bp motif was substitution mutagenized (Figure 4C–E). Mutagenesis of the entire GGCGCC sequence, or any single nucleotide therein, severely reduced binding of pMad/Medea, as shown by an inability to reduce the band shift of the tagged BMP-RE probe (Figure 4C). In addition, mutation of the entire GTAT sequence, or of any nucleotide except the A, greatly reduced the binding of pMad/Medea, as shown by retention of a strong band shift of the tagged BMP-RE probe (Figure 4E). By contrast, mutation of any nucleotide within the linker sequence ACAAT only minimally reduced pMad/Medea binding and the band shift was only minimally retained (Figure 4D). We conclude that a minimal 15 bp element of GGCGCCacaatGTaT is essential for pMad/Medea recruitment in vitro (with capitalized letters being essential).
 
@@ -81,7 +97,7 @@ It is intriguing that the position 14 A nucleotide in the putative GTAT Medea bi
 
 Hereafter, we term the FMRFa BMP-RE motif as a BMP-Low Affinity Activation motif (BMP-LA). We wished to determine if the C > A switch that distinguishes the BMP-LA from the BMP-AE/SE motifs has an impact on BMP-activated pMad/Medea recruitment. To examine this, we tested whether modifying the BMP-LA Medea site to a BMP-AE-like or BMP-SE-like sequence indeed increases its ability to bind pMad/Medea. We generated a series of tagged and untagged DNA oligonucleotides comprising 27 bp of the BMP-LA sequence that was either wildtype at the Medea site, GTAT, or mutated at this site to GACG (BMP-AE-like) or GTCT (BMP-SE-like). By competition EMSA assays, we tested the relative ability of these untagged DNA oligonucleotides to compete for pMad/Medea binding when at 1×, 5×, and 10× stoichiometric ratios relative to the tagged wildtype probe (Figure 4F–G). We found that a wildtype untagged BMP-LA sequence reduced but did not eliminate the band shift generated by its tagged counterpart by 10×. In contrast, both the AE-like and the SE-like sequence mutants proved to be much stronger competitors, totally outcompeting the BMP-LA tagged probe by 5×. Moreover, at equimolar ratios, the untagged wildtype BMP-LA competitor did not substantially alter the tagged probe band shift; however, both AE-like and SE-like mutants reduced the band shift. These data indicate that the GTAT sequence displays low affinity pMad/Medea binding activity relative to the characterized BMP-AE and BMP-SE motifs.
 
-## Conversion of the low affinity FMRFa BMP-RE to a high affinity BMP-AE sequence results in ectopic neuronal BMP-dependent activity in vivo
+### Conversion of the low affinity FMRFa BMP-RE to a high affinity BMP-AE sequence results in ectopic neuronal BMP-dependent activity in vivo
 
 Collectively, our genetic and biochemical data indicated that the BMP-LA motif exhibits low affinity pMad/Medea recruitment. This raised the question as to why the BMP-LA motif is attenuated in this manner, yet conserved across all Drosophila species. To address this, we tested for functional relevance for this motif’s low affinity.
 
@@ -89,17 +105,223 @@ First, we mutated the 445 bp Tv4-enhancer (within the Tv4-nEGFP nuclear-localize
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig5-v2.jpg)
 
-**Figure 5.:** FMRFa BMP-LA motif has a necessary but low affinity Medea binding site that specifies selective neuronal subtype activity.(A–C) Conversion of the Medea-binding GTAT site in the wildtype 445 bp Tv4-neuron-specific FMRFa enhancer to a mutant version, ACTA (that reduces pMad/Medea recruitment; termed Tv4 ), resulted in a complete loss of reporter gene expression in Tv4-neurons (mGTAT>ACTA–nEGFPB). Conversion of the Medea-binding GTAT site in the wildtype 445 bp Tv4-neuron-specific FMRFa enhancer to an optimal BMP-AE-like sequence (GACG; termed Tv4 ) also resulted in a total loss of reporter expression in Tv4-neurons (mGTAT>GACG–nEGFPC). Numbers in insets indicate the mean ± SD number of EGFP-positive Tv4-neurons per VNC, out of the possible six Tv neurons. (D,E) The Tv4 reporter generated strong ectopic reporter activity in VNC midline cells (mGTAT>GACG–nEGFPD) that is lost in the absence of neuronal BMP signaling (E; in wit mutants, wit). Full z-projections though the whole VNC are shown. Numbers in insets indicate the mean ± SD number of EGFP-positive neurons per VNC. (A12/witB11D’–D’’’) Images of the midline ectopic EGFP expression generated from Tv4. EGFP expression (green) was exclusively expressed in pMad-immunoreactive cells (magenta); all cells are yellow circled.mGTAT>GACG–nEGFP
+**Figure 5.:** (A–C) Conversion of the Medea-binding GTAT site in the wildtype 445 bp Tv4-neuron-specific FMRFa enhancer to a mutant version, ACTA (that reduces pMad/Medea recruitment; termed Tv4 mGTAT>ACTA–nEGFP), resulted in a complete loss of reporter gene expression in Tv4-neurons (B). Conversion of the Medea-binding GTAT site in the wildtype 445 bp Tv4-neuron-specific FMRFa enhancer to an optimal BMP-AE-like sequence (GACG; termed Tv4 mGTAT>GACG–nEGFP) also resulted in a total loss of reporter expression in Tv4-neurons (C). Numbers in insets indicate the mean ± SD number of EGFP-positive Tv4-neurons per VNC, out of the possible six Tv neurons. (D,E) The Tv4mGTAT>GACG–nEGFP reporter generated strong ectopic reporter activity in VNC midline cells (D) that is lost in the absence of neuronal BMP signaling (E; in wit mutants, witA12/witB11). Full z-projections though the whole VNC are shown. Numbers in insets indicate the mean ± SD number of EGFP-positive neurons per VNC. (D’–D’’’) Images of the midline ectopic EGFP expression generated from Tv4mGTAT>GACG–nEGFP. EGFP expression (green) was exclusively expressed in pMad-immunoreactive cells (magenta); all cells are yellow circled.
 
 These data show that the low affinity of BMP-LA is essential for the spatially restricted activity of this cis-element to Tv4-neurons.
 
-## Identification of additional functional BMP-responsive BMP-LA motifs through the genome
+### Identification of additional functional BMP-responsive BMP-LA motifs through the genome
 
 Following the identification of the novel BMP-LA motif regulating FMRFa expression in Tv4-neurons, we examined if this cis-regulatory motif was unique to FMRFa regulation, or functions to confer BMP-dependence to other cis-regulatory regions. To this end, we identified 178 BMP-LA motifs in the D. melanogaster genome using the motif discovery tool HOMER (v4.10) (Heinz et al., 2010). These were filtered for sequence conservation across 24 sequenced Drosophila species using PhastCons scores (Siepel et al., 2005), reducing the list to 128 BMP-LA with an average PhastCons score over 0.55. Of these 128 BMP-LA, 103 were highly conserved with a score of over 0.9 (Supplementary file 1b).
 
 We selected 24 of the BMP-LA motifs for functional testing in vivo. Of the 24 prioritized motifs, 20 were highly conserved (average PhastCons score >0.9) and chosen in order to optimize the chance of characterizing functional BMP-RE's. Additionally, four motifs with lower scores 0.75–0.55 were tested for functionality (Table 1, Supplementary file 1c). We examined reporter activity driven from these genomic fragments in late third instar larvae (L3). Of the 24 reporters, five showed no expression in the ventral nerve cord (VNC) (Figure 6—figure supplement 1A), while the remaining 19 reporters exhibited low to high reporter activity in the VNC (Table 1). Of these active reporters, 10 exhibited expression in subsets of pMad-positive cells in the VNC, and also numerous pMad-negative glia and neurons (Table 1). The remaining nine active reporters were restricted to pMad-negative glia and neurons (Figure 6—figure supplement 1B). We tested the BMP-responsiveness of the 10 reporters expressed in pMad-positive cells, by placing them in a wit mutant background. Out of those 10 reporters, seven showed reduced reporter expression (Figure 6B), including two (CM5 and CM7) with motifs of lower PhastCons score. Three reporters showed no significant change (Figure 6A, Figure 6—figure supplement 1B). Quantification of reporter expression in the VNC of controls and their corresponding wit mutants revealed a loss of up to 88% of reporter-expressing cells in certain genotypes (Figure 6—figure supplement 2B).
 
+**Table 1.**
+ Summary table of expression pattern and wit-responsiveness for BMP-LA containing DNA fragments tested in vivo.The first column indicates the name for each of the cloned BMP-LA containing DNA fragments; these were sorted based on intensity and pattern of reporter expression. The second column provides information on reporter expression in the VNC, (more plus signs indicate higher intensity), and the final column provides details on expression pattern. The third and fourth columns indicate fragments that exhibited pMad and reporter co-expression, as well as the ones that were shown to be wit-responsive. Bolded letters indicate the enhancer fragments that were further tested for wit-responsiveness. The expression pattern was assessed in wandering third instar larvae.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>DNA fragment</th>
+      <th>VNC expression</th>
+      <th>Reporter/pMad stain overlap</th>
+      <th>Wit responsive</th>
+      <th>VNC expression details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CM5</td>
+      <td>+++</td>
+      <td>√</td>
+      <td>√</td>
+      <td>neurons and glia</td>
+    </tr>
+    <tr>
+      <td>CM1</td>
+      <td>+++</td>
+      <td>√</td>
+      <td>√</td>
+      <td>medial and lateral neurons</td>
+    </tr>
+    <tr>
+      <td>CM4</td>
+      <td>+++</td>
+      <td>√</td>
+      <td>√</td>
+      <td>medial and lateral neurons</td>
+    </tr>
+    <tr>
+      <td>CM3</td>
+      <td>+++</td>
+      <td>√</td>
+      <td>√</td>
+      <td>medial and lateral neurons</td>
+    </tr>
+    <tr>
+      <td>CM2</td>
+      <td>++</td>
+      <td>√</td>
+      <td>√</td>
+      <td>medial and lateral neurons</td>
+    </tr>
+    <tr>
+      <td>CM7</td>
+      <td>+</td>
+      <td>√</td>
+      <td>√</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM6</td>
+      <td>+</td>
+      <td>√</td>
+      <td>√</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM8</td>
+      <td>+++</td>
+      <td>√</td>
+      <td>-</td>
+      <td>medial neurons</td>
+    </tr>
+    <tr>
+      <td>CM9</td>
+      <td>++</td>
+      <td>√</td>
+      <td>-</td>
+      <td>lateral neurons</td>
+    </tr>
+    <tr>
+      <td>CM10</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM11</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+      <td>neurons and glia</td>
+    </tr>
+    <tr>
+      <td>CM12</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM13</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM14</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM15</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM16</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>sparse</td>
+    </tr>
+    <tr>
+      <td>CM17</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>low intensity</td>
+    </tr>
+    <tr>
+      <td>CM18</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>low intensity</td>
+    </tr>
+    <tr>
+      <td>CM19</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>low intensity</td>
+    </tr>
+    <tr>
+      <td>CM20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>CM21</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>CM22</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>CM23</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>CM24</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>none</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig6-v2.jpg)
+
+**Figure 6.:** We identified 10 genomic fragment reporters that exhibited expression in subsets of pMad-positive cells in the VNC and tested their wit-responsiveness. (A) EGFP reporter patterns of three genomic fragments that exhibit no wit-responsive loss of reporter expression in wit mutants (witA12/witB11) compared to controls (witA12/+) in late third Instar larval VNCs. (B) Nuclear EGFP expression patterns driven from seven genomic fragments containing conserved BMP-LAs that were down-regulated in wit mutants (witA12/witB11), compared to controls (witA12/+) in late third Instar larval VNCs. The observed down-regulation ranged from a near-total loss of all neuronal expression to loss of expression in a subset of neurons. Full z-projections though the whole VNC are shown. Genotypes: All control lines shown here were heterozygous (w;;CM#/+); wit mutants (w;;CM#,witA12/witB11).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) No reporter expression was observed in the VNC of these reporter lines. (B) These nine reporter lines exhibited a range of reporter patterns in the VNC but lacked EGFP reporter and pMad stain overlap. Areas of high reporter expression were magnified and showed in insets as separate channels and overlay; reporter expressing cells were circled. No overlap in expression of EGFP reporter and pMad stain was observed. Full z-projections though the whole VNC are shown. Side panels indicate nuclei with GFP reporter (green) and/or pMad stain (magenta). Genotypes: All control lines shown here were heterozygous (w;;CM#/+); wit mutants (w;;CM#,witA12/witB11).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) None of the three reporter fragments (CM8, CM9, CM10) showed a significant change in number of reporters expressing cells between controls and their respective mutants. (B) In the VNC, the CM1 (CM1,witA12/+ controls) reporter was expressed in 224 ± 43 nuclei, of which 56 ± 16 (25%) nuclei are pMad-positive (n = 7). In wit mutants (witA12/witB11), reporter activity was reduced by 61% to 88 ± 34 nuclei (n = 12). Once the pMad-binding site was mutated (CM1Δmad), reporter activity was reduced by 27% to 159 ± 36 nuclei (n = 15) compared to controls that had reporter expression in 218 ± 46 nuclei (n = 6). CM2 (CM2,witA12/+ controls) reporter was expressed in 209 ± 53 nuclei, of which 111 ± 33 (53%) nuclei are pMad-positive (n = 10). In wit mutants (witA12/witB11), reporter activity was reduced by 88.5% to 24 ± 23 nuclei (n = 9). In the pMad-binding site mutant (CM2Δmad), reporter activity was reduced by 41% to 131 ± 25 nuclei (n = 9) compared to controls that had reporter expression in 221 ± 36 nuclei (n = 6). CM3 (CM3,witA12/+ controls) reporter was expressed in 212 ± 50 nuclei, of which 68 ± 19 (32%) nuclei are pMad-positive (n = 9). In wit mutants, reporter activity was reduced by 64% to 77 ± 15 nuclei (n = 9). In the pMad-binding site mutant (CM3Δmad), reporter activity was reduced by 67% to 76 ± 20 nuclei (n = 9) compared to controls that had reporter expression in 228 ± 52 nuclei (n = 9). CM4 reporter was expressed in 339 ± 62 nuclei, of which 134 ± 25 (34%) nuclei were pMad-positive (n = 16). In wit mutants, reporter activity was reduced by 47% to 181 ± 22 nuclei (n = 17). CM5 reporter was expressed in 805 ± 58 nuclei in the VNC, of which 217 ± 10 (27%) nuclei were pMad-positive (n = 7). In wit mutants, reporter activity was reduced by 30% to 592 ± 94 nuclei (n = 6). CM6 was expressed in 61 ± 13 nuclei (n = 5). In wit mutants, reporter activity was reduced by 50% to 30 ± 10 nuclei (n = 5). Finally, CM7 (CM7,witA12/+ controls) reporter was expressed in 49 ± 11 nuclei, of which 9 ± 2 (18%) nuclei are pMad-positive (n = 5). In wit mutants, reporter activity was reduced by 75% to 12 ± 3 nuclei (n = 5). In the pMad-binding site mutant (CM7Δmad), reporter activity was reduced by 50% to 23 ± 9 nuclei (n = 7) compared to controls that had reporter expression in 46 ± 12 nuclei (n = 6). Significance was calculated with One-way ANOVA with a Tukey post hoc multiple comparisons test for the following genotypes: CM1 control versus wit mutants p<0.0001 and control versus pMad-binding site mutants p=0.0143; CM2 control versus wit mutant and control versus pMad-binding site mutants p<0.0001; CM7 control versus wit mutants p<0.0001 and control versus pMad-binding site mutants p=0.0021. Student`s t-test was used for: CM4 p<0.0001; CM5 p=0.0004; CM6 p=0.0028. For CM3, as the wit control samples were non-normally distributed (Shapiro Wilk test), significance was calculated with the Mann-Whitney U-test for control versus wit mutants p<0.0001; Student's t-test was used for control versus pMad-binding site mutants p<0.0001. Each point represents the total number of reporter-expressing cells in the VNC of a single animal, n indicates the number of VNCs analyzed and data is reported as mean ± SD. Genotypes: All control and pMad-binding site mutant lines examined here were heterozygous (w;;CM#/+); wit mutants (w;;CM#,witA12/witB11).
+
 Next, we tested whether the activity of the identified wit-responsive fragments was dependent on the BMP-LA motif within these genomic fragments. We selected four wit-responsive fragments (CM1, CM2, CM3, and CM7) and one non-wit responsive fragment (CM9; Figure 7A). We introduced nucleotide substitution mutations into the pMad-binding site of the LA (GGCGCC > TGATGA). In all four wit-responsive fragments tested, there was a significant loss of reporter expressing cells (Figure 7B). Finally, having established the necessity of Medea for BMP-dependent activity of the FMRFa BMP-RE, we tested the requirement for Medea in reporter expression these same BMP-dependent CM1, CM2, CM3, and CM7 reporters. In Medea mutant third instar (L3) larvae, reporter expression was reduced in the same pattern as observed in a wit mutant background (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig7-v2.jpg)
+
+**Figure 7.:** We introduced specific mutations into the pMad-binding site of the BMP-LA motif (GGCGCC >TGATGA) of four wit-responsive fragments (CM1, CM2, CM3, and CM7) and one non-wit responsive fragment (CM9) to verify whether reporter activity was dependent on pMad binding. (A) CM9 showed no significant loss of reporter expression in the CM9Δmad mutant compared to the control. (B) All four wit-responsive fragments exhibited a significant loss of reporter expressing cells; however, this loss was less pronounced than the loss in wit mutants, apart from CM3. Full z-projections though the whole VNC are shown. Genotypes: All control and pMad-binding site mutant lines examined here were heterozygous (w;;CM#/+).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59650/elife-59650-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–D) Representative images of CM1, CM2, CM3, and CM7 control reporter expression compared to the same lines in a Medea and wit mutant backgrounds. In all cases, reporter expression loss in both mutants exhibit the same pattern. Full z-projections though the whole VNC are shown.Genotypes: All control lines examined here were heterozygous (w;;CM#/+); wit nulls (w;;CM#, witA12/witB11); Medea mutants (w;;CM#, Medc246/Med13).
 
 We conclude that the BMP-LA is utilized by numerous cis-regulatory regions in order to generate BMP-dependent enhancer activity in neurons.
 
@@ -121,30 +343,30 @@ Overall, our results show that differential BMP-dependent gene expression in neu
 
 ## Materials and methods
 
-## Fly genetics
+### Fly genetics
 
 Strains used: MedC246 (McCabe et al., 2004); Med13 (Hudson et al., 1998); MedDf (Df(3R)ED6361) (Ryder et al., 2007); witA12 and witB11 (Aberle et al., 2002); brkXA (Campbell and Tomlinson, 1999); shn1 ( Grieder et al., 1995). Mutants were kept over CyO, Act-GFP TM3, Ser, Act-GFP (Reichhart and Ferrandon, 1998), CyO, twiGAL4, UAS-2xEGFP, or TM3, Sb, Ser, twiGAL4, UAS-2xEGFP (Halfon, 2002). w1118 was used as the control genotype. Flies were maintained at 25°C, 70% humidity.
 
-## Reporter transgene construction
+### Reporter transgene construction
 
 TvWT-EYFP, BMP-RE-EYFP, HD-RE-EYFP were generated previously (Berndt et al., 2015). Drosophila transformations were performed by Rainbow Transgenic Flies, Inc (Camarillo, CA). Empty pThunderbird EGFP vector was generated from Tv-nEYFP and from sequence within pHstinger (Berndt et al., 2015; Barolo et al., 2000). Tv4-nEYFP was digested with AscI and SpeI. The multiple cloning site (MCS), HSP70 promoter, EGFP coding sequence, Tra nuclear localization signal, and SV40-polyA sequences from pHstinger (Barolo et al., 2000) were liberated with AscI and SpeI and ligated into the cut Tv-nEYFP backbone. The Tv4-enhancer was PCR-amplified from Oregon-R with XbaI and EcoRI adaptors, restriction digested and ligated into XbaI/EcoRI digested empty Tv4-nEYFP. SOE PCR generated nucleotide substitution and deletion mutants were inserted similarly. Summary of all mutations and concatemerization sequences in Supplementary file 1a. pMad-binding site mutagenesis was performed by Q5 Site-Directed Mutagenesis Kit (New England Biolabs, Ipswich, MA), using primers designed to introduce specific base pair substitutions to the Mad binding site (GCCGGC > tgatga), according to manufacturer`s protocols. All constructs were verified by sequencing before the generation of transgenic fly lines. Fly transformations were performed by Rainbow Transgenic Flies, Inc (Camarillo, CA). All transgenic reporters were integrated into attP2 (Groth et al., 2004).
 
-## Immunochemistry
+### Immunochemistry
 
 Immunochemistry was performed as previously described (Eade and Allan, 2009; Berndt et al., 2015). Primary antibodies: Rabbit α-FMRFa C-terminal peptide (1:1000, a gift from S. Thor) Baumgardt et al., 2007; Mouse α-Eya (1:100; MAb clone 10H6 DSHB; Iowa University, IA); Rabbit α-pMad (1:100, 41D10, Cell Signaling Technology, Danvers, MA), Chicken α-GFP antibody (1:1000, ab13970, Abcam, Ontario, Canada). Donkey anti-Rabbit and anti-Mouse conjugated to DyLight 488, Cy3, Cy5 (1:100, Jackson ImmunoResearch, West Grove, PA).
 
-## Image and statistical analysis
+### Image and statistical analysis
 
 Sample size and measurements are given as supplementary files for each accompanying figure. Analysis of the reporter constructs was performed on heterozygous reporter lines. Images were acquired with an Olympus FV1000 or a Zeiss Axio Imager VIS LSM880 confocal microscope with settings that avoided pixel intensity saturation. Representative images of Tv neurons being compared in figures were linear contrast enhanced together in Adobe Photoshop CS5 (Adobe Systems, San Jose, CA). All statistical analyses and graphing were performed using Prism 5 or Prism 8.0.1 (GraphPad Software, San Diego, CA). Normality of sample distribution was determined with Shapiro-Wilk normality tests. All multiple comparisons were done with One-Way ANOVA and a Tukey post-hoc test, or Student’s two-tailed t-test when only two groups were compared. Mann-Whitney U-test was used when the samples were not normally distributed. Differences between groups were considered statistically significant when p<0.05. Data are presented as either Mean ± Standard Deviation (SD).
 
-## Quantification of reporter expression
+### Quantification of reporter expression
 
 Quantification of native EGFP reporter expression (without anti-GFP immunoreactivity enhancement) in late L3 larval VNCs was performed, in the context of anti-pMad immunoreactivity (to mark nuclei with active BMP-signaling). In all cases, five or more VNC were dissected and imaged for each genotype. All compared tissues were processed with the same reagents, imaged, and analyzed in identical ways. To quantitate reporter activity, we used Bitplane:Imaris v9.2 software (in Spots Mode) to identify reporter-positive nuclei in the VNC (excluding the brain lobes). When comparing control and pMad-binding site mutant genomic fragment reporters, we additionally assessed EGFP positive nuclei that were co-marked by pMad immunoreactivity (by mean intensity thresholding). Imaris settings were established independently for each set of reporters, in order to provide optimal ‘spot’ marking of a verifiable reporter and pMad co-immunoreactive nuclei, with minimal background fluorescence spot marking. Each image was further subtracted, manually, for spots that erroneously labeled background fluorescence.
 
-## Gel shift assay
+### Gel shift assay
 
 FLAG::Mad, Myc::Medea, and/or TkvQD cDNA sequences were derived from previously described vectors (Gao et al., 2005) and subcloned into a pAc5.1/V5-His vector backbone (Thermo Fisher, Waltham, MA). Drosophila S2 cells were transfected at a density of 1.5 × 106 S2 cells per mL in a six well dish in 2 mL of media. A total of 2.4 ug of plasmid was used per well with each plasmid constituting 0.8 ug of the total. Total plasmid mass was kept constant by co-transfecting empty pAc5.1 when only one or two protein coding plasmids were used for an experimental condition. Transfections were performed with the XtremeGENE HD transfection kit according to the manufacturer’s recommended protocol (Roche, Ontario, Canada). 48 hr after transfection, cells were harvested and lysed for gel shift assay. Cells were harvested in 15 mL tubes then pelleted by centrifugation (700 g at room temperature for 3 min). The pellets were re-suspended in PBS, transferred to 1.5 mL tubes, and centrifugation repeated as before. Cells were then resuspended in 90 μL ice-cold lysis buffer and the lysis reaction incubated on ice for 15 min. S2 cell lysis buffer contained 100 mM Tris HCl pH 7.6, 0.5% Tween-20, 1 mM DTT, and 1× Roche cOmplete ULTRA EDTA-free Protease inhibitor cocktail. The lysate was cleared by centrifugation at 16.2 × 103 g for 15 min at 4°C. The supernatant was aliquoted into new pre-chilled tubes in 30 uL volumes, snap-frozen in liquid nitrogen, and stored at −80°C until use. Oligonucleotides were synthesized and labeled with IRDye 700 by Integrated DNA Technologies (IDT, Indiana). DNA and protein binding was performed by incubating 20 μg of lysate protein with 1 μL of 50 nM IRDye 700-labeled probe in 20 μL of reaction buffer containing 25 mM Tris pH7.5, 35 mM KCl, 80 mM NaCl, 3.5 mM DTT, 5 mM MgCl2, 0.25% Tween 20, 1 μg poly dIdC, 10% glycerol, and 1× Roche cOmplete ULTRA EDTA-free Protease inhibitor cocktail for 30 min at room temperature. If super shifts were performed, then 1 μg of mouse anti-MYC (clone 9E10, Sigma), mouse anti-FLAG (clone M2, Sigma), or mouse IgG (Sigma) was added and incubated for an additional 30 min at room temperature. The DNA-protein complexes were resolved on a 4% non-denaturing polyacrylamide gel for 1.5 hr at 70 V in 1× TGE buffer. After electrophoresis, the gel was imaged immediately by a Licor Odyssey Imager system (Lincoln, NE).
 
-## Computational detection of BMP-LA instances
+### Computational detection of BMP-LA instances
 
 HOMER v4.10 software suite (Heinz et al., 2010) was used to scan the reference dm6 Drosophila genome for the BMP-LA (GGCGCC(N5)GTAT) motif. Base-specific PhastCons scores (Siepel et al., 2005) against 27-insect species were obtained from the UCSC genome browser (https://genome.ucsc.edu/) to annotate each motif instance with evolutionary conservation scores (Supplementary file 1b).

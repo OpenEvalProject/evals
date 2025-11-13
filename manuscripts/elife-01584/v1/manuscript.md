@@ -23,103 +23,760 @@
 
 ## Abstract
 
-10.7554/eLife.01584.001 Experimental study of the role of disorder in protein function is challenging. It has been proposed that proteins utilize disordered regions in the adaptive recognition of their various binding partners. However apart from a few exceptions, defining the importance of disorder in promiscuous binding interactions has proven to be difficult. In this paper, we have utilized a genetic selection that links protein stability to antibiotic resistance to isolate variants of the newly discovered chaperone Spy that show an up to 7 fold improved chaperone activity against a variety of substrates. These “Super Spy” variants show tighter binding to client proteins and are generally more unstable than is wild type Spy and show increases in apparent flexibility. We establish a good relationship between the degree of their instability and the improvement they show in their chaperone activity. Our results provide evidence for the importance of disorder and flexibility in chaperone function. DOI: http://dx.doi.org/10.7554/eLife.01584.001
+Experimental study of the role of disorder in protein function is challenging. It has been proposed that proteins utilize disordered regions in the adaptive recognition of their various binding partners. However apart from a few exceptions, defining the importance of disorder in promiscuous binding interactions has proven to be difficult. In this paper, we have utilized a genetic selection that links protein stability to antibiotic resistance to isolate variants of the newly discovered chaperone Spy that show an up to 7 fold improved chaperone activity against a variety of substrates. These “Super Spy” variants show tighter binding to client proteins and are generally more unstable than is wild type Spy and show increases in apparent flexibility. We establish a good relationship between the degree of their instability and the improvement they show in their chaperone activity. Our results provide evidence for the importance of disorder and flexibility in chaperone function.
 
 ## Introduction
 
 Despite years of intense effort, the precise mechanism by which chaperones interact with proteins to enhance their folding is not entirely clear. We reasoned that we might gain insight into this long-standing problem by isolating and characterizing chaperone variants that exhibit improved chaperone activity. A genetic selection that we had developed previously gave us a unique opportunity to pursue these aims. This selection uses a folding biosensor to directly link protein stability to antibiotic resistance. The biosensor consists of an unstable protein inserted into β-lactamase, a selectable marker that encodes penicillin resistance (Foit et al., 2009). Stabilization of the unstable protein results in higher levels of antibiotic resistance. We showed that the stabilization could be due to mutations within the unstable protein itself (Foit et al., 2009), addition of chemical chaperones to the growth media (Hailu et al., 2013), or host variants that stabilize the unstable protein (Quan et al., 2011).
 
-We isolated host variants that greatly stabilize poorly folded variants of immunity protein 7 (Im7), increasing their steady-state concentrations in the cell. We found that this stabilization occurs through the induction of a previously uncharacterized chaperone called Spy (
+We isolated host variants that greatly stabilize poorly folded variants of immunity protein 7 (Im7), increasing their steady-state concentrations in the cell. We found that this stabilization occurs through the induction of a previously uncharacterized chaperone called Spy (Quan et al., 2011). We obtained evidence that Spy acts in an ATP-independent manner to help protect bacterial cells from a number of conditions that lead to widespread protein denaturation and aggregation, such as treatment with tannin, ethanol, or butanol (Quan et al., 2011). The crystal structure of Spy shows that it forms an unusual cradle shaped dimer (Figure 1; Quan et al., 2011; Kwon et al., 2010). When we attached environmentally sensitive probes to various sites in Spy, including the concave and convex surfaces, nearly all showed substantial changes in fluorescence upon interaction with the client protein casein. These results suggest that client binding may occur over large regions of Spy, that Spy might undergo significant conformational changes upon client binding, or a combination of both (Quan et al., 2011).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig1-v1.jpg)
 
-**Figure 1.:** The majority of activity-enhancing mutations localize to areas adjacent to hydrophobic patches. (A) Surface properties of Spy. Backbone atoms are shown in white, hydrophobic side chain atoms in yellow, and polar and charged side chain atoms in blue. Black dashed lines circle the two predominant hydrophobic patches P1 and P2. (B) Sites accommodating beneficial mutations. Side chain atoms of the residues identified as mutations in the genetic selection are shown in red. Q25 is in the disordered N-terminus, which is not visible in the crystal structure. Q49L, H96L, and Q100L would expand the total hydrophobic area of P1 and P2.DOI: http://dx.doi.org/10.7554/eLife.01584.003
+**Figure 1.:** The majority of activity-enhancing mutations localize to areas adjacent to hydrophobic patches. (A) Surface properties of Spy. Backbone atoms are shown in white, hydrophobic side chain atoms in yellow, and polar and charged side chain atoms in blue. Black dashed lines circle the two predominant hydrophobic patches P1 and P2. (B) Sites accommodating beneficial mutations. Side chain atoms of the residues identified as mutations in the genetic selection are shown in red. Q25 is in the disordered N-terminus, which is not visible in the crystal structure. Q49L, H96L, and Q100L would expand the total hydrophobic area of P1 and P2.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) The minimal inhibitory concentration (MIC) of strains expressing the folding biosensor as well as the Spy variants measured in the presence of various concentrations of IPTG (0.01–0.5 mM). The MIC of penicillin V was measured by plating serially diluted cells (10−1 to 10−5 dilutions) on LB plates containing 0.5–7 mg/ml penicillin V as previously described (Foit et al., 2009). (B) The steady-state levels of different Spy variants increase upon induction with increasing amounts of IPTG (0.01–0.5 mM). (C) The steady-state levels of the Bla-Im7 L53A I54A biosensor in the presence of different Spy variants are linearly correlated with the relative MIC of the respective strains (R2 = 0.64). The data set shown here was measured when the respective co-expressed Spy variant was induced with 0.1 mM IPTG.DOI: http://dx.doi.org/10.7554/eLife.01584.004
+**Figure 1—figure supplement 1.:** (A) The minimal inhibitory concentration (MIC) of strains expressing the folding biosensor as well as the Spy variants measured in the presence of various concentrations of IPTG (0.01–0.5 mM). The MIC of penicillin V was measured by plating serially diluted cells (10−1 to 10−5 dilutions) on LB plates containing 0.5–7 mg/ml penicillin V as previously described (Foit et al., 2009). (B) The steady-state levels of different Spy variants increase upon induction with increasing amounts of IPTG (0.01–0.5 mM). (C) The steady-state levels of the Bla-Im7 L53A I54A biosensor in the presence of different Spy variants are linearly correlated with the relative MIC of the respective strains (R2 = 0.64). The data set shown here was measured when the respective co-expressed Spy variant was induced with 0.1 mM IPTG.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Thompson et al., 2002) sequence alignment of 29 Spy orthologous sequences.Residues are numbered according to the mature protein region of E. coli Spy. Short dashes indicate residues that are absent from E. coli Spy but are present in other aligned sequences. Red: basic residues K, R, and H; blue: acidic residues D and E; orange: hydrophobic residues including A, V, L, I, F, W, M, and P; black: polar uncharged residues including G, S, T, C, Y, N, and Q. Green boxes indicate the location of our Spy mutations with the original residues shown in green.DOI: http://dx.doi.org/10.7554/eLife.01584.005
+**Figure 1—figure supplement 2.:** Residues are numbered according to the mature protein region of E. coli Spy. Short dashes indicate residues that are absent from E. coli Spy but are present in other aligned sequences. Red: basic residues K, R, and H; blue: acidic residues D and E; orange: hydrophobic residues including A, V, L, I, F, W, M, and P; black: polar uncharged residues including G, S, T, C, Y, N, and Q. Green boxes indicate the location of our Spy mutations with the original residues shown in green.
 
 We decided to investigate the mechanism by which Spy interacts with proteins and learn more about Spy’s properties as a chaperone. We used a genetic selection similar to that used to discover Spy in an attempt to further enhance Spy’s chaperone properties. We have now isolated Spy variants with improved ability to stabilize a poorly folded client protein (Im7 L53A I54A) in vivo. These variants also showed improved ability to prevent the aggregation of client proteins in vitro. Many of these Spy variants contain residue substitutions that act to expand a hydrophobic region present on the protein’s concave surface. Crosslinking and hydrogen-deuterium exchange measurements suggest that this hydrophobic region is involved in client protein interaction. Our optimized Spy variants bind the client protein Im7 more tightly than wild type Spy does but are generally less stable suggesting that flexibility is important in the function of Spy as a chaperone.
 
 ## Results
 
-## Identification of Spy variants with improved ability to stabilize a poorly folded client protein
+### Identification of Spy variants with improved ability to stabilize a poorly folded client protein
 
 We expressed a protein stability biosensor in an Escherichia coli strain that co-expresses the gene for the chaperone Spy under the IPTG inducible Trc promoter. The stability biosensor consists of a tripartite fusion that contains the unstable protein Im7 L53A I54A inserted into β-lactamase under the constitutive β-lactamase promoter (Foit et al., 2009). This partially unfolded variant of Im7 was chosen because Spy overproduction is known to stabilize it in vivo (Quan et al., 2011). Increasing the expression level of the chaperone Spy by increasing IPTG concentrations results in improved penicillin resistance encoded by the β-lactamase-Im7 L53A I54A biosensor (Figure 1—figure supplement 1A,B, focus on wild-type [WT] traces [black lines]). We reasoned that if mutations in Spy increase its specific activity as a chaperone, they should also be capable of enhancing the stability of the biosensor and thereby also enhance antibiotic resistance.
 
-Our ability to link protein folding to antibiotic resistance gives us a unique opportunity to select for activity-enhancing mutations in a chaperone. Analysis of the reasons behind the improved chaperone ability of activity enhancing mutants of Spy should inform us about Spy’s catalytic mechanism and perhaps also tell us what makes for a good chaperone. We reasoned that activity-enhancing mutations would be more informative in general than those that decreased function, in part because there are a wider variety of uninteresting reasons that mutations can disrupt function such as those causing chain termination. If we succeeded at all in getting activity enhancing mutations we anticipated obtaining two types of mutations. We might obtain those that acted in a substrate specific manner that improved the action of Spy only against the substrate for which they were selected on, and variants that generally improved the activity of Spy against multiple substrates. If we succeeded in obtaining this latter type of mutations, they should be particularly informative as to what makes a protein an effective chaperone. To obtain activity-enhanced Spy variants, we used an error-prone PCR-based approach (McCullum et al., 2010) that targeted the mature protein encoding region of the spy gene on pCDFTrc-Spy to create a plasmid library of ∼106 members that contained an average of 1.2 nucleotide mutations per spy gene. This variant library was transformed into SQ2041, a spy null strain of E. coli that contains the stability biosensor (see strain list in Table 1). We plated the mutant library onto LB plates that contained 0.1 mM IPTG (to induce Spy) and 4 mg/ml penicillin, the concentration at which a strain co-expressing wild-type Spy and the biosensor (strain SQ2068) fails to grow. Using this selection approach, we isolated 65 Spy variants that, when co-expressed with the biosensor, showed improved antibiotic resistance compared to cells that co-express wild-type Spy.10.7554/eLife.01584.006Table 1.Strain listDOI: http://dx.doi.org/10.7554/eLife.01584.006StrainGenotype or relevant characteristicsSourceSQ765MG1655 (F¯ λ¯ ilvG¯ rfb-50 rph-1), ΔhsdR(Quan et al., 2011)SQ2041SQ765, ΔampC, Δspy, pBR322 bla::GSlinker Im7 L53A I54A (Foit et al., 2009)This studySQ2068SQ2041, pCDFTrc-SpyThis studyLW53SQ2041, pCDFTrc-Spy Q100LThis studyLW54SQ2041, pCDFTrc-Spy L32PThis studyLW55SQ2041, pCDFTrc-Spy F115IThis studyLW56SQ2041, pCDFTrc-Spy Q49LThis studyLW57SQ2041, pCDFTrc-Spy F115LThis studyLW58SQ2041, pCDFTrc-Spy H96LThis studyLW59SQ2041, pCDFTrc-Spy Q25RThis study
+Our ability to link protein folding to antibiotic resistance gives us a unique opportunity to select for activity-enhancing mutations in a chaperone. Analysis of the reasons behind the improved chaperone ability of activity enhancing mutants of Spy should inform us about Spy’s catalytic mechanism and perhaps also tell us what makes for a good chaperone. We reasoned that activity-enhancing mutations would be more informative in general than those that decreased function, in part because there are a wider variety of uninteresting reasons that mutations can disrupt function such as those causing chain termination. If we succeeded at all in getting activity enhancing mutations we anticipated obtaining two types of mutations. We might obtain those that acted in a substrate specific manner that improved the action of Spy only against the substrate for which they were selected on, and variants that generally improved the activity of Spy against multiple substrates. If we succeeded in obtaining this latter type of mutations, they should be particularly informative as to what makes a protein an effective chaperone. To obtain activity-enhanced Spy variants, we used an error-prone PCR-based approach (McCullum et al., 2010) that targeted the mature protein encoding region of the spy gene on pCDFTrc-Spy to create a plasmid library of ∼106 members that contained an average of 1.2 nucleotide mutations per spy gene. This variant library was transformed into SQ2041, a spy null strain of E. coli that contains the stability biosensor (see strain list in Table 1). We plated the mutant library onto LB plates that contained 0.1 mM IPTG (to induce Spy) and 4 mg/ml penicillin, the concentration at which a strain co-expressing wild-type Spy and the biosensor (strain SQ2068) fails to grow. Using this selection approach, we isolated 65 Spy variants that, when co-expressed with the biosensor, showed improved antibiotic resistance compared to cells that co-express wild-type Spy.
+
+**Table 1.**
+ Strain list
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype or relevant characteristics</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SQ765</td>
+      <td>MG1655 (F¯ λ¯ ilvG¯ rfb-50 rph-1), ΔhsdR</td>
+      <td>(Quan et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>SQ2041</td>
+      <td>SQ765, ΔampC, Δspy, pBR322 bla::GSlinker Im7 L53A I54A (Foit et al., 2009)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SQ2068</td>
+      <td>SQ2041, pCDFTrc-Spy</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LW53</td>
+      <td>SQ2041, pCDFTrc-Spy Q100L</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LW54</td>
+      <td>SQ2041, pCDFTrc-Spy L32P</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LW55</td>
+      <td>SQ2041, pCDFTrc-Spy F115I</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LW56</td>
+      <td>SQ2041, pCDFTrc-Spy Q49L</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LW57</td>
+      <td>SQ2041, pCDFTrc-Spy F115L</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LW58</td>
+      <td>SQ2041, pCDFTrc-Spy H96L</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LW59</td>
+      <td>SQ2041, pCDFTrc-Spy Q25R</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
 
 Remarkably, 48 (74%) of the isolated Spy variants contained a glutamine to leucine mutation at amino acid 100. For 20 of these variants, this alteration (Q100L) was the only mutation present, and strains expressing a Spy Q100L variant emerged from at least four independent mutagenesis and selection experiments. Other single mutations that answered the selection included Q25R, L32P, and F115I. There were also a number of other mutations (Q49L, H96L, and F115L) that were found independently 2–3 times in combination with other amino acid substitutions.
 
 To verify that these Spy mutations enhance the antibiotic resistance of the co-expressed biosensor when they are present as single mutations, we introduced the individual mutations Q25R, L32P, Q49L, H96L, Q100L, F115I, and F115L into the spy gene on the plasmid pCDFTrc-spy by site-directed mutagenesis and transformed the resulting plasmids into SQ2041, the spy knockout strain co-expressing the biosensor. All of these strains except the one containing Q49L showed improved penicillin resistance compared to strains expressing wild-type Spy at a wide range of IPTG concentrations (Figure 1—figure supplement 1A); the relative minimal inhibitory concentrations (MICs) were up to twofold higher than the MIC of cells co-expressing wild-type Spy.
 
-## Improved antibiotic resistance of Spy variants is due to enhanced chaperone activity
+### Improved antibiotic resistance of Spy variants is due to enhanced chaperone activity
 
 One simple explanation for the increased penicillin resistance observed in the mutated strains might be increased Spy levels. Such an increase could occur through translational or posttranslational effects such as an increase in Spy stability. To examine these possibilities, we measured the steady-state expression levels of Spy in these strains when induced by different IPTG concentrations. All variants exhibited Spy levels that were within 20% of wild-type except Q49L, which showed a Spy level that was half that of wild-type (Figure 1—figure supplement 1B). These results suggest that the observed increases in MIC (up to twofold) for the variant strains are not simply due to increased expression levels of the chaperone.
 
-We then measured the specific in vivo activity of our Spy variants by normalizing the maximal MIC values for penicillin V of the variant strains to the amount of Spy variant proteins found in these strains (Figure 1—figure supplement 1, ‘Materials and methods’). All strains co-expressing the selected Spy variants (including Q49L) had normalized MICs 1.4–2.2-fold higher than SQ2068 (Table 2), indicating that the variant Spy proteins have higher specific activity than wild-type Spy. Furthermore, quantitative western blots showed that the increased MICs are linearly correlated with the steady-state levels of the folding biosensor (Figure 1—figure supplement 1C).10.7554/eLife.01584.007Table 2.Properties of Spy variantsDOI: http://dx.doi.org/10.7554/eLife.01584.007Spy variantsMICnormActivity (aldolase agg. Prev)Activity (aldolase refold)Activity (α-LA agg. Prev)kon (× 105 mol−1 s−1)koff (s−1)KD (µM)Tm (°C)ΔHm (Kcal mol−1)ΔCp (Kcal K−1 mol−1)ΔGNU (25°C) (Kcal mol−1)WT11113.98 ± 0.110.456 ± 0.0111.15 ± 0.02748.1 ± 0.166.6 ± 1.50.644.24 ± 0.10Q25R1.446.90 ± 0.641.38 ± 0.312.44 ± 0.892.29 ± 0.130.198 ± 0.0050.87 ± 0.03446.3 ± 0.473.7 ± 0.80.984.20 ± 0.10L32P1.922.52 ± 0.114.85 ± 0.572.10 ± 0.741.51 ± 0.140.030 ± 0.0020.20 ± 0.00331.0 ± 0.252.1 ± 2.50.710.99 ± 0.02Q49L1.602.88 ± 0.144.25 ± 0.661.93 ± 0.662.30 ± 0.060.176 ± 0.0090.76 ± 0.01852.0 ± 0.259.9 ± 1.00.684.19 ± 0.10H96L1.622.02 ± 0.321.90 ± 0.321.64 ± 0.492.68 ± 0.140.266 ± 0.0101.00 ± 0.02250.1 ± 0.156.2 ± 3.00.713.66 ± 0.23Q100L2.191.34 ± 0.054.20 ± 0.442.12 ± 0.751.19 ± 0.130.027 ± 0.0020.23 ± 0.01353.8 ± 0.628.9 ± 1.10.232.24 ± 0.11F115L1.521.98 ± 0.324.85 ± 0.562.30 ± 0.832.73 ± 0.010.245 ± 0.0070.90 ± 0.02841.3 ± 0.256.6 ± 4.90.762.60 ± 0.22F115I1.652.21 ± 0.124.33 ± 0.492.34 ± 0.852.82 ± 0.150.328 ± 0.0171.17 ± 0.09741.7 ± 0.454.3 ± 1.50.982.43 ± 0.11ΔGNU(25°C) is the free energy of stabilization at 25°C (NU dictates the transition from folded state to unfolded state), ΔHm is the change in enthalpy at Tm which is the melting temperature and ΔCp is the change in heat capacity associated with the unfolding of the Spy variant. agg. prev: aggregation prevention. Fold activity expresses relative to WT. Values after the ± sign are standard errors.MICnorm is measured for cells (SQ2068, LW53-59) expressing the pBR322 bla::GSlinker Im7 L53A I54A plasmid and various Spy constructs. kon, koff, and KD are kinetic parameters describing the interaction between Im7 L53A I54A and the Spy variants.
+We then measured the specific in vivo activity of our Spy variants by normalizing the maximal MIC values for penicillin V of the variant strains to the amount of Spy variant proteins found in these strains (Figure 1—figure supplement 1, ‘Materials and methods’). All strains co-expressing the selected Spy variants (including Q49L) had normalized MICs 1.4–2.2-fold higher than SQ2068 (Table 2), indicating that the variant Spy proteins have higher specific activity than wild-type Spy. Furthermore, quantitative western blots showed that the increased MICs are linearly correlated with the steady-state levels of the folding biosensor (Figure 1—figure supplement 1C).
+
+**Table 2.**
+ Properties of Spy variants
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Spy variants</th>
+      <th>MICnorm</th>
+      <th>Activity (aldolase agg. Prev)</th>
+      <th>Activity (aldolase refold)</th>
+      <th>Activity (α-LA agg. Prev)</th>
+      <th>kon (× 105 mol−1 s−1)</th>
+      <th>koff (s−1)</th>
+      <th>KD (µM)</th>
+      <th>Tm (°C)</th>
+      <th>ΔHm (Kcal mol−1)</th>
+      <th>ΔCp (Kcal K−1 mol−1)</th>
+      <th>ΔGNU (25°C) (Kcal mol−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3.98 ± 0.11</td>
+      <td>0.456 ± 0.011</td>
+      <td>1.15 ± 0.027</td>
+      <td>48.1 ± 0.1</td>
+      <td>66.6 ± 1.5</td>
+      <td>0.64</td>
+      <td>4.24 ± 0.10</td>
+    </tr>
+    <tr>
+      <td>Q25R</td>
+      <td>1.44</td>
+      <td>6.90 ± 0.64</td>
+      <td>1.38 ± 0.31</td>
+      <td>2.44 ± 0.89</td>
+      <td>2.29 ± 0.13</td>
+      <td>0.198 ± 0.005</td>
+      <td>0.87 ± 0.034</td>
+      <td>46.3 ± 0.4</td>
+      <td>73.7 ± 0.8</td>
+      <td>0.98</td>
+      <td>4.20 ± 0.10</td>
+    </tr>
+    <tr>
+      <td>L32P</td>
+      <td>1.92</td>
+      <td>2.52 ± 0.11</td>
+      <td>4.85 ± 0.57</td>
+      <td>2.10 ± 0.74</td>
+      <td>1.51 ± 0.14</td>
+      <td>0.030 ± 0.002</td>
+      <td>0.20 ± 0.003</td>
+      <td>31.0 ± 0.2</td>
+      <td>52.1 ± 2.5</td>
+      <td>0.71</td>
+      <td>0.99 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Q49L</td>
+      <td>1.60</td>
+      <td>2.88 ± 0.14</td>
+      <td>4.25 ± 0.66</td>
+      <td>1.93 ± 0.66</td>
+      <td>2.30 ± 0.06</td>
+      <td>0.176 ± 0.009</td>
+      <td>0.76 ± 0.018</td>
+      <td>52.0 ± 0.2</td>
+      <td>59.9 ± 1.0</td>
+      <td>0.68</td>
+      <td>4.19 ± 0.10</td>
+    </tr>
+    <tr>
+      <td>H96L</td>
+      <td>1.62</td>
+      <td>2.02 ± 0.32</td>
+      <td>1.90 ± 0.32</td>
+      <td>1.64 ± 0.49</td>
+      <td>2.68 ± 0.14</td>
+      <td>0.266 ± 0.010</td>
+      <td>1.00 ± 0.022</td>
+      <td>50.1 ± 0.1</td>
+      <td>56.2 ± 3.0</td>
+      <td>0.71</td>
+      <td>3.66 ± 0.23</td>
+    </tr>
+    <tr>
+      <td>Q100L</td>
+      <td>2.19</td>
+      <td>1.34 ± 0.05</td>
+      <td>4.20 ± 0.44</td>
+      <td>2.12 ± 0.75</td>
+      <td>1.19 ± 0.13</td>
+      <td>0.027 ± 0.002</td>
+      <td>0.23 ± 0.013</td>
+      <td>53.8 ± 0.6</td>
+      <td>28.9 ± 1.1</td>
+      <td>0.23</td>
+      <td>2.24 ± 0.11</td>
+    </tr>
+    <tr>
+      <td>F115L</td>
+      <td>1.52</td>
+      <td>1.98 ± 0.32</td>
+      <td>4.85 ± 0.56</td>
+      <td>2.30 ± 0.83</td>
+      <td>2.73 ± 0.01</td>
+      <td>0.245 ± 0.007</td>
+      <td>0.90 ± 0.028</td>
+      <td>41.3 ± 0.2</td>
+      <td>56.6 ± 4.9</td>
+      <td>0.76</td>
+      <td>2.60 ± 0.22</td>
+    </tr>
+    <tr>
+      <td>F115I</td>
+      <td>1.65</td>
+      <td>2.21 ± 0.12</td>
+      <td>4.33 ± 0.49</td>
+      <td>2.34 ± 0.85</td>
+      <td>2.82 ± 0.15</td>
+      <td>0.328 ± 0.017</td>
+      <td>1.17 ± 0.097</td>
+      <td>41.7 ± 0.4</td>
+      <td>54.3 ± 1.5</td>
+      <td>0.98</td>
+      <td>2.43 ± 0.11</td>
+    </tr>
+  </tbody>
+</table>
+
+_ΔGNU(25°C) is the free energy of stabilization at 25°C (NU dictates the transition from folded state to unfolded state), ΔHm is the change in enthalpy at Tm which is the melting temperature and ΔCp is the change in heat capacity associated with the unfolding of the Spy variant. agg. prev: aggregation prevention. Fold activity expresses relative to WT. Values after the ± sign are standard errors.MICnorm is measured for cells (SQ2068, LW53-59) expressing the pBR322 bla::GSlinker Im7 L53A I54A plasmid and various Spy constructs. kon, koff, and KD are kinetic parameters describing the interaction between Im7 L53A I54A and the Spy variants._
 
 To test whether the Spy variants’ increased chaperone activity was general or client specific, we purified the variant proteins and tested their chaperone activity in vitro using two standard chaperone clients: reduced denatured α-lactalbumin (α-LA) and chemically denatured aldolase. In genetic selections one usually gets what you select for, thus we had anticipated that the variants we obtained would show an improved ability to refold Im7. These mutations, would at a minimum, likely to be informative about the factors involved in Spy-Im7 interactions. We however considered it unlikely that they would show generally improved chaperone activity for at least two reasons. First, in a wide variety of laboratory evolution experiments where variant enzymes are selected that show improved activity against one substrate, often though not always show decreased activity against other unrelated substrates (Goldsmith et al., 2012; Yang et al., 2013). More specifically, other efforts at improving chaperone activity, though showing some success in generating mutants that were better with the substrates they were selected on, in general showed decreased chaperone activity against other substrates (Wang et al., 2002; Aponte et al., 2010; Schweizer et al., 2011). For instance Wang et al, through the use of a multistep screening process, succeeded in isolating GroEL variants that enhanced the expression of GFP and circularly permuted versions of GFP 3-8-fold, presumably by enhancing folding of GFP in vivo. However these variants were defective in all other measures of GroEL function tested including ability to support bacterial growth at high temperature, in vivo folding of the GroEL substrate HrcA, and phage lambda and Mu growth (whose growth dependency on GroEL and GroES historically led to the naming of the GroE genes [Georgopoulos et al., 1972]). These GroEL variants in vitro were also no better than wild type GroEL in enhancing the yield of active GFP. The authors concluded that increased GFP folding of these variants ‘comes at the expense of the ability of GroEL/S to fold its natural substrates’ (Wang et al., 2002). The majority of the DnaK variants Aponte et al isolated based on an improved ability to fold an unstable variant of chloramphenicol acetyl transferase in vivo turned out to be inferior to wild type DnaK in refolding luciferase in vitro, though it needs to be mentioned that they did succeed in isolating four variants that showed a slightly improved in vitro refolding yield for luciferase ranging from 1.2 to 1.9-fold (Aponte et al., 2010). Given the apparent difficulty in isolating chaperone or enzyme variants that show generally enhanced activity against a variety of substrates, we were surprised that all 7 Spy variants that we had isolated based on their ability to fold Im7 in vivo were significantly more active in preventing aggregation of both chemically denatured α-lactalbumin and aldolase in in vitro assays. In the aldolase aggregation assay, they were 1.3–6.9-fold more active than wild type, and in the α-lactalbumin aggregation assay, they were 1.6–2.4-fold more active (Table 2). We also tested for the activity of these chaperone variants in their ability to facilitate aldolase refolding. Six of the seven of the variants were found to be more active than is wild type Spy in the range of 1.9–4.9-fold. The one exception, Q25R, was measured to marginally increase refolding yield (1.4-fold) (See Table 2). Because our Spy variants showed improved chaperone activity towards at least three client proteins (Im7, aldolase and α-lactalbumin), we called them ‘super-Spy’ variants.
 
-## Hydrophobic areas may be involved in client binding of activity-enhanced Spy variants
+### Hydrophobic areas may be involved in client binding of activity-enhanced Spy variants
 
 We mapped the activity-enhancing mutations identified in the selection onto Spy’s crystal structure and found that many of them were located close to each other. Most of them mapped immediately adjacent to the two predominant hydrophobic patches on the concave surface (P1, P2) of the cradle interior (Figure 1A,B)—the region that we had previously hypothesized might be involved in client binding (Quan et al., 2011). The most commonly observed substitutions (Q100L, which occurred in 74% of the variants, and H96L and the Q49L, which occurred in ∼5% and ∼3% of the variants, respectively) change polar or charged residues (glutamine and histidine) into the hydrophobic amino acid leucine, thereby increasing the area of the hydrophobic region.
 
 One proposed mechanism for chaperone function is via blocking hydrophobic regions present on client proteins, thereby preventing their aggregation (Hartl et al., 2011). Simple expansion of peptide-binding hydrophobic regions on our Spy variants could thus be one straightforward way to explain their improved chaperone activity. There are some expectations of this simple model:(1) chaperone variants with a larger or stronger hydrophobic patch will have enhanced affinity for client proteins, and (2) client proteins are likely to interact with regions on the 3D structure of the chaperone that are adjacent to the sites mutated in our selected Spy variants. Alternatively, the Spy mutations could increase chaperone efficacy in other less direct ways. For example, they could map to sites distant from the active site of the chaperone and exert their beneficial action through allosteric effects. To help distinguish between these possible models and to better understand how Spy interacts with its clients, we decided to map the site(s) with which Spy binds the client protein Im7. To achieve this, we:(1) examined the effects of Im7 binding on hydrogen-deuterium exchange in Spy, (2) investigated the proteolytic sensitivity of the chaperone in the presence and absence of Im7, and (3) crosslinked Spy to its client.
 
-## Hydrogen-deuterium exchange identifies Spy residues involved in client binding
+### Hydrogen-deuterium exchange identifies Spy residues involved in client binding
 
-Hydrogen-deuterium exchange at individual peptide bond amides is determined by the protection of amides from solvent, either due to maintenance of secondary and/or tertiary structure or client binding. To ascertain the effects of client protein binding on deuterium exchange, we compared the level of hydrogen-deuterium exchange of free Spy with that of a Spy-Im7 complex using a mass spectrometry approach. We incubated Spy with a 40-amino acid peptide derived from Im7 L53A I54A (residues 7–45), which binds Spy with a 2.6 µM KD (see ‘Materials and methods’ for details of peptide generation and selection). Using 10s exchange times, we obtained evidence that ∼10 Spy amides become more protected upon Spy-Im7 complex formation compared to free Spy (
+Hydrogen-deuterium exchange at individual peptide bond amides is determined by the protection of amides from solvent, either due to maintenance of secondary and/or tertiary structure or client binding. To ascertain the effects of client protein binding on deuterium exchange, we compared the level of hydrogen-deuterium exchange of free Spy with that of a Spy-Im7 complex using a mass spectrometry approach. We incubated Spy with a 40-amino acid peptide derived from Im7 L53A I54A (residues 7–45), which binds Spy with a 2.6 µM KD (see ‘Materials and methods’ for details of peptide generation and selection). Using 10s exchange times, we obtained evidence that ∼10 Spy amides become more protected upon Spy-Im7 complex formation compared to free Spy (Figure 2—figure supplement 1A). Substantial changes in protection were mapped to the residues located in N- and C-terminal regions of Spy (Figure 2—figure supplement 1B). We were able to localize the improved Spy protection in the presence of client to several specific residues: T5, H16, A37, Q114, F115, F119, and E125. The protection includes not only the flexible N and C termini (residues 1–28 and 125–138), which are not present in the crystal structure, but extends into the α1 and α4 helices as well (Figure 2). Increased protection from hydrogen-deuterium exchange in these regions could possibly indicate involvement of these Spy residues in the interaction with Im7 or could imply the folding of these flexible regions upon client binding, or a combination of both.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig2-v1.jpg)
 
-**Figure 2.:** Hydrogen atoms on the backbone amide bond that are protected upon addition of Im7 7-45 are shown as magenta spheres. Peptide bonds of Spy protected from trypsin upon addition of Im7 L53A I54A are shown as yellow and blue spheres, with yellow representing carbon atoms and blue representing nitrogen atoms.DOI: http://dx.doi.org/10.7554/eLife.01584.008
+**Figure 2.:** Hydrogen atoms on the backbone amide bond that are protected upon addition of Im7 7-45 are shown as magenta spheres. Peptide bonds of Spy protected from trypsin upon addition of Im7 L53A I54A are shown as yellow and blue spheres, with yellow representing carbon atoms and blue representing nitrogen atoms.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A)The hydrogen-deuterium exchange pattern for free Spy (black) differs from that observed for the Spy-Im77-45 complex (red). The complex shows increased protection against exchange compared to free Spy. Representative c- and z- ion series observed for Spy and Spy-Im7 7-45 indicate that there is a significant difference in exchange within the N- and C-terminal regions. (B) Differential deuteration plot of Spy and Spy-Im7 7-45 residues based on mass differences between pairs of corresponding c- (open circles) and z- (closed circles) fragment ions of Spy and Spy-Im7 7-45. Most of the protection changes between Spy and Spy-Im7 7-45 can be attributed to residues located in N- and C-terminal regions. Sharp drops (c-series) or rises (z-series) on the plot indicate Spy residues that form new hydrogen bonding upon complex formation with Im7.DOI: http://dx.doi.org/10.7554/eLife.01584.009
+**Figure 2—figure supplement 1.:** (A)The hydrogen-deuterium exchange pattern for free Spy (black) differs from that observed for the Spy-Im77-45 complex (red). The complex shows increased protection against exchange compared to free Spy. Representative c- and z- ion series observed for Spy and Spy-Im7 7-45 indicate that there is a significant difference in exchange within the N- and C-terminal regions. (B) Differential deuteration plot of Spy and Spy-Im7 7-45 residues based on mass differences between pairs of corresponding c- (open circles) and z- (closed circles) fragment ions of Spy and Spy-Im7 7-45. Most of the protection changes between Spy and Spy-Im7 7-45 can be attributed to residues located in N- and C-terminal regions. Sharp drops (c-series) or rises (z-series) on the plot indicate Spy residues that form new hydrogen bonding upon complex formation with Im7.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** The susceptibility of Spy's lysine and arginine residues to digestion by trypsin was measured in the presence or absence of Im7 L53A I54A. Protein samples were incubated with trypsin at a constant 100:1 mass ratio (protein: protease). At various times, aliquots were withdrawn, quenched, and analyzed by mass spectrometry. The residue numbers of trypsin-cleavable sites are shown along with their location in Spy's secondary structure (indicated by the cartoon). The bars indicate the time at which cleavage at that residue took place. A missing bar indicates that cleavage was not seen within the 8-min time frame. The unstructured termini are more accessible to trypsin in general, and many sites show apparent increased digestion in the presence of client compared to Spy alone. The interpretation of increased cleavage of these sites is not straightforward. The increased digestion might reflect some real structural rearrangement in Spy upon client binding so that these residues are more exposed to trypsin. Alternatively, they may not be involved in substrate binding and their increased digestion might be an artifact due to a higher total mass of trypsin, which was used to accommodate the addition of client. We were not able to distinguish these two possibilities. On the other hand, the sites showed decreased cleavage despite an increased amount of trypsin are more easily interpreted. Decreased cleavage suggests that they are protected, either by the substrate protein, or by other regions in Spy, which further implies a conformational change upon substrate binding. Cleavage at residues 61, 84, 102, 113, and 122 (circled) is significantly delayed when the client Im7 L53A I54A is present. We conclude that R61, K84, K102, K113, and R122 are sites but not necessarily the only sites affected by the binding events.DOI: http://dx.doi.org/10.7554/eLife.01584.010
+**Figure 2—figure supplement 2.:** The susceptibility of Spy's lysine and arginine residues to digestion by trypsin was measured in the presence or absence of Im7 L53A I54A. Protein samples were incubated with trypsin at a constant 100:1 mass ratio (protein: protease). At various times, aliquots were withdrawn, quenched, and analyzed by mass spectrometry. The residue numbers of trypsin-cleavable sites are shown along with their location in Spy's secondary structure (indicated by the cartoon). The bars indicate the time at which cleavage at that residue took place. A missing bar indicates that cleavage was not seen within the 8-min time frame. The unstructured termini are more accessible to trypsin in general, and many sites show apparent increased digestion in the presence of client compared to Spy alone. The interpretation of increased cleavage of these sites is not straightforward. The increased digestion might reflect some real structural rearrangement in Spy upon client binding so that these residues are more exposed to trypsin. Alternatively, they may not be involved in substrate binding and their increased digestion might be an artifact due to a higher total mass of trypsin, which was used to accommodate the addition of client. We were not able to distinguish these two possibilities. On the other hand, the sites showed decreased cleavage despite an increased amount of trypsin are more easily interpreted. Decreased cleavage suggests that they are protected, either by the substrate protein, or by other regions in Spy, which further implies a conformational change upon substrate binding. Cleavage at residues 61, 84, 102, 113, and 122 (circled) is significantly delayed when the client Im7 L53A I54A is present. We conclude that R61, K84, K102, K113, and R122 are sites but not necessarily the only sites affected by the binding events.
 
-## Limited proteolysis reveals potential Im7 binding sites in Spy
+### Limited proteolysis reveals potential Im7 binding sites in Spy
 
 As a complementary approach to probe the Im7 binding site in Spy, we used a limited proteolysis assay with a mass spectrometric readout to characterize the exposed and buried regions in Spy before and after Im7 binding as suggested by their accessibility to the protease trypsin. Proteolytic sites in Spy that show altered trypsin susceptibility may either be directly involved in Im7 binding or be near the Im7 binding site. Note that it is also possible that Im7 binding induces a significant conformational change or change in flexibility in Spy that alters the trypsin susceptibility of certain residues. In the absence of Im7, the flexible N terminus and to a lesser extent the flexible C terminus of Spy are more accessible to trypsin than the structured regions (Figure 2—figure supplement 2). In the presence of Im7, a number of sites including R61, K84, K102, K113, and R122 show significant protection compared to free Spy (Figure 2). Notably, changes in trypsin susceptibility occur on both the inside and outside of the cradle due to the thinness of the Spy molecule. These susceptibility changes suggest that either client binding occurs over large portions of Spy or that client binding involves major conformational changes or changes in flexibility, or a combination of these factors. Combining these observations with the deuterium exchange results suggests that Im7 peptide binding affects a relative large area on the Spy surface, especially the rim regions (α4 helix and the N-terminus of the α2’ helix) and the tips (N-terminus of the α1 helix, C-terminus of the α3 helix, and the N-terminus of the α4 helix) of the Spy cradle (Figure 2).
 
-## Crosslinking reveals key residues directly involved in interactions with client
+### Crosslinking reveals key residues directly involved in interactions with client
 
 To further map the position of the client-binding site on Spy, we performed crosslinking analysis. Crosslinking provides information about the distances between two cross-linked residues as determined by the length of the spacer in the crosslinking reagent. Identification of the crosslinked sites on a protein complex thus provides spatial information and distance constraints for the two amino acid residues that are crosslinked.
 
-We performed crosslinking experiments on Spy and the peptide composed of residues 7-45 from Im7. Crosslinking was done using our recently developed isotopically-coded collision-induced dissociation CID-cleavable affinity-purifiable amine-reactive 14 Å length crosslinker CyanurBiotinDimercaptoPropionylSuccinimide (CBDPS-H8/D8) (
+We performed crosslinking experiments on Spy and the peptide composed of residues 7-45 from Im7. Crosslinking was done using our recently developed isotopically-coded collision-induced dissociation CID-cleavable affinity-purifiable amine-reactive 14 Å length crosslinker CyanurBiotinDimercaptoPropionylSuccinimide (CBDPS-H8/D8) (Petrotchenko et al., 2011) and the newly developed azidobenzoicacidsuccinimide (ABAS-12C6/13C6), an isotopically-coded photo-reactive 7 Å length crosslinker. Given the relatively long span length of the CBDPS crosslinkers and the flexibility of the crosslinked side chains, we were not surprised to find multiple CBDPS Lys–Lys crosslinks (Figure 3; Table 3). The most frequently crosslinked residues are K18 and K20 on the unstructured N terminus of Spy. T5 and H16 in this region are also implicated in peptide binding through changes in deuterium protection, suggesting that this flexible N terminus of Spy might be involved in client interaction.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig3-v1.jpg)
 
-**Figure 3.:** Spy residues that were found crosslinked to Im7 7-45 peptide are shown in green. Crosslinking with CBDPS-H8/D8 implies a short distance between the N terminus of Im7 and Spy residues; these include Spy K20, K39, K47, K54, K130, and K132. Residues that can be crosslinked with CBDPS also include Spy K18 to Im7 K20, Spy K20 to Im7 K20, and Spy K30 to Im7 K43. Using ABAS, we identified crosslinking between the N terminus of Spy and E21 of Im7. Zero-length crosslinking using PICUP and EDC reagents identified contacts between Spy Y104 and Im7 Y10, and Spy K39 and Im7 E12, respectively. A summary of all identified crosslinks is provided in Table 3.DOI: http://dx.doi.org/10.7554/eLife.01584.011
+**Figure 3.:** Spy residues that were found crosslinked to Im7 7-45 peptide are shown in green. Crosslinking with CBDPS-H8/D8 implies a short distance between the N terminus of Im7 and Spy residues; these include Spy K20, K39, K47, K54, K130, and K132. Residues that can be crosslinked with CBDPS also include Spy K18 to Im7 K20, Spy K20 to Im7 K20, and Spy K30 to Im7 K43. Using ABAS, we identified crosslinking between the N terminus of Spy and E21 of Im7. Zero-length crosslinking using PICUP and EDC reagents identified contacts between Spy Y104 and Im7 Y10, and Spy K39 and Im7 E12, respectively. A summary of all identified crosslinks is provided in Table 3.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.01584.012
+**Table 3.**
+ Spy-Im7 crosslinks
 
-The shorter the crosslinking reagent, the more precise and definitive the structural information that crosslinking analysis can provide. To obtain such short-distance constraints for the Spy-Im7 complex, we additionally performed crosslinking using two zero-length crosslinking reactions: tyrosine reactive, Photo-Induced Cross-Linking of Unmodified Proteins (PICUP) (
+
+<table>
+  <thead>
+    <tr>
+      <th>Mass (Da)</th>
+      <th>Rt (min)</th>
+      <th>Δ (ppm)</th>
+      <th>Pr 1</th>
+      <th>S</th>
+      <th>E</th>
+      <th>Res</th>
+      <th></th>
+      <th>Sequence*</th>
+      <th></th>
+      <th>Pr2</th>
+      <th>S</th>
+      <th>E</th>
+      <th>Res</th>
+      <th></th>
+      <th>Sequence*</th>
+      <th></th>
+      <th>CL</th>
+      <th>Enz</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1853.87609</td>
+      <td>16.47</td>
+      <td>0.4</td>
+      <td>Spy</td>
+      <td>-</td>
+      <td>12</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SADTTTAAPADAK†</td>
+      <td>P</td>
+      <td>Im7</td>
+      <td>21</td>
+      <td>24</td>
+      <td>21</td>
+      <td>K</td>
+      <td>EIEK</td>
+      <td>E</td>
+      <td>ABAS</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>1835.77969</td>
+      <td>20.77</td>
+      <td>0.6</td>
+      <td>Spy</td>
+      <td>15</td>
+      <td>18</td>
+      <td>18</td>
+      <td>M</td>
+      <td>MHHK</td>
+      <td>G</td>
+      <td>Im7</td>
+      <td>20</td>
+      <td>25</td>
+      <td>20</td>
+      <td>L</td>
+      <td>KEIEKE</td>
+      <td>N</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>1447.60195</td>
+      <td>22.43</td>
+      <td>0.6</td>
+      <td>Spy</td>
+      <td>16</td>
+      <td>18</td>
+      <td>18</td>
+      <td>M</td>
+      <td>HHK</td>
+      <td>G</td>
+      <td>Im7</td>
+      <td>20</td>
+      <td>23</td>
+      <td>20</td>
+      <td>L</td>
+      <td>KEIE</td>
+      <td>K</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>1704.73954</td>
+      <td>19.18</td>
+      <td>0.5</td>
+      <td>Spy</td>
+      <td>16</td>
+      <td>18</td>
+      <td>18</td>
+      <td>M</td>
+      <td>HHK</td>
+      <td>G</td>
+      <td>Im7</td>
+      <td>20</td>
+      <td>25</td>
+      <td>20</td>
+      <td>L</td>
+      <td>KEIEKE</td>
+      <td>N</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>2328.05587</td>
+      <td>21.48</td>
+      <td>1</td>
+      <td>Spy</td>
+      <td>16</td>
+      <td>24</td>
+      <td>20</td>
+      <td>M</td>
+      <td>HHKGKFGPH</td>
+      <td>Q</td>
+      <td>Im7</td>
+      <td>20</td>
+      <td>25</td>
+      <td>20</td>
+      <td>L</td>
+      <td>KEIEKE</td>
+      <td>N</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>1567.68178</td>
+      <td>21.40</td>
+      <td>−0.2</td>
+      <td>Spy</td>
+      <td>17</td>
+      <td>18</td>
+      <td>18</td>
+      <td>H</td>
+      <td>HK</td>
+      <td>G</td>
+      <td>Im7</td>
+      <td>20</td>
+      <td>25</td>
+      <td>20</td>
+      <td>L</td>
+      <td>KEIEKE</td>
+      <td>N</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>3673.64206</td>
+      <td>53.63</td>
+      <td>−0.4</td>
+      <td>Spy</td>
+      <td>19</td>
+      <td>30</td>
+      <td>20</td>
+      <td>K</td>
+      <td>GKFGPHQDMMFK</td>
+      <td>D</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK</td>
+      <td>E</td>
+      <td>CBDPS</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>1781.79357</td>
+      <td>34.95</td>
+      <td>−0.9</td>
+      <td>Spy</td>
+      <td>19</td>
+      <td>24</td>
+      <td>20</td>
+      <td>K</td>
+      <td>GKFGPH</td>
+      <td>Q</td>
+      <td>Im7</td>
+      <td>19</td>
+      <td>23</td>
+      <td>20</td>
+      <td>L</td>
+      <td>LKEIE</td>
+      <td>K</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>2038.92970</td>
+      <td>31.40</td>
+      <td>−0.1</td>
+      <td>Spy</td>
+      <td>19</td>
+      <td>24</td>
+      <td>20</td>
+      <td>K</td>
+      <td>GKFGPH</td>
+      <td>Q</td>
+      <td>Im7</td>
+      <td>19</td>
+      <td>25</td>
+      <td>20</td>
+      <td>L</td>
+      <td>LKEIEKE</td>
+      <td>N</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>1925.84667</td>
+      <td>28.32</td>
+      <td>−0.6</td>
+      <td>Spy</td>
+      <td>19</td>
+      <td>24</td>
+      <td>20</td>
+      <td>K</td>
+      <td>GKFGPH</td>
+      <td>Q</td>
+      <td>Im7</td>
+      <td>20</td>
+      <td>25</td>
+      <td>20</td>
+      <td>L</td>
+      <td>KEIEKE</td>
+      <td>N</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>1377.61083</td>
+      <td>33.10</td>
+      <td>0.3</td>
+      <td>Spy</td>
+      <td>29</td>
+      <td>31</td>
+      <td>30</td>
+      <td>M</td>
+      <td>FKD</td>
+      <td>L</td>
+      <td>Im7</td>
+      <td>42</td>
+      <td>45</td>
+      <td>43</td>
+      <td>F</td>
+      <td>VKIT</td>
+      <td>-</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>3793.80025</td>
+      <td>56.15</td>
+      <td>−0.5</td>
+      <td>Spy</td>
+      <td>31</td>
+      <td>43</td>
+      <td>39</td>
+      <td>K</td>
+      <td>DLNLTDAQKQQIR</td>
+      <td>E</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK†</td>
+      <td>E</td>
+      <td>CBDPS</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>3266.68723</td>
+      <td>45.13</td>
+      <td>1.1</td>
+      <td>Spy</td>
+      <td>31</td>
+      <td>43</td>
+      <td>39</td>
+      <td>K</td>
+      <td>DLNLTDAQKQQIR</td>
+      <td>E</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>12</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK</td>
+      <td>E</td>
+      <td>EDC</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>3112.43551</td>
+      <td>53.53</td>
+      <td>0.1</td>
+      <td>Spy</td>
+      <td>44</td>
+      <td>50</td>
+      <td>47</td>
+      <td>R</td>
+      <td>EIMKGQR</td>
+      <td>D</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK</td>
+      <td>E</td>
+      <td>CBDPS</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>3649.69333</td>
+      <td>51.73</td>
+      <td>−0.7</td>
+      <td>Spy</td>
+      <td>51</td>
+      <td>61</td>
+      <td>54</td>
+      <td>R</td>
+      <td>DQMKRPPLEER</td>
+      <td>R</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK</td>
+      <td>E</td>
+      <td>CBDPS</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>1838.84488</td>
+      <td>31.50</td>
+      <td>0.5</td>
+      <td>Spy</td>
+      <td>54</td>
+      <td>61</td>
+      <td>54</td>
+      <td>M</td>
+      <td>KRPPLEER</td>
+      <td>R</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>8</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SIS</td>
+      <td>D</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>2958.53428</td>
+      <td>48.48</td>
+      <td>0.1</td>
+      <td>Spy</td>
+      <td>103</td>
+      <td>112</td>
+      <td>104</td>
+      <td>K</td>
+      <td>IYNILTPEQK</td>
+      <td>K</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>10</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK</td>
+      <td>E</td>
+      <td>PICUP</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>1699.77183</td>
+      <td>31.88</td>
+      <td>−0.3</td>
+      <td>Spy</td>
+      <td>123</td>
+      <td>130</td>
+      <td>130</td>
+      <td>R</td>
+      <td>LTERPAAK</td>
+      <td>G</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>8</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SIS</td>
+      <td>D</td>
+      <td>CBDPS</td>
+      <td>PK</td>
+    </tr>
+    <tr>
+      <td>2822.33254</td>
+      <td>55.33</td>
+      <td>−0.5</td>
+      <td>Spy</td>
+      <td>127</td>
+      <td>132</td>
+      <td>130</td>
+      <td>R</td>
+      <td>PAAKGK</td>
+      <td>M</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK</td>
+      <td>E</td>
+      <td>CBDPS</td>
+      <td>Tr</td>
+    </tr>
+    <tr>
+      <td>3055.37181</td>
+      <td>57.27</td>
+      <td>−1.6</td>
+      <td>Spy</td>
+      <td>131</td>
+      <td>138</td>
+      <td>132</td>
+      <td>K</td>
+      <td>GKMPATAE</td>
+      <td>-</td>
+      <td>Im7</td>
+      <td>-</td>
+      <td>20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>SISDYTEAEFVQLLK</td>
+      <td>E</td>
+      <td>CBDPS</td>
+      <td>Tr</td>
+    </tr>
+  </tbody>
+</table>
+
+_Rt: retention time; Δ: mass error for crosslink assignments; Pr: protein; S, E: starting and ending amino acid residues (sequence numbers) of the crosslinked peptides, respectively; Res: crosslinked residue (sequence number) within corresponding peptide; CL: crosslinking reagent used; Enz: digestion enzyme used. The crosslinked residues are bolded and underlined in the sequences.*The residues shown before and after the sequences are the preceding and following residues of the peptide sequence. They are shown to illustrate digest specificity.†The N-terminal serine was introduced from the Sumo fusion constructs, which were used for Spy or Im7 purification (Quan et al., 2011). The symbol ‘−’ is used to indicate this N-terminal serine._
+
+The shorter the crosslinking reagent, the more precise and definitive the structural information that crosslinking analysis can provide. To obtain such short-distance constraints for the Spy-Im7 complex, we additionally performed crosslinking using two zero-length crosslinking reactions: tyrosine reactive, Photo-Induced Cross-Linking of Unmodified Proteins (PICUP) (Bitan et al., 2001) and carboxyl/amine reactive 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC). Using these zero-length reagents, we were able to confidently detect and identify additional short distance Spy-Im7 crosslinks between Y104 of Spy and Y10 of Im7, and between K39 of Spy and E12 of Im7 (Table 3; Figure 4). Notably, nearly all crosslinks identified in all four crosslinking reactions occurred on the concave side of Spy, with a few occurring on the rim of the cradle (Figure 3). Essentially no crosslinks were obtained on the convex side of Spy despite the abundance of lysines on the convex side (Figure 3—figure supplement 1), providing evidence that peptide binding occurs on the interior concave surface of the Spy homodimer (Figure 3). The zero-length PICUP crosslinks to Y104 independently suggests that the concave surface is the interface at which Im7 binds.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig4-v1.jpg)
 
-**Figure 4.:** Mutations that increase the specific activity of Spy are shown in red. Residues on Spy that are crosslinked to Im7 residues by PICUP or EDC are shown in cyan. The enlargement shows the position of residues Q49, H96, and Q100. Mutating these residues to leucine increases the hydrophobic interaction with Y10, F15, and I44 on Im7.DOI: http://dx.doi.org/10.7554/eLife.01584.014
+**Figure 4.:** Mutations that increase the specific activity of Spy are shown in red. Residues on Spy that are crosslinked to Im7 residues by PICUP or EDC are shown in cyan. The enlargement shows the position of residues Q49, H96, and Q100. Mutating these residues to leucine increases the hydrophobic interaction with Y10, F15, and I44 on Im7.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** The average 1HN chemical shift (7.91 ppm) is substantially shifted upfield from the expected random coil value for this sequence (8.14 ppm) (Wang and Jardetzky, 2002). This difference verifies that the αhelical nature of Im7 is at least partially maintained in this fragment, suggesting that the αhelical model of Im7 7-45 used in the docking procedure is valid.DOI: http://dx.doi.org/10.7554/eLife.01584.015
+**Figure 4—figure supplement 1.:** The average 1HN chemical shift (7.91 ppm) is substantially shifted upfield from the expected random coil value for this sequence (8.14 ppm) (Wang and Jardetzky, 2002). This difference verifies that the αhelical nature of Im7 is at least partially maintained in this fragment, suggesting that the αhelical model of Im7 7-45 used in the docking procedure is valid.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** (A) The electrostatic potential of Spy mapped onto its solvent accessible surface. The surface is colored according to its electrostatic potential calculated with the Adaptive Poisson-Boltzmann Solver (APBS) plugin in Pymol (Baker et al., 2001). Red indicates a more negative potential (−10 kTe−1) and blue a more positive potential (+10 kTe−1). The Im7 7-45 peptide (cyan ribbon) is shown docked into the pocket of Spy. The polar and acidic residues in Im7 as well as the location of the ‘P1’ and ‘P2’ hydrophobic patches of Spy are labeled. The Poisson-Boltzmann (PB) calculation was performed using the PARSE force field for the atomic charges and radii that is available with the PDB2PQR server (http://nbcr-222.ucsd.edu/pdb2pqr_1.8/). The charges and radii were then used as input for the APBS Pymol plugin along with the default parameters (0.15 M ion concentration, 310 K, a 1.4 Å solvent radius, and dielectric constants of 2.0 and 78.0 for the protein and solvent, respectively). A similar result is obtained when directly viewing isosurfaces through the charge distribution grid resulting from the PB calculation. The Im7 7-45 peptide (cyan ribbon) is shown docked into the positively charged concave surface of Spy. The polar and acidic residues in Im7 are labeled. (B) E14, Q17, E21, E25 and T30 from α1 of Im7 associate with basic residues R50, R55, and R61 from Spy monomer A to form an extensive salt bridge and hydrogen-bonding network, with an extra contribution from R122’ from Spy monomer B. (C) D31, D35, and E39 on Im7 α2 are recognized by nearly the same set of basic residues, including H96’, R50’, R55’, andR61’ from Spy monomer B and R122 from Spy monomer A. (D) Residues composing the hydrophobic pocket that Y10 from Im7 is buried into are labeled. The distance between Spy Y104 and Im7 Y10 is shown. (E) Hydrophobic interaction at the N- and C-terminal tips of Im7. (F) Electrostatic interaction between Im7 Glu12 and Lys39 and Arg43 of Spy. The distance between Spy Lys39 and Im7 Glu12 is shown.DOI: http://dx.doi.org/10.7554/eLife.01584.016
+**Figure 4—figure supplement 2.:** (A) The electrostatic potential of Spy mapped onto its solvent accessible surface. The surface is colored according to its electrostatic potential calculated with the Adaptive Poisson-Boltzmann Solver (APBS) plugin in Pymol (Baker et al., 2001). Red indicates a more negative potential (−10 kTe−1) and blue a more positive potential (+10 kTe−1). The Im7 7-45 peptide (cyan ribbon) is shown docked into the pocket of Spy. The polar and acidic residues in Im7 as well as the location of the ‘P1’ and ‘P2’ hydrophobic patches of Spy are labeled. The Poisson-Boltzmann (PB) calculation was performed using the PARSE force field for the atomic charges and radii that is available with the PDB2PQR server (http://nbcr-222.ucsd.edu/pdb2pqr_1.8/). The charges and radii were then used as input for the APBS Pymol plugin along with the default parameters (0.15 M ion concentration, 310 K, a 1.4 Å solvent radius, and dielectric constants of 2.0 and 78.0 for the protein and solvent, respectively). A similar result is obtained when directly viewing isosurfaces through the charge distribution grid resulting from the PB calculation. The Im7 7-45 peptide (cyan ribbon) is shown docked into the positively charged concave surface of Spy. The polar and acidic residues in Im7 are labeled. (B) E14, Q17, E21, E25 and T30 from α1 of Im7 associate with basic residues R50, R55, and R61 from Spy monomer A to form an extensive salt bridge and hydrogen-bonding network, with an extra contribution from R122’ from Spy monomer B. (C) D31, D35, and E39 on Im7 α2 are recognized by nearly the same set of basic residues, including H96’, R50’, R55’, andR61’ from Spy monomer B and R122 from Spy monomer A. (D) Residues composing the hydrophobic pocket that Y10 from Im7 is buried into are labeled. The distance between Spy Y104 and Im7 Y10 is shown. (E) Hydrophobic interaction at the N- and C-terminal tips of Im7. (F) Electrostatic interaction between Im7 Glu12 and Lys39 and Arg43 of Spy. The distance between Spy Lys39 and Im7 Glu12 is shown.
 
-## Modeling of the Spy and Im7 7-45 complex
+### Modeling of the Spy and Im7 7-45 complex
 
 Using a hierarchical approach that consists of three steps (docking pose generation, decoy clustering, and structure refinement) (see ‘Materials and methods’), we built a tentative, theoretical model of the Spy-Im7 complex by docking the Spy structure (PDB ID: 3O39 ) with the Im7 7-45 peptide structure (modeled using I-TASSER [Zhang, 2008; Roy et al., 2010]). Note that the distance constraints we obtained from the crosslinking study were NOT applied during the docking and refinement process. However, of the top 10 models with the lowest energy scores, six fit the zero length crosslinker data (i.e., the critical constraints for the two pairs of residues that crosslinked with the zero length crosslinkers: Spy Y104 and Im7 Y10, Spy K39 and Im7 E12), with atomic contact distances ranging between 2.5 and 6.5 Å. These models are very similar with average pair-wise RMSDs of about 2 Å. Thus, the docking analysis provides evidence that the crosslinking experiments were sampling an energetically plausible complex. For further analysis, we selected the model with the smallest atomic contact distance for these two pairs of residues found to interact by zero-length crosslinkers.
 
@@ -127,35 +784,35 @@ Im7 7-45 was modeled to adopt a two-helix hairpin conformation and to fit into t
 
 The N-terminal loop of Im7 forms extensive van der Waals contacts with a cluster of hydrophobic residues at the tip of the hydrophobic patch P1 of Spy in our tentative model. The most prominent residue is Im7 Y10, which is buried into a hydrophobic pocket surrounded by L32, L34, I42, M46, I103, Y104, L107, and F115 of Spy (Figure 4—figure supplement 2D). Satisfyingly, these residues include those that make up the P1 patch shown in Figure 1 and some of the hydrophobic residues at the tip of P1 (Quan et al., 2011). The distance between Im7 Y10 and Spy Y104 is 4.5 Å in this model, consistent with the close distance constraint that was defined by the zero-length crosslinking via PICUP. Similarly, Im7 Glu12 and Spy Lys39 form a direct salt bridge, consistent with their interaction via the zero-length crosslinker EDC. This model also helps explain the effects of at least some of our beneficial Spy mutations. Polar-to-apolar Spy mutations (Q49L, H96L, Q100L) may enhance the hydrophobic interaction that Spy has with Im7 through the interaction with Y10, F15, and I44 of Im7 by expanding and partially fusing the hydrophobic patches P1 and P2 on Spy (Figures 1 and 4).
 
-## Super-Spy variants release client proteins more slowly in vitro
+### Super-Spy variants release client proteins more slowly in vitro
 
 To further understand why these super-Spy variants enhance the expression and presumably the in vivo stability of Im7 L53A I54A, we measured their interaction affinities and kinetics with Im7 L53A I54A using bio-layer interferometry (BLI). Biotinylated Im7 L53A I54A was immobilized on the streptavidin coated sensor tip. Binding of Spy to Im7 alters the thickness of the molecular layer on the tip surface, which triggers a change in the spectrum signal (Abdiche et al., 2008). Thus, we can monitor the binding in real time to measure the association and dissociation rates of the two proteins. In order to get accurate kon and koff rates we found it is vital to use a substrate that is soluble and not bound to the tip as an aggregate. Unfortunately, most chaperone substrates such as aldolase rapidly aggregate when placed under conditions where they are chaperone substrates (i.e., at least partially unfolded) making it very difficult to accurately determine kon and koff rates. Im7 L53A I54A has the very fortunate properties of being not only a clear in vivo substrate of Spy (indeed Spy was discovered by the ability it has to enhance the yield of folded Im7 L53A I54A) but also soluble in solution. This nicely behaved, soluble chaperone substrate bound to the tips in a reproducible manner and allowed us to determine the kon and koff rates for the chaperone. All of the Spy variants we tested showed smaller values for both kon and koff compared to wild-type Spy (Table 2), suggesting that they both bind and release clients more slowly. Overall, the decreases in the koff rates are more dramatic than the decreases in the kon rates (for instance, Q100L shows a ∼three-fold decrease in kon and a ∼16-fold decrease in koff). As a result, all selected Spy variants except F115I show a significantly increased apparent affinity for Im7 L53A I54A, up to 5.8 -fold. Note that Q100L, the mutation present in 74% of the variants that answered our selection, has the largest effect on both kon and koff of any of the variants tested. It is thus a good possibility that the increase in the ability of at least some of our Spy variants to stabilize Im7 in vivo is at least in part due to their increased affinity for Im7.
 
-## Super-Spy variants are thermodynamically less stable and likely more flexible than wild-type Spy
+### Super-Spy variants are thermodynamically less stable and likely more flexible than wild-type Spy
 
 Spy is a very thin molecule, almost entirely lacking a hydrophobic core. This unusually thin nature of Spy is presumably under genetic selection and of functional significance. It also may allow for conformational changes during Spy’s chaperone cycle. Consistent with this hypothesis, major changes in the fluorescence of environmentally sensitive probes attached to various locations in Spy were observed to occur upon client protein binding (Quan et al., 2011). One possibility is that our mutations act to alter the flexibility and stability of Spy and, in so doing, alter its chaperone activity.
 
-To investigate if the mutations in Spy resulted in changes in the protein’s stability, we performed thermal denaturation experiments to measure the free energy of unfolding. Five of the seven super-Spy variants were significantly less thermodynamically stable than the wild-type protein (
+To investigate if the mutations in Spy resulted in changes in the protein’s stability, we performed thermal denaturation experiments to measure the free energy of unfolding. Five of the seven super-Spy variants were significantly less thermodynamically stable than the wild-type protein (Table 2), with mutant L32P being the most destabilized (ΔΔGNU = −3.25 kcal mol−1). The Q25R and Q49L variants had stabilities that were indistinguishable from wild type. When we plotted thermodynamic stability vs in vivo chaperone activity, we found a significant (R2 = 0.46) negative correlation (Figure 5A). Thus the less thermodynamically stable the Spy protein is, the better it tends to function as a chaperone in vivo. There is also a significant correlation (R2 = 0.51) between the thermodynamic stability of these Spy variants and their KD of binding Im7 L53A I54A, with the least stable variants showing the tightest binding (Figure 5B). One possibility is that decreased stability results in increased flexibility, which may then result in improved chaperone activity by allowing for more adaptive and tighter binding to client proteins.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig5-v1.jpg)
 
-**Figure 5.:** (A) The in vivo chaperone activity of Spy variants is expressed as the normalized relative MIC of the strains expressing the variants plus the Bla-Im7 L53A I54A biosensor (SQ2068, LW53-59). (B) The binding activity of Spy variants towards Im7 L53A I54A is expressed as their dissociation constant (KD) to the client; smaller values indicate tighter binding.DOI: http://dx.doi.org/10.7554/eLife.01584.017
+**Figure 5.:** (A) The in vivo chaperone activity of Spy variants is expressed as the normalized relative MIC of the strains expressing the variants plus the Bla-Im7 L53A I54A biosensor (SQ2068, LW53-59). (B) The binding activity of Spy variants towards Im7 L53A I54A is expressed as their dissociation constant (KD) to the client; smaller values indicate tighter binding.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** The flexibility of Spy variants is interpreted as the percentage of protected protons in the deuterium exchange analysis measured at 25°C and is inversely correlated with the stability of these Spy variants in the absence of client. This correlation is abolished when Spy variants were bound to the client peptide Im7 7-45.DOI: http://dx.doi.org/10.7554/eLife.01584.018
+**Figure 5—figure supplement 1.:** The flexibility of Spy variants is interpreted as the percentage of protected protons in the deuterium exchange analysis measured at 25°C and is inversely correlated with the stability of these Spy variants in the absence of client. This correlation is abolished when Spy variants were bound to the client peptide Im7 7-45.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Typical aggregation curves of reduced unfolded α–LA in the absence or presence of wild type Spy added at four different Spy: α–LA ratios. (B) 22 Spy concentrations were used in the range of 0–2 Spy: α–LA ratios to produce a series of aggregation curves, from no inhibition to complete inhibition of aggregation. These concentrations were prepared from serial dilution of three starting concentrations. Light scattering endpoints at 300, 400, 500, and 600 s were obtained from the aggregation curves and plotted against Spy: α–LA ratios to make four standard curves. Shown in panel (B) is the standard curve generated at 400 S, which can be fit with an exponential equation: y = 0.004 + 0.108* exp(−8.46 × x).DOI: http://dx.doi.org/10.7554/eLife.01584.019
+**Figure 5—figure supplement 2.:** (A) Typical aggregation curves of reduced unfolded α–LA in the absence or presence of wild type Spy added at four different Spy: α–LA ratios. (B) 22 Spy concentrations were used in the range of 0–2 Spy: α–LA ratios to produce a series of aggregation curves, from no inhibition to complete inhibition of aggregation. These concentrations were prepared from serial dilution of three starting concentrations. Light scattering endpoints at 300, 400, 500, and 600 s were obtained from the aggregation curves and plotted against Spy: α–LA ratios to make four standard curves. Shown in panel (B) is the standard curve generated at 400 S, which can be fit with an exponential equation: y = 0.004 + 0.108* exp(−8.46 × x).
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** Six Spy concentrations were used in the range of 0–1 Spy: aldolase ratios to produce a series of aggregation curves from no inhibition to nearly complete inhibition of aggregation. All the ratios were repeated at least three times except for 0.1:1 and 1:1 which were done only twice and once respectively. A 0.3:1 ratio was chosen to evaluate the relative chaperone activity of the Spy mutants to the wild type since this ratio is locating in the middle range of the standard curve. The relative activity of the mutants was obtained by determining the average slope of the aggregation curves obtained for the mutants and interpolating this number back into the standard curve to calculate the ratio of wt Spy: aldolase that would give with an activity comparable to the mutant. All the mutants are significantly better than the wild type in preventing the aggregation of Aldolase denatured by guanidine. The calculation is diagramed in the figure for the F115I mutant. Each of the mutants were assayed at least three times. The most active mutant Q25R completely suppressed aggregation at a ratio of 0.3:1 putting it outside of the range of the standard curve, so for this mutant the assay was repeated at a ratio of 0.1:1. The fitted standard curve equation is y = 29.0861x2 − 65.0189x + 37.9414 and the R2 = 0.9967.DOI: http://dx.doi.org/10.7554/eLife.01584.020
+**Figure 5—figure supplement 3.:** Six Spy concentrations were used in the range of 0–1 Spy: aldolase ratios to produce a series of aggregation curves from no inhibition to nearly complete inhibition of aggregation. All the ratios were repeated at least three times except for 0.1:1 and 1:1 which were done only twice and once respectively. A 0.3:1 ratio was chosen to evaluate the relative chaperone activity of the Spy mutants to the wild type since this ratio is locating in the middle range of the standard curve. The relative activity of the mutants was obtained by determining the average slope of the aggregation curves obtained for the mutants and interpolating this number back into the standard curve to calculate the ratio of wt Spy: aldolase that would give with an activity comparable to the mutant. All the mutants are significantly better than the wild type in preventing the aggregation of Aldolase denatured by guanidine. The calculation is diagramed in the figure for the F115I mutant. Each of the mutants were assayed at least three times. The most active mutant Q25R completely suppressed aggregation at a ratio of 0.3:1 putting it outside of the range of the standard curve, so for this mutant the assay was repeated at a ratio of 0.1:1. The fitted standard curve equation is y = 29.0861x2 − 65.0189x + 37.9414 and the R2 = 0.9967.
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig5-figsupp4-v1.jpg)
 
-**Figure 5—figure supplement 4.:** The change in absorption at 340 nm of the aldolase substrate β-NADH upon hydrolysis by aldolase was used to determine aldolase activity. We measured the ability of Spy to refold aldolase by measuring how much aldolase activity was recovered from a denatured aldolase preparation following 5 min refolding in the presence and absence of Spy. Various concentrations of wild type Spy were first used in order to establish a standard curve. The standard curve was established by fitting all the relative refolding yields of nine different WT Spy ratios ranging from 0:1 to 1.75:1. The curve was fit using the following formula: y = 1.27711(x + 0.02196)0.18859, R² = 0.998. A Spy: aldolase ration of 0.25:1 was found to be located in the middle region of the standard curve so this amount of the Spy variants was used in order to establish if the variants were superior or inferior to wild type Spy. All were superior, although Q25R only marginally so. In order to establish activities of the Spy variants their influence on the refolding yields were related to the activity shown with wild type Spy. In the example shown 0.25:1 Spy H96L:aldolase performed as well as 0.474:1 Spy WT:aldolase, so Spy H96L is calculated to be 1.9-fold more active than is Spy WT.DOI: http://dx.doi.org/10.7554/eLife.01584.021
+**Figure 5—figure supplement 4.:** The change in absorption at 340 nm of the aldolase substrate β-NADH upon hydrolysis by aldolase was used to determine aldolase activity. We measured the ability of Spy to refold aldolase by measuring how much aldolase activity was recovered from a denatured aldolase preparation following 5 min refolding in the presence and absence of Spy. Various concentrations of wild type Spy were first used in order to establish a standard curve. The standard curve was established by fitting all the relative refolding yields of nine different WT Spy ratios ranging from 0:1 to 1.75:1. The curve was fit using the following formula: y = 1.27711(x + 0.02196)0.18859, R² = 0.998. A Spy: aldolase ration of 0.25:1 was found to be located in the middle region of the standard curve so this amount of the Spy variants was used in order to establish if the variants were superior or inferior to wild type Spy. All were superior, although Q25R only marginally so. In order to establish activities of the Spy variants their influence on the refolding yields were related to the activity shown with wild type Spy. In the example shown 0.25:1 Spy H96L:aldolase performed as well as 0.474:1 Spy WT:aldolase, so Spy H96L is calculated to be 1.9-fold more active than is Spy WT.
 
 As another measure of apparent flexibility, we performed deuterium exchange analysis on these Spy variants in the presence and absence of client. Without the Im7 7-45 peptide, the apparent flexibility of Spy variants as measured by the percentage of protected protons inversely correlates with their thermodynamic stability measured at the same temperature (25°C) (Figure 5—figure supplement 1). Note that several of the super-Spy chaperones including L32P, F115L, and F115I show either zero or a very small number of protected protons (0, 0, and 5, respectively), implying a very high degree of disorder in the absence of client proteins. On the other hand, all of our Spy variants show almost the same level of protection when the Im7 7-45 peptide is added, suggesting either that they achieve a similar level of order upon interaction with the client, or that the vast majority of Spy is directly protected via contact with Im7. These results further imply that binding to the client may induce the folding of the very unstable Spy variants such as L32P.
 
@@ -163,11 +820,11 @@ As another measure of apparent flexibility, we performed deuterium exchange anal
 
 Although molecular chaperones assist in the folding of a vast number of cellular proteins, including many that are linked to disease states, the mechanism by which they accomplish this feat is still not completely clear (Horwich et al., 2009; Kalia et al., 2010; Hartl et al., 2011). Defining the binding interface between a chaperone and a client would undoubtedly be very valuable in understanding chaperone action, but these binding sites remain poorly defined. Various regions on the small heat shock proteins, for instance, have been implicated in client binding, including both the N and C termini and sites within the core-alpha crystalline domain (Jaya et al., 2009; Basha et al., 2013). Unfortunately, we only have a few structures of chaperone-client complexes (Martinez-Hackert and Hendrickson, 2009; Zhu et al., 1996; Zahn et al., 2013; Bracher et al., 2011) and importantly, these do not resolve how a chaperone interacts throughout its cycle.
 
-To better understand how chaperones bind to proteins, we decided to take a genetic approach with the aim of improving the ability of a chaperone called Spy to protect a poorly folding protein from degradation in vivo. In our selection, we obtained several Spy variants that appear to act as improved chaperones by expanding and partially fusing two hydrophobic patches present on the interior of the cradle-like structure of Spy. By using crosslinking, proteolytic sensitivity, and deuterium protection experiments, we provide additional evidence that implicates these regions in client binding. Our super-Spy variants demonstrate tighter client binding, and we observe a correlation between the in vitro dissociation constants of these variants to the client protein Im7 L53A I54A and their ability to stabilize Im7 L53A I54A in vivo (
+To better understand how chaperones bind to proteins, we decided to take a genetic approach with the aim of improving the ability of a chaperone called Spy to protect a poorly folding protein from degradation in vivo. In our selection, we obtained several Spy variants that appear to act as improved chaperones by expanding and partially fusing two hydrophobic patches present on the interior of the cradle-like structure of Spy. By using crosslinking, proteolytic sensitivity, and deuterium protection experiments, we provide additional evidence that implicates these regions in client binding. Our super-Spy variants demonstrate tighter client binding, and we observe a correlation between the in vitro dissociation constants of these variants to the client protein Im7 L53A I54A and their ability to stabilize Im7 L53A I54A in vivo (Figure 6). This implies that Spy’s binding affinity for Im7 L53A I54A is important in determining its chaperone activity. Tighter binding could act to decrease the steady state concentration of presumably aggregation-prone or protease sensitive Im7 folding intermediates, thus increasing the Im7 level in the cell. Variants of Spy that increased the affinity of clients beyond a certain point may not be obtained by our in vivo selection because they would be expected to fail to release their clients in a timely fashion. Further increases in affinity are expected to be counterproductive. For aldolase aggregation inhibition Q25R, for instance, is the most effective, but it is only very marginally better than wild type Spy in refolding aldolase, perhaps partly because it fails to release aldolase at an optimal rate. Client and variant specific changes in affinity may explain why there appears to be no good relationship between the activity that one specific variant shows with the various specific client proteins tested.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01584/elife-01584-fig6-v1.jpg)
 
-**Figure 6.:** A linear correlation is seen between these in vitro parameters and the in vivo activity of these variants towards the same client (expressed as normalized MIC). Spy variants with better activity in vivo bind and release client slower and have an overall tighter affinity for the client.DOI: http://dx.doi.org/10.7554/eLife.01584.022
+**Figure 6.:** A linear correlation is seen between these in vitro parameters and the in vivo activity of these variants towards the same client (expressed as normalized MIC). Spy variants with better activity in vivo bind and release client slower and have an overall tighter affinity for the client.
 
 The genetic selection we performed was specifically designed to enhance the ability of Spy to stabilize a particular mutant of Im7 (Im7 L53A I54A). This selection procedure was expected to result in identifying client-optimized Spy variants specialized for the unstable Im7 L53A I54A but with lower levels of chaperone activity on other clients. A previous attempt to evolve the chaperone GroEL for instance, succeeded in generating highly client specific variants that were defective in the folding of other clients (Wang et al., 2002). We were therefore surprised, but pleased, to see that all the Spy variants appeared to function more efficiently than wild-type Spy in preventing aggregation of aldolase and α-lactalbumin in vitro.
 
@@ -179,13 +836,13 @@ If the variants we observed do generally enhance Spy’s chaperone activity, the
 
 ## Materials and methods
 
-## Spy library construction and selection
+### Spy library construction and selection
 
 Plasmid pCDFTrc-spy was used as the template for the construction of the Spy mutant library in an error-prone PCR reaction (McCullum et al., 2010). In order to introduce random mutations only into the mature protein coding region of Spy, we first introduced a BglI site between the signal sequence and the mature protein coding region of Spy and then amplified only this region using the forward primer containing the BglI site (5′CGC GGC CAA CCT GGC CCA TGC C3′) and the reverse primer bearing the EcoRV site that is located at the 3′ end of the Spy gene (5′GGC CGA TAT CCA ATT GAG ATC TGC CAT ATG GGA TCC TTA3′). The linear fragments were digested with BglI and EcoRV and then re-ligated into the pCDFTrc vector (digested with BglI and EcoRV as well). We used four different concentrations of template DNA (0.05, 0.5, 5, and 50 ng) to obtain a broad spectrum of mutation frequencies as the lower concentrations of the template are expected to give rise to higher mutation rates. The mutation rates were 1.8, 5.0, 5.3, and 4.3 mutations per 1000 nucleotides using 50, 5, 0.5, and 0.05 ng of template DNA, respectively. Sequencing of 96 random clones (without selection) revealed a broad spectrum of transition and transversion mutations with no significant nucleotide bias.
 
 We then electroporated the resulting 4 independent ligation reactions into competent cells of strain SQ765 (genotype: MG1655, ΔhsdR) (Table 1) to generate four independent mutant plasmid libraries, each containing ∼106 clones. We then extracted the plasmid from these four independent libraries that had been constructed in SQ765 and transformed the plasmids into the spy and ampC null strain SQ2041, which contains pBR322bla::GSlinkerIm7 L53A I54A. The transformants were plated onto plates containing 4 mg/ml penicillinV, supplemented by 0.1 mM IPTG to induce Spy, and incubated at 37°C overnight. We picked 159 penicillin V resistant colonies and streaked them twice to obtain single colonies. These cells were further tested for penicillin V resistance by spot titration onto plates with increasing amounts of penicillin V (3, 4, and 5 mg/ml) supplemented with 0.1 mM IPTG, using strain SQ2068 as a negative control. 65 of the 159 strains consistently showed resistance to the three penicillin V concentrations; plasmids were extracted from these 65 strains and sequenced to identify mutations in the mature protein-encoding region of Spy.
 
-## Measurement of the in vitro activity of the Spy variants
+### Measurement of the in vitro activity of the Spy variants
 
 Activities of the Spy variants were assayed for their ability to prevent the aggregation of two clients: chemically denatured aldolase and reduced denatured α-lactalbumin (α-LA), as well as their ability to assist the refolding of chemically denatured aldolase.
 
@@ -195,35 +852,35 @@ Ammonium sulfate suspension of aldolase from rabbit muscle (MP Biochemicals, San
 
 Aldolase used in the refolding assay was prepared by dissolving powdered aldolase (Cat # 0215985925, MP Biochemicals, USA) into 40 mM HEPES, 150 mM NaCl, pH7.5 buffer. Aldolase was then denatured in 40 mM HEPES pH 7.5 with 50 mM NaCl, 3 M guanidine, and 2 mM DTT at 25 µM overnight at room temperature. To initiate refolding of aldolase, denatured aldolase was diluted 100-fold into the refolding buffer (150 mM NaCl, 40 mM HEPES, 5 mM DTT, pH7.5) to a final concentration of 0.25 µM in the absence or presence of different ratios of Spy at 25°C. After 5 min, 14 µl aliquots from the refolding reaction were added into 200 µl assay buffer to test for aldolase activity at 25°C. The assay buffer contained 0.15 mM β-nicotinamide adenine dinucleotide reduced disodium salt (Sigma Aldrich, USA), 2 mM Fructose 1,6-diphosphate (Sigma Aldrich, USA), 0.18 U/ml α-glycerophosphate dehydrogenase/triosephosphate isomerase (Sigma Aldrich, USA), 150 mM NaCl and 40 mM HEPES, pH 7.5. The measurements of absorbance at 340 nm were immediately started using a Synergy HT Multi-Mode Microplate Reader (Biotek, Winooski, VT) following a 5-s shaking at medium speed. Data were collected for 5 to 10 min and the absorbance values were plotted against time to obtain a slope, which was then divided by the value corresponding to 100% activity (i.e., that of an equivalent concentration of native aldolase) to obtain the percentage of native aldolase. Using Spy (wt): aldolase ratios of 0,0.125,0.25,0.5, 0.75, 1, 1.25, 1.5, and 1.75, we obtained a standard curve shown in Figure 5—figure supplement 4 and found that the ratio of 0.25 Spy:Aldolase was located in the middle of the range. Thus we performed refolding assay at a Spy: aldolase ratio of 0.25 for all the Spy variants and calculated their relative activities in assisting aldolase refolding according to the standard curve (see Figure 5—figure supplement 4 legend for details). Every Spy mutant was measured at least three independent times and the error of the measurements and the error of fitting the standard curve were combined to give a final error.
 
-## Quantitative western blotting
+### Quantitative western blotting
 
 The steady-state expression levels of the different Spy variants and the β-lactamase-Im7 L53A I54A biosensor in strains LW53-LW59 (Table 1) were quantified by western blotting of whole cell extractions using infrared fluorescence labeled IRDye secondary antibodies. This was done after induction by various amounts of IPTG (0.01–0.5 mM) for 3 hr. IRDye 680LT goat anti-mouse secondary antibody (LI-COR Biosciences, Lincoln, NE) was used to recognize the primary antibodies, which were against either the β-lactamase portion of the biosensor or directed against Spy. As a loading control, we quantified the amount of maltose binding protein (MBP) present in the lysate using a IRDye 800CW goat anti-rabbit secondary antibody (LI-COR Biosciences) directed against MBP. 0.04% maltose was added to the medium to induce MBP expression. MBP is a periplasmic protein that is routinely used as a loading control (Raivio et al., 1999); it has the added advantage that it is not a Spy client (unpublished results). Various dilutions of the whole cell extracts (A600 = 2.5) were loaded and their intensities were plotted to quantify the level of Spy and β-lactamase-Im7 L53A I54A biosensor protein in the Spy variants.
 
-## Calculation of specific in vivo activity of Spy variants
+### Calculation of specific in vivo activity of Spy variants
 
 We performed spot titrations of strains expressing seven different super-Spy variants as well as the β-lactamase-Im7 L53A I54A biosensor onto various concentrations of penicillin V (0 through 7000 μg/ml) and IPTG (0, 0.01, 0.1, 0.2, and 0.5 mM) to quantitatively measure the minimal inhibitory concentration (MIC) they exhibited toward the β-lactam antibiotic penicillin V using the methods previously described (Foit et al., 2009). To measure the specific in vivo activity of these Spy variants, we then normalized the maximal MIC values of each strain to the levels of Spy expressed in these variants to compensate for possible differences in Spy expression. The maximal MIC values were achieved at 0.5 mM IPTG induction for all the variants except for Q49L and WT which reached a maximal MIC starting at 0.2 mM. The steady-state protein levels of each Spy variant expressed at various IPTG concentrations were measured using quantitative western blots as described above. The in vivo specific activity was obtained by calculating the ratio between the maximal MICs obtained for the variant divided by the MIC obtained for wild-type Spy when it was expressed to the same level as the variant. These values are reported as normalized MIC values (MICnorm) and are a measure of the in vivo specific activity of the Spy variants.
 
-## Hydrogen-deuterium exchange
+### Hydrogen-deuterium exchange
 
 Hydrogen-deuterium exchange of Spy and Spy-Im7 complex was performed using top-down ECD-FTICR-MS, as described previously (Pan et al., 2009, 2010; Serpa et al., 2013). This approach relies on the rapid scrambling-free fragmentation of the intact protein by electron capture dissociation (ECD). The deuteration level of each amino acid residue then can be deduced from the c- and z-ion series produced. Briefly, Spy and Im7 protein stock solutions (250-1000 µM) in 40 mM HEPES, 150 mM NaCl, pH 7.5 were diluted with 10 mM ammonium acetate to 25 µM final Spy (dimer) and 100 µM Im7. Spy-Im7 complex was preformed in a 1:4 molar ratio of Spy dimer to Im7. Spy or Spy-Im7 samples were continuously mixed from separate syringes with D2O in a 1:4 ratio (80% D2O final) via a three-way tee, which was connected to a 100 µm × 21 cm capillary, providing a labeling time of 10 s. The outflow from this capillary was mixed with a quenching solution containing 0.4% formic acid in 80% D2O from a third syringe via a second three-way tee, and injected into a Bruker 12 T Apex-Qe hybrid Fourier transform mass spectrometer (Bruker Daltonics, Billerica, MA), equipped with an Apollo II electrospray source. In this analytical format, lower deuteration levels would reflect more protection of the amide protons and formation of hydrogen bonding due to residues involvement in secondary structure elements, interaction, or shielding from the solvent. In-cell ECD fragmentation experiments were performed with an m/z 900-1200 precursor selection range using a cathode filament current of 1.2 A and a grid potential of 12 V as previously described (Serpa et al., 2013). Approximately 1200 scans were accumulated over the m/z range 250–2600, corresponding to an acquisition time of approximately 30 min for each ECD spectrum. Deuteration levels of the amino acid residues’ amide groups were determined from centroid masses of the c- and z-ion series. The analysis of the deuteration status of c- and z-ion fragment series thus allowed us to localize the residues that exhibited major differences in the protection between free Spy and Spy that is occupied by its client protein Im7.
 
-## Crosslinking
+### Crosslinking
 
 Spy-Im7 protein complex was crosslinked with CyanurBiotinDimercaptoPropionylSuccinimide (CBDPS)-H8/D8 (Creative Molecules Inc., Canada). The crosslinked proteins were digested with trypsin and proteinase K and crosslinked peptides were affinity purified with immobilized avidin, then identified by LC-MALDI MS and MS/MS. Zero-length crosslinking brings additional challenges to the mass spectrometric analysis of the crosslinks as the crosslinked peptides formed do not acquire a specific isotopic signature. To facilitate detection and identification of the Spy-Im7 zero-length crosslinks, we applied a variation of the method using 15N metabolically-labeled oligomeric proteins (Taverner et al., 2002). We used an equimolar mixture of non-labeled and 15N metabolically-labeled Im7 for crosslinking the Spy-Im7 complex. Following digestion of the crosslinked complex, every Im7 peptide and, most notably, inter-protein Spy-Im7 crosslinks were represented by a pair of light and heavy isotopic forms, derived from non-labeled and 15N-labeled Im7 peptides, respectively. Mass difference between such pairs is then determined by the number of the nitrogen atoms in the Im7 peptides. We have implemented this principle, as an additional selection criterion, into the algorithm for the automatic detection and identification of the inter-protein crosslinks in heteromeric protein complexes. Technical details are described below:
 
-## CBDPS
+#### CBDPS
 
 16 µl Spy and Im7 7-45, both 26 µM, in PBS pH 7.4, 20 mM Na2HPO4 were crosslinked with 50 µM of an equimolar mixture of light and heavy isotopic forms of CyanurBiotinDimercaptoPropionyl-Succinimide (CBDPS-H8/D8; Creative Molecules Inc.) for 30 min at 25°C. The reaction mixtures were quenched with 10 mM ammonium bicarbonate at 25°C. The empty Spy samples (Spy in solution without client) were prepared in the same manner except Im7 7-45 was absent from the reaction mixture.
 
-## ABAS
+#### ABAS
 
 84 µl Spy and Im7 7-45, both 26 µM, in PBS pH 7.4, 20 mM Na2HPO4 were crosslinked with 100 nM of an equimolar mixture of light and heavy isotopic forms of Azido Benzoic Acid Succinimide (ABAS-12C6/13C6; Creative Molecules Inc.) for 30 min at 25°C followed by 10 min UV irradiation from the top of an open 0.2 ml reaction tube with a 25W 254 nm UV lamp (∼2 cm distance). The reaction mixtures were quenched with 10 mM ammonium bicarbonate at 25°C.
 
-## PICUP
+#### PICUP
 
 Photo-Induced Cross-Linking of Unmodified Proteins (PICUP) crosslinking: 18 µl 26 µM Spy and 26 µM equimolar mixture of non-labeled and 15N metabolically-labeled Im7 7-45 in PBS pH 7.4, 20 mM Na2HPO4 were supplemented with 50 nM tris(2,2′-bipyridyl)ruthenium (II) dication and 1 mM ammonium persulfate. Crosslinking was induced by exposing the reaction mixture in a clear Eppendorf tube to 30 rapid LED flashes. The reaction mixtures were quenched with 10 mM 2-mercaptoethanol.
 
-## EDC
+#### EDC
 
 18 µl of 26 µM Spy and 26 µM equimolar mixture of non-labeled and 15N metabolically-labeled Im7 7-45 in PBS pH 7.4, 20 mM Na2HPO4 were crosslinked using 30 mM 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) for 30 min at 25°C. The reaction mixtures were quenched with 10 mM ammonium bicarbonate at 25°C.
 
@@ -235,44 +892,50 @@ Mass spectrometric analysis was carried out with a nano-HPLC system (Easy-nLC II
 
 MS data were acquired with Xcalibur (version 2.1.0.1140) with Mass Tags and Dynamic Exclusion precursor selection methods enabled in global data dependent settings. For CBDPS-H8/D8 and ABAS-12C6/13C6, mass differences between light and heavy isotopic forms of 8.05 and 6.02 Da were used in the Mass Tags setting, respectively. For PICUP and EDC experiments using 15N metabolically-labeled Im7, mass differences in the Mass Tags acquisition method were set according to all the possible nitrogen atoms in Im7 tryptic peptides. MS scans and MS/MS scans were acquired in the Orbitrap mass analyzer at 60,000 and 30,000 resolution, respectively. MS/MS fragmentation was performed by CID activation at a normalized collision energy of 35%. Data analysis was performed using DXMSMS Match of ICC-CLASS (Petrotchenko and Borchers, 2010) and 14N15N DXMSMS Match.
 
-## Bio-layer interferometry
+### Bio-layer interferometry
 
-Im7 L53A I54A was biotinylated by incubation with EZ-link NHS-biotin (Thermal Fisher Scientific) at 1:1 molar ratio (100 µM each) in the assay buffer (40 mM HEPES, 150 mM NaCl, pH7.5) for 30 min at room temperature. Then the reaction was quenched by addition of one tenth volume of 1M Tris pH7.5 and the unconjugated biotin was removed by dialyzing in the assay buffer overnight at 4°C. Binding kinetics were performed on the Octet RED system (Fortebio, Menlo Park, CA) at 25°C. The streptavidin sensors were pre-wetted in the assay buffer for 15 min before use. Spy variants were serial diluted to 2, 1, 0.5, 0.25, and 0.125 μM in a 96-well plate in the assay buffer. The binding assay contains the following steps: immobilization of the biotin-conjugated Im7 L53A I54A (10 µg/ml) for 20 min, wash for 5 min, baseline for 1 min, association for 10 min, and dissociation for 15 min. The last three steps were repeated for all the Spy concentrations. Wells with assay buffer only were used as reference wells and were subtracted from the raw data. Curve fitting was performed in Sigmaplot assuming a 1:1 binding model using the following equations for association and dissociation, respectively: y=a∗(1−e−(kobs∗t))+y0∗t and y=y0+a∗e−(koff∗t), where y0 is the constant to correct for baseline drift. The observed association rate constants (kobs) are then plotted against Spy concentrations to obtain the association rate constants (kon) according to the following equation: kobs=kon∗[Spy]+koff. The dissociation constant KD is calculated according to: KD=koffkon.
+Im7 L53A I54A was biotinylated by incubation with EZ-link NHS-biotin (Thermal Fisher Scientific) at 1:1 molar ratio (100 µM each) in the assay buffer (40 mM HEPES, 150 mM NaCl, pH7.5) for 30 min at room temperature. Then the reaction was quenched by addition of one tenth volume of 1M Tris pH7.5 and the unconjugated biotin was removed by dialyzing in the assay buffer overnight at 4°C. Binding kinetics were performed on the Octet RED system (Fortebio, Menlo Park, CA) at 25°C. The streptavidin sensors were pre-wetted in the assay buffer for 15 min before use. Spy variants were serial diluted to 2, 1, 0.5, 0.25, and 0.125 μM in a 96-well plate in the assay buffer. The binding assay contains the following steps: immobilization of the biotin-conjugated Im7 L53A I54A (10 µg/ml) for 20 min, wash for 5 min, baseline for 1 min, association for 10 min, and dissociation for 15 min. The last three steps were repeated for all the Spy concentrations. Wells with assay buffer only were used as reference wells and were subtracted from the raw data. Curve fitting was performed in Sigmaplot assuming a 1:1 binding model using the following equations for association and dissociation, respectively: $y=a∗(1−e^{−(k_{obs}∗t)})+y_{0}∗t$ and $y=y_{0}+a∗e^{−(k_{off}∗t)}$, where y0 is the constant to correct for baseline drift. The observed association rate constants (kobs) are then plotted against Spy concentrations to obtain the association rate constants (kon) according to the following equation: $k_{obs}=k_{on}∗[Spy]+k_{off}$. The dissociation constant KD is calculated according to: $KD=\frac{k_{off}}{k_{on}}$.
 
-## Limited proteolysis
+### Limited proteolysis
 
 Digestion of Spy alone (50 µM) or Spy-Im7 L53A I54A complex (50 µM each) was carried out at 1:100 mass ratio of trypsin to protein in 40 mM HEPES, 100 mM NaCl, pH 7.5 at room temperature. At different time points (0–8 min), aliquots were withdrawn and the digestion was stopped with 10% TFA. Peptides were separated by a reverse phase C18 column (Zorbax 300SB-C18, 1 × 50 mm, 3.5 µm, Agilent, Santa Clara, CA) at room temperature and then applied to a Q-TOF dual ESI LC/MS (Agilent) for identification. A 15 min linear gradient of 2–80% acetonitrile in 0.1% formic acid at a flow rate of 0.3 µl/min was used to elute the peptides. Peptide identification was performed using BioConfirm software (Agilent).
 
-## Identification of Im7 L53A I54A 7-45 peptide
+### Identification of Im7 L53A I54A 7-45 peptide
 
 To identify the minimal length peptide derived from Im7 L53A I54A that mediates the binding to Spy, we applied limited proteolysis to Im7 L53A I54A with trypsin to prepare a series of incompletely digested fragments. After quenching the digestion reaction, the peptide mixture was mixed with the N-terminal strep-tagged Spy and applied to a strep-tactin sepharose column (IBA, Germany). The complex was eluted by 2.5 mM desthiobiotin, separated by a reverse phase C18 column (Zorbax 300SB-C18, 1 × 50 mm, 3.5 µ) at room temperature, and then applied to a Q-TOF dual ESI LC/MS (Agilent) for identification. We obtained fragments 5–43, 5–70, 5–73 and 5–76 from Im7 L53A I54A. The shortest fragment (5–43) constitutes most of the α1 and α2 helices in Im7. We then screened a few constructs containing extension or deletion at the N or C termini with amino acid sequences derived from the Im7 protein to identify the most stably expressed fragment in vivo. We purified three peptides with the highest expression levels (3–45, 7–45, and 12–45) and characterized their interactions with Spy by isothermal titration calorimetry. Based on their affinities to Spy (Kd = 2.5, 2.3, 2.6, and 8 µM for the full length Im7 L53A I54A, 3–45, 7–45, and 12–45 peptide, respectively) and their expression levels, we chose the 7–45 fragment as the minimal length peptide that represents the interaction between Spy and Im7 L53A I54A.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 A 15N-HSQC experiment was performed on an Agilent 600 MHz spectrometer equipped with a triple-resonance cryoprobe. The sample contained 200 mM 15N labeled Im7 7-45 dissolved in 13 mM MES, 13 mM HEPES, 50 mM NaCl pH7.0, supplemented with 10% D2O.
 
-## Spy/Im7 L53A I54A docking
+### Spy/Im7 L53A I54A docking
 
 The B-factors of residues Phe29-Asn33 in the crystal structure of Spy (PDB ID: 3O39) are very high (>110), meaning that these residues are possibly flexible. We therefore deleted these residues from the structure before docking analysis because they limit the movable space of the Im7 peptide around the Spy structure. The 3D structure model of Im7 was obtained using the iterative threading assembly algorithm I-TASSER (Zhang, 2008; Roy et al., 2010). We also used the ab inito structure modeling algorithm QUARK (Xu and Zhang, 2012) to model the structure of Im7. Both the QUARK and I-TASSER models of Im7 contain two α-helices, but because I-TASSER modeling has a higher overall confidence score, it was used for docking.
 
 A three-step hierarchical approach was used to dock Im7 against Spy:
 
-## Generation of initial docking poses
+#### Generation of initial docking poses
 
 ZDOCK (Chen et al., 2003) was used to perform ab initio docking search in which the Spy structure was fixed and the Im7 structure was translated and rotated around the Spy structure. By default, 1000 docking decoys were generated, which were then clustered based on the distance between the geometric centers of the Im7 decoy structures using a distance cutoff of 4 Å. The top 20 docking models ranked by the docking score were selected from the biggest cluster for further analysis.
 
-## Optimization and refinement of docking poses
+#### Optimization and refinement of docking poses
 
 Starting from the top ZDOCK models, ModRefiner (Xu and Zhang, 2011) was used to refine the atomic details of structural models and to improve the steric clashes that are often found from the rigid-body docking models.
 
-## Final model selection
+#### Final model selection
 
 The final complex model was selected from the refined structures based on the energy score in ModRefiner (Xu and Zhang, 2011). The selected model has energy below −11,000. We then manually added the Lys30-Asn33 to the N-terminal ends of the Spy dimer.
 
-## Sequence alignment
+### Sequence alignment
 
 10 rounds of PSI-BLAST (Altschul et al., 1997) using the E.coli K12 spy sequence were performed to obtain 503 Spy homologous protein sequences. To separate the sequences of Spy orthologs from the sequences of their homolog, CpxP, the 503 sequences were aligned in SeaView (Gouy et al., 2010) using the built-in algorithms MUSCLE (Edgar, 2004) and MAFFT (Katoh et al., 2002), and then these results were used to construct a phylogenetic tree using MEGA5 (Tamura et al., 2011). 252 sequences were assigned to the Spy clade and the rest were assigned to the CpxP clade. The sequences were then aligned with ClustalW (Thompson et al., 2002).
 
-## Stability measurement for Spy variants
+### Stability measurement for Spy variants
 
-The thermodynamic parameters characterizing the unfolding of the Spy variants were derived from analysis of the thermal denaturation curves, which were obtained using circular dichroism measurements at 222 nm to follow unfolding. Spy variants were diluted to 6.5 μM in 10 mM sodium phosphate buffer (degassed), pH7.5 and were denatured at a heating rate of 2°C/min from 10°C to 80°C in a 1 mm path length quartz cuvette. The circular dichroism signal was monitored by a JASCO J-810 CD spectrometer (JASCO inc., Easton, MD) equipped with a Peltier thermoelectric controller. Samples were quickly cooled down to 10°C at the end of the denaturation reaction and each spectrum after renaturation was compared with the original spectrum at 10°C to check the reversibility of the denaturation reactions. All the Spy variants after renaturation gained at least 95% of the initial CD signal, indicating that the denaturation process is reversible for all the variants under the conditions we have used. Data analysis was performed in Sigmaplot according to equation II as described in the supplemental materials in (Greenfield, 2006) to obtain the melting temperature (Tm) and the enthalpy change (ΔHm) of each denaturation reaction at pH7.5. Each thermal denaturation measurement was performed three times to get the average values of ΔHm and Tm and the standard errors (Table 2). To find the heat capacity change (ΔCp) when the protein unfolds we obtained Tm and ΔHm as a function of pH by measuring the denaturation curves at a wide range of pH from 2.0 to 10.0 in 20 mM sodium phosphate buffer. We then plotted the ΔHm against Tm to yield ΔCp (Table 2), which is the slope. Finally, the unfolding free energy change ΔGNU at 25°C is calculated using the modified Gibbs-Helmholtz equation according to Grimsley et al., (2013):ΔG (T)=ΔH↓m(1−T/T↓m)−ΔC↓p[(T↓m−T)+Tln(T/T↓m)]where T = 298.15K.
+The thermodynamic parameters characterizing the unfolding of the Spy variants were derived from analysis of the thermal denaturation curves, which were obtained using circular dichroism measurements at 222 nm to follow unfolding. Spy variants were diluted to 6.5 μM in 10 mM sodium phosphate buffer (degassed), pH7.5 and were denatured at a heating rate of 2°C/min from 10°C to 80°C in a 1 mm path length quartz cuvette. The circular dichroism signal was monitored by a JASCO J-810 CD spectrometer (JASCO inc., Easton, MD) equipped with a Peltier thermoelectric controller. Samples were quickly cooled down to 10°C at the end of the denaturation reaction and each spectrum after renaturation was compared with the original spectrum at 10°C to check the reversibility of the denaturation reactions. All the Spy variants after renaturation gained at least 95% of the initial CD signal, indicating that the denaturation process is reversible for all the variants under the conditions we have used. Data analysis was performed in Sigmaplot according to equation II as described in the supplemental materials in (Greenfield, 2006) to obtain the melting temperature (Tm) and the enthalpy change (ΔHm) of each denaturation reaction at pH7.5. Each thermal denaturation measurement was performed three times to get the average values of ΔHm and Tm and the standard errors (Table 2). To find the heat capacity change (ΔCp) when the protein unfolds we obtained Tm and ΔHm as a function of pH by measuring the denaturation curves at a wide range of pH from 2.0 to 10.0 in 20 mM sodium phosphate buffer. We then plotted the ΔHm against Tm to yield ΔCp (Table 2), which is the slope. Finally, the unfolding free energy change ΔGNU at 25°C is calculated using the modified Gibbs-Helmholtz equation according to Grimsley et al., (2013):
+
+$$
+ΔG (T)=ΔH_{↓m}(1−T/T_{↓m})−ΔC_{↓p}[(T_{↓m}−T)+Tln(T/T_{↓m})]
+$$
+
+where T = 298.15K.

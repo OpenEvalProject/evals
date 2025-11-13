@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/002epp671 Faculty of Physics and Center for Nanoscience, Ludwig Maximilian University Munich Germany
-2. https://ror.org/04py35477 Max Planck Institute of Biochemistry Martinsried Germany
-3. https://ror.org/02feahw73 Aix Marseille University, CNRS, IBDM, Turing Centre for Living Systems Marseille France
-4. https://ror.org/03av75f26 Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
+1. Faculty of Physics and Center for Nanoscience, Ludwig Maximilian University Munich Germany ([ROR:002epp671](https://ror.org/002epp671))
+2. Max Planck Institute of Biochemistry Martinsried Germany ([ROR:04py35477](https://ror.org/04py35477))
+3. Aix Marseille University, CNRS, IBDM, Turing Centre for Living Systems Marseille France ([ROR:02feahw73](https://ror.org/02feahw73))
+4. Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
 
 † Corresponding author
 
@@ -40,17 +40,25 @@ Here, we chose the Drosophila indirect flight muscles to determine the precise t
 
 ## Results
 
-## Drosophila titin domain organisation and flight muscle isoforms
+### Drosophila titin domain organisation and flight muscle isoforms
 
 Drosophila indirect flight muscles (called flight muscles in the remainder of the article) are stiff muscles that oscillate at high frequency to power flight (Dickinson, 2006; Pringle, 1981; Schönbauer et al., 2011). The majority of this stiffness is due to Sls in flight muscles (Kulke et al., 2001). To achieve this high stiffness, a large part of the flexible spring domains encoded in both titin gene homologs sls and bent (bt; protein name: Projectin) are skipped by alternative splicing (Ayme-Southgate et al., 2005; Bullard et al., 2005; Burkart et al., 2007; Spletter et al., 2015). Older work had suggested that the most prominent Sls flight muscle isoform (also called Kettin) uses an alternative poly-A site terminating the protein after Sls-immunoglobulin (Ig) domain 35 (Bullard et al., 2005; Burkart et al., 2007). However, more recent systematic transcriptomics and splice-site annotation data from dissected flight muscles, as well as expression of large genomic Sls-GFP tagged transgenes, showed that the usage of this early poly-A site is largely restricted to leg muscles and hardly present in flight muscles (Spletter et al., 2015; Spletter et al., 2018). To identify the most prominent Sls and Projectin protein isoforms in mature flight muscles, we carefully reanalysed the published transcriptomics and splice data (Spletter et al., 2015; Spletter et al., 2018). We verified that in both genes the flexible PEVK spring domains are largely spliced out in adult flight muscles; however, their more 3′-located exons are present at least in some longer isoforms (Figure 1—figure supplement 1A and B). This predicts an Sls isoform containing the C-terminal five fibronectin (Fn) domains and a Projectin isoform containing a long stretch of Ig-Fn super-repeats and a kinase domain close to its C-terminus being present in flight muscles (Figure 1—figure supplement 1A and B).
 
-## Sallimus and Projectin nanobodies in flight muscles
+### Sallimus and Projectin nanobodies in flight muscles
 
 In order to verify the expression and to determine the precise location of the different Sls domains in adult flight muscle sarcomeres, we selected three different regions in Sls, against which we recently generated nanobodies: Sls-Ig13/14, Sls-Ig49/50, and Sls-Ig51/Fn2, the first being relatively close to the N-terminus, the other two being close to the C-terminus of the Sls flight muscle isoform (Loreau et al., 2023; Figure 1A). Similarly, we selected two regions in Projectin close to its N-terminus (Proj-Ig5-8 and Proj-Fn1/2) and two regions close to its C-terminus (Proj-Ig27-Fn35 and Proj-kinase domain) (Figure 1C). The generation of these nanobodies as well as their specificity was documented in an accompanying manuscript (Loreau et al., 2023).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig1-v3.jpg)
+
+**Figure 1.:** (A, C) Sallimus (A) and Projectin (C) flight muscle protein isoforms with the domains recognised by the used nanobodies highlighted in different colours. (B, D) Single confocal sections of flight muscle sarcomeres from adult hemi-thoraces stained for actin with phalloidin (magenta) and the indicated anti-Sls or anti-Projectin nanobodies directly coupled to Alexa488 or Atto488 (green). The Z-disc is revealed by the prominent actin signal. Scale bars 5 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Genomic organisation of sallimus (A) and projectin/bent (B) genomic loci taken from FlyBase. Pink rectangles indicate exons, lines indicate introns. Above the genomic locus is the rough position of respective protein domains indicated. The domains named in grey are largely specific to leg or larval muscles and not expressed in flight muscles. This is also indicated by the prominent flight muscle-specific splice junctions indicated in grey below the genomic loci. Note that the spring-like PEVK domains in sallimus or projectin are spliced out in flight muscles. This results in the respective Sallimus and Projection domain structure of the flight muscle isoforms.
+
 In flight muscles, both N-terminal anti-Sls nanobodies, namely, Sls-Nano2 (binding Sls-Ig13/14) as well as C-terminal anti-Sls nanobodies, namely, Sls-Nano42 (binding to SlsIg51/52), result in single bands at the Z-discs when coupled to fluorescent dyes and observed with confocal microscopy (Figure 1B). Similarly, N-terminal anti-Projectin nanobodies, here Proj-Nano30 (recognising Proj-Ig5-8) and Proj-Nano29 (binding Proj-Fn1-2), each result in one band at the Z-disc (Figure 1D). In contrast, nanobodies against C-terminally located Projectin domains, here Proj-Nano33 (binding Proj-Ig27-Fn35) and Proj-Nano37 (binding the Projectin kinase domain), result in two bands at large distances from the Z-disc (Figure 1D). These data demonstrate that Projectin is present in an extended conformation, and since the flight muscle I-band extends less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), a large part of Projectin is present along the myosin filament. However, the diffraction-limited spatial resolution of a confocal microscope (about 250 nm) is not sufficient to precisely localise Sls and Projectin domains close to the Z-disc. Hence, higher spatial resolution is necessary to determine the precise architecture of Sls and Projectin within the flight muscle sarcomere.
 
-## DNA-PAINT super-resolution imaging of entire flight muscles
+### DNA-PAINT super-resolution imaging of entire flight muscles
 
 To resolve the relative localisation of Sls and Projectin, we turned our attention to super-resolution imaging with DNA-PAINT as it enables imaging at particularly high spatial resolution (Jungmann et al., 2014; Lelek et al., 2021; Schnitzbauer et al., 2017). For DNA-PAINT, nanobodies binding the protein epitope of interest need to be site-specifically conjugated to either one- or two single-stranded DNA molecules. Previously, DNA-oligos for PAINT were either coupled to antibodies via biotin-streptavidin (Jungmann et al., 2014), which is a 66 kDa tetramer and thus relatively large, or more frequently by click chemistry (Fabricius et al., 2018; Schnitzbauer et al., 2017), which comes with a number of potential disadvantages, such as a bulky hydrophobic coupling group and an initial lysine modification that might destroy the paratope. Instead, we used maleimide-coupling through ectopic cysteines at the N- and C-terminus of the nanobody (Pleiner et al., 2018; Pleiner et al., 2015), which allows a simpler workflow, analogous to direct fluorophore coupling, and protects the antigen-binding site from undesired modifications.
 
@@ -62,43 +70,71 @@ In contrast to fluorophore-maleimides, maleimide-activated oligonucleotides are 
 
 In DNA-PAINT, the necessary target blinking for localisation-based super-resolution reconstruction is achieved by the transient binding of a dye-labelled single-stranded DNA ‘imager’ strand to their target-bound complement (‘docking’ strands, Figure 3A). As imager strands are continuously replenished from solution and binding times are controllable over a wide range, a large number of photons can be detected from a single binding event, thus enabling unprecedented sub-5 nm spatial resolutions (Dai et al., 2016; Schnitzbauer et al., 2017).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig3-v3.jpg)
+
+**Figure 3.:** (A) Concept of DNA-PAINT imaging of sarcomeres labelled with an oligo-conjugated nanobody. Binding of the imager oligo to one nanobody results in a strong, detectable intensity burst (t2, blink). (B) Schematic of a mounted intact Drosophila hemi-thorax in a DNA-PAINT imaging chamber enabling total internal reflection (TIRF) illumination. Comparison of the diffraction-limited and the super-resolved result illustrated in one hemi-thorax labelled with Proj-Nano29. Note that the super-resolved image can readily resolve the two bands flanking each Z-disc. Scale bar 2 µm. (C) Automated image analysis for individual Z-discs detection (see Figure 3—figure supplement 2 and ‘Methods’ for details). Individual bands are detected automatically and their centre position is obtained using a Gaussian fit (bottom centre). The distance between the centre of bands for tens of sarcomeres from a single hemi-thorax is then reported in a histogram (bottom right). Scale bar 2 µm (top) and 0.5 µm (bottom).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schemes illustrating the different steps of sample preparation. Thorax isolation, followed by PFA fixation and hemithorax preparation. Fixed hemi-thoraces were stained with nanobodies and were mounted in a sample chamber in imager solution positioning the flight muscles close to the coverslip to enable total internal reflection (TIRF) imaging. (B) DNA-PAINT post-processing workflow. The single-molecule ‘blinking’ events were identified using a threshold detection, and the maximum is determined via a Gaussian fit. The coordinates in time and space and other localisation properties were saved in an hdf5 file. The hdf5 was then drift-corrected and rendered using Picasso render.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Individual myofibrils were manually selected using the rectangular selection tool from Picasso (Schnitzbauer et al., 2017). Scale bar 2 µm. (B) To limit localisation events arising from multiple emitters that create artefacts (Lelek et al., 2021), localisations are filtered based on the standard deviation of their Gaussian fits. Localisations kept are within a disc in the standard deviation space (sx, sy), centred on the maximum of the distribution and of radius 0.2 pixel. Scale bars 0.5 µm. (C) Individual Z-discs were automatically detected (see ‘Methods’ for details). Scale bars 2 µm. (D) Individual bands generated by the accumulation of protein epitopes were detected automatically and their centre position was obtained using a Gaussian fit. After a visual check of the automated detection result, the results were compiled for further analysis.
+
 We aimed to apply DNA-PAINT to flight muscle tissue, using hemi-thoraces of adult flies, to minimise artefacts that might be introduced by cutting out individual myofibrils. To prepare hemi-thoraces, we fixed thoraces in paraformaldehyde and then bisected them with a sharp microtome knife (Figure 3—figure supplement 1A, see ‘Methods’ for details). Then, we incubated the hemi-thoraces with oligo-coupled nanobodies and mounted them for imaging. Hemi-thoraces are very large, with a length of about 1 mm and a thickness of about 300 µm. To mount them as close as possible to the coverslip, we developed an imaging chamber that contains the imaging buffer surrounded by spacers thick enough to slightly press the flight muscles against the coverslip (Figure 3—figure supplement 1A, see ‘Methods’ for details). This enabled DNA-PAINT imaging with total internal reflection (TIRF). We imaged for 30 min per sample and obtained about 15,000 frames at an imaging rate of 10 Hz. For image reconstruction and post-processing, we used the established Picasso software (Schnitzbauer et al., 2017; Figure 3B, Figure 3—figure supplement 1B; see ‘Methods’ for details). This enabled us to resolve the two bands flanking a Z-disc with ease, which cannot be resolved in the diffraction-limited image (Figure 3B).
 
 To further refine the precision of determining the epitope positions, we have developed an image-processing pipeline that relies on an interactive selection of well-stained myofibrils in the volume of TIRF excitation (Figure 3—figure supplement 2). Next, we removed localisations arising from multiple binding events by filtering based on specific localisation parameters (see ‘Methods’ for details). Furthermore, we automatically detected the individual sarcomeric Z-discs and the respective flanking bands of the stained Sls or Projectin epitopes for all selected myofibrils. We applied a Gaussian fit to each band and determined their centre positions within the sarcomere with nanometric accuracy (Figure 3C, Figure 3—figure supplement 2). This results in an accurate location of the measured bands for each of the epitopes in every analysed sarcomere. Hence, we do not need to average across many sarcomeres to precisely localise the Sls or Projectin epitopes (Figure 3C). In conclusion, our method allows detecting individual differences in sarcomeric band positions in each sarcomere investigated down to the nanometre-scale.
 
-## Positions of Sallimus and Projectin domains within intact flight muscle at the nanometric scale
+### Positions of Sallimus and Projectin domains within intact flight muscle at the nanometric scale
 
 To precisely determine the location of Sallimus and Projectin, we applied our DNA-PAINT imaging pipeline of flight muscles to the entire Sls and Projectin nanobody toolbox (Loreau et al., 2023). In most cases, we co-stained with two nanobodies that are spaced sufficiently apart to detect the expected four bands centred around the Z-disc, even when using only a single imaging colour (Figure 4A). This allowed us to resolve the positions of Sls-Nano2 (Sls-Ig13/14) located close to the N-terminus of Sallimus and also Sls-Nano39 (Sls-Ig49/50) close to its C-terminus, which we could combine with distantly located anti-Projectin nanobodies (Figure 4A). Similarly, we imaged the N-terminally located Proj-Nano29 (Proj-Fn1/2) and Proj-Nano30 (Proj-Ig5-8), which we combined with one of the C-terminally located Proj-Nano33 (Ig27-Fn35), Proj-Nano35, or Proj-Nano37 (both Projectin kinase domain). This enabled us to locate the exact position of the different Projectin domains in sarcomeres (Figure 4A). Interestingly, all the analysed epitopes localise in similarly sharp bands in each of the sarcomeres, suggesting a very precisely aligned architecture of Sls and Projectin. The result that nanobodies recognising Sls-Ig13/14 localise 50 nm away from the centre of the Z-disc is compatible with the very N-terminus of Sls being located at the centre of the Z-disc because the additional twelve N-terminal 12 Ig domains are likely to span 48 nm (longest dimension of an Ig domain = 4 nm), whereas the N-terminus of Projectin is located around 100 nm away from the Z-disc (Proj-Ig5-8 and Proj-Fn1/2) (Figure 4A) and hence cannot be anchored directly at the Z-disc. Our distance measurements are very reproducible between samples, as shown for the different samples stained with Sls-Nano2 in Figure 4A as well as between different nanobodies that recognise neighbouring domains as shown for Proj-Nano29 and Proj-Nano30. Hence, the combination of DNA-PAINT with the oligo-labelled nanobodies works very reliably to image sarcomeres in intact flight muscle tissue.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig4-v3.jpg)
 
-**Figure 4.:** (A) Left: representative DNA-PAINT images of myofibrils stained with two different anti-Sls or anti-Projectin nanobodies labelling two epitopes and imaged with the same fluorescent imager oligo. The different Sls or Projectin nanobody combinations are indicated above each image. Middle: pseudo-coloured sum image centred around Z-discs resulting from one hemi-thorax. Right: histogram of distances between bands centred around Z-discs with the respective nanobody combinations indicated in green or magenta. The frequency (y-axis) refers to the number of Z-discs present in the respective length bins. Note that four bands can be readily distinguished for all shown nanobody combinations. The number of Z-discs scored in the shown samples are from top to bottom: 34, 59, 35, 25, 28, 28, and 63 (see Figure 4—source data 1 for the individual measurements). (B) Similar representations as in (A). However, the positions of neighbouring Sls or Projectin epitopes cannot be resolved in a single colour. Scale bar 1 µm.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Left: representative DNA-PAINT images of myofibrils stained with two different anti-Sls or anti-Projectin nanobodies labelling two epitopes and imaged with the same fluorescent imager oligo. The different Sls or Projectin nanobody combinations are indicated above each image. Middle: pseudo-coloured sum image centred around Z-discs resulting from one hemi-thorax. Right: histogram of distances between bands centred around Z-discs with the respective nanobody combinations indicated in green or magenta. The frequency (y-axis) refers to the number of Z-discs present in the respective length bins. Note that four bands can be readily distinguished for all shown nanobody combinations. The number of Z-discs scored in the shown samples are from top to bottom: 34, 59, 35, 25, 28, 28, and 63 (see Figure 4—source data 1 for the individual measurements). (B) Similar representations as in (A). However, the positions of neighbouring Sls or Projectin epitopes cannot be resolved in a single colour. Scale bar 1 µm.
 
 However, this powerful single-colour imaging method has limitations: it fails to resolve two different epitopes into distinct bands if these epitopes are located too close together to unambiguously assign each blinking event to one particular nanobody. Thus, Sls-Nano2 (Sls-Ig13/14) and Sls-Nano39 (Sls-Ig49/50) or Sls-Nano2 (Sls-Ig13/14) and Proj-Nano28 (Proj-Fn1/2) cannot be imaged together in the same sarcomere with a single colour (Figure 4B). However, quantifying the exact positions of two closely located titin domains in the same sarcomere is critical as the relative length of the flexible titin molecules may vary in individual sarcomeres. Hence, it would be important to determine the positions of two different Sls domains in the same sarcomere to unambiguously conclude about Sls length or the relative arrangement of Sls and Projectin protein domains.
 
-## Two-colour DNA-PAINT reveals a staggered organisation of Sls and Proj
+### Two-colour DNA-PAINT reveals a staggered organisation of Sls and Proj
 
 To simultaneously determine the exact positions of two epitopes, we have labelled two nanobodies each with two different oligonucleotides and imaged them with two differently labelled imager oligos in parallel to perform two-colour DNA-PAINT (see ‘Methods’). Multiplexed imaging enabled us to determine the positions of Sls-Ig13/14 (using Sls-Nano2) and Sls-Ig51-Fn2 (using Sls-Nano42) in the same sarcomere (Figure 5A). Our results verified that Sls-Ig13/14 is localised about 50 nm away from the centre of the Z-disc and that Sls-Ig51/Fn2 is about 50 nm farther towards the middle of the sarcomere (Figure 5A, Figure 5—figure supplement 1). Since the I-band of flight muscles is less than 100 nm from the Z-disc (Burkart et al., 2007; Kronert et al., 2018; Loison et al., 2018; Reedy and Beall, 1993; Szikora et al., 2020), this strongly suggests that Sls is bridging across the entire sarcomeric I-band with its N-terminus anchored within the Z-disc and its C-terminal end reaching the myosin filament. Thus, Sls could mechanically link the Z-disc to the myosin filament in the flight muscles, similar to the long vertebrate titin.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig5-v3.jpg)
+
+**Figure 5.:** (A) Left: representative DNA-PAINT image of a myofibril stained with two nanobodies labelling Sls-Ig13/14 (Sls-Nano2) and Sls-Ig51/Fn2 epitopes (Sls-Nano42). Middle: sum image centred around Z-discs resulting from one hemi-thorax. Right: histogram of distances between bands centred around Z-discs (Sls-Ig13/14 in green, Sls-Ig51/Fn2 in magenta). The frequency (y-axis) refers to the number of Z-discs present in the respective length bins (number of Z-discs scored: 14, see Figure 5—source data 1 for the respective measurements). (B). Top: representative DNA-PAINT image of a myofibril stained with two nanobodies labelling Proj-Ig5-8 (Proj-Nano30) and Proj-Fn1/2 (Proj-Nano29) epitopes, sum image, and histograms of distances between bands (Proj-Ig5-8 in green, Proj-Fn1-2 in magenta, number of Z-discs scored: 219). Bottom: representative myofibril stained for Proj-Fn1/2 (Proj-Nano29) and Proj-Ig27-Fn35 (Proj-Nano33) epitopes, sum image, and histogram of distances between bands centred around Z-discs (Proj-Fn1/2 in magenta, Proj-Ig27-Fn35 in green, number of Z-discs scored: 52) (C). Top: representative DNA-PAINT image of a myofibril stained with two nanobodies labelling SlsIg49/50 (Sls-Nano39) and Proj-Fn1/2 (Proj-Nano29) epitopes, sum image, and histogram of distances between bands centred around Z-discs (Sls-Ig49/50 in green, Proj-Fn1/2 in magenta, number of Z-discs scored: 21). Bottom: same as top for Sls-Ig51/Fn2 (Sls-Nano42) and Proj-Ig5-8 (Proj-Nano30) epitopes, sum image, histogram of distances, and plot showing the epitope positions from the Z-discs in the individual sarcomeres analysed (bottom right, Sls-Ig51/Fn2 in magenta, Proj-Ig5-8 in green, number of Z-discs scored: 45). Note that in 42 of 45 cases the Proj-Ig5-8 (green) is closer to the Z-disc than Sls-Ig51/Fn2 (magenta). Scale bar 250 nm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Distance quantifications of the dual-colour DNA-PAINT data shown in Figure 5. Plots on the left show the epitope distances from the Z-discs in each sarcomere analysed with green and magenta colours indicating the respective nanobodies used. Plots on the right display histograms plotting the distances in between the individual two nanobody epitopes in each sarcomere. These are half the values from the plots on the left, as the organisations are symmetric around the Z-discs. The frequency (y-axis) refers to the number of sarcomeres present in the respective length bins.
 
 Since we found that the N-terminus of Projectin is also about 100 nm away from the Z-disc and thus located at the beginning of the thick filament (Figure 4A), we wanted to further investigate the precise orientation of the Projectin N-terminal domains. To do so, we performed two-colour DNA-PAINT to localise Proj-Ig5/8 (with Proj-Nano30) and Pro-Fn1/2 (with Proj-Nano29) in the same sarcomere and found an average distance between the two epitopes of about 25 nm, with Proj-Ig5-8 being always closer to the Z-disc relative to Proj-Fn1/2 (Figure 5B, Figure 5—figure supplement 1). Consistently, the more C-terminally located Proj-Ig27-Fn35 epitope is located far into the myosin filament that begins at 100 nm (Szikora et al., 2020), being 350 nm away from the Z-disc (Figure 5B, Figure 5—figure supplement 1). This strongly suggests that the N-terminal part of Projectin is arranged in an extended, likely linear conformation reaching from the myosin filament into the I-band and thus running in parallel to the C-terminal domains of Sls.
 
 These findings raised an enticing hypothesis: do the extended Sls and Projectin proteins overlap at the I-band/A-band interface? To investigate this hypothesis, we performed two-colour DNA-PAINT using two pairs of nanobodies: Sls-Nano39, recognising Sls-49/50, combined with Proj-Nano29, binding Proj-Fn1/2 and Sls-Nano42, recognising Sls-Ig51-Fn2, combined with Proj-Nano30, binding Proj-Ig5/8. Interestingly, we found that in all sarcomeres measured, the Proj-Nano29 is about 15 nm farther from the Z-disc than Sls-Nano39, whereas, in 42 out of 45 sarcomeres investigated, Proj-Nano30 is on average 7–8 nm closer to the Z-disc than Sls-Nano42 (Figure 5C, Figure 5—figure supplement 1). Hence, these data revealed an interesting staggered organisation of the two overlapping ends of the linearly extended Sallimus and Projectin proteins in flight muscles.
 
-## A molecular map of the Drosophila titin homologs in flight muscle sarcomeres
+### A molecular map of the Drosophila titin homologs in flight muscle sarcomeres
 
 Our data enabled us to build a molecular map of the Drosophila titin homologs in flight muscle sarcomeres, which revealed a significant overlap of the linear Sls and Projectin proteins at the I-band/A-band interface as visualised in a ‘composite sarcomere’ reconstructed by imaging flight muscles from six different hemi-thoraces (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig6-v3.jpg)
+
+**Figure 6.:** (A) A sarcomere displayed as a composite of two summed anti-Sallimus nanobody bands (top) and four summed anti-Projectin nanobody bands (bottom), each originating from one individual hemi-thorax imaged. Note the overlay of the positions of both proteins. Scale bar is 100 nm. (B) Distribution of the average distances from the Z-disc for all Sls and Projectin epitopes measured using bootstrapping (see ‘Methods’). (C) Cartoon model of the relative arrangement of Sls and Projectin within the flight muscle sarcomere. The positions of the measured Sls and Projectin domains are highlighted in colours. The zoomed regions illustrate the suggested staggered architecture of the C-terminal Sls and the N-terminal Projectin protein parts.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79344/elife-79344-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Scatter plot of distance between bands of nanobodies used in this study versus the individual sarcomere length. Each dot corresponds to one sarcomere. The sarcomere length reported for nanobodies centred on a given Z-disc was obtained by measuring half the distance between Z-discs located directly on the left and on the right. Note that the distances between bands do not correlate with the slight variations in sarcomere length. A total of 1442 distances were quantified (see Figure 6—source data 1). Each point is obtained from three consecutive Z-discs. The first and third Z-disc result in the sarcomere length (middle of bands in the Z-disc defined the Z-disc centr, which are then used as references to measure the length of two sarcomeres – first to second and second to third – which is then divided by two to obtain the sarcomere length). The distance between bands is obtained from the second sarcomere.
 
 To precisely determine the position of all the epitopes investigated in our study, we calculated the average position using all the sarcomeres we imaged in the single- and dual-colour DNA-PAINT experiments. This strategy is valid as we found that although our mounting protocol for TIRF imaging results in a slightly variable sarcomere length of around 3.5 µm (Spletter et al., 2015), the distance between the measured epitopes is constant (Figure 6—figure supplement 1). Hence, the localisation of the different Sls and Projectin domains investigated using all sarcomeres measured resulted in a very high localisation precision with 95% confidence intervals of only 1–8 nm (Figure 6B). Pooling all data verified that the N-terminal Proj-Ig5-8 epitope is located 90 nm from the Z-disc, whereas the C-terminal Sls epitopes Sls-Ig49/50 and Sls-Ig51-Fn2 are located about 98 nm from the Z-disc. This is consistent with a staggered linear organisation of Sallimus and Projectin, which suggests an attractive mechanism how to mechanically link the sarcomeric Z-disc in insect flight muscle with the myosin filament using both titin homologs (Figure 6C).
 
 ## Discussion
 
-## Super-resolution of flight muscles with nanobodies
+### Super-resolution of flight muscles with nanobodies
 
 The value of nanobodies and other small binders is well appreciated (Harmansa and Affolter, 2018). However, most Drosophila in vivo studies have thus far heavily relied on commercially available anti-GFP nanobodies to enhance GFP fluorescence signal in various tissues, including Drosophila flight muscles (Kaya-Copur et al., 2021) or to either trap GFP-fusion proteins ectopically or to degrade them when expressed in various modified forms in vivo (Caussinus et al., 2011; Harmansa et al., 2015; Nagarkar-Jaiswal et al., 2015). Our titin nanobody toolbox (Loreau et al., 2023) enabled us now to apply DNA-PAINT super-resolution technology to image the titin nanostructure in large intact flight muscle tissue at nanometre-scale resolution.
 
 It had been shown that dye- or DNA-labelled nanobodies work well to achieve high labelling densities in cell culture (Agasti et al., 2017; Fabricius et al., 2018; Mikhaylova et al., 2015; Pleiner et al., 2015; Schlichthaerle et al., 2019). We have shown that our nanobodies are also very efficient in penetrating the large flight muscle fibres containing highly packed sarcomeres (Loreau et al., 2023), which are amongst the most protein-dense macromolecular structures in biology (Daneshparvar et al., 2020; Taylor et al., 2019). This high labelling efficiency enabled us to perform DNA-PAINT super-resolution microscopy of the large flight muscles without dissecting individual myofibrils. Such large specimens have rarely been investigated with DNA-PAINT (Cheng et al., 2021; Lelek et al., 2021). This shows that DNA-PAINT can be readily applied to super-resolve structures in large tissues if mounting and labelling protocols are optimised.
 
-## Titin nanoarchitecture in flight muscles – Do titins rule?
+### Titin nanoarchitecture in flight muscles – Do titins rule?
 
 Flight muscles are an ideal tissue to perform architectural studies of their sarcomeric components at the nanoscale because these components display an extremely high molecular order (Loison et al., 2018). This was impressively demonstrated by substructural averaging that resolved the nanostructure of myosin filaments isolated from insect flight muscles at a 7 Å resolution by cryo-electron-microscopy (Daneshparvar et al., 2020; Hu et al., 2016). Another recent study (Szikora et al., 2020) took advantage of this stereotypic order and used a series of existing antibodies against sarcomeric protein components to probe isolated myofibrils from Drosophila flight muscles using the super-resolution microscopy technique called STORM (Rust et al., 2006). The precisely reproducible sarcomeric morphology enabled averaging several hundred sarcomeres to reconstruct distances of various epitopes located at the Z-disc, including Zasp52 and α-Actinin, with 5–10 nm precision (Szikora et al., 2020). Although done on isolated dissected myofibrils and by averaging many sarcomeres, the large diversity of antibodies studied gave a comprehensive understanding of domain positions for a variety of important sarcomeric components. This included the Sls-Ig16 antibody, locating Sls-Ig16 about 50 nm from the centre of the Z-disc (Szikora et al., 2020), which is in good agreement with the location of Sls-Ig13/14 we found here. This study further showed that the Z-disc components α-Actinin and Zasp52 extend only about 35 nm from the centre of the Z-disc, whereas Filamin stretches with its C-term to about 55 nm (Szikora et al., 2020). This strongly suggests that the N-terminus of Sls, with its remaining 12 Ig domains, can reach and interact with these Z-disc components and possibly also with Filamin, as has been reported biochemically (González-Morales et al., 2017; Liao et al., 2016). Hence, the N-terminal part of the fly titin homolog Sls is arranged similarly to the N-terminus of vertebrate titin that binds to α-Actinin, anchoring it within the Z-disc (Gautel and Djinović-Carugo, 2016; Ribeiro et al., 2014). The exact molecular arrangement will need to await cryo-electron tomography data as recently achieved for the mammalian Z-disc (Wang et al., 2021).
 
@@ -112,7 +148,7 @@ The interpretation that Sls length rules I-band length is also supported by the 
 
 The vertebrate A-band contains the Ig-Fn super-repeats of titin, which extend from the beginning myosin filament until the M-band, where titin’s C-terminal kinase is located (Granzier et al., 2014; Lange et al., 2005; Linke, 2018). Interestingly, we demonstrate that in Drosophila flight muscles, Projectin, which is very similar to the A-band part of vertebrate titin, with long Ig-Fn super-repeats and a C-terminal kinase domain, starts about 90 nm from the Z-disc. Hence, it is very unlikely that it can interact with Z-disc components directly as these are far from the N-terminal end of Projectin (model in Figure 6C). Our precise distance measurements suggest that the N-terminus of Projectin, which does contain a series of Ig domains, typical for the I-band part of titin, is sticking into the flight muscle I-band, whereas its first Fn/Ig super-repeat is located at beginning of the A-band (110 nm from the Z-disc) and hence can interact with myosin, as can its remaining Ig-Fn super-repeats that extend over a length of about 250 nm towards the M-band. This localisation differs somewhat from what was found by STORM of dissected myofibrils which placed the Ig domain 26 of Projectin only about 70 nm from the Z-disc (Szikora et al., 2020). We found that the Projectin kinase localises in a sharp band; however, it remains far from the M-band. Hence, it is hard to imagine that Projectin alone can directly rule the A-band length of flight muscle sarcomeres as it is only present at its distal ends, spanning about 15% of the myosin filament.
 
-## Staggering insect titins to effectively transduce forces during flight?
+### Staggering insect titins to effectively transduce forces during flight?
 
 Drosophila flight muscles are very stiff to effectively power wing oscillations during flight at 200 Hz. The perpendicular arrangement of the antagonistic dorsoventral (DVMs) versus the dorso-longitudinal flight muscles (DLMs) enables an effective stretch-activation mechanism as trigger: contraction of the DVMs moves the wings up and stretches the DLMs to induce their contraction, which will move the wings down again for the next cycle (Dickinson et al., 2005; Pringle, 1981; Syme and Josephson, 2002). The importance of strain in these muscles is highlighted by their expression of a particular troponin C isoform (TpnC4), which requires to be stretched to displace tropomyosin from myosin binding sites on actin filaments (Agianian et al., 2004). Furthermore, myosin also experiences a stretch-induced deformation before effective actin binding and maximum force production (Iwamoto and Yagi, 2013). This suggests that very effective force transmission is needed during flight muscle oscillations.
 
@@ -122,51 +158,187 @@ What is the role of Projectin? The precise linear arrangement of Projectin at th
 
 ## Methods
 
-## Fly strains and fly culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>Luminy</td>
+      <td>Leonte et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>sls</td>
+      <td>http://flybase.org/reports/FBgn0086906</td>
+      <td>FBgn0086906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>bt (Projectin)</td>
+      <td>http://flybase.org/reports/FBgn0005666</td>
+      <td>FBgn0005666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sls-Ig13/14 (Nano2)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sls-Ig49/50 (Nano39)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sls-Ig51-Fn2 (Nano42)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sls-Ig13/14 (Nano2)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Proj-Ig5-8 (Nano30)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Proj-Fn1/2 (Nano29)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Proj-Ig27-Fn35 (Nano33)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Proj-kinase (Nano37)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Proj-kinase (Nano35)</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td>Nanobody – use at about 50 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodamine-phalloidin</td>
+      <td>Invitrogen, Cat#R415</td>
+      <td></td>
+      <td>1 in 500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>P1 imager – Atto643</td>
+      <td>Metabion</td>
+      <td>TAGATGTAT – Atto643</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>P3 imager – Cy3b</td>
+      <td>Metabion</td>
+      <td>TAATGAAGA – Cy3B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PS3 imager – Atto643</td>
+      <td>Metabion</td>
+      <td>TCCTCCC – Atto643</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PAINT data band extraction</td>
+      <td>https://github.com/PierreMangeol/titin_PAINT; Mangeol, 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains and fly culture
 
 Fly stocks were grown and maintained under normal culture conditions in humidified incubators with 12 hr light–dark cycles on standard fly medium (Avellaneda et al., 2021). The particularly well-flying ‘Luminy’ strain was used in all experiments as wild type (Leonte et al., 2021). For all experiments, young 3–10-day-old flies were used.
 
-## Nanobody production and labelling
+### Nanobody production and labelling
 
 Nanobody production and labelling with fluorophores by maleimide chemistry through ectopic cysteines was done as described in detail in the accompanying paper (Loreau et al., 2023). To couple nanobodies to DNA oligos, the oligos (P1, P2, PS3) were ordered with a 5′ amino group modification (e.g., Am-C6-TTT CTT CAT TAC) from IBA (Göttingen) in HPLC-purified form and lyophilised as a triethylammonium (TEA) salt. Note that the absence of ammonia (NH4+) is essential for the procedure. 1 µmol of oligo was dissolved in 200 µl 30% acetonitrile (ACN), 15 mM TEA, which yielded a 5 mM stock at neutral pH (~7). 5 µl of a 100 mM cross-linker stock in 100% ACN (maleimido β-alanine NHS ester, Iris Biotec # MAA1020 or mal-PEG4-NHS, Iris Biotec # PEG1575) were added and allowed to react for 30 min on ice. Then, 1.6 µl 5 M sodium acetate, 0.1 M acetic acid (pH ~7) were added, and the modified oligo was precipitated by adding 1 ml 100% ACN and centrifugation for 10 min at 0°C at 12,000 rpm. This step removes any non-reacted maleimide. The pellet was then dissolved in 100 µl 30% ACN, and either stored in small aliquots at –80°C or used directly to label nanobodies at ectopic, reduced cysteines, as described for fluorophores in the accompanying paper (Loreau et al., 2023). Note that free oligo cannot be removed by gel filtration on Sephadex G25 because it appears with the conjugate in the void volume. It is best removed by modifying a still His14-SUMO or His14-NEDD8 tagged nanobody (Frey and Görlich, 2014; Pleiner et al., 2015) and then using Ni(II) capture (where the free oligo remains non-bound) and proteolytic release of the then tag-free nanobody conjugate. The efficiency of conjugation can be assessed by SDS-PAGE, in which the oligo-modification results in a clear size shift. In addition, the density of modification can be calculated through OD260 and OD280 readings using ε260 and ε280 of the initial oligo and nanobody as input variables. The oligo modification by this method is usually quantitative already with a small (≥1.1) molar excess of the maleimide oligo over modifiable cysteines. In case of incomplete modification, the conjugate can be purified on a MonoQ column, whereby the highly negative charged oligo causes stronger retention of the conjugate compared to the non-modified nanobody.
 
-## Flight muscle preparation, staining, and mounting for imaging
+### Flight muscle preparation, staining, and mounting for imaging
 
 Intact hemi-thoraces from adult males were prepared similar as described (Weitkunat and Schnorrer, 2014). Head, wings, and abdomen were clipped with sharp forceps and the intact thoraces were fixed for 20 min at room temperature in relaxing solution (4% PFA in 100 mM NaCl, 20 mM NaPi pH 7.2, 6 mM MgCl2, 5 mM ATP, 0.5% Triton X-100). After washing twice with relaxing solution, the thoraces were placed on a slide with double-sticky tape and cut sagittally with a sharp microtome blade (Pfm Medical Feather C35). The fixed hemi-thoraces were transferred to 24-well plates or Eppendorf tubes and blocked for 30 min at room temperature with 3% normal goat serum in PBS + 0.5% Tx-100 (PBS-T). Hemi-thoraces were stained overnight at 4°C with the combinations of nanobodies indicated, labelled with fluorophores or oligonucleotides (final concentration of about 50 nM). Actin was stained with phalloidin-rhodamine or phalloidin-Alexa488 (1:2000, Thermo Fisher; 2 hr at room temperature or overnight at 4°C). To mount the flight muscles as close as possible to the coverslip, an imaging chamber was built using a slide and #1 coverslips as spacers right and left of the samples. A layer of double sticky tape was built on the spacer and the imaging chamber was filled with either SlowFade Gold Antifade (Thermo Fisher) for confocal imaging or Imager solution for DNA-PAINT imaging. Stained hemi-thoraces were added, oriented with the flight muscles facing up and #1.5 coverslip was added. The chamber was sealed with nail polish for confocal imaging or Picodent glue for DNA-PAINT imaging.
 
-## Confocal imaging
+### Confocal imaging
 
 Stained flight muscles were imaged on a Zeiss LSM880 confocal with a ×63 oil lens. Images were processed using Fiji (Schindelin et al., 2012).
 
-## DNA-PAINT imaging
+### DNA-PAINT imaging
 
-## Materials
+#### Materials
 
 Cy3B-modified and Atto643-modified DNA oligonucleotides were custom-ordered from Metabion. Sodium chloride 5 M (cat#: AM9759) was obtained from Ambion. Coverslips (cat#: 0107032) and glass slides (cat#: 10756991) were purchased from Marienfeld and Thermo Fisher. Double-sided tape (cat#: 665D) was ordered from Scotch. Two-component silica twinsil speed 22 (cat#: 1300 1002) was ordered from picodent. Glycerol (cat#: 65516-500ml), methanol (cat#: 32213-2.5L), protocatechuate 3,4-dioxygenase pseudomonas (PCD) (cat#: P8279), 3,4-dihydroxybenzoic acid (PCA) (cat#: 37580-25G-F) and (+−)–6-hydroxy-2,5,7,8- tetra-methylchromane-2-carboxylic acid (Trolox) (cat#: 238813-5G) were ordered from Sigma. Potassium chloride (cat#: 6781.1) was ordered from Carl Roth. Paraformaldehyde (cat#: 15710) was obtained from Electron Microscopy Sciences. 90 nm diameter Gold Nanoparticles (cat#: G-90-100) were ordered from Cytodiagnostics.
 
-## Buffers
+#### Buffers
 
 For imaging, the following buffer was prepared: Buffer C (1× PBS, 500 mM NaCl). Directly before imaging Buffer C was supplemented with 1× Trolox, 1× PCA and 1× PCD (see paragraph below for details). 100× Trolox: 100 mg Trolox, 430 μl 100% methanol, 345 μl 1 M NaOH in 3.2 ml H2O. 40× PCA: 154 mg PCA, 10 ml water and NaOH were mixed, and pH was adjusted to 9.0. 100× PCD: 9.3 mg PCD, 13.3 ml of buffer (100 mM Tris-HCl pH 8, 50 mM KCl, 1 mM EDTA, 50% glycerol). All three were frozen and stored at –20°C.
 
-## Sample preparation
+#### Sample preparation
 
 Drosophila hemi-thoraces were isolated and stained as described above with phalloidin Alexa488 (1:2000) and the two nanobodies coupled to either P1, P3, or PS3 oligos (about 50 nM) overnight. Before embedding the samples into the chamber, they were washed two times with PBS + 1% Triton. Hemi-thoraces were embedded as described above. Before assembling the chamber, the cover slip was treated with 90 nm diameter gold nanoparticles (cat#: G-90-100, Cytodiagnostics, 1:10 dilution into methanol). After assembling, the chamber was filled with imaging buffer containing the complementary P1, P3, or PS3 imaging oligos (see below for imaging conditions) and sealed with Picodent glue.
 
-## Super-resolution microscope
+#### Super-resolution microscope
 
 Fluorescence imaging was carried out on an inverted microscope (Nikon Instruments, Eclipse Ti2) with the Perfect Focus System, applying an objective-type TIRF configuration with an oil-immersion objective (Nikon Instruments, Apo SR TIRF 100×, NA 1.49, Oil). A 561 nm and 640 nm (MPB Communications Inc, 2W, DPSS-system) laser were used for excitation. The laser beam was passed through clean-up filters (Chroma Technology, ZET561/10, ZET642/20x) and coupled into the microscope objective using a beam splitter (Chroma Technology, ZT561rdc, ZT647rdc). Fluorescence light was spectrally filtered with an emission filter (Chroma Technology, ET600/50m and ET575lp, ET705/72m and ET665lp) and imaged on a sCMOS camera (Andor, Zyla 4.2 Plus) without further magnification, resulting in an effective pixel size of 130 nm (after 2 × 2 binning).
 
-## Imaging conditions
+#### Imaging conditions
 
 See Figure 4—source data 1 and Figure 5—source data 1.
 
-## Imager sequences
+### Imager sequences
 
-## Super-resolved image reconstruction
+#### Super-resolved image reconstruction
 
 The data acquired during imaging was post-processed using the Picasso (Schnitzbauer et al., 2017) pipeline. First, the localisations were detected by a threshold-based detection and fitted with a least-square fit; the resulting localisation precision was estimated between 4 and 8 nm using the NeNA metric (Endesfelder et al., 2014). Next, the data was drift-corrected using a redundant cross-correlation and a fiducial marker-based drift correction. Then, a super-resolved image was rendered using Picasso render. From the images, the myofibrils for further analysis were selected interactively using the rectangular pick tool. All further analysis was done with customised Jupyter Notebooks.
 
-## Extraction of band positions from DNA-PAINT data
+### Extraction of band positions from DNA-PAINT data
 
 Extraction of band positions from DNA-PAINT data was achieved the following way: first, individual myofibrils were manually selected using the rectangular selection tool from Picasso (Schnitzbauer et al., 2017) and saved in individual files.
 
@@ -176,11 +348,11 @@ Third, individual Z-discs were automatically detected. This did not require supe
 
 Fourth, with the knowledge of Z-disc positions, the algorithm then focused on windows centred on Z-discs to extract the positions of bands: (a) Similar to step 3, the algorithm rotated the selection and stored localisations in a histogram, in which bin size is adjusted for best results (typical bin size was 13 nm). (b) Because DNA-PAINT data accumulate the localisations, the histogram of localisations can display fluctuations that make automated extraction of band positions difficult. Therefore, to locate the rough position of a given band, the data were first convolved with a Gaussian function of standard deviation 25 nm that smoothens fluctuations. (c) The resulting histogram was then analysed with a peak-finding algorithm to locate rough band positions. (d) Finally, to precisely locate band positions, the algorithm fitted a Gaussian function on the non-convolved data, in a window centred on each of the positions detected at the previous step. To ensure that the analysis was properly achieved, the results were visually checked. The code is available at https://github.com/PierreMangeol/titin_PAINT; Mangeol, 2022.
 
-## Average epitope positions using bootstrapping
+### Average epitope positions using bootstrapping
 
 To obtain an uncertainty estimate of the average position of epitopes, we used the bootstrapping method (Efron and Tibshirani, 1994). In brief, each dataset of an epitope is used to create 1000 bootstrap replicates. We generated a replicate by drawing individual values in a given dataset with replacement (i.e. each value can be drawn multiple times). The size of one replicate is the same as the one of the initial dataset. From each of these replicates, we computed the mean, and therefore obtained 1000 means from 1000 replicates. These 1000 means constitute the bootstrap data presented in Figure 6, each epitope having its own bootstrap data. Finally, 95% confidence intervals were obtained by extracting the 2.5% and 97.5% quantiles from these bootstrap data.
 
-## Materials availability statement
+### Materials availability statement
 
 Newly generated code is publicly available here at https://github.com/PierreMangeol/titin_PAINT, (copy archived at swh:1:rev:95e2ac29f658f8fca2435d93ab3c6326c786047d; Mangeol, 2022).
 

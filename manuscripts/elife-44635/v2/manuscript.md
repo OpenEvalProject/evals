@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.44635.001 Human NimA-related kinases (Neks) have multiple mitotic and non-mitotic functions, but few substrates are known. We systematically determined the phosphorylation-site motifs for the entire Nek kinase family, except for Nek11. While all Nek kinases strongly select for hydrophobic residues in the −3 position, the family separates into four distinct groups based on specificity for a serine versus threonine phospho-acceptor, and preference for basic or acidic residues in other positions. Unlike Nek1-Nek9, Nek10 is a dual-specificity kinase that efficiently phosphorylates itself and peptide substrates on serine and tyrosine, and its activity is enhanced by tyrosine auto-phosphorylation. Nek10 dual-specificity depends on residues in the HRD+2 and APE-4 positions that are uncommon in either serine/threonine or tyrosine kinases. Finally, we show that the phosphorylation-site motifs for the mitotic kinases Nek6, Nek7 and Nek9 are essentially identical to that of their upstream activator Plk1, suggesting that Nek6/7/9 function as phospho-motif amplifiers of Plk1 signaling.
+Human NimA-related kinases (Neks) have multiple mitotic and non-mitotic functions, but few substrates are known. We systematically determined the phosphorylation-site motifs for the entire Nek kinase family, except for Nek11. While all Nek kinases strongly select for hydrophobic residues in the −3 position, the family separates into four distinct groups based on specificity for a serine versus threonine phospho-acceptor, and preference for basic or acidic residues in other positions. Unlike Nek1-Nek9, Nek10 is a dual-specificity kinase that efficiently phosphorylates itself and peptide substrates on serine and tyrosine, and its activity is enhanced by tyrosine auto-phosphorylation. Nek10 dual-specificity depends on residues in the HRD+2 and APE-4 positions that are uncommon in either serine/threonine or tyrosine kinases. Finally, we show that the phosphorylation-site motifs for the mitotic kinases Nek6, Nek7 and Nek9 are essentially identical to that of their upstream activator Plk1, suggesting that Nek6/7/9 function as phospho-motif amplifiers of Plk1 signaling.
 
 ## Introduction
 
@@ -38,13 +38,33 @@ Protein phosphorylation by kinases plays an essential role in nearly all signali
 
 The Nek kinase family consists of 11 serine/threonine kinases that together form an independent evolutionary branch of the human kinome (Figure 1A). The first human mitotic Nek kinase to be identified was Nek2, which is required for centrosomal disjunction following their duplication during S-phase, in order to assemble a bipolar mitotic spindle (Figure 1B; Fry et al., 2017) A similar function was assigned to Nek5, which, in addition, also regulates centrosome composition in interphase (Prosser et al., 2015). Furthermore, Nek6, Nek7 and Nek9 have been shown to cooperate as a signaling module during various stages of mitosis (Belham et al., 2003). In this process, Nek9 is first phosphorylated in early mitosis by Cdk1, creating a binding site for the Plk1 polo-box domain. Plk1-mediated phosphorylation and activation of Nek9 then leads to Nek9-dependent phosphorylation and interaction-dependent activation of Nek6 and Nek7, allowing them to perform their downstream functions (Roig et al., 2002; Belham et al., 2003; Yin et al., 2003; Richards et al., 2009; Bertran et al., 2011). As a signaling module, Nek6/7/9 have been reported to play a role in centrosome separation and maturation, nuclear envelope breakdown, metaphase and anaphase progression, mitotic spindle formation and cytokinesis (Figure 1B; Roig et al., 2002; Yin et al., 2003; Yissachar et al., 2006; O'Regan and Fry, 2009; Salem et al., 2010; Bertran et al., 2011; Kim et al., 2011; Laurell et al., 2011; Sdelci et al., 2012; Cullati et al., 2017). Interestingly, although Nek6 and Nek7 share more than 80% sequence homology in their kinase domain, their mitotic functions are not completely redundant (Cullati et al., 2017). This is most likely due to their short but divergent N-terminal domains that drive differential interactions and might affect substrate selection (Vaz Meirelles et al., 2010; de Souza et al., 2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig1-v2.jpg)
+
+**Figure 1.:** (A) Dendrogram showing the phylogenetic relationship between all human kinases. The branch containing the Nek-family is magnified in the inset. Adapted from Manning et al. (2002). (B) Cartoon depicting the identified and suggested functions for the Nek kinases in interphase cells (top left panel) and cells in different stages of mitosis (other three panels). See introduction for details. (C) Phosphorylation-site motifs of the Nek-family members were determined by OPLS. Shown are representative OPLS dot blots, and sequence logos of the favored residues quantified over multiple assays (n ≥ 2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental lay-out of an OPLS-experiment. Biotinylated peptide libraries are incubated in vitro with an isolated kinase and radiolabeled ATP, in independent reactions in a multiwell plate. The peptide libraries are then transferred to a streptavidin membrane, and the level of phosphorylation is quantified by measuring the intensity of radiolabel incorporation using a phosphorimager. The example shows a basophilic kinase with a preference for basic residues on the −2 and −3 positions, a preference for a serine as the phospho-acceptor site, and a strong selection against a proline in the +1 position. (B) FLAG-tagged(3x) variants of either full-length Nek kinases or catalytic domains (Cat.) of Nek4 or Nek5 were isolated by anti-FLAG IP from lysates of transfected HEK 293T cells and eluted from the beads with FLAG-peptide. A fraction of the eluate was analyzed by SDS-PAGE followed by Coomassie staining. Asterisks indicate Nek kinases, MBP = maltose-binding protein.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative OPLS-blots of every Nek kinase together with their kinase-dead (KD) mutants on the same blot.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Complete sequence logos of the phosphorylation-site motifs for Nek1-Nek10, and for Plk1 emphasizing both positive and negative selections. Nek10[S] and Nek10[Y] indicate the phosphorylation-site motif of Nek10 on a serine-substrate library or a tyrosine-substrate library, respectively. The phosphorylation-site motifs for Nek1 and Nek3-Nek10 were determined in this study, the phosphorylation-site motifs for Nek2 and Plk1 were determined in Alexander et al. (2011).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Purified Nek2 was incubated in vitro with radiolabeled ATP and a degenerate peptide substrate containing either a serine (S) or threonine (T) phospho-acceptor site, as described in Figure 1—figure supplement 1A. Peptide phosphorylation was quantified by scintillation counting (CPM = counts per minute).
+
 Notably, the Nek kinase family is not exclusively involved in mitosis, but functionally diverse. Nek kinases have also been reported to play a role in meiosis, ciliary biology, and the response of cells to replication stress and DNA-damage (Figure 1B; Quarmby and Mahjoub, 2005; Melixetian et al., 2009; Moniz and Stambolic, 2011; Choi et al., 2013; Spies et al., 2016; Brieño-Enríquez et al., 2017). The functions of Nek3 and Nek4 are not clear but the current literature suggests that Nek3 may play a role in cell migration (Harrington and Clevenger, 2016), and Nek4 might be involved in regulating microtubule stability (Figure 1B; Doles and Hemann, 2010).
 
 We have previously determined the optimal substrate phosphorylation motifs, that is the substrate amino acid sequence preferentially phosphorylated by a given kinase, for the mitotic kinases Cdk1, Plk1, Aurora A, Aurora B and Nek2 (Alexander et al., 2011). This motif information strongly facilitates identification of kinase substrates and can help to understand the organization of complex phosphorylation networks like those in mitotic cells (Linding et al., 2007; Alexander et al., 2011; Kang et al., 2013). Therefore, to further catalog the optimal substrate motif-atlas for mitotic kinases and to characterize substrate-specificity of a complete and functionally diverse branch of the human kinome, we sought to determine the optimal phosphorylation-site motif for the Nek-kinases using Oriented Peptide Library Screening (OPLS) (Hutti et al., 2004), followed by direct experimental validation together with molecular modeling. This revealed a surprisingly large amount of diversity in substrate-specificity among the Nek-kinases, and identified Nek10 as a dual-specificity kinase, that can phosphorylate substrates on tyrosine in addition to serine. Furthermore, these studies demonstrated that the mitotic kinases Nek6, Nek7 and Nek9, have a phosphorylation-site motif that is almost identical to the motif of Plk1, suggesting that the Nek6/7/9 module functions as a Plk1-motif amplifier.
 
 ## Results
 
-## Determination of the phosphorylation-site motif for all members of the Nek kinase family
+### Determination of the phosphorylation-site motif for all members of the Nek kinase family
 
 To obtain the consensus phosphorylation-site motif for each individual Nek kinase, we performed Oriented Peptide Library Screening (OPLS) as described previously (Hutti et al., 2004; Alexander et al., 2011). In these experiments, each kinase is tested in 198 individual in vitro kinase reactions, each with a different peptide library as substrate (Figure 1—figure supplement 1A). Each peptide library is composed of a pool of 10-mer peptides containing an equimolar mix of serine and threonine at the phospho-acceptor site, and one other fixed amino acid on a position ranging from five residues upstream (−5 position) to four residues downstream (+4 position) of the phospho-acceptor residue. The fixed amino acid is one of the 20 naturally occurring amino acids, or either phospho-threonine (pT) or phospho-tyrosine (pY). The remaining eight unfixed positions in the library contain an equimolar mix of all natural amino acids except cysteine, serine or threonine. The preference of the protein kinase for each residue at each position is then determined by directly comparing its activity against each individual peptide library. Lastly, to study phospho-acceptor site specificity of the kinase, we included three completely degenerate peptide libraries that contain either a fixed serine, threonine or tyrosine phospho-acceptor site, but no cysteine, serine, threonine or tyrosine in the degenerate positions.
 
@@ -52,7 +72,7 @@ Each of the Nek kinases were expressed as 3xFLAG-tagged variants in HEK 293T cel
 
 These OPLS experiments revealed that all of the tested Nek kinases display a clear preference for leucine, methionine, phenylalanine or tryptophan at the −3 position (Figure 1C). This is consistent with what has been reported for Nek6, and similar to what we found previously for Nek2 (Lizcano et al., 2002; Alexander et al., 2011). In addition, all the Nek kinases strongly selected against a proline in the + 1 position (Figure 1C; Figure 1—figure supplement 3). However, the OPLS-experiments also demonstrated clear specificity differences between the different family-members. Most notably, our results revealed a dichotomy in phospho-acceptor site preference within the family, with Nek1/3/4/5/8 preferentially phosphorylating threonine residues, while Nek6/7/9 primarily targeted peptides with serine residues as the phospho-acceptor (Figure 1C). Since the phosphorylation-site motif determined previously for Nek2 did not contain information on acceptor site specificity, an in vitro kinase assay of isolated Nek2 with degenerate peptide libraries containing either a serine or threonine phospho-acceptor site was performed. Nek2 phosphorylated the serine phospho-acceptor library more efficiently than the threonine library, indicating that Nek2 shares a preference for a phospho-acceptor serine residue with Nek6/7/9 (Figure 1—figure supplement 4). Together, these data reveal a Nek kinase family core consensus motif of [LMFW]-X-X-S/T-[no P], but with additional specificity-differences. In general, Nek1/3/4/5/8 displayed a preference for hydrophobic and basic residues on multiple positions within the motif, while Nek6/7/9 displayed a preference for acidic residues and selected hydrophobic residues at various positions. The separation between these groups of Nek kinases based on substrate-specificity is discussed in more detail below.
 
-## Validation of the phosphorylation-site motif for all members of the Nek family
+### Validation of the phosphorylation-site motif for all members of the Nek family
 
 To validate our OPLS-results, we designed peptides predicted by our OPLS-results to be good substrates for either the Nek1/3/4/5/8 (13458-tide) group of kinases, or the Nek6/7/9 (679-tide) group of kinases. In addition, we synthesized variants of these peptides that contained residues predicted to be disfavored at specified positions (Figure 2A). We tested the phosphorylation of these peptides using in vitro kinase assays with Nek3 and Nek7 as representative members of these Nek kinase groups (Figure 2B–D). As shown in Figure 2B,C, Nek3 could readily phosphorylate the optimal Nek13458-tide but was substantially impaired in its ability to phosphorylate peptides in which either the −3 or −2 hydrophobic residues were mutated to aspartic acid (Figure 2B,C). As shown in Figure 2D, Nek7 phosphorylated the optimal 679-tide much more rapidly than a 679-tide variant containing a disfavored hydrophobic residue (I) in place of the favored hydrophobic residue (L) in the −3 position (Figure 2D). Similarly, substitution of the favored aspartic acid residue in the −2 position for a basic residue (R), substantially reduced peptide phosphorylation by Nek7 (Figure 2D).
 
@@ -62,29 +82,61 @@ To validate our OPLS-results, we designed peptides predicted by our OPLS-results
 
 Interestingly, a subset of Nek kinases, including Nek7, Nek8 and particularly Nek6, displayed unexpected selection for phospho-tyrosine in the −1 position, suggesting that these kinases might target substrates that have been primed by tyrosine kinase mediated phosphorylation. To validate this specificity, we substituted the phospho-tyrosine in the −1 position of 679-tide to an OPLS-disfavored isoleucine residue, which resulted in a reduced rate at which Nek6 phosphorylated 679-tide (Figure 2E). Finally, all the Nek kinases displayed a strong preference for a tryptophan in the −4 position. Selection for tryptophan within kinase substrate motifs, especially at the −4 position, has rarely been observed (Miller and Turk, 2018). Corroborating our OPLS-data, the rate at which Nek8 phosphorylated its optimal substrate Nek8-tide was reduced upon substitution of the tryptophan in the −4 position to a valine (Figure 2F). Furthermore, introduction of a tryptophan in the −4 position in a peptide that is otherwise a very poor substrate for Nek8 (Nek8-poor) significantly enhanced the rate at which Nek8 could phosphorylate Nek8-poor (Figure 2F). Taken together, these results with optimal and suboptimal peptide variants validate our OPLS-data, and demonstrate that we can use the OPLS-data to predict good and poor substrates for the Nek kinases.
 
-## Nek10 is a dual-specificity kinase
+### Nek10 is a dual-specificity kinase
 
 Curiously, in these OPLS experiments, Nek10 displayed very little sequence preference for any residue, except for a tyrosine at every position (Figure 3A). We hypothesized that this result could indicate that Nek10 is a tyrosine kinase. This could explain the effective phosphorylation of all peptide libraries containing a fixed tyrosine, because the tyrosine itself could serve as a phospho-acceptor site. In addition, it would explain the absence of additional preferences, because each of the 198 peptide libraries will contain tyrosine residues on non-fixed positions and therefore have many different target sites (Figure 1—figure supplement 1A). In agreement with this hypothesis, a preliminary, non-comprehensive mass spectrometric experiment to analyse phospho-sites on in vitro auto-phosphorylated Nek10 revealed the presence of several phosphorylated tyrosine residues (Figure 3—figure supplement 1A,B). To directly determine if Nek10 phosphorylates tyrosine residues, we designed a Nek10 substrate peptide based on the auto-phosphorylation site data, and introduced either a tyrosine, serine, or threonine at the phospho-acceptor site (Figure 3B,C). Surprisingly, Nek10 effectively phosphorylated peptides with a serine phospho-acceptor site, but even more rapidly phosphorylated peptides with a tyrosine phospho-acceptor site (Figure 3B,C). In contrast, substitution of threonine as the phospho-acceptor significantly impaired peptide phosphorylation by Nek10 (Figure 3B,C). We therefore conclude that Nek10 is a tyrosine/serine dual-specificity kinase.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative blot showing the OPLS results for wild-type Nek10 on the serine-threonine peptide library. (B) Purified Nek10 was incubated with the indicated peptide substrates and radio-labeled ATP. Peptide phosphorylation was quantified by scintillation counting. (Mean ± SEM, n = 3). (C) The data depicted in panel (B) were analyzed by linear regression and the slopes of the regression curves were calculated to determine the phosphorylation rate (Mean ± SEM, n = 3, **p<0.005). (D) Cartoon representation of the Akt/GSK3-peptide structure (PDB: 1O6L). The kinase domain, activation loop, and the P+1 loop are shown in gray, green and magenta, respectively. The GSK3 peptide is shown in cyan, side chain shown is of the phospho-acceptor serine. (E) Amino acid sequence alignment of the P+1 loop and APE motif of Nek1 to Nek10, and including the Nek10 I693P and T692P variants. (F) Logo depicting the frequency of amino acids in the P+1 loop of either all human serine/threonine (ST) kinases, but excluding the tyrosine kinase like group (upper panel), or all human tyrosine (Y) kinases (lower panel). (G) As in panel (C), but for Nek10 WT and the I693P variant (Mean ± SEM, n = 3, *p<0.05, **p<0.005). (H) Amino acid sequence alignment of the catalytic loop of Nek1 to Nek10, including the Nek10 T657K variant. (I) As in panel (C), but for the Nek10 T657K variant (Mean ± SEM, n = 3, **p<0.005). (J) As in panel (B), but for Nek10 WT and the T692P variant. (K) As in panel (C) but for the Nek10 T692P variant. In order to obtain accurate rate calculations, the experiment shown in panel J was repeated x3 with longer incubation times (Mean ± SEM, n = 4, *p<0.05). The signal observed in the ‘no peptide’ sample results from binding of auto-phosphorylated kinase to the phosphocellulose paper.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Flag-tagged Nek10 was expressed and isolated from Nek10-deficient HEK 293T cells, and incubated in an in vitro kinase reaction with or without ATP, followed by mass spectrometry to analyze phosphorylation status. Indicated sites had a phosphopeptide spectral count that was at least two-fold higher for the +ATP than the -ATP sample. Mapping of phosphorylation sites was not comprehensive (The Y644-containing tryptic peptide, for example, is only four amino acids long, and was not detected in either the phosho- or non-phospho form). For panel (A), the blue box indicates the kinase domain, and mapped tyrosine phosphosites are indicated in red. For panel (B), tyrosine phosphopeptides are indicated in red, T670 in bold underlined font is located in the kinase domain.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Reproduction of the column in the 0 position of the OPLS-dot blots shown in Figure 1C, which contain the degenerate peptide libraries used to determine phospho-acceptor site specificity. (B) Frequency of each amino acid in the HRD+2 position, which is the position equivalent to Nek10 T657, in all human serine/threonine (ST) kinases, all human tyrosine-kinase-like (TKL) kinases, or all human tyrosine (Y) kinases. Note that a lysine in this position is extremely common in serine/threonine kinases, while the threonine residue found in Nek10 is quite rare.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Amino acid sequence alignment of the catalytic loop (left panel) and of the P+1 loop and APE motif (right panel), of Nek1 and Nek10, including the Nek1 HRD+2 and APE-4 mutants. (B) Purified Nek1 WT, Nek1 K130T (HRD+2), Nek1 P168I (APE-4) and Nek1 double mutant (DM) were incubated with the indicated peptide substrates and radio-labeled ATP. Peptide phosphorylation was quantified by scintillation counting (n = 1; CPM = counts per minute). (C) and (D) As in B, now with sixfold reduced concentration of Nek1 WT compared to the Nek1 mutants (Mean ± SEM, n = 3). The curves for T-peptide (C) and Y-peptide (D) phosphorylation are plotted separately on scaled Y-axes to facilitate interpretation of the difference between the curves. (E) The data depicted in panels (C) and (D) were analyzed by linear regression and the slopes of the regression curves were calculated to determine the phosphorylation rate (Mean ± SEM, n = 3). Dotted line indicates the level of tyrosine phosphorylation of Nek1 WT.
 
 None of the other Nek kinases phosphorylated peptides libraries containing tyrosine as the phospho-acceptor (0 position in Figure 1C, also Figure 3—figure supplement 2A). Therefore, we reasoned that sequence comparison between the Nek kinases might reveal residues that permit Nek10 to phosphorylate both serine and tyrosine residues. Structural analysis has implicated specific regions of the kinase domain that contribute to serine/threonine or tyrosine specificity (Taylor et al., 1995), and one of these regions is the P+1 loop, which lies directly N-terminal of the conserved APE-motif (Figure 3C). We therefore aligned the P+1 loop sequences of the Nek kinase family members, and noted that Nek10 has an isoleucine whereas all the other Nek kinases have a proline at the position four residues N-terminal of the APE-motif (APE-4; Figure 3E). Interestingly, an isoleucine in the APE-4 is typically found in tyrosine kinases, but in less than 5% of serine/threonine kinase, which more commonly have a proline on this position (Figure 3F). We therefore mutated the APE-4 isoleucine in Nek10 to a proline (I693P) and found that this increased its capacity to phosphorylate a substrate peptide on a serine residue but rendered Nek10 incapable of phosphorylating the same peptide on a tyrosine (Figure 3G).
 
 Another region contributing to phospho-acceptor site specificity is the catalytic loop, which contains the aspartic acid which serves as the catalytic base within the conserved HRD motif (Figure 3D; Taylor et al., 1995). Intriguingly, Nek10 has a threonine in the HRD+2 position, which is uncommon within the serine/threonine kinome. Instead, 86% of serine/threonine kinases contain a lysine residue in the HRD+2 position, including all the other Nek kinases (Figure 3H; Figure 3—figure supplement 2B). Mutation of the HRD+2 threonine to a lysine (T657K) generated a Nek10 variant that, like Nek10 I693P, could effectively phosphorylate serine residues but was incapable of phosphorylating tyrosine residues (Figure 3I). Finally, we sought to make a variant version of Nek10 that would exclusively phosphorylate substrates on tyrosine residues. To this end, we mutated the threonine in the APE-5 position to a proline, which is highly conserved in tyrosine kinases, but present in only three serine/threonine kinases (Figure 3F). In contrast to the I693P and T657K mutations, this APE-5 mutation (T692P) severely reduced overall Nek10 kinase activity (Figure 3J). However, the resulting Nek10 T692P variant could still detectably phosphorylate tyrosine residues while it was unable to phosphorylate serine residues (Figure 3K). Taken together, these results identify specific residues in the kinase domain of Nek10 that are essential for its dual-specificity, and show that point-mutations in the catalytic or P+1 loop can toggle Nek10 between being a dual-specificity, serine-specific, or tyrosine-specific kinase.
 
-## An APE-4 isoleucine in Nek1 enhances substrate phosphorylation on tyrosine residues
+### An APE-4 isoleucine in Nek1 enhances substrate phosphorylation on tyrosine residues
 
 We next investigated whether introduction of an HRD+2 threonine and/or APE-4 isoleucine in a serine/threonine kinase would be sufficient to induce tyrosine-directed activity. These mutational experiments were conducted using Nek1, since its structure is known (Melo-Hanchuk et al., 2017), wild-type Nek1 did not efficiently phosphorylate peptide substrates on tyrosine in our experiments (Figure 3—figure supplement 2A), and, like all other Nek kinases except Nek10, Nek1 has an HRD+2 lysine and APE-4 proline (Figure 3E,H). However, murine Nek1 has been reported to be a dual-specificity kinase (Letwin et al., 1992), suggesting that Nek1 might have intrinsic tyrosine-phosphorylation capacity in specific contexts, and might therefore be more susceptible than other serine/threonine kinases to mutations that broaden phospho-acceptor specificity.
 
 Mutants of Nek1 containing a threonine in the HRD+2 position (Nek1 HRD+2), isoleucine on the APE-4 position (Nek1 APE-4), or both (Nek1 Double Mutant; DM), were generated and the recombinant kinases were tested for their capacity to phosphorylate peptide substrates containing either a threonine or tyrosine phospho-acceptor site (Figure 3—figure supplement 3A,B). Notably, either point mutation reduced kinase activity ~ 6-fold to 8-fold compared to Nek1 WT, while the combination of mutations almost completely abrogated Nek1 activity (Figure 3—figure supplement 3B). To facilitate comparison of threonine and tyrosine-directed activity for all the Nek1 variants, these experiments were therefore repeated using a 6-fold reduced concentration of Nek1 WT compared to the mutants (Figure 3—figure supplement 3C,D). As seen in Figure 3—figure supplement 3C,D Nek1 WT and both mutants phosphorylated peptides on threonine residues better than on tyrosine residues (note the differences in the Y-axis scale), Nonetheless, the APE-4 isoleucine mutant, but not the HRD+2 threonine mutant, enhanced the relative preference of Nek1 for tyrosine substrates (Figure 3—figure supplement 3E) to ~ 20% of the efficiency with which it phosphorylated threonine-containing peptides. The same was observed for the Nek1 DM variant, although this result should be interpreted cautiously, given the low activity of Nek1 DM (Figure 3—figure supplement 3E). Nek10, however, in contrast to the Nek1 APE-4 isoleucine mutant, phosphorylates tyrosine substrates with at least twofold greater activity than the same peptide on a serine or threonine phosphoacceptor (Figure 3C), indicating that additional sequence determinants in the Nek10 kinase domain must collaborate with the APE-4 isoleucine residue to enhance dual-specificity.
 
-## Nek10 phosphorylates serines and tyrosines in different sequence contexts
+### Nek10 phosphorylates serines and tyrosines in different sequence contexts
 
 The positioning of the substrate in the catalytic site of the kinase is different for serine/threonine kinases compared to tyrosine kinases (Taylor et al., 1995), raising the question of how a dual-specificity kinase is able to correctly position substrates to catalyze phosphorylation on serine as well as tyrosine residues. We reasoned that the phosphorylation-site sequence context might play a major role, and therefore set out to determine whether Nek10 recognizes distinct phosphorylation-site motifs for serine and tyrosine substrates. In these experiments we used a serine-specific variant of Nek10 (I693P) to eliminate issues arising from tyrosine-phosphorylation of peptide libraries by WT Nek10 that made the previous OPLS-results uninterpretable (Figure 3A). As shown in Figure 4A, for Nek10 I693P the strong preference for tyrosine in every position was absent, but instead it displayed a clear preference for hydrophobic and basic residues, similar to the Nek1/3/4/5/8 group (Figures 1C, 4A). However, in contrast to other members of this group that preferentially select for threonine as the phospho-acceptor, Nek10 I693P preferentially phosphorylates serine (Figure 4A). To eliminate the possibility that the I693P mutation affected the intrinsic serine-motif specificity of Nek10, we validated these OPLS-results with WT Nek10, rather than with the Nek10 I693P mutant. An optimal serine peptide substrate ((S)-tide) was synthesized on basis of the OPLS-results, along with variants in which the favored hydrophobic residue in the −3 position and the favored basic residue in the −1 positions were replaced by a disfavored aspartic acid residue (−3D, −1D), and these peptides were used as substrates in an in vitro kinase assays. As shown in Figure 4B, WT Nek10 could effectively phosphorylate (S)-tide but not the −3D and −1D peptides, therefore corroborating our OPLS-results (Figure 4B, Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig4-v2.jpg)
+
+**Figure 4.:** (A) The phosphorylation-site motif of Nek10 I693P was determined by OPLS. Shown are a representative blot, and a sequence logo of data quantified over two independent OPLS-experiments, showing both the favored and disfavored amino acids. (B) Purified Nek10 was incubated with the indicated peptide substrates and radiolabeled ATP. Peptide phosphorylation was quantified by scintillation counting. The phosphorylation rate was determined by linear regression (Mean ± SEM, n = 3, ****p<0.00005). (C) As in panel (A), but now for WT Nek10, and using a peptide library with a fixed tyrosine as the phosphoacceptor site (n = 3). Note that in this case the 0 position column contains no peptide libraries.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Purified Nek10 was incubated with the indicated peptide substrates and radiolabeled ATP. Peptide phosphorylation was quantified by scintillation counting (Mean ± SEM, n = 3; CPM = counts per minute).
+
 To investigate the phosphorylation-site motif for Nek10 on tyrosine substrates, we designed a peptide library identical to the serine/threonine peptide library, but with a tyrosine instead of a serine/threonine mixture in the phospho-acceptor site. Importantly, to prevent phosphorylation of the degenerate positions, tyrosine, together with serine, threonine and cysteine residues, was excluded from the amino acid mixture in the degenerate positions. These OPLS experiments revealed a very different Nek10 phosphorylation-site motif for tyrosine substrates compared to serine substrates. On tyrosine substrates, Nek10 does not select for the canonical Nek-family motif signature [LMFW]-X-X-S/T-[no P], but instead shows a near-absolute requirement for aromatic or selected hydrophobic residues in the +1 position (Figure 4C). Thus, the serine phosphorylation-site motif of the dual-specificity kinase Nek10 is similar to that of the other Nek kinases, but the tyrosine phosphorylation-site motif of Nek10 is substantially more restricted.
 
-## Nek10 auto-phosphorylates on serine and tyrosine residues in vitro and in cells
+### Nek10 auto-phosphorylates on serine and tyrosine residues in vitro and in cells
 
 Next, we investigated whether Nek10 can phosphorylate protein substrates, in addition to peptide substrates, on both serine and tyrosine residues. Unfortunately, no Nek10 substrates have been reported to date. However, preliminary mass spectrometry data indicated that Nek10 is a substrate for auto-phosphorylation (Figure 3—figure supplement 1A,B). Indeed, incubation of Nek10 with radiolabeled ATP revealed efficient auto-phosphorylation of WT and serine-specific Nek10 (I693P(Ser)), but not of kinase-dead (KD) Nek10 in which the catalytic aspartic acid was mutated to an asparagine residue (Figure 5A). Furthermore, despite its reduced activity, we could also clearly detect auto-phosphorylation of the tyrosine-specific (T692P(Tyr)) Nek10 variant, demonstrating that Nek10 can undergo auto-phosphorylation on both serine and tyrosine residues in vitro (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig5-v2.jpg)
+
+**Figure 5.:** (A) Purified wild-type (WT), kinase-dead (KD), serine-specific (I693P(Ser)), or tyrosine-specific (T692P(Tyr)) Nek10 was incubated in vitro with radiolabeled ATP. Total Nek10 levels were analyzed by coomassie-staining, while phosphorylated (P) Nek10 was detected by phosphorimaging. 32P dark and 32P light respectively indicate a longer and shorter exposure of the same gel. (B) In vitro kinase assay with indicated FLAG-tagged Nek10 variants as the kinase, and HA-tagged Nek10 KD as the substrate. Kinase-proficient and kinase-dead Nek10 were separated by anti-FLAG and anti-HA IP respectively, and analyzed by immunoblotting and phosphorimaging. (C) Nek10 KO U-2 OS cells were reconstituted with doxycycline (Doxy) inducible FLAG-Nek10 variants and treated with 2 µg/ml doxycycline for 7 days, or left untreated. FLAG-Nek10 levels were analyzed by immunoblotting. (D) Cells described in panel (C) were treated with doxycycline for 2 days, and FLAG-Nek10 was isolated by α-FLAG IP, followed by immunoblotting to detect total Nek10 (α-FLAG) and tyrosine-phosphorylated Nek10 (α-pY) (TCL = total cell lysate). (E) Wild-type, non-edited U-2 OS cells were transfected with an empty vector control (EV) or the indicated FLAG-Nek10 variants. For WT and KD Nek10, less plasmid was transfected than for the Nek10 Y-to-F mutants. FLAG-Nek10 was isolated by α-FLAG IP and analyzed by immunoblotting. (F) As in panel (B), now using FLAG-tagged Nek10, either KD or tyrosine-specific (T692P(Tyr)), as the kinase, and HA-tagged Nek10 KD, either lacking additional mutations or with a Y644F mutation, as the substrate. (G) Purified Nek10 WT or the Y644F mutant was incubated with a peptide substrate and radiolabeled ATP. Peptide phosphorylation was quantified by scintillation counting. The phosphorylation rate was determined by linear regression (Mean ± SEM, n = 3, ***p<0.0005). Note that the autophosphorylation-defective Y644F mutant has dramatically reduced activity. (H) As in panel (B), now using FLAG-tagged Nek10, either KD or serine-specific (I693P(Ser)), as the kinase, and HA-tagged Nek10 KD, either lacking additional mutations or with a S353A/S356A/S358A/S359A quadruple mutation (SSSS/AAAA), as the substrate.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Sequencing results of the U-2 OS Nek10 knockout cells confirm out-of-frame editing of both alleles of Nek10 using CRISPR. Chromatograms and DNA sequence alignment of the sgRNA target site (exon 5) to the sequencing result of the U-2 OS Nek10 KO clone are presented. Shown are bases 23,286 till 23,592, with the exception of a 220 bp stretch as indicated by the gap between the two sequence panels. Sequencing of multiple PCR products indicated that all Nek10 alleles were edited. Sequence 1 contains a 19 bp deletion in combination with a 5 bp insertion further downstream (not shown). Sequence 2 contains a large deletion of 281 bp. (B) Purified Nek10 WT or a Y644F mutant were incubated with a tyrosine peptide substrate with the sequence EWMNWYWQRR and radiolabeled ATP. Peptide phosphorylation was quantified by scintillation counting (CPM = counts per minute). (C) Nek10 wild-type (WT), serine-specific (I693P(Ser)), tyrosine-specific (T692P(Tyr)) or kinase-dead (KD) was isolated from the cells described in Figure 5C and analyzed by mass spectrometry. Table shows the peptide count of each identified Nek10 phosphopeptide for each of the Nek10 variants. Phosphorylated sites are indicated by red lower case letters. (D) Cartoon representation of the Nek10 protein domain structure. Sites of Nek10 autophosphorylation are indicated. (E) Representative MS/MS spectrogram of the Nek10 peptide containing phosphorylated S358.
 
 Of the 518 protein kinases only 18 are recognized as dual-specificity. Members of the GSK3 and DYRK serine/threonine kinase families can also auto-phosphorylate on tyrosine residues, but do this exclusively (GSK3) or primarily (DYRK) during folding in cis (Cole et al., 2004; Soundararajan et al., 2013). To test whether Nek10 can auto-phosphorylate on tyrosine and serine in trans, we performed in vitro kinase assays using FLAG-tagged WT, serine-specific or tyrosine-specific Nek10 to phosphorylate an HA-tagged KD Nek10 as substrate. Following incubation, Nek10 kinase and substrate were separated by anti-FLAG and anti-HA IP, respectively, and analyzed by immunoblotting and phosphorimaging. As shown in Figure 5B, phosphorylation of KD Nek10 was observed following incubation with either a serine-specific or tyrosine-specific kinase-proficient Nek10, demonstrating that in vitro, Nek10 can auto-phosphorylate in trans on both serine and tyrosine residues (Figure 5B).
 
@@ -94,15 +146,31 @@ To map the tyrosine(s) targeted for auto-phosphorylation by Nek10, we used the O
 
 Finally, to study serine auto-phosphorylation in cells, we isolated WT, KD, serine-specific and tyrosine-specific Nek10 from the doxycycline-induced Nek10 knock-out cells (Figure 5C), and analyzed its phosphorylation status by mass spectrometry. Multiple phosphopeptides were detected, but the region corresponding to N346-R365 of Nek10, which is outside of the kinase domain, was the most abundant phosphopeptide in the WT and serine-specific samples, and was completely absent in the KD and tyrosine-specific samples (Figure 5—figure supplement 1C,D). This peptide contains six serine residues, of which four were identified as phosphorylated by MASCOT protein identification software (Figure 5—figure supplement 1C). Mutation of these four serine sites in KD Nek10 reduced its phosphorylation in trans by a serine-specific Nek10 variant, demonstrating that one or more of these sites can be auto-phosphorylated in trans by Nek10 (Figure 5H). To determine which of these four sites was the most likely target site, we manually annotated the MS/MS spectra, and identified S358 of Nek10 as the phosphosite most consistent with the mass spectrometry data (Figure 5—figure supplement 1E). Therefore, we conclude from these results that Nek10 can auto-phosphorylate both in vitro and in cells, that in vitro auto-phosphorylation can occur in trans, and we identified Y644 in the kinase domain, and S358 outside of the kinase domain, as auto-phosphorylation target sites.
 
-## The Nek kinase family diverges into four specificity-groups
+### The Nek kinase family diverges into four specificity-groups
 
 The OPLS results indicated that there are substantial differences in specificity among the Nek kinase family members (Figure 1C). To examine this in more detail, we performed hierarchical clustering of the Nek kinome based on quantitative OPLS motif information. To also include Nek10 in this analysis, we used the serine phosphorylation-site OPLS motif (Nek10(S)), because the tyrosine phosphorylation-site motif is very distinct from the motifs of the other Nek kinases. This clustering revealed that Nek1/3/4/5/8 were clearly separated from Nek2/6/7/9/10(S) (Figure 6A). Importantly, this division of the Nek kinases based on preferred substrate sequence cannot be explained by amino acid sequence similarity between the Nek kinase domains themselves (Figure 6B). Instead, an important contributor to this hierarchy is the preference for either serine or threonine as the phospho-acceptor site (Figure 6C). To assess non-phosphosite contributions, we re-clustered the Nek kinase family based on motif specificity, but excluded the phospho-acceptor site preference (Figure 6D). This revealed that within the group of threonine-directed Nek kinases, Nek 1/3/4 cluster separately from Nek 5/8 (Figure 6D). Overall then, the motif data indicate that the Nek kinase family can be separated into four specificity groups based on phospho-acceptor preference and additional amino acids specificities (Figure 6D). Interpretation of the sequence logos shown in Figure 1C indicates that Nek 1, 3 and 4 cluster in Group 1 based on their shared preference for arginine in the −1 position. Within Group 1, Nek 1 and 4 also show strong selectivity for lysine and arginine in the +2 position, and they are exceptional in their lack of preference for a tryptophan in the −3 position. Group 2 consists of Nek 5 and 8, and is closely related to Group 1, but has a less prominent selection for arginine in the −1 position. Group 3, which consists of Nek 2 and 10, are distinguished by their serine phospho-acceptor specificity (Figure 6C; Figure 3—figure supplement 2A), although the remaining motif specificity of Nek two is similar to that of kinases in Group 2 (Figure 1—figure supplement 3). Finally, Group 4 consists of Nek 6, 7, and 9, and clusters distantly from the rest (Figure 6D) based on a preference for acidic residues in the −5,–4, and particularly in the −2 position that is not shared with any of the other Nek kinases (Figure 6E; Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig6-v2.jpg)
+
+**Figure 6.:** (A) Similarity matrix and dendrogram depicting the Pearson correlation between the phosphorylation-site motifs of the Nek kinase family members. (B) Similarity matrix and dendrogram showing the percentage identity between the amino acid sequences of the Nek kinase domains. (C) Heatmap depicting the OPLS data for the phospho-acceptor site position. Measured intensities of individual dots on OPLS dot blots were normalized to the average of all values in the position (e.g. −1 position), averaged over multiple experiments, and log2-transformed (n ≥ 2). Nek family members are ordered according to the clustering shown in panel (A). For each Nek the amino acid C-terminal to the DFG-motif (DFG+1) is depicted underneath the heatmap. (D) As in panel (A), but the phospho-acceptor specificity data was excluded from the clustering analysis. (E) As in panel (C), but for the −5 (left panel), −4 (middle panel) and −2 (right panel) position to emphasize the distinct specificities of the Nek6/7/9 group (boxed sections). (F) Surface representation of the substrate binding sites of Nek1 (PDB: 4APC) and Nek7 (PDB:5DE2). Surface is shaded according to electrostatic potential. The dotted yellow lines indicate specific basic patches in the Nek7 structure that potentially interact with acidic residues in the substrate. Peptide and ANP-Mn was modeled into the Nek1 and Nek7 structures by alignment with the Akt/GSK3-peptide structure (PDB: 1O6L; Figure 3D). (G) Purified Nek3 (left panel) or Nek7 (right panel) was incubated with peptide substrates and radiolabeled ATP. Peptide phosphorylation was quantified by scintillation counting. The phosphorylation rate was determined by linear regression (Mean ± SEM, n = 3, **p<0.005).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Heatmaps depicting the OPLS data for the indicated positions. Data are represented as log2-transformations of measured intensities normalized to the average of all values measured for that position. Nek family members are ordered according to the clustering shown in Figure 6A.
+
 To rationalize the unusual selectivity for acidic residues displayed by Group 4 Nek kinases, we compared the X-ray crystal structures of the Nek1 and Nek7 kinase domains (Haq et al., 2015; Melo-Hanchuk et al., 2017). This revealed the presence of two basic regions in Nek7 that are absent from Nek1, and might accommodate acidic residues N-terminal of the phospho-acceptor site (Figure 6F). Additional crystal structures of these kinases with substrate peptides will be necessary to experimentally validate these observations. To further investigate the relevance of these motif differences between Group 4 and the other Nek kinases in substrate phosphorylation, we then performed in vitro kinase assays using Nek3 and Nek7 with either a good peptide-substrate for Groups 1 and 2 (13458-tide), or a good peptide-substrate for Group 4 (679-tide). As predicted, 13458-tide was a considerably better substrate for Nek3 than 679-tide, and this was reversed for Nek7 (Figure 6G).
 
-## Nek6/7/9 share a common substrate motif with Polo-like kinase 1 and can phosphorylate the same substrates
+### Nek6/7/9 share a common substrate motif with Polo-like kinase 1 and can phosphorylate the same substrates
 
 We noticed a striking resemblance between the Nek6/7/9 motif, and the phosphorylation-site motif previously obtained for Plk1 (Figure 7A; Alexander et al., 2011). This resemblance is unlikely to result from Plk1 contamination of the Nek6/7/9 preparations since no phosphorylation signal was observed in OPLS-experiments performed using kinase-dead variants of these Nek kinases (Figure 1—figure supplement 2), unless the activity of contaminating Plk1 was dependent in some way on the activity of Nek6/7/9. To further address this potential concern, we analyzed the isolated Nek kinase preparations for co-purified Plk1 by immunoblotting (Figure 7—figure supplement 1). We could readily detect Plk1 in HEK 293T cell lysates, but could not detect Plk1 in any of the isolated Nek kinase preparations. We therefore conclude that the OPLS experiments identified the true substrate motifs for Nek6/7/9, and not of co-purified Plk1. We further analyzed the resemblance between the Nek6/7/9 and Plk1 motifs by hierarchical clustering of the Nek-family and Plk1 based on substrate motif data from OPLS. This revealed that, with regard to substrate specificity, Nek6/7/9 are more related to Plk1 than they are to the other Nek kinases (Figure 7B). Importantly Plk1, together with Cdk1, has previously been reported as the upstream activator of Nek6/7/9 (Bertran et al., 2011). Hence, Plk1 and Nek6/7/9 not only operate together in a linear signaling cascade during mitosis, but also share the same phosphorylation-site motif, and hence could potentially phosphorylate a common set of substrates.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig7-v2.jpg)
+
+**Figure 7.:** (A) Table depicting the consensus phosphorylation-site motifs for the different Nek specificity groups, and for Plk1, with Ø indicating hydrophobic amino acids. The Plk1 motif was generated from data published in Alexander et al. (2011). (B) Similarity matrix and dendrogram depicting the Pearson correlation between the phosphorylation-site motifs of the Nek family members, and Plk1. (C) Sites in the Phosphositeplus database were scored using the Scansite algorithm for their match to the phosphorylation-site motifs of Plk1, Nek6, Nek7 and Nek9. The best scoring 10% were plotted in the Venn diagram to indicate the fraction of good potential target sites shared between the kinases. (D) Sites with reduced phosphorylation upon Plk1 inhibition or knockdown, as reported by Santamaria et al. (2011), were scored for their match to the Plk1 or Nek7 phosphorylation-site motif using the Scansite algorithm. Note that the lower the score, the better the phosphorylation site sequence matches the optimal motif, with a score of 0 indicating a perfect match. Dotted lines indicate the 25% cut-off for best scoring sites. (E) Purified wild-type (WT) or kinase-dead (KD) Plk1 or Nek7 was incubated with HA-tagged Cdc27 WT or S434A/S435A double mutant (SS/AA), followed by phosphorimaging (32P) and immunoblotting for kinase and Cdc27 substrate levels. To quantify the level of phosphorylation (32P/HA), the 32P signals were corrected for HA signal, and the resulting value for the WT kinase with WT substrate sample (lane 3) was set to 1. (F) As in panel (E), now using RacGAP1 WT or S170A mutant as substrate. (G) A model of the signaling interactions and common phosphorylation site motif shared between Plk1, Nek9, Nek6, Nek7 that result in potential phospho-motif amplification during mitosis.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44635/elife-44635-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** FLAG-tagged(3x) variants of either full-length Nek kinases or catalytic domains (Cat.) of Nek4 or Nek5 were isolated by anti-FLAG IP from lysates of transfected HEK 293T cells and eluted from the beads with FLAG-peptide. A fraction of the Total Cell Lysate (TCL) of selected Nek kinases, and of the eluates of all Nek kinases (α-FLAG IP), were analyzed by immunoblotting for FLAG-tagged Nek kinase and for Plk1, followed by read-out on the Odyssey infrared imager. FLAG-tagged Nek kinase was detected in the 670 channel, but due to the high quantities of Nek kinase on the membrane, some signal was present in the 800 channel as well. This can be observed in the bottom panel which depicts a dark representation of the 670 channel used to detect Plk1. Red asterisks indicate Nek kinases, MBP = maltose-binding protein.
 
 To assess potential substrate overlap, we used the quantitative specificity information derived from the OPLS experiments to predict substrates for Plk1 and Nek6/7/9 using the Scansite scoring algorithm (Obenauer et al., 2003). We restricted the scoring to sites that are present in the Phophositeplus database of previously reported phosphorylation sites in the human proteome, to exclude sites that are potentially not surface-accessible (Hornbeck et al., 2015). We considered the top 10% of best scoring sites as potential targets. This analysis revealed a substantial overlap in candidate substrates among the different kinases: over 50% of Plk1 target sites were also predicted to be a good target site for at least one of the Nek kinases, and a total of 2801 sites were predicted to be good target sites for all four kinases (Figure 7C).
 
@@ -128,15 +196,382 @@ Finally, our study showed that Nek6/7/9 share a common phosphorylation motif wit
 
 ## Materials and methods
 
-## Cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U-2 OS</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# HTB-96, RRID:CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U-2 OS Nek10 KO</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Nek10 gene was edited by CRISPR technique, selected clone</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U-2 OS Nek10KO + ind Nek10</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dox-inducible Nek10 was introduced in the Nek10 KO clone</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG M2</td>
+      <td>Sigma</td>
+      <td>Sigma-Aldrich Cat# F1804, RRID:AB_262044</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-FLAG</td>
+      <td>Sigma</td>
+      <td>Sigma-Aldrich Cat# F7425, RRID:AB_439687</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-HA 3F10</td>
+      <td>Roche</td>
+      <td>Roche Cat# ROAHAHA, RRID:AB_2687407</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-B-Actin</td>
+      <td>Sigma</td>
+      <td>Sigma-Aldrich Cat# A2228, RRID:AB_476697</td>
+      <td>WB 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-B-Actin</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 4967, RRID:AB_330288</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phosphotyrosine</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 8954, RRID:AB_2687925</td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Plk1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-5585, RRID:AB_2167406</td>
+      <td>WB 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Plk1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-17783, RRID:AB_628157</td>
+      <td>WB 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal -anti-Mouse 800/680</td>
+      <td>LI-COR Biosciences</td>
+      <td>LI-COR Biosciences Cat# 926–32210, RRID:AB_621842</td>
+      <td>WB 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal-anti-Rabbit 800/680</td>
+      <td>LI-COR Biosciences</td>
+      <td>LI-COR Biosciences Cat# 926–32211, RRID:AB_621843</td>
+      <td>WB 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal-anti-Rat 800</td>
+      <td>LI-COR Biosciences</td>
+      <td>LI-COR Biosciences Cat# 926–32219, RRID:AB_1850025</td>
+      <td>WB 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 affiinity gel</td>
+      <td>Sigma</td>
+      <td>Sigma-Aldrich Cat# A2220, RRID:AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA affinity matrix</td>
+      <td>Roche</td>
+      <td>Roche Cat# 11815016001, RRID:AB_390914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>V1900-Nek3-3xFLAG (idem for Nek4-Nek9)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloned from ORFeome into V1900 (pCMV-Sp6 with C-term. FLAG-tag)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-3xFLAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>A 3xFLAG primer dimer was cloned by restrion ligation into pcDNA3 for C- or N-terminal tagging</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-Nek1-3xFLAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR NEK1 from ORFeome, cloned into pcDNA3-3xFLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-Nek4 Cat.-3xFLAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR Nek4 Catalytic domain from V1900-Nek4, cloned into pcDNA-3xFLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-MBP-3xFLAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR maltose binding protein, cloned into pcDNA-3xFLAG (N-term.)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-MBP-3xFLAG-Nek5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR Nek5 Catalytic domain from V1900-Nek5, cloned into pcDNA-MBP-3xFLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-3xFLAG-TEV-2xstrep-6xHIS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>A gene block with the complete tag was cloned into pcDNA3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-Nek2-3xFLAG-TEV- 2xstrep-6xHIS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Nek2 Catalytic domain PCR from copy-DNA, cloned into pcDNA3-3xFLAG-TEV-2xstrep-6xHIS</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-3xFLAG-Nek10</td>
+      <td>PMID: 20956560</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA-3xFLAG-Nek10</td>
+      <td>this paper</td>
+      <td></td>
+      <td>PCR correction of missing cDNA fragment, cloning into pcDNA3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-RSF-Plk1 Cat Domain</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR Cat domain Plk1, cloning into pET-RSF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA-2xHA-Strep</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pcDNA3 modified with a 2xHA-1xStrepTAGII</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA-2xHA-Strep-Cdc27</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR Cdc27 from copy-DNA cloe into pcDNA-2xHA-Strep</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA-2xHA-Strep-RacGAP1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PCR RacGAP1 from copy-DNA cloe into pcDNA-2xHA-Strep</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LentiGuide-Puro</td>
+      <td>Addgene 52963</td>
+      <td>RRID:Addgene_52963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LentiGuide-Puro Nek10 sgRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GTCTGAGCCCGCCATCAGGG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LentiGuide-Puro Cas9 sgRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CTTGTACTCGTCGGTGATCA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-Cas9-Zsgreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cas9 from addgene 50661 into pLVX-ZsGreen</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX335-Cas9(D10A)</td>
+      <td>Addgene 42335</td>
+      <td>RRID:Addgene_42335</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCW-3xFLAG-Nek10-T2A-eGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Replace Cas9 in addgene50661 with Nek10-T2A-eGFP, replace puromycin with blasticidin cassette</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3xFLAG peptide</td>
+      <td>APExBIO</td>
+      <td>3xFLAG peptide_APExBIO:A6001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Kinase substrate library group I</td>
+      <td>Anaspec</td>
+      <td>Kinase substrate library group I_Anaspec:AS-62017–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Kinase substrate library group II</td>
+      <td>Anaspec</td>
+      <td>Kinase substrate library group II_Anaspec:AS-62017–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Kinase substrate library 0 column S/T/Y</td>
+      <td>Anaspec</td>
+      <td>Custom order</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Tyrosine peptide library</td>
+      <td>JPT</td>
+      <td>Custom order</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Odyssey blocking buffer</td>
+      <td>LI-COR Biosciences</td>
+      <td>Odyssey blocking buffer in PBS_LI-COR:927–40000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morpheus</td>
+      <td>https://software.broadinstitute.org/morpheus/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pintool</td>
+      <td>V and P Scientific</td>
+      <td>Tube style floating pin_V and P Scientific:FP3S200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mantis nanodispenser</td>
+      <td>Formulatrix</td>
+      <td>Manti liquid handler_Formulatrix</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>p81 phosphocellulose paper</td>
+      <td>Reaction biology</td>
+      <td>P81 Ion exchange celluose chromatography paper_Reaction Biology Corp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Strep-Tactin XT superflow</td>
+      <td>IBA lifesciences</td>
+      <td>Strep-Tactin XT superflow_IBA Life sciences:2–4010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nickel-column</td>
+      <td>GE healthcare</td>
+      <td>Ni Sepharose 6 Fast flow_GE healthcare:17531801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin membrane</td>
+      <td>Promega</td>
+      <td>SAM2 Biotin capture mebrane_Promega:V686X</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning
 
 Coding DNA sequences of Nek1 and Nek3-Nek9 were obtained from the CCSB-Broad Human Kinase ORF collection. Using gateway cloning technology, Nek3-Nek9 were cloned into V1900 (a kind gift from Karen Colwill/Tony Pawson, The Lunenfeld-Tanenbaum Research Institute, Toronto, ON, Canada) a gateway destination vector derived from pCMV-Sp6 with a C-terminal 3xFLAG epitope tag (DYKDHDGDYKDHDIDYKDDDDK). All other cloning was done by restriction ligation, Quick-Fusion cloning (Biotool.com) or Gibson assembly using the NEBuilder HiFi DNA assembly Cloning Kit (New England Biolabs). Nek1 was PCR amplified from the ORFeome entry vector, and cloned into pcDNA3 that was re-engineered to contain a C-terminal 3xFLAG tag (pcDNA3-MCS-3xFLAG). The Nek4 kinase domain (aa: 1–300) was PCR amplified from the V1900-Nek4 plasmid, and cloned into pcDNA3-MCS-3xFLAG. The Nek5 kinase domain (aa: 2–300) was PCR amplified from the V1900-Nek5 plasmid, and cloned into pcDNA3, which was reengineered with an N-terminal MBP (maltose-binding-protein)−3xFLAG epitope tag. The Nek2 kinase domain (aa: 1–271) was PCR amplified from copy-DNA generated from U-2 OS mRNA, and cloned into pcDNA3, which was reengineered with a C-terminal 3xFLAG-TEV-2xStreptagII-6xHIS epitope tag. (TEV: Tobacco Etch Virus cleavage site (ENLYFQG), StreptagII: WSHPQFEK). The construct pCMV-3xFLAG-Nek10 has been described previously (Moniz et al., 2011). A small missing region in the Nek10 cDNA (bp: 2869–3012) was repaired by PCR, and the cDNA including N-terminal 3xFLAG-tag was subcloned into pcDNA3, or the cDNA without 3xFLAG-tag was subcloned into pcDNA3-2xHA-Strep, which is a pcDNA3-variant that was reengineered for epitope-tagging with an N-terminal 2xHA-StreptagII epitope tag (HA: YPYDVPDYA). The Plk1 kinase domain (aa: 38–346) was PCR amplified from plasmids previously described and cloned into pET-RSF (Elia et al., 2003). Cdc27 and RacGAP1 cDNA was PCR amplified from copy-DNA, and cloned into pcDNA3-2xHA-Strep. All mutants of the Neks, and Cdc27 and RacGAP1 mutants, were generated by PCR-mediated mutagenesis. All kinase-dead variants were made by mutation of the aspartic acid in the conserved HRD motif into an asparagine, and in case of Nek4, an additional aspartic acid to asparagine mutation was made in the conserved DFG-motif (DLG in case of Nek4). In order to make the Nek10 KO cell-line, a Nek10-targeting sgRNA (sequence: GTCTGAGCCCGCCATCAGGG) was cloned into lentiGuide-Puro (addgene #52963), and Cas9 was subcloned from pCW-Cas9 (addgene #50661) into pLVX-Cas9-ZsGreen. In addition, a Cas9-targeting sgRNA (sequence: CTTGTACTCGTCGGTGATCA) was cloned into lentiguide-puro. The inducible Nek10 construct was generated by replacing Cas9 in pCW-Cas9 with 3xFLAG-Nek10-T2A-eGFP. Silent mutations were introduced in the PAM-sequence of the Nek10 sgRNA target site, and the puromycin cassette in pCW was replaced with a blastidicin resistance cassette.
 
-## Protein production and purification
+### Protein production and purification
 
 All Nek kinases, unless indicated otherwise below, were purified from transiently transfected HEK 293T cells. In short, 7 × 106 HEK 293T cells were plated in 15 cm plates, and the next day transfected with 20–25 µg kinase-DNA using polyethyleneimine (PEI). After O/N incubation, transfection medium was replaced with fresh medium, and another 24 hr later cells were washed with PBS and harvested by scraping in lysis buffer (20 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton-X100, 1 mM DTT) supplemented with protease inhibitors (complete EDTA-free protease inhibitor cocktail, Roche) and phosphatase inhibitors (PhosSTOP, Roche). Lysates were incubated on ice for 20 min, and cleared by centrifugation. Next, anti-FLAG M2-affinity gel (Sigma) was added to the cleared lysate, followed by incubation for 2 hr at 4°C while rotating. After incubation, the beads were pelleted by centrifugation, washed twice with lysis buffer and washed twice again with wash buffer (50 mM HEPES pH 7.4, 100 mM NaCl, 1 mM DTT, 0.01% NP-40, 10% glycerol). Protein was eluted from the beads by incubation for 1 hr at RT (while rotating) with 150–250 µl wash buffer supplemented with phosphatase inhibitors (PhosSTOP, Roche) and 0.5 mg/ml 3xFLAG peptide (APExBIO). To determine concentration and purity, a BSA standard curve and a sample of the eluate were analyzed by SDS-PAGE and Coomassie-staining (SimplyBlue Safe stain, Life Technologies). Eluted kinase was either used directly, or snap-frozen and stored at −80°C. The 2xHA-Streptag-Nek10 KD (HA-tagged Nek10 KD, Figure 5) was isolated essentially exactly as described above. However, Strep-Tactin XT superflow (IBA lifesciences) was used instead of anti-FLAG affinity gel, the composition of the wash buffer was different (100 mM Tris pH 8, 150 mM NaCL, 1 mM EDTA) and the kinase was eluted in 1x Biotin elution buffer BXT (IBA lifesciences). Plk1 was isolated from bacteria. A BL21 Rosetta two strain was transformed and induced to express the 6xHIS-MBP-TEV-tagged Plk1 kinase domain. The bacteria were lysed, followed by incubation with an Amylose resin (New England Biolabs)) and elution with maltose. In case of constitutively active T210D Plk1, a second purification step on a nickel-column (Ni Sepharose 6 Fast Flow, GE Healthcare) was performed, followed by imidazole-elution.
 
-## Oriented Peptide Library Screen
+### Oriented Peptide Library Screen
 
 Oriented Peptide Library Screens were performed as described in Hutti et al., but with a slightly adapted protocol so that the assay could be done in 1536-well plates (Hutti et al., 2004). The serine/threonine peptide library (Kinase Substrates Library, Group I and Group II, Anaspec) consists of 198 peptide pools with the sequence Y-A-Z-X-X-X-X-S/T-X-X-X-X-A-G-K-K-(LC-Biotin)-NH2, were X = mixture of all natural amino acids except Cys, Ser and Thr, S/T = equal mixture of Ser and Thr, and LC-Biotin = long chain biotin. In each peptide pool, the Z is fixed to be a single amino acid, which can be any of the 20 natural amino acids or phospho-Thr or phospho-Tyr. In the example, the Z is positioned on the P-5 relative to the S/T, but in the complete library the Z would be fixed in a position ranging from −5 to +4 relative to the S/T. Hence, there are nine different positions and 22 different amino acids, generating 198 different peptide pools. In addition, the library contains three peptide pools that are completely degenerate with the exception of a fixed Ser, Thr or Tyr as phospho-acceptor site for use in determining the 0 position (Figure 1—figure supplement 1A). The tyrosine-peptide library (custom order, JPT) consisted of peptide pools with the sequence G-A-Z-X-X-X-X-Y-X-X-X-X-A-G-K-K-(LC-Biotin)-NH2, and in this library Cys, Ser, Thr and Tyr were absent from the amino acid mixtures on the X positions. All peptides were dissolved in DMSO to 7.5 mM for the Ser/Thr library, and 5 mM for the Tyr-library. The peptides were arrayed in a 1536-well plate by multi-channel pipetting, and diluted to 500 µM with water.
 
@@ -144,7 +579,7 @@ For the kinase assay, 2.2 µl kinase buffer per well was dispensed in 1536-well 
 
 Spot intensities were quantified using ImageStudio (Li-COR BioSciences), and normalized by dividing the measured intensity for an individual spot by the average spot intensity for all amino acids in that position. For each kinase, OPLS-experiments were done at least twice, and normalized values were averaged for all replicates. In case of a fixed serine or threonine on the Z-position, the fixed residue presents a second acceptor site in addition to the 0-position S/T, and spot intensities are therefore high at those positions, which does not necessarily reflect real sequence preferences. To correct for this, normalized intensities for fixed S or T were changed to one in case of intensity >1. For Nek10 on the Tyr-library, the same was done but for intensities measured for fixed-Tyr peptides. The exception was the +1 Tyr, because we reasoned the normalized intensity >1 most likely reflected a true preference, considering its strong preference for aromatic amino acids. Next, normalized values were log2-transformed. These values were used to generate heatmaps using Morpheus (https://software.broadinstitute.org/morpheus/). These values were transformed to sequence logos with Seq2Logo (Thomsen and Nielsen, 2012).
 
-## In vitro kinase assays
+### In vitro kinase assays
 
 For in vitro kinase assays with a peptide-substrate, 5–50 nM of kinase was pre-incubated at 30°C for 30 min in the same kinase buffer as used for OPLS, but without the 0.1% Tween-20. Subsequently, [γ-33P]-ATP (or in some cases [γ-32P]-ATP) was added to a final concentration of 0.075–1 μCi/μl, and peptide added to a final concentration of 50 μM. Peptides were synthesized in-house at the 5 μmol starting resin scale per 96-well plate well, using an MultiPep small scale peptide synthesizer (Intavis) and standard FMOC chemistry. In addition to the peptide-specific 10-mer sequences indicated in the figure panels, each peptide had an N-terminal Y-A (or W-A for peptides of Nek10) sequence to allow concentration determination of peptide-solutions by UV-spectrophotometry. Also, each peptide had a C-terminal G-K-K-K sequence to increase solubility and interaction with phosphocellulose. After adding substrate and [γ-33P]-ATP, the mixture was incubated at 30°C for 20 min, and every 5 min a sample was spotted on p81 phosphocellulose papers (Reaction Biology Corp.), with the exception of some of the repeats with the Nek10 T693P variant, that were incubated for 1 hr or 2 hr, with spotting every 20 min or 30 min respectively. After spotting, the phosphocellulose papers were immediately soaked in 0.5% phosphoric acid. At the end of the assay, all papers were washed three times in 0.5% phosphoric acid, air-dried, transferred to vials with scintillation counter fluid and counted by a LS 6500 scintillation counter (Beckman Coulter). The resulting data points were analyzed by linear regression, and the phosphorylation rate was defined as the slope of the linear regression curve.
 
@@ -152,28 +587,28 @@ To study Nek10 auto-phosphorylation, 250 ng kinase was incubated in OPLS-kinase 
 
 To study Nek10 auto-phosphorylation in trans, 250 ng of FLAG-tagged kinase-proficient Nek10 was mixed with 250 ng of HA-tagged kinase-deficient Nek10 and 0.06 μCi/μl [γ-32P]-ATP in kinase buffer. The mixture was incubated at 30°C for 15 min to 2 hr, depending on the assay, and the reaction was stopped by adding lysis buffer supplemented with EDTA to a final concentration of 20 mM. The sample was split in half and incubated for 1 hr at RT (while rotating) with either anti-FLAG M2 affinity gel (Sigma) or anti-HA affinity matrix (mAb 3F10; Roche). The beads were washed once with lysis buffer, dried, and resuspended in 1xSB. Nek10 was eluted of the beads by boiling in 1xSB, the sample was split, and 1/4th was analyzed by SDS-PAGE followed by immunoblotting to asses total Nek10 levels, while 3/4ths was analyzed by SDS-PAGE followed by phosphorimaging to assess protein phosphorylation.
 
-## U-2 OS KO cell-line generation
+### U-2 OS KO cell-line generation
 
 All cell-lines were grown at 37°C in a humidified incubator supplied with 5% CO2, in DMEM supplemented with 10% FBS. All cell-lines were tested and shown to be free of mycoplasma contamination. Lentivirus was produced by transient transfection of HEK 293T cells using the CalPhos mammalian transfection kit (Clontech laboratories) to introduce packaging vectors (VSVg and GAG/POL/Δ8.2) and either pLVX-Cas9-Zsgreen, or lentiguide-PURO-Nek10 sgRNA, or pCW-Nek10-T2A-GFP-Blasticidin. The viral supernatant was filtered through a 0.45 μm filter and used to transduce U-2 OS target cells. First, U-2 OS cells were transduced with Cas9, followed by sorting for Zsgreen positive cells. These cells were then transduced with Nek10 sgRNA, followed by selection with puromycin (2 μg/ml; Invivogen). Doubly-transduced cells were subsequently cultured for 2 weeks to allow editing, and single cell sorted into 96-well plates. After expansion of the single-cell clones, gene editing was analyzed by PCR-amplifying the edited locus from gDNA, followed by Sanger sequencing of the PCR product, together with TIDE analysis (Brinkman et al., 2014).
 
 After selecting a Nek10-KO clone, Cas9 was removed by transfecting with a Cas9-sgRNA construct using lipofectamine 2000 (Thermo Fisher Scientific). Cells were cultured for 10 days and sorted for ZsGreen-negative cells. Immunoblot analysis indicated that although all cells were negative for Zsgreen, about 30% of Cas9-expression still remained. Next, the cells were transduced with the pCW-Nek10 constructs, followed by selection with Blasticidin S (10 μg/ml; Invitrogen). To select for cells without leaky expression of Nek10, but good induction upon treatment with doxycycline, the following was done: first, GFP-negative cells were sorted, followed by induction of Nek10 expression with 2 μg/ml doxycycline (Sigma) for several days, and a second round of sorting, this time on GFP-positive cells.
 
-## Antibodies and western blotting
+### Antibodies and western blotting
 
 Cell lysates was analyzed by SDS-PAGE, and transferred to nitrocellulose membranes by tank electrotransfer. Membranes were blocked using either 5% skim milk in Tris-Buffered-Saline (TBS), or with Odyssey blocking buffer (LI-COR BioSciences) for 1 hr at RT. Primary antibody probing was done either in 1% skim milk in TBS-T (TBS with 0.1% Tween-20), or in Odyssey blocking buffer, for 1-2 hr at RT, or O/N at 4°C. Primary antibodies used are Mouse-anti-FLAG M2 (1:1000; Sigma), Rabbit-anti-FLAG (1:1000; Sigma), Rat-anti-HA 3F10 (1:500; Roche), Mouse-anti-β-actin (1:10,000; Sigma), Rabbit-anti-β-Actin (1:1000, Cell Signaling Technology), Rabbit-anti-phospho-tyrosine P-Y-1000 (1:2000; Cell Signaling Technology), Mouse-anti-Plk1 F-8 (1:100; Santa Cruz Biotechnology, Inc) and Rabbit-anti-Plk1 (1:100; Santa Cruz Biotechnology, Inc). After primary antibody incubation, the membranes were washed 3x with TBS-T, followed by staining with secondary antibody in Odyssey blocking buffer for 1 hr at RT. Secondary antibodies used were Goat-anti-Mouse, Goat-anti-Rabbit, or Goat-anti-Rat, all from LI-COR, all 1:10,000, and all labeled with either IRDye 680 or IRDye 800. After secondary antibody staining, the membranes were washed again 3x with TBS-T, and imaged with an Odyssey CLx scanner (LI-COR BioSciences). Image analysis was done using ImageStudio (LI-COR BioSciences).
 
-## Nek10 auto-phosphorylation in cells
+### Nek10 auto-phosphorylation in cells
 
 To study phosphorylation in cells, U-2 OS cells were transfected with the 3xFLAG-Nek10 vector using lipofectamine 2000 (Thermo Fisher Scientific) for transient expression, or 3xFLAG-Nek10 expression was induced in the stable U-2 OS Nek10 KO cell lines with inducible Nek10 by treatment with docxycycline for 48 hr. The cells were lysed and Nek10 was immobilized on anti-FLAG beads as described in the ‘protein purification’ section above. Next, beads were washed three times with lysis buffer, and all bound proteins eluted by boiling in 1xSB. To study tyrosine phosphorylation, eluates and total cell lysates were analyzed by SDS-PAGE followed by immunoblotting. To analyze serine phosphorylation by mass spectrometry, eluates were separated by SDS-PAGE, followed by Coomassie staining of the gel. The band containing 3xFLAG-Nek10 was excised, reduced and alkylated, followed by in-gel trypsin digestion. Tryptic peptides were extracted, desalted and lyophilized. Next, phosphopeptides were enriched using the High-Select Fe-NTA phosphopeptide enrichment kit (ThermoFisher Scientific) per manufacturer’s instructions. The elution tubes were coated with trypsinized BSA to prevent loss of phospho-peptides from binding to the tube wall. Eluted phosphopeptides were re-suspended in 0.1% acetic acid and separated by reverse phase HPLC using an EASY- nLC1000 (Thermo) with a self-pack 5 µm tip analytical column (12 cm of 5 µm C18, New Objective). Next, peptides were ionized by nanoelectrospray and analyzed using a QExactive HF-X mass spectrometer (ThermoFisher Scientific). The full MS-scan was followed by MS/MS for the top 15 precursor ions in each cycle. Raw mass spectral data files (.raw) were searched using Proteome Discoverer 2.2 (Thermo) and Mascot version 2.4.1 (Matrix Science). In addition, for the phosphopeptide corresponding to N346-R365 of Nek10, the spectrum was manually annotated by comparison to predicted products using Protein Prospector (http://prospector.ucsf.edu/prospector/mshome.htm) to ensure correct phosphorylation site identification.
 
 For the Mass Spectrometry experiment depicted in Figure 3—figure supplement 1 , Nek10-deficient HEK 293T cells were generated using CRISPR/Cas9-mediated mutagenesis. In short, intronic sequences surrounding exon 24 of Nek10 (containing the DFG motif) were targeted by transfection with the Cas9(D10A) nickase and sgRNAs with the sequences TAAGGTATCATGCCCTCAT and CTACACTTCATAACCAA in the pX335 plasmid (Addgene 42335). Next, transfected cells were selected with puromycin, followed by expansion of single-cell clones, and PCR screening for deletion of exon 24. These cells were transfected to express FLAG tagged Nek10, followed by anti-FLAG IP and elution with anti-FLAG peptide. Nek10 was incubated in kinase buffer with or without ATP, and analyzed by Mass Spectrometry.
 
-## Motif analysis and substrate prediction
+### Motif analysis and substrate prediction
 
 The hierarchical clustering based on the OPLS-datasets was done using the averaged, normalized intensities, with the values for fixed Ser and Thr (except in the 0 position) set to one if >1 (also see OPLS section). Hierarchical clustering was done using Morpheus (https://software.broadinstitute.org/morpheus/) according to a One minus Pearson correlation metric with an average linkage method. For the clustering based on sequence, Nek kinase domain amino acid sequences were uploaded into JalVIEW, aligned with ClustalWS, and the % sequence identity used to derive a dendrogram and similarity matrix.
 
 To predict substrates of Plk1 and Nek6/7/9, we took the averaged, column-normalized intensities of the OPLS-experiments to generate a Position-Specific Scoring Matrix (PSSM), and scored every phosphorylated site in the Phosphositeplus database for their match to the PSSM using Scansite (Obenauer et al., 2003; Hornbeck et al., 2015). A Venn diagram was generated for the 10% best (i.e. lowest) scoring sites using the Venn diagram maker online (https://www.meta-chart.com/venn#/display). To predict mitotic substrates of Plk1 and Nek7, Table S2 from Santamaria et al. (2011) was used. The phosphosites that are not Class I phosphosites were removed, and duplicate sites were taken out, generating a hitlist of 694 sites consistent with what was reported in Santamaria et al. As above, this list of sites was scored using Scansite version four for their match to the Plk1 and Nek6/7/9 PSSM.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were done using Graphpad Prism. If the experiment contained two datasets, significance was calculated using a Students t-test, either paired or unpaired, and either regular or ratiometric, depending on what was most appropriate given the experimental conditions. If the experiment contained more than two datasets, an ANOVA with post hoc multiple comparison was performed.

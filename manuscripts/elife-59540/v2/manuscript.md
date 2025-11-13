@@ -27,25 +27,51 @@ In this study, we investigated the roles of Wnt signalling in the embryonic chic
 
 ## Results
 
-## Canonical Wnt activity forms a dorso-ventral gradient in the otocyst and is reduced in neurogenic and prosensory domains
+### Canonical Wnt activity forms a dorso-ventral gradient in the otocyst and is reduced in neurogenic and prosensory domains
 
 To examine the spatial pattern of Wnt activity during early prosensory specification, we electroporated the otic cup of E2 chicken embryos with a Wnt reporter plasmid 5TCF::H2B-RFP, containing 5 TCF binding sides (upstream of a minimal TK promoter) regulating the expression of a red fluorescent protein fused with Histone 2B (H2B-RFP) (Figure 1a). A control EGFP expression vector was co-electroporated to visualise all transfected cells. In all of the samples analysed at E3 (n > 12), RFP expression was confined to the dorsal 2/3 of the otocyst (Figure 1b–b’) on both medial and lateral walls (Video 1). Wnt ligands can diffuse and elicit spatial gradients of Wnt activity in some tissues (Pani and Goldstein, 2018; Farin et al., 2016). To test if this might be the case in the otocyst, we quantified reporter fluorescence intensity in individual cell nuclei according to their X and Y coordinates (Figure 1c, total of 7322 cell in seven samples). The results showed that cells with high Wnt activity occupy the dorso-posterior domain of the otocyst and those with low (or no) activity its ventral portion (Figure 1c). To confirm the presence of this Wnt gradient, we calculated the median intensity values of groups of nuclei located at 10 different levels along the dorso-ventral axis (Figure 1d). The plot revealed a relatively linear decrease in fluorescence, suggesting that cells located at different dorso-ventral positions are exposed to distinct Wnt activity levels.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig1-v2.jpg)
 
-**Figure 1.:** In all panels, dorsal (D) is up and anterior (A) is right. (a) E2 chicken embryos were co-electroporated either with Wnt reporter and a control plasmid T2-EGFP or Wnt reporter together with a Notch reporter and collected at E3. The Wnt reporter (5TCF::H2B-RFP) contains 5 TCF/LEF binding sites regulating an H2B-RFP fusion protein. In the Notch reporter (T2-Hes5::nd2EGFP), the mouse Hes5 promoter regulates expression of a nuclear destabilised EGFP. The control vector drives constitutive expression of EGFP. (b–b') Whole-mount view of an E3 otocyst electroporated with the Wnt reporter and a control plasmid. Wnt-responsive cells (b') are detected in the dorsal 2/3 of the otocyst. (c) Quantification of Wnt reporter fluorescent levels in individual cells from seven otocysts transfected with the Wnt reporter (see Materials and methods). A decreasing gradient of Wnt reporter fluorescence is observed along the dorso-ventral and postero-anterior axis of the otocyst. (d) Plot of the normalised median fluorescence levels of cells as a function of their position along the dorso-ventral axis of the otocyst. The standard deviation bars reflect variability in fluorescent intensity along the anterio-posterior axis. (e–e”) E3 chicken otocyst co-electroporated with the Wnt and Notch reporters and a control plasmid. The Notch reporter marks the prosensory cells in the antero-ventral prosensory domain (e”). (f) A representative scatter plot of the mean fluorescence values (f.v.) for Wnt (5TCF::H2B-RFP) and Notch (T2-Hes5::nd2EGFP) reporters in individual cells of the anterior prosensory domain. The two groups correspond to cells segmented using either the Notch (green) or Wnt (magenta) reporter fluorescence signal. The cells with high Notch activity tend to have low levels of Wnt activity, and cells with high Wnt activity have low levels of Notch activity, but there is no inverse correlation between the reporters activities at intermediate fluorescence intensity values.Figure 1—source data 1.
+**Figure 1.:** In all panels, dorsal (D) is up and anterior (A) is right. (a) E2 chicken embryos were co-electroporated either with Wnt reporter and a control plasmid T2-EGFP or Wnt reporter together with a Notch reporter and collected at E3. The Wnt reporter (5TCF::H2B-RFP) contains 5 TCF/LEF binding sites regulating an H2B-RFP fusion protein. In the Notch reporter (T2-Hes5::nd2EGFP), the mouse Hes5 promoter regulates expression of a nuclear destabilised EGFP. The control vector drives constitutive expression of EGFP. (b–b') Whole-mount view of an E3 otocyst electroporated with the Wnt reporter and a control plasmid. Wnt-responsive cells (b') are detected in the dorsal 2/3 of the otocyst. (c) Quantification of Wnt reporter fluorescent levels in individual cells from seven otocysts transfected with the Wnt reporter (see Materials and methods). A decreasing gradient of Wnt reporter fluorescence is observed along the dorso-ventral and postero-anterior axis of the otocyst. (d) Plot of the normalised median fluorescence levels of cells as a function of their position along the dorso-ventral axis of the otocyst. The standard deviation bars reflect variability in fluorescent intensity along the anterio-posterior axis. (e–e”) E3 chicken otocyst co-electroporated with the Wnt and Notch reporters and a control plasmid. The Notch reporter marks the prosensory cells in the antero-ventral prosensory domain (e”). (f) A representative scatter plot of the mean fluorescence values (f.v.) for Wnt (5TCF::H2B-RFP) and Notch (T2-Hes5::nd2EGFP) reporters in individual cells of the anterior prosensory domain. The two groups correspond to cells segmented using either the Notch (green) or Wnt (magenta) reporter fluorescence signal. The cells with high Notch activity tend to have low levels of Wnt activity, and cells with high Wnt activity have low levels of Notch activity, but there is no inverse correlation between the reporters activities at intermediate fluorescence intensity values.
+
+![Video 1.](https://cdn.elifesciences.org/articles/59540/elife-59540-video1.mp4.jpg)
 
 At E2–E3, Notch is active in the anterior neurosensory competent domain of the otocyst where it regulates the production of otic neuroblasts by lateral inhibition. To examine the relation between the spatial patterns of Wnt and Notch activities, we co-electroporated fluorescent Wnt and Notch reporters together with a control plasmid driving expression of 3xnls-mTurquoise2 (a blue fluorescent protein) in the E2 otic cup (Figure 1e). The Notch reporter T2-Hes5::nd2EGFP consisted of a mouse Hes5 promoter driving the expression of a nuclear and destabilised EGFP (Chrysostomou et al., 2012). In samples collected 24 hr after electroporation, we observed an overlap between Wnt and Notch reporters at the dorsal border of the anterior neurosensory-competent domain (n > 5) (Figure 1e’–e”). However, the quantification of the mean fluorescence levels of both reporters in single cells revealed an inverse correlation between the fluorescence levels of Wnt and Notch reporters within transfected cells (Figure 1f) suggesting a potential antagonism between Wnt and Notch activity.
 
-## Wnt activity antagonises notch signalling in the otocyst
+### Wnt activity antagonises notch signalling in the otocyst
 
 To test the interactions between Wnt and Notch signalling, we used gain- (GOF) and loss-of-function (LOF) β-catenin constructs: a full-length constitutively active β-catenin carrying the S35Y mutation (βcat-GOF) to induce Wnt activity; a truncated form of β-catenin composed of the Armadillo domain only to block Wnt (βcat-LOF) (Figure 2a). To validate their effects, we co-transfected these with the Wnt reporter at E2 and examined the otocysts 24 hr later. Compared to control conditions (Figure 2b–b’), βcat-GOF led to a clear expansion of the Wnt reporter fluorescence in the ventral otocyst (n = 6) (Figure 2c–c’). Conversely, overexpressing βcat-LOF restricted Wnt reporter fluorescence (n = 4) to the most dorsal territories of the otocyst (Figure 2d–d’), suggesting a strong reduction in Wnt activity levels. Having confirmed the ability of these constructs to activate or reduce canonical Wnt signalling, we next examined their impact on Notch activity.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig2-v2.jpg)
+
+**Figure 2.:** (a–d’) Schematic representation of the Piggybac, Tol2, and RCAS constructs used for β-catenin gain- (GOF) and loss-of-function (LOF) experiments. The PB-βcat-GOF and T2-βcat-GOF contain the full-length β-catenin including the α-catenin binding domain (αCat-BD), 12 Armadillo domains, the transactivator (TS) motif, and the S33Y mutation preventing phosphorylation and degradation. The RCAS-βcat-LOF and T2-βcat-LOF constructs drive expression of a truncated form of β-catenin comprising the Armadillo repeats only. (b–d’) Activity of the Wnt reporter in E3 otocysts co-electroporated with either T2-EGFP (control; b–b’), PB-βcat-GOF (c–c’), or RCAS-βcat-LOF (d–d’). Note the ventral expansion of the Wnt reporter fluorescence in (c–c’) and its restriction to the most dorsal part of the otocyst in (d–d’). (e–g’) Activity of the Notch reporters T2-Hes5::nd2EGFP or Hes5::d2FP635 in E3 otocysts co-electroporated with either T2-mCherry (control, e–e’), T2-βcat-LOF (f–f’), or PB-βcat-GOF (g–g’). The Notch reporter is normally activated in the anterior (arrowhead) and to a lesser extent posterior (asterisk) prosensory domains of the otocyst (e–e’). It is strongly upregulated in dorsal regions transfected with the T2-βcat-LOF construct (brackets in f–f’), but barely detectable in otocysts co-electroporated with PB-βcat-GOF (g–g’). On the other hand, manipulation of Notch activity had no discernible effect on the activity of the Wnt reporter (Figure 2—figure supplement 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a–c’) Whole mounts of E3 chicken otocysts co-electroporated with Wnt reporter 5TCF::H2B-RFP and a control plasmid T2-EGFP or constructs activating (pNICD1-EGFP) and blocking (pDN-MAML1-EGFP) Notch signalling. There are no major changes in the dorso-ventral pattern of activation of the Wnt reporter in response to gain- and loss-of-Notch function (a’, b’, c’).
+
 In control experiments, the Notch reporter T2-Hes5::nd2EGFP was activated in the anterior neurosensory domain, with few cells with weaker Notch activity present in the posterior prosensory domain (Figure 2e–e’). After co-electroporation with the βcat-LOF construct, Notch activity expanded beyond the prosensory domains and in the dorsal otocyst (n = 5) (Figure 2f–f’). In contrast, co-electroporation with the βcat-GOF construct strongly decreased Notch activity so that only a few Notch-active cells were detected within the anterior domain (n = 5) (Figure 2g–g’). To test if Notch activity could reciprocally regulate Wnt signalling, we co-transfected the Wnt reporter with constructs previously shown to activate (chicken Notch one intracellular domain or NICD1, see Daudet and Lewis, 2005) or block (dominant-negative form of human Mastermind-like1 or DN-MAML1, see Maillard et al., 2004) Notch activity. The intensity or spatial pattern of activation of the Wnt reporter in response to manipulations in Notch activity remained very similar to that of controls (Figure 2—figure supplement 1). Altogether, these results show that canonical Wnt signalling antagonises Notch activity in the otocyst, whilst Notch does not appear to affect the levels and spatial pattern of Wnt activity.
 
-## Genetic manipulation of Wnt activity disrupts prosensory specification in a location-specific manner
+### Genetic manipulation of Wnt activity disrupts prosensory specification in a location-specific manner
 
 We next tested the effects of manipulating Wnt activity on prosensory specification. Samples electroporated at E2 were collected at E4, then immunostained for Jag1 and Sox2. In controls, Jag1 and Sox2 were detected in the anterior and posterior prosensory domains and within a U-shaped band of cells extending in between these two domains in the ventral half of the otocyst (Figure 3a–a”). The overexpression of βcat-GOF reduced, in a cell-autonomous manner, the levels of Jag1 and Sox2 expression in the majority of transfected prosensory cells but did not induce any change in the dorsal region of the otocyst (n = 6) (Figure 3b–c’’, Figure 3—figure supplement 1a–d). In contrast, βcat-LOF induced the formation of ectopic prosensory patches in the dorsal otocyst (n = 6) (Figure 3d–d”). All ectopic patches were positive for Sox2, but only some expressed Jag1 (Figure 3e–e”). The ability of βcat-LOF to induce ectopic prosensory territories dorsally was dependent on functional Notch signalling. In fact, very few ectopic patches formed in samples co-transfected with βcat-LOF and DN-MAML1 (Figure 3—figure supplement 2a–b’”). In the ventral otocyst, however, the consequences of decreasing Wnt signalling were radically different: βcat-LOF transfected cells exhibited a loss of Sox2 expression (Figure 3f–g”), suggesting a loss of prosensory character (n = 6). To investigate the potential effects of Wnt signalling on otic neurogenesis, otic cups were electroporated with either control or βcat-LOF constructs, collected at E4, then immunostained for Islet1, a LIM homeobox transcription factor expressed by otic neuroblasts. In all otocysts, Islet1 was strongly expressed in the neuroblasts delaminating from the anterior neurogenic patch (Figure 3—figure supplement 3a–b’). However, in otocysts electroporated with the βcat-LOF construct, we noticed that some transfected cells were clustered outside of the epithelial lining of the dorsal and posterior otocyst (n = 3/4) (Figure 3—figure supplement 3a–a’). These cells expressed Islet1 (Figure 3—figure supplement 3b–c’), which strongly suggests that they are ectopic delaminating otic neuroblasts. This result indicates that Wnt signalling regulates both prosensory and neuronal specification in the otocyst.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig3-v2.jpg)
+
+**Figure 3.:** Whole-mount views of E4 chicken otocysts electroporated at E2 and immunostained for Jag1 and Sox2 expression. (a–a”) Control sample electroporated with T2-mCherry. Jag1 and Sox2 are expressed in a U-shaped ventral common prosensory-competent domain (psd) and prospective prosensory domains (pc = posterior crista; ac=anterior crista). (b–c”) βcat-GOF overexpression induces a mosaic down-regulation of Sox2 and Jag1 expression (arrowheads) in the ventral half of the otocyst. High magnification views of transfected cells (arrowheads in c–c’’) and analysis of mean fluorescence values of Sox2 and βcat-GOF (Figure 3—figure supplement 1a–e) show that this effect is cell-autonomous. (d–g”) Otocysts transfected with T2-βcat-LOF exhibit a dorsal expansion of Jag1 and Sox2 expression (star in d’–d’’) and ectopic prosensory patches dorsally (arrowheads in d’–d’’, f’’) and high magnification views in (e–e’’). Note that some ectopic Sox2-positive patches are Jag1-negative (arrows in e’–e’’). The prosensory effects of βcat-LOF were dependent on Notch activity (Figure 3—figure supplement 2a–b’”). In contrast, in the ventral-most aspect of the otocyst, βcat-LOF overexpressing cells exhibit reduced Sox2 expression (arrowheads in high magnification views g–g’’). Overexpression of βcat-LOF elicits the formation of ectopic Islet-1 expressing otic neurons in the posterior and dorsal aspect of the otocyst (Figure 3—figure supplement 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** In figures (a) and (c) the white line indicates the line selected for the profile plots shown in (b) and (d). The line profile plots (b and d) show that transfected cells with high levels of EGFP fluorescence (black arrowhead) have in general lower levels of Sox2 expression than untransfected cells. (e) Box plots of the average Sox2 fluorescence intensity within individual nuclei of untransfected (control) versus βcat-GOF transfected cells selected from two samples. Statistical analyses show a significant reduction in the levels of Sox2 expression in βcat-GOF transfected cells (p<0.01; Mann–Whitney U = 46,503 and U = 28,973 for respectively samples 1 and 2).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Whole mount of an E4 otocyst co-electroporated with T2-βcat-LOF and a dominant-negative form of Maml1 (pDN-MAML1-EGFP) and immunostained for Sox2. (a–a’’) Sox2-expressing cells occupy the ventral half of the otocyst. There is no noticeable dorsal expansion of Sox2 expression (compare with Figure 3) and only a very limited number of EGFP-positive cells with ectopic Sox2 expression (arrows and high magnification views in b–b’”) are present in the dorsal half of the otocyst.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a–a’) Whole-mount views of an E4 otocyst electroporated at E2 with a control T2-mCherry vector and immunostained for the otic neuronal marker Islet1. The cochleo-vestibular ganglion (star) is on the anterior side of the otocyst. (b–c’) In the T2-βcat-LOF transfected otocyst, ganglion-like clusters of Islet1-expressing cells are present in posterior and dorsal locations (arrowheads). (c–c’) A higher magnification view of the posterior region of the otocyst shown in (b). Note the presence of Islet1-positive cells within the epithelial lining of the otocyst itself (arrow).
 
 To assess the long-term consequences of these manipulations on sensory organ formation, we incubated some of the embryos electroporated at E2 with transposon vectors (allowing stable integration of the transgenes) until E7, a stage when individualised sensory organs can be easily identified. Transfected inner ears were immunostained for Sox2 and two proteins expressed in differentiated hair cells: Myosin7a (Myo7a), an unconventional myosin expressed in hair cell cytoplasm and the hair cell antigen (HCA), a protein tyrosine phosphatase receptor expressed in hair cell bundles (Gibson et al., 1995; Goodyear et al., 2003). In control EGFP-transfected samples, inner ear morphology was normal and hair cells were detected in the vestibular organs (the saccule, utricle, and the three cristae) but not in the basilar papilla extending within the ventral cochlear duct (Figure 4a–a”). Severe malformations were observed upon transfection with the βcat-GOF construct: four out of five samples analysed lacked some of the vestibular organs; the remaining patches were small and abnormally shaped but populated with hair cells (Figure 4b–c”). The basilar papilla was either shortened or missing in four samples. Surprisingly, the EGFP signal of the two βcat-GOF constructs (cloned in Piggybac and Tol2 vectors) tested for these experiments was seen 24 hr post-electroporation but not at E7, suggesting that the transfected cells might have been eliminated from the epithelium by this stage (Figure 4b,c). Long-term overexpression of βcat-LOF (using RCAS or Tol2 vectors) severely altered the morphogenesis of the inner ear (n > 6) (Figure 4d–d”). Many ectopic Sox2-positive patches of various sizes occupied the dorsal region of the inner ear (Figure 4d–d’). These were populated by hair cells (Figure 4e–e”), suggesting that the ectopic (dorsal) prosensory patches observed at E4 in βcat-LOF conditions can differentiate into mature sensory territories. In contrast, the loss of Wnt activity in ventral regions blocked the formation of the cochlear duct and basilar papilla (Figure 4d–d”). The only Sox2-positive cells remaining in the ventral region of the inner ear were untransfected; they formed small patches surrounded by Sox2-negative cells transfected with the βcat-LOF construct (Figure 4f–f”).
 
@@ -55,7 +81,7 @@ To assess the long-term consequences of these manipulations on sensory organ for
 
 Altogether, these results show that the early and sustained manipulation of Wnt activity affects the formation of the sensory organs and inner ear morphogenesis. The overactivation of Wnt signalling antagonises prosensory specification and may compromise long-term cell viability. On the other hand, reducing Wnt activity induces prosensory character dorsally, whilst in ventral regions it represses it. In light of the endogenous high-to-low gradient of canonical Wnt activity along the dorso-ventral axis of the otocyst, one possible explanation for these dual effects is that Wnt signalling regulates prosensory specification in a dose-dependent manner: high levels of canonical Wnt activity (dorsally) repress it, but low levels (ventrally) are however necessary for cells to acquire or maintain their prosensory character.
 
-## Wnt activity is maximal in dorsal and non-sensory territories of the developing inner ear
+### Wnt activity is maximal in dorsal and non-sensory territories of the developing inner ear
 
 To gain further insights into the temporal and spatial relationship between canonical Wnt activity and prosensory specification, we electroporated the otic placode of E2 (stage HH10) embryos with the Wnt reporter 5TCF::H2B-RFP and collected the samples at 6 hr (stage HH11), 12 hr (HH12), 24 hr (HH18), and 3 days (E5, HH26-27) post-electroporation. At HH11, Sox2 staining was detected throughout the otic placode but decreased in intensity towards its dorso-anterior side; a few cells with low Sox2 expression were also positive for the Wnt reporter in the dorsal rim of the otic placode (arrowheads in Figure 5a–a’”). At HH12, Sox2 staining was confined to the ventral half of the otic cup, with the strongest expression in the anterior prosensory domain (star in Figure 5b”). The Wnt reporter was detected in the dorsal side in a complementary manner to Sox2 expression (arrows in b’) and it overlapped with Sox2 at the dorsal limit of the prosensory domain (arrowheads in Figure 5b–b’”). As previously described, Wnt reporter activity was detected in the dorsal half of the HH18 (E3) otocyst, whilst Sox2 was confined to its ventral half; only a few cells at the dorsal edge of the prosensory domain were positive for the Wnt reporter and Sox2 (arrowheads in Figure 5c’–c’’’).
 
@@ -67,15 +93,23 @@ In order to study the pattern of Wnt activity at later stages of inner ear devel
 
 In summary, these results show that the gradient of Wnt activity observed at the otocyst stage is established progressively in a dorso-ventral manner from the otic placode stage and maintained at later stages of inner ear development. Remarkably, the dorsal suppression of Sox2 expression in the otic cup coincides with the upregulation of Wnt activity, which fits with the idea that high levels of Wnt signalling antagonise prosensory character.
 
-## Wnt activity regulates the positioning of neurosensory-competent domains
+### Wnt activity regulates the positioning of neurosensory-competent domains
 
 We next explored the effects of known modulators of Wnt activity on the spatial pattern of Sox2 and Jag1 expression. We first cultured E3 chicken otocysts in control medium or medium supplemented with lithium chloride (LiCl), which promotes canonical Wnt signalling by repressing GSK3β activity (Klein and Melton, 1996). In samples that had been previously electroporated at E2 with the Wnt reporter, a 24 hr treatment with LiCl induced an upregulation of the activity of the reporter in ventral territories of the otocyst (Figure 6a–b’). However, LiCl treatments (5–35 μM) did not abolish Sox2 expression but caused a dose-dependent shift of the position and orientation of the Sox2-positive prosensory domain towards the antero-ventral aspects of the otocyst (n = 5–7 per concentration) (Figure 6—figure supplement 1a–e). This suggests that increasing endogenous Wnt activity might repress prosensory specification in the ventro-posterior otocyst, but that the requirements for low levels of Wnt activity for prosensory specification may be limited to a developmental window before E3–4. We next tested the consequences of decreasing Wnt signalling by treating E3 chicken otocysts with IWR-1, a tankyrase inhibitor that stabilises Axin2 (Chen et al., 2009), a member of the β-catenin degradation complex. Compared to controls, IWR-1 treatment (300 µM) induced a strong reduction of the Wnt reporter in E3 otocysts cultured for 24 hr (Figure 6c–c’). We next compared the expression of Sox2 and Jagged1 in E3 otocysts (n = 4) maintained for 24 hr in either IWR-1 or DMSO. In controls, strong staining for both markers was detected in the anterior domain and weaker expression was present towards the posterior prosensory domain (Figure 6d–d”). In contrast, in samples treated with IWR1, Sox2 and Jag1 expression was markedly expanded in the dorsal half of the otocysts (Figure 6e–e”) and somewhat reduced in a vertical ventral domain located in the middle of the otocyst. Altogether, these results confirmed that Wnt activity represses prosensory specification and supported the hypothesis that the spatial pattern and levels of Wnt activity regulate the positioning of the prosensory territories of the inner ear.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig6-v2.jpg)
+
+**Figure 6.:** (a–c') Whole-mount views of otic cups co-electroporated with the Wnt reporter and a control EGFP vector and incubated for 24 hr in control medium (DMSO) (a–a’), or media supplemented with either the Wnt agonist LiCl (b–b’) or the antagonist IWR-1 (c–c’). (d–e’’) E3 otocysts cultured for 24 hr in IWR-1 or DMSO (vehicle) as a control. IWR-1 treatment results in a dorsal expansion of Sox2 and Jag1 staining. The effects of increasing concentration of LiCl on Sox2 expression are shown in Figure 6—figure supplement 1a–e.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59540/elife-59540-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a–e) Whole mounts of E3 chicken otocysts incubated for 24 hr in control medium or media enriched with increasing doses of LiCl. (a) In control condition, Sox2 marks a medial band of sensory-competent cells stretching along the antero-posterior axis of the otocyst. (b–e) With increasing doses of LiCl, there is a decrease of Sox2 expression in the posterior side (stars in c–e) as well as a noticeable shift of the orientation of the anterior Sox2-positive domain towards the ventral side.
 
 ## Discussion
 
 The axial patterning of the otocyst is regulated by the interactions between cell-intrinsic ‘fate determinants’ and the signalling pathways directing their expression to specific otic territories (Fekete and Wu, 2002). In this context, Wnt signalling has been proposed to act as an essential dorsalising factor. In fact, the dorsal hindbrain produces Wnt1 and Wnt3a, which are thought to trigger high Wnt activity and the expression of vestibular-specific genes in the dorsal otocyst (Riccomagno et al., 2005; Noda et al., 2012; Bok et al., 2005). In compound Wnt1/Wnt3a null mice or β-catenin null mice, the entire vestibular system fails to form and a poorly developed cochlear-like canal is the only remaining inner ear structure (Riccomagno et al., 2005). However, the specific roles of Wnt signalling in the formation of inner ear sensory organs remain unclear. In this study, we took advantage of the amenability of the chicken embryo to mosaic manipulation of gene expression to uncover new roles for Wnt signalling in prosensory and neuronal specification in the inner ear.
 
-## A dorso-ventral wave and gradient of canonical Wnt activity regulates the spatial pattern of otic neurosensory competence
+### A dorso-ventral wave and gradient of canonical Wnt activity regulates the spatial pattern of otic neurosensory competence
 
 Previous studies in transgenic mice harbouring TCF/Lef reporters Riccomagno et al., 2005; Noda et al., 2012 have shown that canonical Wnt is active in the dorsal otocyst. Our results with a fluorescent TCF/Lef reporter confirm these findings but also show a dorsal-to-ventral (and to some extent posterior-to-anterior) linear reduction in the fluorescence levels of individual cells in the chicken otocyst. This gradient could reflect differences in both dosage of, and total exposure time to, Wnt activity. In fact, dorsal cells are the closest to the hindbrain, which is the proposed source of Wnt ligands influencing otic patterning, but they are also the first to experience Wnt activity during inner ear development. Our data show that this Wnt gradient regulates the expression of Sox2, an essential factor for prosensory specification.
 
@@ -89,11 +123,11 @@ Previous studies investigating the roles of Wnt signalling in the early developi
 
 Strikingly, Rakowiecki and Epstein, 2013 also found that overexpressing an active form of β-catenin (lacking exon 3) in the embryonic mouse inner ear induces a loss of prosensory markers and hair cells in the anterior and posterior cristae. This result was at the time surprising, since an earlier study by Stevens et al., 2003 suggested that forcing Wnt activation in the chicken inner ear elicits the formation of ectopic sensory territories. The N- and C-terminal truncated form of β-catenin (containing the Armadillo repeats only, or βcat-LOF in our experiments) used by Stevens et al., 2003 was thought to be a GOF protein, since it can induce axis duplication as efficiently as the full-length β-catenin protein in Xenopus embryos (Funayama et al., 1995). However, we found that βcat-LOF represses the activity of the Wnt reporter in the otocyst, confirming that the C-terminal domain of β-catenin is required for its transcriptional activity (Herrera et al., 2014). Therefore, some of the effects reported in Stevens et al. (ectopic and fused vestibular sensory organs) after truncated β-catenin overexpression can be reconciled with our results and those of Rakowiecki and Epstein, 2013 if one considers that these were elicited by a reduction, and not a gain, of Wnt activity. One remaining puzzle is that ectopic vestibular-like sensory patches were present in the basilar papilla after infection with RCAS-βcat-LOF (Stevens et al., 2003), whilst we found that Tol2-mediated βcat-LOF overexpression completely abolishes sensory cell formation, including in the auditory organ. This discrepancy may be due to differences in the onset or levels of βcat-LOF expression after RCAS infection versus Tol2 electroporation, although further studies with inducible LOF and GOF forms of β-catenin will be necessary to confirm this and to determine if the dosage or timing of Wnt activity has an influence on specification of vestibular versus auditory organs.
 
-## Canonical Wnt acts upstream of notch signalling during neurosensory specification
+### Canonical Wnt acts upstream of notch signalling during neurosensory specification
 
 Functional interactions between Notch and Wnt signalling have been well documented during hair cell formation and otic placode formation (reviewed in Żak et al., 2015) but not during prosensory specification. Notch signalling functions in two different ways in the early otocyst (reviewed in Daudet and Żak, 2020): it regulates neuroblast formation by lateral inhibition (mediated by the ligand Dll1) and it promotes prosensory specification by lateral induction (Jag1). In this study, we found that Wnt signalling acts upstream of Notch signalling in the otic vesicle: βcat-LOF induced Jag1 expression and activation of a Hes5/Notch reporter throughout the otocyst, whilst the βcat-GOF had an opposite effect. On the other hand, forcing Notch activity by overexpressing NICD1 had no effect on the pattern of activation of the Wnt reporter in the otocyst. Nevertheless, the ability of βcat-LOF to induce large ectopic sensory territories requires Notch activity: in samples co-electroporated with βcat-LOF and DN-MAML1, which prevents the expression of Notch target genes, very few cells expressed Sox2 ectopically in the dorsal otocyst. Altogether, these results suggest that Sox2 expression is maintained by a positive feedback loop dependent on Jag1/Notch signalling (lateral induction) and repressed by a dose-dependent negative feedback from Wnt signalling (Figure 7b). The interplay of long-range inhibitory (Wnt in this case) and short-range activating (such as Notch) signalling has been well studied in theoretical models of tissue patterning (Gierer and Meinhardt, 1972). If a short-range activator can feedback positively on its long-range inhibitor, a periodic pattern of domains of two different types, forming for example stripes, can spontaneously emerge. In the otic vesicle, Notch activity does not feedback on Wnt signalling, which could explain the initial pattern of neurosensory competence: a broad domain of Sox2-positive cells located at some distance from the long-range inhibitory signal. However, it is possible that Wnt and Notch signalling cross-interact at subsequent developmental stages, and such interactions may contribute to the segregation of the original ‘pan-sensory’ domain into multiple sensory organs. Further insights into these interactions and the dynamics of production, diffusion, and degradation of Wnt ligands will be needed to elucidate their exact morphogenetic roles throughout otic development.
 
-## Context- and dose-dependent effects of canonical Wnt signalling in the developing inner ear
+### Context- and dose-dependent effects of canonical Wnt signalling in the developing inner ear
 
 Our findings provide further evidence for the great variety of context-dependent functions of Wnt signalling during inner ear development. At early stages of inner ear development, Wnt signalling regulates otic induction (Ladher et al., 2000), promotes otic versus epidermal fate in the cranial ectoderm (Ohyama et al., 2006; Freter et al., 2008), and is required for vestibular system morphogenesis (Riccomagno et al., 2005; Noda et al., 2012; Rakowiecki and Epstein, 2013). Previous studies have shown that the overexpression of an active form of β-catenin can supress the expression of neurogenic markers in the mouse inner ear (Ohyama et al., 2006; Freyer and Morrow, 2010), suggesting that high levels of Wnt activity repress otic neurogenesis. Our loss-of-function experiments and RNA-Seq analysis confirm this and point at a broader role for canonical Wnt as a negative regulator of both neuronal and prosensory specification in the otic vesicle. At later stages, however, Wnt activity becomes elevated in prosensory domains and has been implicated in the control of progenitor cell proliferation (Jacques et al., 2012; Jacques et al., 2014) and the patterning of auditory epithelia (Munnamalai and Fekete, 2016; Munnamalai et al., 2017). These context-specific roles could be explained by distinct co-factors or epigenetic changes that could modify the identify of Wnt target genes in different cell types and at different developmental stages. Another important factor, highlighted by our findings, is the dosage of Wnt activity: otic progenitors must be exposed to intermediate levels of Wnt activity to maintain a neurosensory fate and sustained activation of Wnt signalling may lead to cell death in the early otocyst. These insights are directly relevant to the design of improved protocols for the derivation of inner ear organoids from embryonic stem cells. In fact, our results could explain the effects of the Wnt agonist CHIR99021 (CHIR) on 3D stem-cell derived inner ear organoids: intermediate doses of CHIR promote sensory cell formation, but high doses reduce it (DeJonge et al., 2016). In their study, the authors used CHIR at a relatively early stage of organoid formation and concluded that the improvement with intermediate doses of CHIR was due to the ability of Wnt activity to promote otic induction (DeJonge et al., 2016). Our results do not refute this possibility, but they indicate that the time- and dose-dependent effects of Wnt activity on prosensory cell specification must also be considered to improve current protocols for in vitro derivation of inner ear sensory cells.
 
@@ -101,30 +135,348 @@ The major challenge ahead is to understand how the large repertoire of Wnt ligan
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>B-catenin (Ctnnb1)</td>
+      <td>GenBank</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (RRID:SCR_001905)</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td>Used for quantification and visualisation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity (RRID:SCR_002668)</td>
+      <td>https://quorumtechnologies.com/index.php/component/content/category/31-volocity-software</td>
+      <td></td>
+      <td>Used for quantification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (RRID:SCR_003070)</td>
+      <td>https://www.imagej.net</td>
+      <td></td>
+      <td>Used for quantification and visualisation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 2020</td>
+      <td>OriginLab Corporation</td>
+      <td></td>
+      <td>Used for statistical analysis and visualisation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>5TCF::H2B-RFP (plasmid)</td>
+      <td>PMID:24942669</td>
+      <td></td>
+      <td>Wnt reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T2-5TCF::nd2Scarlet (plasmid)</td>
+      <td>This paper and PMID:27869816</td>
+      <td></td>
+      <td>Wnt reporter cloned into Tol2 transposon system, Daudet lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T2-Hes5::nd2EGFP (plasmid)</td>
+      <td>PMID:22991441</td>
+      <td></td>
+      <td>Notch reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Hes5::d2FP635 (plasmid)</td>
+      <td>PMID:22991441</td>
+      <td></td>
+      <td>Notch reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RCAS-βcat-LOF (plasmid)</td>
+      <td>PMID:12941626 PMID:7876319</td>
+      <td></td>
+      <td>β-catenin LOF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T2-βcat-LOF (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>β-catenin LOF cloned into Tol2 transposon system, Daudet lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PB-βcat-GOF (plasmid)</td>
+      <td>PMID:24942669</td>
+      <td></td>
+      <td>β-catenin GOF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T2-βcat-GOF (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>β-catenin GOF cloned into Tol2 transposon system, Daudet lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNICD1-EGFP (plasmid)</td>
+      <td>PMID:15634704</td>
+      <td></td>
+      <td>Notch GOF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDN-MAML1-EGFP (plasmid)</td>
+      <td>PMID:27218451</td>
+      <td></td>
+      <td>Notch LOF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T2-EGFP (plasmid)</td>
+      <td>PMID:17362912</td>
+      <td></td>
+      <td>Control plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T2-mEGFP (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Control plasmid, mEGFP cloned into Tol2 transposon system, Daudet lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T2-mRFP (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Control plasmid, mRFP cloned into Tol2 transposon system, Daudet lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTurquoise (plasmid) (RRID:Addgene_98817)</td>
+      <td>Addgene</td>
+      <td>Addgene No: 98817</td>
+      <td>Control plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mPB (plasmid)</td>
+      <td>PMID:19755504</td>
+      <td></td>
+      <td>PiggyBac transposase</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-T2-TP (plasmid)</td>
+      <td>PMID:17362912</td>
+      <td></td>
+      <td>Tol2 Transposase</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning</td>
+      <td>Takarabio</td>
+      <td>No: 638916</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAqueous-Micro Total RNA Isolation Kit</td>
+      <td>Life Technologies</td>
+      <td>No: AM1931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Jagged 1 (RRID:AB_649685)</td>
+      <td>Santa-Cruz Biotechnology</td>
+      <td>No: sc-8303</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Sox2 (RRID:AB_2341193)</td>
+      <td>Abcam</td>
+      <td>No: 97959</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1 monoclonal anti-Sox2 (RRID:AB_10694256)</td>
+      <td>BD Biosciences</td>
+      <td>No: 561469</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-Islet1 (RRID:AB_1157901)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone 39.3F7</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-HA-tag (RRID:AB_291262)</td>
+      <td>Babco Inc</td>
+      <td>No: MMS-101R</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-Myo7a (RRID:AB_2282417)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Clone 138–1</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-HCA (RRID:AB_2314626)</td>
+      <td>Guy Richardson</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LiCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>No: L7026</td>
+      <td>Concentrations: 5 µM, 15 µM, 25 µM, 35 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IWR-1</td>
+      <td>Sigma-Aldrich</td>
+      <td>No: I0161</td>
+      <td>Concentration 300 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leibovitz’s</td>
+      <td>Gibco</td>
+      <td>No: 21083–027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>No: 354230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM/F12</td>
+      <td>Gibco</td>
+      <td>No: 21041–025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich</td>
+      <td>No: SRE 0065</td>
+      <td>Concentration 1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ciprofloxacin</td>
+      <td>Fluka</td>
+      <td>No: 17850–5 G-F</td>
+      <td>Concentration 0.1%</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5xTCF-BS_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGGGCCCTCGTCGAACGACGTTGTAAAACGACGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5xTCF-BS_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGTGGCgAGATCTGCGGCACGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcat_GOF_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTTTGGCAAAGAATTGCCACCATGGCTACTCAAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcat_GOF_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAGACTCGAGGAATTtcacctattatcacggccgcc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcat_LOF_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>gattacgctgctcgagcaatccccgagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcat_LOF_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ctagagtgaagcagctcagtaagag</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Fertilised White Leghorn chicken (Gallus gallus) eggs were obtained from Henry Stewart UK and incubated at 37.8°C for the designated times. Embryonic stages refer to embryonic days (E), with E1 corresponding to 24 hr of incubation or to Hamburger and Hamilton, 1992 stages. Embryos older than E5 were sacrificed by decapitation. All procedures were approved by University College London local Ethics Committee.
 
-## In ovo electroporation
+#### In ovo electroporation
 
 Electroporation (EP) of the otic placode/cup of E2 chick embryos (stage HH 10–14) was performed using a BTX ECM 830 Electro Square Porator as previously described (Freeman et al., 2012). The total concentration of plasmid DNA ranged for each set of experiments between 0.5 and 1 µg/µl. Unless otherwise specified, a minimum number of six successfully transfected samples were examined for each experimental condition.
 
-## Plasmids
+### Plasmids
 
 The plasmids used in this study and their origin are described in the Appendix 1 file. New constructs were generated by standard subcloning methods or using the In-Fusion HD Cloning Kit (Takarabio). All plasmids used for in ovo electroporation were purified using the Qiagen Plasmid Plus Midi Kit (Qiagen).
 
-## Wnt gradient quantification
+### Wnt gradient quantification
 
 Chicken embryos were electroporated at E2 with 5TCF::H2B-RFP (Wnt reporter) and T2-EGFP (control) plasmids. Otocysts were collected 24 hr post-electroporation and confocal stacks (16-bit pixel intensity scale) were taken from whole mount preparations. Seven almost fully transfected otocysts (based on EGFP expression) were selected for further analyses using the Volocity software (RRID:SCR_002668). The EGFP channel was used to outline the otocyst region of interest (ROI). Next, the commands ‘Finding Object’ and ‘Filter Population’ (same settings for each otocyst) were applied to the RFP channel to detect cell nuclei positive for Wnt reporter within the ROI. The ‘Separate Touching Objects’ function was used to segment individual cell nuclei. Mean RFP fluorescence intensity values and X,Y coordinates of individual nuclei were exported to Excel, normalised by Min–Max scaling for each individual otocyst and plotted using ggplot2 in R (RRID:SCR_001905). To analyse the profile of the Wnt gradient, the median and standard deviation of RFP intensity of groups of nuclei were calculated in 10% increment steps along the dorso-ventral (Y) axis of the otocyst and plotted using ggplot2 (see also Appendix 1).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Entire chicken embryos (E3–E4) or their heads (>E5) were collected, fixed for 1.5–2 hr in 4% paraformaldehyde (PFA) in 0.1 M phosphate buffered saline (PBS), and processed for whole-mount immunostaining using conventional methods. Further details of the protocol and reagents can be found in the Appendix 1 file. The following antibodies were used: rabbit anti-Jagged 1 (Santa-Cruz Biotechnology, Dallas, TX; sc-8303; 1:200), rabbit anti-Sox2 (Abcam, UK; 97959, 1:500), mouse IgG1 monoclonal anti-Sox2 (BD Biosciences, San Jose, CA; 561469, 1:500), mouse IgG1 anti-Islet1 (Developmental Studies Hybridoma Bank, Iowa City, IA; Clone 39.3F7, 1:250), mouse IgG1 anti-HA-tag (Babco Inc, Richmond, CA; MMS-101R, 1:500), mouse IgG1 anti-Myo7a (Developmental Studies Hybridoma Bank, 1:500), and mouse IgG1 anti-HCA (a kind gift of Guy Richardson, 1:1000). Secondary goat antibodies conjugated to Alexa dyes (1:1000) were obtained from Thermo Fischer Scientific (UK). Confocal stacks were acquired using a Zeiss LSM880 inverted confocal microscope and further processed with ImageJ.
 
-## Quantification of Sox2 expression
+### Quantification of Sox2 expression
 
 Confocal stacks (12 bits) of samples transfected with T2-βcat-GOF were analysed using the ImageJ Time Series Analyzer plugin (J. Balaji 2007; Dept. of Neurobiology, UCLA). After background correction of the images (each a single confocal Z-plane), the average levels of Sox2 and GFP fluorescence were measured in manually selected prosensory cell nuclei using a 4 µm diameter circle selection tool. The measurements from two to three optical slices from the same confocal stack were combined and analysed using the OriginPro software.
 
-## Organotypic cultures
+### Organotypic cultures
 
 Dissections were performed in ice-cold L-15 medium (Leibovitz). E3 embryos were halved along the midline, the head and trunk were removed; the otocysts with surrounding region including the hindbrain were placed in 35 mm Mattek dishes coated with a thick layer of ice-cold Matrigel (Corning). Next, samples were incubated in a culture incubator (5% CO2, 37°C) for 30 min to allow polymerisation of Matrigel. Samples were then incubated for 24 hr in approximately 250–300 µl of DMEM/F12 medium with Phenol Red (Invitrogen) containing 1% HEPES, 0.1% CIPRO, and supplemented with LiCl, IWR-1, or vehicle at matched concentration in control experiments. On the next day, samples were washed in ice-cold PBS, fixed for 1.5 hr in PBS containing 4% PFA, and processed for immunohistochemistry. Otocysts electroporated with 5TCF::H2B-RFP were cultured for 24 hr in medium supplemented with LiCl and IWR-1 to assess their effects on Wnt activity. The working concentration of IWR-1 (300 µM) was determined by qPCR (see Appendix 1).

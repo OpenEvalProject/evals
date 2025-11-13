@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.26371.001 The mechanism for Myc-induced genetic instability is not well understood. Here we show that sublethal activation of Caspase-3 plays an essential, facilitative role in Myc-induced genomic instability and oncogenic transformation. Overexpression of Myc resulted in increased numbers of chromosome aberrations and γH2AX foci in non-transformed MCF10A human mammary epithelial cells. However, such increases were almost completely eliminated in isogenic cells with CASP3 gene ablation. Furthermore, we show that endonuclease G, an apoptotic nuclease downstream of Caspase-3, is directly responsible for Myc-induced genetic instability. Genetic ablation of either CASP3 or ENDOG prevented Myc-induced oncogenic transformation of MCF10A cells. Taken together, we believe that Caspase-3 plays a critical, unexpected role in mediating Myc-induced genetic instability and transformation in mammalian cells. DOI: http://dx.doi.org/10.7554/eLife.26371.001
+The mechanism for Myc-induced genetic instability is not well understood. Here we show that sublethal activation of Caspase-3 plays an essential, facilitative role in Myc-induced genomic instability and oncogenic transformation. Overexpression of Myc resulted in increased numbers of chromosome aberrations and γH2AX foci in non-transformed MCF10A human mammary epithelial cells. However, such increases were almost completely eliminated in isogenic cells with CASP3 gene ablation. Furthermore, we show that endonuclease G, an apoptotic nuclease downstream of Caspase-3, is directly responsible for Myc-induced genetic instability. Genetic ablation of either CASP3 or ENDOG prevented Myc-induced oncogenic transformation of MCF10A cells. Taken together, we believe that Caspase-3 plays a critical, unexpected role in mediating Myc-induced genetic instability and transformation in mammalian cells.
 
 ## Introduction
 
@@ -31,75 +31,207 @@ In the current study, we carried out experiments to examine the potential roles 
 
 Previously, we and others have shown that mammalian cells exposed to external stress such radiation and chemicals could survive the activation of apoptotic caspases. Among the cells that survive caspase activation, elevated DNA damage, such as DNA double strand breaks were observed. In this study, we set out to examine the hypothesis that sublethal activation of apoptotic caspases are involved in Myc-induced genetic instability. Our hypothesis is based on the well-established evidence that Myc over-expression in mammalian cells promotes caspase activation and cell death (Karlsson et al., 2003; Ray et al., 2006).
 
-To investigate the effects of Myc expression we used a recombinant lentivirus to transduce the c-Myc gene under the control of a constitutively active CMV promoter into MCF10A cells, an immortalized but not transformed human mammary epithelial cell line (
+To investigate the effects of Myc expression we used a recombinant lentivirus to transduce the c-Myc gene under the control of a constitutively active CMV promoter into MCF10A cells, an immortalized but not transformed human mammary epithelial cell line (Soule et al., 1990; Tait et al., 1990). We reasoned that if some of the Myc-expressing cells can survive caspase activation, they may possess higher levels genomic instability, similar to those cells that were exposed to ionizing radiation (Liu et al., 2015). We quantified Myc’s ability to activate Casp3 by immunofluorescence staining of cleaved Casp3 (Figure 1A,B). Roughly 6% of Myc-expressing MCF10A cells were observed with having relatively normal nuclei and cleaved caspase 3, as compared to control MCF10A cells where only ~1% of the cells were observed with cleaved caspase 3. We also examined the relationship between Casp3 activation and cellular survival by use of a reporter system described in a prior publication (Liu et al., 2015). Our data indicate that irrespective of Casp3 activation status in the presence or absence of Myc expression, 40% or more of the individually sorted MCF10A cells can form colonies in 96-well plates (Figure 1—figure supplement 1). Further flow cytometry analysis showed that despite increased Casp3EGFP activities in Myc-expressing MCF10A cells, the levels of Annexin V staining, a well-recognized marker of apoptosis, did not increase significantly (Figure 1—figure supplement 2). Those data provide clear evidence that a significant fraction of MCF10A cells can survive spontaneous or Myc-induced Casp3 activation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-v2.jpg)
 
-**Figure 1.:** (A) Representative immunofluorescence staining of MCF10A cells with cleaved caspase 3 (green) and DAPI (blue). Scale bar represents 10 μm. (B) The proportion of nonapoptotic MCF10A cells presenting with normal nuclear morphology and cleaved caspase 3 signal. (C) Western blot analysis of Caspase-3 status in MCF10A cells with or without CASP3 gene knockout. (D) Representative immunofluorescence γH2AX foci (green) and DAPI staining in MCF10A cells with wild type (left panel) and CASP3KO. Scale bar represents 20 μm. (E) Fraction of cells which stained positive for a γH2AX foci in control and Casp3-deficient MCF10A with or without exogenous expression of Myc, n = 3. (F) A representative image of chromosome staining in MCF10A cells. A dicentric chromosome is indicated by an arrow. (G) Fraction of cells containing at least one chromosome aberration in control and Casp3-deficient MCF10A with or without exogenous expression of Myc. In B, E, and G, error bars represent standard error of the mean (SEM), * indicates a p value < 0.01, ** indicates a p value > 0.1, Student’s t-test, n = 3. For B, E, each data point was derived from the average of three triplicate groups of 150 cells each. In G, each data point was derived from the average of three triplicate groups of 50 cells each.DOI: http://dx.doi.org/10.7554/eLife.26371.003  10.7554/eLife.26371.004Figure 1—source data 1.Figure 1B.DOI: http://dx.doi.org/10.7554/eLife.26371.004  10.7554/eLife.26371.005Figure 1—source data 2.Figure 1E.DOI: http://dx.doi.org/10.7554/eLife.26371.005  10.7554/eLife.26371.006Figure 1—source data 3.Figure 1G.DOI: http://dx.doi.org/10.7554/eLife.26371.006  10.7554/eLife.26371.007Figure 1—source data 4.Figure 1—figure supplement 3A.DOI: http://dx.doi.org/10.7554/eLife.26371.007  10.7554/eLife.26371.008Figure 1—source data 5.Figure 1—figure supplement 3B.DOI: http://dx.doi.org/10.7554/eLife.26371.008  10.7554/eLife.26371.009Figure 1—source data 6.Figure 1—figure supplement 5.DOI: http://dx.doi.org/10.7554/eLife.26371.009  10.7554/eLife.26371.010Figure 1—source data 7.Figure 1—figure supplement 6B.DOI: http://dx.doi.org/10.7554/eLife.26371.010  10.7554/eLife.26371.011Figure 1—source data 8.Figure 1—figure supplement 6C.DOI: http://dx.doi.org/10.7554/eLife.26371.011  10.7554/eLife.26371.012Figure 1—source data 9.Figure 1—figure supplement 7B.DOI: http://dx.doi.org/10.7554/eLife.26371.012  10.7554/eLife.26371.013Figure 1—source data 10.Figure 1—figure supplement 7C.DOI: http://dx.doi.org/10.7554/eLife.26371.013
+**Figure 1.:** (A) Representative immunofluorescence staining of MCF10A cells with cleaved caspase 3 (green) and DAPI (blue). Scale bar represents 10 μm. (B) The proportion of nonapoptotic MCF10A cells presenting with normal nuclear morphology and cleaved caspase 3 signal. (C) Western blot analysis of Caspase-3 status in MCF10A cells with or without CASP3 gene knockout. (D) Representative immunofluorescence γH2AX foci (green) and DAPI staining in MCF10A cells with wild type (left panel) and CASP3KO. Scale bar represents 20 μm. (E) Fraction of cells which stained positive for a γH2AX foci in control and Casp3-deficient MCF10A with or without exogenous expression of Myc, n = 3. (F) A representative image of chromosome staining in MCF10A cells. A dicentric chromosome is indicated by an arrow. (G) Fraction of cells containing at least one chromosome aberration in control and Casp3-deficient MCF10A with or without exogenous expression of Myc. In B, E, and G, error bars represent standard error of the mean (SEM), * indicates a p value < 0.01, ** indicates a p value > 0.1, Student’s t-test, n = 3. For B, E, each data point was derived from the average of three triplicate groups of 150 cells each. In G, each data point was derived from the average of three triplicate groups of 50 cells each.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.26371.014
-
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** There was not a significant increase in annexin V-high cells in Casp3-GFP high cells.DOI: http://dx.doi.org/10.7554/eLife.26371.015
+**Figure 1—figure supplement 2.:** There was not a significant increase in annexin V-high cells in Casp3-GFP high cells.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) Average number of γH2AX foci per cell in Myc-transduced MCF10A cells with or without CASP3 gene ablation. (B) Average number of chromosomal aberrations per cell in Myc-transduced MCF10A cells with or without CAPS3 gene ablation. Error bars represent standard error of the mean (SEM). *p>0.05; **p<0.05; Students t-test, n = 3. In A, each data point was derived from the average of three triplicate groups of 150 cells each. In B, each data point was derived from the average of three triplicate groups of 50 cells each.DOI: http://dx.doi.org/10.7554/eLife.26371.016
+**Figure 1—figure supplement 3.:** (A) Average number of γH2AX foci per cell in Myc-transduced MCF10A cells with or without CASP3 gene ablation. (B) Average number of chromosomal aberrations per cell in Myc-transduced MCF10A cells with or without CAPS3 gene ablation. Error bars represent standard error of the mean (SEM). *p>0.05; **p<0.05; Students t-test, n = 3. In A, each data point was derived from the average of three triplicate groups of 150 cells each. In B, each data point was derived from the average of three triplicate groups of 50 cells each.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** Notice the heterogeneous nature of Myc expression.DOI: http://dx.doi.org/10.7554/eLife.26371.017
+**Figure 1—figure supplement 4.:** Notice the heterogeneous nature of Myc expression.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-figsupp5-v2.jpg)
 
-**Figure 1—figure supplement 5.:** Cells were synchronized and irradiated with 3Gys of X-rays. At different time points after radiation exposure, they were fixed and stained with fluorescence-labeled γH2AX antibody. The fraction of cells with γH2AX foci were then enumerated from fluorescence images. MCF10A Myc vs Casp3KO Myc, **p<0.001, n = 5, Student’s t-test.DOI: http://dx.doi.org/10.7554/eLife.26371.018
+**Figure 1—figure supplement 5.:** Cells were synchronized and irradiated with 3Gys of X-rays. At different time points after radiation exposure, they were fixed and stained with fluorescence-labeled γH2AX antibody. The fraction of cells with γH2AX foci were then enumerated from fluorescence images. MCF10A Myc vs Casp3KO Myc, **p<0.001, n = 5, Student’s t-test.
 
 ![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-figsupp6-v2.jpg)
 
-**Figure 1—figure supplement 6.:** (A) Western blot confirmation of Myc over-expression and re-expression Casp3 in Casp3KO cells. (B) The effect of Casp3 re-expression on Myc-induced γH2AX foci in MCF10A-CASP3KO cells. (C) The effect of dominant-negative Casp3 (C163A mutation) on Myc-induced γH2AX foci in MCF10A-CASP3KO cells. Error bars represent standard error of the mean (SEM). *p>0.05; **p<0.05. In B and C, each data point was derived from the average of three triplicate groups of 150 cells each.DOI: http://dx.doi.org/10.7554/eLife.26371.019
+**Figure 1—figure supplement 6.:** (A) Western blot confirmation of Myc over-expression and re-expression Casp3 in Casp3KO cells. (B) The effect of Casp3 re-expression on Myc-induced γH2AX foci in MCF10A-CASP3KO cells. (C) The effect of dominant-negative Casp3 (C163A mutation) on Myc-induced γH2AX foci in MCF10A-CASP3KO cells. Error bars represent standard error of the mean (SEM). *p>0.05; **p<0.05. In B and C, each data point was derived from the average of three triplicate groups of 150 cells each.
 
 ![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig1-figsupp7-v2.jpg)
 
-**Figure 1—figure supplement 7.:** (A) Western blot showing CASP3 gene knockout in immortalized human BJ1 fibroblasts. (B) Quantitative estimate of Myc induced γH2AX foci in control and CASP3 knockout BJ1 fibroblasts. (C) Quantitative estimate of Myc-induced chromosomal aberrations in control and CAPS3 knockout BJ1 human fibroblast cells. In B, C, error bars represent SEM. *p>0.05, **p<0.001, Student’s t-test, n = 3. In B, each data point was derived from the average of three triplicate groups of 150 cells each. In C, each data point was derived from the average of three triplicate groups of 50 cells each.DOI: http://dx.doi.org/10.7554/eLife.26371.020
+**Figure 1—figure supplement 7.:** (A) Western blot showing CASP3 gene knockout in immortalized human BJ1 fibroblasts. (B) Quantitative estimate of Myc induced γH2AX foci in control and CASP3 knockout BJ1 fibroblasts. (C) Quantitative estimate of Myc-induced chromosomal aberrations in control and CAPS3 knockout BJ1 human fibroblast cells. In B, C, error bars represent SEM. *p>0.05, **p<0.001, Student’s t-test, n = 3. In B, each data point was derived from the average of three triplicate groups of 150 cells each. In C, each data point was derived from the average of three triplicate groups of 50 cells each.
 
-To examine if Casp3 plays a causative role in Myc-induced genomic instability and carcinogenesis, we generated MCF10A and BJ-1hTERT cells with CASP3 gene knockout by use of the CRISPR/Cas9 technology (Figure 1C, Tables 1–3). Control and Casp3-deficient MCF10A cells with and without exogenous Myc expression were then analyzed for both chromosome aberrations and γH2AX foci, two well-established markers of genomic instability. In control MCF10A cells, Myc overexpression caused significant increases in both the fraction of cells with and the average numbers per cell of γH2AX foci and chromosomal aberrations (Figure 1D–G, Figure 1—figure supplement 3). In contrast, Myc overexpression in Casp3-deficient cells induced no increases in the numbers of either chromosome aberrations or γH2AX foci when compared to control MCF10A or CASP3 knockout (CASP3KO) cells without Myc overexpression (Figure 1D–G, Figure 1—figure supplement 3). To examine the relationship between c-Myc expression and γH2AX foci induction, we carried out immunofluorescence staining of c-Myc and γH2AX (Figure 1—figure supplement 4). Our results indicate that c-Myc expression was not homogeneous, perhaps a reflection of the silencing of the CMV promoter that controlled c-Myc expression. Furthermore, γH2AX foci presence did not always correlate with high c-Myc expression, perhaps indicating a stochastic nature of γH2AX foci induction. However, Myc expression did have a strong influence on both the baseline and induced levels of γH2AX foci and their repair kinetics in MCF10A cells. A systematic analysis on the repair of radiation-induced γH2AX foci showed that Myc expression caused not only higher background levels of γH2AX foci but also higher residual foci levels after a significant number of the induced foci were repaired. On the other hand, CASP3 knockout eliminated most of the basal and residual levels of γH2AX foci in MCF10A cells (Figure 1—figure supplement 5).10.7554/eLife.26371.021Table 1.Primary antibodies used in this study.DOI: http://dx.doi.org/10.7554/eLife.26371.021Target proteinAntibody sourceClone informationγH2AX (Ser139)Upstate BiotechnologyJBW301, Mouse mAbCaspase-3 (full length)Cell Signaling Technology8G10, Rabbit mAbCaspase-3 (cleaved,Asp175)Cell Signaling Technology5A1E, Rabbit mAbEndoGChemiconRabbit polyclonalHA epitopeNovus BiologicalsGoat polyclonalβ-ActinNovus BiologicalsMouse mAbc-MycCell Signaling TechnologyRabbit mAbMito MarkerThermo Fisher ScientificN/A10.7554/eLife.26371.022Table 2.Single guided RNA (sgRNA) sequences used in this study.DOI: http://dx.doi.org/10.7554/eLife.26371.022GeneAccessionsgRNA oligo(5`−3`)*Targeted exonCASPASE3NC_000004CACCGcatacatggaagcgaatcaa AAACttgattcgcttccatgtatgCExon4CASPASE3NC_000004CACCGggaagcgaatcaatggactc AAACgagtccattgattcgcttccCExon4EndoGNC_000009CACCGgggctgggtgcggtcgtcga AAACtcgacgaccgcacccagcccCExon1EndoGNC_000009CACCGcgacttccgcgaggacgact AAACagtcgtcctcgcggaagtcgCExon1*Capital letters: enzyme overhangs; non-capital letters: sgRNA target guide sequence.10.7554/eLife.26371.023Table 3.Mutations at target sequences in various CRISPR knockout MCF10A and BJ-1 hTERT cells.DOI: http://dx.doi.org/10.7554/eLife.26371.023 5`……3`MutationCasp3 KOMCF10AClone1: AAAGATCATACATGGAAGCGAATCAATGGA - - - - - - - ATAT Casp3: AAAGATCATACATGGAAGCGAATCAATGGACTCTGGAATAT7 bp deletionCasp3 KOBJ-1hTERTClone28: AAAGATCATACATGGAAGCGAATCAATG - - - deletion-------- Casp3: AAAGATCATACATGGAAGCGAATCAATGGACTCTGGAATAT193 bp deletionEndoG KOMCF10AClone13: -------- deletion-------- EndoG: TGCCACCAACGCCGACTACCGCGGCAGTGGCTTCGACCGCG169 bp deletionNote: Red: sgRNA sequence; Yellow: PAM sequence; Bold: insertion sequence; -: deletion sequence. In all cases, knockout clones that showed both clear absence of target protein expression and gene mutations were chosen. In addition, in most cases, only those clones with homozygous mutations (where both copies of the gene showed the same mutation) were chosen for convenience.
+To examine if Casp3 plays a causative role in Myc-induced genomic instability and carcinogenesis, we generated MCF10A and BJ-1hTERT cells with CASP3 gene knockout by use of the CRISPR/Cas9 technology (Figure 1C, Tables 1–3). Control and Casp3-deficient MCF10A cells with and without exogenous Myc expression were then analyzed for both chromosome aberrations and γH2AX foci, two well-established markers of genomic instability. In control MCF10A cells, Myc overexpression caused significant increases in both the fraction of cells with and the average numbers per cell of γH2AX foci and chromosomal aberrations (Figure 1D–G, Figure 1—figure supplement 3). In contrast, Myc overexpression in Casp3-deficient cells induced no increases in the numbers of either chromosome aberrations or γH2AX foci when compared to control MCF10A or CASP3 knockout (CASP3KO) cells without Myc overexpression (Figure 1D–G, Figure 1—figure supplement 3). To examine the relationship between c-Myc expression and γH2AX foci induction, we carried out immunofluorescence staining of c-Myc and γH2AX (Figure 1—figure supplement 4). Our results indicate that c-Myc expression was not homogeneous, perhaps a reflection of the silencing of the CMV promoter that controlled c-Myc expression. Furthermore, γH2AX foci presence did not always correlate with high c-Myc expression, perhaps indicating a stochastic nature of γH2AX foci induction. However, Myc expression did have a strong influence on both the baseline and induced levels of γH2AX foci and their repair kinetics in MCF10A cells. A systematic analysis on the repair of radiation-induced γH2AX foci showed that Myc expression caused not only higher background levels of γH2AX foci but also higher residual foci levels after a significant number of the induced foci were repaired. On the other hand, CASP3 knockout eliminated most of the basal and residual levels of γH2AX foci in MCF10A cells (Figure 1—figure supplement 5).
+
+**Table 1.**
+ Primary antibodies used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target protein</th>
+      <th>Antibody source</th>
+      <th>Clone information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>γH2AX (Ser139)</td>
+      <td>Upstate Biotechnology</td>
+      <td>JBW301, Mouse mAb</td>
+    </tr>
+    <tr>
+      <td>Caspase-3 (full length)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8G10, Rabbit mAb</td>
+    </tr>
+    <tr>
+      <td>Caspase-3 (cleaved,Asp175)</td>
+      <td>Cell Signaling Technology</td>
+      <td>5A1E, Rabbit mAb</td>
+    </tr>
+    <tr>
+      <td>EndoG</td>
+      <td>Chemicon</td>
+      <td>Rabbit polyclonal</td>
+    </tr>
+    <tr>
+      <td>HA epitope</td>
+      <td>Novus Biologicals</td>
+      <td>Goat polyclonal</td>
+    </tr>
+    <tr>
+      <td>β-Actin</td>
+      <td>Novus Biologicals</td>
+      <td>Mouse mAb</td>
+    </tr>
+    <tr>
+      <td>c-Myc</td>
+      <td>Cell Signaling Technology</td>
+      <td>Rabbit mAb</td>
+    </tr>
+    <tr>
+      <td>Mito Marker</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Single guided RNA (sgRNA) sequences used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Accession</th>
+      <th>sgRNA oligo(5`−3`)*</th>
+      <th>Targeted exon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CASPASE3</td>
+      <td>NC_000004</td>
+      <td>CACCGcatacatggaagcgaatcaa AAACttgattcgcttccatgtatgC</td>
+      <td>Exon4</td>
+    </tr>
+    <tr>
+      <td>CASPASE3</td>
+      <td>NC_000004</td>
+      <td>CACCGggaagcgaatcaatggactc AAACgagtccattgattcgcttccC</td>
+      <td>Exon4</td>
+    </tr>
+    <tr>
+      <td>EndoG</td>
+      <td>NC_000009</td>
+      <td>CACCGgggctgggtgcggtcgtcga AAACtcgacgaccgcacccagcccC</td>
+      <td>Exon1</td>
+    </tr>
+    <tr>
+      <td>EndoG</td>
+      <td>NC_000009</td>
+      <td>CACCGcgacttccgcgaggacgact AAACagtcgtcctcgcggaagtcgC</td>
+      <td>Exon1</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Capital letters: enzyme overhangs; non-capital letters: sgRNA target guide sequence._
+
+**Table 3.**
+ Mutations at target sequences in various CRISPR knockout MCF10A and BJ-1 hTERT cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>5`……3`</th>
+      <th>Mutation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Casp3 KO</td>
+      <td>MCF10A</td>
+      <td>Clone1: AAAGATCATACATGGAAGCGAATCAATGGA - - - - - - - ATAT Casp3: AAAGATCATACATGGAAGCGAATCAATGGACTCTGGAATAT</td>
+      <td>7 bp deletion</td>
+    </tr>
+    <tr>
+      <td>Casp3 KO</td>
+      <td>BJ-1hTERT</td>
+      <td>Clone28: AAAGATCATACATGGAAGCGAATCAATG - - - deletion-------- Casp3: AAAGATCATACATGGAAGCGAATCAATGGACTCTGGAATAT</td>
+      <td>193 bp deletion</td>
+    </tr>
+    <tr>
+      <td>EndoG KO</td>
+      <td>MCF10A</td>
+      <td>Clone13: -------- deletion-------- EndoG: TGCCACCAACGCCGACTACCGCGGCAGTGGCTTCGACCGCG</td>
+      <td>169 bp deletion</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Red: sgRNA sequence; Yellow: PAM sequence; Bold: insertion sequence; -: deletion sequence. In all cases, knockout clones that showed both clear absence of target protein expression and gene mutations were chosen. In addition, in most cases, only those clones with homozygous mutations (where both copies of the gene showed the same mutation) were chosen for convenience._
 
 In order to rule out the possibility that our CASP3KO cells suffered off-target effects during the generation process, we re-expressed Casp3 in CASP3KO MCF10A cells (Figure 1—figure supplement 6A) and examined for Myc-induced γH2AX foci. Our results indicate that Casp3 re-expression restored Myc-induced DNA damage foci (Figure 1—figure supplement 6B). In a parallel experiment, we expressed a dominant-negative CAPS3 gene (dnCASP3) in Casp3KO cells. DnCasp3 differs from wild-type Casp3 in only a single amino acid that eliminates its cleavage activities (Stennicke and Salvesen, 1997). In contrast to wild-type Casp3 re-expression, dnCASP3 re-expression did not restore the ability of Myc to induce γH2AX foci (Figure 1—figure supplement 6C).
 
 In order to make sure that our observations so far are not restricted to MCF10A cells, we generated CASP3 gene knockout cells from hTERT immortalized BJ1 human fibroblast cells (Figure 1—figure supplement 7A, Table 3) to assess the effects of Casp3 on myc-induced genomic instability. Similar to MCF10A cells, we observed that Myc overexpression resulted in statistically significant increases in γH2AX foci (Figure 1—figure supplement 7B) and chromosomal aberrations (Figure 1—figure supplement 7C) in cells overexpressing Myc. However, such increases were almost completely eliminated in CASP3KO BJ1 cells (Figure 1—figure supplement 7B,C), similar to CASP3KO MCF10A cells.
 
-Since Myc-induced genomic instability is intimately associated with its ability to transform mammalian cells, we investigated Myc-induced tumorigenicity in MCF10A cells. We initially evaluated Myc-induced tumorigenicity of MCF10A cells by use of the soft agar colony forming assay, a well-establish assay that evaluates the anchorage independence ability of putative tumor cells. Our results indicate that Myc overexpression in control MCF10A resulted in a significant increase in the number of observed soft agar colonies (
+Since Myc-induced genomic instability is intimately associated with its ability to transform mammalian cells, we investigated Myc-induced tumorigenicity in MCF10A cells. We initially evaluated Myc-induced tumorigenicity of MCF10A cells by use of the soft agar colony forming assay, a well-establish assay that evaluates the anchorage independence ability of putative tumor cells. Our results indicate that Myc overexpression in control MCF10A resulted in a significant increase in the number of observed soft agar colonies (Figure 2A,B). However, such increases were completely absent in Casp3 knockout cells (Figure 2A,B). The causative role for Casp3 in this process was further demonstrated in Casp3KO cells with Casp3 re-expression, the ability of Myc to induce soft agar colony formation was restored (Figure 2C). In control MCF10A cells, expression of an exogenous Casp3 caused no increase in Myc-induced soft agar colony formation (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig2-v2.jpg)
 
-**Figure 2.:** (A) Depicts colonies which grew in soft agar. (B) Average number of colonies in soft agar in control and Casp3-deficient cells with or without Myc expression. (C) Average number of colonies in soft agar in wild type and Casp3 knockout MCF10A cells with Casp3 re-expression in the absence or presence of Myc over-expression. (D) Tumor growth from control, Myc-overexpressing, and Casp3KO cells with Myc over-expressiong in nude mice. (E) Individual tumor sizes in nude mice form wild-type cells with Myc over-expression. The error bars in B, D, and E represent standard error of the mean (SEM). * Indicates p value < 0.001, ** indicates p value << 1e−5, *** indicates a p value > 0.1. Student’s t-test was used to calculate the p-values in B and C. N = 3 for B and C. N = 5 for D.DOI: http://dx.doi.org/10.7554/eLife.26371.024  10.7554/eLife.26371.025Figure 2—source data 1.Figure 2B.DOI: http://dx.doi.org/10.7554/eLife.26371.025  10.7554/eLife.26371.026Figure 2—source data 2.Figure 2C.DOI: http://dx.doi.org/10.7554/eLife.26371.026  10.7554/eLife.26371.027Figure 2—source data 3.Figure 2D&E.DOI: http://dx.doi.org/10.7554/eLife.26371.027
+**Figure 2.:** (A) Depicts colonies which grew in soft agar. (B) Average number of colonies in soft agar in control and Casp3-deficient cells with or without Myc expression. (C) Average number of colonies in soft agar in wild type and Casp3 knockout MCF10A cells with Casp3 re-expression in the absence or presence of Myc over-expression. (D) Tumor growth from control, Myc-overexpressing, and Casp3KO cells with Myc over-expressiong in nude mice. (E) Individual tumor sizes in nude mice form wild-type cells with Myc over-expression. The error bars in B, D, and E represent standard error of the mean (SEM). * Indicates p value < 0.001, ** indicates p value << 1e−5, *** indicates a p value > 0.1. Student’s t-test was used to calculate the p-values in B and C. N = 3 for B and C. N = 5 for D.
 
 In a further experiment, we examined the ability of Myc-transduced control or CASP3KO cells to form tumors in nude mice. Despite injection of 4 × 106 cells each, only the group of nude mice that were injected with Myc-transduced control MCF10A cell were able to form tumors after 8 weeks of observation (Figure 2D), thereby confirming that both Myc over-expression and an intact CAPSP3 gene are required for oncogenic transformation. A more detailed examination showed that in Myc over-expressing MCF10A cells, five out of eight injected sites formed tumors, albeit with varying growth kinetics (Figure 2E). The in vivo data here are striking in that Casp3 deficiency completely blocked the ability of Myc to transform MCF10A cells. In vitro, although Casp3 deficiency significantly reduced Myc-induced soft agar colony formation, it was not completely blocked. The discrepancy between the in vitro and in vivo assays perhaps reflected the different properties that the two assays are measuring.
 
-We next sought to determine the downstream effectors of Casp3 in mediating Myc-induced genomic instability and oncogenic transformation. In a previous study, endonuclease G (endo G), an apoptotic endonuclease that normally resides within the mitochondria and migrates to the nucleus after activation of apoptotic cascade (
+We next sought to determine the downstream effectors of Casp3 in mediating Myc-induced genomic instability and oncogenic transformation. In a previous study, endonuclease G (endo G), an apoptotic endonuclease that normally resides within the mitochondria and migrates to the nucleus after activation of apoptotic cascade (Parrish et al., 2001; Li et al., 2001), is responsible for much of the Casp3-induced genomic instability after stress exposure. In order to evaluate if endoG is involved in Myc-induced genomic stability, we determined the cellular location of endoG in control and Myc expressing MCF10A cells by use of immunofluorescence staining. Our results show that there was a significant increase in the fraction of cells with endoG nuclear migration in Myc-expressing MCF10A vs control cells (11% vs 2%, Figure 3A,B). However, the increase was completely eliminated in CASP3 knockout cells (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig3-v2.jpg)
 
-**Figure 3.:** (A) Immunofluorescence staining of of MCF10A with antibodies to EndoG (green), mitochondria (Orange) and DAPI (blue). Scale bar represents 20 μm. (B) Fraction of MCF10A cells with activated EndoG (EndoG signal within the nucleus). Error bar indicates SEM. (C) Western blot analysis fo EndoG expression in wild type or endoG knockout MCF10A cells. (D) Fraction of cells which stained positive for a γH2AX foci in control and EndoG-deficient MCF10A with or without exogenous expression of Myc. (E) Influence of endoG status on Myc-induced transformation of MCF10A cells, as indicted by soft agar (SA) colony formation. * Indicates p value < 0.001, **p>0.05. Student’s t-test in B, D, E. Error bars represent SEM. In B, D, each data point was derived from the average of three triplicate groups of 150 cells each. In E, n = 3.DOI: http://dx.doi.org/10.7554/eLife.26371.028  10.7554/eLife.26371.029Figure 3—source data 1.Figure 3B.DOI: http://dx.doi.org/10.7554/eLife.26371.029  10.7554/eLife.26371.030Figure 3—source data 2.Figure 3D.DOI: http://dx.doi.org/10.7554/eLife.26371.030  10.7554/eLife.26371.031Figure 3—source data 3.Figure 3E.DOI: http://dx.doi.org/10.7554/eLife.26371.031  10.7554/eLife.26371.032Figure 3—source data 4.Figure 3—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.26371.032  10.7554/eLife.26371.033Figure 3—source data 5.Figure 3—figure supplement 4.DOI: http://dx.doi.org/10.7554/eLife.26371.033
+**Figure 3.:** (A) Immunofluorescence staining of of MCF10A with antibodies to EndoG (green), mitochondria (Orange) and DAPI (blue). Scale bar represents 20 μm. (B) Fraction of MCF10A cells with activated EndoG (EndoG signal within the nucleus). Error bar indicates SEM. (C) Western blot analysis fo EndoG expression in wild type or endoG knockout MCF10A cells. (D) Fraction of cells which stained positive for a γH2AX foci in control and EndoG-deficient MCF10A with or without exogenous expression of Myc. (E) Influence of endoG status on Myc-induced transformation of MCF10A cells, as indicted by soft agar (SA) colony formation. * Indicates p value < 0.001, **p>0.05. Student’s t-test in B, D, E. Error bars represent SEM. In B, D, each data point was derived from the average of three triplicate groups of 150 cells each. In E, n = 3.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Error bar indicates SEM. * indicates p<0.01, Student’s t-test, n = 3. Each data point was derived from the average of three triplicate groups of 150 cells each.DOI: http://dx.doi.org/10.7554/eLife.26371.034
+**Figure 3—figure supplement 1.:** Error bar indicates SEM. * indicates p<0.01, Student’s t-test, n = 3. Each data point was derived from the average of three triplicate groups of 150 cells each.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.26371.035
-
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** Top panels. ROS levels in MCF10A vs CASP3KO cells (left) and MCF10A vs ENDOGKO cells (right). Lower panels, ROS levels in wild type (left), CASP3KO (middle), and ENDOGKO (right) MCF10A cells with or without Myc expression.DOI: http://dx.doi.org/10.7554/eLife.26371.036
+**Figure 3—figure supplement 3.:** Top panels. ROS levels in MCF10A vs CASP3KO cells (left) and MCF10A vs ENDOGKO cells (right). Lower panels, ROS levels in wild type (left), CASP3KO (middle), and ENDOGKO (right) MCF10A cells with or without Myc expression.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** Cytoplasmic mtND5 of indicated cells were analyzed by use of quantitative RT-PCR. The levels of 18S rDNA were also determined to serve as genomic DNA control. Error bars represent standard error of the mean (SEM), n = 3, p values derived from Student’s t-test.DOI: http://dx.doi.org/10.7554/eLife.26371.037
+**Figure 3—figure supplement 4.:** Cytoplasmic mtND5 of indicated cells were analyzed by use of quantitative RT-PCR. The levels of 18S rDNA were also determined to serve as genomic DNA control. Error bars represent standard error of the mean (SEM), n = 3, p values derived from Student’s t-test.
 
 In order to determine if endoG plays a causative role in Myc-induced genomic damage and transformation, we created MCF10A cells with ENDOG gene knockout by use of CRISPR/Cas9 (Figure 3C). We then evaluated the abilities of Myc to induce γH2AX foci and oncogenic transformation. Our results show that ENDOG deletion was able to eliminate both Myc-induced γH2AX foci (Figure 3D and Figure 3—figure supplement 1) and oncogenic transformation as evaluated by use of the soft agar colony-forming assay (Figure 3E).
 
@@ -109,11 +241,11 @@ Increased ROS has been previously implicated in Myc-induced carcinogenesis. Our 
 
 In order to determine whether Casp3 activation and endoG release is the result of partial damage of many mitochondria vs severe damage to a small number of mitochondria, a quantitative PCR (qPCR) analysis of cytoplasmic mitochondrial DNA (mtDNA) levels was done (Figure 3—figure supplement 4). Our results indicate that MYC expression in MCF10A cells caused a significant increase in cytoplasmic mtDNA levels, indicating that a significant fraction of mitochondria had compromised membrane integrity. On the other hand, CASP3KO significantly reduced cytoplasmic mtDNA levels in MCF10A cells with or without Myc over expression. While we are not clear of the exact cause of this, we speculate that Casp3 and other upstream factors that promote mitochondrial leakage form a positive loop to promote mitochondrial leakage with or without Myc expression.
 
-To further examine if endoG leakage from the mitochondria and migration is sufficient to cause genomic instability and oncogenic transformation, we engineered a modified endoG protein where the native mitochondrial localization signal is switched to a nuclear localization signal (NLS-EndoG,
+To further examine if endoG leakage from the mitochondria and migration is sufficient to cause genomic instability and oncogenic transformation, we engineered a modified endoG protein where the native mitochondrial localization signal is switched to a nuclear localization signal (NLS-EndoG, Figure 4A) and transduced it into MCF10ACASP3KO cells with or without Myc expression (Figure 4B). Immunofluorescence staining confirmed the nuclear localization of the engineered endoG (Figure 3C). We then determined the incidence of γH2AX foci in transduced cells. Our results indicate the NLS-endoG expression restored the depleted γH2AX foci induction by Myc in CASO3KO cells (Figure 4D). In fact, NLS-endoG alone was sufficient to induce γH2X foci in CASP3KO cells to levels induced by Myc (Figure 4D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/26371/elife-26371-fig4-v2.jpg)
 
-**Figure 4.:** (A) A diagram showing a re-engineered endoG with a nucleus localization signal (NLS) at its tagged N-terminal. (B) Western blot demonstrating exogenous myc and NLS-EndoG expression by use of an anti-HA antibody. (C) Immunoflouresence staining of EndoG (green), mito marker (red), and DAPI (blue) in NLS-EndoG transduced CASP3KO cells. Scale bar indicates 20 µm. (D) Average number of γH2AX foci per cell in MCF10A with or without nEndoG in the absence or presence of Myc or Casp3KO. (E) The influence of nEndoG on soft agar formation in MCF10A-Casp3KO cells with or without Myc gene expression. (F) Xenograft tumor formation in nude mice from MCF10A-Casp3KO cells with NLS-EndoG (nEndoG) and/or Myc expression. In D, E, F error bars represent standard error of the mean (SEM), * indicates p value < 0.001 while ** Indicates p value > 0.1. Student’s t-test. In D, each data point was derived from the average of three triplicate groups of 150 cells each. In E, n = 3. In F, n = 5.DOI: http://dx.doi.org/10.7554/eLife.26371.038  10.7554/eLife.26371.039Figure 4—source data 1.Figure 4D.DOI: http://dx.doi.org/10.7554/eLife.26371.039  10.7554/eLife.26371.040Figure 4—source data 2.Figure 4E.DOI: http://dx.doi.org/10.7554/eLife.26371.040  10.7554/eLife.26371.041Figure 4—source data 3.Figure 4F.DOI: http://dx.doi.org/10.7554/eLife.26371.041
+**Figure 4.:** (A) A diagram showing a re-engineered endoG with a nucleus localization signal (NLS) at its tagged N-terminal. (B) Western blot demonstrating exogenous myc and NLS-EndoG expression by use of an anti-HA antibody. (C) Immunoflouresence staining of EndoG (green), mito marker (red), and DAPI (blue) in NLS-EndoG transduced CASP3KO cells. Scale bar indicates 20 µm. (D) Average number of γH2AX foci per cell in MCF10A with or without nEndoG in the absence or presence of Myc or Casp3KO. (E) The influence of nEndoG on soft agar formation in MCF10A-Casp3KO cells with or without Myc gene expression. (F) Xenograft tumor formation in nude mice from MCF10A-Casp3KO cells with NLS-EndoG (nEndoG) and/or Myc expression. In D, E, F error bars represent standard error of the mean (SEM), * indicates p value < 0.001 while ** Indicates p value > 0.1. Student’s t-test. In D, each data point was derived from the average of three triplicate groups of 150 cells each. In E, n = 3. In F, n = 5.
 
 We next examined the influence of NLS-EndoG on oncogenic transformation by use of the soft agar assay. Our results show that NLS-EndoG restored the ability of Myc to induce oncogenic transformation in Casp3 knockout MCF10A cells (Figure 4E). However, NLS-EndoG expression alone was not sufficient to induce oncogenic transformation despite its ability to induce DNA damage foci to levels similar to Myc expression (Figure 4E). Those results suggest while endoG nuclear migration is a necessary condition for Myc-induced oncogenic transformation, it is not sufficient by itself. Additional activities of Myc are clearly required in the transformation process.
 
@@ -129,42 +261,42 @@ Taken together, our study provides crucial evidence that Casp3 and endo G, two k
 
 ## Materials and methods
 
-## Cell lines and tissue culture
+### Cell lines and tissue culture
 
 Early passage, immortalized, non-transformed human breast epithelial cell line, MCF10A, was a kind gift from Dr. Hatsumi Nagasawa of Colorado State University (Fort Collins, CO). MCF10A growth medium was composed of Dulbacco’s modified Eagle’s medium (DMEM)/F12 (Sigma) supplemented with 5% donor horse serum (Sigma), 20 ng/ml of epidermal growth factor (EGF; R&D Systems), 0.5 µg/ml hydrocortisone (Sigma), 100 ng/ml cholera toxin (Sigma), 10 µg/ml insulin (Invitrogen), and 100 units/ml penicillin and 100 µg/ml streptomycin. hTERT immortalized, non-transformed human fibroblast cell line, hTERT BJ-1, was a kind gift from Dr. Takamitsu Kato of Colorado State University. hTERT BJ-1 growth medium was composed of DMEM supplemented with 10% fetal bovine serum (Sigma) and 100 units/ml penicillin and 100 µg/ml streptomycin. The identities of both MCF10A and hTERT-BJ1 were authenticated through STR profiling methods. Throughout the course of the experiments, the cells were also checked periodically for the absence of mycoplasma contamination.
 
-## γH2AX foci assay
+### γH2AX foci assay
 
 For γH2AX foci assays, the cells were synchronized in G1 using the well-established double-thymidine block protocol (Bostock et al., 1971). Briefly, cells were plated on glass-bottom 35 mm petri dishes (MatTek, Ashland, MA) and cultured with growth medium for overnight. They were incubated with 2 mM thymidine for 18 hr, washed 2x with PBS, and incubated for 10–12 hr in growth media. They were then incubated for 15–18 hr with 2 mM thymidine. After synchronization, cells were fixed with 4% PFA and permeabilized and blocked in PBS containing 0.1% Triton X-100, 5% goat serum, and 1% BSA. Cells were incubated with a primary antibody against γH2AX (Upstate Biotechnology, Lake Placid, NY), wash with PBS and incubated with a secondary antibody conjugated with Alexa Fluor 488 (Invitrogen). Cells were mounted with mounting medium (Vector Laboratories) containing DAPI. Fluorescent images of γH2AX were acquired with a Zeiss fluorescence microscope with a 63x oil objective (Axio Observer Z1). For each experimental group we observed 150 cells in triplicate.
 
-## Chromosome aberration analysis
+### Chromosome aberration analysis
 
 We carried out chromosome aberration analysis in cultured cells following an established protocol (Savage, 1976). We analyzed for various chromosome/chromatid aberrations that include breaks/gaps, dicentrics, centric/acentric rings, and translocations. Each data points represent data from 50 cells in triplicate.
 
-## CRISPR/Cas9-mediated gene knockout and lentivirus production
+### CRISPR/Cas9-mediated gene knockout and lentivirus production
 
 We made various cells deficient in various genes by use of the CRISPR/Cas9 technology. Single-guided RNA (sgRNA) sequences targeting the genes were generated with the use of a free online CRISPR design tool (crispr.mit.edu). The sgRNA sequences used were listed in Table 2. Annealed double stranded sgRNA oligos were ligated into the lentiCRISPR vector (Cong et al., 2013) (deposited by Dr. Feng Zhang to Addgene, Cambridge, MA) at BsmBl site, which co-express cas9 and sgRNA in the same vector. The constructed CRISPR lentivirus vectors were then packaged according to a standard protocol. To produce lentiviral vectors, lentiviral plasmids with the target genes were transduced into 293 T cells together with second-generation packaging plasmids (psPAX2, pMD2.G) following previously published procedures: http://tronolab.epfl.ch/lentivectors.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Cells were cultured on glass-bottom 35 mm petri dishes. Cells were fixed with 4% paraformaldehyde (PFA) in PBS for 15 min, permeabilized and blocked with PBS containing 5% goat serum, 0.1% Triton X-100, and 1% bovine serum albumin (BSA) for 45 min. Fixed cells were incubated with primary antibodies for cleaved Caspase-3, γH2AX, or EndoG overnight at 4C, followed by incubation with appropriate Alexa Fluor 488-conjugated secondary antibodies (Invitrogen, Carlsbad, CA) for 1 hr and mounted with mounting medium (Vector Laboratories, CA) containing DAPI. Fluorescent images were acquired with a Zeiss fluorescence microscope with a 63x oil objective (Axio Observer Z1).
 
-## Soft-agar assay
+### Soft-agar assay
 
 The soft-agar assay was carried out following an established procedure (Cifone and Fidler, 1980). About 1 × 104 MCF10A cells in growth medium were plated into six-well plates with 1.5 ml 0.3% (m/v) low-melting agar (BD, Sparks, MD, which was overlaid onto 1.5 ml 0.6% (w/v) bottom agar layer. Soft-agar colonies were maintained at 37°C and fed twice a week by drop-wise addition of growth medium for colony formation. After 21 days in culture, the colonies were counted after staining with 0.005% crystal violet.
 
-## Flow cytometry-based analysis of ROS
+### Flow cytometry-based analysis of ROS
 
 In order to measure reactive oxygen species, the cells were labeled with DCFDA (20 µM) according to the manufacturer’s instruction that comes with the ROS kit (Abcam, Cambridge, MA). The cells were then analyzed by use of flow cytometry.
 
-## Q-PCR analysis of mtDNA
+### Q-PCR analysis of mtDNA
 
 To measure cytoplasmic mtDNA in various MCF10A-derived cells, the cytoplasmic fraction of the cellular lysates were isolated according to a published protocol (Bronner and O’Riordan, 2016). To quantify mtDNA, a segment of the mtND5 gene was amplified by use of the primer pair (Neufeld-Cohen et al., 2016): forward 5′-ACGAAAATGACCCAGACCTC-3′, rev 5′-GAGATGACAAATCCTGCAAAGATG-3′ through Q-PCR. A pair of primers for 18 s rDNA (Forward: 5’-TAGAGGGACAAGTGGCGTTC-3’ Reverse: 5’-CGCTGAGCCAGTCAGTGT-3’) was used as control.
 
-## Tumor formation in nude mice
+### Tumor formation in nude mice
 
 Animal experiments conducted in this study were approved by the Duke University Institutional Animal Use and Care Committee (protocol# A195-14-08). To confirm the tumorigenicity of myc overexpressing MCF10A cells, about 4 × 106 cells were injected subcutaneously into the flanks of 6–8 week-old, female athymic nude mice (Jackson Laboratories) in 50 µl of 1:1 Matrigel (Corning) and PBS. After inoculation, the growth of tumors was evaluated once a week for 8 weeks.
 
-## Statistical analysis
+### Statistical analysis
 
 Student’s t-test was used to evaluate the significance of differences between different experimental groups. In most cases, a p-value of less than 0.05 was deemed as significant while a p-value of more than 0.05 was deemed not significant.

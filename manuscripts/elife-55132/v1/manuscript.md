@@ -37,9 +37,213 @@ Here, we investigate the possibility that the distribution of structures that an
 
 To test this hypothesis, we ran an unprecedented two milliseconds of all-atom, explicit solvent molecular dynamics (MD) simulations of twelve myosin motors with diverse but well-established biochemical properties (Figure 1B, Tables 1, 2). Such simulations are adept at identifying excited states, which are lower probability conformational states that are often invisible to other structural techniques. Indeed, our simulations reveal a surprising degree of conformational heterogeneity, particularly in the highly conserved P-loop (or Walker A motif), a common structural element for nucleotide binding that is highly conserved across myosin motor domains (Saraste et al., 1990). Because of its high conservation, we reasoned that the P-loop would report on the conformation of the nucleotide binding site while still being comparable between motors with otherwise differing sequences. To enable quantitative comparisons, we constructed Markov state models (MSMs) from the MD data for each motor. MSMs are network models of protein free energy landscapes composed of many conformational states and the probabilities of transitioning between these states. They are a powerful means to capture phenomena far beyond the reach of any individual simulation by integrating information from many independent trajectories (Bowman et al., 2013; Chodera and Noé, 2014). Analyzing our MSMs, we find they capture sufficient information about myosin motor domains’ thermodynamics and kinetics to produce reasonable estimates of duty ratio and ADP release rates. Thus, MD and MSMs constitute a powerful platform for identifying relationships between the sequence of individual motor domains and their mechanochemical cycles.
 
+**Table 1.**
+ Summary of simulations performed for this study.Gene names are those found in PubMed Gene for the appropriate organism, and residue numbers are those used in the given template.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Protein name</th>
+      <th>Construct</th>
+      <th>Species</th>
+      <th>Template</th>
+      <th>Agg. sim [µs]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYH13</td>
+      <td>Extraocular</td>
+      <td>4–781</td>
+      <td>H. sapiens</td>
+      <td>4PA0 (Winkelmann et al., 2015)</td>
+      <td>271.9</td>
+    </tr>
+    <tr>
+      <td>MYH7</td>
+      <td>β-cardiac</td>
+      <td>2–780</td>
+      <td>H. sapiens</td>
+      <td>4PA0 (Winkelmann et al., 2015)</td>
+      <td>276.2</td>
+    </tr>
+    <tr>
+      <td>MYH10</td>
+      <td>Nonmuscle IIb-B2</td>
+      <td>8–791</td>
+      <td>H. sapiens</td>
+      <td>4PD3 (Münnich et al., 2014)</td>
+      <td>323.0</td>
+    </tr>
+    <tr>
+      <td>MYO1B</td>
+      <td>Myosin-Ib</td>
+      <td>5–703</td>
+      <td>H. sapiens</td>
+      <td>4L79 (Shuman et al., 2014)</td>
+      <td>282.3</td>
+    </tr>
+    <tr>
+      <td>MYO5A</td>
+      <td>Myosin-Va</td>
+      <td>2–762</td>
+      <td>H. sapiens</td>
+      <td>1W8J (Coureux et al., 2004)</td>
+      <td>297.5</td>
+    </tr>
+    <tr>
+      <td>MYO6</td>
+      <td>Myosin-VI</td>
+      <td>2–770</td>
+      <td>H. sapiens</td>
+      <td>2BKI (Ménétrey et al., 2005)</td>
+      <td>295.0</td>
+    </tr>
+    <tr>
+      <td>MYO7A</td>
+      <td>Myosin-VIIa</td>
+      <td>3–742</td>
+      <td>H. sapiens</td>
+      <td>1OE9 (Coureux et al., 2003)</td>
+      <td>130.9</td>
+    </tr>
+    <tr>
+      <td>MYO10</td>
+      <td>Myosin-X</td>
+      <td>3–740</td>
+      <td>H. sapiens</td>
+      <td>2AKA (Reubold et al., 2003)</td>
+      <td>126.2</td>
+    </tr>
+    <tr>
+      <td>MYH11</td>
+      <td>Chicken gizzard</td>
+      <td>wt/2–782</td>
+      <td>G. gallus</td>
+      <td>4PD3 (Münnich et al., 2014)</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>MYH11</td>
+      <td>Chicken gizzard</td>
+      <td>alanine</td>
+      <td>G. gallus</td>
+      <td>4PD3 (Münnich et al., 2014)</td>
+      <td>6.4</td>
+    </tr>
+    <tr>
+      <td>MYH11</td>
+      <td>Chicken gizzard</td>
+      <td>Xenopus</td>
+      <td>G. gallus</td>
+      <td>4PD3 (Münnich et al., 2014)</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <td>MYH11</td>
+      <td>Chicken gizzard</td>
+      <td>∆loop 1</td>
+      <td>G. gallus</td>
+      <td>4PD3 (Münnich et al., 2014)</td>
+      <td>10.5</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Experimentally-determined biochemical properties used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Motor</th>
+      <th>Duty Ratio</th>
+      <th>ADP Release Rate [s-1]</th>
+      <th>Citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYH13</td>
+      <td>0.1</td>
+      <td>400</td>
+      <td>Johnson et al., 2019</td>
+    </tr>
+    <tr>
+      <td>MYH7</td>
+      <td>0.1</td>
+      <td>59</td>
+      <td>Johnson et al., 2019</td>
+    </tr>
+    <tr>
+      <td>MYH10</td>
+      <td>0.3</td>
+      <td>0.37</td>
+      <td>Nagy et al., 2013</td>
+    </tr>
+    <tr>
+      <td>MYO1B</td>
+      <td>0.05</td>
+      <td>2.1</td>
+      <td>Lewis et al., 2012</td>
+    </tr>
+    <tr>
+      <td>MYO5A</td>
+      <td>0.7</td>
+      <td>12</td>
+      <td>De La Cruz et al., 1999</td>
+    </tr>
+    <tr>
+      <td>MYO6</td>
+      <td>0.9</td>
+      <td>5.6</td>
+      <td>De La Cruz et al., 2001</td>
+    </tr>
+    <tr>
+      <td>MYO7A</td>
+      <td>0.9</td>
+      <td>2.1</td>
+      <td>Watanabe et al., 2006</td>
+    </tr>
+    <tr>
+      <td>MYO10</td>
+      <td>0.6</td>
+      <td>18</td>
+      <td>Kovács et al., 2005</td>
+    </tr>
+    <tr>
+      <td>MYH11, wild-type</td>
+      <td>0.15</td>
+      <td>79</td>
+      <td>Sweeney et al., 1998</td>
+    </tr>
+    <tr>
+      <td>MYH11, alanine sub.</td>
+      <td>0.15</td>
+      <td>34</td>
+      <td>Sweeney et al., 1998</td>
+    </tr>
+    <tr>
+      <td>MYH11, Xenopus</td>
+      <td>0.15</td>
+      <td>40</td>
+      <td>Sweeney et al., 1998</td>
+    </tr>
+    <tr>
+      <td>MYH11, ∆loop 1</td>
+      <td>0.15</td>
+      <td>13</td>
+      <td>Sweeney et al., 1998</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results and discussion
 
-## In simulation, the P-loop adopts conformational states that are rare in crystal structures
+### In simulation, the P-loop adopts conformational states that are rare in crystal structures
 
 We reasoned that any differences between myosin motor domains in nucleotide handling—ADP release rate or duty ratio, for instance—must somehow be manifest at the active site to have an effect. The P-loop is a highly conserved element of the myosin active site that plays an important role in interacting with the phosphates of the ATP substrate (Gulick et al., 1997). Consequently, we reasoned that the P-loop would report on the conformation of the nucleotide binding site while still being comparable between motors whose sequences differ elsewhere in the protein. To assess the degree of conformational heterogeneity captured by crystal structures, we first analyzed structures deposited in the PDB (Figure 2A). We queried the PDB (Berman et al., 2000) for myosin motor domains (see Materials and methods), yielding 114 crystal structures. Using sequence alignments (see Materials and methods) we identified the P-loop in each of these models and computed the backbone root mean square deviation (RMSD) of each of these models to a reference structure (β-cardiac myosin, PDB ID 4PA0) (Winkelmann et al., 2015). We found very little structural diversity among crystal structures, which rarely sample any conformations with P-loop backbone RMSD >0.6 Å away (Figure 2A).
 
@@ -51,11 +255,35 @@ Then, to assess the capacity of the P-loop to adopt conformations not observed i
 
 In contrast to the relative uniformity among crystal structures, simulations revealed extensive conformational heterogeneity in the P-loop (Figure 2B). Where crystal structures rarely sampled conformations with RMSD >0.6 Å, in simulation we observe broad sampling (i.e. high-probability density) in regions from 0.2 Å RMSD all the way to ~1.5 Å RMSD from the starting structure. Only 10 of 114 (9%) crystal structures’ conformations were >0.6 Å RMSD from the reference conformation, whereas fully 58% of the distribution observed in silico is above 0.6 Å RMSD from the reference conformation. These results suggest our simulations may provide mechanistic insight not previously accessible from crystal structures alone.
 
-## Simulations suggest that the nucleotide-free motor explores distinct nucleotide-favorable and nucleotide-unfavorable states
+### Simulations suggest that the nucleotide-free motor explores distinct nucleotide-favorable and nucleotide-unfavorable states
 
 We reasoned that P-loop conformations identified by our simulations might have important implications for motors’ nucleotide handling. For example, modulating the relative probabilities of these conformations would provide a facile mechanism by which sequence variation might tune the mechanochemical cycle.
 
 To assess the nucleotide compatibility of the P-loop conformations we observe in simulation, we sought to systematically compare these conformations with crystal structures with and without nucleotide. To do this, we built a map of P-loop conformational space using the dimensionality reduction algorithm Principal Components Analysis (PCA) to learn a low-dimensional representation of the pairwise interatomic distances between P-loop atoms that retains as much of the geometric diversity in the input as possible (see Figure 3—figure supplements 1–3, and Materials and methods for details) (Shlens, 2014). We then projected the states of our MSM built from our MYH7 simulations onto principal components (PCs) one and three to visualize the free energy surface sampled by our simulations (Figure 3A, green level sets). Principal component two chiefly reported on geometric differences between low-probability confirmations (Figure 3—figure supplement 1). Using the same PCA, we then projected each crystal structure’s P-loop conformation into the PC1/PC3 space, plotting each as a point (Figure 3A, points). Points labeled with PDB IDs represent crystal structures with P-loops >0.6 Å backbone RMSD away from the reference structure 4PA0 used above. We also classified each structure (see Materials and methods) as nucleotide-bound (yellow points) or nucleotide-free (purple points). Then, we compared the frequency at which nucleotide-bound and nucleotide-free P-loop conformations were found in various conformations.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55132/elife-55132-fig3-v1.jpg)
+
+**Figure 3.:** (A) The β-cardiac whole-motor MSM-derived P-loop conformational space projected onto PCs 1 and 3 reveals two distinct free energy basins (green level sets). Yellow and purple points represent crystal structures with and without ligand, respectively. Structures farther than 0.6 Å from the β-cardiac myosin structure (red empty circle) are labeled with their PDB ID. (B) Proximity to the β-cardiac myosin reference conformation is associated with the presence of a nucleotide in crystal structures (p<1.3×10−5 by Fisher’s exact test), suggesting that the ligand stabilizes the A state. Error bars represent the 95% confidence interval of 1000 bootstrap realizations. (C) The re-orientation of the S180 backbone carbonyl accounts for the split between upper and lower basins. Points represent P-loop conformations from each state in the β-cardiac whole-motor MSM projected onto the same PCs as in panel A. Points are sized by their probability from the MSM and colored by the angle between the backbone carbonyl bond vectors of S180 and K184. (D) Center, each of the five states of the P-loop MSM are indicated as nodes in a network, sized by their equilibrium probability and connected by arrows with line width proportional to the transition probabilities between them. Surrounding the model, insets show example configurations of the P-loop in sticks colored to match the state they represent. State A is associated with a conformation of the S180 (pink sticks) carbonyl bond vector (white arrow) directed away from the nucleotide binding pocket, whereas states B-D are associated with the opposite orientation of the S180 backbone carbonyl bond vector. The A state conformation is the conformation found in most crystal structures. For reference, PDB 1MMA is shown in grey sticks and the crystallographic position of ATP is shown in semi-opaque grey sticks. For all states, important interactions with the Switch-I loop are shown as two-dimensional sketches for visual clarity. An interaction between R237 and E179 is specific to state A, whereas various interactions with S242 are indicative of other states (Figure 3—figure supplement 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55132/elife-55132-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Each Principal Component (PC) in the PCA captures a certain fraction of the variance of the input data. Each PC is ranked by the amount of variance it explains. The above figure plots the PC number against the fraction of the overall variance it explains. Because 36 distances were used in total, 36 principal components are able to capture 100% of the variance. The top four PCs were used in clustering and for k-nearest neighbor state assignment.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55132/elife-55132-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Each conformation in the whole-motor MSM has a value for each PC. Using these values and the probability for each conformation, a probability distribution for every individual PC’s value, and for every pair of PCs, were constructed. For MYH7, we visualized every marginal distribution (a single PC’s probability distribution) and every pair of PCs’ joint distribution. Diagonal plots, marginal distributions for PCs 1 (top left) through 4 (bottom right). Off-diagonal plots, joint distributions for all pairs of PCs; each column i and row j has PC i on the x-axis and PC j on the y-axis, respectively.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/55132/elife-55132-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The value of each PC for a particular conformation is a linear combination of each of the 36 input distances. In other words, it is the dot product of the vector of distances and the vector representing the PC (which weights each distance differently). This figure shows the relative contribution of each distance (x-axis) to each PC (y-axis). Percentages following principal component (PC) index indicate the fraction of the variance explained by that PC. Labels on the x-axis indicate a distance from [residue number][atom name] to [residue number][atom name], using the residue numbering found in the MYH7 crystal model 4PA0 (Winkelmann et al., 2015).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/55132/elife-55132-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Each point, representing a single whole-motor MSM state, is colored by its P-loop state and sized according to its equilibrium probability. Note that, along the PC2 direction, the primary differences are between states C and E.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/55132/elife-55132-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Top left, the PDF over the distance between E179 sidechain carbonyl oxygens to the sidechain of R237. An interaction is a hallmark of the A state. Top right, the PDF over the S180O to S242H backbone-backbone distance. Close values are a hallmark of states B and E. Bottom left, the PDF over the E179 sidechain carbonyl oxygen to S242 amide proton distance. Low values are a hallmark of state C. Bottom left, the PDF over the distance between the G181 backbone carbonyl oxygen and the T185 backbone amide proton. Low values are a hallmark of state E. This is the i → i + 4 interaction typical of an alpha-helix.
 
 This analysis revealed two dominant conformational states that likely constitute nucleotide-favorable and nucleotide-unfavorable states (Figure 3A and B). Once the distribution of P-loop conformations is projected onto two PCs (the green level sets in Figure 3A), we observe two broad minima in the P-loop conformational landscape. We refer to these apparent minima as the upper and lower basin for brevity but recognize that other minima may exist and be obscured by the projection of a high-dimensional space into a low-dimensional space. The lower basin (<0.6 Å RMSD from the reference structure) contains 91% of crystal structures (104/114) and, because 80% (84/105) of these structures are bound to nucleotide, it is highly likely to represent a nucleotide-compatible conformation. In contrast, despite being populated roughly equally in simulation, regions outside the lower basin (≥0.6 Å RMSD) contain only 9% (10/114) of crystal structures. And, because only one (11%) of these structures is nucleotide bound, these regions are significantly depleted in nucleotide-bound structures (odds ratio = 0.03, p<1.3×10−5 by Fisher’s exact test), strongly implying that they are less or not at all nucleotide compatible. Interestingly, this single exception (PDB ID 2Y8I, Dictyostelium discoideum myosin-II G680V) is a highly perturbed motor that has been shown to have low ATPase activity, low motility and a disordered allosteric network (Kinose et al., 1996; Patterson et al., 1997, p.), potentially contributing to its aberrant conformation.
 
@@ -63,7 +291,7 @@ To characterize the structural differences between nucleotide-favorable and nucl
 
 Comparing the states of our MSM reveals that the dominant geometrical difference between nucleotide-favorable and nucleotide-unfavorable P-loop states is the orientation of the peptide bond between S180 and G181 (Figure 3C). In the nucleotide-favorable state A (Figure 3D, lower right inset), the S180 backbone carbonyl (shown in pink sticks with a white arrow) is oriented away from the phosphates of the nucleotide, enabling the nucleotide to bind to the active site. In contrast, nucleotide-disfavoring states (labeled B-D in Figure 3D) orient the S180 backbone carbonyl toward the phosphate groups of the nucleotide. This positions the carbonyl oxygen in a way that appears to sterically clash with the phosphates of nucleotide. It also orients the negative end of the carbonyl bond’s electric dipole toward the nucleotide binding site and the negatively charged phosphates of ADP and ATP. Taken together, our observations about the geometry of the excited, nucleotide-disfavoring state in the upper basin are consistent with a lowered capacity for nucleotide binding.
 
-## The balance between nucleotide-favorable and nucleotide-unfavorable P-loop states predicts duty ratio
+### The balance between nucleotide-favorable and nucleotide-unfavorable P-loop states predicts duty ratio
 
 We reasoned that motors with a higher probability of adopting nucleotide-favorable P-loop conformations in isolation are likely to have an increased affinity for nucleotide and, therefore, spend more time in nucleotide-bound states of the mechanochemical cycle. Our reasoning is that motors that prefer nucleotide-favorable P-loop conformations in isolation pay a lower energetic cost to adopting these same nucleotide-favorable conformations when they form a complex with nucleotide. Supporting this logic, it has been observed that, absent load, a large free energy difference between ADP-bound and nucleotide-free states is associated with a low duty ratio (Bloemink and Geeves, 2011; Nyitrai and Geeves, 2004). Thus, we hypothesized that a preference for the nucleotide-favorable A state should correlate with low duty ratio.
 
@@ -79,7 +307,7 @@ Given this trend, we reasoned that the relative free energies of the nucleotide-
 
 As expected, we find a strong correlation between motors’ duty ratios and their preferences for the nucleotide-favorable A state over the nucleotide-unfavorable B state (Figure 4B). Specifically, high duty ratio motors have a strong preference for the A state (negative free energy difference) while low duty ratio motors spend more time in state B (positive free energy difference). Decreased stability of the nucleotide-favorable conformation in these low duty ratio motors could explain this observation.
 
-## Simulations predict ADP release rates better than loop 1 length does by capturing sequence-specific effects
+### Simulations predict ADP release rates better than loop 1 length does by capturing sequence-specific effects
 
 Because ADP release allows a motor to adopt nucleotide-incompatible P-loop conformations, we reasoned that the rate at which a motor can transition to these conformations in silico might correlate with in vitro ADP release kinetics. While we expect a correlation, we acknowledge that the absolute rates will almost certainly differ, since the rates themselves likely differ in the presence and absence of nucleotide. To test for a correlation, we first focus on data sets that examine several motors under the same experimental conditions. Identical conditions are important because in vitro biochemical rates depend strongly on experimental conditions such as salt and temperature (Chizhov et al., 2013; De La Cruz and Ostap, 2009; Lewis et al., 2012). We focus on low duty ratio motors, since their frequent transitions to nucleotide-unfavorable states make it possible to estimate their transition rates with confidence. In contrast, in high duty ratio motors, transitions between these states are sufficiently rare that their rates cannot be estimated with confidence.
 
@@ -93,13 +321,13 @@ To assess the capacity of in silico P-loop kinetics to capture the experimentall
 
 As expected, there is a strong positive relationship (Pearson’s R = 0.99) between the P(A→B) fit by our MSMs and in vitro ADP release rate (Figure 5C). This is stronger than the equivalent correlation for the length-based model (Pearson’s R = 0.72). Importantly, the rank order of the four isoforms is correct, whereas using a loop 1 length-only model dramatically underestimates the ADP release rate for the wild-type motor. Rank order is used because, as noted above, the timescales of the transition (mean first passage times from state A to B are on order of 5–500 nanoseconds) are not directly comparable to experimentally measured values because nucleotide is absent in the simulations. Together, the fact that the sequence change is small (only five residues differ between wild type and the alanine mutant) and the change is distant (~25 Å) from the P-loop indicate that our model is exquisitely sensitive to sequence, even at sites distant from the active site.
 
-## P-loop kinetics in silico correlate with ADP release rates across conditions
+### P-loop kinetics in silico correlate with ADP release rates across conditions
 
 To further assess the generalizability of our model, we considered several additional datasets that relax constraints placed on data sets in the previous section. First, we relaxed the constraint that motors differ by just one structural element (loop 1). Specifically, we considered several skeletal myosin isoforms, including MYH7 and MYH13 that Johnson et al (35) studied under the same conditions (Figure 5D and E, yellow points). These motor domains are an interesting case because, at 80% sequence identity, their sequences differ much more than Sweeney et al’s constructs, and these differences are distributed throughout the protein. Crucially, and despite having roughly the same loop 1 length, their ADP release rates differ by about an order of magnitude (59 s−1 vs 400 s−1). Owing to the fact that Johnson et al’s data were collected under different experimental conditions than Sweeny et al’s data (5 mM MgCl2 at 25°C vs 1 mM MgCl2 at 20°C with different light chains), we only expect a general trend to hold, since motors’ properties are very sensitive to magnesium, temperature, and light chain identity (Chizhov et al., 2013; Heissler and Sellers, 2014; Lewis et al., 2012). Second, we assessed the trend in two human non-muscle motor domains, MYO1B and MYH10 with measurements carried out under different conditions. Notably, because they both release ADP very slowly, they test our model’s capacity to evaluate very slow ADP release rates.
 
 Consistent with our expectations, and despite the diverse experimental conditions, we still observe a reasonable correlation between P(A→B) and ADP release across all data sets (Figure 5E, Pearson’s R = 0.75). This dramatically improves on the length-based model (Pearson’s R = 0.14). Importantly, under the matched experimental conditions for MYH7 and MYH13 we still find the correct order of ADP release rates (Figure 3C, yellow points), suggesting that this method generalizes well to the larger phylogenic distances between myosin isoforms. Furthermore, MYO1B and MYH10 are correctly identified as very slow releasers of ADP, although the point estimates appear to be quite noisy. MYH10 is known to be exquisitely sensitive to light chains (Heissler and Sellers, 2014), so it is not surprising that it is one of the greatest outliers given that we did not include these in our simulations.
 
-## Structural models provide insight into the mechanism by which sequence influences P-loop conformational distributions
+### Structural models provide insight into the mechanism by which sequence influences P-loop conformational distributions
 
 Even though the sequences of motors’ P-loops are identical, their conformational distributions differ. This suggests that interactions with other structural elements in the motor domain bias the P-loop’s conformational distribution and our that models capture these effects.
 
@@ -115,7 +343,7 @@ Second, we also observed that the B state of the P-loop in the low duty ratio mo
 
 These examples demonstrate how physically realistic, atomically detailed models can provide mechanistic insight into how sequence variation modulates specific interactions to alter a protein’s function. Of course, there are many interactions at play, and consideration of multiple interactions is necessary to fully explain duty ratio. Therefore, a successful pipeline for predicting duty ratio predictions will probably require additional molecular dynamics simulations for any new variant. Specifically, we suggest that a fruitful design strategy would be to select mutations based on logic like that outlined above, then to simulate the newly designed sequences to check that they behave as intended (in silico), and then to perform experimental tests of these predictions. Such an approach has proved powerful in past applications to other proteins (Hart et al., 2016; Zimmerman et al., 2017).
 
-## Conclusions
+### Conclusions
 
 In this work, we used computer simulations of isolated myosin motor domains to predict the in vitro ADP release rate and duty ratio of unloaded myosin motors. To do this, we identified systematic shifts in the distribution of conformations that a motor explores that correlate with changes in biochemistry, rather than by directly simulating the biochemical processes themselves, which would have been prohibitively expensive. While binding partners (actin and nucleotide, for instance) and structural elements outside the motor domain almost certainly affect the distribution of conformations, our results demonstrate that it is nevertheless possible to extract reasonable estimates for at least some unloaded biochemical properties from only the isolated motor domain’s conformational distribution. The ability of the isolated motor domain’s fluctuations to predict these parameters likely stems from a link between the isolated and bound conformational distributions. In other words, because the motor domain active site must adopt certain key conformations during its functional interactions with binding partners (i.e. nucleotide and actin), it is nearly guaranteed to at least transiently sample those conformations even in the absence of those binding partners. Importantly, our simulations only require a reasonable homology model as a starting point, so our methods should be applicable to a broad range of motor variants, including mutations implicated in disease.
 
@@ -127,19 +355,19 @@ Finally, our results highlight the general capacity of computational modeling to
 
 ## Materials and methods
 
-## Preparation of homology models
+### Preparation of homology models
 
 For simulations, the initial structure of each myosin motor domain was prepared by first obtaining the full-length protein’s sequence from PubMed Protein, trimming the sequence down to include only the motor domain using crystal structure 4PA0 of MYH7 as a guide, and submitting that sequence to SWISS-MODEL for homology modeling (Waterhouse et al., 2018). Templates were chosen with a preference for those that were high-resolution, high sequence similarity, and in the rigor state. A complete list of sequences, templates, and motor domains can be found in Table 1.
 
-## Preparation of example myosin conformation
+### Preparation of example myosin conformation
 
 In Figure 1A, the position of ATP is based on ligand-bound crystal structure 1MMA (Münnich et al., 2014). The actin binding region was defined by all atoms within 10 Å of the actin filament after alignment to 6BNP chain K (Gurel et al., 2017).
 
-## Sequence alignments
+### Sequence alignments
 
 All sequence alignments were performed with MUSCLE 3.8.1551 (Edgar, 2004b) using default parameters. Phylogenetic trees were inferred with the neighbor joining method using these alignments. Distances between sequences were k-mer distances (Edgar, 2004a).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 GROMACS (Abraham et al., 2015; Berendsen et al., 1995) was used to prepare and to simulate all proteins. The protein structure was solvated in a dodecahedron box of TIP3P water (Jorgensen et al., 1983) that extended 1 nm beyond the protein in every dimension. Thereafter, sodium and chloride ions were added to produce a neutral system at 0.1 M NaCl.
 
@@ -149,13 +377,102 @@ Molecular dynamics were performed using the AMBER03 force field (Duan et al., 20
 
 Production simulations were performed on a mixture of Folding@home (Shirts and Pande, 2000) and an in-house supercomputing cluster. A mix of Tesla K20, Titan Xp, Tesla P100, and Quandro RTX 6000 GPUs were used and Intel Xeon E5-2650 v2, Intel Xeon E5-2630 v3, Intel Xeon E5-2690 v4, Intel Xeon Gold 6148 CPUs clocked at 2.4–2.6 GHz were used. Using GROMACS 2019.2, nodes featuring a Tesla K20 or Titan Xp produced ~22 ns/day, nodes featuring a Tesla P100 produced ~61 ns/day, and nodes featuring a Quadro RTX 6000 produced ~95 ns/day.
 
-## Markov state models
+### Markov state models
 
 Fine-grain, whole-motor domain Markov state models were constructed first by defining microstates using the k-hybrid clustering algorithm with five rounds of k-medoids refinement using the Euclidean distance between residue sidechain solvent accessible surface area (scSASA) as a distance metric. This approach first appeared in Porter et al., 2019a and was chosen because it scales well for extremely large datasets compared to traditional RMSD clustering. The reasons for this are discussed in Porter et al., 2019b but, briefly, although scSASA calculations are initially expensive, they realize substantial performance gains in clustering because each frame’s scSASA need only be computed once. ach frame can be computed independently, allowing for massive parallelization. It also reduces the size of the input data size, since only a single floating point number represents an entire residue, and allows the use of a cheaper distance metric (Euclidean distance rather than RMSD).
 
 Markov state models were then fit for each variant by applying a 1/n pseudocount to each element of the transition counts matrix and row-normalizing, as recommended in Zimmerman et al., 2018. Lag times were chosen by the implied timescales test and by examining the equilibrium probability distribution for unrealistically overpopulated states (suggesting insufficient sampling of a particular transition or internal energy barriers). Important hyperparameters are listed in Table 3.
 
-## Construction of the P-loop free energy surface
+**Table 3.**
+ Parameters of whole-motor Markov state models used in this study.Fitting coarse-grained P-loop MSMs used the same procedure, but assignments based on P-loop state were used, rather than assignments to whole-motor SASA states. P(A → B) is a parameter of these MSMs. In all cases for coarse-grained P-loop MSMs, a lag time of 37.5 ns was used. Clustering and Markov state model routines are implemented in enspara, git revision f874ba. Solvent accessibility, atomic distance, and RMSD calculations were performed with MDTraj (McGibbon et al., 2015). We made extensive use of jug (Coelho, 2017) and GNU Parallel (Tange, 2011) for task-level parallelization and management of dependencies between tasks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Simulation set</th>
+      <th>No. of states</th>
+      <th>Cluster radius [nm2]</th>
+      <th>Lag time [ns]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYH13</td>
+      <td>14102</td>
+      <td>7.4</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>MYH7</td>
+      <td>5128</td>
+      <td>7.34</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>MYH10</td>
+      <td>7746</td>
+      <td>8.0</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>MYO1B</td>
+      <td>6458</td>
+      <td>6.6</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>MYO5A</td>
+      <td>4728</td>
+      <td>7.25</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>MYO6</td>
+      <td>4193</td>
+      <td>6.9</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>MYO7A</td>
+      <td>8737</td>
+      <td>6.9</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>MYO10</td>
+      <td>9273</td>
+      <td>6.9</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>MYH11, wild-type</td>
+      <td>8050</td>
+      <td>4.9</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>MYH11, alanine sub.</td>
+      <td>7822</td>
+      <td>4.9</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>MYH11, Xenopus</td>
+      <td>12804</td>
+      <td>5.2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>MYH11, ∆loop 1</td>
+      <td>8925</td>
+      <td>5.0</td>
+      <td>1.5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of the P-loop free energy surface
 
 Pairwise interatomic distances in the P-loop were computed using MDTraj (McGibbon et al., 2015), selecting all possible pairs of a backbone amide nitrogen and a backbone carbonyl oxygen atom in the GESGAG portion of the Walker A motif (i.e., the conserved P-loop sequence) that makes up the P-loop.
 
@@ -163,27 +480,27 @@ Principal components analysis (PCA) was performed on the 36-dimensional pairwise
 
 The surface was then estimated by constructing a weighted two-dimensional histogram in the PC1/PC3 plane with 50 bins between the minimum and the maximum data in each direction. The resulting array of probabilities was then converted into free energies of units kT by taking the natural logarithm of each value. It was then convoluted with a gaussian of variance 0.3 per grid cell using scipy’s gaussian_filter method (Oliphant, 2007). The resulting array was then level-set into six level sets.
 
-## Selection of myosin motor domain PDB crystal structures
+### Selection of myosin motor domain PDB crystal structures
 
 We selected crystal structures to map on to the P-loop free energy landscape by querying the PDB (Berman et al., 2000) for all structures with sequence identities to the motor domain of Hs MYH7 greater than 10%, resolution <= 5.0 Å and a BLAST E-value less than 10−10. We then selected the largest chain in each crystal structure, used muscle (Edgar, 2004b) to align that chain’s sequence to the motor domain of Hs MYH7, and used the resulting alignment to identify the P-loop. P-loop distances were computed and projected into the low-dimensional space as described above. Sequence bookkeeping and I/O relied heavily on scikit-bio (github.com/biocore/scikit-bio; scikit-bio development team, 2014).
 
 Crystal structures were classified as bound to a nucleotide or nucleotide analogue if they contained a residue with the name ADP, ATP, ANP, MNQ, MNT, ONP, PNQ, DAE, DAQ, NMQ, AGS, AD9, AOV, or FLC.
 
-## Hierarchical clustering of the P-loop
+### Hierarchical clustering of the P-loop
 
 The five coarse-grained MSM microstates for MYH7 were learned using agglomerative clustering on the four-dimensional P-loop features learned by PCA for the free energy surface. Ward linkage and a Euclidean distance metric were used. Briefly, the states are recursively combined in a way that minimizes the within-cluster variance in a until the specified number of clusters is reached. The number of clusters were increased until no obvious internal free energy barriers were seen in the four PC dimensions. Agglomerative clustering was implemented by sklearn 0.21.2 (Pedregosa et al., 2011).
 
-## Assignment of new conformations to P-loop states
+### Assignment of new conformations to P-loop states
 
 P-loop state assignments for conformations of motors other than Hs MYH7 were made using a k-nearest neighbors (Pedregosa et al., 2011) approach. In this approach, a query conformation is assigned to a cluster based on the assignments of nearest k points in the labeled dataset (i.e. MYH7). In other words, the nearest k points to the query point ‘vote’ on the assignment of the query point to a cluster. In our case, k was 5, but we did not appreciate any differences for values of k from 3 to 15.
 
 Implementation of k-nearest neighbors was from sklearn 0.21.2. A ball tree was used to speed the search for neighbors (Omohundro, 1989).
 
-## Estimation of equilibrium probability of P-loop states
+### Estimation of equilibrium probability of P-loop states
 
 For each motor, the probability of a P-loop state was calculated by summing the equilibrium probabilities of all states in the whole-motor MSM assigned to that P-loop state.
 
-## Biochemical properties of myosin motors
+### Biochemical properties of myosin motors
 
 For each of the human myosin motors we simulated, an experimental duty ratio is available for either human or a vertebrate relative (e.g. cow, chicken) motor. Thus, wherever numerical duty ratios are reported (e.g. Figure 4B), these biochemical measurements are used. The experimentally-measured duty ratios and ADP release rates used in this work are shown in Table 2.
 
@@ -191,10 +508,10 @@ In our analysis of duty ratio and P-loop crystal position in Figure 4A, some con
 
 Myosin class was inferred as follows. Where a roman numeral was given in the PDB description (e.g. Myosin-II) this classification was used. Otherwise, if ‘muscle’ or ‘striated’ was appeared in the PDB polymerDescription field, the myosin was classified as a myosin-II. Finally, in the absence of other indicators, myosins from Doryteuthis pealeii, Placopecten magellanicus, and Argopecten irradians were classified as Myosin-IIs, and myosins from Plasmodium falciparum were classified as Myosin-XIVs.
 
-## Visualization
+### Visualization
 
 Proteins structures were visualized and rendered with PyMOL. Data plots were constructed with matplotlib (Hunter, 2007). Free energy surface colormaps were constructed with the cubehelix color system (Green, 2011).
 
-## Code and model availability
+### Code and model availability
 
 MSMs and starting conformations for each of the myosin constructs studied in this have been uploaded to the Open Science Framework as project ID 54 G7P, along with the parameters for the PCA used in Figures 2 and 3. This OSF project also includes a CSV that lists the P-loop definition, P-loop RMSD from the reference state, and assignment to P-loop state A-E for each crystal structure.

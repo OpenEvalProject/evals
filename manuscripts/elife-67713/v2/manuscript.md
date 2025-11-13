@@ -36,11 +36,11 @@ Here we used functional MRI (fMRI) and a visually cued (attempted) finger moveme
 
 ## Results
 
-## Patient impairments
+### Patient impairments
 
 We tested 14 chronic tetraplegic patients that were heterogenous in terms of completeness of the SCI (ranging from AIS-A to AIS-D), neurological level of the injury (ranging from C2 to C7), years since injury (ranging from 6 months to 33 years since SCI), and sensorimotor upper limb impairments (ranging from a Graded Redefined Assessment of Strength, Sensibility and Prehension test (GRASSP) score for both limbs of 21 to 220; healthy GRASSP score = 232). We further tested 18 age-, sex-, and handedness-matched healthy control participants.
 
-## Finger selectivity is preserved following tetraplegia
+### Finger selectivity is preserved following tetraplegia
 
 We used 3T fMRI and a travelling wave paradigm to investigate the somatotopic layout of finger selectivity on the S1 cortical surface (Besle et al., 2013; Kolasinski et al., 2016a). To visualise whether there was a consistent and somatotopic layout of finger selectivity across participants in the control and SCI patient groups, we created probability maps of finger selectivity. A characteristic hand map shows a gradient of finger preference, progressing from the thumb (laterally) to the little finger (medially). We found a characteristic progression of finger selective clusters in both the control and tetraplegic patient groups (Figure 1). Qualitative inspection suggests that inter-participant consistency was lowest for the little finger representation in both groups. It further appears that overall inter-participant consistency was reduced in the patient group compared to the control group.
 
@@ -50,13 +50,45 @@ We used 3T fMRI and a travelling wave paradigm to investigate the somatotopic la
 
 Given the known the relatively high inter-participant variability in finger selectivity (Kolasinski et al., 2016a) and the clinical heterogeneity of our SCI patient group, we further visualised each individual participant’s finger selectivity map (Figure 2A and B). Overall, we found aspects of somatotopic finger selectivity in the maps of SCI patients’ hands, in which neighbouring clusters showed selectivity for neighbouring fingers in contralateral S1, similar to those observed in 18 age-, sex-, and handedness-matched healthy controls. Notably, a characteristic hand map was even found in a patient who suffered complete paralysis and sensory deprivation of the hands (Figure 2B, patient map 1; patient S01). Despite most maps (Figure 2, except patient map 3; patient S04) displaying aspects of characteristic finger selectivity, some finger representations were not visible in the thresholded patient and control maps.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig2-v2.jpg)
+
+**Figure 2.:** Colours indicate selectivity for the thumb (finger 1, red), index finger (finger 2, yellow), middle finger (finger 3, green), ring finger (finger 4, blue), and little finger (finger 5, purple). Maps of participants for whom the left hand was tested are horizontally mirrored for visualisation purposes. Typical finger selectivity is characterised by a gradient of finger preference, progressing from the thumb (laterally) to the little finger (medially). These characteristic gradients of finger selectivity can be observed in both the able-bodied controls (A) and the tetraplegic patients (B). Despite most maps (except patient map 3) displaying aspects of characteristic finger maps, some finger representations were not visible in the thresholded patient and control maps. Patients’ hand maps are sorted according to their overall upper-limb impairments (assessed using the Graded Redefined Assessment of Strength, Sensibility and Prehension test [GRASSP]): from most to least impaired – as indicated by the white numbers. Black numbers indicate the years since spinal cord injury (SCI). Multiple comparisons were adjusted using a false discovery rate (FDR) with q < 0.05. Other figure annotations are as in Figure 1. (C) To ensure that the observed clusters were not representing noise, but rather true finger selectivity, we calculated split-half consistency between two halves of the minimally thresholded (Z > 2) travelling wave dataset (see Figure 2—figure supplement 1 for the travelling wave maps used to calculate split-half consistency). Both controls and patients showed higher split-half consistency (assessed using the Dice overlap coefficient) for comparison of the same fingers between two halves of the travelling wave dataset (light blue), compared to neighbouring (blue), and non-neighbouring fingers (dark blue). Moreover, neighbouring fingers showed greater overlap across the split-halves of the dataset then non-neighbouring fingers for both patients and controls. The same results were obtained when calculating split-half consistency on maps thresholded using FDR q < 0.05 (as was used for the maps in A, B; see Figure 2—figure supplement 2). Error bars show the standard error of the mean. *** = corrected p≤0.001, ns: non-significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Control (A) and patient maps (B) are ordered as in Figure 2. Colours indicate selectivity for the thumb (finger 1, red), index finger (finger 2, yellow), middle finger (finger 3, green), ring finger (finger 4, blue), and little finger (finger 5, purple). Maps of participants for whom the left hand was tested are horizontally mirrored for visualisation purposes. We used minimally thresholded finger-specific clusters (Z > 2) for the Dice overlap coefficient (DOC) spatial consistency analysis to ensure we were sensitive to overlaps that would be missed when using high thresholds. A: anterior; P: posterior. Multiple comparisons were adjusted using a false discovery rate (FDR) with q < 0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** We repeated the split-half consistency analysis using an q < 0.05 FDR-thresholding criterion (as in the travelling wave maps in Figure 2A and B). Similar results were found as when we thresholded the split-half finger maps using Z > 2: overall, split-half consistency was not significantly different between patients and controls, as tested using a robust mixed ANOVA (F(1,17.69) = 0.08, p=0.79). There was a significant difference in split-half consistency between pairs of same, neighbouring, and non-neighbouring fingers (F(2,14.77) = 38.80, p<0.001). This neighbourhood relationship was not significantly different between the control and patient groups (i.e. there was no significant interaction; F(2,14.77) = 0.12, p=0.89). *** = corrected p≤0.001, ns: non-significant.
+
 To ensure that the observed finger selective clusters were not representing noise, but rather true finger selectivity, we calculated split-half consistency between two halves of the travelling wave dataset using the Dice overlap coefficient (DOC; Dice, 1945). Minimally thresholded finger maps were compared across the split-halves of the data within an S1 mask. Overall, split-half consistency was not significantly different between patients and controls, as tested using a robust mixed ANOVA (see Figure 2C; F(1,20.32) = 0.51, p=0.48). There was a significant difference in split-half consistency between pairs of same, neighbouring, and non-neighbouring fingers (F(2,18.59) = 159.69, p<0.001). This neighbourhood relationship was not significantly different between the control and patient groups (i.e. there was no significant interaction; F(2,18.59) = 2.44, p=0.11).
 
 The DOC was highest for comparison of the same fingers between two halves of the dataset compared to neighbouring (controls: W = 171, p<0.001, BF10 = 2761.24; patients: W = 91, p<0.001, BF10 = 742.45) and non-neighbouring fingers (controls: W = 171, p<0.001, BF10 = 248.14; patients: W = 91, p<0.001, BF10 = 133.05). Moreover, neighbouring fingers showed greater overlap across the split-halves of the dataset than non-neighbouring fingers (controls: W = 171, p<0.001, BF10 = 835.29; patients: W = 91, p=0.001, BF10 = 65.32). This demonstrates that there was a somatotopic gradient in split-half consistency that was similar between the control and patient groups, demonstrating that the finger maps represented true finger selectivity.
 
-## Typical hand somatotopy is preserved following tetraplegia
+### Typical hand somatotopy is preserved following tetraplegia
 
 Next, we assessed 3T univariate task-related activity during individual finger movements performed in a blocked design fashion. Task-related activity was quantified by extracting the percent signal change for finger movement (across all fingers) versus baseline within the contralateral S1 hand area (see Figure 3A). Overall, all patients were able to engage their S1 hand area by moving individual fingers (t(13) = 7.46, p<0.001; BF10 = 4.28 e + 3), as did controls (t(17) = 9.92, p<0.001; BF10 = 7.40 e + 5). Furthermore, patients’ task-related activity was not significantly different from controls (t(30) = –0.82, p=0.42; BF10 = 0.44), with the Bayes factor (BF) showing anecdotal evidence in favour of the null hypothesis. Similar results were found when exploring univariate task-related activity in the contralateral M1 hand ROI (see Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig3-v2.jpg)
+
+**Figure 3.:** (A) Percent signal change in the S1 hand area during finger movement for able-bodied controls (grey) and tetraplegic patients (orange). Similar results were found in the M1 hand ROI (see Figure 3—figure supplement 1). (B, C) Two-dimensional projection of the representational structure of inter-finger distances in the control (B) and tetraplegic patient groups (C). Inter-finger distance is reflected by the distance in the two dimensions. Individual fingers are represented by different colours: thumb, red; index finger, yellow; middle finger, green; ring finger, blue; little finger, purple. Ellipses represent the between-participants’ standard error after Procrustes alignment. Inter-finger distances across finger pairs were significantly different across finger pairs (as would be expected based on somatotopic mapping), but not between controls and tetraplegic patients (see Figure 3—figure supplement 2). Individual participant inter-finger distance patterns are visualised in Figure 3—figure supplement 3 and Figure 3—figure supplement 4 for the controls and patients, respectively. (D) Separability, measured as mean inter-finger distance, of the representational structure in the S1 hand area of controls and patients. Patients are presented on a colour scale representing the sensory and motor functioning of their tested upper limb, measured using the Graded Redefined Assessment of Strength, Sensibility and Prehension test (GRASSP) (0 = no upper limb function, 116 = normal upper limb function). (E) Typicality of the representational structure in controls, patients, and congenital one-handers (Cong. in the figure). *** p<0.001; ns: non-significant; Dim: dimension; a.u.: arbitrary unit; Cong: congenital one-handers.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Overall, all tetraplegic patients were able to engage their M1 hand area by moving (or attempting to move) individual fingers (t(13) = 6.44, p<0.001; BF10 = 1.09 e + 3), as did controls (t(17) = 9.73, p<0.001; BF10 = 5.65 e + 5). Furthermore, patients’ task-related activity was not significantly different from controls (t(30) = –0.66, p=0.52; BF10 = 0.40), with the Bayes factor (BF) showing anecdotal evidence in favour of the null hypothesis.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** A robust mixed ANOVA with a within-participants factor for finger pair (10 levels) and a between-participants factor for group (two levels: controls and tetraplegic patients) revealed a significant main effect for finger pair, as would be expected based on somatotopic mapping (F(9,15.38) = 27.22, p<0.001). We did not find a significant group (F(1,21.66) = 1.50, p=0.23) or finger pair by group interaction (F(9,15.38) = 1.05, p=0.45). When testing for group differences per finger pair, the Bayes factor (BF) only revealed inconclusive evidence (BF >0.37 and < 1.11; note that we could not run a Bayesian ANOVA due to normality violations). Crossval.: crossvalidated; F: finger; F1: thumb; F2: index finger; F3: middle finger; F4: ring finger; F5: little finger.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Annotations are as in Figure 3. The order of participants is as in Figure 2.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/67713/elife-67713-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Annotations are as in Figure 3. The order of participants is as in Figure 2 (note that patient S02 did not undergo the travelling wave paradigm due to time constraints).
 
 While the travelling wave maps demonstrate finger selectivity, they provide little information about the overlap between finger representations. We therefore examined the intricate relationship between finger representations in the S1 hand area for all patients and controls using RSA (see Figure 3B and C). The resulting inter-finger distances were averaged across finger pairs within each participant to obtain an estimate for average inter-finger separability (see Figure 3D). We found that inter-finger separability in the S1 hand area was greater than 0 for patients (t(13) = 9.83, p<0.001; BF10 = 6.77 e + 4) and controls (t(17) = 11.70, p<0.001; BF10 = 6.92 e + 6), indicating that the S1 hand area in both groups contained information about individuated finger representations. Furthermore, for both controls (W = 171, p<0.001; BF10 = 4059) and patients (W = 105, p<0.001; BF10 = 279) there was significant greater separability (or representation strength) in the S1 hand area than in a control cerebral spinal fluid (CSF) ROI that would not be expected to contain information about individuated finger representations. We did not find a significant group difference in inter-finger separability of the S1 hand area (t(30) = 1.52, p=0.14; BF10 = 0.81), with the BF showing anecdotal evidence in favour of the null hypothesis.
 
@@ -64,7 +96,7 @@ We then tested whether the inter-finger distances were different across finger p
 
 Although inter-finger separability was not significantly different between patients and controls, it is possible that the pattern of inter-finger distances was atypical in the patients. We therefore examined whether the inter-finger distance pattern was normal (or typical) in tetraplegic patients (see Figure 3E) by correlating each participant’s inter-finger distance pattern with a canonical inter-finger distance pattern. Tetraplegic patients’ typicality scores were compared to those of the controls and of a group congenital one-handers (data taken from an independent study; Wesselink et al., 2019). Congenital one-handers are born without a hand and therefore do not have a cortical representation of the missing hand (unlike amputees who develop the representation before losing the hand and hence have a ‘missing hand representation’; Wesselink et al., 2019). This group was therefore included as a control for absence of hand representation. We found a significant difference in typicality between tetraplegic patients, healthy controls, and congenital one-handers (H(2) = 26.64, p<0.001). As expected, post hoc tests revealed significantly higher typicality in controls compared to congenital one-handers (U = 0, p<0.001; BF10 = 113.60). Importantly, inter-finger distances typicality of the SCI patients was significantly higher than the typicality scores of the congenital one-handers (U = 4, p<0.001; BF10 = 90.33), but not significantly different from the typicality scores of the controls (U = 103, p=0.40; BF10 = 0.55). The BF for the comparison between SCI patients and controls showed anecdotal evidence for equivalence between both groups.
 
-## Typical hand somatotopy deteriorates over years after tetraplegia
+### Typical hand somatotopy deteriorates over years after tetraplegia
 
 Next, we aimed to understand which clinical, behavioural, and structural spinal cord determinants may allow hand representations in S1 to be maintained. We first explored correlations with S1 hand representation typicality. We found that the number of years since SCI significantly correlated with hand representation typicality (see Figure 4A; rs = –0.59, p=0.028), suggesting that S1 hand representation typicality may deteriorate over time after SCI. We further found that patients with more retained GRASSP motor function of the tested upper limb had more typical hand representations in S1 (see Figure 4B; rs = 0.60, p=0.02). We did not find a significant correlation between S1 hand representation typicality and GRASSP sensory function of the tested upper limb, spared midsagittal spinal tissue bridges at the lesion level, or cross-sectional spinal cord area (see Figure 4C–E; rs = 0.40, p=0.16, rs = 0.46, p=0.14, and rs = 0.33, p=0.25, respectively).
 
@@ -94,17 +126,429 @@ Together, our findings indicate that in the first years after a tetraplegia the 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 15 chronic (i.e. > 6 months post injury) tetraplegic patients were recruited and 14 patients completed the measurements (mean age ± s.e.m. = 55 ± 3.6 years ; one female; six dominant left-handers; see Table 1 for demographic and clinical details). Patient inclusion criteria were as follows: aged 18–75 years, no MRI contraindications, at least 6 months post SCI, no neurological impairment or body function impairments not induced by SCI, and able to provide informed consent. 18 age-, sex-, and handedness-matched able-bodied control participants (age = 56 ± 3.6 years; one female; five dominant left-handers) also participated in this study. Control participant inclusion criteria were as follows: aged 18–75 years, no MRI contraindications, no impairment of body function induced by SCI, no neurological illness, no hand impairments, and able to provide informed consent.
 
+**Table 1.**
+ Demographic and clinical details.Tetraplegic patients are ordered according to their retained upper-limb sensory and motor function (assessed using the Graded Redefined Assessment of Strength, Sensibility and Prehension test [GRASSP]). Sex: F, female; M, male; Age, age in years; AIS grade, American Spinal Injury Association (ASIA) Impairment Scale grade defined based on the International Standards for Neurological Classification of Spinal Cord Injury (ISNCSCI); A, complete; B, sensory incomplete; C, motor incomplete; D, motor incomplete; E, normal; Neurological level of injury, defined based on the ISNCSCI; dominant hand, defined using the Edinburgh handedness inventory: L, left; R, right; GRASSP, Graded Redefined Assessment of Strength, Sensibility and Prehension (maximum score: 232 points); tested side, side with the lowest score on the GRASSP measurement; GRASSP motor/sensory score of the tested upper limb (maximum scores: 50/24; see Table 2 for further details).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Years since injury</th>
+      <th>AIS grade</th>
+      <th>Cause of injury</th>
+      <th>Neurological level of injury</th>
+      <th>Dominant hand</th>
+      <th>GRASSP score</th>
+      <th>Hand tested</th>
+      <th>GRASSP tested side motor/sensory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S01</td>
+      <td>M</td>
+      <td>32</td>
+      <td>4</td>
+      <td>A</td>
+      <td>Trauma</td>
+      <td>C4</td>
+      <td>L</td>
+      <td>21</td>
+      <td>L</td>
+      <td>9/0</td>
+    </tr>
+    <tr>
+      <td>S02</td>
+      <td>M</td>
+      <td>52</td>
+      <td>32</td>
+      <td>A</td>
+      <td>Trauma</td>
+      <td>C5</td>
+      <td>R</td>
+      <td>78</td>
+      <td>L</td>
+      <td>16/5</td>
+    </tr>
+    <tr>
+      <td>S03</td>
+      <td>M</td>
+      <td>35</td>
+      <td>4</td>
+      <td>A</td>
+      <td>Trauma</td>
+      <td>C4</td>
+      <td>R</td>
+      <td>90</td>
+      <td>L</td>
+      <td>16/17</td>
+    </tr>
+    <tr>
+      <td>S04</td>
+      <td>M</td>
+      <td>41</td>
+      <td>19</td>
+      <td>A</td>
+      <td>Trauma</td>
+      <td>C6</td>
+      <td>L</td>
+      <td>105</td>
+      <td>L</td>
+      <td>19/11</td>
+    </tr>
+    <tr>
+      <td>S05</td>
+      <td>M</td>
+      <td>52</td>
+      <td>10</td>
+      <td>A</td>
+      <td>Trauma</td>
+      <td>C2</td>
+      <td>L</td>
+      <td>118</td>
+      <td>R</td>
+      <td>23/0</td>
+    </tr>
+    <tr>
+      <td>S06</td>
+      <td>M</td>
+      <td>67</td>
+      <td>26</td>
+      <td>A</td>
+      <td>Trauma</td>
+      <td>C4</td>
+      <td>R</td>
+      <td>119</td>
+      <td>L</td>
+      <td>29/2</td>
+    </tr>
+    <tr>
+      <td>S07</td>
+      <td>M</td>
+      <td>57</td>
+      <td>33</td>
+      <td>C</td>
+      <td>Trauma</td>
+      <td>C5</td>
+      <td>L</td>
+      <td>145</td>
+      <td>R</td>
+      <td>25/19</td>
+    </tr>
+    <tr>
+      <td>S08</td>
+      <td>F</td>
+      <td>67</td>
+      <td>4</td>
+      <td>D</td>
+      <td>Trauma</td>
+      <td>C5</td>
+      <td>L</td>
+      <td>173</td>
+      <td>L</td>
+      <td>41/9</td>
+    </tr>
+    <tr>
+      <td>S09</td>
+      <td>M</td>
+      <td>59</td>
+      <td>12</td>
+      <td>D</td>
+      <td>Trauma</td>
+      <td>C2</td>
+      <td>R</td>
+      <td>187</td>
+      <td>R</td>
+      <td>43/9</td>
+    </tr>
+    <tr>
+      <td>S10</td>
+      <td>M</td>
+      <td>42</td>
+      <td>2</td>
+      <td>D</td>
+      <td>Trauma</td>
+      <td>C4</td>
+      <td>R</td>
+      <td>187</td>
+      <td>R</td>
+      <td>41/13</td>
+    </tr>
+    <tr>
+      <td>S11</td>
+      <td>M</td>
+      <td>58</td>
+      <td>0.5</td>
+      <td>D</td>
+      <td>Ischaemic</td>
+      <td>C4</td>
+      <td>R</td>
+      <td>194</td>
+      <td>R</td>
+      <td>37/17</td>
+    </tr>
+    <tr>
+      <td>S12</td>
+      <td>M</td>
+      <td>71</td>
+      <td>16</td>
+      <td>D</td>
+      <td>Trauma</td>
+      <td>C7</td>
+      <td>R</td>
+      <td>196</td>
+      <td>R</td>
+      <td>32/24</td>
+    </tr>
+    <tr>
+      <td>S13</td>
+      <td>M</td>
+      <td>65</td>
+      <td>1</td>
+      <td>D</td>
+      <td>Trauma</td>
+      <td>C2</td>
+      <td>R</td>
+      <td>218</td>
+      <td>R</td>
+      <td>42/24</td>
+    </tr>
+    <tr>
+      <td>S14</td>
+      <td>M</td>
+      <td>74</td>
+      <td>6</td>
+      <td>D</td>
+      <td>Surgery</td>
+      <td>C4</td>
+      <td>L</td>
+      <td>220</td>
+      <td>R</td>
+      <td>47/24</td>
+    </tr>
+  </tbody>
+</table>
+
 Participants’ informed consent was obtained according to the Declaration of Helsinki prior to study onset. Ethical approval was granted by the Kantonale Ethikkommission Zürich (KEK-2018-00937). This study is registered on clinicaltrials.gov under NCT03772548. Two patients and one control participant were scanned twice due to excessive head motion during fMRI acquisition or suboptimal slice placement. One patient withdrew from the study prior to study completion. Data of one control participant were distorted and not usable for analysis. All data relating to these participants were discarded from all data analysis. Patient S02 did not complete the travelling wave measurements due to time constraints.
 
-## Clinical characterisation
+### Clinical characterisation
 
 Behavioural testing was conducted in a separate session. We used the International Standards for Neurological Classification of Spinal Cord Injury (ISNCSCI) to neurologically classify patients’ completeness of injury and impairment level. We used the GRASSP assessment to define sensory and motor integrity of the upper limbs (Kalsi-Ryan et al., 2012). Each upper limb’s maximum score is 116 and refers to healthy conditions. We determined each patient’s most impaired upper limb according to the GRASSP. Note that GRASSP motor scores reflect overall upper-limb motor function (i.e. including arm and shoulder functioning; see Table 2 for muscle-specific GRASSP scores). GRASSP sensory scores are hand specific.
 
-## fMRI tasks
+**Table 2.**
+ GRASSP motor sub-scores.Each muscle was tested with resistance through its full range of motion and given a muscle grade between 0 and 5: 0, flaccid motion; 1, flicker motion; 2, full range of motion with gravity eliminated; 3, full range of motion against gravity; 4, full range of motion with moderate resistance; 5, full range of motion with maximal resistance (Kalsi-Ryan et al., 2012).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Elbow flexion</th>
+      <th>Shoulder (deltoideus)</th>
+      <th>Wrist extension</th>
+      <th>Elbow extension</th>
+      <th>Fingers 2–5 extension</th>
+      <th>Thumb opposition</th>
+      <th>Thumb flexion</th>
+      <th>Middle finger flexion</th>
+      <th>Little finger abduction</th>
+      <th>Index finger abduction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S01</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S02</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S03</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S04</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S05</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>S06</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S07</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>S08</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>S09</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>S10</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>S11</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>S12</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>S13</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>S14</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+### fMRI tasks
 
 We employed two separate paradigms to uncover fine-grained somatotopic hand representations using fMRI: first, we used a travelling wave paradigm to investigate the somatotopic hand layout on the S1 cortical surface (Besle et al., 2013; Kolasinski et al., 2016a). Second, we employed a blocked design and RSA that takes into account the entire fine-grained activity pattern of each finger (i.e. including the representational inter-finger relationships; Ejaz et al., 2015; Kriegeskorte et al., 2008).
 
@@ -116,23 +560,23 @@ The travelling wave paradigm involved individuated finger movements in a set seq
 
 The blocked design consisted of six conditions: movement conditions for each of the five fingers and a rest condition. Finger movement instructions were as described above, and the word ‘Rest’ indicated the rest condition. A movement block lasted 8 s, and each condition was repeated five times per run in a counterbalanced order. Each run comprised a different block order and had a duration of 4 min and 14 s. We acquired four runs, with a total duration of 16 min and 56 s.
 
-## MRI acquisition
+### MRI acquisition
 
 MRI data were acquired using a Philips 3 Tesla Ingenia system (Best, The Netherlands) with a 17-channel HeadNeckSpine or, in case of participant discomfort due to the coil’s narrowness, a 15-channel HeadSpine coil. Anatomical T1-weighted images covering the brain and cervical spinal cord were acquired using the following acquisition parameters: 0.8 mm3 resolution, repetition time (TR) = 9.3 ms, echo time (TE) = 4.4 ms, and flip angle 8°. Anatomical T2-weighted images of the cervical spinal cord were acquired sagittally using the following acquisition parameters: 1 × 1 × 3 mm resolution, TR = 4500 ms, TE = 85 ms, flip angle = 90°, and slice gap = 0.3 mm, 15 slices. Task-fMRI data were acquired using an echo-planar-imaging (EPI) sequence with partial brain coverage: 22 sagittal slices were centred on the anatomical location of the hand knob with coverage over the thalamus and brainstem. We used the following acquisition parameters: 2 mm3 resolution, TR = 2000 ms, TE = 30 ms, flip angle = 82°, and SENSE factor = 2.2. We acquired 182 and 127 volumes for each of the travelling wave and blocked design runs, respectively.
 
-## fMRI analysis
+### fMRI analysis
 
 fMRI analysis was implemented using FSL v6.0 (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki), Advanced Normalization Tools (ANTs) v2.3.1 (http://stnava.github.io/ANTs), the RSA toolbox (Nili et al., 2014; Wesselink and Maimon-Mor, 2017), and MATLAB (R2018a). Cortical surface visualisations were realised using FreeSurfer (https://surfer.nmr.mgh.harvard.edu/; Dale et al., 1999; Fischl et al., 2001) and Connectome Workbench (https://www.humanconnectome.org/software/connectome-workbench).
 
-## fMRI preprocessing
+### fMRI preprocessing
 
 Common preprocessing steps were applied using FSL’s Expert Analysis Tool (FEAT). The following preprocessing steps were included: motion correction using MCFLIRT (Jenkinson et al., 2002), brain extraction using automated brain extraction tool BET (Smith, 2002), spatial smoothing using a 2 mm full-width-at-half-maximum (FWHM) Gaussian kernel, and high-pass temporal filtering with a 100 s (blocked design runs) or 90 s (travelling wave runs) cut-off.
 
-## Image registration
+### Image registration
 
 Image co-registration was done in separate, visually inspected, steps. For each participant, a midspace was calculated between the four blocked design runs, that is, an average space in which images are minimally reoriented. We then transformed all fMRI data to this midspace using purely rigid probability mapping in ANTs. Next, we registered each participant’s midspace to the T1-weighted image, initially using 6 degrees of freedom and the mutual information cost function, and then optimised using boundary-based registration (BBR; Greve and Fischl, 2009) Each co-registration step was visually inspected and, if needed, manually optimised using blink comparison in Freeview.
 
-## Travelling wave analysis
+### Travelling wave analysis
 
 The travelling wave approach is characterised by set finger movement cycles that are expected to result in neighbouring cortical activations. It is designed to capture voxels that show preferential activity to one condition, above and beyond all other conditions (i.e. winner-takes-all principle; testing for finger selectivity). The travelling wave approach is especially powerful to reveal the smooth progression of neighbouring representations that are specific for topographic maps. This technique is therefore frequently used to uncover retinotopic (DeYoe et al., 1996; Engel et al., 1997; Sereno et al., 1995), somatotopic (Besle et al., 2013; Kikkert et al., 2016; Kolasinski et al., 2016a; Mancini et al., 2012; Zeharia et al., 2015), and tonotopic representations (Da Costa et al., 2015; Talavage et al., 2004). Importantly, S1 finger movement somatotopy assessed using the travelling wave approach is highly consistent across scanning sessions (Kolasinski et al., 2016a).
 
@@ -144,25 +588,29 @@ To visualise the smooth gradient of progression across fingers, we produced lag-
 
 Cortical surface projections were constructed from participant’s T1-weighted images. The winner-take-all finger-specific and lag-specific gradient maps were projected onto the cortical surface using cortical-ribbon mapping. Thresholding was applied to the winner-take-all finger-specific maps and lag-specific maps on the cortical surface using a false discovery criterion q < 0.05 based on the native (3D) values. The false discovery rate (FDR) thresholded finger-specific maps were combined to form a hand map. Within this hand map, the lag-specific map was used to visualise the smooth gradient of progression across fingers. We were unable to find a characteristic hand map in one patient who anecdotally reported post hoc that he was unable to performed attempted finger movements.
 
-## Inter-participant probability of finger selectivity
+### Inter-participant probability of finger selectivity
 
 To visualise inter-participant consistency of somatotopic finger-selective representations, we calculated cortical activation probability maps. To ensure that the tested hemisphere was consistently aligned for all participants, we first flipped the acquired T1-weighted images and the travelling wave winner-take-all finger-specific maps along the x-axis for the left-hand tested participants. For these left-hand tested participants, we created new cortical surface projections using their flipped T1-weighted images. Each participant’s cortical surface was then inflated into a sphere and aligned to the FreeSurfer 2D average atlas using sulcal depth and curvature information. The travelling wave winner-take-all finger-specific maps were resampled to the FreeSurfer 2D average atlas and thresholded using a false discovery criterion q < 0.05 based on the native (3D) values. We then calculated finger-specific probability maps for the control and SCI patient groups, separately.
 
-## Spatial correspondence of finger maps over time: DOC analysis
+### Spatial correspondence of finger maps over time: DOC analysis
 
-To confirm that the travelling wave finger-specific maps did not represent random noise, we quantified spatial consistency of finger preference between two halves of the data using the Dice overlap coefficient (DOC; Dice, 1945). The DOC calculates the spatial overlap between two representations relative to the total area of these representations. The DOC ranges from 0 (no spatial overlap) to 1 (perfect spatial overlap). If A and B represent the areas of two representations, then the DOC is expressed as2x|A∩B||A|+|B|
+To confirm that the travelling wave finger-specific maps did not represent random noise, we quantified spatial consistency of finger preference between two halves of the data using the Dice overlap coefficient (DOC; Dice, 1945). The DOC calculates the spatial overlap between two representations relative to the total area of these representations. The DOC ranges from 0 (no spatial overlap) to 1 (perfect spatial overlap). If A and B represent the areas of two representations, then the DOC is expressed as
+
+$$
+\frac{2x|A∩B|}{|A|+|B|}
+$$
 
 We followed previously described procedures for calculating the DOC between two halves of the travelling wave data (Kikkert et al., 2016; Kolasinski et al., 2016a; Sanders et al., 2019). The averaged finger-specific maps of the first forward and backward runs formed the first data half. The averaged finger-specific maps of the second forward and backward runs formed the second data half. The finger-specific clusters were minimally thresholded (Z > 2) on the cortical surface and masked using an S1 ROI that was created based on Brodmann area parcellation using FreeSurfer. We used minimally thresholded finger-specific clusters for DOC analysis to ensure that we were sensitive to overlaps that would be missed when using high thresholds (see Figure 2—figure supplement 1 for a visualisation of the minimally thresholded split-half hard-edged finger maps used to calculate the DOC). Note that the same results were found when thresholding the finger-specific clusters using an FDR q < 0.05 criterion (see Figure 2—figure supplement 2). The DOC was calculated between same, neighbouring, and non-neighbouring fingers across the two data halves (see Figure 2C).
 
 If the finger maps would be spatially consistent and represent true finger selectivity, then one would expect a higher DOC between pairs of ‘same’ fingers across the two data halves compared to neighbouring and non-neighbouring finger pairs. One would further expect to find a somatotopic relationship in the DOCs: that is, a higher DOC between neighbouring compared to non-neighbouring finger pairs. We tested whether the somatotopic relationship in the DOCs was different in controls and patients using a robust mixed ANOVA with a within-participants factor for finger pair (three levels: same, neighbouring and non-neighbouring finger pairs) and a between-participants factor for group (two levels: controls and SCI patients).
 
-## Univariate analysis
+### Univariate analysis
 
 To assess univariate task-related activity of the blocked design data, time-series statistical analysis was carried out per run using FMRIB’s Improved Linear Model (FILM) with local autocorrelation correction, as implemented in FEAT. We obtained activity estimates using a general linear modelling (GLM) based on the double-gamma HRF and its temporal derivative. Each finger movement condition was contrasted with rest. A further contrast was defined for overall task-related activity by contrasting all movement conditions with rest. A fixed effects higher-level analysis was ran for each participant to average across runs.
 
 We defined an S1 hand ROI by converting the S1 ROI used to calculate split-half consistency to volumetric space. Any holes were filled and non-zero voxels were mean dilated. Next, the axial slices spanning 2 cm medial/lateral to the hand knob (Yousry et al., 1997) were identified on the 2 mm MNI standard brain (min-max MNI z-coordinates = 40–62). This mask was non-linearly transformed to each participant’s native structural space. Finally, we used this mask to restrict the S1 ROI and extracted an S1 hand area ROI. The percent signal change for overall task-related activity was then extracted for voxels underlying this S1 hand ROI per participant. A similar analysis was used to investigate overall task-related activity in an M1 hand ROI (see Figure 3—figure supplement 1). We further compared activity levels in finger-specific ROIs in S1 between groups and conducted a geodesic distance analysis to assess whether the finger representations of SCI patients were aligned differently and/or shifted compared to the control group (see Appendix 1).
 
-## Representational similarity analysis
+### Representational similarity analysis
 
 While the traditional travelling wave approach is powerful to uncover the somatotopic finger arrangement, a fuller description of hand representation can be obtained by taking into account the entire fine-grained activity pattern of all fingers. RSA-based inter-finger overlap patterns have been shown to depict the invariant representational structure of fingers better than the size, shape, and exact location of the areas activated by finger movements (Ejaz et al., 2015). RSA-based measures are furthermore not prone to some of the problems of measurements of finger selectivity (e.g. dependence on map thresholds). We estimated inter-finger overlap using RSA. Note that it is also possible to estimate somatotopic overlap from travelling wave data using an iterated Multigrid Priors (iMGP) method and population-receptive field modelling (Da Rocha Amaral et al., 2020; Puckett et al., 2020). We computed the distance between the activity patterns measured for each finger pair within the S1 hand ROI using the cross-validated squared Mahalanobis distance (or crossnobis distance; Nili et al., 2014). We extracted the blocked design voxel-wise parameter estimates (betas) for each finger movement condition versus rest (identified in the univariate analysis) and the model fit residuals under the S1 hand ROI. We prewhitened the extracted betas using the model fit residuals. We then calculated the cross-validated squared Mahalanobis distances between each possible finger pair, using our four runs as independent cross-validation folds, and averaged the resulting distances across the folds. If it is impossible to statistically differentiate between conditions (i.e. when this parameter is not represented in the ROI), the expected value of the distance estimate would be 0. If it is possible to distinguish between activity patterns, this value will be larger than 0.
 
@@ -170,17 +618,17 @@ The distance values for all finger pairs were assembled in a representational di
 
 Finally, we performed multidimensional scaling (MDS) to visualise the distance structure of the RDM in an intuitive manner. MDS projects the higher-dimensional RDM into a lower-dimensional space, while preserving the inter-finger distance values as well as possible (Borg and Groenen, 2005). MDS was performed for each individual participant and then averaged per group after Procrustes alignment to remove arbitrary rotation induced by MDS.
 
-## Structural MRI analysis
+### Structural MRI analysis
 
-## Midsagittal tissue bridges analysis
+#### Midsagittal tissue bridges analysis
 
 We used sagittal T2w structural images of the cervical spinal cord at the lesion level to quantify spared tissue bridges. It has been shown that already in the sub-acute stage after SCI oedema and haemorrhage have largely resolved and hyperintense signal changes reliably reflect intramedullary neural damage (Huber et al., 2017; Pfyffer et al., 2019; Vallotton et al., 2019). We closely followed previously described procedures (Huber et al., 2017; Pfyffer et al., 2019; Vallotton et al., 2019). We used Jim 7.0 software (Xinapse Systems, Aldwincle, UK) for manual lesion segmentation at the lesion level, for which high intra- and interobserver reliability has previously been reported (Huber et al., 2017; Pfyffer et al., 2019). The experimenter conducting the manual segmentation was blinded to patient identity. We only included patients’ T2w scans if the lesion (i.e. hyperintense, CSF-filled cystic cavity) was clearly visible on the midsagittal slice. We excluded images of two patients with metal artefacts or insufficient data quality which would not allow a reliable quantification of lesion measures. Tissue bridges were defined as the relatively hypointense intramedullary region between the hyperintense CSF on one side and the cystic cavity on the other side. We assessed the width of ventral and dorsal tissue bridges on the midsagittal slice and summed these to get the total width of tissue bridges.
 
-## Cervical cross-sectional spinal cord area analysis
+#### Cervical cross-sectional spinal cord area analysis
 
 We used Jim 7.0 software (Xinapse Systems) to extract the cross-sectional spinal cord area at cervical level C2/3 of the spinal cord from the sagittal T2w scans. We used multi-planar reconstruction of sagittal images, resulting in 10 contiguous axial slices at C2/3 with a thickness of 2 mm (Losseff et al., 1996). Using the active-surface model from Horsfield et al., 2010, the cross-sectional spinal cord area was calculated semi-automatically for every slice and averaged over all 10 slices.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was carried out using SPSS (v25). Standard approaches were used for statistical analysis, as mentioned in the Results section. If normality was violated (assessed using the Shapiro–Wilk test), non-parametric statistical testing or robust ANOVAs (in RStudio v1.4; WRS2 package; Mair and Wilcox, 2020) were used. We used a Crawford–Howell t-test to compare single patients to the congenital and control groups (Corballis, 2009). All testing was two-tailed, and corrected p-values were calculated using the Benjamini–Hochberg procedure to control the FDR with q < 0.05. The correlational analysis was considered exploratory and we did not correct for multiple comparisons in this analysis.
 

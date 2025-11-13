@@ -16,19 +16,19 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Microbiology & Immunology, University of California San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Sandler Asthma Basic Research Program, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Gladstone-UCSF Institute of Genomic Immunology San Francisco United States
-4. https://ror.org/043mz5j54 Department of Otolaryngology-Head and Neck Surgery, University of California San Francisco San Francisco United States
-5. https://ror.org/0184qbg02 Parker Institute for Cancer Immunotherapy, San Francisco San Francisco United States
-6. https://ror.org/00knt4f32 Chan Zuckerberg Biohub San Francisco United States
-7. https://ror.org/043mz5j54 Department of Medicine, University of California San Francisco Lexington United States
+1. Department of Microbiology & Immunology, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Sandler Asthma Basic Research Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Gladstone-UCSF Institute of Genomic Immunology San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Department of Otolaryngology-Head and Neck Surgery, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+5. Parker Institute for Cancer Immunotherapy, San Francisco San Francisco United States ([ROR:0184qbg02](https://ror.org/0184qbg02))
+6. Chan Zuckerberg Biohub San Francisco United States ([ROR:00knt4f32](https://ror.org/00knt4f32))
+7. Department of Medicine, University of California San Francisco Lexington United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-Proper activation of cytotoxic T cells via the T cell receptor and the costimulatory receptor CD28 is essential for adaptive immunity against viruses, intracellular bacteria, and cancers. Through biochemical analysis of RNA:protein interactions, we uncovered a non-coding RNA circuit regulating activation and differentiation of cytotoxic T cells composed of the long non-coding RNA Malat1 (Metastasis Associated Lung Adenocarcinoma Transcript 1) and the microRNA family miR-15/16. miR-15/16 is a widely and highly expressed tumor suppressor miRNA family important for cell proliferation and survival. miR-15/16 play important roles in T cell responses to viral infection, including the regulation of antigen-specific T cell expansion and memory. Comparative Argonaute-2 high-throughput sequencing of crosslinking immunoprecipitation (AHC) combined with gene expression profiling in normal and miR-15/16-deficient mouse T cells revealed a large network of hundreds of direct miR-15/16 target mRNAs, many with functional relevance for T cell activation, survival and memory formation. Among these targets, Malat1 contained the largest absolute magnitude miR-15/16-dependent AHC peak. This binding site was among the strongest lncRNA:miRNA interactions detected in the T cell transcriptome. We used CRISPR targeting with homology directed repair to generate mice with a 5-nucleotide mutation in the miR-15/16-binding site in Malat1 . This mutation interrupted Malat1 :miR-15/16 interaction, and enhanced the repression of other miR-15/16 target genes, including CD28. Interrupting Malat1 interaction with miR-15/16 decreased cytotoxic T cell activation, including the expression of interleukin 2 (IL-2) and a broader CD28-responsive gene program. Accordingly, Malat1 mutation diminished memory cell persistence in mice following LCMV Armstrong and Listeria monocytogenes infection. This study marks a significant advance in the study of long non-coding RNAs in the immune system by ascribing cell-intrinsic, sequence-specific in vivo function to Malat1 . These findings have implications for T cell-mediated autoimmune diseases, antiviral and anti-tumor immunity, as well as lung adenocarcinoma and other malignancies where Malat1 is overexpressed.
+Proper activation of cytotoxic T cells via the T cell receptor and the costimulatory receptor CD28 is essential for adaptive immunity against viruses, intracellular bacteria, and cancers. Through biochemical analysis of RNA:protein interactions, we uncovered a non-coding RNA circuit regulating activation and differentiation of cytotoxic T cells composed of the long non-coding RNA Malat1 (Metastasis Associated Lung Adenocarcinoma Transcript 1) and the microRNA family miR-15/16. miR-15/16 is a widely and highly expressed tumor suppressor miRNA family important for cell proliferation and survival. miR-15/16 play important roles in T cell responses to viral infection, including the regulation of antigen-specific T cell expansion and memory. Comparative Argonaute-2 high-throughput sequencing of crosslinking immunoprecipitation (AHC) combined with gene expression profiling in normal and miR-15/16-deficient mouse T cells revealed a large network of hundreds of direct miR-15/16 target mRNAs, many with functional relevance for T cell activation, survival and memory formation. Among these targets, Malat1 contained the largest absolute magnitude miR-15/16-dependent AHC peak. This binding site was among the strongest lncRNA:miRNA interactions detected in the T cell transcriptome. We used CRISPR targeting with homology directed repair to generate mice with a 5-nucleotide mutation in the miR-15/16-binding site in Malat1. This mutation interrupted Malat1:miR-15/16 interaction, and enhanced the repression of other miR-15/16 target genes, including CD28. Interrupting Malat1 interaction with miR-15/16 decreased cytotoxic T cell activation, including the expression of interleukin 2 (IL-2) and a broader CD28-responsive gene program. Accordingly, Malat1 mutation diminished memory cell persistence in mice following LCMV Armstrong and Listeria monocytogenes infection. This study marks a significant advance in the study of long non-coding RNAs in the immune system by ascribing cell-intrinsic, sequence-specific in vivo function to Malat1. These findings have implications for T cell-mediated autoimmune diseases, antiviral and anti-tumor immunity, as well as lung adenocarcinoma and other malignancies where Malat1 is overexpressed.
 
 ## Introduction
 
@@ -44,13 +44,189 @@ In the present study, we present a non-coding RNA circuit that regulates the act
 
 ## Results
 
-## Malat1 is highly bound by miR-15/16
+### Malat1 is highly bound by miR-15/16
 
 To identify candidate non-coding ceRNAs in cytotoxic T cells, we performed Argonaute-2 high-throughput sequencing of crosslinking immunoprecipitation (Ago2 HITS-CLIP, AHC). Integrating sequence reads across different classes of transcribed genomic annotations revealed that lncRNAs are bound extensively by Ago2, but the median lncRNA had 7.8 times fewer aligned AHC sequence reads compared to 3′ UTRs where miRNAs canonically bind to mRNAs (Figure 1A). This difference likely reflects the comparatively low expression of many lncRNAs, and it highlights the relatively low occupancy of Ago2 on most of these transcripts. Nevertheless, there were individual lncRNAs that stood out as highly bound across the transcript. To prioritize lncRNAs for further investigation, we manually curated the transcripts with the largest number of aligned AHC sequence reads. Among the top 10 most highly bound transcripts, 3 overlapped with protein-coding genes, 2 were on the mitochondrial chromosome, and 3 were repetitive annotations. Strikingly, all of the top 10 transcripts were either annotated as rRNA or contained an rRNA repeat element, except the eighth most bound transcript, Malat1 (Table 1). When the same analysis was repeated with rRNA repeats masked, Malat1 was the second most highly bound transcript (Table 2).
 
+**Table 1.**
+ lncRNAs with the most AHC reads.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Non-code gene ID</th>
+      <th>Total reads</th>
+      <th>Chromosome</th>
+      <th>Alias</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NONMMUG018330.3</td>
+      <td>4,766,634</td>
+      <td>17</td>
+      <td>ENSMUST00000198477.1</td>
+      <td>Contains rRNA repeat</td>
+    </tr>
+    <tr>
+      <td>NONMMUG044354.2</td>
+      <td>2,291,785</td>
+      <td>M</td>
+      <td>mt-Rnr2</td>
+      <td>Overlaps mt-ND1</td>
+    </tr>
+    <tr>
+      <td>NONMMUG044353.2</td>
+      <td>1,208,170</td>
+      <td>M</td>
+      <td>mt-Rnr1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NONMMUG076321.1</td>
+      <td>1,012,732</td>
+      <td>6</td>
+      <td></td>
+      <td>Overlaps and best aligns to NONMMUG034479.2</td>
+    </tr>
+    <tr>
+      <td>NONMMUG034478.3</td>
+      <td>1,012,015</td>
+      <td>6</td>
+      <td></td>
+      <td>Overlaps and best aligns to NONMMUG034479.2</td>
+    </tr>
+    <tr>
+      <td>NONMMUG034479.2</td>
+      <td>1,011,610</td>
+      <td>6</td>
+      <td></td>
+      <td>Contains rRNA repeat</td>
+    </tr>
+    <tr>
+      <td>NONMMUG007938.3</td>
+      <td>785,970</td>
+      <td>11</td>
+      <td></td>
+      <td>Intronic of Gm36876, contains rRNA repeat (Weirick et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>NONMMUG020671.2</td>
+      <td>383,447</td>
+      <td>19</td>
+      <td>Malat1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NONMMUG015781.2</td>
+      <td>336,664</td>
+      <td>16</td>
+      <td></td>
+      <td>Intronic of Zc3h7a, contains rRNA repeat</td>
+    </tr>
+    <tr>
+      <td>NONMMUG044321.2</td>
+      <td>317,822</td>
+      <td>9</td>
+      <td></td>
+      <td>Contained in Lars2 3′ UTR, contains rRNA repeat</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ lncRNAs with the most AHC reads that do not align to rRNA repeat elements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Non-code gene ID</th>
+      <th>Total reads</th>
+      <th>Chromosome</th>
+      <th>Alias</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NONMMUG018330.3</td>
+      <td>688,875</td>
+      <td>17</td>
+      <td>ENSMUST00000198477.1</td>
+      <td>Partially anti-sense to XR_877120.2, binding extends beyond rRNA repeat</td>
+    </tr>
+    <tr>
+      <td>NONMMUG020671.2</td>
+      <td>383,447</td>
+      <td>19</td>
+      <td>Malat1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NONMMUG094408.1</td>
+      <td>296,723</td>
+      <td>6</td>
+      <td></td>
+      <td>Contains B4A/B3 SINE, binding restricted to SINE</td>
+    </tr>
+    <tr>
+      <td>NONMMUG005751.2</td>
+      <td>291,393</td>
+      <td>11</td>
+      <td></td>
+      <td>Intronic of Dock2, contains multiple RLTR44-int repeat elements, binding restricted to RLTRs</td>
+    </tr>
+    <tr>
+      <td>NONMMUG094727.1</td>
+      <td>289,326</td>
+      <td>6</td>
+      <td></td>
+      <td>Contains B4A/B3 SINE, binding is restricted to repeats</td>
+    </tr>
+    <tr>
+      <td>NONMMUG014644.3</td>
+      <td>241,005</td>
+      <td>15</td>
+      <td>Pvt1</td>
+      <td>Many repeats, but binding is not restricted to any definite subset</td>
+    </tr>
+    <tr>
+      <td>NONMMUG096664.1</td>
+      <td>229,834</td>
+      <td>15</td>
+      <td>Pvt1</td>
+      <td>Splice variant of NONMMUG014644.3</td>
+    </tr>
+    <tr>
+      <td>NONMMUG024327.3</td>
+      <td>222,686</td>
+      <td>2</td>
+      <td>Oip5os1, Cyrano</td>
+      <td>Well described in Han et al., 2020</td>
+    </tr>
+    <tr>
+      <td>NONMMUG026716.2</td>
+      <td>207,631</td>
+      <td>3</td>
+      <td></td>
+      <td>Overlapping Mbnl1</td>
+    </tr>
+    <tr>
+      <td>NONMMUG094659.1</td>
+      <td>196,269</td>
+      <td>6</td>
+      <td></td>
+      <td>Overlapping Foxp1</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig1-v1.jpg)
 
-**Figure 1.:** Malat1 is highly bound by miR-15/16.CD8+ T cells were isolated from spleens, grown in vitro for 5 days, then Ago2 transcriptomic occupancy was assayed via Ago2 HITS-CLIP. (A, B) Transcriptome wide analysis of Ago2 HITS-CLIP libraries prepared from WT cells (combined libraries n = 2). (A) Summed reads across entire annotations. Line indicates total reads across the Malat1 transcript. Malat1 was #8 most highly bound lncRNA annotation, which was in the top 0.0091% of all lncRNA annotations analyzed with >0 HITS-CLIP reads. (B) Ago2 HITS-CLIP peaks were identified and reads were summed within those called peaks that intersected with the given annotation. Peaks were of variable length so summed reads were normalized by peak length. Line indicates HITS-CLIP reads per nucleotide in the called peak containing the miR-15/16-binding site in Malat1. This peak was the #121 most bound HITS-CLIP peak in lncRNA peaks analyzed, which was in the top 2.3% of all evaluated peaks in lncRNAs. (C) Ago2 HITS-CLIP binding to the mouse Malat1 locus reads from combined libraries shown (n = 2 for each genotype). Gray bar indicates the peak containing the miR-15/16-binding site. Black bars indicate regions identified as peaks by piranha. Blue bars indicate predicted binding sites of miRNAs expressed in our dataset from the miRTarget custom sequence prediction algorithm. Gray bar indicates miR-15/16-binding peak. (D) Local alignment of the human and mouse Malat1 sequences near the miR-15/16 conserved binding site. Highlighting indicates the depth of evolutionary conservation of k-mers as predicted by the lncLOOM algorithm (Ross et al., 2021). (E) Ago2 HITS-CLIP binding to the human MALAT1 locus from publicly available datasets (Karginov and Hannon, 2013; Li et al., 2018). Blue vertical bar indicates the conserved miR-15/16-binding site. (F) Schematic representing the creation of the Malat1 allele. Bases in red indicate the five nucleotides whose sequence was scrambled by CRISPR-Cas9 HDR to prevent miR-15/16 binding.scr
+**Figure 1.:** CD8+ T cells were isolated from spleens, grown in vitro for 5 days, then Ago2 transcriptomic occupancy was assayed via Ago2 HITS-CLIP. (A, B) Transcriptome wide analysis of Ago2 HITS-CLIP libraries prepared from WT cells (combined libraries n = 2). (A) Summed reads across entire annotations. Line indicates total reads across the Malat1 transcript. Malat1 was #8 most highly bound lncRNA annotation, which was in the top 0.0091% of all lncRNA annotations analyzed with >0 HITS-CLIP reads. (B) Ago2 HITS-CLIP peaks were identified and reads were summed within those called peaks that intersected with the given annotation. Peaks were of variable length so summed reads were normalized by peak length. Line indicates HITS-CLIP reads per nucleotide in the called peak containing the miR-15/16-binding site in Malat1. This peak was the #121 most bound HITS-CLIP peak in lncRNA peaks analyzed, which was in the top 2.3% of all evaluated peaks in lncRNAs. (C) Ago2 HITS-CLIP binding to the mouse Malat1 locus reads from combined libraries shown (n = 2 for each genotype). Gray bar indicates the peak containing the miR-15/16-binding site. Black bars indicate regions identified as peaks by piranha. Blue bars indicate predicted binding sites of miRNAs expressed in our dataset from the miRTarget custom sequence prediction algorithm. Gray bar indicates miR-15/16-binding peak. (D) Local alignment of the human and mouse Malat1 sequences near the miR-15/16 conserved binding site. Highlighting indicates the depth of evolutionary conservation of k-mers as predicted by the lncLOOM algorithm (Ross et al., 2021). (E) Ago2 HITS-CLIP binding to the human MALAT1 locus from publicly available datasets (Karginov and Hannon, 2013; Li et al., 2018). Blue vertical bar indicates the conserved miR-15/16-binding site. (F) Schematic representing the creation of the Malat1scr allele. Bases in red indicate the five nucleotides whose sequence was scrambled by CRISPR-Cas9 HDR to prevent miR-15/16 binding.
 
 Malat1 has been proposed to inhibit miRNAs as a ceRNA (Chen et al., 2017; Luan et al., 2016; Qiao et al., 2018; Wang et al., 2019; Wu et al., 2018; Xiao et al., 2015; Xie et al., 2017). We used the Piranha peak calling algorithm to identify sites with the highest degree of miRNA binding, as indicated by AHC sequence read number and density (Figure 1B). Within cytotoxic T cells, the algorithm identified 55 AHC peaks in Malat1, the largest of which was extremely pronounced (Figure 1C). Compared with other lncRNA-binding peaks, this peak had the 36th most total aligned reads and the 142nd highest read density (15th and 16th, respectively, when rRNA reads are masked). Even when compared to peaks in 3′ UTRs of mRNAs, the largest peak in Malat1 was the 100th most (98th percentile) bound peak in terms of read density (Figure 1B).
 
@@ -58,15 +234,35 @@ miRTarget, the custom miRNA-binding prediction algorithm (Liu and Wang, 2019), i
 
 We hypothesized that Malat1 may inhibit the function of miR-15/16 in cytotoxic T cells. To directly address this question in mice, we used CRISPR-Cas9 with homology directed repair to generate mice in which five nucleotides of the miR-15/16 seed-binding sequence within Malat1 were scrambled (Figure 1F). Mice homozygous for this mutation are subsequently referred to as Malat1scr/scr. To confirm the targeted functional outcome of this mutation, AHC was performed on cultured CD8+ T cells isolated from Malat1scr/scr mice. Ago2 binding was preserved across the Malat1 transcript except at the mutated miR-15/16-binding site, where AHC sequence read density was greatly reduced (Figure 1C). This finding confirmed that miR-15/16 binds to Malat1 at this site in a sequence-dependent manner, and provided us with a tool for highly specific investigation of the functional consequences of Malat1:miR-15/16 interaction.
 
-## Malat1 inhibits miR-15/16 availability and activity
+### Malat1 inhibits miR-15/16 availability and activity
 
 Malat1:miR-15/16 interaction could lead to regulation and/or degradation of the lncRNA, the miRNAs, or both. To assess whether miR-15/16 degrades Malat1 we compared the expression of Malat1 by mRNA sequencing in primary mouse CD8+ T cells. Malat1 expression was unchanged in miR-15/16Δ/Δ cells as well as in the Malat1scr/scr cells (Figure 2A). Previous studies investigating Malat1 and other lncRNAs as ceRNA inhibitors of miRNAs have suggested that inhibition occurs by either target RNA-directed miRNA degradation (TDMD) or stoichiometric sequestration of the miRNA from protein-coding mRNA targets (Han et al., 2020; Su et al., 2021). Therefore, we also tested the possibility that Malat1 lowers miR-15/16 abundance by TDMD or a related mechanism. However, in freshly isolated mouse CD8+ T cells, miR-15b and miR-16 were unchanged and only miR-15a, a family member with lower expression, was modestly decreased in Malat1scr/scr cells (Figure 2B). We conclude that Malat1 and the miR-15/16 family do not influence each other’s absolute abundance in this setting. To test whether Malat1 affects miR-15/16 function, we examined miR-15/16 target binding in our AHC data. We first defined an experimentally supported list of TargetScan predicted miR-15/16-binding sites with at least one AHC read in both WT and Malat1scr/scr cells. Using this list, we then examined the read depth at these sites in both Malat1scr/scr and WT cells (603 sites contained in 479 genes). In WT cells, these sites constituted on average 3.2% of the binding in each 3′ UTR, and this figure increased to 3.4% in Malat1scr/scr cells, indicating that Ago2 occupancy preferentially increased at these sites when miR-15/16 binding to Malat1 was eliminated (Figure 2C). To confirm that binding to these target sites was miR-15/16 dependent, we assessed their AHC read depths in miR-15/16Δ/Δ cells as well. As predicted, binding was greatly reduced in miR-15/16Δ/Δ cells, representing, on average, 1.0% of binding to a given 3′ UTR, a 69% reduction in Ago2 binding compared to WT (Figure 2D). In contrast, no significant differences were observed for binding at predicted sites for the highly expressed miRNA families of miR-101, Let-7, miR-21, and miR-142, (Figure 2—figure supplement 1). Thus, we conclude that the Malat1scr allele specifically negatively regulates the first requirement of miR-15/16 function – binding to mRNA targets.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig2-v1.jpg)
+
+**Figure 2.:** (A) Malat1 expression measure by RNA-seq from CD8+ T cells isolated from spleens and stimulated with ɑCD3 and ɑCD28 for 24 hr (WT n = 6, Malat1scr/scr n = 7, miR-15/16fl/fl n = 6, miR-15/16Δ/Δ n = 6; 1 experiment, error bars indicate standard deviation). (B) miR-16, miR-15b, and miR-15a expression measured by miRNA qPCR from CD8+ T cells freshly isolated from spleens. Expression was determined relative to 5.8 s ribosomal RNA expression. Unpaired t-test performed to determine significance, and error bars indicate standard deviation. (C, D) TargetScan predicted miR-15/16-binding sites that contained at least one HITS-CLIP read in both WT and Malat1scr/scr CD8+ T cells were compared for depth of Ago2 HITS-CLIP reads. First, reads at the predicted seed site were normalized by total Ago2 HITS-CLIP reads in a given 3′ untranslated region (UTR). To best visualize all sites, logit transforms of these values are plotted. Paired t-test performed to determine significance. Blue line indicates the identity line. Data for each genotype are from combined libraries of n = 2 biological replicates. (C) Comparison of WT and Malat1scr/scr cells. (D) Comparison of WT and miR-15/16Δ/Δ. Values to the left of the y-axis labeled with NB indicate there was no bind detected at that site in the miR-15/16Δ/Δ cells. (E, F) Cumulative density plots to determine changes in expression of miR-15/16 targets. Targets determined by TargetScan predicted miR-15/16 mRNA targets that had at least one 3′ UTR site with reads in both WT and Malat1scr/scr CD8+ T cells. Kolmogorov–Smirnov test used to determine significant differences in the distributions of target and non-target genes. (E) comparison of the log2(FC) between WT and Malat1scr/scr samples stimulated with ɑCD3 and ɑCD28 for 24 hr. (F) comparison of the log2(FC) between miR-15/16fl/fl and miR-15/16Δ/Δ samples stimulated with ɑCD3 and ɑCD28 for 24 hr. (G) Venn diagram of miR-15/16 target expression regulated in concordance with the Malat1-miR-15/16 circuit. The blue circle indicates genes with WT vs Malat1scr/scr log2(FC) >0 and the red circle indicates genes with miR-15/16fl/fl vs miR-15/16Δ/Δ log2(FC) <0. The purple overlap indicates genes that meet both conditions and the gray indicates genes that do not meet either condition. (H) Gene ontology analysis of the bound target set used above as well as genes regulated in accordance with the Malat1-miR-15/16 circuit (WT vs Malat1scr/scr log2(FC) >0 or miR-15/16fl/fl vs miR-15/16Δ/Δ log2(FC) <0). Enrichment determined within the Panther pathway annotations (*p < 0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** TargetScan predicted binding sites for highly expressed microRNA families in T cells that contained at least one HITS-CLIP read in both WT and Malat1scr/scr CD8+ T cells were compared for depth of Ago2 HITS-CLIP reads. First, reads at the predicted seed site were normalized by total Ago2 HITS-CLIP reads in a given 3′ untranslated region (UTR). To best visualize all sites, logit transforms of these values are plotted. Paired t-test performed to determine significance. Blue line indicates the identity line. Data for each genotype are from combined libraries of n = 2 biological replicates. (A) Predicted sites for let-7-5p. (B) Predicted sites for miR-21-5p. (C) Predicted sites for miR-101-3p. (D) Predicted sites for miR-142-3p.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Heatmap indicating differential gene expression between WT and Malat1scr/scr cells, and between miR-15/16fl/fl and miR-15/16Δ/Δ cells in RNA sequencing analyses. Histograms of AHC mapping of Ago2 binding in the 3′ untranslated region (UTR) of Pik3r1 (B) and Mapk8 (C) in WT (black), miR-15/16Δ/Δ (red), and Malat1scr/scr (blue) cells. As in Figure 3, AHC libraries were generated from CD8+ T cells isolated from spleens and cultured for 5 days (combined libraries from n = 2 for each genotype). Gray bars indicate the peaks containing TargetScan predicted miR-15/16-binding sites.
 
 We next sought to investigate whether this increased binding resulted in decreased target mRNA expression. To do so, we analyzed mRNA sequencing data from primary CD8+ T cells 24 hr after stimulation. We generated empirical CDF plots from these data comparing target gene expression in miR-15/16fl/fl to miR-15/16Δ/Δ cells as well as WT to Malat1scr/scr cells. For each of these comparisons, we then compared the distribution for miR-15/16 target genes, as defined above, to the distribution for all other expressed genes. In the case of WT to Malat1scr/scr cells, the distribution was shifted in favor of decreased target gene expression in the Malat1scr/scr cells (Figure 2E). In the case of miR-15/16fl/fl to miR-15/16Δ/Δ, the distribution was shifted in favor of increased target gene expression in the miR-15/16Δ/Δ cells, indicating that this gene set is relieved of miRNA-induced repression (Figure 2F). These data indicate that the increased availability of miR-15/16 leads to increased repression of mRNA target genes when Malat1:miR-15/16 interaction is ablated.
 
 We further investigated genes that displayed reciprocal expression changes in miR-15/16Δ/Δ and Malat1scr/scr cells. Of 479 genes in the bound target list, 432 (90%) were either downregulated in Malat1scr/scr cells or upregulated in miR-15/16Δ/Δ cells, compared to controls. Among these genes, the expression of 298 (62%) were decreased in Malat1scr/scr cells, and 294 (61%) were increased in miR-15/16Δ/Δ cells, with 160 (33%) both increased in miR-15/16Δ/Δ and decreased in Malat1scr/scr cells (Figure 2G). Gene ontology enrichment analysis revealed multiple pathways associated with growth factor and antigen receptor signaling affected by the Malat1:miR-15/16 circuit in cytotoxic T cells (Figure 2H). Many of these modules, including the T cell activation module, were identified because they share key signaling proteins. For example, gene expression and AHC data support direct miR-15/16 targeting of the costimulatory receptor Cd28, the alpha subunit of phosphatidylinositol 3-kinase (Pik3r1) and c-Jun N-terminal kinase (JNK1), encoded by Mapk8 (Figure 2—figure supplement 2 and Figure 3). Targeting of these genes by miR-15/16 is consistent with their known tumor suppressor role (Cimmino et al., 2005; Gagnon and Ansel, 2019) and with Malat1’s association with cancer cell proliferation and metastasis (Ji et al., 2003), providing new mechanistic insight into those observations.
 
-## Malat1 enhances CD28 expression and downstream CD8 T cell activation
+![Figure 3.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig3-v1.jpg)
+
+**Figure 3.:** (A) Ago2 HITS-CLIP binding at the Cd28 locus. Sequencing libraries generated from CD8+ T cells isolated from spleens and cultured for 5 days (combined libraries from n = 2 for each genotype). Gray bar indicates the peak containing the TargetScan predicted miR-15/16-binding site. (B) Schematic illustrating the assay scheme to assay acute gene expression downstream of CD28 costimulation. (C) Representative flow cytometry plots of CD28 expression on naive (CD62L+ CD44−) CD8+ T cells from spleens of unchallenged mice. Mean fluorescence intensity for the sample reported in the upper right of the plot. (D) Quantification of CD28 mean fluorescence intensity normalized to the relevant control (Malat1scr/scr compared to WT from three independent experiments; miR-15/16fl/fl compared to miR-15/16Δ/Δ from two independent experiments). (E–H) Cumulative density plots comparing expression of CD28-responsive gene set defined as genes from Martínez-Llordella et al., 2013 with ɑCD3ɑCD28 vs ɑCD3 log2(FC) >1.5 and adjusted p-value <0.001. Kolmogorov–Smirnov test used to determine significant differences in the distributions of target and non-target genes. ɑCD3 used at 1 μg/ml, and ɑCD28 used at 1 μg/ml. (E) Comparison of CD28-responsive genes in WT vs Malat1scr/scr cells stimulated with ɑCD3 alone. (F) Comparison of CD28-responsive genes in WT vs Malat1scr/scr cells stimulated with ɑCD3 and ɑCD28. (G) Comparison of CD28-responsive genes in miR-15/16fl/fl vs miR-15/16Δ/Δ cells stimulated with ɑCD3 alone. (H) Comparison of CD28-responsive genes in miR-15/16fl/fl vs miR-15/16Δ/Δ cells stimulated with ɑCD3 and ɑCD28. (I, J) Heatmaps of CD28-responsive gene set expression by genotype and stimulation condition. Dendrograms represent unbiased hierarchical clustering of the samples. (I) Malat1scr/scr and WT samples compared with ɑCD3 ± ɑCD28. (J) miR-15/16fl/fl vs miR-15/16Δ/Δ samples compared with ɑCD3 ± ɑCD28 ( ***p < 0.001; ****p < 0.0001, error bars indicate standard deviation).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Cumulative density plots comparing expression of CD28-responsive gene set defined as genes from Martínez-Llordella et al., 2013 with ɑCD3ɑCD28 vs ɑCD3 log2(FC) >1.5 and adjusted p-value <0.001. Kolmogorov–Smirnov test used to determine significant differences in the distributions of target and non-target genes. ɑCD3 used at 1 μg/ml, and ɑCD28 used at 1 μg/ml. Data are from a single experiment with n = 6 for each genotype and stimulation condition combination. (A) Comparison of CD28-responsive genes in WT cells. (B) Comparison of CD28-responsive genes in Malat1scr/scr cells. (C) Comparison of CD28-responsive genes in miR-15/16fl/fl cells. (D) Comparison of CD28-responsive genes in miR-15/16Δ/Δ cells.
+
+### Malat1 enhances CD28 expression and downstream CD8 T cell activation
 
 Given that the Malat1:miR-15/16 circuit regulated genes essential to T cell activation, and in particular CD28, we next investigated the functional consequences of perturbing this circuit in cytotoxic T cells. First, we looked directly at CD28. AHC in WT cells detected a prominent peak in the CD28 3′ UTR at the TargetScan predicted binding site for miR-15/16. This peak was absent in miR-15/16Δ/Δ cells, whereas other binding peaks were preserved, empirically verifying that this binding event is miR-15/16 dependent. AHC in Malat1scr/scr cells indicated a modest increase in Ago2 binding at this site compared to WT cells relative to Ago2 binding in the whole 3′ UTR (Figure 3A). These data, along with our previous demonstration that the CD28 3′ UTR is miR-15/16 responsive, indicate that CD28 is part of a module of miR-15/16 target genes that are highly likely to be affected by the Malat1scr allele (Gagnon and Ansel, 2019).
 
@@ -78,31 +274,43 @@ In addition to the proximal changes in gene expression, downstream functional ou
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig4-v1.jpg)
 
-**Figure 4.:** Malat1-MiR-15/16 circuit increases functional outcomes of CD28 costimulation.(A–C) CD8+ T cells were isolated from spleens and stimulated with ɑCD3 and ɑCD28 antibodies, results displayed are gated on activated cells (CD69+ Nur77+). (A) Representative histograms of CD69 and Nur77 expression 4 hr after stimulation. (B) Quantification of CD69 mean fluorescence intensity 2 and 4 hr after stimulation. Both time points reflect statistically significant changes (p < 0.01) by ordinary one-way analysis of variance (ANOVA); statistics displayed on graph represent results of post hoc multiple comparisons of Malat1scr/scr to WT and miR-15/16Δ/Δ to WT. Data from two independent experiments, each normalized to WT average value. (C) Quantification of Nur77 mean fluorescence intensity 2 and 4 hr after stimulation. No significant changes determined by ordinary one-way ANOVA. Data from two independent experiments, each normalized to WT average value. (D–F) Quantification of cytokine secretion into the supernatant by CD8+ T cells isolated from spleens, stimulated ɑCD3 ± ɑCD28, and cultured 16 hr. Cell-free supernatant protein concentration measured by ELISA. Data from a single experiment. (D) Quantification of IL-2 secretion. By two-way ANOVA, in both experiments there was a significant (p < 0.0001) increase in IL-2 with the addition of ɑCD28 stimulation. But the only significant (p = 0.0001) genotypic effect was increased IL-2 secretion in miR-15/16Δ/Δ vs mir-15/16fl/fl. Comparisons shown on plot are the results of post hoc multiple comparison tests. (E) Quantification of TNFɑ secretion. By two-way ANOVA, in both experiments there was a significant (p < 0.0001) increase in IL-2 with the addition of ɑCD28 stimulation. But the only significant (p = 0.003) genotypic effect was increased IL-2 secretion in miR-15/16Δ/Δ vs mir-15/16fl/fl. Comparisons shown on plot are the results of post hoc multiple comparison tests. (F) Quantification of IFNγ secretion. By two-way ANOVA, in both experiments there was a significant (p < 0.0001) increase in IL-2 with the addition of ɑCD28 stimulation. But no genotypic effect was observed (*p < 0.05; **p < 0.01; ***p <0 .001; ****p < 0.0001, error bars indicate standard deviation).
+**Figure 4.:** (A–C) CD8+ T cells were isolated from spleens and stimulated with ɑCD3 and ɑCD28 antibodies, results displayed are gated on activated cells (CD69+ Nur77+). (A) Representative histograms of CD69 and Nur77 expression 4 hr after stimulation. (B) Quantification of CD69 mean fluorescence intensity 2 and 4 hr after stimulation. Both time points reflect statistically significant changes (p < 0.01) by ordinary one-way analysis of variance (ANOVA); statistics displayed on graph represent results of post hoc multiple comparisons of Malat1scr/scr to WT and miR-15/16Δ/Δ to WT. Data from two independent experiments, each normalized to WT average value. (C) Quantification of Nur77 mean fluorescence intensity 2 and 4 hr after stimulation. No significant changes determined by ordinary one-way ANOVA. Data from two independent experiments, each normalized to WT average value. (D–F) Quantification of cytokine secretion into the supernatant by CD8+ T cells isolated from spleens, stimulated ɑCD3 ± ɑCD28, and cultured 16 hr. Cell-free supernatant protein concentration measured by ELISA. Data from a single experiment. (D) Quantification of IL-2 secretion. By two-way ANOVA, in both experiments there was a significant (p < 0.0001) increase in IL-2 with the addition of ɑCD28 stimulation. But the only significant (p = 0.0001) genotypic effect was increased IL-2 secretion in miR-15/16Δ/Δ vs mir-15/16fl/fl. Comparisons shown on plot are the results of post hoc multiple comparison tests. (E) Quantification of TNFɑ secretion. By two-way ANOVA, in both experiments there was a significant (p < 0.0001) increase in IL-2 with the addition of ɑCD28 stimulation. But the only significant (p = 0.003) genotypic effect was increased IL-2 secretion in miR-15/16Δ/Δ vs mir-15/16fl/fl. Comparisons shown on plot are the results of post hoc multiple comparison tests. (F) Quantification of IFNγ secretion. By two-way ANOVA, in both experiments there was a significant (p < 0.0001) increase in IL-2 with the addition of ɑCD28 stimulation. But no genotypic effect was observed (*p < 0.05; **p < 0.01; ***p <0 .001; ****p < 0.0001, error bars indicate standard deviation).
 
-## Malat1 enhances cytotoxic memory T cell differentiation
+### Malat1 enhances cytotoxic memory T cell differentiation
 
 miR-15/16 restrict memory T cell differentiation, cell cycle, and cell survival during the response to LCMV Armstrong infection (Gagnon and Ansel, 2019). CD28 costimulation is essential for IL-2 production, memory cell formation, and memory recall responses in vivo (Borowski et al., 2007; Eberlein et al., 2012; Fuse et al., 2008; Grujic et al., 2010; Suresh et al., 2001). IL-2 is also essential for these same processes and in particular is required in a CD8+ T cell-intrinsic nature for the formation of CD127+ KLRG1− memory cells (Blattman et al., 2003; Kahan et al., 2022; Pipkin et al., 2010; Toumi et al., 2022; Whyte et al., 2022). Since Malat1 inhibits miR-15/16 activity and this circuit impacts proper T cell activation and IL-2 production after CD28 costimulation, we hypothesized that Malat1scr/scr cells would exhibit poor memory formation and survival.
 
 We first examined steady-state memory populations of polyclonal T cells in unchallenged, young mice. Malat1scr/scr mice had normal naive and central memory T cell populations, but a reduced percentage and number of effector memory (CD44+CD62L–) cells in the spleen (Figure 5—figure supplement 1). Therefore, we investigated the cell-intrinsic nature of the Malat1scr/scr memory cell impairment during a viral challenge known to induce a large memory response. We bred the Malat1scr/scr mice with P14 TCR transgenic mice that express an antigen receptor specific for the immunodominant LCMV GP33 peptide. We then transferred Malat1scr/scr and WT P14 T cells into congenic CD45.1 hosts followed by LCMV Armstrong infection and tracked the acute and memory responses in the spleen and liver, the sites of primary LCMV infection (Figure 5A; Matloubian et al., 1993).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig5-v1.jpg)
+
+**Figure 5.:** Malat1scr/scr and WT cells containing the GP33-specific TCR transgene (P14) on the CD45.2 background were transferred separately into congenic CD45.1 WT hosts. One day later the recipient mice were infected with 5 × 105 p.f.u. I.p. LCMV Armstrong. LCMV-specific responses were assayed by monitoring the transferred cells by flow cytometry in the blood, spleen, and liver over time (data from two independent experiments per time point) (A) Schematic of experimental design. (B) Representative flow plots to identify and quantify transferred cells. (C) Quantification of transferred P14 cell numbers at days 7 and 31. (D) Representative flow plots of KLRG1 and CD127 expression on P14 cells at day 31 post infection. (E) Quantification of P14 KLRG1+ cells by percent of P14 and total numbers in spleen and liver at days 7 and 31 post infection. (F) Quantification of P14 KLRG1− CD127+ by percent of P14 and total numbers in spleen and liver at day 31 post infection. (G) Representative flow plots of CD43 and CD27 expression on P14 cells at day 31 post infection. (H) Quantification of P14 CD43− CD27− t-Tem cells by percent of P14 and total numbers in spleen and liver at day 31 post infection. (I) Quantification of P14 CD43+ CD27+ memory cells by percent of P14 and total numbers in spleen and liver at day 31 post infection. Statistics displayed determined by unpaired t-test between Malat1scr/scr and WT transferred cells (*p < 0.05; **p < 0.01, error bars indicate standard deviation).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Cells were isolated from the spleens of young, age-matched, naive mice and analyzed by flow cytometry for CD44 and CD62L to delineate naive, effector memory, and central memory cells. Results shown are gated on CD8+ CD5+ lymphocytes. Data for Malat1scr/scr and WT cells are from three independent experiments. Data for miR-15/16fl/fl and miR-15/16Δ/Δ cells are from two independent experiments. Statistics displayed determined by unpaired t-test between Malat1scr/scr and WT cells or between miR-15/16fl/fl and miR-15/16Δ/Δ cells (*p < 0.05; **p < 0.01 error bars indicate standard deviation). (A) Representative flow cytometry plots of CD44 and CD62L for each genotype assayed. Percentages shown are of CD8+ population. (B) Quantification of naive cells (CD62L+ CD44−). (C) Quantification of central memory cells (CD62L+ CD44+). (D) Quantification of effector memory cells (CD62L− CD44+).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Polyclonal mice of the miR-15/16fl/fl, miR-15/16Δ/Δ, and Malat1scr/scr;miR-15/16Δ/Δ genotypes were directly infected i.p. with 5 × 105 p.f.u. I.p. LCMV Armstrong. Antigen-specific responses were tracked in the blood and spleen using the GP33 tetramer at days 7 and 31 post infection. (A) Representative flow cytometry plots illustrating the gating on antigen-specific cells using CD44 and GP33. (B) Quantification of GP33+ cells in the blood at day 7. (C) Quantification of GP33+ cells in the spleen at day 31 by absolute numbers and percent of the CD8+ T cell population. (D) Representative flow cytometry plots of KLRG1 and CD127 expression at day 31 in the antigen-specific cell population. (E) Representative flow cytometry plots of CD27 and CD43 expression at day 31 in the antigen-specific cell population. (F) Quantification of KLRG1+ antigen-specific cells in the blood at day 7 by relative percentage and absolute numbers. (G) Quantification of KLRG1+ antigen-specific cells in the spleen at day 31 by relative percentage and absolute numbers. (H) Quantification of CD43+ CD27+ memory cells in the spleen at day 31 by relative percentage and absolute numbers. (I) Quantification of CD43− CD27− t-Tem cells in the spleen at day 31 by relative percentage and absolute numbers (*p < 0.05; **p < 0.01; ***p <0 .001; ****p < 0.0001, error bars indicate standard deviation).
+
 The total numbers of P14 cells were similar in recipients of transferred WT or Malat1scr/scr P14 cells in both the spleen and liver at day 7, and in the spleen at day 31. However, there was a reduction in Malat1scr/scr P14 cells in the liver at day 31 (Figure 5B, C). Despite having no effect on cell expansion at the peak of infection and mixed cell number results in the memory phase, the Malat1scr allele had a distinct effect on the cellular phenotype across organs and time points. Malat1scr/scr P14 cells preferentially displayed a phenotype associated with terminally differentiated effector memory cells (t-TEM), defined by KLRG1 expression and lack of CD127 expression as shown by Milner et al., 2020, and a corresponding reduction in the percentage of KLRG1− CD127+ memory cells (Figure 5D–F). Previous work has shown that substantial heterogeneity exists in the memory pool and that CD27 and CD43 can be useful in delineating functional differences such as recall potential between different memory cells. For instance, CD27+ memory cells tend to produce more IL-2 than CD27− cells (Milner et al., 2020), and CD43+ CD27+ cells are more effective at clearing Listeria upon re-challenge (Hikono et al., 2007; Olson et al., 2013). We therefore assessed these markers on the transferred Malat1scr/scr and WT P14 cells. Consistent with increased KLRG1+ CD127− t-TEM cells there were proportionally more CD27− CD43− cells in both the spleen and liver at day 31 among the Malat1scr/scr transferred cells compared to WT (Figure 5G, I). CD27+ CD43− cells were unchanged. The proportional reduction in CD127+ KLRG1− cells corresponded with a decreased proportion of CD43+ CD27+ cells. Notably, the total numbers of all CD27− subsets were unchanged. The proportional differences we observed were primarily driven by a reduction in the number of CD43+ CD27+ Malat1scr/scr P14 cells compared with wild-type P14 cells (45% reduction in liver (p = 0.0058), 30% reduction in spleen (p = 0.113)) (Figure 5G–I). This phenotype is exactly reciprocal to the increase in CD27+ memory cells previously documented in miR-15/16Δ/Δ mice (Gagnon and Ansel, 2019). To test whether the effect of the Malat1scr allele was epistatic to miR-15/16, we bred Malat1scr/scr to miR-15/16Δ/Δ mice to generate triple mutant Malat1scr/scr miR-15/16Δ/Δ mice. The poly-clonal LCMV response in these mice phenocopied that of miR-15/16Δ/Δ with a WT allele of Malat1, indicating that the observed effects of the Malat1scr allele are epistatic to miR-15/16 (Figure 5—figure supplement 2). We conclude that Malat1 inhibits miR-15/16 in responding CD8+ T cells during LCMV infection, leading to fewer CD43+ CD27+ memory cells. Compared to LCMV, Listeria monocytogenes (LM) infection induces lower expression of multiple costimulatory ligands so the antigen-specific response is more sensitive to the ablation of CD28 costimulation (Welten et al., 2015). Therefore, we hypothesized that cytotoxic T cell response may be more impaired by the Malat1scr allele during LM infection. We first sought to understand the effect of miR-15/16 on cytotoxic T cells during primary LM infection. To do so, we directly infected polyclonal mir-15/16fl/fl and miR-15/16Δ/Δ mice with LM expressing the LCMV GP33 peptide (LM-GP33) (Figure 6A). In contrast to the increased antigen-specific CD8+ T cell numbers in LCMV-infected miR-15/16Δ/Δ mice (Gagnon and Ansel, 2019), we observed similar cell numbers in LM-GP33-infected miR-15/16Δ/Δ and miR-15/16fl/fl mice (Figure 6B). However, the effect on memory cell differentiation was still present with decreased percentages of CD127− KLRG1+ t-TEMs and increased percentages of CD127+ KLRG1− memory cells (Figure 6C, D). Again, miR-15/16Δ/Δ antigen-specific cells had a significantly lower proportion of CD43− CD27− cells and a trend toward proportionally more CD43+ CD27+ cells (p = 0.127) (Figure 6E, F).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig6-v1.jpg)
 
-**Figure 6.:** Malat1 and miR-15/16 alter memory T cell differentiation following Listeria monocytogenes infection.miR-15/16fl/fl and miR-15/16Δ/Δ with a polyclonal TCR repertoire were directly infected with 2 × 104 colony forming units (c.f.u.) r.o. Listeria monocytogenes-gp33 (LM-GP33). LM-GP33-specific responses were then assayed in the spleen 31 days post infection (miR-15/16Δ/Δ n = 5 and miR-15/16fl/fl n = 6 from a single experiment). (A) Schematic of experimental design. (B) Quantification of tetramer-specific CD8 T cells in the spleen. Quantification of tetramer-specific subpopulations by percent of GP33+ and numbers for (C) CD127− KLRG1−, (D) CD127+ KLRG1−, (E) CD27− CD43−, and (F) CD27+ CD43+ populations. Malat1 and WT cells containing the GP33-specific TCR transgene (P14) on the CD45.2 background were transferred separately into congenic CD45.1 WT hosts. One day later the recipient mice were infected with 2 × 10scr/scr4 c.f.u. r.o. LM-GP33. LM-GP33-specific responses were assayed by monitoring the transferred cells by flow cytometry in the spleen and liver at discrete time points (data from a single experiment per time point). (G) Schematic of experimental design. (H) Quantification of transferred P14 cell numbers at days 7 and 31. Quantification of P14 (I) CD127− KLRG1+, (J) CD43− CD27−, and (K) CD43+ CD27+ cells by percent of P14 and total numbers in spleen and liver at day 7. (L) Representative flow plots of KLRG1 and CD127 expression on P14 cells at day 31 post infection. (M) Representative flow plots of CD43 and CD27 expression on P14 cells at day 31 post infection. Quantification of P14 (N) KLRG1+, (O) CD127+ KLRG1−, (P) CD43− CD27−, and (Q) CD43+ CD27+ cells by percent of P14 and total numbers in spleen and liver at day 31 post infection. Statistics displayed determined by unpaired t-test between Malat1 and WT transferred cells (*p < 0.05; **p < 0.01; ***p < 0.001, error bars indicate standard deviation).scr/scr
+**Figure 6.:** miR-15/16fl/fl and miR-15/16Δ/Δ with a polyclonal TCR repertoire were directly infected with 2 × 104 colony forming units (c.f.u.) r.o. Listeria monocytogenes-gp33 (LM-GP33). LM-GP33-specific responses were then assayed in the spleen 31 days post infection (miR-15/16Δ/Δ n = 5 and miR-15/16fl/fl n = 6 from a single experiment). (A) Schematic of experimental design. (B) Quantification of tetramer-specific CD8 T cells in the spleen. Quantification of tetramer-specific subpopulations by percent of GP33+ and numbers for (C) CD127− KLRG1−, (D) CD127+ KLRG1−, (E) CD27− CD43−, and (F) CD27+ CD43+ populations. Malat1scr/scr and WT cells containing the GP33-specific TCR transgene (P14) on the CD45.2 background were transferred separately into congenic CD45.1 WT hosts. One day later the recipient mice were infected with 2 × 104 c.f.u. r.o. LM-GP33. LM-GP33-specific responses were assayed by monitoring the transferred cells by flow cytometry in the spleen and liver at discrete time points (data from a single experiment per time point). (G) Schematic of experimental design. (H) Quantification of transferred P14 cell numbers at days 7 and 31. Quantification of P14 (I) CD127− KLRG1+, (J) CD43− CD27−, and (K) CD43+ CD27+ cells by percent of P14 and total numbers in spleen and liver at day 7. (L) Representative flow plots of KLRG1 and CD127 expression on P14 cells at day 31 post infection. (M) Representative flow plots of CD43 and CD27 expression on P14 cells at day 31 post infection. Quantification of P14 (N) KLRG1+, (O) CD127+ KLRG1−, (P) CD43− CD27−, and (Q) CD43+ CD27+ cells by percent of P14 and total numbers in spleen and liver at day 31 post infection. Statistics displayed determined by unpaired t-test between Malat1scr/scr and WT transferred cells (*p < 0.05; **p < 0.01; ***p < 0.001, error bars indicate standard deviation).
 
 Given that antigen-specific miR-15/16Δ/Δ T cells exhibited enhanced memory cell differentiation during LM-GP33 infection, we further tested the role of Malat1:miR-15/16 interaction in this model using the P14 adoptive transfer system (Figure 6F). Transferred Malat1scr/scr and WT P14 cells accumulated in the spleen and the liver to similar numbers at both days 7 and 31 following LM-GP33 infection (Figure 6H). In contrast to LCMV, there was no change in the proportion or number of CD127− KLRG1+ Malat1scr/scr P14 cells at day 7 in the spleen or liver (Figure 6I). However, in LM-GP33 infection at day 7, CD43 and CD27 expression did not explicitly mirror the phenotype observed by CD127 and KLRG1 expression. In the spleen, there was a proportional and numerical increase in CD43− CD27− P14 cells with the Malat1scr/scr genotype (Figure 6J). There was a decreased proportion of CD43+ CD27+ cells (p = 0.0531), but this was despite a trend toward increased numbers of these cells (p = 0.1056) in the Malat1scr/scr P14 cells (Figure 6K). In the liver, there were no significant trends in any of these populations at day 7 (Figure 6J, K).
 
 Although some of the phenotypes observed with LCMV were attenuated or absent during acute infection with LM-GP33 at day 7, Malat1:miR-15/16 interaction had more pronounced effects on memory cell populations at later times post infection (Figure 6L, M). On day 31, KLRG1+ cells were increased in proportion and numbers in the Malat1scr/scr P14 cells (Figure 6N). In the liver, a similar trend in KLRG1+ cell proportion existed (p = 0.233), but the numeric effect was entirely absent (Figure 6N). Surprisingly, this effect was restricted to the KLRG1+ populations, as CD127+ KLRG1− memory cells were unaffected in proportion and number in both the spleen and liver (Figure 6O). In both organs CD43− CD27− t-TEMs were proportionally increased and CD43+ CD27+ memory cells were proportionally decreased in Malat1scr/scr P14 cells (Figure 6P, Q). The numeric underpinnings of these proportional changes were different in each organ, with a 94% increase in CD43− CD27− cells in the spleen, and a 40% loss of the CD43+ CD27+ population in the liver (Figure 6P, Q). Taken together, these data demonstrate that miR-15/16 restrict memory cell differentiation, and reveal the ability of Malat1:miR-15/16 interaction to enhance memory cell differentiation across infection contexts.
 
-## Malat1 enhances cytotoxic T cell IL-2 production and survival
+### Malat1 enhances cytotoxic T cell IL-2 production and survival
 
 Finally, we investigated how the Malat1:miR-15/16 RNA circuit regulates memory cell differentiation and accumulation, giving consideration to the many direct targets of miR-15/16 and the emergent indirect effects on IL-2 and other costimulation-responsive gene expression in CD8 T cells. The pro-survival protein Bcl2 is the first characterized target of miR-15/16 (Cimmino et al., 2005). Higher abundance of Bcl2 in memory cells (as compared with short-lived effector cells) aids their survival and persistence, counteracting their increased expression of pro-apoptotic factors such as Bim (Kurtulus et al., 2011). As such, changes in the balance of pro- and anti-apoptotic factors can have selective effects on the accumulation of memory T cells. Bcl2 expression in Malat1scr/scr P14 cells was reduced at day 31 in the CD43− CD27− population in both LCMV and LM-GP33 infection, and also in CD43+ CD27+ cells in LCMV infection (Figure 7A–C). This reduction is consistent with increased direct miR-15/16 action on the Bcl2 3′ UTR in the Malat1scr/scr cells, but it may also be affected by IL-2 and other costimulation responsive factors. Also consistent with reduced Bcl2 expression, increased proportions of dead Malat1scr/scr cells were observed in both the KLRG1+ and KLRG1− cell fractions at day 7 during LM-GP33 infection (Figure 7D, E). Very few dead cells were detected among P14 cells of either genotype at day 31. IL-2 is critical for the induction of Bcl2 in memory T cells to promote their survival (Toumi et al., 2022). Furthermore, IL-2 production by cytotoxic T cells predisposes them to differentiate into a memory phenotype, likely by an autocrine/paracrine mechanism (Kahan et al., 2022; Kurtulus et al., 2011; Wojciechowski et al., 2007). Given the enhanced ability of miR-15/16Δ/Δ cells to produce IL-2 and the trend toward impaired IL-2 production in Malat1scr/scr cells in vitro (Figure 4D), we assessed IL-2 production by Malat1scr/scr T cells in LCMV and LM-GP33-infected mice. Corroborating our in vitro observations, a lower proportion of Malat1scr/scr P14 cells produced IL-2 when stimulated ex vivo on day 7 in both infection models (Figure 7F, G). This defect was also shared by KLRG1+ and KLRG1− populations and limited to this critical early time point. Higher proportions of memory cells were able to produce IL-2 ex vivo at day 31 after infection with either LCMV or LM-GP33 infection, and Malat1scr/scr P14 cells produced equivalent amounts of IL-2 (Figure 7H).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/87900/elife-87900-fig7-v1.jpg)
 
-**Figure 7.:** Malat1 enhances pro-survival cues downstream of T cell activation.Malat1 and WT cells containing the GP33-specific TCR transgene (P14) on the CD45.2 background were transferred separately into congenic CD45.1 WT hosts. One day later the recipient mice were infected with 2 × 10scr/scr5 p.f.u. I.p. LCMV Armstrong or 2 × 104 c.f.u. r.o. LM-GP33. Antigen-specific responses were assayed by monitoring the transferred cells by flow cytometry in the spleen. (A–C) Bcl2 expression in transferred P14 cells in the spleen 7 and 31 days post infection for both LCMV and LM-GP33. Data from two independent experiments per LCMV time point and a single experiment per LM-GP33 time point. (A) Representative flow cytometry plots of P14 KLRG1+ CD127− cell Bcl2 expression 7 days post infection. Numbers shown are mean fluorescence intensity. (B) Representative flow cytometry plots of P14 CD43− CD27− cell Bcl2 expression 31 days post infection. Numbers shown are mean fluorescence intensity. (C) Quantification of Bcl2 expression producing cells by mean fluorescence intensity within the indicated P14 subpopulation defined by KLRG1 or CD27 and CD43. (D, E) Analysis of dead cells within splenic P14 CD43 and CD27 subpopulations at days 7 and 31 post LM-GP33 infection, data from a single experiment per time point. (D) Representative flow cytometry plots of P14 subsets defined by CD43 and CD27. Numbers shown represent percent of dead cells per the parent subpopulation. (E) Quantification of dead cells as a percentage of parent P14 subpopulation. (F, G) Analysis of IL-2 producing P14 subsets in the spleen via IL-2 capture assay at days 7 and 31 post infection for both LCMV and LM-GP33, data from a single experiment per infection per time point. (F) Representative flow cytometry plots of all P14 cells stained for KLRG1 and captured IL-2 from both infections at day 7. Numbers represent percent of cells in that quadrant of all P14 transferred cells. (G) Quantification of IL-2 producing cells by percent of parent within the indicated P14 subpopulation defined by KLRG1 or CD27 and CD43. Statistics displayed determined by unpaired t-test between Malat1 and WT transferred cells, where multiple tests were performed the Holm–Šidák method was used to correct for multiple comparisons (*p < 0.05; **p < 0.01, error bars indicate standard deviation).scr/scr
+**Figure 7.:** Malat1scr/scr and WT cells containing the GP33-specific TCR transgene (P14) on the CD45.2 background were transferred separately into congenic CD45.1 WT hosts. One day later the recipient mice were infected with 2 × 105 p.f.u. I.p. LCMV Armstrong or 2 × 104 c.f.u. r.o. LM-GP33. Antigen-specific responses were assayed by monitoring the transferred cells by flow cytometry in the spleen. (A–C) Bcl2 expression in transferred P14 cells in the spleen 7 and 31 days post infection for both LCMV and LM-GP33. Data from two independent experiments per LCMV time point and a single experiment per LM-GP33 time point. (A) Representative flow cytometry plots of P14 KLRG1+ CD127− cell Bcl2 expression 7 days post infection. Numbers shown are mean fluorescence intensity. (B) Representative flow cytometry plots of P14 CD43− CD27− cell Bcl2 expression 31 days post infection. Numbers shown are mean fluorescence intensity. (C) Quantification of Bcl2 expression producing cells by mean fluorescence intensity within the indicated P14 subpopulation defined by KLRG1 or CD27 and CD43. (D, E) Analysis of dead cells within splenic P14 CD43 and CD27 subpopulations at days 7 and 31 post LM-GP33 infection, data from a single experiment per time point. (D) Representative flow cytometry plots of P14 subsets defined by CD43 and CD27. Numbers shown represent percent of dead cells per the parent subpopulation. (E) Quantification of dead cells as a percentage of parent P14 subpopulation. (F, G) Analysis of IL-2 producing P14 subsets in the spleen via IL-2 capture assay at days 7 and 31 post infection for both LCMV and LM-GP33, data from a single experiment per infection per time point. (F) Representative flow cytometry plots of all P14 cells stained for KLRG1 and captured IL-2 from both infections at day 7. Numbers represent percent of cells in that quadrant of all P14 transferred cells. (G) Quantification of IL-2 producing cells by percent of parent within the indicated P14 subpopulation defined by KLRG1 or CD27 and CD43. Statistics displayed determined by unpaired t-test between Malat1scr/scr and WT transferred cells, where multiple tests were performed the Holm–Šidák method was used to correct for multiple comparisons (*p < 0.05; **p < 0.01, error bars indicate standard deviation).
 
 As CD28 costimulation is key to IL-2 production, the observed early defect is consistent with less robust activation while antigen is still present (Shapiro et al., 1997). Taken together, these results indicate that Malat1scr/scr cells in the context of a viral or bacterial infection receive relatively poor activating cues and subsequently produce less IL-2 early during infection, contributing to a less robust pro-survival and pro-memory state. These findings illustrate how Malat1 regulation of miR-15/16 and its large target gene network can act through multiple connected nodes to coordinate gene expression programs essential to cytotoxic T cell responses (Figure 8).
 
@@ -122,43 +330,43 @@ The importance of cytotoxic T cells is evident in the context of the global COVI
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 WT C57BL/6 mice were bred in our facility. miR-15/16Δ/Δ and miR-15/16fl/fl mice were derived as described in Gagnon and Ansel, 2019. Malat1scr/scr mice were generated from WT C57BL/6 mouse zygotes electroporated with CRISPR-Cas9 RNPs and HDR template (guide and template sequences below) as described previously (Chen et al., 2016). B6.SJL-Ptprca Pepcb/BoyJ (CD45.1) strain #002014 were purchased from the Jackson Laboratory. WT P14 mice carrying the TCR transgene specific to the LCMV GP33 peptide were obtained from the Waterfield lab and were backcrossed to C57BL/6 to maintain the line. Malat1scr/scr mice were bred to the P14 line to generate Malat1scr/scr P14 mice. Male and female age- and sex-matched mice were used between 5 and 12 weeks of age. All mice were housed and bred in specific pathogen-free conditions in the Animal Barrier Facility at the University of California, San Francisco. Animal experiments were approved by the Institutional Animal Care and Use Committee (IACUC) of the University of California, San Francisco (Protocol AN200003).
 
-## AGO2 HITS-CLIP
+### AGO2 HITS-CLIP
 
 CD8+ T cells were isolated as below and stimulated for 3 days with αCD3 and αCD28 antibodies and grown with kool aid complete media. Subsequently, the cells were rested and expanded in kool aid complete media for 2 days supplemented with 100 U/ml recombinant Human IL-2 (R&D Systems Cat# 202-IL-010/CF). Subsequently, 1 × 106 cells were used to prepare NGS libraries as described in Gagnon and Ansel, 2019 and Loeb et al., 2012. Samples were sequenced on HI-Seq 2500 (Illumina). Eleven nucleotide adaptors were trimmed from each read and resultant sequences were aligned to the mm10 genome using bowtie2 (Langmead and Salzberg, 2012). To assure lack of miR-15/16 binding in Malat1scr/scr mice was not do to errors in alignment, reads from Malat1scr/scr cells were aligned to a mm10 genome that contained a single modification changing Malat1 from the WT allele to the Malat1scr allele. To determine maximum binding depth across the genome and to manipulate aligned files the samtools package was used (Li et al., 2009). To assess Ago2 binding, aligned HITS-CLIP reads were integrated across the follow genomic annotations: lncRNA genes from mouse Noncode v6 (http://www.noncode.org/download.php); miRNA target-binding sites from TargetScan V7.2 (https://www.targetscan.org/cgi-bin/targetscan/data_download.mmu80.cgi); mm10 introns, exons, 3′ UTRs, and coding genes from UCSC genome table browser (http://genome.ucsc.edu/cgi-bin/hgGateway?db=mm10). To assess differences in target binding at specific 3′ UTR sites between WT and Malat1scr/scr cells, reads within each 3′ UTR were normalized to the total reads contained in the given 3′ UTR for each genotype. To identify regions of significant Ago2 binding above background, so-called ‘peaks’, we used the Piranha algorithm (Uren et al., 2012) (https://github.com/smithlabcode/piranha) on our HITS-CLIP. To remove sites from analysis where confounding features were present, such as miRNA expression sites or rRNA repeats, bedtools intersect was used to remove these features from annotation files (Quinlan, 2014). Human AHC data from publicly available datasets were trimmed and aligned to the Hg38 genome as previously described (Karginov and Hannon, 2013; Li et al., 2018).
 
-## Cell transfer and infections
+### Cell transfer and infections
 
 Spleens were harvested from WT or Malat1scr/scr P14 CD45.2 mice into phosphate-buffered saline (PBS) and passed through 70 μm strainers to generate a single-cell suspension. Samples were then stained for live/dead (apc-cy7), Thy1.2 (BV605), CD8ɑ (apc), and TCRVɑ2 (pe). Whole splenocytes were then transferred retro-orbitally (r.o.) into WT BoyJ (CD45.1) 7-week-old male recipients such that each recipient received 20,000 Thy1.2+ CD8ɑ+ TCRVɑ2+ cells in 200 μl PBS. To initiate LCMV infections, mice were injected intraperitoneally (i.p.) with 2 × 105 plaque forming units (p.f.u.) LCMV armstrong in 200 μl plain RPMI. LCMV virus was produced in house as described in Shehata et al., 2018. To initiate L. monocytogenes infection, mice were injected r.o. with 2 × 105 colony forming units (c.f.u.) Listeria monocytogenes-GP33 in 100 μl PBS. Listeria monocytogenes-GP33 was prepared in house as described in Allen et al., 2020. Blood was collected via submandibular bleeds with goldenrod 4 mm lancets collected into sample tubes coated with K2 EDTA (BD Ref# 365974) and 60 μl of blood was lysed with 500 μl of ACK lysis buffer. To assay spleens and livers, mice were sacrificed and organs harvested. To assay intracellular cytokine production, splenocytes were plated into 96-well u-bottom plates in complete kool-AID media and stimulated for 6 hr with a final concentration of 0.2 mg/ml GP33-41 (KAVYNFATM) in the presence of Brefeldin A.
 
-## Flow cytometry
+### Flow cytometry
 
 Spleens and livers were harvested into 2% fetal bovine serum (FBS) PBS with and passed through 70 μm strainers to generate a single-cell suspension. Samples were then spun at 450 r.c.f. for 5 min and livers were resuspended in 20% Percoll. Percoll suspensions were spun at 741 r.c.f. for 20 min at 25°C and the supernatants discarded. Cell pellets for both spleens and livers were resuspended in 1 ml ACK lysis buffer and incubated at 4°C for 5 min. Lysis was stopped with 5 ml 2% FBS PBS and samples again spun at 450 r.c.f. for 5 min. Samples were resuspended in 2% FBS and aliquoted into v-bottom 96 well plates. Live dead staining was then performed using the fixable viability dye at 1:2000 in PBS. Subsequently, cells were blocked with mouse Fc block 1:100 in 2% FBS PBS and stained for surface proteins with directly conjugated antibodies diluted 1:100 in 2% FBS PBS. Stains were incubated for 20 min at 4°C protected from light. For surface stains alone, LCMV samples were fixed with 4% paraformaldehyde (PFA) for 5 min at 4°C. For intracellular stains, samples were fixed and permeabilized according the the Transcription Factor FIxation Kit (Invitrogen Cat#00-5521-00). Intracellular antibodies were diluted in 1:100 in permeabilization buffer and incubated at 4°C for 30 min. All samples were spun at 821 r.c.f. for 5 min prior to being resuspended in 2% FBS PBS with 1:10 AccuCount beads (spherotech Cat #ACBP-100–10) for analysis on either the BD LSR II or the BD LSRFortessa flow cytometry analyzer.
 
-## Cell isolation and in vitro functional assays
+### Cell isolation and in vitro functional assays
 
 CD8+ T cells were isolated from spleens using negative selection from the EasySep Mouse CD8+ T Cell Isolation Kit (cat# 19853). Cells were counted using trypan blue staining and the nexelcom cellometer spectrum. Cultures were started via stimulation with plate-bound αCD3 (1 μg/ml, clone 2C11) and αCD28 (1 μg/ml, clone 37.51); plates coated overnight in PBS with Ca2+ and Mg2+ at 4°C. Cells were plated in Kool AID complete media (Dulbecco's Modified Eagle Medium (DMEM) high glucose media supplemented with 10% FBS, pyruvate, nonessential amino acids, minimum essential medium (MEM) vitamins, l-arginine, l-asparagine, l-glutamine, folic acid, beta mercaptoethanol, penicillin, and streptomycin) and spun at 450 r.c.f. for 5 min at 25°C to begin stimulation. For functional assays cells were harvested 2 or 4 hr after stimulation for flow cytometry, or 24 hr after stimulation for mRNA-seq. For supernatant cytokine expression, plates were spun at 450 r.c.f. for 5 min at 4°C 16 hr after stimulation and cell-free culture medium was collected and frozen at −80°C. TNFα (Cat #), IFNγ (Cat #), and IL-2 (Cat #) were analyzed by ELISA.
 
-## miRNA qPCR
+### miRNA qPCR
 
 Spleens were harvested and single-cell suspensions generated by passing through 70 μm strainers. CD8+ T cells were isolated as above, and 2 × 106 cells were pelleted at 450 r.c.f. for 5 min at 4°C. Cell pellet was resuspended in 700 μl Trizol reagent (Ambion cat #15596018) and kept at –80 °C. RNA was was isolated using using the Direct-zol-96 RNA Kit (zymogen cat #R2054). This RNA was used as input to the Mir-X miRNA qRT-PCR TB Green Kit (Takara cat# 638316) to generate miRNA cDNA. Specific primers to miR-15a, miR-15b, and miR-16 were used to quantify those miRNA species on the QPCR MACHINE (eppendorf realplex2). ribosomalRNA 5.8 s was used as a housekeeping control for each sample. Each sample was run in duplicate. To quantify miRNA expression technical duplicates were averaged and then normalized to rRNA 5.8 s by subtracting the rRNA 5.8 s Ct value from miRNA Ct value (ΔCt). Expression values reported are generated by 2−ΔCt.
 
-## mRNA sequencing
+### mRNA sequencing
 
 1 × 106 CD8+ T cells were harvested 24 hr after αCD3 ± αCD28 stimulation as described above. Cells were pelleted at 450 r.c.f. for 5 min at 4°C. Cell pellet was resuspended in 700 μl Trizol reagent (ambion ref #15596018) and kept at −80°C. RNA was was isolated using using the Direct-zol-96 RNA Kit (zymogen cat #R2054). The integrity of total RNA was checked on Fragment Analyzer (Agilent, Cat. No. DNF-472), only RNA with RQN number of above 7 was used for library construction. The starting quantity of 100 ng of total RNA was used according to vendor instructions with Universal plus mRNA with Nu Quant (TECAN, Cat. No. 0520), final library PCR amplification was 17 cycles. After library completion, individual libraries were pooled equally by volume, and quantified on Fragment Analyzer (Agilent, Cat. No. DNF-474). Quantified library pool was diluted to 1 nM and further diluted as per protocol and sequenced on Illumina MiniSeq (Illumina, Cat. No. FC-420-1001) to check for quality of reads. Finally, individual libraries were normalized according to MiniSeq output reads, specifically by % protein-coding genes and were sequenced on one lane of NovaSeq6000 S4 PE100 (Illumina, Cat. No. 20028313). Reads were aligned to the mouse genome GRCm38 and quantified using the STAR aligner software version 2.7.2b. Read normalization and differential expression analysis were performed in the R computing environment version 3.6.1 using the software DESeq2 version 1.26. For RNA sequencing analysis, FDR-corrected p-values were used to evaluate significant differences between experimental groups using a significance threshold of 0.05. Lowly expressed genes that had fewer than 2 reads per million on average across all samples were removed from the analysis. Empirical cumulative density plots were made using the ggplot package for R. Heatmaps and hierarchical clustering were performed via the gplots package for R. Gene ontology analysis was performed using the statistical overrepresentation test for Panther pathways (Mi et al., 2019).
 
-## Materials availability
+### Materials availability
 
 Malat1scr/scr mice will be provided upon request.
 
-## Statistical and analytical software
+### Statistical and analytical software
 
 All flow cytometry data were analyzed using FlowJo (version 10). Statistical analyses and plotting were performed using GraphPad Prism (Version 9.2.0) and R (version 4.2.1).
 
-## Data availability and software
+### Data availability and software
 
 Ago2 HITS-CLIP data uploaded to NCBI GEO accession #GSE216565.
 

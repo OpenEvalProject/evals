@@ -51,25 +51,53 @@ Collectively, our results reveal a new PTM signature that is associated with def
 
 ## Results
 
-## Phosphorylation of Ser13 on GFAP is a marker of the most aggressive form of AxD
+### Phosphorylation of Ser13 on GFAP is a marker of the most aggressive form of AxD
 
 IFs undergo protein synthesis-independent turnover and re-organization to meet cellular demands (Robert et al., 2016). PTMs are key in that process, as they regulate filament polymerization and depolymerization, protein-protein interactions, and oligomerization properties of IF proteins (Snider and Omary, 2014). Of all known PTMs that regulate IFs, phosphorylation is the most ubiquitous and can facilitate or antagonize other types of PTMs via complex cross-talk mechanisms (Omary et al., 2006). We hypothesized that AxD-associated GFAP missense mutations (Figure 1A) promote GFAP accumulation and aggregation by dysregulating site-specific phosphorylation. We extracted GFAP from post-mortem brain cortex tissue of 13 AxD patients, representing 10 different mutations (Supplementary file 1) and three non-AxD controls (Supplementary file 2). GFAP from the insoluble high salt extracts (HSEs), prepared according to the procedure described in Figure 1—figure supplement 1, was used in phospho-proteomic analysis, revealing 12 unique phosphorylation sites on GFAP in AxD (Figure 1B–C). While the AxD-specific phospho-peptides localized to all three functional domains of GFAP (head, rod, tail), the most abundantly phosphorylated residue was a conserved serine (Ser13) in the head domain (Figure 1C–D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic displays the frequency and location of AxD patient GFAP mutations. (B) Method used to identify GFAP phospho-peptides. (C) Graph of AxD-specific GFAP phospho-peptides identified by mass spectrometry and type/position of patient mutations. PSM = peptide spectrum match. Green diamonds represent GFAP mutations in young patients (median age at death = 1.7 years; range 0.5–14 years) and pink diamonds represent older patients (median age at death = 38 years; range 27–50 years). (D) Amino acid conservation at the N-terminus of human, rat and mouse GFAP. The green box indicates the serine corresponding to human Ser13, which is conserved in rat and mouse.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Isolation of intermediate filament proteins using high salt extraction. Shown is an abbreviated version of the protocol referenced in Materials and methods. Adopted from Snider & Omary, Methods in Enzymology 2016. In the panel on the right, purified GFAP is resolved in parallel with a representative HSE from an AxD patient brain cortex tissue. Arrow points to the band that was excised for MS/MS phospho-proteomic analysis.
 
 Strikingly, we found that the pSer13-GFAP peptide was selectively elevated in the cortex tissue from AxD patients who died very young (median age at death = 1.7 years; range 0.5–14 years) (Figure 2A). Overall, we did not observe significant phosphorylation of GFAP in the control subjects (Figure 2—source data 1), or in AxD patients who lived 27–50 years (median age at death = 38 years). Further, immunoblot analysis using a phospho-specific antibody (KT13) (Sekimata et al., 1996) against pSer13-GFAP validated the mass spectrometry results in the AxD patients (Figure 2B–C). Although there was one notable outlier in each age group (Figure 2B lanes 3 and 11), our results suggest that pSer13-GFAP is primarily associated with the more aggressive, infantile form of AxD. Furthermore, the differences in phosphorylation were not a result of age, since pSer13 GFAP was generally not present in the brain lysates from non-AxD control subjects, regardless of age (Figure 2D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig2-v2.jpg)
 
-**Figure 2.:** (A) Quantification of pSer13-GFAP abundance by mass spectrometry in young (green) vs. old (pink) AxD patients (*=p < 0.05 unpaired t-test). (B) Validation of pSer13-GFAP by western blot of HSE from AxD patients, using a phospho-specific antibody to pSer13-GFAP. The order of samples, by AxD donor ID number, is: 1482, 1070, 885, 5488, 1161, 2768, 338, 613, 5377, 5517, M3596, 5109, and 4858 (listed in Supplementary file 1). (C) Quantification of the relative intensity of pSer13-GFAP on western blot in young (green) and old (pink) AxD patients (*=p < 0.05 unpaired t-test). Signal intensity was normalized to total GFAP in each sample. (D) Western blot of pSer13-GFAP in non-AxD control brain lysates of different ages. The order of samples, by donor ID number, is: 1547, 5941, 103, 1791, 1670, 4898, 1706, 1711, 1011, 632, 4640, and 4915 (listed in Supplementary file 2).Figure 2—source data 1.
+**Figure 2.:** (A) Quantification of pSer13-GFAP abundance by mass spectrometry in young (green) vs. old (pink) AxD patients (*=p < 0.05 unpaired t-test). (B) Validation of pSer13-GFAP by western blot of HSE from AxD patients, using a phospho-specific antibody to pSer13-GFAP. The order of samples, by AxD donor ID number, is: 1482, 1070, 885, 5488, 1161, 2768, 338, 613, 5377, 5517, M3596, 5109, and 4858 (listed in Supplementary file 1). (C) Quantification of the relative intensity of pSer13-GFAP on western blot in young (green) and old (pink) AxD patients (*=p < 0.05 unpaired t-test). Signal intensity was normalized to total GFAP in each sample. (D) Western blot of pSer13-GFAP in non-AxD control brain lysates of different ages. The order of samples, by donor ID number, is: 1547, 5941, 103, 1791, 1670, 4898, 1706, 1711, 1011, 632, 4640, and 4915 (listed in Supplementary file 2).
 
-## Phospho-mimic mutation at Ser13 promotes GFAP aggregation
+### Phospho-mimic mutation at Ser13 promotes GFAP aggregation
 
 To determine the functional significance of pSer13 on GFAP filament organization, we analyzed the filament properties of non-phosphorylatable (S13A) and phospho-mimic (S13D and S13E) GFAP mutants. We optimized a transient over-expression system in the SW13 vimentin-negative adrenocarcinoma cells (SW13vim-) for this assay, which resulted in primarily filamentous WT GFAP and insoluble aggregated forms of common AxD mutants of GFAP (Figure 3—figure supplement 1). Compared to wild-type (WT) GFAP, the S13D and S13E mutants assembled primarily into large aggregates, similar to the most common AxD-associated mutant R79H-GFAP (Figure 3A–B). S13A formed mostly filaments, although they appeared shorter compared to WT GFAP. To determine if the phospho-mimic mutation directly promotes aggregation, we compared the assembly properties of purified WT, S13A and S13D GFAP (Figure 3C). Consistent with the phenotype observed in the transfected cells, the S13A mutant formed abnormally short filaments in vitro. In contrast, S13D was completely incapable of filament assembly, forming globular structures that were homogeneous in size and not aggregation-prone. Our results with the phospho-deficient and phospho-mimic mutants reveal that S13 is a key site that regulates the assembly properties of GFAP and that its phosphorylation status may modulate the dynamics between filaments and aggregates.
 
-## Generation of AxD induced pluripotent stem cells (iPSCs) and isogenic controls
+![Figure 3.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative images of immunofluorescence staining of DNA (blue) and GFAP (green) in SW13vim- cells transfected with wild-type GFAP (WT), R79H mutant GFAP (R79H), non-phosphorylatable GFAP (S13A), and phospho-mimic GFAP (S13D and S13E) as single or double mutations, as noted in the images. Scale bar = 5 µm. (B) Quantification of percentage of cells containing GFAP filaments, aggregates or both (n = 41–103 cells per condition). RH = R79H; SA = S13A; SD = S13D; SE = S13E. (C) Electron micrographs showing the filament properties of in vitro assembled GFAP (WT, S13A and S13D). Bottom three panels represent magnified areas marked by the white boxes in the top panels. Scale bars = 500 nm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blot of SW13vim- cells transfected for 24 hr with the designated GFAP constructs. NTC, non-transfected control. Top and bottom blots show GFAP and pan-actin, respectively, in the Triton X-100-soluble fraction (TX-100). Middle blot is a total cell lysate (TCL) blot of GFAP from the same transfections. (B) Corresponding immunofluorescence staining of GFAP in SW13vim- cells after 24 hr of transfection. Scale bars = 10 µm.
+
+### Generation of AxD induced pluripotent stem cells (iPSCs) and isogenic controls
 
 In order to explore the function of this phosphorylation event in a disease-relevant system, we used an in vitro human astrocyte model of AxD. We generated iPSCs using fibroblasts from a young AxD patient and characterized their pluripotency by immunofluorescence staining (Figure 4A). Karyotype analysis showed that there were no chromosomal abnormalities due to the reprogramming process (Figure 4—figure supplement 1). To generate isogenic control cells, we corrected the heterozygous point mutation in GFAP (c.715C > T, p.R239C) using CRISPR/Cas9 mediated gene editing (Figure 4B). Representative chromatograms are shown for the original patient cells and the isogenic controls (Figure 4C). We also isolated ‘CRISPR control’ clones, which were edited on the wild-type GFAP allele, thereby retaining the AxD-causing mutation and serving as an additional disease control for the gene editing procedure. Similar to the original patient cells, the edited cells were karyotyped and characterized for pluripotency (Figure 4—figure supplement 1). We confirmed that there were no off-target effects due to the editing procedure (Supplementary file 3).
 
-## GFAP accumulation and perinuclear aggregation into RF-like structures in AxD iPSC-astrocytes
+![Figure 4.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig4-v2.jpg)
+
+**Figure 4.:** (A) Characterization of iPSC pluripotency. Bright field images of AxD patient fibroblasts (top left) and iPSCs (bottom left). Immunofluorescence staining for pluripotency markers in AxD iPSCs. (B) GFAP sequence for the AxD mutant allele and the corrected allele. Differences between the sequences are indicated by red text. The AxD-causing mutation is underlined, and all other changes are silent mutations. The area of gRNA recognition is indicated by the red line. (C) Chromatograms showing AxD heterozygous mutation in the original patient cells (top), correction of the mutant allele in the isogenic control (middle) and correction of the wild-type allele in the CRISPR control (bottom). Red arrows denote presence of the disease mutation and green check mark denote genetic correction and presence of silent mutations. (D) Schematic representation of astrocyte differentiation protocol. NIM, neural induction medium; NPM; neural progenitor medium; ADM, astrocyte differentiation medium; AMM; astrocyte maturation medium. (E) Immunoblot of GFAP in iPSC-astrocytes. Pan-actin blot and Coomassie stain serve as loading controls. (F) Quantification of band intensities for GFAP from panel E. ****p<0.0001 compared to isogenic control; one-way ANOVA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Karyotype analysis for original AxD patient iPSCs, isogenic control (MDCL11) and CRISPR control (MDCL14) iPSCs showing normal karyotypes for all three clones. (B) Immunofluorescence staining for iPSC pluripotency markers (red/green) and DAPI (blue). Scale bars = 400 µm. (C) TaqMan hPSC Scorecard Panel that compares the gene expression profile of the generated iPSCs against nine reference lines. Heat map of the genes that are up-regulated (red), have the same expression level (white) or are down -regulated (blue) in the iPSCs. Colors correlate to the fold change in expression of the indicated gene relative to the undifferentiated or Day seven embryoid body (EB) differentiated reference set. Shown at the bottom are differentiation index plots of changes in self-renewal genes (green) and differentiation genes (blue-ectoderm, orange-mesoderm, purple-endoderm) in the 1 week EB differentiated cells (left) and undifferentiated cells (right).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Immunofluorescence staining for astrocyte markers ALDH1L1 and SLC1A3 (green) and DAPI (blue) in isogenic control, CRISPR mutant and AxD iPSC-astrocytes. Scale bars = 20 µm. (B) Immunofluorescence staining for astrocyte markers GFAP (magenta), Connexin-43 (green, top), EAAT2 (green, bottom) and DAPI (blue) in AxD iPSC-astrocytes. Scale bars = 10 µm.
+
+### GFAP accumulation and perinuclear aggregation into RF-like structures in AxD iPSC-astrocytes
 
 AxD, CRISPR control, and isogenic control iPSCs were differentiated to astrocytes (iPSC-astrocytes) via neural progenitor cells (NPCs), as described in the Materials and methods and shown schematically in Figure 4D. After 54 days in culture, iPSC-astrocytes express classical astrocyte markers (Zhang et al., 2014), including alcohol dehydrogenase 1 family member L1 (ALDH1L1), solute carrier family 1 member 3 (SLC1A3), excitatory amino acid transporter 2 (EAAT2), Connexin 43 and GFAP (Figure 4—figure supplement 2). To assess if our model recapitulated key features of AxD, we analyzed total GFAP expression in the iPSC-astrocytes by immunoblot, and found that GFAP levels were significantly higher in the cells that carried the heterozygous GFAP point mutation (AxD patient and CRISPR control lines) relative to the isogenic controls (Figure 4E–F). This is consistent with in vivo observations of GFAP levels in AxD patients (Jany et al., 2015) and mouse models (Jany et al., 2013). In addition, high-molecular-mass (hmm) GFAP oligomers were present in the AxD iPSC-astrocytes, similar to what we observed when we ectopically expressed the R239C-GFAP mutant (Figure 5A). Finally, we observed by immunofluorescence staining that the AxD mutant iPSC-astrocytes formed both GFAP filaments and perinuclear aggregates (Figure 5B), whereas the isogenic control iPSC-astrocytes formed only GFAP filaments (Figure 5C). In vivo, GFAP antibodies stain the periphery, while DAPI stains the core of RFs (Der Perng et al., 2006; Sosunov et al., 2017). The in vitro-derived AxD iPSC-astrocytes displayed similar characteristics, with RF-like perinuclear aggregates staining positively for GFAP at their periphery and DAPI in the center (Figure 5B).
 
@@ -77,15 +105,31 @@ AxD, CRISPR control, and isogenic control iPSCs were differentiated to astrocyte
 
 **Figure 5.:** (A) GFAP blot of AxD iPSC-astrocytes (left) and SW13vim- cells transfected with R239C mutant GFAP (right) reveals GFAP monomer and high-molecular-mass GFAP oligomers. Immunoblots on the bottom are of the same membranes at lower exposure. (B) Immunofluorescence staining for GFAP (magenta) and DAPI (white) in AxD iPSC-astrocytes reveals presence of perinuclear GFAP aggregates, marked by the yellow arrows. Scale bars = 10 µm. Boxed area in the merged image is shown by the enlarged image on the right. (C) Immunofluorescence staining for GFAP (magenta) and DAPI (white) in isogenic control iPSC-astrocytes. Scale bars = 10 µm.
 
-## pSer13-GFAP marks the core of perinuclear GFAP aggregates localized within deep nuclear invaginations
+### pSer13-GFAP marks the core of perinuclear GFAP aggregates localized within deep nuclear invaginations
 
 Next, we determined if pSer13-GFAP was present in the AxD iPSC-astrocytes, similar to what we observed in the human brain tissues. As shown in Figure 6A, pSer13-GFAP signal was detected strongly within the core of the perinuclear GFAP aggregates of AxD iPSC-astrocytes. Somewhat surprisingly, we also observed pSer13-GFAP signal in the isogenic control cells, possibly triggered by the in vitro culture conditions. Nevertheless, unlike AxD astrocytes, in the isogenic control astrocytes pSer13-GFAP organization was filamentous and paralleled that of total GFAP. Therefore, the in vitro iPSC-astrocyte model revealed that, only in the presence of the AxD disease mutation, pSer13-GFAP is incorporated within the core of perinuclear inclusions. While in all AxD cells pSer13 signal was detected in the aggregates, we also observed cells with pSer13-positive diffuse cytoplasmic staining and filaments, likely reflecting different states of the GFAP network (Figure 6—figure supplement 1). Furthermore, the pSer13-positive GFAP aggregates appeared adjacent to prominent nuclear invaginations (Figure 6A). Nuclear deformations, similar to what we observed in the AxD iPSC-astrocytes, are also present in RF-bearing astrocytes in AxD human brain (Sosunov et al., 2017). To determine whether the perinuclear aggregates compromised the nuclear envelope, we examined the AxD iPSC-astrocytes by electron microscopy. While we observed filamentous bundles on the cytoplasmic side of the nuclear invaginations, the nuclear envelope appeared intact (Figure 6B). Thus, pSer13-GFAP marks cytoplasmic GFAP aggregates adjacent to nuclear invaginations. It should be noted that the perinuclear aggregates containing disorganized GFAP filaments are not identical to the electron-dense RFs that are seen in post-mortem patient brain, but that they may reflect an intermediate state of GFAP accumulation.
 
-## Phosphorylation at Ser13 promotes caspase-mediated cleavage of GFAP
+![Figure 6.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig6-v2.jpg)
+
+**Figure 6.:** (A) Immunofluorescence staining of total GFAP (magenta), pSer13-GFAP (green) and DAPI (blue) in isogenic control (top panels) and AxD mutant (bottom panels) iPSC-astrocytes. Perinuclear GFAP aggregates are indicated by the yellow arrows. Scale bars = 10 µm. (B) Electron microscopy images of AxD patient iPSC-astrocytes revealing large, juxtanuclear fibrous bundles (boxed area on left), shown at higher magnification on the right. Scale bar = 5 µm (left) and 0.5 µm (right).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Three types of cells were observed with respect to pSer13 signal: Type I: primarily aggregates (arrows); Type II: aggregates and soluble cytoplasmic GFAP (asterisk) and Type III: aggregates and filamentous GFAP (arrowheads).
+
+### Phosphorylation at Ser13 promotes caspase-mediated cleavage of GFAP
 
 To understand the mechanism for how GFAP phosphorylation may promote GFAP aggregation, we conducted a biochemical analysis of the S13A, S13D and S13E GFAP mutants. In line with our immunofluorescence result (Figure 3A), we observed an increase in high-molecular-mass ~100 kDa GFAP oligomer in the phospho-mimic mutant by immunoblot analysis (Figure 7A). However, more strikingly, we observed increased levels of a cleaved GFAP fragment (24 kDa) in S13D and S13E, which was significantly lower in WT- and S13A-GFAP (Figure 7A–B). Cleavage of GFAP by caspase-6 in vitro generates two fragments of 24 and 26 kDa size (Chen et al., 2013). The 24 kDa C-terminal fragment is recognized by the monoclonal GA5 antibody, (Chen et al., 2013) which was used here. Therefore, we tested the effect of a peptide inhibitor of caspase-6 (Ac-VEID-CHO), and found that it significantly reduced the amount of cleaved S13D-GFAP (Figure 7C–D). Furthermore, we observed augmented cleavage of S13D-GFAP when combined with an AxD-causing mutation (S13D/R79H double mutant), and this was also blocked by the caspase-6 inhibitor (Figure 7C–D). Further analysis of the AxD mutant R79H in the transfection system revealed phosphorylation not only at S13, but also at nearby Y14, S16, and S17 (Figure 7—figure supplement 1 and Figure 7—source data 1). Of note, mutagenesis of S16 and S17 to non-phosphorylatable alanines reduced both the cleavage and oligomerization of R79H (Figure 7—figure supplement 1). Phospho-motif analysis revealed that S13, S16 and S17 are part of a segment in the GFAP head domain that is a potential target for several kinases (Supplementary file 4). Candidate kinases include casein kinase 2 (CK2), protein kinase A (PKA), PKC, MAP kinase activated protein kinase 2 (MAPKAP2), and glycogen synthase kinase 3 (GSK3). These data suggest that phosphorylation of Ser13 (and nearby S16/17) may promote caspase-6-mediated cleavage of GFAP in the context of AxD mutations. In line with that, we observed increased levels of cleaved GFAP (upon normalization for total GFAP) in the AxD iPSC-astrocytes compared to isogenic control astrocytes (Figure 7E), along with intense caspase-6 staining within perinuclear GFAP aggregates in AxD iPSC-astrocytes, but not isogenic control astrocytes (Figure 7F).
 
-## Interference with GFAP cleavage by caspase-6 partially reduces aggregation of the phospho-mimic mutant S13D
+![Figure 7.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig7-v2.jpg)
+
+**Figure 7.:** (A) GFAP blot of SW13vim- cells transfected with vector, WT, S13A, S13D and S13E - GFAP. Full-length (fl) and cleaved fragment (cf) of GFAP are indicated by arrows. Immunoblot on the bottom shows GFAP monomer (fl) from the same membrane at a lower exposure. (B) Quantification of panel A by densitometry shows cleaved and full-length GFAP in phospho-mutants relative to WT GFAP (mean ± SD from three independent experiments; *p<0.05 two-way ANOVA). (C) GFAP blot in SW13vim- cells transfected with either S13D or S13D/R79H double mutant GFAP and treated for 48 hr with a caspase-6 inhibitor (Ac-VEID-CHO). (D) Quantification of GFAP bands in panel C by densitometry (mean ± SD from three biological replicates; **p<0.01; ****p<0.0001 two-way ANOVA). (E) Immunoblot for GFAP monomer (fl) and cleaved fragment (cf) in isogenic control and AxD iPSC-astrocytes. Different amounts of total protein were loaded to normalize GFAP monomer levels. (F) Immunofluorescence staining of caspase-6 (magenta), GFAP (green) and DAPI (blue) in human AxD and isogenic control iPSC-astrocytes showing caspase-6 co-localization within GFAP aggregates in the AxD cells, indicated by the arrowheads. Scale bars = 20 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Coomassie stain of a HSE extracts from WT and R79H GFAP analyzed by 2-dimensional (2D) gel electrophoresis. Red arrow points to a negatively charged species that was only present in R79H and analyzed by mass spectrometry. (B) Summary of phosphorylation state of the negatively charged GFAP species from panel A. (C) Effect of phospho-deficient mutants S16A and S17A on GFAP R79H oligomerization and cleavage.
+
+### Interference with GFAP cleavage by caspase-6 partially reduces aggregation of the phospho-mimic mutant S13D
 
 To determine how blocking GFAP cleavage affects aggregation, we performed site-directed mutagenesis to block cleavage of GFAP at Asp225. As shown in Figure 8A–B, the D225E mutation reduced cleavage of S13D GFAP by >90%. This resulted in partial rescue of filament structure in S13D, although the D225E mutation on its own caused significant filament bundling and perinuclear structures that resembled large aggregates (Figure 8C–D). We also tested the effect of the caspase-6 inhibitor Ac-VEID-CHO, and found that it reduced both the size of the S13D aggregates (Figure 8E) and the presence of ~100 kDa hmm GFAP oligomers (Figure 8F–G). However, similar to the mutagenesis experiment, filament bundles were observed in WT and S13D GFAP treated with Ac-VEID-CHO, suggesting that caspase-6 regulates both aggregation and normal GFAP filament re-organization.
 
@@ -93,9 +137,17 @@ To determine how blocking GFAP cleavage affects aggregation, we performed site-d
 
 **Figure 8.:** (A) Western blot of GFAP total cell lysates from SW13vim- cells transfected with empty vector control, WT, S13D, D225E, and double S13D/D225E mutants. Shown are GFAP cleaved fragment (cf), full-length (fl) monomer and pan-actin (loading control). (B) Quantification of the abundance of cleaved GFAP in the three mutants shown in panel A relative to WT GFAP (mean ± SD from three biological replicates; ****p<0.0001 compared to S13D; one-way ANOVA). (C) Representative images of immunofluorescence staining of DNA (blue) and GFAP (green) in SW13vim- cells transfected with wild-type GFAP (WT), phospho-mimic GFAP (S13D), and non-cleavable GFAP (D225) as single or double mutations, as noted in the images. Scale bar = 10 µm. (D) Quantification of percentage of cells containing GFAP filaments, aggregates or both (n = 76–85 cells per condition). (E) Representative images of immunofluorescence staining of DNA (blue) and GFAP (green) in SW13vim- cells transfected with wild-type GFAP (WT) or phospho-mimic GFAP (S13D) and treated with vehicle (control) or the caspase-inhibitor Ac-VEID-CHO (10 µM, 48 hr). (F) Western blot analysis of SW13vim- total lysates transfected with S13D GFAP and treated with vehicle (control) or caspase-6 inhibitor Ac-VEID-CHO (10 µM, 24 hr), showing the 24 kDa caspase-cleaved fragment (cf), 50 kDa full-length (fl), and high-molecular-mass ~100 kDa GFAP. (G) Quantification of the relative abundance of hmm GFAP in control and Ac-VEID-CHO – treated cells. n = 3; **p<0.01; unpaired t-test.
 
-## Caspase-6 expression and GFAP cleavage are upregulated in AxD patients
+### Caspase-6 expression and GFAP cleavage are upregulated in AxD patients
 
 Caspase-6 is not expressed highly in the normal human brain, especially after birth (Godefroy et al., 2013). Therefore, we wanted to examine its expression in the context of AxD. Using immunoblot analysis of total brain lysates, we found that caspase-6 is expressed in the brain tissue from all 8 AxD patients who died very young, but is essentially undetectable in the patients who survived longer (Figure 9A). To ensure caspase-6 expression is not simply more abundant in young individuals, we compared brain lysates from young and old AxD patients to non-AxD control brains from age-matched individuals, and observed a significant increase in caspase-6 expression selectively in young AxD patients, but not in the other groups (Figure 9B–C).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig9-v2.jpg)
+
+**Figure 9.:** (A) Immunoblot for caspase-6 in total lysates from human AxD post mortem brain tissue shows that caspase-6 is upregulated in young AxD patients. Pan-actin is used as a loading control. (B) Immunoblot for caspase-6 in total lysates from young and old non-AxD control and AxD patient post-mortem brain tissue. Pan-actin blot serves as a loading control. (C) Quantification of band intensities in panel B by densitometry of caspase-6 normalized to actin. **p<0.01; two-way ANOVA. (D) Western blotting for full-length GFAP or cleaved GFAP (D225 antibody) in HSEs from human AxD post-mortem brain tissue. (E) Quantification of band intensities from panel D by densitometry of D225, normalized to total GFAP (**p<0.01, unpaired t-test). (F) Immunofluorescence staining showing widespread presence of cleaved GFAP (D225; magenta) in cerebral cortex and underlying white matter of 347 day-old child with AxD and low expression of cleaved GFAP in a 42 year old AxD patient. Wider fields of view and sections from additional patients are shown in Figure 7—figure supplement 1. DAPI nuclei are shown in white in bottom panels, and arrow highlights perinuclear aggregate containing cleaved GFAP and staining positively for DAPI in brain tissue from a child with AxD. Scale bar = 100 µm (top) and 10 µm (bottom).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/47789/elife-47789-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Human brain sections were immunostained with the D225 antibody, which recognizes the N-terminal fragment of cleaved GFAP at Asp-225.
 
 Next we asked whether AxD patients, particularly young AxD patients that exhibit more pSer13-GFAP and caspase-6 expression, also displayed increased GFAP cleavage. To determine the extent of caspase-6-cleaved GFAP in AxD patient brains, we utilized an antibody that specifically recognizes N-terminally caspase-6-cleaved GFAP (D225) (Chen et al., 2013). We detected cleaved GFAP in extracts from AxD patient brains, and we observed a significant increase in the amount of D225 signal in young AxD patients, which paralleled the increased pSer13 signal in these samples (Figure 9D–E). In agreement with the biochemical evidence, brain tissues from young AxD patients stained intensely for cleaved GFAP, while the signal was significantly weaker in AxD patients who were older (Figure 9F; Figure 9—figure supplement 1). The signal was particularly strong around perinuclear areas and surrounded circular structures that stained positive for DAPI (Figure 9F, bottom panels), similar to what we observed in the AxD iPSC-astrocytes. Thus, our results show that caspase-6 expression in AxD patient brain tissue parallels the presence of cleaved GFAP, and both are selectively and significantly elevated in patients who succumbed to the disease very early in life.
 
@@ -117,42 +169,276 @@ Invaginations of the nucleus, such as those we observe here, have been described
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human)</td>
+      <td>GFAP</td>
+      <td>NA</td>
+      <td>Gene ID: 2670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>R239C-GFAP fibroblasts from AxD patient</td>
+      <td>Coriell Institute</td>
+      <td>GM16825</td>
+      <td>Brenner et al. (2001)</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>R239C-GFAP induced pluripotent stem cells</td>
+      <td>Generated in the study</td>
+      <td></td>
+      <td>Generation of the AxD iPSCs (R239C-GFAP) is described in the Materials and methods below. Cells can be obtained by contacting the corresponding author.</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>R239R-GFAP isogenic control induced pluripotent stem cells</td>
+      <td>Generated in the study</td>
+      <td></td>
+      <td>Generation of the AxD iPSCs (R239C-GFAP) is described in the Materials and methods below. Cells can be obtained by contacting the corresponding author.</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>SW13 vim-</td>
+      <td>Sarria, A.J et al. J Cell Sci 1994</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Human brain specimens</td>
+      <td>NIH NeuroBioBank</td>
+      <td>Listed inSupplementary files 1 and 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GFAP</td>
+      <td>Agilent/DAKO</td>
+      <td>Clone Z0334</td>
+      <td>Dilution = 1:10,000 immunoblot, 1:500 immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-caspase-6</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9762</td>
+      <td>Dilution = 1:1000 immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-caspase-6</td>
+      <td>abcam</td>
+      <td>Cat# ab185645</td>
+      <td>Dilution = 1:100 immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-D225</td>
+      <td>PMID: 24102621</td>
+      <td></td>
+      <td>gift from Dr Ming Der Perng, Dilution = 1:5000 immunoblot (overnight), 1:150 immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-GFAP</td>
+      <td>Sigma</td>
+      <td>Clone GA5, Cat# G3893</td>
+      <td>Dilution = 1:3000 immunoblot, 1:300 immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-pSer13 GFAP</td>
+      <td>PMID: 8647894</td>
+      <td></td>
+      <td>gift from Dr Masaki Inagaki, Dilution = 1:500 immunoblot (overnight), 1:20 immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-pan Actin</td>
+      <td>NeoMarkers</td>
+      <td>Cat# MS-1295</td>
+      <td>Dilution = 1:3000 immunoblot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Tra-1–60</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 41–1000</td>
+      <td>Dilution = 1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Tra-1–81</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 41–1100</td>
+      <td>Dilution = 1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-SSEA4</td>
+      <td>ThermoFisher</td>
+      <td>Cat#41–4000</td>
+      <td>Dilution = 1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Oct4</td>
+      <td>abcam</td>
+      <td>Cat# ab19857</td>
+      <td>Dilution = 1:40</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Sox2</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 48–1400</td>
+      <td>Dilution = 1:125</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated goat anti-mouse</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A32723</td>
+      <td>Dilution = 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated goat anti-rabbit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A32731</td>
+      <td>Dilution = 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 594-conjugated goat anti-mouse</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A32742</td>
+      <td>Dilution = 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 594-conjugated goat anti-rabbit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A32740</td>
+      <td>Dilution = 1:500</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV6-XL6-GFAP</td>
+      <td>Origene</td>
+      <td>Cat# SC118873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TrueCut Cas9 Protein v2</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A36499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Precision gRNA Synthesis Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A29377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent Quikchange II</td>
+      <td>Agilent</td>
+      <td>Cat# 200524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rneasy Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taqman Scorecard</td>
+      <td>ThermoFisher</td>
+      <td>Cat# A15870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ECL Reagents</td>
+      <td>Perkin Elmer</td>
+      <td>NEL103E001EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-VEID-CHO</td>
+      <td>Millipore Sigma</td>
+      <td>A6339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRISPR off-target</td>
+      <td>PMID: 27380939</td>
+      <td>http://crispor.tefor.net/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies
 
 The following antibodies were used: rabbit anti-GFAP (DAKO Agilent, Santa Clara, CA, Z0334), rabbit anti-caspase-6 (Cell Signaling Technologies, Danvers, MA, 9762), rabbit anti-Caspase-6 (abcam, Cambridge, UK, ab185645), rabbit anti-D225 (Chen et al., 2013), mouse anti-GFAP (Sigma, GA5), mouse anti-pSer13-GFAP (KT13 [Sekimata et al., 1996]), mouse anti-pan Actin, mouse anti-Tra-1–60, mouse anti-SSEA4, rabbit anti-Oct4, rabbit anti-Sox2, and Alexa 488- and Alexa 594-congujated goat anti mouse or rabbit antibodies (Thermo Fisher Scientific, Waltham, MA).
 
-## Cell lines
+### Cell lines
 
 SW13vim- cells were provided by Dr Bishr Omary and cultured in DMEM with 10% fetal bovine serum and 1% penicillin-streptomycin. Authentication of the cell line was done by short tandem repeat (STR) profiling by ATCC. Fibroblasts from a male 6 year old type I AxD patient were obtained from the Coriell institute (Camden, NJ). Sanger sequencing was performed to confirm the AxD mutation was present in the cells (c.715C > T; p.Arg239Cys). The cell lines used tested negative for mycoplasma contamination, as assayed using the Universal Mycoplasma Detection Kit (ATCC 30–1012K).
 
-## Human brain tissues
+### Human brain tissues
 
 De-identified post-mortem fresh-frozen and fixed AxD patient and control brain tissues were provided by the NIH NeuroBioBank and are described in Supplementary files 1 and 2.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Sample Preparation: HSEs from AxD patient post-mortem brain cortex tissue were prepared as described previously (Battaglia et al., 2017; Snider and Omary, 2016) and in Figure 1—figure supplement 1, then subjected to SDS-PAGE followed by Coomassie stain. Bands corresponding to GFAP were excised and the proteins were reduced, alkylated, and in-gel digested with trypsin overnight at 37 °C. Peptides were extracted, desalted with C18 spin columns (Pierce – Thermo Fisher Scientific) and dried via vacuum centrifugation. Peptide samples were stored at −80°C until further analysis. LC-MS/MS Analysis: The peptide samples were analyzed by LC/MS/MS using an Easy nLC 1200 coupled to a QExactive HF mass spectrometer (Thermo Fisher Scientific). Samples were injected onto an Easy Spray PepMap C18 column (75 μm id ×25 cm, 2 μm particle size) (Thermo Fisher Scientific) and separated over a 1 hr method. The gradient for separation consisted of 5–40% mobile phase B at a 250 nl/min flow rate, where mobile phase A was 0.1% formic acid in water and mobile phase B consisted of 0.1% formic acid in 80% ACN. The QExactive HF was operated in data-dependent mode where the 15 most intense precursors were selected for subsequent fragmentation. Resolution for the precursor scan (m/z 300–1600) was set to 120,000 with a target value of 3 × 106 ions. MS/MS scans resolution was set to 15,000 with a target value of 1 × 105 ions. The normalized collision energy was set to 27% for HCD. Dynamic exclusion was set to 30 s, peptide match was set to preferred, and precursors with unknown charge or a charge state of 1 and ≥7 were excluded. Data Analysis: Raw data files were processed using Proteome Discoverer version 2.1 (Thermo Fisher Scientific). Peak lists were searched against a reviewed Uniprot human database, appended with a common contaminants database, using Sequest. The following parameters were used to identify tryptic peptides for protein identification: 10 ppm precursor ion mass tolerance; 0.02 Da product ion mass tolerance; up to two missed trypsin cleavage sites; phosphorylation of Ser, Thr and Tyr were set as variable modifications. The ptmRS node was used to localize the sites of phosphorylation. Peptide false discovery rates (FDR) were calculated by the Percolator node using a decoy database search and data were filtered using a 5% FDR cutoff. The peak areas for the identified peptides were extracted and used for relative quantitation across samples.
 
-## Site directed mutagenesis, in vitro assembly, transfections, and immunofluorescence
+### Site directed mutagenesis, in vitro assembly, transfections, and immunofluorescence
 
 Mutagenesis of GFAP (Origene, Rockville, MD, in vector CMV6-XL6) was performed using the QuikChange II mutagenesis kit (Agilent) to generate the designated point mutants. Sanger sequencing of the entire coding sequence of GFAP was performed to confirm the wild-type and mutant sequences. We used established procedures for the purification and in vitro assembly of GFAP (Perng et al., 2016). For transfections, lipofectamine 2000 was used according to the supplier instructions (Invitrogen, Thermo Fisher Scientific, Carlsbad, CA), and experiments were performed 20–24 hr after transfection. For immunofluorescence, cells were fixed in methanol at −20°C for 10 min, washed three times in PBS and incubated in blocking solution (2.5% bovine serum albumin, 2% normal goat serum in PBS) for 1 hr at room temperature. Primary antibodies were diluted into blocking buffer and incubated overnight at 4°C. The next day, cells were washed 3 times in PBS and incubated with Alexa Fluor-conjugated secondary antibodies diluted into blocking buffer for 1 hr at room temperature. Cells were washed 3 times in PBS, incubated in DAPI for 5 min, washed 3 times and mounted in Fluoromount-G (SouthernBiotech, Birmingham, AL) overnight. Cells were imaged on Zeiss 880 confocal laser scanning microscope using a 63x (1.4 NA) oil immersion objective (Zeiss, Jena, Germany).
 
-## Preparation of protein lysates and western blotting
+### Preparation of protein lysates and western blotting
 
 High salt extracts (HSEs) and triton-X (TX) lysates were prepared as previously described (Battaglia et al., 2017). Total lysates were prepared by homogenizing 25 mg tissue directly into hot 2X Tris-Glycine SDS Sample Buffer (Thermo Fisher Scientific) and heating for 5 min at 95°C. Immunoblotting was performed as previously described (Trogden et al., 2018). Briefly, samples were resolved on 4–20% gradient SDS-PAGE gels transferred onto activated polyvinylidene difluoride membranes at 40V overnight. The transferred gels were routinely stained with Coomassie blue and the membranes were blocked in 5% non-fat milk in 0.1% tween 20/PBS (PBST). Post-transfer Coomassie-stained gels served as another loading control where the levels of housekeeping protein (actin) varied (Figure 4E). For immunoblotting, the membranes were incubated with the appropriate primary antibody diluted in 5% milk/PBST, with the exception of KT13, which was incubated in 5% bovine serum albumin/PBST for blocking, primary antibodies and secondary antibodies. Antibodies were detected using ECL reagents (PerkinElmer Life Sciences, Hopkinton, MA). For 2D gel analysis, HSEs were dissolved in 2-D starter kit rehydration/sample buffer (Biorad; 1632106) for separation by isoelectric focusing (IEF). Immobilized pH gradient (IPG) strips (Biorad; 11 cm; pH 4–7; 1632015) were passively rehydrated in 2-D starter kit rehydration/sample buffer overnight. Cup loading method was employed to load the protein samples in cathode side (as isoelectric point of GFAP is 5.2) of the Protean IEF cell tray (Biorad; 1654020). The IEF separation was done using 72000 vh. After IEF separation the protein samples were further separated based on molecular weight using SDS-PAGE gel by applying constant 90 volts.
 
-## Cellular reprogramming, characterization and karyotyping of iPSCs
+### Cellular reprogramming, characterization and karyotyping of iPSCs
 
 Skin fibroblasts were reprogrammed under feeder free conditions using Cytotune –iPS 2.0 Sendai Reprogramming kit and individual iPSC clones were picked for propagation in culture for 10 passages. To confirm stemness and differentiation capabilities of reprogrammed and edited iPSCs, we used the qPCR based TaqMan human Pluripotent Stem Cell Scorecard Panel (Thermo Fisher Scientific). iPSCs were differentiated into all three germ layers using STEMdiff Trilineage Differentiation Kit (StemCell Technologies, Vancouver, Canada), and a monolayer-based protocol was used to directly differentiate hES cells in parallel into the three germ layers (~1 week). Non-differentiated and differentiated cells were lysed and total RNA purified using the RNeasy kit (QIAGEN). RNA reverse transcription was performed following the Taqman Scorecard’s manufacture guidelines and the qRT-PCR was carried out using the QuantStudio 7 Flex Real-Time PCR system. The TaqMan PCR assay combines DNA methylation mapping, gene expression profiling, and transcript counting of lineage marker genes (Bock et al., 2011). Reprogrammed and edited iPSCs were submitted to a standard G-band analysis consisting of 20 metaphase spreads. The analysis (carried out by Karyologic Inc) can identify gender, chromosome number, and detect aberrations that include trisomies, monosomies, deletions, insertions, translocations, duplications, breaks, polyploidy, among others. No abnormalities were found in our cell lines (Figure 4—figure supplement 2A).
 
-## CRISPR/Cas9 genome editing
+### CRISPR/Cas9 genome editing
 
 We used the TrueCut Cas9 Protein V2, sgRNAs and the Neon Transfection system (Thermo Fisher Scientific) to edit iPSCs. The recombinant TrueCut Cas9 V2 was diluted in resuspension buffer R provided in the kit and mixed with 900 ng of sgRNA and 2700 ng of single-stranded donor oligonucleotide, incubated 15 min at room temperature and then a total of 3 × 105 iPSCs were electroporated with the ribonucleoprotein mix. Seventy-two hours after electroporation, cells were dissociated into single cells, diluted, and seeded on Matrigel-coated 96-well plates. Single-cell colonies were selected after two weeks and tested for gene correction. Genomic DNA of single clones was extracted and the gene of interest amplified by PCR using allele specific primers. Sanger sequencing of positive clones demonstrated single or double allele gene correction. Off-target sites within the exons of genes were predicted via selection of the top candidates using the MIT software (CRISPR.mit.edu). The analysis was performed via PCR of 400 bp fragments, which flanked the predicted off-target cut site followed by Sanger sequencing. The chromatograms for edited clones were compared to sequences from the original AxD patient cells.
 
-## iPSC culture and astrocyte differentiation
+### iPSC culture and astrocyte differentiation
 
 iPSCs were maintained on Matrigel in StemFlex medium (Thermo Fisher Scientific) and passaged every 3–4 days with 0.5 mM EDTA dissociation solution. iPSCs were differentiated into neural progenitor cells (NPC) using an embryoid body (EB) protocol. Briefly, iPSCs at 80% confluence were collected, resuspended in Neural Induction Medium (NIM, StemCell Technologies) and seeded on one well of an Aggrewell 800 plate (StemCell Technologies) at 3 × 106 cells per well. At day five, EBs were seeded on poly-ornithine and laminin (PLO/LAM)-coated dishes in NIM. Rosette selection was performed after 12 days using Rosette Selection Reagent (StemCell Technologies). NPCs were expanded for 7 days in Neural Progenitor Medium (StemCell Technologies). NPCs were then differentiated into astrocyte precursors by seeding dissociated single cells at 1 × 105 cells/cm2 density on PLO/LAM dishes in STEMdiff astrocyte differentiation medium (StemCell Technologies). Astrocyte precursors were maintained for 20 days with medium changes every 48 hr and splitting every week with Accutase (Millipore, Burlington, MA). Astrocytes were expanded for up to 120 days in STEMdiff astrocyte maturation medium (StemCell Technologies).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 AxD iPSC-astrocytes grown on a polystyrene dish were fixed in 2.5% glutaraldehyde in 0.1M sodium cacodylate buffer, pH 7.4, for one hour at room temperature and stored at 4°C. The cells were washed 3 times in 0.1M sodium cacodylate buffer followed by post-fixation in 1% buffered osmium tetroxide for 1 hr. After three washes in deionized water, the cells were dehydrated in ethanol, infiltrated and embedded in situ in PolyBed 812 epoxy resin (Polysciences, Inc, Warrington, PA). The cell monolayer was sectioned en face to the substrate with a diamond knife and Leica UCT Ultramicrotome (Leica Microsystems, Inc, Buffalo Grove, IL). Ultrathin sections (70 nm) were mounted on 200 mesh copper grids and stained with 4% uranyl acetate and lead citrate. The sections were observed and digital images were taken using a JEOL JEM-1230 transmission electron microscope operating at 80kV (JEOL USA, Inc, Peabody, MA) equipped with a Gatan Orius SC1000 CCD Digital Camera (Gatan, Inc, Pleasanton, CA).

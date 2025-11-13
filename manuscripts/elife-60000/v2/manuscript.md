@@ -14,7 +14,7 @@
 
 ## Abstract
 
-The templating RNA is the core of the telomerase reverse transcriptase. In Saccharomyces cerevisiae , the complex life cycle and maturation of telomerase includes a cytoplasmic stage. However, timing and reason for this cytoplasmic passage are poorly understood. Here, we use inducible RNA tagging experiments to show that immediately after transcription, newly synthesized telomerase RNAs undergo one round of nucleo-cytoplasmic shuttling. Their export depends entirely on Crm1/Xpo1, whereas re-import is mediated by Kap122 plus redundant, kinetically less efficient import pathways. Strikingly, Mex67 is essential to stabilize newly transcribed RNA before Xpo1-mediated nuclear export. The results further show that the Sm 7 complex associates with and stabilizes the telomerase RNA in the cytoplasm and promotes its nuclear re-import. Remarkably, after this cytoplasmic passage, the nuclear stability of telomerase RNA no longer depends on Mex67. These results underscore the utility of inducible RNA tagging and challenge current models of telomerase maturation.
+The templating RNA is the core of the telomerase reverse transcriptase. In Saccharomyces cerevisiae, the complex life cycle and maturation of telomerase includes a cytoplasmic stage. However, timing and reason for this cytoplasmic passage are poorly understood. Here, we use inducible RNA tagging experiments to show that immediately after transcription, newly synthesized telomerase RNAs undergo one round of nucleo-cytoplasmic shuttling. Their export depends entirely on Crm1/Xpo1, whereas re-import is mediated by Kap122 plus redundant, kinetically less efficient import pathways. Strikingly, Mex67 is essential to stabilize newly transcribed RNA before Xpo1-mediated nuclear export. The results further show that the Sm7 complex associates with and stabilizes the telomerase RNA in the cytoplasm and promotes its nuclear re-import. Remarkably, after this cytoplasmic passage, the nuclear stability of telomerase RNA no longer depends on Mex67. These results underscore the utility of inducible RNA tagging and challenge current models of telomerase maturation.
 
 ## Introduction
 
@@ -36,21 +36,29 @@ Using this inducible TLC1 tagging tool, we show that very rapidly after transcri
 
 ## Results
 
-## Inducible TLC1-[MS2-IN] tagging system
+### Inducible TLC1-[MS2-IN] tagging system
 
 The MS2 tag used in earlier studies for constitutive TLC1 RNA tagging comprises 10 MS2 stem loops in the proximity to the TLC1 3’-end, just upstream of the Sm7 binding site (Gallardo et al., 2011; Bajon et al., 2015). To convert this construct into an inducible tagging system (named TLC1-[MS2-IN]), a recombination cassette was placed upstream of the 10xMS2 array (Figure 1A). The recombination cassette contained the TLC1 3’-end, the natMX4 selection marker and was flanked by the loxP sites. The TLC1-[MS2-IN] construct was integrated in the TLC1 genomic locus to allow for endogenous RNA expression levels. Under normal conditions, wild type TLC1 RNA transcripts are expressed from the TLC1-[MS2-IN] locus (Figure 1B). However, induction of recombination by Cre-recombinase will lead to the excision of the fragment flanked by the loxP sites and join the MS array sequence downstream to the TLC1 3’-end (Figure 1A,B). As a result, tagged TLC1-MS2 molecules will start to be transcribed from the recombined TLC1-[MS2-IN] locus. In addition, a non-replicating episome containing the selection marker and the wild type TLC1 3’-end will be produced upon recombination (Figure 1A). To induce recombination, we used a constitutively expressed Cre-recombinase fused to the estradiol-binding domain (Cre-EBD). Cre-EBD enters the nucleus only in the presence of β-estradiol, which allows for rapid and controlled induction of TLC1-[MS2-IN] recombination (Logie and Stewart, 1995).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic of the TLC1-[MS2-IN] DNA locus before and after recombination. Thick black bars indicate the TLC1 probe used for Southern blot analysis in C. Arrows mark restriction fragments (a and b) detected by the TLC1 probe. NMX – natMX4 cassette. (B) Schematic of tagged and untagged TLC1 RNA before and after recombination, respectively. Dotted line indicates the TLC1 probe used for northern blot analysis in E. Green and purple half-circles indicate TLC1- and MS2-specific smFISH probes, respectively. (C) Southern blot analysis of the TLC1-[MS2-IN] locus following induction of recombination. The position of the TLC1 probe hybridizing to restriction fragments a and b is depicted in A. CEN4 – loading control. ‘+’ - positive recombined control. DNA marker sizes are indicated on the right (kb). (D) Quantification of the Southern blot shown in C. Fractions relative to 0 hr (for unrecombined TLC1 locus) and to the positive recombined control (+) (for recombined TLC1-MS2 locus) are shown. Error bars indicate SD, n = 3. (E) Northern blot analysis of untagged TLC1 and tagged TLC1-MS2 RNA transcripts following induction of TLC1-[MS2-IN] recombination. Position of the TLC1 probe used to detect TLC1 species is shown in B. U1 – loading control. ‘+’ - positive recombined control. RNA sizes are indicated on the left (kb), 1.8 kb corresponds to 18S rRNA. (F). Quantification of the northern blot shown in E. Fractions relative to 0 hr (for untagged TLC1) and to the positive recombined control (+) (for tagged TLC1-MS2) are shown. Error bars indicate SD, n = 3. (G) RT-ddPCR quantification of untagged TLC1 and tagged TLC1-MS2 RNA transcripts following induction of recombination. Fractions relative to the positive recombined control are shown. Error bars indicate SD, n = 2.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Schematic of the TLC1-[MS2-IN] DNA locus before and after recombination. Thick black bars indicate the TLC1 probe used for Southern blot analysis in C. Arrows mark restriction fragments (a and b) detected by the TLC1 probe. NMX – natMX4 cassette. (B) Schematic of tagged and untagged TLC1 RNA before and after recombination, respectively. Dotted line indicates the TLC1 probe used for northern blot analysis in E. Green and purple half-circles indicate TLC1- and MS2-specific smFISH probes, respectively. (C) Southern blot analysis of the TLC1-[MS2-IN] locus following induction of recombination. The position of the TLC1 probe hybridizing to restriction fragments a and b is depicted in A. CEN4 – loading control. ‘+’ - positive recombined control. DNA marker sizes are indicated on the right (kb). (D) Quantification of the Southern blot shown in C. Fractions relative to 0 hr (for unrecombined TLC1 locus) and to the positive recombined control (+) (for recombined TLC1-MS2 locus) are shown. Error bars indicate SD, n = 3. (E) Northern blot analysis of untagged TLC1 and tagged TLC1-MS2 RNA transcripts following induction of TLC1-[MS2-IN] recombination. Position of the TLC1 probe used to detect TLC1 species is shown in B. U1 – loading control. ‘+’ - positive recombined control. RNA sizes are indicated on the left (kb), 1.8 kb corresponds to 18S rRNA. (F). Quantification of the northern blot shown in E. Fractions relative to 0 hr (for untagged TLC1) and to the positive recombined control (+) (for tagged TLC1-MS2) are shown. Error bars indicate SD, n = 3. (G) RT-ddPCR quantification of untagged TLC1 and tagged TLC1-MS2 RNA transcripts following induction of recombination. Fractions relative to the positive recombined control are shown. Error bars indicate SD, n = 2.
 
 After addition of β-estradiol to the exponentially growing cultures, recombination of the TLC1-[MS2-IN] genomic locus was followed for 16 hr by Southern blotting (Figure 1C,D). In addition, appearance of tagged TLC1-MS2 RNA transcripts was monitored by northern blotting and RT-ddPCR (Figure 1E–G). During the experiment, a cloned strain with the recombined TLC1-[MS2-IN] locus was used as a reference to monitor the efficiency of recombination and TLC1-MS2 tagging. Southern blot analysis showed that TLC1-[MS2-IN] recombination occurred very rapidly, reaching almost 50% after 30 min of β-estradiol addition to the culture (Figure 1C,D). Conversion of the TLC1-[MS2-IN] locus into TLC1-MS2 was nearly complete after 4 hr, reaching approximately 90% relative to the reference strain. At the RNA level, we also observed gradual disappearance of the shorter untagged TLC1 molecules and appearance of the longer TLC1-MS2 RNA species (Figure 1E,F). After 2.5 hr of recombination induction, nearly half of TLC1 molecules had acquired a tag, whereas by the end of the time course, the TLC1 population consisted almost exclusively of tagged TLC1-MS2 molecules. Independent quantification of tagged and untagged TLC1 species throughout the experiment by RT-ddPCR yielded results consistent with the northern blot analysis (Figure 1G). Therefore, the inducible recombination system constructed in this study is functional and allows TLC1-MS2 tagging in a fast and controlled manner.
 
-## Tracking subcellular distribution of telomerase RNA fractions
+### Tracking subcellular distribution of telomerase RNA fractions
 
 The turnover of the TLC1 RNA population was also monitored by the two-color smFISH analysis. For this approach, we used a combination of TLC1-specific probes that detect all TLC1 RNA species, and MS2-specific probes that hybridize only to newly tagged molecules (Figure 1B). The specificity of the probes was confirmed using a tlc1Δ control strain, that lacked either TLC1 or MS2 FISH signals (Figure 2—figure supplement 1A).
 
 Before recombination induction, TLC1-[MS2-IN] cells contained only TLC1-specific foci, indicating that only untagged TLC1 RNA was expressed at the 0 hr time point (Figure 2A). At this stage (called steady state), the average number of TLC1 RNA was ~10 molecules/cell, which is consistent with previous reports (Figure 2B, Figure 2—figure supplement 1B; Gallardo et al., 2008; Bajon et al., 2015). After induction of recombination, old foci hybridizing only with TLC1 probes slowly disappeared, whereas new foci hybridizing with both TLC1 and MS2 probes gradually accumulated (Figure 2A,B, Figure 2—figure supplement 1B,C). The first MS2-specific foci appeared as early as 30 min after β-estradiol addition (Figure 2A,B, Figure 2—figure supplement 1C). By the end of the 16 hr time course, the tagged TLC1-MS2 fraction constituted more than 80% of total observed TLC1 molecules (Figure 2B,C). However, a small fraction of TLC1 foci remained untagged even after 16 hr of recombination. These might be attributed to late recombination events that occur in a sub-population of cells (Figure 1D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig2-v2.jpg)
+
+**Figure 2.:** (A) Two-color smFISH analysis of untagged old TLC1 (green) and tagged new TLC1-MS2 molecules (purple) in wild type cells following induction of recombination. TLC1-Cy3 and MS2-Cy5 probes were used. Scale bar, 2 μm. (B) Average number of old and new TLC1 foci observed by smFISH following recombination induction. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (C) Relative fractions of old and new TLC1 foci observed by smFISH following recombination induction. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (D, E). Relative nuclear and cytoplasmic fractions of old (D) and new (E) TLC1 foci observed by smFISH following recombination induction. NA – not applicable. 50–100 cells from three independent experiments were scored. Error bars indicate SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Two-color smFISH analysis of a recombined strain expressing TLC1-10xMS2 and a tlc1Δ negative control strain. TLC1-Cy3 and MS2-Cy5 probes were used. Scale bar, 2 μm. (B, C) The number of old (B) and new (C) TLC1 foci observed by smFISH in individual wild type cells after recombination induction. Horizontal black lines indicate average number of foci. 50–100 cells from three independent experiments were scored. (D) Telomere length analysis in strains with or without the TLC1-[MS2-IN] system. TRF – terminal restriction fragment, CEN4 – migration control. DNA marker sizes are indicated on the left (kb). (E) Total number of TLC1 foci (top) and relative nuclear and cytoplasmic TLC1 fractions (bottom) detected by smFISH in strains with or without TLC1-[MS2-IN]. Horizontal black lines (top) indicate average number of foci. 50–100 cells from three independent experiments were scored.
 
 In order to verify that the TLC1-[MS2-IN] system does not disrupt the telomerase RNA function or RNP biogenesis, we performed telomere length analysis before and after recombination (Figure 2—figure supplement 1D). Consistent with previous reports, clones with the recombined TLC1-MS2 locus had stable and functional telomeres that were only slightly shorter than wild type telomeres (Gallardo et al., 2011; Bajon et al., 2015). TLC1-MS2 clones isolated after recombination induction also had a slightly reduced number of TLC1 molecules compared to wild type cells (Figure 2—figure supplement 1E, top). At present we do not know the reason for this minor reduction of RNP abundance, but virtually all functions of the enzyme, and in particular its enzymatic activity, remain unaffected by the tag (Gallardo et al., 2011; Bajon et al., 2015). Importantly, the nucleo-cytoplasmic distribution of TLC1 foci remained unchanged after inducible TLC1 tagging, validating that our system is suitable to track subcellular movements of old and new TLC1 molecules separately (Figure 2—figure supplement 1E, bottom).
 
@@ -60,19 +68,39 @@ Quantification of the subcellular distribution of new TLC1-MS2 molecules reveale
 
 In summary, the inducible TLC1 tagging system in combination with the two-color smFISH approach allows to study and quantify in detail the behavior of new and old TLC1 molecules as separate fractions. Old molecules tend to accumulate in the cytoplasm where they are likely to be degraded. On the other hand, the majority of newly synthesized telomerase RNA temporarily localizes in the cytoplasm followed by their gradual return to the nucleus and re-establishment of steady state.
 
-## Xpo1 and Kap122 are involved in nucleo-cytoplasmic shuttling of newly synthesized TLC1 transcripts
+### Xpo1 and Kap122 are involved in nucleo-cytoplasmic shuttling of newly synthesized TLC1 transcripts
 
 The Xpo1 exportin and Kap122 importin were previously implicated in the subcellular distribution of TLC1 (Gallardo et al., 2008). In order to establish whether Xpo1 and Kap122 are required for the shuttling of newly synthesized TLC1 molecules, we analyzed the dynamic localization of tagged TLC1 in the absence of these proteins.
 
 First, we tested whether export of new TLC1 molecules to the cytoplasm is dependent on the Xpo1 exportin (Figure 3A,B). For this purpose, cells harboring a temperature-sensitive xpo1-1 allele were shifted to the restrictive temperature (37°C) 1 hr before recombination induction. After addition of β-estradiol, xpo1-1 mutants were monitored for additional 8 hr at 37°C, at which point cells had completely stopped dividing. In xpo1-1 cells kept at the permissive temperature, new TLC1 molecules followed similar localization dynamics as in wild type cells, temporarily localizing in the cytoplasm at early stages and eventually flowing back to the nucleus (Figure 3—figure supplement 1C). However, in xpo1-1 cells incubated at the restrictive temperature, a drastic accumulation of newly transcribed TLC1 molecules in the nucleus was observed (Figure 3A,B). A slight increase in the cytoplasmic TLC1-MS2 fraction early in the time course (Figure 3B, 1 h) could be explained by incomplete inactivation of Xpo1. The accumulation of new TLC1 molecules in the nucleus observed in xpo1-1 cells at 37°C was not due to the increase in temperature, as new TLC1 molecules in wild type cells grown at 37°C reached a normal steady state distribution, though with a slightly faster dynamics (Figure 3—figure supplement 1D). These data directly demonstrate that the early temporary export of newly synthesized TLC1 molecules to the cytoplasm depends on the Xpo1 exportin. Moreover, Xpo1-mediated transport is the only mechanism responsible for the export of new telomerase RNA, as upon Xpo1 inactivation virtually all TLC1 transcripts are retained in the nucleus for up to 8 hr (Figure 3B). Notably, in xpo1-1 mutants incubated at 37°C but not at 25°C, a higher amount of new TLC1-MS2 RNA was detected as compared to wild type cells (Figure 3D; Figure 3—figure supplement 1F). Although xpo1-1 mutants grown at 37°C initially have a faster recombination kinetics, this cannot explain the increased amount of TLC1 RNA at the end of the experiment (Figure 3—figure supplement 1A,B). Consistent with the northern blot quantification, we also observed a larger number of new TLC1 foci in xpo1-1 mutant cells at the restrictive temperature (Figure 3E). Again, this effect is due to inactivation of Xpo1 rather than the elevated temperature, as wild type cells grown at 30 and 37°C have comparable numbers of new TLC1 foci (Figure 3—figure supplement 1G). These data show that in the absence of functional Xpo1 when the cytoplasmic export of TLC1 is completely blocked, newly made telomerase RNA persists in the nucleus and accumulates to higher levels than in export-competent cells.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig3-v2.jpg)
+
+**Figure 3.:** (A) Two-color smFISH analysis of untagged TLC1 and tagged TLC1-MS2 molecules in xpo1-1 and kap122 mutants after 4 hr of recombination. TLC1-Cy3 and MS2-Cy5 probes were used. Scale bar, 2 μm. (B, C). Relative nuclear and cytoplasmic fractions of new TLC1 foci observed by smFISH following recombination induction in xpo1-1 (B) and kap122 (C) mutants. NA – not applicable. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (D). Northern blot quantification of untagged TLC1 and tagged TLC1-MS2 RNA transcripts following recombination induction in wild type, xpo1-1 and kap122 cells. Fractions relative to the positive recombined control are shown. Error bars indicate SD, n = 3. (E) Average number of new TLC1 foci observed by FISH following recombination induction in wild type, xpo1-1 and kap122 cells. 50–100 cells from three independent experiments were scored. Error bars indicate SD.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Southern blot quantification of unrecombined TLC1 (A) and recombined TLC1-MS2 (B) genomic loci following induction of recombination in wild type, xpo1-1 and kap122 cells. Fractions relative to 0 hr (A, unrecombined TLC1 locus) and to the positive recombined control (+) (B, recombined TLC1-MS2 locus) are shown. Error bars indicate SD, n = 3. (C, D) Relative nuclear and cytoplasmic fractions of new TLC1 foci detected by smFISH after recombination induction in xpo1-1 mutants at the permissive temperature (C) and in wild type cells at the restrictive temperature (D). 50–100 cells from three independent experiments were scored. Error bars indicate SD. (E) Relative nuclear and cytoplasmic fractions of untagged TLC1 foci detected by smFISH before recombination induction (at the steady state) in wild type and kap122Δ cells. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (F) Northern blot quantification of tagged TLC1-MS2 RNA transcripts following recombination induction in xpo1-1 cells grown at the permissive and restrictive temperatures. Fractions relative to the positive recombined control are shown. Error bars indicate SD, n = 3. (G) Average number of new TLC1-MS2 foci detected by smFISH after recombination induction in wild type cells grown at various temperatures. 50–100 cells from three independent experiments were scored. Error bars indicate SD.
+
 To test if Kap122 is involved in the nuclear re-import of new TLC1 molecules, we followed telomerase RNA via inducible tagging in kap122Δ cells (Figure 3A,C). For the first 60 min after recombination induction in kap122Δ mutants, newly synthesized TLC1 RNA behaved similarly to wild type cells, localizing predominantly in the cytoplasm (Figures 2E and 3C). In wild type cells, the nuclear TLC1 fraction started to significantly increase thereafter, being almost equal to the cytoplasmic level after 2 hr and predominant after 3 hr (Figure 2E). However, in kap122Δ cells, the nuclear fraction began to recuperate only 3 hr after recombination induction and never reached the wild type level, always remaining below 50% of total new molecules (Figure 3C). This effect is not due to slower progress of recombination, as the recombination kinetics in kap122Δ cells was comparable to wild type (Figure 3—figure supplement 1A,B). In fact, by the end of the time course, new TLC1 molecules had reached the steady state nucleo-cytoplasmic distribution that was characteristic of kap122Δ mutants before recombination induction (Figures 3C, 16 h; Figure 3—figure supplement 1E). Therefore, these results show that Kap122 supports the rapid re-import of new molecules to the nucleus after the cytoplasmic stage. However, the late re-import of new TLC1 into the nucleus in kap122Δ mutants suggests the existence of a secondary RNA import pathway. Indeed, telomere length in kap122Δ mutants with steady state distribution of TLC1 molecules is only slightly shorter than in wild type cells (Figure 2—figure supplement 1D).
 
 Also, if the cytoplasmic telomerase RNA does not return to the nucleus in a timely fashion in the absence of Kap122, it may become subject to degradation. As a result, even if the nuclear fraction is held low, the nucleo-cytoplasmic TLC1 ratio in kap122Δ cells will increase over time. Consistent with this scenario, the level of new TLC1-MS2 RNA in kap122Δ mutants is about 2-fold lower than in wild type cells, as analyzed by northern blotting (Figure 3D). Consistently, a similar reduction in the number of new TLC1-MS2 foci in the absence of Kap122 was also observed by smFISH (Figure 3E). These data indicate that new cytoplasmic TLC1 molecules, which due to the absence of Kap122 are not rapidly transported back to the nucleus, become prone to degradation. As a result, the total quantity of telomerase RNA decreases. Therefore, while a redundant secondary TLC1 import pathway may exist, it is less efficient than the primary Kap122 pathway as it cannot prevent TLC1 losses in the cytoplasm.
 
-## The nuclear stability of new telomerase RNA transcripts requires Mex67
+### The nuclear stability of new telomerase RNA transcripts requires Mex67
 
 Transport of mRNAs, pre-ribosomal subunits and tRNA to the cytoplasm depends on the Mex67 export receptor (Segref et al., 1997; Santos-Rosa et al., 1998; Yao et al., 2007; Faza et al., 2012; Chatterjee et al., 2017). In addition, Mex67 is required for the nuclear export of snRNAs and may be implicated in TLC1 transport (Wu et al., 2014; Becker et al., 2019). Therefore, we tested whether Mex67 affected the dynamics of newly synthesized TLC1 molecules. For this purpose, we performed inducible TLC1 tagging experiment in a temperature-sensitive mex67-5 mutant. Similar to xpo1-1 cells, mex67-5 mutants were pre-incubated at the restrictive temperature (37°C) for 1 hr, treated with β-estradiol and monitored for 8 hr at 37°C. mex67-5 cells grown at the permissive temperature (25°C) were used as a control. Northern blot quantification showed efficient accumulation of new TLC1-MS2 RNA at 25°C, which after 8 hr of recombination induction reached 80% relative to the recombined reference strain (Figure 4A,B). Steady appearance of new TLC1 foci at the permissive temperature was also detected by smFISH (Figure 4C,D). Surprisingly, at the restrictive temperature, new TLC1 RNA was almost undetectable either by northern blot or smFISH (Figure 4A–D). This absence of new TLC1 molecules was not due to a defect in TLC1-[MS2-IN] recombination, as the kinetics of recombination was the same both at 25 and 37°C (Figure 4—figure supplement 1A). In addition, untagged TLC1 RNA gradually disappeared at 37°C at a rate that was only slightly faster than at 25°C (Figure 4—figure supplement 1B). Therefore, these results suggest that in the absence of Mex67, new TLC1 molecules are either not produced, i.e. the gene is not transcribed, or they are extremely unstable.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig4-v2.jpg)
+
+**Figure 4.:** (A) Northern blot analysis of untagged TLC1 and tagged TLC1-MS2 RNA transcripts following induction of recombination in mex67-5 cells grown at 25 and 37°C. Position of the TLC1 probe used to detect TLC1 species is shown in Figure 1B. U1 – loading control. ‘+’ - positive recombined control. RNA sizes are indicated on the left (kb), 1.8 kb corresponds to 18S rRNA. (B) Quantification of the northern blots shown in A. Fractions relative to the positive recombined control (+) are shown. Error bars indicate SD, n = 3. (C) Two-color smFISH analysis of untagged TLC1 and tagged TLC1-MS2 molecules in mex67-5 cells grown at 25 and 37°C after 4 hr of recombination. Scale bar, 2 μm. (D, E) Average number of new TLC1-MS2 foci detected by smFISH following recombination induction in mex67-5 (D) and mex67-5 rrp6Δ (E) cells grown at 25 and 37°C. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (F). Average number of new TLC1-MS2 foci detected by smFISH in mex67-5 and wild type cells grown in the presence of thiolutin. After addition of β-estradiol, cells were grown for 4 hr at 25°C, followed by addition of thiolutin (TL) and temperature shift to 37°C. 50–100 cells from three (mex67-5) and two (wt) independent experiments were scored. Error bars indicate SD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Southern blot analysis of the TLC1-[MS2-IN] locus following induction of recombination in mex67-5 cells grown at the permissive and restrictive temperatures. The position of the TLC1 probe hybridizing to restriction fragments a and b is depicted in Figure 1A. CEN4 – loading control. DNA marker sizes are indicated on the left (kb). (B) Northern blot quantification of old (untagged) TLC1 RNA following recombination induction in mex67-5 cells grown at the permissive and restrictive temperatures. Fractions relative to 0 hr are shown. Error bars indicate SD, n = 3. (C) Relative nuclear and cytoplasmic fractions of tagged TLC1-MS2 foci detected by smFISH after 4 hr of recombination in mex67-5 cells grown at 25 and 37°C. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (D) Average number of new TLC1-MS2 foci detected by smFISH in wild type and mex67-5 cells. After addition of β-estradiol, cells were grown for 4 hr at 25°C, followed by temperature shift to 37°C. 50–100 cells from three (mex67-5) and two (wt) independent experiments were scored. Error bars indicate SD. (E) RNA Pol II ChIP (% of input) at the TLC1 locus normalized to the U1 locus in mex67-5 cells grown at 25 and 37°C. ‘+/-’ – with/without anti-RNA Pol II antibody. (F) Northern blot analysis of tagged TLC1-MS2 RNA transcripts following induction of recombination in mex67-5 rrp6Δ cells grown at 25 and 37°C. The blot was hybridized with the MS2-specific probe. U1 – loading control. ‘+’ - positive recombined control. RNA sizes are indicated on the left (kb), 1.8 kb corresponds to 18S rRNA. (G) Quantification of the northern blot shown in F. Fractions relative to the positive recombined control (+) are shown. Error bars indicate SD, n = 2. (H) Relative nuclear and cytoplasmic fractions of tagged TLC1-MS2 foci detected by smFISH after 4 hr of recombination in mex67-5 rrp6Δ cells grown at 25 and 37°C. 50–100 cells from three independent experiments were scored. Error bars indicate SD.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Two-color smFISH analysis of untagged TLC1 and tagged TLC1-MS2 molecules in cells with the double mex67-5 xpo1-1 mutations grown at 25 and 37°C after 4 hr of recombination. TLC1-Cy3 and MS2-Cy5 probes were used. Scale bar, 2 μm. (B) Average number of new TLC1-MS2 foci detected by smFISH following recombination induction in mex67-5 xpo1-1 cells grown at 25 and 37°C. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (C) Northern blot analysis of tagged TLC1-MS2 RNA transcripts following induction of recombination in mex67-5 xpo1-1 cells grown at 25 and 37°C. The blot was hybridized with the MS2-specific probe. U1 – loading control. RNA sizes are indicated on the left (kb), 1.8 kb corresponds to 18S rRNA.
 
 To distinguish between these two scenarios, we combined the temperature shift and a transcription block into a single experiment (Figure 4F; Figure 4—figure supplement 1D). First, mex67-5 cells were treated with β-estradiol for 4 hr at the permissive temperature to allow proper formation of new TLC1 molecules (Figure 4F). During this stage, accumulation of new TLC1 molecules in mex67-5 cells was comparable to wild type. After shifting the temperature to 37°C, production of new TLC1 molecules continued in wild type cells, but stopped abruptly in mex67-5 mutants, as expected from the above (Figure 4F; Figure 4—figure supplement 1D). If the dysfunctional Mex67 at the restrictive temperature abrogated TLC1 transcription, then an additional transcription block would not be expected to aggravate the mex67-5 phenotype. However, addition of the RNA polymerase inhibitor thiolutin before shifting the temperature to 37°C resulted in an even further loss of new TLC1 molecules (Figure 4F). These data indicate that in mex67-5 cells incubated at the restrictive temperature, TLC1 transcription is functional. In addition, the level of RNA Pol II detected at the TLC1 locus was comparable in mex67-5 cells grown at 25 and 37°C, further confirming that TLC1 transcription is not affected by inactivation of the Mex67 protein (Figure 4—figure supplement 1E). As a further test for the instability of the newly transcribed TLC1 RNA in mex67-5 cells, we induced TLC1-[MS2-IN] recombination in mex67-5 rrp6Δ cells, in which the nuclear exosome complex, responsible for RNA quality control and decay, is inactive. Strikingly, deletion of RRP6 completely suppressed the mex67-5 phenotype, as in mex67-5 rrp6Δ cells grown at the restrictive temperature, new TLC1 RNA molecules accumulated to the same level as at the permissive conditions (Figure 4C,E; Figure 4—figure supplement 1F,G). These data directly show that in the absence of Mex67, new TLC1 transcripts undergo rapid degradation by the nuclear exosome and indicate that Mex67 is essential for stabilization of TLC1 RNA immediately after transcription and prior to export. At the same time, the stability of pre-existing and matured molecules does not seem to be affected by dysfunctional Mex67 (Figure 4C; Figure 4—figure supplement 1B). To confirm that Mex67 acts upstream of the Xpo1 exportin, we combined mex67-5 and xpo1-1 temperature-sensitive alleles in the same strain. In mex67-5 xpo1-1 cells grown at the permissive temperature, newly synthesized TLC1 molecules accumulated with normal kinetics (Figure 4—figure supplement 2A–C). However, at 37°C, new TLC1 RNA was almost undetectable in a double mutant, thus completely recapitulating the phenotype of mex67-5 cells. These data confirm that Mex67 indeed functions upstream of Xpo1, stabilizing newly transcribed TLC1 RNA prior to their cytoplasmic export.
 
@@ -80,13 +108,21 @@ While the vast majority of newly synthesized TLC1 RNA was unstable in the absenc
 
 Collectively, the data thus demonstrate that Mex67 performs an entirely new and unexpected function in the biogenesis of telomerase RNA. Unlike in cells deficient for the Xpo1 exportin, which accumulate new telomerase RNA transcripts in the nucleus (Figure 3A,B), inactivation of Mex67 leads to an inability to produce stable and export-competent new TLC1 molecules (Figure 4).
 
-## The Sm7 complex is required for TLC1 stability after cytoplasmic export and for its re-import to the nucleus
+### The Sm7 complex is required for TLC1 stability after cytoplasmic export and for its re-import to the nucleus
 
 According to our new data, Mex67 is essential for stability of newly synthesized telomerase RNA before its nuclear export (Figure 4). However, it is dispensable for stability of old molecules that have passed through the cytoplasm and returned to the nucleus. This suggests that after export to the cytoplasm, new TLC1 RNA acquires certain features that render it stable in the absence of a functional Mex67 protein. The Sm7 complex is well known to stabilize telomerase RNA as well as most snRNAs by binding near the RNA 3’-end (Seto et al., 1999). Notably, recent data are consistent with the idea that snRNAs shuttle to the cytoplasm to associate with the Sm7 proteins (Becker et al., 2019). Therefore, we hypothesized that telomerase RNA may also need to shuttle to the cytoplasm for the assembly with the Sm7 complex and Sm7-mediated stabilization.
 
 To verify this idea, we took advantage of a mutated tlc1-Sm2T allele which disrupts Sm7 binding to TLC1 and renders it unstable (Seto et al., 1999). We modified the inducible TLC1-[MS2-IN] locus such that before recombination, wild type TLC1 RNA proficient in Sm7 binding is expressed. However, after the recombination switch, the new RNA molecules will harbor the tlc1-Sm2T mutation at their 3’-end (Figure 5—figure supplement 1A). Since only the tlc1-Sm2T RNAs have the MS2 tag, these molecules can be identified and tracked within the cell.
 
 At the beginning of the time course, tlc1-Sm2T-MS2 molecules shuttle to the cytoplasm (Figures 5A, B, 1 h). However, to our surprise, these molecules never returned to the nucleus and remained in the cytoplasm (Figures 5B, 4 h). This suggests that the Sm7 complex is required for re-import of new TLC1 transcripts to the nucleus. Although the kinetics of TLC1-[Sm2T-MS2-IN] recombination were normal (Figure 5—figure supplement 1B), the level of tagged tlc1-Sm2T-MS2 RNA remained low over the entire time course, as detected by northern blotting using the TLC1 or MS2 probes (Figure 5C,D). Consistently, the number of newly synthesized tlc1-Sm2T-MS2 foci was also lower than in wild type cells (Figure 5—figure supplement 1C). This indicates that new tlc1-Sm2T-MS2 transcripts are unstable, as expected (Seto et al., 1999). As a result of TLC1 loss, cells with the recombined TLC1-[Sm2T-MS2-IN] locus eventually undergo senescence and switch to a recombination-dependent telomere maintenance with the survivor telomere phenotype (Figure 5—figure supplement 1D). Since the remaining tlc1-Sm2T RNA accumulates in the cytoplasm (Figure 5B), we hypothesized that even in the absence of Sm7 binding, newly transcribed TLC1 molecules are processed and exported from the nucleus normally, yet they become unstable and disappear after export to the cytoplasm. This scenario would predict that blocking the export of tlc1-Sm2T molecules to the cytoplasm should render them more stable. Indeed, in tlc1-Sm2T xpo1-1 cells grown at the restrictive temperature, new tlc1-Sm2T RNA molecules accumulated in the nucleus and were more abundant than at the permissive conditions, when tlc1-Sm2T RNA shuttled to the cytoplasm (Figure 5A,E–G; Figure 5—figure supplement 1E). Therefore, our data show that newly synthesized telomerase RNA is stable in the nucleoplasm, even without the Sm7 complex. The Sm7 complex binds new TLC1 RNA only after its export to the cytoplasm, where this association becomes essential for TLC1 stability as well as for re-import of the molecules back into the nucleus.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig5-v2.jpg)
+
+**Figure 5.:** (A) Two-color smFISH analysis of untagged TLC1 and tagged TLC1-MS2 molecules in tlc1-Sm2T and tlc1-Sm2T xpo1-1 mutants after 4 hr of recombination. TLC1-Cy3 and MS2-Cy5 probes were used. Scale bar, 2 μm. (B) Relative nuclear and cytoplasmic fractions of tagged TLC1-MS2 foci detected by smFISH in wild type and tlc1-Sm2T cells after 1 hr and 4 hr of recombination. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (C) Northern blot analysis of untagged TLC1 and tagged TLC1-MS2 RNA transcripts following induction of recombination in tlc1-Sm2T cells. The top blot was hybridized with the TLC1 probe depicted in Figure 1B. The bottom blot was hybridized with the MS2-specific probe. U1 – loading control. ‘+’ - positive recombined controls. RNA sizes are indicated on the left (kb), 1.8 kb corresponds to 18S rRNA. (D) Quantification of the tagged TLC1-MS2 RNA from the MS2-specific northern blot shown in C. Fractions relative to the positive recombined controls (+) are shown. Error bars indicate SD, n = 2. Quantification of the tagged TLC1-MS2 RNA in wild type cells from Figure 1E,F is shown as a reference. (E) Northern blot analysis of tagged TLC1-MS2 RNA transcripts following induction of recombination in tlc1-Sm2T xpo1-1 cells grown at 25 and 37°C. The blot was hybridized with the MS2-specific probe. U1 – loading control. RNA sizes are indicated on the left (kb), 1.8 kb corresponds to 18S rRNA. (F) Quantification of the northern blot shown in (E). Fractions relative to the positive recombined controls are shown. Error bars indicate SD, n = 2. (G) Relative nuclear and cytoplasmic fractions of tagged TLC1-MS2 foci detected by smFISH in tlc1-Sm2T xpo1-1 cells grown at 25 and 37°C after 4 hr of recombination. 50–100 cells from two independent experiments were scored. Error bars indicate SD.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of the modified TLC1-[Sm2T-MS2-IN] DNA locus before and after recombination. Sequences indicate wild type (Sm+) and mutated (Sm2T) Sm7 binding sites in TLC1 RNA. (B) Southern blot analysis of the TLC1-[Sm2T-MS2-IN] locus following induction of recombination in tlc1-Sm2T cells. The position of the TLC1 probe hybridizing to restriction fragments a and b is depicted in Figure 1A. CEN4 – loading control. DNA marker sizes are indicated on the right (kb). (C) Average number of new TLC1-MS2 foci detected by smFISH in wild type and tlc1-Sm2T cells following induction of recombination. 50–100 cells from three independent experiments were scored. Error bars indicate SD. (D) Telomere length analysis in tlc1-Sm2T cells. TRF – terminal restriction fragment, CEN4 – migration control. Telomere length analysis was performed in recombined clones that were passaged for 20 and 120 generations. DNA marker sizes are indicated on the right (kb). (E) Average number of new TLC1-MS2 foci detected by smFISH in tlc1-Sm2T xpo1-1 cells grown at 25 and 37°C following induction of recombination.
 
 ## Discussion
 
@@ -98,7 +134,7 @@ The Xpo1 exportin and Kap122 importin were previously shown to affect the subcel
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/60000/elife-60000-fig6-v2.jpg)
 
-**Figure 6.:** WT: Telomerase RNA is transcribed by RNA polymerase II (red sphere). Mex67 possibly associates co-transcriptionally with telomerase RNA, ensures its stability and protects the RNA 3’-end. Mex67 might also deliver TLC1 to the nuclear pores where it may associate as an adaptor with the Xpo1 exportin. Xpo1 mediates cytoplasmic export of new telomerase RNA transcripts. Mex67 will disembark from TLC1 in the cytoplasm and is recycled back to the nucleus. During the cytoplasmic stage, the heptameric Sm7 complex binds the 3’-end of TLC1 which is required for stabilization of the RNA. Sm7 binding may also promote TLC1 re-import to the nucleus. Nuclear re-import of TLC1 is mediated by Kap122 and other importins. Upon re-entry to the nucleus, TLC1 undergoes Sm7-mediated 5’-TMG capping and 3’-end processing, which terminates the biogenesis cycle of telomerase RNA.  When Mex67 is dysfunctional, TLC1 is transcribed but is extremely unstable, which leads to rapid degradation of newly synthesized telomerase RNA transcripts in the nucleus. mex67-5, 37°C: Mutant TLC1 RNA that cannot associate with the Smtlc1-Sm2T:7 complex is stable in the nucleus. However, after export to the cytoplasm, it becomes unstable and undergoes quick degradation.
+**Figure 6.:** WT: Telomerase RNA is transcribed by RNA polymerase II (red sphere). Mex67 possibly associates co-transcriptionally with telomerase RNA, ensures its stability and protects the RNA 3’-end. Mex67 might also deliver TLC1 to the nuclear pores where it may associate as an adaptor with the Xpo1 exportin. Xpo1 mediates cytoplasmic export of new telomerase RNA transcripts. Mex67 will disembark from TLC1 in the cytoplasm and is recycled back to the nucleus. During the cytoplasmic stage, the heptameric Sm7 complex binds the 3’-end of TLC1 which is required for stabilization of the RNA. Sm7 binding may also promote TLC1 re-import to the nucleus. Nuclear re-import of TLC1 is mediated by Kap122 and other importins. Upon re-entry to the nucleus, TLC1 undergoes Sm7-mediated 5’-TMG capping and 3’-end processing, which terminates the biogenesis cycle of telomerase RNA. mex67-5, 37°C: When Mex67 is dysfunctional, TLC1 is transcribed but is extremely unstable, which leads to rapid degradation of newly synthesized telomerase RNA transcripts in the nucleus. tlc1-Sm2T: Mutant TLC1 RNA that cannot associate with the Sm7 complex is stable in the nucleus. However, after export to the cytoplasm, it becomes unstable and undergoes quick degradation.
 
 There is evidence that the karyopherin-unrelated export receptor Mex67 may cooperate with the Xpo1 exportin in the cytoplasmic export of several RNA species, including snRNAs, rRNAs and tRNAs (Yao et al., 2007; Faza et al., 2012; Chatterjee et al., 2017; Becker et al., 2019). However, the molecular mechanism of this Mex67 function is not well understood. Here, we decided to test whether Mex67 affects the nucleo-cytoplasmic shuttling of new telomerase RNA transcripts. Strikingly, newly synthesized TLC1 molecules almost completely disappear upon inactivation of Mex67 (Figure 4A–D). Using thiolutin-induced transcription block and RNA Pol II ChIP experiments, we ruled out the possibility that dysfunctional Mex67 causes the defect in TLC1 transcription (Figure 4F; Figure 4—figure supplement 1E). Instead, inactivation of Mex67 results in a nearly complete loss of new telomerase RNA after transcription – a phenotype that can be fully suppressed by removal of the Rrp6 exosome component (Figure 4C,E; Figure 4—figure supplement 1F,G). The few TLC1 foci that remained detectable upon inactivation of Mex67 almost exclusively localized at the nuclear border (Figure 4C; Figure 4—figure supplement 1C), suggesting that in the absence of Mex67, new TLC1 transcripts quickly degrade in the nucleus and never make it to the cytoplasm. In addition, new TLC1 RNA was also unstable in a mex67-5 xpo1-1 double mutant grown at the restrictive temperature (Figure 4—figure supplement 2), similar to the phenotype observed in mex67-5 single mutants (Figure 4A–D). Altogether, these data show that Mex67 is essential for the nuclear stability of newly transcribed telomerase RNA prior to its Xpo1-mediated cytoplasmic export. On the other hand, old TLC1 molecules, which remained untagged during the experiment, were not destabilized by inactivation of Mex67 (Figure 4C, Figure 4—figure supplement 1B).
 
@@ -118,42 +154,297 @@ As in yeast, the generation and stabilization of human telomerase RNA relies on 
 
 ## Materials and methods
 
-## Strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>All strains (W303)</td>
+      <td>Supplementary file 1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>TLC1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>TLC1; SGD:S000006657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>tlc1-Sm2T</td>
+      <td>doi:10.1038/43694</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>XPO1, CRM1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>YGR218W; SGD:S000003450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>xpo1-1</td>
+      <td>gift from Pascal Chartrand doi:10.1016/s0092-8674(00)80370–0</td>
+      <td></td>
+      <td>temperature-sensitive allele</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>MEX67</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>YPL169C; SGD:S000006090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>mex67-5</td>
+      <td>gift from Marlene Oeffinger doi:10.1093/emboj/16.11.3256 doi:10.1038/nbt.1832</td>
+      <td></td>
+      <td>temperature-sensitive allele</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>KAP122</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>YGL016W; SGD:S000002984</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>RRP6</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>YOR001W; SGD:S000005527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-estradiol</td>
+      <td>Sigma</td>
+      <td>Cat#: E8875</td>
+      <td>Recombination induction, 12.5 μM final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ClonNAT, nourseothricin sulfate</td>
+      <td>BioShop</td>
+      <td>Cat#: NUR001</td>
+      <td>Selection, 100 μg/ml final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiolutin</td>
+      <td>Abcam</td>
+      <td>Cat#: ab143556</td>
+      <td>Transcription block, 3 μg/ml final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Para-formaldehyde solution, 32%</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#: 15714</td>
+      <td>FISH, 4% final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ribonucleoside vanadyl complex, 200 mM</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: S1402S</td>
+      <td>FISH, 20 mM final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formamide</td>
+      <td>Sigma</td>
+      <td>Cat#: F9037</td>
+      <td>FISH, 40% final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Salmon sperm DNA</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 15632–011</td>
+      <td>FISH, 0.4 mg/ml final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tRNA from E. coli</td>
+      <td>Roche</td>
+      <td>Cat#: 10109541001</td>
+      <td>FISH, 0.4 mg/ml final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-lysine, 0.01%</td>
+      <td>Sigma</td>
+      <td>Cat#: P4707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>Cat#: D9542</td>
+      <td>FISH, 0.5 µg/ml final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>p-phenylenediamine</td>
+      <td>Sigma</td>
+      <td>Cat#: P6001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cy3 Mono-Reactive dye</td>
+      <td>Cytiva</td>
+      <td>Cat#: PA23001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cy5 Mono-Reactive dye</td>
+      <td>Cytiva</td>
+      <td>Cat#: PA25001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ThermoScientific Pierce Protein A/G Magnetic Beads</td>
+      <td>ThermoScientific</td>
+      <td>Cat#: 88802</td>
+      <td>ChIP, 50 µl per sample</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RNA Polymerase II RPBI (mouse monoclonal antibody, clone 8WG16)</td>
+      <td>Cedarlane</td>
+      <td>Cat#: 664906</td>
+      <td>ChIP (5 μl per sample)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>XmnI (restriction enzyme)</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: R0194L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AleI-v2 (restriction enzyme)</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: R0685L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>XhoI (restriction enzyme)</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: R0146L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Lyticase</td>
+      <td>Sigma</td>
+      <td>Cat#: L2524</td>
+      <td>FISH, 5 U/ml final</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>All plasmids</td>
+      <td>Supplementary file 2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>All primers</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene 2.1</td>
+      <td>http://www.snapgene.com/</td>
+      <td>RRID:SCR_015052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant TL 8.2 (Cytiva)</td>
+      <td>https://www.cytivalifesciences.com/en/is/shop/protein-analysis/molecular-imaging-for-proteins/imaging-software/imagequant-tl-8-2-image-analysis-software-p-09518</td>
+      <td>RRID:SCR_018374</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>http://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN 3.1 2019 (Zeiss)</td>
+      <td>https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and plasmids
 
 Strains used in this study are derivatives of W303. All strains are listed in Supplementary file 1. To express the inducible tagging system, the TLC1-[MS2-IN] cassette was integrated in the TLC1 genomic locus. The TLC1-[MS2-IN] cassette containing the mid-TLC1 sequence, loxP site, TLC1 3’-end, natMX4 cassette, ADH1 terminator, loxP site, 10xMS2 repeats followed by a duplicated TLC1-3’ end, was amplified by PCR from pYV132 using qTLC1-F and TLC1 AvaI-R primers (plasmids and primers used in the study are listed in Supplementary file 2 and Supplementary file 3, respectively). In the modified TLC1-[Sm2T-MS2-IN] tagging system, the sequence encoding the Sm7-binding site (ATTTTTGG) in the duplicated TLC1 3’-end downstream of the 10xMS2 array was mutated into ATTGG, resulting in the expression of the tlc1-Sm2T mutant RNA upon recombination. To express such system, the TLC1-[Sm2T-MS2-IN] cassette was amplified from pYV142 using qTLC1-F and TLC1 AvaI-R primers. To express the Cre-EBD recombinase in wild type, kap122 and tlc1-Sm2T backgrounds, pTW40 was linearized with NdeI and integrated at the his3 locus. To express Cre-EBD in xpo1-1, xpo1-1 tlc1-Sm2T, mex67-5, mex67-5 rrp6Δ and mex67-5 xpo1-1 mutants, pYV144 was linearized with NdeI and integrated at the ura3 locus. YV359, YV360 recombined controls are clonNAT-sensitive derivatives of YV349 and YV352. kap122Δ and rrp6Δ mutants were constructed by a one step replacement of the KAP122 and RRP6 genes, respectively, with the kanMX4 cassette, amplified from pRS400 using YV395_KAP122_F1 and YV396_KAP122_R1 primers for the deletion of KAP122, and rrp6Δ_for and rrp6Δ_rev primers for the deletion of RRP6. The mex67-5 xpo1-1 double mutant strain was constructed by a one step replacement of the MEX67 gene in YV365, YV366 with the mex67-5-kanMX6 cassette, amplified from the Y11429 strain (gift from M. Oeffinger lab) using YV518_MEX67-237 and YV519_MEX67+278 primers.
 
 pEB36 was constructed via multiple cloning steps. Sequence containing the fragment of the TLC1 gene (665–1145 bp), the loxP site, the TLC1 3’-end (1146–1301 bp) followed by 148 bp of the downstream sequence, the natMX4 cassette (consisting of the TEF promoter, the NATR gene and TEF terminator), the loxP site, 10xMS2 repeats and the duplicated TLC1 3’-end (1146–1301 bp) followed by 1156 bp of the downstream sequence was cloned in pRS306 between BamHI and EcoRI restriction sites. pYV132 was constructed via multiple cloning steps, resulting in addition of the ADH1 terminator sequence downstream of the TEF terminator in pEB36. pYV142 was constructed via multiple cloning steps, which led to the replacement of the Sm7-binding site (ATTTTTGG) in the duplicated TLC1 3’-end of pYV132 with ATTGG sequence. pYV144 was constructed by replacing AatII - SacII HIS3-containing fragment of pTW40 with AatII - SacII URA3-containing fragment of pRS306. All plasmids constructed in this study were verified by sequencing.
 
-## Yeast culture
+### Yeast culture
 
 For inducible TLC1-[MS2-IN] tagging experiments in wild-type cells (YV349, YV352; Figures 1 and 2), kap122 mutants (YV355, YV356; Figure 3) and tlc1-Sm2T mutants (YV390, YV391; Figure 5), cells were pre-cultured overnight in SC-HIS media supplemented with clonNAT (100 μg/ml) and grown at 30°C in SC complete medium without clonNAT from OD 0.1 to 0.4. Recombination was induced with 12.5 μM β-estradiol (Sigma) and monitored for the duration of the time course. For the experiments at the restrictive temperature (Figure 3—figure supplement 1D,G), wild type cells (YV349, YV352) were shifted to 37°C 1 hr before addition of β-estradiol and grown for 8 hr at 37°C. For the experiments with the temperature-sensitive mutants xpo1-1 (YV365, YV366 [Figure 3]; YV403, YV404 [Figure 5A,E–G]); mex67-5 (YV385, YV386; YV399, YV400 [Figure 4A–E]) and mex67-5 xpo1-1 (YV417, YV418 [Figure 4—figure supplement 2]), cells were pre-cultured overnight at 25°C in SC-HIS-URA (xpo1-1 and mex67-5 xpo1-1) and SC-LEU-URA (mex67-5) supplemented with clonNAT (100 μg/ml) and grown at 25°C in SC-HIS (xpo1-1 and mex67-5 xpo1-1) and SC-LEU (mex67-5) without clonNAT from OD 0.1 to 0.3. Cells were divided in two cultures and grown at 25 or 37°C for 1 hr. Recombination was induced with 12.5 μM β-estradiol and monitored for the indicated period of time at 25 or 37°C. For the experiment described in Figure 4F, wild type (YV349, YV352) and mex67-5 cells (YV385, YV386) were pre-cultured overnight at 25°C in SC-HIS (wild type) and SC-LEU-URA (mex67-5) supplemented with clonNAT (100 μg/ml) and grown at 25°C in SC complete (wild type) and SC-LEU (mex67-5) media without clonNAT from OD 0.1 to 0.4. After addition of β-estradiol (12.5 μM), cells were grown at 25°C for 4 hr. Thiolutin (3 μg/ml, Abcam) was added to half of the cultures for 15 min. Thiolutin-treated and -untreated cultures were split and grown at 25 or 37°C for 3 hr. In all experiments, cell aliquots were collected for DNA, RNA and FISH analysis at regular time points. OD of cell cultures was maintained below 0.8 throughout the length of experiments.
 
 To isolate recombined control strain (YV359, YV360), YV349 or YV352 cells were grown in YEPD media without clonNAT, treated with 12.5 μM β-estradiol overnight, plated on YEPD media for single colonies and replica-plated on YEPD + clonNAT (100 μg/ml) plates. clonNAT-sensitive clones were isolated.
 
-## Southern blotting
+### Southern blotting
 
 Genomic DNA was extracted using phenol-chloroform (Sambrook et al., 1989). To monitor the TLC1-[MS2-IN] recombination, DNA was digested with XmnI and AleI-v2 (NEB), resolved on a 0.8% agarose-1x TBE gel, transferred on a Hybond-XL nylon membrane (Cytiva) and hybridized to 32P-labeled TLC1 and CEN4-1.5 kb probes. Probes were obtained by PCR amplification (see Supplementary file 3 for primer sequences), followed by random priming labeling procedure (Feinberg and Vogelstein, 1983). For telomere length analysis, DNA was digested with XhoI (NEB) and subjected to agarose gel electrophoresis and transfer as described above. Blots were hybridized to a 32P-labeled pCT300 probe (300 bp fragment containing 280 bp of telomeric repeats derived from pYLPV [Wellinger et al., 1993]) and PCR-amplified 32P-labeled CEN4-1.6 kb probe. Blots were visualized using Typhoon FLA9000 (Cytiva) and quantified via Image Quant TL software (Cytiva).
 
 To quantify the fraction of the unrecombined TLC1-[MS2-IN] DNA, the ratio between the fragment ‘a’ intensity (Figure 1A) at the time point x and the time point 0 (100% unrecombined locus) was calculated. To quantify the recombined TLC1-[MS2-IN] DNA fraction, the ratio between the fragment ‘b’ intensity at the time point x and in the recombined control strain (YV359, YV360) (100% recombined locus) was calculated. Intensity of fragments ‘a’ and ‘b’ was normalized to the CEN4 loading control.
 
-## Northern blotting
+### Northern blotting
 
 RNA extraction and northern blotting were performed as described previously (Laterreur et al., 2018). In brief, RNA was extracted 2x with phenol/chloroform/isoamyl alcohol (25:24:1) and 1x with chloroform/isoamyl alcohol (24:1). RNA was mixed with NaOAc (150 mM), glycogen (50 μg) and precipitated in 2x volume of 100% ethanol at −20°C. 10 μg of RNA was mixed with 1x MOPS (pH 7), 3.7% formaldehyde, 45% formamide and 1x RNA dye. Samples were migrated on a 1.1% agarose-1x MOPS (pH 7)–2% formaldehyde gel and transferred on a Hybond N+ membrane (Cytiva). After UV-crosslinking, the membrane was hybridized to 32P-labeled TLC1 or non-aminoallyl MS2 probe. The membrane was simultaneously hybridized to the U1 probe used to detect the U1 RNA as a loading control. The TLC1 probe was obtained by PCR amplification (see Supplementary file 3 for primer sequences), followed by random priming labeling procedure (Feinberg and Vogelstein, 1983). An oligonucleotide non-aminoallyl MS2 and U1 probes were obtained by 5’-end labeling (Sambrook et al., 1989). Blots were visualized using Typhoon FLA9000 (Cytiva) and quantified via Image Quant TL software (Cytiva).
 
 To quantify the fraction of untagged TLC1 RNA, the ratio between the intensities of the TLC1 band at the time point x and the time point 0 (100% untagged TLC1) was calculated. To quantify the fraction of tagged TLC1-MS2 fraction, the ratio between the intensities of the TLC1-MS2 band at the time point x and in the recombined control strain (YV359, YV360) (100% tagged TLC1-MS2) was calculated. Intensity of the TLC1 and TLC1-MS2 bands was normalized to the U1 loading control.
 
-## RT-qPCR and ddPCR
+### RT-qPCR and ddPCR
 
 RNA integrity was assessed with the Agilent 2100 Bioanalyzer (Agilent Technologies). Reverse transcription was performed on 2 µg total RNA using Transcriptor reverse transcriptase, random hexamers, dNTPs (Roche Diagnostics) and 10 units of RNAseOUT (Invitrogen) in a total volume of 10 µl following the manufacturer’s protocol. For ddPCR setup part, qPCR reactions were performed in 10 µl in 384 well plates on a CFX-384 thermocycler (BioRad) with 5 μl of 2X PerfeCTa SYBR Green Supermix (Quantabio), 10 ng of cDNA and 200 nM primer pair solutions. The following cycling conditions were used: 3 min at 95°C; 50 cycles: 15 s at 95°C, 30 s at 60°C, 30 s at 72°C. Primer design and validation were evaluated as described elsewhere (Brosseau et al., 2010).
 
 Droplet Digital PCR (ddPCR) reactions included 10 µl of 2X QX200 ddPCR EvaGreen Supermix (Bio-Rad), 240 ng of cDNA and 200 nM primer pair solutions in a 20 μl total volume. Each reaction mix was converted into droplets with the QX200 droplet generator (Bio-Rad). Droplet-partitioned samples were then transferred to a 96-well plate, sealed and cycled in a C1000 deep well Thermocycler (Bio-Rad) under the following cycling protocol: 95°C for 5 min, 50 cycles: 95°C for 30 s, 60°C for 1 min, 72°C for 30 s; post-cycling steps: 4°C for 5 min and 90°C for 5 min. RNA concentration (copies/ul) was determined using the QX200 reader (Bio-Rad) (Taylor et al., 2015). To quantify the fraction of old untagged TLC1 molecules, the ratio between untagged TLC1 RNA concentration (determined by primers TLC1.AB.qsc.F3 and TLC1.A.lna.qsc.R4; Supplemetary file 3) and total TLC1 concentration (primers TLC1.AB.qsc.F1 and TLC1.AB.qsc.R1) was calculated. To quantify the fraction of new tagged TLC1-MS2 molecules, the ratio between tagged TLC1-MS2 RNA concentration (determined by primers TLC1.AB.qsc.F3 and TLC1.B.qsc.R1) and total TLC1 concentration (primers TLC1.AB.qsc.F1 and TLC1.AB.qsc.R1) was calculated.
 
-## Fluorescence in situ hybridization (FISH)
+### Fluorescence in situ hybridization (FISH)
 
 Cell fixation and preparation of spheroplasts was performed as previously described (Gallardo and Chartrand, 2011). Hybridization with the probes was performed as in Gallardo and Chartrand, 2011 with slight modifications. Spheroplasts were washed with 2x SSC (2 × 5 min) and with 2x SSC containing 40% formamide (1 × 5 min) at room temperature. Centrifugation between washes was done at 1500 g for 3 min. Cells were resuspended in 2x SSC containing 40% formamide and incubated for 1 hr at 37°C. A mix of five TLC1-specific probes (Supplementary file 3) were conjugated with the Cy3 fluorophore (Cytiva), and the MS2 probe was conjugated with the Cy5 fluorophore according to the manufacturer’s instructions. 10 ng of TLC1-Cy3 probe mix and 10 ng of the MS2-Cy5 probe were mixed with 4 μl of competitor DNA (10 mg/ml solution of 1:1 sonicated salmon sperm DNA (Invitrogen) / E. coli tRNA (Roche)), 50 μl of solution F (80% formamide and 10 mM NaHPO4, pH 7.5). The probe solution was heated at 95°C for 5 min and mixed with 50 μl of solution H (4x SSC, 20 mM ribonucleoside vanadyl complex (NEB), BSA 4 μg/ml). Spheroplasts were centrifuged at 1500 g for 3 min and resuspended in the probe mix. Hybridization was performed overnight at 37°C. After hybridization, cells were washed in 2x SSC 40% formamide for 6 min, 2x SSC 0.1% Triton X-100 for 6 min and 1x PBS for 6 min at room temperature. Cells were incubated in DAPI (Sigma) 0.5 µg/ml for 3 min and washed in 1x PBS for 3 min. Cells were resuspended in a small volume of 1x PBS and immobilized on coverslips coated with 0.01% poly-lysine (Sigma) for 30 min. Unattached cells were washed away from the coverslips with 70% ethanol and sequentially incubated in 70% ethanol, 2x SSC, 1x PBS and 100% ethanol for 3 s. After drying, coverslips were mounted on the microscope slides with the mounting medium (86% glycerol, 1 mg/ml p-phenylenediamine (Sigma)−1x PBS).
 
 Image acquisition was performed using Zeiss mRm Axiocam mounted on an Axio Observer Z1 inverse microscope. To illuminate TLC1-Cy3, X-cite Arc lamp and 43HE filter (Zeiss) were used. For MS2-Cy5 channel, Zeiss Colibri LED 625 nm was used in combination with 77HE filter. DAPI was visualized with Zeiss Colibri LED 365 nm 62HE filter. Exposure times were 3 s for Cy3 and Cy5, and 500 ms for DAPI. Single plane images spanning 3 μm with steps of 200 nm were projected in a z-stack to facilitate data analysis. Image analysis and constrained iterative deconvolution was performed using ZEN 3.1 2019 software (Zeiss). Foci counting was performed manually. Foci with the colocalized TLC1- and MS2-specific signal were counted as new TLC1 molecules. Foci with only the TLC1-specific signal were counted as old TLC1 molecules. Relative TLC1 fractions (%) were calculated as a ratio of new or old molecules to the total number of TLC1 RNA. Relative nuclear or cytoplasmic TLC1 fractions (%) were calculated as a ratio of old or new molecules localized inside or outside the nucleus (as determined by DAPI staining) to the total number of old or new molecules detected in a single cell. For each experiment (time point), 50–100 single cells from two or three independent experiments were scored.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 200 ml of culture was pre-grown overnight at 25°C in SC-LEU-URA supplemented with clonNAT (100 μg/ml), followed by incubation at 25°C SC-LEU without clonNAT from OD 0.1 to 0.3. Cells were divided in two cultures (100 ml each) and grown at 25 or 37°C for 1 hr. Recombination was induced by addition of 12.5 μM β-estradiol (Sigma) for 2 hr at 25 or 37°C. ChIP was performed as described in Pasquier and Wellinger, 2020 using 3 µl of RNA Polymerase II mouse monoclonal antibody (8WG16, Cedarlane) and 50 µl equilibrated ThermoScientific Pierce Protein A/G Magnetic Beads (ThermoScientific). Immunoprecipitated and input DNAs were subjected to qPCR at the TLC1 locus using TLC1_G_for1 and TLC1_G_rev1 primers (Supplementary file 3). U1 RT F2 and U1 RT R2 primers were used for the qPCR at the control U1 locus. qPCR reactions were performed in 10 µl in 384 well plates on a CFX-384 thermocycler (BioRad) with 5 μl of 2X PerfeCTa SYBR Green Supermix (Quantabio), 3 µl of DNA, and 200 nM final (2 µl) primer pair solutions. Each sample was done in technical triplicates. The following cycling conditions were used: 3 min at 95°C; 50 cycles: 15 s at 95°C, 30 s at 60°C, 30 s at 72°C. The amount of immunoprecipitated DNA at the TLC1 locus was normalized to the U1 locus and presented as the % of input.

@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00g30e956 Biological Psychology and Neuropsychology, University of Hamburg Hamburg Germany
-2. https://ror.org/00j9qag85 Department of Medicine and Optometry, Linnaeus University Kalmar Sweden
-3. https://ror.org/01w8z9742 Child Sight Institute, Jasti V Ramanamma Children’s Eye Care Centre, LV Prasad Eye Institute Hyderabad India
-4. https://ror.org/01keh0577 Department of Psychology, University of Nevada Reno United States
+1. Biological Psychology and Neuropsychology, University of Hamburg Hamburg Germany ([ROR:00g30e956](https://ror.org/00g30e956))
+2. Department of Medicine and Optometry, Linnaeus University Kalmar Sweden ([ROR:00j9qag85](https://ror.org/00j9qag85))
+3. Child Sight Institute, Jasti V Ramanamma Children’s Eye Care Centre, LV Prasad Eye Institute Hyderabad India ([ROR:01w8z9742](https://ror.org/01w8z9742))
+4. Department of Psychology, University of Nevada Reno United States ([ROR:01keh0577](https://ror.org/01keh0577))
 5. LUCID Medical Diagnostics Hyderabad India
-6. https://ror.org/01zgy1s35 Institute of Systems Neuroscience, University Medical Center Hamburg-Eppendorf Hamburg Germany
+6. Institute of Systems Neuroscience, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
 
 † Corresponding author
 
@@ -42,19 +42,328 @@ Here, we filled this gap: we assessed Glutamate/Glutamine (Glx) and GABA+ concen
 
 ## Methods
 
-## Participants
+### Participants
 
 We tested two groups of participants. The first group consisted of 10 individuals with a history of dense bilateral congenital cataracts (CC group, 1 female, Mean Age = 25.8 years, Range = 11–43.5). Participants in this group were all recruited at the LV Prasad Eye Institute (Hyderabad, India) and the presence of dense bilateral cataracts at birth was confirmed by ophthalmologists and optometrists based on a combination of the following criteria: clinical diagnosis of bilateral congenital cataract, drawing of the pre-surgery cataract, occlusion of the fundus, nystagmus (a typical consequence of congenital visual deprivation), a family history of bilateral congenital cataracts and a visual acuity of fixating and following light (FFL+) or less prior to surgery, barring cases of absorbed lenses. Absorbed lenses occur specifically in individuals with dense congenital cataracts (Ehrlich, 1948) and were diagnosed based on the morphology of the lens, anterior capsule wrinkling, and plaque or thickness of stroma. Prior to cataract surgery, the intactness of the retina is typically checked. Thus, we can exclude major retinal damage as source of group differences.
 
 Duration of deprivation was calculated as the age of the participant when cataract removal surgery was performed on the first eye. Two participants were operated within the first year of life (at 3 months and 9 months of age), all other participants underwent cataract removal surgery after the age of 6 years (Mean Age at Surgery = 11.8 years, SD = 9.7, Range = 0.2–31.4). All participants were tested at least 1 year after surgery (Mean Time since Surgery = 14 years, SD = 9.1, Range = 1.8–30.9; Table 1). Visual acuity was significantly below typical vision in this group (Table 1, Appendix 1.1).
 
+**Table 1.**
+ Clinical and demographic information of the participants with a history of dense bilateral congenital cataracts (CC) as well as demographic information and visual acuity of age-matched normally sighted control participants (SC).NA indicates that patient’s data for the field were not available. FFL: Fixating and Following Light; CF: Counting Fingers; PL: Perceiving Light. Duration of visual deprivation was calculated by subtracting the date of birth from the date of surgery on the first eye (and thus corresponds to the age at surgery). Time since surgery was calculated by subtracting the date of surgery on the first eye from the date of testing. Visual acuity on the date of testing was measured binocularly with the Freiburg Vision Test (FrACT).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Gender</th>
+      <th rowspan="2">Age</th>
+      <th rowspan="2">Visual acuity on date tested (logMAR)</th>
+      <th colspan="3">Comorbidities</th>
+      <th colspan="2">Visual acuity pre surgery</th>
+      <th rowspan="2">Duration of visual deprivation (Years)</th>
+      <th rowspan="2">Time since surgery (Years)</th>
+      <th rowspan="2">Family history</th>
+    </tr>
+    <tr>
+      <th>Absorbed lenses</th>
+      <th>Strabismus</th>
+      <th>Nystagmus</th>
+      <th>OD</th>
+      <th>OS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CC1</td>
+      <td>Male</td>
+      <td>17.0</td>
+      <td>0.17</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>FFL -</td>
+      <td>FFL +</td>
+      <td>0.2</td>
+      <td>16.8</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CC2</td>
+      <td>Male</td>
+      <td>43.5</td>
+      <td>0.9</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>1.18</td>
+      <td>1</td>
+      <td>20.8</td>
+      <td>22.7</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CC3</td>
+      <td>Male</td>
+      <td>18.7</td>
+      <td>0.9</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>1.48</td>
+      <td>1.77</td>
+      <td>15.6</td>
+      <td>3.1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CC4</td>
+      <td>Male</td>
+      <td>15.2</td>
+      <td>0.62</td>
+      <td>Yes</td>
+      <td>NA</td>
+      <td>Yes</td>
+      <td>CF at 1.5 m</td>
+      <td>CF at 3 m</td>
+      <td>7.0</td>
+      <td>8.2</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CC5</td>
+      <td>Male</td>
+      <td>32.4</td>
+      <td>0.88</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>14.0</td>
+      <td>18.4</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CC6</td>
+      <td>Male</td>
+      <td>23.9</td>
+      <td>0.78</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>6.0</td>
+      <td>17.9</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CC7</td>
+      <td>Male</td>
+      <td>13.1</td>
+      <td>0.54</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>PL+</td>
+      <td>PL+</td>
+      <td>0.8</td>
+      <td>12.4</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CC8</td>
+      <td>Male</td>
+      <td>18.3</td>
+      <td>0.66</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>1.2</td>
+      <td>1.3</td>
+      <td>16.4</td>
+      <td>1.9</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CC9</td>
+      <td>Male</td>
+      <td>36.9</td>
+      <td>1.34</td>
+      <td>No</td>
+      <td>NA</td>
+      <td>Yes</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>6.0</td>
+      <td>30.9</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CC10</td>
+      <td>Female</td>
+      <td>38.8</td>
+      <td>1.04</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>1.48</td>
+      <td>1.48</td>
+      <td>31.4</td>
+      <td>7.4</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>SC1</td>
+      <td>Male</td>
+      <td>17.7</td>
+      <td>0.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC2</td>
+      <td>Male</td>
+      <td>41.9</td>
+      <td>–0.27</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC3</td>
+      <td>Male</td>
+      <td>19.5</td>
+      <td>–0.25</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC4</td>
+      <td>Male</td>
+      <td>16.0</td>
+      <td>–0.11</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC5</td>
+      <td>Male</td>
+      <td>33.3</td>
+      <td>–0.12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC6</td>
+      <td>Male</td>
+      <td>24.0</td>
+      <td>–0.16</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC7</td>
+      <td>Male</td>
+      <td>12.2</td>
+      <td>–0.25</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC8</td>
+      <td>Female</td>
+      <td>25.1</td>
+      <td>–0.28</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC9</td>
+      <td>Female</td>
+      <td>36.0</td>
+      <td>–0.21</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SC10</td>
+      <td>Male</td>
+      <td>37.3</td>
+      <td>–0.22</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The second group comprised of 10 normally sighted individuals (SC group, 8 males, Mean Age = 26.3 years, Range = 12–41.8). Participants across the two groups were age matched (t(9) = –0.12, p=0.91). Congenital cataract-reversal individuals were clinically screened at the LV Prasad Eye Institute. Both groups did not self-report any neurological or psychiatric conditions, nor any medications. Additionally, all participants were screened for MRI exclusion criteria using a standard questionnaire from the radiology department. One additional individual was tested in each group; they were excluded from data analysis as their data files were corrupted due to inappropriate file transfer from the scanner. All participants (as well as legal guardians for minors) gave written and informed consent. This study was conducted after approval from the Local Ethical Commission of the LV Prasad Eye Institute (Hyderabad Eye Research Foundation LEC-11–086 and LEC-12-15-124, India) as well as of the Faculty of Psychology and Human Movement, University of Hamburg (EK-Röder-102015, Germany).
 
-## Data collection and analysis
+### Data collection and analysis
 
 The present study consisted of three data acquisition parts on the same day: (1) MRS (45–60 min); (2) EEG (20 min plus time for capping); (3) visual acuity assessment (3–5 min.).
 
-## Magnetic resonance spectroscopy
+### Magnetic resonance spectroscopy
 
 Participants underwent MRI and MRS scanning at LUCID Diagnostics in Hyderabad (India) with a 3T GE SIGNA Pioneer MRI machine employing a 24-channel head coil. An attendant was present in the scanning room for the duration of the scan to ensure that participants were comfortable and followed the instructions.
 
@@ -70,7 +379,7 @@ Two MRS scans were collected from the visual cortex, centered on the calcarine s
 
 To ensure that we were identifying neurochemical changes specific to visual regions, we selected the frontal cortex as a control region (Figure 1) and collected two scans (EO and EC) from the frontal cortex. The order of the MRS scans was counterbalanced across individuals for both locations and conditions. Two SC subjects did not complete the frontal cortex scan for the EO condition and were excluded from the statistical comparisons of frontal cortex neurotransmitter concentrations. Voxel placement was optimized to avoid the inclusion of the meninges, ventricles, skull and subcortical structures. For each participant, a proper placement was ensured by examining the voxel region across the slices in the acquired T1 volume. Saturation bands to nullify the skull signal were placed at the posterior and anterior edge of the visual cortex and frontal cortex voxel, respectively. Due to limitations of the clinical scanner settings, rotated and skewed voxels were not possible, and therefore voxels were not always located precisely parallel to the calcarine. As documented in Appendix 1.2, the visual cortex voxel showed significant (>60%) overlap with the V1-V6 region in every individual participant.
 
-## MRS data analysis
+### MRS data analysis
 
 All data analyses were performed in MATLAB (R2018b, The MathWorks Inc). For MRS data analyses, we used Gannet 3.0, a MATLAB based toolbox specialized for the quantification of GABA+ and Glx from edited spectrum data (Edden et al., 2014). Following initial data analysis, all datasets were reanalyzed for quantification of NAA, GABA+ and Glx using linear combination modelling with the Osprey toolbox (v. 2.5.0) (Oeltzschner et al., 2020) in MATLAB 2024a (Appendix 1.3). Osprey had not been released when the study was originally conceptualized. The results did not differ between analysis toolboxes. Here, we present the originally planned analyses with Gannet 3.0.
 
@@ -80,19 +389,162 @@ To control for potential unspecified visual cortex changes due to eye pathology,
 
 The reported values in the results are water-normalized. All data analyses were repeated with Cr-normalized values from Gannet 3.0, and significant results were replicated (Appendix 1.5).
 
-## MRS data quality
+### MRS data quality
 
 The MRS minimum reporting standards form is found in Supplementary file 1. Mean signal-to-noise ratio values for GABA+ and Glx in all groups and conditions were above 19 in the visual cortex and above 8 in the frontal cortex (Table 2). A recent study has suggested that an SNR value above 3.8 allows for reliable quantification of GABA+ (Zöllner et al., 2021), in conjunction with considering a given study’s sample size (Mikkelsen et al., 2018). Cramer-Rao lower bound (CRLB) values, that is, the theoretical lower limit of estimated error, were 30% or lower for NAA quantification in both groups and conditions (Cavassila et al., 2001). Note that CRLB values above 50% are considered unreliable (Wilson et al., 2019). In all quality metrics for Glx, GABA+ and NAA our dataset showed higher quality for the visual cortex voxel than for the frontal cortex voxel, irrespective of group (Main effect of region: all p’s<0.004, Appendix 1.6). Such region effects have repeatedly been reported in the MRS literature. They were attributed to magnetic field distortions (Juchem and de Graaf, 2017) resulting from the proximity of the frontal cortex voxel to the sinuses. We chose a frontal control voxel rather than a parietal/sensorimotor control voxel (Coullon et al., 2015; Weaver et al., 2013) due to well-documented changes in multisensory cortical regions as a consequence of congenital blindness (Harrar et al., 2018; Henschke et al., 2018; Jiang et al., 2016; Röder et al., 1999; Sabourin et al., 2022; Zatorre et al., 2012). The fit error for the frontal cortex voxel was below 8.31% for GABA+ and Glx in both groups (Table 2). No absolute cutoffs exist for fit errors. However, Mikkelsen et al. reported a mean GABA+ fit error of 6.24+/-1.95% from a posterior cingulate cortex voxel across 8 GE scanners using the Gannet pipeline (Mikkelsen et al., 2017). Previous studies in special populations have used frontal cortex data with a fit error of <10% to identify differences between cohorts (Gao et al., 2024; Maier et al., 2022; Pitchaimuthu et al., 2017). Importantly, in the present study, data quality did not significantly differ between groups for GABA+, Glx, or NAA (Appendix 1.6, Appendix 1—table 1), making it highly unlikely that data quality differences contributed to group differences.
 
+**Table 2.**
+ Quality metrics for Magnetic Resonance Spectroscopy data.Mean quality metrics in each group are reported with the standard deviation in parentheses. The displayed quality metrics for signal-to-noise ratio, full-width half maxima and fit error are those output by Gannet 3.0: signal-to-noise-ratio (SNR), was calculated in GannetFit.m by estimating the noise in the GABA+/Glx/NAA signal across acquisitions and by dividing the absolute peak height of the GABA+/Glx/NAA signal by the estimated noise; full-width-half-maxima (FWHM), is defined as the width of the peak in Hertz (Hz); and fit error, is defined as the standard deviation of the residual of the GABA+/Glx/NAA peak fit. The fit error is expressed as a percentage of the GABA+/Glx peak height. The Cramer-Rao lower bound is reported as output by TARQUIN 4.3.11 for the NAA signal (not calculated for GABA+ or Glx as these metabolites were quantified using Gannet 3.0).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Signal-to-noise ratio</th>
+      <th></th>
+      <th>CC</th>
+      <th>SC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Visual cortex</td>
+      <td>NAA</td>
+      <td>293.16 (47.50)</td>
+      <td>289.01 (50.91)</td>
+    </tr>
+    <tr>
+      <td>GABA+</td>
+      <td>21.53 (3.66)</td>
+      <td>19.08 (3.99)</td>
+    </tr>
+    <tr>
+      <td>Glx</td>
+      <td>23.75 (3.75)</td>
+      <td>22.18 (5.26)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Frontal cortex</td>
+      <td>NAA</td>
+      <td>108.37 (21.84)</td>
+      <td>97.20 (28.08)</td>
+    </tr>
+    <tr>
+      <td>GABA+</td>
+      <td>10.311 (2.20)</td>
+      <td>8.30 (1.93)</td>
+    </tr>
+    <tr>
+      <td>Glx</td>
+      <td>15.82 (4.85)</td>
+      <td>13.58 (3.86)</td>
+    </tr>
+    <tr>
+      <td>Full-width-half maxima</td>
+      <td></td>
+      <td>CC</td>
+      <td>SC</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Visual cortex</td>
+      <td>NAA</td>
+      <td>9.04 (0.94)</td>
+      <td>8.69 (0.75)</td>
+    </tr>
+    <tr>
+      <td>GABA+</td>
+      <td>19.84 (1.13)</td>
+      <td>19.10 (0.71)</td>
+    </tr>
+    <tr>
+      <td>Glx</td>
+      <td>16.62 (1.63)</td>
+      <td>16.46 (1.63)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Frontal cortex</td>
+      <td>NAA</td>
+      <td>19.26 (2.33)</td>
+      <td>21.42 (3.79)</td>
+    </tr>
+    <tr>
+      <td>GABA+</td>
+      <td>21.69 (3.15)</td>
+      <td>23.23 (3.41)</td>
+    </tr>
+    <tr>
+      <td>Glx</td>
+      <td>27.54 (8.70)</td>
+      <td>30.63 (12.64)</td>
+    </tr>
+    <tr>
+      <td>Fit error</td>
+      <td></td>
+      <td>CC</td>
+      <td>SC</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Visual cortex</td>
+      <td>NAA</td>
+      <td>0.81 (0.20)</td>
+      <td>0.77 (0.15)</td>
+    </tr>
+    <tr>
+      <td>GABA+</td>
+      <td>3.42 (0.63)</td>
+      <td>3.68 (0.63)</td>
+    </tr>
+    <tr>
+      <td>Glx</td>
+      <td>3.10 (0.58)</td>
+      <td>3.18 (0.47)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Frontal cortex</td>
+      <td>NAA</td>
+      <td>1.33 (0.41)</td>
+      <td>1.70 (0.57)</td>
+    </tr>
+    <tr>
+      <td>GABA+</td>
+      <td>6.57 (2.20)</td>
+      <td>8.31 (3.65)</td>
+    </tr>
+    <tr>
+      <td>Glx</td>
+      <td>4.44 (1.54)</td>
+      <td>5.15 (1.90)</td>
+    </tr>
+    <tr>
+      <td>Cramer-Rao lower bound</td>
+      <td></td>
+      <td>CC</td>
+      <td>SC</td>
+    </tr>
+    <tr>
+      <td>Visual cortex</td>
+      <td>NAA</td>
+      <td>0.13 (0.02)</td>
+      <td>0.14 (0.03)</td>
+    </tr>
+    <tr>
+      <td>Frontal cortex</td>
+      <td>NAA</td>
+      <td>0.33 (0.22)</td>
+      <td>0.26 (0.24)</td>
+    </tr>
+  </tbody>
+</table>
+
 Prior to in vivo scanning, we confirmed the GABA+ and GABA+/Glx quantification quality with phantom testing (Henry et al., 2011; Jenkins et al., 2019). Imaging sequences were robust in identifying differences of 0.02 mM in GABA concentration; the known vs. measured concentrations of both GABA (r=0.81, p=0.004) and GABA/Glx (r=0.71, p=0.019) showed significant agreement. This 0.02 mM difference was documented by Weaver et al., 2013 between the occipital cortices of early blind and sighted individuals. The detailed procedure and results are described in Appendix 1.7. The spectra from all individual subjects are shown in Appendix 1.8.
 
-## MRS statistical analysis
+### MRS statistical analysis
 
 All statistical analyses were performed using MATLAB R2018b and R v3.6.3.
 
 We compared the visual cortex concentrations of three neurochemicals (GABA+ and Glx from the DIFF spectrum, NAA from the edit-OFF spectrum) between the two groups. For each metabolite, we submitted the concentration values from the visual cortices of CC and SC individuals to a group (2 Levels: CC, SC)-by-condition (2 Levels: EO, EC) ANOVA model. To compare the Glx/GABA+ ratio between groups, we additionally submitted this ratio value to a group-by-condition ANOVA. Identical analyses were performed for the corresponding frontal cortex neurotransmitter values. Wherever necessary, post-hoc comparisons were performed using t-tests. The data were tested for normality (Shapiro-Wilk) and homogeneity of variance (Levene’s Test) in R v3.6.3 (Appendix 1.9, Appendix 1—table 2). In all ANOVA models, the residuals did not significantly differ from normality.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 EEG data analyzed in the present study are a subset of datasets that were included in previous reports (Ossandón et al., 2023; Pant et al., 2023). The EEG datasets were re-analyzed to investigate aperiodic activity in the same participants who took part in the MRS study. MRS and EEG data were acquired on the same day. The EEG was recorded in three conditions: (1) at rest with eyes open (EO) (3 min), (2) at rest with eyes closed (EC) (3 min), and (3) during visual stimulation with stimuli that changed in luminance (LU) with equal power at all frequencies (0–30 Hz; Pant et al., 2023). We used the slope of the aperiodic (1 /f) component of the EEG spectrum as an estimate of E/I ratio (Gao et al., 2017; Medel et al., 2020; Muthukumaraswamy and Liley, 2018) and the intercept as an estimate of broadband neuronal firing activity (Haller et al., 2018; Manning et al., 2009; Miller, 2010).
 
@@ -102,7 +554,7 @@ Participants were asked to sit as still as possible while the EEG was recorded. 
 
 Subsequently, EEG data were recorded during 100 trials of a target detection task with stimuli that changed in luminance (LU). Stimuli were presented with a Dell laptop, on a Dell 22-inch LCD monitor with a refresh rate of 60  Hz. They were created with MATLAB r2018b (The MathWorks, Inc, Natick, MA) and the Psychtoolbox 3 (Brainard, 1997; Kleiner et al., 2007). On each trial, participants observed a circle at the center of a black screen, subtending a visual angle of 17 degrees. The circle appeared for 6.25 s and changed in luminance with equal power at all frequencies (0–30 Hz). At the end of every trial, participants had to indicate whether a target square, subtending a visual angle of 6 degrees, appeared on that trial. The experiment was performed in a darkened room (for further details, see Pant et al., 2023).
 
-## EEG data analysis
+### EEG data analysis
 
 Data analysis was performed using the EEGLab toolbox on MATLAB 2018b (Delorme and Makeig, 2004). All EEG datasets were filtered using a Hamming windowed sinc FIR filter, with a high-pass cutoff at 1 Hz and a low-pass cutoff at 45 Hz. A prior version of the analysis was conducted with line noise removal via spectrum interpolation (Ossandón et al., 2023). However, the analyses reported here did not include this step, since we implemented a low-pass cutoff (20 Hz) which falls far below the typical line noise frequency (50 Hz). Eye movement artifacts were detected in the EEG datasets via independent component analysis using the runica.m function’s Infomax algorithm in EEGLab. Components corresponding to horizontal or vertical eye movements were identified via visual inspection based on criteria discussed in Plöchl et al., 2012 and removed.
 
@@ -112,21 +564,21 @@ Datasets collected while participants viewed visual stimuli that changed in lumi
 
 We derived the aperiodic (1 /f) component of the power spectrum for the EO, EC, and LU conditions (Donoghue et al., 2020b; Schaworonkow and Voytek, 2021). First, we fit the 1 /f distribution function to the frequency spectrum of each participant, separately for each electrode. The 1 /f distribution was fit to the normalized spectrum converted to log-log scale (range = 1–20 Hz; Donoghue et al., 2020a; Gyurkovics et al., 2021; Schaworonkow and Voytek, 2021). We excluded the alpha range (8–14 Hz) for this fit to avoid biasing the results due to documented differences in alpha activity between CC and SC individuals (Bottari et al., 2016; Ossandón et al., 2023; Pant et al., 2023). This 1 /f fit resulted in a value of the aperiodic slope, an aperiodic intercept value corresponding to the broadband power of 1–20 Hz, and a fit error value for the spectrum of every participant, individually for each electrode. Spectra from individual subjects are displayed in Appendix 1.11. The visual cortex aperiodic slope and intercept values were obtained by averaging across the pre-selected occipital electrodes O1 and O2, resulting in one value of broadband slope and one value of intercept per participant and condition (Figure 1). This procedure yielded average R2 values >0.91 for the aperiodic fit in each group and condition (Appendix 1.11, Appendix 1—table 4).
 
-## EEG statistical analysis
+### EEG statistical analysis
 
 We compared the average visual cortex aperiodic slope and intercept in separate group (two Levels: CC, SC) by condition (three levels: EC, EO, LU) ANOVA models. The data were tested for normality (Shapiro-Wilk) and homogeneity of variance (Levene’s Test) in R v3.6.3 (see Appendix 1.9, Appendix 1—table 2); in all ANOVA models, the residuals did not significantly differ from normality.
 
-## Visual acuity
+### Visual acuity
 
 Visual acuity was measured binocularly for every participant on the date of testing, using the Freiburg Visual Acuity Test (FrACT; Bach, 1996, Bach, 2007, https://michaelbach.de/fract/). Visual acuity is reported as the logarithm of the minimum angle of resolution (logMAR, Table 1), wherein higher values indicate worse vision (Elliott, 2016). Analogous to previous studies, we ran a number of exploratory correlation analyses between GABA+, Glx and Glx/GABA+ concentrations and visual acuity at the date of testing, duration of visual deprivation, and time since surgery, respectively, in the CC group (Birch et al., 2009; Guerreiro et al., 2015; Kalia et al., 2014; Rajendran et al., 2020). As expected from normal vision in the SC group, they did not show considerable variance in visual acuity (Table 1); thus, we refrained from calculation correlations between visual acuity and MRS/EEG parameters in the SC group. Based on the literature, we additionally tested the correlation between the neurotransmitter levels and chronological age across the CC and SC groups. All reported correlation coefficients are Pearson correlations, and 95% confidence intervals were calculated for all correlation coefficients.
 
-## Exploratory correlation analyses between MRS and EEG measures
+### Exploratory correlation analyses between MRS and EEG measures
 
 Exploratory correlation analyses between EEG and MRS measures were run separately for CC and SC individuals. We calculated Pearson correlations between the aperiodic intercept and GABA+, Glx, and Glx/GABA+ concentrations. Further, Pearson correlations between the aperiodic slope, and the concentrations of GABA+, Glx, and Glx/GABA+ were assessed. MRS measures collected at rest with EO and EC were correlated with the corresponding resting-state EEG conditions (EO, EC). EEG metrics for the visual stimulation (LU) condition with flickering stimuli were tested for correlation with GABA+, Glx, and Glx/GABA+ concentration measured while participants’ eyes were open at rest. We did not have prior hypotheses as to the best of our knowledge no extant literature has tested the correlation between aperiodic EEG activity and MRS measures of GABA+, Glx, and Glx/GABA+. Therefore, we corrected for multiple comparisons using the Bonferroni correction (six comparisons).
 
 ## Results
 
-## Transient congenital visual deprivation lowered the Glx/GABA+ concentration in the visual cortex
+### Transient congenital visual deprivation lowered the Glx/GABA+ concentration in the visual cortex
 
 The Glx/GABA+ concentration ratio was significantly lower in the visual cortex of congenital cataract-reversal (CC) than age-matched, normally sighted control (SC) individuals (main effect of group: F(1,39) = 5.80, p0.021, ηp²=0.14) (Figure 2). This effect did not vary with eye closure (main effect of condition: F(1,39) = 2.29, p=0.139, ηp²=0.06, group-by-condition interaction: F(1,39) = 1.15, p=0.290, ηp²=0.03). As a control for unspecific effects of surgery unrelated to visual deprivation on neurochemistry, the frontal cortex Glx/GABA+ concentration was compared between groups. There was no difference between CC and SC individuals in their frontal cortex Glx/GABA+ concentration (main effect of group: F(1,37) = 0.05, p=0.82, ηp²<0.01, main effect of condition: F(1,37) = 2.98, p=0.093, ηp²=0.07, group-by-condition interaction: F(1,37) = 0.09, p=0.76, ηp²<0.01; Figure 2).
 
@@ -138,11 +590,11 @@ When separately comparing CC and SC individuals’ GABA+ and Glx concentrations 
 
 The Glx/GABA+ concentration measured when CC individuals’ eyes were closed correlated positively with visual acuity on the logMAR scale (r=0.65, p=0.044), indicating that CC individuals with higher Glx/GABA+ values had worse visual acuity (Figure 2C, Appendix 1.12). The same correlation was not significant for the eyes opened condition (r=–0.042, p=0.908; Figure 2C). Duration of deprivation and time since surgery did not significantly predict Glx/GABA+, GABA+ or Glx concentrations in the CC group (all p-values >0.088, Appendix 1.12).
 
-## No difference in NAA concentration between CC and SC individuals’ visual cortices
+### No difference in NAA concentration between CC and SC individuals’ visual cortices
 
 As a control measure to ensure that between-group differences were specific to hypothesized changes in Glx and GABA+ concentrations, we compared the NAA concentration between CC and SC individuals. The NAA concentration did not significantly differ between groups, neither in visual (main effect of group: F(1,39) = 0.03, p=0.87, ηp²<0.001, main effect of condition: F(1,39) = 0.31, p=0.58, ηp²<0.01, group-by-condition interaction: F(1,39) = 0.09, p=0.76, ηp²<0.01) nor frontal cortex (main effect of group: F(1,37) = 1.1, p=0.297, ηp²=0.02, main effect of condition: F(1,37) = 0.14, p=0.71, ηp²=0.01, group-by-condition interaction: F(1,37) = 0.03, p=0.86, ηp²<0.001) (Appendix 1.13, Appendix 1—figure 14).
 
-## Transient congenital visual deprivation resulted in a steeper aperiodic slope and higher aperiodic intercept at occipital sites
+### Transient congenital visual deprivation resulted in a steeper aperiodic slope and higher aperiodic intercept at occipital sites
 
 The aperiodic slope (1–20 Hz), measured via EEG as an electrophysiological estimate of the E/I ratio (Gao et al., 2017; Muthukumaraswamy and Liley, 2018), was compared between CC and SC individuals. The aperiodic slope was significantly steeper, that is, more negative, at occipital electrodes in CC than in SC individuals (F(1,59) = 13.1, p<0.001, ηp²=0.19; Figure 3). Eye closure and visual stimulation did not affect the steepness of the aperiodic slope (F(2,59) = 0.78, p=0.465, ηp²=0.03, group-by-condition interaction: F(2,59) = 0.12, p=0.885, ηp²<0.01).
 
@@ -154,7 +606,7 @@ The aperiodic intercept (1–20 Hz) was compared between CC and SC individual to
 
 Within the CC group, visual acuity, time since surgery and duration of blindness did not significantly correlate with the aperiodic slope or the intercept (all p’s>0.083, Appendix 1.15). Age negatively correlated with the aperiodic intercept across CC and SC individuals, that is, a reduction of the intercept was observed with age. Similar effects of chronological age have been previously observed (Hill et al., 2022; Voytek et al., 2015) (Appendix 1.15).
 
-## Glx concentration predicted the aperiodic intercept in CC individuals’ visual cortices during ambient and flickering visual stimulation
+### Glx concentration predicted the aperiodic intercept in CC individuals’ visual cortices during ambient and flickering visual stimulation
 
 We exploratorily tested the relationship between Glx, GABA+ and Glx/GABA+ measured at rest and the EEG aperiodic intercept measured at rest and during flickering visual stimulation, separately for the CC and the SC group. Visual cortex Glx concentration in CC individuals was positively correlated with the aperiodic intercept either when participants had their eyes open during rest (r=0.91, p=0.001, Bonferroni corrected) or when they viewed flickering stimuli (r=0.90, p<0.001, Bonferroni corrected). Corresponding correlations were not significant for Glx concentrations in the eyes closed condition (r=0.341, p>0.99, Bonferroni corrected). Moreover, in SC individuals, no significant correlation was observed between visual cortex Glx concentration and aperiodic intercept in any condition (all p’s>0.99, Bonferroni corrected) (Figure 4). Given the correlation between the aperiodic intercept and chronological age across groups (Appendix 1.15), we performed a post-hoc linear regression analysis to model the aperiodic intercept in the CC group with both age and Glx concentration as covariates. Glx concentration, but not age, significantly predicted the aperiodic intercept within the CC group during rest with eyes open, and during visual stimulation (Appendix 1.16).
 
@@ -180,7 +632,7 @@ An increased intercept of the aperiodic component of occipital EEG activity was 
 
 In CC individuals, the intercept of the aperiodic activity was highly correlated with the Glx concentration during rest with eyes open and during flickering stimulation. This exploratory finding needs replication in a larger sample. If reliable, the correlation between the EEG aperiodic intercept and Glx concentration in CC individuals might indicate more broadband firing (Manning et al., 2009; Winawer et al., 2013) in CC than SC individuals during active and passive visual stimulation.
 
-## Limitations
+### Limitations
 
 The sample size of the present study was rather high for rare population of carefully diagnosed CC individuals, but undoubtedly overall small. Access to CC individuals was limited by the constraints of the COVID-19 pandemic. Hence, all the group differences, the exploratory correlations with visual history metrics, and between MRS-EEG parameters, are reported for further investigation in a larger sample. Moreover, our speculative accounts for the present findings need to be validated with pre- and post-surgery assessments. Finally, a comparison of CC individuals with a control group of developmental cataract-reversal individuals would be instrumental to test the hypothesis that the observed group differences are specific to early brain development.
 
@@ -188,6 +640,6 @@ We are aware that MRS and EEG has a low spatial specificity. Moreover, MRS measu
 
 While interpretations of new data in the absence of similar data sets are necessarily speculative, the validity of the neurochemical findings was supported by quality assessments; phantom testing showed high correlations between the experimentally varied metabolite concentrations and the extracted GABA+ and Glx concentrations (Appendix 1.3). The neurochemical results were robust to analysis pipelines (Appendix 1.3) as well as normalization method (Appendix 1.5). The EEG results from the present group of CC individuals replicated effects observed in a larger sample of 28 additional CC individuals (Appendix 1.18; Ossandón et al., 2023), as well as prior findings from another sample reporting lower alpha power (Appendix 1.19; Bottari et al., 2016; Pant et al., 2023). Further, the aperiodic intercept of EEG activity decreased with chronological age irrespective of group or condition, replicating earlier reports (Hill et al., 2022; Voytek et al., 2015) (Appendix 1.15). Finally, group differences were observed despite the considerable variance of blindness duration and time since surgery, demonstrating the crucial role of early visual experience.
 
-## Conclusion
+### Conclusion
 
 The present study in sight recovery individuals with a history of congenital blindness indicates that E/I balance is a result of early experience and crucial for human behavior. We provide initial evidence that the E/I ratio in congenital cataract-reversal individuals is altered even years after surgery, which may be due to previous adaptation to congenital blindness.

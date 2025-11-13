@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.10860.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from “IDH mutation impairs histone demethylation and results in a block to cell differentiation” by Lu and colleagues, published in Nature in 2012 (Lu et al., 2012). The experiments that will be replicated are those reported in Figures 1B, 2A, 2B, 2D and 4D. Lu and colleagues demonstrated that expression of mutant forms of IDH1 or IDH2 caused global increases in histone methylation and increased levels of 2 hydroxyglutarate (Figure 1B). This was correlated with a block in differentiation (Figures 2A, B and D). This effect appeared to be mediated by the histone demethylase KDM4C (Figure 4D). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange , and the results of the replications will be published by eLife . DOI: http://dx.doi.org/10.7554/eLife.10860.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from “IDH mutation impairs histone demethylation and results in a block to cell differentiation” by Lu and colleagues, published in Nature in 2012 (Lu et al., 2012). The experiments that will be replicated are those reported in Figures 1B, 2A, 2B, 2D and 4D. Lu and colleagues demonstrated that expression of mutant forms of IDH1 or IDH2 caused global increases in histone methylation and increased levels of 2 hydroxyglutarate (Figure 1B). This was correlated with a block in differentiation (Figures 2A, B and D). This effect appeared to be mediated by the histone demethylase KDM4C (Figure 4D). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Scienceand Science Exchange, and the results of the replications will be published by eLife.
 
 ## Introduction
 
@@ -37,158 +37,1719 @@ Several aspects of Lu’s findings have been corroborated by other work. Multipl
 
 Unless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors. An asterisk (*) indicates data or information provided by the Reproducibility Project: Cancer Biology core team. A hashtag (#) indicates information provided by the replicating lab.
 
-## Protocol 1: Assessing the methylation status and 2HG production of 293T cells transfected with mutant forms of IDH1 and IDH2
+### Protocol 1: Assessing the methylation status and 2HG production of 293T cells transfected with mutant forms of IDH1 and IDH2
 
 This protocol describes how to transfect 293T cells with wild-type and mutant forms of IDH1 and IDH2 and assess levels of global methylation and 2HG production, as seen in Figure 1B and Supplemental Figure 1.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Note: 293T cells are maintained in DMEM with 10% FBS at 37°C/5% CO2 All cells will be sent for STR profiling and mycoplasma testing.
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/vfsbo/).
 
-## Protocol 2: Examining the effects of mutations in IDH2 on differentiation of 3T3-L1 cells
+### Protocol 2: Examining the effects of mutations in IDH2 on differentiation of 3T3-L1 cells
 
 This protocol describes how to induce the differentiation of 3T3-L1 cells into adipocytes, which involves extensive chromatin remodeling, after transfection with wild type and mutant forms of IDH2 and assess the level of differentiation by Oil-Red-O staining, as seen in Figure 2A and B, and adipocyte marker expression, as seen in Figure 2D.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Note: 3T3-L1 and 293T cells are maintained in DMEM with 10% FBS at 37°C/5% CO2 .All cells will be sent for STR profiling and mycoplasma testing. pLPC (empty vector), pLPC-IDH2, and pLPC-IDH2R172K are generated in Protocol 1.
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/vfsbo/).
 
-## Protocol 3: Assessing the role of KDM4C on differentiation of 3T3-L1 cells
+### Protocol 3: Assessing the role of KDM4C on differentiation of 3T3-L1 cells
 
 This protocol describes how to treat 3T3-L1 cells with an siRNA against the histone demethylase KDM4C, whose activity is inhibited by 2HG, and assess the effect of loss of KDM4C activity on methylation and differentiation, as seen in Figure 4D and Supplemental Figure 8.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Note: 3T3-L1 cells are maintained in DMEM with 10% FBS at 37°C/5% CO2. All cells will be sent for STR profiling and mycoplasma testing.
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/vfsbo/).
 
-## Power calculations
+#### Power calculations
 
 Note: details of all power calculations can be found at https://osf.io/rb32p/
 
-## Protocol 1
+### Protocol 1
 
-## Summary of original data
+#### Summary of original data
 
 Note: data estimated from published figures.
 
-Supplemental Figure 1: normalized WB band intensity (normalized to Vector)MeanSDNIDH1WTH3K9me21.70.83H3K9me310.23K3K4me31.20.63H3K27me30.40.33H3K36me31.20.43H3K27me20.80.43IDH1R132HH3K9me27.92.53H3K9me34.11.23K3K4me33.40.83H3K27me32.50.53H3K36me31.70.83H3K27me24.72.53IDH2WTH3K9me23.21.13H3K9me32.11.23K3K4me31.90.33H3K27me31.90.83H3K36me31.40.43H3K27me21.50.93IDH2R172KH3K9me211.43.83H3K9me34.91.63K3K4me341.43H3K27me33.61.63H3K36me31.80.73H3K27me25.43.73
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Supplemental Figure 1: normalized WB band intensity (normalized to Vector)</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">IDH1WT</td>
+      <td>H3K9me2</td>
+      <td>1.7</td>
+      <td>0.8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>1</td>
+      <td>0.2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K3K4me3</td>
+      <td>1.2</td>
+      <td>0.6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me3</td>
+      <td>0.4</td>
+      <td>0.3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K36me3</td>
+      <td>1.2</td>
+      <td>0.4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me2</td>
+      <td>0.8</td>
+      <td>0.4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="6">IDH1R132H</td>
+      <td>H3K9me2</td>
+      <td>7.9</td>
+      <td>2.5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>4.1</td>
+      <td>1.2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K3K4me3</td>
+      <td>3.4</td>
+      <td>0.8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me3</td>
+      <td>2.5</td>
+      <td>0.5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K36me3</td>
+      <td>1.7</td>
+      <td>0.8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me2</td>
+      <td>4.7</td>
+      <td>2.5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="6">IDH2WT</td>
+      <td>H3K9me2</td>
+      <td>3.2</td>
+      <td>1.1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>2.1</td>
+      <td>1.2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K3K4me3</td>
+      <td>1.9</td>
+      <td>0.3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me3</td>
+      <td>1.9</td>
+      <td>0.8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K36me3</td>
+      <td>1.4</td>
+      <td>0.4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me2</td>
+      <td>1.5</td>
+      <td>0.9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="6">IDH2R172K</td>
+      <td>H3K9me2</td>
+      <td>11.4</td>
+      <td>3.8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>4.9</td>
+      <td>1.6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K3K4me3</td>
+      <td>4</td>
+      <td>1.4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me3</td>
+      <td>3.6</td>
+      <td>1.6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K36me3</td>
+      <td>1.8</td>
+      <td>0.7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>H3K27me2</td>
+      <td>5.4</td>
+      <td>3.7</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-Figure 1B: 2HG/glutamate ratiosMeanAssumed NIDH1WT0.0053IDH1R132H0.0523IDH2WT0.0233IDH2R172K1.563
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Figure 1B: 2HG/glutamate ratios</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Mean</th>
+      <th>Assumed N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IDH1WT</td>
+      <td>0.005</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>IDH1R132H</td>
+      <td>0.052</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>0.023</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>IDH2R172K</td>
+      <td>1.56</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-One-way ANOVA: α=0.00833, 4 groupsαDVF(3,8)Partial η2Effect size fA priori powerTotal Sample SizeH3K9me210.4860.797261.9830292.1%1121H3K9me37.02740.724921.6233596.4%1161H3K4me36.61970.712841.5755695.1%1161H3K27me36.03390.693511.5042392.7%1161H3K36me30.62760.190511.0612590.2%24H3K79me23.00330.529691.07984280.0%2241 With 6 samples per group (24 total), achieved power is 99.9%.2 Since the original effect size will not be detectable with the proposed sample size, this is the effect size that can be detected at 80% power with the given sample size. The original effect size was 0.48512.
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">One-way ANOVA: α=0.00833, 4 groupsα</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DV</td>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>H3K9me2</td>
+      <td>10.486</td>
+      <td>0.79726</td>
+      <td>1.98302</td>
+      <td>92.1%1</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>7.0274</td>
+      <td>0.72492</td>
+      <td>1.62335</td>
+      <td>96.4%1</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>H3K4me3</td>
+      <td>6.6197</td>
+      <td>0.71284</td>
+      <td>1.57556</td>
+      <td>95.1%1</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>H3K27me3</td>
+      <td>6.0339</td>
+      <td>0.69351</td>
+      <td>1.50423</td>
+      <td>92.7%1</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>H3K36me3</td>
+      <td>0.6276</td>
+      <td>0.19051</td>
+      <td>1.06125</td>
+      <td>90.2%</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>H3K79me2</td>
+      <td>3.0033</td>
+      <td>0.52969</td>
+      <td>1.079842</td>
+      <td>80.0%2</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table>
 
-Planned contrasts; two-tailed t-test: α=0.004167Group 1Group 2Effect size dA priori powern/groupIDH1WTIDH1R132H3.3403984.9%151IDH2WTIDH2R172K2.9313887.3%6Planned contrasts; two-tailed Wilcoxon-Mann-Whitney: α=0.025Group 1Group 2Effect size dA priori powern/groupIDH1WTIDH1R132H3.3403980.9%252IDH2WTIDH2R172K2.9313884.0%61 With 6 samples per group, achieved power is 95.3%.2 With 6 samples per group, achieved power is 93.4%.
+_1 With 6 samples per group (24 total), achieved power is 99.9%.2 Since the original effect size will not be detectable with the proposed sample size, this is the effect size that can be detected at 80% power with the given sample size. The original effect size was 0.48512._
 
-2%; one-way ANOVA: α=0.05, 4 groupsF(3,8)Partial η2Effect size fA priori powerTotal Sample Size7240.70.9996352.1190199.9%8Planned comparisons; 2-tailed t-test: α=0.025Group 1 versusGroup 2Effect size dA priori powern per groupIDH1WTIDH1R132H63.618299.9%2IDH2WTIDH2R172H69.660699.9%2
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Planned contrasts; two-tailed t-test: α=0.004167</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Group 1</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n/group</td>
+    </tr>
+    <tr>
+      <td>IDH1WT</td>
+      <td>IDH1R132H</td>
+      <td>3.34039</td>
+      <td>84.9%1</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>IDH2R172K</td>
+      <td>2.93138</td>
+      <td>87.3%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned contrasts; two-tailed Wilcoxon-Mann-Whitney: α=0.025</td>
+    </tr>
+    <tr>
+      <td>Group 1</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n/group</td>
+    </tr>
+    <tr>
+      <td>IDH1WT</td>
+      <td>IDH1R132H</td>
+      <td>3.34039</td>
+      <td>80.9%2</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>IDH2R172K</td>
+      <td>2.93138</td>
+      <td>84.0%</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
 
-15%; one-way ANOVA: α=0.05, 4 groupsF(3,8)Partial η2Effect size fA priori powerTotal Sample Size128.720.979706.9477299.9%8Planned comparisons; 2-tailed t-test: α=0.025Group 1 versusGroup 2Effect size dA priori powern per groupIDH1WTIDH1R132H8.4824283.5%2IDH2WTIDH2R172H9.2880888.4%2
+_1 With 6 samples per group, achieved power is 95.3%.2 With 6 samples per group, achieved power is 93.4%._
 
-28%; one-way ANOVA: α=0.05, 4 groupsF(3,8)Partial η2Effect size fA priori powerTotal Sample Size36.9420.932683.7220199.9%8Planned comparisons; 2-tailed t-test: α=0.025Group 1 versusGroup 2Effect size dA priori powern per groupIDH1WTIDH1R132H4.5441592.4%3IDH2WTIDH2R172H4.9757695.9%3
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">2%; one-way ANOVA: α=0.05, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>7240.7</td>
+      <td>0.99963</td>
+      <td>52.11901</td>
+      <td>99.9%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; 2-tailed t-test: α=0.025</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH1WT</td>
+      <td>IDH1R132H</td>
+      <td>63.6182</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>IDH2R172H</td>
+      <td>69.6606</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
-40%; one-way ANOVA: α=0.05, 4 groupsF(3,8)Partial η2Effect size fA priori powerTotal Sample Size18.1020.871602.6054296.0%8Planned comparisons; 2-tailed t-test: α=0.025Group 1 versusGroup 2Effect size dA priori powern per groupIDH1WTIDH1R132H3.1809189.6%4IDH2WTIDH2R172H3.4830394.2%4
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">15%; one-way ANOVA: α=0.05, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>128.72</td>
+      <td>0.97970</td>
+      <td>6.94772</td>
+      <td>99.9%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; 2-tailed t-test: α=0.025</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH1WT</td>
+      <td>IDH1R132H</td>
+      <td>8.48242</td>
+      <td>83.5%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>IDH2R172H</td>
+      <td>9.28808</td>
+      <td>88.4%</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">28%; one-way ANOVA: α=0.05, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>36.942</td>
+      <td>0.93268</td>
+      <td>3.72201</td>
+      <td>99.9%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; 2-tailed t-test: α=0.025</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH1WT</td>
+      <td>IDH1R132H</td>
+      <td>4.54415</td>
+      <td>92.4%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>IDH2R172H</td>
+      <td>4.97576</td>
+      <td>95.9%</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">40%; one-way ANOVA: α=0.05, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>18.102</td>
+      <td>0.87160</td>
+      <td>2.60542</td>
+      <td>96.0%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; 2-tailed t-test: α=0.025</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH1WT</td>
+      <td>IDH1R132H</td>
+      <td>3.18091</td>
+      <td>89.6%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>IDH2R172H</td>
+      <td>3.48303</td>
+      <td>94.2%</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 In order to produce quantitative replication data, we will run the experiment six times. Each time we will quantify the 2HG/glutamate ratio. We will determine the standard deviation across the biological replicates and combine this with the reported value from the original study to simulate the original effect size. We will use this simulated effect size to determine the number of replicates necessary to reach a power of at least 80%. We will then perform additional replicates, if required, to ensure that the experiment has more than 80% power to detect the original effect.
 
-## Protocol 2
+### Protocol 2
 
-## Summary of original data
+#### Summary of original data
 
 Note: data estimated from published figures.
 
-Figure 2A: 2HG/glutamate ratioAssumed NMeanVector0.13IDH1R172K5.33IDH2WT0.13
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">Figure 2A: 2HG/glutamate ratio</td>
+      <td rowspan="2">Assumed N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean</td>
+    </tr>
+    <tr>
+      <td>Vector</td>
+      <td>0.1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>IDH1R172K</td>
+      <td>5.3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>IDH2WT</td>
+      <td>0.1</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-Figure 2D: Relative expression of adipocyte markersPpargMeanSDNVectorDay 01.450.8233Day 413.9920.8163IDH2WTDay 02.5211.0763Day 410.9660.8793IDH2R172KDay 01.1340.8233Day 44.2230.9413CebpaMeanSDNVectorDay 01.1230.4213Day 43.0531.1883IDH2WTDay 01.930.4563Day 44.8070.5653IDH2R172KDay 00.6670.4913Day 40.2460.213AdipoqMeanSDNVectorDay 0058.6213Day 4572.414193.1033IDH2WTDay 0058.6213Day 4448.27686.2073IDH2R172KDay 0058.6213Day 441.37927.5863
+<table>
+  <tbody>
+    <tr>
+      <td colspan="5">Figure 2D: Relative expression of adipocyte markers</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pparg</td>
+      <td>Mean</td>
+      <td>SD</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Vector</td>
+      <td>Day 0</td>
+      <td>1.45</td>
+      <td>0.823</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>13.992</td>
+      <td>0.816</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IDH2WT</td>
+      <td>Day 0</td>
+      <td>2.521</td>
+      <td>1.076</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>10.966</td>
+      <td>0.879</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IDH2R172K</td>
+      <td>Day 0</td>
+      <td>1.134</td>
+      <td>0.823</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>4.223</td>
+      <td>0.941</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cebpa</td>
+      <td>Mean</td>
+      <td>SD</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Vector</td>
+      <td>Day 0</td>
+      <td>1.123</td>
+      <td>0.421</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>3.053</td>
+      <td>1.188</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IDH2WT</td>
+      <td>Day 0</td>
+      <td>1.93</td>
+      <td>0.456</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>4.807</td>
+      <td>0.565</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IDH2R172K</td>
+      <td>Day 0</td>
+      <td>0.667</td>
+      <td>0.491</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>0.246</td>
+      <td>0.21</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Adipoq</td>
+      <td>Mean</td>
+      <td>SD</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Vector</td>
+      <td>Day 0</td>
+      <td>0</td>
+      <td>58.621</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>572.414</td>
+      <td>193.103</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IDH2WT</td>
+      <td>Day 0</td>
+      <td>0</td>
+      <td>58.621</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>448.276</td>
+      <td>86.207</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IDH2R172K</td>
+      <td>Day 0</td>
+      <td>0</td>
+      <td>58.621</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>41.379</td>
+      <td>27.586</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-2%; one-way ANOVA: α=0.05, 3 groupsF(2,6)Partial η2Effect size fA priori powerTotal Sample Size7214.50.9995849.018899.9%6Planned comparisons; two-tailed t-test: α=0.05Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HIDH2WT84.938399.9%2
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">2%; one-way ANOVA: α=0.05, 3 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(2,6)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>7214.5</td>
+      <td>0.99958</td>
+      <td>49.0188</td>
+      <td>99.9%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.05</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>84.9383</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
-15%; one-way ANOVA: α=0.05, 3 groupsF(2,6)Partial η2Effect size fA priori powerTotal Sample Size128.260.977156.5386699.9%6Planned comparisons; two-tailed t-test: α=0.05Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HIDH2WT11.325299.8%2
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">15%; one-way ANOVA: α=0.05, 3 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(2,6)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>128.26</td>
+      <td>0.97715</td>
+      <td>6.53866</td>
+      <td>99.9%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.05</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>11.3252</td>
+      <td>99.8%</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
-28%; one-way ANOVA: α=0.05, 3 groupsF(2,6)Partial η2Effect size fA priori powerTotal Sample Size36.8090.924643.5028598.5%6Planned comparisons; two-tailed t-test: α=0.05Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HIDH2WT6.0670484.2%2
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">28%; one-way ANOVA: α=0.05, 3 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(2,6)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>36.809</td>
+      <td>0.92464</td>
+      <td>3.50285</td>
+      <td>98.5%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.05</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>6.06704</td>
+      <td>84.2%</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
-40%; one-way ANOVA: α=0.05, 3 groupsF(2,6)Partial η2Effect size fA priori powerTotal Sample Size18.0360.857392.4519485.1%6Planned comparisons; two-tailed t-test: α=0.05Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HIDH2WT4.2468896.6%3
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">40%; one-way ANOVA: α=0.05, 3 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(2,6)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>18.036</td>
+      <td>0.85739</td>
+      <td>2.45194</td>
+      <td>85.1%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.05</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>4.24688</td>
+      <td>96.6%</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 In order to produce quantitative replication data, we will run the experiment five times. Each time we will quantify the 2HG/glutamate ratio. We will determine the standard deviation across the biological replicates and combine this with the reported value from the original study to simulate the original effect size. We will use this simulated effect size to determine the number of replicates necessary to reach a power of at least 80%. We will then perform additional replicates, if required, to ensure that the experiment has more than 80% power to detect the original effect.
 
-PpargOne-way ANOVA: α=0.0167, 3 groupsF(2,6)Partial η2Effect size fA priori powerTotal Sample Size96.8540.969965.6819599.5%161Planned comparisons; two-tailed t-test: α=0.0083Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HVector11.092199.9%232IDH2R172HIDH2WT7.4055998.6%232Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0083Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HVector11.092199.9%232IDH2R172HIDH2WT7.4055996.9%2321 With 5 samples per group (15 total), achieved power is 99.9%.2 With 5 samples per group, achieved power is 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Pparg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">One-way ANOVA: α=0.0167, 3 groups</td>
+    </tr>
+    <tr>
+      <td>F(2,6)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>96.854</td>
+      <td>0.96996</td>
+      <td>5.68195</td>
+      <td>99.5%1</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>Vector</td>
+      <td>11.0921</td>
+      <td>99.9%2</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>7.40559</td>
+      <td>98.6%2</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>Vector</td>
+      <td>11.0921</td>
+      <td>99.9%2</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>7.40559</td>
+      <td>96.9%2</td>
+      <td>32</td>
+    </tr>
+  </tbody>
+</table>
 
-CebpaOne-way ANOVA: α=0.0167, 3 groupsF(2,6)Partial η2Effect size fA priori powerTotal Sample Size26.8430.899475.6819590.5%161Planned comparisons; two-tailed t-test: α=0.0083Group 1 versusGroup 2Effect sizeA priori powern per groupIDH2R172HVector3.2904891.6%5IDH2R172HIDH2WT10.701199.9%232Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0083Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HVector3.2904889.0%5IDH2R172HIDH2WT10.701199.9%2321 With 5 samples per group (15 total), achieved power is 99.9%.2 With 5 samples per group, achieved power is 99.9%.
+_1 With 5 samples per group (15 total), achieved power is 99.9%.2 With 5 samples per group, achieved power is 99.9%._
 
-AdipoqOne-way ANOVA: α=0.0167, 3 groupsF(2,6)Partial η2Effect size fA priori powerTotal Sample Size15.2690.835792.2560396.3%191Planned comparisons; two-tailed t-test: α=0.0083Group 1 versusGroup 2Effect sizeA priori powern per groupIDH2R172HVector3.8500187.8%242IDH2R172HIDH2WT6.3575294.5%333Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0083Group 1 versusGroup 2Effect size dA priori powern per groupIDH2R172HVector3.8500184.0%444IDH2R172HIDH2WT6.3575290.8%3331 With 5 samples per group (15 total), achieved power is99.9%.2 With 5 samples per group, achieved power is 97.9%.3 With 5 samples per group, achieved power is 99.9%.4 With 5 samples per group, achieved power is 96.8%.
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Cebpa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">One-way ANOVA: α=0.0167, 3 groups</td>
+    </tr>
+    <tr>
+      <td>F(2,6)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>26.843</td>
+      <td>0.89947</td>
+      <td>5.68195</td>
+      <td>90.5%1</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>Vector</td>
+      <td>3.29048</td>
+      <td>91.6%</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>10.7011</td>
+      <td>99.9%2</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>Vector</td>
+      <td>3.29048</td>
+      <td>89.0%</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>10.7011</td>
+      <td>99.9%2</td>
+      <td>32</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protocol 3
+_1 With 5 samples per group (15 total), achieved power is 99.9%.2 With 5 samples per group, achieved power is 99.9%._
 
-## Summary of original data
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Adipoq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">One-way ANOVA: α=0.0167, 3 groups</td>
+    </tr>
+    <tr>
+      <td>F(2,6)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>A priori power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>15.269</td>
+      <td>0.83579</td>
+      <td>2.25603</td>
+      <td>96.3%1</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>Vector</td>
+      <td>3.85001</td>
+      <td>87.8%2</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>6.35752</td>
+      <td>94.5%3</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>Vector</td>
+      <td>3.85001</td>
+      <td>84.0%4</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>IDH2R172H</td>
+      <td>IDH2WT</td>
+      <td>6.35752</td>
+      <td>90.8%3</td>
+      <td>33</td>
+    </tr>
+  </tbody>
+</table>
+
+_1 With 5 samples per group (15 total), achieved power is99.9%.2 With 5 samples per group, achieved power is 97.9%.3 With 5 samples per group, achieved power is 99.9%.4 With 5 samples per group, achieved power is 96.8%._
+
+### Protocol 3
+
+#### Summary of original data
 
 Note: data estimated from published figures.
 
-Figure 4D and S8A: Western BlotBand intensity (normalized to H3)KDM4CControl siRNA1KDM4C siRNA #10.50971KDM4C siRNA #20.27671KDM4C siRNA #30.02492H3K9me3Control siRNA1KDM4C siRNA0.369521 These values were normalized to ß-Actin as seen in Supplemental Figure 8A.2 These values were normalized to total H3 as seen in Figure 4D. Also there is no data for siRNAs #1 and #2. We have assumed similar values for siRNA #3 for the purposes of these calculations.
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Figure 4D and S8A: Western Blot</th>
+      <th>Band intensity (normalized to H3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">KDM4C</td>
+      <td>Control siRNA</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>KDM4C siRNA #1</td>
+      <td>0.50971</td>
+    </tr>
+    <tr>
+      <td>KDM4C siRNA #2</td>
+      <td>0.27671</td>
+    </tr>
+    <tr>
+      <td>KDM4C siRNA #3</td>
+      <td>0.02492</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H3K9me3</td>
+      <td>Control siRNA</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>KDM4C siRNA</td>
+      <td>0.36952</td>
+    </tr>
+  </tbody>
+</table>
 
-Supplemental Figure 8B: Oil-Red-O quantificationMeanSDNControl1.060.033siRNA #10.420.153siRNA #20.690.093siRNA #310.690.0931 There is no data for siRNA #3. We have assumed similar values as siRNA #2 for the purposes of these calculations.
+_1 These values were normalized to ß-Actin as seen in Supplemental Figure 8A.2 These values were normalized to total H3 as seen in Figure 4D. Also there is no data for siRNAs #1 and #2. We have assumed similar values for siRNA #3 for the purposes of these calculations._
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th>Supplemental Figure 8B: Oil-Red-O quantification</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>1.06</td>
+      <td>0.03</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siRNA #1</td>
+      <td>0.42</td>
+      <td>0.15</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siRNA #2</td>
+      <td>0.69</td>
+      <td>0.09</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siRNA #31</td>
+      <td>0.69</td>
+      <td>0.09</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Power calculations
+_1 There is no data for siRNA #3. We have assumed similar values as siRNA #2 for the purposes of these calculations._
 
-2%; One-way ANOVA: α=0.025, 4 groups αDVF(3,8)Partial η2Effect size fPowerTotal sample sizeH3K9me32114.70.9987428.16199.9%8KDM4C3865.50.9993138.07399.9%8Planned comparisons; two-tailed t-test: α=0.0083DVGroup 1 versusGroup 2Effect size dA priori powern per groupH3K9me3ControlKDM4C #153.09999.9%2ControlKDM4C #253.09999.9%2ControlKDM4C #353.09999.9%2KDM4CControlKDM4C #142.40799.9%2ControlKDM4C #262.55299.9%2ControlKDM4C #384.33599.9%2
+#### Test family
 
-15%; One-way ANOVA: α=0.025, 4 groupsDVF(3,8)Partial η2Effect size fPowerTotal sample sizeH3K9me337.5950.933773.754799.2%8KDM4C68.720.962645.076499.9%8Planned comparisons; two-tailed t-test: α=0.0083DVGroup 1 versusGroup 2Effect size dA priori powern per groupH3K9me3ControlKDM4C #17.080097.8%3ControlKDM4C #27.080097.8%3ControlKDM4C #37.080097.8%3KDM4CControlKDM4C #15.654388.5%3ControlKDM4C #28.340399.6%3ControlKDM4C #311.24599.9%3
+#### Power calculations
 
-28%; One-way ANOVA: α=0.025, 4 groupsDVF(3,8)Partial η2Effect size fPowerTotal sample sizeH3K9me310.7890.801822.011498.7%12KDM4C19.7220.880892.719589.2%8Planned comparisons; two-tailed t-test: α=0.0083DVGroup 1 versusGroup 2Effect size dA priori powern per groupH3K9me3ControlKDM4C #13.792886.8%4ControlKDM4C #23.792886.8%4ControlKDM4C #33.792886.8%4KDM4CControlKDM4C #13.029185.9%5ControlKDM4C #24.468095.8%4ControlKDM4C #36.024092.1%3
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">2%; One-way ANOVA: α=0.025, 4 groups α</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DV</td>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>Power</td>
+      <td>Total sample size</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>2114.7</td>
+      <td>0.99874</td>
+      <td>28.161</td>
+      <td>99.9%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>KDM4C</td>
+      <td>3865.5</td>
+      <td>0.99931</td>
+      <td>38.073</td>
+      <td>99.9%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td colspan="6">Planned comparisons; two-tailed t-test: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>DV</td>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td rowspan="3">H3K9me3</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>53.099</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>53.099</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>53.099</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM4C</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>42.407</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>62.552</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>84.335</td>
+      <td>99.9%</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
 
-40%; One-way ANOVA: α=0.025, 4 groupsDVF(3,8)Partial η2Effect size fPowerTotal sample sizeH3K9me35.28680.664721.408080.2%12KDM4C9.66370.783731.903797.6%12Planned comparisons; two-tailed t-test: α=0.0083DVGroup 1 versusGroup 2Effect size dA priori powern per groupH3K9me3ControlKDM4C #12.655087.2%6ControlKDM4C #22.655087.2%6ControlKDM4C #32.655087.2%6KDM4CControlKDM4C #12.120485.6%8ControlKDM4C #23.127688.3%5ControlKDM4C #34.216893.3%4
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">15%; One-way ANOVA: α=0.025, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DV</td>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>Power</td>
+      <td>Total sample size</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>37.595</td>
+      <td>0.93377</td>
+      <td>3.7547</td>
+      <td>99.2%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>KDM4C</td>
+      <td>68.72</td>
+      <td>0.96264</td>
+      <td>5.0764</td>
+      <td>99.9%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td colspan="6">Planned comparisons; two-tailed t-test: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>DV</td>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td rowspan="3">H3K9me3</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>7.0800</td>
+      <td>97.8%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>7.0800</td>
+      <td>97.8%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>7.0800</td>
+      <td>97.8%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM4C</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>5.6543</td>
+      <td>88.5%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>8.3403</td>
+      <td>99.6%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>11.245</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">28%; One-way ANOVA: α=0.025, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DV</td>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>Power</td>
+      <td>Total sample size</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>10.789</td>
+      <td>0.80182</td>
+      <td>2.0114</td>
+      <td>98.7%</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>KDM4C</td>
+      <td>19.722</td>
+      <td>0.88089</td>
+      <td>2.7195</td>
+      <td>89.2%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td colspan="6">Planned comparisons; two-tailed t-test: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>DV</td>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td rowspan="3">H3K9me3</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>3.7928</td>
+      <td>86.8%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>3.7928</td>
+      <td>86.8%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>3.7928</td>
+      <td>86.8%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM4C</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>3.0291</td>
+      <td>85.9%</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>4.4680</td>
+      <td>95.8%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>6.0240</td>
+      <td>92.1%</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">40%; One-way ANOVA: α=0.025, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DV</td>
+      <td>F(3,8)</td>
+      <td>Partial η2</td>
+      <td>Effect size f</td>
+      <td>Power</td>
+      <td>Total sample size</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>5.2868</td>
+      <td>0.66472</td>
+      <td>1.4080</td>
+      <td>80.2%</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>KDM4C</td>
+      <td>9.6637</td>
+      <td>0.78373</td>
+      <td>1.9037</td>
+      <td>97.6%</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td colspan="6">Planned comparisons; two-tailed t-test: α=0.0083</td>
+    </tr>
+    <tr>
+      <td>DV</td>
+      <td>Group 1 versus</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>A priori power</td>
+      <td>n per group</td>
+    </tr>
+    <tr>
+      <td rowspan="3">H3K9me3</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>2.6550</td>
+      <td>87.2%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>2.6550</td>
+      <td>87.2%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>2.6550</td>
+      <td>87.2%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM4C</td>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>2.1204</td>
+      <td>85.6%</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>3.1276</td>
+      <td>88.3%</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>4.2168</td>
+      <td>93.3%</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 In order to produce quantitative replication data, we will run the experiment three times. Each time we will quantify band intensity. We will determine the standard deviation of band intensity across the biological replicates and combine this with the reported value from the original study to simulate the original effect size. We will use this simulated effect size to determine the number of replicates necessary to reach a power of at least 80%. We will then perform additional replicates, if required, to ensure that the experiment has more than 80% power to detect the original effect.
 
-One-way ANOVA: α=0.05, 4 groupsF(3,8)Partial eta2Effect size fPowerTotal Sample Size20.9390.887032.802297.8%1811 With 3 samples per group (12 total), achieved power is 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">One-way ANOVA: α=0.05, 4 groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F(3,8)</td>
+      <td>Partial eta2</td>
+      <td>Effect size f</td>
+      <td>Power</td>
+      <td>Total Sample Size</td>
+    </tr>
+    <tr>
+      <td>20.939</td>
+      <td>0.88703</td>
+      <td>2.8022</td>
+      <td>97.8%1</td>
+      <td>81</td>
+    </tr>
+  </tbody>
+</table>
 
-Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0167Power CalculationsGroup 1Group 2Effect size dPowern/groupControlKDM4C #15.916896.9%3ControlKDM4C #25.515693.3%3ControlKDM4C #35.515693.3%3Planned comparisons; two-tailed t-test: α=0.0167Group 1Group 2Effect size dPowern/groupControlKDM4C #15.916897.7%3ControlKDM4C #25.515695.6%3ControlKDM4C #35.515695.6%3
+_1 With 3 samples per group (12 total), achieved power is 99.9%._
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Planned comparisons; two-tailed Wilcoxon-Mann-Whitney: α=0.0167</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Power Calculations</td>
+    </tr>
+    <tr>
+      <td>Group 1</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>Power</td>
+      <td>n/group</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>5.9168</td>
+      <td>96.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>5.5156</td>
+      <td>93.3%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>5.5156</td>
+      <td>93.3%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="5">Planned comparisons; two-tailed t-test: α=0.0167</td>
+    </tr>
+    <tr>
+      <td>Group 1</td>
+      <td>Group 2</td>
+      <td>Effect size d</td>
+      <td>Power</td>
+      <td>n/group</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #1</td>
+      <td>5.9168</td>
+      <td>97.7%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #2</td>
+      <td>5.5156</td>
+      <td>95.6%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>KDM4C #3</td>
+      <td>5.5156</td>
+      <td>95.6%</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>

@@ -37,9 +37,96 @@ Here, we performed an alignment-based screen for shared nucleotide sequences in 
 
 ## Results
 
-## Identification of nucleotide sequences shared across bacterial genera in a single hospital
+### Identification of nucleotide sequences shared across bacterial genera in a single hospital
 
 Our experimental workflow is depicted in Figure 1A. To identify genetic material shared between distantly related bacteria in the hospital setting, we screened a dataset containing 2173 whole-genome sequences of clinical isolates of high-priority Gram-positive and Gram-negative bacteria collected from a single hospital over an 18-month period beginning in November 2016 as part of the Enhanced Detection System for Hospital-Acquired Transmission (EDS-HAT) project at the University of Pittsburgh (Sundermann et al., 2019a) (Methods and Supplementary file 1). To have maximal contrast, we focused on identical sequences found in the genomes of bacteria belonging to different genera. We performed an all-by-all alignment of the 2173 genomes in the dataset using nucmer (Marçais et al., 2018), and filtered the results to retain alignments of at least 5 kb that shared 100% identity between bacteria of different genera. The resulting sequences were extracted and clustered using Cytoscape (Figure 1B). We also explored alignments > 3 kb and >10 kb, and found that the number of clusters identified was highly dependent upon the alignment length cut-off used (Figure 1—figure supplement 1). We chose to use 5 kb for our analysis because of the intermediate number of resulting clusters. This approach identified shared sequences in 196 genomes belonging to 11 genera, which were grouped into 51 clusters of related sequences (Supplementary file 2). We compared the patient demographics and clinical features of the subset of patients from whom the 196 isolates encoding shared sequence clusters were derived with the other patients in the dataset (Table 1). While patient demographics were similar between groups, isolates encoding shared sequence clusters were cultured from patients with more co-morbidities (as measured by Charlson co-morbidity index, p=0.03), and with higher rates of solid organ transplant (p=0.02) (Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53886/elife-53886-fig1-v1.jpg)
+
+**Figure 1.:** (A) Approach to identify shared sequence clusters, and then resolve the MGEs that carry them. (B) 51 clusters of shared sequences found in distinct genera visualized with Cytoscape. Nodes represent bacterial isolates and are color-coded by genus. Edges connect nodes from different genera sharing >5 kb of sequence at 100% nucleotide sequence identity. Clusters examined more closely in subsequent figures are labeled. (C) Genus distribution of all 2173 genomes in the dataset (left) and the 196 isolates encoding one or more shared sequence clusters (right). (D) Prevalence of mobilization, antimicrobial resistance (AMR) and metal-interacting genes among 51 shared sequence clusters. (E) Summary of AMR genes identified in shared sequence clusters. Genes are grouped by antibiotic class, and bubble sizes correspond to prevalence among the clusters shown in (B). AMR gene names are listed inside each bubble. To generate (D) and (E) the longest sequence in each cluster was examined.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53886/elife-53886-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Clusters of shared sequences identified by the alignment-based method depicted in Figure 1A, with different cutoffs for identical alignment length (3 kb in panel A, 10 kb in panel B), and visualized with Cytoscape. Nodes represent bacterial isolates and are color-coded by genus. Edges connect nodes from different genera that share an identical sequence longer than the length cut-off. (A) 120 clusters of sequences sharing at least 3 kb with 100% identity to at least one other sequence in another genus. (B) 16 clusters of sequences sharing at least 10 kb with 100% identity to at least one other sequence in another genus.
+
+**Table 1.**
+ Demographics and co-morbidities of study patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All isolates</th>
+      <th>Shared sequence isolates</th>
+      <th>p-value†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total number of isolates</td>
+      <td>2173</td>
+      <td>196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of unique patients</td>
+      <td>1533</td>
+      <td>172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n = 1445</td>
+      <td>n = 157</td>
+      <td></td>
+      <td>Demographics*:</td>
+    </tr>
+    <tr>
+      <td>Median age, years (range)</td>
+      <td>62 (17–98)</td>
+      <td>63 (19–89)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>Male gender</td>
+      <td>738 (51%)</td>
+      <td>81 (52%)</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Co-morbidities:</td>
+    </tr>
+    <tr>
+      <td>Median Charlson Co-morbidity Index (range)</td>
+      <td>3 (0–15)</td>
+      <td>4 (0–13)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Solid organ transplant</td>
+      <td>180 (12%)</td>
+      <td>29 (18%)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus</td>
+      <td>369 (26%)</td>
+      <td>42 (27%)</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Cystic fibrosis</td>
+      <td>31 (2%)</td>
+      <td>5 (3%)</td>
+      <td>0.37</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Demographics and co-morbidities are reported for patients for whom information was available.†p-values were calculated using Fisher’s Exact test for categorical variables and Wilcoxon rank-sum test for continuous variables. Shared sequence isolates were removed from the ‘all isolates’ group to assess the significance of differences between groups._
 
 The shared sequence clusters we identified ranged in size from two to 52 genomes and comprised two, three, or four different genera (Figure 1B). Shared sequences were found predominantly among Gram-negative Enterobacteriaceae, particularly Klebsiella spp., Escherichia coli, and Citrobacter spp. (Figure 1C). Annotation of clustered sequences confirmed that more than 80% of clusters encoded one or more genes involved in DNA mobilization, such as plasmid replication, integration, or other mobile functions presumably involved in HGT (Figure 1D and Supplementary file 2). Approximately one-quarter of the clusters contained antimicrobial resistance genes, including genes encoding resistance to aminoglycosides, antifolates, beta-lactams, macrolides, quinolones, sulphonamides, and tetracyclines (Figure 1D and E). Finally, 8 of 51 clusters encoded genes and operons whose products were predicted to interact with metals, including arsenic, copper, mercury, nickel, and silver (Figure 1D). Collectively, these results indicate that our systematic, alignment-based method successfully identified sequences associated with MGEs, particularly in pathogens known to engage in HGT (Huddleston, 2014; Juhas, 2015).
 
@@ -53,7 +140,7 @@ To assess the phylogenetic distribution of the shared sequence clusters we ident
 
 **Figure 3.:** (A) Genes shared between a vancomycin-resistant E. faecium (VRE) plasmid and a C. difficile chromosome (cluster C9). The VanA operon, conferring vancomycin resistance, is marked with an orange bar. Shared drug resistance genes are colored magenta, and mobilization genes are colored blue. Gray shading marks DNA sequence that is 100% identical between isolates. (B) Identical portions of an integrated conjugative element (cluster C30) shared between an S. marcescens genome (SER00094) and two P. aeruginosa genomes (PSA00048 and PSA00656). Blue = intS integrase; green = formaldehyde resistance genes; gray = UvrABC system genes. Type IV secretion machinery is marked with an orange bar, and gray shading marks sequences that are 100% identical between isolates. (C) Identical Tn7 transposons shared between A. baumannii, E. coli, and P. mirabilis (cluster C17). The Tn7 sequence of the pR721 plasmid is shown at the top. The tnsABCDE transposon machinery is marked with an orange bar, and the glmS gene, which flanks the Tn7 insertion site, is colored red. Shared drug resistance genes are colored magenta, and an xerH tyrosine recombinase is colored blue. Gray shading marks sequences that are 100% identical between isolates.
 
-## Shared sequences often reside on MGEs in different combinations and contexts
+### Shared sequences often reside on MGEs in different combinations and contexts
 
 To further investigate the genomic context of the shared sequence clusters we identified, we selected the isolate containing the longest sequence in each cluster from C1-C5 for long-read sequencing using Oxford Nanopore technology. Hybrid assembly combining short Illumina reads and long Nanopore reads generated highly contiguous chromosomal and plasmid sequences, which allowed us to resolve MGEs carrying one or more of the most prevalent shared sequence clusters (Table 2). We found that several of the shorter and more prevalent shared sequences were carried on a variety of different plasmid and chromosomal MGEs, and furthermore, the sequences co-occurred in different orders, orientations, and combinations (Table 2, Figure 4A). This kind of ‘nesting’ of mobilizable sequences within larger MGEs has been previously observed (Sheppard et al., 2016), and our findings further support the mosaic, mix-and-match nature of the shorter shared sequences we identified. We also confirmed that these shared sequences were indeed mobilizable, since they were found independently within multiple distinct, larger MGEs. A closer examination of the three largest shared sequence clusters (C1, C2, C3) showed that C1 sequences did not all share a common ‘core’ nucleotide sequence, but rather could be aligned in a pairwise fashion to generate a contiguous ‘chain’ of sequences (Figure 4B). Clusters C2 and C3, on the other hand, did contain ‘core’ sequences that were present in all genomes containing the cluster (Figure 4C and D).
 
@@ -61,15 +148,162 @@ To further investigate the genomic context of the shared sequence clusters we id
 
 **Figure 4.:** (A) Circos plot of six distinct MGEs (black bars) that encode shared sequence clusters C1, C2, and C3. Lowercase letters in sequence names indicate element type (c = chromosome, p=plasmid). Homologous cluster sequences are connected to one another with colored links (purple = C1, orange = C2, green = C3, gray = other). Inner circle depicts genes involved in mobilization (blue), antibiotic resistance (red) and metal interaction (gray). (B–D) Alignments of sequences grouped into shared sequence clusters C1 (B), C2 (C), and C3 (D) from the MGEs displayed in (A). ORFs are colored by function (blue = mobilization, red = antibiotic resistance, green = other/hypothetical). Antibiotic resistance genes are labeled above and dark gray blocks connect sequences that are identical over at least 5 kb.
 
-## Plasmids carrying shared sequence clusters are found in bacteria belonging to multiple sequence types, species, and genera circulating in the same hospital
+**Table 2.**
+ Resolved MGEs and associated antibiotic resistance and metal interaction gene contents.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>MGE*</th>
+      <th>Length (kb)</th>
+      <th>% GC</th>
+      <th>Replicons†</th>
+      <th>MOB Family‡</th>
+      <th>Antibiotic resistance Genes§</th>
+      <th>Metal interaction Genes¶</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cEC00609</td>
+      <td>39.1</td>
+      <td>52.6</td>
+      <td>None</td>
+      <td>None</td>
+      <td>aac(3)-IIa, aac(6')-Ib-cr, blaCTX-M-1, blaOXA-1, catB3, tet(A)</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>pCB00017_2</td>
+      <td>196.8</td>
+      <td>51.7</td>
+      <td>FIB, FIIK</td>
+      <td>MOB-F</td>
+      <td>aac(6')-Ib-cr, aph(3'')-Ib, aph(6)-Id, blaCTX-M-15, blaOXA-1, blaTEM-1B, catB3, qnrB1, tet(A), sul2</td>
+      <td>copD operon, pcoE, silE, silP, ars operon</td>
+    </tr>
+    <tr>
+      <td>pCB00028_2</td>
+      <td>383.1</td>
+      <td>47.5</td>
+      <td>HI2, HI2A</td>
+      <td>MOB-H</td>
+      <td>aac(3)-IIa, aac(6')-Ib-cr, aadA1, aph(3'')-Ib, aph(6)-Id, blaCTX-M-15, blaOXA-1, baTEM-1B, catA1, catB3, dfrA14, sul2, tet(A)</td>
+      <td>pcoE, merR, merB</td>
+    </tr>
+    <tr>
+      <td>pEC00668_2</td>
+      <td>145.4</td>
+      <td>55.9</td>
+      <td>FIA, FII</td>
+      <td>MOB-F</td>
+      <td>aac(6)-Id, aph(3'')-Ib, dfrA14, blaTEM-1B, mph(A), sul2</td>
+      <td>efeU, merA, merC, merP, merR, merT</td>
+    </tr>
+    <tr>
+      <td>pEC00690_2</td>
+      <td>106.8</td>
+      <td>54.7</td>
+      <td>FIA, FII</td>
+      <td>MOB-F</td>
+      <td>aac(6')-Ibcr, blaOXA-1, catB3, tet(A)</td>
+      <td>efeU</td>
+    </tr>
+    <tr>
+      <td>pKLP00149_2</td>
+      <td>165.2</td>
+      <td>52.9</td>
+      <td>FIIY</td>
+      <td>MOB-F</td>
+      <td>aac(6')-Ib, aac(6')-Ib-cr, aadA1, aph(3'')-Ib, aph(6)-Id, blaKPC-3, blaOXA-9, blaSHV-182, blaTEM-1A, dfrA14, sul2</td>
+      <td>csoR</td>
+    </tr>
+    <tr>
+      <td>pKLP00155_6</td>
+      <td>9.5</td>
+      <td>54.9</td>
+      <td>ColRNAI</td>
+      <td>MOB-C</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>pKLP00161_2</td>
+      <td>236.5</td>
+      <td>55.1</td>
+      <td>FIB, FIIK</td>
+      <td>MOB-F</td>
+      <td>aac(6')-Ib-cr, aph(3'')-Ib, aph(6)-Id, blaCTX-M-15, blaOXA-1, blaTEM-1B, dfrA14, qnrB1, sul2, tet(A)</td>
+      <td>copD operon, pcoC, pcoE, silE, silP, ars operon</td>
+    </tr>
+    <tr>
+      <td>pKLP00177_3</td>
+      <td>170.8</td>
+      <td>52.0</td>
+      <td>FIB</td>
+      <td>MOB-F</td>
+      <td>aac(3)-IIa, aac(6')-Ib-cr, aph(3'')-Ib, aph(6)-Id, blaCTX-M-15, blaOXA-1, blaTEM-1B, catB3, dfrA14, qnrB1, sul2, tet(A)</td>
+      <td>copD operon, pcoC, pcoE, silE, silP, ars operon</td>
+    </tr>
+    <tr>
+      <td>pKLP00182_3</td>
+      <td>15.8</td>
+      <td>51.2</td>
+      <td>A/C</td>
+      <td>MOB-H</td>
+      <td>aac(6')-Ib-cr, blaOXA-1, catB3, dfrA14, tet(A)</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>pKLP00215_4</td>
+      <td>113.6</td>
+      <td>53.9</td>
+      <td>FIB, FIIK</td>
+      <td>MOB-F</td>
+      <td>blaKPC-2, blaOXA-9, blaTEM-1A</td>
+      <td>merB, merR</td>
+    </tr>
+    <tr>
+      <td>pKLP00218_2</td>
+      <td>164.7</td>
+      <td>54.9</td>
+      <td>FIB, FIIK</td>
+      <td>MOB-F</td>
+      <td>aph(3'')-Ib, aph(6)-Id, blaCTX-M-15, blaTEM-1B, dfrA14, sul2</td>
+      <td>copD operon, pcoC, pcoE, silE, silP, ars operon</td>
+    </tr>
+    <tr>
+      <td>pKLP00221_2</td>
+      <td>242.3</td>
+      <td>53.2</td>
+      <td>ColRNAI, FIB, FII</td>
+      <td>MOB-C, MOB-F</td>
+      <td>aac(6')-Ib, aada2, aph(3')−1a, blaKPC-2, blaOXA-9, blaTEM-1A, catA1, dfrA12, mph(A), sul1</td>
+      <td>copD operon, pcoC, pcoE, silE, silP, ars operon</td>
+    </tr>
+  </tbody>
+</table>
+
+_*MGE names include location (c = chromosome, p=plasmid), name of the reference isolate sequenced, and assembly contig number (_2, _3, _4, _6).†Replicons were identified by querying Plasmid MLST and PlasmidFinder databases.‡MOB families were assigned with MOBscan.§Antibiotic resistance genes were identified by querying the ResFinder database.¶Metal interaction genes were identified by examining annotations assigned by Prokka._
+
+### Plasmids carrying shared sequence clusters are found in bacteria belonging to multiple sequence types, species, and genera circulating in the same hospital
 
 More than half (104/196) of the genomes encoding shared sequence clusters contained one or more of the five most prevalent clusters (C1-C5, Figure 1B). In all five cases, the shared sequences were short (usually less than 10 kb), and they were predicted to be carried on plasmids shared between Enterobacteriaceae. We set out to resolve the genomic context of each of these five clusters in all isolates containing them. We used an iterative approach that started with long-read sequencing and hybrid assembly of the earliest isolate in each cluster to generate reference sequences of cluster-containing MGEs (chromosomal or plasmid) (Supplementary file 3). Then we mapped contigs from Illumina-only assemblies to the MGE reference sequences to assess their coverage in other genomes, using a cutoff of >90% coverage to define an MGE as potentially transferred between isolates (Materials and methods). This approach allowed us to query the presence of MGEs from genomes sequenced with Illumina technology alone, without requiring long-read sequencing of all isolates or relying on external references. We found that 11 of the 104 isolates (all E. coli) carried cluster C1 and C3 sequences on their chromosome, while the remaining 93 isolates carried cluster C1-C5 sequences on 17 distinct plasmids. Seven of these plasmids were present in only one isolate in the dataset, but ten plasmids appeared to be shared between more than one isolate (Table 2, Figure 5). We also conducted the same reference-based coverage analysis for all 2173 genomes in the original dataset, and identified an additional 16 isolates with >90% coverage of an MGE encoding C1-C5 sequences (Supplementary file 4).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53886/elife-53886-fig5-v1.jpg)
+
+**Figure 5.:** Illumina contigs of all study isolate genomes were mapped to the reference plasmid sequences indicated to the left of each panel, and plasmids were called 'present' if an isolate genome of any genus contained >90% of the reference sequence (based on mapping coverage). Timelines show the study date of each isolate, and the shared sequence clusters carried by each plasmid are listed in parentheses below the plasmid names. Shape and color of data points correspond to bacterial species and ST, respectively. More information about each plasmid is provided in Table 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53886/elife-53886-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Core genome phylogeny of 30 K. pneumoniae ST258 isolates in the dataset. Shading indicates the presence of the pKLP00149_2 plasmid, which was maintained among all Clade II isolates. (B) Core genome phylogeny of 74 E. coli ST131 isolates in our dataset. Shading indicates the presence of the pEC00690_2 plasmid in a subset of closely related isolates.
 
 While all the shared sequences we originally identified were present in the genomes of bacteria belonging to different genera, the plasmids that we resolved were variable in how widely they were shared. For example, two plasmids were only found among isolates belonging to a single species and multilocus sequence type (ST), suggesting that they were likely transmitted between patients along with the bacteria that were carrying them (Figure 5A). These included an IncF blaKPC-3 carbapenemase-encoding plasmid (pKLP00149_2) found in 17 K. pneumoniae isolates belonging to ST258, a multidrug-resistant and highly virulent hospital-adapted bacterial lineage that has recently undergone clonal expansion in our hospital (Marsh et al., 2019a). All isolates carrying this plasmid belonged to Clade II of ST258, which has caused multiple outbreaks at our center (Figure 5—figure supplement 1; Marsh et al., 2019a). We also found an IncF blaOXA-1 extended spectrum beta-lactamase-encoding plasmid in eight E. coli isolates belonging to ST131, another multidrug-resistant and hypervirulent clone (Manges et al., 2019). As above, this plasmid was found in closely related ST131 isolates (Figure 5—figure supplement 1), suggesting that it was vertically transmitted along with the bacteria carrying it.
 
 In addition to plasmids that occurred in bacteria belonging to the same ST, we also identified plasmids that were present in isolates belonging to different STs of the same species, or in different species of the same genus (Figure 5B). All isolates in this case were K. pneumoniae or K. oxytoca, suggesting widespread sharing of plasmids between distinct Klebsiella species and STs. The plasmids all carried antibiotic resistance genes, and many also carried metal interaction genes (Table 2). Finally, we identified three different plasmids that were shared between different bacterial genera all belonging to the Enterobacteriaceae (Figure 5C). One 9.5 kb ColRNAI plasmid (pKLP00155_6) carrying the colicin bacterial toxin was found in 26 isolates belonging to 10 different STs and 4 different genera. Taken together, these results indicate that some plasmids carrying putative MGEs were likely inherited vertically as bacteria were transmitted between patients in the hospital, while others appear to have transferred independently of bacterial transmission.
 
-## Likely HGT across genera within individual patients
+### Likely HGT across genera within individual patients
 
 By cross-referencing the isolates containing shared plasmids with de-identified patient data, we found two instances of identical plasmids present in pairs of isolates of different genera that were collected from the same patient, on the same date, and from the same sample source (Figure 6). A K. pneumoniae ST405 isolate (KLP00215) and an E. coli ST69 isolate (EC00678) collected from a tissue infection from Patient A each harbored a 113.6 kb IncF plasmid carrying blaKPC-2, blaOXA-9, and blaTEM-1A enzymes, as well as a mercury detoxification operon (Figure 6A,B). An isolate from a second patient (Patient B, EC00701, E. coli ST131), which was cultured 109 days after the isolates from Patient A, also encoded a nearly identical plasmid. A systematic chart review for Patients A and B revealed that they occupied adjacent hospital rooms for four days during a time period after Patient A’s isolates were collected but before Patient B’s isolate was collected. During this time, the two patients were treated by the same healthcare staff, who might have transferred bacteria between them.
 
@@ -97,28 +331,28 @@ In conclusion, we have shown how bacterial whole genome sequence data, which is 
 
 ## Materials and methods
 
-## Isolate collection and patient demographics
+### Isolate collection and patient demographics
 
 Isolates were collected through the Enhanced Detection System for Hospital-Acquired Transmission (EDS-HAT) project at the University of Pittsburgh (Sundermann et al., 2019a). Eligibility of bacterial isolates for genome sequencing under EDS-HAT required positive clinical culture for high-priority and multidrug-resistant bacterial pathogens with either of the following criteria: >3 hospital days after admission, and/or any procedure or prior inpatient stay in the 30 days prior to isolate collection. Bacterial isolates were collected between November 2016 and May 2018. Pathogens collected included: Acinetobacter spp., Burkholderia spp., Citrobacter spp., Clostridioides difficile, vancomycin-resistant Enterococcus spp., extended-spectrum beta-lactamase (ESBL)-producing E. coli, ESBL-producing Klebsiella spp., Proteus spp., Providencia spp., Pseudomonas spp., Serratia spp., Stenotrophomonas spp., and methicillin-resistant S. aureus. Eligible isolates were identified using TheraDoc software (Version 4.6, Premier, Inc, Charlotte, NC). The EDS-HAT project involves no contact with human subjects; the project was approved by the University of Pittsburgh Institutional Review Board and was classified as being exempt from informed consent.
 
 To assess patient demographics and co-morbidities, information was collected from available patient records and was summarized by an honest broker. In order to define the severity of illness and morbidity for patients included in the study, the Charlson Comorbidity Index score was calculated using ICD-9 and ICD-10 visit diagnoses from inpatient and outpatient encounters in the one year prior to each patient’s admission, including the admission during which a study isolate was collected (Quan et al., 2005). For patients that had multiple isolates, demographic and clinical information was reported from the date of the first isolate collected. Differences in demographic and clinical factors between patient groups were assessed using Fisher’s Exact test for categorical variables and Wilcoxon rank-sum test for continuous variables.
 
-## Whole genome sequencing and analysis
+### Whole genome sequencing and analysis
 
 Genomic DNA was extracted from pure overnight cultures of single bacterial colonies using a Qiagen DNeasy Tissue Kit according to manufacturer’s instructions (Qiagen, Germantown, MD). Illumina library construction and sequencing were conducted using the Illumina Nextera DNA Sample Prep Kit with 150 bp paired-end reads, and libraries were sequenced on the NextSeq sequencing platform (Illumina, San Diego, CA). Selected isolates were also sequenced with long-read technology on a MinION device (Oxford Nanopore Technologies, Oxford, United Kingdom). Long-read sequencing libraries were prepared and multiplexed using a rapid multiplex barcoding kit (catalog SQK-RBK004) and were sequenced on R9.4.1 flow cells. Base-calling on raw reads was performed using Albacore v2.3.3 or Guppy v2.3.1 (Oxford Nanopore Technologies, Oxford, UK).
 
 Illumina sequencing data were processed with Trim Galore v0.6.1 to remove sequencing adaptors, low-quality bases, and poor-quality reads. Bacterial species were assigned by k-mer clustering with Kraken v1.0 (Wood and Salzberg, 2014) and RefSeq (Pruitt et al., 2007) databases. Genomes were assembled with SPAdes v3.11 (Bankevich et al., 2012), and assembly quality was verified using QUAST (Gurevich et al., 2013). All genomes generated by the EDS-HAT project during the 18-month time period from November, 2016 through May, 2018 were included in this study, as long as the genome assemblies had: (a) coverage (read depth)>40X, (b) genome length within 20% of the expected size for the genus (c) a total number of contigs less than 400 and, (d) an N50 greater than 50 kb. Genomes were annotated with Prokka v1.13 (Seemann, 2014). Multi-locus sequence types (STs) were assigned using PubMLST typing schemes with mlst v2.16.1 (Jolley and Maiden, 2010; Seemann, 2014), and ribosomal sequence types (rMLSTs) for isolates not assigned an ST were approximated by alignment to rMLST reference sequences. Long-read sequence data was combined with Illumina data for the same isolate, and hybrid assembly was conducted using Unicycler v0.4.7 or v0.4.8-beta (Wick et al., 2017).
 
-## Identification and phylogenetic analysis of shared sequence clusters
+### Identification and phylogenetic analysis of shared sequence clusters
 
 Illumina genome assemblies were screened all-by-all against one another using nucmer v4.0.0beta2 (Marçais et al., 2018). The nucmer output was filtered to only include alignments between isolates of different bacterial genera of at least 5,000 bp at 100% identity. Nucleotide sequences from the resulting alignments were then extracted and compared against one another by all-by-all BLASTn v2.7.1 (Altschul et al., 1990). Results were filtered to only include nucleotide sequences having 100% identity over at least 5000 bp to at least one sequence from another genus. The resulting comparisons were clustered and visualized using Cytoscape v3.7.1 (Shannon et al., 2003). A phylogeny of shared sequence cluster-encoding genomes was constructed using the Genome Taxonomy Database Tool Kit (GTDBTK) (Parks et al., 2018). Briefly, translated amino acid sequences of 120 ubiquitous bacterial genes were generated, concatenated, and aligned using GTDBTK’s identify pipeline. The resulting multiple sequence alignment was masked for gaps and uncertainties, then a phylogenetic tree was generated using RAxML v8.0.26 with the PROTGAMMA substitution model (Stamatakis, 2014) and 1000 iterations. Additional core genome phylogenies were generated for ST258 K. pneumoniae and ST131 E. coli genomes using snippy (v4.4.5; https://github.com/tseemann/snippy) and RAxML (Stamatakis, 2014).
 
-## Characterization of shared sequences and assignment of MGEs
+### Characterization of shared sequences and assignment of MGEs
 
 The longest nucleotide sequence in each shared sequence cluster was considered representative of that cluster, and was annotated with Prokka v1.13. Representative sequences were compared to publicly available genomes by BLASTn v2.7.1 against the NCBI Nucleotide database. Antibiotic resistance genes were identified by a BLASTn-based search against the CARD v3.0.1 (Jia et al., 2017) and ResFinder v3.2 (Zankari et al., 2012) databases. Plasmid replicons and MOB families were identified by a BLASTn-based search against the PlasmidFinder database v2.0.2 (Carattoli et al., 2014), the plasmid MLST website (https://pubmlst.org/plasmid; Jolley et al., 2018), and MOBscan (Garcillán-Barcia et al., 2020). Additional features of each shared sequence cluster were identified by consulting annotations assigned by Prokka. Sequences were aligned to one another using Geneious v11.1.5 (Biomatters Ltd., Auckland, New Zealand) and EasyFig v2.2.2 (Sullivan et al., 2011), and circular plots were generated with Circos (Krzywinski et al., 2009).
 
 To resolve the MGEs encoding shared sequence clusters C1-C5, we first selected the earliest isolate containing each cluster for long-read sequencing and hybrid assembly. The closed, cluster-encoding mobile element (plasmid or chromosomal) from this earliest isolate was used as a reference for mapping contigs from Illumina assemblies from all other isolates using BLASTn. Briefly, contigs from Illumina-only assemblies were aligned to each reference MGE, and MGEs were called present in isolates having at least 90% coverage of a reference MGE. Among isolates having less than 90% coverage, a representative was again selected for long-read sequencing and hybrid assembly, and the process was repeated until all 104 isolates had been assigned to a MGE. Names of MGEs include the MGE type (c = chromosomal, p=plasmid), the reference isolate, and the hybrid assembly contig number, denoted with an underscore at the end of the name. Plasmids resolved through hybrid assembly were also used as reference sequences to query their presence in the entire 2173 genome data set using the same BLASTn coverage-based analysis as above, using a 90% coverage cut-off based on mapping of contigs from Illumina assemblies. When isolate genomes showed high coverage of multiple reference plasmids, the longest plasmid having at least 90% coverage was recorded. For the coverage-based analysis, we considered all isolates, regardless of whether or not their MGEs were shared across genera.
 
-## Systematic chart review to assess epidemiologic links between patients with the same plasmids
+### Systematic chart review to assess epidemiologic links between patients with the same plasmids
 
 Patients whose isolates carried the two plasmids found to putatively transfer within individual patients were reviewed using a systematic approach modified from previously published methodologies examining patient locations and procedures for potential similarities (Eyre et al., 2013; Ward et al., 2019). Patients were considered infected/colonized with the recovered plasmid on the day of the patients’ culture and all subsequent days. Potential transfer events were considered significant for locations if an uninfected/uncolonized patient was housed on the same unit location or service line location (units with shared staff) at the same time or different time as a patient infected/colonized with the plasmid, using a 60-day window prior to the newly infected/colonized patient’s culture date. Additionally, procedures (e.g. operating room procedures, bedside invasive procedures) were evaluated for commonalities among all patients 60 days prior to infection/colonization, as well as potential procedures contaminated by prior infected/colonized patients that could have transferred to newly infected/colonized patients, again using a 60-day window prior to the culture date. Procedures were deemed significant if >1 patient had a similar procedure, or if there was a shared procedure within the 60-day window.

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Receptor-interacting serine/threonine-protein kinase 3 (RIPK3) normally signals to necroptosis by phosphorylating MLKL. We report here that when the cellular RIPK3 chaperone Hsp90/CDC37 level is low, RIPK3 also signals to apoptosis. The apoptotic function of RIPK3 requires phosphorylation of the serine 165/threonine 166 sites on its kinase activation loop, resulting in inactivation of RIPK3 kinase activity while gaining the ability to recruit RIPK1, FADD, and caspase-8 to form a cytosolic caspase-activating complex, thereby triggering apoptosis. We found that PGF 2α induces RIPK3 expression in luteal granulosa cells in the ovary to cause luteal regression through this RIPK3-mediated apoptosis pathway. Mice carrying homozygous phosphorylation-resistant RIPK3 S165A/T166A knockin mutations failed to respond to PGF 2α but retained pro-necroptotic function, whereas mice with phospho-mimicking S165D/T166E homozygous knock-in mutation underwent spontaneous apoptosis in multiple RIPK3-expressing tissues and died shortly after birth. Thus, RIPK3 signals to either necroptosis or apoptosis depending on its serine 165/threonine 166 phosphorylation status.
+Receptor-interacting serine/threonine-protein kinase 3 (RIPK3) normally signals to necroptosis by phosphorylating MLKL. We report here that when the cellular RIPK3 chaperone Hsp90/CDC37 level is low, RIPK3 also signals to apoptosis. The apoptotic function of RIPK3 requires phosphorylation of the serine 165/threonine 166 sites on its kinase activation loop, resulting in inactivation of RIPK3 kinase activity while gaining the ability to recruit RIPK1, FADD, and caspase-8 to form a cytosolic caspase-activating complex, thereby triggering apoptosis. We found that PGF2α induces RIPK3 expression in luteal granulosa cells in the ovary to cause luteal regression through this RIPK3-mediated apoptosis pathway. Mice carrying homozygous phosphorylation-resistant RIPK3 S165A/T166A knockin mutations failed to respond to PGF2α but retained pro-necroptotic function, whereas mice with phospho-mimicking S165D/T166E homozygous knock-in mutation underwent spontaneous apoptosis in multiple RIPK3-expressing tissues and died shortly after birth. Thus, RIPK3 signals to either necroptosis or apoptosis depending on its serine 165/threonine 166 phosphorylation status.
 
 ## Introduction
 
@@ -42,9 +42,17 @@ In the current study, we report that RIPK3 specifically induces apoptosis instea
 
 ## Results
 
-## Ectopic expression of RIPK3 in cultured MCF7 or human granulosa lutein cells activated apoptosis through the RIPK1-FADD-caspase-8 pathway
+### Ectopic expression of RIPK3 in cultured MCF7 or human granulosa lutein cells activated apoptosis through the RIPK1-FADD-caspase-8 pathway
 
 We engineered three Dox-inducible RIPK3 expressing cell lines: HeLa/TO-RIPK3, MCF7/TO-RIPK3, and KGN/TO-RIPK3, all of which do not express endogenous RIPK3. KGN is a human granulosa tumor cell line (Nishi et al., 2001). Surprisingly, we found that simple expression of RIPK3 in MCF7 or KGN cells caused cell death (Figure 1A, Figure 1—figure supplement 1), whereas the ectopic expression of RIPK3 in HeLa cells did not affect cell viability, similar to previous studies (Sun et al., 2012). Moreover, these RIPK3-expressing MCF7 and KGN cells did not undergo necroptosis when we treated the cells with TSZ (TNFα [T], a Smac mimetic [S], and a pan-caspase inhibitor Z-VAD-fml [Z]), whereas such treatment caused robust necroptosis in RIPK3-expressing HeLa cells (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cultured MCF7/TO-RIPK3 and HeLa/TO-RIPK3 cells were treated with DMSO or Dox (1 μg/ml) induction for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The cell lysates were analyzed by western blotting using antibodies against RIPK3 or β-actin (lower panel). (B) Cultured MCF7/TO-RIPK3, KGN/TO-RIPK3, and HeLa/TO-RIPK3 cells were treated with DMSO, Dox, or Dox plus TSZ for 36 hr. Cell viability was determined by measuring cellular ATP levels. The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. (C) Cultured MCF7/TO-RIPK3 cells were treated with DMSO or Dox, plus the indicated agents for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The cell lysates were analyzed by western blotting using antibodies against RIPK3 or β-actin (lower panel). 20 μM Z, pan-caspase inhibitor z-VAD; 2 μM RIPA-56, RIPK1 inhibitor; 2 μM NSA, MLKL inhibitor. (D) Cultured MCF7 cells were infected with lentiviruses encoding RIPK3(WT), RIPK3(AAAA), RIPK3(K50A), and RIPK3(K50A)+GSK’872 plus Z for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The lysates were measured by western blotting using antibodies against RIPK3 or β-actin as indicated (lower panel). GSK’872, RIPK3 inhibitor.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Cultured KGN/TO-RIPK3 cells were treated with DMSO or Dox (1 μg/ml) induction for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The cell lysates were analyzed by western blotting using antibodies against RIPK3 or β-actin (lower panel).
 
 To determine what kind of cell death was triggered by RIPK3 in MCF7 and KGN cells, we used caspase inhibitor z-VAD-fmk, RIPK1 inhibitor RIPA-56 (Li et al., 2017), and MLKL inhibitor NSA (Sun et al., 2012) to co-treat these cells with Dox. Cell death induced by Dox could be blocked by caspase inhibitor z-VAD-fmk (Figure 1C, Figure 1—figure supplement 1) but not by MLKL inhibitor NSA, nor RIPK1 kinase inhibitor RIPA-56 (Figure 1C, Figure 1—figure supplement 1), indicating that the observed RIPK3-mediated cell death was apoptotic. However, this form of apoptosis did not signal through the classic intrinsic mitochondrial pathway as the loss of cell viability through this pathway could not be blocked by caspase inhibitors nor was the apoptosis triggered by the TNF receptor family, which would be RIPK1 kinase-dependent.
 
@@ -54,13 +62,25 @@ RIPK3’s dependence on the RHIM domain but not its kinase activity suggested th
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig2-v1.jpg)
 
-**Figure 2.:** (A) Cultured MCF7/TO-RIPK3 cells were treated with DMSO or Dox plus the indicated agent for 24 hr. The cells were then harvested, and RIPK3 was immunoprecipitated from the cell lysates using anti-Flag resin. The cell lysates and immunocomplexes were analyzed by western blotting using antibodies as indicated. (B–E) Cultured MCF7/TO-RIPK3 (wild type [WT], RIPK1, -/-Caspase8, -/-FADD, and -/-cFLIF) cells were treated with DMSO or Dox induction for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. *p<0.05, ***p<0.001. p-values were determined by two-sided unpaired Student’s -/-t-tests. The cell lysates were analyzed by western blotting using antibodies against RIPK1, caspase-8, FADD, cFLIP, or β-actin (lower panel). Five independent knockout clones were test in each gene.
+**Figure 2.:** (A) Cultured MCF7/TO-RIPK3 cells were treated with DMSO or Dox plus the indicated agent for 24 hr. The cells were then harvested, and RIPK3 was immunoprecipitated from the cell lysates using anti-Flag resin. The cell lysates and immunocomplexes were analyzed by western blotting using antibodies as indicated. (B–E) Cultured MCF7/TO-RIPK3 (wild type [WT], RIPK1-/-, Caspase8-/-, FADD-/-, and cFLIF-/-) cells were treated with DMSO or Dox induction for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. *p<0.05, ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The cell lysates were analyzed by western blotting using antibodies against RIPK1, caspase-8, FADD, cFLIP, or β-actin (lower panel). Five independent knockout clones were test in each gene.
 
-## RIPK3 kinase-dependently phosphorylates serine 164/threonine 165 in apoptotic cells
+### RIPK3 kinase-dependently phosphorylates serine 164/threonine 165 in apoptotic cells
 
 The differential apoptotic response of HeLa cells and MCF7/KGN cells to RIPK3 expression prompted us to search for the differences in RIPK3 protein in these cells. To this end, we immunoprecipitated Flag-RIPK3 from HeLa cells and MCF-7 cells and performed a detailed mass spectrometry analysis. We found two amino acid residues at the activation loop of the RIPK3 kinase domain, serine 164 and threonine 165, that were specifically phosphorylated in MCF7 cells but not in HeLa cells (Figure 3A). To validate this phosphorylation event, we generated a monoclonal antibody against the phospho-S164/T165 peptide. This phospho-specific antibody only recognized RIPK3 protein expressed in KGN or MCF7 cells but not in HeLa cells (Figure 3B). We further validated our monoclonal antibody’s specificity by expressing a RIPK3 protein bearing phosphorylation-resistant mutations S164A/T165A in MCF and KGN cells. The expressed S164A/T165A RIPK3 was then analyzed by western blotting with antibodies against RIPK3 or phospho-S164/T165 RIPK3. As shown in Figure 3—figure supplement 1A, B, Dox-induced wild-type RIPK3 was recognized by anti-RIPK3 and anti-phospho-S164/T165 RIPK3 antibodies in both MCF7/TO-RIPK3 and KGN/TO-RIPK3 cells. The phosphorylation-resistant S164A/T165A mutant protein could only be recognized by the anti-RIPK3 antibody but not the anti-phospho-S614/T165 antibody. Notably, this anti-phospho-S164/T165 antibody did not recognize any non-specific protein band across the entire set of protein size markers (15–250 kDa), nor in cells without Dox addition to their media. Additionally, the expression of two kinase-dead mutants RIPK3 D160N and RIPK3 K50A (equivalent of mouse D161N and K51A, respectively) failed to generate the phospho-S164/T165 signal (Figure 3C, Figure 3—figure supplement 1C). Therefore, the RIPK3-induced apoptosis in KGN and MCF7 cells requires serine 164/threonine 165 phosphorylation of RIPK3, an event dependent on its intact kinase domain.
 
-## Phosphorylation of serine 164 inactivates the kinase activity of RIPK3 and activates apoptosis
+![Figure 3.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cultured MCF7/TO-RIPK3 and HeLa/TO-RIPK3 cells were treated with Dox plus z-VAD for 24 hr. RIPK3 was immunoprecipitated from the cell lysates using anti-Flag resin. The RIPK3 bands were excised and subjected to mass spectrometry analysis. RIPK3-specific phosphorylation site in MCF7/TO-RIPK3 cells is highlighted in red. (B) Cultured KGN/TO-RIPK3, MCF7/TO-RIPK3, and HeLa/TO-RIPK3 cells were treated with Dox plus z-VAD for 24 hr. The lysates were analyzed by western blotting using antibodies against the phospho-serine 164/threonine 165 of RIPK3, Flag (RIPK3), and β-actin as indicated. (C) Cultured MCF7 stably transfected with either wild-type RIPK3 (WT) or kinase-dead mutant (D160N) cells under the control of Dox-inducible promoter were treated with DMSO(-) or Dox plus z-VAD for 24 hr. The lysates were analyzed by western blotting using antibodies against the phospho-serine 164/threonine 165 RIPK3, Flag (RIPK3), and β-actin as indicated. (D) Cultured 293T cells were transfected with Vector (Vec), RIPK3(WT), RIPK3(D160N), RIPK3(AAAA) (RIPK3-AAAA, residues 459–462 mutated to AAAA), and RIPK3(S164D/T165E) for 24 hr. The level of phospho-S227-RIPK3 and RIPK3 was measured by western blotting. (E, F) Cultured MCF7 (E) and KGN (F) cells were infected with lentiviruses encoding RIPK3(WT), RIPK3(S164D/T165E), RIPK3(S164A/T165A), and RIPK3(AAAA) plus z-VAD for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The lysates were measured by western blotting using antibodies against RIPK3 or β-actin as indicated (lower panel). (G) Cultured HeLa cells were infected with lentiviruses encoding RIPK3(WT), RIPK3(D160N), RIPK3(AAAA), and RIPK3(S164D/T165E) plus z-VAD for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. **p<0.01, ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The expressed RIPK3 in the cell lysates were measured by western blotting using antibodies against RIPK3 or β-actin as indicated (lower panel). Vector (Vec, control viruses) (H) Cultured HeLa cells were transfected with Flag-tagged RIPK3(WT), RIPK3(D160N), and RIPK3(S164D/T165E) for 24 hr. RIPK3 was immunoprecipitated using anti-Flag resin. The lysates and immunocomplexes were analyzed by western blotting using antibodies against RIPK1, caspase-8, FADD, and RIPK3 as indicated. (I) Cultured MCF7/TO-RIPK3 and MCF7/TO-RIPK3(S164A/T165A) cells were treated with Dox plus Z for 24 hr. The cells were then harvested, and RIPK3 was immunoprecipitated from the cell lysates using anti-Flag resin. The cell lysates and immunocomplexes were analyzed by western blotting using antibodies as indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cultured MCF7/TO-RIPK3 and MCF7/TO-RIPK3(S164A/T165A) cells were treated with DMSO(-) or Dox plus z-VAD for 24 hr. The lysates were analyzed by western blotting using antibodies against the phospho-serine 164/threonine 165 of RIPK3, Flag (RIPK3), and β-actin as indicated. (B) Cultured KGN7/TO-RIPK3 and KGN/TO-RIPK3(S164A/T165A) cells were treated with DMSO or Dox plus z-VAD for 24 hr. The lysates were analyzed by western blotting using antibodies against the phospho-serine 164/threonine 165 of RIPK3, Flag (RIPK3), and β-actin as indicated. (C) Cultured MCF7/TO-RIPK3 and MCF7/TO-RIPK3(K50A) cells were treated with DMSO(-) or Dox plus z-VAD for 24 hr. The lysates were analyzed by western blotting using antibodies against the phospho-serine 164/threonine 165 of RIPK3, Flag (RIPK3), and β-actin as indicated. (D) Cultured HeLa cells were infected with lentiviruses encoding wild-type RIPK3(WT), and mutant RIPK3 including RIPK3(D160N), RIPK3(S164D/T165E), RIPK3(S164E), RIPK3(T165E), RIPK3(S164A/T165A), RIPK3(S164A), RIPK3(T165A), and RIPK3(AAAA) and treated with TSZ for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. **p<0.01. p-values were determined by two-sided unpaired Student’s t-tests. The levels of expressed RIPK3 in the cell lysates were measured by western blotting (lower panel). (E) RIPK3 single site (S164E) mutation blocks auto-phosphorylation. 293T cells were transfected with Flag-tagged RIPK3(WT), RIPK3(D160N), RIPK3(S164D/T165E), RIPK3(S164E), RIPK3(T165E), RIPK3(S164A/T165A), RIPK3(S164A), RIPK3(T165A), and RIPK3(AAAA) for 24 hr. The level of p-S227-RIPK3 and RIPK3 was measured by western blotting. (F, G) Cultured MCF7 (E) and KGN (F) cells were infected with lentiviruses encoding wild-type RIPK3(WT), and mutant forms of RIPK3(S164A/T165A), RIPK3(S164A), and RIPK3(T165A) and treated with z-VAD as indicated for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The levels of RIPK3 in the cell lysates were measured by western blotting (lower panel). (H) Cultured HeLa cells were transfected with Flag-tagged wild-type RIPK3(WT), and mutant forms of RIPK3(T165E), RIPK3(S164D/T165E), and RIPK3(S164E) for 24 hr. RIPK3 was immunoprecipitated from the cell lysates using anti-Flag resin. The lysates and immunocomplexes were analyzed by western blotting using antibodies against RIPK1, caspase-8, RIPK3, and β-actin as indicated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Alignment of amino acid sequences of RIPK3 orthologs in five mammalian species. Amino acid residues conserved in 80% or more of the sequences are shaded in black. The putative phosphorylation residues are denoted by asterisks (*). (B) Cultured 293T cells were transfected with Vector (Vec), mouse RIPK3(WT), RIPK3(S165D/T166E), and RIPK3(S165A/T165A) for 24 hr. The level of phospho-S232-RIPK3 and RIPK3 was measured by western blotting. (C) Cultured mouse sarcoma cells L929(Ripk3-/-) were transfected with Vector, wild-type mouse RIPK3, and mutant forms of mRIPK3(D161N), and mRIPK3(S165D/T166E) and treated with z-VAD or TSZ as indicated for 36 hr. Cell viability was determined by measuring cellular ATP levels (upper panel). The data are represented as the mean ± SD of triplicate wells. **p<0.01. p-values were determined by two-sided unpaired Student’s t-tests. The lysates were analyzed by western blotting using antibodies as indicated (lower panel).
+
+### Phosphorylation of serine 164 inactivates the kinase activity of RIPK3 and activates apoptosis
 
 To explore the functional significance of this phosphorylation event, we made phospho-mimic point mutations in these two sites and assayed the kinase activity of mutant RIPK3 by probing the serine 227 phosphorylation, which is known to be carried out by RIPK3 kinase activity and is critical for recruiting its necroptosis executing substrate MLKL (Li et al., 2015; Sun et al., 2012). After transiently transfecting the cDNA of mutant RIPK3 in human embryonic kidney 293T cells, we observed that RIPK3 bearing phospho-mimic S164D/T165E mutations failed to auto-phosphorylate the serine 227 site, similar to the kinase-dead mutant D160N, whereas wild-type RIPK3 readily phosphorylated serine 227 (Figure 3D).
 
@@ -68,33 +88,65 @@ We subsequently measured cell death after introducing these phospho-mimic or pho
 
 We further narrowed down the effect of serine 164 and threonine 165 phosphorylation by generating individual phospho-mimic or phosphorylation-resistant mutants at serine S164 or threonine 165 sites and measured their kinase activity and apoptosis-inducing ability. The phospho-mimic S164E, but not T165E, mutant lost necroptosis responsiveness and gained the ability to induce apoptosis in HeLa cells, while phosphorylation-resistant S164A, but not T165A, lost its apoptosis-inducing activity in KGN and MCF7 cells (Figure 3—figure supplement 1D–G). Together, these results indicated that RIPK3 auto-phosphorylation on the serine S164 site is a critical event that inactivates RIPK3 kinase activity while gaining apoptosis-inducing activity in KGN and MCF7 cells.
 
-## Serine 164 phosphorylation allows RIPK3 binding to RIPK1-FADD-caspase-8
+### Serine 164 phosphorylation allows RIPK3 binding to RIPK1-FADD-caspase-8
 
 To study the mechanism by which phospho-S164/T165 RIPK3 activates the RIPK1/FADD/caspase-8 pathway, we ectopically expressed Flag-RIPK3 (wild type), phospho-mimic RIPK3 (S164D/T165E), and RIPK3 (D160N) kinase-dead mutants, as well as RIPK3(AAAA) RHIM domain mutants in HeLa cells and performed immunoprecipitation with an anti-Flag antibody. The immune-complexes were probed with antibodies against RIPK1, FADD, and caspase-8. As shown in Figure 3H, very little RIPK1, FADD, or caspase-8 were co-precipitated with wild-type or RHIM mutant RIPK3, consistent with its inability to induce apoptosis (Figure 3H, lanes 1 and 2). In contrast, two kinase-dead mutants, either the artificial D160N or phospho-mimic S164D/T165E, showed robust binding with RIPK1, FADD, and caspase-8 (Figure 3H, lanes 3 and 4). Consistent with the cell death result, the phosphorylation-resistant mutant S164A/T165A lost the ability to bind with RIPK1, FADD, and caspase-8 (Figure 3I).
 
 Consistent with the finding that the serine 164 phosphorylation is most critical for RIPK3 apoptosis-inducing activity, the phospho-mimic S164E mutant expressed in HeLa cells was found to associate with RIPK1, FADD, and caspase-8, as did the S164D/T165E double mutation (Figure 3—figure supplement 1H, lane 4), whereas T165E alone could not bind to these proteins (Figure 3—figure supplement 1H, lane 2). Collectively, these findings indicate that RIPK3 auto-phosphorylation on serine S164 allows RIPK3 to recruit RIPK1 to form the RIPK3/RIPK1/FADD/caspase-8 complex, in which caspase-8 is activated to drive apoptosis.
 
-## Hsp90/CDC37 chaperone determines the necroptotic or apoptotic function of RIPK3 kinase
+### Hsp90/CDC37 chaperone determines the necroptotic or apoptotic function of RIPK3 kinase
 
 We have previously observed that in order for RIPK3 to signal to necroptosis the protein needs to be correctly folded with the aid of a molecular chaperone consisting of Hsp90 and CDC37 (Li et al., 2015). In HT29 and HeLa cells in which RIPK3 signals primarily to necroptosis, we observed that the level of Hsp90/CDC37 was higher compared to MCF7 and KGN cells, where RIPK3 predominantly causes apoptosis (Figure 4A). Indeed, a human Hsp90 inhibitor 17AAG potently blocked necroptosis induced by TSZ in HeLa-RIPK3 cells, whereas 17AAG did not block RIPK3-induced apoptosis in MCF7/TO-RIPK3 or KGN/TO-RIPK3 cells (Figure 4B, C). When we knocked down Hsp90 using shRNA or inhibits Hsp90 using 17AAG, after Dox induce RIPK3 expression, we saw the switch of the cellular necroptosis response to apoptosis (Figure 4D, Figure 4—figure supplement 1A). Consistently, the serine 164/threonine 165 phosphorylation of RIPK3 also occurred after the inhibition of Hsp90 (Figure 4E). Reciprocally, when Hsp90 and CDC37 were ectopically expressed in MCF7/TO-RIPK3 cells to a level matched or exceeding that in HeLa cells, the serine 164/threonine 165 phosphorylation of RIPK3 no longer occurred, and RIPK3-mediated apoptosis induction mostly ceased (Figure 4F, G). Consistent with the cell death result, when the inhibitor of Hsp90 17AAG was present during RIPK3 induction in HeLa/TO-RIPK3 cells, the RIPK3 formed a complex with RIPK1, FADD, and caspase-8 (Figure 4H).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig4-v1.jpg)
+
+**Figure 4.:** (A) The cell lysates from cultured HT29, HeLa, MCF7, and KGN cells were analyzed by western blotting using antibodies as indicated. (B, C) Cultured HeLa-RIPK3, MCF7/TO-RIPK3, and KGN/TO-RIPK3 cells were treated with the indicated stimuli for 36 hr. Cell viability was determined by measuring cellular ATP levels. The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. 17AAG, Hsp90 inhibitor. (D, E) HeLa/TO-RIPK3 cells were treated with the indicated stimuli for 36 hr. Cell viability was determined by measuring cellular ATP levels in (D). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. 24 hr after treatment, the cell lysates were analyzed by western blotting using antibodies against phospho-serine 164/threonine 165 of RIPK3, RIPK3, and β-actin as indicated in (E). (F, G) Cultured MCF7/TO-RIPK3 cells co-transfected with HSP90 and CDC37 as indicated were treated with DMSO or Dox for 36 hr. Cell viability was determined by measuring cellular ATP levels in (F). The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. 24 hr after treatment, the cell lysates were analyzed by western blotting using antibodies against phospho-serine 164/threonine 165 of RIPK3, RIPK3, Hsp90, CDC37, and β-actin as indicated in (G). (H) Cultured HeLa/TO-RIPK3 cells were treated with Dox or Dox plus 17AAG for 24 hr. The cells were then harvested, and RIPK3 was immunoprecipitated from the cell lysates using anti-Flag resin. The cell lysates and immunocomplexes were analyzed by western blotting using antibodies as indicated. (I) Cultured HeLa/TO-RIPK3 cells were treated with Dox or Dox plus 17AAG for 24 hr. Immunofluorescence of the cells with Flag-RIPK3 (red) antibody. Counterstaining with DAPI (blue). Scale bar, 10 μm. Higher-power views (right panels) were acquired from the selected boxed areas from the left panel. (J) Cultured MCF7/TO-RIPK3 cells co-transfected with HSP90 and CDC37 as indicated were treated with Dox for 24 hr. Immunofluorescence of the cells with Flag-RIPK3 (red) antibody. Counterstaining with DAPI (blue). Scale bar, 10 μm. Higher-power views (right panels) were acquired from the selected boxed areas from the left panel.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HeLa/TO-RIPK3 and HeLa/TO-RIPK3-shRNA-HSP90 cells were treated with the indicated stimuli for 36 hr. Cell viability was determined by measuring cellular ATP levels. The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The cell lysates were analyzed by western blotting using antibodies as indicated (right panel). (B) L929 cells were treated with the indicated stimuli for 5 hr. Cell viability was determined by measuring cellular ATP levels. The data are represented as the mean ± SD of triplicate wells. (C) L929(Ripk3-/-)/TO-RIPK3 and L929(Ripk3-/-)/TO-RIPK3-shRNA-HSP90 cells were treated with the indicated stimuli for 36 hr. Cell viability was determined by measuring cellular ATP levels. The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. The cell lysates were analyzed by western blotting using antibodies as indicated (right panel). (D, E) L929(Ripk3-/-)/TO-RIPK3 cells were treated with the indicated stimuli for 36 hr. Cell viability was determined by measuring cellular ATP levels in (D). The data are represented as the mean ± SD of triplicate wells. **p<0.01, ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. 24 hr after treatment, the cell lysates were analyzed by western blotting using antibodies against phospho-serine 165/threonine 166 of RIPK3, RIPK3, and β-actin as indicated in (E).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cultured HeLa/TO-RIPK3 and MCF7/TO-RIPK3 cells were treated with DMSO or Dox plus TSZ for 24 hr. Immunofluorescence of the cells with Flag-RIPK3 (green) antibody. Counterstaining with DAPI (blue). Scale bar, 10 μm. Higher-power views (right panels) were acquired from the selected boxed areas from the left panel. (B) Cultured HT29 and KGN/TO-RIPK3 cells were treated with DMSO, TSZ, or Dox for 24 hr. Immunofluorescence of the cells with Flag-RIPK3 (green) antibody. Counterstaining with DAPI (blue). Scale bar, 10 μm. Higher-power views (right panels) were acquired from the selected boxed areas from the left panel. (C) Cultured HeLa/TO-RIPK3 and MCF7/TO-RIPK3 cells were treated with Dox plus Z for 24 hr. Immunofluorescence of the cells with Flag-RIPK3 (red) and p-S164/T165-RIPK3 (green) antibody. Counterstaining with DAPI (blue). Scale bar, 10 μm. Higher-power views (right panels) were acquired from the selected boxed areas from the left panel. (D) Cultured MCF7/TO-RIPK3(WT, RIPK1-/-, caspase-8-/- and FADD-/-) cells were treated with Dox plus Z for 24 hr. Immunofluorescence of the cells with Flag-RIPK3 (red) and p-S164/T165-RIPK3 (green) antibody. Counterstaining with DAPI (blue). Scale bar, 10 μm. Higher-power views (right panels) were acquired from the selected boxed areas from the left panel. (E) Cultured MCF7/TO-RIPK3(WT, RIPK1-/-, caspase-8-/- and FADD-/-) cells were treated with DMSO or Dox plus Z for 24 hr. The lysates were analyzed by western blotting using antibodies as indicated.
+
 Since serine 164/threonine 165 appeared to be at a critical regulatory region in RIPK3 on which phosphorylation switches its function from necroptosis to apoptosis, we checked this region among different mammalian species. As shown in Figure 3—figure supplement 2A, this region is conserved with no changes from amino acid residues 160–174 among RIPK3s from human, chimpanzee, rat, mouse, and bovine origin (Xie et al., 2013). The corresponding phospho-mimic mutations of mouse RIPK3(S165D/T166E), like RIPK3(D161N) kinase-dead mutants (Newton et al., 2014), failed to auto-phosphorylate the serine 232 site, the equivalent of the human serine 227 site (Figure 3—figure supplement 2B). Furthermore, these mutant RIPK3 proteins induced apoptosis in mouse L929 (Ripk3-/-) cells after ectopic expression but not necroptosis when treated with the necroptosis stimulus TSZ (Figure 3—figure supplement 2C). Previously, we noticed that when we used a clinical relevant dose of 17AAG (200 nM) to treat mouse cells, the necroptosis was augmented instead of inhibited like in human or rat cells (Li et al., 2015). We therefore suggested that the Hsp90/CDC37 chaperone might not work in mouse cells. Given the importance of this chaperone system in determining the apoptotic or necroptotic fate and the conservation of the apoptosis-causing phosphorylation site in mice, we explored the possibility that the previously tested concentration of human Hsp90 inhibitors was simply not enough to inhibit the mouse Hsp90. Indeed, when the higher dose of 17AAG was used, the compound dose-dependently blocked TSZ-induced necroptosis in L929 cells (Figure 4—figure supplement 1B). Moreover, when we knocked down Hsp90 using shRNA or inhibits Hsp90 using higher concentrations of 17AAG in L929 (Ripk3-/-)/TO-RIPK3 cells, we saw the switch of the cellular necroptosis response to apoptosis after Dox induced RIPK3 expression (Figure 4—figure supplement 1C, D). The serine 165/threonine 166 phosphorylation of RIPK3 also occurred after the inhibition of Hsp90 (Figure 4—figure supplement 1E). These results indicated that the observed Hsp90/CDC37-determined, RIPK3 serine 164/threonine 165 phosphorylation-driven apoptosis is conserved between human and mouse cells.
 
-## RIPK3 forms a unique structure in MCF7 and KGN cells
+### RIPK3 forms a unique structure in MCF7 and KGN cells
 
 RIPK3 is known to form diffused puncta within the cytosol (He et al., 2009). Indeed, when the HeLa/TO-RIPK3 cells were treated with Dox plus TSZ, we observed expressed RIPK3 in diffused puncta in the cytosol (Figure 4—figure supplement 2A). Interestingly, when we performed a similar analysis of RIPK3 distribution in MCF7/TO-RIPK3 and KGN/TO-RIPK3 cells, the RIPK3 formed a high order of structures distinct from the diffused punctae in HeLa or HT29 cells (Figure 4—figure supplement 2A, B). Furthermore, the phospho-S164/T165-RIPK3 signal appeared co-localized with RIPK3 in MCF7 cells, but no such signal was seen in HeLa cells (Figure 4—figure supplement 2C). The formation of these high-order structures and the appearance of the phospho-S164/T165-RIPK3 signal were not affected when RIPK1, caspase-8, or FADD genes were knocked out (Figure 4—figure supplement 2D, E), indicating that it was RIPK3, not its downstream apoptotic effectors, that was responsible for forming these high-order intracellular structures.
 
 To test whether this high-order structure of RIPK3 is associated with its ability to induce apoptosis, we treated the HeLa/TO-RIPK3 cells with Dox plus the Hsp90 inhibitor 17AAG and found that the diffused punctae of RIPK3 were now switched to the high-order structure (Figure 4I). Reciprocally, when Hsp90 and CDC37 were ectopically overexpressed in MCF7/TO-RIPK3 cells, the high-order structure of RIPK3 became diffused punctae throughout the cytosol of the cells (Figure 4J). These findings collectively indicated that RIPK3 forms distinctive cellular structures when signaling to apoptosis or necroptosis, depending on the chaperone Hsp90/CDC37.
 
-## Ripk3S165D-T166E/S165D-T166E mice die within a month after birth due to spontaneous apoptosis in multiple tissues
+### Ripk3S165D-T166E/S165D-T166E mice die within a month after birth due to spontaneous apoptosis in multiple tissues
 
 We subsequently sought genetic proof that the phosphorylation of RIPK3 at its serine 165/threonine 166 sites (equivalent to human serine 164/threonine 165 sites) drives apoptosis in vivo. To this end, we generated Ripk3 knock-in mice with Ser165Thr166 mutated to Ala-Ala or Asp-Glu (Figure 5—figure supplement 1A, B, E) to either block or mimic the phosphorylation on these sites (Figure 5—figure supplement 1A, B, F). Interestingly, the Ripk3S165A-T166A/S165A-T166A homozygous mice were viable and appeared normal (Figure 5—figure supplement 1C, D, F). Ripk3S165D-T166E/S165D-T166E homozygous mice, on the other hand, are smaller in size and all died within 1 month after birth (Figure 5A–C). Anatomical analysis of these Ripk3S165D-T166E/S165D-T166E mice showed abnormal large intestine, small intestine, lung, spleen, and kidney, while other major organs, including brain, cerebellum, heart, and liver, appeared normal (Figure 5D, Figure 5—figure supplement 1G). Staining for cleaved caspase-3 revealed significantly increased apoptosis in the large intestine, small intestine, lung, and spleen (Figure 5E, F). The Ripk3S165D-T166E/+ heterozygous mice, which were expected to make half the amount of RIPK3 S165D/T166E protein, are viable. One explanation is that there must be a threshold above which the RIPK3 S165D/T166E protein becomes lethal. Alternatively, the wild-type RIPK3 protein might prevent RIPK3(S165D/T166E) activation by forming a dimer with the mutant protein.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Macroscopic features (A) and body weights (B) of Ripk3+/+ and Ripk3ST-DE/ST-DE littermate mice at 14 days of age (n ≥ 9). The result from each individual animal is presented as an indicated dot. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. (C) Kaplan–Meier plot of survival of Ripk3+/+ and Ripk3ST-DE/ST-DE littermate mice (n = 10 for each genotype) after birth within 2 months. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. (D) Histological analysis of large intestine, small intestine, lung, and spleen of Ripk3+/+ and Ripk3ST-DE/ST-DE littermate mice (n = 5) at 14 days of age. Scale bar, 20 μm. (E, F) Representative immunohistochemistry (IHC) images of the large intestine, small intestine, lung, and spleen of Ripk3+/+ and Ripk3ST-DE/ST-DE littermate mice (n = 5, 14 days) stained with a cleaved-caspase-3 (C–C3) antibody in (E). C-C3-positive cells were counted in two fields per organ and quantified in (F). Scale bar, 10 μm. Data represent the mean ± s.e.m. **p<0.01, ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. (G) Cell viability measurement of bone marrow-derived macrophages from the Ripk3+/+ and Ripk3ST-DE/ST-DE littermate mice (n = 3, 14 days) after treatment with the indicated Z-VAD or necroptosis stimuli for 24 hr. Cell viability was determined by measuring cellular ATP levels. The data are represented as the mean ± SD of triplicate wells. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. .
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Two guide RNA and donate oligo sequences of Ripk3(S165D/T166E) and Ripk3(S165A/T166A) knock-in mice. (B) Schematic of CRISPER-Cas9 strategy for the generation for Ripk3(S165D/T166E) and Ripk3(S165A/T166A) knock-in mice. The gene structure of RIPK3 and two guide RNA sequences targeting the exon 4 of RIPK3 is shown with the PAM sequences highlighted in red and blue. (C, D) Macroscopic features (C) and body weights (D) of Ripk3+/+ and Ripk3ST-AA/ST-AA littermate mice at 14 days of age (n = 10). The result from each individual animal is presented as an indicated dot. NS: not significant. p-values were determined by two-sided unpaired Student’s t-tests. (E, F) Immunoblot of RIPK3 from lung extracts of 14 days old Ripk3+/+, Ripk3ST-DE/ST-DE, and Ripk3ST-AA/ST-AA littermates using antibodies against RIPK3 and GAPDH as indicated (n = 3). (G) Histological analysis of brain, cerebellum, heart, kidney, and liver of Ripk3+/+ and Ripk3ST-DE/ST-DE littermate mice (n = 5) at 14 days of age. Scale bar, 20 μm. PTC: proximal tubular cell. (H) Cell viability measurement of bone marrow-derived macrophages from the Ripk3+/+ and Ripk3ST-AA/ST-AA littermate mice (n = 3, 14 days) after treatment with the indicated necroptosis stimuli for 24 hr. Cell viability was determined by measuring cellular ATP levels. The data are represented as the mean ± SD of triplicate wells.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B) Immunofluorescence of ovary from wild-type mice (8 months; n = 3) with RIPK3 (red) and HSP90 (green) antibody in (A). Higher-power views of selected areas were acquired in right panel. The HSP90/RIPK3 levels were quantified in (B). F: follicle; CA: corpus albicans. Scale bar, 100/200 μm. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. (C, D) Immunofluorescence of ovary from wild-type mice (8 months; n = 3) with RIPK3 (red) and CDC37 (green) antibody in (C). Higher-power views of selected areas were acquired in right panel. The CDC37/RIPK3 levels were quantified in (D). F: follicle; CA: corpus albicans. Scale bar, 200 μm. ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests.
+
 Consistent with what was seen in HeLa cells, in which the phospho-mimic mutations S164D/T165E of RIPK3 were unable to signal necroptosis, the bone marrow-derived macrophages (BMDM) from Ripk3S165D-T166E/S165D-T166E mice were resistant to necroptosis induction by TSZ (Figure 5G). Conversely, the BMDM from Ripk3S165A-T166A/S165A-T166A mice readily underwent necroptosis when treated with TSZ, as did the BMDM from wild-type mice (Figure 5—figure supplement 1H). It is worth noting that when we cultured BMDM from Ripk3S165D-T166E/S165D-T166E mice we needed to include the caspase inhibitor z-VAD-fmk in the culture medium to prevent spontaneous cell death (see Materials and methods).
 
-## PGF2α elevates the expression of RIPK3 in luteal granulosa cells to promote luteum regression
+### PGF2α elevates the expression of RIPK3 in luteal granulosa cells to promote luteum regression
 
 Among all RIPK3-expressing tissues, RIPK3 expression levels in the ovary were the most notable, following a reversed bell curve pattern through the lifetime of the mice (Figure 6A). In early life and young adulthood, RIPK3 expression was restricted to the follicle granular cells around the egg (Figure 6B). In later life, RIPK3 protein starts to appear in the corpus luteum and albican (Figure 6B). The second wave of expression coincides with the elevation of prostaglandin F2alpha (PGF2α), which has been reported to have a role in apoptosis induction during luteal involution (Parkening et al., 1985). Indeed, when we measured the PGF2α levels in the mouse ovary, we saw a significant age-dependent increase as mice aged from 4 months to 10 and 16 months, coinciding with the age-dependent elevation of RIPK3 (Figure 6C). Moreover, when we co-stained 12-month-old RIPK3-Flag knock-in ovaries with anti-Flag and prostaglandin F receptor (PTGFR), we noticed that the PTGFR signal was primarily located in corpus lutea and corpus albicans but not in the follicles and co-localized with that of RIPK3 (Figure 6D, Figure 6—figure supplement 1A, B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig6-v1.jpg)
+
+**Figure 6.:** (A) Western blot analysis of RIPK1, RIPK3, and MLKL levels in perfused mouse ovary extracts of different ages. Each group is representative of at least three mice. (B) H&E and immunofluorescence (IF) imaging of an 8-month-old ovary. Two adjacent sections were analyzed. One section was stained with H&E, and the other was IF stained with a RIPK3 antibody (red) and DAPI (blue). Scale bar, 500 μm. Higher-power views of selected areas were acquired in a (primordia follicle), b (secondary follicle), c (corpus luteum), and d (corpus albicans) as indicated. PF: primary follicle; CL: corpus luteum; CA: corpus albicans. (C) Ovarian PGF2α levels of wild-type mice (n = 8) at the indicated age assayed by ELISA. Data represent the mean ± s.e.m. **p<0.01, ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. (D) Immunofluorescence images of a RIPK3 C-terminus HA-3xFlag knock-in mouse ovary (n = 5; 12 months) stained with antibodies against prostaglandin F receptor (PTGFR, green) and Flag (red). Counterstaining with DAPI (blue). Scale bar, 500 μm. Higher-power views (right panels) were acquired from the indicated boxed area in the second lower left panel. CL: corpus luteum; CA: corpus albicans. Scale bar, 100 μm. (E) Western blot analysis of p-S164/T165-RIPK3 and RIPK3 levels in extracts from perfused ovaries prepared from mice at the indicated age. Each group is representative of at least three mice. (F) Immunofluorescence images of ovaries from Ripk3+/+ and Ripk3-/- mice (4 months, 8 months and 12 months; n = 3) at the indicated ages stained with the p-S164/T165-RIPK3 antibody (red). Counterstaining with DAPI (blue). Scale bar, 200 μm. Higher-power views (lower two panels) were acquired from the selected boxed areas from the upper panel. a (CL), b (CL), c (CL, CA), and d (CL). F: follicle; CL: corpus luteum; CA: corpus albicans. Scale bar, 100 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic of CRISPER-Cas9 strategy for RIPK3 C-terminus HA-3xFlag knock-in mice. The gene structure of RIPK3 and guide RNA sequences targeting the Ripk3 is shown with the PAM sequences highlighted in red. (B) Western blotting analysis using protein extracts from the ovary of wild-type, heterozygous knock-in, and homozygous knock-in mice generated as illustrated in (A). (C) Schematic of CRISPER-Cas9 strategy for the generation for Ptgfr-/- mice. The gene structure of prostaglandin F receptor (PTGFR) and two guide RNA sequences targeting the Ptgfr is shown with the PAM sequences highlighted in red. (D) Immunoblot of PTGFR from ovary extracts of 2-month-old Ptgfr+/+ and Ptgfr-/- littermates using antibodies against PTGFR and GAPDH as indicated (n = 3).
 
 We thus used the same anti-phospho-S164/T165 antibody to probe ovary extracts from mice of different ages by western blotting. We found no phosphorylation signal in young (2-month-old) ovaries, despite the RIPK3 protein band being readily detectable (Figure 6E). The signal began to appear at 4 months and gradually increased when mice advanced in age (Figure 6E). To locate this phosphorylation signal in aged ovaries, we used this antibody for immunohistochemical analysis on 4-, 8-, and 12-month-old ovaries. Consistent with the western blotting, there was minimal signal in the young (4-month-old) ovary. There were patches of signal in 8-month-old corpus luteum and albican, and the signal became prominent and clustered in the corpus albicans in 12-month-old ovary (Figure 6F, middle panels). In contrast, no such phospho-RIPK3 signal was seen in 12-month-old ovaries of RIPK3 knockout mice, further confirming the specificity of this monoclonal antibody (Figure 6F).
 
@@ -102,17 +154,25 @@ As RIPK3 induce apoptosis or necroptosis depending on the chaperone Hsp90/CDC37 
 
 PGF2α is known to stimulate the Raf/MEK1/mitogen-activated protein kinase signaling pathway to induce luteal regression (Chen et al., 1998; Rolaki et al., 2005; Wang et al., 2003; Yadav et al., 2002). In mice, knockout caspase-3 blocks PGF2α-induced regression of the corpus luteum (Carambula et al., 2002; Carambula et al., 2003). Those observations suggested that PGF2α might induce RIPK3 expression by stimulating the Raf/MEK1/mitogen-activated protein kinase signaling pathway, thus causes RIPK3-mediated apoptosis. To test if PGF2α could directly induce RIPK3 expression, we isolated primary granulosa lutein cells from young (3-month-old) mouse ovaries and treated them with a synthetic PGF2α analog dinoprost tromethamine (DT) (Chebel et al., 2007). We then observed the time- and dose-dependent induction of RIPK3 protein, a pattern that overlapped with the appearance of phospho-ERK/MEK signal, an indication of PGF2 receptor activation (Figure 7A, B). The addition of two MEK kinase inhibitors PD-98059 or U0126 blocked RIPK3 induction, confirming that the RIPK3 induction by PGF2α was indeed through the MEK pathway (Figure 7—figure supplement 1A). Importantly, the DT-induced RIPK3 was phosphorylated at its serine 165/threonine 166 sites, and the treated cells were undergoing apoptosis, as indicated by the presence of active caspase-3 (Figure 7C, Figure 7—figure supplement 1B). Consistent with the notion that apoptosis induced by PGF2α is RIPK3 dependent, the primary granulosa lutein cells isolated from the RIPK3 knockout mice failed to respond to PGF2α activate caspase-3 (Figure 7C).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig7-v1.jpg)
+
+**Figure 7.:** (A–C) Primary granulosal lutein cells (WT, Ripk3-/-) were isolated from 3-month-old mice ovaries. The cells were treated with dinoprost tromethamine (DT) at the indicated concentration for 36 hr in (A); with 1.5 μM DT at the indicated time in (B); or with 1.5 μM DT for 36 hr in (C). The cell lysates from the DT-treated cells were analyzed by western blotting using antibodies as indicated. (D, E) Ptgfr+/+ and Ptgfr-/- littermate female mice (n = 16; 25–26 days) were given 7.5 IU pregnant mare serum gonadotropin (PMSG) intraperitoneally (IP) followed by 7.5 IU serum gonadotropin and chorionic gonadotropin (SCG) 46 hr later to synchronize ovulation. The animals were then injected with DT (10 μg, IP) or saline 24 hr post-ovulation. Ovaries were then collected 12 hr later and stained with anti-RIPK3 antibody (red) in (D). The ovary lysates were analyzed by western blotting using antibodies as indicated in (E). * indicates corpus luteum. Counterstaining with DAPI (blue). Scale bar, 500 μm. (F, G) wild-type (WT), Ripk3-/-, Ripk3S165A-T166A/S165A-T166A, Fadd-/-Mlkl-/- and Ptgfr-/- female mice (each group, n = 16; 25–26 days) were treated as in (D, F). Ovaries from each group were then collected 24 hr after injecting with DT and stained with anti-cleaved-caspase-3 antibody in (F). The Cleaved-Caspase3+ cells were counted in five fields per ovary CL and quantified in (G). Scale bar, 20 μm. Data represent the mean ± s.e.m. **p<0.01, ***p<0.001. p-values were determined by two-sided unpaired Student’s t-tests. (H) WT female mice (n = 3; 25–26 days) were treated as in (D, F). Ovaries were then collected 12 hr after injecting with DT and stained with anti-cleaved-caspase-3 (red) and p-S164/T165-RIPK3 (green) antibody. Counterstaining with DAPI (blue). Scale bar, 100 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67409/elife-67409-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Primary granulosal lutein cells were isolated from the 3-month-old mice ovary. The cells were then treated with 1 μM dinoprost tromethamine (DT) or plus MAPK inhibitors PD-98059 (5 μM) and U0126 (5 μM) as indicated for 36 hr. The lysates were analyzed by western blotting using antibodies as indicated. (B) Primary granulosal lutein cells were isolated from 3-month-old mice ovaries. The cells were treated with 1 μM DT at the indicated time. The cell lysates from the DT-treated cells were analyzed by western blotting using antibodies as indicated. (C) Diagram of induction of corpus luteum regression in vivo. (D) Ripk3+/+ and Ripk3S165A-T166A/S165A-T166A and littermate female mice (n = 3; 25–26 days) were given 7.5 IU pregnant mare serum gonadotropin (PMSG) intraperitoneally (IP) followed by 7.5 IU serum gonadotropin and chorionic gonadotropin (SCG) 46 hr later to synchronize ovulation. The animals were then injected with DT (10 μg, IP) or saline 24 hr post-ovulation. The ovary lysates were analyzed by western blotting using antibodies as indicated.
+
 The ability of primary granulosa lutein cells from young animals to undergo RIPK3-mediated apoptosis in response to PGF2α allowed us to genetically verify the role of the RIPK3-RIPK1-FADD-caspase-8 pathway in luteum regression. To this end, we first induced hyper-ovulation in young female mice 4 weeks of age with gonadotropins and then treated them with DT as previously described (Carambula et al., 2002; Carambula et al., 2003; Figure 7—figure supplement 1C). The hyper-ovulation induced by gonadotropins generated multiple corpus lutea in the ovaries of these young mice (Figure 7D). The subsequent DT treatment induced the elevation of RIPK3 protein in their corpus lutea, and the induced RIPK3 was phosphorylated at the serine 164/threonine 165 sites (Figure 7D, E). Moreover, the treatment of DT caused active caspase-3 signal to appear in the corpus lutea of wild-type ovaries (Figure 7F, G). Mice with their PTGFR gene knocked out failed to elevate the RIPK3 level in response to PGF2α (Figure 6—figure supplement 1C, D, Figure 7E). Although DT treatment induced the elevation of phosphorylation-resistant RIPK3(S165A/T166A) protein in the ovaries of Ripk3S165A-T166A/S165A-T166A knock-in mice to the same level as wild-type RIPK3 protein (Figure 7—figure supplement 1D), significantly less active caspase-3 signal was observed in these ovaries, similar to the ovaries of Ripk3-/-, Fadd-/-/Mlkl-/-, or Ptgfr-/- mice, confirming that the observed DT-induced apoptosis in luteal cells was through the RIPK3/FADD-mediated apoptosis pathway triggered by the phosphorylation of serine 165/threonine 166 sites (Figure 7F, G). We further co-stained the ovaries with antibodies against active caspase-3 and phospho-S165/T166 RIPK3 and found that most of the positive signals were overlapping (Figure 7H), indicating that serine 165/threonine 166 phosphorylated RIPK3 activates apoptosis in corpus luteum, triggered by PGF2α. Interestingly, although significantly lower overall, there was more active caspase-3 in Ripk3-/- and Ripk3S165A-T166A/S165A-T166A ovaries than in Fadd-/-/Mlkl-/- ovaries, suggesting that there might be a redundant RIPK3-independent but FADD-dependent apoptosis pathway that also functions in resolving the corpus luteum in this model. This residue cell death could be through the classic extrinsic apoptosis pathway described previously (Carambula et al., 2003; Hu et al., 2001). Collectively, these results demonstrated that most of the corpus luteum involution induced by PGF2α is through the RIPK3-RIPK1/FADD/caspase-8 pathway triggered by RIPK3 induction and phosphorylation at serine 165/threonine 166.
 
 ## Discussion
 
-## The function of RIPK3 in apoptosis and necroptosis is controlled by phosphorylation of the amino acid residue serine 164
+### The function of RIPK3 in apoptosis and necroptosis is controlled by phosphorylation of the amino acid residue serine 164
 
 The apoptotic role of RIPK3 has been observed ever since RIPK3 was first identified (Sun et al., 1999). The initial characterization of RIPK3, mainly by ectopic overexpression, indicated that it functioned in apoptosis (Sun et al., 1999). Later, however, RIPK3 was identified as a key signaling molecule for necroptosis due to its ability to specifically phosphorylate MLKL, the executioner of this form of cell death (Cho et al., 2009; He et al., 2009; Zhang et al., 2009; Sun et al., 2012). The debate of the apoptotic or necroptotic role of RIPK3 was further brought to the front by the observation that the D161N mutation of RIPK3 (D160N of human origin), a mutation that takes out the key DFG motif of the kinase active site and renders RIPK3 kinase-inactive, caused spontaneous apoptosis by activating caspase-8 through RIPK1 and FADD (Newton et al., 2014). Yet surprisingly, another kinase-dead mutant of RIPK3, the K51A mutant, does not induce apoptosis like D161N, but instead only starts to signal to apoptosis in the presence of small-molecule RIPK3 kinase inhibitors that occupy the ATP-binding site of the kinase domain (Mandal et al., 2014). These observations suggest that it is not the inactivation of kinase activity per se that switches RIPK3 function from necroptosis to apoptosis. It is more likely the conformational change that happens due to particular mutations or kinase inhibitor binding that triggered such a change. We now propose that this mutation-induced change of RIPK3 function from pro-necroptotic to apoptotic most likely mimicked the specific phosphorylation at the serine 164 (mouse 165) site. The serine 164 amide nitrogen forms a conserved H-bond with the carbonyl oxygen of phenylalanine 160 (part of the DFG motif of kinase), a feature important to maintain the RIPK3 active configuration (Xie et al., 2013). Introducing a phosphate group at this site conceivably disrupts this critical interaction, resulting in loss of function of the RIPK3 kinase and a conformational change that allows the RHIM domain to be available for RHIM-RHIM interaction between RIPK3 and RIPK1. Since it is the amide, not the side chain of serine 164 that participates in maintaining the active configuration of RIPK3, it is not surprising that the phosphorylation-resistant mutant S164A/T165A retains the kinase activity and is still able to signal to necroptosis, although such a mutation loses its apoptosis-inducing activity. Interestingly, RIPK1 protein functions here purely as an adaptor for the recruitment of FADD and caspase-8, and its kinase activity is not required for this apoptosis function. Therefore, unlike the apoptosis and necroptosis-inducing functions of RIPK1 when it responds to the activation of the TNF receptor family of proteins, the apoptosis-inducing activity of RIPK1 that is initiated by RIPK3 phosphorylation is not sensitive to RIPK1 kinase inhibitors.
 
 Although we cannot completely rule out the possibility of another yet to be identified kinase(s) that carries out the phosphorylation of serine 164/threonine 165 of RIPK3, our current data favor the idea that the phosphorylation is catalyzed by RIPK3 itself. Both D160N and K50A kinase-dead mutant RIPK3 failed to generate the phospho-serine 164/threonine 165 signal (Figure 3C, Figure 3—figure supplement 1C). Especially, the K50 site is not in the proximity of the S164/T165 phosphorylation sites, thus, the loss of phosphorylation is unlikely due to interference with substrate recognition that might have occurred with the D160N mutant, if the phosphorylation is carried out by another kinase.
 
-## The level of RIPK3 chaperone Hsp90/CDC37 determines the cellular necroptotic or apoptotic function of RIPK3
+### The level of RIPK3 chaperone Hsp90/CDC37 determines the cellular necroptotic or apoptotic function of RIPK3
 
 Our investigation has now clearly shown that RIPK3 naturally has dual roles in both necroptosis and apoptosis. In cells in which the RIPK3 kinase predominantly signals to necroptosis, like in human colon cancer HT29 cells, the RIPK3 chaperone Hsp90/CDC37 level is relatively high, which allows RIPK3 to fold into a configuration that can only be activated by upstream signaling molecules, be that either RIPK1 in response to TNF receptor family members, or TRIF and ZBP1/DAI in response to toll-like receptors or Z-RNA, respectively. In this case, RIPK3 kinase activity is silent, and no auto-phosphorylation signal or downstream substrate MLKL phosphorylation occurs before upstream activation signals arrive.
 
@@ -122,7 +182,7 @@ We noticed previously that Hsp90 inhibitors developed against human Hsp90 did no
 
 Serine 164/threonine 165 phosphorylation of RIPK3 seems to be a unique biomarker for this RIPK3-mediated apoptosis pathway. Our development of a monoclonal antibody that specifically recognizes this phosphorylation event should be useful to identify tissues and cells in which this pathway is activated.
 
-## PGF2α induces RIPK3-mediated apoptosis in luteal granulosa cells for luteum regression
+### PGF2α induces RIPK3-mediated apoptosis in luteal granulosa cells for luteum regression
 
 One of the tissues in which this specific anti-phospho-S164/T165 monoclonal antibody picked up a signal was in luteal granulosa cells of aged mouse ovary. The appearance of this phospho-RIPK3 signal in the ovary coincident with the elevation of PGF2α level and indeed, an analog of PGF2α was able to induce the expression of S165/T166 phosphorylated RIPK3 and apoptosis in the primary granulosa cells from ovaries of young wild-type mice (Figure 7). The phenomenon of PGF2α–induced RIPK3 expression in the mouse ovary granulosa cells allowed us to genetically validate this intracellular apoptotic pathway. In a hyper-ovulation model in which many egg follicles from young mice were induced to mature simultaneously, the accumulated granulosa cells in the ovary of wild-type mice can be triggered into resolution by an agonist (DT) of PGF2α through RIPK3-mediated apoptosis. However, DT could not induce apoptosis and luteum resolution in the ovary of PGF receptor knockout, RIPK3 knockout, FADD/MLKL double knockout, and Ripk3S165A-T166A/S165A-T166A knock-in mice, confirming this intracellular pathway of apoptosis in vivo.
 
@@ -130,74 +190,588 @@ Although the RIPK3-mediated apoptosis can be recapitulated in this hyper-ovulati
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HT-29</td>
+      <td>ATCC</td>
+      <td>HTB-38</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7</td>
+      <td>ATCC</td>
+      <td>HTB-22</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>KGN</td>
+      <td>Nishi et al., 2001</td>
+      <td>N/A</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>L929(Ripk3-/-)</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>KGN/TO-RIPK3</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>KGN/TO- RIPK3(S164A/T165A)</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7/TO-RIPK3</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7/TO- RIPK3(D160N)</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7/TO- RIPK3(K50A)</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7/TO- RIPK3(S164A/T165A)</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7/TO-RIPK3 (RIPK1-/-/Caspase-8-/-/FADD-/-/cFLIP-/-)</td>
+      <td>Dr. Xiaodong Wang lab at National Institute of Biological Sciences, Beijing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RIPK3 (Rabbit polyclonal)</td>
+      <td>ProSci</td>
+      <td>Cat# 2283; RRID:AB_203256</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-S164/T165-RIPK3 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# Ab255705;</td>
+      <td>Firstly described in this paper; WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RIPK3 (Mouse monoclonal)</td>
+      <td>LSBio</td>
+      <td>Cat# LS-C336804</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH-HRP (Mouse monoclonal)</td>
+      <td>MBL</td>
+      <td>Cat# M171-1; RRID:AB_10699462</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin-HRP (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# PM053-7; RRID:AB_10697035</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tubulin-HRP (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# PM054-7; RRID:AB_10695326</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag-HRP (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A8592; RRID:AB_439702</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RIPK1 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3493S; RRID:AB_2305314</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved-caspase3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 9661; RRID:AB_2341188</td>
+      <td>WB (1:1000) IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse-MLKL (Rabbit polyclonal)</td>
+      <td>ABGENT</td>
+      <td>Cat# AP14272b; RRID:AB_11134649</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human-MLKL (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab184718; RRID:AB_2755030</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-caspase-8 (Mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 9746; RRID:AB_2275120</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FADD (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2782; RRID:AB_2100484</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-S227-RIP3 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab209384; RRID:AB_2714035</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-S232-RIP3 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab222302</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cFLIP (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6144; RRID:AB_305314</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved-caspase-3 (Mouse monoclonal)</td>
+      <td>St John's Laboratory</td>
+      <td>Cat# STJ97448</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-prostaglandin F2 alpha (PTGFR) (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab203342</td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP90 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 13171-1-AP;RRID:AB_2120924</td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDC37 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab108305; RRID:AB_10861724</td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG M2 (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F1840</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p44/42 MAPK (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4370S; RRID:AB_2315112</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p44/42 MAPK (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4965S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-MEK1/2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 9154S; RRID:AB_2138017</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MEK1/2 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab178876</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse, Alexa Fluor 488 (Mouse polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21202; RRID:AB_141607</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse, Alexa Fluor 555 (Mouse polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-31570; RRID:AB_2536180</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit, Alexa Fluor 488 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21206; RRID:AB_141708</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit, Alexa Fluor 555 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-31572; RRID:AB_162543</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag M2 affinity gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag-RIPK3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(D160N)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(K50A)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(AAAA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag-mRIPK3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag-RIPK3(S164D/T165E)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(S164E)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(T165E)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(S164A)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(T165A)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- RIPK3(S164A/T165A)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag-mRIPK3(D161N)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI-HA-3xFlag- mRIPK3(S165D/T166E)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-Tight-HA-3xFlag-RIPK3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-Tight-HA-3xFlag- RIPK3(D160N)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-Tight-HA-3xFlag- RIPK3(K50A)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-Tight-HA-3xFlag- RIPK3(S164A/T165A)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX458-GFP-RIPK1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX458-GFP-caspase-8</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX458-GFP-FADD</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX458-GFP-cFLIP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods; available upon request</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3xFlag peptide</td>
+      <td>ChinaPeptides</td>
+      <td>DYKDHDGDYKDHDIDYKDDDDK</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Lasergene</td>
+      <td>DNASTAR</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad</td>
+      <td>GraphPad Software</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon A1-R</td>
+      <td>Nikon</td>
+      <td>https://www.nikoninstruments.com/Products/Confocal-Microscopes/A1R-HD</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The Ripk3-/- and Mlkl-/- mice (C57BL/6J strain) have been described previously (He et al., 2009; Ying et al., 2018). Fadd+/-Mlkl-/- mice were provided by Dr. Haibing Zhang (Institute for Nutritional Sciences, Shanghai, China) (±). C57BL/6J wild-type (WT) mice were obtained from Vital River Laboratory Co. WT, Ripk3-/-, Mlkl-/-, and Fadd-/-Mlkl-/- mice were produced and maintained at the SPF animal facility of the National Institute of Biological Sciences, Beijing. Ripk3-/- mice were produced by mating Ripk3-/- males with Ripk3-/- females. Fadd-/-Mlkl-/- mice were produced by mating Fadd+/-Mlkl-/- males with Fadd+/- ±l-/- females. Ripk3S165D-T166E/ S165D-T166E and Ripk3S165A-T166A/ S165A-T166A knock-in mice were generated using the CRISPR-Cas9 system (Figure 5—figure supplement 1). The Ripk3 C terminus HA-3xFlag knock-in and Ptgfr knockout mice were generated using the CRISPR-Cas9 system (Figure 6—figure supplement 1).
 
 The primers used for genotyping are listed below:
 
-## Mouse husbandry
+### Mouse husbandry
 
 Mice were housed in a 12 hr light/dark (light between 08:00 and 20:00) in a temperature-controlled room (21.1 ± 1°C) at the National Institute of Biological Sciences with free access to water. The ages of mice are indicated in the figure, figure legends, or methods. All animal experiments were conducted following the Ministry of Health national guidelines for the housing and care of laboratory animals and were performed in accordance with institutional regulations after review and approval by the Institutional Animal Care and Use Committee at the National Institute of Biological Sciences, Beijing.
 
-## Cell lines and cell cultures
+### Cell lines and cell cultures
 
 All cells were cultured at 37°C with 5% CO2. All cell lines were cultured as follows: HT29 cells were obtained from ATCC and cultured in McCoy’s 5A culture medium (Invitrogen). HEK293T, HeLa, and MCF7 cells were obtained from ATCC and cultured in DMEM (Hyclone). L929(Ripk3-/-) cells were cultured in DMEM (Hyclone) (Ying et al., 2018). Human granulosa tumor cell line (KGN) (Nishi et al., 2001) were kindly provided by Dr. Qiao Jie from Peking University Third Hospital in China and were cultured in DMEM:F12 Medium (Hyclone). Stable KGN or MCF7 cell lines expressing the Tet repressor (KGN-Tet-On cells and MCF7-Tet-On cells) were selected with 1 mg/ml G418 after being infected with virus encoding Tet repressor. KGN-Tet-On and MCF7-Tet-On cells were infected with virus encoding 3xFlag-RIPK3 or another mutant and were selected with 10 μg/ml puromycin to establish the KGN/TO-RIPK3/RIPK3(S164A/T165A) and MCF7/TO-RIPK3/RIPK3(D160N)/RIPK3(S164A/T165A) cell lines. All media were supplemented with 10% FBS (Thermo Fisher) and 100 units/ml penicillin/streptomycin (Thermo Fisher).
 
-## Plasmids constructs
+### Plasmids constructs
 
 Full-length human RIPK3, RIPK3(AAAA) (RIPK1 interaction mutant RIPK3, the residues 459–462 within RHIM region were mutated to four alanine residues) and mouse RIPK3 cDNA were kept in our lab and subcloned into the pWPI vector (GFP-tagged) to generate pWPI-HA-3xFlag-RIPK3/RIPK3(D160N)/RIPK3(AAAA) and pWPI-HA-3xFlag-mRIPK3 virus construct. Using Quickchange Site-Directed Mutagenesis Kit to generate pWPI-HA-3xFlag-RIPK3(D160N)/RIPK3(S164D/T165E)/RIPK3(S164E)/RIPK3(T165E)/RIPK3(S164A/T165A)/RIPK3(S164A)/RIPK3(T165A) and pWPI-HA-3xFlag-mRIPK3(D161N)/mRIPK3(S165D/T166E) virus construct.pLVX-Tight-Puro Vector and pLVX-Tet-On Advanced were kindly provided by Dr. Wenhui Li lab at NIBS. Full-length human RIPK3 or RIPK3 mutant were subcloned into the pLVX-Tight-Puro Vector to generate pLVX-Tight-HA-3xFlag-RIPK3/RIPK3(D160N)/RIPK3(S164A/T165A) construct. The gRNAs for targeting RIPK1 (5′-ATGCTCTTACCAGGAAATGT-3′), Caspase-8 (5′-TGATCGACCCTCCGCCAGAA-3′), FADD (5’-AGTCGTCGACGCGCCGCAGC-3′), and cFLIP (5′-TACCAGACTGCTTGTACTTC-3′) were designed and cloned into the gRNA-Cas9 expression plasmid pX458-GFP to generate pX458-GFP-RIPK1/caspase-8/FADD/cFLIP construct.
 
-## Cell survival assay
+### Cell survival assay
 
 Cell survival assay was performed using Cell Titer-Glo Luminescent Cell Viability Assay kit. A Cell Titer-Glo assay (Promega, G7570) was performed according to the manufacturer’s instructions. Luminescence was recorded with a Tecan GENios Pro plate reader.
 
-## Transfections
+### Transfections
 
 HeLa or HEK293T cells were transfected with plasmids using Lipofectamine 3000 (Thermo Fisher Scientific) following the manufacturer’s instructions.
 
-## Virus packaging
+### Virus packaging
 
 To prepare the virus, HEK293T cells in the 10 cm dish were transfected with 15 μg of pWPI Vector (Vec, control viruses), pWPI-HA-3xFlag-RIPK3/RIPK3(D160N)/RIPK3(AAAA)/RIPK3(S164D/T165E)/RIPK3(S164E)/RIPK3(T165E)/RIPK3(S164A/T165A)/RIPK3(S164A)/RIPK3(T165A), pLVX-Tight-3xFlag-RIPK3/RIPK3(D160N)/RIPK3(S164A/T165A) or pLVX-Tet-On Advanced DNA together with 11.25 μg of psPAX2 and 3.75 μg of pMD2.G. 8 hr after transfection, the media were changed to high-serum DMEM (20% FBS with 25 mM HEPES). Another 40 hr later, the media were collected and centrifuged at 3000 rpm for 10 min. The supernatant was filtered through a 0.22 μm membrane, and aliquots of 15 ml were stored at −80°C.
 
-## CRISPR/Cas9 knockout cells
+### CRISPR/Cas9 knockout cells
 
 4 μg of pX458-GFP-RIPK1/caspase-8/FADD/cFLIP plasmid was transfected into 1 × 107 MCF7/TO-RIPK3 cells using the Transfection Reagent (FuGENEHD) by following the manufacturer’s instructions. 3 days after the transfection, GFP-positive live cells were sorted into single clones by using a BD FACSArial cell sorter. The single clones were cultured into 96-well plates for another 10–14 days or longer, depending upon the cell growth rate. The anti-RIPK1/caspase-8/FADD/cFLIP immunoblotting was used to screen for the MCF7/TO-RIPK3 (RIPK1-/-/Caspase-8-/-/FADD-/-/cFLIP-/-) clones. Genome type of the knockout cells was determined by DNA sequencing.
 
-## Western blotting
+### Western blotting
 
 Western blotting was performed as previously described. Cell pellet samples were collected and re-suspended in lysis buffer (100 mM Tris-HCl, pH 7.4, 100 mM NaCl, 10% glycerol, 1% Triton X-100, 2 mM EDTA, Roche complete protease inhibitor set, and Sigma phosphatase inhibitor set), incubated on ice for 30 min, and centrifuged at 20,000 × g for 30 min. The supernatants were collected for western blotting. Ovary or other tissue were ground and re-suspended in lysis buffer, homogenized for 30 s with a Paddle Blender (Prima, PB100), incubated on ice for 30 min, and centrifuged at 20,000 × g for 30 min. The supernatants were collected for western blotting.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 The cells were cultured on 10 cm dishes and grown to confluence. Cells at 70% confluence with or without Dox (1 μg/ml) induction for 24 hr. Then cells were washed once with PBS and harvested by scraping and centrifugation at 800 × g for 5 min. The harvested cells were washed with PBS and lysed for 30 min on ice in the lysis buffer. Cell lysates were then spun down at 12,000 × g for 20 min. The soluble fraction was collected, and the protein concentration was determined by Bradford assay. Cell extracted was mixed with anti-Flag affinity gel (Sigma-Aldrich, A2220) in a ratio of 1 mg of extract per 30 μl of agarose. After overnight rocking at 4°C, the beads were washed three times with lysis buffer. The beads were then eluted with 0.5 mg/ml of the corresponding antigenic peptide for 6 hr or directly boiled in 1 × SDS loading buffer (125 mM Tris, PH 6.8, 2% 2-mercaptoethanol, 3% SDS, 10% glycerol, and 0.01% bromophenol blue).
 
-## Tissue collection
+### Tissue collection
 
 Mice were sacrificed and perfused with PBS. Tissues for stain comparisons were taken at the same stage of the estrous cycle: ovarian were taken from all mice during diestrus. Major organs were removed, cut into appropriately sized pieces, and either flash-frozen in liquid nitrogen and stored at −80°C or placed in 4% paraformaldehyde for preservation. After several days of 4% paraformaldehyde fixation at room temperature, tissue fragments were transferred to 70% ethanol and stored at 4°C.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Paraffin-embedded specimens were sectioned to a 5 μm thickness and were then deparaffinized, rehydrated, and stained with hematoxylin and eosin (H&E) using standard protocols. For the preparation of the immunohistochemistry samples, sections were dewaxed, incubated in boiling citrate buffer solution for 15 min in plastic dishes, and subsequently allowed to cool down to room temperature over 3 hr. Endogenous peroxidase activity was blocked by immersing the slides in hydrogen peroxide buffer (10%, Sinopharm Chemical Reagent) for 15 min at room temperature and were then washed with PBS. Blocking buffer (1% bovine serum albumin in PBS) was added, and the slides were incubated for 2 hr at room temperature. Primary antibody against Flag, RIPK3, cleaved-caspase-3, and p-S164/T165-RIPK3 was incubated overnight at 4°C in PBS. After three washes with PBS, slides were incubated with secondary antibody (polymer-horseradish-peroxidase-labeled anti-rabbit, Sigma) in PBS. After a further three washes, slides were analyzed using a diaminobutyric acid substrate kit (Thermo Fisher). Slides were counterstained with hematoxylin and mounted in neutral balsam medium (Sinopharm Chemical).
 
 Immunohistochemistry analysis for RIPK3 or p-S164/T165-RIPK3 was performed using an antibody against RIPK3 and p-S164/T165-RIPK3. Primary antibody against cleaved-caspase-3 or p-S164/T165-RIPK3 was incubated overnight at 4°C in PBS. After three washes with PBS, slides were incubated with DyLight-555/488 conjugated donkey anti-rabbit/mouse secondary antibodies (Thermo Fisher) in PBS for 8 hr at 4°C. After a further three washes, slides were incubated with RIPK3 or p-S164/T165-RIPK3 antibody overnight at 4°C in PBS. After a further three washes, slides were incubated with DyLight-488/555 conjugated donkey anti-mouse/rabbit secondary antibodies (Thermo Fisher) for 2 hr at room temperature in PBS. After a further three washes in PBS, the cell nuclei were then counterstained with DAPI (Thermo Fisher) in PBS. Fluorescence microscopy was performed using a Nikon A1-R confocal microscope.
 
-## Isolation of the bone marrow-derived macrophages
+### Isolation of the bone marrow-derived macrophages
 
 Macrophages were isolated from the Ripk3+/+ and Ripk3S165D-T166E/S165D-T166E littermate mice and a caspase inhibitor z-VAD-fmk was added when culture these BMDMs. We noticed that the caspase inhibitor was needed to prevent spontaneous BMDM cell death when isolated from Ripk3S165D-T166E/S165D-T166E mice.
 
-## Isolation of mice granulosal lutein cells from ovaries (Newton et al., 1999; Tian et al., 2015)
+### Isolation of mice granulosal lutein cells from ovaries (Newton et al., 1999; Tian et al., 2015)
 
 Ovaries from 3-month-old wild-type mice were collected and placed in Enriched DMEM:F12 (Hyclone) media and placed on ice. Ovaries were ground on the strainer (40 μm) with forceps. Centrifuge the cell suspension at 900 × g for 5 min at 4°C, wash three times with PBS. The cells pellet were incubated with trypsin for 15–20 min at 37°C in a shaking water bath at 80 oscillations (osc)/min and were then layered over 40 ml 5% Percoll/95% 1× Hank’s balanced salt solution in a 50 ml conical tube and allowed to settle for 20 min. After incubation, 3 ml charcoal-stripped FBS was immediately added to halt the digestion. All fractions were mixed and immediately centrifuged at 900 × g for 10 min at 4°C. Pellets were re-suspended in PBS and washed three times, then cultured in DMEM:F12 (10% FBS) medium at 37°C with 5% CO2. After 24 hr, the suspended granulosal lutein cells were collected and cultured in a new cell dish. The adherent follicular granulosa cells were then treated with the indicated stimuli. The cell lysates were analyzed by western blotting.
 
-## In vivo studies of luteal regression
+### In vivo studies of luteal regression
 
 Wild-type, Ripk3-/-, Fadd-/-Mlkl-/-, Ripk3S165A-T166A/ S165A-T166A, and Ptgfr-/- female mice (each group, n = 16) at day 25–26 postpartum were intraperitoneally injected with 7.5 IU (100 μl/mouse) pregnant mare serum gonadotropin (PMSG) followed by intraperitoneal injection with 7.5 IU (100 μl/mouse) serum gonadotropin and chorionic gonadotropin (SCG) 46 hr later to induce superovulation. Those mice were injected with DT (10 μg, IP) or saline at 24 hr after post-ovulation. Ovaries were then collected at 12 or 24 hr post-injection. In some experiments, ovaries were ground and re-suspended in lysis buffer, homogenized for 30 s with a Paddle Blender (Prima, PB100), incubated on ice for 30 min, and centrifuged at 20,000 × g for 30 min. The supernatants were analyzed by western blotting. In other experiments, ovaries were fixed with 4% paraformaldehyde, paraffin-embedded, serially sectioned (5 μm), and mounted in order on glass microscope slides. Ovarian mid-sagittal sections were used for immunohistochemical analysis with RIPK3 or cleaved-caspase-3 antibody.
 
-## Mass spectrometry and data analysis
+### Mass spectrometry and data analysis
 
 HeLa/TO-RIPK3 and MCF7/TO-RIPK3 cells were treated with Dox plus z-VAD for 24 hr. Then the cell extracts were prepared and used for immunoprecipitation with an anti-Flag antibody. The immunoprecipitates were washed three times with lysis buffer. The beads were then eluted with 0.5 mg/ml of the corresponding antigenic peptide for 6 hr or directly boiled in 1× SDS loading buffer and subjected to SDS-PAGE. RIPK3 bands were excised from SDS-PAGE gel and then dissolved in 2 M urea, 50 mM ammonium bicarbonate, pH 8.0, and reduced in 2 mM DTT at 56°C for 30 min followed by alkylation in 10 mM iodoacetamide at dark for 1 hr. Then the protein was digested with sequencing grade modified trypsin (Promega) (1: 40 enzyme to total protein) at 37°C overnight. The tryptic peptides were separated by an analytical capillary column (50 μm × 15 cm) packed with 5 μm spherical C18 reversed phase material (YMC, Kyoyo, Japan). A Waters nanoAcquity UPLC system (Waters, Milford, USA) was used to generate the following HPLC gradient: 0–30% B in 40 min, 30–70% B in 15 min (A = 0.1% formic acid in water, B = 0.1% formic acid in acetonitrile). The eluted peptides were sprayed into a LTQ Orbitrap Velos mass spectrometer (Thermo Fisher Scientific, San Jose, CA, USA) equipped with a nano-ESI ion source. The mass spectrometer was operated in data-dependent mode with one MS scan followed by four collision-nduced dissociation and four high-energy collisional dissociation MS/MS scans for each cycle. Database searches were performed on an in-house Mascot server (Matrix Science Ltd, London, UK) against Human RIPK3 protein sequence. The search parameters are 7 ppm mass tolerance for precursor ions; 0.5 Da mass tolerance for product ions; three missed cleavage sites were allowed for trypsin digestion and the following variable modifications were included: oxidation on methionine, cysteine carbamidomethylation, and serine, threonine, and tyrosine phosphorylation.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were repeated at least twice, with similar results. Data represent biological replicates. Statistical tests were used for every type of analysis. The data meet the assumptions of the statistical tests described for each figure. Results are expressed as the mean ± s.e.m or SD. Differences between experimental groups were assessed for significance using a two-sided unpaired Student’s t-test using GraphPad prism5 and Excel software. The *p<0.05, **p<0.01, and ***p<0.001 levels were considered significant. NS indicates not significant.

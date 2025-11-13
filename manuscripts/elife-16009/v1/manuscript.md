@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.16009.001 Congenital diaphragmatic hernia (CDH) is a severe birth defect. Wt1-null mouse embryos develop CDH but the mechanisms regulated by WT1 are unknown. We have generated a murine model with conditional deletion of WT1 in the lateral plate mesoderm, using the G2 enhancer of the Gata4 gene as a driver. 80% of G2- Gata4 Cre ; Wt1 fl/fl embryos developed typical Bochdalek-type CDH. We show that the posthepatic mesenchymal plate coelomic epithelium gives rise to a mesenchyme that populates the pleuroperitoneal folds isolating the pleural cavities before the migration of the somitic myoblasts. This process fails when Wt1 is deleted from this area. Mutant embryos show Raldh2 downregulation in the lateral mesoderm, but not in the intermediate mesoderm. The mutant phenotype was partially rescued by retinoic acid treatment of the pregnant females. Replacement of intermediate by lateral mesoderm recapitulates the evolutionary origin of the diaphragm in mammals. CDH might thus be viewed as an evolutionary atavism. DOI: http://dx.doi.org/10.7554/eLife.16009.001
+Congenital diaphragmatic hernia (CDH) is a severe birth defect. Wt1-null mouse embryos develop CDH but the mechanisms regulated by WT1 are unknown. We have generated a murine model with conditional deletion of WT1 in the lateral plate mesoderm, using the G2 enhancer of the Gata4 gene as a driver. 80% of G2-Gata4Cre;Wt1fl/fl embryos developed typical Bochdalek-type CDH. We show that the posthepatic mesenchymal plate coelomic epithelium gives rise to a mesenchyme that populates the pleuroperitoneal folds isolating the pleural cavities before the migration of the somitic myoblasts. This process fails when Wt1 is deleted from this area. Mutant embryos show Raldh2 downregulation in the lateral mesoderm, but not in the intermediate mesoderm. The mutant phenotype was partially rescued by retinoic acid treatment of the pregnant females. Replacement of intermediate by lateral mesoderm recapitulates the evolutionary origin of the diaphragm in mammals. CDH might thus be viewed as an evolutionary atavism.
 
 ## Introduction
 
@@ -37,73 +37,176 @@ To study the role of WT1 in CDH we performed loss-of-function experiments by con
 
 ## Results
 
-## The septum transversum, posthepatic mesenchymal plate and pleuroperitoneal folds contain heterogeneous mesenchymal populations
+### The septum transversum, posthepatic mesenchymal plate and pleuroperitoneal folds contain heterogeneous mesenchymal populations
 
-In normal E10.5 embryos, the posterior and dorsal margin of the liver shows an accumulation of mesenchymal tissue, which extends from the dorsal mesenterium of the liver to the lateral tips of the lobes (
+In normal E10.5 embryos, the posterior and dorsal margin of the liver shows an accumulation of mesenchymal tissue, which extends from the dorsal mesenterium of the liver to the lateral tips of the lobes (Figure 1). This mesenchymal layer is the PHMP described by Iritani (1984). The PPFs, by this developmental stage, appear as a pair of outgrowths of the body wall located at both sides of the lung buds. (Figure 1A,B). They are also constituted of mesenchymal cells lined by the coelomic epithelium. The G2-Gata4 enhancer directed LacZ reporter expression in both PPF and PHMP at E10.5 and E11.5 in the mouse embryo (Figure 1A). However, no beta galactosidase activity was observed in the posterior and medial part of the septum transversum, where the liver is connected with the digestive tract (asterisk in Figure 1A), indicating that the G2 enhancer is not active in this specific domain.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16009/elife-16009-fig1-v1.jpg)
 
-**Figure 1.:** (A) G2-LacZ embryo at the stage E11.5. The G2 enhancer is active in the liver (LI) mesothelium and posthepatic mesenchymal plate (PHMP). However, the central area of the septum transversum shows no activity of this enhancer (asterisk). (B) Wt1embryo, E10.5. Cells from the WT1 lineage appear in blue. Series of transverse sections from cephalic (left) to caudal (right) levels. The anterior peritoneal recess (PR) is splitting the liver from the body wall. The PHMP is continuous with the PPF at cephalic levels. Note the abundance of mesenchymal cells in the anterior PHMP and how this mesenchyme is less abundant in posterior levels. The PPF is continuous with the renal ridge (RR). The mesenchymal cells of all these structures belong to a WT1-expressing cell lineage. (Cre;R26RLacZ C) Wt1embryo, E11.5. Activation of the LacZWt1 reporter can be seen in the liver mesothelium. PHMP, PPF and RR. The RRs appear at the level of the stomach (STO). OE: oesophagus. (D) Wt1 embryo, E11.5. Cells from the WT1-expressing cell lineage (green) are more abundant at the right PHMP (R) as compared with the left one (L). Note the lack of YFP+ cells in the central area of the ST. AO: aorta; LU: lung. (Cre;R26RYFPE) G2-Gata4Cre; R26R embryo, E11.5. Cells from the lineage expressing GATA4 under the control of the G2 enhancer are stained in green, and RALDH2 is stained in red. Most cells in the PHMP and PPFs belong to the G2-YFPGata4 lineage, but they are very scarce in the central area of the ST. Abundant YFP+ cells are present dorsally to the aorta, and around the notochord (NC). (F) G2-Gata4Cre; R26R embryo, E11.5. GATA4 immunostaining in red. Colocalization of GATA4 and YFP is observed in the PHMP and PPF, but the central area of the ST shows GATA4 expression not driven by the G2 enhancer. (YFPG) G2-Gata4 embryo, E11.5. Smooth muscle alpha-actin is stained in red. Gonads (GON) and adrenals (AD) contain a large number of G2-Cre; R26RYFPGata4 lineage cells, but they are scarcer into the mesonephros (MN). Data reused, with permission, from Figure 4A, Muñoz-Chápuli et al. Developmental Dynamics, Special Issue: Mechanisms of Morphogenesis, 245:307–322 (2016). © 2015 Wiley Periodicals, Inc. (H) Immunolocalization of GATA4 (red) in an E10.5 G2-Gata4 embryo. The G2 lineage is shown in green. There is a sharp boundary (arrow) between the mesothelial cells expressing GATA4 of the genital ridge (GR), close to the dorsal mesentery (DM), and the mesothelial cells of the renal ridges (RR), which are GATA4-. AO: aorta; OE: oesophagus.Cre; R26RYFPDOI: http://dx.doi.org/10.7554/eLife.16009.002
+**Figure 1.:** (A) G2-LacZ embryo at the stage E11.5. The G2 enhancer is active in the liver (LI) mesothelium and posthepatic mesenchymal plate (PHMP). However, the central area of the septum transversum shows no activity of this enhancer (asterisk). (B) Wt1Cre;R26RLacZ embryo, E10.5. Cells from the WT1 lineage appear in blue. Series of transverse sections from cephalic (left) to caudal (right) levels. The anterior peritoneal recess (PR) is splitting the liver from the body wall. The PHMP is continuous with the PPF at cephalic levels. Note the abundance of mesenchymal cells in the anterior PHMP and how this mesenchyme is less abundant in posterior levels. The PPF is continuous with the renal ridge (RR). The mesenchymal cells of all these structures belong to a WT1-expressing cell lineage. (C) Wt1LacZembryo, E11.5. Activation of the Wt1 reporter can be seen in the liver mesothelium. PHMP, PPF and RR. The RRs appear at the level of the stomach (STO). OE: oesophagus. (D) Wt1Cre;R26RYFP embryo, E11.5. Cells from the WT1-expressing cell lineage (green) are more abundant at the right PHMP (R) as compared with the left one (L). Note the lack of YFP+ cells in the central area of the ST. AO: aorta; LU: lung. (E) G2-Gata4Cre; R26RYFP embryo, E11.5. Cells from the lineage expressing GATA4 under the control of the G2 enhancer are stained in green, and RALDH2 is stained in red. Most cells in the PHMP and PPFs belong to the G2-Gata4 lineage, but they are very scarce in the central area of the ST. Abundant YFP+ cells are present dorsally to the aorta, and around the notochord (NC). (F) G2-Gata4Cre; R26RYFP embryo, E11.5. GATA4 immunostaining in red. Colocalization of GATA4 and YFP is observed in the PHMP and PPF, but the central area of the ST shows GATA4 expression not driven by the G2 enhancer. (G) G2-Gata4Cre; R26RYFP embryo, E11.5. Smooth muscle alpha-actin is stained in red. Gonads (GON) and adrenals (AD) contain a large number of G2-Gata4 lineage cells, but they are scarcer into the mesonephros (MN). Data reused, with permission, from Figure 4A, Muñoz-Chápuli et al. Developmental Dynamics, Special Issue: Mechanisms of Morphogenesis, 245:307–322 (2016). © 2015 Wiley Periodicals, Inc. (H) Immunolocalization of GATA4 (red) in an E10.5 G2-Gata4Cre; R26RYFP embryo. The G2 lineage is shown in green. There is a sharp boundary (arrow) between the mesothelial cells expressing GATA4 of the genital ridge (GR), close to the dorsal mesentery (DM), and the mesothelial cells of the renal ridges (RR), which are GATA4-. AO: aorta; OE: oesophagus.
 
 PHMP and PPFs are not anatomically independent entities. The lateral tips of the PHMP appear continuous with the PPFs at the cephalic level while they are separated more caudally (Figure 1B). The continuous part of the PHMP/PPFs ensemble apparently forms itself by the anterior growth of the peritoneal recess, which separates the liver sides from the body wall. Thus, the mesenchymal population of the ST originates the PHMP and also the most cephalic portion of the PPFs. The lateral closure of the pleural cavities occurs between E11.5 and E12.5 by posterior growth of the crescent-like continuum formed by the PHMP and the PPFs, a process which is parallel to the fast growth of the liver lobes during these stages (Figure 1B,C).
 
-As seen in the
+As seen in the Wt1Cre labeled cells, the PPFs continue posteriorly as the nephric ridges, the progenitor tissue of the mesonephros (Figure 1B and C). A loose mesenchymal tissue appears in the PPF between the more compact arrangement of the cells in the PHMP and in the renal ridges, but the commissural area of the PPF is always constituted by compact mesenchyme similar to that from the PHMP (arrow in Figure 2C). All these mesenchymal populations are derived from a WT1-expressing cell lineage, as shown by two models, the Wt1Cre;R26RLacZ (Figure 1B) and the Wt1Cre;R26RYFP (Figure 1D). Expression of the Wt1 gene is also revealed in the PPF and PHMP mesenchyme by the WT1-LacZ reporter and by immunohistochemistry (Figures 1C and 3A, respectively).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/16009/elife-16009-fig2-v1.jpg)
 
-**Figure 2.:** Gata4embryos.Cre; Wt1fl/fl (A–D) Wildtype (A,C) and mutant (B,D), E10.5 littermates. The larger amount of mesenchymal cells in the posthepatic mesenchymal plate (PHMP) is evident in the wildtype, especially in the right side. Serial sections corresponding to the connection between the PHMP and the pleuroperitoneal folds (PPF) are shown in C. Note the presence of compact mesenchyme in the PHMP and also in the closest part of the PPF (arrow in C). A corresponding section of the mutant in shown in D. Note the lack of PHMP, the coelomic epithelium lying directly on the hepatic tissue (arrows in D) and the limit of the septum transversum (ST) mesenchymal cells (arrowhead in D), which do not extend laterally. (E) Serial sections of a G2-Gata4E11.5 embryo at levels equivalent to those shown in Cre; Wt1fl/fl Figure 1C. Despite the presence of normal PHMP in the anterior part, the posterior areas of the liver lack of lateral mesenchymal cells (arrow). The mesenchyme is restricted to the central ST. Renal ridges (RR) appear at a level corresponding to the entrance of the oesophagus (OE) into the ST. MG: mesogastrium. (F) Wildtype E13.5 embryo showing complete isolation of the pleural cavities by the pleuroperitoneal membranes that constitute the main part of the diaphragm (D). (G) G2-Gata4E14.5 embryo at eight different levels showing left diaphragmatic defect with herniation of the left liver lobe (LI) into the pleural cavity and severe hypoplasia of the left lung (LL). Ectopic muscle appear in the mediastinum (MM). Adrenals (AD), mesonephros (MN), gonads (GON) and spleen (SP) appear normal. LU: lungs; H: heart; RL: right lung; STO: stomach.Cre; Wt1fl/fl DOI: http://dx.doi.org/10.7554/eLife.16009.003
+**Figure 2.:** (A–D) Wildtype (A,C) and mutant (B,D), E10.5 littermates. The larger amount of mesenchymal cells in the posthepatic mesenchymal plate (PHMP) is evident in the wildtype, especially in the right side. Serial sections corresponding to the connection between the PHMP and the pleuroperitoneal folds (PPF) are shown in C. Note the presence of compact mesenchyme in the PHMP and also in the closest part of the PPF (arrow in C). A corresponding section of the mutant in shown in D. Note the lack of PHMP, the coelomic epithelium lying directly on the hepatic tissue (arrows in D) and the limit of the septum transversum (ST) mesenchymal cells (arrowhead in D), which do not extend laterally. (E) Serial sections of a G2-Gata4Cre; Wt1fl/fl E11.5 embryo at levels equivalent to those shown in Figure 1C. Despite the presence of normal PHMP in the anterior part, the posterior areas of the liver lack of lateral mesenchymal cells (arrow). The mesenchyme is restricted to the central ST. Renal ridges (RR) appear at a level corresponding to the entrance of the oesophagus (OE) into the ST. MG: mesogastrium. (F) Wildtype E13.5 embryo showing complete isolation of the pleural cavities by the pleuroperitoneal membranes that constitute the main part of the diaphragm (D). (G) G2-Gata4Cre; Wt1fl/fl E14.5 embryo at eight different levels showing left diaphragmatic defect with herniation of the left liver lobe (LI) into the pleural cavity and severe hypoplasia of the left lung (LL). Ectopic muscle appear in the mediastinum (MM). Adrenals (AD), mesonephros (MN), gonads (GON) and spleen (SP) appear normal. LU: lungs; H: heart; RL: right lung; STO: stomach.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/16009/elife-16009-fig3-v1.jpg)
 
-**Figure 3.:** Gata4embryos.Cre; Wt1fl/fl(A,B) Immunolocalization of WT1 (A) and GATA4 (B) in wildtype E11.5 embryos. The posthepatic mesenchymal plate (PHMP) and pleuroperitoneal folds (PPF) show abundant positive cells. However, the WT1 immunoreactive cells are present in the base of the PPF and the adjacent body wall, where GATA4+ cells are absent. This difference defines the G2+ and the G2- domains. Data in A reused, with permission, from Figure 3E, Muñoz-Chápuli et al. Developmental Dynamics, Special Issue: Mechanisms of Morphogenesis, 245:307–322 (2016). © 2015 Wiley Periodicals, Inc. (C–D) Immunolocalization of WT1 (C) and GATA4 (D) in G2-Gata4 E11.5 embryos. The PHMP and the G2+ domain of the PPF show GATA4+ cells but no WT1+ cells due to the conditional deletion of this gene in the G2+ domain. WT1 expression remains in the G2- domain of the base of the PPF and body wall. GATA4 expression is normal in most cephalic PPF, but immunoreactivity disappears in more caudal areas of PPF, as shown in Cre; Wt1fl/flD’ and D’’. (E–H) Immunolocalization of RALDH2 in E10.5 (E,F) and E11.5 (G,H) wildtype and G2-Gata4mutant embryos. RALDH2 immunoreactivity is high in PPF and the adjacent body walls. Note strong immunoreactivity in the renal ridges (RR) of the E11.5 mutant embryo. However, RALDH2 immunoreactivity is reduced or absent in the PHMP and liver mesothelium of the mutant embryos, as compared with the controls. CV: cardinal veins; LU: lungs.Cre; Wt1fl/fl DOI: http://dx.doi.org/10.7554/eLife.16009.004
+**Figure 3.:** (A,B) Immunolocalization of WT1 (A) and GATA4 (B) in wildtype E11.5 embryos. The posthepatic mesenchymal plate (PHMP) and pleuroperitoneal folds (PPF) show abundant positive cells. However, the WT1 immunoreactive cells are present in the base of the PPF and the adjacent body wall, where GATA4+ cells are absent. This difference defines the G2+ and the G2- domains. Data in A reused, with permission, from Figure 3E, Muñoz-Chápuli et al. Developmental Dynamics, Special Issue: Mechanisms of Morphogenesis, 245:307–322 (2016). © 2015 Wiley Periodicals, Inc. (C–D) Immunolocalization of WT1 (C) and GATA4 (D) in G2-Gata4Cre; Wt1fl/fl E11.5 embryos. The PHMP and the G2+ domain of the PPF show GATA4+ cells but no WT1+ cells due to the conditional deletion of this gene in the G2+ domain. WT1 expression remains in the G2- domain of the base of the PPF and body wall. GATA4 expression is normal in most cephalic PPF, but immunoreactivity disappears in more caudal areas of PPF, as shown in D’ and D’’. (E–H) Immunolocalization of RALDH2 in E10.5 (E,F) and E11.5 (G,H) wildtype and G2-Gata4Cre; Wt1fl/fl mutant embryos. RALDH2 immunoreactivity is high in PPF and the adjacent body walls. Note strong immunoreactivity in the renal ridges (RR) of the E11.5 mutant embryo. However, RALDH2 immunoreactivity is reduced or absent in the PHMP and liver mesothelium of the mutant embryos, as compared with the controls. CV: cardinal veins; LU: lungs.
 
 Epithelial and mesenchymal cells of the PHMP and most anterior PPFs derive from a cell lineage in which Gata4 expression is driven by the G2 enhancer. This is demonstrated by the expression of YFP in G2-Gata4Cre;R26RYFP embryos, and supports the existence of a process of cell migration from PHMP to PPFs (Figure 1E,F). However, the nephric ridges and the mesonephros derived from them show no YFP+ cells in this model, indicating that the progenitors of these tissues derived from a different cell lineage. Thus, G2-Gata4 lineage tracing allows to establishing a well-defined limit between two lateral mesodermal territories that we will call herein the G2+ and the G2- domains (see figure 3B,C). Interestingly, the gonad and the adrenal stroma were YFP+ (Figure 1G), and this can be related with the early expression of GATA4 in the coelomic epithelium, which will cover the genital but not the renal ridges (Figure 1H). Incidentally, the GATA4 positive cells from the central part of the ST do not express YFP in G2-Gata4Cre;R26RYFPembryos (Figure 1F), an observation consistent with the lack of reporter activity in the G2- Gata4LacZ embryos (Figure 1A). These data reveal a significant heterogeneity between central and lateral mesenchymal populations in the ST.
 
 A clear asymmetry was observed in the distribution of PHMP mesenchyme in embryos of E10.5-E12.5 (Figure 1D,E). Mesenchymal cells were always more abundant in the right PHMP than in the left, which might favor the herniation in the left side. We estimated, by image analysis, the volume taken up by the YFP+ cells in the right and left PHMP of four G2-Gata4Cre; R26RYFP embryos. The R/L ratio of these volumes was 1,21 and 1,45 in two E11.5 embryos, and 1,53 and 1,61 in two E12,5 embryos (mean = 1,45; S.E.M = 0,086). The t-test for one sample compared with an expected value = 1 (symmetrical distribution) gave a result of 5,21 (p-value=0,0069 for three d.o.f). Thus, the right PHMP contains about 50% more cells from the G2-Gata4 lineage than the left one.
 
-## WT1 conditional knockout mice display Bochdalek's hernia
+### WT1 conditional knockout mice display Bochdalek's hernia
 
 This is a basically descriptive study of the phenotype of mouse embryos with conditional deletion of Wt1 in lateral mesoderm. We have included in the study 36 out 104 mutant embryos detected by genotyping. The rest of them had been previously used for a study of the cardiac phenotype (Cano et al., 2016).
 
-To understand the role of WT1 positive cells in the development of diaphragm, we conditionally inactivated Wt1 gene using the described G2-Gata4Cre line. Deletion of WT1 in the PHMP/PPFs continuum, i.e. in the G2+ domain, causes a phenotype characterized by defects in the inflow tract of the heart, coronary vessels (Cano et al., 2016) and, importantly, Bochdalek's hernia, most frequently located in the left side (Figure 2). The genotypes of the embryos obtained at different ages show the expected percentage of mutants at all embryonic stages (about 25%) except for the stage E15.5, when we only obtained four mutants among 60 embryos (Table 1). The number of embryos studied in older stages (42 embryos, nine mutants, 21,4%), was not enough to confirm if the mutation causes some lethality in late gestation.10.7554/eLife.16009.005Table 1.Number of embryos studied and % of G2-Gata4Cre;Wt1fl/fl found. The five E12.5 embryos showed abnormal posthepatic mesenchymal plates at the left side, but they were not computed for the diagnosis of the diaphragmatic hernia, that was performed only on the 23 embryos at the stages E13.5 or older.DOI: http://dx.doi.org/10.7554/eLife.16009.005StageNumber of embryos studiedNumber and% G2Cre+;Wt1fl/flEmbryos analyzed for phenotypeNo defectMild defectDiaphragmatic herniaE10–10.54211 (26,2%)3E11.58921 (23,6%)5E12.57621 (27,6%)5(5)E13,56519 (27,1%)131111*E14,55317 (32,1%)422E15,5604 (6,7%)422E16,5214 (19,0%)11E17,5–18,5215 (23,4%)11Total427102 (23,6%)364 (17,4%)3 (13,0%)16 (69,6%)*We have included seven embryos from females fed with control diet in the RA-rescue experiment. One embryo showed CDH only at the right side.
+To understand the role of WT1 positive cells in the development of diaphragm, we conditionally inactivated Wt1 gene using the described G2-Gata4Cre line. Deletion of WT1 in the PHMP/PPFs continuum, i.e. in the G2+ domain, causes a phenotype characterized by defects in the inflow tract of the heart, coronary vessels (Cano et al., 2016) and, importantly, Bochdalek's hernia, most frequently located in the left side (Figure 2). The genotypes of the embryos obtained at different ages show the expected percentage of mutants at all embryonic stages (about 25%) except for the stage E15.5, when we only obtained four mutants among 60 embryos (Table 1). The number of embryos studied in older stages (42 embryos, nine mutants, 21,4%), was not enough to confirm if the mutation causes some lethality in late gestation.
+
+**Table 1.**
+ Number of embryos studied and % of G2-Gata4Cre;Wt1fl/fl found. The five E12.5 embryos showed abnormal posthepatic mesenchymal plates at the left side, but they were not computed for the diagnosis of the diaphragmatic hernia, that was performed only on the 23 embryos at the stages E13.5 or older.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stage</th>
+      <th>Number of embryos studied</th>
+      <th>Number and% G2Cre+;Wt1fl/fl</th>
+      <th>Embryos analyzed for phenotype</th>
+      <th>No defect</th>
+      <th>Mild defect</th>
+      <th>Diaphragmatic hernia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E10–10.5</td>
+      <td>42</td>
+      <td>11 (26,2%)</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E11.5</td>
+      <td>89</td>
+      <td>21 (23,6%)</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E12.5</td>
+      <td>76</td>
+      <td>21 (27,6%)</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td>(5)</td>
+    </tr>
+    <tr>
+      <td>E13,5</td>
+      <td>65</td>
+      <td>19 (27,1%)</td>
+      <td>13</td>
+      <td>1</td>
+      <td>1</td>
+      <td>11*</td>
+    </tr>
+    <tr>
+      <td>E14,5</td>
+      <td>53</td>
+      <td>17 (32,1%)</td>
+      <td>4</td>
+      <td>2</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>E15,5</td>
+      <td>60</td>
+      <td>4 (6,7%)</td>
+      <td>4</td>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>E16,5</td>
+      <td>21</td>
+      <td>4 (19,0%)</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E17,5–18,5</td>
+      <td>21</td>
+      <td>5 (23,4%)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>427</td>
+      <td>102 (23,6%)</td>
+      <td>36</td>
+      <td>4 (17,4%)</td>
+      <td>3 (13,0%)</td>
+      <td>16 (69,6%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*We have included seven embryos from females fed with control diet in the RA-rescue experiment. One embryo showed CDH only at the right side._
 
 We analyzed WT1 mutant embryos at different stages of development. Defect in the PHMP in G2-Gata4Cre;Wt1fl/fl mutant embryos could be observed as early as E10.5, since less mesenchymal cells are present between the coelomic epithelium and the hepatoblasts when compared with control littermates (Figure 2A–D). At later stages, the closure of the pleural cavity by growth of the ST/PPFs crescent is delayed with respect to the controls, and the mesenchymal cells of the PHMP are located more medially, not in the lateral tips of the liver lobes. This is more evident at the left side (arrow in Figure 2E). Thus, these cells cannot migrate towards the PPFs precluding caudal growth of the lateral commissures of the pleuroperitoneal septa and closure of the pleural cavities.
 
 Five E12.5 mutant embryos studied already showed strong reduction of the PHMP size as compared with control littermates, but the diaphragmatic defect of the WT1 conditional knockout embryos became clearly apparent by E13.5, when the pleural cavities are almost completely isolated in wildtype embryos (Figure 2F). Of 23 mutant embryos analyzed by the stages E13.5 or older, only four of them showed normal development of the diaphragm, while the rest of embryos showed different degrees of diaphragmatic defects (Table 1). Three of the embryos showed thin, membranous diaphragm in the left side and 16 showed a wide defect in the diaphragm, frequently with herniation of the liver into the left pleural cavity and hypoplasia of the left lung (Figure 2G). One of them (E13.5) showed the defect only at the right side and the CDH was present in the left side in the rest of them. Thus, about 80% of the E13.5 or older mutant embryos showed abnormal diaphragmatic development.
 
-Renal ridges appear well developed in mutant E11.5 embryos at a level corresponding to the entrance of the oesophagus into the ST (
+Renal ridges appear well developed in mutant E11.5 embryos at a level corresponding to the entrance of the oesophagus into the ST (Figure 2E). The presence of intermediate mesoderm in these thoracic renal ridges was confirmed by ISH of Pax2 (Figure 4). In wildtype embryos of the same age thoracic renal ridges can also be seen, but located more caudally, at the level of the stomach (Figure 1C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/16009/elife-16009-fig4-v1.jpg)
 
-**Figure 4.:** (A) Control E11.5 embryo. Pax2 is expressed in the neural tube (NT). The pleuroperitoneal folds (PPF) lack of Pax2 expression. (B) G2-Gata4E11.5 embryo. Pax2 is expressed in the PPF at the level of the lung buds (LU). The expression is stronger in the tubular structures that are developing in the left PPF (insert).Cre; Wt1fl/fl DOI: http://dx.doi.org/10.7554/eLife.16009.006
+**Figure 4.:** (A) Control E11.5 embryo. Pax2 is expressed in the neural tube (NT). The pleuroperitoneal folds (PPF) lack of Pax2 expression. (B) G2-Gata4Cre; Wt1fl/fl E11.5 embryo. Pax2 is expressed in the PPF at the level of the lung buds (LU). The expression is stronger in the tubular structures that are developing in the left PPF (insert).
 
 The sharp boundary between the above explained G2+ and G2− domains was clearly observed by the immunolocalization of WT1 and GATA4 protein in G2-Gata4Cre;Wt1fl/fl mutant embryos (Figure 3). WT1 immunoreactivity is strong in the PHMP and PPF of the wildtype embryos and localizes in the coelomic epithelium and, with a lower intensity, in mesenchymal cells (Figure 3A). However, WT1 is clearly downregulated in the G2+ domain of the mutant embryos indicating an efficient excision of the WT1 floxed allele (Figure 3C). Immunolocalization of GATA4 protein marked the border between both G2 domains, confirming the absence of endogenous GATA4 protein and the inactivity of the G2 enhancer in the G2- domain. (Figure 3B,D). The presence of GATA4+ cells in the more cephalic part of the PPF supports a migration of PHMP cells towards the PPFs.
 
-Since WT1 is involved in epithelial-mesenchymal transition (EMT) of the epicardium by repression of E-cadherin and activation of Snail1 (
+Since WT1 is involved in epithelial-mesenchymal transition (EMT) of the epicardium by repression of E-cadherin and activation of Snail1 (Martínez-Estrada et al., 2010), we checked the expression of E-cadherin in the developing PHMP of G2-Gata4Cre;Wt1fl/fl mutant embryos. Control E11.5 embryos show an E-cadherin negative coelomic epithelium over a layer of mesenchymal cells in the developing PHMP (Figure 5A–D). However, mutant embryos show expression of E-cadherin in the epithelium of the corresponding area and lack of E-cadherin negative mesenchymal cells (Figure 5E–H).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/16009/elife-16009-fig5-v1.jpg)
 
-**Figure 5.:** A–D) and four E11.5 G2-Gata4embryos (Cre; Wt1fl/fl E–H).E-cadherin appears upregulated in the coelomic epithelium of the PHMP of the mutant embryos (arrows in E–H). In wildtype embryos the coelomic epithelium of the PHMP lacks of E-cadherin expression (arrows in A–D) and covers a layer of E-cadherin-negative mesenchymal cells (asterisks).DOI: http://dx.doi.org/10.7554/eLife.16009.007
+**Figure 5.:** E-cadherin appears upregulated in the coelomic epithelium of the PHMP of the mutant embryos (arrows in E–H). In wildtype embryos the coelomic epithelium of the PHMP lacks of E-cadherin expression (arrows in A–D) and covers a layer of E-cadherin-negative mesenchymal cells (asterisks).
 
-## Systemic WT1 loss of function leads to complete lack of PHMP
+### Systemic WT1 loss of function leads to complete lack of PHMP
 
-We have compared the G2-
+We have compared the G2-Gata4Cre;Wt1fl/fl CDH phenotype with that displayed by the systemic WT1 knockout mouse embryos, which do not survive beyond E13.5. Despite the early embryonic death of these models, we have observed a more severe defect, with a complete lack of PHMP and displaying, in some cases, persistent thoracic nephric ridges in E12.5 and E13.5 embryos (Figure 6). In these embryos only the central part of the ST is conserved, i.e. the area where the G2 enhancer is not active, as shown in Figure 1E.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/16009/elife-16009-fig6-v1.jpg)
 
-**Figure 6.:** (A,B) WT1-/- E13.5 embryos. The complete lack of posthepatic mesenchymal plate is evident, mesenchymal cells are absent from the lateral ends of the liver lobes and remain restricted to the central area of the septum transversum (ST), close to the oesophagus (OE). The pleural cavities are continuous with the peritoneal cavity. Note the renal ridges (RR) persisting at thoracic level, and the abnormal adhesion of the right liver lobe with the body wall (arrow in B). AO: aorta; LI: liver; LU: lungs. (C,D) Immunolocalization of RALDH2 in WT1-/- embryos, E11.5 (A) and E12.5 (B). RALDH2 immunoreactivity is strong in the renal ridges (RR), but weak or absent in the liver (LI) mesothelium (MES). AO: aorta; LU: lung.DOI: http://dx.doi.org/10.7554/eLife.16009.008
+**Figure 6.:** (A,B) WT1-/- E13.5 embryos. The complete lack of posthepatic mesenchymal plate is evident, mesenchymal cells are absent from the lateral ends of the liver lobes and remain restricted to the central area of the septum transversum (ST), close to the oesophagus (OE). The pleural cavities are continuous with the peritoneal cavity. Note the renal ridges (RR) persisting at thoracic level, and the abnormal adhesion of the right liver lobe with the body wall (arrow in B). AO: aorta; LI: liver; LU: lungs. (C,D) Immunolocalization of RALDH2 in WT1-/- embryos, E11.5 (A) and E12.5 (B). RALDH2 immunoreactivity is strong in the renal ridges (RR), but weak or absent in the liver (LI) mesothelium (MES). AO: aorta; LU: lung.
 
-## Retinoic acid partially rescues the defects in the diaphragm of WT1 conditional knockout embryos
+### Retinoic acid partially rescues the defects in the diaphragm of WT1 conditional knockout embryos
 
 The retinoic acid (RA) signaling pathway has been involved in the formation of diaphragm. To test whether RA signaling might be disturbed in our CDH model, we checked the expression of RALDH2 by immunofluorescence in G2-Gata4Cre; Wt1fl/fl mutant and control embryos. RALDH2 expression is found in the PHMP and PPF of wildtype E10.5-E11.5 embryos (Figure 3E,G). The PPF of the G2-Gata4Cre; Wt1fl/fl mutant embryos show an increased immunoreactivity for RALDH2 but we found a reduced or absent expression of this enzyme in the PHMP (Figure 3F,H). This probably reflects, as discussed below, the persistence of the intermediate mesoderm of the nephric ridges into the PPF. In fact, RALDH2 is normally expressed at high levels in the intermediate mesoderm even in systemic WT1 knockout embryos, which also show decreased RALDH2 immunoreactivity in the liver mesothelium (Figure 6C,D).
 
 RA treatment partially rescues the pulmonary phenotype and promotes alveologenesis in the nitrofen model of induced CDH in rats (Montedonico et al., 2008; Sugimoto et al., 2008). In order to check the effects of a RA treatment on our mutant phenotype, in a first experiment we fed pregnant females with a RA-supplemented diet. For ethical reasons we decided to limit the study to four litters in which we detected eight G2-Gata4Cre; Wt1fl/fl mutant embryos. Five of them (62,5%) displayed a complete septation of the pleural cavity by E15.5, i.e. about three times the proportion of normal phenotypes found in the non-treated mutants (Z test = 2,09, two-tailed p-value= 0,037). Control littermates were not affected by the RA-treatment.
 
-Then, we designed a second experiment to assess the effect of the RA dietary supplement on the development of the diaphragmatic defect, comparing E13.5 mutant embryos with control embryos of the same age obtained from pregnant females fed with the same diet without the retinoic acid supplement (
+Then, we designed a second experiment to assess the effect of the RA dietary supplement on the development of the diaphragmatic defect, comparing E13.5 mutant embryos with control embryos of the same age obtained from pregnant females fed with the same diet without the retinoic acid supplement (Figure 7). Seven mutant embryos from three different females fed with control chow showed CDH (Figure 7B). For ethical reasons we decided to limit the study to four litters from females fed with RA-supplemented diet, where we identified nine mutant embryos. One of them showed normal diaphragm, three displayed CDH and five showed a small opening on the most posterior angle of the left pleural cavity (Figure 7C). Interestingly, two out of five control littermates also showed a similar opening in the same area (Figure 7A). Thus, we measured on digitalized images the width of the left diaphragmatic discontinuity in the eight non-treated mutants, the seven RA-treated mutants and the two RA-treated controls displaying this opening. The size of the diaphragmatic discontinuity was significantly smaller in the RA-treated mutants as compared with the control mutants (Student’s t test, p-value=0,009), but it was no significantly different when compared with the defect of the two RA-treated controls (Student’s t test, p-value=0,20) (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/16009/elife-16009-fig7-v1.jpg)
 
-**Figure 7.:** Gata4mutant embryos and wildtype littermates collected at stage E13.5 from females fed with a retinoic acid (RA) supplemented diet or with control diet by days E8.5-E10.5 of pregnancy.Cre; Wt1fl/fl (A) Wildtype embryo treated with RA. A small discontinuity appears in the left pleuroperitoneal septum (arrow). (B) Mutant embryo not treated with RA. A wide defect is evident in the left pleuroperitoneal septum. (C) Mutant embryos treated with RA and showing a discontinuity similar to that described in A. (D) Width of the discontinuity of the pleuroperitoneal opening in mutant and control embryos treated with RA compared with mutant embryos not treated with RA. The latter embryos show significantly wider openings than the mutant embryos treated with RA. LI: liver; LL: left lung. Scale bar = 100 µm.DOI: http://dx.doi.org/10.7554/eLife.16009.009  10.7554/eLife.16009.010Figure 7—source data 1.Figure 7D.DOI: http://dx.doi.org/10.7554/eLife.16009.010
+**Figure 7.:** (A) Wildtype embryo treated with RA. A small discontinuity appears in the left pleuroperitoneal septum (arrow). (B) Mutant embryo not treated with RA. A wide defect is evident in the left pleuroperitoneal septum. (C) Mutant embryos treated with RA and showing a discontinuity similar to that described in A. (D) Width of the discontinuity of the pleuroperitoneal opening in mutant and control embryos treated with RA compared with mutant embryos not treated with RA. The latter embryos show significantly wider openings than the mutant embryos treated with RA. LI: liver; LL: left lung. Scale bar = 100 µm.
 
 ## Discussion
 
@@ -131,13 +234,13 @@ In summary, Bochdalek's hernia could be regarded as an atavistic condition relat
 
 ## Materials and methods
 
-## Mouse lines and embryo extraction
+### Mouse lines and embryo extraction
 
 The animals used in our research program were handled in compliance with the institutional and European Union guidelines for animal care and welfare. The procedures used in this study were approved by the Committee on the Ethics of Animal Experiments of the University of Malaga (procedure code 2015–0028). All embryos were staged from the time point of vaginal plug observation, which was designated as E0.5. Embryos were excised and washed in PBS before further processing.
 
 The reporter Wt470LacZ mouse line is described in Moore et al. (1998). The G2-Gata4LacZ and G2-Gata4Cre transgenic lines have been previously described (Rojas et al., 2005; Delgado et al., 2014). The Tg(Wt1-cre)#Jbeb (Wt1Cre; MGI:5308608) mouse has been used in previous studies to trace or delete specific genes in WT1-expressing cells (del Monte et al., 2011; Wessels et al., 2012; Cano et al., 2013; Carmona et al., 2013; Casanova et al., 2013; Cano et al., 2016). For lineage tracing studies, heterozygote G2-Gata4Cre+/- mice and homozygote Wt1Cre+/+ were crossed with Rosa26R (B6.129S4-Gt(ROSA)26Sortm1Sor/J, RRID:IMSR_JAX:003474) and Rosa26EYFP (B6.129X1-Gt(ROSA)26Sortm1(EYFP) Cos/J, RRID:IMSR_JAX:006148) mice to generate permanent reporter expression in G2-Gata4 and Wt1-expressing cells. Generation of loxP-flanked Wt1 mice were performed as described (Martinez- Estrada et al., 2010). Systemic Wt1 knockout mice were generated by gene targeting, as previously described (Kreidberg et al., 1993).
 
-## Immunohistochemistry, reporter analysis and in situ hybridization
+### Immunohistochemistry, reporter analysis and in situ hybridization
 
 For fluorescent reporter expression analysis and immunohistochemistry the embryos were fixed in 2% fresh paraformaldehyde solution in PBS for 2–8 hr, washed in PBS, cryoprotected in sucrose solutions, embedded in OCT (Tissue-Tek), and frozen in liquid N2-cooled isopentane. Samples were sectioned on a cryostat (10 μm) and cryosections were stored at −20°C until use. Other samples for routine histology were dehydrated and paraffin-embedded.
 
@@ -145,14 +248,14 @@ For in situ hybridization the embryos were isolated in ice-cold PBS and were fix
 
 The monoclonal mouse anti-smooth muscle cell α-actin antibody (clone 1A4, Sigma, RRID:AB_476701) was used at a 1:100 dilution for immunofluorescence. Polyclonal rabbit anti-RALDH2 (a gift of Dr. Peter McCaffery, Eunice Shriver Center, University of Massachusetts) was used at a 1:5000 dilution. Polyclonal goat anti-GATA4 (Sc-1237, Santa Cruz, RRID:AB_2108747) was used at 1:50 dilution for immunofluorescence. Polyclonal chicken anti-GFP (13970, Abcam, RRID:AB_300798) was used at 1:200 dilution. Monoclonal anti E-cadherin (610181, BD Biosciences, RRID:AB_397580) and monoclonal anti-mouse WT1 (MAB4234, Millipore, RRID:AB_570945) were used at 1:100 dilution. For WT1, E-cadherin and GATA4 immunostaining, citrate buffer antigen retrieval was required. Negative controls were performed by incubation with non-immune mouse serum or rabbit IgG instead of the primary antibody.
 
-## Image analysis
+### Image analysis
 
 Image analysis was performed on digital images obtained from four Wt1Cre;R26RYFPembryos (two E11.5 and two E12.5). Between 6 and 9 Images of consecutive 10 µm thick serial sections covering all the PHMP were processed by splitting the channels, transforming the green (YFP+) channel into a 8-bit format, and measuring the total area occupied by YFP+ cells in the left and right PHMP using Fiji image analysis software (RRID:SCR_002285). The total sum of the areas along all the serial sections was used as an estimation of the total volume occupied the YFP+ cells. We then calculated the R/L volume ratio for each embryo and this value was used for statistical comparisons.
 
-## Rescue of phenotype with dietary administration of RA
+### Rescue of phenotype with dietary administration of RA
 
 Rescue of the phenotype in G2-Gata4Cre;Wt1fl/fl embryos was performed by supplying RA in the diet of the pregnant female mice between E8.5 and E10.5, i.e. when the ST and PPFs develop. At 8.5 and 9.5 days of pregnancy, female mice were fed with a paste composed of 5 g of normal chow, 5 mL of distilled water, 1 mL of corn oil and 1 mg of RA (Sigma). Control females received the same diet without RA. The food was placed in a cage protected from light and pregnant female mice consumed the RA-supplemented diet normally. By the beginning of the day 10.5, RA-supplemented diet was replaced by normal chow. We collected the embryos at stages E13.5 and E15.5.
 
-## Statistics
+### Statistics
 
 We used the Z-test for comparison of the R/L PHMP volume ratio and for comparison of the percentages of CDH incidence in RA treated and control embryos. For comparison of the size of the left pleural cavity opening in RA treated and control embryos we used the Student’s test. In both cases, calculations were performed using Excel 2013 software.

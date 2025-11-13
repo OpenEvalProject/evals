@@ -16,8 +16,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04t0gwh46 Institut Curie, Université PSL, Sorbonne Université, CNRS UMR168, Laboratoire Physico Chimie Curie Paris France
-2. https://ror.org/03xqtf034 Netherlands Cancer Institute Amsterdam Netherlands
+1. Institut Curie, Université PSL, Sorbonne Université, CNRS UMR168, Laboratoire Physico Chimie Curie Paris France ([ROR:04t0gwh46](https://ror.org/04t0gwh46))
+2. Netherlands Cancer Institute Amsterdam Netherlands ([ROR:03xqtf034](https://ror.org/03xqtf034))
 
 † Corresponding author
 
@@ -37,19 +37,181 @@ To analyze the functional effect of EPO on the differentiation of individual HSP
 
 ## Results
 
-## EPO exposure induces biases in single HSPCs
+### EPO exposure induces biases in single HSPCs
 
 Given the debate surrounding which HSPC subset is responding to EPO, we decided to analyze the direct effect of EPO on the differentiation of HSPCs defined as C-Kit+ Sca1+ Flt3- CD150+ (encompassing LT-HSC [C-Kit+ Sca1+ Flt3- CD150+ CD48- CD34-], MPP1 [C-Kit+ Sca1+ Flt3- CD150+ CD48- CD34+], and MPP2 [C-Kit+ Sca1+ Flt3- CD150+ CD48+]; Cabezas-Wallscheid et al., 2014; Wilson et al., 2008) at the single-cell level by cellular barcoding. To this purpose, we generated a new high-diversity lentiviral barcode library (LG2.2, 18,026 barcodes in reference list), consisting of random 20 nucleotides sequences positioned adjacent to the green fluorescent protein (GFP) gene, enabling the tracking of many individual cells in parallel. Using this LG2.2 library, we labeled single HSPCs (Figure 1—figure supplement 1a) with unique genetic barcodes as previously described (Naik et al., 2013), exposed them to EPO (1000 ng/ml) or PBS for 16 hr ex vivo, and transplanted around 2600 cells (mean 2684 cells ± 175 cells) of which around 10% barcoded cells into irradiated mice (Figure 1a). Note that HSPCs kept their sorting phenotype after ex vivo culture albeit a slight downregulation of C-Kit (Matsuoka et al., 2011) and upregulation of Flt3 (Figure 1—figure supplement 1f). At day 30 after transplantation, the earliest timepoint at which HSPCs produce simultaneously erythroid, myeloid, and lymphoid cells (Boyer et al., 2019), barcoded (GFP+) erythroblasts (E; Ter119+ CD44+34), myeloid cells (M; Ter119- CD19- CD11c- CD11b+), and B-cells (B; Ter119- CD19+) (Figure 1—figure supplement 1b,c,e) were sorted from the spleen and their barcode identity assessed through PCR and deep sequencing. Note that bone and spleen had similar barcoding profiles (Figure 1—figure supplement 2). No difference in chimerism was observed between the EPO and control group in the spleen and blood, even when mTdTomato/mGFP donor mice were used to better assess the erythroid lineage (Figure 1b and c). On average, we detected around 80 barcodes per mouse, of which most were detected in several lineages (Figure 1d). Comparison of the numbers of barcodes producing each lineage showed that EPO exposure resulted in the same number of engrafting and differentiating cells as in control (Figure 1d). Notably, the number of erythroid restricted cells remained stable in the EPO group as compared to control (Figure 1e), indicating that the response to EPO is more complex than a direct instruction of erythroid-restricted HSPCs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig1-v2.jpg)
+
+**Figure 1.:** (a) HSPCs were sorted from the bone marrow of donor mice, lentivirally barcoded, cultured ex vivo with or without 1000 ng/ml EPO for 16 hr, and transplanted into sublethally irradiated mice. At week 4 post-transplantation, the erythroid (E), myeloid (M), and B-cells (B) lineages were sorted from the spleen and processed for barcode analysis. (b) The percentage of donor-derived cells (CD45.1+) among the total spleen, myeloid cells (CD11b+) or B-cells (CD19+) in the spleen of control and EPO group. (c) To better assess chimerism in erythroid cells, mTdTomato/mGFP donor mice were used. The fraction of Tom+ cells among erythroid cells (Ter119+) in the spleen and blood in control and EPO group. (d) The number of barcodes retrieved in the indicated lineages at week 4 after transplantation in the control and EPO groups. (e) Triangle plots showing the relative abundance of barcodes (circles) in the E, M, and B lineage with respect to the summed output over the three lineages (size of the circles) for the control and EPO groups. (f) Tthe percentage of HSPCs classified by the indicated lineage bias using a 10% threshold for categorization. (g) Quantitative contribution of the classes as in (f) to each lineage. Shown are values from several animals (n = 8 EPO, n = 10 control in b, n = 3 EPO, n = 4 control in c , spleen, n = 4 EPO, n = 8 control in c , blood collected over five different experiments d–g, n = 5 for the control group and n = 2 for the EPO group collected over one experiment). For all bar graphs, mean and SD between mice are depicted. Statistical significance tested using Mann–Whitney U-test p=0,05 for (b, c). Statistical significance tested by permutation test for different subsets in (g) (see Table 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) HSPCs were gated as propidium iodide-negative single C-Kit+ Sca-1+ Flt3- CD150+ cells of C-Kit+-enriched bone marrow cells. (b) Erythroblast cells were gated as Ter119+ CD44+ FSChi cells on Ter+ enriched cells. (c) Gating strategy for B-cells (CD19+ CD11b-), dendritic cells (CD19- CD11b- CD11c+), and myeloid cells (CD119- CD11c- CD11b+) on Ter119- live single-donor cells. (d) Gating for MkP (C-Kit+ Sca-1- CD150+ CD41+) from C-Kit+-enriched bone marrow cells. (e) Sort gating for GFP+ erythroid, myeloid, B-, and dendritic cells, respectively, used for barcoding analysis. (f) Representative flow cytometry plots of sorted HSPC pool after 6 hr lentiviral transduction and 16 hr ex vivo incubation with or without EPO.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Hematopoietic stem and progenitor cells (HSPCs) were sorted from the bone marrow of donor mice, lentivirally barcoded, cultured ex vivo for 16 hr, and transplanted into sublethally irradiated mice. At week 4 post-transplantation, erythroid (E), B-cells (B), and the myeloid lineage (M) cells monocytes, eosinophils, neutrophils, and macrophages were sorted from the spleen and from bone and processed for barcode analysis. The myeloid lineage was merged according to the percentage of total donor myeloid each subset contributed as in Figure 3—figure supplement 1b. (a) Heatmaps showing the output of individual barcodes (rows) in different samples (columns) as indicated. Data is normalized by cell subset, log transformed, and clustered by complete linkage using Euclidean distance. No output is represented in black. (b) The percentage of barcodes in spleen and bone detected in the respective other organ. The Spearman rank correlation of barcodes in bone and spleen was for the B-, M-, and E-lineage 0.81, 0.69, and 0.7, respectively. Shown are values from several animals (n = 3). For all bar graphs, mean and SD between mice are depicted. Statistical significance tested using Mann–Whitney U-test p=0.05 for (b).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Triangle plots from Figure 1e color coded by mice. (b) Quantitative contribution of the classes to each lineage as in Figure 1 using different thresholds of 0, 5, 10, 15, and 20%. (c–f) Data for an additional experiment as in Figure 1. (c) Number of barcodes retrieved in the indicated lineages at week 4 after transplantation in the control and EPO groups. (d) Triangle plots showing the relative abundance of barcodes (circles) in the erythroid (E), myeloid (M), and B-cell (B) lineage with respect to the summed output over the three lineages (size of the circles) for the control and EPO groups. (e) Proportion of HSPCs classified in the indicated lineage bias category using a 10% classification threshold. (f) Quantitative contribution of the classes as in (f) to each lineage. Shown are values from several animals (a–c, n = 5 for the control group and n = 2 for the EPO group [collected over one experiment], d–f, n = 2 for the control group and n = 3 for the EPO group [collected over one experiment]). For all bar graphs, mean and SD between mice are depicted. Statistical significance tested using Mann–Whitney U-test p=0.05 for (c, e).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** HSPCs were sorted from the bone marrow of donor mice, lentivirally barcoded, cultured ex vivo with or without 1000 ng/ml EPO for 16 hr, and transplanted into sublethally irradiated mice. At week 6 post-transplantation, the erythroid (E), myeloid (M), and B-cells (B) lineages were sorted from the spleen and processed for barcode analysis. Quantitative contribution of HSPCs classified by the indicated lineage bias using a 10% threshold for categorization to each lineage. Shown are values from several animals (n = 2 EPO, n = 4 control). Mean and SD between mice are depicted.
+
 To quantify the effect of EPO on HSPC lineage biases, barcode-labeled HSPCs were classified based on the balance of their cellular output in the M, B, and E lineages. With this classification using a 10% threshold, cells classify, for example, as ME-biased if they have above 10% of their output in the M and E lineage and under 10% of their output in the B lineage (Figure 1e, other thresholds in Figure 1—figure supplement 3b). Interestingly, application of this classification revealed that although the proportion of lineage-biased HSPCs in the control and EPO groups was similar (Figure 1f), their contribution to the different lineages was increased by EPO exposure (Figure 1g). In the control group, balanced HSPCs (MBE) produced the majority of all lineages, as previously published (Perié et al., 2015). In the EPO group, ME- and MB-biased clones produced most cells of the analyzed lineages (Figure 1g). ME-biased HSPCs produced the majority of erythroid cells (57% ± 10%), MB-biased HSPCs produced the majority of B-cells (58% ± 36%), and ME- and MB-biased clones contributed the majority of myeloid cells (MB-biased 45% ± 38% and ME-biased 20% ± 13%, together 65% ± 25%). To test the significance of this effect, we used a permutation test that compares the effect size between the control and EPO groups to the one of all random groupings of mice (Tak et al., 2019). The contributions of the ME- and of the MB-biased HSPC classes to the different lineages were significantly different in the EPO and control groups (Table 1). These results were reproduced in an additional experiment (Figure 1—figure supplement 3c–f, Supplementary file 1). A lower EPO concentration (160 ng/ml) as well as an additional single injection of EPO (133 µg/kg) during transplantation gave similar results (Figure 2, Figure 2—figure supplement 1a, Table 1). Also at 6 weeks post-transplantation, similar results were obtained (Figure 1—figure supplement 4, Supplementary file 1). In summary, ex vivo EPO priming of HSPCs modified the output balance of HSPCs rather than the number of lineage-restricted and -biased cells. Balanced clones produced a smaller percentage of the mature cells; ME-biased HSPCs produced most of the erythroid cells and MB-biased HSPCs produced most of the B cells.
 
-## Contribution of ME- and MB-biased HSPCs to the DC and MkP lineage
+![Figure 2.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig2-v2.jpg)
+
+**Figure 2.:** Same protocol as in Figure 1 but HSPCs were cultured with different concentrations of EPO (160 ng/ml or 1000 ng/ml) for 16 hr, and when indicated a single dose of EPO (133 µg/kg) was injected together with barcoded cells at the moment of transplantation. (a) Triangle plots showing the relative abundance of barcodes (circles) in the erythroid (E), myeloid (M), and B-lymphoid (B) lineage with respect to the summed output over the three lineages (size of the circles) for the different experimental groups as indicated. (b) The percentage of each lineage produced by the barcodes categorized by bias using a 10% threshold. Shown are values from several animals (n = 2 for 160 ng/ml, 1000 ng/ml, and 160 ng/ml + EPO injection, n = 4 for 1000 ng/ml + EPO injection [collected over four different experiments]). For all bar graphs mean and SD between mice are depicted. Statistical significance tested by permutation test for different subsets in (b) (see Table 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Triangle plots showing the relative abundance of barcodes (circles) in the erythroid (E), myeloid (M), and B-cell (B) lineage with respect to the summed output over the three lineages (size of circles) for the control and EPO groups of Figure 2, color coded by mice. (b) Same representation as in (a) for data of Figure 8.
+
+**Table 1.**
+ Permutation testing of changes in clonality after transplantation of erythropoietin (EPO)-exposed hematopoietic stem and progenitor cells (HSPCs).Same data as in Figures 1—4,7. HSPCs or multipotent progenitor 2 (MPP2) were cultured with different concentrations of EPO (160 ng/ml or 1000 ng/ml) for 16 hr, and when indicated a soluble dose of EPO (133 µg/kg) was injected together with barcoded HSPCs at the moment of transplantation. Barcodes in the erythroid (E), myeloid (M), B-lymphoid (B) lineage, dendritic cell (DC), and HSPCs were analyzed 4 weeks after transplantation and categorized by bias using a 10% threshold. For the data of Figures 1, 2 and 7, the output of MB and ME classified barcodes to the B, M, and E lineages was analyzed using a permutation test. For the data of Figure 3, the output of MBE and MB classified barcodes to the DC lineage was analyzed. For the data of Figure 4, the output of barcodes present in HSPCs to the B, M, and E lineages was analyzed using a permutation test. By permutating the mice of the control and EPO groups, the random distribution of this output was generated and compared to the real output difference between the control and EPO groups. A p-value was generated as in Tak et al., 2019.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Figure</th>
+      <th rowspan="2">Condition</th>
+      <th colspan="4">p-Value</th>
+    </tr>
+    <tr>
+      <th>MB in B</th>
+      <th>MB in M</th>
+      <th>ME in E</th>
+      <th>ME in M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1</td>
+      <td>HSPCs 160 ng/ml</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>0.02</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Figures 1 and 2</td>
+      <td>HSPCs 1000 ng/ml</td>
+      <td>0.0075</td>
+      <td>0.0071</td>
+      <td>0.0071</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>HSPCs 160 ng/ml + inj.</td>
+      <td>0.01</td>
+      <td>0.016</td>
+      <td>0.012</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>HSPCs 1000 ng/ml + inj.</td>
+      <td>0.0018</td>
+      <td>0.0018</td>
+      <td>0.002</td>
+      <td>0.0025</td>
+    </tr>
+    <tr>
+      <td>Figure 7</td>
+      <td>MPP2 1000 ng/ml</td>
+      <td>0.006</td>
+      <td>0.008</td>
+      <td>0.004</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>MBE in DC</td>
+      <td>MB in DC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>HSPCs 1000 ng/ml</td>
+      <td>0.07</td>
+      <td>0.0075</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HSPC in B</td>
+      <td>HSPC in M</td>
+      <td>HSPC in E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>HSPCs 160 ng/ml</td>
+      <td>0.035</td>
+      <td>0.029</td>
+      <td>0.029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HSPCs 1000 ng/ml</td>
+      <td>0.008</td>
+      <td>0.06</td>
+      <td>0.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ME in E</td>
+      <td>ME in M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8</td>
+      <td>HSPCs 160 ng/ml</td>
+      <td>0.016</td>
+      <td>0.0025</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HSPCs 1000 ng/ml</td>
+      <td>0.00625</td>
+      <td>0.0038</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contribution of ME- and MB-biased HSPCs to the DC and MkP lineage
 
 To further characterize the cells produced by the ME-biased and MB-biased HSPCs, we repeated our experimental setup including the analysis of the megakaryocyte and dendritic cell (DC) lineages (Figure 3). Megakaryocyte progenitors (MkP) were chosen as proxy for the production of platelets that are not suitable for barcode analysis. Barcoded (GFP+) DCs (DC; Donor Ter119- CD19- CD11c+ CD11b-) and MkP (MkP; C-Kit+ Sca-1- CD150+ CD41+) (Figure 1—figure supplement 1c–e) were sorted together with M, E, and B cells, 4 weeks after transplantation of control or EPO-exposed HSPCs (1000 ng/ml). In both groups, the majority of clones produced also DCs (Figure 3a). In the control group, balanced HSPCs produced the majority of DCs (65% ± 9%) (Figure 3b). However, in the EPO group, balanced HSPCs decreased their contribution to the DC lineage (36% ± 25%) and MB-biased HSPCs significantly increased their contribution (86% ± 43% EPO vs. 22% ± 11% control group) (Figure 3b, Table 1), thus, they were MBDC-biased HSPCs. In contrast, the ME-biased HSPCs produced few DCs in both groups (Figure 3b), indicating that ME-biased HSPCs are restricted both in their B and DC production compared to the M and E production.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig3-v2.jpg)
+
+**Figure 3.:** In addition to the analysis of barcodes in the erythroid (E), the myeloid (M), and the B-cell (B) lineage, the DC lineage in spleen and MkP in bone marrow were added. (a) Percentage of barcoded HSPCs producing DC in the different HSPC categories (classification as in Figure 2 based on the M, E, and B lineage only using a 10% threshold; the DC-only category was added). (b) The percentage of the DC lineage produced by the barcodes categorized by bias as in (a). (c, d) Representations as in (a, b) for barcode detection in MkP. Data is derived from a cohort with detailed myeloid sorting. The myeloid lineage was merged according to the percentage of total donor myeloid each subset contributed as in Figure 2—figure supplement 1a to allow classification as in (a, b) based on the M, E, and B lineage only using a 10% threshold. The MkP-only category was added. Shown are values from several animals (a, b, n = 5 for the control group and n = 2 for the EPO group; c, d, n = 3 for the control group and n = 1 for the EPO group [collected over two experiments]). For all bar graphs, mean and SD between mice are depicted. Statistical significance tested using Mann–Whitney U-test p=0.05 for (a, c). Statistical significance tested by permutation test for different subsets in (b) (see Table 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Same experimental protocol as in Figure 1 but the myeloid cells were subdivided into Mo, Eo, Ma, and Neu, and MkP were sorted. (a) Gating for detailed myeloid subsets on myeloid cells. Mo were sorted as CD115+ cells, Eo as CD115- SiglecF+ Ly6G+, Ma as CD115- SiglecF- Ly6G-, and Neu as CD115- SiglecF- Ly6G+ cells. (b) The contribution of different cell types to the overall donor myeloid subset in the control and EPO groups. (c) Heatmaps showing the output of individual barcodes (rows) in different samples (columns) as indicated. Data is normalized by cell subset, log transformed, and clustered by complete linkage using Euclidean distance. No output is represented in black. Shown are values from several animals (b, n = 5 for the control group and n = 3 for the EPO group, c, n = 3 for the control group and n = 2 for the EPO group [collected over two experiments]). For all bar graphs, mean and SD between mice are depicted. Statistical significance tested using Mann–Whitney U-test p=0.05 for (b).
+
 The majority of the MkP production came from the ME-biased HSPCs in both groups (58% ± 21% control and 55% ± 14% EPO group, Figure 3c and d), indicating that ME-biased HSPCs were also MkP-biased HSPCs (thus MEK-biased). We did not detect a high contribution of MkP-restricted HSPCs (Carrelha et al., 2018; Sanjuan-Pla et al., 2013; Rodriguez-Fraticelli et al., 2018) to the MkP lineage (Figure 3d). Finally, as high EPO exposure has been linked to changes in macrophage numbers (Theurl et al., 2016; Wang et al., 2018; Gilboa et al., 2017; Kuzmac et al., 2014; Ulyanova et al., 2016; Mausberg et al., 2011; Liao et al., 2018; Bretz et al., 2018), we analyzed the contribution of control and EPO-exposed HSPCs to the myeloid lineage in more detail, but could not detect changes in the percentage of the different myeloid subsets produced (Figure 3—figure supplement 1a–c).
 
-## Effect of EPO on short-term HSPC self-renewal
+### Effect of EPO on short-term HSPC self-renewal
 
 In light of previous studies that suggested changes in HSPC proliferation after in vivo EPO exposure (Cheshier et al., 2007; Dubart et al., 1994; Giladi et al., 2018; Yang et al., 2017; Singh et al., 2018), we next explored if the short-term self-renewal capacity of HSPCs was impacted. To this end, we analyzed barcodes in bone marrow HSPCs in addition to the spleen E, M, and B lineages at week 4 after transplantation of control or EPO-exposed HSPCs (160 and 1000 ng/ml) (Figure 4). We reasoned that barcodes of HSPCs differentiating and short-term self-renewing (dividing to give rise to other HSPCs) after transplantation are detected in both compartments, while detection in only HSPCs or mature lineages indicates a prevalence of short-term self-renewal or differentiation respectively. Most of the barcodes detected in HSPCs overlapped with barcodes in the mature cells (Figure 4b, left) in both the control and two EPO groups, showing that most of the transplanted cells had given rise to other HSPCs and differentiated irrespective of the treatment. Some barcodes were only detected in mature cells (Figure 4b, right), indicating that some HSPCs had only differentiated or were below the limit of detection. These HSPCs were equally abundant in the control and two EPO groups (Figure 4b, right).
 
@@ -61,15 +223,27 @@ To analyze if different lineage biases correlated to different short-term self-r
 
 To study if the increased production of cells by the ME- and MB-biased HSPCs to the mature cells observed after ex vivo EPO exposure (Figures 1—3) correlated with short-term self-renewal capacity of HSPCs, we analyzed the contribution of barcodes detected or not in HSPCs to the E, M, and B lineages (Figure 4d). In the control group, the majority of mature cells were derived from barcodes also present in HSPCs. However, in both EPO groups, the contribution of barcodes detected in HSPCs to mature cells was significantly lower (Figure 4d, Table 1), implying that the increased contribution of biased HSPC classes to the mature cell lineages after ex vivo EPO exposure was most likely caused by cells differentiating more than short-term self-renewing.
 
-## EPO exposure induces an erythroid program in a subgroup of HSPCs
+### EPO exposure induces an erythroid program in a subgroup of HSPCs
 
 To further characterize the effect of EPO exposure on HSPCs, we performed scRNAseq of barcoded C-Kit+ Sca1+ Flt3- CD150+ cells after ex vivo culture in medium supplemented with EPO or PBS using the 10X Genomics Chromium platform. 1706 cells from control and 1595 cells from the EPO group passed our quality control. To compare the HSPCs injected with noncultured hematopoietic cells, we generated a reference map of 44,802 C-kit+ cells from Dahlin et al., 2018 and used published signatures as detailed in Materials and methods (Pietras et al., 2015; Wolf et al., 2019) to annotate this map (Figure 5—figure supplement 1a, b and e, f). Projection of our single-cell data on this map showed that both the control and the EPO-exposed HSPCs similarly overlapped with non-MPP4 LSK cells, according to their sorting phenotype (Figure 5—figure supplement 1e and f). These results indicate that neither the ex vivo culture itself nor the EPO treatment dramatically affected the global identity of the sorted HSPCs.
 
 When comparing the EPO and control groups, we found 1176 differentially expressed genes (Figure 5a) and this number was significantly higher than the number expected due to chance (p-value=0.01) as assessed by permutation testing. Among the most upregulated genes in the EPO-exposed HSPCs were genes with erythroid association as Hbb-bs, Erdr1, Wtap, Kmt2d, or Nfia (Starnes et al., 2009), and GATA1 targets (Abhd2, Cbx3, Kdelr2, Pfas), cell cycle-related genes (Tubb5, Hist1h2ap), as well as genes previously described to be induced in HSPCs after in vivo EPO exposure, such as Bmp2k (Shiozawa et al., 2010) and Ifitm1 (Giladi et al., 2018); (Figure 5a). Genes involved in stem cell maintenance, such as Serpina3g, Mecom, Txnip, Meis1, Pdzk1ip1(Giladi et al., 2018), Sqstm1 (Meenhuis et al., 2011), Smad7 (Blank et al., 2006), and Aes (Steffen et al., 2011), were among the most downregulated genes in the EPO-exposed HSPCs (Figure 5a).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig5-v2.jpg)
+
+**Figure 5.:** HSPCs were sorted, barcoded, and cultured ex vivo with or without 1000 ng/ml EPO for 16 hr and analyzed by scRNAseq using the 10X Genomics platform. 1706 cells from control and 1595 cells from the EPO group passed quality control. (a) Volcano plot of log2 fold change of the differentially expressed genes between control and EPO-exposed cells versus the adjusted p-value. Genes of interest are annotated. Differentially expressed genes were used to define an EPO response signature. (b) UMAP visualization of the EPO-exposed and control HSPCs. (c) The level of expression in the EPO-exposed HSPCs of the genes in the EPO response signature (top), and definition of the EPO responder and nonresponder subgroups using the 90th percentile expression of the EPO response signature from (c) (bottom). (d) The expression of the indicated genes in the control, EPO responder, and nonresponder subgroups as defined in (c). Genes that are significantly upregulated in the EPO responder group when compared to the control and nonresponder groups. Differential expression was assessed using a logistic regression testing approach, as implemented in Seurat. Figure supplements correspond to one 10× experiment of a pool of eight mice.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) UMAP projection of the scRNAseq dataset from Dahlin et al., 2018 annotated with flt3, CD150, and gata1 gene expression. (b) Projecting of erythroid-biased progenitors from Tusi et al., 2018 on UMAP projection of (a). (c) Robustness of the UMAP visualization and unsupervised clustering of the data in Figure 4c.The amount of variance explained by each principle component (left) and UMAP-based visualization using 10 principal component analysis (PCA) (right) for different number of genes. (d) The expression of genes encoding known EPO receptors in each subgroup. (e) Overview of the reference map using supervised cell-type annotation of the dataset from Dahlin et al., 2018. On the right-hand side, we overlay the MPP4 signature defined by Pietras et al., 2015 onto our reference map to facilitate cell-type annotation. (f) HSPCs were sorted, barcoded, and cultured ex vivo with or without 1000 ng/ml EPO for 16 hr and analyzed by scRNAseq using the 10X Genomics platform. Mapping of the transcriptomes of the 1706 cells from control and 1595 cells from the EPO group obtained after quality control onto the reference map using a k-nearest-neighbors mapping approach.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Cluster stability analysis varying the resolution parameter of the Seurat clustering method. The significant variable genes using 10 principal component analysis (PCA) were used as input. (b) UMAP visualization of the data in (a) using a clustering resolution of 0.1, with the proportion of each cluster as in the control, EPO responder, and nonresponder subgroups. (c) Expression of published signatures of established cell types used to annotate our clusters. All comparisons in signature expression between clusters were statistically significant (adjusted p-value<0.05) as determined by a Kruskal–Wallis test and Dunn’s post-hoc analysis. (d) Nearest-neighbor mapping of unsupervised clusters from (b) onto the reference map.
+
 As our cellular barcoding data suggests that single HSPCs differ in their response to EPO, we assessed the heterogeneity of EPO responses at the transcriptomic level. UMAP-based visualization of the data suggested that a subgroup of EPO-exposed cells was transcriptomically distinct (Figure 5b), independently of the number of principal component analysis (PCA) components and genes used in the analysis (Figure 5—figure supplement 1c). To test this observation, we defined an EPO response signature based on differentially expressed genes between the EPO and control group. Plotting the expression of the EPO response signature at the single-cell level showed that the majority of the transcriptomic differences between the control and EPO group were indeed driven by this small subgroup of cells (Figure 5c). Reasoning that this subgroup contains the cells directly responding to EPO, we defined as EPO responders, cells in the 90th percentile of EPO response signature expression (Figure 5c) for subsequent analysis. Importantly, unsupervised clustering analysis of the data (Figure 5—figure supplement 2a and b) showed similar results. The genes encoding EPOR, as well as the alternative EPORs EphB4, CD131, and CRFL3, were equally expressed between the EPO responders, nonresponders, and control groups (Figure 5—figure supplement 1d). Reasoning that the EPO responders correspond to MEK-biased HSPCs, we also looked for potential MBDC-biased HSPCs but could not detect a subgroup of cells with upregulation of lymphoid-associated genes, suggesting that the MBDC bias is not a direct effect of EPO exposure but more an indirect effect. In summary, the scRNAseq analysis corroborated our functional barcoding data, showing that a subset of HSPCs can respond directly to EPO stimulation.
 
-## EPO responder HSPCs overlap with MPP1 and MPP2 signatures
+### EPO responder HSPCs overlap with MPP1 and MPP2 signatures
 
 As our barcode analysis suggested that the effect of direct EPO exposure on HSPCs is caused by cells differentiating more than self-renewing, we next wanted to assess which of the HSPC subsets are the EPO responders in our scRNAseq dataset. We annotated the UMAP-based visualization of our data with published signatures of the HSC (dormant HSCs [Cabezas-Wallscheid et al., 2017] and LT-HSC [Wilson et al., 2015]), MPP1 (Cabezas-Wallscheid et al., 2017), and MPP2 (Pietras et al., 2015) subsets included in our HSPC gate and analyzed its overlap with the previously defined EPO responder and nonresponder cells (Figure 6a and b). Relative to the control group and nonresponders of the EPO group, the EPO responders had a reduced expression of HSC gene signatures and increased expression of MPP1 and MPP2 signatures (Figure 6a and b). An annotation of the reference map generated from data of Dahlin et al., 2018 likewise showed a low overlap of EPO responders with the most quiescent HSC subsets (Figure 6c and d). The independent analysis using unsupervised clustering further supported this result (Figure 5—figure supplement 2c and d). All in all, our scRNAseq analysis implied that, in line with our barcoding results, the HSPCs directly reacting to EPO are most likely MPP cells of the MPP1 and MPP2 subsets.
 
@@ -77,11 +251,19 @@ As our barcode analysis suggested that the effect of direct EPO exposure on HSPC
 
 **Figure 6.:** Same protocol as in Figure 5. (a) Expression of published gene signatures of HSCs (dormant HSC [Cabezas-Wallscheid et al., 2017], molecular overlap [molO] HSC signature [Wilson et al., 2015]) and multipotent progenitors (MPPs) (MPP1 [Cabezas-Wallscheid et al., 2017]-2 [Pietras et al., 2015]) across the entire dataset (see Materials and methods). (b) Expression of the signatures from (a), across control, nonresponder, and EPO responder groups as defined in Figure 5c. Statistical comparisons made using a Kruskal–Wallis test with a Dunn’s multiple comparisons post-hoc test. (c) Expression of the molO HSC signature on the published reference map (Dahlin et al., 2018). (d) Nearest-neighbor mapping of control, EPO responder, and nonresponder cells onto the published reference map (Dahlin et al., 2018).
 
-## EPO exposure induces ME biases in single MPP2
+### EPO exposure induces ME biases in single MPP2
 
 To confirm that MPP2 are a subset within HSPCs reacting directly to EPO as predicted by the scRNAseq analysis, we transplanted barcoded control or EPO-exposed (1000 ng/ml) MPP2 together with unbarcoded CD48- HSPCS (C-Kit+ Sca1+ Flt3- CD150+ CD48-) (Figure 7—figure supplement 1a) and analyzed their barcoded progeny in the E, M, and B lineages of the spleen at week 4 after transplantation (Figure 7). We found an equivalent engraftment as for the entire HSPC compartment and no difference between the EPO-treated and the control group (Figure 7a and b). Applying the same classification as in Figure 1 to quantify the effect of EPO on MPP2 lineage biases, we observed that, as for the whole HSPC compartment, ME-biased cells contributed more to the M and E lineages (Figure 7d and e, other threshold in Figure 7—figure supplement 1c). Similarly to our data on whole HSPC compartment (Figure 1g), the proportion of the differently biased MPP2 was similar between the control and EPO groups (Figure 7c). This data confirms that the MPP2 population is enriched in HSPCs responding to EPO.
 
-## Transient effect of EPO exposure
+![Figure 7.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig7-v2.jpg)
+
+**Figure 7.:** MPP2 and CD48- hematopoietic stem and progenitor cells (HSPCs) were sorted from the bone marrow of donor mice, MPP2 were lentivirally barcoded, and both populations cultured ex vivo with or without 1000 ng/ml EPO for 16 hr. After the culture, barcoded MPP2 and unbarcoded CD48- HSPCs were mixed and transplanted into sublethally irradiated mice. At week 4 post-transplantation, the erythroid (E), myeloid (M), and B-cells (B) lineages were sorted from the spleen and processed for barcode analysis. (a) The fraction of donor cells among the indicated cell types in spleen. (b) Barcode number retrieved in the indicated lineage at 4 weeks after transplantation in the control and EPO 1000 ng/ml groups. (c) Percentage of MPP2s classified using a threshold of 10% in the experimental groups as indicated. (d) The percentage of each lineage produced by the MPP2 barcodes categorized by bias using a 10% threshold. (e) Triangle plots showing the relative abundance of barcodes (circles) in the erythroid (E), myeloid (M), and B-lymphoid (B) lineage with respect to the summed output over the three lineages (size of the circles). Shown are data from several mice (n = 3 for the control group and n = 4 for the EPO group). For all bar graphs, mean and SD between mice are depicted. Statistical significance tested using Mann–Whitney U-test p=0,05 for (c–e). Statistical significance tested by permutation test for different subsets in (a) (see Table 1).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66922/elife-66922-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) MPP2s and CD48- hematopoietic stem and progenitor cells (HSPCs) were gated as propidium iodide-negative single C-Kit+ Sca-1+ Flt3- CD150+ CD48+ (MPP2) and CD48- (CD48- HSPCs) cells of C-Kit+-enriched bone marrow cells. (b) Triangle plots from Figure 7b color coded by mice. (c) Quantitative contribution of the classes to each lineage as in Figure 7a using different thresholds of 0, 5, 10, 15, and 20% (a–c, n = 5 for the control group and n = 2 for the EPO group [collected over one experiment]). Shown are values from several animals (n = 3 for the control group, n = 4 for the EPO group (collected over one experiment)). For all bar graphs, mean and SD between mice are depicted.
+
+### Transient effect of EPO exposure
 
 Finally, we reasoned that if EPO directly acts on MPPs 1/2 with short reconstitution capacity after transplantation rather than long-term repopulating HSC, then the EPO effect should be transient. To test this hypothesis, we repeated the experiment and analyzed barcodes in the E, M, and B lineages at 4 months after transplantation of control or EPO-exposed HSPCs (160 and 1000 ng/ml) (Figure 8). In the control group, as reported before (Wu et al., 2018), the chimerism at 4 months was higher and the number of barcodes detected was lower than at 1 month post-transplantation (Figures 8c and d and 1b–d). While ME-biased HSPCs still have significant higher contribution to the M and E lineages (Figure 8a and b, p-values in Table 1), the majority of cells in all lineages were produced by balanced HSPCs (Figure 8a and b), implying that the effect of direct EPO exposure on HSPCs is fading away. This confirms that the effect of direct EPO exposure on HSPCs is likely caused by MPP cells with a short reconstitution capacity after transplantation.
 
@@ -107,36 +289,375 @@ The direct effect of EPO on MPPs we described here could be one of the factors u
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J CD45.1+</td>
+      <td>Jackson Laboratory</td>
+      <td>B6.SJL-Ptprca Pepcb/BoyJ, Stock# 002014, B6 Cd45.1</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background( M. musculus)</td>
+      <td>C57BL/6J CD45.2+</td>
+      <td>Jackson Laboratory</td>
+      <td>C57BL/6J, Stock# 000664, B6</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rosa26CreERT2;mT/mG</td>
+      <td>Jackson Laboratory</td>
+      <td>STOCK Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J, Stock# 007576, mT/mG, mTmG</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>ElectroMAX Stbl4 Competent Cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11635018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRRL-CMV-GFP plasmid (Dull et al., 1998)</td>
+      <td>PMID:9765382</td>
+      <td></td>
+      <td>Ton Schumacher lab, NKI, Amsterdam</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T cells</td>
+      <td>Other</td>
+      <td></td>
+      <td>Philippe Benaroch lab, Institute Curie, Paris</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p8.9-QV</td>
+      <td>Other</td>
+      <td></td>
+      <td>Philippe Benaroch lab, Institute Curie, Paris</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVSVG</td>
+      <td>Other</td>
+      <td></td>
+      <td>Philippe Benaroch lab, Institute Curie, Paris</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-CD117 magnetic beads</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130-091-224; RRID:AB_2753213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Sigma</td>
+      <td>Cat# 81845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>StemSpanMedium SFEM</td>
+      <td>STEMCELL Technologies</td>
+      <td>Cat# 9650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mouse recombinant SCF</td>
+      <td>STEMCELL Technologies</td>
+      <td>Cat# 78064.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Eprex, erythropoietin alpha</td>
+      <td>Janssen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-biotinylated beads</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130090485; RRID:AB_244365</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ter119-biotin (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553672, clone TER119; RRID:AB_394985</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd45.1-PE (mouse, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553776, clone A20; RRID:AB_395044</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ter119-PE-Cy7 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 557853, clone TER119; RRID:AB_396898</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd11c-APC (hamster, monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-0114-82, clone N418; RRID:AB_469346</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd19-APC-Cy7 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 557655, clone ID3; RRID:AB_396770</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd11b-PerCP-Cy5.5 (rat, monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 45-0112-82, clone M1/70; RRID:AB_953558</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd117-APC (rat, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 105812, clone 2B8; RRID:AB_313221</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd135-PE (rat, monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 12 135182, clone A2F10; RRID:AB_465859</td>
+      <td>(100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd135-PE-Cy5 (rat, monoclonal)</td>
+      <td>Life Technologies</td>
+      <td>Cat# 15_1351_82, clone A2F10; RRID:AB_494219</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sca1-PacificBlue (rat, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 122520, clone D7; RRID:AB_2143237</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd150-PE-Cy7 (rat, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 115914, clone TC15-12F12.2; RRID:AB_439797</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd44-PE (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553134, clone IM7; RRID:AB_394649</td>
+      <td>(100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd41-BV510 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 740136, clone MVVREG30; RRID:AB_2739892</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Siglec-F-PE-CF594 (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 562757, clone E50-2440; RRID:AB_2687994</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly6g-BV510 (rat, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127633. clone 1A8; RRID:AB_2562937</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd115-PE (rat, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 135505, clone AFS98; RRID:AB_1937254</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cd48- APC-Cy7 (hamster, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 561242clone HM48-1; RRID:AB_10644381</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Viagen Direct PCR Lysis Reagent (cell)</td>
+      <td>Euromedex</td>
+      <td>Cat# 301C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K Solution RNA grade</td>
+      <td>Invitrogen</td>
+      <td>Cat# 25530-049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>top-LIB</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TGCTGCCGTCAACTAGA ACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bot-LIB</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GATCTCGAATCAGGCGCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR2-Read1-plate-index-forward</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNCTAGAACACTCGAGATCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR2-Read2-reverse</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GTGACTGGAGTTCAGACGTGTGCTCTTCCGAT CGATCTCGAATCAGGCGCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR3-P5-forward</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>AATGATA CGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR3-P7-sample-index-reverse</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAAGCAGAAGACGGCATACGAGANNNNNNNGTGACTGGAGTTCAGA CGTGCTCTTCCGATC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agencourt AMPure XP system</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3′ Reagent Kits v2 Chemistry</td>
+      <td>10X Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R-3.4.0</td>
+      <td>Other</td>
+      <td></td>
+      <td>R Development Core Team (2019) http://www.R-project.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 8.0 for Mac</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>GraphPad Software, La Jolla, CA, https://www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XCALIBR</td>
+      <td>Other</td>
+      <td></td>
+      <td>https://github.com/NKI-GCF/xcalibr; Netherlands Cancer Institute - Genomics Core Facilty, 2015</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger v3</td>
+      <td>10X Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v3</td>
+      <td>doi:10.1016/j.cell.2019.05.031</td>
+      <td>RRID:SCR_007322</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Male C57BL/6J CD45.1+, C57BL/6J CD45.2+, and Rosa26CreERT2;mT/mG mice from Jackson Laboratory or bred at Institute Curie aged between 7 and 13 weeks were used in all experiments. All procedures were approved by the responsible national ethics committee (APAFIS# 10955–201708171446318v1).
 
-## Barcode library, barcode reference list, and lentivirus production
+### Barcode library, barcode reference list, and lentivirus production
 
 The LG2.2 barcode library is composed of a DNA stretch of 180 bp with a 20 bp ‘N’-stretch. DsDNA was generated by 10 PCR rounds and cloned into the XhoI-EcoRI site of the lentiviral pRRL-CMV-GFP plasmid (Dull et al., 1998). Subsequently, ElectroMaxStbl4 cells were transformed, and >10,000 colonies picked for amplification by Maxiprep. To create the barcode reference list (https://github.com/PerieTeam/Eisele-et-al.-; Eisele et al., 2022), barcode plasmids were PCR amplified twice in duplicate and sequenced as described below. Sequencing results were filtered for barcode reference list generation as previously described in Naik et al., 2013. Lentiviruses were produced by transfecting the barcode plasmids and p8.9-QV and pVSVG into HEK293T cells in DMEM-GlutaMAX (Gibco) supplemented with 10% FCS (Eurobio), 1% MEM NEAA (Sigma), and 1% sodium pyruvate (Gibco) using polyethyleneimine (Polysciences). Supernatant was 0.45 µm filtered, concentrated by 1.5 hr ultracentrifugation at 31,000 × g, and frozen at –80°C. HEK293T were tested for mycoplasma contamination every 6 months.
 
-## HSPC and MPP2 isolation, barcoding, EPO treatment, and transplantation
+### HSPC and MPP2 isolation, barcoding, EPO treatment, and transplantation
 
 Isolation and labeling of cells with the barcoding library were performed as described in Naik et al., 2013. Briefly, after isofluorane anesthesia and cervical dislocation, bone marrow cells were isolated from femur, tibia, and iliac bones of mice by flushing, and C-Kit+ cells were enriched with anti-CD117 magnetic beads on the MACS column system (Miltenyi). Cells were stained for C-Kit, Flt3, CD150, Sca-1 (Key resources table) propidium iodide (PI) (Sigma) (1:5000), and if appropriate CD48. Lineage staining was not performed after C-Kit+ MACS enrichment for transplantation cohorts. For HSPC cohorts, HSPCs (Figure 1—figure supplement 1a) were sorted and transduced with the barcode library in StemSpanMedium SFEM (STEMCELL Technologies) with 50 ng/ml mSCF (STEMCELL Technologies) through 1.5 hr of centrifugation at 300 × g and 4.5 hr incubation at 37°C to obtain 10% barcoded cells. After transduction, cells were incubated with human recombinant EPO (Eprex, erythropoietin alpha, Janssen) at a final concentration of 1000 or 160 ng/ml or PBS for 16 hr at 37°C. After the incubation, the cells were transplanted by tail vein injection in recipient mice 6 Gy sublethally irradiated 3 hr before on a CIXD irradiator. Mice were allocated to groups of 4–5 mice for each condition randomly without masking. When indicated, cells were injected together with additional EPO (133 µg/kg). On average, 2600 cells (mean 2684 cells ± 175 cells) were injected in the tail vein of each mouse. For the MPP2 cohort, MPP2 and CD48- HSPCs (Figure 7—figure supplement 1a) were sorted. Both populations were cultured alike, but only MPP2 were transduced with the barcode library and treated with 1000 ng/ml recombinant EPO as described above. After the culture, barcoded MPP2 and unbarcoded CD48- HSPCs were mixed at a ratio of 32/45 (to be as close as possible to the original ratio of both populations in the HSPCs) and transplanted as described above. A FACSAria (BD Biosciences) was used for sorting. FACSDiva software (BD Biosciences) was used for measurements and FlowJo v.10 (TreeStar) for analysis.
 
-## Cell progeny isolation for barcode analysis
+### Cell progeny isolation for barcode analysis
 
 Spleens were mashed and both blood and spleen cells were separated based on Ter119 using a biotinylated anti-Ter119 antibody (Key resources table) and anti-biotinylated beads on the MACS column system (Miltenyi). Ter119+ cells were stained for Ter119 and CD44 (Chen et al., 2009). Ter119- cells were stained for CD45.1 CD11b, CD11c, CD19, and, if appropriate, CD115, Siglec-F, and Ly6G (Key resources table). Bone marrow cells were flushed from bones and enriched for C-Kit+ cells as above. When appropriate, the C-Kit- fraction was further separated based on Ter119 and stained as above. C-Kit+ cells were stained for C-Kit, Flt3, CD150, Sca-1, and, if appropriate, CD41 (Key resources table), and PI (1:5000) as described above. For analyzed and/or sorted populations, see Figure 1—figure supplement 1. Populations were only sorted for mice with an engraftment (donor cells percentage) of above 5% in spleen, bone, and blood.
 
-## Lysis, barcode amplification, and sequencing
+### Lysis, barcode amplification, and sequencing
 
 Sorted cells were lysed in 40 μl Viagen Direct PCR Lysis Reagent (cell) (Euromedex) supplemented with 0.5 mg/ml Proteinase K Solution RNA grade (Invitrogen) at 55°C for 120 min, 85°C for 30 min, and 95°C for 5 min. Samples were then split into two replicates, and a three-step nested PCR was performed to amplify barcodes and prepare for sequencing. The first step amplifies barcodes (top-LIB [5′TGCTGCCGTCAACTAGA ACA-3′] and bot-LIB [5′GATCTCGAATCAGGCGCTTA-3′]). A second step adds unique 4 bp plate indices as well as Read 1 and 2 Illumina sequences (PCR2-Read1-plate-index-forward 5′ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNCTAGAACACTCGAGATCAG3′ and PCR2-Read2-reverse 5′GTGACTGGAGTTCAGACGTGTGCTCTTCCGAT CGATCTCGAATCAGGCGCTTA3′). In a third step, P5 and P7 flow cell attachment sequences and one of 96 sample indices of 7 bp are added (PCR3-P5-forward 5′AATGATA CGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT3′ and PCR7-P7-sample-index-reverse 5′CAAGCAGAAGACGGCATACGAGANNNNNNNGTGACTGGAGTTCAGA CGTGCTCTTCCGATC3′) (PCR program: hot start 5 min 95°C, 15 s at 95°C; 30 s at 57.2°C; 30 s at 72°C, 5 min 72°C, 30 [PCR1-2] or 15 cycles [PCR 3]). Both index sequences (sample and plate) were designed based on Faircloth and Glenn, 2012 such that sequences differed by at least 2 bp (https://github.com/PerieTeam/Eisele-et-al.-). To avoid lack of diversity at the beginning of the reads, at least four different plate indices were used for each sequencing run. Primers were ordered desalted as high-performance liquid chromatography purified. During lysis and each PCR, a mock control was added. The DNA amplification by the three PCRs was monitored by the run on a large 2% agarose gel. PCR3 products for each sample and replicate were pooled, purified with the Agencourt AMPure XP system (Beckman Coulter), diluted to 5 nM, and sequenced on a HiSeq system (Illumina) (SR-65bp) at the Institute Curie facility with 10% of PhiX spike-in.
 
-## Barcode sequence analysis
+### Barcode sequence analysis
 
 Sequencing results were filtered, and barcodes were categorized in progenitor classes as in Naik et al., 2013 and further explained on GitHub (https://github.com/PerieTeam/Eisele-et-al.-). In brief, sequencing results were analyzed using R-3.4.0 (R Development Core Team 2019; http://wwwR-project.org.), Excel, and GraphPad Prism version 8.0 for Mac (GraphPad Software, La Jolla, CA, https://www.graphpad.com). Reads were first filtered for perfect match to the input index- and common-sequences using XCALIBR (https://github.com/NKI-GCF/xcalibr) and filtered against the barcode reference list. Samples were then filtered for containing at least 5000 reads and normalized to 105 per sample. Samples with a Pearson correlation between duplicates below 0.9 were discarded, and barcodes present in one of the two replicates were set to zero. Samples with under 10 barcodes were filtered out, unless indicated in the figure legend. The mean of the replicates was used for further processing. When the mean percentage of barcodes shared between different sequencing runs was higher than within the same sequencing run for mice of a same transduction batch, reads below the read quartile of the mean percentage of barcodes shared between mice of a same transduction batch but sequenced on different sequencing runs were set to zero in order to equalize the barcode sharing between mice transplanted from a same transduction batch in different sequencing runs to the barcode sharing between mice within each sequencing run. After filtering, read counts of each barcode in the different cell lineages were normalized enabling categorization into classes of biased output toward the analyzed lineages using a threshold of 10% of barcode reads (other thresholds in Figure 1—figure supplement 3c and Figure 7—figure supplement 1c). Statistics on barcoding results were performed using a permutation test as in Tak et al., 2021. Significance of flow cytometry results was assessed using Student’s t-test. Some mice were excluded from the analysis due to death before readout or due to a donor cell engraftment <5%, as well as the filtering out of mice for which one or more cell subset samples did not pass the barcode data filtering steps as detailed above.
 
-## scRNAseq and analysis
+### scRNAseq and analysis
 
 scRNAseq was performed using the 10X Genomics platform on one pool of HSPCs isolated from eight mice, barcoded and culture with or without EPO for 16 hr in vitro as described above. Sequencing libraries were prepared using the Chromium Single Cell 3′ v2 kit and sequenced on a HiSeq system (Illumina) at the Institut Curie NGS facility. Data was analyzed using Cellranger v3 (10X Genomics), Seurat v3 (Satija et al., 2015), and customized scripts. Raw sequencing reads were processed using Cellranger. To obtain a reads/cell/gene count table, reads were mapped to the mouse GRCm38.84 reference genome. scRNAseq analysis was performed using Seurat (Satija et al., 2015). During filtering, Gm, Rik, and Rp genes were discarded as noninformative genes. Cells with less than 1000 genes per cell and with a high percentage of mitochondrial genes were removed from downstream analyses. Following our filtering procedures, the average UMI count per cell was 5157, with mitochondrial genes accounting for 5% of this. The average number of genes detected per cell was 2337. Cell cycle annotation using the cyclone method from the scran R package showed that 2938 cells were in G1 phase, 233 cells were in G2M phase, and 127 cells were in S phase. No batch effect was detected between the EPO and no-EPO group; therefore, no batch correction was applied. Data normalization was performed using the default Seurat approach, and differentially expressed genes were determined using a logistic regression in Seurat. Unsupervised clustering was performed on the significant variable genes using the 10 first PCA followed by the nonlinear dimensionality reduction technique UMAP (McInnes et al., 2018; Figure 5—figure supplement 2). Unsupervised Louvain clustering of the data was performed across a range of resolution parameters, and the resolution value that led to the most stable clustering profiles was chosen (Blondel et al., 2008; Figure 5—figure supplement 2). Annotation of the clusters was obtained by mapping published signatures using the AddModuleScore method of Seurat. The signatures are defined in the following publications: dHSC and MPP1 signatures were obtained from Cabezas-Wallscheid et al., 2017. The MolO LT-HSC signature was taken from Wilson et al., 2015, and the MPP2 and 4 signature was taken from Pietras et al., 2015. An Excel file listing the genes in these signatures is available on GitHub (https://github.com/PerieTeam/Eisele-et-al.-). To identify EPO responder cells in the EPO group, differential expression analysis was performed between the control and EPO groups (lists of DEGs are available at https://github.com/PerieTeam/Eisele-et-al.-). Subsequently, genes that were differentially expressed (adjusted p-value<0.05) between the EPO and control groups were transformed into an EPO response signature that when overlaid onto the UMAP-based visualization was enriched only in a subset of the EPO group cells. Briefly this signature was obtained by taking the background-corrected mean expression values of both the up- and downregulated genes per cell as implemented in the AddModuleScore method of Seurat. Within each cell, these two signature scores were used to create a composite EPO response score by subtracting the downregulated response from the upregulated response signature. Cells in the upper 90th percentile with regards to the expression of the EPO response signature were labeled EPO responders.
 
 To perform supervised cell-type annotation, a reference map was generated from a published single-cell sequencing dataset of 44,802 C-Kit+ cells from Dahlin et al., 2018. Preprocessing was performed using a scanpy pipeline (Wolf et al., 2019). Data was then visualized using the nonlinear nondimensionality reduction technique UMAP (McInnes et al., 2018). Annotation of the reference map was obtained by overlaying published signatures as above using the AddModuleScore method of Seurat and also known markers as Flt3, slamf1, and Gata1 (Figure 5—figure supplement 1b). For the erythroid progenitors, these markers are Gata1, Klf1, Epor, Gypa, Hba-a2, Hba-a1 (Figure 5—figure supplement 1a). Cells were mapped onto the reference map using a k-nearest-neighbors mapping approach. Briefly, for each cell in the query dataset, the nearest neighbors in the PCA space of the reference dataset were determined using the nn2 function of the RANN package, and the mean UMAP 1 and 2 coordinates of the 10 nearest neighbors were taken as the reference point for the new cell of interest. To benchmark our mapping approach, cells from an independent dataset of erythroid progenitors Tusi et al., 2018 were used without additional preprocessing (Figure 5—figure supplement 1a).
 
-## Data availability statement
+### Data availability statement
 
 Raw data are available at zenodo doi:10.5281/zenodo.5645045. All codes to filter and process raw data, as well as filtered data, are available at https://github.com/PerieTeam/Eisele-et-al.-. Contact author is leila.perie@curie.fr.

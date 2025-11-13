@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Brain Mind Institute and Neuro X, École Polytechnique Fédérale de Lausanne (EPFL) Geneva Switzerland
-2. https://ror.org/05tg4dc47 Wyss Center for Bio and Neuroengineering Geneva Switzerland
+1. Brain Mind Institute and Neuro X, École Polytechnique Fédérale de Lausanne (EPFL) Geneva Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+2. Wyss Center for Bio and Neuroengineering Geneva Switzerland ([ROR:05tg4dc47](https://ror.org/05tg4dc47))
 
 † Corresponding author
 
@@ -42,6 +42,18 @@ Here, we developed a custom Python toolbox for direct-3D supervised and self-sup
 
 Whole mouse brain LSM followed by counting nuclei is becoming an increasingly popular task thanks to advances in imaging and tissue clearing techniques (Chung et al., 2013; Renier et al., 2014; Ertürk, 2024). Nuclear counting can be useful for c-FOS quantification, post-hoc verification of calcium indicator imaging location, and anatomical mapping. However, in order to develop more robust computer vision methods for these tasks, new 3D datasets must be developed, as none exist to date. Therefore, we developed a 3D human-annotated dataset based on data acquired with a mesoSPIM system (Voigt et al., 2019; Figure 1a, see Methods and the Dataset Card). Using whole-brain data from mice, we cropped small regions and human-annotated in 3D 2632 neurons that were endogenously labeled by TPH2-tdTomato (Figure 1a). In order to aid experts in performing labeling, we built a 3D annotator in napari, which is included in our Python package called CellSeg3D (see Methods).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/99848/elife-99848-fig1-v1.jpg)
+
+**Figure 1.:** (a) Raw mesoSPIM whole-brain sample, volumes, and corresponding ground truth labels from somatosensory (S1) and visual (V1) cortical regions. (b) Evaluation of instance segmentation performance for: baseline with Otsu thresholding only, supervised models: Cellpose, StartDist, SwinUNetR, SegResNet; and our self-supervised model WNet3D over three data subsets. F1-score is computed from the Intersection over Union (IoU) with ground truth labels, then averaged. Error bars represent 50% ~Confidence Intervals (CIs). (c) View of 3D instance labels from models, as noted, for the visual cortex volume. (d) Illustration of our WNet3D architecture showcasing the dual 3D U-Net structure with our modifications (see Methods).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99848/elife-99848-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b, c) Hyperparameter optimization for several supervised models. In Cellpose, the cell probability threshold value is applied before the sigmoid, hence values between −12 and 12 were tested. CellSeg3D models return predictions between 0 and 1 after applying the softmax, values tested were, therefore, in this range. Error bars show 95% ~CIs. (d) StarDist hyperparameter optimization. Several parameters were tested for non-maximum suppression (NMS) threshold and cell probability threshold. Heatmap is F1-Score. (e) Pooled F1-Scores per split, related to Figure 2a, used for statistical testing shown in f. The central box represents the interquartile range (IQR) of values with the median as a horizontal line, the upper and lower limits the upper and lower quartiles. Whiskers extend to data points within 1.5 IQR of the quartiles. Outliers are shown separately. (f) Pairwise Conover’s test p-values for the F1-Score values per model shown in e. Colors are based on level of significance. (g) Example image of WNet3D before and after artifact filtering; after also shown in Figure 1c, plus an additional example of WNet3D in S1 cortex.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/99848/elife-99848-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) The loss for the encoder $U_{enc}$ is the SoftNCuts, whereas the reconstruction loss for $U_{dec}$ is MSE. The weighted sum of losses is calculated as indicated in Methods. For select epochs, input volumes are shown, with outputs from encoder $U_{enc}$ above, and outputs from decoder $U_{dec}$ below. (b) Additional model inference results on Mouse Skull dataset, and example of post-processing in order to correct holes or other artifacts, as shown with the red to white arrows.
+
 To show performance on this new dataset, we benchmarked Cellpose (Stringer et al., 2021; Pachitariu and Stringer, 2022) and StarDist (Weigert et al., 2020). Cellpose is a spatial-embedding-based instance segmentation method. The network predicts a flow vector at each pixel, representing the pre-computed solution of the heat diffusion equation applied to instance masks, with the heat source at the object center. During inference, these learned flows guide pixel grouping, linking those that converge to the same location. Cellpose-3D extends Cellpose by using the trained 2D model, and processing all slices of a test volume independently along the xy, xz, and yz planes. This generates two estimates of the gradient in x, y, and z for each point (six total predictions), which are averaged to obtain a full set of 3D vector gradients. ROI generation then follows a 3D gradient vector tracking step, clustering pixels that converge to the same fixed points. StarDist predicts distances from each pixel (or voxel) to the boundary of the surrounding object along predefined directions (rays). This allows for precise instance segmentation, particularly for objects with star-convex shapes, making StarDist one of the most widely applied methods in this domain.
 
 We then trained two additional models from different classes - transformers and 3D convolutional neural networks - for supervised direct-3D segmentation. Specifically, we leveraged a SwinUNetR transformer (Hatamizadeh et al., 2022), and a SegResNet CNN (Myronenko, 2018) from the MONAI project (The MONAI Consortium, 2020). SwinUNetR is a transformer-based segmentation model that combines the Swin Transformer architecture with the UNet design. It leverages the self-attention mechanism of transformers for capturing long-range dependencies and multi-scale features in the input data. The hierarchical structure of the Swin transformer allows SwinUNetR to process images with variable resolutions efficiently. SegResNet is a convolutional neural network (CNN) developed for 3D medical image segmentation (Myronenko, 2018). It is based on a ResNet-like architecture, incorporating residual connections to improve gradient flow and model convergence during training. SwinUNetR and SegResNet are optimized for volumetric segmentation tasks but not used previously in cell segmentation tasks.
@@ -54,7 +66,7 @@ Here, we built a new self-supervised model called WNet3D for direct-3D segmentat
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99848/elife-99848-fig2-v1.jpg)
 
-**Figure 2.:** .(a) Semantic segmentation performance: comparison of model efficiency, indicating the volume of training data required to achieve a given performance level. Each supervised model was trained with an increasing percentage of training data (with 10, 20, 60, or 80%, left to right/dark to light within each model grouping, see legend); F1-Score score with an  was computed on unseen test data, over three data subsets for each training/evaluation split. Our self-supervised model (WNet3D) is also trained on a subset of the training set of images, but always without ground truth human labels. Far right: We also show the performance of the pre-trained WNet3D available in the plugin (far right), with and without cropping the regions where artifacts are present in the image. See Methods for details. The central box represents the interquartile range (IQR) of values with the median as a horizontal line, the upper and lower limits the upper and lower quartiles. Whiskers extend to data points within 1.5 IQR of the quartiles. (IoU>=0\begin{document}$IoU >= 0$\end{document}b) Instance segmentation performance comparison of Swin-UNetR and WNet3D (pretrained, see Methods), evaluated on unseen data across 3 data subsets, compared with a Swin-UNetR model trained using labels from the WNet3D self-supervised model. Here, WNet3D was trained on separate data, producing semantic labels that were then used to train a supervised Swin-UNetR model, still on held-out data. This supervised model was evaluated as the other models, on 3 held-out images from our dataset, unseen during training. Error bars indicate 50% ~CIs. (c) Workflow diagram depicting the segmentation pipeline: either raw data can be used directly (self-supervised) or labeled and used for training, after which other data can be used for model inference. Each stream concludes with post-hoc inspection and refinement, if needed (post-processing analysis and/or refining the model).
+**Figure 2.:** (a) Semantic segmentation performance: comparison of model efficiency, indicating the volume of training data required to achieve a given performance level. Each supervised model was trained with an increasing percentage of training data (with 10, 20, 60, or 80%, left to right/dark to light within each model grouping, see legend); F1-Score score with an $IoU>=0$ was computed on unseen test data, over three data subsets for each training/evaluation split. Our self-supervised model (WNet3D) is also trained on a subset of the training set of images, but always without ground truth human labels. Far right: We also show the performance of the pre-trained WNet3D available in the plugin (far right), with and without cropping the regions where artifacts are present in the image. See Methods for details. The central box represents the interquartile range (IQR) of values with the median as a horizontal line, the upper and lower limits the upper and lower quartiles. Whiskers extend to data points within 1.5 IQR of the quartiles. (b) Instance segmentation performance comparison of Swin-UNetR and WNet3D (pretrained, see Methods), evaluated on unseen data across 3 data subsets, compared with a Swin-UNetR model trained using labels from the WNet3D self-supervised model. Here, WNet3D was trained on separate data, producing semantic labels that were then used to train a supervised Swin-UNetR model, still on held-out data. This supervised model was evaluated as the other models, on 3 held-out images from our dataset, unseen during training. Error bars indicate 50% ~CIs. (c) Workflow diagram depicting the segmentation pipeline: either raw data can be used directly (self-supervised) or labeled and used for training, after which other data can be used for model inference. Each stream concludes with post-hoc inspection and refinement, if needed (post-processing analysis and/or refining the model).
 
 Notably, our pre-trained WNet3D, which is trained on 100% of the raw data without any labels, achieves 0.81±0.004 F1-Score with simple filtering of artifacts (removing the slices containing the problematic regions; Figure 1—figure supplement 1g) and 0.74±0.12 without any filtering. To compare, we trained supervised models with 10, 20, 60, or 80% of the training data and tested on the held-out data subsets. Considering models with 80% of the training data, the F1-Score for SwinUNetR was 0.83±0.01, 0.76±0.03 for Cellpose (tuned), 0.74±0.006 for SegResNet, 0.72±0.007 for StarDist (tuned), 0.61±0.007 for StarDist (default), and 0.43±0.09 for Cellpose (default). For WNet3D with 80% raw data for training was 0.71±0.03 (unfiltered) (Figure 2a; an unfiltered example is shown in Figure 1—figure supplement 1g), which is still on-par with supervised models.
 
@@ -72,13 +84,254 @@ We benchmarked WNet3D, Cellpose, StarDist, plus the non-deep learning baseline, 
 
 **Figure 3.:** (a) Left: 3D Platynereis-ISH-Nuclei confocal data; middle is WNet3D semantic segmentation; right is instance segmentation. (b) Instance segmentation performance (zero-shot) of the pretrained WNet3D, Otsu threshold, and supervised models (Cellpose, StarDist) on select datasets featured in a, shown as F1-score vs intersection over union (IoU) with ground truth labels. (c) Left: 3D Platynereis-Nuclei LSM data; middle is WNet3D semantic segmentation; right is instance segmentation. (d) Instance segmentation performance (zero-shot) of the pretrained WNet3D, Otsu threshold, and supervised models (Cellpose, StarDist) on select datasets featured in c, shown as F1-score vs IoU with ground truth labels. (e) Left: Mouse Skull-Nuclei Zeiss LSM 880 data; middle is WNet3D semantic segmentation; right is instance segmentation. A demo of using CellSeg3D to obtain these results is available here: https://www.youtube.com/watch?v=U2a9IbiO7nE&t=12s. (f) Instance segmentation performance (zero-shot) of the pretrained WNet3D, Otsu threshold, and supervised models (Cellpose, StarDist) on select datasets featured in e, shown as F1-score vs IoU with ground truth labels.
 
+**Table 1.**
+ F1-Scores for additional benchmark datasets, where we test our pretrained WNet3D, zero-shot.Kruskal-Wallis H test [dataset, statistic, p-value]: Platynereis-ISH-Nuclei-CBG, 1.6, 0.69; Platynereis-Nuclei-CBG, 3.06, 0.38; Mouse-Skull-Nuclei-CBG (within post-processed), 10.13, 0.018; Mouse-Skull-Nuclei-CBG (no processing), 15.8, 0.001.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>F10.1</th>
+      <th>F10.2</th>
+      <th>F10.3</th>
+      <th>F10.4</th>
+      <th>F10.5</th>
+      <th>F10.6</th>
+      <th>F10.7</th>
+      <th>F10.8</th>
+      <th>F10.9</th>
+      <th>F1MEAN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="11">Platynereis-ISH-Nuclei-CBG:</td>
+    </tr>
+    <tr>
+      <td>Otsu threshold</td>
+      <td>0.872</td>
+      <td>0.847</td>
+      <td>0.817</td>
+      <td>0.772</td>
+      <td>0.706</td>
+      <td>0.605</td>
+      <td>0.474</td>
+      <td>0.246</td>
+      <td>0.026</td>
+      <td>0.596</td>
+    </tr>
+    <tr>
+      <td>Cellpose (supervised)</td>
+      <td>0.896</td>
+      <td>0.866</td>
+      <td>0.832</td>
+      <td>0.778</td>
+      <td>0.698</td>
+      <td>0.576</td>
+      <td>0.362</td>
+      <td>0.117</td>
+      <td>0.010</td>
+      <td>0.570</td>
+    </tr>
+    <tr>
+      <td>StarDist (supervised)</td>
+      <td>0.841</td>
+      <td>0.822</td>
+      <td>0.786</td>
+      <td>0.686</td>
+      <td>0.536</td>
+      <td>0.326</td>
+      <td>0.110</td>
+      <td>0.011</td>
+      <td>0.</td>
+      <td>0.458</td>
+    </tr>
+    <tr>
+      <td>WNet3D (zero-shot)</td>
+      <td>0.876</td>
+      <td>0.856</td>
+      <td>0.834</td>
+      <td>0.790</td>
+      <td>0.729</td>
+      <td>0.632</td>
+      <td>0.492</td>
+      <td>0.249</td>
+      <td>0.034</td>
+      <td>0.610</td>
+    </tr>
+    <tr>
+      <td colspan="11">Platynereis-Nuclei-CBG:</td>
+    </tr>
+    <tr>
+      <td>Otsu threshold</td>
+      <td>0.798</td>
+      <td>0.773</td>
+      <td>0.733</td>
+      <td>0.702</td>
+      <td>0.663</td>
+      <td>0.590</td>
+      <td>0.507</td>
+      <td>0.336</td>
+      <td>0.077</td>
+      <td>0.576</td>
+    </tr>
+    <tr>
+      <td>Cellpose (supervised)</td>
+      <td>0.691</td>
+      <td>0.663</td>
+      <td>0.624</td>
+      <td>0.594</td>
+      <td>0.553</td>
+      <td>0.497</td>
+      <td>0.417</td>
+      <td>0.290</td>
+      <td>0.062</td>
+      <td>0.488</td>
+    </tr>
+    <tr>
+      <td>StarDist (supervised)</td>
+      <td>0.850</td>
+      <td>0.833</td>
+      <td>0.803</td>
+      <td>0.764</td>
+      <td>0.700</td>
+      <td>0.611</td>
+      <td>0.492</td>
+      <td>0.272</td>
+      <td>0.019</td>
+      <td>0.594</td>
+    </tr>
+    <tr>
+      <td>WNet3D (zero-shot)</td>
+      <td>0.838</td>
+      <td>0.808</td>
+      <td>0.778</td>
+      <td>0.739</td>
+      <td>0.695</td>
+      <td>0.617</td>
+      <td>0.512</td>
+      <td>0.338</td>
+      <td>0.059</td>
+      <td>0.598</td>
+    </tr>
+    <tr>
+      <td colspan="11">Mouse-Skull-Nuclei-CBG (most challenging dataset)</td>
+    </tr>
+    <tr>
+      <td>Otsu threshold</td>
+      <td>0.667</td>
+      <td>0.634</td>
+      <td>0.596</td>
+      <td>0.566</td>
+      <td>0.495</td>
+      <td>0.427</td>
+      <td>0.369</td>
+      <td>0.276</td>
+      <td>0.097</td>
+      <td>0.458</td>
+    </tr>
+    <tr>
+      <td>Otsu threshold +post-processing</td>
+      <td>0.695</td>
+      <td>0.668</td>
+      <td>0.647</td>
+      <td>0.612</td>
+      <td>0.543</td>
+      <td>0.490</td>
+      <td>0.428</td>
+      <td>0.334</td>
+      <td>0.137</td>
+      <td>0.506</td>
+    </tr>
+    <tr>
+      <td>Cellpose (supervised)</td>
+      <td>0.137</td>
+      <td>0.111</td>
+      <td>0.077</td>
+      <td>0.054</td>
+      <td>0.038</td>
+      <td>0.028</td>
+      <td>0.020</td>
+      <td>0.014</td>
+      <td>0.006</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>Cellpose +post-processing</td>
+      <td>0.386</td>
+      <td>0.362</td>
+      <td>0.339</td>
+      <td>0.312</td>
+      <td>0.266</td>
+      <td>0.228</td>
+      <td>0.189</td>
+      <td>0.120</td>
+      <td>0.027</td>
+      <td>0.248</td>
+    </tr>
+    <tr>
+      <td>StarDist (supervised)</td>
+      <td>0.573</td>
+      <td>0.533</td>
+      <td>0.411</td>
+      <td>0.253</td>
+      <td>0.135</td>
+      <td>0.065</td>
+      <td>0.020</td>
+      <td>0.003</td>
+      <td>0.0</td>
+      <td>0.221</td>
+    </tr>
+    <tr>
+      <td>StarDist +post-processing</td>
+      <td>0.689</td>
+      <td>0.649</td>
+      <td>0.557</td>
+      <td>0.407</td>
+      <td>0.276</td>
+      <td>0.174</td>
+      <td>0.073</td>
+      <td>0.010</td>
+      <td>0.0</td>
+      <td>0.315</td>
+    </tr>
+    <tr>
+      <td>WNet3D (zero-shot)</td>
+      <td>0.766</td>
+      <td>0.732</td>
+      <td>0.669</td>
+      <td>0.572</td>
+      <td>0.455</td>
+      <td>0.355</td>
+      <td>0.254</td>
+      <td>0.175</td>
+      <td>0.033</td>
+      <td>0.446</td>
+    </tr>
+    <tr>
+      <td>WNet3D+post-processing</td>
+      <td>0.807</td>
+      <td>0.783</td>
+      <td>0.763</td>
+      <td>0.725</td>
+      <td>0.637</td>
+      <td>0.534</td>
+      <td>0.428</td>
+      <td>0.296</td>
+      <td>0.073</td>
+      <td>0.561</td>
+    </tr>
+  </tbody>
+</table>
+
 Lastly, as a worked example, we tested our pre-trained WNet3D on mouse whole-brain tissue that was cleared and stained with cFOS then imaged with a mesoSPIM microscope (Figure 4a and b; see Methods). We used the BrainReg (Tyson et al., 2022; Niedworok et al., 2016; Claudi et al., 2020) registration toolkit to align our sample to the Allen Institute Brain Atlas (https://mouse.brain-map.org/). We then selected brain regions (such as motor cortex) using our CellSeg3D package, and ran model inference (Figure 4b).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99848/elife-99848-fig4-v1.jpg)
 
 **Figure 4.:** (a) Demo using a cleared and MesoSPIM imaged c-FOS mouse brain, followed by BrainReg (20.22) registration to the Allen Brain Atlas https://mouse.brain-map.org/, then processing of regions of interest (ROIs) with CellSeg3D. Here, the WNet3D was used for semantic segmentation followed by processing for instance segmentation. (b) Qualitative example of WNet3D-generated prediction (thresholded) and labels on a crop from the c-FOS-labeled whole-brain. A demo of using CellSeg3D to obtain these results is available here: https://www.youtube.com/watch?v=3UOvvpKxEAo.
 
-## Discussion and limitations
+### Discussion and limitations
 
 One major limitation for the field has been the lack of 3D data (Ma et al., 2024). We provide the first-in-kind open source ground truth dataset of mesoSPIM mouse brain data that we hope sparks more methods to be developed. Thus, while we put considerable efforts here to provide a new neuron 3D dataset, more datasets will be needed in the future to understand the limitations of self-supervised learning for this type of data and beyond.
 
@@ -86,59 +339,123 @@ Another limitation is that self-supervised methods are going to excel in samples
 
 While we focused our efforts on rather uncluttered nuclei -- except for the challenging mouse skull in Figure 3e where WNet3D performs better than supervised models -- we believe that our self-supervised semantic segmentation model could generalize to other fluorescence 3D data as it becomes available, despite the limitations. However, we have never tested our approach on electron microscopy data, or for axon tracing, so other tools are likely to be more suitable for those tasks (Dorkenwald et al., 2023; Friedmann et al., 2020). For instance segmentation, if the cells are more overlapping, etc., more complex methods, such as the star-convex polygons used by StarDist to approximate the shapes of cell nuclei, could be adapted to recover higher-quality instance labels (since it is agnostic to the backbone used Weigert et al., 2020). Nonetheless, we believe that the benefit of fully self-supervised learning is worth the cost of post-hoc processing for these types of easy-to-spot and fix mistakes, given that generating a large ground truth 3D dataset is on the order of hundreds of human-hours of labeling efforts.
 
-## Conclusions
+### Conclusions
 
 In summary, the CellSeg3D Python package supports high-performance supervised and self-supervised direct-3D segmentation for quantifying cells, as shown on four benchmark datasets. Our napari plugin supports both our new pretrained WNet3D for testing, the ability to train the WNet3D, and to use other top supervised models presented here (SegResNet, SwinUNetR). We also provide various tools for pre- and post-processing as well as utilities for labeling in 3D. We additionally provide our new 2632 cell 3D dataset intended for benchmarking 3D cell segmentation algorithms on mesoSPIM acquired cleared tissue (see Dataset Card). All code and data is fully open-sourced at https://github.com/AdaptiveMotorControlLab/CellSeg3D.
 
 ## Methods
 
-## Datasets
+### Datasets
 
-## CellSeg3D mesoSPIM dataset: Acquisition and labeling
+#### CellSeg3D mesoSPIM dataset: Acquisition and labeling
 
 The whole-brain data by Voigt et al., 2019 was obtained from the IDR platform (Williams et al., 2017); the volume consists of CLARITY-cleared tissue from a TPH2-tdTomato mouse. Data was acquired with the mesoSPIM system at a zoom of 0.63 X with 561 nm excitation.
 
 The data was cropped to several regions of the somatosensory (five volumes, without artifacts) and visual cortex (one volume, with artifacts) and annotated by an expert. All volumes were annotated by hand (see Dataset Card below for more details). The ground-truth cell count for the dataset is as follows (Table 2):
 
-## Additional benchmarking datasets from EmbedSeg
+**Table 2.**
+ Dataset ground-truth cell count per volume.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Size</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>(pixels)</td>
+      <td>(# of cells)</td>
+    </tr>
+    <tr>
+      <td>Sensorimotor</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>199 × 106 × 147</td>
+      <td>343</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>299 × 78 × 111</td>
+      <td>365</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>299 × 105 × 147</td>
+      <td>631</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>249 × 93 × 114</td>
+      <td>396</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>249 × 86 × 94</td>
+      <td>347</td>
+    </tr>
+    <tr>
+      <td>Visual</td>
+      <td>329 × 127 × 214</td>
+      <td>485</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Additional benchmarking datasets from EmbedSeg
 
 Additional datasets, used in Figure 3 were used from the GitHub page of EmbedSeg (Lalit and Tomancak, 2021; JugLab, 2021). We used our pretrained WNet3D, without re-training (the model was only trained on our new MesoSPIM dataset described above), to generate semantic segmentation. Images and labels were first cropped to contents, discarding empty regions on the edges. We then downscaled the images and labels by a factor of two to reduce runtime. We obtain the raw WNet3D prediction simply by adding the images to napari, and using the Inference tool of the plugin with WNet3D, without changing any parameters from default. Note that usually one would enable thresholding, window inference, and instance segmentation in the napari GUI to directly obtain usable instance segmentation, however, this is also possible in Jupyter Notebooks, which we used for reproducibility to create the results shown.
 
 Next, the channel containing the foreground was thresholded and the Voronoi-Otsu method from pyclEsperanto (Robert et al., 2020) was used to generate instance labels (for Platynereis data), with hyperparameters based on the F1-Score metric with the ground truth from data separate to the one on which we evaluate performance. However, these parameters can also be estimated directly. This is documented here.
 
-For the Mouse Skull Nuclei instance segmentation, we performed additional post-processing using pyclEsperanto (Robert et al., 2020) to perform a morphological closing operation with radius 8 on semantic labels in order to remove small holes. The image was then remapped to values ∈[0;100]\begin{document}$\in [0;100]$\end{document} for convenience, before merging labels with a touching border within intensity range between 35 and 100 using the merge_labels_with_border_intensity_within_range function. This is documented in our linked Figures here.
+For the Mouse Skull Nuclei instance segmentation, we performed additional post-processing using pyclEsperanto (Robert et al., 2020) to perform a morphological closing operation with radius 8 on semantic labels in order to remove small holes. The image was then remapped to values $\in[0;100]$ for convenience, before merging labels with a touching border within intensity range between 35 and 100 using the merge_labels_with_border_intensity_within_range function. This is documented in our linked Figures here.
 
 We additionally report for these datasets the performance of the latest pretrained ‘nuclei’ Cellpose model, and a retrained a StarDist model (as no suitable pretrained model existed). For Cellpose, the object size parameter was estimated using the provided size model in the GUI, and the ‘nuclei’ pre-trained model was run to obtain instance labels. Other parameters were kept to defaults. For StarDist, models were trained with all remaining data in the dataset (i.e. excluding volumes used to report performance), as a training set with an 80%/20% train/validation split. All parameters and data augmentation used were the defaults, aside from training patch size, which was set to (64, 64, 64), which let all objects fit within the field of view. NMS and object thresholds were optimized after training using the provided functions. For inference on Mouse-Skull-Nuclei-CBG, the tiled prediction mode was used to allow volumes to fit in memory. We show performance on Mouse Skull with and without the extra post-processing, as well as a qualitative example of the effect of the post-processing (Figure 3, Figure 1—figure supplement 2b).
 
-## c-FOS dataset
+#### c-FOS dataset
 
 For the MesoSPIM c-FOS demo, we used a wild-type C57BL/6 J adult mouse (17 wk old, Female) that was given appetitive food 90 min before deep anesthesia and intra-cardial perfusion with 4% PFA. We followed established guidelines for iDISCO (Renier et al., 2014). In brief, the brain was dehydrated, bleached, permeabilized, and stained for c-FOS using anti-c-FOS Rat monoclonal purified IgG (Synaptic Systems, Cat. No. 226 017) followed by a Donkey anti-Rat IgG Alexa Fluor 555 (Invitrogen A78945) secondary antibody. Then, the whole brain was imaged on a mesoSPIM (Voigt et al., 2019). Imaging was performed with a laser at a wavelength of 561 nm, with a pixel size of 5.26 × 5.26 µm in x,y, and a step size of 5 µm in z. All experimental protocols adhered to the stringent ethical standards set forth by the Veterinary Department of the Canton Geneva, Switzerland, with all procedures receiving approval and conducted under license number 33020 (GE10A).
 
-## Segmentation models and algorithms: Self-supervised semantic segmentation
+### Segmentation models and algorithms: Self-supervised semantic segmentation
 
-## WNet3D model architecture
+#### WNet3D model architecture
 
 To perform self-supervised cell segmentation, we adapted the WNet architecture proposed by Xia and Kulis, 2017, an autoencoder architecture based on joining two U-Net models end-to-end. We provide a modified version of the WNet, named WNet3D, with the following changes:
 
 Reducing the number of layers improved overall performance by reducing overfitting and sped up training and inference. This trimming was meant to reduce the large number of parameters resulting from a naive conversion of the original WNet architecture to 3D, which were found to be unnecessary for the present cell segmentation task. Finally, we introduced group normalization (Wu and He, 2018) to replace batch normalization, which improved performance in the present low batch size setting, as well as training and inference speed.
 
-To summarize, the model consists of an encoder Uenc\begin{document}$U_{enc}$\end{document} and decoder Udec\begin{document}$U_{dec}$\end{document}, as originally proposed; however, each UNet comprises seven blocks, for a total of 14 blocks, down from nine blocks per UNet originally. Uenc\begin{document}$U_{enc}$\end{document} and Udec\begin{document}$U_{dec}$\end{document} start and end with 2 3×3×3 3D convolutional layers, in between are five blocks, each block being defined by two 3×3×3 3D convolutional layers, followed by a ReLU and group normalization (Wu and He, 2018) (instead of batch normalization). Skip connections are used to propagate information by concatenating the output of descending blocks to that of their corresponding ascending blocks. Each block is followed by 2×2×2 max pooling layers in the descending half of Uenc\begin{document}$U_{enc}$\end{document} and Udec\begin{document}$U_{dec}$\end{document}, the ascending half uses 2×2×2 transpose convolution layers with stride=2; Uenc\begin{document}$U_{enc}$\end{document} is then followed by a 1×1×1 3D convolutional layer to obtain class logits, followed by a softmax, the output of which is provided to Udec\begin{document}$U_{dec}$\end{document} to perform the reconstruction. Udec\begin{document}$U_{dec}$\end{document} is similarly followed by a 1×1×1 3D convolutional layer and outputs the reconstructed volume. Refer to Figure 1 for an overview of the WNet3D architecture.
+To summarize, the model consists of an encoder $U_{enc}$ and decoder $U_{dec}$, as originally proposed; however, each UNet comprises seven blocks, for a total of 14 blocks, down from nine blocks per UNet originally. $U_{enc}$ and $U_{dec}$ start and end with 2 3×3×3 3D convolutional layers, in between are five blocks, each block being defined by two 3×3×3 3D convolutional layers, followed by a ReLU and group normalization (Wu and He, 2018) (instead of batch normalization). Skip connections are used to propagate information by concatenating the output of descending blocks to that of their corresponding ascending blocks. Each block is followed by 2×2×2 max pooling layers in the descending half of $U_{enc}$ and $U_{dec}$, the ascending half uses 2×2×2 transpose convolution layers with stride=2; $U_{enc}$ is then followed by a 1×1×1 3D convolutional layer to obtain class logits, followed by a softmax, the output of which is provided to $U_{dec}$ to perform the reconstruction. $U_{dec}$ is similarly followed by a 1×1×1 3D convolutional layer and outputs the reconstructed volume. Refer to Figure 1 for an overview of the WNet3D architecture.
 
-## Losses
+#### Losses
 
-Segmentation is performed in Uenc\begin{document}$U_{enc}$\end{document} by using an adapted 3D SoftNCuts loss (Shi and Malik, 2000) as an objective, with the voxel brightness differences defining the edge weight in the calculation, as proposed in the initial Ncuts algorithm.
+Segmentation is performed in $U_{enc}$ by using an adapted 3D SoftNCuts loss (Shi and Malik, 2000) as an objective, with the voxel brightness differences defining the edge weight in the calculation, as proposed in the initial Ncuts algorithm.
 
-The SoftNCuts is defined as(1)NcutK(V)=∑k=1Kcut(Ak,V−Ak)cut(Ak,V)\begin{document}$$\displaystyle \begin{array}{ll} Ncut_{K}(V) = \sum_{k=1}^{K}\frac{cut(A_{k}, V - A_{k})}{cut(A_{k}, V)}\end{array}$$\end{document}
+The SoftNCuts is defined as
 
-where cut(A,B)=∑u∈A,v∈Bw(u,v)\begin{document}$cut(A, B) = \sum_{u\in A, v\in B}w(u,v)$\end{document}, V\begin{document}$V$\end{document} is the set of all pixels, Ak\begin{document}$A_{k}$\end{document} the set of all pixels labeled as class k\begin{document}$k$\end{document} (K\begin{document}$K$\end{document} being the number of classes, which is set to 2 here) and w(u,v)\begin{document}$w(u, v)$\end{document} is the weight of the edge uv\begin{document}$uv$\end{document} in a graph representation of the image. In order to group the voxels according to brightness, w(u,v)\begin{document}$w(u,v)$\end{document} is defined here as(2)w(u,v)=e−‖F(u)−F(v)‖22σI∗{e−‖X(u)−X(v)‖22σXif‖X(u)−X(v)‖<r0otherwise\begin{document}$$w(u, v)=e^{\frac{-\left\|\boldsymbol{F}(u)-\boldsymbol{F}(v)\right\|^{2}_{2} }{\sigma _{I}} }\ast \left\{\begin{matrix} e^{\frac{-\left\|\boldsymbol {X}{(u)-\boldsymbol{X}(v)}\right\|^{2}_{2} }{\sigma _X} } &{\rm if}\left\|\boldsymbol{X(u)-\boldsymbol{X}(v)}\right\| \lt r \\ 0 & \rm{otherwise} \end{matrix} \right.$$\end{document}
+$$
+Ncut_{K}(V)=\sumk=1K\frac{cut(A_{k},V−A_{k})}{cut(A_{k},V)}
+$$
 
-with F(i)=I(i)\begin{document}$F(i) = I(i)$\end{document} the intensity value, X\begin{document}$X$\end{document} the spatial position of the voxel, σI\begin{document}$\sigma_{I}$\end{document} the standard deviation of the feature similarity term, termed ‘intensity sigma,’ σX\begin{document}$\sigma_{X}$\end{document} the standard deviation of the spatial proximity term, termed ‘spatial sigma,’ and r\begin{document}$r$\end{document} the radius for the calculation of the loss, to avoid computing every pairwise value.
+where $cut(A,B)=\sum_{u\inA,v\inB}w(u,v)$, $V$ is the set of all pixels, $A_{k}$ the set of all pixels labeled as class $k$ ($K$ being the number of classes, which is set to 2 here) and $w(u,v)$ is the weight of the edge $uv$ in a graph representation of the image. In order to group the voxels according to brightness, $w(u,v)$ is defined here as
+
+$$
+w(u,v)=e^{\frac{−‖F(u)−F(v)‖_{2}^{2}}{\sigma_{I}}}∗{e^{\frac{−‖X(u)−X(v)‖_{2}^{2}}{\sigma_{X}}}if‖X(u)−X(v)‖<r0otherwise
+$$
+
+with $F(i)=I(i)$ the intensity value, $X$ the spatial position of the voxel, $\sigma_{I}$ the standard deviation of the feature similarity term, termed ‘intensity sigma,’ $\sigma_{X}$ the standard deviation of the spatial proximity term, termed ‘spatial sigma,’ and $r$ the radius for the calculation of the loss, to avoid computing every pairwise value.
 
 In our experiments, lowering the radius greatly sped up training without impacting performance, even with a radius as low as 2 voxels. For the spatial sigma, the original value of 4 was used, whereas for the intensity sigma, we use a value of 1 (originally 4), after remapping voxel values in each image to the [0; 100] range.
 
-Udec\begin{document}$U_{dec}$\end{document} then uses a suitable reconstruction loss to reconstruct the original image; we used either Mean Squared Error (MSE) or Binary Cross Entropy (BCE) as defined in PyTorch.
+$U_{dec}$ then uses a suitable reconstruction loss to reconstruct the original image; we used either Mean Squared Error (MSE) or Binary Cross Entropy (BCE) as defined in PyTorch.
 
-## WNet3D hyperparameters
+#### WNet3D hyperparameters
 
 To achieve proper cell segmentation, it was crucial to prevent the SoftNCuts loss from simply separating the data in broad regions with differing overall brightness; this was achieved by adjusting the weighting of the reconstruction loss accordingly. In our experiments, we empirically adapted the weights to equalize the contribution of each loss term, ensuring balanced gradients in the backward pass. This proved effective for training on our provided dataset; however, for different samples, adjusting the reconstruction weight and learning rate using the ranges specified below was necessary for good performance; other parameters were kept constant.
 
@@ -150,9 +467,9 @@ This modified model was usually trained for 50 epochs, unless stated otherwise. 
 
 See Figure 1—figure supplement 2a for an overview of the training process, including loss curves and model outputs.
 
-## Segmentation models and algorithms: Supervised semantic segmentation
+### Segmentation models and algorithms: Supervised semantic segmentation
 
-## Model architectures
+#### Model architectures
 
 In order to perform supervised fully 3D cell segmentation, we leveraged computer vision models and losses implemented by the MONAI project, which offers several state-of-the-art architectures. The MONAI API was used as the basis for our napari plugin, and we retained two of the provided models based on their performance on our dataset:
 
@@ -164,13 +481,13 @@ The SegResNet and SwinUNetR models shown here were trained using the Generalized
 
 The outputs were then passed through a threshold to discard low-confidence predictions; this was estimated using the training set to find the threshold that maximized the Dice metric between predictions and ground truth. Using the training set for this process ensures that we do not overfit the evaluation set on which we calculate the metrics. See the following notebook for the corresponding code: here. The ‘Find best threshold’ utility in the napari plugin allows one to perform this search immediately between a pair of labels and prediction volumes. We provide a full demo of how to estimate thresholds on a case-by-case basis in the following video: https://www.youtube.com/watch?v=xYbYqL1KDYE. The same process was repeated for Cellpose (for cell probability threshold) and StarDist (non-maximum suppression (NMS) and cell probability thresholds) to ensure fair comparisons, see ‘Model comparison’ below and Figure 1, Figure 1—figure supplement 1a, b, c, d for tuning results. Inference outputs are processed a posteriori to obtain instance labels, as detailed below.
 
-## Instance segmentation
+#### Instance segmentation
 
 Several methods for instance segmentation are available in the plugin: the connected components and watershed algorithms (scikit-image), and the Voronoi-Otsu labeling method (clEsperanto). The latter combines an Otsu threshold and a Voronoi tessellation to perform instance segmentation, and more readily avoids fusing clumped cells than the former two, provided that the objects are convex, which is the case in the present task.
 
 The Voronoi-Otsu method was, therefore, used to perform instance segmentation in the benchmarks, with its two parameters, spatial sigma and outline sigma, tuned to fit the training data when relevant, and manually selected otherwise.
 
-## Model comparisons
+### Model comparisons
 
 StarDist was retrained using the provided example notebook for 3D, using default parameters. For the model we refer to as ‘Default,’ we used a patch size of 8× 64 × 64, a grid of (2,1,1) , a batch size of 2 and 96 rays, as computed automatically in the provided example code for StarDist. For the ‘Tuned’ version (referred to simply as ‘StarDist’), we changed the patch size to 64 × 64 × 64 and the grid to (1,1,1).
 
@@ -180,7 +497,7 @@ Models provided in the plugin (SwinUNetR, SegResNet, and WNet3D), which we refer
 
 For Figure 1b, we trained each model on a subset of the dataset (sensorimotor volumes), chunked into 64 pixels cubes using an 80/20% training/validation split, and estimated the best threshold on the same training data. Next, we used the remaining held-out data (visual volume) to evaluate performance. Code for thresholds optimization may be found here, and code to create Figure 2 can be found here. We also compared the performance of all models with that of a non-learning based thresholding, by using Otsu’s threshold method followed by the Voronoi-Otsu instance segmentation function from pyClEsperanto to generate predictions. When comparing these results obtained by Otsu threshold with WNet3D results in Figure 1b, we additionally report performance on a specific subset of volumes without regions containing artifacts, without any differences in post-processing across methods.
 
-## Label efficiency comparison
+### Label efficiency comparison
 
 To assess how many labeled cells are required to reach a certain performance, we trained StarDist, Cellpose, SegResNet, SwinUNetR, and WNet3D on three distinct subsets of the data, each time holding out one full volume of the full dataset for evaluation, fragmenting the remaining volumes and labels into 64-pixel cubes, and training on distinct train/validation splits on remaining data. We used 10, 20, 60, and 80% splits in order to assess how much labeled data is necessary for the supervised models, and whether they show variability based on the data used for training. Of note, the evaluation data remained the same for all percentages in a given data subset, ensuring a consistent performance comparison. We used 50 epochs for all runs, and no early stopping or hyperparameter tuning was performed based on the validation performance during training. Instead, we reused the best hyperparameters found for Figure 1b.
 
@@ -190,25 +507,65 @@ To avoid training on data with artifacts present in the visual cortex volume, WN
 
 Instance labels were generated as stated above, and then converted back to semantic labels to compute the F1-Score, see Performance evaluation section below.
 
-## WNet3D-based retraining of supervised models
+### WNet3D-based retraining of supervised models
 
-To assess whether WNet3D can generalize to unseen data when trained on a specific brain volume, we trained a WNet3D from scratch using volumes cropped from a different mesoSPIM-acquired whole-brain sample, labeled with c-FOS, imaged at 561 nm with a pixel size of 5.26×5.26μm\begin{document}$5.26\times5.26 \,\mu m$\end{document} in x and y, and a step size in z of 5μm\begin{document}$5 \,\mu m$\end{document} (see Additional datasets).
+To assess whether WNet3D can generalize to unseen data when trained on a specific brain volume, we trained a WNet3D from scratch using volumes cropped from a different mesoSPIM-acquired whole-brain sample, labeled with c-FOS, imaged at 561 nm with a pixel size of $5.26\times5.26\mum$ in x and y, and a step size in z of $5\mum$ (see Additional datasets).
 
 This model was then used to generate labels for our provided dataset. A SwinUNetR model was then trained using these WNet3D generated labels, and compared to the performance of the pretrained model we provide in our napari plugin.
 
-## Performance evaluation
+### Performance evaluation
 
-The models were evaluated using standard segmentation metrics (Hirling et al., 2024), namely F1-Score and intersection over union (IoU\begin{document}$IoU$\end{document}). The equations for these evaluation metrics are shown below, with TP, FP, and FN representing true positives (TP), false positives (FP), and false negatives (FN), respectively. The higher the F1 (precision and recall), the better the model performance.IoU=TPTP+FP+FN,F1-Score=2TP2TP+FP+FN,Precision=TPTP+FP,Recall=TPTP+FN\begin{document}$$\begin{equation*}\text{IoU}= \frac{\text{TP}}{\text{TP+FP+FN}}, \quad \text{F1-Score}= \frac{2\text{TP}}{2\text{TP+FP+FN}}, \quad \text{Precision}= \frac{\text{TP}}{\text{TP+FP}}, \quad \text{Recall}= \frac{\text{TP}}{\text{TP+FN}}\end{equation*}$$\end{document}
+The models were evaluated using standard segmentation metrics (Hirling et al., 2024), namely F1-Score and intersection over union ($IoU$). The equations for these evaluation metrics are shown below, with TP, FP, and FN representing true positives (TP), false positives (FP), and false negatives (FN), respectively. The higher the F1 (precision and recall), the better the model performance.
+
+$$
+IoU=\frac{TP}{TP+FP+FN},F1-Score=\frac{2TP}{2TP+FP+FN},Precision=\frac{TP}{TP+FP},Recall=\frac{TP}{TP+FN}
+$$
 
 We used the evaluation utilities provided by StarDist (Weigert et al., 2020).
 
-To assess performance for semantic segmentation, we report the F1-Score without any IoU\begin{document}$IoU$\end{document} threshold, which is then equivalent to the Dice score computed on the semantic labels, given the Boolean nature of the data.
+To assess performance for semantic segmentation, we report the F1-Score without any $IoU$ threshold, which is then equivalent to the Dice score computed on the semantic labels, given the Boolean nature of the data.
 
-The metric to assess instance segmentation accuracy can be computed as functions of several overlap thresholds; true positives are pairings of model predictions and ground-truth labels having an intersection over union (IoU\begin{document}$IoU$\end{document}) value greater than the specified threshold, with automated matching to prevent additional instances from being assigned to the same ground truth or model-predicted instance of a label. We report the F1-Score over a range of IoU\begin{document}$IoU$\end{document} thresholds between 0.1 and 0.9 (step size of 0.1).
+The metric to assess instance segmentation accuracy can be computed as functions of several overlap thresholds; true positives are pairings of model predictions and ground-truth labels having an intersection over union ($IoU$) value greater than the specified threshold, with automated matching to prevent additional instances from being assigned to the same ground truth or model-predicted instance of a label. We report the F1-Score over a range of $IoU$ thresholds between 0.1 and 0.9 (step size of 0.1).
 
-For instance segmentation, we take the model’s probability outputs and apply an intensity threshold to get semantic predictions; this threshold ultimately affects the reported metrics, therefore, we discuss the procedure here. We set these thresholds based on the training set. Specifically, to determine the optimal threshold for evaluating instance segmentation on a training fold, pairs of predictions and corresponding labels from the training set were taken. For each pair, the threshold that maximized the F1-Score at IoU>=0\begin{document}$IoU >= 0$\end{document}, which is equivalent to the Dice coefficient, was computed. This process was repeated for all images within the training fold. The resulting optimal thresholds provided the threshold used when evaluating that particular fold. The code for each use case can be found here. For the mesoSPIM data, this threshold was empirically found to be 0.4 (SwinUNetR), 0.3 (SegResNet), and 0.6 (WNet3D), in Figure 2. For Figure 3, the thresholds for WNet3D were: 0.45 for Mouse Skull and 0.55 for both the Platynereis datasets. We then convert these thresholded results to instance labels using the Voronoi-Otsu algorithm, the parameters of which were chosen based on the F1-Score metric between ground truth labels and model-generated labels on the training set, as described in the Model Section above describing instance segmentation. If a model is not trained, i.e., for example in Figure 3b, we set these parameters manually to threshold by eye. To reproduce the F1-Scores as shown, we used the following values (Table 3):
+For instance segmentation, we take the model’s probability outputs and apply an intensity threshold to get semantic predictions; this threshold ultimately affects the reported metrics, therefore, we discuss the procedure here. We set these thresholds based on the training set. Specifically, to determine the optimal threshold for evaluating instance segmentation on a training fold, pairs of predictions and corresponding labels from the training set were taken. For each pair, the threshold that maximized the F1-Score at $IoU>=0$, which is equivalent to the Dice coefficient, was computed. This process was repeated for all images within the training fold. The resulting optimal thresholds provided the threshold used when evaluating that particular fold. The code for each use case can be found here. For the mesoSPIM data, this threshold was empirically found to be 0.4 (SwinUNetR), 0.3 (SegResNet), and 0.6 (WNet3D), in Figure 2. For Figure 3, the thresholds for WNet3D were: 0.45 for Mouse Skull and 0.55 for both the Platynereis datasets. We then convert these thresholded results to instance labels using the Voronoi-Otsu algorithm, the parameters of which were chosen based on the F1-Score metric between ground truth labels and model-generated labels on the training set, as described in the Model Section above describing instance segmentation. If a model is not trained, i.e., for example in Figure 3b, we set these parameters manually to threshold by eye. To reproduce the F1-Scores as shown, we used the following values (Table 3):
 
-## CellSeg3D napari plugin workflow
+**Table 3.**
+ Parameters used for instance segmentation with the pyclEsperanto Voronoi-Otsu function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Outline σ</th>
+      <th>Spot σ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mesoSPIM</td>
+      <td>0.65</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>Mouse Skull</td>
+      <td>1</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Platynereis-ISH</td>
+      <td>0.5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Platynereis</td>
+      <td>0.5</td>
+      <td>2.75</td>
+    </tr>
+  </tbody>
+</table>
+
+### CellSeg3D napari plugin workflow
 
 To facilitate the use of our models, we provide a napari plugin where users can easily annotate data, train models, run inference, and perform various post-processing steps. Starting from raw data, users can quickly crop regions into regions of interest, and create training data from those. Users may manually annotate the data in napari using our labeling interface, which provides additional interfaces such as orthogonal projections to better view the ongoing labeling process, as well as keeping track of time spent labeling each slice, or alternatively train a self-supervised model to automatically perform a first iteration of the segmentation and labeling, without annotation. Users can also try pretrained models, including the self-supervised one, to generate labels which can then be corrected using the same labeling interface. Supervised or self-supervised models can then be trained using the generated data. Full documentation for the plugin can be found on our Github website.
 
@@ -220,6 +577,6 @@ Deterministic training may also be enabled for all models and the random generat
 
 We additionally provide a Colab Notebook to train our self-supervised model using the same procedure described above. The pretrained weights for all our models are also made available through the HuggingFace platform (and automatically downloaded by the plugin or in Colab), so that users without the recommended hardware can still easily train or try our models. All code is open source and available on https://github.com/AdaptiveMotorControlLab/CellSeg3D (copy archived at Achard et al., 2025).
 
-## Statistical methods
+### Statistical methods
 
 To confirm whether there were statistically significant differences in model performance, we pooled accuracy values across IoU, and/or across percentage of training data used. We used Python 3.8–3.10 using the https://pypi.org/project/scikit-posthocs/ package, and we performed a Kruskal-Wallis test to check the null hypothesis that the median of all models was equal. When this test was significant, we used two-sided Conover-Iman post-hoc testing to test pairwise differences between models, also using the ‘scikit_posthoc’ implementation, with the Holm-Bonferroni correction for multiple comparisons (step-down method using Bonferroni adjustments).

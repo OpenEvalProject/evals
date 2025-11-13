@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.43244.001 Misfolded proteins in the endoplasmic reticulum (ER) activate the unfolded protein response (UPR), which enhances protein folding to restore homeostasis. Additional pathways respond to ER stress, but how they help counteract protein misfolding is incompletely understood. Here, we develop a titratable system for the induction of ER stress in yeast to enable a genetic screen for factors that augment stress resistance independently of the UPR. We identify the proteasome biogenesis regulator Rpn4 and show that it cooperates with the UPR. Rpn4 abundance increases during ER stress, first by a post-transcriptional, then by a transcriptional mechanism. Induction of RPN4 transcription is triggered by cytosolic mislocalization of secretory proteins, is mediated by multiple signaling pathways and accelerates clearance of misfolded proteins from the cytosol. Thus, Rpn4 and the UPR are complementary elements of a modular cross-compartment response to ER stress.
+Misfolded proteins in the endoplasmic reticulum (ER) activate the unfolded protein response (UPR), which enhances protein folding to restore homeostasis. Additional pathways respond to ER stress, but how they help counteract protein misfolding is incompletely understood. Here, we develop a titratable system for the induction of ER stress in yeast to enable a genetic screen for factors that augment stress resistance independently of the UPR. We identify the proteasome biogenesis regulator Rpn4 and show that it cooperates with the UPR. Rpn4 abundance increases during ER stress, first by a post-transcriptional, then by a transcriptional mechanism. Induction of RPN4 transcription is triggered by cytosolic mislocalization of secretory proteins, is mediated by multiple signaling pathways and accelerates clearance of misfolded proteins from the cytosol. Thus, Rpn4 and the UPR are complementary elements of a modular cross-compartment response to ER stress.
 
 ## Introduction
 
@@ -30,15 +30,23 @@ Here, we identify the proteasome biogenesis regulator Rpn4 as an important UPR-i
 
 ## Results
 
-## A titratable system for the induction of ER stress
+### A titratable system for the induction of ER stress
 
 To identify pathways cooperating with the UPR, we searched for genes that can augment resistance to ER stress in UPR-deficient cells. Mutants lacking Ire1 or Hac1 grow normally under optimal conditions but cannot proliferate under even mild ER stress (Cox et al., 1993; Spear and Ng, 2003; Schuck et al., 2009). We hypothesized that UPR mutants can be protected against ER stress by overexpression of genes that complement the UPR. If so, such genes should be identifiable through a screen based on cell growth phenotypes.
 
 To implement this idea, we established a titratable system for the induction of ER stress. We used CPY*, a folding-defective variant of the soluble vacuolar carboxypeptidase Y (Finger et al., 1993). We chose an HA-tagged mutant variant of CPY* that lacks all of its four N-glycosylation sites and is here referred to as non-glycosylatable (ng) CPY*. After translocation into the ER, this variant is unable to fold properly and is neither efficiently cleared by ERAD nor exported to the Golgi complex (Knop et al., 1996; Spear and Ng, 2005; Kostova and Wolf, 2005). As a result, ngCPY* accumulates in the ER lumen and burdens the ER protein folding machinery. We placed ngCPY* under the control of the GAL promoter and the artificial transcription factor Gal4-ER-Msn2 (GEM). This system allows regulation of gene expression with the exogenous steroid β-estradiol (Pincus et al., 2014). Estradiol-driven expression of ngCPY* caused dose-dependent activation of the UPR as measured with a HAC1 splicing reporter (Figure 1A; Pincus et al., 2010). HAC1 splicing obtained with ≥100 nM estradiol was similar to that elicited by 0.5 µg/ml of the general ER stressor tunicamycin (Figure 1—figure supplement 1A). For all estradiol concentrations tested, HAC1 splicing declined at later time points, suggesting that cells adapted to the stress and inactivated the UPR. Estradiol-induced expression of glycosylatable CPY*, which is degraded through ERAD and can be exported from the ER, yielded much weaker and more transient UPR activation (Figure 1—figure supplement 1B). Cycloheximide chase experiments confirmed that ngCPY* was substantially more resistant to degradation than glycosylatable CPY*, as reported (Figure 1B; Knop et al., 1996). Furthermore, ngCPY* tagged with superfolder GFP (sfGFP) was largely retained in the ER (Figure 1C). In contrast, CPY*(N479Q)-sfGFP, which lacks the glycosylation site required for efficient ERAD but contains the three glycosylation sites needed for ER export, escaped to the vacuole (Figure 1—figure supplement 1C; Kawaguchi et al., 2010).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig1-v1.jpg)
+
+**Figure 1.:** (A) Flow cytometric measurement of GFP levels in cells harboring the HAC1 splicing reporter and expressing ngCPY* under the control of the estradiol-inducible GAL promoter system. For each time point, data are normalized to untreated cells. Mean ±SEM, n = 3. (B) Western blot of HA and Pgk1 from cells expressing CPY*-HA or ngCPY*-HA. Cells were treated with cycloheximide (CHX) for the times indicated. Pgk1 served as a loading control. (C) Images of cells expressing ngCPY*-sfGFP and the general ER marker Sec63-mCherry. Expression of ngCPY*-sfGFP was induced with 25 nM estradiol for 4 hr and cells were stained with the vacuole dye CMAC. (D) Growth assay on solid media of wild-type (WT) and ∆hac1 cells expressing the estradiol-inducible artificial transcription factor GEM and, where indicated, ngCPY* under the control of the GAL promoter. For each strain, series represent fivefold dilution steps. (E) Growth assay in liquid media of WT cells expressing ngCPY* under the control of the estradiol-inducible GAL promoter system. a.u., arbitrary units. (F) As in panel E, but with ∆hac1 cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Flow cytometric measurement of GFP levels in cells harboring the HAC1 splicing reporter and expressing ngCPY* under the control of the estradiol-inducible GAL promoter system. For each time point, data are normalized to untreated cells. Mean ±SEM, n = 3. (B) As in panel A, but with cells expressing glycosylatable CPY*. (C) Images of cells expressing CPY*(N479Q)-sfGFP and the ER marker Sec63-mCherry. Expression of CPY*(N479Q)-sfGFP was induced with 25 nM estradiol for 4 hr and cells were stained with the vacuole dye CMAC. (D) Viability of ∆hac1 cells after induction of ngCPY* expression with the indicated estradiol concentrations for 24 hr. Viability of untreated cells was set to 100%.
+
 Estradiol did not affect growth of wild-type or ∆hac1 cells expressing only the artificial transcription factor GEM (Figure 1D). Furthermore, estradiol-induced expression of ngCPY* in wild-type cells caused only modest growth defects on solid media, even at the highest estradiol concentration tested. In ∆hac1 cells, however, induction of ngCPY* expression with increasing concentrations of estradiol strongly retarded and eventually prevented cell proliferation. Growth assays in liquid media yielded similar results (Figure 1E and F). To determine whether the lack of proliferation of ∆hac1 cells reflected a growth arrest or cell death, we assayed cell viability after expression of ngCPY*. No loss of viability of ∆hac1 cells occurred, even with estradiol concentrations that completely blocked proliferation (Figure 1—figure supplement 1D). Hence, expression of ngCPY* merely caused a growth arrest. In summary, this estradiol-controlled system can be titrated to induce defined levels of ER stress and can be used to prevent growth of UPR-deficient cells.
 
-## A screen for genes promoting ER stress resistance in UPR mutants
+### A screen for genes promoting ER stress resistance in UPR mutants
 
 We exploited the ngCPY*-induced growth arrest in UPR mutants to conduct a multicopy suppression screen. Cells lacking HAC1 and containing the titratable ER stress system were transformed with a genomic library in a high-copy vector. Transformants were first allowed to form colonies on estradiol-free solid medium and then replicated onto media containing a range of estradiol concentrations sufficient to block growth of the parental strain. Plasmids were retrieved from transformants able to grow on estradiol-containing plates and their inserts were sequenced. The obtained candidate genes were individually subcloned into the same high-copy vector and tested for their ability to suppress the toxicity of ngCPY* in ∆hac1 cells.
 
@@ -46,15 +54,66 @@ As expected, the strongest suppressor was HAC1, which complemented the HAC1 dele
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig2-v1.jpg)
 
-**Figure 2.:** ∆hac1 cells.(A) Growth assay on solid media of wild-type (WT) and ∆hac1 cells expressing ngCPY* under the control of the estradiol-inducible GAL promoter system and overexpressing RPN4, SSZ1 or PDR1 from extrachromosomal plasmids where indicated. (B) Growth assay in liquid medium of WT and ∆hac1 cells expressing ngCPY* under the control of the estradiol-inducible GAL promoter system. ∆hac1 cells additionally overexpressed the indicated genes. Cells were grown without estradiol. a.u., arbitrary units. (C) As in panel B, but in the presence of 50 nM estradiol. (D) Quantification of growth assays as shown in panel B. Data are normalized to WT cells. Mean ±SEM, n = 4. (E) Quantification of growth assays as shown in panel C. Data are normalized to WT cells. Mean ±SEM, n = 4.
+**Figure 2.:** (A) Growth assay on solid media of wild-type (WT) and ∆hac1 cells expressing ngCPY* under the control of the estradiol-inducible GAL promoter system and overexpressing RPN4, SSZ1 or PDR1 from extrachromosomal plasmids where indicated. (B) Growth assay in liquid medium of WT and ∆hac1 cells expressing ngCPY* under the control of the estradiol-inducible GAL promoter system. ∆hac1 cells additionally overexpressed the indicated genes. Cells were grown without estradiol. a.u., arbitrary units. (C) As in panel B, but in the presence of 50 nM estradiol. (D) Quantification of growth assays as shown in panel B. Data are normalized to WT cells. Mean ±SEM, n = 4. (E) Quantification of growth assays as shown in panel C. Data are normalized to WT cells. Mean ±SEM, n = 4.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig3-v1.jpg)
 
 **Figure 3.:** (A) Growth assay on solid media of ∆hac1 cells containing the constitutive CYC1 promoter in place of the endogenous RPN4 promoter, expressing ngCPY* under the control of the estradiol-inducible GAL promoter system and overexpressing RPN4, SSZ1, PDR1 or YAP1 where indicated. (B) Growth assay on solid media of wild-type (WT), ∆rpn4, ∆hac1 and ∆hac1 ∆rpn4 cells expressing ngCPY* under the control of the estradiol-inducible GAL promoter system and overexpressing RPN4 where indicated. (C) As in panel B, but on media containing different concentrations of tunicamycin (Tm).
 
+**Table 1.**
+ Genes identified in the screen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HAC1</td>
+      <td>transcription factor, regulates the unfolded protein response</td>
+    </tr>
+    <tr>
+      <td>RPN4</td>
+      <td>transcription factor, stimulates expression of proteasome genes</td>
+    </tr>
+    <tr>
+      <td>PDR1</td>
+      <td>transcription factor, regulates the pleiotropic drug response, induces RPN4 transcription</td>
+    </tr>
+    <tr>
+      <td>SSZ1</td>
+      <td>Hsp70 chaperone, part of ribosome-associated complex, overexpression activates Pdr1</td>
+    </tr>
+    <tr>
+      <td>MUM2</td>
+      <td>protein essential for meiotic DNA replication and sporulation</td>
+    </tr>
+    <tr>
+      <td>YAP1</td>
+      <td>transcription factor, regulates response to oxidative stress, induces RPN4 transcription</td>
+    </tr>
+    <tr>
+      <td>CAD1</td>
+      <td>transcription factor, involved in stress responses, paralog of YAP1</td>
+    </tr>
+    <tr>
+      <td>SAF1</td>
+      <td>F-box protein, subunit of SCF ubiquitin ligase complexes</td>
+    </tr>
+    <tr>
+      <td>NOP56</td>
+      <td>essential nucleolar protein</td>
+    </tr>
+  </tbody>
+</table>
+
 The identification of Rpn4 suggests that enhanced proteasome biogenesis promotes ER stress resistance. However, the entirety of genes controlled by Rpn4, here referred to as the Rpn4 regulon, encompasses many genes beyond those encoding proteasome subunits (Mannhaupt et al., 1999; Jelinsky et al., 2000). Rpn4 may therefore counteract ER stress by more than one mechanism. Indeed, the RPN4 regulator Yap1 is itself activated by Rpn4 (Mannhaupt et al., 1999) and may aid stress resistance by preventing oxidative damage. Furthermore, we directly tested the Rpn4 target gene CDC48 (Bosis et al., 2010), even though it was not found in the screen. Overexpression of CDC48 also restored growth of ∆hac1 cells expressing ngCPY*, although weakly compared to overexpression of RPN4 (Figure 2B-E). Overall, the outcome of the screen suggests that Rpn4 activity becomes limiting for cell proliferation during ER stress, at least in UPR mutants.
 
-## Rpn4 and the UPR cooperate to counteract ER stress
+### Rpn4 and the UPR cooperate to counteract ER stress
 
 RPN4 is not controlled by Hac1 and hence not a UPR target gene (Travers et al., 2000; Pincus et al., 2014). This lack of a direct link suggests that Rpn4 acts in parallel to, rather than downstream of, the UPR (Ng et al., 2000). To better understand the interplay between Rpn4 and the UPR, we manipulated Rpn4 levels in wild-type and ∆hac1 cells and challenged these cells with ngCPY* or tunicamycin (Figure 3B and C). Overexpression of RPN4 in wild-type cells increased resistance to both stressors. This observation indicates that Rpn4 activity becomes limiting for cell proliferation during ER stress also when the UPR is intact. Conversely, deletion of RPN4 caused a general growth defect and sensitized cells to ngCPY* and tunicamycin, consistent with previous reports (Wang et al., 2008; Hou et al., 2014; Rousseau and Bertolotti, 2016). As expected, ∆hac1 cells were highly vulnerable to either ER stressor, and RPN4 overexpression provided a measure of protection. ∆hac1 ∆rpn4 cells grew very poorly already in the absence of ngCPY* or tunicamycin, and not at all in their presence. The synthetic sickness phenotype of ∆hac1 ∆rpn4 cells agrees with earlier reports and shows that Rpn4 and the UPR are functionally linked (Ng et al., 2000; Hou et al., 2014).
 
@@ -62,13 +121,33 @@ The slow growth of ∆hac1 ∆rpn4 double mutants compared with ∆rpn4 single m
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig4-v1.jpg)
 
-**Figure 4.:** (A) Flow cytometric measurement of GFP levels relative to cytosolic BFP in wild-type (WT) and ∆rpn4 cells harboring the HAC1 splicing reporter. Data are normalized to WT cells. Mean ±SEM, n = 3. (B) KAR2 mRNA levels in WT and ∆rpn4 cells as measured by quantitative real-time PCR. Data are normalized to WT cells. Mean ±SEM, n = 3. (C) As in panel B, but for SIL1. (D) Global effects of RPN4 deletion on protein expression. For each protein, the x axis shows the average log2 fold change between WT and ∆rpn4 cells (proteins increased in the ∆rpn4 strain have positive values); the y axis shows the result of a t test for that difference (two-tailed; n = 4). The ‘‘volcano’’ lines indicate thresholds of significance. Proteins falling above the volcano lines are significantly changed. The left and right panels show the same plot but with different proteins highlighted. See Figure 4—source data 1 for the data used to generate the plot. In ∆rnp4 cells, proteasome subunits are downregulated (blue dots, p=1.1×10−17, n = 32), UPR targets are upregulated (red dots, p=1.8×10−9, n = 50), ribosomal proteins are downregulated (green dots, p=7.5×10−29, n = 89) and proteins involved in cytosolic protein folding are upregulated (yellow dots, p=3.8×10−9, n = 14).10.7554/eLife.43244.008Figure 4—source data 1.
+**Figure 4.:** (A) Flow cytometric measurement of GFP levels relative to cytosolic BFP in wild-type (WT) and ∆rpn4 cells harboring the HAC1 splicing reporter. Data are normalized to WT cells. Mean ±SEM, n = 3. (B) KAR2 mRNA levels in WT and ∆rpn4 cells as measured by quantitative real-time PCR. Data are normalized to WT cells. Mean ±SEM, n = 3. (C) As in panel B, but for SIL1. (D) Global effects of RPN4 deletion on protein expression. For each protein, the x axis shows the average log2 fold change between WT and ∆rpn4 cells (proteins increased in the ∆rpn4 strain have positive values); the y axis shows the result of a t test for that difference (two-tailed; n = 4). The ‘‘volcano’’ lines indicate thresholds of significance. Proteins falling above the volcano lines are significantly changed. The left and right panels show the same plot but with different proteins highlighted. See Figure 4—source data 1 for the data used to generate the plot. In ∆rnp4 cells, proteasome subunits are downregulated (blue dots, p=1.1×10−17, n = 32), UPR targets are upregulated (red dots, p=1.8×10−9, n = 50), ribosomal proteins are downregulated (green dots, p=7.5×10−29, n = 89) and proteins involved in cytosolic protein folding are upregulated (yellow dots, p=3.8×10−9, n = 14).
 
 The above results show that cells attempt to compensate the lack of Rpn4 by activating the UPR. To test whether the inverse is true and cells compensate the lack of a functionally sufficient UPR by activating the Rpn4 regulon, we monitored Rpn4 abundance. Rpn4 is a short-lived protein that is rapidly turned over by the proteasome (Xie and Varshavsky, 2001). When proteasome capacity becomes limiting, Rpn4 accumulates and promotes proteasome biogenesis until its degradation is restored. This negative feedback loop homeostatically adjusts proteasome activity (Dohmen et al., 2007). The levels of chromosomally tagged Rpn4-HA in wild-type and ∆hac1 cells were similar at steady state (Figure 5A and B). Upon treatment with 2 µg/ml tunicamycin, they increased two-fold within 15 min. Subsequently, Rpn4 abundance continued to climb but did so more quickly in ∆hac1 cells, reaching more than four-fold basal levels after 60 min. To determine whether this rise involved an upregulation of RPN4 transcription, we analyzed RPN4 mRNA by quantitative real-time PCR. In wild-type cells, tunicamycin treatment for up to 60 min induced the UPR target genes KAR2 and SIL1 (Figure 5C and Figure 5—figure supplement 1), but not RPN4 (Figure 5D). Therefore, under these conditions, Rpn4 accumulates through a post-transcriptional mechanism, presumably by slowed degradation. In ∆hac1 cells, tunicamycin treatment induced KAR2 and SIL1 less strongly than in wild-type cells but increased RPN4 mRNA levels. While we cannot rule out changes in mRNA stability, we assume that this rise reflects enhanced transcription. This response likely contributes to the more pronounced stress-induced upregulation of Rpn4 abundance in ∆hac1 cells. Importantly, prolonged ER stress upon treatment with 5 µg/ml tunicamycin raised RPN4 mRNA levels also in wild-type cells (Figure 5E). Accordingly, the protein abundance of proteasome subunits and all detectable proteasome assembly chaperones was elevated (Figure 5F and Figure 4—source data 1). Hence, during ER stress, cells augment the UPR by enhancing Rpn4 activity and promoting proteasome biogenesis. Interestingly, proteasome subunit abundance still increased during ER stress in ∆rpn4 cells (Figure 5—figure supplement 2), possibly reflecting a recently suggested post-transcriptional mechanism mediated by Slt2/Mpk1 (Rousseau and Bertolotti, 2016). Nevertheless, the levels of proteasome subunits in ER-stressed ∆rpn4 cells remained below even those of untreated wild-type cells. Collectively, these results show that activation of the UPR and the Rpn4 regulon are two cooperating elements of the cellular response to ER stress.
 
-## Rpn4 is upregulated by and protects against mislocalized secretory proteins
+![Figure 5.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig5-v1.jpg)
+
+**Figure 5.:** (A) Western blot of HA and Pgk1 from wild-type (WT) and ∆hac1 cells expressing Rpn4-HA and treated with 2 µg/ml tunicamycin (Tm) for the times indicated. (B) Quantification of Rpn4-HA protein levels relative to Pgk1 from western blots as shown in panel A. Data are normalized to WT cells at t = 0. Mean ±SEM, n = 5. (C) KAR2 mRNA levels in WT and ∆hac1 cells treated with 2 µg/ml tunicamycin for the times indicated. Data are normalized to WT cells at t = 0. Mean ±SEM, n = 3. (D) As in panel C, but for RPN4. (E) As in panel C, but for RPN4 after treatment with 5 µg/ml tunicamycin for the times indicated. (F) Global effects of tunicamycin treatment on protein expression. For each protein, the x axis shows the average log2 fold change between untreated WT cells and WT cells treated with 5 µg/ml tunicamycin for 4 hr (proteins upregulated by the treatment have positive values); the y axis shows the result of a t test for that difference (two-tailed; n = 4). The ‘‘volcano’’ lines indicate thresholds of significance. Proteins falling above the volcano lines are significantly changed. See Figure 4—source data 1 for the data used to generate the plot. Treatment with tunicamycin causes upregulation of proteasome subunits (dark blue dots, p=7.6×10−3, n = 32), proteasome assembly chaperones (light blue dots, p=3.3×10−3, n = 8), and UPR targets (red dots, p=3.3×10−22, n = 58).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** SIL1 mRNA levels in wild-type (WT) and ∆hac1 cells treated with 2 µg/ml tunicamycin for the times indicated. Data are normalized to WT cells at t = 0. Mean ±SEM, n = 3.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Wild-type (WT) and ∆rpn4 cells were left untreated (0 hr) or treated with 5 µg/ml tunicamycin for 4 hr. Proteasome subunit abundance was normalized to that in untreated WT cells (value = 0 in log2 space). Bars represent the mean log2(fold change)±SEM, n = 32. See Figure 4—source data 1 for the data used to generate the graph.
+
+### Rpn4 is upregulated by and protects against mislocalized secretory proteins
 
 We next asked how ER stress upregulates Rpn4. The stronger increase in Rpn4 abundance and the more sensitive RPN4 transcriptional response in ∆hac1 cells may reflect more severe ER stress in these mutants. To test this assumption, we used protein translocation as readout for ER function. When the capacity of ER chaperones is exhausted, they can no longer assist protein import. As a result, translocation is compromised, including that of Kar2 itself (Vogel et al., 1990). Western blotting showed a single band for Kar2 in untreated wild-type and ∆hac1 cells (Figure 6A). Treatment with 2 µg/ml tunicamycin for up to 60 min did not change Kar2 levels. However, a second Kar2 band of slightly higher molecular weight appeared in ∆hac1 cells, starting at 30 min. Since Kar2 is not glycosylated, this upshift indicates retention of its cleavable signal sequence (ss) and suggests that the slower migrating form corresponds to untranslocated ss-Kar2 (Ng et al., 1996). Hence, under these conditions, ∆hac1 cells show signs of overwhelmed chaperone capacity. Treatment with 5 µg/ml tunicamycin increased Kar2 abundance in wild-type cells and caused the appearance of ss-Kar2 in both strains (Figure 6B). Therefore, strong ER stress impairs translocation also in wild-type cells. These results confirm that ER stress is initially buffered by the UPR in wild-type cells but rapidly disrupts ER function in ∆hac1 cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig6-v1.jpg)
+
+**Figure 6.:** (A) Western blot of Kar2 and Pgk1 from wild-type (WT) and ∆hac1 cells treated with 2 µg/ml tunicamycin for the times indicated. The asterisk indicates untranslocated ss-Kar2. (B) As in panel A, but with 5 µg/ml tunicamycin. (C) Western blot of Kar2 and Pgk1 from sec65-1 cells grown at 25°C and shifted to the indicated temperatures for 90 min. The asterisk indicates untranslocated ss-Kar2. (D) RPN4 mRNA levels in WT and sec65-1 cells grown at 25°C and shifted to the indicated temperatures for 90 min. Data are normalized to WT cells at 25°C. Mean ±SEM, n = 3. (E) Flow cytometric measurement of GFP levels in WT and sec65-1 cells harboring the HAC1 splicing reporter. Cells grown at 25°C were shifted to the indicated temperatures or treated with 2 µg/ml tunicamycin (Tm) for 90 min. For each strain, data are normalized to 25°C. Mean ±SEM, n = 3.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** RPN4 mRNA levels in wild-type (WT) and sec65-1 cells grown at 25°C and shifted to the indicated temperatures for 90 min. Data are normalized to WT cells at 25°C.
 
 The above results reveal a conspicuous correlation between impaired translocation and elevated RPN4 mRNA levels. Both phenomena occur in ∆hac1 cells exposed to 2 µg/ml tunicamycin, whereas 5 µg/ml are required in wild-type cells. Impaired translocation and increased RPN4 mRNA levels could be unrelated consequences of ER stress. Alternatively, their correlation could reflect a causal relationship, with translocation defects activating RPN4 transcription. To distinguish between these possibilities, we employed sec65-1 cells, which express a temperature-sensitive variant of the SRP subunit Sec65 (Stirling et al., 1992). Disruption of SRP function rapidly inhibits translocation and causes accumulation of secretory proteins in the cytosol, where they are unable to fold properly. As expected, Kar2 translocation was intact in sec65-1 cells at the permissive temperature of 25°C but impaired upon a shift to 30°C or above (Figure 6C; Ng et al., 1996). RPN4 mRNA levels did not change when wild-type or sec65-1 cells were shifted from 25°C to 28°C (Figure 6—figure supplement 1). However, shifts to temperatures of 30°C or above raised RPN4 mRNA levels specifically in sec65-1 cells (Figure 6D and Figure 6—figure supplement 1). Importantly, HAC1 splicing was not activated under these conditions (Figure 6E). Therefore, disrupted translocation induces the RPN4 gene even in the absence of ER stress. This finding indicates that stress-induced translocation defects activate RPN4 transcription.
 
@@ -80,13 +159,13 @@ To examine the physiological significance of RPN4 expression in cells suffering 
 
 Our results show that RPN4 overexpression protects against ER stressors and cytosolically mislocalized secretory proteins, suggesting that it counteracts folding stress in the ER and the cytosol. To test this notion, we used reporters for three different stress response pathways: the HAC1 splicing reporter for the UPR, a heat shock element (HSE) reporter for the Hsf1-dependent heat shock response (Zheng et al., 2016) and an HSP12 reporter for the Msn2/4-dependent general stress response (Pincus et al., 2014). The transcription factors Msn2 and Msn4 are kept inactive by PKA (Görner et al., 1998). Stress conditions inhibit PKA, resulting in derepression of Msn2/4 and induction of genes such as HSP12 (Pincus et al., 2014). Although Hsf1 and the PKA-Msn2/4 pathway respond to prolonged ER stress (Liu and Chang, 2008; Pincus et al., 2014), they monitor the folding environment in the cytosol, and we employed the HSE and HSP12 reporters to read out cytosolic protein homeostasis. We introduced the reporters into ∆hac1 cells that did or did not overexpress RPN4, induced ER stress by ngCPY* expression and determined reporter activity. Expression of ngCPY* activated all three reporters, which was attenuated by RPN4 overexpression (Figure 7E). This result shows that Rpn4 can indeed improve protein homeostasis in both the ER and the cytosol.
 
-## Multiple signaling pathways mediate RPN4 induction by ER stress
+### Multiple signaling pathways mediate RPN4 induction by ER stress
 
 Finally, we investigated through which signaling pathways ER stress induces the RPN4 gene. The RPN4 promoter contains well-characterized binding sites for Pdr1/3, Yap1 and Hsf1, called the Pdr1/3 response element (PDRE), Yap1 response element (YRE) and heat shock element (HSE), respectively (Owsianik et al., 2002; Hahn et al., 2006). To test the relevance of these binding sites, we generated RPN4 reporters in which different RPN4 promoter variants controlled expression of the fast-maturing fluorescent protein mNeonGreen and measured mNeonGreen levels by flow cytometry. Steady-state activity of the RPN4 reporter was essentially unchanged by mutation of the two PDREs or the YRE but was reduced by 40% upon mutation of the HSE (Figure 8A). Tunicamycin treatment activated the RPN4 reporter, which was unaffected by mutation of any of the above promoter elements (Figure 8B). Hence, Hsf1 regulates basal RPN4 activity, but Pdr1/3, Yap1 and Hsf1 appear to be individually dispensable for RPN4 induction by ER stress.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/43244/elife-43244-fig8-v1.jpg)
 
-**Figure 8.:** RPN4 induction by ER stress.(A) Flow cytometric measurement of the activity of RPN4 reporter variants in untreated cells. Data are normalized to the reporter containing the native RPN4 promoter. The other reporters contain mutations in the two Pdr1/3 response elements (PDREm), the Yap1 response element (YREm) or the heat shock element (HSEm). Mean ±SEM, n = 4. (B) As in panel A, but after treatment with 5 µg/ml tunicamycin for the times indicated. Mean ±SEM, n = 3. (C) Flow cytometric measurement of the activity of the native RPN4 reporter in tpk1/2/3-as and tpk1/2/3 ∆msn2/4 cells treated with the ATP analog 1NM-PP1 for the times indicated. The analog-sensitive tpk1/2/3-as alleles enable specific inhibition of protein kinase A with 1NM-PP1. Mean ±SEM, n = 3. (D) RPN4 mRNA levels in wild-type (WT) and tpk1/2/3-as cells treated with 1NM-PP1 for the times indicated. Data are normalized to WT cells at t = 0. Mean ±SEM, n = 3. (E) Flow cytometric measurement of the activity of RPN4 reporter variants in WT and ∆msn2/4 cells treated with 5 µg/ml tunicamycin. Data are normalized to WT cells containing the reporter with the native RPN4 promoter. Mean ±SEM, n = 3. (F) Model for the cooperation of Rpn4 and the UPR. ER protein misfolding causes increased flux through the ERAD pathway, which strains proteasome capacity and inhibits efficient protein degradation (1). In addition, the UPR is activated (2). Severe ER stress leads to translocation defects, causing mislocalization of secretory proteins to the cytosol, where they cannot fold properly (3). These cytosolic misfolded proteins further burden the proteasome (4). As a result, Rpn4 is stabilized, the Rpn4 regulon is activated and proteasome biogenesis is enhanced. If cytosolic misfolded proteins persist, the RPN4 gene is induced (5), providing a second mechanism to increase Rpn4 abundance and augment proteasome biogenesis.
+**Figure 8.:** (A) Flow cytometric measurement of the activity of RPN4 reporter variants in untreated cells. Data are normalized to the reporter containing the native RPN4 promoter. The other reporters contain mutations in the two Pdr1/3 response elements (PDREm), the Yap1 response element (YREm) or the heat shock element (HSEm). Mean ±SEM, n = 4. (B) As in panel A, but after treatment with 5 µg/ml tunicamycin for the times indicated. Mean ±SEM, n = 3. (C) Flow cytometric measurement of the activity of the native RPN4 reporter in tpk1/2/3-as and tpk1/2/3 ∆msn2/4 cells treated with the ATP analog 1NM-PP1 for the times indicated. The analog-sensitive tpk1/2/3-as alleles enable specific inhibition of protein kinase A with 1NM-PP1. Mean ±SEM, n = 3. (D) RPN4 mRNA levels in wild-type (WT) and tpk1/2/3-as cells treated with 1NM-PP1 for the times indicated. Data are normalized to WT cells at t = 0. Mean ±SEM, n = 3. (E) Flow cytometric measurement of the activity of RPN4 reporter variants in WT and ∆msn2/4 cells treated with 5 µg/ml tunicamycin. Data are normalized to WT cells containing the reporter with the native RPN4 promoter. Mean ±SEM, n = 3. (F) Model for the cooperation of Rpn4 and the UPR. ER protein misfolding causes increased flux through the ERAD pathway, which strains proteasome capacity and inhibits efficient protein degradation (1). In addition, the UPR is activated (2). Severe ER stress leads to translocation defects, causing mislocalization of secretory proteins to the cytosol, where they cannot fold properly (3). These cytosolic misfolded proteins further burden the proteasome (4). As a result, Rpn4 is stabilized, the Rpn4 regulon is activated and proteasome biogenesis is enhanced. If cytosolic misfolded proteins persist, the RPN4 gene is induced (5), providing a second mechanism to increase Rpn4 abundance and augment proteasome biogenesis.
 
 Given that ER stress triggers the general stress response (Pincus et al., 2014), we asked whether Msn2/4 downstream of PKA can activate the RPN4 gene. We used a strain in which the PKA isoforms Tpk1/2/3 had been modified such that their enlarged ATP binding pockets allowed specific inhibition of these kinases with the bulky ATP analog 1NM-PP1 (Hao and O'Shea, 2012). 1NM-PP1 treatment of cells harboring the analog-sensitive tpk1/2/3-as alleles induced both the RPN4 reporter and the endogenous RPN4 gene (Figure 8C and D). As expected, deletion of MSN2/4 strongly reduced activation of the RPN4 reporter upon PKA inhibition (Figure 8C). Activation of the RPN4 reporter by tunicamycin was blunted in ∆msn2/4 cells but not blocked (Figure 8E), suggesting that prolonged ER stress activates partially redundant mechanisms to induce RPN4. Accordingly, combined deletion of MSN2/4 and mutation of the YRE or the HSE additively reduced activation of the RPN4 reporter. Mutation of both the YRE and the HSE almost completely abolished reporter activation in a ∆msn2/4 background. These results show that multiple signaling pathways contribute to the induction of RPN4 transcription by ER stress.
 
@@ -106,19 +185,204 @@ A simple perspective on adaptive responses is that protein misfolding in a parti
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (S. cerevisiae)</td>
+      <td>W303</td>
+      <td>other</td>
+      <td></td>
+      <td>see Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>S. cerevisiae genomic library in YEp13 E. coli</td>
+      <td>Nasmyth and Tatchell, 1980</td>
+      <td>ATCC 37323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat monoclonal anti-HA (clone 3F10)</td>
+      <td>Roche</td>
+      <td>Cat#11867423001; RRID: AB_390918</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-mCherry</td>
+      <td>Biovision</td>
+      <td>Cat#5993; RRID: AB_1975001</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Kar2</td>
+      <td>Schuck et al., 2009</td>
+      <td></td>
+      <td>(1:50000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Pgk1 (clone 22C5)</td>
+      <td>Abcam</td>
+      <td>Cat#Ab113687; RRID: AB_10861977</td>
+      <td>(1:50000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse HRP</td>
+      <td>Thermo Fisher Scientific Pierce</td>
+      <td>Cat#31432; RRID: AB_228302</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit HRP</td>
+      <td>Thermo Fisher Scientific Pierce</td>
+      <td>Cat#31462; RRID: AB_228338</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rat HRP</td>
+      <td>Jackson</td>
+      <td>Cat#712-035-153; RRID: AB_2340639</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>plasmids</td>
+      <td>other</td>
+      <td>doi:10.5061/dryad.n20d476</td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA assembly master mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat#E2611L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA assay kit</td>
+      <td>Thermo Fisher Scientific Pierce</td>
+      <td>Cat#23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProtoScript II cDNA Synthesis kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat#E6560L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SensiFAST SYBR No-ROX kit</td>
+      <td>Bioline</td>
+      <td>Cat#BIO-98050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ß-estradiol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#E8875; CAS: 50-28-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1NM-PP1</td>
+      <td>Merck</td>
+      <td>Cat#529581–1 MG; CAS: 221244-14-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tunicamycin</td>
+      <td>Merck</td>
+      <td>Cat#654380–50 MG; CAS: 11089-65-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cycloheximide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C7698; CAS: 66-81-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>complete protease inhibitor</td>
+      <td>Roche</td>
+      <td>Cat#04693116001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Growthcurver</td>
+      <td>Sprouffske and Wagner, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>Cox et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>Tyanova et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CMAC stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#C2110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mass spectrometry proteomics data</td>
+      <td>this study</td>
+      <td>PRIDE database, PXD012867</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Plasmids are listed in Supplementary file 1. Sequences of oligonucleotides for plasmid generation are given in Supplementary file 2. To generate plasmids for estradiol-inducible expression, PGAL1-TCYC was amplified from pRS416-PGAL1 (Mumberg et al., 1994) with primers up_SacI_GAL/CYC_KpnI_down and cloned into AgeI-linearized pRS306-PADH1-GEM or ApaI-linearized pNH605-PADH1-GEM (Pincus et al., 2014) by ligation with the NEBuilder HiFi DNA assembly master mix (New England Biolabs, Ipswitch, Massachusetts), yielding pRS306-PADH1-GEM-PGAL1 and pNH605-PADH1-GEM-PGAL1. Plasmids for expression of HA-tagged CPY* variants were subsequently generated by amplification of ngCPY*-HA or CPY*-HA from pRS315-PCPY-ngCPY*-HA or pRS315-PGAL1-CPY*-HA (Spear and Ng, 2003) with primers EDY*_F2/EDY*_R and ligation with SmaI-linearized pRS306-PADH1-GEM-PGAL1, yielding pRS306-PADH1-GEM-PGAL1-ngCPY*-HA and pRS306-PADH1-GEM-PGAL1-CPY*-HA. Plasmids for expression of sfGFP-tagged CPY* variants were generated as follows: FLAG-sfGFP was amplified from pRS305-PADH1-Rtn1-FLAG-sfGFP (Szoradi et al., 2018) with primers FLAG-sfGFP_F/FLAG-sfGFP_R and ligated with SmaI-linearized pNH605-PADH1-GEM-PGAL1, yielding pNH605-PADH1-GEM-PGAL1-FLAG-sfGFP. Next, ngCPY*-HA was amplified from pRS315-PCPY-ngCPY*-HA with primers EDY*_F2/EDY*_tag_R and ligated into pNH605-PADH1-GEM-PGAL1-FLAG-sfGFP linearized with primers FLAG for 1/FLAG-open_R, yielding pNH605-PADH1-GEM-PGAL1-ngCPY*-HA-sfGFP. Similarly, CPY*(N479Q)-HA was amplified from pRS305-PCPY-CPY*(N479Q)-HA with primers EDY*_F2/EDY*_tag_R and ligated into pNH605-PADH1-GEM-PGAL1-FLAG-sfGFP linearized with primers FLAG for 1/FLAG-open_R, yielding pNH605-PADH1-GEM-PGAL1-CPY*(N479Q)-HA-sfGFP. To subclone genes of interest into YEp13, their coding regions together with upstream and downstream sequences were amplified from yeast genomic DNA with primers providing homologous ends (Supplementary file 2). The upstream and downstream sequences encompassed the entire sequence between the coding region of interest and the next upstream and downstream coding region, or at least 400 bp of upstream and 200 bp of downstream sequence. The resulting PCR products were recombined with BamHI-linearized YEp13 through gap repair cloning in yeast. To generate pRS306-PADH1-GEM-PGAL1-∆ss-ngCPY*-HA, pRS306-PADH1-GEM-PGAL1-ngCPY*-HA was linearized by PCR with primers CPY deltaSS fw/CPY deltaSS rev and religated with the NEBuilder HiFi DNA assembly master mix, thereby eliminating the CPY signal sequence. To generate pRS304-HAC1-splicing-reporter, PHAC1-Hac1-splicing reporter was amplified from pRS305-HAC1-splicing-reporter with primers pRS304-Eco-Hac1-SR fw/pRS304-Eco-Hac1-SR rev II and ligated with EcoRI-linearized pRS304 (Sikorski and Hieter, 1989) using the NEBuilder HiFi DNA assembly master mix. To generate pNH604-PHSP12-GFP, PHSP12-GFP was excised from pNH605-PHSP12-GFP with PspOMI/SacII and cloned into the PspOMI/SacII site of pNH604-4xPHSE-YFP. To generate pNH605-PRPN4-mNeonGreen, mNeonGreen was amplified from pFA6a-mNeonGreen-kanMX4 with primers Xho-neon/neon-BamHI and cloned between the XhoI and BamHI sites of pNH605-PRPN4-YFP. Similarly, pNH605-PRPN4-(HSEm)-mNeonGreen and pNH605-PRPN4-(PDREm)-mNeonGreen were generated by replacing YFP in pNH605-PRPN4-(HSEm)-YFP and pNH605-PRPN4-(PDREm)-YFP with mNeonGreen. To generate pNH605-PRPN4-(YREm)-mNeonGreen and pNH605-PRPN4-(YREm,HSEm)-mNeonGreen, pNH605-PRPN4-mNeonGreen or pNH605-PRPN4-(HSEm)-mNeonGreen were linearized with primers NheI-YRE fw/NheI-YRE rev, digested with NheI and religated, thereby mutating the YRE to an NheI site.
 
-## Yeast strain generation
+### Yeast strain generation
 
 Strains used in this study are listed in Supplementary file 3. Unless indicated otherwise, strains were derived from W303 mating type a (strain SSY122). Gene tagging, gene deletion and promoter replacement was done with PCR products with homologous ends (Longtine et al., 1998; Janke et al., 2004). For irreversible single-copy genomic integration of CPY* expression plasmids, the PADH1-GEM-PGAL1 expression cassette was amplified with primers knock-in URA3 fw/knock-in URA3 rev (Supplementary file 2) and integrated into the URA3 locus. For integration of TRP1-marked pRS304-HAC1-SR into the LEU2 locus, the HAC1-splicing-reporter-TRP1 expression cassette was amplified with primers knock-in LEU2 fw/knock-in LEU2 rev (Supplementary file 2). Other integrative plasmids were linearized by restriction digest before transformation.
 
-## Growth conditions
+### Growth conditions
 
 Strains were cultured at 30°C in SCD medium consisting of 0.7% yeast nitrogen base, 2% glucose and amino acids, lacking leucine where appropriate to maintain plasmid selection. Sec65-1 cells were grown in the same medium at 25°C. For steady state analyses, cultures were grown to saturation, diluted and grown for at least 9 hr so that they reached mid log phase (OD600 = 0.5–1). For induction of CPY* expression, exponentially growing cells were diluted to early log phase (OD600 = 0.1–0.5) and treated with 50 nM β-estradiol (Sigma-Aldrich, St. Louis, Missouri) for 4 hr, unless indicated otherwise. For cycloheximide chase experiments, cells in mid log phase were treated with 50 µg/ml cycloheximide (Sigma-Aldrich). For tunicamycin treatment, exponentially growing cells were diluted to early log phase and treated with 2 or 5 µg/ml tunicamycin (Merck, Darmstadt, Germany) as indicated. For 1NM-PP1 treatment, exponentially growing cells were diluted to early log phase and treated with 3 µM 1NM-PP1 (Merck). For temperature shift experiments, cells grown to mid log phase at 25°C were diluted to OD600 = 0.2 and incubated at the indicated temperatures for 90 min.
 
-## HAC1 splicing, HSE, HSP12 and RPN4 reporter assays
+### HAC1 splicing, HSE, HSP12 and RPN4 reporter assays
 
 To measure UPR activity, a HAC1 splicing reporter was used that translates Ire1 activity into the production of GFP (Pincus et al., 2010). To measure induction of the UPR, cells harboring this reporter were grown to mid log phase in 1 ml medium in 96 deep-well plates. Cells were diluted to early log phase, treated with estradiol or tunicamycin as described above, 100 µl aliquots were removed at each time point and GFP fluorescence after excitation with a 488 nm laser was measured with a FACS Canto flow cytometer (BD Biosciences, Franklin Lakes, New Jersey) equipped with a high-throughput sampler. In parallel, autofluorescence was determined with identically grown isogenic control strains not harboring the splicing reporter. Mean cellular GFP fluorescence was corrected for autofluorescence and normalized to the GFP fluorescence of untreated cells. To measure steady state UPR activity in different strains, cells expressing the HAC1 splicing reporter and cytosolic BFP under the control of the constitutive GPD promoter were grown to mid log phase as above and GFP and BFP fluorescence were measured after excitation with 488 nm or 405 nm lasers. GFP fluorescence was corrected for autofluorescence and divided by BFP fluorescence to account for differences in protein translation capacity. Data were expressed relative to the GFP/BFP fluorescence ratio in wild-type cells.
 
@@ -126,38 +390,38 @@ To measure Hsf1 and Msn2/4 activity, cells harboring the 4xHSE-YFP or the HSP12-
 
 To measure Rpn4 activity, cells harboring an RPN4 reporter and expressing cytosolic BFP under the control of the constitutive GPD promoter were grown to mid log phase as above. To measure steady state RPN4 activity, 100 µl aliquots were removed and mNeonGreen and BFP fluorescence was measured after excitation with 488 nm or 405 nm lasers as above. Mean cellular mNeonGreen fluorescence was corrected for autofluorescence as above and divided by BFP fluorescence. Data were expressed relative to the mNeonGreen/BFP fluorescence ratio in cells harboring the wild-type RPN4 reporter. To measure induction of RPN4, cells were grown to mid log phase as above, diluted to early log phase and either left untreated or were treated with 5 µg/ml tunicamycin or 3 µM 1NM-PP1. At each time point, 100 µl aliquots were removed and mNeonGreen and BFP fluorescence was determined. For each time point, autofluorescence-corrected mNeonGreen/BFP ratios were calculated as above and ratios in treated cells were normalized to those in corresponding untreated cells.
 
-## Western blotting
+### Western blotting
 
 Cell lysis and western blotting was done as described (Szoradi et al., 2018). In brief, cells were disrupted by bead beating, proteins were solubilized with SDS, protein determination was carried out with the BCA assay kit (Thermo Fisher Scientific Pierce, Waltham, Massachusetts), equal amounts of protein were resolved by SDS-PAGE and transferred onto nitrocellulose membranes. Membranes were probed with primary and HRP-coupled secondary antibodies, developed with homemade ECL, and chemiluminescence was detected with an ImageQuant LAS 4000 imaging system (GE Healthcare, Chalfont St Giles, UK). Images were quantified with ImageJ and processed with Adobe Photoshop. Primary antibodies were rat anti-HA 3F10 (Roche, Basel, Switzerland), rabbit anti-Kar2 (Peter Walter, UCSF), rabbit anti-mCherry (Biovision, Milpitas, California) and mouse anti-Pgk1 22C5 (Abcam, Cambridge, UK).
 
-## Light microscopy
+### Light microscopy
 
 CPY* expression was induced with 25 nM estradiol for 4 hr. Ten µM CMAC (Thermo Fisher Scientific, Waltham, Massachusetts) was added during the last 2 hr of induction to stain the vacuole and cells were imaged live at room temperature. Images were acquired with a DMi8 inverted microscope (Leica, Wetzlar, Germany) equipped with a CSU-X1 spinning-disk confocal scanning unit (Yokogawa, Musashino, Japan), a ORCA-Flash 4.0 LT camera (Hamamatsu, Hamamatsu, Japan) and a HC PL APO 100x/1.4 NA CS2 oil objective lens (Leica). Background subtraction with a rolling ball algorithm was performed in ImageJ and images were processed in Adobe Photoshop.
 
-## Growth assays
+### Growth assays
 
 Growth assays on agar plates and in liquid medium were done as described (Schuck et al., 2009; Szoradi et al., 2018). For growth assays on agar plates, dilution series with fivefold dilution steps were used. For quantification of growth in liquid medium, the cell density in arbitrary units was plotted against time and the area under the curve was calculated with the R package Growthcurver (Sprouffske and Wagner, 2016). Data were normalized to the wild-type control and expressed as a growth index, which was set to one for wild-type cells.
 
-## Viability assay
+### Viability assay
 
 Exponentially growing cells were diluted to OD600 = 0.05 and grown in the presence of different concentrations of β-estradiol for 24 hr. Cultures were diluted to equal cell densities as judged by OD600 measurements, equal numbers of cells were plated on solid YPD medium (1% yeast extract, 2% peptone, 2% glucose) and grown for 48 hr. To determine cell viability, the number of colony-forming units of estradiol-treated samples was normalized that of the mock-treated sample.
 
-## Genetic screen
+### Genetic screen
 
 Strain SSY1341 was transformed with a yeast genomic library in the YEp13 multicopy vector (Nasmyth and Tatchell, 1980; available from the American Type Culture Collection as ATCC 37323; kindly provided by Michael Knop, ZMBH). Transformants were plated onto SCD-Leu plates at approximately 200 colony-forming units per plate and grown at 30°C. After 26 hr, colonies were replicated onto SCD-Leu plates containing 50, 75 or 100 nM estradiol and grown for up to 36 hr. Colonies that clearly grew better than the general background were restreaked onto SCD-Leu plates and replicated onto SCD-inositol to identify transformants that grew due to re-expression of HAC1. For confirmation, plasmids were retrieved from six transformants that grew in the absence of inositol and sequenced with primers YEp13 fw/YEp13 rev (Supplementary file 2). All contained HAC1. Transformants that failed to grow without inositol and hence lacked HAC1 were re-tested by growth assays on SCD-Leu plates containing 50 nM estradiol. Suppressing plasmids were retrieved from well-growing transformants and their inserts were sequenced. Inserts contained between one and six genes. To determine which genes were responsible for suppression, candidates were individually subcloned into YEp13 from genomic DNA from SSY122 and tested for growth on SCD-Leu plates containing 50 nM estradiol. Genes identified only once were discarded, with the exception of PDR1 and YAP1.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Isolation of mRNA, cDNA synthesis and quantitative real-time PCR were done as described (Szoradi et al., 2018). In brief, RNA from 5 ODs of cells was extracted with hot phenol, precipitated with ethanol and resuspended in 30 µl H2O. Synthesis of cDNA was done from 0.5 µg total RNA with the Protoscript II kit (New England Biolabs) using d(T)18 primers. PCRs containing 5 ng template DNA and 250 nM each of forward and reverse primers were prepared using the SensiFAST SYBR No-ROX kit (Bioline, Luckenwalde, Germany). Primer sequences are listed in Supplementary file 2. PCRs were run in triplicate on a LightCylcer II 480 (Roche) with an annealing temperature of 60°C and an extension time of 20 s. The TAF10 mRNA served as internal standard to determine relative mRNA levels of KAR2, SIL1 or RPN4. Data analysis was performed with the LightCylcer II 480 software using the 2nd derivative maximum method to determine Cp (crossing point) values.
 
-## Proteomics
+### Proteomics
 
 Wild-type (SSY122) and ∆rpn4 (SSY784) cells were grown to mid-log phase in SCD medium. Cultures were diluted to OD 0.4, and 5 ODs of cells were harvested as untreated samples. Tunicamycin was added to the remainder of each culture at a final concentration of 5 µg/ml, cells were grown for 4 hr, and 5 ODs of cells were harvested as treated samples. Cells were collected by centrifugation and snap frozen in liquid nitrogen. Samples from four independent experiments were used for proteomic analysis. Cells were resuspended in ice-cold lysis buffer (50 mM Tris, pH 7.5, 0.5 mM EDTA, 1x Roche complete protease inhibitors) and disrupted by bead beating. Proteins were solubilized by adding SDS to a final concentration of 1.8% (w/v) and heating to 95°C for 10 min. Protein concentrations were determined with a BCA assay kit (Thermo Fisher Scientific). Per sample, 200 µg protein was precipitated with acetone and resuspended in digestion buffer (8 M Urea, 50 mM Tris pH 8.5, 1 mM DTT) to a concentration of 4 mg/ml. 40 µg protein was alkylated using 5 mM iodoacetamide for 1 hr, digested with LysC (enzyme to protein = 1:50 (w/w)) for 5.5 hr, diluted to 2 M Urea, and digested with Trypsin (1:50 (w/w)) for another 13 hr at room temperature. Digested peptides were acidified to 1% (v/v) trifluoroacetic acid, cleared of precipitates by brief centrifugation, desalted via SDB-RPS cleanup, and analyzed on a Q Exactive HF-X Hybrid Quadrupole-Orbitrap mass spectrometer (Thermo Fisher Scientific), essentially as described (Itzhak et al., 2016). Raw files were processed using MaxQuant (Cox and Mann, 2008) version 1.6, using the MaxLFQ algorithm (Cox et al., 2014) for label free-quantification. Downstream analysis was performed in Perseus version 1.6 (Tyanova et al., 2016). LFQ intensities based on fewer than 2 MS/MS counts were removed from the dataset. The remaining intensities were log-transformed. For the pairwise analyses in Figures 4D and 5F, further quality filtering was applied. Only proteins that were quantified in all four replicates of at least one of the compared conditions were retained. Missing values were then imputed from a normal distribution (width 0.3 SDs, down-shifted by 1.8 SDs). For statistical analysis, a two-sided student’s t-test with permutation based false discovery rate control (FDR = 1%) and an S0 parameter of 0.2 was performed. The category annotation enrichment was calculated with the 1D annotation enrichment tool in Perseus (Tyanova et al., 2016), using mean log2 expression differences. For the analysis in Figure 5—figure supplement 2, only proteins annotated as ‘proteasome subunit’ and with at least three quantified intensities in each condition were included. For each protein, the median value of the untreated wild-type sample was subtracted from the median intensities in all conditions, to achieve normalization. The resulting values correspond to log2 fold changes relative to the untreated wild-type (which has a value of 0). The mean and standard error of the mean were plotted. Proteasome subunits were defined as the 33 structural proteins of the 20S core particle and the 19S regulatory particle (Supplementary file 4). All were detected consistently, except for Sem1. Core UPR target genes were defined as those identified as UPR-regulated by both Travers et al. (2000) and Pincus et al. (2014) (Supplementary file 5). Of the corresponding 102 proteins, 69 were detected in total, and 50 and 58 passed the quality filters for the analyses in Figures 4D and 5F, respectively. See Figure 4—source data 1 for assignment of proteins to other functional groups.
 
-## Experimental design
+### Experimental design
 
 Control strains were isogenic to the experimental strains except for the relevant genetic modifications. For experiments with sec65-1 cells, strain SSY002 (W303 mating type alpha) rather than SSY122 was used as a control because it has the same mating type and also is an ade2 mutant. At least three biological replicates were done for experiments with quantitative read-outs to enable assessment of the variation between replicates. Exceptions were the experiments in Figure 1E, Figure 1F, Figure 1—figure supplement 1D and Figure 6—figure supplement 1, which were done only once. Repetitions were considered biological replicates if they were initiated from independently inoculated pre-cultures of the yeast strains used and were performed on different days. For each experiment, the number of biological replicates (n), the mean and the standard error of the mean (SEM) are reported in the figure legends.
 
-## Data availability
+### Data availability
 
 The mass spectrometry proteomics data associated with Figure 4D, Figure 5F and Figure 5—figure supplement 2 have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD012867.

@@ -40,69 +40,459 @@ The biochemical function of Phactr/PP1 complexes has been unclear. Phactr1 and P
 
 ## Results
 
-## Crystallisation of Phactr1/PP1 complexes
+### Crystallisation of Phactr1/PP1 complexes
 
 Previous studies have shown that Phactr1 C-terminal sequences are necessary and sufficient for interaction with PP1 (Allen et al., 2004; Wiezlak et al., 2012): they contain an RVxF-like sequence, LIRF, and can functionally substitute for the related PP1-binding domain of yeast Bni4 (Larson et al., 2008; Figure 1A). We synthesised peptides corresponding to Phactr1(517-580) from all four Phactr family members, and measured their affinity for recombinant PP1α(7-300) using Bio-layer interferometry (BLI). Phactr1(517-580) bound with an affinity of 10.4 nM, comparable to Phactr3, while the other Phactrs bound more weakly (Figure 1B and C, Figure 1—figure supplement 1A). This Kd is similar to PIPs such as spinophilin (8.7 nM) and PNUTS (9.3 nM) (Choy et al., 2014; Ragusa et al., 2010), and somewhat stronger than PPP1R15A and NIPP1 (Choy et al., 2015; O'Connell et al., 2012).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain structure of Phactr family proteins. RPEL motifs, red; PP1-binding domain, green; nuclear localisation sequences, black. Below, Phactr1 C-terminal sequence, indicating RVxF-ϕϕ-R-W string, RPEL consensus, secondary structure elements, and mutations known to impair Phactr/PP1 interaction (Allen et al., 2004; Kim et al., 2007). (B) Structure-based alignment of Phactr1 PP1-binding sequences with other PP1 cofactors. (C) Bio-layer interferometry assay of PP1α(7-300) binding to Phactr1(517-580), its derivatives, and analogous sequences from Phactr2-4 (data are means ± SD, n = 3). (D) Structure of the Phactr1(516-580)/PP1α(7-300) complex. Phactr1, green ribbon, with RPEL motif highlighted in red, RVxF-ϕϕ-R-W sidechains as sticks; PP1, white surface, with acidic groove in red, hydrophobic groove in dark grey and C-terminal groove in gold; manganese ions, purple spheres; phosphate, orange sticks. (E–H) Detail of the individual interactions, with important residues highlighted (Phactr1, green bold; PP1, black). For comparison with other PIPs, see Figure 1—figure supplement 2A.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequence-based alignment of Phactr-family C-terminal sequences, with differences highlighted in red. The extended Phactr1 RVxF-ϕϕ-R-W string is shown above, with presumed structurally equivalent residues indicated in blue on each sequence. Note that the sequence alignment introduces a gap into the atypical RVxF motif. (B) Structure of Phactr(507-580)/PP1α(7-300) solved at pH 8.5 (green) compared with that of Phactr1(516-580)/PP1α(7-300) solved at pH 5.25 (orange). The Phactr1 sequences C-terminal to the amphipathic α-helix (residue 467) adopt different conformations. In the pH 5.25 structure, residues 576–580 were not resolved in the density, and residues 567–575 were poorly resolved. (C) Omit map contoured at 3σ of the Phactr1/PP1 holoenzyme catalytic centre (metal ion/phosphate coordinating residues, white sticks; phosphate, orange sticks; water molecules, red spheres; coordination bonds, solid lines; hydrogen bonds, dashed lines). (D) Omit map contoured at 3σ of Phactr1 516–580 (green cartoon and sticks) across the PP1 surface (white).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Top, structure-based alignment of PIPs that bind PP1 through extended RVxF motifs including PPP1R15B (Chen et al., 2015), spinophilin (Ragusa et al., 2010), PNUTS (Choy et al., 2014), Repoman, (Kumar et al., 2016), PPP1R15A (Choy et al., 2015), NIPP1 (O'Connell et al., 2012), KNL1 (Bajaj et al., 2018), GL and GM (Yu et al., 2018). Below, comparison of the trajectories of Phactr1 (green), PPP1R15B (yellow), spinophilin (magenta; with PDZ domain), PNUTS (blue), Repoman (grey), PPP1R15A (orange), NIPP1 (brown), KNL1 (purple), GL (light blue) and GM dark green. Boxes show detail of interactions by the RVxF, Arg, and Trp motifs in each PIP. (B) Phactr1 RPEL3 (salmon) overlaps the RVxF motif LIRF(519-522) (green) and adopts different conformations when bound to G-actin (left) and PP1 (right). L519, I520 and F522 make critical but distinct hydrophobic contacts in both the G-actin and PP1 complexes.
+
 We determined the structures of purified Phactr1(507-580)/PP1α(7-300) (1.9 Å) and Phactr1(516-580)/PP1α(7-300) (1.94 Å), which crystallised at pH 8.5 and pH 5.25, respectively, and exhibit differing conformations of Phactr1 residues C-terminal to residue 567 (Figure 1D, Figure 1—figure supplement 1B). In both structures, the PP1 catalytic site contains two presumed manganese ions and a phosphate anion, as previously reported (Figure 1—figure supplement 1C; Egloff et al., 1995), and its conformation is virtually identical to that seen in other PP1 complexes, such as spinophilin/PP1 (RMSD 0.23 Å over 255 Cα atoms) (Choy et al., 2014; Ragusa et al., 2010). The Phactr1 C-terminal sequences are well resolved in the pH 8.5 structure, which is also adopted by Phactr1(516-580)/PP1α(7-300) when substrates occupy the PP1 active site, and which is supported by BLI data (discussed below). It is therefore likely be representative of the structure at physiological pH. In contrast, at pH 5.25 Phactr1 C-terminal sequences adopted a distinct and poorly resolved conformation, perhaps induced by protonation of the three C-terminal histidines (Figure 1—figure supplement 1B). In the discussion that follows, we focus on the pH8.5 structure.
 
-## Phactr1 binds PP1 through an extended RVxF-ϕϕ-R-W string
+### Phactr1 binds PP1 through an extended RVxF-ϕϕ-R-W string
 
 Phactr1 residues 516–542 wrap around PP1, occluding its C-terminal groove, and covering 2260 Å2 of solvent-accessible surface (Figure 1D, Figure 1—figure supplement 1D), contacting PP1 in a strikingly similar way to spinophilin, PNUTS and PPP1R15B (Chen et al., 2015; Choy et al., 2014; Ragusa et al., 2010). These contacts include a non-canonical RVxF motif (Egloff et al., 1997; Hendrickx et al., 2009), a ϕϕ motif (O'Connell et al., 2012), an Arg motif (Choy et al., 2014), and a previously unrecognised Trp motif (Figure 1E–H; Figure 1—figure supplement 2A). The RVxF sequence LIRF(519-522) is critical for Phactr1/PP1 complex formation (Figure 1E, Figure 1—figure supplement 2A). Its deletion decreased binding affinity ~104 fold, while the I520A and F522A mutations reduced it 4-fold and ~650 fold respectively (Figure 1C). The RVxF residue L519 also makes contacts with G-actin in the trivalent G-actin•Phactr1 RPEL domain complex (Mouilleron et al., 2012), explaining why PP1 and G-actin binding to Phactr proteins is mutually exclusive (Figure 1—figure supplement 2B; Wiezlak et al., 2012).
 
 The other contacts also contribute to PP1-binding affinity. The ϕϕ motif, EVAD(527-530), adds a β-strand to PP1 β-strand β14, extending one of PP1’s two central β-sheets (Figure 1F). The Phactr1 Arg motif contacts the PP1 C-terminal groove, with R536 forming a bidentate salt bridge with PP1 D71, and a hydrogen bond with N271. This is stabilised by an intrachain cation-π interaction with Phactr1 Y534, which also hydrogen bonds with PP1 D71, and makes hydrophobic contacts with P24 and Y70 (Figure 1G, Figure 1—figure supplement 2A). Substitution of R536 by proline, as in the mouse Phactr4 ‘humdy’ mutation (Kim et al., 2007), reduced Phactr1-binding affinity >300 fold, while Y534A reduced it > 10 fold (Figure 1C). The Trp motif, W542, which is constrained by a salt bridge between R544 and D539, makes hydrophobic contacts with PP1 I133 and Y13 (Figure 1H), similar to those in the PPP1R15B and spinophilin PP1 complexes (Chen et al., 2015; Ragusa et al., 2010; Figure 1—figure supplement 2A). Although W542A reduced PP1-binding affinity ~40-fold, R544A reduced it ~ threefold (Figure 1C).
 
-## Phactr1 binding creates a novel composite surface adjacent to PP1 catalytic site
+### Phactr1 binding creates a novel composite surface adjacent to PP1 catalytic site
 
 The Phactr1 sequences C-terminal to the RVxF-ϕϕ-R-W string form a novel structure specific to the Phactr1/PP1 complex. Residues 545–565 include a five-turn amphipathic α-helix that abuts the PP1 hydrophobic groove: Phactr1 residues L545, I553, L557, F560 make hydrophobic contacts with PP1 I133, R132, W149, and K150, while E556 and E564 make salt bridges with PP1 R132 and K150, respectively, and K561 hydrogen bonds with PP1 S129 and D194 (Figure 2A). Phactr1 then turns, contacting the PP1 α7-α8 loop: Phactr1 H568 hydrogen bonds to PP1 P192 and Phactr1 S571, making hydrophobic contacts with PP1 M190, while Phactr1 L570 and L574 make hydrophobic contacts with PP1 M190 and I189/P196/L201 respectively. The Phactr1 C-terminus then folds back onto the amphipathic helix, stabilised by multiple intrachain interactions. These include hydrophobic contacts between Phactr1 T575, F577 and K561; hydrogen bonds between the R576 carbonyl and K561, between the H578 amide and N558, and between the R579 carbonyl and R554, and a salt bridge between the P580 carboxylate and the R554 guanidinium. The Phactr1 C-terminus also contacts PP1 through hydrogen bonds between R576 and PP1 D194, and H578 and PP1 S129 (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig2-v2.jpg)
+
+**Figure 2.:** (A) Molecular interactions by the Phactr1 C-terminal sequences (green; residues involved in intrachain interactions or contacting PP1 are shown as sticks). (B) The novel composite surface formed by Phactr1/PP1 interaction, showing the deep hydrophobic pocket, adjacent narrow amphipathic cavity with associated waters (red spheres) and glycerol (cyan sticks), and residues constituting the Phactr1-derived basic rim (blue). (C) PP1 surface electrostatics are transformed in the Phactr1/PP1 complex. Left, surface representation of the Phactr1/PP1 complex; centre, electrostatic surface potential representation of Phactr1/PP1 complex. Right, electrostatic surface potential representation of PP1 (positive, blue; negative, red).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Top, the spinophilin/PP1 complex shown in surface representation (magenta, spinophilin; grey, PP1); bottom, the analogous region of the Phactr1/PP1 complex in the same orientation from Figure 2B, repeated for comparison.
 
 Mutagenesis experiments confirmed the importance of these interactions for Phactr1-PP1 binding (Figure 1C). A triple alanine substitution of Phactr1 L557, F560 and L574 (LFL-3A) resulted in a ~ 900 fold drop in binding affinity, while the acidic substitution L574D reduced binding affinity by 17-fold. Mutations F577A and H578A reduced binding activity by 16-fold and 7-fold, respectively, corroborating previous co-immunoprecipitation experiments (Allen et al., 2004; Sagara et al., 2009), and mutation of all three C-terminal histidines (HHH-A) reduced affinity >50 fold (Figure 1C).
 
 The docking of Phactr1 C-terminal sequences across the PP1 hydrophobic groove substantially modifies its topography (Figure 2B). The positioning of the Phactr1 amphipathic helix creates a deep hydrophobic pocket comprising Phactr1 W542, L545, K550, I553, R554, L557 and H578, and PP1 I130 I133 and Y134. Adjacent to the pocket, a narrow amphipathic cavity is formed by the positioning of Phactr1 K561 and R576 across the PP1 hydrophobic groove: its polar side comprises Phactr1 K561 and R576, and PP1 D194 and S129, while its hydrophobic side is formed from PP1 residues C127, I130, V195, W206 and V223. Three water molecules and a glycerol are resolved within the cavity, whose hydrophobic side forms part of the binding site for the PP1 inhibitors tautomycetin and tautomycin (Choy et al., 2017). The new composite surface is crowned by a basic rim, formed from Phactr1 residues K550, R554, R576, H578 and R579 (Figure 2B), which radically alters the surface charge distribution (Figure 2C). Thus, Phactr1 binding profoundly transforms the surface of PP1 adjacent to its catalytic site. This transformation is distinct from that seen in the spinophilin/PP1 complex (Ragusa et al., 2010), which modifies the hydrophobic groove in a different way and leaves the PP1 surface electrostatics unchanged (Figure 2—figure supplement 1).
 
-## Identification of potential Phactr1 substrates
+### Identification of potential Phactr1 substrates
 
 We previously showed that expression of an activated Phactr1 derivative that constitutively forms the Phactr1/PP1 complex, Phactr1XXX, induces F-actin rearrangements in NIH3T3 fibroblasts, provided it can bind PP1 (Wiezlak et al., 2012). Indeed, overexpression of the Phactr1 PP1-binding domain alone can also induce such changes, suggesting that the Phactr1 C-terminal sequences are sufficient to allow recognition of at least some substrates (Figure 3—figure supplement 1A; see Discussion). These observations suggest that the Phactr1/PP1 complex might dephosphorylate target proteins involved in cytoskeletal dynamics. To identify potential Phactr1/PP1 substrates, we used differential SILAC phosphoproteomics in NIH3T3 cells expressing Phactr1XXX. Over 3000 phosphorylation sites were quantified, and each assigned a dephosphorylation score comparing their phosphorylation with that observed in cells inducibly expressing Phactr1XXXΔC, which lacks the PP1 binding sequences, or vector alone (Figure 3A; Figure 3—figure supplement 1B, Supplementary file 1, Table A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig3-v2.jpg)
+
+**Figure 3.:** (A–D), NIH3T3 cells, (E, F) neuronal cells. (A) SILAC phosphoproteomics in NIH3T3 cells. NIH3T3 cell lines conditionally expressed Phactr1XXX (constitutively binds PP1, not G-actin), Phactr1XXXΔC (binds neither PP1 nor G-actin), or vector alone (Wiezlak et al., 2012). Forward and reverse SILAC phosphoproteomics were used to generate a dephosphorylation score, quantified below (red highlights, hits also detected as Phactr1-dependent in neurons). (B) Annotation enrichment analysis of the entire SILAC phosphoproteomics dataset for GO Biological Process terms, showing terms with dephosphorylation score >1, FDR < 0.02. (C) Candidate Phactr1/PP1 substrates ranked by dephosphorylation score (blue, cytoskeletal structural or regulatory proteins; asterisks, proteins with multiple dephosphorylation sites). Michaelis constant (KM, µM), specificity constant (kcat/KM, µM*min−1*U−1) and sequence context (blue, basic; red, acidic; black, hydrophobic) are shown. (*), KM could not be reliably determined; (nd), not done. (D) Amino acid frequency among phosphorylation sites with dephosphorylation score >2.5 (top) compared with all phosphorylation sites (bottom). (E) Phactr1-dependent protein dephosphorylation in cortical and hippocampal neurons treated with cytochalasin D (CD). Differential Z-score, the difference between the phosphorylation change observed in Phactr1-wildtype and Phactr1-null neurons, plotted versus statistical significance. Red highlights, peptides also observed in the NIH3T3 SILAC phosphoproteomics. (F) Validation of TMT phosphoproteomics data in primary cortical neurons treated for 30' with CD or latrunculin B (LB). For quantitation, see Figure 3—figure supplement 2D. See also Supplementary file 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Expression of the Phactr1XXX(464-580), which constitutively binds PP1, induces cytoskeletal rearrangements in NIH3T3 fibroblasts. Scale bar, 20 µm. (B) Left, immunoblot analysis of Flag-Phactr1XXX and Flag-Phactr1XXXΔC expression in NIH3T3 cell lines cultured under SILAC labelling conditions. Detection was with Flag antibody. Right, dephosphorylation of endogenous IRSp53 pS455 upon expression of Flag-Phactr1XXX, detected with anti-IRSp53 p455 antibody. For protein structures, see Figure 3A. (C). Phactr1/PP1 phosphatase activity assay data for selected substrates from Figure 3D (data are ± SD, n = 3). (D, E) Immunoblot analysis of IRSp53 pS455 and afadin pS1275 in NIH3T3 cells upon overnight serum starvation and 30' serum stimulation (D), or 30' treatment with the actin-binding drugs cytochalasin D (CD) or latrunculin B (LB). Quantitation below (data are ± SD, n = 3). See also Supplementary file 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Rat hippocampal neurons were transfected with plasmids expressing Phactr1 derivatives and GFP, fixed after 1 day and their morphology scored blindly. Scale bar, 10 µm. Statistical significance was assessed by unpaired t-test with Welch's correction (means ± SEM, n = 3–5; **, p<0.01). (B) RT-PCR analysis shows that Phactr1 inactivation in brain does not affect expression of other Phactr family members, relative to Rps16 expression. (C) Wildtype and Phactr1-null neurons were treated with cytochalasin D (CD) and phosphorylation changes assessed by TMT phosphoproteomics. Top, amino acid frequency table of phosphopeptides showing a statistically significant dependence on Phactr1 (FDR < 0.2), bottom, amino acid frequency table of all phosphopeptides. (D) Quantitation of immunoblot data shown in Figure 3F. Lysates from Phactr1-null or wildtype neurons were left untreated or treated with CD or LB for 30' were analysed by immunoblotting with antibodies against IRSp53 pS455 (left); afadin pS1275 (centre); and spectrin αII pS1031 (right). See also Supplementary files 1 and 3.
+
 Annotation enrichment analysis of the whole dataset (Cox and Mann, 2012) identified two Gene Ontology Biological Process categories that exhibited a significantly higher mean dephosphorylation score upon expression of Phactr1XXX: ‘regulation of actin filament-based process’ and ‘regulation of actin cytoskeleton organisation’ (Figure 3B, Supplementary file 1, Table B). In keeping with this, proteins with a high dephosphorylation score included many cytoskeletal components and regulators (Figure 3C, Supplementary file 1, Table A). Proline-directed sites predominated in the dataset as a whole, but those sites with dephosphorylation scores > 2.5 were enriched in acidic residues at positions +2 to +7 relative to the phosphorylation site, with small hydrophobic residues enriched at positions +4 and +5, and basic residues N-terminal to it (Figure 3D). Since this sequence bias was not observed at all sites, we tested directly whether sites were Phactr1/PP1 substrates using an in vitro peptide dephosphorylation assay. Synthetic phosphopeptides containing the candidate sites exhibited a range of KM and kcat/KM values: for example, IRSp53 pS455 exhibited a low KM and high kcat/KM; spectrin αII pS1031 had a similar KM but lower kcat/KM; and afadin pS1275 was as reactive as spectrin αII pS1031, but with much poorer KM (Figure 3C; Figure 3—figure supplement 1C; Supplementary file 2). Interestingly, the four substrates with the lowest KM - IRSp53 pS455, Plekho2 pS395, spectrin αII pS1031, and Tbc1d15 pS205 - all contained a leucine doublet at the +4 and +5 positions (see Discussion).
 
-## IRSp53, afadin, and spectrin αII are Phactr1/PP1 substrates
+### IRSp53, afadin, and spectrin αII are Phactr1/PP1 substrates
 
 We generated phosphospecific antisera against IRSp53 pS455, spectrin αII pS1031, and afadin pS1275. Immunoblot analysis showed that in NIH3T3 cells, phosphorylation of IRSp53 S455 and afadin S1275 was substantially decreased upon expression of Phactr1XXX, and by serum stimulation, which activates rho-actin signalling and Phactr-family/PP1 complex formation (Miralles et al., 2003; Vartiainen et al., 2007; Wiezlak et al., 2012; Figure 3—figure supplement 1D; Supplementary file 3). Moreover, treatment of cells with cytochalasin D (CD), which binds G-actin and disrupts its interaction with RPEL proteins (Vartiainen et al., 2007; Wiezlak et al., 2012) significantly decreased phosphorylation of IRSp53 S455 and afadin S1275 (Figure 3—figure supplement 1E; Supplementary file 3). In contrast, treatment of cells with the latrunculin B (LB), which increases G-actin concentration through blockade of F-actin assembly, but whose binding to G-actin does not affect RPEL-actin interaction, had the opposite effect (Figure 3—figure supplement 1E; Supplementary file 3). These data suggest that endogenous RPEL protein(s), presumably Phactr-family members, control IRSp53 S455 and afadin S1275 phosphorylation in NIH3T3 cells.
 
 To explore directly the specific involvement of Phactr1 in protein dephosphorylation we turned to neurons, which express Phactr1 at high level (Allen et al., 2004). Phactr1 mutations are associated with morphological and functional developmental defects in cortical neurons (Hamada et al., 2018), and expression of Phactr1XXX induced morphological defects upon expression in cultured hippocampal neurons (Figure 3—figure supplement 2A). To assess whether Phactr1 controls phosphorylation in neurons, we analysed hippocampal and cortical neurons from wildtype and Phactr1-null animals. Phactr1-null mice are viable; they do not show any obvious developmental abnormalities, and expression of the other Phactr proteins is apparently unaffected (Figure 3—figure supplement 2B). Neurons were treated with LB or CD to inhibit or activate RPEL proteins, and phosphorylation profiles analysed using TMT phosphoproteomics. Among ~9000 phosphorylation sites quantified, we found 44 sites on 37 proteins that differed significantly in their response to these stimuli in Phactr1-null cells (Figure 3E, Supplementary file 1, Table E). The sequence context of these sites was similar to that of those seen in NIH3T3 cells (Figure 3—figure supplement 2C), and seven, including IRSp53 pS455, spectrin αII pS1031, and afadin pS1275, were observed in both cell types (Figure 3F, Figure 3—figure supplement 2D; Supplementary file 3). In sum, these results identify multiple Phactr1 substrates in NIH3T3 cells and neurons, many of which are cytoskeletal components or regulators.
 
-## Crystallisation of Phactr1/PP1-substrate complexes
+### Crystallisation of Phactr1/PP1-substrate complexes
 
 To understand the molecular basis for substrate recognition by Phactr1/PP1, we sought to determine the structures of Phactr1/PP1-substrate complexes. We were unable to co-crystallise Phactr1/PP1 with unphosphorylated or glutamate-phosphomimetic peptides encompassing IRSp53 S455, afadin S1275 or spectrin αII S0131, so we used a PP1-substrate fusion strategy similar to that used for PP5 (Oberoi et al., 2016). Fusion proteins comprising PP1(7–304) joined via a (SG)9 linker to unphosphorylated substrate sequences were coexpressed with Phactr1(516-580) for structural analysis. This approach allowed determination of the structures of the IRSp53(449-465) and spectrin αII (1025–1039) complexes at 1.09 Å and 1.30 Å resolution, respectively (Figure 4A–C; Table 1; Figure 4—figure supplement 1; referred to hereafter as the IRSp53 and spectrin complexes), but was unsuccessful with Tbc1d15, Plekho2, afadin, and cofilin.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Structures of (A) the Phactr1/PP1-IRSp53(449-465) and (B) the Phactr1/PP1-spectrin(1025–1039) complexes, displayed as in Figure 1, with IRSp53 and spectrin displayed in orange and magenta sticks, respectively. (C) Summary of substrate interactions. Hydrogen bonds are shown as thick dashed lines: grey for both substrates; colour, for specific substrate. Composite hydrophobic surface residues are highlighted in blue (see F). (D) Inversion of the recruited phosphate. Phosphate and metal ion contacts in the Phactr1/PP1 and in Phactr1/PP1-IRSp53 structures are shown. Metal coordination bonds, solid continuous lines; hydrogen bonds, dashed lines; W1 and W2, water molecules. (E) Potential catalytic mechanism. Left, a hypothetical substrate complex, based on the Phactr1/PP1 complex, assuming that its phosphate corresponds to that of IRSp53 pS455. Right, the observed Phactr1/PP1-IRSp53 product complex. W1 and W2, water molecules; grey bars, metal coordination bonds; dashes, hydrogen bonds. Proposed nucleophilic attack by activated W1 results in phosphate inversion. (F) Docking of the SxxxLL motif (sticks) with the Phactr1/PP1 hydrophobic pocket. Phactr1/PP1 in surface representation, with the composite hydrophobic surface in light blue, and other Phactr1 and PP1 surfaces in green and white, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Structure of the second copy of the Phactr1/PP1-substrate complexes in each asymmetric unit. Each structure is shown alone (top), and superimposed on the first copy (bottom; see Figure 4). (A) In IRSp53 complex 2, the electrostatic interactions between substrate residues +4, +5 and +6 and Phactr1 basic residues are water-bridged rather than direct. (B) In spectrin complex 2, the E1033/N1034spectrin peptide bond is inverted, losing the mainchain carbonyl and N1034spectrin sidechain interactions with Phactr1 R576, and the hydrogen bonding interaction between the L1035spectrin(+4) carbonyl and Phactr1 K550 is water-bridged rather than direct. (C) Superposition of the first copy of each complex (shown separately in Figure 4A and B). (D) Omit map contoured at 3σ of the first copy of the IRSp53 complex.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Left: the PP5-Cdc37(S13E) complex (Oberoi et al., 2016). White surface, PP5; lilac sticks, Cdc37(S13E). Centre, superposition of the PP5-Cdc37(S13E) and Phactr1/PP1-IRSp53 structures. Right, comparison of molecular interactions with substrates at the catalytic site residues of PP5 (lilac) and PP1 (orange). Hydrogen bonds are shown as thick dashed lines: grey for both substrates; colour, for specific substrate.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Left, stick representation of molecular interactions at the catalytic site of PP5-Cdc37(S13E). Centre, superposition of the PP5-Cdc37(S13E) (lilac) and Phactr1/PP1 complex (white) catalytic sites. Note the coincidence of the PP5-Cdc37(S13E) phosphomimetic glutamate with the oxygens of the phosphate present in the Phactr1/PP1 complex. Right, comparison of the PP5-Cdc37(S13E) and Phactr1/PP1-IRSp53 complexes (yellow). Note the inversion of the phosphate and the absence of W1.
+
+**Table 1.**
+ Crystallographic data and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Phactr1/PP1 (pH 8.5)</th>
+      <th>Phactr1/PP1 (pH 5.25)</th>
+      <th>Phactr1/PP1-IRSp53 (pH 8.5)</th>
+      <th>Phactr1/PP1-spectrin-αII (pH 8.5)</th>
+      <th>Phactr1/PP1-IRSp53-S455E (pH 8.5)</th>
+      <th>PP1-Phactr1(526-580) (pH 8.5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB ID</td>
+      <td>6ZEE</td>
+      <td>6ZEF</td>
+      <td>6ZEG</td>
+      <td>6ZEH</td>
+      <td>6ZEI</td>
+      <td>6ZEJ</td>
+    </tr>
+    <tr>
+      <td>Resolution range</td>
+      <td>238.79–1.90 (1.93–1.90)</td>
+      <td>56.05–1.94 (2.01–1.94)</td>
+      <td>35.12–1.09 (1.13–1.09)</td>
+      <td>48.47–1.30 (1.35–1.30)</td>
+      <td>69.37–1.39 (1.44–1.39)</td>
+      <td>59.48–1.78 (1.84–1.78)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P65</td>
+      <td>P 1</td>
+      <td>P 21</td>
+      <td>P 21</td>
+      <td>P 21</td>
+      <td>P 65</td>
+    </tr>
+    <tr>
+      <td>Unit cell a, b, c</td>
+      <td>137.7 137.7 238.8</td>
+      <td>47.5 57.5 89.6</td>
+      <td>48.6 122.3 69.0</td>
+      <td>48.5 122.3 69.3</td>
+      <td>48.7 122.3 69.4</td>
+      <td>137.37 137.37 238.02</td>
+    </tr>
+    <tr>
+      <td>α, β, γ</td>
+      <td>90 90 120</td>
+      <td>78.0 74.6 81.6</td>
+      <td>90 92.2 90</td>
+      <td>90 92.1 90</td>
+      <td>90 92.2 90</td>
+      <td>90 90 120</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>2 420 272 (99 345)</td>
+      <td>522 449 (32 609)</td>
+      <td>664 254 (62 356)</td>
+      <td>1 278 289 (123 745)</td>
+      <td>1 058 251 (79 018)</td>
+      <td>5 001 498 (505 725)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>200 820 (9 938)</td>
+      <td>65 136 (6 061)</td>
+      <td>332 349 (31 383)</td>
+      <td>196 809 (19 297)</td>
+      <td>162 314 (15 982)</td>
+      <td>241 814 (24 087)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>12.1 (10.0)</td>
+      <td>8.0 (5.4)</td>
+      <td>2.0 (2.0)</td>
+      <td>6.5 (6.4)</td>
+      <td>6.5 (4.9)</td>
+      <td>20.7 (21.0)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100 (100)</td>
+      <td>98.5 (92.0)</td>
+      <td>99.3 (93.7)</td>
+      <td>99.1 (96.8)</td>
+      <td>99.6 (98.3)</td>
+      <td>99.7 (99.6)</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma(I)</td>
+      <td>7.5 (1.1)</td>
+      <td>9.7 (2.7)</td>
+      <td>15.4 (1.8)</td>
+      <td>5.9 (1.1)</td>
+      <td>12.5 (1.1)</td>
+      <td>12.9 (1.1)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>33.1</td>
+      <td>30</td>
+      <td>10.8</td>
+      <td>11.1</td>
+      <td>16.4</td>
+      <td>26.4</td>
+    </tr>
+    <tr>
+      <td>R-merge</td>
+      <td>0.14 (2.1)</td>
+      <td>0.13 (0.57)</td>
+      <td>0.01 (0.44)</td>
+      <td>0.13 (1.78)</td>
+      <td>0.06 (1.05)</td>
+      <td>0.179 (3.19)</td>
+    </tr>
+    <tr>
+      <td>R-meas</td>
+      <td>0.16 (2.3)</td>
+      <td>0.14 (0.64)</td>
+      <td>0.02 (0.62)</td>
+      <td>0.15 (1.94)</td>
+      <td>0.07 (1.18)</td>
+      <td>0.18 (3.26)</td>
+    </tr>
+    <tr>
+      <td>R-pim</td>
+      <td>0.04 (0.75)</td>
+      <td>0.04 (0.26)</td>
+      <td>0.01 (0.44)</td>
+      <td>0.05 (0.75)</td>
+      <td>0.02 (0.52)</td>
+      <td>0.04 (0.70)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.99 (0.70)</td>
+      <td>0.99 (0.88)</td>
+      <td>1.0 (0.65)</td>
+      <td>0.99 (0.47)</td>
+      <td>1.0 (0.54)</td>
+      <td>1.0 (0.54)</td>
+    </tr>
+    <tr>
+      <td>Reflections used in refinement</td>
+      <td>199 843 (6 288)</td>
+      <td>65 085 (6 061)</td>
+      <td>332 111 (31 289)</td>
+      <td>195 791 (19 135)</td>
+      <td>162 184 (15 972)</td>
+      <td>241 401 (24 054)</td>
+    </tr>
+    <tr>
+      <td>Reflections used for R-free</td>
+      <td>10 138 (347)</td>
+      <td>3 132 (295)</td>
+      <td>16 696 (1 543)</td>
+      <td>9 611 (927)</td>
+      <td>1 999 (197)</td>
+      <td>12 175 (1 276)</td>
+    </tr>
+    <tr>
+      <td>R-work</td>
+      <td>0.23 (0.34)</td>
+      <td>0.18 (0.22)</td>
+      <td>0.11 (0.23)</td>
+      <td>0.13 (0.23)</td>
+      <td>0.12 (0.24)</td>
+      <td>0.24 (0.36)</td>
+    </tr>
+    <tr>
+      <td>R-free</td>
+      <td>0.26 (0.37)</td>
+      <td>0.21 (0.24)</td>
+      <td>0.14 (0.24)</td>
+      <td>0.16 (0.26)</td>
+      <td>0.15 (0.27)</td>
+      <td>0.27 (0.40)</td>
+    </tr>
+    <tr>
+      <td>Number of non-hydrogen atoms</td>
+      <td>18 201</td>
+      <td>5 962</td>
+      <td>7 225</td>
+      <td>6 778</td>
+      <td>6 822</td>
+      <td>17 414</td>
+    </tr>
+    <tr>
+      <td>Macromolecules</td>
+      <td>17428</td>
+      <td>5 683</td>
+      <td>6 339</td>
+      <td>6 104</td>
+      <td>6 099</td>
+      <td>16 682</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>33</td>
+      <td>37</td>
+      <td>42</td>
+      <td>19</td>
+      <td>32</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>740</td>
+      <td>242</td>
+      <td>844</td>
+      <td>655</td>
+      <td>691</td>
+      <td>674</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2160</td>
+      <td>715</td>
+      <td>754</td>
+      <td>742</td>
+      <td>742</td>
+      <td>2 094</td>
+    </tr>
+    <tr>
+      <td>RMS(bonds)</td>
+      <td>0.011</td>
+      <td>0.005</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.011</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>RMS(angles)</td>
+      <td>0.85</td>
+      <td>0.84</td>
+      <td>1.17</td>
+      <td>1.15</td>
+      <td>1.29</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favoured (%)</td>
+      <td>96</td>
+      <td>95.62</td>
+      <td>97.15</td>
+      <td>96.99</td>
+      <td>96.99</td>
+      <td>95.85</td>
+    </tr>
+    <tr>
+      <td>Ramachandran allowed (%)</td>
+      <td>4</td>
+      <td>4.38</td>
+      <td>2.85</td>
+      <td>3.01</td>
+      <td>2.88</td>
+      <td>4.15</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>2.51</td>
+      <td>2.65</td>
+      <td>4.7</td>
+      <td>3.05</td>
+      <td>3.87</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td>44.4</td>
+      <td>41</td>
+      <td>16.2</td>
+      <td>19</td>
+      <td>21.7</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>Macromolecules</td>
+      <td>44.9</td>
+      <td>40.8</td>
+      <td>14.6</td>
+      <td>17.6</td>
+      <td>20.1</td>
+      <td>41.1</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>48.7</td>
+      <td>46.7</td>
+      <td>23.6</td>
+      <td>14.9</td>
+      <td>23.7</td>
+      <td>44.7</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>41.6</td>
+      <td>43.1</td>
+      <td>28</td>
+      <td>32.8</td>
+      <td>35.4</td>
+      <td>37.1</td>
+    </tr>
+  </tbody>
+</table>
+
 The Phactr1/PP1-IRSp53 and Phactr1/PP1-spectrin complexes crystallised in the same spacegroup. Each asymmetric unit contains two complexes (RMSD 0.22 Å and 0.17 Å over 288 Cα, respectively), in which substrate-Phactr1/PP1 interactions are mostly conserved, albeit with some minor differences (Figure 4—figure supplement 1A and B). The substrate sequences, whose N-termini are largely unresolved, make extensive contacts across the PP1 catalytic site, then extend in a sinuous trajectory across the composite Phactr1/PP1 surface, making numerous hydrophobic and ionic contacts (Figure 4C). Like the Phactr1/PP1 holoenzyme, the complexes contain a presumed phosphate anion at the catalytic site, and thus appear to represent putative enzyme/product complexes (see below). The structure of Phactr1/PP1 in both complexes is identical to that of the isolated Phactr1/PP1 complex (RMSD 0.31 Å over 313 Cα and 0.32 Å over 307 Cα, respectively).
 
-## Phactr1/PP1-substrate interactions are opposite in polarity to those of PP5
+### Phactr1/PP1-substrate interactions are opposite in polarity to those of PP5
 
 IRSp53 and spectrin make virtually identical contacts with the PP1 catalytic cleft, predominantly via their mainchains (Figure 4C; Figure 4—figure supplement 1C). In IRSp53 complex 2, K452IRSp53 (−3 relative to the phosphorylation site) makes a salt bridge with PP1 D220 carboxyl, in the acidic groove, while water-bridged hydrogen bonds link the mainchain carbonyl and the sidechain hydroxyl of S453IRSp53/S1029spectrin(−2) to PP1 Y272 and the phosphate, and to V250, respectively. The dephosphorylated S455IRSp53/S1031spectrin(0) hydroxyl interacts with PP1 R96, H125 and the phosphate, its mainchain amide and carbonyl contacting the phosphate and PP1 R221, respectively (Figure 4A–C, Figure 4—figure supplement 1A and B). The phosphate is inverted compared with the holoenzyme complex, losing its contact with PP1 R96 and H125, but making contact with the S455IRSp53/S1031spectrin hydroxyl (Figure 4D; Figure 4—figure supplement 1A–C). C-terminal to the dephosphorylated serine, T456IRSp53/R1032spectrin(+1) hydrogen bonds with PP1 Y134 via its mainchain amide, with R1032spectrin making two additional hydrogen bonds, with PP1 Y134 via its carbonyl, and the D220 carbonyl via its sidechain.
 
 The majority of the PP1 catalytic cleft residues that contact IRSp53 and spectrin are conserved among PPP family members, including PP5, which has been crystallised in complex with a phosphomimetic derivative of its substrate, Cdc37(S13E) (Oberoi et al., 2016). Strikingly, in that complex, the PP5 residues corresponding to PP1 R96, H125, Y134, R221, and Y272 make contacts with Cdc37(S13E) analogous to those seen in the Phactr1/PP1-substrate complexes, despite the fact that Cdc37(S13E) docks in the PP5 catalytic cleft in the opposite orientation to IRSp53 and spectrin (Figure 4—figure supplement 2; see Discussion).
 
-## Catalytic mechanism
+### Catalytic mechanism
 
 It is generally accepted that the phosphate seen in many PPP family protein structures binds the active site in a similar way to the substrate phosphate (Egloff et al., 1995; Griffith et al., 1995; Mueller et al., 1993; Swingle et al., 2004), and we therefore assume that the phosphate in our Phactr1/PP1 holoenzyme structure is positioned similarly to the phosphorylated S455IRSp53/S1031spectrin of the bound substrate (Figure 4D). Consistent with this idea, in the PP5/Cdc37(S13E) complex, the phosphomimetic glutamate sidechain carbonyl is virtually superposable on the phosphate in the Phactr1/PP1 complex (Figure 4—figure supplement 3). The Phactr1/PP1 complex also contains a bound water, W1, presumably activated by the metal ions and PP1 D64 and D92 (Figure 4D). W1 is oriented appropriately for in-line nucleophilic attack on the substrate phosphate: this would be facilitated by protonation of the phosphoserine oxygen by the PP1 catalytic dyad H125-D95, and would result in inversion of the phosphate (Figure 4E, Figure 4—figure supplement 3). The structures of our Phactr1/PP1-IRSp53/spectrin complexes are consistent with their representing the resulting enzyme-product complexes, stablised through the tethering of the substrate sequences to the holoenzyme. The structures thus provide direct evidence for the in-line nucleophilic hydrolysis mechanism for PPP family phosphatases, as outlined by the Barford and Ciszak groups (Egloff et al., 1995; Swingle et al., 2004).
 
-## Substrates make extensive contacts with the novel Phactr1/PP1 surface
+### Substrates make extensive contacts with the novel Phactr1/PP1 surface
 
 C-terminal to their interaction with the catalytic cleft, both IRSp53 and spectrin follow similar trajectories from residues +2 to +7 (Figure 4A–C, Figure 4—figure supplement 1C). The most striking feature of the complexes is the multiplicity of contacts made between the substrate and the novel composite Phactr1/PP1 surface created by extension of the PP1 hydrophobic groove, most of which are conserved between the two substrates (Figure 4C and F). In both structures, the residues +3 to +6 form a β-turn, allowing the hydrophobic doublet L459-L460IRSp53/L1035-L1036spectrin (+4/+5) to make intimate contact with the Phactr1/PP1 hydrophobic pocket, entirely burying the +5 leucine sidechain (Figure 4C and F). These interactions are stabilised by hydrogen bonds between the mainchain carbonyls of substrate residues +2, +4, +5 and Phactr1 R576 K550, and R554, and between the sidechain of the substrate acidic +6 residue (D461IRSp53/E1037spectrin) and Phactr1 H578 (Figure 4A–C); a hydrogen bond between the D461IRSp53 mainchain carbonyl and Phactr1 R579 is substituted by a hydrogen bond between the E1037spectrin carboxylate and Phactr1 R579 mainchain amide. At position +2 (G457IRSp53/E1033spectrin), the mainchain amide and carbonyl make hydrogen bonds with the mainchain carbonyls of PP1 R221 and Phactr1 R576 respectively; in addition, the E1033spectrin side chain spans the top of the amphipathic cavity to make an additional salt bridge with the Phactr1 R576 side chain (Figure 4B and C).
 
-## Phactr1/PP1 hydrophobic pocket interactions promote catalytic efficiency
+### Phactr1/PP1 hydrophobic pocket interactions promote catalytic efficiency
 
 To investigate the functional significance of the Phactr1/PP1-substrate interactions seen in the structures, we tested mutated IRSp53 peptide substrates in the in vitro dephosphorylation assay (Figure 5A). Alanine substitutions at positions S453 (−2), S454 (−1), and T456 (+1) decreased catalytic efficiency somewhat, apparently reflecting an increased KM. In contrast, alanine substitution of residues L459, L460, and D461 (+4 to +6) individually increased KM, but had variable effects on catalytic efficiency, with L459A and D461A increasing it, and L460A reducing it (see Discussion). Pairwise combination of substitutions at positions +4 through +6 suppressed reactivity even more, with the LL459/460AA mutant being essentially unreactive. Alanine substitution at K462 (+7) and D463 (+8) either decreased or increased KM with corresponding effects on catalytic efficiency, consistent with a preponderance of acidic residues at positions +6 to +8 (see Figure 3D). Upon expression in NIH3T3 cells, IRSp53(L460A) exhibited enhanced basal phosphorylation, and was less susceptible to CD-induced dephosphorylation than wildtype IRSp53, as assessed using the phospho-S455 antibody (Figure 5B). These data show that substrate interactions with the Phactr1/PP1 hydrophobic pocket are important for efficient dephosphorylation both in vitro and in vivo.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig5-v2.jpg)
+
+**Figure 5.:** (A) Phactr1/PP1 dephosphorylation of alanine substitution derivatives of IRSp53 S455 substrate 19mer phosphopeptides. KM values are highlighted: green,<40 µM; yellow, 40–80 µM; red,>80 µM. (B) Immunoblot analysis of total IRSp53 and IRSp53 phospho-S455 levels after expression of wild-type IRSp53 or IRSp53 L460A in NIH3T3 cells with 30' CD or LB treatment as indicated. (C,D) Overlay binding affinity assay of IRSp53 (C) and spectrin αII (D). Arrays contained the variants of the wild-type sequence, in which each amino acid is systematically changed to each other amino acid as indicated vertically, with wild-type sequence circled in green. Yellow line, position of the invariant unphosphorylated target serine.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** 19-mer unphosphorylated peptides from the indicated substrates were arrayed in triplicate as shown and tested for their ability to recruit GST-Phactr1(516-580)/PP1 from solution. Visualisation was with anti-GST antibody.
+
 The effects of substrate alanine mutations on KM suggests that they affect the affinity of Phactr1/PP1-substrate interactions. To investigate substrate binding directly, we used a peptide overlay assay in which unphosphorylated substrate peptides were immobilised on membranes, and tested for their ability to recruit recombinant GST-Phactr1(516-580)/PP1(7–300) complex from solution. Since these peptides lack phosphoserine, it is likely that their binding will predominantly be determined by interactions outside the catalytic site. Only peptides representing low KMsubstrates - IRSp53, spectrin αII, Tbc1d15 and Plekho2 - exhibited detectable binding under the conditions of the assay (Figure 5—figure supplement 1; see Figure 3C). To assess the contribution of individual residues to binding, we used IRSp53 and spectrin arrays in which each substrate residue was systematically changed to every other amino acid (Figure 5C and D). Tryptophan and cysteine substitutions at non-critical residues led to a general increase in binding affinity, and we therefore did not attempt to interpret these substitutions. Analysis of both arrays implicated residues −2 to +7 in substrate-binding affinity. Positions +4 and +5 displayed the strongest selectivity, for hydrophobic residues and leucine respectively: indeed, phenylalanine substitution of IRSp53 L459 (+4), increased binding affinity and catalytic efficiency (Figure 5A). In contrast, the sequence dependence at other positions was strongly context-dependent. In the vicinity of the target residue, IRSp53 binding was relatively unaffected by N-terminal variation, while T456 (+1) was suboptimal, with basic or hydrophobic residues being preferred; in contrast, spectrin binding was strongly selective at N-terminal positions, with a preference for basic residues at −1 and +1, and serine at −2. Similarly, IRSp53 exhibited a strong preference for acidic residues at position +6, perhaps reflecting the presence of the suboptimal neighbouring basic residue, K462 (+7), which was not the case for spectrin. Taken together with the kinetics data, these results show that interactions with the Phactr1/PP1 hydrophobic pocket are a critical determinant of Phactr1/PP1 substrate recognition.
 
-## Variable spacing between the dephosphorylation site and hydrophobic residues
+### Variable spacing between the dephosphorylation site and hydrophobic residues
 
 In IRSp53, the dephosphorylated residue S455 is flanked by three other potential phosphoacceptors, S453, S454, and T456. We considered the possibility that strong interactions with the Phactr1/PP1 hydrophobic pocket might also allow efficient dephosphorylation of these residues. That this might be the case was suggested by our structural analysis of a phosphomimetic fusion construct, in which the S455 is substituted by glutamate, at 1.39 Å resolution (Phactr1/PP1-IRSp53(S455E)). Strikingly, in this complex, the phospomimetic glutamate (S455E) does not replace phosphate at the catalytic site. Instead, IRSp53 T456 occupies the position corresponding to S455 in the wildtype complex, with a recruited phosphate positioned as in the wild-type complex, and the glutamate (S455E) in effect occupies position −1, pointing away from the catalytic site (Figure 6A). Nevertheless, the critical contacts between IRSp53(S455E) L459/L460 and the Phactr1/PP1 hydrophobic pocket are maintained, extending the intervening sequence G457-N458-L459 (Figure 6B). Consistent with this, both wildtype IRSp53 pT456 and IRSp53 E455/pT456 were effective substrates for Phactr1/PP1, exhibiting three- to fivefold higher KM, but only twofold lower catalytic efficiency, while IRSp53 pS453 and pS454 were very poor substrates, exhibiting 10–30 fold lower catalytic efficiency (Figure 6C). Thus, Phactr1/PP1 substrates can tolerate either three or four residues between the target residue and the hydrophobic residue that engages the Phactr1/PP1 hydrophobic pocket (see Discussion).
 
-## Interaction with Phactr1 confers substrate specificity on PP1
+![Figure 6.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig6-v2.jpg)
+
+**Figure 6.:** (A, B) Flexibility in target serine-hydrophobic pocket binding residue spacing, illustrated by (A) structure of the Phactr1/PP1-IRSp53(S455E) complex, compared with (B) the Phactr1/PP1-IRSp53 wildtype complex. (C) Phactr1/PP1 dephosphorylation of derivatives of IRSp53 peptides carrying phosphate at different locations, highlighted in yellow. Phosphatase activity data is shown below (data are mean ± SD, WT n = 15, others n = 2–6) (D) Schematic of the PP1-Phactr1 fusion protein PP1-Phactr1(526-580). (E) Top, phosphatase activity data for the indicated substrates and enzymes. Bottom, relative catalytic efficiencies for the different substrates (data are mean ± SD, n = from 1 to 15).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61509/elife-61509-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Gel filtration profiles of the Phactr1/PP1 (green line) and spinophilin/PP1 complexes (magenta line) used for the substrate-specificity analysis. (B) Structure of the PP1-Phactr1 fusion protein, solved at 1.78 Å resolution. Phactr1 residues 526–580, dark blue cartoon; PP1, white surface; unresolved SGSGS linker, dashes; trajectory of Phactr1 residues 516–580 in the Phactr1/PP1 complex, green cartoon. PP1-Phactr1 exhibited 0.25 Å RMSD over 2395 atoms compared with the equivalent region of the Phactr1/PP1 holoenzyme complex. (C) Top, phosphatase activity data for 19mer peptides containing glycogen phosphorylase pS15 (top) and GluR1 pS863 (bottom). Relative catalytic efficiencies are shown in Figure 6E (glycogen phosphorylase pS15) or at right (GluR1 pS863) (data are ±half range, n = 2).
+
+### Interaction with Phactr1 confers substrate specificity on PP1
 
 Since the composite hydrophobic surface of the Phactr1/PP1 holoenzyme plays an important role in substrate binding and catalytic efficiency, we next investigated to what extent interaction with Phactr1 confers substrate specificity on PP1. We were particularly interested to test whether the high KM and lower binding affinity of Phactr1/PP1 substrates such as afadin and cofilin might be associated with an increased promiscuity in their reactivity with different PP1 complexes. In addition to comparing Phactr1/PP1 with apo-PP1, we therefore also compared it with the spinophilin/PP1α complex (Figure 1—figure supplement 2A, Figure 6—figure supplement 1A; hereafter spinophilin/PP1) (Ragusa et al., 2010). As discussed above, spinophilin also interacts with PP1 through an extended RVxF-ϕϕ-R-W string, but remodels the hydrophobic groove differently, and does not change PP1 surface electrostatics (Figure 2—figure supplement 1; Ragusa et al., 2010). We also assessed the substrate specificity of a fusion protein in which the Phactr1 residues 526–580 were fused via a short SG linker to PP1 residue 304, solved at 1.78 Å resolution (Figure 6D). This fusion protein lacks the RVxF-PP1 interaction critical for formation of the authentic Phactr1/PP1 complex, but nevertheless generates a composite hydrophobic surface virtually identical to that seen in the Phactr1/PP1 holoenzyme (RMSD 0.25 Å over 2395 atoms; Figure 6—figure supplement 1B).
 
@@ -114,7 +504,7 @@ HeWe have elucidated the mechanism by which interaction of the RPEL protein Pha
 
 Phactr1 embraces PP1 using an extended RVxF-ϕϕ-R-W sequence string used by several other PIPs. We exploited the close approach of the Phactr1 sequences to the PP1 C-terminus to generate a PP1-Phactr1 fusion, which has a similar specificity to intact Phactr1/PP1 holoenzyme. This approach is likely to be applicable to PNUTS, PPP1R15A/B and spinophilin/neurabin, since these proteins all use an RVxF-ϕϕ-R-W string to bind PP1 in a strikingly similar way to Phactr1. The overlap of the RVxF motif with RPEL3 explains why G-actin competes with PP1 to bind Phactr1 and Phactr4, allowing the formation of the Phactr1/PP1 complex to be controlled by fluctuations in actin dynamics (Huet et al., 2013; Wiezlak et al., 2012). Although both G-actin and PP1 bind Phactr1 with nanomolar affinity, their binding sites are overlapping rather than superposable, which should facilitate their exchange.
 
-## Phactr1/PP1 substrates include many cytoskeletal proteins and regulators
+### Phactr1/PP1 substrates include many cytoskeletal proteins and regulators
 
 We used proteomic approaches coupled with Phactr1 overexpression and inactivation studies to show that Phactr1/PP1 dephosphorylates multiple target proteins involved in cytoskeletal structures or regulation. This supports previous studies showing that cytoskeletal phenotypes result from Phactr1 and Phactr4 mutations (Hamada et al., 2018; Kim et al., 2007; Zhang et al., 2012), and are induced by overexpression of Phactr1 and Phactr4 derivatives that constitutively associate with PP1 (Huet et al., 2013; Wiezlak et al., 2012). Inspection of the top-scoring Phactr1/PP1 substrates shows that acidic residues are over-represented C-terminal to the target phosphorylation site, and that hydrophobic residues are preferred at positions +4/+5.
 
@@ -122,7 +512,7 @@ Signal-regulated dephosphorylation of actin regulators by Phactr/PP1 complexes p
 
 Phactr1 is enriched at the post-synaptic density (PSD) (Allen et al., 2004), and is required for neuronal migration and arborisation (Hamada et al., 2018). We identified multiple Phactr1-dependent substrates in hippocampal neurons. Several of these, including IRSp53 and spectrin αII, are dephosphorylated during long-term potentiation (LTP) (Li et al., 2016), and IRSp53-null mice exhibit deficits in hippocampal learning and memory (Bobsin and Kreienkamp, 2016; Kang et al., 2016). Moreover, dephosphorylation of cofilin is implicated in early-stage dendritic spine remodelling, along with G-actin itself (Bosch et al., 2014; Lei et al., 2017). These data suggest that rho-actin signalling to Phactr1 and the resulting protein dephosphorylations may contribute to synaptic plasticity, and indeed in humans Phactr1 mutations cause the infantile seizure condition West syndrome (Hamada et al., 2018). There may be multiple targets for rho-actin signalling to RPEL proteins in this setting, as the RPEL protein ArhGAP12 (Diring et al., 2019) also influences dendritic spine morphology (Ba et al., 2016). Future work will focus on the functional significance of neuronal rho-actin signalling to Phactr/PP1 substrates.
 
-## Determinants of Phactr1/PP1 substrate recognition
+### Determinants of Phactr1/PP1 substrate recognition
 
 We used a PP1-substrate peptide fusion strategy to characterise Phactr1/PP1-substrate interactions. In our structures, the substrate sequences are not phosphorylated, but a phosphate is recruited to the catalytic cleft: they thus appear to represent enzyme/product complexes, presumably stabilised by virtue of the protein fusion. The inversion of the phosphate relative to its orientation in the Phactr1/PP1 holoenzyme provides persuasive support for the in-line nucleophilic attack model for PPP phosphatases proposed by others (Egloff et al., 1995; Swingle et al., 2004). Substrate interaction with the catalytic cleft, which does not change its conformation, is predominantly mediated by mainchain interactions with residues conserved among the PPP family. We were surprised to see that Phactr1/PP1 substrates dock with the catalytic cleft in the opposite orientation to that previously seen in a complex between PP5 and a phosphomimetic substrate derivative (Oberoi et al., 2016). However, the clear sequence bias observed in Phactr1/PP1 substrate sequences suggests that the orientation seen in our IRSp53 and spectrin αII complexes is strongly preferred.
 
@@ -132,7 +522,7 @@ An interesting consequence of the winding trajectory of the substrate following
 
 We propose that Phactr/PP1 substrates can be defined by a hydrophobic doublet at position +4/+5 or +3/+4 relative to the dephosphorylation site, with leucine preferred at the distal position, embedded within acidic sequences. The simple Phactr1/PP1 core recognition sequence, S/T-x(2-3)-ϕ-L, is reminiscent of those seen for protein kinases (Miller and Turk, 2018) and is perhaps the first identified for PP1. Mutation of positions +4 and/or +5 in candidate Phactr/PP1 substrates will be a useful way to generate authentic constitutively phosphorylated mutants for functional studies, as an alternative to ‘phosphomimetic’ glutamate substitution of the phosphorylated residue.
 
-## Comparison with other substrate-specificity PIPs
+### Comparison with other substrate-specificity PIPs
 
 The lack of structural information for PP1-substrate complexes has hitherto precluded demonstration of how PIP-dependent remodelling of the substrate-binding grooves of PP1 can influence its ability to recognise substrate. In spinophilin, which also binds PP1 via a RVxF-ϕϕ-R-W string, sequences C-terminal to the W-motif form a helix that remodels the PP1 hydrophobic groove differently (Ragusa et al., 2010). Spinophilin therefore does not detectably enhance PP1 activity towards Phactr/PP1 substrates, although the relative contributions of the spinophilin-remodelled PP1 surface, and the adjacent PDZ domain, to substrate specificity remain to be determined (Ragusa et al., 2010). In contrast, MYPT interacts with PP1 in a different way to Phactr1 and spinophilin, extending both the C-terminal and acidic grooves (Terrak et al., 2004), and it will be interesting to see how this facilitates substrate recognition. In all these complexes, PIP-PP1 interaction also acts indirectly to constrain substrate binding specificity, by occluding potential substrate-binding sites on the PP1 surface such as the RVxF binding pocket (Ragusa et al., 2010).
 
@@ -140,21 +530,21 @@ Our results underscore the importance of the composite Phactr1/PP1 surface in su
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 pET28 PP1(7–330) and pcDNA3.1 IRSp53 were gifts from Wolfgang Peti and Eunjoon Kim (KAIST, S.Korea) respectively. Other plasmids were: modified pTRIPZ (Diring et al., 2019); pEF Phactr1 and derivatives (Wiezlak et al., 2012); pGEX 6p2 (GE Healthcare); and pGRO7 (Takara). For protein expression, Phactr1(507-580) and Phactr1(516-580) sequences were expressed using pGEX-6P2. PP1-substrate chimeras were derivatives of pET28 PP1(7–330) in which PP1 sequences 7–304 were joined by a (Ser-Gly)9 linker to either IRSp53(449-465) (QQGKSSSTGNLLDKDDL) IRSp53(449-465)-S455E (QQGKSSETGNLLDKDDL), or spectrin αII (1025–1039) (DPAQSASRENLLEEQ). pET28 PP1-Phactr1(526-580), derived from pET28 PP1(7–330), encodes PP1(7–304)-SGSGS-Phactr1(526-580).
 
 Plasmid construction and mutagenesis used standard methods, the NEB NEBuilder HiFi DNA Assembly Cloning Kit, or the NEB Q5 Site-Directed Mutagenesis Kit. Primers are listed in Supplementary file 4.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Protein expression in BL21 (DE3) E. coli cells (Invitrogen) was with pGRO7 coexpression as described (Choy et al., 2014). Overnight pre-cultures (400 ml) were grown in LB medium supplemented 1 mM MnCl2 and used to inoculate a 100L fermenter. After growth to OD600 of ~0.5, 2 g/L of arabinose was added to induce GroEL/GroES expression. At OD600 ~1, the temperature was lowered to 10°C and protein expression induced with 0.1 mM IPTG for ~18 hr. Cells were harvested, re-suspended in fresh LB medium/1 mM MnCl2/200 μg/ml chloramphenicol and agitated for 2 hr at 10°C. Harvested cells were resuspended in lysis buffer (50 mM Tris-HCl, pH 8.5, 5 mM imidazole, 700 mM NaCl, 1 mM MnCl2, 0.1% v/v TX-100, 0.5 mM TCEP, 0.5 mM AEBSF, 15 μg/ml benzamidine and complete EDTA-free protease inhibitor tablets), lysed by French press, clarified, and stored at −80°C. Phactr1/PP1 complexes were batch-adsorbed onto glutathione-sepharose affinity matrix, and recovered by cleavage with 3C protease at 4°C overnight in 50 mM Tris-HCl, pH 8.5, 500 mM NaCl, 0.5 mM TCEP. Eluted complex was further purified via adsorption on Ni-NTA IMAC, and elution with 50 mM Tris pH 8.0, 200 mM Imidazole, 700 mM NaCl and 1 mM MnCl2 at 4°C. Finally, proteins were purified using size exclusion chromatography on a Superdex 200 26/60 column equilibrated in complex buffer (20 mM Tris-HCl pH 8.5, 0.25 M NaCl and 0.4 mM TCEP).
 
-## Bio-layer interferometry
+### Bio-layer interferometry
 
 Bio-layer interferometry (BLI) was as described (Bertran et al., 2019), using the Octet Red 96 (ForteBio). 50 μg/ml His-tagged PP1α was immobilised on Nickel-coated biosensor (Ni-NTA, ForteBio), and the loaded biosensors then incubated with 0.1–10 μM Phactr1 peptides in Octet buffer (50 mM Tris pH 7.5, 500 mM NaCl, 0.5 mM TCEP, 0.1% Tween 20, 500 mg BSA/100 ml). Curve fitting, steady state analysis, and calculation of kinetic parameters were done using Octet software version 7.1 (ForteBio). For peptides used, see Supplementary file 4.
 
-## Crystallisation and structure determination
+### Crystallisation and structure determination
 
 Phactr1/PP1 in complex buffer was concentrated to 10 mg/ml and crystallised at 20°C using sitting-drop vapour diffusion. Sitting drops of 1 μl consisted of a 1:1 (vol:vol) mixture of protein and well solution. Well solutions were as follows. Phactr(507-580)/PP1α(7-300): 7.5% PEG 3350, 0.2 M MgSO4; Phactr1(516-580)/PP1α(7-300): 1M LiCl, 0.1 M tri-sodium citrate pH 5.25, 10% PEG 6000; Phactr1/PP1-IRSp53(S455E): 20% PEG 3350, 0.2 M NaBr; PP1-Phactr1(526-580), 20% PEG 3350, 0.2M Potassium Citrate. Crystals appeared within 24–48 hr and reached their maximum size after 4 to 7 days, apart from Phactr(507-580)/PP1α(7-300), for which the best crystals appeared after 3–7 weeks, reaching their maximum size after 8 weeks. For Phactr1/PP1-IRSp53 and Phactr1/PP1-spectrin α II complexes, crystallisation was achieved by microseed matrix screening (D'Arcy et al., 2014) using Phactr1/PP1-IRSp53(S455E) crystals. Phactr1/PP1-IRSp53 crystallised in 20% PEG 3350, 0.2 M KSCN,0.1 M BIS-Tris propane pH 8.5; Phactr1/PP1-spectrin αII crystallised in 20% PEG 3350, 0.2 M NaI, 0.1 M BIS-Tris propane pH 8.5. Crystals appeared within a day and reached maximum size within 4 to 5 days.
 
@@ -162,27 +552,31 @@ All crystals were cryoprotected in well solution supplemented with 15% glycerol 
 
 Atomic coordinates and crystallographic structure factors have been deposited in the Protein Data Bank under accession codes PDB 6ZEE, Phactr(507-580)/PP1α(7-300); PDB 6ZEF, Phactr1(516-580)/PP1α(7-300); PDB 6ZEG, Phactr1/PP1-IRSp53; PDB 6ZEH, Phactr1/PP1-spectrin; PDB 6ZEI, Phactr1/PP1-IRSp53(S455E); PDB 6ZEJ, PP1(7–304)-SGSGS-Phactr1(526-580).
 
-## Phosphatase assays
+### Phosphatase assays
 
-Phosphatase assays (50 µl) were performed in 96-well plates. Peptides (40 µl) were serially diluted 1.5-fold from 1 mM in complex buffer (20 mM Tris-HCl pH 8.5, 250 mM NaCl, 0.4 mM TCEP). Phactr1/PP1 (0.2–3U, 10 µl) was added and after 15 min at room temperature, reactions were quenched by addition of 100 µl of Biomol Green reagent (Enzo Life Sciences) for 30 min, Absorbances at 620 nm were measured using the SpectraMax Plus 384 microplate reader and converted into phosphate concentrations using standard curves. Rate constants were estimated in GraphPad Prizm 8 by fitting product concentration readouts to modified Michaelis-Menten equation:Pt*E=kcatKM*C(CKM+1)
+Phosphatase assays (50 µl) were performed in 96-well plates. Peptides (40 µl) were serially diluted 1.5-fold from 1 mM in complex buffer (20 mM Tris-HCl pH 8.5, 250 mM NaCl, 0.4 mM TCEP). Phactr1/PP1 (0.2–3U, 10 µl) was added and after 15 min at room temperature, reactions were quenched by addition of 100 µl of Biomol Green reagent (Enzo Life Sciences) for 30 min, Absorbances at 620 nm were measured using the SpectraMax Plus 384 microplate reader and converted into phosphate concentrations using standard curves. Rate constants were estimated in GraphPad Prizm 8 by fitting product concentration readouts to modified Michaelis-Menten equation:
+
+$$
+\frac{P}{t*E}=\frac{k_{cat}}{K_{M}}*\frac{C}{(\frac{C}{K_{M}}+1)}
+$$
 
 (P, product released at time t; E, Phactr1/PP1 concentration; kcat/KM, catalytic efficiency; C, initial substrate concentration; KM, Michaelis constant).
 
 The activity of the Phactr1/PP1 preparation was established on the day of each experiment, using 125 µM IRSp53(447-465) pS455 peptide as standard, with Phactr1/PP1 at various concentrations. One unit of phosphatase activity was defined as the concentration of Phactr1/PP1 complex that generates 15 µM of phosphate in 15 min. To normalise the activity of different phosphatases, a para-nitrophenylphosphate (pNPP)-based assay was used. 10 µl phosphatase (200 nM) was added to 40 µl pNPP (2-fold serial dilution from 100 mM), incubated at room temperature for 15 min, then quenched with 25 µl 3 M NaOH. Para-nitrophenol product was measured by absorbance at 405 nm. Full assay data can be found in Supplementary file 2.
 
-## Peptides and peptide array binding assays
+### Peptides and peptide array binding assays
 
 Peptides were synthesised by the Francis Crick Institute Peptide Chemistry Science Technology Platform using standard techniques. Peptide arrays (5–10 nmol/spot) were synthesised on a derivatised cellulose membrane Amino-PEG500-UC540 using Intavis ResPep SLi automated synthesiser (Intavis Bioanalytical Instruments).
 
 Dry membranes were blocked for 1 hr in 5% milk in Tris-buffered saline supplemented with 0.1% Tween-20 (TBST) with agitation, rinsed with TBST, and incubated overnight at 4°C with 10 µg/ml GST-Phactr1(516-580)/PP1(7–300) complex in TBST. After three 10-min washes with TBST, membranes were incubated with 1:5000 HRP-conjugated anti-GST in 5% milk/TBST at room temperature for 1 hr, washed three times with TBST, and binding revealed using SuperSignal West Pico Plus reagent (ThermoFisher) as chemiluminescent substrate. Images were taken using Amersham Imager 600 (GE).
 
-## Cells, transfection and RNA analysis
+### Cells, transfection and RNA analysis
 
 Mouse NIH3T3 fibroblasts (mycoplasma-free) were maintained in DMEM (Gibco) with 10% fetal calf serum (FCS) and penicillin-streptomycin at 37°C and 10% CO2. Cells were transfected using Lipofectamine 2000 (Invitrogen) (150,000 cells per well, six-well dish). For SILAC proteomics, NIH3T3 cell line pools were generated stably carrying doxycyline-inducible pTRIPZ-Phactr1 derivatives, using puromycin selection. Phactr1 expression was induced by doxycycline addition as indicated in the figure legends. Cells were maintained overnight in DMEM/0.3% FCS, and then stimulated with 15% FCS for 1 hr or cytochalasin D (CD) or latrunculin B (LatB) for 30 min. Primary rat hippocampal neurons (DIV 14) were cultured as described (Baltussen et al., 2018) and transfected using Lipofectamine 2000.
 
 Total RNA was purified using the GenElute mammalian total RNA kit (Sigma) and cDNA synthesised using the Transcriptor First Strand cDNA Synthesis kit (Roche) with random hexamer primers. Real‐time‐qPCR was performed using the 7500 Fast Real-Time PCR System (Thermo Fisher Scientific) with the SYBR green reaction mix (Life Technologies). Primers are listed in Supplementary file 4. The relative abundance of target cDNA was normalised against rps16 cDNA abundance in each sample.
 
-## Immunofluorescence and immunoblotting
+### Immunofluorescence and immunoblotting
 
 Immunofluorescence microscopy in fibroblasts was performed as described (Vartiainen et al., 2007; Wiezlak et al., 2012). F-actin was detected with FITC-phalloidin (Invitrogen) and nuclei were visualised using DAPI. For immunofluorescence microscopy primary rat neurons were transfected with expression plasmids and fixed 24 hr later in 4% paraformaldehyde/4% sucrose in PBS before staining with Flag and GFP antibodies. Images were taken with Leica SP5 confocal microscope with 63x (NA 1.4) oil objective. GFP was used to monitor the shape of dendritic spines, and Flag for transfected cells. An image stack with 0.5 μm z-intervals was obtained to capture a part dendritic arbour at high magnification. In each experiment, at least 10 cells per mutant were imaged and the morphology of dendritic spines was quantified blindly. Statistical analysis was performed in GraphPad Prizm eight using Welch’s t-test function.
 
@@ -190,7 +584,7 @@ SDS-PAGE analysis of cell lysates and immunoblotting was performed using standar
 
 Primary antibodies used were anti-Flag (Sigma, F7425), anti-IRSp53 (Santa Cruz, sc-50011 and Abcam, ab15697), anti-afadin (Santa Cruz, sc-74433), anti-GST (VWR, RPN1236). Secondary antibodies labelled with IRDye 800CW and IRDye 680LT were from LICOR. Rabbit anti-IRSp53 pS455, anti-afadin pS1275 and anti-spectrin pS1031 antibodies were custom-made (Covalab); for antigen sequences used see Supplementary file 4.
 
-## SILAC phosphoproteomics in NIH3T3 cells
+### SILAC phosphoproteomics in NIH3T3 cells
 
 Cells were maintained for at least six passages in ‘heavy’ (R10K8) or ‘light’ (R0K0) DMEM medium supplemented with 10% SILAC dialysed fetal calf serum (3 kDa cutoff). Phactr1 expression was induced by doxycycline addition to 1 μg/ml for 5 hr. Cells were harvested processed for mass spectrometry essentially as described (Pattison et al., 2016; Touati et al., 2018) with minor modifications. 1 mg each of ‘light’ and ‘heavy’ labelled lysates were mixed and dried. Protease digestion and phosphopeptide enrichment was done as described with minor modifications (Pattison et al., 2016; Touati et al., 2018). Peptides were dissolved in 35 μl of 1% TFA, with sonication, and fractionated on a 50 cm, 75 μm I.D. Pepmap column with elution directly into the LTQ-Orbitrap Velos. Xcalibur software was used to setup data-dependent acquisition in top10 mode. Raw mass spectrometric data were processed in MaxQuant (version 1.3.0.5) for peptide and protein identification; database search was with the Andromeda search engine against the Mus musculus canonical sequences from UniProtKB. Fixed modifications were set as Carbamidomethyl (C) and variable modifications set as Oxidation (M), Acetyl (Protein N-term) and Phospho (STY). The estimated false discovery rate was set to 1% at the peptide, protein, and site levels. A maximum of two missed cleavages were allowed. Phosphorylation site tables were imported into Perseus (v1.4.0.2) for analysis. Contaminants and reverse peptides were cleaned up from the Phosphosites (STY).
 
@@ -198,7 +592,7 @@ Dephosphorylation score was defined as log2(dephosphorylation score)=0.25*[log2(
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository with the dataset identifier PXD019977.
 
-## TMT phosphoproteomics in neurons
+### TMT phosphoproteomics in neurons
 
 The Phactr1-null (tm1d) allele was derived from the CSD79794 Phactr1 Tm1a allele (KOMP; https://www.komp.org/geneinfo.php?geneid=74176) by sequential action of Flp and Cre. Heterozygous animals were crossed. Hippocampal and cortical tissue was extracted from E16.5 embryos, and cultured in 12-well plate dishes (500,000 cells per well) as described (Baltussen et al., 2018) before genotyping. Two biological replicates were processed for wildtype or Phactr1-null neurons. On DIV10, neurons were treated for 30 min with CD (10 μM), LB (1 μM) or vehicle (DMSO). Preparation of lysates, protease digestion and phosphopeptide enrichment was done as described with minor modifications (Eder et al., 2020). Phosphopeptides were eluted directly into the Orbitrap Fusion Lumos, operated with Xcalibur software, with measurement in MS2 and MS3 modes. The instrument was set up in data-dependent acquisition mode, with top 10 most abundant peptides selected for MS/MS by HCD fragmentation.
 

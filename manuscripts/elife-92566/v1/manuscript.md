@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/008xxew50 Amsterdam University Medical Center, Vrije Universiteit Amsterdam Amsterdam Netherlands
-2. https://ror.org/0286p1c86 Imaging and Biomarkers program, Cancer Center Amsterdam Amsterdam Netherlands
+1. Amsterdam University Medical Center, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+2. Imaging and Biomarkers program, Cancer Center Amsterdam Amsterdam Netherlands ([ROR:0286p1c86](https://ror.org/0286p1c86))
 
 † Corresponding author
 

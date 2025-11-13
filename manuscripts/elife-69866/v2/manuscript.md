@@ -24,7 +24,7 @@
 
 ## Abstract
 
-The US Food and Drug Administration authorized COVID-19 convalescent plasma (CCP) therapy for hospitalized COVID-19 patients via the Expanded Access Program (EAP) and the Emergency Use Authorization (EUA), leading to use in about 500,000 patients during the first year of the pandemic for the USA. We tracked the number of CCP units dispensed to hospitals by blood banking organizations and correlated that usage with hospital admission and mortality data. CCP usage per admission peaked in Fall 2020, with more than 40% of inpatients estimated to have received CCP between late September and early November 2020. However, after randomized controlled trials failed to show a reduction in mortality, CCP usage per admission declined steadily to a nadir of less than 10% in March 2021. We found a strong inverse correlation (r = −0.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission, and this finding was robust to examination of deaths taking place 1, 2, or 3 weeks after admission. Changes in the number of hospital admissions, SARS-CoV-2 variants, and age of patients could not explain these findings. The retreat from CCP usage might have resulted in as many as 29,000 excess deaths from mid-November 2020 to February 2021. A strong inverse correlation between CCP use and mortality per admission in the USA provides population-level evidence consistent with the notion that CCP reduces mortality in COVID-19 and suggests that the recent decline in usage could have resulted in excess deaths. There was no specific funding for this study. AC was supported in part by RO1 HL059842 and R01 AI1520789; MJJ was supported in part by 5R35HL139854. This project has been funded in whole or in part with Federal funds from the Department of Health and Human Services; Office of the Assistant Secretary for Preparedness and Response; Biomedical Advanced Research and Development Authority under Contract No. 75A50120C00096.
+Background:The US Food and Drug Administration authorized COVID-19 convalescent plasma (CCP) therapy for hospitalized COVID-19 patients via the Expanded Access Program (EAP) and the Emergency Use Authorization (EUA), leading to use in about 500,000 patients during the first year of the pandemic for the USA.Methods:We tracked the number of CCP units dispensed to hospitals by blood banking organizations and correlated that usage with hospital admission and mortality data.Results:CCP usage per admission peaked in Fall 2020, with more than 40% of inpatients estimated to have received CCP between late September and early November 2020. However, after randomized controlled trials failed to show a reduction in mortality, CCP usage per admission declined steadily to a nadir of less than 10% in March 2021. We found a strong inverse correlation (r = −0.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission, and this finding was robust to examination of deaths taking place 1, 2, or 3 weeks after admission. Changes in the number of hospital admissions, SARS-CoV-2 variants, and age of patients could not explain these findings. The retreat from CCP usage might have resulted in as many as 29,000 excess deaths from mid-November 2020 to February 2021.Conclusions:A strong inverse correlation between CCP use and mortality per admission in the USA provides population-level evidence consistent with the notion that CCP reduces mortality in COVID-19 and suggests that the recent decline in usage could have resulted in excess deaths.Funding:There was no specific funding for this study. AC was supported in part by RO1 HL059842 and R01 AI1520789; MJJ was supported in part by 5R35HL139854. This project has been funded in whole or in part with Federal funds from the Department of Health and Human Services; Office of the Assistant Secretary for Preparedness and Response; Biomedical Advanced Research and Development Authority under Contract No. 75A50120C00096.
 
 ## Introduction
 
@@ -36,15 +36,15 @@ On March 13, 2021, the New York Times reported that COVID-19 mortality remained 
 
 ## Materials and methods
 
-## Convalescent plasma usage
+### Convalescent plasma usage
 
 CCP usage was inferred from the distribution of plasma units to hospitals in the USA from data obtained from Blood Centers of America, Inc (BCA, West Warwick, RI). Data fields included collections, distributions to hospitals, distributions to research, or other use. This file consolidated all the reports from regional blood bank reports and provided a total of collected units and units distributed to hospitals. The data file did not have information on whether a unit was actually transfused but BCA can infer usage from hospital re-ordering information and there has been a strong correlation between the total number of units shipped to a hospital and the units transfused by that hospital. Hence, the CCP units dispensed to hospitals represent a reasonable proxy value for the total number of units being transfused to patients. To validate this assumption, we compared the numbers of plasma units dispensed to those used by the EAP. There was a powerful and significant correlation between the weekly counts of units distributed in the USA and those used to treat patients as part of the EAP between April 6 and August 23, 2020 (Spearman’s rho = 0.953, p<0.001) (Figure 1—figure supplement 1). Units transfused in the EAP were reported by providers as part of the official case report forms and each transfusion could comprise one or two units. During both the EAP and EUA epochs of CCP collection and distribution included in this analysis, reimbursement for units collected was provided by the US government. Additionally, most blood products used in the USA including CCP are collected and distributed by a network of regional or national blood banking organizations. In this context, the vast majority (>95%) of all convalescent plasma (CP) administered was likely captured in this analysis (Senefeld et al., 2021).
 
-## Admission and mortality data
+### Admission and mortality data
 
 For population-level data on COVID-19 admissions and mortality, we relied on publicly available databases. Specifically, we used information from the Our World in Data (OWID) (https://ourworldindata.org/coronavirus) database. Data used for this analysis were downloaded on March 18, 2021, and are available as Supplementary file 3. We confirmed these findings using Centers for Disease Control (CDC, Atlanta, GA) data on admissions and deaths https://covid.cdc.gov/covid-data-tracker/#new-hospital-admissions and https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendsdeaths. CDC data were downloaded on March 31, 2021, and are available together with other data used in this analysis at: https://github.com/eapPlasma/plasma_hesitancy/tree/main/rawdata.
 
-## Statistical analysis
+### Statistical analysis
 
 Preliminary descriptive analyses were used to explore the associations of the ratio of number of CCP units dispersed to the number of hospitalizations (CCP utilization ratio) with the ratio of national deaths to national admissions, the latter being a reasonable proxy for the case fatality rate (CFR). No individual-level data were available to link the mortality events directly to the individuals hospitalized to permit a calculation of the true CFR. To address this limitation, the mortality counts reported by the CDC were shifted to better align the deaths with the admitted patients. Since the overwhelming majority of COVID-19 deaths occur in hospitals (Chua et al., 2021; Chuzi et al., 2020), since CCP is only authorized for use in hospitals, and since death generally occurs a few days to weeks after admission, mortality was adjusted for the time lag between admission and death. The median time between admission and death has been reported as 9 days in the USA (Horwitz et al., 2021) and 6.7 days in Belgium (Faes et al., 2020). For the analysis, which was based on weekly aggregated data, a 2-week shift was selected to align the mortality with the median and upper quartile estimates in these reports. The Pearson’s correlation coefficient was used to describe the relationship of the CCP utilization ratio with CFR. To further define this relationship, a linear statistical model was used to regress the utilization ratio onto CFR. This statistical model was weighted by the number of hospitalizations per week. The fit of the model was examined using standard residual-based diagnostic plots and the fit was deemed acceptable using only a linear fit of the CCP utilization ratio.
 
@@ -54,25 +54,98 @@ Statistical analyses were conducted using R version 3.6.2 (R Development Core T
 
 ## Results
 
-## CP use
+### CP use
 
 The FDA first allowed compassionate use of CCP on a case-by-case basis in late March 2020, but very quickly initiated the EAP in early April 2020, which was followed by EUA on August 23, 2020, broadening its use. Distribution of CCP to hospitals rose to 25,000–30,000 weekly units by the December 2020 to January 2021 time period, but this rise in plasma distribution largely reflected the great increase in hospital admissions for COVID in those months (Figure 1). When CCP distributions are analyzed as a function of the number of new hospital admissions per week, peak utilization per capita occurred much earlier, in early October 2020 and declined sharply in the following months (Figure 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig1-v2.jpg)
+
+**Figure 1.:** The vertical black line marks August 23, 2020, when the US Food and Drug Administration (FDA) announced that Emergency Use Authorization for CCP in the USA. The vertical gray line marks April 4, 2020, as the start of the Emergency Access Program.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Shown is the progressive increase in the number of convalescent plasma units distributed in the USA and convalescent plasma units used in the EAP. Data between April 6 and August 23, 2020, are pooled in weekly intervals and represented as filled circles. The Pearson’s correlation coefficient was used to assess correlation (r = 0.946, p<0.001) and a LOESS smoother with a 95% confidence interval (CI) and a reference line were overlayed. Points below the reference line represent weeks where more convalescent plasma was distributed than used within the EAP. Conversely, points above the reference line are indicative of more convalescent plasma being used in the EAP than distributed.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig2-v2.jpg)
 
-**Figure 2.:** To account for time between admission to death, deaths from 2 weeks after admission are used to calculate mortality. The vertical line marks August 23, 2020, when the US Food and Drug Administration (FDA) announced that Emergency Use Authorization for CCP in the USA.Figure 2—source data 1.Figure 2.
+**Figure 2.:** To account for time between admission to death, deaths from 2 weeks after admission are used to calculate mortality. The vertical line marks August 23, 2020, when the US Food and Drug Administration (FDA) announced that Emergency Use Authorization for CCP in the USA.
 
-## Correlation between CCP and mortality
+### Correlation between CCP and mortality
 
 To explore whether there was a relationship between CCP distribution and mortality, we first compared the doses per patient versus reported COVID-19 deaths per hospital admission from publicly available databases (Figure 2). The comparison of curves showed a trough in deaths per admission coinciding with the peak of CCP usage per admission. A plot of mortality versus doses per hospitalized patient using mortality per admission data from the OWID database revealed a strong negative correlation (Pearson’s correlation coefficient of −0.52 with p=0.002) (Figure 3). Similar results were obtained with the CDC database. To account for lags in the reporting of death that vary by state, we also investigated whether this correlation was maintained while adding weeks to the time between admission and death (Figure 3—figure supplement 1). Additionally, if plasma use is divided into quintiles from lowest using weeks to highest using weeks, a graded relationship between use of plasma and mortality is apparent (Figure 3—figure supplement 2). To investigate whether a change in the age demographics of the hospitalized population could account for the observed inverse correlation, we compared the shifted mortality is compared to the percent of hospitalized patients 65+ each week as reported by the CDC and found no significant correlation between these two variables, suggesting changes in mortality are not explainable by an increase in hospitalized high-risk patients (Figure 3—figure supplement 3).
 
-## Estimates of excess deaths
+![Figure 3.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-v2.jpg)
+
+**Figure 3.:** Correlation analysis yields a Pearson’s correlation coefficient of −0.518 (p=0.0024). The black line represents a linear model regression with an R squared of 0.268.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** y-Axis values reflect the parameter of each gray box throughout the shifted weeks. Correlations peak at 2–3 weeks shifted, suggesting the lag time between admission and reported death is roughly 2 weeks.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Regression analysis for the quintiles revealed R = 0.5 and p=0.03.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The shifted mortality is compared to the percent of hospitalized patients 65+ each week as reported by the Centers for Disease Control (CDC). There is no significant correlation between the two variables, suggesting changes in mortality are not explainable by an increase in hospitalized high-risk patients.
+
+### Estimates of excess deaths
 
 The linear model using the CCP utilization ratio to predict the CFR fits the data well in that this model explained 25% (R2 = 0.254) of the variance of CFR using only the CCP utilization ratio. The model estimated that the CFR decreased by 1.8 percentage points for every 10 percentage point increase in the rate of utilization of CCP (p=0.004). The linear regression analysis yielded a mortality in patients not receiving CCP of 25.2% as the y-intercept. A comparison of this number with that from US studies shows reasonable agreement between with the average mortality of 23.5% in patients not receiving CCP (Supplementary file 1). This percentage also closely matches the 24% mortality for COVID-19 patients for the large RECOVERY trial in the UK (Horby et al., 2021) and the 30% mortality of patients receiving late CCP in analysis from the EAP (Joyner et al., 2021). An extrapolation of the linear model to the situation where every patient is treated with CCP yields a mortality of 7.6%, which is lower than the average mortality in US studies, but still within the range reported (Supplementary file 1). However, this extrapolation to maximal use is much less reliable given the absence of points in the y-axis region above an CCP utilization ratio of 0.6 and uncertainty as to whether the relationship is linear in those ranges. Hence, we caution the reader about making any strong inference from this estimate while noting that it is close to the 6.2% mortality reported for COVID-19 patients treated with high titer CCP very early upon hospitalization (Salazar et al., 2021). Nevertheless, it is possible to use these efficacy numbers to estimate what the effect on deaths would have been had the USA continued to use CCP at the height of its usage in early Fall 2020, when more than 40% of all patients received plasma therapy.
 
 With this model as a framework for estimating the excess number of deaths, the results of three scenarios were obtained (Figure 4). The total observed deaths over the study period was 356,534. Had the rate of CCP utilization observed during August through October 2002 carried over for the remaining months, the expected number of deaths was 327,516 (95% CI: 293,811–361,221), which might result in 29,018 (95% CI: 3535–54,501) fewer deaths than observed. This excess death, in comparison, was small relative to the estimate that results from assuming plasma utilization was as high as it was after the EUA was issued. Had 50% utilization of plasma been continued, 62,383 (95% CI: 7599–117,166) fewer deaths may have been observed. Under the most extreme scenario comparing no plasma use to the highest observed use, a difference of 158,409 (95% CI: 19,296–297,523) deaths is estimated. We repeated this analysis independently for each of the databases used (CDC versus OWID) with concordant results (Figure 4; Figure 4—figure supplement 1; Supplementary file 2; Supplementary file 3). The models also estimate that between 94,436 (Figure 4—figure supplement 1; Supplementary file 3) and 95,026 (Figure 4) excess deaths might have occurred in the USA had CP never been deployed using the OWID and CDC databases, respectively.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig4-v2.jpg)
+
+**Figure 4.:** Panel A presents the longitudinal observed (dashed line) and modeled number of deaths under three scenarios for CCP over the study period (August 3, 2020 to February 22, 2021) that included 356,534 deaths in 1,793,502 hospitalized patients. Over the entire study period, the CCP utilization ratio was 29.1%. In the scenario labeled maintenance (Maint.) of plasma, the CCP utilization ratio was set to 39.5%. With the no plasma and 50% plasma usage scenarios, the CCP utilization ratio was set at 0% and 50%, respectively. Panel B provides the pairwise comparisons of these scenarios to estimate the difference in expected number of deaths among the scenarios for the entire hospitalized patients (upper right triangle) and re-indexed to events per 1000 patients (lower left triangle). The rows represent the comparator or reference scenario, columns indicate the altered CCP use scenario. For example, the cell that intersects the observed deaths and the maintenance of plasma column shows that 29,018 fewer deaths would result had plasma use remained at the 39.5% level.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Maintained plasma transfusion rate from October to November throughout period, scenario 2 (blue): 50% transfusion rate throughout period, and scenario 3 (red): 0% transfusion rate throughout period. Black dashed line represents observed cumulative deaths per OWID reporting.
+
 As an alternative method to estimating the excess deaths, which alleviates the need for a model, the data were summarized into two time periods characterized by high and low utilization of CCP (Table 1). In each of the 7 weeks from September 21 to November 8, 2020, the estimated proportion of inpatients transfused with CP exceeded 40% (average 42.6%). We refer to this period as ‘high utilization’. In the period immediately following – from November 9, 2021, to the week starting March 22, 2021 – utilization was lower; transfusion rates declined steadily, averaging 27.4% and we refer to this as the ‘low utilization’ period. The 2-week lagged mortality ratio for 257,424 patients hospitalized in the high utilization period was 18.16% and rose to 20.08% for the 1,344,463 patients admitted in the 18-week period of low utilization. Table 1 shows that if the mortality rate in the low utilizing 18 weeks had been the same as during the high transfusion period, 25,871 fewer deaths might have taken place.
+
+**Table 1.**
+ Estimated number of excess deaths due to transfusion hesitancy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time period</th>
+      <th>Transfusion rate</th>
+      <th>Number of admissions</th>
+      <th>Deaths</th>
+      <th>Mortality rate</th>
+      <th>Expected deaths if mortality had remained at 18.16%</th>
+      <th>Excess deaths in the low transfusion period</th>
+      <th>Excess deaths per 1000 admissions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>High utilization ( September 21, 2021 to November 8, 2021)</td>
+      <td>42.59%</td>
+      <td>257,424</td>
+      <td>46,747</td>
+      <td>18.16%</td>
+      <td>46,747</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Low Utilization (November 9, 2021 to March 22, 2021)</td>
+      <td>27.43%</td>
+      <td>1,344,463</td>
+      <td>270,019</td>
+      <td>20.08%</td>
+      <td>244,148</td>
+      <td>25,871</td>
+      <td>19.2</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 

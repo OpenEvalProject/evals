@@ -32,7 +32,7 @@ Compared with traditional two-dimensional cell culture, spheroids closely mimic 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/73020/elife-73020-fig1-v2.jpg)
 
-**Figure 1.:** (a–f) Growth of WM983b and WM793b spheroids over three weeks, initiated using approximately 2500, 5000 and 10,000 cells. The solid curve represents average outer radius and the coloured region corresponds to a 95% prediction interval (mean ± 1.96 std). (c–f) Size distribution of WM983b spheroids at days 10, 14, 18, and 21 for each initial seeding density. (g–h) Dynamics of the Greenspan, 1972 model, which describes three phases of growth and the development of a stable spheroid structure under assumptions of nutrient and waste diffusion. We denote by  the spheroid radius, R the relative radius of the arrested region and ϕ the relative radius of the necrotic core. (ηi) Optical sections showing three phases of growth in the experimental data (WM983b spheroids initiated with 2500 cells at days 3, 7, and 14). Colouring indicates cell nuclei positive for mKO2 (magenta), which indicates cells in gap 1; cell nuclei positive for mAG (green), which indicates cells in gap 2; and cell nuclei stained with DRAQ7 (blue), which indicates necrosis.
+**Figure 1.:** (a–f) Growth of WM983b and WM793b spheroids over three weeks, initiated using approximately 2500, 5000 and 10,000 cells. The solid curve represents average outer radius and the coloured region corresponds to a 95% prediction interval (mean ± 1.96 std). (c–f) Size distribution of WM983b spheroids at days 10, 14, 18, and 21 for each initial seeding density. (g–h) Dynamics of the Greenspan, 1972 model, which describes three phases of growth and the development of a stable spheroid structure under assumptions of nutrient and waste diffusion. We denote by $R$ the spheroid radius, $ϕ$ the relative radius of the arrested region and $η$ the relative radius of the necrotic core. (i) Optical sections showing three phases of growth in the experimental data (WM983b spheroids initiated with 2500 cells at days 3, 7, and 14). Colouring indicates cell nuclei positive for mKO2 (magenta), which indicates cells in gap 1; cell nuclei positive for mAG (green), which indicates cells in gap 2; and cell nuclei stained with DRAQ7 (blue), which indicates necrosis.
 
 We study spheroids grown at three seeding densities from human melanoma cells (Herlyn et al., 1985; Herlyn, 1990) transduced with the fluorescent ubiquitination cell cycle indicator (FUCCI) (Sakaue-Sawano et al., 2008; Haass et al., 2014; Kienzle et al., 2017; Spoerri et al., 2021). FUCCI technology discriminates between cells in different stages of the cell cycle, namely gap 1 (before synthesis) and gap 2 (after DNA replication), allowing us to identify regions containing actively cycling cells, and regions where the majority of the cells are viable but in cell cycle arrest. We grow spheroids for up to 24 days to allow sufficient time to observe growth inhibition. We summarise experimental images using three measurements of spheroid structure: (1) the overall size of each spheroid; (2) the size of the inhibited region (which we define as the region where the majority of cells are in gap 1); and, (3) the size of the necrotic core.
 
@@ -46,137 +46,288 @@ We are motivated to work with a simple mathematical model instead of a more comp
 
 ## Materials and methods
 
-## Experimental methods
+### Experimental methods
 
 The human melanoma cell lines WM793b (Herlyn et al., 1985) and WM983b (Herlyn, 1990) were genotypically characterised (Hoek et al., 2006; Smalley et al., 2007a; Smalley et al., 2007b), grown as described in Spoerri et al., 2017 supplemented with 1% penicillin-streptomycin (ThermoFisher, Massachusetts, United States), and authenticated by short tandem repeat fingerprinting (QIMR Berghofer Medical Research Institute, Herston, Australia). All cell lines were transduced with fluorescent ubiquitination-based cell cycle indicator (FUCCI) constructs as described in Haass et al., 2014; Spoerri et al., 2017. Wells within a flat-bottomed 96-well plate were prepared with 50 µL non-adherent 1.5% agarose to prevent cell-to-substrate attachment and promote the formation of a single centrally located spheroid (Spoerri et al., 2021). Cells were seeded into each well at a density of approximately 2500, 5000, and 10,000 cells in 200 µL of medium. A medium change was performed every 2–4 days.
 
 Spheroids were harvested and fixed with 4% paraformaldehyde at day 3, 4, 5, 7, 10, 12, 14, 16, 18, 21, and 24; mounted in 2% low melting agarose; placed in a refractive-index-matched clearing solution Spoerri et al., 2021; and imaged using fluorescent confocal microscopy to obtain high-resolution images at the equator of each spheroid (Olympus FV3000, Olympus, Tokyo, Japan). To minimise variability due to the vertical position of each image, spheroids are fixed in place using an agarose gel, and equatorial images are defined as the cross-section with the largest cross-sectional area. To obtain the result in Figure 1i, we selectively stain spheroids with DRAQ7 (ThermoFisher, Massachusetts, United States), which indicates necrosis (Kienzle et al., 2017; Spoerri et al., 2021). Staining, fixation, and microscopy are repeated to obtain at least 20 WM983b spheroids at day 18 (spheroids initially seeded with 5000 and 10,000 cells) and day 21 (spheroids seeded with 2500 cells); and at least 10 spheroids for all other conditions. Data are then randomly subsampled to obtain exactly 10 and 20 spheroids for each initial condition and observation day where possible. Time-lapse phase-contrast and fluorescent channel images are obtained at 6 hr intervals for up to 24 spheroids for each initial condition using an Incucyte S3 (Sartorius, Goettingen, Germany).
 
-## Data processing
+### Data processing
 
-We apply a semi-automated data processing algorithm to summarise experimental images with three measurements (Figure 1h; Browning and Murphy, 2021b). Firstly, we calculate the outer radius, R, based on a sphere with the same cross-sectional area as the image obtained. Secondly, the radius of the inhibited region, Ri. We calculate the radius of the inhibited region by determining the average distance from the spheroid periphery where the signal from mAG (FUCCI green), which indicates cells in gap 2, falls below a threshold value, taken to be 20% of the maximum area-averaged green signal. We find this choice leads to accurate results (Figure 2). Finally, the radius of the necrotic core, Rn, which is identified using texture recognition (stdfilt, Mathworks, 2021). The regions identified using the algorithm are shown in Figure 2. Full details of the image processing algorithms are available in Browning and Murphy, 2021b and additional images are available as supplementary material.
+We apply a semi-automated data processing algorithm to summarise experimental images with three measurements (Figure 1h; Browning and Murphy, 2021b). Firstly, we calculate the outer radius, $R$, based on a sphere with the same cross-sectional area as the image obtained. Secondly, the radius of the inhibited region, $R_{i}$. We calculate the radius of the inhibited region by determining the average distance from the spheroid periphery where the signal from mAG (FUCCI green), which indicates cells in gap 2, falls below a threshold value, taken to be 20% of the maximum area-averaged green signal. We find this choice leads to accurate results (Figure 2). Finally, the radius of the necrotic core, $R_{n}$, which is identified using texture recognition (stdfilt, Mathworks, 2021). The regions identified using the algorithm are shown in Figure 2. Full details of the image processing algorithms are available in Browning and Murphy, 2021b and additional images are available as supplementary material.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73020/elife-73020-fig2-v2.jpg)
 
-**Figure 2.:** Supplementary file 2).Overlaid are the three boundaries identified by the image processing algorithm: the entire spheroid, the inhibited region and the necrotic region. Each image shows a 800 × 800 µm field of view. Colouring indicates cell nuclei positive for mKO2 (magenta), which indicates cells in gap 1; and cell nuclei positive for mAG (green), which indicates cells in gap 2.
+**Figure 2.:** Overlaid are the three boundaries identified by the image processing algorithm: the entire spheroid, the inhibited region and the necrotic region. Each image shows a 800 × 800 µm field of view. Colouring indicates cell nuclei positive for mKO2 (magenta), which indicates cells in gap 1; and cell nuclei positive for mAG (green), which indicates cells in gap 2.
 
-## Mathematical model
+### Mathematical model
 
-Following Greenspan, 1972, we make two minimal assumptions regarding growth inhibition and necrosis (Figure 1h). Firstly, that growth inhibition, or cell cycle arrest, is a result of a chemical inhibitor that originates from the metabolic waste of living cells (Laurent et al., 2013). This inhibitor is produced by living cells at rate βprod [mol/d] and diffuses with diffusivity βdiff[μm2/d]. At the outer boundary of the spheroid, we assume that the concentration of inhibitor is zero. Cells enter arrest in regions where the inhibitor concentration is greater than βcrit [mol/μm3]. Secondly, cycling cells require nutrients that are plentifully available in the surrounding medium at concentration ω∞ [mol/μm3]. The nutrient is consumed by cycling cells at a constant rate ωcons [mol/d] and diffuses with diffusivity ωdiff [μm2/d]. Cells die in regions where the nutrient concentration is less than ωcrit [mol/μm3].
+Following Greenspan, 1972, we make two minimal assumptions regarding growth inhibition and necrosis (Figure 1h). Firstly, that growth inhibition, or cell cycle arrest, is a result of a chemical inhibitor that originates from the metabolic waste of living cells (Laurent et al., 2013). This inhibitor is produced by living cells at rate $\beta_{prod} [mol/d]$ and diffuses with diffusivity $\beta_{diff}[\mum^{2}/d]$. At the outer boundary of the spheroid, we assume that the concentration of inhibitor is zero. Cells enter arrest in regions where the inhibitor concentration is greater than $\beta_{crit} [mol/\mum^{3}]$. Secondly, cycling cells require nutrients that are plentifully available in the surrounding medium at concentration $\omega_{∞} [mol/\mum^{3}]$. The nutrient is consumed by cycling cells at a constant rate $\omega_{cons} [mol/d]$ and diffuses with diffusivity $\omega_{diff} [\mum^{2}/d]$. Cells die in regions where the nutrient concentration is less than $\omega_{crit} [mol/\mum^{3}]$.
 
-In regions where the nutrient concentration is sufficiently high and the inhibitor concentration sufficiently low, we assume that cells proliferate exponentially at the per-volume rate s⁢[/d]. Furthermore, we assume that cell debris is lost from the necrotic core at the per-volume rate λ⁢[/d].
+In regions where the nutrient concentration is sufficiently high and the inhibitor concentration sufficiently low, we assume that cells proliferate exponentially at the per-volume rate $s⁢[/d]$. Furthermore, we assume that cell debris is lost from the necrotic core at the per-volume rate $\lambda⁢[/d]$.
 
-It is convenient to define two non-dimensional parameters(1)Q2=ωconsωdiff(ω∞−ωcrit)×βcritβdiffβprod<1,
+It is convenient to define two non-dimensional parameters
 
-and(2)γ=λs>0.
+$$
+Q^{2}=\frac{\omega_{cons}}{\omega_{diff}(\omega_{∞}−\omega_{crit})}\times\frac{\beta_{crit}\beta_{diff}}{\beta_{prod}}<1,
+$$
 
-The parameter Q quantifies the balance between nutrient and inhibitor concentration and γ quantifies the balance between cell growth and the loss due to necrosis. The restriction Q<1 arises since we observe an inhibited region form before the necrotic region (Greenspan, 1972). Since the resultant equations depend only on Q and γ, the constituents of Q, namely βprod, βdiff, βcrit, ωcons, ωdiff, ω∞, and ωcrit, cannot be uniquely identified unless prior knowledge from other experiments is considered (Murphy et al., 2017), perhaps in a Bayesian framework (Browning et al., 2019). In contrast, the constituents of γ, namely λ and s, can be identified if information relating to the per-volume cell proliferation rate s is available, perhaps from phase one spheroid growth data.
+and
 
-We take the standard approach and model the spheroid as a single spherical mass (Greenspan, 1972; Araujo and McElwain, 2004). We denote by R the radius of the spheroid, ϕ=Ri/R the relative radius of the inhibited region, and η=Rn/R the relative radius of the necrotic core (Figure 1h). We note that R>0 and 0≤η≤ϕ<1. Noting that nutrient and inhibitor diffusion occurs much faster than cell proliferation, we assume that the chemical species are in diffusive equilibrium, leading to(3)dRdt=s3(1−ϕ3)R⏟Growthincyclingregion−s3γη3R.⏟Masslossfromnecroticcore
+$$
+\gamma=\frac{\lambda}{s}>0.
+$$
 
-A distinguishing feature of Greenspan’s model is that the inner structure of the spheroid, quantified by (ϕ,η), is determined solely by the spheroid radius, and not by time. We denote(4)0=fs(ϕ,η;R,Q,Rc),
+The parameter $Q$ quantifies the balance between nutrient and inhibitor concentration and $\gamma$ quantifies the balance between cell growth and the loss due to necrosis. The restriction $Q<1$ arises since we observe an inhibited region form before the necrotic region (Greenspan, 1972). Since the resultant equations depend only on $Q$ and $\gamma$, the constituents of $Q$, namely $\beta_{prod}$, $\beta_{diff}$, $\beta_{crit}$, $\omega_{cons}$, $\omega_{diff}$, $\omega_{∞}$, and $\omega_{crit}$, cannot be uniquely identified unless prior knowledge from other experiments is considered (Murphy et al., 2017), perhaps in a Bayesian framework (Browning et al., 2019). In contrast, the constituents of $\gamma$, namely $\lambda$ and $s$, can be identified if information relating to the per-volume cell proliferation rate $s$ is available, perhaps from phase one spheroid growth data.
 
-as a function describing this relationship, and refer to the relationship between the spheroid radius, R, and the inner structure, (ϕ,η), as the structural model. Here, we define Rc as the radius at which necrosis first occurs. For R<Rc, nutrient is available throughout the spheroid above the critical concentration ωcrit.
+We take the standard approach and model the spheroid as a single spherical mass (Greenspan, 1972; Araujo and McElwain, 2004). We denote by $R$ the radius of the spheroid, $ϕ=R_{i}/R$ the relative radius of the inhibited region, and $η=R_{n}/R$ the relative radius of the necrotic core (Figure 1h). We note that $R>0$ and $0\leqη\leqϕ<1$. Noting that nutrient and inhibitor diffusion occurs much faster than cell proliferation, we assume that the chemical species are in diffusive equilibrium, leading to
 
-During phases 1 and 2, there is no necrotic core (η=0) and the solution to Equation 4 is given by(5)ϕ2=max(0,1−Q2Rc2R2),R<Rc.
+$$
+\frac{dR}{dt}=\frac{s}{3}(1−ϕ^{3})R⏟Growthincyclingregion−\frac{s}{3}\gammaη^{3}R.⏟Masslossfromnecroticcore
+$$
 
-During phase 3, R>Rc and fs is given by(6)fs(ϕ,η;R,Q,Rc)=(2R2η3−3R2η2+R2−Rc2,R2ϕ3+(Q2Rc2−R2(1+2η3))ϕ+2η3R2).
+A distinguishing feature of Greenspan’s model is that the inner structure of the spheroid, quantified by $(ϕ,η)$, is determined solely by the spheroid radius, and not by time. We denote
 
-To investigate the limiting structure of spheroids, we consider the solution to the mathematical model where the outer radius is no longer increasing: the dynamics have reached a steady-state. Experimental observations suggest that this occurs during phase 3. We denote R¯=limt→∞⁡R⁢(t) the limiting radius and (ϕ¯,η¯) the associated limiting structure. The steady-state model is the solution of(7){0=1−ϕ¯3−γη¯3,0=fs(ϕ¯,η¯;R¯,Q,Rc),
+$$
+0=f_{s}(ϕ,η;R,Q,R_{c}),
+$$
 
-subject to R>Rc. By defining ρ=η¯/ϕ¯∈(0,1), we find a semi-analytical solution to the steady-state model (Appendix 1).
+as a function describing this relationship, and refer to the relationship between the spheroid radius, $R$, and the inner structure, $(ϕ,η)$, as the structural model. Here, we define $R_{c}$ as the radius at which necrosis first occurs. For $R<R_{c}$, nutrient is available throughout the spheroid above the critical concentration $\omega_{crit}$.
 
-The behaviour in the steady-state model is characterised by three parameters, θ=(Q,Rc,γ). We denote the solution to Equation 7 (i.e. the steady-state model) as(8)m(θ):(Q,Rc,γ)→(R¯,ϕ¯,η¯).
+During phases 1 and 2, there is no necrotic core ($η=0$) and the solution to Equation 4 is given by
 
-Equation 8 can be thought of as a map from the parameter space to the limiting structure of the spheroid. This demonstrates that the parameters are identifiable only when all three variables, (R¯,ϕ¯,η¯), are observed, since the two-dimensional observation space (R,η) cannot uniquely map to the entire three-dimensional parameter space (Q,Rc,γ). As a consequence, the model parameters cannot be uniquely identified from steady-state information unless phase 3 information that includes measurements of the inhibited region—using FUCCI or another marker of cell cycle arrest—is considered alongside measurements of necrotic core and overall spheroid size.
+$$
+ϕ^{2}=max(0,1−\frac{Q^{2}R_{c}^{2}}{R^{2}}),R<R_{c}.
+$$
 
-## Statistical model
+During phase 3, $R>R_{c}$ and $f_{s}$ is given by
+
+$$
+f_{s}(ϕ,η;R,Q,R_{c})=(2R^{2}η^{3}−3R^{2}η^{2}+R^{2}−R_{c}^{2},R^{2}ϕ^{3}+(Q^{2}R_{c}^{2}−R^{2}(1+2η^{3}))ϕ+2η^{3}R^{2}).
+$$
+
+To investigate the limiting structure of spheroids, we consider the solution to the mathematical model where the outer radius is no longer increasing: the dynamics have reached a steady-state. Experimental observations suggest that this occurs during phase 3. We denote $R¯=limt→∞⁡R⁢(t)$ the limiting radius and $(ϕ¯,η¯)$ the associated limiting structure. The steady-state model is the solution of
+
+$$
+{0=1−ϕ¯^{3}−\gammaη¯^{3},0=f_{s}(ϕ¯,η¯;R¯,Q,R_{c}),
+$$
+
+subject to $R>R_{c}$. By defining $ρ=η¯/ϕ¯\in(0,1)$, we find a semi-analytical solution to the steady-state model (Appendix 1).
+
+The behaviour in the steady-state model is characterised by three parameters, $\theta=(Q,R_{c},\gamma)$. We denote the solution to Equation 7 (i.e. the steady-state model) as
+
+$$
+m(\theta):(Q,R_{c},\gamma)→(R¯,ϕ¯,η¯).
+$$
+
+Equation 8 can be thought of as a map from the parameter space to the limiting structure of the spheroid. This demonstrates that the parameters are identifiable only when all three variables, $(R¯,ϕ¯,η¯)$, are observed, since the two-dimensional observation space $(R,η)$ cannot uniquely map to the entire three-dimensional parameter space $(Q,R_{c},\gamma)$. As a consequence, the model parameters cannot be uniquely identified from steady-state information unless phase 3 information that includes measurements of the inhibited region—using FUCCI or another marker of cell cycle arrest—is considered alongside measurements of necrotic core and overall spheroid size.
+
+### Statistical model
 
 While the mathematical model is deterministic, experimental observations of spheroid structure can be highly variable. To account for this, we take the standard approach and assume that the mathematical model describes the expected behaviour and experimental observations are multivariate normally distributed (Lehmann et al., 1998). Aside from accounting for biological variability, the observation process captures variability introduced during imaging and image processing.
 
-Denoting xi=(Ri,ϕi,ηi) as experimental observation i of the spheroid size and structure, we assume that(9)xi∼f(x;μ,Σ)=N(μ,Σ),
+Denoting $x_{i}=(R_{i},ϕ_{i},η_{i})$ as experimental observation i of the spheroid size and structure, we assume that
 
-where μ=(R,ϕ,η) is the mean of each component of x, N(μ,Σ) denotes a multivariate normal distribution with mean μ and covariance Σ. To account for increased variability at later time points (Figure 1a–b), we estimate Σ as the sample covariance associated with experimental observations of xi at each time, t. For steady-state analysis, we calculate the covariance using the pooled sample covariance from all seeding densities.
+$$
+x_{i}∼f(x;\mu,Σ)=N(\mu,Σ),
+$$
 
-We refer to Equation 9 as the statistical model. To connect experimental observations to the mathematical model, we substitute μ=m(θ) in Equation 9.
+where $\mu=(R,ϕ,η)$ is the mean of each component of $x$, $N(\mu,Σ)$ denotes a multivariate normal distribution with mean μ and covariance $Σ$. To account for increased variability at later time points (Figure 1a–b), we estimate $Σ$ as the sample covariance associated with experimental observations of $x_{i}$ at each time, $t$. For steady-state analysis, we calculate the covariance using the pooled sample covariance from all seeding densities.
 
-## Inference
+We refer to Equation 9 as the statistical model. To connect experimental observations to the mathematical model, we substitute $\mu=m(\theta)$ in Equation 9.
 
-We take a likelihood-based approach to parameter inference and sensitivity analysis. Given a set of observations X={xi}i=1n, the log-likelihood function is(10)ℓ(θ;X)=∑ilog⁡f(xi;m(θ),Σ),
+### Inference
 
-where f(x;μ,Σ) is the multivariate normal probability density function (Equation 9). Although we take a purely likelihood-based approach to inference, we note that our implementation is equivalent to a Bayesian approach where uniform priors encode existing knowledge about parameters, a common choice (Hines et al., 2014; Simpson et al., 2020).
+We take a likelihood-based approach to parameter inference and sensitivity analysis. Given a set of observations $X={x_{i}}_{i=1}^{n}$, the log-likelihood function is
 
-We apply maximum likelihood estimation to obtain point estimates of the parameters for a given set of experimental observations. The maximum likelihood estimate (MLE) is given by(11)θ^=argmaxθℓ(θ;X).
+$$
+ℓ(\theta;X)=\sumilog⁡f(x_{i};m(\theta),Σ),
+$$
+
+where $f(x;\mu,Σ)$ is the multivariate normal probability density function (Equation 9). Although we take a purely likelihood-based approach to inference, we note that our implementation is equivalent to a Bayesian approach where uniform priors encode existing knowledge about parameters, a common choice (Hines et al., 2014; Simpson et al., 2020).
+
+We apply maximum likelihood estimation to obtain point estimates of the parameters for a given set of experimental observations. The maximum likelihood estimate (MLE) is given by
+
+$$
+\theta^=argmax\thetaℓ(\theta;X).
+$$
 
 We solve Equation 11 numerically to within machine precision using a local optimisation routine (Powell, 2009; Johnson, 2021). In Figure 3, we show point estimates obtained for a bivariate problem using maximum likelihood estimation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73020/elife-73020-fig3-v2.jpg)
 
-**Figure 3.:** Results demonstrate estimates of  and Q using the structural model, RcEquation 6, and data from WM983b spheroids at day 14 initiated using 5000 cells. Point estimates are calculated using the maximum likelihood estimate (white marker). The boundaries of regions are defined as contours of the log-likelihood function. Univariate confidence intervals are constructed by profiling the log-likelihood and using a threshold of approximately −1.92 for a 95% confidence interval.
+**Figure 3.:** Results demonstrate estimates of $Q$ and $R_{c}$ using the structural model, Equation 6, and data from WM983b spheroids at day 14 initiated using 5000 cells. Point estimates are calculated using the maximum likelihood estimate (white marker). The boundaries of regions are defined as contours of the log-likelihood function. Univariate confidence intervals are constructed by profiling the log-likelihood and using a threshold of approximately −1.92 for a 95% confidence interval.
 
-## Confidence regions and hypothesis tests
+#### Confidence regions and hypothesis tests
 
-We take a log-likelihood based approach to compute confidence regions and marginal univariate confidence intervals for model parameters (Pawitan, 2013). In a large sample limit, Wilks’ Theorem provides a limiting distribution for the log-likelihood ratio statistic, such that(12)2[ℓ(θ^)−ℓ(θ)]∼χ2(ν)
+We take a log-likelihood based approach to compute confidence regions and marginal univariate confidence intervals for model parameters (Pawitan, 2013). In a large sample limit, Wilks’ Theorem provides a limiting distribution for the log-likelihood ratio statistic, such that
 
-where ν=dim(θ) and χ2⁢(ν) Is the χ2 Distribution with ν degrees of freedom. Therefore, an approximate α level confidence region is given by(13)θ:ℓ(θ)≥ℓ(θ^)−Δν,α2,
+$$
+2[ℓ(\theta^)−ℓ(\theta)]∼χ^{2}(ν)
+$$
 
-where Δν,α is the α level quantile of the χ2⁢(ν) distribution.
+where $ν=dim(\theta)$ and $χ^{2}⁢(ν)$ Is the $χ^{2}$ Distribution with $ν$ degrees of freedom. Therefore, an approximate $\alpha$ level confidence region is given by
 
-## Hypothesis tests
+$$
+\theta:ℓ(\theta)\geqℓ(\theta^)−\frac{Δ_{ν,\alpha}}{2},
+$$
 
-To compare parameters between initial conditions, we perform likelihood-ratio-based hypothesis test based on the distribution provided in Equation 13 (Pawitan, 2013). We denote by θ^∗ the MLE computed using data from all initial seeding densities, X∗, simultaneously. Similarly, to compare parameter estimates from spheroids initially seeded with 2500 and 5000 cells, we denote by θ^N the MLE using a subset of data from spheroids seeded using N∈{2500,5000} cells. The test statistic is given by(14)T=2(−ℓ(θ^∗)+∑Nℓ(θ^N))∼χ2(ν)
+where $Δ_{ν,\alpha}$ is the $\alpha$ level quantile of the $χ^{2}⁢(ν)$ distribution.
 
-where ν is number of additional parameters in the case where a different parameter combination is used to describe each initial condition. An approximate p-value is therefore given by 1-Fχ2⁢(ν)⁢(T), where Fχ2⁢(ν) is the cumulative distribution function for the χ2⁢(ν) distribution.
+##### Hypothesis tests
 
-## Marginal confidence intervals
+To compare parameters between initial conditions, we perform likelihood-ratio-based hypothesis test based on the distribution provided in Equation 13 (Pawitan, 2013). We denote by $\theta^_{∗}$ the MLE computed using data from all initial seeding densities, $X_{∗}$, simultaneously. Similarly, to compare parameter estimates from spheroids initially seeded with 2500 and 5000 cells, we denote by $\theta^_{N}$ the MLE using a subset of data from spheroids seeded using $N\in{2500,5000}$ cells. The test statistic is given by
 
-The profile likelihood method (Raue et al., 2009; Boiger, 2016) allows for the construction of univariate confidence interval of each parameter. Firstly, we partition the parameter space such that θ=(ψ,λ) where ψ is the parameter of interest and λ is a vector containing the remaining parameters. Taking the supremum of the log-likelihood function over λ and normalising using the MLE gives the normalised profile log-likelihood(15)ℓ^p(ψ;X)=supλℓ(ψ,λ;X)−ℓ(θ^;X),ℓ^p≤0.
+$$
+T=2(−ℓ(\theta^_{∗})+\sumNℓ(\theta^_{N}))∼χ^{2}(ν)
+$$
 
-An approximate 95% confidence interval is given by Equation 13 as the region where ℓ^p(ψ;X)≥−Δ1,0.95/2≈−1.92 (Pawitan, 2013). We compute the profile log-likelihood numerically using a local optimisation routine (Powell, 2009) with either the MLE, or the nearest profiled point (Boiger, 2016) as an initial guess. In Figure 3, we show profile likelihoods for a bivariate problem.
+where $ν$ is number of additional parameters in the case where a different parameter combination is used to describe each initial condition. An approximate p-value is therefore given by $1-F_{χ^{2}⁢(ν)}⁢(T)$, where $F_{χ^{2}⁢(ν)}$ is the cumulative distribution function for the $χ^{2}⁢(ν)$ distribution.
 
-## Confidence regions
+##### Marginal confidence intervals
 
-We construct two-dimensional confidence regions using Equation 13 (we construct three-dimensional confidence regions using a sequence of two-dimensional slices). First, we find a point on the boundary of the region, denoted θ0 such that ℓ(θ0)=ℓ(θ^)−Δν,α/2, using bisection to machine precision. Next, we integrate along the likelihood annihilating field; that is, we move in a direction perpendicular to the gradient of the likelihood to obtain a set of points on the level set ℓ(θ)=ℓ(θ0), given by(16)dθdt=(0−110)∇θℓ(θ),θ(0)=θ0.
+The profile likelihood method (Raue et al., 2009; Boiger, 2016) allows for the construction of univariate confidence interval of each parameter. Firstly, we partition the parameter space such that $\theta=(ψ,\lambda)$ where $ψ$ is the parameter of interest and $\lambda$ is a vector containing the remaining parameters. Taking the supremum of the log-likelihood function over $\lambda$ and normalising using the MLE gives the normalised profile log-likelihood
+
+$$
+ℓ^_{p}(ψ;X)=sup\lambdaℓ(ψ,\lambda;X)−ℓ(\theta^;X),ℓ^_{p}\leq0.
+$$
+
+An approximate 95% confidence interval is given by Equation 13 as the region where $ℓ^_{p}(ψ;X)\geq−Δ_{1,0.95}/2≈−1.92$ (Pawitan, 2013). We compute the profile log-likelihood numerically using a local optimisation routine (Powell, 2009) with either the MLE, or the nearest profiled point (Boiger, 2016) as an initial guess. In Figure 3, we show profile likelihoods for a bivariate problem.
+
+##### Confidence regions
+
+We construct two-dimensional confidence regions using Equation 13 (we construct three-dimensional confidence regions using a sequence of two-dimensional slices). First, we find a point on the boundary of the region, denoted $\theta_{0}$ such that $ℓ(\theta_{0})=ℓ(\theta^)−Δ_{ν,\alpha}/2$, using bisection to machine precision. Next, we integrate along the likelihood annihilating field; that is, we move in a direction perpendicular to the gradient of the likelihood to obtain a set of points on the level set $ℓ(\theta)=ℓ(\theta_{0})$, given by
+
+$$
+\frac{d\theta}{dt}=(0−110)∇_{\theta}ℓ(\theta),\theta(0)=\theta_{0}.
+$$
 
 This calculation is demonstrated for a bivariate problem in Figure 3.
 
-The gradient for the statistical model, ∇μℓ(μ), can be calculated to within machine precision using automatic differentiation (Revels et al., 2016). For the mathematical model, we apply the identity(17)∇θℓ(θ)=Jm(θ)∇μℓ(m(θ)),
+The gradient for the statistical model, $∇_{\mu}ℓ(\mu)$, can be calculated to within machine precision using automatic differentiation (Revels et al., 2016). For the mathematical model, we apply the identity
 
-where Jm(θ) is calculated analytically (Appendix 1).
+$$
+∇_{\theta}ℓ(\theta)=J_{m}(\theta)∇_{\mu}ℓ(m(\theta)),
+$$
+
+where $J_{m}(\theta)$ is calculated analytically (Appendix 1).
 
 ## Results
 
-To assess the limiting structure of spheroids and the effect of initial seeding density, we analyse confocal sections of a large number of spheroids across three seeding densities using the WM983b cell line. We show a subset of these images in Figure 2 and summarise images with three concentric annular measurements: the spheroid radius, R; the relative radius of the inhibited region, ϕ; and the relative radius of the necrotic core, η (Figure 1h). In addition to spheroids from different initial conditions tending towards a similar overall size (as seen from time-lapse data in Figure 1a–f), these results show that spheroids develop similar structures by day 21.
+To assess the limiting structure of spheroids and the effect of initial seeding density, we analyse confocal sections of a large number of spheroids across three seeding densities using the WM983b cell line. We show a subset of these images in Figure 2 and summarise images with three concentric annular measurements: the spheroid radius, $R$; the relative radius of the inhibited region, $ϕ$; and the relative radius of the necrotic core, $η$ (Figure 1h). In addition to spheroids from different initial conditions tending towards a similar overall size (as seen from time-lapse data in Figure 1a–f), these results show that spheroids develop similar structures by day 21.
 
-First, we fit the statistical model to the experimental data by estimating the mean of each measurement, denoted μ=(R,ϕ,η). We obtain a maximum likelihood estimate and an approximate 95% confidence interval for each initial condition at observation days 12–21 (Figure 4a–c). On average, spheroids of all seeding densities increase in size from day 12 to day 18. In agreement with earlier observations from time-lapse data in Figure 1e–h, we see that spheroids initiated at different seeding densities tend toward similar limiting sizes. Between days 18 and 21, spheroids seeded with 5000 and 10,000 cells decrease in average size, potentially indicating a period of decay after a limiting size is reached.
+First, we fit the statistical model to the experimental data by estimating the mean of each measurement, denoted $\mu=(R,ϕ,η)$. We obtain a maximum likelihood estimate and an approximate 95% confidence interval for each initial condition at observation days 12–21 (Figure 4a–c). On average, spheroids of all seeding densities increase in size from day 12 to day 18. In agreement with earlier observations from time-lapse data in Figure 1e–h, we see that spheroids initiated at different seeding densities tend toward similar limiting sizes. Between days 18 and 21, spheroids seeded with 5000 and 10,000 cells decrease in average size, potentially indicating a period of decay after a limiting size is reached.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73020/elife-73020-fig4-v2.jpg)
 
-**Figure 4.:** In (a–c), parameters are the mean of each observation: . In ((R,ϕ,η)d–e), parameters are those in the structural model: . In ((R,Q,Rc)f), estimates of  are obtained by calibrating observations to the steady-state model. As estimates γ and Q can be derived from the structural model (RcEquation 6), which applies at any time during phase 3, we expect to see similar parameter estimates across observation times. As estimates of  can only be obtained from the steady-state model, which assumes the outer radius is no longer increasing, we do not expect to see similar parameter estimates across observation times. Bars indicate an approximate 95% confidence interval.γ
+**Figure 4.:** In (a–c), parameters are the mean of each observation: $(R,ϕ,η)$. In (d–e), parameters are those in the structural model: $(R,Q,R_{c})$. In (f), estimates of $\gamma$ are obtained by calibrating observations to the steady-state model. As estimates $Q$ and $R_{c}$ can be derived from the structural model (Equation 6), which applies at any time during phase 3, we expect to see similar parameter estimates across observation times. As estimates of $\gamma$ can only be obtained from the steady-state model, which assumes the outer radius is no longer increasing, we do not expect to see similar parameter estimates across observation times. Bars indicate an approximate 95% confidence interval.
 
-Figure 4b and c show estimates relating to the sizes of the inhibited region, ϕ, and necrotic core, η. We see remarkable consistency in ϕ across seeding densities, tending toward a value of 90% in all cases: this corresponds to an actively cycling region with volume approximately 27% of the total spheroid volume. The necrotic core increases significantly in size from days 12 to 21, and late time estimates of η are quantitively similar between seeding densities.
+Figure 4b and c show estimates relating to the sizes of the inhibited region, $ϕ$, and necrotic core, $η$. We see remarkable consistency in $ϕ$ across seeding densities, tending toward a value of 90% in all cases: this corresponds to an actively cycling region with volume approximately 27% of the total spheroid volume. The necrotic core increases significantly in size from days 12 to 21, and late time estimates of $η$ are quantitively similar between seeding densities.
 
-Next, we calibrate the mathematical model to identify any mechanistic differences between seeding densities. Parameters Q and Rc can be estimated using the structural model (Equation 6) at any time point. To estimate γ we must invoke the steady-state model (Equation 7), which assumes that the overall growth of the spheroid has ceased. Therefore, we expect to see consistency in estimates of Q and Rc between observation days but do not expect the same for estimates of γ.
+Next, we calibrate the mathematical model to identify any mechanistic differences between seeding densities. Parameters $Q$ and $R_{c}$ can be estimated using the structural model (Equation 6) at any time point. To estimate $\gamma$ we must invoke the steady-state model (Equation 7), which assumes that the overall growth of the spheroid has ceased. Therefore, we expect to see consistency in estimates of $Q$ and $R_{c}$ between observation days but do not expect the same for estimates of $\gamma$.
 
-Results in Figure 4d show remarkable consistency in estimates of Q across seeding densities until day 18, suggesting that the balance between nutrient availability and waste concentration (Equation 1) is maintained throughout the experiment and is similar between seeding densities. Between days 18 and 21, estimates of Q for spheroids initially seeded with 5000 and 10,000 cells increase significantly, suggesting a behavioural change during this time; we attribute this to a final period of decay. Estimates of Rc do not show the consistency between observation days we might expect if fs (Equation 6) holds for the experimental data. Rather, estimates of Rc decrease between days 12 and 21, indicating fs may be misspecified. Results in Figure 4f show that estimates of γ decrease with time to a similar value for all seeding densities. We interpret this asymptotic decrease as an indication that spheroids approach a limiting structure since estimates of γ are strictly only valid when growth has ceased. Closer inspection of results in Figure 4f show a delay in estimates of γ between spheroids seeded with 2500 cells and the other seeding densities. Whereas the larger spheroids reach a limiting size by day 18, the smaller spheroids are still growing. It is not until day 21 that estimates of γ are comparable across all seeding densities.
+Results in Figure 4d show remarkable consistency in estimates of $Q$ across seeding densities until day 18, suggesting that the balance between nutrient availability and waste concentration (Equation 1) is maintained throughout the experiment and is similar between seeding densities. Between days 18 and 21, estimates of $Q$ for spheroids initially seeded with 5000 and 10,000 cells increase significantly, suggesting a behavioural change during this time; we attribute this to a final period of decay. Estimates of $R_{c}$ do not show the consistency between observation days we might expect if $f_{s}$ (Equation 6) holds for the experimental data. Rather, estimates of $R_{c}$ decrease between days 12 and 21, indicating $f_{s}$ may be misspecified. Results in Figure 4f show that estimates of $\gamma$ decrease with time to a similar value for all seeding densities. We interpret this asymptotic decrease as an indication that spheroids approach a limiting structure since estimates of $\gamma$ are strictly only valid when growth has ceased. Closer inspection of results in Figure 4f show a delay in estimates of $\gamma$ between spheroids seeded with 2500 cells and the other seeding densities. Whereas the larger spheroids reach a limiting size by day 18, the smaller spheroids are still growing. It is not until day 21 that estimates of $\gamma$ are comparable across all seeding densities.
 
 Next, we analyse the limiting structure of spheroids across each initial seeding density. As spheroids initially seeded with 5000 and 10,000 cells decrease in average size from day 18 to day 21, we compare day 18 data from these high densities to day 21 data from spheroids initially seeded with 2500 cells. Results in Figure 5 show profile log-likelihoods for each parameter in the mathematical model. In Figure 5, we show 3D confidence regions for parameters in the statistical and mathematical models, respectively. We see that both profile log-likelihoods and 3D confidence regions overlap, indicating that parameter estimates are consistent between seeding densities.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73020/elife-73020-fig5-v2.jpg)
 
-**Figure 5.:** (a–c) Profile likelihoods for each parameter, which are used to compute approximate confidence intervals (Table 1). (d) 95% confidence region for the full parameter space. 95% confidence regions for (d) the mean of each observation at steady state  and ((R¯,φ¯,η¯)e) the model parameters .(Q,Rc,γ)
+**Figure 5.:** (a–c) Profile likelihoods for each parameter, which are used to compute approximate confidence intervals (Table 1). (d) 95% confidence region for the full parameter space. 95% confidence regions for (d) the mean of each observation at steady state $(R¯,\phi¯,η¯)$ and (e) the model parameters $(Q,R_{c},\gamma)$.
 
 To compare quantitatively parameter estimates between seeding densities, we tabulate maximum likelihood estimates, approximate 95% confidence intervals, and results of a likelihood-ratio-based hypothesis test for both models in Table 1. The late-time sizes of spheroids initiated with 5,000 and 10,000 cells are statistically consistent (p=0.62), as is their structure (p=0.69). We find evidence to suggest that spheroids seeded with 2500 cells, even at day 21, are smaller (p=0.04); however, the overall size and structure of the spheroids seeded with 2500 and 5000 cells are statistically consistent (p=0.20). We find no significant differences in model parameters between seeding densities and note that the conclusion of overall statistical consistency between seeding densities is identical for the mathematical model.
 
-Next, we investigate the relationship between spheroid structure and spheroid size from day 3 to day 21 (Figure 6). We again see evidence of a period of eventual decay that occurs after a limiting size has been reached in our experiments. To validate the structural relationship suggested by Greenspan’s model, we plot the solution to the structural model (Equation 6) using parameters estimated using the steady-state model (Table 1). The overall trend throughout all three phases of growth in the mathematical model—made only using information from days 18 and 21—is remarkably consistent with experimental measurements Figure 6. We find an explanation for the inconsistent estimates of Rc observed in Figure 4e. During phase 3, the mathematical model predicts a non-linear relationship between R, ϕ and η (Equation 6). In contrast, the trend in the data is close to linear. We confirm this in Figure 6 by calibrating a linear model of the form(18)(R(τ),ϕ(τ),η(τ))=(Rc,ϕc,0)+τq^,
+**Table 1.**
+ Parameter estimates and approximate confidence intervals for each initial conditions.Also shown are p-values for likelihood-ratio-based hypothesis tests for parameter equivalence between seeding densities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>θ2500</th>
+      <th>θ5000</th>
+      <th>θ10000</th>
+      <th>p 2500,5000</th>
+      <th>p 5000,10000</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R</td>
+      <td>340.0 (331.0, 349.0)</td>
+      <td>353.0 (344.0, 361.0)</td>
+      <td>356.0 (347.0, 365.0)</td>
+      <td>0.0420</td>
+      <td>0.617</td>
+    </tr>
+    <tr>
+      <td>ϕ</td>
+      <td>0.899 (0.889, 0.908)</td>
+      <td>0.895 (0.886, 0.905)</td>
+      <td>0.901 (0.891, 0.911)</td>
+      <td>0.617</td>
+      <td>0.406</td>
+    </tr>
+    <tr>
+      <td>η</td>
+      <td>0.719 (0.674, 0.764)</td>
+      <td>0.716 (0.671, 0.761)</td>
+      <td>0.742 (0.696, 0.788)</td>
+      <td>0.940</td>
+      <td>0.438</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td colspan="3"></td>
+      <td>0.202</td>
+      <td>0.687</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>0.75 (0.696, 0.811)</td>
+      <td>0.758 (0.704, 0.818)</td>
+      <td>0.771 (0.711, 0.838)</td>
+      <td>0.854</td>
+      <td>0.767</td>
+    </tr>
+    <tr>
+      <td>Rc</td>
+      <td>149.0 (127.0, 171.0)</td>
+      <td>156.0 (133.0, 178.0)</td>
+      <td>145.0 (121.0, 168.0)</td>
+      <td>0.672</td>
+      <td>0.503</td>
+    </tr>
+    <tr>
+      <td>γ</td>
+      <td>0.737 (0.598, 0.916)</td>
+      <td>0.768 (0.624, 0.953)</td>
+      <td>0.657 (0.532, 0.816)</td>
+      <td>0.792</td>
+      <td>0.308</td>
+    </tr>
+    <tr>
+      <td>θ</td>
+      <td colspan="3"></td>
+      <td>0.202</td>
+      <td>0.687</td>
+    </tr>
+  </tbody>
+</table>
+
+Next, we investigate the relationship between spheroid structure and spheroid size from day 3 to day 21 (Figure 6). We again see evidence of a period of eventual decay that occurs after a limiting size has been reached in our experiments. To validate the structural relationship suggested by Greenspan’s model, we plot the solution to the structural model (Equation 6) using parameters estimated using the steady-state model (Table 1). The overall trend throughout all three phases of growth in the mathematical model—made only using information from days 18 and 21—is remarkably consistent with experimental measurements Figure 6. We find an explanation for the inconsistent estimates of $R_{c}$ observed in Figure 4e. During phase 3, the mathematical model predicts a non-linear relationship between $R$, $ϕ$ and $η$ (Equation 6). In contrast, the trend in the data is close to linear. We confirm this in Figure 6 by calibrating a linear model of the form
+
+$$
+(R(\tau),ϕ(\tau),η(\tau))=(R_{c},ϕ_{c},0)+\tauq^,
+$$
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/73020/elife-73020-fig6-v2.jpg)
 
 **Figure 6.:** Solid curves in (a) show the solution to the mathematical model (Equation 6) using the maximum likelihood estimate calculated using the steady-state data (Table 1). Solid curves in (c) show the solution to the mathematical model (Equation 6) using using the maximum likelihood estimate calculated using day 24 data. In (b) and (d), we fit a linear model to phase 3 data (indicated by coloured markers). The p value corresponds to a hypothesis test where the linear model parameters are the equivalent for all initial conditions. Shown in black is the best fit linear model.
 
-to phase 3 data using a total least squares approach that accounts for uncertainty in the independent variable τ (Appendix 2). Here, τ=0 at the start of phase 3. Performing an approximate likelihood-ratio-based hypothesis test confirms that the behaviour in spheroids of all initial conditions is statistically consistent (p=0.56). That is, the spheroid structure where necrosis first occurs (at τ=0), (Rc,ϕc,0), and the direction in which it develops, q^, do not appear to depend on the initial seeding density.
+to phase 3 data using a total least squares approach that accounts for uncertainty in the independent variable $\tau$ (Appendix 2). Here, $\tau=0$ at the start of phase 3. Performing an approximate likelihood-ratio-based hypothesis test confirms that the behaviour in spheroids of all initial conditions is statistically consistent (p=0.56). That is, the spheroid structure where necrosis first occurs (at $\tau=0$), $(R_{c},ϕ_{c},0)$, and the direction in which it develops, $q^$, do not appear to depend on the initial seeding density.
 
-In Figure 6, we perform a similar analysis on spheroids grown from WM793b cells. Whereas WM983b spheroids approach a limiting size by the conclusion of the experiment (Figure 1a), spheroids grown from the WM793b do not (Figure 1b). Results in Appendix 3 examine parameter estimates from the mathematical and statistical models through time for the WM793b spheroids, demonstrating that the outer radius increases monotonically until day 24 for all initial conditions. These results also suggest consistency in estimates of Q across observation days and seeding densities. Performing a likelihood-ratio-based hypothesis test indicates that phase 3 is independent of the initial seeding density (p=0.36).
+In Figure 6, we perform a similar analysis on spheroids grown from WM793b cells. Whereas WM983b spheroids approach a limiting size by the conclusion of the experiment (Figure 1a), spheroids grown from the WM793b do not (Figure 1b). Results in Appendix 3 examine parameter estimates from the mathematical and statistical models through time for the WM793b spheroids, demonstrating that the outer radius increases monotonically until day 24 for all initial conditions. These results also suggest consistency in estimates of $Q$ across observation days and seeding densities. Performing a likelihood-ratio-based hypothesis test indicates that phase 3 is independent of the initial seeding density (p=0.36).
 
 ## Discussion
 
@@ -186,20 +337,20 @@ We find compelling evidence that WM983b spheroids have a limiting structure that
 
 By examining spheroid structure throughout the entire experiment (Figure 6), we establish a relationship between spheroid structure and size that is independent of initial seeding density. This result is significant as it suggests that variability in size and structure may be primarily attributable to time. For example, spheroids that are smaller than average on a given observation day may have been seeded at a lower density. Statistical techniques, such as ODE-constrained mixed effects models, can be applied to elucidate sources of intrinsic variability, such as variability in the initial seeding density (Wang et al., 2012; Hasenauer et al., 2014). It is common in the literature to compare spheroids with and without a putative drug after a fixed number of days (Friedrich et al., 2009). However, our analysis suggests that comparing the structure of spheroids of a fixed size may be more insightful; this approach obviates variability due to initial seeding density, increasing the sensitivity of statistical tests to small effects. A corollary is that since inferences relating to spheroid structure are independent of spheroid size, experiments can be initiated with a larger number of cells to decrease the time until spheroids reach phase 3.
 
-Given our observations of WM983b spheroids across seeding densities, an apparent conclusion of our analysis is that statistically consistent phase 3 behaviour implies a statistically consistent limiting structure. If true, this suggests that an experimentalist only has to investigate phase 3 behaviour to reach a conclusion relating to the limiting structure. Analysis of both the mathematical model and experimental results for WM793b spheroids indicate that this is not the case. In the mathematical model, fs (Equation 6) characterises the structure solely in terms of parameters Q and Rc, whereas γ—which relates to the ratio of cell proliferation and loss due to necrosis (Equation 2)—determines the steady-state. We see this for WM793b spheroids, as phase 3 behaviour is independent of the initial seeding density (Figure 6), but time-lapse data of the overall growth (Figure 1b) gives no indication that spheroids of different densities will tend toward the same limiting size.
+Given our observations of WM983b spheroids across seeding densities, an apparent conclusion of our analysis is that statistically consistent phase 3 behaviour implies a statistically consistent limiting structure. If true, this suggests that an experimentalist only has to investigate phase 3 behaviour to reach a conclusion relating to the limiting structure. Analysis of both the mathematical model and experimental results for WM793b spheroids indicate that this is not the case. In the mathematical model, $f_{s}$ (Equation 6) characterises the structure solely in terms of parameters $Q$ and $R_{c}$, whereas $\gamma$—which relates to the ratio of cell proliferation and loss due to necrosis (Equation 2)—determines the steady-state. We see this for WM793b spheroids, as phase 3 behaviour is independent of the initial seeding density (Figure 6), but time-lapse data of the overall growth (Figure 1b) gives no indication that spheroids of different densities will tend toward the same limiting size.
 
-As fs determines the relationship between spheroid size and structure at any time point, we expect estimates of Q and Rc to be similar when calibrated to data from different days. This is the case for estimates of Q (Figure 4d), but estimates of Rc decrease with time (Figure 4e). While the mathematical model captures the same overall behaviour observed in the experiments, it is evident from the discrepancy observed during phase 3 (Figure 6) that fs is misspecified. Our assumptions of nutrient and waste at diffusive equilibrium and a hard threshold for growth inhibition and necrosis give rise to fs that is cubic in ϕ and η. Since the empirical relationship for the cell lines we investigate is approximately linear, the model underestimates the radius at which phase 3 begins, Rc. At the loss of mechanistic insight, one approach to rectify this discrepancy is to construct a purely phenomenological relationship where fs is piecewise linear. A second approach is to revisit fundamental modelling assumptions to develop a mechanistic description of the relationship between spheroid structure and overall size that is consistent with our experimental observations for these cell lines.
+As $f_{s}$ determines the relationship between spheroid size and structure at any time point, we expect estimates of $Q$ and $R_{c}$ to be similar when calibrated to data from different days. This is the case for estimates of $Q$ (Figure 4d), but estimates of $R_{c}$ decrease with time (Figure 4e). While the mathematical model captures the same overall behaviour observed in the experiments, it is evident from the discrepancy observed during phase 3 (Figure 6) that $f_{s}$ is misspecified. Our assumptions of nutrient and waste at diffusive equilibrium and a hard threshold for growth inhibition and necrosis give rise to $f_{s}$ that is cubic in $ϕ$ and $η$. Since the empirical relationship for the cell lines we investigate is approximately linear, the model underestimates the radius at which phase 3 begins, $R_{c}$. At the loss of mechanistic insight, one approach to rectify this discrepancy is to construct a purely phenomenological relationship where $f_{s}$ is piecewise linear. A second approach is to revisit fundamental modelling assumptions to develop a mechanistic description of the relationship between spheroid structure and overall size that is consistent with our experimental observations for these cell lines.
 
-Our observations for WM983b and WM793b melanoma cell lines do not preclude a form of fs that is cubic for other cell lines or experimental conditions. In our framework, the behaviour of spheroids is characterised by the empirical relationship between spheroid size and structure. Therefore, despite misspecification in parameter estimates of Rc, we can compare spheroids grown with WM793b and WM983b cell lines by comparing the structural relationship observed in the experimental data (Figure 6). In this case, we observe that radius at which the necrotic core develops is much smaller in WM983b spheroids than for WM793b spheroids. While we cannot elucidate the biological factors that lead to this difference from our analysis, we postulate that differences in the diffusion or consumption of nutrients by cells of each cell line may contribute.
+Our observations for WM983b and WM793b melanoma cell lines do not preclude a form of $f_{s}$ that is cubic for other cell lines or experimental conditions. In our framework, the behaviour of spheroids is characterised by the empirical relationship between spheroid size and structure. Therefore, despite misspecification in parameter estimates of $R_{c}$, we can compare spheroids grown with WM793b and WM983b cell lines by comparing the structural relationship observed in the experimental data (Figure 6). In this case, we observe that radius at which the necrotic core develops is much smaller in WM983b spheroids than for WM793b spheroids. While we cannot elucidate the biological factors that lead to this difference from our analysis, we postulate that differences in the diffusion or consumption of nutrients by cells of each cell line may contribute.
 
 We have restricted our analysis of spheroid structure to three measurements that quantify the sizes of the spheroid, inhibited region and necrotic core. While the spheroid and necrotic core sizes are objective measurements, the boundary of the inhibited region is not. Our approach is to identify the distance from the spheroid periphery where the density of cells in gap 2 falls below 20% of the maximum. We find this semi-automated approach produces excellent results and enables high-throughput analysis of hundreds of spheroids; however, it does not take advantage of all the information available in the experimental images. Mathematical models that explicitly include variation in cell density through space (Ward and King, 1999; Jin et al., 2021) may be appropriate, however are typically heavily parameterised, limiting the insight obtainable from typical experimental data. The mass-balance model coupled to a model describing the relationship between spheroid size and structure avoids these issues and, despite model simplicity, we are still able to gain useful biological insight.
 
-## Conclusion
+### Conclusion
 
 Reproducibility and size uniformity are paramount in practical applications of spheroid models. Yet, the effect of intentional or unintentional variability in spheroid size on the inner structure that develops is not well understood. We present a quantitative framework to analyse spheroid structure as a function of overall size, finding that the outer radius characterises the inner structure of spheroids grown from two melanoma cell lines. Further, we find that the initial seeding density has little effect on the structure that develops. These results attest to the reproducibility of spheroids as an in vitro research tool. While we analyse data from two melanoma cell lines, our focus on commonly reported spheroid measurements allows our framework to be applied more generally to a other cell lines and culture conditions. It is routine to compare spheroid size and structure of spheroids at a pre-determined time, our results suggest a refined protocol that compares the structure of spheroids at a pre-determined overall size.
 
 Given the prominence of spheroids in experimental research, there is a surprising scarcity of experimentally validated mathematical models that can be applied to interpret data from these experiments. We find that one of the earliest and simplest models of tumour progression—the seminal model of Greenspan, 1972—can give valuable insights with a parameter space that matches the level of detail available from spheroid structure data. Given that we establish an empirical relationship between spheroid size and structure independent of both time and the initial spheroid size, we suggest future theoretical work to identify mechanisms that give rise to this relationship, perhaps through equation learning (Lagergren et al., 2020). To aid in validating theoretical models of spheroid growth, we make our highly detailed experimental data freely available.
 
-## Data availability
+### Data availability
 
 Code, data, and interactive figures are available as a Julia module on GitHub at github.com/ap-browning/Spheroids (Browning, 2021c; copy archived at swh:1:rev:27f9e32bb702cb56a62bacaae1e49746a3c4342d). Code used to process the experimental images is available on Zenodo (Browning and Murphy, 2021b).

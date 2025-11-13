@@ -19,16 +19,16 @@
 
 ### Affiliations
 
-1. https://ror.org/026stee22 Max Planck Institute of Animal Behavior Konstanz Germany
-2. https://ror.org/0546hnb39 Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany
-3. https://ror.org/0546hnb39 Biology Department, University of Konstanz Konstanz Germany
-4. https://ror.org/0546hnb39 Zukunftskolleg, University of Konstanz Konstanz Germany
-5. https://ror.org/049s0rh22 Department of Anthropology, Dartmouth College Hanover United States
-6. https://ror.org/02ks53214 Max Planck Research Group Predators and Toxic Prey, Max Planck Institute for Chemical Ecology Jena Germany
-7. https://ror.org/047426m28 Department of Evolution, Ecology, and Behavior, School of Integrative Biology, University of Illinois at Urbana-Champaign Urbana-Champaign United States
-8. https://ror.org/0190ak572 Department of Anthropology, New York University New York United States
-9. https://ror.org/03yjb2x39 Department of Anthropology and Archaeology, University of Calgary Calgary Canada
-10. https://ror.org/03yjb2x39 Alberta Children’s Hospital Research Institute, University of Calgary Calgary Canada
+1. Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+2. Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+3. Biology Department, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+4. Zukunftskolleg, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+5. Department of Anthropology, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))
+6. Max Planck Research Group Predators and Toxic Prey, Max Planck Institute for Chemical Ecology Jena Germany ([ROR:02ks53214](https://ror.org/02ks53214))
+7. Department of Evolution, Ecology, and Behavior, School of Integrative Biology, University of Illinois at Urbana-Champaign Urbana-Champaign United States ([ROR:047426m28](https://ror.org/047426m28))
+8. Department of Anthropology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+9. Department of Anthropology and Archaeology, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
+10. Alberta Children’s Hospital Research Institute, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
 
 † Corresponding author
 

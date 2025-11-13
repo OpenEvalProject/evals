@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/028vrr082 Mars, Incorporated McLean United States
-2. https://ror.org/041kmwe10 Imperial College London London United Kingdom
-3. https://ror.org/05v62cm79 University of Reading Reading United Kingdom
+1. Mars, Incorporated McLean United States ([ROR:028vrr082](https://ror.org/028vrr082))
+2. Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+3. University of Reading Reading United Kingdom ([ROR:05v62cm79](https://ror.org/05v62cm79))
 
 † Corresponding author
 
@@ -31,11 +31,50 @@ The European Prospective Investigation into Cancer and Nutrition (EPIC) Norfolk 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92941/elife-92941-fig1-v1.jpg)
 
-**Figure 1.:** Rothwell et al., 2013), and nitrate (Blekkenhorst et al., 2017) content of foods commonly eaten.Data show the range of food content (black) and mean (red).
+**Figure 1.:** Data show the range of food content (black) and mean (red).
+
+**Table 1.**
+ Characteristics of dietary bioactives used as model system of dietary compounds to investigate the limitation of using single-point estimates to assess intake and investigate health outcomes in nutrition research.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dietary compound</th>
+      <th>Dietary distribution</th>
+      <th>Factors for variability</th>
+      <th>Biomarker of intake</th>
+      <th>Potential health eﬀect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flavan-3-ols</td>
+      <td>Tea, apple, and cocoa-derived products</td>
+      <td>Cultivar, agricultural conditions, storage, and processing</td>
+      <td>Urinary concentrations of gut microbiome-derived ﬂavan-3-ol metabolites (phenyl-γ-valerolactone metabolites) (Ottaviani et al., 2018a)</td>
+      <td>Reduce cardiovascular events and deaths (Sesso et al., 2022. Reduce blood pressure Ottaviani et al., 2018b)Improve cognitive performance (Sloan et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>(–)-Epicatechin</td>
+      <td>Tea, apple, and cocoa-derived products</td>
+      <td>Cultivar, agricultural conditions, storage, and processing (including epimerisation)</td>
+      <td>Urinary concentrations of structural-related metabolites derived from phase II conjugation (Ottaviani et al., 2019)</td>
+      <td>Improve vascular function (Schroeter et al., 2006; Dicks et al., 2022) and reduce blood pressure (Ottaviani et al., 2018b)</td>
+    </tr>
+    <tr>
+      <td>Nitrate</td>
+      <td>Vegetables, drinking water</td>
+      <td>Depends on a wide range of environmental factors such as fertilisation, light exposure, and water supply</td>
+      <td>Urinary nitrate status can be used as a surrogate marker of intake (Green et al., 1981; Pannala et al., 2003; Smallwood et al., 2017)</td>
+      <td>Dietary nitrate can reduce blood pressure (Larsen et al., 2006)</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Results
 
-## Impact of bioactive content variability when assessing dietary intake
+### Impact of bioactive content variability when assessing dietary intake
 
 The intake of an individual nutrient or bioactive is usually calculated by using self-reported dietary data and the mean food content as single-point estimate. While the high variability in food composition is well known and recognised as a source of bias (National Research Council et al., 1986), this is rarely acknowledged in such estimates and often assumed to have only a little impact due to a regression to the mean. However, there is a paucity of data investigating the actual impact of this variability on estimated intakes. We estimated the potential impact of the variability in ﬂavan-3-ols, (–)-epicatechin, and nitrate food content on estimated intakes of the respective compounds and compound classes in 18,684 participants of EPIC Norfolk for whom all relevant data were available (Table 2). Table 3 shows a comparison of estimated intakes when calculated using the DD-FCT approach with mean food content, as is current practice, as well as minimum and maximum reported food content. These results demonstrate a large uncertainty in estimating actual intake when taking the large variability in bioactive content into consideration. In comparison to the uncertainty introduced by the variability in food composition, the uncertainty associated with the use of self-reported methods of 2–25% (Stubbs et al., 2014) appears to be small. There is an overlap in the possible range of bioactive intake between study participants (Figure 2), making it diﬃcult to identify low and high consumers or to rank participants by intake (see also below). These results show that bioactive content variability signiﬁcantly contributes to the uncertainty in the estimation of dietary intake, even more than the error incurred by self-report methods that have attracted a lot of attention and discussion in nutritional research (Subar et al., 2015).
 
@@ -43,7 +82,128 @@ The intake of an individual nutrient or bioactive is usually calculated by using
 
 **Figure 2.:** Range of bioactive intake was calculated using an approach similar to probabilistic modelling by sampling randomly from the distribution of possible food composition (n = 10,000 iterations). Intake based on mean bioactive content, as is common practice, is indicated by a black line. Green line shows the median intake of the entire cohort and the green box the interquartile range.
 
-## Impact of food composition variability when assessing relative intake
+**Table 2.**
+ Study population and baseline characteristics of 18,684 participants of EPIC Norfolk, for whom all data were available.Data shown are mean (SD) or absolute number and proportion. Data for urinary nitrate was available for 1027 samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Women</th>
+      <th>Men</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>10,167</td>
+      <td>8517</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>59 (9)</td>
+      <td>59 (9)</td>
+    </tr>
+    <tr>
+      <td>Body mass index (kg/m2)</td>
+      <td>26.1 (4.2)</td>
+      <td>26.4 (3)</td>
+    </tr>
+    <tr>
+      <td>Systolic blood pressure (mmHg)</td>
+      <td>134 (19)</td>
+      <td>138 (17.6)</td>
+    </tr>
+    <tr>
+      <td>Physical activity</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inactive</td>
+      <td>2997 (30%)</td>
+      <td>2577 (30%)</td>
+    </tr>
+    <tr>
+      <td>Moderately inactive</td>
+      <td>3258 (32%)</td>
+      <td>2096 (25%)</td>
+    </tr>
+    <tr>
+      <td>Moderately active</td>
+      <td>2309 (23%)</td>
+      <td>1990 (23%)</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>1603 (16%)</td>
+      <td>1854 (22%)</td>
+    </tr>
+    <tr>
+      <td>Smoking status</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>1121 (11%)</td>
+      <td>998 (12%)</td>
+    </tr>
+    <tr>
+      <td>Former</td>
+      <td>3250 (32%)</td>
+      <td>4647 (55%)</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>5796 (57%)</td>
+      <td>2872 (34%)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Intake of diﬀerent bioactive compounds in EPIC Norfolk (median and interquartile range) when determined using diﬀerent food composition data.Results are shown for estimates calculated using minimum, mean, and maximum food content and self-reported dietary data based on 24 hr diet recall (24HDR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Bioactive intake (mg/day)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Minimum food content</td>
+      <td>Mean food content</td>
+      <td>Maximum food content</td>
+    </tr>
+    <tr>
+      <td>Flavan-3-ols</td>
+      <td>48 (28–82)</td>
+      <td>120 (70–190)</td>
+      <td>329 (172–451)</td>
+    </tr>
+    <tr>
+      <td>(–)-Epicatechin</td>
+      <td>1.5 (1.0–2.5)</td>
+      <td>19 (9–25)</td>
+      <td>33 (65–100)</td>
+    </tr>
+    <tr>
+      <td>Nitrate</td>
+      <td>5.5 (4.6–57)</td>
+      <td>100 (80–124)</td>
+      <td>204 (151–305)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Impact of food composition variability when assessing relative intake
 
 In many studies, relative, instead of absolute, intakes, for example, quintiles, are used (Altman and Bland, 1994). It is assumed that the relative intake is less aﬀected by measurement error than absolute intake, and thus can mitigate some of the limitations of estimating dietary intake (Streppel et al., 2013). We therefore investigated how the ranking of participants is aﬀected by the variability in bioactive content and compared the relative intake of participants with low (p25 – based on mean bioactive content), medium (p50), and high (p75) intake. Bioactive content variability was introduced in the analysis using an approach similar to probabilistic modelling by sampling randomly from the distribution of possible food composition for each food consumed by each participant. Figure 3 shows the result of 10,000 of such simulations. They suggest that the high variability in bioactive content makes estimates of relative intakes unreliable. Indeed, depending on the actual food consumed, the self-same diet could put the self-same study participant in the bottom or top quintile of intake. This suggests that it is diﬃcult to obtain reliable relative intakes from dietary data alone, and that ranking by those data is unreliable.
 
@@ -51,13 +211,13 @@ In many studies, relative, instead of absolute, intakes, for example, quintiles,
 
 **Figure 3.:** Data shown are relative intake (100% is the maximum intake) of 10,000 simulations.
 
-In order to conﬁrm the ﬁndings of our simulations, we compared relative intakes estimated using data from DD-FCT and biomarker method. The biomarkers used in this study (Green et al., 1981; Ottaviani et al., 2018a; Ottaviani et al., 2019; Pannala et al., 2003; Smallwood et al., 2017) have been validated and characterised previously (Table 1) and are suitable to estimate relative intake (Keogh et al., 2013). Like the 24 hr dietary recall data used here, biomarkers reﬂect acute intake. The intake estimated from the DD-FCT method was calculated using the common approach based on the mean bioactive content in databases. The association between this self-reported intake and biomarker is weak, with a maximum Kendall’s τ of 0.16 for (–)-epicatechin and lower for ﬂavan-3-ols (0.06) and nitrate (–0.05). Figure 4 illustrates this by comparing respective quantiles of intake as these are commonly used to categorise relative intake. The data show very modest agreement between the two measurement methods (only 20–30% of participants assigned to the same quantile) and conﬁrm that ranking is not suitable to address the measurement error and uncertainty introduced by the high variability in bioactive content. Overall, this shows that relying on a single value of bioactive content in food for all participants introduces bias when assessing relative intake of dietary compounds.
+In order to conﬁrm the ﬁndings of our simulations, we compared relative intakes estimated using data from DD-FCT and biomarker method. The biomarkers used in this study (Green et al., 1981; Ottaviani et al., 2018a; Ottaviani et al., 2019; Pannala et al., 2003; Smallwood et al., 2017) have been validated and characterised previously (Table 1) and are suitable to estimate relative intake (Keogh et al., 2013). Like the 24 hr dietary recall data used here, biomarkers reﬂect acute intake. The intake estimated from the DD-FCT method was calculated using the common approach based on the mean bioactive content in databases. The association between this self-reported intake and biomarker is weak, with a maximum Kendall’s $\tau$ of 0.16 for (–)-epicatechin and lower for ﬂavan-3-ols (0.06) and nitrate (–0.05). Figure 4 illustrates this by comparing respective quantiles of intake as these are commonly used to categorise relative intake. The data show very modest agreement between the two measurement methods (only 20–30% of participants assigned to the same quantile) and conﬁrm that ranking is not suitable to address the measurement error and uncertainty introduced by the high variability in bioactive content. Overall, this shows that relying on a single value of bioactive content in food for all participants introduces bias when assessing relative intake of dietary compounds.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92941/elife-92941-fig4-v1.jpg)
 
 **Figure 4.:** Bands of the same colour show participants in the same biomarker-estimated quantile of intake and their respective quantile of intake based on the DD-FCT method. 24HDR estimated quantiles of intake were determined using the common approach of using mean content of ﬂavan-3-ols, (–)-epicatechin, and nitrate in each food item as reported in databases.
 
-## Impact of bioactive content variability on the estimated association between intake and health endpoints
+### Impact of bioactive content variability on the estimated association between intake and health endpoints
 
 We showed earlier that the high variability in food composition has an impact on the estimates of intake using the DD-FCT method. However, it is not known whether this aﬀects estimated associations between intake and health endpoints. Here, we use simulations to explore how the variability in food compositions aﬀects such estimates in a ‘vibration of eﬀects’-type approach (Patel et al., 2015) and compare these with the results derived from biomarker-estimated intakes. We use the cross-sectional association with blood pressure as example as all three compounds have a well-established acute eﬀect on vascular function (Larsen et al., 2006; Ottaviani et al., 2018b; Schroeter et al., 2006).
 
@@ -87,62 +247,62 @@ There are of course also other sources of bias and variability that aﬀect diet
 
 In our study, we used the identical dietary data to investigate the impact of the variability in food content. This allowed us to exclude other sources of variability in dietary assessment, in particular misreporting of dietary intake. We also used measures of acute intake (24 hr dietary recalls and spot urine samples) and used a health endpoint that is directly aﬀected by intake.
 
-## Prospective studies
+### Prospective studies
 
 In our study, we focused on cross-sectional associations between bioactives and blood pressure as the acute eﬀect of these compounds is well established. It is expected that the variability in food composition aﬀects prospective analyses more than cross-sectional analyses: in addition to the variability in food content, the composition of foods changes over time (Davis et al., 2004; White and Broadley, 2005).
 
-## Biomarker-predicted dietary patterns
+### Biomarker-predicted dietary patterns
 
 The high variability in the content of dietary compounds in food has also implications for the development of biomarkers for individual foods or dietary patterns. A number of biomarkers have been proposed to estimate the intake of individual foods, for example, proline-betaine as biomarker of citrus fruit intake (Gibbons et al., 2017), but the content in citrus fruits is highly variable (14.3—110 mg/100 mL in various citrus fruit juice; Lang et al., 2017), and it is thus not possible to estimate actual food intake without using foods in which the content of the dietary compound to use as a biomarker is standardised.
 
 The same applies to metabolomics-based biomarkers of dietary patterns. They are usually developed under highly standardised conditions and reﬂect the composition of the foods consumed during these studies. Changes in the composition of these foods aﬀect the concentration of metabolites and thereby reduce the reliability of metabolite-based biomarkers of individual foods or dietary pattern. This diminishes the suitability of such markers for longitudinal or multicentre studies where a high variability in food composition is likely. These limitations do not apply to the development of biomarkers of speciﬁc bioactives or other nutrients as the variability of bioactive and nutrient content is reﬂected in the variation of biomarker levels.
 
-## Eﬀect on dietary recommendations and risk assessment
+### Eﬀect on dietary recommendations and risk assessment
 
 The ﬁndings presented in this work have a considerable impact on dietary recommendations and guidelines. Our data clearly show that the results based on the DD-FCT method are likely to be biased and unreliable. Dietary recommendation based on such data emanating from that approach are therefore also likely to be unreliable and misleading. However, the high variability in food composition also has an impact on the translation of health-based guidance values into food-based dietary recommendations. For example, the amount of ﬂavan-3-ols required to achieve a vasculoprotective eﬀect according to the EFSA health claim is 200 mg/day (EFSA Panel on Dietetic Products, Nutrition and Allergies, 2014). When using mean food composition data (Rothwell et al., 2013), this could be achieved by five cups of tea. However, when using the lowest reported food content, at least 22 cups of tea would have to be consumed to meet the recommended intake. Similarly, 5–6 apples would be suﬃcient to consume the 50 mg/day (–)-epicatechin assumed to be suﬃcient to improve vascular function (Ellinger et al., 2012; Hooper et al., 2012) when using mean food content, but it could be up to 27 when assuming a low content in food. In this manner, it would not be possible to determine whether or not a population is already meeting dietary recommendation for ﬂavan-3-ols without the development of biomarker-based methods (Crowe-White et al., 2022).
 
 These ﬁndings also have an impact on the risk assessment of food components, in particular those that are naturally present in foods and used as additives such as nitrates (Mortensen et al., 2017) or phosphates (Younes et al., 2019). Results from observational studies and intervention studies relying on food content data will be aﬀected by inaccurate assessment of intake as described above. More importantly, however, the exposure assessment will be aﬀected by the variability of data, with consequences for consumers and food producers as an overestimation of exposure could result in unnecessary restrictions in use, whereas an underestimation could put consumers at risk. For example, in EPIC Norfolk, none or only a very few study participants exceed the ADI (acceptable daily intake) of 3.7 mg/kg BW/day (Mortensen et al., 2017) for nitrate when estimating intake with minimum and mean food content, respectively. However, when using the maximum food content, one-third of study participants exceed the ADI for nitrate, and almost 10% exceed it twofold. Each of these scenarios would result in very diﬀerent actions by risk managers due to the diﬀerent impact on population health, and in the latter case more stringent restrictions were necessary.
 
-## Conclusions
+### Conclusions
 
 Our data suggest that the results of many interventional and observational nutrition studies using dietary surveys in combination with food composition data are potentially unreliable and carry greater limitations than commonly appreciated. As these studies are used to derive evidence-based dietary recommendations and disease risk assessments, their limitations could have a considerable impact on public health. We demonstrated that the results relying solely on food composition data not only failed to identify beneﬁcial associations between three bioactives and blood pressure, but even suggested possible adverse associations. It is highly likely that the ﬁndings of this nature are not limited to the model compounds that served as examples in our investigation here but broadly apply to other dietary components as well. Given the importance of diet in the maintenance of health and disease risk reduction, it is crucial to address this limitation: both by revisiting previous studies and by taking these limitations into consideration in future studies. We think it is essential to develop and use nutritional biomarkers to determine actual nutrient intakes that ensure more reliable and actionable insights. This means that the development of more and better biomarkers for accurate dietary assessment remains crucial (Prentice, 2018). The challenges associated with developing biomarker-based approaches are not insigniﬁcant, but the technical capabilities required are broadly available today, and the advantages of deploying improved approaches to establishing the links between diet and health are so signiﬁcant, timely, and needed that it should become a standard tool in nutrition research.
 
 ## Methods
 
-## Study population
+### Study population
 
 Between 1993 and 1997, 30,447 women and men aged between 40 and 79 years were recruited for the Norfolk cohort of the EPIC study, and 25,639 attended a health examination (Day et al., 1999). Health and lifestyle characteristics, including data on smoking, social class, and family medical history, were assessed by a questionnaire. Height and weight measurements were collected following a standardised protocol by trained research nurses. Physical activity, representing occupational and leisure activity, was assessed using a validated questionnaire (Wareham et al., 2002). Blood pressure was measured using a non-invasive oscillometric blood pressure monitor (Acutorr; Datascope Medical, Huntingdon, UK; validated against sphygmomanometers every 6 months) after the participant had been seated in a comfortable environment for 5 min. The arm was horizontal and supported at the level of the mid-sternum; the mean of two readings was used for analysis. Non-fasting blood samples were taken by venepuncture and stored in serum tubes in liquid nitrogen. Serum levels of total cholesterol were measured on fresh samples with the RA 1000 autoanalyser (Bayer Diagnostics, Basingstoke, UK). Plasma vitamin C was measured using a ﬂuorometric assay as described previously (Khaw et al., 2001). Spot urine samples were collected during the health examination and stored at –20°C until analysis. The study was approved by the Norwich Local Research Ethics Committee, all participants gave written, informed consent, and all methods were carried out in accordance with relevant guidelines and regulations.
 
 Diet was assessed by 7-day diary (7DD), whereby the ﬁrst day of the diary was completed as a 24 hr recall (24HDR) with a trained interviewer and the remainder completed during subsequent days. Diary data were entered, checked, and calculated using the in-house dietary assessment software DINER (Data into Nutrients for Epidemiological Research) and DINERMO (Welch et al., 2001). Flavan-3-ol intake (the sum of epicatechin, catechin, epicatechin-3-O-gallate, catechin-3-O-gallate, and proanthocyanidins) was estimated as described previously Vogiatzoglou et al., 2015; minimum and maximum estimated ﬂavan-3-ol intake was estimated using the minimum and maximum food content data provided by Phenol Explorer und USDA databases (Rothwell et al., 2013). Nitrite and nitrate intake, based on minimum, maximum, and mean food content, were estimated using a database published previously (Blekkenhorst et al., 2017).
 
-## Nutritional biomarker
+### Nutritional biomarker
 
-## Flavan-3-ols and (–)-epicatechin
+#### Flavan-3-ols and (–)-epicatechin
 
 We used two diﬀerent biomarkers to estimate ﬂavan-3-ol and (–)-epicatechin intake: gVLMB that includes the metabolites 5-(4′-hydroxyphenyl)-γ-valerolactone-3′-glucuronide (gVL3G) and 5-(4′-hydroxyphenyl)-γ-valerolactone-3′-sulphate (gVL3S), and SREMB that includes the metabolites (–)-epicatechin-3′-glucuronide (E3G), (–)-epicatechin-3′-sulphate (E3S) and 3′-methoxy(–)-epicatechin-5-sulphate (3Me5S). gVLMB are speciﬁc for estimating the intake of ﬂavan-3-ols in general, including (±)-epicatechin, (±)-catechin, (±)-epicatechin-3-O-gallate, (±)-catechin-3-O-gallate, and procyanidins and excluding the ﬂavan-3-ols gallocatechin, epigallocatechin, gallocatechin-3-O-gallate, epigallocatechin-3-O-gallate, theaﬂavins, and thearubigins (Ottaviani et al., 2018a). SREMB are speciﬁc for (–)-epicatechin intake (Ottaviani et al., 2019). Spot urine samples were collected during the baseline health examination and stored in glass bottles at –20°C until analysis. Stability analyses conﬁrmed that biomarkers are stable under these conditions (Ottaviani et al., 2019). Samples were analysed in random order using the method described previously (Ottaviani et al., 2019), with automated sample preparation (Hamilton Star robot; Hamilton, Bonaduz, Switzerland). Concentrations below the lower limit of quantiﬁcation (LLOQ, 0.1 μM) were used for the analysis to avoid the bias of substituting a range of values by a single value. Concentrations were adjusted by speciﬁc gravity for dilution as the endpoint of the analysis, systolic blood pressure, was strongly correlated with urinary creatinine. We used speciﬁc gravity to adjust for dilution previously when there was a strong association between creatinine and study endpoint (Bingham et al., 2007).
 
 Flavan-3-ol and (–)-epicatechin biomarker data, as well as data for all other variables, were available for 18,864 participants. Data for nitrate biomarker were available for 1027 participants.
 
-## Nitrate
+#### Nitrate
 
 Urinary nitrate concentration, adjusted for dilution by speciﬁc gravity, was used as a biomarker of nitrate intake, as between 50 and 80% of dietary nitrate are recovered in urine, whereas endogenous production is relatively stable at 0.57 (95% CI 0.27–0.86) mmol/day (Green et al., 1981; Packer et al., 1989). A random subset of 1027 samples were analysed by ion chromatography with colorimetric detection (NOx Analyser ENO-30, EICOM, San Diego, CA).
 
-## Simulation of variability
+### Simulation of variability
 
 We conducted 10,000 simulations to explore the impact of the variability on bioactive content. For each simulation, we assigned each participant a possible intake of total ﬂavan-3-ol, (–)-epicatechin, and nitrate based on their self-reported dietary intake and the minimum and maximum reported content of each compound in the foods consumed. The data available do not suggest that food composition follows a normal distribution, and we therefore assumed a uniform distribution.
 
-## Data analysis
+### Data analysis
 
 Data analyses were carried out using R 3.6 (R Development Core Team, 2023), using the packages rms (Harrell, 2023) for regression analyses, ggplot2 (Wickham, 2016) and gridExtra (Auguie, 2017) for the generation of graphics. Regression analyses were conducted using ols as regression function. We used the Wald statistics calculated by the rms anova function to investigate the relationship between dependent and independent variables, and test for linearity. The tableone package (Yoshida and Bartel, 2022) was used to prepare tables. Unless indicated otherwise, results are shown with 95% CIs.
 
-## Descriptive statistics
+#### Descriptive statistics
 
 Descriptive characteristics of the study population were summarised using mean (standard deviation) for continuous variables and frequency (percentage) for categorical variables.
 
-## Data transformation
+#### Data transformation
 
 Biomarker data were positively skewed (log-normal distribution), and, therefore, log2-transformed data were used for all analyses. Restricted cubic splines (3 knots, outer quantiles 0.1 and 0.9; using the rcs function; Harrell, 2023) were used for all continuous variables unless indicated otherwise.
 
-## Cross-sectional analyses
+#### Cross-sectional analyses
 
 In cross-sectional analyses, stratiﬁed by sex, we investigated the associations between biomarker and 24 hr recall estimated ﬂavan-3-ol, (–)-epicatechin, and nitrate intake (biomarkers adjusted by speciﬁc gravity adjusted, dietary data by energy, log2-transformed), as independent variable and systolic and diastolic blood pressure (mmHg) using multiple regression analyses. Analyses were adjusted by age (continuous; years), body mass index (BMI) (continuous, kg/m2), plasma vitamin C, smoking status (categorical; never, ever, former), physical activity (categorical; inactive, moderately inactive, moderately active, active), and health at baseline (self-reported diabetes mellitus, myocardial infarction, cerebrovascular accident). Analyses with ﬂavan-3-ol and (–)-epicatechin as independent variable were stratiﬁed by sex, and analyses for women additionally adjusted by menopausal status; analyses with nitrate as independent variable were adjusted by sex and menopausal status.

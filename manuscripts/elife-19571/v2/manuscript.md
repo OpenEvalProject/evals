@@ -38,7 +38,7 @@
 
 ## Abstract
 
-10.7554/eLife.19571.001 Global disease suitability models are essential tools to inform surveillance systems and enable early detection. We present the first global suitability model of highly pathogenic avian influenza (HPAI) H5N1 and demonstrate that reliable predictions can be obtained at global scale. Best predictions are obtained using spatial predictor variables describing host distributions, rather than land use or eco-climatic spatial predictor variables, with a strong association with domestic duck and extensively raised chicken densities. Our results also support a more systematic use of spatial cross-validation in large-scale disease suitability modelling compared to standard random cross-validation that can lead to unreliable measure of extrapolation accuracy. A global suitability model of the H5 clade 2.3.4.4 viruses, a group of viruses that recently spread extensively in Asia and the US, shows in comparison a lower spatial extrapolation capacity than the HPAI H5N1 models, with a stronger association with intensively raised chicken densities and anthropogenic factors. DOI: http://dx.doi.org/10.7554/eLife.19571.001
+Global disease suitability models are essential tools to inform surveillance systems and enable early detection. We present the first global suitability model of highly pathogenic avian influenza (HPAI) H5N1 and demonstrate that reliable predictions can be obtained at global scale. Best predictions are obtained using spatial predictor variables describing host distributions, rather than land use or eco-climatic spatial predictor variables, with a strong association with domestic duck and extensively raised chicken densities. Our results also support a more systematic use of spatial cross-validation in large-scale disease suitability modelling compared to standard random cross-validation that can lead to unreliable measure of extrapolation accuracy. A global suitability model of the H5 clade 2.3.4.4 viruses, a group of viruses that recently spread extensively in Asia and the US, shows in comparison a lower spatial extrapolation capacity than the HPAI H5N1 models, with a stronger association with intensively raised chicken densities and anthropogenic factors.
 
 ## Introduction
 
@@ -54,55 +54,344 @@ In this analysis, we aimed to produce a first global suitability map for H5N1 HP
 
 ## Results
 
-Boosted Regression Trees (BRT) models were developed to predict the global suitability of H5N1 HPAI and H5Nx clade 2.3.4.4 presence. The predictor variables were categorised into four sets (Table 1) of variables. The Set 1 variables included the host variables of extensive and intensive chicken densities, human population density, and a variable to account for the effect of mass vaccination of poultry in China (IsChina). Set 2 included land cover variables with IsChina. Set 3 included Fourier-transformed climatic variables of land-surface temperature (LST) and Normalised Difference Vegetation Index (NDVI) with IsChina. Finally, Set 4 variables included Set 1 variables in addition to selected variables from the earlier sets that were selected on the basis of prior epidemiological knowledge. The models were subjected to three different types of cross validations to measure their goodness-of-fit (GOF) and transferability: (i) standard cross-validation (CV) with a random and stratified divide between training and validation sets, (ii) a calibrated cross-validation to account for the spatial sorting bias (SSB) sensu Hijmans (2012) i.e. the tendency to have distance between training-presence and testing-presence sites to be smaller than the distance between training-presence and testing-absence sites, and (iii) a spatial cross-validation (Spatial CV) to spatially separate the training and validation sets by large distances and measure the spatial extrapolation capacity of the models.10.7554/eLife.19571.002Table 1.List of predictor variables used for modelling the suitability of HPAI H5N1 and H5Nx clade 2.3.4.4 viruses using BRT models.DOI: http://dx.doi.org/10.7554/eLife.19571.002Set Variable full name Abbreviation  Source  Set 1: Host Variables Duck densityDuDnLgRobinson et al. (2014) Extensive Chicken DensityChDnLgExtGilbert et al. (2015) Intensive Chicken DensityChDnLgIntGilbert et al. (2015) Human Population DensityHpDnLgLinard et al. (2012); Gaughan et al. (2013); Sorichetta et al. (2015); CIESIN's GPW DatabaseVaccination in ChinaIsChinaFAO Global Administrative Unit Layers (GAUL) databaseSet 2 - Land Cover Variables Evergreen Deciduous Needleleaf TreesEDNTreesTuanmu and Jetz (2014) Evergreen Broadleaf TreesEBTreesTuanmu and Jetz (2014) Deciduous Broadleaf TreesDBTreesTuanmu and Jetz (2014) Mixed/Other TreesMixedTreesTuanmu and Jetz (2014) ShrubsShrubsTuanmu and Jetz (2014) Herbaceous VegetationHerbVegTuanmu and Jetz (2014) Cultivated and Managed VegetationCultVegTuanmu and Jetz (2014) Regularly Flooded VegetationRegFlVegTuanmu and Jetz (2014) Urban/Built-upUrbanBltpTuanmu and Jetz (2014) Open WaterOwatTuanmu and Jetz (2014) Distance to WaterDwat-Vaccination in ChinaIsChinaFAO Global Administrative Unit Layers (GAUL) databaseSet 3- Eco-climatic Variables Day LST* Annual meanTmpScharlemann et al. (2008) Day LST Amplitude annualTmpAmp1anScharlemann et al. (2008) Day LST Amplitude bi-annualTmpAmp2anScharlemann et al. (2008) Day LST Amplitude tri-annualTmpAmp3anScharlemann et al. (2008) Day LST Variance annualTmpVar1anScharlemann et al. (2008) Day LST Variance bi-annualTmpVar2anScharlemann et al. (2008) Day LST Variance annual, bi and tri-annualTmpVar123anScharlemann et al. (2008) NDVI† Annual meanNDVIScharlemann et al. (2008) NDVI Amplitude annualNDVIAmp1anScharlemann et al. (2008) NDVI Amplitude bi-annualNDVIAmp2anScharlemann et al. (2008) NDVI Amplitude tri-annualNDVIAmp3anScharlemann et al. (2008) NDVI Variance annualNDVIVar1anScharlemann et al. (2008) NDVI Variance bi-annualNDVIVar2anScharlemann et al. (2008) NDVI Variance tri-annualNDVIVar3anScharlemann et al. (2008) NDVI Variance annual, bi and tri-annualNDVIVar123anScharlemann et al. (2008) Vaccination in ChinaIsChinaFAO Global Administrative Unit Layers (GAUL) databaseSet 4: Risk-based selection of variables Duck densityDuDnLgRobinson et al. (2014) Extensive Chicken DensityChDnLgExtGilbert et al. (2015) Intensive Chicken DensityChDnLgIntGilbert et al. (2015) Human Population DensityHpDnLgLinard et al. (2012); Gaughan et al. (2013); Sorichetta et al. (2015); CIESIN's GPW DatabaseCultivated and Managed VegetationCultVegTuanmu and Jetz (2014) Open WaterOwatTuanmu and Jetz (2014) Distance to WaterDwat-Day LST annual meanTmpScharlemann et al. (2008) Vaccination in ChinaIsChinaFAO Global Administrative Unit Layers (GAUL) database*LST = Land Surface Temperature, †NDVI = Normalised Difference Vegetation Index
+Boosted Regression Trees (BRT) models were developed to predict the global suitability of H5N1 HPAI and H5Nx clade 2.3.4.4 presence. The predictor variables were categorised into four sets (Table 1) of variables. The Set 1 variables included the host variables of extensive and intensive chicken densities, human population density, and a variable to account for the effect of mass vaccination of poultry in China (IsChina). Set 2 included land cover variables with IsChina. Set 3 included Fourier-transformed climatic variables of land-surface temperature (LST) and Normalised Difference Vegetation Index (NDVI) with IsChina. Finally, Set 4 variables included Set 1 variables in addition to selected variables from the earlier sets that were selected on the basis of prior epidemiological knowledge. The models were subjected to three different types of cross validations to measure their goodness-of-fit (GOF) and transferability: (i) standard cross-validation (CV) with a random and stratified divide between training and validation sets, (ii) a calibrated cross-validation to account for the spatial sorting bias (SSB) sensu Hijmans (2012) i.e. the tendency to have distance between training-presence and testing-presence sites to be smaller than the distance between training-presence and testing-absence sites, and (iii) a spatial cross-validation (Spatial CV) to spatially separate the training and validation sets by large distances and measure the spatial extrapolation capacity of the models.
 
-The bootstrapped goodness of fit values for the H5N1 HPAI and H5Nx HPAI clade 2.3.4.4 models for the different sets of covariates and cross validation methods are shown in
+**Table 1.**
+ List of predictor variables used for modelling the suitability of HPAI H5N1 and H5Nx clade 2.3.4.4 viruses using BRT models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Set</th>
+      <th>Variable full name</th>
+      <th>Abbreviation</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Set 1: Host Variables</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Duck density</td>
+      <td>DuDnLg</td>
+      <td>Robinson et al. (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Extensive Chicken Density</td>
+      <td>ChDnLgExt</td>
+      <td>Gilbert et al. (2015)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intensive Chicken Density</td>
+      <td>ChDnLgInt</td>
+      <td>Gilbert et al. (2015)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Human Population Density</td>
+      <td>HpDnLg</td>
+      <td>Linard et al. (2012); Gaughan et al. (2013); Sorichetta et al. (2015); CIESIN's GPW Database</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vaccination in China</td>
+      <td>IsChina</td>
+      <td>FAO Global Administrative Unit Layers (GAUL) database</td>
+    </tr>
+    <tr>
+      <td colspan="4">Set 2 - Land Cover Variables</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Evergreen Deciduous Needleleaf Trees</td>
+      <td>EDNTrees</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Evergreen Broadleaf Trees</td>
+      <td>EBTrees</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Deciduous Broadleaf Trees</td>
+      <td>DBTrees</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mixed/Other Trees</td>
+      <td>MixedTrees</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Shrubs</td>
+      <td>Shrubs</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Herbaceous Vegetation</td>
+      <td>HerbVeg</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cultivated and Managed Vegetation</td>
+      <td>CultVeg</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Regularly Flooded Vegetation</td>
+      <td>RegFlVeg</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Urban/Built-up</td>
+      <td>UrbanBltp</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Open Water</td>
+      <td>Owat</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Distance to Water</td>
+      <td>Dwat</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vaccination in China</td>
+      <td>IsChina</td>
+      <td>FAO Global Administrative Unit Layers (GAUL) database</td>
+    </tr>
+    <tr>
+      <td colspan="4">Set 3- Eco-climatic Variables</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST* Annual mean</td>
+      <td>Tmp</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST Amplitude annual</td>
+      <td>TmpAmp1an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST Amplitude bi-annual</td>
+      <td>TmpAmp2an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST Amplitude tri-annual</td>
+      <td>TmpAmp3an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST Variance annual</td>
+      <td>TmpVar1an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST Variance bi-annual</td>
+      <td>TmpVar2an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST Variance annual, bi and tri-annual</td>
+      <td>TmpVar123an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI† Annual mean</td>
+      <td>NDVI</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI Amplitude annual</td>
+      <td>NDVIAmp1an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI Amplitude bi-annual</td>
+      <td>NDVIAmp2an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI Amplitude tri-annual</td>
+      <td>NDVIAmp3an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI Variance annual</td>
+      <td>NDVIVar1an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI Variance bi-annual</td>
+      <td>NDVIVar2an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI Variance tri-annual</td>
+      <td>NDVIVar3an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NDVI Variance annual, bi and tri-annual</td>
+      <td>NDVIVar123an</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vaccination in China</td>
+      <td>IsChina</td>
+      <td>FAO Global Administrative Unit Layers (GAUL) database</td>
+    </tr>
+    <tr>
+      <td colspan="4">Set 4: Risk-based selection of variables</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Duck density</td>
+      <td>DuDnLg</td>
+      <td>Robinson et al. (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Extensive Chicken Density</td>
+      <td>ChDnLgExt</td>
+      <td>Gilbert et al. (2015)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intensive Chicken Density</td>
+      <td>ChDnLgInt</td>
+      <td>Gilbert et al. (2015)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Human Population Density</td>
+      <td>HpDnLg</td>
+      <td>Linard et al. (2012); Gaughan et al. (2013); Sorichetta et al. (2015); CIESIN's GPW Database</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cultivated and Managed Vegetation</td>
+      <td>CultVeg</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Open Water</td>
+      <td>Owat</td>
+      <td>Tuanmu and Jetz (2014)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Distance to Water</td>
+      <td>Dwat</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day LST annual mean</td>
+      <td>Tmp</td>
+      <td>Scharlemann et al. (2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vaccination in China</td>
+      <td>IsChina</td>
+      <td>FAO Global Administrative Unit Layers (GAUL) database</td>
+    </tr>
+  </tbody>
+</table>
+
+_*LST = Land Surface Temperature, †NDVI = Normalised Difference Vegetation Index_
+
+The bootstrapped goodness of fit values for the H5N1 HPAI and H5Nx HPAI clade 2.3.4.4 models for the different sets of covariates and cross validation methods are shown in Figure 1. For the H5N1 HPAI global model, all overall GOF metrics were good with predictive accuracy Area Under the Curve (AUC) values higher than 0.9 when evaluated through standard CV (Figure 1). The reduction in GOF taking into account the SSB was minor and followed the same pattern. However, when evaluated through spatial CV, the different sets of covariates showed contrasting AUC values. The land-use (Set 2) and eco-climatic (Set 3) based models extrapolated poorly, and the Set 1 and Set 4 performed best. It is also noteworthy, that the combination of Sets 1 and 2 (Set 2.1), or Sets 1 and 3 (Set 3.1) did not result in significantly better models than Set 1 alone (Figure 1—figure supplement 1), and even tended to reduce the average AUC of spatial CV.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig1-v2.jpg)
 
-**Figure 1.:** Representation of AUC values for HPAI H5N1 and New Clade H5Nx 2.3.4.4 model for all sets of predictor variables, assessed through standard cross validation (Standard CV), in light grey, and accounting for spatial sorting bias (SSB) in dark grey. On the right, the AUC values for spatial cross validation (Spatial CV) are represented in black. All these metrics represent mean AUC ± standard deviation. Additionally, the AUC values for Set 2.1 and Set 3.1 are represented in Figure 1—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.19571.003
+**Figure 1.:** Representation of AUC values for HPAI H5N1 and New Clade H5Nx 2.3.4.4 model for all sets of predictor variables, assessed through standard cross validation (Standard CV), in light grey, and accounting for spatial sorting bias (SSB) in dark grey. On the right, the AUC values for spatial cross validation (Spatial CV) are represented in black. All these metrics represent mean AUC ± standard deviation. Additionally, the AUC values for Set 2.1 and Set 3.1 are represented in Figure 1—figure supplement 1.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** AUC values for HPAI H5N1 (top) and New Clade H5Nx 2.3.4.4 (below) models for Set 1 (host variables), Set 2 (land use and land cover variables), Set 3 (eco-climatic variables), Set 4 (selection of variables on the basis of prior epidemiological knowledge), Set 2.1 (Set 2 and Set 1) and Set 3.1 (Set 3 and Set 1) of predictor variables, assessed through standard cross validation (Standard CV, left) and spatial cross validation (Spatial CV, right). The predictor variable sets are detailed in Table 1.DOI: http://dx.doi.org/10.7554/eLife.19571.004
+**Figure 1—figure supplement 1.:** AUC values for HPAI H5N1 (top) and New Clade H5Nx 2.3.4.4 (below) models for Set 1 (host variables), Set 2 (land use and land cover variables), Set 3 (eco-climatic variables), Set 4 (selection of variables on the basis of prior epidemiological knowledge), Set 2.1 (Set 2 and Set 1) and Set 3.1 (Set 3 and Set 1) of predictor variables, assessed through standard cross validation (Standard CV, left) and spatial cross validation (Spatial CV, right). The predictor variable sets are detailed in Table 1.
 
 The models for the H5Nx clade 2.3.4.4 virus also had high GOF metrics estimated by standard CV (Figure 1). Here too, a significant amount of predictive power was already obtained with the models containing only Set 1 variables, with AUC values close to 0.9. There was a strong impact of spatial CV on the GOF metrics, with a drastic reduction in predictive power when extrapolating over large distances (Figure 1). Throughout the different spatial CV metrics, Set 2, and 4 showed better AUC values than Set 1, and given that Set 4 was more parsimonious, with fewer predictor variables, it was kept as the final model for H5Nx clade 2.3.4.4 suitability. Similar conclusions could be drawn from models using combinations of Set 1 and Set 2 (Set 2.1), or Set 1 and Set 3 (Set 3.1) (Figure 1—figure supplement 1).
 
-The relative contribution (RC) of the predictor variables of Set 1 and Set 4 for H5N1 HPAI and the H5 HPAI clade 2.3.4.4 models are presented in
+The relative contribution (RC) of the predictor variables of Set 1 and Set 4 for H5N1 HPAI and the H5 HPAI clade 2.3.4.4 models are presented in Figure 2. The most noticeable difference concerned the role of domestic duck density, human population density and chicken density. The H5Nx HPAI clade 2.3.4.4 showed much higher RC for human population density and intensively raised chickens than the H5N1 HPAI one. Conversely, a comparatively much higher RC of domestic duck density and extensively raised chicken was observed for the H5N1 HPAI model than for the H5Nx HPAI clade 2.3.4.4 models. Upon the inclusion of additional predictors in Set 4 (Figure 2), the influence of these host-based predictor variables followed a similar pattern. In addition, annual mean temperature made a relatively high contribution in both models, and cultivated vegetation showed a much higher RC in the H5Nx HPAI clade 2.3.4.4 model than in the H5N1 HPAI one.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig2-v2.jpg)
 
-**Figure 2.:** Summary of the mean relative contributions (%) ± standard deviation of different sets of predictor variables for boosted regression tree models for HPAI H5N1 (in blue) and H5Nx clade 2.3.4.4 (in red). The relative contribution is a measure of the relative importance of each predictor variable included in a BRT model to compute the model prediction. Set 1 predictor variables are represented on top, and Set 4 predictor variables are represented below.DOI: http://dx.doi.org/10.7554/eLife.19571.005
+**Figure 2.:** Summary of the mean relative contributions (%) ± standard deviation of different sets of predictor variables for boosted regression tree models for HPAI H5N1 (in blue) and H5Nx clade 2.3.4.4 (in red). The relative contribution is a measure of the relative importance of each predictor variable included in a BRT model to compute the model prediction. Set 1 predictor variables are represented on top, and Set 4 predictor variables are represented below.
 
-Partial dependence plots of the BRT models allow the contribution of a particular variable to be depicted on the fitted response after taking into account the effect of all the other predictors in the model (
+Partial dependence plots of the BRT models allow the contribution of a particular variable to be depicted on the fitted response after taking into account the effect of all the other predictors in the model (Figure 3, and Figure 3—figure supplement 1). The main difference between the partial dependence plots of the different variables was for the density of extensively raised chickens, which showed a positive association with H5N1 HPAI presence contrasting with an absence of association with the H5Nx HPAI clade 2.3.4.4 presence (Figure 3). Other profiles were somewhat comparable for the two groups of viruses and showed a positive association between virus presence and duck density, intensively raised chicken density, human population density, a negative association with the IsChina variable (Figure 3) and an optimum for percentage of cropland and temperature (Figure 3—figure supplement 1). It should be kept in mind that their relative contributions, i.e. their weight in the final prediction strongly differed between the two groups of viruses. It is noteworthy that the models outlined above were built using optimal number of trees estimated through spatial CV instead of standard CV, and this resulted in much lower optimal number of trees compared to standard CV models (Figure 3—figure supplement 2), suggesting that standard CV may be over fitting local clusters of presence points rather than making reliable large-distance predictions. The suitability maps of the models are presented in Figure 4. To interpret the extrapolation capacity of these suitability maps, multivariate environmental similarity surfaces (MESS) (Elith et al., 2010) were computed (Figure 4—figure supplement 3) giving information on where the models extrapolate within the range of predictor variables in the occurrence points. As observed, both models extrapolate prediction in areas with similar environmental conditions, as depicted by positive MESS values. However, the geographical space with high similarity to the occurrence point is comparatively wider for the HPAI H5N1 model, than for the H5Nx clade 2.3.4.4 models.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig3-v2.jpg)
 
-**Figure 3.:** BRT profiles or partial dependence plots of selected predictor variables for the global HPAI H5N1 (in blue) and H5Nx clade 2.3.4.4 model (in red). The BRT profiles provide a graphical description of the marginal effect of a predictor variable on the response (the probability of virus presence). The solid line represents the mean profile, whilst transparent lines represent each bootstrap. On the top of each plot, the density function of the observed distribution of predictors is displayed for one bootstrap and for the two datasets (HPAI H5N1- in blue and H5Nx clade 2.3.4.4- in red). Four predictor variables were selected for this figure: human population density (HpDnLg), extensive chicken density (ChDnLgExt), intensive chicken density (ChDnLgInt) and duck density (DuDnLg). The BRT profiles of Set 2, Set 3 and Set 4 predictor variables are represented in Figure 3—figure supplement 1. The optimal number of trees at which holdout deviance is minimised in the BRT models for all sets of predictor variables is represented in Figure 3—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.19571.006
+**Figure 3.:** BRT profiles or partial dependence plots of selected predictor variables for the global HPAI H5N1 (in blue) and H5Nx clade 2.3.4.4 model (in red). The BRT profiles provide a graphical description of the marginal effect of a predictor variable on the response (the probability of virus presence). The solid line represents the mean profile, whilst transparent lines represent each bootstrap. On the top of each plot, the density function of the observed distribution of predictors is displayed for one bootstrap and for the two datasets (HPAI H5N1- in blue and H5Nx clade 2.3.4.4- in red). Four predictor variables were selected for this figure: human population density (HpDnLg), extensive chicken density (ChDnLgExt), intensive chicken density (ChDnLgInt) and duck density (DuDnLg). The BRT profiles of Set 2, Set 3 and Set 4 predictor variables are represented in Figure 3—figure supplement 1. The optimal number of trees at which holdout deviance is minimised in the BRT models for all sets of predictor variables is represented in Figure 3—figure supplement 2.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** BRT partial dependence plots for the predictor variables for the global HPAI H5N1 (blue) and H5Nx clade 2.3.4.4 model (red) for Set 2, Set 3, and Set 4. Abbreviations of the variables are detailed in Table 1.DOI: http://dx.doi.org/10.7554/eLife.19571.007
+**Figure 3—figure supplement 1.:** BRT partial dependence plots for the predictor variables for the global HPAI H5N1 (blue) and H5Nx clade 2.3.4.4 model (red) for Set 2, Set 3, and Set 4. Abbreviations of the variables are detailed in Table 1.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Optimal number of trees at which holdout deviance is minimised (with standard deviation) for prediction in BRT models for HPAI H5N1 (top) and H5Nx clade 2.3.4.4 (bottom) for all sets of predictor variables, using standard and spatial cross validation (CV), showing the drastic reduction in optimal number of trees resulting form the spatial CV. The BRT models were trained with two sets of setting parameter, one set for each virus.DOI: http://dx.doi.org/10.7554/eLife.19571.008
+**Figure 3—figure supplement 2.:** Optimal number of trees at which holdout deviance is minimised (with standard deviation) for prediction in BRT models for HPAI H5N1 (top) and H5Nx clade 2.3.4.4 (bottom) for all sets of predictor variables, using standard and spatial cross validation (CV), showing the drastic reduction in optimal number of trees resulting form the spatial CV. The BRT models were trained with two sets of setting parameter, one set for each virus.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig4-v2.jpg)
 
-**Figure 4.:** Predicted probability of occurrence of HPAI H5N1 for the Set 1 (top) and of H5Nx clade 2.3.4.4 for the Set 4 (bottom) (Figure 4—source datas 1 and 2 respectively). The dashed black line represents a buffer around the occurrence data for the HPAI H5N1 and H5Nx clade 2.3.4.4 predictions, corresponding to an area from which pseudo-absences were selected. The circle inset shows the prediction obtained when the effect of the variable IsChina was removed. The suitability maps HPAI H5N1 and H5Nx clade 2.3.4.4 for Set 2 and Set 3 variables are presented in Figure 4—figure supplement 1 and Figure 4—figure supplement 2 , respectively. The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is Eckert IV (EPSG: 54012). This figure was built with the R-3.2.4 software (https://cran.r-project.org/). Additionally, Figure 4—figure supplement 3 depicts the Multivariate environmental similarity surfaces (MESS) maps for HPAI H5N1 and H5Nx clade 2.3.4.4 for the four sets of predictor variables.DOI: http://dx.doi.org/10.7554/eLife.19571.00910.7554/eLife.19571.010Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.19571.01010.7554/eLife.19571.011Figure 4—source data 2.DOI: http://dx.doi.org/10.7554/eLife.19571.011
+**Figure 4.:** Predicted probability of occurrence of HPAI H5N1 for the Set 1 (top) and of H5Nx clade 2.3.4.4 for the Set 4 (bottom) (Figure 4—source datas 1 and 2 respectively). The dashed black line represents a buffer around the occurrence data for the HPAI H5N1 and H5Nx clade 2.3.4.4 predictions, corresponding to an area from which pseudo-absences were selected. The circle inset shows the prediction obtained when the effect of the variable IsChina was removed. The suitability maps HPAI H5N1 and H5Nx clade 2.3.4.4 for Set 2 and Set 3 variables are presented in Figure 4—figure supplement 1 and Figure 4—figure supplement 2 , respectively. The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is Eckert IV (EPSG: 54012). This figure was built with the R-3.2.4 software (https://cran.r-project.org/). Additionally, Figure 4—figure supplement 3 depicts the Multivariate environmental similarity surfaces (MESS) maps for HPAI H5N1 and H5Nx clade 2.3.4.4 for the four sets of predictor variables.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** The dashed black line represents a buffer around the occurrence data for the HPAI H5N1 and H5Nx clade 2.3.4.4 predictions, corresponding to an area from which pseudo-absences were selected. This figure was built with the R-3.2.4 software (https://cran.r-project.org/). The shapefile data used to produce these maps were all from public sources. (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is Eckert IV (EPSG: 54012).DOI: http://dx.doi.org/10.7554/eLife.19571.012
+**Figure 4—figure supplement 1.:** The dashed black line represents a buffer around the occurrence data for the HPAI H5N1 and H5Nx clade 2.3.4.4 predictions, corresponding to an area from which pseudo-absences were selected. This figure was built with the R-3.2.4 software (https://cran.r-project.org/). The shapefile data used to produce these maps were all from public sources. (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is Eckert IV (EPSG: 54012).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Predicted probability of occurrence of HPAI H5N1 (top) and of H5Nx clade 2.3.4.4 (bottom) for the Set 3 variables. The dashed black line represents a buffer around the occurrence data for the HPAI H5N1 and H5Nx clade 2.3.4.4 predictions, corresponding to an area from which pseudo-absences were selected.. This figure was built with the R-3.2.4 software (https://cran.r-project.org/).The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is Eckert IV (EPSG: 54012).DOI: http://dx.doi.org/10.7554/eLife.19571.013
+**Figure 4—figure supplement 2.:** Predicted probability of occurrence of HPAI H5N1 (top) and of H5Nx clade 2.3.4.4 (bottom) for the Set 3 variables. The dashed black line represents a buffer around the occurrence data for the HPAI H5N1 and H5Nx clade 2.3.4.4 predictions, corresponding to an area from which pseudo-absences were selected.. This figure was built with the R-3.2.4 software (https://cran.r-project.org/).The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is Eckert IV (EPSG: 54012).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** Predicted probability of occurrence of HPAI H5N1 and of H5Nx clade 2.3.4.4 for the different sets of predictors, with the Multivariate environmental similarity surfaces (MESS) mask. The MESS mask covers areas that had predictor variables outside of the range of the predictor variable values in the occurrence points, as quantified by a negative MESS similarity index.DOI: http://dx.doi.org/10.7554/eLife.19571.014
+**Figure 4—figure supplement 3.:** Predicted probability of occurrence of HPAI H5N1 and of H5Nx clade 2.3.4.4 for the different sets of predictors, with the Multivariate environmental similarity surfaces (MESS) mask. The MESS mask covers areas that had predictor variables outside of the range of the predictor variable values in the occurrence points, as quantified by a negative MESS similarity index.
 
 As expected, high suitability values for the H5N1 HPAI model (Figure 4) are found in several parts of Asia, including China (when the effect of the IsChina variable is removed). Other areas where H5N1 HPAI has spread extensively are highlighted, such as eastern Indo-Gangetic plain, Thailand central plain, south Myanmar and the Red river and Mekong deltas of Vietnam, the island of Java in Indonesia and the Nile Delta in Egypt. The model also highlights areas where H5N1 HPAI was introduced but did not persist over long periods of time, such as in South Korea, Japan, Ukraine and Romania. Areas of western Africa, such as Nigeria, where the H5N1 HPAI outbreaks have been unfolding since late 2014 have been predicted as suitable by the model. Isolated parts in Eastern Europe, North America, Mexico, Dominican Republic and South America, are also deemed suitable for H5N1 establishment.
 
@@ -126,17 +415,17 @@ Our analyses have focussed on poultry outbreak locations and are therefore of mo
 
 ## Material and methods
 
-## H5 location data
+### H5 location data
 
-Two data sets corresponding to the two groups of viruses were compiled, respectively termed H5N1 HPAI, and H5 HPAI clade 2.3.4.4. The H5N1 HPAI data set was built from the database of the Global Animal Health Information System EMPRES-i of the FAO (
+Two data sets corresponding to the two groups of viruses were compiled, respectively termed H5N1 HPAI, and H5 HPAI clade 2.3.4.4. The H5N1 HPAI data set was built from the database of the Global Animal Health Information System EMPRES-i of the FAO (Food and Agriculture Organization of the United Nations, 2016) (http://empres-i.fao.org/). A total of 17,068 confirmed outbreaks from January 2004 to March 2015 in poultry were used for this analysis, with the majority of outbreaks located in Asia, and no reports of H5N1 HPAI (not being of clade 2.3.4.4) in the Americas (Figure 5). In the absence of specific clade information on any given H5N1 HPAI outbreaks from 2013 onward, it was assumed to belong to the H5N1 HPAI data set (i.e. not being from clade 2.3.4.4). This may have resulted in some misclassification of some outbreaks in Eurasia, but their number relative to the total number of H5N1 HPAI outbreaks would be very low (<50) given the limited time period.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig5-v2.jpg)
 
-**Figure 5.:** Geographic distribution of presence points of HPAI H5N1 (blue) and HPAI H5Nx clade 2.3.4.4 (red). The pseudo-absences are represented in light blue, light red and light brown. This figure was built with the R-3.2.4 software (https://cran.r-project.org/). The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is 'EPSG: 54012'.DOI: http://dx.doi.org/10.7554/eLife.19571.015
+**Figure 5.:** Geographic distribution of presence points of HPAI H5N1 (blue) and HPAI H5Nx clade 2.3.4.4 (red). The pseudo-absences are represented in light blue, light red and light brown. This figure was built with the R-3.2.4 software (https://cran.r-project.org/). The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is 'EPSG: 54012'.
 
 The H5 HPAI clade 2.3.4.4 data set was built by combining EMPRES-i outbreak location data with clade information from the Swiss Institute of Bioinformatics OpenFlu database (http://openflu.vital-it.ch/) using the procedure detailed in Claes et al. (2014). In addition, searches on ProMed (http://www.promedmail.org/), the United States Department of Agriculture reports (http://www.usda.gov/avian_influenza.html), and other online literature were used for assignation of clade to H5 outbreaks. These included the H5N8, H5N2, H5N6, H5N3 and the recent H5N1 sequences from November 2013 to 15 June 2015. While this procedure was fairly straightforward for the newly emerged H5N8, H5N2, H5N6, H5N3 viruses, it was more challenging to assign a clade to the most recent H5N1 outbreaks. Hence, this H5 HPAI clade 2.3.4.4 data set only included those H5N1 outbreak records occurring after November 2013 that could be classified as clade 2.3.4.4, based upon documented evidence and confirmation from the above sources. This resulted in a dataset with 1309 outbreaks in poultry recorded as belonging to clade 2.3.4.4 from November 2013 to 15th June 2015 (Figure 5), involving 17 affected countries.
 
-## Spatial predictor variables
+### Spatial predictor variables
 
 Predictor variables traditionally associated with HPAI occurrence summarised in a recent literature reviews (Gilbert and Pfeiffer, 2012) were selected in addition to a few others. Three categories of variables were included: hosts, land use/land cover and eco-climatic variables. Host variables included log10-transformed extensive and intensive chicken density (Gilbert et al., 2015), duck density (Robinson et al., 2014) and human population density. Whilst the poultry variables were available as global databases (with the exception of ducks, which were computed as detailed below), the human population density layer was built from two different data sources; the Worldpop database (http://www.worldpop.org) in all countries where it was available across Africa (Linard et al., 2012), Asia (Gaughan et al., 2013) and South America (Sorichetta et al., 2015) and the Center for International Earth Science Information Network’s Gridded Population of the World (GPW) database elsewhere (Socioeconomic Data and Applications Center, 2016) (http://sedac.ciesin.columbia.edu/entri). Since both data sets are standardised to match UN national totals, these two databases should be consistent against each other.
 
@@ -148,7 +437,7 @@ Finally, an additional covariate to account for mass vaccination of poultry agai
 
 The predictor variables were categorised into four sets to predict the probability of virus presence (Table 1). Set 1 included the host variables of extensively (ChDnLgExt) and intensively raised chicken density (ChDnLgInt), duck density (DuDnLg), human population density (HpDnLg) and the effect of mass vaccination in China (IsChina). Set 2 included the land use and land cover variables and IsChina, whereas Set 3 included all eco-climatic variables and IsChina. Finally, Set 4 included a selection of variables from the earlier sets that were selected on the basis of prior epidemiological knowledge (Gilbert and Pfeiffer, 2012). These included all variables from Set 1 in addition to (i) the land cover ‘Cultivated and Managed Vegetation’ class accounting for the association between poultry and cropping patterns, (ii) the land cover ‘Open Water’ and ‘Distance to water’ class accounting for the persistence of the virus in landscapes rich in water environment, variables previously found associated with H5N1 HPAI presence in China (Shaman and Kohn, 2009), (iii) the day LST annual mean to account for the persistence of virus in the environment which has been shown to vary with temperature (Liu et al., 2007; Zhang et al., 2014). The combination of variables from Set 1 and Set 2 on one hand (Set 2.1), and of Set 1 and Set 3 (Set 3.1) on the other hand were also investigated.
 
-## Modelling procedure
+### Modelling procedure
 
 Boosted Regression Tree (BRT) models (Elith et al., 2006) were employed to predict the probability of occurrence of H5N1 HPAI viruses and H5Nx HPAI clade 2.3.4.4, as a function of the sampled predictor variables. We used BRT as it allows for modelling of complex non-linear relationships to be modelled using various types of predictor data and takes into account the interactions between predictor variables (Elith et al., 2008). BRT models generate a large number of regression trees, fitted in a stepwise manner, for optimising the predictive probability of occurrence based on predictor variable values, as compared to several other modelling methods (Elith et al., 2006) and has been shown to produce accurate predictions of H5N1 (Martin et al., 2011) and H7N9 subtypes (Gilbert et al., 2014).
 
@@ -158,11 +447,11 @@ With dynamically spreading pathogens, ‘absences’ may result from a genuine u
 
 To select the optimal number of trees in the BRT models, the k-fold cross validation procedure described in Elith et al. (2008) was employed, using the R package dismo. Each model was run with four different sets of predictor variables to measure their respective predictive power. In addition, the weight of each predictor variable was also evaluated individually by their relative contribution, a metric was produced that described the proportion of times a particular variable was selected by the model for splitting a decision tree, and the overall improvement it brought to the model (Friedman and Meulman, 2003). In addition to the standard random cross-validation procedure of Elith et al., (2008), a calibrated cross-validation was also computed to account for the SSB (Hijmans, 2012). Clustering of occurrences in species distribution models may lead to inflation of cross-validation metrics because the distance between training-presence and testing-presence sites will tend to be smaller than the distance between training-presence and testing-absence sites (referred to as SSB). To account for SSB, the testing data were sub-sampled using the distance to training data. The first step in this approach is to compute, for each testing-presence site, the distance to the nearest training-presence site. During the sub-sampling procedure, each testing-presence site is paired with the testing-absence site that has the most similar distance to its nearest training-presence site. If the difference between the two distances is more than a specified threshold (33%) the presence site is not used. This procedure ensures that clustering of presence data is accounted for and avoids the inflation of model evaluation metrics.
 
-In addition, we implemented spatial CV, whereby training and testing sets are partitioned on a spatial basis, in order to quantify how model predictions could extrapolate geographically (
+In addition, we implemented spatial CV, whereby training and testing sets are partitioned on a spatial basis, in order to quantify how model predictions could extrapolate geographically (Gilbert et al., 2014; Randin et al., 2006; Wenger and Olden, 2012). Disease outbreak data are typically clustered, or spatially autocorrelated, and this may bias standard cross validation (CV) procedures because the training and validation data sets are not independent from each other (Randin et al., 2006). A possible consequence is that the goodness of fit metrics provided by the standard CV procedure may overestimate the real capacity of the model to make reliable predictions in areas distant from the training set. The spatial CV procedure was performed by partitioning non randomly the study area into five spatial clusters (Figure 6) by first selecting five reference presence points. A minimum distance was specified between the selected points to obtain a balanced sample size between the clusters. These selected points represent the benchmarks to build the five-folds/clusters of the spatial CV models. Thereafter, the nearest benchmark presence to each observation is identified and labelled with this benchmark point. Finally, the five clusters containing presences and absences are delineated and are used as folds in the spatial cross validation procedure. In the procedure described by Elith et al. (2008), an optimal number of trees for the BRT model is found by finding the minimum deviance to the evaluation set. By replacing the standard CV by the spatial CV, we also allow the optimal number of trees to correspond to the minimum deviance in a geographically distant evaluation set. Both the BRT models were run with the following parameters; a tree complexity of 4, and the initial number of trees set at 100. For the HPAI H5N1 and clade H5Nx 2.3.4.4 model, a learning rate of 0.01 and 0.005, respectively, was used. A step size of 200 and 50 trees was used for the HPAI H5N1 and clade H5Nx 2.3.4.4 models, respectively.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19571/elife-19571-fig6-v2.jpg)
 
-**Figure 6.:** Visualisation of a typical partition used for the spatial cross-validation of the H5N1 HPAI (top) and H5Nx clade 2.3.4.4 (bottom). The presence and pseudo-absences are partitioned into k (five) clusters for training and testing set. One cluster is used for testing data and k-1 clusters are used for sampling training data. The k (five) reference presence points (randomly sampled in each bootstrap) used to build each clusters are represented in black in the map. The code used for implementing the spatial cross validation is detailed in Source code 1. This figure was built with the R-3.2.4 software (https://cran.r-project.org/). The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is 'EPSG:54012.DOI: http://dx.doi.org/10.7554/eLife.19571.016
+**Figure 6.:** Visualisation of a typical partition used for the spatial cross-validation of the H5N1 HPAI (top) and H5Nx clade 2.3.4.4 (bottom). The presence and pseudo-absences are partitioned into k (five) clusters for training and testing set. One cluster is used for testing data and k-1 clusters are used for sampling training data. The k (five) reference presence points (randomly sampled in each bootstrap) used to build each clusters are represented in black in the map. The code used for implementing the spatial cross validation is detailed in Source code 1. This figure was built with the R-3.2.4 software (https://cran.r-project.org/). The shapefile data used to produce these maps were all from public sources (http://www.naturalearthdata.com/). The graticule is composed of a 20-degree increments and the coordinate system is 'EPSG:54012.
 
 All BRT models were bootstrapped across 20 values of maximum distance to the presence point. For each set of parameters, five splits of training and testing dataset were randomly sampled to compute the CV metrics. All in all, 100 bootstraps were used per group of viruses and per set of predictor variables. The GOF of the models was calculated using Area Under the Receiver Operating Curve (AUC) metrics, and the mean predictions from the bootstrapped models were generated on a continuous scale of 0 to 1 for each pixel, to be mapped over the study area.
 

@@ -38,41 +38,374 @@ Here, we designed experiments to identify and characterize hippocampal neurons t
 
 ## Results
 
-## Behavioral profiling
+### Behavioral profiling
 
 We conducted a delay-based decision-making task in mice using the T-maze, in which mice chose between right or left goal arms, with each arm containing a small reward or large reward, and with or without delay, respectively (Figure 1A). In total, we employed five behavioral conditions, with each session consisting of about 10 trials within 30 min, with a 20 s inter-trial interval at the start zone.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram for the experimental setup. Mice can choose the right or left arms assigned to obtain the small reward without delay or the large reward with delay, respectively. (B) Flow of the extension conditions. The delay lengths were extended sequentially. Red circles indicate the number of sugar pellets. (C) Percentages of large-reward choices as a function of delay length. Error bars indicate the standard error of the means (SEM).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The arrow indicates time flow. Mice individually had 10–20 trials for each delay condition (0, 5, 10, 20 and 40 s) in the right or left arm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** All the experimental conditions were performed in different weekly sessions.
+
 To examine the impact of delay on decision making, we changed the delay length sequentially. Once mice showed a preference for the large reward arm (>80%) we increased the length of delay in a stepwise fashion (e.g., 0, 5, 10, 20, and 40 s; Figure 1B; Figure 1—figure supplement 1). With the inclusion of a delay, preference for the large reward arm decreased as a function of delay length (Figure 1C). The whole schedule of experiments is shown in Figure 1—figure supplement 2.
 
-## Delay-dependent neuronal activity in CA1
+### Delay-dependent neuronal activity in CA1
 
 We recorded extracellular single units and local-field potentials (LFPs) from the CA1 region in a total of 28 mice (Figure 2—figure supplement 1) during delay-discount behavior, and classified cells as putative excitatory neurons or inhibitory neurons on the basis of the characteristics of their extracellular waveform (Figure 2—figure supplement 2; see 'Materials and methods'). We first analyzed LFP signals in the CA1 region during delay periods. Consistent with the active movement of the mice, sharp-wave/ripples (SWRs) were rarely observed (Z=2.19, p=0.03, for start and stem zones vs delay zone; Z=2.40, p=0.02, for delay zone vs goal zone; Mann-Whitney U Test; Figure 2A and B) and the LFP was dominated by theta-range (7–11 Hz) activity (Figure 2C and D), suggesting that the circuit remained engaged during this phase. We then examined the activity of excitatory neurons (Table 1) during specific task events, the exit from the start zone (start), the entrance/exit of the delay zone (delay), and the entrance to the goal zone (goal). In CA1, a subset of neurons exhibited delay-related activity, with firing rate rising during longer delays (>20 s) (Figure 3A), whereas a distinct subset fired only under short delay conditions, decreasing their firing rate as the delay length increased (Figure 3B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig2-v2.jpg)
+
+**Figure 2.:** (A) Sharp-wave/ripple events (SWRs) rarely occurred during the delay in the task (data from one session of delay 20 s extension conditions). Red asterisks indicate the locations of SWRs. Black and gray dots indicate the path of animal movements before (black) and after arriving at the goal (gray), respectively. (B) SWRs per session in specific experimental zones. The total number of SWRs for each zone was counted and color-coded according to individual animals (the average number of events acquired from 3 sessions of delay 20 s extension conditions). *, p<0.05, Mann-Whitney’s U-test. (C) Spectrogram of the hippocampal CA1 region during the peri-delay period (averaged from three mice, total six sessions of delay 20 s extension conditions) Green line: delay-onset; red line: estimated goal-onset. (D) Power spectrum density during 2 s at the beginning of the delay. Shaded area indicates ± SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) An example of a hippocampal slice with DiI pasted at the tip of the electrode and DAPI staining. White arrows indicate inserted points. (B) Electrode tracks are represented by colored dots corresponding to the subjects. The recording electrodes for M9, M10, M18, M24, and M26 were silicon probes (A4-2tet-5mm-150-200-121-H32, NeuroNexus), and M17, M25, M28, M29, M30 and M31 were nichrome tetrodes. All of the electrodes were set on the microdrives and adjusted to the targeting cites.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Red triangles indicate excitatory neurons, while blue circles indicate inhibitory neurons. The dotted line indicates classification criteria for excitatory and inhibitory determinations.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig3-v2.jpg)
 
 **Figure 3.:** (A) An example of CA1 delay-active (delay-act) cells, which showed an increment in the firing rate as a function of delay length. Left, raster plots of the firing activity of the cells aligned with start-onset (top), delay-onset (middle) and goal-onset (bottom). Orange lines indicate start-onset. Green lines indicate delay-onset. Pale red lines indicate expected delay-offset. Red lines indicate goal-onset. Center, peristimulus time histograms (PSTHs) of the firing activity of the cells aligned with start-onset (top), delay-onset (middle) and goal-onset (bottom). Right, color-coded rate maps. The delayed arm was assigned to the right side with a large reward for this recording session. Red dots indicate the number of sugar pellets. (B) An example of CA1 delay-suppressed cells, which showed a decrement in the firing rate during delay. The delayed arm was assigned to the right side with a large reward for this recording session.
 
+**Table 1.**
+ The number of delay-active and delay-suppressed CA1 excitatory and inhibitory neurons recorded from all sessions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Delay-active</th>
+      <th>Delay-suppressed</th>
+      <th>Other</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excitatory neurons</td>
+      <td>243</td>
+      <td>313</td>
+      <td>83</td>
+      <td>639</td>
+    </tr>
+    <tr>
+      <td>Inhibitory neurons</td>
+      <td>43</td>
+      <td>100</td>
+      <td>26</td>
+      <td>169</td>
+    </tr>
+  </tbody>
+</table>
+
 We next asked whether neurons significantly altered their firing rate during long delays compared with other phases of the task (see 'Materials and methods'). We found that across all task conditions, large numbers of neurons exhibited significant increases (CA1: 243/639 units: 38.0%) or decreases (CA1: 313/639: 48.9%) in their firing rates during the delay (Table 1). We termed these delay-active (delay-act) and delay-suppressed (delay-sup) neurons, respectively (Figure 4A). Comparison between the firing rates for short delays (5 s) and those for long delays (20–40 s) revealed that some delay-act and delay-sup cells exhibited significant elevation or reduction of firing rates for specific delay lengths (Figure 4B). At the population level, peak firing times of both CA1 delay-act and delay-sup cells were highly distributed across the time spent in the delay zone (Figure 4C). To assess the population activity of CA1 cells during the task, we examined the autocorrelation of the population vectors under long-delay conditions (Figure 4D). The population activity of both delay-act and delay-sup cells was clearly segmented into three periods — start, delay and goal — with differential patterns of sustained activity in each. Similar population codes were found in inhibitory CA1 neurons (Figure 4—figure supplement 1). We next analyzed the population codes across the individual experimental conditions. We found a uniform-like distribution only under the both-side condition (Kolmogorov–Smirnov test; Salz et al., 2016; p=0.46 for the both-side condition; p<0.05 for all other conditions; Figure 4—figure supplement 2), while the remaining three protocols found activity biased towards the early part of the delay.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig4-v2.jpg)
+
+**Figure 4.:** (A) The distribution of delay-active and delay-suppressed cells aligned with the ratio of firing rate in the long delay period and in whole trials. (B) The ratio of mean firing rate during long delays (20 or 40 s) to that during short delay (5 s) for all neurons (base-10 log-transformed). Each dot indicates an individual neuron. Black dots indicate neurons that had a statistically significant difference in firing rate between short and long delay conditions (p<0.001). (C) Temporal patterns of firing rates in CA1 delay-active and delay-suppressed cells during delay. Top, color-coded temporal firing patterns. Neurons were ordered by the time of their peak firing rates. Bottom, temporal distribution of the peak firing rates of the neurons. Green lines indicate delay-onset. Pale red lines indicate expected delay-offset. (D) Correlation matrix of population vectors as a function of time for CA1 delay-active and delay-suppressed cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Temporal patterns of firing rates in inhibitory CA1 delay-active and delay-suppressed cells during delay. Top, color-coded temporal firing patterns. Neurons were ordered by the time of their peak firing rates. Middle, temporal distribution of the peak firing rates of the neurons. Green lines indicate delay-onset. Pale red lines indicate expected delay-offset. Bottom, correlation matrix of population vectors as a function of time for CA1 delay-active and delay-suppressed cells.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Temporal patterns of firing rates in CA1 delay-active cells from all conditions (center), extension (upper left), switch (lower left), both-side (upper right), and reward loss (lower right) conditions. A relatively uniform distribution of peak firing rate was found in both-side conditions (one sample kstest, p=0.46) compared to the other conditions (p<0.001, for extension; p<0.001, for switch; and p=0.01, for Reward lose). Top, color-coded temporal firing patterns. Neurons were ordered by the time of their peak firing rates. Bottom, temporal distribution of the peak firing rates of the neurons. Green lines indicate delay-onset. Pale red lines indicate expected delay-offset.
 
 When we examined the activity of neurons sequentially recorded under all possible delays, we found that lengthening the delay dynamically altered activity, with a substantial fraction of units demonstrating a significant correlation between firing rate and delay length (mean firing rate, 20/58 [34.5%], peak firing rate, 46/58 [79.3%] for delay-act; mean firing rate 31/83 [37.3%], peak firing rate, 60/83 [72.3%] for delay-sup; p=0.01, permutation test, for percentages; Table 2, Figure 5). This indicates that the hippocampus may encode delay length at the level of individual neurons. Peak firing rates may be a better indicator, as mean firing rates at different delay lengths will result in deformative normalization. Further, decoding analysis using support vector machine (SVM) confirmed that the population codes of firing pattern can also predict delay length (classification into five different delay conditions) (Figure 5—figure supplement 1; see 'Decoding of delay length from population spike activity' in 'Materials and methods'). Taken together, the hippocampus may encode delay length using dual coding schemes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scatter plots show correlations between firing rate during delay (upper, peak firing rate; lower, mean firing rate) and the delay length of five representative delay-act cells. Cells A and B show positive correlations in both peak and mean firing rate; on the other hand, cell C shows either. Cells D and E show negative correlations. (B) Distribution of correlation coefficients between firing rate (left, peak firing rate; right, mean firing rate) and delay length in delay-act cells. Dark color bars indicate statistically significant neurons (p<0.05), whereas bright color bars indicate neurons do not reach statistical significance. (C) Scatter plots show correlations between firing rate during delay (upper, peak firing rate; lower, mean firing rate) and delay length for five representative delay-suppressed cells. (D) Distribution of correlation coefficients between firing rate (left, peak firing rate; right, mean firing rate) and delay length in delay-suppressed cells. Dark color bars indicate statistically significant neurons (p<0.05), whereas bright color bars indicate that neurons do not reach statistical significance.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of the SVM decoding of delay length. Spiking trains of five delay conditions (0, 5, 10, 20 and 40 s) are transformed into normalized firing rates as training datasets. The population rate estimates are binned (200 ms) and those of 5 s (25 bins) were coupled and given in the multiclass models for SVM as training datasets. Testing datasets are produced with the spike activity of the next trial. Two control testing datasets are created by shuffling the labels of conditions and/or neurons. (B) Representative result of delay length decoding computed from the spike activity of 28 neuron from one animal (M9). The blue line indicates the probability of correct prediction (predicted from observed but untrained testing data). Red and magenta lines indicate the result of shuffled testing inputs (red: neuron shuffled; magenta: neuron and condition shuffled). (C) Color-coded correction rate map for the five delay conditions (0, 5, 10, 20 and 40 s) and total average. Top, result for observed inputs; middle, result for neuron-shuffled inputs; bottom, result for neuron- and condition-shuffled inputs. (D) Averaged decoding results from population spikes of five animals (M9, 28 neurons; M10, 43 neurons; M17, 22 neurons; M25, 34 neurons; and M27, 23 neurons). Data are shown as mean ± SEM. Red **: observed vs neuron shuffled, p<0.001; magenta **, observed vs neuron and condition shuffled, p<0.001; group effect, F2=882.1, p<0.001, two-way ANOVA. (E) The decoding results of individual delay length. Color-coded rate maps for the five delay conditions (0, 5, 10, 20 and 40 s) and total average. Top, result for observed inputs; middle, result for neuron-shuffled inputs; bottom, result for neuron- and condition-shuffled inputs. Data from five mouse were used.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Firing gradually shifted backward. (B) Task schedule for comparison of firing patterns between pre- and post-long delay-session(s). (C) Normalized firing rate sorted by peak firing rate time in pre- (left) and post-long-delay-sessions (center). The order of the cells in the pre- and post-long-delay-sessions was identical. Difference in peak firing time between pre- and post-long-delay-session (sorted by time; right).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Temporal patterns of firing rates in CA1 delay-length-correlated and non-correlated cells during delay. Top, color-coded temporal firing patterns. Neurons were ordered by the time of their peak firing rates. Middle, temporal distribution of the peak firing rates of the neurons. Green lines indicate delay-onset. Pale red lines indicate expected delay-offset. Bottom, correlation matrix of population vectors as a function of time for CA1 delay-active and delay-suppressed cells.
+
+**Table 2.**
+ Full distribution of CA1 excitatory neurons for all of the tested conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Test conditions</th>
+      <th>Delay responsiveness</th>
+      <th>Neuron number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Extension</td>
+      <td>Delay-active</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Delay-suppressed</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Switched or both-side</td>
+      <td>Delay-active</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <td>Delay-suppressed</td>
+      <td>191</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Reward loss or gain</td>
+      <td>Delay-active</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Delay-suppressed</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
 Given the learning-dependent development of hippocampal firing during delay period (Gill et al., 2011), we also examined the time shift of firing by delay changes. At the beginning of the daily recording session, about 10% (4/33) of delay-act cells initially fired after the animal reached the goal in the 0 s delay condition, then shifted their firing to the delay period once a delay was introduced (Figure 5—figure supplement 2). Interestingly, subsequent elimination of the delay did not result in return to goal-related activity (Figure 5—figure supplement 2A). When we compared the firing of CA1 delay-act cells under identical short delay trials occurring before and after long-delay trial blocks (Figure 5—figure supplement 2B), we found about 10% of neurons shifted positively or negatively (Figure 5—figure supplement 2C), indicating that the onset of firing in the CA1 neurons was influenced by the experience of waiting and/or learning of the delay.
 
-## Place-specific delay information is encoded in the majority of CA1 neurons
+### Place-specific delay information is encoded in the majority of CA1 neurons
 
 Given the robust place code present in the hippocampus, we next asked whether CA1 delay-act neurons were spatially selective. To this end, we switched the location of the delay and no-delay arms (switched conditions) or replicated the delay on the other side (both-side conditions) (Figure 6A, Figure 6—figure supplement 1), with corresponding changes in reward size. Under both conditions, the mice changed their behavior within several trials, with the preference for the large reward arm reaching about 70%. We then evaluated side-selectivity of the delay activity, adding location as a variable under three-way ANOVA (side, delay-length, and timing; see 'Materials and methods') during switched and both-side trials (Figure 6A). Representative side-selective and -unselective excitatory neurons in the CA1 are shown in Figure 6B. The percentage of side-selective neurons was high in both CA1 delay-act (114/155: 73.5%) and delay-sup(124/191: 64.9%) neurons (Figure 6C and Tables 2 and 3), however more than a quarter of the neurons of both groups encoded delay independent of location.
 
-## Value-coding in CA1 neurons
+![Figure 6.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental conditions to investigate the location selectivity in delay-active neurons. The location of the delay zone was switched to the other side (switched conditions) or doubled to both sides (both-side conditions). (B) Example CA1 delay-active and delay-suppressed cells. Side-dependent and side-independent neurons are shown as left and right rows, respectively. Top left, colored raster plots expressing relative firing rates. Green lines indicate delay-onset. Pale red lines indicate expected delay-offset. Top right, information of conditions corresponded to the raster plots on the left. Red dots indicate the number of sugar pellets. Bottom left, Peri-event time histograms showing the averaged firing rates. Magenta lines indicate the firing rate of the left choice with a 20 s delay. Black-filled histograms indicate the firing rate of the right choice with a 20 s delay. Bottom right, color-coded rate maps for the two conditions (normal delay and switch or both-side conditions). (C) Percentage of place-dependent and -independent CA1 delay-active and delay-suppressed neurons. Error bars indicate 95% Clopper-Pearson’s confidence intervals. **: p<0.01, Mann-Whitney’s U-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig6-figsupp1-v2.jpg)
+
+**Table 3.**
+ Distribution of side-dependent and side-independent, delay-active and delay-suppressed, CA1 excitatory and inhibitory neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Delay responsibility</th>
+      <th>Side-dependency</th>
+      <th>Cell types</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Delay-active</td>
+      <td rowspan="2">Side-dependent</td>
+      <td>Excitatory neuron</td>
+      <td>114</td>
+      <td>73.5</td>
+    </tr>
+    <tr>
+      <td>Inhibitory neuron</td>
+      <td>12</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Side-independent</td>
+      <td>Excitatory neuron</td>
+      <td>41</td>
+      <td>26.5</td>
+    </tr>
+    <tr>
+      <td>Inhibitory neuron</td>
+      <td>8</td>
+      <td>40.0</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Delay-suppressed</td>
+      <td rowspan="2">Side-dependent</td>
+      <td>Excitatory neuron</td>
+      <td>124</td>
+      <td>64.9</td>
+    </tr>
+    <tr>
+      <td>Inhibitory neuron</td>
+      <td>45</td>
+      <td>71.4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Side-independent</td>
+      <td>Excitatory neuron</td>
+      <td>67</td>
+      <td>35.1</td>
+    </tr>
+    <tr>
+      <td>Inhibitory neuron</td>
+      <td>18</td>
+      <td>28.6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Value-coding in CA1 neurons
 
 We next asked how subjective value influenced the activity of the delay-act and delay-sup neurons in CA1. As mentioned above, delay and reward are common factors that modulate subjective value. To examine whether the changes of delay period firing patterns in delay increment were correlated with changes in reward size, we first lengthened the delay length and subsequently decreased the reward for the delayed option (reward loss conditions) and followed this by restoration of reward. In addition, we manipulated the reward size in the opposite direction to avoid order-dependent confounds arising from decreased hunger or motivation of the animals in later trials (reward gain conditions; Figure 7A, Figure 7—figure supplement 1). The majority of delay-act cells decreased their firing rate in response to reward loss, whereas delay-sup neurons had the opposite response, increasing their activity (Figure 7B and C). As a result, the log ratio of the firing rates (large reward/small reward) under both reward loss and gain conditions was significantly different between delay-act and delay-sup cells (Z = −2.6, p=0.007 for reward loss; Z = 2.1, p=0.03 for reward gain, Mann-Whitney’s U-test). In total, the ratio was negatively skewed in the delay-act cells (T = −2.5, p=0.01, one-sample t-test) but positively skewed in delay-sup cells (T = 2.7, p=0.01, one-sample t-test, Figure 7D). These results suggest that firing during the delay independently reflected positive and negative outcomes in these different subpopulations of CA1 neurons. Finally, we examined the relation between firing rate changes ‘by delay extension’ and ‘by reward manipulations’ to explore whether value, a more general concept of information, may be neutrally encoded. In both delay-act and delay-sup cells, there was no global trend, but a subset of neurons, plotted around the line of ‘delay effect = reward effect’ (Figure 7E), can be interpreted as value-coding neurons.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig7-v2.jpg)
+
+**Figure 7.:** (A) Left, experimental reward loss conditions: the reward size was changed from 4 to 1 (or 0) pellets. Right, experimental reward gain conditions: the reward size was changed from 1 (or 0) to 4 pellets. (B) Example CA1 delay-active (top) and delay-suppressed cells (bottom) fired during delay in reward loss conditions. Green lines indicate delay-onset. Red lines indicate expected delay-offset. Red dots indicate the number of sugar pellets. (C) Ratio of firing rates of delay-active and -suppressed cells in reward loss and gain conditions. Dots indicate individual data for delay-active cells (red) and delay-suppressed cells (blue). Central bars indicate the medians. *, p<0.05; **, p<0.01, Mann-Whitney’s U-test. (D) Ratio of firing rates of delay-active and -suppressed cells in mixed population. Error bars indicate SEM. *, p<0.05; **, p<0.01, One-sample t-test. (E) Scatter plots of firing rate ratios between small/large reward conditions and between long delay/short delay conditions. The computed correlation coefficient R and p value are indicated.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Forced conditions in which the animals were forced to choose one side by a partition (here, left side). The yellow line indicates the trial converted to forced conditions. (A) The firing in the left side disappeared when the preference to the left side was extinguished. (B) Simultaneously, other neurons showed increased firing when the preference recovered to the other side (here, the right side).
+
 We next focused on the relationship between the behavioral shift during reward loss sessions and the firing patterns of delay-act cells. If CA1 activity is dependent on the animals’ choice preference, the activity should be dynamically changed after the elimination of preference. However, across the session, animals avoided the delayed option, making it difficult to observe CA1 activity under this condition. To eliminate the preference for the delayed options, we designed an ‘unequal conditions’ (long delay + no pellet vs long delay + four pellets, with the latter being the better option). Animals then quickly reduced their preference to the delayed option with no reward. To record the activity for the less-preferred or adverse choice, we forced mice to choose the less-preferred option with an obstacle set at the entrance of the opposite arm. When faced with an unrewarded delayed option, CA1 neurons indicating choice preference were silent (Figure 7—figure supplement 2). These results suggest that the firing of delay-act neurons in the CA1 region represents the animal’s subjective value of the chosen options.
 
-## NMDAR deficiency in hippocampus disrupted delay-discounting and populational delay coding in CA1
+### NMDAR deficiency in hippocampus disrupted delay-discounting and populational delay coding in CA1
 
 Finally, we took advantage of a mutant mouse, the CaMK2-Cre; NR1-flox/flox mouse, which lacks CA1 pyramidal cell N-methyl-D-aspartate (NMDA) receptors (NMDARs) (CA1-NR1cKO mouse; McHugh et al., 1996; Tsien et al., 1996a), RRID:MGI:3581524), to assess the role of synaptic plasticity in task performance. Consistent with previous reports of hippocampus-dependent learning deficits in these mice (Bannerman et al., 2012; Rondi-Reig et al., 2001; Tsien et al., 1996b), they exhibited impaired delay discounting (Figure 8A), demonstrating a significant bias for the larger reward even when the delay was extended (F1 = 14.4, p<0.001, genotype (CA1-NR1cKO vs NR1 f/f); F4 = 23.0, p<0.001, interaction between delay length x genotype, F1,4 = 1.07, p=0.37, two-way ANOVA, p=0.61 on delay 0 s, p=0.04 on delay 5 s, p=0.04 on delay 10 s, p=0.002 on delay 20 s, p=0.005 on delay 40 s, multiple comparisons on each delay length).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig8-v2.jpg)
+
+**Figure 8.:** (A) Impaired delay-discounting in CA1-NR1 cKO mice. *, p<0.05; **, p<0.01; post-hoc Scheffe’s test. Error bars indicate SEM. (B) NMDAR deficiency disrupted the delay tuning in the CA1 activity. Average firing patterns of the CA1 delay-active cells from cKO and control mice for different delay lengths (0, 5, 10, 20, and 40 s). (C) Abnormal delay-active and –suppressed cell proportion in cKO mice. Ratio of delay-act cells to delay-sup cells for cKO and control mice. Error bars indicate 95% Clopper-Pearson’s confidence intervals. *, p<0.05; Mann–Whitney’s U test. (D) NMDAR deficiency disrupted the populational activity in CA1. Top, color-coded temporal firing patterns of the CA1 delay-active cells in cKO and control mice. Neurons were ordered by the time of their peak firing rates. Middle, temporal distribution of neurons. Green lines indicate delay-onset. Red lines indicate expected delay-offset. Bottom, correlation matrix of population vectors as a function of time for CA1 delay-act cells in cKO and control mice. (E) NMDAR deficiency disrupted the negative skew in the firing rate ratio of delay-active cells. Ratio of firing rates of delay-active cells in CA1 of cKO and WT mice. Dots indicate individual data for cKO (gray) and control (black) mice. The central bar indicates the median. *, p<0.05; Mann–Whitney’ U test.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52466/elife-52466-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Spatial representation of example neurons from delay-act in CA1-NR1cKO (upper) and control mice (lower). Arrows indicate areas with non-specific firing. (B) Percentages of delay-act and delay-sup cells in mutant and control mice. Error bars indicate 95% Clopper-Pearson’s confidence intervals.
+
 We next recorded CA1 neuronal activity in cKO (n = 3, 123 units) and control mice (n = 4, 69 units, Table 4 and Table 5) to look for physiological correlates of the behavioral change. Delay-act cells in the cKO mice showed non-specific activation during the delay period (Figure 8B and Figure 8—figure supplement 1A). Hence, there was a lower and higher proportion of delay-act and delay-sup neurons, respectively, in the cKO and the ratio of delay-act/delay-sup was significantly lower in the cKO than in the control mice (Figure 8C, p=0.02, Fisher’s Exact Test, Figure 8—figure supplement 1B). Further, in contrast to the controls, the temporal distribution of all delay-act cells in the cKO was sparse and not specific to delay-onset. As a result, population vector analysis revealed that the activity was not segmented into three periods in the cKO mice (Figure 8D). In addition, the ratio of CA1 firing of cKO was significantly different than that observed in control mice and lacked the expected negatively skewed distribution (Z = 2.0, p=0.04, Mann-Whitney’s U-Test, Figure 8E). We could not detect significant difference among the genotypes in basic firing property during the task (mean firing rate, cKO — 3.07 Hz, control — 3.39 Hz, Z = −0.76, p=0.44, Mann-Whitney’s U-test). Subpopulation firing rates were also not significantly different (delay-act, cKO — 2.66 Hz, control — 3.13 Hz, Z = −0.91, p=0.35; delay-sup, cKO — 3.47 Hz, control — 3.47 Hz, Z = −0.68, p=0.14, Mann-Whitney’s U-test). These findings suggest that delay discount behavior and the underlying delay-related activity in CA1 pyramidal cells requires NMDAR-dependent mechanisms in the hippocampus.
+
+**Table 4.**
+ Full distribution of CA1 excitatory neurons for the NMDAR mutant study.The numbers in parentheses are cells from the wildtype.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Test conditions</th>
+      <th rowspan="2">Delay responsiveness</th>
+      <th colspan="2">Neurons</th>
+    </tr>
+    <tr>
+      <th>cKO</th>
+      <th>Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Extension</td>
+      <td>Delay-active</td>
+      <td>28</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Delay-suppressed</td>
+      <td>56</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>22</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Reward loss and gain</td>
+      <td>Delay-active</td>
+      <td>8</td>
+      <td>33 (30)</td>
+    </tr>
+    <tr>
+      <td>Delay-suppressed</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Ages of CA1-NMDAR cKO mutant and control mice used for the electrophysiological study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Animal ID</th>
+      <th>Age at surgery</th>
+      <th>Age at experiments ended</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">CA1-NR1 cKO (CaMK2-Cre; NR1-flox/flox)</td>
+      <td>M18</td>
+      <td>2 months</td>
+      <td>3 months</td>
+    </tr>
+    <tr>
+      <td>M28</td>
+      <td>3 months</td>
+      <td>3 months</td>
+    </tr>
+    <tr>
+      <td>M30</td>
+      <td>3 months</td>
+      <td>4 months</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Control (NR1-flox/flox)</td>
+      <td>M24</td>
+      <td>5 months</td>
+      <td>5 months</td>
+    </tr>
+    <tr>
+      <td>M26</td>
+      <td>3 months</td>
+      <td>4 months</td>
+    </tr>
+    <tr>
+      <td>M29</td>
+      <td>3 months</td>
+      <td>4 months</td>
+    </tr>
+    <tr>
+      <td>M31</td>
+      <td>4 month</td>
+      <td>5 months</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -92,30 +425,180 @@ In conclusion, our results show that CA1 neuronal activity during delay is segre
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>RIKEN Bio Resource Center</td>
+      <td>RRID: IMSR_JAX:000664</td>
+      <td>Wild-type mouse</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>NR1flox</td>
+      <td>PMID: 8980237</td>
+      <td>005246 (Jackson Laboratory)</td>
+      <td>Targeted mutation line</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Tg(Camk2a-cre)T29-1Stl/J</td>
+      <td>PMID: 8980237</td>
+      <td>005359 (Jackson Laboratory)</td>
+      <td>Cre transgenic line</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Tg(Camk2a-cre)T29-1Stl/J, NR1flox/flox</td>
+      <td>PMID: 8980237</td>
+      <td>RRID: MGI:3581524</td>
+      <td>Conditional knockout line</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T-maze</td>
+      <td>O’hara and Co., Ltd.</td>
+      <td>RRID: SCR_018016</td>
+      <td>Automatic operant test</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neural probes</td>
+      <td>NeuroNexus</td>
+      <td>A4 × 2-tet-5mm-150-200-312</td>
+      <td>32-ch electrode</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>nDrive</td>
+      <td>NeuroNexus</td>
+      <td>RRID: SCR_018019</td>
+      <td>Micro driver to control movement of electrode</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amplipex: KJE-1001</td>
+      <td>Amplipex</td>
+      <td>RRID: SCR_018017</td>
+      <td>Recording system for neural signals</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB_R2018a</td>
+      <td>Mathworks</td>
+      <td>RRID: SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Klusters</td>
+      <td>PMID: 16580733</td>
+      <td>RRID:SCR_015533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NDmanager</td>
+      <td>PMID: 16580733</td>
+      <td>RRID:SCR_015533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuroscope</td>
+      <td>PMID: 16580733</td>
+      <td>RRID:SCR_015533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KlustaKwik2</td>
+      <td>PMID: 25149694</td>
+      <td>RRID:SCR_014480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre_F</td>
+      <td>PMID: 28244984</td>
+      <td>PCR primers</td>
+      <td>ACC TGA TGG ACA TGT TCA GGG ATC G</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Cre_R</td>
+      <td>PMID: 28244984</td>
+      <td>PCR primers</td>
+      <td>TCC GGT TAT TCA ACT TGC ACC ATG C</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>NR1flox-F</td>
+      <td>PMID: 28244984</td>
+      <td>PCR primers</td>
+      <td>TGT GCT GGG TGT GAG GGT TG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>NR1flox-R</td>
+      <td>PMID: 28244984</td>
+      <td>PCR primers</td>
+      <td>GTG AGC TGC ACT TCC AGA AG</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>ThermoFisher</td>
+      <td>Thermo Fisher Scientific Cat# D1306</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DiI stain</td>
+      <td>ThermoFisher</td>
+      <td>Thermo Fisher Scientific Cat# D3911</td>
+      <td>(200 µg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were approved by the RIKEN Animal Care and Use Committee. A total of 29 male C57B6/J mice were used for this study (wildtype, n = 5; cKO, n = 11 (8 for behavioral study); control: n = 13 (9 for behavioral study]). Mice lacking NMDAR in the hippocampus (RRID:MGI:3581524) were generated by crossing the line gene-targeted for loxP-tagged Nr1 (Grin1) alleles (Nr1flox; Tsien et al., 1996a) and a transgenic line carrying Camk2a promoter-driven Cre recombinase (Camk2a-Cre, T29-1Stl; Tsien et al., 1996a). In this mutant, deletion of NR1 is delayed until about 4 weeks after birth and is restricted to the CA1 pyramidal cells until about 2 months of age (Fukaya et al., 2003). Most of the behavioral analysis using the mutant was done until this age. Hence, it is unlikely that the behavioral impairment observed was the result of undetected developmental abnormalities. Physiological characterization, however, may have harbored a more widespread deletion of the NR1 gene as the ages of cKO animals in the recording session were slightly more than 2 months old (Table 5).
 
-## Delay-based decision-making task
+### Delay-based decision-making task
 
 Adult mice were trained in a delay-based decision-making task under an automated T-maze (O’HARA and Co., Tokyo, Japan, RRID:SCR_018016) before electrophysiological recording. The maze was partitioned off into six areas (Start, Junction, Right-Goal, Right-Back, Left-Goal, and Left-Back) by seven sliding doors (S-J, J-R, R-RG, RG-S, J-L, L-LG, and LG-S). The detailed protocol has been described previously (Kobayashi et al., 2013; Zhang et al., 2018). In short, the mice had food restriction to approximately 80% of free-feeding weight, were habituated to the maze, and baited with scattered pellets (30 min/day) for 2 days. The large reward arm and the small reward arm were allocated to the right or left side arm randomly for each mouse. Four pellets were available in the large reward arm, whereas only one pellet was available in the small reward arm. Mice were allowed to roam freely and without delay to select either arm for 5–10 days for the initial training period until they preferred the large arm (>80%). Then, all animals were trained in the extension delay conditions for at least 5 days. For the first block of trials for each day, the large reward arm was associated without delay (0 s), and then, during the later blocks, it was associated with a 5 s, 10 s, 20 s, or 40 s delay. In the meantime, the small reward arm was always associated with no delay. Each block consisted of 10 trials or more (15 or 30 min). If the trial number was lower than 10, additional blocks were employed. Next, the mice, except cKO and control, were trained in the switched and both-side conditions. In the switched condition, the side of the delayed-large arm was switched to the other side. In the both-side condition, both sides were set as delayed-small and delayed–large arms. The switched conditions were performed initially and then under both-side conditions. In changing the conditions, 10 or more trials were continuously performed to develop a sustained reaction from the animals. Finally, the mice were trained in the Reward loss and gain conditions. We decreased the reward size to investigate whether the firing rate reflected a positive or negative aspect in the delayed option. Initially, we set a delay for a short time with the normal large reward, and then we changed the delay to be long without any change in the large reward, similar to other conditions. After these two continuous sessions, we changed the reward size from four to one pellet. As for other control conditions, we also performed the opposite flow (long delay with one pellet first, long delay with four pellets next). For all experiments, during the time between blocks, mice were allowed to drink water. Four to six consecutive daily sessions were performed per week.
 
-## Histological identification of the localization of the recorded sites
+### Histological identification of the localization of the recorded sites
 
 Owing to the small thickness of the silicon probe shanks, the tracks of shanks were hard to detect. Painting at the back of the shanks with DiI (Thermo Fisher Scientific Cat# D3911) and/or the creation of an electrical lesion by a small current (5 mA for 5 s) was used to facilitate track identifications under DAPI staining (Thermo Fisher Scientific Cat# D1306) (Figure 2—figure supplement 1).
 
-## Recording and spike sorting
+### Recording and spike sorting
 
 Mice were anesthetized with isoflurane during surgery. Silicon probes or wire tetrodes were implanted in the hippocampal CA1 region (AP = −2.0 to −2.8 mm, ML = 1.2 to 2.0 mm, DV = 1.2 to 1.5 mm). In all experiments, ground and reference screws were fixed in the skull atop the cerebellum. The silicon probes attached to micromanipulators (nDrive, NeuroNexus, Michigan, USA), or to nichrome wire tetrodes combined with a micro-drive (Middleton and McHugh, 2016), which enabled us to move their positions to the desired depth, were implanted into the mice. Electrophysiological signals were acquired continuously at 20 kHz on a multi-channel recording system (KJE-1001, Ampliplex Ltd, Szeged, Hungary, RRID:SCR_018017). The wide-band signal was down-sampled to 1.25 kHz and used as the LFP signal. We detected SWRs (their timing, power, and durations) from filtered signal (120–230 Hz), which corresponded to more than three SD of log-power in the same frequency band. To trace the temporal positions of the animals, two color LEDs were set on the headstage and were recorded using a digital video camera at 30 frames/s. Spikes were extracted from the high-pass filtered signals (median filter, cut-off frequency: 800 Hz). Spike sorting was performed semi-automatically, using KlustaKwik2 (RRID:SCR_014480, https://github.com/kwikteam/klustakwik2/; Kadir et al., 2014). The cell types of the units were classified by peak-trough latency and width. In total, we analyzed 831 putative excitatory neurons (n = 639 for wildtype; n = 123 for cKO; n = 69 for NR1f/f mice; Table 1 and S4) and 250 inhibitory neurons (n = 169 for wildtype; n = 53 for cKO; n = 28 for NR1f/f mice). The positions of the animals were determined by the position of the LEDs mounted on the headstage. The rate maps of the spike number and occupancy probability were generated from 4 cm binned segments from the position and spiking data. The normalized PSTH for individual neurons in delay-act and delay–sup cells in the CA1 was computed under delay 20 s conditions. The autocorrelation of the population vector was then computed.
 
-## Determination of delay-active and delay-suppressed neurons
+### Determination of delay-active and delay-suppressed neurons
 
 To examine the effect of delay on neuronal activities, we quantified changes in the firing rate of each neuron during the long delay period. First, we calculated the firing rate in the delay zone (Rdelay = spike number in delay zone ndelay/time spent in delay zone tdelay; see Figure 1A), and that in all zones (Rtotal = spike number in all zones ntotal/time spent in all zones ttotal) in long-delay trials, and then computed the ratio of them (Rdelay/Rtotal). Second, we performed a permutation test in order to determine whether the ratio of the firing rates Rdelay/Rtotal shows significant change or not. To make surrogate data, we resampled the spike trains by permuting the inter-spike-intervals and by realigning with them. We repeated this process 1000 times to obtain 1000 resampled datasets. The rank of the original firing rate ratio Rdelay/Rtotal in the resampled 1000 firing rate ratios was used to define the statistical assessment (delay-act cells — significant higher firing rate [rank <50, top 5%]; delay-sup cells — significant lower firing rate [rank >950, bottom 5%]).
 
-## Decoding of delay length from population spike activity
+### Decoding of delay length from population spike activity
 
 To quantify the information of delay length reflected in the population spike activity, we performed decoding analysis. We used the fitcecoc.m function from MATLAB statistics and the machine-learning toolbox, which enables to train a multiclass, error-correcting output codes (ECOC) model of linear support vector machines (SVM) for binary choices (e.g., Reber et al., 2019; Stavisky et al., 2019). In this, multiple binary SVMs between all pairs of labels are trained. All parameters were set to their default values. We constructed a feature vector for one or two trials, consisting of the firing activity of each neuron (normalized firing rate [0 to 1]) in 25 bins of 200 ms (over 5 s). The classifier was trained on spike trains from −25 s to 60 s after delay-onset of all five conditions, with labels of the delay length (delay lengths are 0, 5, 10, 20 and 40 s) for each animal (no fewer than 17, not more than 43 neurons from one animal) at every 2 s time step in each trial (Figure 5—figure supplement 1A). Classification performance was cross-validated using a leave-one-trial-out method and quantified as the correction probability. We separately calculate the correction probability of each delay length. The performance was shown together with surrogate decoding performance as chance prediction, obtained from artificial testing datasets created by shuffling the neuron labels and/or delay lengths (Figure 5—figure supplement 1B and D).
 
-## Statistical analysis
+### Statistical analysis
 
 Correlation coefficients and P values between firing rates and delay length were calculated by the Matlab function (corrcoef). To estimate statistical significance of the obtained percentage of neurons correlated with delay length, we resampled firing rate and delay length in all trials with 1000 repeats. We then compared the observed percentage from the permutated percentage. To compare the firing rates between short and long delay conditions, we performed Wilcoxon’s rank sum test. Kolmogorov–Smirnov test (kstest) (Salz et al., 2016) was conducted to test the normality. To assess side-dependency in firing rates, three-way ANOVA (side [right and left] × phase [start, delay, and goal] × delay length [5 and 20]) was used. To compare the effect of reward loss and gain on firing rate of delay-act and delay-sup cells and average firing rates between cKO and control mice, Mann-Whitney’s U test was carried out. To examine the ratio distribution, we performed two-tailed one-sample t tests against 0. The behavioral impact of NMDAR conditional knockout was evaluated by two-way ANOVA (genotype [cKO and control] × choice probability) followed by post-hoc Scheffe’s test. Fisher’s exact test was applied to compare the cell-type distributions between cKO and control mice.

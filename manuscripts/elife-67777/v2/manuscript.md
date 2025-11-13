@@ -44,19 +44,94 @@ Here, we tested the hypothesis that Panx1EC–P2Y2REC–TRPV4EC channel signalin
 
 ## Results
 
-## Endothelial Panx1-mediated ATP release activates TRPV4EC signaling
+### Endothelial Panx1-mediated ATP release activates TRPV4EC signaling
 
 The regulation of TRPV4EC channels by endogenously released ATP remains unknown. We postulated that ATP efflux through endothelial Panx1 promotes TRPV4EC channel activity. First, we determined the effect of eATP-hydrolyzing enzyme, apyrase (10 U/mL), on TRPV4EC channel activity in PAs from tamoxifen-inducible, EC-specific Panx1 conditional knockout (Panx1 cKO-EC) mice (Lohman et al., 2015) and tamoxifen-injected Panx1fl/fl Cre- (Panx1fl/fl) control mice (Figure 1A, Figure 1—figure supplement 1; Sharma et al., 2018). En face PAs from Panx1 cKO-EC mice displayed a lack of endothelial (CD31, green) Panx1 immunostaining (red). Localized, unitary Ca2+ influx signals through TRPV4EC channels, termed TRPV4EC sparklets (Sonkusare et al., 2012), were recorded in en face, fourth-order PAs (~50 μm) loaded with Fluo-4. Addition of apyrase reduced the activity of TRPV4EC sparklets in PAs from control mice, confirming the regulation of TRPV4EC channels by endogenous eATP (Figure 1A). However, apyrase was unable to decrease TRPV4EC sparklet activity in PAs from Panx1 cKO-EC mice, suggesting that endothelial Panx1 may be a critical source of eATP in PAs (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left: immunofluorescence images of en face fourth-order PAs from Panx1fl/fl and Panx1 cKO-EC mice. CD31 immunofluorescence indicates ECs. Center: representative traces showing TRPV4EC sparklet activity in en face preparations of PAs from Panx1fl/fl mice in the absence or presence of apyrase (10 U/mL). Dotted lines are quantal levels. Experiments were performed in Fluo-4-loaded PAs in the presence of cyclopiazonic acid (CPA; 20 μmol/L CPA, included to eliminate Ca2+ release from intracellular stores). Right: TRPV4EC sparklet activity (NPo) per site in en face preparations of PAs from Panx1fl/fl and Panx1 cKO-EC mice in the presence or absence of apyrase (10 U/mL; n = 5; ***p<0.001 vs. Panx1fl/fl [-apyrase, 10 U/mL]; ns indicates no statistical significance; t-test). ‘N’ is the number of channels per site and ‘PO’ is the open state probability of the channel. (B), measurements of ATP (nmol/L) levels in PAs from Panx1fl/fl, Panx1 cKO-EC, Panx1 cKO-SMC, Trpv4fl/fl, and Trpv4 cKO-EC mice, and endothelium-denuded PAs from Panx1fl/fl and Panx1 cKO-SMC mice (n = 5–6; *p<0.05 vs. Panx1 cKO-EC; *p<0.05 vs. Panx1fl/fl [denuded]; ***p<0.001 vs. Panx1fl/fl; ***p<0.001 vs. Panx1 cKO-SMC; ns indicates no statistical significance; one-way ANOVA). (C) Average resting right ventricular systolic pressure (RVSP) values in Panx1fl/fl, Panx1 cKO-EC, and Panx1 cKO-SMC mice (n = 6; ***p<0.001 vs. Panx1fl/fl; ns indicates no statistical significance; one-way ANOVA). (D) Left grayscale image of a field of view in an en face preparation of Fluo-4-loaded PAs from Panx1fl/fl and Panx1 cKO-EC mice showing approximately 20 ECs. Dotted outlines indicate an EC (20 μmol/L CPA included to eliminate Ca2+ release from intracellular stores). Right: representative traces showing TRPV4EC sparklet activity in en face preparations of PAs from Panx1fl/fl and Panx1 cKO-EC mice in response to GSK1016790A (GSK101; 1 nmol/L). Experiments were performed in Fluo-4-loaded PAs in the presence of CPA (20 μmol/L). (E) TRPV4EC sparklet activity (NPO) per site and sites per cell in en face preparations of PAs from Panx1fl/fl and Panx1 cKO-EC mice under baseline conditions (i.e., 20 μmol/L CPA) and in response to 1 nmol/L GSK101 (n = 6; *p<0.05, **p<0.01 vs. Panx1fl/fl; *p<0.05 vs. Panx1fl/fl; ns indicates no statistical significance; two-way ANOVA). (F) Left: representative GSK101 (10 nmol/L)-induced outward TRPV4EC currents in freshly isolated ECs from Panx1fl/fl and Panx1 cKO-EC mice and effect of GSK2193874 (GSK219, TRPV4 inhibitor, 100 nmol/L) in the presence of GSK101. Currents were elicited by a 200 ms voltage step from –50 mV to +100 mV. Center: scatterplot showing outward currents at +100 mV under baseline conditions, after the addition of GSK101 (10 nmol/L), and after the addition of GSK219 (100 nmol/L; n = 5–6 cells, *p<0.05 vs. Panx1 cKO-EC [+GSK101]; **p<0.01 vs. Panx1 cKO-EC [baseline]; ***p<0.001 vs. Panx1fl/fl [+baseline]; vs. Panx1fl/fl [+GSK101]; and Panx1 cKO-EC [+GSK101] vs. Panx1fl/fl [+GSK101]; two-way ANOVA). Right: scatterplot showing GSK219-sensitive TRPV4EC currents in response to GSK101 (100 nmol/L; ns indicates no statistical significance; n = 5).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Data presented as a fold change from Panx1fl/fl (n = 5; ***p<0.001 vs. Panx1fl/fl; t-test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Experiments were performed in Fluo-4-loaded PAs in the presence of cyclopiazonic acid (CPA; 20 μmol/L), included to eliminate Ca2+ release from intracellular stores. ‘N’ is the number of channels per site and ‘PO’ is the open state probability of the channel (n = 6; ns indicates no statistical significance).
 
 Bioluminescence measurements confirmed lower baseline eATP levels in PAs from Panx1 cKO-EC mice than PAs from Panx1fl/fl control mice (Figure 1B), supporting an essential role for Panx1EC as an eATP-release mechanism in PAs. PAs from Trpv4 cKO-EC mice, however, exhibited unaltered basal eATP levels, suggesting that TRPV4EC channels do not regulate Panx1EC activity under basal conditions. Although eATP levels were also reduced in PAs from inducible, smooth muscle cell-specific Panx1 cKO (Panx1 cKO-SMC) (Good et al., 2018) mice, the eATP levels in these mice were higher than Panx1 cKO-EC mice (Figure 1B, Figure 1—figure supplement 1). Endothelial denudation also reduced eATP levels in PAs from control mice, which were reduced further in endothelium-denuded PAs from Panx1 cKO-SMC mice.
 
 We recently demonstrated that right ventricular systolic pressure (RVSP), a commonly used in vivo indicator of PAP, was elevated in inducible EC-specific Trpv4 KO (Trpv4 cKO-EC) mice (Daneva et al., 2021). Similarly, Panx1 cKO-EC mice also showed elevated RVSP (Figure 1C). The Fulton index, a ratio of right ventricular (RV) weight to left ventricle plus septal (LV + S) weight, was not altered in Panx1 cKO-EC mice compared to control mice, suggesting a lack of right ventricular hypertrophy in these mice (Table 1). Baseline RVSP was not altered in Panx1 cKO-SMC mice (Figure 1C), indicating a lack of regulation of resting PAP by SMC Panx1. Functional cardiac MRI studies indicated no alterations in cardiac function in Panx1 cKO-EC mice compared to the control mice (Table 1), confirming that the changes in RVSP were not due to altered cardiac function.
 
+**Table 1.**
+ Fulton index and functional MRI analysis of cardiac function in Panx1fl/fl and Panx1 cKO-EC mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Panx1fl/fl</th>
+      <th>Panx1 cKO-EC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fulton index</td>
+      <td>0.23 ± 0.01</td>
+      <td>0.26 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>EDV (µL)</td>
+      <td>46.9 ± 2.7</td>
+      <td>50.9 ± 2.9</td>
+    </tr>
+    <tr>
+      <td>ESV (µL)</td>
+      <td>14.8 ± 1.7</td>
+      <td>13.1 ± 1.4</td>
+    </tr>
+    <tr>
+      <td>EF (%)</td>
+      <td>68.9 ± 2.0</td>
+      <td>74.3 ± 2.3</td>
+    </tr>
+    <tr>
+      <td>SV (µL)</td>
+      <td>32.2 ± 1.3</td>
+      <td>37.8 ± 2.4</td>
+    </tr>
+    <tr>
+      <td>R-R (ms)</td>
+      <td>127.1 ± 5.5</td>
+      <td>130.8 ± 2.5</td>
+    </tr>
+    <tr>
+      <td>CO (mL/min)</td>
+      <td>15.2 ± 0.6</td>
+      <td>17.3 ± 1.2</td>
+    </tr>
+  </tbody>
+</table>
+
 Baseline TRPV4EC sparklet activity and that induced by a low concentration (1 nmol/L) of the specific TRPV4 channel agonist, GSK1016790A (hereafter, GSK101), were significantly reduced in PAs from Panx1 cKO-EC mice compared to PAs from Panx1fl/fl mice (Figure 1D and E). Additionally, the number of TRPV4EC sparklet sites per cell was decreased in PAs from Panx1 cKO-EC mice (Figure 1E). At the agonist concentration that maximally activates TRPV4EC sparklets in PAs (30 nmol/L GSK101; Daneva et al., 2021), sparklet activity per site and sparklet sites per cell were not different between Panx1 cKO-EC Panx1 and control mice (Figure 1—figure supplement 2). Outward currents through TRPV4EC channels, elicited by 10 nmol/L GSK101, were also lower in Panx1 cKO-EC than Panx1fl/fl mice (Figure 1F, left and center). However, when maximally activated, TRPV4EC channel currents were not different between Panx1 cKO-EC and Panx1fl/fl mice (Figure 1F, right), suggesting that the maximum number of functional TRPV4EC channels is not altered in Panx1 cKO-EC mice.
 
-## Endothelial Panx1–TRPV4 signaling lowers pressure- and agonist-induced PA constriction
+### Endothelial Panx1–TRPV4 signaling lowers pressure- and agonist-induced PA constriction
 
 Isolated, pressurized PAs (50–100 μm, Figure 2A) from Trpv4 cKO-EC mice exhibited a greater intraluminal pressure-induced (myogenic) constriction than PAs from control mice (Figure 2B, Figure 2—figure supplement 1), providing the first evidence that TRPV4EC channels oppose myogenic constriction in PAs. This finding was further supported by a greater contractile response to the thromboxane A2 receptor agonist U46619 in PAs from Trpv4 cKO-EC mice (1–300 nmol/L; Figure 2C). PAs from Panx1 cKO-EC mice also showed a higher myogenic constriction than PAs from control mice (Figure 2D), offering the first evidence that endothelial Panx1 regulates myogenic constriction of PAs. U46619-induced constriction was also increased in PAs from Panx1 cKO-EC mice compared to PAs from control mice. Pretreatment of PAs from Panx1 cKO-EC mice with a low concentration of TRPV4 agonist (GSK101, 3 nmol/L) reduced the U46619-induced constriction to control levels, indicating that endothelial Panx1 dilates PAs through TRPV4EC channels. The presence of apyrase also increased U46619-induced constriction of PAs from control mice, confirming the dilatory effect of eATP on PAs (Figure 2—figure supplement 2). Further, exogenous ATP-induced dilation was absent in PAs from Trpv4 cKO-EC mice (Figure 2—figure supplement 3, center) but was not affected in PAs from Panx1 cKO-EC mice (Figure 2—figure supplement 3, right), supporting the concept that ATP-TRPV4EC channel signaling occurs downstream of Panx1EC. Together, these data provide the first evidence that Panx1EC–eATP–TRPV4EC channel signaling lowers PA contractility and resting PAP.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig2-v2.jpg)
+
+**Figure 2.:** (A) Top: an image showing the left lung and the order system used to isolate fourth-order PAs in this study; bottom: an image of a fourth-order PA cannulated and pressurized at 15 mm Hg. (B) Percentage myogenic constriction of PAs from Trpv4fl/fl and Trpv4 cKO-EC mice (n = 6; *p<0.05; t-test). (C) Percent constriction of PAs from Trpv4fl/fl and Trpv4 cKO-EC mice in response to thromboxane A2 receptor agonist U46619 (U466, 1–300 nmol/L; n = 5; *p<0.05 vs. Trpv4fl/fl [10 nmol/L], **p<0.01 vs. Trpv4fl/fl [30, 100, and 300 nmol/L]; ##p<0.01 vs. Trpv4fl/fl; two-way ANOVA). (D) Percentage myogenic constriction of PAs from Panx1fl/fl and Panx1 cKO-EC mice (n = 6; *p<0.05; t-test). (E) U46619 (U466, 1–300 nmol/L)-induced constriction of PAs from Panx1fl/fl, Panx1 cKO-EC, and Panx1 cKO-EC mice in the absence or presence of GSK101 (3 nmol/L) (n = 5; **p<0.01 vs. Panx1 cKO-EC, ***p<0.01 vs. Panx1fl/fl; two-way ANOVA, between groups). (F) Schematic of flow-induced ATP release from isolated and cannulated fourth-order PAs. Shear stress was calculated using the following equation: $\tau=4(\muQ˙)/(\pir^{3})$, where μ is viscosity, $Q.$ is volumetric flow, and r is internal radius of the vessel. Outflow was collected every 10 min and ATP was measured using Luciferin-Luciferase ATP Bioluminescence Assay. (G) Release of ATP (nmol/L) from PAs of Panx1fl/fl and Panx1 cKO-EC mice in response to flow/shear stress in the presence of ARL-67156 (ARL; ecto-ATPase inhibitor; 300 μmol/L; 4, 7, and 14 dynes/cm2; n = 6; *p<0.05 vs. Panx1fl/fl [4 dynes/cm2]; **p<0.01 vs. Panx1fl/fl [7 dynes/cm2]; ###p<0.001 vs. Panx1 cKO-EC; two-way ANOVA). (H) Release of ATP (nmol/L) from PAs of Trpv4fl/fl and Trpv4 cKO-EC mice in response to flow/shear stress in the presence of ARL (300 μmol/L; 4, 7, and 14 dynes/cm2; n = 6; *p<0.05 vs. Trpv4fl/fl [4 dynes/cm2]; #p<0.05 vs. Trpv4 cKO-EC [4 dynes/cm2]; two-way ANOVA).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Fourth-order PAs were pressurized to 15 mm Hg. Center: percent dilation of PAs from Trpv4fl/fl and Trpv4 cKO-EC mice in response to ATP (1 μmol/L; n = 5–10; ***p<0.001 vs. Trpv4fl/fl [ATP 1 μmol/L]; t-test). Right: percent dilation of PAs from Panx1fl/fl and Panx1 cKO-EC mice in response to ATP (1 μmol/L; n = 5–10; ns indicates no statistical significance).
 
 To verify the possibility that flow/shear stress activates ATP efflux through endothelial Panx1, we measured luminal eATP levels in PAs following exposure to different intraluminal shear stress levels (4, 7, and 14 dynes/cm2; Figure 2F; Ahn et al., 2017). Increase in shear stress elevated luminal eATP levels in PAs from control mice, but not in PAs from Panx1 cKO-EC mice (Figure 2G), confirming a critical role for Panx1EC in shear stress-induced increase in luminal eATP. Also, shear stress-induced increase in luminal eATP was not altered in PAs from Trpv4 cKO-EC mice compared to control mice (Figure 2H), suggesting that TRPV4EC channels do not influence the efflux of ATP through Panx1EC in response to increase in shear stress. eATP acts through purinergic P2Y2REC stimulation to activate TRPV4EC channels.
 
@@ -64,23 +139,43 @@ The main P2Y receptor subtypes in the pulmonary endothelium are P2Y1R and P2Y2R 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig3-v2.jpg)
 
-**Figure 3.:** (A) Left: immunofluorescence images of en face fourth-order PAs from P2ry2fl/fl and P2ry2 cKO-EC mice. CD31 immunofluorescence indicates ECs. Right: effects of ATP (1 μmol/L) on TRPV4EC sparklet activity in the absence or presence of the P2Y1R inhibitor MRS2179 (MRS; 10 μmol/L) or P2Y2R inhibitor AR-C 118925XX (AR-C; 10 μmol/L) in PAs from P2ry2fl/fl and P2ry2 cKO-EC mice, expressed as NPO per site (n = 5; ***p<0.001 vs. Control [- ATP]; **p<0.01 vs.+ MRS [- ATP]; ns indicates no statistical significance; two-way ANOVA). ‘N’ is the number of channels per site and ‘PO’ is the open state probability of the channel. (B) Effects of ATP (1 μmol/L) on TRPV4EC sparklet activity in the presence of the general P2X1-5/7R inhibitor PPADS (10 μmol/L) and P2X7R inhibitor JNJ-47965567 (JNJ; 1 μmol/L) in PAs of C57BL6/J mice (n = 5; *p<0.05 vs. [-ATP]; one-way ANOVA). (C) Top: representative ATP (10 μmol/L)-induced outward TRPV4 currents in freshly isolated ECs from C57BL6/J mice and the effect of GSK2193874 (GSK219; TRPV4 inhibitor; 100 nmol/L) in the presence of ATP. Currents were elicited by a 200 ms voltage step from –50 mV to +100 mV. Bottom: scatterplot showing outward currents at +100 mV under baseline conditions, after the addition of ATP, and after the addition of GSK219 (100 nmol/L; n = 6 cells; ***p<0.001 vs. baseline; **p<0.01 vs.+ ATP [10 μmol/L]; one-way ANOVA). (D) Left: representative traces showing TRPV4EC sparklet activity in en face preparations of PAs from P2ry2fl/fl mice. Dotted lines are quantal levels. Right: TRPV4EC sparklet activity per site (NPO) in en face preparations of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice under baseline conditions (i.e., 20 μmol/L cyclopiazonic acid [CPA]) and in response to 2-thio UTP (P2Y2R agonist, 0.5 μmol/L; n = 5; *p<0.05 vs. P2ry2fl/fl [-2-thio UTP]; ns indicates no statistical significance; t-test). (E) Left: average resting right ventricular systolic pressure (RVSP) values in P2ry2fl/fl and P2ry2 cKO-EC mice (n = 6; **p<0.01; t-test). Right: average Fulton index values in P2ry2fl/fl and P2ry2 cKO-EC mice (n = 5–6; ns indicates no statistical significance). (F) Right: representative diameter traces showing ATP (1 μmol/L)-induced dilation of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice, pre-constricted with the thromboxane A2 receptor agonist U46619 (U466, 50 nmol/L). Fourth-order PAs were pressurized to 15 mm Hg. Right: percent dilation of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice in response to ATP (1 μmol/L; n = 5–10; ***p<0.01 vs. P2ry2fl/fl [ATP 1 μmol/L]; t-test). (G) Percentage myogenic constriction of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice (n = 5–7; ***p<0.001; t-test). (H) U46619 (U466, 1–300 nmol/L)-induced constriction of PAs from P2ry2fl/fl, P2ry2 cKO-EC, and P2ry2 cKO-EC mice in the absence or presence of GSK101 (3 nmol/L) (n = 5; ***p<0.001 vs. P2ry2 cKO-EC, ***p<0.001 vs. P2ry2fl/fl; two-way ANOVA).Figure 3—source data 1.
+**Figure 3.:** (A) Left: immunofluorescence images of en face fourth-order PAs from P2ry2fl/fl and P2ry2 cKO-EC mice. CD31 immunofluorescence indicates ECs. Right: effects of ATP (1 μmol/L) on TRPV4EC sparklet activity in the absence or presence of the P2Y1R inhibitor MRS2179 (MRS; 10 μmol/L) or P2Y2R inhibitor AR-C 118925XX (AR-C; 10 μmol/L) in PAs from P2ry2fl/fl and P2ry2 cKO-EC mice, expressed as NPO per site (n = 5; ***p<0.001 vs. Control [- ATP]; **p<0.01 vs.+ MRS [- ATP]; ns indicates no statistical significance; two-way ANOVA). ‘N’ is the number of channels per site and ‘PO’ is the open state probability of the channel. (B) Effects of ATP (1 μmol/L) on TRPV4EC sparklet activity in the presence of the general P2X1-5/7R inhibitor PPADS (10 μmol/L) and P2X7R inhibitor JNJ-47965567 (JNJ; 1 μmol/L) in PAs of C57BL6/J mice (n = 5; *p<0.05 vs. [-ATP]; one-way ANOVA). (C) Top: representative ATP (10 μmol/L)-induced outward TRPV4 currents in freshly isolated ECs from C57BL6/J mice and the effect of GSK2193874 (GSK219; TRPV4 inhibitor; 100 nmol/L) in the presence of ATP. Currents were elicited by a 200 ms voltage step from –50 mV to +100 mV. Bottom: scatterplot showing outward currents at +100 mV under baseline conditions, after the addition of ATP, and after the addition of GSK219 (100 nmol/L; n = 6 cells; ***p<0.001 vs. baseline; **p<0.01 vs.+ ATP [10 μmol/L]; one-way ANOVA). (D) Left: representative traces showing TRPV4EC sparklet activity in en face preparations of PAs from P2ry2fl/fl mice. Dotted lines are quantal levels. Right: TRPV4EC sparklet activity per site (NPO) in en face preparations of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice under baseline conditions (i.e., 20 μmol/L cyclopiazonic acid [CPA]) and in response to 2-thio UTP (P2Y2R agonist, 0.5 μmol/L; n = 5; *p<0.05 vs. P2ry2fl/fl [-2-thio UTP]; ns indicates no statistical significance; t-test). (E) Left: average resting right ventricular systolic pressure (RVSP) values in P2ry2fl/fl and P2ry2 cKO-EC mice (n = 6; **p<0.01; t-test). Right: average Fulton index values in P2ry2fl/fl and P2ry2 cKO-EC mice (n = 5–6; ns indicates no statistical significance). (F) Right: representative diameter traces showing ATP (1 μmol/L)-induced dilation of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice, pre-constricted with the thromboxane A2 receptor agonist U46619 (U466, 50 nmol/L). Fourth-order PAs were pressurized to 15 mm Hg. Right: percent dilation of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice in response to ATP (1 μmol/L; n = 5–10; ***p<0.01 vs. P2ry2fl/fl [ATP 1 μmol/L]; t-test). (G) Percentage myogenic constriction of PAs from P2ry2fl/fl and P2ry2 cKO-EC mice (n = 5–7; ***p<0.001; t-test). (H) U46619 (U466, 1–300 nmol/L)-induced constriction of PAs from P2ry2fl/fl, P2ry2 cKO-EC, and P2ry2 cKO-EC mice in the absence or presence of GSK101 (3 nmol/L) (n = 5; ***p<0.001 vs. P2ry2 cKO-EC, ***p<0.001 vs. P2ry2fl/fl; two-way ANOVA).
 
 Similar to Panx1 cKO-EC mice, P2ry2 cKO-EC mice showed elevated RVSP and unaltered Fulton index (Figure 3E). Exogenous ATP (1 μmol/L)-induced dilation was abolished in PAs from P2ry2 cKO-EC mice (Figure 3F), confirming an essential role of P2Y2REC in ATP-induced dilation of PAs. Further, PAs from P2ry2 cKO-EC mice showed higher myogenic and U46619-induced constriction compared to PAs from control mice (Figure 3G). As observed with PAs from Panx1 cKO-EC mice, pretreatment with a low concentration of TRPV4 channel agonist (GSK101, 3 nmol/L) reduced U46619-induced constriction to control levels in PAs from P2ry2 cKO-EC mice (Figure 3H). Taken together, these findings demonstrate that P2Y2REC is the signaling intermediate for Panx1EC–TRPV4EC channel interaction in PAs.
 
-## Cav-1EC provides a scaffold for Panx1EC–P2Y2REC–TRPV4EC signaling
+### Cav-1EC provides a scaffold for Panx1EC–P2Y2REC–TRPV4EC signaling
 
 We hypothesized that Cav-1EC provides a signaling scaffold that supports and maintains the spatial proximity among the individual elements in the Panx1EC–P2Y2REC–TRPV4EC pathway. Previous studies demonstrated that endothelium-specific knockout of Cav1 results in reduced TRPV4EC channel current density and elevated PAP (Daneva et al., 2021). Here, we provide evidence that eATP-induced activation of TRPV4EC sparklets is absent in PAs from Cav1 cKO-EC mice (Figure 4A; knockout validation in Daneva et al., 2021). As observed with PAs from Trpv4 cKO-EC and P2ry2 cKO-EC mice, eATP-induced dilation was also abolished in PAs from Cav1 cKO-EC mice (Figure 4B). These results provided the first functional evidence that Cav-1EC is required for eATP–P2Y2REC–TRPV4EC signaling in PAs. To provide additional evidence to support Cav-1EC–dependent co-localization of Panx1EC–P2Y2REC–TRPV4EC signaling elements in PAs, we performed in situ proximity ligation assays (PLAs), which allow the detection of two proteins in close proximity (<40 nm). PLA data confirmed that Cav-1EC exists within nanometer proximity of Panx1EC, P2Y2REC, and TRPV4EC channels in PAs (Figure 4C). Nanometer proximity was also observed between TRPV4EC channels and P2Y2REC and between Panx1EC and P2Y2REC (Figure 4D, Figure 4—figure supplement 1). TRPV4EC:P2Y2R and P2Y2R:Panx1 co-localization was lost in PAs from Cav1 cKO-EC mice, further supporting the crucial scaffolding role of Cav-1EC in Panx1EC–P2Y2REC–TRPV4EC pathway. PA endothelium has also been shown to express another P2Y family receptor, P2Y1 (P2Y1R) (Konduri et al., 2004). The PLA data confirmed that P2Y1R does not occur in nanometer proximity with Cav-1EC in PAs (Figure 4—figure supplement 2). Together, these data confirmed a crucial role for Cav-1EC in facilitating the spatial proximity amongst the individual elements of the Panx1EC–P2Y2REC–TRPV4EC pathway.
 
-## Cav-1EC anchoring of PKCα mediates P2Y2REC-dependent activation of TRPV4EC channels in PAs
+![Figure 4.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left: representative traces showing TRPV4EC sparklets in en face preparations of PAs from Cav1fl/fl and Cav1 cKO-EC mice in the absence or presence of ATP (1 μmol/L). Dotted lines are quantal levels. Right: TRPV4EC sparklet activity (NPO) per site in en face preparations of PAs from Cav1fl/fl and Cav1 cKO-EC mice in the absence or presence of 1 μmol/L ATP (n = 5; *p<0.05 vs. Cav1fl/fl [- ATP]; **p<0.01 vs. Cav1fl/fl [- ATP]; ns indicates no statistical significance; two-way ANOVA). Experiments were performed in Fluo-4-loaded fourth-order PAs in the presence of cyclopiazonic acid (CPA; 20 μmol/L), included to eliminate Ca2+ release from intracellular stores. ‘N’ is the number of channels per site and ‘PO’ is the open state probability of the channel. (B) Percentage dilation of PAs from Cav1fl/fl and Cav1 cKO-EC mice in response to ATP (1 μmol/L). PAs were pre-constricted with the thromboxane A2 receptor analog U46619 (50 nmol/L; n = 5; ***p<0.01 vs. Cav1fl/fl; t-test). (C) Top: representative merged images of proximity ligation assays (PLAs) signal, showing EC nuclei and Cav-1EC:Panx1EC, Cav-1EC:P2Y2REC, and Cav-1EC:TRPV4EC co-localization (white puncta) in fourth-order PAs from Cav1fl/fl and Cav1 cKO-EC mice. Bottom: quantification of Cav-1EC:Panx1EC, Cav-1EC:P2Y2REC, and Cav-1EC:TRPV4EC co-localization in PAs from Cav1fl/fl and Cav1 cKO-EC mice (n = 5; ***p<0.001 vs. Cav1fl/fl; t-test). (D) Representative PLA images showing EC nuclei, TRPV4EC:P2Y2REC and Panx1EC:P2Y2REC co-localization (white puncta) in fourth-order PAs from Cav1fl/fl and Cav1 cKO-EC mice. Bottom: quantification of TRPV4EC:P2Y2REC and Panx1EC:P2Y2REC co-localization in PAs from Cav1fl/fl and Cav1 cKO-EC mice (n = 5; ***p<0.001 vs. Cav1fl/fl; t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Right: quantification of Cav-1EC:P2Y1EC co-localization in PAs from Cav1fl/fl mice (n = 5).
+
+### Cav-1EC anchoring of PKCα mediates P2Y2REC-dependent activation of TRPV4EC channels in PAs
 
 P2Y2R is a Gq protein-coupled receptor that activates the phospholipase C (PLC)–diacylglycerol (DAG)–PKC signaling pathway. Notably, PKC is known to phosphorylate TRPV4 channels and potentiate its activity (Fan et al., 2009). eATP, the DAG analog OAG (1 μmol/L), and the PKC activator phorbol myristate acetate (PMA; 10 nmol/L) stimulated TRPV4EC sparklet activity in small PAs (Figure 5A, B and C). Inhibition of PLC with U73122 (3 μmol/L) abolished eATP activation of TRPV4EC sparklets, but not OAG- or PMA-induced activation of TRPV4EC sparklets. Moreover, the PKCα/β inhibitor Gö-6976 (1 μmol/L) prevented activation of TRPV4EC sparklets by ATP, OAG, and PMA (Figure 5A, B and C), supporting the concept that eATP activation of P2Y2REC stimulates TRPV4EC channel activity via PLC–DAG–PKC signaling in PAs. TRPV4EC channel activation by PLC–DAG–PKC signaling was further supported by increased activity of TRPV4EC sparklets in PAs from Cdh5-optoα1 adrenergic receptor (Cdh5-optoα1AR) mouse, which expresses light-sensitive α1AR in endothelial cells (Figure 5D). When activated with light (~473 nm), Optoα1AR generates the secondary messengers IP3 and diacylglycerol (DAG) (Airan et al., 2009). Light activation resulted in increased activity of TRPV4EC sparklets (Figure 5D, Figure 5—figure supplement 1), an effect that was abolished by the PKCα/β inhibitor Gö-6976 (1 μmol/L) and in the presence of specific TRPV4 inhibitor GSK2193874 (hereafter GSK219; 100 nmol/L; Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig5-v2.jpg)
+
+**Figure 5.:** (A) Left: representative traces showing TRPV4EC sparklet activity in en face preparations of PAs from C57BL6/J mice before and after treatment with ATP (1 μmol/L). Right: effects of U73122 (PLC inhibitor; 3 μmol/L) or Gö-6976 (PKCα/β inhibitor; 1 μmol/L) on TRPV4EC sparklet activity in en face preparations of PAs from C57BL6/J mice before and after treatment with ATP (1 μmol/L), expressed as NPO per site. Experiments were performed in Fluo-4-loaded fourth-order PAs in the presence of cyclopiazonic acid (CPA; 20 μmol/L), included to eliminate Ca2+ release from intracellular stores (n = 5; *p<0.05 vs. Control [-ATP]; ns indicates no statistical significance; one-way ANOVA). ‘N’ is the number of channels per site and ‘PO’ is the open state probability of the channel. Dotted lines indicate quantal levels. (B) Left: representative traces showing TRPV4EC sparklet activity in en face preparations of PAs from C57BL6/J mice in the absence or presence of OAG (DAG analog; 1 μmol/L). Right: effects of U73122 (3 μmol/L) or Gö-6976 (1 μmol/L) on TRPV4EC sparklet activity in en face preparations of PAs from C57BL6/J mice before and after treatment with OAG (1 μmol/L, n = 6; **p<0.01 vs. Control [-OAG]; **p<0.01 vs. U73122 [-OAG]; ns indicates no statistical significance; one-way ANOVA). (C) Left: representative traces showing TRPV4EC sparklets in en face preparations of PAs from C57BL6/J mice in the absence or presence of phorbol myristate acetate (PMA) (PKC activator; 10 nmol/L). Right: effects of U73122 (3 μmol/L) or Gö-6976 (1 μmol/L) on TRPV4EC sparklet activity in en face preparations of PAs from C57BL6/J mice before and after treatment with PMA (n = 6; *p<0.05 vs. Control [-PMA]; *p<0.05 vs. U73122 [-PMA]; ns indicates no statistical significance; one-way ANOVA). (D) Top: representative traces showing TRPV4EC sparklet activity in en face preparations of PAs from Cdh5-optoα1AR (adrenergic receptor) mouse before and after light activation (470 nm). Center: scatterplot showing TRPV4 sparklet activity before and after light activation in the absence or presence of PKCα/β inhibitor Gö-6976 (1 μmol/L, n = 4, ***p<0.01 vs. –Gö-6976 [before]; ns indicates no statistical significance; one-way ANOVA). Bottom: scatterplot showing TRPV4 sparklet activity, expressed as sparklet sites per cell, before and after light activation, in the absence or presence of PKCα/β inhibitor Gö-6976 (1 μmol/L; n = 4; ***p<0.001 vs. –Gö-6976 [before]; ns indicates no statistical significance; one-way ANOVA).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** ‘N’ is the number of channels per site and ‘PO’ is the open state probability of the channel. Right: scatterplot showing TRPV4 sparklet activity, expressed as sparklet sites per cell, before and after light activation, in the presence of TRPV4 inhibitor GSK219 (100 nmol/L, n = 5; ns indicates no statistical significance).
 
 Since Cav-1 possesses a PKC-binding domain (Mineo et al., 1998) and exists in nanometer proximity with TRPV4EC channels and P2Y2REC, we tested the hypothesis that Cav-1EC anchoring of PKC mediates P2Y2REC–TRPV4EC channel interaction in PAs. PLA experiments confirmed that PKC also exists in nanometer proximity with Cav-1EC in PAs (Figure 6A). The PKC dependence of Cav-1EC activation of TRPV4EC channels was confirmed by studies in HEK293 cells transfected with TRPV4 alone or TRPV4 channels plus Cav-1 (Figure 6B), which showed that TRPV4 currents were increased in the presence of Cav-1. Further, the PKCα/β inhibitor Gö-6916 (1 μmol/L) reduced TRPV4 channel currents in Cav-1/TRPV4-co-transfected cells to the level of that in cells transfected with TRPV4 alone (Figure 6B and C). These results imply that Cav-1 enhances TRPV4 channel activity via PKCα/β anchoring. Experiments in which TRPV4 channels were co-expressed with PKCα or PKCβ showed that only PKCα increased currents through TRPV4 channels (Figure 6D). Collectively, these results support the conclusion that Panx1EC–P2Y2REC–PKCα–TRPV4EC signaling on a Cav-1EC scaffold reduces PA contractility and lowers resting PAP (Figure 6E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67777/elife-67777-fig6-v2.jpg)
 
-**Figure 6.:** EC increases the activity of TRPV4EC channels in pulmonary arteries (PAs).(A) Top: representative merged images of proximity ligation assays (PLAs) showing endothelial cell (EC) nuclei and Cav-1EC:PKC co-localization (white puncta) in fourth-order PAs from Cav1fl/fl and Cav1 cKO-EC mice. Bottom: quantification of Cav-1EC:PKC co-localization in PAs from Cav1fl/fl and Cav1 cKO-EC mice (n = 5; ***p<0.001 vs. Cav1fl/fl; t-test). (B) Representative traces showing TRPV4 currents in the absence or presence of Gö-6976 (PKC inhibitor; 1 μmol/L) in HEK293 cells transfected with TRPV4 alone or co-transfected with TRPV4 plus wild-type Cav-1, recorded in the whole-cell patch-clamp configuration. (C) Current density scatterplot of TRPV4 currents at +100 mV in the absence or presence of Gö-6976 (1 μmol/L) and after the addition of GSK2193874 (GSK219; TRPV4 inhibitor; 100 nmol/L) in HEK293 cells transfected with TRPV4 alone or TRPV4 plus wild-type Cav-1 (n = 5; **p<0.01 vs. Control [TRPV4]; **p<0.01 vs. Control [TRPV4+ Cav-1]; ns indicates no statistical significance; one-way ANOVA). (D) Current density plot of TRPV4 currents at +100 mV in HEK293 cells transfected with TRPV4+ PKCα or TRPV4+ PKCβ and in the presence of GSK219 (100 nmol/L; n = 5; ***p<0.001 vs. TRPV4+ PKCα; t-test). (E) Schematic depiction of the Panx1EC–P2Y2REC–TRPV4EC signaling pathway that promotes vasodilation and lowers pulmonary arterial pressure (PAP) in PAs. ATP released from Panx1EC activates P2Y2REC purinergic receptors on the EC membrane. Stimulation of P2Y2REC recruits PKCα, which anchors to the scaffolding protein Cav-1EC in close proximity to TRPV4EC channels. TRPV4EC channel-dependent vasodilation lowers PAP.
+**Figure 6.:** (A) Top: representative merged images of proximity ligation assays (PLAs) showing endothelial cell (EC) nuclei and Cav-1EC:PKC co-localization (white puncta) in fourth-order PAs from Cav1fl/fl and Cav1 cKO-EC mice. Bottom: quantification of Cav-1EC:PKC co-localization in PAs from Cav1fl/fl and Cav1 cKO-EC mice (n = 5; ***p<0.001 vs. Cav1fl/fl; t-test). (B) Representative traces showing TRPV4 currents in the absence or presence of Gö-6976 (PKC inhibitor; 1 μmol/L) in HEK293 cells transfected with TRPV4 alone or co-transfected with TRPV4 plus wild-type Cav-1, recorded in the whole-cell patch-clamp configuration. (C) Current density scatterplot of TRPV4 currents at +100 mV in the absence or presence of Gö-6976 (1 μmol/L) and after the addition of GSK2193874 (GSK219; TRPV4 inhibitor; 100 nmol/L) in HEK293 cells transfected with TRPV4 alone or TRPV4 plus wild-type Cav-1 (n = 5; **p<0.01 vs. Control [TRPV4]; **p<0.01 vs. Control [TRPV4+ Cav-1]; ns indicates no statistical significance; one-way ANOVA). (D) Current density plot of TRPV4 currents at +100 mV in HEK293 cells transfected with TRPV4+ PKCα or TRPV4+ PKCβ and in the presence of GSK219 (100 nmol/L; n = 5; ***p<0.001 vs. TRPV4+ PKCα; t-test). (E) Schematic depiction of the Panx1EC–P2Y2REC–TRPV4EC signaling pathway that promotes vasodilation and lowers pulmonary arterial pressure (PAP) in PAs. ATP released from Panx1EC activates P2Y2REC purinergic receptors on the EC membrane. Stimulation of P2Y2REC recruits PKCα, which anchors to the scaffolding protein Cav-1EC in close proximity to TRPV4EC channels. TRPV4EC channel-dependent vasodilation lowers PAP.
 
 ## Discussion
 
@@ -102,80 +197,435 @@ In conclusion, Panx1EC–P2Y2REC–TRPV4EC channel signaling reduces PA contract
 
 ## Materials and methods
 
-## Drugs and chemical compounds
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock no: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpv4conditional knockout in EC</td>
+      <td>Dr. Swapnil SonkusarePMID:32008372</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpv4 conditional knockout in SMC</td>
+      <td>Dr. Swapnil SonkusarePMID:33879616</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Panx1 conditional knockout in EC</td>
+      <td>Dr. Brant IsaksonPMID:26242575</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Panx1 conditional knockout in SMC</td>
+      <td>Dr. Brant IsaksonPMID:25690012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cav1 conditional knockout in EC</td>
+      <td>Dr. Swapnil SonkusarePMID:33879616Dr. Richard MinshallPMID:22323292</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>P2ry2fl/fl mice</td>
+      <td>Dr. Cheikh SeyePMID:27856454</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cdh5-Optoα1AR-IRES-lacZ</td>
+      <td>CHROMus (Cornell University, USA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TRPV4 antibody (aa100-150), (mouse polyclonal)</td>
+      <td>LifeSpan Bioscience Inc</td>
+      <td>Cat. #: LS-C94498;RRID:AB_2893149</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-caveolin-1 antibody - caveolae marker (rabbit polyclonal)</td>
+      <td>Abcam plc</td>
+      <td>Cat. #: Ab2910;RRID:AB_303405</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Caveolin-1 antibody (7C8) (mouse monoclonal)</td>
+      <td>Novus Biologicals, LLC</td>
+      <td>Cat. #: NB100-615;RRID:AB_10003431</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKC (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc</td>
+      <td>Cat. #: SC-17769;RRID:AB_628139</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Panx1 (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat. #: ACC-234;RRID:AB_2340917</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P2Y2R (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat. #: APR-010;RRID:AB_2040078</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P2Y1R (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat. #: APR-009;RRID:AB_2040070</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK2193874</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 5106/5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclopiazonic acid (CPA)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 1235/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK1016790A</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 6433/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 1201/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AR-C 118925XX</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 4890/5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Thio UTP tetrasodium salt</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 3280/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MRS2179</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 0900/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U-73122</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 1268/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NS309</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 3895/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ARL-67156</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 1283/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluo-4-AM</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: F14201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-O-9Z-octadecenoyl-2-O-acetyl-sn-glycerol (OAG)</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat. #: 62600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PPADS</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat. #: 14537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gö-6976</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat. #: 13310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JNJ-47965567</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat. #: 21895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U46619</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat. #: 16452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Apyrase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: A6535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabChart8</td>
+      <td>ADInstruments https://www.adinstruments.com/products/labchart</td>
+      <td>RRID:SCR_017551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Segment version 2.0 R5292</td>
+      <td>Twilio(http://segment.heiberg.se)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IonOptix</td>
+      <td>IonOptix, LLC (https://www.ionoptix.com/products/software/ionwizard-core-and-analysis/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SparkAn</td>
+      <td>Dr. Adrian Bonev, University of Vermont, Burlington, VT, USA PMID:22556255</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClampFit10.3</td>
+      <td>Molecular Devices (https://www.moleculardevices.com/)</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health (https://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PatchMaster v2x90 program</td>
+      <td>Harvard Bioscience https://www.harvardbioscience.com/</td>
+      <td>RRID:SCR_000034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FitMaster v2x73.2</td>
+      <td>Harvard Bioscience https://www.harvardbioscience.com/</td>
+      <td>RRID:SCR_016233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2018a</td>
+      <td>MathWorks https://www.mathworks.com/products/matlab.html</td>
+      <td>RRID:SCR_013499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CorelDraw Graphics Suite X7</td>
+      <td>CorelDraw(https://www.coreldraw.com/en)</td>
+      <td>RRID:SCR_014235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8.3.0</td>
+      <td>GraphPad Software, Inc (https://www.graphpad.com/)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GLIMMPSE software</td>
+      <td>(https://glimmpse.samplesizeshop.org/)</td>
+      <td>RRID:SCR_016297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biorender</td>
+      <td>http://biorender.com</td>
+      <td>RRID:SCR_018361</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drugs and chemical compounds
 
 Cyclopiazonic acid (CPA), GSK2193874, GSK1016790A, phorbol 12-myristate 13-acetate (PMA), AR-C 118925XX, 2-Thio UTP tetrasodium salt, MRS2179, U-73122, NS309, and ARL-67156 were purchased from Tocris Bioscience (Minneapolis, MN). Fluo‐4-AM (Ca2+ indicator) were purchased from Invitrogen (Carlsbad, CA). 1-O-9Z-octadecenoyl-2-O-acetyl-sn-glycerol (OAG), PPADS (sodium salt), Gö-6976, JNJ-47965567, and U46619 were purchased from Cayman Chemicals (Ann Arbor, MI). Tamoxifen and apyrase were obtained from Sigma‐Aldrich (St. Louis, MO).
 
-## Animal protocols and models
+### Animal protocols and models
 
 All animal protocols were approved by the University of Virginia Animal Care and Use Committee (protocols 4100 and 4120). Both male and female mice were used in this study and age- and sex-matched controls were used. No sex differences were observed in RVSPs and TRPV4-induced dilation of PAs. C57BL6/J were obtained from the Jackson Laboratory (Bar Harbor, ME). Inducible endothelial cell (EC)-specific TRPV4 channel knockout (Trpv4 cKO-EC; Lohman et al., 2015; Moore et al., 2013), smooth muscle cell (SMC)-specific TRPV4 channel knockout (Trpv4 cKO-SMC; Billaud et al., 2015), EC-specific caveolin-1 knockout (Cav1 cKO-EC; Chen et al., 2012), EC-specific P2Y2R receptor knockout (P2ry2 cKO-EC; Chen et al., 2017), EC-specific Panx1 channel knockout (Panx1 cKO-EC; Lohman et al., 2015; Poon et al., 2014) and SMC-specific Panx1 channel knockout (Panx1 cKO-SMC; Billaud et al., 2015) mice (10–14 weeks old) were used. Mice were housed in an enriched environment and maintained under a 12:12 hr light/dark photocycle at ∼23°C with fresh tap water and standard chow diet available ad libitum. Mice were euthanized with pentobarbital (90 mg/kg; intraperitoneally; Diamondback Drugs, Scottsdale, AZ) followed by cervical dislocation for harvesting lung tissue. Fourth‐order PAs (~50 μm diameter) were isolated in cold HEPES‐buffered physiological salt solution (HEPES‐PSS, in mmol/L, 10 HEPES, 134 NaCl, 6 KCl, 1 MgCl2 hexahydrate, 2 CaCl2 dihydrate, and 7 dextrose, pH adjusted to 7.4 using 1 mol/L NaOH).
 
 Trpv4fl/fl (Moore et al., 2013), Cav1fl/fl (Chen et al., 2012), Panx1fl/fl (Lohman et al., 2015; Poon et al., 2014) and P2ry2fl/fl 57mice were crossed with VE-cadherin (Cdh5, endothelial) Cre mice (Moore et al., 2013) or SMMHC (smooth muscle) Cre mice (Wirth et al., 2008). EC- or SMC-specific knockout of Trpv4, Cav1, Panx1, or P2ry2 was induced by injecting 6-week-old Trpv4fl/fl Cre+, Cav1fl/fl Cre+, Panx1fl/fl Cre+, and P2ry2fl/fl Cre+ mice with tamoxifen (40 mg/kg intraperitoneally per day for 10 days). Tamoxifen-injected Trpv4fl/fl Cre-, Cav1fl/fl Cre-, Panx1fl/fl Cre-, and P2ry2fl/fl Cre- mice were used as controls. Mice were used for experiments after a 2-week washout period. Genotypes for Cdh5 Cre and SMMHC Cre were confirmed following previously published protocols (Moore et al., 2013; Wirth et al., 2008). Trpv4fl/fl (Moore et al., 2013), Cav1fl/fl (Chen et al., 2012), Panx1fl/fl (Lohman et al., 2015; Poon et al., 2014), and P2ry2fl/fl (Chen et al., 2017) genotyping was performed as described previously. Cdh5-Optoα1AR mice were developed by CHROMus (Cornell University, USA).
 
-## RVSP and Fulton index measurement
+### RVSP and Fulton index measurement
 
 Mice were anesthetized with pentobarbital (50 mg/kg bodyweight; intraperitoneally) and bupivacaine HCl (100 μL of 0.25% solution; subcutaneously) was used to numb the dissection site on the mouse. RVSP was measured as an indirect indicator of PAP. A Mikro-Tip pressure catheter (SPR-671; Millar Instruments, Huston, TX), connected to a bridge amp (FE221), and a PowerLab 4/35 4-channel recorder (ADInstruments, Colorado Springs, CO), was inserted through the external jugular vein into the right ventricle. Right ventricular pressure and heart rate were acquired and analyzed using LabChart8 software (ADInstruments). A stable 3 min recording was acquired for all the animals, and 1 min continuous segment was used for data analysis. When necessary, traces were digitally filtered using a low-pass filter at a cutoff frequency of 50 Hz. At the end of the experiments, mice were euthanized, and the hearts were isolated for right ventricular hypertrophy analysis. Right ventricular hypertrophy was determined by calculating the Fulton index, a ratio of the right ventricular (RV) heart weight over the left ventricular (LV) plus septum (S) weight (RV/ LV + S).
 
-## Luciferase assay for total ATP release
+### Luciferase assay for total ATP release
 
 ATP assay protocol was adapted from Yang et al., 2020. Fourth‐order PAs (~50 μm diameter) were isolated in cold HEPES‐buffered physiological salt solution (HEPES‐PSS, in mmol/L, 10 HEPES, 134 NaCl, 6 KCl, 1 MgCl2 hexahydrate, 2 CaCl2 dihydrate, and 7 dextrose, pH adjusted to 7.4 using 1 mol/L NaOH). Isolated PAs were pinned down en face on a Sylgard block and cut open. PAs were placed in black, opaque 96-well plates and incubated in HEPES-PSS for 10 min at 37°C, followed by incubation with the ectonucleotidase inhibitor ARL 67156 (300 μmol/L, Tocris Bioscience, Minneapolis, MN) for 30 min at 37°C. 50 μL volume of each sample was transferred to another black, opaque 96-well plate. ATP was measured using ATP bioluminescence assay reagent ATP Bioluminescence HSII kit (Roche Applied Science, Penzberg, Germany). Using a luminometer (FluoStar Omega), 50 μL of luciferin:luciferase reagent (ATP bioluminescence assay kit HSII; Roche Applied Science) was injected into each well and luminescence was recorded following a 5 s orbital mix and sample measurement at 7 s. ATP concentration in each sample was calculated from an ATP standard curve. For some experimental groups, PAs were first mounted on a pressure myography chamber and were denuded by pushing air through the lumen for 1 min.
 
-## Cardiac magnetic resonance imaging (MRI)
+### Cardiac magnetic resonance imaging (MRI)
 
 MRI studies were conducted under protocols that comply with the Guide for the Care and Use of Laboratory Animals (NIH publication no. 85-23, revised 1996). Mice were positioned in the scanner under 1.25% isoflurane anesthesia and body temperature was maintained at 37°C using thermostatic circulating water. A cylindrical birdcage RF coil (30 mm diameter, Bruker, Ettlingen, Germany) with an active length of 70 mm was used, and heart rate, respiration, and temperature were monitored during imaging using a fiber optic, MR-compatible system (Small Animal Imaging Inc, Stony Brook, NY). MRI was performed on a 7 Tesla (T) Clinscan system (Bruker) equipped with actively shielded gradients with a full strength of 650 mT/m and a slew rate of 6666 mT/m/ms (Vandsburger et al., 2007). Six short-axis slices were acquired from base to apex, with slice thickness of 1 mm, in-plane spatial resolution of 0.2 × 0.2 mm2, and temporal resolution of 8–12 ms. Baseline ejection fraction (EF), end-diastolic volume (EDV), end-systolic volume (ESV), myocardial mass, wall thickness, stroke volume (SV), and cardiac output (CO) were assessed from the cine images using the freely available software Segment version 2.0 R5292 (http://segment.heiberg.se).
 
-## Pressure myography
+### Pressure myography
 
-Isolated mouse PAs (~50 μm) were cannulated on glass micropipettes in a pressure myography chamber (The Instrumentation and Model Facility, University of Vermont, Burlington, VT) at areas lacking branching points and were pressurized at a physiological pressure of 15 mm Hg (Ottolini et al., 2020a). Arteries were superfused with PSS (in mmol/L, 119 NaCl, 4.7 KCl, 1.2 KH2PO4, 1.2 MgCl2 hexahydrate, 2.5 CaCl2 dihydrate, 7 dextrose, and 24 NaHCO3) at 37°C and bubbled with 20% O2/5% CO2 to maintain the pH at 7.4. All drug treatments were added to the superfusing PSS. PAs were pre-constricted with 50 nmol/L U46619 (a thromboxane A2 receptor agonist). All other pharmacological treatments were performed in the presence of U46619. Before measurement of vascular reactivity, arteries were treated with NS309 (1 μmol/L), a direct opener of endothelial IK/SK channels, to assess endothelial health. Arteries that failed to fully dilate to NS309 were discarded. Changes in arterial diameter were recorded at a 60‐ms frame rate using a charge‐coupled device camera and edge‐detection software (IonOptix LLC, Westwood, MA; Sonkusare et al., 2012; Sonkusare et al., 2014). All drug treatments were incubated for 10 min. At the end of each experiment, Ca2+‐free PSS (in mmol/L, 119 NaCl, 4.7 KCl, 1.2 KH2PO4, 1.2 MgCl2 hexahydrate, 7 dextrose, 24 NaHCO3, and 5 EGTA) was applied to assess the maximum passive diameter. Percent constriction was calculated by(1)[(Diameterbefore−Diameterafter)/Diameterbefore]×100
+Isolated mouse PAs (~50 μm) were cannulated on glass micropipettes in a pressure myography chamber (The Instrumentation and Model Facility, University of Vermont, Burlington, VT) at areas lacking branching points and were pressurized at a physiological pressure of 15 mm Hg (Ottolini et al., 2020a). Arteries were superfused with PSS (in mmol/L, 119 NaCl, 4.7 KCl, 1.2 KH2PO4, 1.2 MgCl2 hexahydrate, 2.5 CaCl2 dihydrate, 7 dextrose, and 24 NaHCO3) at 37°C and bubbled with 20% O2/5% CO2 to maintain the pH at 7.4. All drug treatments were added to the superfusing PSS. PAs were pre-constricted with 50 nmol/L U46619 (a thromboxane A2 receptor agonist). All other pharmacological treatments were performed in the presence of U46619. Before measurement of vascular reactivity, arteries were treated with NS309 (1 μmol/L), a direct opener of endothelial IK/SK channels, to assess endothelial health. Arteries that failed to fully dilate to NS309 were discarded. Changes in arterial diameter were recorded at a 60‐ms frame rate using a charge‐coupled device camera and edge‐detection software (IonOptix LLC, Westwood, MA; Sonkusare et al., 2012; Sonkusare et al., 2014). All drug treatments were incubated for 10 min. At the end of each experiment, Ca2+‐free PSS (in mmol/L, 119 NaCl, 4.7 KCl, 1.2 KH2PO4, 1.2 MgCl2 hexahydrate, 7 dextrose, 24 NaHCO3, and 5 EGTA) was applied to assess the maximum passive diameter. Percent constriction was calculated by
 
-where Diameterbefore is the diameter of the artery before a treatment and Diameterafter is the diameter after the treatment. Percent dilation was calculated by(2)[(Diameterdilated−Diameterbasal)/(DiameterCa−free−Diameterbasal)]×100
+$$
+[(Diameter_{before}−Diameter_{after})/Diameter_{before}]\times100
+$$
+
+where Diameterbefore is the diameter of the artery before a treatment and Diameterafter is the diameter after the treatment. Percent dilation was calculated by
+
+$$
+[(Diameter_{dilated}−Diameter_{basal})/(Diameter_{Ca−free}−Diameter_{basal})]\times100
+$$
 
 w here Diameterbasal is the stable diameter before drug treatment, Diameterdilated is the diameter after drug treatment, and DiameterCa‐free is the maximum passive diameter.
 
-## Flow/shear stress-induced ATP release
+### Flow/shear stress-induced ATP release
 
-Flow/shear stress was measured using a protocol modified from Ahn et al., 2017. Briefly, isolated PAs (~50 μm) were cannulated on glass micropipettes in a pressure myography chamber (The Instrumentation and Model Facility, University of Vermont) at areas lacking branching points and were pressurized at a physiological pressure of 15 mm Hg (Ottolini et al., 2020a). Arteries were superfused with PSS (in mmol/L, 119 NaCl, 4.7 KCl, 1.2 KH2PO4, 1.2 MgCl2 hexahydrate, 2.5 CaCl2 dihydrate, 7 dextrose, and 24 NaHCO3) at 37°C and bubbled with 20% O2/5% CO2 to maintain the pH at 7.4. The arteries were treated luminally with 300 μmol/L ARL-67156 (ecto-ATPase inhibitor; Sigma‐Aldrich) to avoid ATP degradation throughout the duration of the experiment. The tips of the cannulating pipettes were always arranged with smaller pipettes upstream and larger pipettes downstream. The average tip size was 20.1 ± 0.4 μm at the upstream end and 23.6 ± 0.4 μm at the downstream end. Both ends of the vessel were secured, and the vessel was maintained at an intraluminal pressure of 15 cmH2O by elevating the inflow reservoir. Flow/shear stress was increased by adjusting the height of the reservoir. Flow-induced luminal solution was collected at the outflow pipette end. After a 30 min equilibration period, a baseline sample was collected for luminal ATP measurement. Shear stress was calculated from the flow rate in the vessel lumen and the diameter of the vessels using the equation (Zemskov et al., 2011) : τ=4(μQ˙/(πr3)), where μ is viscosity, Q. is volumetric flow rate, and r is internal radius of the vessel. The volumetric flow rate was measured as the volume of the flowthrough at different pressures. Vessel diameter was measured at each flow rate. The shear stress range was 4–14 dynes/cm2. Luminal outflow samples per shear stress range were obtained every 30 min. The samples were used for luciferase assays for total ATP release, as described above.
+Flow/shear stress was measured using a protocol modified from Ahn et al., 2017. Briefly, isolated PAs (~50 μm) were cannulated on glass micropipettes in a pressure myography chamber (The Instrumentation and Model Facility, University of Vermont) at areas lacking branching points and were pressurized at a physiological pressure of 15 mm Hg (Ottolini et al., 2020a). Arteries were superfused with PSS (in mmol/L, 119 NaCl, 4.7 KCl, 1.2 KH2PO4, 1.2 MgCl2 hexahydrate, 2.5 CaCl2 dihydrate, 7 dextrose, and 24 NaHCO3) at 37°C and bubbled with 20% O2/5% CO2 to maintain the pH at 7.4. The arteries were treated luminally with 300 μmol/L ARL-67156 (ecto-ATPase inhibitor; Sigma‐Aldrich) to avoid ATP degradation throughout the duration of the experiment. The tips of the cannulating pipettes were always arranged with smaller pipettes upstream and larger pipettes downstream. The average tip size was 20.1 ± 0.4 μm at the upstream end and 23.6 ± 0.4 μm at the downstream end. Both ends of the vessel were secured, and the vessel was maintained at an intraluminal pressure of 15 cmH2O by elevating the inflow reservoir. Flow/shear stress was increased by adjusting the height of the reservoir. Flow-induced luminal solution was collected at the outflow pipette end. After a 30 min equilibration period, a baseline sample was collected for luminal ATP measurement. Shear stress was calculated from the flow rate in the vessel lumen and the diameter of the vessels using the equation (Zemskov et al., 2011) : $\tau=4(\muQ˙/(\pir^{3}))$, where μ is viscosity, $Q.$ is volumetric flow rate, and r is internal radius of the vessel. The volumetric flow rate was measured as the volume of the flowthrough at different pressures. Vessel diameter was measured at each flow rate. The shear stress range was 4–14 dynes/cm2. Luminal outflow samples per shear stress range were obtained every 30 min. The samples were used for luciferase assays for total ATP release, as described above.
 
-## Ca2+ imaging
+### Ca2+ imaging
 
 Measurements of TRPV4EC Ca2+ sparklets in the native endothelium of mouse PAs were performed as previously described (Sonkusare et al., 2012). Briefly, fourth-order (~50 μm) PAs were pinned down en face on a Sylgard block and loaded with Fluo-4-AM (10 μmol/L) in the presence of pluronic acid (0.04%) at 30°C for 30 min. TRPV4EC Ca2+ sparklets were recorded at 30 frames per second with Andor Revolution WD (with Borealis) spinning‐disk confocal imaging system (Oxford Instruments, Abingdon, UK) comprised an upright Nikon microscope with a 60× water dipping objective (numerical aperture 1.0) and an electron multiplying charge coupled device camera (iXon 888, Oxford Instruments). All experiments were carried out in the presence of cyclopiazonic acid (20 μmol/L, a sarco‐endoplasmic reticulum [ER] Ca2+‐ATPase inhibitor) in order to eliminate the interference from Ca2+ release from intracellular stores. Fluo-4 was excited at 488 nm with a solid‐state laser and emitted fluorescence was captured using a 525/36 nm band‐pass filter. TRPV4EC Ca2+ sparklets were recorded before and 5 min after the addition of specific compounds. To generate fractional fluorescence (F/F0) traces, a region of interest defined by a 1.7‐μm2 (5 × 5 pixels) box was placed at a point corresponding to peak sparklet amplitude. Each field of view was ~110 × 110 μm and covered ~15 ECs. Representative F/F0 traces were filtered using a Gaussian filter and a cutoff corner frequency of 4 Hz. Sparklet activity was assessed as described previously using the custom‐designed SparkAn software (Sonkusare et al., 2012; Sonkusare et al., 2014).
 
-## Calculation of TRPV4 sparklet activity per site
+### Calculation of TRPV4 sparklet activity per site
 
-Activity of TRPV4 Ca2+ sparklets was analyzed as described previously (Sonkusare et al., 2012; Ottolini et al., 2020b; Sonkusare et al., 2014). Area under the curve for all the events at a site was determined using trapezoidal numerical integration ([F−F0]/F0 over time, in seconds). The average number of active TRPV4 channels, as defined by NPO (where N is the number of channels at a site and PO is the open state probability of the channel), was calculated by(3)NPO=(Tlevel1+2Tlevel2+3Tlevel3+4Tlevel4)/Ttotal
+Activity of TRPV4 Ca2+ sparklets was analyzed as described previously (Sonkusare et al., 2012; Ottolini et al., 2020b; Sonkusare et al., 2014). Area under the curve for all the events at a site was determined using trapezoidal numerical integration ([F−F0]/F0 over time, in seconds). The average number of active TRPV4 channels, as defined by NPO (where N is the number of channels at a site and PO is the open state probability of the channel), was calculated by
+
+$$
+NP_{O}=(T_{level1}+2T_{level2}+3T_{level3}+4T_{level4})/T_{total}
+$$
 
 where T is the dwell time at each quantal level detected at TRPV4 sparklet sites and Ttotal is the duration of the recording. NPO was determined using Single Channel Search module of Clampfit and quantal amplitudes derived from all‐points histograms (Marziano et al., 2017) (ΔF/F0 of 0.29 for Fluo‐4-loaded PAs).
 
 Total number of sparklet sites in a field was divided by the number of cells in that field to obtain sparklet sites per cell.
 
-## All-points histograms
+### All-points histograms
 
-All-points amplitude histograms were constructed as described previously (Sonkusare et al., 2012; Ottolini et al., 2020b). Briefly, images were filtered with a Kalman filter (adopted from an ImageJ plug-in written by Christopher Philip Mauer, Northwestern University, Chicago, IL; acquisition noise variance estimate = 0.05; filter gain = 0.8). The inclusion criteria were a stable baseline containing at least five steady points and a steady peak containing at least five peak points. Sparklet traces were exported to ClampFit10.3 for constructing an all-points histogram, which was fit with the multiple Gaussian function below:(4)fF/F0=∑i=1Nai2πσiexp-FF0-μi22σi2
+All-points amplitude histograms were constructed as described previously (Sonkusare et al., 2012; Ottolini et al., 2020b). Briefly, images were filtered with a Kalman filter (adopted from an ImageJ plug-in written by Christopher Philip Mauer, Northwestern University, Chicago, IL; acquisition noise variance estimate = 0.05; filter gain = 0.8). The inclusion criteria were a stable baseline containing at least five steady points and a steady peak containing at least five peak points. Sparklet traces were exported to ClampFit10.3 for constructing an all-points histogram, which was fit with the multiple Gaussian function below:
+
+$$
+fF/F_{0}=\sum_{i=1}^{N}\frac{a_{i}}{\sqrt{2\pi\sigma_{i}}}exp\frac{-\frac{F}{F_{0}}-\mu_{i}^{2}}{2\sigma_{i}^{2}}
+$$
 
 where F/F0 represents fractional fluorescence, a represents the area, μ represents the mean value, and σ2 represents the variance of the Gaussian distribution. While the detected sparklets can have multiple amplitudes corresponding to quantal level 1, 2, 3, or 4, the baseline (level 0) was the same for all the detected sparklets regardless of the amplitude of the sparklets. Therefore, the baseline corresponds to a higher count compared to all other events.
 
-## Immunostaining
+### Immunostaining
 
 Immunostaining was performed on fourth-order PAs (~50 μm) pinned en face on SYLGARD blocks. PAs were fixed with 4% paraformaldehyde (PFA) at room temperature for 15 min and then washed three times with phosphate-buffered saline (PBS). The tissue was permeabilized with 0.2% Triton-X for 30 min, blocked with 5% normal donkey serum (ab7475, Abcam, Cambridge, MA) or normal goat serum (ab7475, Abcam), depending on the host of the secondary antibody used, for 1 hr at room temperature. PAs were incubated with the primary antibodies (Key resources table) overnight at 4°C. Following the overnight incubation, PAs were incubated with secondary antibody 1:500 Alexa Fluor 568-conjugated donkey anti-rabbit (Life Technologies, Carlsbad, CA) for 1 hr at room temperature in the dark room. For nuclear staining, PAs were washed with PBS and then incubated with 0.3 mmol/L DAPI (Invitrogen, Carlsbad, CA) for 10 min at room temperature. Images were acquired along the z-axis from the surface of the endothelium to the bottom where the EC layer encounters the smooth muscle cell layer with a slice size of 0.1 μm using the Andor microscope described above. The internal elastic lamina (IEL) autofluorescence was evaluated using an excitation of 488 nm with a solid-state laser and collecting the emitted fluorescence with a 525/36 nm band-pass filter. Immunostaining for the protein of interest was evaluated using an excitation of 561 nm and collecting the emitted fluorescence with a 607/36 nm band-pass filter. DAPI immunostaining was evaluated using an excitation of 409 nm and collecting the emitted fluorescence with a 447/69 nm band-pass filter. The specificity of Panx1 and P2Y2R antibodies was confirmed by a lack of signal in PAs from endothelial knockout mice. The specificity of TRPV4, Cav-1, and PKC antibodies was confirmed previously (Daneva et al., 2021; Ottolini et al., 2020b).
 
-## In situ PLA
+### In situ PLA
 
 Fourth-order (~50 μm) PAs were pinned en face on SYLGARD blocks. PAs were fixed with 4% PFA for 15 min followed by three washes with PBS. PAs were then permeabilized with 0.2% Triton X for 30 min at room temperature followed by blocking with 5% normal donkey serum (Abcam plc, Cambridge, MA) and 300 mmol/L glycine for 1 hr at room temperature. After three washes with PBS, PAs were incubated with the primary antibodies (Key resources table) overnight at 4°C. The PLA protocol from Duolink PLA Technology kit (Sigma-Aldrich) was followed for the detection of co-localized proteins. Lastly, PAs were incubated with 0.3 μmol/L DAPI nuclear staining (Invitrogen) for 10 min at room temperature in the dark room. PLA images were acquired using the Andor Revolution spinning-disk confocal imaging system along the z-axis at a slice size of 0.1 μm. Images were analyzed by normalizing the number of positive puncta by the number of nuclei in a field of view. The specificity of the PLA antibodies was determined using PAs from endothelial knockout mice for one of the protein pairs.
 
-## Plasmid generation and transfection into HEK293 cells
+### Plasmid generation and transfection into HEK293 cells
 
 HEK293 cells authenticated with STR profiling were obtained from ATCC USA. Mycoplasma contamination was not detected as per ATCC website. The TRPV4 coding sequence without stop codons was amplified from mouse heart cDNA. The amplified fragment was inserted into a plasmid backbone containing a CMV promoter region for expression and, in addition, is suitable for lentiviral production by Gibson assembly. The in-frame FLAG tag was inserted into the 3′-primer used for amplification. Constructs were verified by sequencing the regions that had been inserted into the plasmid backbone. HEK293 cells were seeded (7 × 105 cells per 100 mm dish) in Dulbecco’s Modified Eagle Medium with 10% fetal bovine serum (Thermo Fisher Scientific Inc, Waltham, MA) 1 day prior to transfection. Cells were transfected using the LipofectamineLTX protocol (Thermo Fisher Scientific Inc). TRPV4 was co-expressed with PKCα and PKCβ, obtained from Origene Technologies (Montgomery County, MD).
 
-## Patch clamp in freshly isolated pulmonary ECs and in HEK293 cells
+### Patch clamp in freshly isolated pulmonary ECs and in HEK293 cells
 
 Fresh ECs were obtained via enzymatic digestion of fourth-order PAs. Briefly, PAs were incubated in the dissociation solution (in mmol/L, 55 NaCl, 80 Na glutamate, 6 KCl, 2 MgCl2, 0.1 CaCl2, 10 glucose, 10 HEPES, pH 7.3) containing Worthington neutral protease (0.5 mg/mL) for 30 min at 37°C. The extracellular solution consisted of (in mmol/L) 10 HEPES, 134 NaCl, 6 KCl, 2 CaCl2, 10 glucose, and 1 MgCl2 (adjusted to pH 7.4 with NaOH). The intracellular pipette solution for perforated-patch configuration consisted of (in mmol/L) 10 HEPES, 30 KCl, 10 NaCl, 110 K-aspartate, and 1 MgCl2 (adjusted to pH 7.2 with NaOH). Cells were kept at room temperature in a bathing solution consisting of (in mmol/L) 10 HEPES, 134 NaCl, 6 KCl, 2 CaCl2, 10 glucose, and 1 MgCl2 (adjusted to pH 7.4 with NaOH). Narishige PC-100 puller (Narishige International USA, Inc, Amityville, NY) was utilized to pull patch electrodes, which were polished using MicroForge MF-830 polisher (Narishige International USA, Inc). The pipette resistance was (3–5 ΩM). Amphotericin B was dissolved in the intracellular pipette solution to reach a ﬁnal concentration of 0.3 μmol/L. The data were acquired using HEKA EPC 10 amplifier and PatchMaster v2x90 program (Harvard Bioscience, Holliston, MA) and analyzed using FitMaster v2x73.2 (Harvard Bioscience) and MATLAB R2018a (MathWorks, Natick, MA). TRPV4 channel current was recorded from freshly isolated ECs as described previously (Sonkusare et al., 2012; Ottolini et al., 2020b). Briefly, GSK101-induced outward currents through TRPV4 channels were assessed in response to a 200 ms voltage step from –45 mV to +100 mV in the presence of ruthenium red in order to prevent Ca2+ and activation of IK/SK channels at negative voltages.
 
 TRPV4 channel current was recorded in HEK293 cells using whole-cell patch configuration 48 hr after transfection. The intracellular solution consisted of (in mmol/L) 20 CsCl, 100 Cs-aspartate, 1 MgCl2, 4 ATP, 0.08 CaCl2, 10 BAPTA, 10 HEPES, pH 7.2 (adjusted with CsOH). The extracellular solution consisted of (in mmol/L) 10 HEPES, 134 NaCl, 6 KCl, 2 CaCl2, 10 glucose, and 1 MgCl2 (adjusted to pH 7.4 with NaOH). Currents were measured using a voltage clamp protocol where voltage-ramp pulses (–100 mV to +100 mV) were applied over 200 ms with a holding potential of –50 mV. TRPV4 currents were measured before or 5 min after treatment.
 
-## Quantitative polymerase chain reaction (qPCR)
+### Quantitative polymerase chain reaction (qPCR)
 
 Mouse mesenteric arteries were denuded by pushing air through the arteries for 1 min. RNA was isolated using a Direct-zol RNA Miniprep (R2051, Zymo Research, Irvine, CA), with an in-column DNA Removal Kit. cDNA was converted with Bio-Rad iScript cDNA Synthesis Kit (1708841, Hercules, CA). The qPCR reaction mixes were prepared using Bio-Rad 2x SsoAdvanced Universal SYBR Green Supermix (1725272, Hercules, CA), 200 nmol/L primers (Panx1_F: 5′ TGCACAAGTTCTTCCCCTACA, Panx1_R: ATGGCGCGGTTGTAGACTTT; GAPDH_F: GGTTGTCTCCTGCGACTTCA; GAPDH_R TAGG GCCTCTCTTGCTCAGT; Eurofins Genomics Louisville, KY), and 20 nmol/L cDNA, then run in a Bio-Rad CFX96 qPCR Detection System. Results were analyzed using the 2-∆∆Ct method.
 
-## Statistical analysis
+### Statistical analysis
 
 Results are presented as mean ± SEM. The n = 1 was defined as one artery in the imaging experiments (Ca2+ imaging, PLA), one cell for patch-clamp experiments, one mouse for RVSP measurements, one artery for pressure myography experiments, one mouse for functional MRI, one mouse for ATP measurements, and one mouse for qPCR experiments. The data were obtained from at least three mice in experiments performed in at least two independent batches. The individual data points are shown for each dataset. For in vivo experiments, an independent team member performed random assignment of animals to groups and did not have knowledge of treatment assignment groups. All the in vivo experiments were blinded; information about the groups or treatments was withheld from the experimenter or from the team member who analyzed the data. All data are shown in graphical form using CorelDraw Graphics Suite X7 (Ottawa, ON, Canada) and statistically analyzed using GraphPad Prism 8.3.0 (Sand Diego, CA). A power analysis to determine group sizes and study power (>0.8) was performed using GLIMMPSE software (α = 0.05; >20% change). Using this method, we estimated at least five cells per group for patch-clamp experiments, five arteries per group for imaging and pressure myography experiments, and four mice per group for RVSP measurements and MRI. A Shapiro–Wilk test was performed to determine normality. The data in this article were normally distributed; therefore, parametric statistics were performed. Data were analyzed using two-tailed, paired or independent t-test (for comparison of data collected from two different treatments), one-way ANOVA or two-way ANOVA (to investigate statistical differences among more than two different treatments). Tukey correction was performed for multiple comparisons with one-way ANOVA, and Bonferroni correction was performed for multiple comparisons with two-way ANOVA. Statistical significance was determined as a p-value <0.05.

@@ -53,7 +53,7 @@ Authors can use Biofactoid to share structured information from research article
 
 ## Results
 
-## Data sharing workflow
+### Data sharing workflow
 
 Biofactoid enables molecular-level detail of biological processes reported in articles to be shared in a structured format accessible to humans and computers. Interactions (binding, post-translational modification and transcription/translation) involving molecules of various types (proteins, nucleic acids, genes, or chemicals such as metabolites and drug compounds) can be represented. Users begin by entering the article title, or identifier (e.g. PubMed identifier or Digital Object Identifier). Next, article metadata, including authors, abstract and journal issue, are automatically retrieved. Next, users draw a network of biological entities and interactions using the Biofactoid curation tool, which has an easy-to-use interface similar to graphical illustration software (e.g. Microsoft Powerpoint, Adobe Illustrator) which will be familiar to users, but with the added ability to generate structured data from the author-drawn biological pathway. The major features of the Biofactoid curation tool include support for:
 
@@ -63,7 +63,7 @@ Biofactoid enables molecular-level detail of biological processes reported in ar
 
 Once complete, the pathway data is validated by pressing a "Submit" button. At this point, the user may address any potential quality issues flagged by the system (e.g. unlabelled nodes, empty document) before confirming their submission. Submitted pathways are shared publicly with the research community and users retain the ability to edit their pathway via the link they received at the start of the workflow. Authors who wish to have their submissions removed from Biofactoid can do so by contacting the support team (support@biofactoid.org).
 
-## Data sharing and exploration
+### Data sharing and exploration
 
 When research findings are shared through Biofactoid in a structured and computable manner, curated knowledge is connected to, and becomes part of, a collective pool of computable knowledge that the community can access in different ways. Visitors to the Biofactoid website (biofactoid.org) may browse recently added articles, and a graphical abstract of each new submission is posted to Twitter (twitter.com/biofactoid). Each entry is automatically linked to its associated authors, article information and structured data and presented in an interactive Biofactoid Explorer web app (Figure 2A).
 
@@ -79,7 +79,7 @@ Beyond the “Explorer”, Biofactoid data represented in the formal BioPAX onto
 
 For example, researchers can ask the question: “Which known pathways are related to an interaction in Biofactoid?” As an example answer to this question, a search of Pathway Commons shows how two interactions made computable by authors using Biofactoid (i.e. “SENP1 activates SIRT3”,  Wang et al., 2019a; “SIRT5 activates UCP1”, Wang et al., 2019b) unify previously disconnected pathways for mitochondrial biogenesis from the Reactome Pathway Database (Jassal et al., 2020; Figure 2B; see the section "Visualization of network data across sources" in Materials and methods). Researchers can also ask: “How are two genes related?” As another query example, a search of Pathway Commons shows how an interaction contributed by an author using Biofactoid (“SENP1 activates SIRT3”, Wang et al., 2019b) provides a new, more direct regulatory pathway linking the mitochondrial proteins SENP1 and SOD2. Thus, Biofactoid directly contributes to building a more complete and comprehensive collection of biological pathways.
 
-## User testing and pilot study involving authors and journals
+### User testing and pilot study involving authors and journals
 
 We tested the Biofactoid software over multiple iterations with researchers from the authors’ institutions, journal editors and finally pathway authors, updating the software each time based on user feedback. This process supported two major goals: to improve the user experience of the software for authors, who are typically unfamiliar with curation and structured data concepts, and to develop a model for integrating Biofactoid into the publication process with journals. We performed user testing, with a user-centred design process, of a prototype of the Biofactoid curation tool (Norman, 2001; Norman and Draper, 1986). We improved our software based on this feedback and then repeated this process a second time (see the section "User testing and pilot study" in Materials and methods). We also gathered more informal feedback that was used to improve the system.
 
@@ -91,11 +91,144 @@ Roughly 8.5% of these authors successfully shared their research in Biofactoid, 
 
 **Figure 3.:** A three-phase pilot tested the feasibility of Biofactoid and involved journal editors and authors of research articles. Phase I and II involved editors and authors whose articles were recently published. In Phase III, 2,065 published articles were screened and authors of suitable articles were invited to Biofactoid. The articles screened were from 16 journals (Table 1).
 
+**Table 1.**
+ Prevalence of articles with pathway knowledge suitable for Biofactoid.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ISSN</th>
+      <th>Journal*</th>
+      <th>Coverage² [Vol. (Issue)]</th>
+      <th>Articles screened</th>
+      <th>Hits</th>
+      <th>% Hits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2211–1247</td>
+      <td>Cell Reports</td>
+      <td>30(1) - 32(11)</td>
+      <td>953</td>
+      <td>109</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <td>1097–4164</td>
+      <td>Molecular Cell</td>
+      <td>73(1) - 79(6)</td>
+      <td>725</td>
+      <td>85</td>
+      <td>10.5</td>
+    </tr>
+    <tr>
+      <td>1549–5477</td>
+      <td>Genes &amp; Development</td>
+      <td>34(1-2) - 34(17-18)</td>
+      <td>93</td>
+      <td>15</td>
+      <td>13.9</td>
+    </tr>
+    <tr>
+      <td>1476–4679</td>
+      <td>Nature Cell Biology</td>
+      <td>22(4) - 22(9)</td>
+      <td>84</td>
+      <td>10</td>
+      <td>10.6</td>
+    </tr>
+    <tr>
+      <td>1083–351 X</td>
+      <td>Journal of Biological Chemistry</td>
+      <td>295(31) - 295(37)</td>
+      <td>210</td>
+      <td>21</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2065</td>
+      <td>240</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Weighted Average</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>10.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Only journals in which at least 80 ‘hits’ were identified were included. A ‘hit’ is an article that provides direct evidence for a molecular interaction that can be captured by Biofactoid. The ability of Biofactoid to capture an interaction depends upon the type of bioentities, the relationship types and organisms described in the article. In total, articles from 16 journals were screened: EMBO; Molecular and Cellular Biology; Cell; Cancer Cell; iScience; J Biol Chem; Cell Metabolism; Science; Nature Genetics; Science Signaling; Science Advances; Immunity; Cell Reports; Molecular Cell; Genes & Development; Nature Cell Biology. ²Coverage indicates the span of journal issues that were included. Only primary research articles from each issue were screened._
+
 ## Discussion
 
 Biofactoid focuses on the capture of published pathway information in computational form to augment discovery, attribution and communication of scientific knowledge. In developing our strategy, we have considered how technology can best be used to aid authors. The result is a generic approach that can be extended to capture other types of biological knowledge, at the source of knowledge creation, in computable form. To be successful, Biofactoid development has focused on providing key elements of efficiency, incentives and better technology for human-computer interaction.
 
 The computable knowledge capture model proposed here includes formal knowledge representation using ontologies, easy to use curation support software that links molecules to corresponding database identifiers (normalization), submission to widely available knowledge resources, a connection with the publication process and author attribution. This model expands on prior work defining digital abstracts and building crowdsourcing efforts for pathway data and software (Ceol et al., 2008; Gerstein et al., 2007; Leitner et al., 2010; Liechti et al., 2017; Slenter et al., 2018; Table 2). In principle, Biofactoid technology can be extended to support any network of entities or concepts and their relationships (i.e. a knowledge graph) collaboratively built by a community of knowledge generators.
+
+**Table 2.**
+ Comparison of non-centrally curated biocuration projects.Comparison of projects that support community curation of pathway and interaction knowledge as their primary concern.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Scope</th>
+      <th>Source</th>
+      <th>Integrated curation tool</th>
+      <th>Automatic entity recognition</th>
+      <th>Single-article oriented</th>
+      <th>Ref.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biofactoid</td>
+      <td>Pathway</td>
+      <td>Author</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>This study.</td>
+    </tr>
+    <tr>
+      <td>Structured Digital Abstract (FEBS Letters)</td>
+      <td>Protein-Protein</td>
+      <td>Author</td>
+      <td>-</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>Ceol et al., 2008; Leitner et al., 2010; Gerstein et al., 2007</td>
+    </tr>
+    <tr>
+      <td>WikiPathways</td>
+      <td>Pathway</td>
+      <td>Anyone</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Slenter et al., 2018</td>
+    </tr>
+    <tr>
+      <td>SourceData</td>
+      <td>Figure</td>
+      <td>Author</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>Liechti et al., 2017</td>
+    </tr>
+  </tbody>
+</table>
 
 A key assumption underlying Biofactoid is that scalable knowledge capture can be achieved by community curation. However, crowd-sourcing of biological research findings presents unique challenges that must be considered if widespread use is to be realised. First, the biological research literature contains a wide array of biological entities and concepts, with descriptions that range from detailed to abstract. As support for more biological entity types are added, a curation system can become more complex, increasing the barrier to entry and making it more likely users will require training to use it effectively. Thus, a successful strategy should support wide coverage of biological concepts while minimising complexity.
 
@@ -125,19 +258,19 @@ We are also improving the search and exploration functions of the system, ensuri
 
 ## Materials and methods
 
-## Software implementation
+### Software implementation
 
 Biofactoid is written in JavaScript. The backend server uses a microservice architecture, with Node.js, Express and RethinkDB. Client-server data synchronization, supporting automatic saving and concurrent editing, uses websockets and a model similar to differential synchronization (Fraser, 2009). The front end uses React and Cytoscape.js (Franz et al., 2016), for network drawing and is optimized for desktop and mobile devices. An administrative dashboard, as well as user curation workflow automation features (e.g. automatic email generation) are integrated into the Biofactoid system to aid system scalability.
 
-## Visualization of network data across sources
+### Visualization of network data across sources
 
 The network visualizations which summarize a search of known pathways and interactions related to interactions captured by Biofactoid (Figure 2B) were created by combining data available in Biofactoid and Pathway Commons (version 12; Rodchenkov et al., 2020). Data for the network with subheading “New connections among mitochondrial pathways” was obtained by searching pathwaycommons.org for the genes SENP1, SIRT3, UCP1 and SIRT5, which are part of the Biofactoid entries displayed in Figure 2A. In the search results, the Reactome pathways entitled “SUMO is proteolytically processed”, “Transcriptional activation of mitochondrial biogenesis” and “The fatty acid cycling model” were each downloaded as a Simple Interaction Format (SIF) file. Also in the search results, the “Interactions” panel was selected and the network was downloaded as a SIF file. Using Cytoscape (cytoscape.org) (Shannon et al., 2003), each SIF file was imported as a new network and the four individual networks were merged. The Biofactoid interactions from Figure 2A were added to this merged network which was manually laid out and styled to achieve the final result. Data underlying the network with figure subheading “New regulatory route from SENP1 to SOD2” was obtained by querying the Pathway Commons SIF Graph web service (http://www.pathwaycommons.org/sifgraph/swagger-ui.html) to identify regulatory paths between SENP1 and SOD2, in which the maximum number of interactions separating the two genes (i.e. limit) is 3. This resulting SIF file was imported into Cytoscape and then manually laid out and styled to achieve the final result.
 
-## User testing
+### User testing
 
 Two rounds of user-centered testing were performed, once following the development of the initial prototype of the Biofactoid curation tool, and once again after further development of the tool. Test participants were drawn from volunteers who responded to individual email invitations. In each round of testing, participants were provided with a one-page handout that provided an overview of the project, brief instructions on how to use the curation tool, followed by one or more text excerpts describing a biological interaction that they were asked to input. Ten researchers participated, including faculty members (n = 2), graduate students (n = 3) and research staff (n = 5). Participants used the software on an individual, in-person basis from a provided computer, during which screen and voice were recorded. All participants provided written consent to volunteer and have their session recorded. We also elicited user feedback both in-person and by email for a version of Biofactoid able to support the entire "Data sharing workflow", including: user onboarding material presented on the biofactoid.org homepage; a system to identify articles based on information entered by authors (i.e. title); the curation tool; and the Biofactoid Explorer. Those providing feedback for the "Data sharing workflow" included three curators from biological databases (Reactome and UniProt); participants were asked to input an article of their choosing, starting at the homepage.
 
-## Pilot study
+### Pilot study
 
 A group of two editors from Molecular Cell and Cell Systems volunteered to evaluate Biofactoid in response to a direct invitation. A pilot study was designed with three phases. Phase I introduced the software to the journal editors to determine whether it met basic requirements for capturing pathway knowledge in articles in their journals and identify any issues precluding interaction with authors. To do this, we simulated the author’s experience using the Biofactoid curation tool to input pathway information. First, an editor and a member of the Biofactoid team selected a recently published article from the Molecular Cell, "Online Now" (https://www.cell.com/molecular-cell/newarticles) website, based on a single criterion: the article reported evidence directly supporting at least one interaction type supported by Biofactoid. Next, editors were sent a mock email invitation addressed to the selected article’s corresponding author. Invitations contained brief instructions on system use and a link to the Biofactoid curation tool, which had the article metadata already filled for the corresponding Biofactoid document. Finally, an editor was observed using the curation tool to enter the pathway information contained in the article remotely via video-conferencing software. A feedback session was carried out with two editors immediately following the simulation and a subsequent video-conference was scheduled to capture additional recommendations for the software and author workflow.
 
@@ -145,6 +278,6 @@ Phase II validated the Biofactoid software and the workflow with authors. First,
 
 Phase III examined the author participation rate following an invitation. First, we selected a total of sixteen journals, with a preference towards those with a mandate for molecular biology and mechanistic studies backed by biochemical-level evidence. Journals with broad and diverse readership (e.g. Nature, Science; Table 1) were also included. Next, articles from entire journal issues were screened by a Biofactoid team member (JVW) for studies reporting evidence of one or more biological interactions compatible with Biofactoid. As before, email invitations were addressed to an author of the article. In contrast to previous emails, the recipient was only provided with a link to the biofactoid.org homepage in order to begin the data sharing workflow (no pre-fetching of manuscript metadata). A maximum of two weekly reminder emails were sent to those that had not submitted their pathway information. We manually analysed user feedback to identify bugs and aspects of the system that were not intuitive or prevented users from entering data and prioritized those to be addressed with Biofactoid software improvements.
 
-## Software availability
+### Software availability
 
 Biofactoid is available to biomedical researchers for data sharing and exploration at biofactoid.org. To support bioinformaticians and software developers, all user-contributed pathway data is openly accessible in multiple standard formats: JavaScript Object Notation (JSON) for raw data; Systems Biology Graphical Notation Markup Language (SBGN-ML) pathway visualization format using the Process Description notation (Le Novère et al., 2009; van Iersel et al., 2012); and BioPAX (Demir et al., 2010). All code, documentation and data are open source and freely available through GitHub (github.com/PathwayCommons/factoid); containerized software components are freely available on DockerHub (hub.docker.com/r/pathwaycommons/factoid) enabling others to build on and improve the Biofactoid software.

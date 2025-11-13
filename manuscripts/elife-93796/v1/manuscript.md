@@ -47,20 +47,20 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Wyss Institute for Biologically Inspired Engineering at Harvard University Boston United States
-2. https://ror.org/05wvpxv85 Department of Biology, Tufts University Medford United States
-3. https://ror.org/05r78ng12 DEVANA group, Faculty of Pharmacy, University of Castilla-La Mancha Ciudad Real Spain
+1. Wyss Institute for Biologically Inspired Engineering at Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Department of Biology, Tufts University Medford United States ([ROR:05wvpxv85](https://ror.org/05wvpxv85))
+3. DEVANA group, Faculty of Pharmacy, University of Castilla-La Mancha Ciudad Real Spain ([ROR:05r78ng12](https://ror.org/05r78ng12))
 4. Vascular Perfusion Solutions Inc San Antonio United States
-5. https://ror.org/01sq4yt06 RESTOR, 59th Medical Wing, JBSA, Lackland AFB San Antonio United States
-6. https://ror.org/05wvpxv85 Allen Center, Tufts University Medford United States
-7. https://ror.org/00dvg7y05 Vascular Biology Program & Department of Surgery, Boston Children’s Hospital and Harvard Medical School Boston United States
+5. RESTOR, 59th Medical Wing, JBSA, Lackland AFB San Antonio United States ([ROR:01sq4yt06](https://ror.org/01sq4yt06))
+6. Allen Center, Tufts University Medford United States ([ROR:05wvpxv85](https://ror.org/05wvpxv85))
+7. Vascular Biology Program & Department of Surgery, Boston Children’s Hospital and Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
 8. Harvard John A. Paulson School of Engineering and Applied Sciences Boston United States
 
 † Corresponding author
 
 ## Abstract
 
-Drugs that induce reversible slowing of metabolic and physiological processes would have great value for organ preservation, especially for organs with high susceptibility to hypoxia-reperfusion injury, such as the heart. Using whole-organism screening of metabolism, mobility, and development in Xenopus , we identified an existing drug, SNC80, that rapidly and reversibly slows biochemical and metabolic activities while preserving cell and tissue viability. Although SNC80 was developed as a delta opioid receptor activator, we discovered that its ability to slow metabolism is independent of its opioid modulating activity as a novel SNC80 analog (WB3) with almost 1000 times less delta opioid receptor binding activity is equally active. Metabolic suppression was also achieved using SNC80 in microfluidic human organs-on-chips, as well as in explanted whole porcine hearts and limbs, demonstrating the cross-species relevance of this approach and potential clinical relevance for surgical transplantation. Pharmacological induction of physiological slowing in combination with organ perfusion transport systems may offer a new therapeutic approach for tissue and organ preservation for transplantation, trauma management, and enhancing patient survival in remote and low-resource locations.
+Drugs that induce reversible slowing of metabolic and physiological processes would have great value for organ preservation, especially for organs with high susceptibility to hypoxia-reperfusion injury, such as the heart. Using whole-organism screening of metabolism, mobility, and development in Xenopus, we identified an existing drug, SNC80, that rapidly and reversibly slows biochemical and metabolic activities while preserving cell and tissue viability. Although SNC80 was developed as a delta opioid receptor activator, we discovered that its ability to slow metabolism is independent of its opioid modulating activity as a novel SNC80 analog (WB3) with almost 1000 times less delta opioid receptor binding activity is equally active. Metabolic suppression was also achieved using SNC80 in microfluidic human organs-on-chips, as well as in explanted whole porcine hearts and limbs, demonstrating the cross-species relevance of this approach and potential clinical relevance for surgical transplantation. Pharmacological induction of physiological slowing in combination with organ perfusion transport systems may offer a new therapeutic approach for tissue and organ preservation for transplantation, trauma management, and enhancing patient survival in remote and low-resource locations.
 
 ## Introduction
 
@@ -74,9 +74,17 @@ Through survey of the literature, we identified drugs with unintended side effec
 
 ## Results
 
-## Demonstration of physiological slowing in Xenopus
+### Demonstration of physiological slowing in Xenopus
 
 We first assessed SNC80’s impacts on mobility, metabolism, and heart activity in Xenopus. Behavioral assessment in mobile tadpoles showed that 100 μM SNC80 slows movement relative to vehicle-treated counterparts, reducing activity by approximately 50% within 1 hr, which is rapidly reversible when the drug is removed (Figure 1a). SNC80 also suppressed the rate of oxygen consumption to one-third of baseline within 3 hr of treatment (Figure 1b) and had extreme suppressive, but fully reversible, effects on heart rate after only 1 hr of exposure (Figure 1c). Oxygen consumption was reduced in immobile Xenopus embryos treated with SNC80 as well (Figure 1—figure supplement 1), suggesting that its metabolism-suppressing effects are independent of the slowed movement observed in mobile tadpoles.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig1-v1.jpg)
+
+**Figure 1.:** (a) Swimming activity of Xenopus during 100 μM SNC80 or vehicle treatment. Data represent the mean ± SD of n=3 replicates, with 10 tadpoles per replicate. (b) Oxygen consumption rate for Xenopus treated with SNC80 or vehicle controls. N=5 medium only, n=7 vehicle and n=9 SNC80, with each data point representing the cumulative oxygen consumption for 5 tadpoles. (c) Heart rate in SNC80 and vehicle-treated Xenopus (n=10 tadpoles/group). Statistical comparisons were performed using a Brown-Forsythe and Welch’s ANOVA test with a Dunnett correction for multiple comparisons (b) and a two-way ANOVA (treatment × timepoint) with Tukey correction for multiple comparisons (c). Bar plots show the mean ± SD of each group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Oxygen consumption rate in Xenopus embryos treated with SNC80 (n=3–4 biological replicates/group). Statistical comparisons were performed using a Brown-Forsythe and Welch’s ANOVA test with Dunnett correction for multiple comparisons between untreated and each treatment group. Data represent the mean ± SD.
 
 Using in situ matrix-assisted-laser desorption/ionization-time of flight mass spectrometry imaging (MALDI-ToF MSI), we assessed and visualized the biodistribution of SNC80 in the Xenopus tadpole. SNC80 was detected within 1 hr of treatment and it appeared in a punctate distribution in the gastrointestinal tract, gill region, and skeletal muscle (Figure 2a and b), suggesting full-body delivery of the drug. Specifically, uptake observed in the muscle may be responsible for the slowed motion observed in Xenopus activity assays. Past lipidomic studies of hibernating mammals demonstrated the importance of lipid molecules for thermal adaptation during hibernation with significant alterations of lipidomic profiles being observed in liver, plasma, brain, skeletal muscle, and cardiac muscle during torpor as compared to the animal’s active state (Giroud et al., 2019; Kolomiytseva, 2011). Similarly, MALDI-ToF MSI analysis revealed significantly higher levels of acylcarnitine and cholesterol ester in SNC80-treated groups in both skeletal muscle and brain, but not in cardiac tissue (Figure 2c). Increased levels of long chain acylcarnitine associated with enhanced mitochondrial fatty acid oxidation are observed during fasting as well as in hibernating brown bears (Soeters et al., 2009; Welinder et al., 2016), and cholesterol ester levels increase in hibernating ground squirrels (Otis et al., 2011). While the increased acylcarnitine and cholesterol ester levels in brain suggest a shift toward beta oxidation of fatty acids, they also have been implicated in other pathways including antioxidant activity and neurotransmission (Jones et al., 2010; Petrov et al., 2016).
 
@@ -86,7 +94,7 @@ Using in situ matrix-assisted-laser desorption/ionization-time of flight mass sp
 
 Having confirmed that SNC80 induces slowing of multiple physiological parameters in the whole Xenopus organism, we then set out to explore if the molecular basis for these effects is dependent on the DOR pathway. This was important since pre-clinical testing of SNC80 in rodents and non-human primates has demonstrated seizure side effects at higher doses, possibly due to SNC80’s direct inhibition of forebrain GABAergic neurons via DOR activity (Chu Sin Chung et al., 2015). As SNC80 is a known DOR agonist (Rawls et al., 2005; Horiuchi et al., 2004), we next evaluated whether its effects could be mediated by delta opioids. However, when we tested the DOR antagonist, naltrindole (NTI), at double the concentration (200 μM) relative to SNC80 (100 μM), it did not block the hypometabolic effects of SNC80 (Figure 2d), suggesting that SNC80 modulates metabolism independent of DOR activation.
 
-## Attenuating the delta opioid activity of SNC80
+### Attenuating the delta opioid activity of SNC80
 
 To further test if the physiological slowing effects of SNC80 are independent of DOR activation, we used a medicinal chemistry approach to explore whether we could separate its metabolism slowing and DOR activities. Toward this end, we designed molecular entities void of the distal basic nitrogen (N-ally group within SNC80), which we hypothesized was a critical DOR pharmacophore. This effort led to the development of a novel morpholino compound, WB3 (Figure 3a and Supplemental Synthesis Description), which was synthesized and subsequently tested for DOR binding activity using a radioligand binding assay and nonlinear fitting for specific binding to calculate the Hill slope and IC50 value. A specific binding curve could not be fit for SNC80 due to its high affinity and therefore its IC50 is <4.6 nM, whereas WB3 exhibited an IC50 of 3470 nM (Figure 3b), suggesting almost 1000 times less DOR binding activity for WB3 compared to SNC80. Subsequently, we screened WB3 in the Xenopus swimming, oxygen consumption, and heart rate assays and found that the analog retains physiological slowing properties in vivo despite lacking delta opioid activity (Figure 3c, d, and e). In fact, we observed more potent and rapid effects on swimming with exposure to WB3 compared to SNC80, suggesting that the non-opioid properties of SNC80 may be primarily responsible for its observed physiological effects.
 
@@ -94,11 +102,19 @@ To further test if the physiological slowing effects of SNC80 are independent of
 
 **Figure 3.:** (a) Molecular structures for SNC80 and novel compound WB3. (b) Percent-specific binding of the delta opioid receptor radioligand [3H]-DADLE in the presence of SNC80 and WB3. (c) Swimming activity of Xenopus during 100 μM WB3, SNC80, or vehicle treatment. Data represent the mean ± SD of n=2 replicates, with 10 tadpoles per replicate. (d) Oxygen consumption rate for Xenopus treated with WB3 or vehicle controls. N=4 vehicle and n=3 WB3, with each data point representing the cumulative oxygen consumption for 5 tadpoles. (e) Heart rate in WB3 and vehicle-treated Xenopus (n=10 tadpoles/group). Statistical comparisons were performed using Welch’s unpaired t-test (d) and a two-way ANOVA (group × timepoint) with Sidak’s correction for multiple comparisons (e). Bar plots show the mean ± SD of each group.
 
-## Enhanced preservation of whole pig hearts and limbs perfused ex vivo
+### Enhanced preservation of whole pig hearts and limbs perfused ex vivo
 
 Based on these intriguing findings with Xenopus tadpoles, we set out to explore the potential clinical value of SNC80. Cardiac transplant is the gold standard for treating end-stage heart failure; however, it is hindered by donor shortage, limited cardiac graft preservation time, and lack of optimal organ preservation conditions. Currently, hearts are allocated to patients located within 4 hr of organ removal from the donor. Thus, to explore the potential utility of biostasis induction to lengthen the time between organ donation and recipient surgery through pharmacological induction of a hypometabolic state, we perfused surgically explanted whole porcine hearts with SNC80 using a portable, oxygenated perfusion preservation device (VP.S ENCORE) at subnormothermic temperatures (20–23°C). Prior work has demonstrated that the VP.S ENCORE enhances cardiac viability over standard of care-static cold storage and hearts perfused in this device for 4 hr demonstrate similar cardiac function to a healthy heart in both preclinical animal models and human deceased donor hearts (Veraza et al., 2023; Andrijauskaite et al., 2023).
 
 We investigated the application of a biostasis inducer for preservation of the heart during 6 hr of perfusion in the VP.S ENCORE device. Importantly, with SNC80 treatment, we observed a rapid decline in the heart’s oxygen consumption to <50% of that observed in hearts exposed to the vehicle control, which was sustained over the 6 hr preservation period (Figure 4a). After preservation, hearts were removed from the VP.S ENCORE and placed in a Langendorff system for reperfusion and evaluation of oxygen consumption and cardiac contractility. This system assesses the left ventricular dP/dT without preload and afterload, thereby allowing the evaluation of the intrinsic contractility of the left ventricle (LV). After 30 min of reperfusion and before defibrillation, SNC80-treated hearts had a lower oxygen consumption level than vehicle-treated hearts (2.39 ± 1.23 versus 4.28 ± 2.48 mL/min/100 g, respectively, at the 30 min timepoint) (Figure 4b) that recovered to normal levels after defibrillation and with increases in temperature (2.49 ± 0.53 and 2.35 ± 0.31 mL/min/100 g, respectively, at 60 min post defibrillation) (Figure 4c). No evidence of substantial change in LV contractility or relaxation were detected in SNC80-exposed hearts, either before or after they were defibrillated and exposed to epinephrine (Figure 4d).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig4-v1.jpg)
+
+**Figure 4.:** (a) Oxygen consumption for vehicle and SNC80-treated cardiac grafts perfused in the VP.S ENCORE device (n=3 hearts/group). (b) Oxygen consumption during cardiac reperfusion on the Langendorff system before defibrillation (n=3 vehicle and n=3 SNC80 hearts). (c) Oxygen consumption measured on the Langendorff system after defibrillation (n=3 vehicle and n=3 SNC80 hearts). (d) Left ventricle (LV) contractility and relaxation before and after defibrillation and tissue exposure to epinephrine (n=3 vehicle and n=2 SNC-treated hearts). (e) Gene expression analysis of heart biopsy samples for vehicle and SNC80-treated cardiac grafts (n=2 hearts/group; 3 technical replicates each). (f) Light microscopic views of hematoxylin and eosin (H&E)-stained histological sections of heart biopsies (×20 magnification) after 6 hr of perfusion and quantification of myocardial degeneration (MD), myocardial hemorrhage (MH), interstitial edema (IE), and endothelial changes (EC). Statistical comparisons were performed using multiple unpaired t-tests between SNC80 and vehicle-treated cardiac grafts (a,b,c), two-way ANOVA with Sidak’s correction for multiple comparisons between SNC80 and vehicle-treated cardiac grafts (d,f), and unpaired t-tests between SNC80 and vehicle for each gene of interest (e). Data represent the mean ± SD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The relative metabolic rate at baseline is not statistically significantly different between control (n=3) and SNC80 (n=5) injected limbs. Metabolic rate is reduced during the treatment and washout phases for SNC80 relative to controls. (b) Mean muscle bundle area between T0 before SNC80 administration and at T3 after SNC80 administration and histographs of limb biopsy (×20 magnification) at T0 before SNC80 administration and T3 after SNC80 administration. Muscle bundle area is not affected by the administration of SNC80. (c) Optical density between T0 before SNC80 administration and at T3 after SNC80 administration and histographs of limb biopsy (×20 magnification) at T0 before SNC80 administration and T3 after SNC80 administration. Optical density is not affected by the administration of SNC80. (d) Mean intracellular distance during T0 before SNC80 administration versus T3 after SNC80 administration and histographs of limb biopsy (×10 magnification) at T0 before SNC80 administration and T3 after SNC80 administration. Red arrows indicate intracellular distance measured. Intracellular distance increases after the administration of SNC80. Statistical comparisons were performed using a mixed-effects analysis with a Sidak’s test for multiple comparisons (a) and Welch’s t-test (b–d). Data represent the mean ± SD.
 
 Gene expression analysis of heart biopsy samples showed significant reduction of markers of inflammation (IL-6, IL-8, TNFα), hypoxia (Hif1α), and cell death (TP53, BCL2) in SNC80-treated hearts when compared to vehicle control hearts (Figure 4e), and no changes in the mitochondrial ATP synthase marker, ATP5MC3, were observed. Histopathological evaluation showed retention of normal muscle morphology (Figure 4f) without signs of tissue edema immediately after perfusion in the VP.S ENCORE. In some hearts treated with SNC80 greater waviness of muscle fibers was observed, possibly indicating a state of muscle contraction.
 
@@ -106,13 +122,96 @@ Electrocardiogram (ECG) data revealed that both vehicle and SNC80-treated hearts
 
 We also tested organ preservation in porcine limbs, where prolonged ischemia after amputation rapidly decreases the viability of skeletal muscle. Current preservation methods limit the success of limb reimplantation due to complications from rhabdomyolysis, necrosis, and reperfusion injury (Kaltenborn et al., 2020). Again, we found that the relative metabolic rate measured during 3 hr of SNC80 exposure was significantly lower compared to vehicle-treated limbs (Figure 4—figure supplement 1a). Histopathological evaluation also showed retention of normal muscle morphology with no apparent changes in muscle bundle area (Figure 4—figure supplement 1b) or glycogen content (Figure 4—figure supplement 1c), suggesting that the tissue’s potential for ATP synthesis was not compromised after SNC80 administration, although an increase in intercellular spacing was observed (Figure 4—figure supplement 1d). We did not observe full recovery of O2 uptake at the 3 hr timepoint analyzed in this study (Figure 4—figure supplement 1c); however, the porcine limb contains a large amount of fat tissue that may be acting as a depot for the highly lipophilic SNC80, thereby leading to extended stasis under these conditions.
 
-## Elucidating potential SNC80 targets and pathways
+### Elucidating potential SNC80 targets and pathways
 
 To gain insight into the molecular basis of SNC80’s hypometabolic and other physiological effects, we used thermal proteome profiling (TPP) to assess drug-protein binding and thereby identify previously unknown molecular targets of SNC80 that might be critical for its metabolism slowing activity. TPP of SNC80-treated Xenopus tissues revealed 19 direct and indirect binding targets (Table 1), including proteins involved in transmembrane transport, mitochondrion activity, and metabolic processes. Two potentially interesting binding targets of SNC80 are the excitatory amino acid transporter 1 (EAAT1, also known as SLC1A3) and the Na+/Ca2+ exchanger 1 (NCX1, also known as SLC8A1), both of which have been identified in cardiac tissue (Ralphe et al., 2004; Maiolino et al., 2017). In addition to their individual functions, mitochondrial ATP production has been previously reported to be stimulated through intermolecular interactions between EAATs and NCXs in neurons (Magi et al., 2013). If this complex is also present in cardiac tissue, inhibition of EAAT and NCX1 could reduce cellular ATP levels (Magi et al., 2019), and thereby play a role in slowing metabolism. Specifically, the blockade of Na+/Ca2+ exchange via interference with EAAT1-NCX1 interactions could prevent the influx of calcium into the mitochondria that is necessary for calcium-sensitive mitochondrial dehydrogenases that fuel ATP synthesis (Magi et al., 2019). However, the mitochondrial variant of NCX1 (NCLX) was not included in the Xenopus protein library used for TPP analysis so could not be fully evaluated in this study. TPP also identified two additional SNC80-binding proteins located within the mitochondrion: TOMM40 and COX6C. TOMM40 is a translocase located in the outer membrane of the mitochondria that has been implicated in tissue protective effects against late-onset Alzheimer disease (Chiba-Falek et al., 2018) and COX6C is the terminal enzyme of the mitochondrial respiratory chain, catalyzing the electron transfer from reduced cytochrome c to oxygen.
 
+**Table 1.**
+ SNC80 protein binding targets identified by thermal proteome profiling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Direct interaction</th>
+      <th>Function</th>
+      <th>Indirect interaction</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCBL1</td>
+      <td>Pyridoxal phosphate bindingCysteine-S-conjugate beta-lyase activityL-Glutamine aminotransferase activityCellular modified amino acid metabolic process</td>
+      <td>ABCB1</td>
+      <td>ABC-type bile acid transporter activityRegulation of fatty acid beta-oxidationEfflux transmembrane transporter activity</td>
+    </tr>
+    <tr>
+      <td>EAAT1</td>
+      <td>L-Glutamate transmembrane transporter activity</td>
+      <td>ACOX3</td>
+      <td>Fatty acid beta-oxidation using acyl-CoA oxidaseFatty acid binding</td>
+    </tr>
+    <tr>
+      <td>FUCA2</td>
+      <td>Alpha-L-fucosidase activityGlycoside catabolic process</td>
+      <td>CAMSAP2</td>
+      <td>Cytoplasmic microtubule organizationCalmodulin binding</td>
+    </tr>
+    <tr>
+      <td>HM13</td>
+      <td>Peptidase activityAspartic endopeptidase activity</td>
+      <td>COX6C</td>
+      <td>Mitochondrial electron transport, cytochrome c to oxygenGeneration of precursor metabolites and energy</td>
+    </tr>
+    <tr>
+      <td>PTX3</td>
+      <td>Negative regulation of glycoprotein metabolic processComplement component C1q complex binding</td>
+      <td>ITGA7</td>
+      <td>Integrin-mediated signaling pathwayCell adhesion mediated by integrin</td>
+    </tr>
+    <tr>
+      <td>RPE65</td>
+      <td>Phosphatidylserine bindingRetinoid metabolic process</td>
+      <td>NCX1</td>
+      <td>Calcium:sodium antiporter activityCalcium ion bindingRegulation of the force of heart contraction</td>
+    </tr>
+    <tr>
+      <td>RPL27A</td>
+      <td>Structural constituent of ribosomeCytoplasmic translation</td>
+      <td>ROBO1</td>
+      <td>Roundabout signaling pathwayAorta development</td>
+    </tr>
+    <tr>
+      <td>RPL4</td>
+      <td>Structural constituent of ribosomeCytoplasmic translation</td>
+      <td>RRP9</td>
+      <td>RNA bindingrRNA processing</td>
+    </tr>
+    <tr>
+      <td>RPS25</td>
+      <td>Structural constituent of ribosomeCytoplasmic translation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TOMM40</td>
+      <td>Protein transmembrane transporter activityProtein targeting to mitochondrionMitochondrial outer membrane translocase complex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VMP1</td>
+      <td>Autophagosome membrane dockingPlasma membrane phospholipid scramblingLipoprotein transport</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 In addition to interaction with mitochondrial proteins, we detected binding between SNC80 and enzymes involved in other metabolic processes, including alpha-L-fucosidase.
 
-## Stasis induction in cultured human cells and tissues
+### Stasis induction in cultured human cells and tissues
 
 To explore whether this drug also induces a state of biostasis in cultured human cells, we monitored the effects of SNC80 on oxygen consumption in four different types of cultured human cells – human umbilical vein endothelial cells (HUVECs), Caco-2 intestinal epithelial cells, liver sinusoidal endothelial cells (LSECs), and Huh7 liver epithelial cells – and analyzed multiple indicators of cellular metabolism using the Seahorse instrument. The latter allows to measure ECAR (extracellular acidification rate), typically serving as proxy for glycolysis activity and oxygen consumption rate (OCR) as a proxy for OXPHOS activity (since mitochondria are responsible for 70–90% of total oxygen consumption) (Yang et al., 2020). The Seahorse can also measure other mitochondrial respiration metrics such as ATP production.
 
@@ -126,11 +225,31 @@ When looking at endothelial cells, 2 hr of SNC80 treatment in HUVEC and LSEC red
 
 Taken together, these results indicate that all four human cell types showed significant decreases in mitochondrial metabolism in response to the biostasis inducer SNC80. However, Caco-2 cells were the only ones that activated compensatory pathways in response to the impaired mitochondrial respiration, while others just allowed for their energy balance to decrease significantly. Our studies also suggested that the metabolism-suppressing effects of SNC80 were most potent in the epithelial cells that were originally derived from highly metabolic tumors (Wan et al., 2022).
 
-## Metabolic suppression in human Organ Chips
+### Metabolic suppression in human Organ Chips
 
 To explore whether this drug also induces a state of biostasis in human cells and tissues, as well as non-cardiac cells, we tested SNC80 in human organ-on-a-chip (Organ Chip) microfluidic culture devices that reconstitute tissue-tissue interfaces and human organ-level physiology with high fidelity in vitro (Ingber, 2022). The Organ Chip models reconstitute a tissue-tissue interface between organ-specific epithelium and endothelium across a porous extracellular matrix (ECM)-coated membrane within a two-channel microfluidic device, and hence allow tissue-tissue cross-talk observed in vivo that is not normally present in studies with cultured cells, as previously described (Si et al., 2021; Kim et al., 2016). In this study, we used a Gut Chip lined by Caco-2 intestinal epithelial cells interfaced with HUVECs and a Liver Chip containing Huh7 liver epithelial cells interfaced with LSECs, respectively. However, we modified the Organ Chip design by integrating sensors that allow for live monitoring of oxygen (O2) and transepithelial electrical resistance (TEER) (tissue barrier function) (Figure 5—figure supplement 3a). Both Organ Chips were treated with SNC80 by flowing the drug in medium for 2 days through the apical and basal channels of the chip, and then removing the drug followed by 7 days of additional culture. We confirmed that the intestinal epithelial cells underwent villus differentiation and accumulated mucus under these culture conditions (Figure 5—figure supplement 3b), in addition to maintaining a low oxygen environment after 10–16 days of culture (Figure 5—figure supplement 3c) as previously described (Si et al., 2021; Kim et al., 2016). The Liver Chips also produced albumin and urea at levels (5 and 135 μg/day/chip, respectively) (Figure 5—figure supplement 3d and e) that were similar to those measured in Organ Chips lined by primary hepatocytes (Choi et al., 2016; Ewart et al., 2021).
 
 These studies revealed that SNC80 treatment reduced the respiratory (oxygen utilization) rate in the Gut Chip, resulting in an almost sixfold increase in extracellular oxygen levels after 48 hr, which then progressively returned to baseline levels during the 7-day washout period (Figure 5a). Similar results were obtained with the more highly metabolic Liver Chip with SNC80 inducing higher levels of extracellular oxygen compared to control chips and this again reversed after drug washout (Figure 5a). Importantly, the tissues in both the human Organ Chips remained healthy after 2 days’ treatment with SNC80 as there was no significant change in barrier function (Figure 5—figure supplement 4a and b), cell growth (Figure 5—figure supplement 3g), or cytotoxicity (Figure 5—figure supplement 4c and d). Similar to the data observed in cell cultures, ATP/ADP ratio in Liver Chips was significantly decreased after 24 and 48 hr of SNC80 treatment compared to the vehicle control chips. However, ATP/ADP ratio measurements between SNC80 and vehicle control were not significantly different after washout of the drug, indicating that Liver Chip tissues recover their normal metabolic function up to 4 days after treatment (Figure 5b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig5-v1.jpg)
+
+**Figure 5.:** (a) Monitoring changes in O2 levels in human Gut (dotted lines; n=6 Chips/group) or Liver (straight lines; n=15–16 Chips/group) Chips throughout the treatment with 100 µM SNC80 (0–48 hr) and recovery (48–120 hr) versus vehicle control chip. (b) Graph showing the quantitative drop in ATP/ADP ratio of Liver Chip treated for 48 hr with 100 μM SNC80 or vehicle control as well as 2 days recovery after drug washout (n=5 control and n=3 SNC80 Chips). Statistical comparisons were performed using multiple unpaired t-tests for each timestamp with multiple comparison between control and treated cells. Data represent the mean ± SD.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Oxygen consumption rate (OCR) and mitochondrial ATP production obtained with Seahorse measurements for Caco-2 intestinal epithelium (filled circle), human umbilical vein endothelial cell (HUVEC) (empty circles), Huh7 liver epithelium (filled squares), and liver sinusoidal endothelial cell (LSEC) (empty squares) after 2 hr 100 μM SNC80 treatment (n=3–4 biological replicates/cell type). Values are normalized to their respective vehicle controls. (b) Graph showing the quantitative drop in ATP/ADP ratio of Huh7 cells treated with 100 μM SNC80 (n=2 control and n=3 SNC80 biological replicates). Statistical comparisons were performed using a two-way ANOVA with Dunnett correction with multiple comparison control versus treatment for each dataset. Data represent the mean ± SD.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Normalized percent cytotoxicity for Caco-2 intestinal epithelial cells (filled circles) or human umbilical vein endothelial cells (HUVECs) (empty circles) as well as Huh7 liver epithelium (filled squares) or liver sinusoidal endothelial cells (LSECs) (empty squares) after 2 hr of exposure to 100 μM SNC80 (n=3 biological replicates/cell type). (b) Normalized extracellular acidification rate (ECAR), glutamate, and creatine kinase (CK) activity for Caco-2 intestinal epithelial cells (filled circles) and HUVECs (empty circles) as well as Huh7 liver epithelium (filled squares) and LSECs (empty squares) (n=3–6 biological replicates/measurement/cell type). Statistical comparisons were performed using a two-way ANOVA with Dunnett correction with multiple comparison control versus treatment for each dataset (a,b). Data represent the mean ± SD.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (a) Illustration of the sensor-integrated OOC unit connected to reservoir pod for automatic operation of fluid flow using pneumatic pressure (left). Inset shows a schematic of the top and bottom views of the sensor-chip-PCB compartment showing locations of transepithelial electrical resistance (TEER) electrodes and O2 sensors in the apical and basal channels. Four O2 sensing spots were added to the channels – two in the top and two in the bottom channels for across the chip measurement. Electrode connectors are necessary for remote TEER sensing. (b) Phase contrast images of Caco-2 cells seeded on sensor chip at days 1 and 10 of culture (top) and Huh7 cells seeded on sensor chip at days 1 and 10 (middle). Fluorescent images of Liver Chip at days 1 and 10 of the transduced nuclear marker (bottom). (c) Percentage of O2 level (black; n=16 Chips) and TEER impedance values (gray; n=9 Chips) on sensor Liver Chip during 10 days of culture. (d) Average albumin production of Liver Chips at day of experiment starts (days 7–10 of culture; n=40 Chips). (e) Average urea production of Liver Chips at day of experiment starts (days 7–10 of culture; n=40 Chips). (f) Representative immunofluorescence images of the sensor Gut Chip (left) and Liver Chip (right) epithelium stained with DNA damage marker (H2AX) and nuclei (DAPI) for vehicle control and SNC80-treated tissues after 7 days’ recovery. (g) Quantitative analysis of proliferation and DNA damage stains on Gut and Liver Chips after 48 hr of treatment and 7-day recovery to 100 μM SNC80 (2–3 biological replicates/group/marker; each data point corresponds to an average of multiple fields of view). Statistical comparisons were performed using multiple unpaired t-tests for each marker with FDR correction. Data represent the mean ± SD.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/93796/elife-93796-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (a) Monitoring the percentage change in barrier function of Gut (n=6 Chips/group) or (b) Liver Chip (n=9 Chips/group) with time during treatment with 100 µM SNC80 (0–48 hr) and recovery (48–120 hr) versus vehicle control chip. (c) Cytotoxicity measured for the Gut (n=5-6 Chips/group) and (d) Liver Chips (n=7 Chips/group) during treatment and recovery. (e) Graph depicting the amount of lactate measured in effluents of Gut (n=5-6 Chips/group) and (f) Liver Chips (n=7 Chips/group), relative to baseline levels (to day 7 for Gut and day 5 for Liver) for SNC80-treated (red) or vehicle control (black) Chips. (g) Graph showing the glutamate measured in effluents of Gut (n=5 Chips/group) or (h) Liver Chips (n=7 Chips/group) during SNC80 (red) or vehicle (black) treatment and post-recovery (day 7), relative to baseline levels. For each measurement, statistical comparisons were performed using multiple unpaired t-tests at each timepoint and FDR correction for multiple comparisons. Data represent the mean ± SD.
 
 Collectively, these data suggest that treatment with SNC80 in these physiologically relevant human cells and tissues cultured on-chip in an organ-relevant context resulted in a drop in respiration, with no switch toward glycolysis or reductive carboxylation, since the levels of lactate (Figure 5—figure supplement 4e and f) and glutamate remained unchanged in both chips (Figure 5—figure supplement 4g and h). Thus, in this organ-like microenvironment, the tissues decrease their total ATP production in presence of SNC80, which is accompanied by a global slowing of metabolism.
 
@@ -152,53 +271,53 @@ In summary, our findings demonstrate that the small molecule drugs SNC80 and WB3
 
 ## Methods
 
-## Xenopus model
+### Xenopus model
 
 X. laevis (wild-type) embryos were fertilized at Tufts University using procedures reviewed and approved by the Tufts University Institutional Animal Care and Use Committee regulations (M2020-35) and transferred to the Wyss Institute. Xenopus embryos and tadpoles were housed at 18°C with a 12/12 hr light/dark cycle in 0.1X Marc’s Modified Ringer’s medium. All animal experiments and procedures were reviewed and approved by the Harvard Medical School (HMS) Institutional Animal Care and Use Committee regulations (IS00000658-6). Xenopus that exhibited signs of poor health prior to treatments were excluded from studies, including abnormal development or poor mobility. Xenopus experiments did not identify male versus female samples and therefore a random sampling was used.
 
 Drugs used in the Xenopus studies were dissolved in DMSO to a stock concentration of 10 mM and diluted to their final concentrations with a 1% DMSO concentration or less. Media with dosed compound were made fresh and screening was performed in tadpoles at stages 46–50. The activity of free-swimming tadpoles during and after exposure to drugs were recorded in 60 mm dishes using a SONY Alpha a6100 camera with 16 mm objective (Sony Corporation, Tokyo, Japan) against an illuminated background. Mobility was quantified in MATLAB (Mathworks, Natick, MA, USA) by mapping differences between frames to a movement index (0–1), with 0 indicating no movement and 1 indicating maximal movement. Oxygen consumption was measured during Xenopus exposure to drugs as a proxy for whole-organism metabolism using the Firesting Optical Oxygen Meter and the Pyro Oxygen Logger software (v3.317) (Pyroscience GmbH, Aachen, Germany). If leaks or bubbles were detected in Firesting oxygen vials during an experiment, acquired data were not used in the analysis. Oxygen consumption for Xenopus embryos was measured using the OxoPlate (PreSens Precision Sensing GmbH, Regensburg, Germany). OCR for each sample was measured using a linear fit to the oxygen consumption curves in Prism (GraphPad, San Diego, CA, USA). Heart rate was measured by microscopy imaging in Xenopus following 1, 2, 4, or 8 hr of drug exposure. Vehicle and drug-treated groups were briefly incubated in 0.01% tricaine (Syndel, Ferndale, WA, USA) to minimize tadpole movement during heart imaging. Videos of heart function were acquired using a ZEISS Axio Zoom.V16 microscope and ZEN BLUE Microscopy software (v3.1) (Carl Zeiss AG, Oberkochen, Germany) at a rate of 1 frame/100 ms. Heart beats were counted automatically using a custom code in Python. At the completion of experiments, Xenopus were euthanized by immersion in 0.2% tricaine for 30 min, followed by fixation or bleaching and disposal.
 
-## MALDI-ToF
+### MALDI-ToF
 
 Tadpoles were embedded in gelatin (0.11 g/mL) and stored in –80°C. Embedded tadpoles were sectioned into 16-µm-thick slices using a Leica CM1850 (Leica Microsystems, Wetzlar, Germany) onto indium tin oxide (ITO)-coated glass slides (Bruker Daltonics, Billerica, MA, USA) and immediately placed in a vacuum desiccator before matrix application (N=5 tadpoles per condition; N=3 sections/slide). Experiments were duplicated to confirm the reproducibility. The matrix solution was composed of 2,4-dihydroxybenzoic acid (40 mg/mL) in 0.1% formic acid, methanol/water (1:1 vol/vol) and was made fresh for each application. The HTX-sprayer nebulizer (HTX Technologies, Carrboro, NC, USA) was used to apply the matrix at 80 °C at 24 passes over the sample, at a flow rate of 50 μL/min, 10 psi pressure, and a track speed at 1250 mm/min. Before imaging, SNC80 spotting with matrix and Xenopus lysate was performed to determine the optimal matrix for the best S/N ratio and the least ion suppression from Xenopus tissue and to identify which adducts were detectable for each compound for imaging. In situ MALDI-ToF imaging was acquired using the rapifleX (Bruker Daltonics, Billerica, MA, USA), in positive ion mode at 1000 Hz in the mass range of 300–990 m/z. The laser raster step spacing was set to 45 μm step size at 500 shots per pixel. External calibration was performed using a red phosphorus slurry drop casted on a region of the ITO slide without tissue. Preliminary processing of the data was performed using FlexAnalysis (Bruker Daltonics, Billerica, MA, USA). Images were normalized by the total ion count and baseline-corrected using Top Hat algorithm with a _baseline width. After MALDI-ToF MSI acquisition, ITO slides were then stained for hematoxylin and eosin (H&E) and imaged using the Cytation 5 (Agilent, Santa Clara, CA, USA) and Epsilon scanner at 3000 dpi to select regions of interest using the open-source program, Qupath (Bankhead et al., 2017). Mass selection windows and signal intensity analysis were conducted with SCiLS Lab (Bruker Daltonics, Billerica, MA, USA), where ions of interest, including SNC80, acylcarnitine, and cholesterol ester C18, were chosen with a width of ±0.25 Da. Reference peaks of target analytes were based on previous MALDI-ToF work in Xenopus tissues from previous findings (Goto-Inoue et al., 2016), and during spotting of target analytes with MALDI-ToF MS/MS. The mean signal intensity of the defined regions of interest was obtained with each ion of interest.
 
-## Radioligand binding assay
+### Radioligand binding assay
 
 To assess binding of WB3 to the DOR, we tested WB3 and SNC80 at 8-concentrations with threefold serial dilutions starting at 10 µM (Reaction Biology, Malvern, PA, USA). Binding of the tracer [3H]-DADLE (10 nM) was assessed in the presence of each concentration of WB3 and SNC80 and the [3H]-DADLE signal was fit to a dose-response curve to quantify the Hill slope and IC50 values.
 
-## Thermal proteome profiling
+### Thermal proteome profiling
 
 To identify drug-bound targets based on altered thermal stability, Xenopus tadpoles were treated with either SNC80 or vehicle for 2 hr. Xenopus were euthanized in 20× tricaine and then transferred back to their respective drug solutions to ensure drug effect is not lost during heat treatment. Xenopus samples were incubated at nine temperature points (30°C, 35°C, 40°C, 44°C, 48°C, 52°C, 56°C, 60°C, 65°C) using a PCR machine (3 min heat time per condition, 3 tadpoles per condition) for both drug-treated and vehicle-treated groups. After transfer to room temperature, liquid was aspirated from samples and samples were snap-frozen in liquid nitrogen. Samples were lysed in 100 µL of PBS+0.4 % NP-40 with 4 cycles of freeze/thaw. 11 µL of each of the nine temperatures were pooled in one tube and samples were centrifuged at 13,000 RPM for 75 min, at 4°C. Proteins were reduced and alkylated with 10 mM DTT and 15 mM IAA for 15 min at 65°C and 30 min at room temperature, respectively. Proteins were then precipitated with 8 volumes of ice-cold acetone and 1 volume of ice-cold methanol overnight. Digestion was carried for 4 hr in 50 mM Tris pH 8+0.75 mM urea+1 µg trypsin/LysC at 37°C with agitation. Another 1 µg of trypsin/LysC was added and digestion was continued overnight. Peptides were purified by reversed phase SPE and analyzed by LC-MS/MS (PhenoSwitch Bioscience, Sherbrooke, QC, Canada). LC-MS/MS acquisition was performed with a ABSciex TripleTOF 6600 (ABSciex, Foster City, CA, USA) equipped with an electrospray interface with a 25 μm i.d. capillary and coupled to an Eksigent μUHPLC (Eksigent, Redwood City, CA, USA). Analyst TF 1.8 software was used to control the instrument and for data processing and acquisition. Samples were acquired twice in SWATH acquisition mode using gas phase fractionation. The source voltage was set to 5.5 kV and maintained at 325°C, curtain gas was set at 45 psi, gas one at 25 psi and gas two at 25 psi. Separation was performed on a reversed phase Kinetex XB column 0.3 μm i.d., 2.6 μm particles, 150 mm long (Phenomenex) which was maintained at 60°C. Samples were injected by loop overfilling into a 5 μL loop. For the 60 min LC gradient, the mobile phase consisted of the following solvent A (0.2% vol/vol formic acid and 3% DMSO vol/vol in water) and solvent B (0.2% vol/vol formic acid and 3% DMSO in EtOH) at a flow rate of 3 μL/min. GPF files for both acquisitions were analyzed on a previously generated 3D ion library. Each GPF file was analyzed using 10 peptides per protein, 4 MS/MS transition per peptide, 12.5 min RT window, and 25 ppm XIC width in Peakview (Sciex). The reported quantification for a protein is the sum of all the correctly integrated peptides (FDR<0.05) in both GPF files.
 
-## Human cell cultures
+### Human cell cultures
 
 Caco-2 intestinal epithelial cells (Caco-2 BBE human colorectal carcinoma cells, Harvard Digestive Disease Center) were grown in high glucose (4.5 g/L) DMEM (Gibco), 10% FBS (Gibco), and 1% penicillin/streptomycin (Gibco) and subcultured every 2–3 days at 1:6 ratio. For all experiments, cells were used between passages 59 and 64. HUVECs (Lonza, cat#: C2517A) were maintained in EBM-2 (Lonza) media with EGM-2 BulletKit (Lonza), 2% FBS, and 1% penicillin/streptomycin (Gibco) and subcultured every 2–3 days at 1:6 ratio. For all experiments, cells were used between passages 3 and 7. HuH-7 liver epithelial cells (Perceval, cat#: HuH-7) were maintained in DMEM with 4.5 g/L glucose (HyClone), 10% FBS, and 1% penicillin/streptomycin (Gibco). We also obtained wild-type Huh7 transduced with lentivirus particle pLV[Exp]-Puro-CMV>{Perceval(ns)}:T2A:mCherry/3xNLS (Vector Builder) that were used for live imaging of changes in ATP/ADP ratio within these cells, which directly correlates to cellular metabolic activity (Berg et al., 2009). LSECs (Lonza, cat#: HLECP1) were maintained in EBM-2 (Lonza) media with EGM-2 BulletKit (Lonza), 2% FBS, and 1% penicillin/streptomycin (Gibco).
 
-## Metabolic assays
+### Metabolic assays
 
 Effluents were collected at different timepoints (baseline, 24 hr, 48 hr, and 1–3 days recovery after washout) throughout the exposure to SNC80 or 1:1000 DMSO vehicle. After treatment, the effluent was collected and analyzed for lactate and glutamate production using the Lactate-Glo (Promega, #J5021) and Glutamate-Glo (Promega, #J7021) assay kits respectively as per the manufacturer’s protocols.
 
-## Creatine kinase assay
+### Creatine kinase assay
 
 Creatine Kinase Colorimetric Activity Assay Kit (abcam, #ab155901) was used as per the manufacturer’s protocols. Creatine kinase activity in experimental cells was deduced from the colorimetric values obtained from the standard curve.
 
-## Seahorse assay
+### Seahorse assay
 
 Four assays were run successively, one for each cell type – Caco-2, Huh7, HUVEC, LSEC. Each cell type was plated on Agilent XFe24 plate to perform a Mitostress Assay. Cells were added in all wells except A3, B1, C4, and D2 used for background measurements. Cell concentrations were chosen to be 90% confluent on the day of experiment.
 
 The days prior to experiment, the cartridge was hydrated in calibrant and incubated in non-CO2 incubator overnight. The day of experiment, cell media was changed to Seahorse XF medium to which 1 mM pyruvate, 2 mM glutamine, and 10 mM glucose were added. Cells were allowed to stabilize in this medium at 37°C in a non-CO2 incubator for 1 hr. In the meantime, the drug concentrations were prepared in Seahorse XF medium at a 10× concentration stock, so that once injected on the cells, the concentration is diluted to 1×. Stock values were 1 mM SNC80. 56 µL of the drug (or media with DMSO vehicle for control wells) were loaded in port A of the respective cartridge well. Port B was loaded with 62 µL of 10 µM oligomycin, port C with 69 µL of 10 µM FCCP, and port D with 76 µL of 5 µM antimycin A and 5 µM rotenone. The Seahorse instrument was programmed so that baseline OCR and ECAR measurements were taken before the drugs were injected. Drugs were incubated for 2 hr, another measurement was taken, and mitochondrial inhibitors were successively injected in the following order: oligomycin, FCCP, rotenone. With the acquired measurements, we used the Agilent Wave software to process the data.
 
-## Cytotoxicity assay
+### Cytotoxicity assay
 
 Cytotoxicity measurements on the Organ Chip effluents were performed using the LDH-Glo (Promega, #J2380) as per the manufacturer’s protocols.
 
-## ATP/ADP ratio measurements
+### ATP/ADP ratio measurements
 
 Huh7 cells were transfected with a reporter that enables direct measurements of cellular ATP:ADP ratio. The basal excitation spectrum of the reporter protein was similar to that of YFP (peak around 490 nm) but it had an additional peak at CFP wavelength (405 nm). As ATP levels decreased, more ADP can bind to the site, decreasing the YFP/CFP ratio value. BioTek Cytation 5 Cell Imager (Agilent) was used to take RFP, YFP, and CFP images of each well every 20 min for 180 min upon exposure to 100 µM SNC80 or 1:100 DMSO vehicle. Post-processing of the images was performed using the open-source CellProfiler program (Stirling et al., 2021). We implemented the following pipeline to obtain quantitative ATP/ADP ratio values: (1) Identify nuclei with RFP marker, (2) define a cell as 4pixels around the edge of the nuclei, (3) measure cells’ YFP and CFP intensity and YFP/CFP ratio, (4) count cells per image, (5) track cells’ YFP and CFP intensity over the time course (0–3 hr with 20 min intervals), (6) measure YFP/CFP ratio average over all cells per image and normalize to cell count (7).
 
 For the qualitative images, raw images were processed with ImageJ by using the image calculator to divide YFP/CFP intensity of respective images. ‘Rainbow RGB’ lookup table was used to show the intensity changes. Tones toward the red show more intensity, higher ATP/ADP ratio, and higher metabolism.
 
-## Organ Chips with integrated sensors
+### Organ Chips with integrated sensors
 
 To allow for live oxygen and transepithelial/transendothelial electrical resistance (TEER) monitoring, we used our in-house developed and fabricated microfluidic chips with integrated TEER and oxygen sensors. To mimic the in vivo-like cell-cell interface on the models, a dual-channel PDMS microfluidic chip was used where the apical channel is separated from the basal channel with a porous PDMS membrane. A pair of TEER sensing electrodes were integrated on the apical side of the top channel and the basal side of the bottom channel to measure the electrical resistance across the epithelium-endothelium tissue interface. The O2 sensing nanoparticles (OXNANO, PyroScience) were integrated at four different locations in the chip: two in the apical channel and two in similar locations in the bottom channel. This is to allow a fair representation of the whole chip oxygen tension levels.
 
@@ -206,27 +325,27 @@ After fabrication, the chips were sterilized by plasma treatment and desiccated 
 
 Sensor chips that had fabrication imperfections (leaks, inconsistent background TEER measurements, bonding failure) were discarded and not used for cell loading. If leaks or contamination appeared on the chips after loading, before or during an experiment, the chip was discarded, and its acquired data were not used in the analysis. If RFP (nuclear reporter) signal was absent in the Liver Chip, suggesting poor cell viability, the chip was discarded.
 
-## Human Organ Chip studies
+### Human Organ Chip studies
 
 SNC80 was tested on the Gut Chip at day 16 of culture, when the epithelium showed characteristics of matured, functional tissue and the Liver Chip was tested after 7–10 days of culture. SNC80 (100 μM) in the culture media was perfused through the apical and basal channels of the chips at 30 μL/hr, while the control chips were perfused with the same culture media containing the compound’s vehicle (0.5% DMSO) using the same flow condition. The chips were treated with SNC80 for 48 hr before the drug was removed from the media and the culture was continued for another 4 days. Both Liver and Gut Chips were monitored at 0 hr, 3 hr, 24 hr, 48 hr timepoints as well as days 1 and 3 after the drug washout for oxygen consumption, TEER measurements, and effluent analysis. Fluorescence microscopy was continuously performed from 0 hr throughout the treatment period and up to 3 days of recovery. CellProfiler program was used to analyze ATP/ADP ratio as described above.
 
-## Oxygen and TEER measurements on-chip
+### Oxygen and TEER measurements on-chip
 
 Oxygen tension level measurements was performed on-chip during the culture using FireSting-O2 Optical Oxygen and Temperature Meter (FSO2-C4, Pyroscience Sensor Technology, Germany) connected to Pryo Oxygen Logger (V3.317, Germany). TEER measurements were performed on-chip using our in-house developed multiplexed TEER Tray and remotely measured from outside the incubator. A four-point impedance measurement was taken on-chip periodically every 24 hr during the SNC80 treatment and recovery using the IviumSoft application (V4.97, Informer Technologies, Inc). To obtain the TEER of only the epithelial-endothelial tissue interface, the measured impedance at 100 Hz was subtracted from the impedance at 100 kHz and reported as the tissue impedance (Ω) throughout the culture and in response to different stimuli as we reported previously (Henry et al., 2017).
 
-## DNA damage and proliferation assays
+### DNA damage and proliferation assays
 
 The Click-IT EdU cell proliferation kit (Thermo Fisher, #C10337) was used to assess cell proliferation in the formaldehyde-fixed chips and DNA damage was assessed by staining anti-H2AX antibody (Novus Bio NB100-2280).
 
-## Urea assay
+### Urea assay
 
 Urea nitrogen was measured using a colorimetric assay (urea nitrogen test, Stanbio Laboratory), whereby undiluted Liver Chip effluents were added to a 96-well plate and mixed with the kit’s working reagents as per the manufacturer’s protocol.
 
-## Albumin assay
+### Albumin assay
 
 Liver albumin production was measured using an enzyme-linked immunosorbent assay (ELISA) (Bethyl Laboratories, E88129). Liver Chip effluents were diluted 1:100 in buffer before being plated in the kit’s 96-well plate, aside from standard wells with dilution series of known albumin concentration solution. We followed the manufacturer’s protocol to perform the sandwich ELISA and measure absorbance at 450 nm.
 
-## Porcine heart ex vivo perfusion studies
+### Porcine heart ex vivo perfusion studies
 
 After induction of anesthesia and preparation for clean, non-survival surgery, a median sternotomy was performed followed by longitudinal incision in the pericardium of male and female Yorkshire pigs to expose the heart and the great vessels. Following blunt dissection and exposure of the vena cava, aorta and the brachycephalic artery, the superior vena cava, and azygos vein was ligated and divided. The brachycephalic artery was catheterized for infusion of cardioplegia solution. The inferior vena cava was clamped and divided proximal to the clamp. Two or three pulmonary arteries were incised for decompression of the left side of the heart. The aorta was immediately clamped and 10–15 mL/kg of body weight of cold (2–4°C) cardioplegia solution (del Nido without lidocaine, 3 L) was infused at a pressure of 70–80 mmHg to stop the heart. Cold 4°C saline and ice were poured over the heart and the accumulated fluids from the thoracic cavity were removed by suction. Following cessation of myocardial function, the heart was removed from the chest by further dissection and division of the pulmonary vessels and aorta distal to the clamp. The heart was cooled in a surgical bowl with cold saline for inspection and preparation for perfusion. All procedures were conducted under the UT Health San Antonio approved Institutional Animal Care and Use Committee (IACUC) protocol 20210080AR.
 
@@ -240,7 +359,7 @@ ECG data were obtained through the placement of leads on the apex (positive), ri
 
 After the experiment, biopsy tissue samples were collected from SNC80 and vehicle-treated samples for RNA-Seq analysis and histological evaluation. Total RNA from cardiac tissue biopsies (2.5 mm) were extracted following the RNeasy Mini kit (QIAGEN) according to the manufacturer’s instructions. The concentration of total RNA was evaluated and measured at 260/280 nm by spectrophotometer (NanoVue Plus, GE Healthcare). Synthesis of cDNA was performed from 0.5 μg of total RNA, which was reverse transcribed using iScript cDNA Synthesis Kit, Bio-Rad, according to the manufacturer’s instructions. Gene-specific pre-designed oligonucleotide primers were purchased from Sigma. qRT-PCR was done using SsoAdvanced Universal SYBR Green Supermix and SFX96 Touch real-time PCR detection system (Bio-Rad, T100 Thermal Cycler). The cycling parameters were as follows: initial denaturation 95°C, 2 min; denaturation 95°C, 5 s; annealing/extension 60°C, 30 s; number of cycles 40; melt curve 65–95°C (0.5°C increments). The comparative CT (2-ΔΔCT) method was used for all quantification. Values were normalized to the GAPDH housekeeping gene. Myocardial degeneration, myocardial hemorrhage, interstitial edema, and endothelial changes were semiquantitatively graded from histology images on a scale of 0–3 by a clinician blinded to sample and intervention using previously published guidelines (Trahanas et al., 2016).
 
-## Porcine limb ex vivo perfusion studies
+### Porcine limb ex vivo perfusion studies
 
 Hindlimbs (N=8) were procured via protocol tissue sharing at the Joint Base San Antonio Clinical Investigation and Research Support (CIRS) building, following IV Pentobarbital euthanasia, 100 mg/kg from a host protocol. Host protocol animals were treated with the same surgical manipulations and no chemicals or drugs were introduced experimentally prior to euthanasia. Following euthanasia, a curvilinear incision was made around the hindlimb circumferentially. Subsequently, the neurovascular pedicle in the medial hindlimb was identified and carefully dissected out to preserve the vascular bundle. The pedicle was then divided at the origin of the artery and vein to preserve maximal length of the vessels. Hindlimb bone was separated using a Gigli Saw. Hindlimbs were cannulated through the femoral artery and underwent immediate arterial flush with up to 200–400 mL heparinized-saline solution (10,000 units of heparin per 1 L of saline), until venous outflow was clear. Additionally, the femoral vein was cannulated for measurement and collection of venous outflow samples.
 
@@ -248,10 +367,10 @@ Limbs were divided into two groups, control (N=3) and experimental SNC80 (N=5). 
 
 Biopsies for histopathology were obtained superficially from the rectus femoris muscle bundle immediately after amputation and then 24 hr after the perfusion period. Biopsies were stored in 10% formalin for 24 hr and then stored for 3 days in 70% ethanol and embedded in paraffin. The samples were sectioned into 5 μm slides and stained with H&E to evaluate tissue morphology, intracellular distance, muscle bundle area, and periodic acid-Schiff to evaluate glycogen content. Histological analysis was performed by visualizing slides under a light microscope (AM Scope T670Q, Irvine, CA, USA) and capturing images using a high-definition camera (AM Scope Model# MU2003B1, Irvine, CA, USA). From each slide, 10 digital images from randomly selected fields were obtained at ×10 magnification. The images were de-identified and evaluated for intracellular distance, muscle bundle area, and glycogen content by two independent reviewers using ImageJ software (v1.51.).
 
-## Statistical analysis
+### Statistical analysis
 
 All graphing and statistical analyses were performed with Prism 9 (GraphPad Software Inc, La Jolla, CA, USA) with a (two-sided) significance level of 0.05. Sample sizes, statistical tests, and corrections for multiple comparisons are described in each figure panel. Samples sizes were determined based on previously published reports, the capacity of each measurement system, and availability of porcine samples. All animals and samples were randomly allocated into groups and samples were not blinded.
 
-## Software availability statement
+### Software availability statement
 
 A custom Python script was used to automatically count heart beat in Xenopus tadpoles. This code can be accessed on GitHub: https://github.com/k-shcherb/heart_seg, (copy archived at k shcherb, 2024).

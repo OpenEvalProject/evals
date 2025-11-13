@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01vztzd79 Department of Biological Sciences, Indian Institute of Science Education and Research Mohali India
-2. https://ror.org/04twxam07 Department of Genetics, The University of Texas MD Anderson Cancer Center Houston United States
+1. Department of Biological Sciences, Indian Institute of Science Education and Research Mohali India ([ROR:01vztzd79](https://ror.org/01vztzd79))
+2. Department of Genetics, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
 
 † Corresponding author
 
@@ -27,9 +27,21 @@ In this study, we showed that the inhibition of the UFD-1-NPL-4 complex results 
 
 ## Results
 
-## Inhibition of the UFD-1-NPL-4 complex reduces survival of C. elegans on P. aeruginosa
+### Inhibition of the UFD-1-NPL-4 complex reduces survival of C. elegans on P. aeruginosa
 
 To explore the role of the UFD-1-NPL-4 complex in the innate immune response of C. elegans, we knocked down ufd-1 and npl-4 by RNA interference (RNAi) and studied the survival of the worms on the pathogenic bacterium P. aeruginosa PA14. Knockdown of ufd-1 and npl-4 resulted in a significant reduction in the survival of N2 wild-type worms on P. aeruginosa compared to worms grown on control RNAi (Figure 1A). The animals also had a reduced lifespan on Escherichia coli HT115 upon knockdown of ufd-1 and npl-4 (Figure 1B). The relationship between C. elegans innate immunity and longevity pathways is complex. Mutants that have reduced lifespan but improved immunity have been identified (Amrit et al., 2019; Otarigho and Aballay, 2021; Ren and Ambros, 2015). Moreover, immunocompromised animals such as mutants of the MAP kinase pathway mediated by NSY-1/SEK-1/PMK-1 have a normal lifespan despite having significantly reduced survival on pathogenic bacteria (Kim et al., 2002; Liberati et al., 2004). Therefore, we explored the mechanisms that led to the reduced survival of ufd-1 and npl-4 knockdown animals on P. aeruginosa. Colonization of the gut with P. aeruginosa is a major determinant of infection and survival of C. elegans under slow-killing conditions (Das et al., 2023; Tan et al., 1999). Because knockdown of ufd-1 and npl-4 reduced survival on P. aeruginosa, we asked whether the animals had enhanced colonization of the gut with P. aeruginosa after ufd-1 and npl-4 RNAi. Surprisingly, we observed that ufd-1 and npl-4 knockdown resulted in reduced colonization of the gut with P. aeruginosa (Figure 1C and D). To validate further, we performed the colony-forming unit (CFU) assay upon knockdown of ufd-1 and npl-4. There was a significant decline in the CFU per worm in ufd-1 and npl-4 knockdown worms, indicating reduced numbers of live bacteria in these worms (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative survival plots of N2 animals on P. aeruginosa PA14 at 25°C after treatment with the empty vector (EV) control, ufd-1, and npl-4 RNA interference (RNAi). p<0.001 for ufd-1 and npl-4 RNAi compared to EV control. (B) Representative survival plots of N2 animals grown on bacteria for RNAi against ufd-1 and npl-4, along with the EV control at 20°C. Day 0 represents young adults. p<0.001 for ufd-1 and npl-4 RNAi compared to EV control. (C) Representative fluorescence (top) and the corresponding bright-field (bottom) images of N2 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control, ufd-1, and npl-4 RNAi bacteria. Scale bar  = 200  μm. (D) Quantification of GFP levels of N2 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control, ufd-1, and npl-4 RNAi bacteria. ***p<0.001 via the t-test (n = 16 worms each). (E) Colony-forming units (CFUs) per animal of N2 worms incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control, ufd-1, and npl-4 RNAi bacteria. **p<0.01 via the t-test (n=6 biological replicates).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Quantitative reverse transcription-PCR for ufd-1 mRNA (A) and npl-4 mRNA (B) levels in N2 animals grown on the empty vector (EV) control, ufd-1, and npl-4 RNAi bacteria at 20°C until 1-day-old adults. ***p<0.001 and *p<0.05 via the t-test. n.s., nonsignificant (n=4 biological replicates).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Pharyngeal pumps per 30 s of N2 animals grown on ufd-1 and npl-4 RNA interference (RNAi), along with the empty vector (EV) control RNAi. *p<0.05 via the t-test. n.s., nonsignificant (n = 45 worms each). (B) Pharyngeal pumps per 30 s of N2 animals grown on EV control, ufd-1, and npl-4 RNAi, followed by incubation on P. aeruginosa PA14 at 25°C for 12 hr. ***p<0.001 and **p<0.01 via the t-test (n = 30 worms each). (C) The number of expulsion events observed in 15 min in N2 animals grown on EV control, ufd-1, and npl-4 RNAi. ***p<0.001 via the t-test (n = 12–13 worms each). (D) The number of expulsion events observed in 15 min in N2 animals grown on EV control, ufd-1, and npl-4 RNAi, followed by incubation on P. aeruginosa PA14 at 25°C for 12 hr. ***p<0.001 via the t-test (n = 9–10 worms each).
 
 To confirm the specificity of the RNAi knockdowns and rule out potential off-target effects, we examined transcript levels of ufd-1 and npl-4 following RNAi treatment. RNAi against ufd-1 significantly reduced ufd-1 mRNA levels without reducing npl-4 expression, while npl-4 RNAi specifically downregulated npl-4 transcripts with no impact on ufd-1 mRNA levels (Figure 1—figure supplement 1A and B). Additionally, alignment of ufd-1 and npl-4 mRNA sequences against the C. elegans transcriptome revealed no significant similarity to other genes, supporting the specificity of the RNAi constructs. Moreover, the ufd-1 and npl-4 RNA sequences do not share significant sequence similarity. Therefore, the highly similar phenotypes observed in ufd-1 and npl-4 knockdown animals, including shortened lifespan, reduced survival on P. aeruginosa, and decreased intestinal colonization with P. aeruginosa, strongly suggest that these outcomes result from the disruption of the functional UFD-1-NPL-4 complex.
 
@@ -39,39 +51,87 @@ The clearance of intestinal contents through the defecation motor program (DMP) 
 
 Taken together, these results suggested that the inhibition of the UFD-1-NPL-4 complex reduced the survival of C. elegans on P. aeruginosa despite diminished colonization of the gut with the bacterium. Because ufd-1 and npl-4 RNAi led to very similar phenotypes, we further used only ufd-1 RNAi to decipher the mechanisms of reduced survival and diminished colonization on P. aeruginosa.
 
-## Reduced colonization with P. aeruginosa upon ufd-1 knockdown is independent of the ER-UPR pathways
+### Reduced colonization with P. aeruginosa upon ufd-1 knockdown is independent of the ER-UPR pathways
 
 Knockdown of the UFD-1-NPL-4 complex is known to cause ER stress, resulting in the upregulation of the ER-UPR pathways (Mouysset et al., 2006; Sasagawa et al., 2007). Because ER stress and UPR pathways modulate innate immunity (Richardson et al., 2010; Singh and Aballay, 2017; Sun et al., 2012), we asked whether the ER-UPR pathways were involved in the regulation of survival and colonization of ufd-1 knockdown animals on P. aeruginosa. We studied the survival and colonization of mutants of different ER-UPR pathways, including xbp-1(tm2482), atf-6(ok551), and pek-1(ok275) on P. aeruginosa. The survival of xbp-1(tm2482) animals upon ufd-1 knockdown was indistinguishable from that of the control animals (Figure 2A). However, ufd-1 knockdown resulted in significantly reduced gut colonization with P. aeruginosa in xbp-1(tm2482) animals (Figure 2B and C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative survival plots of xbp-1(tm2482) animals on P. aeruginosa PA14 at 25°C after treatment with the empty vector (EV) control and ufd-1 RNA interference (RNAi). The difference between the EV and ufd-1 RNAi survival plots is nonsignificant. (B) Representative fluorescence images of xbp-1(tm2482) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar  = 200 μm. (C) Quantification of GFP levels of xbp-1(tm2482) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. **p<0.01 via the t-test (n = 16 worms each). (D) Representative survival plots of atf-6(ok551) animals on P. aeruginosa PA14 at 25°C after treatment with the EV control and ufd-1 RNAi. p<0.001. (E) Representative fluorescence images of atf-6(ok551) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar  = 200  μm. (F) Quantification of GFP levels of atf-6(ok551) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 16 worms each). (G) Representative survival plots of pek-1(ok275) animals on P. aeruginosa PA14 at 25°C after treatment with the EV control and ufd-1 RNAi. p<0.001. (H) Representative fluorescence images of pek-1(ok275) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar  = 200  μm. (I) Quantification of GFP levels of pek-1(ok275) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 24–25 worms each).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative survival plots of AGD927 (neuronally overexpressing the constitutively active spliced form of XBP-1, XBP-1s) animals on P. aeruginosa PA14 at 25°C after treatment with the empty vector (EV) control and ufd-1 RNA interference (RNAi). p<0.001. (B) Representative fluorescence images of AGD927 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. The red fluorescence in the pharynx region is from the myo-2p::tdTomato coinjection marker. Scale bar = 200 μm. (C) Quantification of GFP levels of AGD927 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 30 worms each).
 
 To further examine the role of XBP-1 in this context, we assessed the effect of ufd-1 knockdown in animals neuronally overexpressing the constitutively active spliced form of XBP-1 (XBP-1s), which has been previously associated with enhanced longevity (Taylor and Dillin, 2013). Knockdown of ufd-1 resulted in the reduced survival of XBP-1s-overexpressing animals on P. aeruginosa, despite a concurrent decrease in bacterial colonization of the gut (Figure 2—figure supplement 1A–C). This indicated that the XBP-1 pathway was not required for the reduced P. aeruginosa colonization of ufd-1 knockdown animals.
 
 The atf-6(ok551) animals exhibited reduced survival on P. aeruginosa upon ufd-1 RNAi compared to the control RNAi (Figure 2D). Similar to N2, ufd-1 knockdown resulted in reduced colonization of the gut with P. aeruginosa in atf-6(ok551) animals (Figure 2E and F). The pek-1(ok275) animals exhibited similar phenotypes of reduced survival and diminished colonization on P. aeruginosa upon ufd-1 knockdown (Figure 2G–I). These results indicated that the reduced colonization and survival of ufd-1 knockdown animals on P. aeruginosa were independent of the ER-UPR pathways.
 
-## Reduced colonization with P. aeruginosa upon ufd-1 knockdown is independent of the major immunity pathways
+### Reduced colonization with P. aeruginosa upon ufd-1 knockdown is independent of the major immunity pathways
 
 Next, we tested whether any of the immunity pathways were involved in regulating the reduced colonization by ufd-1 knockdown. To this end, we studied the survival and colonization of mutants of different immunity pathways on P. aeruginosa upon knockdown of ufd-1. The pmk-1(km25) animals, which are part of a MAP kinase pathway mediated by NSY-1/SEK-1/PMK-1 (Kim et al., 2002), had a similar survival rate on control and ufd-1 RNAi (Figure 3A). However, ufd-1 knockdown significantly reduced colonization in pmk-1(km25) animals (Figure 3B and C). This indicated that the pmk-1 pathway is unlikely to be involved in mediating ufd-1 knockdown effects, and the similar survival rate of control and ufd-1 RNAi animals is merely coincidental. Indeed, a mutant of the upstream regulator of the PMK-1 pathway, the Toll/interleukin-1 receptor domain protein (TIR-1) (Liberati et al., 2004; Peterson et al., 2022), exhibited phenotypes similar to pmk-1(km25) animals (Figure 3—figure supplement 1A–C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative survival plots of pmk-1(km25) animals on P. aeruginosa PA14 at 25°C after treatment with the empty vector (EV) control and ufd-1 RNA interference (RNAi). The difference between the EV and ufd-1 RNAi survival plots is nonsignificant. (B) Representative fluorescence images of pmk-1(km25) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar  = 200 μm. (C) Quantification of GFP levels of pmk-1(km25) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 16 worms each). (D) Representative survival plots of dbl-1(nk3) animals on P. aeruginosa PA14 at 25°C after treatment with the EV control and ufd-1 RNAi. The difference between the EV and ufd-1 RNAi survival plots is nonsignificant. (E) Representative fluorescence images of dbl-1(nk3) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar = 200 μm. (F) Quantification of GFP levels of dbl-1(nk3) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 16 worms each). (G) Representative survival plots of hlh-30(tm1978) animals on P. aeruginosa PA14 at 25°C after treatment with the EV control and ufd-1 RNAi. p<0.001. (H) Representative fluorescence images of hlh-30(tm1978) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar = 200  μm. (I) Quantification of GFP levels of hlh-30(tm1978) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 16 worms each).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative survival plots of tir-1(qd4) animals on P. aeruginosa PA14 at 25°C after treatment with the empty vector (EV) control and ufd-1 RNA interference (RNAi). The difference between the EV and ufd-1 RNAi survival plots is nonsignificant. (B) Representative fluorescence images of tir-1(qd4) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar = 200 μm. (C) Quantification of GFP levels of tir-1(qd4) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 19–20 worms each).
+
 The mutants of the TGF-β/DBL-1 (Mallo et al., 2002) and TFEB/HLH-30 (Visvikis et al., 2014) immunity pathways also exhibited phenotypes similar to pmk-1(km25) animals. The knockdown of ufd-1 resulted in significantly reduced colonization of dbl-1(nk3) and hlh-30(tm1978) animals without affecting their survival on P. aeruginosa (Figure 3D–I). These results indicated that the reduced colonization with P. aeruginosa upon ufd-1 knockdown was independent of these immunity pathways.
 
-## Inhibition of the UFD-1-NPL-4 complex improves survival of severely immunocompromised C. elegans on P. aeruginosa
+### Inhibition of the UFD-1-NPL-4 complex improves survival of severely immunocompromised C. elegans on P. aeruginosa
 
 Knockdown of ufd-1 reduced colonization in wild-type animals, as well as mutants of ER-UPR and innate immunity pathways. Interestingly, despite variable survival rates on control RNAi, all strains had similar survival rates upon knockdown of ufd-1 (Figure 4—figure supplement 1). We reasoned that ufd-1 knockdown might lead to an aberrant immune response that results in diminished gut colonization by P. aeruginosa and reduces the survival of healthy but not immunocompromised animals. If this were the case, knockdown of the UFD-1-NPL-4 complex might improve the survival of severely immunocompromised animals by activating a compensatory immune response. In C. elegans, the canonical p38 MAP kinase signaling cascade consists of NSY-1 (ASK1 MAPKKK), SEK-1 (MKK3/MKK6 MAPKK), and PMK-1 (p38 MAPK) (Kim et al., 2002). Compared to pmk-1 knockout, the knockout of sek-1 leads to more severe effects on survival upon infection with P. aeruginosa (Meng et al., 2021). Indeed, we observed that most of the sek-1(km4) animals on control RNAi died within 24 hr of exposure to P. aeruginosa (Figure 4A). Importantly, the knockdown of ufd-1 resulted in a significant improvement in the survival of sek-1(km4) animals (Figure 4A). To test whether the improved survival of sek-1(km4) animals upon the knockdown of ufd-1 was because of inhibition of the UFD-1-NPL-4 complex, we studied the survival of sek-1(km4) animals upon npl-4 RNAi. The knockdown of npl-4 also resulted in significantly enhanced survival of sek-1(km4) animals (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative survival plots of sek-1(km4) animals on P. aeruginosa PA14 at 25°C after treatment with the empty vector (EV) control, ufd-1, and npl-4 RNA interference (RNAi). p<0.001 for ufd-1 and npl-4 RNAi compared to EV control. (B) Representative fluorescence images of sek-1(km4) animals incubated on P. aeruginosa-GFP for 12 hr at 25°C after growth on the EV control, ufd-1, and npl-4 RNAi bacteria. Scale bar  = 200 μm. (C) Quantification of GFP levels of sek-1(km4) animals incubated on P. aeruginosa-GFP for 12 hr at 25°C after growth on the EV control, ufd-1, and npl-4 RNAi bacteria. ***p<0.001 via the t-test (n = 19–20 worms each). (D) Representative survival plots of sek-1(km4) animals grown on bacteria for RNAi against ufd-1 and npl-4 along with the EV control at 20°C. Day 0 represents young adults. p<0.001 for ufd-1 and npl-4 RNAi compared to EV control. (E) Representative survival plots of dbl-1(nk3);pmk-1(km25) animals on P. aeruginosa PA14 at 25°C after treatment with the EV control and ufd-1 RNAi. p<0.001. (F) Representative fluorescence images of dbl-1(nk3);pmk-1(km25) animals incubated on P. aeruginosa-GFP for 12 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. Scale bar = 200  μm. (G) Quantification of GFP levels of dbl-1(nk3);pmk-1(km25) animals incubated on P. aeruginosa-GFP for 12 hr at 25°C after growth on the EV control and ufd-1 RNAi bacteria. ***p<0.001 via the t-test (n = 24 worms each).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative survival plots of worm strains on P. aeruginosa PA14 at 25°C after treatment with the empty vector (EV) control RNA interference (RNAi). (B) Representative survival plots of worm strains on P. aeruginosa PA14 at 25°C after treatment with ufd-1 RNAi. The data in (A) and (B) are pooled from the data from Figures 1—3, Figure 3—figure supplement 1.
 
 Knockdown of both ufd-1 and npl-4 in sek-1(km4) animals resulted in reduced gut colonization by P. aeruginosa compared to control RNAi (Figure 4B and C). Because sek-1(km4) animals do not have a reduced lifespan on E. coli diet (Kim et al., 2002), we studied how inhibition of the UFD-1-NPL-4 complex affected the lifespan of sek-1(km4) animals. We reasoned that if the inhibition of the UFD-1-NPL-4 complex resulted in a heightened aberrant immune response, it should result in a reduced lifespan of sek-1(km4) animals on E. coli despite improving their survival on P. aeruginosa. Indeed, the knockdown of ufd-1 and npl-4 significantly reduced the lifespan of sek-1(km4) animals on E. coli HT115 (Figure 4D). These results suggested that inhibition of the UFD-1-NPL-4 complex led to an aberrant immune response, which improves survival of severely immunocompromised animals under infection conditions but reduces survival of such animals under non-infection conditions.
 
 To further establish that inhibition of the UFD-1-NPL-4 complex resulted in the improved survival of severely immunocompromised animals on P. aeruginosa, we created a dbl-1(nk3);pmk-1(km25) double mutant. The TGF-β/DBL-1 and p38 MAPK/PMK-1 control immunity via parallel pathways (Singh and Aballay, 2020), and the dbl-1(nk3);pmk-1(km25) animals show reduced survival on P. aeruginosa compared to individual mutants (Figure 4E). The knockdown of ufd-1 resulted in improved survival (Figure 4E) and reduced colonization (Figure 4F and G) of dbl-1(nk3);pmk-1(km25) animals on P. aeruginosa. Taken together, these data showed that inhibition of the UFD-1-NPL-4 complex improved the survival of severely immunocompromised animals on P. aeruginosa.
 
-## Knockdown of ufd-1 results in the upregulation of protease and IPR genes
+### Knockdown of ufd-1 results in the upregulation of protease and IPR genes
 
 To understand the molecular basis of the phenotypes observed upon knockdown of ufd-1, we used RNA sequencing to focus on transcriptional changes induced by ufd-1 RNAi. Of the 439 differentially regulated genes, 319 were upregulated, while 120 were downregulated (Figure 5A and Supplementary file 1). Gene ontology (GO) analysis for biological processes for upregulated genes showed enrichment for innate immune response (Figure 5B). As ufd-1 is required for ERAD, different ER-UPR pathway genes were also enriched in the upregulated genes. In addition, enrichment for proteolysis genes was also observed. GO analysis for cellular components and molecular function for upregulated genes showed enrichment for lysosomes and peptidase activities, respectively (Figure 5C and D). These results indicated that the knockdown of ufd-1 might result in increased proteolysis activities via lysosomes. GO analysis for biological processes for downregulated genes also showed enrichment for innate immune response (Figure 5—figure supplement 1). This indicated that ufd-1 might be required for the expression of some innate immune response genes. GO analysis for cellular components and molecular function for downregulated genes primarily identified functions related to nucleosomes (Figure 5—figure supplement 1B and C). Indeed, UFD-1 is known to localize to the nucleus and is required for chromatin stability (Mouysset et al., 2008).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig5-v1.jpg)
+
+**Figure 5.:** (A) Volcano plot of upregulated and downregulated genes in ufd-1 RNA interference (RNAi) versus empty vector (EV) control RNAi N2 animals. Orange and green dots represent significantly upregulated and downregulated genes, respectively, while the gray dots represent the genes that are not differentially regulated. (B–D) Gene ontology enrichment analysis for ufd-1 RNAi upregulated genes for biological processes (B), cellular component (C), and molecular function (D). (E) Venn diagram showing the overlap between genes upregulated upon ufd-1 RNAi and upregulated upon Nematocida parisii infection (Bakowski et al., 2014). The p-value for the overlap between the data is 8.2×10–110. (F) Venn diagram showing the overlap between genes upregulated upon ufd-1 RNAi and upregulated upon Orsay virus infection (Sarkies et al., 2013). The p-value for the overlap between the data is 2.7×10–62.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Gene ontology enrichment analysis for ufd-1 RNAi downregulated genes for biological processes (A), cellular component (B), and molecular function (C).
+
 Next, we compared the upregulated genes with previously published gene expression data using WormExp (Yang et al., 2016b). Interestingly, we observed that the ufd-1 RNAi upregulated genes had a very high overlap with genes upregulated by intracellular pathogens N. parisii (Bakowski et al., 2014; Figure 5E) and Orsay virus (Sarkies et al., 2013; Figure 5F). Infection with the intracellular pathogens N. parisii and Orsay virus results in the activation of an IPR, which includes several protein-containing ALS2CR12 signature (pals) genes, as well as genes involved in proteolysis (Bakowski et al., 2014; Sarkies et al., 2013). Indeed, ufd-1 RNAi resulted in the upregulation of several pals and proteolysis genes (Supplementary file 1). These results indicated that the knockdown of ufd-1 might mimic an intracellular pathogen infection and result in the activation of the IPR.
 
-## GATA transcription factor ELT-2 mediates the ufd-1 knockdown phenotypes
+### GATA transcription factor ELT-2 mediates the ufd-1 knockdown phenotypes
 
 To identify the genes downstream of ufd-1 knockdown that were responsible for reduced colonization, we knocked down individual genes that were upregulated upon ufd-1 RNAi and studied colonization of the gut with P. aeruginosa. We hypothesized that the reduced colonization might be because of increased expression of proteolysis genes. Therefore, we knocked down the proteolysis genes that were upregulated by ufd-1 RNAi. Knockdown of the protease genes cpr-1, asp-12, and Y71H2AR.25 led to a significant increase in colonization in ufd-1 knockdown animals (Figure 6—figure supplement 1A), suggesting that increased expression of protease genes might be responsible for reduced colonization. Because ufd-1 knockdown also resulted in the upregulation of several pals genes, which are part of the IPR, we next targeted the pals genes upregulated by ufd-1 RNAi. Knockdown of the pals genes, pals-9, pals-14, pals-16, pals-17, and pals-29, resulted in a significant increase in colonization in ufd-1 knockdown animals (Figure 6—figure supplement 1B). These results indicated that some of the proteases and IPR genes are involved in the regulation of colonization in ufd-1 knockdown animals. It is also likely that these genes function redundantly, and multiple genes contribute to the observed phenotype.
 
 To identify the transcription factors that regulate the diminished colonization and reduced survival phenotype of ufd-1 knockdown, we carried out transcription factor enrichment analysis for upregulated genes using WormExp. The ufd-1 RNAi upregulated genes substantially overlapped with the genes regulated by the GATA transcription factor ELT-2 (Dineen et al., 2018; Mann et al., 2016; Figure 6A and B). Indeed, ELT-2 is known to regulate the expression of protease and pals genes (Mann et al., 2016). To assess whether ELT-2 contributes to the phenotypes associated with ufd-1 knockdown, we conducted double RNAi experiments in N2 animals targeting both ufd-1 and elt-2 and examined P. aeruginosa colonization. The double knockdown of ufd-1 and elt-2 did not compromise RNAi efficiency, as evidenced by significantly reduced ufd-1 mRNA levels and diminished ELT-2::GFP signal (Figure 6—figure supplement 2A and B). Importantly, knockdown of elt-2 resulted in a significant increase in P. aeruginosa colonization in ufd-1 knockdown animals (Figure 6C and D). Similar to N2 worms, the knockdown of elt-2 resulted in a significant increase in P. aeruginosa colonization in ufd-1 knockdown sek-1(km4) animals (Figure 6E and F). Because ufd-1 knockdown in sek-1(km4) worms improves their survival on P. aeruginosa (Figure 4A), we also studied whether elt-2 was responsible for the increased survival of sek-1(km4) worms upon ufd-1 knockdown. Indeed, the knockdown of elt-2 abolished the beneficial effects of ufd-1 knockdown on the survival of sek-1(km4) worms on P. aeruginosa (Figure 6G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig6-v1.jpg)
+
+**Figure 6.:** (A) Venn diagram showing the overlap between genes upregulated upon ufd-1 RNA interference (RNAi) and upregulated in wt versus elt-2(-) larvae (Dineen et al., 2018). The p-value for the overlap between the data is 9.5×10–52. (B) Venn diagram showing the overlap between genes upregulated upon ufd-1 RNAi and the low-complexity ELT-2 target genes (Mann et al., 2016). The p-value for the overlap between the data is 1.5×10–34. (C) Representative fluorescence (top) and the corresponding bright-field (bottom) images of N2 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the gfp RNAi (GFP) control, ufd-1, GFP+elt-2, GFP+ufd-1, and ufd-1+elt-2 RNAi bacteria (see Materials and methods for the details). Scale bar = 200 μm. (D) Quantification of GFP levels of N2 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on the gfp RNAi control, ufd-1, GFP+elt-2, GFP+ufd-1, and ufd-1+elt-2 RNAi bacteria. ***p<0.001 via the t-test (n = 28–30 worms each). (E) Representative fluorescence (top) and the corresponding bright-field (bottom) images of sek-1(km4) animals incubated on P. aeruginosa-GFP for 12 hr at 25°C after growth on the gfp RNAi control, ufd-1, GFP+elt-2, GFP+ufd-1, and ufd-1+elt-2 RNAi bacteria. Scale bar = 200 μm. (F) Quantification of GFP levels of sek-1(km4) animals incubated on P. aeruginosa-GFP for 12 hr at 25°C after growth on the gfp RNAi control, ufd-1, GFP+elt-2, GFP+ufd-1, and ufd-1+elt-2 RNAi bacteria. ***p<0.001 via the t-test (n = 30–31 worms each). (G) Representative survival plots of sek-1(km4) animals on P. aeruginosa PA14 at 25°C after treatment with the gfp RNAi control, ufd-1, GFP+elt-2, GFP+ufd-1, and ufd-1+elt-2 RNAi bacteria. p<0.001 for ufd-1+elt-2 RNAi compared to GFP+ufd-1 RNAi.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantification of GFP levels of N2 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on indicated RNAi bacteria. p-Values in comparison to the gfp RNAi (GFP) and GFP+ufd-1 RNAi are indicated. ***p<0.001, **p<0.01, and *p<0.05 via the t-test. n.s., nonsignificant (n = 26–30 worms each). (B) Quantification of GFP levels of N2 animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on indicated RNAi bacteria. p-values in comparison to the gfp RNAi (GFP) and GFP+ufd-1 RNAi are indicated. ***p<0.001, **p<0.01, and *p<0.05 via the t-test. n.s., nonsignificant (n = 19–20 worms each).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Quantitative reverse transcription-PCR for ufd-1 mRNA levels in N2 animals grown on the gfp RNAi control (GFP), ufd-1, GFP+elt-2, GFP+ufd-1, and ufd-1+elt-2 RNAi bacteria. ***p<0.001 via the t-test. n.s., nonsignificant (n=4 biological replicates). (B) Representative fluorescence and corresponding bright-field images of ELT-2::GFP worms grown on the control empty vector (EV), elt-2, and elt-2+ufd-1 RNAi bacteria. Scale bar  = 200 μm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/94310/elife-94310-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Representative fluorescence images of N2 and ELT-2 overexpression (elt-2_OE) animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on E. coli OP50. Scale bar  = 200 μm. (B) Quantification of GFP levels of N2 and elt-2_OE animals incubated on P. aeruginosa-GFP for 24 hr at 25°C after growth on E. coli OP50. ***p<0.001 via the t-test (n = 30 worms each). (C) Representative survival plots of N2 and elt-2_OE animals on P. aeruginosa PA14 at 25°C after growth on E. coli OP50. The difference between the N2 and elt-2_OE survival plots is nonsignificant.
 
 To determine whether ELT-2 activation alone is sufficient to recapitulate the phenotypes observed upon UFD-1-NPL-4 complex inhibition, we analyzed animals overexpressing ELT-2. Similar to ufd-1 knockdown, ELT-2 overexpression led to a significant reduction in the colonization of the gut by P. aeruginosa (Figure 6—figure supplement 3A and B). However, overexpression of ELT-2 did not alter the survival of worms on P. aeruginosa (Figure 6—figure supplement 3C). Taken together, these findings suggest that the phenotypes triggered by disruption of the UFD-1-NPL-4 complex are partially mediated by ELT-2. However, additional pathways, yet to be identified, likely cooperate with ELT-2 to regulate both pathogen resistance and host survival.
 
@@ -87,64 +147,291 @@ We demonstrate that the GATA transcription factor ELT-2 mediated the aberrant re
 
 ## Materials and methods
 
-## Bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>CaenorhabditisGenetics Center (CGC)</td>
+      <td>OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115(DE3)</td>
+      <td>SourceBioScience</td>
+      <td>HT115(DE3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PA14</td>
+      <td>Frederick M Ausubel laboratory</td>
+      <td>PA14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14-GFP</td>
+      <td>Frederick M Ausubel laboratory</td>
+      <td>PA14-GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2 Bristol</td>
+      <td>CGC</td>
+      <td>N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>sek-1(km4)</td>
+      <td>CGC</td>
+      <td>KU4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pmk-1(km25)</td>
+      <td>CGC</td>
+      <td>KU25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dbl-1(nk3)</td>
+      <td>CGC</td>
+      <td>NU3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>hlh-30(tm1978)</td>
+      <td>CGC</td>
+      <td>JIN1375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>xbp-1(tm2482)</td>
+      <td>NBRP, Japan</td>
+      <td>xbp-1(tm2482)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pek-1(ok275)</td>
+      <td>CGC</td>
+      <td>RB545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>atf-6(ok551)</td>
+      <td>CGC</td>
+      <td>RB772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tir-1(qd4)</td>
+      <td>CGC</td>
+      <td>RB1085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>uthIs270 [rab-3p::xbp-1s (constitutively active)+myo-2p::tdTomato]</td>
+      <td>CGC</td>
+      <td>AGD927</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>glo-4(ok623); gaIs290 [elt-2::TY1::EGFP::3xFLAG(92C12)+unc-119(+)]</td>
+      <td>CGC</td>
+      <td>SD1949</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dbl-1(nk3);pmk-1(km25)</td>
+      <td>This study</td>
+      <td>dbl-1(nk3);pmk-1(km25)</td>
+      <td>Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>jsnEx3 [elt-2p::elt-2+myo-2p::mCherry]</td>
+      <td>This study</td>
+      <td>elt-2_OE</td>
+      <td>Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pan-act_qPCR_F</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>TCGGTATGGGACAGAAGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pan-act_qPCR_R</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>CATCCCAGTTGGTGACGATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>npl-4_qPCR_F</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>AATGGAGGAAGCGGCAATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>npl-4_qPCR_R</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>TCCACAGTTCCACACAGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ufd-1_qPCR_F</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>GGTCGTGTTTCATTCCTTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ufd-1_qPCR_R</td>
+      <td>This study</td>
+      <td>qPCR primers</td>
+      <td>TTGCCTCCACGGAAGACATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>npl-4_RNAi_F</td>
+      <td>This study</td>
+      <td>Cloning primers</td>
+      <td>GCTCCCGGGATGGTACTTGAAGTCCCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>npl-4_RNAi_R</td>
+      <td>This study</td>
+      <td>Cloning primers</td>
+      <td>AGGTCTAGAATCGGCAGCTGGCAATCCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>elt-2_OE_F</td>
+      <td>This study</td>
+      <td>Cloning primers</td>
+      <td>CGTCTGCAG CTGATTGTTTCAGAACACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>elt-2_OE_R</td>
+      <td>This study</td>
+      <td>Cloning primers</td>
+      <td>CGACCCGGG AAGTAGGGTACACATGTTTG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientificsoftware/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS5</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains
 
 The following bacterial strains were used in the current study: E. coli OP50, E. coli HT115(DE3), P. aeruginosa PA14, and P. aeruginosa PA14 expressing green fluorescent protein (P. aeruginosa PA14-GFP). The cultures of E. coli OP50, E. coli HT115(DE3), and P. aeruginosa PA14 were grown in Luria-Bertani (LB) broth at 37°C. The P. aeruginosa PA14-GFP cultures were grown in LB broth with 50 µg/mL kanamycin at 37°C.
 
-## C. elegans strains and growth conditions
+### C. elegans strains and growth conditions
 
 C. elegans hermaphrodites were maintained at 20°C on nematode growth medium (NGM) plates seeded with E. coli OP50 as the food source unless otherwise indicated. Bristol N2 was used as the wild-type control unless otherwise indicated. The following strains were used in the study: KU4 sek-1(km4), KU25 pmk-1(km25), NU3 dbl-1(nk3), JIN1375 hlh-30(tm1978), xbp-1(tm2482), RB545 pek-1(ok275), RB772 atf-6(ok551), and RB1085 tir-1(qd4), AGD927 uthIs270 [rab-3p::xbp-1s (constitutively active)+myo-2p::tdTomato], and SD1949 glo-4(ok623);gaIs290 [elt-2::TY1::EGFP::3xFLAG(92C12)+unc-119(+)]. Some of the strains were obtained from the Caenorhabditis Genetics Center (University of Minnesota, Minneapolis, MN, USA). The dbl-1(nk3);pmk-1(km25) strain was obtained by a standard genetic cross.
 
-## Construction of the npl-4 RNAi clone
+### Construction of the npl-4 RNAi clone
 
 The 1581-base-pair full-length cDNA of npl-4.1 was amplified using the forward primer 5’- GCTCCCGGGATGGTACTTGAAGTCCCTCA -3’ and the reverse primer 5’- AGGTCTAGAATCGGCAGCTGGCAATCCAC -3’. Because the nucleotide sequence of the npl-4.1 gene is 99% identical to that of the npl-4.2 gene, the cloned cDNA will target both of these genes. Therefore, the clone is referred to as npl-4. The fragment was cloned into the SmaI and XbaI sites of pL4440 (Open Biosystems) and transformed into E. coli HT115(DE3) cells.
 
-## Plasmid constructs and generation of transgenic C. elegans
+### Plasmid constructs and generation of transgenic C. elegans
 
 For overexpression of elt-2, the elt-2 gene along with its promoter region (1980 bp upstream) was amplified from genomic DNA of N2 animals. The gene, including its stop codon, was cloned in the pPD95.77 plasmid using the restriction sites PstI and SmaI. N2 worms were microinjected with elt-2p::elt-2 plasmid along with pCFJ90 (myo-2p::mCherry) as a coinjection marker to generate the overexpression strain, jsnEx3 [elt-2p::elt-2+myo-2p::mCherry]. The elt-2p::elt-2 plasmid was used at a concentration of 50 ng/µL, while the coinjection marker was used at a concentration of 5 ng/µL.
 
-## RNA interference
+### RNA interference
 
 RNAi was used to generate loss-of-function phenotypes by feeding worms with E. coli strain HT115(DE3) expressing double-stranded RNA homologous to a target C. elegans gene. RNAi was carried out as described previously (Das et al., 2023). Briefly, E. coli HT115(DE3) with the appropriate vectors was grown in LB broth containing ampicillin (100 μg/mL) at 37°C overnight on a shaker, concentrated 10 times, and plated onto RNAi NGM plates containing 100 μg/mL ampicillin and 3 mM isopropyl β-D-thiogalactoside. The plated bacteria were allowed to grow overnight at 37°C. For synchronization of worms, gravid adults were transferred to RNAi-expressing bacterial lawns and allowed to lay eggs for 2 hr. The gravid adults were removed, and the eggs were incubated at 20°C for 96 hr. For protease and IPR genes’ co-RNAi with ufd-1, E. coli HT115(DE3) with the appropriate vectors were grown separately at 37°C overnight until growth saturation. Then, the RNAi cultures were mixed in a ratio of 1:1, concentrated 10 times, and plated onto RNAi plates, followed by overnight growth at 37°C. We used all the protease and pals genes that were upregulated upon ufd-1 RNAi and were present in the Ahringer RNAi library. For experiments involving elt-2 RNAi, the worms were grown on the control gfp RNAi (GFP) and ufd-1 RNAi for 48 hr at 20°C to obtain the L4 stage worms. Afterward, the worms grown on gfp RNAi were transferred to GFP+elt-2 RNAi plates, and those grown on ufd-1 RNAi were transferred to GFP+ufd-1 and ufd-1+elt-2 RNAi plates. This was followed by the incubation of the worms at 20°C for another 48 hr before transferring to P. aeruginosa plates. The gfp RNAi E. coli HT115(DE3) strain was a kind gift from Scott G Kennedy, Harvard Medical School.
 
-## C. elegans killing assay on P. aeruginosa PA14
+### C. elegans killing assay on P. aeruginosa PA14
 
 The full-lawn killing assays of C. elegans on P. aeruginosa PA14 were carried out as described earlier (Singh and Aballay, 2019a). Briefly, P. aeruginosa PA14 cultures were grown by inoculating individual bacterial colonies into 2 mL of LB broth and growing them for 8–10 hr on a shaker at 37°C. Then, 20 µL of the culture was spread on the complete surface of 3.5-cm-diameter standard slow-killing (SK) plates (modified NGM agar plates [0.35% instead of 0.25% peptone]). The plates were incubated at 37°C for 12–16 hr and then cooled to room temperature for at least 30 min before seeding with synchronized gravid adult hermaphrodite worms. The killing assays were performed at 25°C, and live animals were transferred to fresh plates every 24 hr. Animals were scored at the indicated times and considered dead when they failed to respond to touch. At least three independent experiments were performed for each condition.
 
-## P. aeruginosa - GFP colonization assay
+### P. aeruginosa - GFP colonization assay
 
 The P. aeruginosa PA14-GFP colonization assays were carried out as described earlier (Das et al., 2023; Singh and Aballay, 2019b). Briefly, bacterial cultures were prepared by inoculating individual bacterial colonies into 2 mL of LB broth containing 50 μg/mL kanamycin and growing them for 8–10 hr on a shaker at 37°C. Then, 20 μL of the culture was spread on the complete surface of 3.5-cm-diameter SK plates containing 50 μg/mL kanamycin. The plates were incubated at 37°C for 12–16 hr and then cooled to room temperature for at least 30 min before seeding with gravid adult hermaphrodite worms. The assays were performed at 25°C. At indicated times, the worms were picked under a non-fluorescence stereomicroscope and visualized within 5 min under a fluorescence microscope.
 
-## Quantification of intestinal bacterial loads
+### Quantification of intestinal bacterial loads
 
 The quantification of intestinal P. aeruginosa PA14-GFP load was carried by measuring CFUs as described earlier (Das et al., 2023). Briefly, P. aeruginosa PA14-GFP lawns were prepared as described above. At the indicated times for each experiment, the animals were transferred from P. aeruginosa-GFP plates to the center of fresh E. coli OP50 plates thrice for 10 min each to eliminate bacteria stuck to their body. Afterward, 10 animals/condition were transferred into 50 μL of PBS containing 0.01% Triton X-100 and ground using glass beads. Serial dilutions of the lysates (101, 102, 103, 104) were seeded onto LB plates containing 50 μg/mL of kanamycin to select for P. aeruginosa-GFP cells and grown overnight at 37°C. Single colonies were counted the next day and represented as the number of bacterial cells or CFUs per animal. Six independent experiments were performed for each condition.
 
-## Pharyngeal pumping assay
+### Pharyngeal pumping assay
 
 For the pharyngeal pumping assay without P. aeruginosa PA14 exposure, wild-type N2 animals were grown on appropriate RNAi clones till 1-day-old adults before the measurements. For the pharyngeal pumping assay with P. aeruginosa PA14 exposure, wild-type N2 animals were grown on appropriate RNAi clones till 1-day-old adults, followed by exposure to P. aeruginosa PA14 for 12 hr at 25°C before measurements. The number of contractions of the terminal bulb of the pharynx was counted for 30 s per worm. The pumping rates for at least 30 worms were recorded for each condition.
 
-## Measurement of DMP rate
+### Measurement of DMP rate
 
 The wild-type N2 animals were synchronized and grown at 20°C on EV, ufd-1, and npl-4 RNAi clones till 1-day-old adults before the measurements. For the DMP assay involving exposure of C. elegans to P. aeruginosa PA14, wild-type N2 animals were synchronized and grown at 20°C on EV, ufd-1, and npl-4 RNAi clones till 1-day-old adults, followed by exposure to P. aeruginosa PA14 for 12 hr at 25°C before measurements. The DMP cycle length was scored by assessing the time between expulsions (which are preceded by posterior and anterior body wall muscle contraction and the contraction of enteric muscles in a normal, regular pattern) (Thomas, 1990). The number of expulsion events in 15 min was measured for each worm. The DMP rate was recorded for 9–13 worms/condition.
 
-## C. elegans lifespan assays
+### C. elegans lifespan assays
 
 Lifespan assays were performed as described earlier (Das et al., 2023). Briefly, the assays were performed on RNAi plates containing E. coli HT115(DE3) with appropriate vectors in the presence of 50 µg/mL of 5-fluorodeoxyuridine (FUdR). Animals were synchronized on RNAi plates without FUdR and incubated at 20°C. At the late L4 larval stage, the animals were transferred onto the corresponding RNAi plates containing 50 µg/mL of FUdR and incubated at 20°C. Animals were scored every day as live, dead, or gone. Animals that failed to display touch-provoked movement were scored as dead. Animals that crawled off the plates were censored. Experimental groups contained more than 60 animals per condition per replicate. Young adult animals were considered day 0 for the lifespan analysis. Three independent experiments were performed.
 
-## RNA isolation, RNA sequencing, and data analysis
+### RNA isolation, RNA sequencing, and data analysis
 
 RNA isolation was carried out as described earlier (Singh and Aballay, 2017). Briefly, animals were synchronized by egg laying. Approximately 35 N2 gravid adult animals were transferred to 10 cm RNAi plates seeded with control empty vector and ufd-1 RNAi bacteria and allowed to lay eggs for 4 hr. The gravid adults were then removed, and the eggs were allowed to develop at 20°C for 96 hr. The animals were then collected, washed with M9 buffer, and frozen in TRIzol reagent (Life Technologies, Carlsbad, CA, USA). Total RNA was extracted using the RNeasy Plus Universal Kit (QIAGEN, Netherlands). Residual genomic DNA was removed using TURBO DNase (Life Technologies, Carlsbad, CA, USA). Library preparation and sequencing were performed at the Novogene Corporation Inc, USA. The cDNA libraries were sequenced on the HiSeqX sequencing platform using 150 bp paired-end nucleotide reads.
 
 The RNA sequence data were analyzed using the web platform Galaxy (https://usegalaxy.org/). The paired reads were first trimmed using the Trimmomatic tool. The trimmed reads obtained for each sample were mapped to the C. elegans genome (WS220) using the aligner STAR. The number of reads mapped to each gene was counted using the htseq-count tool. Differential gene expression analysis was then performed using DESeq2. Genes exhibiting at least a twofold change and p-value<0.01 were considered differentially expressed. GO analysis was performed using the DAVID Bioinformatics Database (https://david.ncifcrf.gov/tools.jsp). The overlap of the upregulated genes with previously published datasets was carried out with WormExp v 2.0 (https://wormexp.zoologie.uni-kiel.de/wormexp/) (Yang et al., 2016b). The Venn diagrams were obtained using the web tool BioVenn (https://www.biovenn.nl/) (Hulsen et al., 2008).
 
-## RNA isolation and qRT-PCR
+### RNA isolation and qRT-PCR
 
 Animals were synchronized by egg laying. Approximately 40 N2 gravid adults were transferred to 9 cm RNAi plates seeded with E. coli HT115 expressing the appropriate vectors and allowed to lay eggs for 4 hr. The adults were then removed, and the eggs were allowed to develop at 20°C for 96 hr. The resulting animals were collected, washed with M9 buffer three times, and frozen in TRIzol reagent (Life Technologies, Carlsbad, CA, USA). Total RNA was extracted using the RNeasy Plus Universal Kit (QIAGEN, Netherlands). qRT-PCR was carried out as described earlier (Ghosh and Singh, 2024). Briefly, total RNA was reverse-transcribed with random primers using the PrimeScript 1st strand cDNA Synthesis Kit (TaKaRa) according to the manufacturer’s protocols. qRT-PCR was conducted using TB Green fluorescence (TaKaRa) on a MasterCycler EP Realplex 4 thermal cycler (Eppendorf) in 96-well plate format. Fifteen microliter reactions were analyzed as outlined by the manufacturer (TaKaRa). Relative fold changes of the transcripts were calculated using the comparative CT (2-ΔΔCT) method and normalized to pan-actin (act-1, -3, -4) as previously described (Singh and Aballay, 2017). All samples were run in triplicate (technical replicates) and repeated at least four times (biological replicates).
 
-## Fluorescence imaging
+### Fluorescence imaging
 
 Fluorescence imaging was carried out as described previously (Gokul and Singh, 2022; Ravi, et al., 2023). Briefly, the animals were anesthetized using an M9 salt solution containing 50 mM sodium azide and mounted onto 2% agarose pads. The animals were then visualized using a Nikon SMZ-1000 fluorescence stereomicroscope. The fluorescence intensity was quantified using ImageJ software.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The statistical analysis was performed with Prism 8 (GraphPad). All error bars represent mean ± standard deviation (SD). The two-sample t-test was used when needed, and the data were judged to be statistically significant when p<0.05. In the figures, asterisks (*) denote statistical significance as follows: *, p<0.05, **, p<0.01, ***, p<0.001, as compared with the appropriate controls. The Kaplan-Meier method was used to calculate the survival fractions, and statistical significance between survival curves was determined using the log-rank test. All experiments were performed in triplicate.

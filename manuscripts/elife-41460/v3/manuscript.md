@@ -18,15 +18,27 @@
 
 ## Abstract
 
-10.7554/eLife.41460.001 Extracellular vesicles mediate transfer of biologically active molecules between neighboring or distant cells, and these vesicles may play important roles in normal physiology and the pathogenesis of multiple disease states including cancer. However, the underlying molecular mechanisms of their biogenesis and release remain unknown. We designed artificially barcoded, exosomal microRNAs (bEXOmiRs) to monitor extracellular vesicle release quantitatively using deep sequencing. We then expressed distinct pairs of CRISPR guide RNAs and bEXOmiRs, enabling identification of genes influencing bEXOmiR secretion from Cas9-edited cells. This approach uncovered genes with unrecognized roles in multivesicular endosome exocytosis, including critical roles for Wnt signaling in extracellular vesicle release regulation. Coupling bEXOmiR reporter analysis with CRISPR-Cas9 screening provides a powerful and unbiased means to study extracellular vesicle biology and for the first time, to associate a nucleic acid tag with individual membrane vesicles.
+Extracellular vesicles mediate transfer of biologically active molecules between neighboring or distant cells, and these vesicles may play important roles in normal physiology and the pathogenesis of multiple disease states including cancer. However, the underlying molecular mechanisms of their biogenesis and release remain unknown. We designed artificially barcoded, exosomal microRNAs (bEXOmiRs) to monitor extracellular vesicle release quantitatively using deep sequencing. We then expressed distinct pairs of CRISPR guide RNAs and bEXOmiRs, enabling identification of genes influencing bEXOmiR secretion from Cas9-edited cells. This approach uncovered genes with unrecognized roles in multivesicular endosome exocytosis, including critical roles for Wnt signaling in extracellular vesicle release regulation. Coupling bEXOmiR reporter analysis with CRISPR-Cas9 screening provides a powerful and unbiased means to study extracellular vesicle biology and for the first time, to associate a nucleic acid tag with individual membrane vesicles.
 
 ## Introduction
 
 Intercellular communication mediated by extracellular vesicles (EVs) has recently attracted significant attention, and may contribute to diverse physiological processes including immune regulation and cancer metastasis. EVs are comprised of two major classes based upon their mechanism of biogenesis: microvesicles are shed directly from the plasma membrane, while exosomes are formed by intra-lumenal budding during multi-vesicular endosome (MVE) biogenesis (Colombo et al., 2014; van Niel et al., 2018) (Figure 1A). EVs contain a wide range of molecules, including antigens, signaling proteins, lipids, and microRNAs (miRNAs) that appear to induce significant biological changes in recipient cells. EV miRNAs released by both tumor and mesenchymal cells are of particular interest, as they may play important roles in metastasis (Becker et al., 2016). EV miRNAs secreted by hypothalamic stem cells may regulate aging in mice (Zhang et al., 2017). Moreover, EVs have attracted a great deal of attention due to their potential use in diagnostics and therapeutics (Becker et al., 2016). Despite their importance, how miRNAs are specifically packaged and released via the EV pathway is poorly understood. The biological significance of EVs also remains controversial, in part due to a lack of understanding of the molecular mechanisms that regulate their formation and release. Here we describe the development of a novel CRISPR screening platform using artificially barcoded miRNAs (bEXOmiRs) that we applied systematically to identify genes involved in EV biology. We show that EV release is regulated tightly by Glycogen Synthase Kinase three and Wnt signaling, and report new players in MVE exocytosis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig1-v3.jpg)
+
+**Figure 1.:** (A) Left, Generic structure of bEXOmiRs before and after processing. bEXOmiRs contain a random 15 nucleotide (nt) (base-paired) sequence followed by a constant exosome-targeting motif (GGAGGAG, ‘EXO motif’). Middle, intracellular trafficking of bEXOmiRs before export via EVs (exosomes and/or microvesicles). Once secreted, bEXOmiRs can be detected in purified EV fractions by RT-PCR or next generation sequencing. (B) Three example bEXOmiRs (A, B, C; Figure 1—figure supplement 1A) were cloned into a mammalian expression vector and transfected into HEK293T cells. bEXOmiR expression in both EV (upper panel) and cellular (bottom panel) fractions was assessed by Stem-Loop RT-PCR. Negative control RT-PCR devoid of RT-primer is shown in lane ∅. Red asterisks indicate non-specific PCR amplification bands. (C) HEK293T cells transfected with control or RAB27A siRNA. Fresh media was added 24 hr post-transfection; EVs were then isolated 48 hr later. Semi-quantitative RT-PCR gel images (top) show relative levels of a bEXOmiR reporter in both cellular (Cells) and EV fractions from control and RAB27A siRNA-treated cells from two experiments. Graph shows bEXOmiR level after RAB27A depletion, as quantified by qRT-PCR (n = two independent experiments, EXP#1 and EXP#2). Immunoblots at bottom show depletion of RAB27A; α-Tubulin was a loading control. Marker mobility is shown at left in basepairs (B and C) top panels) or kilodaltons (C bottom panels). (D) Reproducibility of 5000 bEXOmiR abundances measured by deep sequencing in isolated EVs from two replicate cultures (REP1 and REP2) of K562 cells previously infected with the 5,000-bEXOmiR test library (see text).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Detailed design of bEXOmiR reporters. The double stranded stem-region contains a 15 nt-random sequence (barcode; highlighted in blue) with perfect base complementarity. Three examples of barcode sequences, A, B and C are shown at right. The barcode sequence is then followed by a constant 7nt exosome-targeting motif (EXO motif, green) that contains two asymmetric bulges (one in each strand; a, bottom). The EXO motif is then followed by a loop sequence (orange); both were derived from endogenous hsa-miR-601. Finally, mini-miR-30 context sequences (Chang et al., 2013) were placed at the base of the stem region (red). N indicates any ribonucleotide base. (B) Left, two protocols (P1 and P2) for EV isolation used in this study. Biochemical characterization of whole cell lysate (Cells) and EV fractions derived from P1 and P2 is shown in immunoblot panels at right using antibodies for LAMP1, CD81, Calnexin, Golgin 97, α-Tubulin and GDI-β. Molecular mass marker mobility is shown at left in kilodaltons. (C), Schematic for Stem-loop RT-PCR protocol used to detect bEXOmiRs in extracted RNA samples. Panel at right, lane 1 (EVs) shows expression of bEXOmiR-C (panel A) detected by RT-PCR using RNA extracted from EVs released during 48 hr from HEK293T cells transfected with a bEXOmiR-expression vector. Reactions lacking either Stem-Loop primer (ΔFS-primer control, Lane 2) or reverse transcriptase (RT (-), Lane 3) are shown. Molecular marker mobility is shown at left in base pairs. (D) bEXOmiR-expressing HEK293T cells were grown for 48 hr prior to EV isolation and flotation using a discontinuous sucrose gradient; the presence of the bEXOmiR reporter was determined by RT-PCR at the indicated gradient interface (dotted red arrow), as shown in lane 1 (floated EVs) of the agarose gel at right. No bEXOmiR signal was observed in reactions lacking Stem-loop primer (lane 2). (E) RNase protection assay. Isolated EVs from bEXOmiR-expressing K562 cells were incubated with PBS (gray bar), PBS + RNase (black bar) or PBS + TX100 + RNase (red bar). t test: *p<0.05; error bars represent SEM; n = 3. (F) and (G), bEXOmiR-expressing K562 cells were treated with 10 nM Bafilomycin A1 (BA1) for 20 hr before EV isolation. Immunoblot analysis of control (DMSO) and BA1-treated (BA1) cells and EVs is shown in (F). RT-PCR detection of bEXOmiR reporter in cells and EV fractions from control and BA1-treated cells is shown in (G). (H) Schematic representation of the design and composition of the initial bEXOmiR test library.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Top, K562 cells visualized after centrifugation onto coverslips, immunostained for CD63; bottom, quantitation of total CD63-vesicle area. Each dot represents a single, CD63-positive structure in 18 or 20 parental or bEXOmiR expressing cells, respectively (n ~ 600 structures counted for each condition; mean ~32 structures per cell for the parental and ~34 for the bEXOmiR expressing cells. Red line indicates the median area for each population.
+
 ## Results and discussion
 
-## bEXOmiRs as reporters of EV release
+### bEXOmiRs as reporters of EV release
 
 To create a high-throughput system that monitors EV release by next generation sequencing in a pooled format, we first designed and engineered artificially barcoded, exosomal microRNAs (bEXOmiRs) that could be expressed, targeted and released from cells in EVs (Figure 1A; Figure 1—figure supplement 1A). bEXOmiRs were designed based upon miR-30 to include a 15 nucleotide (nt) barcode within the paired, stem sequences, flanked by EV-targeting (GGAGGAG ‘EXO motif’) and loop sequences derived from miR-601 that were reported by Sanchez Madrid and colleagues to enhance miRNA exosomal targeting (Villarroya-Beltri et al., 2013) (Figure 1—figure supplement 1A). Barcode sequences were designed to retain the base pairing characteristics of endogenous miRNA stem regions. After intracellular processing, mature bEXOmiRs would be expected to contain the 15 nt barcode followed by GGAGGAG (22 nt total).
 
@@ -36,7 +48,7 @@ Next, we designed an initial test library comprised of 5000 different bEXOmiRs. 
 
 The overall representation of bEXOmiRs in EV fractions suggested that intrinsic differences in barcode sequences to some extent, influenced exosomal targeting, as seen for other miRNAs (Villarroya-Beltri et al., 2013; Shurtleff et al., 2016; Treiber et al., 2017). Some bEXOmiRs were very efficiently detected in EVs while others were not (Figure 1D). This does not reflect differences in synthesis, because a comparison of EV and cellular bEXOmiR levels showed very poor correlation with probability of release (see Figure 3 C below). An initial search for sorting motifs within barcode sequences using the MEME algorithm (Bailey et al., 2015) was unsuccessful. Despite the limitation of some preferential targeting of individual barcodes, these data demonstrate that bEXOmiRs are suitable reporters for high-throughput monitoring of EV release in a pooled format. In addition, certain RNA sequences dominated the sequencing analyses, compromising sequencing depth. Such bEXOmiR outliers were excluded from subsequent screens, and we also size fractionated RNAs and introduced a hairpin oligonucleotide in our sequencing library preparation to remove a major contaminant that dominated sequencing runs. These measures improved the overall sequencing depth significantly enough to permit us to complete a genome-wide screen using suspension grown cell cultures.
 
-## A CRISPR/Cas9 screen using bEXOmiRs
+### A CRISPR/Cas9 screen using bEXOmiRs
 
 We next used bEXOmiRs in a pooled, genome-wide CRISPR/Cas9-mediated screening protocol to monitor EV release (Figure 2A). Briefly, unique CRISPR single guide (sg)RNAs linked by synthesis with distinct bEXOmiRs were co-expressed; we then determined how knockout of every gene influenced EV release by comparing bEXOmiR barcode abundance in EV fractions isolated from wild type compared with Cas9-edited cells (Figure 2A). Our hope was that the use of 10 CRISPR sgRNAs per gene, coupled with 10 different barcodes (one per sgRNA) would overcome any limitation of any individual bEXOmiR barcode EV packaging bias, relative efficiencies of different sgRNAs at disrupting gene function, or the real possibility that an sgRNA would decrease a particular bEXOmiR’s abundance. In this scenario, gene deletions that decrease extracellular bEXOmiR abundance are considered activators of EV production in WT conditions; in contrast, deletions that increase extracellular bEXOmiR abundance are considered as suppressors of this process.
 
@@ -56,21 +68,51 @@ Altogether, this analysis (nine duplicated sub-library screens) required >100 l
 
 Functional network analysis identified clusters of genes that both positively and negatively regulate specific cellular processes related to EV biogenesis and release, as well as miRNA processing and trafficking (Figure 4, Figure 4—figure supplement 1). For example, XPO5 and the RAN GTPase activating protein, RANGAP1 gene products regulate miRNA shuttling from the nucleus to the cytoplasm (Yi et al., 2003; Dattilo et al., 2017), and would be expected to be important for bEXOmiR release. Specific clusters identified include genes needed for regulation of miRNA processing and activity, actin dynamics, Wnt related signaling and trafficking, and ribosome biogenesis (Figure 4, Figure 4—figure supplement 1). GPCR-related proteins including histamine H3 receptor were also identified (Figure 2C, Figure 4, Figure 4—figure supplement 1). Histamine and neurotransmitter-mediated GPCR signaling have recently been shown to regulate EV release (Verweij et al., 2018; Glebov et al., 2015). Actin dynamics has also been implicated in the process by which EVs are released from cells (Li et al., 2012; Hoshino et al., 2013; Sinha et al., 2016), and of particular interest in this context was the requirement for ARHGEF18, a guanine nucleotide exchange factor for Rho GTPases (Zaritsky et al., 2017). ARHGEF18 regulates actin dynamics in multiple contexts (Terry et al., 2011; Terry et al., 2012; Artym et al., 2015) including invadopodia formation (Artym et al., 2015), a process recently proposed to promote EV release (Hoshino et al., 2013; Sinha et al., 2016).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig4-v3.jpg)
+
+**Figure 4.:** Only genes (nodes) that showed interactions in STRING analyses or that fell into a related functional category (gene clusters) are displayed. Interactions reported by STRING are represented by gray edges whose width is proportional to a combined significance score (see Materials and methods). Activators are shown in red, suppressors in blue. Node color intensity is proportional to the effect size found in the screen. Node size is proportional to significance score (-Log p-value) calculated in the screen analysis. In all panels, asterisks indicate that an isoform or close family member has been shown to play a role in the same category.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Activators and suppressors are shown in red and blue sphere nodes, respectively. Node color intensity is proportional to effect size observed; node area is proportional to significance score (-Log p-value) calculated in the screen analysis.
+
 A number of RNA binding proteins (RBPs) have recently been shown to target miRNAs into EVs, including YBX1, hnRNPA2B1 and SYNCRIP (Villarroya-Beltri et al., 2013; Shurtleff et al., 2016; Santangelo et al., 2016). Although several RNA-binding proteins were uncovered here (i.e. NHP2L1 or LONP1, Figure 4, Figure 4—figure supplement 1), as well as miRNA-binding proteins XPO5 and PCDC11 (Treiber et al., 2017) (Figure 4, Figure 4—figure supplement 1), we did not find any previously described EV-related RNA binding proteins. This may either be due to their roles in packaging miRNAs that are distinct from the artificial miRNAs to which they were linked in this screen, or to cell type-specific differences (Villarroya-Beltri et al., 2013; Shurtleff et al., 2016; Santangelo et al., 2016).
 
 As mentioned earlier, bEXOmiRs showed significant differences in their efficiency of being detected in EV fractions (Figure 1D, Figure 3A,B). To explore the impact of such heterogeneity on overall screen outcomes, we tested the ability of different bEXOmiRs to function when paired with the same individual sgRNAs used to target the 100 top hits identified in our initial MMM screen (Figure 2B, Figure 5—figure supplement 2A,B, Supplementary file 1). Although some differences were observed in terms of our ability to detect various players in screens run with different bEXOmiRs/gRNA pairs, we were nevertheless able to re-confirm the findings obtained in the initial screen. Unexpectedly, YKT6, which appeared as a suppressor in the initial screen (Figure 2B), was uncovered as a slight activator instead; this may be related to differences in the bEXOmiRs associated with this gene in the two separate analyses. Indeed, YKT6 appears to be required for EV-dependent Wnt release along with STX1A (Colombo et al., 2014; Gross et al., 2012), a close homologue of STX1B (Figure 2B). It is important to note that the phenotype observed relies on the efficiencies of both sgRNAs and their paired, bEXOmiRs: some guides work better than others, and the same applies for bEXOmiRs. This limitation highlights the importance of orthogonal hit-validation experiments. Usually 2–3 guide-bEXOmiR associations supported each hit, and in most cases more than 90% of bEXOmiRs were recovered upon EV fraction sequencing (Supplementary file 2).
 
-## Hit validation
+### Hit validation
 
 The importance of ARHGEF18 in EV biogenesis was confirmed using an orthogonal, Nanostring method to profile the presence of 74 endogenous miRNAs in EVs produced by polyclonal human K562 cell lines subjected to CRISPR knockout of either SMPD3 or ARHGEF18 genes (Figure 5A, Figure 5—figure supplement 1A,B). In both cases, upon knockout of these gene products, the abundance of most miRNAs decreased ~50% in EVs but not the corresponding cellular fractions. For the miRNAs that increased significantly upon hit knockout, about half of these were seen in both replicates (Figure 5A). qPCR analysis of two of these endogenous miRNAs confirmed miRNA export decreases in cells depleted of SMPD3, RHOV, ARHGEF18, and BAIAP3 (Figure 5—figure supplement 1A–D,J). In addition, orthogonal protein assays comparing protein abundance in cellular versus EV fractions confirmed roles for SMPD3, RHOV, ARHGEF18, BAIAP3, PPP1R1C, and TREM1 in EV formation (Figure 5, B and C, Figure 5—figure supplement 1A–F). Knockout of PPP1R14D and NKD2 suppressors of bEXOmiR release yielded somewhat more variable results between experiments (Figure 5, B and C, Figure 5—figure supplement 1G,H).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig5-v3.jpg)
+
+**Figure 5.:** (A), Quantitative Nanostring miRNA profiling of both cellular (Cells) and EV fractions was performed to compare endogenous miRNA signatures in SMPD3 CRISPR knockout (KO) or ARHGEF18 KO K562 cell lines versus control cells; blue and green violin plots, respectively. miRNA abundance is plotted as percent of miRNA abundance in control cells. Violin plots show overall distribution of common EV-associated miRNAs (circles) detected in two independent experiments. Three specific endogenous miRNAs, hsa-miR-19a-3p (black), hsa-miR-151a-3p (red) and hsa-miR-548b-3p (blue) are indicated. (B) and (C), Biochemical analysis of EV fractions in CRISPR knockout cell lines from selected hits derived from the initial MMM-focused (B) or from the rest of the genome-wide (C) screen. EV extracts were immunoblotted with anti-HSC70, anti-Flotillin or anti-CD81 antibodies; numbers at left indicate mobility of molecular weight markers in kD. Bars indicate standard deviation from two independent sets of two replicate experiments. (D) Fusion of pHluorin-CD63-positive structures at the surface of HeLa cells observed using TIRF microscopy of fluorescent siRNA-transfected cells. Each dot represents number of events per cell over 90 s. (E) and (F), Characterization of purified EVs by Nanoparticle Tracking Analysis (NTA). (E) Representative plot of EV size distribution. Black line and red-shaded areas indicate mean value and SEM of particle concentration at each diameter, respectively, determined after three measurements. (F) Yield comparison of EVs derived from control and CRISPR knockout (KO) cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Activators and suppressors are labeled in red and blue letters, respectively. Inset in (B), ARHGEF18 depletion monitored in Cas9-expressing K562 cells by immunoblot; anti-HA was used to detect HA-tagged Cas9 expressed in this cell line, and also as a loading control. (I), Immunoblot validation of RAB27 sgRNAs; sgRNA #1 was used for hit validation. Numbers next to gene names refer to sgRNA reference number (10 sgRNAs per gene) used in the screen (see Materials and methods). (J), qPCR analysis of two endogenous miRNAs from the Nanostring analysis, to quantify the impact of loss of the indicated hits. (K), ARHGEF18 depletion using a different sgRNA than that used in B, or an siRNA for the NTA and live cell analysis; (L), mRNA levels of siRNA depleted cells used for live cell imaging in Figure 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Top 100 hits from initial MMM screen (Figure 2B) were targeted with the same, previously-used sgRNAs but paired with different bEXOmiRs, as shown in (A). (B), Volcano plot showing results of the top 100 MMM hit-focused screen (two replicates). Selected activators and suppressors are labeled in red and blue, respectively.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Confocal images show HeLa cells stably expressing pH-CD63 (green), stained with anti-LBPA antibody (red), and nuclei labeled with DAPI (blue). Scale bar, 10 μm.
+
 Two different regulatory subunits of protein-phosphatase 1 (PP1), PPP1R1C and PPP1R14D, were detected as either activator or suppressor hits in our screen; both of these phenotypes were validated by immunoblot analysis of knockout cell lines (Figure 5C, Figure 5—figure supplement 1E,H). PP1 has been shown to play roles in yeast vacuolar fusion events as well as in exocytosis in mammalian cells (Conradt et al., 1994; Peters et al., 1999; Sim et al., 2003; Gao et al., 2012), consistent with a link to EV biogenesis regulation; moreover, the regulatory subunits are important for substrate selectivity and thus may reflect complementary phosphatase reactions.
 
-## New players in MVE exocytosis
+### New players in MVE exocytosis
 
 In an attempt to determine more precisely, the pathway(s) impacted by several of the key hits identified, we made use of a TIRF microscopy-based live cell assay to monitor MVE exocytosis specifically, in real time, visualized using a stably expressed, pHluorin-based CD63 reporter (Verweij et al., 2018) in HeLa cells transfected with fluorescent siRNAs (Video 1). In this assay. CD63 fluorescence is only detected upon delivery to the cell surface where the protein encounters a neutral pH. As expected, RAB27A-depleted cells showed ~50% reduction in MVE exocytosis, recorded by TIRF microscopy (Figure 5D). In agreement with our findings (Figure 5A–C), siRNA-depletion of RHOV, ARHGEF18, BAIAP3, or PPP1R1C also decreased MVE exocytosis (Figure 5D; Figure 5—figure supplement 1, K,L; Videos 1 and 2). Thus, these genes appear to regulate CD63-positive MVE exocytosis. Nanoparticle tracking analysis (NTA) of isolated EV fractions from corresponding CRISPR knock-out cell lines further confirmed a role for these genes in the release of EV particles (Figure 5E,F), the size of which peaked between 100–150 nm (Figure 5E). Our isolation method yielded a narrow distribution of particle sizes, and only the absolute number of particles changed upon knock out of the indicated genes (Figure 5F). Moreover, there was no visually apparent change in the overall abundance or size of CD63-positive compartments in the cells analyzed, except for cells depleted of BAIAP3, which showed an accumulation of CD63-containing structures in the vicinity of filopodia-like structures (Figure 5—figure supplement 3). Together, these data suggest strongly that a block in MVE exocytosis explains the decrease in EV numbers detected for cells depleted of RHOV, ARHGEF18, BAIAP3, and PPP1R1C.
 
-## Wnt signaling in EV biology
+![Video 1.](https://cdn.elifesciences.org/articles/41460/elife-41460-video1.mp4.jpg)
+
+**Video 1.:** Images were acquired at three frames per sec.
+
+![Video 2.](https://cdn.elifesciences.org/articles/41460/elife-41460-video2.mp4.jpg)
+
+### Wnt signaling in EV biology
 
 Wnts are growth stimulatory factors and critical developmental regulators that are also implicated in a variety of cancers (Nusse and Clevers, 2017). Wnts are palmitoylated in the secretory pathway and may themselves be carried to neighboring cell targets on the surface of EVs (Nusse and Clevers, 2017). Canonical Wnt signaling requires binding to the seven transmembrane spanning, Frizzled receptor and LRP co-receptors, to trigger a pathway that leads to the translocation of β-Catenin to the nucleus where it serves as a transcriptional co-activator (Nusse and Clevers, 2017). A number of Wnt-signaling modulators appeared among the hits as EV biogenesis regulators (Figure 4). These include LYPD6B, a relative of LYPD6 that interacts with Frizzled and LRP6 and enhances Wnt signaling (Özhan et al., 2013), as well as the ubiquitin ligase RNF146 that activates Wnt signaling by ubiquitinating Axins (Zhang et al., 2011). Knockout of these components decreased EV recovery, suggesting that Wnt signaling enhances EV release under the conditions of cell growth used in our screen. This conclusion is consistent with our discovery that loss of NKD2, a negative regulator of Wnt signaling, also enhanced bEXOmiR release in the screen (Figure 4; Figure 5B).
 
@@ -79,6 +121,14 @@ DeRobertis and colleagues showed previously that Wnt signaling involves intralum
 Wnt stimulation was shown previously to activate ARHGEF18 (Tsuji et al., 2010) and to up-regulate RHOV expression (Faure and Fort, 2011), both validated activator hits in this screen. Other genes identified here include two regulatory subunits of PP1, which showed opposite roles in EV release regulation. PP1 is a downstream modulator in both GPCR and Wnt signaling pathways. EV release is controlled by PKC-mediated SNAP23 phosphorylation, the closest homologue of SNAP25 (Arora et al., 2017), which mediates exocytosis upon PP1-mediated hydrolysis of PKC-phosphorylated residues (Gao et al., 2012).
 
 To explore further the role of canonical Wnt signaling in EV generation, the effect of Wnt3a addition on EV release was tested in K562 cells (Figure 6A). Paradoxically, addition of Wnt3a to overnight serum starved cells decreased the appearance of EV markers LAMP1, HSC70 and CD81, all of which were rescued upon addition of DKK1 protein that inhibits Wnt signaling by binding to the Wnt co-receptor, LRP6 (34). Consistent with these findings, the GSK3 inhibitor, CHIR99021 that activates the Wnt pathway led to a significant decrease in EV levels from K562 and HEK293T cells (Figure 6C, Figure 6—figure supplement 1A). Finally, LiCl was also employed as a less specific activator of Wnt signaling and also led to a decrease in EV generation (Figure 6—figure supplement 1B,C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig6-v3.jpg)
+
+**Figure 6.:** (A) Serum-starved K562 cells were treated with PBS (control) or Wnt3a (100 ng/ml) or Wnt3a + Dickkopf peptide (DKK1, 200 ng/ml) for 24 hr prior to EV isolation. Biochemical analysis of cellular (Cells) and EV fractions was performed by immunoblotting of extracts using antibodies against antigens shown. Detection of ß-Catenin was carried out using cytosolic fractions. (B) Quantitation of EV marker protein levels from EV immunoblots shown in (A). (C), Serum-starved K562 cells were treated with DMSO (control) or CHIR99021 (10 µM) for 24 hr prior to EV isolation. Biochemical analysis of EV fractions was performed as in (A). Representative immunoblots for a control experiment along with two replicate CHIR99021-treated samples are shown. (D) Quantitation of protein levels from EV immunoblots in (C). (E) Quantitation of LAMP1 protein from cellular fractions in (C). Molecular mass marker mobility is shown at the left of immunoblot panels in kilodaltons. t test: *p<0.05; **p<0.01; error bars represent SEM; n ≥ 3. (F) Flow cytometry determination of LAMP1 levels in anti-LAMP antibody-labeled control and CHIR99021-treated cells. Confocal images at right show lysosomes stained with anti-LAMP1 antibody (green) and nuclei labeled with DAPI (blue). Bar,10 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41460/elife-41460-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Serum-starved HEK293T cells were treated with DMSO (control) or CHIR99021 (10 µM) for 24 hr before EV isolation. Representative immunoblots for a control experiment along with two replicate CHIR99021-treated samples are shown. Plot below shows quantitation of the EV fraction immunoblots above. Molecular mass marker mobility is shown at left in kilodaltons. Error bars represent standard deviation; n = 2 independent experiments. (B) Determination of β-Catenin stabilization upon LiCl treatment. K562 cells were treated with 10 mM NaCl (control) or increasing LiCl concentrations as indicated for 24 hr. Immunoblot analysis of cytosolic fractions was then performed with anti-β-Catenin and anti-α-Tubulin antibodies. (C) Cellular and EV fractions from K562 cells treated with either 10 mM NaCl or LiCl for 20 hr were analyzed by immunoblotting as indicated. Plot below shows quantitation of EV fraction immunoblots in (C). Molecular mass marker mobility is shown at left in kilodaltons. t test: *p<0.05; **p<0.01; error bars represent SEM; n = 3. (D) Serum starved RPE cells analyzed by immunoblot of the indicated proteins in EV or cellular fractions after 20 hr CHIR99021 treatment. The asterisk indicates a nonspecific band that was used as loading control.
 
 Inhibition of GSK3 by CHIR99021 increased LAMP1 protein levels as determined by immunoblot (Figure 6E) and flow cytometry (Figure 6F), and was accompanied by an increase in lysosome numbers (Figure 6F); this would be expected, as Wnt-mediated GSK3 inhibition stabilizes the key endo-lysosomal transcriptional regulators, MITF and TFE transcription factors (Ploper et al., 2015; Ploper and De Robertis, 2015) that also regulate MVE exocytosis (Medina et al., 2011). Accordingly, mRNA levels of the endo-lysosomal genes, LAMP1 and MCOLN1 increased upon CHIR99021 treatment (Figure 7A). As expected, a robust, concomitant upregulation of AXIN2 was also observed.
 
@@ -94,11 +144,315 @@ Why did our screen indicate that Wnt is an activator rather than a suppressor of
 
 Although K562 cells have been reported to express both Wnts and Frizzled receptors (Sercan et al., 2010), we did not see a significant change in EV levels upon blocking Wnt secretion with the Wnt palmitoylation inhibitor (C59) in our parental cell cultures. This suggests that under the conditions of the screen (but not the conditions of the validation testing), knockout of various components reflected protein roles that are independent of Wnt signaling processes. Most importantly, when we tested EV release in wild type parental cells, we detected a very strong role for the GSK3 kinase in EV release regulation. Indeed, Bafilomycin A1 treatment, that activates EV release, actually inhibits Wnt signaling (Cruciat et al., 2010). It is very satisfying that the very EV pathway that may generate functional Wnt signals (Nusse and Clevers, 2017) is in fact directly regulated by Wnt signaling via an important and yet to be characterized feedback mechanism. Altogether, complex crosstalk between signaling pathways may influence EV secretion in ways that will be important to define in future work.
 
-## Conclusion
+### Conclusion
 
 Despite recent advances in EV research, how EV generation is regulated at the molecular level is poorly understood. We have used artificially barcoded miRNAs as surrogate reporters of EV release to enable genome-wide dissection of EV biology. We validated a number of previously reported players and discovered many new ones, including a gene cluster devoted to cortical actin dynamics and a role for ARHGEF18 in MVE exocytosis of EV-associated miRNAs. Wnt signaling- and trafficking-related genes were also prominently represented in the functional network analysis; we found that Wnt-mediated inactivation of GSK3 tightly regulates EV release by down-regulating RAB27 mRNA and protein levels. Collectively, EV biogenesis and release appear to be part of a complex feedback mechanism that regulates Wnt signaling in cells. Finally, our screen also uncovered genes involved in intracellular trafficking and processing of miRNAs. Indeed, bEXOmiR technology can also be leveraged to study miRNA biogenesis, processing and binding to RNA-binding proteins. This genome-wide screen has provided significant leads to aid in our understanding of the molecular basis of EV generation and regulation in cells and tissues.
 
 ## Materials and methods
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>RRID: CVCL_0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 Cas9+</td>
+      <td>PMID: 27018887</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 ARHGEF18 KO #5</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 ARHGEF18 KO #7</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 BAIAP3 KO #8</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 NKD2 KO #3</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 PPP1R1C KO #4</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 PPP1R14D KO #1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 RAB27A KO #1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 RHOV KO #10</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 SMPD3 KO #9</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 TREM1 KO #9</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: K562 Cas9+</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>https://mrcppureagents.dundee.ac.uk/</td>
+      <td>RRID: CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>RRID: CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-a-Tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5168</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-ARHGEF18</td>
+      <td>GeneTex</td>
+      <td>GTX102223; RRID: AB_10728594</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Rab27A</td>
+      <td>Synaptic Systems</td>
+      <td>168 013</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-CD81</td>
+      <td>BD Biosciences</td>
+      <td>555675</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-ß-Catenin</td>
+      <td>BD Biosciences</td>
+      <td>562505; RRID: AB_11154224</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Golgin 97</td>
+      <td>Thermo Scientific</td>
+      <td>A-21270</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Flotillin-1</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-79022; RRID: AB_11011337</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse polyclonal anti-Calnexin</td>
+      <td>Santa Cruz</td>
+      <td>sc-23954</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-HSC70</td>
+      <td>Santa Cruz</td>
+      <td>sc-7298</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-LAMP1</td>
+      <td>DSHB</td>
+      <td>G1/139/5; RRID: AB_10659721</td>
+      <td>(1:2)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-CD63</td>
+      <td>DSHB</td>
+      <td>H5C6; RRID: AB_528158</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GDIß</td>
+      <td>PMID: 8195183</td>
+      <td>home-made</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-LBPA</td>
+      <td>EMD Millipore</td>
+      <td>MABT837</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>ARHGEF18 (siRNA)</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Homo sapiens)</td>
+      <td>BAIAP3 (siRNA)</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Homo sapiens)</td>
+      <td>RHOV (siRNA)</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Homo sapiens)</td>
+      <td>PPP1R1C (siRNA)</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>RAB27A (siRNA)</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCB306</td>
+      <td>PMID: 28319085</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCB306-pHluorin-CD63</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor: pMCB306</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Mouse Wnt-3a Protein</td>
+      <td>R and D Sysytems</td>
+      <td>1324-WN-002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR-99021</td>
+      <td>Selleckchem</td>
+      <td>S1263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DharmaFECT 1</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin-A1</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td></td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>PMID: 17076895</td>
+      <td>RRID: SCR_007358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>RRID: AB_2307445</td>
+      <td>1:10000</td>
+    </tr>
+  </tbody>
+</table>
 
 Cell culture, antibodies and immunofluorescence--HEK293T cells were grown in Dulbecco's modified Eagle's media (DMEM) containing 10% fetal bovine serum, 2 mM L-glutamine, and penicillin (100 U/ml)/streptomycin (100 μg/ml). Wild type (WT) and Cas9-expressing (Morgens et al., 2017) K562 cells were grown in RPMI 1640 Medium supplemented with 10% fetal bovine serum, 2 mM L-glutamine, 1 mM sodium pyruvate and penicillin (100 U/ml)/streptomycin (100 μg/ml). All cell lines were cultured at 37°C with 5% CO2; cells were routinely tested for Mycoplasma using either a MycoAlert Mycoplasma Detection kit (Lonza LT07-318) or PCR. Their identity was assumed to be determined by ATCC. Extracellular vesicle-free media was prepared by overnight ultracentrifugation of RPMI supplemented with 20% FBS at 100,000 X g in a 45Ti rotor, as described (Théry et al., 2006).
 
@@ -146,6 +500,6 @@ Wnt signaling--For Wnt3a stimulation, K562 cells were starved overnight in serum
 
 Functional Network analysis--Top hits were collectively queried in STRING (https://string-db.org/) to search for gene interactions according to co-expression, experimental or curated database sources. The resulting STRING file reporting pair-wise gene interactions was imported into Cytoscape software (Shannon et al., 2003) to create a visually comprehensive functional interactome. Interactions were represented as edges whose thickness was proportional to a calculated combined score derived from STRING analysis. The final Cytoscape map was further manually curated to include additional screen hits (nodes) that despite not being reported to interact, could still be clustered in a common functional category revealed in the screen.
 
-## Data and materials availability
+### Data and materials availability
 
 All data is available in the main text or the supplementary files. All code and materials used in the analysis are available to any researcher for purposes of reproducing or extending the analysis.

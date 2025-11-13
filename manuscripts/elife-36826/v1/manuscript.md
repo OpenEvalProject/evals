@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.36826.001 In obesity, elevated insulin causes fatty liver by activating the gene encoding SREBP-1c, a transcription factor that enhances fatty acid synthesis. Two transcription factors, LXRα and C/EBPβ, are necessary but not sufficient for insulin induction of hepatic SREBP-1c mRNA. Here, we show that a third transcription factor, BHLHE40, is required. Immunoprecipitation revealed that BHLHE40 binds to C/EBPβ and LXRα in livers of rats that had fasted and then refed. Hepatic BHLHE40 mRNA rises rapidly when fasted rats are refed and when rat hepatocytes are incubated with insulin. Preventing this rise by gene knockout in mice or siRNAs in hepatocytes reduces the insulin-induced rise in SREBP-1c mRNA. Although BHLHE40 is necessary for insulin induction of SREBP-1c, it is not sufficient as demonstrated by failure of lentiviral BHLHE40 overexpression to increase hepatocyte SREBP-1c mRNA in the absence of insulin. Thus, an additional event is required for insulin to increase SREBP-1c mRNA.
+In obesity, elevated insulin causes fatty liver by activating the gene encoding SREBP-1c, a transcription factor that enhances fatty acid synthesis. Two transcription factors, LXRα and C/EBPβ, are necessary but not sufficient for insulin induction of hepatic SREBP-1c mRNA. Here, we show that a third transcription factor, BHLHE40, is required. Immunoprecipitation revealed that BHLHE40 binds to C/EBPβ and LXRα in livers of rats that had fasted and then refed. Hepatic BHLHE40 mRNA rises rapidly when fasted rats are refed and when rat hepatocytes are incubated with insulin. Preventing this rise by gene knockout in mice or siRNAs in hepatocytes reduces the insulin-induced rise in SREBP-1c mRNA. Although BHLHE40 is necessary for insulin induction of SREBP-1c, it is not sufficient as demonstrated by failure of lentiviral BHLHE40 overexpression to increase hepatocyte SREBP-1c mRNA in the absence of insulin. Thus, an additional event is required for insulin to increase SREBP-1c mRNA.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ Figure 2 shows an experiment in which we used real-time PCR to quantify mRNAs in
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/36826/elife-36826-fig2-v1.jpg)
 
-**Figure 2.:** A), SREBP-1c (B), LXRα (C), and C/EBPβ (D), in livers of rats subjected to fasting and refeeding.Male rats (age 2–3 months) were either fasted for 48 hr, or fasted for 48 hr and then refed with a high-carbohydrate diet for 6 hr. Total liver RNA from eight rats in each group was subjected to quantitative RT-PCR. Each black circle (fasted rats) or red triangle (refed rats) represents an individual animal. Each value in the refed group represents the amount of mRNA relative to the mean amount in the fasted group, which is arbitrarily defined as 1.0. Mean Ct values for BHLHE40, SREBP-1c, LXRα, and C/EBPβ in the fasted groups were 24.9, 23.9, 24.9, and 24.4, respectively. NS, not significant. p-Values calculated using Student’s t-test.
+**Figure 2.:** Male rats (age 2–3 months) were either fasted for 48 hr, or fasted for 48 hr and then refed with a high-carbohydrate diet for 6 hr. Total liver RNA from eight rats in each group was subjected to quantitative RT-PCR. Each black circle (fasted rats) or red triangle (refed rats) represents an individual animal. Each value in the refed group represents the amount of mRNA relative to the mean amount in the fasted group, which is arbitrarily defined as 1.0. Mean Ct values for BHLHE40, SREBP-1c, LXRα, and C/EBPβ in the fasted groups were 24.9, 23.9, 24.9, and 24.4, respectively. NS, not significant. p-Values calculated using Student’s t-test.
 
 To confirm the co-immunoprecipitation of BHLHE40 with LXRα and C/EBPβ, we prepared liver nuclear extracts from fasted and refed rats (Figure 3). The extracts were split into four equal portions. One portion was reserved as the input fraction, and the other three were incubated with agarose beads coated with anti-IgG, anti-LXRα or anti-C/EBPβ. Aliquots containing 30% of the input fraction and all of the proteins eluted from the beads were subjected to SDS-PAGE and immunoblotted with antibodies directed against LXRα, C/EBPβ, BHLHE40, SREBP-1c and CREB. SREBP-1c and CREB, like BHLHE40, are basic-helix-loop-helix transcription factors. They were included as controls for nonspecific interaction. In the extracts from refed rats, BHLHE40 was precipitated by anti-LXRα and anti-C/EBPβ (lanes 6 and 8), but not by the control anti-IgG (lanes 3 and 4). Neither SREBP-1c nor CREB was precipitated by anti-LXRα or anti-C/EBPβ (lanes 5–8). These data show that anti-LXRα and anti-C/EBPβ can precipitate BHLHE40 from refed rats, consistent with the formation of a LXRα-C/EBPβ-BHLHE40 complex.
 
@@ -59,7 +59,7 @@ We showed previously that the induction of SREBP-1c mRNA by insulin can be block
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/36826/elife-36826-fig5-v1.jpg)
 
-**Figure 5.:** A) and BHLHE40 (B) in livers of rats subjected to fasting and refeeding.Sixteen male rats (age 2–3 months) were fasted for 48 hr. Six hours prior to sacrifice, eight rats received an intraperitoneal injection of 20 mg/kg rapamycin, and the other eight received vehicle. Four of the animals in the treated and untreated groups continued to fast, and the other four rats were refed a high-carbohydrate diet as described in Materials and methods. After 6 hr, the rats were sacrificed, and livers were homogenized. Equal amounts of total RNA from the livers of the four rats in each group were pooled and subjected to quantitative RT-PCR. Each bar represents the amount of mRNA relative to that of the vehicle-treated fasted group, which was defined as 1.0. Ct values for BHLHE40 and SREBP-1c in the fasted and vehicle treated group were 24.0 and 23.7, respectively.
+**Figure 5.:** Sixteen male rats (age 2–3 months) were fasted for 48 hr. Six hours prior to sacrifice, eight rats received an intraperitoneal injection of 20 mg/kg rapamycin, and the other eight received vehicle. Four of the animals in the treated and untreated groups continued to fast, and the other four rats were refed a high-carbohydrate diet as described in Materials and methods. After 6 hr, the rats were sacrificed, and livers were homogenized. Equal amounts of total RNA from the livers of the four rats in each group were pooled and subjected to quantitative RT-PCR. Each bar represents the amount of mRNA relative to that of the vehicle-treated fasted group, which was defined as 1.0. Ct values for BHLHE40 and SREBP-1c in the fasted and vehicle treated group were 24.0 and 23.7, respectively.
 
 The finding that rapamycin inhibits insulin induction of BHLHE40 mRNA raised the possibility that rapamycin blocks insulin induction of SREBP-1c mRNA by blocking induction of BHLHE40. To test this hypothesis, we treated fresh rat hepatocytes with or without rapamycin, stimulated them with insulin and then measured the levels of mRNAs encoding BHLHE40 and SREBP-1c (Figure 6). In the absence of rapamycin, insulin induced the BHLHE40 mRNA, and this induction was partially blocked by rapamycin. Infection with Lenti-B40, a recombinant lentivirus encoding BHLHE40, raised the level of BHLHE40 mRNA in the absence of insulin and prevented the rapamycin-mediated reduction of BHLHE40 mRNA in the presence of insulin (Figure 6A). As shown in Figure 6B, insulin induction of SREBP-1c mRNA was inhibited by rapamycin, and this inhibition persisted even when BHLHE40 mRNA was restored with Lenti-B40. These results indicate that mTORC1 plays two independent roles in the insulin-mediated induction of SREBP-1c mRNA, one pertaining to BHLHE40 and the other directly affecting SREBP-1c.
 
@@ -73,7 +73,7 @@ If the insulin-mediated induction of BHLHE40 is a prerequisite for the induction
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/36826/elife-36826-fig7-v1.jpg)
 
-**Figure 7.:** A–C) and in primary rat hepatocytes treated with insulin (D–F).(A–C) Male rats (age, 2–3 months) were fasted for 48 hr and then refed with a high-carbohydrate diet for the indicated time, after which total RNA from the liver was subjected to quantitative RT-PCR. Each point in (A) and (B) represents the mRNA level from a single animal relative to the mean value from three fasted rats (i.e. zero-time values). Zero-time Ct values for BHLHE40 and SREBP-1c were 23.5 and 25.7, respectively. Values in (C) represent the mean ± SEM of the values from (A) and (B) plotted as the percentages of the 6 hr value, which is defined as 100%. (D–F) Hepatocytes from nonfasted male rats (age, 2–3 months) on a chow diet were prepared and plated on day 0. On day 1, the cells received either no insulin or 100 nM insulin for the indicated time, after which the cells were harvested for measurement of total RNAs by quantitative RT-PCR. Each value in (D) and (E) (6 hr time course) represents the amount of mRNA from a single dish relative to that of the mean value from the three dishes at zero-time, which is defined as 1.0. Mean Ct values (zero-time) for BHLHE40 and SREBP-1c in the absence of insulin were 23.6 and 26.4, respectively. The values in (F) (1 hr time course) represent the mean ±SEM of the values from three dishes. Mean Ct values (zero-time) for BHLHE40, SREBP-1c, and PEPCK in the absence of insulin were 23.6, 26.3, and 20.0, respectively.
+**Figure 7.:** (A–C) Male rats (age, 2–3 months) were fasted for 48 hr and then refed with a high-carbohydrate diet for the indicated time, after which total RNA from the liver was subjected to quantitative RT-PCR. Each point in (A) and (B) represents the mRNA level from a single animal relative to the mean value from three fasted rats (i.e. zero-time values). Zero-time Ct values for BHLHE40 and SREBP-1c were 23.5 and 25.7, respectively. Values in (C) represent the mean ± SEM of the values from (A) and (B) plotted as the percentages of the 6 hr value, which is defined as 100%. (D–F) Hepatocytes from nonfasted male rats (age, 2–3 months) on a chow diet were prepared and plated on day 0. On day 1, the cells received either no insulin or 100 nM insulin for the indicated time, after which the cells were harvested for measurement of total RNAs by quantitative RT-PCR. Each value in (D) and (E) (6 hr time course) represents the amount of mRNA from a single dish relative to that of the mean value from the three dishes at zero-time, which is defined as 1.0. Mean Ct values (zero-time) for BHLHE40 and SREBP-1c in the absence of insulin were 23.6 and 26.4, respectively. The values in (F) (1 hr time course) represent the mean ±SEM of the values from three dishes. Mean Ct values (zero-time) for BHLHE40, SREBP-1c, and PEPCK in the absence of insulin were 23.6, 26.3, and 20.0, respectively.
 
 To confirm that BHLHE40 is required for the insulin-mediated induction of SREBP-1c mRNA, we treated primary rat hepatocytes with two different siRNAs targeting the BHLHE40 mRNA and then added insulin (Figure 8). Both siRNAs (designated siB40A and siB40B) reduced the basal and insulin-stimulated level of BHLHE40 mRNA by about 60% (Figure 8A). The two siRNAs also reduced the basal level of SREBP-1c mRNA and diminished the response to insulin (Figure 8B). It should be noted that the fivefold stimulation of SREBP-1c mRNA in this transfection experiment is smaller than the 20-fold stimulation in the experiment of Figure 7E, which did not include transfection. We attribute this difference to a nonspecific effect of transfection in the primary hepatocytes. Neither of the two siRNAs decreased the expression of LXRα (Figure 8C) nor C/EBPβ (Figure 8D).
 
@@ -87,13 +87,13 @@ Figure 9A shows an immunoblot of nuclear extracts from the livers of wild type (
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/36826/elife-36826-fig9-v1.jpg)
 
-**Figure 9.:** Bhlhe40 gene in mice decreases SREBP-1c mRNA in livers of refed animals.(A) Immunoblot analysis of liver nuclear extracts from wild type (WT) and Bhlhe40 (KO) mice. Nuclear extracts (20 µg protein) were subjected to 4–12% SDS-PAGE, followed by immunoblot analysis with 1.5 µg/ml of rabbit polyclonal anti-BHLHE40 (directed against amino acids 1–60 of rat BHLHE40 protein). LSD1 (lysine-specific demethylase 1) served as a loading control and was immunoblotted with a 1:1000 dilution of rabbit monoclonal anti-LSD1. Proteins were detected with the LI-COR Odyssey Infrared Imaging System using a 1:5000 dilution of anti-rabbit IgG conjugated to horseradish peroxidase. (−/−B and C) WT and Bhlhe40 KO mice were fasted overnight and then refed a high-carbohydrate diet for 4 hr, after which total liver RNA was prepared and subjected to quantitative RT-PCR. Each circle (WT) or triangle (KO) represents an individual mouse. The mean value for WT mice is defined as 1.0. (B) mRNAs in livers of male WT and KO mice (age 6 wk; 5 mice/group). Mean Ct values for BHLHE40, SREBP-1c, LXRα and C/EBPβ in WT mice were 21.2, 22.2, 21.7, and 22.1, respectively. (C) mRNAs in livers of female WT and KO mice (age 7 wk; 7 mice/group). Mean Ct values for BHLHE40, SREBP-1c, LXRα and C/EBPβ in WT mice were 21.5, 21.0, 22.3, and 22.5, respectively. p-Values calculated using Student t-test.
+**Figure 9.:** (A) Immunoblot analysis of liver nuclear extracts from wild type (WT) and Bhlhe40−/− (KO) mice. Nuclear extracts (20 µg protein) were subjected to 4–12% SDS-PAGE, followed by immunoblot analysis with 1.5 µg/ml of rabbit polyclonal anti-BHLHE40 (directed against amino acids 1–60 of rat BHLHE40 protein). LSD1 (lysine-specific demethylase 1) served as a loading control and was immunoblotted with a 1:1000 dilution of rabbit monoclonal anti-LSD1. Proteins were detected with the LI-COR Odyssey Infrared Imaging System using a 1:5000 dilution of anti-rabbit IgG conjugated to horseradish peroxidase. (B and C) WT and Bhlhe40 KO mice were fasted overnight and then refed a high-carbohydrate diet for 4 hr, after which total liver RNA was prepared and subjected to quantitative RT-PCR. Each circle (WT) or triangle (KO) represents an individual mouse. The mean value for WT mice is defined as 1.0. (B) mRNAs in livers of male WT and KO mice (age 6 wk; 5 mice/group). Mean Ct values for BHLHE40, SREBP-1c, LXRα and C/EBPβ in WT mice were 21.2, 22.2, 21.7, and 22.1, respectively. (C) mRNAs in livers of female WT and KO mice (age 7 wk; 7 mice/group). Mean Ct values for BHLHE40, SREBP-1c, LXRα and C/EBPβ in WT mice were 21.5, 21.0, 22.3, and 22.5, respectively. p-Values calculated using Student t-test.
 
 To confirm that the reduction in SREBP-1c mRNA in the knockout mice was caused by the loss of BHLHE40, we injected the mice with a recombinant adeno-associated virus (AAV) encoding BHLHE40 or a nonspecific control protein. To determine whether phosphorylation at serine 383 is essential, we also injected an AAV encoding a mutant form of BHLHE40 in which serine 383 was replaced with alanine. Three weeks after virus injection, the mice were fasted and refed. In the refed knockout mice, BHLHE40 mRNA was undetectable (Figure 10B). Both BHLHE40 viruses restored BHLHE40 mRNA to levels that were approximately twofold above the levels seen in WT mice which are normalized to 1.0 in Figure 10A. In WT mice, the injection of virus encoding WT or BHLHE40 (S383A) raised the level of SREBP-1c mRNA by about 1.5-fold (Figure 10C). In the knockout mice, the level of SREBP-1c mRNA was low (Figure 10D). The level was increased by eightfold when the mice received virus encoding either WT or BHLHE40(S383A) (Figure 10D). The Bhlhe40 knockout had no effect on levels of mRNAs encoding LXRα (Figure 10F) or C/EBPβ (Figure 10H), and the viruses encoding BHLHE40 did not alter these levels significantly. A small decrease in LXRα expression (28%) was seen in WT mice receiving AAV-BHLHE40 (Figure 10E), the functional significance of which is not known.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/36826/elife-36826-fig10-v1.jpg)
 
-**Figure 10.:** Bhlhe40 knockout mice.WT and KO mice (age 6 wk; 4 mice/group) received tail vein injections of AAV encoding a control mRNA (AAV-EGFP), wild-type BHLHE40, or mutant BHLHE40(S383A). Three weeks after injection, mice were fasted overnight and then refed with a high-carbohydrate diet for 4 hr, after which total liver RNA was prepared and subjected to quantitative RT-PCR. Each circle, triangle, or square represents an individual mouse. The mRNA expression is plotted as the amount relative to livers of WT mice injected with the control AAV-EGFP, which is assigned a value of 1.0. Mean Ct values for BHLHE40, SREBP-1c, LXRα and C/EBPβ in the livers of WT mice receiving AAV-EGFP were 22.3, 25.4, 22.4, and 22.7, respectively. *p<0.01; **p<0.001; NS, not significant. p-Values calculated using Student t-test.
+**Figure 10.:** WT and KO mice (age 6 wk; 4 mice/group) received tail vein injections of AAV encoding a control mRNA (AAV-EGFP), wild-type BHLHE40, or mutant BHLHE40(S383A). Three weeks after injection, mice were fasted overnight and then refed with a high-carbohydrate diet for 4 hr, after which total liver RNA was prepared and subjected to quantitative RT-PCR. Each circle, triangle, or square represents an individual mouse. The mRNA expression is plotted as the amount relative to livers of WT mice injected with the control AAV-EGFP, which is assigned a value of 1.0. Mean Ct values for BHLHE40, SREBP-1c, LXRα and C/EBPβ in the livers of WT mice receiving AAV-EGFP were 22.3, 25.4, 22.4, and 22.7, respectively. *p<0.01; **p<0.001; NS, not significant. p-Values calculated using Student t-test.
 
 ## Discussion
 
@@ -109,74 +109,343 @@ It was attractive to consider that insulin also increases phosphorylation of BHL
 
 ## Materials and methods
 
-## Reagents
+### Reagents
 
-DescriptionSource or referenceIdentifier3,3′,5-Triiodo-L-thyronineSigma-Aldrich, St. Louis, MOT2877Bovine insulinSigma-AldrichI6634Bio-Gen PRO 200 HomogenizerPRO Scientific, Oxford, CT01–01200Calpain inhibitor I (ALLN)AG Scientific, San Diego, CACAS110044-82-1Chromatin Immunoprecipitation (ChIP) Assay KitEMD Millipore Corp, Billerica, MA17–295Collagen I-coated dishesBD Sciences, Franklin Lakes, NJ356400DexamethasoneSigma-AldrichD4902DMEMSigma-AldrichD6046Freund's Adjuvant, IncompleteSigma-AldrichF5506Halt Phosphatase Inhibitor CocktailThermo Fisher Scientific, Waltham, MA78426High-Carbohydrate/Fat-free DietMP Biomedicals, Santa Ana, CA960238Lentiviurs Encoding Rat BHLHE40Origene, Rockville, MDBR206868LVLipofectamine 2000Invitrogen, Carlsbad, CA11668–027Medium 199Invitrogen11150–059nProtein A Sepharose 4 Fast Flow Affinity MediaGE Healthcare, Chicago, IL17-5280-04PBSSigma-AldrichD8537Phenylmethysulfonyl fluoride (PMSF)Sigma-AldrichP7626Pierce Co-Immuno- precipitation KitThermo Fisher Scientific26149Protease Inhibitor cOmplete TabletsRoche Holding AG, Basel, CH5892791001Proteinase KThermo Fisher ScientificAM2546ProteoSilver Stain KitSigma-AldrichPROTSIL1RapamycinSigma-AldrichR0395Teklad Global 18% Protein Rodent Diet (chow diet for mice)Harlan Laboratories, Indianapolis, IN2018Teklad Global 16% Protein Rodent Diet (chow diet for rats)Harlan Laboratories2016
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Source or reference</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3,3′,5-Triiodo-L-thyronine</td>
+      <td>Sigma-Aldrich, St. Louis, MO</td>
+      <td>T2877</td>
+    </tr>
+    <tr>
+      <td>Bovine insulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>I6634</td>
+    </tr>
+    <tr>
+      <td>Bio-Gen PRO 200 Homogenizer</td>
+      <td>PRO Scientific, Oxford, CT</td>
+      <td>01–01200</td>
+    </tr>
+    <tr>
+      <td>Calpain inhibitor I (ALLN)</td>
+      <td>AG Scientific, San Diego, CA</td>
+      <td>CAS110044-82-1</td>
+    </tr>
+    <tr>
+      <td>Chromatin Immunoprecipitation (ChIP) Assay Kit</td>
+      <td>EMD Millipore Corp, Billerica, MA</td>
+      <td>17–295</td>
+    </tr>
+    <tr>
+      <td>Collagen I-coated dishes</td>
+      <td>BD Sciences, Franklin Lakes, NJ</td>
+      <td>356400</td>
+    </tr>
+    <tr>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>D4902</td>
+    </tr>
+    <tr>
+      <td>DMEM</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6046</td>
+    </tr>
+    <tr>
+      <td>Freund's Adjuvant, Incomplete</td>
+      <td>Sigma-Aldrich</td>
+      <td>F5506</td>
+    </tr>
+    <tr>
+      <td>Halt Phosphatase Inhibitor Cocktail</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>78426</td>
+    </tr>
+    <tr>
+      <td>High-Carbohydrate/Fat-free Diet</td>
+      <td>MP Biomedicals, Santa Ana, CA</td>
+      <td>960238</td>
+    </tr>
+    <tr>
+      <td>Lentiviurs Encoding Rat BHLHE40</td>
+      <td>Origene, Rockville, MD</td>
+      <td>BR206868LV</td>
+    </tr>
+    <tr>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen, Carlsbad, CA</td>
+      <td>11668–027</td>
+    </tr>
+    <tr>
+      <td>Medium 199</td>
+      <td>Invitrogen</td>
+      <td>11150–059</td>
+    </tr>
+    <tr>
+      <td>nProtein A Sepharose 4 Fast Flow Affinity Media</td>
+      <td>GE Healthcare, Chicago, IL</td>
+      <td>17-5280-04</td>
+    </tr>
+    <tr>
+      <td>PBS</td>
+      <td>Sigma-Aldrich</td>
+      <td>D8537</td>
+    </tr>
+    <tr>
+      <td>Phenylmethysulfonyl fluoride (PMSF)</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7626</td>
+    </tr>
+    <tr>
+      <td>Pierce Co-Immuno- precipitation Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>26149</td>
+    </tr>
+    <tr>
+      <td>Protease Inhibitor cOmplete Tablets</td>
+      <td>Roche Holding AG, Basel, CH</td>
+      <td>5892791001</td>
+    </tr>
+    <tr>
+      <td>Proteinase K</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM2546</td>
+    </tr>
+    <tr>
+      <td>ProteoSilver Stain Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>PROTSIL1</td>
+    </tr>
+    <tr>
+      <td>Rapamycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>R0395</td>
+    </tr>
+    <tr>
+      <td>Teklad Global 18% Protein Rodent Diet (chow diet for mice)</td>
+      <td>Harlan Laboratories, Indianapolis, IN</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td>Teklad Global 16% Protein Rodent Diet (chow diet for rats)</td>
+      <td>Harlan Laboratories</td>
+      <td>2016</td>
+    </tr>
+  </tbody>
+</table>
 
-## Antibodies
+### Antibodies
 
-DescriptionSource or referenceIdentifierMonoclonal mouse anti-mouse C/EBPβThermo Fisher ScientificMA1-827Monoclonal mouse anti-IgG1 isotype controlCell Signaling Technology, Danvers, MA5415Monoclonal mouse anti-rat LXRαTian et al. (2016)Clone 2B7Monoclonal rabbit anti-human CREBCell Signaling Technology9197Monoclonal rabbit anti-mouse SREBP1Rong et al., 2017Clone 20B12Monoclonal rabbit anti-human LSD1 (lysine-specific demethylase 1)Cell Signaling Technology2184Polyclonal rabbit anti-mouse C/EBPβCell Signaling Technology3087Polyclonal rabbit anti-rat BHLHE40This manuscriptIgG-665DPolyclonal rabbit anti-rat LXRαTian et al. (2016)IgG-651BRabbit IgG HRP Linked Whole AbGE HealthcareNA934
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Source or reference</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monoclonal mouse anti-mouse C/EBPβ</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>MA1-827</td>
+    </tr>
+    <tr>
+      <td>Monoclonal mouse anti-IgG1 isotype control</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>5415</td>
+    </tr>
+    <tr>
+      <td>Monoclonal mouse anti-rat LXRα</td>
+      <td>Tian et al. (2016)</td>
+      <td>Clone 2B7</td>
+    </tr>
+    <tr>
+      <td>Monoclonal rabbit anti-human CREB</td>
+      <td>Cell Signaling Technology</td>
+      <td>9197</td>
+    </tr>
+    <tr>
+      <td>Monoclonal rabbit anti-mouse SREBP1</td>
+      <td>Rong et al., 2017</td>
+      <td>Clone 20B12</td>
+    </tr>
+    <tr>
+      <td>Monoclonal rabbit anti-human LSD1 (lysine-specific demethylase 1)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2184</td>
+    </tr>
+    <tr>
+      <td>Polyclonal rabbit anti-mouse C/EBPβ</td>
+      <td>Cell Signaling Technology</td>
+      <td>3087</td>
+    </tr>
+    <tr>
+      <td>Polyclonal rabbit anti-rat BHLHE40</td>
+      <td>This manuscript</td>
+      <td>IgG-665D</td>
+    </tr>
+    <tr>
+      <td>Polyclonal rabbit anti-rat LXRα</td>
+      <td>Tian et al. (2016)</td>
+      <td>IgG-651B</td>
+    </tr>
+    <tr>
+      <td>Rabbit IgG HRP Linked Whole Ab</td>
+      <td>GE Healthcare</td>
+      <td>NA934</td>
+    </tr>
+  </tbody>
+</table>
 
-## Animals
+### Animals
 
-DescriptionSource of referenceIdentifierSprague-Dawley RatsHarlan Laboratories, Indianapolis, INOrder no. 002NewZealand White RabbitsCharles River Laboratories, Wilmington, MAStrain code: 052 (CR)
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Source of reference</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sprague-Dawley Rats</td>
+      <td>Harlan Laboratories, Indianapolis, IN</td>
+      <td>Order no. 002</td>
+    </tr>
+    <tr>
+      <td>NewZealand White Rabbits</td>
+      <td>Charles River Laboratories, Wilmington, MA</td>
+      <td>Strain code: 052 (CR)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Mouse genetic nomenclature
+### Mouse genetic nomenclature
 
 Throughout the manuscript, we have used the more familiar gene names instead of the less familiar mouse designations. For example Srebp-1c stands for the Srebf1; LXRα stands for Nr1h3; C/EBPβ stands for Cebpb. For the mRNA designations, we have used the names of the protein encoded by their respective mRNAs.
 
-## Rapamycin and insulin solutions
+### Rapamycin and insulin solutions
 
 For cell culture studies, rapamycin was prepared in dimethyl sulfoxide (DMSO) and stored in multiple aliquots at −20°C. For whole animal studies, a stock solution of rapamycin (50 mg/ml) was prepared in 100% ethanol and stored in aliquots at −20°C. Stock solutions of 0.1 mM insulin were prepared in distilled water adjusted to pH 4.5 with glacial acetic acid, stored in aliquots at 4°C, and used within 3 months.
 
-## Generation of BHLHE40 polyclonal antibody
+### Generation of BHLHE40 polyclonal antibody
 
 Rabbit polyclonal anti-BHLHE40 was generated by immunizing a New Zealand White rabbit with a bacterially produced GST-fusion protein containing amino acids 1–60 of rat BHLHE40. An initial subcutaneous injection of 500 µg followed by eight boosts of 250 µg were given biweekly in Incomplete Freund’s Adjuvant. A final intraperitoneal injection of 250 µg in saline was given as the final boost. The IgG fraction (designated IgG-665D) of the immune serum was prepared by affinity chromatography on a Protein A Sepharose 4 Fast Flow column (GE Healthcare).
 
-## Animals
+### Animals
 
 Animal work described in this manuscript has been approved and conducted under the oversight of the UT Southwestern Institutional Animal Care and Use Committee. All mice were housed in colony cages with a 12 hr light/12 hr dark cycle (dark cycle from 9 pm to 9 am). Mice were fed a chow diet (Teklad Global 18% Protein Rodent Diet 2018). For fasting/refeeding experiments, mice were fasted overnight and then refed at 9 am for the indicated time with a high-carbohydrate/fat-free diet.
 
 Male Sprague-Dawley rats were housed in animal colony cages and maintained on a reverse 12 hr light/12 hr dark cycle (dark cycle from 10 am to 10 pm) and fed a chow diet (Teklad Global 16% Protein Rodent Diet 2016). For fasting/refeeding experiments, the fasted group was fasted for 48 hr, and the refed group was fasted for 48 hr and then refed with a high carbohydrate/fat-free diet (see above) for 6 hr prior to the study. The starting times for the experiments were staggered so that all rats were sacrificed at the same time, which was at 4 pm. For rapamycin-injection experiments, 6 hr prior to sacrifice rats were injected intraperitoneally with 1.2–1.4 ml of either vehicle [14% (v/v) ethanol, 5% (v/v) Tween 80, and 5% (v/v) polyethylene glycol 400] or vehicle containing rapamycin at a dose of 20 mg/kg.
 
-## Transcription factor co-immunoprecipitation (Co-IP)
+### Transcription factor co-immunoprecipitation (Co-IP)
 
 Isolated livers from fasted and refed rats were homogenized at 4°C in buffer A [10 mM Hepes, pH 7.6, 25 mM KC1, 1 mM sodium EDTA, 2 M sucrose, 10% (v/v) glycerol, 0.15 mM spermine, 2 mM spermidine, 1 mM PMSF, 1 mM DTT, 0.5 mM Pefabloc, 10 µg/ml leupeptin, 5 µg/ml pepstatin, 25 µg/ml ALLN, and 10 µg/ml aprotinin at a ratio of 1 ml of buffer per g of tissue]. Homogenization was carried out with a saw-toothed generator connected to a Bio-Gen PRO200 Homogenizer (PRO Scientific, Oxford, CT; catalog no. 01–01200). The homogenate was laid over a sucrose cushion at the bottom of an ultracentrifuge tube and spun at 1 × 105 g for 1 hr at 4°C. The resulting nuclear pellet was resuspended in buffer B [10 mM Hepes pH 7.6, 100 mM KC1, 2 mM MgCl2, 1 mM sodium EDTA, 1 mM DTT, 10% glycerol, 1 mM PMSF, 0.5 mM Pefabloc, 10 µg/ml leupeptin, 5 µg/ml pepstatin, 25 µg/ml ALLN, 10 µg/ml aprotinin, one tablet cOmplete per 10 ml, and 1% (v/v) Halt Phosphatase Inhibitor Cocktail]. Ammonium sulfate was added to the resuspended lysate to a final concentration of 0.4 M, after which the mixture was incubated for 45 min on a rotator at 4°C. Each mixture was spun at 3 × 105 g for 45 min at 4°C, after which the supernatant was transferred to a fresh tube for co-immunoprecipitation experiments.
 
 The co-IP experiments were performed with 5 μg/ml of monoclonal mouse IgG, LXRα antibody IgG-2B7, or polyclonal C/EBPβ antibody using a Pierce co-IP kit from Thermo Scientific. The IgG, LXRα, and C/EBPβ antibody-conjugated resins were prepared according to the manufacturer’s instructions. Pooled liver nuclear extracts from four rats (~1 mg protein in 0.1 ml of nuclear extract in buffer B) were then precleared with control agarose resin, added to 50 µl of the antibody-immobilized resin, and incubated in buffer B with gentle end-over-end mixing for 14–16 hr at 4°C. The precipitated pellets were washed with 0.4 ml of buffer B six times (10 min for each wash), eluted with 20 µl of SDS-PAGE sample buffer, and then subjected to SDS-PAGE followed by either immunoblotting or mass spectrometry analysis.
 
-## LC-MS/MS Analysis
+### LC-MS/MS Analysis
 
 Proteins co-immunoprecipitated by both anti-LXRα and anti-C/EBPβ were subjected to SDS-PAGE on 10% gels and stained with ProteoSilver Stain Kit. Each lane was cut into 5–7 slices of roughly equal sizes. The gel pieces were destained and then reduced in 20 mM dithiothreitol at 56°C for 30 min followed by alkylation in 55 mM iodoacetamide in the dark for 1 hr. Protein in the gels were digested in situ with sequence-grade trypsin (Promega, Madison, WI; catalog no. V5111) in 50 mM ammonium bicarbonate at 37°C overnight. Peptides were extracted sequentially with 5% (v/v) formic acid (FA)/50% (v/v) acetonitrile (ACN) and 0.1% FA/75% ACN, vacuum dried, and then resuspended in 0.1% FA.
 
 LC-MS/MS analysis was performed using a Dionex Ultimate 3000 nanoLC system (ThermoFisher Scientific) coupled to a Quadrupole-Orbitrap Hybrid mass spectrometer (Q-Exactive, ThermoFisher Scientific) equipped with a nano-electrospray ion source. Ionization source parameters were set to: positive mode; capillary temperature, 250°C; spray voltage, 2.4 kV. Extracted peptides were fractionated on a homemade analytical column (75 µm ID, 120 mm length) packed with C18 resin (100 Å, 3 µm, MICHROM Bioresources) using a 78 min gradient: 2–30% B in 68 min, 30–35% B in 4 min, 35–40% B in 2 min, 40–60% B in 3 min, and 60–80% B in 1 min (A = 0.1% FA; B = 100% ACN in 0.1% FA). Full scan mass spectra were acquired from m/z 300–1500 with a resolution of 70,000 at m/z = 200 in the Orbitrap. MS/MS spectra (resolution: 17,500 at m/z = 200) were acquired in a data-dependent mode whereby the top 15 most abundant parent ions were subjected to further fragmentation by higher energy collision dissociation (HCD). For protein identification and phosphorylated peptide detection, the MS/MS spectra were searched using an in-house Mascot server (Matrix Science) against the rat protein database. Cysteine carbamidomethylation was set as a fixed modification, and variable modifications include serine or threonine phosphorylation. To compare the abundance of proteins identified in the fasted and refed groups, we performed label-free quantification using the MaxQuant package, version 1.3.0.5 (Cox and Mann, 2008), which incorporates the Andromeda search engine (Cox et al., 2011).
 
-## ChIP assay
+### ChIP assay
 
 These assays were performed as previously described (Tian et al., 2016) using a Chromatin Immunoprecipitation (ChIP) Assay Kit containing a protein A resin (EMD Millipore Corp, catalog no. 17–295). Portions of male rat liver were sliced into ∼0.5-mm-thick fragments. Each slice (70 mg) was incubated with 1% (wt/vol) formaldehyde at room temperature for 10 min to cross-link proteins to DNA. The tissue was sonicated six times for 10 s at 4°C to disrupt the cells and shear the DNA. After centrifugation, the soluble chromatin solution was precleared by precipitation with protein A resin. The supernatant was incubated with the indicated antibody (Figure 4) at 4°C for 14–16 hr, after which the mixture was incubated with the protein A resin for 2 hr at 4°C. The precipitated protein-DNA complexes were washed and eluted with the buffers provided by the manufacturer. The eluted DNA was treated with proteinase K at 45°C for 30 min, followed by incubation with 0.2 M NaCl at 65°C for 4 hr, extraction with phenol-chloroform-isoamylalcohol, and ethanol precipitation. The purified DNA was subjected to PCR using the indicated primer pairs (Figure 4), followed by electrophoresis on a 3% agarose gel.
 
-## Generation of Bhlhe40 knockout mice
+### Generation of Bhlhe40 knockout mice
 
 The Bhlhe40 knockout mouse strain in the C57BL/6N background was created from an ES cell clone (EPD0208_6_G02, Bhlhe40tm1a(KOMP)Wtsi) obtained from KOMP Repository (www.komp.org) and generated by the Wellcome Trust Sanger Institute as a part of a ‘gene trap’ project designed to inactivate mouse genes (Skarnes et al., 2011). The ES clone was injected into Albino C57BL/6N blastocysts by the Transgenic Core Facility at UT Southwestern Medical Center. The resulting F0 chimeric male founders were then bred with wild-type C57BL/6N female mice to obtain F1 heterozygotes. All experiments were carried out with littermate wild-type and Bhlhe40-/- mice obtained from intercrosses of Bhlhe40+/- heterozygotes. Mice were genotyped by PCR using tail genomic DNA with two sets of primers. The first set, 5′-cggatcaaagcttctggtttggagg-3’ and 5′-cctgaccttaacttaggggactccg-3′, amplified a 509 bp fragment only from the wild-type Bhlhe40 allele. The second set, 5′-gagatggcgcaacgcaattaatg-3’ and 5′-tgcaatttgccaagatacctggtgg-3′, amplified a 396 bp fragment only from the disrupted Bhlhe40 allele.
 
-## Primary rat hepatocytes
+### Primary rat hepatocytes
 
 Nonfasted rats were anesthetized with isoflurane at the end of the light cycle, and primary hepatocytes were isolated by the collagenase method with modifications as described by Shimomura et al. (1999). On day 0, the isolated hepatocytes were plated onto collagen I-coated, six-well plates (1 × 106 cells/3.5 cm well) in medium A [DMEM supplemented with 5% (v/v) fetal calf serum, 100 U/ml sodium penicillin, and 100 µg/ml streptomycin sulfate]. The cells were incubated at 37°C in 5% CO2. After attachment for 2 hr, the cells were washed once with PBS and changed to medium B (Medium 199 supplemented with 100 nM dexamethasone, 100 nM 3,3′,5-triiodo-L-thyronine, 100 units/ml sodium penicillin, and 100 µg/ml streptomycin sulfate). After 20 hr, the cells were treated with or without insulin and then harvested for measurement of mRNA as described in Figure Legends.
 
-## siRNA knockdown
+### siRNA knockdown
 
 Two hours after plating, triplicate wells of rat hepatocytes were washed once with PBS, switched to 2 ml of serum-free medium B, transfected with 50 nM of synthetic double-stranded siRNAs against BHLHE40
 
 [siRNA-A, rArGrCrArUrUrGrArCrArArArCrCrUrArArUrUrGrArUrCAG; and siRNA-B, rArCrCrArArArGrArCrUrArArArCrUrCrUrUrGrArGrGrGC (OriGene, catalog no. 4390771)] using Lipofectamine 2000, and incubated in 5% CO2 at 37°C. Sixteen hours after transfection, cells were washed once with PBS and switched to serum-free medium B with the indicated reagents, incubated for 6 hr at 37°C, and then harvested for RNA analysis.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was prepared from rat hepatocytes or mouse liver and subjected to real-time PCR analysis. mRNAs for rat acidic ribosomal phosphoprotein 36B4, mouse apolipoprotein B, and mouse cyclophilin served as invariant controls for rat hepatocytes and mouse liver, respectively, as described previously (Li et al., 2010). The primer sequences used for PCR are listed in Table 1.
 
-## Recombinant adeno-associated virus (AAV)
+**Table 1.**
+ Primer sequence for mRNA measurementsPrimer sequences were custom synthesized by Integrated DNA Technologies, Coraville, IA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene (species)</th>
+      <th>Sequences for forward and reverse primers (5'–3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>36B4 (rat)</td>
+      <td>Forward: TTCCCACTGGCTGAAAAGGT Reverse: CGCAGCCGCAAATGC</td>
+    </tr>
+    <tr>
+      <td>Srebp-1c (rat)</td>
+      <td>Forward: GACGACGGAGCCATGGATT Reverse: GGGAAGTCACTGTCTTGGTTGTT</td>
+    </tr>
+    <tr>
+      <td>C/Ebpβ (rat)</td>
+      <td>Forward: AAGCTGAGCGACGAGTACAAGA Reverse: GTCAGCTCCAGCACCTTGTG</td>
+    </tr>
+    <tr>
+      <td>Lxrα (rat)</td>
+      <td>Forward: TTCCCACGGATGCTAATGAA Reverse: GAATGGACGCTGCTCAAAGT</td>
+    </tr>
+    <tr>
+      <td>Bhlhe40 (rat)</td>
+      <td>Forward: GCTTCCAGGAAACCATTGGA Reverse: GGCTAGGAAGCTGGGCTTCT</td>
+    </tr>
+    <tr>
+      <td>Apob (mouse)</td>
+      <td>Forward: CGTGGGCTCCAGCATTCTA Reverse: TCACCAGTCATTTCTGCCTTTG</td>
+    </tr>
+    <tr>
+      <td>Srebp-1c (mouse)</td>
+      <td>Forward: GGAGCCATGGATTGCACATT Reverse: GGCCCGGGAAGTCACTGT</td>
+    </tr>
+    <tr>
+      <td>Bhlhe40 (mouse)</td>
+      <td>Forward: TGGTGATTTGTCGGGAAGAAA Reverse: ACGGGCACAAGTCTGGAAAC</td>
+    </tr>
+    <tr>
+      <td>Lxrα (mouse)</td>
+      <td>Forward: TCTGGAGACGTCACGGAGGTA Reverse: CCCGGTTGTAACTGAAGTCCTT</td>
+    </tr>
+    <tr>
+      <td>C/Ebpβ (mouse)</td>
+      <td>Forward: AAGCTGAGCGACGAGTACAAGA Reverse: GTCAGCTCCAGCACCTTGTG</td>
+    </tr>
+    <tr>
+      <td>Cyclophilin (mouse)</td>
+      <td>Forward: TGGAGAGCACCAAGACAGACA Reverse: TGCCGGAGTCGACAATGAT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Recombinant adeno-associated virus (AAV)
 
 A cDNA encoding rat BHLHE40 (NM_053328.1) was cloned into pAAVsc-TBG. The AAV-TBG-rBHLHE40 (WT or S383A) and the control AAV-TBG-EGFP were packaged into AAV8 by Vector Development Core, Horae Gene Therapy Center at University of Massachusetts Medical School. Viral particles were purified by serial CsCl2 centrifugation and stored at 5% (v/v) glycerol in PBS at −80°C. AAVs were administered to mice by tail vein injection at a dose of 3 × 1011 gene copies per mouse. The mice were studied 3 weeks after injection.
 
-## Reproducibility
+### Reproducibility
 
 Similar results were obtained when the experiments were repeated on multiple occasions. Two or three independent studies were done for each experiment except for the LC-MS/MS experiment in Figure 1, which was done once.

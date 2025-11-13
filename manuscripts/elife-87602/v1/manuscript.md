@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00h25w961 Institute of Neurobiology, University of Puerto Rico-Medical Sciences Campus San Juan Puerto Rico
-2. https://ror.org/03jep7677 Neuroscience Program, Carleton College Northfield United States
+1. Institute of Neurobiology, University of Puerto Rico-Medical Sciences Campus San Juan Puerto Rico ([ROR:00h25w961](https://ror.org/00h25w961))
+2. Neuroscience Program, Carleton College Northfield United States ([ROR:03jep7677](https://ror.org/03jep7677))
 
 † Corresponding author
 
@@ -37,17 +37,41 @@ Here, we comprehensively map the somatotopic organization among BMNs that elicit
 
 ## Results
 
-## Classification and quantification of the head bristles
+### Classification and quantification of the head bristles
 
 A prerequisite for determining the somatotopy of head BMNs was to define the locations of their respective bristles on the head. Different populations of bristles are located on the eyes, antennae, proboscis, and other areas on the head. While the identities of most of these populations were known (Bodenstein et al., 1994), some were poorly described and their bristle numbers were not reported. Therefore, we imaged the bristles on the head and then classified and quantified each population. We developed a unified nomenclature for the different bristle populations that was based partially on published nomenclature. Most of the bristles were easily observed by imaging white light-illuminated heads (Figure 1A–D), and color-coded depth maps further helped to distinguish between bristles while they were being counted (Figure 1—figure supplement 2A–H). Some bristles could not be counted from these images because of their small size, position on the head, or because they could not be distinguished from one another (Figure 1E, asterisk with bristle number range). Therefore, we used confocal microscopy images, or referred to published work to estimate or obtain the numbers of bristles in these populations (see Materials and methods).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig1-v1.jpg)
+
+**Figure 1.:** (A–D) Bristles on the anterior (A), posterior (B), ventral (C), and dorsal (D) male head. The bristles on the right half are marked with color-coded dots to indicate their classification. Bristle names are abbreviated (Abv.), and full names and color codes are listed in (E). (E) Quantification of bristle populations on the male head (per half). Range indicates the lowest and highest number of bristles counted across individuals for each population (N=8). Bristle number average (Avg.) and standard deviation (SD) across individuals for each population are shown. Bristle counting was facilitated using color-coded depth maps (examples shown in Figure 1—figure supplement 2). Quantification of bristles on female heads and male/female comparisons are shown in Figure 1—figure supplement 3. See Supplementary file 1 for bristle counts for each head and Supplementary file 2 for image stack download links for each head. *InOm and Taste bristle number ranges are based on published data while dPoOr, PoOr, and Occi bristles were counted using confocal microscopy (see Materials and methods). Bristles are organized into nerve groups based on the nerve each bristle’s corresponding bristle mechanosensory neuron (BMN) projects through to enter the brain (evidence shown in Figure 2). Dorsal (d) and ventral (v).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) The architecture elicits aimed grooming of specific locations of the head and body (A) and exerts hierarchical suppression in the grooming sequence (B). (A) Stimulation of a single location (e.g. antennae) by a mechanical stimulus such as dust is detected by local mechanosensory neurons. These neurons connect with distinct postsynaptic circuits that elicit aimed grooming of their respective locations. We referred to these parallel mechanosensory pathways as ‘grooming modules’ in Seeds et al., 2014. The present study focuses on the organization among bristle mechanosensory neurons (BMNs) that elicit aimed grooming of different locations on the head, such as the eyes (red), proboscis (orange), and antennae (aqua). The body locations grooming pathway (gray) represents a continuation of the parallel architecture for any given body location, such as the abdomen or wings. (B) Being coated in dust stimulates multiple locations, inducing competition among the pathways that elicit mutually exclusive grooming movements. These movements are prioritized through hierarchical suppression (unidirectional ball and stick connections between circuits). For illustration simplicity, only the nearest-neighbor connections are shown. In the hypothesized architecture, each circuit suppresses all the subordinate circuits in the hierarchy. For example, eye grooming occurs first in the sequence because it suppresses all later movements, such as grooming of the proboscis, antennae, and body locations. (C) We hypothesize that mechanosensory neurons from different head locations project to distinct somatotopically organized zones in the ventral brain. Mechanosensory neurons on the antennae (Johnston’s organ neurons [JONs]) and eyes (BMNs) are reported to elicit aimed grooming, and BMNs at other locations are hypothesized to also elicit grooming. Mechanosensory neuron projections in the brain are hypothesized to connect with postsynaptic circuits (boxes) that elicit grooming through descending pathways that activate movement pattern generators in the ventral nerve cord.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–H) Example depth maps that were constructed from image Z-stacks (see Materials and methods). Shown are the anterior (A, E), posterior (B, F), ventral (C, G), and dorsal (D, H) views of two different male heads. (A–D) Head shown in Figure 1 (Male 4). (E–H) Example of a different male head (Male 1). Colors indicate closer features in light blue, and increasingly more distant features in white, yellow, and dark red. Bristle names are indicated using abbreviations, whose full names are listed in Figure 1E.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–D) Bristles on an anterior (A), posterior (B), ventral (C), and dorsal (D) female head (Female 1). (E) Table shows quantification of bristles on male and female heads and male/female comparisons (male N=8, female N=4). Bristle numbers for each population are for one half of the head. Range, average (Avg.), and standard deviation (SD) are shown as described in Figure 1. A Student’s t-test (two-tailed) was performed to compare the male/female bristle populations. InOc, PoOr (d+v), and Su bristles show a t-test p≤0.05, however the Bonferroni-adjusted α-value is 0.004 (14 comparisons). See Supplementary file 1 for bristle counts for each head. Note that the PoOr (d+v) bristles were counted as a single group for comparing bristle numbers between males and females. Not determined (ND). See Supplementary file 2 for image stack download links for each head used in this analysis.
+
 We next produced a map of the different bristles at their stereotyped locations on the head, and determined how the numbers of bristles in each population varied across individual flies (Figure 1A–E). By counting the bristles on both male and female heads, we found no significant sex-based differences in their numbers (Figure 1—figure supplement 3A–E, see Supplementary file 1 for bristle counts for each head, see Supplementary file 2 for head image downloads). Given that the bristles are singly innervated (Tuthill and Wilson, 2016b), we could use the bristle counts to estimate the number of BMNs for each bristle population. This provided a framework for us to define the somatotopic projections of BMNs that innervate particular bristles.
 
-## Light microscopy-based reconstruction of BMNs innervating the head bristles
+### Light microscopy-based reconstruction of BMNs innervating the head bristles
 
 BMNs project from bristles at specific head locations and then through their respective nerves to enter the brain. While the nerve projections of BMNs innervating bristles on the eyes, proboscis, and antennae were previously reported (Hampel et al., 2017; Homberg et al., 1989; Melzig et al., 1996; Naresh Singh and Nayak, 1985; Stocker, 1994), the projections of BMNs innervating other head bristles were unknown. We determined these projections using a transgenic driver line (R52A06-GAL4) that labels BMNs on the head (Hampel et al., 2017). R52A06-GAL4 was used to express membrane-targeted green fluorescent protein (mCD8::GFP), and the anterior and posterior head was imaged with a confocal microscope (see Supplementary file 2 for confocal Z-stack downloads). The GFP-labeled neurons had all the characteristic morphological features of BMNs (Tuthill and Wilson, 2016b), including a dendrite innervating a bristle, a cell body, and an axon (Figure 2A and B). R52A06-GAL4 labeled almost all BMNs on the head, but did not label any associated with the postocellar (PoOc) or supracervical (Su) bristles (Figure 2—figure supplement 1A–H). We used the software neuTube (Feng et al., 2015) to reconstruct the GFP-labeled projections of head BMNs from confocal Z-stacks (Figure 2C–H). The reconstructions enabled us to classify the BMNs into ‘nerve groups’, based on the nerves they project through to enter the brain (Figure 2I and J, groups listed in Figure 1E). This revealed that BMNs innervating bristles at different locations on the head project through specific nerves, including the antennal, eye, occipital, and labial nerves. Below we introduce the BMNs in each nerve group and the bristles that they innervate.
 
-## Head BMNs project to the brain through specific nerves
+![Figure 2.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig2-v1.jpg)
+
+**Figure 2.:** (A–D) Confocal Z-stack maximum intensity projections of the anterior (A, C) and posterior (B, D) head in which the driver line R52A06-GAL4 drives expression of GFP in BMNs (green). Cuticle is magenta. (A, B) Magnified views of the boxed areas indicated in (C) and (D). The dendrite (De), axon (Ax), cell body (CB), and innervated bristle (Br) of a BMN are indicated in each panel. (C, D) The left half of the head is shown as a maximum projection, while Z-stack-reconstructed BMNs are shown for the right half. Maximum projections of the right half of the head is shown in Figure 2—figure supplement 1A–F. (E–H) Magnified images of the reconstructions. The magnified areas are indicated by vertical lines on the right in (C) and (D). Reconstructed BMNs are color-coded and labeled according to the nerve that they project through: AntNv (blue); OcciNv (green); EyeNv (red); LabNv (brown). Unreconstructed portion of the antennal nerve is indicated by an asterisk. Innervated bristles are indicated with black arrows. Black arrowheads in (F) and (H) indicate partially reconstructed axons of BMNs innervating the InOm, Vib, and Taste bristles. Scale bars: 25 µm (B), 100 µm (D). (I, J) Summary of bristles innervated by BMNs that belong to particular nerve groups on the anterior (I) and posterior (J) head. Nerve groups also listed in Figure 1E, and Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Maximum intensity projections of the left and right halves of the anterior (A) and posterior (B) heads that are shown in Figure 2C and D. BMNs are green and the cuticle is magenta. The BMNs on the right side of the midline (dotted line) for either the anterior or posterior heads were reconstructed and shown in Figure 2C and D (right). Anterior and posterior images are from two different heads. (C–F) Magnified images of A and B. Magnified areas are indicated by the vertical lines. The different nerves are labeled with colored arrows. Location of unreconstructed portion of AntNv is indicated by an asterisk. Innervated bristles are indicated with white arrows. White arrowheads in D and F indicate partially reconstructed axons of BMNs innervating the InOm, Vib, and Taste bristles. (G) Posterior region of the head that includes the PoOc, Su, and dOcci bristles. Note that there are no GFP-labeled BMNs innervating the PoOc and Su bristles. (H) Brain and ventral nerve cord of R52A06-GAL4 expressing GFP and immunostained for GFP (green) and Bruchpilot (magenta) to label the neuropile. Scale bars all indicate 100 µm. Supplementary file 2 provides confocal Z-stack download links.
+
+### Head BMNs project to the brain through specific nerves
 
 BMNs innervating the 18–22 antennal (Ant) bristles were previously reported to project through the antennal nerve (AntNv) that also carries the axons of JONs and olfactory neurons (Homberg et al., 1989; Melzig et al., 1996). We identified additional BMNs projecting through the AntNv that innervate bristles located on the anterior and dorsal head (Figure 2E, I, blue). These include four to seven frontal (Fr) bristles located medially, three orbital (Or), and four to six frontoorbital (FrOr) bristles located laterally, and one ocellar (Oc) and three to four interocellar (InOc) bristles located on the dorsal head. BMNs projecting from these bristles form a bundle below the cuticle that projects ventrally to join the AntNv. We also identified BMNs that innervate one to three of the small anterior vibrissae (Vib) on the ventral head whose axons project dorsally to join the AntNv.
 
@@ -57,19 +81,63 @@ Each eye contains between 645 and 828 regularly spaced ommatidia, many of which 
 
 The proboscis has bristles on the labellum, haustellum, and maxillary palps. Each half of the labellum has 31–42 Taste bristles whose associated BMNs project through the labial nerve (LabNv) (Falk et al., 1976; Jeong et al., 2016; Nayak and Singh, 1983; Shanbhag et al., 2001; Stocker, 1994). The LabNv also carries mechanosensory neurons innervating the labellar taste pegs, along with gustatory neurons innervating either the taste pegs or taste bristles (Stocker and Schorderet, 1981). We found that BMNs innervating the five haustellum (Hau) bristles also project through the LabNv (Figure 2H and J, brown). BMNs that innervate the 14–18 maxillary palp (MaPa) bristles project through the maxillary nerve (MaxNv) that also carries the axons of olfactory neurons (Naresh Singh and Nayak, 1985). The Lab- and MaxNvs merge as they approach the head, and in this work we refer to the merged nerve as the LabNv. The LabNv then merges with the EyeNv in the ventral head, suggesting that these nerves project into the brain at the same location (Figure 2H).
 
-## Head BMNs project into discrete zones in the ventral brain
+### Head BMNs project into discrete zones in the ventral brain
 
 BMNs in the Ant-, Eye-, and LabNvs were previously reported to project into a region of the ventral brain called the subesophageal zone (SEZ) (Figure 3A and B; Hampel et al., 2017; Jeong et al., 2016; Kamikouchi et al., 2006; Mitchell et al., 1999; Naresh Singh and Nayak, 1985; Stocker, 1994). To determine if all head BMNs project into the SEZ, we used R52A06-GAL4 to label their projections in a dissected brain (Figure 3C, see Supplementary file 2 for confocal Z-stack download). The AntNv was identified in the R52A06-GAL4 pattern based on its reported dorsal-arriving projection into the SEZ (Kamikouchi et al., 2006; Stocker, 1994), while the Eye- and LabNvs were identified based on their reported ventral-arriving projections (Hampel et al., 2017; Stocker, 1994). We found that the Eye- and LabNvs project into the ventral SEZ at the same location (Figure 3C), consistent with the observation that they merge as they approach the brain (Figure 2F and H). We tentatively identified the OcciNv projecting into the SEZ from a lateral direction, revealing that all head BMN nerves project into the SEZ (Figure 3C). R52A06-GAL4 also labels the antennal chordotonal JONs that are known to project through the AntNv into a dorsal region of the SEZ (Hampel et al., 2017; Kamikouchi et al., 2006; Kim et al., 2020). Visualization of JONs and BMNs in the same expression pattern revealed that most of the BMNs project into more ventral regions of the SEZ than the JONs (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of BMNs projecting from different nerves into the SEZ. (B) Anterior view of the brain immunostained for Bruchpilot (magenta) to visualize the neuropile. White box indicates the SEZ. Scale bar, 100 µm. (C) Image of the SEZ in which R52A06-GAL4 expressed GFP in BMNs and Johnston’s organ neurons (JONs). Brains were immunostained for GFP (green) and Bruchpilot (magenta). BMN nerves and JONs are labeled. Scale bar, 25 µm. (D–G) Driver lines that label BMNs from different nerves. Reconstructed BMNs on half of the head that are labeled by the following driver lines: InOmBMN-LexA (D), dBMN-spGAL4 (E), pBMN-spGAL4 (F), and TasteBMN-spGAL4 (whole proboscis shown) (G). Images of the heads used for each reconstruction are shown in Figure 3—figure supplement 1A–D. Reconstructed neurons are color-coded and labeled as described in Figure 2. (D’–G’) SEZ projections of BMNs from both halves of the head that are labeled by InOmBMN-LexA (D’), dBMN-spGAL4 (E’), pBMN-spGAL4 (F’), and TasteBMN-spGAL4 (G’). (H) Table of BMNs innervating specific bristles that are labeled by each driver line, indicated by box shading (numbers of labeled BMNs innervating different bristles shown in Figure 3—figure supplement 1E). Shaded color indicates the nerve that each BMN projects through. (I) Driver line names and identifiers. (J) Shown in the upper right corner of the figure are the aligned expression patterns of InOmBMN-LexA (red), dBMN-spGAL4 (green), and TasteBMN-spGAL4 (brown). Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D’) Maximum intensity projections of heads (A–D) and central nervous systems (CNSs) (A’–D’) expressing GFP in BMNs that innervate different bristles. (A–D) were produced from the same confocal Z-stacks that were used for the BMN reconstructions shown in Figure 3D–G. Magnified views of the subesophageal zones (SEZs) in A’–D’ are shown in Figure 3D’–G’. The expression patterns of the following driver lines are shown: InOmBMN-LexA (A, A’), dBMN-spGAL4 (B, B’), pBMN-spGAL4 (C, C’), and TasteBMN-spGAL4 (D, D’). Scale bars, 100 µm (A–C), 50 µm (D), 100 µm (A’–D’). (E) Table showing the average number of GFP positive BMNs (and SD) that innervate each bristle population from the indicated spGAL4 lines. Supplementary file 2 provides confocal Z-stack download links.
 
 We next used different transgenic driver lines that express in specific populations of head BMNs to independently label and visualize the different nerves (Figure 3D–I, Figure 3—figure supplement 1A–D, see Supplementary file 2 for confocal Z-stack downloads). The EyeNv was labeled using a previously identified driver line (VT017251-LexA) that expresses in BMNs innervating the InOm bristles (Figure 3D; Hampel et al., 2017). Here, we refer to this line as InOmBMN-LexA. We also used a screening approach to produce three new Split GAL4 (spGAL4) combinations that express in BMNs innervating bristles at other locations on the head (see Materials and methods). One line named dBMN-spGAL4 labels BMNs innervating some dorsally located bristles (InOc, Vt, and dPoOr) that project through the Ant- and OcciNvs (Figure 3E). Another line named pBMN-spGAL4 labels BMNs innervating bristles on the posterior head (Vt, dOcci, dPoOr, and vOcci) that project through the Occi- and EyeNvs (Figure 3F). The third line named TasteBMN-spGAL4 labels BMNs innervating Taste bristles on the labellum that project through the LabNv (Figure 3G). These driver lines each provided independent labeling of one or two different nerves (Figure 3H).
 
 Consistent with what we observed using R52A06-GAL4, each driver line labeled BMNs that projected into the SEZ and no other regions of the brain or ventral nerve cord (VNC) (Figure 3D’–G’, Figure 3—figure supplement 1A’–D’, see Supplementary file 2 for confocal Z-stack downloads). dBMN-spGAL4 and pBMN-spGAL4 both labeled the OcciNv that was found to project into the SEZ from a lateral direction (Figure 3E’ and F’), in agreement with what we observed in the R52A06-GAL4 pattern (Figure 3C). A comparison of the nerves labeled by the different driver lines revealed that each nerve has morphologically distinct projections. To further visualize the spatial relationships between these projections, we computationally aligned the expression patterns of the different driver lines into the same brain space (Figure 3J, upper right corner). Indeed, BMNs from different nerves were found to project into distinct zones of the ventral SEZ. However, we also observed potential zones where overlap could occur between the projections of BMNs from different nerves (discussed more below).
 
-## Brain projections of BMNs that innervate specific head bristles
+### Brain projections of BMNs that innervate specific head bristles
 
 Our results suggested that different BMN ‘types’ innervate specific populations of bristles on the head and project into distinct zones in the SEZ. However, it was unclear to what extent BMNs of the same type projected to the same zones, and if other BMN types had distinct or overlapping projections. Therefore, we next compared the projections of individual BMNs from different populations of bristles.
 
 The head contains different sized bristles, ranging from large Vt bristles on the dorsal head, to small vOcci bristles on the posterior head. We performed dye fills to label individual BMNs that innervate the largest bristles. This was done by modifying a previously published method for filling BMNs innervating bristles on the thorax (Kays et al., 2014). In the modified method, a particular bristle was plucked from the head and a small volume of dye (DiD) pipetted into the exposed socket containing the dendrite of the associated BMN. The dye then diffused into the neuron, and its projection morphology in the brain was imaged using a confocal microscope (experiment schematic and example fills shown in Figure 4—figure supplement 1A–E). This method was particularly amenable to large bristles that were relatively easy to pluck. We successfully filled individual BMNs that innervate the Oc, Or, Ant, Vib, and Vt bristles (Figure 4A–Q, see Supplementary file 2 for confocal Z-stack downloads). The BMNs were named based on the bristle populations that they innervate. For example, BMNs that innervate the Ant bristles were named bristle mechanosensory Ant neurons (BM-Ant neurons).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Bristles on the anterior (A) and posterior (B) head whose associated BMNs were labeled using dye fill (C–Q, fill) or multicolor flipout (R–V, MCFO) techniques. (C–V) Subesophageal zone (SEZ) projections of individual BMNs that innervate the bristle indicated in the upper right corner (anterior view). BMNs are oriented as if they are projecting from the right side of the head. Dotted line indicates approximate SEZ midline. Scale bar, 50 µm. (C–Q) BMNs labeled by dye filling. Schematic of the filling technique and whole brain examples shown in Figure 4—figure supplement 1. Filled BMNs innervate the Oc (C), Or (D–F), Ant (G–J), Vib (K–N), and Vt (O–Q) bristles. All fill trials for the different bristles are shown in Figure 4—figure supplement 2, Figure 4—figure supplement 3, Figure 4—figure supplement 4, and Figure 4—figure supplement 5. (R–V) MCFO-labeled BMNs innervate the InOc (R), dPoOr (S), dOcci/dPoOr (T), vOcci (U), and Taste (V) bristles. BMNs were MCFO labeled using the following driver lines: dBMN-spGAL4 (R, S), pBMN-spGAL4 (T, U), and TasteBMN-spGAL4 (V). All MCFO trials for the different bristles are shown in Figure 4—figure supplement 6, Figure 4—figure supplement 7, and Figure 4—figure supplement 8. The number (N) of fill or MCFO trials obtained for each BMN is indicated in the upper right corner. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of the dye filling technique used for labeling bristle mechanosensory neurons (BMNs) from specific bristles. BMNs were labeled with the anterograde dye, DiD. Each bristle was plucked from a head and DiD was pipetted onto the exposed socket to label the BMN innervating that bristle. (B–E) Whole brain examples of four fills shown in Figure 4. Examples are from Ant 3 (B), Vib 1 (C), Or 1 (D), and Vt 2 (E) bristle socket fills. Each filled BMN is magenta and the brain neuropile is labeled with pan neuronally expressed nSyb.GFP in green. Scale bar, 100 µm. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Oc and Or bristles whose associated bristle mechanosensory neurons (BMNs) were labeled by dye filling are indicated with labeled dots (dorsal view). The boxed area in the top image is shown magnified in the bottom image. (B–L) Anterior view of the subesophageal zone (SEZ) projections of individual BMNs that innervate the Oc (B, C), Or 1 (D–F), Or 2 (G–I), and Or 3 (J–L) bristles. Two or three different flies were tested for each bristle (fly number indicated in upper right corner). Asterisk indicates the BMN example that is shown in Figure 4. BMNs are oriented as if they are projecting from the right side of the head. Scale bar, 50 µm. Dotted line indicates approximate SEZ midline. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Ant bristles whose associated bristle mechanosensory neurons (BMNs) were labeled by dye filling are indicated with labeled dots (anterior view). The boxed area in the top image is shown magnified in the bottom image. (B–M) Anterior view of the subesophageal zone (SEZ) projections of individual BMNs that innervate the Ant 1 (B–D), Ant 2 (E–G), Ant 3 (H–J), and Ant 4 (K–M) bristles. Three different flies were tested for each bristle (fly number indicated in upper right corner). Asterisk indicates the BMN example that is shown in Figure 4. Scale bar, 50 µm. Dotted line indicates approximate SEZ midline. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Vib bristles whose associated bristle mechanosensory neurons (BMNs) were labeled by dye filling are indicated with labeled dots (anterior view). The boxed area in the top image is shown magnified in the bottom image. (B–M) Anterior view of the subesophageal zone (SEZ) projections of individual BMNs that innervate the Vib 1 (B–D), Vib 2 (E–G), Vib 3 (H–J), and Vib 4 (K–M) bristles. Three different flies were tested for each bristle (fly number indicated in upper right corner). Asterisk indicates the BMN example that is shown in Figure 4. Scale bar, 50 µm. Dotted line indicates approximate SEZ midline. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Vt bristles whose associated bristle mechanosensory neurons (BMNs) were labeled by dye filling are indicated with labeled dots (dorsal view). The boxed area in the top image is shown magnified in the bottom image. (B–E) Anterior view of the subesophageal zone (SEZ) projections of individual BMNs that innervate the Vt 1 (B), Vt 2 (C, D), and Vt 3 (E) bristles. One or two different flies were tested for each bristle (fly number indicated in upper right corner). Asterisk indicates the BMN example that is shown in Figure 4. Scale bar, 50 µm. Dotted line indicates approximate SEZ midline. Note: Vt 4 was not filled. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Bristles whose associated BMNs were labeled by MCFO are indicated with labeled dots (dorsal view). The boxed area in the top image is shown magnified in the bottom image. (B–I) Anterior view of the subesophageal zone (SEZ) projections of individual BMNs labeled by MCFO using dBMN-spGAL4. BMNs shown innervate the InOc (B, C), dPoOr (D–F), and Vt (G–I) bristles. At least two different flies were tested for each BMN (fly number indicated in upper right corner). Asterisk indicates the BMN example that is shown in Figure 4. Scale bar, 50 µm. Dotted line indicates approximate SEZ midline. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** (A) Bristles whose associated BMNs were labeled by MCFO are indicated with labeled dots (posterior view). (B–J) Anterior view of the subesophageal zone (SEZ) projections of individual BMNs labeled by MCFO using pBMN-spGAL4. BMNs shown innervate the dPoOr/dOcci (B–D) and vOcci (E–J) bristles. Three or six different flies were tested for each BMN (fly number indicated in upper right corner). Asterisk indicates the BMN example that is shown in Figure 4. Scale bar, 50 µm. Dotted line indicates approximate SEZ midline. Supplementary file 2 provides confocal Z-stack download links.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig4-figsupp8-v1.jpg)
+
+**Figure 4—figure supplement 8.:** (A) Bristles whose associated bristle mechanosensory neurons (BMNs) were labeled by MCFO are indicated with labeled dots (posterior view). The boxed area in the top image is shown magnified in the bottom image. (B–K) Anterior view of the subesophageal zone (SEZ) projections of individual BMNs labeled by MCFO using TasteBMN-spGAL4. BMNs shown innervate the Taste bristles. Ten different flies were tested (fly number indicated in upper right corner). Asterisk indicates the BMN example that is shown in Figure 4. Scale bar, 50 µm. Dotted line indicates approximate SEZ midline. Supplementary file 2 provides confocal Z-stack download links.
 
 The large bristles are invariant in number and location across individuals (Figure 1A–E). For example, all flies have one Oc bristle on each half of the head that is always in the same location. We therefore performed dye fills on the same bristles from multiple different heads. This revealed that BMNs innervating the same bristle have the same general projection morphology across individual flies (Figure 4—figure supplements 2–5). We also performed dye fills on different bristles from the same population, such as the Ant 1, Ant 2, Ant 3, and Ant 4 bristles (Figure 4—figure supplement 3A–M). BMNs innervating the same populations were found to have similar projections. For example, BM-Ant neurons all showed similar ipsilateral and midline projecting branches (Figure 4G–J). Morphological similarity among BMNs innervating the same bristle populations was also observed for the BM-Or (Figure 4D–F), -Vib (Figure 4K–N), and -Vt (Figure 4O–Q) neurons.
 
@@ -77,19 +145,51 @@ While BMNs innervating the largest bristles could be labeled using dye fills, we
 
 We next compared the projections of the dye-filled and MCFO-labeled BMNs (Figure 4C–V). This revealed that some BMNs innervating neighboring bristle populations have similar morphologies. For example, BM-InOc and -Oc neurons have similar morphology, including ipsilateral and midline-crossing projections (Figure 4C and R), while BM-dPoOr, -dOcci, and -vOcci neurons show similar ipsilateral projections. This suggested that BMNs innervating neighboring head bristle populations show similar morphology and project into overlapping zones in the SEZ.
 
-## EM-based reconstruction of the head BMN projections in a full adult brain
+### EM-based reconstruction of the head BMN projections in a full adult brain
 
 We next used a previously reported serial-section EM volume of a full adult fly brain (FAFB) to reconstruct the SEZ projections of all head BMNs and produce a comprehensive map of their organization (Zheng et al., 2018). FAFB consists of a brain that was dissected from the head capsule, making it impossible to reconstruct BMNs all the way from their bristles. Instead, the severed Ant-, Occi-, Eye-, and LabNvs were identified in FAFB at the same anatomical locations that we had observed using light microscopy (Figure 3C and J, Figure 5—figure supplement 1A). We used the FlyWire.ai platform (Dorkenwald et al., 2023; Dorkenwald et al., 2022) to seed all automatically segmented neurons within the different nerve bundles as they entered the neuropil (left brain hemisphere nerves, Figure 5—figure supplement 1B–D), and the neurons were then fully proofread and edited by human experts to identify their individual morphologies. The morphologies of the majority of the reconstructed neurons matched those of mechanosensory neurons, including BMNs (discussed below), JONs (Hampel et al., 2020a; Kamikouchi et al., 2006; Kim et al., 2020), and labellar taste peg mechanosensory neurons (TPMNs) (Jeong et al., 2016; Miyazaki and Ito, 2010; Zhou et al., 2019; Figure 5—figure supplement 1E). The remaining neurons included gustatory neurons (Engert et al., 2022), unidentified sensory neurons (Figure 5—figure supplement 2A–Y), and interneurons (not shown).
 
 We identified 705 BMNs among the EM-reconstructed neurons by comparing their SEZ projection morphologies with light microscopy imaged BMNs (Figure 3C and J, Figure 4C–V). In agreement with the light microscopy data, the reconstructed BMNs project through different nerves into distinct zones in the SEZ (Figure 5A and B). For example, BMNs from the Eye- and LabNv have distinct ventral and anterior projections, respectively. This shows how the BMNs are somatotopically organized, as their distinct projections correspond to different bristle locations on the head (Figure 5B and C, see FlyWire.ai link 1 to view the BMN projections in three dimensions).
 
-## Matching the reconstructed head BMNs with their bristles
+![Figure 5.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig5-v1.jpg)
+
+**Figure 5.:** (A) All reconstructed BMNs projecting into the brain from the left side of the head (anterior, dorsal, and lateral views shown). BMN colors correspond to the nerves that they project through, including the AntNv (blue), EyeNv (red), OcciNv (green), and LabNv (brown). Scale bars, 50 µm. (B) Zoomed anterior (left) and lateral (right) views of the BMNs in the subesophageal zone (SEZ). Labeled arrows for each incoming nerve indicate BMN projection direction. Scale bar, 10 µm. (C) Bristles on the anterior (left) and posterior (right) head that are innervated by BMNs in the nerve groups indicated by their color. Figure 5—figure supplement 1 summarizes the EM reconstruction strategy. Sensory neurons that could not be assigned an identity are shown in Figure 5—figure supplement 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Locations in each nerve where different segmented neurons in the electron microscopy (EM) volume were seeded for proofreading and editing (black lines). (B–D) EM sections through each nerve at the locations shown in A with seeded neurons indicated with dots. Shown are AntNv (B), EyeNv/LabNv (C), and OcciNv (D) sections. Dot colors indicate the seeded neuron type, including BMNs projecting through the AntNv (blue), EyeNv (red), LabNv (brown), OcciNv (green), Johnston’s organ neurons (JONs) (yellow), taste peg mechanosensory neurons (TPMNs) (black), or other neurons (white). All neuron segments were seeded for each nerve, with the following exceptions: (1) The Eye/LabNv had a bundle of soma tracts from an interneuron hemilineage crossing the seed plane that was excluded based on the morphology of their initial segmentation, and (2) previously reconstructed JONs were excluded when seeding the AntNv (B, upper left), leaving a ventral-medial area of the nerve with previously undocumented neurons (bottom right). Scale bars, 2 µm. (E) Anterior (left) and lateral (right) views of all reconstructed head mechanosensory neurons, including BMNs, JONs, and TPMNs (colors same as A–D). Arrows for each incoming nerve indicate projection direction.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–Y) Subesophageal zone (SEZ) projections (dorsal views) of unknown sensory neurons 001 (A), 002 (B), 003 (C), 004 (D), 005 (E), 006 (F), 007 (G), 008 (H), 009 (I), 010 (J), 011 (K), 012 (L), 013 (M), 014 (N), 015 (O), 016 (P), 017 (Q), 018 (R), 019 (S), 020 (T), 021 (U), 022 (V), 023 (W), 024 (X), and 025 (Y). Unknown sensory neurons project through the AntNv (A–H) or the EyeNv/LabNv (I–Y). Unknown neurons in S–U send their axons into the neck connective, and possibly descend to the ventral nerve cord.
+
+### Matching the reconstructed head BMNs with their bristles
 
 The reconstructed BMN projections were next matched with their specific bristle populations. The projections were clustered based on morphological similarity using the NBLAST algorithm (example clustering at cut height 5 shown in Figure 6—figure supplement 1A and B, Supplementary file 3, FlyWire.ai link 2) (Costa et al., 2016). Clusters could be assigned as BMN types based on their similarity to light microscopy images of BMNs known to innervate specific bristles. 10 types were matched with dye-filled or MCFO-labeled BMNs (BM-InOc, -Oc, -Ant, -Or, -Vib, -Vt, -dPoOr, -dOcci, vOcci, and -Taste neurons, BM-InOc example shown in Figure 6A, all shown in Figure 6—figure supplement 2A–M). BM-MaPa neurons were matched using published images of labeled MaxNv projections (Naresh Singh and Nayak, 1985). Four types were matched by comparison with BMNs innervating neighboring bristles that showed similar morphology (BM-Fr, -FrOr, -vPoOr, and -Hau neurons). Among these, the BM-vPoOr neurons were so morphologically similar to the MCFO matched BM-vOcci neurons that they could not be distinguished from each other, and were therefore treated as a single group (BM-vOcci/vPoOr neurons). The collective projections of the 555 reconstructed BM-InOm neurons were matched with BMNs labeled using the InOmBMN-LexA driver line (Figure 6B, Figure 6—figure supplement 2N). This matching involved combining 11 different NBLAST clusters (Figure 6—figure supplement 1A and B) and revealed morphological diversity among the BM-InOm neurons.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Examples of matching light microscopy (LM) imaged BMN projections with their corresponding electron microscopy (EM)-reconstructed BMNs, including BM-InOc neurons (A) and BM-InOm neurons (B). Top panels show representative LM images of labeled BMNs that innervate the bristle indicated in the top right corner (anterior subesophageal zone [SEZ] views as shown in Figure 4). The individual BM-InOc neuron was labeled by dye filling using DiD while the collective projections of the BM-InOm neurons were labeled using the driver line InOmBMN-LexA expressing GFP. Bottom panels show the EM-reconstructed BMN types indicated in the top right corner. Shown is a representative example of a BM-InOc neuron (A) and all reconstructed BM-InOm neurons (B). Scale bar, 50 µm. Examples for all LM and EM matched BMNs are shown in Figure 6—figure supplement 2. Additional evidence used for assigning the different BMN types is shown in Figure 6—figure supplement 1, Figure 6—figure supplement 3, and Figure 6—figure supplement 4. (C–D) Different bristle populations indicated by labeled and colored dots are innervated by BMNs shown in E–T. The anterior (C) and posterior (D) head are shown. (E–T) Reconstructed SEZ projections of BMN types that are labeled and plotted in colors indicating the bristles that they innervate. Shown are the dorsal views of all BMNs (E), BM-InOc (F), BM-Oc (G), BM-Fr (H), BM-Ant (I), BM-Or (J), BM-FrOr (K), BM-InOm (L), BM-Vib (M), BM-MaPa (N), BM-Taste (O), BM-Hau (P), BM-Vt/PoOc (Q), BM-dOcci (R), BM-dPoOr (S), and BM-Occi/vPoOr (T) neurons. The number of reconstructed BMNs for each type is indicated.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Dendrogram of Ward clustered NBLAST similarity scores of all reconstructed sensory neurons. Identified nerve projection groups and BMN type assignments are color-coded in the bars to the right (color IDs shown in the bottom right corner). The dendrogram was cut at H=5, resulting in 17 clusters indicated by numbers on the dendrogram. Supplementary file 3 shows the NBLAST clusters when the dendrogram was cut at H=1, at which most of the BMN types are clustered individually. (B) Morphology of the BMNs in each NBLAST cluster shown in A, indicated by the same number (color-coded by type).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–B) Bristles on the anterior (A) and posterior (B) head whose associated BMNs were labeled by dye filling (fill), stochastic labeling (multicolor flipout [MCFO]), or full pattern driver line expression (driver). (C–N) Top panels show representative images of the subesophageal zone (SEZ) projections of labeled and LM imaged BMNs that innervate the bristle indicated in the top right corner (anterior view). All fill and MCFO trials for the different bristles are shown in Figure 4—figure supplements 2–8. Bottom panels show representative examples of the EM-reconstructed BMN types (types indicated in the top right corner). BMN types and their LM labeling methods are BM-InOc (MCFO) (C), BM-Oc (fill) (D), BM-Ant (fill) (E), BM-Or (fill) (F), BM-Vib (fill) (G), BM-Taste (MCFO) (H), BM-Vt/PoOc (fill) (I), BM-Vt/PoOc (fill) (J), BM-Vt/PoOc (fill) (K), BM-dPoOr (MCFO) (L), BM-Occi/PoOr (MCFO) (M), and BM-InOm (driver) (N). Note that the BM-InOm neurons shown in N (top panel) are those labeled in the full expression pattern of the driver line InOmBMN-LexA. The bottom panel of N includes all EM-reconstructed BM-InOm neurons. Scale bar, 50 µm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) NBLAST clusters were assigned as types that innervate particular bristle populations based on: (1) comparison of their morphology with images of dye-filled, multicolor flipout (MCFO)-labeled, or published BMNs, (2) nerve projections, (3) proximity to BMNs with known morphology, and (4) common connectivity with postsynaptic partners. Postsynaptic connectivity clustering is shown in Figure 8—figure supplement 2. The BMN types were validated because their numbers matched the numbers of their corresponding bristles. The mismatch between the reconstructed BM-InOm neurons and the number of InOm bristles is likely due to the latter being an estimate (shown in D). Black shaded boxes indicate which evidence was used to match each BMN type. Detailed descriptions of the evidence that was used for assigning each BMN type can be found in Materials and methods. (B–F) Head bristle counts for each population and the number of reconstructed BMNs for each type. Shown are BMNs projecting through the AntNv (B), LabNv (C), EyeNv (D), and OcciNv (E), and BMNs innervating the Vib bristles (F). (G) R52A06-GAL4 expression in BM-Vib neurons on the head (green). Maximum intensity projections of the ventral head. Cuticle is magenta. BM-Vib neurons (green) that project to the brain through the AntNv or EyeNv are labeled with arrows. Scale bar, 50 µm.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) All BMNs entering the brain through the right (R) and left (L) OcciNv, color-coded by the BMN type. (B, C) BMN numbers are consistent across hemispheres for the BM-Vt/PoOc (B) and BM-dOcci (C) neurons (indicated below each hemisphere). (D) Reconstruction of the full occipital nerve on both hemispheres revealed twice as many BM-dPoOr neurons on the right than on the left.
+
 Additional evidence was used to support our BMN-type assignments (Figure 6—figure supplement 3A), including a comparison of the morphology and numbers of reconstructed BMNs on both sides of the brain (for the small OcciNv, Figure 6—figure supplement 4A–D), and determining that BMNs of the same type show common postsynaptic connectivity (described below). Finally, we verified that the numbers of BMNs for each type were consistent with their corresponding bristle numbers (Figure 6—figure supplement 3B–F). This consistency of the BMN/bristle numbers, and completeness of sensory neuron proofreading in each nerve suggested that nearly all BMNs were reconstructed. Thus, we produced a near-complete brain projection map of 15 BMN types that innervate the different bristle populations on the head (Figure 6C–T, listed in Supplementary file 3).
 
-## BMN somatotopic map
+### BMN somatotopic map
 
 The projection map defined above revealed three features of somatotopic organization among the BMN types (Figure 6E–T, see FlyWire.ai link 3 to better view the BMN projections in three dimensions). First, each type has a unique branch morphology that defines its projections into distinct zones in the SEZ. Second, types that innervate neighboring bristle populations have branches that project into partially overlapping zones. For example, BMNs that innervate bristles on the dorsal head all have a common ipsilateral projection (Figure 6F–K and Q, lateral branch in each panel). In contrast, BMNs that innervate bristles at distant locations (e.g. dorsal and ventral head) show little or no projection overlap. Third, the projections of BMNs either remain in the ipsilateral brain hemisphere or cross the midline to the contralateral side, depending on the locations of their corresponding bristle populations (Figure 7A–E). That is, BMNs innervating populations located medially on the anterior head have midline-crossing projections, whereas BMNs innervating lateral, eye, and posterior head populations have ipsilateral-only projections. BMNs innervating bristles on the proboscis showed mixtures of ipsilateral-only and midline-crossing projections. These somatotopic features reveal how BMNs have distinct and overlapping SEZ projections that reflect their relative locations and proximities on the head.
 
@@ -99,17 +199,57 @@ The projection map defined above revealed three features of somatotopic organiza
 
 The BMN somatotopic organization was further defined using NBLAST and connectomic data. NBLAST calculates similarity scores based on neuron morphology and spatial location (Costa et al., 2016). BMNs innervating neighboring bristle populations showed high similarity, indicating that their projections are morphologically similar and in close proximity (Figure 6—figure supplement 1A and B). We confirmed this close proximity through analysis of BMN/BMN interconnectivity. All neurons in FlyWire.ai were previously linked to their corresponding automatically detected synapses in FAFB (Buhmann et al., 2021; Dorkenwald et al., 2022), which revealed that the BMN axons have both pre- and postsynaptic sites (Figure 8—figure supplement 1A). Analysis of all-to-all connectivity among the BMNs revealed that some of these sites corresponded to BMN/BMN synaptic connections (Figure 8—figure supplement 1B). The highest connectivity was among BMNs of the same type, but types innervating neighboring bristles were also connected. In contrast, BMNs innervating bristles at distant locations showed low NBLAST similarity and were not connected, consistent with these BMNs projecting into distinct zones. Interestingly, the different BMN projection zones defined by the NBLAST and connectivity data correspond roughly to the eye, ventral, dorsal, and posterior head.
 
-## Somatotopically organized parallel BMN pathways
+### Somatotopically organized parallel BMN pathways
 
 The map of somatotopically organized BMN projection zones provided evidence of the parallel sensory pathways predicted by the model of hierarchical suppression underlying grooming (Hampel et al., 2017; Seeds et al., 2014). In the model, mechanosensory neurons detect dust at different head locations and elicit aimed grooming through distinct postsynaptic circuits that function in parallel (Figure 1—figure supplement 1A and C). The projection zones could be where BMNs synapse with these circuits. Therefore, we examined the postsynaptic connectivity of the different BMN types to test if they form parallel connections with distinct partners. Nearly all neurons postsynaptic to the BMNs were first proofread in FlyWire.ai by our group and the wider proofreading community (Dorkenwald et al., 2023; Dorkenwald et al., 2022). We then compared the connectivity of the BMNs with their postsynaptic partners using cosine similarity-based clustering (Figure 8—figure supplement 2). The 555 BM-InOm neurons were excluded from this analysis because they were present in higher numbers and with fewer presynaptic sites than the 150 BMNs of other types, and clustering all BMNs together resulted in obscured clustering (presynaptic site counts in Figure 8—figure supplement 1A). The BMN/BMN connections shown in Figure 8—figure supplement 1B were also excluded from the cluster analysis.
 
 Cosine similarity clustering revealed that BMNs formed parallel postsynaptic connections that reflected their head somatotopy. The lowest level clusters at the lowest cut heights shown in the Figure 8A dendrogram contained BMNs of the same type (colored bars next to dendrogram), demonstrating that BMNs innervating the same bristle populations had the highest connectivity similarity. Higher dendrogram cut heights (larger cluster sizes) uncovered connectivity similarity among BMN types innervating neighboring bristle populations. For example, a cut height of 4.5 identified five clusters that captured connectivity similarity among both same and neighboring BMN types (Figure 8A and B, colored circles 1–5, FlyWire.ai link 4). Clusters 1 and 4 contained exclusively BMNs of the same type, including BM-Vib (Cluster 1) and a subset of BM-Taste neurons (Cluster 4). The other subset of BM-Taste neurons is represented in Cluster 3, showing connectivity similarity with neighboring BMNs on the ventral head. This intratype differential clustering observed with the BM-Taste neurons was also found with other BMN types, including the morphologically diverse BM-InOm neurons (Figure 8—figure supplement 3A and B, FlyWire.ai link 5). Thus, while BMNs of the same type tend to show high connectivity similarity, we also find evidence that there are BMN subtypes with distinct postsynaptic partners. Clusters 2, 3, and 5 contained BMNs innervating neighboring bristle populations that were located roughly on the dorsal, ventral, and posterior head areas (Figure 8A–C). Clusters 2 and 3 contained exclusively dorsal or ventral BMNs, respectively, while Cluster 5 contained 77% posterior head BMNs and 23% anterior. The posterior and anterior BMNs in Cluster 5 showed relatively low postsynaptic connectivity similarity with each other (Figure 8—figure supplement 2), thus maintaining a mostly anterior versus posterior spatial distinction in their postsynaptic connectivity. However, the presence of both anterior and posterior head BMNs in Cluster 5 also indicates that some postsynaptic partners receive BMN inputs that are not head location specific.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig8-v1.jpg)
+
+**Figure 8.:** (A) Dendrogram of cosine similarity clustering of BMNs by postsynaptic connectivity similarity. Analysis excludes postsynaptic partners with fewer than six synapses, and the BMN/BMN connections shown in Figure 8—figure supplement 1. Individual BMNs are shown as bars and their types correspond to the colors indicated in B (bottom right). The five clusters are from cut height 4.5 on the dendrogram (dotted line) derived from the comparisons shown in Figure 8—figure supplement 2. (B) Morphologies of BMNs in the indicated clusters (upper right) whose types correspond to the colors shown in the bottom right. (C) Spatial relationships among the clustered BMNs are shown by coloring their bristles (dots) by cluster number on the anterior and posterior head. BMN types in more than one cluster are colored accordingly if at least 20% of that type was in a given cluster (e.g. BM-Taste neurons are in Clusters 3 [37%, brown] and 4 [63%, orange]). Note: the positioning of the colored dots indicating different clusters for Taste and Occi/PoOr bristles is hypothesized based on their proximity to other BMNs in the same cluster. The clusters exemplify different levels of connectivity similarity shown by the dendrogram (A). BMNs showing the highest connectivity similarity innervate the same bristle populations, as exemplified by BM-Vib (Cluster 1) and BM-Taste (Cluster 4) neurons. BMNs that innervate neighboring bristle populations also show high connectivity similarity, including BMNs on the dorsal (Cluster 2), ventral (Cluster 3), and posterior head (Cluster 5). Note: Cluster 5 consists mostly of posterior head BMNs, but also BM-Ant and -Fr neurons on the anterior head, although these BMNs show relatively low cosine similarity with the posterior head BMNs. BM-InOm neurons were analyzed separately (Figure 8—figure supplement 3). (D–F) Summary of BMN somatotopic features. (D) Different BMN types innervate bristles at neighboring and distant proximities. (E, F) BMNs that innervate neighboring bristles project into overlapping zones (E, example of electron microscopy (EM)-reconstructed BM-Fr and -Ant neuron subesophageal zone (SEZ) projections with non-overlapping -MaPa neuron projections) and can show postsynaptic connectivity similarity (F, edge widths based on number of total synapses from a given BMN type to its major postsynaptic partners, edges under 5% of BMN output omitted). Labeled arrows for each BMN type shown in E indicate projection direction.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Number pre- and postsynaptic connections for each BMN type. Black lines indicate mean synapse number. (B) Synaptic connectivity among BMN types. The average synaptic count for each edge is shown on arrows indicating directionality of the connection (arrow width corresponds to the count). Total count of synapses between two given types was divided by the number of possible edges between the two types.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Heatmap of the cosine similarity among BMNs with the row and column order determined by clustering of the similarity scores. Postsynaptic partners excluded connections to other BMNs and connections with fewer than six synapses. Clustering of the rows and columns is the same as the dendrograms next to bars that indicate BMN type (color-code on bottom right). Dendrogram cut height 4.5 resulted in five clusters (indicated by numbers on the top dendrogram). Morphologies of the neurons in each cluster are shown in Figure 8B.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Heatmap of BM-InOm neuron cosine similarity with the row and column order determined by clustering of the similarity scores. Postsynaptic partners excluded connections to other BMNs and connections with fewer than two synapses. Clustering of the rows and columns is the same with dendrograms shown on the left and top. Dendrogram cut height 5.6 resulted in seven clusters (indicated by numbers on the top dendrogram). (B) Dorsal view of the neuron morphologies in each cluster (cluster number indicated at the top left), revealed tiling of the BM-InOm innervation area in the brain. Clusters 1–2 mainly innervate an area located medial-dorsally, while Clusters 6–7 innervate a lateral-ventral area. Clusters 3–5 send branches to both areas.
+
 Our results reveal head bristle proximity-based organization among the BMN projections and their postsynaptic partners to form parallel mechanosensory pathways. BMNs innervating neighboring bristles project into overlapping zones in the SEZ, whereas those innervating distant bristles project to distinct zones (example of BM-Fr, -Ant, and -MaPa neurons shown in Figure 8D and E). Cosine similarity analysis of BMN postsynaptic connectivity revealed that BMNs innervating the same bristle populations (same types) have the highest connectivity similarity. Figure 8F shows example parallel connections for BM-Fr, -Ant, and -MaPa neurons (vertical arrows), where the edge width indicates the number of synapses from each BMN type to their major postsynaptic partners. Additionally, BMNs innervating neighboring bristle populations showed postsynaptic connectivity similarity, while BMNs innervating distant bristles show little or none. For example, BM-Fr and -Ant neurons have connections to common postsynaptic partners, whereas BM-MaPa neurons show only weak connections with the main postsynaptic partners of BM-Fr or -Ant neurons (Figure 8F, connections under 5% of total BMN output omitted). These results suggest that BMN somatotopy could have different possible levels of head spatial resolution, from specific bristle populations (e.g. Ant bristles) to general head areas (e.g. dorsal head bristles).
 
-## Activation of subsets of head BMNs elicits aimed grooming of specific locations
+### Activation of subsets of head BMNs elicits aimed grooming of specific locations
 
 We next tested the extent to which the parallel-projecting BMNs elicited aimed grooming of specific head locations. The driver lines described above (Figure 3D–I) were used to express the light-gated neural activator CsChrimson (Klapoetke et al., 2014) in different subsets of BMNs (Figure 9A). Flies were placed in chambers where they could move freely and then exposed to red light to activate the CsChrimson-expressing BMNs. We manually annotated the movements elicited by optogenetic activation of BMNs from recorded video (Figure 9—figure supplement 1, Videos 1–4).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig9-v1.jpg)
+
+**Figure 9.:** (A) Bristles shaded black on the anterior (left) and posterior (right) head are innervated by BMNs that express CsChrimson under control of the indicated driver lines. Control-spGAL4 shows no expression. (B) Histograms of manually annotated video for each line show movements elicited with red-light-induced optogenetic activation. The fraction of flies performing each movement are plotted in 1 s bins (N=10 flies per line). Grooming movements are indicated by different colors, including eye (magenta), dorsal head (blue), and ventral head (orange) grooming. Other elicited movements include backward motion (black) and head nodding (gray). Gray bars indicate a 5 s red-light stimulus. Most driver lines were tested using 30 s interstimulus intervals, while pBMN-spGAL4 elicited more reliable behavior using 10 s intervals. Movements are mutually exclusive except head nodding. Representative experimental trials shown in Video 1, Video 2, Video 3, Video 4, and Video 5. Figure 9—figure supplement 1 shows additional controls and ethograms for individual flies tested. (C) Box plots show the percent time that flies spent performing each movement during the experiment shown in B. Bottom and top of the boxes indicate the first and third quartiles, respectively; median is shown in each box; whiskers show the minimum and maximum values. Asterisks indicate *p, 0.05, **p, 0.001, ***p, 0.0001 from Mann-Whitney U pairwise tests between each experimental line and its corresponding control after application of Bonferroni correction. Figure 9—source data 1 contains numerical data used for producing each box plot.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Ethograms of manually scored videos showing the movements elicited with red-light-induced activation. Ethograms of individual flies are stacked. Grooming movements (top plots) are indicated by different colors, including eye (magenta), dorsal head (blue), and ventral head (orange) grooming. Other elicited movements (bottom plots) include backward motion (black) and head nodding (gray). Gray bars indicate a 5 s red-light stimulus. Most driver lines were tested using 30 s interstimulus intervals, while pBMN-spGAL4 elicited more reliable behavior using 10 s intervals. Movements are mutually exclusive except head nodding. Gray bars indicate a 5 s red-light stimulus.
+
+![Video 1.](https://cdn.elifesciences.org/articles/87602/elife-87602-video1.mp4.jpg)
+
+**Video 1.:** CsChrimson was expressed in BMNs targeted by the dBMN-spGAL4 driver line. Infrared light in the bottom right corner indicates when the red light was on to activate the targeted BMNs. Note that head nodding movements and backward motions are also elicited.
+
+![Video 2.](https://cdn.elifesciences.org/articles/87602/elife-87602-video2.mp4.jpg)
+
+**Video 2.:** CsChrimson was expressed in bristle mechanosensory neurons (BMNs) targeted by the TasteBMN-spGAL4 driver line. Infrared light in the bottom right corner indicates when the red light was on to activate the targeted BMNs.
+
+![Video 3.](https://cdn.elifesciences.org/articles/87602/elife-87602-video3.mp4.jpg)
+
+**Video 3.:** CsChrimson was expressed in bristle mechanosensory neurons (BMNs) targeted by the InOmBMN-LexA driver line. Infrared light in the bottom right corner indicates when the red light was on to activate the targeted BMNs. Note that head nodding movements and backward motions are also elicited.
+
+![Video 4.](https://cdn.elifesciences.org/articles/87602/elife-87602-video4.mp4.jpg)
+
+**Video 4.:** CsChrimson was expressed in BMNs targeted by the pBMN-spGAL4 driver line. Infrared light in the bottom right corner indicates when the red light was on to activate the targeted BMNs. Note that dorsal head grooming movements are also elicited (not shown in video).
 
 Optogenetic activation of BMN types labeled by each driver line elicited grooming by the front legs that was aimed at specific head locations (Figure 9B and C). For example, a line that expressed in different BMN types on the dorsal head elicited aimed dorsal head grooming (dBMN-spGAL4; BM-InOc, -Vt, and -dPoOr neurons, blue trace, Video 1). Two lines expressed exclusively in specific BMN types, which enabled us to test the extent to which grooming was aimed specifically at those BMNs (i.e. BM-Taste and -InOm neurons). Indeed, BM-Taste neurons on the labellum elicited labellar grooming, but also grooming of neighboring locations on the proboscis and ventral head (TasteBMN-spGAL4, yellow trace includes proboscis and ventral head grooming, Video 2). Activation of BM-InOm neurons (InOmBMN-LexA, Video 3) elicited eye grooming (red trace), but also grooming of the neighboring dorsal head (blue trace). This suggested that head BMNs elicit aimed grooming of their corresponding bristle locations, but also neighboring locations. This result is consistent with our anatomical and connectomic data indicating that BMNs innervating neighboring bristles show overlapping projections and postsynaptic connectivity similarity (see Discussion).
 
@@ -117,21 +257,25 @@ Activation of BMNs on the posterior head elicited low levels of dorsal head groo
 
 In addition to grooming, BMNs on the dorsal head and eyes elicited backward motions that appeared as if flies were avoiding something that touched the head (dBMN-spGAL4 and InOmBMN-LexA). The backward motion and grooming were mutually exclusive and sequential, as the backward motion occurred transiently at the stimulus onset and was followed by grooming. As we reported previously (Hampel et al., 2020a), the red-light stimulus also elicited backward motions with control flies (Figure 9B and C, control, black trace, Video 5). However, control flies only responded in 33% of trials, whereas BMN activation flies responded with backward motions in most trials (73% for dorsal head BMNs, 100% BM-InOm neurons). Taken together, this study reveals that the somatotopically organized head BMNs elicit both aimed grooming and avoidance-like responses.
 
+![Video 5.](https://cdn.elifesciences.org/articles/87602/elife-87602-video5.mp4.jpg)
+
+**Video 5.:** Control fly was exposed to the same red-light stimulus shown in Videos 1–3. The infrared light in the bottom right corner indicates when the red light was on.
+
 ## Discussion
 
-## Comprehensive definition of head BMNs
+### Comprehensive definition of head BMNs
 
 A major outcome of this work was the definition of nearly all BMNs on the Drosophila head. Although there were previous descriptions of the BMNs from different body parts, there were no comprehensive descriptions of all BMNs for any part. Furthermore, the head BMNs were among the least well described. Here, we modified a previously reported BMN dye fill method and produced new transgenic driver lines to define the projection morphologies of the different head BMN types that innervate specific bristle populations on the head. We then identified and reconstructed these types in the FAFB EM dataset. This provides the most comprehensive definition of the BMNs for any body part of Drosophila (or any other insect), and an essential resource for future studies. The annotated neurons can be linked to the ongoing neural circuit reconstructions in FAFB (Dorkenwald et al., 2023; Dorkenwald et al., 2022), or identified in anticipated new EM reconstructions of the brains of other individuals using available and emerging tools (Galili et al., 2022).
 
 While nearly all head BMNs were reconstructed in this work, different knowledge gaps remain. First, it is unclear if the PoOc and Su bristles are innervated by BMNs because they could not be observed using transgenic driver lines or dye filling methods. We proposed that one of the BM-Vt/PoOc neurons innervates the PoOc bristle, based on proximity and presumed morphological similarity to the neighboring BM-Vt, -InOc, and -Oc neurons. For the Su bristles, one possibility is that they are innervated by some of the 25 unknown sensory neurons reconstructed in this work (Figure 5—figure supplement 2A–Y). Second, it remains unclear what neurotransmitter(s) are used by the BMNs. A machine learning approach was recently developed that can predict whether a neuron in FAFB uses any of six major neurotransmitters with high accuracy (Eckstein et al., 2020). Given that the neurotransmitter predictions for the BMNs were overwhelmingly cholinergic (not shown), and a previous study indicated that leg BMNs are sensitive to a nicotinic acetylcholine receptor antagonist (Tuthill and Wilson, 2016a), the parsimonious explanation is that the BMNs are cholinergic. However, other studies suggest that BMNs could use histamine as a neurotransmitter (Melzig et al., 1996; Salvaterra and Kitamoto, 2001; Yasuyama and Salvaterra, 1999). Thus, the extent to which head BMNs use acetylcholine, histamine, or other neurotransmitters remains unresolved.
 
-## Resource: nearly all head mechanosensory neurons reconstructed and annotated in FAFB
+### Resource: nearly all head mechanosensory neurons reconstructed and annotated in FAFB
 
 In conjunction with two previous studies, work presented here contributes to the FAFB reconstruction and annotation of neurons associated with the major head mechanosensory structures, including the bristles (BMNs), JO (JONs), and taste pegs (TPMNs). The BMNs and TPMNs were reconstructed using the FlyWire.ai platform in the present work, and the JONs were previously reconstructed using the CATMAID platform (Hampel et al., 2020a; Kim et al., 2020). The TPMNs (38 reconstructed) respond to tactile displacements of the taste pegs and are implicated in feeding behavior (Jeong et al., 2016; Sánchez-Alcañiz et al., 2017; Zhou et al., 2019). Subpopulations of ~480 JONs have been previously defined that respond to diverse mechanical forces that move the antennae (JO-A, -B, -C, -D, -E, -F, and -mz neurons), including sound, gravity, wind, and tactile displacements (Hampel et al., 2015; Ishikawa et al., 2017; Kamikouchi et al., 2009; Mamiya and Dickinson, 2015; Matsuo et al., 2014; Patella and Wilson, 2018). The JONs are implicated in different behaviors including courtship, flight, locomotion, gravitaxis, wind-guided orientation, escape, and head grooming (Hampel et al., 2015; Kamikouchi et al., 2009; Lehnert et al., 2013; Mamiya et al., 2011; Mamiya and Dickinson, 2015; Suver et al., 2019; Tootoonian et al., 2012; Vaughan et al., 2014; Yorozu et al., 2009). The reconstruction and annotation of head mechanosensory neurons in FAFB provides an important resource for connectomics-based studies of mechanosensory processing (Supplementary file 3). While the majority of mechanosensory neurons on the head are now identified in FAFB, some remain unknown, such as multidendritic and pharyngeal mechanosensory neurons on the proboscis (Yang et al., 2021; Zhang et al., 2016).
 
 The reconstructed JONs, BMNs, and TPMNs project into distinct regions in the SEZ (Figure 5—figure supplement 1A and E), and therefore show modality-specific projections. For example, the JONs (chordotonal neurons) define a region of the SEZ called the antennal mechanosensory and motor center while the BMNs project more ventrally. While the BMN projections are based on head location (somatotopic), the JON projections are based on mechanical stimulus modality, such as their responses to vibrational or tonic antennal movements (tonotopic) (Hampel et al., 2020a; Kamikouchi et al., 2006; Kim et al., 2020; Patella and Wilson, 2018). However, there are potential overlapping projections between the most ventral projecting JONs (JO-F neurons) and some BMNs projecting through the AntNv (Figure 5—figure supplement 1). Among the BMNs that appear to overlap with the JO-F neurons are the BM-Ant neurons that are located on the same antennal segment as the JONs (pedicel). This overlap suggests that the JO-F neuron projections are somatotopic like the BMNs. Modality-specific mechanosensory projections are also reported in the VNC of Drosophila and other insects (e.g. BMNs, hair plates, campaniform sensilla, and chordotonal neurons), revealing this organization to be fundamental in insects (Merritt and Murphey, 1992; Murphey et al., 1989a; Phelps et al., 2021; Smith and Shepherd, 1996; Tsubouchi et al., 2017; Tuthill and Wilson, 2016a).
 
-## A synaptic resolution somatotopic map of the head BMNs
+### A synaptic resolution somatotopic map of the head BMNs
 
 This work defines the somatotopic organization of the head BMNs. Somatotopy was previously reported for BMNs innervating bristles on the bodies of Drosophila and other insects (Johnson and Murphey, 1985; Murphey et al., 1989b; Newland, 1991; Newland et al., 2000; Tsubouchi et al., 2017). However, these studies only produced partial somatotopic maps using dye fills or transgenic driver lines. Furthermore, there were no previous descriptions of somatotopy among the head BMNs. Here, we use EM reconstructions to produce a comprehensive synaptic resolution somatotopic map of head BMNs in the same brain.
 
@@ -143,11 +287,11 @@ We also find that BMN types innervating neighboring bristle populations have ove
 
 The somatotopic map reveals that some head BMNs have projections that remain in the ipsilateral brain hemisphere, while others have midline-crossing projections to the contralateral hemisphere (Figure 7A–E). Interestingly, BMNs innervating bristles located medially on the anterior head show midline-crossing projections, whereas those innervating more lateral populations have ipsilateral-only projections. Previous studies found that BMNs innervating medial bristles on the thorax have midline-crossing projections, while those innervating more lateral bristles have ipsilateral-only projections (Ghysen, 1980; Kays et al., 2014). Similarly, BMNs that innervate bristles located on the leg segment most medial to the body (coxa) have midline-crossing projections (Murphey et al., 1989b; Phelps et al., 2021). This is also the case for BMNs on the legs of other insects, such as the cricket (Johnson and Murphey, 1985) and hawkmoth (Kent and Levine, 1988). Why do some BMNs have ipsilateral and midline-crossing projections? One possibility is that these BMNs can excite postsynaptic circuitry in both brain hemispheres to elicit bilateral leg grooming responses, which could be appropriate for medial stimuli. In contrast, BMNs on the proboscis have mixtures of ipsilateral-only and midline-crossing projections, while those on the posterior head show ipsilateral-only projections. Thus, the organizational logic of midline-crossing BMNs described above may not be universal.
 
-## First synaptic resolution somatotopic map of the head
+### First synaptic resolution somatotopic map of the head
 
 This work provides the first synaptic resolution somatotopic map of a head (or body) for any species. Previous studies identified somatotopic maps across species, such as the vertebrate maps of head and body (Abraira and Ginty, 2013; Adibi, 2019; Brown et al., 1977). Somatotopic organization has been found to be preserved at different layers of the nervous system and is thought to be of fundamental importance, although the full functional significance of this organization is unclear (Kaas, 1997; Thivierge and Marcus, 2007). Therefore, it remains important to produce anatomical and functional maps and define how this somatotopy interfaces with postsynaptic circuits. It has previously not been possible to obtain a comprehensive description of a somatotopic map, as most studies were limited to sparse labeling experiments and extrapolation across different animals. Thus, the spatial relationships among mechanosensory neurons that make up particular maps could not be definitively determined. We overcame this through the first complete EM reconstruction of a somatotopic map of a head in the same brain. This enables future work that will define the postsynaptic connectome of this complete map. Thus, the synaptic resolution map provided here has important implications for expanding our understanding of somatotopic neural circuit organization and function.
 
-## Circuits that elicit aimed grooming of specific head locations
+### Circuits that elicit aimed grooming of specific head locations
 
 We report here that activation of the head BMNs elicits aimed grooming. Flies groom specific head locations, including the eyes, antennae, dorsal head, ventral head, and proboscis (Dawkins, 1976; Hampel et al., 2015; Hampel et al., 2017; Seeds et al., 2014; Szebenyi, 1969; Zhang et al., 2020). With the exception of the BM-InOm neurons, little was known about the roles of the other BMNs in eliciting head grooming. The BM-InOm neurons were originally identified as necessary for grooming in response to mechanical stimulation of the eyes in the praying mantis (Zack and Bacon, 1981). Mechanical stimulation of the Drosophila InOm bristles (Melzig et al., 1996) and optogenetic activation of the BM-InOm neurons (Hampel et al., 2017; Zhang et al., 2020) were later reported to elicit eye grooming. Here, we used optogenetic activation to further define the movements elicited by BM-InOm neurons, and show that other BMN types elicit grooming of the dorsal and ventral head. Previous studies in Drosophila and other insects showed that stimulations of bristles on the legs, wings, and thorax also elicit aimed grooming (Corfas and Dudai, 1989; Li et al., 2016; Matheson, 1997; Page and Matheson, 2004; Usui-Ishihara et al., 1995; Vandervorst and Ghysen, 1980). Thus, the BMNs are important for eliciting aimed grooming of specific locations on the head and body.
 
@@ -157,11 +301,11 @@ How do the parallel-projecting head BMNs interface with postsynaptic neural circ
 
 We find that activation of specific BMN types elicits both aimed grooming of their corresponding bristle locations and neighboring locations. This suggests overlap in the locations that are groomed with the activation of different BMN types. Such overlap provides a means of cleaning the area surrounding the stimulus location. Interestingly, our NBLAST and cosine similarity analysis indicates that neighboring BMNs project into overlapping zones in the SEZ and show common postsynaptic connectivity. Thus, we hypothesize that neighboring BMNs connect with common neural circuits (e.g. antennal grooming circuit) to elicit overlapping aimed grooming of common head locations.
 
-## BMN involvement in multiple distinct behaviors
+### BMN involvement in multiple distinct behaviors
 
 In addition to grooming, this work identifies other movements that are elicited by the head BMNs and their corresponding bristles. Previous studies implicated the InOm bristles in an avoidance response (Melzig et al., 1996), although this response was not described in detail. Here, we demonstrate that activation of the BM-InOm neurons elicits an avoidance-like response in the form of backward motions. This response was also elicited by activating BMN types on the dorsal head. Another putative avoidance-like behavior, head nodding, was found to be elicited by posterior head BMNs. Avoidance responses to bristle stimulation have been previously reported in Drosophila and other insects, such as limb withdrawal and postural changes (Melzig et al., 1996; Burrows and Newland, 1997; Pflüger, 1980; Vandervorst and Ghysen, 1980). Thus, BMNs across the head and body elicit grooming and possibly avoidance responses.
 
-## Parallel circuit architecture underlying the grooming sequence
+### Parallel circuit architecture underlying the grooming sequence
 
 This study examines the mechanosensory layer of the parallel model of hierarchical suppression that produces the head to body grooming sequence (Hampel et al., 2017; Mueller et al., 2019; Seeds et al., 2014). This layer consists of mechanosensory neurons at specific locations on the head and body that elicit aimed grooming of those locations (Hampel et al., 2020a; Hampel et al., 2017; Hampel et al., 2015; Zhang et al., 2020). The aimed movements are performed in a prioritized sequence when mechanosensory neurons detect dust at different locations and become simultaneously activated (i.e. head and body completely dirty). In support of this, simultaneous optogenetic activation of mechanosensory neurons across the head and body elicits a grooming sequence that resembles the dust-induced sequence (Hampel et al., 2017; Zhang et al., 2020). Among the different mechanosensory neurons, the BMNs are particularly important, as their activation alone is sufficient to elicit a grooming sequence (Zhang et al., 2020). Thus, activation of individual BMN types elicits aimed grooming, while their simultaneous activation elicits a sequence.
 
@@ -173,13 +317,310 @@ The BMNs are hypothesized to have roles in both eliciting and terminating the di
 
 ## Materials and methods
 
-## Rearing conditions and fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R52A06-GAL4</td>
+      <td>Jenett et al., 2012</td>
+      <td>RRID:BDSC_38810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VT017251-LexA</td>
+      <td>Hampel et al., 2017</td>
+      <td></td>
+      <td>aka InOmBMN-LexA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VT019023-AD</td>
+      <td>Tirian and Dickson, 2017</td>
+      <td>RRID:BDSC_71430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VT050279-DBD</td>
+      <td>Tirian and Dickson, 2017</td>
+      <td>RRID:BDSC_72433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R28D07-AD</td>
+      <td>Dionne et al., 2017</td>
+      <td>RRID:BDSC_70168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VT023783-AD</td>
+      <td>Tirian and Dickson, 2017</td>
+      <td>RRID:BDSC_73261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R11D02-DBD</td>
+      <td>Dionne et al., 2017</td>
+      <td>RRID:BDSC_68554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dBMN-spGAL4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Stock contains VT019023-AD and VT050279-DBD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pBMN-spGAL4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Stock contains R28D07-AD and VT050279-DBD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TasteBMN-spGAL4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Stock contains VT023783-AD and R11D02-DBD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>20XUAS-IVS-mCD8::GFP</td>
+      <td>Pfeiffer et al., 2010</td>
+      <td>RRID:BDSC_32194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13XLexAop2-IVS-myr::GFP</td>
+      <td>Pfeiffer et al., 2010</td>
+      <td>RRID:BDSC_32209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>C155-GAL4, UAS-nSyb.eGFP</td>
+      <td>Kendal Broadie</td>
+      <td>RRID:BDSC_6920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>BPADZp; BPZpGDBD</td>
+      <td>Hampel et al., 2015</td>
+      <td>RRID:BDSC_79603</td>
+      <td>spGAL4 control</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>BDPLexA</td>
+      <td>Pfeiffer et al., 2010</td>
+      <td>RRID:BDSC_77691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>20XUAS-IVS-CsChrimson-mVenus</td>
+      <td>Klapoetke et al., 2014</td>
+      <td>RRID:BDSC_55134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MCFO-5</td>
+      <td>Nern et al., 2015</td>
+      <td>RRID:BDSC_64089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MCFO-3</td>
+      <td>Nern et al., 2015</td>
+      <td>RRID:BDSC_64087</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13XLexAop2-IVS-CsChrimson-mVenus</td>
+      <td>Klapoetke et al., 2014</td>
+      <td>RRID:BDSC_55137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Brp (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# nc82, RRID:AB_2314866</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (Rat monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NBP1-06712, RRID:AB_1625981</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3724, RRID:AB_1549585</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (Mouse monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat# MCA1360, RRID:AB_322378</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit AF488 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11034, RRID:AB_2576217</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse AF568 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11031, RRID:AB_144696</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat AF633 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21094, RRID:AB_2535749</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde 20%</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 15713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiD solid</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 07757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>all-trans-Retinal</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Cat# R240000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>neuTube</td>
+      <td>Feng et al., 2015</td>
+      <td></td>
+      <td>https://www.neutracing.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Vcode</td>
+      <td>Hagedorn et al., 2008</td>
+      <td></td>
+      <td>http://social.cs.uiuc.edu/projects/vcode.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td>http://fiji.sc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team</td>
+      <td>RRID:SCR_001905</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CMTK</td>
+      <td>Jefferis et al., 2007</td>
+      <td></td>
+      <td>https://www.nitrc.org/projects/cmtk/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FluoRender</td>
+      <td>Wan et al., 2012</td>
+      <td></td>
+      <td>http://www.sci.utah.edu/software/fluorender.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Blender version 2.79</td>
+      <td>Blender Online Community</td>
+      <td>RRID:SCR_008606</td>
+      <td>https://www.blender.org/download/releases/2-79/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks Inc, Natick, MA, USA</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>natverse</td>
+      <td>Bates et al., 2020</td>
+      <td></td>
+      <td>http://natverse.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>Shannon et al., 2003</td>
+      <td></td>
+      <td>https://cytoscape.org/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Rearing conditions and fly stocks
 
 GAL4, LexA, and Split GAL4 (spGAL4) lines were generated by the labs of Gerald Rubin and Barry Dickson, and most lines are available from the Bloomington Drosophila Stock Center (Dionne et al., 2017; Jenett et al., 2012; Pfeiffer et al., 2008; Tirian and Dickson, 2017). Canton S flies were obtained from Martin Heisenberg’s lab in Wurzburg, Germany. Other stocks used in this study are listed in the Key resources table.
 
 GAL4, spGAL4, and LexA lines were crossed to either UAS or LexAop driver lines as described below. Flies were reared on Fisherbrand Jazz-Mix Drosophila food (Fisher Scientific, Fair Lawn, NJ, USA) containing corn meal, brown sugar, yeast, agar, benzoic acid, methyl paraben, and propionic acid. The flies were kept in an incubator at 21°C and 55–65% relative humidity. Flies that were not used for optogenetic experiments were kept on a 16/8 hr light/dark cycle. Flies used for optogenetic experiments were reared on food containing 0.4 mM all-trans-retinal (Toronto Research Chemicals, Toronto, Canada) in vials that were wrapped in aluminum foil and kept in a box to keep them in the dark. Unless stated otherwise, the flies used for experiments were 5- to 8-day-old males.
 
-## Imaging the head bristles
+### Imaging the head bristles
 
 One to 2 mm was cut off the tip of an Eppendorf 200 μL pipette tip, then an approximately 6 mm length was cut off and the remainder discarded. A freeze-killed (>1 hr) male or female Canton S fly was then gently pushed in with a piece of wire, until the head protruded from the tip. The tip was then mounted in a small piece of soft wax. An observation chamber was constructed on a microscope slide, by cutting a 5 mm square hole in three layers of Highland electrical insulation tape (3M, St. Paul, MN, USA) and covering the bottom with a translucent white plastic square (cut from a Farmland Traditions dog treat bag). The fly, held in the tube, was mounted over the chamber using the wax, first dorsal side up (imaged), then ventral side up (imaged). The head was carefully cut off using sharpened iridectomy scissors, falling into the chamber where it was arranged anterior side up, held in place with a piece of coverslip, imaged, flipped posterior side up, and imaged again. Imaging was done with a Zeiss Axio Examiner D1 microscope equipped with a 10x Achroplan objective (0.25 NA) (Karl Zeiss, Oberkochen, Germany). The objective was surrounded with a cylinder of the same translucent white plastic in order to diffuse the light source and to avoid air movements that could move the antennae. The cylinder was illuminated from both sides at 2–3 cm distance by a Dolan-Jenner Fiber-lite (Dolan-Jenner Industries, Boxborough, MA, USA). A small amount of additional back-lighting was provided by the microscope light source (20% power) with a blue filter. Images were captured with a Zeiss Axiocam 512 at 60 ms exposure. The focal plane was advanced in small increments manually, resulting in approximately 50 images per head.
 
@@ -191,7 +632,7 @@ With anterior views of the head, the EDF algorithm has difficulties separating t
 
 To facilitate bristle identification, a color-coded depth map was constructed from the downsized 1024-height stack, sharpened with Unsharp-mask (1 pixel). The color channels were split, and G and B channels discarded. The R channel was Inverted (Edit menu), the contrast was adjusted, and a Gamma correction of 1.34 was applied to the stack. A lookup table (LUT) had been previously created ranging from light blue, through white and yellow to dark red (‘Stellar’). The Image: Hyperstacks: Temporal-Color Code function (LUT Stellar) was applied to the stack, giving a depth-coded image. Finally, an Enhanced Local Contrast (CLAHE, blocksize 63) was applied, followed by a gamma adjustment (1.5–1.8).
 
-## Bristle nomenclature
+### Bristle nomenclature
 
 Published names for the different bristles were used when possible. However, bristle abbreviations are from the present work unless otherwise indicated. Some bristle names were from Bodenstein et al., 1994, including the frontal (Fr), frontoorbital (FrOr), orbital (Or), ocellar (Oc), interocellar (InOc), vertical (Vt), postorbital (PoOr), and vibrissae (Vib). We deviated from this nomenclature in the following cases. First, although the PoOr bristles form a continuous row along the back margin of each eye (Figure 1B), we subdivided them into dPoOr and vPoOr populations based on whether their associated BMNs project through the OcciNv or EyeNv, respectively (Figure 2F and J). Second, we did not use the bristle name postvertical, but instead used postocellar (PoOc) that was previously proposed to better describe the location of these bristles as posterior to the other ocellar bristles (Steyskal, 1976). Third, instead of occipital, we used the name supracervical (Su) for the bristles located immediately above the cervical connective on the back of the head (Steyskal, 1976). This is because we named two populations of small bristles on the back of the head the dOcci and vOcci bristles. This name was previously proposed for these bristles in other species of flies (Steyskal, 1976). The abbreviation (Occi) was taken from the blowfly literature (Theib, 1979). Given that the Occi bristles are found as two distinct populations in D. melanogaster, we refer to them in this work as the dOcci and vOcci bristles (Figure 1B).
 
@@ -199,7 +640,7 @@ Our abbreviation for the vertical (Vt) bristles describes all vertical bristles.
 
 The bristles on the eyes were referred to as InOm bristles (Honegger et al., 1979; Zack and Bacon, 1981). For the bristles on the outer labellum, we used the common name, taste (Taste) bristles (Stocker, 1994). We refer to the other bristles on the proboscis as MaPa and Hau bristles. Note: while most of the bristles on the head are termed trichoid sensilla that are innervated by a single BMN, the Taste bristles are mostly basiconic sensilla that are each innervated by a BMN and multiple gustatory neurons. The bristles on the first and second segments of the antennae are referred to as Ant bristles.
 
-## Bristle quantification
+### Bristle quantification
 
 We counted the bristle populations that are defined above and shown in Figure 1A–D. Most bristles were counted using color-coded depth maps (described above) that aided the identification of the bristles within each population (Figure 1—figure supplement 2A–H). The Ant, Fr, FrOr, Or, Oc, InOc, Vt, dOcci, PoOr, Vib, MaPa, Hau, PoOc, and Su bristles were counted using this method on eight male and four female heads (Figure 1E, Figure 1—figure supplement 3A–E, Supplementary file 1 [Table 1]). Bristles on each half of the head were counted using the Fiji Cell Counter plugin (Kurt De Vos, University of Sheffield) and then averaged. These averages were used to calculate average and standard deviation for each bristle population from all counted male and female heads. Two-tailed t-tests were performed to compare male and female bristle numbers for each population. Although in this manuscript we make a distinction between the dPoOr and vPoOr bristles (Figure 1B), we counted all PoOr bristles together when comparing their numbers between males and females (Figure 1—figure supplement 3E). We used other approaches to obtain or estimate the numbers of dPoOr, vPoOr, InOm, vOcci, and Taste bristles (described below).
 
@@ -211,13 +652,13 @@ In this work we identified the vOcci bristles that were not previously described
 
 Most of the heads that we imaged had their proboscises oriented such that we could not observe and count all of the Taste bristles. However, Taste bristles have been counted in previous studies (Falk et al., 1976; Jeong et al., 2016; Nayak and Singh, 1983; Shanbhag et al., 2001). See Supplementary file 1 (Table 4) for Taste bristle counts from different publications (published counts for Ant and MaPa bristles are also shown). One of these studies also determined that there were no differences in the numbers of Taste bristles between males and females (Shanbhag et al., 2001). We took the highest and lowest numbers from these different references for the range that is shown in Figure 1E.
 
-## Head immunostaining and nerve reconstructions
+### Head immunostaining and nerve reconstructions
 
 R52A06-GAL4 (RRID:BDSC_38810), dBMN-spGAL4, pBMN-spGAL4, and TasteBMN-spGAL4 were crossed to 20XUAS-IVS-mCD8::GFP (RRID:BDSC_32194) while VT017251-LexA (InOmBMN-LexA) was crossed to 13XLexAop2-IVS-myr::GFP (RRID:BDSC_32209). Anesthetized male progeny were decapitated using a standard razor blade and heads were placed in phosphate-buffered saline (PBS). To facilitate antibody penetration for staining, we used #5 Dumoxel forceps (Fine Science Tools, Foster City, CA, USA) to tear small holes in the cuticle and pull off the antennae or proboscis. Heads were fixed in PBS with 2% paraformaldehyde for 1 hr at room temperature, and then washed with PAT (PBS, 1% bovine serum albumin, 0.5% Triton X) six times within 2 hr. Heads were blocked overnight at 4°C in PAT with 3% normal goat serum (PAT-NGS), then incubated for 3 days (room temperature during the day and 4°C at night) in PAT-NGS containing rabbit anti-GFP (Thermo Fisher Scientific, Waltham, MA, USA, RRID:AB_221569). Heads were washed with PAT for 5 hr and then incubated for 3 days in PAT-NGS with goat anti-rabbit Alexa Fluor-488 (Thermo Fisher Scientific, Waltham, MA, USA, RRID:AB_2576217). Heads were washed for 2 days with several exchanges of PAT, and then in PBS for 2 hr at room temperature. A standard slide was used for mounting with a small ‘well’ created by stacking five Avery reinforcement labels (Avery Products Corporation, Brea, CA, USA). A drop of Vectashield (Vector Laboratories, Inc, Burlingame, CA, USA) was added to the well and the heads were positioned either anteriorly or dorsally. The well was then covered with a circular coverslip (Electron Microscopy Sciences, Hatfield, PA, USA, 1.5 Micro Coverglass 12 mm diameter, Cat# 72230-01).
 
 Heads were imaged using a Zeiss LSM800 confocal microscope (Carl Zeiss, Oberkochen, Germany) equipped with a 20× objective (Plan-Apochromat 20×/0.8). Fiji software (http://fiji.sc/) was used for examining the morphology of the imaged BMNs and for image processing steps, including adjustment of brightness and contrast, stitching, and image inversion. Reconstructions of the labeled head BMNs and their respective nerves from the confocal Z-stacks (Figure 2 and Figure 3) were performed using the software neuTube (Feng et al., 2015). Image stacks of the heads are displayed as maximum intensity projections (Figure 2 and Figure 3).
 
-## CNS immunostaining and analysis
+### CNS immunostaining and analysis
 
 The different GAL4, spGAL4, and LexA driver lines described above were crossed to either 20XUAS-IVS-mCD8::GFP or 13XLexAop2-IVS-myr::GFP. Brains and VNCs were dissected and stained as previously described (Hampel et al., 2015; Hampel et al., 2011). The following primary and secondary antibodies were used for staining GFP and the neuropil: rabbit anti-GFP, mouse anti-nc82 (Developmental Studies Hybridoma Bank, University of Iowa, RRID:AB_2314866) to stain Bruchpilot, goat anti-rabbit Alexa Fluor-488, and goat anti-mouse Alexa Fluor-568 (Thermo Fisher Scientific, RRID:AB_144696). The stained CNSs were imaged, and confocal stacks processed as described above for heads.
 
@@ -225,11 +666,11 @@ To display the GFP expression patterns of different spGAL4 and LexA lines togeth
 
 For MCFO experiments, dBMN-spGAL4, pBMN-spGAL4, and TasteBMN-spGAL4 were crossed to the MCFO-5 stock (RRID:BDSC_64089) (Nern et al., 2015). 9- to 12-day-old fly brains were dissected for pBMN-spGAL4 and dBMN-spGAL4, while 4- to 6-day-old brains were dissected for Taste-spGAL4. Brains were stained using rat anti-FLAG (Novus Biologicals, LLC, Littleton, CO, USA, RRID:AB_1625981), rabbit anti-HA (Cell Signaling Technology, Danvers, MA, USA, RRID:AB_1549585), mouse anti-V5 (Bio-Rad, Hercules, CA, USA, RRID:AB_322378), goat anti-rabbit Alexa Fluor-488, goat anti-mouse Alexa Fluor-568, goat anti-rat Alexa Fluor-633 (Thermo Fisher Scientific, RRID:AB_2535749). Stained brains were imaged, and confocal stacks processed as described above. Individually labeled neurons from each line are shown as maximum projections in Figure 4 and Figure 4—figure supplements 6–8. Given that very few flipout events occurred using the MCFO-5 stock in combination with the dBMN-spGAL4 and pBMN-spGAL4, we used a different MCFO stock (MCFO-3, RRID:BDSC_64087) to obtain a higher number of individually labeled neurons. Using dBMN-spGAL4 crossed with MCFO-3, we aged males for 9–12 days and obtained approximately one to two individually labeled neurons in seven dissected brains. Crossing pBMN-spGAL4 with MCFO-3, we obtained about one to four labeled neurons in each dissected brain when we aged males 4–6 days. The flipout events in the latter cross occurred in much higher frequency given that most brains labeled more than a single neuron with the MCFO-3 stock.
 
-## Identification of driver lines that express in different subsets of head BMNs
+### Identification of driver lines that express in different subsets of head BMNs
 
 We used the spGAL4 system to produce driver lines that expressed in different subsets of head BMNs (Luan et al., 2006; Pfeiffer et al., 2010). spGAL4 allows for independent expression of the GAL4 DNA binding domain (DBD) and activation domain (AD). When DBD and AD are expressed in the overlapping neurons, these domains reconstitute into a transcriptionally active protein. To label specific subpopulations of head BMNs, we visually screened through an image collection of the CNS expression patterns of enhancer-driven lines and identified candidate lines that were predicted to express in different subsets of head BMNs (Dionne et al., 2017; Jenett et al., 2012; Tirian and Dickson, 2017). We selected two candidate lines to express the DBD in subsets of head BMNs: VT050279 (VT050279-DBD, RRID:BDSC_72433) and R11D02 (R11D02-DBD, RRID:BDSC_68554). VT050279-DBD or R11D02-DBD flies carrying the 20XUAS-IVS-CsChrimson-mVenus transgene (RRID:BDSC_55134) (Klapoetke et al., 2014) were crossed to 55 different candidate-ADs. The progeny were placed in behavioral chambers and exposed to red light for optogenetic activation (described below). We tested three flies for each DBD/AD combination to identify those that expressed in neurons whose activation could elicit grooming. Grooming ‘hits’ were stained using a GFP antibody to detect CsChrimson-mVenus expression in the CNS and anti-NC82 to mark the neuropil as described above. We identified three different combinations that expressed in restricted subsets of BMNs, that included the ADs R28D07-AD (RRID:BDSC_70168), VT019023-AD (RRID:BDSC_71430), and VT023783-AD (RRID:BDSC_73261). We generated stable lines containing both the AD and DBD, including dBMN-spGAL4 (VT019023-AD ∩ VT050279-DBD), pBMN-spGAL4 (R28D07-AD ∩ VT050279-DBD), and TasteBMN-spGAL4 (VT023783-AD ∩ R11D02-DBD).
 
-## Behavioral analysis procedures
+### Behavioral analysis procedures
 
 For behavioral experiments, dBMN-spGAL4, pBMN-spGAL4, TasteBMN-spGAL4, and BPADZp; BPZpGDBD (spGAL4 control, RRID:BDSC_79603) were crossed to 20XUAS-CsChrimson-mVenus. InOmBMN-LexA and BPADZp and BDPLexA (LexA control, RRID:BDSC_77691) were crossed to 13XLexAop2-IVS-CsChrimson-mVenus (RRID:BDSC_55137). The controls used with the spGAL4 and LexA lines contain the vector backbone that was used to produce each line (including the coding regions for each spGAL4 half or LexA), but lack any enhancer to drive spGAL4 or LexA expression (Hampel et al., 2015; Pfeiffer et al., 2010; Pfeiffer et al., 2008).
 
@@ -239,7 +680,7 @@ Manual scoring of behavior from prerecorded video was performed using VCode soft
 
 Behavioral data was analyzed using nonparametric statistical tests as previously reported (Hampel et al., 2020a; Hampel et al., 2017; Hampel et al., 2015). The percent time flies spent performing each behavior was calculated. To compare the behavior performed by each experimental genotype with its corresponding genetic control, we performed pairwise comparisons for each behavior using a Mann-Whitney U test and applied Bonferroni correction. Note that we tested both male and female flies for optogenetic activation of behavior. Although only males are presented in this manuscript, optogenetic activation was found to elicit similar behaviors in both males and females (not shown).
 
-## Dye filling of BMNs that innervate large bristles
+### Dye filling of BMNs that innervate large bristles
 
 The dye filling protocol used in this study was adapted from one that was previously published (Kays et al., 2014). C155-GAL4, UAS-nSyb.eGFP flies (RRID:BDSC_6920) were used for the dye fill experiments to label the neuropil. Flies were decapitated with a standard razor blade and their heads glued to a microscope cover glass (Fisher Scientific, Pittsburgh, PA, USA) using TOA 400 UV cured glue (Kemxert, York, PA, USA). Heads were submerged in 3.7% wt/vol paraformaldehyde in 0.2 M carbonate-bicarbonate buffer at pH 9.5 overnight at 4°C. Heads were washed 24 hr later by dipping in 0.2 M carbonate-bicarbonate buffer at pH 9.5 for 30 s, and subsequently in ddH2O for 30 s. Heads were gently blotted dry to prevent dye from spilling over the cuticle, and the selected bristles on the head were plucked with #5 Dumoxel forceps. Bristles were selected from either the left or right side of the head, depending on which bristle was in the most optimal orientation for plucking and filling.
 
@@ -247,11 +688,11 @@ Micropipettes for dye filling were prepared from Borosilicate Thin Wall capillar
 
 We attempted to fill BMNs innervating the following head bristles: PoOc, Oc, Or, Ant, Vib, and Vt. Many attempts to fill particular bristles resulted in unfilled or partially filled BMNs. Anecdotally, there also seemed to be a difference in how well the filling method worked for the different bristle populations. For example, multiple attempts to fill the Vt bristles only resulted in one successful fill of a BMN from Vt 1 and Vt 3 bristles. Additionally, we were unable to fill a BMN with multiple attempts of the PoOc bristle. Successful fill trials and the locations of specific bristles that were filled are shown in Figure 4C–Q and Figure 4—figure supplements 2–5.
 
-## Light microscopy image stack storage and availability
+### Light microscopy image stack storage and availability
 
 The Z-stacks used to produce panels for Figure 1, Figure 2, Figure 3, and Figure 4 and their figure supplements are all available for download at the Brain Image Library (RRID:SCR_017272). Links for each image Z-stack can be found in Supplementary file 2. The group DOI for all these Z-stacks is https://doi.org/10.35077/g.1144.
 
-## Reconstruction and analysis of BMNs from an EM volume
+### Reconstruction and analysis of BMNs from an EM volume
 
 BMNs were reconstructed in a complete EM volume of the adult female brain (FAFB) dataset (Zheng et al., 2018) using the FlyWire.ai platform (Dorkenwald et al., 2023; Dorkenwald et al., 2022). We first identified the locations of the Ant-, Occi-, and merged Eye/LabNvs in the EM volume based on their identified locations from light microscopy data. We then chose a cross section of each nerve, close to where they enter brain neuropil, and where segmentation was available for all neurons in the nerve (Figure 5—figure supplement 1A–D). We seeded every profile in the Occi- and merged Eye/LabNvs (Figure 5—figure supplement 1C and D). The Eye/LabNvs had a bundle of soma tracts from an SEZ interneuron hemilineage crossing the seed plane that was excluded from the seeding process based on the morphology of their initial segmentation (Figure 5—figure supplement 1C). Previous studies reconstructed major portions of JONs in FAFB AntNv using the CATMAID platform (Hampel et al., 2020a; Kim et al., 2020). Because the FlyWire FAFB brain was locally realigned, we transformed those JONs into the FlyWire space using natverse version 0.2.4 (Bates et al., 2020). After overlaying these JONs onto the seed plane, they were excluded during the seeding effort to identify BMNs in the AntNv. This left a small ventral-medial area of the nerve with previously undocumented neurons that were seeded and reconstructed (Figure 5—figure supplement 1B). We focused our reconstructions in the right hemisphere nerves. However, we also examined the OcciNv in the left hemisphere, given that it only contained a small number of neurons (Figure 6—figure supplement 4A–D).
 
@@ -267,7 +708,7 @@ We calculated cosine similarity of BMNs to cluster them based on their connectiv
 
 Connections to postsynaptic partners were calculated as follows: We analyzed all postsynaptic partners of the BMNs (after applying the above-mentioned cleft score) and summed the BMN input by BMN type. We assigned postsynaptic partners to the BMN type giving the highest input to them (e.g. if BM-Ant neurons contribute the highest synaptic input to a given postsynaptic neuron this neuron is termed Ant_post). We then plotted the connections from BMN types to the postsynaptic partner neurons grouped by their major input partner. To show only strong connections we applied a threshold (>5%) by normalizing the edges by the total output of a given BMN type (Figure 8F).
 
-## Matching EM-reconstructed BMN projections with light microscopy imaged BMNs that innervate specific bristles
+### Matching EM-reconstructed BMN projections with light microscopy imaged BMNs that innervate specific bristles
 
 Manual categorization of the EM-reconstructed sensory neurons revealed that they consist of BMNs, JONs, TPMNs, and gustatory neurons (GRNs). JONs and GRNs were previously identified and described in the EM volume using the CATMAID platform (Engert et al., 2022; Hampel et al., 2020a; Kim et al., 2020). The TPMNs were identified based on their morphological similarity to previous light microscopy descriptions (Jeong et al., 2016; Miyazaki and Ito, 2010; Zhou et al., 2019). 25 sensory neurons were reconstructed that could not be identified based on dye fill, MCFO, or published neurons. These neurons are referred to in this work as unknown and shown in Figure 5—figure supplement 2A–Y. We also identified interneurons that were not classified because sensory neurons were the focus of this study. The BMNs, JONs, and TPMNs are shown in Figure 5—figure supplement 1A and E. The GRNs and interneurons were excluded from further analysis in this study.
 

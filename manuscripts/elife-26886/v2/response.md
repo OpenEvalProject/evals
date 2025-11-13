@@ -73,9 +73,7 @@ We agree with the reviewer’s concern, and performing EM to assess the genetic 
 
 The authors say that knockdown of syndapin has no effect on cactus or GluRIIA expansion but offer no evidence that their RNAi altered syndapin expression.
 
-The UAS-SyndRNAi#1, used in previous submitted manuscript, is efficient in knockdown as shown by RT-PCR (see Author response image 1). However, we decide to remove the results about the non-suppression by Syndapin knockdown, which provides no extra meaning to the manuscript.10.7554/eLife.26886.022Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.26886.022
-
-DOI: http://dx.doi.org/10.7554/eLife.26886.022
+The UAS-SyndRNAi#1, used in previous submitted manuscript, is efficient in knockdown as shown by RT-PCR (see Author response image 1). However, we decide to remove the results about the non-suppression by Syndapin knockdown, which provides no extra meaning to the manuscript.10.7554/eLife.26886.022Author response image 1.
 
 Similarly, they base all the arguments in Figure 6 on the effects of heterozygotes but do not indicate if those heterozygotes changed levels of the encoded protein and over-interpret a failure to alter a parameter as a lack of involvement of that protein in the expansions they observed. Since they do not know quantitatively if leon mutations have altered the levels of that protein, they cannot know if the heterozygous allele they use (a seemingly arbitrary decision) has had any impact on the level of the protein, decreased it back to control levels or not, or rendered it lower than controls. These experiments are not interpretable.
 

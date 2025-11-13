@@ -29,13 +29,13 @@ Here we present such model. More specifically, the study describes three primary
 
 ## Results
 
-## Economic choice behavior in mice
+### Economic choice behavior in mice
 
 We developed a behavioral paradigm similar to that previously used for monkeys. In essence, we let mice choose between two liquid rewards (juices) offered in variable amounts. During the experiments, mice were head-fixed, and two liquid spouts were placed close to their mouth, on the two sides. For each juice, the offered quantity varied from trial to trial. A key aspect of the experiment was to effectively communicate to the animal the two options available on any given trial. We represented offers using olfactory stimuli because mice can easily learn to make subtle olfactory discriminations (Wachowiak et al., 2009). We used odor identity to represent a particular juice type, and odor concentration to represent juice quantity. In each trial, the animal was presented with two odors from the two directions (left, right). The odors, representing the offers, were presented for 2.8 s (offer period), at the end of which the animal heard an auditory ‘go’ signal. The animal indicated its choice by licking one of the two liquid spouts, and the corresponding juice was delivered immediately thereafter (Figure 1a). Throughout the experiments, we used five odor concentrations, corresponding to five quantity levels for each juice. Juice quantities varied on a linear scale, while odor concentrations varied roughly linearly on a log2 scale. Juice quantities and left/right positions varied pseudo-randomly from trial to trial (see Materials and methods).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/49669/elife-49669-fig1-v2.jpg)
 
-**Figure 1.:** (a) Task diagram. In the experiments, mice chose between two liquid rewards (juices, schematized by the two lick tubes) offered in variable amounts. For each offer, the juice identity (water or sugar water) was represented by the odor identity, and the juice quantity was represented by the odor concentration. (b–f) Choice pattern, example sessions. In each panel, the x-axis represents different offer types in log(q/Bq); the y-axis represents the percent of trials in which the animal chose juice B. Data points are averaged across trials, and the sigmoid is obtained from a logistic regression (Materials and methods, AEquation 1). Each panel indicates the relative value (ρ) and the sigmoid steepness (η). The five sessions shown here are from mice M56, M55, M47, M48 and M49, respectively. Forced choices are shown (including error trials) but not included in logistic regressions. (g) Example session of a mouse performing the flipped version of the task (M53).
+**Figure 1.:** (a) Task diagram. In the experiments, mice chose between two liquid rewards (juices, schematized by the two lick tubes) offered in variable amounts. For each offer, the juice identity (water or sugar water) was represented by the odor identity, and the juice quantity was represented by the odor concentration. (b–f) Choice pattern, example sessions. In each panel, the x-axis represents different offer types in log(qB/qA); the y-axis represents the percent of trials in which the animal chose juice B. Data points are averaged across trials, and the sigmoid is obtained from a logistic regression (Materials and methods, Equation 1). Each panel indicates the relative value (ρ) and the sigmoid steepness (η). The five sessions shown here are from mice M56, M55, M47, M48 and M49, respectively. Forced choices are shown (including error trials) but not included in logistic regressions. (g) Example session of a mouse performing the flipped version of the task (M53).
 
 Animals' choices reliably presented a quality-quantity trade-off. Figure 1b–f illustrate the behavior observed in five representative sessions. We refer to the two juices as A and B, with A preferred. If the two juices were offered in equal amounts (1B:1A), the animal would reliably choose juice A (by definition). However, if juice B was offered in sufficiently large amount against 1A, the animal chose B. For example, in Figure 1f, the mouse was roughly indifferent between 1A and 2B. For a quantitative analysis, we ran a logistic regression (see Materials and methods, Equation 1). The logistic fit provided measures for the relative value of the two juices (ρ) and for the sigmoid steepness (η), which is inversely related to choice variability. For example, for the session in Figure 1f, we measured ρ = 2.2 and η = 2.1.
 
@@ -47,7 +47,7 @@ The present study is based on 19 mice (see Materials and methods) and a total 
 
 In most of our experiments, higher odor concentrations represented larger juice amounts. One concern was whether low odor concentrations were hard to discern, and whether choices were ultimately dictated by perceptual ambiguity. One argument against this hypothesis follows from the fact that we observed similar choice patterns independently of the pairing between odors and juice type. For an additional control, we trained two animals in a ‘flipped’ version of the task, in which higher odor concentrations represented smaller juice amounts. These two mice learned the task and eventually performed very similarly to the other animals (Figure 1g). More specifically, the relative value and sigmoid steepness measured for these two mice was statistically indistinguishable from those measured for the other 17 mice (p=0.12 and 0.15 for ρ and η, respectively; t test; Figure 2, asterisks).
 
-## Inactivation of area LO disrupts economic decisions
+### Inactivation of area LO disrupts economic decisions
 
 To shed light on the role of LO in economic decisions, we examined how inactivation of this area affects choices. In a series of experiments, we inactivated LO by optically activating GABAergic interneurons expressing ChR2. We chose this protocol because exciting inhibitory cells often induces a more complete shut-down of projection neurons (Wiegert et al., 2017; Zhao et al., 2011).
 
@@ -69,23 +69,43 @@ These results suggested that decisions relied on the neuronal activity in area L
 
 Another concern was the fact that area LO is not far from the eyes. Thus the blue light shone during stimulation trials might be seen by the mouse. In principle, such visual input could distract the animal or otherwise interfere with its choosing. To address this issue, we conducted a control experiment, in which we repeated the same light stimulation protocol of area LO in three mice that did not express ChR2 (see Materials and methods). In this case, the stimulation did not affect choices in any appreciable way. In particular, the distributions of relative values under stimulation were indistinguishable from those measured without stimulation (all p>0.2, F test for equality of variance; Figure 4i–l). Similarly, the sigmoid steepness was generally indistinguishable from that measured without stimulation (all p>0.09, paired t test; Figure 5i–l).
 
-## Reversion to stereotyped behavior
+### Reversion to stereotyped behavior
 
 We investigated more specifically possible ways in which LO inactivation might disrupt decisions. In general, choices can be influenced by other factors besides the juice types and juice quantities. For example, previous work in unrestrained pigeons and rats found consistent side biases (Kagel et al., 1995). Similarly, other things equal, monkeys tend to choose on any given trial the same juice chosen in the previous trial (choice hysteresis) (Padoa-Schioppa, 2013). Here we examined three possible sources of choice biases related to the spatial configuration of the offers (side bias) and to the outcome of the previous trial (choice hysteresis, direction hysteresis). Each effect was examined separately and with a logistic analysis (see Materials and methods, Equations 2-4).
 
 We first examined choice biases under normal conditions. Figure 6 illustrates the results for one representative session. In this session, the animal presented a sizeable side bias (ε = –0.66; Figure 6b), negligible choice hysteresis (ξ = 0.13; Figure 6c), and some direction hysteresis (θ = 0.42; Figure 6d). Similar results held across sessions and across animals. In any given session, mice could present some bias favoring either the left or the right option. However, the direction of the side bias varied across sessions and across animals (Figure 2c), indicating that side biases did not reflect asymmetry in the experimental apparatus. Choice hysteresis was generally low (Figure 2d), and mice presented a small but consistent direction hysteresis (Figure 2e). In summary, under normal conditions, choice biases were relatively modest, as choices were dominated by the trade-off between juice type and juice amount.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/49669/elife-49669-fig6-v2.jpg)
+
+**Figure 6.:** (a) Example session (M57), same format as in Figure 1. (b–d) Choice biases. For the session in panel (a), the three panels illustrate the side bias (b), the choice hysteresis (c) and the direction hysteresis (d). In (b), trials were divided depending on the position of juice A (left or right). In (c), trials were divided depending on the juice chosen on the previous trial (A or B). In (d), trials were divided depending on whether juice A was offered on the side chosen in the previous trial or on the other side. In each panel, data points are averages across trials. Sigmoids were obtained from logistic regressions (Materials and methods, Equations 2-4) and each panel indicates the corresponding parameter (ε, ξ, θ).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49669/elife-49669-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Same format as in Figure 4. (a–h) Results for two VGAT-ChR2 mice (a,b) and five PV-Cre + AAV-DIO-ChR2 mice (c–g). The x- and y-axes represent the side bias (ε) measured under normal conditions (stimOFF) and under LO inactivation (stimON), respectively. Each data point represents one session and shaded ellipses represent the 90% confidence interval for the corresponding distribution. For most mice, the distribution under LO inactivation is elongated on the y-axis – an effect quantified by the F test (see p value in each panel). In other words, LO inactivation induced systematic side biases. Interestingly, side biases were not stereotyped across sessions – any one animal presented a left (ε <0) or right (ε >0) bias in different sessions. (i–l) Results for control mice.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49669/elife-49669-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Same format as in Figure 4. (a–h) Results for two VGAT-ChR2 mice (a,b) and five PV-Cre + AAV-DIO-ChR2 mice (c–g). For most mice, the distribution under LO inactivation is elongated on the y-axis – an effect quantified by the F test (p value indicated in each panel). In other words, in many sessions, LO inactivation induced a systematic bias. Note that in some cases LO inactivation resulted in a negative choice hysteresis (ξ <0), equivalent to a tendency to alternate choices between juices. (i–l) Results for control mice.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/49669/elife-49669-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Same format as in Figure 4. (a–h) Results for two VGAT-ChR2 mice (a,b) and five PV-Cre + AAV-DIO-ChR2 mice (c–g). For most mice, the distribution under LO inactivation is elongated on the y-axis – an effect quantified by the F test (p value indicated in each panel). Thus LO inactivation often induced a systematic bias. In some cases, LO inactivation resulted in a negative direction hysteresis (θ <0), equivalent to a tendency to alternate choices between sides. (i–l) Results for control mice.
+
 We next examined how LO inactivation affected choice biases. We found that optical stimulation significantly increased the side bias in 5 of 7 mice (all p<0.05, F test for equality of variance) – an effect not observed in any of the control animals (Figure 6—figure supplement 1). Similarly, LO inactivation significantly increased choice hysteresis in 5 of 7 mice (all p<0.01, F test for equality of variance; Figure 6—figure supplement 2). Finally, LO inactivation significantly increased direction hysteresis in 5 of 7 animals (all p<0.05, F test for equality of variance; Figure 6—figure supplement 3). Interestingly in some sessions, choice hysteresis (ξ) and direction hysteresis (θ) became negative under optical stimulation, indicating that LO inactivation induced choice alternation rather than choice repetition.
 
 In summary, LO inactivation reduced performance by introducing a variety of choice biases. Normally, economic decisions take place through the computation and comparison of subjective values. Absent LO, animals seem to revert to stereotyped behaviors, whereby choices are dictated by the spatial location (side bias) or by the recent history (hysteresis).
 
-## Choice deficits reflect LO inactivation
+### Choice deficits reflect LO inactivation
 
 Despite the effort to confine injections to area LO, viral infections partly spread to neighboring brain areas (Figure 3g). Thus one concern was whether the behavioral deficits described above were due to interference with olfactory processes caused by inactivation of piriform cortex and/or the olfactory bulb. More generally, we sought to assess whether choice deficits reflected inactivation of some area different from LO. To address this issue, we examined the 5 PV-Cre mice and we conducted a regression analysis relating choice deficits to viral infection in different brain areas. We proceeded as follows.
 
 First, using histological images (Figure 3g), we quantified for each mouse the extent of viral infection by brain region. Across five animals, some degree of infection was measured in 12 distinct areas, namely FrA, PrL, MO, VO, LO, DLO, OB, M1, M2, CgI, AI and EX (Franklin and Paxinos, 2013). For each animal and each area, we quantified the number of stained pixels and interpreted it as a measure of the infected volume. (Some areas were infected only in a subset of mice. Conversely, for areas PrL, MO, VO and LO, we had measures from two AP coordinates; Figure 3g) We thus obtained a matrix where rows and columns represented mice and areas, respectively, and each element indicated the infected volume.
 
-Second, we noted that the primary effect of the optogenetic manipulation on choices was to decrease the sigmoid steepness η (Figure 5). For each session, we quantified this effect by defining the steepness stimulation index (SSI):SSI=2∗(ηstimON−ηstimOFF)/(ηstimON+ηstimOFF)
+Second, we noted that the primary effect of the optogenetic manipulation on choices was to decrease the sigmoid steepness η (Figure 5). For each session, we quantified this effect by defining the steepness stimulation index (SSI):
+
+$$
+SSI=2^{∗}(η_{stimON}−η_{stimOFF})/(η_{stimON}+η_{stimOFF})
+$$
 
 For each mouse, the choice deficit was defined as CD = –mean(SSI), where the average was across sessions and the minus sign made it so that larger CDs corresponded to more severe behavioral impairments.
 
@@ -95,7 +115,13 @@ Third, we performed a LASSO regression (Tibshirani, 1996) of CD against the infe
 
 **Figure 7.:** Panels from left to right illustrate the results obtained for area LO, the olfactory bulb (OB), primary motor cortex (M1) and the medial orbital area (MO). In each panel, the x-axis represents the infection size (i.e., a proxy for the level of inactivation under optical stimulation). The y-axis represents the choice deficit, with higher values corresponding to more severe impairments. Each data point represents one animal. Only for area LO did infection size and choice deficit correlate in the predicted direction. For OB and M1 there was no correlation. For MO, the correlation was in the opposite direction.
 
-Another concern was whether choice deficits illustrated in Figure 5 reflected some motor impairment, perhaps due to inactivation of area M1. The regression analysis described above argued against this hypothesis. For additional scrutiny, we examined the licking activity of the same PV-Cre mice. In a nutshell, we found that optical stimulation affected licking in a modest, but statistically significant way. Most importantly, optically induced choice deficits were not correlated with this effect on licking. Figure 8 illustrates our results. Figure 8a depicts the licking activity recorded in a representative session. The licking frequency increased during odor presentation and peaked shortly after the go signal. Considering the time window 1.5–4.5 s after the trial start, under normal conditions (stim OFF), the animal made an average of 12.9 licks/trial. Under optical stimulation (stim ON), licking decreased to an average of 11.0 licks/trial. To quantify this effect, we defined the lick stimulation index (LSI):LSI=2∗(nlicksstimON−nlicksstimOFF)/(nlicksstimON+nlicksstimOFF)where nlicks indicate the average number of licks per trial. LSI < 0 indicated that the manipulation reduced licking, and for the session in Figure 8a we obtained LSI = –0.15. An analysis across sessions confirmed that optical stimulation affected licking. Specifically, in four animals we consistently measured LSI < 0 (all p<0.03, t test; Figure 8b); in one animal, our measures were statistically indistinguishable from LSI = 0 (p=0.43, t test). On average across sessions and mice, we measured mean(LSI)=–0.08. In contrast, for each of the three control mice, our measures were statistically indistinguishable from LSI = 0 (all p>0.25, t test); averaging across sessions and mice, we obtained mean(LSI)=–0.01.
+Another concern was whether choice deficits illustrated in Figure 5 reflected some motor impairment, perhaps due to inactivation of area M1. The regression analysis described above argued against this hypothesis. For additional scrutiny, we examined the licking activity of the same PV-Cre mice. In a nutshell, we found that optical stimulation affected licking in a modest, but statistically significant way. Most importantly, optically induced choice deficits were not correlated with this effect on licking. Figure 8 illustrates our results. Figure 8a depicts the licking activity recorded in a representative session. The licking frequency increased during odor presentation and peaked shortly after the go signal. Considering the time window 1.5–4.5 s after the trial start, under normal conditions (stim OFF), the animal made an average of 12.9 licks/trial. Under optical stimulation (stim ON), licking decreased to an average of 11.0 licks/trial. To quantify this effect, we defined the lick stimulation index (LSI):
+
+$$
+LSI=2^{∗}(nlicks_{stimON}−nlicks_{stimOFF})/(nlicks_{stimON}+nlicks_{stimOFF})
+$$
+
+where nlicks indicate the average number of licks per trial. LSI < 0 indicated that the manipulation reduced licking, and for the session in Figure 8a we obtained LSI = –0.15. An analysis across sessions confirmed that optical stimulation affected licking. Specifically, in four animals we consistently measured LSI < 0 (all p<0.03, t test; Figure 8b); in one animal, our measures were statistically indistinguishable from LSI = 0 (p=0.43, t test). On average across sessions and mice, we measured mean(LSI)=–0.08. In contrast, for each of the three control mice, our measures were statistically indistinguishable from LSI = 0 (all p>0.25, t test); averaging across sessions and mice, we obtained mean(LSI)=–0.01.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/49669/elife-49669-fig8-v2.jpg)
 
@@ -103,7 +129,7 @@ Another concern was whether choice deficits illustrated in Figure 5 reflected so
 
 The key question was whether choice deficits induced by optical stimulation were ultimately caused by motor impairments. If so, the decrease in sigmoid steepness, quantified by SSI, should correlate with the effect on licking, quantified by LSI. We thus examined the relation between SSI and LSI across sessions, separately for each mouse. For mouse M41, the two measures were not correlated (r = 0.2, p=0.37; Figure 8c). Similarly, SSI and LSI were not correlated for any of the PV-Cre mice (all r ≤ 0.2, all p>0.35). Thus we concluded that choice deficits induced by the optical stimulation were caused by specific interference with the decision process, as opposed to a generic motor impairment.
 
-## Neuronal activity in area LO during economic decisions
+### Neuronal activity in area LO during economic decisions
 
 The behavioral effects observed under LO inactivation reveal that this area is necessary for economic decisions. In another set of experiments, we examined the spiking activity of neurons in LO while mice performed the choice task. One of our aims was to compare the results to those previously obtained for central OFC in monkeys. We recorded the activity of 717 cells from eight mice. Of these cells, 197 and 520 were from left and right hemispheres, respectively. We pooled data from different mice and analyzed them similarly to how we analyzed data from monkeys (see Materials and methods). Specifically, we defined five time windows aligned with the beginning of offer presentation and with juice delivery (see Materials and methods). A preliminary assessment indicated that neurons in LO were modulated by the spatial contingencies of the choice task. In the analysis, an ‘offer type’ was defined by two quantities of juices A and B; a ‘trial type’ was defined by an offer type, a spatial configuration of the offers, and a choice. For each time window and for each trial type, we averaged spike counts across trials. A ‘neuronal response’ was defined as the firing rate of one cell in one time window, as a function of the trial type.
 
@@ -115,7 +141,148 @@ Figure 9 illustrates the activity of six example cells. The response in Figure 
 
 For a quantitative analysis of the whole data set, we proceeded in steps. First, the activity of each neuron in each time window was examined with a 3-way ANOVA (factors: offer type ×position of A × chosen side). This analysis confirmed that many cells were modulated by the offer type, the spatial configuration of the offers, and/or the movement direction (Table 1). We also conducted a 1-way ANOVA with factor trial type (which recapitulates information about the offers, their spatial locations and the chosen side). We imposed a significance threshold p<0.001. In total, 565 responses from 301 cells satisfied this criterion and were included in subsequent analyses.
 
+**Table 1.**
+ Results of ANOVAs.The table reports the results of two ANOVAs. Each column represents one factor, each row represents one time window, and numbers represent the number of cells significantly modulated by the corresponding factor (p<0.001). The bottom row indicates the number of cells that pass the criterion in at least one of the five time windows. The three left-most columns report the results of a 3-way ANOVA. Notably, many cells were modulated by each of the three factors. The right-most column reports the results of a 1-way ANOVA (factor trial type). In total, 301/717 (42%) cells passed the p<0.001 criterion in at least one time window. Neuronal responses that passed this test (N = 565) were identified as task-related and included in subsequent analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">3-way</th>
+      <th>1-way</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Offer type</td>
+      <td>Position of A</td>
+      <td>Chosen side</td>
+      <td>Trial type</td>
+    </tr>
+    <tr>
+      <td>Pre-offer</td>
+      <td>1</td>
+      <td>4</td>
+      <td>6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Post-offer</td>
+      <td>55</td>
+      <td>35</td>
+      <td>102</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>Late delay</td>
+      <td>87</td>
+      <td>40</td>
+      <td>123</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <td>Pre-juice</td>
+      <td>39</td>
+      <td>27</td>
+      <td>127</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>Post-juice</td>
+      <td>58</td>
+      <td>28</td>
+      <td>150</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <td>At least 1</td>
+      <td>154</td>
+      <td>85</td>
+      <td>308</td>
+      <td>301</td>
+    </tr>
+  </tbody>
+</table>
+
 Second, we defined numerous variables neurons in LO could conceivably encode. These included variables associated with individual juices (offer value A, offer value B, chosen value A, chosen value B, chosen juice), variables associated with spatial locations (offer value ipsi, offer value contra, chosen value ipsi, chosen value contra, chosen side), the variable position of A capturing the spatial configuration of the offers, and the variable chosen value. Of note, variables associated with spatial locations may be defined in Euclidean space (e.g., offer value left, offer value right) or in relation to the recording hemisphere (e.g., offer value ipsi, offer value contra). If the internal representation was in Euclidean space, cells encoding the offer value left and cells encoding the offer value right should be found in roughly equal proportions in each hemisphere. In contrast, preliminary observations revealed that offer value responses most often encoded the value presented on the ipsi-lateral side. Thus spatial variables included in the analysis were defined in relation to the recording hemisphere (Table 2).
+
+**Table 2.**
+ Variables defined in the analysis of neuronal responses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Variable</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>position of A</td>
+      <td>Binary; one if juices A/B are offered on ipsi/contra sides, 0 otherwise</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>offer value A</td>
+      <td>Value of juice A offered</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>offer value B</td>
+      <td>Value of juice B offered</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>offer value ipsi</td>
+      <td>Value offered on the ipsi-lateral side</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>offer value contra</td>
+      <td>Value offered on the contra-lateral side</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>chosen value</td>
+      <td>Value of the chosen juice</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>chosen value A</td>
+      <td>Chosen value if juice A chosen, 0 otherwise</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>chosen value B</td>
+      <td>Chosen value if juice B chosen, 0 otherwise</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>chosen value ipsi</td>
+      <td>Chosen value if ipsi side is chosen, 0 otherwise</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>chosen value contra</td>
+      <td>Chosen value if contra side is chosen, 0 otherwise</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>chosen juice</td>
+      <td>Binary; one if juice A is chosen, 0 if juice B is chosen</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>chosen side</td>
+      <td>Binary; one if ipsi side is chosen, 0 if contra side is chosen</td>
+    </tr>
+  </tbody>
+</table>
 
 Each neuronal response was separately regressed against each variable. Variables that provided a significantly non-zero slope (p<0.05) were said to ‘explain’ the response. We then generated two population plots. Figure 10a illustrates for each time window the number of responses explained by each variable. Since responses could be explained by more than one variable, each response may contribute to multiple bins in this plot. For each response, we also identified the variable that provided the best explanation (highest R2). Figure 10b illustrates the population results for this analysis. In this case, each response contributes at most to one bin.
 
@@ -133,7 +300,7 @@ Inspection of Figure 10b reveals that few variables were most effective in expla
 
 We presented three main results. First, we developed a mouse model of economic choice behavior. The task was very similar to that used in monkey studies, as animals chose between different juices offered in variable amounts. Choice patterns were comparable to those measured for monkeys, although choice variability was generally higher. Of note, initially naïve animals were able to learn the choice task within a few weeks. Second, we showed that economic decisions in mice depend on area LO. Specifically, optogenetic inactivation of LO induced erratic changes of relative value and consistently increased choice variability. Third, we showed that neurons in LO encode different variables reflecting the input (offer values) and output (choice outcome, chosen value) of the decision process. This neural representation closely resembles that previously identified in primates, except that the reference frame in the mouse LO was spatial while that in the monkey OFC was good-based. We next elaborate on each of these results.
 
-## LO is necessary for economic decisions
+### LO is necessary for economic decisions
 
 Previous work found that lesion or inactivation of orbital cortex in primates and rodents disrupts performance under reinforcer devaluation. This observation is often interpreted as relevant to neuroeconomics, under the assumption that values driving goal-directed behavior are equivalent to values driving economic decisions (O'Doherty, 2014; Padoa-Schioppa and Schoenbaum, 2015). Our results demonstrate more directly that economic decisions critically depend on the orbital cortex.
 
@@ -141,7 +308,7 @@ Our choice task relied on olfactory stimuli and licking responses. Since viral i
 
 Our results on the effects of LO inactivation stand in contrast to those of a recent study that failed to disrupt economic decisions through optogenetic inactivation of area LO in rats (Gardner et al., 2017). The discordance is striking because the choice task used in the other study is very similar to ours. Furthermore, as a positive control, the other study reported that LO inactivation affected performance under reinforcer devaluation. Several considerations are in order. In itself, their failure to disrupt economic decisions is not particularly informative. Viral infection is typically more reliable in mice than rats (Witten et al., 2011). Furthermore, inactivation through ChR2 stimulation of interneurons is often more effective than inactivation through halo-rhodopsin (Raimondo et al., 2012; Wiegert et al., 2017), which they used. Thus the most cogent questions pertain to their positive control. In this respect, two elements seem most relevant. First, their experiments were not temporally counterbalanced. All their rats were initially trained in the economic choice task, and tested under LO inactivation. Subsequently, animals were trained in the reinforcer devaluation task, and tested under LO inactivation. Viral injections were performed after the initial training. Since viral infection takes time (Witten et al., 2011), LO inactivation was almost certainly more effective in reinforcer devaluation experiments than in economic choice experiments. Second, a close observation of their behavioral data reveals that in the last three training sessions, the performance of the experimental group was higher than that of the control group (their Figure 6a). If data from these three sessions were combined, the difference between the two groups of rats would presumably be comparable to the difference observed under LO inactivation (their Figure 6c). These various factors, possibly in addition to subtle differences in task design (Gardner et al., 2017), can explain the discrepancy between the two studies.
 
-## Representation of subjective values in LO
+### Representation of subjective values in LO
 
 Our recordings revealed that neurons in LO encoded different variables intimately related to the decision process. Specifically, neurons encoded the spatial configuration of the offers (position of A), the decision input (offer value ipsi), and the decision output (chosen side, chosen value). Comparing our results to those of monkey studies, there are notable similarities and interesting differences. On the one hand, three variables represented in LO (offer value ipsi, chosen side and chosen value) are analogous or identical to those previously identified in the primate OFC (offer value, chosen juice and chosen value). On the other hand, a major difference is that input and output in LO are represented in a spatial frame of reference. In contrast, in the primate OFC, input and output are defined in a non-spatial, good-based reference frame (Padoa-Schioppa, 2011).
 
@@ -149,7 +316,7 @@ The finding that neurons in LO represent options and values in a spatial referen
 
 Two groups of responses identified in LO encoded variables offer value ipsi and chosen value. Importantly, these variables reflect the subjective values of the options and integrate the two dimensions varied in our experiments, namely juice type and quantity. Our result matches a large body of work in human and non-human primates. It also confirms and extends previous observations in rodents (Gremel and Costa, 2013; Hirokawa et al., 2019; Roitman and Roitman, 2010; Sul et al., 2010; van Duuren et al., 2009; Zhou et al., 2019). Interestingly, one earlier study in rats failed to find any systematic relation between the effects induced by changes in reward quantity and those induced by changes in delay (Roesch et al., 2006). The reasons for their negative result are not clear, but several factors might contribute. First, in the earlier study, most of the analysis focused on the time window following reward delivery. However, we found that value-encoding responses are most prominent immediately after the offer, and that neuronal responses at juice delivery mostly represent the binary choice outcome. Second, in the earlier study, reduced activity at juice delivery in long delay trials might be due to the animal's inability to predict the reward timing (because of the long delay), as opposed to temporal discounting per se. In fact, at the time of delivery, the subjective value of the juice should no longer depend on the preceding delay. Third, in their study, the two dimensions were never manipulated at the same time. In fact, trials were blocked, both dimensions were fixed within a block, and firing rates were compared across blocks. If the value representation in LO is range adapting as is the value representation in the primate OFC (Cox and Kable, 2014; Padoa-Schioppa, 2009), neurons in the blocked design might appear untuned. Thus range adaptation might explain why varying the reward quantity had only a modest effect on neuronal activity. In conclusion, future work should re-examine the representation of temporally discounted values in area LO with more suitable task design and data analysis.
 
-## Mechanisms of economic decisions in mice
+### Mechanisms of economic decisions in mice
 
 As noted above, the variables represented in the mouse LO closely resembled those encoded in the primate OFC, except for the fact that they were defined in a spatial reference frame. Modeling work has shown that the three groups of cells identified in the primate OFC are computationally sufficient to generate binary choices, suggesting that economic decisions are formed in a neural circuit within this area (Padoa-Schioppa and Conen, 2017). Importantly, current models may be formulated equally well in spatial terms. In other words, neurons encoding the variables identified here are also sufficient to generate binary choices, indicating that economic decisions in mice could be formed within area LO. With this premise, one aspect of our results is noteworthy.
 
@@ -159,7 +326,7 @@ In conclusion, we established a genetically tractable animal model of economic c
 
 ## Materials and methods
 
-## Animals and surgical procedures
+### Animals and surgical procedures
 
 This study reports on 19 mice of different strains, including C57BL/6J (B6; N = 2; Jackson Laboratory, stock #000664), Pvalbtm1(cre)Arbr/J (PV-Cre; N = 7; Jackson Laboratory, stock #008069) and Tg(Slc32a1-COP4*H134R/EYFP)8Gfng/J (VGAT-ChR2; N = 10; Jackson Laboratory, stock #014548). Both male and female animals were used for neuronal recordings and optogenetic inactivation of area LO. All mice were >10 weeks old at the time of the experiments. Animals were housed individually and the experiments were conducted in the dark phase of a 12 hr light/dark cycle. Mice were under water restriction. On testing days, they had access to water or sucrose water only during the experiments. All experimental procedures conformed to the NIH Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee (IACUC) at Washington University in St Louis.
 
@@ -167,7 +334,7 @@ Neuronal recordings were conducted with N = 8 VGAT-ChR2 mice. The optogenetic 
 
 All surgeries were conducted under general anesthesia induced with Isoflurane, alone or in combination with Ketamine. A titanium head plate implanted on the bregma was used to restrain the animal and as a landmark for the neuronal recordings. The craniotomy, slightly larger than the target recording area, typically spanned 2.0–3.5 mm anterior to the bregma and 0.5–1.8 mm lateral to the midline. For the optogenetic experiments, we implanted cannulas with an optical fiber (200 µm core diameter) bilaterally at 2.7 mm anterior, 1.4 mm lateral. The tip of the cannula was placed at 1.1 mm ventral to the brain surface. In relevant experiments, adeno-associated virus (AAV.EF1a.DIO.hChR2(H134R)-eYFP.WPRE.hGH; Addgene 20298; titer = 7*1012 vg/ml) or saline was injected with a Hamilton syringe at 2.7 mm anterior, 1.4 mm lateral, 1.8 mm ventral from the brain surface. Specifically, we injected 100 nl over 10 min, and we waited 2 min before retracting the syringe.
 
-## Economic choice task
+### Economic choice task
 
 We designed the choice task to resemble as much as possible the task used for monkeys (Padoa-Schioppa and Assad, 2006). During the experiment, the mouse was placed in a plastic tube with the head fixed. Two odor delivery systems and two liquid spouts were placed symmetrically on the left and on the right of the animal head, and close to the mouth. In each session, the animal chose between two liquid rewards offered in variable amounts, delivered from left and right lick ports. We refer to the liquid rewards as ‘juices’ for uniformity of language with the monkey studies. On any trial, the offered juice types were signaled with different odors, and juice amounts were signaled by the corresponding odor concentration. Before each trial, a vacuum sweep removed the odors remaining from the previous trial. Immediately thereafter, the two odors (the offers) were presented simultaneously from two directions (left, right). The odor presentation lasted for 2.8 s, after which the animal indicated its choice by licking one of the two spouts. The liquid spouts were fixed and did not retract during odor presentation. The response period started with an auditory ‘go’ cue and licking before the go cue was disregarded. Licking was detected by two photodiodes located posterior to the liquid spouts. If the animal did not respond within 4 s, the trial was aborted (Figure 1). In forced choices, where only one juice was offered, trials in which the animal licked the wrong spout were considered errors. Such cases were almost inexistent in monkey experiments, but occurred sometimes in mouse experiments (Figure 1). Upon error trials, we aborted the trial and repeated the same offer in the subsequent trial.
 
@@ -175,13 +342,13 @@ Throughout the experiments, we used the same two liquid rewards, namely water an
 
 Typically, mice performed the task for ~30 min each day, during which they completed ~300 correct trials and received 0.8–1.6 ml of liquid reward. The multiplicity of offer types was fixed within each session and the offer type was randomly selected at the beginning of each trial. Sessions typically included ~40% of forced choices (20% for each juice). In forced choice trials, error trials were followed by a 3 s additional delay (with white noise). (For some sessions in mice #36 and #41, the delay lasted 5 s; in mouse #39, the delay lasted 1 s.)
 
-## Training protocol
+### Training protocol
 
 With experience, our training protocol became more standard. Eventually, training developed in four steps. (1) Mice were trained in a direction discrimination task. We presented the odor from the left or from the right in random alternation, and we delivered the juice only when the animal licked the corresponding spout. Mice typically took ~10 days to reach 80% accuracy. (2) We introduced the association between odor concentration and juice quantity. We used the same scheme as in (1), but the odor was presented at different concentrations and coupled with different juice quantities. Mice typically took ~3 days to reach 80% accuracy. (3) We introduced the association between different odors and different juice types. Specifically, we repeated steps (1) and (2) using a second odor and a second juice type (in some cases, we experimented with 3 or four juice types). Mice typically took 6–10 days to reach 80% accuracy. (4) We presented mice with the full choice task, where animals choose between the two juice types offered in variable amounts (Figure 1). We trained the animal on the choice task for at least 5 days before starting the experiments.
 
 Of the two mice trained in the ‘flipped’ version of the task, one (#39) was naïve while the other (#53) had already been trained in the standard task. Both mice took ~20 extra days to reach performance level.
 
-## Optical stimulation, neuronal recordings, and histology
+### Optical stimulation, neuronal recordings, and histology
 
 Optical stimulation was performed with blue light (473 nm Blue DPSS Laser, Shanghai Laser). Core fibers (200 µm, Doric) were connected through two cannulas inserted bilaterally in area LO. To precisely control the stimulation timing, we used an acousto-optic device (AO modulator/shifter, Optoelectronics) and an associated RF Driver MODA110-B4-30 (Optoelectronics). To inactivate area LO, we typically used 3–9 mW intensity, 10 ms pulses and 10–33 Hz frequency. The stimulation started at the beginning of odor presentation and lasted 3.8 s (i.e., throughout the offer period plus 1 s). In most sessions, stimulation conditions (OFF or ON) varied pseudo-randomly on a trial-by-trial basis. In a subset of sessions, trials were divided in blocks of 20–30 trials. The optical inactivation experiments were conducted on N = 2 VGAT-ChR2 mice (29 sessions total), N = 5 PV-Cre mice injected with AAV-DIO-ChR2 in area LO (78 sessions total), and N = 3 control mice (39 sessions total).
 
@@ -193,23 +360,57 @@ At the end of the recording experiments, we injected a dye (DiI) roughly at the 
 
 **Figure 12.:** Recording regions for all animals were transferred on the same hemisphere. Approximate AP coordinate of this section is bregma 2.68 mm, interaural 6.48 mm.
 
-## Data analysis, behavior
+### Data analysis, behavior
 
-All the analyses of behavioral and neuronal data were conducted in Matlab (MathWorks). Behavioral choice patterns were analyzed using logistic regression. The basic logistic model was written as follows:(1)choiceB=1/(1+exp(−X))X=a0+a1log(qB/qA)where choice B equals one if the animal chose juice B and 0 otherwise, qA and qB are the quantities of juices A and B offered to the animal, and A is the preferred juice. Forced choice trials were excluded. The logistic regression provided an estimate for parameters a0 and a1. By construction, a0 <0 and a1 >0. The relative value of the two juices was defined as ρ = exp(−a0/a1). In essence, in any given session, ρ was the amount of juice B that, if offered against 1A, made the animal indifferent between the two juices. The sigmoid steepness was defined as η = a1. The steepness (also termed inverse temperature) is inversely related to choice variability.
+All the analyses of behavioral and neuronal data were conducted in Matlab (MathWorks). Behavioral choice patterns were analyzed using logistic regression. The basic logistic model was written as follows:
 
-In further analyses, we examined the possible effects on choices of three additional factors. First, the side bias was examined with the following model:(2)choiceB=1/(1+exp(−X))X=a0+a1log(qB/qA)+a2(δA,right−δB,right)where δJ, right = 1 if juice J was offered on the right and 0 otherwise, and J = A, B. This logistic fit returned two sigmoid functions with the same steepness and different flex points. The side bias was quantified as ε = − a2/a1. A measure of ε >0 indicated that, other things equal, the animal tended to choose the juice offered on the right.
+$$
+choiceB=1/(1+exp(−X))X=a_{0}+a_{1}log(q_{B}/q_{A})
+$$
 
-Second, choice hysteresis (Padoa-Schioppa, 2013) was examined with the following model:(3)choiceB=1/(1+exp(−X))X=a0+a1log(qB/qA)+a2(δn−1,A−δn−1,B)where δn-1, X = 1 if in the previous trial the animal chose juice X and 0 otherwise, and X = A, B. Choice hysteresis was quantified as ξ = − a2/a1. A measure of ξ >0 indicated that, other things equal, the animal tended to choose the same juice chosen in the previous trial.
+where choice B equals one if the animal chose juice B and 0 otherwise, qA and qB are the quantities of juices A and B offered to the animal, and A is the preferred juice. Forced choice trials were excluded. The logistic regression provided an estimate for parameters a0 and a1. By construction, a0 <0 and a1 >0. The relative value of the two juices was defined as ρ = exp(−a0/a1). In essence, in any given session, ρ was the amount of juice B that, if offered against 1A, made the animal indifferent between the two juices. The sigmoid steepness was defined as η = a1. The steepness (also termed inverse temperature) is inversely related to choice variability.
 
-Third, direction hysteresis was examined with the following model:(4)choiceB=1/(1+exp(−X))X=a0+a1log(qB/qA)+a2(δn−1,posA−δn−1,posB)where δn-1, pos B = 1 if juice B was offered in the same spatial position as that chosen in the previous trial and 0 otherwise, and δn-1, pos A = 1 – δn-1, pos B. Direction hysteresis was quantified as θ = − a2/a1. A measure of θ >0 indicated that, other things equal, the animal tended to choose the juice offered on the same side as the side chosen in the previous trial.
+In further analyses, we examined the possible effects on choices of three additional factors. First, the side bias was examined with the following model:
 
-All the logistic models described so far analyzed choices in the absence of optogenetic manipulations. To quantify the effects of these manipulations, we constructed additional logistic models. The basic effects of LO inhibition on the relative value and choice variability were quantified with the following model:(5)choiceB=1/(1+exp(−X))X=(a0+a1log(qB/qA))δstim,OFF+(a2+a3log(qB/qA))δstim,ONwhere δstim, ON = 1 in stimulation trials and 0 otherwise, and δstim, OFF = 1 − δstim, ON. In essence, Equation 5 repeats Equation 1 twice, once for trials without stimulation and once for trials with stimulation. Hence, the logistic fit returns two sigmoid functions that differ for their flex point and for their steepness. The effects of stimulation were quantified by comparing ρstim OFF = exp(−a0/a1) and ρstim ON = exp(−a2/a3), and by comparing ηstim OFF = a1 and ηstim ON = a3.
+$$
+choiceB=1/(1+exp(−X))X=a_{0}+a_{1}log(q_{B}/q_{A})+a_{2}(\delta_{A,right}−\delta_{B,right})
+$$
 
-To test whether LO inactivation specifically affected the side bias, we constructed the following model:(6)choiceB=1/(1+exp(−X))X=(a0+a1log(qB/qA)+a2(δA,right−δB,right))δstim,OFF+(a3+a4log(qB/qA)+a5(δA,right−δB,right))δstim,ON
+where δJ, right = 1 if juice J was offered on the right and 0 otherwise, and J = A, B. This logistic fit returned two sigmoid functions with the same steepness and different flex points. The side bias was quantified as ε = − a2/a1. A measure of ε >0 indicated that, other things equal, the animal tended to choose the juice offered on the right.
+
+Second, choice hysteresis (Padoa-Schioppa, 2013) was examined with the following model:
+
+$$
+choiceB=1/(1+exp(−X))X=a_{0}+a_{1}log(q_{B}/q_{A})+a_{2}(\delta_{n−1,A}−\delta_{n−1,B})
+$$
+
+where δn-1, X = 1 if in the previous trial the animal chose juice X and 0 otherwise, and X = A, B. Choice hysteresis was quantified as ξ = − a2/a1. A measure of ξ >0 indicated that, other things equal, the animal tended to choose the same juice chosen in the previous trial.
+
+Third, direction hysteresis was examined with the following model:
+
+$$
+choiceB=1/(1+exp(−X))X=a_{0}+a_{1}log(q_{B}/q_{A})+a_{2}(\delta_{n−1,posA}−\delta_{n−1,posB})
+$$
+
+where δn-1, pos B = 1 if juice B was offered in the same spatial position as that chosen in the previous trial and 0 otherwise, and δn-1, pos A = 1 – δn-1, pos B. Direction hysteresis was quantified as θ = − a2/a1. A measure of θ >0 indicated that, other things equal, the animal tended to choose the juice offered on the same side as the side chosen in the previous trial.
+
+All the logistic models described so far analyzed choices in the absence of optogenetic manipulations. To quantify the effects of these manipulations, we constructed additional logistic models. The basic effects of LO inhibition on the relative value and choice variability were quantified with the following model:
+
+$$
+choiceB=1/(1+exp(−X))X=(a_{0}+a_{1}log(q_{B}/q_{A}))\delta_{stim,OFF}+(a_{2}+a_{3}log(q_{B}/q_{A}))\delta_{stim,ON}
+$$
+
+where δstim, ON = 1 in stimulation trials and 0 otherwise, and δstim, OFF = 1 − δstim, ON. In essence, Equation 5 repeats Equation 1 twice, once for trials without stimulation and once for trials with stimulation. Hence, the logistic fit returns two sigmoid functions that differ for their flex point and for their steepness. The effects of stimulation were quantified by comparing ρstim OFF = exp(−a0/a1) and ρstim ON = exp(−a2/a3), and by comparing ηstim OFF = a1 and ηstim ON = a3.
+
+To test whether LO inactivation specifically affected the side bias, we constructed the following model:
+
+$$
+choiceB=1/(1+exp(−X))X=(a_{0}+a_{1}log(q_{B}/q_{A})+a_{2}(\delta_{A,right}−\delta_{B,right}))\delta_{stim,OFF}+(a_{3}+a_{4}log(q_{B}/q_{A})+a_{5}(\delta_{A,right}−\delta_{B,right}))\delta_{stim,ON}
+$$
 
 The test was conducted by comparing εstim OFF = − a2/a1 and εstim ON = − a5/a4. We constructed analogous logistic models to test whether LO inactivation specifically affected choice hysteresis or direction hysteresis.
 
-## Data analysis, neuronal activity
+### Data analysis, neuronal activity
 
 Preliminary observations revealed that the activity of neurons in LO varied as a function of the offered and chosen juices, but also depended on the spatial contingencies of the choice task. This is unlike what we found in the primate OFC, where firing rates are independent of the spatial contingencies (Grattan and Glimcher, 2014; Padoa-Schioppa and Assad, 2006). Thus the present analysis was designed to capture the spatial components of the choice task. Apart from this aspect, our analyses closely resembled those previously conducted in monkey studies. Neuronal activity was examined in 5 time windows: pre-offer (0.6 s preceding the offer); post-offer (0.2–0.8 s after offer on); late delay (0.6–1.2 s after offer on); pre-juice (0.6 s preceding juice delivery); post-juice (0.6 s following the beginning of juice delivery). An ‘offer type’ was defined by two juice quantities offered to the mouse, independent of the spatial configuration and the animal's choice. A ‘trial type’ was defined by an offer type, a spatial configuration (e.g., juice A on the left), and a choice. A ‘neuronal response’ was defined as the activity of one neuron in one time window as a function of the trial type. Sessions typically included 10–12 offer types (including forced choices), and ~30 trial types. Error trials in forced choices were excluded from the analysis. We also excluded from the analysis trial types with ≤2 trials. Neuronal responses were constructed by averaging spike counts across trials for each trial type.
 

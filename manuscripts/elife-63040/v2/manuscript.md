@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Cerebral blood flow is dynamically regulated by neurovascular coupling to meet the dynamic metabolic demands of the brain. We hypothesized that TRPA1 channels in capillary endothelial cells are stimulated by neuronal activity and instigate a propagating retrograde signal that dilates upstream parenchymal arterioles to initiate functional hyperemia. We find that activation of TRPA1 in capillary beds and post-arteriole transitional segments with mural cell coverage initiates retrograde signals that dilate upstream arterioles. These signals exhibit a unique mode of biphasic propagation. Slow, short-range intercellular Ca 2+ signals in the capillary network are converted to rapid electrical signals in transitional segments that propagate to and dilate upstream arterioles. We further demonstrate that TRPA1 is necessary for functional hyperemia and neurovascular coupling within the somatosensory cortex of mice in vivo. These data establish endothelial cell TRPA1 channels as neuronal activity sensors that initiate microvascular vasodilatory responses to redirect blood to regions of metabolic demand.
+Cerebral blood flow is dynamically regulated by neurovascular coupling to meet the dynamic metabolic demands of the brain. We hypothesized that TRPA1 channels in capillary endothelial cells are stimulated by neuronal activity and instigate a propagating retrograde signal that dilates upstream parenchymal arterioles to initiate functional hyperemia. We find that activation of TRPA1 in capillary beds and post-arteriole transitional segments with mural cell coverage initiates retrograde signals that dilate upstream arterioles. These signals exhibit a unique mode of biphasic propagation. Slow, short-range intercellular Ca2+ signals in the capillary network are converted to rapid electrical signals in transitional segments that propagate to and dilate upstream arterioles. We further demonstrate that TRPA1 is necessary for functional hyperemia and neurovascular coupling within the somatosensory cortex of mice in vivo. These data establish endothelial cell TRPA1 channels as neuronal activity sensors that initiate microvascular vasodilatory responses to redirect blood to regions of metabolic demand.
 
 ## Introduction
 
@@ -37,29 +37,69 @@ Here, we tested the hypothesis that transient receptor potential ankyrin 1 (TRPA
 
 ## Results
 
-## Functional TRPA1 channels are present in native brain capillary endothelial cells
+### Functional TRPA1 channels are present in native brain capillary endothelial cells
 
 Native cerebral capillary endothelial cells were freshly isolated using combined mechanical and enzymatic dispersion (Longden et al., 2017) and were patch-clamped in the conventional whole-cell configuration. Increasing extracellular [K+] to 60 mM stimulated Ba2+-sensitive Kir currents in these cells, whereas NS309, a selective activator of small- and intermediate-conductance Ca2+-activated K+ channels (SK and IK, respectively) had no effect (Figure 1—figure supplement 1A to D). These attributes are consistent with those reported for native brain capillary endothelial cells in a prior study (Longden et al., 2017).
 
 Non-selective cation currents in native brain capillary endothelial cells were recorded by patch-clamp electrophysiology in the whole-cell configuration using symmetrical cation gradients established by intracellular and extracellular solutions. In isolated cells, application of voltage ramps from −80 to +80 mV over 300 ms in the presence of the endogenous TRPA1 agonist 4-HNE (100 nM) elicited dually rectifying currents with a reversal potential near 0 mV (Figure 1A and B). The selective TRPA1 inhibitor HC-030031 (10 µM) significantly attenuated this current. To confirm that 4-HNE actions are specific for TRPA1, we generated endothelial cell-specific TRPA1-knockout (Trpa1-ecKO) mice. This was accomplished by initially crossing mice homozygous for loxP sites flanking the region within Trpa1 encoding the S5 and S6 transmembrane domains (Trpa1fl/fl) with mice heterozygous for TEK tyrosine kinase (Tek) promoter-driven expression of Cre-recombinase (TekCre). Intermediate heterozygote mice were crossed to generate Trpa1-ecKO mice. Our prior study demonstrated that TRPA1 expression is undetectable by western blotting in cerebral arteries from Trpa1-ecKO mice, but expression was unaffected in other cell types (Sullivan et al., 2015). Trpa1fl/fl mice, homozygous for floxed Trpa1 but without expression of Cre-recombinase, were used as controls. We found that 4-HNE did not stimulate cation currents in brain capillary endothelial cells isolated from Trpa1-ecKO mice (Figure 1C to F), supporting the selectivity of 4-HNE and the expression of functional TRPA1 channels in native brain capillary endothelial cells from wild-type and Trpa1fl/fl mice. Control patch-clamp experiments in which extracellular [K+] was raised to 60 mM to evoke Kir currents (Longden et al., 2017) further confirmed the viability of capillary endothelial cells isolated from Trpa1-ecKO mice (Figure 1C to F).
 
-## Stimulation of TRPA1 channels in brain capillary endothelial cells induces dilation of upstream parenchymal arterioles
+![Figure 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig1-v2.jpg)
+
+**Figure 1.:** (A and B) Representative current versus time trace (A) and I-V relationship (B) from a whole-cell patch-clamp electrophysiology experiment demonstrating that the TRPA1 activator 4-HNE (100 nM) elicited a current in a native capillary endothelial cell isolated from a control Trpa1fl/fl mouse that was blocked by the selective TRPA1 antagonist HC-030031 (10 µM). (C and D) Representative current versus time trace (C) and I-V relationship (D) demonstrating that 4-HNE was unable to elicit a current in a native capillary endothelial cell from a Trpa1-ecKO mouse. Cell viability was confirmed by evoking Kir currents with raised extracellular KCl (60 mM) that were sensitive to BaCl2 (10 µM). (E and F) Summary data showing that the TRPA1 current produced by 4-HNE at +80 mV (E) and −80 mV (F) was blocked by HC-030031 and was absent in cells from Trpa1-ecKO mice (Trpa1fl/fl, n = 12 cells from five animals; Trpa1-ecKO, n = 8 cells from three animals; *p<0.05, one-way ANOVA).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Representative current-time trace (A) and I-V relationship (B) from a whole-cell patch-clamp electrophysiology experiment demonstrating that the IK and SK channel activator NS309 (10 µM) did not produce a current in isolated native capillary endothelial cells from wild-type mice. Kir currents were detected by raising extracellular KCl (60 mM) and were confirmed by assessing their sensitivity to BaCl2 (10 µM). (C and D) Summary data showing the current produced by NS309 (10 µM) and KCl (60 mM) at +40 mV (C) and −80 mV (D) (n = 6 cells from three animals; *p<0.05, one-way ANOVA).
+
+### Stimulation of TRPA1 channels in brain capillary endothelial cells induces dilation of upstream parenchymal arterioles
 
 To determine if activation of capillary endothelial cell TRPA1 channels relaxes the upstream vasculature, we utilized a recently described ex vivo cerebral microvascular preparation in which microvascular segments with intact capillary branches are isolated from the brain, cannulated with micropipettes, and pressurized to 40 mmHg (Longden et al., 2017; Figure 2A). Preparations varied in terms of length of the post-arteriole transitional segment and number of capillary branches present with preparations predominantly exhibiting primary and secondary branches that occasionally extended beyond the tertiary branch order. In these experiments, a micropipette attached to a picospritzer was placed adjacent to the capillary extremities, which were stimulated by locally applying pulses (7 s; pressure,~10 psi) of various substances dissolved in artificial cerebral spinal fluid (aCSF). The spread of the picospritzed solution was assessed by pulsing aCSF containing 1% (w/v) Evans Blue dye. Control experiments showed that dye ejected from the micropipette was localized to the capillary region and did not spread to the upstream parenchymal arteriole segment (Video 1). To validate the viability of this preparation, we focally applied pulses of aCSF containing elevated [K+] (10 mM) onto capillary extremities. This maneuver induced a transient, reversible, and reproducible dilation of the upstream arteriole segment, as has been shown previously (Longden et al., 2017). This response was attenuated by incubating the ex vivo preparation with BaCl2 (30 µM) to inhibit Kir channels (Figure 2—figure supplement 1A and B). Picospritzing capillary extremities with standard aCSF (3 mM K+) did not affect the diameter of upstream arteriole segments (Figure 2—figure supplement 1C and D). Additional control studies comparing the dilatory response of upstream arterioles to elevated [K+] application before and after severing capillaries from the upstream arteriole segment (Figure 2—figure supplement 2A) showed that interruption of this connection prevented elevated [K+]-induced dilation of upstream arterioles (Figure 2—figure supplement 2B). These data demonstrate the viability of our microvascular preparation and validate conducted vasodilation in response to stimulation of capillaries with elevated [K+], as previously reported by Longden et al., 2017.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental illustration. Microvascular preparations were obtained from the subcortical region that is supplied by the middle cerebral artery (MCA). Representative image of an ex vivo microvascular preparation consisting of an intact parenchymal arteriole with attached capillaries. The post-arteriole transitional segment (TS) and capillaries are located at the distal end of the offshoot arteriole branch. Scale bar = 100 µm. Drugs were directly applied onto capillary extremities with a micropipette. (B) Representative traces showing that application of 4-HNE (1 µM; green box) directly onto capillary extremities produced a reproducible increase in lumen diameter in two different areas (Zone 1 and Zone 2) on the upstream arteriole segment in microvascular preparations isolated from wild-type mice. The dilation produced by 4-HNE was blocked the selective TRPA1 antagonist HC-030031 (10 µM). (C) Concentration-response curve produced by locally applying 4-HNE to capillary extremities over a concentration range of 10 nM to 30 µM (n = 6 preparations from five animals). An EC50 of 190 nM was calculated from the plot of a non-linear regression curve. (D) Summary data showing that dilation to 4-HNE (1 µM) was blocked by HC-030031 (10 µM) (n = 9 preparations from six animals; *p<0.05, paired t-test). (E) Concentration-response curve produced by locally applying the TRPA1 agonist AITC to capillary extremities over a concentration range of 100 nM to 100 µM. An EC50 of 6 µM was calculated from the plot of a non-linear regression curve (n = 6 preparations from five animals). (F) Summary data showing that dilation to AITC (30 µM) was blocked by HC-030031 (10 µM) (n = 7 preparations from five animals; *p<0.05, paired t-test). (G) Representative traces showing that application 4-HNE (1 µM; green box) onto capillary extremities was unable to dilate the upstream arteriole in microvascular preparations from Trpa1-ecKO mice, whereas application of KCl (10 mM; blue box) effectively dilated the upstream arteriole in these preparations. (H and I) Summary data showing that neither 4-HNE (1 µM) (n = 7 preparations from five animals; *p<0.05) (H) nor AITC (30 µM) (n = 7 preparations from four animals; *p<0.05, paired t-test) (I) evoked dilation of upstream arterioles in preparations from Trpa1-ecKO mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative traces (A) and summary data (B) showing that application of a solution containing elevated KCl (10 mM; blue box) directly onto capillary extremities induced a dilation of the upstream arteriole that was blocked by BaCl2 (30 µM) in ex vivo microvascular preparations from wild-type mice (n = 6 preparations from four animals; *p<0.05, paired t-test). (C and D) Representative trace (C) and summary data (D) showing that application of aCSF (black box) onto the capillary bed did not affect the lumen diameter of upstream arterioles (n = 6 preparations from four animals; *p<0.05, paired t-test).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images showing an intact microvascular preparation (left) and the same preparation after severing the connection between the arteriole and capillary (right). Scale bar = 50 µm. (B and C) Summary data demonstrating the loss of propagative dilation to elevated KCl (10 mM) (n = 7 preparations from five animals; *p<0.05, paired t-test) (B) and AITC (30 µM) (n = 7 preparations from five animals; *p<0.05, paired t-test) (C) after the connection is lost.
+
+![Video 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-video1.mp4.jpg)
+
+**Video 1.:** Representative time-series images of a microvascular preparation demonstrating that application of Evans Blue dye (1% w/v) is localized to the region of the capillary tree and does not spread to the upstream parenchymal arteriole. Evans Blue was applied after 10 s. Scale bar = 100 µm.
+
 TRPA1 channels in capillary segments of the ex vivo microvascular preparation were stimulated by focally applying pulses of various TRPA1-activating compounds dissolved in aCSF. Application of 4-HNE onto capillary extremities dilated upstream arterioles in ex vivo preparations from wild-type mice (Figure 2B) in a concentration-dependent manner. The EC50 for 4-HNE-induced dilation was 190 nM, and the maximal response was achieved at 1 µM; thus, this latter concentration was used in subsequent investigations (Figure 2C). Dilation of parenchymal arterioles in response to capillary-applied 4-HNE was significantly attenuated by superfusing the ex vivo preparation with HC-030031 (Figure 2B and D). Application of the TRPA1-activating compound, allyl isothiocyanate (AITC), to capillary beds also produced a concentration-dependent dilation of upstream arterioles (Video 2). The EC50 of AITC-induced arteriole dilation was 6 µM, and the maximal response was achieved at a concentration of 30 µM (Figure 2E). HC-030031 also inhibited upstream dilation in response to AITC (30 µM) (Figure 2F). In addition, the dilatory response of upstream arterioles to stimulation of capillary extremities with AITC was absent after severing the connection between capillaries and the upstream arteriole (Figure 2—figure supplement 2C), providing evidence that this response requires intercellular signal propagation. In ex vivo preparations obtained from Trpa1-ecKO mice, stimulation of capillaries with elevated [K+] evoked dilation of upstream arterioles (Figure 2G to I); however, neither 4-HNE (Figure 2G and H) nor AITC (Figure 2I) had any effect at concentrations that produced maximal dilation of microvascular preparations from control animals. Together, these data demonstrate that activation of TRPA1 channels in brain capillary endothelial cells produces a signal that propagates to upstream parenchymal arterioles to cause dilation.
 
-## Biphasic propagation velocity of conducted vasodilator signals initiated by TRPA1
+![Video 2.](https://cdn.elifesciences.org/articles/63040/elife-63040-video2.mp4.jpg)
+
+**Video 2.:** Representative time-series images of a microvascular preparation demonstrating that localized application of AITC (30 µM) onto capillary extremities dilates the upstream arteriole. AITC was applied after 10 s. Scale bar = 50 µm.
+
+### Biphasic propagation velocity of conducted vasodilator signals initiated by TRPA1
 
 We next used a fluorescence labeling strategy to image the cell types present in our ex vivo cerebral microvascular preparation. Cannulated preparations were stained with isolectin B4 to visualize the endothelium and anti-α-smooth muscle actin antibody to visualize mural cell coverage. Fluorescent images obtained showed an interconnected network of endothelial cells encompassed by mural cells (Figure 3A to C). In agreement with prior studies (Grant et al., 2019; Hartmann et al., 2015; Hill et al., 2015), distinct variations in mural cell morphology were observed in different vascular segments. Endothelial cells of the parenchymal arteriole are encased by a continuous circumferential layer of vascular smooth muscle cells, whereas post-arteriole transitional segments (i.e. segments between parenchymal arterioles and the dense capillary region) are covered by ‘ensheathing pericytes’ that are morphologically distinct from vascular smooth muscle cells and identified by the classic bump-on-a-log characteristic (Grant et al., 2019; Hartmann et al., 2015; Hill et al., 2015). Mural cell coverage of endothelial cells of the capillary bed was incomplete, such that only a few capillary pericytes or thin-stranded capillary processes, if any, were observed in our isolated ex vivo preparations (Grant et al., 2019; Hartmann et al., 2015; Hill et al., 2015). To visualize the elastin layer present only in arteries and arterioles, preparations were stained with Alexa Fluor 633 hydrazide which specifically binds to elastin fibers (Shen et al., 2012). Elastin fibers were observed in the arteriole segment of our microvascular preparations, but not in the transitional segment or the capillary region (Figure 3D). We next compared the propagation velocity of TRPA1-induced conducted vasodilator signals in vascular segments completely covered by mural cells (arterioles and post-arteriole transitional segments) with that in sparsely covered capillaries. The propagation velocity of the vasodilator signal is defined here as the time interval between stimulation of capillaries and start of dilation of the upstream arteriole, normalized to the distance between the site of stimulation and the point where arteriole dilation was measured. We found that the propagation velocity of signals initiated by stimulation of TRPA1 channels in capillaries was significantly slower than that elicited by stimulation of Kir channels (Figure 3E). These data imply that TRPA1 channels in brain capillary endothelial cells mediate a signal that dilates upstream arterioles through a mechanism distinct from that initiated by Kir channels. An analysis of TRPA1-dependent responses in different segments of the cerebral microvasculature showed that the propagation velocity of vasodilator signals from the post-arteriole transitional region (first vascular segment with mural cell coverage) to the upstream parenchymal arteriole was comparable to that of signals produced in this segment by picospritzing capillaries with elevated [K+] (Figure 3F). Consequently, we infer that the signal produced by activation of TRPA1 channels propagates through the capillary network from the site of initiation to the transitional region more slowly than the fast-electrical signal initiated by activation of Kir channels. We propose a biphasic propagation model of conducted vasodilator signaling in which activation of TRPA1 channels in capillary endothelial cells generates a slowly propagating intercellular signal that is converted to a rapidly conducted electrical signal in vascular segments fully covered by mural cells (Figure 3G).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig3-v2.jpg)
 
-**Figure 3.:** (A to D) Representative fluorescence image of an ex vivo microvascular preparation obtained from a wild-type mouse. Microvascular preparations were treated with Alexa Fluor 488 conjugated isolectin B4 (IB4) (green) to label endothelial cells, and Cy3 conjugated anti-α-smooth muscle actin antibody (αSMA) (red) to label mural cells, shown merged (A) or separately (B and C). The elastin layer that is only present in arteriole segments was stained using Alexa Fluor 633 conjugated hydrazide (white) (D). Scale bar = 50 µm. Magnified images of the parenchymal arteriole, offshoot branch arteriole, post-arteriole transitional segment and capillaries showing differential mural cell coverage (white arrow) and elastin expression in these vascular segments. Scale bars = 10 µm. (E) Left: Conduction velocity of the vasodilator signal was calculated from the time interval and distance traveled to a specific point in the upstream arteriole (Zone 1, white arrow) following application of drugs onto capillary extremities (white ball). Right: Responses to the TRPA1 channel activators AITC (30 µM) and 4-HNE (1 µM) were significantly slower than the response to activation of Kir channels with KCl (10 mM) (n = 6–15 preparations from four to seven animals; *p<0.05, one-way ANOVA). (F). Left: Velocity measurements were calculated from the post-arteriole transitional segment (adjacent to the capillary bed, white ball) to a point in the upstream arteriole (Zone 1, white arrow). Right: Velocity following AITC (30 µM) or 4-HNE (1 µM) treatment was comparable to that following application of KCl (60 mM) (n = 6 preparations from four animals; one-way ANOVA). (G) Proposed model showing that activation of TRPA1 channels on capillaries produces a signal that slowly propagates through the capillary network and a faster propagating signal in arterioles and the post-arteriole transitional region.  Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A to D) Representative fluorescence image of an ex vivo microvascular preparation obtained from a wild-type mouse. Microvascular preparations were treated with Alexa Fluor 488 conjugated isolectin B4 (IB4) (green) to label endothelial cells, and Cy3 conjugated anti-α-smooth muscle actin antibody (αSMA) (red) to label mural cells, shown merged (A) or separately (B and C). The elastin layer that is only present in arteriole segments was stained using Alexa Fluor 633 conjugated hydrazide (white) (D). Scale bar = 50 µm. Magnified images of the parenchymal arteriole, offshoot branch arteriole, post-arteriole transitional segment and capillaries showing differential mural cell coverage (white arrow) and elastin expression in these vascular segments. Scale bars = 10 µm. (E) Left: Conduction velocity of the vasodilator signal was calculated from the time interval and distance traveled to a specific point in the upstream arteriole (Zone 1, white arrow) following application of drugs onto capillary extremities (white ball). Right: Responses to the TRPA1 channel activators AITC (30 µM) and 4-HNE (1 µM) were significantly slower than the response to activation of Kir channels with KCl (10 mM) (n = 6–15 preparations from four to seven animals; *p<0.05, one-way ANOVA). (F). Left: Velocity measurements were calculated from the post-arteriole transitional segment (adjacent to the capillary bed, white ball) to a point in the upstream arteriole (Zone 1, white arrow). Right: Velocity following AITC (30 µM) or 4-HNE (1 µM) treatment was comparable to that following application of KCl (60 mM) (n = 6 preparations from four animals; one-way ANOVA). (G) Proposed model showing that activation of TRPA1 channels on capillaries produces a signal that slowly propagates through the capillary network and a faster propagating signal in arterioles and the post-arteriole transitional region.
 
-## Slow-phase propagation of vasodilator signals through the capillary network requires Ca2+ signals generated by endothelial cell Panx1 channels and ATP
+### Slow-phase propagation of vasodilator signals through the capillary network requires Ca2+ signals generated by endothelial cell Panx1 channels and ATP
 
 Our next goal was to identify the mechanisms underlying slow intercellular propagation of vasodilator signals initiated by TRPA1 channels within regions of the capillary network more distal to the feeding arteriole. Pannexin proteins are centrally important for intercellular signaling (Barbe et al., 2006). Accordingly, we probed the role of pannexins in conducted vasodilator responses using cerebral microvascular preparations from tamoxifen-inducible, endothelial cell-specific Panx1-knockout (Panx1-ecKO) mice (Lohman et al., 2015). This was accomplished by initially crossing mice homozygous for loxP sites flanking exon 3 of Panx1 (Panx1fl/fl) with mice heterozygous for inducible vascular endothelial cadherin (Cdh5)-Cre. Intermediate heterozygote mice were crossed to generate Panx1-ecKO mice. We found that dilation of upstream parenchymal arterioles following focal application of 4-HNE or AITC to capillary extremities was significantly blunted in ex vivo preparations obtained from Panx1-ecKO mice compared with those from tamoxifen-injected control mice expressing only Cdh5-Cre as well as vehicle (peanut oil)-injected Panx1-ecKO mice (Figure 4A to C). In contrast, conducted vasodilation initiated by stimulation of Kir channels in brain capillary endothelial cells was not affected by endothelial cell Panx1 knockout (Figure 4D). These data demonstrate that TRPA1 channels in brain capillary endothelial cells initiate conducted vasodilator responses through an endothelial cell Panx1-dependent mechanism that is independent of the response initiated by Kir channels.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative traces showing that application of AITC (30 µM; red box) or 4-HNE (1 µM; green box) onto capillary extremities did not dilate the upstream arteriole in microvascular preparations from Panx1-ecKO mice, whereas vasodilatory effects of elevated KCl (10 mM; blue box) were unchanged. (B and C) Summary data showing that neither 4-HNE (1 µM) (B) nor AITC (30 µM) (C) evoked dilation of upstream arterioles in preparations from Panx1-ecKO mice (n = 6 preparations from five animals; *p<0.05 vs. Cdh5-Cre injected with tamoxifen, #p<0.05 vs. Panx1-ecKO mice injected with vehicle (peanut oil), one-way ANOVA). (D) Summary data showing that the response to elevated KCl (10 nM) was unchanged in preparations from Panx1-ecKO mice (n = 6 preparations from five animals; one-way ANOVA). (E) Summary data showing that catabolism of extracellular purines with apyrase (1 U/mL) blunted the response to AITC (30 µM) in microvascular preparations from wild-type mice (n = 9 preparations from eight animals; *p<0.05, paired t-test). (F) Summary data showing that the pan-P2X inhibitor PPADS (10 µM) inhibited the response to AITC (30 µM) (n = 9 preparations from six animals; *p<0.05, paired t-test). (G and H). The response to elevated KCl (10 mM) was unaffected by treatment with apyrase (1 U/mL) (G) or PPADS (10 µM) (H) (n = 9 preparations from six to eight animals; paired t-test). (I) Representative trace showing that application of ATP (10 µM; orange box) onto capillary extremities dilated the upstream arteriole in microvascular preparations from wild-type mice, and that this response was blocked by the pan-P2X inhibitor PPADS (10 µM). (J) Summary data showing that PPADS (10 µM) inhibited the response ATP (10 µM) responses (n = 6 preparations from four animals; *p<0.05, paired t-test). (K) The velocity of the ATP (10 µM) response was significantly slower compared with that to activation of Kir channels with KCl (60 mM) (n = 6 preparations from four animals; *p<0.05, paired t-test). (L) Summary data showing that ATP (10 µM) did not evoke dilation of upstream arterioles in preparations from Panx1-ecKO mice (n = 6 preparations from three to four animals; *p<0.05 vs. Cdh5-Cre injected with tamoxifen, #p<0.05 vs. Panx1-ecKO mice injected with vehicle (peanut oil), one-way ANOVA).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Representative traces (A) and summary data (B) showing that application of elevated KCl (10 mM; blue box) and ATP (10 µM; orange box) directly onto capillary extremities induced a dilation of the upstream in preparations from Trpa1-ecKO mice (n = 6 preparations from four animals; paired t-test).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative image of an isolated cerebral capillary network. Endothelial cells and nuclei were stained with Alexa Fluor 568 isolectin B4 (IB4) (red) and DAPI (blue), respectively. Scale bar = 25 µm. (B) Summary data showing the average length of capillary endothelial cells, calculated by measuring the inter-nuclear distance (determined from 173 endothelial cells from four animals). (C) Summary data showing the average length of the capillary segment in isolated ex vivo microvascular preparations (n = 9 preparations from six animals). Data are shown as a box and whisker plot.
 
 Prior studies have demonstrated that increases in intracellular [Ca2+] cause the release of ATP through Panx1 channels (Dahl, 2015). Released ATP subsequently activates Ca2+-permeable ionotropic purinergic (P2X) receptors on adjacent cells to increase intracellular Ca2+, providing a means for the intercellular propagation of Ca2+ signals (Barbe et al., 2006; Locovei et al., 2006; Suadicani et al., 2009; Vanlandewijck et al., 2018; Zsembery et al., 2003). We used a pharmacological approach to determine if this mechanism was responsible for the propagation of conducted vasodilator signals in the brain capillary network. Pre-incubation of microvascular preparations with apyrase (1 U/mL) to catabolize extracellular purines (Figure 4E) and administration of the pan-P2X inhibitor PPADS (10 µM) blocked the dilation of upstream parenchymal arteriole segments in response to application of AITC to capillaries (Figure 4F). However, apyrase and PPADS had no effect on conducted vasodilation initiated by stimulation of brain capillary endothelial cell Kir channels with 10 mM K+ (Figure 4G and H). Apyrase and PPADS treatment did not affect the tone of arterioles. We also found that direct application of ATP onto capillary beds stimulated conducted dilation in preparations from wild-type mice, an effect that was blocked by PPADS (Figure 4I and J). The velocity of ATP-conducted responses was slower than that of responses initiated by stimulation of Kir channels and was comparable to that of signals produced by stimulation of TRPA1 channels (Figure 4K). Consistent with these findings, application of ATP onto capillaries did not initiate conducted vasodilation in ex vivo preparations from Panx1-ecKO mice (Figure 4L). ATP-induced conducted vasodilation persisted in preparations from Trpa1-ecKO mice indicating that TRPA1 is the initiator and that Panx1-P2X signaling is unaffected in these mice (Figure 4—figure supplement 1). These data support the concept that stimulation of TRPA1 channels on capillary endothelial cells initiates the release of ATP through endothelial cell Panx1 channels. Released ATP, in turn, stimulates P2X receptors on adjacent cells to generate a propagating Ca2+ signal.
 
@@ -67,23 +107,99 @@ We then asked, how far does the intercellular signal initiated by TRPA1 channels
 
 TRPA1 channels conduct mixed cation currents with a high Ca2+ fraction (Nilius et al., 2011), and we have previously detected distinct TRPA1 channel-mediated Ca2+-signaling events in cerebral endothelial cells (Sullivan et al., 2015). Ca2+-imaging studies performed using microvascular preparations obtained from transgenic mice expressing the genetically encoded Ca2+ indicator GCaMP8, exclusively in the endothelium (Cdh5-GCaMP8) (Ohkura et al., 2012) revealed that focal application of AITC onto the distal extremities of capillaries initiated an increase in intracellular [Ca2+] (Video 3). Moreover, this increase in intracellular [Ca2+] triggered similar increases in neighboring regions, indicating that the Ca2+ signal propagates through the capillary network (Figure 5A). AITC-induced Ca2+ signals were abolished by superfusing the preparation with HC-030031 (Video 4, Figure 5B and C), suggesting that initiation of the signal required the activity of TRPA1 channels. As our model predicts that the propagation velocity of the vasodilatory signal within the capillary network is slow, we therefore determined the velocity at which Ca2+ signals travels through the capillary network. The propagation velocity of the Ca2+ signal is defined here as the time interval between the start of an increase in intracellular [Ca2+] at one region of interest and the start of an increase in intracellular [Ca2+] in a neighboring region, normalized to the distance between the two regions. As expected, the velocity of vasodilator Ca2+ signals within the capillaries travel at speeds slower than the rapid vasodilator signal traveling through vascular segments covered by mural cells (Figure 5D). Focal application of ATP was also found to initiate an increase in intracellular [Ca2+], that propagates to adjacent cells (Video 5, Figure 5E). PPADS abolished ATP-induced Ca2+ signal, suggesting that initiation and propagation of Ca2+ signals require P2X receptors (Video 6, Figure 5F and G). The velocity of ATP-induced Ca2+ signals is similar to that produced by activating TRPA1 channels, suggesting a convergent vasodilator signaling pathway (Figure 5H). The duration, rise time and decay time of the Ca2+ signal evoked by AITC and ATP were also comparable (Figure 5—figure supplement 1A to C). We next validated that the vasodilator signal through the capillaries requires influx of extracellular Ca2+ through purinergic P2X receptors by superfusing preparations with aCSF devoid of extracellular Ca2+. We found that ATP-induced Ca2+ signals were abolished in preparations under 0 Ca2+ conditions; however, the response returned once extracellular Ca2+ (2 mM) was reintroduced (Videos 7–9, Figure 5I and J). This suggests that the propagative Ca2+ signal is dependent on ionotropic purinergic P2X receptor, and not through the release of Ca2+ from intracellular stores downstream of G protein-coupled P2Y receptor activation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative time course images demonstrating the fractional increase in fluorescence (F/F0) of the Ca2+ signal in a capillary segment in microvascular preparations from transgenic mice expressing a genetically encoded Ca2+ indicator, GCaMP8, exclusively in the endothelium (Cdh5-GCaMP8). The tip of the micropipette (outlined) was placed adjacent to distal extremities of capillaries. Focal application of AITC (30 µM) evoked a propagative Ca2+ signal that was observed in adjacent region of interests. Scale bar = 50 µm. (B) Representative traces showing the fractional increase in florescence following application of AITC (30 µM; red box) that was blocked by the selective TRPA1 antagonist HC-030031 (10 µM). (C) Summary data showing that HC-030031 (10 µM) inhibited the response to AITC (30 µM) (n = 6 preparations from five animals; *p<0.05, paired t-test). (D) The velocity of the response through capillary segments evoked by activation of TRPA1 channels (n = 6 preparations from five animals). (E) Representative time course images demonstrating the fractional increase in fluorescence of the Ca2+ signal produced following focal application of ATP (10 µM) to distal capillaries. Propagation of the Ca2+ signal was observed in the adjacent region of interests following ATP (10 µM) application. Scale bar = 50 µm. (F) Representative traces showing the fractional increase in florescence following application of ATP (10 µM; orange box) that was blocked by the pan-P2X inhibitor PPADS (10 µM). (G) Summary data showing that PPADS (10 µM) inhibited the response to ATP (10 µM) (n = 7 preparations from seven animals; *p<0.05, paired t-test). (H) The velocity of the response through capillary segments evoked by activation of purinergic receptors (n = 13 preparations from 12 animals). (I) Representative traces showing the fractional increase in florescence following application of ATP (10 µM; orange box) was abolished when the preparation was superfused in Ca2+-free aCSF. The response was restored following the reintroduction of extracellular Ca2+. (J) Summary data showing that bathing the preparation in Ca2+-free aCSF solution attenuated the response to ATP (10 µM), but was restored once Ca2+ (2 mM) was reintroduced (n = 6 preparations from five animals; *p<0.05 vs. control ATP response, #p<0.05 vs. preparations bathed in 0 Ca2+, one-way ANOVA). (K) Illustration of the proposed model for signal propagation through the capillary bed. Increases in intracellular [Ca2+] caused by TRPA1 channel-mediated Ca2+ influx induce ATP release through Panx1 channels, which in turn activates purinergic P2X receptors on the adjacent endothelial cell.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A to C) Duration (A), rise time [half-time (t1/2, s)] (B) and decay time (t1/2, s) (C) of the Ca2+ response following focal application of AITC (30 µM) and ATP (10 µM) to distal capillaries in microvascular preparations from Cdh5-GCaMP8 (AITC, n = 6 preparations from five animals; ATP, n = 13 preparations from 12 animals; unpaired t-test).
+
+![Video 3.](https://cdn.elifesciences.org/articles/63040/elife-63040-video3.mp4.jpg)
+
+**Video 3.:** Representative time-series images of a microvascular preparation demonstrating that localized application of AITC (30 µM) onto distal capillary extremities produces a propagative Ca2+ signal. AITC was applied after 10 s. Scale bar = 50 µm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/63040/elife-63040-video4.mp4.jpg)
+
+**Video 4.:** Representative time-series images of a microvascular preparation demonstrating that the propagative Ca2+ signal produced by AITC (30 µM) is blocked by superfusing the preparation with HC-030031 (10 µM). AITC was applied after 10 s. Scale bar = 50 µm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/63040/elife-63040-video5.mp4.jpg)
+
+**Video 5.:** Representative time-series images of a microvascular preparation demonstrating that localized application of ATP (10 µM) onto distal capillary extremities produces a propagative Ca2+ signal. ATP was applied after 10 s. Scale bar = 50 µm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/63040/elife-63040-video6.mp4.jpg)
+
+**Video 6.:** Representative time-series images of a microvascular preparation demonstrating that the propagative Ca2+ signal produced by ATP (10 µM) is blocked by superfusing the preparation with PPADS (10 µM). ATP was applied after 10 s. Scale bar = 50 µm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/63040/elife-63040-video7.mp4.jpg)
+
+**Video 7.:** Representative time-series images of a microvascular preparation demonstrating that localized application of ATP (10 µM) onto distal capillary extremities produces a propagative Ca2+ signal in preparations superfused with Ca2+-containing aCSF. ATP was applied after 10 s. Scale bar = 50 µm.
+
+![Video 8.](https://cdn.elifesciences.org/articles/63040/elife-63040-video8.mp4.jpg)
+
+**Video 8.:** Representative time-series images of a microvascular preparation demonstrating that localized application of ATP (10 µM) onto distal capillary extremities failed to induced a propagative Ca2+ signal in preparations superfused with Ca2+-free aCSF. ATP was applied after 10 s. Scale bar = 50 µm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/63040/elife-63040-video9.mp4.jpg)
+
+**Video 9.:** Representative time-series images of a microvascular preparation demonstrating that the propagative Ca2+ signal following localized application of ATP (10 µM) onto distal capillary extremities returned once extracellular Ca2+ (2 mM) was reintroduced to the preparation. ATP was applied after 10 s. Scale bar = 50 µm.
+
 Taken together, these data support a model in which slow, short-range intercellular Ca2+ signals propagate through capillary endothelial cells via a mechanism that is dependent on ATP release through Panx1 channels and activation of purinergic P2X receptors on adjacent endothelial cells (Figure 5K). This pathway is necessary for the dilation of upstream arterioles in response to stimulation of TRPA1 channels in capillary endothelial cells.
 
-## Rapid-phase propagation of vasodilator signals is initiated in the post-arteriole transitional region and requires Kir channel activity
+### Rapid-phase propagation of vasodilator signals is initiated in the post-arteriole transitional region and requires Kir channel activity
 
 We next turned to the mechanisms responsible for the rapid phase of the propagating vasodilator signal. Because signal propagation velocities were the same in post-arteriole transitional segments and parenchymal arterioles, regardless of the initiating stimulus, we hypothesized that propagation in this segment occurs by rapid electrical communication, as previously described by Longden et al., 2017. To test this, we performed experiments using a modified capillary-arteriole microvascular preparation in which the capillary tree was removed while leaving the post-arteriole transitional segment intact (Figure 6A). In control experiments, we found that Evans Blue dye ejected from a picospritzer near the post-arteriole transitional segment did not spread to the upstream parenchymal arteriole (Video 10), supporting our ability to selectively stimulate the transitional segments.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative image of a cerebral microvascular preparation in which the capillary bed was removed while leaving the post-arteriole transitional segment (TS) intact. The transitional segment is located at the distal end of the offshoot arteriole branch. Scale bar = 100 µm. A picospritzing cannula was used to directly apply drugs to the post-arteriole transitional segment. (B) Representative traces showing that application of elevated KCl (10 mM; blue box), AITC (30 µM; red box), or 4-HNE (1 µM; green box) onto the post-arteriole transitional segment increased the lumen diameter of the upstream arteriole in microvascular preparations from wild-type mice. (C) Summary data showing dilation produced by elevated KCl (10 mM), AITC (30 µM) and 4-HNE (1 µM) (n = 6–8 preparations from four to five animals; one-way ANOVA). (D) Velocity was calculated from the post-arteriole transitional segment to a point in the upstream arteriole following localized drug application onto the post-arteriole transitional segment. Velocity measurements were comparable for elevated KCl (10 mM), 4-HNE (1 µM), and AITC (30 µM) (n = 6–8 preparations from four to five animals; one-way ANOVA). (E and F) Summary data showing that BaCl2 (30 µM) significantly reduced the response to elevated KCl (10 mM) (E) and AITC (30 µM) (F) when applied to the post-arteriole transitional segment (n = 6 preparations from four animals; *p<0.05, paired t-test). (G) Summary data showing that BaCl2 (30 µM) significantly attenuated the response to AITC (30 µM) when directly applied onto capillary extremities (n = 6 preparations from four animals; *p<0.05, paired t-test). (H) Summary data showing that combined inhibition of nitric oxide synthase and cyclooxygenase with L-NAME (100 µM) and indomethacin (10 µM), respectively, did not affect the response to AITC (30 µM) when directly onto capillary extremities (n = 7 preparations from four animals; paired t-test). (I) Summary data showing that combined IK and SK channel inhibition with TRAM-34 (1 µM) and apamin (300 nM), respectively, significantly attenuated the response to AITC (30 µM) when directly applied onto capillary extremities (n = 7 preparations from five animals; *p<0.05, paired t-test). (J and K) Representative trace (J) and summary data (K) showing that application of the IK and SK channel activator NS309 (10 µM; purple box) directly onto the post-arteriole transitional segment dilated the upstream arteriole, and that this response was attenuated by inhibition of Kir channels with BaCl2 (30 µM) (n = 6 preparations from four animals; *p<0.05, paired t-test). (L) The velocity of the response produced by application of the IK and SK channel activator NS309 (10 µM) onto the post-arteriole transitional segment was similar to that produced by activation of Kir channels or TRPA1 channels (n = 6 preparations from four animals). (M) Illustration of the proposed signaling model depicting events following activation of capillary endothelial TRPA1 channels. Once the Ca2+ signal from the capillary bed arrives at the post-arteriole transitional segment, IK and SK channels are activated and facilitate K+ efflux. This in turn activates Kir channels, which propagate the signal retrogradely to cause dilation of the upstream arteriole.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative trace showing that application of elevated KCl (10 mM; blue box) or AITC (30 µM; red box) onto the post-arteriole transitional segment increased the lumen diameter of the upstream arteriole, but application of ATP (10 µM; orange box) to this segment did not. (B) Summary data showing that application of ATP (10 µM) onto the post-arteriole transitional segment did not dilate upstream arterioles (n = 6 preparations from three animals; *p<0.05 vs. KCl, #p<0.05 vs. AITC, one-way ANOVA).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Representative images of an intact microvascular preparation showing the drug-administering cannula positioned adjacent to capillary extremities (left) and arteriole segment (right). Scale bar = 50 µm. (B) Summary data showing that application of the IK and SK channel activator NS309 (10 µM) did not induce relaxation of the upstream arteriole when applied to capillaries, but did cause dilation when applied directly to the arteriole (n = 6 preparations from three animals; *p<0.05, paired t-test).
+
+![Video 10.](https://cdn.elifesciences.org/articles/63040/elife-63040-video10.mp4.jpg)
+
+**Video 10.:** Representative time-series images of a modified microvascular preparation in which the capillary tree was removed. Application of Evans Blue dye (1% w/v) onto the post-arteriole transitional segment was localized to this region and did not spread to the upstream parenchymal arteriole. Evans Blue was applied after 10 s. Scale bar = 100 µm.
 
 Interestingly, we found that focal application of elevated [K+], 4-HNE, or AITC onto the post-arteriole transitional segment caused dilation of the upstream parenchymal arteriole (Figure 6B and C), indicating that functional Kir and TRPA1 channels are present in these transitional segments and are capable of producing conducted vasodilator responses when stimulated. The propagation velocities of the conducted vasodilator signals produced by stimulating post-arteriole transitional segment with elevated [K+], AITC, or 4-HNE were nearly identical, suggesting a common signal-propagation mechanism (Figure 6D). We also found that vasodilator responses to elevated [K+] (Figure 6E) and AITC (Figure 6F) were blocked by inhibiting Kir channels with BaCl2. The rapid signal-propagation velocity and sensitivity to blockade by BaCl2 suggest that fast electrical communication involving Kir channels (Longden et al., 2017) is a convergent means of vasodilator signal conduction in vascular segments with mural cell coverage. We also found that superfusing the ex vivo preparation with BaCl2 significantly blunted the response to localized application of AITC onto capillary extremities (Figure 6G). Interestingly, focal application of ATP onto the post-arteriole transitional segment did not evoke dilation of upstream arterioles (Figure 6—figure supplement 1A and B), suggesting that ATP-dependent propagation must be initiated at more distal points in the capillary network.
 
 We next investigated how the slowly propagating Ca2+ signals initiated by capillary endothelial cell TRPA1 channels are converted to rapidly propagating electrical signals in mural cell-covered post-arteriole transitional segments to cause dilation of upstream parenchymal arterioles. Combined inhibition of nitric oxide synthase with L-NAME (100 µM) and cyclooxygenase with indomethacin (10 µM) in microvascular preparations had no effect on arteriole dilation induced by stimulation of capillary extremities with AITC (Figure 6H). However, inhibition of IK and SK channel activity by superfusing TRAM34 (1 µM) and apamin (300 nM), respectively, significantly blunted upstream dilation in response to focal stimulation of capillary endothelial cell TRPA1 channels (Figure 6I), demonstrating that IK and SK channel activity is necessary for the conducted vasodilator responses initiated by brain capillary endothelial cell TRPA1 channels. Although it has been reported that functional IK and SK channels are not present in capillary endothelial cells (Longden et al., 2017; Figure 1—figure supplement 1), our functional data suggest that IK and SK channels are expressed in post-arteriole transitional segments, where they convert slowly propagating intercellular Ca2+ signals initiated by capillary TRPA1 channels into rapidly propagating electrical signals. Direct application of NS309 (10 µM) directly onto parenchymal arterioles, which are known to express endothelial IK and SK channels caused dilation, whereas focal stimulation of capillary extremities did not (Figure 6—figure supplement 2A and B). Surprisingly, we found that focal application of NS309 directly onto the post-arteriole transitional segment induced dilation of the upstream parenchymal arteriole, indicating that IK and SK channels are expressed in this region and that their activation results in conducted vasodilation (Figure 6J and K). We also found that this response was inhibited by BaCl2 (Figure 6K) and propagated at the same velocity as signals initiated by stimulating the post-arteriole transitional segment with elevated [K+] and TRPA1 agonists (Figure 6L). These data support the concept that the Ca2+ signals arriving from the capillary network activate IK and SK channels within the post-arteriole transitional segment to initiate a fast-conducting vasodilator response that requires Kir channel activity (Figure 6M).
 
-## Stimulation of brain endothelial cell TRPA1 channels increases local blood flow in vivo
+### Stimulation of brain endothelial cell TRPA1 channels increases local blood flow in vivo
 
 We next performed experiments to determine if stimulation of endothelial cell TRPA1 channels increase localized cerebral blood flow in vivo. Red blood cell (RBC) flux within capillaries and changes in diameter of upstream arterioles were visualized through a cranial window using two-photon laser-scanning microscopy (Figure 7A). Fluorescein isothiocyanate (FITC)-conjugated dextran (i.v.) was administered to animals to allow visualization of the vasculature and contrast imaging of RBCs. TRPA1 channels were locally activated by pressure ejecting AITC directly onto a single capillary using a micropipette. In control Trpa1fl/fl animals, local application of AITC (30 µM) onto a capillary produced a significant increase in RBC flux within the stimulated capillary (Figure 7B and C). The rate of flux increase was 11.6 ± 2.3 RBC/s (Figure 7—figure supplement 1A). The latency of this response (7.5 ± 1.2 s, Figure 7—figure supplement 1B) was slow compared with the response induced by applying elevated [K+] (3.8 ± 0.9 s), as reported by Longden et al., 2017. This finding is consistent with the slower kinetics of the TRPA1-mediated vasodilator response compared with the Kir-mediated response observed in our ex vivo microvascular preparations (Figure 3A). In contrast, AITC failed to elicit an increase in RBC flux in almost all (6 of 7) Trpa1-ecKO mice tested (Figure 7D to F). We also confirmed vasodilatory responses to capillary stimulation by assessing changes in the cross-sectional area of the feeding arteriole, demonstrating that local application of AITC onto a capillary significantly increased the area of the upstream arteriole in Trpa1fl/fl animals (Figure 7G). Furthermore, the increase in cross-sectional area observed in arterioles of Trpa1fl/fl animals was greater than that observed in Trpa1-ecKO mice (Trpa1fl/fl mice 72.2 ± 10.8 µm2 (n = 11) vs. Trpa1-ecKO mice 8.3 ± 3.9 µm2 (n = 7), p<0.05) (Figure 7H and I). These data indicate that activation of endothelial cell TRPA1 channels in the brain dilates upstream arterioles and increases RBC flux in capillaries.
 
-## Functional hyperemia in the somatosensory cortex requires endothelial cell TRPA1 channels
+![Figure 7.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig7-v2.jpg)
+
+**Figure 7.:** (A) Experimental illustration. Mice were injected with FITC-conjugated dextran to allow visualization of the cortical vasculature through a cranial window using in vivo two-photon laser-scanning microscopy. RBCs appear as black shadows against green fluorescent plasma. A pipette containing AITC and TRITC-dextran (for pipette visualization) was positioned next to a capillary. (B) RBC flux through a single capillary was examined by analyzing distance-time plots of capillary line scans. TRPA1 channels on capillary endothelial cells were locally stimulated by picospritzing AITC (30 µM) directly onto a single capillary. Representative line-scan plots of a capillary (left) and representative time-flux trace (right) demonstrating changes in RBC flux before and after application of AITC (30 µM) in control Trpa1fl/fl mice. (C) Summary data showing that AITC (30 µM) increased RBC flux in the stimulated capillary of Trpa1fl/fl mice (n = 11 animals; *p<0.05, paired t-test). (D) Representative line-scan plots of a capillary (left) and representative time-flux trace (right) demonstrating that application of AITC (30 µM) had no effect in Trpa1-ecKO mice. (E) Summary data showing that AITC (30 µM) had no effect in Trpa1-ecKO mice (n = 7 animals, paired t-test). (F) Change in RBC flux in control Trpa1fl/fl versus Trpa1-ecKO mice (n = 7–11 animals; *p<0.05, unpaired t-test). (G and H) Representative images and summary data showing change in cross-sectional area of the upstream arteriole following application of AITC (30 µM) onto a capillary of control Trpa1fl/fl (G) and Trpa1-ecKO (H) mice (n = 7–11 animals; *p<0.05, paired t-test). (I) Change in arteriole cross-sectional area was less in Trpa1-ecKO mice compared to control Trpa1fl/fl (n = 7–11 animals; *p<0.05, unpaired t-test).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A and B) Summary data showing the rate of RBC flux increase (A) and latency of the response following local application of AITC (30 µM) directly onto a single capillary of Trpa1fl/fl mice (n = 11 animals).
+
+### Functional hyperemia in the somatosensory cortex requires endothelial cell TRPA1 channels
 
 To assess the role of TRPA1 channels in functional hyperemia in vivo, we measured relative changes in blood flow in the somatosensory cortex using a thinned-skull mouse model (Figure 8—figure supplement 1). Changes in blood flow were induced by contralateral whisker stimulation and were recorded using laser-Doppler flowmetry (Girouard et al., 2010; Park et al., 2014). Stimulating whiskers for 5 s reliably and reproducibly increased cerebral blood flow in wild-type mice (Figure 8B). Control experiments indicated that this was not due to artifactual noise, as stimulation of ipsilateral whiskers was without effect (Figure 8—figure supplement 2). To determine if TRPA1 channels are involved in this functional hyperemic response, we treated mice with HC-030031 (100 mg/kg, i.p. for 30 min). HC-030031 treatment significantly attenuated the increase in cerebral blood flow following whisker stimulation (Figure 8A and B). Our model suggests that TRPA1 channels should affect the slow components of the hyperemic response. Further analysis of the kinetics revealed that the duration of the response was reduced (Figure 8C), and the decay rate was increased (Figure 8D) following HC-030031 treatment, suggesting that TRPA1 channels are needed to sustain the rise in blood flow. The rise rate and latency of the response was unaffected (Figure 8E and F). To demonstrate the contribution of endothelial cell TRPA1 channels, we assessed functional hyperemia in Trpa1-ecKO mice. The basal increase in blood flow following 5 s whisker stimulation was significantly blunted in Trpa1-ecKO mice compared with Trpa1fl/fl mice (Figure 8G and H). Similarly, only the duration and decay rate were found to be impaired in Trpa1-ecKO mice (Figure 8I–L). Collectively, these data demonstrate that endothelial cell TRPA1 channels contribute to the increase in blood flow and sustains that vasodilatory response. Interestingly, TRPA1 channels were found not to be involved when contralateral whiskers were stimulated for a shorter duration. The increase in blood flow and the kinetics of the hyperemic response were unchanged in animals treated with HC-030031 (Figure 8M–R) and Trpa1-ecKO mice (Figure 8S–X) following either a 1 or 2 s (Figure 8—figure supplement 3) stimulation period. Our prior two-photon data indicated an approximate 7 s delay before TRPA1-dependent increase in blood flow (Figure 7—figure supplement 1B). It is therefore unlikely that this slow propagation pathway contributes to the hyperemic response under shorter stimulation. However, during extended periods of neuronal activation, the slowly propagating TRPA1 pathway is necessary for functional hyperemia in the somatosensory cortex of the brain.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig8-v2.jpg)
+
+**Figure 8.:** (A and B) Representative traces (A) and summary data (B) showing the hyperemic response in the somatosensory cortex following contralateral whisker stimulation (WS) for 5 s, measured using laser-Doppler flowmetry in wild-type mice. Treatment with HC-030031 (100 mg/kg, i.p. for 30 min) reduced the hyperemic response (n = 6 animals; *p<0.05, paired t-test). (C–F) Duration (C), decay rate (D), rise rate (E), and latency (F) of the hyperemic response was also determined, and a reduction in duration and increase in decay rate was observed in animals treated with HC-030031 (100 mg/kg, i.p. for 30 min) (n = 6 animals; *p<0.05, paired t-test). (G and H) Representative traces (G) and summary data (H) showing the hyperemic response is blunted in Trpa1-ecKO mice compared with Trpa1fl/fl controls following contralateral whisker stimulation for 5 s (n = 6 animals; *p<0.05, unpaired t-test). (I to L) Duration (I), decay rate (J), rise rate (K), and latency (L) of the hyperemic response was also determined, and duration was diminished and decay rate was increased in Trpa1-ecKO compared with Trpa1fl/fl mice (n = 6 animals; *p<0.05, unpaired t-test). (M and N) Representative traces (M) and summary data (N) showing the hyperemic response was unchanged following a 1 s whisker stimulation in animals treated with HC-030031 (100 mg/kg, i.p. for 30 min) (n = 6 animals; paired t-test). (O–R) Duration (O), decay rate (P), rise rate (Q), and latency (R) were unaffected by HC-030031 treatment (100 mg/kg, i.p. for 30 min) (n = 6 animals; paired t-test). (S and T) Representative traces (S) and summary data (T) showing the hyperemic response did not differ between Trpa1fl/fl and Trpa1-ecKO mice following a 1 s whisker stimulation (n = 6 animals; unpaired t-test). (U–X) Duration (U), decay rate (V), rise rate (W), and latency (X) also did not differ between Trpa1fl/fl and Trpa1-ecKO mice (n = 6 animals; unpaired t-test).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Functional hyperemia was assessed in the somatosensory cortex through a thinned skull. Relative changes in blood flow in response to contralateral whisker stimulation were recorded using laser-Doppler flowmetry.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A and B) Summary data showing the lack of a hyperemic response in the somatosensory cortex following 5 s ipsilateral whisker stimulation, measured using laser-Doppler flowmetry in mice prior to and following treatment with HC-030031 (100 mg/kg, i.p. for 30 min) (A) (n = 6 animals; paired t-test) and Trpa1-ecKO mice and control Trpa1fl/fl mice (B) (n = 6 animals; unpaired t-test). (C and D) Summary data showing the lack of a hyperemic response following 2 s ipsilateral whisker stimulation in mice prior to and following treatment with HC-030031 (100 mg/kg, i.p. for 30 min) (C) (n = 6 animals; paired t-test) and Trpa1-ecKO mice and control Trpa1fl/fl mice (D) (n = 6 animals; unpaired t-test). (E and F) Summary data showing the lack of a hyperemic response following 1 s ipsilateral whisker stimulation in mice prior to and following treatment with HC-030031 (100 mg/kg, i.p. for 30 min) (E) (n = 6 animals; paired t-test) and Trpa1-ecKO mice and control Trpa1fl/fl mice (F) (n = 6 animals; unpaired t-test).
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/63040/elife-63040-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A and B) Representative traces (A) and summary data (B) showing the hyperemic response was unchanged following a 2 s whisker stimulation in animals treated with HC-030031 (100 mg/kg, i.p. for 30 min) (n = 6 animals; paired t-test). (C to F) Duration (C), decay rate (D), rise rate (E), and latency (F) were unaffected by HC-030031 treatment (100 mg/kg, i.p. for 30 min) (n = 6 animals; paired t-test). (G and H) Representative traces (G) and summary data (H) showing the hyperemic response did not differ between control Trpa1fl/fl and Trpa1-ecKO mice following a 2 s whisker stimulation (n = 6 animals per group; unpaired t-test). (I to L) Duration (I), decay rate (J), rise rate (K), and latency (L) did not differ between control Trpa1fl/fl and Trpa1-ecKO mice (n = 6 animals per group; unpaired t-test).
 
 ## Discussion
 
@@ -101,15 +217,263 @@ The NVC process is vital for maintaining cerebral blood flow to active neuronal 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664 RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Panx1-ecKO</td>
+      <td>Dr. Brant Isakson PMID:26242575</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>TekCre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 008863 RRID:IMSR_JAX:008863</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpa1fl/fl</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 008654 RRID:IMSR_JAX:008654</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cdh5-GCaMP8</td>
+      <td>CHROMus(https://chromus.vet.cornell.edu/cdh5gcamp8/) PMID:23240011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 conjugated anti-α-smooth muscle actin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: C6198 RRID:AB_476856</td>
+      <td>(1:200, 1.0–1.5 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488 conjugated isolectin B4</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: I21411</td>
+      <td>(1:200, 1.0 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 568 conjugated isolectin B4</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: I21412</td>
+      <td>(1:200, 1.0 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 633 conjugated hydrazide</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: A30634</td>
+      <td>(1:1000, 1.0 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI Fluoroshied mounting medium</td>
+      <td>Abcam plc.</td>
+      <td>Cat. #: ab104139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorescein isothiocyanate (FITC)-dextran</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: FD150S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tetramethylrhodamine isothiocyanate (TRITC)-dextran</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: T1287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Apamin</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 1652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Apyrase</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: A6535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase type I</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Cat. #: LS004194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Elastase</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Cat. #: LS002292</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Neutral protease</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Cat. #: LS02104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxynonenal (4-HNE)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #: 32100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5-triphosphate (ATP) disodium salt</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Allyl isothiocyanate (AITC)</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: 377430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HC-030031</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 2896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indomethacin</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: I7378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NS309</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 3895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nω-Nitro-L-arginine methyl ester (L-NAME) hydrochloride</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: N5751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PPADS tetrasodium salt</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 0625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich, Inc</td>
+      <td>Cat. #: T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp software</td>
+      <td>Molecular Devices, LLC. (http://www.moleculardevices.com/products/software/pclamp.html)</td>
+      <td>RRID:SCR_011323</td>
+      <td>Version 10.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FluoView FV1000 FV10-ASW software</td>
+      <td>Olympus (https://www.olympus-lifescience.com/en/support/downloads/)</td>
+      <td>RRID:SCR_014215</td>
+      <td>Version 4.02</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Software, Inc (https://www.graphpad.com/)</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 8.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>National Institutes of Health (https://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 1.52 n</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IonWizard software</td>
+      <td>IonOptix, LLC. (https://www.ionoptix.com/products/software/ionwizard-core-and-analysis/)</td>
+      <td></td>
+      <td>Version 6.4.1.73</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VisiView software</td>
+      <td>Visitron Systems GmbH (https://www.visitron.de/products/visiviewr-software.html)</td>
+      <td></td>
+      <td>Version 4.5.0.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>μManager software</td>
+      <td>University of California, San Francisco (https://micro-manager.org/)</td>
+      <td>RRID:SCR_000415</td>
+      <td>Version 1.4.22</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult (12–16 weeks of age) male and female mice were used for all experiments. All animal procedures used in this study were approved by the Institutional Animal Care and Use Committee of the University of Nevada, Reno, School of Medicine (protocol number: 20-06-1020). C57BL/6J mice (Jackson Labs, stock number: 000664) were used as wild-type controls in this study. For all Cre lines used in this study, only male mice expressing Cre-recombinase were used as breeders when generating cell-specific transgenic mice. Endothelial cell-specific deletion of TRPA1 was achieved by initially crossing mice homozygous for Trpa1 containing loxP sites flanking S5/S6 transmembrane domains (Jackson Labs, stock number: 008654) with heterozygous TekCre mice (Jackson Labs, stock number: 008863) to produce intermediate heterozygote mice which were used to generate Trpa1-ecKO mice, as previously described (Sullivan et al., 2015). Mice homozygous for floxed Trpa1, but without expression of Cre-recombinase (Trpa1fl/fl), were used as controls for experiments involving Trpa1-ecKO mice. Mice with tamoxifen-inducible endothelial cell-specific knockout of Panx1 channels (Panx1-ecKO), provided by Dr. Brant Isakson (University of Virginia, USA), were generated as previously described (Lohman et al., 2015). Cre-recombinase was induced by intraperitoneal (i.p.) injection of animals with tamoxifen (1 mg in 0.1 ml of peanut oil; Sigma-Aldrich, Inc, USA) on 10 consecutive days. A recombinase efficacy greater than 95% has been reported following tamoxifen treatment for this Cre line (Monvoisin et al., 2006). Mice expressing Cre alone treated with tamoxifen and Panx1-ecKO mice treated with vehicle were used as controls. Cdh5-GCaMP8 mice, expressing the genetically encoded Ca2+ indicator GCaMP8 exclusively in the endothelium, were developed by CHROMus (Cornell University, USA) (Ohkura et al., 2012). When appropriate, mice were randomly allocated into groups using a randomizer, and genotypes were masked to the investigator during group allocation and data collection. Mice were euthanized by decapitation under isoflurane anesthesia. The brain was isolated into a solution of ice-cold, Ca2+-free, Mg2+-based physiological saline solution (Mg-PSS) containing 5 mM KCl, 140 mM NaCl, 2 mM MgCl2, 10 mM HEPES, and 10 mM glucose (pH 7.4, NaOH; all salts from Sigma-Aldrich, Inc).
 
-## Isolation of native capillary endothelial cells
+### Isolation of native capillary endothelial cells
 
 Individual capillary endothelial cells were isolated as previously described (Longden et al., 2017). Brains were denuded of surface vessels with an aCSF-wetted cotton swab, and two 1-mm-thick brain slices were excised and homogenized in ice-cold aCSF using a Dounce homogenizer. The brain homogenate was filtered through a 70 µM filter, and capillary networks that were captured on the filter were transferred to a new tube. Individual capillary endothelial cells were isolated by enzymatic digestion with 0.5 mg/ml neutral protease (Worthington Biochemical Corporation, USA) and 0.5 mg/ml elastase (Worthington Biochemical Corporation) in endothelial cell isolation solution composed of 5.6 mM KCl, 55 mM NaCl, 80 mM sodium glutamate, 2 mM MgCl2, 0.1 mM CaCl2, 4 mM glucose, and 10 mM HEPES (pH 7.3; all salts from Sigma-Aldrich, Inc) for 45 min at 37°C. After the first digestion, 0.5 mg/ml collagenase type I (Worthington Biochemical Corporation) was added, and a second 2-min incubation at 37°C was performed. Digested networks were washed in ice-cold endothelial cell isolation solution, then triturated with a fire-polished glass Pasteur pipette to produce individual endothelial cells.
 
-## Whole-cell patch-clamp electrophysiology
+### Whole-cell patch-clamp electrophysiology
 
 Whole-cell patch-clamp electrophysiology was used to assess the presence of functional TRPA1 channels on native brain capillary endothelial cells. Following isolation, capillary endothelial cells were transferred to a recording chamber and allowed to adhere to glass coverslips for 10 min at room temperature (~22°C).
 
@@ -119,31 +483,31 @@ IK, SK, and Kir currents were recorded using the conventional whole-cell configu
 
 Clampex and Clampfit software (pClamp version 10.2; Molecular Devices, LLC.) were used for data acquisition and analysis, respectively. All recordings were performed at room temperature.
 
-## Pressure myography
+### Pressure myography
 
 Pressure myography was performed using the recently described arteriole-capillary microvascular preparation (Longden et al., 2017), consisting of a capillary segment with attached intact capillaries (Figure 2A). Briefly, a 3 mm x 5 mm x 3 mm (W x L x D) section of the brain surrounding the middle cerebral artery was dissected and placed into a microdissection dish containing ice-cold Mg-PSS. The middle cerebral artery and the surrounding pial meninge were carefully removed so as to maintain branching parenchymal arterioles within the brain tissue. Thereafter, parenchymal arterioles with attached capillaries were carefully blunt-dissected from the underlying cerebral tissue and transferred to a pressure myograph chamber (Living Systems Instrumentation, USA) containing oxygenated (21% O2, 6% CO2, 73% N2; Praxair Technology, Inc, USA) aCSF (124 mM NaCl, 3 mM KCl, 2 mM CaCl2, 2 mM MgCl2, 1.25 mM NaH2PO4, 26 mM NaHCO3, 4 mM glucose; all salts from Sigma-Aldrich, Inc) and a Sylgard pad at the chamber base. Microvascular preparations were mounted between two glass micropipettes (outer diameter ~20–40 μm) and secured with nylon monofilaments. The outermost tips of attached capillaries were pinned onto the surface of the Sylgard pad to immobilize the capillary bed and allow pressurization of the preparation. Intraluminal pressure was controlled using a servo-controlled peristaltic pump (Living Systems Instrumentation). Arteries were visualized with an inverted microscope (Accu-Scope Inc, USA) coupled to a USB camera (The Imaging Source LLC., USA). Intraluminal diameter as a function of time was recorded using IonWizard software (version 6.4.1.73; IonOptix, LLC., USA). Microvascular preparations were bathed in warmed (37°C), oxygenated aCSF at an intraluminal pressure of 5 mmHg. Following a 15-min equilibration period, intraluminal pressure was increased to 40 mmHg and spontaneous tone was allowed to develop. Preparations that developed less than 10% tone were discarded. Localized application of drugs onto the capillary bed was achieved by placing a micropipette attached to a Picospritzer III (Parker Hannifin Corporation, USA) adjacent to capillary extremities. The viability of attached capillaries was assessed by locally applying a 7 s pulse of aCSF containing elevated [K+] (10 mM) onto capillary extremities. Preparations that failed to dilate to elevated [K+] were discarded.
 
 In control experiments designed to validate the microvascular preparation, the connection between the upstream parenchymal arteriole segment and attached capillaries was severed. In other control experiments, spatial spread was determined by pulsing aCSF containing 1% w/v Evans Blue dye (Sigma-Aldrich, Inc). The role of TRPA1 channels was examined by locally applying 4-HNE (1 µM) or AITC (30 µM; Sigma-Aldrich, Inc) to the attached capillaries, and the role of purinergic signaling was examined by focal application of ATP (10 µM; Sigma-Aldrich, Inc). NS309 (10 µM) was also applied to determine expression of IK and SK channels. In separate experiments, preparations were modified by removing attached capillary segments and leaving the post-arteriole transitional segment intact. In these experiments, the post-arteriole transitional segment was directly stimulated via a micropipette placed adjacent to this segment. Underlying mechanisms were examined by adding pharmacological agents to the superfusing bath solution. Apyrase (1 U/mL), BaCl2 (30 µM), indomethacin (10 µM), and L-NAME (100 µM) were purchased from Sigma-Aldrich, Inc, and apamin (300 nM), HC-030031 (10 µM), PPADS (10 µM), and TRAM34 (1 µM) were purchased from Tocris Bioscience. Lumen diameter was continuously recorded, and responses were expressed as vasodilation (%). Velocity data were obtained by determining the latency of the response following local application of compounds in relation to the distance traveled between the capillary extremity or post-arteriole transitional segment to the parenchymal arteriole.
 
-## Fluorescence imaging
+### Fluorescence imaging
 
 Images of the ex vivo microvascular preparation were obtained from wild-type mice. Following isolation and cannulation, preparations were fixed (4% formaldehyde (Sigma-Aldrich, Inc) in phosphate buffered saline (PBS), 20 min at room temperature) and blocked (0.5% Triton X-100 (Sigma-Aldrich, Inc), 5% SEABlock Blocking Buffer (ThermoFisher Scientific, USA) in PBS, 2 hr at room temperature). Preparations were labeled with Alexa Fluor 488 conjugated isolectin B4 (1:200 of a 1 mg/ml stock; catalogue number: I21411, ThermoFisher Scientific), Cy3 conjugated anti-α-smooth muscle actin antibody (1:200 of a 1–1.5 mg/ml stock; catalogue number: C6198, Sigma-Aldrich, Inc), and Alexa Fluor 633 conjugated hydrazide (1:1000 of a 1 mg/ml stock; catalogue number: A30634, ThermoFisher Scientific) for 2 hr at room temperature. Images were obtained using a custom-built upright microscope (Olympus BX51 WI; Olympus Corp., Japan) equipped with an 89 North LDI laser system (LDI-NIR 15030, 89 North, Inc, USA), and an ORCA-Fusion Digital CMOS C15440-20UP camera (Hamamatsu Corporation, Japan). Images of the complete microvascular preparation were obtained using a 10x water-immersion objective (numerical aperture 0.3, Olympus), and magnified images of the different vascular segments using a 40x water-immersion objective (numerical aperture 0.8, Olympus). Each field of view was 1371 × 1523 pixels (10x, one pixel = 0.65 μm; 40x, one pixel = 0.16 μm). Z-stacks were captured at 1 µm intervals to allow for three-dimensional reconstruction of the microvascular preparation. Images were captured using VisiView software (version 4.5.0.7, Visitron Systems GmbH, Germany) and analyzed using ImageJ software (version 1.52 n, National Institutes of Health, USA).
 
 The length of capillary endothelial cells was determined by fluorescence labeling isolated capillary networks. Isolated capillary networks were placed onto a glass coverslip and fixed (4% formaldehyde in PBS, 20 min at room temperature) and blocked (0.5% Triton X-100, 5% SEABlock Blocking Buffer in PBS, 2 hr at room temperature). Capillary networks were visualized by staining preparations with Alexa Fluor 568 conjugated isolectin B4 (1:200 of a 1 mg/ml stock (catalogue number: I21412, ThermoFisher Scientific), 2 hr at room temperature). Aqueous mounting medium with DAPI (catalogue number: ab104139, Abcam plc., USA) was used to visualize nuclei of endothelial cells. Fluorescence images were taken by an Olympus FluoView laser scanning confocal microscope (Olympus FluoView FV1000, Olympus) equipped with a Showa Optronics laser system (GLS5414A, Showa Optronics Co., Ltd, Japan) and a 60x oil-immersion objective (numerical aperture 1.42, Olympus). Each field of view was 1024 × 1024 pixels (one pixel = 0.21 μm). Z-stacks were captured at 0.5 µm intervals to allow for three-dimensional reconstruction of the capillary networks. Images were captured using FluoView FV1000 FV10-ASW software (version 4.02, Olympus), and analyzed using ImageJ software. The length of capillary endothelial cells was determined by measuring the distance between nuclei.
 
-## Ca2+ imaging
+### Ca2+ imaging
 
 Microvascular preparations isolated from Cdh5-GCaMP8 mice were mounted in a pressure myograph chamber, as described above. Changes in capillary endothelial cell [Ca2+] were recorded in real time after local exposure to TRPA1 agonists or ATP. Videos were recorded at an average of 23 frames/s for approximately 120 s (2760 frames). Baseline Ca2+ activity was recorded for the first 60 s (~1380 frames), then the capillary bed was picospritzed with AITC (30 µM) or ATP (10 µM), and the preparations were recorded for an additional 60 s (~1380 frames). Videos were obtained using a custom-built upright microscope (Olympus BX51 WI) equipped with epifluorescence illumination (CoolLED pE-300white, CoolLED Ltd., UK), a 20x water-immersion objective (numerical aperture 0.5, Olympus), and an ORCA-Fusion Digital CMOS C14440-20UP camera. Each field of view was 1152 × 1152 pixels (one pixel = 0.65 μm). Videos were captured using μManager software (version 1.4.22, University of California, San Francisco, USA) and analyzed using ImageJ software. Discrete regions of interest (ROIs) along the capillary network were selected for analysis. The fractional increase in fluorescence (F/F0) was determined for ROIs, where fluorescence (F) is normalized to basal fluorescence (F0). Underlying mechanisms were examined by adding pharmacological agents to the superfusing bath solution. Velocity data were obtained by determining the latency of the response between adjacent ROIs following local application of compounds in relation to the distance traveled.
 
-## Two-photon imaging of in vivo brain microcirculatory hemodynamics
+### Two-photon imaging of in vivo brain microcirculatory hemodynamics
 
 Hemodynamics of the murine microcirculation were assessed in vivo after capillary endothelial cell TRPA1 activation as described previously (Longden et al., 2017). Briefly, mice were anesthetized with isoflurane (5% induction, 2% maintenance) and the skull was exposed. Thereafter, a stainless-steel head plate was attached over the right hemisphere using dental adhesive, and the head was immobilized by securing the head plate to a holding frame. A cranial window (~2 mm diameter) was made in the skull above the somatosensory cortex, after which FITC-labeled dextran (150 kDa; 150 μL of a 3 mg/mL solution; Sigma-Aldrich, Inc) was intravenously (i.v.) administered to allow visualization of the cortical cerebral vasculature and contrast imaging of RBCs. Following completion of the surgical procedure, isoflurane anesthesia was replaced with combined α-chloralose (50 mg/kg, i.p.; Sigma-Aldrich, Inc) and urethane (750 mg/kg, i.p.; Sigma-Aldrich, Inc) to eliminate confounding vasodilatory effects of isoflurane. Capillaries downstream of arterioles were identified and selected for study. A micropipette was positioned adjacent to the capillary, such that AITC (30 µM) was directly applied onto the capillary. Tetramethylrhodamine isothiocyanate (TRITC; 150 kDa; 0.2 mg/mL; Sigma-Aldrich, Inc)-labeled dextran was also included in the micropipette to visualize the micropipette location and determine the spatial coverage of the solution. The duration and pressure of fluid ejection via a glass micropipette was calibrated to obtain a localized application area approximately 10 μm in diameter. Images were obtained using a Zeiss LSM-7 two-photon microscope (Zeiss, USA), coupled to a Coherent Chameleon Vision II Titanium-Sapphire pulsed infrared laser (Coherent, USA) and a 20x Plan Apochromat water-immersion objective (numerical aperture 1.0, Zeiss). Each field of view was 512 × 512 pixels (one pixel = 0.42 μm). After excitation at 820 nm, emitted FITC-labeled dextran and TRITC-labeled dextran fluorescence was separated through 500–550 and 570–610 nm bandpass filters, respectively. RBC flux was determined by line-scan imaging of the capillary. Change in RBC flux through the stimulated capillary and cross-sectional area of upstream arterioles were obtained using ImageJ software.
 
-## Functional hyperemia
+### Functional hyperemia
 
 After anesthetizing mice with isoflurane (5% induction, 2% maintenance), the skull was exposed and the head was immobilized in a stereotaxic frame. The skull of the right hemisphere was carefully thinned using a drill to visualize the surface vasculature of the somatosensory cortex. Following completion of the surgical procedure, isoflurane anesthesia was replaced with combined α-chloralose (50 mg/kg, i.p.) and urethane (750 mg/kg, i.p.) to eliminate confounding vasodilatory effects of isoflurane. Perfusion was monitored via a laser-Doppler flowmetry probe (PeriFlux System PF5000, Perimed AB, Sweden) positioned above the somatosensory cortex. The contralateral whiskers were stimulated for either 1, 2, or 5 s, and changes in perfusion were recorded. Contralateral whiskers were stimulated three times at 2 min intervals. Ipsilateral whiskers were also stimulated as a control for potential vibration artifacts. The role of TRPA1 channels was assessed by treating mice with HC-030031 (100 mg/kg, i.p. for 30 min), and recording the hyperemic response in Trpa1-ecKO mice. Data are presented as changes in perfusion relative to baseline, calculated as follows: %Δ Blood flow = (perfusion during stimulus/baseline perfusion)×100.
 
-## Statistical analysis
+### Statistical analysis
 
 All data are expressed as means ± standard error of the mean (SEM), unless specified otherwise. The value of ‘n’ refers to number of cells for patch-clamp electrophysiology and fluorescence imaging experiments, the number of vessel preparations for pressure myography and fluorescence and Ca2+ imaging experiments, and the number of animals for two-photon imaging studies and functional hyperemia assessments. Experimental sample size was determined using a two-sided power analysis to reach a power of 0.8 for an α of 0.05. We estimated a minimum of five cells per group for patch-clamp electrophysiology experiments, five vessel preparations per group for pressure myography and Ca2+ imaging experiments, and four animals per group for studies involving two-photon imaging and functional hyperemia.
 

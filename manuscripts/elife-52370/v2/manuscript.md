@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Retinoic acid-related orphan receptor beta (RORβ) is a transcription factor (TF) and marker of layer 4 (L4) neurons, which are distinctive both in transcriptional identity and the ability to form aggregates such as barrels in rodent somatosensory cortex. However, the relationship between transcriptional identity and L4 cytoarchitecture is largely unknown. We find RORβ is required in the cortex for L4 aggregation into barrels and thalamocortical afferent (TCA) segregation. Interestingly, barrel organization also degrades with age in wildtype mice. Loss of RORβ delays excitatory input and disrupts gene expression and chromatin accessibility, with down-regulation of L4 and up-regulation of L5 genes, suggesting a disruption in cellular specification. Expression and binding site accessibility change for many other TFs, including closure of neurodevelopmental TF binding sites and increased expression and binding capacity of activity-regulated TFs. Lastly, a putative target of RORβ, Thsd7a , is down-regulated without RORβ, and Thsd7a knock-out alone disrupts TCA organization in adult barrels.
+Retinoic acid-related orphan receptor beta (RORβ) is a transcription factor (TF) and marker of layer 4 (L4) neurons, which are distinctive both in transcriptional identity and the ability to form aggregates such as barrels in rodent somatosensory cortex. However, the relationship between transcriptional identity and L4 cytoarchitecture is largely unknown. We find RORβ is required in the cortex for L4 aggregation into barrels and thalamocortical afferent (TCA) segregation. Interestingly, barrel organization also degrades with age in wildtype mice. Loss of RORβ delays excitatory input and disrupts gene expression and chromatin accessibility, with down-regulation of L4 and up-regulation of L5 genes, suggesting a disruption in cellular specification. Expression and binding site accessibility change for many other TFs, including closure of neurodevelopmental TF binding sites and increased expression and binding capacity of activity-regulated TFs. Lastly, a putative target of RORβ, Thsd7a, is down-regulated without RORβ, and Thsd7a knock-out alone disrupts TCA organization in adult barrels.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ We show that in addition to being sufficient, RORβ is also required for both pr
 
 Cortical barrels in mice are complex structures. Cell-sparse barrel hollows are where thalamic projections are concentrated. Barrel walls are formed by cortical cell aggregates that surround the TCAs. Barrel septa consist of the intermediate spaces between barrel walls (Woolsey and Van der Loos, 1970). To assess the impact of RORβ loss on barrel organization we used two staining methods. Barrel walls were visualized by Nissl staining (Van der Loos and Woolsey, 1973) and barrel hollows were visualized by vesicular glutamate transporter 2 (VGLUT2), which is strongly expressed in TCAs (Fremeau et al., 2001; Liguz-Lecznar and Skangiel-Kramska, 2007), or as clusters of reporter expressing afferents from VPM neurons. This strategy allowed clear identification of changes in either structure independently. Cytochrome oxidase (CO) staining was also used in some conditions, but the presence of CO signal in both barrel walls and TCAs made it less useful.
 
-## RORβ is required for postnatal barrel wall formation and influences segregation of thalamocortical afferents (TCAs)
+### RORβ is required for postnatal barrel wall formation and influences segregation of thalamocortical afferents (TCAs)
 
 To begin exploring RORβ function in barrel organization, we used a global, constitutive knock-out (KO), which contains a GFP expression cassette knocked-in to the Rorb locus. RorbGFP/+ mice express GFP in RORβ expressing cells allowing identification of barrel cortex without significant disruption to barrel structures or neuronal function (Liu et al., 2013). RorbGFP/+ mice were used as controls (Ctl), while RorbGFP/GFP mice disrupt both copies of Rorb to generate a KO. Controls showed no detectable disruption to barrel organization compared to WT animals (Figures 1A and 2A).
 
@@ -52,33 +52,65 @@ To begin exploring RORβ function in barrel organization, we used a global, cons
 
 **Figure 1.:** Nissl staining on tangential sections of flattened cortices after global, constitutive knock-out shows barrel wall organization requires RORβ. (A) Nissl staining (Left) in whisker barrel field as identified by strong GFP expression (Right). Control (Ctl) and Rorb knock-out (KO) animals were age matched at P7, P30, and P60. (B) Quantification of barrel hollow to barrel walls/septa contrast (Barrel-Septa Contrast) from Nissl staining. N = 4 age-matched animals for each genotype (Ctl or KO). Two tissue sections containing the largest portions of whisker barrel field identified by GFP signal were averaged per animal. Whisker plots show the median per animal ± standard deviation. Gray points show mean contrast for each animal. P-value by independent sample t-test, between Ctl and KO at each timepoint.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig2-v2.jpg)
+
+**Figure 2.:** (A) VGLUT2 staining of excitatory thalamic axon terminals in cortical whisker barrels shows normal initial TCA patterning at P7 but with reduced barrel-septa contrast in Rorb KO, and further reductions in contrast with age in both KO and Ctl. Ctl and Rorb KO animals were age matched. (B) Quantification of barrel hollow to barrel walls/septa contrast (Barrel-Septa Contrast) in VGLUT2. N = 4–6 age-matched animals for each genotype (Ctl or KO; each section shown is from a separate animal). Two tissue sections containing the largest portions of whisker barrel field identified by GFP signal were averaged per animal. Whisker plots show median contrast per animal ± standard deviation. Gray points show mean contrast for each animal. P-value by independent sample t-test, between Ctl and KO at each timepoint.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunofluorescence images of thalamus from two animals injected with AAV carrying an hSyn-mCherry construct. Fixed tissue sections were counter stained with DAPI. (B) Immunofluorescence images of whisker barrel cortex from two animals with AAV-hSyn-mCherry injected into barreloids of the VPM. Fixed tissue sections were stained for VGLUT2. (C) Quantification of barrel-septa contrast for VLGUT2 and mCherry. N = 4 P30 wild-type animals. The two tissue sections with the strongest mCherry signal and containing at least two mCherry-saturated barrels (barrels surrounded by barrels with mCherry signal) were quantified per animal. Only mCherry-saturated barrels were quantified. The same barrels were quantified for mCherry and VLGUT2. Whisker plots show the median per animal ± standard deviation. Gray points show mean contrast for each animal. Dashed blue lines and blue shaded regions show the mean ± standard deviation contrast for Ctl P7 and P30 samples replotted from Figure 2B for reference. ANOVA with posthoc Tukey test reveals significant differences between P7 and all of the P30 groups (p=1.7×10−4, 9.1 × 10−3 and 4.3 × 10−3, for p7 vs. original VGLUT2 group, current VGLUT2 group and current mCherry group) but no differences between P30 groups (p=0.61, 0.81 and 0.99 for original vs. current VGLUT2, original VGLUT2 vs. mCherry and current VGLUT2 vs. mCherry). A single t-test between the current VGLUT2 and mCherry contrasts was also not significant.
+
 Barrels form around postnatal day 5 (Rice and Van der Loos, 1977). Nissl staining of barrel walls at P7, P30, and P60 showed that RORβ is required for barrel wall formation. Representative images of Nissl and GFP are shown in Figure 1A where the lack of barrel wall organization is clearly visible at P7 and remains disrupted at P30. Figure 1B quantifies this effect as the contrast between barrel hollows and barrel wall/septa fluorescence intensity. Contrast was calculated as (barrel - septa) / (barrel + septa) where septa includes barrel walls (see methods for details). Quantification demonstrated a near complete lack of contrast in KO barrel cortex supporting a lack of cortical organization.
 
 While TCAs have been shown to instruct cortical cell organization we hypothesized the lack of barrel walls might reciprocally affect TCA organization. TCAs visualized by VGLUT2 staining showed an intact pattern of barrel hollows at P7 in KO animals, Figure 2A. However, careful quantification of the VGLUT2 contrast between hollows and septa showed a significant decrease in the KO suggesting loss of RORβ and/or the lack of barrel walls had a mild but measurable effect on TCA segregation. Interestingly, as animals aged into adulthood TCA segregation also declined in control as well as Rorb KO animals. Disorganization in the Rorb KO was characterized by both loss of quantifiable VGLUT2 contrast as well as the qualitative barrel patterning most obvious at P60 between Ctl and KO in Figure 2A. Both genotype and age significantly affected VGLUT2 contrast (genotype p=4.5e-07 and age p=2.6e-06 by two-way ANOVA) but did not interact significantly. Comparing pairwise across ages we find a significant decline in TCA organization between P7 and P20 controls, with no significant change from P20 to P60. This suggests that while both age and loss of RORβ significantly reduced contrast, loss of RORβ did not significantly change the time course of TCA desegregation.
 
 To examine whether loss of VGLUT2 contrast could be due to late arrival of VGLUT2+ inputs from outside the VPM we injected AAV expressing mCherry under the hSyn promoter specifically into the VPM (Figure 2—figure supplement 1A). The VGLUT2 barrel-septa contrast was comparable to the barrel-septa contrast in the VPM-specific mCherry filled afferents at P30 strongly suggesting loss of VGLUT2 contrast with age is due to loss of TCA organization (Figure 2—figure supplement 1B-C). Together these data show that RORβ is critical for normal whisker barrel formation and, loss of TCA segregation into adulthood suggests that time/age continues to affect cytoarchitecture.
 
-## RORβ is required in the cortex but not the thalamus for barrel organization
+### RORβ is required in the cortex but not the thalamus for barrel organization
 
 In addition to L4 excitatory neurons, RORβ is expressed in the thalamic neurons that project to barrel hollows. To assess whether the disruption of barrels is dependent on RORβ expression in thalamus and/or locally in cortex we used a floxed allele of Rorb (Rorbf/f) crossed to Cre driver lines generating tissue-specific disruption of RORβ as diagrammed in Figure 3A. A knock-in line expressing Cre from the serotonin transporter gene, Sert (Slc6a4 or 5-HTT) locus was used to knock-out Rorb in the thalamus. The SertCre line alone showed a mild disruption to TCA organization without disrupting barrel walls, suggesting the Cre knock-in might be hypomorphic (Figure 3B–C). However, thalamic KO of Rorb (SertCre Rorbf/f) showed no additional disruption to TCAs or barrel walls. This is consistent with the observation that Rorb KO also did not disrupt barreloid organization (Figure 3—figure supplement 1A). Thus, loss of RORβ in thalamic neurons was not responsible for the loss of cortical wall organization or the majority of TCA disorganization observed in the global RorbGFP/GFP KO.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig3-v2.jpg)
+
+**Figure 3.:** (A) Diagram and timeline of Cre driver line tissue-specific expression in cortex versus thalamus and timing relative to barrel formation and consolidation. Color indicates expression in cortex (red) or thalamus (purple). (B) VGLUT2 and Nissl staining of whisker barrel cortex at P30 from floxed Rorb control without Cre (Rorbf/f Ctl), SertCre control (Sert Ctl) without floxed Rorb and the cross (Rorbf/f SertCre), which knocks out Rorb specifically in thalamus during embryonic development. Whisker plots as described for Figure 1B. (C) Quantification of VGLUT2 Barrel-Septa Contrast in genetic lines from B. N = 3–5 P30 animals. Quantification and plotting as described in Figure 2B. P-value by ANOVA. (D) VGLUT2 and Nissl staining of whisker barrel cortex from Emx1Cre control (Emx1 Ctl) without floxed Rorb, and the cross (Rorbf/f Emx1Cre) from P7 and P30 animals, and a P60 animal from floxed Rorb crossed to a CamK2aCre driver line. Emx1Cre knocks out Rorb specifically in forebrain during embryonic development, and CamK2aCre knocks out Rorb in forebrain neurons at postnatal weeks 2–3. (E) Quantification of VGLUT2 Barrel-Septa Contrast in genetic lines from D. N = 3–5 animals per age group. Quantification and plotting as described in Figure 2B. P-values by independent sample t-test, between Ctl and KO at each time point. CamK2aCre showed no difference from Rorbf/f Ctl. Whisker plots as described for Figure 1B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cytochrome oxidase staining of barreloids in thalamus. (B) Fluorescent images of barrel cortex from P30 mice with CamK2ACre; Rosa26tdTomato; Rorbflox/GFP.
+
 A knock-in line expressing Cre from the Emx1 locus removed RORβ specifically in forebrain structures. Emx1Cre alone showed no significant disruption to barrel organization (Figure 3D–E). However, barrel organization was significantly disrupted by cortical KO of Rorb (Emx1Cre Rorbf/f). In addition, a CamK2aCre diver line that removes RORβ in the cortex after barrel formation, showed no effect. CamK2aCre activated expression of a tdTomato reporter from the Rosa26 locus in only a subset of GFP+ L4 neurons (Figure 3—figure supplement 1B), therefore it is not clear whether late expression of RORβ is expendable or whether expression in a subset of L4 neurons is sufficient for barrel organization. Together these data demonstrate that RORβ is required in the cortex prior to barrel formation. Loss of RORβ in the thalamus does not disrupt barrel architecture, suggesting RORβ drives barrel wall organization through cell-intrinsic mechanisms within layer 4.
 
-## RORβ is required for expression of a layer four gene profile and repression of layer five genes
+### RORβ is required for expression of a layer four gene profile and repression of layer five genes
 
 Because RORβ is a transcription factor we hypothesized loss of function would change gene expression in L4 neurons. To test this, RNA-seq was performed on sorted GFP+ cells from micro-dissected L4 S1. We were careful in this dissection to exclude a small population of GFP+ L5 neurons. Differential expression analysis between RorbGFP/+ and RorbGFP/GFP cells identified many dysregulated genes (fold change ≥2, adjusted p-value<0.01). At postnatal day 2 (P2) and prior to barrel formation, 246 genes were significantly disrupted with 51% down-regulated in the KO. At P7, just after barrel formation, 433 genes were disrupted with 36% down-regulated. At P30, 286 genes were disrupted with 37% down-regulated. Examining the overlap between ages we find very few genes significantly disrupted in the same direction across time points, suggesting highly dynamic and complex regulation, Figure 4A, B.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig4-v2.jpg)
 
-**Figure 4.:** Rorb KO disrupts the layer four expression profile including up-regulating many deep layer genes.(A) Heatmaps showing marker genes or genes strongly enriched, as identified in the Allen Brain Atlas, for each layer of the neocortex differentially expressed between control and Rorb KO. Log-transformed transcripts per million (TPM) are color scaled in red and blue for each of the four RNA-seq replicates in the left most heatmap and the mean for each time point and genotype in the middle heatmaps. Log fold change (LFC) between control (Ctl) and Rorb KO is color-scaled in orange and purple in the right most heatmaps. (B) Numbers of differentially expressed genes (DEGs) for the three ages examined. (C) Line plots showing LFC for the same genes. The solid black line indicates no change. Negative LFC indicates decreased expression in Rorb KO, and LFC >0 indicates increased expression in Rorb KO. Each colored line is a layer-specific DEG and the dashed black line plots the mean across the group of genes. (D) RNA-seq expression of layer 5 TFs. Lines plot the mean ± SE. P by moderated t-test adjusted for multiple comparisons (Benjamini-Hochberg). (E) Additional L4 and L5 genes were identified using the Allen Brain Atlas differential search contrasting L4 SSp structures to L5 SSp. Genes with >1.5 fold change and expression threshold >1.6 were selected. Genes already shown in A-C were removed. Hence each gene shown does not meet statistical criteria for differential expression in Ctl/KO by RNA-seq. Line plots show RNA-seq LFC for each layer-specific gene. The solid black line is the mean across genes and the solid gray line indicates no change. Negative LFC indicates decreased expression in Rorb KO, and LFC >0 indicates increased expression in Rorb KO. (F) Overall (first bar), 1% of genes were downregulated (blue) and 2% were upregulated (red). Downregulated genes were overrepresented (26%) among the 102 L4-specific genes (middle bar), while upregulated genes were overrepresented (19%) among the 240 L5-specific genes. Both overrepresentations were significant (p<2.2e-16) by fisher exact test.
+**Figure 4.:** (A) Heatmaps showing marker genes or genes strongly enriched, as identified in the Allen Brain Atlas, for each layer of the neocortex differentially expressed between control and Rorb KO. Log-transformed transcripts per million (TPM) are color scaled in red and blue for each of the four RNA-seq replicates in the left most heatmap and the mean for each time point and genotype in the middle heatmaps. Log fold change (LFC) between control (Ctl) and Rorb KO is color-scaled in orange and purple in the right most heatmaps. (B) Numbers of differentially expressed genes (DEGs) for the three ages examined. (C) Line plots showing LFC for the same genes. The solid black line indicates no change. Negative LFC indicates decreased expression in Rorb KO, and LFC >0 indicates increased expression in Rorb KO. Each colored line is a layer-specific DEG and the dashed black line plots the mean across the group of genes. (D) RNA-seq expression of layer 5 TFs. Lines plot the mean ± SE. P by moderated t-test adjusted for multiple comparisons (Benjamini-Hochberg). (E) Additional L4 and L5 genes were identified using the Allen Brain Atlas differential search contrasting L4 SSp structures to L5 SSp. Genes with >1.5 fold change and expression threshold >1.6 were selected. Genes already shown in A-C were removed. Hence each gene shown does not meet statistical criteria for differential expression in Ctl/KO by RNA-seq. Line plots show RNA-seq LFC for each layer-specific gene. The solid black line is the mean across genes and the solid gray line indicates no change. Negative LFC indicates decreased expression in Rorb KO, and LFC >0 indicates increased expression in Rorb KO. (F) Overall (first bar), 1% of genes were downregulated (blue) and 2% were upregulated (red). Downregulated genes were overrepresented (26%) among the 102 L4-specific genes (middle bar), while upregulated genes were overrepresented (19%) among the 240 L5-specific genes. Both overrepresentations were significant (p<2.2e-16) by fisher exact test.
 
 RORβ expression is a key feature distinguishing L4 neurons (Lein et al., 2007). To examine the effect of RORβ loss on layer-specific transcriptional identity we assessed the layer specificity of genes differentially expressed between control and Rorb KO (DEGs). The Allen Brain Atlas was used to manually screen all DEGs for layer-specific expression in the neocortex. Genes were considered layer-specific if the in-situ hybridization (ISH) signal appeared at least three-fold higher in one layer (considering layers 2 and 3 together). Many genes had complex specificities showing enrichment in two or more layers. These were not included for simplicity. Grouping DEGs based on the layer they are normally expressed within, we see that DEGs which should be expressed in upper layers were generally down-regulated and DEGs that should be expressed in deep layers were generally up-regulated in the Rorb KO, Figure 4A–D. The strongest effects were loss of many L4 genes and increased expression of many L5 genes. While many L4 and L5 genes were affected, this was not a global identity switch. Many L4 and L5 genes identified from the Allen Brain Atlas were not differentially expressed. In order to assess the statistical significance of the down-regulation of L4 genes and up-regulation of L5 genes we used the Allen Atlas differential search function to contrast L4 to L5 of primary somatosensory cortex (SSp) and included all genes with >1.5 fold change and expression threshold >1.6 (Figure 4E–F). Of the 102 L4-specific genes 26% were down-regulated in the KO, a single gene was up-regulated, and the remainder were unchanged. Conversely, up-regulated genes were overrepresented (19%) among the 240 L5-specific genes, and a fisher exact test revealed that these overrepresentations were highly significant (p<2.2e-16). Thus, although only a portion of the L4 gene expression profile is altered by loss of Rorb, it is disproportionately weighted towards down-regulation of L4 genes and upregulation of L5 genes.
 
 Several L5 genes are worth noting. Bcl11B/Ctip2, is a marker of thick-tufted L5B-type neurons and significantly up-regulated at P2 in the KO, but silenced at P7 and P30 similar to control (Figure 4D). Fezf2, another L5B marker and regulator of Bcl11B (Chen et al., 2005), was similarly silenced over barrel development, but was overexpressed at P30 in the KO. Foxo1 is mainly expressed in L5 at younger ages (Allen Developing Mouse Brain Atlas) declining over barrel development, but in the KO was significantly overexpressed at P7. Etv1, also a L5A marker (Doyle et al., 2008), was upregulated in the KO at both P2 and P30. Lastly, Egr4 was up-regulated at P30 in the KO, and has been associated with Etv1 expressing neurons (Doyle et al., 2008). RNAscope (Wang et al., 2012) in situ analysis against two L5 genes confirmed up-regulation in L4 (Figure 5, Figure 5—figure supplement 1A). Together these data support a disorganized partial shift in layer identity with many different factors implicated at distinct time points.
 
-## Rorb KO disrupts transcription factor binding sites near DEGs
+![Figure 5.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig5-v2.jpg)
+
+**Figure 5.:** (A) RNAscope in situ hybridization of Fezf2 in control (Ctl) and Rorb KO tissue. (B) Quantification of Fezf2 and Tox RNA puncta per cell in either layer 4 or layer 5 of control and Rorb KO tissue. Tox images are shown in a Figure 5—figure supplement 1. N = 4 P30 animals for each genotype (Ctl or KO). Two regions containing S1 were averaged per animal. Whisker plots show the median per animal ± standard deviation. Gray points show mean number of puncta per cell for each layer in each animal. P-value by independent sample t-test. (C) RNA-seq changes in Fezf2 and Tox expression at P30 replotted from heatmap of Figure 4. Gray points show values for individual replicates. Whisker plots show the mean ± standard deviation (N = 4).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Quantification of puncta per cell is shown in Figure 5.
+
+### Rorb KO disrupts transcription factor binding sites near DEGs
 
 RORβ, Bcl11b, Foxo1, Etv1, and Egr4 are TFs that often regulate gene expression by binding to distal regulatory sites such as enhancers. There are many chromatin features of enhancers, one of which is that they are open and accessible to enzymatic fragmentation in assays such as the Assay for Transposase Accessible Chromatin (ATAC) (Buenrostro et al., 2015). To begin examining mechanisms involved in changing gene expression, we performed ATAC-seq on sorted GFP+ L4 neurons from control and Rorb KO animals at P30 (Figure 6A). High confidence ATAC-seq peaks were assessed for differential accessibility between control and KO samples. We identified 5210 peaks with ≥2 fold change in accessibility (FDR < 0.02). Nearly 4-times as many regions lost accessibility (N = 4123 closed) than increased (N = 1087 opened), (Figure 6—figure supplement 1A). Differential ATAC peaks were primarily located in introns and intergenic regions Figure 6—figure supplement 1B suggesting loss of RORβ function resulted in closure of many more regulatory regions than opening.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig6-v2.jpg)
+
+**Figure 6.:** (A) ATAC-seq normalized reads per million (RPM) for biological replicates, y-axis scaled 0–2. Samples collected from GFP+ S1 L4 RorbGFP/+ neurons (Ctl, blue) and GFP+ S1 L4 RorbGFP/GFPneurons (KO, red). Arrows indicate differential peaks (fold change ≥2, FDR < 0.02). Open arrows indicate differential peaks with transcription factor motif sequences as in (B). (B) Cross-validated motifs with significant enrichment in ATAC peaks with differential accessibility. Closed; regions with significantly reduced access, Opened; regions with significantly increased access in the Rorb KO. Motif instances were cross-validated between MEME and HOMER algorithms. Odds ratio and p-value calculated comparing to motif frequency in control regions. (C–D) Cross-validated motif enrichment in ATAC peaks near the TSSs of (C) up-regulated or down-regulated DEGs and (D) L4- or 5-specific genes. Bars plot odds ratio over control regions. Asterisk indicates significant motif enrichment (p<0.03 by Fisher exact test) in nearby ATAC peaks compared to control regions and separately significant enrichment (p<0.03 by Fisher exact test) of DEGs with a nearby motif compared to an independent group of control genes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Differential ATAC peaks identified by DiffBind with Log2 Fold change (LFC) >1 and FDR < 0.02. (B) Genomic distribution of ATAC-seq peaks identified in Rorb control and Rorb KO. All peaks; all ATAC peaks in Ctl and KO, closed and opened peaks as defined in (B), stable; peaks with the lowest LFC between control and KO. Promoter defined as 2 kb upstream of an annotated TSS. (C) De novo motif searching in differential ATAC peaks using two independent algorithms, MEME AME function and HOMER. Only motifs for TFs expressed in either sample are plotted. (D) RNA-seq expression of TFs with motifs in ATAC peaks. Lines plot the mean ± SE. P by moderated t-test adjusted for multiple comparisons (Benjamini-Hochberg). (E–F) RNA-seq log2 fold-change (LFC) for (E) activity-regulated transcription factors and (F) genes previously described to have a role in barrel organization. (G) RNA-seq of genes involved in serotonin signaling. Plots as in (D).
 
 We hypothesized that many of the closed regions might contain a RORβ binding motif while regions that opened may have binding potential for other TFs. To assess this possibility, two software algorithms (MEME and HOMER) were used to identify de novo enriched motifs from the DNA sequences of differential ATAC peaks separating closed and opened regions. This unbiased analysis also identifies which enriched sequences match known TF binding motifs. RORβ was the top motif from closed regions, Figure 6—figure supplement 1C. Considering only expressed TFs, the potent neurogenic factors NeuroD1 and Ascl1 were also among the top motifs in closed regions. In regions that opened, the top motifs from expressed TFs were Nfil3, Hlf, Jun, Fos, Trps1, Mef2a/c/d and Irf2. Similar analysis was performed on ATAC peaks near up or down-regulated DEGs as well as L4 and L5 DEGs. To confirm enrichment and identify motif locations we used MEME FIMO and HOMER to scan for instances of a given set of motifs. This was done for all expressed TFs either enriched in the de novo motif analysis or differentially expressed, for which high quality motif models existed. Motif instances were cross-validated by retaining only those found by both MEME and HOMER. Figure 6B plots the odds ratio of motifs significantly enriched compared to control regions. Many of the motifs found by de novo analysis were confirmed, including RORβ in regions that closed.
 
@@ -96,13 +128,29 @@ Interestingly, the protein product of S100A10, p11, is involved in serotonin sig
 
 These analyses paint a complex picture where gene expression in L4 Rorb KO neurons is disrupted by multiple mechanisms. Loss of RORβ results in closure of many RORβ binding sites which are also enriched near genes with reduced expression in adults consistent with an activator role for RORβ. Other regulatory changes involve complex combinations of altered TF expression and/or altered binding potential at sites that opened or closed in the KO likely due to downstream effects of RORβ loss. These changes impact both known neurodevelopmental regulators as well as activity-regulated TFs.
 
-## Rorb KO delays excitatory input to barrel cortex
+### Rorb KO delays excitatory input to barrel cortex
 
 To examine whether RORβ loss impacts network activity, we examined inhibitory and excitatory synaptic properties of L4 neurons. We found no change in inhibitory innervation at P14 or P24 as measured by miniature inhibitory postsynaptic currents (mIPSCs), Figure 7—figure supplement 1A-B. However, synaptic function as measured by miniature excitatory postsynaptic currents (mEPSCs) revealed a significant delay in excitatory input, Figure 7A–C. At P5, the frequency of mEPSCs was low and comparable in control and KO, Figure 7B–C. At P7, around the time when recurrent cortical synapses begin to sharply increase (Ashby and Isaac, 2011) and LTP has just ended (Crair and Malenka, 1995), controls showed increased mEPSC frequency. However, Rorb KO animals had a significantly lower mEPSC frequency at P7 (Figure 7A–C), suggesting decreased functional synaptic input. At P10, Rorb KO neurons increased mEPSC frequency to levels comparable with controls. This suggests synaptic connections were delayed by Rorb KO mostly likely affecting recurrent excitatory connections. At P10, this defect in frequency is mostly corrected, but Rorb KO also showed significantly increased mEPSC amplitude at P10, possibly compensating for the delay at P7. By P19, both frequency and amplitude of mEPSCs were similar between control and KO (Figure 7B). These data support a subtle functional disruption to the barrel circuit in Rorb KO animals that is consistent with the transcriptional changes.
 
-## The putative RORβ target, Thsd7a, is required for adult TCA, but not barrel wall organization
+![Figure 7.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig7-v2.jpg)
+
+**Figure 7.:** (A) Example of miniature excitatory postsynaptic currents (mEPSCs) from L4 barrel cortex at P7. (B) Average mEPSC frequency and amplitude from Ctl and Rorb KO L4 barrel cortex at P5, P7, P10 and P19. Bars plot mean + SE, number of cells in parentheses. P values by 2-way ANOVA adjusted for multiple comparisons. (C) Cumulative histogram of inter-event intervals for control and Rorb KO L4 barrel cortex at P5, P7, and P10.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Example mIPSCs in one cell. (B) Mini IPSC amplitude (top graph) and frequency (bottom graph) at P14 and P24. Bars plot mean + SE, N cells listed on upper graph.
+
+### The putative RORβ target, Thsd7a, is required for adult TCA, but not barrel wall organization
 
 To begin exploring the relationship between disrupted gene expression in the Rorb KO and barrel organization, we examined known functions of genes differentially expressed at multiple developmental time points. Two candidates were identified with potential roles in cell migration and synaptogenesis. PlexinD1 (Plxnd1) is a cell signaling molecule known to play a role in pathfinding and synaptogenesis (Chauvet et al., 2007; Wang et al., 2015). Thrombospondin 7a (Thsd7a) regulates endothelial cell migration (Wang et al., 2010), but its role in the brain is unknown. In controls, expression of both genes followed a similar developmental trajectory as Rorb, peaking around P7 (Figure 8A). In the Rorb KO, Plxnd1 was significantly lower at P2 and P7 while Thsd7a was significantly lower at all three time points. In addition, we identified several differential ATAC peaks near Thsd7a with reduced accessibility (Figure 8B). This included a peak containing a strong RORβ motif just downstream of the transcription start site, suggesting Thsd7a might be a direct target of RORβ regulation.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig8-v2.jpg)
+
+**Figure 8.:** (A) Line plots of transcripts per million (TPM) measured by RNA-seq for three genes (Rorb, Thsd7a, and Plxnd1) from Ctl (blue) or Rorb KO (red) S1 layer IV barrel cortex. Lines plot the mean ± SE. (B) ATAC-seq around the Thsd7a gene (as in Figure 6A), y-axis scaled 0–3. (C) VGLUT2 and Nissl staining of barrel cortex at P7 and P30 from wild-type (Wt), Plxnd1 KO, or Thsd7a KO. (D) Quantification of VGLUT2 Barrel-Septa Contrast from genetic lines in C. N = 2–5 animals. Whisker plots as described for Figure 1B. Statistical analysis summarized in Figure 8—figure supplement 1A. (E) Background normalized quantification of VGLUT2 contrast in barrel hollows. Two tissue sections containing the largest portions of whisker barrel field were averaged per animal. N = 5, P30 animals per genotype. Whisker plots as described for Figure 1B. (F) Background normalized quantification of VGLUT2 contrast in septa. Two tissue sections containing the largest portions of whisker barrel field were averaged per animal. N = 5, P30 animals per genotype. Whisker plots as described for Figure 1B. (G) VGLUT2 staining imaged at high magnification (63X) in P30 Wt or Thsd7a KO whisker barrel cortex. Barrels are labeled ‘b’.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52370/elife-52370-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) AAV-hSyn-mCherry was injected, quantified, and plotted as described in Figure 2—figure supplement 1. Dashed lines and colored regions indicate the mean +/- SD contrast of P30 wild type (Wt) animals and P30 Thsd7a KO animals that were not injected with AAV quantified in Figure 8. N = 4 P30 Thsd7a KO animals. ANOVA including Ctrl and Thsd7a KO animals in Figure 8 as well as VGLUT2 and mCherry contrasts from P30 KO animals shown here revealed a significant difference across conditions and posthoc Tukey test revealed no significant differences between injected VGLUT2 and mCherry contrast (p=0.9996), or between either of these and the P30 Thsd7a KO animals shown in Figure 8 (p=0.908, p=0.980). The p7 KO and control animals shown in Figure 8 were also not significantly different (0.250) while all other comparisons were significant (range of p:<1×10−7: 1.47 × 10−5).
 
 There was no detectable disruption to barrel organization in Plxnd1 conditional KO mice (PlexinD1flox crossed to Emx1cre, Figure 8C–D). A Thsd7a constitutive KO also showed no disruption to barrel wall organization at P7 or P30. Interestingly, Thsd7a KO did show decreased VGLUT2 contrast between barrels and septa at P30 but not P7, suggesting Thsd7a is important for maintenance of TCA organization in adulthood (Figure 8C–D). The barrel phenotype of Thsd7a KO was qualitatively different from Rorb KO barrels. Specifically, the overall barrel pattern remained more intact in the Thsd7a KO despite the quantitative decrease in VGLUT2 contrast. As before, desegregation of VPM afferents was confirmed by VPM injection of AAV-hSyn-mCherry (Figure 8—figure supplement 1). Thsd7a KO may maintain sharper barrel borders than Rorb KO due to intact barrel walls. Reduction in VGLUT2 contrast in the Thsd7a KO could be due to increased TCA localization in the septa and/or decreased TCA localization in the barrels. To distinguish these two possibilities, three regions of low VGLUT2 staining adjacent to the barrel field were quantified and used for within tissue slice normalization of barrel and septa intensities. Thsd7a KO resulted in a 24% decrease in barrel hollow VGLUT2 signal and a 56% increase in the septa (Figure 8E–F). High resolution imaging showed a clear increase in VGLUT2 puncta located in the septa (Figure 8G). Thus, loss of Thsd7a after Rorb KO likely contributes to the decrease in TCA segregation in adulthood.
 
@@ -128,21 +176,164 @@ Although few other studies have examined the transcriptional targets and molecul
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>RorbGFP (Rorb1g)</td>
+      <td>PMID:23652001</td>
+      <td></td>
+      <td>Dr. Douglas Forrest (Laboratory of Endocrinology and Receptor Biology, National Institutes of Health)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rorbf/f (Rorbflox/flox)</td>
+      <td>PMID:29224725</td>
+      <td></td>
+      <td>Dr. Douglas Forrest (Laboratory of Endocrinology and Receptor Biology, National Institutes of Health)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26tdTomato</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>plexinD1flox</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:018319</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Thsd7a KO</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:MGI:6263683</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Emx1cre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:005628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>SertCre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:014554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>CamK2acre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:005359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-VGLUT2</td>
+      <td>Millipore AB2251</td>
+      <td>RRID:AB_2665454</td>
+      <td>1:500-1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-VGLUT2</td>
+      <td>Synaptic Systems 135 403</td>
+      <td>RRID:AB_887883</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken anti-GFP</td>
+      <td>Aves labs GFP-1020</td>
+      <td>RRID:AB_10000240</td>
+      <td>1:500-1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit Alexa Fluor 564</td>
+      <td>Invitrogen A-11037</td>
+      <td>RRID:AB_2534095</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Chicken Alexa Fluor 488</td>
+      <td>Invitrogen A-11039</td>
+      <td>RRID:AB_2534096</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit Alexa Fluor 633</td>
+      <td>Invitrogen A-21070</td>
+      <td>RRID:AB_2535731</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Guinea Pig Alexa Fluor 647</td>
+      <td>Invitrogen A-21450</td>
+      <td>RRID:AB_2735091</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Stain</td>
+      <td>Nissl</td>
+      <td>Invitrogen N21479</td>
+      <td></td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV-hSyn-mCherry</td>
+      <td>Addgene 114472-AAV8</td>
+      <td>RRID:Addgene_114472</td>
+      <td>Undiluted</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Fluorescent Multiplex kit</td>
+      <td>Advanced Cell Diagnostics, 320850</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animals were bred, housed, and cared for in Foster Biomedical Research Laboratory at Brandeis University (Waltham, MA, USA). Animals were provided with food and water ad libitum and kept on a 12 hr:12 hr light:dark cycle. Cages were enriched with huts, chew sticks, and tubes. All experiments were approved by the Institutional Animal Care and Use Committee of Brandeis University, Waltham, MA, USA.
 
 RorbGFP (Rorb1g) and Rorbf/f (Rorbflox/flox) mice were obtained from Dr. Douglas Forrest (Liu et al., 2013; Koch et al., 2017; Byun et al., 2019). RorbGFP mutation deletes the RORβ1 isoform, the predominant isoform in brain, and not the RORβ2 isoform (Liu et al., 2013). The Rorbf/f allele deletes both isoforms. The following mice were obtained from Jackson Laboratories: Rosa26tdTomato (stock 007909, RRID:IMSR_JAX:007909); plexinD1flox (stock 018319, RRID:IMSR_JAX:018319); Thrombospondin7a KO (Thsd7a) (stock 027218, RRID:MGI:6263683); Emx1cre (stock 005628, RRID:IMSR_JAX:005628); SertCre (Slc6a4) (stock 014554, RRID:IMSR_JAX:014554). CamK2acre (stock 005359, RRID:IMSR_JAX:005359).
 
-## Perfusion
+### Perfusion
 
 Animals were fatally anesthetized and transcardially perfused with 15 mL 1x PBS (Fisher, SH3001304) then 15 mL 4% PFA (Sigma Aldrich P6148-500G). Brains were fixed overnight in tangential orientation. After removing the whole brain from the skull, the cerebellum and olfactory bulbs were removed. The brain was split into two hemispheres along the longitudinal fissure and the midbrain was gently excised. The remaining cortex was placed in a shallow well made from a cryostat mold, filled with 4% PFA and a glass slide set on top for flattening. Brains were removed from PFA after 24–48 hr and stored in 30% sucrose/PBS solution at 4°C.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 50 µm slices were made on a freezing Microtome (Leica SM 2010R). Controls and KOs were stained together in batches. Slices were permeabilized overnight at 4°C in 0.3% Triton-X100 (Sigma Aldrich, T8787) and 3% Bovine Serum Albumin (Sigma B4287-25G) in PBS. Slices were then incubated for 24 hr in primary antibody solution containing 0.3% Triton-X100% and 3% Bovine Serum Albumin (BSA) in PBS at 4°C. Primary antibody dilutions were as follows: Guinea pig anti-VGLUT2 (Millipore AB2251, RRID:AB_2665454) 1:500-1:1000, rabbit anti-VGLUT2 (Synaptic Systems 135 403, RRID:AB_887883) 1:250, chicken anti-GFP (Aves labs GFP-1020, RRID:AB_10000240) 1:500-1:1000. Slices were washed three times in PBS for 10 min each at room temp and then moved to secondary antibody solution containing 0.3% Triton-X100, 3% Bovine Serum Albumin, 10% normal goat serum. All secondaries were used at 1:500; Goat Anti-Rabbit Alexa Fluor 564 (Invitrogen A-11037, RRID:AB_2534095), Goat Anti-Chicken Alexa Fluor 488 (Invitrogen A-11039, RRID:AB_2534096), Goat Anti-Rabbit Alexa Fluor 633 (Invitrogen A-21070, RRID:AB_2535731), Goat Anti-Guinea Pig Alexa Fluor 647 (Invitrogen A-21450, RRID:AB_2735091). Slices were stained using Nissl (Invitrogen N21479) at 1:250 in PBS for 2 hr at room temperature, washed in PBS as before, and mounted in VECTASHIELD HardSet Mounting Medium (Vector Laboratories, H-1500, RRID:AB_2336787). Slides were stored at −20C and imaged within 1 week.
 
-## Imaging and fluorescence quantification
+### Imaging and fluorescence quantification
 
 Tissue was imaged on a Leica DMI 6000B Inverted Widefield Imaging Fluorescence Microscope or a Zeiss LSM 880 confocal microscope. All genotypes and age groups contained roughly even numbers of males and females. A minimum of two slices containing at least five intact barrels between rows B-D were quantified per animal. Experimenters were blinded to age and genotype during imaging and quantification. Regions of interest (ROIs) were drawn manually by a blinded researcher around 5–6 intact barrels from rows B, C, or D using Fiji (Schindelin et al., 2012). An ROI including the total space around selected barrels up to the edges of adjacent barrels was drawn to be used for calculating septa intensity (Figure 9). For Thsd7a KO and controls, three additional ROIs were drawn in the region adjacent to barrel cortex with low VGLUT2 signal to be used as background to normalize barrel and septa intensity. Custom MATLAB code was used to quantify the average fluorescence in ROIs. Septa intensity was calculated as septa total ROI intensity - sum(barrel ROIs). Contrast = (barrel - septa) / (barrel + septa). For absolute barrel or septa intensity, measurements were normalized to background regions (Figure 9) within each tissue section. This was not necessary for contrast calculations because contrast is a ratio. Contrast and normalized barrel and septa intensity were averaged for two slices per animal. Two-way ANOVA was used to test for a significant effect of genotype and/or age as well as for an interaction between the two variables. Independent sample t-test was used to test for significant differences between genotypes at each age. No power analysis was performed and numbers of replicates performed were the minimum needed to demonstrate reproducibility, consistent with practices in similar published studies.
 
@@ -150,23 +341,23 @@ Tissue was imaged on a Leica DMI 6000B Inverted Widefield Imaging Fluorescence M
 
 **Figure 9.:** Regions of interest (ROIs) were drawn in Fiji by a researcher blinded to genotype and age.
 
-## AAV injection into VPM
+### AAV injection into VPM
 
 50 nl of AAV-hSyn-mCherry (Addgene 114472-AAV8, RRID:Addgene_114472) was delivered by stereotactic injection to the dorsal VPM of P18-20 animals. Mice were euthanized by cardiac perfusion of 4% paraformaldehyde solution at P30. Cortex was removed and flattened for tangential sectioning of barrel field into 50 µm slices on a freezing Microtome (Leica SM 2010R). Subcortical structures were embedded in agarose and sectioned into 50 µm coronal slices on a vibratome (Leica VT1000S), counterstained with DAPI, and imaged (Keyence BZ-X700). Barrel cortex was stained, imaged and contrast calculated as described above. We required two slices with a minimum of two mCherrry saturated barrels and no mCherry outside of the barrel field. Saturated barrels were defined as adjacent barrels surrounded by barrels with mCherry signal. Only saturated barrels were quantified and the same ROIs were used to quantify mCherry and VGLUT2.
 
-## Multiplex fluorescent RNA in situ hybridization (RNAscope) with immunohistochemistry
+### Multiplex fluorescent RNA in situ hybridization (RNAscope) with immunohistochemistry
 
 Mice were euthanized by cardiac perfusion of 4% paraformaldehyde solution at P30. Brain tissue was pretreated according to the RNAscope Sample Preparation and Pretreatment Guide for Fresh Frozen Tissue (Manual RNAscope assay; Advanced Cell Diagnostics). Tissue was sectioned at 12 μm and subsequent staining performed according to the manufacturer’s instruction for the RNAscope Fluorescent Multiplex kit (Advanced Cell Diagnostics, 320850) with two protocol modifications. Antigen retrieval was carried out in an autoclave set to a 5 min ‘fast’ cycle, 121°C, 15 psi. After protease III digestion, probe solutions containing 313301-C2 (Fezf2) or 484781 (Tox) also contained 10% NGS and 3% BSA to allow the probe binding step to also serve as the IHC blocking step. After developing the fluorescent in situ signal, slides were protected from light and stained overnight at room temperature with 1:250 chicken anti-GFP (Aves labs GFP-1020, RRID:AB_10000240) diluted in 1X Tris-borate-EDTA (TBE) buffer containing 10% NGS and 3% BSA. Slides were washed four times in 1X TBE for 2–5 min and incubated for two hours at room temperature with 1:500 Goat Anti-Chicken Alexa Fluor 488 (Invitrogen A-11039, RRID:AB_2534096). Slides were washed four times in 1X TBE for 2–5 min, counterstained with DAPI and coverslips mounted according to the instructions for the RNAscope Fluorescent Multiplex kit. Batches of staining were balanced to contain equal numbers of control and Rorb KO samples per batch.
 
 Stained tissue was imaged on a Zeiss LSM 880 confocal microscope. Two regions of neocortex containing S1 were imaged for each animal with automated image stitching so that layers 2 through six were contained in a single image. Images of RNA signal were background subtracted in ImageJ (Fiji) using a rolling ball radius of 5 pixels. GFP signal was used to draw ROIs within L4 and L5. A custom CellProfiler (Lamprecht et al., 2007) pipeline identified cells by identifying nuclei from DAPI images and expanding ROIs, and identified RNA puncta. RNA puncta were associated with the nearest cell in R using X,Y coordinates output from CellProfiler. RNA puncta were tallied per cell and the mean calculated per image then per animal and plotted. P-values were calculated by independent sample t-test between Ctl and KO L4.
 
-## Electrophysiology
+### Electrophysiology
 
 RorbGFP/GFP (KO) and RorbGFP/+ (control; Ctl) mice were anesthetized with isoflurane and decapitated. Coronal slices (300 µm) containing the primary somatosensory cortex were cut on a Leica (VT1000S) vibratome and incubated at room temperature in ACSF containing (mM) 126 NaCl, 25 NaHCO3, 2.5 KCl, 1.2 NaHPO4, 2 CaCl2, 1 MgCl2 and 32.6 dextrose adjusted to 326 mOsm, pH 7.4 and saturated with 95%/5% O2/CO2. Submerged, whole cell recordings were performed at 32 ± 1° on an upright microscope (Olympus BX50) equipped with epifluorescence. Pipettes with resistance 4–6 Mohm were filled with internal solution containing (mM) 100 K-gluconate, 20 KCl, 10 HEPES, 4 Mg-ATP, 0.3 Na-GTP, 10 Na-phosphocreatine and 0.2% biocytin adjusted to 300 mOsm, pH 7.35. For mIPSC recordings, the internal included 133 mM KCl and gluconate was omitted to bring ECl to 0 mV. Recordings were made using an Axoclamp 700A amplifier, and were digitized at 10–20 kHz and analyzed using custom software running under Igor 6.03 (Wavemetrics). Miniature synaptic events were recorded in voltage clamp at −70 mV in the presence of PTX (mEPSCs) or DNQX+APV (mIPSCs) respectively.
 
 Spiny stellate neurons were recognized based on their compact, GFP+ cell bodies within the GFP+ cell-dense layer 4. Input resistance was measured every 10–20 s with a small hyperpolarizing pulse and data were discarded if input or series resistance changed by >20%. P-values were calculated by 2-way ANOVA and adjusted for multiple comparisons by Tukey post hoc correction.
 
-## RNA-seq
+### RNA-seq
 
 RNA-seq was performed as described previously (Sugino et al., 2019). Briefly, 1000–1500 GFP+ cells were isolated by FACS (BD FACSAria Flow Cytometer) from micro dissected L4 S1 live tissue (N = 4 biological replicates per age and genotype). Figure 10 shows examples of the region micro dissected out to exclude L5. The four independent biological samples were collected from a pool generated by combining tissue from one male and one female mouse for a total of 8 animals used per time point. Cells were sorted directly into extraction buffer and RNA stored at −80C for <three weeks. All libraries were prepared and sequenced in a single batch to prevent batch effects. Total RNA was purified (Arcturus PicoPure RNA Isolation kit, KIT0204) according to manufacturer's specifications. Libraries were prepared using Ovation Trio RNA-Seq library preparation kit with mouse rRNA depletion (0507–32) according to manufacturer's specifications and sequenced on a NextSeq Illumina platform (NextSeq 500/550 High Output (1 × 75 cycles)) obtaining 27 ± 2 million reads (mean ± SE). Reads were mapped by STAR with 90 ± 0.3% unique mapping (mean ± SE) and quantified with featureCounts (Liao et al., 2014). Differentially expressed genes were identified by Limma (Ritchie et al., 2015) using a fold change cutoff of 2 and padj <0.01 from a moderated t-test adjusted for multiple comparisons using FDR (Benjamini-Hochberg).
 
@@ -174,14 +365,14 @@ RNA-seq was performed as described previously (Sugino et al., 2019). Briefly, 10
 
 **Figure 10.:** Yellow dashed line indicates the tissue retained for FACS. Layer five is labeled for reference.
 
-## ATAC-seq
+### ATAC-seq
 
 ATAC-seq was performed as described previously (Clark et al., 2019; Sugino et al., 2019). Briefly, 30,000–50,000 GFP+ cells were isolated by FACS from microdissected L4 live tissue (N = 2 biological replicates per age and genotype). The two independent samples were collected from a pool generated by combining tissue from two male and two female mice for a total of 8 animals used. Nuclei were transposed for 30 min and libraries amplified according to published methods (Corces et al., 2017). Tagmented nuclei were stored at −20C for <two weeks. All ATAC libraries were purified, amplified, and sequenced as a single batch. Libraries were sequenced on a NextSeq Illumina platform (high output 300 cycles (2 × 150 bp)) producing 105 ± 24 (mean ± SE) million reads per replicate. Reads were mapped using Bowtie2 and filtered producing 24 ± 2 (mean ± SE) million unique non-mitochondrial reads per replicate. TSS enrichment calculated per replicate according to the ENCODE quality metric (Corces et al., 2017) (https://github.com/ENCODE-DCC/atac-seq-pipeline) was 34 ± 3 (mean ± SE). Peaks were identified permissively using HOMER (-style dnase –fdr 0.5 -minDist 150 -tbp 0 -size 75 -regionRes 0.75 -region) (Heinz et al., 2010) and IDR (threshold = 0.01, pooled_threshold = 0.01) was used to identify reproducible peaks (Li et al., 2011). Differential ATAC peaks were identified using DiffBind with an FDR threshold = 0.02 and log2 fold change in normalized read coverage threshold ≥1 (Ross-Innes et al., 2012).
 
-## Data access
+### Data access
 
 Raw and processed RNA-seq and ATAC-seq files are available at GEO accession GSE138001.
 
-## Motif analysis
+### Motif analysis
 
 Motifs identified de novo from the sequences underlying ATAC peaks was carried out using MEME AME with shuffled input sequences as control and default settings (Fraction of maximum log-odds = 0.25, E-value threshold ≤10) (McLeay and Bailey, 2010), and HOMER findMotifsGenome.pl function masking repeats and -size given (Heinz et al., 2010). Scanning for specific motif matches in the sequences underlying ATAC peaks was carried out using MEME FIMO used the default threshold of p-value<1e-4 (Grant et al., 2011) and HOMER findMotifsGenome.pl -find function. When possible 2–3 PWMs were obtained from Jaspar (Khan et al., 2018) and Cis-BP (Weirauch et al., 2014) prioritizing PWMs from direct data sources such as ChIP-seq. The R package GenomicRanges (Lawrence et al., 2013) was used to identify overlapping motifs between the two algorithms for cross validation. The overlap criteria allowed a 1 bp difference in the start or end position of the motif to accommodate ambiguity among motif models. Fisher Exact tests were calculated in R to test for enrichment of motifs in ATAC regions compared to control regions and to test for enrichment of genes with a nearby motif from a DEG group compared to a control group of genes. The set of control regions was generated by shuffling ATAC peaks throughout the genome excluding sequence gaps using BedTools (Quinlan and Hall, 2010) and the control group of genes were defined as expressed above 5 TPM but unchanged by age or Rorb KO.

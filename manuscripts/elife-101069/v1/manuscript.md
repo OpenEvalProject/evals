@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03kk7td41 Cardiff University Brain Research Imaging Centre (CUBRIC), Cardiff University Cardiff United Kingdom
-2. https://ror.org/03kk7td41 School of Computer Science and Informatics, Cardiff University Cardiff United Kingdom
+1. Cardiff University Brain Research Imaging Centre (CUBRIC), Cardiff University Cardiff United Kingdom ([ROR:03kk7td41](https://ror.org/03kk7td41))
+2. School of Computer Science and Informatics, Cardiff University Cardiff United Kingdom ([ROR:03kk7td41](https://ror.org/03kk7td41))
 
 † Corresponding author
 
@@ -30,13 +30,13 @@ Harnessing a new deep learning architecture for automatic signal feature selecti
 
 ## Results
 
-## Framework overview
+### Framework overview
 
 The full architecture of the proposed Bayesian framework, dubbed µGUIDE, is presented in Figure 1. µGUIDE allows to efficiently estimate full posterior distributions of tissue parameters. It is comprised of two modules that are optimized together to minimize the Kullback–Leibler divergence between the true posterior distribution and the estimated one for every parameters of a given forward model. The ‘Neural Posterior Estimator’ (NPE) module (Papamakarios et al., 2017) uses normalizing flows (Papamakarios et al., 2021) to approximate the posterior distribution, while the ‘Multi-Layer Perceptron’ (MLP) module is used to reduce the data dimensionality and ensure fast and robust convergence of the NPE module.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101069/elife-101069-fig1-v1.jpg)
 
-**Figure 1.:** µGUIDE takes as input an observed data vector and relies on the definition of a biophysical or computational model (Ascoli et al., 2007; Callaghan et al., 2020; Jelescu et al., 2020). It outputs a posterior distribution of the model parameters. Based on a Simulation-Based Inference (SBI) framework, it combines a Multi-Layer Perceptron (MLP) with three layers and a Neural Posterior Estimator (NPE). The MLP learns a low-dimensional representation of , based on a small number of features (𝒙), that can be either defined a priori or determined empirically during training. The MLP is trained simultaneously with the NPE, leading to the extraction of the optimal features that minimize the bias and uncertainty of Nf.p(𝜽|𝒙)
+**Figure 1.:** µGUIDE takes as input an observed data vector and relies on the definition of a biophysical or computational model (Ascoli et al., 2007; Callaghan et al., 2020; Jelescu et al., 2020). It outputs a posterior distribution of the model parameters. Based on a Simulation-Based Inference (SBI) framework, it combines a Multi-Layer Perceptron (MLP) with three layers and a Neural Posterior Estimator (NPE). The MLP learns a low-dimensional representation of $𝒙$, based on a small number of features ($N_{f}$), that can be either defined a priori or determined empirically during training. The MLP is trained simultaneously with the NPE, leading to the extraction of the optimal features that minimize the bias and uncertainty of $p(𝜽|𝒙)$.
 
 The full posterior distribution contains a lot of useful information. To summarize and easily visualize this information, we propose three measures that quantify the best estimates and the associated confidence levels, and a way to highlight degeneracy. The three measures are the Maximum A Posteriori (MAP), which corresponds to the most likely parameter estimate; an uncertainty measure, which quantifies the dispersion of the 50% most probable samples using the interquartile range, relative to the prior range; and an ambiguity measure, which measures the Full Width at Half Maximum (FWHM), in percentage with respect to the prior range. Figure 2 presents those measures on exemplar posterior distributions. We show exemplar applications of µGUIDE to three biophysical models of increasing complexity and degeneracy from the dMRI literature: Ball&Stick (Behrens et al., 2003) (Model 1); Standard Model (SM) (Novikov et al., 2019) (Model 2); and extended-SANDI (Palombo et al., 2020) (Model 3).
 
@@ -44,19 +44,19 @@ The full posterior distribution contains a lot of useful information. To summari
 
 **Figure 2.:** (A) Examples of degenerate and non-degenerate posterior distributions. Two Gaussian distributions are fitted to the obtained posterior distribution, where the means and standard deviations are represented by the vertical lines and shaded areas. A voxel is considered as degenerate if the derivative of the fitted Gaussian distributions changes signs more than once (i.e. multiple local maxima), and if the two Gaussian distributions are not overlapping (the distance between the two Gaussian means is inferior to the sum of their standard deviations). (B) Presentation of the measures introduced to quantify a posterior distribution on exemplar non-degenerate posterior distributions. Maximum A Posteriori (MAP) is the most likely parameter estimate (dashed vertical lines). Uncertainty measures the dispersion of the 50% most probable samples using the interquartile range, with respect to the prior range. Ambiguity measures the Full Width at Half Maximum (FWHM), in percentage with respect to the prior range.
 
-## Evaluation of µGUIDE on simulations
+### Evaluation of µGUIDE on simulations
 
-## Comparison with MCMC
+#### Comparison with MCMC
 
-We performed a comparison between the posterior distributions obtained using µGUIDE and MCMC, a classical Bayesian method. Figure 3A shows posterior distributions on three exemplar simulations with SNR=50 using the Model 2 (SM), obtained with 15,000 samples. Sharper and less biased posterior estimations are obtained using µGUIDE. Figure 3B presents histograms for each model parameter of the bias between the ground truth value used to simulate a signal, and the MAP of the posterior distributions obtained with either µGUIDE or MCMC, on 200 simulations. Results indicate that the bias is similar or smaller using µGUIDE. Overall, µGUIDE posterior distributions are more accurate than the ones obtained with MCMC.
+We performed a comparison between the posterior distributions obtained using µGUIDE and MCMC, a classical Bayesian method. Figure 3A shows posterior distributions on three exemplar simulations with $SNR=50$ using the Model 2 (SM), obtained with 15,000 samples. Sharper and less biased posterior estimations are obtained using µGUIDE. Figure 3B presents histograms for each model parameter of the bias between the ground truth value used to simulate a signal, and the MAP of the posterior distributions obtained with either µGUIDE or MCMC, on 200 simulations. Results indicate that the bias is similar or smaller using µGUIDE. Overall, µGUIDE posterior distributions are more accurate than the ones obtained with MCMC.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101069/elife-101069-fig3-v1.jpg)
 
-**Figure 3.:** (A) Posterior distributions obtained using either µGUIDE or MCMC on three exemplar simulations with Model 2 (SM − ). Names of the model parameters are indicated in the titles of the panels. (SNR=50B) Bias between the ground truth values used for simulating the diffusion signals, and the Maximum A Posteriori extracted from the posterior distributions using either µGUIDE or MCMC. Sharper and less biased posterior distributions are obtained using µGUIDE.
+**Figure 3.:** (A) Posterior distributions obtained using either µGUIDE or MCMC on three exemplar simulations with Model 2 (SM − $SNR=50$). Names of the model parameters are indicated in the titles of the panels. (B) Bias between the ground truth values used for simulating the diffusion signals, and the Maximum A Posteriori extracted from the posterior distributions using either µGUIDE or MCMC. Sharper and less biased posterior distributions are obtained using µGUIDE.
 
 Moreover, it took on average 29.3 s to obtain the posterior distribution using MCMC on a GPU (NVIDIA GeForce GT 710) for one voxel, while it only took 0.02 s for µGUIDE. µGUIDE is about 1500 times faster than MCMC, which makes it more suitable for applying it on large datasets.
 
-## The importance of feature selection
+#### The importance of feature selection
 
 Figure 4 shows the MAP extracted from the posterior distributions versus the ground truth parameters used to generate the diffusion signal with µGUIDE and manually defined summary statistics for the three models. Less biased MAPs with lower ambiguities and uncertainties are obtained with µGUIDE, indicating that the MLP allows for the extraction of additional information not contained in the summary statistics, helping to solve the inverse problem with higher accuracy and precision. µGUIDE generalizes the method developed in Jallais et al., 2022 to make it applicable to any forward model and any acquisition protocol, while making the estimates more precise and accurate thanks to the automatic feature extraction.
 
@@ -64,7 +64,7 @@ Figure 4 shows the MAP extracted from the posterior distributions versus the gro
 
 **Figure 4.:** Maximum A Posterioris (MAPs) extracted from the posterior distributions versus ground truth parameters used for generating the signal for the three models. Orange points correspond to the MAPs obtained using MLP-extracted features (µGUIDE) and the blue ones to the MAPs with the manually defined summary statistics. Only the non-degenerate posterior distributions were kept. The summary statistics used in those three models are the direction-averaged signal for the Ball&Stick model, the LEMONADE system of equations (Novikov et al., 2018) for the Standard Model (SM), and the summary statistics defined in Jallais et al., 2022 for the extended-SANDI model. Results are shown on 100 exemplar noise-free simulations with random parameter combinations. The optimal features extracted by the MLP allow to reduce the bias and variance of the obtained microstructure posterior distributions.
 
-## µGUIDE highlights degeneracies
+#### µGUIDE highlights degeneracies
 
 Figure 5 presents the posterior distributions of microstructure parameters for the three models obtained with µGUIDE on exemplar noise-free simulations. Blue curves correspond to non-degenerate posterior distributions, while the red ones present at least one degeneracy for one of the parameters. As the complexity of the model increases, degeneracy in the model definitions appear. This figure showcases µGUIDE ability to highlight degeneracy in the model parameter estimation.
 
@@ -72,13 +72,145 @@ Figure 5 presents the posterior distributions of microstructure parameters for t
 
 **Figure 5.:** As the complexity of the model increases, degeneracies appear (red posterior distributions). µGUIDE allows to highlight those degeneracies present in the model definition.
 
-Tables 1 and 2 present the number of degenerate cases for each parameter in the three models, on 10,000 simulations. Table 1 considers noise-free simulations and the training and estimations were performed on CPU. Table 2 reports results on noisy simulations (Rician noise with SNR=50), with training and testing performed on a GPU (NVIDIA GeForce RTX 4090). The time needed for the inference and to estimate the posterior distributions on 10,000 simulations, define if they are degenerate or not, and extract the MAP, uncertainty, and ambiguity are also reported. The more complex the model, the more degeneracies.
+Tables 1 and 2 present the number of degenerate cases for each parameter in the three models, on 10,000 simulations. Table 1 considers noise-free simulations and the training and estimations were performed on CPU. Table 2 reports results on noisy simulations (Rician noise with $SNR=50$), with training and testing performed on a GPU (NVIDIA GeForce RTX 4090). The time needed for the inference and to estimate the posterior distributions on 10,000 simulations, define if they are degenerate or not, and extract the MAP, uncertainty, and ambiguity are also reported. The more complex the model, the more degeneracies.
 
-## Application of µGUIDE to real data
+**Table 1.**
+ Number of degenerate cases per parameter on 10,000 noise-free simulations.Training and estimations of the posterior distributions were performed on CPU. Time for training each model and time for estimating posterior distributions of 10,000 noise-free simulations, define if they are degenerate or not, and extract the Maximum A Posteriori (MAP), uncertainty, and ambiguity are also reported.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model (SNR = ∞)</th>
+      <th rowspan="2">Training time (CPU)</th>
+      <th rowspan="2">Fitting time (on 10,000 simulations)</th>
+      <th colspan="8">Number of degeneracies (on 10,000 simulations)</th>
+    </tr>
+    <tr>
+      <th>fn</th>
+      <th>Dn</th>
+      <th>De∥</th>
+      <th>ODI</th>
+      <th>De⊥</th>
+      <th>fs</th>
+      <th>fe</th>
+      <th>Cs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model 1: Ball&amp;Stick</td>
+      <td>11 min</td>
+      <td>96 s</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Model 2: Standard Model</td>
+      <td>2h02</td>
+      <td>135 s</td>
+      <td>4</td>
+      <td>34</td>
+      <td>23</td>
+      <td>3</td>
+      <td>8</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Model 3: extended-SANDI model</td>
+      <td>2h02</td>
+      <td>1412 s</td>
+      <td>205</td>
+      <td>4</td>
+      <td>260</td>
+      <td>57</td>
+      <td>-</td>
+      <td>1395</td>
+      <td>2571</td>
+      <td>1011</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Number of degenerate cases per parameter on 10,000 noisy simulations (Rician noise with SNR = 50).Training and estimations of the posterior distributions were performed using a GPU. Time for training each model and time for estimating posterior distributions of 10,000 noisy simulations, define if they are degenerate or not, and extract the Maximum A Posteriori (MAP), uncertainty, and ambiguity are also reported.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model (SNR = 50)</th>
+      <th rowspan="2">Training time (CPU)</th>
+      <th rowspan="2">Fitting time (on 10,000 simulations)</th>
+      <th colspan="8">Number of degeneracies (on 10,000 simulations)</th>
+    </tr>
+    <tr>
+      <th>fn</th>
+      <th>Dn</th>
+      <th>De∥</th>
+      <th>ODI</th>
+      <th>De⊥</th>
+      <th>fs</th>
+      <th>fe</th>
+      <th>Cs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model 1: Ball&amp;Stick</td>
+      <td>26 min</td>
+      <td>79 s</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Model 2: Standard Model</td>
+      <td>42 min</td>
+      <td>82 s</td>
+      <td>75</td>
+      <td>71</td>
+      <td>117</td>
+      <td>109</td>
+      <td>29</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Model 3: Extended-SANDI model</td>
+      <td>50 min</td>
+      <td>238 s</td>
+      <td>47</td>
+      <td>24</td>
+      <td>784</td>
+      <td>6</td>
+      <td>-</td>
+      <td>828</td>
+      <td>1047</td>
+      <td>56</td>
+    </tr>
+  </tbody>
+</table>
+
+### Application of µGUIDE to real data
 
 After demonstrating that the proposed framework provides good estimates in the controlled case of simulations, we applied µGUIDE to both a healthy volunteer and a participant with epilepsy. The estimation of the posterior distributions is done independently for each voxel. To easily assess the values and the quality of the fitting, we are plotting the MAP, ambiguity, and uncertainty maps, but the full posterior distributions are stored and available for all the voxels. Voxels presenting a degeneracy are highlighted with a red dot.
 
-## Healthy volunteer
+#### Healthy volunteer
 
 We applied µGUIDE to a healthy volunteer, using the Ball&Stick, SM, and extended-SANDI models. Figure 6 presents the parametric maps of an exemplar set of model parameters for each model, alongside their degeneracy, uncertainty, and ambiguity. The Ball&Stick model presents no degeneracy, the SM presents some degeneracy, mostly in voxels with high likelihood of partial voluming with cerebrospinal fluid and at the white matter–grey matter boundaries. The extended-SANDI model is the model showing the highest number of degenerate cases, mostly localized within the white matter areas characterized by complex microstructure, for example crossing fibres. This result is expected, as the complexity of the models increases, leading to more combinations of tissue parameters that can explain an observed signal. Measures of ambiguity and uncertainty allow to quantify the confidence in the estimates and help interpreting the results.
 
@@ -86,7 +218,7 @@ We applied µGUIDE to a healthy volunteer, using the Ball&Stick, SM, and extende
 
 **Figure 6.:** Maximum A Posteriori (MAP), uncertainty and ambiguity measure maps are reported, overlayed with voxels considered degenerate (red dots).
 
-## Participant with epilepsy
+#### Participant with epilepsy
 
 Figure 7 demonstrates µGUIDE application to a participant with epilepsy, using the SM. Noteworthy, the axonal signal fraction estimates within the epileptic lesion show low uncertainty and ambiguity measures hence high confidence, while orientation dispersion index estimates show high uncertainty and ambiguity suggesting low confidence, cautioning the interpretation.
 
@@ -96,7 +228,7 @@ Figure 7 demonstrates µGUIDE application to a participant with epilepsy, using 
 
 ## Discussion
 
-## Applicability of µGUIDE to multiple models
+### Applicability of µGUIDE to multiple models
 
 The µGUIDE framework offers the advantage of being easily applicable to various biophysical models and representations, thanks to its data-driven approach for data reduction. The need to manually define specific summary statistics that capture the relevant information for microstructure estimation from the multi-shell diffusion signal is removed. This also eliminates the acquisition constraints that were previously imposed by the summary statistics definition (Jallais et al., 2022). The extracted features contain additional information compared to the summary statistics (see Appendix 1), resulting in a notable reduction in bias (on average 5.2-fold lower), uncertainty (on average 2.6-fold lower), and ambiguity (on average 2.7-fold lower) in the estimated posterior distributions. Consequently, µGUIDE improves parameters estimation over current state-of-the-art methods (e.g. Jallais et al., 2022), showing for example reduced bias (on average 5.2-fold lower) and dispersion (on average 6.4-fold lower) on the MAP estimates for each of the three example models investigated (see Figure 4).
 
@@ -104,7 +236,7 @@ In this study, we presented applications of µGUIDE to brain microstructure esti
 
 It is important to note that µGUIDE is still a model-dependent method, meaning that the training process is based on the specific model being used. Additionally, the number of features extracted by the MLP needs to be predetermined. One way to determine the number of features is by matching it with the number of parameters being estimated. Alternatively, a dimensionality-reduction study using techniques like t-distributed stochastic neighbour embedding (der Maaten and Hinton, 2008) can be conducted to determine the optimal number of features.
 
-## µGUIDE: an efficient framework for Bayesian inference
+### µGUIDE: an efficient framework for Bayesian inference
 
 One notable advantage of µGUIDE is its amortized nature. With this approach, the training process is performed only once, and thereafter, the posterior estimations can be independently obtained for all voxels. This amortization enables efficient estimations of the posterior distributions. µGUIDE outperforms in terms of speed conventional Bayesian inference methods such as MCMC, showing a ∼1500-fold acceleration. The time savings achieved with µGUIDE make it a highly efficient and practical tool for estimating posterior distributions in a timely manner.
 
@@ -112,7 +244,7 @@ This unlocks the possibility to process with Bayesian inference very large datas
 
 In the dMRI community, the use of SBI methods to characterize full posterior distributions as well as quantify the uncertainty in parameter estimations was first introduced in Jallais et al., 2022 for a grey matter model. An application to crossing fibres has recently been proposed by Karimi et al., 2024. Those approaches use different density estimators. This work and Jallais et al., 2022 rely on Masked Autoregressive Flows (MAFs [Papamakarios et al., 2017]), while the work by Karimi et al., 2024 is based on Mixture Density Networks (MDNs [Bishop, 1994]). MAFs have been found to show superior performance compared to MDNs (Gonçalves et al., 2020; Patron et al., 2022).
 
-## µGUIDE quantifies confidence to guide interpretation
+### µGUIDE quantifies confidence to guide interpretation
 
 Quantifying confidence in an estimate is of crucial importance. As demonstrated by our pathological example, changes in the tissue microstructure parameters can help clinicians decide which parameters are the most reliable and better interpret microstructure changes within diseased tissue. On large population studies, the quantified uncertainty can be taken into account when performing group statistics and to detect outliers.
 
@@ -124,69 +256,97 @@ Variance observed in the posterior distributions can be attributed to several fa
 
 The presence of degeneracy in the solution of the inverse problem is influenced by the complexity of the model being used and the lack of sufficient information in the data. In recent years, researchers have introduced increasingly sophisticated models to better represent the brain tissue, such as SANDI (Palombo et al., 2020), NEXI (Jelescu et al., 2022), and eSANDIX (Olesen et al., 2022), that take into account an increasing number of tissue features. By applying µGUIDE, it becomes possible to gain insights into the degree of degeneracy within a model and to assess the balance between model realism and the ability to accurately invert the problem. We have recently provided an example of such application for NEXI and SANDIX (Jallais et al., 2024).
 
-## Summary
+### Summary
 
 We propose a general Bayesian framework, dubbed µGUIDE, to efficiently estimate posterior distributions of tissue microstructure parameters. For any given acquisition and signal model/representation, µGUIDE improves parameters estimation and computational time over existing state-of-the-art methods. It allows to highlight degeneracy, and quantify confidence in the estimates, guiding results interpretation towards more confident and explainable diagnosis using modern deep learning. µGUIDE is not inherently limited to dMRI and microstructure imaging. We envision its usage and utility to perform efficient Bayesian inference also using data from any modality where there is a way to link (via modelling or simulation) the observed measurements to a set of parameters of interest.
 
 ## Methods
 
-## Solving the inverse problem using Bayesian inference
+### Solving the inverse problem using Bayesian inference
 
-## The inference problem
+#### The inference problem
 
-We make the hypothesis that an observed dMRI signal 𝒙0 can be explained (and generated) using a handful of relevant tissue microstructure parameters 𝜽0, following the definition of a forward model:𝒙0=M(𝜽0)
+We make the hypothesis that an observed dMRI signal $𝒙_{0}$ can be explained (and generated) using a handful of relevant tissue microstructure parameters $𝜽_{0}$, following the definition of a forward model:
 
-The objective is, given this observation 𝒙0, to estimate the parameters 𝜽0 that generated it.
+$$
+𝒙_{0}=M(𝜽_{0})
+$$
 
-Forward models are designed to mimic at best a given biophysical phenomenon, for some given time and scale (Alexander, 2009; Yablonskiy and Sukstanskii, 2010; Jelescu and Budde, 2017; Novikov et al., 2019; Alexander et al., 2019; Jelescu et al., 2020). As a consequence, forward models are injection functions (every biologically plausible 𝜽𝒊 generates exactly one signal 𝒙𝒊), but do not always happen to be bijections, meaning that multiple 𝜽𝒊 can generate the same signal 𝒙𝒊. It can be impossible, based on biological considerations, to infer which solution 𝜽𝒊 best reflects the probed structure. We refer to these models as ‘degenerate models’.
+The objective is, given this observation $𝒙_{0}$, to estimate the parameters $𝜽_{0}$ that generated it.
+
+Forward models are designed to mimic at best a given biophysical phenomenon, for some given time and scale (Alexander, 2009; Yablonskiy and Sukstanskii, 2010; Jelescu and Budde, 2017; Novikov et al., 2019; Alexander et al., 2019; Jelescu et al., 2020). As a consequence, forward models are injection functions (every biologically plausible $𝜽_{𝒊}$ generates exactly one signal $𝒙_{𝒊}$), but do not always happen to be bijections, meaning that multiple $𝜽_{𝒊}$ can generate the same signal $𝒙_{𝒊}$. It can be impossible, based on biological considerations, to infer which solution $𝜽_{𝒊}$ best reflects the probed structure. We refer to these models as ‘degenerate models’.
 
 Point estimates algorithms, such as minimum least square or maximum likelihood estimation algorithms, allow to estimate one set of microstructure parameters that could explain an observed signal. In the case of degenerate models, the solution space can be multi-modal and those algorithms will hide possible solutions. When considering real-life acquisitions, that is noisy and/or under-sampled acquisitions, one also needs to consider the bias introduced with respect to the forward model, and the resulting variance in the estimates (Jones, 2003; Behrens et al., 2003).
 
-We propose a new framework that allows for the estimation of full posterior distributions p(𝜽|𝒙0), that is all the probable parameters that could represent the underlying tissue, along with an uncertainty measure and the interdependency of parameters. These posteriors can help interpreting the obtained results and make more informed decisions.
+We propose a new framework that allows for the estimation of full posterior distributions $p(𝜽|𝒙_{0})$, that is all the probable parameters that could represent the underlying tissue, along with an uncertainty measure and the interdependency of parameters. These posteriors can help interpreting the obtained results and make more informed decisions.
 
-## The Bayesian formalism
+#### The Bayesian formalism
 
-The posterior distribution can be defined using Bayes’ theorem as follows:(1)p(θ|x0)=p(x0|θ)p(θ)p(x0),
+The posterior distribution can be defined using Bayes’ theorem as follows:
 
-where p(𝒙0|𝜽) is the likelihood of the observed data point, p(𝜽) is the prior distribution defining our initial knowledge of the parameter values, and p(𝒙0) is a normalizing constant, commonly referred to as the evidence of the data.
+$$
+p(\theta|x_{0})=\frac{p(x_{0}|\theta)p(\theta)}{p(x_{0})},
+$$
 
-The evidence term is usually very hard to estimate, as it corresponds to all the possible realizations of 𝒙0, that is p(x0)=∫all x0p(x0|θ) p(θ)dx0. For simplification, methods usually estimate an unnormalized probability density function, that is(2)p(θ|x0)∝p(x0|θ)p(θ).
+where $p(𝒙_{0}|𝜽)$ is the likelihood of the observed data point, $p(𝜽)$ is the prior distribution defining our initial knowledge of the parameter values, and $p(𝒙_{0})$ is a normalizing constant, commonly referred to as the evidence of the data.
 
-To approximate these posterior distributions, traditional methods rely on the estimation of the likelihood p(𝒙0|𝜽) of the observed data point 𝒙0 via an analytic expression. This likelihood function corresponds to an integral over all possible trajectories through the latent space, that is p(𝒙0|𝜽)=∫p(𝒙0,𝒛|𝜽)d𝒛, where p(𝒙0,𝒛|𝜽) is the joint probability density of observed data 𝒙0 and latent variables 𝒛. For forward models with large latent spaces, computing this integral explicitly becomes impractical. The likelihood function is then intractable, rendering these methods unusable (Cranmer et al., 2020). Models that do not admit a tractable likelihood are called implicit models (Diggle and Gratton, 1984).
+The evidence term is usually very hard to estimate, as it corresponds to all the possible realizations of $𝒙_{0}$, that is $p(x_{0})=\int_{all x_{0}}p(x_{0}|\theta) p(\theta)dx_{0}$. For simplification, methods usually estimate an unnormalized probability density function, that is
+
+$$
+p(\theta|x_{0})∝p(x_{0}|\theta)p(\theta).
+$$
+
+To approximate these posterior distributions, traditional methods rely on the estimation of the likelihood $p(𝒙_{0}|𝜽)$ of the observed data point $𝒙_{0}$ via an analytic expression. This likelihood function corresponds to an integral over all possible trajectories through the latent space, that is $p(𝒙_{0}|𝜽)=\intp(𝒙_{0},𝒛|𝜽)d𝒛$, where $p(𝒙_{0},𝒛|𝜽)$ is the joint probability density of observed data $𝒙_{0}$ and latent variables $𝒛$. For forward models with large latent spaces, computing this integral explicitly becomes impractical. The likelihood function is then intractable, rendering these methods unusable (Cranmer et al., 2020). Models that do not admit a tractable likelihood are called implicit models (Diggle and Gratton, 1984).
 
 To circumvent this issue, some techniques have been proposed to sample numerically from the likelihood function, such as MCMC (Metropolis et al., 1953). Another set of approaches proposes to train a conditional density estimator to learn a surrogate of the likelihood distribution (Papamakarios et al., 2019; Lueckmann et al., 2019), the likelihood ratio (Cranmer et al., 2016; Gutmann et al., 2018), or the posterior distribution (Papamakarios and Murray, 2016; Lueckmann et al., 2017; Papamakarios et al., 2019), allowing to greatly reduce computation times. These methods are dubbed likelihood-free inference or SBI methods (Cranmer et al., 2020; Tejero-Cantero et al., 2020). In particular, there has been a growing interest towards deep generative modelling approaches in the machine learning community (Lueckmann et al., 2021). They rely on specially tailored neural network architectures to approximate probability density functions from a set of examples. Normalizing flows (Papamakarios et al., 2021) are a particular class of such neural networks that have demonstrated promising results for SBI in different research fields (Gonçalves et al., 2020; Greenberg et al., 2019).
 
 While this work focuses on the estimate of the posterior distribution using a conditional density estimator, we show a comparison with MCMC, which are commonly used methods in the community. We will therefore introduce this method in the following paragraph.
 
-## Estimating the likelihood function
+#### Estimating the likelihood function
 
-Well-established approaches for estimating the likelihood function are MCMC methods. These methods rely on a noise model to define the likelihood distribution, such as the Rician (Panagiotaki et al., 2012) or Offset Gaussian models (Alexander, 2009). In this work, we will be using the Microstructure Diffusion Toolbox to perform the MCMC computations (Harms and Roebroeck, 2018), which relies on the Offset Gaussian model. The log-likelihood function is then the following:(3)log⁡(p(𝒙|𝜽))=−∑i=1m(𝒙𝒊−M(𝜽)i2+σ2)22σ2−m⋅log⁡(σ2π),
+Well-established approaches for estimating the likelihood function are MCMC methods. These methods rely on a noise model to define the likelihood distribution, such as the Rician (Panagiotaki et al., 2012) or Offset Gaussian models (Alexander, 2009). In this work, we will be using the Microstructure Diffusion Toolbox to perform the MCMC computations (Harms and Roebroeck, 2018), which relies on the Offset Gaussian model. The log-likelihood function is then the following:
 
-where M(𝜽) is the signal obtained using the biophysical model, M(𝜽)i is the ith measurement of the signal, σ is the standard deviation of the Gaussian distributed noise, estimated from the reconstructed magnitude images (Dietrich et al., 2007), and m is the number of observations in the dataset.
+$$
+log⁡(p(𝒙|𝜽))=−\frac{\sumi=1m(𝒙_{𝒊}−\sqrt{M(𝜽)_{i}^{2}+\sigma^{2}})^{2}}{2\sigma^{2}}−m⋅log⁡(\sigma\sqrt{2\pi}),
+$$
+
+where $M(𝜽)$ is the signal obtained using the biophysical model, $M(𝜽)_{i}$ is the ith measurement of the signal, $\sigma$ is the standard deviation of the Gaussian distributed noise, estimated from the reconstructed magnitude images (Dietrich et al., 2007), and $m$ is the number of observations in the dataset.
 
 MCMC methods allow to obtain posterior distributions using Bayes’ formula (Equation 2) with the previously defined likelihood function (Equation 3) and some prior distributions, which are usually uniform distributions defined on biologically plausible ranges. They generate a multi-dimensional chain of samples which is guaranteed to converge towards a stationary distribution, which approximates the posterior distribution (Metropolis et al., 1953).
 
 The need to compute the signal following the forward model at each iteration makes these sampling methods computationally expensive and time consuming. In addition, they require some adjustments specific to each model, such as the choice of burn-in length, thinning, and the number of samples to store. Harms and Roebroeck, 2018 recommend to use the Adaptive Metropolis-Within-Gibbs (AMWG) algorithm for sampling dMRI models, initialized with a maximum likelihood estimator (MLE) obtained from non-linear optimization, with 100–200 samples for burn-in and no thinning. Authors notably investigated the use of starting from the MLE and thinning. They concluded that starting from the MLE allows to start in the stationary distribution of the Markov Chain, and has the advantage of removing salt- and pepper-like noise from the resulting mean and standard deviation maps. Their findings also indicate that thinning is unnecessary and inefficient, and they recommend using more samples instead. The recommended number of samples is model dependent. Authors recommendations can be found in their paper.
 
-## Bypassing the likelihood function
+#### Bypassing the likelihood function
 
-An alternative method was proposed to overcome the challenges associated with approximating the likelihood function and the limitations of MCMC sampling algorithms. This approach involves directly approximating the posterior distribution by using a conditional density estimator, that is a family of conditional probability density function approximators denoted as qϕ(𝜽|𝒙). These approximators are parameterized by ϕ and accept both the parameters 𝜽 and the observation 𝒙 as input arguments. Our posterior approximation is then obtained by minimizing its average Kullback–Leibler divergence with respect to the conditional density estimator for different choices of 𝒙, as per Papamakarios and Murray, 2016:(4)min.ϕL(ϕ)withL(ϕ)=Ex∼p(x)[DKL(p(θ|x)|qϕ(θ|x))],
+An alternative method was proposed to overcome the challenges associated with approximating the likelihood function and the limitations of MCMC sampling algorithms. This approach involves directly approximating the posterior distribution by using a conditional density estimator, that is a family of conditional probability density function approximators denoted as $q_{ϕ}(𝜽|𝒙)$. These approximators are parameterized by $ϕ$ and accept both the parameters $𝜽$ and the observation $𝒙$ as input arguments. Our posterior approximation is then obtained by minimizing its average Kullback–Leibler divergence with respect to the conditional density estimator for different choices of $𝒙$, as per Papamakarios and Murray, 2016:
 
-which can be rewritten as(5)L(ϕ)=∫DKL(p(θ|x)‖qϕ(θ|x))p(x)dx ,=−∬log⁡(qϕ(θ|x))p(θ|x)p(x)dθdx+C ,=−∬log⁡(qϕ(θ|x))p(x,θ)dθdx+C ,=−E(x,θ)∼p(x,θ)[log⁡(qϕ(θ|x))]+C ,
+$$
+min.ϕL(ϕ)withL(ϕ)=E_{x∼p(x)}[D_{KL}(p(\theta|x)|q_{ϕ}(\theta|x))],
+$$
 
-where C is a constant that does not depend on ϕ. Note that in practice we consider a N-sample Monte-Carlo approximation of the loss function:(6)L(ϕ)≈LN(ϕ)=−1N∑i=1Nlog⁡(qϕ(𝜽i|𝒙i)),
+which can be rewritten as
 
-where the N data points (𝜽i,𝒙i) are sampled from the joint distribution with 𝜽i∼p(𝜽) and 𝒙i∼p(𝒙|𝜽i). We can then use stochastic gradient descent to obtain a set of parameters ϕ which minimizes LN.
+$$
+L(ϕ)=\intD_{KL}(p(\theta|x)‖q_{ϕ}(\theta|x))p(x)dx ,=−∬log⁡(q_{ϕ}(\theta|x))p(\theta|x)p(x)d\thetadx+C ,=−∬log⁡(q_{ϕ}(\theta|x))p(x,\theta)d\thetadx+C ,=−E_{(x,\theta)∼p(x,\theta)}[log⁡(q_{ϕ}(\theta|x))]+C ,
+$$
 
-If the class of conditional density estimators is sufficiently expressive, it can be demonstrated that the minimizer of Equation (6) converges to p(𝜽|𝒚) when N→∞ (Greenberg et al., 2019). It is worth noting that the parametrization ϕ, obtained at the end of the optimization procedure, serves as an amortized posterior for various choices of 𝒙. Hence, for a particular observation 𝒙0, we can simply use qϕ(𝜽|𝒙0) as an approximation of p(𝜽|𝒙0).
+where $C$ is a constant that does not depend on $ϕ$. Note that in practice we consider a $N$-sample Monte-Carlo approximation of the loss function:
 
-## µGUIDE framework
+$$
+L(ϕ)≈L^{N}(ϕ)=−\frac{1}{N}\sumi=1Nlog⁡(q_{ϕ}(𝜽_{i}|𝒙_{i})),
+$$
+
+where the $N$ data points $(𝜽_{i},𝒙_{i})$ are sampled from the joint distribution with $𝜽_{i}∼p(𝜽)$ and $𝒙_{i}∼p(𝒙|𝜽_{i})$. We can then use stochastic gradient descent to obtain a set of parameters $ϕ$ which minimizes $L^{N}$.
+
+If the class of conditional density estimators is sufficiently expressive, it can be demonstrated that the minimizer of Equation (6) converges to $p(𝜽|𝒚)$ when $N→∞$ (Greenberg et al., 2019). It is worth noting that the parametrization $ϕ$, obtained at the end of the optimization procedure, serves as an amortized posterior for various choices of $𝒙$. Hence, for a particular observation $𝒙_{0}$, we can simply use $q_{ϕ}(𝜽|𝒙_{0})$ as an approximation of $p(𝜽|𝒙_{0})$.
+
+### µGUIDE framework
 
 The full architecture of the proposed Bayesian framework, dubbed µGUIDE, is presented in Figure 1. The analysis codes underpinning the results presented here can be found on Github: https://github.com/mjallais/uGUIDE (copy archived at Jallais, 2024) (both CPU and GPU are supported).
 
 µGUIDE is comprised of two modules that are optimized together to minimize the Kullback–Leibler divergence between the true posterior distribution and the estimated one for every parameters of a given forward model. The NPE module uses normalizing flows to approximate the posterior distribution, while the MLP module is used to reduce the data dimensionality and ensure fast and robust convergence of the NPE module. The following sections provide more details about our implementation of each module.
 
-## Neural Posterior Estimator
+#### Neural Posterior Estimator
 
 In this study, the Sequential Neural Posterior Estimation (SNPE-C) algorithm (Papamakarios and Murray, 2016; Greenberg et al., 2019) with a single round is employed to train a neural network that directly approximates the posterior distribution. Thus, sampling from the posterior can be done by sampling from the trained neural network. Neural density estimators have the advantage of providing exact density evaluations, in contrast to Variational Autoencoders (VAEs [Kingma and Welling, 2019]) or generative adversarial networks (GANs [Goodfellow et al., 2014]), which are better suited for generating synthetic data.
 
@@ -194,19 +354,19 @@ The conditional probability density function approximators used in this project 
 
 To test that the predicted posteriors for a given model are not incorrect we use posterior predictive checks (PPCs), which is described in more details in Appendix 4.
 
-## Handling the large dimensionality of the data with MLP
+#### Handling the large dimensionality of the data with MLP
 
-As the dimensionality of the input data 𝒙 grows, the complexity of the corresponding inverse problem also increases. Accurately characterizing the posterior distributions or estimating the tissue microstructure parameters becomes more challenging. As a consequence, it is often necessary to rely on a set of low-dimensional features (or summary statistics) instead of the raw data for the inference task process (Blum et al., 2013; Fearnhead and Prangle, 2012; Papamakarios et al., 2019). These summary statistics are features that capture the essential information within the raw data, allowing to reduce the size of the input vector. Learning a set of sufficient statistics before estimating the posterior distribution makes the inference easier and offers many benefits (see e.g. the Rao–Blackwell theorem).
+As the dimensionality of the input data $𝒙$ grows, the complexity of the corresponding inverse problem also increases. Accurately characterizing the posterior distributions or estimating the tissue microstructure parameters becomes more challenging. As a consequence, it is often necessary to rely on a set of low-dimensional features (or summary statistics) instead of the raw data for the inference task process (Blum et al., 2013; Fearnhead and Prangle, 2012; Papamakarios et al., 2019). These summary statistics are features that capture the essential information within the raw data, allowing to reduce the size of the input vector. Learning a set of sufficient statistics before estimating the posterior distribution makes the inference easier and offers many benefits (see e.g. the Rao–Blackwell theorem).
 
 A follow-up challenge lies in the choice of suitable summary statistics. For well-understood problems and data, it is possible to manually design these features using deterministic functions that condense the information contained in the raw signal into a set of handful summary statistics. Previous works, such as Novikov et al., 2018 and Jallais et al., 2022, have proposed specific summary statistics for two different biophysical models. However, defining these summary statistics is difficult and often requires prior knowledge of the problem at hand. In the context of dMRI, they also rely on acquisition constraints and are model specific.
 
-In this work, the proposed framework aims to be applicable to any forward model and be as general as possible. We therefore propose to learn the summary statistics from the high-dimensional input signals 𝒙 using a neural network. This neural network is referred to as an embedding neural network. The observed signals are fed into the embedding neural network, whose outputs are then passed to the neural density estimator. The parameters of the embedding network are learned together with the parameters of the neural density estimator, leading to the extraction of optimal features that minimize the uncertainty of p(𝜽|𝒙). Here, we propose to use an MLP with three layers as a summary statistics extractor. The number of features Nf extracted by the MLP can be either defined a priori or determined empirically during training.
+In this work, the proposed framework aims to be applicable to any forward model and be as general as possible. We therefore propose to learn the summary statistics from the high-dimensional input signals $𝒙$ using a neural network. This neural network is referred to as an embedding neural network. The observed signals are fed into the embedding neural network, whose outputs are then passed to the neural density estimator. The parameters of the embedding network are learned together with the parameters of the neural density estimator, leading to the extraction of optimal features that minimize the uncertainty of $p(𝜽|𝒙)$. Here, we propose to use an MLP with three layers as a summary statistics extractor. The number of features $N_{f}$ extracted by the MLP can be either defined a priori or determined empirically during training.
 
-## Training µGUIDE
+#### Training µGUIDE
 
-To train µGUIDE we need couples of input vectors 𝒙 and corresponding ground truth values for the model parameters that we want to estimate, 𝜽. The input 𝒙 can be real or simulated data (e.g. dMRI signals); or a mixture of these two. We train µGUIDE by stochastically minimizing the loss function defined in Equation (6) using the Adam optimizer (Kingma and Ba, 2015) with a learning rate of 10−3 and a minibatch size of 128. We use 1 million simulations for each model, 5% of which are randomly selected to be used as a validation set. Training is stopped when the validation loss does not decrease for 30 consecutive epochs.
+To train µGUIDE we need couples of input vectors $𝒙$ and corresponding ground truth values for the model parameters that we want to estimate, $𝜽$. The input $𝒙$ can be real or simulated data (e.g. dMRI signals); or a mixture of these two. We train µGUIDE by stochastically minimizing the loss function defined in Equation (6) using the Adam optimizer (Kingma and Ba, 2015) with a learning rate of 10−3 and a minibatch size of 128. We use 1 million simulations for each model, 5% of which are randomly selected to be used as a validation set. Training is stopped when the validation loss does not decrease for 30 consecutive epochs.
 
-## Quantifying the confidence in the estimates
+#### Quantifying the confidence in the estimates
 
 The full posterior distribution contains a lot of useful information about a given model parameter best estimates, uncertainty, ambiguity, and degeneracy. To summarize and easily visualize this information, we propose three measures that quantify the best estimates and the associated confidence levels, and a way to highlight degeneracy.
 
@@ -216,35 +376,47 @@ For non-degenerate posterior distributions, we extract three quantities:
 
 Figure 2 presents those measures on exemplar posterior distributions.
 
-## Application of µGUIDE to biophysical modelling of dMRI data
+### Application of µGUIDE to biophysical modelling of dMRI data
 
 We show exemplar applications of µGUIDE to three biophysical models of increasing complexity and degeneracy from the dMRI literature. For each model, we compare the fitting quality of the posterior distributions obtained using the MLP and manually defined summary statistics.
 
-## Biophysical models of dMRI signal
+#### Biophysical models of dMRI signal
 
-## Model 1: Ball&Stick (Behrens et al., 2003)
+##### Model 1: Ball&Stick (Behrens et al., 2003)
 
-This is a two-compartment model (intra- and extra-neurite space) where the dMRI signal from the brain tissue is modelled as a weighted sum, with weight fin, of signals from water diffusing inside the neurites, approximated as sticks (i.e. cylinders of zero radius) with diffusivity Din, and water diffusing within the extra-neurite space, approximated as Gaussian diffusion in an isotropic medium with diffusivity De. The direction of the stick is randomly sampled on a sphere. This model has the main advantage of being non-degenerate. We define the summary statistics as the direction-averaged signal (six b-shells, see section dMRI data acquisition and processing).
+This is a two-compartment model (intra- and extra-neurite space) where the dMRI signal from the brain tissue is modelled as a weighted sum, with weight $f_{in}$, of signals from water diffusing inside the neurites, approximated as sticks (i.e. cylinders of zero radius) with diffusivity $D_{in}$, and water diffusing within the extra-neurite space, approximated as Gaussian diffusion in an isotropic medium with diffusivity $D_{e}$. The direction of the stick is randomly sampled on a sphere. This model has the main advantage of being non-degenerate. We define the summary statistics as the direction-averaged signal (six b-shells, see section dMRI data acquisition and processing).
 
-## Model 2: SM (Novikov et al., 2019)
+##### Model 2: SM (Novikov et al., 2019)
 
-Expanding on Model 1, this model represents the dMRI signal from the brain tissue as a weighted sum of the signal from water diffusing within the neurite space, approximated as sticks with symmetric orientation dispersion following a Watson distribution and water diffusing within the extra-neurite space, modelled as anisotropic Gaussian diffusion. The microstructure parameters of this two-compartment model are the neurite signal fraction f, the intra-neurite diffusivity Da, the orientation dispersion index ODI, and the parallel and perpendicular diffusivities within the extra-neurite space De∥ and De⟂. We use the LEMONADE (Novikov et al., 2018) system of equations, which is based on a cumulant decomposition of the signal, to define six summary statistics.
+Expanding on Model 1, this model represents the dMRI signal from the brain tissue as a weighted sum of the signal from water diffusing within the neurite space, approximated as sticks with symmetric orientation dispersion following a Watson distribution and water diffusing within the extra-neurite space, modelled as anisotropic Gaussian diffusion. The microstructure parameters of this two-compartment model are the neurite signal fraction $f$, the intra-neurite diffusivity $D_{a}$, the orientation dispersion index $ODI$, and the parallel and perpendicular diffusivities within the extra-neurite space $D_{e}^{∥}$ and $D_{e}^{⟂}$. We use the LEMONADE (Novikov et al., 2018) system of equations, which is based on a cumulant decomposition of the signal, to define six summary statistics.
 
-## Model 3: extended-SANDI (Palombo et al., 2020)
+##### Model 3: extended-SANDI (Palombo et al., 2020)
 
-This is a three-compartment model (intra-neurite, intra-soma, and extra-cellular space) where the dMRI signal from the brain tissue is modelled as a weighted sum of the signal from water diffusing within the neurite space, approximated as sticks with symmetric orientation dispersion following a Watson distribution; water diffusing within cell bodies (namely soma), modelled as restricted diffusion in spheres; and water diffusing within the extra-cellular space, modelled as isotropic Gaussian diffusion. The parameters of interest are the neurite signal fraction fn, the intra-neurite diffusivity Dn, the orientation dispersion index ODI, the extra-cellular signal fraction fe and isotropic diffusivity De, the soma signal fraction fs, and a proxy of soma radius and diffusivity Cs, defined as (Jallais et al., 2022):Cs=2Dsδ2∑m=1∞αm−4αm2rs2−2⋅(2δ−2+e−αm2Ds(Δ−δ)−e−αm2Dsδ−e−αm2DsΔ+e−αm2Ds(Δ+δ)αm2Ds),
+This is a three-compartment model (intra-neurite, intra-soma, and extra-cellular space) where the dMRI signal from the brain tissue is modelled as a weighted sum of the signal from water diffusing within the neurite space, approximated as sticks with symmetric orientation dispersion following a Watson distribution; water diffusing within cell bodies (namely soma), modelled as restricted diffusion in spheres; and water diffusing within the extra-cellular space, modelled as isotropic Gaussian diffusion. The parameters of interest are the neurite signal fraction $f_{n}$, the intra-neurite diffusivity $D_{n}$, the orientation dispersion index $ODI$, the extra-cellular signal fraction $f_{e}$ and isotropic diffusivity $D_{e}$, the soma signal fraction $f_{s}$, and a proxy of soma radius and diffusivity $C_{s}$, defined as (Jallais et al., 2022):
 
-with rs and Ds the soma radius and diffusivity, respectively, and αm the mth root of (αrs)−1J32(αrs)=J52(αrs), with Jn(x) the Bessel functions of the first kind. We use the six summary statistics defined in Jallais et al., 2022, which are based on a high and low b-value signal expansion. Signal fractions follow the rule fn+fs+fe=1, leading to six parameters to estimate for this model.
+$$
+C_{s}=\frac{2}{D_{s}\delta^{2}}\summ=1∞\frac{\alpha_{m}^{−4}}{\alpha_{m}^{2}r_{s}^{2}−2}⋅(2\delta−\frac{2+e^{−\alpha_{m}^{2}D_{s}(Δ−\delta)}−e^{−\alpha_{m}^{2}D_{s}\delta}−e^{−\alpha_{m}^{2}D_{s}Δ}+e^{−\alpha_{m}^{2}D_{s}(Δ+\delta)}}{\alpha_{m}^{2}D_{s}}),
+$$
 
-Prior distributions p(𝜽) are defined as uniform distributions over biophysically plausible ranges. Signal fractions are defined within the interval [0,1], diffusivities between 0.1 and 3 µm2/ms, ODI between 0.03 and 0.95, and Cs between 0.15 and 1105 µm2 (which correspond to rs∈[1;15] µm and fixed Ds=3 µm2/ms).
+with $r_{s}$ and $D_{s}$ the soma radius and diffusivity, respectively, and $\alpha_{m}$ the mth root of $(\alphar_{s})^{−1}J_{\frac{3}{2}}(\alphar_{s})=J_{\frac{5}{2}}(\alphar_{s})$, with $J_{n}(x)$ the Bessel functions of the first kind. We use the six summary statistics defined in Jallais et al., 2022, which are based on a high and low b-value signal expansion. Signal fractions follow the rule $f_{n}+f_{s}+f_{e}=1$, leading to six parameters to estimate for this model.
 
-The SM imposes the constraint De⟂<De∥. To generate samples uniformly distributed on the space defined by this condition, we are using two random variables u0 and u1, both sampled uniformly between 0 and 1, and then relate them to De∥ and De⟂ using the following equations:(7){De∥=(3.0−0.1)2⋅u0+0.1De⊥=(De∥−0.1)⋅u1+0.1
+Prior distributions $p(𝜽)$ are defined as uniform distributions over biophysically plausible ranges. Signal fractions are defined within the interval $[0,1]$, diffusivities between 0.1 and 3 µm2/ms, ODI between 0.03 and 0.95, and $C_{s}$ between 0.15 and 1105 µm2 (which correspond to $r_{s}\in[1;15]$ µm and fixed $D_{s}=3$ µm2/ms).
 
-The extended-SANDI model requires for the signal fractions to sum to 1, that is fn+fs+fe=1. To uniformly cover the simplex fn+fs+fe=1, we define two new parameters k1 and k2, uniformly sampled between 0 and 1, and use the following equations to get the corresponding signal fractions:(8){fn=k2k1fs=(1−k2)k1fe=1−k1
+The SM imposes the constraint $D_{e}^{⟂}<D_{e}^{∥}$. To generate samples uniformly distributed on the space defined by this condition, we are using two random variables $u_{0}$ and $u_{1}$, both sampled uniformly between 0 and 1, and then relate them to $D_{e}^{∥}$ and $D_{e}^{⟂}$ using the following equations:
 
-To ensure comparability of results, we extract the same number of features Nf using the MLP as the number of summary statistics for each model. We therefore use Nf=6 for the Ball&Stick, the SM, and the extended-SANDI models. Although the number of features predicted by the MLP is fixed to Nf=6 for the three models, the characteristics of these six features can be very different, depending on the chosen forward model and the available data (see Appendix 1). Training the MLP together with the NPE module allows to maximize inference performance in terms of accuracy and precision.
+$$
+{D_{e}^{∥}=\sqrt{(3.0−0.1)^{2}⋅u_{0}}+0.1D_{e}^{⊥}=(D_{e}^{∥}−0.1)⋅u_{1}+0.1
+$$
 
-## Validation in numerical simulations
+The extended-SANDI model requires for the signal fractions to sum to 1, that is $f_{n}+f_{s}+f_{e}=1$. To uniformly cover the simplex $f_{n}+f_{s}+f_{e}=1$, we define two new parameters $k_{1}$ and $k_{2}$, uniformly sampled between 0 and 1, and use the following equations to get the corresponding signal fractions:
+
+$$
+{f_{n}=k_{2}\sqrt{k_{1}}f_{s}=(1−k_{2})\sqrt{k_{1}}f_{e}=1−\sqrt{k_{1}}
+$$
+
+To ensure comparability of results, we extract the same number of features $N_{f}$ using the MLP as the number of summary statistics for each model. We therefore use $N_{f}=6$ for the Ball&Stick, the SM, and the extended-SANDI models. Although the number of features predicted by the MLP is fixed to $N_{f}=6$ for the three models, the characteristics of these six features can be very different, depending on the chosen forward model and the available data (see Appendix 1). Training the MLP together with the NPE module allows to maximize inference performance in terms of accuracy and precision.
+
+### Validation in numerical simulations
 
 We start by validating the proposed method using PPCs and simulated signals from Model 2 (see more details in Appendix 4). Since PPC alone does not guarantee the correctness of the estimated posteriors, we further validated the obtained posterior distributions comparing them with the AMWG MCMC (Roberts and Rosenthal, 2009). We generated simulations following the same acquisition protocol as the real data (see section dMRI data acquisition and processing), added Gaussian noise to the real and imaginary parts of the simulated signal with a signal-to-noise ratio (SNR) of 50, and then used the magnitude of this noisy complex signal for our experiments. We then estimated the posterior distributions using both µGUIDE and the MCMC method implemented in the MDT toolbox (Harms and Roebroeck, 2018). We initialized the sampling using an MLE. We sampled 15,200 samples from the distribution, the first 200 ones being used as burn-in, and no thinning. Similarly, we sampled 15,000 samples from the estimated posterior distributions using µGUIDE.
 
@@ -254,19 +426,19 @@ We compared the proposed framework to a state-of-the-art method for posterior es
 
 Finally, we used µGUIDE to highlight degeneracy in all the models. While the complexity of the models increases, more degeneracy can be found. The degeneracy is inherent to the model definition, and is not induced by the noise. µGUIDE allows to highlight those degeneracies and quantify the confidence in the obtained estimates.
 
-The training was performed on N=106 numerical simulations for each model, computed using the MISST package (Ianuş et al., 2017) and random combinations of the model parameters, each uniformly sampled from the previously defined ranges, with the addition of Rician distributed noise with SNR equivalent to the experimental data, that is 50.
+The training was performed on $N=10^{6}$ numerical simulations for each model, computed using the MISST package (Ianuş et al., 2017) and random combinations of the model parameters, each uniformly sampled from the previously defined ranges, with the addition of Rician distributed noise with SNR equivalent to the experimental data, that is 50.
 
-## dMRI data acquisition and processing
+### dMRI data acquisition and processing
 
 We applied µGUIDE to dMRI data collected from two participants: a healthy volunteer from the WAND dataset (McNabb et al., 2024) and an age-matched participant with epilepsy, acquired with the same protocol used for the MICRA dataset (Koller et al., 2021). The MRI data from the healthy volunteer used in this work are part of a previously published dataset, publicly available at https://doi.gin.g-node.org/10.12751/g-node.5mv3bf/. We do not have the authorization to share the epileptic patient data. Data were acquired on a Connectome 3T scanner using a single-shot spin-echo, echo-planar imaging sequence with b-values = [200, 500, 1200, 2400, 4000, 6000] s mm−2, [20, 20, 30, 61, 61, 61] uniformly distributed directions, respectively, and 13 non-diffusion-weighted images at 2 mm isotropic resolution. TR was set to 3000 ms, TE to 59 ms, and the diffusion gradient duration and separation to 7 ms and 24 ms, respectively. Short diffusion times and TE were achieved thanks to the Connectom gradients, allowing to enhance the SNR and sensitivity to small water displacements (Jones et al., 2018; Setsompop et al., 2013). We considered the noise as Rician with an SNR of 50 for both subjects.
 
 Data were preprocessed using a combination of in-house pipelines and tools from the FSL (Andersson et al., 2003; Andersson and Sotiropoulos, 2016; Smith, 2002; Smith et al., 2004) and MRTrix3 (Tournier et al., 2019) software packages. The preprocessing steps included brain extraction (Smith, 2002), denoising (Cordero-Grande et al., 2019; Veraart et al., 2016), drift correction (Vos et al., 2017; Sairanen et al., 2018), susceptibility-induced distortions (Andersson et al., 2003; Smith et al., 2004), motion and eddy current correction (Andersson and Sotiropoulos, 2016), correction for gradient non-linearity distortions (Glasser et al., 2013), and Gibbs ringing artefacts correction (Kellner et al., 2016).
 
-## dMRI data analysis
+### dMRI data analysis
 
-Diffusion signals were first normalized by the mean non-diffusion-weighted signals acquired for each voxel. Each voxel was then estimated in parallel using the µGUIDE framework. For each observed signal 𝒙𝒗 (i.e. for each voxel), we drew 50,000 samples via rejection sampling from qϕ(θi|𝒙𝒗) for each model parameter θi, allowing to retrieve the full posterior distributions. If a posterior distribution was not deemed degenerate, the MAP, uncertainty, and ambiguity measures were extracted from the posterior distributions.
+Diffusion signals were first normalized by the mean non-diffusion-weighted signals acquired for each voxel. Each voxel was then estimated in parallel using the µGUIDE framework. For each observed signal $𝒙_{𝒗}$ (i.e. for each voxel), we drew 50,000 samples via rejection sampling from $q_{ϕ}(\theta_{i}|𝒙_{𝒗})$ for each model parameter $\theta_{i}$, allowing to retrieve the full posterior distributions. If a posterior distribution was not deemed degenerate, the MAP, uncertainty, and ambiguity measures were extracted from the posterior distributions.
 
-The manually defined summary statistics of the SM are defined using a cumulant expansion, which is only valid for small b-values. We therefore only used the b≤2500 s mm−2 data for this model. In order to obtain comparable results, we restricted the application of µGUIDE to this range of b-values as well. An extra b-shell (b-value = 5000 s mm−2; 61 directions) was interpolated using mapl (Fick et al., 2016) for the extended-SANDI model when using the method developed by Jallais et al., 2022 based on summary statistics.
+The manually defined summary statistics of the SM are defined using a cumulant expansion, which is only valid for small b-values. We therefore only used the $b\leq2500$ s mm−2 data for this model. In order to obtain comparable results, we restricted the application of µGUIDE to this range of b-values as well. An extra b-shell (b-value = 5000 s mm−2; 61 directions) was interpolated using mapl (Fick et al., 2016) for the extended-SANDI model when using the method developed by Jallais et al., 2022 based on summary statistics.
 
 The training of µGUIDE was performed as described in section Validation in numerical simulations and an example of training dataset and input signal vector is provided in Figure 8.
 

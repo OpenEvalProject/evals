@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/046rm7j60 Department of Neurology, David Geffen School of Medicine at UCLA Los Angeles United States
+1. Department of Neurology, David Geffen School of Medicine at UCLA Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 

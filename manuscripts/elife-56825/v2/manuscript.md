@@ -37,29 +37,69 @@ In this study, we prepared two α-synuclein assemblies from identical wild-type 
 
 ## Results
 
-## Formation of amyloid-like fibrils from α-synuclein proteins in vitro
+### Formation of amyloid-like fibrils from α-synuclein proteins in vitro
 
 We generated two distinct α-synuclein assemblies from the identical purified α-synuclein monomer using the method described in the previous report, with minor modifications (Figure 1A; Bousset et al., 2013; Lau et al., 2020). Specifically, we prepared recombinant α-synuclein monomer and agitated it in the presence or absence of salt at a physiological concentration. In the presence of physiological salt (30 mM Tris, pH 7.5, 150 mM KCl), the monomer formed a cloudy solution of assemblies with higher turbidity, while in the absence of salt (30 mM Tris, pH 7.5), a clear solution containing assemblies with lower turbidity was formed (Figure 1A and B). Almost all of the α-synuclein was present as aggregates rather than soluble oligomers under both conditions (Figure 1—figure supplement 1; Thibaudeau et al., 2018). Both assemblies showed fibrillar morphology, but the previously reported ribbon-like morphology was not observed (Figure 1C; Bousset et al., 2013). Therefore, we will refer to the former assemblies as α-synuclein fibrils (+) and the later assemblies as α-synuclein fibrils (-). Both fibrils were stained with Thioflavin T and Congo red, indicating their amyloid-like nature (Figure 1D and E). The differences of Thioflavin T fluorescence and Congo red binding of these α-synuclein fibrils suggested that these fibrils have a different structures each other. Next, we examined the in vitro seeding activity of these fibrils and found that α-synuclein fibrils (+) showed higher seeding activity than α-synuclein fibrils (-) in vitro (Figure 1F). These results indicated that we had successfully prepared two distinct types of α-synuclein fibrils from the same monomer.
 
-## Formation of phosphorylated α-synuclein pathology by injection of α-synuclein strains into mouse brain
+![Figure 1.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of two α-synuclein (αS) strains (left) and the resulted two α-synuclein assemblies (right). (B) Turbidity of these assemblies. Analysis was performed using student t test. (mean ± S.E.M; n = 3) Formation of aggregates rather than soluble oligomer is shown in Figure 1—figure supplement 1. (C) Transfer electron microscopy (TEM) images of these assemblies. Scale bar, 200 nm. (D) Thioflavin T fluorescence of these assemblies and αS monomer. Analysis was performed using one-way ANOVA and Tukey post hoc test. (mean ± S.E.M; n = 3) (E) Congo red bindings of these strains and αS monomer. (mean ± S.E.M; n = 3) (F) In vitro seeding activity of these strains. α-synuclein monomers were incubated with α-synuclein fibril (-) (orange) or α-synuclein fibril (+) (gray). Kinetics of Thioflavin T fluorescence were shown. Analysis was performed using one-way ANOVA and Tukey post hoc test. **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** α-synuclein monomers are incubated for 7 days and then centrifuged at 10,000 x g for 10 min to separate soluble oligomers and insoluble aggregates. CBB staining of soluble fractions (sup) and insoluble fractions (ppt) are shown. Soluble oligomers are hardly detected in both α-synuclein strains.
+
+### Formation of phosphorylated α-synuclein pathology by injection of α-synuclein strains into mouse brain
 
 We next investigated whether there was a strain-dependent difference of prion-like propagation in mouse brain. We injected α-synuclein fibrils (+) and α-synuclein fibrils (-) into striatum of wild-type mice, and after one month, we examined the accumulation of phosphorylated α-synuclein deposits resembling those observed in patients’ brains (Luk et al., 2012; Masuda-Suzukake et al., 2013). In contrast to the in vitro seeding activities, α-synuclein fibrils (-) induced Lewy body/Lewy neurite-like abnormal phosphorylated α-synuclein deposits through the mouse brain, including cortex, striatum and corpus callosum, whereas few phosphorylated α-synuclein deposits were induced by α-synuclein fibrils (+) (Figure 2A and Figure 2—figure supplement 1). We used three mice each for this experiment and confirmed the reproducibility (Figure 2—figure supplement 2). The deposits induced by α-synuclein fibrils (-) were also positive for ubiquitin staining in cortex, like Lewy bodies and Lewy neurites (Figure 2B). Compared with phosphorylated α-synuclein, which is the most representative marker in the α-synucleinopathies, ubiquitin staining is weaker, thus we could find only few ubiquitin positive deposits in striatum and corpus callosum (data not shown). Taken together, there was a strain-dependent difference of α-synuclein fibril formation from the identical α-synuclein monomer when the two strains were inoculated into the mouse brain, and α-synuclein fibrils (-) had higher prion-like seeding activity than α-synuclein fibrils (+) in mouse brain, contrary to the in vitro seeding results (Figure 1F).
 
-## Formation of phosphorylated α-synuclein pathology induced by the two α-synuclein strains in cultured neurons
+![Figure 2.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig2-v2.jpg)
+
+**Figure 2.:** (A) Distribution of phosphorylated α-synuclein pathology in mouse brain. α-synuclein fibrils (-) or α-synuclein fibrils (+) were injected into the striatum of WT mouse brain and stained with phosphorylated α-synuclein antibody 1 month after injection. Regions surrounded by white rectangles in left panels are magnified and shown in right panels. Typical pathological α-synuclein deposits are indicated by the arrowheads. Sections were counterstained with hematoxylin. Representative images of cortex of mice injected with α-synuclein fibrils (-) (upper), α-synuclein fibrils (+) (middle) or not injected mice as negative controls (lower) are shown. Representative images of corpus callosum and striatum are shown in Figure 2—figure supplement 1. Representative images of cortex of other two mice injected with α-synuclein fibrils are also shown in Figure 2—figure supplement 2. (B) Distribution of ubiquitin pathology in mouse brain. α-synuclein fibrils (-) or α-synuclein fibrils (+) were injected into the striatum of WT mouse brain and stained with ubiquitin antibody 1 month after injection. Representative images of cortex of mice injected with α-synuclein fibrils (-) (upper), α-synuclein fibrils (+) (middle) or not injected mice as negative controls (lower) are shown. Regions surrounded by white rectangles in left panels are magnified and shown in right panels. Typical pathological ubiquitin positive deposits are indicated by the arrowheads. Sections were counterstained with hematoxylin. Scale bars, 50 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Distribution of phosphorylated α-synuclein pathology in mouse brain. α-synuclein fibrils (-) or α-synuclein fibrils (+) were injected into the striatum of WT mouse brain and stained with phosphorylated α-synuclein antibodies 1 month after injection. Representative images of corpus callosum (A) and striatum (B) are shown. Typical pathological α-synuclein deposits are indicated by the arrowheads. Sections were counterstained with hematoxylin. Scale bar, 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Distribution of phosphorylated α-synuclein pathology in mouse brain. α-synuclein fibrils (-) or α-synuclein fibrils (+) were injected into three mice each and stained with phosphorylated α-synuclein antibodies 1 month after injection. Representative images of cortex of other two mice (#2 and #3), not shown in Figure 2, are shown. Typical pathological α-synuclein deposits are indicated by the arrowheads. Sections were counterstained with hematoxylin. Scale bar, 50 µm.
+
+### Formation of phosphorylated α-synuclein pathology induced by the two α-synuclein strains in cultured neurons
 
 To further study the difference in the formation of pathological α-synuclein aggregates in neurons, we compared the ability of the two α-synuclein strains to induce seed-dependent aggregation of α-synuclein in primary mouse cortical cells. When primary mouse cortical cells from non-transgenic mice were treated with α-synuclein fibrils for two weeks, we observed a dramatic increase of phosphorylated α-synuclein accumulation, which is also positive for ubiquitin, only in the case of α-synuclein fibrils (-), while little accumulation was seen with α-synuclein fibrils (+) (Figure 3A). These results are consistent with those observed in the mouse brain. To investigate whether these accumulations occur in neurons, we performed double staining for phosphorylated α-synuclein and neuronal markers or an astrocyte marker using cells treated with α-synuclein fibrils (-) (Figure 3—figure supplement 1). We found that phosphorylated α-synuclein accumulations were seen in neurons, not in astrocytes. Thus, α-synuclein fibrils (-) could induce phosphorylated α-synuclein accumulations in primary mouse cortical neurons.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig3-v2.jpg)
+
+**Figure 3.:** The two α-synuclein fibrils were transduced into primary mouse cortical cells. 14 days after fibril transduction, the accumulation of abnormal phosphorylated α-synuclein and ubiquitinated aggregates are detected by immunofluorescence microscopy and western blotting. (A) Phosphorylated α-synuclein (Phos-αS), ubiquitin (Ub) and nuclei (DAPI) were stained. Scale bar, 20 µm. Images of cells double stained with antibody against phosphorylated α-synuclein and neuronal or astrocyte markers are shown in Figure 3—figure supplement 1. Uptake of these α-synuclein fibrils into cells are shown in Figure 3—figure supplement 2. (B) Detection of sarkosyl insoluble phosphorylated α-synuclein (left), endogenous mouse α-synuclein (center) and ubiquitinated proteins (right) by western blotting. (C) Detection of sarkosyl soluble GAPDH as a loading control. (D) The quantification data of sarkosyl insoluble phosphorylated α-synuclein (left) and ubiquitinated proteins (right) shown in (B) (mean ± S.E.M; n = 3). Analysis was performed using one-way ANOVA and Tukey post hoc test. ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** α-synuclein fibrils (-), which induced the accumulation of phosphorylated α-synuclein, were transduced into primary mouse cortical cells. 14 days after fibril transduction, phosphorylated α-synuclein and neuronal or astrocyte markers were doubly stained. (A) Phosphorylated α-synuclein (Phos-αS), GFAP (an astrocyte marker) and nuclei (DAPI) were stained. (B) Phosphorylated α-synuclein (Phos-αS), NeuN (a mature neuronal cell marker) and nuclei (DAPI) were stained. (C) Phosphorylated α-synuclein (Phos-αS), tau (a mature neuronal cell marker) and nuclei (DAPI) were stained. (D) Phosphorylated α-synuclein (Phos-αS), Neurofilament-L (a mature neuronal cell marker) and nuclei (DAPI) were stained. Scale bars, 50 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The two α-synuclein fibrils were transduced into primary mouse cortical cells. A day after fibril transduction, cells were washed and treated with trypsin to digest extracellular α-synuclein fibrils. Cells were collected and lysed in the presence of sarkosyl. The cell lysates were centrifuged at 135,000 × g for 20 min, then the supernatant (sup) was collected as sarkosyl-soluble fraction, and the protein concentration was determined by Bradford assay. The precipitate (ppt) was solubilized in SDS-sample buffer and used sarkosyl-insoluble fractions. (A) α-synuclein detected in sarkosyl- insoluble fractions were regarded as the α-synuclein fibrils taken up by the cells. (B) GAPDH detected in sarkosyl- soluble fractions as loading controls. (C) The quantification data of sarkosyl insoluble α-synuclein shown in (A) (mean ± S.E.M; n = 3). Analysis was performed using student t test. **p<0.01.
+
 Next, we performed biochemical analysis of detergent-insoluble α-synuclein prepared from these cells. Phosphorylated α-synuclein were accumulated in cells treated with both α-synuclein fibrils (-) and α-synuclein fibrils (+) (Figure 3B and C). However, α-synuclein fibrils (-) induced a greater accumulation of phosphorylated α-synuclein than did α-synuclein fibrils (+) (Figure 3D). The phosphorylated and aggregated α-synuclein in these cells was found to be endogenous mouse α-synuclein, indicating that the introduced human α-synuclein fibrils worked as seeds (Figure 3B). We also examined the accumulation of detergent-insoluble ubiquitinated proteins and found that not only ubiquitinated α-synuclein, but also other ubiquitinated proteins were accumulated in cells treated with α-synuclein fibrils (-). There was no significant increase of ubiquitinated protein accumulation in cells treated with α-synuclein fibrils (+) (Figure 3B and D). These results indicated that only α-synuclein fibrils (-) induced much accumulation of phosphorylated α-synuclein and ubiquitinated proteins in primary mouse cortical neurons, in accordance with the findings in mouse brain. Seed dependent aggregation of α-synuclein must depend on the efficiency of fibril uptake by cells. We confirmed whether the two α-synuclein fibrils were taken up into primary mouse cortical cells with similar efficiency. Cells were treated with the two α-synuclein fibrils or buffer. A day after treatment, we treated cells with trypsin for digestion of extracellular fibrils, collected them and examined the α-synuclein fibrils taken up into the cells by western blotting of sarkosyl insoluble fractions. We found no α-synuclein signal in pellet fraction of cells with buffer control indicating that detected α-synuclein signals were originated from added fibrils. We found α-synuclein fibrils (-), which induced much α-synuclein accumulation, were taken up into the cells lesser than α-synuclein fibrils (+), demonstrating that α-synuclein fibrils (-) efficiently caused the accumulation of α-synuclein and ubiquitinated proteins in spite of their inefficient uptake into the cells (Figure 3—figure supplement 2).
 
-## Different interactions of α-Synuclein strains with 26S Proteasome
+### Different interactions of α-Synuclein strains with 26S Proteasome
 
 The above results motivated us to examine proteasome activity in the presence of these two types of α-synuclein fibrils. We purified 26S proteasome complex from budding yeast expressing FLAG-tagged Rpn11p, a subunit of 19S regulatory complex (Figure 4—figure supplement 1; Saeki et al., 2005). The activity of the purified 26S proteasome was examined in the presence or absence of α-synuclein fibrils. The eukaryotic proteasome has three active subunits, β1, β 2 and β 5, each displaying a specific catalytic activity, trypsin-like, chymotrypsin-like and caspase-like activity, respectively. Thus, we examined the chymotrypsin-like (Figure 4A), caspase-like (Figure 4B) and trypsin-like (Figure 4C) activities of 26S proteasome in the presence of these α-synuclein fibrils using each fluorogenic peptide substrate in vitro. The catalytic activity of 26S proteasome was drastically impaired in the presence of α-synuclein fibrils (-), whereas α-synuclein fibrils (+) were ineffective (Figure 4A–C). These results accord with our mouse and primary-cultured neuron data, i.e., only α-synuclein fibrils (-) could induce much accumulation of phosphorylated α-synuclein and ubiquitinated proteins. Co-aggregation of functional proteins with misfolded protein aggregates may cause the impairment of their function. Therefore, we investigated the interaction of 26S proteasome with the fibrils. α-Synuclein fibrils were mixed with purified 26S proteasome, and the mixture was centrifuged. The supernatants and precipitates were analyzed by western blotting. We found that both α-synuclein fibrils (-) and α-synuclein fibrils (+) were fractionated to the pellet fractions (Figure 4D). However, only α-synuclein fibrils (-) co-precipitated with 26S proteasome, while α-synuclein fibrils (+) did not (Figure 4E). Taken together, these results indicate that only α-synuclein fibrils (-) interact with 26S proteasome and impair the proteasome activity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Effects of the α-synuclein strains on the 26S proteasome activity. 26S proteasome was purified from budding yeast as shown in Figure 4—figure supplement 1. 26S proteasome activities in the presence of the two α-synuclein fibrils were measured. Chymotrypsin like activity was measured by LLVY-MCA hydrolysis(A). Caspase like activity was measured by LLE-MCA hydrolysis (B). Trypsin like activity was measured by LRR-MCA hydrolysis (mean ± S.E.M; n = 3). (D and E) Co-precipitation of 26S proteasome with the α-synuclein strains. 26S proteasome was mixed with the two α-synuclein fibrils and centrifuged. Resulted supernatants (sup) and precipitates (ppt) were analyzed by western blotting against α-synuclein (D, upper) and Rpn11-HA (E, upper). Quantification of the α-synuclein (D, lower) and Rpn11-HA (E, lower) in ppt fractions were shown. (mean ± S.E.M; n = 3) (F) The core regions of the α-synuclein strains. These α-synuclein fibrils were mildly digested by proteinase K and centrifuged. The resulted pellet fractions were denatured by guanidine and analyzed by MALDI-TOF-MS. Peptide peaks identified by mass analysis and the predicted peptide regions corresponding to each peak are shown. (G) Dot blot analysis of the α-synuclein strains. These α-synuclein fibrils were spotted on nitrocellulose membranes and detected by various antibodies against α-synuclein (upper). Reactivity against the antibody raised against 115–122 region of α-synuclein was quantified (mean ± S.E.M; n = 3) (lower). Analysis was performed using one-way ANOVA and Tukey post hoc test. *p<0.05, ***p<0.001, ****p<0.0001 (A, B, C and E). Analysis was performed using student t test. *p<0.05 (D and G).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** CBB staining of 26S proteasome complex used in this study.
 
 If α-synuclein fibrils (-) bind other proteins, such as 26S proteasome, while α-synuclein fibrils (+) do not, the structures of the two types of fibrils should be distinguishable. Indeed, we did observe slight differences between these two types of fibrils (Figure 1). Amyloid-like fibrils are composed of core regions consisting of β-sheet-rich rigid structure, and exposed regions, which might interact with other molecules. The core regions tend to be resistant to protease attack, whereas exposed regions tend to be easily digested by protease. To identify the core regions and exposed regions of these α-synuclein fibrils, we carried out limited proteolysis with proteinase K, followed by mass spectrometric analysis (Figure 4F; Suzuki et al., 2012). We found that α-synuclein fibrils (-) have a smaller core region (amino acid residues 39–96 and 40–94; m/z 5656 and 5268, respectively) corresponding to the NAC region (amino acid residues 61–95), which had previously been reported as the core region of α-synuclein fibrils (Guerrero-Ferreira et al., 2018; Li et al., 2018). In contrast, α-synuclein fibrils (+) had a larger core region, extending to the C-terminal regions (residues 31–109, 28–118 and 25–132; m/z 7860, 9115 and 10907, respectively), indicating that α-synuclein fibrils (-) have amyloid structure with a more exposed C-terminal region than α-synuclein fibrils (+). To confirm these results, we performed dot-blot analysis using various antibodies against different regions of α-synuclein protein. Native α-synuclein fibrils were spotted on nitrocellulose membranes and detected by applying various α-synuclein antibodies. Antibodies raised against the N-terminal region of α-synuclein (residues 1–10) and the NAC region (91-99) almost equally recognized both types of α-synuclein fibrils, indicating that they have similar structure in the N-terminal and NAC regions (Figure 4G). However, as expected from the above data, the antibodies raised against C-terminal regions (amino acid 115–122 and 131–140) bound more strongly to α-synuclein fibrils (-) than to α-synuclein fibrils (+), supporting the idea that the C-terminal region of α-synuclein fibrils (-) is more exposed than that of α-synuclein fibrils (+). Thus, we considered that the C-terminal region of α-synuclein fibrils (-) might interact with 26S proteasome and impair its activities. Indeed, we previously reported that C-terminally truncated α-synuclein fibrils induced pathology in mouse brain less potently than did full-length α-synuclein fibrils, even though the C-terminally truncated α-synuclein fibrils had higher seeding activity in vitro (Terada et al., 2018). To confirm this, we next examined the seeding activity of C-terminally truncated fibrils formed in the absence of salt in primary-cultured neurons. We prepared C-terminally truncated α-synuclein monomer (residues 1–120) and agitated it in the absence of salt. The resulting assemblies showed fibrillar morphology and thioflavin T binding (data not shown), and we refer to them as αSΔC20 fibrils (-). We treated primary mouse cortical cells with αSΔC20 fibrils (-) and examined the accumulation of phosphorylated α-synuclein and ubiquitinated proteins. As expected, we observed little accumulation of these proteins (Figure 5A and B). Next, we examined the activities of 26S proteasome in the presence of αSΔC20 fibrils (-) as shown in Figure 4A–C. The catalytic activity of 26S proteasome was not impaired in the presence of αSΔC20 fibrils (-) (Figure 5C). We also investigated the interaction of 26S proteasome with αSΔC20 fibrils (-) as shown in Figure 4D and E and found that αSΔC20 fibrils (-) did not co-precipitated with 26S proteasome (Figure 5D and E). Considering all these results, we can conclude that the C-terminal region of α-synuclein is exposed only in α-synuclein fibrils (-) and this region interacts with 26S proteasome and impairs its activity.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56825/elife-56825-fig5-v2.jpg)
 
-**Figure 5.:** (A–C) Seeding activities of C-terminal truncated α-synuclein fibrils in primary mouse cortical neurons. C-terminal truncated α-synuclein fibrils (αSΔC20 (KCl-)) were transduced into primary mouse cortical cells. 14 days after fibril transduction, the accumulation of abnormal phosphorylated α-synuclein and ubiquitinated proteins are detected by immunofluorescence microscopy and western blotting. (A) Phosphorylated α-synuclein (Phos-αS), ubiquitin (Ub) and nuclei (DAPI) were stained. Scale bar, 20 µm. (B) Detection of sarkosyl insoluble phosphorylated α-synuclein (left) and endogenous mouse α-synuclein (right) by western blotting. (C) Detection of sarkosyl soluble GAPDH as a loading control. (D) Effects of the αSΔC20 (KCl-) fibrils on the 26S proteasome activity. 26S proteasome activities in the presence of the αSΔC20 (KCl-) fibrils were measured. Chymotrypsin like activity (left), caspase like activity (center) and trypsin like activity (right) are shown. (mean ± S.E.M; n = 3). (E and F) Co-precipitation of 26S proteasome with the αSΔC20 (KCl-) fibrils. 26S proteasomes were mixed with the αSΔC20 (KCl-) fibrils and centrifuged. Resulted supernatants (sup) and precipitates (ppt) were analyzed by western blotting against α-synuclein (E) and Rpn11-HA (F, left). Quantification of the Rpn11-HA in ppt fractions were shown (F, right). (mean ± S.E.M; n = 3) Analysis was performed using student t test.Figure 5—source data 1.Figure 5D and F.
+**Figure 5.:** (A–C) Seeding activities of C-terminal truncated α-synuclein fibrils in primary mouse cortical neurons. C-terminal truncated α-synuclein fibrils (αSΔC20 (KCl-)) were transduced into primary mouse cortical cells. 14 days after fibril transduction, the accumulation of abnormal phosphorylated α-synuclein and ubiquitinated proteins are detected by immunofluorescence microscopy and western blotting. (A) Phosphorylated α-synuclein (Phos-αS), ubiquitin (Ub) and nuclei (DAPI) were stained. Scale bar, 20 µm. (B) Detection of sarkosyl insoluble phosphorylated α-synuclein (left) and endogenous mouse α-synuclein (right) by western blotting. (C) Detection of sarkosyl soluble GAPDH as a loading control. (D) Effects of the αSΔC20 (KCl-) fibrils on the 26S proteasome activity. 26S proteasome activities in the presence of the αSΔC20 (KCl-) fibrils were measured. Chymotrypsin like activity (left), caspase like activity (center) and trypsin like activity (right) are shown. (mean ± S.E.M; n = 3). (E and F) Co-precipitation of 26S proteasome with the αSΔC20 (KCl-) fibrils. 26S proteasomes were mixed with the αSΔC20 (KCl-) fibrils and centrifuged. Resulted supernatants (sup) and precipitates (ppt) were analyzed by western blotting against α-synuclein (E) and Rpn11-HA (F, left). Quantification of the Rpn11-HA in ppt fractions were shown (F, right). (mean ± S.E.M; n = 3) Analysis was performed using student t test.
 
 ## Discussion
 
@@ -81,68 +121,295 @@ In this study, we found that the degree of interaction with proteasome and the i
 
 ## Materials and methods
 
-## Expression and purification of recombinant Wild-type and C-terminally truncated human α-synuclein
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>CLEA, Japan, Inc</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>WT mouse</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Saccharomyces cerevisiae)</td>
+      <td>RPN11-FLAGx3</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 69450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK172-α-synuclein</td>
+      <td>PMID:8194594</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK172-α-synucleinΔC20</td>
+      <td>PMID:30030380</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein-pSer129 #64 (mouse monoclonal)</td>
+      <td>FUJIFILM Wako Chemicals</td>
+      <td>RRID:AB_2537218</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein 1–10 (rabbit polyclonal)</td>
+      <td>Cosmo Bio</td>
+      <td>RRID:AB_2860557</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein 131–140 (rabbit polyclonal)</td>
+      <td>Cosmo Bio</td>
+      <td>RRID:AB_2860558</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein 91–99 (mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>RRID:AB_398108</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein-pSer129 (EP1646Y) (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_869971</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein 115–122 (LB509) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_785898</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein D37A6 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_1904156</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein-pSer129 (1175) (rabbit polyclonal)</td>
+      <td>PMID:23466394</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-synuclein (Syn205) (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_490798</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ubiquitin (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_671515</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ubiquitin (rabbit polyclonal)</td>
+      <td>Dako</td>
+      <td>RRID:AB_2315524</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_2107445</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG M2 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_262044</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFAP (D1F4Q) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2631098</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Neurofilament-L (C28E10) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_823575</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NeuN (EPR12763) (rabbit monoclonal)</td>
+      <td>abcam</td>
+      <td>RRID:AB_2532109</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-tau (tauC) (rabbit polyclonal)</td>
+      <td>PMID:26374846</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, Alexa Fluor 488</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:AB_143165</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG, Alexa Fluor 568</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:AB_2534072</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, HRP</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:AB_2536099</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG, HRP</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:AB_2536163</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, biotin</td>
+      <td>Vector laboratories</td>
+      <td>RRID:AB_2313606</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EZR</td>
+      <td>PMID:23208313</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>hematoxylin</td>
+      <td>Muto Pure Chemicals</td>
+      <td>Cat. #: 30002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Vector laboratories</td>
+      <td>Cat #: H-1500</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of recombinant Wild-type and C-terminally truncated human α-synuclein
 
 Full-length and C-terminally truncated α-synuclein encoded in pRK172 plasmids were transformed into Escherichia coli BL21 (DE3). Recombinant proteins were purified as described previously (Nonaka et al., 2010). Protein concentration was determined by HPLC.
 
-## Preparation of α-synuclein fibrils
+### Preparation of α-synuclein fibrils
 
 α-Synuclein fibrils were prepared as follows. Purified recombinant α-synuclein proteins were dissolved in 30 mM Tris-HCl, pH 7.5, containing 150 mM KCl and 0.1% NaN3, to a final concentration of 6 mg/ml. The samples were incubated at 37°C under rotation at 20 rpm for 7 days. The assembled α-synuclein was sonicated with an ultrasonic homogenizer (VP-5S, TAITEC) in 30 mM Tris-HCl, pH 7.5. For the measurement of turbidity, the resultant α-synuclein assemblies were diluted to 1 mg/ml and the absorbance at 440 nm was measured.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 α-Synuclein fibrils were diluted to 15 μM in 30 mM Tris-HCl, pH 7.5, plated on carbon-coated 300-mesh copper grids (Nissin EM), and stained with 2% [v/v] phosphotungstate. Micrographs were recorded on a JEM-1400 electron microscope (JEOL).
 
-## Thioflavin T-binding assay
+### Thioflavin T-binding assay
 
 The degree of fibrillation was measured in terms of Thioflavin T (ThT) fluorescence intensity, which increases when ThT binds to amyloid-like fibrils. The samples (7.5 μM) were incubated with 20 μM ThT in 30 mM Tris-HCl buffer (pH 7.5) for 30 min at 37°C. Fluorometry was performed using a microplate reader (Infinite 200, TECAN, excitation 442 nm, emission 485 nm).
 
-## Congo red binding assay
+### Congo red binding assay
 
 The binding of Congo red was measured as described previously (Suzuki et al., 2012). α-Synuclein monomer and fibrils (37.5 μM) were mixed with Congo red (1 μM) and incubated for 1 hr at 37°C. Absorbance between 400 and 700 nm was measured with a plate reader (Infinite 200, TECAN). The binding of Congo red was calculated as A540/25296-A477/46306.
 
-## α-Synuclein aggregation assay
+### α-Synuclein aggregation assay
 
 Full-length α-synuclein aggregation experiments were performed using a microplate reader (Infinite 200, TECAN, excitation 442 nm, emission 485 nm) and monitored by measuring ThT fluorescence in the absence or presence of 5% α-syn fibril seeds. All experiments were performed at 37°C, under quiescent conditions in flat-bottomed 96-well black plates (Sumitomo Bakelite) sealed with MicroAmp Optical Adhesive Film (Applied Biosystems). The reaction mixture consisted of PBS containing 1 mg/ml α-synuclein monomer. During experiments under quiescent conditions, ThT fluorescence was read every 2 min.
 
-## Primary-cultured cells and introduction of α-synuclein proteins into cells
+### Primary-cultured cells and introduction of α-synuclein proteins into cells
 
 Dissociated cultures of embryonic (E15) mouse cortical cells were prepared from pregnant C57BL/6 mice using Neuron Dissociation Solutions (FUJI FILM Wako) according to the manufacturer’s protocol. Briefly, dissected brain was digested with enzyme solution for 30 min at 37°C, then centrifuged. Dispersion solution was added and tissues were suspended, then isolation solution was added. Cells were collected by centrifugation, resuspended and plated on poly-L-lysine-coated cover glass or plates. Cells were maintained at 37°C in 5% CO2 in Neurobasal Medium (Gibco) supplemented with 1x B27 and 1x Glutamax. Cells were cultured for 7 days in vitro (DIV) in 6-well plates, and then treated with sonicated α-synuclein fibrils diluted in culture medium. Cells were collected or fixed at 14 days post treatment (21 DIV).
 
-## Purification of 26S Proteasome from Budding Yeast
+### Purification of 26S Proteasome from Budding Yeast
 
 Yeast 26S proteasome was purified as described previously (Saeki et al., 2005). Briefly, the yeast strain (BY4741, Rpn11-FLAGx3::KanMX) was cultured in YPD for 2 days, harvested, washed and stocked at −80°C. Buffer A’’ (50 mM Tris-HCl, pH 7.5, 100 mM NaCl, 10% glycerol, 4 mM ATP, 10 mM MgCl2) and glass beads were added and the cells were lysed in a Beads Shocker (Yasui Kikai). Cell debris was removed by centrifugation and then anti-FLAG M2 antibody-conjugated agarose beads (Sigma) were added. The mixture was incubated for 2 hr at 4°C. Agarose beads were washed with Buffer A’’ and Buffer A’’ containing 0.1% Triton, and proteasome was eluted by adding 3x FLAG peptide (400 μg/ml) (Sigma) in Buffer A’’.
 
-## 26S proteasome activity assays
+### 26S proteasome activity assays
 
 Inhibition of α-synuclein fibrils on proteasome activity was measured using fluorogenic peptides in 96-well black flat-bottomed plates. 26S proteasome (10 μg/ml) was added to α-synuclein fibrils (35 μM, calculated based on the monomer protein concentration), and the mixture was incubated in buffer A’’ containing 100 μM fluorogenic substrate (suc-LLVY-mca, Z-LLE-mca, Peptide Institute) for 60 min at 37°C or 50 μM fluorogenic substrate (boc-LRR-mca, Peptide Institute) for 10 min at 37°C. Fluorescence was measured before and after incubation (Infinite 200, TECAN, excitation 360 nm, emission 440 nm). The rate of increase in fluorescence intensity is regarded as representing proteasome activity.
 
-## Binding assay of proteasome with α-synuclein fibrils
+### Binding assay of proteasome with α-synuclein fibrils
 
 α-Synuclein fibrils were mixed with purified 26S proteasome in Buffer A’’, and the mixture was centrifuged at 21,500 x g for 20 min. The supernatant and pellet fractions were analyzed by the western blotting using the appropriate antibodies (RRID:AB_262044, RRID:AB_2860557, RRID:AB_2860558).
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Introduction of α-synuclein fibrils were conducted as described above, using mouse primary cultured cells grown on coverslips. At 2 weeks after introduction of fibrils, the cells were fixed with 4% paraformaldehyde and treated with the primary antibodies (RRID:AB_2537218, RRID:AB_671515, RRID:AB_2631098, RRID:AB_823575, RRID:AB_2532109, tauC). After incubation overnight, the cells were washed and treated with secondary antibodies conjugated with Alexa Fluor (RRID:AB_143165, RRID:AB_2534072) for 1 hr. The cells were mounted with DAPI to counterstain nuclear DNA and analyzed with a BZ-X710 (Keyence) and BZ-X analyzer (Keyence).
 
-## α-Synuclein inoculation into mice and immunohistochemistry of mouse brains
+### α-Synuclein inoculation into mice and immunohistochemistry of mouse brains
 
 Ten-week-old, male C57BL/6J mice were purchased from CLEA Japan, Inc All experimental protocols were performed according to the recommendations of the Animal Care and Use Committee of Tokyo Metropolitan Institute of Medical Science. α-Synuclein samples (150 μM, 5 μl) were injected into the striatum (anterior-posterior, 0.2 mm; medial-lateral, −2.0 mm; dorsal-ventral, 2.6 mm). Inoculation into mouse brain was performed as described previously (Masuda-Suzukake et al., 2013). Non-injected wild- type mice were used as negative controls.
 
 One month after inoculation, mice were deeply anesthetized with isoflurane (Pfizer) and sacrificed, and the brain was perfused with 0.1 M phosphate buffer. Sections were fixed in 4% paraformaldehyde and preserved in 20% sucrose in 0.01 M phosphate buffered saline, pH 7.4. Sections were cut serially on a freezing microtome at 30 μm thickness. Sections were then mounted on glass slides. Sections were incubated with 1% H2O2 for 30 min to eliminate endogenous peroxidase activity and were treated with 100% formic acid (Wako) for 10 min for antigen retrieval and washed under running tap water. Immunohistochemistry with polyclonal antibody 1175 (1:1,000) directed against α-synuclein phosphorylated at Ser129 or anti-ubiquitin (RRID:AB_2315524) were performed as described previously (Masuda-Suzukake et al., 2013). Antibody labeling was performed by incubation with biotinylated goat anti-rabbit IgG (RRID:AB_2313606) for 3 hr. The antibody labeling was visualized by incubation with avidin-biotinylated horseradish peroxidase complex (ABC Elite, Vector Laboratories, 1:1,000) for 3 hr, followed by incubation with a solution containing 0.01% 3,3'-diaminobenzidine, 0.05 M imidazole and 0.00015% H2O2 in 0.05 M Tris-HCl buffer, pH 7.6. Counter nuclear staining was performed with hematoxylin (Muto Pure Chemicals). The sections were then rinsed with distilled water, treated with xylene, and coverslipped with Entellan (Merck). Images were analyzed with a BZ-X710 (Keyence) and BZ-X analyzer (Keyence). We examined three mice for each sample and each mouse yielded highly similar results. We examined at least 6 slices for each mouse and confirmed the similar results. Animal experiments were done by the experimenter who is blind.
 
-## Sedimentation analysis and western blotting
+### Sedimentation analysis and western blotting
 
 Cells were harvested, collected by centrifugation (2,000 × g, 5 min) and washed with PBS. The cellular proteins were extracted by sonication in 200 μl of buffer A68 (10 mM Tris-HCl, pH 7.5, 1 mM EGTA, 10% sucrose, 0.8 M NaCl containing sarkosyl (final 1%, w/v) and protease inhibitor (Roche). After ultracentrifugation at 135,000 × g for 20 min at 25°C, the supernatant was collected as sarkosyl-soluble fraction, and the protein concentration was determined by Bradford assay. The pellet was solubilized in 50 μl of SDS-sample buffer. Both sarkosyl-soluble and insoluble fractions were analyzed by immunoblotting with the appropriate antibodies (RRID:AB_869971, RRID:AB_1904156, RRID:AB_671515, RRID:AB_2107445).
 
-## Dot blot analysis
+### Dot blot analysis
 
 α-synuclein fibrils (50 ng) were spotted on nitrocellulose membranes and detected by the appropriate antibodies against α-synuclein (RRID:AB_2860557, RRID:AB_2860558, RRID:AB_398108, RRID:AB_785898).
 
-## Fibril uptake assay
+### Fibril uptake assay
 
 Mouse cortical cells were prepared and treated with the α-synuclein fibrils as described above. A day after treatment, cells were washed with PBS and treated with 0.25% trypsin at 37°C for 10 min, then cells were collected. Sedimentation analysis and western blotting were performed as described above using the appropriate antibodies (RRID:AB_490798, RRID:AB_2107445).
 
-## Statistical analysis
+### Statistical analysis
 
 Student’s t-test was performed when comparing 2 groups. One-way ANOVA and Tukey’s post hoc test were performed with EZR when comparing 3 groups (Kanda, 2013). P values below 0.05 were considered to be statistically significant.

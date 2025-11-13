@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.32992.001 Brain connectivity is often considered in terms of the communication between functionally distinct brain regions. Many studies have investigated the extent to which patterns of coupling strength between multiple neural populations relates to behaviour. For example, studies have used ‘functional connectivity fingerprints’ to characterise individuals' brain activity. Here, we investigate the extent to which the exact spatial arrangement of cortical regions interacts with measures of brain connectivity. We find that the shape and exact location of brain regions interact strongly with the modelling of brain connectivity, and present evidence that the spatial arrangement of functional regions is strongly predictive of non-imaging measures of behaviour and lifestyle. We believe that, in many cases, cross-subject variations in the spatial configuration of functional brain regions are being interpreted as changes in functional connectivity. Therefore, a better understanding of these effects is important when interpreting the relationship between functional imaging data and cognitive traits.
+Brain connectivity is often considered in terms of the communication between functionally distinct brain regions. Many studies have investigated the extent to which patterns of coupling strength between multiple neural populations relates to behaviour. For example, studies have used ‘functional connectivity fingerprints’ to characterise individuals' brain activity. Here, we investigate the extent to which the exact spatial arrangement of cortical regions interacts with measures of brain connectivity. We find that the shape and exact location of brain regions interact strongly with the modelling of brain connectivity, and present evidence that the spatial arrangement of functional regions is strongly predictive of non-imaging measures of behaviour and lifestyle. We believe that, in many cases, cross-subject variations in the spatial configuration of functional brain regions are being interpreted as changes in functional connectivity. Therefore, a better understanding of these effects is important when interpreting the relationship between functional imaging data and cognitive traits.
 
 ## Introduction
 
@@ -41,11 +41,51 @@ Conceptually, network edges are commonly thought of as reflecting coupling stren
 
 ## Results
 
-## Cross-subject information in fMRI-derived measures
+### Cross-subject information in fMRI-derived measures
 
 To determine whether a given rfMRI-derived FC measure contains meaningful cross-subject information rather than random variability, we adopted an approach that makes use of the extensive set of behavioural, demographic, and lifestyle data acquired in the HCP. Our first analysis aims to determine which measures obtained from rfMRI and task data most strongly relate to interesting behavioural variability across individuals. Using Canonical Correlation Analysis (CCA), we extracted population modes of cross-subject covariation that represent maximum correlations between combinations of variables in the subject behavioural measures and in the fMRI-derived measures, uncovering multivariate relationships between brain and behaviour. For example, previous work has used CCA on HCP data to identify a mode of population covariation that linked a positive-negative axis of behavioural variables to patterns of FC edge strength (Smith et al., 2015). A specific pattern of connectivity, primarily between ‘task-negative’ (default mode) regions (Raichle et al., 2001), was found to be linked to scores on positive factors such as life satisfaction and intelligence, and inversely associated with scores on negative factors such as drug use.
 
 CCA works by finding a linear combination of behavioural measures (V) that is maximally correlated with a linear combination of rfMRI-derived measures (U). CCA scores for each subject are obtained for the behavioural and fMRI-derived measures (V and U), which represent the subject’s position along the population continuum for the latent CCA variable(s). The key result of a CCA analysis for each mode of covariation is the correlation between U and V, denoted rUV, which describes the strength of the multivariate brain-behaviour relationship. Given that CCA explicitly optimises rUV, it is essential to perform permutation testing in order to test the significance of the CCA result. To determine which behavioural measures contribute strongly to the CCA result, V is subsequently regressed into original non-imaging variables (Figure 1B; although interpretation of these results is complicated by behaviour-behaviour correlations). Additionally, U is used to visualise variation at both the population extremes (see Figure 2 below and Figure 2—figure supplements 2–7), and across the full population continuum (Supplementary video files).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig1-v2.jpg)
+
+**Figure 1.:** (A) Comparison of strength of CCA result for network matrices, spatial maps and amplitudes (node timeseries standard deviation) derived from several distinct group-average spatial parcellations/decompositions: ICA decompositions at two scales of detail (dimensionalities of 25 and 200, with ‘ICA200 partial network matrix’ corresponding to the measures used previously [Smith et al., 2015]); a PROFUMO decomposition (PFM; dimensionality 50); an atlas-based hard parcellation (108 parcels [Yeo et al., 2011]), task contrast spatial maps (86 contrasts, 47 unique), and warp field from native space to MSMAll alignment. Each bar reports a separate CCA analysis (first CCA mode shown), performed against behaviour/life-factors. A similar mode of variation is found across most of the parcellation methods and different fMRI measures. rUV is the strength of the canonical correlation between imaging and non-imaging measures. Error bars indicate confidence intervals (2.5–97.5%) estimated using surrogate data (generated with the same correlation structure), and red lines reflect the p<0.002 significant threshold compared with a null distribution obtained with permutation testing (i.e. family-wise-error corrected across all CCA components and Bonferroni corrected across a total of 25 CCAs performed, see Supplementary file 1a and b for the full set of results). CCA estimates the highest possible ruv given the dataset; therefore, the null distribution for low-dimensional brain data (e.g. ICA 25 amplitude) is expected to be lower than for high-dimensional brain data. (B) Set of non-imaging variables that correlate most strongly with the CCA mode (averaged subject weights V across results marked with * in A; i.e. p=0.00001) with behavioural variables. Position against the y-axis and font size indicate strength of correlation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** For each CCA instance, the mode with the maximum correlation with the ICA200 partial network matrix was selected for comparison. Absolute correlation values between behavioural subject weights (V) are shown and reveal that a comparable behavioural mode is obtained from the CCAs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-v2.jpg)
+
+**Figure 2.:** The top row shows that the inferior parietal node of the DMN differs in shape and extends into the intraparietal sulcus in subjects who score high on the positive-negative CCA mode (right), compared with subjects who score lower (left). The bottom row shows that medial prefrontal and posterior cingulate/precuneus regions of the DMN differ in size and shape as a function of the CCA positive-negative mode. The representative maps at both extremes are thresholded at ±2 (arbitrary units specific to the PFM algorithm) for visualisation purposes (the differences are not affected by the thresholding; for unthresholded video-versions of these maps, please see the Supplementary video files. The grey contours are identical on the left and right to aid visual comparison and are based on the group-average maps (thresholded at 0.75). Spatial changes of all PFM modes can be seen in the Supplementary video files and in Figure 2—figure supplements 2–7. B: difference maps (positive - negative; thresholded at ±1) are shown to aid comparison. C: A summary of topographic variability across all PFM modes, showing PFM correlations with CCA subject weights (at each grayordinate the maximum absolute r across all PFMs is displayed). An extended version of C is available in Figure 2—figure supplement 7. Data of Figure 2 available at: https://balsa.wustl.edu/8lVx.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Maps can directly be compared between the left (negative) and the middle (positive), and difference maps are shown on the right (blue = negative > positive; yellow = positive > negative). Arbitrary thresholds used for visualisation purposes (same thresholds for all maps), see videos for the unthresholded continuum. Gray outlines are based on group average maps and are identical between left and right images to facilitate comparison. Data available at https://balsa.wustl.edu/07pz, https://balsa.wustl.edu/21kq, https://balsa.wustl.edu/rKMN, https://balsa.wustl.edu/xK16, https://balsa.wustl.edu/PGw5.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Maps can directly be compared between the left (negative) and the middle (positive), and difference maps are shown on the right (blue = negative > positive; yellow = positive > negative). Arbitrary thresholds used for visualisation purposes (same thresholds for all maps except map 15, where lower thresholds were used), see videos for the unthresholded continuum. Gray outlines are based on group average maps and are identical between left and right images to facilitate comparison. Data available at https://balsa.wustl.edu/KMGg, https://balsa.wustl.edu/Nq9K, https://balsa.wustl.edu/G1mN, https://balsa.wustl.edu/LBLx, https://balsa.wustl.edu/pKwg.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Maps can directly be compared between the left (negative) and the middle (positive), and difference maps are shown on the right (blue = negative > positive; yellow = positive > negative). Arbitrary thresholds used for visualisation purposes (same thresholds for all maps), see videos for the unthresholded continuum. Gray outlines are based on group average maps and are identical between left and right images to facilitate comparison. Data available at https://balsa.wustl.edu/9qw5, https://balsa.wustl.edu/kKxK, https://balsa.wustl.edu/07m9, https:// balsa.wustl.edu/21gB, https://balsa.wustl.edu/rKw9.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Maps can directly be compared between the left (negative) and the middle (positive), and difference maps are shown on the right (blue = negative > positive; yellow = positive > negative). Arbitrary thresholds used for visualisation purposes (same thresholds for all maps), see videos for the unthresholded continuum. Gray outlines are based on group average maps and are identical between left and right images to facilitate comparison. Data available at https://balsa.wustl.edu/xKwn, https://balsa.wustl.edu/PG0X, https://balsa.wustl.edu/7B1G, https://balsa.wustl.edu/6M1K, https://balsa.wustl.edu/16mg.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Maps can directly be compared between the left (negative) and the middle (positive), and difference maps are shown on the right (blue = negative > positive; yellow = positive > negative). Arbitrary thresholds used for visualisation purposes (same thresholds for all maps except map 20, where lower thresholds were used), see videos for the unthresholded continuum. Gray outlines are based on group average maps and are identical between left and right images to facilitate comparison. Data available at https://balsa.wustl.edu/5g1G, https://balsa.wustl.edu/nKVP, https://balsa.wustl.edu/gKkP, https://balsa.wustl.edu/Mlpw, https://balsa.wustl.edu/Brql.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Maps can directly be compared between the left (negative) and the middle (positive), and difference maps are shown on the right (blue = negative > positive; yellow = positive > negative). Arbitrary thresholds used for visualisation purposes (same thresholds for all maps), see videos for the unthresholded continuum. Gray outlines are based on group average maps and are identical between left and right images to facilitate comparison. Data available at https://balsa.wustl.edu/lK0L, https://balsa.wustl.edu/qK7x, https://balsa.wustl.edu/jK9z, https://balsa.wustl.edu/wKjp, https://balsa.wustl.edu/4nL6.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Correlations between fractional area and behaviour were highly consistent between left and right hemispheres, and revealed relatively high correlations in higher order sensory and cognitive regions. Specifically, bilaterally significant (FDR corrected p<0.05) positive associations between larger surface area and higher scores on the positive-negative mode of population covariation were found in area POS2 of the parieto-occipital sulcus and in area IPS1 of the dorsal visual processing stream; bilaterally significant negative correlations were identified in the cingulate motor area 24dv, premotor area 6 r, and inferior parietal cortex (areas PFt, PFm, PGi). (B) Qualitative comparison between the spatial localisation of strongest correlations with behaviour across all three datasets reveals that many regions that contribute strongly in either the HCP_MMP1.0 or in the PFM individual subject spatial estimates spatially overlap or adjoin cortical areas in which fractional surface area was also closely linked to behaviour. This qualitative finding suggests that differences in regional surface area may drive many of the results presented in this work, although further research is needed to confirm this interpretation (for visual comparison the PFM correlation maps are shown using a higher threshold pFDR <0.0001, |r| > 0.218, and HCP_MMP1.0 correlation maps are correlated at pFDR <0.05; |r| > 0.159). (C) Un-thresholded HCP_MMP1.0 correlations with CCA subject weights; these are the maximum absolute r across all parcels, and therefore do not contain the parcel structure itself. (D) Un-thresholded PFM correlations with CCA subject weights (maximum absolute r across all PFMs). The cortical localisation of strong associations with behaviour do not closely overlap between PFMs and the HCP_MMP1.0 parcellation (i.e. red and blue regions in B and un-thresholded maps in C/D). This lack of exact correspondence of the representations of cross-subject variability may reflect differences between the HCP_MMP1.0 and PROFUMO models (the former being a hard parcellation with no overlap between parcels, and the latter being a soft parcellation that includes complex and often overlapping networks), and differences in the data types driving the parcellation (PROFUMO being driven by rfMRI data only, and the HCP_MMP1.0 parcellation being driven by data from multiple different modalities). Data available at https://balsa.wustl.edu/mK28.
 
 We applied a separate CCA analysis for each of the various fMRI-derived measures (including spatial, network matrix, and amplitude measures). The results (Figure 1 and Supplementary file 1a and b) reveal that highly similar associations with behaviour and life factors occur across a wide range of different fMRI-derived measures. Correlating the behavioural subject weights (V) across the different CCA instances in Figure 1 shows that a similar behavioural mode is obtained from the independent instances of CCA (particularly for those CCAs that have a high rU-V and low PU-V; Figure 1—figure supplement 1). Mapping these subject weights onto behaviour through correlation reveals consistent positive associations with, for example, fluid intelligence, life satisfaction, and delayed discounting, and consistent negative correlations with use of tobacco, alcohol and cannabis. All behavioural correlations with mean correlation r>|0.25| (chosen for visualisation purposes) are shown in Figure 1B. The results show that spatial features such as PFM subject spatial maps and subject task contrast maps are strongly associated with behaviour. Overall, these findings reveal that a large variety of fMRI measures have similarly strong associations with behaviour.
 
@@ -57,7 +97,43 @@ The presence of this behaviourally meaningful spatial variability is somewhat su
 
 To better understand what spatial features represent behaviourally relevant cross-subject information, we visually explored what aspects of the PFM spatial maps contributed to the CCA result in Figure 1 by calculating representative maps at extremes of the CCA mode of population covariation (based on CCA subject scores). While the PFM maps are estimated using the full set of cortical and subcortical grayordinates, we focus on cortical findings because these contribute most strongly to the CCA results. The results reveal complex changes in spatial topography (Figure 2, Figure 2—figure supplements 2–7, and Videos 1–9. For example, comparing left versus right panels shows the right inferior parietal node of the DMN extending farther into the intraparietal sulcus (in the vicinity of area IP1 [Choi et al., 2006; Glasser et al., 2016]) in subjects who score higher on the behavioural positive-negative mode of covariation. Qualitative inspection of Figure 2—figure supplements 2–7 suggests that many of the difference maps show notable bilateral symmetry.
 
-## Spatiotemporal simulations demonstrating potential sources of variability in edges
+![Video 1.](https://cdn.elifesciences.org/articles/32992/elife-32992-video1.mp4.jpg)
+
+**Video 1.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 2.](https://cdn.elifesciences.org/articles/32992/elife-32992-video2.mp4.jpg)
+
+**Video 2.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 3.](https://cdn.elifesciences.org/articles/32992/elife-32992-video3.mp4.jpg)
+
+**Video 3.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 4.](https://cdn.elifesciences.org/articles/32992/elife-32992-video4.mp4.jpg)
+
+**Video 4.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 5.](https://cdn.elifesciences.org/articles/32992/elife-32992-video5.mp4.jpg)
+
+**Video 5.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 6.](https://cdn.elifesciences.org/articles/32992/elife-32992-video6.mp4.jpg)
+
+**Video 6.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 7.](https://cdn.elifesciences.org/articles/32992/elife-32992-video7.mp4.jpg)
+
+**Video 7.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 8.](https://cdn.elifesciences.org/articles/32992/elife-32992-video8.mp4.jpg)
+
+**Video 8.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+![Video 9.](https://cdn.elifesciences.org/articles/32992/elife-32992-video9.mp4.jpg)
+
+**Video 9.:** Each video shows five frames representing the continuum from negative to positive CCA results.
+
+### Spatiotemporal simulations demonstrating potential sources of variability in edges
 
 Figure 1 showed that functionally-relevant cross-subject variability is represented in a variety of different measures derived from both resting state and task fMRI. These widespread similarities in correlations with behaviour across a range of measures invite the question of whether the same type of trait variability is meaningfully and interpretably reflected in a wide range of rfMRI measures, or whether (for example) estimates of network matrices may instead primarily reflect trait variability in spatial topography or amplitude (and not coupling strength). Therefore, we wanted to determine to what extent correlation-based FC measures derived from rfMRI can be influenced by specific aspects of the rfMRI data such as true topography and true coupling. To this end, we generated simulated datasets based on the original PFM subjects and/or group spatial maps and timeseries. By holding either the individual (simulated) subjects’ spatial maps or the network matrices fixed to the group average we eliminated specific forms of underlying subject variability from the simulated data (Figure 3). Note, we used PFMs in order to generate simulated data because the PROFUMO model separately estimates spatial maps, network matrices and amplitudes, thereby allowing each aspect to be fixed to the group average prior to generating simulated data using the outer product (as described in detail in Equation (1), and in the section on ‘Creating simulated data’ in the Material and methods). Previous simulation results have shown that PROFUMO is able to accurately estimate spatial maps and network matrices in the presence of cross-subject variability in spatial topography, relative strength of subregions, and between-mode connectivity (Harrison et al., 2015). The aim of the simulation analyses was to determine which features in the rfMRI data are likely to be most strongly reflected in network matrices estimated from rfMRI data. We assess this in terms of the amount of variability across subjects that can be explained, as this is the most relevant application in biomarker studies and in neuroimaging research more generally.
 
@@ -67,15 +143,102 @@ Figure 1 showed that functionally-relevant cross-subject variability is represen
 
 Timeseries were extracted from both the simulated and original datasets, and network matrices were estimated. Each simulated dataset was assessed using three metrics: (i) comparing subject-specific simulated and original network matrices (Znetwork matrix in Table 1), (ii) comparing cross-subject variability in the simulated and original network matrices (Rcorrelation in Table 1), and (iii) determining how much of the cross-subject variability in simulated and original network matrices is behaviourally informative using CCA (see Table 1 legend).
 
+**Table 1.**
+ Results from simulated datasets in which one or more of the network matrices, amplitudes and spatial maps are fixed to the group average to remove any subject variability associated with it.Results in each row were driven by variables in which subject variability was preserved, as indicated with ✓ (variables with ‘-’ were fixed to the group average). Results are shown for within-subject correlations between simulated and original z-transformed network matrices (Znetwork matrix), similarities of cross-subject variability represented in simulated and original network matrices (Rcorrelation), and for results obtained from the CCA against behaviour (where rU-V is the strength of the canonical correlation between imaging and non-imaging measures, PU-V is the associated (family-wise error corrected) p-value estimated using permutation testing, taking into account family structure, and rU-Uica is the correlation of a CCA mode (subject weights) with the positive-negative mode of population covariation obtained from ICA200 partial network matrices as used in Smith et al. (2015). For brevity, this Table presents results from full correlation network matrices obtained from a dual regression of ICA 200 maps onto the simulated data (because this approach closely matches previously published findings [Smith et al., 2015]), results for other parcellations are in Supplementary file 1c and for partial correlation network matrices in Supplementary file 1d. The results for a wide range of different parcellations show comparable trends (i.e. a large proportion of cross-subject variability is captured purely by spatial maps, as indicated by the highlighted rows), and this main result is also found when using partial network matrices (e.g., for ICA 200, 0.512 = 26% variance explained in partial network matrices was captured by spatial information, and 0.542 = 29% variance explained in full network matrices was captured by spatial information).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Simulation driven by true subject variability in:</th>
+      <th>Network matrix</th>
+      <th>Amplitude</th>
+      <th>Spatial map</th>
+      <th>Z network matrix</th>
+      <th>R correlation</th>
+      <th>CCA R U-V</th>
+      <th>Cca P U-V</th>
+      <th>CCA R U-Uica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">ICA D = 200 N = 819</td>
+      <td>Nothing</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>−0.0003</td>
+      <td>0.03</td>
+      <td>0.65</td>
+      <td>0.32017</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Amps and maps</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>1.14</td>
+      <td>0.60</td>
+      <td>0.71</td>
+      <td>0.00001</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>Connectivity only</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.47</td>
+      <td>0.65</td>
+      <td>0.69</td>
+      <td>0.00028</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>Amplitudes only</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>0.22</td>
+      <td>0.15</td>
+      <td>0.69</td>
+      <td>0.00052</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>Maps only</td>
+      <td>-</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>0.78</td>
+      <td>0.54</td>
+      <td>0.72</td>
+      <td>0.00001</td>
+      <td>0.62</td>
+    </tr>
+  </tbody>
+</table>
+
 The results (Table 1 and Supplementary file 1c and d) show that, when the subject-varying aspects of the simulations were exclusively driven by spatial changes across subjects (with the predefined network matrix and amplitudes being identical for all subjects), up to 62% (i.e. square of Rcorrelation = 0.79 from Supplementary file 1d ‘maps only’) of the cross-subject variance present in the network matrices obtained from the original data was regenerated. Hence, this finding reveals that very similar network matrices can be obtained for any individual subject even if the only aspect of the rfMRI that is varying across subjects is the topographic information in PFM spatial maps. In addition, the variance that can be explained by spatial maps is behaviourally relevant; the CCA results were similarly strong (typically having the same permutation-based p-values) from simulated network matrices driven purely by spatial changes, compared with those obtained from the original dataset.
 
 The influence of amplitudes on FC estimates was relatively minor (less than 2.5% of variance was explained by amplitude in all our simulations; i.e. square of Rcorrelation = 0.15 from Table 1 ‘amplitudes only’), although, when amplitudes were combined with spatial maps feeding into the simulations, the amplitudes did in most cases result in an increase in original network matrix regeneration.
 
 Given the complex information present in PFM spatial maps, the effect of spatial information on network matrices can result from cross-subject variability in: (i) network size, (ii) relative strength of regions within a given network, or (iii) size and spatial location of functional regions. We performed two further tests to distinguish these influences by thresholding and binarising the subject-specific spatial maps used to create the simulated data. Maps were either thresholded using a fixed threshold (removing the influence of relative strength), or (separately) using a percentile threshold (removing the influence of relative strength and size, as the total number of grayordinates in binarised PFM maps is fixed across subjects and PFMs). The role of subject-varying spatial maps in driving the resulting estimated network matrices remains strong when highly simplified binarised maps are used to drive the simulations (Supplementary file 1e), further supporting our interpretation that the results are largely driven by the shape of the functional regions (i.e. variability in the location and shape of functional regions across subjects), rather than by size or local strength.
 
-## Unique contribution of topography versus coupling
+### Unique contribution of topography versus coupling
 
 The results presented above show that a large proportion of the variance in estimated network matrices is also represented in spatial topography. This suggests either that cross-subject information is represented in both the coupling strength between neural populations and in the ‘true’ underlying spatial topography, or that edge estimates obtained from rfMRI data primarily reflect cross-subject spatial variability (which indirectly drives edge estimates through the influence of spatial misalignment on timeseries extraction, particularly when group parcellations are mapped onto individual subjects in the case of imperfect alignment). To test these hypotheses further, we investigated the unique information contained in spatial maps and network matrices using a set of 15 ICA basis maps derived from HCP task contrast maps (Figure 4A). These basis maps can be thought of as the spatial building blocks that can be linearly combined to create activation patterns for any specific HCP task contrast, and can be considered here to be another functional parcellation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig4-v2.jpg)
+
+**Figure 4.:** (A) Task basis maps are extracted from group-averaged task contrasts (n=86, 47 unique) using ICA to ensure correspondence of basis maps across subjects. These maps represent the basic building blocks of any activation pattern, and subject task basis maps (obtained by applying the ICA weights to subject task contrast maps) are not influenced by misalignment problems. (B) Dual regression against rfMRI data is performed using either the (potentially misaligned) group task basis maps or the (functionally localised) subject task basis maps. (C) CCA results of group-task-based rfMRI maps and network matrices and of subject-task-based rfMRI maps and netmats. The results show rUV (i.e., the correlation between the first U and V obtained from the CCA analysis describing the strength of association between the rfMRI and behavioural measures). The null line (i.e., p=0.05 based on permutation testing) is shown as a dotted line at 0.68; results below this line do not reach significance. The blue bars show the main CCA results using the complete data, and the red bars show partial CCA results computed after regressing out any variance that can be explained by network matrices from the spatial maps and vice versa prior to running the CCA. The results show a general decrease in rUV for all measures when comparing partial to full CCA results. The strongest partial CCA result (red bars on right) are found when using rfMRI spatial maps, and the associated netmats showed the weakest results (“§”). However, the partial CCA results for the spatial maps (i.e., the red bars on the right) still reach significance. All of the partial CCAs also showed lower rU-Uica compared to the full CCAs (not shown here).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32992/elife-32992-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Subject-by-subject correlation matrices are estimated (A), and vectorised (B; one subject correlation matrix being estimated for each measure type). The first column of the similarities (C; highlighted) shows the relationship (full correlation) between the ICA network matrix and various other measures, such as PFM spatial maps and amplitudes, and ICA spatial maps. These results show that the ICA network matrix is closely related to PFM spatial maps. The first row of the similarities (C; highlighted) shows the same relationship after taking into account all the other elements (i.e. the partial correlation between different measures). This reveals that PFM spatial maps are strongly linked to the ICA network matrix, even after accounting for any variance that can be explained by ICA spatial maps and PFM amplitudes. Similar results are obtained for ICA 200 and 25 dimensionality and for partial and full network matrices (D). These findings are consistent with the simulation results in Table 1, showing that estimated network matrices and spatial topography to a large extent overlap in terms of the interesting cross-subject variability they represent. Additionally, the results show that while dual regression ICA spatial maps are able to capture some of the subject spatial variability, subject maps estimated by PROFUMO capture considerably more spatial variability over and above the dual regression maps.
 
 The advantage of using basis maps derived from task data is that the tasks essentially act as functional localisers that allow for the precise localisation of task-related functional regions within an individual; results at a single-subject level are not influenced in any way, including spatially, by the group results, as they are derived via the standard task-paradigm analysis (i.e. which relies solely on temporal information, and is not influenced by the group-level maps). The equivalence between group- and subject-level contrasts (i.e. the inherent assumption in any group-level analysis, namely that the group ‘2BK-0BK’ contrast map directly relates to any subject-level ‘2BK-0BK’ contrast) means that any combination of group-level contrasts is equally valid as a combination at the subject-level, but with the advantage that the resulting subject maps will be faithful to the precise location of functional regions that the subject-specific contrast maps capture. Hence, subject-based task basis maps are the most accurate description of subject-specific locations of functional regions, at least with respect to those regions identifiable from the range of tasks used.
 
@@ -103,27 +266,31 @@ In conclusion, we have demonstrated that spatial topography of functional region
 
 ## Materials and methods
 
-## Dataset
+### Dataset
 
 For this study, we used data from the Human Connectome Project S900 release (820 subjects with fully complete resting-state fMRI data, 452 male, mean age 28.8 ± 3.7 years old) (Van Essen et al., 2013). Data were acquired across four runs using multiband echo-planar imaging (MB factor 8, TR = 0.72 s, 2 mm isotropic voxels) (Moeller et al., 2010; Uğurbil et al., 2013). Data were preprocessed according to the previously published pipeline that includes tools from FSL, Freesurfer, HCP’s Connectome Workbench, multimodal spatial alignment driven by myelin maps, resting state network maps, and resting state visuotopic maps (‘MSMAll’), resulting in data in the grayordinate coordinate system (Fischl et al., 1999; Glasser et al., 2013, 2016; Jenkinson et al., 2012; Marcus et al., 2013; Robinson et al., 2014; Smith et al., 2013a). ICA-FIX-cleanup was performed on individual runs to reduce structured noise (Griffanti et al., 2014; Salimi-Khorshidi et al., 2014). ICA-FIX achieves 99% sensitivity and 99% specificity on HCP data when compared to manual classification by trained raters (Smith et al., 2013a). Only subjects with the full 4800 resting state timepoints (4 scans of 1200 TRs each) were included for the analyses performed in this work. A detailed overview of quality assessment in the Human Connectome Project was previously published (Marcus et al., 2013).
 
-## Data availability
+### Data availability
 
 HCP data are freely available from https://db.humanconnectome.org. The version of MSMAll that is compatible with the approach implemented for the alignment of HCP data can be found here: http://www.doc.ic.ac.uk/~ecr05/MSM_HOCR_v2/ (Robinson et al., 2017). Matlab code used in this work can be found here: https://github.com/JanineBijsterbosch/Spatial_netmat (Bijsterbosch, 2017; copy archived at https://github.com/elifesciences-publications/Spatial_netmat). Data from many figures in this study is freely available at https://balsa.wustl.edu/study/show/kKM0.
 
-## Inferring functional modes
+### Inferring functional modes
 
-In order to obtain estimates of the spatial shape and size of functional networks for every subject, we decompose the HCP data into a set of probabilistic functional modes (PFMs) via the PROFUMO algorithm (Harrison et al., 2015). A set of M PFMs describe each subject’s data (G grayordinates; T time points; Ds∈RV×T) in terms of a set of subject-specific spatial maps (Ps∈RV×M), amplitudes (hs∈RM) and timecourses (As∈RM×T), all of which are linked via the outer product model:(1)Ds = Ps * diag(hs) * As + ε
+In order to obtain estimates of the spatial shape and size of functional networks for every subject, we decompose the HCP data into a set of probabilistic functional modes (PFMs) via the PROFUMO algorithm (Harrison et al., 2015). A set of $M$ PFMs describe each subject’s data ($G$grayordinates; $T$ time points; $D_{s}\inR^{V\timesT}$) in terms of a set of subject-specific spatial maps ($P_{s}\inR^{V\timesM}$), amplitudes ($h_{s}\inR^{M}$) and timecourses ($A_{s}\inR^{M\timesT}$), all of which are linked via the outer product model:
+
+$$
+D_{s}=P_{s}*diag(h_{s})*A_{s}+\epsilon
+$$
 
 These subject-specific decompositions are linked by a set of hierarchical priors. In the spatial domain, the group-level parameters encode the grayordinate-wise means, variances and sparsity of the subject maps, while in the temporal domain, the group-level priors constrain the subject-level network matrices (note that the component amplitudes and hierarchical priors are recent extensions to the PFMs model and were not included in the original PROFUMO paper [Harrison et al., 2015]). The PROFUMO framework gives us sensitive estimates of key subject-level parameters, while ensuring that there is direct correspondence between PFMs across subjects.
 
 PROFUMO was run on the rfMRI data from all 820 subjects with a dimensionality of 50 PFMs. Importantly, the signal-subspace of any given subject’s dataset can be straightforwardly reconstructed from a set of modes via equation [1], and this can be used to generate the simulated data as described below.
 
-## Canonical correlation analysis (CCA)
+### Canonical correlation analysis (CCA)
 
 For the ICA decompositions, amplitudes were estimated for each subject and component as the temporal standard deviation of the timeseries obtained from stage 1 of a dual regression analysis. Full and regularised partial correlation matrices were also calculated from these timeseries. The Tikhonov regularisation rho used during estimation of the partial correlation matrices was set to 0.01 for the ICA 25, 200 and PFM data (according to previous optimisation results). For high-dimensional parcellations (Yeo and HCP_MMP1.0), the rho was optimised by finding the maximum correlation between subject and group-average (using rho = 0.01) network matrices across a range of rho (0.01:0.5), leading to rho = 0.03 for Yeo and rho = 0.23 for HCP_MMP1.0 results. Lastly, the subject spatial maps obtained from stage 2 of a dual regression analysis were used. Similarly, for the PROFUMO decomposition, the PFM amplitudes, subject spatial maps and timeseries were used. For the HCP_MMP1.0 spatial results, either group-level or subject-specific node parcellations were used (Hacker et al., 2013). The subject-specific parcellations contain missing nodes (parcels) in some subjects (Glasser et al., 2016). Hence, for partial network matrices, the rows and columns in the covariance matrix were set to the scaled group average prior to inverting the covariance matrix. In the resulting network matrices, the rows and columns relating to missing nodes were set to the group average (for both partial and full network matrices). Before performing CCA, missing nodes were accounted for by estimating the subject-by-subject covariance matrix one element at a time, ignoring any missing nodes for any pair of subjects. The nearest valid positive-definite covariance matrix was subsequently obtained using nearest SPD in Matlab (http://uk.mathworks.com/matlabcentral/fileexchange/42885-nearestspd), prior to performing singular value decomposition as described below.
 
-Each CCA analysis finds a linear combination of behavioural and life-factor measures (V) that is maximally correlated with a linear combination of rfMRI-derived measures (U) (Hotelling, 1936): Y*A=U ∼X*B=V. Y is the set behavioural measures, and X are the rfMRI-derived measures (i.e. spatial maps, or network matrices, or signal amplitudes), ~indicates that U and V are approximately equal. A and B are optimised such that the correlation between U and V is maximal. Summary measures from CCA include the correlation between (paired columns of) U and V, and the associated p-values (derived from permutation testing over n = 100,000 permutations) for the first one or more CCA modes.
+Each CCA analysis finds a linear combination of behavioural and life-factor measures (V) that is maximally correlated with a linear combination of rfMRI-derived measures (U) (Hotelling, 1936): $Y*A=U∼X*B=V$. Y is the set behavioural measures, and X are the rfMRI-derived measures (i.e. spatial maps, or network matrices, or signal amplitudes), ~indicates that U and V are approximately equal. A and B are optimised such that the correlation between U and V is maximal. Summary measures from CCA include the correlation between (paired columns of) U and V, and the associated p-values (derived from permutation testing over n = 100,000 permutations) for the first one or more CCA modes.
 
 To create the inputs to the CCA, a set of nuisance variables were regressed out of both the behavioural measures and the amplitudes, network matrices and spatial maps, as done in (Smith et al., 2015). Subject covariance matrices were subsequently estimated for the amplitudes, network matrices and for all spatial maps (by summing the covariance matrices of individual spatial maps). Then, a singular value decomposition was performed on the subject covariance matrices and the first 100 eigenvectors were entered into the CCA (against 100 eigenvectors obtained from behavioural variables as explained in Smith et al., 2015).
 
@@ -135,35 +302,35 @@ For visualisation and interpretation purposes, we created videos of the spatial 
 
 The two rfMRI parcellation methods included in Supplementary file 1b (HCP_MMP1.0 and PFM) explicitly aim to capture cross-subject variability in the spatial location of functional regions. The subject spatial maps estimated by both methods are strongly associated with cross-subject behavioural variability (when matching the sample size rU-V did not significantly differ, and subject weights of the strongest CCA results were moderately correlated rU-U = 0.55). Therefore, it is of interest to compare these results in more detail, to determine whether cross-subject variability is represented similarly for the two approaches. Furthermore, given that fractional surface area (the fraction of cortex occupied by each area in the multimodal HCP_MMP1.0 parcellation) was also strongly predictive of behaviour (Supplementary file 1b), we investigated the potential relationship between rfMRI-based PFM weights, multimodally defined cortical areal boundaries (HCP_MMP1.0 parcellation), and structural variation in fractional surface area. To this end, we averaged CCA subject weights obtained from two separate CCA results (PFM spatial maps - behaviour, and HCP_MMP1.0 spatial maps - behaviour). These averaged subject weights were subsequently correlated against fractional surface area, and against subject-specific PFM and HCP_MMP1.0 spatial maps (grayordinate-wise), to investigate which brain regions contribute strongly to the association with behaviour, and to compare these localised effects across methods/modalities.
 
-## Creating simulated data
+### Creating simulated data
 
 In order to create simulated datasets for each subject, we took the outer product between PFM spatial maps and timeseries. Compared with data that is completely simulated, this approach has the advantage of keeping many features in the data (such as the types of structured noise that are present, the signal-to-noise ratio, and the autocorrelation structure), while still achieving investigator control of specific aspects of interest. Data from each run (1200 time points) was processed separately through the simulation pipeline, including the following steps:
 
-## Timeseries processing
+#### Timeseries processing
 
-## Variance normalisation
+##### Variance normalisation
 
-Each original PFM subject timecourse was set to unit variance, and the variances were retained. vs=var(AsT); Bs=As*diag(vs-1/2)
+Each original PFM subject timecourse was set to unit variance, and the variances were retained. $v_{s}=var(A_{s}^{T});B_{s}=A_{s}*diag(v_{s}^{-1/2})$
 
-## Whitening
+##### Whitening
 
-The ZCA whitening transform (Bell and Sejnowski, 1997) was used to remove any correlations between timeseries: Zs=cov(Bs)-1/2; Cs=Bs*Zs
+The ZCA whitening transform (Bell and Sejnowski, 1997) was used to remove any correlations between timeseries: $Z_{s}=cov(B_{s})^{-1/2};C_{s}=B_{s}*Z_{s}$
 
-## Network matrix application
+##### Network matrix application
 
-Timeseries were modified such that the induced correlation matched a pre-specified structure.: Ds=Cs*α. In the simulations that use a fixed group network matrix, this pre-specified correlation structure was estimated by projecting the S900 group average HCP dense connectome (following Wishart Rolloff) onto the group PFM spatial maps.
+Timeseries were modified such that the induced correlation matched a pre-specified structure.: $D_{s}=C_{s}*\alpha$. In the simulations that use a fixed group network matrix, this pre-specified correlation structure was estimated by projecting the S900 group average HCP dense connectome (following Wishart Rolloff) onto the group PFM spatial maps.
 
-## Restore variances
+##### Restore variances
 
-At this stage, the variances of the original timeseries are restored Es=Ds* diag(vs1/2). This gives a set of simulated timeseries Es which have all the same properties as the reference timeseries (As), except for their correlation structure.
+At this stage, the variances of the original timeseries are restored $E_{s}=D_{s}*diag(v_{s}^{1/2})$. This gives a set of simulated timeseries $E_{s}$ which have all the same properties as the reference timeseries ($A_{s}$), except for their correlation structure.
 
-## Pseudo-PFM generation
+##### Pseudo-PFM generation
 
-We modify the inferred PFMs by selectively setting some of the parameters to their group averages. For example, if we set Ps^=Pg, where Pg is the mean over all 820 subject maps, then we can eliminate any spatial variability across subjects. Similarly, we can set the temporal correlations to a fixed group mean using the procedure described above to remove any variability in FC across subjects. In order to remove amplitude variability across subjects, we add in group averaged variances instead of the subject variances. These simulated PFMs are then described by the simulated maps, amplitudes and timeseries, namely P^s, h^s and A^s.
+We modify the inferred PFMs by selectively setting some of the parameters to their group averages. For example, if we set $P_{s}^=P_{g}$, where $P_{g}$ is the mean over all 820 subject maps, then we can eliminate any spatial variability across subjects. Similarly, we can set the temporal correlations to a fixed group mean using the procedure described above to remove any variability in FC across subjects. In order to remove amplitude variability across subjects, we add in group averaged variances instead of the subject variances. These simulated PFMs are then described by the simulated maps, amplitudes and timeseries, namely $P^_{s}$, $h^_{s}$ and $A^_{s}$.
 
-## Data reconstruction
+##### Data reconstruction
 
-Finally, the full data can be reconstructed as per [1]: D^s = P^s∗ diag(h^s) ∗ A^s + ε. Spatio-temporally white-noise (with variance matched to the original data) is added to the activity described by the simulated modes to give a dataset that preserves the properties of the original data, but, crucially, one where we have direct control over where in the model subject variability can appear.
+Finally, the full data can be reconstructed as per [1]: $D^_{s} = P^_{s}∗ diag(h^_{s}) ∗ A^_{s} + \epsilon$. Spatio-temporally white-noise (with variance matched to the original data) is added to the activity described by the simulated modes to give a dataset that preserves the properties of the original data, but, crucially, one where we have direct control over where in the model subject variability can appear.
 
 Once the simulated data is generated for each run, we extracted timeseries from both the simulated and original data using two different approaches that are commonly adopted in the literature. Dual regression analysis was performed using the group ICA maps that were estimated using the (original) HCP group data, and that are freely available with the S900 data release (www.humanconnectome.org). Two dimensionalities were tested, so for each simulated dataset dual regression was performed against 25 and against 200 group ICA components. The timecourses estimated in stage 1 of the dual regression analysis were used to compute network matrices (Filippini et al., 2009; Nickerson et al., 2017). Mean timeseries were also extracted from a set of 108 binary regions of interest (ROIs) based on the Yeo parcellation, and from the HCP_MMP1.0 group parcellations and individual subject parcellations (Glasser et al., 2016). The 108 Yeo ROIs were obtained from the 17-network parcellation (Yeo et al., 2011), by separating each of the 17 networks into individual contiguous regions that had a surface cluster area of at least 20 mm2. Timecourses were used to estimate full and regularised partial correlation network matrices using FSLnets (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLNets). Z-transformation was applied to the network matrices before further comparisons. The network matrices derived from simulated data are compared against network matrices calculated from the original data as described below.
 
@@ -173,14 +340,14 @@ Secondly, the subject-by-subject correlation matrix was estimated from the subje
 
 The last test of the simulated network matrices was to perform a CCA against the set of behavioural and life-factor measures (Smith et al., 2015). A CCA was performed on the simulated network matrices against the subject behavioural measures as described below. To assess the CCA results, we report the correlation between U and V (for the first, strongest mode of population covariation), the associated permuted p-value (n = 100,000 permutations, respecting family structure), and the maximum correlation between any of the simulated U and the first U obtained when using the original ICA 200 dimensionality partial network matrices describing the positive-negative mode of covariation (Smith et al., 2015).
 
-## Simulations with further spatial map modulations
+### Simulations with further spatial map modulations
 
 The PFM subject spatial maps contain a relatively complex set of information. This may include relative differences in amplitude in different brain regions that are part of the same mode, which effectively reflect connectivity rather than spatial shape and size. In order to exclude these potential connectivity-related aspects of the spatial maps and isolate the role of spatial shape, we simplified the spatial maps for some of the simulations presented. For this, the spatial maps were thresholded at a very liberal threshold of 1 (arbitrary units specific to the PFM algorithm) and binarised. The sign was retained such that grayordinates in the subject PFM maps with values > 1 were set to one and grayordinates with values <-1 were set to −1 and all others to zero. A liberal threshold was purposefully used as we wanted to retain extended (broad, low) shape information, and just remove any information encoded in the (relative) grayordinate amplitudes. Using a fixed threshold across subjects retains cross-subject variability in the size of networks. To further remove this source of information and focus purely on the shape of networks, we applied a percentile threshold such that the size of networks is fixed across subjects (grayordinates >95th percentile set to one and grayordinates <5th percentile set to −1, leading to each individual PFM map having the same size of 4564 1s and 4564 –1s across all subjects). The results of simulations where the maps were modulated in this way prior to calculating the simulation’s space-time outer product are presented in Supplementary file 1e, including results for which the maps were both thresholded and binarised, percentile thresholded and binarised, and also results for maps that were thresholded (at 1) but not binarised.
 
-## Comparing cross-subject similarities between different types of imaging measures
+### Comparing cross-subject similarities between different types of imaging measures
 
 Given that variability between subjects is of primary interest in rfMRI research, this analysis aimed to directly compare the cross-subject variability present in a range of measures obtained from the original data. Between-subject correlation matrices were calculated from network matrices (ICA25, ICA200 and PFM50), from PFM amplitudes and from spatial maps (ICA25 and ICA200 dual regression stage two spatial maps, and PFM50 spatial maps). These subject by subject correlation matrices were reshaped after discarding the diagonal, and full and partial correlations were calculated between the subject correlation matrices (Figure 4—figure supplement 1).
 
-## Unique contribution of topography versus coupling
+### Unique contribution of topography versus coupling
 
 To obtain a basis set of spatial maps based on task contrast data, we performed a spatial ICA (with a dimensionality of 15) on the concatenated group-averaged task contrast maps (a total of 86 maps, 47 of which are unique). The ICA dimensionality was determined based on the proportion variance explained in the PCA data reduction step (99.0% for d = 15). Spatial ICA was performed on the group-average task contrasts maps to avoid the correspondence problem that would arise if ICA were applied separately to individual subject task contrast maps. This resulted in a set of ICA weights (15*86), which describe the contribution of each task contrast map to each extracted ICA component. The outer product of these weights with either the group-averaged contrast maps or the corresponding subject-specific contrast maps was used to obtain maps to drive subsequent dual regression analysis. Dual regression analysis (driven by either group-averaged or subject-specific task basis maps after normalising the maximum of each subject and component map to 1) was run against subject resting state data to obtain timeseries and maps. CCA against behaviour was performed separately on the resulting network matrices and spatial maps as described above. Additionally, partial CCA was performed to determine the unique information contained in network matrices and in spatial maps. For this, any variance explained by network matrices was regressed out of the spatial maps and vice versa (i.e. was ‘partialled out’), before running the ‘partial CCA’. Specifically, the 100 eigenvectors used as the input matrix to the CCA (as explained above and following [Smith et al., 2015]) for partial network matrices were regressed out of the 100 eigenvectors for the spatial maps before running CCA, or conversely the 100 eigenvectors for spatial maps were regressed out of the 100 eigenvectors for the network matrices before running CCA.

@@ -38,29 +38,53 @@ While the results obtained in the human system support a model in which human Fc
 
 ## Results
 
-## The human immune system ameliorates lyme arthritis in humanized mice
+### The human immune system ameliorates lyme arthritis in humanized mice
 
 To study human FcγRIIb function in vivo, we chose a humanized mouse model of Lyme borreliosis. In humans and select mouse strains, such as severe combined immunodeficient (SCID) mice, an infection with Borrelia burgdorferi (B. burgdorferi) triggers an inflammatory response (Lyme arthritis) caused by spirochete lipoproteins (Barthold et al., 1990; Schaible et al., 1989; Steere and Glickstein, 2004). If a treatment with antibiotics early after infection is not initiated or fails, this represents a major health issue. Based on previous studies in inbred mouse model systems, it has been suggested that the humoral immune system and especially the early T-cell-independent IgM and IgG3 response plays a critical role in controlling B. burgdorferi spread (Barthold et al., 1996; Barthold et al., 2006; Fikrig et al., 1997; LaRocca and Benach, 2008; McKisic and Barthold, 2000). Furthermore, non-obese diabetic (NOD)/SCID/γc-/- (NSG) mice transplanted with a human immune system were shown to develop a relapsing fever phenotype upon infection with Borrelia hermsii similar to the human disease (Vuyyuru et al., 2011). These findings suggest that hematopoietic stem cell (HSC) humanized mice may provide a suitable model system to study whether human FcγRIIb controls pathogen and concomitant self-reactive immune responses during an infection with B. burgdorferi. To test if humanized NSG mice are able to respond to an infection with B. burgdorferi, humanized and non-humanized NSG mice were infected subcutaneously via needle injection in the right hind foot pad and followed for signs of Lyme disease, which is characterized by an initial unilateral arthritis in the ankle tissue of the infected side followed by systemic pathogen spread through the blood resulting in inflammation of the contralateral joint. As shown in Figure 1A and B both, non-humanized and humanized mice developed progressive inflammation starting in the infected (right foot) ankle joint followed by swelling of the contralateral non-infected (left foot) joint. If mice were humanized, however, joint inflammation of both paws was strongly delayed, suggesting that the human immune system participates in limiting pathogen burden. While one week after infection of humanized mice B. burgdorferi was still largely confined to the infected joint (and in about half of the animals detectable in the blood), two weeks after infection bacterial spread to the blood, heart and ears became detectable. Around 5 weeks after infection, B. burgdorferi was very prominent in skin (ears) and in the left foot (Figure 1C,D), consistent with the initiation of inflammation in the contralateral joint (Figure 1B). Concomitant with the infection, humanized mice developed a human IgM response directed against a variety of B. burgdorferi antigens including p39 and the outer surface protein C (OspC), which was comparable to the IgM response detectable in B. burgdorferi infected patients (Figure 1E). Furthermore, human and mouse immune cell infiltrates, consisting of mouse neutrophils and human myeloid cells, B cells, and CD4+ and CD8+ T cells could be detected in the joints of infected mice (Figure 2—figure supplements 1 and 2). Compared to the blood, especially T cells and B cells showed an activated phenotype, identified by increased expression of CD69 (Figure 2B,C,H,I,K,L). In contrast, no major change in serum complement C3 levels was observed during the course of infection (Figure 2—figure supplement 2B). In summary, these results suggest that cells of the human innate and adaptive immune system respond to the infection with B. burgdorferi and may help in limiting pathogen burden in humanized mice in vivo.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig1-v2.jpg)
 
-**Figure 1.:** B. burgdorferi infection.(A, B) Humanized and non-humanized mice were infected with B. burgdorferi and followed for signs of joint inflammation and pathogen spread. In (A) representative pictures of the hind limbs of non-humanized and humanized mice 28 days after infection are shown. (B) Time course of joint swelling (shown as joint thickness in mm) of the directly infected right (solid lines) and the left ankle joints of non-infected (w/o B.b.) and infected humanized (hum.) and non-humanized (non hum.) mice. Shown is the mean +/- SEM of 6–8 mice per group. Depicted is one representative out of three independent experiments. (C) Quantification of the pathogen load (flaB copy numbers per ml blood) by quantitative PCR in humanized mouse blood at the indicated time points after infection. The graph shows box and whisker plots, with whiskers indicating the minimum and maximum data points. The line in the box indicates the median, the upper and lower border of the box indicates the 25th and 75th percentile of the data points. In addition, the individual data points are depicted. Inset picture shows B. burgdorferi spirochetes (marked with a white arrow) in a blood smear; the white scale bar represents 10 µm. (D) Quantification of B. burgdorferi load in ears, heart, and joints at the indicated time points after infection of humanized mice by quantitative PCR (copies flaB/105 copies nidogen-1). The data is depicted as box and whisker plots (Tukey), with whiskers indicating the minimum and maximum data points. The line in the box indicates the median, the upper and lower border of the box indicates the 25th and 75th percentile of the data points. (E) Shown are representative western blots (detecting IgM) with immobilized B. burgdorferi antigens incubated with serum from humanized mice 35 days post-infection (hum. mice with B.b. infection) or of humanized mice not infected (hum. mice w/o B.b.) with B. burgdorferi. As a comparison serum samples from human patients with confirmed B. burgdorferi infection are depicted.
+**Figure 1.:** (A, B) Humanized and non-humanized mice were infected with B. burgdorferi and followed for signs of joint inflammation and pathogen spread. In (A) representative pictures of the hind limbs of non-humanized and humanized mice 28 days after infection are shown. (B) Time course of joint swelling (shown as joint thickness in mm) of the directly infected right (solid lines) and the left ankle joints of non-infected (w/o B.b.) and infected humanized (hum.) and non-humanized (non hum.) mice. Shown is the mean +/- SEM of 6–8 mice per group. Depicted is one representative out of three independent experiments. (C) Quantification of the pathogen load (flaB copy numbers per ml blood) by quantitative PCR in humanized mouse blood at the indicated time points after infection. The graph shows box and whisker plots, with whiskers indicating the minimum and maximum data points. The line in the box indicates the median, the upper and lower border of the box indicates the 25th and 75th percentile of the data points. In addition, the individual data points are depicted. Inset picture shows B. burgdorferi spirochetes (marked with a white arrow) in a blood smear; the white scale bar represents 10 µm. (D) Quantification of B. burgdorferi load in ears, heart, and joints at the indicated time points after infection of humanized mice by quantitative PCR (copies flaB/105 copies nidogen-1). The data is depicted as box and whisker plots (Tukey), with whiskers indicating the minimum and maximum data points. The line in the box indicates the median, the upper and lower border of the box indicates the 25th and 75th percentile of the data points. (E) Shown are representative western blots (detecting IgM) with immobilized B. burgdorferi antigens incubated with serum from humanized mice 35 days post-infection (hum. mice with B.b. infection) or of humanized mice not infected (hum. mice w/o B.b.) with B. burgdorferi. As a comparison serum samples from human patients with confirmed B. burgdorferi infection are depicted.
 
-## The humoral immune response is critical for controlling Borrelia burgdorferi burden
+![Figure 2.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig2-v2.jpg)
+
+**Figure 2.:** Shown is the effect of B. burgdorferi infection on the abundance (percentage of all human CD45+ cells) and activation status (CD69 expression) of human CD19+ B cells (A-C), CD33+ myeloid cells (D-F), CD4+ T cells (G-I), and CD8+ T cells (J-L) in the peripheral blood (PBL), spleen, and left and right joints 38 days after infection. Representative FACS plots showing the mean fluorescence intensity (MFI) of CD69 expression on B cells (B), myeloid cells (E), CD4 T cells (H) and CD8 T cells (K) are presented. Depicted are box and whisker plots including all data points. The line in the box indicates the median, the upper and lower border of the box indicates the 25th and 75th percentile of the data points. Whiskers extend to minimum and maximum data points. One representative out of three independent experiments with four mice per group is shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Shown is a representative gating strategy used to identify human immune cells in the peripheral blood of humanized mice. After excluding cell duplets, hCD45+ DAPI negative cells were pre-gated for subsequent analysis of T cells (CD3+), myeloid cells (CD33+) and B cells (CD19+). A similar gating strategy was used for human immune cell analysis in all other organs. (B) Depicted is a representative gating strategy used to analyze mouse immune cells in the spleen of humanized mice. After excluding cell duplets and dead cells, mouse immune cells were identified as mouse CD45+ cells. Neutrophils were identified via Ly6G expression, classical monocytes by high levels of CD62L expression and lack of FcγRIV expression (antibody clone 9E9), non-classical monocytes by lack of CD62L expression and high levels of FcγRIV expression, macrophages by high levels of F4/80 expression and eosinophils by a high sideward scatter (SSC) and intermediate to low levels of mouse CD45 expression.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Shown are box and whisker plots including individual data points representing the relative abundance of mouse eosinophils, neutrophils (Ly6G+), Ly6C+ monocytes (Ly6C+ mono.), and Ly6C-negative monocytes (Ly6C- mono.) in the spleen and joints of humanized mice 38 days after infection with B. burgdorferi. (B) Depicted is the serum complement C3 level as box and whisker plots including individual data points in humanized mice at the indicated timepoints before and after infection with B. burgdorferi.
+
+### The humoral immune response is critical for controlling Borrelia burgdorferi burden
 
 Next, we assessed if the B. burgdorferi-specific antibody response participates in limiting pathogen burden. To generate humanized mice selectively lacking human B cells, we depleted B cells with the CD20-specific antibody Rituximab starting 2 days before and during the first week of infection (Figure 3A; Lux et al., 2014). While this 1-week cycle of B cell depletion resulted in a long-term reduction of B cells in humanized mice without infection, in infected animals peripheral blood B cell counts started to increase after stopping Rituximab injection and reached pre-depletion levels within 3 weeks (Figure 3B). In contrast to the rapid recovery of peripheral blood B cells, the reduction of serum IgM and impaired production of B. burgdorferi-specific antibodies was maintained over 4 weeks and only started to recover around 5 weeks post B cell depletion therapy (Figure 3C,D). Of note, we also detected the initiation of autoreactive B cell responses against glucose 6-phosphate isomerase (GPI) and double-stranded DNA during the course of B. burgdorferi infection (Figure 3E,F). In parallel to the suppression of the B. burgdorferi-specific antibody response by Rituximab treatment, autoreactive antibody responses were diminished. With respect to pathogen control, the transient depletion of B cells resulted in a higher level of pathogen positive animals. Thus, 2 weeks after infection 60% of B cell depleted animals tested positive for B. burgdorferi in ear tissue, compared to only 30% of animals with a functional B cell compartment (Figure 3—figure supplement 1A,B). Moreover, the pathogen load in ears and in the heart was reduced compared to non B-cell depleted animals until the end of the experiment (Figure 3—figure supplement 1C,D). With respect to joint inflammation, the transient reduction in the humoral immune response resulted in a mild increase of joint swelling especially of the non-infected joint 4 to 5 weeks after infection (Figure 3G).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of the experimental strategy. B cells were depleted with a human CD20-specific antibody (α-CD20) injected 2 days before (d-2), at the day of infection (d0) and 4 and 7 days after infection with B. burgdorferi. PBS injection served as a control. (B) Shown is the percentage (mean +/- SEM) of human B cells (CD19+) among human leukocytes (CD45+) in the peripheral blood of humanized mice injected with PBS or a CD20-specific antibody in the absence (not infected) or presence (infected) of an infection with B. burgdorferi. Shown is one representative out of two independent experiments with six mice per group. (C–F) Depicted are the serum IgM levels (C), the B. burgdorferi- (D), glucose 6-phosphate isomerase (GPI)- (E), and double-stranded DNA (dsDNA)-specific (F) IgM responses (mean+/-SEM) in infected humanized mice treated with PBS or a CD20-specific antibody as determined by ELISA. Shown is one out of two independent experiments with n = 6 mice per group. A two-way Anova with Tukey’s or Sidak’s multiple comparison test was used for statistical evaluation. *p<0.05, **p<0.01, ns = not significant. (G) Shown is the joint thickness (mean+/-SEM) of the right and left hind ankle joint of humanized mice infected with B. burgdorferi and treated with PBS or a CD20-specific antibody (anti-CD20) during the first 7 days. A two-way Anova with Tukey’s multiple comparison test was used for statistical evaluation. n = 6–10 mice per group. *p<0.05. Shown is one representative out of three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Shown is an ethidium bromide stained agarose gel electrophoresis of a B. burgdorferi flagellin-specific nested PCR performed on ear tissue of humanized mice carrying the functional (232I, lanes 29–41) or non-functional (232T, lanes 1–7)) FcγRIIb alleles 2 weeks after infection with B. burgdorferi. Where indicated, humanized, infected mice were injected with B cell (α-CD20, lanes 19–28) and CD4 T cell (α-CD4, lanes 8–18) specific antibodies to deplete the respective immune cell subsets. In the first and last lanes, a size standard (std; 100 base pair ladder) was loaded. In lanes 42–43, a sample of a previous positively tested non-humanized infected mouse sample (NSG), a positive control (PK) (B. burgdorferi positive tick lysate) and a negative control (NK) were loaded as controls. (B) Presented is a table summarizing the effect of FcγRIIb alleles and B cell or CD4 T cell depletion on B. burgdorferi infection in humanized mice, including the number of positively tested animals and the calculated percentage values (in brackets). (C, D) Shown are box and whisker plots depicting the pathogen load (B. burgdorferi flaB copy numbers normalized to mouse nidogen-1 copy numbers) in ears (C) and hearts (D) of infected humanized mice treated with an isotype control (Iso) or CD20-specific antibody (α-CD20) (as described in Figure 3A) at the indicated timepoints after infection with B. burgdorferi. n = 5–7 mice per group. An unpaired Student’s t-test was used to evaluate statistical significance. *p<0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Shown is a representative example of a FACS analysis detecting FcγRIIb expression on human dendritic cells in the spleen of humanized mice using CD45, CD33, CD11c, CD4, and FcγRIIb (using the 2B6 antibody clone) as markers. To distinguish FcγRIIb staining from background fluorescence the sample was split and stained with all the indicated markers with the exception of FcγRIIb staining (marked as unstained in the upper panel). (B) Depicted is the percentage (mean+/-SEM) of human CD4+ T cells within human CD3+ cells in the peripheral blood of humanized mice continuously treated with a CD4-specific antibody. n = 6 mice per group. (C) Shown is the B. burgdorferi-specific antibody IgM response (mean+/-SEM) in humanized mice treated with PBS or a CD4-specific antibody as determined by ELISA. n = 6 mice per group.
+
 Antibody responses may be either triggered via T-cell-dependent or T-cell-independent pathways. Indeed, FcγRIIb is also expressed on human dendritic cells (DC) present in the spleen of humanized mice (Figure 3—figure supplement 2A). Thus, an impaired FcγRIIb activity on DCs may also result in a more efficient T helper cell priming and a more pronounced antibody response. To determine if CD4+ T cells were critical for the B. burgdorferi-specific antibody response in humanized mice, we depleted this T cell subset with a CD4-specific antibody during the entire experiment. While this resulted in a strong reduction of CD4 T cells throughout the experiment, it had no impact on the production of pathogen-specific IgM antibodies, suggesting that mostly T cell independent antibody responses were critical for controlling B. burgdorferi infection in humanized mice (Figure 3—figure supplement 2B,C). In addition to and in agreement with a previous study, CD4+ T cell depletion neither had an impact on progression of arthritis (not shown) (Lasky et al., 2016) nor on pathogen load (Figure 3—figure supplement 1A,B). Altogether, this set of experiments suggests that the early T-cell-independent humoral immune system plays an important role in limiting B. burgdorferi replication and pathogen induced pathology in humanized mice.
 
-## Human FcγRIIb regulates the quality and quantity of the pathogen-specific human humoral immune response
+### Human FcγRIIb regulates the quality and quantity of the pathogen-specific human humoral immune response
 
 After having established that the human humoral immune response is involved in controlling early B. burgdorferi infection, we next assessed if the inhibitory FcγRIIb plays a role in controlling the quality and quantity of the humoral immune response. To study this, we generated humanized mouse colonies homozygous either for the functional (FcγRIIb-232I) or the non-functional FcγRIIb allele (FcγRIIb-232T), by reconstituting NSG mice with human hematopoietic stem cells (HSC) from donors homozygous for the respective FcγRIIb alleles. Four months after HSC transplantation, both mouse colonies were infected with B. burgdorferi and analyzed in parallel with respect to the pathogen-induced immune response and the development of joint inflammation. As demonstrated in Figure 4A and B, humanized mice with the non-functional FcγRIIb allele showed a clearly detectable expansion of CD138+ plasma blasts in the blood, whereas plasma blasts did not increase in mice with the functional FcγRIIb allele. Moreover, plasma blast expansion in humanized mice with the non-functional FcγRIIb allele occurred in two separate waves peaking at 1 and 4 weeks after infection (Figure 4B). In line with the increased level of plasma blasts in FcγRIIb-232T humanized mice, a stronger increase in serum IgM and B. burgdorferi-specific IgM responses was detectable in these animals (Figure 4C,D). In line with the stronger humoral immune response, pathogen load in ears was reduced in FcγRIIb-232T humanized mice 2 weeks after infection (Figure 3—figure supplement 1A,B) and this reduced pathogen burden was maintained until the end of the experiment (day 35 after infection) (Figure 4E,F). However, compared to the functional FcγRIIb allele, a stronger development of self-reactive antibodies directed against double stranded DNA and GPI could be observed in humanized mice with the non-functional FcγRIIb-232T allele (Figure 4G,H). In summary, these results suggest that FcγRIIb function is critical to limit the production of autoreactive antibodies during an immune response against B. burgdorferi.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig4-v2.jpg)
 
-**Figure 4.:** B. burgdorferi infection.(A) Shown are representative dot plots of CD19+CD138+ plasma blasts (marked by red squares including the respective percentage of CD19+CD138+ cells within the population of CD19+ B cells) in the peripheral blood of humanized mice homozygous for the non-functional (FcγRIIb-232T) or functional (FcγRIIb-232I) FcγRIIb allele before and 7 days after infection with B. burgdorferi as detected by flow cytometry. (B) Quantification of the abundance of CD19+CD138+ plasma blasts in the peripheral blood of humanized mice homozygous for the non-functional (FcγRIIb-232T) or functional (FcγRIIb-232I) FcγRIIb allele by FACS analysis at the indicated time points after infection. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation, a two-way Anova with a Bonferroni’s multiple comparisons test was used. *p<0.05, ****p<0.0001; ns indicates no significant difference. (C) Quantification of human IgM levels in sera of humanized mice homozygous for functional (FcγRIIb-232I) and non-functional (FcγRIIb-232T) FcγRIIb alleles at the indicated timepoints after B. burgdorferi infection. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation, a two-way Anova with a Bonferroni’s multiple comparisons test was used. ***p<0.0005; (D) Shown is the B. burgdorferi specific IgM response (OD) at the indicated time points after infection of humanized mice homozygous for functional (FcγRIIb-232I) and non-functional (FcγRIIb-232T) FcγRIIb alleles. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation, a two-way Anova with a Bonferroni’s multiple comparisons test was used. *p<0.05; **p<0.005. (E, F) Quantification of the pathogen load (B. burgdorferi flaB copy numbers normalized to mouse nidogen-1 copy numbers) in ankle joints (left joint, L; right joint, (R) (E) and ears (F) of infected humanized mice homozygous for the functional FcγRIIb-232I (232I) or non-functional FcγRIIb-232T (232T) allele by quantitative PCR 35 days after infection with B. burgdorferi. n = 5–6 mice per group. A two-way Anova test was used to evaluate statistical significance. *p<0.05. (G, H) Detection of glucose 6-phosphate isomerase (GPI) (G) and DNA-specific (H) human IgM responses during the course of B. burgdorferi infection in humanized mice homozygous for the functional (FcγRIIb-232I) or non-functional (FcγRIIb-232T) FcγRIIb alleles. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation a two way Anova with a Bonferroni’s multiple comparisons test was used. *p<0.05.
+**Figure 4.:** (A) Shown are representative dot plots of CD19+CD138+ plasma blasts (marked by red squares including the respective percentage of CD19+CD138+ cells within the population of CD19+ B cells) in the peripheral blood of humanized mice homozygous for the non-functional (FcγRIIb-232T) or functional (FcγRIIb-232I) FcγRIIb allele before and 7 days after infection with B. burgdorferi as detected by flow cytometry. (B) Quantification of the abundance of CD19+CD138+ plasma blasts in the peripheral blood of humanized mice homozygous for the non-functional (FcγRIIb-232T) or functional (FcγRIIb-232I) FcγRIIb allele by FACS analysis at the indicated time points after infection. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation, a two-way Anova with a Bonferroni’s multiple comparisons test was used. *p<0.05, ****p<0.0001; ns indicates no significant difference. (C) Quantification of human IgM levels in sera of humanized mice homozygous for functional (FcγRIIb-232I) and non-functional (FcγRIIb-232T) FcγRIIb alleles at the indicated timepoints after B. burgdorferi infection. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation, a two-way Anova with a Bonferroni’s multiple comparisons test was used. ***p<0.0005; (D) Shown is the B. burgdorferi specific IgM response (OD) at the indicated time points after infection of humanized mice homozygous for functional (FcγRIIb-232I) and non-functional (FcγRIIb-232T) FcγRIIb alleles. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation, a two-way Anova with a Bonferroni’s multiple comparisons test was used. *p<0.05; **p<0.005. (E, F) Quantification of the pathogen load (B. burgdorferi flaB copy numbers normalized to mouse nidogen-1 copy numbers) in ankle joints (left joint, L; right joint, (R) (E) and ears (F) of infected humanized mice homozygous for the functional FcγRIIb-232I (232I) or non-functional FcγRIIb-232T (232T) allele by quantitative PCR 35 days after infection with B. burgdorferi. n = 5–6 mice per group. A two-way Anova test was used to evaluate statistical significance. *p<0.05. (G, H) Detection of glucose 6-phosphate isomerase (GPI) (G) and DNA-specific (H) human IgM responses during the course of B. burgdorferi infection in humanized mice homozygous for the functional (FcγRIIb-232I) or non-functional (FcγRIIb-232T) FcγRIIb alleles. Shown are mean values +/- SEM of one representative out of two independent experiments with n = 7–12 mice per group. For statistical evaluation a two way Anova with a Bonferroni’s multiple comparisons test was used. *p<0.05.
 
-## Correlation between the induction of pathogen-specific and autoreactive immune responses in humanized mice and humans
+### Correlation between the induction of pathogen-specific and autoreactive immune responses in humanized mice and humans
 
 To determine if the induction of protective and autoreactive immune responses over time coincided in individual mice carrying the functional (232I) or non-functional (232T) FcγRIIb alleles, we plotted the concentration of serum IgM against IgM reactivity against B. burgdorferi, double-stranded DNA and glucose 6-phosphate isomerase (Figure 5). This analysis confirmed that the induction of increased serum IgM levels in humanized mice upon B. burgdorferi infection coincided with the appearance of pathogen specific but also self-reactive immune responses (Figures 5A,B and 4G,H). When further plotting B. burgdorferi-specific immune responses of individual mice against DNA and GPI-specific autoantibody responses a clear correlation between the induction of B. burgdorferi and GPI-specific antibody responses became evident across all time points and levels of reactivity, while only those animals producing the highest levels of pathogen-specific antibodies also produced antibodies directed against DNA (Figure 5C,D).
 
@@ -72,7 +96,7 @@ To test if a similar correlation between pathogen specific and autoreactive B ce
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55319/elife-55319-fig6-v2.jpg)
 
-**Figure 6.:** B. burgdorferi-specific and autoreactive antibody responses in humans.Shown is the correlation of serum IgM (µg/ml), glucose 6-phosphate (OD), and DNA specific (OD) IgM responses with B. burgdorferi specific IgM responses in healthy donors (n = 11) (A) and a cohort of patients with confirmed B. burgdorferi (n = 17) (B) infections. Graphs include all datapoints and the linear regression curve (red line) and error bar lines (depicting the SEM as black dotted lines). After testing for normal distribution of the individual data sets with a D’Agostino and Pearson normality test, the statistical evaluation for a correlation between the two parameters was performed with a Pearson’s correlation test. Pearson’s r, r2 and p values are indicated within each graph.
+**Figure 6.:** Shown is the correlation of serum IgM (µg/ml), glucose 6-phosphate (OD), and DNA specific (OD) IgM responses with B. burgdorferi specific IgM responses in healthy donors (n = 11) (A) and a cohort of patients with confirmed B. burgdorferi (n = 17) (B) infections. Graphs include all datapoints and the linear regression curve (red line) and error bar lines (depicting the SEM as black dotted lines). After testing for normal distribution of the individual data sets with a D’Agostino and Pearson normality test, the statistical evaluation for a correlation between the two parameters was performed with a Pearson’s correlation test. Pearson’s r, r2 and p values are indicated within each graph.
 
 ## Discussion
 
@@ -84,39 +108,224 @@ In summary, our study revealed that the human inhibitory FcγRIIb is critical to
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Mice
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD3 PE/Cy7 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:300316</td>
+      <td>FACS (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD4 APC (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:357408</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD8a FITC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:301050</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD11c FITC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:301604</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human FcγRIIb PE (recombinant human IgG1-N297A)</td>
+      <td>in house</td>
+      <td>Clone 2B6</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD19 Brilliant Violet 510 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:302242</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD20 FITC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:302304</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD33 PE (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:303404</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD33 BV510 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:303422</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD45 APC/Fire750 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:304062</td>
+      <td>FACS (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD69 PerCP/Cy5.5 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:310926</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD138 PE/Cy7 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:356514</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse/human CD11b PerCP/Cy5.5 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:101228</td>
+      <td>FACS (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD45.1 PE (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:110707</td>
+      <td>FACS (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD45.1 Brilliant Violet 421 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:110732</td>
+      <td>FACS (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD62L PE/Cy7 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:104418</td>
+      <td>FACS (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse F4/80 APC/Fire 750 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:123152</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Gr-1 Brilliant Violet 510 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:108437</td>
+      <td>FACS (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Ly-6G FITC (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat.#:127606</td>
+      <td>FACS (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>9E9 Alexa647 (rabbit monoclonal)</td>
+      <td>Nimmerjahn et al., 2005</td>
+      <td>n/a</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD4 (for depletion) (mouse monoclonal)</td>
+      <td>BioXCell</td>
+      <td>Cat.#:BE0003-2</td>
+      <td>100 µg per injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD20 (for depletion) (recombinant mouse monoclonal)</td>
+      <td>Kao et al., 2015</td>
+      <td>In house</td>
+      <td>25 µg per injection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>NOD.Cg-Prkdc&lt;scid &gt; Il2rgtm1Wjl/Szj</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat.#:005557</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graph Pad Prism 7.03</td>
+      <td>GraphPad Software Inc, San Diego, CA, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Mice
 
 NOD.Cg-Prkdc<scid > Il2rgtm1Wjl/Szj (NSG) mice (The Jackson Laboratories) were held under specific pathogen-free (SPF) conditions in isolated ventilated cages (IVC) in the animal facility of the Friedrich Alexander University Erlangen-Nuremberg according to the rules and regulations of the German animal welfare law. All animal experiments were approved by the government of lower Franconia.
 
-## Human hematopoietic cord blood
+#### Human hematopoietic cord blood
 
 For humanization of NSG mice, human hematopoietic stem cells (HSC) were purified from cord blood. Cord blood samples were provided by the Women’s Hospital Fürth, Germany, and the Women’s hospital of the University Hospital Erlangen. Cord blood samples were collected anonymously with informed consent of the donor and the local ethical committee.
 
-## Human serum
+#### Human serum
 
 Human serum samples from patients with B. burgdorferi infection or from control individuals were collected with approved consent and were provided in an anonymous fashion by the Medical Department 3 of the University Hospital Erlangen (Rheumatology and Immunology, Prof. Dr. Thomas Harrer). While sera of 17 patients with B. burgdorferi infection were collected, the number of samples from healthy individuals was restricted to eleven samples due to ethical considerations.
 
-## Method details
+### Method details
 
-## Generation of humanized mice
+#### Generation of humanized mice
 
 Humanized mice were generated as described (Baerenwaldt et al., 2011). In brief, CD34+ HSCs were isolated from cord blood with the 'Direct CD34 Progenitor Cell Isolation Kit, human' (Miltenyi Biotec) according to the manufacturers instruction. Newborn NSG mice were irradiated with 1.4 Gy and 20,000–50,000 CD34+ HSCs were injected into the facial vein. Mice were analyzed after 12–16 weeks for the presence of human cells using an anti-human CD45 antibody (Biolegend, see key resource table). For the infection with B. burgdorferi, mice with more than 5% human cells containing B cells, T cells and myeloid cells were randomly allocated into experimental groups.
 
-## Isolation of genomic DNA and genotyping
+#### Isolation of genomic DNA and genotyping
 
 Genotyping of cord blood samples for FcγRIIb alleles was done as described before (Baerenwaldt et al., 2011). In brief, genomic DNA was isolated with the „QiaAmp DSP Blood Mini Kit “(Qiagen, Hilden) following the instructions of distributor. FcγRIIB genotyping was carried out with a two-step PCR protocol. Briefly, a 15 kb product was amplified using the Qiagen ‘LongRange PCR Kit’ (Qiagen) (Primers LongRange fwd: ctccacaggttactcgtttctaccttatcttac and LongRange rev: gcttgcgtggcccctggttctca) generating a 14.7 kb amplicon which was purified via gel electrophoresis and by using the Qiagen ‘Gel purification Kit’. This PCR product was used as a template for the nested PCR to amplify the transmembrane region (Primers R2Btm-fwd: aaggggagcccttccctctgtt and R2Btm-rev: gtggcccctggttctcagaa). Subsequently, the PCR product (2365 bp) was gel purified and sequenced (using the R2Bseq primer: aaggggagcccttccctctgtt).
 
-## Infection with B. burgdorferi
+#### Infection with B. burgdorferi
 
 The N40 isolate of B. burgdorferi was grown at 30°C in BSK-H medium containing 6% rabbit serum (Bio and Sell) and underwent fewer than five in vitro passages before inoculation. Spirochetes were enumerated with a cell counting chamber by phase contrast microscopy and diluted with sterile medium. Mice were inoculated subcutaneously with 5 × 105 bacteria in 50 µl of BSK-H into the right hind footpad.
 
-## Measurement of joint swelling
+#### Measurement of joint swelling
 
 The development of joint swelling as a correlate for arthritis, was monitored in a blinded fashion by measuring the thickness of both (infected and contralateral) tibiotarsal joints using a metric caliper (Kroeplin). Measurements were taken in the anterior-posterior orientation with extended ankles through the thickest part of the joint.
 
-## Determination of spirochete load in organs by quantitative PCR
+#### Determination of spirochete load in organs by quantitative PCR
 
 DNA was extracted from organs of infected mice using the QIAamp DNA Mini kit (Qiagen) according to the manufacturer’s instructions with the following modifications regarding the initial processing of individual samples:
 
@@ -132,50 +341,50 @@ Quantification of B. burgdorferi transcripts was conducted with the 7900HT Real-
 
 The amplification program consisted of the initial denaturation step at 95°C for 5 min and 40 cycles of denaturation at 95°C for 10 s, annealing at 60°C for 15 s and extension at 72°C for15 s. Fluorescence was measured at the end of each extension step. After each amplification, melting curves were acquired to determine the specificity of PCR products.
 
-## Detection of spirochetes in organs by conventional nested PCR
+#### Detection of spirochetes in organs by conventional nested PCR
 
 DNA was extracted from blood and ears as described for the real time PCR approach above. The flagellin B gene of Borrelia burgdorferi N40 was detected in organs by nested PCR followed by analysis of amplicons on an ethidium-bromide-stained agarose gel. 50 ng of purified DNA was used as a template in each reaction for the first PCR using the primers Flagellin-P1 (5’-CTGCTGGCATGGGAGTTTCT-3’) and Flagellin-P2 (5’-TCAATTGCATACTCAGTACT-3’). The amplification program consisted of the initial denaturation step at 94°C for 3 min and 35 cycles of denaturation at 94°C for 30 s, annealing at 51°C for 30 s, extension at 72°C for 60 s, and a final extension at 72°C for 10 min producing a 730 bp fragment. 3 µl of PCR product from the first reaction were used as template in a second PCR using primers Flagellin-P3 (5’-AAGGAATTGGCAGTTCAATC-3’) and Flagellin-P4 (5’-ACAGCAATAGCTTCATCTTG-3’). The amplification program consisted of the initial denaturation step at 94°C for 3 min and 35 cycles of denaturation at 94°C for 30 s, annealing at 58°C for 30 s, extension at 72°C for 30 s, and a final extension at 72°C for 10 min producing a 290 bp fragment. The reactions were performed using Platinum Taq DNA Polymerase PCR master mix (Invitrogen by Thermo Fisher Scientific) according to the manufacturer’s instructions. Band sizes were determined by a GeneRuler 100 bp DNA ladder (Thermo Fisher Scientific). A Borrelia burgdorferi-positive tick lysate was used as a positive control.
 
-## B cell depletion in humanized NSG mice
+### B cell depletion in humanized NSG mice
 
 To deplete B cells, 25 µg of the CD20 specific antibody Rituximab was injected at day −2, 0, 4 and 7 post infection. To analyze the efficacy of B cell depletion, peripheral blood was diluted 1:2 with PBS and PBMCs were isolated using density gradient centrifugation with Pancoll (PAN Biotech). PBMCs were stained with anti-human CD19 (BD) and anti-human CD3 (BD) antibodies and samples were analyzed with a FACS Canto II (BD). Analysis was performed using FlowJo software (Tristar).
 
-## CD4+ T cell depletion in humanized NSG mice
+### CD4+ T cell depletion in humanized NSG mice
 
 To deplete T cells, 100 µg of the human CD4-specific antibody OKT4 (BioXcell) was injected intraperitoneally 3, 2 and 1 days before B. burgdorferi infection and at 10, 17, 24 and 32 days after infection. The success of CD4 T cell depletion was monitored in the peripheral blood by FACS analysis.
 
-## Quantification of antibody responses by ELISA
+### Quantification of antibody responses by ELISA
 
 Sera of humanized mice were obtained by collecting blood from the retro-orbital plexus. Serum from control and B. burgdorferi infected humans was obtained by collecting venous blood in BD Vacutainer tubes at the Medical Department 3 of the University Hospital Erlangen. Serum samples were generally stored at −80°C until further use. For quantification of total serum IgM in humanized mice and humans the Bethyl ‘Human IgM ELISA Quantitation Kit’ (Biomol) were used according to the instructions of the manufacturer. OD was measured with 'VersaMax tunable microplate reader' (Molecular Devices) at 450 and 650 nm.
 
-## Detection of B. burgdorferi-specific antibodies
+### Detection of B. burgdorferi-specific antibodies
 
 For detection of B. burgdorferi-specific antibodies, ELISA plates were coated with B. burgdorferi ultrasonic lysate at 5 µg/ml (0.5 µg/well) over night at 4°C. After washing, plates were blocked with PBS/3%BSA for 2 hr at room temperature, followed by removal of blocking solution and addition of sera from humanized mice or humans (1:100 dilution in PBS) for 30 min at room temperature. After washing three times with PBS, bound IgM was detected using the HRP coupled IgM-specific antibody from the Bethyl human IgM quantification kit or the human IgG-specific antibody from the Biomol human IgG quantification kit (both at a 1:10000 dilution in PBS/3%BSA). Antibodies against a predefined series of immunodominant proteins of B. burgdorferi sensu lato were measured using a commercial western blot approach in which purified recombinant B. burgdorferi antigens are coated on a membrane which is incubated with the sera of humanized mice (diluted 1:20), followed by detection of bound antibodies by human IgM-HRP coupled secondary antibodies.
 
-## Detection of dsDNA specific antibodies by ELISA
+### Detection of dsDNA specific antibodies by ELISA
 
 For the detection of anti-DNA antibodies, ELISA plates were coated with 10 µg/ml methylated BSA (Sigma) in PBS for 2 hr at room temperature. After washing, the plates were coated with 50 µg/ml calf thymus DNA (Sigma) in PBS at 4°C overnight. Blocking of unspecific binding was performed with PBS/0.1% Gelatine/3% BSA/1 mM EDTA for 2 hr at RT. Sera were diluted 1:100 in the blocking solution and incubated for 1 hr at room temperature. After three washing steps with PBS, an HRP-conjugated IgM-specific antibody (from the Bethyl human IgM Quantitation Kit) was used at a dilution of 1:10,000 (in blocking solution) for detection. After an incubation for 1 hr at room temperature, plates were washed three times with PBS and bound antibody was detected with TMB Solution (from the Bethyl human IgM Quantitation Kit). The reaction was stopped with 6% orthophosphoric acid.
 
-## Detection of GPI-specific antibodies by ELISA
+### Detection of GPI-specific antibodies by ELISA
 
 Elisa plates were coated with 100 µl of a 5 µg/ml glucose 6-phosphate isomerase (GPI) stock solution in PBS at 4°C over night. After three washing steps with PBS, blocking was performed with 100 µl of PBS/3% BSA for 1 hr at room temperature. After removal of the blocking solution, sera were added at a 1:100 dilution in PBS/3% BSA and incubated for 1 hr at room temperature. After three washing steps with PBS, the detection antibody (from the Bethyl human IgM Quantitation Kit) was used at a 1:10,000 dilution in PBS/3% BSA for 1 hr at RT. Detection of bound human antibodies was performed as described for the anti-DNA ELISA.
 
-## Detection of mouse complement C3
+### Detection of mouse complement C3
 
 Elisa plates were coated with 100 µl of a 1:1000 dilution of goat anti-mouse complement C3 (Cappel laboratories, distributed by MP Biomedicals) in Carbonate-Bicarbonate Buffer (Sigma) at 4°C overnight. After three washing steps with PBS, blocking was performed with 200 µl of PBS/3% BSA for 1 hr at room temperature. After removal of the blocking solution, sera were added at a 1:300 dilution in PBS/1% BSA and incubated for 1 hr at room temperature. After three washing steps with PBS, the HRP conjugated detection antibody (goat anti-mouse complement C3 from Cappel laboratories) was used at a 1:10,000 dilution in PBS/1% BSA for 1 hr at RT. Detection of bound human antibodies was performed as described for the anti-DNA ELISA.
 
-## Detection of B. burgdorferi-specific humoral immune responses via western blot
+### Detection of B. burgdorferi-specific humoral immune responses via western blot
 
 Antibodies against a series of conserved B. burgdorferi proteins were measured using a commercial western blot approach (RecomLine Borrelia IgM kit, Mikrogen, Neuried, Germany) according to the instructions of the manufacturer. Sera of humanized mice and humans we used at a dilution of 1:20 in the supplied sample dilution buffer and bound antibodies were detected by using the provided human IgM-HRP coupled secondary antibody.
 
-## Enzymatic isolation of joint and spleen cells for FACS analysis
+### Enzymatic isolation of joint and spleen cells for FACS analysis
 
 After excision of joints and complete removal of skin and muscle tissue, joints were cut into small pieces and incubated for 2 hr in 1.5 ml Collagenase D (1 mg/ml in HBSS) at room temperature. Every 30 min, the incubation was mixed thoroughly by vortexing. After the incubation 2 ml of RPMI 1640 medium was added and the cell suspension was filtered through a 70 µM cell strainer, followed by pelleting the cells at 1400 rpm for 5 min at room temperature. For subsequent FACS analysis, the cell pellet was re-suspended in 150 µl FACS buffer (PBS/2% FCS, 0.02% sodium azide).
 
-## Flow-cytometric analysis of human leukocyte populations
+### Flow-cytometric analysis of human leukocyte populations
 
 Flow cytometric measurements were performed on single-cell suspensions of blood, spleen and joint cells using a FACS Canto II (BD Biosciences, San Jose, CA). Fifteen minutes prior to staining with fluorochrome-coupled antibodies, the cells were incubated on ice for 10 min with Fc-block (anti-FcRγIII/FcγRIV, clone 2.4G2; 10 µg/ml) in FACS buffer (PBS/2% FCS, 0.02% sodium azide) to prevent unspecific binding to Fc receptors. All antibody stainings were carried out at 4°C in FACS buffer. Data acquisition and analysis was performed with the FACS Diva software (BD Biosciences, San Jose, CA, USA). A complete list of antibodies can be found in the key resources table. Representative gating strategies for analyzing mouse and human immune cell subpopulations are shown in Figure S1.
 
-## Statistical analysis
+### Statistical analysis
 
 All data are means ± standard error of the mean (SEM). Graphs and statistical analysis were performed using GraphPad Prism 7.03 software (GraphPad Software Inc, San Diego, CA). All samples were tested for Gaussian distribution. Two-way analysis of variance (ANOVA) was used for comparison of multiple groups. If samples were not normally distributed, the Mann-Whitney-test was used for comparing two groups of samples or the Kruskal-Wallis-test was used respectively for comparing multiple groups. For linear regression analysis, a D’Agostino and Pearson normality test was performed to test for normal distribution, followed by a Pearson’s (normal data distribution) or Spearman’s (non-normal data distribution) test for correlation. A detailed description of statistical tests used for individual experiments can be found in the respective Figure legends.

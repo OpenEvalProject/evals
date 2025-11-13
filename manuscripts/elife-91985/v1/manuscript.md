@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02ymw8z06 Division of Plant Science and Technology, University of Missouri Columbia United States
+1. Division of Plant Science and Technology, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
 
 † Corresponding author
 
@@ -29,11 +29,19 @@ Growing evidence has shown that G4 structures exhibit a striking colocalization 
 
 ## Results
 
-## Genomic information, PAI patterns, and the presence of G4 structures in 89 reported pathogenic strains
+### Genomic information, PAI patterns, and the presence of G4 structures in 89 reported pathogenic strains
 
 A dataset of PAIs was compiled from 89 reported pathogenic strains of bacteria, encompassing 222 distinct types of PAIs. Pathogens exhibiting similar PAIs displayed closely clustered patterns on phylogenetic branches, such as LEE in E. coli strains (Figure 2A). Additional information, including the genome length (bp), G+C content (%), rRNA density, tRNA density, and PAI length (bp), was present and showed conserved patterns in the same species (Figure 2A; Supplementary file 1a). PAIs commonly exhibit mosaic-like patterns, exemplified by the presence of distinct PAIs like FPI in Francisella tularensis, SaPIbov in Staphylococcus aureus, and Hrp PAI in Xanthomonas campestris (Figure 2B). Many PAIs were present associated with tRNAs, such as the insertions of tRNAThr, tRNAPhe, and tRNAGly in E. coli strains (Figure 2B; Supplementary file 1b). The presence of PAIs distributes in similar genomic regions across different pathogens or strains, showing non-random patterns and functionally clustered. Employing the G4Hunter search algorithm, the study identified a total of 225,376 putative G4 sequences in these 89 pathogenic genomes (Supplementary file 1a). The heatmap also showed that the number of G4 structures was diverse in the pathogen genomes (Figure 2C).
 
-## Interaction between PAIs and G4 structures in different genomic features
+![Figure 2.](https://cdn.elifesciences.org/articles/91985/elife-91985-fig2-v1.jpg)
+
+**Figure 2.:** (A) Phylogenetic analysis of pathogen genomes based on 89 bacterial strains, showing the evolutionary relationships among species. Additional genomic information, including genome size, GC content, rRNA density, tRNA density, and PAI length, is provided. The same color indicates the same species. (B) Genomic location of specific PAIs in bacterial genomes, divided into ten regions. PAIs are represented by green triangles, and their names are indicated. The tRNA insertion sites are also marked. (C) Heatmap illustrating the relative abundance of G4 structures in bacterial genomes, divided into ten regions. Red indicates a higher relative abundance, while blue indicates a lower relative abundance. (D & E) Correlation analysis between the number of G4 structures, the frequency of G4 structures, and GC content in various genomic features, including the whole genome, genes, promoters, rRNA, and tRNA. R-squared and p-values were derived through linear regression analysis performed in GraphPad Prism.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91985/elife-91985-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** R-squared and p-values were derived through linear regression analysis performed in GraphPad Prism.
+
+### Interaction between PAIs and G4 structures in different genomic features
 
 The analysis of G4 structures across all pathogen species demonstrated a positive correlation between the number of G4 structures and the GC content in various genomic features, including the whole genome, gene, promoter, rRNA, and tRNA regions (Figure 2D). The frequency of G4 structures, measured as the frequency of predicted G4-forming sequences per 1000 base pairs (bp), also showed a positive correlation with the GC content across the analyzed genomic elements (Figure 2E). A G4 score of 1.4 and 1.6 consistently supported a positive correlation between the number and frequency of G4 structures and the GC content across diverse genomic features (Figure 2—figure supplement 1). Additionally, this study observed that the GC contents in the genome region were significantly higher compared to the corresponding PAIs region that was classified into five parts according to the genome datasets (Figure 3A–E). Nonetheless, this study noted a unique pattern in the frequency of G4 structures within diverse regions of the PAIs, particularly in regions with GC contents less than 30% and greater than 60%.
 
@@ -41,7 +49,7 @@ The analysis of G4 structures across all pathogen species demonstrated a positiv
 
 **Figure 3.:** (A–E) Comparison of GC content (left panel) and GC frequency (right panel) between the genome and PAIs, categorized into five regions (20–30%, 30–40%, 40–50%, 50–60%, and 60–70%). */**/***/**** indicates significant difference (p<0.05/0.01/0.001/0.0001). (F) Evolutionary relatedness of 10 types of PAIs (categorized into six main categories) in E. coli strains. (G & H) Examples of G4 structures within PAIs in E. coli strains. The gray bar represents the virulence region, the red box indicates a virulence gene, the blue box represents an insertion site region or repeat, the green box denotes an integrase, the purple triangle indicates a tRNA insertion site, and the yellow triangle indicates an effector. (I &J) Functional annotation analysis of G4-covered genes within PAIs in two E. coli strains, including biological process (BP), cellular component (CC), and molecular function (MF) categories. (K) Hypotheses on the origin of G4 structures within PAIs, involving gene horizontal transfer mechanisms (conjugation, transduction, and transformation).
 
-## Putative functions of G4 structures in PAIs
+### Putative functions of G4 structures in PAIs
 
 The study used E. coli as an example to investigate the potential regulatory role and function of genes covered by G4 structures in PAIs. E. coli contains at least ten types of PAIs in different strains, and one of the well-known PAIs is LEE (Figure 3F), harboring genes responsible for causing attaching and effacing lesions (Franzin and Sircili, 2015; Jores et al., 2004). One stable G4 structure with a G4Hunter score of 1.6 was identified at position 37,085 in the LEE PAI of E. coli str. O103:H2 12009 (Figure 3G), located between an IS element and a tRNA insertion site. The tRNA region generally contains a higher G4 frequency compared with transfer-messenger RNA (tmRNA) and rRNA regions in the bacterial genome (Bartas et al., 2019). Interestingly, this G4 structure was found in E. coli str. O103:H2 12009 was present in close proximity to a tRNA region, suggesting a potential regulatory role of G4 structures in the tRNA gene, or upstream- and downstream-genes that are responsible for LEE virulence. Additionally, another stable G4 sequence with a score of 1.381 was discovered at position 12,457 in the E. coli str. CFT073 PAI II to provide more evidence of G4 in PAI regions (Figure 3H). Functional enrichment analysis was conducted to explore the putative functions of G4-covered genes in the two E. coli strains (Supplementary file 1c and d). The results revealed that the genes covered by G4 structures were predominantly involved in genetic information processes, including DNA binding, DNA integration, and nucleic acid metabolism processes (Figure 3I & J).
 
@@ -57,26 +65,26 @@ Overall, the conserved evolutionary relatedness of PAIs, the detection of stable
 
 ## Methods
 
-## Selection and extraction of DNA sequences
+### Selection and extraction of DNA sequences
 
 A total of 89 genomes corresponding to the identified pathogens from the Pathogenicity Island Database (PAIDB) were included in the study. The complete bacterial genomic DNA sequences and their corresponding annotation files in.gff and.fna formats were obtained from the Genome database of the National Center for Biotechnology Information (NCBI, https://www.ncbi.nlm.nih.gov/genome). To ensure the reliability and completeness of the dataset, only completely assembled genomes were included in the analysis. To avoid redundancy and incomplete sequences, one representative genome was selected for each species or strain. The selection of representative genomes was based on a careful examination of the supplementary material (Supplementary file 1a) accompanying the study. TBtools II (Toolbox for Biologists, RRID:SCR_023018, v2.042) (https://cj-chen.github.io/tbtools), a versatile bioinformatics tool with extensive applications in both eukaryotes and prokaryotes (Chen et al., 2020; Chen et al., 2023), was employed for extracting genomic sequences. This tool facilitated the retrieval of gene regions, promoters (2 kb upstream of the genes), tRNA regions, and rRNA regions from the selected genomes. PAI regions were downloaded following previously documented information in PAIDB (Supplementary file 1a and b). Default thresholds and parameters were applied during extraction to maintain consistency across all genomes.
 
-## Data process and detection of G4 structures in genomic features
+### Data process and detection of G4 structures in genomic features
 
 The G4Hunter algorithm, a widely used tool for G4 prediction, was employed for the identification of G4 motifs in the genomic sequences (Brázda et al., 2019). The G4Hunter parameters were set to a window size of ‘25’ and a G4 score threshold of 1.2, which ensured the identification of potential G4 sequences (Bartas et al., 2019; Brázda et al., 2020). The study additionally utilized G4 scores of 1.4 and 1.6 as a means of cross-verification for the results. The study quantified the predicted number of putative G4-forming sequences within different genomic features, including the whole genome, gene, promoter, tRNA, rRNA, and PAI regions. The density of G4 motifs was determined by dividing the number of G4 sequences by the total length of the genome, while the length ratio of G4 motifs was calculated by dividing the total length of the G4 sequences by the total length of the genome.
 
-## Relationship between G4 structures and PAIs
+### Relationship between G4 structures and PAIs
 
 The heatmap was used to show the distribution of G4 motifs in the genome divided by ten parts as PAI regions using R package ‘pheatmap.’ The correlation between the number of G4 structures and the GC content was analyzed across various genomic elements, including the whole genome, gene, promoter, rRNA, and tRNA regions. The analysis utilized the R-squared value (R2) to determine the fit goodness of the correlation. The correlation’s significance was evaluated through p-values along with a 95% confidence interval. Subsequently, a ROC analysis, yielding an area greater than 0.90, was employed to quantify sensitivity and specificity. The GC content in the genome regions and corresponding PAI regions was compared and classified into different ranges to explore the variation in base composition. GraphPad Prism (V.5.02, GraphPad Software, Inc) was employed to conduct Normality and Lognormality Tests. The K-S test and F-test were used to assess normal distribution and variances, and the Student’s t-test was used to identify significant differences.
 
-## Phylogenetic tree construction
+### Phylogenetic tree construction
 
 The exact Taxonomy ID (taxid) for each analyzed group was obtained from the NCBI Taxonomy Database using the Taxonomy Browser. The Neighbor-Joining (NJ) method was employed to construct the phylogenetic trees for the analyzed groups. The phylogenetic trees were generated using MEGA11 software (https://www.megasoftware.net/), which offers robust algorithms and comprehensive tools for phylogenetic analysis. To assess the reliability and statistical support of the phylogenetic tree branches, bootstrap analysis was performed. One thousand bootstrap replicates were used to estimate the confidence levels of the branching patterns in the phylogenetic trees. The phylogenetic trees, along with the bootstrap support values, were displayed and visualized using the Interactive Tree of Life (ITOL) platform (https://itol.embl.de/).
 
-## Gene functional annotation
+### Gene functional annotation
 
 The gene sequences covered by G4 structures within PAIs were subjected to gene ontology (GO) annotation (https://geneontology.org/). The gene sequences were translated into protein sequences using the Expasy online toolkit (https://web.expasy.org/translate/). This tool performs the translation based on the standard genetic code, converting the DNA nucleotide sequence into its corresponding amino acid sequence. The GO annotation database assigned GO terms to the protein sequences based on their predicted functions and known biological process (BP), molecular function (MF), and cellular component (CC). Fisher’s exact test was employed to determine the statistical significance of the enrichment results. The obtained p-values indicated the overrepresentation of specific GO terms, with lower p-values suggesting higher significance.
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 All genomic data utilized in this study, including the species-specific datasets, were obtained from publicly available sources. Statistical analyses, such as the Student’s t-test, Wilcoxon test, correlation test, and linear regression analysis, were performed using GraphPad Prism software. The samples used in the statistical analyses corresponded to the genomic data, PAIs, or specific genes under investigation.

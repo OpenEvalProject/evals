@@ -23,11 +23,11 @@
 
 ## Abstract
 
-10.7554/eLife.48779.001 Visual neuroscientists require accurate control of visual stimulation. However, few stimulator solutions simultaneously offer high spatio-temporal resolution and free control over the spectra of the light sources, because they rely on off-the-shelf technology developed for human trichromatic vision. Importantly, consumer displays fail to drive UV-shifted short wavelength-sensitive photoreceptors, which strongly contribute to visual behaviour in many animals, including mice, zebrafish and fruit flies. Moreover, many non-mammalian species feature more than three spectral photoreceptor types. Here, we present a flexible, spatial visual stimulator with up to six arbitrary spectrum chromatic channels. It combines a standard digital light processing engine with open source hard- and software that can be easily adapted to the experimentalist’s needs. We demonstrate the capability of this general visual stimulator experimentally in the in vitro mouse retinal whole-mount and the in vivo zebrafish. With this work, we intend to start a community effort of sharing and developing a common stimulator design for vision research.
+Visual neuroscientists require accurate control of visual stimulation. However, few stimulator solutions simultaneously offer high spatio-temporal resolution and free control over the spectra of the light sources, because they rely on off-the-shelf technology developed for human trichromatic vision. Importantly, consumer displays fail to drive UV-shifted short wavelength-sensitive photoreceptors, which strongly contribute to visual behaviour in many animals, including mice, zebrafish and fruit flies. Moreover, many non-mammalian species feature more than three spectral photoreceptor types. Here, we present a flexible, spatial visual stimulator with up to six arbitrary spectrum chromatic channels. It combines a standard digital light processing engine with open source hard- and software that can be easily adapted to the experimentalist’s needs. We demonstrate the capability of this general visual stimulator experimentally in the in vitro mouse retinal whole-mount and the in vivo zebrafish. With this work, we intend to start a community effort of sharing and developing a common stimulator design for vision research.
 
 ## Introduction
 
-## Challenges in visual stimulation
+### Challenges in visual stimulation
 
 From psychophysics to single-cell physiology, neuroscientists fundamentally rely on accurate stimulus control. At first glance, generating visual stimuli appears to be much easier than, for example, olfactory stimuli, because computer screens and video projectors are omnipresent, suggesting a range of cost-effective choices for the vision researcher. However, commercially available display devices target human consumers and, thus, are designed for the primate visual system. These devices provide superb spatial resolution, approximately cover the colour space relevant for trichromatic human vision (reviewed in Surridge et al., 2003) and support refresh rates that consider the human flicker-fusion frequency (e.g. Hecht and Verrijp, 1933). Moreover, as the emphasis is on improving the subjective viewing experience, commercial display devices typically lack or even purposefully distort properties that are important when used as visual stimulator for research.
 
@@ -35,7 +35,7 @@ While the spatial resolution provided by even basic commercial displays is typic
 
 Since some of the aforementioned constraints are ‘hard-wired’ in display devices for the consumer market, it is often impractical if not impossible to modify such devices. Specialised solutions aimed to overcome some of the above constraints are commercially available, for instance, as special calibrated LCD monitors for human psychophysics (e.g. Display++, Cambridge Research Systems, Rochester, UK). However, these solutions are expensive, optimised for primates and often closed source, which makes it difficult for the user to modify them. As a result, vision researchers either invest large amounts of time and/or money aiming to overcome these constraints or are forced to settle on a custom suboptimal solution that addresses the needs of a particular experimental situation. This, in turn, may critically limit the stimulus space that can be routinely explored, and yields substantial problems in reproducibility and interpretation when comparing physiological data between laboratories. Comparability and reproducibility are of particular interest in the backdrop of recent developments in increasingly efficient data acquisition technologies. For example, being able to simultaneously record from hundreds of neurons using multielectrode arrays (e.g. Jun et al., 2017) or two-photon functional imaging (e.g. Ahrens et al., 2013; Stringer et al., 2019) means that experimental limitations are rapidly shifting the ‘bottleneck’ away from the recording side towards the visual stimulation side.
 
-## Visual stimuli for current animal models
+### Visual stimuli for current animal models
 
 Choosing the adequate animal model for a specific research question may, on the one hand, greatly facilitate the experimental design and the interpretation of the results. On the other hand, when trying to transfer such results to other species, it is critical to keep in mind that each species is adapted to different environments and employs different strategies to survive and procreate (reviewed in Baden and Osorio, 2019). In vision research, classical studies often used monkeys and cats as model organisms, which with respect to visual stimuli, for example, in terms of spatial resolution and spectral sensitivity range, have similar requirements as humans. Today, frequently used animal models – such as Drosophila, zebrafish or rodents – feature adaptations of their visual systems outside the specifications for human vision: For instance, all of the aforementioned species possess UV-sensitive photoreceptors, zebrafish have tetrachromatic vision, and both zebrafish and Drosophila display higher flicker fusion frequencies than most mammals (reviewed in Marshall and Arikawa, 2014; Boström et al., 2016). Still, many studies in these species use visual stimulation devices produced and optimised for humans. At best, this will suboptimally drive the animal model'́s visual system, potentially resulting in wrong interpretations of the data.
 
@@ -53,19 +53,544 @@ Many vertebrates feature a single type of rod (for exceptions, see Baden and Oso
 
 Taken together, the diversity of spectral sensitivities present in common animal models used in visual neuroscience as well as their differences to the human visual system necessitates a species-specific stimulator design. Here, we present a highly flexible, relatively low-cost visual stimulation system that combines digital light processing (DLP) technology with easily customisable mechanics and electronics, as well as intuitive control software written in Python. We provide a detailed description of the stimulator design and discuss its limitations as well as possible modifications and extensions; all relevant documents are available online (for links, see Table 1). Finally, we demonstrate the use of our stimulator in two exemplary applications; as a dichromatic version for in vitro two-photon (2P) recordings in whole-mounted mouse retina and as a tetrachromatic version for in vivo 2P imaging in zebrafish larvae.
 
+**Table 1.**
+ For detailed part lists, see Tables 2 and 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Part</th>
+      <th>Links to online resources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TI DLP LightCrafter 4500 Evaluation Module (‘LCr’)</td>
+      <td>Product overview: http://www.ti.com/tool/dlplcr4500evm User guide: http://www.ti.com/lit/ug/dlpu011f/dlpu011f.pdf Programmer’s guide: http://www.ti.com/lit/ug/dlpu010g/dlpu010g.pdf DLP4500 data sheet w/DMD specs: http://www.ti.com/lit/ds/symlink/dlp4500.pdf Alternate DMD windows for increased UV transmission: http://www.ti.com/lit/an/dlpa031d/dlpa031d.pdf DMD reflectance w/o window: https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160010355.pdf</td>
+    </tr>
+    <tr>
+      <td>QDSpy – Open Source Visual stimulation software</td>
+      <td>Documentation: http://qdspy.eulerlab.de/ Python source code: https://github.com/eulerlab/QDSpy (Euler, 2019b; copy archived at https://github.com/elifesciences-publications/QDSpy) Information on ‘pattern mode’ with QDSpy: http://qdspy.eulerlab.de/lightcrafter.html#example-scripts</td>
+    </tr>
+    <tr>
+      <td>Chopper</td>
+      <td>For a ‘mechanical’ LED blanking solution (see Discussion), based on Thorlabs’ Optical Chopper System</td>
+    </tr>
+    <tr>
+      <td>open-visual-stimulator – Project GitHub repository</td>
+      <td>Contains spectral calibration scripts, 3D design files for printed parts, printed circuit board design files, bill of materials to populate boards, etc. https://github.com/eulerlab/open-visual-stimulator (Euler et al., 2019a; copy archived at https://github.com/elifesciences-publications/open-visual-stimulator)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Stimulator design
+### Stimulator design
 
 As the ‘light engine’ of our stimulator, we use the DLP LightCrafter 4500 (here, referred to as ‘LCr’) developed by Texas Instruments (Dallas, TX). The LCr is a bare-metal version for developers and offers several advantages over consumer devices: (i) its control protocol is well documented (for links, see Table 1), allowing to program the device via a USB connection on-the-fly; (ii) its flexibility in terms of light sources; lightcrafters with customised LEDs (Table 4) and a version with a light guide port (see below) are available; (iii) its small footprint (15 × 10 × 5 cm) facilitates incorporating the LCr into existing setups. While the stimulators are built around the LCr, we attempted to use a minimum of commercial parts. Except for the specialised optical elements (i.e. dichroic filters, beam splitters, mirrors), most parts can be replaced by 3D printed parts (e.g. designed using OpenSCAD, see Key Resources Table) to increase flexibility and to lower the total costs. For example, instead of commercial rail systems, such as LINOS microbank (Qioptiq, Göttingen, Germany), alternative 3D-printed parts can be used (Delmans and Haseloff, 2018). All electronics and the visual stimulation software are Open Source (Table 1).
 
 For the two-channel (dichromatic) mouse stimulator (Figure 2a–c), we used a light guide LCr (Fiber-E4500MKIITM, EKB Technologies Ltd., Israel). It lacks internal LEDs and the respective beam splitters and instead features a built-in port for a standard light guide (7 mm outer diameter, 5 mm core diameter; see recommendations by EKB). It was coupled by a light guide (for parts list, see Table 2) to an external illumination unit (Figure 2a right,c). In this unit, a long-pass dichroic mirror combines the light from two band pass-filtered LEDs (with λpeak = 387 and 576 nm) and feeds it into a light guide using a fitting collimation adapter. This arrangement facilitates the exchange of the LEDs and allows to mount the illumination unit outside the microscope cabinet. One disadvantage with this current LCr model is, however, that – in our experience – it passes only a fraction of the light entering the light guide port (see Discussion). The LCr is positioned next to the microscope’s stage and projects the stimulus via a condenser from below into the recording chamber, where it is focussed on the photoreceptor layer of the isolated mouse retina (Figure 2a left). In the type of 2P microscope used here (MOM, Sutter Instruments, Novato, CA; Materials and methods), the scan head including the objective lens – as well as the substage assembly with the condenser – moves relative to the static recording chamber. Hence, to allow the stimulus to 'follow' the objective lens-condenser axis, the LCr is mounted on a pair of low-friction linear slides, with the LCr mechanically coupled to the substage assembly (Figure 2b). To allow for stimulus centring, a combination of an x-y and a z-stage, both manually adjustable with micrometer screws, is fitted between slides and LCr.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic drawing of the dichromatic stimulator for in vitro recordings of mouse retinal explants. The stimulator is coupled into the two-photon (2P) microscope from below the recording chamber with the retinal tissue (through-the-condenser; for alternative light paths (through-the-objective), see Figure 2—figure supplement 1). DM, dichroic mirror; BP, band-pass filter; LCr, lightcrafter; LED, light-emitting diode. For components, including custom-made parts, see Table 2. (b) LCr unit and substage portion of the 2P microscope in side-view. (c) External LED illumination unit in top-view. For details on mechanical parts, see Figure 2—figure supplement 6. (d) Schematic drawing of the tetrachromatic stimulator for in vivo recordings in zebrafish larvae. The optical pathways of two LCrs are combined and the stimulus is projected onto a UV-transmissive teflon screen at one side of the miniature aquarium. For components, see Table 3. (e) Side-view of tetrachromatic stimulation setup. (f) RGB external LED illumination unit of tetrachromatic stimulation setup. Band-pass (BP) filters 03, 04 and 05 as well as lenses 01 are not indicated due to space constraints.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Schematic drawing of a TTO dichromatic stimulator for in vitro recordings of mouse retinal explants (cf. Euler et al., 2009). The light from the LCr with internal UV, blue and green LEDs is filtered by a dual-band filter transmitting UV and green light. Then, the light is coupled into the two-photon microscope using a cold mirror (CM). Using a beam-splitter (M 00), a small fraction of light is projected onto a camera to allow online visualisation of the visual stimulus. LCr, lightcrafter; LED, light-emitting diode; M, mirror; CM, cold mirror; DMM, dichroic mirror mouse; BP, band-pass filter. For specifications of the components, see Table 2 and Supplementary file 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Intensity of green LED measured with a PMT (at 250 kHz; for details, see Materials and methods) without (left) and with blanking (right); grey shading indicates blanking signal. (b) Smoothed (box smooth, box width: 100 ms) intensity profile of a full-field chirp stimulus recorded with a fast photodiode.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Relative transmission of filters in front of UV and green LED as well as of dichroic mirror on top of objective (cf. Euler et al., 2009). (b) Same as (a), for filters in front of PMTs (Materials and methods). Burgundy shading illustrates the wavelength range used for two-photon laser. (c, d) Like (a) and (b) but for zebrafish stimulator.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Spectral sensitivity of rhodopsins expressed in the four types of inner photoreceptors (Rh3: short-UV; Rh4: long-UV; Rh5: blue; Rh6: green) of Drosophila (data from Schnaitmann et al., 2018, based on Salcedo et al., 1999), with a possible combination of band pass-filtered LEDs for chromatic stimulation (black). Dotted line for the short-UV LED indicates that for wavelengths < 380 nm, additional optimisation of the optical parts within the LCr is required (see Discussion). (b) Suggested filter combination (black) from (a) can be combined with the dichroic mirror used for the zebrafish stimulator (DMZ; grey). (c) DMZ with suitable filters in front of PMTs for detection of green (535/50 BrightLine HC, AHF) and red (630/38 BrightLine HC, AHF) fluorescence. Burgundy shading marks wavelength range used for 2P laser.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Schematic illustrating the circuit that ensures that the stimulator LEDs are only on during the microscope's scanner retrace (for details, see Results). The ‘laser blanking’ signal (1) generated by the scan software is inverted (2) and then used to drive solid-state relays that modulate the LED power signal generated by the LCr (3). This modulated power signal (4) drives the LEDs. The LED light (5) is fed to the LCr via a light guide. (b) Wiring diagram of the solid-state relay (SSR) circuit (signals like in (a); R1 = 220 Ω, the values for R2 and potentiometer R3 depend on the LEDs used and typically are in the range of 0–500 Ω). (c) Rendering of the custom-printed circuit board, which can accommodate up to four LED channels (only the components for two channels are soldered). (d) Schematic illustrating an alternative circuit to (a–c), where the LEDs are powered from an external supply. Here, the LCr LED control signals (2, 3) go through a logical AND operation and the resulting signal (5) is then combined with the inverted blanking signal (4). The resulting signal (6) is used to switch the LED power using a combination of P and N-channel MOSFETs (cf. (e)). Finally, the LED power signal (7) drives the internal or external LEDs. (e) Wiring diagram of the MOSFET circuit (signals as in (d); R1 = 220 Ω, R2 = 220 Ω, R3 = 0.5 Ω, potentiometer R4 = 25 Ω, R5 = 1 kΩ). (f,g) Rendering of two custom-printed boards responsible for combining the control signals (logic board), up to three LED channels per board (f) and switching the LEDs (driver board), just one LED channel per board (g). (h) Pinout of connector J29 (‘external LED driver connector’) on the LCr board. To disable the LCr’s internal LED drivers, jumper J30 must be installed, while J28 is used to choose between 3.3V or 1.8V supply voltage (see Table 1 for links to LCr instruction manuals).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (a) Top-view of external LED illumination unit, with ordering numbers of all parts purchased from Thorlabs indicated (see also Table 2). Cage plates #LCP02 holds filters and lenses with a diameter of 0.5’’. DM (Nylon) and DM and LED holders (Aluminium) were custom-built by the University workshop (Table 2); the latter resemble Thorlab’s cage plates but with mounting holes for the LEDs. The LED holders dissipated the heat from the relatively low-power LEDs used for the mouse and zebrafish stimulator sufficiently, such that a cooling fan was not needed. (b) Side-view of external LED illumination unit.
+
+**Table 2.**
+ Parts list of the mouse visual stimulator (cf. Figure 2a–c and Figure 2—figure supplement 6).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Part</th>
+      <th>Description (link)</th>
+      <th>Company</th>
+      <th>Item number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Parts for stimulator (except external illumination unit)</td>
+    </tr>
+    <tr>
+      <td>LCr</td>
+      <td>0.45' ‘DLP Fiber couple E4500MKII Development Module FC/PC</td>
+      <td>EKB Technologies Ltd.</td>
+      <td>DPM-FE4500MKIIF</td>
+    </tr>
+    <tr>
+      <td>Condenser</td>
+      <td>C-C Achromat-Aplanat Condenser N.A. 1.40, oil</td>
+      <td>Nikon</td>
+      <td>MBL71400</td>
+    </tr>
+    <tr>
+      <td>Objective</td>
+      <td>W Plan-Apochromat 20x/1.0 DIC (UV) VIS-IR</td>
+      <td>Zeiss</td>
+      <td>421452-9880-000</td>
+    </tr>
+    <tr>
+      <td>DM 00</td>
+      <td>Beamsplitter 900DCXXR</td>
+      <td>AHF Analysetechnik AG</td>
+      <td>F73-903</td>
+    </tr>
+    <tr>
+      <td>Lens 00</td>
+      <td>Achromatic Doublet, f = 75 mm</td>
+      <td>Thorlabs</td>
+      <td>AC254-075-A-ML</td>
+    </tr>
+    <tr>
+      <td>Light guide</td>
+      <td>Liquid light guide 5 mm Core, 1.2 m length</td>
+      <td>Thorlabs</td>
+      <td>LLG05-4H</td>
+    </tr>
+    <tr>
+      <td>z stage</td>
+      <td>13 mm Travel Vertical Translation Stage</td>
+      <td>Thorlabs</td>
+      <td>MVS005/M</td>
+    </tr>
+    <tr>
+      <td>x-y stage</td>
+      <td>XY Stage, 13 mm Travel</td>
+      <td>Thorlabs</td>
+      <td>XYT1/M</td>
+    </tr>
+    <tr>
+      <td>Frictionless tables</td>
+      <td>Type NK frictionless table (rollers/balls)</td>
+      <td>Schneeberger GmbH</td>
+      <td>NK2-50 (x2)</td>
+    </tr>
+    <tr>
+      <td>Perfusion chamber</td>
+      <td>Quick release magnetic imaging chamber</td>
+      <td>Warner Instruments</td>
+      <td>64–1943</td>
+    </tr>
+    <tr>
+      <td colspan="4">Parts for the external illumination unit</td>
+    </tr>
+    <tr>
+      <td>Cage plate 1</td>
+      <td>Cage Plate with Ø2.2’ Double Bore</td>
+      <td>Thorlabs</td>
+      <td>LCP09/M</td>
+    </tr>
+    <tr>
+      <td>Cage plate 2</td>
+      <td>30 mm to 60 mm Cage Plate Adapter</td>
+      <td>Thorlabs</td>
+      <td>LCP02/M</td>
+    </tr>
+    <tr>
+      <td>Cage plate 3</td>
+      <td>SM1-Threaded Standard Cage Plates</td>
+      <td>Thorlabs</td>
+      <td>CP02/M (x7)</td>
+    </tr>
+    <tr>
+      <td>Cage assembly rods</td>
+      <td>ER Assembly Rods for 30 mm and 60 mm Cage Systems</td>
+      <td>Thorlabs</td>
+      <td>ER1/2/3 (x4)</td>
+    </tr>
+    <tr>
+      <td>Post holders</td>
+      <td>Pedestal Post Holders</td>
+      <td>Thorlabs</td>
+      <td>PH40E (x2)</td>
+    </tr>
+    <tr>
+      <td>Post holders</td>
+      <td>Clamping Forks and Base Adapters</td>
+      <td>Thorlabs</td>
+      <td>CF175 (x2)</td>
+    </tr>
+    <tr>
+      <td>Collimator</td>
+      <td>5 mm LLG Collimating Adapter, Zeiss Axioskop</td>
+      <td>Thorlabs</td>
+      <td>LLG5A4-A</td>
+    </tr>
+    <tr>
+      <td>BP 00</td>
+      <td>387/11 BrightLine HC</td>
+      <td>AHF</td>
+      <td>F39-387</td>
+    </tr>
+    <tr>
+      <td>BP 01</td>
+      <td>576/10 BrightLine HC</td>
+      <td>AHF</td>
+      <td>F37-576</td>
+    </tr>
+    <tr>
+      <td>UV LED</td>
+      <td>385 nm, 320 mW at 350 mA, +- 75°</td>
+      <td>Roithner</td>
+      <td>H2A1-H385-r2</td>
+    </tr>
+    <tr>
+      <td>Green LED</td>
+      <td>590 nm, 8–10 mW at 350 mA, +- 30°</td>
+      <td>Roithner</td>
+      <td>M3L1-HY-30</td>
+    </tr>
+    <tr>
+      <td>DM 01</td>
+      <td>Beamsplitter HC BS 495</td>
+      <td>AHF</td>
+      <td>F38-495</td>
+    </tr>
+    <tr>
+      <td>Lens 01</td>
+      <td>1’’ N-BK7 Plano-Convex Lens, f = 25.4 mm</td>
+      <td>Thorlabs</td>
+      <td>LA1951-A-ML (x2)</td>
+    </tr>
+    <tr>
+      <td>DM holder</td>
+      <td>DM_holder, Nylon</td>
+      <td>Custom-made (University workshop)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LED holder</td>
+      <td>LED_holder, Aluminium</td>
+      <td>Custom-made (University workshop)</td>
+      <td>(x2)</td>
+    </tr>
+  </tbody>
+</table>
+
 In addition to this ‘through-the-condenser’ (TTC) configuration for visual stimulation, we also used the ‘through-the-objective’ (TTO) configuration described earlier (Figure 2—figure supplement 1) (Euler et al., 2009). Here, the stimulus is optically coupled into the laser pathway and therefore does not require mechanical coupling of microscope head and visual stimulator. In addition, only scattered light of the visual stimulus will reach the photodetectors above the objective, reducing artefacts caused by stimulus light entering the photodetectors (e.g. photomultipliers, PMTs). However, the disadvantage of the TTO configuration is that the stimulation area is limited by the field-of-view of the objective (approximately 700 µm in diameter for our 20x objective) and, therefore, large-scale retinal networks that may be critical for naturalistic stimulation are likely not well activated.
 
 For the four-channel (tetrachromatic) zebrafish stimulator variant, we optically coupled two light guide LCrs (Figure 2d,e; for parts list, see Table 3). They used a similar external illumination unit as the mouse stimulator, but with different LED/filter combinations (λpeak = 586, 480, 420, and 370 nm). The beams of the two LCrs are collimated and combined using a long-pass dichroic mirror and projected onto a flat teflon screen that covers one side of a miniature water-filled aquarium (Table 1), in which the zebrafish larva is mounted on a microscope slide under the objective lens of a MOM-type 2P microscope (Figure 2e). Each LCr is placed on an independent three-axis manipulator to facilitate alignment of the two images. Then, small 0.5-cm circular stimuli are projected (one from each stimulator) and the LCrs positions are adjusted using the manipulators until the stimuli are completely overlapping. The general design of the zebrafish stimulator -- with one or two LCr projecting onto a teflon screen – is also suitable for visual stimulation during in vivo experiments of other model organisms like mouse or Drosophila.
 
-## Separating light stimulation and fluorescence detection
+**Table 3.**
+ Parts list of the zebrafish visual stimulator (cf. Figure 2d,e; italic entries are not shown in figure).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Part</th>
+      <th>Description (link)</th>
+      <th>Company</th>
+      <th>Item number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Parts for stimulator (except external illumination unit)</td>
+    </tr>
+    <tr>
+      <td>LCr</td>
+      <td>0.45' ‘DLP Fiber couple E4500MKII Development Module FC/PC</td>
+      <td>EKB Technologies Ltd.</td>
+      <td>DPM-FE4500MKIIF (x2)</td>
+    </tr>
+    <tr>
+      <td>DM 04</td>
+      <td>Beamsplitter T 400 LP</td>
+      <td>AHF</td>
+      <td>F79-100</td>
+    </tr>
+    <tr>
+      <td>Lens 02</td>
+      <td>Mounted N-BK7 Bi-Convex Lens, f = 50.0 mm</td>
+      <td>Thorlabs</td>
+      <td>LB1844-ML (x2)</td>
+    </tr>
+    <tr>
+      <td>Lens 03</td>
+      <td>Air-Spaced Achromatic Doublet, f = 50 mm</td>
+      <td>Thorlabs</td>
+      <td>ACA254-050-A (x3)</td>
+    </tr>
+    <tr>
+      <td>Lens 04</td>
+      <td>Achromatic Doublet, f = 100 mm</td>
+      <td>Thorlabs</td>
+      <td>AC508-100-A-ML</td>
+    </tr>
+    <tr>
+      <td>Light guide</td>
+      <td>Liquid light guide 5 mm Core, 1.2 m length</td>
+      <td>Thorlabs</td>
+      <td>LLG05-4H (x2)</td>
+    </tr>
+    <tr>
+      <td>z stage</td>
+      <td>13 mm Travel Vertical Translation Stage</td>
+      <td>Thorlabs</td>
+      <td>MVS005/M (x2)</td>
+    </tr>
+    <tr>
+      <td>x-y stage</td>
+      <td>13 mm Translation Stage</td>
+      <td>Thorlabs</td>
+      <td>MT1B/M (x4)</td>
+    </tr>
+    <tr>
+      <td>Mount plate</td>
+      <td>Aluminium Breadboard</td>
+      <td>Thorlabs</td>
+      <td>MB2530/M</td>
+    </tr>
+    <tr>
+      <td>Lens holder</td>
+      <td>30 mm to 60 mm Cage Plate Adapter</td>
+      <td>Thorlabs</td>
+      <td>LCP02/M (x4)</td>
+    </tr>
+    <tr>
+      <td>Optical Post</td>
+      <td>Optical Post 12.7 mm diam</td>
+      <td>Thorlabs</td>
+      <td>TR100/M (x2)</td>
+    </tr>
+    <tr>
+      <td>Post Holder</td>
+      <td>Post holder 12.7 mm diam 100 mm</td>
+      <td>Thorlabs</td>
+      <td>PH100/M (x2)</td>
+    </tr>
+    <tr>
+      <td>Post clamp</td>
+      <td>Clamping Fork, 1.24’ Counterbored Slot</td>
+      <td>Thorlabs</td>
+      <td>CF125-P5 (x2)</td>
+    </tr>
+    <tr>
+      <td>Metal rods</td>
+      <td>Cage Assembly Rod, 12’ Long, Ø6 mm</td>
+      <td>Thorlabs</td>
+      <td>ER-12 (x4)</td>
+    </tr>
+    <tr>
+      <td>Metal rods</td>
+      <td>Cage Assembly Rod, 3’ Long, Ø6 mm</td>
+      <td>Thorlabs</td>
+      <td>ER-3 (x8)</td>
+    </tr>
+    <tr>
+      <td>Dichroic holder</td>
+      <td>Kinematic Cage Cube Platform for C4W/C6W, Metric</td>
+      <td>Thorlabs</td>
+      <td>B4C/M</td>
+    </tr>
+    <tr>
+      <td>Dichroic holder</td>
+      <td>Cage compatible rectangular filter mount</td>
+      <td>Thorlabs</td>
+      <td>FFM1</td>
+    </tr>
+    <tr>
+      <td>Cage cube</td>
+      <td>60 mm cube cage</td>
+      <td>Thorlabs</td>
+      <td>LC6W</td>
+    </tr>
+    <tr>
+      <td>Lens holder</td>
+      <td>SM1-Threaded 30 mm Cage Plate</td>
+      <td>Thorlabs</td>
+      <td>CP02/M (x2)</td>
+    </tr>
+    <tr>
+      <td>LCr Lens holder</td>
+      <td>LCr lens holder adapter</td>
+      <td>3D printed part</td>
+      <td>(x2)</td>
+    </tr>
+    <tr>
+      <td>Fish aquarium</td>
+      <td>Fish Cinema v10.0_40X_Objective</td>
+      <td>3D printed part(s)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Teflon screen</td>
+      <td>PTFE (Teflon) glass fibre high temperature coating cloth, 0.15 mm</td>
+      <td>Artistore</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Parts for the external illumination units (RGB + UV)</td>
+    </tr>
+    <tr>
+      <td>Collimator</td>
+      <td>5 mm LLG Collimating Adapter, Zeiss Axioskop</td>
+      <td>Thorlabs</td>
+      <td>LLG5A4-A (x2)</td>
+    </tr>
+    <tr>
+      <td>Lens 01</td>
+      <td>1’’ N-BK7 Plano-Convex Lens, f = 25.4 mm</td>
+      <td>Thorlabs</td>
+      <td>LA1951-A-ML (x4)</td>
+    </tr>
+    <tr>
+      <td>DM 02</td>
+      <td>Laser Beamsplitter H 560 LPXR superflat</td>
+      <td>AHF</td>
+      <td>F48-559</td>
+    </tr>
+    <tr>
+      <td>DM 03</td>
+      <td>Beamsplitter T 450 LPXR</td>
+      <td>AHF</td>
+      <td>F48-450</td>
+    </tr>
+    <tr>
+      <td>BP 02</td>
+      <td>370/36 BrightLine HC</td>
+      <td>AHF</td>
+      <td>F39-370</td>
+    </tr>
+    <tr>
+      <td>BP 03</td>
+      <td>420/40 ET Bandpass</td>
+      <td>AHF</td>
+      <td>F47-420</td>
+    </tr>
+    <tr>
+      <td>BP 04</td>
+      <td>480/40x ET Bandpass</td>
+      <td>AHF</td>
+      <td>F49-480</td>
+    </tr>
+    <tr>
+      <td>BP 05</td>
+      <td>586/20 BrightLine HC</td>
+      <td>AHF</td>
+      <td>F39-587</td>
+    </tr>
+    <tr>
+      <td>UV LED</td>
+      <td>365 nm 2.4–6.0 mW 20 mA 15°</td>
+      <td>Roithner</td>
+      <td>XSL-365-5E</td>
+    </tr>
+    <tr>
+      <td>Blue LED</td>
+      <td>420 nm 420 mW 350 mA 20°</td>
+      <td>Roithner</td>
+      <td>SMB1N-420H-02</td>
+    </tr>
+    <tr>
+      <td>Green LED</td>
+      <td>470 nm 70 mW 350 mA 20°</td>
+      <td>Roithner</td>
+      <td>SMB1N-D470-02</td>
+    </tr>
+    <tr>
+      <td>Red LED</td>
+      <td>588 nm 13.5 cd 20 mA 8°</td>
+      <td>Roithner</td>
+      <td>B5B-434-TY</td>
+    </tr>
+    <tr>
+      <td>Filter/LED/lens holder</td>
+      <td>SM1-Threaded 30 mm Cage Plate</td>
+      <td>Thorlabs</td>
+      <td>CP02/M (x4)</td>
+    </tr>
+    <tr>
+      <td>Collimator holder</td>
+      <td>Double Bore for SM2 Lens Tube Mounting</td>
+      <td>Thorlabs</td>
+      <td>LCP09 (x2)</td>
+    </tr>
+    <tr>
+      <td>Vertical holder</td>
+      <td>60 mm to 30 mm Cage System Right-Angle Adapter</td>
+      <td>Thorlabs</td>
+      <td>LCP30 (x3)</td>
+    </tr>
+    <tr>
+      <td>Dichroic frame</td>
+      <td>Dichroic frame</td>
+      <td>3D printed part</td>
+      <td>(x2)</td>
+    </tr>
+    <tr>
+      <td>Frame holder</td>
+      <td>Frame holder</td>
+      <td>3D printed part</td>
+      <td>(x2)</td>
+    </tr>
+    <tr>
+      <td>Horizontal holder</td>
+      <td>Horizontal holder</td>
+      <td>3D printed part</td>
+      <td>(x2)</td>
+    </tr>
+    <tr>
+      <td>Metal rods</td>
+      <td>Cage Assembly Rod, 8’ Long, Ø6 mm</td>
+      <td>Thorlabs</td>
+      <td>ER-8 (x4)</td>
+    </tr>
+    <tr>
+      <td>Metal rods</td>
+      <td>Cage Assembly Rod, 3’ Long, Ø6 mm</td>
+      <td>Thorlabs</td>
+      <td>ER-3 (x10)</td>
+    </tr>
+    <tr>
+      <td>Optical Post</td>
+      <td>Optical Post 12.7 mm diam</td>
+      <td>Thorlabs</td>
+      <td>TR100/M (x4)</td>
+    </tr>
+    <tr>
+      <td>Post Holder</td>
+      <td>Post holder 12.7 mm diam 100 mm</td>
+      <td>Thorlabs</td>
+      <td>PH100/M (x4)</td>
+    </tr>
+    <tr>
+      <td>Post clamp</td>
+      <td>Clamping Fork, 1.24’ Counterbored Slot</td>
+      <td>Thorlabs</td>
+      <td>CF125-P5 (x4)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Separating light stimulation and fluorescence detection
 
 A difficulty when combining visual stimulation with fluorescence imaging is that the spectral photoreceptor sensitivities and the emission spectra of the fluorescent probes tend to greatly overlap. Hence, to avoid imaging artefacts, stimulator light has to be prevented from reaching the PMTs of the microscope, while ensuring that each of the spectral photoreceptor types is stimulated efficiently and as much of the fluorescence signal as possible is captured. To address this issue, light stimulation and fluorescence detection have to be separated temporally and/or spectrally (Euler et al., 2009).
 
@@ -77,7 +602,7 @@ As explained above, the LCr encodes the brightness of an image pixel by its mirr
 
 One potential issue of the described solution for temporal separation is that the frame (refresh) rate of the LCr (typically 60 Hz) and the laser blanking/LED-on signal (500 to 1,000 Hz) are not synchronised and therefore may cause slow aliasing-related fluctuations in stimulus brightness. In practice, however, we detected only small brightness modulations (Figure 2—figure supplement 2b).
 
-## Visual stimulation software
+### Visual stimulation software
 
 Our visual stimulation software (QDSpy) is completely written in Python3 and relies on OpenGL for stimulus rendering. It includes a GUI, which facilitates spatial stimulus alignment, LCr control and stimulus presentation. QDSpy stimuli are written as normal Python scripts that use the ‘QDSpy library’ to define stimulus objects, set colours, send trigger signals, display scenes etc. Stimulus objects range from simple shapes with basic shader support to videos (for a complete description of the software, see link in Table 1). Depending on the way a user implements a stimulus and whether or not the script contains lengthy calculations, it cannot be guaranteed that the script runs fast enough to reliably generate stimulus frames at 60 Hz. Hence, to ensure stimulus timing, the first time QDSpy runs a stimulus script it generates a ‘compiled’ version of the stimulus, which is stored in a separate file. When the user runs that stimulus again (and the source stimulus script has not been altered after compilation), QDSpy presents the stimulus from the compiled file. This compiled file contains the drawing instructions and timing for every stimulus element used in a very compact form. This strategy has the advantage that stimulus timing is very reliable, as potentially time-consuming sections of the Python stimulus script have already been executed during ‘compilation’. The main disadvantage is that user interaction during stimulus presentation is (currently) not possible.
 
@@ -89,7 +614,7 @@ The stimulation software generates digital synchronisation markers to align pres
 
 For up to three chromatic channels (e.g. the mouse stimulator, cf. Figure 2a–c), stimuli are presented in full-screen mode on the LCr, with the other screen displaying the GUI. When more chromatic channels are needed, as for the zebrafish stimulator, two LCrs are combined (see above; cf. Figure 2d,e). QDSpy then opens a large window that covers both LCr ‘screens’ and provides each LCr with ‘its’ chromatic version of the stimulus (screen overlay mode). To this end, the software accepts colour definitions with up to six chromatic values and assigns them to the six available LEDs (three per LCr). For example, the first LCr of the zebrafish stimulator provides the red, green and blue channels, whereas the second LCr adds the UV channel (Figure 2d). Here, QDSpy presents the stimulus’ RGB-components on the half of the overlay window assigned to the first LCr and the stimulus’ UV-component on the half of the overlay window assigned to the second LCr. The remaining LED channels are available for a different purpose, such as, for example, separate optogenetic stimulation.
 
-## LED selection and spectral calibration
+### LED selection and spectral calibration
 
 Adequate chromatic stimulation requires adjusting the stimulator to the spectral sensitivities of the model organism. Ideally, one would choose LEDs that allow maximally separating the different opsins (Figure 3). In practice, however, these choices are limited by the substantial overlap of opsin sensitivity spectra (Figure 3a,c) and by technical constraints: For instance, commercially available projectors, including the LCr, barely transmit UV light (<385 nm), likely due to UV non-transmissive parts in the optical pathway and/or the reflectance properties of the DMD (Discussion). In addition, when imaging light-evoked neural activity, fluorescence signal detection and visual stimulation often compete for similar spectral bands, and need to be separated to avoid stimulus-related artefacts (Figure 2—figure supplement 3; discussed in Euler et al., 2019; Euler et al., 2009). Compared to projectors with built-in LEDs, the flexible LED complement of the light guide LCr presents a crucial advantage: Here, LEDs can be easily exchanged to avoid the spectral bands of the fluorescent probes, thereby allowing to maximally separate visual stimulation and fluorescence detection. Because LED spectra can be quite broad, we combine each LED with an appropriate band-pass filter to facilitate arranging stimulation and detection bands.
 
@@ -101,15 +626,23 @@ As a consequence, the peak emissions of the selected LED/filter combinations usu
 
 To estimate the theoretically achievable chromatic separation of mouse cones with our stimulators, we measured the spectra of each LED/filter combination at different intensities (Figure 3d) and converted these data into cone photoisomerisation rates (Nikonov et al., 2006). To account for non-linearities in stimulator intensities, we apply gamma correction at the stimulus presentation software level (Figure 3e). For our functional recordings (cf. Figures 5 and 6), the photoisomerisation rate (in P*/cone/s ⋅103) normally ranges from ~0.6 (stimulator shows black image) to ~20 (stimulator shows white image; Figure 3f), corresponding to the low photopic regime. In contrast to most commercially available projectors, the current driving the LEDs can also be set to zero, allowing experiments in complete darkness. Further details on the calibration procedures and example calculations for mice and zebrafish are provided in the Methods and in supplemental iPython notebooks, respectively (Table 1). Importantly, the general layout of these calibration notebooks facilitates adapting them to other model organisms.
 
-## Spatial resolution
+### Spatial resolution
 
 To measure the spatial resolution of our mouse stimulator, we used the ‘through-the-objective’ (TTO) configuration (Figure 2—figure supplement 1) (Euler et al., 2009) and projected UV and green checkerboards of varying checker sizes (from 2 to 100 µm; Materials and methods) onto a camera chip positioned at the level of the recording chamber (Figure 4a). We found that contrast remained relatively constant for checker sizes down to 4 µm before it rapidly declined (Figure 4b,c). Similarly, transitions between bright and dark checkers started to blur for checker sizes below 10 µm (Figure 4d,e). For these measurements, we used a 5x objective (MPlan 5X/0.1, Olympus) to project the stimuli, ensuring that the spatial resolution of the camera (OVD5647 chip: 1.4 µm pixel pitch) was not the limiting factor. Hence, a 5 × 5 µm checker stimulus appeared as a 20 × 20 µm square on the camera chip, where it covered approximately (14.3)² pixels. However, for the scaling factor we use for our recordings (1.9 × 0.9 µm/pixel), a 5 × 5 µm checker consists only of 9.5 × 4.5 LCr pixels (DMD4500, chip area: 6,161 × 9,855 µm with 1,140 × 912 pixels). Thus, the drop in spatial resolution observed for checkers ≤5 µm is likely related to the resolution of the DMD. For the ‘through-the-condenser’ (TTC) configuration, contrast and sharpness of transitions declined already for checker sizes between 5 and 10 µm (Figure 4c,e). That we measured a slightly lower spatial resolution for the TTC compared to the TTO configuration may be because we reached the camera resolution limit (see above), as for TTC we could not simply swap the condenser and, hence, the stimulus image was not magnified on the camera chip.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig4-v2.jpg)
+
+**Figure 4.:** (a) Images of checkerboard stimuli with varying checker sizes projected through-the-objective (TTO) for illumination with green (top) and UV (bottom) LED, recorded by placing the sensor chip of a Raspberry Pi camera at the level of the recording chamber. Focus was adjusted for UV and green LED separately. Insets for 5 and 2 µm show zoomed in regions of the image. (b) Intensity profiles for five different checker sizes of green LED. (c) Contrasts ($I_{Max}-I_{Min}$) for checkerboards of varying checker sizes of the TTO (top) and through-the-condenser (TTC; bottom) configuration. (d) Peak-normalised intensity profiles of different checker sizes, scaled to the same half-maximum width. (e) 1/rate estimated from sigmoidal fits of normalised intensity curves like in (d) for varying checker sizes of the TTO (top) and TTC (bottom) configuration.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48779/elife-48779-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Schematic illustrating the chromatic aberration-related difference in focal planes of UV and green image in the TTO configuration. (b) Images of a 100 (top) and 40 (bottom) µm checkerboard stimulus using the green (left) and UV (right) LED, recorded by placing the sensor chip of a Raspberry Pi camera at the level of the recording chamber. Focus was set to intermediate focal plane (see (a); ±12 µm) or was adjusted for UV and green LED separately (0 µm).
 
 For the zebrafish stimulator, spatial resolution is less of a problem because, for our setup, checker sizes at the limit of the animal’s spatial resolution (2° visual angle; Haug et al., 2010) are large (~1 mm on the teflon screen; cf. Figure 2d,e).
 
 For the spatial resolution measurements, the UV and green images were each focussed on the camera chip and, therefore, the results do not reflect any effects of chromatic aberration on image quality. To estimate chromatic aberration for our TTO configuration, we next measured the offset between the focal planes of the chromatic channels. Here, we used the standard 20x objective that we also employ for functional recordings. We found that the difference in focal plane between UV and green of approx. 24 µm has little effect on the overall image quality (Figure 4—figure supplement 1) - at least for checker sizes we routinely use for receptive field mapping of retinal neurons (e.g. Baden et al., 2016; cf. also Discussion).
 
-## Visual stimulation in the explanted mouse retina
+### Visual stimulation in the explanted mouse retina
 
 To confirm that our stimulator design can be used for adequate chromatic stimulation of the mouse retina, we directly recorded from cone axon terminals in retinal slices using 2P Ca2+ imaging (e.g. Kemmler et al., 2014). To this end, we used the transgenic mouse line HR2.1:TN-XL, where the ratiometric Ca2+ sensor TN-XL is exclusively expressed in cones (Figure 5a) (Wei et al., 2012). To quantify the chromatic preference of recorded cones, we calculated spectral contrast (SC) based on the response strength to a 1 Hz sine-wave full-field stimulus of green and UV (Materials and methods). The SC values correspond to Michelson contrast, ranging from −1 to 1 for the cell responding solely to UV and green, respectively.
 
@@ -123,7 +656,7 @@ We also tested a stimulus that used silent substitution (Figure 5b, right column
 
 These data demonstrate that our stimulator design enables obtaining cone-isolating responses in the mouse retina. Notably, the chromatic separation observed in the recordings nicely matches our predictions of cross-activation (see above and Materials and methods).
 
-## Tetrachromatic stimulation in in vivo zebrafish larvae
+### Tetrachromatic stimulation in in vivo zebrafish larvae
 
 We recorded in vivo from bipolar cell (BC) axon terminals in zebrafish larvae using 2P Ca2+ imaging (Figure 6a). The transgenic line we used expressed SyGCaMP6f exclusively in BC axon terminals (Rosa et al., 2016). In these experiments, we presented full-field (90 × 120 degrees visual angle) steps or sine wave modulation of red, green, blue and UV light to the teflon screen in front of the immobilised animal (cf. Figure 2d,e). This revealed spectrally differential tuning of distinct BC terminals (Figure 6b,c), in line with a previous report (Zimmermann et al., 2018). For example, terminal one responded with a Ca2+ increase to a decrease in red light as well as to an increase in blue or UV light, yielding a ‘redOff/blueOn,UVOn’ response behaviour. In contrast, terminal four did not respond to red or green, but differentially responded to blue and UV (‘blueOff/UVOn’). Further differences were visible in the temporal profile of the BC responses. For example, terminal three responded more transiently to red and blue, but in a sustained fashion to UV. Similar to cone responses in the in vitro mouse retina, spectrally differential tuning of zebrafish BC terminals was also observed for a sine wave stimulus (Figure 6c). Taken together, tetrachromatic stimulation elicited clear differential responses across different wavelengths, thus highlighting that the stimulator’s spectral isolation between the four LED channels was sufficient to drive the zebrafish’s cone system differentially. To further improve spectral separation, a silent substitution protocol might be used (cf. Figure 5; see notebook on GitHub for details). However, as the sensitivity profiles of zebrafish cones substantially overlap (cf. Figure 1d), implementing a silent substitution protocol is more challenging than for the mouse.
 
@@ -135,7 +668,7 @@ We recorded in vivo from bipolar cell (BC) axon terminals in zebrafish larvae us
 
 In this paper, we present a flexible, relatively low-cost stimulator solution for visual neuroscience and demonstrate its use for dichromatic stimulation in the in vitro mouse retina and tetrachromatic stimulation in the in vivo larval zebrafish. The core of the stimulator is an LCr with a light guide port that connects to an external LED array. We also provide detailed calibration protocols (as iPython notebooks) to estimate (cross-)activation in a species’ complement of photoreceptor types, which facilitates planning of the LED/filter combinations required for selective chromatic stimulation. To drive the LEDs, we designed simple electronic circuits that make use of the LCr LED control signals and allow integrating an LED-on signal (‘blanking signal’) for synchronisation with data acquisition, which is critical, for example, for fluorescence imaging in the in vitro retina (Euler et al., 2009). By combining two LCrs, up to 6 LED channels are supported by our visual stimulation software (QDSpy). In addition, we describe three exemplary projection methods that allow tuning the system towards high spatial resolution (‘through-the-objective’) or a large field-of-stimulation (‘through-the-condenser’) for in vitro experiments, or presentation on a teflon screen for in vivo studies. All materials (electronics, optical design, software, parts lists etc.) are publically available and open source.
 
-## The need for ‘correct’ spectral stimulation
+### The need for ‘correct’ spectral stimulation
 
 The spectral sensitivity markedly varies across common model organisms used in visual neuroscience (cf. Introduction). As a result, in most cases visual stimulation devices optimised for the human visual system do not allow ‘correct’ spectral stimulation, in the sense that the different photoreceptor types are not differentially activated by the stimulator LEDs. Instead, ‘correct’ spectral stimulation requires that the visual stimulator is well-adjusted to the specific spectral sensitivities of the model organism.
 
@@ -143,7 +676,7 @@ For example, while human S-opsin is blue-sensitive (reviewed in Jacobs, 2008), t
 
 Even when the stimulator is adjusted to the spectral sensitivity of the model organism, each stimulator LED typically activates more than one photoreceptor type due to overlapping sensitivity profiles of the different opsins (cf. Figure 1). In particular, the long sensitivity tail of opsins for shorter wavelengths (‘β-band’) contributes to cross-activation of photoreceptors by the stimulator LEDs. For example, the sensitivity of mouse M-opsin to our UV LED results in a cross-activation of ~19.5% (cf. Figure 3f). Such ‘imperfect’ spectral separation of cone types is sufficient to investigate many questions concerning chromatic processing in the visual system – especially as there rarely is photoreceptor type-isolating stimulation in natural scenes (Chiao et al., 2000). If needed, photoreceptor cross-activation can be ameliorated by using a silent substitution protocol (Estévez and Spekreijse, 1982; but see Kamar et al., 2019). Here, one type of photoreceptor is selectively stimulated by presenting a steady excitation to all other photoreceptor types using a counteracting stimulus (cf. Figure 5b). This allows, for instance, to investigate the role of individual photoreceptor types in visual processing.
 
-## Stimulation with UV light
+### Stimulation with UV light
 
 Sensitivity to UV light is widespread across animal species (reviewed in Cronin and Bok, 2016). Sometimes UV sensitivity may represent a specialised sensory channel; for example many insects and potentially some fish use UV-sensitive photoreceptors to detect polarisation patterns in the sky for orientation (Parkyn and Hawryshyn, 1993; Seliger et al., 1994; Wehner, 2001). In most cases, however, UV sensitivity seems to be simply incorporated into colour vision, extending the spectral range accessible to the species. Here, UV sensitivity can play an important role in invertebrate and vertebrate behaviour, including navigation and orientation, predator and prey detection, as well as communication (reviewed in Cronin and Bok, 2016).
 
@@ -153,7 +686,7 @@ Zebrafish larvae express the UV-sensitive sws2 opsin in their UV-cones. UV-visio
 
 Taken together, to approach natural conditions when probing a UV-sensitive species’ visual system, UV stimulation must be included. Nonetheless, there are some pitfalls specifically linked to UV light stimulation. One major issue is that, in our experience, the standard LCr barely transmits wavelengths <385 nm. As the reflectance of the micromirrors (aluminium) drops only <300 nm and the glass window covering the DMD transmits ≥90% of the light down to 350 nm (see links in Table 1), one limiting factor appears to arise from the LCr optics. Therefore, if shorter wavelengths are required, replacing the internal optics of the projector is necessary (e.g. Tan et al., 2015). If the different stimulation wavelengths are spread across a large range (e.g. Δλ = 191 and 200 nm for zebrafish and mouse stimulator, respectively; cf. Figure 3a,c), chromatic aberration may become an issue, causing an offset between the focal planes of the different colour channels (cf. Figure 4—figure supplement 1). For our TTO stimulator configuration, we found a focus difference between UV and green in the order of a few tens of micrometers. For a checker size that is commonly used for receptive field mapping of retinal neurons (e.g. 40 µm; Baden et al., 2016), we observed only a slight image blurring due to chromatic aberration, that likely has a negligible effect on our experiments. If chromatic aberration becomes an issue, viable approaches may be to increase the depth-of-field (e.g. by decreasing the aperture size with a diaphragm in the stimulation pathway) and/or use appropriate achromatic lenses.
 
-## Potential issues and technical improvements
+### Potential issues and technical improvements
 
 In this section, we discuss potential issues that may arise when adapting our stimulator design to other experimental situations, as well as possible technical improvements.
 
@@ -161,11 +694,42 @@ If too much stimulation light enters the PMTs, in addition to spectral separatio
 
 For increased flexibility with respect to the LED complement of the visual stimulator, we here use an external LED unit coupled into the LCr via a light guide port (cf. Figure 2). One disadvantage with this LCr model is, however, that it passes only a relatively small fraction of the light entering the light guide port. While this is not problematic for small projection areas used in our mouse and zebrafish recordings or for relatively low light intensities, it may become an issue when projecting the stimulus onto a larger area like the inside of a dome (e.g. Denman et al., 2017; Schmidt-Hieber and Häusser, 2013). Here, LCr models with built-in, high-power LEDs might be a better option (Table 4; Supplementary file 1).
 
+**Table 4.**
+ Different commercially available UV-enabled projectors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Part</th>
+      <th>Description (link)</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DPM-E4500UVBGMKII</td>
+      <td>DLP LightCrafter E4500 MKII with 3 LEDs: UV (385 or 405 nm), blue (460 nm), and green (520 nm)</td>
+      <td>EKB Technologies Ltd., Bat Yam, Israel https://www.ekbtechnologies.com/</td>
+    </tr>
+    <tr>
+      <td>3DLP9000 UV Light Engine</td>
+      <td>DLP-based light engine that can be equipped with one arbitrary LED, including UV (365, 385, or 405 nm)</td>
+      <td>DLi Digital Light innovations, Austin, TX https://www.dlinnovations.com</td>
+    </tr>
+    <tr>
+      <td>DLP660TE – 4K UHD</td>
+      <td>4K-enabled projector, with flexible light sources, using Texas Instruments’ DLP660TE chipset</td>
+      <td>VISITECH Engineering GmbH Wetzlar, Germany https://visitech.no/</td>
+    </tr>
+  </tbody>
+</table>
+
 If high spatial resolution is not required, an interesting alternative to a projector-based stimulator is one built from arrays of LEDs (e.g. Reiser and Dickinson, 2008; Wang et al., 2019). The main advantage of LED arrays is that they offer a more precise timing control compared to the combination of HDMI display and PC graphics card driven by software running on a desktop PC. Hence, LED arrays may allow refresh rates in the range of several hundreds of Hz (Reiser and Dickinson, 2008). However, apart from their lower spatial resolution, current LED arrays only support a low number of colour channels, making them less well suitable for chromatic processing studies. In addition, LED arrays typically require customised control electronics, whereas stimulators based on standard HDMI displays can be driven by the experimenter’s software of choice.
 
 For the experiments shown here, we run the LCr for simplicity in ‘video mode’, where it acts as a normal 60 Hz HDMI display. It is also possible to configure the LCr’s firmware in ‘pattern mode’ without requiring changes to the stimulator hardware. In pattern mode, the user can precisely define how the incoming stream of RGB bitplanes is interpreted and displayed. For example, it is possible to assign multiple LEDs to individual bitplanes and combinations thereof. Moreover, if a lower bit depth is acceptable, much higher frame rates can be achieved. While QDSpy supports the pattern mode, stimulus design can be more challenging, because the LCr receives its video input as 24 bit RGB data frames at a rate of 60 Hz, no matter how pattern mode interprets these data. For example, when configuring the LCr for 120 Hz (at half the bit depth), two consecutive ‘display frames’ need to be encoded in one 24-bit data frame by the stimulation software. Hence, the user should have a thorough knowledge of the LCr’s design, and studying the documentation of the LCr’s programming interface provided by Texas Instruments is recommended (for further details, see links in Table 1).
 
-## Towards a common stimulator design for vision research
+### Towards a common stimulator design for vision research
 
 Visual neuroscientists fundamentally rely on accurate stimulation, which not only includes choosing the appropriate spatial and temporal resolution, but also free control over the spectral properties. However, unlike for other equipment, such as amplifiers for electrophysiology, there is no selection of ‘standardised’ stimulation devices. Due to the lack of standardised yet flexible visual stimulators, many vision researchers employ specialised, often incompletely described solutions that address the needs of a particular experiment. This, in turn, may yield substantial problems in reproducibility and interpretation when comparing physiological data between laboratories. Here, we provide a detailed description of a highly flexible visual stimulator solution that uses commercial hardware only where necessary and otherwise relies on open hard- and software components. As our design can be easily adapted to different species’ and the experimentalist’s needs, it is suitable for a wide range of applications, ranging from psychophysics to single-cell physiology. By combining two LCrs and running them in pattern mode, structured stimulation with up to six chromatic channels at high frame rates is possible, which is critical for species with more than three spectral photoreceptor types and higher flicker fusion rates, such as many insects.
 
@@ -173,39 +737,142 @@ With this paper, we intend to start a community effort of sharing and further de
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>HR2.1:TN-XL</td>
+      <td>Wei et al., 2012</td>
+      <td></td>
+      <td>Dr. Bernd Wissinger (Tübingen University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tg(1.8ctbp2:SyGCaMP6f)</td>
+      <td>Rosa et al., 2016</td>
+      <td></td>
+      <td>Dr. Leon Lagnado (Sussex University)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KiCad EDA</td>
+      <td>http://kicad-pcb.org/</td>
+      <td></td>
+      <td>Electronics design software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenSCAD</td>
+      <td>http://www.openscad.org</td>
+      <td></td>
+      <td>3D CAD software</td>
+    </tr>
+  </tbody>
+</table>
+
 Note that the general stimulator design, operation and performance testing is described in the Results section. The respective parts for the mouse and the zebrafish stimulator versions are listed in Tables 2 and 3, respectively. Hence, this section focuses on details about the calibration procedures, 2P imaging, animal procedures, and data analysis.
 
-## Intensity calibration and gamma correction
+### Intensity calibration and gamma correction
 
 The purpose of the intensity calibration is to ensure that each LED evokes a similarly maximal photoisomerisation rate in its respective spectral cone type, whereas the gamma correction aims at linearising each LED’s intensity curve. All calibration procedures are described in detail in the iPython notebooks included in the open-visual-stimulator GitHub repository (for link, see Table 1).
 
 In case of the mouse stimulator, we used a photo-spectrometer (USB2000, 350–1000 nm, Ocean Optics, Ostfildern, Germany) that can be controlled and read-out from the iPython notebooks. It was coupled by an optic fibre and a cosine corrector (FOV 180°, 3.9 mm aperture) to the bottom of the recording chamber of the 2P microscope and positioned approximately in the stimulator’s focal plane. For intensity calibration, we displayed a bright spot (1,000 µm in diameter, max. intensity) of green and UV light to obtain spectra of the respective LEDs. We used a long integration time (1 s) and fitted the average of several reads (n = 10 for green; n = 50 reads for UV) with a Gaussian to remove shot noise. This yielded reliable measurements also at low LED intensities, which was particularly critical for UV LEDs.
 
-The spectrometer output (Smeas) was divided by the integration time (Δt, in s) to obtain counts/s and then converted into electrical power (Pel, in nW) using the calibration data (SCal, in µJ/count) provided by Ocean Optics,(1)Pel(λ) =SMeas(λ)/Δt ⋅SCal(λ) ⋅103,with wavelength λ. To obtain the photoisomerisation rate per photoreceptor type, we first converted from electrical power into energy flux (Peflux, in eV/s),(2)Peflux(λ) = Pel(λ)⋅a⋅10−9,where a = 6.242 ⋅1018 eV/J. Next, we calculated the photon flux (PPhi, in photons/s) using the photon energy Q (PQ, in eV),(3)PQ(λ) = c⋅h / (λ⋅10−9),(4)PPhi(λ) = Peflux(λ) / PQ(λ),with the speed of light, c = 299,792,458 m/s, and Planck’s constant, h = 4.135667 ⋅10-15 eV⋅s. The photon flux density (PE, [photons/s/µm2]) was then computed as(5)PE(λ) = PPhi(λ) / AStim,where AStim (in µm2) corresponds to the light stimulus area. To convert PE into photoisomerisation rate, we next determined the effective activation (SAct) of mouse photoreceptor types by the LEDs as(6)SAct(λ) = SOpsin(λ)⋅SLED(λ)with the peak-normalised spectra of the M- and S-opsins, SOpsin, and the green and UV LEDs, SLED. Sensitivity spectra of mouse opsins were derived from Equation 8 in Stockman and Sharpe (2000).
+The spectrometer output ($S_{meas}$) was divided by the integration time ($Δt$, in s) to obtain counts/s and then converted into electrical power ($P_{el}$, in nW) using the calibration data ($S_{Cal}$, in µJ/count) provided by Ocean Optics,
 
-For our LEDs (Table 2), the effective mouse M-opsin activation was 14.9% and 10.5% for the green and UV LED, respectively. The mouse S-opsin is only expected to be activated by the UV LED (52.9%) (Figure 3a, f). Next, we estimated the photon flux (RPh, [photons/s]) for each photoreceptor as(7)RPh(λ) = PE(λ)⋅ACollectwhere ACollect=0.2 µm2 corresponds to the light collection area of cone outer segments (Nikonov et al., 2006). The photoisomerisation rate (RIso, P*/photoreceptor/s) for each combination of LED and photoreceptor type was estimated using(8)RIso=∑RPh(λ)⋅SAct(λ),see Nikonov et al. (2006) for details. The intensities of the mouse stimulator LEDs were manually adjusted (Figure 2—figure supplement 5b,c) to an approximately equal photoisomerisation range from (in P*/cone/s ⋅103) 0.6 and 0.7 (stimulator shows black image) to 19.5 and 19.2 (stimulator shows white image) for M- and S-opsins, respectively (cf. Figure 3f). This corresponds to the low photopic range. The M-opsin sensitivity spectrum displays a ‘tail’ in the short wavelength range (due to the opsin’s β-band, see Figure 1a and Stockman and Sharpe, 2000), which means that it should be cross-activated by our UV LED. Specifically, while S-opsin should be solely activated by the UV LED (19.2 by UV vs. 0.1 by green; in P*/cone/s ⋅103), we expect M-opsin to be activated by both LEDs (19.5 by green vs. 3.8 by UV). The effect of such cross-activation can be addressed, for instance, by silent substitution (see below).
+$$
+P_{el}(\lambda)=S_{Meas}(\lambda)/Δt⋅S_{Cal}(\lambda)⋅10^{3},
+$$
+
+with wavelength $\lambda$. To obtain the photoisomerisation rate per photoreceptor type, we first converted from electrical power into energy flux ($P_{eflux}$, in eV/s),
+
+$$
+P_{eflux}(\lambda) = P_{el}(\lambda)⋅a⋅10^{−9},
+$$
+
+where $a$ = 6.242 ⋅1018 eV/J. Next, we calculated the photon flux ($P_{Phi}$, in photons/s) using the photon energy Q ($P_{Q}$, in eV),
+
+$$
+P_{Q}(\lambda) = c⋅h / (\lambda⋅10^{−9}),
+$$
+
+
+
+$$
+P_{Phi}(\lambda) = P_{eflux}(\lambda) / P_{Q}(\lambda),
+$$
+
+with the speed of light, $c$ = 299,792,458 m/s, and Planck’s constant, $h$ = 4.135667 ⋅10-15 eV⋅s. The photon flux density ($P_{E}$, [photons/s/µm2]) was then computed as
+
+$$
+P_{E}(\lambda) = P_{Phi}(\lambda) / A_{Stim},
+$$
+
+where $A_{Stim}$ (in µm2) corresponds to the light stimulus area. To convert $P_{E}$ into photoisomerisation rate, we next determined the effective activation ($S_{Act}$) of mouse photoreceptor types by the LEDs as
+
+$$
+S_{Act}(\lambda)=S_{Opsin}(\lambda)⋅S_{LED}(\lambda)
+$$
+
+with the peak-normalised spectra of the M- and S-opsins, $S_{Opsin}$, and the green and UV LEDs, $S_{LED}$. Sensitivity spectra of mouse opsins were derived from Equation 8 in Stockman and Sharpe (2000).
+
+For our LEDs (Table 2), the effective mouse M-opsin activation was 14.9% and 10.5% for the green and UV LED, respectively. The mouse S-opsin is only expected to be activated by the UV LED (52.9%) (Figure 3a, f). Next, we estimated the photon flux ($R_{Ph}$, [photons/s]) for each photoreceptor as
+
+$$
+R_{Ph}(\lambda)=P_{E}(\lambda)⋅A_{Collect}
+$$
+
+where $A_{Collect}=0.2$ µm2 corresponds to the light collection area of cone outer segments (Nikonov et al., 2006). The photoisomerisation rate ($R_{Iso}$, P*/photoreceptor/s) for each combination of LED and photoreceptor type was estimated using
+
+$$
+R_{Iso}=\sumR_{Ph}(\lambda)⋅S_{Act}(\lambda),
+$$
+
+see Nikonov et al. (2006) for details. The intensities of the mouse stimulator LEDs were manually adjusted (Figure 2—figure supplement 5b,c) to an approximately equal photoisomerisation range from (in P*/cone/s ⋅103) 0.6 and 0.7 (stimulator shows black image) to 19.5 and 19.2 (stimulator shows white image) for M- and S-opsins, respectively (cf. Figure 3f). This corresponds to the low photopic range. The M-opsin sensitivity spectrum displays a ‘tail’ in the short wavelength range (due to the opsin’s β-band, see Figure 1a and Stockman and Sharpe, 2000), which means that it should be cross-activated by our UV LED. Specifically, while S-opsin should be solely activated by the UV LED (19.2 by UV vs. 0.1 by green; in P*/cone/s ⋅103), we expect M-opsin to be activated by both LEDs (19.5 by green vs. 3.8 by UV). The effect of such cross-activation can be addressed, for instance, by silent substitution (see below).
 
 To account for the non-linearity of the stimulator output using gamma correction, we recorded spectra for each LED for different intensities (1,000 µm spot diameter; pixel values from 0 to 254 in steps of 2) and estimated the photoisomerisation rates, as described above. From these data, we computed a lookup table (LUT) that allows the visual stimulus software (QDSpy) to linearise the intensity functions of each LED (cf. Figure 3e; for details, see iPython notebooks; Table 1).
 
-In case of the zebrafish stimulator, to determine the LED spectra, we used a compact CCD Spectrometer (CCS200/M, Thorlabs, Dachau, Germany) in combination with the Thorlabs Optical Spectrum Analyzers (OSA) software, coupled to a linear fibre patch cable. To determine the electrical power (Pel, in nW), we used an optical energy power meter (PM100D, Thorlabs) in combination with the Thorlabs Optical Power Monitor (OPM) software, coupled to a photodiode power sensor (S130VC, Thorlabs). Both probes were positioned behind the teflon screen (0.15 mm, for details, see Table 3). Following the same procedure as described above, we determined the photoisomerisation rate (RIso, P*/photoreceptor/s) for each combination of LED and photoreceptor type (cf. iPython notebooks; Table 1).
+In case of the zebrafish stimulator, to determine the LED spectra, we used a compact CCD Spectrometer (CCS200/M, Thorlabs, Dachau, Germany) in combination with the Thorlabs Optical Spectrum Analyzers (OSA) software, coupled to a linear fibre patch cable. To determine the electrical power ($P_{el}$, in nW), we used an optical energy power meter (PM100D, Thorlabs) in combination with the Thorlabs Optical Power Monitor (OPM) software, coupled to a photodiode power sensor (S130VC, Thorlabs). Both probes were positioned behind the teflon screen (0.15 mm, for details, see Table 3). Following the same procedure as described above, we determined the photoisomerisation rate ($R_{Iso}$, P*/photoreceptor/s) for each combination of LED and photoreceptor type (cf. iPython notebooks; Table 1).
 
-## Spatial resolution measurements
+### Spatial resolution measurements
 
-To measure the spatial resolution of the mouse stimulator, we removed the lens of a Raspberry Pi camera chip (OV5647, Eckstein GmbH, Clausthal-Zellerfeld, Germany) and positioned it at the level of the recording chamber. Then, we projected UV and green checkerboards of varying checker sizes (2, 3, 4, 5, 10, 20, 30, 40, 60, 80, and 100 µm) through an objective lens (MPL5XBD (5x), Olympus, Germany) or through the condenser onto the chip of the camera (Figure 4a). For each checker size and LED, we extracted intensity profiles using ImageJ (Figure 4b) and estimated the respective contrast as IMax-IMin (Figure 4c). To quantify the steepness of the transition between bright and dark checkers, we peak-normalised the intensity profiles and normalised relative to half-width of the maximum (Figure 4d). Next, we fitted a sigmoid to the rising phase of the intensity profile(9)y =K0+ K1/ (1+exp(-(x-K2)/K3))and used 1/K3 as estimate of the rise time and as a proxy for ‘sharpness’ of the transitions between black and white pixels (Figure 4e).
+To measure the spatial resolution of the mouse stimulator, we removed the lens of a Raspberry Pi camera chip (OV5647, Eckstein GmbH, Clausthal-Zellerfeld, Germany) and positioned it at the level of the recording chamber. Then, we projected UV and green checkerboards of varying checker sizes (2, 3, 4, 5, 10, 20, 30, 40, 60, 80, and 100 µm) through an objective lens (MPL5XBD (5x), Olympus, Germany) or through the condenser onto the chip of the camera (Figure 4a). For each checker size and LED, we extracted intensity profiles using ImageJ (Figure 4b) and estimated the respective contrast as $I_{Max}-I_{Min}$ (Figure 4c). To quantify the steepness of the transition between bright and dark checkers, we peak-normalised the intensity profiles and normalised relative to half-width of the maximum (Figure 4d). Next, we fitted a sigmoid to the rising phase of the intensity profile
+
+$$
+y=K_{0}+K_{1}/(1+exp(-(x-K_{2})/K_{3}))
+$$
+
+and used $1/K_{3}$ as estimate of the rise time and as a proxy for ‘sharpness’ of the transitions between black and white pixels (Figure 4e).
 
 To measure the difference in focal plane of UV and green LED due to chromatic aberration, we projected a 40 and 100 µm checkerboard through a 20x objective (W Plan-Apochromat 20×/1.0 DIC M27, Zeiss, Oberkochen, Germany) onto the Raspberry Pi camera (see above).
 
-## Fast intensity measurements
+### Fast intensity measurements
 
 To verify temporal separation, we measured the time course of the green LED (mouse stimulator) with and without blanking using a PMT positioned at the level of the recording chamber (Figure 2—figure supplement 2a). Traces were recorded with pClamp at 250 kHz (Molecular Devices, Biberach an der Riss, Germany). To estimate the amount of intensity modulation due to aliasing (Figure 2—figure supplement 2b), we measured the intensity of both LEDs together (‘white’) driven by a chirp stimulus with blanking at the same position using a photodiode (Siemens silicon photodiode BPW 21, Reichelt, Sande, Germany; as light-dependent current source in a transimpedance amplifier circuit). Next, intensity traces were box-smoothed with a box width of 100 ms, which roughly corresponds to the integration time of mouse cone photoreceptors (Umino et al., 2008).
 
-## Silent substitution
+### Silent substitution
 
-For our measurements in mouse cones, we used a silent substitution protocol (Estévez and Spekreijse, 1982) for generating opsin-isolating stimuli to account for the cross-activation of mouse M-opsin by the UV LED. Here, one opsin type is selectively stimulated by presenting a scaled, counterphase version of the stimulus to all other opsin types (cf. Figure 5). Specifically, we first used the ratio of activation (as photoisomerisation rate) of M-opsin by UV and green to estimate the amount of cross-activation (SCrossAct). For our recordings, an activation of M-opsin of 19.5 and 3.8 P*/cone/s ⋅103 for green and UV LED resulted in a cross-activation of SCrossAct=0.195. Then, SCrossAct was used to scale the intensity of the counterphase stimulus:(10)IG= I-IUV⋅SCrossAct
+For our measurements in mouse cones, we used a silent substitution protocol (Estévez and Spekreijse, 1982) for generating opsin-isolating stimuli to account for the cross-activation of mouse M-opsin by the UV LED. Here, one opsin type is selectively stimulated by presenting a scaled, counterphase version of the stimulus to all other opsin types (cf. Figure 5). Specifically, we first used the ratio of activation (as photoisomerisation rate) of M-opsin by UV and green to estimate the amount of cross-activation ($S_{CrossAct}$). For our recordings, an activation of M-opsin of 19.5 and 3.8 P*/cone/s ⋅103 for green and UV LED resulted in a cross-activation of $S_{CrossAct}=$0.195. Then, $S_{CrossAct}$ was used to scale the intensity of the counterphase stimulus:
+
+$$
+I_{G}=I-I_{UV}⋅S_{CrossAct}
+$$
 
 For our recordings in zebrafish larvae, we did not use silent substitution. However, we describe a possible approach for the zebrafish (or a comparable tetrachromatic species) in our online resources (Table 1).
 
-## Animals and tissue preparation
+### Animals and tissue preparation
 
 All animal procedures (mice) were approved by the governmental review board (Regierungspräsidium Tübingen, Baden-Württemberg, Konrad-Adenauer-Str. 20, 72072 Tübingen, Germany) and performed according to the laws governing animal experimentation issued by the German Government. All animal procedures (zebrafish) were performed in accordance with the UK Animals (Scientific Procedures) Act 1986 and approved by the animal welfare committee of the University of Sussex (zebrafish larvae).
 
@@ -213,14 +880,26 @@ For the mouse experiments, we used one 12-week-old HR2.1:TN-XL mouse; this mouse
 
 For the zebrafish larvae experiments, we used 7 day post fertilisation (dpf) larvae of the zebrafish (Danio rerio) line tg(1.8ctbp2:SyGCaMP6f), which expresses the genetically encoded Ca2+ indicator GCaMP6f fused with synaptophysin under the RibeyeA promoter and allows measuring light-evoked Ca2+ responses in bipolar cell synaptic terminals (Dreosti et al., 2009; Johnston et al., 2019; Rosa et al., 2016; Zimmermann et al., 2018). Animals were grown from 10 hr post fertilisation (hpf) in 200 µM of 1-phenyl-2-thiourea (Sigma) to prevent melanogenesis (Karlsson et al., 2001). Animals were housed under a standard 14/10 hr day-night rhythm and fed 3x a day. Before the recordings, zebrafish larvae were immobilised in 2% low-melting-point agarose (Fischer Scientific, Loughborough, UK; Cat: BP1360-100), placed on a glass coverslip and submersed in fish water. To prevent eye movement during recordings, α-bungarotoxin (1 nl of 2 mg/ml; Tocris, Bristol, UK; Cat: 2133) was injected into the ocular muscles behind the eye.
 
-## Two-photon imaging
+### Two-photon imaging
 
 For all imaging experiments, we used MOM-type two-photon (2P) microscopes (designed by W. Denk, MPI, Heidelberg; purchased from Sutter Instruments/Science Products, Hofheim, Germany). For image acquisition, we used custom software (ScanM by M. Müller, MPI Neurobiology, Munich, and T.E.) running under IGOR Pro 6.3 for Windows (Wavemetrics, Lake Oswego, OR). The microscopes were equipped each with a mode-locked Ti:Sapphire laser (MaiTai-HP DeepSee, Newport Spectra-Physics, Darmstadt, Germany; or Chameleon Vision-S, Coherent; Ely, UK), two fluorescence detection channels for eCFP (FRET donor; HQ 483/32, AHF, Tübingen, Germany) and citrine (FRET acceptor; HQ 538/50, AHF) or GCaMP6f (ET 525/70 or ET 525/50, AHF), and a water immersion objective (W Plan-Apochromat 20×/1.0 DIC M27, Zeiss, Oberkochen, Germany). The excitation laser was tuned to 860 nm and 927 nm for TN-XL (eCFP) in mouse and GCaMP6f in zebrafish, respectively. Time-lapsed image series were recorded with 64 × 16 pixels (at 31.25 Hz) or 128 × 64 (at 15.625 Hz). Detailed descriptions of the setups for mouse (Euler et al., 2019; Euler et al., 2009; Franke et al., 2017) and zebrafish (Zimmermann et al., 2018) have been published elsewhere.
 
-## Data analysis
+### Data analysis
 
-Data analysis was performed using IGOR Pro (Wavemetrics). Regions of interest (ROIs) of individual synaptic terminals (of mouse cones and zebrafish bipolar cells) were manually placed. Then, Ca2+ traces for each ROI were extracted for mouse cones as ΔR/R, with the ratio R=FA/FD of the FRET acceptor (citrine) and donor (eCFP) fluorescence, and resampled at 500 Hz. For zebrafish bipolar cells, Ca2+ traces for each ROI were extracted and detrended by high-pass filtering above ~0.1 Hz, followed by z-normalisation based on the time interval 1–6 s at the beginning of recordings using custom-written routines under IGOR Pro. A stimulus synchronisation marker that was generated by the visual stimulation software (Results) and embedded in the recordings served to align the Ca2+ traces relative to the stimulus with ≤2 ms precision (depending on the scan line duration, see Results and Euler et al., 2019). For this, the timing for each ROI was corrected for sub-frame time-offsets related to the scanning.
+Data analysis was performed using IGOR Pro (Wavemetrics). Regions of interest (ROIs) of individual synaptic terminals (of mouse cones and zebrafish bipolar cells) were manually placed. Then, Ca2+ traces for each ROI were extracted for mouse cones as $ΔR/R$, with the ratio $R=F_{A}/F_{D}$ of the FRET acceptor (citrine) and donor (eCFP) fluorescence, and resampled at 500 Hz. For zebrafish bipolar cells, Ca2+ traces for each ROI were extracted and detrended by high-pass filtering above ~0.1 Hz, followed by z-normalisation based on the time interval 1–6 s at the beginning of recordings using custom-written routines under IGOR Pro. A stimulus synchronisation marker that was generated by the visual stimulation software (Results) and embedded in the recordings served to align the Ca2+ traces relative to the stimulus with ≤2 ms precision (depending on the scan line duration, see Results and Euler et al., 2019). For this, the timing for each ROI was corrected for sub-frame time-offsets related to the scanning.
 
-Response quality index. To measure how well a cell responded to the sine wave stimulus, we computed the signal-to-noise ratio(11)Qi = Var[(C)r]t(Var[C]t)rwhere C is the T by R response matrix (time samples by stimulus repetitions), while ()x and Var[]x denote the mean and variance across the indicated dimension, respectively (Baden et al., 2016; Franke et al., 2017). For further analysis, we used only cells that had a Qi>0.3.
+Response quality index. To measure how well a cell responded to the sine wave stimulus, we computed the signal-to-noise ratio
 
-Spectral contrast. The mean trace in response to the green and UV sine wave stimulus was used to analyse the spectral sensitivity of the cones. For that, we computed the power spectrum of the trace and used the power (P) at the fundamental frequency (1 Hz) as a measure of response strength. Then, the spectral contrast (SC) was estimated as(12)SC = PG − PBPG + PB,where PG and PB correspond to the responses to green and UV, respectively. For statistical comparison of SC values with and without silent substitution (see above), we used the Wilcoxon signed-rank test for non-parametric, paired samples.
+$$
+Qi=\frac{Var[(C)_{r}]_{t}}{(Var[C]_{t})_{r}}
+$$
+
+where $C$ is the $T$ by $R$ response matrix (time samples by stimulus repetitions), while $()_{x}$ and $Var[]_{x}$ denote the mean and variance across the indicated dimension, respectively (Baden et al., 2016; Franke et al., 2017). For further analysis, we used only cells that had a $Qi>0.3$.
+
+Spectral contrast. The mean trace in response to the green and UV sine wave stimulus was used to analyse the spectral sensitivity of the cones. For that, we computed the power spectrum of the trace and used the power ($P$) at the fundamental frequency (1 Hz) as a measure of response strength. Then, the spectral contrast ($SC$) was estimated as
+
+$$
+SC = \frac{P_{G} − P_{B}}{P_{G} + P_{B}},
+$$
+
+where $P_{G}$ and $P_{B}$ correspond to the responses to green and UV, respectively. For statistical comparison of $SC$ values with and without silent substitution (see above), we used the Wilcoxon signed-rank test for non-parametric, paired samples.

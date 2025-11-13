@@ -57,6 +57,53 @@ ZP proteins are synthesized as polypeptide precursors by growing oocytes and are
 
 To examine possible effects of the loss of ZP proteins on fertility of mice, mouse lines were established in which genes encoding mZP2 and mZP3 were inactivated by either homologous recombination or insertional mutagenesis (Table 1). Compared to wild-type females, homozygous nulls for genes encoding either mZP2 (mZP2−/−) or mZP3 (mZP3−/−) were completely infertile and exhibited smaller ovaries, reduced numbers of Graafian follicles and ovulated eggs, and fewer cumulus cells that were disorderly arrayed around oocytes (Liu et al., 1996; Rankin et al., 1996; Rankin et al., 2001; Wassarman and Litscher, 2018). These findings suggest that both mZP2 and mZP3 must be present to construct ZP fibrils and that the presence of a ZP around oocytes is essential for fertility in female mice. In this context, homozygous nulls for the gene encoding mZP1 (mZP1−/−) had an abnormal ZP that was insufficiently crosslinked such that cleavage-stage embryos were extremely fragile and often lost as they traversed the female reproductive tract on their way to the uterus (Rankin et al., 1999). Heterozygous nulls for the gene encoding mZP3 (mZP3+/−) were as fertile as wild-type females, but their eggs had a thin ZP (ave. width 2.7 ± 1.2 µm) and contained about one-half the amount of mZP2 and mZP3 found in ZP of eggs from wild-type mice (Wassarman et al., 1997). This suggests that ZP width is not a critical parameter for either binding of sperm to the ZP or fertilization of eggs.
 
+**Table 1.**
+ Phenotypes of ZP1, 2, 3 null female mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Fertility</th>
+      <th>Zona Pellucida</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZP1–3 wild-type</td>
+      <td>Fertile</td>
+      <td>Normal</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ZP1 homozygous-null</td>
+      <td>Reduced</td>
+      <td>Abnormal</td>
+      <td>Rankin et al., 1999</td>
+    </tr>
+    <tr>
+      <td>ZP2 homozygous-null</td>
+      <td>Infertile</td>
+      <td>None</td>
+      <td>Rankin et al., 2001</td>
+    </tr>
+    <tr>
+      <td>ZP3 homozygous-null</td>
+      <td>Infertile</td>
+      <td>None</td>
+      <td>Rankin et al., 1996; Liu et al., 1996</td>
+    </tr>
+    <tr>
+      <td>ZP3 heterozygous-null</td>
+      <td>Fertile</td>
+      <td>Thin</td>
+      <td>Wassarman et al., 1997</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Mutation of human ZP genes causes infertility
 
 It has been estimated that ≃50% of human infertility cases have a genetic component and that ≃50% are due to a female factor (Deshpande and Gupta, 2019). In 2005, a correlation was found between sequence variations in genes encoding human ZP proteins and fertilization failure (Männikkö et al., 2005). Subsequently, a mutated form of hZP1 was implicated in familial infertility in human females (Huang et al., 2014).
@@ -67,6 +114,6 @@ In recent years, more than two dozen cases of infertility in human female patien
 
 **Figure 5.:** Shown is the organization of exons (red) for hZP1 (12 exons), hZP2 (19 exons), hZP3 (8 exons), and hZP4 (12 exons). Exons subject to mutations that caused infertility are marked by an X. Also shown are schematic representations of hZP1–4 polypeptides with the signal sequence (SS; red), trefoil domain (TD; brown), ZP domain (ZPD) consisting of ZP-N (green) and ZP-C (blue) subdomains, transmembrane domain (TMD; yellow), and extra copies of ZP-N subdomain (green) between the N-terminus of the polypeptides and the ZPD. The sites of mutations in the polypeptides are indicated by black vertical lines.
 
-## Conclusions
+### Conclusions
 
 The findings described here demonstrate that interference with construction of a ZP around growing oocytes, by either inactivation or mutation of genes encoding ZP proteins, results in female infertility in mice and humans. Failure to construct a ZP apparently interferes with bidirectional communication between oocytes and follicle cells in the ovary. Since the ZP is a viscoelastic ECM, it likely provides stability for contacts between projections from innermost cumulus cells (corona radiata) and oocyte microvilli that pass through the ZP and form the gap junctions shown to be essential for oocyte growth and follicle development (Gilula et al., 1978; Li and Albertini, 2013; Clarke, 2018; Baena and Terasaki, 2019). In the absence of a thickening ZP, interactions between growing oocytes and innermost cumulus cells may be unstable, leading to a significant reduction in the number of fully grown oocytes, ovulated eggs, and Graafian follicles and to female infertility. It is likely that further research with infertile women in in vitro fertilization (IVF) clinics will lead to identification of many additional mutations in genes encoding human ZP proteins.

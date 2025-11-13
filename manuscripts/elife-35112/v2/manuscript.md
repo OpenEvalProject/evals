@@ -25,13 +25,25 @@
 
 ## Abstract
 
-10.7554/eLife.35112.001 Protein translocation across cell membranes is a ubiquitous process required for protein secretion and membrane protein insertion. In bacteria, this is mostly mediated by the conserved SecYEG complex, driven through rounds of ATP hydrolysis by the cytoplasmic SecA, and the trans-membrane proton motive force. We have used single molecule techniques to explore SecY pore dynamics on multiple timescales in order to dissect the complex reaction pathway. The results show that SecA, both the signal sequence and mature components of the pre-protein, and ATP hydrolysis each have important and specific roles in channel unlocking, opening and priming for transport. After channel opening, translocation proceeds in two phases: a slow phase independent of substrate length, and a length-dependent transport phase with an intrinsic translocation rate of ~40 amino acids per second for the proOmpA substrate. Broad translocation rate distributions reflect the stochastic nature of polypeptide transport.
+Protein translocation across cell membranes is a ubiquitous process required for protein secretion and membrane protein insertion. In bacteria, this is mostly mediated by the conserved SecYEG complex, driven through rounds of ATP hydrolysis by the cytoplasmic SecA, and the trans-membrane proton motive force. We have used single molecule techniques to explore SecY pore dynamics on multiple timescales in order to dissect the complex reaction pathway. The results show that SecA, both the signal sequence and mature components of the pre-protein, and ATP hydrolysis each have important and specific roles in channel unlocking, opening and priming for transport. After channel opening, translocation proceeds in two phases: a slow phase independent of substrate length, and a length-dependent transport phase with an intrinsic translocation rate of ~40 amino acids per second for the proOmpA substrate. Broad translocation rate distributions reflect the stochastic nature of polypeptide transport.
 
 ## Introduction
 
 Protein secretion is essential for life; responsible for the delivery of proteins to and across the cell surface. The major route for this process is by way of the ubiquitous Sec machinery, comprising at its core a heterotrimeric complex: SecYEG in the plasma membrane of bacteria and archaea, and Sec61αβγ in the eukaryotic endoplasmic reticulum (ER). Pre-proteins are targeted to the Sec machinery with the aid of an N-terminal signal sequence (SS) or a trans-membrane helix (TMH), and translocated through the Sec machinery in an unfolded conformation (Arkowitz et al., 1993). This can occur either during their synthesis (co-translationally), or afterwards (post-translationally); in the latter case, pre-proteins are prevented from folding by cytosolic chaperones, such as SecB in bacteria (Kumamoto and Beckwith, 1983; Weiss et al., 1988). Bacterial inner membrane proteins are generally secreted co-translationally, while proteins destined for the periplasm, outer membrane or the extra-cellular medium, tend to follow the post-translational route, driven there by the ATPase SecA (Hartl et al., 1990; Brundage et al., 1990; Lill et al., 1989).
 
 The protein-channel is formed through the centre of SecY, between two pseudo-symmetrical halves, each containing five TMHs (Figure 1) (Cannon et al., 2005; Van den Berg et al., 2004). When at rest the channel is kept closed by a short, usually α-helical plug and a ring of six hydrophobic residues, which serves to prevent ion leakage and dissipation of the proton motive force (PMF) (Figure 1A) (Saparov et al., 2007). Separation of these domains opens a channel across the membrane (secretion) as well as a lateral gate (LG) for SS docking and membrane protein insertion (Figure 1B). Activation is achieved by the ribosome nascent chain complex (Jomaa et al., 2016; Voorhees and Hegde, 2016), or by association of pre-protein and SecA (Corey et al., 2016b; Lill et al., 1989).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig1-v2.jpg)
+
+**Figure 1.:** (A) Closed SecYEG (PDB: 5AWW, Tanaka et al., 2015). SecYEG (light red) is shown embedded in a modelled membrane (grey) with the plug helix highlighted (purple). Also identified are the transmembrane helices TMH2 (magenta) and TMH7 (red) that are demarking the lateral gate (LG). The structurally equivalent position of E. coli SecY residue M63 within the plug is depicted as a blue ball while a cytoplasmic side reference residue K106 is shown as a yellow ball. A side view (left) and a periplasmic view (right) are shown together with a schematic of each state (SecYEG in red, the plug in purple). The respective distances are shown as yellow double-arrow line with the dyes shown as stars (blue and yellow). (B) The open state SecYEG:SecA (PDB: 5EUL, (Li et al., 2016). Colours and labelling are as in panel A, with Sec A in transparent blue and the translocated polypeptide (green) and signal sequence (SS, green with black outline). Sec A is depicted blue in the schematics.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Closed state (PDB: 1RHZ) (Van den Berg et al., 2004). Accessible volumes (orange for dye attached to the reference residue and cyan for the plug probe) obtained by modelling the dye positions when attached to the mutated residues (blue and yellow spheres) via a short C6 aliphatic linker (not shown). Ribbon colours: SecYEG (light red), TMH2 (magenta) and TMH7 (red), plug (purple). Note that the orientation of the lateral gate (LG) is slightly different from that shown in Figure 1 to aid visualisation of the accessible volumes. (B) As (A), but for the Closed state (PDB:5AWW) (Tanaka et al., 2015). (C) As (A), but for the Open state (PDB:5EUL) (Li et al., 2016). SecA is shown in transparent blue and SS is green. (D) As (A), but for the Open state (PDB:3DIN) (Zimmer et al., 2008). SecA is shown in transparent blue. (E) Distributions of inter-probe distances computed from the accessible volumes in panels (A–D). Open states are in green (PDB: 5eul solid and 3din dashed line) while closed states are black (PDB: 5aww solid and 1rhz dashed line). (F) Distribution of FRET efficiencies derived from the distance distributions in panel (E). Colour coding as in panel E.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Protease protection assay performed with wild-type WT SecYEG (unlabelled) and SecYMKEG mutant labelled with AlexaFluor dyes. A 233 amino acid N-terminal fragment of proOmpA was used as substrate. 10% lane corresponds to the 10% fraction of the substrate added to the reaction and was used to quantify the amount of protected polypeptide after quenching the reaction (lanes labelled 1 mM ATP represent triplicate samples). A negative control reaction was performed in the absence of ATP (-ATP lane). (B) Efficiency obtained by densitometry using the density of 10% control band as an internal standard. Error bars represent standard deviations estimated from the three repeats in (A).
 
 Despite numerous protein structures of the bacterial, archaeal and eukaryotic Sec systems (see (Collinson et al., 2015) and references therein), no consensus has yet emerged for the dynamic mechanism underlying translocation. Certainly, the bacterial initiation complex: pre-protein-SecA-SecYEG, undergoes a series of conformational changes prior to translocation. This involves the intercalation of the SS into the LG of SecY – at the interface with the lipid bilayer, between TMHs 2 and 7 (Figure 1B) (Briggs et al., 1986; Hizlan et al., 2012; Li et al., 2016; McKnight et al., 1991). This in turn causes TMH7 to relocate and the plug to become displaced from the channel, in a process termed ‘unlocking’ (Corey et al., 2016b; Hizlan et al., 2012). Meanwhile, the association of SecA causes a partial opening of the channel and the mobilisation of the pre-protein cross-linking domain of SecA, which forms a clamp around the translocating pre-protein (Zimmer et al., 2008). Together, these steps lead to full activation of the SecA ATPase and prime the channel to translocate the remainder of the pre-protein. However, the order of events, energy requirements and kinetics of these steps have yet to be resolved.
 
@@ -43,15 +55,31 @@ Here, we exploit single molecule Förster Resonance Energy Transfer (FRET) analy
 
 ## Results
 
-## Selection of surface residues for dye attachment
+### Selection of surface residues for dye attachment
 
 Building on the successful application of single molecule FRET to follow SecYEG opening (Allen et al., 2016), we utilised a similar approach to follow another key event associated with protein transport: the movement of the SecY plug during complex activation and channel opening. The plug helix is expected to relocate during activation of the channel by association of the SS and SecA, and remains open during the protein translocation process (Bieker et al., 1990; Flower et al., 1995; Hizlan et al., 2012; Li et al., 2016; Robson et al., 2009a; Tam et al., 2005; Zimmer et al., 2008). Met63 (E. coli numbering) of the plug region of SecY was selected for dye attachment in order to monitor its mobility (Figure 1). As FRET is most sensitive for inter-dye distances close to the Förster radius (6 nm for Alexa Fluor 488 and 594 dye pair used here), we chose the solvent-accessible residue Lys106, within the loop on the cytoplasmic side of SecY, as the reference dye attachment site (Figure 1).
 
 In order to verify the suitability of this labelling scheme, the positions accessible to the attached dyes (accessible volumes) were modelled onto the available closed and open state crystal structures of SecYEG and SecA, using a Monte Carlo protocol that checks for steric clashes (Figure 1—figure supplement 1A–D). The resulting inter-dye distance distributions (Figure 1—figure supplement 1E) yielded theoretical FRET efficiency (EFRET) histograms (Figure 1—figure supplement 1F) centred at low EFRET values (0.16–0.2) for the two open configurations sampled here and at 0.4 with ~0.6 shoulder for the closed state. These differences are sufficient to be distinguishable by single molecule FRET; hence, M63 and K106 were mutated to cysteine in a Cys-free SecYEG variant (Deville et al., 2011), and the resulting protein was labelled with Alexa Fluor 488 and 594 maleimide dyes (the doubly labelled protein is hereafter designated SecYMKEG). Bulk transport assays utilising a model pre-protein substrate (233 amino acid long variant of proOmpA; see Materials and methods), showed that the labelled SecYMKEG was fully active for transport (Figure 1—figure supplement 2).
 
-## Single molecule monitoring of plug relocation
+### Single molecule monitoring of plug relocation
 
 The expected EFRET signal during translocation is schematically depicted in Figure 2A. The duration (dwell time) of the open, low-FRET state is related to the duration of translocation event and thus is expected to be inversely dependent on the translocation rate, and to increase with the length of the substrate. Based on previous ensemble translocation rate estimates (Brundage et al., 1990; De Keyzer et al., 2002), the open state is expected to persist from seconds to minutes, while the rates of the transitions between the open and closed states (Figure 2A, red and blue dashed vertical lines) although unknown, are likely to be much faster. In order to capture the slow dwell times and potentially fast transitions, two complementary single molecule detection techniques were employed: confocal microscopy for detection of events on the millisecond timescale (Figure 2B) and total internal reflection (TIRF) imaging of immobilised vesicles for longer observations lasting up to several minutes (Figure 2C). The former allowed us to explore the rate of interconversion between closed and open states, whereas the latter was used to measure the duration of translocation and determine the translocation rate for individual SecYMKEG complexes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig2-v2.jpg)
+
+**Figure 2.:** (A) Expected changes in the FRET efficiency as a consequence of plug displacement during translocation. Pre-translocation, high FRET closed state (black dashed line) changes rapidly to a low FRET, open state (red dashed line) and remains open (green dashed line) until closing (blue dashed line). (B) Schematic depiction of confocal (blue confocal volume) detection of freely diffusing proteoliposomes containing SecYMKEG (red) embedded in the bilayer (grey) with recurrence and diffusion paths shown as arrows. (C) Schematic depiction of proteoliposome immobilized via a biotinylated lipid to a streptavidin (green) coated cover slip. Laser beam (blue) in a total internal reflection fluorescence (TIRF) mode creates a thin layer (~500 nm) of evanescent optical field close to the surface. (D) Example of fluorescence time traces collected in confocal microscope (donor channel -blue, acceptor channel – orange, shown with opposite sign for clarity) containing a train of bursts from recurrence. FRET data sets were collected under steady state translocation conditions, that is in the presence of short proOmpA substrate (100 aa, 700 nM), the ATPase SecA (1 μM), the chaperone SecB (10 μM) and 2 mM ATP. (E) FRET efficiency histograms derived from confocal data (10,000 events) under steady state translocation conditions. A sum (solid black line) of two Gaussian functions (black dashed lines) approximates the experimental histograms. The histogram was corrected for contribution from the 50% SecYMKEG in opposite orientation which is unable to bind SecA and translocate (see Materials and methods and Figure 2—figure supplement 2 for further details). (F) Example of TIRF fluorescence trace for translocation of proOmpA 100 aa substrate with dwell times on the order of seconds (donor channel is blue, acceptor orange and FRET efficiency shown in grey). The system starts in a closed state, undergoes initiation and opening of the plug (indicated by a red star below the trace), which remains open during translocation (green dashed line under the trace). After translocation is finished, the plug snaps back (blue star) to seal the pore and the system remains in the closed state (black dashed line) until another round of translocation or one of the dyes photobleaches (magenta arrow). Note that duration of the translocation events varies and reflects the stochastic nature of the process. (G) TIRF data histogram (300 events) collected during translocation of proOmpA 100 aa under steady state, multiple turnover conditions as seen in panel F above. Fitting to two Gaussians is depicted as in the panel E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) SecYMKEG alone. All data were collected using the confocal setup and histograms are fitted to a sum (solid magenta) of three Gaussians (dashed lines), of which the two minor contributions (dashed green and black lines) had the positions and widths fixed to the values obtained for the closed and open distributions in panels B and C, respectively. A part open state component is shown as dashed yellow. The fit from Figure 2, panel E is shown for reference (grey solid line). (B) SecYMKEG:SecA in 2 mM ATP. The histogram was corrected for contribution from the 50% SecYMKEG in opposite orientation which is unable to bind SecA (unresponsive population), that is by subtracting appropriately scaled histogram shown in Panel A from the data (see Figure 2—figure supplement 2). A black dashed line represents a fit to a single Gaussian corresponding to the closed state. The fit from Figure 2, panel E is shown for reference (grey solid line). (C) Open state trapped by addition of 5 mM AMP-PNP to translocating SecYMKEG:SecA:SecB:pOA:ATP. Corrected for the contribution from the unresponsive population of SecYMKEG (see Figure 2—figure supplement 2). A green dashed line represents a fit to a single Gaussian corresponding to the open state. A black dashed line represents a fit to a single Gaussian corresponding to the closed state. Solid magenta line represents the sum of the two fitted Gaussians. The fit from Figure 2, panel E is shown for reference (grey solid line).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** FRET distributions from confocal experiment were corrected for contribution from the 50% SecYMKEG in opposite orientation by subtracting appropriately scaled FRET distribution of SecYMKEG alone (Figure 2—figure supplement 1A). Top panel shows the raw histogram for the open trapped configuration prior to the subtraction of the SecYMKEG alone data. The bottom panel shows the subtraction result. Green dashed line depicts Gaussian fit with the centre fixed at the value representing the open state, black dashed line depicts the closed state envelope, yellow dashed line shows Gaussian corresponding to SecYMKEG alone, magenta envelope is the sum of all contributing Gaussians.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The top panel depicts a time trace of fluorescence counts with one train of recurring bursts belonging to the same vesicle. For detecting transitions within a set time window (e.g. 50 ms), an initial burst is selected (green box) and the corresponding initial FRET efficiency is calculated from the donor and acceptor photon counts (E1). Another burst is then identified at a time delay Δt (red box) within the set time window (e.g. Δt < 50 ms and belonging to the same burst train) and the final E2 value is computed. A point is added to the bin at the coordinate (E1, E2) in a two-dimensional histogram (lower panel). Since the same molecule (vesicle) is being observed the point essentially represents a trajectory from E1 state to E2 state within the time Δt. This is repeated for all combination of identifiable pairs of bursts within the same train and with time delays falling into the set window and then also for separate trains and the resulting (E1, E2) pairs are collated in the two-dimensional histogram. When enough points are within the histogram, it may be converted into contour plots (colour-coded heat maps) which essentially represent transition probability densities (colour scale bar on the right hand side) for the change from FRET state E1 to E2.
 
 For single molecule analysis, SecYMKEG was reconstituted into 100 nm diameter proteoliposomes formed from E. coli polar lipids, at concentrations to give at most one molecule of translocon per vesicle (Allen et al., 2016; Deville et al., 2011). The SecYMKEG proteoliposomes were then either diluted to pM concentration for confocal detection (Figure 2B) or immobilised onto a glass surface via a biotin:streptavidin linker and imaged using TIRF microscopy (Figure 2C). For each setup, FRET datasets were collected in the presence of all components required for translocation: precursor protein proOmpA, the ATPase SecA, the chaperone SecB and ATP.
 
@@ -67,7 +95,7 @@ The open state control was prepared by first saturating SecYMKEG proteoliposomes
 
 The distinct, intermediate nature of the SecYEG FRET efficiency histogram (Figure 2—figure supplement 1A) as compared to either the closed (Figure 2—figure supplement 1B) or the open (Figure 2—figure supplement 1C) state enabled the correction for the contribution of the 50% complexes embedded into the liposomes with their cytoplasmic face facing inwards; that is not able to respond to the addition of SecA and other components added to the outside of the vesicles. The corrected histograms can be readily decomposed into closed and open state contributions (Figure 2—figure supplement 2).
 
-## Fast (ms) plug opening requires ATP hydrolysis
+### Fast (ms) plug opening requires ATP hydrolysis
 
 Both TIRF and confocal microscopy revealed that SecYMKEG occupies discrete closed (inactive) and open (translocating) states under steady-state conditions. While the transitions between them are seen as instantaneous within the time resolution of the TIRF method (limited by signal to 0.2 s per frame), it is possible to resolve these events with confocal data collection on the millisecond timescale. On average bursts last for only a few milliseconds (Figure 3—figure supplement 1A), but it is possible to take advantage of the known behaviour of single particles in dilute solutions. As illustrated in Figure 2B, highly diluted diffusing particles are likely to revisit the confocal volume within a short time, while entry of another particle in the same time frame is statistically less probable. This produces a train of closely spaced bursts (Figure 2D), which result from multiple passages of the same vesicle through the confocal volume – a phenomenon called recurrence (Figure 2B) (Hoffmann et al., 2011). When the diffusion coefficient of the vesicles, the size and shape of the confocal volume and concentration are taken into account, the probability of recurrence of the same proteoliposome can be estimated (Figure 3—figure supplement 1B). In our experiments, this likelihood remained high (p>0.9) for up to 80 ms, allowing us to extend the observation window. Therefore, the experimental setup provides a large window in which bursts are likely to be generated by the same labelled SecYMKEG as it enters and re-enters the confocal volume.
 
@@ -75,15 +103,55 @@ We exploited this phenomenon to follow transitions during translocation initiati
 
 When examining early stages in translocation, we maximised the number of initiation events by starting translocation reactions in sub-saturating ATP (0.1 mM) concentrations and measuring immediately in a pre-steady state data collection (Figure 3A). Complexes that remain in the same state appear as spots along the diagonal within the 2D FRET efficiency plots (e.g. Figure 3A, top panel), while spots off the diagonal (Figure 3A, middle and bottom) represent state transitions. As the time between E1 and E2 increases (indicated in panels of Figure 3A), the probability of a state change increases. This is illustrated in Figure 3A: after 1.6 ms (top panel), most of the bursts both start and end with the plug closed (EFRET ~ 0.4), while as time increases (middle and bottom panels) progressively more complexes transition from closed to open (i.e. appear below the diagonal, see Figure 3—figure supplement 2 and Video 1 for full time-resolved details). The population of states along the E2 axis between the two main spots may be a result of averaging (burst duration being on the same timescale as the transition kinetics) or, alternatively, represent bona fide intermediates.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig3-v2.jpg)
+
+**Figure 3.:** (A) Two-dimensional FRET efficiency contour plots (transition density plots) were obtained from bursts collected for SecYMKEG:SecA:SecB:pOA (proOmpA 100 aa) in the presence of 0.1 mM ATP using the confocal setup. The events were classified according to initial FRET (E1) and the burst recurrence FRET (E2) observed after the indicated time delay. Data shown as Probability Density Function (PDF) contour plots with scale on the right. (B) RASP analysis was performed with the initial state interval of 3.9 to 4.1. The RASP PDF shows a rapid decreasing closed state population (red) and concomitantly increasing open state population (blue). Time in these RASP histograms is colour coded according to the legend within the panel. (C) Opening (blue) and closing (red) kinetic profiles extracted by a two-state approximation to the data in B). Solid lines represent least square exponential fitting of the data. (D) ATP concentration dependence of the opening (blue) and closing (red) transition time constants. Open and closed state interconversion is shown schematically in the centre.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Burst width distribution for diffusing proteoliposomes. (B) Recurrence probability was obtained from data in (A) as described in Materials and methods. The recurrence time of 80 ms, corresponding to the 0.9 probability level (grey horizontal line), is indicated by a grey vertical line.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** A detailed sampling of time resolved transition density plots shown in Figure 3A for SecYMKEG:SecA:SecB:pOA (proOmpA 100 aa) in the presence of 0.1 mM ATP. Note a wider scale (count contour level bar in upper left corner) was used compared with Figure 3A. An animation is shown in Video 1 online.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Opening (blue) and closing (red) transition times as a function of ATP concentration for SecYMKEG:SecA:SecB in the presence of 1 mM ATP (no proOmpA). Neither opening (average 24.3 ± 5.2 ms) nor closing (average 10.9 ± 4.4 ms) are ATP dependent. Large errors (s.d.) are due to low number of spontaneous opening events under these conditions.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Time evolution of states for SecYMKEG:SecA:SecB:pOA (proOmpA 100 aa) in the presence of 1 mM AMP-PNP. RASP time window is indicated in each panel. The scale bar on the lower right depicts count contour levels.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Arrhenius plot of reciprocal transition times (rate constants) for the plug opening (blue) and closing (red) under saturating 2 mM ATP concentration. Activation energy of 61.2 ± 4.5 kJ/mol for opening was obtained from the slope of a linear approximation (blue dashed line). The activation energy for plug closing is 45.1 ± 3.7 kJ/mol (red dashed line).
+
+![Video 1.](https://cdn.elifesciences.org/articles/35112/elife-35112-video1.mp4.jpg)
+
+**Video 1.:** Conditions: SecYMKEG:SecA:SecB:pOA in the presence of 0.1 mM ATP.
+
 The RASP approach effectively allows kinetic rate constants to be determined without the need to synchronise the sample at the single molecule level. As long as the experimental conditions assure that the transitions of interest are taking place, interconversion between different states can be quantified by collating information from many single molecule events. One way to do this is to select initial bursts with a specific E1 value, and follow the time evolution of E2. For example, to monitor plug opening, we selected bursts with starting EFRET values within a window of 0.3–0.5 (closed; centred at the E1 ~0.4) then plotted E2 after different times in a one-dimensional histogram (Figure 3B). At each time point, the histogram is well described by a two-state model, allowing the open and closed populations to be determined. Fitting these populations as function of time yields the rate of plug opening (Figure 3C). The rate of plug closing can be determined in the same way; both occur on a millisecond timescale.
 
 The dependence of these transition times on the concentration of ATP (or of non-hydrolysable ATP analogues) was next investigated to reveal whether plug opening or closing depend on ATP binding and/or hydrolysis. Figure 3D shows the opening time constant in the presence of SecA, SecB and proOmpA increases with decreasing ATP concentration, while closing happens on a ~ 10 ms timescale and does not depend on ATP. The opening time constant also converges to 10 ms in a saturating ATP concentration. The apparent concentration at which the opening process is at its half maximum rate, K50% ~ 56 μM, obtained by fitting these data, is similar to that of the SecA ATPase KM ~50 μM (Robson et al., 2009a), suggesting that ATP hydrolysis is required for the initial plug opening. In the absence of proOmpA there are only rare spontaneous opening and closing events, with time constants that do not depend on ATP concentration (Figure 3—figure supplement 3). In the presence of SecA, proOmpA and AMP-PNP, SecYMKEG remains in the closed state (Figure 3—figure supplement 4). Therefore, ATP binding and hydrolysis together with pre-protein substrate engagement are needed to fully displace the plug from the channel.
 
 We also examined temperature dependence of opening and closure, over the range 15–37°C (288–310 K) for which the membrane remains fluid and SecYMKEG is active (Figure 3—figure supplement 5). The activation energy for opening, Ea ~61 kJ/mol, is close to the value measured for SecA ATPase activity in the presence of translocating substrate or signal peptide (66 kJ/mol), but much lower than that of SecYMKEG:SecA alone (~180 kJ/mol) (Gouridis et al., 2009). This suggests that the ATP-driven plug opening is performed by SecA in complex with SecYMKEG pre-activated by the SS. Furthermore, the plug closing exhibits significantly lower activation energy – Ea ~45 kJ/mol, which is below values reported for ATPases (60–70 kJ/mol) (Jenkins et al., 1999), consistent with the results shown in Figure 3D that closing is independent of ATP.
 
-## Translocon unlocking by the signal sequence is necessary, but not sufficient, for plug opening
+### Translocon unlocking by the signal sequence is necessary, but not sufficient, for plug opening
 
 Next, we used RASP analysis, as described above, to further probe the determinants of plug motion. SecYMKEG alone shows considerable static heterogeneity (spread along the diagonal) and dynamics (off-diagonal spots), with a broad diffuse spot between the closed and open configurations (Figure 4A). However, judging from the absence of density at the stationary position of the open state (E1 = 0.2, E2 = 0.2 area in Figure 4A, area marked with *) the open state is only transiently populated and returns to a partly open configuration (E1 = 0.2, E2 = 0.3 density region in Figure 4A, area marked with #). The transient nature of these conformational diversions is further demonstrated by only a small contribution of the open state to the equilibrium histogram in Figure 2—figure supplement 1 (<7%) and is consistent with low ion conductivity of SecYEG (Saparov et al., 2007). By contrast, the plug populates predominantly the expected closed state (EFRET ~0.4) in a plug stabilising mutant SecYR357E (the labelled mutant designated SecYMK,R357EEG) (Figure 4—figure supplement 1) (Tam et al., 2005). This finding is consistent with previous reports showing the plug can be localised in the open state by disulfide bond cross-linking with SecE (Harris and Silhavy, 1999). These cross-links are reduced when the R357E mutant is incorporated, due to its tendency to retain the plug in the central closed position (Tam et al., 2005). Thus, the FRET distributions reflecting open and closed channel states are predictably affected by variants of SecYEG, which favour the latter. This suggests the attached dyes have not drastically perturbed the properties of the channel.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig4-v2.jpg)
+
+**Figure 4.:** (A) SecYMKEG alone. Transition density for delays up to 21 ms were obtained from RASP analysis of 10,000 events. In all panels, the crosshair symbols indicate positions of the open and closed state FRET values within the E1-E2 plot. A scale bar for count contour levels is shown in the lower right corner. A cartoon in each panel schematically depicts the composition of the SecYEG complex and reaction conditions. In panel A, the positions of stably open state and the stationary part-open state are circled and marked with * and #, respectively. (B) SecYMKEG:SecA in the presence of 1 mM ATP. (C) SecYMKEG:SecA:SecB:pOA in the presence of 1 mM ATP. (D) SecYMKEG:SecA:SecB:pOA in the presence of 0.1 mM ATP (sub-saturating condition). (E) SecYMKEG:SecA:SecB:OmpA (lacking SS) in the presence of SS peptide added in trans and 1 mM ATP. (F) SecYMKEG:SecA:SecB:OmpA in the presence of 1 mM ATP. (G) SecYMKEG:SecA:SecB in the presence of SS peptide and 1 mM ATP. (H) SecYMKEG:SecA:SecB in the presence of SS peptide and 1 mM AMP-PNP (depicted as ANP in the cartoon). (I) SecYMKEG in the presence of SS. (J) SecYMKEG:SecA:SecB:pOA in the presence of 1 mM AMP-PNP (ANP in the cartoon). (K) SecYMKEG:SecA:SecB in the presence of defective (four residue deletion) SS peptide and 1 mM ATP. (L) SecYMK,R357EEG:SecA:SecB:pOA in the presence of 1 mM ATP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Two-dimensional FRET efficiency histograms for SecYMK,R357EEG alone. Transition density for delays up to 21 ms were obtained from RASP analysis of 10,000 events. In all panels, the crosshair symbols indicate positions of the open and closed state FRET values within the E1-E2 plot. A scale bar for count contour levels is shown in lower right corner, with a schematic of the SecYEG mutant alongside. (B) Steady state FRET efficiency histogram for SecYMK, R357EEG alone decomposed into open (0.2 - green dashed) and closed (0.4 – black dash dot and 0.6 – black dashed) contributions. Grey solid line depicts the sum of the fitted components.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** BVA can discriminate between static and dynamic heterogeneity. Blue dots show measured standard deviations (SE) for all individual bursts. Due to statistical nature of these estimates, the variance values were averaged for bursts within a narrow range of E values (red diamonds) and compared with the expected (shot noise limited) standard deviation as a function of FRET efficiency (black dashed line). The average values significantly above the expected value indicate dynamics on a timescale faster than the duration of the bursts (few milliseconds). The grey lines correspond to strict confidence intervals (cfi = 99%) and indicate that E values with variance (red diamonds) within this confidence interval represent static FRET while those above the confidence interval reflect underlying dynamics. (A) SecYMKEG: SecA in the presence of 1 mM ATP. (B) SecYMKEG: SecA:pOA (proOmpA 100 aa) in the presence of 1 mM ATP. (C) SecYMKEG: SecA in the presence of SS and 1 mM AMP-PNP. (D) SecYMKEG in the presence of SS.
 
 Addition of SecA to SecYMKEG results in the formation of a more stable complex, with the plug predominantly residing in the high-FRET (closed) state (Figure 4B). This observed state is similar to the behaviour of the SecYMK,R357EEG variant, wherein the plug is stabilised in the central closing position, even in the absence of SecA (Figure 4—figure supplement 1). Hence, this conformation is most likely a result of allosteric action of SecA, rather than a simple consequence of a direct SecA interaction with the attached dyes.
 
@@ -99,9 +167,29 @@ The EFRET ~0.25 represents a state that is clearly distinct from the closed (0.
 
 As expected, the plug stabilising mutant (SecYMK,R357EEG) fails to open in conditions that would normally promote translocation. The presence of SecA eliminates the part open ensemble (compare Figure 4L and Figure 4—figure supplement 1A) in a fashion similar to the wt SecYMKEG:SecA (Figure 4B and J), indicating that this mutation, while located on the cytoplasmic side close to the SecA binding site, does not disrupt SecA binding. The R357E mutation was originally shown to disfavour the SecY dimer formation (Tam et al., 2005). However, under single molecule conditions (extremely low concentrations), the formation of such a dimer is unlikely. Thus, the R357E substitution likely disrupts an allosteric path within SecYEG that is involved in the coupling ATPase cycle of SecA to the plug opening.
 
-## Translocation rate and slow post-initiation stage
+### Translocation rate and slow post-initiation stage
 
 If the low FRET state observed in the TIRF FRET traces (EFRET ~0.2, Figure 2F) represents SecYMKEG plug opening while the substrate is being translocated, then the duration of this state should increase with the length of the pre-protein substrate. Therefore, various length proOmpAs were prepared ranging from 100 to 683 aa (where full length proOmpA itself is 354 aa; Figure 5A). All these substrates were transported successfully into proteoliposomes as shown by ensemble translocation assays (Figure 5—figure supplement 1) and by the stimulation of the ATPase activity of SecA (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig5-v2.jpg)
+
+**Figure 5.:** (A) Dwell time dependence for open state (EFRET ~0.2) on the substrate length (schematically shown in the inset, SS depicted as orange bar) in the presence (black) or absence (red) of SecB. Ordinary least squares (OLS) linear regression (dashed lines) on all photobleaching corrected dwell times (see Figure 5—figure supplement 3 for comparison of uncorrected and corrected dwell time distributions) gave slopes corresponding to translocation rates of 39.6 ± 6.0 aa/s (±standard error) in the absence of SecB and 39.0 ± 6.2 aa/s in the presence of SecB. OLS analysis of the sample with SecB resulted in an intercept close to zero (0.5 ± 0.3 s) while in the absence of SecB the intercept is approximately 5 s (4.7 ± 0.3 s). Overlaid are photobleaching corrected dwell time histograms with gamma function fits (solid lines). Only the distributions for the longest substrate were significantly affected by photobleaching (see Figure 5—figure supplement 3 for comparison and Materials and methods for description of the deconvolution correction). (B) Average open state dwell time dependence on ATP concentration for the shortest 100 aa proOmpA substrate in the presence of SecB. Error bars were derived from the distributions of dwell times. The dashed line represents a steady state model with KM fixed at 50 μM and an amplitude scaled to the data (note that photobleaching precluded collection of more data at low ATP concentrations and thus a statistically sound fit to the data could not be performed).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Reactions were performed in the presence or absence of SecB. Gel lane: 10% of starting proOmpA loaded without protease treatment (positive and normalization control); control without ATP, translocation mix with 1 mM ATP. Black arrows indicate the expected position of the translocated substrate.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Ensemble ATPase activity stimulated by proOmpA constructs with different length in the presence (black) or absence (red) of SecB (10 µM). The rates were obtained under saturating ATP/proOmpA conditions. The zero-length substrate represents basal ATP hydrolysis activity by SecA alone. Standard deviations (error bars) were estimated from three independent experiments. Note that SecB seems to decrease the translocation efficiency of longer substrates. One plausible explanation is that SecB competes with SecA and sequesters longer pOA in ensemble translocation assays while at the same time assisting in unfolding of a smaller portion of SecYEG:SecA bound proOmpA, and thus accelerating the initial phase in the single molecule assays presented in Figure 5.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Without SecB, uncorrected distributions (shown as probability density functions) are shown in green, corrected distribution shown in red. Solid lines represent fitted gamma distribution functions. (B) As A), but in the presence of SecB (10 μM). The corrected distribution is shown in grey (as in Figure 5A). Solid lines represent fitted gamma distribution functions.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/35112/elife-35112-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Without SecB. Error bars represent the standard deviation (s.d.) computed from the distribution of the dwell times. (B) As A), but in the presence of SecB (10 μM).
 
 TIRF traces were obtained for the proOmpA length variants, and the dwell times of the open state for each were extracted and collated into histograms (Figure 5A and Figure 5—figure supplement 3). As expected for a stochastic process, a broad distribution of dwell times was obtained for each substrate length. However, the dwell times of the open state clearly increases with the length of the substrate (Figure 5A). By contrast, a similar analysis for the closed state (EFRET ~0.4) shows no dependence of the dwell time on the length of polypeptide chain (Figure 5—figure supplement 4). This is not surprising: the closed state dwell time represents an average wait prior to, or between, translocation events and thus reflects the rate of assembly of the active complexes. The formation of this activated translocation complex would be expected to depend on the concentrations of individual components and other reaction conditions, which were kept constant throughout the experiments.
 
@@ -137,19 +225,85 @@ In summary, we have devised a novel single molecule assay that allowed the deter
 
 ## Materials and methods
 
-## Protein preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iSMS software</td>
+      <td>(Preus et al., 2015) - doi:10.1038/nmeth.3435</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabView</td>
+      <td>(Lee et al., 2005) - doi: 10.1529/biophysj.104.054114</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FRETbursts</td>
+      <td>(Ingargiola et al., 2016b) - doi: 10.1371/journal.pone.0160716</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>photon-hdf5</td>
+      <td>(Ingargiola et al., 2016a) - doi: 10.1016/j.bpj.2015.11.013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dual-channel burst search</td>
+      <td>(Nir et al., 2006) - DOI: - 10.1021/jp063483n</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>regularized inverse transform</td>
+      <td>(Provencher, 1982) - DOI10.1016/0010-4655(82)90173-4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>graphics: library Seaborn, based on Matplotlib</td>
+      <td>(Hunter, 2007) - DOI10.1109/MCSE.2007.55</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein preparation
 
 Site-directed mutagenesis was performed using the QuikChange protocol (Agilent) and confirmed by sequencing. SecYMKEG, SecYMK,R357EEG, SecA, SecB and full length proOmpA were produced as described previously (Deville et al., 2011; Gold et al., 2007; Whitehouse et al., 2012). Different proOmpA lengths were produced adopting existing methods (De Keyzer et al., 2002). OmpA lacking the SS was purified as described in Schiffrin et al. (2016). SecYMKEG was produced in the same way as wild-type, then labelled for 45 mins on ice at 50 µM with 100 µM each of Alexa 488-C5-maleimide and Alexa 594-C5-maleimide (Invitrogen). The reactions were quenched with 10 mM DTT, and excess dye removed by gel filtration (Superdex-200, GE Healthcare, UK). Labelling efficiencies were between 75% and 90% for each dye, as determined using the manufacturer's quantification method and assuming a molar extinction coefficient of 70,820 cm−1 for SecYMKEG.
 
-## Ensemble translocation assays
+### Ensemble translocation assays
 
 SecYEG and SecYMKEG were reconstituted into proteoliposomes with E. coli polar lipids to a final concentration of 4.6 μM and extruded to 400 nm. Classical protease protection translocation assays were performed by mixing PLs (46 nM), creatine kinase (0.1 mg/mL), creatine phosphate (5 mM), SecA (300 nM), preprotein (1 μM) and, for stated reactions, SecB (10 μM), in TKM buffer (20 mM Tris pH 7.5, 50 mM KCl, 2 mM MgCl2) to a final volume of 100 μL. Reactions were preincubated at 25°C for 5 min and initiated by addition of ATP (1 mM). After 30 min at 25°C, 50 μL of reaction was quenched in 50 μL of ice cold HEPES containing protease K at 0.6 mg/mL. To ensure complete proteolysis of un-translocated preprotein, samples were left to incubate on ice for 20 min. Proteins were then precipitated by addition of trichloroacetic acid to 20 mM and the samples were centrifuged at 15,000 g for 10 min. The supernatant was removed and the pellets were left to dry for two hours in a speed vacuum (LABOGENE). The pellets were resuspended in 10 μL 1x LDS buffer and left overnight. The following morning the samples were analysed by SDS PAGE and immunoblotting, using a C-terminal V5 epitope for detection.
 
-## Ensemble ATPase assays
+### Ensemble ATPase assays
 
 ATPase assays were conducted using an NADH-based enzyme-linked ATP regeneration system. Reactions were prepared in TKM and contained SecYEG PLs (46 nM), SecA (300 nM), NADH (200 μM), and Pyruvate Kinase/Lactate Dehydrogenase from rabbit muscle (~10 units/mL, Sigma). NADH absorbance at 340 nm was monitored with a Perkin Elmer Lambda 25 spectrophotometer equilibrated at 25°C. After 5 min of equilibration, ATP was added to a final concentration of 1 mM and basal ATPase activity of SecA was observed. 10 min later preprotein was added to a saturating concentration to initiate translocation. ATP hydrolysis rates were calculated from the linear phase of 340 nm absorbance decrease following addition of preprotein, indicative of steady-state SecA ATPase activity.
 
-## SmFRET in msALEX TIRF configuration on immobilised proteoliposomes
+### SmFRET in msALEX TIRF configuration on immobilised proteoliposomes
 
 SecYMKEG was reconstituted into proteoliposomes (PLs) with E. coli polar lipid to a final concentration of 1.5 nM and extruded to 100 nm: at this concentration and size, most liposomes are expected to contain either 0 or 1 copy of SecYMKEG (Deville et al., 2011).
 
@@ -159,11 +313,17 @@ The buffer used was TKM (20 mM Tris pH 7.5, 50 mM KCl, 2 mM MgCl2) with 1 mM 6-h
 
 The data were analyzed in iSMS software (Preus et al., 2015). The two channels of each image were aligned and fluorescence count traces (donor and acceptor) were extracted and raw FRET efficiencies (E) and stoichiometries (S) were computed. To eliminate contributions from complexes with single type of dye or photobleached acceptor dye, only traces with S values between 0.25 and 0.75 were selected for further analysis. Another selection criterion for molecules was anti-correlation of intensity in donor and acceptor channels. All trajectories were also checked for bleaching and blinking events. Molecules showing bleaching were used to obtain correction factors, that is donor leakage, direct acceptor excitation and gamma factor (Preus et al., 2015). Experiments were repeated at least three times using independent proteoliposome preparations. To construct histograms from TIRF data, we used only such TIRF time traces which showed transitions detectable by Hidden Markov Model algorithm implemented in iSMS (Preus et al., 2015), that is were responsive/active. This approach eliminated contribution from SecYEG complexes which were reconstituted with their cytoplasmic side facing the vesicle interior and thus inaccessible to SecA and the substrate. Corrected FRET values were used to produce histograms.
 
-## Photobleaching correction
+### Photobleaching correction
 
-Statistical distributions of dwell times were corrected for photobleaching using probability distribution of photobleaching times (Pphotobleaching) estimated from TIRF traces for each experiment. Subsequently, we employed non-negative regularised iterative reconvolution of two distributions, that is photobleaching of individual molecules and simulated dwell time distribution to match measured data:(1)Pmeasured=Pphotobleaching∗Pestimate,where Pmeasured relates to the Probability Density Function (PDF) derived from experiment, Pphotobleaching is PDF of photobleaching (estimated from data) and Pestimate is the simulated gamma distribution with scale equal to one, representing an estimate of the original data unaffected by photobleaching. The best hit was found by a least squares method as implemented in SciPy optimize python package (http://www.scipy.org/). A regularised inverse transform was used to reconstruct dwell-time histograms using non-negativity constraints (Provencher, 1982) and the reconstructed probability density function, Pestimate.
+Statistical distributions of dwell times were corrected for photobleaching using probability distribution of photobleaching times (Pphotobleaching) estimated from TIRF traces for each experiment. Subsequently, we employed non-negative regularised iterative reconvolution of two distributions, that is photobleaching of individual molecules and simulated dwell time distribution to match measured data:
 
-## μsALEX confocal experiments on freely diffusing proteoliposomes
+$$
+P_{measured}=P_{photobleaching}∗P_{estimate},
+$$
+
+where Pmeasured relates to the Probability Density Function (PDF) derived from experiment, Pphotobleaching is PDF of photobleaching (estimated from data) and Pestimate is the simulated gamma distribution with scale equal to one, representing an estimate of the original data unaffected by photobleaching. The best hit was found by a least squares method as implemented in SciPy optimize python package (http://www.scipy.org/). A regularised inverse transform was used to reconstruct dwell-time histograms using non-negativity constraints (Provencher, 1982) and the reconstructed probability density function, Pestimate.
+
+### μsALEX confocal experiments on freely diffusing proteoliposomes
 
 The experimental set-up used to collect µsALEX data was previously described (Sharma et al., 2014). The laser alternation period was set to 40 μs (duty cycle of 40%) with intensity for the 488 nm laser ∼100 µW and the 594 nm laser intensity ∼90 μW. Data were collected using Labview graphical environment (LabView 7.1 Professional Development System for Windows, National Instruments, Austin, TX) (Lee et al., 2005). Separate photon streams were then converted and stored in an open file format for timestamp-based single-molecule fluorescence experiments (photon-hdf5), which is compatible with many recent data processing environments (Ingargiola et al., 2016a).
 
@@ -175,39 +335,71 @@ Filtered bursts were then assembled into 2D E-S histograms and 1D probability de
 
 SecYMKEG in our study is reconstituted into liposomes; therefore, 50% of all complexes inevitably end up facing the opposite orientation (with cytoplasmic side facing inwards) which is unable to bind SecA and translocate (unresponsive population). FRET distributions derived via RASP analysis were corrected for contribution from the 50% SecYMKEG in opposite orientation by subtracting appropriately scaled FRET distribution of SecYMKEG alone (see Figure 2—figure supplement 1A for one-dimensional histogram and Figure 4A for two dimensional transition plot) from the data (see Figure 2—figure supplement 2 for illustration of the procedure).
 
-## Recurrence analysis of single particles (RASP)
+### Recurrence analysis of single particles (RASP)
 
 To analyse events on timescales from 100 μs to ~100 ms, we employed RASP which relies on extremely diluted samples, where the probability for a molecule to return to the confocal volume is greater than the probability of a new molecule being detected (Hoffmann et al., 2011). RASP extracts time resolved information for FRET subpopulations by constructing recurrence FRET efficiency histograms. These are acquired by first selecting photon bursts from a small transfer efficiency range (initial bursts) and then building the FRET efficiency histogram only from bursts detected within a precisely defined short time interval (the recurrence interval) after all selected initial bursts. Systematic variation of the recurrence interval allows determination of the kinetics of interconversion between subpopulations.
 
-The longest usable recurrence time is related by concentration and diffusion time of the observed objects and can be set based on the recurrence probability. To estimate the recurrence probability of single molecules, we employed a correlative approach (Hoffmann et al., 2011). Bursts from different and non-interacting molecules are expected to be uncorrelated. On the other hand, bursts originating from the same molecule should be correlated and a 'same molecule' probability Psame(τ) was calculated as:(2)Psame(τ)=1-1/g(τ)where g(τ) is the burst time autocorrelation function of all detected bursts. From a fit to the data, we determined for each burst pair the probability that it originated from the same, recurring molecule, and calculated the average Psame for a subset of bursts by averaging over all corresponding burst pairs.
+The longest usable recurrence time is related by concentration and diffusion time of the observed objects and can be set based on the recurrence probability. To estimate the recurrence probability of single molecules, we employed a correlative approach (Hoffmann et al., 2011). Bursts from different and non-interacting molecules are expected to be uncorrelated. On the other hand, bursts originating from the same molecule should be correlated and a 'same molecule' probability Psame($\tau$) was calculated as:
 
-## Recurrence transfer efficiency histograms
+$$
+P_{same}(\tau)=1-1/g(\tau)
+$$
 
-To derive kinetics from RASP, we constructed transfer efficiency histograms from a set of bursts selected by two criteria. First, the bursts b2 must be detected during a time interval between t1 and t2 (the ‘recurrence interval’, T = (t1, t2)) after a previous burst b1 (the ‘initial burst’). Second, the initial bursts must yield a transfer efficiency, E(b1), within a defined range, ΔE1 (the ‘initial E range’). The set R of burst pairs {b1, b2} selected by these criteria is then:(3)R(ΔE1,T)={{b1 ,b2}| E(b1) ∈ΔE1,tb2-tb1 ∈ T}where tb1 and tb2 are the detection times of the bursts b1 and tb2, respectively. The set of burst pairs R is the starting point for the different types of analysis presented here. A very informative way of representing the data is the FRET efficiency histogram of all values E(b2), the ‘recurrence transfer efficiency histogram’.
+where g(τ) is the burst time autocorrelation function of all detected bursts. From a fit to the data, we determined for each burst pair the probability that it originated from the same, recurring molecule, and calculated the average Psame for a subset of bursts by averaging over all corresponding burst pairs.
 
-## Cross-peaks in 2D recurrence transfer efficiency contour plots
+### Recurrence transfer efficiency histograms
+
+To derive kinetics from RASP, we constructed transfer efficiency histograms from a set of bursts selected by two criteria. First, the bursts b2 must be detected during a time interval between t1 and t2 (the ‘recurrence interval’, T = (t1, t2)) after a previous burst b1 (the ‘initial burst’). Second, the initial bursts must yield a transfer efficiency, E(b1), within a defined range, ΔE1 (the ‘initial E range’). The set R of burst pairs {b1, b2} selected by these criteria is then:
+
+$$
+R(ΔE_{1},T)={{b_{1},b_{2}}|E(b_{1})\inΔE_{1},tb_{2}-tb_{1}\inT}
+$$
+
+where tb1 and tb2 are the detection times of the bursts b1 and tb2, respectively. The set of burst pairs R is the starting point for the different types of analysis presented here. A very informative way of representing the data is the FRET efficiency histogram of all values E(b2), the ‘recurrence transfer efficiency histogram’.
+
+### Cross-peaks in 2D recurrence transfer efficiency contour plots
 
 As a visual guide, we constructed 2D transition density contour plots. They were obtained from two-dimensional Gaussian KDE analysis (Scott, 1992) of burst pairs, where the initial burst and the second burst yield transfer efficiencies in range ΔE1 and ΔE2, respectively. Each plot was constructed for a certain recurrence interval T.
 
 2D contour plots were also used to address a common issue in the analysis of transfer efficiency histograms: the determination of the number of contributing subpopulations and their peak shapes. These were answered by choosing short recurrence intervals and initial transfer efficiency ranges that represent only a single subpopulation. The significance of small populations and the properties of strongly overlapping peaks were tested with this approach.
 
-## Interconversion dynamics from kinetic recurrence analysis
+### Interconversion dynamics from kinetic recurrence analysis
 
 To extract rates of interconversion between subpopulations from time-dependent recurrence E histograms, we constructed histograms for different recurrence intervals, and extracted the fraction of a subpopulation versus time. To determine the rates of interconversion, we related the change in the recurrence E histograms with increasing recurrence times to the dynamics of the interconversion process as was first shown by (Hoffmann et al., 2011).
 
-For a system populating two states A and B, we defined the probability pA (τ,ΔE1) that from the set of burst pairs R(ΔE1,T), b2 originates from a molecule in state A. pA (τ, ΔE1) was determined from global fitting the corresponding recurrence histogram and determining the ratio of the peak area corresponding to subpopulation A over the total area under the peaks corresponding to A and B (for details see [Hoffmann et al., 2011]).pA(τ,ΔE1)=psame(τ) pAi=j(τ,ΔE1)+ [1−psame(τ)] pAi≠jwhere pAi=j(τ,ΔE1) denotes the probability that a recurring molecule (i = j) is in state A, and pAi≠j is the probability that a newly arriving molecule (i ≠ j) (leading to burst b2) is in state A. pAi≠j is probability of measuring a burst originating from a molecule in state A and it was determined from globally fitted areas under the corresponding peak functions extracted from a set of transfer efficiency histograms.
+For a system populating two states A and B, we defined the probability pA (τ,ΔE1) that from the set of burst pairs R(ΔE1,T), b2 originates from a molecule in state A. pA (τ, ΔE1) was determined from global fitting the corresponding recurrence histogram and determining the ratio of the peak area corresponding to subpopulation A over the total area under the peaks corresponding to A and B (for details see [Hoffmann et al., 2011]).
 
-The time dependence of pAi=j is determined by the interconversion kinetics between states A and B and is defined as:(5)pAi=j(τ,ΔE1)=(1+ε(1ρA(τ,ΔE1)−1))−1with(6)ρA(τ,ΔE1)= ρAeq+[ρA(0,ΔE1)−ρAeq] e−λτ,
+$$
+pA(\tau,ΔE1)=p_{same}(\tau) p_{A}^{i=j}(\tau,ΔE1)+ [1−p_{same}(\tau)] p_{A}^{i\neqj}
+$$
 
-Here, ρA(τ, ΔE1) is the probability that a protein that emitted a burst at time 0 with a transfer efficiency in the range ΔE1 is in state A at time τ. ρA(0,ΔE1) and ρAeq are the corresponding initial and equilibrium probabilities, respectively. The kinetic rate constant λ corresponds to the sum of the forward and backward rate constants of interconversion between A and B.
+where $p_{A}^{i=j}(\tau,ΔE1)$ denotes the probability that a recurring molecule (i = j) is in state A, and $p_{A}^{i\neqj}$ is the probability that a newly arriving molecule (i ≠ j) (leading to burst b2) is in state A. $p_{A}^{i\neqj}$ is probability of measuring a burst originating from a molecule in state A and it was determined from globally fitted areas under the corresponding peak functions extracted from a set of transfer efficiency histograms.
 
-## Burst variance analysis (BVA)
+The time dependence of $p_{A}^{i=j}$ is determined by the interconversion kinetics between states A and B and is defined as:
+
+$$
+p_{A}^{i=j}(\tau,ΔE1)=(1+\epsilon(\frac{1}{ρA(\tau,ΔE_{1})}−1))^{−1}
+$$
+
+with
+
+$$
+ρA(\tau,ΔE_{1})= ρ_{A}^{eq}+[ρA(0,ΔE1)−ρ_{A}^{eq}] e^{−\lambda\tau},
+$$
+
+Here, ρA(τ, ΔE1) is the probability that a protein that emitted a burst at time 0 with a transfer efficiency in the range ΔE1 is in state A at time τ. ρA(0,ΔE1) and $ρ_{A}^{eq}$ are the corresponding initial and equilibrium probabilities, respectively. The kinetic rate constant λ corresponds to the sum of the forward and backward rate constants of interconversion between A and B.
+
+### Burst variance analysis (BVA)
 
 The BVA method is capable to identify dynamics in FRET distributions [1, 2]. The main idea of BVA is to subdivide bursts into contiguous sub-bursts consisting of a fixed number of photons (n), and to compare the variance of acceptor photons of all sub-bursts within each burst. This is later compared to the theoretical shot-noise-limited variance. An empirical variance of sub-bursts larger than the shot-noise-limited variance for a certain FRET region indicates the presence of dynamics.
 
 In a FRET subpopulation originating from static biomolecules, the sub-burst acceptor counts na have a binomial distribution, Na ∼ B(n, Ep), where n is the number of photons in each sub-burst and Ep is the estimated population proximity-ratio.
 
-If Na follows a binomial distribution, the random variable Esub = Na/n, has a standard deviation reported in Equation (7).(7)SEsub=(Ep(1-Ep)n)1/2
+If Na follows a binomial distribution, the random variable Esub = Na/n, has a standard deviation reported in Equation (7).
+
+$$
+S_{E_{sub}}=(\frac{E_{p}(1-E_{p})}{n})^{1/2}
+$$
 
 In detail, BVA analysis comprises of four major steps: (1) division of individual bursts into consecutive sub-bursts containing a constant number of consecutive photons n, (2) computation of the Ep of all sub-bursts, (3) computation of the empirical standard deviation (sE) of sub-bursts Ep in each burst, and (4) comparison of sE to the expected standard deviation of a shot-noise-limited distribution for a given mean Ep (see Equation 7).
 
@@ -215,10 +407,20 @@ If the detected FRET efficiency distribution comes from a static mixture of sub-
 
 On the other hand, if the observed distribution comes from molecules belonging to a single species, undergoing transition between different FRET states (over the timescale comparable to the diffusion time of molecular species of interest), sE of each burst will be larger than the expected shot-noise-limited standard deviation, and it will appear above the shot-noise standard deviation curve. Other, and preferred way, to distinguish between static and dynamic subpopulations is to compute confidence intervals using Monte Carlo algorithm described below.
 
-To calculate upper-limit confidence intervals on sE, we need to consider the sampling distribution of standard deviations, P(sE), expected for M windows of n photons. To implement the Monte Carlo approach, we simulate the sampling distribution of sshot_noise,(8)Sshot_noise=∑iwhereL≤PRi<U∑j=1Mi[(FAijn−μ)2∑Mi]where(9)μ=∑iwhereL≤PRi<U∑j=1Mi(FAijn∑Mi)
+To calculate upper-limit confidence intervals on sE, we need to consider the sampling distribution of standard deviations, P(sE), expected for M windows of n photons. To implement the Monte Carlo approach, we simulate the sampling distribution of sshot_noise,
 
-FAij are random variables drawn from a binomial distribution with n trials (i.e. the number of photons per each window) and PR is a probability of success. We define the resulting Monte Carlo distribution as PMC(sshot_noise).
+$$
+S_{shot_noise}=\sqrt{\sum_{iwhereL\leqPR_{i}<U}\sumj=1M_{i}[\frac{(\frac{F_{A}^{ij}}{n}−\mu)^{2}}{\sumM_{i}}]}
+$$
 
-Then we use the PMC(sshot_nouse) to calculate the upper-tail confidence interval on the standard deviation, Sshot_noiseCI, and test for dynamics by comparing it to the observed sE. Unless otherwise indicated, per-experiment confidence levels were set to α = .001; deviations beyond the value of sE corresponding to this level should reflect the presence of dynamics.
+where
+
+$$
+\mu=\sum_{iwhereL\leqPR_{i}<U}\sumj=1M_{i}(\frac{\frac{F_{A}^{ij}}{n}}{\sumM_{i}})
+$$
+
+$F_{A}^{ij}$ are random variables drawn from a binomial distribution with n trials (i.e. the number of photons per each window) and PR is a probability of success. We define the resulting Monte Carlo distribution as PMC(sshot_noise).
+
+Then we use the PMC(sshot_nouse) to calculate the upper-tail confidence interval on the standard deviation, $S_{shot_noise}^{CI}$, and test for dynamics by comparing it to the observed sE. Unless otherwise indicated, per-experiment confidence levels were set to α = .001; deviations beyond the value of sE corresponding to this level should reflect the presence of dynamics.
 
 It is important to note that we use the PR here because, regardless of the real FRET efficiency, the detected counts are partitioned between donor and acceptor channels according to a binomial distribution with success probability equal to the PR. If we used corrected FRET efficiency, calculation of variance would be biased.

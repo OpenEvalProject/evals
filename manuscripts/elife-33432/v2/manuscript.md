@@ -50,7 +50,7 @@
 
 ## Abstract
 
-10.7554/eLife.33432.001 Luminal fluid reabsorption plays a fundamental role in male fertility. We demonstrated that the ubiquitous GPCR signaling proteins Gq and β-arrestin-1 are essential for fluid reabsorption because they mediate coupling between an orphan receptor ADGRG2 (GPR64) and the ion channel CFTR. A reduction in protein level or deficiency of ADGRG2, Gq or β-arrestin-1 in a mouse model led to an imbalance in pH homeostasis in the efferent ductules due to decreased constitutive CFTR currents. Efferent ductule dysfunction was rescued by the specific activation of another GPCR, AGTR2. Further mechanistic analysis revealed that β-arrestin-1 acts as a scaffold for ADGRG2/CFTR complex formation in apical membranes, whereas specific residues of ADGRG2 confer coupling specificity for different G protein subtypes, this specificity is critical for male fertility. Therefore, manipulation of the signaling components of the ADGRG2-Gq/β-arrestin-1/CFTR complex by small molecules may be an effective therapeutic strategy for male infertility.
+Luminal fluid reabsorption plays a fundamental role in male fertility. We demonstrated that the ubiquitous GPCR signaling proteins Gq and β-arrestin-1 are essential for fluid reabsorption because they mediate coupling between an orphan receptor ADGRG2 (GPR64) and the ion channel CFTR. A reduction in protein level or deficiency of ADGRG2, Gq or β-arrestin-1 in a mouse model led to an imbalance in pH homeostasis in the efferent ductules due to decreased constitutive CFTR currents. Efferent ductule dysfunction was rescued by the specific activation of another GPCR, AGTR2. Further mechanistic analysis revealed that β-arrestin-1 acts as a scaffold for ADGRG2/CFTR complex formation in apical membranes, whereas specific residues of ADGRG2 confer coupling specificity for different G protein subtypes, this specificity is critical for male fertility. Therefore, manipulation of the signaling components of the ADGRG2-Gq/β-arrestin-1/CFTR complex by small molecules may be an effective therapeutic strategy for male infertility.
 
 ## Introduction
 
@@ -64,11 +64,35 @@ Here, we developed a new labeling method utilizing specific red fluorescent prot
 
 ## Results
 
-## Gq activity is required for fluid reabsorption and male fertility
+### Gq activity is required for fluid reabsorption and male fertility
 
 Previous studies have found that knockout of the orphan receptor ADGRG2 causes infertility and fluid reabsorption dysfunction in the efferent ductules, indicating important roles for GPCR signaling in male reproductive functions. Downstream of GPCRs, there are 16 Gα proteins that mediate diverse GPCR functions (DeVree et al., 2016). However, the expression of these G protein subtypes and their functions in the efferent ductules have not been investigated. Here, we show that Gs is more enriched, while G11 and Gi3 have expression levels in the efferent ductules similar to those in brain tissue, whereas all other 11 tested G protein subtypes have detectable expression levels in the efferent ductules (Figure 1A). ADGRG2 localizes in cells devoid of acetylated-tubulin staining, suggesting that it is specifically expressed in non-ciliated cells (Figure 1B and Figure 1—figure supplement 1A–C). We next used the promoter region of ADGRG2 to direct the expression of the fluorescent protein RFP, which enabled the specific labeling of ADGRG2-expressing non-ciliated cells in the efferent ductules (Figure 1C and Figure 1—figure supplement 2A–C). After fluorescence-activated cell sorting (FACS), quantitative RT-PCR (qRT-PCR) results indicated that ADGRG2-expressing non-ciliated cells have expression levels of Golf, Gi2, Gq, G11, and G13 that are higher than those in brain tissue and expression levels of Gs, G12 and Gz that are similar to those in brain tissue (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig1-v2.jpg)
+
+**Figure 1.:** (A) qRT-PCR analysis of mRNA transcription profiles of G proteins in brain tissues and the efferent ductules of WT (n = 3) male mice. Expression levels were normalized to GAPDH levels. *p<0.05, **p<0.01, ***p<0.001, efferent ductules compared with brain tissue. (B) Co-localization analysis of ADGRG2 (red fluorescence) and acetylated-tubulin (green fluorescence) in the efferent ductules of WT mice. Scale bars, 50 μm. (C) Co-localization of ADGRG2 (green fluorescence) and RFP (red fluorescence) in the same cells of male murine efferent ductules infected with the ADGRG2 promoter RFP adenovirus in WT mice. Scale bars, 50 μm. (D) qRT-PCR analysis of mRNA transcription profiles of G protein subtypes in brain tissues and isolated ADGRG2 promoter-labeled non-ciliated cells derived from the efferent ductules of WT (n = 3) male mice. Expression levels were normalized to GAPDH levels. *p<0.05, **p<0.01, ***p<0.001, ADGRG2 promoter-labeled efferent ductule cells compared with brain tissues. n.s., no significant difference. At least three independent biological replicates were performed for Figure 1A and D.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Control experiments: Direct immunofluorescence staining of secondary antibodies used in the manuscript (including donkey anti-sheep, red fluorescence; and donkey anti-rabbit, green fluorescence) in WT male mice efferent ductules. Scale bars, 50 μm. (B) Microscope analysis of efferent ductules and the nucleus in WT male mice, including a light image. Scale bars, 50 μm. (C) Bar graph representation and statistical analyses of co-localization of ADGRG2 and acetylated-tubulin in WT male mice efferent ductules (corresponding to Figure 1B in the main manuscript), n = 3 mice per group; 4–10 random areas were selected from each section, and six sections were randomly selected from each mouse.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Schematic representation of the construction of the mouse ADGRG2-promoter-RFP used in the labeling of ADGRG2 expressed cells in the epididymal efferent duct epithelium. Sub-cloning strategy of the ADGRG2-promoter (A). Schematic diagram of ADGRG2-promoter-RFP adenovirus vector (B). (C) Isolated epididymal efferent duct epithelium infected with the ADGRG2-promoter RFP adenovirus specifically labeled the ADGRG2-expressing non-ciliated cells. Scale bars, 50 μm.
+
 We next investigated the contribution of different G protein subtype signaling pathways to fluid reabsorption in the efferent ductules using specific pharmacological interventions and knockout models. An ADGRG2 knockout mouse was produced by introducing an 11-nucleotide sequence into the first exon of the ADGRG2 gene (Figure 2—figure supplement 1), thereby creating a positive control for fluid reabsorption dysfunction in the efferent ductules (Davies et al., 2004). The wild-type (WT) mice did not show size alterations due to the normal reabsorption of luminal fluid, but the ligated efferent ductules derived from the ADGRG2 knockout mice displayed a 40% increase in luminal area after 72 hr of in vitro culture (Figure 2A). Application of the Gi inhibitor pertussis toxin (PTX) or the MEK-ERK signaling inhibitor U0126 did not have a significant effect on the efferent ductules (Figure 2B and C). In contrast, a 50% reduction in Gq protein levels in Gnaq+/- mice or the application of the protein kinase C(PKC) inhibitor Ro 31–8220 significantly impaired fluid reabsorption in the efferent ductules, which mimicked the phenotype of the ductules derived from Adgrg2-/Y mice (Figure 2A and D–E and Figure 2—figure supplement 1F–G). The contribution of Gs-PKA (protein kinase A) signaling to fluid reabsorption of the efferent ductules is confounded. While the application of the Gs inhibitor NF449 or the PKA inhibitors PKI14-22 or H89 to the efferent ductules derived from WT mice slightly increased the volume of the efferent ductules (Figure 2F–H), cAMP regulators, such as the adenyl cyclase activator forskolin (FSK) and the phosphodiesterase (PDE) inhibitor 3-isobutyl-1-methylxanthine(IBMX), increased the volume of the efferent ductules in an acute manner in both Adgrg2-/Y mice and WT littermates (Figure 2—figure supplement 2A–B). These results suggested that Gs-PKA signaling is finely tuned in the efferent ductules to maintain its fluid reabsorption function because both increasing and decreasing its activity caused detrimental effects. In conclusion, Gi and MEK-ERK signaling exerted no significant effects, whereas Gq-PKC signaling was required for efficient fluid reabsorption in the efferent ductules.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig2-v2.jpg)
+
+**Figure 2.:** (A) Images of cultured ligated efferent ductules derived from WT male mice, Adgrg2-/Y mice and Gnaq+/- male mice. Ductule segments were selected by examination of the ciliary beat, which is a marker of cell integrity. Ductule pieces from Adgrg2-/Y, Gnaq+/- or WT mice were ligated, microdissected and cultured for up to 72 hr. Scale bars, 200 μm. (B–C, E–H) Effects of pharmacological intervention on the diameters of ligated efferent ductules derived from WT or Adgrg2-/Y mice. (B) PTX (100 ng/ml), a Gi inhibitory protein. WT (n = 9) or Adgrg2-/Y (n = 8); (C) U0126 (10 μM), a MEK inhibitor (ERK pathway blockade), WT (n = 12) or Adgrg2-/Y (n = 12). (E) Ro 31–8220 (500 nM), a protein kinase C (PKC) inhibitor, WT (n = 12) or Adgrg2-/Y (n = 10); (F) NF449 (1 μM), a Gs inhibitor, WT (n = 9) or Adgrg2-/Y (n = 9); (G) PKI14-22 (300 nM), a PKA inhibitor, WT (n = 9) or Adgrg2-/Y (n = 9); (H) H89 (500 nM), a non-selective PKA inhibitor, WT (n = 9) or Adgrg2-/Y (n = 9). (D) Diameters of the luminal ductules derived from WT (n = 27) mice remained unchanged over 72 hr, whereas the lumens of the ductules derived from Adgrg2-/Y (n = 21) mice and Gnaq+/- (n = 16) mice were significantly increased, indicating fluid reabsorption dysfunction. (2B-2H) *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice or Gnaq+/- mice were compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001, treatment with selective inhibitors or stimulators was compared with control vehicles. n.s., no significant difference. At least three independent biological replicates were performed for Figure 2B–H.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of the ADGRG2 knockout strategy for the Adgrg2-/Y mice. 2 bp nucleotides were removed and 10 bp nucleotides were inserted in the first exon of the ADGRG2 gene in the ADGRG2 mutant mice by the CRISP-CAS9 approach. In the ADGRG2-deficient mice, the translation of ADGRG2 was terminated at the 7th amio acid after the signal peptide. (B) Schematic representation for the primers used in the genotyping of the ADGRG2 mutant mice or their wild-type littermates. (C) Schematic description of the PCR strategy and expected results for genotyping. The genotyping of mice was determined by PCR and visualized by bromide staining of agarose Gels. (D) Western blot analysis of ADGRG2 expression in efferent duct tissue of WT and Adgrg2-/Y mice. All blots were normalized to GAPDH. (E) Bar graph representation and statistical analyses of (D). At least three independent experiments were carried out. (F) Western blot analysis of Gq expression in efferent duct tissue of WT and Gnaq+/- mice. All blots were normalized to GAPDH. (G) Bar graph representation and statistical analyses of (F). At least three independent experiments were carried out. (E,G) *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice or Gnaq+/- mice were compared with WT mice. n.s., no significant difference.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Effects of forskolin (10 μM), an adenylyl cyclase (AC) activator, on the diameters of ligated efferent ducts; WT(n = 11) or Adgrg2-/Y (n = 10). (B) Effects of IBMX(100 μM), a non-specific inhibitor of cAMP and cGMP phosphodiesterases (PDEs), on the diameters of ligated efferent ducts. WT(n = 9) or Adgrg2-/Y (n = 9). (A–B) *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice were compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001, Selective inhibitors or stimulators treated were compared with control vehicles.
 
 The efferent ductules of the Gnaq+/- animals consistently showed the accumulation of obstructed spermatozoa compared with those of WT mice, whereas the lumen of the initial segment and caput region in Gnaq+/- mice contained significantly reduced sperm levels (Figure 3A–D). Sperm numbers prepared from the caudal epididymis and the birth rate of the Gnaq+/- mice were also significantly decreased compared with their WT littermates (Figure 3E–G). Taken together, these data demonstrated that among different G protein subtypes, Gq activity is required for fluid reabsorption and male fertility.
 
@@ -76,57 +100,212 @@ The efferent ductules of the Gnaq+/- animals consistently showed the accumulatio
 
 **Figure 3.:** (A) Representative hematoxylin and eosin staining of WT, Adgrg2-/Y or Gnaq+/- mice. Scale bars, 200 μm. (B–D) Corresponding bar graphs demonstrating the accumulation of spermatozoa according to the hematoxylin and eosin staining of WT (n = 8), Adgrg2-/Y (n = 9) or Gnaq+/- (n = 9) mice. ED: efferent ductules; IS: epididymal initial segment; CA: caput epididymis. (E) Representative photographs of caudal sperm preparation from the caudal epididymis of WT, Adgrg2-/Y or Gnaq+/- mice. Scale bars, 50 μm. (F) Bar graph depicting the quantitative analysis of the number of sperm shown in (Figure 1E) of WT (n = 8), Adgrg2-/Y (n = 10) or Gnaq+/- (n = 10) mice. (G) Line graph depicting the fertility of Gnaq+/- (n = 6) and WT (n = 6) male mice at various ages, as measured by the median number of embryos. (3B-D and 3 F-G): *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice or Gnaq+/- mice were compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001. Gnaq+/- mice were compared with Adgrg2-/Y mice. n.s., no significant difference. At least three independent biological replicates were performed for Figure 3B–D and and F–G.
 
-## ADGRG2 and CFTR coupling in the efferent ductules and its function in fluid reabsorption
+### ADGRG2 and CFTR coupling in the efferent ductules and its function in fluid reabsorption
 
 Membrane proteins, including bicarbonate and chloride transporters, sodium/potassium pumps and specific ion channels, are potential osmotic drivers for fluid secretion and reabsorption in the efferent ductules (Estévez et al., 2001; Harvey, 1992; Liu et al., 2015; Park et al., 2001; Russell, 2000; Xiao et al., 2012; Xiao et al., 2011; Zhou et al., 2001). Therefore, we examined the expression levels of these membrane proteins in the efferent ductules and ADGRG2 promoter-labeled ductule cells (Figure 4A and Figure 4—figure supplement 1A). Specifically, Na+-K+-Cl- cotransporter (NKCC), down-regulated in adenoma (DRA), CFTR, solute carrier family 26 member 9(SLC26a9), Na+/H+ exchanger 3(NHE3) and the L-type voltage dependent calcium channel Cav1.3 levels were readily measured in ADGRG2 promoter-labeled non-ciliated ductule cells; Na+/H+ exchanger 1(NHE1), carbonic anhydrase II(CAII), Short transient receptor potential channel 3(TRPC3), chloride channel accessory 1(CLCA1) and Cav1.2 had lower but detectable expression levels, whereas anoctamin-1 (ANO1), V-ATPase and Cav2.2 demonstrated very little expression (Figure 4A and Figure 4—figure supplement 1A). Notably, we used the ADGRG2 promoter to label the non-ciliated cells, as the ADGRG2 receptor is specifically expressed on the apical membrane of these cells in efferent ductules (Figure 1B–C and Figure 1—figure supplements 1–2). A higher expression level of a particular membrane protein, such as CFTR, in the ADGRG2 promoter-labeled cells indicated that these membrane proteins are enriched in non-ciliated cells in efferent ductules but does not indicate that the expression of these proteins is dependent on ADGRG2. For example, the CFTR expression level in ADGRG2 promoter-labeled efferent ductule cells derived from Adgrg2-/Y mice did not differ significantly from that in the cells derived from their WT littermates (Figure 4—figure supplement 1D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig4-v2.jpg)
+
+**Figure 4.:** (A) qRT-PCR analysis of the mRNA transcription profiles of potential osmotic drivers including selective ion channels and transporters in ADGRG2 promoter-labeled cells, non-ADGRG2 promoter-labeled cells and brain tissues of WT (n = 3) male mice. Expression levels were normalized to GAPDH levels. *p<0.05, **p<0.01, ***p<0.001, ADGRG2 promoter-labeled cells were compared with brain tissues. #p<0.05, ##p<0.01, ###p<0.001, non-ADGRG2 promoter-labeled cells were compared with brain tissues. (B–M) Effects of different channel blockers on the diameters of luminal ductules derived from WT or Adgrg2-/Y mice. (B) Bumetanide (10 μM), an NKCC blocker, WT (n = 9) or Adgrg2-/Y (n = 10); (C) Ani9 (150 nM), an ANO1 inhibitor, WT (n = 9) or Adgrg2-/Y (n = 9); (D) NFA (20 μM), a CaCC inhibitor, WT (n = 9) or Adgrg2-/Y (n = 10); (E) ruthenium red (10 μM), a non-specific TRP channel blocker, WT (n = 12) or Adgrg2-/Y (n = 12); (F) SKF96365 (10 μM), a TRPC channel inhibitor, WT (n = 12) or Adgrg2-/Y (n = 9); (G) nicardipine (20 μM), an L-type calcium channel blocker, WT (n = 12) or Adgrg2-/Y (n = 12); (H) EGTA (5 mM), an extracellular calcium chelator, WT (n = 9) or Adgrg2-/Y (n = 9); (I) DIDS (20 μM), a chloride-bicarbonate exchanger blocker, WT (n = 9) or Adgrg2-/Y (n = 10); (J) GlyH-101 (25 μM), a non-specific CFTR inhibitor, WT (n = 17) or Adgrg2-/Y (n = 15); (K) CFTRinh-172(10 μM), a specific CFTR inhibitor, WT (n = 12) or Adgrg2-/Y (n = 10). (L) Effects of angiotensin II (100 nM, an angiotensin receptor agonist) and PD123319 (1 μM, an AT2 receptor antagonist) on the diameters of luminal ductules derived from WT or Adgrg2-/Y mice (n ≥ 12). (M) Effects of angiotensin II (100 nM) and candesartan (1 μM, an AT1 receptor antagonist) on the diameters of luminal ductules derived from WT or Adgrg2-/Y mice (n ≥ 12). Application of GlyH-101 and CFTRinh-172 to ligated ductules derived from WT mice recapitulated the phenotype of the ductules derived from Adgrg2-/Y mice. (4A-M)*p<0.05, **p<0.01, ***p<0.001; Adgrg2-/Y mice compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001. Treatment with selective inhibitors or stimulators was compared with control vehicles. n.s., no significant difference. At least three independent biological replicates were performed for Figure 4A–M.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantitative RT-PCR (qRT-PCR) analysis of mRNA transcription profiles of potential osmotic drivers including selective ion channels and transporters in efferent ductules, brain and liver of wild-type (WT) (N = 3) male mice. Expression levels were normalized with GAPDH levels. *p<0.05, **p<0.01, ***p<0.001, brain were compared with efferent ductules. #p<0.05, ##p<0.01, ###p<0.001. liver were compared with efferent ductules. n.s., no significant difference. (B–C) Effects of different channel or transporter blockers on the diameters of luminal ductules derived from WT or Adgrg2-/Y mice. (B) LaCl3 (100 μM), a non-selective TRPC3/6/7 blocker, WT(n = 12) or Adgrg2-/Y(n = 12); (C) Amiloride(1 mM), a sodium/hydrogen antiporter NHE1 inhibitor, WT(n = 10)or Adgrg2-/Y(n = 12). (D) Quantitative RT-PCR (qRT-PCR) analysis of the ADGRG2,CFTR, Gαs, Gαq, β-arrestin-1 and β-arrestin-2 expression level in ADGRG2 promoter-labeled efferent ductule cells derived from Adgrg2-/Y mice(n = 3) and their WT littermates(n = 3). Expression levels were normalized with GAPDH levels.(B–D) **p<0.01, ***p<0.001; Adgrg2-/Y mice compared with WT mice. ##p<0.01, Selective inhibitors or stimulators treated were compared with control vehicles. n.s., no significant difference.
 
 We next used a panel of pharmacological blockers to examine whether the inappropriate regulation of these membrane protein functions was involved in the ADGRG2- or Gq-mediated regulation of fluid reabsorption in the efferent ductules. Importantly, application of the NKCC blocker bumetanide, the ANO1 inhibitor Ani9, the calcium-dependent chloride channel (CaCC) inhibitor niflumic acid (NFA), TRP channel inhibitors including ruthenium red, SKF96365 and LaCl3, the L-type calcium channel blocker nicardipine or chelating extracellular calcium with EGTA showed no significant effects on fluid reabsorption in the efferent ductules in ligation experiments (Figure 4B–H and Figure 4—figure supplement 1B). Application of 4,4'-diisothiocyano-2,2'-stilbenedisulfonic acid (DIDS) to block the chloride-bicarbonate exchanger exerted a small effect only after 60 hr (Figure 4I), and the application of amiloride to inhibit sodium/hydrogen antiporter NHE1 activity exerted an acute effect on fluid reabsorption (Figure 4—figure supplement 1C), an outcome different from that observed in Adgrg2-/Y or Gnaq+/- mice (Figure 2D). In contrast, blocking CFTR activity either with GlyH-101 or CFTRinh-172 had significant effects on fluid reabsorption in the efferent ductules and pheno-copied the Adgrg2-/Y mice (Figure 4J–K). Collectively, the phenotype caused by inactivating ADGRG2 and administering a CFTR channel blocker in WT mice suggested that CFTR and ADGRG2 may be functionally connected to the regulation of fluid reabsorption.
 
 CFTR is the key regulator of pH homeostasis and chloride in the reproductive and renal systems and has important functions in fluid reabsorption (Chen et al., 2012). Therefore, we measured the pH value of the efferent ductules. The pH homeostasis was impaired in Adgrg2-/Y mice, with a pH value of 7.6 for the inner solution in the efferent ductules, compared to a pH of 7.2 in WT littermates (Figure 5A and Figure 5—figure supplement 2). This dysfunction was not caused by decreased CFTR expression because the mRNA levels of CFTR in the Adgrg2-/Y mice were not reduced compared with those of their WT littermates (Figure 5B and Figure 5—figure supplement 1). Moreover, application of the CFTR inhibitor CFTRinh-172 increased the pH value of the efferent ductules in WT mice by approximately 0.3 but did not have a significant effect in Adgrg2-/Y mice, suggesting that CFTR dysfunction in Adgrg2-/Y mice influences pH homeostasis (Figure 5A–B). Importantly, the pH imbalance in Adgrg2-/Y mice was rescued by bicarb-free media or application of the carbonic anhydrase inhibitor acetazolamide (Figure 5—figure supplement 2B–C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig5-v2.jpg)
+
+**Figure 5.:** (A) Intracellular pH (pHi) of the ligated efferent ductules from WT (n = 9) mice and Adgrg2-/Y (n = 9) mice were measured by carboxy-SNARF (5 μM), with or without incubation with the CFTR inhibitor CFTRinh-172. (B) qRT-PCR analysis of CFTR levels in the efferent ductules of WT (n = 3) or Adgrg2-/Y (n = 3) mice. (C) Co-localization of ADGRG2 (red fluorescence) and CFTR (sc-8909, Santa Cruz, green fluorescence) in the male efferent ductules of WT mice. Scale bars, 50 μm. (D) Analysis of ADGRG2 and CFTR fluorescence intensities by Pearson’s correlation analysis. The Pearson's correlation coefficient was 0.76. (E) Immunofluorescence staining of ADGRG2 (red fluorescence) and CFTR (sc-8909, Santa Cruz, green fluorescence) in the efferent ductules of Adgrg2-/Y mice. Scale bars, 50 μm. (F) Co-localization of ADGRG2 (red fluorescence) and ezrin (green fluorescence) in the male efferent ductules of WT mice. Scale bars, 50 μm. (G) Analysis of ADGRG2 and ezrin fluorescence intensities by Pearson’s correlation analysis. The Pearson's correlation coefficient was 0.69. (H) ADGRG2 was immunoprecipitated with an anti-ADGRG2 antibody from the male efferent ductules of WT mice or Adgrg2-/Y mice, and co-precipitated CFTR, Gs, Gq, β-arrestin-1, β-arrestin-2 and Gi-1/2/3 levels were examined by using specific corresponding antibodies (CFTR antibody:20738–1-AP, Proteintech). (5A-5B) *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001. Treatment with selective inhibitors or stimulators was compared with control vehicles. n.s., no significant difference. At least three independent biological replicates were performed for Figure 5A–B.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The upper band (220 bp PCR product) in each lane represents CFTR, whereas the lower band (100 bp product) represents GAPDH (This figure was related to Figure 5B).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The relationship between R value (fluorescence emission intensity at 635nm/fluorescence emission intensity at 590 nm) and pHi for the indicator 5'(and 6')-carboxy-10-dimethylamino-3-hydroxy-spiro[7H-benzo[c]xanthene-7,1'(3 hr)-isobenzofuran]−3'-one (carboxy SNARF-1)). (B–D) Intracellular pH (pHi) of the ligated efferent ductules with or without bicarbonate(25 mM)(B), Acetazolamide(500 μM)(C), Amiloride(1 mM)(D) from WT mice and Adgrg2-/Y mice. (B–D) *p<0.05, selective inhibitors or stimulators treated were compared with control vehicles.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Co-Immunofluorescence staining of ADGRG2 (red fluorescence) and ANO1(green fluorescence) in WT male mice efferent ductules. Scale bars, 50 μm. (B) Immunofluorescent staining of CFTR (sc-8909, Santa Cruz, green fluorescence) and acetylated-tubulin (yellow fluorescence) in WT male mice efferent ductules. Scale bars, 50 μm. A representative image was selected from at least three independent experiments. (C) Bar graph representation and statistical analyses of co-localization cells of CFTR and acetylated-tubulin in WT male mice efferent ductules (related to (B)).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** ***p<0.001, Adgrg2-/Y lysates or IP protein were compared with WT lysates or IP protein respectively. n.s., no significant difference.
+
 In particular, unambiguous co-localization of ADGRG2 and CFTR on the apical membrane was detected (Figure 5C–G and Figure 5—figure supplement 3) and ADGRG2 was associated with CFTR in co-immunoprecipitation assays (Figure 5H and Figure 5—figure supplement 4). Taken together, these results suggest a complex formation and functional coupling of ADGRG2 and CFTR in the non-ciliated cells of the efferent ductules.
 
-## The outwardly rectifying whole-cell Cl- current (IADGRG2-ED) of ADGRG2 promoter-labeled efferent ductule cells
+### The outwardly rectifying whole-cell Cl- current (IADGRG2-ED) of ADGRG2 promoter-labeled efferent ductule cells
 
 We then performed whole-cell Cl- recording of primary ADGRG2 promoter-labeled efferent ductule cells derived from WT and Adgrg2-/Y mice with normal Cl- concentrations or by substituting Cl- with gluconate (Gluc-) in the bath solution (Figure 6A–E and Table 1). Patch-clamp recording on ADGRG2 promoter-labeled non-ciliated cells derived from WT mice revealed a reversible whole-cell Cl- current (IADGRG2-ED), which was significantly diminished in response to substitution of the bath Cl- solution with Gluc- (148.5 mM Cl- was replaced by 48.5 mM Cl- and 100 mM Gluc-) (Figure 6A–B). This whole-cell Cl- current (IADGRG2-ED) was recovered once Gluc- was substituted with Cl- solution (Figure 6A–B). Further I-V analysis identified an outwardly rectifying whole-cell Cl- current (IADGRG2-ED) of wild type mice, which was significantly reduced in response to Gluc- substitution (Figure 6C–E and Table 1). The change in the reversal potential (Erev) with Gluc- replacement followed the Nernst equation (Figure 6C and Table 1). In contrast, the IADGRG2-ED of Adgrg2-/Y mice was substantially lower than the IADGRG2-ED of their WT littermates, which showed no significant changes in response to substitution of the bath Cl- solution with Gluc- (Figure 6A–6E and Table 1). These results suggested that ADGRG2 deficiency in the efferent ductules significantly reduced the whole-cell Cl- current of ADGRG2 promoter-labeled non-ciliated cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig6-v2.jpg)
 
-**Figure 6.:** - current recording of ADGRG2 promoter-labeled efferent ductule cells.(A) Time course of whole-cell Cl- current (IADGRG2-ED) at +100 and −100 mV in ADGRG2 promoter-labeled efferent ductule cells derived from Adgrg2-/Y mice or their littermates. An ‘a’ or ‘d’ indicates the substitution of the Cl- bath solution with Gluc- (148.5 mM Cl- was replaced by 48.5 mM Cl- and 100 mM Gluc-); and ‘b’ or ‘e’ indicates the substitution of the Gluc- bath solution with Cl- (148.5 mM Cl-). ‘a’,”b’ and ‘c’ belong to WT mice. ‘d’,”e’ and ‘f’ belong to Adgrg2-/Y mice. (B) The current-voltage relationship of IADGRG2-ED at specific time points (from 6A) is shown. (C) The whole cell Cl- current of IADGRG2-ED elicited by voltage steps between −100 mV and +100 mV in a representative ADGRG2-promoter-RFP labeled efferent ductule cells derived from the Adgrg2-/Y mice and their wild type littermates. The outwardly rectifying IADGRG2-ED was significantly diminished when bath Cl- was substituted for gluconate (Gluc-). (D) Representative whole-cell Cl- current of ADGRG2 promoter-labeled efferent ductule cells; IADGRG2-ED versus voltage (I–V) relationships in response to voltage ramps recorded with a CsCl pipette solution in Adgrg2-/Y (n = 8) or WT mice (n = 8). The outwardly rectifying IADGRG2-ED was significantly diminished, and its reversal potential (Erev) shifted to the positive direction when Cl- was substituted for Gluc-. (E) Average current densities (pA/pF) measured at 100 mV of (C). Inset: average Erev (±s.e.m., n = 8 for each condition). **p<0.01, IADGRG2-ED in Gluc- solution was compared with IADGRG2-ED in Cl- solution. ns, no significant difference. At least three independent biological replicates were performed.
+**Figure 6.:** (A) Time course of whole-cell Cl- current (IADGRG2-ED) at +100 and −100 mV in ADGRG2 promoter-labeled efferent ductule cells derived from Adgrg2-/Y mice or their littermates. An ‘a’ or ‘d’ indicates the substitution of the Cl- bath solution with Gluc- (148.5 mM Cl- was replaced by 48.5 mM Cl- and 100 mM Gluc-); and ‘b’ or ‘e’ indicates the substitution of the Gluc- bath solution with Cl- (148.5 mM Cl-). ‘a’,”b’ and ‘c’ belong to WT mice. ‘d’,”e’ and ‘f’ belong to Adgrg2-/Y mice. (B) The current-voltage relationship of IADGRG2-ED at specific time points (from 6A) is shown. (C) The whole cell Cl- current of IADGRG2-ED elicited by voltage steps between −100 mV and +100 mV in a representative ADGRG2-promoter-RFP labeled efferent ductule cells derived from the Adgrg2-/Y mice and their wild type littermates. The outwardly rectifying IADGRG2-ED was significantly diminished when bath Cl- was substituted for gluconate (Gluc-). (D) Representative whole-cell Cl- current of ADGRG2 promoter-labeled efferent ductule cells; IADGRG2-ED versus voltage (I–V) relationships in response to voltage ramps recorded with a CsCl pipette solution in Adgrg2-/Y (n = 8) or WT mice (n = 8). The outwardly rectifying IADGRG2-ED was significantly diminished, and its reversal potential (Erev) shifted to the positive direction when Cl- was substituted for Gluc-. (E) Average current densities (pA/pF) measured at 100 mV of (C). Inset: average Erev (±s.e.m., n = 8 for each condition). **p<0.01, IADGRG2-ED in Gluc- solution was compared with IADGRG2-ED in Cl- solution. ns, no significant difference. At least three independent biological replicates were performed.
 
-## CFTR mediates the whole-cell Cl- current of ADGRG2 promoter-labeled efferent ductule cells
+**Table 1.**
+ Average reversal potential calculated at different Cl- concentrations for Figure 6C.Average reversal potential(Erev) (±s.e.m., n = 8 for each condition) in Figure 6C and calculated Nernst potential at different Cl- concentrations. The Nernst equation was: Erev=-RT/Z [Ln (Cl-)in/(Cl-)out﻿].
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Erev[Cl-]o148.5 mM(mV)</th>
+      <th>Erev[Cl-]o48.5 mM(mV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nernst</td>
+      <td>−4.6</td>
+      <td>25.3</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>−4.0 ± 0.51</td>
+      <td>20.1 ± 2.52</td>
+    </tr>
+    <tr>
+      <td>Adgrg2-/Y</td>
+      <td>−4.1 ± 0.36</td>
+      <td>19.4 ± 2.47</td>
+    </tr>
+  </tbody>
+</table>
+
+### CFTR mediates the whole-cell Cl- current of ADGRG2 promoter-labeled efferent ductule cells
 
 We next examined the effects of different Cl- channel and transporter inhibitors on the IADGRG2-ED of efferent ductule cells derived from Adgrg2-/Y mice and their WT littermates. Although application of the ANO1 inhibitor Ani9 or the chloride-bicarbonate exchanger inhibitor DIDS exerted no significant effects on the IADGRG2-ED of WT mice, the specific CFTR inhibitor CFTRinh-172 significantly reduced the IADGRG2-ED current (Figure 7A–B and Figure 7—figure supplement 1). Moreover, the difference in the IADGRG2-ED between Adgrg2-/Y mice and their WT littermates was eliminated by the application of CFTRinh-172(Figure 7A–B). After the application of CFTRinh-172, the IADGRG2-ED showed no significant response to Gluc- substitution in the bath solution (Figure 7—figure supplement 2). Consistently, when we knocked down CFTR expression in efferent ductules (Figure 7C), the whole-cell Cl- current (IADGRG2-ED) of WT mice was significantly reduced (Figure 7D–E and Figure 7—figure supplement 3). These results suggested that CFTR is essentially activated in ADGRG2 promoter-labeled efferent ductule cells, which mediate the observed outwardly rectifying whole-cell Cl- current, and ADGRG2 is required for the basic activation of CFTR in these cells.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig7-v2.jpg)
+
+**Figure 7.:** (A, D and F) Corresponding I-V curves of the whole-cell Cl- IADGRG2-ED currents recorded in Figure 6 and (A, D and F) Corresponding I-V curves of the whole-cell Cl- IADGRG2-ED currents recorded in Figure 7—figure supplement 1(A,F) and Figure 7—figure supplement 3(D). WT (n = 6), Adgrg2-/Y (n = 6); WT +CFTRinh-172 (n = 6), Adgrg2-/Y+CFTRinh-172 (n = 6), WT +ANI9 (n = 6), Adgrg2-/Y+ANI9 (n = 6), WT +DIDS (n = 6), Adgrg2-/Y+DIDS (n = 6); WT +Control RNAi (n = 6), WT +CFTR RNAi (n = 6), Adgrg2-/Y+Control RNAi (n = 6), Adgrg2-/Y+CFTR RNAi (n = 6); WT +FSK + IBMX (n = 6), Adgrg2-/Y+FSK+IBMX (n = 6). (B，E and G) Corresponding bar graph depicting the average current densities (pA/pF) measured at 100 mV in (A), (D) and (F). (C) qRT-PCR analysis of CFTR levels in the efferent ductules treated with CFTR siRNA (n = 3) or control RNAi (n = 3). (B, E and G) *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001. Treatment with selective inhibitors, stimulators or CFTR RNAi was compared with control vehicles or control RNAi. n.s., no significant difference. At least three independent biological replicates were performed for Figure 7B,E and G.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The whole cell Cl- current of I ADGRG2-ED elicited by voltage steps between −100 mV and +100 mV in a representative ADGRG2-promoter-RFP-labeled efferent ductule cells derived from the Adgrg2-/Y mice and their wild-type littermates with or without selective inhibitors or stimulators. (B) Corresponding bar graph of average reversal potential(Erev) (±s.e.m., n = 6 for each condition) in (A) and calculated Nernst potential at according Cl- concentrations. n.s., no significant difference; compared to calculated Nernst potential.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) The whole cell Cl- current of IADGRG2-ED elicited by voltage steps between −100 mV and +100 mV in a representative ADGRG2-promoter-RFP-labeled efferent ductule cells derived from the Adgrg2-/Y mice and their wild-type littermates with or without CFTR selective inhibitors CFTRinh-172, and in response to bath Cl- concentration change (Cl- was substituted for gluconate (Gluc-)). (B) Representative whole cell Cl- current of IADGRG2-ED versus voltage (I–V) relationships in response to voltage ramps recorded in (A) with a CsCl pipette solution. (C) Corresponding bar graph of average current desnities (pA/pF) measured at 100 mV. **p<0.01, ***p<0.001, compared with WT mice in 148.5mM Cl- condition. #p<0.05, WT mice in 148.5mM Cl- condition treated with CFTRinh-172 was compared with WT mice in 48.5mM Cl- condition treated with CFTRinh-172. (D) Corresponding bar graph of average reversal potential(Erev) (±s.e.m., n = 8 for each condition) in (A–B).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) The whole cell Cl- current of I ADGRG2-ED elicited by voltage steps between −100 mV and +100 mV of primary efferent ductile cells after CFTR-siRNA or Scramble-siRNA treatment. (B) Corresponding bar graph of average reversal potential(Erev) (±s.e.m., n = 6 for each condition) in (A). n.s., no significant difference; compared to calculated Nernst potential.
+
 CFTR is activated by FSK and IBMX (Lu et al., 2010). In response to FSK and IBMX stimulation, the IADGRG2-ED of both Adgrg2-/Y and WT mice significantly increased to similar levels (Figure 7F–G), consistent with the western blot results, indicating that CFTR expression levels did not change in Adgrg2-/Y mice. The results also indicated that basic CFTR activation in ADGRG2 promoter-labeled efferent ductule cells does not represent the full activation state (Figure 7F–G).
 
-## Gq activity is required for ADGRG2/CFTR coupling in the efferent ductules
+### Gq activity is required for ADGRG2/CFTR coupling in the efferent ductules
 
 Similar to Adgrg2-/Y mice, the efferent ductules derived from Gnaq+/- mice exhibited imbalances in pH homeostasis (Figure 8A). We utilized Gnaq+/- mice because Gnaq-/- mice were not available due to the infertility of the Gnaq+/- mice. Consistently, we observed a significantly decreased whole-cell Cl- IADGRG2-ED current of the ADGRG2 promoter-RFP-labeled primary non-ciliated cells in Gnaq+/- mice compared with that observed in their WT littermates (Figure 8B–D and Figure 8—figure supplement 1A–B). The application of Ro 31–8220, an inhibitor of the Gq downstream effector PKC, further inhibited the observed IADGRG2-ED and showed much stronger effects than the PKA inhibitor PKI 14–22 (Figure 8—figure supplement 1D–G). These results indicated that the Gq-PKC pathway plays critical roles in basic CFTR activation in the efferent ductules, which controls Cl- and pH homeostasis for efficient fluid reabsorption.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig8-v2.jpg)
+
+**Figure 8.:** (A) Intracellular pH (pHi) of the ligated efferent ductules from WT (n = 9) mice or Gnaq+/- (n = 9) mice was measured by carboxy-SNARF. (B). The whole-cell Cl- current of the IADGRG2-ED elicited by voltage steps between −100 mV and +100 mV in representative ADGRG2 promoter-RFP-labeled efferent ductule cells derived from Gnaq+/- mice, their WT littermates, or WT murine cells incubated with the PKC inhibitor Ro 31–8220 (500 nM). The whole-cell Cl- IADGRG2-ED current was recorded with a CsCl pipette solution (101 mM CsCl, 10 mM EGTA, 10 mM Hepes, 20 mM TEACl, 2 mM MgATP, 2 mM MgCl2, 5.8 mM glucose, pH7.2, with D-mannitol compensated for osm 290) and a bath solution containing 138 mM NaCl, 4.5 mM KCI, 2 mM CaCl2, 1 mM MgCl2, 5 mM glucose, and 10 mM HEPES, pH 7.4 with D-mannitol compensated for osm 310. (C) Corresponding I-V curves of the whole-cell Cl- currents recorded in (B). WT (n = 6), Gnaq+/- (n = 6), WT +Ro 31–8220 (n = 6). (D) Corresponding bar graph of the average current densities (pA/pF) measured at 100 mV according to (C). (E) Co-localization of ADGRG2 (red) and Gq (green) in the male efferent ductules. Scale bars, 50 μm. (F) Co-localization of Gq (red) and acetylated-tubulin (yellow) in the male efferent ductules. Scale bars, 50 μm. (G) IP1 levels in the brain tissues, ligated efferent ductules, and livers of WT (n = 9) or Adgrg2-/Y (n = 9) mice in response to ATP (5 mM) or control vehicles, measured by ELISA. (H) cAMP concentrations in the brains, ligated efferent ductules, and livers of WT (n = 9) or Adgrg2-/Y (n = 9) mice were measured using ELISA. (8A,8D,8G-H) *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice or Gnaq+/-mice compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001, ATP- or Ro 31–8220-treated cells were compared with control vehicles. n.s., no significant difference. At least three independent biological replicates were performed for Figure 8A,D,G and H.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) The whole cell Cl- current of IADGRG2-ED elicited by voltage steps between −100 mV and +100 mV in a representative ADGRG2-promoter-RFP-labeled efferent ductule cells derived from the Gnaq+/- mice and their wild-type littermates, in control bath solution or in response to substitution of Cl- with the gluconate (Gluc-). (B) Representative whole cell Cl- current of ADGRG2-promoter-labeled efferent ductule cells IADGRG2-ED versus voltage (I–V) relationships in response to voltage ramps recorded in (A) with a CsCl pipette solution. (C) Corresponding bar graph of average current desnities (pA/pF) measured at 100 mV. Inset: Average Erev (±s.e.m., n = 8 for each condition). (D) The whole cell Cl- current of IADGRG2-ED elicited by voltage steps between −100 mV and +100 mV in a representative ADGRG2-promoter-RFP-labeled efferent ductule cells derived from the Adgrg2-/Y mice and their wild type littermates, with or without specific G protein signaling pathway inhibitors (including the Gs-PKA inhibitor PKI14-22 or the Gq-PKC inhibitor Ro 31–8220). (E) Corresponding I-V curves of the whole-cell Cl- currents IADGRG2-ED recorded in (D). (F) Corresponding bar graph of average current desnities (pA/pF) measured at 100 mV in (D–E). (G) Corresponding bar graph of average reversal potential(Erev) and calculated Nernst potential (±s.e.m., n = 6 for each condition) in (D–E). n.s., no significant difference; the Erev were compared with calculated Nernst potential. (C,F) *p<0.05, **5, p<0.01, Gnaq+/- or Adgrg2-/Y mice were compared with their wild-type littermates. #p<0.05, substitution of Cl- with the gluconate (Gluc-) or cells treated with different inhibitors were compared with control solution.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Bar graph representation and statistical analyses of co-localization of Gq and ADGRG2 in WT male mice efferent ductules (corresponding to Figure 8E), n = 3 mice per group; 4–10 random areas were selected from each section, and six sections were randomly selected from each mouse. (B) Bar graph representation and statistical analyses of co-localization of Gq and acetylated-tubulin in WT male mice efferent ductules (corresponding to Figure 8F), n = 3 mice per group; 4–10 random areas were selected from each section, and six sections were randomly selected from each mouse.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Western blot analysis of ADGRG2, CFTR, Gs, Gq, β-arrestin-1, β-arrestin-2 expression in efferent ductules, brain and liver tissue of WT and Adgrg2-/Y mice. A representative western blot from at least three independent experiments was shown. (CFTR antibody:20738–1-AP, Proteintech). (B) Bar graph representation and statistical analyses of (A). All blots were normalized to GAPDH. n.s., no significant difference; Adgrg2-/Y mice compared with WT mice in the same tissue.
 
 We next investigated whether Gq activation by ADGRG2 is required for CFTR function, as both Gq and ADGRG2 are required for normal CFTR currents in the efferent ductules. In the efferent ductules, the Gq is localized in ADGRG2-expressing cells but not acetylated tubulin-labeled cells (Figure 8E–F and Figure 8—figure supplement 2). Consistently, Gq was readily detected in ADGRG2 antibody immuno-precipitated complexes, whereas Gi was not detectable, suggesting a physical interaction of ADGRG2 with Gq in the efferent ductules (Figure 5H and Figure 5—figure supplement 4). Moreover, the endogenous resting IP1 and cAMP levels of the ligated efferent ductules derived from the Adgrg2-/Y mice were significantly lower than those of their WT littermates (Figure 8G and H). These decreases were not caused by changes in the expression of the Gs-Adenyl-cyclase or Gq-PLC (Phospholipase C) system because Gs and Gq protein levels were similar (Figure 8—figure supplement 3), and the application of ATP induced similar levels of IP3 accumulation in the Adgrg2-/Y mice and their WT littermates (Figure 8G). Taken together, these data indicate that Gq regulates fluid reabsorption by mediating ADGRG2/CFTR coupling, and both the Gq-IP3-PKC pathway and the Gs-cAMP pathway were activated in ADGRG2 promoter-labeled efferent ductule cells.
 
 Previous studies have shown that the activation of Angiotensin II receptor, type 2(AGTR2) increases proton secretion (Shum et al., 2008). We therefore stimulated the efferent ductules with different concentrations of angiotensin II and evaluated whether they rescued the fluid reabsorption dysfunction in Adgrg2-/Y mice by restoring pH homeostasis in the efferent ductules. Although applying 1 μM angiotensin II had no significant effect, administering 100 nM angiotensin II restored fluid reabsorption in the efferent ductules derived from Adgrg2-/Y mice (Figure 4L–M). This rescue was blocked by only the AGTR2 antagonist PD123319 (Figure 4L) but not by the Angiotensin II receptor, type 1(AGTR1) antagonist candesartan (Figure 4M). In summary, Gq and ADGRG2 regulated fluid reabsorption by maintaining pH and chloride homeostasis. The pharmacological activation of AGTR2 rescued the ADGRG2 or Gq dysfunction involved in fluid reabsorption in the efferent ductules.
 
-## ADGRG2/CFTR complex formation mediated by β-arrestin-1 but not β-arrestin-2 is essential for fluid reabsorption in the efferent ductules
+### ADGRG2/CFTR complex formation mediated by β-arrestin-1 but not β-arrestin-2 is essential for fluid reabsorption in the efferent ductules
 
 In parallel with G protein signaling, arrestins mediate important functions downstream of many GPCRs, including the connection of GPCR activation to channel functions (Alvarez-Curto et al., 2016; Dong et al., 2017; Liu et al., 2017; Thomsen et al., 2016). We therefore examined the fluid reabsorption in Arrb1-/- and Arrb2-/- knockout mice. Whereas the efferent ductules derived from Arrb2-/- knockout mice showed normal fluid reabsorption as well as pH homeostasis compared to their WT littermates, these functions of the efferent ductules derived from Arrb1-/- knockout mice were significantly impaired (Figure 9A–C and Figure 9—figure supplement 1). Moreover, whereas ADGRG2 and CFTR co-localized in the apical membrane regions of the non-ciliated cells of the efferent ductules derived from Arrb2-/- or WT mice, they were separated in Arrb1-/- mice (Figure 9D–K). In β-arrestin-1-deficient efferent ductules, CFTR localized away from ezrin (Figure 9F–K), an apical membrane marker, suggesting that β-arrestin-1 is required for the correct localization of CFTR. Consistently, whereas CFTR was co-immunoprecipitated with ADGRG2 in WT and Arrb2-/- mice, it was not found in ADGRG2-immunoprecipitated complexes from the efferent ductules derived from Arrb1-/- mice, further suggesting that β-arrestin-1 is an essential component in a signaling complex encompassing ADGRG2 and CFTR in the efferent ductules (Figures 5H and 9L and Figure 9—figure supplement 2).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig9-v2.jpg)
+
+**Figure 9.:** (A) Diameters of the luminal ductules derived from WT (n = 12), Adgrg2-/Y (n = 12) or Arrb1-/- (n = 15) mice. (B) Diameters of the luminal ductules derived from WT (n = 12), Adgrg2-/Y (n = 12) or Arrb2-/- (n = 15) mice. (C) Intracellular pH (pHi) of the ligated efferent ductules derived from WT (n = 9), Arrb1-/- (n = 9) or Arrb2-/- (n = 9) mice were measured by carboxy-SNARF. (D) Co-localization of ADGRG2 (red fluorescence) and CFTR (sc-8909, Santa Cruz, green fluorescence) in the male efferent ductules of Arrb2-/- mice. (E) Analysis of ADGRG2 and CFTR fluorescence intensities in Arrb2-/- mice by Pearson’s correlation analysis. The Pearson's correlation coefficient was 0.62. (F) Localization of ADGRG2 (red fluorescence) and CFTR (sc-8909, Santa Cruz, green fluorescence) in the male efferent ductules of Arrb1-/- mice. (G) Analysis of ADGRG2 and CFTR fluorescence intensities in Arrb1-/- mice by Pearson’s correlation analysis. The Pearson's correlation coefficient was −0.15. (H) Co-localization of ezrin (red fluorescence) and CFTR (sc-8909, Santa Cruz, green fluorescence) in the male efferent ductules of Arrb2-/- mice. (I) Analysis of ezrin and CFTR fluorescence intensities in Arrb2-/- mice by Pearson’s correlation analysis. The Pearson's correlation coefficient was 0.66. (J) Co-localization of ezrin (red fluorescence) and CFTR (sc-8909, Santa Cruz, green fluorescence) in the male efferent ductules of Arrb1-/- mice. (K) Analysis of ezrin and CFTR fluorescence intensities in Arrb1-/- mice by Pearson’s correlation analysis. The Pearson's correlation coefficient was −0.15. (L) ADGRG2 was immunoprecipitated by an anti-ADGRG2 antibody in the male efferent ductules of Arrb1-/- mice or Arrb2-/- mice, and co-precipitates with CFTR, β-arrestin-1, and β-arrestin-2 were examined by using specific corresponding antibodies (CFTR antibody:20738–1-AP, Proteintech). (9A-C) *p<0.05, **p<0.01, ***p<0.001, Adgrg2-/Y mice compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001, Arrb1-/- mice or Arrb2-/- mice compared with WT mice. ns, no significant difference. At least three independent biological replicates were performed for Figure 9A–C and L.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A,C) Western blot analysis of β-arrestin1/2 expression in the efferent duct tissue of WT and Arrb2-/-(A) or Arrb1-/-(C) mice. A representative western blot from at least three independent experiments was shown. (B,D) Bar graph representation and statistical analyses of (A,C). All blots were normalized to GAPDH.***p<0.001, Arrb2-/- mice or Arrb1-/- mice were compared with WT mice, respectively. n.s., no significant difference.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Co-localization of Ezrin (red fluorescence) and CFTR (sc-8909, Santa Cruz, green fluorescence) in male efferent ductules of the WT mice and Adgrg2-/Y mice. Scale bars, 50 μm. Analysis of Ezrin and CFTR fluorescence intensities by Pearson’s correlation. The pearson's correlation coefficient is 0.6 for WT mice and 0.65 for Adgrg2-/Y mice. (B) Bar graph representation and statistical analyses of Figure 9L. ***p<0.001, Arrb2-/- lysates or IP protein were compared with Arrb1-/- lysates or IP protein, respectively. n.s., no significant difference.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** (A) HEK293 cells were transfected with equal amount plasmids encoding ADGRG2, CFTR, β-arrestin-1 or β-arrestin-2 plasmids. The Flag- ADGRG2 were pulled down by M2-Flag beads and the associated CFTR, β-arrestins were detected by western blot. Representative images from at least three independent experiments are shown (CFTR antibody:20738–1-AP, Proteintech). (B) Bar graph representation and statistical analyses of (A).***p<0.001, IP protein of ADGRG2 overexpressed cells were compared with control plasmids transfected cells respectively. n.s., no significant difference.
+
 We therefore used HEK293 cells to investigate the in vitro role of β-arrestins in ADGRG2/CFTR complex formation. Overexpression of β-arrestin-1 but not β-arrestin-2 promoted the interaction between ADGRG2 and CFTR (Figure 9—figure supplement 3), confirming the essential role of β-arrestin-1 in assembly of ADGRG2/CFTR coupling.
 
-## Molecular determinants of ADGRG2 coupling with G protein subtypes and their contribution to the regulation of CFTR activity in vitro
+### Molecular determinants of ADGRG2 coupling with G protein subtypes and their contribution to the regulation of CFTR activity in vitro
 
 ADGRG2 belongs to the adhesion GPCR group of the GPCR superfamily (Purcell and Hall, 2018; Monk et al., 2015). Whereas the endogenous ligand of ADGRG2 in the testis is unknown, several members of the same adhesion GPCR subfamily, such as VLGR1 and GPR56, showed constitutive activity via overexpression in a heterologous system (Purcell and Hall, 2018; Hu et al., 2014; Paavola et al., 2011). To dissect the molecular mechanism underlying ADGRG2 signaling in the modulation of CFTR functions, we overexpressed ADGRG2 and CFTR in HEK293 cells (Figure 10—figure supplement 1). In vitro, the overexpression of ADGRG2 causes constitutive Gs and Gq coupling activity; a stronger effect is observed with ADGRG2β (Figure 10—figure supplements 2–5). Whole-cell recordings were performed to examine the effects of ADGRG2 and CFTR co-expression on membrane currents by using an I-V analysis (Figure 10A). The co-expression of ADGRG2 and CFTR significantly increased the amplitude and slope of the current responses, which were significantly reduced by the CFTR inhibitor CFTRinh-172, compared with cells transfected with CFTR alone, indicating that CFTR channels are activated by ADGRG2 in a recombinant system (Figure 10B–D). Similar to primary efferent ductule cells (Figure 7F–G), the application of FSK and IBMX further increased the whole-cell Cl- current in the presence of both ADGRG2 and CFTR, confirming that ADGRG2 increased the basal activity of CFTR but did not stimulate CFTR to a full activation state (Figure 10B–C and Figure 10—figure supplement 5A).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig10-v2.jpg)
+
+**Figure 10.:** (A) Whole-cell Cl- currents recorded with a CsCl pipette solution in HEK293 cells transfected with plasmids encoding ADGRG2 or/and CFTR, with or without CFTR inhibitor CFTRinh-172(10 μM) or its activator (FSK (10 μM)+IBMX (100 μM)). (B) Corresponding I-V curves of the whole-cell Cl- currents recorded in (C). ADGRG2 (n = 6), CFTR (n = 6), CFTR + CFTRinh-172(n = 6), CFTR + FSK + IBMX (n = 6), CFTR + ADGRG2 (n = 6), CFTR + ADGRG2+CFTRinh-172(n = 6), CFTR + ADGRG2+FSK + IBMX (n = 6). (C and D) Bar graph representation of average current densities (pA/pF) measured at 100 mV according to (B) and Figure 9; (C and D) Bar graph representation of average current densities (pA/pF) measured at100mVaccording to (B) and Figure 10–figure supplement 5C. (10C-10D) *p<0.05, **p<0.01, ***p<0.001, HEK293 cells transfected with CFTR compared with cells transfected with pCDNA3.1. #p<0.05, ##p<0.01, ###p<0.001, HEK293 cells transfected with ADGRG2 compared with non-ADGRG2 transfected cells. $p<0.05, $$, p<0.01, $$$, p<0.001, CFTRinh-172, FSK, NF449, U73122 or Ro 31–8220 compared with control vehicle. n.s., no significant difference. At least three independent biological replicates were performed for Figure 10C–D.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Co-localization of ADGRG2 (red fluorescence) and CFTR (green fluorescence) in HEK293 cells. Scale bars, 20 μm. A representative figure from at least three independent experiments was shown. (B) Analysis of ADGRG2 and CFTR fluorescence intensities by Pearson’s correlation. The pearson's correlation coefficient is 0.56.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** (A–C) Construction and expression of ADGRG2-full length (ADGRG2FL) and a truncated form ADGRG2β. (A) Schematic illustration of the structure of the ADGRG2FL and the ADGRG2β used in the current study. The full length ADGRG2 encompasses a GPS site, which was cleaved after its transportation to the plasma membrane through an auto-hydrolysis mechanism. Therefore, we made a truncation version of the ADGRG2β, which starts at the auto-cleaved site, T584. A signal peptide and a flag-tag were added at the N-terminal for both ADGRG2FL and ADGRG2β. (B) Confocal images showed that the ADGRG2FL and ADGRG2β were primarily localized at the plasma membrane. Scale bars, 10 μm. (C) The expression of ADGRG2FL and ADGRG2β were detected by Western blot. The observed 180 kDa band of the ADGRG2FL is the N-terminal part of the ADGRG2 protein due to the auto-hydrolysis. The apparent 200 kDa band of the ADGRG2β is due to the glycosylation. Representative western blots from at least three independent experiments were shown.
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig10-figsupp3-v2.jpg)
+
+**Figure 10—figure supplement 3.:** (A–C) Overexpression of ADGRG2FL leads to constitutively increased intracellular cAMP levels. HEK293 cells were co-transfected with the GloSensor plasmid and the control pcDNA3.1 vector or the ADGRG2FL expression vector at the indicated concentrations. (A) Representative curve of the intracellular cAMP level measured by the Glosensor assay. (B) A dose-dependent cAMP increase by overexpression of ADGRG2FL was detected. (C) The corresponding ADGRG2FL protein expression level was examined by western blot. **p<0.01,***p<0.001, the ADGRG2FL-transfected cells were compared to pcDNA3.1-transfected cells. (D–F) Overexpression of ADGRG2β leads to constitutively increased intracellular cAMP levels. HEK293 cells were transfected with the GloSensor plasmid and the control pcDNA3.1 vector or the ADGRG2β expression vector at the indicated concentrations. (D) Representative curve of the intracellular cAMP level measured by the Glosensor assay. (E) A dose-dependent cAMP increase by overexpression of ADGRG2β was detected. (F) The corresponding ADGRG2β protein expression level was examined by western blot. ***p<0.001, the ADGRG2β transfected cells were compared to pcDNA3.1-transfected cells. (G–H) ADGRG2FL overexpressed cells showed higher cAMP levels than the control cells. (G) The constitutive cAMP accumulation in HEK293 cells transfected with ADGRG2FL was further enhanced by the overexpression of Gs in a dose-dependent manner. (H) The corresponding ADGRG2FL and Gs protein expression levels were examined by western blot. ***p<0.001, the Gs and ADGRG2 transfected cells were compared to only ADGRG2 transfected cells. #p<0.05, ##p<0.01, ###p<0.001, the Gs and pcDNA3.1 transfected cells were compared to only pcDNA3.1 transfected cells. $$, p<0.01,$$$, p<0.001, The ADGRG2FL overexpressed cells were compared to the corresponding vector pcDNA3.1 transfected cells with equal Gs protein amount. (I–J) ADGRG2β overexpressed cells showed higher cAMP levels than the control cells.(I) The constitutive cAMP accumulation in HEK293 cells transfected with ADGRG2β was further enhanced by the overexpression of Gs in a dose-dependent manner. (J) The corresponding ADGRG2β and Gs protein expression levels were examined by a western blot. ***p<0.001, the Gs and ADGRG2β transfected cells were compared to only ADGRG2β transfected cells. #,p<0.05, ##p<0.01, ###p<0.001, the Gs and pcDNA3.1 transfected cells were compared to only pcDNA3.1 transfected cells. $$, p<0.01,$$$, p<0.001, The ADGRG2β overexpressed cells were compared to the corresponding vector pcDNA3.1 transfected cells with equal Gs protein amounts. (K–M) Comparison of The cAMP levels in the cells with similar expression levels of ADGRG2FL and ADGRG2β. (K–L) The ADGRG2β exhibits higher constitutive cAMP activity compared to ADGRG2FL. (M) The corresponding ADGRG2FL and ADGRG2β protein expression levels were examined by the ELISA assay. ***p<0.001, ADGRG2FL or ADGRG2β transfected cells were compared to control vector transfected cells ###p<0.001, ADGRG2β transfected cells were compared to ADGRG2FL transfected cells.
+
+![Figure 10—figure supplement 4.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig10-figsupp4-v2.jpg)
+
+**Figure 10—figure supplement 4.:** (A–B) Dose-dependent effect of ADGRG2FL (A) or ADGRG2β (B) overexpression on the luciferase activity of the NFAT-DLR. *p<0.05, **p<0.01, ***p<0.001, the ADGRG2 transfected cells were compared to non-transfected cells. (C–D) ADGRG2FL overexpressed cells showed higher NFAT signaling activity than the control cells. (C) The luciferase activity of the NFAT-DLR in HEK293 cells transfected with ADGRG2FL was further enhanced by the overexpression of Gq in a dose-dependent manner. (D) The corresponding ADGRG2FL and Gq protein expression levels were examined by western blot. ***p<0.001, the Gq and ADGRG2FL transfected cells were compared to only ADGRG2FL transfected cells. #p<0.05, ##p<0.01, ###p<0.001, the Gq and pcDNA3.1 transfected cells were compared to only pcDNA3.1 transfected cells. $$, p<0.01,$$$, p<0.001, The ADGRG2FL overexpressed cells were compared to the corresponding vector pcDNA3.1 transfected cells with equal Gq protein amounts. (E–F) ADGRG2β overexpressed cells showed higher NFAT signaling activity than the control cells. (E) The luciferase activity of the NFAT-DLR in HEK293 cells transfected with ADGRG2β was further enhanced by the overexpression of Gq in a dose-dependent manner. (F) The corresponding ADGRG2β and Gq protein expression levels were examined by western blot. *p<0.05, **p<0.01, ***p<0.001, the Gq and ADGRG2β transfected cells were compared to only ADGRG2β transfected cells. #p<0.05, ##p<0.01, ###p<0.001, the Gq and pcDNA3.1 transfected cells were compared to only pcDNA3.1 transfected cells. $$, p<0.01,$$$, p<0.001, The ADGRG2β overexpressed cells were compared to the corresponding vector pcDNA3.1 transfected cells with equal Gq protein amounts. (G) Comparison of the luciferase activity of the NFAT-DLR in the cells with similar expression levels of ADGRG2FL and ADGRG2β. The ADGRG2β exhibits higher constitutive activity in NFAT luciferase assay when compared to ADGRG2FL. ***p<0.001, ADGRG2FL or ADGRG2β transfected cells were compared to control vector transfected cells. ###p<0.001, ADGRG2β transfected cells was compared to ADGRG2FL transfected cells.
+
+![Figure 10—figure supplement 5.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig10-figsupp5-v2.jpg)
+
+**Figure 10—figure supplement 5.:** (A) Corresponding bar graph of average reversal potential(Erev) (±s.e.m., n = 6 for each condition) in HEK293 cells transfected with plasmids encoding ADGRG2 or/and CFTR，with or without CFTR inhibitor CFTRinh-172(10 μM) or its activator (FSK(10 μM)+IBMX(100 μM)) and calculated Nernst potential. n.s., no significant difference; the Erev were compared with calculated Nernst potential. (B) Whole-cell Cl- currents recorded with a CsCl pipette solution in HEK293 cells transfected with plasmids encoding ADGRG2 or/and CFTR，with or without the PKA inhibitor PKI14-22 or the PKC inhibitor Ro 31–8220. (C) Corresponding I-V curves of the whole-cell Cl- currents (n = 6 for each condition) recorded in (B). (D) Corresponding bar graph of average reversal potential(Erev) (±s.e.m., n = 6 for each condition) recorded in (B–C) and calculated Nernst potential. n.s., no significant difference; the Erev were compared with calculated Nernst potential.
 
 Importantly, increased CFTR activity induced by ADGRG2 was significantly diminished by the PKC inhibitor Ro 31-8220 (Figure 10D and Figure 10—figure supplement 5B–D). Taken together, these data demonstrate that ADGRG2 increases CFTR Cl- currents through the activation of Gq-PLC-PKC signaling.
 
 Previous crystallographic studies have shown that the intracellular loop 2 of the β2-adrenergic receptor is important for Gs coupling, and mutations in the intracellular loop three affect G protein coupling activity by receptors (Hu et al., 2014; Rasmussen et al., 2011). We therefore selected mutations in intracellular loops 2 and 3 and examined their effects on the constitutive activity of ADGRG2 in Gs or Gq signaling, as detected by cAMP or NFAT-dual-luciferase reporter (DLR) luciferase measurements (Figure 11A–C and Figure 11—figure supplement 1) in HEK293 cells. Under the equal expression of these mutants in the cell membrane, a double mutation in the ‘DRY’ motif H696A/M697A of ADGRG2 eliminated coupling activity with both Gs and Gq (Figure 11B–C and Figure 11—figure supplement 2). Three mutations in intracellular loop 2, specifically Y698A and F705A, significantly impaired the Gs coupling activity of ADGRG2 but did not exert significant effects on NFAT-DLR activity (Figure 11B–C). However, Y708A in intracellular loop 2 and R803E/K804E in intracellular loop 3 nearly abolished the Gq coupling activity of ADGRG2 but did not have significant effects on intracellular cAMP levels compared with the WT ADGRG2. Thus, the ‘DRY/HMY’ motif mutant is a G-protein dysfunctional mutant for both Gs and Gq signaling, Y698A and F705A are specific Gs-defective mutants, and Y708A and R803E/K804E are specific Gq-defective mutants of ADGRG2 (Figure 11B–C).
 
+![Figure 11.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig11-v2.jpg)
+
+**Figure 11.:** (A) Schematic representation of the location of the selected ADGRG2 mutants in intracellular loop 2 and loop 3 of ADGRG2. (B) Effects of the overexpression of ADGRG2 (n = 6) and its mutations (n = 6) on cAMP levels. (C) Effects of the overexpression of ADGRG2 (n = 6) and its mutations (n = 6) on NFAT-DLR activation. (D) Whole-cell Cl- currents recorded with a CsCl pipette solution in HEK293 cells overexpressing CFTR, CFTR and ADGRG2-WT, CFTR and ADGRG2-HM696AA, CFTR and ADGRG2-Y698A, CFTR and ADGRG2-F705A, CFTR and ADGRG2-Y708A or CFTR and ADGRG2-RK803EE. (E) Corresponding I-V curves for the whole-cell Cl- currents recorded in (D). (F) Bar graph representation of average current densities (pA/pF) measured at 100 mV according to (E). (11B-11C and 11F) *p<0.05, **p<0.01, ***p<0.001, cells transfected with ADGRG2-WT or mutants compared with the control plasmid (pCDNA3.1). #p<0.05, ##p<0.01, ###p<0.001, cells overexpressing ADGRG2 mutants compared with ADGRG2-WT. n.s., no significant difference. At least three independent biological replicates were performed for Figure 11B–C,F.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** The ADGRG2 mutation sites studied in the current work were highlighted. The green color indicated that the mutants caused both Gs and Gq defects of ADGRG2 coupling; the yellow color indicated that the mutants induced only Gs defects of ADGRG2 coupling, and the blue color indicated that the mutant induced only Gq defects of ADGRG2 coupling.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** (A) Western blot of ADGRG2 WT and its mutations (HM696AA, H696A, M697A, Y698A, K703A, V704A, F705A and Y708A in intracellular loop 2; and QL798AA and RK803EE in intracellular loop 3). Representative western blot from at least three independent experiments. (B) ELISA of the expression level of ADGRG2-WT and its mutations in the plasma membrane. ***p<0.001, the protein level of ADGRG2-WT and its mutations in the plasma membrane were compared to control.
+
+![Figure 11—figure supplement 3.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig11-figsupp3-v2.jpg)
+
+**Figure 11—figure supplement 3.:** ns., no significant difference; the Erev were compared with calculated Nernst potential.
+
 The coupling of these ADGRG2 mutants to CFTR activity was then examined using the whole-cell recording technique. Voltage clamps were used to generate the I-V relationships of the CFTR currents in cells co-transfected with CFTR and ADGRG2 (Figure 11D–F and Figure 11—figure supplement 3). Interestingly, although the mutant with a specific Gs signaling defect showed decreased coupling of ADGRG2 to CFTR, the Gq-dysfunctional mutant and the H696A/M697A double Gs/Gq signaling-defective mutant did not demonstrate coupling between ADGRG2 and CFTR (Figure 11D–F). Taken together, these results demonstrate that specific residues in intracellular loops 2 and 3 are determinants of the G protein subtype coupling of ADGRG2. Furthermore, downstream of ADGRG2, Gq signaling is essential for CFTR activation in recombinant in vitro systems.
 
-## Effects of the conditional expression of WT-ADGRG2 or its selective G-subtype signaling mutants on the rescue of reproductive defects in Adgrg2-/Y mice
+### Effects of the conditional expression of WT-ADGRG2 or its selective G-subtype signaling mutants on the rescue of reproductive defects in Adgrg2-/Y mice
 
 We next examined how the molecular determinants of ADGRG2/G protein subtype interactions contribute to the function of ADGRG2 infertility in vivo. Both ADGRG2 WT and G protein subtype mutants were conditionally expressed in the efferent ductules via virus infection under the 1 kb ADGRG2 promoter (Figure 12A). Similar to ADGRG2 WT mice, exogenously introduced ADGRG2 WT and mutants specifically localized to the inner surface of the non-ciliated cells of the efferent ductules (Figure 12—figure supplement 1A).
+
+![Figure 12.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig12-v2.jpg)
+
+**Figure 12.:** (A) Schematic representation of the mouse ADGRG2 promoters used in the rescue experiment. (B) Representative hematoxylin-eosin staining of the WT mice, Adgrg2-/Y mice or Adgrg2-/Y mice infected with lentivirus encoding ADGRG2-WT or different G-subtype mutants at the efferent ductules, initial segment or caput of the epididymis. Scale bars, 200 μm. (C) Bar graph representing the quantitative analysis of the number of sperm shown in Figure 12B from at least four independent experiments. (D–E) The corresponding bar graph of the accumulation of spermatozoa according to the hematoxyline-eosin staining of the WT, Adgrg2-/Y mice or Adgrg2-/Y mice infected with lentivirus encoding GRP64-WT or different G subtype mutants at the efferent ductules (D) or initial segment (E) of epididymis. (C–E) *p<0.05, **p<0.01, ***p<0.001; Adgrg2-/Y mice compared with WT mice. #p<0.05, ##p<0.01, ###p<0.001; Adgrg2-/Ymice infected with the lentivirus encoding different ADGRG2 constructs compared with Adgrg2-/Y mice infected with the control lentivirus. $, p<0.05, $$$, p<0.001; Adgrg2-/Ymice infected with the lentivirus encoding different ADGRG2 constructs compared with Adgrg2-/Y mice infected with the ADGRG2-WT lentivirus. n.s., no significant difference. At least three independent biological replicates were performed for Figure 12C–E.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig12-figsupp1-v2.jpg)
+
+**Figure 12—figure supplement 1.:** (A) The enlarged images of the ADGRG2 expression in the epididymal initial segment at 3 weeks after the injection of the lentivirus of ADGRG2-WT or mutants. Scale bars, 100 μm. (B) Photographs of caudal sperm preparations from the caudal epididymis of the WT mice, Adgrg2-/Y mice or Adgrg2-/Y mice infected with a lentivirus encoding ADGRG2 or its different mutants. Scale bars, 50 μm. (C) The corresponding bar graph of the accumulation of spermatozoa according to the hematoxyline-eosin staining of the WT, Adgrg2-/Y mice or Adgrg2-/Y mice infected with lentivirus encoding ADGRG2-WT or different G subtype mutants at the caput of epididymis. *p<0.05,***p<0.001, Adgrg2-/Y mice and Adgrg2-/Y mice infected with lentivirus were compared to WT mice. ###p<0.001, Adgrg2-/Y mice infected with lentivirus were compared to Adgrg2-/Y mice. $, p<0.05, $$, p<0.01; ADGRG2 mutant virus compared with ADGRG2-WT virus. n.s., no significant difference.
 
 The efferent ductules of Adgrg2-/Y animals frequently exhibited the accumulation of obstructed spermatozoa compared with observations in WT mice (Figure 12B). The conditional expression of ADGRG2 in non-ciliated cells in Adgrg2-/Y mice significantly reduced this obstruction, whereas the expression of G protein signaling-deficient mutants of ADGRG2, including Y698A, F705A, Y708A, RK803EE and HM696AA, significantly reduced this rescue effect (Figure 12B–E and Figure 12—figure supplement 1B–C). Specifically, conditional infection of the Gs/Gq double signaling-deficient mutant ADGRG2-HM696AA or the Gq signaling-deficient mutants Y708A and RK803EE did not result in differing levels of accumulation in the efferent ductules compared with those in Adgrg2-/Y mice infected with a control virus. The Gs signaling-deficient mutants Y698A and F705A exhibited improved rescue activity compared with the Gq mutants (Figure 12B–E and Figure 12—figure supplement 1B–C).
 
@@ -138,7 +317,7 @@ To investigate whether the sperm production phenotype was related to fluid reabs
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/33432/elife-33432-fig13-v2.jpg)
 
-**Figure 13.:** Adgrg2-/Y mice on the fluid reabsorption of efferent ductules.(A) Effects of the expression of the ADGRG2-WT adenovirus on the diameter of the ligated efferent ductules derived from the WT or Adgrg2-/Y mice. (B–F) Effects of the expression of adenovirus encoding different ADGRG2 mutants on the diameter of the ligated efferent ductules derived from the WT (n = 12) or Adgrg2-/Y (n = 12) mice. (A–F) *p<0.05, **p<0.01, ***p<0.001; Adgrg2-/Y mice infected with the empty adenovirus compared with WT mice infected with the empty adenovirus. #p<0.05, ##p<0.01, ###p<0.001; Adgrg2-/Y mice infected with the adenovirus encoding different ADGRG2 constructs compared with Adgrg2-/Y mice infected with the control adenovirus. n.s., no significant difference.
+**Figure 13.:** (A) Effects of the expression of the ADGRG2-WT adenovirus on the diameter of the ligated efferent ductules derived from the WT or Adgrg2-/Y mice. (B–F) Effects of the expression of adenovirus encoding different ADGRG2 mutants on the diameter of the ligated efferent ductules derived from the WT (n = 12) or Adgrg2-/Y (n = 12) mice. (A–F) *p<0.05, **p<0.01, ***p<0.001; Adgrg2-/Y mice infected with the empty adenovirus compared with WT mice infected with the empty adenovirus. #p<0.05, ##p<0.01, ###p<0.001; Adgrg2-/Y mice infected with the adenovirus encoding different ADGRG2 constructs compared with Adgrg2-/Y mice infected with the control adenovirus. n.s., no significant difference.
 
 ## Discussion
 
@@ -158,31 +337,435 @@ Finally, our results suggest that the inhibition of either CFTR or ADGRG2 impair
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PTX</td>
+      <td>Enzo</td>
+      <td>Cat#:BML-G100</td>
+      <td>100 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U0126</td>
+      <td>Sigma</td>
+      <td>Cat#:U120</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ro 31–8220</td>
+      <td>Adooq</td>
+      <td>Cat#:A13514</td>
+      <td>500 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NF449</td>
+      <td>Tocris</td>
+      <td>Cat#:1391</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PKI14-22</td>
+      <td>Adooq</td>
+      <td>Cat#:A16031</td>
+      <td>300 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H89</td>
+      <td>Beyotime</td>
+      <td>Cat#:S1643</td>
+      <td>500 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bumetanide</td>
+      <td>Aladdin</td>
+      <td>Cat#:B129942</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ani9</td>
+      <td>Sigma</td>
+      <td>Cat#:SML1813</td>
+      <td>150 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Niflumic acid (NFA)</td>
+      <td>Aladdin</td>
+      <td>Cat#:N129597</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DIDS</td>
+      <td>Sigma</td>
+      <td>Cat#:D3514</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GlyH-101</td>
+      <td>Adooq</td>
+      <td>Cat#:A13723</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CFTRinh-172</td>
+      <td>Adooq</td>
+      <td>Cat#:A12897</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGTA</td>
+      <td>Aladdin</td>
+      <td>Cat#:E104434</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SKF96365</td>
+      <td>Sigma</td>
+      <td>Cat#:S7809</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ruthenium red</td>
+      <td>Sigma</td>
+      <td>Cat#:R2751</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicardipine</td>
+      <td>Sigma</td>
+      <td>Cat#:N7510</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LaCl3</td>
+      <td>Sigma</td>
+      <td>Cat#:449830</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IBMX</td>
+      <td>Sigma</td>
+      <td>Cat#:I7018</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U73122</td>
+      <td>Sigma</td>
+      <td>Cat#:U6756</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Beyotime</td>
+      <td>Cat#:S1612</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD123319</td>
+      <td>Adooq</td>
+      <td>Cat#:A13201</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Candesartan</td>
+      <td>Adooq</td>
+      <td>Cat#:A10175</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amiloride</td>
+      <td>Aladdin</td>
+      <td>Cat#:A129545</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetazolamide</td>
+      <td>Medchem express</td>
+      <td>Cat#:HY-B0782</td>
+      <td>500 μM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ANGII</td>
+      <td>China Peptides</td>
+      <td></td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Carboxy SNARF−1, acetoxymethyl ester</td>
+      <td>Invitrogen</td>
+      <td>Cat#:C-1272</td>
+      <td>5 μM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine TM2000</td>
+      <td>Invitrogen</td>
+      <td>Cat#:11668–019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Collagenase I</td>
+      <td>sigma</td>
+      <td>Cat#:C0130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cAMP ELISA kit</td>
+      <td>R and D systems</td>
+      <td>Cat#:KGE012B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IP1 ELISA assay</td>
+      <td>Shanghai Lanpai Biotechnology Co., Ltd</td>
+      <td>Cat#:lp034186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>The dual-luciferase reporter assay system</td>
+      <td>Promega</td>
+      <td>Cat#:E1960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ADGRG2 antibody(rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_1078923</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ADGRG2 antibody(rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_2722557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ADGRG2 antibody(sheep polyclonal)</td>
+      <td>R and D systems</td>
+      <td>RRID:AB_2722556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CFTR antibody(goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_638427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CFTR antibody(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gq antibody(goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_2279038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gq antibody(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2111647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag antibody(mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_259529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA antibody(mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_627809</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH(rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_10622025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gs antibody(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2111668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gi antibody(mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_2722559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-arrestin-1 antibody(rabbit polyclonal)</td>
+      <td>Dr R.J. Lefkowitz</td>
+      <td>A1CT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-arrestin-2 antibody(rabbit polyclonal)</td>
+      <td>Dr R.J. Lefkowitz</td>
+      <td>A2CT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ANO1 antibody(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ezrin antibody(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722561</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Acetylated Tubulin(Lys40) Antibody(mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-sheep IgG(H + L) (secondary antibody)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2716768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit IgG(H + L) (secondary antibody)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2534017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse IgG(H + L) (secondary antibody)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_141607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat IgG(H + L) (secondary antibody)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_142672, RRID:AB_141788</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated Affinipure Rabbit Anti-Sheep IgG(H + L)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated Affinipure Goat Anti-Rabbit IgG(H + L)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722564</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated Affinipure Goat Anti-Rabbit IgG(H + L)</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722565</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_All other chemicals or reagents were from Sigma unless otherwise specified._
+
+### Mice
 
 Mice were individually housed in the Shandong University on a 12:12 light: dark cycle with access to food and water ad libitum. The use of mice were approved by the animal ethics committee of Shandong university medical school (protocol LL-201502036). All animal care and experiments were reviewed and approved by the Animal Use Committee of Shandong University, School of Medicine. Adgrg2+/- mice were obtained from Dr DLL and MYL at East China Normal University, Shanghai, China. Adgrg2-/Y mice and WT mice were generated by crossing WT (C57BL/6J) males mice and Adgrg2+/- females mice. Arrb1-/- and Arrb2-/- mice were obtained from Dr RJ Lefkowitz (Duke University, Durham, NC); Arrb1-/- and WT mice were generated by crossing Arrb1+/- male mice and Arrb1+/- female mice. Arrb2-/- and WT mice mice were generated by crossing Arrb2+/- male mice and Arrb2+/- female mice. Gnaq+/- mice were obtained from Dr JL Liu at Shanghai Jiao Tong University. Gnaq+/- mice and WT mice were generated by crossing Gnaq+/- male mice and Gnaq+/- female mice. All C57BL/6J male mice were purchased from Beijing Vital River Laboratory Animal Technology.
 
-## Genotyping the Adgrg2-/Y KO mice
+### Genotyping the Adgrg2-/Y KO mice
 
 Genotyping of the intercrossed mice were examined using following primers: Fcon (Forward-control): TTTCATAGCCAGTGCTCACCTG, Fwt (Forward-wild-type): CCTGTTGGCAGACCTGAAG, Fmut (Forward-mutant): CTGTTGGCAGACCTTTTGTATATC, R (Reverse-general): CTTCCTAACATGTGCCATGGC. For the wild-type Adgrg2+/Y mice, Fcon, Fwt and R primers were used to generate two PCR products (189 bp, 397 bp); and Fcon, Fmut and R primers were used to generate one PCR product (397 bp). For the mutant Adgrg2-/Y, Fcon, Fwt and R primers were used to generate one PCR product (405 bp); and Fcon, Fmut and R primers were used to generate two PCR products (196 bp, 405 bp). The female mice were genotyped by the same method. The knockout of ADGRG2 in these mice was confirmed by western blotting.
 
-## Preparation of the membrane fraction of the epididymis and efferent ductules
+### Preparation of the membrane fraction of the epididymis and efferent ductules
 
 The membrane fraction of the epididymis or efferent ductules was prepared from pooled mouse tissues (n = 4–6). These tissues (epididymis or efferent ductules) were dounced in a glass tube within ten volumes of homogenization buffer (75 mM Tris-Cl, pH 7.4; 2 mM EDTA, and 1 mM DTT supplemented with protease inhibitor cocktail). The dounced suspension was centrifuged at 1000 rpm for 15 min to discard the unbroken tissues. The collected suspensions were then centrifuged at 17,000 rpm for 1 hr to prepare the plasma membrane fraction. For the western blot or immunoprecipitation assays, the membranes were re-suspended in lysis buffer (50 mM Tris pH 8.0; 150 mM NaCl; 10% glycerol; 0.5% NP-40; 0.5 mM EDTA; and 0.01% DDM supplemented with protease inhibitor cocktail (Roche, Basel Switzerland) for 30 min.
 
-## Isolation and ligation of efferent ductules
+### Isolation and ligation of efferent ductules
 
 The efferent ductules were microdissected into 1–1.5 mm lengths and incubated for 24 hr in M199 culture medium containing nonessential amino acids (0.1 mM), sodium pyruvate (1 mM), glutamine (4 mM), 5α-dihydrotestosterone (1 nM), 10% fetal bovine serum, penicillin (100 IU/ml), and streptomycin (100 μg/ml) at 34°C in 95% humidified air and 5% CO2. The segments were then ligated on two ends to exclude the entry and exit of fluids. Digital images of the ductules were analyzed at 0, 3, 12, 24, 36, 48, 60 and 72 hr after ligation. Damaged ductal segments were discarded. A rapid ciliary beat and clear lumens were used as evaluation standards for ductile segments that had undergone ligation. Between 9 and 36 total ductal segments from at least three mice were analyzed for each group. The differences between the means were calculated by one-way or two-way ANOVA.
 
-## Recombinant adenovirus construction (Wang et al., 2009)
+### Recombinant adenovirus construction (Wang et al., 2009)
 
 The recombinant adenovirus carrying the RFP or ADGRG2 gene with the ADGRG2 promoter (pm-ADGRG2) from the epididymal genome was produced in our laboratory using the AdEasy system for the rapid generation of recombinant adenoviruses according to the established protocol (Luo et al., 2007). An adenovirus carrying green fluorescent protein (GFP) was used as a control. For the in vivo studies, a single exposure to 5 × 108 plaque-forming units (pfu) of pm-RFP or pm-ADGRG2 adenovirus was delivered to isolated efferent ductules and incubated for 24 hr to allow for sufficient infection. Epididymal efferent ductules or epididymal efferent ductule epithelium were prepared for further experiments.
 
-## Measurement of intracellular pH (pHi) with carboxy-SNARF−1
+### Measurement of intracellular pH (pHi) with carboxy-SNARF−1
 
 Digital images of the ductules were analyzed at 36 hr after ligation. Intracellular pH is examined with SNARF-1, a pH-sensitive fluorophore with a pKa of about 7.5. To load SNARF-1, cultured ductules were incubated with 5 μM SNARF-1-AM (diluted from a 1 mM stock solution in DMSO) for 45 min in culture medium at 37°C, 5% CO2. The cells are washed twice with buffer containing 110 mM NaCl, 5 mM KCl, 1.25 mM CaCl2, 1.0 mM Mg2SO4, 0.5 mM Na2HPO4, 0.5 mM KH2PO4, and 20 mM HEPES, pH 7.4, then placed on the microscope stage in buffer containing 5 mM KCl, 110 mM NaCl, 1.2 mM NaH2PO4, 25 mM NaHCO3, 30 mM glucose, 10 U/ml penicillin, 10 μg/ml streptomycin, and 25 mM HEPES, pH 7.30. The fluorescence was examined using an LSM 780 laser confocal fluorescence microscope (Carl Zeiss) with the excitation wavelength at 488 nm. The emissions of SNARF-1 at 590 and 635 nm were captured in the first two consecutive scans.
 
-## Intracellular pH calibration (Seksek et al., 1991)
+### Intracellular pH calibration (Seksek et al., 1991)
 
 In vivo pH calibration was performed according to the method developed by Seksek et al. Briefly, after incubation with the fluorescent probe, cells were washed in a buffer containing 10 mM Hepes, 130 mM KCl, 20 mM NaCl, 1 mM CaCl2, 1 mM KH2PO4, 0.5 mM MgSO4, at various pH values obtained by addition of small amounts of 0.1 M solutions of KOH or HCl. The pH changes of the external buffer of the cell suspension were followed with a Tacussel Isis 20000 pH-meter. Addition of nigericin (1 pg/ml) and valinomycin (5 pM) allowed an exchange of K+ for H+ which resulted in a rapid equilibration of external and internal pH. The fluorescence of the probe was excited at 488 nm, then the emission of SNARF-1 at 590 and 635 nm were captured in the first two consecutive scans. The fluorescent ratio values obtained for each pH point were used for the calibration curve obtained with Prism software, from which pHi values of the samples (6.0–8.5) were determined. Determinations were performed in quintuplicate. The sensor does not have significant effects on cell viability.
 
@@ -190,66 +773,66 @@ The effect of bicarbonate on intracellular pH was determined by incubating ductu
 
 1 mM amiloride or 500 μM acetazolamide were added 100 s after the beginning of the measurement to examine the effects of acetazolamide and amiloride.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA from the mouse efferent ductules was extracted using a standard TRIzol RNA isolation method (Invitrogen, Carlsbad, CA) as previously described (Wang et al., 2014). The reverse transcription and PCR experiments were performed with the Revertra Ace qPCR RT Kit (TOYOBO FSQ-101) using 0.5 μg of each sample, according to the manufacturer’s protocols. The quantitative real-time PCR was conducted in the LightCycler apparatus (Bio-Rad) using the FastStart Universal SYBR Green Master (Roche). The qPCR protocol was as follows: 95°C for 10 min; 40 cycles of 95°C for 15 s and 60°C for 1 min; and then increasing temperatures from 65°C to 95°C at 0.1 °C/s. The mRNA level was normalized to GAPDH in the same sample and then compared with the control. All primers are listed in Supplementary file 1 and Supplementary file 2.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 The mice were decapitated, and the epididymis and efferent ductules were removed immediately. After dissection, the epididymis and efferent ductules were fixed in 4% paraformaldehyde by immersion overnight at 4°C. The fixed tissues were then rinsed for 4 hr at 4°C in PBS containing 10% sucrose, for 8 hr in 20% sucrose, and then overnight in 30% sucrose. The tissues were embedded in Tissue-Tek OCT compound (Sakura Fintek USA, Inc., Torrance, CA) and then mounted and frozen at −25°C. Subsequently, 8-μm-thick coronal serial sections were cut at the level of the efferent ductules and mounted on poly-D-lysine-coated slides. The slides were incubated in citrate buffer solution for antigen retrieval. Non-specific binding sites were blocked with 2.5% (wt/vol) BSA, 1% (vol/vol) donkey serum and 0.1% (vol/vol) Triton X-100 in PBS for 1 hr. After blocking, the slides were incubated in primary antibody against ADGRG2 (1:300), CFTR (1:50), Gs (1:20), Gq (1:20), ANO1(1:50), Anti-ezrin(1:50) or Anti-Acetylated Tubulin(Lys40)(1:50) at 4°C overnight. Subsequently, the slides were incubated for 1.5 hr with the secondary antibody (1:500, Invitrogen) at room temperature. For nuclear staining, the slides were incubated with DAPI (1:2000, Beyotime) for 15 min at room temperature. The immunofluorescence results were examined using a LSM 780 laser confocal fluorescence microscope (Carl Zeiss). The normal saline group was treated as the control.
 
-## Culture of mouse epididymal efferent duct epithelium (Leung et al., 2001)
+### Culture of mouse epididymal efferent duct epithelium (Leung et al., 2001)
 
 After opening the lower abdomen, the efferent ductules were isolated under sterile conditions to remove fat or connective tissue. The ductules were severed into small segments and then transferred to Hanks balanced salt solution (HBSS) containing 0.2% (w/v) collagenase I and 0.1% (w/v) trypsin. Subsequently, the ductules were incubated at 34°C for 1 hr with vigorous shaking (150 strokes/min) and then separated by centrifugation at 800 g for 5 min. The pellets were re-suspended in HBSS containing collagenase I 0.2% (w/v) for 30 min at 34°C with vigorous shaking. The solutions were then centrifuged again at 800 g for 5 min, and the cell pellets were re-suspended in HBSS buffer containing 0.2% (w/v) collagenase I and then subjected to repeated pipetting for 15 min. Finally, the cells were centrifuged at 800 × g again for 5 min and resuspended in M199 medium. The cell suspension was incubated at 34°C for 5–6 hr in 5% CO2. The resulting fibroblasts and smooth muscle cells were attached to the bottom of the culture flask, whereas the epithelial cells were in suspension. The suspensions were collected, and the epithelial cells were seeded on culture flasks.
 
-## Constructs
+### Constructs
 
 The wild-type ADGRG2 full-length (ADGRG2FL) plasmid was obtained from Professor Xu Z. G. at Shandong University School of Life Sciences, Jinan, Shandong, China. ADGRG2 was cloned from mouse total cDNA libraries using the following primers: forward, ATTCTCGAGGATGCTTTTCTCTGGTGGG; and reverse, ATTGAATTCCATTTGCTCGATAAAGTG. The sequences were inserted into the mammalian pEGFP-N2 expression vector, and then ADGRG2FL and ADGRG2 C-terminal truncations (ADGRG2β) were subcloned into the pcDNA3.1 expression vector, with the flag sequence added at the N-terminus. The ADGRG2FL mutants (HM696AA, H696A, M697A, Y698A, K703A, V704A, F705A, Y708A, QL798AA, RK803EE) were generated using a QuikChange Mutagenesis Kit (Stratagene). All of the mutations were verified by DNA sequencing. All primers are listed in Supplementary file 3.
 
-## Cell culture, transfection, and western blotting
+### Cell culture, transfection, and western blotting
 
 HEK293 cells were obtained from Cell Resource Center of Shanghai Institute for Biological Sciences(Chinese Academy of Sciences, Shanghai, China). The cell line was validated by STR profiling (Shanghai Biowing Applied Biotechnology (SBWAB) Co. Ltd.) and was negative for mycoplasma as measured by MycoAlert Mycoplasma Detection Kit (Lonza). HEK293 cells were maintained in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% heat-inactivated fetal bovine serum (Hyclone Thermo Scientific, Scoresby, Victoria, Australia), penicillin (100 IU/ml), and streptomycin (100 μg/ml) as previously described (Hu et al., 2014; Wang et al., 2014). For receptor or other protein expression, plasmids carrying the desired genes were transfected into cells using Lipofectamine TM 2000 (Invitrogen). To monitor the protein expression levels, cells were collected 48–72 hr post-transfection with lysis buffer (50 mM Tris, pH 8.0; 150 mM NaCl; 1 mM NaF; 1% NP-40; 2 mM EDTA; Tris-HCl, pH 8.0; 10% glycerol; 0.25% sodium deoxycholate; 1 mM Na3VO4; 0.3 μM aprotinin; 130 μM bestatin; 1 μM leupeptin; 1 μM repstatin; and 0.5% IAA). The cell lysates were subjected to end-to-end rotation for 20 min and spun at 12,000 rpm for 20 min at 4°C. Then, an equal volume of 2 × loading buffer was added. Proteins were denatured in the loading buffer and subjected to western blot analysis. The protein bands from the western blot were quantified using ImageJ software (National Institutes of Health, Bethesda MD). Each experiment was repeated at least in triplicate. A data analysis was conducted using GraphPad software.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 The efferent ductules of WT or Adgrg2-/Y mice were dissected into small pieces. The interaction between proteins is stabilized by addition of 1 ml of cross-linker buffer (D-PBS containing 10 mM HEPES and 2.5 mM DSP in 1:1 (v/v) dimethyl sulfoxide (DMSO)) as previously described(Ning et al., 2015; Yang et al., 2015). After continuous slow agitation for 30 min at room temperature, crosslinking was stopped by adding 25 mM Tris-HCl (pH 7.5) and incubated for another 15 min. The tissue were washed with cold PBS and then lysed in cold lysis buffer with protease inhibitors. After centrifugation, the supernatants were incubated with anti-ADGRG2 antibody (AF7977, R and D systems) for at least 2 hr at 4°C. Next, Protein A/G PLUS-Agarose (sc-2003, Santa Cruz) was added, and the complexes were incubated overnight at 4°C. The beads were washed with PBS buffer several times, and proteins were denatured in the SDS-PAGE loading buffer and subjected to western blot analysis with the indicated antibodies.
 
-## Whole-cell patch-clamp recording (Guo et al., 2014)
+### Whole-cell patch-clamp recording (Guo et al., 2014)
 
 The efferent ductules infected by adenovirus with the ADGRG2 promoter were isolated, and epithelial cells were purified and cultured on coverslips before the patch-clamp recording. ADGRG2-promoter labeling was achieved by observation of the RFP fluorescence with the microscope. HEK293 cells transfected with plasmids encoding CFTR together with or without the ADGRG2 wild type or its mutants were cultured on coverslips before the patch-clamp recording. Borosilicate glass-made patch pipettes (Vitrex, Modulohm A/S, Herlev, Denmark) were pulled with a micropipette puller (P-97, Sutter Instrument Co.) to a resistance of 5–7 MΩ after they were filled with pipette solution. The ionic current was recorded with a data acquisition system (DigiData 1322A, Axon Instruments) and an amplifier (Axopatch-200B, Axon Instruments, Foster City, CA). The command voltages were controlled by a computer equipped with pClamp Version nine software. For the whole cell Cl- current measurement, cells were bathed in a solution of NaCl at 130 mM, KCl at 5 mM, MgCl2 at 1 mM, CaCl2 at 2.5 mM, and HEPES 20 mM, and D-mannitol was added to an osmolarity of 310 (pH 7.4). Pipettes were filled with a solution of 101 mM CsCl, 10 mM EGTA, 10 mM Hepes, 20 mM TEACl, 2 mM MgATP, 2 mM MgCl2, 5.8 mM glucose, pH7.2, with D-mannitol compensated for osm 290. When the whole-cell giga-seal was formed, the capacitance of the cell was measured. The whole-cell current was obtained by a voltage clamp with the commanding voltage elevated from −100 mV to +100 mV in 20 mV increments (Yu et al., 2011). Further validation of these observed currents were Cl- selective was provided by experiments in which 100 mM of the extracellular Cl- was replaced by gluconate.
 
-## cAMP ELISA
+### cAMP ELISA
 
 The efferent ductules were carefully microdissected under sterile conditions to remove fat or connective tissue and then were ligated on two ends to exclude the entry and exit of fluids. After 24 hr, these tissues were rinsed with PBS and homogenized with a tissue homogenizer in cold 0.1 N HCl containing 500 μM IBMX at a 1:5 ratio (w/v). The supernatants were collected after the centrifugation of the tissue lysates at 10,000 × g and then neutralized with 1 N NaOH. The supernatant was collected for the cAMP determination by ELISA according to the manufacturer’s instructions.
 
-## IP1 ELISA
+### IP1 ELISA
 
 The efferent ductules were ligated on two ends for 24 hr, and then were added 5 mM ATP or control vehicles to the tissues for 30 min. After half an hour, the tissues were homogenized with a tissue homogenizer in an assay buffer (10 mM HEPES, 1 mM CaCl2, 0.5 mM MgCl2, 4.2 mM KCl, 146 mM NaCl, 5.5 mM glucose, 50 mM LiCl, pH 7.4). The 50 mM LiCl was added to block the IP1 degradation. The lysates were centrifuged at 10,000 × g to remove insoluble components, and the supernatant was then collected for IP1 determination by ELISA (lp034186) according to the manufacturer’s instructions.
 
-## GloSensor cAMP assay
+### GloSensor cAMP assay
 
 The GloSensor cAMP assay was performed as previously described (Binkowski et al., 2009; Fan et al., 2008; Hu et al., 2014; Kimple et al., 2009). HEK293 cells were transfected with the GloSensor plasmid and the desired expression plasmids (0.8 μg of total DNA) with Lipofectamine 2000 in 24-well dishes. Twenty-four hours after transfection, the cells were plated on 96-well plates at a cell density of 20,000 cells/well. The cells were maintained in DMEM for another 24 hr, washed with PBS and then incubated with 100 μl of solution containing 10% FBS, 2% (v/v) GloSensor cAMP reagent and 88% CO2-independent medium in each well for 2 hr. The cAMP signal was examined using a luminescence counter (Mithras LB 940).
 
-## NFAT dual-luciferase reporter(DLR) assay (Hu et al., 2014)
+### NFAT dual-luciferase reporter(DLR) assay (Hu et al., 2014)
 
 HEK293 cells in 24-well dishes were co-transfected with plasmids encoding ADGRG2 or its mutants, pGL4.16-NFAT luciferase or pGL4.16-basic luciferase, and pRL-TK Renilla using Lipofectamine 2000. These cells were cultured for approximately 48 hr and then harvested by the addition of 1 × passive lysis buffer. After incubation for 15 min at room temperature with shaking, the cell lysates were centrifuged for 10 min at 12,000 rpm at 4°C. NFAT-DLR activity was quantified by a standard luciferase reporter gene assay and then normalized to Renilla luciferase activity (Promega) as previously described (Wang et al., 2014). At least three independent experiments were executed for each dual-luciferase reporter (DLR) assay.
 
-## Recombinant lentivirus construction and lentivirus injection
+### Recombinant lentivirus construction and lentivirus injection
 
 Recombinant lentiviruses containing the ADGRG2 gene and its mutants (HM696AA, H696A, M697A, Y698A, K703A, V704A, F705A, Y708A, QL798AA, RK803EE) under the ADGRG2 promoter were produced according to standard procedures (Tiscornia et al., 2006; Ye et al., 2008). The lentivirus titer was 1 × 109 TU/ml. Mice were anesthetized with 10% chloral hydrate and then the conditional expression of ADGRG2-WT or its selective G-subtype signaling mutants’ lentivirus were microinjected into the interstitial space of the efferent ductules and the initial segment of epididymis at a multiplicity of infection of 100. After 14–21 days, the epididymis transfected with lentivirus were collected for use in further experiments.
 
-## Histology (Mendive et al., 2006)
+### Histology (Mendive et al., 2006)
 
 The epididymis and efferent ductules were removed and fixed overnight at 4°C in 4% paraformaldehyde and stored in 70% ethanol until further use. The tissues were dehydrated, embedded in paraffin, and then sectioned into 10 μm slices. In most cases, the whole epididymis was sectioned, and representative samples throughout the organ were mounted on slides for hematoxylin and eosin staining. Hematoxylin and eosin staining was performed according to standard procedures.
 
-## Analysis of spermatozoa (Davies et al., 2004)
+### Analysis of spermatozoa (Davies et al., 2004)
 
 Spermatozoa from the caudal epididymis of the wild-type (n = 13) or Adgrg2-/Y knockout (n = 12) mice (ages between 15 and 20 weeks) were collected. The caudal region from the epididymis was open and incubated for 10 min in PBS at 34°C to allow the spermatozoa to appear. The spermatozoa were counted and analyzed by spreading the diluted homogenous suspension over a microscope slide.
 
-## Treatment of mice efferent ductules with CFTR siRNA dicer
+### Treatment of mice efferent ductules with CFTR siRNA dicer
 
 CFTR siRNA was designed as described before (Ruan et al., 2012; Wang et al., 2006) and chemically modified by the manufacturer (GenePharma). Sequences corresponding to the siRNA of scrambled were: sense, 5’-CUUCCUCUCU UUCUCUCCCU UGUGA-3’; and antisense, 5’- TCACA AGGGAGAGAA AGAGAGGAAG-3’ or CFTR-specific siRNA-CFTR, dicer-1: sense, 5’-GUGCAAAUUCAGAGCUUUGUGGAACAG-3’; and antisense, 5’- CUGUUCCACAAA GCUCTGAAUUUGCAC-3’; CFTR-specific siRNA-CFTR, dicer-2: sense,5’-GACAACUUGUUAGUCUUCUUUCCAA-3’; and antisense, 5’- UUGGAAAGAAGACUAACAAGUUGUC-3’; CFTR-specific siRNA-CFTR, dicer-3: sense, 5’-GAGAUUGAU GGUGUCUCAUGGAAUU-3’; and antisense, 5’-AAUUCCAUGAGACACCAUCAAUCUC-3’; For in vivo studies, 15 μg of the siRNA dissolved in 30% pluronic gel (Pluronic F-127, Sigma) solution was delivered to the mice efferent ductules immediately as previously described (Wang et al., 2009). After 7 days, the epididymis transfected with siRNA were collected for further experiments.
 
-## Statistics
+### Statistics
 
 All the western blots were performed independently for at least three times, and the representative experimental results were shown in the main or supplementary figure. All the data are presented as the mean ±SD from at least three independent experiments. Statistical comparisons were performed using an ANOVA with GraphPad Prism5. Significant differences were accepted at p<0.05. The sequence alignments were performed using T-coffee.

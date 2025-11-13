@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.49995.001 Cortico-basal ganglia-thalamocortical loops are largely conceived as parallel circuits that process limbic, associative, and sensorimotor information separately. Whether and how these functionally distinct loops interact remains unclear. Combining genetic and viral approaches, we systemically mapped the limbic and motor cortico-basal ganglia-thalamocortical loops in rodents. Despite largely closed loops within each functional domain, we discovered a unidirectional influence of the limbic over the motor loop via ventral striatum-substantia nigra (SNr)-motor thalamus circuitry. Slice electrophysiology verifies that the projection from ventral striatum functionally inhibits nigro-thalamic SNr neurons. In vivo optogenetic stimulation of ventral or dorsolateral striatum to SNr pathway modulates activity in medial prefrontal cortex (mPFC) and motor cortex (M1), respectively. However, whereas the dorsolateral striatum-SNr pathway exerts little impact on mPFC, activation of the ventral striatum-SNr pathway effectively alters M1 activity. These results demonstrate an open cortico-basal ganglia loop whereby limbic information could modulate motor output through ventral striatum control of M1.
+Cortico-basal ganglia-thalamocortical loops are largely conceived as parallel circuits that process limbic, associative, and sensorimotor information separately. Whether and how these functionally distinct loops interact remains unclear. Combining genetic and viral approaches, we systemically mapped the limbic and motor cortico-basal ganglia-thalamocortical loops in rodents. Despite largely closed loops within each functional domain, we discovered a unidirectional influence of the limbic over the motor loop via ventral striatum-substantia nigra (SNr)-motor thalamus circuitry. Slice electrophysiology verifies that the projection from ventral striatum functionally inhibits nigro-thalamic SNr neurons. In vivo optogenetic stimulation of ventral or dorsolateral striatum to SNr pathway modulates activity in medial prefrontal cortex (mPFC) and motor cortex (M1), respectively. However, whereas the dorsolateral striatum-SNr pathway exerts little impact on mPFC, activation of the ventral striatum-SNr pathway effectively alters M1 activity. These results demonstrate an open cortico-basal ganglia loop whereby limbic information could modulate motor output through ventral striatum control of M1.
 
 ## Introduction
 
@@ -36,9 +36,25 @@ In the current study, we focused on limbic and motor cortico-basal ganglia loops
 
 ## Results
 
-## Trans-synaptic tracing using wild-type rabies virus reveals both closed and open cortico-basal ganglia-thalamocortical loops
+### Trans-synaptic tracing using wild-type rabies virus reveals both closed and open cortico-basal ganglia-thalamocortical loops
 
 To visualize the cortico-basal ganglia loops, we first mapped the input-output connections of the rodent striatum with the primary motor cortex (M1), secondary motor cortex (M2), and medial prefrontal cortex (mPFC) by injecting a mixture of cholera toxin b subunit (CTb, non-trans-synaptic, bi-directional tracer) and a retrogradely transported poly-synaptic, wild-type rabies virus (Wt-RABV) into each cortical area in rats (see Materials and methods). This strategy allowed us to compare the topography of the cortico-striatal input with that of striatal output neurons that multi-synaptically connect to the same area of cortex via the canonical basal ganglia direct pathway (i.e. via striato-nigro-thalamo-cortical circuitry) (Figure 1A). Wt-RABV has been repeatedly validated as a means of trans-synaptically tracing circuits retrogradely, in a survival-time-dependent manner (Aoki et al., 2019; Kelly and Strick, 2004; Suzuki et al., 2012; Ugolini, 2010). Prior studies have established that 66–70 hr is adequate survival time for 3rd-order infection of Wt-RABV without 4th-order infection in rats (Aoki et al., 2019; Suzuki et al., 2012), so this procedure could determine tri-synaptic connections originating from striatum to cortex via the direct pathway (Kelly and Strick, 2004; Miyachi et al., 2006).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig1-v1.jpg)
+
+**Figure 1.:** (A) The strategy to label striatal neurons connecting to the cerebral cortex by Wt-RABV trans-synaptic retrograde tracing, and CTb-based non-trans-synaptic anterograde tracing for mapping cortico-striatal terminals. (B) Example image of Wt-RABV/CTb injection into M1 (left). After 66–70 hr of survival time, Wt-RABV was transfected up to 3rd-order neurons, which were found in various striatal subregions (right). Scale bars, 1 mm (left), 500 µm (right). (C) 3D-reconstruction of Wt-RABV+ striatal neurons from the M1 injection case shown in (B). The two different angles emphasize the presence of Wt-RABV+ neurons throughout all of the striatum (VS, DMS, DLS, and TS). (D) Schema of Wt-RABV/CTb injection in M1. (E) Anterogradely labeled CTb+ cortico-striatal terminals (green) and retrogradely labeled Wt-RABV+ striatal neurons (purple) from the M1 injection case shown in (B). (F) Density map showing the distribution of Wt-RABV+ neurons throughout the striatum from M1 injection. Black contours indicate approximate areas receiving cortico-striatal inputs from M1. Color maps indicate the intensity of Wt-RABV+ labeling. (G–I) The same analyses for Wt-RABV/CTb injection in M2. (J–L) The same analyses for Wt-RABV/CTb injection in mPFC. (M) Normalized distribution of Wt-RABV+ neurons across five striatal regions (VMS, VLS, DMS, DLS, TS) showing differences depending on cortical injection sites (mPFC, n = 3; M2, n = 4; M1, n = 4). Data are expressed as mean ± SEM. Two-way ANOVA, Interaction (Injection site x Labeled striatal regions): F(8,40) = 8.208, p<0.0001. (N) Summary diagram indicates the closed limbic and motor loops, as well as the unidirectional limbic-to-motor interaction. Monosynaptic and multi-synaptic pathways are shown as solid and dashed lines, respectively. Abbreviations: cc, corpus callosum; ac, anterior commissure; LV, lateral ventricle.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Images of CTb-labeled sections show comparable injection sites in M1 between two cases using shorter (58 hr) and longer (70 hr) survival times. Scale bars: 1 mm. (B) Images of Wt-RABV labeling in the motor thalamus (VA-VL), thalamic reticular nucleus (TRN), SNr, GPe, STN and striatum. Left: shorter survival time (58 hr). Right: longer survival time (70 hr). Scale bars: 500 µm (motor thalamus); 200 µm (SNr, GPe, STN); 1 mm (striatum). (C) Chart summarizing the estimated amount of Wt-RABV transfection, based on the labeling patterns in these nuclei.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Procedure for analyzing CTb+ cortico-striatal terminals and Wt-RABV+ cells using a light-microscope-based method after DAB visualization. Briefly, brain sections were collected into eight vials. The 1st and 5th vials were used for RABV staining and the 2nd and 6th for CTb, which enabled us to analyze adjacent sections for direct comparison. Scale bars, 200 µm. (B) A representative fluorescent image showing dual labeling of CTb (green) and Wt-RABV (red), demonstrating their co-localization in DMS and VS after the Wt-RABV/CTb injection into mPFC (cingulate cortex, Cg). Such co-localization indicates a closed loop. Note that CTb is suitable for indicating the injection site (left), whereas the Wt-RABV labeling involves trans-synaptic, retrograde transport of the virus and is thus not sufficient for identifying an injection site. Scale bars, 500 µm. (C, D) A mixture of Wt-RABV and CTb injected in M2. The injection site is visualized by CTb staining (C). Wt-RABV+ cells labeled throughout the striatum, including VS, DMS, DLS, and TS. Scale bars: 1 mm (C) and 200 µm (D). (E, F) Similar to (C, D), a mixture of Wt-RABV and CTb was injected in mPFC. An injection site is visualized by CTb (E). In this case, Wt-RABV+ neurons were exclusively found in VS and DMS, but not in the DLS and TS. Scale bars: 1 mm (E) and 200 µm (F). (G) There is a significantly higher contribution of VS neurons connecting to M1/M2 (n = 8) than of DLS neurons targeting mPFC (n = 3). Data are expressed as mean ± SEM. Unpaired t-test, t9 = 4.229, p=0.0022. (H) Detailed analyses of the injection sites of Wt-RABV/CTb in the cortex, as described in detail (Aoki et al., 2019). In short, cortical contours with CTb labeling are projected onto the cortical flattened map and reconstructed into a three-dimensional brain. A bottom panel shows reconstructed M1, M2 and mPFC (cingulate and prelimbic areas) in the brain. (I–K) Indication of the injection sites in 2D flattened maps and 3D reconstructed brains. The corresponding distributions of the Wt-RABV+ cells in each case are plotted to compare them in relation to the injection sites in M1 (I), M2 (J) and mPFC (K). Note that the presence of Wt-RABV+ cells in VMS and VLS after M1 or M2 injections and the absence of DLS labeling after mPFC injections are seen consistently.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Normalized distribution of the cortico-striatal terminals (inputs from mPFC or M1) across VMS, VLS, DMS, DLS, and TS (N = 2 in each). (B) Normalized distribution of the striatal output neurons to the mPFC and M1 from VMS, VLS, DMS, DLS, and TS (adapted from Figure 1M, N = 3 for mPFC, N = 4 for M1). (C) Comparison of mPFC inputs to striatum and striatal outputs to the mPFC, adapted from (A) and (B). Two-way ANOVA shows a significant effect of interaction (Input-output x Labeled striatal regions): F(4,15) = 8.022, p=0.0011. (D) Comparison of M1 inputs to striatum and striatal outputs to the M1, adapted from (A) and (B). Two-way ANOVA shows a significant effect of interaction (Input-output x Labeled striatal regions): F(4,20) = 16.5, p<0.0001. Data are expressed as mean ± SEM.
 
 In addition to the classical basal ganglia direct pathway output to cortex, previous studies have identified direct projections from external globus pallidus (GPe) and subthalamic nucleus (STN) to the frontal cortex (Chen et al., 2015; Jackson and Crossman, 1981; Saunders et al., 2015). To account for these potential confounds, we investigated the alternative routes for mediating Wt-RABV transfection by comparing patterns of Wt-RABV+ labeling between shorter (58 hr) and longer (70 hr) survival times after Wt-RABV injections in M1 (Figure 1—figure supplement 1). The 58 hr survival time resulted in dense labeling of Wt-RABV+ cells in motor thalamus, as well as obvious Wt-RABV+ cells in SNr and thalamic reticular nucleus (TRN), indicating that the motor thalamus is the site of 1st order labeling, followed by SNr and TRN as 2nd order neurons (Figure 1—figure supplement 1B and C). By contrast, within this 58 hr survival time (which includes both 1st and 2nd order neurons), there was almost no labeling in GPe, STN and striatum, although each of these regions showed intense Wt-RABV+ labeling with 70 hr of survival time (Figure 1—figure supplement 1B and C). Therefore, Wt-RABV+ labeling in GPe, STN and striatum should be considered primarily 3rd order neurons, suggesting that GPe and STN inputs to cortex cannot predominantly account for the striatal labeling observed after 70 hr of survival time. This finding allows us to infer that the striatal labeling in the following experiments is largely mediated by the canonical striato-nigro-thalamo-cortical pathway (Figure 1A), although we cannot completely rule out the possible minor contribution of direct GPe and STN inputs to cortex with this methodology.
 
@@ -46,19 +62,47 @@ A local injection of Wt-RABV/CTb in M1 resulted in anterograde CTb+ and retrogra
 
 We also compared the distribution of cortico-striatal terminals and striatal output neurons connecting to the cortex (Figure 1—figure supplement 3). After measuring the intensity of cortico-striatal projections from mPFC or M1 on the basis of luminance analysis of fluorescence, we estimated the distribution of their axonal terminals across five striatal regions (VMS, VLS, DMS, DLS, and TS; Figure 1—figure supplement 3A). As reported earlier (Hintiryan et al., 2016; Voorn et al., 2004), M1 projects to DLS almost exclusively, whereas mPFC innervates mainly DMS and to a lesser degree VLS and VMS (Figure 1—figure supplement 3A). A comparison between mPFC inputs to the striatum and its outputs to the mPFC showed a significant interaction (F(4,15) = 8.022, p=0.0011). In particular, VMS had a mismatch in which it receives a few inputs but has many outputs (Figure 1—figure supplement 3C), suggesting the possibility that VMS provides a common source for the open loop structure (Miyachi et al., 2006). There was also significant interaction between M1 striatal inputs and striatal outputs to the M1 (F(4,20) = 15.5, p<0.0001; Figure 1—figure supplement 3D). This result indicates that only DLS receives M1 inputs but that multiple striatal regions (VMS, VLS, DMS, DLS and TS) connect to M1, implying that all striatal outputs are funneled into M1 via basal ganglia direct pathway output.
 
-## Monosynaptic modified rabies tracing confirms the limbic-to-motor connectivity via the striato-nigro-thalamic pathway
+### Monosynaptic modified rabies tracing confirms the limbic-to-motor connectivity via the striato-nigro-thalamic pathway
 
 To verify that the pattern of striatal Wt-RABV labeling from motor cortex injections is mediated by the nigro-thalamic route, we employed a novel viral strategy to identify striatal outputs connecting to thalamic motor nuclei, namely ventro-anterior and ventro-lateral (VA-VL) thalamus (Figure 2A). To this end, a mixture of AAVretro.Cre and AAV.FLEX.tdTomato was injected into VA-VL. This strategy had two consequences. First, recombination of Cre and FLEX.tdTomato defined the injection site in VA-VL (Figure 2B) and revealed their thalamo-cortical terminals in M1 and M2, but not in mPFC (Figure 2C). Note that a small fraction of tdTomato+ cells was found in latero-dorsal thalamus (LD, Figure 2B), but this nucleus does not receive SNr projections (Figure 4) and thus it should not affect the interpretation of these experiments. Second, the use of the AAVretro serotype induced retrograde Cre expression in SNr neurons projecting to VA-VL (Tervo et al., 2016). Concomitant injections of Cre-dependent AAV rabies-helper viruses (TVA and RG) and subsequent injection of GFP-expressing EnvA-pseudotyped G-deleted rabies virus (Rt-RABV-GFP) into SNr enabled subcircuit-specific rabies-based retrograde tracing, specifically from SNr neurons projecting to motor thalamus via the basal ganglia direct pathway output (Wickersham et al., 2007). Analysis of midbrain nuclei revealed mCherry+ cells in SNr, with virtually no co-localization with tyrosine hydroxylase (TH)-positive cells (less than 4%), indicating that only non-dopaminergic SNr neurons project to VA-VL (Figure 2D, Figure 2—figure supplement 1). Starter cells defined by mCherry+ and Rt-RABV-GFP+ (Callaway and Luo, 2015) were located throughout the medial to lateral extent of SNr (Figure 2D and E). A further control experiment of the Rt-RABV tracing without the injection of rabies glycoprotein was conducted to alternatively determine the restriction of starter cells in SNr (Figure 2—figure supplement 1F–H). Transfection of the monosynaptic rabies virus was observed throughout the striatum, including VS, DMS, DLS and TS (Figure 2F–2G). This result is consistent with the wild-type rabies tracing from M1, and they shared almost identical quantitative distributions (Figure 2H). These findings support our Wt-RABV data demonstrating that all striatal regions, including limbic VS, reach motor cortex through the basal ganglia direct pathway, that is, by the striato-nigro-thalamic route (Figure 2I).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig2-v1.jpg)
+
+**Figure 2.:** (A) Strategy to identify striatal neurons projecting to the specific SNr subpopulation that projects to VA-VL motor thalamus. (B, C) Images of the injection site in VA-VL thalamus (B) and their thalamo-cortical terminals in M1, but not in mPFC (C). Note that there are tdTomato+ cells in LD, but this part of thalamus does not receive SNr inputs (Figure 4). Scale bar, 500 µm. (D) Image of TVA-mcherry+ and Rt-RABV(GFP)+ cells in SNr. Immunohistochemistry for tyrosine hydroxylase (TH) revealed almost no co-localization of TH+ cells with mCherry+ SNr neurons projecting to VA-VL (<4%, see Figure 2—figure supplement 1). An arrow in the inset indicates a representative example of a starter cell with mCherry+ and Rt-RABV-GFP+. Scale bar, 200 µm. (E) Digital reconstruction of starter cells that are defined as mCherry+ and Rt-RABV-GFP+ neurons (green), relative to TH+ dopamine neurons (blue). (F) 3D-reconstruction of Rt-RABV+ striatal neurons. (G) Rt-RABV+ neurons at different anterior-posterior levels of striatum, which are found in VS, DMS, DLS and TS. Note that densely labeled GFP+ cells in TS are not starter cells as there are no TVA.mCherry+ cells. Scale bar, 500 µm. (H) Normalized distribution of Rt-RABV+ striatal cells (n = 6), compared to Wt-RABV tracing from M1 (n = 4) across five striatal regions. Data are expressed as mean ± SEM. Two-way ANOVA showing no significant effect of interaction (Injection site x Labeled striatal regions): F(4,40) = 0.8722, p=0.4891. (I) Summary diagram showing that through the direct pathway, VS, DMS, DLS and TS connect to motor thalamus, which in turn projects to motor cortex. Abbreviations: MD, mediodorsal; CM, centromedial; PC, paracentral; CL, centrolateral: LD, lateral dorsal thalamus; PrL, prelimbic cortex; Cg, cingulate cortex.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Another example of the starter cells (mCherry+/GFP+) in SNr when rabies-tracing from nigro-motor thalamic cells (Figure 2A), which comes from a different mouse. Scale bar: 200 um. (C) Quantification of the percentage of TH+ cells over all the mCherry+ nigro-thalamic cells. (D) Quantification of the percentage of TH+ cells over all the starter cells (mCherry+/GFP+). (E) Quantification of the percentage of mCherry+ nigro-thalamic cells over all the TH+ SNr cells. (F–H) A control experiment without an injection of rabies glycoprotein provides another way to show the distribution of starter cells (F). A representative image for the GFP+ starter cells in SNr (left) and its digital reconstruction (right) (G). There is no evidence for the presence of starter cells in the other basal ganglia nuclei or for direct rabies infection (H). Scale bar: 500 µm. Data are expressed as mean ± SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Analyses of labeling in ventral pallidum (VP) from Wt-RABV and Rt-RABV tracing, including Wt-RABV injections in mPFC (A) and M1 (B), as well as Rt-RABV tracing from SNr neurons projecting to VA-VL (C). Notably, there is an absence of VP neurons labeled after the Wt-RABV injection in M1 or Rt-RABV tracing from VA-VL-projecting SNr neurons (B, C). For Rt-RABV tracing, representative images of GPe and STN are also provided. Scale bars, 200 µm. (D) Normalized distribution of Rt-RABV+ cells in VP, GPe and STN (n = 6). (E) Summary diagram showing VS connection to motor thalamus via SNr, but not VP (Figure 1 and Figure 2).
+
 As a downstream target of ventral striatum (Heimer et al., 1982; Smith et al., 2009), we analyzed Wt-RABV and Rt-RABV labeling in ventral pallidum (VP) to address whether limbic-to-motor connectivity exists through this nucleus. Labeling in VP was present following Wt-RABV injections into mPFC, but not after Wt-RABV tracing from M1 (Figure 2—figure supplement 2A–B). There was almost no labeling in VP in Rt-RABV tracing from SNr neurons projecting to VA-VL, as opposed to the dense labeling in GPe and STN (Figure 2—figure supplement 2C and D). This result suggests that the limbic-to-motor interaction does not occur through the ventral striatum to ventral pallidum pathway (Figure 2—figure supplement 2E).
 
-## Both the medial and lateral SNr innervate motor thalamus
+### Both the medial and lateral SNr innervate motor thalamus
 
 Since virtually all striatal regions have outputs to motor thalamus (Figure 2), it follows that there must be convergence from the entire SNr onto thalamo-cortical neurons projecting to M1. To test this hypothesis, we next injected AAVretro.Cre into M1, with TVA.RG and Rt-RABV-GFP in motor thalamus, enabling us to identify the SNr synaptic inputs to thalamocortical neurons that innervate M1 specifically (Figure 3A). Starter cells defined as both TVA.mCherry+ and Rt-RABV-GFP+ were found in VA-VL, whereas the adjacent thalamic reticular nucleus (TRN) showed only Rt-RABV-GFP+ cells (Figure 3B), suggesting that the primary starter cells are located selectively in VA-VL, and that labeling in TRN resulted from trans-synaptic rabies transfection. To further validate that our tracing was specific to thalamo-M1 cells, we analyzed labeling in cortex and cerebellar output nuclei, both of which are known to project to motor thalamus (Aumann et al., 1994; Bostan et al., 2013; Hooks et al., 2013; Hoover and Strick, 1999; Kelly and Strick, 2003; Terashima et al., 1987; Yamawaki and Shepherd, 2015). Cortico-thalamic GFP+ cells were found exclusively in motor cortex, but not in cingulate or prelimbic cortices (Figure 3C), and GFP+ cerebello-thalamic cells were located in the dentate and interpositus nuclei (Figure 3D), demonstrating the specificity of our tracing to motor thalamus. Most importantly, we found trans-synaptically labeled Rt-RABV-GFP+ cells in both medial and lateral SNr, covering the entire territory of the region (Figure 3E and F, Figure 3—figure supplement 1A and B). These findings provide strong evidence for the convergence of limbic, associative, and sensorimotor information from both medial and lateral SNr onto thalamo-M1 cells, and suggest that all basal ganglia outputs provide some amount of convergence into a ‘funnel’ towards the motor cortex (Figure 3G).
 
-## Limbic output merges with motor circuits through ventral striatum – medial SNr – motor thalamic projections
+![Figure 3.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig3-v1.jpg)
+
+**Figure 3.:** (A) Strategy for identifying SNr neurons that synapse onto thalamo-cortical cells projecting to M1. (B) Images of the starter cell population (mCherry+/GFP+) in VA-VL motor thalamus and trans-synaptically labeled GFP+ cells in TRN (mCherry-). White arrowheads in images for VA indicate a representative starter cell. Scale bar, 500 µm. (C) Images of Rt-RABV-GFP+ cortico-thalamic cells specifically located in ipsilateral motor cortex, but not in cingulate cortex (Cg). Scale bar, 500 µm. (D) Images of Rt-RABV-GFP+ cerebello-thalamic cells mainly located in the contralateral dentate and interpositus nuclei. Scale bar, 500 µm. (E) Images of Rt-RABV-GFP+ nigro-thalamic cells relative to TH+ dopamine cells. Note that both medial and lateral SNr neurons synapse onto motor thalamus. Scale bar, 200 µm. (F) Quantification of the distribution of Rt-RABV-GFP+ cells in medial and lateral SNr (N = 5). Data are expressed as mean ± SEM. (G) Summary diagram showing the convergence of synaptic inputs from medial and lateral SNr to motor thalamus. Cerebellar convergence is also shown as a dashed line. Abbreviations: CM, centromedial; PC, paracentral; CL, centrolateral; VM, ventromedial thalamus; TRN, thalamic reticular nucleus; Cg, cingulate cortex; DN, cerebellar dentate nucleus; AIN, anterior interpositus nucleus; FN, fastigial nucleus; PIN, posterior interpositus nucleus.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Upper panel shows division of SNr into medial and lateral portions. The lower panel shows the individual data points from motor thalamus tracing in Figure 3F. Note that a mouse (represented as an orange line in panel (B)) shows an almost identical plot to another mouse (gray), so it is not visible in this panel. (B) Similar to (A), SNr is sub-divided into four different parts and the quantification is based on these four divisions for Rt-RABV-GFP+ cells from motor thalamus.
+
+### Limbic output merges with motor circuits through ventral striatum – medial SNr – motor thalamic projections
 
 To identify where the limbic output converges onto motor circuits via the direct pathway, we systemically mapped the topography of each synaptic step through the striato-nigro-thalamo-cortical pathway (Figure 4 and Figure 4—figure supplement 1). Paired Cre-dependent AAV injections of GFP and tdTomato were made into DS and VS as well as DLS and DMS in D1-Cre mice, which produced segregated terminal fields in SNr (Figure 4A–4F, Figure 4—figure supplement 1A–C), consistent with the topography observed in a previous study (Deniau et al., 1996). In addition, DMS and DLS were found to project topographically to the EPN (Figure 4C and F), whereas VS innervates the adjacent lateral hypothalamus (LH) (Figure 4C), indicating that this alternative direct pathway output nucleus, EPN, is not how limbic information reaches motor cortex. Importantly, DLS, DMS and VS terminated in different SNr subregions, with VS specifically innervating the most medial region of SNr (Figure 4B). These data suggest that limbic and motor information remain largely segregated at this stage of basal ganglia output.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) Cre-dependent, AAV anterograde tracing of striato-nigral projections from VS and DS using D1-Cre mice (A) shows segregated terminal fields in SNr (B), in which VS innervates the medial SNr. DS and VS innervate EPN and LH, respectively (C). N = 3, including CTb-based tracing. Scale bars: 500 µm (A) and 200 µm (B, C). (D–F) The same strategy as in panels (A–C) for mapping DMS versus DLS efferents. N = 3, including CTb-based tracing. Scale bars: 500 µm (D) and 200 µm (E, F). (G–I) Dual Cre-dependent AAV anterograde tracing of nigro-thalamic projections using PV-Cre mice. Conjugated GFP and tdTomato are separately expressed in the lateral and medial SNr (G), which then target distinct thalamic nuclei (H, I). Insets emphasize the medial SNr projections to VA and to the caudal VM. Scale bars: 200 µm (G) and 500 µm (H,I). (J–L) Thalamo-cortical neurons projecting to mPFC, M2 and M1 were identified using three fluorophores of CTb. Insets in (K, L) indicate VA and caudal VM thalamus that contain M1- and M2-projecting thalamic neurons, which correspond to the insets in (H) and (I) where medial SNr sends axon terminals. Scale bars, 500 µm. (M, N) Schematic illustration showing that medial SNr, which receives VS and DMS inputs, projects to VA and caudal VM thalamus, which in turn project to M1 and M2, as the mechanism for limbic-to-motor connectivity through the direct pathway. (O, P) Ex vivo electrophysiology is used to determine the functional strength of inputs from DLS or VS onto SNr neurons projecting to motor thalamus. Injections of red fluorescent protein retrobeads in VA-VL and AAV.hsyn.ChR2.eYFP in the striatum resulted in striato-nigral labeled axons and retrogradely labeled retrobeads+ cells in the SNr (left). Images indicate recording pipettes attached to retrobeads+ cells (middle). Example traces recorded from lateral (O) and medial SNr neurons (P) under optical stimulation (blue bars above traces, right). Under the glutamate receptor antagonists (CNQX and DL-APV), IPSCs are visible immediately after stimulation, which were abolished by application of picrotoxin (PTX) that blocks GABAa receptors. Scale bars: 20 µm. (Q, R) Mean amplitude (medial, 0.902 ± 0.235; lateral, 0.842 ± 0.206; unpaired t-test, t11 = 0.177, p=0.862) and paired pulse ratio (medial, 0.697 ± 0.099; lateral, 0.778 ± 0.196; unpaired t-test, t11 = 0.410, p=0.690) for all recorded neurons in medial (n = 8 from seven mice) and lateral SNr (n = 5 from two mice). There is a neuron in medial SNr that did not respond to optical stimulation, and we excluded it from the analysis. Note that this neuron was located outside of a ChR2.YFP positive area. Data presented as mean ± SEM. Abbreviations: cp, cerebral peduncle; ic, internal capsule; mt, mammillothalamic tract; fr, fasciculus retroflexus; MD, mediodorsal; CM, centromedial; PC, paracentral; CL, centrolateral; LP, lateral posterior; PO, posterior; VPM, ventroposterior medial thalamus; PrL, prelimbic cortex; Cg, cingulate cortex.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 3D-reconstruction of entire mouse cerebral cortex, striatum and SNr. Using these templates, the actual injection sites are mapped within the 3D-space in the subsequent panels (B–E). Two different dorsal and rostral views are provided. (B–C) 3D-reconstructed injection sites and spread of eGFP+ and tdTomato+ cells into the striatum of D1-Cre mice. Note that the virus injection in VS caused a slight spillover into the bottom of DMS (B). (D) 3D-reconstruction of eGFP+ and tdTomato+ cells in SNr, based on the distribution of the infected starter cells. (E) 3D-reconstruction of cortical CTb injections. (F) (Related to Figure 4G–I.) Using a VGAT-Cre mouse, AAV.FLEX.tdTomato was injected in medial SNr. The right panel shows starter cells in medial SNr. Note that tdTomato+ cells are also identified in neighboring VTA GABAergic neurons as the result of a technical limitation of the micro-injection. Scale bar, 200 µm. (G, H) Experiment in (F) showed medial SNr axon terminals innervating, nucleus VA (G) in the rostral thalamus and the ventral half of caudal VM (H) in the caudal thalamus. This projection pattern is identical to the result of medial SNr projections verified in a PV-Cre mouse (Figure 4G–I). Both VA and caudal VM project to motor cortex (Figure 4K and L). Scale bars, 500 µm. (I, J) Injection of red retrobeads into motor thalamus targeting VA-VL (I). Owing to the ex vivo slice preparation, we could not obtain sections with thalamus. To verify that our injection sites targeted motor thalamus, retrogradely labeled cortico-thalamic cells in the cortex were analyzed. This panel indicates preferential labeling of layer 6 cortico-thalamic cells in M1, with few neurons in Cg, suggesting that the injection of retrobeads was selective to motor thalamic nuclei (J). Scale bar, 500 µm.
 
 We next compared the projections from medial-SNr and lateral-SNr to thalamus by injecting the same Cre-dependent AAV-GFP or –tdTomato in the SNr of parvalbumin (PV)-Cre mice (Figure 4G–4I and Figure 4—figure supplement 1D), as >80% of SNr GABA neurons are PV-positive (González-Hernández and Rodríguez, 2000; Lee and Tepper, 2007). SNr targeted multiple thalamic nuclei, including mediodorsal (MD), paracentral and centrolateral (PC/CL), VA-VL, and ventromedial (VM) nuclei (Figure 4H and I), consistent with earlier studies (Cebrián et al., 2005; Deniau and Chevalier, 1992; Kuramoto et al., 2011; Sakai et al., 1998). More careful analysis revealed that lateral SNr, which receives input from DLS, projects to VA-VL and the dorsal part of caudal VM. By contrast, medial SNr, which receives limbic input from VS, has more diffuse projections and targets MD, VA, rostral VM, and the ventral part of caudal VM. As SNr neurons also express the GABA transporter VGAT (Rossi et al., 2016), we subsequently performed Cre-dependent AAV tracing from medial SNr of VGAT-Cre mice and confirmed that medial SNr projections target VA, rostral VM, and the ventral part of caudal VM (Figure 4—figure supplement 1F–H).
 
@@ -66,9 +110,21 @@ We next examined thalamic neurons projecting to mPFC, M2 and M1 by simultaneous 
 
 To test the functional strength of the projection from VS onto motor thalamus-projecting SNr neurons, we next performed ex vivo patch-clamp recordings of SNr neurons while stimulating striatal terminals within SNr (Figure 4O–4R). Here, retrobeads were injected into motor thalamus to label SNr neurons retrogradely and AAV.hsyn.ChR2.eYFP was injected into either DLS or VS for optical stimulation of their terminals in SNr. Retrobead placement in motor thalamus was verified by stereotaxic coordinates and preferential retrograde labeling of cortico-thalamic cells in M1 (Figure 4—figure supplement 1I and J). In brain slices, optogenetic activation of DLS terminals in SNr evoked inhibitory post-synaptic currents (IPSCs) in retrobeads+ neurons in lateral SNr, confirming that DLS functionally synapses onto motor thalamus-projecting SNr neurons (Figure 4O). Notably, optogenetic activation of VS terminals in SNr also evoked IPCSs in retrobeads+ neurons in medial SNr (Figure 4P), confirming that projections from VS to SNr are functional. Comparison of both the IPSC amplitude (Figure 4Q) and the paired-pulse ratio (Figure 4R) revealed no significant difference in the strength or general properties between VS- and DLS-synapses onto motor thalamus-projecting SNr cells, suggesting that both VS and DLS can equally modulate SNr activity.
 
-## In vivo optogenetic stimulation confirms that ventral striatum controls motor cortex
+### In vivo optogenetic stimulation confirms that ventral striatum controls motor cortex
 
 To determine the ability of DLS and VS to modulate cortical activity, we next recorded mPFC and M1 neurons in vivo with optogenetic stimulation of DLS or VS terminals in SNr (Figure 5). Both anterograde and retrograde tracing of striato-nigral projections confirmed that inputs to medial and lateral SNr come from segregated populations in VS/DMS, and DLS, respectively (Figure 4A–F and Figure 5—figure supplement 1A), allowing us to target their outputs individually using optogenetics. We therefore made AAV.hsyn.ChR2.eYFP injections into the DLS or VS of different mice and then optogenetically activated DLS terminals in the lateral SNr or VS terminals in the medial SNr (Figure 5B and C), while recording from mPFC and M1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig5-v1.jpg)
+
+**Figure 5.:** (A) A schematic diagram for in vivo multi-unit recording with optical stimulation. AAV.hsyn.ChR2.eYFP was injected in DLS or VS. During recording, an optic fiber was implanted into either medial or lateral SNr and the recording electrodes were placed in M1 and mPFC. The order of recording from M1 and mPFC was counter-balanced. (B, C) Sample images of the expression of AAV.hsyn.ChR2.eYFP in DLS (B) or VS (C), and their terminals in SNr. Location of terminal labeling was consistent with viral tracing experiments (Figure 4A–F). Scale bars: 200 µm (striatum) and 500 µm (SNr). (D–G) In vivo recording from M1 with optical activation of DLS terminals in SNr (n = 189 cells from three mice). Schematic diagram for this experiment (D). (E, F) Examples of positively (E, excited between 5–35 ms) and negatively responding neurons (F, inhibited between 5–35 ms). The upper and lower panels show raster plots, and peri-stimulus time histograms (PSTHs), respectively. Blue horizontal bars indicate 1 s optogenetic stimulation. (G) Pie charts indicating the proportion of positive, negative and unresponsive neurons within the time window (5–35 ms after the onset of optical stimulation), respectively. (H–K) Same as above with the condition of VS terminal stimulation with M1 recording (n = 154 cells from four mice). (L–O) Same as above with the condition of DLS stimulation with mPFC recording (n = 159 cells from three mice). (P–S) Same as above with the condition of VS stimulation with mPFC recording (n = 158 cells from four mice). The inset in (Q) is a zoom-in panel showing an example of the detected latency (red dashed line) based on a change in activity beyond 3SD from baseline activity (see details in Materials and methods). (T) A comparison of the percentage of responded cortical neurons to optogenetic stimulation. These results indicate that VS axonal stimulation alters the activity of M1, but that DLS stimulation rarely evokes responses in mPFC. Z-tests: DLS to M1 vs VS to M1, z = 2.775, p=0.0055; VS to M1 vs DLS to mPFC, z = 3.174, p=0.0015; and DLS to mPFC vs VS to mPFC, z = 7.483, p<0.0001. (U) Schematic diagram of the present study unveiling a unidirectional limbic-to-motor connection between limbic and motor cortico-basal ganglia-thalamocortical loops. This VS - medial SNr - motor thalamus circuitry involves classic direct pathway disinhibition, thus driving increases in activity in the downstream cortical target, as shown in our in vivo electrophysiology.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Retrograde tracing from either medial or lateral SNr by CTb-647. Bottom panels show the actual injection sites in these cases, illustrating local expression of CTb-647 in medial and lateral SNr. Consistent with the defined topography of striato-nigral projections (Figure 4A–F), we found specific labeling of CTb-647+ cells in VS and DMS when CTb-647 was injected in the medial SNr (bottom), which contrasts with the selective labeling in DLS after CTb-647 injection in the lateral SNr. Scale bars: 200 µm (middle) and 500 µm (bottom). (B) Latency analysis indicates the fraction of all the responsive neurons, including M1 and mPFC cases, for their latency to the optogenetic stimulation. Responsive neurons within the time window (between 5–35 ms, indicated by a red shade) were divided into following three categories: excited (Positive) and inhibited (Negative), or no response (None) (Figure 5). (C, D, E) Percentage of responsive neurons from different criteria using time windows of: 5–15 ms (C), 5–25 ms (D) and 5–45 ms (E). Both panels resulted in similar distributions of responded neurons in each condition, which supports the findings that VS terminal activation in SNr can alter M1 activity but that it rarely occurs between DLS terminal stimulation and mPFC recording. Z-tests (5–15 ms): DLS to M1 vs VS to M1, z = 1.02, p=0.308; VS to M1 vs DLS to mPFC, z = 3.266, p=0.0011; and DLS to mPFC vs VS to mPFC, z = 2.874, p=0.0041. Z-tests (5–25 ms): DLS to M1 vs VS to M1, z = 1.926, p=0.0541; VS to M1 vs DLS to mPFC, z = 2.984, p=0.0028; and DLS to mPFC vs VS to mPFC, z = 5.443, p<0.0001. Z-tests (5–45 ms): DLS to M1 vs VS to M1, z = 3.552, p=0.0004; VS to M1 vs DLS to mPFC, z = 2.794, p=0.0052; and DLS to mPFC vs VS to mPFC, z = 8.545, p<0.0001. (F, G) Representative examples of the same M1 neuron shown in Figure 5E responding to DLS terminal stimulation using different frequencies (F, 5 Hz; G, 20 Hz). Note the consistent positive modulation of firing rate under various stimulation parameters. Upper and lower panels show raster plots, and PSTHs, respectively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49995/elife-49995-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–E) In vivo recording from SNr with optical activation of D1R neurons in DLS (n = 358 cells). (A) Schematic diagram for this experiment. (B) An example neuron that negatively responded to the optical stimulation ( inhibited), and its profile with a different time scale. (C) Upper and lower panels show raster plots, and PSTHs, respectively. Blue horizontal bars indicate 1 s optogenetic stimulation. (D) Histogram indicates the distribution of latencies across all the responsive neurons in SNr. (E) Pie chart indicates the proportion of inhibited neurons in SNr. (F–J) Similar to (A–E). Recording from motor thalamus while activating D1R neurons in DLS (n = 104 cells). (J) Pie chart shows the proportion of positively modulated neurons in motor thalamus. (K–O) Similar to (A–E). Recording from M1 while activating D1R neurons in DLS (n = 123 cells). (O) Pie chart shows the proportion of positively modulated neurons in M1 within 5–35 ms. (P–T) Similar to (A–E). Recording from M1 while activating D1R neurons in VS (n = 92 cells). (T) Pie chart shows the proportion of positively modulated neurons in M1 within 5–35 ms.
 
 We first analyzed the response latency of all the cortical neurons that significantly changed their firing rates during stimulation, and found that the peak in the latency distribution was less than 40 ms (Figure 5—figure supplement 1B), consistent with the fastest route only containing three synapses in the striato-nigro-thalamo-cortical pathway. One technical concern is the possibility of AAV.hsyn.ChR2.eYFP virus spreading to the cortex upon injection into the striatum, which may have allowed antidromic activation of the cortical neurons via cortico-nigral projections or cortical axons through SNr (Naito and Kita, 1994). We therefore set a lower limit of 5 ms to remove any potential antidromic response of cortical neurons to the optical stimulation (Li et al., 2015). Furthermore, we performed additional electrophysiological recording from each downstream target of striatum, including SNr, motor thalamus, and M1, while optogenetically activating dopamine receptor type-1 (D1R) expressing spiny projection neurons in DLS, using D1-Cre mice expressing ChR2 in the striatum, to further characterize the range of response latencies (Figure 5—figure supplement 2). On the basis of these results and the previously identified synaptic properties of the striato-nigro-thalamo-cortical circuitry (Beurrier et al., 2006; Cruikshank et al., 2007; Kase et al., 2015; Lalive et al., 2018), we have thus restricted our analyses to cortical neurons whose response occurred between 5–35 ms after striatal terminal stimulation (Figure 5—figure supplement 1B). Please note that this rather strict criterion was employed in order to avoid any false positives, as the response after 35 ms might be susceptible to network effects, either within the cortical local circuitry or beyond the nigro-thalamo-cortical pathway.
 
@@ -84,41 +140,394 @@ A remaining question is how and where limbic and motor information are integrate
 
 In summary, we provide evidence for an interaction across functionally distinct cortico-basal ganglia loops, allowing limbic information to affect motor circuits by ventral striatum control of motor cortex through basal ganglia direct pathway output. These findings pave the way for a more complete understanding of fundamental aspects of behaviors such as action sequencing and habit formation (Dickinson, 1985; Jin and Costa, 2015; Yin and Knowlton, 2006), and have important implications in a wide range of neurological and psychiatric diseases, from obsessive-compulsive disorder (OCD) to anxiety and depression, in which the limbic control of action is compromised (Everitt and Robbins, 2005; Marchand et al., 2012; Redgrave et al., 2010; Robbins et al., 2012; Vaghi et al., 2017).
 
-## Contact for reagent and resource sharing
+### Contact for reagent and resource sharing
 
 Requests for research materials should be directed to the Lead Contact, Xin Jin (xjin@salk.edu).
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Wistar rats</td>
+      <td>Chales River, France</td>
+      <td>Wistar IGS rats, strain code: 003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild-type C57BL/6 mice</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Drd1a-Cre mice</td>
+      <td>MMRRC</td>
+      <td>RRID: MMRRC_034258-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pvalb-Cre mice</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX:008069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Slc32a1-Cre (VGAT-Cre) mice</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX:016962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ai32 mice (B6;129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J)</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX:012569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Adeno-associated virus)</td>
+      <td>AAV5/EF1-Flex-TVA-Cherry</td>
+      <td>UNC Viral Vector Core</td>
+      <td>RRID: SCR-002448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV8/CA-Flex-RG</td>
+      <td>UNC Viral Vector Core</td>
+      <td>RRID: SCR_002448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (recombinant rabies virus)</td>
+      <td>EnvA.dGRabies.eGFP</td>
+      <td>Salk Vector Core</td>
+      <td>RRID: SCR_014847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV9.FLEX.tdTomato</td>
+      <td>University of Penn Viral Vector Core</td>
+      <td>RRID: SCR_015406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV9.FLEX.eGFP</td>
+      <td>University of Penn Viral Vector Core</td>
+      <td>RRID: SCR_015406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV9.CAG.tdTomato</td>
+      <td>UNC Viral Vector Core</td>
+      <td>RRID: SCR_002448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV9.hsyn.ChR2.eGFP</td>
+      <td>University of Penn Viral Vector Core</td>
+      <td>RRID: SCR_015406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV5-EF1a-DIO-hChR2(H134R)-mCherry</td>
+      <td>University of Penn Viral Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-wild type rabies phosphoprotein mouse monoclonal antibody</td>
+      <td>commercially unavailable (Raux et al., 1997)</td>
+      <td></td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cholera toxin b-subunit goat polyclonal antibody</td>
+      <td>List Biological Laboratories</td>
+      <td>Cat.# 704</td>
+      <td>(1:15000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-tyrosine hydroxylase (TH) mouse monoclonal antibody</td>
+      <td>Millipore</td>
+      <td>Cat.# MAB318</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NeuN rabbit polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>Cat.# ab104225</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP chicken polyclonal antibody</td>
+      <td>Novus Biologicals</td>
+      <td>Cat.# NB100-1614</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-substance P mouse monoclonal antibody</td>
+      <td>Abcam</td>
+      <td>Cat.# ab14184</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG horseradish peroxydase (HRP) (host: rabbit, polyclonal)</td>
+      <td>DAKO</td>
+      <td>Cat.# P260</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat IgG horseradish peroxydase (HRP) (host: rabbit, polyclonal)</td>
+      <td>DAKO</td>
+      <td>Cat.# P044901-2</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa Fluor 488 (host: donkey, polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat.# 715-545-151</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Cy3 (host: donkey, polyclonal)</td>
+      <td>Jackson ImmunoReseach Laboratories</td>
+      <td>Cat.# 715-165-151</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Cy5 (host: donkey, polyclonal)</td>
+      <td>Jackson ImmunoReseach Laboratories</td>
+      <td>Cat.# 715-175-151</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa Fluor 488 (host: donkey, polyclonal)</td>
+      <td>Jackson ImmunoReseach Laboratories</td>
+      <td>Cat.# 711-545-152</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Cy3 (host: donkey, polyclonal)</td>
+      <td>Jackson ImmunoReseach Laboratories</td>
+      <td>Cat.# 711-165-152</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Cy5 (host: donkey, polyclonal)</td>
+      <td>Jackson ImmunoReseach Laboratories</td>
+      <td>Cat.# 711-175-152</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-chicken Alexa Fluor 488 (host: donkey, polyclonal)</td>
+      <td>Jackson ImmunoReseach Laboratories</td>
+      <td>Cat.# 703-545-155</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurotrace 647</td>
+      <td>Invitrogen</td>
+      <td>Cat.# N21483</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-APV</td>
+      <td>Tocris</td>
+      <td>Cat.#. 0106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#. C239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#. P1675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX-314</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#. L5783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cholera-toxin b-subunit in low-salt</td>
+      <td>List Biological Laboratories</td>
+      <td>Cat.# 104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cholera-toxin b-subunit Alexa Fluor 488 conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat.# C22841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cholera-toxin b-subunit Alexa Fluor 555 conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat.# C34776</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cholera-toxin b-subunit Alexa Fluor 594 conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat.# C22842</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cholera-toxin b-subunit Alexa Fluor 647 conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat.# C34778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Red Retrobeads</td>
+      <td>Lumafluor Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td>R2015b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>GraphPad Prism 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida</td>
+      <td>MBF Bioscience</td>
+      <td>NL-11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CorelDRAW</td>
+      <td>Corel</td>
+      <td>CorelDRAW Graphics Suite X7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>ImageJ Win64 bit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN</td>
+      <td>Zeiss</td>
+      <td>ZEN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 9.2</td>
+      <td>Molecular Devices</td>
+      <td>Molecular Devices</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Offline Sorter</td>
+      <td>Plexon</td>
+      <td>Version 3.3.3</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All procedures related to trans-synaptic wild-type rabies tracing were carried out in accordance with the European guidelines for the care and use of laboratory animals and with the guidelines of the French Ministry for Agriculture and Fisheries, Division of animal rights. They were approved by the ethics committee in Neuroscience at the INT (nr. 02167.01). Recombinant monosynaptic rabies, viral and other tracing experiments were conducted at the Salk Institute for Biological Studies according to NIH guidelines, and all protocols were approved by their Institutional Animal Care and Use Committee. All the experimenters handling rabies virus were vaccinated before handling.
 
-## Animals
+### Animals
 
 Male Wistar rats were used for trans-synaptic wild-type rabies experiments (Aoki et al., 2019). All other experiments were performed in mice maintained on a C57BL/6 background, except for Slc32a1(VGAT)-Cre (mixed with C57BL/6 and 129/Sv). Male and female wild-type mice were used for monosynaptic rabies tracing, non-Cre-dependent virus tracing, and for other tracing experiments that did not require specific Cre-lines. In the cell-type specific tracing, Drd1a-Cre, Pvalb-Cre, and Slc32a1(VGAT)-Cre mice were used. For electrophysiological recording, we used wild-type and Drd1a-Cre mice.
 
-## Wt-RABV tracing
+### Wt-RABV tracing
 
 For the present trans-synaptic tracing (Figure 1), nine out of eleven cases injected were used from the previous study, in which we focused on cerebellar connections into sensorimotor cortices (Aoki et al., 2019). Before surgery, animals were anesthetized with ketamine (80 mg/kg, Imalgene, France) and xylazine (10 mg/kg, Bayer, Germany). Appropriate levels of anesthesia were monitored by the absence of whisker movements and foot-pinch withdrawal reflex. Additional doses of the ketamine-xylazine mixture were administered i.p. when necessary. After placing animals into a stereotaxic frame (David Kopf Instruments), a mixture (0.15 or 0.2 μL) of the ‘French’ subtype of CVS-11 rabies virus (Wt-RABV, Aoki et al., 2019; Coulon et al., 2011; Raux et al., 1997; Ruigrok et al., 2008; Suzuki et al., 2012; Ugolini, 2010) and cholera-toxin b subunit (CTb, low salt; List Biological Laboratories, 1% w/v in 0.2 M phosphate buffer (PB) at pH 7.4: the injection solution consisted of four parts Wt-RABV and one part CTb) was injected by a 1 µl Hamilton syringe in the following functional areas of the cerebral cortex: primary motor cortex (M1, n = 4), secondary motor cortex (M2, n = 4), and medial prefrontal cortex (mPFC, n = 3, one centered on prelimbic and two centered on cingulate cortex). As shown in our previous study, coordinates of the injection sites were determined by reference to the standard rat brain atlas (Aoki et al., 2019; Paxinos and Watson, 2004). The viral stock was kept at −80°C until use. This CVS-11 strain of RABV has been confirmed to be transported trans-synaptically in a retrograde direction as well as in the time-dependent manner (Aoki et al., 2019; Kelly and Strick, 2004; Ruigrok et al., 2008; Suzuki et al., 2012; Ugolini, 2010). No neighboring neurons are infected unless they have synaptic contacts to the already infected cells. Adding CTb to the injection solution enabled accurate determination of the injection site (Aoki et al., 2019; Suzuki et al., 2012). Upon the injection, the needle was left in place for another 5 min to allow the virus to spread. After surgery, animals were monitored for signs of stress or discomfort. Throughout the course of the experiment, all of the animals were kept in a biohazard safety level two room (BSL-2). Survival time was set at 66–70 hr after viral injections, which has been established to be sufficient for 3rd-order labeling without evidence of 4th-order labeling when tracing from the rat cerebral cortex (Aoki et al., 2019). For a control experiment with shorter survival time, we performed the identical procedure and perfused animals at 58 hr after the Wt-RABV injections. All of the animals were euthanized with a lethal dose of sodium pentobarbital (80 mg/kg, i.p., Nembutal, Libourne, France), and perfused with 0.9% saline followed by 4% paraformaldehyde (PFA) in PB. Brains were extracted and post-fixed in 4% PFA for at least a week to kill the rabies virus completely.
 
-## AAVretro.Cre + EnvA-dG-RABV tracing (Rt-RABV tracing)
+### AAVretro.Cre + EnvA-dG-RABV tracing (Rt-RABV tracing)
 
 For monosynaptic Rt-RABV tracing of nigro-thalamic cells (Figure 2), we used male or female wild-type mice (C57BL/6 strain, n = 6). Experiments were performed as previously described (Smith et al., 2016). Briefly, after placing the animal into a stereotaxic frame (David Kopf Instruments) under isoflurane anesthesia, a subcutaneous injection of bupivacaine was injected into the scalp on the midline as local anesthesia before the incision. Anesthetic state was maintained by isoflurane anesthesia administered via a nosecone (1–1.5% in 1 L/min O2). The goal of this experiment was to identify the striatal projection neurons that synapse onto substantia nigra pars reticulata (SNr) neurons that specifically project to VA-VL motor thalamus. To achieve this, we first injected a 1:1 mixture of AAVretro.Cre and AAV.FLEX.tdTomato into VA-VL thalamus, where the AAV.FLEX.tdTomato served to determine the injection site and thalamo-cortical terminals in the cortex. The labeling of the thalamic injection site and its axonal terminals in the cortex helped us to verify whether the injection was made in VA-VL thalamus and whether it innervated motor cortex. Three of six mice received a mixture of the AAVretro.Cre and AAV.FLEX.tdTomato in VA-VL, and another three received only AAVretro.Cre in the same coordinates in the VA-VL. The injected AAVretro.Cre served to induce Cre-recombinase expression in the VA-VL projecting SNr neurons (Tervo et al., 2016). A separate injection of a 1:1 mixture of AAV5/EF1-Flex-TVA-mCherry and AAV8/CA-Flex-RG was made in the SNr during this initial surgery. After three weeks of transfection, the G-deleted RABV virus was subsequently injected into SNr in an angled approach 30° from vertical via the contralateral hemisphere. We injected 0.2 µl of the AAVretro.Cre + AAV.FLEX.tdTomato mixture at 1:1 ratio (or AAVretro.Cre solely) in the VA-VL thalamus (AP: −1.1 mm, ML: 1.0 mm, DV: 3.4 mm, all from bregma or dura), and 0.8 µl of TVA.RG in SNr (AP: −3.3, ML: 1.4, DV: 4.3). The following G-deleted RABV.eGFP was injected in the same site in SNr, where we applied the 30° angled injection from the other hemisphere to avoid undesired contamination of starter cells for monosynaptic rabies tracing. A survival time of 10 days allowed for the successful infection of Rt-RABV. For the control experiment without using rabies glycoprotein, we applied a similar procedure but injected only AAV5/EF1-Flex-TVA-mCherry into SNr with no conjugation of AAV8/CA-Flex-RG. All animals were perfused under ketamine-xylazine anesthesia, and extracted brains were kept in 4% PFA for overnight.
 
 For monosynaptic Rt-RABV tracing of thalamocortical cells targeting M1 (Figure 3), we applied the same strategy as above. Briefly, we injected AAVretro.Cre in M1 (0.2 µl in each: AP, +1.6; ML, 1.6; DV, 0.8; AP, +0.6; ML, 1.3; DV, 0.8), and a 1:1 mixture of AAV5/EF1-Flex-TVA-mCherry and AAV8/CA-Flex-RG into VA-VL motor thalamus (0.8 µl: AP, −1.2; ML, 1.0; DV, 3.5). Three weeks later, G-deleted RABV.eGFP (0.8 µl) was injected at the same coordinate of VA-VL motor thalamus. Ten days after the RABV injections, mice were perfused, and their brains were kept in 4% PFA overnight for further histological analysis.
 
-## AAV and CTb tracing
+### AAV and CTb tracing
 
 To determine the topography of striato-nigral projections, we used Cre-dependent AAV tracing of striatal D1-type neurons using Drd1a-Cre mice. AAV9.FLEX.eGFP (0.4–0.8 µl) and AAV9.FLEX.tdTomato (0.4–0.8 µl) were injected in VS (AP, +1.3; ML, 0.8; DV, 3.9) and DS (AP, +0.8; ML, 2.0; DV, 2.2), respectively. For this VS injection, we applied an angled approach 20° from the rostral cortex to minimize spread of virus to dorsal striatum. The same dual tracing was also performed between DMS (AP, +0.5; ML, 1.5; DV, 2.5), and DLS (AP, +0.5; ML, 2.5; DV, 2.5). Using the same viral tracing strategy, nigro-thalamic projections were determined. Local injections of Cre-dependent AAV were performed in Pvalb-Cre and Slc32a1(VGAT)-Cre mice. The use of these two transgenic lines allowed us to limit viral transfections to GABAergic neurons in the SNr, so as to make the tracing as clean as possible. We injected 0.1 µl of AAV.FLEX.eGFP or AAV.FLEX.tdTomato in medial (AP, −3.3; ML, 1.0; DV, 4.5) or lateral SNr (AP, −3.3; ML, 1.7; DV, 4.0). The same volume and coordinates were used for retrograde tracing from medial and lateral SNr to the striatum using CTb-647. Three-fluorophore-CTb tracing was conducted with injections in the cortex. In this study, a combination of CTb-488, CTb-555 (or CTb-594), and CTb-647 (Invitrogen) was chosen. Selected injection sites and volumes were as follows: prelimbic cortex (PrL) (0.2 µl: AP, +2.0; ML, 0.3; DV, 1.5), M2 (0.2 µl: AP, +1.4; ML, 0.8; DV, 0.8), M1 (0.2 µl: AP, +1.0; ML, 1.6; DV, 0.8). For the quantification of cortico-striatal projections, we injected non Cre-dependent AAV (YFP or tdTomato) in M1 and PrL in wild-type mice using the injection coordinates mentioned above.
 
 As adequate survival time for each tracing technique, we waited at least 7 days for fluorescent CTb, and 10 days for AAVs until perfusion.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 For the Wt-RABV tracing, extracted tissue was stored overnight in 10% sucrose in 0.05 M PB in the refrigerator (4°C). The intact brain was embedded in gelatin solution (12% gelatin/10% sucrose in H2O) and sectioned coronally at 40 µm using a freezing microtome (Leica SM 2000R). Serial sections were collected and divided into eight numbered vials. Selected vials were processed with an interval of 160 µm (2 vials out of 8), for either rabies or CTb immunohistochemistry. In rabies immunohistochemistry using 1st and 5th vials, sections were first rinsed with phosphate-buffered saline containing 0.9% NaCl (PBS), and floated in 3% hydrogen oxidase (H2O2) in PBS for 20 min for blocking reaction against endogenous peroxidase. The sections were incubated overnight at room temperature in an anti-rabies phosphoprotein mouse monoclonal antibody (Raux et al., 1997) diluted at 1:5000 in PBS+, that is PBS containing 2% normal horse serum and 0.5% Triton X-100. Subsequently, the sections were incubated in secondary rabbit anti-mouse horseradish peroxidase (Dako, 1:200 in PBS+), followed by the visualization with the incubation in a 3,3′-diaminobenzidine-tetrahydrochloride (DAB) solution (0.025% DAB and 0.005% H2O2 in 0.05M PB), generating a brown insoluble reaction in rabies-infected neurons. For CTb immunohistochemistry using 2nd and 6th vials, after receiving a similar pre-treatment to reduce endogenous peroxidase reaction, sections were incubated overnight in a polyclonal anti-choleragenoid antibody raised in goat (goat anti-CTb, lot no. 704, List Biological Laboratories) diluted 1:15,000 in PBS+, followed by incubation in biotinylated donkey anti-goat IgG for 90 min (Dako, 1:200, in PBS+). Finally, these sections were visualized by reaction with DAB for 20 min. Upon completion of all steps, the sections were mounted sequentially, Nissl-counterstained by thionin, and cover-slipped with Permount.
 
 For Rt-RABV, AAV and CTb tracing methods, brains were stored in 30% sucrose in 0.1M PB at 4°C before sectioning. We gelatinized brains and sectioned coronally at 50 µm (Microm HM 430, Thermo Scientific), or in a few cases, sectioned brains without gelatin molding. Sections were collected into four vials, with an interval of 200 µm. For Rt-RABV tracing, we used endogenous fluorescence of eGFP for signal detection. For the analysis of starter cells in SNr, we used anti-tyrosine-hydroxylase staining (TH) to delineate dopamine neurons in VTA/SNc. Sections were rinsed in the tris-buffered saline (TBS) three times for 10 min each, followed by 45 min incubation in TBS+ containing 5% normal horse serum and 0.5% Triton X-100. Sections were then incubated in a primary antibody against TH raised in mouse in TBS+ (Millipore, 1:1000) for 48 hr, and then rinsed, incubated in an anti-mouse secondary antibody in TBS+ (Jackson ImmunoReseach Laboratories, 1:250) conjugated with Cy5 for 2 hr. We used the same procedures for the other immunohistochemical staining using primary antibodies including anti-GFP raised in chicken (Novus Biologicals, 1:1000), anti-substance P raised in mouse (Abcam, 1:1000), anti-NeuN raised in rabbit (Abcam, 1:1000) in combinations with appropriate secondary antibody visualization conjugated with either Alexa-488, Cy3 or Cy5 (Jackson ImmunoReseach Laboratories). In each tracing experiment, we selected either DAPI, NeuN, or Neurotrace 647 (Invitrogen) staining for counterstaining, depending on the color availability for microscopy.
 
-## Microscopy and data analysis
+### Microscopy and data analysis
 
 Representative brightfield microphotographs were obtained with a digital camera attached to a Keyence microscope (BZ-9000). Representative fluorescent images were taken using a Zeiss LSM 710 laser scanning confocal microscope. When plotting labeled neurons, axon terminals and depicting contours for Wt-RABV tracing, we used an Olympus microscope (BX51W1) equipped with Neurolucida software (MBF Bioscience). For counting and plotting neurons in the other analyses, we examined labeled structures by epi-fluorescent microscope (Axioskop 2, Zeiss), or by Neurolucida offline software (MBF Bioscience) into which the obtained confocal images were imported.
 
@@ -128,16 +537,16 @@ For the Rt-RABV tracing, we analyzed the population of starter cells in SNr th
 
 We analyzed injection sites for each viral/CTb tracing by 3D-reconstructions. We used the Neurolucida software and imported a template coronal section from the standard brain atlas, in which contours of the regions of interests such as cerebral cortex, striatum, and SNr were drawn. These collected contours were reconstructed by the software to produce templates. Subsequently, the injection sites were visualized by projecting the observed infected or injected areas to the templates.
 
-## Ex vivo slice electrophysiology
+### Ex vivo slice electrophysiology
 
 Ten days before the recording experiment, AAV.hsyn.ChR2.eYFP was injected into DLS or VS (0.3 µl, coordinates mentioned above). Five days before recording, a subsequent injection of 1:3 diluted red retrobeads (0.5 µl) was made in motor thalamus (VA-VL). On the day of recording, mice were deeply anesthetized with a ketamine-xylazine mixture and transcardially perfused with ice-cold NMDG cutting solution, saturated with 95% O2/5% CO2, containing (in mM): NMDG 105, HCl 105, KCl 2.5, NaH2PO4 1.2, NaHCO3 26, glucose 25, sodium L-ascorbate 5, sodium pyruvate 3, thiourea 2, MgSO4 10, CaCl20.5 (300 mOsm/kg, pH = 7.4). Fresh brains were cut into 250-µm-thick coronal slices on a vibratome (Leica VT1000S) through SNr in ice cold, bubbling NMDG cutting solution. Next, slices were recovered for ~15 min at 33°C in bubbling NMDG cutting solution followed by 45 min in normal ACSF containing (in mM): NaCl 125, KCl 2.5, NaH2PO4 1.25, NaHCO3 25, D-glucose 12.5, MgCl2 1, CaCl22 (295 mOsm/kg, pH = 7.4), at 27°C. After at least one hour of recovery, slices were transferred to a recording chamber perfusing with ACSF at ~2 mL/min bubbled with 95% O2/5% CO2 at 30°C. Medial and lateral SNr were visually identified under IR-DIC 10X objectives and regions of interest were confirmed by eYFP expression. Whole-cell recordings were performed on neurons labeled with retrobeads under a 40X objective lens. 3~5 MΩ glass pipettes were pulled on a Sutter P-97 puller. Pipettes were filled with internal solution containing (in mM): 115 CsCl, 10 HEPES, 1 EGTA, 20 TEA-Cl, 5 QX-314 (Br- salt), 4 MgATP, 0.3 Na-GTP, and 8 Na2-phosphocreatine (pH 7.3 adjusted with CsOH; 295 mOsm/kg). After break in, cells were held at −70 mV, and ACSF with 10 µM CNQX (Tocris) and 50 µM DL-APV (Sigma-Aldrich) was perfused into the recording chamber to inhibit AMPA-receptor- and NMDA-receptor-mediated excitatory currents, respectively. ~10 min post drug wash in, the paired pulse light stimulation (473 nm, 5~60 mW/mm2, 2.5 ms, 50 ms ISI) generated by a 473 nm blue DPSS laser system (Laserglow Technologies) was delivered through a 200 µm optic fiber (ThorLabs) positioned close to the patched cell (~50–150 µm) at 0.05 Hz to induce IPSC. 100 µM picrotoxin (PTX, Sigma-Aldrich) was applied in addition to previous drugs about 5 min later to verify the recorded GABAAR-mediated inhibitory current. Access or series resistance ranged from 14 to 25 MΩ and was monitored online. Any changes greater than 20% were omitted from the analysis. Voltage-clamp recordings were performed using a Multiclamp 700A (Axon Instruments), filtered at 3 kHz and digitized at 10 kHz. The paired pulse ratio was calculated as the ratio of 2nd to 1st amplitude.
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
 In vivo recording of M1/mPFC neurons during optogenetic stimulation was performed as previously described (Jin and Costa, 2010; Klug et al., 2018). Briefly, we injected non-floxed version of AAV-ChR2 virus (0.3 µl of AAV9.hsyn.ChR2.eYFP) into DLS/VS of wild-type mice (using the coordinates as mentioned above). Ten days after the viral injection, the mice were lightly anesthetized using isoflurane (4% induction; 0.5–1.5% sustained) and were placed in a stereotactic frame. For electrophysiological recording, we utilized electrode arrays (Innovative Neurophysiology Inc, Durham, NC) of 16 tungsten contacts (2 × 8) that were 35 µm in diameter. Electrodes were spaced 150 µm apart in the same row and 200 µm apart between two rows. The total length of the electrodes was 5 mm. An array was incrementally lowered into M1 (AP, +1.2; ML, 1.4; DV, –0.2 ~ −1.1) and mPFC (AP, +2.1; ML, 0.3; DV, –1.3 ~ −1.6), allowing us to record neurons at multiple depths in each cortical area. Silver grounding wire was attached to skull screws. Neural activity was recorded using the MAP system (Plexon Inc, Dallas, TX). The spike activities were initially online sorted with a build-in algorithm (Plexon Inc, Dallas, TX). Only spikes with stereotypical waveforms that were clearly distinguished from noise and which had relatively high signal-to-noise ratio were tagged and saved for further analysis. After the recording session, the recorded spikes were further isolated into individual units using offline sorting software (Offline Sorter, Plexon Inc, Dallas, TX). Each individual unit displayed a clear refractory period in the inter-spike interval histogram, with no spikes during the refractory period (larger than 1.3 ms). To stimulate striatal terminals within SNr optogenetically, we placed an optic fiber (200 µm in diameter) in the medial SNr (AP, −3.4; ML, ±1.1; DV, –3.9) for VS terminal stimulation or in the lateral SNr (AP, −3.4; ML, ±1.6; DV, –3.8) for DLS terminal stimulation. For each recording session, blue laser stimulation was delivered through the optic fiber from a 473 nm laser (Laserglow Technologies, Toronto, ON) via a fiber-optic patch cord, and the neuronal responses were simultaneously recorded. The stimulation patterns included 1 s constant light and 5 or 20 Hz (10 ms pulse width, 5 or 20 pulses in 1 s). The inter-stimulation interval was 4 s and each stimulation pattern was repeated for 30 trials. The laser power was adjusted carefully (~3.0–5.0 mW) to drive reliable response. Peri-stimulus time histogram (PSTH) for each neuron was constructed with 1 ms time bins, aligned to the stimulation onset at 0, and smoothed using a build-in Gaussian filter in MATLAB (Mathworks). The latency of responses to optogenetic stimulation was defined as the start of a significant increase in firing rate or decrease in PSTH during the stimulation period. The thresholds for determining the significant firing change were defined as averaged spontaneous firing rate + 3 × SD (standard deviation) for significant increase, and averaged spontaneous firing rate – SD for significant decrease. We categorized all the recorded neurons into positive (excited), negative (inhibited), and non-responded ones, using a defined criterion at the response latency within 5–35 ms. We also calculated the proportion of neurons that significantly changed their firing rates within 5–15 ms, 5–25 ms and 5–45 ms (Figure 5—figure supplement 1C–E). The results indicate the same overall tendency in proportion.
 
 To investigate response latencies at each of the downstream nuclei of striatum (SNr, motor thalamus, and M1) within the striato-nigro-thalamo-cortical loop, while activating the D1R-positive spiny projection neurons in striatum, we injected Cre-dependent AAV5-EF1a-DIO-hChR2(H134R)-mCherry virus into striatum of Drd1a-Cre mice (GENSAT, EY217) or genetically expressed ChR2 under cre control (D1-cre × Ai32). The recording procedure was the same as described above. For the SNr recording while stimulating D1 neurons, we carried out both the soma stimulation DLS and terminal stimulation in SNr. We combined these data sets and analyzed the latency distribution collectively.
 
-## Statistical analyses
+### Statistical analyses
 
 Data were analyzed by GraphPad Prism 7. For the analysis of RABV+ neurons in the striatum from both Wt-RABV and Rt-RABV tracing studies, we performed a two-way analysis of variance (ANOVA) with injection sites and labeled striatal regions as factors. In the statistical analysis of the open-loop component from the Wt-RABV tracing study, we used an unpaired Student’s t-test. Comparing the proportion of responded neurons in M1 and mPFC with striato-nigral terminal stimulation, we compared each combination of two groups using a Z-test. p<0.05 was considered significant.

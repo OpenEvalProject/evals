@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/027bh9e22 Microbial Sciences, Institute of Biology, Leiden University Leiden Netherlands
+1. Microbial Sciences, Institute of Biology, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
 
 † Corresponding author
 

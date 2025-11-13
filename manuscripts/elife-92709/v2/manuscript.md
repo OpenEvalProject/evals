@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Biochemistry and Biophysics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-2. https://ror.org/00b30xv10 Graduate Program in Biochemistry and Molecular Biophysics, University of Pennsylvania Philadelphia United States
-3. https://ror.org/0153tk833 Department of Biochemistry and Molecular Genetics, University of Virginia Charlottesville United States
-4. https://ror.org/00b30xv10 Penn Center for Genome Integrity, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-5. https://ror.org/00b30xv10 Epigenetics Institute, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
+1. Department of Biochemistry and Biophysics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Graduate Program in Biochemistry and Molecular Biophysics, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+3. Department of Biochemistry and Molecular Genetics, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+4. Penn Center for Genome Integrity, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+5. Epigenetics Institute, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
@@ -33,39 +33,95 @@ Here, we measure the change in polypeptide backbone dynamics of the INCENP/ Bore
 
 ## Results
 
-## HXMS identifies regions with ISB heterotrimers impacted by phase separation
+### HXMS identifies regions with ISB heterotrimers impacted by phase separation
 
 The ISB heterotrimer is comprised of the N-terminal 58 amino acids of INCENP, along with both full-length Survivin and Borealin (Figure 1A). Together, it forms a three-helix bundle, containing a histone-binding module from the Survivin subunit and a C-terminal extension of Borealin that is reported to be mostly unstructured (Jeyaprakash et al., 2007). Prior ISB phase separation was performed by either the addition of a polymeric crowding agent or by lowering the ionic strength (Trivedi et al., 2019). Polymers, like those typically used in phase separation studies (e.g. polyethylene glycol or dextran), are incompatible with the mass spectrometry step in HXMS that we intended to use to study the ISB, since the resulting spectra from polymers obscure those from the peptides under investigation. Thus, we studied the phase separation properties of the ISB over a range of protein concentrations and ionic strengths in the absence of polymeric crowding agent (Figure 1—figure supplement 1). From this, we focused our initial attention on a condition (25 μM ISB, 75 mM NaCl) that yields robust droplet formation (Figure 1B). Indeed, for subsequent HXMS experiments (described below), we sought to measure the behavior of an essentially homogenous droplet population since a highly heterogenous mixture of droplet and non-droplet ISB populations would likely yield convoluted mass spectra that would be challenging to properly assign to one of the states. In the condition we identified, 90%±5% of the ISB protein was found within the rapidly sedimenting droplet population (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the ISB showing various structural domains within the subunits. Structural information was extracted from crystal structure of three-helix bundle structure of the ISB (PDB# 2QFA) (Jeyaprakash et al., 2007). Each protein is color-coded in a various shade of gray: INCENP = light gray, Borealin = mid-gray, Survivin = dark gray. (B) DIC micrographs of the ISB droplets under indicated conditions (25 µM ISB, 75 mM NaCl). Droplets were allowed to settle onto coverslip before imaging (~5 min). Scale bar = 10 µm. (C) Sedimentation of pre-formed ISB droplets at phase separation conditions in Panel B (n=3). The time shown indicates the incubation period prior to sedimentation. (D) Schematic of hydrogen/deuterium exchange mass spectrometry (HXMS) experiments between free ISB protein and droplet ISB protein. HX samples either underwent pepsin digestion and analysis by MS or DIC imaging at each HX timepoint. (E) DIC micrographs of the ISB droplets at each HX timepoint (10, 100, 300, 1000, and 3000 s). Droplets were not allowed to settle onto coverslip to allow for accurate timing of images. Scale bar = 10 µm. (F) Percent difference in HX is calculated for each peptide (represented by horizontal bars) at the 100 s timepoint and plotted using the corresponding color key. The consensus behavior at each ISB residue is displayed in the horizontal bar below the secondary structure annotation taken from Panel A. These peptides were identified in a single experiment. When available, we present the data for all measurable charge states of the unique peptides within the experiment. (G) Consensus HXMS data from Panel F is mapped onto the three-helix bundle structure of the ISB, along with corresponding color key. Two views are shown, rotated by 180°.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fusion of WT-ISB droplets as visualized by time-lapse imaging in the absence of crowding agent. (B) Phase diagram of WT-ISB phase separation as a function of the concentration of NaCl and ISB in the absence of crowding agent. The presence (cyan) or absence (magenta) of WT-ISB droplets. The gray area indicates the phase boundary. Conditions on either side of the phase boundary were repeated three times. For the condition [ISB]=5 µM and [NaCl]=75 mM, circle is highlighted with asterisk because two replicates displayed droplet formation, but one condition did not.
 
 We designed an HXMS experiment to compare the polypeptide backbone dynamics of the ISB in the free and droplet states (Figure 1D). HXMS measures amide proton exchange, and for any generic protein, protection from HX is observed when secondary structures engage amide protons in hydrogen bonds (Englander, 2006). In our prior studies, we have utilized HXMS to readily identify contact points between domains of a multi-domain enzyme during its activation and inhibition (Dawicki-McKenna et al., 2015; Zandarashvili et al., 2020) as well as when components are added in a stepwise fashion during macromolecular complex assembly (Falk et al., 2015; Guo et al., 2017). We reasoned that ISB backbone dynamics would be restricted upon droplet formation, since the generally accepted broadscale basis of phase separation is through intermolecular interactions, albeit transient ones. In the case of ISB, we assumed that inter-heterotrimer interactions were the basis of its subsequent phase separation. HXMS is routinely performed over a time course, and we developed an approach to monitor droplet formation behavior of the samples alongside the HX reactions themselves (Figure 1D). Instead of letting the droplets settle on the slide, as in Figure 1B, we monitored them as they exist immediately upon preparing the slides for imaging to provide a rapid readout of droplet formation at each timepoint (Figure 1E). Robust droplet formation was observed in HX reaction conditions at all timepoints, including at the earliest one taken (10 s; Figure 1E). By the latest timepoint, 3000 s, there was some diminution in the number of droplets (Figure 1E), which may indicate the start of a transition of the droplets to a more solid state (i.e. gel-like). Thus, we concluded that timepoints longer than 3000 s would likely not be informative on how ISB backbone dynamics are impacted by initial droplet formation. This time course of HX proved to be sufficient to observe extensive exchange on all folded portions of the ISB, with the flexible regions lacking secondary structure exchanged much earlier (Figure 2—figure supplements 1 and 2). Slower HX was observed for all known and predicted secondary structural elements, except for the C-terminal helix of Borealin (Figure 2—figure supplement 1). Reciprocally, all predicted loop regions were very fast to exchange (i.e. essentially completely exchanged by 10 s), except for a small region around amino acids 140–150 of Borealin (Figure 1F and Figure 2—figure supplement 3A–C). This region was originally interpreted to be largely unstructured and contain high amounts of intrinsic disorder; however, our HXMS analysis suggests that some secondary structural elements exist in this region and are central to phase separation. Notably, this region overlaps with a deletion mutant (BorealinΔ139-160) that causes a loss of phase separation (Trivedi et al., 2019).
 
 To identify regions impacted by droplet formation, we first focused on an intermediate timepoint, 100 s, because visual inspection of HX patterns (Figure 2—figure supplement 1) indicated that there were clear changes at this point within the time course. At the 100 s timepoint, the most prominent differences between the soluble and droplet state were located within the three-helix bundle of the ISB, with long stretches in two subunits (INCENP and Borealin) and a small region at the N-terminal portion of the impacted α-helix in Survivin (Figure 1F). The only other region that corresponded to slower HX was within the aforementioned region of Borealin (amino acids 140–150), displaying rates consistent with the presence of secondary structure when the ISB is in its free state, which became further accentuated within the droplet state (Figure 1F). At the 300 s timepoint, a similar pattern is observed for the INCENP and Borealin proteins, with the notable addition of more extensive HX protection upon droplet formation within the three-helix bundle helix from Survivin and deprotection throughout its histone-recognizing BIR domain (Figure 2—figure supplement 3A, B, D). Taken together, the changes we observe in HX upon droplet formation indicates that discrete regions within structured portions of the ISB have slower backbone dynamics when in the droplet state.
 
-## Two of three bundled ISB α-helices protected from HX in droplets
+### Two of three bundled ISB α-helices protected from HX in droplets
 
 We focused on the three prominent regions of the interacting α-helices of INCENP and Borealin. HX protection within INCENP is strongest at the 100 s timepoint, especially within the C-terminal portion of the α-helix (Figure 2A–C). Examination of the entire time course shows that during intermediate levels of HX (i.e. between 100 and 1000 s), this region takes about three times as long to undergo the same amount of exchange when the ISB is in the droplet state relative to when it’s in the free protein state (Figure 2B and C and Figure 2—figure supplement 1). Upon droplet formation, HX protection within Borealin is primarily located in the interacting α-helix and is less pronounced at any given peptide when compared to INCENP peptides (Figure 2E). Nonetheless, similar to INCENP peptides, it still takes about twice as long to achieve the same level of deuteration for this region of Borealin in the droplet state as compared to the free state (Figure 2F and G and Figure 2—figure supplement 1). In comparison, other regions exist within the ISB complex where multiple partially overlapping peptides show no measurable HX differences between droplet and free protein states (Figure 2D). This verifies that there are no properties of droplets, such as vastly different molar concentrations of H2O (or D2O), that impact the general chemical exchange rate between all parts of the ISB. Rather, we conclude the changes observed within the ISB complex, such as those displayed in the two long interacting α-helices of INCENP and Borealin, are due to interactions formed between ISB complexes within the droplet state relative to those in the free state.
 
-## Phase separation involves an acidic surface created by INCENP
+![Figure 2.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig2-v2.jpg)
+
+**Figure 2.:** (A) Percent difference in HX upon phase separation at 100 s in the indicated region of INCENP. (B) Raw MS data of a representative peptide from indicated region of INCENP. Centroid values are indicated with an arrowhead. Red and blue dotted lines serve as guides for visualizing differences. The red line lies on mono-isotopic peak whereas the blue line lies on the centroid value for the largest timepoint (3000 s) within the free protein sample. (C) Hydrogen/deuterium exchange mass spectrometry (HXMS) of representative peptide from Panel B. The measured maximum number of exchangeable deuterons (maxD) when corrected with the average back exchange level (Figure 2—figure supplement 2B) is indicated. Data are represented as mean ± s.e.m.; note: the error is too small to visualize outside of readable data points except in one instance. Statistical analysis was performed using multiple unpaired t-tests. ****p<0.0001; ***0.0001<p<0.001; **0.001<p<0.01. (D) HXMS of a peptide from the indicated region within Survivin and displayed, as described in Panel C. This peptide shows the representative behavior of regions with the ISB that do not undergo changes in HX upon phase separation. Data are represented as mean ± s.e.m.; note: the error is too small to visualize outside of readable data points. (E) Percent difference in HX upon phase separation at 100 s in the indicated region of Borealin. (F) Raw MS data of a representative peptide from indicated region of Borealin. Centroid values are indicated with an arrowhead. Red and blue dotted lines serve as guides for visualizing differences, as explained in Panel B. (G) HXMS of representative peptide from Panel F and displayed as described in Panel C. Note: the error is too small to visualize outside of readable data points except in one instance.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Hydrogen/deuterium exchange mass spectrometry (HXMS) data for free ISB protein and droplet ISB protein. Each horizontal bar represents an individual peptide, and the five stripes within each bar are colored according to the percentage deuteration at each of the five timepoints (10, 100, 300, 1000, 3000 s).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Extent of peptide deuteration across INCENP, Borealin, and Survivin sequence within a representative FD HXMS control samples. (B) Cumulative distribution curve of a representative FD sample, showing the extent of deuteration of all peptides compared to the theoretical maximum amount of deuteration of each peptide. The median deuteration was ~82% for the FD sample, therefore the back exchange after quench step was only ~18%, which is well within an optimal range.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Percent difference in HX is calculated for each peptide (represented by horizontal bars) at the 300 s timepoint and plotted using the corresponding color key. The consensus behavior at each ISB residue is displayed in the horizontal bar below the secondary structure annotation taken from Figure 1, Panel A. These peptides were identified in a single experiment. When available, we present the data for all measurable charge states of the unique peptides within the experiment. (B) Consensus HXMS data from (A) is mapped onto the three-helix bundle structure of the ISB. Two views are shown, rotated by 180°. (C) HXMS of representative peptide from indicated region of Borealin. Data are represented as mean ± s.e.m.; note: the error is too small to visualize outside of readable data points. Statistical analysis was performed using multiple unpaired t-tests. ****p<0.0001; ***0.0001<p<0.001; **0.001<p<0.01. (D) HXMS of representative peptide from indicated region of Survivin and displayed as described in Panel C. Data are represented as mean ± s.e.m.; note: the error is too small to visualize outside of readable data points except in two instances. Statistical analysis was performed using multiple unpaired t-tests. **0.001<p<0.01; * 0.01<p<0.05. (E) HXMS of representative peptide from a region within Borealin and displayed as described in Panel C. This peptide shows the representative behavior of regions with the ISB that do not undergo changes in HX upon phase separation. Data are represented as mean ± s.e.m.; note: the error is too small to visualize outside of readable data points except in one instance. The apparent overcorrection, deuteration above the maxD level, is likely due to retained deuterium at position 2 due to the slowing effect of the Ile side chain (Bai et al., 1993).
+
+### Phase separation involves an acidic surface created by INCENP
 
 We set to generate mutants to test the hypothesis that liquid-liquid demixing requires an interaction with the C-terminal portion of the long α-helix of INCENP within the three-helix bundle because this was the region with the greatest difference of HX protection between the droplet and free states (Figure 2A). We anticipated an electrostatic component to ISB phase separation since droplet formation is restricted at higher ionic strength (Figure 1—figure supplement 1). A conspicuous stretch of glutamic acid residues (E35, E36, E39, E40, and E42; Figure 3A) overlaps with a region of surface acidic charge in a single ISB heterotrimer (Jeyaprakash et al., 2007). We found that mutation of all five glutamic acid residues to alanine (IMut1SB; Figure 3B) to remove the acidic charge within the region caused a visible reduction in large droplets relative to (ISB)WT (Figure 3C), although it was difficult to measure a difference using a standard turbidity (A330) measurement (Figure 3D). Mutation of the five glutamic acid residues to arginine (IMut2SB; Figure 3B) to reverse the charge yielded a predictably more pronounced effect, observed in both the microscope-based and turbidity assessments (Figure 3C and D). We conclude that some or all the five INCENP glutamic acid residues are involved in ISB phase separation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig3-v2.jpg)
 
-**Figure 3.:** (A) Location of indicated acidic residues (E35/36/39/40/42) within INCENP at the surface of the coiled-coiled structure. Side chains are colored in red to indicate acidic charge. (B) Summary of a first round of mutations made to acidic residues within INCENP. Lolli-pop sticks represent each of the five residues in question. For (ISB)WT, red color indicates acidic charge. For IMut1SB, green color indicates neutral charge. For IMut2SB, blue color represents basic charge. (C) DIC micrographs of the ISB droplets for IMut1SB and IMut2SB. The micrograph for (ISB)WT is from the same sample used in Figure 1B. Scale bar = 10 µm. (D) Turbidity calculations of IMut1SB and IMut2SB measured as absorbance at 330 nm; n=6 for (ISB)WT, IMut1SB, and IMut2SB. Statistical analysis was performed using a Brown-Forsythe and Welch ANOVA test. **0.001<p<0.01.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Location of indicated acidic residues (E35/36/39/40/42) within INCENP at the surface of the coiled-coiled structure. Side chains are colored in red to indicate acidic charge. (B) Summary of a first round of mutations made to acidic residues within INCENP. Lolli-pop sticks represent each of the five residues in question. For (ISB)WT, red color indicates acidic charge. For IMut1SB, green color indicates neutral charge. For IMut2SB, blue color represents basic charge. (C) DIC micrographs of the ISB droplets for IMut1SB and IMut2SB. The micrograph for (ISB)WT is from the same sample used in Figure 1B. Scale bar = 10 µm. (D) Turbidity calculations of IMut1SB and IMut2SB measured as absorbance at 330 nm; n=6 for (ISB)WT, IMut1SB, and IMut2SB. Statistical analysis was performed using a Brown-Forsythe and Welch ANOVA test. **0.001<p<0.01.
 
-## Crystal packing-guided mutagenesis to disrupt phase separation
+### Crystal packing-guided mutagenesis to disrupt phase separation
 
 Liquid-liquid phase separation has been long studied as involving on- or off-pathway nucleation of a crystal lattice, occurring in different parts of the same phase diagram (Xu et al., 2021). Therefore, we assessed the crystal packing of ISB heterotrimers, and found that INCENP and Borealin from separate ISB heterotrimers are in close contact (PDB#2QFA) (Jeyaprakash et al., 2007). Indeed, there were interactions between the HX protected regions of INCENP and Borealin (Figure 2A and E), including several side chains that we hypothesized to be involved in complementary electrostatic interactions (Figure 4A). Specifically, we noted three acidic INCENP residues mutated in IMut2SB were within salt-bridge distance (i.e. ~2–4 Å) from a corresponding positive residue on Borealin (Figure 3). We used this as the basis for a second round of mutagenesis (Figure 4B–D). Mutation of two of the acidic INCENP residues (E36 and E40; IMut3SB) led to a similar level of reduction in phase separation (Figure 4C and D) as when all five of the original glutamic acidic residues were mutated (Figure 3). The addition of either one (E36, E40, and E42; IMut4SB) or two (D27, E36, E40, and E42; IMut5SB) mutated acidic INCENP residues displayed either similar or increased levels of reduction, respectively (Figure 4C and D). These findings, along with our HX measurements (Figure 1), raised the possibility of shared interaction sites between liquid-liquid demixed and crystal forms of the ISB.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig4-v2.jpg)
+
+**Figure 4.:** (A) Location of acidic and basic residues within crystal packing of ISB between INCENP1 and Borealin2/Borealin3. Side chains are colored in red to indicate acidic charge and blue to indicate basic charge. (B) Summary of a second round of mutations made to acidic residues within INCENP. Lolli-pop sticks represent each of the indicated residues in question. (C) DIC micrographs of the ISB droplets for IMut3SB, IMut4SB, and IMut5SB. Scale bar = 10 µm. (D) Turbidity calculations of IMut3SB, IMut4SB, and IMut5SB measured as absorbance at 330 nm; n=6 for (ISB)WT, IMut4SB, and IMut5SB. n=3 for IMut3SB. Statistical analysis was performed using a Brown-Forsythe and Welch ANOVA test. ****p<0.0001; **0.001<p<0.01. (E) Summary of a third round of mutations made to acidic residues within INCENP. Lolli-pop sticks represent each of the indicated residues in question. (F) DIC micrographs of the ISB droplets for IMut6SB and IMut7SB. Scale bar = 10 µm. (G) Turbidity calculations of IMut6SB and IMut7SB measured as absorbance at 330 nm; n=6 for (ISB)WT. n=3 for IMut6SB and IMut7SB. Statistical analysis was performed using a Brown-Forsythe and Welch ANOVA test. ****p<0.0001; *0.01<p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Highlighting crystal structure between INCENP1 and Borealin2. Side chains E36 and E40 of INCENP1 have the potential to form a salt-bridge with K63 of Borealin2. Potential polar contacts and distances between side chains are labeled.
+
 As a first test of this notion, we designed a third round of mutagenesis to probe any potential interactions of the acidic INCENP residues facing two different ISB trimers in the crystal lattice: INCENPD27,E42 contact the Borealin subunit of one heterotrimer, while INCENPE36,E40 contact another (Figure 4A). We predicted that the contacts responsible for phase separation closely correspond to the highlighted crystal contacts. If so, then those within typical bond distances (i.e. ~3–4 Å) would have a larger impact than those with distances in the crystal lattice that are too large to generate a salt-bridge. Along with mutation of INCENPD27,E36, IMut6SB and IMut7SB vary by either including a mutation of INCENPE42 (within salt-bridge distance [2.9 Å] of BorealinK37; IMut6SB; Figure 4—figure supplement 1) or a mutation of INCENPE40 (at too large a distance to bond with BorealinK63; IMut7SB; Figure 4—figure supplement 1) (Figure 4E). We found that IMut6SB, wherein all three mutations impact salt-bridges, profoundly reduces phase separation (Figure 4F and G). On the other hand, IMut7SB only has a minor effect on phase separation (Figure 4F and G). With the prior finding with IMut3SB, we deduce that INCENPE36, but not INCENPE40, contributes to phase separation. Combining the information from the three rounds of mutagenesis, we conclude that residues D27, E36, and E42 of INCENP contribute additively to the disruption of phase separation we observe within IMut6SB. Together, these findings provided an early indication that precise salt-bridges between ISB heterotrimers are key to its phase separation.
 
-## Breaking and reforming salt-bridges to modulate ISB phase separation
+### Breaking and reforming salt-bridges to modulate ISB phase separation
 
 We set to test our prediction that multiple salt-bridges between ISB heterotrimers drive its phase separation by breaking the salt-bridges from the opposite subunit (Borealin) and by reconstituting the salt-bridges through pairing each charge switch mutation with each other. A mutation to the Borealin subunit that contains the three relevant lysine to glutamic acid substitutions was designed based on the structural model and combined with either wild-type INCENP (ISBMut) or the Mut6 version of INCENP (IMut6SBMut) (Figure 5A and B). Consistent with our prediction, ISBMut was severely crippled in its ability to undergo phase separation (Figure 5C–E). Strikingly, the compensatory mutations in INCENP that reconstitute the salt-bridges between ISB hetrotetramers completely restore droplet formation in IMut6SBMut, detectable by microscopy and spectroscopy (Figure 5C and D), and almost entirely restores wild-type behavior, as measured by the ISB concentration required to saturate droplet formation (Figure 5E and Figure 5—figure supplements 1 and 2). We emphasize that the key mutants that break (including Imut6SB and ISBmut) and re-form (Imut6SBmut) the salt-bridge-mediated droplet formation underwent three different measurements (turbidity [Figures 4 and 5], microscope-based detection [Figures 4 and 5], and sedimentation-based determination of saturation concentration [Figure 5 and Figure 5—figure supplement 1]). These different types of measurements vary by several minutes due to practical considerations relative to the time from the initial reaction assembly. Thus, our conclusions about the phase separation of mutant versions of ISB heterotrimers are based on independent experiments that span the time window covered in our initial HXMS analysis of ISBWT (Figures 1 and 2). The potent rescue when the two surfaces are simultaneously mutated provides clear support for the conclusion that salt-bridging between these parts of the structured portions of ISB drive phase separation.
 
-## Mutation of Borealin to disrupt salt-bridges reduces phase separation in cells
+![Figure 5.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig5-v2.jpg)
+
+**Figure 5.:** (A) Location of key salt-bridges within crystal packing of ISB between INCENP1 and Borealin2/Borealin3. Side chains are colored in red to indicate acidic charge and blue to indicate basic charge. Distances between side chains are indicated. (B) Summary of a fourth round of mutations made to acidic residues within INCENP and basic residues within Borealin. Lolli-pop sticks represent each of the indicated residues in question. (C) DIC micrographs of the ISB droplets for ISBMut and IMut6SBMut. Scale bar = 10 µm. (D) Turbidity calculations of ISBMut and IMut6SBMut measured as absorbance at 330 nm; n=6 for (ISB)WT. n=3 for ISBMut and IMut6SBMut. Statistical analysis was performed using a Brown-Forsythe and Welch ANOVA test. ****p<0.0001. (E) Saturation concentration of (ISB)WT, IMut6SB, IMut7SB, ISBMut, and IMut6SBMut in buffer containing 75 mM NaCl measured using sedimentation. n=5 for (ISB)WT, IMut6SB, IMut7SB, ISBMut, and IMut6SBMut. Statistical analysis was performed using a one-way ANOVA test with Dunnett’s multiple comparisons test. ****p<0.0001; *0.01<p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** SDS-PAGE gels measuring saturation concentration of (ISB)WT, IMut6SB, IMut7SB, ISBMut, and IMut6SBMut in buffer containing 75 mM NaCl measured using spin-down method. N=5 for all samples. Bands were quantified via GelQuantNET. T=protein after thawing, D=phase-separated sample at 25 µM protein and 75 mM NaCl, B=Borealin, S=Survivin, I=INCENP.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** SDS-PAGE gel of WT and mutant protein complexes at 1.5 mg/mL.
+
+### Mutation of Borealin to disrupt salt-bridges reduces phase separation in cells
 
 To test whether or not the inter-CPC salt-bridges we identified can impact phase separation in cells, we employed the Cry2 optoDroplet system (Shin et al., 2017), comparing BorealinWT to BorealinMut (i.e. the same mutations present in ISBMut in Figure 5). In this system, Borealin fused to Cry2, a light-inducible dimerizing protein, and mCherry (for fluorescent detection) readily forms droplets after exposing cells to blue light (Trivedi et al., 2019). Importantly, these droplets are light dependent, form in the nucleus, and recruit endogenous Aurora B (Figure 6A and Figure 6—figure supplements 1 and 2). Since Aurora B and Borealin are indirectly linked through the INCENP subunit, these findings suggest that the entire CPC is engaged in the nuclear droplets. Furthermore, the Borealin-mCherry-Cry2 fusion protein is recruited to inner centromeres in mitosis (Figure 6—figure supplement 2B). Using this system, we find that while BorealinMut can form droplets, the intensity of the mCherry signal in the droplets formed in the nucleus by BorealinMut is less than that observed with BorealinWT (Figure 6B and C). These measurements indicate that mutating the salt-bridging residues we identified in Borealin by HXMS complimentarily reduces phase separation in the cellular environment.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig6-v2.jpg)
+
+**Figure 6.:** (A) Endogenous Aurora B is recruited to nuclear Borealin foci upon exposure to 488 nm light. Images within the nucleus are shown (see Figure 6—figure supplement 1 for images of the entire cell for each of these enlarged views). The positions of the line scans (below) are indicated in the images by a white line. Scale bar = 5 μm. (B) Fluorescent detection of BorealinWT or BorealinMut, each fused to mCherry-Cry2 in an optoDroplet assay. Images were collected before and after (at the indicated timepoints) exposure to 488 nm light to induce Cry2 dimerization (note that the images were acquired with the same imaging conditions and scaled in the same manner for display). Scale bar = 10 μm. (C) Quantification of the intensity of foci. n=2 experiments, and 18 (WT) and 16 (Mut) cells. The results of an unpaired, non-parametric t-test, Mann-Whitney test is shown, wherein **** equates to a p-value <0.0001. The lines represent the median and the interquartile range.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Cells expressing the indicated construct with and without exposure to white light were fixed and assessed for Aurora B and mCherry localization. Note that to expose the entire coverslip, the light in this experiment is performed on a light box for 10 min, which explains why the difference in intensity between wild-type and mutant versions is not as clear as in Figure 6 where a microscope was used to excite Cry2 in a controlled manner. Scale bar = 5 μm. (B) The intensities of BorealinWT-mCherry-Cry2 and BorealinMut-mCherry-Cry2-expressing cells were similar before exposure to light. Intensity measurements of mCherry channel in the nucleus of all cells measured in Figure 6B before light exposure as a control to show that the differences in intensity of the resulting foci were not a function of the amount of starting Borealin expression. Note the images were acquired with the same imaging conditions. Nuclear mCherry intensity per cell was quantified using ImageJ software, and plotted as a scatter plot. Nucleus: n=2 experiments, m=18 (WT) and m=16 (Mut) cells. The statistical significance was calculated using unpaired, non-parametric t-test, Mann-Whitney test, p-value 0.9192, ns. The lines represent the median and the interquartile range.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/92709/elife-92709-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Borealin-mCherry-Cry2-expressing cells were exposed to white light analyzed as in Figure 6A and Figure 6—figure supplement 1. Scale bar = 5 μm. (B) Mitotic cells expressing the indicated constructs were fixed without exposure to white light and assessed for Aurora B and mCherry localization. Co-localization at the inner centromere was observed with Borealin-mCherry-Cry2 but not with mCherry-Cry2. Scale bar = 5 μm.
 
 ## Discussion
 
@@ -85,23 +141,306 @@ It has long been appreciated that Aurora B, the catalytic subunit of the CPC, is
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WTISB_F</td>
+      <td>This Paper</td>
+      <td>PCR primer</td>
+      <td>3’ - TGAGATCCGAATTCGAGCTCTAATTTTG - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WTISB_R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>3’ - GCTGTGATGATGATGATGATGGCTGCTG - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ISBMut6_F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>3’ - CTTGAGCGTATCCAAGAGGAGGCCCGACGCATGTTCACC - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ISBMut6_R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>3’ - GGTGAACATGCGTCGGGCCTCCTCTTGGATACGCTCAAG - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ISBMut7_F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>3’ - CGTATCCAAGAGCGAGCCGAGCGCATGTTCACCAGAGAA - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ISBMut7_R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>3’ - TTCTCTGGTGAACATGCGCTCGGCTCGCTCTTGGATACG - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WTISB_F_2</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>3’ - CCGTCTCGCCCAAATCTGCA - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>WTISB_R_2</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>3’ - GCTGTGATGATGATGATGATGGCTGCTG - 5’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IMut1SB_G_Block</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IMut2SB_G_Block</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IMut3SB_G_Block</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IMut4SB_G_Block</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IMut5SB_G _Block</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ISBMut_G_Block</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IMut6SBMut_G_Block</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>See Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta 2 (DE3) plysS</td>
+      <td>Novagen</td>
+      <td>71403</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>T-Rex HeLa Cell Line</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R71407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a_ISB</td>
+      <td>Trivedi et al., 2019</td>
+      <td></td>
+      <td>6xHis-INCENP1-58, FL Survivin and FL Borealin</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEB Hifi DNA Assembly Kit</td>
+      <td>New England Biolabs</td>
+      <td>E5520S</td>
+      <td>For molecular cloning</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HisTrap HP Column</td>
+      <td>Cytiva/GE Life Sciences</td>
+      <td>17524801</td>
+      <td>For protein purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hi-Load 16/60 Superdex-200 pg</td>
+      <td>Cytiva/GE Life Sciences</td>
+      <td>28989335</td>
+      <td>For protein purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>C18 HPLC Column, 0.3×75 mm2</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>For HXMS experimentation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TARGA C8 5 µM Piccolo HPLC column</td>
+      <td>Higgins Analytical</td>
+      <td></td>
+      <td>For HXMS experimentation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica DMI6000 B</td>
+      <td>Leica Microsystems</td>
+      <td></td>
+      <td>For differential interference contrast microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Discovery M120SE Sorvall Ultracentrifuge</td>
+      <td>New Life Scientific</td>
+      <td></td>
+      <td>For sedimentation and saturation concentration assays</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LTQ Orbitrap XL Mass Spectrometer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>For HXMS data acquisition</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Exactive Plus EMR Orbitrap Mass Spectrometer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>For HXMS data acquisition</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NanoDrop 2000 UV-Vis Spectrophotometer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ND2000CLAPTOP</td>
+      <td>For turbidity measurements</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zeiss Observer-Z1 Microscope</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td>For optoDroplet assay</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>XCalibur</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>OPTON-30965</td>
+      <td>For HXMS data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ExMS2</td>
+      <td>Kan et al., 2019</td>
+      <td></td>
+      <td>For HXMS data processing</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td>For HXMS data processing</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>RStudio</td>
+      <td>Posit</td>
+      <td></td>
+      <td>For HXMS data processing</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Bioworks 3.3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>For HXMS data processing</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>HDExaminer</td>
+      <td>Sierra Analytics</td>
+      <td></td>
+      <td>For HXMS data processing</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GelQuant Express Analysis Software</td>
+      <td>Fisher Scientific</td>
+      <td></td>
+      <td>For densitometry measurements</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji (ImageJ)</td>
+      <td>National Institutes of Health (NIH)</td>
+      <td></td>
+      <td>To analyze images</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>For data processing</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
 
 Rosetta 2 (DE3) pLysS cells were transformed with a triscistronic pET28a vector containing sequences for 6xHis-INCENP1-58, full-length survivin, and full-length Borealin. Cells were then grown in the presence of 30 µg/ml kanamycin to an optical density between 0.6 and 0.8 and protein expression was induced with 1 mM isopropylthiogalactoside for 16–18 hr at 18°C. The medium was also supplemented with 60 mg/l ZnCl2 and 0.2% glucose. Cells were then pelleted and lysed in buffer containing 50 mM Tris pH 7.5, 500 mM NaCl, 5% glycerol, 5 mM imidazole, 5 mM 2-mercaptoethanol (BME) and protease inhibitor cocktail (Roche) using a combination of Dounce homogenization and sonication. The lysate was then cleared by centrifugation and purified over HisTrap HP column (Cytiva) and eluted using 50 mM Tris pH 7.5, 500 mM NaCl, 5% glycerol, 500 mM imidazole, 5 mM BME at 4°C. The elutate was further gel-filtered over a Hi-Load 16/60 Superdex-200 pg column (GE Life Sciences, Cytiva) in buffer containing 50 mM Tris pH 7.5, 500 mM NaCl, 5% glycerol, and 5 mM BME. The desired fractions were collected and concentrated using Amicon Ultra-4 Centrifugal Filter Units with 3 kDa cut-off. All mutants within this study are purified similarly (Figure 5—figure supplement 2).
 
-## Plasmid construction and mutagenesis
+### Plasmid construction and mutagenesis
 
 The IMut1SB, IMut2SB, IMut3SB, IMut4SB, and IMut5SB constructs were created by a two-fragment assembly system (NEB), replacing WT INCENP1-58 sequence with the corresponding gBlock Gene Fragments (IDT). WT template DNA was amplified via PCR (Forward Primer: WTISB_F, Reverse Primer: WTISB_R) before assembly. The IMut6SB construct was created by the Quikchange protocol (Stratagene) (Forward Primer: ISBMut6_F, Reverse Primer: ISBMut6_R), using the IMut5SB construct as the template DNA. The IMut7SB construct was created by Quikchange protocol (Stratagene) (Forward Primer: ISBMut7_F, Reverse Primer: ISBMut7_R), using the IMut5SB construct as the template DNA. The ISBMut and IMut6SBMut constructs were created by a two-fragment assembly system (NEB), replacing WT INCENP1-58 and WT Borealin sequence with the corresponding gBlock Gene Fragment (IDT). WT template DNA was amplified via PCR (Forward Primer: WTISB_F_2, Reverse Primer: WTISB_R_2) before assembly. Sequences were verified by automated cycle sequencing (University of Pennsylvania Genomics Analysis Core).
 
-## Phase separation assay
+### Phase separation assay
 
 Phase separation was induced by diluting the indicated amount of ISB in a low salt buffer (50 mM Tris pH 7.5 and 5 mM BME) to achieve the indicated final concentration of protein and NaCl (25 µM ISB, 75 mM NaCl). Protein was always added last to each reaction. Phase separation was observed by adding a small volume of the reaction onto a coverslip and then imaging the ISB droplet by differential interference contrast (DIC) microscopy. All movies and images were captured within 5 min of the reaction setup. For time-lapse imaging of ISB droplet fusion, ISB droplets were formed in the indicated conditions and immediately imaged via DIC every second. Imaging of the ISB droplet during HXMS experimentation was captured as close to the indicated timepoint as possible.
 
-## Sedimentation assay
+### Sedimentation assay
 
 Following liquid-liquid phase separation, each reaction was allowed to stand for 100 s and then centrifuged at 16,100 × g for 10 min to separate the soluble phase from the droplet phase. All of the top phase was removed and placed in a separate tube. The dense phase was resuspended in an equivalent volume of purification buffer (50 mM Tris pH 7.5, 500 mM NaCl, 5% glycerol, 5 mM BME). Then, 10 µL from each top phase and dense phase was removed and analyzed using SDS-PAGE.
 
-## HXMS measurement and analysis
+### HXMS measurement and analysis
 
 Deuterium on-exchange of soluble ISB protein was performed at room temperature (25°C) by diluting purified ISB with deuterium on-exchange buffer (50 mM Tris pD 7.5, 500 mM NaCl) to a final protein concentration of 25 µM ISB, 500 mM NaCl, and a final D2O content of 75%. A 20 µL aliquot was removed at each timepoint (10, 100, 300, 1000, 3000 s) and the reaction was quenched with 30 µL ice-cold quench buffer (1.67 M guanidine hydrochloride, 8% glycerol, and 0.8% formic acid, for a final pH of 2.4–2.6) and rapidly frozen in liquid nitrogen. The samples were stored at –80°C until analysis by MS. Deuterium on-exchange of phase-separated ISB protein was performed at a similar temperature by diluting purified ISB with a mixture of two on-exchange buffers (Buffer 1: 50 mM Tris pD 7.5, 0 mM NaCl; Buffer 2: 50 mM Tris pD 7.5, 500 mM NaCl) to a final protein concentration of 25 µM ISB, 75 mM NaCl, and a final D2O content of 75%. pD values are direct pH meter readings. Samples were prepared and frozen in a similar manner to soluble ISB protein. All samples were produced in quadruplicate so that there would be a spare in addition to a triplicate set to measure, in case of a technical issue in downstream steps. The supplementary table (see Supplementary file 1) summarizes the HXMS experiments.
 
@@ -109,22 +448,22 @@ HX samples were individually thawed at 0°C for 2.5 min, then injected (50 µL) 
 
 A MATLAB-based program, ExMS2, was used to prepare the pool of peptides based on SEQUEST output files. HDExaminer software was next used to process and analyze the HXMS data. HDExaminer identifies the peptide envelope centroid values for non-deuterated as well as deuterated peptides and uses the information to calculate the level of peptide deuteration for each peptide at each timepoint. Each individual deuterated peptide is corrected for loss of deuterium label during HXMS data collection by normalizing to the maximal deuteration level of that peptide, which we measure in a ‘full deuterated’ (FD) reference sample. The FD sample was prepared in 75% deuterium to mimic the exchange experiment, but under acidic denaturing conditions (0.88% formic acid), and incubated for over 24 hr to allow each amide proton position along the entire polypeptide to undergo full exchange. 20 µL of this reaction was quenched with 30 µL ice-cold FD quench buffer (1 M guanidine hydrochloride, 8% glycerol, and 0.74% formic acid, for a final pH of 2.4–2.6) and rapidly frozen in liquid nitrogen. HDExaminer performs such correction automatically when provided with the FD file. For each peptide, we compare the extent of deuteration as measured in both the on-exchange and FD samples to the maximal number of exchangeable deuterons (maxD) when corrected with an average back exchange level; the median extent of back exchange in our datasets is 18% (Figure 2—figure supplement 2).
 
-## HXMS plotting
+### HXMS plotting
 
 Peptide plotting was performed in MATLAB, RStudio, and Prism using deuteration levels for each peptide extracted from the HDExaminer outputs. Differences in deuteration levels between two samples were calculated for all peptides for which the identical peptide was found in both conditions, the ND and FD samples. For comparing two different HXMS datasets, we plot the percent difference of each peptide, which is calculated by subtracting the percent deuteration of one sample from that or another, and plotted according to the color legend in stepwise increments (as in Figure 1F and Figure 2—figure supplement 3A). We include in our figures peptides of identical sequence but different charge states. Although not unique peptides, they do add confidence to our peptide identification as their deuteration levels are in close agreement with each other. Only peptides of high quality and with clear spectra in both HX time courses and ‘FD’ conditions were included in the analysis. Consensus behavior at each residue was calculated as the average of the differences in HX protection of all peptides spanning that residue (as in Figure 1F and Figure 2—figure supplement 3A). For the plot of peptide data expressed as the number of deuterons (as in Figure 2C–D and G, and Figure 2—figure supplement 3C–E), the values are expressed as the mean of three independent measurements±s.d.
 
-## Turbidity assay
+### Turbidity assay
 
 Following liquid-liquid phase separation, WT and ISB mutant protein were incubated at room temperature for 100 s prior to UV-visible measurements. Control measurements included protein purification buffer, low salt buffer (50 mM Tris, 75 mM NaCl, 5% glycerol), and WT ISB protein at high salt (25 µM WT ISB, 500 mM NaCl). The optical intensity (turbidity) was measured using a NanoDrop 2000 UV-Vis spectrophotometer (Thermo Fisher Scientific) at 330 nm. The number of replicates is indicated in figure legends.
 
-## Measuring saturation concentration
+### Measuring saturation concentration
 
 Following liquid-liquid phase separation, indicated proteins were incubated at room temperature for 100 s and centrifuged at 16,100 × g for 10 min to separate the soluble phase from the droplet phase. Then, the entirety of the top phase was removed; the remaining sedimented pellet was resuspended in an equivalent volume of protein purification buffer. 5 µL of both top phase and sedimented pellet, along with a sample of protein after thawing and a sample of protein before sedimentation, were analyzed using SDS-PAGE (4–20% Tris-HCl gradient gel) to determine the saturation concentration. The serial dilution of wild-type ISB, ranging between 0 and 30 µM, was loaded onto a similar SDS-PAGE gel to create a standard curve (with a coefficient of determination R2=0.9), which was used to determine the saturation concentration of ISB. The SDS-PAGE gel was stained with Coomassie Blue and subjected to densitometry using GelQuant Express Analysis Software.
 
-## optoDroplet assay
+### optoDroplet assay
 
 The plasmid expressing BorealinWT-mCherry-Cry2 (Trivedi et al., 2019) and a derivative harboring the K→E substitutions at Borealin a.a. 26, 37, and 63 were transfected into HeLa TREx cells that were seeded in 35 mm glass-bottom dishes (Cellvis, D29-20-1.5P). HeLa T-Rex were acquired directly from the manufacturer (Thermo Fisher #R714087), were authenticated by ATCC using STR profiling, and were regularly assessed by the DNA stain uptake method for mycoplasma contamination (and found to be uncontaminated). Lipofectamine 3000 (L3000-008) was used for transfections. Twenty-four hours following transfection, the cells were imaged using a Zeiss Observer-Z1 microscope in the presence of 5% CO2 in a humidified chamber at 37°C. Cells with similar mCherry expression levels were selected for measurement (phase separation propensity of wild-type and mutant Borealin). To induce phase separation, the cells in the field were exposed to 488 nm light (10 cycles of 100 ms each, with an interval of 30 s between consecutive cycles). The single z-plane mCherry images were acquired immediately after exposure with 488 nm light for 1500 ms during each cycle. The mCherry intensities were measured 270 s after light exposure and quantified in Fiji (ImageJ) software and plotted using the GraphPad Prism software.
 
-## Immunofluorescence
+### Immunofluorescence
 
 HeLa TREx cells were seeded on coverslips in six-well culture plates. The following day, plasmids (pCDNA5 containing BorealinWT-mCherry-Cry2 or mCherry-Cry2) were transfected into HeLa TREx cells as in the optoDroplet assay (see above). After 6 hr, RO-3306 (9 μM) was added to medium to synchronize the cells in late G2-phase. Twenty-four hours following the transfection, the cells were either immediately fixed or exposed to white light on a transilluminator for 10 min to induce liquid-liquid phase separation and then fixed using 4% paraformaldehyde in PHEM buffer (25 mM HEPES, 60 mM PIPES, 10 MM EGTA, and 4 mM MgCl2, pH 6.9) with 0.5% Triton X-100 for 20 min at room temperature in the dark. Following fixation, the coverslips containing the fixed cells were washed three times with PBS. Subsequently, cells were incubated for 30 min at room temperature with blocking buffer (3% BSA, 0.1% Triton X-100 in PBS). Next, the cells were incubated with the following primary antibodies: anti-mCherry pAb (PA5-34974, Invitrogen) and mouse anti-AIM1 mAb (cat 611082, BD Transduction laboratories) in blocking buffer overnight at 4°C. Then, the excess primary antibodies were washed three times using blocking buffer and subsequently incubated with Alexa Fluor 488- and 568-conjugated secondary antibodies (Thermo Fisher) for 90 min. Finally, cells were washed four times with blocking buffer, and the last wash contained DAPI (0.5 μg/mL) in PBS. Cells were mounted with ProLong Gold Antifade and imaged on a Nikon Ti2-E Eclipse Confocal microscope.

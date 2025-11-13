@@ -64,11 +64,11 @@ COVID-19 has the potential to affect all three of these components through the d
 
 **Figure 1.:** This is not exhaustive but highlights the variability across the intersection and can be used to support the identification of research priorities. For more information, see the related dimension of change section in the text. ARO: antimicrobial-resistant organism; PPE: personal protective equipment.
 
-## Antimicrobial use changes
+### Antimicrobial use changes
 
 Fundamentally, changes in antimicrobial use will drive changes in AMR. In this section, we outline the direct impact of COVID-19 on antimicrobial use in those with COVID-19 and then knock-on effects of COVID-19 in terms of antimicrobial availability and financial hardship.
 
-## Antimicrobial use in those with COVID-19
+#### Antimicrobial use in those with COVID-19
 
 As many as 70% of patients with COVID-19 receive antimicrobials either in the outpatient or inpatient setting (ISARIC, 2020; Langford et al., 2021). This may favour the emergence of AMR.
 
@@ -86,7 +86,7 @@ If prolonged, changes in antimicrobial use in humans during the COVID-19 crisis 
 
 Presumptive antibiotic use is also happening more due in part to fractured health systems – this is covered in a later section where we focus on the impact of disrupted clinical care.
 
-## Antimicrobial availability
+#### Antimicrobial availability
 
 COVID-19 has affected the availability of antimicrobials by disrupting both supply chains and global manufacturing of antimicrobials, leading to knock-on changes in usage patterns.
 
@@ -96,7 +96,7 @@ Low- and middle-income country (LMIC) settings are particularly vulnerable to su
 
 More widely, an increased use of broad-spectrum antibiotics, or inappropriate antimicrobials as alternatives when the recommended or usual antimicrobial is unavailable, will need to be monitored and responded to. The potential consequences are more resistance emerging to reserved, second-line antibiotics (e.g. higher tiers of the AWaRe classification; WHO, 2019) or increased resistance to broad-spectrum antibiotics. In the case of TB, which requires prolonged multidrug therapy, one consequence of drug shortages will be short-term treatment interruptions potentially leading to increased risk of treatment failure and development of resistance (Adepoju, 2020). Thus the AMR picture is likely to be different in the future: resistance to some hard to access antimicrobials may decrease, while resistance to others may increase.
 
-## Financial hardship
+#### Financial hardship
 
 Fiscal and monetary measures introduced to manage different aspects of the pandemic may serve to either raise or lower the risk of AMR – depending on which measures are taken, for how long, and how strong the support on offer is.
 
@@ -108,13 +108,13 @@ The impact of COVID-19 and the policies intended to mitigate its spread are also
 
 The pandemic has also highlighted racial inequality; in particular, the Black, Asian, and minority ethnic (BAME) categorisation has been used in some countries (Hu, 2020) to show how these populations suffer from both a greater economic impact and worse health outcomes from COVID-19 (Public Health England, 2020a). This twofold risk is amplified by lower socioeconomic status (Ahmed et al., 2020), with, for example, challenges in physical distancing. Emerging evidence suggests that in the UK BAME populations also have higher rates of circulating AMR in the community (Lishman et al., 2016). The posited mechanisms of this association are frequent travel to areas with higher endemic AMR prevalence such as the Indian subcontinent, differences in awareness of appropriate antibiotic use, and even differences in diet, but research is ongoing in this burgeoning field (Lishman et al., 2016). These inequalities combine with a lack of access to appropriate health care due to the COVID-19 crisis to suggest we may see subpopulations with dual severe issues of COVID-19 and AMR (syndemics).
 
-## Infection prevention
+### Infection prevention
 
 Many of the interventions to prevent the spread of SARS-CoV-2 should also limit transmission of ARO. It has been postulated that countries with the greatest AMR burden are those in which spread of pathogens, rather than overuse of antimicrobials, is the dominant factor (Collignon et al., 2018). Hence, with increased infection prevention control (IPC) due to COVID-19, AMR prevalence may substantially decrease (Collignon and Beggs, 2020).
 
 For MDR-TB – the largest single disease component of the global AMR burden (The Review on Antimicrobial Resistance, 2016) – the majority of cases result from transmission events rather than acquisition of spontaneous resistance emerging during treatment (Kendall et al., 2015). However, as with many of the interactions outlined here, the picture is not so simple. For example, with increased physical distancing many opportunities for transmission may be removed, but transmission within a household may be amplified. Similarly, healthcare settings may see increases in healthcare-associated infections caused by ARO due to COVID-19 pressures, despite an initial decrease in elective procedures. Below we detail the potential interaction with COVID-19-related IPC measures for different settings of ARO spread.
 
-## Infection burden in healthcare settings
+#### Infection burden in healthcare settings
 
 Patients with severe COVID-19 may be hospitalised for prolonged periods of time (Rees et al., 2020), and hence are at high risk for acquiring nosocomial infections (Asensio et al., 1996; Oztoprak et al., 2006; Wolkewitz et al., 2008). Moreover, patients with COVID-19 may require multiple courses of broad-spectrum antibiotics, mechanical ventilation, other organ support, and/or other invasive devices. This increases exposure to, and risk of, infections with hospital-associated pathogens that are often highly resistant such as methicillin-resistant Staphylococcus aureus (MRSA), P. aeruginosa, Candida auris, and Acinetobacter baumannii (Chowdhary et al., 2020; Perez et al., 2020; Punjabi et al., 2020). Early anecdotal evidence from two acute care facilities in New York and Missouri reported three- to fourfold increases in central line-associated bloodstream infection rates, likely related to a shift towards a higher risk case-mix (McMullen et al., 2020). The hardships and resource strains due to COVID-19 have also affected antimicrobial stewardship activities (Hsu, 2020; De Waele et al., 2021; Ginsburg and Klugman, 2020; Lynch et al., 2020; Seaton, 2020). It is known that antimicrobial stewardship programmes in hospitals have the potential to significantly reduce incidence of infections with ARO (Baur et al., 2017), with the main aim being to minimise the risk of antibiotic misuse leading to AMR. Thus, COVID-19 may directly increase the number of infections with ARO, with the specific problematic ARO being setting dependent (Monnet and Harbarth, 2020).
 
@@ -122,13 +122,13 @@ Other factors may also contribute to an increased risk of nosocomial infection: 
 
 Alternatively, hospital-acquired AROs may have seen a break in transmission due to fewer patients in secondary care or changing patient profiles such as fewer elective surgical interventions. Enhanced infection prevention, PPE usage and control measures, as well as targeted hygiene, in response to the COVID-19 pandemic (Monnet and Harbarth, 2020; WHO, 2020i; WHO, 2020l), will help prevent infections in general and thus will contribute to limiting the spread of AMR both through the prevention of ARO spread and the reduction in antimicrobial prescribing for infections (Donà et al., 2020). Despite some concerns that enhanced biocide use could lead to cross-resistance development (Getahun et al., 2020), it is not unlikely that the COVID-19 response will prevent infections: early signs of nosocomial infection decline in English mandatory reporting data have been reported, but will have to be considered with care following a decrease in reporting (Public Health England, 2020b).
 
-## Increased hygiene in the community
+#### Increased hygiene in the community
 
 Inadequate hygiene or sanitation in home environments may favour the transmission of ARO (Maillard et al., 2020). Studies have shown that handwashing alone could prevent 30% of diarrhoeal episodes in LMICs (Ejemot-Nwadiaro et al., 2015). As a result, increased hand hygiene to prevent SARS-CoV-2 transmission could reduce diarrhoeal incidence and hence the high number of antibiotic courses given to children with diarrhoea in LMICs (up to 50% with diarrhoea receive antibiotics) (Fink et al., 2020). Transmission of zoonotic ARO is likely to be reduced by increased hygiene and food safety measures in settings like wet markets in China (Hernández et al., 2020; Nhung et al., 2018).
 
 To improve hygiene, there is likely to be an increased use of biocides across community and healthcare settings. It has been shown that low-level use of these agents can select for resistance both to the biocides and to antimicrobials (Caselli, 2017; Hardy et al., 2018; Hora et al., 2020; Kampf, 2018; Maillard et al., 2020; McCarlie et al., 2020; Wales and Davies, 2015), though the mechanisms and importance of this in driving the spread of AMR are unclear.
 
-## Physical distancing measures and travel restrictions
+#### Physical distancing measures and travel restrictions
 
 ‘Lockdowns’ and social or physical distancing measures, such as closing childcare centres, will reduce the transmission opportunities for many pathogens beyond SARS-CoV-2, including AROs. For example, numbers of invasive bacterial infections appear to have decreased in 2020 (Brueggemann et al., 2020), such as Invasive Group A Streptococcal Infections in the UK (Public Health England, 2020a). This could potentially be linked to reduced transmission, although reporting issues may also play a part and most of these data are from high-income European settings. Similarly, many settings have seen far reduced influenza infection levels (WHO, 2020n), likely to lead to linked decreases in inappropriate and appropriate antibiotic use. The impact of physical distancing, as well as increased awareness of infection prevention measures, on ARO, as well as ‘flu and other respiratory viruses', may be long-lasting.
 
@@ -138,11 +138,11 @@ Within a household setting, prolonged time at home due to COVID-19 interventions
 
 It is likely that restrictions in normal travel patterns due to COVID-19 will lead to decreased prevalence of carriage with ARO (Murray, 2020). For example, it is known that following travel to countries with high AMR prevalence, travellers can return colonised with bacteria carrying AMR genes and remain colonised for substantial periods of time (Arcilla et al., 2017; ÖstholmBalkhed et al., 2018). Such colonisation likely contributes to the observed international spread of bacteria carrying resistance genes such as those encoding NDM-1 and ‘pandemic’ CTX-M15 conferring resistance to broad-spectrum beta-lactam drugs (Cantón and Coque, 2006; Nordmann et al., 2011; Yair and Gophna, 2018). Change in travel intensity will thus result in reduced introduction and subsequent spread of ARO. However, due to the stochastic nature of such travel-related introductions, it remains unclear whether the success rate of such introductions has or will be affected.
 
-## Health system changes
+### Health system changes
 
 The COVID-19 pandemic has brought about many changes in both the organisational structures that deliver healthcare services and the way that patients seek care. These are likely to affect antimicrobial usage, altering the populations that are exposed, and hence future prevalence of AMR.
 
-## Clinical care disruptions
+#### Clinical care disruptions
 
 Approximately three-quarters of programmes and service deliveries for HIV, TB, and malaria have been disrupted as a result of the COVID-19 pandemic (Fund, 2020). Similar levels of impact are likely being seen across health systems affecting both infectious and non-communicable disease care such as sexual and reproductive health (Riley et al., 2020). This is motivated by a desire to minimise patient contact due to the potential risk of transmission in overburdened healthcare settings, as well as a repurposing of staff and diagnostic facilities for COVID-19 (Venkatesan, 2020).
 
@@ -156,7 +156,7 @@ The widely reported prescription of antibiotics to patients with COVID-19 clashe
 
 The ways in which antibiotics have come to stand in for inadequate healthcare and hygiene infrastructures are becoming better known (Denyer Willis and Chandler, 2019). The prescription or sale of antibiotics in many settings has come to define care when skills, laboratory capacity, financial resources, and time are lacking. Antibiotic use at home has also been documented in response to challenges of daily life (Whyte et al., 2002), with everyday use of, for example, metronidazole operating to curb the diarrhoeal effects of neglected sanitation (Nabirye et al., 2020), and frequent use of multiple antibiotics to counter the symptoms of sexually transmitted infections among sex workers (Nichter, 2001). In a crisis scenario such as the one created by COVID-19, when health services are more stretched and less accessible, the ‘quick fix’ of antibiotics can be expected to increase in both clinical decisions and at home, as has been demonstrated previously, for example, in conflict scenarios (ReAct, 2019). Provided that existing supply chains remain functional, increases in the sale of antibiotics as a workaround for multiple deficiencies in disrupted health systems can be expected.
 
-## Changes to health-seeking behaviour
+#### Changes to health-seeking behaviour
 
 In both hospital and community settings, COVID-19 disruptions have led to changes in health- and treatment-seeking behaviour, and potentially difficulties in physically accessing care.
 
@@ -166,7 +166,7 @@ In settings where access to health care is limited, changes in use or delays to
 
 To counter this reduction in health-seeking behaviour, some healthcare settings are turning to telemedicine (Croser, 2020; Hollander and Carr, 2020; Rawson et al., 2020b), but the extent to which the inability to see a patient in person leads to ‘just in case’ antibiotic prescribing, and further increases in AMR, is unknown (Armitage and Nellums, 2020). Telemedicine is also not an option in many settings in the world.
 
-## Vaccination
+#### Vaccination
 
 The fear of attending clinical settings, alongside the disruption to routine immunisation activities due to COVID-19-related burden, has led to reductions in overall vaccination coverage globally (Bramer et al., 2020; McDonald et al., 2020; Saxena et al., 2020; WHO, 2020j).
 
@@ -184,11 +184,11 @@ We have described a range of intersections between AMR and the COVID-19 pandemic
 
 The range and scale of changes described in this article hold the potential for a step change not only in the emergence of AMR but also in transmission and ultimately in the burden for different populations (Figure 1). In response, we outline below a series of research priorities that address the need to anticipate and ameliorate the effects of the COVID-19 pandemic for AMR. In considering research needs, we begin by drawing attention to the impacts of COVID-19 on AMR research activity and the potential for mitigation.
 
-## Impact of COVID-19 on AMR research
+### Impact of COVID-19 on AMR research
 
 AMR research is likely to have slowed substantially in the first half of 2020. Staff, equipment such as PCR machines for diagnostic laboratories (Cepheid, 2020; Department of Health and Social Care, 2020), and reagents have been redeployed to COVID-19 research. Physical distancing and logistical issues (shielding concerns, travel restrictions, or childcare) will severely limit the amount of laboratory science that can be performed. Indeed, the switch to working on COVID-19 has affected all disciplines involved in AMR research. The impact of this will not only be interruption to crucial research that would otherwise have been performed, such as clinical trials that have been put on hold (Cleary, 2020; Rusen, 2020; Thornton, 2020), but gaps in our monitoring of AMR: with the pandemic pressure of COVID-19, many routine microbiology samples that are used for global AMR monitoring such as Global Antimicrobial Resistance Surveillance System (GLASS; WHO, 2020c) will be missing for 2020. This rapid mobilisation of research power may leave AMR research unsupported without top-level prioritisation and support (Hsu, 2020).
 
-## Mitigation strategies for AMR research
+#### Mitigation strategies for AMR research
 
 To combat this, researchers should be supported to continue AMR work. We must also build on the push that the COVID-19 pandemic has given to making science even more open, with results shared across scientific groups and institutes (Gold, 2020). The increasing use of preprint servers and sharing of early results should be built into future research plans, alongside the further development of strategies, to ensure that conclusions based on these outputs are reviewed following critical assessment through the peer-review process. The impact preprints have had on the science of COVID-19 suggest that in the future greater caution should be exercised when the study results may directly affect treatment of patients (e.g. reports on drugs or vaccines) (Flanagin et al., 2020).
 
@@ -198,15 +198,15 @@ COVID-19 has also highlighted how rapid the development and assessment of treatm
 
 Going forward, there is a greater appreciation of the consequences of the spread of an untreatable ARO: SARS-CoV-2 highlights how difficult such a pathogen would be to control once it has emerged (Murray, 2020). In turn, this greater awareness is likely to lead to more support of research into anti-infectives (Engel, 2020; McKenna, 2020).
 
-## Research and health system priorities for AMR
+### Research and health system priorities for AMR
 
-## Diagnostics
+#### Diagnostics
 
 COVID-19 has highlighted both the possibilities and limitations of diagnostic technologies; while in many settings diagnostic logistics with built-in redundancies have been rapidly scaled up, globally we are struggling to diagnose SARS-CoV-2 infection reliably and rapidly.
 
 Moving forward, the AMR community should capitalise on the investment in diagnostic logistics and adapt their use for rapid detection of both the causative agent of infection and any associated drug resistance, especially in LMICs. For example, across Ghana, capacity building (both laboratory and personnel) is needed to tackle both COVID-19 surveillance and guide antimicrobial prescribing (Egyir et al., 2020). Similarly, the diagnostic uncertainties faced in COVID-19 are common concerns for bloodstream infections, suspected pneumonia, and other areas where healthcare workers are required to differentiate between bacterial and viral infections. The AMR community should support the current momentum to develop and make widely available a cheap, reliable, and rapid point-of-care test (such as rt-LAMP; Thompson and Lei, 2020) to detect viral infections such as the ACT-Accelerator Diagnostics Partnership. Differentiating bacterial from viral infection and rapidly determining resistance carriage would not only reduce unnecessary antibiotic prescribing and hence AMR emergence (Getahun et al., 2020; Patel et al., 2020), but also reduce onward transmission of ARO. Importantly, research should be into not only the technology but into the implementation of diagnostics, and appropriate diagnostic stewardship, since lessons learned from the COVID-19 diagnostic scale-up have shown that more diagnostics are not always the solution they are hoped to provide (Patterson, 2020).
 
-## Monitoring
+#### Monitoring
 
 COVID-19 has once again highlighted that data collection for infectious diseases needs to be strengthened, open access, and active. This is particularly important for AMR which often relies on passive surveillance: WHO’s GLASS is moving to active monitoring but currently takes convenience samples of those isolates that have been sent for phenotypic resistance testing. This means that they are biased towards sampling individuals with complex, persisting infections that are more likely to be caused by resistant pathogens. Global AMR monitoring is further hampered by large gaps: notably low-income regions such as sub-Saharan Africa lack national AMR surveillance capacity and quality assurance of laboratory procedures (Seale et al., 2017; WHO, 2018).
 
@@ -218,7 +218,7 @@ The heterogeneity in COVID-19 outbreaks at the sub-national level has furthermor
 
 The many interactions we have described here will have interlinking effects but will also act on different timescales. Short-term shortages of certain antimicrobials will only have an impact on levels of resistance to that antimicrobial if resistant strains are somehow less ‘fit’ than their susceptible counterparts (Björkman and Andersson, 2000). A reduction in elective procedures may prevent transmission of hospital-associated ARO leading to potential elimination from a setting or may only reduce levels in the short term. Changes in antibiotic use at varying timescales across settings could potentially allow for the unpicking of the relative contributions of settings to overall AMR prevalence (e.g. community vs. hospital settings; Knight et al., 2018b). The impact in high-income settings of the opposing effects of prolonged reduced community transmission versus high but short antibiotic use in a small subset of populations (e.g. hospitalised COVID-19 patients) suggests optimism for future AMR emergence against a background of potentially higher morbidity or mortality due to cancelled elective procedures. However, the longer-term undermining of health structures, for example, could lead to increased drug pressure and transmission of AMR. Detailed monitoring and analysis of such dynamics will provide not only information on treatment options, but also insight into the dynamics of resistance evolution.
 
-## Antimicrobial usage
+#### Antimicrobial usage
 
 Much of the high antimicrobial use in patients with COVID-19 is unavoidable (as discussed above). Research is now needed into better understanding risk factors and prevalence of co-infection in patients with COVID-19 to support a reduction in any avoidable antimicrobial prescribing. Equally, with the collection of better, more granular data, we can improve empiric antimicrobial stewardship guidance based on local ARO prevalence. This will lead both to reductions in AMR emergence but also improved patient outcomes.
 
@@ -228,13 +228,13 @@ As a community, we need to ensure that the potential individual benefits of anti
 
 Research is also needed to clarify the role of biocides in selection of AMR so that they can be used appropriately in both healthcare and community settings (Getahun et al., 2020; Maillard et al., 2020).
 
-## Health system strengthening
+#### Health system strengthening
 
 COVID-19 has highlighted many weaknesses in our health systems. The WHO has called for a broader pandemic response that 'ensures the continuity of essential health services and regular supply of quality assured and affordable antimicrobials including antiretroviral and TB drugs, and vaccines’ (Getahun et al., 2020). Health systems research into specific regulatory and contracting mechanisms to prevent stockouts and supply chain disruptions of generic and non-generic drugs, as well as vaccines, is urgently needed. Similarly, the network logistics under development to deliver COVID-19 vaccines need to be designed to bolster other vaccine campaigns in order to protect vaccine effects on AMR. COVID-19 has highlighted the need for better health service infrastructure with greater resilience to deal with shocks such as outbreaks. How best to create these with limited resources requires further research.
 
 More broadly, urban informal settlements are potential AMR ‘hotspots’ due to high population density and lack of water supply and sanitation infrastructure (Nadimpalli et al., 2020), which could also lead to enhanced COVID-19 transmission and severe impacts among already vulnerable populations (Corburn et al., 2020). Cost-effectiveness analyses are required to support prioritisation for investment in infrastructure and public health prevention strategies, taking potential synergies into account to address these two public health threats.
 
-## Prioritisation
+#### Prioritisation
 
 As we move forward, one way to mitigate the impact of COVID-19 on AMR is to ensure that priorities for public health are established in line with key measures such as mortality burden.
 
@@ -244,13 +244,13 @@ In considering the interplay of these two public health priorities, it is import
 
 The issue going forward is that COVID-19 continues to be a major disruption to not only public health but to the way our societies function in general. We cannot use disease burden in a country to directly translate to public health priority setting – those with low COVID-19 case numbers have, in part, been those that have treated it as a priority. However, the future public health agenda requires refocus, with a balancing act of countering COVID-19, and COVID-19 collateral, against prior public priorities such as AMR.
 
-## Inequality
+#### Inequality
 
 Across the world, inequalities are rising between and within countries (Institute for Policy Studies, 2020). COVID-19 has rendered the health impacts of these inequalities visible and palpable in tragic terms. Research now needs to take forward these recognitions of the numerous lines through which health inequalities operate when understanding both infectious and other causes of disease. The layering of multiple dimensions of marginalisation at the intersections of race, gender, and class needs to inform research and intervention strategies that recognise the compounding effects for AMR and COVID-19 among other conditions that emerge as much through lack of access to equal care and opportunity as they do from living conditions that privilege some above others in health outcomes (Glover et al., 2020). The concept of syndemics can usefully be deployed to conceptualise these compounding and interacting effects of the health, social, economic, and political worlds (Mendenhall, 2020).
 
 As a scientific and public health community, we need to ensure that as we intervene to prevent COVID-19 we are not exacerbating pre-existing inequities, nor creating new ones (Glover et al., 2020). Research must be designed to capture these potential effects, and, critically, such research must be linked closely to policy in order to enable change in direction of initiatives in the light of new evidence. Developing these approaches also presents the opportunity to expand learning to broader infectious disease interventions that have as yet failed to address the uneven distribution of disease burden including with AROs. In particular, we must determine if any existing inequalities lead to synergistic, multiplicative impacts on both AMR and COVID-19, and work to develop and evaluate mitigation strategies at all levels.
 
-## Policy research
+#### Policy research
 
 The pandemic has exposed weaknesses in our national and supranational organisations such as the US Centers for Disease Control and Prevention (CDC), Public Health England, and the WHO, for example, in their funding model. These public health bodies are key to coordinating AMR responses through data gathering, standardisation, and policy guidance. It would be disastrous for the AMR response should countries decide to go their own way in these areas. As such, work needs to be done to support these organisations – we especially need to maintain confidence in the WHO to enable national AMR programmes to operate. This confidence is also crucial in the fight against misinformation: we need global agencies to be the accepted ‘gold standard’ public health evidence base, communicating the evidence widely and clearly to all members of society (Arshad et al., 2020).
 

@@ -45,25 +45,77 @@ Here, we report a simple, cost-effective workflow to assess and monitor microbia
 
 ## Results
 
-## Experimental design and computational workflows
+### Experimental design and computational workflows
 
 Using a bespoke workflow, nanopore full-length (V1-V9) 16S ribosomal RNA (rRNA) gene sequencing was performed on all location-barcoded freshwater samples at each of the three time points (Figure 1; Supplementary file 1; Materials and methods). River isolates were multiplexed with negative controls (deionised water) and mock community controls composed of eight bacterial species in known mixture proportions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic map of Cambridge (UK), illustrating sampling locations (colour-coded) along the River Cam. Geographic coordinates of latitude and longitude are expressed as decimal fractions according to the global positioning system. (b) Laboratory workflow to monitor bacterial communities from freshwater samples using nanopore sequencing (Materials and methods).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Essential data processing steps, from nanopore sequencing to spatiotemporal bacterial composition analysis (Materials and methods). After full-length 16S rDNA sequencing with the MinION (R9.4.1 flow cell), local basecalling of the raw fast5 files was performed using Guppy (Wick et al., 2019). Output fastq files were filtered for length and quality (Materials and methods), and reads assigned to their location barcode using Porechop. We then used Minimap2 (k = 15) and the SILVA v.132 database for taxonomic classifications. Rarefaction reduced each sample to the same number of reads (37,000), allowing for a robust comparison of bacterial composition across samples in various analyses.
+
 To obtain valid taxonomic assignments from freshwater sequencing profiles using nanopore sequencing, twelve different classification tools were compared through several performance metrics (Figure 2; Figure 2—figure supplement 1; Materials and methods). Our comparison included established classifiers such as RDP (Wang et al., 2007), Kraken (Wood and Salzberg, 2014), and Centrifuge (Kim et al., 2016), as well as more recently developed methods optimised for higher sequencing error rates such as IDTAXA (Murali et al., 2018) and Minimap2 (Li, 2018). An Enterobacteriaceae overrepresentation was observed across all replicates and classification methods, pointing towards a consistent Escherichia coli amplification bias potentially caused by skewed taxonomic specificities of the selected 16S primer pair 27F and 1492R (Frank et al., 2008; Figure 2b). Root mean square errors (RMSE) between observed and expected bacteria of the mock community differed slightly across all classifiers (Figure 2c). Robust quantifications were obtained by Minimap2 alignments against the SILVA v.132 database (Quast et al., 2013), for which 99.68% of classified reads aligned to the expected mock community taxa (mean sequencing accuracy 92.08%; Figure 2—figure supplement 2c). Minimap2 classifications reached the second lowest RMSE (excluding Enterobacteriaceae), and relative quantifications were highly consistent between mock community replicates. Benchmarking of the classification tools on one aquatic sample further confirmed Minimap2's reliable performance in a complex bacterial community (Figure 2d), although other tools such as MAPseq (Matias Rodrigues et al., 2017), SPINGO (Allard et al., 2015), or IDTAXA also produced highly concordant results – despite variations in memory usage and runtime over several orders of magnitude (Figure 2—figure supplement 1b).
 
-## Diversity analysis and river core microbiome
+![Figure 2.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig2-v1.jpg)
+
+**Figure 2.:** (a) Schematic of mock community quantification performance testing. (b) Observed vs. expected read fraction of bacterial families present in 10,000 nanopore reads randomly drawn from mock community sequencing data. Example representation of Minimap2 (kmer length 15) quantifications with (upper) and without (lower) Enterobacteriaceae (Materials and methods). (c) Mock community classification output summary for twelve classification tools tested against the same 10,000 reads. Root mean squared errors observed and expected bacterial read fractions are provided with (RMSE) and without Enterobacteriaceae (RMSE reduced). (d) Classification output summary for 10,000 reads randomly drawn from an example freshwater sample (Materials and methods). ‘Overlapping’ fractions (red) represent agreements of a classification tool with the majority of tested methods on the same reads, while ‘non-overlapping’ fractions (light blue) represent disagreements. Dark green sets highlight rare taxon assignments not featured in any of the 10,000 majority classifications, while dark blue bars show unclassified read fractions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Top 10 represented bacterial taxon families across all methods, based on the 10,000 aquatic reads used in Figure 2d. (b) Comparison of computational performances with respect to (upper) runtime and average memory (lower) usage for the classification of 5 × 100, 5 × 1000, and 5 × 10,000 random read draws of the same sample. BLASTN-based classifications of 10,000 read sets are omitted, as their runtimes exceeded 14 days (> 106 s). Numbers in brackets for SPINGO, Minimap2, Kraken 2 and Mothur indicate kmer sizes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a–b) Correlation analysis between DNA extraction yield, 16S amplification yield and raw sequencing output (Supplementary file 2). (a) DNA concentrations (x-axis) obtained from 30 freshwater samples after extraction with the DNeasy PowerWater Kit (Materials and methods) are compared against the DNA concentration of the same samples after full-length 16S PCR amplification (y-axis), as measured by Qubit dsDNA HS. (b) The DNA concentration obtained for each sample after full-length 16S PCR amplification (x-axis) is compared against the final number of demultiplexed nanopore sequencing reads. Samples with a minimum input concentration measurement of ~5 ng/µl yielded sequencing outputs sufficient to pass the rarefaction threshold of 37,000 reads. (c) Multiple sequence alignment of an example set of related nanopore 16S sequences, displaying increased indel rates at homopolymer reference sites (underlined); the mean sequencing error rate for this study lies at 7.92%.
+
+### Diversity analysis and river core microbiome
 
 Using Minimap2 classifications within our bioinformatics consensus workflow (Figure 1—figure supplement 1; Materials and methods), we then inspected sequencing profiles of three independent MinION runs for a total of 30 river DNA isolates and six controls. This yielded ~8.3 million sequences with exclusive barcode assignments (Figure 3a; Supplementary file 2). Overall, 82.9% (n = 6,886,232) of raw reads could be taxonomically assigned to the family level (Figure 3b). To account for variations in sample sequencing depth, rarefaction with a cut-off at 37,000 reads was applied to all samples. While preserving ~90% of the original family level taxon richness (Mantel test, R = 0.814, p = 2.1*10−4; Figure 3—figure supplement 1a–b), this conservative thresholding resulted in the exclusion of 14 samples, mostly from the June time point, for subsequent high-resolution analyses. The 16 remaining surface water samples revealed moderate levels of microbial heterogeneity (Figure 3b; Figure 3—figure supplement 1c): microbial family alpha diversity ranged between 0.46 (June-6) and 0.92 (April-7) (Simpson index), indicating low-level evenness with a few taxonomic families that account for the majority of the metagenomic signal.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig3-v1.jpg)
+
+**Figure 3.:** (a) Nanopore sequencing output summary. Values in the centre of the pie charts depict total numbers of classified nanopore sequences per time point. Percentages illustrate representational fractions of locations and control barcodes (negative control and mock community). (b) Read depth and bacterial classification summary. Upper bar plot shows the total number of reads, and the number of reads classified to any taxonomic level, to at least bacterial family level, to the ten most abundant bacterial families across all samples, or to other families. Rarefaction cut-off displayed at 37,000 reads (dashed line). Lower bar plot features fractions of the ten most abundant bacterial families across the samples with more than 100 reads. Colours in bars for samples with less than 37,000 reads are set to transparent.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Example rarefaction curve for bacterial family classifications of the 'April-1' sample. The chosen cut-off preserves most (~90%) of the original family taxon richness (vertical line). (b) Difference between original and rarefied family richness at 37,000 reads across all freshwater sequencing runs with quantitative sequencing outputs above the chosen cut-off. Boxplots feature 100 independent rarefactions per sample. Error bars represent Q1 – 1.5*IQR (lower), and Q3 + 1.5*IQR (upper), respectively. (c) Diversity visualisation of the ten most abundant bacterial families across all samples with sequencing outputs > 37,000 reads, through 400 ‘unordered bubbles’. Taxonomic proportions and colours are in accordance with Figure 3b. Shannon (H) and Simpson (D) indices for all samples indicate marginal differences between pairs of original and rarefied sets.
+
 Hierarchical clustering of taxon profiles showed a dominant core microbiome across all aquatic samples (clusters C2 and C4, Figure 4a). The most common bacterial families observed were Burkholderiaceae (40.0%), Spirosomaceae (17.7%), and NS11-12 marine group (12.5%), followed by Arcobacteraceae (4.8%), Sphingomonadaceae (2.9%), and Rhodobacteraceae (2.5%) (Figure 4b). Members of these families are commonly associated with aquatic environments; for example, major fractions of Burkholderiaceae reads originated from genera such as Limnohabitans, Rhodoferax, Polynucleobacter, or Aquabacterium (Figure 4—figure supplement 1), which validates the suitability of this nanopore metagenomics workflow. Hierarchical clustering additionally showed that two biological replicates collected at the same location and time point (April samples 9.1 and 9.2), grouped with high concordance; this indicates that spatiotemporal trends are discernible even within a highly localised context.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig4-v1.jpg)
+
+**Figure 4.:** (a) Hierarchical clustering of bacterial family abundances across freshwater samples after rarefaction, together with the mock community control. Four major clusters of bacterial families occur, with two of these (C2 and C4) corresponding to the core microbiome of ubiquitously abundant families, one (C3) corresponding to the main mock community families and one (C1) corresponding to the majority of rare accessory taxa. (b) Detailed river core microbiome. Violin plots summarise fractional representation of bacterial families from clusters C2 and C4 (log10 scale of relative abundance [%] across all samples, nApril = 7, nJune = 2, nAugust = 7), sorted by median total abundance. Vertical dashed lines depict 0.1% proportion.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Hierarchical clustering of bacterial genera abundances across freshwater samples after rarefaction, together with the mock community control. In similarity to the family analysis displayed in Figure 4, bacterial genera are clustered into four groups. Two of these (C3 and partially C2) correspond to the core microbiome of ubiquitously abundant genera, one (C4) corresponding to the main mock community genera and one (C1) corresponding to the majority of rare accessory taxa. (b) Dominant river core microbiome on the genus level. Violin plots (log10 scale of relative abundance [%] across all samples, nApril = 7, nJune = 2, nAugust = 6) summarise fractional representation of the top 27 bacterial genera and corresponding families from clusters C2 and C3, sorted by median total abundance. Vertical dashed line depicts 0.1% proportion. Out of the top 16 core families (Figure 4b), only the NS11-12 marine group family was found not to be represented on the genus level; NS11-12 marine group genera are mainly composed of uncultured bacteria, which here could not be classified at higher resolution.
 
 Besides the dominant core microbiome, microbial profiles showed a marked arrangement of time dependence, with water samples from April grouping more distantly to those from June and August. Principal component analysis (PCA) illustrates the seasonal divergence among the three sampling months (Figure 5a; Figure 5—figure supplement 1). The strongest differential abundances along the seasonal axis of variation (PC3) derived from Carnobacteriaceae (Figure 5b), a trend also highlighted by taxon-specific log-normal mixture model decomposition between the two seasons (April vs. June/August; p < 0.01; Materials and methods). Indeed, members of this bacterial family have been primarily isolated from cold substrates (Lawson and Caldwell, 2014).
 
-## Hydrochemistry and seasonal profile of the River Cam
+![Figure 5.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig5-v1.jpg)
+
+**Figure 5.:** (a) PCA of bacterial composition across locations, indicating community dissimilarities along the main time (PC3) and spatial (PC4) axes of variation; dots coloured according to time points. Kruskal-Wallis test on PC3 component contributions, with post-hoc Mann-Whitney U rank test (April vs. August): p = 2.2*10−3. (b) Contribution of individual bacterial families to the PCs in (a). Error bars represent the standard deviation of these families across four independent rarefactions.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a–b) PCA with two independent rarefaction sets to 37,000 reads in all freshwater sequencing samples. Numbers and coloured dots indicate locations for each time point. The first and second principal components (PC1 and PC2, combined variance:~41%) robustly capture outlier samples 'April-7' along PC1 and 'April-2', 'August-4' and 'April-8' along PC2. (c–d) Fractional loads of the ten bacterial families most strongly contributing to changes along PC1 (c) and along PC2 (d). Error bars represent standard deviation of these families to the respective PC across four independent rarefactions. Subsequent principal components (PC3 and PC4) are less outlier-driven and depict spatial and temporal metagenomic trends within the River Cam.
+
+### Hydrochemistry and seasonal profile of the River Cam
 
 While a seasonal difference in bacterial composition can be expected due to increasing water temperatures in the summer months, additional changes may have also been caused by alterations in river hydrochemistry and flow rate (Figure 6a; Figure 6—figure supplement 1; Supplementary file 1). To assess this effect in detail, we measured the pH and a range of major and trace cations in all river water samples using inductively coupled plasma-optical emission spectroscopy (ICP-OES), as well as major anions using ion chromatography (Materials and methods). As with the bacterial composition dynamics, we observed significant temporal variation in water chemistry, superimposed on a spatial gradient of generally increasing sodium and chloride concentrations along the river reach (Figure 6b–c). This spatially consistent effect is likely attributed to wastewater and agricultural discharge inputs in and around Cambridge city. A comparison of the major element chemistry in the River Cam transect with the world's 60 largest rivers further corroborates the likely impact of anthropogenic pollution in this fluvial ecosystem (Gaillardet et al., 1999; Figure 6d; Materials and methods).
 
-## Maps of potential bacterial pathogens at species level resolution
+![Figure 6.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig6-v1.jpg)
+
+**Figure 6.:** (a) Outline of the Cam River catchment surrounding Cambridge (UK), and its corresponding lithology. Overlay of bedrock geology and superficial deposits (British Geological Survey data: DiGMapGB-50, 1:50,000 scale) is shown as visualised by GeoIndex. Bedrock is mostly composed of subtypes of Cretaceous limestone (chalk), gault (clay, sand), and mudstone. Approximate sampling locations are colour-coded as in Figure 1. (b) Principal component analysis of measured pH and 13 inorganic solute concentrations of this study's 30 river surface water samples. PC1 (~49% variance) displays a strong, continuous temporal shift in hydrochemistry. (c) Parameter contributions to PC1 in (b), highlighting a reduction in water hardness (Ca2+, Mg2+) and increase in pH towards the summer months (June and August). (d) Mixing diagram with Na+-normalised molar ratios, representing inorganic chemistry loads of the world's 60 largest rivers; open circles represent polluted rivers with total dissolved solid (TDS) concentrations > 500 mg l−1. Cam River ratios are superimposed as ellipses from ten samples per month (50% confidence, respectively). Separate data points for all samples from August are also shown and colour-coded, indicating the upstream-to-downstream trend of Na+ increase (also observed in April and June). End-member signatures show typical chemistry of small rivers draining these lithologies exclusively (carbonate, silicate and evaporite).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61504/elife-61504-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Daily air temperature [°C], (b) daily sunshine [hr], and (c) daily rainfall [mm] of Cambridge in 2018 (black trend line) vs. 1998–2017 (blue background trend lines). (d) Cam River gauged daily flow [m3s−1] in 2018 (black trend line) vs. 1968–2017 (blue background trend lines). Data was compiled from public repositories https://www.cl.cam.ac.uk/research/dtg/weather/ and https://nrfa.ceh.ac.uk/. Gauged daily flow measurements at Jesus Lock, Cambridge (between sampling locations 5 and 6; NRFA #33016) were discontinued in 1983. Yet, contemporary flow rates can be modelled with high accuracy (Pearson's R = 0.9, R2 = 0.8) through linear data integration of three upstream stations already in operation since before 1983: Rhee at Wimpole (NRFA #33027, 70.2% model weight), Granta at Stapleford (NRFA #33053, 19.6% model weight) and Cam at Dernford (NRFA #33024, 10.3% model weight).
+
+### Maps of potential bacterial pathogens at species level resolution
 
 Freshwater sources throughout the United Kingdom have been notorious for causing bacterial infections such as leptospirosis (Public Health England, 2016; Public Health England, 2019). In line with the physicochemical profile of the River Cam, we therefore next determined the spatiotemporal enrichment of potentially important functional bacterial taxa through nanopore sequencing. We retrieved 55 potentially pathogenic bacterial genera through integration of species known to affect human health (Jin et al., 2018; Wattam et al., 2017), and also 13 wastewater-associated bacterial genera (Global Water Microbiome Consortium et al., 2019; Supplementary file 3). Of these, 21 potentially pathogenic and 8 wastewater-associated genera were detected across all of the river samples (Figure 7; Materials and methods). Many of these signals were stronger downstream of urban sections, within the mooring zone for recreational and residential barges (location 7; Figure 1a) and in the vicinity of sewage outflow from a nearby wastewater treatment plant (location 8). The most prolific candidate pathogen genus observed was Arcobacter, which features multiple species implicated in acute gastrointestinal infections (Kayman et al., 2012).
 
@@ -101,11 +153,11 @@ Since the commercial launch of the MinION in 2015, a wide set of microbial nanop
 
 ## Materials and methods
 
-## Freshwater sampling
+### Freshwater sampling
 
 We monitored nine distinct locations along a 11.62 km reach of the River Cam, featuring sites upstream, downstream and within the urban belt of the city of Cambridge, UK. Measurements were taken at three time points, in two-month intervals between April and August 2018 (Figure 1; Supplementary file 1a). To warrant river base flow conditions and minimise rain-derived biases, a minimum dry weather time span of 48 hr was maintained prior to sampling (Fisher et al., 2015). One litre of surface water was collected in autoclaved DURAN bottles (Thermo Fisher Scientific, Waltham, MA, USA), and cooled to 4°C within 3 hr. Two bottles of water were collected consecutively for each time point, serving as biological replicates of location 9 (samples 9.1 and 9.2).
 
-## Physical and chemical metadata
+### Physical and chemical metadata
 
 We assessed various chemical, geological and physical properties of the River Cam (Figure 6; Figure 6—figure supplement 1; Supplementary file 1b-c).
 
@@ -121,93 +173,163 @@ Overall, ion profiles clustered substantially between the three time points, ind
 
 We integrated sensor data sets on mean daily air temperature, sunshine hours and total rainfall from a public, Cambridge-based weather station (Figure 6—figure supplement 1a–c; Supplementary file 1c). Similarly, mean gauged daily Cam water discharge [m3s−1] of the River Cam was retrieved through publicly available records from three upstream gauging stations connected to the UK National River Flow Archive (https://nrfa.ceh.ac.uk/), together with historic measurements from 1968 onwards (Figure 6—figure supplement 1d).
 
-## DNA extraction
+### DNA extraction
 
 Within 24 hr of sampling, 400 mL of refrigerated freshwater from each site was filtered through an individual 0.22 µm pore-sized nitrocellulose filter (MilliporeSigma, Burlington, MA, USA) placed on a Nalgene polysulfone bottle top filtration holder (Thermo Fisher Scientific) at −30 mbar vacuum pressure. Additionally, 400 mL de-ionised (DI) water was also filtered. We then performed DNA extractions with a modified DNeasy PowerWater protocol (Qiagen, Hilden, Germany). Briefly, filters were cut into small slices with sterile scissors and transferred to 2 mL Eppendorf tubes containing lysis beads. Homogenisation buffer PW1 was added, and the tubes subjected to ten minutes of vigorous shaking at 30 Hz in a TissueLyser II machine (Qiagen). After subsequent DNA binding and washing steps in accordance with the manufacturer's protocol, elution was done in 50 µL EB. We used Qubit dsDNA HS Assay (Thermo Fisher Scientific) to determine water DNA isolate concentrations (Supplementary file 2a).
 
-## Bacterial full-length 16S rDNA sequence amplification
+### Bacterial full-length 16S rDNA sequence amplification
 
 DNA extracts from each sampling batch and DI water control were separately amplified with V1-V9 full-length (~1.45 kbp) 16S rRNA gene primers, and respectively multiplexed with an additional sample with a defined bacterial mixture composition of eight species (Pseudomonas aeruginosa, Escherichia coli, Salmonella enterica, Lactobacillus fermentum, Enterococcus faecalis, Staphylococcus aureus, Listeria monocytogenes, Bacillus subtilis; D6305, Zymo Research, Irvine, CA, USA) (Figure 2), which was previously assessed using nanopore shotgun metagenomics (Nicholls et al., 2019). We used common primer binding sequences 27F and 1492R, both coupled to unique 24 bp barcodes and a nanopore motor protein tether sequence (Supplementary file 7). Full-length 16S rDNA PCRs were performed with 30.8 µL DI water, 6.0 µL barcoded primer pair (10 µM), 5.0 µL PCR-buffer with MgCl2 (10x), 5.0 µL dNTP mix (10x), 3.0 µL freshwater DNA extract, and 0.2 µL Taq (Qiagen) under the following conditions:
 
-## Nanopore library preparation
+### Nanopore library preparation
 
 Amplicons were purified from reaction mixes with a QIAquick purification kit (Qiagen). Two rounds of alcoholic washing and two additional minutes of drying at room temperature were then performed, prior to elution in 30 µL 10 mM Tris-HCl pH 8.0 with 50 mM NaCl. After concentration measurements with Qubit dsDNA HS, twelve barcoded extracts of a given batch were pooled in equimolar ratios, to approximately 300 ng DNA total (Supplementary file 2b). We used KAPA Pure Beads (KAPA Biosystems, Wilmington, MA, USA) to concentrate full-length 16S rDNA products in 21 µL DI water. Multiplexed nanopore ligation sequencing libraries were then made by following the SQK-LSK109 protocol (Oxford Nanopore Technologies, Oxford, UK).
 
-## Nanopore sequencing
+### Nanopore sequencing
 
 R9.4.1 MinION flow cells (Oxford Nanopore Technologies) were loaded with 75 µl of ligation library. The MinION instrument was run for approximately 48 hr, until no further sequencing reads could be collected. Fast5 files were basecalled using Guppy (version 3.15) and output DNA sequence reads with Q > 7 were saved as fastq files. Various output metrics per library and barcode are summarised in Supplementary file 2c.
 
-## Leptospira validation
+### Leptospira validation
 
 In collaboration with Public Health England, raw water DNA isolates of the River Cam from each location and time point were subjected to the UK reference service for leptospiral testing (Supplementary file 5). This test is based on quantitative real-time PCR (qPCR) of 16S rDNA and LipL32, implemented as a TaqMan assay for the detection and differentiation of pathogenic and non-pathogenic Leptospira spp. from human serum. Briefly, the assay consists of a two-component PCR; the first component is a duplex assay that targets the gene encoding the outer membrane lipoprotein LipL32, which is reported to be strongly associated with the pathogenic phenotype. The second reaction is a triplex assay targeting a well-conserved region within the 16S rRNA gene (rrn) in Leptospira spp. Three different genomic variations correlate with pathogenic (PATH probe), intermediate (i.e. those with uncertain pathogenicity in humans; INTER probe) and non-pathogenic Leptospira spp. (ENVIRO probe), respectively.
 
-## DNA sequence processing workflow
+### DNA sequence processing workflow
 
 The described data processing and read classification steps were implemented using the Snakemake workflow management system (Köster and Rahmann, 2012) and are available on Github - together with all necessary downstream analysis scripts to reproduce the results of this manuscript (https://github.com/d-j-k/puntseq; Urban et al., 2020; copy archived at swh:1:rev:1408d508c807b88e0989a5252c5d904072dc3c4a).
 
-## Read data processing
+### Read data processing
 
 Reads were demultiplexed and adapters trimmed using Porechop (version 0.2.4, https://github.com/rrwick/porechop). The only non-default parameter set was '--check_reads' (to 50,000), to increase the subset of reads to search for adapter sets. Next, we removed all reads shorter than 1.4 kbp and longer than 1.6 kbp with Nanofilt (version 2.5.0, https://github.com/wdecoster/nanofilt).
 
 We assessed read statistics including quality scores and read lengths using NanoStat (version 1.1.2, https://github.com/wdecoster/nanostat), and used Pistis (https://github.com/mbhall88/pistis) to create quality control plots. This allowed us to assess GC content and Phred quality score distributions, which appeared consistent across and within our reads. Overall, we obtained 2,080,266 reads for April, 737,164 for June, and 5,491,510 for August, with a mean read quality of 10.0 (Supplementary file 2c).
 
-## Benchmarking of bacterial taxonomic classifiers using nanopore reads
+### Benchmarking of bacterial taxonomic classifiers using nanopore reads
 
 We used twelve different computational tools for bacterial full-length 16S rDNA sequencing read classification:
 
-ToolVersionCommandsBLASTN (Altschul et al., 1990; Camacho et al., 2009)v.2.9.0+blastn -task ‘blastn’ -db silva.fa -query Cam16S.fa -out Cam16S.out -outfmt '6'Centrifuge (Kim et al., 2016)v.1.0.4centrifuge -x centrifuge_silva -U Cam16S.fq -S Cam16S.out --report-file Cam16S.reportIDTAXA (Murali et al., 2018)Implemented in R DECIPHER v.2.10.2 (Wright, 2016)load(‘SILVA_SSU_r132_March2018.RData’) IdTaxa(Cam16S.fa, trainingSet, strand = ‘both’, threshold = 0)Kraken 2 (Wood et al., 2019; Wood and Salzberg, 2014)v.2.0.7kraken2 --db kraken2_silva --output Cam16S.out --report Cam16S.report Cam16S.faMAPseq (Matias Rodrigues et al., 2017)v.1.2.3mapseq Cam16S.fa silva.fa > Cam16S.outMegaBLAST (Camacho et al., 2009; Morgulis et al., 2008)v.2.9.0+blastn -task ‘megablast’ -db silva.fa -query Cam16S.fa -out Cam16S.out -outfmt '6'Minimap2 (Li, 2018)v.2.13-r852-dirtyminimap2 -ax map-ont -L silva.mmi Cam16S.fa > Cam16S.samMothur (Schloss et al., 2009)v.1.43.0align.seqs(candidate = Cam16S.fa, template = mothur.silva.nr_v132.align, processors = 1, ksize = 6, align = needleman)QIIME 2 (Bolyen et al., 2019)v.2019.7qiime feature-classifier classify-consensus-blast --i-query Cam16S.qza --i-reference-reads silva.qza --i-reference-taxonomy silva_tax.qza --o-classification Cam16S.outRDP (Wang et al., 2007)Implemented in R DADA2 v.1.12.1 (Callahan et al., 2016)assignTaxonomy(seqs = Cam16S.fa, refFasta = silva_nr_v132_train_set.fa.gz’, tryRC = T, outputBootstraps = T, minBoot = 0)SINTAX (Edgar, 2016)Implemented in VSEARCH v.2.13.3 (Rognes et al., 2016)vsearch -sintax Cam16S.fa -db silva.udb -tabbedout Cam16S.out -strand both -sintax_cutoff 0.5SPINGO (Allard et al., 2015)v.1.3spingo -d silva.fa -k 8 -a -i Cam16S.fa > Cam16S.out
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Version</th>
+      <th>Commands</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BLASTN (Altschul et al., 1990; Camacho et al., 2009)</td>
+      <td>v.2.9.0+</td>
+      <td>blastn -task ‘blastn’ -db silva.fa -query Cam16S.fa -out Cam16S.out -outfmt '6'</td>
+    </tr>
+    <tr>
+      <td>Centrifuge (Kim et al., 2016)</td>
+      <td>v.1.0.4</td>
+      <td>centrifuge -x centrifuge_silva -U Cam16S.fq -S Cam16S.out --report-file Cam16S.report</td>
+    </tr>
+    <tr>
+      <td>IDTAXA (Murali et al., 2018)</td>
+      <td>Implemented in R DECIPHER v.2.10.2 (Wright, 2016)</td>
+      <td>load(‘SILVA_SSU_r132_March2018.RData’) IdTaxa(Cam16S.fa, trainingSet, strand = ‘both’, threshold = 0)</td>
+    </tr>
+    <tr>
+      <td>Kraken 2 (Wood et al., 2019; Wood and Salzberg, 2014)</td>
+      <td>v.2.0.7</td>
+      <td>kraken2 --db kraken2_silva --output Cam16S.out --report Cam16S.report Cam16S.fa</td>
+    </tr>
+    <tr>
+      <td>MAPseq (Matias Rodrigues et al., 2017)</td>
+      <td>v.1.2.3</td>
+      <td>mapseq Cam16S.fa silva.fa &gt; Cam16S.out</td>
+    </tr>
+    <tr>
+      <td>MegaBLAST (Camacho et al., 2009; Morgulis et al., 2008)</td>
+      <td>v.2.9.0+</td>
+      <td>blastn -task ‘megablast’ -db silva.fa -query Cam16S.fa -out Cam16S.out -outfmt '6'</td>
+    </tr>
+    <tr>
+      <td>Minimap2 (Li, 2018)</td>
+      <td>v.2.13-r852-dirty</td>
+      <td>minimap2 -ax map-ont -L silva.mmi Cam16S.fa &gt; Cam16S.sam</td>
+    </tr>
+    <tr>
+      <td>Mothur (Schloss et al., 2009)</td>
+      <td>v.1.43.0</td>
+      <td>align.seqs(candidate = Cam16S.fa, template = mothur.silva.nr_v132.align, processors = 1, ksize = 6, align = needleman)</td>
+    </tr>
+    <tr>
+      <td>QIIME 2 (Bolyen et al., 2019)</td>
+      <td>v.2019.7</td>
+      <td>qiime feature-classifier classify-consensus-blast --i-query Cam16S.qza --i-reference-reads silva.qza --i-reference-taxonomy silva_tax.qza --o-classification Cam16S.out</td>
+    </tr>
+    <tr>
+      <td>RDP (Wang et al., 2007)</td>
+      <td>Implemented in R DADA2 v.1.12.1 (Callahan et al., 2016)</td>
+      <td>assignTaxonomy(seqs = Cam16S.fa, refFasta = silva_nr_v132_train_set.fa.gz’, tryRC = T, outputBootstraps = T, minBoot = 0)</td>
+    </tr>
+    <tr>
+      <td>SINTAX (Edgar, 2016)</td>
+      <td>Implemented in VSEARCH v.2.13.3 (Rognes et al., 2016)</td>
+      <td>vsearch -sintax Cam16S.fa -db silva.udb -tabbedout Cam16S.out -strand both -sintax_cutoff 0.5</td>
+    </tr>
+    <tr>
+      <td>SPINGO (Allard et al., 2015)</td>
+      <td>v.1.3</td>
+      <td>spingo -d silva.fa -k 8 -a -i Cam16S.fa &gt; Cam16S.out</td>
+    </tr>
+  </tbody>
+</table>
 
-## Datasets
+#### Datasets
 
 We used nanopore sequencing data from our mock community and freshwater amplicons for benchmarking the classification tools. We therefore subsampled (a) 10,000 reads from each of the three mock community sequencing replicates, and (b) 10,000 reads from an aquatic sample (April-8; three random draws served as replicates). We then used the above twelve classification tools to classify these reads against the same database, SILVA v.132 (Quast et al., 2013; Figure 2; Figure 2—figure supplement 1).
 
-## Comparison of mock community classifications
+#### Comparison of mock community classifications
 
 For the mock community classification benchmark, we assessed the number of unclassified reads, misclassified reads (i.e. sequences not assigned to any of the seven bacterial families), and the root mean squared error (RMSE) between observed and expected taxon abundance of the seven bacterial families. Following the detection of a strong bias towards the Enterobacteriaceae family across all classification tools, we also analysed RMSE values after exclusion of this family (Figure 2b–c).
 
-## Comparison of river community classifications
+#### Comparison of river community classifications
 
 For the aquatic sample, the number of unclassified reads were counted prior to monitoring the performance of each classification tool in comparison with a consensus classification, which we defined as majority vote across classifications from all computational workflows. We observed stable results across all three draws of 10,000 reads from the same dataset (data not shown), indicating a robust representation of the performance of each classifier.
 
-## Memory and runtime measurements
+#### Memory and runtime measurements
 
 To systematically assess the computational requirements and performance metrics of the twelve classification methods, 15 random subsamples of the same aquatic sample (April-8) were drawn. This test set involved 5 × 100, 5 × 1000 and 5 × 10,000 reads, each of which were independently classified by the different software frameworks. CPU time, average and peak memory metrics were recorded on a single computing node (Figure 2—figure supplement 1b). Due to their reusability, tool-specific reference index file generations were omitted from these measurements.
 
-## Overall classification benchmark
+#### Overall classification benchmark
 
 Minimap2 performed second best at classifying the mock community (lowest RMSE), while also delivering freshwater bacterial profiles in line with the majority vote of other classification tools (Figure 2), in addition to providing comparably rapid speed (Figure 2—figure supplement 1b). To classify each of this study's full MinION data sets within a reasonable memory limit of 50 Gb, it was necessary to reduce the number of threads to 1, set the kmer size ('-k') to 15 and the minibatch size ('-K') to 25M.
 
-## Bacterial genome analyses
+### Bacterial genome analyses
 
-## General workflow
+#### General workflow
 
 After applying Minimap2 to the processed reads as explained above, we processed the resulting SAM files by firstly excluding all header rows starting with the '@' sign and then transforming the sets of read IDs, SILVA IDs, and alignment scores to tsv files of unique read-bacteria assignments either on the bacterial genus or family level. All reads that could not be assigned to the genus or family level were discarded, respectively. In the case of a read assignment to multiple taxa with the same alignment score, we determined the lowest taxonomic level in which these multiple taxa would be included. If this level was above the genus or family level, respectively, we discarded the read.
 
-## Estimating the level of misclassifications and DNA contaminants
+#### Estimating the level of misclassifications and DNA contaminants
 
 Across three independent sequencing replicates of the same linear bacterial community standard, we found that the fraction of reads assigned to unexpected genus level taxa lies at ~1% when using the Minimap2 classifier and the SILVA v.132 database.
 
 Raw quantified DNA, PCR amplicons and sequencing read counts were considerably less abundant in DI water negative controls, as compared to actual freshwater specimens (Supplementary file 2a). Only the negative control of the most prolific flow cell run (August 2018) passed the relatively high confidence threshold of 37,000 sequencing reads on the family level (Figure 3a). Further inspection of these negative control reads revealed that their metagenomic profile closely mimicked the taxonomic classification profiles of river samples within the same sequencing batch, in addition to low-level kit contaminants like alphaproteobacteria of the Bradyrhizobium and Methylobacterium genus (Salter et al., 2014) which were otherwise nearly completely absent in any of the true aquatic isolates (Supplementary file 8).
 
-## Determination of nanopore sequencing accuracy
+#### Determination of nanopore sequencing accuracy
 
 Minimap2 alignments against mock community taxa were used to determine the mean read-wise nanopore sequencing accuracy for this study (92.08%), as determined by the formula: accuracy = 1 - (read mismatch length ÷ read alignment length).
 
 These values were calculated for each of all eight species against each sequencing replicate, using the samtools (v.1.3.1) stats function (1000 Genome Project Data Processing Subgroup et al., 2009).
 
-## Rarefaction and high-confidence samples
+#### Rarefaction and high-confidence samples
 
 Sample-specific rarefaction curves were generated by successive subsampling of sequencing reads classified by Minimap2 against the SILVA v.132 database. For broader comparative data investigations, we chose to only retain samples that passed a conservative minimum threshold of 37,000 reads. Family and genus level species richness was hence kept at ~90% of the original values, in accordance with stable evenness profiles across a series of 100 bootstrap replicates (Figure 3—figure supplement 1a–b). Although we mainly present a single example rarefied dataset within this manuscript, we repeated each analysis, including PCAs, hierarchical clustering and Mantel tests, based on additional rarefied datasets to assess the stability of all results.
 
-## Mantel test
+#### Mantel test
 
 We performed Mantel tests to compare rarefied datasets with the full dataset. We therefore compared the Euclidean distance based on Z-standardised bacterial genera between all samples with more than 37,000 reads (two-sided test with 99,999 permutations). This resulted in a Pearson correlation of 0.814 (p = 2.1*10−4) for our main rarefied dataset (results of the Mantel test applied to the remaining three other rarefied datasets: R = 0.819 and p = 1.0*10−4, R = 0.828 and p = 8.0*10−5, R = 0.815 and p = 1.4*10−4, respectively). Results of the Mantel tests applied to the genus level bacterial classifications were also similar for all four subsampled datasets (R = 0.847 and p = 1.0*10−5, R = 0.863 and p = 1.0*10−5, R = 0.851 and p = 1*10−5, R = 0.856 and p = 1.0*10−5).
 
-## Meta-level bacterial community analyses
+#### Meta-level bacterial community analyses
 
 All classification assessment steps and summary statistics were performed in R or Python (https://github.com/d-j-k/puntseq; Urban et al., 2020). We used the Python package scikit-bio for the calculation of the Simpson index and the Shannon's diversity as well as equitability index.
 
-## Hierarchical clustering, principal component, mixture model, and outlier analyses
+#### Hierarchical clustering, principal component, mixture model, and outlier analyses
 
 Rarefied read count data was subjected to a log10(x+1) transformation before hierarchical clustering using the complete linkage method. Resulting family and genus dendrograms were separated into four groups (clusters C1 - C4), while sample trees were split into two groups (separating mock communities from aquatic samples).
 
@@ -217,16 +339,16 @@ We fit a zero-inflated log-normal mixture model of each bacterial taxon against 
 
 To determine location and time point-specific bacterial overabundance (outlier analysis), we identified taxa which were (1.) tagged by more than 500 reads and (2.) at least five times more abundant in any single sample than in the mean of all samples combined.
 
-## Identification of the core microbiome
+#### Identification of the core microbiome
 
 The core microbiome was calculated based on rarefied read count data from four independent downsampling sets on either family or genus level (Figure 4; Figure 4—figure supplement 1) represents the most abundant taxa that showed consistent abundance profiles between samples, based on hierarchical clustering analysis on one independent rarefaction (Figure 4a, C2 and C4; Figure 4—figure supplement 1a, C3 and C2) and rarefactions with a median abundance of > 0.1%. For the genus level, only those with median abundance of > 0.2% are displayed.
 
-## Pathogen candidate assessments
+#### Pathogen candidate assessments
 
 A list of 55 known bacterial pathogenic genera, spanning 37 families, was compiled for targeted sequence testing. This was done through the manual integration of curated databases and online sources, foremost using PATRIC (Wattam et al., 2017) and data on known waterborne pathogens (Jin et al., 2018; Supplementary file 3a). Additionally, we integrated known genera from a large wastewater reference collection (Global Water Microbiome Consortium et al., 2019; Supplementary file 3b).
 
 To identify if DNA reads assigned to Leptospiraceae were more similar to sequence reads of previously identified pathogenic, intermediate or environmental Leptospira species, we built a neighbour-joining tree of Leptospiraceae reads classified in our samples data, together with sequences from reference databases (Figure 8d; species names and NCBI accession numbers in clockwise rotation around the tree in Supplementary file 4d). We matched the orientation of our reads, and then aligned them with 68 Leptospira reference sequences and the Leptonema illini reference sequence (DSM 21528 strain 3055) as an outgroup. We then built a neighbour-joining tree using Muscle v.3.8.31 (Edgar, 2004), excluding three reads in the ‘Other Environmental’ clade that had extreme branch lengths > 0.2. The reference sequences were annotated as pathogenic and saprophytic clades P1, P2, S1, S2 as recently described (Vincent et al., 2019). Additional published river water Leptospira that did not fall within these clades were included as ‘Other Environmental’ (Ganoza et al., 2006). Similarly, we constructed phylogenies for the Legionella, Salmonella and Pseudomonas genus, using established full-length 16S reference species sequences from NCBI (Figure 8a–c; Supplementary file 4a-c).
 
-## Total project cost
+### Total project cost
 
 This study was designed to enable freshwater microbiome monitoring in budget-constrained research environments. Although we had access to basic infrastructure such as pipettes, a PCR and TissueLyser II machine, as well a high-performance laptop, we wish to highlight that the total sequencing consumable costs were held below £4000 (Supplementary file 6a). Individual processing and sequencing costs ranged at ~£75 per sample (Supplementary file 6b). With the current MinION flow cell price of £720, we estimate that per-sample costs could be further reduced to as low as ~£20 when barcoding and pooling ~100 samples in the same sequencing run (Supplementary file 6c). Assuming near-equimolar amplicon pooling, flow cells with an output of ~5,000,000 reads can yield well over 37,000 sequences per sample and thereby surpass this conservative threshold applied here for comparative river microbiota analyses.

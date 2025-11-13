@@ -33,9 +33,9 @@ In this study, we tested if extinction learning is associated with activity chan
 
 ## Results
 
-## Behavioural and physiological outcome measures
+### Behavioural and physiological outcome measures
 
-## Acquisition of CS–US contingencies on day 1
+#### Acquisition of CS–US contingencies on day 1
 
 Participants in both groups learned CS–US contingencies during acquisition training, which was indicated by a CS-type main effect that consisted of enhanced responses to the CS+ as compared to the CS– in all dependent measurements, namely binary (yes/no), trial-wise US expectancy ratings (CS-type main effect in rmANOVAs: US expectancy F(1,44) = 203.9, p<0.001, ηp2 = 0.823, mean difference: 0.578 ± 0.660/0.496 [95% CI], see Figure 1a), SCR (F(1,43) = 41.7, p<0.001, ηp2 = 0.493, mean difference: 0.088 ± 0.115/0.061 [95% CI], see Figure 1b) and fear ratings: (F(1,44) = 116.0, p<0.001, ηp2 = 0.725, mean difference: 0.361 ± 0.428/0.294 [95% CI]; see Figure 1c), see Supplementary file 1b for full statistics, means and CI. Unexpectedly, we found an interaction effect in US expectancy between CS-type, trial, and group-status (i.e., subjects that were allocated to receive Placebo or L-DOPA on the next day: CS-type × trial × group F(2,88) = 3.3, p=0.044, ηp2 = 0.07). However, follow-up group comparisons of block-wise US expectancy did not support any differences in CS+ or CS− responses (two-tailed independent post-hoc t-tests: p-values [FWE] >0.255, see Supplementary file 1c) or CS+/CS− discrimination between groups (p(FWE) > 0.65, CS discrimination was descriptively lower in the prospective Placebo vs. L-DOPA group, see Supplementary file 1c). There was no support for differences between groups in fear ratings or SCRs (group main effect or interaction ps>0.1, see Supplementary file 1b).
 
@@ -43,7 +43,7 @@ Participants in both groups learned CS–US contingencies during acquisition tra
 
 **Figure 1.:** (a) US expectancy, (b) SCR, and (c) fear ratings reflect successful acquisition of CS–US contingencies during acquisition and decreasing responses during extinction training.Retention of CS-US memory was evident during retention test on day 3, as well as initialenhancement of responses after reinstatement within three trials after presentation of thereinstatement USs. Differential SCRs (CS+ − CS−) in three trials after reinstatement were lowerin the L-DOPA, when compared to the Placebo group (see Figure 2). SCR = skin conductanceresponses, CS = conditioned stimulus.
 
-## Extinction learning on day 2
+#### Extinction learning on day 2
 
 On day 2, participants discriminated between CS+ and CS−, as indicated by a main effect of CS-type across all outcome measures (CS-type main effect in rmANOVAs: US expectancy: F(1,41)=22.3, p<0.001, ηp2 = 0.353, mean difference: 0.183 ± 0.269/0.106 [95% CI], SCR: F(1,38)=23.9, p<0.001, ηp2 = 0.386, mean difference: 0.065 ± 0.092/0.039 [95% CI], and fear ratings: F(1,41)=61.83, p<0.001, ηp2 = 0.601, mean difference: 0.345 ± 0.434/0.256 [95% CI]; see Table Supplementary file 1d for full statistics). Responses in all measures decreased over the time course of extinction training (CS-type by block interaction, all ps<0.05, see Supplementary file 1d, see Figure 1). In particular, trial-wise US expectancy ratings indicated successful extinction learning of the CS–US association, i.e. differential CS responses in the first two blocks (CS+ > CS−, Block 1: p<0.001, Block 2 p=0.048), but not the last (Block 3: p=0.57, see Supplementary file 1d).
 
@@ -51,15 +51,25 @@ Importantly, the analyses of fear rating indicated only a weak support for an in
 
 Next, we examined how decreasing US expectancy, which indicates extinction learning, is driven by expectancy violation from the omission of the US, by fitting US expectancy ratings with a Rescorla-Wagner–Pearce-Hall hybrid model (Boll et al., 2013; Li et al., 2011). The fitted prediction error (as a measure of expectancy violation), associability (as a measure of prediction error-guided surprise) and learning rate did not differ between groups (two-sided independent sample t-test for mean prediction error: t(40)=0.097, p(uncorr) = 0.923, p(FWE)>0.99; mean associability: t(40)=0.015, p=0.988, and mean learning rate: t(40)=0.179, p(uncorr)=0.859, p(FWE)>0.99; see Supplementary file 1f).
 
-## Memory retrieval on day 3
+#### Memory retrieval on day 3
 
 Retrieval was tested on day three within an generalisation context that consisted of a mixture of the acquisition and extinction context, i.e. one context that entailed 50% of the furniture from the acquisition context A and 50% from the extinction context B (Andreatta et al., 2015), which also involves contextual renewal of conditioned threat responses (Vervliet et al., 2013). Participants discriminated between CSs in all outcome measures (CS-type main effect in rmANOVAs: US expectancy: F(1,41)=23.21, p<0.001, ηp2 = 0.361, mean difference: 0.253 ± 0.358/0.148 [95% CI], SCR: F(1,40) = 24.07, p<0.001, ηp2 = 0.376, mean difference: 0.076 ± 0.108/0.045 [95% CI], and fear ratings: F(1,41) = 54.79, p<0.001, ηp2 = 0.578, mean difference: 0.512 ± 0.652/0.372 [95% CI]; see Supplementary file 1g). US expectancy ratings further indicated a general reinstatement of CS+ and CS− responses, when comparing the last three trials before and after the reinstatement USs (see Supplementary file 1i), but not within a block-wise reinstatement analyses (see Supplementary file 1h).
 
 Importantly, the SCR analyses of the three trials before and after reinstatement revealed a difference between groups in differential CS responses (CS-type by group interaction F(1,40)=5.443, p=0.025, ηp2 = 0.120, see Figure 2 and Supplementary file 1i), indicating lower CS discrimination in the L-DOPA group when compared with the Placebo controls after the reinstatement procedure (one-sided, L-DOPA < Placebo post hoc t-test: t(40)=2.405, p(FWE-corrected)=0.020, Cohen’s d = −0.741, L-DOPA mean: –0.006 ± 1.31 [SD], Placebo mean: 0.086 ± 0.116 [SD], see Figure 2—figure supplement 1 and Supplementary file 1j). Post hoc comparisons of CS+ and CS− responses between groups did not support a difference between L-DOPA and Placebo (p>0.19, see Supplementary file 1k). Additional analyses that included two to five trials also revealed a difference between groups in differential SCRs (see Supplementary file 1l,m and Figure 2—figure supplement 2). While our analysis revealed a difference between groups in differential SCRs, there was no strong support for difference between groups in CS+ or CS− responses.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65280/elife-65280-fig2-v2.jpg)
+
+**Figure 2.:** Differential SCRs (CS+ > CS−) were decreased when compared to the Placebo group within three trials after the reinstatement procedure (ANOVA: CS-type by group interaction). See Figure 2—figure supplement 1l for CS-specific and trial-wise responses. Additional analyses that include two to five trials revealed a difference between groups in differential SCRs (see Supplementary file 1 and Figure 2—figure supplement 2). SCR = skin conductance responses, CS = conditioned stimulus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65280/elife-65280-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Mean CS-specific responses across three trials. (b) Trial-wise responses to the CS+ in both groups three trials before and after reinstatement. (c) Trial-wise responses to the CS+ in both groups three trials before and after reinstatement. Asterisk indicate a p-value<0.05 for a CS-type by group interaction. See main text Figure 2 for illustration of differential responses.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65280/elife-65280-fig2-figsupp2-v2.jpg)
+
 While our a priory hypothesis was an effect of L-DOPA on the psychophysiological measurements at retrieval test on day 3, our analyses suggest that L-DOPA administration during extinction training reduced differential threat responses after reinstatement.
 
-## Administration of L-DOPA enhances vmPFC responses reflecting decreasing US expectancy during extinction learning
+### Administration of L-DOPA enhances vmPFC responses reflecting decreasing US expectancy during extinction learning
 
 First, our analyses of neural responses focused on the effect of L-DOPA on extinction learning, where we expected an involvement of the vmPFC that is modulated by L-DOPA. To this end, we examined brain regions that increased their activity to a decrease of US expectation. In order to examine extinction learning by decreasing US expectancy, we contrasted responses during extinction training to CS+ trials when participants expected no US against CS+ trials in which participants expected an US (i.e., expectation of no US > expectation of a US). We found that decreasing US expectancy was accompanied by more pronounced signalling in the right vmPFC in the L-DOPA group as compared to the placebo group (see Figure 3a). Thus, administration of L-DOPA augmented vmPFC activity during extinction learning, i.e., when participants decreased their US expectancy.
 
@@ -71,13 +81,21 @@ Next, we tested if this difference in the right vmPFC activity was related to in
 
 As such, L-DOPA strengthens vmPFC activation that accompanies decreasing expectation of the US (i.e., extinction learning), and this enhancement of vmPFC activity mediates reduced differential SCR 24 hr later (i.e., better extinction memory retrieval). Our results thereby reveal an effect of L-DOPA on memory retrieval that is meditated by augmentation of vmPFC activity, which was specific for the individual time course of decreasing expectancy of the aversive outcome.
 
-## Omission of an expected aversive outcome is coded in the nucleus accumbens and modulated by L-DOPA
+### Omission of an expected aversive outcome is coded in the nucleus accumbens and modulated by L-DOPA
 
 In the next step, we examined if decreasing US expectancy during extinction learning is driven by the omission of the US in form of an expectancy violation (i.e., prediction error) and if this process is modulated by dopamine. To this end, we used the modelled US expectancy ratings from the Rescorla-Wagner–Pearce-Hall hybrid model that has previously been used to describe computational processes in associative threat learning (Boll et al., 2013; Li et al., 2011; Lindström et al., 2018). In order to test for signals that reflect expectancy violation, we examined responses at the time-point of US omission that correlated with the modelled prediction error term (parametric modulator). We found that activation in the right nucleus accumbens in the Placebo group reflected the time course of the modelled prediction error term, but not in the L-DOPA group (see Figure 4a). This suggests that the nucleus accumbens in the Placebo group was responsive towards US omissions, only if an aversive outcome was still expected, which reflects the violation of the expected, yet omitted, value. This was supported by an exploratory follow-up analysis, revealing a cluster in the right nucleus accumbens that reflected the expected value at the time-point of US omission (MNI xyz: 9, 18, –4; Z = 3.04; pFWE-SVC=0.040). Of course, prediction error and value are closely related, since the outcome during extinction training was the same for all trials. Next, we tested, if the L-DOPA group might show responses within the nucleus accumbens at the time-point of US omission that are independent of the prediction error (i.e., categorical responses). We found that categorical responses at the time-point of US were higher in the L-DOPA group, compared to Placebo group (see Figure 4b). In fact, responses in the Placebo group were negative, which would be in line with our finding of expectancy violation coding in the nucleus accumbens: Expectancy violation would be characterised by positive responses in early trials of extinction training (when US expectancy is high) and decreases rapidly with decreasing US expectancy, which could lead to negative responses when averaging a whole time course. Enhancing dopaminergic transmission (i.e., in the L-DOPA group), in contrast, seems to sustain responses to the omitted outcomes in the nucleus accumbens, irrespectively of expectancy of the US or value caching. Hence, our results imply a dopaminergic modulation of expectancy violation in the nucleus accumbens when expected aversive outcomes are omitted during extinction training. Note that within exploratory analyses that were suggested by the reviewers we found no activity in the nucleus accumbens to CS+ presentations during extinction (see Supplementary file 1n), which might suggest that the nucleus accumbens might rather be involved in processing of expectancy violation coding when expected USs are omitted. During acquisition training, however, we found activity in the nucleus accumbens to presentations of the CS+ (as well as in the contrast CS+ > CS−) and the US (see Supplementary file 1n), which resembles salience encoding, as reported in a recent study in rodents (Cai et al., 2020).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65280/elife-65280-fig4-v2.jpg)
+
+**Figure 4.:** (a) At the time-point of US omission, the Placebo group exhibited expectancy violation coding (fitted prediction error term) in the right NAcc, which was not observed in participants that received L-DOPA (one-sided independent t-test Placebo > L-DOPA, MNI xyz: 9, 18,–4; Z = 3.02; pFWE-SVC=0.043). (b) Administration of L-DOPA abolished negative categorial responses (i.e., independent of expectancy) to omitted USs in the left NAcc that were found in Placebo controls (one-sided independent t-test L-DOPA > placebo, MNI xyz: –11, 14, –10; Z = 3.22; pFWE-SVC=0.029). Neural correlates are displayed at threshold punc<0.005 with bar plot showing parameter estimates (a.u.). We found no group differences in functional connectivity during CS+ presentations in extinction training or acquisition training, as well as no differences during US presentations during acquisition training (see table Supplementary file 1o). a.u. = arbitrary units, NAcc = nucleus accumbens, US = unconditioned stimulus.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65280/elife-65280-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Modelled associability (i.e., attention shift to the omitted US) during the omitted US was related to stronger activation of the left amygdala (MNI xyz: −21, –6, –23; Z = 3.86; pFWE-SVC=0.013; displayed at threshold punc<0.005 with bar plot showing parameter estimates [a.u.]) after administration of L-DOPA when compared with placebo controls.
+
 In addition to neural signalling that aligned with the prediction error term, we further investigated potential differences between groups in neural signals that follow the associability term, which provides a measure of prediction error-guided attention shift. Such attention-shifts denoted by associability involve several additional processes like arousal or awareness of the participants. We found that administration of L-DOPA enhanced associability related neural signals in the amygdala at the time-point of US omission, when compared to Placebo (see Figure 4—figure supplement 1). Our results suggest that dopaminergic enhancement might enhance shifting of attention or surprise that is initiated by unexpected omission of the US during extinction training.
 
-## L-DOPA modulates functional connectivity between responses in the nucleus accumbens and the VTA when the US is omitted
+### L-DOPA modulates functional connectivity between responses in the nucleus accumbens and the VTA when the US is omitted
 
 Results in animals suggested that processes at the time-point of US omission involve not only the nucleus accumbens, but dopaminergic neurons in the VTA (Salinas-Hernández et al., 2018; Cai et al., 2020) and projections from the VTA to the nucleus accumbens (Luo et al., 2018), as well as projections from the basolateral complex of the amygdala to the nucleus accumbens (Correia et al., 2016).
 
@@ -101,7 +119,7 @@ Our study was intentionally not designed to disentangle details of expectancy vi
 
 We further show that signals in nucleus accumbens at the time-point of US omission were functionally coupled with activation in the amygdala and the SN/VTA, which were enhanced by administration of the dopaminergic precursor L-DOPA. This finding mirrors findings in animals implying neurons in the VTA, as well as projections from the VTA to the nucleus accumbens, in the encoding of the omission of an expected US (Luo et al., 2018; Salinas-Hernández et al., 2018). Furthermore, our results would align with studies in animals that provided evidence for amygdala to nucleus accumbens projections that underlie extinction of threat responses (Correia et al., 2016). Such interaction between dopaminergic pathways and amygdala activity during threat extinction is moreover in line with a study in rodents that revealed changes in inhibitory interneuron activity in the amygdala by dopaminergic projections from the VTA that enable suppression of freezing during early extinction (Aksoy-Aksel et al., 2021).
 
-## Limitations of this study
+### Limitations of this study
 
 This pharmacological fMRI study in human volunteers is only suited to draw inferences on blood-oxygen-level-dependent signals as a function of L-DOPA administration. Hence, the changes reported here are only indirect markers of changes in dopaminergic neurotransmission, which might suggest together with fine-grained studies in animals that dopaminergic neurotransmission is involved in extinction learning across species (Felsenberg et al., 2018; Luo et al., 2018). Dopamine-specific markers in humans (e.g., using PET) might be suitable to unambiguously link changes in vmPFC and nucleus accumbens activity during extinction learning to dopaminergic neurotransmission.
 
@@ -117,7 +135,7 @@ In sum, our results thereby provide a neuropharmacological, dopaminergic mechani
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Fifty healthy male subjects without self-reported psychiatric and neurological diseases, without current medication (including no ‘over the counter drugs’ without prescription within the last 2 weeks), or current use of illicit drugs (urine toxicology) were recruited in this study. Illegal drug-screening test was carried out prior to testing at day 1 (M-10/3-DT; Diagnostik Nord). The final sample in the analyses included 46 participants (L-DOPA N = 24, Placebo N = 22) between the age of 20 and 38 (mean 27.07, SD = 4.18; L-DOPA mean = 27.29, SD = 4.102; Placebo mean = 26.82, SD = 4.35; two-sided unpaired t-test: t(44)=0.38, p>0.7) after exclusion of four subjects (positive drug urine test N = 1, incidental finding of a brain cyst N = 1, not following the instructions N = 1 and accidental press of the emergency bell N = 1).
 
@@ -125,69 +143,85 @@ The sample size of 40 participants (plus 10 drop-outs) was determined a priory i
 
 The study (including sample size approximation) was approved by local ethics committee in Hamburg (Ärztekammer Hamburg). Full participation of this study was remunerated with 120,- EURO.
 
-## Stimulus material
+### Stimulus material
 
-## Conditioned stimuli
+#### Conditioned stimuli
 
 Contexts surrounding the CSs were employed as computerised environments of virtual offices (Source Engine, Valve Corporation, Bellevue, WA, used in Andreatta et al., 2015). Each office image was depicted from two different vantage points (on the wall opposite the door vs. on the wall to the right of the door). Three different contexts were used: context A, context B, and a mixture of both in order to induce a contextual generalization (Andreatta et al., 2015). The context that included a mixture of contexts A and B contained 50% of the furniture from context A and 50% from context B, equally distributed in the room. Virtual offices consisted of the same floor plan but differed regarding the furniture. A blue or a yellow color filter illuminating the whole room (duration of 6 s) served as CSs, indicating either CS+ or CS−. Colours of the CSs and contextual backgrounds were counterbalanced across participants. Presentation of the context served as the inter-trial intervals (ITIs, duration range 7–11 s, mean 7.8). The visual stimulus material was presented in pseudo-randomized order on a computer screen using Presentation software (NeuroBehavioral Systems, Albany, CA; RRID:SCR_002521).
 
-## Unconditioned stimulus
+#### Unconditioned stimulus
 
 An electrotactile stimulus consisting of a train of three square-wave pulses of 2 ms duration each (interval 50 ms) served as the US that the CS+ onset after 5 s. The US was delivered through a surface electrode with platinum pin (Specialty Developments, Bexley, UK) on the right dorsal hand using a DS7A electrical stimulator (Digitimer, Welwyn Garden City, UK). US intensity was individually adjusted prior to acquisition training (day 1) to a level of maximal tolerable pain (mean 8.1 ± 0.5 mA, range 2.5–21.0 mA), and participants were asked to rate the aversiveness of the US between 0 (‘I feel nothing’) and 10 (‘maximally unpleasant’; rating: mean 7.1 ± 0.1, range 4.0–8.0). Additional US intensity ratings were acquired after fear acquisition training (between 0 and 100 day 1: mean 68.65 ± 3.0, range 20–100) and at the end of return of fear testing (day 3: mean 49.91 ± 3.9, range 0–100). There were no differences between the Placebo and the L-DOPA group in any of these parameters (all p>0.167; see Supplementary file 1a).
 
-## Study medication
+### Study medication
 
 Study medication included an oral administration of 150 mg L-DOPA (including 37.5 mg benserazide) in a double-blind and placebo-controlled protocol 60 min before extinction training. Participants were allocated into the placebo or L-DOPA group before day 1 in a restricted randomisation procedure that allocated five subjects to the L-DOPA and five subjects to the placebo group for each group of 10 participants. The dose of 150 mg has been found effective in previous studies to enhance the consolidation of extinction memories in humans (Gerlicher et al., 2018; Haaker et al., 2015; Haaker et al., 2013).
 
-## Experimental procedure
+### Experimental procedure
 
 Using a three-day paradigm, acquisition training (day 1) and extinction training (day 2, approx. 24 hr after acquisition) were conducted in the fMRI scanner, while retrieval test (day 3, approx. 24 hr after extinction), including reinstatement, were employed within the psycho-physiological laboratory. Acquisition training took place in context A, whereas extinction training was employed in context B. Retrieval test (including reinstatement procedure) was conducted in a 50/50-mixture of context A and B in order to examine contextual generalisation (Andreatta et al., 2015), which also involves contextual renewal of conditioned threat responses (Vervliet et al., 2013). Twenty-four hours after acquisition training participants received L-DOPA (see Study medication) before the extinction learning session (the CS+ was no longer followed by an aversive outcome). L-DOPA administration thereby affected extinction training, while acquisition training, as well as retention and reinstatement tests were conducted drug free. Data collection on day 1 included sampling of plasma concentration of endocannabinoids as part of a different project.
 
-## Acquisition training (day 1)
+#### Acquisition training (day 1)
 
 A short habituation phase preceded acquisition training (six trials: three CS+, three CS−) without any presentation of the US. Subsequent acquisition training consisted of 24 trials for each CS (in context A). The CS+ was followed by a US in 75% of the trials, whereas the CS− was never followed by a US. Participants were not informed about the conditioning contingencies or the learning element beforehand.
 
-## Extinction training (day 2)
+#### Extinction training (day 2)
 
 Approximately 24 hr after conditioning, participants returned to the fMRI laboratory. US and SCR electrodes were attached exactly as the day before, without US intensity adjustment. During extinction training, 24 trials (context B) were presented for each CS, and no US was administered. Participants were not informed beforehand about any change in CS–US contingencies.
 
-## Retrieval test and reinstatement (day 3)
+#### Retrieval test and reinstatement (day 3)
 
 Participants returned to the psycho-physiological laboratory and US and SCR electrodes were again attached without further US adjustment. A retrieval test (contextual generalisation in a 50/50-mixture of context A and B, i.e. one context that 50% of the furniture from context A and 50% from context B) consisted of eight unreinforced trials of each CS and was followed by four unsignalled reinstatement USs (interval duration range 10–15 s). Here, the same individual electrical stimulation intensity was used as during acquisition training. Six to 10 s after the last reinstatement US, a second retrieval test (reinstatement test) was employed, including 16 trials (with no US) of each CS. The order of CS+ and CS− after the reinstatement US was counterbalanced across subjects. At the end of the experiment, CS–US contingency awareness was assessed using a semi-structured interview (Bechara et al., 1995) and based on these results 37 participants were classified as aware and five were classified as unaware (no differences between groups, χ2-test, p=0.634).
 
-## Outcome measures and analyses
+### Outcome measures and analyses
 
-## US expectancy
+#### US expectancy
 
 On each CS trial presentation, participants had to rate their US expectancy as a binary choice (key press for yes/no) without any scale presented to avoid any distraction. Participants were excluded from the analyses (day-wise) if less than one third of all data points were missing (excluded participants: N[day 1]  =  0, N[day 2]  =  3, N[day 3]  =  3).
 
-## Fear ratings
+#### Fear ratings
 
 At the beginning as well as at the end of each experimental day, participants were asked to rate the fear/stress/tension level that was elicited by each CS. On day 1, the first rating was conducted after habituation phase and before acquisition training. Ratings were performed on a computerised Visual Analogue Scale (VAS, 0 [none] – 100 [maximal]) using keys with the right hand. Rating values had to be confirmed by a key press (otherwise missing data, N[day 1]  =  0, N[day 2]  =  3, N[day 3]  =  4). All rating values were range-corrected (divided by the maximal rating value on that day).
 
-## Skin conductance
+#### Skin conductance
 
 Skin conductance responses (SCRs) were measured via self-adhesive Ag/AgCl electrodes placed on the palmar side of the left hand on the distal and proximal hypothenar. Data were recorded with a BIOPAC MP-100 amplifier (BIOPAC Systems Inc, Goleta, CA; RRID:SCR_014829) using AcqKnowledge four software (RRID:SCR_014279). For data analysis, SCR signal was down-sampled to 10 Hz and responses were manually scored between 0.9 and 4.0 s after CS onset using a custom-made computer program. Non-reactions were scored as zero, and trials with obvious electrode artefacts were scored as missing data. Afterwards, amplitudes were logarithmised and range-corrected (SCR/SCRmax CS [day]) separately for the three consecutive experimental days in order to account for inter-individual variability. SCR data from a limited number of participants had insufficient data quality (as judged by two researches; due to signal-disturbances by the fMRI acquisition) and were thus excluded (day-wise) before the analyses (N[day 1]  =  1, N[day 2]  =  6, N[day 3]  =  4). Trial-wise SCRs were then averaged over a block of eight trials, resulting in three blocks on each day.
 
-## Statistical analysis
+### Statistical analysis
 
 Outcome measures were analysed (using JASP 0.11.1, JASP Team (2020) [Computer software], RRID:SCR_015823) employing repeated-measures ANOVAs. For acquisition and extinction training, these ANOVAS included CS-type (2) and the effect of time (fear ratings: 2 ratings, SCR and US expectancy: 3 blocks, each average across eight trials). Pharmacological group was entered as a between subject factor. For day 3, we analysed the first block separately as the retrieval test and the reinstatement analyses included two comparisons of trials before and after the reinstatement USs (Haaker et al., 2014). First, we compared responses averaged across the whole block (eight trials) before and after reinstatement. Since reinstatement effect are transient and only detectable over a few trials, we added a second, more detailed analysis, which compared responses averaged across the three trials before and after reinstatement, based on previous findings indicating that transient reinstatement effects can be found up to three trials after the US presentation (Scharfenort and Lonsdorf, 2016). In all analyses, an α-level of p<0.05 was adopted and sphericity correction (Greenhouse-Geisser) was applied. Follow-up post hoc test on measurement on days 2 and 3 was performed as one-sided independent t-test to examine the hypothesis of L-DOPA responses < Placebo responses. During data acquisition, preprocessing and initial analyses, the experimenter were masked to the drug conditions.
 
-## Hybrid model
+### Hybrid model
 
 To examine how decreasing US expectancy is driven by expectancy violation from the omission of the US, we fitted trial-wise US expectancy ratings with a Rescorla-Wagner–Pearce-Hall hybrid model, which is the same model employed in previous neurocomputational studies of aversive learning in humans (Boll et al., 2013; Li et al., 2011).
 
-In order to examine associative threat learning processes, which can be described by classical formal learning theory such as the Rescorla-Wagner (R-W) (Rescorla et al., 1972) and Pearce-Hall (P-H) model (Pearce and Bouton, 2001), we analysed extinction learning underlying mechanisms based on trial-by-trial US expectancy ratings. Therefore, a Rescorla-Wagner–Pearce-Hall hybrid model (HM) (Le Pelley, 2004) was used, which algebraically describes error-driven learning based on prediction errors (PE, i.e., mismatches) between the predicted (aversive) outcomes (denoted as expected “values,” v) and the received outcomes (RO), which in this case corresponded to the omissions of the US. Extending the RW model, the HM explicitly accounts for dynamically changing learning rates α (i.e., surprising absence of the US) that is updated depending on the associability η (i.e., the reliability of prior predictions). That means the associability η increases in proportion to the absolute prediction error (PE) on the last interaction with a stimulus, allowing the agent to adapt to changing environments, which leads to larger prediction errors (PE), and thereby higher associability η. The HM is formalised by the following equation:vt+1=vt+α*ηt*PE
+In order to examine associative threat learning processes, which can be described by classical formal learning theory such as the Rescorla-Wagner (R-W) (Rescorla et al., 1972) and Pearce-Hall (P-H) model (Pearce and Bouton, 2001), we analysed extinction learning underlying mechanisms based on trial-by-trial US expectancy ratings. Therefore, a Rescorla-Wagner–Pearce-Hall hybrid model (HM) (Le Pelley, 2004) was used, which algebraically describes error-driven learning based on prediction errors (PE, i.e., mismatches) between the predicted (aversive) outcomes (denoted as expected “values,” v) and the received outcomes (RO), which in this case corresponded to the omissions of the US. Extending the RW model, the HM explicitly accounts for dynamically changing learning rates α (i.e., surprising absence of the US) that is updated depending on the associability η (i.e., the reliability of prior predictions). That means the associability η increases in proportion to the absolute prediction error (PE) on the last interaction with a stimulus, allowing the agent to adapt to changing environments, which leads to larger prediction errors (PE), and thereby higher associability η. The HM is formalised by the following equation:
 
-The predicted ‘values’ (v) on the next trial t + 1 are based on the ‘value’ at the current trial t and on prediction errors (PE) scaled by the learning rate α and the current associability ηt. Prediction errors (PE) are calculated as the difference between the current predicted values (vt) and the received outcomes (RO).PE=RO-vt
+$$
+v_{t+1}=v_{t}+\alpha*η_{t}*PE
+$$
 
-The current associability ηt is updated according to the absolute prediction error (PE) and the associability of the preceding trial ηt-1 with the free scaling parameter ω.ηt=ω*PE+1-ω*ηt-1
+The predicted ‘values’ (v) on the next trial t + 1 are based on the ‘value’ at the current trial t and on prediction errors (PE) scaled by the learning rate α and the current associability ηt. Prediction errors (PE) are calculated as the difference between the current predicted values (vt) and the received outcomes (RO).
 
-The model employs a softmax function with a free ‘inverse temperature’ parameter β to generate trial-by-trial probabilities (p) for the binary US expectancy ratings.p=11+e-v/β
+$$
+PE=RO-v_{t}
+$$
+
+The current associability ηt is updated according to the absolute prediction error (PE) and the associability of the preceding trial ηt-1 with the free scaling parameter ω.
+
+$$
+η_{t}=\omega*PE_{}+1-\omega*η_{t-1}
+$$
+
+The model employs a softmax function with a free ‘inverse temperature’ parameter β to generate trial-by-trial probabilities (p) for the binary US expectancy ratings.
+
+$$
+p=\frac{1}{1+e^{-v/\beta}}_{}
+$$
 
 The model thus contains three free parameters: (1) the learning rate α, (2) the scaling parameter ω for the associability η, and (3) the inverse temperature parameter β. These three free parameters were initialised in the fitting procedure as 0.5, 0.5, and 4, respectively. The starting point for the initial ‘value’ v0 was set to 0.75, i.e., the probability for a US following a CS+ in the acquisition phase. The starting point for the initial associability η0 was set to 1, which assumes that the associability is initially fully dependent on the prediction error (PE). We fitted model parameters using maximum likelihood estimation (MLE). Specifically, we used the non-linear Nelder-Mead simplex search algorithm (implemented in the MATLAB [RRID:SCR_001622] function fminsearch) to minimise negative log-likelihood summed over all trials for each participant.
 
-## fMRI acquisition and analysis
+### fMRI acquisition and analysis
 
 MRI data were obtained on a 3T Magnetom-PRISMA System (Siemens, Erlangen, Germany) using a 64-channel head coil. fMRI measurements were performed using single-shot echo-planarimaging with parallel imaging (GRAPPA, in-plane acceleration factor 2) (Griswold et al., 2002) and simultaneous multi-slice acquisitions (‘multiband’, slice acceleration factor 2) (Feinberg et al., 2010; Feinberg et al., 2010; Moeller et al., 2010) as described in Setsompop et al., 2012. The corresponding image reconstruction algorithm was provided by the University of Minnesota Center for Magnetic Resonance Research. Echo planar multiband images were acquired with 42 continuous axial slices (1.5 mm thickness, 0.5 mm gap) in a T2*-sensitive sequence (TR = 1493 ms, TE = 30 ms, flip angle = 60°, field of view = 225 × 225 mm2). Selection of slice arrangement was individually adjusted (to the dorsal anterior cingulate cortex as an orienting point) in order to cover the following areas: ventral medial prefrontal cortex, nucleus accumbens, amygdala, and midbrain SN/VTA. Moreover, high-resolution T1-weighted structural brain image (MP-RAGE sequence, 1 mm isotropic voxel size, 240 slices) were obtained. For task-relevant functional data of day 2 (extinction training), preprocessing and statistical analysis was carried out using SPM12 (Statistical Parametric Mapping, http://www.fil.ion.ucl.ac.uk/spm, RRID:SCR_007037) running under Matlab2017a (The MathWorks, Inc, Natick, MA). To account for T1 equilibrium effects, the first five volumes of each time-series were discarded. All remaining images were unwarped, realigned to the first image, coregistered to the individual high-resolution T1 structural image. Subsequent statistical analyses were performed by using a standard approach for fMRI implemented in the SPM software, involving a general linear convolution model (GLM) at the single-subject level and a random-effects analysis on group level. On individual-level, experimental conditions (i.e., ITI, CS+, CS−, omitted US, introductions, ratings, and button presses) were defined as separate regressors modelling the predicted time courses of experimentally induced brain activation changes as a stick function. Furthermore, CS+ regressors included a parametric modulation of individual US expectancy ratings in order to examine dopamine-dependent differences in neural representation in decreasing US expectancy during extinction learning. Additionally, parametrical modulation of the omitted US was applied to examine neural responses that are related to changes in expectancy violation over trials. Therefore, the modelled prediction error term (as a measure of expectancy violation, averaged across the whole sample) and the orthogonalised associability term (as a measure of prediction error-guided surprise, averaged across the whole sample) were entered trial-wise.
 
@@ -195,10 +229,10 @@ In a next step, subject- and regressor-specific parameter estimate images of int
 
 Regions of interest (ROI) were the defined as (1) dopaminergic key structures, such as the nucleus accumbens and the VTA/SN and (2) key structures in extinction learning, such as the amygdala and the vmPFC. These structures were defined by Havard-Oxford probability maps for the nucleus accumbens and the amygdala (Desikan et al., 2006). For the SN/VTA and vmPFC is no anatomical mask available, therefore we defined both ROIs as in a previous study that revealed an effect of L-DOPA treatment in both, the SN/VTA and vmPFC ROI (Lonsdorf et al., 2014). The SN/VTA complex was defined by Bunzeck and Düzel, 2006. The vmPFC ROI was defined as a box of 20 × 16 × 16 mm at x = 0, y = 42, z = −12. Correction for multiple comparisons within these ROIs was performed by using family-wise error correction based on the Gaussian Random Fields as implemented in SPM.
 
-## Connectivity analysis
+### Connectivity analysis
 
 Psycho-physiological interaction (PPI, as implemented in SPM12) was used to examine functional connectivity differences of responses in the nucleus accumbens towards the omitted US between groups. Extracted eigenvariates of nucleus accumbens (bilateral ROI mask) were used as the seed region, deconvolved and multiplied with the condition specific onsets of the omitted US. The product (PPI) was entered as a regressor into an individual GLM for each participant, controlling for the time course of the nucleus accumbens, the onset regressor, and movement as nuisance regressors. Parameter estimates of the omitted US-PPI were then contrasted between groups.
 
-## Mediation analysis
+### Mediation analysis
 
 To test whether the effect of L-DOPA vs Placebo on differential SCRs at retrieval test on day 3 was mediated by the activity in the vmPFC that aligned with decreasing US expectancy, we employed a mediation analysis (R Studio, Version 1.2.1335, package ‘mediation’; R Project for statistical computing RRID:SCR_1905). This analysis was based on a prior analysis that revealed that effects of L-DOPA on extinction memory retention (differential SCRs during retention test) were mediated by vmPFC activity during consolidation‘ (Gerlicher et al., 2018).

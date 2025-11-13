@@ -16,14 +16,14 @@
 
 1. Department of Pharmacology and Toxicology, Indiana University School of Medicine Indianapolis United States
 2. Biological and Biomedical Sciences, Harvard Medical School Boston United States
-3. https://ror.org/00dvg7y05 Division of Infectious Diseases, Boston Children’s Hospital Boston United States
-4. https://ror.org/00te3t702 Center for Tropical and Emerging Global Diseases, University of Georgia Athens United States
-5. https://ror.org/00te3t702 Department of Cellular Biology, Franklin College of Arts and Sciences, University of Georgia Athens United States
-6. https://ror.org/00892tw58 Research Centre for Infectious Diseases, School of Biological Sciences, University of Adelaide Adelaide Australia
-7. https://ror.org/00892tw58 Institute for Photonics and Advanced Sensing, University of Adelaide Adelaide Australia
-8. https://ror.org/00892tw58 Institute for Photonics and Advanced Sensing, University of Adelaide Adelaide Australia
-9. https://ror.org/05ktbsm52 Burnet Institute, 85 Commercial Road Melbourne Australia
-10. https://ror.org/03vek6s52 Department of Pediatrics, Harvard Medical School Boston United States
+3. Division of Infectious Diseases, Boston Children’s Hospital Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
+4. Center for Tropical and Emerging Global Diseases, University of Georgia Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
+5. Department of Cellular Biology, Franklin College of Arts and Sciences, University of Georgia Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
+6. Research Centre for Infectious Diseases, School of Biological Sciences, University of Adelaide Adelaide Australia ([ROR:00892tw58](https://ror.org/00892tw58))
+7. Institute for Photonics and Advanced Sensing, University of Adelaide Adelaide Australia ([ROR:00892tw58](https://ror.org/00892tw58))
+8. Institute for Photonics and Advanced Sensing, University of Adelaide Adelaide Australia ([ROR:00892tw58](https://ror.org/00892tw58))
+9. Burnet Institute, 85 Commercial Road Melbourne Australia ([ROR:05ktbsm52](https://ror.org/05ktbsm52))
+10. Department of Pediatrics, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -35,13 +35,25 @@ Apicomplexan parasites exhibit tremendous diversity in much of their fundamental
 
 The human malaria parasite Plasmodium falciparum has a complex lifecycle that involves both human and mosquito hosts. Of its many lifecycle stages, the asexual replication of P. falciparum inside human red blood cells (RBCs) is responsible for the clinical symptoms of malaria. This asexual blood stage starts when a merozoite invades a host RBC and transitions through several morphologies before forming approximately 30 new daughter merozoites (Rudlaff et al., 2020), which egress from their host cell and invade new RBCs (Figure 1a). Host RBCs are approximately 7–8 µm in diameter (Kinnunen et al., 2011) and contain dozens of parasites, each with their own sets of organelles and structures. The small size of P. falciparum and its organelles still poses a challenge to the study of many facets of P. falciparum cell biology, especially when immunostaining is required.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig1-v1.jpg)
+
+**Figure 1.:** (a) Diagram of asexual blood-stage lifecycle of P. falciparum. (b) U-ExM workflow used in this study. PFA = paraformaldehyde, FA = formaldehyde, AA = acrylamide, PG = propyl gallate. Snowflake indicates steps where gels were cryopreserved. (c) Comparison of brightfield and DAPI staining of unexpanded P. falciparum parasites (inset) with P. falciparum prepared by U-ExM, stained with N-hydroxysuccinimide (NHS) ester (protein density; grayscale) and SYTOX Deep Red (DNA; cyan), and imaged using Airyscan microscopy. Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. Scale bars = 2 µm. (d) Summary of all organelles, and their corresponding antibodies, imaged by U-ExM in this study.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Forty-two of the expanded gels in this study were measured post-expansion to (b) calculate their expansion factor. The median gel length was 51 mm, which corresponds to a 4.25× expansion factor, and so for ‘actual’ measurements, values were divided by 4.25.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-aldolase (cytoplasm; magenta) antibodies and imaged by Airyscan microscopy across the asexual blood stage. Yellow line indicates likely position of food vacuole lacking hemozoin crystal. n = nucleus number. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
 Expansion microscopy is a set of sample preparation techniques that isotropically increase the physical size of a microscopy sample (Wassie et al., 2019). While many expansion microscopy methods have been developed, ultrastructure expansion microscopy (U-ExM) (Gambarotto et al., 2019) was the first used in Plasmodium and since has been used in P. falciparum and across multiple apicomplexan parasites (Bertiaux et al., 2021; Dave et al., 2022; Liffner and Absalon, 2021; Oliveira Souza et al., 2022; Rashpa and Brochet, 2022; Severo et al., 2022). U-ExM results in the ~4.5-fold isotropic expansion of the sample and largely preserves its proteome, making it compatible with antibody staining and many fluorescent dyes (Gambarotto et al., 2019). The increase in physical sample size results in a dramatic increase in the ability to identify and distinguish different parasite structures. Thus, some structures that could previously only be investigated using electron microscopy can now be studied with the flexibility, scalability, and inexpensive nature of conventional light microscopy.
 
 Application of U-ExM to Plasmodium, and other Apicomplexa, has already enhanced our understanding of parasite cell biology tremendously, resulting in the identification of new parasite structures and better characterization of the size and shape of others (Bertiaux et al., 2021; Liffner and Absalon, 2021; Qian et al., 2022; Rashpa and Brochet, 2022; Simon et al., 2021; Tomasina et al., 2022; Tosetti et al., 2020). Its significant impact on the field in such a short amount of time indicates U-ExM will be a technique heavily used in both Plasmodium and Apicomplexa more broadly for the foreseeable future. Considering this, we set out to image P. falciparum structures and organelles across the asexual blood stage of the lifecycle to serve as a reference for the expanding number of U-ExM users who study Apicomplexa and uncover previously invisible aspects of the cell biology of P. falciparum.
 
 ## Results
 
-## U-ExM reveals multiple parasite structures without the use of antibodies
+### U-ExM reveals multiple parasite structures without the use of antibodies
 
 Dyes that are not antigen-specific are commonplace in light microscopy. N-hydroxysuccinimide (NHS) esters conjugated to dyes are amino-reactive and can be used for fluorescent labeling of protein density (Nanda and Lorsch, 2014). Similarly, BODIPY TR ceramide (BODIPY TRc) and other dye-conjugated fatty acids are commonly used for labeling lipids (Marks et al., 2008). Coupling U-ExM with these dyes has already revealed parasite structures for which specific antibodies did not exist (Bertiaux et al., 2021; Liffner and Absalon, 2021; Simon et al., 2021). While antibody-based labeling provides high specificity, this labeling lacks complexity and is limited to the specific protein or antigen that is being targeted. The more general stains increase the number of parasite features or organelles we can observe in the same sample without additional antibody markers. Therefore, these general stains allow for low-specificity but high-complexity imaging. An example of this principle is the use of uranyl acetate in electron microscopy to increase contrast by increasing the electron density of phosphate-rich structures in the cell (Rudlaff et al., 2020). While NHS esters and uranyl acetate can bring out similar features in the cell, they do not have the same reactivity and are therefore not equivalent stains. To better profile the subcellular organization of P. falciparum during the asexual blood stages, we set out to determine what parasite structures could, and could not, be visualized by U-ExM when using some of these dyes.
 
@@ -51,11 +63,23 @@ To identify and validate the location of as many parasite organelles and structu
 
 The first protein we imaged was aldolase, a marker of the parasite cytoplasm (Figure 1—figure supplement 2). Aldolase staining was present in all asexual replication stages. During the ring stage, the ‘ameboid’ shape of the parasite is readily visualized, consistent with previous studies of this stage in time-lapse microscopy of live parasites (Grüring et al., 2011; Figure 1—figure supplement 2). Regions within the parasite where both aldolase and NHS ester staining were absent are consistent with the expected area of the food vacuole. Typically, the food vacuole would be filled with hemozoin; however, this crystal likely cannot expand and therefore leaves a large space inside the parasite that does not contain significant protein density (Figure 1—figure supplement 2).
 
-## The CP, nuclear MTOC, and microtubules
+### The CP, nuclear MTOC, and microtubules
 
 The first major transition during the blood stage of the lifecycle occurs when the parasites turn from rings into trophozoites. Soon after this transition, the parasite will begin to replicate its DNA and undergo mitosis followed by nuclear fission (Gerald et al., 2011). Mitosis is coordinated by microtubules, which are in turn nucleated by structures called microtubule organizing centers (MTOCs) (Sanchez and Feldman, 2017). P. falciparum has a structure known as the CP that spans the nuclear envelope, with intranuclear and cytoplasmic portions (Simon et al., 2021). In this study, we will refer to the intranuclear portion of the CP as the inner CP and the cytoplasmic portion of the CP as the outer CP. The inner CP acts as the nuclear MTOC that coordinates P. falciparum mitosis, while the function of the outer CP is unknown in asexual blood-stage parasites. The most commonly used MTOC markers are the centrins, which in Plasmodium comprise four proteins that localize to the outer CP and appear after intranuclear microtubules have already formed (Simon et al., 2021). Given that an MTOC is required for microtubule formation, this implies that an MTOC forms before centrin is visible. To investigate these processes in more detail, we visualized the biogenesis and dynamics of the CP and microtubules during the trophozoite and schizont stages by pairing NHS ester, which we have recently shown can stain both the inner and outer CP (Liffner and Absalon, 2021), with an anti-centrin antibody (Clone 20H5, raised against centrin from Chlamydomonas) (Figure 2a). This antibody likely recognizes centrin 3 in P. falciparum (Mahajan et al., 2008), but a recent study suggests that all four P. falciparum centrins share an outer CP localization (Voß et al., 2022).
 
-## CP biogenesis and disassembly
+![Figure 2.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig2-v1.jpg)
+
+**Figure 2.:** 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-centrin (outer CP; magenta) antibodies and imaged using Airyscan microscopy. (a) Images of whole parasites throughout asexual blood-stage development. (b) Whole parasite panel (left) followed by individual CP or CP pair zooms following our proposed timeline of events in CP biogenesis, dynamics, and disassembly. Yellow line = cytoplasmic extensions, blue line = nuclear envelope, green line = parasite plasma membrane. Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. White scale bars = 2 µm, yellow scale bars = 500 nm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Mononucleated 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), anti-centrin (outer CP, magenta) and anti-tubulin (microtubules, yellow) antibodies and imaged by Airyscan microscopy. Nuclei form the first hemispindle before centrin is observed and associated with the parasite plasma membrane (PPM) following visualization of centrin. (b) Quantification of the number of cytoplasmic extensions (branches) per outer CP in parasites of varying age. Individual CPs from mitotic spindles were assessed separately. (c) Quantification of the co-occurrence of outer CP branch number with centrin foci. (d) In the 8% of two cytoplasmic extension outer CPs that had only a single centrin focus, these were likely non-resolvable at the image resolution. (e) Parasites that had started mitosis were stained with NHS ester and Golgi marker ERD2 (magenta). Golgi was seen associating with CPs and appeared to duplicate with the formation of the mitotic spindle. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-ERD2 (Golgi; magenta) antibodies and imaged by Airyscan microscopy across the asexual blood stage. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. White scale bars = 2 µm, yellow scale bars = 500 nm. 4× zooms show Golgi–centriolar plaque interaction.
+
+### CP biogenesis and disassembly
 
 Neither a recognizable CP nor above-background centrin staining were observed in ring-stage parasites (Figure 2b; Simon et al., 2021). The inner CP first appeared in mononucleated trophozoites but changed morphology as these parasites got closer to their first nuclear division. In the 23 mononucleated trophozoites we imaged, 52% of CPs lacked cytoplasmic extensions (Figure 2—figure supplement 1a and b). These CPs contained only the inner CP and lacked the outer CP as observed by NHS ester (Figure 2a and b). All 12 of the trophozoites with an inner CP but no outer CP also lacked centrin staining (Figure 2—figure supplement 1c). This matches previous reports that centrin is specifically associated with the outer CP (Simon et al., 2021). As expected, this early CP lacking the outer CP was capable of nucleating microtubules (Figure 2—figure supplement 1a). The centrin focus and outer CP became visible in mononucleated trophozoites after nucleation of the intranuclear microtubules but prior to the first CP duplication event of the first mitosis (Figure 2—figure supplement 1a), consistent with previous reports (Simon et al., 2021). The cytoplasmic extensions that form the outer CP began at the nuclear membrane and ended at an NHS ester-dense focus located at the PPM (Figure 2b). This association between the outer CP and the PPM has previously been observed in gametocytes and asexual blood stages (Li et al., 2022; Rashpa et al., 2023), but the temporal nature of this association during the asexual blood stages remained uncharacterized. Our observation of the outer CP using NHS ester, discussed further below, combined with the temporal pattern of outer CP–PPM association, suggests that nuclei are physically anchored to the PPM while parasites are undergoing mitosis.
 
@@ -67,7 +91,7 @@ This observed pattern of duplication and segregation also suggests that double-b
 
 Outer CP branch number reaches semi-synchrony at the beginning of segmentation as defined by the first appearance of a basal complex by NHS ester. At this point, rather than seeing a variety of CP states and branch numbers, virtually all CPs in the same cell share the same mitotic state and branch number. Most CPs are mitotic with a single cytoplasmic extension during early segmentation and then appear as single CP with a single extension during mid-segmentation (Figure 2—figure supplement 1b). By the time segmentation is completed, the CP is no longer visible by NHS ester, suggesting that it may disassemble after all mitotic events are finished (Figure 2b, Figure 2—figure supplement 1b). To ensure imaged parasites were fully segmented, we arrested parasite development by adding the reversible protein kinase G inhibitor compound 1 (C1) (Collins et al., 2013; Gurnett et al., 2002; Taylor et al., 2010). This inhibitor arrests parasite maturation after the completion of segmentation but before egress. When C1 is washed out, parasites egress and invade normally, ensuring that observations made in C1-arrested parasites are physiologically relevant and not a developmental artifact due to arrest. Of 159 nuclei imaged in 6 C1-arrested schizonts, none showed the presence of a CP.
 
-## The apical polar rings, Golgi, and rhoptries are all segregated with the CP
+### The apical polar rings, Golgi, and rhoptries are all segregated with the CP
 
 Given the cytoplasmic coordination of mitotic events and the physical tethering of the nucleus to the PPM throughout schizogony, we investigated whether we could observe any coordination extending to the apical organelles and other structures known to be present near the CP at these stages. We observed close association between the outer CP and the rhoptries, Golgi, basal complex, and an apical density reminiscent of the APR.
 
@@ -81,49 +105,85 @@ In contrast, we did not observe a CP association in the distribution of the ER (
 
 Combining the observations that the CP is physically tethered to the PPM through the outer CP and that this anchoring is closely associated with organelles that will define the apical end of the parasite (Golgi, rhoptries, basal complex, and APRs), we suggest that this tethering by the outer CP establishes apical–basal polarity in the parasite early in schizogony. Considering that rhoptries are formed from Golgi-derived cargo (Ben Chaabene et al., 2021; Counihan et al., 2013), it is unsurprising to find the Golgi forms part of this apical cluster of organelles throughout schizogony. The confined space between nuclear envelope and PPM that these organelles are packed into, for example, may allow each nucleus to provide rhoptry cargo locally to their own rhoptries rather than to all rhoptries in the cell. The same principle could apply to other apical Golgi-derived organelles. However, it remains unclear what role, if any, the outer CP plays in this association, whether any organelles besides the nucleus are physically tethered by these extensions, and how these clusters of organelles remain together during the rapid mitotic events constantly separating sister CPs.
 
-## Characterization of intranuclear microtubules
+### Characterization of intranuclear microtubules
 
 P. falciparum asexual blood stages are known to have two classes of microtubules; intranuclear microtubules, which partake in mitosis (Liffner and Absalon, 2021; Simon et al., 2021), and subpellicular microtubules (SPMTs), which are cytosolic and extend in a single spine from the apical end of merozoites (Liffner and Absalon, 2021; Simon et al., 2021). Investigating microtubules with an anti-α-tubulin antibody, we failed to detect microtubules in ring-stage parasites, consistent with previous observations (Figure 3—figure supplement 1; Simon et al., 2021). Intranuclear microtubules were first visible in mononucleated trophozoite-stage parasites and were present until early segmentation stages, with no intranuclear microtubules visible by the end of segmentation (Figure 3a). Intranuclear microtubules arrange into three distinct spindle structures: hemispindles, mitotic spindles, and interpolar spindles. Hemispindles are microtubule structures coming from a single CP that retract prior to CP duplication. Mitotic spindles appear following CP duplication and separate sister chromatids during mitosis. When the two CPs migrate away from each other, they remain connected by an elongated microtubule structure called the interpolar spindle (or elongated spindle), which retracts prior to nuclear fission (Liffner and Absalon, 2022; Machado et al., 2022; Simon et al., 2021). It has recently been shown that the interpolar spindle is short-lived relative to the hemispindle and mitotic spindle (Machado et al., 2022; Simon et al., 2021). In this study, we observed 24 interpolar spindles, which allowed us to perform the first detailed characterization of this spindle type (Figure 3b).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig3-v1.jpg)
+
+**Figure 3.:** 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-tubulin (microtubules; magenta) antibodies, and imaged using Airyscan microscopy. (a) Images of whole parasites throughout asexual blood-stage development. (b) Nuclei in the process of dividing, with their CPs connected by an interpolar spindle. (c) The number and type of microtubule branches in interpolar spindles and (d) length of interpolar microtubules. (e) SPMTs stained with an anti-poly-glutamylation (PolyE; yellow) antibody. (f) Quantification of the number of SPMTs per merozoite from C1-treated schizonts. (g) SPMT biogenesis throughout segmentation. (h) Model for SPMT biogenesis. PPM = parasite plasma membrane, APRs = apical polar rings, BC = basal complex, CP = centriolar plaque. Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. Scale bars = 2 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The focus of this study was parasites undergoing schizogony, but multiple ring-stage parasites and mononucleated trophozoites were also imaged. For microtubules and centrin, 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and either anti-tubulin (microtubules) or anti-centrin (outer centriolar plaque) (magenta) antibodies and imaged using Airyscan microscopy. For the mitochondrion, ATP synthase F0 subunit DsmHA parasites were stained as described for microtubules and centriolar plaque, except with anti-HA (mitochondrion) antibodies. For the apicoplast, parasites expressing a GFP-tagged copy of the apicoplast targeting signal of acyl carrier protein were stained as described previously except with anti-GFP (apicoplast) antibodies. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
 Interpolar spindles have microtubule branches that connect the two distant CPs (interpolar microtubules), and microtubule branches that do not connect the CPs (non-interpolar microtubules). Each interpolar spindle contained an average of 12.5 (±2.6 SD) total microtubules, of which 1.3 (±0.6 SD) were interpolar microtubules and 11.2 (±2.8 SD) were non-interpolar microtubules (Figure 3c). The average number of non-interpolar branches per inner CP was 5.6, which is similar to the previously reported average number of branches in a hemispindle of 5–6 (Liffner and Absalon, 2021; Simon et al., 2021). This suggests that only the interpolar microtubules retract during the interpolar spindle to hemispindle transition. We measured interpolar microtubules in 3D, adjusting for expansion factor by dividing the measured distance by 4.25, the median expansion factor observed in this study (Figure 1—figure supplement 1; ‘Materials and methods’). All of the following measurements in this study are reported in this expansion-corrected format. Interpolar microtubules ranged from ~1 to 5 µm, with a mean length of 2.9 µm (±1.0 µm SD) or 12.47 µm before expansion factor correction (Figure 3d). In all cases, the CPs connected by interpolar spindles were anchored to the plasma membrane by their cytoplasmic extensions. The large variability in interpolar microtubule size and the continued tethering of the outer CPs to the PPM suggest that interpolar microtubules push PPM-anchored CPs to opposite sides of the cell without causing detachment from the PPM. It is unclear how parasites achieve this sliding effect or how CP-associated organelles are able to retain this association while CPs are moved large distances.
 
-## SPMT length and biogenesis
+### SPMT length and biogenesis
 
 SPMTs are nucleated in the cytoplasm and have long been observed in merozoites (Aikawa, 1967). SPMTs have been shown to be stabilized by polyglutamylation (Bertiaux et al., 2021) and can be identified specifically using a combination of anti-tubulin and anti-PolyE antibodies (Figure 3e). Using this approach, we characterized 86 SPMTs in 50 merozoites from C1-arrested schizonts. These nascent merozoites had between 1 and 3 SPMTs, with an average of 1.7 (±0.6 SD) (Figure 3f). Of 50 imaged merozoites, 48 had at least one SPMT that extended >50% of cell length from the APR to the basal complex. This longest microtubule in a merozoite had an average length of 1.01 µm (±0.24 µm SD). In merozoites with more than one SPMT, the second and third microtubules were shorter than the first, having an average length of 0.8 µm (±0.21 µm SD). Given the large variation in SPMT size and observation that, in segmenting schizonts, the basal end of the SPMTs was in contact with the basal complex throughout segmentation, we hypothesize that most SPMTs measured in our C1-treated schizonts had partially depolymerized. P. falciparum microtubules are known to rapidly depolymerize during fixation (Liffner and Absalon, 2022; Simon et al., 2021). It is unclear, however, why this depolymerization was observed most often in C1-arrested parasites. Thus, we cannot determine whether these shorter microtubules are a by-product of drug-induced arrest or a biologically relevant native state that occurs at the end of segmentation.
 
 Little is known about SPMT biogenesis during the asexual blood stage of P. falciparum, but it is currently hypothesized that they are nucleated by the APRs (Hanssen et al., 2013; Morrissette and Sibley, 2002), as is the case in Toxoplasma (Morrissette and Sibley, 2002; Tran et al., 2010). Curiously, TgCentrin 2 localizes to the APR of Toxoplasma tachyzoites (Hu, 2008), but no Centrin 2 has been observed to localize to the APRs of P. falciparum. Furthermore, it was recently shown that the SPMTs of P. falciparum gametocytes, which lack an APR, are formed at the outer CP, in the space between the nuclear envelope and PPM (Li et al., 2022). Leveraging our ability to specifically detect SPMTs using PolyE, we investigated the possibility that merozoite SPMTs are also formed at the outer CP and subsequently transferred onto the APR during segmentation. In schizonts where nuclei are approaching or have completed their final mitosis (~15n), we observed small cytoplasmic microtubules that stained strongly with PolyE appear in the area between the outer CP and PPM (Figure 3g and h). However, we did not achieve a resolution that allowed us to distinguish individual APRs or to confidently pinpoint whether the microtubules were nucleated at the APRs or the cytoplasmic extensions. Likely, higher resolution imaging techniques are needed to resolve the site of SPMT nucleation in merozoites.
 
-## Segmentation machinery (IMC and basal complex)
+### Segmentation machinery (IMC and basal complex)
 
 Following replication of their genetic material during the trophozoite and early schizont stages, parasites partition their nuclei and organelles into ~30 daughter merozoites from the common cytoplasm of a schizont (Francia and Striepen, 2014). This form of cytokinesis, called segmentation, takes place in the final hours of schizogony and culminates with the physical separation of each daughter cell and their egress from the host RBC. The IMC is a double lipid bilayer formed from ﬂattened vesicles that scaffolds the process of segmentation as well as anchors many proteins important for parasite shape and motility (Harding and Meissner, 2014).
 
-## The IMC cannot be distinguished from the plasma membrane by U-ExM
+### The IMC cannot be distinguished from the plasma membrane by U-ExM
 
 The IMC forms de novo during segmentation starting at the apical end of the parasite, where the outer CP is anchored to the plasma membrane (Figure 4—figure supplement 3a; Harding and Meissner, 2014). This can be observed using the IMC-anchored protein glideosome-associated protein 45 (GAP45), which bridges the IMC and plasma membrane, as well as using BODIPY TRc, which shows increased membrane staining in the area overlapping GAP45 (Jones et al., 2006; Figure 4—figure supplement 3a). As segmentation progresses, the IMC expands around the nucleus and associated organelles until it envelops the daughter cell, leaving an opening at the apical end, where the APR is located, and the basal end, where the basal complex resides (Figure 4—figure supplement 3a). While the pellicle was easily visualized as a whole, we were unable to distinguish the IMC membranes from the PPM (Figure 4—figure supplement 3b and c). We stained parasites using the plasma membrane marker MSP1 and two different IMC markers: GAP45, which lies between the IMC and PPM, and IMC1g, which is attached to the cytoplasmic face of the IMC (Blackman et al., 1994; Cepeda Diaz et al., 2023; Kono et al., 2012). In both cases, we were unable to resolve the IMC marker from MSP1 (Figure 4—figure supplement 3b and c).
 
-## Basal complex dynamics throughout segmentation
+### Basal complex dynamics throughout segmentation
 
 The basal complex is an essential ring structure located at the basal end of the IMC (Morano and Dvorin, 2021). It is hypothesized to act as a contractile ring that guides IMC biogenesis and mediates abscission of newly formed merozoites by separating the IMC and plasma membrane from the residual body. We used parasites where PfCINCH, a basal complex marker, was tagged with a spaghetti monster V5 (smV5) tag to follow basal complex development throughout schizogony (Figure 4a; Rudlaff et al., 2019). CINCH is first visible at early schizogony (3–5 nuclei stage) as a small ring-like structure surrounding an NHS ester-dense focus on the plasma membrane that is tethered to the CP (Figure 4b). Of 55 early schizont CPs imaged, 44 (80%) had matching numbers of outer CP branches and basal complex structures. This suggests that as CPs divide, they each inherit a CINCH ring that has been split by the duplication of the cytoplasmic tethers (Figure 4b). Early IMC proteins have been described to form cramp-like structures like these prior to attaining their characteristic ring structure later in schizogony (Hu et al., 2010; Kono et al., 2012). During the rapid nuclear divisions of schizogony, 77% of the CINCH structures of mitotic CPs show a break in the ring (Figure 4—figure supplement 1b). This break faces a sister basal complex with its own cytoplasmic extension (Figure 4b, Figure 4—figure supplement 1b). These observations suggest that, upon duplication of the outer CP branches, the basal complex ring likely ‘breaks’ into two semicircles, which re-seal to form their own ring prior to the next branch duplication (Figure 4b, Figure 4—figure supplement 1b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig4-v1.jpg)
+
+**Figure 4.:** Parasites expressing an smV5-tagged copy of the basal complex marker CINCH were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-V5 (basal complex; magenta) antibodies and imaged using Airyscan microscopy across segmentation. (a) Images of whole parasites throughout asexual blood-stage development. (b) Basal complex development during schizogony. The basal complex is formed around the parasite plasma membrane (PPM) anchor of the outer centriolar plaque (CP). In nuclei whose outer CP has two branches, and will therefore undergo mitosis, the basal complex rings are duplicated. From early segmentation, the basal complex acquires a stable, expanding ring form. Cytostomes that will form part of merozoites are marked with a white asterisk, while those outside merozoites are marked with a yellow asterisk. Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. Scale bars = 2 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Parasites expressing an smV5-tagged copy of the basal complex marker CINCH were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), and anti-V5 (basal complex; magenta) antibodies and imaged by Airyscan microscopy across segmentation. All nuclei shown in Figure 4b, which describes basal complex biogenesis, had a single centriolar plaque. This figure shows comparable images of nuclei that have duplicated their centriolar plaque and have a visible mitotic spindle. (b) Maximum-intensity projection and 3D rendering during basal complex biogenesis showing semicircles of CINCH staining around the centriolar plaque. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-BIP (endoplasmic reticulum; magenta) antibodies and imaged by Airyscan microscopy across the asexual blood-stage. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-GAP45 (IMC) (magenta) antibodies and imaged using Airyscan microscopy across segmentation. 3D7 parasites were stained with NHS ester, SYTOX, anti-MSP1 (parasite plasma membrane), and either anti-GAP45 (b) or anti-IMC1g (c) antibodies. GAP45 resides in the IMC luminal space, while IMC1g resides on the cytosolic side of the IMC. Neither GAP45 nor IMC1g could be reliably distinguished from MSP1. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
 Once segmentation begins and the outer CP stops duplicating, CINCH forms a bona fide ring with smooth borders (Figure 4). This matches previously reported behavior of early IMC proteins and supports our hypothesis that the cramp-like structures arise from IMC and basal complex division. At this point, nuclei reach a point of semi-synchronicity. All 64 imaged CPs in early segmentation parasites had duplicated and were forming a mitotic spindle. This event marks the last nuclear division the parasite will undergo. Each of these CPs had a single uninterrupted basal complex ring (Figure 4b). Thus, we cease to observe events where a single nucleus is attached to four basal complexes as CPs have ceased committing to future rounds of mitosis. As the parasite undergoes segmentation, the basal complex expands and starts moving in the basal direction. By the time the basal complex reaches its maximum diameter, all nuclear divisions have been completed, each nucleus has a single CP and basal complex, and no mitotic spindles are visible (Figure 4). After this point, the basal complex contracts and continues to move away from the apical end. By the time segmentation is completed, the basal complex is an NHS ester-dense ring that is smaller than the APR.
 
-## NHS ester as a basal complex marker
+### NHS ester as a basal complex marker
 
 While the basal complex stains brightly with NHS ester at the end of segmentation (Figure 4), this staining is not consistent throughout schizogony. NHS ester staining of the basal complex is not visible or is very faint during early schizogony. Once the basal complex attains its bona fide ring form during early segmentation, it stains reliably, though faintly, with NHS ester. This staining intensifies after the basal complex begins to contract. The denser staining observed during basal complex contraction could be due to recruitment of more basal complex proteins at the midpoint of schizogony, an increase in protein density as the ring area decreases during contraction, or both. Once the parasites finish segmentation, the basal complex is at its brightest (Figure 4b). While NHS ester staining correlates with CINCH, it does not perfectly overlap with it. CINCH consistently appears as a larger ring with a slight basal shift relative to NHS ester after the basal complex reaches maximum diameter, an effect most visible at the end of segmentation (Figure 4b). Since this shift is consistent with parasite anatomy regardless of parasite orientation, it suggests it is not an imaging artifact. There is no primary antibody against CINCH at this point, and so it is not possible to determine whether the lack of overlap with NHS ester is due to distance between the smV5 tag and the main protein density of CINCH (CINCH is 230 kDa). It is also possible that this difference in localization reflects basal complex architecture similar to that previously observed in Toxoplasma gondii, where the basal complex consists of multiple concentric rings (Anderson-White et al., 2012; Engelberg et al., 2022; Hu, 2008; Roumégous et al., 2022).
 
-## Mitochondrion and apicoplast
+### Mitochondrion and apicoplast
 
 The apicoplast and mitochondrion undergo pronounced morphological changes during the P. falciparum blood-stage lifecycle (van Dooren et al., 2005; van Dooren et al., 2006). Both are long, and often branching, organelles whose complex three-dimensional morphologies have only been robustly studied using electron microscopy-based techniques (Rudlaff et al., 2020).
 
-## Looped regions of the mitochondrion display low membrane potential
+### Looped regions of the mitochondrion display low membrane potential
 
 To visualize the mitochondria, we stained live parasites using MitoTracker Orange CMTMRos prior to fixation and expansion (Figure 5—figure supplement 1a). MitoTracker Orange CMTMRos accumulates in live mitochondria, driven electrophoretically by membrane potential, and is retained after fixation (Elmore et al., 2004; Poot et al., 1996). When imaged at high resolution, MitoTracker can be used to observe individual cristae in the mitochondria of mammalian cells (Wolf et al., 2019). Plasmodium cristae morphology is different from that found in mammalian mitochondria; cristae are thought to be bulbous or tubular rather than lamellar and are present in gametocytes but absent from asexual blood-stage parasites (Evers et al., 2021; Evers et al., 2023). To our surprise, rather than showing continuous staining of the mitochondria, MitoTracker staining of our expanded parasites revealed alternating regions of bright and dim staining that formed MitoTracker-enriched pockets (Figure 5—figure supplement 1b). These clustered areas of MitoTracker staining were highly heterogeneous in size and pattern. Small staining discontinuities like these are commonly observed in mammalian cells when using MitoTracker dyes due to the heterogeneity of membrane potential from cristae to cristae as well as due to fixation artifacts. At this point, we cannot determine whether the staining we observed represents a true biological phenomenon or an artifact of this sample preparation approach. Our observed MitoTracker-enriched pockets could be an artifact of PFA fixation, a product of local membrane depolarization, a consequence of heterogeneous dye retention, or a product of irregular compartments of high membrane potential within the mitochondrion, to mention a few possibilities. Further research is needed to conclusively pinpoint an explanation.
 
 In addition to these small staining discontinuities, we observed large gaps in MitoTracker staining within parasites at all stages of development. This included pre-segmentation parasites, where we would expect a single continuous mitochondrion to be present (Figure 5—figure supplement 1a). To our knowledge, no membrane potential discontinuities or fixation artifacts of this size have been reported in mammalian cells. So, as a secondary way to visualize the mitochondria and better characterize these staining discontinuities, we generated a transgenic cell line with the putative ATP synthase F0 subunit-d (ATPd, Pf3D7_0311800) tagged with a spaghetti monster HA tag (Viswanathan et al., 2015; Figure 5—figure supplement 2). ATPd is a membrane-embedded proton channel that had not previously been localized to the mitochondria in P. falciparum but was identified as a mitochondrial protein in a recent proteomics study (van Esveld et al., 2021; Evers et al., 2021). Furthermore, its Toxoplasma homolog has been shown to localize to the mitochondria (Barylyuk et al., 2020; Sheiner et al., 2011). We confirmed that ATP synthase subunit F0 localizes to P. falciparum mitochondria, as it largely co-localized with MitoTracker staining, forming a border around it due to its membrane association (Figure 5a, Figure 5—figure supplement 1a). ATPd, like MitoTracker, had a heterogeneous distribution throughout the mitochondria, but it did not show the same large gaps in staining. ATPd allowed us to better visualize regions of the mitochondria that appeared to fold onto themselves and fuse with each other, as has been previously described (van Dooren et al., 2005). Thus, MitoTracker and ATPd are both useful but imperfect markers for the mitochondria, with neither of them showing a continuous, even distribution throughout the organelle.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig5-v1.jpg)
+
+**Figure 5.:** Parasites with an smHA-tagged copy of the ATP Synthase F0 Subunit D (ATPd, Pf3D7_0311800) as a mitochondrial marker were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-HA (mitochondrion; magenta) antibodies and imaged using Airyscan microscopy. (a) Images of whole parasites throughout asexual blood-stage development. Maximum-intensity projections of both a subsection of the cell (partial mito) and the full cell (full mito) are shown. (b) ATPd staining was compared against MitoTracker Orange CMTMRos (yellow), which showed discontinuous staining in looped regions. (c) Area of the mitochondrion was quantified for parasites of varying nucleus number. Seventy-three cells were counted across four biological replicates. ****p<0.001, ns = p >0.05 by one-way ANOVA, error bars = SD. (d) Schizont with mitochondria that have undergone fission (yellow zoom), mitochondria that are shared between two nascent merozoites (black zoom), and mitochondria left outside merozoites in the forming residual body (gray). (e) During fission, mitochondria associate with the outer centriolar plaque (oCP). Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. White scale bars = 2 µm, yellow scale bars = 500 nm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Parasites with an smHA-tagged copy of the ATP Synthase F0 Subunit D (Pf3D7_0311800), a mitochondrial marker, were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), MitoTracker (mitochondrion; yellow), and anti-HA (mitochondrion; magenta) antibodies and imaged Airyscan microscopy across the asexual blood-stage. Maximum-intensity projections that showed NHS Ester, BODIPY, and SYTOX of discernible structures often did not give a good indication of mitochondria shape. To address this, projections of both a subsection of the cell (part) and the full cell (full) are shown. (b) MitoTracker staining showed numerous punctae along the mitochondrion. (c) The percentage of C1-arrested schizonts where mitochondria staining was observed in the RB was quantified. This fluorescence was then compared against the total mitochondria fluorescence (d) and the mean mitochondria fluorescence of one merozoite within that schizont (e). Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) To generate an smHA-tagged copy of ATPd (Pf3D7_0311800), 3D7 Cas9 parasites were transfected with a plasmid that contained a 3′ homology region to ATPd, followed by a C-terminal smHA-tag. (b) Integration of smHA tag into the ATPd locus was confirmed by PCR.
+
 Curiously, 25 of 26 imaged parasites showed MitoTracker discontinuities specifically in regions where the ATPd signal formed looped structures (Figure 5b). These structures were defined as areas where the mitochondria showed a turn or fold of ~180°. Of the 41 looped regions identified, 75% lacked MitoTracker staining. This suggests that mitochondria looped regions in P. falciparum have some degree of depolarization that prevents MitoTracker accumulation or that MitoTracker initially accumulates in these regions but is not bound and retained. The biological significance of these areas, if any, is currently unclear.
 
-## Growth of the apicoplast and mitochondrion
+### Growth of the apicoplast and mitochondrion
 
 To visualize the apicoplast, we utilized a previously established cell line that expresses GFP fused to the apicoplast transit peptide of acyl carrier protein (ACP) (Florentin et al., 2020), which we will refer to as apicoplast-GFP (Figure 6a). This marker allowed for a relatively even and continuous staining of the organelle. We quantified mitochondrion and apicoplast signal area using ATPd-smHA and apicoplast-GFP respectively as a proxy measurement of size (Figures 5c and 6b). Tracking this in parallel to parasite nucleus number allowed us to determine whether the growth of these organelles occurred progressively with simultaneous rounds of mitosis and nuclear division. In mononucleated ring and trophozoite parasites, both the mitochondria and the apicoplast are relatively small, having an average area of 13.39 µm2 (±15.1 µm2 SD) and 4.81 µm2 (±2.62 µm2 SD), respectively, in expanded parasites (Figures 5c and 6b). As expected from live cell observations (van Dooren et al., 2005), both organelles show significant growth and spread throughout the cell in multinucleated parasites, adopting an elongated and branching morphology (Figures 5 and 6). Mitochondria grow almost exclusively during the first two rounds of nuclear replication, achieving an average size of 87.9 µm2 (±15.9 µm2 SD) at the 2–5 nuclei stage. This size remains relatively constant until segmentation, with the average mitochondria size right before the start of fission being 99.6 µm2 (±37.4 µm2 SD) (Figure 5c). In contrast, the apicoplast continues to grow past the 2–5 nuclei stage, having an average size of 25.5 µm2 (±7.21 µm2 SD) at the 2–5 nuclei stage and 34.97 µm2 (±11.23 µm2 SD) in cells with >15 nuclei (Figure 6b). These data suggest that the mitochondrion and apicoplast do not grow simultaneously with or as a response to nuclear replication during schizogony. Rather, both organelles show the largest increase in size during the 1–2 nuclei transition and either plateau in size, in the case of the mitochondria, or enter a second phase of slower growth that ends shortly before segmentation, in the case of the apicoplast.
 
@@ -131,7 +191,7 @@ To visualize the apicoplast, we utilized a previously established cell line that
 
 **Figure 6.:** Parasites expressing GFP-conjugated to the apicoplast transit signal of ACP (ACPTs-GFP) were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and anti-GFP (apicoplast) (magenta) antibodies and using Airyscan microscopy. (a) Images of whole parasites throughout asexual blood-stage development. Maximum-intensity projections of both a subsection of the cell (partial mito) and the full cell (full mito) are shown. (b) Area of the apicoplast was quantified for parasites of varying nucleus number. Seventy cells were counted across three biological replicates. ****p<0.001, *p<0.05 by one-way ANOVA, error bars = SD. (c) Representative images of the different stages of apicoplast fission. Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. Asterisks represent centriolar plaques. Scale bars = 2 µm.
 
-## Fission of the mitochondrion and apicoplast
+### Fission of the mitochondrion and apicoplast
 
 P. falciparum has a single, large, branching, mitochondrion and apicoplast throughout most of the asexual blood stage (van Dooren et al., 2005; van Dooren et al., 2006; Verhoef et al., 2021). During segmentation, however, these organelles undergo fission such that each merozoite inherits an individual apicoplast and mitochondrion (Rudlaff et al., 2020; van Dooren et al., 2005). While it has been shown that apicoplast fission occurs before mitochondrial fission, it is unclear how fission occurs (Rudlaff et al., 2020). A recent review (Verhoef et al., 2021) posed three possible mechanisms: synchronous fission where the organelle simultaneously divides into all daughter parasites at once, outside-in fission where fission occurs at the ends of the organelle, or branching point fission where a first fission event divides the organelle into larger segments and a subsequent fission event leaves each merozoite with an individual organelle (Verhoef et al., 2021). It also remains unclear how accurate segregation into daughter cells is monitored. In T. gondii, the apicoplast associates with the centrosomes prior to undergoing fission. A similar association between apicoplasts and CPs has been proposed in Plasmodium but still lacks evidence due to the difficulty of observing the Plasmodium CP in live cells (van Dooren et al., 2005). The mitochondrion is not thought to associate with the CP in Toxoplasma or Plasmodium, and its mechanism for ensuring accurate segregation remains unknown.
 
@@ -139,55 +199,75 @@ In the process of imaging the mitochondria and apicoplasts of segmenting parasit
 
 Both mitochondria and apicoplast fission showed neighboring nascent merozoites that shared a single branch of mitochondria or apicoplast passing through both of their basal complexes while others had an individual mitochondrion or apicoplast that had already separated from the rest (Figures 5d and 6c). This suggests that fission does not occur synchronously (Figure 5d) and supports the model of branching point fission. In other words, parasites seem to undergo a primary fission event that leaves only some merozoites sharing stretches of the organelles and then a subsequent fission event leaves each merozoite with an individual apicoplast and mitochondrion (Figure 5e). Unfortunately, BODIPY TRc does not distinctly stain the membranes of the mitochondria and apicoplast. So, it is not possible for us to determine whether the observed breaks in staining of our chosen organelle markers truly indicate a complete fission of the mitochondria or apicoplast membranes. Thus, while suggestive of branching point fission, our data is not sufficient to conclusively determine the sequence of fission events in these organelles. More research with additional mitochondrial and apicoplast markers is needed to confirm the observations made in this study and conclusively map out the growth and fission of these organelles.
 
-## Characterization of residual body mitochondria
+### Characterization of residual body mitochondria
 
 At the completion of segmentation, the parasite forms a structure known as the residual body, which contains parasite material, such as the hemozoin crystal, that was not incorporated into merozoites during segmentation (Rudlaff et al., 2020). The residual body is poorly understood in Plasmodium, but in Toxoplasma it has been shown that a significant amount of the mitochondria, and not the apicoplast, is left behind in the residual body following segmentation (Nishi et al., 2008).
 
 There is no well-characterized marker of the residual body in Plasmodium. So, for this study, we defined the residual body as any area within the parasitophorous vacuole membrane but visibly external to any merozoite in a C1-arrested schizont as determined by BODIPY TRc staining. We imaged 35 C1-arrested schizonts and observed that 54% had mitochondrial staining inside the residual body (Figure 5d, Figure 5—figure supplement 1c). To determine the proportion of total mitochondria that gets included in the residual body, we quantified the fluorescence of both mitochondria in the residual body and mitochondria in merozoites. Of the 19 parasites that showed mitochondria staining inside the residual body, the amount of material ranged from 1 to 12% of the total mitochondrial staining in the parasite (Figure 5—figure supplement 1d). On average, the residual body had approximately 1.5× more mitochondrial staining than the average merozoite (Figure 5—figure supplement 1e). No significant apicoplast staining was ever observed in the residual body, similarly to what has been reported for Toxoplasma (Nishi et al., 2008).
 
-## Cytostomes
+### Cytostomes
 
 During its intraerythrocytic development, P. falciparum engulfs host cell cytoplasm from which it catabolizes hemoglobin as a source of amino acids (Francis et al., 1997). The parasite is separated from its host cell by the parasitophorous vacuole, and therefore the uptake of host-cell cytosol requires invagination of both the PPM and PVM. The cytostome coordinates this endocytic process and is comprised of two key regions: a protein-dense collar region, which forms the pore through which membrane invagination will occur, and the membranous bulb region, which contains the RBC-derived cargo (Milani et al., 2015; Xie et al., 2020).
 
-## NHS ester staining reveals pore-like structures at the PPM
+### NHS ester staining reveals pore-like structures at the PPM
 
 Prior to this study, cytostomes were not immediately obvious by NHS ester staining given the large number of features that were visible using this stain but pending validation. While observing the basal complex of segmenting schizonts (Figure 4a), we noticed that merozoites contained a second NHS ester-dense ring (Figure 7a). The size and position of this NHS ester ring matched that of an endocytic micropore recently identified in Toxoplasma tachyzoites (Koreny et al., 2022). In that study, the micropore was identified using Kelch13 (K13) as a marker (Koreny et al., 2022). The Plasmodium equivalent to this K13 micropore is the cytostome, so to determine whether this NHS ester-dense ring was indeed a cytostome, we evaluated a parasite strain where the endogenous K13 was fused to GFP (Birnbaum et al., 2017). Investigation using this parasite line revealed that the NHS ester-dense ring also stained with K13, suggesting that this structure is a cytostome (Figure 7b).
 
-## PFA-glutaraldehyde fixation allows visualization of cytostome bulb
+![Figure 7.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig7-v1.jpg)
+
+**Figure 7.:** (a) Parasites expressing an smV5-tagged copy of the basal complex marker CINCH, prepared by U-ExM, and stained with anti-V5, show N-hydroxysuccinimide (NHS) ester-dense rings that are negative for this basal complex marker. (b) Parasites prepared by U-ExM where the cytostome marker Kelch13 was conjugated to GFP (K13-GFP) and stained with anti-GFP. Image shows co-localization between K13-GFP and the putative cytostome. NHS ester-dense ring. (c) Comparison between paraformaldehyde (PFA)-only and PFA-glutaraldehyde fixed U-ExM parasites, showing lysed (PFA only, orange) and intact (PFA-glutaraldehyde, magenta) red blood cell (RBC) membranes. (d) In PFA-only fixed parasites, only the cytostomal collar is preserved, while both the collar and bulb are preserved upon PFA-glutaraldehyde fixation. (e) K13-GFP parasites were either fixed in PFA only or PFA-glutaraldehyde, prepared by U-ExM, stained with NHS ester (grayscale), SYTOX (cyan), and anti-GFP (cytostome) (magenta) antibodies and imaged using Airyscan microscopy across the asexual blood stage. Zoomed regions show cytostomes. Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. White scale bars = 2 µm, yellow scale bars = 500 nm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Parasites expressing a GFP-tagged copy of the cytostome marker Kelch13 (K13-GFP) were prepared for ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale) and anti-GFP (cytostome; magenta) antibodies and imaged using Airyscan microscopy. ‘Double’ cytostomes where two collars appeared to be stacked on top of each other, and cytostomes approximately twice the diameter of other cytostomes were occasionally observed. Additionally, in almost all segmenting schizonts, multiple cytostomes were observed that were not incorporated into the forming merozoites. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Black scale bar = 2 µm, yellow scale bars = 500 nm.
+
+### PFA-glutaraldehyde fixation allows visualization of cytostome bulb
 
 The cytostome can be divided into two main components: the collar, a protein-dense ring at the PPM where K13 is located, and the bulb, a membrane invagination containing RBC cytoplasm (Milani et al., 2015; Xie et al., 2020). While we could identify the cytostomal collar by K13 staining, these cytostomal collars were not attached to a membranous invagination. Fixation using 4% v/v PFA is known to result in the permeabilization of the RBC membrane and loss of its cytoplasmic contents (Tonkin et al., 2004). Topologically, the cytostome is contiguous with the RBC cytoplasm, and so we hypothesized that PFA fixation was resulting in the loss of cytostomal contents and obscuring of the bulb. PFA-glutaraldehyde fixation has been shown to better preserve the RBC cytoplasm (Tonkin et al., 2004). Comparing PFA only with PFA-glutaraldehyde fixed parasites, we could clearly observe that the addition of glutaraldehyde preserves both the RBC membrane and RBC cytoplasmic contents (Figure 7c). Further, while only cytostomal collars could be observed with PFA-only fixation, large membrane invaginations (cytostomal bulbs) were observed with PFA-glutaraldehyde fixation (Figure 7d). Cytostomal bulbs were often much longer and more elaborate spreading through much of the parasite (Video 1), but these images are visually complex and difficult to project, so images displayed in Figure 7 show relatively smaller cytostomal bulbs. Collectively, this data supports the hypothesis that these NHS ester-dense rings are indeed cytostomes and that endocytosis can be studied using U-ExM, but PFA-glutaraldehyde fixation is required to maintain cytostome bulb integrity.
+
+![Video 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-video1.mp4.jpg)
+
+**Video 1.:** Schizont stage parasite fixed with paraformaldehyde and glutaraldehyde to preserve erythrocyte membrane, prepared using ultrastructural expansion microscopy (U-ExM) and stained with N-hydroxysuccinimide (NHS) ester (protein density, grayscale) and SYTOX (DNA, cyan). This slice-by slice video through the parasite shows the elongated, protein-dense, cytostome invaginations in the parasite.
 
 We subsequently harvested K13-GFP parasites across the parasite lifecycle and imaged them following either PFA only or PFA-glutaraldehyde fixation. K13-stained cytostomes were detected at all stages of the parasite lifecycle (Figure 7e). Ring-stage parasites typically contained one or two cytostomes, which increased in number during the trophozoite stage and schizogony (Figure 7e).
 
 Single cytostomes appear in the area containing the IMC near the apical organelles at the same time as the basal complex forms a complete ring. Cytostomes remain within the IMC area but change positions within the nascent merozoite as segmentation progresses (Figure 4b, white asterisks). The majority of merozoites in C1-arrested schizonts contained a single cytostome. This suggests that cytostomes are incorporated into the IMC of merozoites and inherited early in segmentation. Clusters of cytostomes that had not been incorporated into merozoites during segmentation were observed either adjacent to nascent merozoites or as part of the residual body (Figure 7—figure supplement 1 and Figure 4b, yellow asterisk). It is currently unclear whether there are any functional differences between the cytostomes that are incorporated into merozoites and those that are left behind.
 
-## Non-canonical cytostome collar morphologies
+### Non-canonical cytostome collar morphologies
 
 We noticed a number of different cytostome morphologies and organizational patterns (Figure 7—figure supplement 1). Cytostomes frequently clustered together and did not appear randomly distributed across the PPM (Figure 7e). Some cytostomes would form what appeared to be higher order structures where two or three distinct cytostomal collars appeared to be stacked end-on-end (Figure 7—figure supplement 1). Cytostomes have a relatively well-defined and consistent size (Aikawa, 1971; Yang et al., 2019), but occasionally we observed very large cytostomal collars that were approximately twice the diameter of other cytostome collars in the same cell (Figure 7—figure supplement 1). It is unclear what the function of these higher order structures or large cytostomes is, if they represent biogenesis transition states, or indeed if they are performing some specialized endocytosis.
 
-## The rhoptries
+### The rhoptries
 
 To invade host RBCs, merozoites secrete proteins from specialized secretory organelles known as the rhoptries and micronemes. While both the rhoptries and micronemes are well studied in the context of Plasmodium biology, neither have been investigated in detail using expansion microscopy in Plasmodium. We previously showed that fully formed rhoptries can be observed by NHS ester staining alone (Liffner and Absalon, 2021), but did not investigate their biogenesis.
 
-## Rhoptries can be observed from early in their biogenesis using NHS ester staining
+### Rhoptries can be observed from early in their biogenesis using NHS ester staining
 
 Rhoptries consist of a neck and bulb region, with the tip of the neck being loaded into the APRs of merozoites. Despite both being formed from Golgi-derived cargo, the neck and bulb regions have distinct proteomes (Counihan et al., 2013). We first tracked rhoptry bulb biogenesis across schizogony using antibodies directed against the rhoptry bulb marker rhoptry-associated protein 1 (RAP1).
 
 Nascent rhoptries were detected early in schizogony, with RAP1 foci appearing adjacent to all branches of the outer CP from parasites with 6–10 nuclei in a one-to-one ratio, as described above (Figure 8a, Figure 8—figure supplement 1b). These foci co-localized with NHS ester densities of the same size and round shape, no elongated neck-like structures were visible by NHS ester (neck biogenesis described in more detail below). This matches reports that rhoptry bulb biogenesis occurs first (Bannister et al., 2000; Counihan et al., 2013), with neck biogenesis not occurring until segmentation. As early as the last mitotic event during early segmentation, rhoptry bulbs were observed as pairs, with 88 of 93 (95%) CPs observed forming a mitotic spindle being associated with two RAP1-positive NHS ester densities per outer CP branch. Finally, in newly invaded ring-stage parasites, strong RAP1 staining was observed at the PPM/PVM (Figure 8—figure supplement 1a), supporting previously reported observations that secreted RAP1 coats the merozoite during invasion (Riglar et al., 2011).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig8-v1.jpg)
+
+**Figure 8.:** 3D7 parasites were prepared by ultrastructural expansion microscopy (U-ExM), stained with N-hydroxysuccinimide (NHS) ester (grayscale), BODIPY TRc (white), SYTOX (cyan), and an anti-rhoptry antibodies and imaged using Airyscan microscopy. (a) Images of whole parasites throughout schizogony stained using an anti-RAP1 (rhoptry bulb; magenta) antibody. (b) Zoom into rhoptry pairs of 3D7 parasites that were prepared for U-ExM and stained with NHS ester (grayscale) along with antibodies against RAMA (rhoptry bulb; magenta) and RON4 (rhoptry neck; yellow) to assess rhoptry neck biogenesis. We observed that the rhoptry neck begins as a single focus inside each rhoptry. Rhoptries then get duplicated and segregated alongside the centriolar plaque. During the final mitosis, the rhoptry neck begins to elongate and the rhoptries separate from centriolar plaque. Images are maximum-intensity projections, number on image = Z-axis thickness of projection in µm. Scale bars = 2 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/88088/elife-88088-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (a) The rhoptry marker RAP1 was observed coating the outside of a recently invaded ring-stage parasite. (b) Different combinations of rhoptries and plaques observed while imaging parasites undergoing schizogony. (c) Representative image of E64-arrested schizont stained with N-hydroxysuccinimide (NHS) ester (grayscale), the rhoptry bulb marker RAMA (magenta), and the rhoptry neck marker RON4 (yellow). (d) In early-segmentation schizonts that were either undergoing their final mitosis, or had completed their final mitosis (post-mitosis), the degree of heterogeneity between rhoptry pairs was quantified. Rhoptry pairs that showed visible differences in either size or NHS ester staining density were considered heterogeneous. (e) Breakdown of rhoptries using different classifications of heterogeneity. Images are maximum-intensity projections, number on image = Z-depth in µm of projection. Scale bars = 2 µm.
+
 Our data not only suggests that rhoptry biogenesis occurs well before segmentation, when nuclei still have several rounds of mitosis to complete, but also that rhoptries remain CP-associated during these mitotic events. Instances of this association with the CP have been observed before (Bannister et al., 2000; Rudlaff et al., 2020) but its mechanism remains unknown. To our knowledge, this is the first in-depth documentation of a rhoptry–CP association throughout schizogony in Plasmodium.
 
-## Rhoptry heterogeneity during early schizogony and segmentation
+### Rhoptry heterogeneity during early schizogony and segmentation
 
 Rhoptries associated with the same CP during early schizogony sometimes differ in size (Figure 8—figure supplement 1b). This is not surprising given the speed of mitotic events requires near-constant biogenesis of new rhoptry bulbs. By the time segmentation is underway, instead of inheriting one sister rhoptry in the final mitotic event of schizogony, each CP will inherit a pair of rhoptries each. At this point, the speed of these mitotic events slows and parasites reach a point of semi-synchrony. To our surprise, this synchrony does not extend to rhoptry pairs; the two rhoptries inherited by segmenting daughter cells remain different from each other. This heterogeneity in rhoptry pairs during early segmentation has been documented before by electron microscopy (Bannister et al., 2000; Rudlaff et al., 2020). Of 109 rhoptry pairs imaged in early segmentation schizonts undergoing their last miotic event (where CPs were observed forming mitotic spindles), only 4% had two rhoptries of similar size and density (Figure 8—figure supplement 1d). We observed that 40% of these 109 rhoptry pairs had different size but equal NHS ester density, 21% had the same size but different NHS ester density, and 35% differed in both size and NHS ester density (Figure 8—figure supplement 1e). As expected from previous reports, this heterogeneity was lost after the completion of this last miotic event and rhoptry neck elongation. Of 98 rhoptry pairs imaged in non-mitotic segmenting parasites, 76% had two rhoptries of similar size and density (Figure 8—figure supplement 1d). It is still unclear how the one-to-two rhoptry transition occurs and whether rhoptry heterogeneity has a biological role in biogenesis and maturation of the organelles.
 
 Overall, we present three main observations suggesting that rhoptry pairs undergo sequential de novo biogenesis rather than dividing from a single precursor rhoptry. First, the tight correlation between rhoptry and outer CP branch number suggests that either rhoptry division happens so fast that transition states are not observable with these methods or that each rhoptry forms de novo and such transition states do not exist. Second, the heterogeneity in rhoptry size throughout schizogony favors a model of de novo biogenesis given that it would be unusual for a single rhoptry to divide into two rhoptries of different sizes. Lastly, well-documented heterogeneity in rhoptry density suggests that, at least during early segmentation, rhoptries have different compositions. Heterogeneity in rhoptry contents would be difficult to achieve so quickly after biogenesis if they formed through fission of a precursor rhoptry. While constant de novo biogenesis could explain why one rhoptry can appear smaller or less mature than the other (Bannister et al., 2000; Rudlaff et al., 2020), it is currently unclear why heterogeneity in rhoptry density only appears during early segmentation and not earlier. Thus, this model is not enough to explain all the variation in rhoptry size and density observed throughout schizogony. Furthermore, a lot of unknowns remain about what exactly governs rhoptry number during the rapid rounds of asynchronous nuclear division (Klaus et al., 2022), how the transition to a rhoptry pair is signaled, and how many rounds of de novo rhoptry formation parasites undergo.
 
-## Rhoptry neck biogenesis and elongation
+### Rhoptry neck biogenesis and elongation
 
 In order to observe rhoptry neck biogenesis in more detail, we stained parasites against the rhoptry apical membrane antigen (RAMA, a rhoptry bulb marker) and rhoptry neck protein 4 (RON4, a rhoptry neck marker) (Richard et al., 2010; Topolska et al., 2004). RAMA is anchored to the rhoptry bulb membrane and only stains the periphery of the rhoptry bulb as marked by NHS ester (Figure 8b, Figure 8—figure supplement 1c). RON4 is absent from the earliest rhoptry bulbs, appearing as a focus within the rhoptry bulb shortly before early segmentation and before the rhoptry neck could be distinguished from the bulb by NHS ester staining alone (Figure 8b). During early segmentation, when rhoptry pairs first become visible, we observe an uneven distribution of RON4 within each pair. RON4 preferentially associates with one of the rhoptries, with the staining on the second rhoptry being fainter, more diffuse, or even absent in some cases. Of 84 rhoptry pairs observed at this stage, 72 (86%) showed an uneven distribution of RON4. To our surprise, when these rhoptry pairs were of different NHS ester densities, the larger share of RON4 associated with the less dense rhoptry (Figure 8b). Previous observations of rhoptry density differences by electron microscopy have been ascribed to differences in rhoptry age or maturity, with the denser rhoptry being more mature. So, finding RON4 to be more abundant in the less dense rhoptry suggests that either heterogeneous RON4 accumulation cannot be explained by rhoptry age or that the less dense rhoptry is instead the older rhoptry. The RON4-positive rhoptry neck elongates during segmentation, attaining its characteristic shape by mid to late segmentation and becoming observable by both RON4 staining and NHS ester (Figure 8). At this point, nearly all rhoptry necks had an equal distribution of RON4 (of 76 rhoptry pairs observed at these stages, 72 [95%] had an equal distribution of RON4).
 
-## The micronemes
+### The micronemes
 
 Previous studies have suggested that micronemes may be heterogeneous and that apical membrane antigen 1 (AMA1) and other micronemal markers such as erythrocyte binding antigen-175 (EBA175) reside in different subsets of micronemes (Absalon et al., 2018; Ebrahimzadeh et al., 2019; Healer et al., 2002). We reasoned that individual micronemes may be visible using U-ExM and imaged parasites stained with AMA1 and EBA175 to observe their biogenesis and relative distribution. The first microneme marker to appear during schizogony was AMA1. Large puncta of AMA1 appear near the rhoptries when the basal complex is at its maximum diameter (Figure 9a). At this point, EBA175 is not yet detectable above background fluorescence. At the end of segmentation, we observe AMA1 has arranged itself into small, densely arranged puncta below the APR and around the rhoptry neck. We also observe EBA175 staining in puncta that are less densely arranged and have little co-localization with AMA1. EBA175 puncta are basal to the AMA1 puncta, being closer to the rhoptry bulb. They also form a cloud of larger diameter than the one formed by AMA1 such that, when viewed from above the APR, two concentric clouds are observed with the core being AMA1 positive and the periphery being EBA175 positive (Figure 9b and c). We could observe a punctate NHS ester staining pattern at the apical end of merozoites (Figure 9b), which we reasoned could be micronemes. The AMA1 and EBA175 staining we observed in late-stage schizonts partially overlaps with this punctate NHS ester pattern, suggesting that NHS ester punctae are micronemes (Figure 9c). However, many NHS ester-positive foci did not stain with either AMA1 or EBA175 despite being morphologically indistinguishable from those which did. This suggests that NHS ester stains more than just the micronemes and that some of these foci may be exonemes, dense granules, or other apical vesicles. Alternatively, it is also possible that these additional NHS ester-positive foci represent micronemes that lack both AMA1 and EBA175.
 
@@ -221,7 +301,7 @@ Malaria parasites have been extensively studied using electron microscopy to det
 
 ## Materials and methods
 
-## Plasmodium falciparum culture
+### Plasmodium falciparum culture
 
 Unless otherwise stated, all parasites in this study were 3D7-Cas9 (Rudlaff et al., 2019). For imaging of the apicoplast, the previously generated ACP-transit-peptide-GFP cell line was used (Florentin et al., 2020). For imaging of Kelch13, the previously generated 2xFKBP-GFP-K13 parasites were used (Birnbaum et al., 2017). For imaging of the basal complex, the previously generated CINCH-smV5 cell line was used (Rudlaff et al., 2019).
 
@@ -233,13 +313,76 @@ Parasites were routinely synchronized using sorbitol lysis. Briefly, parasite cu
 
 For samples where parasites were arrested as schizonts using either trans-epoxysuccinyl-L-leucylamido(4guanidino)butane (E64) (Salmon et al., 2001) or compound 1 (C1) (Taylor et al., 2010), late schizont-stage cultures were treated with either 10 µm E64 for ~3 hr or 5 µm C1 for ~5 hr.
 
-## Plasmid generation and transfection
+### Plasmid generation and transfection
 
 For imaging of the mitochondria, a cell line where ATP-Synthase F0 Subunit D (Pf3D7_0311800) had a C-terminal spaghetti-monster HA tag was generated (Figure 5—figure supplement 2). To create the Pf3D7_0311800 smHA HDR plasmid, the 3D7_0311800 5′ and 3′ homology regions were PCR amplified from 3D7 genomic DNA with oligonucleotides oJDD4893/oJDD4894 and oJDD4891/oJDD4892, respectively. The two pieces were fused together using Sequence Overlap Extension PCR (SOE PCR) using oJDD4891/oJDD4894 and the piece was digested with NotI/XhoI and ligated with T4 ligase to generate pSAB55. To create the PF3D7_0311800 targeting guide RNA plasmid, oJDD4889/oJDD4890 were annealed, phosphorylated, and ligated into BpiI-digested pRR216 to generate pSAB81. All oligonucleotide sequences are shown in Table 1.
 
+**Table 1.**
+ Oligonucleotides for cloning and integration PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Oligo/gBlock name</th>
+      <th>Sequence (5′→3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JDD44</td>
+      <td>TGGGGTGATGATAAAATGAAAG</td>
+    </tr>
+    <tr>
+      <td>JDD56</td>
+      <td>ACACTTTATGCTTCCGGCTCGTATGTTGTG</td>
+    </tr>
+    <tr>
+      <td>JDD4889</td>
+      <td>TATTGTCAAATCGTTACCTCTATG</td>
+    </tr>
+    <tr>
+      <td>JDD4890</td>
+      <td>AAACCATAGAGGTAACGATTTGAC</td>
+    </tr>
+    <tr>
+      <td>JDD4891</td>
+      <td>TAGgcggccgcGGTCCTACACCAATAAATATCA</td>
+    </tr>
+    <tr>
+      <td>JDD4892</td>
+      <td>GTCTGATTCTTCCCATCaggccttccggaccgcggGGTCCCTTCATTGTAGACTTTTTATTATTGAAC</td>
+    </tr>
+    <tr>
+      <td>JDD4893</td>
+      <td>GTCTACAATGAAGGGACCccgcggtccggaaggcctGATGGGAAGAATCAGACAAATGGT</td>
+    </tr>
+    <tr>
+      <td>JDD4894</td>
+      <td>GATctcgagcAGcGGcAAtGAcTTcACgAATTCTCTTATTTCTTGTTTTTGCATTTCCT</td>
+    </tr>
+    <tr>
+      <td>SAB257</td>
+      <td>CGGACCGAGAATTTATGTCCATTAACGTC</td>
+    </tr>
+    <tr>
+      <td>SAB471</td>
+      <td>TGGTATTAATGGATGAAGACACACA</td>
+    </tr>
+    <tr>
+      <td>SAB472</td>
+      <td>GTAATGGAATAGCTTTATATATGTACCTTCAT</td>
+    </tr>
+    <tr>
+      <td>SAB473</td>
+      <td>TATGTGATCCATACATACCTGTTCAGAC</td>
+    </tr>
+  </tbody>
+</table>
+
 For transfection, 100 µg of pSAB55 plasmid was linearized with StuI and transfected into 3D7-Cas9, along with 100 µg of pSAB81. A day following transfection, parasites were treated with 5 nm WR99210 until 13 days, when resistant parasites were detected.
 
-## Ultrastructure expansion microscopy
+### Ultrastructure expansion microscopy
 
 U-ExM was performed as previously described with minor modification (Bertiaux et al., 2021; Gambarotto et al., 2019; Liffner and Absalon, 2021). Then, 12 mm round Coverslips (Fisher, Cat# NC1129240) were treated with poly-d-lysine for 1 hr at 37°C, washed twice with MilliQ water, and placed in the wells of a 12-well plate. Parasite cultures were set to 0.5% hematocrit, and 1 mL of parasite culture was added to the well containing the coverslip for 15 min at 37°C. Culture supernatants were removed, and cultures were fixed with 1 mL of 4% v/v PFA in 1× PBS for 15 min at 37°C. For some experiments visualizing cytostomes, cultures were instead fixed in 4% v/v PFA + 0.01% v/v glutaraldehyde in 1× PBS. Following fixation, coverslips were washed three times with 37°C PBS before being treated with 1 mL of 1.4 % v/v formaldehyde/2% v/v acrylamide (FA/AA) in PBS. Samples were then incubated at 37°C overnight.
 
@@ -249,58 +392,285 @@ Gels were either imaged immediately following re-expansion or stored in 0.2% w/v
 
 For parasites stained with MitoTracker Orange CMTMRos (Thermo Fisher, M7510), parasite cultures were resuspended in incomplete media (RPMI-1640 containing 25 mM HEPES, 50 mg/L hypoxanthine, and 0.21% sodium bicarbonate) containing 300 nM MitoTracker Orange CMTMRos. Parasite cultures were then stained with MitoTracker for 35 min while settling on poly-d-lysine-coated coverslips. From this point, the expansion protocol was followed as described above, with the exception that all steps when possible were carried out protecting the sample from light.
 
-## Cryopreservation and thawing of gels
+### Cryopreservation and thawing of gels
 
 A proportion of gels imaged in this study were cryopreserved and subsequently thawed prior to imaging (Louvel et al., 2022). Gels were frozen either unstained, following the first round of expansion, or frozen stained, following the second round of expansion. To freeze, a portion of the expanded gel was placed into a 6-well dish and washed three times with 50% glycerol in MilliQ water for 30 min. Fresh glycerol was then added, and the gels were stored at –20°C for future use. To thaw unstained gels, the glycerol was replaced with MilliQ water and incubated at room temperature for 30 min. Gels were then washed and shrunk with three 20 min washes in 1× PBS at room temperature before proceeding with the antibody staining process normally. Stained gels were thawed with three washes in MilliQ water for 30 min before proceeding with imaging as normal.
 
-## Stains and antibodies
+### Stains and antibodies
 
 A comprehensive list of all stains and antibodies used in this study, their working concentrations, and source(s) is provided in Table 2.
 
-## Image acquisition
+**Table 2.**
+ Summary of all antibodies and stains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primary antibodies</th>
+      <th>Antibody species</th>
+      <th colspan="4">Antibody source (Cat#)</th>
+      <th colspan="2">Ab concentration</th>
+      <th colspan="2">Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-alpha tubulin (Clone B-5-1-2)</td>
+      <td>Mouse (IgG1)</td>
+      <td colspan="4">Thermo Fisher (32-2500)</td>
+      <td colspan="2">1:500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-centrin (Clone 20H5)</td>
+      <td>Mouse (IgG2a)</td>
+      <td colspan="4">Sigma-Aldrich (04-1624)</td>
+      <td colspan="2">1:200</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-Hscentrin1</td>
+      <td>Rabbit</td>
+      <td colspan="4">Thermo Fisher (PA5-29986)</td>
+      <td colspan="2">1:500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-polyE (IN105)</td>
+      <td>Rabbit</td>
+      <td colspan="4">Adipogen (AG-25B-0030-C050)</td>
+      <td colspan="2">1:500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-ERD2 (MRA-1)</td>
+      <td>Rabbit</td>
+      <td colspan="4">BEI Resources MR4</td>
+      <td colspan="2">1:2000</td>
+      <td colspan="2">Elmendorf and Haldar, 1993</td>
+    </tr>
+    <tr>
+      <td>Anti-HA (3F10)</td>
+      <td>Rat</td>
+      <td colspan="4">Roche (12158167001)</td>
+      <td colspan="2">1:50</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-GFP</td>
+      <td>Rabbit</td>
+      <td colspan="4">OriGene (TP401)</td>
+      <td colspan="2">1:2000</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-RAP1 (2.29)</td>
+      <td>Mouse</td>
+      <td colspan="4">European Malaria Reagent Repository</td>
+      <td colspan="2">1:500</td>
+      <td colspan="2">Hall et al., 1983</td>
+    </tr>
+    <tr>
+      <td>Anti-RON4</td>
+      <td>Mouse</td>
+      <td colspan="4">Gift from Alan Cowman</td>
+      <td colspan="2">1:100</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-RAMA</td>
+      <td>Rabbit</td>
+      <td colspan="4">Gift from Ross Coppel</td>
+      <td colspan="2">1:200</td>
+      <td colspan="2">Topolska et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Anti-AMA1</td>
+      <td>Rabbit</td>
+      <td colspan="4">Gift from Carole Long</td>
+      <td colspan="2">1:500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-EBA175 (3D7)</td>
+      <td>Mouse</td>
+      <td colspan="4">Gift from Alan Cowman</td>
+      <td colspan="2">1:500</td>
+      <td colspan="2">Sim et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Anti-Aldolase</td>
+      <td>Rabbit</td>
+      <td colspan="4">Abcam (ab207494)</td>
+      <td colspan="2">1:2000</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-Histone H3</td>
+      <td>Rabbit</td>
+      <td colspan="4">Abcam (ab1791)</td>
+      <td colspan="2">1:1000</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-BIP</td>
+      <td>Rabbit</td>
+      <td colspan="4">Generated by Dvorin Lab</td>
+      <td colspan="2">1:2000</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Anti-GAP45</td>
+      <td>Rabbit</td>
+      <td colspan="4">Gift from Julian Rayner</td>
+      <td colspan="2">1:2000</td>
+      <td colspan="2">Jones et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Anti-IMC1g</td>
+      <td>Rabbit</td>
+      <td colspan="4">Generated by Dvorin Lab</td>
+      <td colspan="2">1:1000</td>
+      <td colspan="2">Cepeda Diaz et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Anti-MSP1 (1E1)</td>
+      <td>Rabbit</td>
+      <td colspan="4">Gift from Anthony Holder</td>
+      <td colspan="2">1:250</td>
+      <td colspan="2">Blackman et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Anti-hemoglobin</td>
+      <td>Rabbit</td>
+      <td colspan="4">Thermo Fisher (PA5-102943)</td>
+      <td colspan="2">1:1000</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Secondary antibodies</td>
+      <td colspan="2">Antibody species</td>
+      <td colspan="4">Antibody source</td>
+      <td>Antibody concentration</td>
+    </tr>
+    <tr>
+      <td colspan="3">Anti-mouse IgG Alexa Fluor 488</td>
+      <td colspan="2">Goat</td>
+      <td colspan="4">Thermo Fisher (A28175)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td colspan="3">Anti-mouse IgG Alexa Fluor 555</td>
+      <td colspan="2">Goat</td>
+      <td colspan="4">Thermo Fisher (A21428)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td colspan="3">Anti-rabbit IgG Alexa Fluor 488</td>
+      <td colspan="2">Goat</td>
+      <td colspan="4">Thermo Fisher (A11034)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td colspan="3">Anti-rabbit IgG Alexa Fluor 555</td>
+      <td colspan="2">Goat</td>
+      <td colspan="4">Thermo Fisher (A21428)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td colspan="3">Anti-rat IgG Alexa Fluor 488</td>
+      <td colspan="2">Goat</td>
+      <td colspan="4">Thermo Fisher (A11006)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td colspan="3">Anti-mouse IgG2a Alexa Fluor 488</td>
+      <td colspan="2">Goat</td>
+      <td colspan="4">Thermo Fisher (A21131)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td colspan="3">Anti-mouse IgG1 Alexa Fluor 594</td>
+      <td colspan="2">Goat</td>
+      <td colspan="4">Thermo Fisher (A21125)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td colspan="4">Stains</td>
+      <td colspan="3">Stain source (Cat#)</td>
+      <td colspan="3">Stain concentration</td>
+    </tr>
+    <tr>
+      <td colspan="4">NHS ester Alexa Fluor 405</td>
+      <td colspan="3">Thermo Fisher (A30000)</td>
+      <td colspan="3">1:250 (8 µM) in DMSO</td>
+    </tr>
+    <tr>
+      <td colspan="4">BODIPY TR ceramide</td>
+      <td colspan="3">Thermo Fisher (D7549)</td>
+      <td colspan="3">1:500 (2 µM)</td>
+    </tr>
+    <tr>
+      <td colspan="4">SYTOX Deep Red</td>
+      <td colspan="3">Thermo Fisher (S11381)</td>
+      <td colspan="3">1:1000 (1 µM) in DMSO</td>
+    </tr>
+  </tbody>
+</table>
+
+### Image acquisition
 
 Immediately before imaging, a small slice of gel ~10 mm × ~10 mm was cut and mounted on an imaging dish (35 mm Cellvis coverslip bottomed dishes NC0409658, Fisher Scientific) coated with poly-d lysine. The side of the gel containing sample is placed face down on the coverslip and a few drops of ddH20 are added after mounting to prevent gel shrinkage due to dehydration during imaging. All images presented in this study were taken using either a Zeiss LSM800 AxioObserver with an Airyscan detector, or a Zeiss LSM900 AxioObserver with an Airyscan 2 detector. Imaging on both microscopes was conducted using a ×63 Plan-Apochromat objective lens with a numerical aperture of 1.4. All images were acquired as Z-stacks that had an XY pixel size of 0.035 µm and a Z-slice size of 0.13 µm.
 
-## Image analysis
+### Image analysis
 
-## Image processing and presentation
+#### Image processing and presentation
 
 All images were Airyscan processed using 3D processing at moderate filter strength on ZEN Blue Version 3.1 (Zeiss, Oberkochen, Germany).
 
 The majority of images presented in this study are presented as maximum-intensity z-projections, but those that contain BODIPY TRc are presented as average intensity projections for viewing and interpretation purposes. For images containing NHS ester, the gamma value of this channel was set to 0.45 rather than 1 as this allowed discernment of a greater number of parasite structures. It should be noted that because of this the fluorescence intensities shown in the NHS ester channel are not linear.
 
-## 3D rendering
+#### 3D rendering
 
 3D renderings of micronemal proteins AMA1 and EBA175 were produced using the 3D analysis package on ZEN Blue version 3.5.
 
-## Measurement of interpolar spindles and SPMTs
+#### Measurement of interpolar spindles and SPMTs
 
 All length measurements reported in this study were obtained using the ‘Measure 3D distance’ function of ZEN Blue version 3.1. The length of interpolar spindle microtubules and SPMTs was determined as the 3D distance between the start and end points of continuously stained stretches of anti-tubulin staining. Interpolar microtubules were defined as those whose staining appeared to contact both CPs as defined by NHS ester, while non-interpolar microtubules were those that did not meet these criteria. SPMTs were only measured in C1-arrested schizonts that had visibly completed segmentation based on the basal complex as visualized by NHS ester. Any microtubule that did not appear connected to the APR, or extend toward the basal complex was excluded from the analysis. Cell diameter was defined as the greatest XY distance on any z-slice between two points of the parasite as defined by NHS ester staining. Merozoite length was defined as the 3D distance between the center of the APRs and basal complex as defined by NHS ester staining.
 
-## Apicoplast and mitochondria area analysis
+#### Apicoplast and mitochondria area analysis
 
 All area measurements presented were obtained using the ‘Area’ function on ZEN Blue version 3.1. Images were presented as a maximum-intensity projection before free hand outlining the apicoplast or the mitochondria in each image. The sum of all fragments was then calculated to find the total area of the organelles per cell.
 
-## Mitochondria residual body analysis
+#### Mitochondria residual body analysis
 
 In C1-arrested schizonts, the proportion of total mitochondria staining found in the residual body was calculated as follows. Using ZEN Blue version 3.1, a maximum-intensity projection of the entire cell was generated and based on the NHS staining, the entire parasite was defined as the region of interest. Signal intensity of the channel staining the mitochondria was calculated inside the full cell, which was defined as total mitochondria fluorescence. Subsequently, the residual body was defined the area within the parasite vacuole, but external to all merozoite plasma membranes, as based on BODIPY TRc staining. A second maximum-intensity projection of this subsection of the schizont was made, the residual body was defined as the region of interest, and this signal intensity inside this region of interest was defined as residual body mitochondria fluorescence.
 
-To determine residual body mitochondria fluorescence (RB) as % total mitochondria fluorescence (total), the following equation was used:(RB fluorescenceTotal fluorescence)×100
+To determine residual body mitochondria fluorescence (RB) as % total mitochondria fluorescence (total), the following equation was used:
 
-In each of the parasites included in this analysis, the number of merozoites was defined as the number of distinct nuclei as determined by SYTOX staining. To determine residual body mitochondria fluorescence as % of one merozoite, the following equation was used:(RB fluorescence ÷ Total fluorescence-RB fluorescenceNumber of merozoites)×100
+$$
+(\frac{RB fluorescence}{Total fluorescence})\times100
+$$
+
+In each of the parasites included in this analysis, the number of merozoites was defined as the number of distinct nuclei as determined by SYTOX staining. To determine residual body mitochondria fluorescence as % of one merozoite, the following equation was used:
+
+$$
+(RB fluorescence \div \frac{Total fluorescence-RB fluorescence}{Number of merozoites})\times100
+$$
 
 Cells where no mitochondria fluorescence was visible inside the residual body, while visible inside merozoites, were defined as having no residual body mitochondria. An attempt was made to do a similar analysis on apicoplast stained cells, but no visible apicoplast staining was ever observed in the residual body.
 
-## Statistical analysis
+### Statistical analysis
 
-## Estimation of actual distance from expanded samples
+#### Estimation of actual distance from expanded samples
 
 Expansion factors for 43 gels used in this study were determined as follows. Gels were assumed to have an initial diameter of 12 mm as they are formed on a 12-mm-diameter coverslip. Gels were subsequently measured following expansion to the nearest whole millimeter, and the expansion factor was defined as the expanded gel diameter divided by the initial gel diameter (12 mm). Gels whose edges were damaged or malformed, and therefore their diameters could not be actually measured, were excluded. Gels in this study had a median expanded diameter of 51 mm, which corresponds to a median expansion factor of 4.25 (Figure 1—figure supplement 1).
 
-## Generation of graphs and statistical analysis
+#### Generation of graphs and statistical analysis
 
 All graphs presented in this study were generated using GraphPad PRISM 9. All error bars in this study represent standard deviation. Differences between samples analyzed by ANOVA was determined as difference where the p-value was <0.05. For scatterplots, slopes were considered significantly non-zero when the p-value was <0.05.
 
-## Data accessibility
+### Data accessibility
 
 Results in this study are underpinned by 647 3D Airyscan images of U-ExM parasites at multiple lifecycle stages with multiple combinations of stains. All images are publicly available through the following data repository: https://doi.org/10.5061/dryad.934mw6mp4.

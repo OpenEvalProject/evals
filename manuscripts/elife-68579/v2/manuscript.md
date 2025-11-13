@@ -31,6 +31,26 @@ The structural maintenance of chromosome (SMC) complexes – cohesin, condensin
 
 Like all SMC complexes, the core of Smc5/6 is composed of two folded proteins, Smc5 and Smc6, which form a heterodimer (Figure 1A). Each subunit comprises a long coiled-coil arm with a hinge region at one end and a globular ATPase head at the other end (Uhlmann, 2016). All three SMC heterodimers interact at the hinge and ATP binding/hydrolysis occurs in two pockets formed between the heads of the two subunits. For all SMC complexes, ATP turnover is essential for cell viability and has been proposed to bring about conformational changes in the arms (Hirano and Hirano, 2006), (Diebold-Durand et al., 2017; Muir et al., 2020). The ATPase activity is also key to the interaction of SMC’s with DNA: cohesin’s ATPase is required for both loading and dissociation from DNA (Elbatsh et al., 2016), whilst condensin is dependent on its ATPase activity for translocating along DNA and forming loop structures (Terakawa et al., 2017), (Elbatsh et al., 2019). The role of the Smc5/6 ATPase in DNA association has not been studied in detail.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the Smc5/6 complex in fission yeast. (B) Nse4–mEos3 tracking shows nuclear localisation of trajectories. SPT trajectories demonstrated confinement within nuclear region (right) that colocalised with the nuclear replication protein Mcm4 fused to GFP. Scale bar = 2 μm. (C) Overview of approach to quantifying chromatin association using SPT data and Spot-On kinetic modelling. (D) Probability density function (PDF) histograms and Spot-On model fitting (dashed line) for Nse4–mEos3 (Smc5/6) and Rad21–mEos3 (cohesin) single-molecule displacements at different time intervals. Displacements are from three pooled independent experiments, each with three technical repeats. (E) Fraction-bound values derived from Spot-On model fitting. Mean (±S.D). Black dots indicate Spot-On Fbound values derived from each technical repeat from three independent experiments. Percentages in blue denote fraction-bound value from fitting pooled data in (D). ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Spot assay of S. pombe strains expressing different SMC components fused to the mEos3 fluorescent tag. Cells were spotted onto YEA plates containing either hydroxyurea (HU) or methyl methanesulfonate (MMS) to assay for sensitivity to replication stress. Plates were incubated at 30°C for 3 days.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Diagram of SPT experimental approach. (Top) Single mEos3 fluorophores fused to SMC components are stochastically photoconverted and imaged using 405 nm and 561 nm laser light, respectively. In each frame, the position of the fluorophore is recorded in each frame it is detected allowing for the creation of a trajectory. Multiple molecules are imaged in each cell over the course of an experiment. (Bottom) Laser illumination scheme for each experiment. mEos3 is photoconverted using 0.1 s pulses of 405 nm laser every 10 s and photoconverted species are imaged by continuous 561 nm illumination. (B) Raw data processing pipeline for SPT experiments. For specific details, see Materials and methods.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Probability density function (PDF) histograms of single-molecule displacements for Nse4–mEos3 and Rad21-mEos3 over multiple Δt fit with either a two-state or three-state Spot-On model. Data are pooled from three independent experiments, each with three technical repeats. Dashed line indicates model derived from cumulative distribution function (CDF) fitting in Spot-On. (B) Akaike information criterion (AIC) scores from Spot-On model fitting in (A). Nse4–mEos3 three-state fitting showed a large difference in AIC scores compared to three-state fitting. This indicates the data are best described by a three-state model. The difference in AIC scores for Rad21–mEos3 was much smaller and thus a two-state model was used. (C) Apparent diffusion coefficients of Spot-On sub-populations of Nse4–mEos3 (three state) and Rad21–mEos3 (two state). (D) Fractions of the total population of molecules observed residing in each kinetic state extracted from Spot-On model fitting data in (A). (E) Comparison of the fractions of Nse4–mEos3 molecules observed residing in each kinetic state extracted from all cells (mostly G2) in the wild-type data or only binuclear cells (S-phase, n = 75).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Probability density function (PDF) histograms of single-molecule displacements (left) and fraction-bound values calculated from Spot-On model fitting (right) of alternative Smc5/6 subunits tagged with mEos3 compared to Nse4–mEos3. Mean (±S.D). Black dots values derived from independent technical repeats, percentages in blue denote fraction-bound value from fitting pooled data from all repeats. (B) PDF histograms of single-molecule displacements (left) and fraction-bound values calculated from Spot-On model fitting (right) of alternative cohesin subunit, Smc1, tagged with mEos3 compared to Rad21–mEos3. Mean (±S.D). Black dots values derived from independent technical repeats; percentages in blue denote fraction-bound value from fitting pooled data from all repeats.
+
 The Smc5/6 hinge contains specialised interfaces that are important for interacting with single-stranded DNA (ssDNA) (Alt et al., 2017). Disruption of these regions by mutation results in sensitivity to DNA damaging agents. The Smc5/6 ATPase heads are bridged by a sub-complex of three non-SMC elements (Nse), Nse4 (kleisin), and two kleisin-interacting tandem winged-helix element (KITE) proteins, Nse1 and Nse3. Nse1 has a RING finger and, in association with Nse3, has been shown to have ubiquitin ligase activity (Doyle et al., 2010). The winged-helix domain of Nse3 possesses double-stranded DNA (dsDNA) binding activity, which is essential for viability (Zabrady et al., 2016). The dsDNA binding has been predicted to provide the basis for initial chromatin association and loading of the complex (Zabrady et al., 2016). In addition to the Nse1/3/4 subcomplex, Nse2, a SUMO ligase, is associated with the Smc5 coiled-coil arm. DNA association of the Smc5/6 complex is required to activate the Nse2 SUMO ligase, which SUMOylates a range of targets within and outside of the complex (Varejão et al., 2018). Two further proteins, Nse5 and Nse6, also associate with the Smc5/6 complex in yeasts (both Saccharomyces cerevisiae and Schizosaccharomyces pombe). However, unlike the other Nse proteins, Nse5 and Nse6 have not been identified as part of a Smc5/6 holo-complex in human cells (Pebernard et al., 2006), (Taylor et al., 2008).
 
 Chromatin loading of the structurally related cohesin complex requires accessory proteins, the cohesin-loader complex Scc2–Scc4 (spMis4–Ssl3) (Ocampo-Hafalla and Uhlmann, 2011). A loading complex for Smc5/6 has not yet been defined, but recent work in fission yeast has shown that its recruitment to sites of replication fork collapse occurs via a multi-BRCT domain protein, Brc1 (Oravcová et al., 2018). Brc1 binds to γ-H2A and interacts with the Nse5–Nse6 subcomplex (which associates with Smc5/6 but is not part of the core complex), providing a potential mechanism by which Smc5/6 is recruited and loaded. In S. cerevisiae, the N-terminal four BRCT domains of the Brc1 homologue, Rtt107, have also been shown to bind Nse6 amongst a number of other proteins in the DNA damage response (Wan et al., 2019). In human cells, recruitment of Smc5/6 to inter-strand cross-links was shown to depend on interactions between SLF1 – another multi-BRCT domain protein – and SLF2 – a distant homologue of Nse6 (Räschle et al., 2015). These observations suggest that recruitment of Smc5/6 through Nse6 and a BRCT-domain mediator protein has been conserved through evolution.
@@ -41,7 +61,7 @@ Here, we perform SPT using photoactivated localisation microscopy (PALM) in live
 
 ## Results
 
-## Smc5/6 is chromatin associated in unchallenged cells
+### Smc5/6 is chromatin associated in unchallenged cells
 
 To monitor Smc5/6 chromatin association in living yeast cells we used photoactivated localisation microscopy combined with SPT (Manley et al., 2008). We created a fission yeast strain that endogenously expressed the kleisin subunit Nse4 fused to the photoconvertible fluorophore mEos3 and verified this allele had no measurable impact on cellular proliferation (Figure 1—figure supplement 1). We imaged photoconverted subsets of Nse4–mEos3 in live yeast cells at high temporal resolution (20 ms exposure) and created trajectories by localising and tracking individual fluorophores (Figure 1—figure supplement 2). Nse4–mEos3 localisations and trajectories showed nuclear confinement consistent with previous studies (Pebernard et al., 2008; Figure 1B).
 
@@ -49,7 +69,7 @@ To evaluate the chromatin association of Smc5/6 from our data, we used the recen
 
 We next compared Smc5/6 chromatin association with the structurally related cohesin complex. As fission yeast cells reside in G2 for the majority of the cell cycle, we hypothesised that cohesin would be stably associated with the chromatin (Bernard et al., 2008) and should thus demonstrate a higher fraction bound. As predicted, tracking of Rad21 (kleisin) and Smc1 (arm) fused to mEos3 revealed displacement profiles with greater proportions of short displacements compared to Smc5/6 subunits and subsequently resulted in greater bound fractions extracted from Spot-On model fitting (Figure 1D,E, Figure 1—figure supplement 4). These observations show that interaction of cohesin and Smc5/6 with chromatin is distinct and different and suggests that their association occurs with different dynamics.
 
-## dsDNA binding is required for efficient chromatin association
+### dsDNA binding is required for efficient chromatin association
 
 Smc5/6 has been shown to bind both ds- and ssDNA. The KITE protein Nse3 has a dsDNA binding domain in both humans and fission yeast and is situated at the head end of the complex (Figure 2A). This activity is essential and was predicted to be the initial point of interaction between Smc5/6 and the chromatin required before loading (Zabrady et al., 2016). To assess whether Nse3 dsDNA interaction plays a role in global chromatin association, we tracked Nse4–mEos3 in a nse3-R254E genetic background. This hypomorphic mutation has been shown to disrupt but not fully abolish dsDNA binding by Nse3 (Zabrady et al., 2016). When compared to nse3+, Nse4–mEos3 displacement histograms from asynchronous nse4-mEos3 nse3-R254E cells showed a broader profile suggesting the complex had become more dynamic (Figure 2B,C). This resulted in a reduction in the fraction-bound value in Spot-On analysis (Figure 2D). This confirms in vivo that dsDNA binding by Nse3 underpins the chromatin association of Smc5/6.
 
@@ -57,9 +77,21 @@ Smc5/6 has been shown to bind both ds- and ssDNA. The KITE protein Nse3 has a ds
 
 **Figure 2.:** (A) Schematic representation of the region of known dsDNA interaction in S. pombe Smc5/6. (B) Probability density function histogram of pooled Nse4–mEos3 single-molecule in nse3-R254E background and Spot-On model fitting (dashed line). The resulting fraction of bound molecules compared to wild-type data in Figure 1D. Bar chart shows mean ± S.E.M. Black dots denote independent repeats. ***p=0.0003. (C) Cumulative distribution function (CDF) of pooled Δt = 80 ms data from (B). (D) Fbound values derived from Spot-On model fitting of Nse4–mEos3 in nse3-R254E background. Black dots denote each technical repeat from three independent experiments. Percentages in blue denote fraction-bound value from fitting pooled data in (B). Mean (±S.D). ****p<0.0001.
 
-## Smc5/6 ATPase activity is required for efficient chromatin association
+### Smc5/6 ATPase activity is required for efficient chromatin association
 
 Each of the SMC complexes possess ATPase activity, with two separate and distinct active sites within juxtaposed ‘head’ domains, which are generated by bringing together the required signature motifs in trans (Figure 3A). Like all SMC complexes the ATPase activity of Smc5/6 is essential and inactivating mutations in either of the two Walker motifs are non-viable (Verkade et al., 1999; Fousteri and Lehmann, 2000). Therefore, to investigate the influence of ATPase activity on chromatin association of the Smc5/6 complex, we first mutated the ‘arginine finger’ of Smc5 (smc5-R77A) or Smc6 (smc6-R150A). Mutation of the equivalent residues in other SMC complexes does not typically affect the basal level of ATP turnover, but instead acts to abolish stimulation of activity by DNA interaction (Lammens et al., 2004). Both the smc5-R77A and the smc6-R150A mutation resulted in sensitivity to replication stress (Figure 3—figure supplement 1). Tracking of Nse4–mEos3 in these genetic backgrounds revealed increased single-molecule displacements and subsequent decreases in chromatin association of the Smc5/6 complex (Figure 3B,C and Figure 3—figure supplement 1). smc6-R150A led to a dramatic decrease in chromatin association, whereas mutation of the Smc5 arginine was noticeably less detrimental. Interestingly, the reduction in the levels of chromatin association correlated with sensitivity to exogenous genotoxic agents, strongly suggesting that DNA-dependent ATP hydrolysis by the two binding pockets is not equivalent.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of SMC head engagement upon ATP binding. (B) CDF of pooled Δt = 80 ms single-molecule displacements of Nse4–mEos3 in smc5+ smc6+, smc6-R150A, and smc5-R77A genetic backgrounds. (C) Comparison of the fraction of bound molecules from Nse4–mEos3 sptPALM experiments in asynchronous smc6-R150A and smc5-R77A genetic backgrounds to wild=type data from Figure 1D. Black dots denote each technical repeat from three independent experiments. Percentages in blue denote fraction-bound value from fitting pooled data. Mean (±S.D). ***p=0.0001, ****p<0.0001. (D) Secondary structure molecular cartoons of homology models for the head domains of S. pombe Smc6, highlighting the arginine finger and its interaction with ATP. The X-ray crystal structure for the head domain of Pyrococcus furiosus SMC in complex with ATP served as a reference, providing the expected position of bound ATP the homology model. Key amino acids are shown in ‘stick representation’. The lower panel shows the predicted increase in severity of steric clashes made with the arginine finger through introduction of each of the indicated mutations. (E) Yeast spot assay of S. pombe strains harbouring different smc6 ATPase mutations grown at 30°C for 3 days. (F) Fraction-bound values in each of the smc6-T135 mutant backgrounds compared to wild-type data from Figure 1D and smc6-74 (A151T). Black dots denote each technical repeat from three independent experiments. Percentages in blue denote fraction-bound value from fitting pooled data. Mean (±S.D). *p=0.0158, ****p<0.0001. (G) Fraction-bound values derived from SPT analysis of MMS-treated (0.03%, 5 hr) cells compared to asynchronous untreated data in (F). *p=0.0495, ***p=0.0005.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Spot assay of S. pombe strains harbouring arginine finger mutations in either smc5 or smc6. Plates were incubated at 30°C for 3 days. (B) Probability density function (PDF) histograms of single-molecule displacements for multiple Δt of Nse4–mEos3 for smc5 (R77A) or smc6 (R150A) arginine finger mutants (see Figure 3C and F for fraction bound). Dashed line indicates model derived from cumulative distribution function (CDF) fitting in Spot-On. Data are pooled from three individual experiments, each with three technical repeats. (C) PDF histograms of single-molecule displacements for multiple Δt of Nse4–mEos3 in the indicated mutants (see Figure 4E for fraction bound). Dashed line indicates model derived from CDF fitting in Spot-On. Data are pooled from three individual experiments, each with three technical repeats.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Fraction of bound Nse4–mEos3 extracted from Spot-On analysis of MMS-treated cells. Cultures were incubated in the presence of 0.03% MMS over the course of 5 hr, and cells were isolated and imaged at each hour time point. Maximal chromatin association was detected between 4 and 5 hr. Mean ± S.D. Black dots denote independent technical repeats.
 
 The Smc6 arginine finger mutant was of particular interest to us as the well characterised smc6-74 allele maps to the next residue, A151T (Irmisch et al., 2009), (Verkade et al., 1999), (Verkade et al., 1999), (Outwin et al., 2009). Single-particle tracking showed this mutant to have a similar decrease in chromatin association to smc6-R150A. Sequence-threaded homology models for the head domain of S. pombe Smc6 and comparison to the X-ray crystal structure of the head domain from Pyrococcus furiosus SMC in complex with ATP (PfSMC, PDB: 1XEX) allowed us to create specific mutations designed to display a graduated effect on the Smc6 arginine finger: Thr135 in Smc6 was mutated to a series of hydrophobic amino acids with increasing size, each predicted to produce increasingly severe steric clashes with the arginine finger when engaged in interaction with bound ATP (Figure 3D).
 
@@ -69,15 +101,27 @@ Since mutations in the ATPase domains render cells sensitive to replication stre
 
 Together these data demonstrate that the ability to stimulate Smc5/6 ATPase activity through the arginine finger is crucial for its stable association with the chromatin. The disparity in phenotype between smc6 and smc5 ATPase mutants suggests that there could be an underlying asymmetry in the use for the two ATP binding sites, a phenomenon that has been recently described for both condensin and cohesin (Elbatsh et al., 2016; Hassler et al., 2019).
 
-## ssDNA binding is dispensable for Smc5/6 chromatin association
+### ssDNA binding is dispensable for Smc5/6 chromatin association
 
 We recently determined the structure of the S. pombe Smc5/6 hinge and demonstrated its preferential binding to ssDNA (Alt et al., 2017). Specialised features known as the ‘latch’ and ‘hub’ are required for efficient association with ssDNA (Figure 4A). The kinetics of this interaction are biphasic and appear to involve two distinct interaction points. Like mutants compromised for dsDNA binding, mutations in these key regions that weaken the interaction with ssDNA render cells viable but sensitive to replication stress and DNA damaging agents (Alt et al., 2017). We tested whether the ability to interact with ssDNA affected the ability of Smc5/6 to associate with chromatin.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left: Schematic representation of the hinge region known to interact with ssDNA interaction in Smc5/6. Right: Schematic diagram of the S. pombe hinge region adapted from Alt et al., 2017. Residues implicated in ssDNA interaction are highlighted with red filled circles. (B) Fraction-bound values of Nse4–mEos3 derived from SPT experiments in Smc5/6 hinge mutant backgrounds compared to wild-type data from Figure 1D. Mean ±S.D. Black dots denote independent repeats and percentages in blue denote fraction-bound value from fitting pooled data from all repeats. (C) Diagram of the site-specific replication stall system RTS1-ura4-RTS1 (Lambert et al., 2005), which consists of two inverted RTS1 sequences integrated on either sides of the ura4 gene. Rtf1 binds the RTS1 sequence and stalls incoming replication forks coming from both centromeric and telomeric sides. Rtf1 is expressed under the control of the nmt41 promoter which is ‘off’ in the presence of thiamine and ‘on’ upon thiamine removal. (D) Induction of rtf1 in cells harbouring RuraR construct induces ura4 marker loss as assayed by 5-fluoroorotic acid (5-FOA) resistance. Cells growing in the presence (Off, arrest repressed) or absence (On, arrest induced) of thiamine were analysed by fluctuation analysis. Mean ± S.E.M. Black dots denote independent repeats.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Fraction of bound Nse4–mEos3 extracted from Spot-On analysis of Nse4–mEos3 SPT in smc6 hinge mutants treated with 0.03% MMS for 5 hr. Compared to asynchronous untreated datasets from Figure 4B. Mean ± S.D. Black dots denote independent technical repeats, percentages denote fraction-bound value from fitting pooled data from all repeats. **p<0.005 (smc6-X = 0.0034, smc5-RR = 0.0025), ***p=0.0005.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) S. pombe strains harbouring the site-specific replication stall system RuraR. Replication fork stalling at RTS1 is induced in the absence of thiamine (on). Plates were incubated at 30°C for 3 days. Unlike the HR-defective rad51Δ strain, smc6 hypomorphs do not lose viability on induction of replication stalling at RTS1. (B) PCR-based assay for translocation between RTS1 at RuraR and the native RTS1 at the mating type locus in ura4− colonies generated in the ura4 loss of gene function assay (Lambert et al., 2005). Left: Schematic to show the three primer pairs used. One pair (red arrows) amplifies the junction resulting from ectopic recombination between chromosome II and III (TLII/III). The second pair (grey arrows) amplifies the ura4 locus to distinguish point mutations, truncations (internal deletions), and full-length deletions. rng3 (blue arrows), an essential gene located between RuraR and the telomere, is amplified as positive control. Right: Example of control PCRs (top) and PCRs of 5′-fluoroorotic acid (5-FOA) resistant/ura4− colonies (bottom). The rng3 product is amplified in all strains, but not in the negative control (‘-'). ura4 is amplified only in a RuraR strain, but not in wild type (wt) (harbours full deletion of ura4, ura4-D18), the translocation positive control (‘+', gift from S. Lambert [Lambert et al., 2005]) or the negative control. Translocation between chromosome II and III can only be detected in the positive control. (C) PCR assay results for ura- colonies of smc6+, smc6-74 and smc6-X derived from the RuraR ura4 loss assay carried out in the presence (RuraR arrest ‘Off’) or absence (RuraR arrest ‘On’) of thiamine.
 
 Previously characterised mutations were introduced into the Nse4–mEos3 strain that affect either initial ssDNA interaction (smc5-R609E R615E), stable hinge heterodimerisation (smc5-Y612G), or secondary ssDNA interactions at the Smc6 hub (smc6-F528A, smc6-R706C) (Alt et al., 2017; Figure 4A, right). Spot-On model fitting to sptPALM data showed that, unlike the dsDNA binding and ATPase mutants, disruption of ssDNA interactions did not alter the bound fraction of Smc5/6 in unchallenged cells (Figure 4B).
 
 Since these mutations render cells sensitive to replication stress, we monitored recruitment of Smc5/6 complex to chromatin after treatment with MMS. Disruption of ssDNA interactions either reduced, or prevented, further Smc5/6 from being recruited to chromatin in response to MMS (Figure 4—figure supplement 1). Together, these data show that, while dsDNA binding is required for stable association of the Smc5/6 complex with chromatin, its interactions with ssDNA are not. This is consistent with ssDNA interactions, playing a role in processes downstream of loading and we speculate that it may be important for Smc5/6 retention on the DNA during DNA repair-associated processes.
 
-## ssDNA interaction is required to prevent gross chromosomal rearrangements
+### ssDNA interaction is required to prevent gross chromosomal rearrangements
 
 We hypothesised that the loss of Smc5/6 chromatin association would produce distinct outcomes during HR-dependent processes compared to the loss of ssDNA interaction. To investigate this, we compared the effect of Smc5/6 mutations in the response to replication fork stalling in the previously characterised ‘RuraR’ replication fork barrier system (Lambert et al., 2005).
 
@@ -87,9 +131,17 @@ We introduced the smc6-R706C (smc6-X) and smc6-A151T (smc6-74) mutations into th
 
 Introduction of the hinge mutant (smc6-X) resulted in a highly elevated induction of ura4 loss, an 87-fold increase over the uninduced (Figure 4C and Supplementary file 1). Analysis of ura4− colonies isolated after replication stalling from smc6-X and smc6-74 mutants showed that most were full deletions of the intervening sequence between the two RTS1 loci (Figure 4—figure supplement 2). Thus, these results highlight the ssDNA-binding region of the Smc5/6 hinge as particularly important for the suppression of NAHR and gross chromosomal rearrangements, and that stable recruitment of a defective complex (smc6-X) is more detrimental at collapsed replication forks than reduced Smc5/6 chromatin association (smc6-74 and nse3-R254E).
 
-## Different requirements for Nse6 and Brc1 for recruitment of Smc5/6
+### Different requirements for Nse6 and Brc1 for recruitment of Smc5/6
 
 Recent work in fission yeast has shown that the Nse6 subunit and the BRCT-containing protein Brc1 are required for the recruitment of Smc5/6 to distinct nuclear foci in response to DNA damage (Oravcová et al., 2018; Figure 5A). To investigate whether these factors influence recruitment of the Smc5/6 complex to chromatin in unchallenged cells, the genes encoding Brc1 and Nse6 were deleted in the Nse4–mEos3 strain and Smc5/6 chromatin association monitored by SPT.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic diagram of Smc5/6 recruitment to γ-H2A (red dots: H2A phosphorylation) at stalled replication forks. Brc1 binds to γ-H2A and recruits Smc5/6 via an interaction with Nse6. Yellow star indicates a DNA lesion. (B) Displacement PDF histograms from asynchronous cells expressing Nse4–mEos3 in brc1Δ and nse6Δ genetic backgrounds. Data are from three pooled independent experiments, each with three technical repeats. Spot-On model fit is denoted by dashed line. (C) Comparison of Nse4–mEos3 Fbound values derived from Spot-On fitting of SPT displacement histograms in wild type, brc1Δ, nse6Δ, and brc1Δ nse6Δ genetic backgrounds. Mean ± S.D. Black dot values derived from independent technical repeats; percentages in blue denote fraction-bound value from fitting pooled data from all repeats. ****p<0.0001, **p=0.0043. (D) FBound fraction values from brc1Δ and nse6Δ cells in (C) compared to parallel experiments where cells were treated with 0.03% MMS for 5 hr. ***p<0.005, ns = not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Fraction of bound Nse4–mEos3 extracted from Spot-On analysis of Nse4–mEos3 SPT in hta1-S128A hta2-S129A and brc1-T672A mutants compared to wild-type and brc1Δ data sets from Figure 5C. Mean ± S.D. Black dots denote independent technical repeats; percentages denote fraction-bound value from fitting pooled data from all repeats. **p<0.005 (hta1-SA hta2-SA = 0.0034, smc5-RR = 0.0016), ****p<0.0001.
 
 Deletion of either brc1 or nse6 resulted in an altered displacement profile and a concurrent decrease in the fraction of bound molecules (Figure 5B,C). In brc1Δ, the amount of chromatin-associated Smc5/6 decreased by approximately 35%, showing that only a proportion of Smc5/6 chromatin association is dependent on Brc1. Recruitment of Brc1 to chromatin is reported to be via a specific interaction with γ-H2A (Williams et al., 2010). We therefore investigated Smc5/6 complex recruitment in the absence of H2A phosphorylation. Introduction of nse4-mEos3 into hta1-SA hta2-SA mutant cells revealed a statistically significant reduction in the fraction bound, similar to that seen in brc1Δ cells (Figure 5—figure supplement 1). These data are consistent with Brc1-dependant loading of Smc5/6 being largely confined to regions of γ-H2A.
 
@@ -97,15 +149,23 @@ In contrast, deletion of nse6 showed significant deviation from the wild-type da
 
 Previous ChIP experiments have shown that Smc5/6 is enriched at repetitive genomic loci following MMS treatment and that this is dependent on Brc1 and Nse6 (Oravcová et al., 2018). We tested whether we could detect increased Nse4 chromatin association in response to MMS treatment in brc1Δ and nse6Δ cells. Both brc1Δ and nse6Δ cells failed to show any increase above levels detected in untreated cells upon acute exposure to MMS (Figure 5C), supporting the hypothesis that both Brc1 and Nse6 are required for Smc5/6 recruitment to sites of DNA damage (Oravcová et al., 2018).
 
-## The Nse5–Nse6 subcomplex displays different kinetics than the Smc5/6 core complex
+### The Nse5–Nse6 subcomplex displays different kinetics than the Smc5/6 core complex
 
 Intrigued by the significant role of Nse6 even in the absence of DNA damage, we investigated the dynamics of the Nse5–Nse6 complex. We tagged both Nse5 and Nse6 with mEos3 (Figure 6—figure supplement 1) and compared their behaviour to Nse4. In contrast to Nse2 and Smc6, which show similar chromatin association to Nse4 (Figure 1—figure supplement 4), both Nse5 and Nse6 displayed a broader range of displacements and were subsequently less chromatin associated (Figure 6A,B). This suggests Nse6 is more dynamic than other subunits and may indicate its association with the core Smc5/6 complex is transient. To determine whether chromatin association of Nse5–Nse6 is affected by that of the core complex, we introduced the nse6-mEos3 allele into a smc6-74 or smc6-X genetic background. We predicted that if Nse5–Nse6 was tightly associated with the core complex, then it would display reduced association in a smc6-74 strain as seen with Nse4, but not in smc6-X (Figures 3E and 4B). Tracking of Nse6–mEos3 in both mutants revealed no significant change in the fraction bound (Figure 6D), suggesting Nse5–Nse6 has different chromatin association dynamics to the core Smc5/6 complex. This would be indicative of Nse5–Nse6 acting to transiently stabilise or load Smc5/6 complexes on the chromatin.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig6-v2.jpg)
+
+**Figure 6.:** (A) CDF histogram of pooled single-molecule displacements at Δt = 80 ms time interval of Nse4–mEos3, Nse5–mEos3, and Nse6–mEos3. (B) Fraction of bound molecules extracted from Spot-On model fits from experiment in (A). Mean ± S.D. Black dots denote independent technical repeats, percentages denote fraction-bound value from fitting pooled data from all repeats. ***p=0.0003, ****p<0.0001. (C) Fraction of bound molecules extracted from Spot-On model fits from SPT Nse6–mEos3 in smc6-74 or smc6-X genetic backgrounds compared to wild-type data in (B). (D) Schematic diagram of Smc5/6 DNA interactions and their roles (left) and proposed model of Smc5/6 chromatin association (right). Loading requires dsDNA binding by Nse3 and Smc5 and Smc6 ATPase activity. ssDNA binding at the hinge is not required for loading but is required for subsequent functions to regulate homologous recombination, suppress non-allelic recombination and gross chromosomal rearrangements (GCRs). Smc5/6 association with chromatin is dependent on Nse5 and Nse6 and either directed (e.g. Brc1-dependent recruitment to γ-H2A) (top) or non-directed via dsDNA binding and subsequent loading (bottom). Nse5/6 is required in both instances and may act either to directly load Smc5/6 or may stabilise its association after initial loading by dsDNA interaction.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68579/elife-68579-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Spot assay of S. pombe strains expressing either Nse5 or Nse6 Smc5/6 components fused to the mEos3 fluorescent tag. Cells were spotted onto YEA plates containing either hydroxyurea (HU) or methyl methanesulfonate (MMS) to assay for sensitivity to replication stress. Plates were incubated at 30°C for 3 days.
 
 ## Discussion
 
 The Smc5/6 complex is best known as a component of the DNA repair machinery that ensures the fidelity of homologous recombination (HR). However, the complex is essential in yeast, which suggests that it possesses additional functions beyond HR as deletions of core HR factors are viable (Aragón, 2018). The recruitment of Smc5/6 to DNA and ATP binding/hydrolysis at both the ATP sites are thought to be essential for each of its cellular roles. Understanding the molecular details of how Smc5/6 associates with DNA and/or chromatin is therefore an important step in elucidating how Smc5/6 regulates recombination and other potential DNA transactions. Here, we have established SPT as a method to probe Smc5/6 dynamics in live cells, and coupled with yeast genetics and structural studies, we uncover the key requirements for its association with chromatin.
 
-## Smc5/6 complex features required for stable chromatin association
+### Smc5/6 complex features required for stable chromatin association
 
 The Smc5/6 complex contains two separate ATP binding and hydrolysis sites. Both are formed when the Smc5 and Smc6 head domains interact. In common with all SMC complexes, the ATP binding pockets have an arginine finger, which is proposed to regulate DNA-dependent ATP hydrolysis. We show that mutating either of the Smc5 or Smc6 arginine fingers resulted in an increase in sensitivity to DNA damage and replication stress. This correlated with decreases in the fraction of bound Smc5/6 detected in SPT experiments. Interestingly, Smc5 and Smc6 arginine fingers were not equivalent as we uncovered an underlying asymmetry in the requirement of the two ATP binding sites for stable chromatin association. This asymmetry is in line with observations made for cohesin and condensin (Elbatsh et al., 2019; Hassler et al., 2019).
 
@@ -113,7 +173,7 @@ One of the original smc6 mutants, smc6-74 (A151T), maps to the residue adjacent 
 
 Recent structural and biophysical data for the ssDNA-binding activity of the Smc5/6 hinge domain (Alt et al., 2017) and the dsDNA-binding Nse1/3/4 module (Zabrady et al., 2016) allowed an investigation of the role for each of these two functions in promoting Smc5/6 chromatin association. The introduction of defined mutations into fission yeast demonstrated that dsDNA binding by Nse3 is required for DNA/chromatin association of the Smc5/6 complex, whereas the ability to bind ssDNA at the hinge is dispensable. Since ssDNA-binding mutants are sensitive to a range of genotoxic agents (Alt et al., 2017), we therefore predicted that ssDNA binding most likely plays a role in downstream processes once the complex has initially bound to dsDNA/chromatin. This would be an analogous situation to cohesin, whereby after initial DNA binding to dsDNA, capture of a second DNA moiety is only achievable for ssDNA (Murayama et al., 2018). This prediction is supported by results from our site-specific replication stall experiments, which indicate that increased levels of ectopic recombination occur in Smc5/6 mutants that lack the ability to interact with ssDNA correctly. This is much higher than in mutants that fail to stimulate ATPase activity and do not correctly associate with chromatin.
 
-## Interacting factors influencing Smc5/6 chromatin association
+### Interacting factors influencing Smc5/6 chromatin association
 
 Both Brc1 and Nse6 have been implicated in recruiting Smc5/6 to regions of γ-H2A at stalled/collapsed replication forks in fission yeast (Oravcová et al., 2018). We demonstrate here that deletion of either one of these factors reduces the in vivo levels of chromatin-associated Smc5/6, in both unchallenged cells and cells after exposure to MMS. Interestingly, deletion of brc1 or preventing histone H2A phosphorylation did not generate as severe a defect in chromatin association as deletion of nse6. This is in agreement with recent ChIP experiments performed at discreet genomic loci (Oravcová et al., 2018) and demonstrates that there is at least one alternative Brc1-independent pathway for recruitment of Smc5/6 to chromatin.
 
@@ -127,21 +187,94 @@ In summary, by conducting a detailed characterisation of Smc5/6 chromatin associ
 
 ## Materials and methods
 
-## S. pombe strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methylmethane sulfonate</td>
+      <td>Sigma–Aldrich</td>
+      <td>129925–25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma–Aldrich</td>
+      <td>H8627-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluoroorotic acid</td>
+      <td>Formedium</td>
+      <td>5FOA10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agarose, Type I-A, low EEO</td>
+      <td>Sigma–Aldrich</td>
+      <td>A0169-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Circular coverslips: #1.5H, ∅25 mm</td>
+      <td>Thorlabs</td>
+      <td>CG15XH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UV-Ozone cleaning system</td>
+      <td>Novascan</td>
+      <td>PSD-UV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GDSC SMLM</td>
+      <td>Fiji plugin update site</td>
+      <td>GDSC SMLM2</td>
+      <td>Underlying source-code is freely avaliable at https://github.com/aherbert/gdsc-smlm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>Graphpad software</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### S. pombe strain construction
 
 S. pombe strains were constructed using Cre-lox-mediated cassette exchange (RMCE) as previously described (Watson et al., 2008). Strains were created with either essential gene replacement base strains or C-terminal tagging base strains (Supplementary file 2). C-terminal base strains were transformed with plasmid pAW8-mEos3.2-KanMX6 to introduce the mEos3.2 tag at the C-terminal end of the gene.
 
-## Microscopy sample preparation
+### Microscopy sample preparation
 
 S. pombe cultures were grown to mid-log phase at 30°C in Edinburgh minimal media (EMM) supplemented with leucine, uracil, and adenine. Cells were harvested and washed once in phosphate-buffered saline (PBS). Cells were then resuspended in PBS, and 10 μl was deposited on an EMM-agarose pad before being mounted on ozone-cleaned circular coverslips (Thorlabs, #1.5H, ∅25 mm) and placed in a metal cell chamber for imaging (Attofluor, ThermoFisher). For replicative stress experiments, MMS was added to cultures at a final concentration of 0.03% and incubated for 5 hr before being processed for imaging.
 
-## PALM microscopy
+### PALM microscopy
 
 Live S. pombe cells were imaged with a custom-built microscope similar to that previously described (Etheridge et al., 2014). The microscope is built around an inverted Olympus IX73 body fitted with a motorised stage (Prior H117E1I4) and a heated incubation chamber (Digital Pixel Ltd). Cells were illuminated using a 561 nm imaging laser (Cobolt, Jive) and a 405 nm activation laser (LaserBoxx, Oxxius). Both laser beams were expanded and collimated and were focused to the back focal plane of an apochromatic 1.45 NA, 60 × TIRF objective (Olympus, UIS2 APON 60 × OTIRF). Both beams were angled in a highly inclined near-TIRF manner to achieve high signal-to-background. Illumination of the sample was controlled via mechanical shutters, and all components were computer-controlled using the Micro-Manager software. The emission fluorescence from the sample was filtered with a band-pass filter (Semrock 593/40) before being expanded to create an optimised image pixel size of 101 nm after projection onto the EMCCD camera (Photometrics Evolve 512 Delta).
 
 Samples were mounted on microscope stage and incubated at 30°C. Cells were illuminated with continuous 561 nm excitation (8.3 mW at rear aperture of objective lens) and pulsed with 100 ms 405 nm laser illumination every 10 s in order to photoconvert mEos3.2 molecules (maximum 0.23 mW at rear aperture of objective lens). We established the number of nuclei that needed to be assayed for reproducibility empirically. To ensure that single-molecule traces were recorded from a sufficient number of nuclei (>50), each biological repeat consisted of data collection from at least two separate fields of view imaged one after the other (technical repeats). Each acquisition consisted of 20,000 frames with a camera exposure time of 20 ms.
 
-## SPT data analysis
+### SPT data analysis
 
 Raw PALM data was analysed using the ‘PeakFit’ plugin of the GDSC single-molecule localisation microscopy plugin for Fiji 'GDSC SMLM2' (Schindelin et al., 2012). Single molecules were identified and localised using a 2D gaussian fitting routine (configuration file available on request). Nuclear localisations consisting of a minimum of 20 photons and localised to a precision of 40 nm or better were retained for further analysis. Single molecules were then tracked through time using the ‘Trace Diffusion’ GDSC SMLM plugin. Localisations appearing in consecutive frames within a threshold distance of 800 nm were joined together into a trajectory (Etheridge et al., 2014). Single-molecule trajectories were then exported into .csv Spot-On format using the ‘Trace Exporter’ plugin.
 
@@ -149,15 +282,15 @@ Track data was uploaded into the Spot-On web interface and was analysed using th
 
 Probability density function histograms and model fit were created using data combined from all three repeats of an experiment and exported from Spot-On before being graphed in Prism (GraphPad). Bar charts were produced by fitting data collected in each repeat (three fields of view) and extracting the fraction of bound molecules. Black circles represent the value derived for each repeat, bars represent the mean, and error bars denote standard error of the mean. Two-tailed t-test was performed in Prism software of the Spot-On Fbound values from three repeats. Nuclear single-molecule traces used for analysis in Spot-On are available via the Open Science Framework (osf.io/myxtr).
 
-## Structural modelling
+### Structural modelling
 
 Sequence-threaded homology models for the head domains of both S. pombe Smc5 and Smc6 were generated using the PHYRE2 web portal (Kelley et al., 2015). The potential effects of introducing single-point mutations were assessed using PyMOL (v2.32, The PyMOL Molecular Graphics System, Schrödinger, LLC).
 
-## Yeast spot test assay
+### Yeast spot test assay
 
 Yeast strains were cultured in yeast extract (YE) overnight to mid-log phase. Cells were harvested and resuspended to a concentration of 107 cells/ml. Serial dilutions were then spotted onto YE agar plates containing the indicated genotoxic agent.
 
-## Yeast gross chromosomal rearrangement assay
+### Yeast gross chromosomal rearrangement assay
 
 The rate of ura4+ in the RuraR system was measured using a previously described fluctuation test (Lambert et al., 2005). Colonies growing on YNBA plates lacking uracil (and containing thiamine) were re-streaked onto YNBA plates containing uracil, either in the presence or in the absence of thiamine. After 5 days, five colonies were picked from either condition, and each was grown to saturation (~48 hr) in 10 ml liquid EMM culture containing uracil, with or without thiamine.
 

@@ -40,65 +40,409 @@ The goal of the present study was to identify changes in the lungs of patients w
 
 ## Results and discussion
 
-## Changes in transcripts encoding proteins in the kallikrein–kinin/bradykinin system
+### Changes in transcripts encoding proteins in the kallikrein–kinin/bradykinin system
 
-## Overview of pathways examined
+#### Overview of pathways examined
 
 The plasma kallikrein–kinin system is comprised of the protease precursors factor XII (FXII, encoded by F12) and prekallikrein (encoded by KLKB1) and the cofactor high-molecular-weight kininogen (HK, encoded by KNG1) (Schmaier, 2016; Schmaier et al., 2019). In healthy individuals, FXII and prekallikrein undergo reciprocal activation to the proteases FXIIa and kallikrein (Revenko et al., 2011; Schmaier, 2016). Kallikrein cleaves HK to liberate bradykinin, which contributes to setting vascular tone and permeability by interacting with bradykinin receptors (encoded by BDKRB1 and BDKRB2) (Marceau et al., 2020). This process is regulated by C1-Inhibitor (encoded by SERPING1) (Marceau et al., 2020). Congenital C1-Inhibitor deficiency causes hereditary angioedema, which is characterized by bouts of bradykinin-induced soft tissue swelling (Busse and Christiansen, 2020; Cicardi and Zuraw, 2018). C1-Inhibitor in blood is primarily of hepatocyte origin, although it also is produced by other cell types including vascular endothelium (Prada et al., 1998).
 
-## Study findings
+#### Study findings
 
 Transcripts encoding C1-Inhibitor were decreased 80-fold in BALF from COVID-19 patients (Table 1), raising the possibilities that contact activation-initiated thrombin generation is locally dysregulated and control of bradykinin production is compromised. Furthermore, the angiotensin-converting enzyme (ACE) that degrades bradykinin (Cicardi and Zuraw, 2018; Davin et al., 2019) was downregulated eightfold in COVID-19 BALF.
 
-## Changes in transcripts encoding extrinsic pathway proteins that initiate thrombin generation
+**Table 1.**
+ Differentially expressed coagulation genes.
 
-## Overview of pathways examined
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Protein product</th>
+      <th>Mean COVID-19</th>
+      <th>Mean control</th>
+      <th>Fold change</th>
+      <th>Log2FC</th>
+      <th>FDR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A2M</td>
+      <td>α2-Macroglubulin</td>
+      <td>3.9</td>
+      <td>177.6</td>
+      <td>−43.5</td>
+      <td>−5.4</td>
+      <td>5.2E-15</td>
+    </tr>
+    <tr>
+      <td>BDKRB1</td>
+      <td>Bradykinin receptor B1</td>
+      <td>3.3</td>
+      <td>0.0</td>
+      <td>258.9</td>
+      <td>8.0</td>
+      <td>4.3E-91</td>
+    </tr>
+    <tr>
+      <td>BDKRB2</td>
+      <td>Bradykinin receptor B2</td>
+      <td>8.9</td>
+      <td>0.2</td>
+      <td>49.1</td>
+      <td>5.6</td>
+      <td>1.9E-40</td>
+    </tr>
+    <tr>
+      <td>F13A1</td>
+      <td>Factor XIII-A subunit</td>
+      <td>2.5</td>
+      <td>9.2</td>
+      <td>−3.6</td>
+      <td>−1.8</td>
+      <td>2.6E-05</td>
+    </tr>
+    <tr>
+      <td>F13B</td>
+      <td>Factor XIII-B subunit</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>117.8</td>
+      <td>6.9</td>
+      <td>2.7E-31</td>
+    </tr>
+    <tr>
+      <td>F12</td>
+      <td>Factor XII</td>
+      <td>0.5</td>
+      <td>3.2</td>
+      <td>−4.4</td>
+      <td>−2.1</td>
+      <td>5.7E-10</td>
+    </tr>
+    <tr>
+      <td>F11</td>
+      <td>Factor XI</td>
+      <td>6.6</td>
+      <td>0.1</td>
+      <td>81.2</td>
+      <td>6.3</td>
+      <td>7.9E-79</td>
+    </tr>
+    <tr>
+      <td>F10</td>
+      <td>Factor X</td>
+      <td>3.2</td>
+      <td>0.0</td>
+      <td>169.9</td>
+      <td>7.4</td>
+      <td>7.9E-140</td>
+    </tr>
+    <tr>
+      <td>F9</td>
+      <td>Factor IX</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>189.6</td>
+      <td>7.6</td>
+      <td>2.2E-39</td>
+    </tr>
+    <tr>
+      <td>F8</td>
+      <td>Factor VIII</td>
+      <td>3.9</td>
+      <td>15.8</td>
+      <td>−4.6</td>
+      <td>−2.2</td>
+      <td>1.6E-40</td>
+    </tr>
+    <tr>
+      <td>F7</td>
+      <td>Factor VII</td>
+      <td>10.1</td>
+      <td>0.0</td>
+      <td>363.5</td>
+      <td>8.5</td>
+      <td>2.9E-73</td>
+    </tr>
+    <tr>
+      <td>F5</td>
+      <td>Factor V</td>
+      <td>9.7</td>
+      <td>6.8</td>
+      <td>1.4</td>
+      <td>0.5</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>F3</td>
+      <td>Tissue Factor</td>
+      <td>4.2</td>
+      <td>3.8</td>
+      <td>-1.0</td>
+      <td>-0.01</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>F2</td>
+      <td>Prothrombin</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>188.8</td>
+      <td>7.6</td>
+      <td>7.8E-67</td>
+    </tr>
+    <tr>
+      <td>FGA</td>
+      <td>Fibrinogen Aα chain</td>
+      <td>3.4</td>
+      <td>0.0</td>
+      <td>322.5</td>
+      <td>8.3</td>
+      <td>3.4E-206</td>
+    </tr>
+    <tr>
+      <td>FGB</td>
+      <td>Fibrinogen Bβ chain</td>
+      <td>3.7</td>
+      <td>0.0</td>
+      <td>303.9</td>
+      <td>8.2</td>
+      <td>2.4E-151</td>
+    </tr>
+    <tr>
+      <td>FGG</td>
+      <td>Fibrinogen γ chain</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>85.4</td>
+      <td>6.4</td>
+      <td>4.8E-17</td>
+    </tr>
+    <tr>
+      <td>KLKB1</td>
+      <td>Kallikrein B1</td>
+      <td>1.3</td>
+      <td>1.8</td>
+      <td>−1.4</td>
+      <td>−0.5</td>
+      <td>2.1E-01</td>
+    </tr>
+    <tr>
+      <td>KNG1</td>
+      <td>Kininogen</td>
+      <td>3.3</td>
+      <td>0.0</td>
+      <td>190.7</td>
+      <td>7.6</td>
+      <td>4.2E-163</td>
+    </tr>
+    <tr>
+      <td>PLAT</td>
+      <td>Tissue plasminogen activator</td>
+      <td>1.8</td>
+      <td>0.4</td>
+      <td>5.3</td>
+      <td>2.4</td>
+      <td>7.1E-24</td>
+    </tr>
+    <tr>
+      <td>PLAU</td>
+      <td>Urokinase</td>
+      <td>3.8</td>
+      <td>158.3</td>
+      <td>−37.1</td>
+      <td>−5.2</td>
+      <td>8.2E-172</td>
+    </tr>
+    <tr>
+      <td>PLAUR</td>
+      <td>Urokinase receptor</td>
+      <td>6.2</td>
+      <td>313.3</td>
+      <td>−42.1</td>
+      <td>−5.4</td>
+      <td>6.4E-286</td>
+    </tr>
+    <tr>
+      <td>PLG</td>
+      <td>Plasminogen</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>75.3</td>
+      <td>6.2</td>
+      <td>7.3E-38</td>
+    </tr>
+    <tr>
+      <td>PROC</td>
+      <td>Protein C</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>226.5</td>
+      <td>7.8</td>
+      <td>4.1E-158</td>
+    </tr>
+    <tr>
+      <td>PROCR</td>
+      <td>Endothelial protein C receptor</td>
+      <td>1.7</td>
+      <td>57.9</td>
+      <td>−33.8</td>
+      <td>−5.1</td>
+      <td>1.9E-50</td>
+    </tr>
+    <tr>
+      <td>PROS1</td>
+      <td>Protein S</td>
+      <td>3.2</td>
+      <td>195.3</td>
+      <td>−54.2</td>
+      <td>−5.8</td>
+      <td>1.1E-174</td>
+    </tr>
+    <tr>
+      <td>SERPINA5</td>
+      <td>Protein C Inhibitor</td>
+      <td>2.7</td>
+      <td>0.0</td>
+      <td>786.8</td>
+      <td>9.6</td>
+      <td>5.4E-145</td>
+    </tr>
+    <tr>
+      <td>SERPINB2</td>
+      <td>Plasminogen activator inhibitor-2</td>
+      <td>1.0</td>
+      <td>0.5</td>
+      <td>2.3</td>
+      <td>1.2</td>
+      <td>2.1E-01</td>
+    </tr>
+    <tr>
+      <td>SERPINC1</td>
+      <td>Antithrombin</td>
+      <td>1.9</td>
+      <td>0.1</td>
+      <td>13.6</td>
+      <td>3.8</td>
+      <td>3.1E-31</td>
+    </tr>
+    <tr>
+      <td>SERPIND1</td>
+      <td>Heparin cofactor II</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>94.0</td>
+      <td>6.6</td>
+      <td>2.2E-72</td>
+    </tr>
+    <tr>
+      <td>SERPINE1</td>
+      <td>Plasminogen activator inhibitor-1</td>
+      <td>2.7</td>
+      <td>5.3</td>
+      <td>−1.8</td>
+      <td>−0.9</td>
+      <td>8.8E-02</td>
+    </tr>
+    <tr>
+      <td>SERPINF2</td>
+      <td>α2-antiplasmin</td>
+      <td>5.4</td>
+      <td>8.2</td>
+      <td>−1.4</td>
+      <td>−0.5</td>
+      <td>1.1E-02</td>
+    </tr>
+    <tr>
+      <td>SERPING1</td>
+      <td>C-1 inhibitor</td>
+      <td>23.3</td>
+      <td>1923.2</td>
+      <td>−80.1</td>
+      <td>−6.3</td>
+      <td>5.4E-33</td>
+    </tr>
+    <tr>
+      <td>TFPI</td>
+      <td>Tissue factor pathway inhibitor</td>
+      <td>3.4</td>
+      <td>0.4</td>
+      <td>7.7</td>
+      <td>2.9</td>
+      <td>8.7E-19</td>
+    </tr>
+    <tr>
+      <td>THBD</td>
+      <td>Thrombomodulin</td>
+      <td>9.6</td>
+      <td>224.0</td>
+      <td>−22.2</td>
+      <td>−4.5</td>
+      <td>3.2E-48</td>
+    </tr>
+    <tr>
+      <td>VWF</td>
+      <td>Von Willebrand factor</td>
+      <td>14.5</td>
+      <td>7.7</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>2.0E-05</td>
+    </tr>
+  </tbody>
+</table>
+
+### Changes in transcripts encoding extrinsic pathway proteins that initiate thrombin generation
+
+#### Overview of pathways examined
 
 The integral cytoplasmic membrane protein tissue factor (TF, encoded by F3) is the primary initiator of thrombin generation in vivo. In many inflammatory conditions, cellular TF expression is upregulated (Edwards et al., 1979), providing a mechanistic explanation for hypercoagulable states associated with a variety of bacterial and viral infections (Grover and Mackman, 2018; Levi and van der Poll, 2017). Tissue factor pathway inhibitor (TFPI, encoded by TFPI) is a Kunitz-type protease inhibitor produced by vascular endothelium (Bajaj et al., 1990) and is the major inhibitor of the factor VIIa (FVIIa)/TF complex (Wood et al., 2014).
 
-## Study findings
+#### Study findings
 
 Surprisingly, transcripts encoding TF were similar in COVID-19 and control BALF samples (Figure 1; Table 1), whereas transcripts for TFPI were increased eightfold in COVID-19 BALF. On balance, these data indicate that pulmonary fibrin deposition does not stem from enhanced local TF production and that counterintuitively, COVID-19 may dampen TF-dependent mechanisms in the lungs.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64330/elife-64330-fig1-v3.jpg)
 
-**Figure 1.:** F3, but decreased aPC anticoagulant capacity, suggesting decreased inhibition of the propagation phase of coagulation.Figure shows differential gene expression (log2 fold change) of coagulation pathway transcripts in BALF of COVID-19 patients; the image illustrates mechanistic relationships of the protein products of the identified transcripts during coagulation. Shading indicates relative expression in COVID-19 patients compared to controls: increased (red) or decreased (blue). There was minimal change in F3 (encoding tissue factor ) and increased TFPI (encoding the major inhibitor of tissue factor activity). There was decreased THBD, PROCR, and PROS1 (encoding proteins that enhance anticoagulant activity) and increased SERPINA5 (encoding protein C inhibitor). There was also decreased SERPING1 (encoding C1-Inhibitor). Other transcripts showing changes (e.g., F11, F10, F7, F2) encode proteins typically produced in the liver; local expression of these proteins is unclear.
+**Figure 1.:** Figure shows differential gene expression (log2 fold change) of coagulation pathway transcripts in BALF of COVID-19 patients; the image illustrates mechanistic relationships of the protein products of the identified transcripts during coagulation. Shading indicates relative expression in COVID-19 patients compared to controls: increased (red) or decreased (blue). There was minimal change in F3 (encoding tissue factor ) and increased TFPI (encoding the major inhibitor of tissue factor activity). There was decreased THBD, PROCR, and PROS1 (encoding proteins that enhance anticoagulant activity) and increased SERPINA5 (encoding protein C inhibitor). There was also decreased SERPING1 (encoding C1-Inhibitor). Other transcripts showing changes (e.g., F11, F10, F7, F2) encode proteins typically produced in the liver; local expression of these proteins is unclear.
 
-## Changes in transcripts encoding intrinsic pathway proteins that initiate thrombin generation
+### Changes in transcripts encoding intrinsic pathway proteins that initiate thrombin generation
 
-## Overview of pathways examined
+#### Overview of pathways examined
 
 Increased thrombin generation can also be initiated by the plasma protease FXIIa (Maas and Renné, 2018; Stavrou, 2018). While FXIIa does not contribute to hemostasis, it is implicated in thrombo-inflammatory conditions. FXIIa converts factor XI (FXI, encoded by F11) to the protease FXIa (Ivanov et al., 2017; Long et al., 2016; Schmaier, 2016; Wang et al., 2019), a potent activator of the coagulation protease factor IX (FIX, encoded by F9) (Mohammed et al., 2018).
 
-## Study findings
+#### Study findings
 
 Transcripts encoding FXII were slightly decreased (−4-fold) in COVID-19 and control BALF samples (Figure 1; Table 1), but the expression of the C1 inhibitor (encoded by SERPING1), which normally inhibits the FXII protein activity, is downregulated 80-fold. While it is not known if pulmonary tissues normally produce FXI or FIX, transcripts for FXI (81-fold) and FIX (190-fold) were both increased in BALF from COVID-19 patients. Numerous studies have reported correlations between plasma FIX and FXI levels and risk for venous thromboembolism and ischemic stroke (Ammollo et al., 2014; Folsom et al., 2015; Mohammed et al., 2018; Preis et al., 2017; Salomon et al., 2011, Salomon et al., 2008; Siegerink et al., 2010; Suri et al., 2010). Perhaps local increases in FIX or FXI expression enhance thrombin generation and promote thrombus formation.
 
-## Changes in transcripts encoding anticoagulant proteins
+### Changes in transcripts encoding anticoagulant proteins
 
-## Overview of pathways examined
+#### Overview of pathways examined
 
 Healthy lung endothelium has membrane-associated anticoagulant proteins that inhibit different points in the thrombin generation pathway. These include TFPI, which inhibits the initiation of coagulation as described above, and thrombomodulin (encoded by THBD) and endothelial protein C receptor (EPCR, encoded by PROCR), which coordinate to inhibit the propagation of coagulation. Thrombomodulin captures thrombin and converts it from a procoagulant enzyme to an activator of protein C (encoded by PROC) in a process enhanced by binding of PC to EPCR. Activated PC with its cofactor protein S (encoded by PROS1) downregulates thrombin generation by inactivating factors VIIIa and Va and produces a cytoprotective/anti-inflammatory effect when bound to EPCR through cleavage of protease activated receptor-1 on endothelial cells (Ito et al., 2019; Riewald et al., 2002).
 
-## Study findings
+#### Study findings
 
 Transcripts encoding thrombomodulin (−22-fold) and EPCR (−33-fold) were each reduced in BALF from COVID-19 patients compared with controls (Figure 1; Table 1), suggesting SARS-CoV-2 is associated with reduced expression of these proteins on vascular endothelium. We also observed a marked increase in protein C transcripts in BALF from COVID-19 patients (227-fold), but a significant reduction in PS transcripts (−54-fold). Since protein C and protein S in blood are primarily synthesized by hepatocytes, the importance of local synthesis of these proteins is not known. However, expression patterns in BALF are consistent with the observation that the plasma concentration of protein C is moderately elevated, and protein S moderately reduced, in COVID-19 patients (Panigada et al., 2020). In COVID-19 BALF, there was also a substantial increase (786-fold) in mRNA for protein C inhibitor (encoded by SERPINA5), a serpin regulator of activated protein C. Taken as a whole, the transcript pattern in COVID-19 BALF suggests a diminished capacity of the endothelial anticoagulant system to downregulate local thrombin generation.
 
-## Changes in transcripts that encode fibrinogen and proteins in the fibrinolytic pathway
+### Changes in transcripts that encode fibrinogen and proteins in the fibrinolytic pathway
 
-## Overview of pathways examined
+#### Overview of pathways examined
 
 The fibrinolytic system is responsible for enzymatic degradation of fibrin. Plasminogen activators convert plasminogen to plasmin, which cleaves fibrin and generates fibrin degradation products, including the circulating biomarker D-dimer. Cells within the lung express plasminogen activators (e.g., [tPA, encoded by PLAT], urokinase plasminogen activator [uPA, encoded by PLAU], and the uPA receptor [uPAR, encoded by PLAUR]) that prevent fibrin accumulation in small airways and the alveolar compartment and that maintain blood vessel patency (Shetty et al., 2008). uPA and uPAR are expressed by lung epithelial cells, alveolar macrophages, and fibroblasts, and reduced expression of these proteins contributes to acute lung injury (Shetty et al., 2008). The plasminogen activators are inhibited by plasminogen activator inhibitor-1 (PAI-1, encoded by SERPINE1). Plasma fibrinogen, a dimer of trimers (Aα2Bβ2γ2) encoded by three genes, FGA, FGB, and FGG, is synthesized primarily by hepatocytes (Pieters and Wolberg, 2019); however, synthesis has been reported in stimulated cultured lung alveolar epithelial cells and in alveolar epithelium in an animal model of bacterial pneumonia (Guadiz et al., 1997; Simpson-Haidaris et al., 1998).
 
-## Study findings
+#### Study findings
 
 Transcripts encoding the fibrinogen chains were increased in COVID-19 BALF (Table 1, Figure 2; ). Our findings suggest that local fibrinogen expression in the lungs of COVID-19 patients, like fibrinogen expression by hepatocytes, is upregulated during the acute phase response and may provide additional substrate for local thrombin-mediated fibrin production. Our analysis uncovered evidence of reduced expression of transcripts encoding uPA (−37-fold) and uPAR (−42-fold) (Table 1, Figure 2) in BALF from COVID-19 patients. Expression of transcripts encoding tPA was very low in BALF from healthy individuals. Transcripts encoding tPA were elevated (fivefold) in COVID-19 BALF, but absolute expression was low compared to uPA and uPAR transcripts in uninfected controls (Table 1, Figure 2). Similarly, expression of transcript for plasminogen (encoded by PLG) was elevated in COVID-19 BALF but remained low compared to other transcripts. The combination of increased fibrinogen expression and reduced production of uPA and uPAR indicates a loss of local fibrinolytic capacity, consistent with a lung environment permissive of the accumulation of fibrin deposits within pulmonary vessels and the alveolar space (Lax et al., 2020; Magro et al., 2020).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64330/elife-64330-fig2-v3.jpg)
 
-**Figure 2.:** PLAU and PLAUR, suggesting diminished fibrinolytic activity.Figure shows differential gene expression (log2 fold change) of fibrinolytic pathway transcripts in BALF of COVID-19 patients; the image illustrates mechanistic relationships of the protein products of the identified transcripts during fibrinolysis. Shading indicates relative expression in COVID-19 patients compared to controls: increased (red) or decreased (blue). There was a moderate increase in PLAT (encoding tPA). There was also enhanced expression of FGB, FGA, and FGG (encoding fibrinogen chains) and decreased expression of PLAU and PLAUR (encoding uPA and uPAR, respectively). Other transcripts showing changes (e.g., F2, PLG) encode proteins typically produced in the liver; local expression of these proteins is unclear.
+**Figure 2.:** Figure shows differential gene expression (log2 fold change) of fibrinolytic pathway transcripts in BALF of COVID-19 patients; the image illustrates mechanistic relationships of the protein products of the identified transcripts during fibrinolysis. Shading indicates relative expression in COVID-19 patients compared to controls: increased (red) or decreased (blue). There was a moderate increase in PLAT (encoding tPA). There was also enhanced expression of FGB, FGA, and FGG (encoding fibrinogen chains) and decreased expression of PLAU and PLAUR (encoding uPA and uPAR, respectively). Other transcripts showing changes (e.g., F2, PLG) encode proteins typically produced in the liver; local expression of these proteins is unclear.
 
-## Conclusions
+### Conclusions
 
 We detected pronounced changes in mRNA levels encoding proteins involved in regulation of coagulation, fibrinolysis, and inflammation in the lungs of COVID-19 patients. These changes include reductions in transcripts for proteins known to be expressed in normal pulmonary tissue (thrombomodulin, EPCR, uPA, uPAR) that would compromise the functions of anticoagulant and fibrinolytic pathways. In concert with enhanced production of bradykinin and vascular permeability, these changes are likely to create an environment in which plasma proteins are exposed to the extravascular space, resulting in increased fibrin production and reduced fibrin degradation, enabling the fibrin deposits in pulmonary vessels and alveolar spaces observed in autopsies of COVID-19 patients (Dolhnikoff et al., 2020; Fox et al., 2020; Geerdes-Fenge et al., 2020; Lax et al., 2020), and contributing to the virulence of the virus.
 
@@ -110,10 +454,105 @@ Our study has limitations. Although we detected changes in multiple gene transcr
 
 ## Materials and methods
 
-## Study participants
+### Study participants
 
 The nine BALF samples from 5 patients used in this study were collected from patients in Wuhan, China. All patients displayed pneumonia and other severe symptoms upon admission to the hospital in Wuhan, China, in late December 2019 and were therefore admitted to the ICU (Table 2). They were originally used for RNA sequencing to identify the etiological agent for COVID-19 and to determine the genomic sequence of SARS-CoV-2. Human mRNA sequences from these samples were used to develop our bradykinin storm model (Garvin et al., 2020), but have not previously been analyzed to understand localized coagulopathy in the lungs of patients with COVID-19 (Zhou et al., 2020b). We compared mRNA transcripts for proteins involved in coagulation, fibrinolysis, and kinin formation in BALF from these samples with those from 40 controls from a study on the contribution of obesity to disease severity in asthmatics (Michalovich et al., 2019). The 40 control individuals included smokers and non-smokers, asthmatics and non-asthmatics, as well as obese and non-obese individuals. Given this diverse set of morbidities and the resulting variance in gene expression, they represent an informative control for patients with COVID-19 as statistically significant changes detected due to COVID-19 are not just representing subtle shifts in variance (Table 1). Expression datasets are available from the NCBI Sequence Read Archive under the accession numbers PRJNA605983 (severe acute respiratory syndrome coronavirus 2 raw sequence reads) and PRJNA434133 (Microbiome and Inflammatory Interactions in Obese and Severe Asthmatic Adults).
 
-## Gene expression analysis
+**Table 2.**
+ Clinical data for patients from which BALF was extracted and analyzed for this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GISAID accession</th>
+      <th>Isolate</th>
+      <th>NCBI accession</th>
+      <th>SRA accessions</th>
+      <th>Swab date</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Patient no</th>
+      <th>Date onset</th>
+      <th>Symptoms_admission</th>
+      <th>Status 1/13/20</th>
+      <th>Diagnosis history</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EPI_ISL_402127</td>
+      <td>WIV02</td>
+      <td>MN996527</td>
+      <td>SRR11092058, SRR11092063</td>
+      <td>12/30/19</td>
+      <td>32</td>
+      <td>Male</td>
+      <td>ICU-04</td>
+      <td>12/19/19</td>
+      <td>Fever, cough, dyspnea</td>
+      <td>Fever, intermitttent cough</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>EPI_ISL_402124</td>
+      <td>WIV04</td>
+      <td>MN996528</td>
+      <td>SRR11092057, SRR11092062</td>
+      <td>12/30/19</td>
+      <td>49</td>
+      <td>Female</td>
+      <td>ICU-06</td>
+      <td>12/27/19</td>
+      <td>Fever (37.9C), palpitation</td>
+      <td>Fever, malaise, cough</td>
+      <td>Coronavirus (nt)</td>
+    </tr>
+    <tr>
+      <td>EPI_ISL_402128</td>
+      <td>WIV05</td>
+      <td>MN996529</td>
+      <td>SRR11092061</td>
+      <td>12/30/19</td>
+      <td>52</td>
+      <td>Female</td>
+      <td>ICU-08</td>
+      <td>12/22/19</td>
+      <td>Fever (38C), expectoration, malaise, dyspnea</td>
+      <td>Recovered, disharged</td>
+      <td>Streptococcus pneumoniae (nt)</td>
+    </tr>
+    <tr>
+      <td>EPI_ISL_402129</td>
+      <td>WIV06</td>
+      <td>MN996530</td>
+      <td>SRR11092056, SRR11092060</td>
+      <td>12/30/19</td>
+      <td>40</td>
+      <td>Male</td>
+      <td>ICU-09</td>
+      <td>12/28/20</td>
+      <td>Fever (38C), expectoration</td>
+      <td>Fever (38C), expectoration, dizziness</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>EPI_ISL_402130</td>
+      <td>WIV07</td>
+      <td>MN996531</td>
+      <td>SRR11092059, SRR11092064</td>
+      <td>12/30/19</td>
+      <td>56</td>
+      <td>Male</td>
+      <td>ICU-10</td>
+      <td>12/20/19</td>
+      <td>Fever, dyspnea, chest tightness</td>
+      <td>Fever, malaise, cough, dyspnea</td>
+      <td>Negative</td>
+    </tr>
+  </tbody>
+</table>
+
+### Gene expression analysis
 
 The CLC Genomics Workbench (20.0.3) was used to trim FASTQ files downloaded from the NCBI Sequence Read Archive to remove any adapter sequences or other artifacts from processing. The RNA reads were mapped to the GRCh38_latest_rna.fna version of the human transcriptome. Mapping parameters included a cost penalty of two for mismatches and three for small insertions or deletions (INDEL), and similarity and length fraction were both set to 0.95. The resulting transcript profiles were manually inspected to account for expression artifacts, such as reads mapping solely to repetitive elements such as the Alu transposable element. Transcripts whose counts came solely from (or were dominated by) reads at repetitive elements were removed from the analysis. Where transcripts per million (TPM) values were zero (transcripts were not detected), we used the lowest TPM across samples to two decimal places. If all samples in a group had no detected transcripts, we used the lowest TPM to two decimal places from the entire set of genes queried. The edgeR package (McCarthy et al., 2012; Robinson et al., 2010) was used to identify genes that were differentially expressed in COVID-19 patient samples compared to controls. Count data were scaled to normalize for library size and normalization factors determined as instructed in edgeR documentation. Dispersion was estimated, and the read counts for each gene were fit with a negative binomial model. Each gene was tested for differential expression. The Benjamini–Hochberg method was used to determine the false discovery rate.

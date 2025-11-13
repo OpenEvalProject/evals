@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05x2bcf33 Neuroscience Institute, Carnegie Mellon University Pittsburgh United States
-2. https://ror.org/03czfpz43 Department of Psychology, Emory University Atlanta United States
+1. Neuroscience Institute, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
+2. Department of Psychology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ Because the strength of any object classification task depends on the degree of 
 
 Infants’ looking times were analyzed using two-sided paired sample t-tests (α=0.05) and standard measures of effect size (Cohen’s d). Furthermore, to ensure that sample size decisions did not unduly influence the results, we also conducted non-parametric (Binomial tests) and Bayesian analyses. A Bayes factor (BF10) was computed for each analysis using a standard Cauchy prior (d=0.707). A BF10 greater than 1 is evidence that two distributions are different from one another, whereas a BF10 less than 1 is evidence that two distributions are similar to one another (Rouder et al., 2009).
 
-## How do infants represent shape?
+### How do infants represent shape?
 
 A comparison of the two types of test trials in Experiment 1 (Figure 2A) revealed that, across the test phase, infants looked longer at the object with the different skeleton compared to the one with the matching skeleton (t[33]=3.04, p=0.005, d=0.52, 95% CI [0.16, 0.88], BF10=8.42; Figure 2B), with the majority of infants showing this effect (25/34 infants, p=0.009). In addition, a comparison between the end of habituation (mean of last 4 trials) and looking times across the test phase revealed that dishabituation only occurred for the object with the different skeleton (t[33]=3.36, p=0.002, d=0.58, 95% CI [0.21, 0.94], BF10=17.47; 25/34 infants, p=0.009), not the object with the matching skeleton (t[33]=1.00, p=0.325, d=0.17, 95% CI [–0.16, 0.51], BF10=0.29; Figure 2B). Thus, infants treated objects with matching skeletons as more similar to one another than objects with different skeletons.
 
@@ -56,7 +56,7 @@ Models were tested with the same stimuli presented to infants using a procedure 
 
 These analyses revealed that all models performed above chance (0.50; see Figure 2C). However, and importantly, infant performance was best matched to the Skeletal model. Both infants and the Skeletal model performed significantly better than all other models, except FlowNet. That infants outperformed the ANNs suggests that extensive object experience may not be necessary to develop robust shape representations. Likewise, that infants outperformed the Pixel model suggests that infant performance is not explained by the low-level visual similarity between objects. However, the success of FlowNet does suggest that motion information may contribute to representations of shape. Nevertheless, FlowNet’s performance did not differ from that of any ANN or the Pixel model, leaving its exact role in object classification unclear. Altogether, these results suggest that infants’ performance is most closely aligned with the Skeletal model and, thus, that infants classified objects, at least in part, by relying on the similarity between objects’ shape skeletons.
 
-## Can infant performance be explained by another representation of global shape?
+### Can infant performance be explained by another representation of global shape?
 
 An alternative explanation for the findings from the first experiment is that, rather than the shape skeleton, infants classified objects using another representation of global shape—namely, the coarse spatial relations among object parts (Biederman and Gerhardstein, 1993; Hummel and Stankiewicz, 1996). Whereas a Skeletal model provides a continuous, quantitative description of part relations, a model based on coarse spatial relations describes part relations in qualitative terms (e.g. two parts below a third vs. two parts on either side of a third). In Experiment 1, test objects with different skeletons also consisted of part relations that could be considered qualitatively different from that of the habituated object, making it unclear whether infants relied on coarse spatial relations instead of the shape skeletons.
 
@@ -68,7 +68,7 @@ To ensure that the effects in Experiment 2 were not unduly influenced by the lar
 
 To examine whether infants’ performance was best described by a Skeletal model we, again, compared infants to a model that represents the shape skeleton, as well as to models that do not. These analyses revealed that the Skeletal, Pixel, and FlowNet models all performed above chance (Figure 2F), but infant performance was most closely matched to the Skeletal model. None of the ANNs performed above chance. As in Experiment 1, both infants and the Skeletal model significantly outperformed the ANNs and the Pixel model, but not FlowNet. These findings again suggest that infants’ judgments reflect the use of skeletal structure and that there may be a role for motion information in this ability.
 
-## Model classification using local shape properties
+### Model classification using local shape properties
 
 Given the competitive performance of ANNs on other object recognition tasks, and their match to adult performance in other studies (Schrimpf et al., 2018), one might wonder why ANNs performed so poorly on our task. One possibility is that ANNs rely on local shape properties (e.g. surface form), which were irrelevant to our task (Baker et al., 2018; Baker et al., 2020). To test this possibility, we examined whether ANNs were capable of classifying objects using local shape properties, namely, the surface forms of the objects. For comparison, we also tested the other models’ performance on this task (Skeleton, Pixel, and FlowNet).
 
@@ -78,11 +78,11 @@ Using a comparable procedure to the previous experiments, all models were tested
 
 **Figure 3.:** (A) Illustration of the experimental procedure administered to models. (B–C) Classification performance of models on stimuli from (B) Experiment 1 and (C) Experiment 2. Error bars represent bootstrapped confidence intervals and dashed lines represent chance performance.
 
-## General discussion
+### General discussion
 
 Although it is well known that shape is crucial for object categorization, much speculation remains about how representations of global shape are formed in development. Here, we demonstrate that infants represent global shape by extracting a skeletal structure. With only one exemplar as a reference, infants classified objects by their shape skeletons across variations in local properties that altered component parts of the objects, including when coarse spatial relations could not be used as a diagnostic cue. Moreover, a Skeletal model provided the closest match to infants’ performance, further suggesting that infants relied on the shape skeleton to determine object similarity. Based on these findings, we would argue that the formation of robust shape representations in humans is largely rooted in sensitivity to the shape skeleton, an invariant representation of global shape.
 
-## The role of other visual properties in object perception
+### The role of other visual properties in object perception
 
 It is important to acknowledge that our results also suggest that object classification can be accomplished on the basis of image-level similarity. In particular, when generalizing across the surface form, a Pixel model performed above chance. Does this mean that infants’ performance can be explained by low-level image similarity between habituation and test objects rather than the shape skeleton? We would suggest not. First, we found that infants discriminated both test objects from the habituation object equally, which argues against the possibility that infants’ performance was strictly based on differences in image-level similarity. Second, both infants and the Skeletal model outperformed the Pixel model in both experiments, further arguing against an account based on image-level similarity alone. Nevertheless, we would not argue that image similarity plays no role in object perception, particularly in infants. Indeed, recent studies comparing the visual representations of infants and computational models reveal that low-level visual similarity explains more variance in infants’ behavioral and neural responses than the upper layers of ANNs (Kiat et al., 2022; Xie et al., 2021). Moreover, recent studies suggest that object categorization in infancy may be supported by the representations of the early visual cortex (V1-V3), rather than the higher-level ventral cortex, as in adults (Spriet et al., 2022).
 
@@ -94,7 +94,7 @@ In contrast to infants and the other models, ANNs were not capable of classifyin
 
 Despite our claim that infants relied on skeletal similarity to classify objects, we would not suggest that it is the only information represented by humans. Indeed, by adulthood, humans also use visual properties such as texture (Jagadeesh and Gardner, 2022; Long et al., 2018) and local contours (Davitt et al., 2014), as well as inferential processes such as abstract rules (Ons and Wagemans, 2012; Rouder and Ratcliff, 2016) and the object’s generative history (Fleming and Schmidt, 2019; Spröte et al., 2016) to reason about objects. Properties such as texture and local features may even override shape skeletons in certain contexts, such as when identifying objects in the periphery (Gant et al., 2021) or during subordinate-level categorization (Davitt et al., 2014; Tarr and Bülthoff, 1998). We suggest that the shape skeleton may be uniquely suited to the basic level of categorization, wherein objects have similar global shapes but vary in their component parts (Biederman, 1995; Rosch et al., 1976). However, more research will be needed to understand the extent to which children may also make use of other properties when categorizing objects.
 
-## Implications for one-shot categorization
+### Implications for one-shot categorization
 
 A key aspect of our design was that infants were habituated to a single, novel object. We did this to better understand the pre-existing visual representations infants rely on for object perception, rather than the ones they may learn over the course of habituation. Using this approach, we found that infants reliably classified objects on the basis of the shape skeleton. Might this result also suggest that infants are capable of one-shot categorization using the shape skeleton? One-shot categorization is the process of learning novel categories following exposure to just one exemplar (Lake and Piantadosi, 2019Lake et al., 2011; Morgenstern et al., 2019; Shepard, 1987). We cannot answer this question definitively, given that visual attention paradigms make it difficult to distinguish between category learning per se and judgments of visual similarity. However, it is intriguing to consider whether the shape skeleton may support rapid object learning at an age when linguistic and object experience is minimal.
 
@@ -106,13 +106,13 @@ Altogether, our work suggests that infants form robust global representations of
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 92 full-term infants participated in this study. Ten infants were excluded (Experiment 1: 5 for fussiness and 1 because of equipment failure; Experiment 2: 3 for fussiness and 1 because of equipment failure). The final sample included 34 infants in Experiment 1 (M=9.53 months, range = 6.47–12.20 months; 18 females) and 48 infants in Experiment 2 (M=9.12 months, range = 6.17–12.00 months; 20 females). Each infant was tested only once. All families gave informed consent according to a protocol approved by the Emory University Institutional Review Board (IRB) under the project ‘Spatial Origins’ (Study Number IRB0003452).
 
 The sample size for Experiment 1 was determined using a priori power analysis with a hypothesized medium effect size (d=0.50; 1 - β>.8). For Experiment 2, we hypothesized that objects with the same coarse spatial relations would be more difficult to discriminate because the shape skeletons were more similar to one another (compared to Experiment 1), leading to an attenuated effect. Accordingly, to retain adequate power, we tested 14 more infants than in Experiment 1, the exact number of which was determined according to a fully counterbalanced design. Importantly, we nevertheless find the same results in Experiment 2 when the sample size is subsampled (n=34) to match that of Experiment 1.
 
-## Stimuli
+### Stimuli
 
 For Experiment 1, six videos of 3D novel objects were rendered from the stimulus set created by Ayzenberg and Lourenco, 2019b; Figure 1. The objects were comprised of three distinct skeletons selected (from a set of 30) on the basis of their skeletal similarity. The skeletal similarity was calculated in 3D, object-centered, space as the mean Euclidean distance between each point on one skeleton and the closest point on the second skeleton following maximal alignment. A k-means cluster analysis (k=3) was used to select three distinct skeletons, one from each cluster (Figure 1). We ensured that the three skeletons were matched for discriminability by analyzing participants’ discrimination judgments using data from Ayzenberg and Lourenco, 2019b. Adult participants (n=42) were shown images of two objects (side-by-side) with either the same or different skeletons (same surface form). Participants were instructed to decide whether the two images showed the same or different objects. A repeated-measures ANOVA, with skeleton pair as the within-subject factor, revealed that the three skeletons used in Experiment 1 did not significantly differ in their discriminability, F(2, 64)=0.11, p=0.898.
 
@@ -126,7 +126,7 @@ We also tested whether objects with different surface forms, but the same skelet
 
 Finally, we ensured that surface forms were matched in discriminability to the selected skeletons. Adult participants (n=41) conducted a surface form discrimination task, wherein they were shown images of two objects (side-by-side) which consisted of either the same or different surface forms (same skeleton). Participants were instructed to decide whether the two images showed the same or different objects. Participants discriminated between surface forms 1 and 2 significantly better than would be predicted by chance, M=0.86, t(40) = 8.95, p<.001, and importantly, discrimination accuracy between surface forms did not differ from discrimination accuracy between skeletons, t(80) = 0.02, p=.981.
 
-## Procedure for testing infants
+### Procedure for testing infants
 
 Each infant sat on their caregiver’s lap approximately 60 cm from a 22-inch computer monitor (1920×1080 px). Caregivers were instructed to keep their eyes closed and to refrain from interacting with the infant during the study session. The experiment was controlled by a custom program written in Visual Basic (Microsoft) and gaze data were recorded with an EyeLink 1000 plus eye tracker recording at 500 Hz (SR-Research). Prior to the start of the experiment, the eye tracker was calibrated for each infant using a 5-point calibration routine. Looking times were coded as any fixation falling within the screen for at least 500 ms. Any trial failing to meet this criterion was not analyzed (2.03% of trials in Experiment 1; 2.04% of trials in Experiment 2).
 
@@ -134,7 +134,7 @@ The experiment consisted of a habituation phase, in which infants were presented
 
 Each infant was habituated to an object with one of three possible skeletons in Experiment 1 and with one of two possible skeletons in Experiment 2 (see Figure 1), with half of the infants habituated to each surface form in each experiment. Infants met the habituation criterion when the average looking time in the preceding four trials was less than 50% of the average looking time in the first four trials. Test trials were presented after infants had habituated or following 24 habituation trials, whichever came first. All infants were presented with a total of six test trials, alternating between objects with the same or different skeletons (3 test trials of each type). The type of first test trial (same or different skeleton) was counterbalanced across infants.
 
-## Model descriptions
+### Model descriptions
 
 For our Skeletal model, we used a flux-based medial axis algorithm (Dimitrov et al., 2003; Rezanejad and Siddiqi, 2013) which computes a ‘pruned’ skeletal structure tolerant to local contour variations (Feldman and Singh, 2006). A pruned Skeletal model was selected for its biological plausibility in describing human shape judgments (Ayzenberg et al., 2019a; Feldman et al., 2013; Wilder et al., 2011; Wilder et al., 2019).
 
@@ -142,7 +142,7 @@ The four ANNs tested in the present study were: ResNet-IN, ResNet-SIN, CorNet-S,
 
 To test whether infant-looking behaviors could be accounted for by low-level image properties, we also tested a model of pixel similarity and FlowNet, a model of motion flow (Dosovitskiy et al., 2015; Ilg et al., 2017). For the Pixel model, the raw image frame was passed into the evaluation pipeline and classification was based on this information alone. FlowNet estimates the motion energy between adjacent video frames and is able to successfully use motion information to segment objects from the background as well as support action recognition in videos. Here we used an iteration of FlowNet known as FlowNet2-S, which was pre-trained on the MPI-Sintel and ‘flying chairs’ datasets (Butler et al., 2012; Mayer et al., 2016).
 
-## Model analyses
+### Model analyses
 
 Models were evaluated on the same stimulus sets presented to infants and tested using methods similar to the habituation/dishabituation procedure. One way to conceive of this procedure is as a measure of alignment between the stimulus and the infant’s internal representation of the stimulus. Infants will continue looking at a display for as long as they perceive a mismatch, or ‘error’, between the stimulus and their representation. To approximate this process, we converted each model into an autoencoder, which was ‘habituated’ and tested using the same criteria as infants (Mareschal et al., 2000; Westermann and Mareschal, 2004). An autoencoder is an unsupervised learning model that attempts to recreate the input stimulus using a lower-dimensional set of features than the input. Like infants, the error signal from the output layer of an autoencoder remains high when there is a mismatch between the input stimulus and the internal representation. Each model was converted into an autoencoder by passing the outputs of the model to a single transposed convolutional decoding layer. For ANNs, outputs were extracted from the penultimate layer of the model, ‘AvgPool’ (with ReLu) for each frame of the video. For the Skeletal model, each frame of the video was first binarized and the skeleton extracted. The resulting skeletal image was blurred using a 3-pixel Gaussian kernel and passed into the decoder. For FlowNet, image representations of the flow fields were generated for each pair of adjacent frames before being passed into the decoder. No image preprocessing was conducted for the Pixel model. To match the output dimensions of each ANN, each image from the Skeletal, FlowNet, or Pixel model was passed through a single convolutional feature extraction layer with Max and Average pooling, before being sent to the decoding layer.
 
@@ -160,6 +160,6 @@ During the habituation phase, models were shown repeated presentations (epochs) 
 
 **Figure 6.:** Dissimilarity for each object pair was calculated as the error from an autoencoder following habituation to one object, and testing on a second object. Internal values of each cell in the matrix indicate the error between habituation and test objects. Error-values are normalized to the end of habituation. Dissimilarity matrices are asymmetrical because the error value changes depending on which object the model was habituated to. The object adjacent to each row is the habituation object, and the object adjacent to each column is the test object.
 
-## Classification score
+### Classification score
 
 For comparison, the performance levels of infants and computational models were converted to a classification score. Organisms’ responses (i.e. looking time/error signal) in the test phase were first normalized to the end of the habituation phase (last 4 trials/epochs) by taking the difference between the two. The response to the novel object was then converted into a proportion by dividing it by the combined response to the novel and familiar test object. For both the models and infants, a classification score of 0.50 reflects chance performance.

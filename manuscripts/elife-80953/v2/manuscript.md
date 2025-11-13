@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Immunology Graduate Group, University of Pennsylvania Philadelphia United States
-2. https://ror.org/00b30xv10 Department of Biochemistry and Biophysics, University of Pennsylvania Philadelphia United States
-3. https://ror.org/00b30xv10 Department of Genetics, University of Pennsylvania Phildelphia United States
+1. Immunology Graduate Group, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Department of Biochemistry and Biophysics, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+3. Department of Genetics, University of Pennsylvania Phildelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
@@ -36,9 +36,25 @@ Here, we investigate the role of CD28 costimulation by high-depth RNA-sequencing
 
 ## Results
 
-## Temporal regulation of alternative splicing in primary human CD4+ T cells controls a distinct set of genes than are regulated by expression
+### Temporal regulation of alternative splicing in primary human CD4+ T cells controls a distinct set of genes than are regulated by expression
 
 To better understand the breadth and dynamics of alternative splicing changes following T cell activation, we sought to characterize global alternative splicing changes induced at early and late timepoints following T cell stimulation, as well as to determine the impact of CD28 costimulation on splicing (Figure 1A). We first isolated primary human CD4+ CD45RO- T cells from three healthy human donors, varying in age and gender, with >90% (CD4+) and >85%(CD45RO) purity (Figure 1—figure supplement 1A-C). These cells were then stimulated in culture with either anti-CD28, anti-CD3, or anti-CD3/CD28 antibodies for either 8 or 48 hr to analyze early and late alternative splicing changes. Following stimulation, total RNA was isolated from cells and subjected to poly(A) selected RNA-sequencing to a depth of 65 million read per sample, which allows for rigorous quantification of splicing (Figure 1A). Potential variability of T cell activation between human donors was controlled for by the expression of the activation marker, CD69, which is routinely used to measure the robustness of T cell activation, and IL2 expression, which is well characterized to be enhanced by the presence of CD28 costimulation (Diehn et al., 2002; Riley et al., 2002; Watts, 2010). Importantly, by flow cytometry, CD69 was consistently upregulated between donors when T cells were stimulated by either CD3 or CD3/CD28 for 48 hr (Figure 1B). In addition, IL2 expression was enhanced to a similar extent in all donors in the context of CD28 costimulation when compared to CD3 stimulation alone (Figure 1C). We also carried out differential gene analysis to quantify and confirm that the number of genes that are differentially expressed in our dataset is comparable to the numerous other datasets recently published. Indeed, we are able to detect over 1600 and 2100 genes that are differentially expressed by CD3 and CD3/CD28 conditions at 48 hr of T cell stimulation, respectively (Figure 1—figure supplement 1D-E), consistent with other studies demonstrating that CD28 signaling enhances the expression of a subset of genes (Diehn et al., 2002; Riley et al., 2002; Watts, 2010). In addition, we observe clear upregulation of many genes that are described to have increased expression upon T cell activation, like interferon gamma and TNF (Figure 1—figure supplement 1D, Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of experimental set-up for RNA-sequencing (RNA-seq). (B) Flow cytometry analysis of CD69 cell surface expression on stimulated primary CD4+ CD45RO- T cells cultured for 48 hr. (C) Log2 fold changes (stimulated/unstimulated) of IL2 expression quantified by RNA-seq analysis. (D) Number of significant (dPSI >10%, p<0.05) splicing changes induced by either anti-CD28, anti-CD3, or anti-CD3CD28 antibodies for 8 or 48 hr of culture. dPSI is equivalent to stimulated PSI – unstimulated PSI for the corresponding timepoint (see Materials and methods). (E) Pearson’s correlation analysis of significant splicing events in the specified stimulation conditions compared between human donors. Venn diagrams display the overlap of significant splicing events induced by the specified stimulation condition compared between human donors. (F) Splicing events significantly (dPSI >10%, p<0.05) by the 48 hr-CD3CD28 condition were analyzed for differential temporal changes between 8 and 48 hr of culture. Events labeled as ‘Early/Transient Changes’ have a significant change at 8 hr but a decrease in dPSI of >2 by 48 hr, while ‘Early/Sustained Changes’ were significant at 8 hr and showed no decrease of more than twofold by 48 hr. Lastly, remaining events were labeled as ‘Late Changes’. (G) Averages of the number of significant events categorized based on their temporal patterns as seen in F, between human donors. Bar graph depicits mean +/-SEM for the 3 donors. Summary of top gene ontology (GO) categories presented by splicing events within ‘Early/Sustained Changes’ and ‘Late Changes’.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Description donor characteristics used for RNA-seq analysis. (B–C) Flow cytometry analysis of the percentage of CD4 and CD45RO expression on the surface of T cells enriched in each donor. (D) Volcano plot of log2FC induced with CD3/CD28 stimulation at 48 hr of culture. (E) The number of significantly (log2FC >1.5, p<0.05) differentially expressed genes in the specified conditions, quantified by RNA-seq analysis. (F–G) Significant alternative splicing changes (dPSI >10%, p<0.05) induced by anti-CD28, anti-CD3, anti-CD3CD28 were quantified by RNA-seq analysis and categorized by common splicing patterns exhibited. The number of splicing events per splicing pattern was averaged between human donors. Bar graph depicits mean +/-SEM for the 3 donors. (H) Significant (dPSI >10%, p<0.05) 48 hr-CD3CD28 splicing changes were analyzed for differential temporal changes between 8 and 48 hr of culture. Events labeled as ‘Early/Transient Changes’, red, has a ratio <0.05 between 48 and 8 hr-CD3CD28. Subsequently, events were filtered for >10% PSI at 8 hr of CD3CD28 stimulation for ‘Early/Sustained Changes’, blue. Lastly, remaining events were labeled as ‘Late Changes’, black. (I) Overlap of significant alternative splicing events and significant differential expressed genes induced by the specified conditions (J–K) Gene ontology (GO) enrichment analysis of splicing events categorized as ‘Late/Sustained Changes’ or ‘Early/Sustained Changes’.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Significant splicing events in various stimulation conditions, described in Figure 1D, are binned by their unstimulated PSI levels in each stimulation condition. Each dot represents one human donor. Error bars represent SEM for the 3 donors.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Significantly differentially expressed genes (log2FC >1.5, p<0.05) induced upon CD3/CD28 stimulation for 48 hr were analyzed for differential temporal changes. Genes labeled as ‘Early/Transient Changes’, red, has a ratio <0.05 between 48 and 8 hr-CD3CD28. Subsequently, genes were filtered for >1.5 log2FC at 8 hr of CD3CD28 stimulation for ‘Early/Sustained Changes’, blue. Lastly, remaining genes were labeled as ‘Late Changes’, black. (B) RNA binding proteins that are significantly differentially expressed by induction of CD3/CD28 stimulation at 48 hr were analyzed for differential temporal changes between 8 and 48 hr of stimulation, as described above. (C–D) Histogram representing the number of significant differentially expressed genes regulated by CD28 costimulation for 8 and 48 hr of stimulation. Genes that are selected are significant (>1.5 log2FC, p<0.05) by CD3/CD28 stimulation at 48 hr. Genes that have a log2FC ratio (CD3CD28/CD3) greater than 2 are deemed regulated by CD28 costimulation.
 
 To quantify splicing differences between conditions, we used the MAJIQ algorithm, which is optimized for the quantification of both previously annotated and novel alternative splicing events, including those that are simple/binary splicing changes or complex splicing events (Vaquero-Garcia et al., 2016). In the MAJIQ analysis the abundance of any given splicing pattern (isoform) relative to the total is quantified as percent spliced isoform (PSI), with changes in isoform abundance between conditions quantified as a deltaPSI or dPSI (Vaquero-Garcia et al., 2016; Supplementary file 2). At 8 hr of stimulation, MAJIQ identifies 223, 405, and 423 significant alternative splicing changes (>10% dPSI, >95% probability in at least two of three donors) in the CD28, CD3, and CD3/CD28 stimulation conditions, respectively. Upon 48 hr of stimulation, the number of significant alternative splicing changes increased to 566, 1277, and 1195 alternative splicing changes in the CD28, CD3, and CD3/CD28 stimulation conditions, respectively (Figure 1D). The usage of a 10% dPSI cut-off to define significant splicing changes is based on previous studies demonstrating this cut-off to identify splicing changes that are highly validated by orthogonal methods and also suggests a meaningful biological phenotype (Vaquero-Garcia et al., 2016). We also excluded the possibility that our identified stimulation-induced splicing events were dependent on skewed PSI distributions that exist prior to stimulation as we observe no strong biases of the distribution of unstimulated PSI values for those splicing events that exhibit stimulation-induced changes (Figure 1—figure supplement 2). Importantly, we observe an overall high correlation (Pearson >0.5) in the splicing induced by either CD3 or CD3/CD28 across in all donors (Figure 1E). By contrast, the splicing changes observed upon stimulation with CD28- alone are much more variable (Figure 1E, left panel). To ensure focus on the most robust and reproducible changes, our subsequent studies are restricted to splicing events induced by CD3 or CD3/CD28 that met the threshold criteria (>10% dPSI, >95% probability) in at least two of three donors (Figure 1D and E) while we have disregarded events induced by CD28 alone for the rest of the analysis due to overall low correlation rates between donors.
 
@@ -46,13 +62,21 @@ In all cases, the predominant splicing pattern observed upon T cell stimulation 
 
 Having established a reliable set of splicing changes at individual conditions and timepoints, we next sought to investigate changes in splicing regulation over time by selecting those splicing events that are significant at 48 hr of CD3/CD28 T cell stimulation and plotting the degree of splicing change (dPSI) at 48 hr against the detected amount of change at 8 hr of stimulation (Figure 1F, Figure 1—figure supplement 1H). We then categorized the differential trends seen between timepoints, namely: events that are upregulated by 8 hr and return to baseline or beyond by 48 hr (‘Early/Transient Changes’), events that are upregulated by 8 hr and sustained at 48 hr (‘Early/Sustained Changes’), and events that are not changing until 48 hr of stimulation (‘Late Changes’) (Figure 1F–G, Supplementary file 3). Interestingly, most events display ‘Late Changes’ patterns and are enriched for gene ontology (GO) categories that involve RNA metabolic processes (Figure 1—figure supplement 1J). The next biggest subset are events that are ‘Early/Sustained Changes’ are enriched for GO terms that mostly involve RNA splicing and processing categories (Figure 1—figure supplement 1K). Alternative splicing events that are ‘Early/Transient’ are not enriched for any specific GO categories. Therefore, splicing events that exhibit different patterns of behavior between 8 and 48 hr of T cell activation are clearly distinct and may regulate different aspects of T cell biology. We note that overall gene expression follows a similar pattern, in that over 80% of genes that change expression at 48 hr do not show notable increases in expression at earlier (8 hr) timepoints. Interestingly, we identify over 300 genes encoding RNA binding proteins (RBPs) that exhibit differential expression following costimulation, including 60 genes that change rapidly upon activation (Figure 1—figure supplement 3; Supplementary file 1). It is likely that some, if not many, of these changing RBPs drive the changes in splicing we observe; however, analysis of sequences surrounding the regulated splicing events failed to identify any enriched motifs corresponding to binding sites for the changing RBPs (Supplementary file 4). The lack of clear motif enrichment likely reflects a complex network of regulation as discussed below (see Discussion).
 
-## CD28 enhances a subset of alternative splicing events upon primary human CD4+ T cell activation
+### CD28 enhances a subset of alternative splicing events upon primary human CD4+ T cell activation
 
 Beyond temporal differences, we are also interested in the impact of CD28 costimulation on splicing. As discussed above, despite the clear impact of CD28 on transcription, the role of CD28 costimulation on splicing regulation in primary human CD4+ T cells remains largely unstudied. The number of genes in which we observe alternative splicing upon T cell activation is roughly similar with or without CD28 costimulation (Figure 1D). Moreover, we find that CD3/CD28- and CD3-induced splicing changes are generally correlative at 8 hr of stimulation (R2 mostly >0.5), with even greater correlation at 48 hr (R2 > 0.75) (Figure 2A–D). These results suggest that there is not a broad requirement for costimulation in splicing regulation during CD3 engagement of T cells. However, to determine if CD28 costimulation might have an impact on a subset of splicing events, we calculated the ratio between the extent of splicing changed induced by CD3/CD28 vs. CD3 alone (CD3/CD28 dPSI/CD3 dPSI) to analyze the effects of costimulation at the individual splicing event level. To prevent CD3-induced splicing events with a very low dPSI (<1%) from skewing the ratio quantification, we normalized all CD3-induced dPSI values of <1% to 1%. Interestingly, at 8 hr, 24% of alternative splicing events have a CD3CD28/CD3 dPSI ratio greater than 2, suggesting that the amount to which these splicing events are regulated is markedly enhanced by CD28 costimulation (Figure 2E). By 48 hr we observe a smaller effect of costimulation, with only ~7% of alternative splicing events exhibiting a CD3CD28/CD3 dPSI ratio greater than 2 (Figure 2F). We note that alternative splicing events regulated by CD28 costimulation are largely those for which CD3 induces a change in splicing between 1% and 25% dPSI, therefore CD28 signaling produces a robust splicing change primarily for events that exhibit minimal changes with CD3 alone (Figure 2—figure supplement 1). We also note that most of the splicing events regulated by costimulation at 8 hr are subsequently downregulated by 48 hr of stimulation (i.e. ‘Early/Transient’), while most of the costimulation-enhanced events observed at 48 hr are ‘Late Changing’ events and not regulated at 8 hr of stimulation (Figure 2—figure supplement 1). Therefore, the spectrum of splicing events regulated by CD28 costimulation at 8 and 48 hr following T cell stimulation are distinct from one another, rather than CD28 costimulation simply ‘speeding up’ the change in splicing.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Dot plots displaying correlation trends of splicing changes induced by anti-CD3 and anti-CD3CD28 antibodies in stimulated human primary CD4+ CD45RO- T cells in their respective timepoints. (C–D) Pearson’s correlation analysis of splicing quantifications between induced by anti-CD3 and anti-CD3CD28 stimulation of human primary CD4+ T cells in their respective timepoints. (E–F) Histograms depict the ratio of anti-CD3CD28 percent spliced isoform (PSI) over anti-CD3 PSI to quantify the number of splicing changes enhanced by CD28 costimulation. Splicing events with a ratio >2 are defined as enhanced by CD28 costimulation. (G) (Left) Motif enrichment analysis of sequences that are enriched within splicing events regulated by CD28 costimulation at 48 hr of culture, as seen in F. (Right) Examples of RNA binding proteins that are regulated by CD28 costimulation based on RNA-seq expression analysis (Supplementary file 1) and have a consensus binding sequences similar to enriched sequence motifs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Splicing events regulated by CD28 costimulation at 8 and 48 hr of stimulation, described in Figure 2E–F, are binned by their CD3 dPSI levels. Each dot represents one human donor. (B–C) Events regulated by CD28 costimulation are analyzed for differential temporal trends displayed between 8 and 48 hr of T cell stimulation. Events labeled as ‘Early/Transient Changes’ has a ratio <0.05 between 48 and 8 hr-CD3CD28. Subsequently, events were filtered for >10% PSI at 8 hr of CD3/CD28 stimulation. Lastly, remaining events were labeled as ‘Late Changes’. (D) Averages of the number of events regulated by CD28 costimulation that are categorized based on their differential temporal changes. Bar graphs depict mean ± SEM, n=3 biological replicates.
+
 Given that the set of genes we are analyzing for changes in splicing are those for which no change in expression is observed, we can rule out a model in which CD28 signaling impacts splicing as a secondary effect of changes in transcription or abundance of a given gene. To begin to understand how CD28 costimulation might directly impact splicing, we asked if the expression of any RBPs is induced by CD28. While we don’t observe any RBPs whose expression is clearly impacted by CD28 at 8 hr, we identify 49 RBP-encoding genes that are expressed at least twice as highly upon CD28 costimulation than is observed downstream of CD3 engagement alone (Figure 1—figure supplement 3C, D). Notably, for at least two of these RBPs with known splicing regulatory activity, SRSF1 and hnRNPA2B1, we observe enrichment of their cognate binding motif around CD28-enhanced alternative splicing events (Figure 2G; Supplementary file 4). We acknowledge that more RBPs may be regulated by CD28 costimulation through post-transcriptional or post-translational mechanisms. Therefore, further analysis is necessary to determine if unaccounted RBPs could also bind to enriched motif sequences and confer CD28-induced splicing changes. Nevertheless, these data demonstrate that CD28 signaling impacts gene expression in activated T cells not only through induced expression but also via direct impact of alternative splicing, and this latter effect is likely driven by increased activity of a subset of splicing regulators, including SRSF1 and hnRNPA2B1.
 
-## Splicing events enhanced by CD28 costimulation include those in genes involved in controlling apoptosis
+### Splicing events enhanced by CD28 costimulation include those in genes involved in controlling apoptosis
 
 In the case of induced transcription, CD28 costimulation increases the expression of several genes involved in T cell proliferation and effector function, thus providing a mechanistic basis for at least some of the requirement for costimulation to achieve a full T cell immune response. Importantly, we find that genes that exhibit CD28-induced alternative splicing in the analysis above also include genes with critical roles in T cell function. For example, at 8 hr CD28 costimulation increases the production of the full-length isoforms of BPTF, STRADA, and TAB3 (Figure 3A-C), all proteins that have the potential for influencing maintenance of T cell numbers and function (Wu et al., 2016; Yin et al., 2012) or NF-kB activity (Jin et al., 2004). Similarly, splicing events in genes encoding caspase-9 (caspase-9), IL12RB, and MR1 displayed sensitivity to CD28 costimulation by 48 hr of T cell stimulation (Figure 3D–F). Loss of IL12RB expression following T cell activation biases differentiation toward the Th1 fate (Kano et al., 2008), while major histocompatibility complex class I-related (MR1) is recognized by and activates a unique type of T cells with an invariant TCR alpha chain (Flores-Villanueva et al., 2020). However, given the role of CD28 costimulation in promoting T cell viability, we were most intrigued by the influence of CD28 on the alternative splicing of caspase-9 (Figure 3D).
 
@@ -62,21 +86,53 @@ In the case of induced transcription, CD28 costimulation increases the expressio
 
 The splicing event within caspase-9 induced by CD28 costimulation is of particular interest because of the potential of the splicing event to control T cell survival (Figure 4A). Specifically, the RNA-sequencing analysis reveals a large and CD28-dependent increase in the skipping of caspase-9 exons 3–6 upon T cell activation at 48 hr (Figure 3D), which we further validated by RT-PCR analysis of RNA harvested from addition donors (Figure 4B). As discussed above, exons 3–6 of the caspase-9 gene encode a portion of the catalytic domain responsible for the subsequent cleavage of caspase-3 to effect apoptosis (Figure 4A). Skipping of these exons leads to production of a dominant negative form of the protein that, at least in lung carcinoma cell lines, has been shown to protect against apoptosis (Goehe et al., 2010; Seol and Billiar, 1999; Shultz et al., 2010).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of the intrinsic apoptosis signaling pathway highlights in red the role of Bim, Bax, and Caspase-9 in regulating apoptosis. (B–E) Primary human naïve (CD4+ CD45RO-) T cells from three human donors were stimulated for 48 hr with either anti-CD3 or anti-CD3CD28 antibodies. After RNA was harvested, low-cycle radioactive RT-PCR analysis of splicing changes were averaged, as shown in bar graphs (n=3). Arrows on splicing diagrams represent the proximal location of primers on the transcript which flanks sequences regulated by alternative splicing for each gene. A representative low-cycle RT-PCR gel from one donor displays splicing isoforms for each gene and associated quantified percent spliced isoform (PSI) values under each gel. Significance was assessed by Student’s t test and mean ± SEM values are plotted; p<0.05 (*), p<0.01(**), p<0.001(***). (F) Proteins were extracted from unstimulated and 48 hr-CD3CD28 stimulated primary human CD4+ T cells from one representative donor and blotted for caspase-9, Bax, caspase-1, Bim protein levels. hnRNPL is used as a loading control. (G) Bar graph quantifying average protein isoform levels with mean ± SEM values plotted. Each dot represents one human donor.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) RT-PCR analysis of AS changes within death signaling genes induced by anti-CD3/CD28 stimulation for 48 hr. (B) Differential expression analysis, quantified by RNA-seq, of death signaling. (C) Time course of splicing changes within primary human CD4+ T cells induced by anti-CD3/CD28 antibodies. Splicing changes were quantified by low-cycle radioactive RT-PCR analysis between at least three human donors. Line graphs depict mean ± SEM.
+
 Given the well-described functional impact of caspase-9 splicing changes, and the potential implication for T cell activity, we investigated if other genes within death signaling pathways are also regulated by alternative splicing upon T cell activation as well as their sensitivity to CD28 costimulation. Notably, out of 14 additional splicing events in known apoptotic genes that were quantified by MAJIQ in our data, the genes Bim, Bax, and caspase-1 displayed the largest splicing changes (>20% dPSI) upon 48 hr of primary CD4+ T cell activation (Figure 4—figure supplement 1), which we confirmed by RT-PCR (Figure 4C–E). Moreover, in each of these three cases, as for caspase-9, we observe a decreased expression of the longer isoform upon T cell activation and this change is at least somewhat enhanced by CD28 costimulation (Figure 4C–E). The splicing event within Bim includes three isoforms, Bim(EL), Bim(L), and Bim(S), that are discriminated by the variable inclusion of intron 2b and exon 3c, which encode the N-terminal region of the protein (Figure 4C). Bax splicing involves the decreased inclusion of exon 3 in activated T cells, which encodes the BH3 domain of the protein, necessary for its oligomerization and activation (Figure 4D). Lastly, the splicing event within caspase-1 identified in our MAJIQ analysis represents a novel intron retention event in the 3’UTR region of the transcript (Figure 4E). This change in the 3’UTR correlates with reduced caspase-1 protein expression, suggesting the potential for translation regulation (Figure 4F and G). Critically, caspase-9, Bim, Bax, and caspase-1 are not significantly regulated at the level of gene expression upon T cell activation, although other apoptotic-related genes such as FasLG, Fas, and Bcl-x do exhibit increased expression at 48 hr after stimulation (Figure 4—figure supplement 1), as described previously (Boise et al., 1995; Brunner et al., 1995). However, the splicing changes in at least caspase-9 and Bim do result in an increase in the abundance of the smaller protein isoforms while the contribution of splicing changes to regulate protein isoforms of Bax and caspase-1 remain unclear. The differences in the extent of detected protein changes may reflect differences in the kinetics of splicing of caspase-9, Bim, Bax, and caspase-1, in which Bax is the most delayed response following T cell activation (Figure 4—figure supplement 1).
 
-## Activation-induced alternative splicing of apoptotic genes promotes T cell survival
+### Activation-induced alternative splicing of apoptotic genes promotes T cell survival
 
 Similar to caspase-9, Bim and Bax are well documented to regulate intrinsic signaling events within the apoptosis signaling pathway (Figure 4A), thus we hypothesized that the splicing of these events all might control cell survival following T cell activation. To test this hypothesis and better understand the phenotypic impact of splicing events in T cells, we used CRISPR/Cas9 to force an increase in the activation-induced (i.e. smaller) isoform of caspase-9, Bim, or Bax within Jurkat T cells, by deleting the corresponding genomic region of one allele of each gene (Figure 5, Figure 5—figure supplement 1). The resulting cell lines (Casp9ΔE3-6(-/+), BimΔE2b-2c(-/+), BaxΔE3(-/+)) allow us to alter the isoform abundance at basal expression levels rather than through overexpression of cDNA. Moreover, the use of heterozygous deletions allow us to more closely mimic the partial isoform abundance changes that are induced upon T cell stimulation, rather than forcing complete ablation of a particular isoform. The deletion of the alternative exon in each cell clone was validated though genomic PCR and subjected to Sanger sequencing (Figure 5—figure supplements 1 and 2), and the impact on RNA and protein isoform expression was confirmed by RT-PCR and Western, respectively (Figure 5, Figure 5—figure supplement 1). To control for off-target effects, we also analyzed the expression of other canonical apoptosis signaling proteins to confirm there were no confounding changes in other apoptotic proteins (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig5-v2.jpg)
+
+**Figure 5.:** (A) Casp9ΔE3-6-/+ is a Jurkat derived monoclonal cell line that expresses decreased levels of the longer isoform of caspase-9 by heterozygous CRISPR/Cas9 targeting and deletion of exons 3–6. Editing was confirmed at the DNA level by genomic PCR amplification. At the RNA level, low-cycle RT-PCR confirms caspase-9 isoform expression changes. Casp9ΔE3-6-/+ cells were treated with either etoposide (B) or camptothecin (C) to induce apoptosis at the specified concentrations and timepoints. The percentage of alive cells were quantified through flow cytometry analysis by Annexin V and PI staining. Values differing from wildtype control across three independent experiments are noted. Significance was measured by Student’s t test with mean ± SEM values depicted; p<0.05 (*), p<0.01(**), p<0.001(***). (D–J) The validation and measurement of survival rates of BimΔE2b-2c-/+ and BaxΔE3-/+ cell lines are similar as described in A-C. Data from independent heterozygous clones is shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Validation assays of Jurkat cell lines using the CRISPR/Cas9 targeting system to delete genomic coordinates that encode for regulated alternative exons within caspase-9, Bim, and Bax genes. (Top) Sanger sequencing of genomic DNA isolated from specified CRISPR cell lines. Sanger sequencing peaks represent the deletion of the alternative exons within cell clones. Sequence of unmodified allele for each of the cell lines is shown in Figure 5—figure supplement 2. (Middle) Western blots demonstrate the protein expression changes of CRIPSR/Cas9 targeted genes, in addition to proteins that are not targeted by CRISPR/Cas9 that display consistent expression levels compared to wildtype Jurkat cells. (Bottom) Additional BimΔE2b-2c-/+ and BaxΔE3-/+ cell lines with RT-PCR validation analysis and Etoposide and Camptothecin-induced cell death analysis as described in Figure 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Sequences around splice sites of caspase-9, Bim, and Bax from Ref-Seq compared to that obtained from the wildtype allele in the heterozygous clones used in the main manuscript.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) CRISPR cell clones were incubated with camptothecin or etoposide for apoptosis induction for 6 hr and subsequently harvested to quantify the percentage of cells with active caspase-3/7 activity by utilizing caspase-3/7 FAM-FLICA probes. (B) CRISPR cell clones were incubated with camptothecin or etoposide for apoptosis induction for 6 hr and subsequently harvested to measure mitochondrial membrane permeabilization events via MitoTracker Red CMXRos staining by flow cytometry. Significance was measured by Student’s t test with mean ± SEM values reported; p<0.05 (*), p<0.01(**), p<0.001(***). n=3, independent experiments.
 
 Using these isoform-modified cell lines, we then induced apoptosis signaling to ask if altering the isoform expression of caspase-9, Bim, or Bax conferred any changes in cell survival. Each cell line was incubated with titrating amounts etoposide or camptothecin for 6 hr, with an additional late timepoint of 24 hr. Camptothecin and etoposide are both DNA topoisomerase inhibitors that induce DNA damage and are well characterized to induce apoptosis signaling (Ferraro et al., 2000). Strikingly, the Casp9ΔE3-6(-/+) cell line presented robust resistance to apoptosis induction compared to wildtype cells in the presence of etoposide and camptothecin (Figure 5B and C). BimΔE2b-2c(-/+) and BaxΔE3(-/+) also exhibited resistance to apoptosis induction with camptothecin and etoposide (Figure 5E, F, I, J, Figure 5—figure supplement 1); however, the effects were not as large compared to Casp9ΔE3-6(-/+). As a complementary method to specifically confirm inhibition of apoptosis as the mechanism by which the Casp9ΔE3-6(-/+), BimΔE2b-2c(-/+), and BaxΔE3(-/+) cell lines exhibit reduced cell death, we quantified the levels of caspase-3/7 cleavage and MOMP activity in the presence of camptothecin and etoposide inhibitors. Similar to trends presented in overall cellular survival analysis, the levels of caspase-3/7 activity and MOMP activity were also decreased in all the modified cell line in the presence of camptothecin and etoposide compared to wildtype cells (Figure 5—figure supplement 3). In summary, increased abundance of the shorter isoform of caspase-9, Bim, and Bax increases cell survival upon apoptotic induction with camptothecin and etoposide.
 
 The above experiments with the modified cell lines test the individual contribution of modulating isoforms of caspase-9, Bax, and Bim on apoptosis; however, upon activation of primary CD4+ T cells, the splicing of all three of these genes occurs in concert (Figure 4). We therefore wanted to ask if the increased abundance of the shorter isoform of caspase-9, Bax, and Bim produce additive effects to regulate cell survival. To this end, we transfected Jurkats with antisense morpholino oligos (AMOs) to block splice sites near caspase-9, Bim, and Bax alternative splicing events. Upon transfection in Jurkats cells, the longer isoform of caspase-9, Bim, Bax, decreased in abundance, as quantified by RT-PCR (Figure 6A). The decreased abundance of the longer isoform of caspase-9, Bim, and Bax is reflective of the trend seen upon primary CD4+ T cell activation and in the CRISPR-modified cell lines engineered to express less of the longer isoforms. As a negative control, Jurkats were also transfected with an AMO targeting an alternative exon within MKK7, which we have characterized previously (Martinez et al., 2015). We also controlled for specificity and off-target effects between AMOs by quantifying splicing of genes that the AMOs are not expected to regulate and observed no significant cross-regulation (Figure 6—figure supplement 1A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig6-v2.jpg)
+
+**Figure 6.:** (A) Jurkats were individually transfected with antisense morpholino oligos (AMOs) that targeted splicing events within caspase-9, Bim, Bax, and MKK7 (negative control) genes, and rested for 48 hr, then subjected to low-cycle RT-PCR analysis to quantify splicing changes within each gene. Splicing diagrams represent relative placement of AMO along transcripts of each gene. n=3 independent experiments. As shown previously (Goehe et al., 2010), blocking of caspase-9 exon 3 is sufficient to cause skipping of the whole exon 3–6 cassette. (B) Forty-eight hr after AMO transfection, cells were incubated with either etoposide or camptothecin for 6 hr and cell survival was quantified through staining of Annexin V and PI by flow cytometry. Early dying cells are characterized as Annexin V+ and PI- cells. Significance was measured by Student’s t test across n=3 independent experiments with mean ± SEM values reported; p<0.05 (*), p<0.01(**). No differences between mock and single AMO treatments are statistically significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80953/elife-80953-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) As described in Figure 6, Jurkat cells were transfected with AMOs to induce splicing changes for subsequent apoptosis analysis. Here, low-cycle radioactive RT-PCR analysis quantified the rate of off-target effects of AMOs to influence splicing changes of non-targeted genes. (B) Jurkat cells were transfected with a titrated amount AMOs against CASP9, Bim, and Bax splicing events. The splicing analysis was quantified by low-cycle RT-PCR analysis and measured by dPSI (Titrated AMO PSI - Mock PSI) as seen in the table (Top). (Bottom) Forty-eight hr after AMO transfection, cells were incubated with either etoposide or camptothecin for 6 hr and cell survival was quantified through staining of Annexin V and PI by flow cytometry. Early dying cells are characterized as Annexin V+ and PI- cells.
+
 Jurkat cells transfected with AMOs were treated with etoposide and camptothecin for 6 hr and apoptosis was again quantified by assessing the percentages of early dying cells (Annexin V+, PI- cells) by flow cytometry analysis (Figure 6B–C). Notably, when Jurkat T cells are transfected with all three AMOs (caspase-9, Bim, Bax) at once, there is a significant decreased fold change (FC) in early dying cells compared to cells individually transfected with caspase-9, Bax, and Bim AMOs. By contrast, cells transfected with 10 nmol of MKK7 AMOs, to reflect the concentrations of AMOs individually transfected into cells, or 30 nmol, which reflects the final concentration of three AMOs transfected together, did not have a significant impact on cell death (Figure 6B and C). To further test the model that the enhancement of splicing induced by CD28 is important to reach a threshold for resistance to apoptosis, we repeated the AMO experiment with a lower dose of oligomer to achieve a smaller change (two- threefold smaller dPSI) in splicing (Figure 6—figure supplement 1B). Strikingly, this reduced change in splicing was insufficient to yield any individual or additive effect on resistance to apoptosis (Figure 6—figure supplement 1B).
 
 While it is difficult to draw a direct one-to-one comparison between the absolute change in splicing and resistance to apoptosis in primary T cells versus Jurkat cells due to general differences in cell physiology, these data provide strong support for a threshold effect between alternative splicing and apoptosis. Specifically, the CRISPR mutants demonstrate that robust changes in splicing of caspase-9, Bim, and Bax lead to resistance to apoptosis; while the low-dose AMO data demonstrate that individual or small changes in the splicing of caspase-9, Bim, and Bax have little impact on apoptosis. Only once a threshold of splicing change is reached in multiple genes is resistance to apoptosis observed. In sum, we conclude that coordinated and robust removal of critical domains in caspase-9, Bim, and Bax by alternative splicing, as observed upon activation of T cells by CD3 and CD28, is required to achieve a combinatorial enhancement of cell survival.
 
-## JNK signaling coordinates regulation of caspase-9, Bim, and Bax
+### JNK signaling coordinates regulation of caspase-9, Bim, and Bax
 
 Previous studies in our lab have focused on identifying specific signaling pathways downstream of TCR stimulation that regulate splicing changes within T cells (Heyd and Lynch, 2010; Martinez et al., 2015). Interestingly, one of these studies demonstrated that Bax alternative splicing in primary CD4+ T cells is dependent on the JNK signaling pathway (Martinez et al., 2015). Moreover, JNK signaling in T cells has been shown to be enhanced by costimulation of CD28, compared to CD3 alone (Su et al., 1994). Thus, the requirement for JNK signaling is consistent with the enhancement of alternative splicing of Bax we observe upon CD28 costimulation. Consistent with the coordinated regulation of alternative splicing of apoptotic genes, we find that JNK activity is also required for the alternative splicing of caspase-9 and Bim upon T cell activation, while inhibition of other kinases have a weaker or more inconsistent effect on splicing of these genes (Figure 7A–C).
 
@@ -104,40 +160,344 @@ In summary, we identify here differential temporal trends in alternative splicin
 
 ## Materials and methods
 
-## Isolation and stimulation of primary human CD4+ T cells and Jurkat cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CASP9</td>
+      <td>GenBank</td>
+      <td>#842</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BCL2L11</td>
+      <td>GenBank</td>
+      <td>#10018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BAX</td>
+      <td>GenBank</td>
+      <td>#581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CASP1</td>
+      <td>GenBank</td>
+      <td>#834</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Wildetype Jurkat T cells</td>
+      <td>Lynch and Weiss, 2000</td>
+      <td>JSL1</td>
+      <td>Clonal population of Jurkat T cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Casp9ΔE3-6(-/+)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line generated by CRISPR/CAS9 system</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BimΔE2b-2c(-/+)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line generated by CRISPR/CAS9 system</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>and BaxΔE3(-/+)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line generated by CRISPR/CAS9 system</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pSpCas9(BB)–2A-GFP (PX458)</td>
+      <td>Addgene</td>
+      <td>Plasmid #48138</td>
+      <td>Construct to transfect cells with Crispr guide RNAs</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary Human CD4+ T cells</td>
+      <td>Human Immunology core at the University of Pennsylvania</td>
+      <td></td>
+      <td>CD4+ T cells enriched from apheresis product</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD69-PE (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 310905</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD28 L293 (Mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat # 348040</td>
+      <td>2.5 µg/mL of soluble antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3 NA/LE (Mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat # 555336</td>
+      <td>2.5 µg/mL of plate bound antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Caspase-9 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 9502</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Bim (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab32158</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Bax (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab325034</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Caspase-1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab179515</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Annexin V- Pacific Blue</td>
+      <td>Biolegend</td>
+      <td>Cat # 640917</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-2</td>
+      <td>Miltenyi</td>
+      <td>Cat # 130-097-742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA STAT-60</td>
+      <td>Tel-Test Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-human CD45RO human microbeads</td>
+      <td>Biolegend</td>
+      <td>Cat # 130-046-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Caspase-3/7 FAM-FLICA assay</td>
+      <td>Immunochemistry Technologies</td>
+      <td>Cat # 93</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Camptothecin</td>
+      <td>Millipore Sigma</td>
+      <td>Cat # 208925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etoposide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # E1383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium Iodide</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # c34557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Red CMXRos</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # M7512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>R0-31-8220</td>
+      <td>Selleckchem</td>
+      <td>S7207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Go6983</td>
+      <td>Selleckchem</td>
+      <td>S2911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB20350</td>
+      <td>Selleckchem</td>
+      <td>S1076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Skepinone-L</td>
+      <td>Selleckchem</td>
+      <td>S7214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclosporin A</td>
+      <td>Selleckchem</td>
+      <td>S2286</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FK506</td>
+      <td>Selleckchem</td>
+      <td>S5003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-2206</td>
+      <td>Selleckchem</td>
+      <td>S1078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SP600215</td>
+      <td>Selleckchem</td>
+      <td>S1460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JNK-IN-8</td>
+      <td>Selleckchem</td>
+      <td>S4901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tanzisertib</td>
+      <td>Selleckchem</td>
+      <td>S8490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PANTHER Classification System</td>
+      <td>PANTHER Classification System</td>
+      <td>Version 17.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STREME algorithm</td>
+      <td>MEME suite software</td>
+      <td>Version 5.4.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo</td>
+      <td>Flowjo</td>
+      <td>Version 10.7.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 9.4.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>The R foundation</td>
+      <td>Version 1.1.463</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation and stimulation of primary human CD4+ T cells and Jurkat cells
 
 CD4+ T cells were obtained by apheresis from de-identified healthy blood donors after informed consent by the University of Pennsylvania Human Immunology Core. Samples were collected from three donors, Donor 1 (age: 46, sex: male), Donor 2 (age: 26, sex: female), and Donor 3 (age: 32, sex: male). Naïve CD4+ T cells were negatively enriched for by utilizing CD45RO microbeads (Miltenyi: 130-046-001). 5×106 naïve CD4+ T cells were stimulated in complete RPMI supplemented with 10 IU of IL-2 (Miltenyi: 130-097-742), with either soluble 2.5 µg/mL anti-CD28 (BD: 348040) or 2.5 µg/mL bound anti-CD3 (BD: 555336), or with both soluble anti-CD28 and bound anti-CD3. Cells were harvested after 8 and 48 hr of culture. Stimulation efficiency and consistency between human donors was measured by CD69 expression (Biolegend: 310905), analyzed by flow cytometry on the BD LSRII equipment maintained by the Flow Cytometry core at the University of Pennsylvania. Growth and transfection of Jurkat cells was as described previously (Lynch and Weiss, 2000). Jurkat cells were validated by RNA-sequencing and negative for mycoplasm.
 
-## RNA-sequencing of cultured primary CD4+ T cells with alternative splicing and expression quantifications
+### RNA-sequencing of cultured primary CD4+ T cells with alternative splicing and expression quantifications
 
 RNA was isolated with RNA Bee (Tel-Test Inc), according to the manufacturer’s protocol, from cultured primary human CD4+ T cells described above. The RNA integrity number (RIN) was measured with the Agilent bioanalyzer, and all samples had a RIN >8.0. RNA-sequencing libraries were generated by and sequenced by GeneWiz. The libraries were poly(A) selected (nonstranded) and paired-end sequenced at a 150 bp read length. Alternative splicing was quantified by MAJIQ and differential expression analysis was quantified by DESeq2. Significant alternative splicing events analyzed by MAJIQ have >10% dPSI and p<0.05 and significant differentially expressed genes are >1.5 log2FC (stimulated/unstimulated). For more, detailed information about the experimental design was published previously (Radens et al., 2020). The RNA-sequencing data generated for this study is available in GEO (GSE135118). For RBP expression analysis, list of RBPs originated from Gerstberger et al., 2014.
 
-## GO enrichment analysis
+### GO enrichment analysis
 
 GO enrichment analysis was performed using the GO biological process compete tool provided by the PANTHER Classification System (http://pantherdb.org). The splicing events categorized as ‘Late/Sustained Events’ and ‘Early/Sustained Events’ (Supplementary file 3) were used over whole genome background control. The significant GO enrichment analysis met the threshold of p<0.05 and an enrichment score >2.
 
-## Motif enrichment analysis
+### Motif enrichment analysis
 
 Motif enrichment analysis was provided by STREME algorithm in the MEME suite software v5.4.1 (https://meme-suite.org). For simplicity, we quantified sequences that are enriched from splicing events that are cassette exons. Sequences, in hg37 coordinates, selected from each alternative splicing event consisted of 250 bp downstream of the alternative cassette exon, the sequences encoding the cassette exon, and 250 bp upstream of the alternative cassette exon. Upstream sequences exclude 7 bp that encodes for the conserved 5’ splice site and downstream sequences exclude 30 bp that involves the 3’ splice site to avoid sequence enrichment. Significant enriched motifs listed met the threshold of E-value <0.05 and enrichment ratio >2 (Supplementary file 3). Candidate RBPs predicted to bind to the enriched motifs were determined through annotated binding specificities provided by two databases (http://cisbp-rna.ccbr.utoronto.ca, https://attract.cnic.es/index).
 
-## Validation of alternative splicing changes by RT-PCR
+### Validation of alternative splicing changes by RT-PCR
 
 RNA was isolated from primary CD4+ T cells or Jurkats using RNABee or RNAStat (Tel-Test, Inc) according to the manufacturer’s protocol. Low-cycle radioactive RT-PCR was performed and analyzed as previously described in detail (Ip et al., 2007; Lynch and Weiss, 2000; Rothrock et al., 2003). Primer sequences used for splicing analysis include: caspase-9 (F: GGCCAGGCAGCTGATCATAGATCTG R: GGAGGCCACCTCAAACCCATGGTC), Bim (F: CCTTCTGATGTAAGTTCTGAGTGTGAC R: CCATATCTCTGGGCGCATATCTGC), Bax (F: CTCTGAGCAGATCATGAAGACAGG R: GAAAACATGTCAGCTGCCACTCG), and Caspase-1 (F: GAGCAGCCAGATGGTAGAGCGCAG R: CCTTTACAGAAGGATCTCTTCACTTC).
 
-## Western blotting
+### Western blotting
 
 Ten µg of total protein lysates were loaded into 10% 37.5:1 bis-acrylamide SDS-PAGE gels. SDS-PAGE gels were transferred onto PDVF membranes and targeted proteins were visualized with a chemiluminescence system and subsequent imaging with an x-ray developer. Antibodies used to detect protein expression levels are as follows: caspase-9 (Cell Signaling: 9502), Bim (Abcam:32158), Bax (Abcam: ab325034), and Caspase-1 (Abcam: ab179515).
 
-## Identifying cell survival upon apoptosis induction monoclonal cell lines via Crispr/Cas9 system
+### Identifying cell survival upon apoptosis induction monoclonal cell lines via Crispr/Cas9 system
 
 To generate individual cell clones that express decreased levels of the longer isoform of caspase-9, Bim, and Bax, we used CRISPR/Cas9 targeted editing in Jurkat cells to delete the genomic elements that encode for the regulated alternative splicing events. Two custom gRNAs were created to target intronic regions that surround genomic elements that encode for the alternative splicing event of interest. The gRNAs designed sequences are as follows: caspase-9 (gRNA-1: CTTTGATATATACCTAAGGG, gRNA-2: GTGGCCACAGCTAAACTGCA), Bim (gRNA-1: CACTGGAGGATCGAGACAGC, gRNA-2: GGTAAGAGGCAGTTGACGTG), and Bax (gRNA-1: GAGGGTGCAGAATCAGAACG, gRNA-2: GAAAAGCAACAGGCCAACGG). gRNAs were individually cloned into a BBSP1 digested PX458-462 plasmid (https://www.addgene.org/48138) which also encodes for both the Cas9 enzyme and GFP.
 
 Plasmids with cloned-in gRNA sequences that target upstream and downstream intronic regions flanking the splicing event of interest were combined and transfected (5 µg each) into 10 million Jurkat cells through electroporation using the Bio-Rad Gene Pulser Xcell. After electroporation, edited Jurkat cells were rested for 48 hr and sorted into 96-well plates (FACS Jazz) by gating on doublet exclusion and GFP+ expression. One or two to three cells were added per well for the growth of single cell colonies. Individual cell clones were screened by PCR amplification of targeted genomic regions for band size exclusion on an 1.5% EtBr agarose gel, sequencing of genomic DNA, and by Western blot. All Jurkat cells were cultured in RPMI (Corning) supplemented with 5% heat-inactivated fetal bovine serum (FBS) (GIBCO) as described previously (Lynch and Weiss, 2000). Cells were incubated with apoptotic inducers camptothecin (MilliporeSigma: 208925) and etoposide (Sigma-Aldrich: E1383) for the specified concentrations and timepoints for downstream flow cytometry analysis. Cell survival analysis was measured by flow cytometry through Annexin V-Pacific Blue (Biolegend: 640917) and Propidium Iodide staining (Thermo Fisher: c34557). Caspase-3/7 activity was measured with FAM-FLICA probes (Immunochemistry Technologies: 93) and MOMP events were measured with MitoTracker Red CMXRos staining (Thermo Fisher: M7512).
 
-## Determining the synergistic effects of splicing events to promote cell survival in Jurkat T cells
+### Determining the synergistic effects of splicing events to promote cell survival in Jurkat T cells
 
 For each AMO treatment, 10 million Jurkat cells cultured in RPMI media without FBS or antibiotics were electroporated using a Bio-Rad Gene Pulser Xcell. Ten nmol of each individual AMO were added in the transfection whether the cells were transfected with individual AMOs or in conditions where the AMOs are pooled together. Transfected cells were seeded into six-well plates with pre-warmed RPMI supplemented with 5% of FBS and rested for 48 hr. The splice-blocking activity of each AMO at 48 hr was validated by radio-labeled low-cycle RT-PCR using primer sequences for caspase-9, Bim, and Bax described above. Primer sequences used to validate the MKK7 splicing event include: F: CGACCTCAACCTGGATATCAGCC, R: GGAGCTCTCTGAGGATGGCGAGC. In addition, 48 hr after transfection, cells were incubated with apoptotic inducers, 5 µM camptothecin and 25 µM etoposide, for 6 hr, and cell survival analysis was measured via flow cytometry with Annexin V-Pacific Blue and Propidium Iodide staining.
 
-## Elucidation of signal transduction pathways downstream of TCR stimulation to regulate splicing changes in primary CD4+ T cells
+### Elucidation of signal transduction pathways downstream of TCR stimulation to regulate splicing changes in primary CD4+ T cells
 
 To elucidate the roles of signal transduction proteins to regulate splicing changes, each protein known to be regulated downstream of TCR signaling was targeted by at least two different inhibitors. Human primary CD4+ CD45RO- T cells were incubated with individual inhibitors for 1 hr and stimulated with bound anti-CD3 and soluble anti-CD28 antibodies for 48 hr. Cells were then harvested for RNA purification and low-cycle RT-PCR analysis for splicing quantifications. The inhibitors utilized are as follows: PCKi: R0-31-8220 (Selleckchem: S7207) and Go6983 (Selleckchem: S2911), p38i: SB20350 (Selleckchem: S1076) and Skepinone-L (Selleckchem: S7214), NFATi: Cyclosporin A (Selleckchem: S2286) and FK506 (Selleckchem: S5003), AKTi: MK-2206 (Selleckchem:S1078) and Ipatasertib (Selleckchem:S2808), JNKi: SP600215 (Selleckchem: S1460) and JNK-IN-8 (Selleckchem: S4901) and Tanzisertib (Selleckchem: S8490).

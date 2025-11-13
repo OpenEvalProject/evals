@@ -22,20 +22,20 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Department of Biochemistry, University of Utah Salt Lake City United States
-2. https://ror.org/01pbdzh19 Department of Chemistry & Biochemistry, University of Toledo Toledo United States
-3. https://ror.org/04vqm6w82 Whitehead Institute for Biomedical Research Cambridge United States
-4. https://ror.org/02jzgtq86 Dana-Farber Cancer Institute, Harvard Medical School Boston United States
-5. https://ror.org/03r0ha626 University of Utah and ARUP Laboratories Salt Lake City United States
-6. https://ror.org/03v7tx966 Huntsman Cancer Institute, University of Utah Salt Lake City United States
-7. https://ror.org/042nb2s44 Department of Biology, Massachusetts Institute of Technology Cambridge United States
-8. https://ror.org/006w34k90 Howard Hughes Medical Institute Salt Lake City United States
+1. Department of Biochemistry, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+2. Department of Chemistry & Biochemistry, University of Toledo Toledo United States ([ROR:01pbdzh19](https://ror.org/01pbdzh19))
+3. Whitehead Institute for Biomedical Research Cambridge United States ([ROR:04vqm6w82](https://ror.org/04vqm6w82))
+4. Dana-Farber Cancer Institute, Harvard Medical School Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+5. University of Utah and ARUP Laboratories Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+6. Huntsman Cancer Institute, University of Utah Salt Lake City United States ([ROR:03v7tx966](https://ror.org/03v7tx966))
+7. Department of Biology, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+8. Howard Hughes Medical Institute Salt Lake City United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
 ## Abstract
 
-The tumor suppressor gene PTEN is the second most commonly deleted gene in cancer. Such deletions often include portions of the chromosome 10q23 locus beyond the bounds of PTEN itself, which frequently disrupts adjacent genes. Coincidental loss of PTEN -adjacent genes might impose vulnerabilities that could either affect patient outcome basally or be exploited therapeutically. Here, we describe how the loss of ATAD1 , which is adjacent to and frequently co-deleted with PTEN , predisposes cancer cells to apoptosis triggered by proteasome dysfunction and correlates with improved survival in cancer patients. ATAD1 directly and specifically extracts the pro-apoptotic protein BIM from mitochondria to inactivate it. Cultured cells and mouse xenografts lacking ATAD1 are hypersensitive to clinically used proteasome inhibitors, which activate BIM and trigger apoptosis. This work furthers our understanding of mitochondrial protein homeostasis and could lead to new therapeutic options for the hundreds of thousands of cancer patients who have tumors with chromosome 10q23 deletion.
+The tumor suppressor gene PTEN is the second most commonly deleted gene in cancer. Such deletions often include portions of the chromosome 10q23 locus beyond the bounds of PTEN itself, which frequently disrupts adjacent genes. Coincidental loss of PTEN-adjacent genes might impose vulnerabilities that could either affect patient outcome basally or be exploited therapeutically. Here, we describe how the loss of ATAD1, which is adjacent to and frequently co-deleted with PTEN, predisposes cancer cells to apoptosis triggered by proteasome dysfunction and correlates with improved survival in cancer patients. ATAD1 directly and specifically extracts the pro-apoptotic protein BIM from mitochondria to inactivate it. Cultured cells and mouse xenografts lacking ATAD1 are hypersensitive to clinically used proteasome inhibitors, which activate BIM and trigger apoptosis. This work furthers our understanding of mitochondrial protein homeostasis and could lead to new therapeutic options for the hundreds of thousands of cancer patients who have tumors with chromosome 10q23 deletion.
 
 ## Introduction
 
@@ -45,11 +45,31 @@ Only 40 kb upstream of PTEN is ATAD1, which encodes a AAA+ ATPase involved in pr
 
 ## Results
 
-## ATAD1 and PTEN are co-deleted in many human cancers
+### ATAD1 and PTEN are co-deleted in many human cancers
 
 Because the PTEN and ATAD1 genes are adjacent on human Chr10q23.31 (Figure 1A; Poluri and Audet-Walsh, 2018), we assessed whether ATAD1 is co-deleted with PTEN using immunohistochemistry on prostate adenocarcinoma tumors (Chung et al., 2019). We analyzed tumors that were PTEN-null by targeted sequencing, along with PTEN-wild-type (WT) controls. ATAD1 protein was undetectable in 21 of the 37 PTEN-null tumors analyzed, but was present in all 15 PTEN-WT control tumors (Figure 1—figure supplement 1A-C). Analysis of genomic data from The Cancer Genome Atlas corroborated these protein-level findings, as the majority of tumors harboring deep deletions in PTEN also had deep deletions in ATAD1 (Figure 1B). Importantly, ATAD1 is almost never deleted in the absence of PTEN deletion (Figure 1B), nor does it feature recurrent inactivating point mutations (Figure 1—figure supplement 1D,E), which argues that ATAD1 is not a tumor suppressor. Therefore, we hypothesize that ATAD1 deletion is simply a ‘hitchhiker’ with the oncogenic driver deletion of PTEN. These deletions most frequently span the 0.5 Mb surrounding PTEN, leading to collateral deletion of KLLN and RNLS in addition to ATAD1 (Figure 1—figure supplement 2). Altogether, ATAD1 is deleted at a high frequency across many tumor types, including in more than 25% of prostate cancer, 11% of melanoma, 7% of glioblastoma, and 4% of gastric adenocarcinoma (Figure 1C). Given the established role of ATAD1 in mitochondrial protein homeostasis, we hypothesized that a hitchhiker deletion of ATAD1 might confer unique vulnerabilities on tumors (Muller et al., 2015; Kryukov et al., 2016; Mavrakis et al., 2016; Muller et al., 2012).
 
-## ATAD1 is synthetic lethal with MARCH5
+![Figure 1.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic of PTEN and ATAD1 loci. (B) Oncoprint plots from three TCGA studies of cancer. ATAD1 and PTEN alteration frequencies are shown, with blue bars indicating deep deletions. (C) Frequency of ATAD1 deep deletions across various cancer types; data from cBioPortal. (D) CRISPR screen design for wild-type (WT) and ATAD1∆ Jurkat cells. (E) Jurkat CRISPR screen results; each point represents one gene. CRISPR score (CS) values were calculated by taking the average log2 fold-change in relative abundance of all sgRNAs targeting a given gene over 14 population doublings. WT CS values are shown on the y-axis. The CS values per gene for each of the two ATAD1∆ clones were averaged and are plotted on the x-axis. The top 10 genes that were differentially essential between WT and ATAD1∆ are labeled in blue, with MARCH5 labeled in red. (F) CRISPR screen design for HGC27 cells (Chr10q23 deletion, ATAD1-null) comparing gene essentiality in ATAD1 complemented cells or empty vector (EV) (ATAD1-null) control. (G) HGC27 CRISPR screen results; CS values are as described for (E). The x-axis depicts CS for the ATAD1-null condition of EV-transduced cells, and the y-axis depicts CS for the ATAD1-complemented (+ATAD1) condition. Labels are as described for (E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Summary of IHC study on PTEN-null prostate adenocarcinoma (PrAd). (B) Representative histology of tumor samples from patients with PTEN-null tumors. (C) Representative histology of PTEN-positive tumors. (D) Somatic mutations in the PTEN (D) or ATAD1 (E) loci, from TCGA Pan-Cancer Atlas studies (32 studies; n=10,528 samples); note logarithmic scale on y-axis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of human chr10, with the 10q23 region highlighted with a red box, and CNV of 698 tumors from patients with metastatic castrate-resistant prostate cancer. Blue horizontal bars indicate deletion of the corresponding region of the chromosome, with darker blue indicating deeper deletion (i.e. lower copy number). Red indicates amplification. (B) Plot of deep deletion frequency vs. chromosomal location. Each point corresponds to the genomic coordinates of the start codon for the corresponding gene, as annotated in cBioPortal, and the frequency of deep deletions in the cohort shown in (A). The x-axis is to scale, but only approximately to scale in relation to (A).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Western blot demonstrating PTEN and ATAD1 status across cell lines. (B) Western blot verification of ATAD1 deficiency of ATAD1∆ cell lines. (C) Proliferation of wild-type (WT) and ATAD1∆ cell lines over 4 days; mean ± SD for n=3 independent experiments. (D) Differential CRISPR scores for the two ATAD1∆ clonal cell lines relative to WT; Pearson coefficient = 0.51, p=2.16 × 10–16.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Both sexes and all ages are included. Data from GLOBOCAN2020; http://gco.iarc/fr/.
+
+### ATAD1 is synthetic lethal with MARCH5
 
 We conducted genome-wide CRISPR knockout screens to identify genes that are selectively essential in ATAD1∆ cells. Such genes represent pathways whose inhibition could be selectively toxic to ATAD1-deficient tumor cells in a patient. We generated two ATAD1∆ clones in the PTEN-null Jurkat T-cell acute lymphoblastic lymphoma cell line using transient expression of Cas9 and one of two sgRNAs targeting distinct exons of ATAD1 (Figure 1—figure supplement 3A and B). Jurkat cells were chosen as an experimentally tractable system that has been validated in genetic screening and as a cell line with background PTEN deficiency. ATAD1 deletion did not affect basal proliferation rate (Figure 1—figure supplement 3C). We conducted parallel screens on the WT Jurkat parental cell line and each of the two ATAD1∆ clonal cell lines, the comparison of which enabled us to minimize idiosyncrasies inherent to clonal cell lines (Figure 1D). A CRISPR score (CS) is assigned to each gene, and represents the mean log2 fold-change in relative abundance of sgRNAs targeting that gene. CS values for the two ATAD1∆ clones were averaged and compared against those of the WT cells (Figure 1E). Genes that are selectively essential in the ATAD1∆ background represent ATAD1 synthetic lethal candidate genes. As expected, the differential CRISPR score (dCS) values for each ATAD1∆ clone vs. WT significantly correlated with each other (p=2.16 × 10–16; Figure 1—figure supplement 3D). The top 10 candidates for ATAD1 synthetic lethality include five genes that encode mitochondrial proteins (MARCH5, TAZ, MTCH1, TOP3A, DNM1L) and two components of the ubiquitin proteasome system (MARCH5, PSMC6), which are both processes with clear relevance to the known functions of ATAD1 (Calvo et al., 2016; Figure 1E). MARCH5 (also known as MITOL) was a particularly interesting hit, since it is an E3 ubiquitin ligase that promotes protein degradation on the OMM (Nakamura et al., 2006).
 
@@ -59,11 +79,51 @@ We made ATAD1-proficient and -deficient HGC27 lines by transducing with lentivir
 
 We were particularly intrigued by the interaction of ATAD1 and MARCH5 for two main reasons. First, the same synthetic lethal interaction between ATAD1 and MARCH5 emerged as the top hit of CRISPR screens using two vastly different cellular contexts. Second, MARCH5 encodes a ubiquitin E3 ligase that ubiquitinates OMM proteins to trigger their extraction by p97/VCP and subsequent degradation by the proteasome (Nakamura et al., 2006; Cherok et al., 2017). MARCH5/p97 and ATAD1 mediate two parallel pathways by which OMM proteins are removed from mitochondria. Hence, it was intuitive that ATAD1 and MARCH5 could be synthetic lethal, given that they both contribute to protein homeostasis on the OMM, and synthetic lethal interactions classically involve two redundant pathways.
 
-## An imbalance of BCL2 family proteins underlies the synthetic lethality of ATAD1 and MARCH5
+### An imbalance of BCL2 family proteins underlies the synthetic lethality of ATAD1 and MARCH5
 
 It has recently become clear that the key function of MARCH5 is to suppress apoptosis (Djajawi et al., 2020; Haschka et al., 2020; Subramanian et al., 2016; Arai et al., 2020). Apoptosis is regulated by OMM-localized BCL2 family proteins and requires the permeabilization of the OMM by BAX/BAK (Kale et al., 2018). Pro-survival proteins such as MCL1 bind to and inhibit BAX/BAK to prevent inappropriate cell death (Greaves et al., 2019). A variety of stressors activate BH3-only proteins (e.g. BIM), which trigger apoptosis by binding and inhibiting pro-survival proteins like MCL1 and in some cases by directly activating BAX/BAK (Letai, 2017). BH3-only proteins serve as sentinels for cellular stress and, upon activation, initiate mitochondrial outer membrane permeabilization (Bhatt et al., 2020; Llambi et al., 2011).
 
 MARCH5 acts as a ‘guardian’ of MCL1 through an incompletely understood mechanism that involves the degradation of the pro-apoptotic BH3-only proteins BIM and/or NOXA (Kale et al., 2018; Letai, 2017; Llambi et al., 2011; Czabotar et al., 2014; Lin et al., 2022). We hypothesized that ATAD1 antagonizes these OMM-localized pro-apoptotic factors in parallel to MARCH5, such that simultaneous loss of both ATAD1 and MARCH5 leads to a lethal accumulation of pro-apoptotic proteins on the OMM. Indeed, BIM structurally resembles known substrates of ATAD1/Msp1 in that it is TA, has an intrinsically disordered region N-terminal to the transmembrane domain, and has basic residues at the extreme C-terminus (Castanzo et al., 2020; Li et al., 2019). Consistent with this hypothesis, the abundance of BIMEL (the predominant isoform of BIM) was increased in ATAD1∆ cells (Figure 2A). BIMEL can also be inactivated by phosphorylation by cytosolic kinases such as ERK. Deletion of ATAD1 decreased BIMEL phosphorylation, as assessed by decreased mobility in SDS-PAGE (Figure 2B), and with phospho-specific antibodies for residues Ser69 and Ser77 (Figure 2—figure supplement 1). While ATAD1 activity promoted the inhibitory phosphorylation of BIM at Ser69 and Ser77, it did not affect BIM phosphorylation at Thr112, a phosphorylation site that potentiates the pro-death activity of BIM (Figure 2—figure supplement 1). These data suggested that ATAD1 might act on BIM to promote its degradation and inhibitory phosphorylation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-v3.jpg)
+
+**Figure 2.:** (A) Western blot of Jurkat cell lines, with quantification of BIMEL levels normalized to alpha-tubulin; one sample t and Wilcoxon test. (B) Western blot of whole cell lysates from wild-type (WT) or ATAD1∆ Jurkat cells stably expressing sgNT or sgBIM with Cas9-T2A-GFP. Lysates were mock treated or treated with lambda phosphatase (λ PPase) and analyzed by PhosTag/SDS-PAGE. (C) Western blots of Jurkat cell lines stably expressing Cas9-T2A-GFP with sgNT or sgBIM, harvested 4 days after transduction with additional indicated sgRNAs. (D) Viability of Jurkat cells after deletion of MARCH5, using different genetic backgrounds. Viability at 4 days post-transduction was normalized to that of cells transduced with sgRNA targeting AAVS1. Data analyzed by two-way ANOVA with Tukey’s multiple comparisons. (E) Viability of Jurkat cells stably expressing GFP or Myc-tagged MCL1 after deletion of MARCH5 and normalized as in (D). (F) Viability of Jurkat cells transduced with tetracycline-inducible GFP or GFP-BIMEL fusion; t=48 hr, normalized to viability of cells without doxycycline. (G) Western blot of cell lines as described in (D), treated with doxycycline (Dox) for 24 hr. (H) Schematic of in vitro extraction assay; ‘Ni2+ lipos’ indicates the use of nickel chelating headgroups of lipids in the liposomes; the star symbolizes a GST tag on the soluble chaperones, calmodulin (CaM) and SGTA, which are included to catch extracted TA substrates. (I) Extraction assay using His-ATAD1 and 3xFLAG-BIML (lanes 1–8, 13–20) or the negative control yeast TA protein, 3xFLAG-Fis1p (lanes 9–12); E193Q indicates the use of a catalytically inactive mutant of ATAD1; in samples shown in lanes 5–8, Ni2+ chelating lipids were omitted; in samples shown in lanes 17–20, ATP was omitted; ‘I’=Input, ‘FT’=flow-through, ‘W’=final wash, ‘E’=elution. Eluted fractions represent TA proteins extracted by ATAD1 and bound by GST-tagged chaperones; compare elution ‘E’ to input ‘I’. (J) Extraction assay as described in (H) but comparing different BH3-only proteins, BIM, BIK, and PUMA. (K) Quantification of assays as shown in (I), n=6 independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot of lysates separated by SDS-PAGE or Phos-Tag SDS-PAGE. Image representative of two independent experiments. (B) Western blot of anti-BIM immunoprecipitates, probing with phospho-specific antibodies to BIM. Representative of two independent experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Western blot of whole cell lysates from Jurkat cells transduced with sgAAVS1, sgMARCH5, or sgPCNA at 4 days post-transduction. Wild-type (WT) and ATAD1∆ cells here stably express Cas9-T2A-GFP+sgNT, and either GFP or Myc-MCL1. (B) Viability of Jurkat cells stably expressing Cas9-T2A-GFP+sgNT/sgBIM, transduced with mCherry+sgMARCH5/sgPCNA and normalized to the same cells transduced instead with mCherry+sgAAVS1 at day 7, because PCNA deletion is not immediately toxic to cells. N=5 biological replicates. (C) Viability of Jurkat cells as described in (A), measured at day = 7, because PCNA deletion is not immediately toxic to cells. N=5 biological replicates.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Fold-change in confluence measured by Incucyte software, of Jurkat cell lines transduced with tetracycline-inducible GFP-BIMEL, treated with indicated concentrations of doxycycline; mean ± SEM from n=3 biological replicates, representative of three independent experiments. (B) Western blot of H4 cells transduced with indicated constructs. Multiple ATAD1 bands correspond to cleavage of C-terminal epitope tags, which is sometimes seen in cell lines re-expressing ATAD1-FLAG/HA. (C) BH3 profiling data on H4 glioma cells (Del10q23) transduced with the indicated constructs (rows). A133 indicates A1331852. FMO: Fluorescence Minus One FACS control; mean of n=3 biological replicates is shown; **** or ** indicates p<0.001 or p<0.01 by unpaired two-sided t-test. (D) Western blot of co-immunoprecipitation from H4 cells transduced with empty vector (EV) or ATAD1-FLAG/HA and transfected with GFP-BIMEL in the presence of zVAD-FMK. Representative of two independent experiments. (E) Western blot of co-immunoprecipitation from membrane fractions of H4 cells, precipitating endogenous BIM (anti-BIM or IgG as control) and immunoblotting for FLAG-tagged ATAD1. Representative of three independent experiments.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Soluble His-Msp1 and full-length Msp1 (B) extract BIML from proteoliposomes. (C) The extraction assay recapitulates physiological substrate selectivity of Msp1. Fis1 is extracted when a known Msp1 recognition motif consisting of a hydrophobic patch of residues from Pex15 is inserted N-terminal to the TMD (‘Fis1 - patch’). Sec22 and Sec61b are positive controls demonstrating that Msp1 can recognize ER-native TA proteins.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** Y-axis is a measure of disorder, with amino acid position on the x-axis; FASTA sequences were obtained from UniProt and analyzed with IUPred2A and ANCHOR2.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Confocal microscopy of live cells transduced with empty vector (EV) or ATAD1-FLAG, plus TetON(GFP-BIMEL∆BH3) and treated with 100 ng/mL doxycycline for 24 hr. Bortezomib treatment was used at a concentration of 100 nM for 2 hr. Mitochondria were visualized with MitoTracker Red. Images are representative of at least three independent experiments, and the microscopist was blinded. Arrows indicate GFP+ MTRed– puncta. Scale bar = 20 µm. (B) Quantification of GFP+ MTRed– puncta in BTZ-treated cells, as shown in (A); n=132 (EV) or 127 cells (ATAD1) compiled from three independent experiments; unpaired, two-sided t-test, **** indicates p<0.001. (C) Additional examples of GFP-positive puncta induced by bortezomib treatment in SW1088 cells expressing ATAD1 and GFP-BIMEL∆BH3. Images were taken by a blinded investigator and are representative of three independent experiments.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp7-v3.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Confocal microscopy of live SW1088 cells transduced with empty vector (EV)/ATAD1, mito-mCherry, and TetON(GFP-BIMEL∆BH3). BIM expression was induced with 100 ng/mL doxycycline for 24 hr, and bortezomib was used for 2 hr prior to imaging at 100 nM. Mitochondria were labeled by expressing mCherry with an N-terminal fusion of the mitochondrial targeting sequence of COX8. N≥30 cells per condition, imaged by a blinded microscopist. (B) Quantification of colocalization between GFP (BIM) and mCherry (mitochondria) in the presence and absence of ATAD1, with and without bortezomib treatment. Data were analyzed by one-way ANOVA with Tukey’s multiple comparisons test. Colocalization analysis was conducted using Coloc2 in FIJI, and the region of interest was defined as a single cell, excluding the nucleus.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** Confocal microscopy of SW1088 cells transduced with empty vector (EV) or ATAD1, monomeric RFP-SKL (peroxisome marker), and TetON(GFP-BIMEL∆BH3). BIM expression was induced with 100 ng/mL doxycycline for 24 hr, and bortezomib was used for 2 hr prior to imaging at 100 nM. Mitochondria were labeled with Mitotracker Deep Red. N≥30 cells per condition, imaged by a blinded microscopist.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig2-figsupp9-v3.jpg)
+
+**Figure 2—figure supplement 9.:** Confocal microscopy of SW1088 cells transduced with empty vector (EV) or ATAD1, and TetON(GFP-BIMEL∆BH3). BIM expression was induced with 100 ng/mL doxycycline for 24 hr, and bortezomib was used for 2 hr prior to imaging at 100 nM. Mitochondria were labeled with Mitotracker Deep Red. Lysosomes were labeled with LysoTracker Blue. N≥30 cells per condition, imaged by a blinded microscopist.
 
 Since MARCH5 regulates the BIM/NOXA/MCL1 axis, we assessed abundance of these proteins in the context of single and double deletion of ATAD1 and MARCH5. Deletion of ATAD1 increased BIM levels, while deletion of MARCH5 increased NOXA levels (Figure 2C). Accordingly, deletion of both MARCH5 and ATAD1 increased the abundance of both NOXA and BIM, which work together to antagonize the pro-survival protein MCL1 (Figure 2C). We hypothesized that synergistic antagonism of MCL1 explained, at least in part, the synthetic lethality of ATAD1 and MARCH5.
 
@@ -75,7 +135,7 @@ Altogether, our CRISPR screens identified a synthetic lethal interaction between
 
 We next asked if BIM was sufficient to trigger apoptosis preferentially in ATAD1∆ cells. We generated Jurkat cell lines expressing a tetracycline-inducible GFP-BIMEL fusion protein. The dose-dependent increase in GFP-BIM expression was equivalent in WT and ATAD1∆ cells (anti-GFP blot, Figure 2F). Maximal expression of GFP-BIMEL using 500 ng/mL doxycycline killed cells regardless of the presence or absence of ATAD1 (Figure 2G; Figure 2—figure supplement 3A). However, ATAD1∆ cells were hypersensitive to intermediate expression of ectopic BIMEL, as measured by cell viability assays (Figure 2G), cleaved PARP immunoblots (Figure 2F), and live cell imaging using the Incucyte platform (Figure 2—figure supplement 3A). Thus, endogenous ATAD1 protects against BIM but ATAD1 can be overwhelmed with sufficiently high levels of BIM. These results demonstrate that BIM is sufficient to induce apoptosis preferentially in cells lacking ATAD1. We further studied how ATAD1 affected apoptotic priming (the propensity of a cell to undergo intrinsic apoptosis) using BH3 profiling. H4 glioma cells (Del(10q23); ATAD1-null; Figure 2—figure supplement 3B) were highly sensitive to BIM peptide, which is rescued by re-expression of ATAD1WT but not the catalytically dead ATAD1E193Q mutant (Figure 2—figure supplement 3C). ATAD1 therefore appears to suppress overall apoptotic priming, at least in this context, as measured by sensitivity to BIM BH3 peptide.
 
-## ATAD1 directly and specifically extracts BIM from membranes
+### ATAD1 directly and specifically extracts BIM from membranes
 
 We hypothesized that BIM might be a direct substrate of the ATAD1 dislocase, which could explain how ATAD1 suppresses BIM-induced apoptosis. Consistent with BIM being an ATAD1 substrate, GFP-BIMEL co-immunoprecipitated with FLAG-tagged ATAD1 in H4 cells (Figure 2—figure supplement 3D). Inversely, ATAD1-FLAG co-immunoprecipitated with endogenous BIM (Figure 2—figure supplement 3E). Thus, reciprocal co-immunoprecipitation argues that ATAD1 and BIM physically interact in cells.
 
@@ -87,11 +147,31 @@ Many BH3-only proteins share key structural features, including a tail-anchor, s
 
 These data raise the question of what happens to BIM after it has been extracted by ATAD1. We transduced SW1088 cells, which are a Del(10q23) cell line suitable for imaging, with either EV or ATAD1-FLAG. These cells were then transduced with TetON(GFP-BIMEL∆BH3), in which four point mutations in the BH3 domain of BIM neutralize its pro-apoptotic activity to permit live cell imaging. We assessed GFP-BIMEL∆BH3 localization using live cell confocal microscopy in the presence and absence of ATAD1, using MitoTracker Red to label mitochondria. ATAD1 altered the localization of BIM under basal conditions, generating GFP-positive puncta that did not colocalize with mitochondria (Figure 2—figure supplement 6A). Since BIM is regulated by proteasomal degradation, we additionally treated cells with bortezomib, a proteasome inhibitor. Treatment with bortezomib exacerbated this phenotype and resulted in larger, brighter GFP-positive puncta only in ATAD1 expressing cells (Figure 2—figure supplement 6B and C). We saw the same phenomenon when we genetically labeled mitochondria with mCherry, ruling out the possibility that these GFP-BIM puncta are merely depolarized mitochondria that cannot accumulate Mitotracker dye (Figure 2—figure supplement 7). GFP-positive puncta also did not colocalize with lysosomes or peroxisomes (Figure 2—figure supplements 8 and 9). In addition to localization, BIM is regulated by inhibitory phosphorylation, which we had previously observed to be affected by ATAD1 status. Bortezomib treatment led to the accumulation of phosphorylated BIMEL in SW1088 cells expressing ATAD1, while BIMEL accumulated in an unphosphorylated state in SW1088 cells transduced with EV (Figure 3—figure supplement 1A). We next used the PC3 prostate cancer cell line, which is PTEN-null and has a partial deletion of ATAD1 (Figure 3—figure supplement 1B). In parallel to our findings with SW1088 cells, BIM accumulated in a phosphorylated state after treatment with bortezomib in PC3 cells with ATAD1 present (sgNT), but this phosphorylation was abrogated in PC3 cells with ATAD1 deleted (Figure 3—figure supplement 1C and D). Thus, in the context of proteasome inhibition, ATAD1 shifts the localization of BIM from mitochondria to cytoplasmic puncta and promotes inhibitory phosphorylation of BIM.
 
-## Proteasome inhibition is preferentially toxic to ATAD1-deficient cells
+### Proteasome inhibition is preferentially toxic to ATAD1-deficient cells
 
 We next sought to pharmacologically exploit ATAD1 deficiency in relevant cancer models, drawing on our discovery of synthetic lethality with MARCH5. Since MARCH5 is a ubiquitin E3 ligase, we hypothesized that disrupting the ubiquitin proteasome system downstream of MARCH5 might also be preferentially toxic to cells lacking ATAD1. Consistent with this idea, proteasome inhibitors are known to increase BIM and NOXA abundance, thereby triggering apoptosis (Baou et al., 2010; Meller et al., 2006). There were hints from our CRISPR screens that ATAD1-deficient cells might be more sensitive to ubiquitin proteasome system dysfunction generally, with PSMC6 (encoding a proteasome subunit; Jurkat screen) and MUL1 (encoding a mitochondrial E3 ligase; HGC27 screen) also scoring among the top hits for synthetic lethality (Figure 1E and G).
 
 Re-expression of ATAD1 in the Del(10q23) cell lines HGC27 (gastric cancer), SW1088 (glioma), or RPMI7951 (melanoma) suppressed toxicity caused by various structurally distinct proteasome inhibitors (Figure 3A–C, Figure 3—figure supplement 2A–E). That the phenotype was common to multiple proteasome inhibitors with different mechanisms of action increases our confidence that this is due to an on-target effect. Deletion of ATAD1 increased sensitivity to bortezomib in PC3 cells (Figure 3D). Inversely, overexpressing ATAD1WT, but not ATAD1E193Q, made PC3 cells more resistant to bortezomib (Figure 3—figure supplement 2F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig3-v3.jpg)
+
+**Figure 3.:** (A) Viability of HGC27 cells treated with bortezomib (BTZ) for 16 hr. (B) Viability of SW1088 cells treated with BTZ for 24 hr. (C) Viability of SW1088 cells treated with carfilzomib, a different proteasome inhibitor, for 24 hr. (D) Viability of PC3 cells treated with BTZ for 16 hr. (E) Western blots of HGC27 cells screen treated with 1 µM BTZ for 16 hr. (F) Western blots of SW1088 cells transduced with empty vector (EV) or ATAD1-FLAG and treated with 100 nM BTZ for 16 hr. (G) Western blots of PC3 cells transduced with non-targeting sgRNA or ATAD1 sgRNA and treated with 1 µM BTZ for 16 hr. (H) Viability as measured by normalized crystal violet staining (Abs 590 nm) in PC3 cells transduced with sgNT vs. sgATAD1, treated with BTZ for 16 hr in the presence or absence of 40 µM zVAD-FMK. Data analyzed by two-way ANOVA with Tukey’s multiple comparisons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blot of SW1088 cells (Del10q23; basally ATAD1-null) transduced with empty vector (EV) or ATAD1-FLAG and treated with 100 nM bortezomib overnight. Whole cell lysates were analyzed by SDS-PAGE and Phos-Tag SDS-PAGE; representative of two independent experiments. (B) Expression levels of ATAD1 across cell lines in DepMap (log2(TPM+1)). (C) Western blot of PC3 cells transduced with LentiCRISPRv2 sgNT or sgATAD1. (D) Western blot of PC3 cells transduced with non-targeting gRNA (sgNT) or sgATAD1 and treated with 1 µM bortezomib overnight. Whole cell lysates were analyzed by SDS-PAGE and Phos-Tag SDS-PAGE; representative of four independent experiments. (E) Quantification of BIM phosphorylation in PC3 cells treated as in (B), n=4 independent experiments. Data were compared by one-way ANOVA with Tukey’s multiple comparisons test. (F) Enlarged blot from (B) above used to clearly demonstrate phosphorylation status of BIM: ‘o’=unphosphorylated; ‘i’=monophosphorylated; ‘ii’=di-phosphorylated; ‘iii’=poly-phosphorylated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Viability of RPMI7951 cells treated with carfilzomib or bortezomib (B) for 16 hr, n=3 biological replicates, two independent experiments. (C) Viability of SW1088 cells treated with marizomib for 24 hr, n=3 biological replicates, two independent experiments. (D) Viability of SW1088 cells treated with bortezomib (3.9 nM) for the indicated durations, n=3 biological replicates. (E) Viability of RPMI7951 cells treated with bortezomib (3.1 nM) for the indicated durations, n=3 biological replicates. (F) Viability of PC3 cells transduced with empty vector (EV), ATAD1WT, or ATAD1E193Q and treated with bortezomib for 24 hr. n=2 biological replicates, 3 independent experiments. Data were analyzed by two-way ANOVA with Tukey’s multiple comparisons test.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Quantification of PARP cleavage from experiments; PC3 cells treated with bortezomib (BTZ) for 16 hr. (B) Western blot of whole cell lysates from RPMI7951 cells transduced with empty vector (EV) or ATAD1-FLAG and treated with BTZ (100 nM) for 8 hr; representative of three independent experiments. (C) Quantification of PARP cleavage from experiments represented by (A). (D) Viability of RPMI7951 cells transduced with EV/ATAD1, treated with DMSO (0.1%) or ZVAD-FMK (20 µM), and varying doses of BTZ for 16 hr. n=3 biological replicates, 2 independent experiments. (E) Representative image of crystal violet staining of PC3 cells transduced with sgNT/sgATAD1, treated with DMSO (0.1%) or ZVAD-FMK (40 µM), and indicated doses of BTZ for 16 hr. n=3 independent experiments. Quantification shown in main figure. (F) Representative image of crystal violet staining of RPMI7951 cells transduced with EV/ATAD1, treated with DMSO (0.1%) or ZVAD-FMK (20 µM), and indicated doses of BTZ for 16 hr. n=4 independent experiments. (G) Quantification of eluted crystal violet from RPMI7951 cells treated as described in (E). Values were normalized to that of DMSO-treated cells from the same plate. Data analyzed by two-way ANOVA with Tukey’s multiple comparisons test. (H) Schematic depicting that proteasome inhibition can decrease cell fitness via caspase-independent and caspase-dependent (apoptosis) pathways. ATAD1, like ZVAD-FMK, only affects the caspase-dependent pathway, an unexpected insight into how ATAD1 protects cells from protein stress. Data were analyzed by two-way ANOVA with Tukey’s multiple comparisons test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Viability of PC3 cells transduced with lentiCRISPRv2-GFP+sgNT/sgATAD1 with or without lentiCRISPRv2-Puro sgBIM, treated with BTZ for 16 hr. n=3 biological replicates, 2 independent experiments. (B) Western blot of whole cell lysates from PC3 cells as described in (A) treated with BTZ (1 µM, 16 hr) and probed for BIM. (C) Western blot of whole cell lysates from PC3 cells. Cells were treated with or without 1 µM BTZ for 16 hr. n=2 independent experiments. BIK and PUMA were undetectable by western blot. (D) Quantification of blots shown in (C) normalized to beta-actin.
 
 We hypothesized that apoptosis was responsible for the sensitivity of ATAD1-deficient cells to proteasome inhibition. Indeed, bortezomib treatment induced robust PARP cleavage in the same ATAD1-deficient cells described above, but not in cognate ATAD1-positive cells (Figure 3E–G, Figure 3—figure supplement 3A-C). Bortezomib treatment caused polyubiquitinated proteins to accumulate to the same extent in the presence or absence of ATAD1, indicating that ATAD1 affects how the cell responds to proteotoxic stress, rather than blocking the proteotoxic insult itself (Figure 3E–G, Figure 3—figure supplement 3B). Thus, ATAD1 appears to be essential for viability in cells subjected to ubiquitin proteasome system dysfunction.
 
@@ -99,9 +179,21 @@ Apoptotic cell death is only one of many mechanisms underlying proteasome inhibi
 
 Although caspase inhibition completely rescued the bortezomib phenotype of ATAD1-deficient cells, the same was not true for deletion of BIM in PC3 cells, implying that other factors in addition to BIM mediate this phenotype (Figure 3—figure supplement 4A and B). We examined several OMM-localized or TA proteins in PC3 cells with and without bortezomib, and reduced BIM phosphorylation was the only consistent change caused by ATAD1 deletion (Figure 3—figure supplement 4C). Other BH3-only proteins reported to be activated by proteotoxic stress include BIK, PUMA, but our in vitro extraction assay ruled out a direct action of ATAD1 to extract these proteins. Increased mitochondrial fragmentation in ATAD1-null cells could be one potential explanation, since mitochondrial dynamics are intimately connected to apoptosis (Chen et al., 2014). Nonetheless, these results indicate that the protective effects of ATAD1 during proteasome inhibition can be explained exclusively by limiting apoptosis, with BIM extraction playing a key role.
 
-## ATAD1 loss limits tumor progression, particularly under proteotoxic stress
+### ATAD1 loss limits tumor progression, particularly under proteotoxic stress
 
 We next tested whether deficiency of ATAD1 sensitized cancer cells to proteasome inhibition in mouse tumor xenografts. Bortezomib had no effect on growth of PC3 xenografts transduced with sgNT, but significantly decreased the growth rate of tumors in which ATAD1 was deleted (Figure 4A and B). Bortezomib treatment induced a significant increase in NOXA levels in sgATAD1 tumors, but not in sgNT tumors (Figure 4C; Figure 4—figure supplement 1). NRF1/TCF11 is a transcription factor that is activated upon proteasome dysfunction, and we measured NRF1 levels by immunoblot to assess bortezomib activity (Radhakrishnan et al., 2010). NRF1 was equally induced by bortezomib in sgNT and sgATAD1 tumors (Figure 4C; Figure 4—figure supplement 1), again supporting our conclusion that ATAD1 protects cells from death triggered by protein stress rather than preventing the protein stress itself. Altogether, these in vivo results demonstrate that bortezomib is preferentially toxic to PC3 tumors that lack ATAD1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig4-v3.jpg)
+
+**Figure 4.:** (A) Tumor volume over time for mice with flank xenografts of PC3 cells treated with saline (vehicle) or 1 mg/kg bortezomib (BTZ). (B) Tumor volume over time for mice with flank xenografts of ATAD1-knockout PC3 cells treated with saline (vehicle) or 1 mg/kg BTZ. (C) Western blots of whole cell lysates from tumor samples taken from animals as in (A,B) sacrificed 24 hr after receiving saline/BTZ. (D) Kaplan-Meier curve of overall survival from patients with metastatic, castrate-resistant prostate cancer (mCRPC), stratified based on tumor genotype at the ATAD1 and PTEN loci, with accompanying table below. (E) Survival (months) after initiating chemotherapy or hormone therapy (F) in patients with mCRPC, based on tumor genotype. (G) Graphical summary.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) ATAD1 normalized to alpha-tubulin; PC3 xenografts. (B) NRF1/TCF11 normalized to alpha-tubulin; PC3 xenografts. (C) NOXA normalized to nonspecific band with molecular weight of ≈15 kD; PC3 xenografts. (D) BIMEL normalized to alpha-tubulin; PC3 xenografts. (E) MCL1 normalized to alpha-tubulin; PC3 xenografts. (F) BAK normalized to alpha-tubulin; PC3 xenografts. Data were analyzed by two-way ANOVA with Tukey’s multiple comparisons test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82860/elife-82860-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Tumor volume as a function of time for SW1088 flank xenografts; n=17 mice injected with SW1088 cells transduced with empty vector (EV); n=21 mice injected with SW1088 cells transduced with ATAD1-FLAG. (B) Tumor-free survival over time for the two groups of mice. (C) Crystal violet staining of SW1088 cells transduced with EV/ATAD1 and cultured for 3 days; representative of two independent experiments.
 
 ATAD1 was not necessary for basal tumor growth in PC3 cells, so we assessed the effect of ATAD1 on tumor growth of SW1088 cells, a Del(10q23) glioma cell line that is non-tumorigenic in SCID mice (Jiang et al., 2017; Mercapide et al., 2003). As expected, SW1088 cells transduced with EV failed to form tumors in 17 out of 17 NOD/SCID mice. However, SW1088 cells transduced with ATAD1 grew palpable tumors in 20 out of 21 mice (Figure 4—figure supplement 2A and B). ATAD1 thus promotes growth of SW1088 glioma xenografts, despite not affecting their proliferation in 2D culture (Figure 4—figure supplement 2C).
 
@@ -121,109 +213,113 @@ That ATAD1 loss sensitizes to proteasome dysfunction could have therapeutic impl
 
 ## Materials and methods
 
-## Lead contact
+### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Jared Rutter (rutter@biochem.utah.edu).
 
-## Materials availability
+### Materials availability
 
 All unique/stable reagents generated within this study are available from the lead contact upon request without restriction.
 
-## Data and code availability
+### Data and code availability
 
 The CRISPR screening datasets generated during this study are available in the supplemental materials. The human mCRPC survival data are available in supplemental materials. The uncropped source data files for every western blot image are included in the ‘source data’ files.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## ATAD1 knockout cell lines
+#### ATAD1 knockout cell lines
 
 Jurkat E6.1 human T-ALL cells (ATCC TIB-152) were grown in RPMI1640 with 10% FBS and 100 U/mL Pen/Strep (Thermo Fisher). Cells were electroporated using Lonza SE Cell Line 4D-Nucleofector X Kit L according to the manufacturer’s specifications and protocol optimized for Jurkat E6.1 cells. Px458-derived plasmids encoding sgRNA targeting ATAD1 were transiently expressed in Jurkat cells via electroporation. One of two sgRNAs were used, targeting either exon 2 (sense oligo: 5’-CCGACTCAAAGGACGAGAAA-3’) or exon 5 (sense oligo: 5’-CGGTCAGTGTCGAAGGCTGA-3’). Three days later, GFP-positive cells were sorted (BD FACSAria) and plated as single cells in 96-well plates. Clonal cell lines were grown, harvested, and evaluated for ATAD1 deletion via immunoblot using a knockout-validated monoclonal antibody (NeuroMab).
 
 PC3 cells were transduced with lentivirus encoding LentiCRISPRv2-GFP (LCv2G) with non-targeting sgRNA (sgNT, which contains a 15 nt sgRNA sequence, 5’-GAGACGGACGTCTCT-3’, that does not precede any 5’-NGG-3’ sites in the human genome. This was determined by using GAGACGGACGTCTCTNGG as input for ncbi BLAST, and filtering results to 100% query coverage, 100% identity) or LCv2G with sgATAD1 (targeting exon 5: 5’-CGGTCAGTGTCGAAGGCTGA-3’). Three days after transduction, GFP-positive cells were sorted (BD FACSAria) and maintained as a polyclonal population. Editing was confirmed by immunoblot as above.
 
-## ATAD1 re-expression in Del(10q23) cell lines
+#### ATAD1 re-expression in Del(10q23) cell lines
 
 H4 and PC3 cells were transduced with retrovirus (pQCXIP transfer plasmid) encoding ATAD1 with C-terminal FLAG and HA tags. Two days after transduction, cells were selected with 1 µg/mL puromycin for 4 days. RPMI7951, HGC27, and SW1088 cells were transduced with lentivirus (pLenti-Blast transfer plasmid) encoding ATAD1-FLAG, and selected with 8 µg/mL blasticidin for 6 days. Cells were grown in media containing the selective antibiotic upon thawing stocks, but no experiments were conducted using media that contained selective antibiotics.
 
-## Method details
+### Method details
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
-## ATAD1 (using NeuroMab #75-157 mouse monoclonal antibody)
+##### ATAD1 (using NeuroMab #75-157 mouse monoclonal antibody)
 
 The ATAD1 immunohistochemical staining was performed on 4 µm thick sections of formalin-fixed, paraffin-embedded tissues. Sections were air-dried and then melted in a 60°C oven for 30 min. Slides were loaded onto the Leica Bond III automated staining instrument (Leica Biosystems, Buffalo Grove, IL) and de-paraffinized with the Bond Dewax solution. The antigen retrieval performed was done with Bond Epitope Retrieval Buffer 2 (ER2, pH 8.0) for 20 min at 95°C. The ATAD1 primary antibody concentration of 1:400 was applied at an incubation time of 30 min at room temperature. Positive signal was visualized using the Bond Polymer Refine Detection kit-DAB, which is a goat anti-mouse/anti-rabbit secondary HRP/polymer detection system, utilizing DAB (3,3’ diaminobenzidine) as the chromogen. Tissue sections were counterstained with hematoxylin for 10 min. The slides were removed from the immunostainer and placed in a dH2O/DAWN mixture. The sections were gently washed in a mixture of deionized water and DAWN solution to remove any unbound reagent. The slides were gently rinsed in deionized water until all of wash mixture was removed. The slides were de-hydrated in graded ethanols, cleared in xylene and then coverslipped.
 
-## PTEN (using rabbit anti-human monoclonal antibody): clone 138G6, catalog #9559L, Cell Signaling, Danvers, MA
+##### PTEN (using rabbit anti-human monoclonal antibody): clone 138G6, catalog #9559L, Cell Signaling, Danvers, MA
 
 The PTEN immunohistochemical staining was performed on 4 µm thick sections of formalin-fixed, paraffin-embedded tissues. Sections were air-dried and then melted in a 60°C oven for 30 min. Slides were loaded onto the Ventana BenchMark Ultra automated staining instrument (Ventana Medical Systems, Tucson, AZ), de-paraffinized with the EZ Prep solution. The antigen retrieval performed was done with a citrate buffer (pH 6.0) in a pressure cooker (BioCare Medical, Concord, CA) for 4 min at 100°C then cooled in hot buffer for 30 min. The PTEN primary antibody concentration of 1:50 was applied at an incubation time of 2 hr at room temperature. The Ventana Amplification kit was applied to increase the antibody signal. Positive signal was visualized using the UltraView DAB detection kit, which is a goat anti-mouse/anti-rabbit secondary HRP/polymer detection system, utilizing DAB as the chromogen. Tissue sections were counterstained with hematoxylin for 16 min. The slides were removed from the immunostainer and placed in a dH2O/DAWN mixture. The sections were gently washed in a mixture of deionized water and DAWN solution to remove any unbound reagent and coverslip oil applied by the automated instrument. The slides were gently rinsed in deionized water until all of wash mixture was removed. The slides were de-hydrated in graded ethanols, cleared in xylene, and then coverslipped.
 
-## Cell culture
+### Cell culture
 
 Jurkat cells were cultured in RPMI1640 with 10% FBS (Sigma) and 100 U/mL Pen/Strep. Cells were counted regularly and typically split at a concentration of approximately 1–1.5 × 106 cells/mL, but always before reaching a concentration of 3×106 cells/mL. Jurkat cells transduced with tet-inducible vectors were cultured in RPMI1640 with 10% ‘Tet System Approved FBS’ (Takara) instead of standard FBS. Adherent cell lines were maintained in subconfluent cultures in the following media: RPMI1640 (PC3), DMEM (H4 and SW1088), EMEM (RPMI7951 and HGC27), all with 10% FBS and 100 U/mL Pen/Strep. Cells were periodically tested for mycoplasma contamination using a MycoAlert kit and were negative.
 
-## Cloning
+### Cloning
 
 All cloning was conducted via traditional PCR/restriction enzyme ‘cut and paste’ methods and verified by Sanger sequencing.
 
-## ATAD1 constructs
+#### ATAD1 constructs
 
 Retroviral plasmids encoding ATAD1-FLAG/HA and ATAD1E193Q-FLAG/HA were published previously (Chen et al., 2014). Lentiviral vectors were made, using the pLenti-BLAST backbone, by PCR-amplifying the ATAD1 CDS from the above retroviral vectors, but truncating the construct by replacing the HA tag with a stop codon, and ligating between SalI and XbaI sites.
 
-## GFP-BIM constructs
+#### GFP-BIM constructs
 
 The pLVXTet-One vector was purchased from Takara. The coding sequence for EGFP was PCR-amplified and ligated into the MCS using AgeI/BamHI sites. A fusion of EGFP-BIMEL was generated using SOEing PCR and ligated using AgeI/BamHI sites. EGFP-BIMEL was also ligated into pEGFP-C3 for transient transfection.
 
 A gene fragment encoding BIMEL∆BH3 was synthesized by GeneWiz and subcloned into the pLVXTet-One vector described above to make an N-terminal GFP fusion.
 
-## CellTiterGlo viability assay
+### CellTiterGlo viability assay
 
 Viability was determined by CellTiterGlo (Promega) according to the manufacturer’s recommendation, with some modifications. Cells were plated at a density of 5×103 cells/well (adherent cell lines) or 2–4 × 104 cells/well (Jurkat) in 100 µL in 96-well plates with white walls and clear bottoms (Corning #3610). CellTiterGlo reagent was reconstituted, diluted 1:4 using sterile PBS, and stored at –20°C in 10 mL aliquots. The outer wells of the 96-well plates were filled with media but not with cells, due to concerns of edge effects. Luminescence was measured using a Biotek Synergy Neo2 microplate reader. Luminescence values were normalized on each plate to untreated cells on the same plate, and expressed as percent. Viability experiments were conducted with multiple biological replicates and repeated with independent experiments.
 
-## Incucyte
+### Incucyte
 
 Jurkat cells stably transduced with TetON(GFP-BIMEL) were seeded at a density of 103 cells/well in clear-bottom, black 96-well plates (Corning) with different concentrations of doxycycline. Cells were imaged with an Incucyte SX5 system and monitored by phase contrast microscopy, with five images taken per well, every 4 hr, for approximately 4 days. Confluence was normalized to t=0 and is expressed as fold-change. Three replicate wells were used for each condition, and three independent experiments were conducted.
 
-## Spinfection
+### Spinfection
 
 Jurkat cells were routinely spinfected in 12-well plates, with 2–5 × 106 cells per mL in 1 mL containing 10 µg/mL polybrene. Centrifugation was conducted at 30°C and 1100 × g for 60 min.
 
-## CRISPR-based genetic interaction experiments
+### CRISPR-based genetic interaction experiments
 
 Jurkat cells (ATAD1∆ or WT) were transduced with LentiCRISPSRv2-GFP encoding a non-targeting sgRNA (see above) or sgRNA targeting BCL2L11 (encoding BIM; gRNA: 5’-GTTGTGGCTCTGTCTGTAGGG-3’) and sorted by FACS. For MCL1 overexpression experiments, Jurkat cells transduced with LentiCRISPRv2GFP-sgNT were subsequently transduced with viral particles packaged with pLenti-GFP or pLenti-Myc-MCL1, which encodes human MCL1 with an N-terminal Myc tag, and selected with 1 µg/mL puromycin.
 
 Viral particles were made using the LRCherry2.1 transfer plasmid, which encodes U6-sgRNA and mCherry. Cells were spinfected using 10 µg/mL polybrene and viral supernatant. The same number of cells was used for each transduction. One day after spinfection (day 1), cells were resuspended in fresh RPMI media and cultured until day 3, when they were split or seeded into 96-well plates for subsequent analysis by CellTiterGlo (Promega). Viability was calculated by dividing CellTiterGlo values (day 4 or day 7) for a given cell line transduced with sgMARCH5 (5’-GCACTGAGGACATGCCACTC-3’) or sgPCNA (5’-CTACCGCTGCGACCGCAACC-3’) by the values for the same cell line on the same plate transduced with sgAAVS1 (5’-ACTGTTGACGGCGGCGATGT-3’; Girish and Sheltzer, 2020). Cell pellets were collected on day 4 for western blot.
 
-## Crystal violet staining
+### Crystal violet staining
 
 Cells cultured in 12- or 6-well plates were washed twice with PBS then fixed with 4% paraformaldehyde (Sigma-Aldrich) for 30 min at room temperature. Wells were washed with ddH2O three times, then stained with 0.1% (w/v) crystal violet solution in 20% methanol for 30 min at room temperature. Wells were again washed with ddH2O three times, inverted to dry, and plates were photographed against a white background using an iPhone X. For quantification, glacial acetic acid was added to each well to elute the dye, and plates were incubated at room temperature on a rotary shaker for 30 min. Absorbance was measured at 590 nm using a Biotek Synergy Neo2 microplate reader, and values were normalized to those from untreated cells of the same genotype on each plate.
 
-## SDS-PAGE and immunoblotting
+### SDS-PAGE and immunoblotting
 
 Whole cell lysates were prepared by scraping cells directly into RIPA buffer (or adding RIPA buffer to Jurkat cell pellets) supplemented with protease and phosphatase inhibitors (Sigma-Aldrich P8340, Roche Molecular 04906845001), incubated on ice for 30 min with vortexing every 10 min, and then spun at 16,000 × g for 10 min at 4°C to remove insoluble material. Supernatant was saved as lysate and concentrations were normalized for total protein content after measuring with a BCA (Thermo Scientific 23225). Samples were resolved by SDS-PAGE or Tris-glycine gels (Invitrogen XP04205BOX) and transferred to nitrocellulose or PVDF (extraction assay) membranes. Immunoblotting was performed using the indicated primary antibodies which are listed in the Key resources table according to the manufacturers’ recommendations, and analyzed by Licor Odyssey or Azure C500 (extraction assay). Note that the detector for the Azure C500 has several columns of pixels which appear to be non-functional. This gives the appearance of thin vertical white lines in some images. This can be readily viewed in raw data files by over-adjusting the contrast.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 H4 cells (expressing EV or ATAD1-FLAG/HA) were transfected with GFP-BIMEL in pEGFP-C3 (GFP-BIM), 10 µg plasmid for 10 cm plate, in the presence of 20 µM zVAD-fmk. Transient expression proceeded overnight (approximately 16 hr). Cells were washed with cold PBS and lysed with HN buffer supplemented with protease inhibitor cocktail and 1% CHAPS (HNC buffer). Magnetic anti-FLAG beads (Sigma-Aldrich) were equilibrated with HNC buffer and then mixed with lysate (after removing 10% volume as input). Bead-lysate mixtures were incubated on a rotator at 4°C for 2–4 hr. Beads were washed 3× with HNC buffer, then heated at 65°C in 30 µL 1× Laemmli buffer for 10 min.
 
-## Cell counting
+### Cell counting
 
 Cells were counted using Bio-Rad TC20 cell counter. At least two samples were taken from a culture any time a count was to be made and the mean was recorded. For proliferation experiments with Jurkat cells (cell counts over time), a hemocytometer was used.
 
-## Jurkat CRISPR screen
+### Jurkat CRISPR screen
 
 Jurkat cells (WT parental, ATAD1∆ #1, and ATAD1∆ #2) were transduced by spinfection with a genome-wide lentiviral sgRNA library (Addgene #1000000100; Wang et al., 2015) that also encoded Cas9 and a puromycin resistance cassette. Transduction was optimized to achieve an approximate transduction efficiency of 30%, and cells were selected with puromycin (0.5 µg/mL) for 3 days, allowed to recover without puromycin for 2 days, then maintained in a lower dose of puromycin (0.2 µg/mL) for the duration of the screen. An initial sample of cells (8×107) were collected and frozen at the endpoint of puromycin selection (6 days post-transduction). Cells were then maintained in culture for 14 cumulative population doublings (CPDs). Cells were passaged every 2 days and seeded into new flasks at a density of 2×105 cells/mL. After 14 population doublings, representative samples were collected (8×107 cells). As described elsewhere (Adelmann et al., 2019), cell pellets were processed using a QIAamp DNA Blood Maxiprep, sgRNA sequences were amplified by PCR, and amplicons were sequenced for 40 cycles by Illumina HiSeq NGS at the Whitehead Institute Genome Technology Core Facility.
 
 Sequencing reads were aligned to the sgRNA library, given a pseudocount of 1, the counts from each sample were normalized for sequencing depth, and the relative abundance of each sgRNA was calculated as described previously (Wang et al., 2015; Kanarek et al., 2018). sgRNAs with fewer than 50 reads, and genes with fewer than 4 sgRNAs, in the initial reference dataset were omitted from downstream analyses. The log2 fold-change in abundance of each sgRNA between the final and initial reference populations was calculated and used to define a CS for each gene. The CS is the average log2 fold-change in abundance of all sgRNAs targeting a given gene. To achieve a direct comparison of gene essentiality in an ATAD1∆ clone to that in the WT control, we omitted sgRNAs that were not adequately represented (i.e. <50 reads at the initial time point) in both groups. This step enables a paired analysis of sgRNA changes in abundance, and avoids including a given sgRNA that ‘scored’ in one genetic background but whose effects cannot be assessed in another. Data were analyzed and plotted using ggplot2 with R version 4 and RStudio version 1.1.442.
 
-## HGC27 CRISPR screen
+### HGC27 CRISPR screen
 
-The HGC27 CRISPR screen was conducted using the Brunello sgRNA library, which was obtained from Addgene and amplified according to the instructions provided by the depositing lab. HGC27 cells transduced with pLentiBLAST-EV or ATAD1-FLAG were selected and propagated as described above. Cells were spinfected with viral sgRNA library, and 1 day later were treated with puromycin (0.5 µg/mL) for 2 days. The following day (day 4), cell pellets were collected for the initial time point (CPD = 0). Mock-transduced cells were included as a control and demonstrated complete death in response to puromycin. Pellets (80e6 cells) were collected at CPDs of 0 and 14. Genomic DNA was harvested as described above. Sequencing libraries were prepared by University of Utah Genomics Core. Sequencing reads were aligned and quantified using BBtools Seal. Counts were normalized for library size and a pseudocount was added to each value. CS per gene were calculated as the mean log2-transformed fold-change in sgRNA abundance between the final time point (CPD 14) and the initial time point post-infection and antibiotic selection (CPD 0). Selectively essential genes were ranked by dCS:dCS = (CSEV−CSATAD1+)
+The HGC27 CRISPR screen was conducted using the Brunello sgRNA library, which was obtained from Addgene and amplified according to the instructions provided by the depositing lab. HGC27 cells transduced with pLentiBLAST-EV or ATAD1-FLAG were selected and propagated as described above. Cells were spinfected with viral sgRNA library, and 1 day later were treated with puromycin (0.5 µg/mL) for 2 days. The following day (day 4), cell pellets were collected for the initial time point (CPD = 0). Mock-transduced cells were included as a control and demonstrated complete death in response to puromycin. Pellets (80e6 cells) were collected at CPDs of 0 and 14. Genomic DNA was harvested as described above. Sequencing libraries were prepared by University of Utah Genomics Core. Sequencing reads were aligned and quantified using BBtools Seal. Counts were normalized for library size and a pseudocount was added to each value. CS per gene were calculated as the mean log2-transformed fold-change in sgRNA abundance between the final time point (CPD 14) and the initial time point post-infection and antibiotic selection (CPD 0). Selectively essential genes were ranked by dCS:
 
-## BH3 profiling
+$$
+dCS = (CS_{EV}−CS_{ATAD1+})
+$$
+
+### BH3 profiling
 
 BH3 profiling was conducted using a FACS-based method to directly monitor cytochrome C release/retention in cells, as described previously (Ryan and Letai, 2013).
 
-## Confocal microscopy
+### Confocal microscopy
 
 SW1088 cells transduced with EV or ATAD1-FLAG and TetON(GFP-BIMEL∆BH3) were seeded at a density of 3.5×104 cells per dish, in 35 mm Fluorodish plates (World Precision Instruments). Approximately 16 hr later, media was removed and replaced with media containing 100 ng/mL doxycycline. After 24 hr, cells were treated with 20 nM MitoTracker Red for 15 min and then imaged on a Zeiss LSM 880 confocal laser scanning microscope for 45 min in 5% CO2 at 37°C. Imaging on the Zeiss LSM 880 confocal laser scanning microscope was performed with a Plan-Apochromat 63×/1.40 Oil DIC f/ELYR objective. Alternatively, cells were treated with 100 nM bortezomib for 90 min prior to imaging, were stained with MitoTracker Red as described above, and imaged for 30 min. Doxycycline concentrations were maintained throughout the staining and imaging process. All images were Airyscan processed using the Zeiss Zen Desk software.
 
@@ -231,31 +327,31 @@ Microscopy was conducted by an investigator (C Cunningham) who was blinded to ge
 
 Co-localization of GFP-BIMEL∆BH3 and mito-mCherry was analyzed by Coloc2 package (FIJI). Regions of interest were defined by selecting entire cells but excluding nuclei using the GFP channel. All images were identically processed by background subtraction and smoothening. Each data point represents the cytoplasmic region of interest for one cell.
 
-## Mouse xenografts
+### Mouse xenografts
 
 SW1088 cells (transduced with EV or ATAD1-FLAG) were grown under normal culture conditions, as described above. Cells (3×106) were mixed 1:1 with Matrigel (Corning) and injected into one flank per mouse. Mice were male NOD/SCID aged 13–15 weeks. Tumor volumes were monitored biweekly using a Biopticon TumorImager. Animal experiments were conducted in accordance with The University of Utah IACUC.
 
 PC3 cells (transduced with LentiCRISPRv2-sgNT or sgATAD1) were grown as described above. Cells (1.8×106) were mixed 1:1 with Matrigel (Corning) and injected into one flank per mouse (12-week-old, male, NRG). Once tumors had established, mice were randomized into bortezomib or vehicle groups and treatment occurred by tail-vein injection twice weekly for 4 weeks. At the conclusion of the experiment, mice were sacrificed within 24 hr of receiving an IV injection. Tumors were harvested and snap-frozen on liquid nitrogen. Tumor fragments were homogenized in RIPA buffer using ceramic beads on a Omni Bead Ruptor 24 Bead Mill Homogenizer (2 cycles of 45 s at 6 m/s, 4°C). Homogenates were centrifuged (16,000 RCF, 10 min, 4°C) and supernatants were recovered, then used for downstream analysis by immunoblot. Data were analyzed by mixed effects model with Tukey’s multiple comparisons. Animal experiments were conducted in accordance with The University of Utah IACUC.
 
-## Patient data
+### Patient data
 
 Outcome data from patients with mCRPC were downloaded from TCGA via cBioPortal. Patients were stratified into three groups based on status of ATAD1 and PTEN (unaltered vs. null). Raw data are available as a table in Source data 3.
 
-## Bacterial transformation
+### Bacterial transformation
 
 For cloning, Escherichia coli DH5α competent cells (New England Biolabs) were transformed according to the manual provided by the manufacturer and grown on LB agar plates at 37°C overnight. For cloning of lentiviral and retroviral vectors, NEB Stable competent cells were used (NEB C3040I).
 
-## E. cloni cells
+### E. cloni cells
 
 For cloning, E. cloni10G competent cells were transformed according to the manual provided by the manufacturer (Lucigen) and grown on LB agar plates at 37°C overnight.
 
-## BL21-DE3 pRIL cells
+### BL21-DE3 pRIL cells
 
 For protein expression, E. coli BL21(DE3) containing a pRIL plasmid and a protein expression vector were grown in terrific broth at 37°C until an OD600 of 0.6–1.0. Cultures were induced with isopropyl-1-thio-β-D-galactopyranoside (IPTG) at a final concentration of 1 mM and grown at room temperature for an additional 3–4 hr.
 
-## Production of soluble constructs
+### Production of soluble constructs
 
-## Δ1-32 Msp1 and Δ1-39ATAD1
+#### Δ1-32 Msp1 and Δ1-39ATAD1
 
 The gene encoding the soluble region of Saccharomyces cerevisiae Msp1 (Δ1–32) was PCR-amplified from genomic DNA and subcloned into a pET28a derivative (Novagen) encoding an N-terminal 6×His tag followed by a TEV protease cleavage site. The soluble region of Rattus norvegicus ATAD1 (Δ1-39) was PCR-amplified from a plasmid containing ATAD1 cDNA (GE Healthcare). All insertions and deletions were performed by standard PCR techniques. Site-specific mutagenesis was carried out by QuickChange PCR. All constructs were verified by DNA sequencing.
 
@@ -263,13 +359,13 @@ Plasmids encoding soluble Msp1, ATAD1, or their mutants were purified as describ
 
 The protein was further purified by size exclusion chromatography (SEC) (Superdex 200 Increase 10/300 GL, GE Healthcare) in 20 mM Tris pH 7.5, 200 mM KAc, 1 mM DTT. Peak fractions were pooled, concentrated to 5–15 mg/mL in a 30 kDa MWCO Amicon Ultra centrifugal filter (Pierce) and aliquots were flash-frozen in liquid nitrogen and stored at –80°C. Protein concentrations were determined by A280 using a calculated extinction coefficient (Expasy).
 
-## GST-SGTA and GST-calmodulin
+#### GST-SGTA and GST-calmodulin
 
 GST-tagged SGTA was expressed and purified as described previously (Mateja et al., 2015). The original calmodulin plasmid was a kind gift of the Hegde lab (Shao and Hegde, 2011). Calmodulin was cloned into pGEX6p1 plasmid by standard methods. GST-SGTA and GST-calmodulin were expressed as described above for soluble Msp1 constructs. Cells were harvested by centrifugation and resuspended in SGTA Lysis Buffer (50 mM HEPES pH 7.5, 150 mM NaCl, 0.01 mM EDTA, 1 mM DTT, 10% glycerol) supplemented with 0.05 mg/mL lysozyme (Sigma), 1 mM PMSF and 500 U of universal nuclease (Pierce), and lysed by sonication. The supernatant was isolated by centrifugation for 30 min at 4°C at 18,500 × g and purified by glutathione affinity chromatography (Thermo Fisher) on a gravity column. Resin was washed with 20 CV of SGTA Lysis Buffer and then eluted with 3 CV of SGTA Lysis Buffer supplemented with 10 mM reduced glutathione. The protein was further purified by SEC (Superdex 200 Increase 10/300 GL, GE Healthcare) in 20 mM Tris pH 7.5, 100 mM NaCl, 0.1 mM TCEP. Peak fractions were pooled, concentrated to 10 mg/mL in a 30 kDa MWCO Spin Concentrator (Pierce) and aliquots were flash-frozen in liquid nitrogen and stored at –80°C. Protein concentrations were determined by A280 using a calculated extinction coefficient (Expasy).
 
-## Production of membrane proteins
+### Production of membrane proteins
 
-## BIM and Fis1
+#### BIM and Fis1
 
 Homo sapiens BimL, S. cerevisiae Fis1 TMD ±5 flanking amino acids (residues 126–155), H. sapiens Bik, or H. sapiens Puma was cloned in place of the Sec22 TMD in the SumoTMD construct described previously (Wang et al., 2010; Wohlever et al., 2017). These constructs have N-terminal His6 and 3× Flag tags and a C-terminal opsin glycosylation site (11 residues). A 3C protease site was added immediately after the His tag by standard PCR methods. The resulting constructs are His6-3C-3xFlag-Sumo-thrombin-BimL-Opsin and His6-3C-3xFlag-Sumo-thrombin-Fis1(126-155)-Opsin, His6-3C-3xFlag-Sumo-thrombin-Bik-Opsin, and His6-3C-3xFlag-Sumo-thrombin-Puma-Opsin.
 
@@ -279,26 +375,26 @@ Ni-NTA resin was washed with 10 CV of SumoTMD Wash Buffer 1 (50 mM Tris pH 7.5, 
 
 The protein was further purified by SEC (Superdex 200 Increase 10/300 GL, GE Healthcare) in 50 mM Tris pH 7.5, 150 mM NaCl, 10 mM MgCl2, 5 mM BME, 10% glycerol, 0.1% DDM. Peak fractions were pooled and concentrated in a 30 kDa MWCO spin concentrator (Pierce). Sample was then incubated with 3C Protease at a 1:100 ratio at 4°C overnight to remove the His tag. The following day, the sample was run over Ni-NTA resin equilibrated in Lysis Buffer to remove 3C protease, His tag, and uncleaved proteins. Flow through was collected, aliquoted, and flash-frozen in liquid nitrogen and stored at –80°C. Protein concentrations were determined by A280 using a calculated extinction coefficient (Expasy).
 
-## Msp1
+#### Msp1
 
 Full-length S. cerevisiae Msp1 was PCR-amplified from genomic DNA, subcloned into a pET21b derivative with a C-terminal 6×His tag, and expressed as described above for the soluble constructs. Cells were lysed by sonication and the insoluble fraction was harvested by centrifugation for 1 hr at 4° C at 140,000 × g. After resolubilizing for 16 hr in Msp1 Lysis Buffer containing 1% DDM (Bioworld), the detergent-soluble supernatant was isolated by centrifugation for 45 min at 142,000 × g and purified by Ni-NTA affinity chromatrography and SEC as described above for the soluble constructs, except that all buffers contained 0.05% DDM. Peak fractions were concentrated in 100 kDa MWCO Amicon Ultra centrifugal filter (Millipore). Protein concentrations were determined by A280 using a calculated extinction coefficient (Expasy) and aliquots were flash-frozen in liquid nitrogen.
 
-## Reconstitution of Msp1 activity in proteoliposomes
+### Reconstitution of Msp1 activity in proteoliposomes
 
-## Liposome preparation
+#### Liposome preparation
 
 Liposomes mimicking the lipid composition of the yeast OMM were prepared as described (Kale et al., 2014). Briefly, a 25 mg lipid film was prepared by mixing chloroform stocks of chicken egg phosphatidyl choline (Avanti 840051C), chicken egg phosphatidyl ethanolamine (Avanti 840021C), bovine liver phosphatidyl inositol (Avanti 840042C), synthetic DOPS (Avanti 840035C), and synthetic TOCL (Avanti 710335C) at a 48:28:10:10:4 molar ratio with 1 mg of DTT. Nickel liposomes were made as described above, except, 1,2-dioleoyl-sn-glycero-3-[N-((5-amino-1-carboxypentyl)iminodiacetic acid)succinyl] Nickel salt (Avanti 790404) was used at a molar ratio of 2% and DOPS was dropped from 10% to 8%.
 
 Chloroform was evaporated under a gentle steam of nitrogen and then left on a vacuum (<1 mTorr) overnight. Lipid film was resuspended in Liposome Buffer (50 mM HEPES KOH pH 7.5, 15% glycerol, 1 mM DTT) to a final concentration of 20 mg/mL and then subjected to five freeze-thaw cycles with liquid nitrogen. Liposomes were extruded 15 times through a 200 nm filter at 60°C, distributed into single-use aliquots, and flash-frozen in liquid nitrogen.
 
-## Proteoliposome preparation
+#### Proteoliposome preparation
 
 For extraction assays with full-length Msp1, proteoliposomes were prepared by mixing 1 µM Msp1, 1 µM TA protein (SumoTMD), and 2 mg/mL of mitochondrial liposomes in Reconstitution Buffer (50 mM HEPES KOH pH 7.5, 200 mM potassium acetate, 7 mM magnesium acetate, 2 mM DTT, 10% sucrose, 0.01% sodium azide, and 0.1% deoxy big chaps). For extraction assays with soluble Msp1/ATAD1, proteoliposomes were prepared by mixing 1 µM TA protein (SumoTMD), and 2 mg/mL of Nickel liposomes in Reconstitution Buffer. Detergent was removed by adding 25 mg of biobeads and rotating the samples for 16 hr at 4°C. After removing biobeads, unincorporated TA protein was pre-cleared by incubating the reconstituted material with excess (5 µM) GST-SGTA and GST-calmodulin and passing over a glutathione spin column (Pierce #16103); the flow through was collected and used immediately for dislocation assays.
 
-## Extraction assay
+### Extraction assay
 
 Extraction assays contained 60 µL of pre-cleared proteoliposomes, 5 µM GST-SGTA, 5 µM calmodulin, and 2 mM ATP and the final volume was adjusted to 200 µL with Extraction Buffer (50 mM HEPES KOH pH 7.5, 200 mM potassium acetate, 7 mM magnesium acetate, 2 mM DTT, 0.1 µM calcium chloride). Samples were incubated at 30°C for 35 min and then loaded onto a glutathione spin column. Columns were washed 4× with Extraction Buffer and eluted with the same buffer supplemented with 20 mM glutathione pH 8.5. Samples were loaded onto stain-free gels, imaged, and then transferred to a PVDF membrane and blotted as indicated in the Key resources table. To account for variability in reconstitution efficiency and western blotting, a new reconstitution and dislocation assay with WT Msp1 was done in parallel with each mutant Msp1. Figures are representative of N>3 separate reconstitutions. Note that the ‘input’ lane is diluted 5× relative to the ‘elution’ lane.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 To account for variability in reconstitution efficiency and western blotting, a new reconstitution and dislocation assay with WT Msp1 was done in parallel with each Msp1 mutant. Figures are representative of N>3 separate reconstitutions. Dislocation efficiency was quantified by comparing the amount TA protein in the ‘elution’ lane with the amount of substrate in the ‘input’ lane.

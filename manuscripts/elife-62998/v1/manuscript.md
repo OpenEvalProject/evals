@@ -31,7 +31,7 @@ A common approach in genetic epidemiology studies of hypertension involves codin
 
 ## Results
 
-## Time-to-event analysis
+### Time-to-event analysis
 
 Across African Americans, European Americans, and Mexican Americans, median systolic blood pressure increased with age, whereas median diastolic blood pressure increased and then decreased (Figure 1). In time-to-event analysis, the probability of not having hypertension decreased across the entire age range (Figure 2). However, in all three groups, there was an inflection point in middle age after which the probability of having hypertension increased at a slower rate (Figure 2). Despite this slowdown, the probability of not having hypertension was not zero, even by the middle of the ninth decade (Figure 2). In the discovery study (HUFS), by 85 years of age, 12.2% (95% credible interval (CI) [5.1%, 20.6%]) of African Americans remained free of hypertension (Figure 2). In the replication study (NHANES), by 85 years of age, 8.4% (95% CI [5.4%, 11.6%]) of African Americans, 21.4% (95% CI [18.1%, 24.6%]) of European Americans, and 20.6% (95% CI [13.6%, 27.3%]) of Mexican Americans remained free of hypertension (Figure 2). The median age at which hypertension occurred was 48 (95% CI [45, 50]) years for African Americans in HUFS and 42 (95% CI [40, 44]) years for African Americans, 57 (95% CI [55, 59]) years for European Americans, and 56 (95% CI [54, 58]) years for Mexican Americans in NHANES (Figure 2).
 
@@ -45,23 +45,367 @@ We next investigated seven distributions, six parametric, and one nonparametric,
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62998/elife-62998-fig3-v1.jpg)
 
+**Table 1.**
+ Likelihoods for several parametric and nonparametric baseline hazard functions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Distribution</th>
+      <th>-ln(Likelihood)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nonparametric</td>
+      <td>553.690</td>
+    </tr>
+    <tr>
+      <td>Log-normal</td>
+      <td>580.417</td>
+    </tr>
+    <tr>
+      <td>Gamma</td>
+      <td>580.589</td>
+    </tr>
+    <tr>
+      <td>Weibull</td>
+      <td>582.688</td>
+    </tr>
+    <tr>
+      <td>Exponential</td>
+      <td>624.069</td>
+    </tr>
+    <tr>
+      <td>Loglogistic</td>
+      <td>625.762</td>
+    </tr>
+    <tr>
+      <td>Generalgamma</td>
+      <td>638.588</td>
+    </tr>
+  </tbody>
+</table>
+
 Based on a Bayesian model in which the hazard rates were gamma distributed with a correlated prior process, we estimated the underlying hazard rates. Across African Americans, European Americans, and Mexican Americans, hazard rates increased and then decreased (Figure 4). The initial hazard rate for African Americans (0.0123 (95% highest posterior density interval [0.0091, 0.0161])) was larger than the initial hazard rate for both European Americans (0.0028 (95% highest posterior density interval [0.0013, 0.0044])) and Mexican Americans (0.0036 (95% highest posterior density interval [0.0019, 0.0052])). The maximum hazard rate for African Americans (0.0630 (95% highest posterior density interval [0.0341, 0.0940])) was trending larger than the maximum hazard rate for European Americans (0.0368 (95% highest posterior density interval [0.0200, 0.0546])) and Mexican Americans (0.0417 (95% highest posterior density interval [0.0219, 0.0635])). The age of maximum hazard was 55 (95% CI [43, 72]) years in HUFS and 58 (95% CI [48, 67]) years in African Americans, 60 (95% CI [52, 70]) years in European Americans, and 58 (95% CI [48, 69]) years in Mexican Americans in NHANES (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62998/elife-62998-fig4-v1.jpg)
 
-## Proportional hazards vs. logistic models
+### Proportional hazards vs. logistic models
 
 Using the HUFS data, we found that logistic regression yielded a better fit than the proportional hazards model based on the DIC, provided that both age and age2 were included as covariates in the logistic regression model (Table 2). Using logistic regression, the addition of age to the reduced (intercept-only) model resulted in a substantially lower DIC (Table 2), with a linear effect of age explaining 27.8% of the variance at the cost of one additional parameter. The addition of age2 further decreased the DIC (Table 2), explaining an additional 0.8% of the variance at the cost of one additional parameter. With smoothing, the effective dimensionality of the proportional hazards model was 3.3, comparable to the dimensionality of 3.0 for the logistic model adjusted for age and age2 (Table 2). We also found that inclusion of a permanent stayer fraction increased the DIC of the proportional hazards model, indicating that inclusion of a permanent stayer fraction was not supported (Table 2).
 
-## Model selection
+**Table 2.**
+ Effective dimensionality of logistic and proportional hazards models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Parameters</th>
+      <th>DIC</th>
+      <th>pD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logistic</td>
+      <td>intercept</td>
+      <td>1406.6</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Logistic</td>
+      <td>intercept, age</td>
+      <td>1171.2</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Logistic</td>
+      <td>intercept, age, age2</td>
+      <td>1165.3</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Proportional hazards</td>
+      <td>α, β, λ0(t)</td>
+      <td>1166.5</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Proportional hazards</td>
+      <td>α, β, λ0(t), π</td>
+      <td>1167.3</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Model selection
 
 We used forward-backward regression to perform model selection on a set of 38 potential covariates. In the HUFS data set, the final model included six of these covariates: chloride, insulin, low-density lipoprotein cholesterol, potassium, uric acid, and weight. Compared to the logistic model with age and age2, these six covariates improved the fit (p=2.01 × 10−15) and explained an additional 8.1% of the variance, for a total of 36.7% of variance explained. Each of these six covariates were replicated (p-values from 2.81 × 10−2 to 1.83 × 10−12) and directionally consistent in NHANES African Americans (Table 3). Furthermore, chloride, low-density lipoprotein cholesterol, potassium, uric acid, and weight, but not insulin, were significant covariates in NHANES European Americans, whereas chloride, insulin, low-density lipoprotein cholesterol, uric acid, and weight, but not potassium, were significant covariates in NHANES Mexican Americans (Table 4). The borderline non-significance of potassium in NHANES Mexican Americans reflected a smaller sample variance, a smaller effect size estimate, and a larger standard error for the effect size, which could be compensated for by increasing the sample size by 20%. In NHANES, the variance explained by age, age2, chloride, low-density lipoprotein cholesterol, uric acid, and weight was 40.9% in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans.
 
+**Table 3.**
+ Replication of covariates from model selection in African Americans.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">HUFS ( = 1,014)</th>
+      <th colspan="3">NHANES ( = 5,135)</th>
+    </tr>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>p-Value</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chloride (mmol/L)</td>
+      <td>−0.0253</td>
+      <td>0.0122</td>
+      <td>3.81E-02</td>
+      <td>−0.0241</td>
+      <td>0.0110</td>
+      <td>2.81E-02</td>
+    </tr>
+    <tr>
+      <td>Insulin (mIU/L)</td>
+      <td>0.0112</td>
+      <td>0.0054</td>
+      <td>3.61E-02</td>
+      <td>0.0115</td>
+      <td>0.0044</td>
+      <td>9.04E-03</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol (mg/dL)</td>
+      <td>−0.0031</td>
+      <td>0.0013</td>
+      <td>1.75E-02</td>
+      <td>−0.0018</td>
+      <td>0.0008</td>
+      <td>3.04E-02</td>
+    </tr>
+    <tr>
+      <td>Potassium (mmol/L)</td>
+      <td>−0.2553</td>
+      <td>0.1016</td>
+      <td>1.20E-02</td>
+      <td>−0.5695</td>
+      <td>0.0930</td>
+      <td>9.30E-10</td>
+    </tr>
+    <tr>
+      <td>Uric acid (mg/dL)</td>
+      <td>0.1713</td>
+      <td>0.0351</td>
+      <td>1.04E-06</td>
+      <td>0.1283</td>
+      <td>0.0227</td>
+      <td>1.66E-08</td>
+    </tr>
+    <tr>
+      <td>Weight (lbs.)</td>
+      <td>0.0033</td>
+      <td>0.0011</td>
+      <td>2.36E-03</td>
+      <td>0.0106</td>
+      <td>0.0015</td>
+      <td>1.83E-12</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Covariates from model selection in European Americans and Mexican Americans.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">European Americans ( = 10,023)</th>
+      <th colspan="3">Mexican Americans ( = 5,040)</th>
+    </tr>
+    <tr>
+      <th>Variable</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>p-Value</th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chloride (mmol/L)</td>
+      <td>−0.0656</td>
+      <td>0.0077</td>
+      <td>1.99E-17</td>
+      <td>−0.0534</td>
+      <td>0.0153</td>
+      <td>4.85E-04</td>
+    </tr>
+    <tr>
+      <td>Insulin (mIU/L)</td>
+      <td>0.0022</td>
+      <td>0.0051</td>
+      <td>6.76E-01</td>
+      <td>0.0111</td>
+      <td>0.0039</td>
+      <td>5.05E-03</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol (mg/dL)</td>
+      <td>−0.0023</td>
+      <td>0.0006</td>
+      <td>1.38E-04</td>
+      <td>−0.0049</td>
+      <td>0.0013</td>
+      <td>1.88E-04</td>
+    </tr>
+    <tr>
+      <td>Potassium (mmol/L)</td>
+      <td>−0.3524</td>
+      <td>0.0683</td>
+      <td>2.49E-07</td>
+      <td>−0.2331</td>
+      <td>0.1298</td>
+      <td>7.25E-02</td>
+    </tr>
+    <tr>
+      <td>Uric acid (mg/dL)</td>
+      <td>0.1391</td>
+      <td>0.0165</td>
+      <td>3.16E-17</td>
+      <td>0.0833</td>
+      <td>0.0315</td>
+      <td>8.28E-03</td>
+    </tr>
+    <tr>
+      <td>Weight (lbs.)</td>
+      <td>0.0150</td>
+      <td>0.0016</td>
+      <td>5.61E-21</td>
+      <td>0.0164</td>
+      <td>0.0027</td>
+      <td>2.72E-09</td>
+    </tr>
+  </tbody>
+</table>
+
 We further investigated two unexpected results of the model selection. One, sex was not selected in the final model. Of the selected covariates, three showed sex dimorphisms in HUFS by Welch’s t-test, with uric acid and weight higher in males and low-density lipoprotein cholesterol higher in females (Table 5). Second, across African Americans, European Americans, and Mexican Americans, increasing low-density lipoprotein cholesterol was associated with decreased risk of hypertension (Tables 3 and 4). As the direction of this effect was unexpected, we reanalyzed the HUFS African Americans accounting for lipids medications. Self-reported use of any lipid medication (coded as yes/no) was associated with increased risk of hypertension (p=1.25 × 10−3) but increasing low-density lipoprotein cholesterol remained associated with decreased risk of hypertension (p=4.46 × 10−2). Of the individuals in this sub-analysis, 8.3% reported use of any lipid medication, all instances of which involved statins, so drug class was not a confounder.
+
+**Table 5.**
+ Sexual dimorphism among covariates in HUFS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Male ( = 414)</th>
+      <th>Female ( = 600)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chloride (mmol/L)</td>
+      <td>101.4 (4.4)</td>
+      <td>101.1 (5.3)</td>
+      <td>0.482</td>
+    </tr>
+    <tr>
+      <td>Insulin (mIU/L)</td>
+      <td>10.9 (15.3)</td>
+      <td>12.0 (11.9)</td>
+      <td>0.228</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol (mg/dL)</td>
+      <td>111.3 (38.0)</td>
+      <td>117.9 (38.7)</td>
+      <td>7.28E-03</td>
+    </tr>
+    <tr>
+      <td>Potassium (mmol/L)</td>
+      <td>4.5 (0.7)</td>
+      <td>4.4 (1.3)</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>Uric acid (mg/dL)</td>
+      <td>6.3 (1.5)</td>
+      <td>5.0 (1.5)</td>
+      <td>6.36E-35</td>
+    </tr>
+    <tr>
+      <td>Weight (lbs.)</td>
+      <td>194.4 (52.2)</td>
+      <td>186.1 (52.5)</td>
+      <td>0.014</td>
+    </tr>
+  </tbody>
+</table>
 
 To investigate the possibility of time-dependent covariates, we added interaction terms to the full logistic model (with age, age2 and the selected covariates). For each of the selected covariates, the Akaike information criterion was larger for the model containing a term that interacted with age (Table 6). Thus, the evidence does not support time-dependence for any of the selected covariates.
 
-## 2017 revised classification of hypertension
+**Table 6.**
+ Time-dependence for selected covariates in HUFS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Interaction term</th>
+      <th>AIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>None</td>
+      <td>1096.053</td>
+    </tr>
+    <tr>
+      <td>Age × chloride</td>
+      <td>1096.695</td>
+    </tr>
+    <tr>
+      <td>Age × insulin</td>
+      <td>1097.190</td>
+    </tr>
+    <tr>
+      <td>Age × low-density lipoprotein cholesterol</td>
+      <td>1097.748</td>
+    </tr>
+    <tr>
+      <td>Age × potassium</td>
+      <td>1097.956</td>
+    </tr>
+    <tr>
+      <td>Age × uric acid</td>
+      <td>1097.919</td>
+    </tr>
+    <tr>
+      <td>Age × weight</td>
+      <td>1097.013</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2017 revised classification of hypertension
 
 We reanalyzed the HUFS data based on the 2017 reclassification of hypertension as SBP ≥130 mm Hg or DBP ≥80 mm Hg (Whelton et al., 2018). Under these more stringent thresholds, the prevalence of hypertension increased from 48.3% to 66.1%, the median time to hypertension decreased to 36 years (95% CI [33, 39]), the age at maximum hazard increased to 57 (95% CI [33, 72]) years, and the lifetime risk at 85 years of age increased to 95.8% (95% CI [90.3%, 99.2%]). The 95% highest posterior density interval of the permanent stayer fraction included zero.
 
@@ -87,36 +431,112 @@ In summary, by Bayesian modeling of the baseline hazard function in time-to-even
 
 ## Materials and methods
 
-## Discovery study
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Discovery study
 
 The Howard University Family Study (HUFS) is a population-based observational study of African American families and unrelated individuals from Washington, D.C. (Adeyemo et al., 2009). Ethics approval for the Howard University Family Study (HUFS) was obtained from the Howard University Institutional Review Board (protocol number IRB-06-GSAS-32-A) and written informed consent was obtained from each participant. All clinical investigation was conducted according to the principles expressed in the Declaration of Helsinki. Families and individuals were not ascertained based on any phenotype. Weight was measured on an electronic scale to the nearest 0.1 kg. Height was measured on a stadiometer to the nearest 0.1 cm. Body mass index (BMI) was calculated as weight divided by the square of height (kg/m2). Waist circumference was measured to the nearest 0.1 cm at the narrowest part of the torso. Hip circumference was measured to the nearest 0.1 cm at the widest part of the buttocks. The waist-hip ratio was calculated as waist circumference in cm divided by hip circumference in cm. Fat mass and fat-free mass were estimated using bioelectrical impedance analysis with a validated population-specific equation as previously described (Luke et al., 1997). Percent fat mass was defined as fat mass divided by weight ×100. Blood pressure was measured while seated using an oscillometric device (Omron Healthcare, Inc, Bannockburn, Illinois). Three readings were taken at 10 min intervals. Reported readings were the averages of the second and third readings. Hypertension was defined as SBP ≥140 mm Hg, DBP ≥90 mm Hg, or treatment with anti-hypertensive medication. Blood was drawn after an overnight fast of at least 8 hr and all collected samples were stored at −80°C pending biochemical assay. Creatinine, total cholesterol, high-density lipoprotein cholesterol, low-density lipoprotein cholesterol, triglycerides, fructosamine, glucose, alkaline phosphatase, alanine aminotransferase, total bilirubin, sodium, potassium, chloride, calcium, uric acid, urea, C-reactive protein, albumin, bicarbonate, and total protein were measured using COBAS INTEGRA tests (Roche Diagnostics, Indianapolis, Indiana). Cortisol and insulin were measured using Elecsys assays (Roche Diagnostics). Creatinine clearance was calculated using the Cockcroft-Gault equation and the estimated glomerular filtration rate (eGFR) was calculated using the four-variable Modification of Diet in Renal Disease Study equation (National Kidney Foundation, 2002; Levey et al., 1999). T2D case status was defined as fasting plasma glucose level ≥126 mg/dL or treatment with anti-diabetic medication. T2D control status was defined as fasting plasma glucose ≤100 mg/dL and no treatment with anti-diabetic medication. The last completed grade of education and income were self-reported on a questionnaire. The proportions of African and European ancestry were estimated as described previously (Shriner et al., 2011). We extracted a subset of 1014 unrelated individuals.
 
-## Bayesian logistic regression and time-to-event analysis
+### Bayesian logistic regression and time-to-event analysis
 
-Let T represent the time of an event and S(t)=Pr(T>t) represent the survival function, that is, the probability of being event-free as a function of observation time t. With cross-sectional data, there is a single observation for each individual. If the individual has not yet experienced the event, then the event time is right censored, because the event is presumed to occur some unknown time after observation. If the individual has already experienced the event, then the event time is left censored, because the event occurred at some unknown time prior to observation. The combination of left and right censored data is known as interval censored data. We performed interval censored proportional hazards analysis using the R package icenReg.
+Let $T$ represent the time of an event and $S(t)=Pr(T>t)$ represent the survival function, that is, the probability of being event-free as a function of observation time $t$. With cross-sectional data, there is a single observation for each individual. If the individual has not yet experienced the event, then the event time is right censored, because the event is presumed to occur some unknown time after observation. If the individual has already experienced the event, then the event time is left censored, because the event occurred at some unknown time prior to observation. The combination of left and right censored data is known as interval censored data. We performed interval censored proportional hazards analysis using the R package icenReg.
 
-To perform Bayesian modeling, we used WinBUGS, version 1.4 with the R package R2WinBUGS. For the ith individual, we modeled logistic regression as:yi~Bernoulli(θi)logit(θi)=αα∼Normal(0,106).
+To perform Bayesian modeling, we used WinBUGS, version 1.4 with the R package R2WinBUGS. For the ith individual, we modeled logistic regression as:
 
-In this reduced model, the prior distribution for the intercept α follows a diffuse normal distribution with mean 0 and variance 106. We ran three chains of 10,000 iterations, with a burn-in of 2500 iterations and thinning of 10, yielding a posterior sample based on 2250 iterations. We assessed convergence using the potential scale reduction factor Rhat, which should equal 1 at convergence for all monitored parameters. We assessed model fit using the deviance information criterion (DIC). We then added age to the reduced model and ran three chains of 10,000 iterations, with a burn-in of 2500 iterations and thinning of 10, yielding a posterior sample of 2250 iterations. Next, we added age and age2 to the reduced model and ran three chains of 100,000 iterations, with a burn-in of 10,000 and thinning of 50, yielding a posterior sample of 5400 iterations. In all instances, effect sizes followed a diffuse normal prior distribution with mean 0 and variance 106.
+$$
+y_{i}~Bernoulli(\theta_{i})
+$$
 
-We performed time-to-event analysis using a proportional hazards model (Congdon, 2003). The hazard function h(t) defines the instantaneous risk of the event at time t, conditional on being event-free at that time:h(t)=limΔt→0Pr(t≤T<t+Δt|T≥t)Δt
 
-Given the hazard function h(t), the cumulative hazard function H(t) and the survival function S(t) are defined as follows:H(t)=∫0th(u)duS(t)=Pr(T≥t)=e−H(t)
 
-In Cox’s proportional hazards model (Cox, 1972), the hazard function λ(t|z) is given by λ0(t)eβz, in which λ0(t) is the baseline hazard function and z is a covariate with coefficient β. In the absence of covariates, the hazard function is equivalent to the baseline hazard function, λ(t)=λ0(t). We modeled the hazard rates as gamma-distributed with a correlated prior process (Arjas and Gasbarra, 1994; Congdon, 2006). Specifically, the hazard rates were:λ0(t=0)~Gamma(α,β)λ0(t+1)~Gamma(α,αλ0(t))α~Uniform(10,100)β∼Uniform(0.001,0.01).
+$$
+logit(\theta_{i})=\alpha
+$$
 
-In this model, the expected value of λ0(t+1) equals λ0(t) and hence the hazard function is a martingale. We divided time into intervals of one year and assumed that the baseline hazard was constant within intervals.
 
-A major assumption of time-to-event analysis is that the event will occur for every individual at some point in time, although the individual may die before the event would have occurred. This assumption can be relaxed by incorporating a permanent stayer or cured fraction, that is, a fraction of individuals who will never experience the event. In our context, this fraction represents individuals who never develop hypertension and hence are true epidemiological controls. Let π represent the permanent stayer fraction. Then, the survival function for the entire population Sp(t) is the two-component mixture model Sp(t)=π+(1−π)S(t) (Gu et al., 2011). We assigned to π the prior distribution Uniform(0,1).
 
-## Model selection
+$$
+\alpha∼Normal(0,10^{6}).
+$$
 
-We tested 38 covariates for inclusion in the model: sex; weight, height, hip circumference, waist circumference, waist-hip ratio, body mass index; fat mass, fat-free mass, percent fat mass; type 2 diabetes status, fasting glucose, fasting insulin, fructosamine; triglycerides, high-density lipoprotein cholesterol, low-density lipoprotein cholesterol, total cholesterol; creatinine, creatinine clearance, estimated glomerular filtration rate; alkaline phosphatase, alanine aminotransferase, total bilirubin; last grade of education completed, income; percent African ancestry; calcium, chloride, potassium, sodium; albumin, carbon dioxide, C-reactive protein, total protein, uric acid, urea, and cortisol. We used a four-step forward-backward regression procedure to perform model selection. First, we fit a single regression model for each covariate. Second, we fit a multiple regression model with all significant predictors from step 1 and used backward selection to remove nonsignificant predictors. Third, starting with the final model from step 2, we reconsidered each nonsignificant covariate from step 1 using forward selection. Fourth, we performed a final pruning step on the final model from step 3. For every test, we declared a significance level of 0.05. Pseudo-r2 values were estimated using the formula r2=1−exp(D1−D0n)1−exp(−D0n), in which D1 is the deviance, D0 is the null deviance, and n is the sample size (Nagelkerke, 1991). Finally, we added age, age2, and selected covariates to the Bayesian logistic regression model described above and ran three chains of 1,000,000 iterations, with a burn-in of 100,000 iterations and thinning of 1,000, yielding a posterior sample of 2700 iterations. Effect sizes for all covariates followed a diffuse normal prior distribution with mean 0 and variance 106.
+In this reduced model, the prior distribution for the intercept $\alpha$ follows a diffuse normal distribution with mean 0 and variance 106. We ran three chains of 10,000 iterations, with a burn-in of 2500 iterations and thinning of 10, yielding a posterior sample based on 2250 iterations. We assessed convergence using the potential scale reduction factor Rhat, which should equal 1 at convergence for all monitored parameters. We assessed model fit using the deviance information criterion (DIC). We then added age to the reduced model and ran three chains of 10,000 iterations, with a burn-in of 2500 iterations and thinning of 10, yielding a posterior sample of 2250 iterations. Next, we added age and age2 to the reduced model and ran three chains of 100,000 iterations, with a burn-in of 10,000 and thinning of 50, yielding a posterior sample of 5400 iterations. In all instances, effect sizes followed a diffuse normal prior distribution with mean 0 and variance 106.
 
-## Replication study
+We performed time-to-event analysis using a proportional hazards model (Congdon, 2003). The hazard function $h(t)$ defines the instantaneous risk of the event at time $t$, conditional on being event-free at that time:
 
-The National Center for Health Statistics of the US Centers for Disease Control and Prevention conducts the ongoing National Health and Nutrition Examination Survey (NHANES). The survey comprises an in-home interview and a clinical examination by a mobile examination center. We retrieved 16 years of examination data (from 1999 to 2014) from the CDC portal (http://wwwn.cdc.gov/Nchs/Nhanes). We downloaded the variables BMXWT, BPQ020, BPQ040A, BPXDI1, BPXDI2, BPXDI3, BPXDI4, BPXSY1, BPXSY2, BPXSY3, BPXSY4, LBDLDL, LBXIN, LBXSCLSI, LBXSKSI, LBXSUA, RIDAGEEX, RIAGENDR, RIDRETH1, SDVMVPSU, SDMVSTRA, and WTSAF2YR. SBP was defined as the average of BPXSY1, BPXSY2, BPXSY3, and BPXSY4. DBP was defined as the average of BPXDI1, BPXDI2, BPXDI3, and BPXDI4. Hypertension was defined as SBP ≥ 140 mm Hg, DBP ≥ 90 mm Hg, treatment with anti-hypertensive medication, or having ever been diagnosed by a doctor. Strata, clusters, and weights were designed to make statistical estimates representative of the non-institutionalized, civilian US population. We included the strata variable SDMVSTRA as a factor with 118 levels. The factor SDMVPSU defined clusters nested within strata. There were up to three levels of cluster within each stratum, yielding a total of 241 combinations of stratum and cluster. Individuals with fasting samples represented less than half of the individuals assessed by interview or the mobile examination center, such that some clusters and some strata were empty or sparse. Consequently, we omitted the cluster factor. To account for eight survey cycles, we multiplied the weights WTSAF2YR equally by 1/8. For each value of RIDRETH, we rescaled the weights by dividing by the mean. For the survey cycle 2013–2014, we recalibrated insulin to account for changes in the protocol: Insulin2011−2012=10(0.9765∗log10⁡(Insulin2013−2014+0.07832)) (https://wwwn.cdc.gov/Nchs/Nhanes/2013-2014/INS_H.htm). Across the eight survey cycles, we retrieved data for a total of 23,628 participants, including 5146 African Americans (‘non-Hispanic Blacks’), 10,023 European Americans (‘non-Hispanic Whites’), and 5059 Mexican Americans.
+$$
+h(t)=limΔt→0\frac{Pr(t\leqT<t+Δt|T\geqt)}{Δt}
+$$
 
-## Code availability
+Given the hazard function $h(t)$, the cumulative hazard function $H(t)$ and the survival function $S(t)$ are defined as follows:
+
+$$
+H(t)=\int0th(u)du
+$$
+
+
+
+$$
+S(t)=Pr(T\geqt)=e^{−H(t)}
+$$
+
+In Cox’s proportional hazards model (Cox, 1972), the hazard function $\lambda(t|z)$ is given by $\lambda_{0}(t)e^{\betaz}$, in which $\lambda_{0}(t)$ is the baseline hazard function and $z$ is a covariate with coefficient β. In the absence of covariates, the hazard function is equivalent to the baseline hazard function, $\lambda(t)=\lambda_{0}(t)$. We modeled the hazard rates as gamma-distributed with a correlated prior process (Arjas and Gasbarra, 1994; Congdon, 2006). Specifically, the hazard rates were:
+
+$$
+\lambda_{0}(t=0)~Gamma(\alpha,\beta)
+$$
+
+
+
+$$
+\lambda_{0}(t+1)~Gamma(\alpha,\frac{\alpha}{\lambda_{0}(t)})
+$$
+
+
+
+$$
+\alpha~Uniform(10,100)
+$$
+
+
+
+$$
+\beta∼Uniform(0.001,0.01).
+$$
+
+In this model, the expected value of $\lambda_{0}(t+1)$ equals $\lambda_{0}(t)$ and hence the hazard function is a martingale. We divided time into intervals of one year and assumed that the baseline hazard was constant within intervals.
+
+A major assumption of time-to-event analysis is that the event will occur for every individual at some point in time, although the individual may die before the event would have occurred. This assumption can be relaxed by incorporating a permanent stayer or cured fraction, that is, a fraction of individuals who will never experience the event. In our context, this fraction represents individuals who never develop hypertension and hence are true epidemiological controls. Let $\pi$ represent the permanent stayer fraction. Then, the survival function for the entire population $S_{p}(t)$ is the two-component mixture model $S_{p}(t)=\pi+(1−\pi)S(t)$ (Gu et al., 2011). We assigned to $\pi$ the prior distribution $Uniform(0,1)$.
+
+### Model selection
+
+We tested 38 covariates for inclusion in the model: sex; weight, height, hip circumference, waist circumference, waist-hip ratio, body mass index; fat mass, fat-free mass, percent fat mass; type 2 diabetes status, fasting glucose, fasting insulin, fructosamine; triglycerides, high-density lipoprotein cholesterol, low-density lipoprotein cholesterol, total cholesterol; creatinine, creatinine clearance, estimated glomerular filtration rate; alkaline phosphatase, alanine aminotransferase, total bilirubin; last grade of education completed, income; percent African ancestry; calcium, chloride, potassium, sodium; albumin, carbon dioxide, C-reactive protein, total protein, uric acid, urea, and cortisol. We used a four-step forward-backward regression procedure to perform model selection. First, we fit a single regression model for each covariate. Second, we fit a multiple regression model with all significant predictors from step 1 and used backward selection to remove nonsignificant predictors. Third, starting with the final model from step 2, we reconsidered each nonsignificant covariate from step 1 using forward selection. Fourth, we performed a final pruning step on the final model from step 3. For every test, we declared a significance level of 0.05. Pseudo-r2 values were estimated using the formula $r^{2}=\frac{1−exp(\frac{D_{1}−D_{0}}{n})}{1−exp(\frac{−D_{0}}{n})}$, in which $D_{1}$ is the deviance, $D_{0}$ is the null deviance, and $n$ is the sample size (Nagelkerke, 1991). Finally, we added age, age2, and selected covariates to the Bayesian logistic regression model described above and ran three chains of 1,000,000 iterations, with a burn-in of 100,000 iterations and thinning of 1,000, yielding a posterior sample of 2700 iterations. Effect sizes for all covariates followed a diffuse normal prior distribution with mean 0 and variance 106.
+
+### Replication study
+
+The National Center for Health Statistics of the US Centers for Disease Control and Prevention conducts the ongoing National Health and Nutrition Examination Survey (NHANES). The survey comprises an in-home interview and a clinical examination by a mobile examination center. We retrieved 16 years of examination data (from 1999 to 2014) from the CDC portal (http://wwwn.cdc.gov/Nchs/Nhanes). We downloaded the variables BMXWT, BPQ020, BPQ040A, BPXDI1, BPXDI2, BPXDI3, BPXDI4, BPXSY1, BPXSY2, BPXSY3, BPXSY4, LBDLDL, LBXIN, LBXSCLSI, LBXSKSI, LBXSUA, RIDAGEEX, RIAGENDR, RIDRETH1, SDVMVPSU, SDMVSTRA, and WTSAF2YR. SBP was defined as the average of BPXSY1, BPXSY2, BPXSY3, and BPXSY4. DBP was defined as the average of BPXDI1, BPXDI2, BPXDI3, and BPXDI4. Hypertension was defined as SBP ≥ 140 mm Hg, DBP ≥ 90 mm Hg, treatment with anti-hypertensive medication, or having ever been diagnosed by a doctor. Strata, clusters, and weights were designed to make statistical estimates representative of the non-institutionalized, civilian US population. We included the strata variable SDMVSTRA as a factor with 118 levels. The factor SDMVPSU defined clusters nested within strata. There were up to three levels of cluster within each stratum, yielding a total of 241 combinations of stratum and cluster. Individuals with fasting samples represented less than half of the individuals assessed by interview or the mobile examination center, such that some clusters and some strata were empty or sparse. Consequently, we omitted the cluster factor. To account for eight survey cycles, we multiplied the weights WTSAF2YR equally by 1/8. For each value of RIDRETH, we rescaled the weights by dividing by the mean. For the survey cycle 2013–2014, we recalibrated insulin to account for changes in the protocol: $Insulin_{2011−2012}=10^{(0.9765^{∗}log_{10}⁡(Insulin_{2013−2014}+0.07832))}$ (https://wwwn.cdc.gov/Nchs/Nhanes/2013-2014/INS_H.htm). Across the eight survey cycles, we retrieved data for a total of 23,628 participants, including 5146 African Americans (‘non-Hispanic Blacks’), 10,023 European Americans (‘non-Hispanic Whites’), and 5059 Mexican Americans.
+
+### Code availability
 
 WinBUGS code is available at https://github.com/dshriner/Time-to-event (Shriner, 2020).

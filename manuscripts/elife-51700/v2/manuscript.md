@@ -45,9 +45,29 @@ Here, we describe the 2.5 Å-resolution crystal structure of essentially full-le
 
 ## Results
 
-## Structure of full-length PLC-γ1
+### Structure of full-length PLC-γ1
 
 In addition to the aforementioned array of regulatory domains, the PLC-γ isozymes also possess a set of core domains common to most other isoforms of PLC: an N-terminal PH domain, two pairs of EF hands, a catalytic TIM barrel, and a C2 domain. The regulatory array bisects the TIM barrel, subdividing this domain into the X- and Y-boxes (Figure 1a, Figure 1—figure supplement 1). To facilitate crystallization, several regions predicted to be disordered were removed from the construct used for structure determination. In particular, 20 and 75 residues were deleted from the N- and C-terminus, respectively. In addition, an internal loop of 25 residues connecting the cSH2 and SH3 domains was removed and replaced with a flexible linker; we refer to this internal deletion as Δ25 (Figure 1—figure supplement 1, also see Materials and methods). The crystallized construct therefore contains residues 21–765 and 791–1215 of PLC-γ1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig1-v2.jpg)
+
+**Figure 1.:** (a) Domain architecture of PLC-γ1 drawn to scale. (b) 2.5 Å resolution structure of PLC-γ1, domains are colored as in (a); TIM barrel and C2 domain are depicted as surfaces to highlight interactions with regulatory domains. The calcium cofactor (orange sphere) marks the active site and dashed lines indicate regions not built due to the absence of observable electron density. Borders of the Δ25 deletion (residues 766–790) used to facilitate crystallization are indicated with spheres. The hydrophobic ridge of the TIM barrel, which interacts with lipid membranes to facilitate catalysis, is occluded by the sPH domain. This arrangement of the sPH domain is supported by contacts with the cSH2 domain and further reinforced by a ‘brace’ formed by the C-terminal extension of the SH3 domain. (c–d) Structural details between the regulatory and core domains of PLC-γ1. (e) Expanded view of the SH3 domain. (f) Structure of the isolated cSH2 domain of PLC-γ1 bound to a peptide (spheres) encompassing phosphorylated Tyr783 (red) of PLC-γ1. Orientation is approximately the same as in panels (b) and (d). For panels (c–f) interfacial residues are numbered, dashed lines are hydrogen bonds, and residues mutated in Figure 3 are underlined. (g) Schematic emphasizing large conformational change that is proposed to occur before PLC-γ1 can access membrane-resident PIP2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The sequence of rat PLC-γ1 (PLC-γ1_rn, UniProt accession number P10686), human PLC-γ1 (PLC-γ1_hs, P19174), and human PLC-γ2 (PLC-γ2_hs, P16885) were aligned using ClustalW. Dots denote every 10th residue. Underlined residues were removed from the crystallization construct and the Δ25 deletion is highlighted with a dashed underline. Electron density was not observed for residues in italics. Secondary structure (α-helices, cylinders; β-strands, arrows) was assigned using DSSP. Tyr783 in PLC-γ1 and Tyr759 in PLC-γ2 are highlighted in red. Substrate ligation defined based on structural homology to PLC-δ1 and -β2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Phospholipase activity of various forms of PLC-γ1 in cells. Data are the mean ± SEM of triplicate samples from a single experiment that is representative of data obtained in two independent experiments. Immunoblots of cell lysates are presented in the same order as the bar graph. (b) Analysis of purified PLC-γ1(21–1215) and PLC-γ1(21–1215) Δ25 by size exclusion chromatography coupled to multi-angle light scattering. One hundred micrograms of the indicated protein were applied to a Superdex 200 size exclusion column. Elution was monitored by UV absorbance (colored lines) and simultaneously analyzed by multi-angle light scattering to determine hydrodynamic radius (colored squares). The mean radius for each protein is indicated in angle brackets. Two micrograms of each protein were separated by SDS-PAGE and stained with Coomassie Brilliant blue (left inset) to assess purity. Specific activities were quantified using phospholipid vesicles containing 200 μM PE and 20 μM [3H]PIP2 (right inset). Data are presented as the mean ± SEM and were pooled from three independent experiments. (c) Electron density map (wire mesh) of the active site of PLC-γ1(21–1215) Δ25 (2Fo – Fc contoured at 1.5 σ).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The solvent-accessible surface area of PLC-γ1 (a) or the core of the protein (b) was calculated and colored according to electrostatic potential (red, −5 kT/e; blue, 5 kT/e). Charges were calculated using AMBER and electrostatic surfaces were calculated using APBS executed within PyMOL.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a-h) The structure of autoinhibited PLC-γ1 (gray) was aligned with the indicated structures of isolated domains from PLC-γ1 or PLC-γ2 (blue). Binding partners co-crystallized with isolated domains are red. PDB accession numbers are listed in parentheses. In a–b, the tandem SH2 domains were aligned using the nSH2 domain.
 
 The cSH2/SH3 domain loop contains Tyr783, which is required for phosphorylation-dependent activation of PLC-γ1. However, we have demonstrated previously that this loop is not directly required for autoinhibition (Gresset et al., 2010), and consistent with this notion, the crystallized form of PLC-γ1 was autoinhibited in cells (Figure 1—figure supplement 2). While nuanced differences in regulation between the wild-type and crystallized version of PLC-γ1 cannot be excluded, the latter faithfully recapitulated the mutational activation of the wild-type enzyme (Figure 1—figure supplement 2). In addition, deletion of the cSH2/SH3 domain loop had no measurable effect on the hydrodynamic radius or specific activity of the purified protein (Figure 1—figure supplement 2), further demonstrating that removal of the loop did not significantly alter the biochemical properties of the enzyme.
 
@@ -71,7 +91,7 @@ In counterpoint to the above examples, the canonical phosphotyrosine-binding sit
 
 Tyr783 in PLC-γ1 is presumed to be the primary site of phosphorylation coupled to enzyme activation (Gresset et al., 2010; Kim et al., 1991). Eight additional tyrosines are phosphorylated (positions 186, 472, 481, 771, 775, 959, 977, and 1254), but these sites appear dispensable for RTK-dependent activation in cells (Bunney et al., 2012). In contrast, activation of PLC-γ1 by soluble tyrosine kinases requires phosphorylation of both Tyr775 and Tyr783 (Serrano et al., 2005) and this situation is similar for PLC-γ2 where the analogous tyrosines (positions 753, 759) are also phosphorylated during phospholipase activation (Humphries et al., 2004; Ozdener et al., 2002; Rodriguez et al., 2001; Watanabe et al., 2001). How dual sites of phosphorylation cooperate to drive phospholipase activity is an open question but presumably shares aspects of regulation described above. Additional tyrosines (positions 1197, 1217) in PLC-γ2 are also phosphorylated and implicated in regulation (Watanabe et al., 2001), but these sites are not conserved in PLC-γ1.
 
-## Interfacial regulation
+### Interfacial regulation
 
 While the structure of PLC-γ1 strongly suggests that it must undergo a substantial rearrangement in order to gain access to its membrane-resident substrate, PIP2, this idea is speculative without substantiation. We formally tested this idea using two bespoke fluorescent substrates of mammalian PLCs (Figure 3). The first case, WH-15, is a soluble analogue of PIP2 (Huang et al., 2011). It is predicted to have unimpeded access to the active site of PLC-γ1 and mutations assumed to relieve autoinhibition by wholesale rearrangement should not affect basal specific activity for the hydrolysis of WH-15. This is in fact the case since wild-type PLC-γ1 and a set of mutated forms that are constitutively active in cells (Hajicek et al., 2013) (also see below) have essentially identical capacity to hydrolyze WH-15 in vitro (Figure 3a). In contrast, XY-69 is a fluorescent substrate of PLCs that was specifically designed to embed into lipid bilayers (Huang et al., 2018). When XY-69 in lipid vesicles was presented to the same set of PLCs, there was now a dramatic difference in hydrolytic rates (Figure 3b). Wild-type PLC-γ1 had very low specific activity, while the mutated forms were up to 30-fold more active. This discrimination presumably reflects the capacity of mutations to disrupt the interface between the regulatory domains and the catalytic core to favor a form of PLC-γ1 better able to engage PIP2 in membranes. Discrimination was greatly diminished—albeit not completely eliminated—when XY-69 was solubilized in detergent micelles (Figure 3c). These results are consistent with the postulation that autoinhibition arises from the overall spatial arrangement of PLC-γ1 that prevents it from productively engaging membranes. Mutations that destabilize this arrangement are proposed to concomitantly relieve autoinhibition and allow PLC-γ1 better access to membranes and PIP2.
 
@@ -81,11 +101,39 @@ While the structure of PLC-γ1 strongly suggests that it must undergo a substant
 
 Accelerated molecular dynamics (aMD) simulations support the proposed mechanism of activation. In particular, all-atom simulations of PLC-γ1 reproducibly highlighted a flexible set of regulatory domains relative to a virtually static catalytic core (Figure 4a, Figure 4—figure supplement 1). Moreover, this flexibility increased for simulations of a constitutively active mutant form of PLC-γ1 harboring a single substitution (D1165H) within the C2 domain at the interface with the phosphotyrosine-binding site of the cSH2 domain (Figure 4—figure supplement 2). Of note, D1165H corresponds to the D1140G substitution in PLC-γ2; PLC-γ2(D1140G) has been identified in patients with relapsed chronic lymphocytic leukemia treated with ibrutinib (Burger et al., 2016; Landau et al., 2017). For both wild-type and mutant PLC-γ1, the correlated motions indicate that the regulatory domains tended to move as a relatively rigid block (Figure 4b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig4-v2.jpg)
+
+**Figure 4.:** (a) Root mean square deviations (RMSD) of backbone atoms for the indicated trajectories relative to the starting model of autoinhibited PLC-γ1. For comparison, the equivalent RMSDs for the PLC core (‘core only’) are also shown. (b) Correlation matrix for pairs of residues in PLC-γ1 and PLC-γ1(D1165H). Correlated motions were calculated over the first 75 nanoseconds of each simulation. (c) Superimposition of the average structures of PLC-γ1 and PLC-γ1(D1165H). Structures were calculated over 75–150 nanoseconds of each simulation. Domains in wild-type PLC-γ1 and PLC-γ1(D1165H) are shown in light and dark colors, respectively; the remainder of the proteins are gray. Red arrows indicate displacement of select Cα atoms (yellow spheres).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Root mean square fluctuations (RMSF) about the average structure of (a) PLC-γ1(D1165H) or (b) PLC-γ1(Y747E+R748E) were calculated for each Cα atom and divided by the equivalent RMSF of wild-type PLC-γ1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The positions of substitutions (red spheres) studied are mapped onto the structure of PLC-γ1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Root mean square deviations (RMSD) of backbone atoms for the indicated trajectories relative to the starting model of auto-inhibited PLC-γ1. For comparison, the equivalent RMSDs for the PLC core (‘core only’) are also shown. (b) Correlation matrix for pairs of residues in PLC-γ1 and PLC-γ1(Y747E+R748E) calculated over the first 75 nanoseconds of each simulation. (c) Superimposition of the average structures of PLC-γ1 and PLC-γ1(Y747E+R748E) calculated over 75–150 nanoseconds of each simulation. Domains in wild-type PLC-γ1 and PLC-γ1(Y747E+R748E) are shown in light and dark colors, respectively; the remainder of the proteins are gray. Red arrows indicate displacement of select Cα atoms (yellow spheres).
+
 Comparisons of average structures derived from the aMD simulations highlight increased disorganization within the interface between the cSH2 and C2 domains upon mutation (Figure 4c). For example, Asp1165 resides within the β5/β6 turn of the C2 domain where it participates in two hydrogen bonds that stabilize the turn that forms a major part of the interface with the cSH2 domain. Substitution of Asp1165 to His (D1165H) disrupts the proximal hydrogen-bonding network and results in the partial unfolding of the β5 and β6 strands of the C2 domain during simulations. The collapse of this region is linked to an approximately 30° rotation of the cSH2 domain as it moves toward the C2 domain by approximately 10 Å. The relative movements of the C2 and cSH2 domains are propagated to the rest of the regulatory array due to its propensity to move as a block. Movements are essentially identical for a constitutively active mutant form of PLC-γ1 harboring two substitutions (Y747E+R748E) within the phosphotyrosine-binding site of the cSH2 domain and on the opposite side of the interface from Asp1165 (Figure 4—figure supplements 1, 2 and 3). This result suggests that diverse mutations within the cSH2/C2 domain interface will favor similar movements.
 
-## PLC-γ isozymes in cancers
+### PLC-γ isozymes in cancers
 
 The PLC-γ isozymes are frequently mutated in several leukemias (Burger et al., 2016; Kataoka et al., 2015) and lymphomas (Choi et al., 2015; da Silva Almeida et al., 2015; Kiel et al., 2015; Vaqué et al., 2014). In particular, PLC-γ1 is the most frequently mutated protein in adult T cell leukemia/lymphoma (Kataoka et al., 2015). In this disease, sites of substitution in PLC-γ1 are found throughout the entire primary sequence with clusters at several hotspots (Figure 5a). This rather uninformative arrangement is dramatically clarified when the entire set of substitutions is mapped onto the structure of autoinhibited PLC-γ1 (Figure 5b). Now, the majority of sites localize to the interfaces formed between the PLC core and the regulatory array. This three-dimensional clustering strongly suggests that most cancer-associated substitutions in PLC-γ1 disrupt the placement of the regulatory domains atop the core to disfavor autoinhibition. Indeed, in a panel of PLC-γ1 isozymes expressed in HEK293 cells, cancer-associated substitutions at these interfaces produced a spectrum of constitutively active phospholipases—sometimes exceeding 1500-fold greater activity than wild-type PLC-γ1 (Figure 5c). Cancer-associated mutations within the equivalent regions of PLC-γ2 produced similar enhancements, indicating conserved regulation between the two isozymes (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig5-v2.jpg)
+
+**Figure 5.:** (a) Position (n = 26) and frequency of substitutions (red spheres) in PLC-γ1 for a cohort of 370 patients with adult T cell leukemia/lymphoma. (b) Mutations from (a) mapped onto the structure of PLC-γ1. (c) Basal phospholipase activity of mutant forms of PLC-γ1 in cells. Data represent the mean ± SEM of triplicate samples from a single experiment representative of three independent experiments. Inset shows mutant forms of PLC-γ1 with the lowest relative basal activity. Immunoblots of cell lysates are presented in the same order as the bar graph.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Domain architecture of PLC-γ2 drawn to scale. Position of substitutions (red spheres) in PLC-γ2 in patients with chronic lymphocytic leukemia are indicated. (b) Substitutions (red spheres) mapped onto a homology model of PLC-γ2. (c) Basal and receptor-dependent activation of PLC-γ2 mutants in cells. Data are presented as the mean ± SEM of triplicate samples from one experiment representative of three independent experiments. Immunoblots of cell lysates are presented in the same order as the bar graph.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Basal phospholipase activities of the indicated mutant forms of PLC-γ1 were quantified after transient overexpression in cells. Data represent the mean ± SEM of triplicate samples from a single experiment representative of three independent experiments. Immunoblots of cell lysates are presented in the same order as the bar graph.
 
 Cancer-derived mutations outside the autoinhibitory interfaces generally produced the smallest increases in basal lipase activities—but these increases were nonetheless significant in comparison to the wild-type isozyme (Figure 5c, inset). How might these additional mutations lead to constitutive phospholipase activity? Based on the sites of mutation within the structure of autoinhibited PLC-γ1, three mechanisms are likely. First, substitutions may increase the affinity of the active form of PLC-γ1 for membranes. This option is likely the case for R48W located in the PH domain near the presumed interface with membranes. A similar mode leading to elevated phospholipase activation was proposed for a substituted form of PLC-γ2 that causes arthritis in mice and has increased affinity for membranes relative to wild-type PLC-γ2 (Everett et al., 2009). Second, substitutions might disrupt interactions provided by the keystone residues of the SH3 domain that buttress the organization of the sPH and cSH2 domains needed to maintain autoinhibition. Representative substitutions include R687W and R753H and additional examples are found in both PLC-γ1 (Figure 5—figure supplement 2) and -γ2 (Figure 5—figure supplement 1). Of note, R687W is analogous to R665W in PLC-γ2 and arises in patients with relapsed chronic lymphocytic leukemia treated with ibrutinib (Woyach et al., 2014). Finally, mutations within the nSH2 domain, for example Q606R and D625Y, are near the binding site for phosphotyrosine (Bae et al., 2009) and may increase affinity for phosphorylated kinases.
 
@@ -101,6 +149,14 @@ Regardless of the mechanistic details, these functional results suggest importan
 
 The structure of full-length, autoinhibited PLC-γ1 provides a first clear view of the regulated activation of the PLC-γ isozymes. The overall picture is of a catalytic core that is conserved among all PLCs and that is prevented from spuriously hydrolyzing PIP2 by a set of interdependent regulatory domains stationed to preclude access of the active site to membranes. Additionally, the regulatory domains are organized to integrate numerous molecular inputs that ultimately control phospholipase activity and mediate necessary scaffolding functions (Figure 7). Importantly, the nSH2 domain is optimally positioned to readily bind phosphorylated kinases and align them to promote the phosphorylation of Tyr783 needed for activation of PLC-γ1. Although capable of engaging phosphorylated portions of kinases (Groesch et al., 2006), the equivalent surface of the cSH2 domain is buried through interactions with the C2 domain and is unlikely to initiate engagement of kinases as previously suggested (Huang et al., 2016).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig7-v2.jpg)
+
+**Figure 7.:** In the basal state, the nSH2 domain of PLC-γ1 mediates recruitment of the autoinhibited enzyme to activated receptor tyrosine kinases, for example FGFR1. The nSH2 domain binds to phosphorylated Tyr766 (pTyr766) in the C-terminal tail of FGFR1, and its kinase domain acts as a lever to destabilize the interaction between the cSH2 and C2 domains of PLC-γ1, priming the lipase for phosphorylation-dependent activation. PLC-γ1 is subsequently phosphorylated on Tyr783, and the engagement of pTyr783 by the cSH2 domain results in the full dissociation of the cSH2 domain from the C2 domain. Importantly, the phosphorylation of Tyr783 and its subsequent engagement by the cSH2 domain is predicted to induce a large-scale rearrangement of the regulatory domains with respect to the core before the phospholipase can hydrolyze membrane-resident PIP2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/51700/elife-51700-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The structure of the SH2 domain array of PLC-γ1 bound to the kinase domain of FGFR1 (nSH2 domain, orange; cSH2 domain, blue; FGFR1 kinase domain, yellow; PDB code: 3GQI) was superimposed on the structure of autoinhibited PLC-γ1 (gray) using the nSH2 domain. Red arrows indicate displacement of select residues (spheres represent Cα atoms).
+
 However, the two SH2 domains might work in concert upon receptor engagement to facilitate the binding of phosphorylated Tyr783 to the cSH2 domain. This idea is supported by the comparison of the full-length structure of PLC-γ1 with a structure of the two SH2 domains of PLC-γ1 bound to the phosphorylated kinase domain of fibroblast growth factor receptor 1 (FGFR1) (Bae et al., 2009). Based on this comparison, the βA/αA loop of the nSH2 domain is rearranged to accommodate pTyr766 of FGFR1 and this rearrangement leads to additional movements of the cSH2 domain (Figure 7—figure supplement 1). In the full-length structure, equivalent movements upon binding FGFR1 would open the surface of the cSH2 domain that binds pTyr783, effectively priming it to engage pTyr783. Engagement of pTyr783 by the cSH2 domain is presumed to unlatch the cSH2 domain from the catalytic core and initiate what is likely to be a relatively massive rearrangement of the regulatory domains with respect to the core before the core can engage membranes and hydrolyze PIP2.
 
 The model of activation described above provides the mechanistic underpinnings for understanding the mutational landscape of the PLC-γ isozymes associated with disease. In particular, most of the substitutions and small deletions in these isozymes that are linked to cancers (Burger et al., 2016; Kataoka et al., 2015; Woyach et al., 2014) or autoimmune disease (Ombrello et al., 2012) occur at the interfaces between the core and regulatory domains based on the structure of autoinhibited PLC-γ1. These mutations disrupt these interfaces, release autoinhibition, and favor conformations that engage membranes to promote constitutive phospholipase activity. Shifted conformational equilibria may also explain the supra-activation of mutant forms of PLC-γ1 by EGFR. That is, mutant forms of PLC-γ1 that are predisposed to be ‘open’ may also have a greater propensity to bind EGFR and a lower probability of turning off.
@@ -113,25 +169,182 @@ On a final note, the interfacial regulation of the PLC-γ isozymes suggests prom
 
 ## Materials and methods
 
-## DNA constructs
+**Key resources table**
 
-## Mammalian expression constructs
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta2 (DE3) pLysS</td>
+      <td>Novagen</td>
+      <td>Cat# 71403</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat# CRL-1573 RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trichoplusia ni)</td>
+      <td>HighFive</td>
+      <td>Invitrogen</td>
+      <td>Cat# B85502 RRID:CVCL_C190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA epitope (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 901513 RRID:AB_2565335</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (mouse monoclonal)</td>
+      <td>SigmaAldrich</td>
+      <td>Cat# A1978 RRID:AB_476692</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcHALIC-PLC-γ1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Vector is a modified version of pcDNA3.1 containing HA tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcHALIC-PLC-γ2 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Vector is a modified version of pcDNA3.1 containing HA tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p15LIC2-FGFR2K E565A (plasmid)</td>
+      <td>PMID: 20807769</td>
+      <td></td>
+      <td>Vector is a modified version of pET15b containing His6tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFBLIC2-PLC-γ1(21–1215) (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFBLIC2-PLC-γ1(21–1215) Δ25 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-EGFR (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Original source: Dr. H. Shelton Earp, UNC-Chapel Hill</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human epidermal growth factor</td>
+      <td>Invitrogen</td>
+      <td>Cat# PHG0313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HKL2000</td>
+      <td>PMID: 27799103</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>PMID: 20124702</td>
+      <td>RRID:SCR_014224</td>
+      <td>Version 1.10.1–2155</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WinCoot</td>
+      <td>PMID: 20383002</td>
+      <td>RRID:SCR_014222</td>
+      <td>Version 0.8.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>pymol.org</td>
+      <td>RRID:SCR_000305</td>
+      <td>Version 1.8.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Modeller</td>
+      <td>PMID: 10940251</td>
+      <td>RRID:SCR_008395</td>
+      <td>Version 9.16</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amber</td>
+      <td>ambermd.org</td>
+      <td>RRID:SCR_014230</td>
+      <td>Version 14</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>WH-15</td>
+      <td>PMID: 21158426</td>
+      <td></td>
+      <td>Fluorescent PIP2 analogue, soluble</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>XY-69</td>
+      <td>PMID: 29263090</td>
+      <td></td>
+      <td>Fluorescent PIP2 analogue, membrane-associated</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs
+
+#### Mammalian expression constructs
 
 Gibson Assembly cloning (Gibson et al., 2009) was used to introduce single amino acid substitutions into full-length rat PLC-γ1 (UniProt accession number P10686; 96% identical to human PLC-γ1) and human PLC-γ2 (P16885) in a modified pcDNA3.1 expression vector that incorporates an HA epitope tag at the N-terminus of the expressed protein. The entire open-reading frame of all constructs was confirmed by automated dideoxy sequencing.
 
-## Bacterial expression constructs
+#### Bacterial expression constructs
 
 The construct encoding a constitutively active form of the soluble kinase domain of FGFR2 (FGFR2K E565A) was described previously (Gresset et al., 2010).
 
-## Baculovirus transfer vectors
+#### Baculovirus transfer vectors
 
 PLC-γ1(21–1215) was amplified from full-length rat PLC-γ1 by PCR and then subcloned into a modified pFastBacHT1 vector that incorporates a His6 tag followed by a tobacco etch virus (TEV) protease recognition sequence at the N-terminus of the expressed protein. Transfer vectors encoding PLC-γ1(21–1215) harboring the P867R or D1165H substitutions were generated similarly, using the full-length mutant forms of PLC-γ1 as PCR templates.
 
 The Δ25 deletion, which replaces residues 766–790 of PLC-γ1 with a Ser-Gly-Ser linker, was introduced into the transfer vector encoding PLC-γ1(21–1215) by standard primer-mediated mutagenesis. PLC-γ1(21–1215) and PLC-γ1(21–1215) Δ25 were amplified by PCR and subcloned into the modified pcDNA3.1 expression vector described above using a ligation-independent cloning strategy (Stols et al., 2002).
 
-## Protein expression and purification
+### Protein expression and purification
 
-## PLC-γ1(21–1215) Δ25
+#### PLC-γ1(21–1215) Δ25
 
 Recombinant baculovirus encoding His6-PLC-γ1(21–1215) Δ25 was prepared using the Bac-to-Bac Baculovirus Expression System according to the manufacturer’s protocol (Invitrogen). Four liters of HighFive (T. ni) cells at a density of ~2.0×106 cells/mL were infected with amplified baculovirus stock (10–15 mL/L) and harvested ~60 hr post-infection by centrifugation at 6000 rpm in a Beckman JA-10 rotor at 4°C. All subsequent centrifugation and chromatography steps were performed at 4°C.
 
@@ -139,25 +352,25 @@ The cell pellet was resuspended in 200 mL of ice-cold buffer N1 (20 mM HEPES (pH
 
 Wild-type PLC-γ1(21–1215), PLC-γ1(21–1215) P867R, and PLC-γ1(21–1215) D1165H used for biochemical assays were purified using the method described above except that the buffer for size exclusion chromatography was supplemented with 5% v/v glycerol.
 
-## FGFR2K E565A
+#### FGFR2K E565A
 
 The soluble kinase domain of FGFR2 (residues 458–778) harboring a His6 tag at its N-terminus was expressed in the Rosetta2 pLysS strain of E. coli (Novagen). Cells were grown at 37°C in TB medium containing 0.1 mg/mL ampicillin and 0.034 mg/mL chloramphenicol to an OD600 of ~3.0. Protein expression was induced for 2 hr at 30°C with 0.1 mM IPTG (final concentration). Cells were collected by centrifugation, resuspended in lysis buffer (20 mM HEPES (pH 7.5), 300 mM NaCl, 10 mM 2-mercaptoethanol, 10 mM imidazole, 10 mM MgCl2, 10 μM ATP, 10% v/v glycerol, and protease inhibitor cocktail), and lysed using an EmulsiFlex-C5 homogenizer. CHAPS was then added to a final concentration of 0.5% w/v and the lysate incubated at 4°C for 30 min. Soluble lysate was prepared by ultracentrifugation and the kinase domain isolated by IMAC on a HisTrap HP column. The protein was further purified by size exclusion chromatography on a Sephacryl 200 size exclusion column equilibrated in 20 mM HEPES (pH 7.5), 200 mM NaCl, 2 mM DTT, and 5% v/v glycerol. Protein was aliquoted, snap-frozen in liquid nitrogen, and stored at −80°C until use.
 
-## Size-exclusion chromatography coupled to multi-angle light scattering
+### Size-exclusion chromatography coupled to multi-angle light scattering
 
 Multi-angle light scattering measurements were performed using Wyatt DAWN HELEOS II light scattering instrumentation (with Wyatt Optilab T-rEX refractometer and Wyatt dynamic light scattering module) coupled to a Superdex 200 10 mm x 300 mm GL size exclusion column. Following equilibration with buffer containing 20 mM HEPES (pH 7.4), 150 mM NaCl, and 0.02% w/v NaN3, 50 μL of PLC-γ1(21–1215) proteins at 2 mg/mL were loaded onto the column. Data analysis was performed with ASTRA software version 6 (Wyatt Technologies).
 
-## Crystallization of PLC-γ1(21–1215) Δ25
+### Crystallization of PLC-γ1(21–1215) Δ25
 
-## Native PLC-γ1(21–1215) Δ25
+#### Native PLC-γ1(21–1215) Δ25
 
 Crystals of PLC-γ1(21–1215) Δ25 were grown initially by sitting drop vapor diffusion. PLC-γ1(21–1215) Δ25 was diluted to 20 mg/mL in buffer containing 20 mM HEPES (pH 7.5), 150 mM NaCl, 5 mM DTT, and 0.25% w/v CHAPSO. Two hundred nanoliters of this protein solution was mixed with 100 nanoliters of reservoir solution (200 mM di-sodium tartrate and 20% w/v PEG 3,350) and equilibrated against a 30 μL reservoir. Crystals grew as a cluster of thin plates and appeared after 9 days at 20°C. Diffraction quality crystals of PLC-γ1(21–1215) Δ25 were grown at 20°C by microseeding hanging drops. Protein solution was prepared by diluting PLC-γ1(21–1215) Δ25 to 40 mg/mL in buffer containing 20 mM HEPES (pH 7.5), 150 mM NaCl, 5 mM DTT, and 0.25% w/v CHAPSO. Solutions of seed crystals were obtained by vortexing crystals of PLC-γ1(21–1215) Δ25 with a glass bead in buffer containing 200 mM di-sodium tartrate, 25% w/v PEG 3,350, 150 mM NaCl, 5 mM DTT, and 0.25% w/v CHAPSO. Seed crystals were diluted 100-fold in the same buffer prior to use. Drops were prepared by mixing, in order, 1 μL of reservoir solution (12.5% w/v PEG 3,350, 50 mM di-sodium tartrate, and 5% v/v glycerol), 2 μL of protein solution, and 0.5 μL of seed solution. Drops were equilibrated against a 500 μL reservoir. Crystals ~100 μm on the longest edge appeared after 1–2 days and were flash-frozen in liquid nitrogen on nylon loops.
 
-## Gadolinium-derivatized PLC-γ1(21–1215) Δ25
+#### Gadolinium-derivatized PLC-γ1(21–1215) Δ25
 
 PLC-γ1(21–1215) Δ25 (335 μM) was treated with a 50-fold molar excess of EGTA for 1 hr at 4°C. The protein was then exchanged into crystallization buffer (20 mM HEPES (pH 7.5), 150 mM NaCl, 5 mM DTT, 5 μM EGTA, 1 mM GdCl3, and 0.25% w/v CHAPSO) using a 7K MWCO Zeba spin desalting column (Thermo Scientific). The final protein concentration in this solution was 36 mg/mL. A solution of seed crystals was prepared as described above except that the buffer contained 50 mM di-sodium tartrate, 20% w/v PEG 3,350, 5% v/v glycerol, 150 mM NaCl, 5 mM DTT, 0.25% w/v CHAPSO, 5 μM EGTA, and 1 mM GdCl3. Drops were prepared by mixing, in order, 1 μL of reservoir solution (12.5% w/v PEG 3,350, 25 mM di-sodium tartrate, and 10% v/v glycerol), 2 μL of protein solution, and 0.5 μL of seed solution. Drops were equilibrated against a 500 μL reservoir. Crystals grew at 20°C and were transferred from the mother liquor and soaked in buffer containing 25 mM HEPES (pH 7.5), 150 mM NaCl, 5 mM DTT, 0.25% w/v CHAPSO, 12.5% w/v PEG 3,350, 10% v/v glycerol, and 5 mM GdCl3 for 3 min at room temperature. Crystals were mounted on nylon loops and flash-frozen in liquid nitrogen.
 
-## X-ray diffraction data collection and structure determination
+### X-ray diffraction data collection and structure determination
 
 X-ray diffraction data were collected on crystals of native PLC-γ1(21–1215) Δ25 at the Southeast Regional Collaborative Access Team (SER-CAT) beamline 22-BM at the Advanced Photon Source at Argonne National Laboratory. One scan totaling 200° of data was collected at 100 K on a MAR 200 CCD detector. Each frame was exposed for 10 s and consisted of a 1° oscillation.
 
@@ -165,7 +378,7 @@ Gadolinium-derivatized crystals of PLC-γ1(21–1215) Δ25 were used to collect 
 
 Phases for the gadolinium-bound form of PLC-γ1(21–1215) Δ25 were solved by SAD using the AutoSol routine in the Phenix software suite (Adams et al., 2010). A partial model of this structure was built using AutoBuild (Terwilliger et al., 2008) and used as a molecular replacement search model to solve phases for the structure of native PLC-γ1(21–1215) Δ25. The remainder of the model was then built in an iterative process that consisted of manual model building in Coot (Emsley et al., 2010) followed by restrained refinement in Phenix. The structure was validated using MolProbity (Chen et al., 2010) and molecular representations produced with PyMOL (Schrodinger LCC, 2019). Complete data collection and refinement statistics are shown in Supplementary file 1.
 
-## Quantification of phospholipase activity in cells
+### Quantification of phospholipase activity in cells
 
 To quantify basal phospholipase activity, HEK293 cells were plated at a density of ~75,000 cells/well in 12-well cluster plates and transiently transfected with 100 ng of vector encoding wild-type or mutant forms of PLC-γ1. Twenty-four hours post-transfection, cells were metabolically labeled overnight in serum-free, inositol-free medium containing 1 μCi of [3H]myo-inositol and 10 mM LiCl. Accumulation of [3H]inositol phosphates was quantified as described previously (Waldo et al., 2010). In all experiments, counts that accumulated in cells transfected with empty vector (~500–1000 cpm) were subtracted as background.
 
@@ -173,13 +386,13 @@ EGFR-dependent activation of PLC-γ1 and PLC-γ2 was quantified in HEK293 cells 
 
 Expression of each form of PLC-γ1 and PLC-γ2 was confirmed by immunoblotting of cell lysates using a monoclonal antibody against the HA epitope (BioLegend, clone 16B12). Lysates were also probed with a monoclonal antibody against β-actin (SigmaAldrich, clone AC-15) as a loading control. All immunoblots represent a single exposure from one experiment, and the HA epitope and β-actin were detected on the same blot. Immunoblots were loaded with all mutant versions of PLC-γ1 or PLC-γ2 in numerical order; bands were subsequently cropped and then reordered in Photoshop to reflect the order in which data are presented in bar graphs and dose-response curves. The identity of the HEK293 cell line was not authenticated, and testing for mycoplasma contamination was not performed.
 
-## In vitro quantification of phospholipase activity
+### In vitro quantification of phospholipase activity
 
-## WH-15 fluorogenic assay
+#### WH-15 fluorogenic assay
 
 Assays utilizing WH-15 as enzyme substrate were performed as described previously (Charpentier et al., 2014) with the following modifications. WH-15 (3 μM, final concentration) was solubilized in a final assay buffer containing 50 mM HEPES (pH 7.4), 70 mM KCl, 3 mM EGTA, 2.9 mM CaCl2, 50 μg/mL fatty acid-free BSA, 2 mM DTT, and 0.25% w/v sodium cholate. Baseline fluorescence was stabilized for 10 min, and fluorescence intensity then was quantified for an additional 15 min following addition of various forms of purified PLC-γ1(21–1215) (1 nM, final concentration). Fluorescence intensity was converted to pmol of 6-aminoquinoline using a standard curve, and initial rates of WH-15 hydrolysis were calculated from the slope of linear data points.
 
-## XY-69 fluorogenic assay
+#### XY-69 fluorogenic assay
 
 All assays with XY-69 (Huang et al., 2018) were performed at 30°C in 384-well plates in a PHERAstar multi-mode plate reader. Data were recorded for 30 min at intervals of 1 min using excitation and emission wavelengths of 485 nm and 520 nm, respectively. Fluorescence intensity was normalized to a blank reaction lacking phospholipase, and initial rates of XY-69 hydrolysis were calculated from the slope of the linear portion of the curve. The amount of wild-type and mutant forms of PLC-γ1(21–1215) used in all experiments was adjusted to maintain assay linearity with respect to time and protein concentration.
 
@@ -187,27 +400,27 @@ To prepare mixed micelles, XY-69 (5 μM, final concentration) was dried under a 
 
 Phospholipid vesicles were prepared by combining XY-69, porcine brain phosphatidylinositol 4,5-bisphosphate (PIP2), and bovine liver phosphatidylethanolamine (PE) and drying the mixture under a stream of nitrogen. Lipids were resuspended by sonication in 20 mM HEPES (pH 7.4). PLC-γ1(21–1215) proteins (0.5–1 nM, final concentration) were diluted as described above for mixed micelle assays. Assays were initiated by adding 10 μL of phospholipid vesicles to 2 μL of PLC-γ1 and performed in a final assay buffer consisting of 20 mM HEPES (pH 7.4), 70 mM KCl, 3 mM EGTA, 2.35 mM CaCl2, and 2 mM DTT. Final concentrations of XY-69, PIP2, and PE were 5 μM, 20 μM, and 220 μM, respectively.
 
-## In vitro kinase assay
+#### In vitro kinase assay
 
 Equimolar concentrations (35 μM) of PLC-γ1(21–1215) and FGFR2K E565A were incubated on ice in buffer containing 20 mM HEPES (pH 7.4), 50 mM NaCl, 10 mM MgCl2, 0.2 mM Na3VO4, 50 ng/mL fatty acid-free BSA, 2 mM DTT, and 0.5 mM ATP. After 1 hr, a portion of the reaction mixture was diluted with 20 mM HEPES (pH 7.4), 50 mM NaCl, 1 mg/mL fatty acid-free BSA, and 2 mM DTT. Phospholipase activity was quantified using XY-69 incorporated into mixed micelles or phospholipid vesicles as described above. The concentrations of PLC-γ1(21–1215) and FGFR2K E565A were both 1 nM in the final reaction mixture. Phosphorylation of PLC-γ1(21–1215) was analyzed by native PAGE on PhastGel homogeneous medium containing 7.5% polyacrylamide followed by staining with Coomassie Brilliant blue.
 
-## [3H]PIP2 hydrolysis assay
+#### [3H]PIP2 hydrolysis assay
 
 Quantification of lipase activity using phospholipid vesicles consisting of 200 μM PE, 20 μM PIP2, and ~5000 cpm/assay [3H]PIP2 was performed as described previously (Waldo et al., 2010).
 
-## Homology modeling
+### Homology modeling
 
-## PLC-γ2(14–1190)
+#### PLC-γ2(14–1190)
 
 A model of PLC-γ1(21–1215) containing residues 766–790 was generated with Modeller v9.16 (Martí-Renom et al., 2000) using the structure of PLC-γ1(21–1215) Δ25 as the template. This model of PLC-γ1 was then used as the template to build a model of PLC-γ2(14–1190).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
-## Structural model of PLC-γ1(21–1215) Δ25
+#### Structural model of PLC-γ1(21–1215) Δ25
 
 The X-ray crystal structure of autoinhibited PLC-γ1 included a number of missing regions presumably due to local disorder. Missing regions that were expected to contain secondary structural elements included: i) helix E of EF hand 2 (residues 190–206) and ii) helix E of EF hand 3 (residues 226–246). In order to build the missing helices, HHpred (Zimmermann et al., 2018) was used to search for suitable templates. The fragment from the structure of cuttlefish PLC21 (PDB code: 3QR0) (Lyon et al., 2011) containing helix F of EF hand 2 through helix F of EF hand 3 provided the best superimposition on the PLC-γ1 structure and was used as a template for building helix E of EF hand 3. Residues 226–233 were deleted from the X-ray structure prior to building a model of this EF hand. The apo structure of troponin C (PDB code: 1TNP) (Gagné et al., 1995) containing helix F of EF hand 1 through helix F of EF hand 2 provided the best superimposition on the structure of PLC-γ1 and was used as the template for building helix E of EF hand 2. The remaining loops missing from the structure of PLC-γ1 were built as random coils with no regular secondary structural elements. A structural model of PLC-γ1 containing all residues from Glu21 - Lys1215, except for the shortened activation loop, was generated with Modeller v9.16 using the autoinhibited PLC-γ1 structure as the template. The wild-type PLC-γ1 model was subsequently mutated in PyMOL to generate the PLC-γ1(D1165H) model used for molecular dynamics simulations.
 
-## Accelerated molecular dynamics simulations
+#### Accelerated molecular dynamics simulations
 
 Accelerated molecular dynamics (aMD) simulations utilize an enhanced sampling method that applies a bias or boost potential to the true potential that effectively raises the minima in the potential energy surface, leading to an enhanced escape rate and sampling of longer timescale events with shorter MD simulations. Using the Amber v14 software package (Case et al., 2017), conventional MD (cMD) simulations of PLC-γ1 and PLC-γ1(D1165H) in explicit solvent were used for equilibration, followed by a five nsec cMD simulation for calculating the boost potential, followed by completion of 145 nsec of boosted aMD simulations. The explicit solvent systems for PLC-γ1 and PLC-γ1(D1165H) were generated using LEaP and contained 1173 amino acid residues (PLC-γ1: 18,877 atoms, PLC-γ1(D1165H): 18,882), Na+ ions for charge neutralization (PLC-γ1: 25 ions, PLC-γ1(D1165H): 24 ions), and TIP3P water molecules in an octahedral box (PLC-γ1: 39,688 TIP3P, PLC-γ1(D1165H): 39,700), for total system sizes of ~138,000 atoms. The ff14SB force field (Maier et al., 2015) was used for parameterization and simulations run using pmemd.cuda. First, the systems underwent minimization for 10,000 steps with a convergence criterion of 0.05 kcal/mol-Å. This was followed by 200 psec dynamics (NVT ensemble) for heating, with the thermostat target temperature increasing linearly from 0K to 300K over the course of the 200 psec using a Berendsen thermostat with a relaxation time of 0.5 psec. Protein atoms were restrained with a harmonic potential of weight 1.0 kcal/mol-Å2. For relaxation and density equilibration, 300 psec dynamics (NPT ensemble) were completed using the Langevin thermostat with a collision frequency of 2.0 psec−1 and isotropic pressure scaling with a relaxation time of 1.0 psec. At this stage, protein atoms were restrained with weight 0.1 kcal/mol-Å2. During the next 500 psec of dynamics (NPT ensemble), there were no restraints placed on protein atoms. The last step of cMD was a 5 nsec simulation with snapshots saved every 5 psec. All simulations were under periodic boundary conditions, with a 1 fsec time-step with hydrogen atoms constrained by SHAKE.
 

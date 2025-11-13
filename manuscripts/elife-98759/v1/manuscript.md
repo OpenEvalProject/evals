@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/023rhb549 Department of Neurosurgery, Chongqing Emergency Medical Center, Chongqing University Central Hospital, School of Medicine, Chongqing University Chongqing China
-2. https://ror.org/023rhb549 Bioengineering College of Chongqing University Chongqing China
-3. https://ror.org/023rhb549 Department of Neurosurgery, Chongqing University Qianjiang Hospital Chongqing China
+1. Department of Neurosurgery, Chongqing Emergency Medical Center, Chongqing University Central Hospital, School of Medicine, Chongqing University Chongqing China ([ROR:023rhb549](https://ror.org/023rhb549))
+2. Bioengineering College of Chongqing University Chongqing China ([ROR:023rhb549](https://ror.org/023rhb549))
+3. Department of Neurosurgery, Chongqing University Qianjiang Hospital Chongqing China ([ROR:023rhb549](https://ror.org/023rhb549))
 4. Department of Neurosurgery, Yubei District Hospital of Traditional Chinese Medicine Chongqing China
-5. https://ror.org/017z00e58 Department of Neurosurgery, Bishan hospital of Chongqing Medical University Chongqing China
-6. https://ror.org/023rhb549 Department of Prehospital Emergency, Chongqing University Central Hospital, Chongqing Emergency Medical Center Chongqing China
+5. Department of Neurosurgery, Bishan hospital of Chongqing Medical University Chongqing China ([ROR:017z00e58](https://ror.org/017z00e58))
+6. Department of Prehospital Emergency, Chongqing University Central Hospital, Chongqing Emergency Medical Center Chongqing China ([ROR:023rhb549](https://ror.org/023rhb549))
 7. Chongqing Key Laboratory of Emergency Medicine Chongqing China
 8. Jinfeng Laboratory Chongqing China
 
@@ -28,7 +28,7 @@
 
 ## Abstract
 
-Post-stroke epilepsy (PSE) is a critical complication that worsens both prognosis and quality of life in patients with ischemic stroke. An interpretable machine learning model was developed to predict PSE using medical records from four hospitals in Chongqing. Medical records, imaging reports, and laboratory test results from 21,459 ischemic stroke patients were collected and analyzed. Univariable and multivariable statistical analyses identified key predictive factors. The dataset was split into a 70% training set and a 30% testing set. To address the class imbalance, the Synthetic Minority Oversampling Technique combined with Edited Nearest Neighbors was employed. Nine widely used machine learning algorithms were evaluated using relevant prediction metrics, with SHAP (SHapley Additive exPlanations) used to interpret the model and assess the contributions of different features. Regression analyses revealed that complications such as hydrocephalus, cerebral hernia, and deep vein thrombosis, as well as specific brain regions (frontal, parietal, and temporal lobes), significantly contributed to PSE. Factors such as age, gender, NIH Stroke Scale (NIHSS) scores, and laboratory results like WBC count and D-dimer levels were associated with increased PSE risk. Tree-based methods like Random Forest, XGBoost, and LightGBM showed strong predictive performance, achieving an AUC of 0.99. The model accurately predicts PSE risk, with tree-based models demonstrating superior performance. NIHSS score, WBC count, and D-dimer were identified as the most crucial predictors. The research is funded by Central University basic research young teachers and students research ability promotion sub-projec t(2023CDJYGRH-ZD06), and by Emergency Medicine Chongqing Key Laboratory Talent Innovation and development joint fund project (2024RCCX10).
+Background:Post-stroke epilepsy (PSE) is a critical complication that worsens both prognosis and quality of life in patients with ischemic stroke. An interpretable machine learning model was developed to predict PSE using medical records from four hospitals in Chongqing.Methods:Medical records, imaging reports, and laboratory test results from 21,459 ischemic stroke patients were collected and analyzed. Univariable and multivariable statistical analyses identified key predictive factors. The dataset was split into a 70% training set and a 30% testing set. To address the class imbalance, the Synthetic Minority Oversampling Technique combined with Edited Nearest Neighbors was employed. Nine widely used machine learning algorithms were evaluated using relevant prediction metrics, with SHAP (SHapley Additive exPlanations) used to interpret the model and assess the contributions of different features.Results:Regression analyses revealed that complications such as hydrocephalus, cerebral hernia, and deep vein thrombosis, as well as specific brain regions (frontal, parietal, and temporal lobes), significantly contributed to PSE. Factors such as age, gender, NIH Stroke Scale (NIHSS) scores, and laboratory results like WBC count and D-dimer levels were associated with increased PSE risk. Tree-based methods like Random Forest, XGBoost, and LightGBM showed strong predictive performance, achieving an AUC of 0.99.Conclusions:The model accurately predicts PSE risk, with tree-based models demonstrating superior performance. NIHSS score, WBC count, and D-dimer were identified as the most crucial predictors.Funding:The research is funded by Central University basic research young teachers and students research ability promotion sub-projec t(2023CDJYGRH-ZD06), and by Emergency Medicine Chongqing Key Laboratory Talent Innovation and development joint fund project (2024RCCX10).
 
 ## Introduction
 
@@ -42,7 +42,7 @@ This study aims to identify key risk factors from features extracted from clinic
 
 ## Results
 
-## Filling of missing data
+### Filling of missing data
 
 Missing values were imputed using a Random Forest (RF) model, addressing one feature at a time. The imputed features included: Plt, WBC, RBC, HbA1c, CRP, TG, LDL, HDL, AST, ALT, bilirubin, albumin, urea, creatinine, BUA, PT, APTT, TT, INR, D-dimer, fibrinogen, CK, CK-MB, LDH, HBDH, IMA, lactate, anion gap, TCO2, and NIHSS (Figure 1).
 
@@ -50,19 +50,51 @@ Missing values were imputed using a Random Forest (RF) model, addressing one fea
 
 **Figure 1.:** The image shows the LASSO regression coefficient paths for various features related to a medical or research study. The x-axis shows the log of the regularization parameter alpha, and the y-axis shows the regression coefficient values. The lines in the plot represent the coefficient paths for different features as the regularization parameter changes. The features are labeled on the right side of the plot, and the most important features selected by the LASSO model are shown at the bottom of the image.
 
-## Characteristics of study participants
+### Characteristics of study participants
 
 A total of 21,459 patients were included in the study. The training set comprised 15,021 patients, with a PSE incidence of 4.3%. The test set consisted of 6438 patients, also with a 4.3% incidence of PSE. An external validation cohort included 536 patients from three hospitals. Detailed statistical information on the clinical characteristics is presented in (Supplementary file 1).
 
 Analysis indicated that patients with a higher likelihood of developing PSE had complications such as uremia, a history of DVT, atrial fibrillation, hyperuricemia, cerebral hernia, and hydrocephalus. Affected brain regions included the frontal, parietal, occipital, and temporal lobes, along with the cortex, subcortex, basal ganglia, and hypothalamus. General characteristics influencing risk included age, gender, and NIHSS. Laboratory indicators associated with a higher risk of PSE included WBC, HbA1c, CRP, TG, AST, ALT, bilirubin, urea, uric acid, APTT, PT, D-dimer, CK, CK-MB, LDH, HBDH, IMA, lactate, and anion gap. Significant p-values were also observed for fatty liver, coronary heart disease, hyperlipidemia, and HDL, with low or negative values linked to higher risks of secondary complications. Details of statistical, univariate, and multivariate regression analyses are provided in Supplementary file 1, Supplementary file 2, Supplementary file 3.
 
-## Performance of machine learning models
+### Performance of machine learning models
 
 Performance indicators for the machine learning models are summarized in Supplementary file 4. The ROC curves, calibration curve, and decision curve analysis (DCA) are shown in Figure 2. Tree-based models such as RF, XGBoost, and LightGBM demonstrated the highest AUC scores, outperforming other models. Among them, RF achieved the highest positive predictive value (PPV) at 0.864, which was the most significant metric in this study. Complex machine learning algorithms outperformed traditional logistic regression. The calibration curve showed a Brier score of 0.006, and DCA indicated strong practical value in clinical decision-making. In the external validation cohort, RF achieved a sensitivity of 0.91 and a PPV of 0.95, confirming its strong predictive capability.
 
-## Analysis of SHAP risk factors
+![Figure 2.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig2-v1.jpg)
+
+**Figure 2.:** The figure shows model performance curves across six sections (A1, A2, A3 on the left; B1, B2, B3 on the right) for training and test sets. ROC Curve: Illustrates the trade-off between sensitivity and specificity, with the AUC indicating overall model performance. Calibration Curve: Compares predicted probabilities to actual outcomes, assessing the model’s confidence accuracy. Precision-Recall Curve: Analyzes the balance between precision and recall at various thresholds, particularly useful for imbalanced datasets.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** This figure presents the ROC Curve, illustrating the performance of the model in terms of true positive rate versus false positive rate, providing insights into the model’s discriminative ability.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** This figure displays the calibration curve, which assesses how well the predicted probabilities align with actual outcomes, helping to evaluate the reliability of the model’s probability estimates.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** This figure showcases the precision-recall curve, highlighting the trade-off between precision and recall for the model, particularly useful in evaluating performance on imbalanced datasets.
+
+### Analysis of SHAP risk factors
 
 Figure 3 presents SHAP values, individual decision attempts, and overall decision curves. Among general characteristics, females had a higher PSE rate. A higher NIHSS was associated with an increased incidence of PSE. Elevated WBC, D-dimer, CRP, AST, CK-MB, HbA1c, bilirubin, TCO2, and LDH levels at admission were linked to a greater likelihood of developing PSE. Conversely, lower levels of HBDH, Plt, and APTT were also associated with a higher risk of PSE. Specific brain regions did not have a significant individual effect on the outcome. Among complications, hypertension was more strongly associated with PSE development, while conditions such as coronary heart disease, diabetes, hyperlipidemia, and fatty liver were less likely to be related. A force plot for the first patient illustrated the influence of different features on the prediction. In this case, a prolonged APTT time contributed the most to PSE, followed by elevated AST levels, while a low NIHSS negatively impacted the final result. The decision plot aggregated model decisions to demonstrate how complex models generated their predictions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig3-v1.jpg)
+
+**Figure 3.:** SHAP Value (Left): Displays the impact of each feature on the model’s predictions, with features sorted by importance. The color gradient indicates the range of feature values, from low (blue) to high (red). Force plot (upper right): Illustrates the contribution of individual features of the first sample to the final model output, highlighting how each feature value pushes the prediction away from the baseline value. Decision plot (lower right): Visualizes the cumulative impact of features on the model output for each sample, showing how the feature values combine to produce the final prediction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** This figure presents the summary_plot, and provides a detailed view of SHapley Additive exPlanations (SHAP) values for individual features, illustrating their contributions to the model’s predictions. It highlights the importance of each feature and their respective impacts.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** This figure presents a force plot for a specific sample, visualizing how individual feature values influence the model’s final output. It depicts the push and pull of features from the baseline prediction.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/98759/elife-98759-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** This figure presents the decision plot that aggregates the effects of multiple features on the model’s predictions across samples, demonstrating how feature interactions shape the cumulative output.
 
 ## Discussion
 
@@ -96,7 +128,7 @@ To strengthen this study further, data standardization should be improved, and t
 
 ## Materials and methods
 
-## Research patients
+### Research patients
 
 This study retrospectively included all stroke patients admitted to Chongqing Emergency Center between June 2017 and June 2022 to develop the prediction model. Data from three external validation centers—Qianjiang Central Hospital, Bishan District People’s Hospital, and Yubei District Traditional Chinese Medicine Hospital—were collected between July 2022 and July 2023 to validate and evaluate the model externally. The external validation cohort focused on collecting positive cases to accurately test the model’s ability to identify them.
 
@@ -112,11 +144,11 @@ The selection process is outlined in Figure 4. A total of 42,079 records were re
 
 **Figure 4.:** A total of 42,079 records were retrieved from the stroke database, and 24,733 patients were diagnosed with ischemic or lacunar stroke with new onset. Hemorrhagic strokes (4565), a history of stroke (2154), TIA (3570), unclear cause strokes (561), and records with missing essential data (6496) were excluded. Patients whose seizures might have been caused by other factors (such as brain tumors, intracranial vascular malformations, or traumatic brain injury) (865), those with a seizure history (152), and patients who died in the hospital (1444) were also excluded. Additionally, patients lost to follow-up (those without outpatient records or unreachable by phone) or who died within three months of the stroke incident (813) were excluded. Finally, 21,459 cases were included in the study.
 
-## Data collection
+### Data collection
 
 Relevant records and data were extracted from hospital databases. PostgreSQL was used to manage the data, with Structured Query Language (SQL) queries organized as follows:
 
-## Data processing and model building
+### Data processing and model building
 
 Processing of Missing Data: Laboratory indicators were recorded from the first set of tests after stroke admission. Indicators with more than 10% missing data were excluded. Remaining indicators with missing values were imputed using the random forest algorithm with default parameters. Features were processed in order of increasing missing data to minimize imputation complexity. During imputation, missing values in other features were temporarily replaced with 0, and predicted values were inserted into the original feature matrix before moving to the next feature. This process continued until all features were complete.
 
@@ -128,7 +160,7 @@ Processing of Categorical Data: Categorical variables were transformed using one
 
 Model Building: LASSO regression was used to select the 20 most important features. Nine widely used machine learning methods were employed, including Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Multi-Layer Perceptron, XGBoost, LightGBM, and K-Nearest Neighbors. Hyperparameters were optimized through grid search to enhance model performance. Evaluation metrics included accuracy, sensitivity, specificity, F1-score, positive predictive value, and negative predictive value. Additionally, ROC curves, calibration curves, and decision curves were generated to assess model performance. An independent external validation dataset was used to evaluate the model’s generalizability. The SHAP algorithm was then applied to the best-performing model to interpret feature contributions and their clinical relevance. This approach enabled the development of a robust machine learning model with strong predictive performance and interpretability, providing valuable support for clinical decision-making.
 
-## Statistical approach
+### Statistical approach
 
 PostgreSQL v15 (http://www.postgresql.org/) was used to search and extract data from the local database. Statistical analysis was performed using the open-source Scipy.stats package in Python. The details of the univariate significance analysis were as follows:
 
@@ -138,6 +170,6 @@ Confidence intervals for AUC values and Brier scores were calculated using 1000 
 
 All code used in this study is available at https://github.com/conanan/lasso-ml (copy archived at conanan, 2024).
 
-## Conclusion
+### Conclusion
 
 An interpretable machine learning model was developed to predict the risk of PSE in hospitalized patients with ischemic stroke. Using a large dataset of medical records, the model demonstrated strong predictive performance for PSE. Key predictors identified by the model include NIHSS, D-dimer, lactate, and WBC, along with liver function and cardiac enzyme profile indicators. The model’s transparency and interpretability can build trust among clinicians and support decision-making. While the results are promising, further prospective studies are necessary to validate the clinical utility of this tool before it can be applied in real-world settings.

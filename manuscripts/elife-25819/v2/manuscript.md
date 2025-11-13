@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.25819.001 In many songbird species, males sing to attract females and repel rivals. How can gregarious, non-territorial songbirds such as zebra finches, where females have access to numerous males, sustain monogamy? We found that the dopaminergic reward circuitry of zebra finches can simultaneously promote social cohesion and breeding boundaries. Surprisingly, in unmated males but not in females, striatal dopamine neurotransmission was elevated after hearing songs. Behaviorally too, unmated males but not females persistently exchanged mild punishments in return for songs. Song reinforcement diminished when dopamine receptors were blocked. In females, we observed song reinforcement exclusively to the mate’s song, although their striatal dopamine neurotransmission was only slightly elevated. These findings suggest that song-triggered dopaminergic activation serves a dual function in social songbirds: as low-threshold social reinforcement in males and as ultra-selective sexual reinforcement in females. Co-evolution of sexually dimorphic reinforcement systems can explain the coexistence of gregariousness and monogamy.
+In many songbird species, males sing to attract females and repel rivals. How can gregarious, non-territorial songbirds such as zebra finches, where females have access to numerous males, sustain monogamy? We found that the dopaminergic reward circuitry of zebra finches can simultaneously promote social cohesion and breeding boundaries. Surprisingly, in unmated males but not in females, striatal dopamine neurotransmission was elevated after hearing songs. Behaviorally too, unmated males but not females persistently exchanged mild punishments in return for songs. Song reinforcement diminished when dopamine receptors were blocked. In females, we observed song reinforcement exclusively to the mate’s song, although their striatal dopamine neurotransmission was only slightly elevated. These findings suggest that song-triggered dopaminergic activation serves a dual function in social songbirds: as low-threshold social reinforcement in males and as ultra-selective sexual reinforcement in females. Co-evolution of sexually dimorphic reinforcement systems can explain the coexistence of gregariousness and monogamy.
 
 ## Introduction
 
@@ -44,9 +44,79 @@ We developed two complementary experimental approaches. First, we used a delayed
 
 We first tested if our delayed PET technique could detect changes in striatal dopamine neurotransmission after hearing song playbacks. We scanned eight unmated female zebra finches, where we expected to find higher levels of dopamine neurotransmission after song playbacks (i.e., lower levels of [11C]raclopride binding), and eight unmated males, where we expected to find a weaker effect, if any. Each bird was scanned twice: after stimulation with a variety of unfamiliar songs (both female-directed and undirected) over 20 min, and after silence over the same duration (Figure 1). As expected from the distribution of dopamine receptors in the songbird brain (Kubikova et al., 2010), the averaged PET map showed that the striatum was the major site of [11C]raclopride binding in both conditions in males (Figure 3a) and in females (Figure 3b). However, against our expectations, lower level of [11C]raclopride binding after hearing songs (suggesting increased striatal dopamine neurotransmission) was detected only in the male group. In males, the song minus silence parametric difference map showed that song stimulation resulted in significantly lower level of [11C]raclopride binding in a part of the striatum (Figure 3c; cluster-level pcorrected = 0.024, paired t-test corrected for multiple comparisons). Exploratory analysis of individual changes (within the cluster of significant change) showed that [11C]raclopride binding was at lower levels in all males after hearing songs by 29 ± 8% (mean ± s.e.m. hereafter; Figure 3d; p=0.015, pair-wise t-test). These results, based on PET of D2 receptors, are comparable to the 26.5 ± 8.4% increase in dopamine detected with microdialysis in a study where male zebra finches were presented with females (Ihle et al., 2015), confirming that [11C]raclopride binding at D2 receptors is a robust indicator of the overall striatal dopamine neurotransmission.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig3-v2.jpg)
+
+**Figure 3.:** Brain schemas in (a–c) show: cerebellum (Cb), auditory field L (L2), striatum (St), and song control nuclei Area X (X) and lateral magnocellular nucleus of the anterior nidopallium (LMAN). Section planes are shown as dashed orange lines. (a & b) Bright yellow areas represent the Statistical Parametric Map (SPM, intensity threshold at t ≥ 2) for averaged [11C]raclopride binding potential in males (a) and females (b) (n = 8 in both groups). SPM is shown over the brain template magnetic-resonance image. In both males and females [11C]raclopride binding was restricted to the striatum. (c) SPM of the difference in dopamine neurotransmission as detected by [11C]raclopride binding in song and silence conditions in males. SMP reveals significantly lower level of [11C]raclopride binding in response to hearing novel conspecific songs in males (pair-wise t statistic, cluster-level pcorrected = 0.024), which indicates higher dopamine neurotransmission in this condition. Significant difference was detected in one cluster within the dorsal striatum, mostly outside Area X. (d) Analysis of individual changes in [11C]raclopride binding in males, comparing song vs. silence. (e) Same for females. As no significant cluster was found in females, males’ cluster was used as a mask to produce individual values of [11C]raclopride binding within the same area.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Comparison of [11C]raclopride binding change (song-silence) values between males and females confirmed significant difference in dopamine neurotransmission between sexes further (p=0.015, t-test). Box-and-whisker plot shows median values, first and third quartiles (box), lowest and highest data within 1.5 interquartile range (whiskers), and an outlier (dot) in the male group.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Individual data of whole body (top) or head (bottom) movements in males and females (n = 8; see Table 1 and 2 for statistics). Average Euclidian distance every 0.3 s was measured in the video recordings.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The cluster of voxels with significantly lower level of [11C]raclopride binding in males in response to hearing novel conspecific song is shown here at an increased threshold of significance compared to Figure 3 (t ≥ 5, pair-wise t statistic). The image is centered around the peak value of differential binding, dashed light-blue lines show section planes. SPM is laid over magnetic-resonance image of zebra finch brain template. Song system nuclei (shades of blue) were identified using the 3D atlas of the zebra finch brain (Poirier et al., 2008). Area X (X), the striatal component of the song system, did not overlap with the cluster of significant differential binding at this increased threshold, while the peak value appeared in the medial striatum. A frontal (left), a sagittal (middle) and a transverse (right) section are shown.
+
 Surprisingly, females lacked any brain areas with significant change in [11C]raclopride binding in response to song playbacks. Nevertheless, we produced a mask image from the cluster of significant change in males (Figure 3c) and used it as a volume of interest to assess for a possible effect in females. Exploratory analysis of individual changes in females showed no apparent change in striatal [11C]raclopride binding in response to song playbacks (Figure 3e; 0.4 ± 6%, p=0.737, pair-wise t-test). A direct comparison between males and females showed statistically significant differences in striatal [11C]raclopride binding after hearing songs (Figure 3—figure supplement 1; p=0.015, t-test). Note, however, that the difference in the magnitude of change between males and females is, at least partially, driven by the low baseline (silence) [11C]raclopride binding in females (Figure 3e).
 
 The sexually dimorphic striatal response to songs could reflect behavioral or anatomical differences between sexes not related to reinforcement. First, as striatal dopamine neurotransmission correlates with movement (Cousins and Salamone, 1996; Gadagkar et al., 2016; Howe and Dombeck, 2016), we tested if birds tended to move more when hearing song playbacks, in a manner that could explain our results. We analyzed movement in eight males and eight females, in similar conditions to those in our experiments before PET scan: injection of raclopride followed by 20 min of silence or song playbacks. We observed very little of such body movements as flying, hopping and wing-whirring, and also quantitatively tracked the whole body movement (analyzed every 0.3 s for the center of body mass), but there were no significant differences between conditions or sexes (Figure 3—figure supplement 2; Table 1). Tracking head movement, we observed a significant trend to move the head more during song playbacks in most birds (Figure 3—figure supplement 2). However, there was no significant difference between males and females in this respect (Table 2). Therefore, mere movement is unlikely to explain our finding of male-specific dopamine response to songs.
+
+**Table 1.**
+ Results of statistical tests to address the differences in body movement in zebra finch males and females in different conditions: in silence or during conspecific song playbacks.Average Euclidian distance every 0.3 s was measured in the videos for the center of body mass. Bold-face numbers indicate significance levels p≤0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Box's Test of Equality of Covariance Matrices</th>
+      <th>Box's M</th>
+      <th>F</th>
+      <th>df1</th>
+      <th>df2</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>13.334</td>
+      <td>3.756</td>
+      <td>3</td>
+      <td>35280</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Results of statistical tests to address the differences in head movement in zebra finch males and females in different conditions: in silence or during conspecific song playbacks.Average Euclidian distance every 0.3 s was measured in the videos for the position of the beak. Bold-face numbers indicate significance levels p≤0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Box's Test of Equality of Covariance Matrices</th>
+      <th>Box's M</th>
+      <th>F</th>
+      <th>df1</th>
+      <th>df2</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>4.004</td>
+      <td>1.128</td>
+      <td>3</td>
+      <td>35280</td>
+      <td>0.336</td>
+    </tr>
+  </tbody>
+</table>
 
 Another concern is that our results could simply reflect anatomical dimorphism in the basal ganglia pathway of the premotor song system: in particular, Area X, which has high density of dopamine D2 receptors (Kubikova et al., 2010) and receives dopamine during female-directed singing (Sasaki et al., 2006), exists only in zebra finch males. However, Area X was mostly excluded from the cluster of significant change (Figure 3c and Figure 3—figure supplement 3), suggesting that its contribution was small, if any. This is in line with the finding that Area X does not respond to auditory stimulation in awake songbirds, except for error signals during singing (Gadagkar et al., 2016).
 
@@ -60,11 +130,77 @@ We found that males voluntarily received many more air puffs during song playbac
 
 To test whether the song reinforcement we observed in males was dependent on dopamine neurotransmission, we used the D2 receptor antagonist L-741,626 to interfere with D2 receptors. First, we performed a whole brain PET after injections of L-741,626 in order to determine the localization of dopaminergic blockage: as expected, changes in [11C]raclopride binding were observed exclusively in the striatum (Figure 5). We found substantially lower levels of the striatal binding of [11C]raclopride after L-741,626 injection compared to saline (Figure 5—figure supplement 1). Therefore, L-741,626 blocks D2 receptors in the songbird striatum as it does in rodents (Li et al., 2010; Watson et al., 2012) and primates (Achat-Mendes et al., 2010). We then tested song reinforcement in four males with our air-puff apparatus as described before, but after injections of either L-741,626 or saline on alternate sessions. On the days of L-741,626 injections, the animals were still active and approached the video, but stimulation with song playbacks no longer increased the number of air puffs they were willing to receive, while on the alternate days of saline injections, song reinforcement was similar to that of untreated males (Figure 6; see Table 3 for statistics).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig5-v2.jpg)
+
+**Figure 5.:** Statistical parametric map of average [11C]raclopride binding is shown over the zebra finch brain template magnetic-resonance image: after saline injection (top) and L-741,626 injection (bottom) (n = 2 in both conditions; t-values on the insert). Sagittal (left), frontal (middle) and transverse (right) sections are shown; dashed light-blue lines show section planes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Comparison of the individual values of [11C]raclopride binding potential in the striatum in two males after L-741,626 injection and two males after sham injection (saline) demonstrates high levels of L-741,626 binding to D2 receptors in the striatum.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig6-v2.jpg)
 
 **Figure 6.:** Number of air puffs (per hour) birds received during silent and song playback sessions: after saline injection (left); after L-741,626 injection (right) (n = 4; significant p-values are shown for general linear model for repeated measurements; see Table 3 for statistics).
 
+**Table 3.**
+ Results of statistical tests to address the differences in tolerance to air puffs in zebra finch males in different conditions: in silence or during conspecific song playbacks after saline injections, or same after injection of dopamine receptor antagonist L-741,626.Bold-face numbers indicate significance levels p≤0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mauchly's Test of Sphericity</th>
+      <th>Mauchly's W</th>
+      <th>df</th>
+      <th>χ²</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># air puffs/h</td>
+      <td>0.022</td>
+      <td>5</td>
+      <td>6.604</td>
+      <td>0.318</td>
+    </tr>
+  </tbody>
+</table>
+
 How is it that song stimuli are reinforcing in unmated males but not in unmated females? We hypothesized that the non-selective dopamine neurotransmission by unfamiliar songs in males might reflect a social function, but in females, song reinforcement might be exclusively sexually driven, as a part of the mate choice (Riebel, 2009). A possible explanation to those counterintuitive results is that reinforcement could be much more selective in females. We therefore measured song reinforcement in six mated females that were ready to breed (Figure 7—figure supplement 1). We compared song reinforcement in three conditions: video accompanied with the songs of their mates, video accompanied with songs of other, unfamiliar mated males, and video alone. The mated females showed little interest in the videos and minimal motivation to tolerate air puffs in return to hearing non-mate songs. However, they were willing to receive many air puffs in return for hearing their mates’ songs (Figure 7; see Table 4 for statistics).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig7-v2.jpg)
+
+**Figure 7.:** Number of air puffs (per hour) mated females received in exchange for silence, non-mate song (from male mated with another female), and mate’s song (n = 4; significant p-values are shown for general linear model for repeated measurements; see Table 4 for statistics).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/25819/elife-25819-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Each adult female zebra finch was paired for at least several months with a male zebra finch, with whom they produced ≥ 4 clutches of offspring, throughout synchronized breeding cycles (one pair shown, but four females were scanned at a time). In the first week after their offspring hatched, the females were kept together with their mates; then they were moved together with offspring to the nursery room, in the absence of adult males. In a regular cycle, the females were returned to their mates at 30 days after offspring’s hatching. For the experiment, we used females shortly before their return to the mates. The PET procedure was similar to the one shown in Figure 1, with the exception that here the animals were exposed to song recordings of either their mates or unfamiliar males.
+
+**Table 4.**
+ Results of statistical tests to address the differences in tolerance to air puffs in mated zebra finch females in different conditions: in silence and during playbacks of songs of unfamiliar males or their mates.Bold-face numbers indicate significance levels p≤0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mauchly's Test of Sphericity</th>
+      <th>Mauchly's W</th>
+      <th>df</th>
+      <th>χ²</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># air puffs/h</td>
+      <td>0.484</td>
+      <td>2</td>
+      <td>1.453</td>
+      <td>0.484</td>
+    </tr>
+  </tbody>
+</table>
 
 Based on these behavioral results, we tested if the pattern of striatal dopamine neurotransmission would be also mate-selective in these females. Using delayed PET, we compared two sets of stimuli: playbacks of mates’ songs versus playbacks of songs produced by other mated males (in both conditions we played a mix of both female-directed and undirected songs). We detected a cluster of voxels with lower [11C]raclopride binding in response to mate song in a small part of the medial dorsal striatum (Figure 8a,b); however, the difference across those voxels did not survive correction for multiple comparisons (Figure 8b). An exploratory post-hoc analysis of individual differences in the same area found that [11C]raclopride binding was 12 ± 4% lower in response to mate song compared to non-mate song (Figure 8c; p=0.042, paired t-test). These differences suggested a weak trend for higher levels of dopamine transmission in response to mates’ songs in females, but this borderline effect should be treated with caution and validated in future studies.
 
@@ -80,7 +216,7 @@ A simple evolutionary scenario can explain the pattern of sexual dimorphism we o
 
 ## Materials and methods
 
-## Experimental design
+### Experimental design
 
 This study was conducted in accordance with the guidelines of the US National Institutes of Health and was approved by the Institutional Animal Care and Use Committees of Hunter College of the City University of New York (protocol 'OT imaging 10/18–01') and Weill Cornell Medical College (protocol #2010–0003).
 
@@ -94,11 +230,11 @@ Eight of the males, four unmated females and four of the mated females were also
 
 We also tested whether the movement might account for observed differences in striatal dopamine release. If dopamine level changes were due to movement, then movement should differ across treatments: higher in zebra finch males but not females when hearing songs compared to when they are kept in silence. To test if this were the case, we performed an additional control experiment with a new group of 8 males and eight females, where we simulated the song vs. silence pre-PET conditions (including transfer to the same room and raclopride injection), and also video tracked birds’ movement. We monitored for such body movements as flying, hopping and wing-whirring, as well as quantitatively analyzed videos for Euclidian distances every 0.3 s for the center of body mass and beak to continuously track changes in position of body and head, respectively.
 
-## Injections of L-741,626
+### Injections of L-741,626
 
 To detect whether dopamine neurotransmission was necessary for the observed behavioral effects in males, four of them were injected with L-741,626 (Sigma-Aldrich, Saint Louis, MO, USA), a very selective antagonist of D2-receptors, which had been used to study the function of D2-receptors in rodents (Dai et al., 2016; Li et al., 2010; Watson et al., 2012) and primates (Achat-Mendes et al., 2010). We injected L-741,626 intraperitoneally at 3.33 µg/g body weight, within the range described for rodents (Li et al., 2010; Watson et al., 2012), diluted in saline (acetic acid was added to increase solubility at first, then pH was neutralized by caustic soda solution). The L-741,626 injections were administered 30 min before each test with at least 48 hr between treatments, 5 times for each animal, with an intra-individual control of sham injections (saline) of the same volume.
 
-## Simultaneous PET on four zebra finches to measure dopamine released during auditory stimulation in awake unrestrained state
+### Simultaneous PET on four zebra finches to measure dopamine released during auditory stimulation in awake unrestrained state
 
 We established a minimally invasive method for in vivo imaging in zebra finches to measure dopamine neurotransmission in four awake unrestrained animals simultaneously; these measurements may be taken multiple times allowing for intra-subject comparisons (Figure 1). Due to their small size compared to the available imaging volume of our micro-PET, we were able to scan four birds simultaneously. Thus, the experiments were done in tetrads, with two animals in one condition, and two animals in another, and then the conditions were reversed for them in the subsequent PET scan. [11C]raclopride was delivered via intravenous (i.v.; ulnar vein) or intraperitoneal (i.p.) bolus injections that lasted around 1 min or less; radioactivity doses were ~300 µCi or less, in solutions of 150 µl for i.p. injections and 100 µl for i.v. injections with [11C]raclopride mass at ~0.3 nmol/g (body weight). Usage of [11C]raclopride to track changes in dopamine levels has been validated in studies with simultaneous microdialysis (Morris et al., 2008; Normandin et al., 2012).
 
@@ -108,11 +244,11 @@ The animals were let to recover after handling for 1–2 min and then were kept 
 
 We also performed an additional PET scan on four males that had been tested with the D2 receptor antagonist, L-741,626, to confirm that it blocked binding at the receptor. Two of them were injected L-741,626 solution and two others saline 30 min before [11C]raclopride injection. The rest of the procedure was the same.
 
-## Radiochemistry
+### Radiochemistry
 
 The radiotracer [11C]raclopride was synthesized on-site immediately before each experiment at the Citigroup Biomedical Imaging Center, Weill Cornell Medical College, following standard procedures (Broft et al., 2015; Mawlawi et al., 2001). The average specific activity of [11C]raclopride was 6046 mCi/μmol. [11C]raclopride was isolated and formulated into an isotonic solution containing 5–7% ethanol, with concentration of 0.13 µg/mL. Although alcohol could potentially influence behavioral state of the animal, the amount injected in our experiments (~0.3 g/kg) was substantially lower than that causing an intoxicated stupor in a previous study (2–3 g/kg) (Olson et al., 2014) and importantly was similar across all experimental conditions.
 
-## PET image preparation and statistical analysis
+### PET image preparation and statistical analysis
 
 PET imaging data were first processed in PMOD software (http://www.pmod.com). As four animals were scanned simultaneously at each experiment, raw images were separated into four zones around each brain and cropped accordingly in PMOD software. PET data were summed across 6 evenly distributed time points for each scan. Further, PET data were processed and analyzed in SPM12 software (http://www.fil.ion.ucl.ac.uk/spm).
 

@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Our knowledge about the repertoire of ribosomal RNA modifications and the enzymes responsible for installing them is constantly expanding. Previously, we reported that NSUN-5 is responsible for depositing m 5 C at position C2381 on the 26S rRNA in Caenorhabditis elegans . Here, we show that NSUN-1 is writing the second known 26S rRNA m 5 C at position C2982. Depletion of nsun-1 or nsun-5 improved thermotolerance and slightly increased locomotion at midlife, however, only soma-specific knockdown of nsun-1 extended lifespan. Moreover, soma-specific knockdown of nsun-1 reduced body size and impaired fecundity, suggesting non-cell-autonomous effects. While ribosome biogenesis and global protein synthesis were unaffected by nsun-1 depletion, translation of specific mRNAs was remodeled leading to reduced production of collagens, loss of structural integrity of the cuticle, and impaired barrier function. We conclude that loss of a single enzyme required for rRNA methylation has profound and highly specific effects on organismal development and physiology.
+Our knowledge about the repertoire of ribosomal RNA modifications and the enzymes responsible for installing them is constantly expanding. Previously, we reported that NSUN-5 is responsible for depositing m5C at position C2381 on the 26S rRNA in Caenorhabditis elegans. Here, we show that NSUN-1 is writing the second known 26S rRNA m5C at position C2982. Depletion of nsun-1 or nsun-5 improved thermotolerance and slightly increased locomotion at midlife, however, only soma-specific knockdown of nsun-1 extended lifespan. Moreover, soma-specific knockdown of nsun-1 reduced body size and impaired fecundity, suggesting non-cell-autonomous effects. While ribosome biogenesis and global protein synthesis were unaffected by nsun-1 depletion, translation of specific mRNAs was remodeled leading to reduced production of collagens, loss of structural integrity of the cuticle, and impaired barrier function. We conclude that loss of a single enzyme required for rRNA methylation has profound and highly specific effects on organismal development and physiology.
 
 ## Introduction
 
@@ -41,11 +41,27 @@ Here, we report that NSUN-1 is responsible for writing the second C. elegans 26S
 
 ## Results
 
-## NSUN-1 is responsible for writing m5C at position C2982 on C. elegans 26S rRNA
+### NSUN-1 is responsible for writing m5C at position C2982 on C. elegans 26S rRNA
 
 Previously, we showed that an m5C modification is introduced at position C2381 on the 26S rRNA of C. elegans large ribosomal subunit by NSUN-5 (Adamla et al., 2019; Schosserer et al., 2015), which is required to modulate animal lifespan and stress resistance (Schosserer et al., 2015). On this basis, we were interested to learn if other related rRNA methyltransferases in C. elegans might display similar properties.
 
 Therefore, we investigated the RNA substrate of NSUN-1 (also formerly known as NOL-1, NOL-2, or W07E6.1) and its potential roles in worm development and physiology. NSUN-1 is a member of the NOP2/Sun RNA-methyltransferase family. Since there are only two known m5C residues on worm 26S rRNA (Sharma and Lafontaine, 2015; Trixl and Lusser, 2019), one of them at C2381, being installed by NSUN-5, we speculated that NSUN-1 might be required for introducing the second m5C residue at position C2982. Notably, both 26S m5C sites are localized close to the decoding site and peptidyl transferase center of the ribosome, and are highly conserved between yeast, worm and human (Figure 1A,B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig1-v2.jpg)
+
+**Figure 1.:** (A) Location of the two eukaryotic large ribosomal subunit m5C residues within the 3D structure of the human ribosome. For reference, important functional sites are indicated (DCS = decoding site, PTC = peptidyl transferase center). In C. elegans, NSUN-1 is responsible for m5C2982 (this work) while NSUN-5 installs m5C2381 (Schosserer et al., 2015). (B) Regions surrounding the sites modified by NSUN-1 and NSUN-5 are evolutionarily conserved between yeast, worms, and humans. The modified cytosine is indicated. (C–E) Purified 26S rRNA was isolated by sucrose gradient centrifugation, digested to single nucleotides and analyzed by quantitative HPLC. nsun-1 knockdown consistently leads to a decrease of m5C levels. (C) N2 worms were analyzed as either: untreated (OP-50), treated with an RNAi control or with a nsun-1 targeting RNAi. (D) NL2099 RNAi-hypersensitive worms were treated with the RNAi control or with the nsun-1 targeting RNAi. (E) N2 strain treated with RNAi control and the nsun-5 deletion strain (JGG1) treated with control RNAi or a nsun-1 targeting RNAi. For quantification of m5C peak area, the peak was normalized to the peak eluting at 16 min (asterisk). The experiment was independently repeated once with similar outcome (see Figure 1—figure supplement 3). (F) Quantification of the enzymatic activity of NSUN-5 using the COBRA assay for N2 worms, subjected to either nsun-5 or nsun-1 RNAi, and the nsun-5 mutant strain JGG1 (nsun-5Δ). Loss of nsun-5 leads to significantly decreased methylation levels at C2381, whereas nsun-1 RNAi does not alter methylation at this site (three independent biological replicates, one-way ANOVA with Dunnett´s post test, α = 0.05, *p<0.05, **p<0.01).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The tm6081 allele represents a deletion in the 3’ UTR of the nsun-1 gene. The 3’ end of the nsun-1 gene, as well as mutant alleles are depicted. The image was generated with the JBrowse genome browser implemented in WormBase (http://www.wormbase.org). (B) The homozygous tm6081 allele is lethal. Single hermaphrodites from the FX30263 strain, which were confirmed by genotyping to be heterozygous for tm6081, were put on separate plates and allowed to self-fertilize (F0). Offspring (F1) were individually genotyped by PCR. Ten F1 offspring from three F0 animals are shown as example. The upper band (482 bp) represents the wildtype allele and the lower band the tm6081 mutant allele (197 bp). Only wildtype and heterozygous F1 animals were detected. (C) Quantification of nsun-1 mRNA levels using RT-qPCR in synchronized young adult FX30263 nematodes, which were heterozygous for tm6081. nsun-1 mRNA levels were decreased by approximately 40%. act-1 was used for normalization. Error bars represent standard deviation of four technical replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Quantification of nsun-1 mRNA levels using RT-qPCR in N2, NL2099, and JGG1 nematode strains. Worms were subjected to control and nsun-1 RNAi. nsun-1 mRNA levels were decreased by approximately80% in N2 and JGG1, as well as by 90% in the RNAi-hypersensitive strain NL2099. act-1 was used for normalization. Error bars represent standard deviation of four technical replicates. This experiment was repeated independently with similar outcome.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Purified 26S rRNA was isolated by sucrose gradient centrifugation, digested to single nucleotides, and analyzed by quantitative HPLC. nsun-1 knockdown consistently leads to a decrease of m5C levels. N2 worms were analyzed as either: untreated (OP-50), treated with an RNAi control or with a nsun-1 targeting RNAi. NL2099 RNAi-hypersensitive worms were treated with the RNAi control or with the nsun-1 targeting RNAi. N2 strain treated with RNAi control and the nsun-5 deletion strain (JGG1) treated with control RNAi or a nsun-1 targeting RNAi. For quantification of m5C peak area, the peak was normalized to the peak eluting at 16 min. Two independent biological experiments, indicated by different shades of grey, are shown.
 
 In order to test if NSUN-1 is involved in large ribosomal subunit m5C methylation, we first sought to identify a suitable model to study loss of NSUN-1. We selected the tm6081 allele which has a deletion in the 3’ untranslated region (3’ UTR) of nsun-1 (Figure 1—figure supplement 1A). After letting single hermaphrodites, which were heterozygous for tm6081 self-fertilize, we were unable to detect any viable offspring carrying the homozygous mutation (Figure 1—figure supplement 1B). This indicates that tm6081 is a recessive lethal mutation, which agrees with previous reports about lethality of nsun-1 depletion by egg-onset RNAi (Kamath et al., 2003; Piano et al., 2002). Since nsun-1 mRNA levels were only decreased by 40% in animals heterozygous for tm6081 (Figure 1—figure supplement 1C), we decided to use RNAi instead with a chance to achieve higher knock-down efficiencies. As it will become evident below, there are several other advantages of using RNAi in C. elegans. One is that it allows to deplete a factor of interest at a particular life stage only (e.g. in adult worms), another is that it allows performing tissue-specific knockdown of gene expression.
 
@@ -61,21 +77,195 @@ To further prove that NSUN-1 is not involved in C2381 modification, methylation 
 
 In conclusion, NSUN-1 and NSUN-5 are each responsible for installing one m5C onto the worm 26S rRNA, with NSUN-1 being responsible for position C2982 and NSUN-5 for position C2381 under the bona fide assumption that indeed only two m5C positions are present as described (Sharma and Lafontaine, 2015).
 
-## The soma-specific depletion of nsun-1 extends lifespan
+### The soma-specific depletion of nsun-1 extends lifespan
 
 Next, we investigated if knockdown of nsun-1 modulates healthy lifespan in a similar fashion as that described for nsun-5 (Schosserer et al., 2015). In order to achieve this aim, we depleted nsun-1 by RNAi in N2 wild-type animals starting from day 0 of adulthood and, quite surprisingly, we did not observe any extension of mean or maximum lifespan (Figure 2A, Table 1). Next, we evaluated the stress resistance of adult worms upon nsun-1 or nsun-5 depletion, as an increased health at an advanced age often improves resilience to adverse events (Lithgow et al., 1994). Indeed, depletion of either nsun-1 or nsun-5 increased resistance to heat stress compared to the RNAi control (Figure 2B). Furthermore, we tracked the movement of animals treated with either an empty vector control or two constructs expressing RNAi directed against nsun-1 or nsun-5 in a time course analysis, starting at day 1 of adulthood up to day 16. Interestingly, we observed increased average speed at day 8 of adulthood in both nsun-1 (+47.8%, p=0.009) and nsun-5 (+34.7%, p=0.073) depleted animals compared to the control, as well as at day 12 (nsun-1 RNAi: +10.2%, p=0.539; nsun-5 RNAi: +73.5%, p=0.008 compared to the control) (Figure 2C). Other timepoints remained unaffected. Thus, while nsun-1 knockdown does not extend lifespan, it improves two healthspan parameters, namely thermotolerance and midlife locomotion (Bansal et al., 2015; Rollins et al., 2017).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig2-v2.jpg)
 
-**Figure 2.:** nsun-1 extends lifespan.(A) Nsun-1 whole-body adult-onset RNAi (N2 wildtype strain) does not affect lifespan. Three independent biological experiments were performed. One representative replicate it shown. n = 75 animals per condition, log-rank test, not significant. (B) N2 wildtype animals treated with either nsun-1 or nsun-5 RNAi and subjected to heat stress (35°C) show increased survival compared to the RNAi control. Nine pooled biological replicates are shown. Pooled n ≥ 100 animals per condition, log-rank, p<0.001. (C) Average speed [µm/s] of N2 wildtype worms as indicator of the health status was measured at day 1, 4, 8, 12, and 16 of adulthood. Movies of animals treated with either RNAi control, nsun-1 or nsun-5 RNAi were recorded. One representative experiment is shown. Three biological replicates were performed with similar outcome. n ≥ 20 animals per condition at day 1. The black line indicates median. Statistical significance at each timepoint was determined using multiple comparison adjusted t-tests by the Holm-Sidak method. α = 0.05, **p<0.01. (D–E) Lifespan analysis of germline- (NL2098) and soma-specific RNAi strains (NL2550). Worms were treated with either RNAi control or nsun-1 RNAi (adult-onset). Only soma-specific knockdown of nsun-1 results in increased lifespan (E) while germline-specific knockdown does not (D). Two independent biological experiments were performed. One representative replicate it shown. n(NL2098)=90 animals per condition and replicate, log-rank, not significant, n(NL2550)=90 animals per condition and replicate, log-rank, (p<0.01). A summary table of the individual replicates of lifespan experiments is provided as Table 1.Figure 2—source data 1.ZIP-compressed archive containing xlsx-files for each individual lifespan experiment. Column A: plate number for lifespan (technical replicates) and biological replicate number for thermotolerance, column B: animal number. The rest of the columns are paired and contain lifespan data for the individual RNAi treatments, whereby the first column of each pair indicates the timepoint (days for lifespan, hours for thermotolerance) and the second column the scored event (either DEAD or CENSORED, for scoring criteria see Materials and Methods). Thermotolerance and motility raw data are also provided as individual xlsx-files.
+**Figure 2.:** (A) Nsun-1 whole-body adult-onset RNAi (N2 wildtype strain) does not affect lifespan. Three independent biological experiments were performed. One representative replicate it shown. n = 75 animals per condition, log-rank test, not significant. (B) N2 wildtype animals treated with either nsun-1 or nsun-5 RNAi and subjected to heat stress (35°C) show increased survival compared to the RNAi control. Nine pooled biological replicates are shown. Pooled n ≥ 100 animals per condition, log-rank, p<0.001. (C) Average speed [µm/s] of N2 wildtype worms as indicator of the health status was measured at day 1, 4, 8, 12, and 16 of adulthood. Movies of animals treated with either RNAi control, nsun-1 or nsun-5 RNAi were recorded. One representative experiment is shown. Three biological replicates were performed with similar outcome. n ≥ 20 animals per condition at day 1. The black line indicates median. Statistical significance at each timepoint was determined using multiple comparison adjusted t-tests by the Holm-Sidak method. α = 0.05, **p<0.01. (D–E) Lifespan analysis of germline- (NL2098) and soma-specific RNAi strains (NL2550). Worms were treated with either RNAi control or nsun-1 RNAi (adult-onset). Only soma-specific knockdown of nsun-1 results in increased lifespan (E) while germline-specific knockdown does not (D). Two independent biological experiments were performed. One representative replicate it shown. n(NL2098)=90 animals per condition and replicate, log-rank, not significant, n(NL2550)=90 animals per condition and replicate, log-rank, (p<0.01). A summary table of the individual replicates of lifespan experiments is provided as Table 1.
+
+**Table 1.**
+ Summary of individual lifespan and thermotolerance experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>strain</th>
+      <th>treatment</th>
+      <th>replicate</th>
+      <th>mean survival</th>
+      <th>s.d.</th>
+      <th>dead/total</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N2</td>
+      <td>RNAi control</td>
+      <td>1</td>
+      <td>20.8 days</td>
+      <td>±0.9</td>
+      <td>47/75</td>
+      <td rowspan="2">0.579</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>nsun-1 RNAi</td>
+      <td>1</td>
+      <td>20.7 days</td>
+      <td>±0.8</td>
+      <td>52/75</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>RNAi control</td>
+      <td>2</td>
+      <td>18.9 days</td>
+      <td>±0.6</td>
+      <td>75/90</td>
+      <td rowspan="2">0.694</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>nsun-1 RNAi</td>
+      <td>2</td>
+      <td>18.9 days</td>
+      <td>±1.1</td>
+      <td>74/90</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>RNAi control</td>
+      <td>3</td>
+      <td>20.7 days</td>
+      <td>±0.3</td>
+      <td>87/90</td>
+      <td rowspan="2">0.474</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>nsun-1 RNAi</td>
+      <td>3</td>
+      <td>21.0 days</td>
+      <td>±0.4</td>
+      <td>82/90</td>
+    </tr>
+    <tr>
+      <td>NL2550</td>
+      <td>RNAi control</td>
+      <td>1</td>
+      <td>16.5 days</td>
+      <td>±0.4</td>
+      <td>66/90</td>
+      <td rowspan="2">0.009</td>
+    </tr>
+    <tr>
+      <td>NL2550</td>
+      <td>nsun-1 RNAi</td>
+      <td>1</td>
+      <td>18.0 days</td>
+      <td>±0.4</td>
+      <td>68/90</td>
+    </tr>
+    <tr>
+      <td>NL2550</td>
+      <td>RNAi control</td>
+      <td>2</td>
+      <td>18.6 days</td>
+      <td>±0.3</td>
+      <td>83/90</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NL2550</td>
+      <td>nsun-1 RNAi</td>
+      <td>2</td>
+      <td>20.2 days</td>
+      <td>±0.4</td>
+      <td>75/90</td>
+    </tr>
+    <tr>
+      <td>NL2098</td>
+      <td>RNAi control</td>
+      <td>1</td>
+      <td>16.7 days</td>
+      <td>±0.3</td>
+      <td>80/90</td>
+      <td rowspan="2">0.289</td>
+    </tr>
+    <tr>
+      <td>NL2098</td>
+      <td>nsun-1 RNAi</td>
+      <td>1</td>
+      <td>17.0 days</td>
+      <td>±0.3</td>
+      <td>89/90</td>
+    </tr>
+    <tr>
+      <td>NL2098</td>
+      <td>RNAi control</td>
+      <td>2</td>
+      <td>19.2 days</td>
+      <td>±0.3</td>
+      <td>87/90</td>
+      <td rowspan="2">0.068</td>
+    </tr>
+    <tr>
+      <td>NL2098</td>
+      <td>nsun-1 RNAi</td>
+      <td>2</td>
+      <td>18.4 days</td>
+      <td>±0.3</td>
+      <td>88/90</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>heat/RNAi control</td>
+      <td>pool</td>
+      <td>8.6 hr</td>
+      <td>±0.1</td>
+      <td>117/117</td>
+      <td>control</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>heat/nsun-1 RNAi</td>
+      <td>pool</td>
+      <td>12.5 hr</td>
+      <td>±0.7</td>
+      <td>97/119</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>heat/nsun-5 RNAi</td>
+      <td>pool</td>
+      <td>9.7 hr</td>
+      <td>±0.3</td>
+      <td>106/109</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
 
 Intrigued that depletion of nsun-1 did not extend the lifespan of C. elegans in a similar fashion as that reported for nsun-5 when whole adult animals were treated with RNAi, we reasoned that performing tissue-specific depletion of nsun-1 might help us to further elucidate a possible effect on lifespan. We focused on the comparison of the germline and somatic tissues, because somatic maintenance and aging are evolutionarily tightly connected (Kirkwood and Holliday, 1979), and because signals from the germline modulate C. elegans lifespan (Hsin and Kenyon, 1999). In addition, only loss of soma- but not germline-specific eIF4E isoforms, which are central regulators of cap-dependent translation, extend nematode lifespan (Syntichaki et al., 2007). To test if nsun-1 has similar tissue-specificity, we made use of worm strains sensitive to RNAi only in either the germline or somatic tissues. This is achieved, on the one hand by mutation of rrf-1, which is required for amplification of the dsRNA signal in the somatic tissues (Kumsta and Hansen, 2012; Sijen et al., 2001), and, on the other hand by functional loss of the argonaute protein ppw-1 rendering the germline resistant to RNAi (Tijsterman et al., 2002). Interestingly, germline-specific nsun-1 RNAi had no effect on animal lifespan (Figure 2D, Table 1), but depletion of nsun-1 in somatic tissues reproducibly increased mean lifespan by ~10% (Figure 2E, Table 1).
 
 In conclusion, both NSUN-1 and NSUN-5 m5C rRNA methyltransferases mildly affect thermotolerance and mobility of wild-type nematodes at midlife. Whole-animal nsun-5 depletion expands mean lifespan by 17% (Schosserer et al., 2015), and in contrast to this, a 10% lifespan extension is only detected after depletion of nsun-1 specifically in the somatic tissues.
 
-## The somatic tissue-specific depletion of nsun-1 affects body size, fecundity, and gonad maturation
+### The somatic tissue-specific depletion of nsun-1 affects body size, fecundity, and gonad maturation
 
 The ‘disposable soma theory’ of aging posits that long-lived species exhibit impaired fecundity and reduced number of progenies. The proposed underlying cause is that energy is invested in the maintenance of somatic tissues rather than in rapid reproduction (Kirkwood and Holliday, 1979). In keeping with this theory, we expected that the absence of nsun-1 in somatic tissues, which increased longevity, may reduce fecundity. Therefore, we measured the brood size upon nsun-1 and nsun-5 depletion by RNAi. After reaching adulthood but prior to the egg-laying stage, worms were transferred to individual wells of cell culture plates containing NGM-agar and fed with bacteria expressing the specific RNAi or, as control, the empty vector. Egg production was impaired upon nsun-1 knockdown (reduced by 42%), but this was not the case upon nsun-5 knockdown (reduced by 2%) (Figure 3A). Egg production ceased rapidly after day one in all conditions (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig3-v2.jpg)
+
+**Figure 3.:** (A) Brood size analysis of adult-onset RNAi exposed animals at day 0–3 of adulthood (=day 3–6 from egg). Eggs of individual worms were counted and the total number of eggs per worm is shown. Knockdown of nsun-1 but not nsun-5 induced a significant reduction in brood size compared to control RNAi (three independent experiments, n = 5 per condition and per experiment, one-way ANOVA with Dunnett´s post test, α = 0.05, **p<0.01). Error bars indicate standard deviation. (B) RT-qPCR analysis of wild-type animals at different stages of development (eggs, L1/L2 larvae, L3 larvae, L4 larvae, and young adults). tba-1 was used for normalization and expression is shown relative to eggs. Error bars represent standard deviation of three biological replicates, one-sample t-test against expected value of 1 with multiple comparison correction by Holm's method did not reveal significant differences. (C) Representative DIC images of larval-onset RNAi exposed nematodes at day 1–2 of adulthood show that only nsun-1 but not nsun-5 RNAi decreased the body length and altered general morphology compared to the RNAi control. Scale bar, 100 µm. (D) Quantification of mean body length of 1–2 day old larval-onset RNAi exposed adult worms. The body size of nsun-1 RNAi-treated worms was significantly reduced compared to the RNAi control and nsun-5 RNAi. The experiment was independently performed two times and one representative replicate is shown. n(RNAi control)=18, n(nsun-1 RNAi)=25, n(nsun-5 RNAi)=19, one-way ANOVA with Dunnett’s post, α = 0.05, ***p<0.001. Error bars represent standard deviation. (E) Larval-onset nsun-1 RNAi-treated adults at day 1–2 of adulthood had reduced body size and lacked embryos (arrow). Scale bar, 50 µm. (F) Loss of nsun-1 did not impair expression of the adult-specific marker COL-19::GFP. The TP12 strain was used and young adult animals (day 1–2 of adulthood) treated with either larval-onset control RNAi, nsun-1 RNAi or nsun-5 RNAi were imaged in DIC and fluorescent mode. L4 control RNAi worms, which did not express GFP specifically in the hypodermis, were used as negative control. Scale bar, 200 µm. (G–H) Soma- but not germline-specific nsun-1 larval-onset RNAi phenocopied the mean body length defect upon whole-body nsun-1 knockdown. The germline-specific NL2098 strain (G) and the soma-specific NL2550 (H) strain were used and measured on three consecutive days after reaching adulthood. n ≥ 21 for each day and condition. Two independent experiments were performed and one representative replicate is shown. Two-tailed t-test, ***p<0.001. Error bars represent standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Brood size analysis of adult-onset RNAi exposed animals. Eggs of individual worms were counted every day until day 4 of adulthood. Knockdown of nsun-1, but not nsun-5, inflicted a reduced brood size compared to control RNAi. Three pooled independent experiments are shown. n = 5 per condition and per experiment. Error bars indicate standard deviation. (B) RT-qPCR analysis of developing wild-type animals (eggs, L1/L2 larvae, L3 larvae, L4 larvae and young adults) revealed enhanced mRNA expression of nsun-2 and nsun-4 during development. Three independent biological experiments are shown. tba-1 was used for normalization. Error bars represent standard deviation. (C) Body size of 1–2 day old adult worms of a germline-specific RNAi strain (DCL569) was measured. The body size of nsun-1 and nsun-5 RNAi-treated animals was not changed compared to RNAi control. n(all conditions)=10, one-way ANOVA with Dunnett’s post, α = 0.05, not significant. Error bars represent standard deviation.
 
 Thus far, all the experiments were performed on worms subjected to adult-onset nsun-1 knockdown, as animals depleted of nsun-1 during development were smaller and were infertile upon adulthood. To follow up on these observations, we measured mRNA expression levels of both m5C rRNA methyltransferases at different developmental stages including eggs, L1/L2 larvae, L3 larvae, L4 larvae, and young adults. RT-qPCR indicated that both nsun-1 and nsun-5 mRNA levels constantly increase during development (Figure 3B). The same observation applied to mRNA levels of nsun-2 and nsun-4 (Figure 3—figure supplement 1B), indicating that all four members of the NSUN-protein family might play important roles during development.
 
@@ -87,17 +277,37 @@ Since knockdown of nsun-1 extended lifespan only when it was applied to somatic 
 
 In conclusion, nsun-1 but not nsun-5 depletion impairs body size and morphology of the gonad and leads to a significant reduction of brood size. Furthermore, these phenotypes are also observed when nsun-1 is specifically knocked-down in somatic tissues, but not when depleted in the germline only.
 
-## NSUN-1 is required for the transition of meiotic germ cells to mature oocytes
+### NSUN-1 is required for the transition of meiotic germ cells to mature oocytes
 
 To further investigate the mechanisms underlying impaired fecundity upon nsun-1 knockdown, we analyzed the morphology of the gonad in nsun-1 depleted animals in more detail. The germline of adult hermaphrodites resides within the two U-shaped arms of the gonad, which contains germ cells at various stages of differentiation (Figure 4A). The gonad is sequentially developing from the proliferative germ cells near the distal tip cell, through the meiotic zone into the loop region, finally culminating in fully-formed oocytes in the proximal gonad (Pazdernik and Schedl, 2013). The limiting factor for fecundity in self-fertilizing hermaphrodites is sperm produced in the spermatheca (Hodgkin and Barnes, 1991).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of one gonad arm in C. elegans. Germ cell replication starts in the distal mitotic zone. After passing through the meiotic zone, oocytes further mature and are fertilized by sperm produced in the spermatheca. In panels A–E, an asterisk indicates the gonadal region impaired in nsun-1 RNAi exposed animals. This area corresponds to the transition between the meiotic zone and oocyte maturation. (B) Microscopic image of one gonad arm of young adult worms subjected to either control or nsun-1 RNAi. Worms were imaged in DIC mode and nuclei of fixed animals were stained with DAPI. Scale bar, 40 µm. (C) Confocal imaging of the gonad-specific GFP::RHO-1 expressing SA115 strain revealed altered gonad morphology upon nsun-1 knockdown (see also Figure 4—figure supplement 1). Scale bar, 40 µm. Altered gonad morphology was observed in all analyzed animals exposed to nsun-1 RNAi (n > 50). (D–E) Soma- but not germline-specific nsun-1 RNAi phenocopied altered gonad morphology upon whole-body nsun-1 depletion. NL2550 was used for soma- (D) and NL2098 for germline-specific knockdown (E). One gonad arm of one representative 2 day old adult animal was imaged in DIC mode and nuclei were stained with DAPI following fixation. Scale bar, 40 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Gonad specific expression of GFP::RHO-1 (SA115 strain) (A) and NMY-2::GFP (JJ1473 strain) (B) were used to visualize the morphology of the germline after nsun-1 and nsun-5 knockdown. Scale bar represents 40 µm. Oozyte maturation starting from the loop region was impaired in nsun-1 RNAi, but not in nsun-5 RNAi-treated animals. Altered gonad morphology was observed in all analyzed animals exposed to nsun-1 RNAi (n > 50).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Soma- but not germline-specific nsun-1 RNAi phenocopies altered gonad morphology of whole-body nsun-1 depletion. NL2550 was used for soma- (A) and NL2098 for germline-specific knockdown (B). The gonad of 1-, 2-, and 3-day-old animals was imaged in DIC mode and nuclei were stained with DAPI following fixation. In the soma-specific strain maturating oocytes and embryos were observed only in RNAi control but not in nsun-1 RNAi subjected worms. The germline-specific strain remained entirely unaffected. Scale bar represents 40 µm.
 
 Upon visualizing the germline cell nuclei with DAPI-staining, no oocytes were observed in worms after knockdown of nsun-1 in contrast to RNAi control treated animals (Figure 4B). The mitotic zone at the distal end of the gonad appeared normal in nsun-1 depleted animals, whereas oocyte production starting at the pachytene zone was hampered. Analysis of GFP::RHO-1 and NMY-2::GFP expressing worm strains, which specifically express GFP in the germline, confirmed our observations (Figure 4C, Figure 4—figure supplement 1). The gonads of control and nsun-5 RNAi-treated animals appeared normal, clearly depicting the different stages of in-utero embryo development, whereas the germline of nsun-1 RNAi-treated animals displayed a strikingly altered morphology. Importantly, this phenotype showed 100% penetrance in worms exposed to nsun-1 RNAi.
 
 Since other phenotypes observed upon nsun-1 depletion were detected in soma- but absent from germline-specific RNAi-treated strains, we hypothesized that the somatic part of the gonad might specifically require NSUN-1 for normal oocyte production. Indeed, soma-specific depletion of nsun-1 phenocopied the distorted gonad morphology of wild-type animals exposed to nsun-1 RNAi (Figure 4D). Remarkably, upon germline-specific knockdown of nsun-1, the gonad appeared completely unaffected (Figure 4E; Figure 4—figure supplement 2).
 
-## NSUN-1 is not essential for pre-rRNA processing and global protein synthesis
+### NSUN-1 is not essential for pre-rRNA processing and global protein synthesis
 
 Since the only known function of NSUN-1 and NSUN-5 is m5C methylation of rRNA, we reasoned that methylation-induced alterations of ribosome biogenesis and function might explain the observed phenotypes. Therefore, we tested if the presence of NSUN-1 or NSUN-5 is required for ribosomal subunit production and pre-rRNA processing. To this end, total RNA was extracted from worms treated with nsun-1 RNAi, separated by denaturing agarose gel electrophoresis and processed for northern blot analysis (Figure 5A,B). Again, two reference worm strains were used (N2 and NL2099). Upon nsun-1 knockdown, we observed a mild accumulation of the primary pre-rRNA transcript and of its immediate derivative, collectively referred to as species ‘a’ (Figure 5A; Bar et al., 2016; Saijou et al., 2004), as well as a mild accumulation of the pre-rRNAs ‘b’ and ‘c’’ (Figure 5A,B, see lane 1 and 3 as well as 5 and 6). Again, these findings were observed in both worm backgrounds tested, N2 and NL2099.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematics of pre-rRNA processing intermediates in C. elegans and probes (LD2648 and LD2649) used in pre-rRNA processing analysis (see panel B). (B) Pre-rRNA processing analysis. Total RNA extracted from the indicated strains were separated on denaturing agarose gels and processed for northern blotting. The probes (LD2648 and LD2649) used to detect the pre-rRNA intermediates a, b, c, c´, and d are indicated. (C) Steady-state levels of mature rRNAs (18S and 26S) analyzed by ethidium bromide staining and quantified by densitometry. The 26S/18S ratio is indicated. (D) Total protein synthesis of N2 animals treated with RNAi control, nsun-1 or nsun-5 RNAi. RNAi control treated worms at either 4°C or without puromycin exposure were used as negative controls. Protein synthesis was measured by puromycin exposure for 3 hr and western blot using a puromycin-specific antibody. The experiment was performed in three independent replicates. One representative replicate is shown. Histone H3 was used as loading control. (E) Quantification of western blots in D (three biological replicates, one-sample t-test against an expected value of 1, α = 0.05, not significant). (F–G) Polysome analysis indicating that global translation is not affected by nsun-1 depletion. Free small subunit (40S), large subunit (60S), monosome (80S) and polysome fractions were detected by UV254 monitoring. Representative profiles are shown. (G) Quantification of 60S, 80S, and polysome fractions of three independent experiments reveals no changes between nsun-1 knockdown and RNAi control.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** In the absence of nsun-5 (JGG1 strain, lane 3, and 4) the 3´-extended forms of 5.8S and short RNA degradation products accumulated. Upon co-depletion of nsun-1 (lane 4), such an accumulation is partially suppressed. When comparing the 5.8S and 5S, as well as tRNAs, no change can be observed between control and nsun-1 RNAi-treated animals in the three different worm strains (N2, JGG1, and NL2099).
 
 For comparison, we also analyzed rRNA processing in nsun-5 deletion worms (JGG1 strain) in presence and absence of NSUN-1 (nsun-1 RNAi in JGG1). In both cases, we noted an important reduction in the overall production of ribosomal RNAs (Figure 5B,C), with an apparent increase of rRNA degradation (seen as an increase in accumulation of metastable RNA fragments, in particular underneath the 18S rRNA). Furthermore, we observed that NSUN-1 is not required for mature rRNA production as shown by the unaffected levels of mature 18S and 26S rRNAs (Figure 5C). This was confirmed by determining the 26S/18S ratio, which was 1.0 as expected since both rRNAs are produced from a single polycistronic transcript (Figure 5C). The levels of the other two mature rRNAs (5S and 5.8S) were also unaffected (Figure 5—figure supplement 1). This behavior was shown in both worm backgrounds, N2 and NL2099, used. The overall decrease in mature ribosome production observed in nsun-5 deletion worms did not affect the ratio of mature ribosomal subunits (26S/18S ratio of 1.0) (Figure 5C). In agreement with the reduced amounts of 18S and 26S rRNA observed in nsun-5 deletion worms, total amounts of all precursors detected were reduced (Figure 5B). Analysis of low molecular weight RNAs by acrylamide gel electrophoresis revealed the absence of NSUN-5 to severely inhibit processing in the internal transcribed spacer 2 (ITS2), which separates the 5.8S and 26S rRNAs on large precursors. This was illustrated by the accumulation of 3’-extended forms of 5.8S, and of short RNA degradation products (Figure 5—figure supplement 1, see lanes 3 and 4). Depletion of nsun-1 partially suppressed the effect of nsun-5 deletion: the overall production of mature rRNA and, in particular, the amount of mature 26S rRNA was increased (ratio of 1.2) (Figure 5C). Consistently, the accumulation of 3’-extended forms of 5.8S and of short RNA degradation products was reduced (Figure 5—figure supplement 1).
 
@@ -105,23 +315,35 @@ In order to test if mature ribosomes of animals lacking any of the two m5C rRNA 
 
 In conclusion, NSUN-1 is neither required for pre-rRNA processing nor for global translation. On the contrary, the amounts of ribosomal subunits were reduced in the absence of NSUN-5. The ribosomal biogenesis alterations observed upon nsun-5 depletion result from a combination of processing inhibitions in ITS2 and increased rRNA intermediates turnover. However, global translation was not detectably affected.
 
-## Loss of nsun-1 promotes the translation of a distinct subset of mRNAs
+### Loss of nsun-1 promotes the translation of a distinct subset of mRNAs
 
 Since depletion of nsun-1 did not affect global protein synthesis, we hypothesized that loss of 26S rRNA m5C methylation might modulate the translation of specific mRNAs, as was previously observed after Rcm1 (NSUN-5 homolog) depletion in yeast (Schosserer et al., 2015). To test this possibility, we isolated mRNAs contained in the polysomal fraction, systematically sequenced them by RNA-seq and compared their abundance in polysomes between animals subjected to nsun-1 RNAi versus RNAi control. Thereby, we identified 52 protein-coding mRNAs to be differentially associated with polysomes between the two conditions (p-adj: 0.05) Source data 1. From those, we selected the nine most upregulated and ten most repressed mRNAs based on the magnitude of their fold-change variation (Figure 6A,B) and, for comparison, measured their abundance also in polysomes of wild-type (N2) and nsun-5 knockout (JGG-1) animals by RT-qPCR (Figure 6C,D). In contrast to nsun-1 depletion by RNAi, knockout of nsun-5 did not significantly affect the presence in polysomes of any of these mRNAs. This suggests that the pattern of translated mRNAs upon nsun-1 depletion is highly specific and strikingly distinct from that observed upon loss of the other 26S rRNA m5C methyltransferase.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig6-v2.jpg)
 
-**Figure 6.:** nsun-1 modulates the translation of a distinct set of mRNAs which is not altered by nsun-5 knockout.(A, B) mRNA abundance in polysomes of animals subjected to nsun-1 RNAi and RNAi control was analyzed by RNA-seq. The nine most up- (A) and 10 most down-regulated (B) protein-coding mRNAs were selected. All shown comparisons between control and nsun-1 RNAi were statistically significant (adjusted p-value cut-off at 0.05, FDR/Benjamini and Hochberg). (C, D) The same mRNAs were quantified in polysomes of wildtype (N2) and nsun-5 knockout (JGG-1) animals by RT-qPCR. None of the shown comparisons between N2 and JGG1 was statistically significant (adjusted p-value cut-off at 0.05, FDR/Benjamini and Hochberg). Values of each data point were normalized to the mean of the respective control (either RNAi control or N2). Three independent biological replicates were performed. Error bars represent standard deviation.Figure 6—source data 1.nsun-1 RNAi exposure or nsun-5 knockout.xlsx-file with raw data of the respective experiments.
+**Figure 6.:** (A, B) mRNA abundance in polysomes of animals subjected to nsun-1 RNAi and RNAi control was analyzed by RNA-seq. The nine most up- (A) and 10 most down-regulated (B) protein-coding mRNAs were selected. All shown comparisons between control and nsun-1 RNAi were statistically significant (adjusted p-value cut-off at 0.05, FDR/Benjamini and Hochberg). (C, D) The same mRNAs were quantified in polysomes of wildtype (N2) and nsun-5 knockout (JGG-1) animals by RT-qPCR. None of the shown comparisons between N2 and JGG1 was statistically significant (adjusted p-value cut-off at 0.05, FDR/Benjamini and Hochberg). Values of each data point were normalized to the mean of the respective control (either RNAi control or N2). Three independent biological replicates were performed. Error bars represent standard deviation.
 
-## nsun-1 knockdown affects GLD-1 expression in the gonad
+### nsun-1 knockdown affects GLD-1 expression in the gonad
 
 As changes in polysome abundance upon nsun-1 depletion can either be caused by transcriptional regulation or by specific recruitment of the respective mRNAs into translating ribosomes, we analyzed total mRNA levels in cell lysates from which then polysome fractionation was performed. We compared total intracellular mRNAs representing the transcriptome, to those contained in the polysomes representing the most actively transcribed mRNAs (in the following designated as ‘translatome’). We considered only protein-coding mRNAs with a minimum fold-change of 2 between translatome and transcriptome using an adjusted p-value cut-off at 0.05 (Figure 7A; Source data 2). We observed that many more mRNAs had their translation repressed (RNAi control: 599, nsun-1 RNAi: 536) than stimulated (RNAi control: 94, nsun-1 RNAi: 84). Since the composition of 3’ UTRs can affect translation (Tushev et al., 2018), we analyzed GC-content, length, and minimal free folding energy of all coding, promoted, and repressed mRNAs in our dataset (Figure 7B). Interestingly, all three features significantly differed between RNAi control and nsun-1 RNAi in promoted and repressed mRNAs (p<0.05), while they remained unchanged when analyzing all coding mRNAs present in our dataset. These findings suggest that loss of nsun-1 causes the translation of specific subsets of mRNAs based on the composition and length of their 3’ UTRs.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig7-v2.jpg)
+
+**Figure 7.:** (A) Vulcano plots of selectively translated genes after RNAi control and nsun-1 RNAi exposure. Significantly regulated genes (adjusted p<0.05 and fold-change >2) between polysome fraction and total mRNAs are depicted in red, genes with a two-fold up- or down-regulation but an adjusted p-value (FDR/Benjamini and Hochberg) above 0.05 in green, genes with an adjusted p-value below 0.05 but less than two-fold-change in expression in blue, and not significantly regulated genes in grey. The top five up- or down-regulated genes based on their fold-change are indicated. (B) Characteristics of the 3’ UTRs of mRNAs with significantly promoted or repressed polysome enrichment (adjusted p<0.1, fold-change >2). GC-content (in %), length (in bp) and minimum free folding energy [kcal/mol] are shown. Boxes indicate mean ± SD (for GC-content and length) or mean ± SEM (for minimum free folding energy). Wilcoxon rank sum test, *p<0.05, **p<0.01, ***p<0.001. (C) Biological GO-terms enriched among genes with repressed translation (adjusted p<0.1, fold-change >2) upon nsun-1 depletion. Modified Fisher’s exact test, p<0.05. (D) Histological staining (Herovici) to assess collagen deposition. Worms exposed to control RNAi show presence of both young (blue) and mature (pink to brownish-red) collagen whereas animals subjected to nsun-1 RNAi display less collagen deposition. The cytoplasm is counterstained in yellow. Representative images of the region surrounding the gonad are shown. Two independent experiments with a minimum of 10 animals each were performed with similar outcome. Scale bar, 80 µm. (E) Quantification of gonad extrusion upon nsun-1 depletion compared to RNAi control. 8–9 day old adult animals were classified into three categories according to the severance of gonad extrusion (‘no signs’, ‘mild’, ‘severe’, see Figure 7—figure supplement 2A). The experiment was independently performed two times with similar outcome. One representative replicate is shown. n ≥ 50 animals per replicate. Modified Fisher’s exact test on the raw count values, p<0.001. (F) Quantification of cuticle barrier function upon nsun-1 depletion compared to RNAi control. Young adult animals were exposed to Hoechst 33342, which is membrane-permeable but cuticle-impermeable. Stained nuclei were counted exclusively in the tail region to exclude intestinal autofluorescence and classified into four categories accordingly (‘none’, ‘low’, ‘medium’, ‘high’, see Figure 7—figure supplement 2B). Three independent experiments were pooled. n(RNAi control)=51, n(nsun-1 RNAi)=46. Modified Fisher’s exact test on the raw count values, p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Gonad specific expression of GLD-1::GFP::FLAG (JK4626 strain) was analyzed after egg-onset nsun-1 and nsun-5 knockdown. Scale bar represents 50 µm. GLD-1 expression was restricted to a small portion of the loop region in nsun-1 RNAi, but not in nsun-5 RNAi and RNAi control treated animals.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/56205/elife-56205-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Knockdown of nsun-1 increased the rate and severity of gonad extrusion. Mid-aged worms at day 8–9 of adulthood were classified into three categories according to the severance of gonad extrusion (‘no signs’, ‘mild’, ‘severe’, see arrowhead). Representative images of the categories are shown here. (B) Reduced levels of nsun-1 affected barrier function. Young adult animals were incubated in 1 µg/mL Hoechst 33342, which is membrane-permeable but cuticle-impermeable. Permeability was assessed by counting nuclear Hoechst staining in the tail region (see arrowhead). Young adult animals were classified into four categories (‘no staining’, ‘low (<5 stained nuclei)’, ‘medium (5–10 stained nuclei)’, ‘high (>10 stained nuclei)’). Representative images of the different categories are shown here. (C) Analysis of gonad extrusion including the results of nsun-5 RNAi. The experiment was independently performed two times with similar outcome. One representative replicate is shown. n ≥ 50 animals per replicate.
 
 Interestingly, 3’ UTRs of mRNAs translationally repressed by nsun-1 depletion were exclusively and significantly enriched (p<0.001) for several binding motifs of ASD-2, GLD-1 and RSP-3 (Source data 3). All three RNA-binding proteins are known to play essential roles in C. elegans development (Lee and Schedl, 2010; Longman et al., 2000). Although gld-1 mRNA was significantly translationally repressed in both nol-1 RNAi and RNAi control animals by the same magnitude (log2 fold-change: −1.2, p-adj.<0.05, Source data 2), neither asd-2, rsp-3 or gld-1 mRNAs were differentially regulated between nol-1 RNAi and RNAi control in the transcriptome or in the translatome (Source data 1).
 
 GLD-1 is particularly interesting, because levels are highest in the pachytene (also referred to as meiotic zone), where it acts as a translational repressor of mRNAs modulating oogenesis. At the transition zone between the pachytene and the diplotene, GLD-1 levels sharply decrease and previously repressed mRNAs are consequently translated (Lee and Schedl, 2010). Since the gonads of nsun-1 knockdown animals appeared defective precisely at this transition (Figure 4C) and GLD-1 target mRNAs were repressed (Source data 3), we set out to investigate the effects of nsun-1 depletion on the spatial distribution of GLD-1 expression during development. For this aim, we used a GLD-1::GFP reporter strain and exposed larvae to RNAi control and nsun-1 RNAi. Indeed, GLD-1::GFP protein expression was restricted exclusively to a small portion of the loop region in adult nematodes (Figure 7—figure supplement 1). Taken together, these findings suggest that nsun-1 is required for correct gonadal GLD-1 localization during development, which might then directly or indirectly influence the specific translation of mRNAs required for further steps in development based on motifs in their 3’ UTRs.
 
-## mRNAs encoding cuticle collagens are translationally repressed upon nsun-1 knockdown
+### mRNAs encoding cuticle collagens are translationally repressed upon nsun-1 knockdown
 
 To further understand the mechanistic link between differential translation and the phenotypes observed upon nsun-1 knockdown, we performed GO-term enrichment analysis. Among others, GO-terms associated with collagens, structural integrity of the cuticle, and embryo development were significantly enriched amongst the mRNAs which were translationally repressed upon nsun-1 knockdown (Figure 7C, Source data 4).
 
@@ -134,6 +356,67 @@ Taken together, this indicates that NSUN-1 is partially required for translation
 ## Discussion
 
 Although ribosomal RNA modifications are highly conserved in evolution and often present at functionally relevant positions on the ribosomal subunits, only limited information is available on their exact biological functions and, in particular, on their possible involvement in developmental processes or disease etiology (Sharma and Lafontaine, 2015). In this work we have investigated the molecular and physiological roles of two structurally related Sun-domain-containing RNA methyltransferases, NSUN-1, and NSUN-5 in C. elegans. Each enzyme is responsible for writing one specific m5C mark on 26S rRNA. We further describe NSUN-1 as a bona fide m5C rRNA writer enzyme that, if missing, directly entails physiological and developmental consequences. We conclude that, molecularly, loss of NSUN-1 function leads to translational remodeling with profound consequences on cell homeostasis, exemplified by loss of cuticle barrier function, and highly specific developmental defects, including oocyte maturation failure. We further suggest that extrusion of the gonad and loss of cuticle barrier function are directly caused by reduced expression of collagens, while the developmental defects are associated with altered expression and/or localization of several important developmental regulators such as GLD-1. We summarized the observed RNAi phenotypes in different worm strain backgrounds in Table 2.
+
+**Table 2.**
+ Comparison of phenotypes after nsun-1 and nsun-5 depletion, n.d.: not determined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenotype</th>
+      <th>nsun-1 RNAi</th>
+      <th>nsun-5 RNAi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lifespan</td>
+      <td>- Unaffected in whole adult treatment - Unaffected after germline-specific depletion - Increased by ~ 10% after soma-specific depletion</td>
+      <td>- Increased by ~ 17% in whole adult treatment (Schosserer et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Stress resistance (heat) in adults</td>
+      <td>Increased</td>
+      <td>Similarly increased</td>
+    </tr>
+    <tr>
+      <td>Locomotion at midlife</td>
+      <td>Increased</td>
+      <td>Similarly increased</td>
+    </tr>
+    <tr>
+      <td>Brood size (fecundity)</td>
+      <td>Reduced (2-fold)</td>
+      <td>Unaffected</td>
+    </tr>
+    <tr>
+      <td>Adult animal size</td>
+      <td>- Reduced by ~ 20% after soma-specific depletion and whole-body depletion - Unaffected after germline-specific depletion</td>
+      <td>Unaffected</td>
+    </tr>
+    <tr>
+      <td>Gonad morphology</td>
+      <td>- Impaired at meiotic to oocyte transition -Gonad extrusion (possibly caused by loss of cuticle integrity) - Unaffected after germline-specific depletion</td>
+      <td>Unaffected</td>
+    </tr>
+    <tr>
+      <td>Pre-rRNA processing</td>
+      <td>Unaffected</td>
+      <td>Affected</td>
+    </tr>
+    <tr>
+      <td>Collagen expression</td>
+      <td>Affected (translational remodeling)</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>Cuticle permeability</td>
+      <td>increased</td>
+      <td>n.d.</td>
+    </tr>
+  </tbody>
+</table>
 
 According to the ‘disposable soma theory of aging’, a balance between somatic repair and reproduction exists. Depending on its environment, an organism may direct the available energy either to maintenance of the germline thereby ensuring efficient reproduction, or to the homeostasis of somatic cells including the prevention of DNA damage accumulation (Kirkwood and Holliday, 1979). Accordingly, most of the known genetic or nutritional interventions that increase the lifespan of organisms antagonistically reduce growth, fecundity, and body size (Kapahi, 2010; Kenyon et al., 1993). Indeed, reduction of overall protein synthesis by genetic, pharmacological, or dietary interventions was reproducibly shown to extend longevity in different aging model organisms (Chiocchetti et al., 2007; Curran and Ruvkun, 2007; Hansen et al., 2007; Kaeberlein et al., 2005; Masoro, 2005; Pan et al., 2007). These reports clearly established protein synthesis as an important regulator of the aging process at the interface between somatic maintenance and reproduction. Thus, we were surprised to find that despite their ability to modulate aging and to methylate rRNA, neither NSUN-1 nor NSUN-5 were required for global protein synthesis in worms under the conditions tested. In the case of NSUN-5 depletion, we previously found overall translation to be decreased in mammalian cells (Heissenberger et al., 2019), but not in yeast (Schosserer et al., 2015). We reasoned that the higher complexity of mammalian ribosomes and associated factors might render them more vulnerable to alterations of rRNA secondary structure, for example caused by loss of a single base modification, than ribosomes from yeast or nematodes.
 
@@ -149,15 +432,284 @@ Elucidating the precise mechanisms of NSUN1 function is of prime importance, as 
 
 ## Materials and methods
 
-## Worm strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Caenorhabditis elegans)</td>
+      <td>nsun-1</td>
+      <td>WormBase</td>
+      <td>WBGene00021073</td>
+      <td>Also known as: nol-1, nol-2</td>
+    </tr>
+    <tr>
+      <td>gene (C. elegans)</td>
+      <td>nsun-5</td>
+      <td>WormBase</td>
+      <td>WBGene00013151</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans)</td>
+      <td>N2</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00000001</td>
+      <td>Genotype: wildtype</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>FX30263</td>
+      <td>National Bioresource Project, Tokyo, Shohei Mitani</td>
+      <td></td>
+      <td>Genotype: nsun-1(tm6081) II/lin-42(tmls1246) II</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>JGG1</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00022241</td>
+      <td>Genotype: nsun-5(tm3898) II</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>SA115</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WB Strain00033882</td>
+      <td>Genotype: unc-119(ed3) III; tjIs1 [pie-1::GFP::rho-1 + unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>JJ1473</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00022491</td>
+      <td>Genotype: unc-119(ed3) III; zuIs45 [nmy-2p::nmy-2::GFP + unc-119(+)] V</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>TP12</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00034928</td>
+      <td>Genotype: kaIs12[col-19::GFP]</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>DCL569</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00005607</td>
+      <td>Genotype: mkcSi13 [sun-1p::rde-1::sun-1 3'UTR + unc-119(+)] II</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>NL2098</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00028994</td>
+      <td>Genotype: rrf-1(pk1417) I</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>NL2550</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00029002</td>
+      <td>Genotype: ppw-1(pk2505) I</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (C. elegans)</td>
+      <td>JK4626</td>
+      <td>CGC, University of Minnesota</td>
+      <td>RRID:WB-STRAIN:WBStrain00022650</td>
+      <td>Genotype: cku-80(ok861) unc-119(ed3) III; qIs170 [gld-1p::gld-1::GFP::FLAG + unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-puromycin antibody, mouse monoclonal</td>
+      <td>Millipore</td>
+      <td>Cat# MABE343, RRID:AB_2566826</td>
+      <td>Western Blot: (1:10000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Histone H3 antibody, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab1791, RRID:AB_302613</td>
+      <td>Western Blot: (1:4000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Rabbit-IR-Dye 800, donkey polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926–32213, RRID:AB_621848</td>
+      <td>Western Blot: (1:10000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Mouse-IR-Dye 680RD, donkey polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926–68072, RRID:AB_10953628</td>
+      <td>Western Blot: (1:10000)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>RNAi control (empty vector)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_1654</td>
+      <td>Vector: L4440 Host Strain: HT115 (DE3)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>RNAi clone (nsun-1)</td>
+      <td>Source Bioscience</td>
+      <td>Cat# CUUkp3301A161Q</td>
+      <td>Vector: L4440 Host Strain: HT115 (DE3)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>RNAi clone (nsun-5)</td>
+      <td>Schosserer et al., 2015 PMID:25635753</td>
+      <td></td>
+      <td>Vector: L4440 Host Strain: HT115 (DE3)</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>LD2648 (ITS1)</td>
+      <td>Bar et al., 2016 PMID:27457958</td>
+      <td></td>
+      <td>Northern blot probe, sequence: CACTCAACTGACCGTGAAGCCAGTCG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>LD2649 (ITS2)</td>
+      <td>Bar et al., 2016 PMID:27457958</td>
+      <td></td>
+      <td>Northern blot probe, sequence: GGACAAGATCAGTATGCCGAGACGCG</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Direct-zol RNA Miniprep</td>
+      <td>Zymo Research</td>
+      <td>Cat# R2051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>EZ RNA Methylation Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat# R5001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>ExACT Genotyping Kit</td>
+      <td>BioCat</td>
+      <td>Cat# 2212–500-BL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Life Technologies</td>
+      <td>Cat# 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>5x HOT FIREPol EvaGreen qPCR Mix</td>
+      <td>Medibena</td>
+      <td>Cat# SB_08–24-GP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>5-Fluoro-2′-deoxyuridine (FUdR)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# F0503-100MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Invivogen</td>
+      <td>Cat# ant-pr-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>TRIzol LS Reagent</td>
+      <td>Life Technologies</td>
+      <td>Cat# 10296028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Image J</td>
+      <td>Image J</td>
+      <td>Fiji, RRID:SCR_002285</td>
+      <td>Version 2.0.0-rc-65/1.51 w; Java 1.8.0_162 [64-bit]</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>WormLab</td>
+      <td>MBF Bioscience</td>
+      <td></td>
+      <td>Version 4.1.1</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>R</td>
+      <td>The R Foundation for Statistical Computing</td>
+      <td></td>
+      <td>Version 4.0.3 Script for RNA-seq analysis: Source code 1</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>Systat Software Inc</td>
+      <td></td>
+      <td>Version 14</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>Version 9.0.0</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Galaxy</td>
+      <td>Galaxy Project</td>
+      <td>RRID:SCR_006281</td>
+      <td>https://usegalaxy.org/ Version numbers of individual tools are indicated in Materials and methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Worm strains and culture conditions
 
 Worm strains used in this study are listed in the Key Resources Table. Worms were cultured following standard protocols on Escherichia coli OP50-seeded NGM-agar plates at 20°C, unless indicated otherwise (Brenner, 1974).
 
-## Genotyping of tm6081
+### Genotyping of tm6081
 
 Genotyping was performed using the ExACT Genotyping Kit (BioCat). Single nematodes were picked from plates into 5 µL nuclease-free water in PCR tubes, taking care to minimize bacterial contamination. 1 µL Buffer A and 0.5 µL Buffer B were added to each tube and incubated at 75°C for 5 min and for 10 min at 95°C in a thermocycler with heated lid. Then, PCR was performed following the manufacture’s protocol using specific primers spanning the tm6081 allele (Supplementary file 1) in 25 µL reaction volume, 50°C annealing temperature and 35 cycles.
 
-## RNAi knockdown
+### RNAi knockdown
 
 For inactivating nsun-1 and nsun-5, feeding of double-stranded RNA expressed in bacteria was used (Timmons et al., 2001 ). Therefore, the HT115 strain of E. coli, carrying either the respective RNAi construct or the empty vector (L4440) as RNAi control, was cultured overnight in LB medium with ampicillin and tetracyclin at 37°C. Bacteria were harvested by centrifugation, resuspended in LB medium and either 100 µL (60 mm plates) or 400 µL (100 mm plates) were plated on NGM containing 1 mM isopropyl-b-D-thiogalactoside and 25 µg/mL carbenicillin. The plates were incubated at 37°C overnight and used within one week.
 
@@ -165,39 +717,39 @@ Larval-onset RNAi was achieved by bleaching adult animals. Released eggs were tr
 
 In case of adult-onset RNAi, eggs were transferred to plates seeded with RNAi control bacteria. Animals were raised until egg production commenced and subsequently transferred to the respective RNAi bacteria.
 
-## Differential Interference Contrast (DIC) and fluorescence microscopy
+### Differential Interference Contrast (DIC) and fluorescence microscopy
 
 Worms were paralyzed using 1 M sodium azide solution and mounted on 2% agar pads. Images were acquired on a Leica DMI6000B microscope with a 10x dry objective (NA 0.3), a 20x dry objective (NA 0.7), or a 63x glycerol objective (NA 1.3) in DIC brightfield or fluorescence mode. Confocal microscopy presented in Figure 4C was performed on a Leica TCS SP5 spot scanning confocal microscope equipped with an HCX PL APO CS 40x/0.85 dry objective, HyD detector and Argon-laser. Cropping, insertion of scale bars and brightness and contrast adjustments were done with Image J (version 2.0.0-rc-65/1.51 w; Java 1.8.0_162 [64-bit]).
 
-## Mobility
+### Mobility
 
 Animals were either synchronized by timed egg-lay (two replicates) or by hypochlorite treatment (one replicate) on RNAi control plates. When reaching adulthood, nematodes were transferred to RNAi plates. Every few days at regular intervals, plates were rocked in order to induce movement of animals and videos were subsequently recorded for one minute. Worms were transferred to fresh plates whenever necessary. At day 16 the vast majority of worms completely ceased movement, thus we did not include any later timepoints. Notably, we did not notice any obvious aversion behavior or elevated speed at young age upon nsun-1 or nsun-5 RNAi, which was previously shown to be present upon depletion of other components of the translational machinery (Melo and Ruvkun, 2012). Worm Lab version 4.1.1 was used to track individual animals and calculate the average speed.
 
-## Lifespan assays
+### Lifespan assays
 
 Lifespan measurement was conducted as previously described (Schosserer et al., 2015). For lifespan assays, 90 adults per condition were transferred to plates seeded with the respective RNAi bacteria (control, nsun-1, nsun-5). Wildtype worms were pre-synchronized on NGM plates seeded with UV-killed OP50 bacteria. 50 adult worms were transferred to NGM plates and allowed to lay eggs for 15 hr; then the adult worms were removed. Synchronization by timed egg-lay was performed 72 hr after the pre-synchronization by transferring 350 gravid worms from the pre-synchronization to fresh NGM plates seeded with RNAi control bacteria and allowed to lay eggs for four hours. After 68 hr, 90 young adult worms per condition were placed on fresh NGM plates containing 5 mL NGM, 100 µL bacterial suspension and 50 μg FUdR. This day represents day 0 in the lifespan measurement. Worms were scored as ‘censored’ or ‘dead’ every two to four days. Nematodes were scored as ‘censored’ if they had crawled off the plate, were missing or died due to other causes than aging, such as gonad extrusion. Animals were transferred to fresh plates every 3–7 days depending on the availability of the bacterial food source. Lifespans were performed at 20°C. Kaplan-Meier survival curves were plotted and log-rank statistics were calculated.
 
-## Thermotolerance
+### Thermotolerance
 
 Thermotolerance was assessed as previously described (Vieira et al., 2018). Animals were synchronized by hypochlorite treatment and released eggs were transferred to NGM plates seeded with RNAi control bacteria and kept at 20°C. After 48 hr, L4 animals were picked on RNAi control, nsun-1 or nsun-5 RNAi plates and exposed to RNAi for approximately three days (68 hr). Subsequently, plates were transferred to 35°C and scored every 1–2 hr for survival.
 
-## Body size
+### Body size
 
 Worms were synchronized by hypochlorite treatment and incubated in liquid S-Basal medium overnight. On the following day, eggs/L1 were transferred to RNAi plates (RNAi control, nsun-1, and nsun-5 RNAi). Three days later, worms were transferred to agar pads and paralyzed using sodium azide and visualized using DIC microscopy (see above).
 
-## Brood size analysis
+### Brood size analysis
 
 Worms were synchronized by treatment with hypochlorite solution and incubated in S-Basal at room temperature overnight. L1 larvae were subsequently transferred to NGM plates seeded with RNAi control bacteria. After 48 hr, L4 animals were transferred to individual wells of a 24-well plate seeded with the respective RNAi bacteria (HT115, nsun-1, nsun-5). Each well contained 1.5 mL of NGM-agar and 3 μL of bacterial suspension (1:2 dilution in S-Basal). Worms were transferred to a new well every day for four consecutive days and total progeny of individual animals was counted. Per condition and experiment, five worms were analyzed.
 
-## Global protein synthesis by puromycin incorporation
+### Global protein synthesis by puromycin incorporation
 
 Puromycin incorporation was measured as previously described (Tiku et al., 2018) with minor modifications. Heat-inactivated OP-50 (75°C, 40 min) were provided as food source during pulse-labeling. As negative controls, RNAi control treated worms were used either without addition of puromycin or by pulse-labeling at 4°C instead of 20°C. Around 100 animals per condition were harvested for western blot analysis. Lysis was done directly in SDS loading dye (60 µM Tris/HCl pH 6.8, 2% SDS, 10% glycerol, 0.0125% bromophenol blue and 1.25% β-mercaptoethanol). Worms in SDS loading dye were homogenized with a pellet pestle for 1 min. Then, the samples were heated to 95°C and loaded on 4–15% Mini-PROTEAN TGX gels (BioRad) in Laemmli-Buffer (25 mM Tris, 250 mM glycine and 0.1% SDS). Protein bands were transferred to PVDF-membranes (Bio Rad) at 25 V and 1.3 A for 3 min. After blocking with 3% milk in PBS, the membrane was incubated overnight at 4°C with a mixture of anti-Histone H3 (Abcam ab1791, 1:4000) and anti-puromycin (Millipore 12D10, 1:10000). After washing and secondary antibody incubation (IRDye680RD and IRDye800CW, 1:10000), the membrane was scanned on the Odyssey Infrared Imager (LI-COR). Quantification of band intensities was performed in Image J (version 2.0.0-rc-65/1.51 w; Java 1.8.0_162 [64-bit]).
 
-## Polysome profiling
+### Polysome profiling
 
 Two-day-old adult worms were used to generate polysome profiles as previously described (Rogers et al., 2011). One hundred microliter worm-pellet were homogenized on ice in 300 µL of solubilization buffer (300 mM NaCl, 50 mM Tris-HCl (pH 8.0), 10 mM MgCl2, 1 mM EGTA, 200 µg/mL heparin, 400 U/mL RNAsin, 1.0 mM phenylmethylsulfonyl fluoride, 0.2 mg/mL cycloheximide, 1% Triton X-100, 0.1% sodium deoxycholate) using a pellet pestle. 700 µL additional solubilization buffer were added, vortexed briefly, and placed on ice for 10 min before centrifugation at 20.000 g for 15 min at 4°C. Approximately 0.9 mL of the supernatant was applied to the top of a linear 10–50% sucrose gradient in high salt resolving buffer (140 mM NaCl, 25 mM Tris-HCl (pH 8.0), 10 mM MgCl2) and centrifuged in a Beckman SW41Ti rotor (Beckman Coulter, Fullerton, CA, USA) at 180.000 g for 90 min at 4°C. Gradients were fractionated while continuously monitoring the absorbance at 260 nm.
 
-## RNA-seq
+### RNA-seq
 
 Trizol LS (Life Technologies) was immediately added to collected fractions and RNA was isolated following the manufacturer’s protocol. PolyA-selection, generation of a strand-specific cDNA library and sequencing on the HiSeq 4000 platform (Illumina) using the 50 bp SR mode was performed by GATC Biotech (Konstanz, Germany). At least 30 million reads were generated per sample.
 
@@ -217,29 +769,29 @@ The raw and processed sequencing data are available from the Gene Expression Omn
 
 The R-script for analyzing RNA-seq data is provided as Source code 1.
 
-## RT-qPCR
+### RT-qPCR
 
 All primer sequences are provided in Supplementary file 1. Samples were collected by either transferring worms individually into 1.5 mL tubes, by washing them off NGM plates using S-Basal or from polysome fractions and lysates (see above). After three washing steps with S-Basal, 300 μL TRIzol LS Reagent were added to approximately 100 µL residual S-Basal including worms. Subsequently, worms were homogenized with a pellet pestle for one minute, 600 µL TRIzol LS Reagent were added and the sample was vortexed for five minutes at room temperature. Total RNA was isolated using Direct-zol RNA MiniPrep Kit (Zymo) according to the instructions by the manufacturer. For cDNA synthesis, 500 ng RNA were converted into cDNA using the Applied Biosystems High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific). cDNA was amplified from total RNA using random primers. RT-qPCR was performed on a Rotor-Gene Q (QIAGEN) using HOT FIREPol EvaGreen qPCR Mix. The absolute amounts of mRNAs were calculated by computing a standard curve and the resulting copy numbers were normalized to the housekeeping genes act-1 and tba-1.
 
 For measuring mRNA expression during development, worms were synchronized by treatment with hypochlorite solution and the released eggs were subsequently transferred to four separate NGM plates seeded with UV-killed OP50 bacteria. Samples were taken from eggs immediately after bleaching, L1/L2 (20 hr after bleaching), L3 (32 hr after bleaching), L4 (46 hr after bleaching) and young adults (60 hr after bleaching).
 
-## 3-D ribosome structure
+### 3-D ribosome structure
 
 The PyMOL Molecular Graphics System (Version 2.0) was used. The structure was modeled on the human 80S ribosome (PDB 6EK0).
 
-## m5C detection by COBRA assay
+### m5C detection by COBRA assay
 
 NSUN-5 activity was measured by the COBRA assay as previously described (Adamla et al., 2019). Primer sequences are provided in Supplementary file 1.
 
-## HPLC analysis of m5C
+### HPLC analysis of m5C
 
 13–15 µg 26S purified on sucrose gradient were digested to nucleosides and analyzed by HPLC. Peaks elutes at 12 min and as a control, a commercial 5-methylcytidine (NM03720, CarboSynth) was used. For quantification of m5C peak area, the peak was normalized to either the peak eluting at 16 min (asterisk on the Figure), or to the peak eluting at 8 min (U), with similar results. The results are shown for normalization to the peak eluting at 16 min.
 
-## Pre-rRNA processing analysis
+### Pre-rRNA processing analysis
 
 For analysis of high–molecular weight RNA species, 3 µg total RNA was resolved on a denaturing agarose gel (6% formaldehyde/1.2% agarose) and migrated for 16 hr at 65 volts. Agarose gels were transferred by capillarity onto Hybond-N+ membranes. The membrane was prehybridized for 1 hr at 65°C in 50% formamide, 5x SSPE, 5x Denhardt’s solution, 1% SDS (w/v) and 200 µg/mL fish sperm DNA solution (Roche). The 32P-labeled oligonucleotide probe (LD2648 (ITS1): CACTCAACTGACCGTGAAGCCAGTCG; LD2649 (ITS2): GGACAAGATCAGTATGCCGAGACGCG) was added and incubated for 1 hr at 65°C and then overnight at 37°C. For analysis of low molecular weight RNA species, northern blots were exposed to Fuji imaging plates (Fujifilm) and signals acquired with a Phosphorimager (FLA-7000; Fujifilm).
 
-## Statistics and sample size estimation
+### Statistics and sample size estimation
 
 No explicit power analysis was used. Sample sizes estimations were partially based on our own previous empirical experience with the respective assays, as well as the cited literature.
 

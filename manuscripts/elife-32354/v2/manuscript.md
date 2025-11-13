@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.32354.001 Multi-subunit ring-shaped ATPases are molecular motors that harness chemical free energy to perform vital mechanical tasks such as polypeptide translocation, DNA unwinding, and chromosome segregation. Previously we reported the intersubunit coordination and stepping behavior of the hexameric ring-shaped ATPase SpoIIIE (Liu et al., 2015). Here we use optical tweezers to characterize the motor’s mechanochemistry. Analysis of the motor response to external force at various nucleotide concentrations identifies phosphate release as the likely force-generating step. Analysis of SpoIIIE pausing indicates that pauses are off-pathway events. Characterization of SpoIIIE slipping behavior reveals that individual motor subunits engage DNA upon ATP binding. Furthermore, we find that SpoIIIE’s velocity exhibits an intriguing bi-phasic dependence on force. We hypothesize that this behavior is an adaptation of ultra-fast motors tasked with translocating DNA from which they must also remove DNA-bound protein roadblocks. Based on these results, we formulate a comprehensive mechanochemical model for SpoIIIE.
+Multi-subunit ring-shaped ATPases are molecular motors that harness chemical free energy to perform vital mechanical tasks such as polypeptide translocation, DNA unwinding, and chromosome segregation. Previously we reported the intersubunit coordination and stepping behavior of the hexameric ring-shaped ATPase SpoIIIE (Liu et al., 2015). Here we use optical tweezers to characterize the motor’s mechanochemistry. Analysis of the motor response to external force at various nucleotide concentrations identifies phosphate release as the likely force-generating step. Analysis of SpoIIIE pausing indicates that pauses are off-pathway events. Characterization of SpoIIIE slipping behavior reveals that individual motor subunits engage DNA upon ATP binding. Furthermore, we find that SpoIIIE’s velocity exhibits an intriguing bi-phasic dependence on force. We hypothesize that this behavior is an adaptation of ultra-fast motors tasked with translocating DNA from which they must also remove DNA-bound protein roadblocks. Based on these results, we formulate a comprehensive mechanochemical model for SpoIIIE.
 
 ## Introduction
 
@@ -33,33 +33,196 @@ Here we used optical tweezers to interrogate the mechanism of DNA translocation 
 
 ## Results
 
-## SpoIIIE generates up to 50 pN of mechanical force
+### SpoIIIE generates up to 50 pN of mechanical force
 
 Experiments were conducted on an instrument consisting of an optical trap and a micropipette as described previously (Liu et al., 2015). Briefly, SpoIIIE and DNA were immobilized separately on polystyrene beads (Figure 1A) and brought into proximity, allowing SpoIIIE to engage DNA. In the presence of ATP, SpoIIIE translocated DNA, shortening the tether between the two beads. Experiments were performed either in passive mode – where the trap position is fixed (Figure 1B), or in constant-force mode – where DNA tension is held constant (Figure 1C). At saturating [ATP] and low opposing force (5 pN), SpoIIIE translocated DNA at ~4 kbp/s (Figure 1C), in agreement with previous studies (Liu et al., 2015; Ptacin et al., 2008). Translocation rates measured in passive mode were in excellent agreement with those measured in constant-force mode (Figure 1D). We find that SpoIIIE can operate against forces up to 50 pN (Figure 1B), similar to other dsDNA translocases, including FtsK and the DNA packaging motors from bacteriophages T4, λ, and φ29 (Fuller et al., 2007a; 2007b; Saleh et al., 2004; Smith et al., 2001).
 
-## ATP mitigates force-induced slipping
+![Figure 1.](https://cdn.elifesciences.org/articles/32354/elife-32354-fig1-v2.jpg)
+
+**Figure 1.:** (a) Optical tweezer geometry. (b) Representative single-molecule traces of SpoIIIE translocation in passive mode. The trap position is fixed and as SpoIIIE pulls the bead out of the trap, the force on the trapped bead increases. (c) Representative single-molecule traces of SpoIIIE translocation in constant force mode. The optical trap position is continuously adjusted to maintain a constant force on the trapped bead. (d) Comparison of pause-free velocity measured in constant force mode and passive mode at [ATP]=3 mM. Error-bars represent the standard error of the mean (SEM). (e) Trace displaying a slip in constant force mode. (f) Slip density at different opposing force and [ATP]. Error bars represent the square root of the number of events.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32354/elife-32354-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Single-molecule trace of SpoIIIE translocation acquired in passive mode. Red dots indicate force where a slip was detected. (b) Histogram of pull forces. (c) Median pull force of SpoIIIE across various ATP conditions. Error bars display the standard error estimated from bootstrapping.
+
+### ATP mitigates force-induced slipping
 
 To investigate SpoIIIE operation, we monitored translocation in passive mode. At sufficiently high opposing forces (20–40 pN), translocation trajectories are often interrupted by slips, presumably due to SpoIIIE losing grip of its DNA track (Figure 1E). Eventually, SpoIIIE can recover, re-engage the DNA, and resume translocation from a low force; consequently, the same motor can undergo many rounds of continuous translocation and slipping.
 
 As is shown in Figure 1—figure supplement 1A, at saturating [ATP] (3 mM), SpoIIIE can undergo multiple rounds of pulling and slipping in passive mode, with a median slipping force of ~20 pN (Figure 1—figure supplement 1B). At low [ATP], the median slipping force drops below 15 pN (Figure 1—figure supplement 1C), suggesting that the nucleotide state modulates the strength of SpoIIIE-DNA interactions. To investigate how [ATP] affects slipping we conducted constant force experiments at 5–40 pN. At low [ATP] (0.25–0.50 mM) the slipping density increases sharply with opposing force, whereas at near-saturating [ATP] (1–3 mM) the slipping density is only weakly dependent on force (Figure 1F). Thus, binding of nucleotide to the motor appears to stabilize its grip on the DNA template. The slipping behavior of SpoIIIE as reported here is similar to that of the ATPase from the λ phage packaging motor (delToro et al., 2016) and it may also be a common feature of ASCE ring ATPases.
 
-## The SpoIIIE power stroke is most likely driven by Pi release
+### The SpoIIIE power stroke is most likely driven by Pi release
 
 To probe how nucleotide binding is coordinated among motor subunits, we measured the pause-free SpoIIIE velocity at 3–50 pN of opposing force and 0.25–5.00 mM [ATP] (Figure 2A) in passive mode (Figure 2—figure supplement 1A). Fitting the pause-free velocity versus [ATP] to the Hill equation, yields a value for the Hill coefficient consistent with unity over a wide range of forces (5–30 pN) (Figure 2—figure supplement 1B–C). There are two means to achieve nHill ≈ 1 for a multi-subunit ATPase: (i) subunits turnover ATP independently of each other in an uncoordinated fashion; or (ii) subunits turnover ATP sequentially, but consecutive binding events are separated by an irreversible transition so only one subunit can bind nucleotide at any time, resulting in an apparent lack of cooperativity (Chemla et al., 2005). We recently found that SpoIIIE pauses when two neighboring subunits each bind a non-hydrolyzable ATP analog (Liu et al., 2015). This result is inconsistent with scenario (i) outlined above because an uncoordinated mechanism should enable several subunits to bind ATP analogs while the remaining subunits continue translocating. We conclude that SpoIIIE subunits bind ATP sequentially one subunit at a time. This coordination scheme enforces the well-defined subunit firing order required for SpoIIIE to track the backbone of one DNA strand as we previously showed (Liu et al., 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32354/elife-32354-fig2-v2.jpg)
+
+**Figure 2.:** (a) Pause-free translocation velocity versus opposing force at various [ATP], 5 µM ADP, and 5 µM Pi. Error-bars represent the SEM. (b) Hill coefficient derived from fitting translocation velocity versus [ATP] at various opposing forces. Error bars represent the standard error of the fit (SEF). (c) Pause-free velocity versus opposing force compiled from data at 5, 3, and 2 mM ATP. Error-bars represent the SEM. Gray and blue curves represent fits to the two different models depicted in the inset. Analytic expressions and fit parameters for the models are given in Figure 2—figure supplement 2. (d) Generalized kinetic cycle for an ATPase subunit. The first block consists of all rate constants k±1, k±2, … up to the first irreversible transition kj (purple). The second block comprises the remaining rate constants (green). (e) Pause-free velocity versus opposing force at various [ADP] and 3 mM ATP. (f) Vmax and KM values as a function of [ADP] at low opposing force (5 pN). Solid lines are fits to a competitive inhibition model, Ki = 129 ± 19 μM. Error-bars represent the SEF. (g) Pause-free velocity versus opposing force under high [Pi] conditions and 3 mM ATP. Error bars represent the SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32354/elife-32354-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Passive mode traces of SpoIIIE translocation across various [ATP]. (b) Hill coefficient derived from fitting translocation velocity versus [ATP] at various opposing forces. Error bars represent the standard error of the fit (SEF). (c) Examples of Michaelis-Menten fits to translocation data at different opposing forces. (d) Representative translocation traces acquired in passive mode at 3 mM ATP and various ADP concentrations. Error-bars represent the SEM. (e) Lineweaver-Burke plots at various [ADP] (v denotes the pause-free velocity). Dotted lines represent the Michaelis-Menten fits. The solid purple line marks the y-intercept. Error bars represent the SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32354/elife-32354-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Diagram, analytical expression, and fit parameters for the linear model. Analytical expression for the force-velocity dependence, and parameters derived from fitting this expression to the consolidated force-velocity curve depicted in Figure 2C. (b) Diagram illustrating the branched model.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32354/elife-32354-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Median slip force of SpoIIIE as a function of [ADP] at high (3 mM) and low (0.5 mM) [ATP]. Error bars represent the SEM. (b) Pause density versus [ADP] at both high and low ATP concentrations. Error bars display the square root of the pause number. (c) Mean pause durations calculated from single-exponential fits versus ADP concentration at high and low [ATP]. Error bars represent the 95% CI of the fit.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/32354/elife-32354-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Pause-free translocation velocity versus opposing force at various [ATP], reproduced from figure panel 2A. (b) Translocation velocity versus opposing force. Pauses were not removed for velocity calculations. (c) Examples of pauses scored by the pause detection algorithm (red) in data collected in passive mode at two ATP conditions.
 
 To determine which chemical transition is coupled to the power stroke we investigated how force affects Vmax and KM determined from Michaelis-Menten fits. Although both Vmax and KM decrease with force, Vmax/KM is largely force-independent (Figure 2B). To understand this result, consider a generalized ATPase cycle consisting of two kinetic blocks separated by an irreversible transition kj (Figure 2D). We hypothesize that ATP tight binding (the transition that commits the ATPase to perform hydrolysis) is the irreversible transition that separates the kinetic blocks in Figure 2D, as has been proposed for other ring ATPases (Chemla et al., 2005; Moffitt et al., 2009; Sen et al., 2013). Vmax/KM depends on ATP docking/undocking rates (k±1) and the rates of all kinetic transitions reversibly connected to ATP docking (k±2, k±3...) up to the first irreversible transition kj, (Figure 2D, purple) (Keller and Bustamante, 2000). The observed force-independence of Vmax/KM indicates that ATP docking or any transition reversibly connected to it (Figure 2D, purple) cannot be the force-generating transition (Keller and Bustamante, 2000). Our observation that SpoIIIE is less force-sensitive at low [ATP], where nucleotide binding is rate-limiting, also suggests that ATP binding is not coupled to the power stroke. If ATP binding were coupled to the power stroke, at low [ATP] conditions the motor would be more, not less force sensitive. Therefore, the force-generating transition must occur in the second block of the generalized kinetic cycle (Figure 2D, green). It is unlikely that ATP hydrolysis drives the power stroke because the cleavage of the γ-phosphate upon hydrolysis does not release sufficient free energy (Oster and Wang, 2000). Therefore, ADP or Pi release ― both of which are located in the second kinetic block (Figure 2D, green) ― must be responsible for force generation.
 
 To distinguish between these possibilities, we quantified the inhibitory effect of ADP and Pi on translocation. We found that pause-free velocity decreased with increasing [ADP] (Figure 2E, Figure 2—figure supplement 1D). The apparent KM increases linearly with [ADP] whereas Vmax is independent of [ADP] (Figure 2F, Figure 2—figure supplement 1E), indicating that ADP is a competitive inhibitor to ATP binding with a dissociation constant Kd = 129 ± 19 μM. In contrast, pause-free velocity is largely unaffected by increasing [Pi], decreasing by only ~12% at the highest Pi concentration tested (10 mM) (Figure 2G), indicating that phosphate release is largely irreversible with a Kd >>10 mM. Given these Kd values, we estimated the change in free energy upon Pi and ADP release ΔGPi > 7.6 kBT and ΔGADP ~ 3.2 kBT in a buffer containing 5 μM Pi and 5 μM ADP (Chemla et al., 2005) (see Materials and methods). Given the estimated SpoIIIE step size of 2 bp (Liu et al., 2015), and a maximum generated force of ~50 pN, each SpoIIIE power-stroke requires at least 8.2 kBT of free energy (see Materials and methods). We conclude that phosphate release is the only chemical transition capable of driving the power stroke of SpoIIIE, similar to what has been proposed for the φ29 packaging motor (Chemla et al., 2005), and the ClpX ring ATPase (Sen et al., 2013).
 
-## The SpoIIIE cycle contains at least two force-dependent kinetic rates
+### The SpoIIIE cycle contains at least two force-dependent kinetic rates
 
 At near-saturating [ATP], SpoIIIE exhibits a bi-phasic force-velocity dependence: the pause-free velocity drops between 5 and 15 pN, remains relatively force-insensitive between 15 and 40 pN, then decreases again beyond 40 pN (Figure 2A). The large error-bars associated with velocity measurements at 40–50 pN are due to the limited amount of data that could be acquired at very high forces (Table 1). As a result it is challenging to assess the steepness of the velocity drop-off at high forces (Figure 2A, black, blue, and green curves). To overcome the limited data coverage at high forces and to better visualize the force-velocity behavior of SpoIIIE, we combined the data at near-saturating [ATP] (2, 3, 5 mM) into a consolidated curve (Figure 2C) that clearly displays the bi-phasic force-velocity dependence (see Materials and methods). Since the error-bars for the near-saturating [ATP] datasets partially overlap, especially in the high-force regime we reasoned that generating a consolidated force-velocity curve would not introduce significant bias.
+
+**Table 1.**
+ Length of DNA (kbp) translocated at different forces and ATP concentrations.Related to Figure 2C.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>[ATP] (µM)</th>
+      <th colspan="12">Force Interval (pN)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>2–4</th>
+      <th>4–6</th>
+      <th>6–8</th>
+      <th>8–10</th>
+      <th>10–13</th>
+      <th>13–16</th>
+      <th>16–20</th>
+      <th>20–25</th>
+      <th>25–30</th>
+      <th>30–40</th>
+      <th>40–45</th>
+      <th>45–50</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5000</td>
+      <td>105.0</td>
+      <td>98.2</td>
+      <td>75.1</td>
+      <td>61.5</td>
+      <td>77.6</td>
+      <td>60.3</td>
+      <td>51.4</td>
+      <td>34.8</td>
+      <td>16.2</td>
+      <td>11.8</td>
+      <td>1.0</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>3000</td>
+      <td>44.6</td>
+      <td>40.1</td>
+      <td>33.7</td>
+      <td>30.0</td>
+      <td>42.4</td>
+      <td>38.6</td>
+      <td>45.5</td>
+      <td>42.6</td>
+      <td>23.7</td>
+      <td>16.3</td>
+      <td>1.9</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>39.0</td>
+      <td>38.9</td>
+      <td>34.6</td>
+      <td>32.1</td>
+      <td>45.4</td>
+      <td>41.5</td>
+      <td>47.9</td>
+      <td>41.3</td>
+      <td>21.0</td>
+      <td>12.1</td>
+      <td>1.8</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>76.5</td>
+      <td>66.3</td>
+      <td>58.6</td>
+      <td>54.9</td>
+      <td>77.1</td>
+      <td>70.1</td>
+      <td>76.9</td>
+      <td>60.2</td>
+      <td>29.6</td>
+      <td>19.1</td>
+      <td>1.6</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>750</td>
+      <td>23.8</td>
+      <td>18.4</td>
+      <td>14.4</td>
+      <td>12.3</td>
+      <td>16.6</td>
+      <td>14.1</td>
+      <td>14.1</td>
+      <td>10.1</td>
+      <td>5.2</td>
+      <td>3.6</td>
+      <td>0.3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>44.1</td>
+      <td>43.7</td>
+      <td>37.8</td>
+      <td>33.3</td>
+      <td>42.4</td>
+      <td>34.9</td>
+      <td>31.5</td>
+      <td>19.6</td>
+      <td>8.1</td>
+      <td>3.7</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>250</td>
+      <td>22.4</td>
+      <td>20.4</td>
+      <td>18.4</td>
+      <td>17.4</td>
+      <td>23.4</td>
+      <td>17.1</td>
+      <td>13.5</td>
+      <td>9.9</td>
+      <td>4.2</td>
+      <td>2.0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 A model with a single force-sensitive transition is inconsistent with the bi-phasic force-velocity dependence we observe for SpoIIIE because: (i) it predicts a monotonic decrease in velocity with force and poorly fits the data (Figure 2C, dashed gray curve), and (ii) it requires more free energy per power stroke than is released by hydrolyzing one ATP (see Materials and methods).
 
 At least two force-sensitive transitions are needed to rationalize SpoIIIE’s force-velocity dependence: the first should capture the motor’s sensitivity to force at low loads (<15 pN), the second should describe the motor’s sensitivity to force at high loads (>40 pN). By introducing a second force-dependent transition in the mechanochemical cycle (Figure 2—figure supplement 2A), our model accurately captures the bi-phasic force-velocity dependence exhibited by SpoIIIE (Figure 2C).
 
-## Pausing is in kinetic competition with translocation and ATP binding
+### Pausing is in kinetic competition with translocation and ATP binding
 
 At low [ATP], SpoIIIE exhibits spontaneous pausing (Figure 3A). We find that pause density increases dramatically as pause-free velocity drops (Figure 3B), suggesting that pausing and translocation are in kinetic competition. This observation is consistent with a model where the pause state is off the main translocation pathway, similar to what has been observed for the λ phage packaging motor (delToro et al., 2016) and the ClpX protein unfoldase (Maillard et al., 2011). To determine where in the mechanochemical cycle the off-pathway pause state is located, we analyzed SpoIIIE’s pausing at various [ATP] and forces. We find that pause density increases drastically at low [ATP] (Figure 3C) indicating that pausing is in kinetic competition with nucleotide binding. In other words, SpoIIIE enters a pause when a subunit is awaiting ATP binding. We also found that the mean pause duration is inversely proportional to [ATP] (Figure 3D) suggesting that SpoIIIE exits the paused state by binding nucleotide. Pause durations at a given [ATP] are exponentially distributed (Figure 3D, inset) indicating that pause duration is governed by a single-rate limiting event—presumably the motor binding an ATP molecule. Due to limitations governed by our time resolution and experimental noise, we could not accurately detect pauses shorter than ~50 msec (Materials and methods); we therefore estimated the mean pause duration by fitting the duration of the observed pausing events to a single-exponential. Finally, the fact that the pause density and the estimated pause duration does not depend on force at low [ATP] (where ATP binding is rate-limiting) (Figure 3E–F) suggests that the pause state is not reversibly connected to the force-generating transition (Pi release).
 
@@ -69,7 +232,7 @@ At low [ATP], SpoIIIE exhibits spontaneous pausing (Figure 3A). We find that pau
 
 ## Discussion
 
-## The mechanochemical cycle of an individual SpoIIIE subunit
+### The mechanochemical cycle of an individual SpoIIIE subunit
 
 Based on the results above, we propose a minimal mechanochemical model for a single SpoIIIE subunit (Figure 4A). The ADP-bound state (gray) is reversibly connected to the Apo state (white), which is reversibly connected to the ATP-loosely-docked state (light green). Here ADP acts as a competitive inhibitor to ATP binding, as observed experimentally. The ATP-loosely-docked state is irreversibly connected to the ATP-tightly-bound state (dark green), ensuring that Vmax/KM is force-insensitive. Hydrolysis is depicted as a reversible process between the ATP-tightly-bound state and the transition state ADP⋅Pi (blue). Finally, Pi release is depicted as an irreversible process that drives the 2 bp power-stroke.
 
@@ -79,7 +242,7 @@ Based on the results above, we propose a minimal mechanochemical model for a sin
 
 When does SpoIIIE make and break its DNA contacts? We previously found that the strength of the motor-DNA interaction is highest in the ATPγS-bound state, moderate in the ADP-bound state, and lowest in the Apo state (Liu et al., 2015). Given that nucleotides strengthen the motor-DNA interactions, we propose that each SpoIIIE subunit has to bind ATP first before it engages the DNA and the motor-DNA interaction is established during ATP docking or during tight–binding (Figure 4A, green box). Since the ADP-bound and the Apo states have the weakest affinity for DNA we propose that each subunit breaks its contacts with DNA after reaching the ADP-bound state or the Apo state (Figure 4A, yellow box).
 
-## Force-induced slipping: implications for the two-subunit translocation-escort mechanism
+### Force-induced slipping: implications for the two-subunit translocation-escort mechanism
 
 We previously provided evidence for a model where two subunits contact the DNA at adjacent pairs of phosphates on the same strand: while one subunit executes the power-stroke and translocates 2 bp, the other escorts the DNA (Liu et al., 2015). This mechanism enables the motor to operate processively with non-consecutive inactive subunits, and the escorting subunit may function as a backup should the translocating subunit lose its grip on DNA during the power-stroke. In the present study, we find that slipping probability can be increased by either large opposing force or low ATP conditions or a combination of both.
 
@@ -87,11 +250,11 @@ Based on the insights from the slipping data, we propose a revised model of the 
 
 In our model ADP release happens before ATP binding (see subunit C in Figure 4Biii–iv). Since ADP acts as a competitive inhibitor to ATP binding, in our model ADP release and ATP docking in the same subunit are connected via reversible transitions as depicted in Figure 4Biii–vi. It is unclear what triggers ADP release, however studies of related ATPases show that ADP release is highly coordinated among subunits, triggered for example by the binding of ATP in the adjacent subunit (Chistol et al., 2012).
 
-## Off-pathway pausing: timing and implications
+### Off-pathway pausing: timing and implications
 
 We found that pause density is inversely proportional to pause-free velocity (Figure 3B), indicating that pausing is an off-pathway process in kinetic competition with translocation. The observation that pausing is more likely at low [ATP] (Figure 3E) suggests that SpoIIIE pauses when a subunit is awaiting the binding of ATP. At the same time, we do not observe frequent slipping from paused states. We speculate that SpoIIIE enters off-pathway pauses from the state depicted in Figure 4Biv – after subunit A translocated but before DNA is handed to subunit C. At this stage, subunit C is poised to bind ATP. At low [ATP], if subunit C takes a long time to bind nucleotide, SpoIIIE may transition into an off-pathway pause state while gripping the DNA with two subunits. Such an allosteric sensing mechanism would prevent the motor from prematurely initiating the slip-prone DNA handover (Figure 4Bv). This speculative regulatory mechanism for SpoIIIE is reminiscent of the allosteric regulation of the φ29 viral packaging motor, which senses when the capsid is nearly full and enters into long-lived pauses allowing DNA inside the capsid to relax before packaging can restart (Berndsen et al., 2015; Liu et al., 2014b). During chromosome segregation in B. subtilis, the local [ATP] near active SpoIIIE complexes could fluctuate on short time-scales. A drop in local [ATP] could force the motor to pause thus preventing the slip-prone handover until [ATP] rises to levels optimal for SpoIIIE operation.
 
-## Bi-phasic velocity-vs-force dependence and its implications
+### Bi-phasic velocity-vs-force dependence and its implications
 
 In addition to SpoIIIE, a bi-phasic force-velocity dependence has been reported for several other DNA translocases, including FtsK (Saleh et al., 2004), and the λ and T4 phage packaging motors (Fuller et al., 2007b; Migliori et al., 2014). To explain this unusual behavior we propose a mechanochemical cycle containing two sequential force sensitive transitions (Figure 2C, blue inset): one that is highly sensitive to force and saturates at >15 pN, causing the velocity decrease up to ~15 pN; and another that is less sensitive to force, leading to the velocity drop beyond ~40 pN.
 
@@ -103,11 +266,11 @@ Interestingly, the in vivo SpoIIIE rate is markedly slower (~1–2 kb/sec) than 
 
 ## Materials and methods
 
-## Sample preparation
+### Sample preparation
 
 Recombinant SpoIIIE, dsDNA substrates, and polystyrene beads were prepared as described before (Liu et al., 2015).
 
-## Data analysis
+### Data analysis
 
 Tether tension and extension were converted to contour length using the Worm-Like-Chain approximation (Baumann et al., 1997).
 
@@ -115,42 +278,102 @@ Pauses were detected using a modified Schwartz Information Criterion (mSIC) meth
 
 After removing the detected pauses, the translocation velocity was computed by fitting the data to a straight line. For passive-mode data, single-molecule trajectories were partitioned into segments spanning 2 pN, and the velocity was computed for each segment. The data for force-velocity measurements was collected in passive mode where the opposing force increases gradually as the motor translocates DNA. The individual translocation traces were segmented into windows spanning 2 pN each and the translocation velocity was computed for each force window. To generate the consolidated force-velocity curve at near-saturating [ATP] (Figure 2C) we pooled the velocity measurements from individual 2-pN force windows and then binned them.
 
-## Estimating free energy of product release
+### Estimating free energy of product release
 
-To estimate the free energy of product release, consider the simplified kinetic scheme E∙P⇆E+P where the enzyme (E) can release or bind its product (P) with a forward and reverse rate krel and kbind respectively. We can define the rate of phosphate release as krel = k-p and the rate of phosphate binding as kbind = kp ·[Pi] where k-p and kp are the first and second-order rate constants for phosphate release and binding respectively. The free energy change corresponding to phosphate release is given by ΔGPi = -kBT∙ln(krel/kbind) = - kBT∙ln(k-p/kp·[Pi]) (Chemla et al., 2005). Since concentrations of phosphate as high as 10 mM do not significantly affect SpoIIIE’s translocation velocity, then krel must be significantly higher than kbind at Pi concentrations of 10 mM or less (i.e., k-p >> kp·[10 mM] >> 1). From these inequalities we can infer that k-p /(kp·[5 μM]) > 2000 and therefore we can set a lower bound for the free energy of Pi release as ΔGPi > - 7.6 kBT in a buffer containing 5 μM Pi.
+To estimate the free energy of product release, consider the simplified kinetic scheme $E∙P⇆E+P$ where the enzyme (E) can release or bind its product (P) with a forward and reverse rate krel and kbind respectively. We can define the rate of phosphate release as krel = k-p and the rate of phosphate binding as kbind = kp ·[Pi] where k-p and kp are the first and second-order rate constants for phosphate release and binding respectively. The free energy change corresponding to phosphate release is given by ΔGPi = -kBT∙ln(krel/kbind) = - kBT∙ln(k-p/kp·[Pi]) (Chemla et al., 2005). Since concentrations of phosphate as high as 10 mM do not significantly affect SpoIIIE’s translocation velocity, then krel must be significantly higher than kbind at Pi concentrations of 10 mM or less (i.e., k-p >> kp·[10 mM] >> 1). From these inequalities we can infer that k-p /(kp·[5 μM]) > 2000 and therefore we can set a lower bound for the free energy of Pi release as ΔGPi > - 7.6 kBT in a buffer containing 5 μM Pi.
 
 Similarly, we used the equilibrium dissociation constant for ADP (KADP = 129 ± 19 μM) to estimate the change in free energy associated with ADP release: ΔGADP ~ 3.2 kBT in standard buffer conditions ([ADP]=5 μM). Given the estimated SpoIIIE step size of 2 bp (Graham et al., 2010; Liu et al., 2015; Massey et al., 2006) and the fact that SpoIIIE can translocate DNA against forces as high as 50 pN each power-stroke requires a change in free energy of at least 50 pN ∙ 2 bp ∙ 0.34 nm/bp = 34 pN∙nm = 8.2 kBT.
 
-## Mechanochemical model with a single force-generating transition
+### Mechanochemical model with a single force-generating transition
 
 Note that this model as well as the linear/branched models described in the next section assume Arrhenius-like force-dependent terms. We cannot rule out non-Arrhenius type force-dependences which could also lead to a velocity reduction at higher forces – for example force-induced decoupling of ATP turnover from DNA translocation. In a hypothetical case force applied to the DNA could deform the ATPase such that the motor loses its grip on DNA in a force-dependent manner, leading to non-productive power strokes and lower net translocation velocity.
 
-A mechanochemical model with a single force-generating transition predicts that at saturating [ATP], the motor velocity (V) depends on the external load (F) as V(F)=Vmax(1−p)+p⋅exp(FΔx‡kBT) (Wang et al., 1998). Here Vmax is the maximum velocity at zero force, exp(FΔx‡kBT) is an Arrhenius-like term describing how the external load slows down the force-generating transition, p is the fraction of the total mechanochemical cycle time that the motor spends in the force-generating transition at zero force, (1-p) captures all the force-independent transitions from the motor’s cycle, kBT is the Boltzmann constant times the temperature, and Δx‡ is the distance to the transition state for the force-generating transition.
+A mechanochemical model with a single force-generating transition predicts that at saturating [ATP], the motor velocity (V) depends on the external load (F) as $V(F)=\frac{V_{max}}{(1−p)+p⋅exp(\frac{FΔx^{‡}}{k_{B}T})}$ (Wang et al., 1998). Here Vmax is the maximum velocity at zero force, $exp(\frac{FΔx^{‡}}{k_{B}T})$ is an Arrhenius-like term describing how the external load slows down the force-generating transition, p is the fraction of the total mechanochemical cycle time that the motor spends in the force-generating transition at zero force, (1-p) captures all the force-independent transitions from the motor’s cycle, kBT is the Boltzmann constant times the temperature, and $Δx^{‡}$ is the distance to the transition state for the force-generating transition.
 
-Fitting the consolidated force-velocity curve to the model above produces a very poor fit to the data (Figure 2C, dashed gray curve) (Vmax = 4.2 ± 0.4 kbp/s), Δx‡ = 0.07 ± 0.02 nm, p ≈ 1), and most importantly predicts a monotonic decrease in velocity with force that does not capture the bi-phasic force-velocity dependence exhibited by SpoIIIE. Furthermore, extrapolating the fit to higher forces predicts large translocation velocities (>300 bp/sec) for loads over 400 pN. Considering that the likely step size of SpoIIIE is 2 bp per nucleotide hydrolyzed (Liu et al., 2015), a stall force above 400 pN requires that the motor generate at least 400 pN · 2 bp · 0.34 nm/bp = 270 pN·nm of work per power-stroke—more than two and a half times the ~110 pN∙nm of free energy available from ATP hydrolysis in our experiments.
+Fitting the consolidated force-velocity curve to the model above produces a very poor fit to the data (Figure 2C, dashed gray curve) (Vmax = 4.2 ± 0.4 kbp/s), $Δx^{‡}$ = 0.07 ± 0.02 nm, p ≈ 1), and most importantly predicts a monotonic decrease in velocity with force that does not capture the bi-phasic force-velocity dependence exhibited by SpoIIIE. Furthermore, extrapolating the fit to higher forces predicts large translocation velocities (>300 bp/sec) for loads over 400 pN. Considering that the likely step size of SpoIIIE is 2 bp per nucleotide hydrolyzed (Liu et al., 2015), a stall force above 400 pN requires that the motor generate at least 400 pN · 2 bp · 0.34 nm/bp = 270 pN·nm of work per power-stroke—more than two and a half times the ~110 pN∙nm of free energy available from ATP hydrolysis in our experiments.
 
-## Deriving expressions for the branched and linear models of force-velocity dependence
+### Deriving expressions for the branched and linear models of force-velocity dependence
 
-We considered two broad classes of kinetic models that can capture the bi-phasic velocity dependence on force: branched models and linear models. In each case the average time needed to complete one cycle can be computed given the rate of ATP binding (which is proportional to [ATP] with the proportionality constant α), the rates of the two force-sensitive kinetic transitions (kA and kB), and the net compound rate of all remaining kinetic transitions that are force-insensitive (k0). The average cycle completion time for the branched model shown in Figure 2—figure supplement 2B, τbranched, can be written as follows:(1)τbranched=pA∙1kA+pB∙1kB+1α∙ATP+1k0
+We considered two broad classes of kinetic models that can capture the bi-phasic velocity dependence on force: branched models and linear models. In each case the average time needed to complete one cycle can be computed given the rate of ATP binding (which is proportional to [ATP] with the proportionality constant α), the rates of the two force-sensitive kinetic transitions (kA and kB), and the net compound rate of all remaining kinetic transitions that are force-insensitive (k0). The average cycle completion time for the branched model shown in Figure 2—figure supplement 2B, τbranched, can be written as follows:
 
-Here pA and pB are the probabilities that the cycle proceeds through each of the two force-sensitive branches (Figure 2—figure supplement 2B). For simplicity we assumed an Arrhenius-like dependence on force F for pA.pA=p0⋅e− F⋅ΔxC†kBT(2)pB=1−pA=1−p0⋅e− F⋅ΔxC†kBT
+$$
+\tau_{branched}=p_{A}∙\frac{1}{k_{A}}+p_{B}∙\frac{1}{k_{B}}+\frac{1}{\alpha∙ATP}+\frac{1}{k_{0}}
+$$
 
-The rates for the two force-sensitive transitions are given by kA and kB respectively, each with an Arrhenius-like dependence on force F as shown below. Here kBT is the product of the Boltzmann constant and the temperature, kA0 and kB0 are the rates at zero force, and Δx†A and Δx†B are the distances to the transition state for the two force-sensitive branches.kA(F)=kA0⋅e− F⋅ΔxA†kBT(3)kB(F)=kB0⋅e− F⋅ΔxB†kBT
+Here pA and pB are the probabilities that the cycle proceeds through each of the two force-sensitive branches (Figure 2—figure supplement 2B). For simplicity we assumed an Arrhenius-like dependence on force F for pA.
 
-Each of the two force-sensitive transitions represents a power-stroke with step-sizes dA and dB respectively. Therefore, the average step size for the branched cycle dbranched is given by:(4)dbranched=pAdA+pBdB
+$$
+p_{A}=p_{0}⋅e^{− \frac{F⋅Δx_{C}^{†}}{k_{B}T}}
+$$
 
-We fit the force-velocity data in Figure 2C to the simplest branched model where dA = dB = dbranched = d. Note that the model in which dA ≠ dB also fits the data, but is less well-constrained. The average translocation velocity for the branched model is given by the following expression:(5)Vbranched=dbranchedτbranched=d1k0 + 1α⋅[ATP] + 1kB0⋅eF⋅ΔxB†kBT+ p0⋅e− F⋅ΔxC†kBT⋅(1kA0 ⋅ eF⋅ΔxA†kBT− 1kB0 ⋅ eF⋅ΔxB†kBT)
 
-In a similar fashion, an expression for the translocation velocity can be derived for the linear model depicted in Figure 2C.(6)τlinear=1kL+1kH+1α∙[ATP]+1k0(7)dlinear=d(8)Vlinear=dlinearτlinear
 
-Here kL and kH are the rates of the force-sensitive transitions responsible for the drop in velocity at low forces (0–15 pN) and high forces (40 pN and above). kH represents the rate of the force-generating transition, i.e. phosphate release (most likely), and is given by a simple Arrhenius-like dependence:(9)kH(F)=kH0⋅e− F⋅ΔxH†kBT
+$$
+p_{B}=1−p_{A}=1−p_{0}⋅e^{− \frac{F⋅Δx_{C}^{†}}{k_{B}T}}
+$$
 
-As described in the main text, kL saturates at a certain force (~15 pN), and could be written as follows:(10)kL(F)=kL0⋅(1+β⋅e−F⋅ΔxL†kBT)
+The rates for the two force-sensitive transitions are given by kA and kB respectively, each with an Arrhenius-like dependence on force F as shown below. Here kBT is the product of the Boltzmann constant and the temperature, kA0 and kB0 are the rates at zero force, and Δx†A and Δx†B are the distances to the transition state for the two force-sensitive branches.
 
-The final expression for Vlinear is:(11)Vlinear=d1k0+1α⋅[ATP]+1kL0⋅(1+β⋅exp(−F⋅ΔxL†/(kBT)))+1kH0⋅exp(F⋅ΔxH†/(kBT))
+$$
+k_{A}(F)=k_{A0}⋅e^{− \frac{F⋅Δx_{A}^{†}}{k_{B}T}}
+$$
 
-## Fitting the consolidated force-velocity curve to the linear model
 
-The linear model provides two values for the distance to the transition state, ΔxH†=0.4 ±0.2 nm at high forces and ΔxL†=1.3±0.5 nm at low forces. A typical energy landscape for a molecular motor contains both a chemical axis, which captures the sequential chemical transitions a motor undergoes as it generates mechanical work, and a mechanical axis, which captures the physical movement of the motor along a distance coordinate (Bustamante et al., 2004). The distance to the transition state Δx† is the distance the motor must move along the mechanical coordinate during the force-sensitive step in order to commit itself to stepping. If a motor directly couples a chemical transition to the force-generating step, in what is classically referred to as a ‘power stroke’, the motor will move approximately along a diagonal across the chemical and mechanical axes, and Δx† would typically be < Δxstep, where Δxstep is the distance the motor moves per step size. The value for ΔxH†=0.4 ±0.2 nm is smaller than and consistent with a 2 bp step size (0.68 nm) power stroke mechanism previously determined for SpoIIIE (Liu et al., 2015) and likely coupled to Pi release.
 
-The physical interpretation of the other distance to the transition state, ΔxL†=1.3±0.5 nm is less clear. We speculate that the initial decrease in velocity induced by force was attributed to motor deformation; the measured distance to the transition state ΔxL†=1.3±0.5 nm is consistent with transition state values observed for single-molecule unfolding of native state proteins, typically Δx†<2nm for native state protein unfolding (Bustamante et al., 2004; Elms et al., 2012). However, the motor is clearly still active at forces >15 pN. It is possible that the measured value of ΔxL† corresponds to the mechanical coordinates of a partial unfolding pathway.
+$$
+k_{B}(F)=k_{B0}⋅e^{− \frac{F⋅Δx_{B}^{†}}{k_{B}T}}
+$$
+
+Each of the two force-sensitive transitions represents a power-stroke with step-sizes dA and dB respectively. Therefore, the average step size for the branched cycle dbranched is given by:
+
+$$
+d_{branched}=p_{A}d_{A}+p_{B}d_{B}
+$$
+
+We fit the force-velocity data in Figure 2C to the simplest branched model where dA = dB = dbranched = d. Note that the model in which dA ≠ dB also fits the data, but is less well-constrained. The average translocation velocity for the branched model is given by the following expression:
+
+$$
+V_{branched}=\frac{d_{branched}}{\tau_{branched}}=\frac{d}{\frac{1}{k_{0}} + \frac{1}{\alpha⋅[ATP]} + \frac{1}{k_{B0}}⋅e^{\frac{F⋅Δx_{B}^{†}}{k_{B}T}}+ p_{0}⋅e^{− \frac{F⋅Δx_{C}^{†}}{k_{B}T}}⋅(\frac{1}{k_{A0}} ⋅ e^{\frac{F⋅Δx_{A}^{†}}{k_{B}T}}− \frac{1}{k_{B0}} ⋅ e^{\frac{F⋅Δx_{B}^{†}}{k_{B}T}})}
+$$
+
+In a similar fashion, an expression for the translocation velocity can be derived for the linear model depicted in Figure 2C.
+
+$$
+\tau_{linear}=\frac{1}{k_{L}}+\frac{1}{k_{H}}+\frac{1}{\alpha∙[ATP]}+\frac{1}{k_{0}}
+$$
+
+
+
+$$
+d_{linear}=d
+$$
+
+
+
+$$
+V_{linear}=\frac{d_{linear}}{\tau_{linear}}
+$$
+
+Here kL and kH are the rates of the force-sensitive transitions responsible for the drop in velocity at low forces (0–15 pN) and high forces (40 pN and above). kH represents the rate of the force-generating transition, i.e. phosphate release (most likely), and is given by a simple Arrhenius-like dependence:
+
+$$
+k_{H}(F)=k_{H0}⋅e^{− \frac{F⋅Δx_{H}^{†}}{k_{B}T}}
+$$
+
+As described in the main text, kL saturates at a certain force (~15 pN), and could be written as follows:
+
+$$
+k_{L}(F)=k_{L0}⋅(1+\beta⋅e^{−\frac{F⋅Δx_{L}^{†}}{k_{B}T}})
+$$
+
+The final expression for Vlinear is:
+
+$$
+V_{linear}=\frac{d}{\frac{1}{k_{0}}+\frac{1}{\alpha⋅[ATP]}+\frac{1}{k_{L0}⋅(1+\beta⋅exp(−F⋅Δx_{L}^{†}/(k_{B}T)))}+\frac{1}{k_{H0}}⋅exp(F⋅Δx_{H}^{†}/(k_{B}T))}
+$$
+
+### Fitting the consolidated force-velocity curve to the linear model
+
+The linear model provides two values for the distance to the transition state, $Δx_{H}^{†}=0.4\pm0.2nm$ at high forces and $Δx_{L}^{†}=1.3\pm0.5nm$ at low forces. A typical energy landscape for a molecular motor contains both a chemical axis, which captures the sequential chemical transitions a motor undergoes as it generates mechanical work, and a mechanical axis, which captures the physical movement of the motor along a distance coordinate (Bustamante et al., 2004). The distance to the transition state Δx† is the distance the motor must move along the mechanical coordinate during the force-sensitive step in order to commit itself to stepping. If a motor directly couples a chemical transition to the force-generating step, in what is classically referred to as a ‘power stroke’, the motor will move approximately along a diagonal across the chemical and mechanical axes, and Δx† would typically be < Δxstep, where Δxstep is the distance the motor moves per step size. The value for $Δx_{H}^{†}=0.4\pm0.2nm$ is smaller than and consistent with a 2 bp step size (0.68 nm) power stroke mechanism previously determined for SpoIIIE (Liu et al., 2015) and likely coupled to Pi release.
+
+The physical interpretation of the other distance to the transition state, $Δx_{L}^{†}=1.3\pm0.5nm$ is less clear. We speculate that the initial decrease in velocity induced by force was attributed to motor deformation; the measured distance to the transition state $Δx_{L}^{†}=1.3\pm0.5nm$ is consistent with transition state values observed for single-molecule unfolding of native state proteins, typically $Δx^{†}<2nm$ for native state protein unfolding (Bustamante et al., 2004; Elms et al., 2012). However, the motor is clearly still active at forces >15 pN. It is possible that the measured value of $Δx_{L}^{†}$ corresponds to the mechanical coordinates of a partial unfolding pathway.

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/002pd6e78 Division of Cardiology, Department of Medicine, Massachusetts General Hospital, Harvard Medical School Boston United States
+1. Division of Cardiology, Department of Medicine, Massachusetts General Hospital, Harvard Medical School Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
 
 † Corresponding author
 

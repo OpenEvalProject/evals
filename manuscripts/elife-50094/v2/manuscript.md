@@ -44,21 +44,45 @@ Here, we analyzed the transcriptome and the translatome of (lymph)angiogenic gro
 
 ## Results
 
-## Most (lymph)angiogenic genes are not induced at the transcriptome level of hypoxic cardiomyocytes
+### Most (lymph)angiogenic genes are not induced at the transcriptome level of hypoxic cardiomyocytes
 
 In order to analyze the expression of angiogenic and lymphangiogenic growth factors in hypoxic cardiomyocytes, the HL-1 cell line was chosen: although immortalized, it keeps the beating phenotype specific to cardiomyocyte (Claycomb et al., 1998). HL-1 cells were submitted to increasing durations of hypoxia, from 5 min to 24 hr, and their transcriptome was analyzed on a Fluidigm Deltagene PCR array targeting 96 genes of angiogenesis, lymphangiogenesis and/or stress (Figure 1, Figure 1—figure supplement 1, Supplementary file 1). Data showed a significant increase of Vegfa, PAI-1 and apelin (Apln) mRNA levels, with a peak at 8 hr of hypoxia for Vegfa and PAI1 and 24 hr for Apln. These three genes are well-described HIF1 targets (Forsythe et al., 1996; Kietzmann et al., 1999; Ronkainen et al., 2007). However, although 56% of the detected genes were induced over 1.5-fold, few of them were strongly induced. Furthermore, the mRNA levels of several major angio- or lymphangiogenic factors, such as FGF2 and VEGFC, were strongly decreased after 4 hr or 8 hr of hypoxia. These data indicate that the transcriptional response to hypoxia in cardiomyocytes is not the major mechanism controlling the expression of (lymph)angiogenic factors, suggesting that post-transcriptional mechanisms are involved.
 
-## mRNAs of most (lymph)angiogenic genes are recruited into polysomes in hypoxic cardiomyocytes
+![Figure 1.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig1-v2.jpg)
+
+**Figure 1.:** Total RNA was purified from HL-1 cardiomyocytes submitted to increasing durations (from 5 min to 24 hr) of hypoxia at 1% O2, as well as from normoxic cardiomyocytes as a control. cDNAs were synthesized and used for a Fluidigm deltagene PCR array dedicated to genes related to (lymph)angiogenesis or stress (Supplementary file 6). Analysis was performed in three biological replicates (cell culture well and cDNA), each of them measured in three technical replicates (PCR reactions). Relative quantification (RQ) of gene expression during hypoxia was calculated using the 2–ΔΔCT method with normalization to 18S rRNA and to normoxia. mRNA levels are presented as histograms for the times of 4 hr, 8 hr and 24 hr, as the fold change of repression (red) or induction (green) normalized to normoxia. Non-regulated mRNAs are represented in blue. The threshold for induction was set at 1.5. When the RQ value is inferior to 1, the fold change is expressed as −1/RQ. The percentage of repressed, induced, and non-regulated mRNAs is indicated for each duration of hypoxia. For shorter durations of 5 min to 2 hr, the percentages are shown in Figure 1—figure supplement 1. The detailed values for all of the durations of hypoxia are presented in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Total RNA was purified from HL-1 cardiomyocytes submitted to increasing durations (from 5 min to 24 hr of hypoxia) at 1% O2, as well as from normoxic cardiomyocytes as a control. cDNA was synthesized and used for a Fluidigm deltagene PCR array dedicated to genes related to (lymph)angiogenesis or stress (Supplementary file 6). Relative quantification (RQ) of gene expression during hypoxia was calculated using the 2–ΔΔCT method with normalization to 18S and to normoxia. The percentages of repressed (red), induced (green) and non-regulated (blue) mRNAs are shown for the shorter durations of hypoxia. The data for the longer durations are shown in Figure 1. The threshold was set at 1.5 as in Figure 1. The detailed values for all of the durations of hypoxia are presented in Supplementary file 1.
+
+### mRNAs of most (lymph)angiogenic genes are recruited into polysomes in hypoxic cardiomyocytes
 
 On the basis of the fact that mRNAs that are present in polysomes are actively translated, we tested the hypothesis of translational induction by analyzing the recruitment of mRNAs into polysomes. This experiment was performed in early and late hypoxia. The polysome profile showed that translational activity in normoxic HL-1 cells was low but decreased after 4 hr of hypoxia, with a shift of the polysome to monosome ratio from 1.55 to 1.40 (Figure 2A). Eukaryotic translation initiation factor 4E-binding protein 1 (4E-BP1) appeared as a single band and its phosphorylation profile did not change upon hypoxia, suggesting that this protein is already hypophosphorylated in normoxia in these cells (Figure 2—figure supplement 1A and B). By contrast, translation blockade was confirmed by the strong phosphorylation of eIF2α (Figure 2B, Figure 2—figure supplement 1C). 94% of the genes of the (lymph)angiogenic array showed a more sustained recruitment into polysomes under hypoxic conditions (Figure 2C, Supplementary file 2). This translational induction not only targets genes that encode major angiogenic factors and their receptors (e.g. Vegfa, Fgf1, Pdgfa, Fgfr3, Vegfr2), but also genes involved in cardiomyocyte survival in ischemic heart (Igf1, Igf1r) or in inflammation (BAI1, Tgfb). These data suggest that, in cardiomyocytes, the main response of (lymph)angiogenic genes to early hypoxia is not transcriptional, but translational.
 
-## IRES-containing mRNAs are more efficiently mobilized into polysomes under hypoxic conditions
+![Figure 2.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig2-v2.jpg)
+
+**Figure 2.:** (A-C) In order to isolate translated mRNAs, polysomes from HL-1 cardiomyocytes in normoxia or after 4 hr of hypoxia at 1% O2 were purified on a sucrose gradient, as described in 'Materials and methods'. Analysis was performed using a fluidigm PCR array from three biological replicates (cell culture well and cDNA), each of them measured in three technical replicates (PCR reactions). P/M ratio (polysome/monosome) was determined by delimiting the 80S and polysome peaks by taking the lowest plateau values between each peak and by calculating the area under the curve (AUC). Then the sum of area values of the four polysome peaks was divided by the area of the 80S peak (A). Translation blockade was measured by eIF2α phosphorylation quantification by Jess capillary Simple Western, normalized to the Jess quantification of total proteins (as described in 'Materials and methods'). Three independent experiments were done; a representative experiment is shown (B). RNA was purified from polysome fractions and from cell lysate before loading. cDNA and PCR arrays were performed as in Figure 1. Polysomes profiles are presented for normoxic and hypoxic cardiomyocytes. Relative quantification (RQ) of gene expression during hypoxia was calculated using the 2–ΔΔCT method with normalization to 18S rRNA and to normoxia. mRNA levels (polysomal RNA/total RNA) are shown as fold change of repression (red) or induction (green) in hypoxia normalized to normoxia as in Figure 1C. The threshold for induction was set at 1.5. When the RQ value is inferior to 1, the fold change is expressed as −1/RQ. The detailed values are available in Supplementary file 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) 4E-BP1 expression (A) and phosphorylation (B), as well as eIF2α expression (C), in normoxia and hypoxia (8 hr) were analyzed and quantified by capillary Simple Western, as described in 'Materials and methods'. The quantified values, expressed in arbitrary units of luminescence (AUC), are normalized to total proteins. Analysis of eIF2α phosphorylation is shown in Figure 2. Three independent experiments were performed; a representative experiment is shown.
+
+### IRES-containing mRNAs are more efficiently mobilized into polysomes under hypoxic conditions
 
 IRES-dependent translation has been reported to drive the translation of several mRNAs in stress conditions (Morfoisse et al., 2014; Holcik and Sonenberg, 2005; Conte et al., 2008; Morfoisse et al., 2015). Thus, we focused on the regulation of the different IRES-containing mRNAs present in the Fluidigm array (Figure 3). Interestingly, the only IRES-containing mRNA to be significantly induced by hypoxia at the transcriptome level was Vegfa (Figure 3A and Figure 3—figure supplement 1). Expression of the apelin receptor gene (Aplnr), which is presumably devoid of IRES but transcriptionally induced during hypoxia, is also shown for comparison.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) RQ values for the IRES-containing mRNA transcriptome (A) and translatome (B) extracted from the PCR arrays shown in Figures 1 and 2. The gene Aplnr (apelin receptor) was chosen as a control without an IRES. Vegfc and Fgf2 mRNAs, which are repressed in the transcriptome, were below the detection threshold in polysomes (ND). Histograms correspond to means ± standard deviation, with values for hypoxia compared to those for normoxia by a bilateral Student's test *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** RQ values for IRES-containing mRNA transcriptome kinetics extracted from the PCR arrays shown in Supplementary file 1. The gene Aplnr (apelin receptor) was chosen as a control without an IRES. Relative quantification (RQ) of gene expression in hypoxia was calculated using the 2–ΔΔCT method with normalization to 18S and to normoxia. Standard deviation is indicated. When the RQ value is inferior to 1, the fold change is expressed as −1/RQ. ND means ‘non detected’.
+
 The polysome recruitment of these IRES-containing mRNAs is shown in Figure 3B. Clearly, Fgf1, Vegfa, Vegfd, Cyr61, Hif1a and Igf1r mRNAs were recruited into polysomes under hypoxia, accumulating to levels 2 to 3 times those in normoxia, suggesting an important induction in terms of translation. By contrast, the recruitment of Aplnr mRNA into polysomes decreased about three times. The data are not available for Fgf2 and Vegfc mRNAs, which were not detectable. These results indicate that hypoxia in cardiomyocytes, although blocking global cap-dependent translation, induces the translation of all detectable IRES-containing angiogenic factor mRNAs. This mechanism occurs as soon as 4 hr after oxygen deprivation, thus corresponding to an early event in the hypoxic response.
 
-## IRESs of (lymph)angiogenic factor mRNAs are activated during early hypoxia
+### IRESs of (lymph)angiogenic factor mRNAs are activated during early hypoxia
 
 To confirm that the polysome recruitment of IRES-containing mRNAs actually corresponds to a stimulation of IRES-dependent translation, IRESs from FGF and VEGF mRNAs were introduced into a bicistronic dual luciferase gene expression cassette (Figure 4A). Two IRESs from non-angiogenic mRNAs, c-myc and EMCV IRESs, were used as controls. A negative control without IRES was provided by a hairpin inserted between the two cistrons (Créancier et al., 2000). The well-established bicistronic vector strategy, previously validated by us and others, allows the measurement of IRES activity, which is revealed by expression of the second cistron, LucF (Morfoisse et al., 2014; Créancier et al., 2000). The bicistronic cassettes were subcloned into lentivectors because HL-1 cells are not efficiently transfected by plasmids but can be easily transduced by lentivectors, with an efficiency of more than 80% (not shown). HL-1 cardiomyocytes were first transduced with the lentivector containing the FGF1 IRES and the kinetics of IRES-dependent translation and protein expression were than examined after between 1 hr and 24 hr of hypoxia. Luciferase activities were measured from cell extracts and IRES activities were reported as the LucF/LucR luminescence ratio.
 
@@ -68,11 +92,19 @@ Data showed an increase in IRES activity between 4 hr and 8 hr of hypoxia whe
 
 **Figure 4.:** (A–D) To measure IRES-dependent translation during hypoxia, HL-1 cardiomyocytes were transduced with bicistronic dual luciferase lentivectors (termed ‘Lucky-Luke’) containing different IRESs cloned between the genes of renilla (LucR) and firefly (LucF) luciferase (A). In bicistronic vectors, the translation of the first cistron LucR is cap-dependent, whereas translation of the second cistron LucF is IRES-dependent (Créancier et al., 2000). Cardiomyocytes transduced by the CRF1AL+ lentivector Lucky-Luke reporter containing FGF1 IRES were submitted to a hypoxia time-course (0 hr, 1 hr, 2 hr, 4 hr, 6 hr, 8 hr, 16 hr and 24 hr) and data from each time point were compared to those from normoxia with a non-parametric Mann-Whitney test (B). Endogenous FGF1 protein expression was measured by Jess capillary Simple Western of extracts of cardiomyocytes in normoxia or those submitted to 8 hr of hypoxia (normalized to Jess quantification of total proteins as described in 'Materials and methods'). Three independent experiments were performed; a representative experiment is shown (C). HL-1 cardiomyocytes transduced by different Lucky-Luke constructs were submitted to 4 hr, 8 hr or 24 hr of hypoxia and their luciferase activities were measured. IRES activities during hypoxia, expressed as LucF/LucR ratio, are normalized to those during normoxia. Histograms correspond to means ± standard deviation of the mean, data from hypoxic cardiomyocytes compared to those from normoxic cardiomyocytes with a non-parametric Mann-Whitney (M-W) test: *p<0.05, **p<0.01, ***<0.001, ****p<0.0001. For each IRES, the mean was calculated from nine cell culture biological replicates, each of them being the mean of three technical replicates (27 technical replicates in total but the M-W test was performed with n = 9). Detailed values of biological replicates are presented in Supplementary file 3. A no-IRES control was also used and values are presented in Supplementary file 3J.
 
-## Identification of IRES-bound proteins in hypoxic cardiomyocytes reveals vasohibin1 as a new RNA-binding protein
+### Identification of IRES-bound proteins in hypoxic cardiomyocytes reveals vasohibin1 as a new RNA-binding protein
 
 Early activation of angiogenic factor IRESs during hypoxia suggested that specific ITAFs may be involved between 4 and 8 hr of hypoxia. In an attempt to identify such ITAFs, we used the biomolecular analysis coupled to mass spectrometry (BIA-MS) technology, which had been validated for ITAF identification in two previous studies (Morfoisse et al., 2016; Ainaoui et al., 2015). Biotinylated RNAs corresponding to FGF1 (early activation), VEGFAa (no activation) and EMCV IRESs (late activation) were used as probes for BIA-MS. Hooked proteins from normoxic and hypoxic HL-1 cells were then recovered and identified (Figure 5A–B, Supplementary file 4). Surprisingly, except for nucleolin bound to VEGFAa and EMCV IRES in normoxia, no known ITAF was identified as being bound to these IRESs in normoxia or in hypoxia. Interestingly, besides several proteins unrelated to (lymph)angiogenesis, we detected the presence of vasohibin1 (VASH1), a protein described as an endothelial cell-produced angiogenesis inhibitor and for its role in stress tolerance and cell survival (Figure 5C) (Sato, 2012; Sato, 2015). This secreted protein has never been reported to have any RNA-binding activity. VASH1 interaction with the FGF1 IRES was detected after 4 hr or 8 hr of hypoxia, but not under normoxia (Supplementary file 4). This protein also interacted with the EMCV IRES both in normoxia and in hypoxia but not with the VEGFA IRES. In order to address the RNA-binding potential of VASH1, we performed an in silico analysis of VASH1 protein sequence that predicted two conserved RNA-binding domains (RBD) in the N- and C-terminal parts of the full-length protein, respectively (Figure 5C, Figure 5—figure supplement 1A and B). The direct interaction of VASH1 with FGF1, VEGFAa and EMCV IRESs was assessed by surface plasmon resonance using the full-length recombinant 44-kDa protein, resulting in the measurement of affinity constants of 6.5 nM, 8.0 nM and 9.6 nM, respectively (Figure 5D–F). These data indicate that VASH1 exhibits a significant RNA-binding activity.
 
-## Vasohibin1 is translationally induced in early hypoxia and is localized in nuclear and cytoplasmic foci
+![Figure 5.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig5-v2.jpg)
+
+**Figure 5.:** (A–F) Biotinylated IRES RNAs were transcribed in vitro and immobilized on the sensorchip of the BIAcore T200 optical biosensor device (A). Total cell extracts from normoxic or hypoxic HL-1 cardiomyocytes were injected into the device. Complex formation and dissociation were measured (see 'Materials and methods') (B). Bound proteins were recovered as described in 'Materials and methods'. and identified by mass spectrometry (LC-MS/MS) after tryptic digestion. The list of proteins bound in normoxia and hypoxia to FGF1, VEGFAa and EMCV IRESs is shown in Supplementary file 4. VASH1 protein was identified as being bound to FGF1 (hypoxia) and EMCV IRESs (hypoxia and normoxia), but not to VEGFA IRES. A diagram of VASH1 RNA-binding properties is shown, with VASH1 isoforms described by Sonoda et al. (2006) (C). The predicted RNA-binding domains (RBD1 and RBD2) shown in Figure 5‐figure supplement 1 that are conserved in mouse and human (C). Recombinant full-length 44-kDa VASH1 was injected into the Biacore T200 device containing immobilized FGF1 (D), VEGFAa (E) or EMCV (F) IRES as above. The affinity constants (KD) were calculated (D–F) with a single cycle kinetics (SCK) strategy.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) RNA-binding domains in mouse (A) and human (B) VASH1 proteins were predicted using BindN software (https://omictools.com/bindn-2-tool).
+
+### Vasohibin1 is translationally induced in early hypoxia and is localized in nuclear and cytoplasmic foci
 
 VASH1 has been previously described for its expression in endothelial cells but never in cardiomyocytes (Sato, 2012). The present BIA-MS study provides evidence that it is expressed in HL-1 cardiomyocytes (Supplementary file 4). We analyzed the regulation of VASH1 expression during hypoxia: Vash1 mRNA level strongly decreases after 4 hr of hypoxia whereas it is slightly upregulated after 8 hr (Supplementary file 1, Figure 6A). By contrast, analysis of Vash1 mRNA recruitment into polysomes showed a strong increase at 4 hr of hypoxia (about 7-fold) (Figure 6B), whereas Vash1 mRNA was not detectable in polysomes after 24 hr of hypoxia (Supplementary file 2). This indicates that Vash1 mRNA translation is strongly induced in early hypoxia. This was confirmed by capillary Simple Western immunodetection, which showed that VASH1 protein expression increases after 4 hr of hypoxia (Figure 6C). Moreover, VASH1 subcellular localization was analyzed by immunocytochemistry: VASH1 appeared as foci in both cytoplasm and nucleus (Figure 6D). The number of foci did not change, but their size significantly increased in hypoxia (Figure 6E and F).
 
@@ -80,11 +112,19 @@ VASH1 has been previously described for its expression in endothelial cells but 
 
 **Figure 6.:** (A–D) VASH1 expression was analyzed in HL-1 cardiomyocytes subjected to hypoxia at the transcriptome and translatome levels. A fluidigm RT qPCR array (Supplementary file 2) was performed with two biological replicates (cell culture and cDNA), each of them measured in two technical replicates (PCR reactions). Detailed values at 4 hr and 24 hr are presented in Supplementary file 2. As for Figure 2, total RNA was purified from the cell lysate of cardiomyocytes in normoxia or submitted to 4 hr, 8 hr or 24 hr of hypoxia (A). Polysomal RNA was purified from cardiomyocytes in normoxia or after 4 hr of hypoxia, from pooled heavy fractions containing polysomes (fractions 19–27) (B). Histograms correspond to mean ± standard deviation of the mean, with two-tailed t-test, *p<0.05, **p<0.01, ***<0.001 used to compare data from hypoxic and normoxic cardiomyocytes. VASH1 protein expression was measured by capillary Simple Western of extracts from cardiomyocytes in normoxia or submitted to 4 hr of hypoxia (C). VASH1 was immunodetected in HL-1 cardiomyocytes in normoxia or after 4 hr of hypoxia (D). DAPI staining allows to detect VASH1 nuclear localization (MERGE). VASH1 foci in the nucleus are shown in purple and those in the cytoplasm in green using Imaris software. The number of VASH1 foci was quantified in the nucleus and in the cytoplasm in normoxia and after 4 hr of hypoxia (n = 4–5 images with a total cell number of 149 in normoxia and 178 in hypoxia) (E). Boxplots of volume of vasohibin foci in normoxia and hypoxia (F). All foci above 0.5 μm3 were counted. Whiskers mark the 10% and the 90% percentiles with the mean in the center. One-way Anova with Tukey’s comparisons test was applied.
 
-## Vasohibin1 is a new ITAF that is active in early hypoxia
+### Vasohibin1 is a new ITAF that is active in early hypoxia
 
 The putative ITAF function of VASH1 was assessed by a knock-down approach using an siRNA smartpool (siVASH1). Transfection of HL-1 cardiomyocytes with siVASH1 was able to knock-down VASH1 mRNA with an efficiency of 73% (Figure 7A). The knock-down of VASH1 protein measured by capillary Western was only 59% (Figure 7B). This moderate knock-down efficiency was probably due to the long half-life of VASH1, superior to 24 hr (Figure 7—figure supplement 1). The effect of VASH1 knock-down was analyzed in HL-1 cells transduced with different IRES-containing bicistronic lentivectors in normoxia or after 8 hr of hypoxia. In normoxia, VASH1 knock-down generated a moderate increase of activity for several IRESs (13–16%), which was significant for VEGFD and EMCV IRESs (Figure 7C). By contrast, in hypoxia, VASH1 knock-down resulted in a strong decrease of FGF1 IRES activity, by 64%, whereas it did not significantly affect the other IRESs (Figure 7D). These data showed that VASH1 behaves as an activator of FGF IRES in hypoxia, whereas it tends to inhibit several IRESs in normoxia (Figure 7C).
 
-## Vasohibin1 has a wide impact on the recruitment of (lymph)angiogenesis mRNAs into polysomes
+![Figure 7.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig7-v2.jpg)
+
+**Figure 7.:** (A, B) VASH1 knock-down was performed in HL-1 cardiomyocytes using short-interfering (siRNA) smartpools targeting VASH1 (siVASH1) or control (siControl). VASH1 mRNA level was measured by RT-qPCR (A), and VASH1 protein expression was analyzed by the capillary Simple Western method using an anti-VASH1 antibody and quantified by normalization to total proteins. The experiments were reproduced twice, giving identical results. One of the two experiments is shown (B). Knock-down of VASH-1 was performed on cardiomyocytes transduced by a set of IRES-containing lentivectors used in Figure 4. (C, D) After 8 hr of hypoxia, IRES activities (LucF/LucR ratio) were measured in cell extracts from normoxic (C) and hypoxic cardiomyocytes (D). The IRES activity values have been normalized to the control siRNA. Histograms correspond to means ± standard deviation of the mean, and a non-parametric Mann-Whitney test was used to identify significant change from control levels: *p<0.05, **p<0.01. For each IRES the mean was calculated for nine cell culture biological replicates, each of these being the mean of three technical replicates (27 technical replicates in total but the M-W test was performed with n = 9). Detailed values of biological replicates are presented in Supplementary file 5.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50094/elife-50094-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–C) VASH1 half-life determination was performed by blocking protein synthesis with cycloheximide at 10 µg/mL, with time-course points at 0 hr, 4 hr, 6 hr, 8 hr, 16 hr and 24 hr. VASH1 (A) and P21 (B) protein stability was measured by capillary Simple Western, with normalization to the 0 hr time-course point. P21 was used as a control for its short half-life (C). Three independent experiments were performed. A representative experiment is shown.
+
+### Vasohibin1 has a wide impact on the recruitment of (lymph)angiogenesis mRNAs into polysomes
 
 In order to evaluate the possibility of a wider role for VASH1 in translational control, the (lymph)angiogenic factor mRNA polysome profile was analyzed in siVASH1-treated HL-1 cells in normoxia and after 8 hr of hypoxia (Figure 8, Supplementary file 7). VASH1 knock-down strongly affected the mobilization into polysomes of IRES-containing mRNAs, in normoxia and in hypoxia: Vegfd mRNA recruitment increased in normoxia, in concordance with the data shown in Figure 7C. Igf1r mRNA recruitment into polysomes decreased in hypoxia, whereas recruitment of Hif1a and Vegfa mRNAs increased. Unfortunately, Ffg1 and Vegfd mRNAs were not detected in hypoxia, whereas Fgf2 and Vegfc mRNAs were detected neither in normoxia nor in hypoxia in this array experiment, probably because they are poorly expressed. Globally, VASH1 depletion activated the polysome recruitment of 22% and 44% of the detected mRNAs in normoxia and in hypoxia, respectively, whereas it inhibited the recruitment into polysomes of 41% versus 29% of detected mRNAs. Although this approach does not provide information about the mechanism of action, it strongly suggests a wide impact of VASH1, direct or indirect, on translation control. Furthermore, these data confirm that VASH1 has a dual role and can be either an activator or an inhibitor of translation.
 
@@ -96,15 +136,15 @@ In order to evaluate the possibility of a wider role for VASH1 in translational 
 
 The present study highlights the crucial role of translational control in cardiomyocyte response to hypoxia. Up to now, although a few genes had been described for their translational regulation by hypoxia, it was thought that most genes are transcriptionally regulated. Here, we show that translational control, revealed by mRNA recruitment into polysomes during hypoxia, regulates the majority of the genes involved in angiogenesis and lymphangiogenesis. IRES-dependent translation appears to be a key mechanism in this process, as we show that most of the (lymph)angiogenic mRNAs that are known to contain an IRES are upregulated during hypoxia. Furthermore, our data reveal that IRESs of angiogenic factor mRNAs are activated during early hypoxia, whereas the IRESs of non angiogenic mRNAs are activated in late hypoxia. We have identified an angiogenesis- and stress-related protein, VASH1, as a new ITAF that is responsible for the activation of the FGF1 IRES in early hypoxia, whereas it tends to inhibit other IRES activities in normoxia. VASH1 depletion has a positive or negative impact on the recruitment of many (lymph)angiogenesis mRNAs into polysomes, suggesting that this protein is widely involved, directly or not, in translational control in response to stress.
 
-## Pathophysiological impact of a moderate stimulation of translation
+### Pathophysiological impact of a moderate stimulation of translation
 
 A striking feature of our data is that the stimulation of IRES activities by hypoxia in cardiomyocytes is moderate, only by 1.3–1.7-fold. Are such small changes in growth factor expression sufficient to alter cellular programs? Several reports demonstrate that the answer is affirmative. An example is VEGFC IRES activation by hypoxia previously shown in tumor cells (Morfoisse et al., 2014). A 2–3-fold increase in endogenous VEGFC expression has a drastic effect on lymphatic vessel growth. In another study, a 2-fold increase in VEGFD IRES activity resulting from heat shock was sufficient to increase lymphatic vessel diameter (Morfoisse et al., 2016). The FGF1 IRES is activated by 1.7–2-fold during myoblast differentiation, and this is sufficient to promote myotube formation controlled by FGF1 (Ainaoui et al., 2015). We have also observed that cellular IRESs have often been reported previously to have a moderate activity in cell culture, whereas they can be much more active than a viral IRES and drastically regulated in vivo (Créancier et al., 2000). This can be explained by the use of cells that are immortalized and not in their physiological environment, which renders them less sensitive to stimuli than cells in vivo. Globally, cellular IRESs show a lower degree of activation than viral IRESs, as illustrated by Braunstein et al. (2007), who report that the HIF1α IRES is stimulated by 1.6-fold during hypoxia, whereas the VEGFA IRES is stimulated by 2-fold and the EMCV IRESs by 3.5-fold.
 
-## Translational control in tumoral versus non-tumoral hypoxia
+### Translational control in tumoral versus non-tumoral hypoxia
 
 Most studies of gene expression in response to stress have been performed at the transcriptome level in tumoral cells of different origins, whereas the present study is focused on cardiomyocytes. HL-1 cardiomyocytes are immortalized but still exhibit the beating phenotype (Claycomb et al., 1998). Thus, this cell model, although not perfectly mimicking cardiomyocyte behavior in vivo, is still close to a physiological state. The strong translational response to hypoxia revealed by our data, which differs from the transcriptional response usually observed in tumor cells, may reflect mechanisms occurring in cells that are not engaged in the cell transformation process leading to cancer, or at least not too far along this process. Indeed, HL-1 cells respond to hypoxia very early, whereas the various murine or human tumor cell lines described in other reports require a longer period of hypoxia for IRES-dependent translation to be stimulated. In human breast cancer BT474 cells, VEGFA, HIF and EMCV IRESs are all activated after 24 hr of hypoxia (Braunstein et al., 2007). In murine 4T1 and LLC cells (breast and lung tumor, respectively), as well as in human CAPAN-1 pancreatic adenocarcinoma, the VEGFA and VEGFC IRESs are activated after 24 hr of hypoxia whereas the EMCV IRES is not activated (Morfoisse et al., 2014). The same observation of late activation in 4T1 cells has been made for the FGF1 IRES, whereas this IRES is activated in early hypoxia in HL-1 cardiomyocytes (AC Godet and AC Prats, unpublished data) (Figure 4). These observations suggest that many tumoral cell lines that develop resistance to hypoxia are not able to govern subtle the regulations of gene expression in early hypoxia observed in HL-1 cells.
 
-## VASH1, an ITAF of early hypoxia
+### VASH1, an ITAF of early hypoxia
 
 We also consider the hypothesis that the important process of translational regulation observed in our study may be cardiomyocyte-specific. In such a case, IRES-dependent translation would depend on cell-type-specific ITAFs as well as the early response to hypoxia. These results are of great importance in regard to the acute stress response in ischemic heart that is necessary for recovery. By contrast, a delayed chronic response is known to be deleterious for heart healing (Silvestre et al., 2008). In agreement with this hypothesis, VASH1 expression is cell-type-specific: described up to now as endothelial-specific, this protein is not expressed in tumoral cells (Sato, 2012). In the present study, we show that this cell-type specificity extends to cardiomyocytes. Consistent with our data, VASH1 has been described as a key actor in striated muscle angio-adaptation (Kishlyansky et al., 2010). This protein may thus have a role in the early hypoxic response in a limited number of cell types. The ITAF role of VASH1 identified here is physiologically relevant if one considers the function of VASH1 in angiogenesis and stress tolerance (Sato, 2015). According to previous reports, VASH1 is induced during angiogenesis in endothelial cells and halts this process, but its overexpression also renders the same cells resistant to senescence and cell death induced by stress (Sato, 2015). Furthermore, it has been reported that VASH1 is induced after 3 hr of cell stress at the protein level but not at the transcriptional level in endothelial cells (Miyashita et al., 2012). This is in agreement with our observation in cardiomyocytes where VASH1, although downregulated in the transcriptome in early hypoxia, is more efficiently recruited in polysomes at the same time (Figure 6).
 
@@ -112,19 +152,253 @@ It is noteworthy that VASH1 itself seems to be induced translationally by stress
 
 The anti-angiogenic function of VASH1 may appear inconsistent with its ability to activate the IRES of an angiogenic factor. However, our data also suggest that VASH1 might be an activator or an inhibitor of (lymph)angiogenic factor mRNA translation. Such a double role may explain the unique dual ability of VASH1 to inhibit angiogenesis and to promote endothelial cell survival (Sato, 2015; Miyashita et al., 2012). This could result from the existence of different VASH1 isoforms of 44 kDa, 42 kDa, 36 kDa, 32 kDa and 27 kDa, resulting from alternative splicing and/protein processing (Kishlyansky et al., 2010; Kern et al., 2008; Sato, 2013; Sonoda et al., 2006). Interestingly, p42 and p27 are the main isoforms expressed in heart, where the p44 is undetectable (Kishlyansky et al., 2010; Sonoda et al., 2006). One can expect that the ITAF function is carried by p42, which contains the two predicted RNA-binding domains (Figure 5C, Figure 5—figure supplement 1). VASH1 has been observed in both the nucleus and the cytoplasm, and no striking nucleocytoplasmic relocalization is visible in response to hypoxia, whereas other ITAFs (such as hnRNPA1 or nucleolin) shuttle to the cytoplasm upon stress (Godet et al., 2019; Morfoisse et al., 2016; Lewis et al., 2007; Cammas et al., 2007; Dobbyn et al., 2008). Interestingly, VASH1, appears as foci whose size increases in hypoxia, suggesting that it could be partly translocated to stress granules. This translocation has been reported for other ITAFs, such as hnRNPA1 and polypyrimidine-tract-binding protein (PTB) (Godet et al., 2019; Borghese and Michiels, 2011; Guil et al., 2006).
 
-## VASH1 impact on translational control can be positive or negative
+### VASH1 impact on translational control can be positive or negative
 
 Among the IRESs analyzed in the present study, the FGF1 IRES is the only one strongly regulated by VASH1 in hypoxia. However, VASH1 was also bound to the EMCV IRES in the BIA-MS experiment, and calculation of affinity constants does not reveal significant differences in affinity for FGF1, VEGFA or EMCV IRES. This apparent inconsistency finds an explanation if one considers the effect of VASH1 in normoxia: IRESs tend to be activated upon VASH1 depletion, significantly so for VEGFD and EMCV IRESs. Such data suggest that VASH1 binding is probably not specific to a given IRES, but instead that different VASH1 partners are recruited in the IRESome and result in positive or negative effects of this ITAF. The hypothesis of a dual role for VASH1 in translational control is confirmed by the effect of VASH1 depletion on the translatome: recruitment into polysomes is affected negatively or positively for 60–70% of mRNAs, both in normoxia and in hypoxia. Although the RNA-binding ability of VASH1 has been clearly shown in the present study, we cannot affirm that VASH1 impact is direct for all of these mRNAs. Nevertheless, a dual role of activator and inhibitor has been reported for more than ten other ITAFs. Our hypothesis thus remains that the key to the regulation of IRES activity by ITAFs is not RNA-binding specificity but rather IRESome multi-partner composition (Godet et al., 2019).
 
 ## Materials and methods
 
-## Lentivector construction and production
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (firefly, Photinus)</td>
+      <td>Luc+</td>
+      <td>Promega</td>
+      <td></td>
+      <td>Modified firefly luciferase</td>
+    </tr>
+    <tr>
+      <td>Gene (Renilla reniformis)</td>
+      <td>LucR</td>
+      <td>Promega</td>
+      <td></td>
+      <td>Renilla luciferase</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TOP 10</td>
+      <td>Thermofisher Scientific</td>
+      <td></td>
+      <td>Transformation-competent cells (genotype : F– mcr A Δ (mrr –hsd RMS–mcr BC) φ 80lac ZΔ M15 ΔlacX 74 rec A1 ara D139 Δ (araleu) 7697 gal U gal K rps L (StrR) end A1 nup G)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293FT</td>
+      <td>Invitrogen</td>
+      <td>R700-07</td>
+      <td>High-transfection performance for lentivector production</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HT1080</td>
+      <td>ATCC</td>
+      <td>CCL-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>HL-1</td>
+      <td>William C. Claycomb (Claycomb et al., 1998)</td>
+      <td></td>
+      <td>Cardiomyocyte cell line with beating phenotype</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRHL+</td>
+      <td>Dryad, Supplementary file 8A (Morfoisse et al., 2014)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by an intergenic palindromic sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRF1AL+</td>
+      <td>Sequence available on Dryad, (Martineau et al., 2004; Ainaoui et al., 2015)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the human FGF1 IRES A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRFL+</td>
+      <td>Sequence available on Dryad, (Créancier et al., 2000)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the human FGF2 IRES</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRVAL+</td>
+      <td>Sequence available on Dryad, (Huez et al., 1998)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the human VEGFA IRESa</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRVBL+</td>
+      <td>Sequence available on Dryad, (Huez et al., 1998)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the human VEGFA IRESb</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRhVCL+</td>
+      <td>Sequence available on Dryad, (Morfoisse et al., 2014)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the human VEGFC IRES</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRhVDL+</td>
+      <td>Sequence available on Dryad, (Morfoisse et al., 2016)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the human VEGFD IRES</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRMP2L+</td>
+      <td>Sequence available on Dryad, (Nanbru et al., 1997)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the human c-myc IRES</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CREL+</td>
+      <td>Sequence available on Dryad, (Créancier et al., 2000)</td>
+      <td></td>
+      <td>Bicistronic SIN lentivector construct with the CMV promoter controlling expression of LucR and Luc+ separated by the EMCV IRES</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-dR8.91</td>
+      <td>Addgene</td>
+      <td></td>
+      <td>Trans-complementing plasmid containing the lentiviral protein genes (gag, pol, rev…)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G</td>
+      <td>Addgene</td>
+      <td>#8454</td>
+      <td>Trans-complementing plasmid containing VSV G envelope protein gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>Acell SMARTpool targeting VASH1 (siVASH1)</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td>siRNA targeting VASH1 (Supplementary file 8B)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>Control SMARTpool</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td>Scramble siRNA (Supplementary file 8B)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Deltagene assay</td>
+      <td>Fluidigm Corporation, oligonucleotide sequences available in Supplementary file 6</td>
+      <td></td>
+      <td>PCR array with 96 oligonucleotides primer couples</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-VASH-1</td>
+      <td>Abcam</td>
+      <td>EPR17420</td>
+      <td>Jess Western 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-VASH-1</td>
+      <td>Abcam</td>
+      <td>ab176114</td>
+      <td>IC 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FGF1-1</td>
+      <td>Abcam</td>
+      <td>EPR19989</td>
+      <td>Jess Western 1:25</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-p21</td>
+      <td>Santa Cruz</td>
+      <td>sc-6546 (F5)</td>
+      <td>Jess Western 1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti eIF2α</td>
+      <td>Cell Signaling Technology</td>
+      <td>9721</td>
+      <td>Jess Western 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-phospho-eIF2α</td>
+      <td>Cell Signaling Technology</td>
+      <td>2103</td>
+      <td>Jess Western 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-4EBP-1</td>
+      <td>Cell Signaling Technology</td>
+      <td>9452</td>
+      <td>Jess Western 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-4EBP-1</td>
+      <td>Cell Signaling Technology</td>
+      <td>9451</td>
+      <td>Jess Western 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary-HRP (ready to use rabbit ‘detection module’)</td>
+      <td>Protein Simple</td>
+      <td>DM-001</td>
+      <td>Jess Western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit alexa488</td>
+      <td>Jackson Immunoresearch</td>
+      <td>711-545-152</td>
+      <td>Secondary antibody for IC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td>Statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lentivector construction and production
 
 Bicistronic lentivectors coding for the renilla luciferase (LucR) and the stabilized firefly luciferase Luc+ (called LucF in the text) were constructed from the dual luciferase lentivectors described previously, which contained Luc2CP (Morfoisse et al., 2014; Morfoisse et al., 2016). The LucR gene used here is a modified version of LucR in which all the predicted splice donor sites have been mutated. The cDNA sequences of the human FGF1, -2, VEGFA, -C, -D, c-myc and EMCV IRESs were introduced between the first (LucR) and the second cistron (LucF) (Vagner et al., 1995; Nanbru et al., 1997; Prats et al., 2013). IRES sequence sizes are: 430 nt (FGF1), 480 nt (FGF2), 302 nt (VEGFAa), 485 nt (VEGFAb), 419 nt (VEGFC), 507 nt (VEGFD), 363 nt (c-myc), and 640 nt (EMCV) (Morfoisse et al., 2014; Morfoisse et al., 2016; Huez et al., 1998; Martineau et al., 2004; Vagner et al., 1995; Nanbru et al., 1997). The two IRESs of the VEGFA have been used and are called VEGFAa and VEGFAb, respectively (Huez et al., 1998). The hairpin negative control contains a 63 nt long palindromic sequence cloned between LucR and LucF genes (Supplementary file 8A). This control has been successfully validated in previous studies (Morfoisse et al., 2014; Créancier et al., 2000). The expression cassettes were inserted into the SIN lentivector pTRIP-DU3-CMV-MCS vector described previously (Prats et al., 2013). All cassettes are under the control of the cytomegalovirus (CMV) promoter. All vector sequences are available on Dryad (Ape format). Plasmid construction and amplification was performed in the bacteria strain TOP10 (Thermofisher Scientific, Illkirch Graffenstaden, France).
 
 Lentivector particles were produced using the CaCl2 method by tri-transfection with the plasmids pCMV-dR8.91 and pCMV-VSVG, CaCl2 and Hepes-buffered saline (Sigma-Aldrich, Saint-Quentin-Fallavier, France) into HEK-293FT cells. Viral supernatants were harvested 48 hr after transfection, passed through 0.45 μm PVDF filters (Dominique Dutscher SAS, Brumath, France) and stored in aliquots at −80°C until use. Viral production titers were assessed on HT1080 cells with serial dilutions of a lentivector expressing green fluorescent protein (GFP) and scored for GFP expression by flow cytometry analysis on a BD FACSVerse (BD Biosciences, Le Pont de Claix, France).
 
-## Cell culture, transfection and transduction
+### Cell culture, transfection and transduction
 
 293FT (Invitrogen R700-07) and HT1080 (ATCC CCL-121) cells were provided by Invitrogen (Villebon sur Yvette, France) and ATCC (Manassas, VA, USA), respectively. The 293FT cell line is derived from human embryonic kidney cells transformed by the simian virus 40 (SV40) large T antigen. This cell line is ideal for the production of high titers of lentivectors. HT1080 is a human transformed line expressing activated N-ras oncogene. It was used only for lentivector titration.
 
@@ -140,21 +414,21 @@ For lentivector transduction, 6.104 HL-1 cells were plated into each well of a s
 
 To measure protein half-life, HL-1 cardiomyocytes were treated with cycloheximide (InSolution CalBioChem) diluted in PBS to a final concentration of 10 µg/mL in well plates. Time-course points were taken by stopping cell cultures after 0 hr, 4 hr, 6 hr, 8 hr, 16 hr or 24 hr of incubation and subsequent capillary Western analysis of cell extracts.
 
-## Reporter activity assay
+### Reporter activity assay
 
 For reporter lentivectors, luciferase activities in vitro and in vivo were measured using a Dual-Luciferase Reporter Assay (Promega, Charbonnières-les-Bains, France). Briefly, proteins from HL-1 cells were extracted with Passive Lysis Buffer (Promega France). Quantification of bioluminescence was performed with a luminometer (Centro LB960, Berthold, Thoiry, France).
 
-## Capillary electrophoresis and Jess simple western
+### Capillary electrophoresis and Jess simple western
 
 Diluted protein lysate was mixed with fluorescent master mix and heated at 95°C for 5 min. 3 µL of protein mix containing protein normalization reagent, blocking reagent, wash buffer, target primary antibody (mouse anti-VASH-1 [Abcam EPR17420] diluted 1:100; mouse anti-FGF1 [Abcam EPR19989] diluted 1:25; mouse anti-P21 [Santa Cruz sc-6546 (F5)] diluted 1:10; rabbit anti eIF2α [Cell Signaling Technology 9721] diluted 1:50; mouse anti-phospho-eIF2α [Cell Signaling Technology 2103] diluted 1:50; rabbit anti-4EBP-1 [Cell Signaling Technology 9452] diluted 1:50; rabbit anti-phospho-4EBP-1 [Cell Signaling Technology 9451] diluted 1:50), secondary-HRP (ready-to-use rabbit ‘detection module’ [Protein Simple DM-001]), and chemiluminescent substrate were dispensed into designated wells in a manufacturer-provided microplate. The plate was loaded into the instrument (Jess, Protein Simple) and proteins were drawn into individual capillaries on a 25 capillary cassette (12–230 kDa) (SM-SW001). Data were analyzed using the compass software provided by the manufacturer. Normalization reagent allowed the detection of total proteins in the capillary through the binding of amine group by a biomolecule, and removed housekeeping proteins that can cause inconsistent and unreliable expression. No loading control is required with the Jess technology. The graphs in the figures show chemiluminescence values before normalization.
 
-## RNA purification and cDNA synthesis
+### RNA purification and cDNA synthesis
 
 Total RNA extraction from HL-1 cells was performed using TRIzol reagent according to the manufacturer’s instructions (Gibco BRL, Life Technologies, NY, USA). RNA quality and quantification were assessed using an Xpose spectrophotometer (Trinean, Gentbrugge, Belgium). RNA integrity was verified with an automated electrophoresis system (Fragment Analyzer, Advanced Analytical Technologies, Paris, France).
 
 500 ng RNA was used to synthesize cDNA using a High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Villebon-sur-Yvette, France). Appropriate no-reverse transcription and no-template controls were included in the PCR array plate to monitor potential reagent or genomic DNA contaminations, respectively. The resulting cDNA was diluted 10 times in nuclease-free water. All reactions for the PCR array were run in biological triplicates.
 
-## qPCR array
+### qPCR array
 
 The DELTAgene Assay was designed by the Fluidigm Corporation (San Francisco, USA). The qPCR-array was performed on BioMark with the Fluidigm 96.96 Dynamic Array, following the manufacturer’s protocol (Real-Time PCR Analysis User Guide PN 68000088). The list of primers is provided in Supplementary file 6. A total of 1.25 ng of cDNA was preamplified using PreAmp Master Mix (Fluidigm, PN 100–5580, 100–5581; San Francisco, USA) in the plate thermal cycler at 95°C for 2 min, 10 cycles at 95°C for 15 s and 60°C for 4 min. The preamplified cDNA was treated by endonuclease I (New England BioLabs, PN M0293L; Massachusetts, USA) to remove unincorporated primers.
 
@@ -162,15 +436,15 @@ The preamplified cDNA was mixed with 2x SsoFast EvaGreen Supermix (BioRad, PN 17
 
 18S rRNA was used as a reference gene and all data were normalized on the basis of 18S rRNA level. Hprt was also assessed as a second reference gene but was not selected as its level was not stable during hypoxia. Relative quantification (RQ) of gene expression was calculated using the 2–ΔΔCT method. When the RQ value was inferior to 1, the fold change was expressed as −1/RQ. The oligonucleotide primers used are detailed in Supplementary file 6.
 
-## Polysomal RNA preparation
+### Polysomal RNA preparation
 
 HL-1 cells were cultured in 150 mm dishes. 15 min prior to harvesting, cells were treated with cycloheximide at 100 μg/ml. Cells were washed three times in PBS cold containing 100 μg/mL cycloheximide and scraped in the PBS/cycloheximide. After centrifugation at 3000 rpm for 2 min at 4°C, cells were lysed by 450 μl hypotonic lysis buffer (5 mM Tris-HCL [pH7.5]; 2.5 mM MgCl2; 1.5 mM KCl). Cells were centrifuged at 13,000 rpm for 5 min at 4°C, before the supernatants were collected and loaded onto a 10–50% sucrose gradient. The gradients were centrifuged in a Beckman SW40Ti rotor at 39,000 rpm for 2.5 hr at 4°C without brake. Fractions were collected using a Foxy JR ISCO collector and UV optical unit type 11. RNA was purified from pooled heavy fractions containing polysomes (fractions 19–27), as well as from cell lysate, before gradient loading.
 
-## Preparation of biotinylated RNA
+### Preparation of biotinylated RNA
 
 The FGF1, VEGFA or EMCV IRESs was cloned in pSCB-A-amp/kan plasmid (Agilent) downstream from the T7 sequence. The plasmids were linearized and in vitro transcription was performed with a MEGAscript T7 kit (Ambion), according to the manufacturer’s protocol, in the presence of Biotin-16-UTP at 1 mM (Roche), as previously described (Ainaoui et al., 2015). The synthesized RNA was purified using an RNeasy kit (Qiagen).
 
-## BIA-MS experiments
+### BIA-MS experiments
 
 BIA-MS studies based on surface plasmonic resonance (SPR) technology were performed on a BIAcore T200 optical biosensor instrument (GE Healthcare), as described previously (Morfoisse et al., 2016; Ainaoui et al., 2015). Immobilization of biotinylated IRES RNAs was performed on a streptavidin-coated (SA) sensorchip in HBS-EP buffer (10 mM Hepes [pH 7.4], 150 mM NaCl, 3 mM EDTA, 0.005% surfactant P20) (GE Healthcare). All immobilization steps were performed at a flow rate of 2 µl/min with a final concentration of 100 µg/ml.
 
@@ -178,7 +452,7 @@ Binding analyses were performed with normoxic or hypoxic cell protein extracts a
 
 Eluted protein samples from BIA experiment were digested in gel with 1 µg of trypsin (sequence grade, Promega) at 37°C. Peptides were then subjected to LC-MS/MS analysis. The peptide mixtures were loaded on a YMC-Triart C18 150 × 300 µm capillary column (particle diameter 3 µm) connected to a RS3000 Dionex HPLC system. The run length gradient (acetonitrile and water) was 30 min. Then, on the AB Sciex 5600+ mass spectrometer, data were acquired with a data-dependent analysis. Data were then loaded on Mascot software (Matrix Science) that attributes peptide interpretations to MS/MS recorded scans. The higher the score, the lower the probability of a false positive (a score of 20 corresponds to a 5% probability of a false positive).
 
-## Surface plasmon resonance assays
+### Surface plasmon resonance assays
 
 For kinetic analysis, immobilization of biotinylated FGF1 IRES RNA was performed on a streptavidin-coated (SA) sensorchip in HBS-EP buffer (10 mM Hepes [pH 7.4], 150 mM NaCl, 3 mM EDTA, 0.005% surfactant P20) (GE Healthcare). The immobilization step was performed at a flow rate of 2 µl/min with a final concentration of 100 µg/ml. The total amount of immobilized FGF1 IRES RNA was 1500 RU.
 
@@ -186,7 +460,7 @@ Binding analyses were performed with recombinant protein VASH1 (Abnova H00022846
 
 A Single-Cycle Kinetics (SCK) analysis to determine association, dissociation and affinity constants (ka, kd, and KD respectively) was carried out by injecting different protein concentrations (16.25–300 nM). Binding parameters were obtained by fitting the overlaid sensorgrams with the 1:1. Langmuir binding model of the BIA evaluation software version 3.0.
 
-## Immunocytology
+### Immunocytology
 
 Cells were plated on glass coverslips and incubated for 4 hr of normoxia or hypoxia. They were fixed with cold methanol at −20°C for 5 min, washed three times with PBS, and permeabilized for 1 min with 0.1% Triton. Then, cells were incubated for 5 min with blocking solution (1% FBS, 0.5% BSA) and 30 min with anti-VASH1 antibody (1/50; abcam ab176114) and Alexa 488 conjugated anti-mouse secondary antibody. Images were acquired with a LSM780 Zeiss confocal microscope, camera lens x60 with Z acquisition of 0.36 μM. A single plan is shown Figure 6C.
 
@@ -194,6 +468,6 @@ Imaris software was used to represent vasohibin staining in Figure 6C. To differ
 
 Using Imaris software, the mean number of vasohibin foci was counted and the volume of vasohibin foci was quantified, a threshold was applied and all particles above 0.5 μm3 were selected and quantified.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using two-tailed Student's t-tests (Figure 3), Mann-Whitney tests (Figure 4 and Figure 7) or one-way Anova with Tukey’s comparisons test (Figure 6), *p<0.05, **p<0.01, ***<0.001, ****<0.0001. Data are expressed as mean ± standard deviation.

@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02mb95055 Centre for Brain and Cognitive Development, Birkbeck, University of London London United Kingdom
-2. https://ror.org/00240q980 Department of Development and Social Psychology, University of Padova Padova Italy
-3. https://ror.org/00240q980 Department of Information Engineering, University of Padova Padova Italy
-4. https://ror.org/013meh722 Department of Psychology, University of Cambridge Cambridge United Kingdom
-5. https://ror.org/02jx3x895 Department of Medical Physics and Biomedical Engineering, University College London London United Kingdom
+1. Centre for Brain and Cognitive Development, Birkbeck, University of London London United Kingdom ([ROR:02mb95055](https://ror.org/02mb95055))
+2. Department of Development and Social Psychology, University of Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
+3. Department of Information Engineering, University of Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
+4. Department of Psychology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+5. Department of Medical Physics and Biomedical Engineering, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Work with single modalities has demonstrated that social selectivity in core reg
 
 ## Results
 
-## Naturalistic social stimuli elicit expected increases in broadband EEG activity
+### Naturalistic social stimuli elicit expected increases in broadband EEG activity
 
 Five-month-old infants (n=42) viewed naturalistic social and non-social stimuli (Figure 1a) while we concurrently measured EEG and broadband NIRS. Fourier transform of continuously recorded EEG data from 32 channels (n=35) in 1 s segments across the time course of stimulus presentation confirmed robust broadband increases in neural activity in response to social versus non-social stimuli (Figure 1b, replicating [Jones et al., 2015]).
 
@@ -47,17 +47,25 @@ Five-month-old infants (n=42) viewed naturalistic social and non-social stimuli 
 
 **Figure 1.:** (a) Illustration of the paradigm. (b) Scalp topographies of the grand average root mean square (RMS) power for theta, alpha, beta, and gamma frequency bands (averaged across participants, averaged across the stimulus period) for the social minus non-social condition.The orange stars indicate statistically significant electroencephalography (EEG) electrodes where an increase in activity was observed (e.g. increase in response to the social condition compared to the non-social condition); a double line indicates significance after false discovery rate (FDR) correction.
 
-## Haemodynamic and metabolic coupling and oscillatory activity spatially overlap
+### Haemodynamic and metabolic coupling and oscillatory activity spatially overlap
 
 We used a method that we have previously validated to integrate haemodynamic and metabolic signals from the bNIRS data (n=25) to investigate the relationship between the two signals (Siddiqui et al., 2021; Pinti et al., 2021). Using this method, we obtained indices that indicated whether specific brain regions either had a high level of coordinated coupling between haemodynamics and metabolism (i.e. coupled increases in metabolic function and oxygenated blood flow) or a mismatched coupling (i.e. an increase in metabolic function and a concurrent decrease in oxygenated blood flow). This revealed distinct locations sensitive to social (Figure 2b) and non-social (Figure 2d) processing; the topography of these locations is similar to the topography of differentiated broadband EEG activity (Figure 2a and c), particularly for haemodynamic and metabolic coupling at channels 12 and 14 and EEG theta band activity.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84122/elife-84122-fig2-v3.jpg)
 
-**Figure 2.:** a) social and (c) non-social conditions.The black dots show the locations of the electroencephalography (EEG) electrodes while the orange circles represent the broadband near-infrared spectroscopy (bNIRS) channels. Locations of high haemodynamic and metabolic coupling for (b) social and (d) non-social condition. (b and d) are reproduced from Figure 7 in Siddiqui et al., 2021.
+**Figure 2.:** The black dots show the locations of the electroencephalography (EEG) electrodes while the orange circles represent the broadband near-infrared spectroscopy (bNIRS) channels. Locations of high haemodynamic and metabolic coupling for (b) social and (d) non-social condition. (b and d) are reproduced from Figure 7 in Siddiqui et al., 2021.
 
-## Coupled signals highlight specialised activation in the temporal parietal junction
+### Coupled signals highlight specialised activation in the temporal parietal junction
 
 We then convolved the time course of the block-averaged within-hemisphere EEG time-series responses with an infant-specific haemodynamic response function (HRF) (n=14; Figure 3). A general linear model (GLM) approach was then used to identify false discovery rate (FDR)-corrected associations between all EEG locations and the bNIRS channels that showed significant coupling between the metabolic and haemodynamic response (Figure 2b and d). In line with the results shown in Figure 2b and Figure 2d, we expected the spatial coupling between bNIRS and EEG to differ for the social and non-social conditions. We predicted that for the social condition, we would observe coordinated increases in haemodynamic/metabolic activity (HbO2 and oxCCO) and neural oscillatory activity (positive associations between bNIRS and EEG) in the beta and gamma frequency bands over the temporo-parietal region. Meanwhile, we expected that for the non-social condition, we would observe coordinated decreases in haemodynamic/metabolic (HbO2 and oxCCO) activity and neural oscillatory activity (also resulting in positive associations between bNIRS and EEG) over the temporo-parietal region and coordinated increases over the parietal region. We expected negative associations between HHb and oxCCO for both conditions. We predicted that the comparison of social versus non-social would show associations between bNIRS and EEG were stronger for the social condition.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84122/elife-84122-fig3-v3.jpg)
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84122/elife-84122-fig3-figsupp1-v3.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84122/elife-84122-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** The colour bar represents the t-values from the general linear model (GLM) analysis with a positive t-value representing a significant, positive connection between the broadband near-infrared spectroscopy (bNIRS) channel and EEG electrode while a negative t-value represents a negative connection.
 
 Figure 3—figure supplement 1 shows the individual statistical comparisons of the social (red colour scale) and non-social (blue colour scale) conditions. For both conditions, bNIRS-EEG coupling was consistently observed between bNIRS channel 14 and various EEG channels, which were positioned over the parietal and superior temporal sulcus-temporal parietal junction regions, respectively. For the social condition, a coupled increase in haemodynamic/metabolic activity and neural oscillatory activity was observed in the beta, gamma, and high-gamma frequency bands, which was primarily concentrated in the temporo-parietal region (e.g. bNIRS channel 14 and EEG electrodes Pz, PO4). A consistent pattern of coupling with neuronal activity was observed across chromophores particularly for the beta band. For the non-social condition, no coupling was observed between haemodynamics and neural activity (i.e. HbO2 and HHb) for the low-frequency theta and alpha frequency bands. Meanwhile, a coupled increase in metabolic activity and neural activity was observed between bNIRS channel 14 and occipital and parietal EEG locations (O2, PO8, P10, P4 for the theta band and P10 for the alpha band). Moreover, in the high-frequency beta, gamma and high-gamma bands, coupling was observed primarily for HHb and oxCCO between bNIRS channel 14 and occipital, and parietal EEG locations (Oz, O2, and PO8). A consistent pattern of coupling was observed between HHb and oxCCO. Several long-range associations were also observed such as those in the beta frequency bands between bNIRS channels 12 and 13 and EEG locations TP8 and T8 respectively for the social condition for HbO2 and between bNIRS channel 14 and EEG locations C2 and Cz for the non-social condition for HHb and oxCCO.
 
@@ -83,21 +91,21 @@ The methods we developed could be broadly applied to study both neurotypical and
 
 Our work has several limitations. We used naturalistic stimuli to maximise ecological validity; however, this reduces our ability to probe the function of the temporal-parietal junction across specific stimulus dimensions and this is an important target for future work. Limitations of current technology meant we recorded from the right hemisphere only and thus cannot determine the specificity of our findings to left temporal-parietal junction; engineering advances are required to produce whole-head bNIRS devices. Moreover, we only studied one age group of infants between 4 and 7 months; therefore, we could not investigate developmental change.
 
-## Conclusion
+### Conclusion
 
 Energy metabolism and neural activity are known to be tightly coupled in order to meet the high energetic demands of the brain, both during a task (Jeong et al., 2006; Lundgaard et al., 2015) and at rest (Rocher et al., 2003). It has been hypothesised that the level of correspondence between energy metabolism and neuronal activity may be an indicator for brain specialisation (Jeong et al., 2006; Shokri-Kojori et al., 2019; Vaishnavi et al., 2010). Here, we developed a system to simultaneously measure multichannel broadband NIRS with EEG in 4- to 7-month-old infants to investigate the neurovascular and neurometabolic coupling. We presented a novel study combining bNIRS and EEG and show stimulus-dependent coupling between haemodynamic, metabolic, and neural activity in the temporal-parietal junction. The results highlight the importance of investigating the energetic basis of brain functional specialisation and opens a new avenue of research which may show high utility for studying neurodevelopmental disorders and in clinical populations where these basic mechanisms are altered.
 
 ## Methods
 
-## Participants
+### Participants
 
 The study protocol was approved by the Birkbeck Ethics Committee, ethics approval number 161,747. Participants were forty-two 4- to 7-month-old infants (mean age: 179±16 days; 22 males and 20 females); parents provided written informed consent to participate in the study, for the publication of the research and additionally for the publication and use of any photographs taken during the study of the infant wearing the NIRS-EEG headgear. Inclusion criteria included term birth (37–40 weeks); exclusion criteria included known presence or family history of developmental disorders. The sample size was determined by performing a power analysis of existing data using G*Power.
 
-## Experimental procedure
+### Experimental procedure
 
 The experimental stimuli were designed using Psychtoolbox in Matlab (Mathworks, USA) and consisted of social and non-social videos. The social videos consisted of a variety of full-colour video clips of actors performing nursery rhymes such as ‘pat-a-cake’ and ‘wheels on the bus’. The non-social videos consisted of dynamic video clips of moving mechanical toys. The visual and auditory components of both social and non-social videos were matched. These videos have been used extensively in prior infant studies in both EEG (Jones et al., 2015) and NIRS studies (Lloyd-Fox et al., 2009; Lloyd-Fox et al., 2014). Both social and non-social experimental conditions were presented alternatingly for a varying duration between 8 and 12 s. The baseline condition consisted of static transport images, for example cars and helicopters, which were presented for a pseudorandom duration of 1–3 s each for a total of 8 s. Following the presentation of the baseline condition, a fixation cross in the shape of a ball or a flower appeared in the centre of the screen to draw the infant’s attention back to the screen in case the infant had become bored during the baseline period. The following experimental condition was then presented once the infant’s attention was on the fixation cross. Figure 1a depicts the order of stimulus presentation. All infants sat in their parent’s lap at an approximate distance of 65 cm from a 35-in screen which was used to display the experimental stimuli. The study began with a minimum 10 s rest period to draw the infant’s attention towards the screen during which the infant was presented with various shapes in the four corners of the screen. Following this, the baseline and experimental stimuli were presented alternatingly until the infant became bored or fussy.
 
-## Data acquisition and array placement
+### Data acquisition and array placement
 
 bNIRS and EEG data was acquired simultaneously and the bNIRS optodes and EEG electrodes were positioned on the head using custom-built, 3D printed arrays which were embedded within a soft neoprene cap (Neuroelectrics, Spain). Figure 5a and b shows the locations of bNIRS optodes and EEG electrodes on the head. Figure 1b shows the combined bNIRS-EEG headgear positioned on an infant. The array was designed to allow measurement from several cortical regions which included occipital, parietal, temporal, and central regions to allow investigation of neurovascular coupling in different cortical regions that are expected to be activated by dynamic stimuli.
 
@@ -105,7 +113,7 @@ bNIRS and EEG data was acquired simultaneously and the bNIRS optodes and EEG ele
 
 **Figure 5.:** (a) Locations of bNIRS channels (grey circles) over the occipital cortex and the right hemisphere and locations of the bNIRS sources (orange circles) and detectors (green circles) relative to EEG 10/20 locations. Channels shown in blue (3, 6, 8, and 10) were excluded from the analysis (b) Locations of the 32 EEG electrodes.
 
-## Broadband NIRS
+### Broadband NIRS
 
 Brain haemodynamic (Δ[HbO2], Δ[HHb]) and metabolic changes (Δ[oxCCO]) were measured using an in-house broadband NIRS system developed at University College London (Phan et al., 2016). The bNIRS system consisted of two light sources that consisting of halogen light bulbs (Phillips) that emitted light in the near-infrared range (504–1068 nm). The light was directed to the infant’s head through customised bifurcated optical fibres (Loptek, Germany), allowing each light source to split into two pairs of light sources. This formed a total of four light sources at the participant-end and each pair of light sources were controlled by a time multiplexing mechanism whereby one pair of light sources was on every 1.4 s. The system also consisted of 14 detector fibres at the participant-end which were connected to two spectrometers, 7 for each spectrometer (in-house developed lens spectrographs and PIXIS512f CCD cameras; Princeton Instruments). The configuration of 4 light sources and 14 detectors formed a total of 19 measurement channels. These were positioned over the occipital cortex and the right hemisphere as shown in Figure 5a. The source detector separation was 2.5 cm.
 
@@ -113,7 +121,7 @@ Data were analysed in Matlab (Mathworks, USA) using in-house scripts. First, for
 
 For each infant, intensity counts (or photon counts) from each of the 14 detectors were used to assess the signal-to-noise ratio (SNR) at each channel and the channels with intensity counts lower than 2000 or higher than 40,000 were excluded (Phan et al., 2016). If an infant had more than 60% of channels excluded, they were excluded from the study. At the group level, five channels over the occipital cortex were excluded due to poor SNR in majority of infants (channel 3 excluded in 64% of infants, channel 6 excluded in 83% of infants, channel 7 excluded in 64% of infants, channel 8 excluded in 79% of infants) and one channel over the right hemisphere was excluded in 100% of infants due to a damaged optical fibre. The average number of blocks included at each channel was 6.
 
-## EEG
+### EEG
 
 EEG was used to measure neural activity simultaneously to haemodynamic and metabolic activity using the Enobio EEG system (Neuroelectrics, Spain) which is a wireless gel-based system. The system consisted of 32 electrodes, the locations of which are shown in Figure 5b. The sampling rate of the system was 500 Hz. The experimental protocol in Psychtoolbox sent event markers to both bNIRS and EEG systems using serial port communication which was then used to synchronise the bNIRS and EEG.
 
@@ -121,13 +129,23 @@ All data were analysed using the EEGlab Toolbox (Schwartz Centre for Computation
 
 Within each block (consisting of the baseline period and the stimulus period), each artefact-free 1 s segment was subjected to a power analysis to calculate the average root mean square (RMS) power for both low- and high-frequency bands – theta (3–6 Hz), alpha (8–12 Hz), beta (13–30 Hz), gamma (20–60 Hz), and high gamma (60–80 Hz), within each 1 s segment. This then yielded the average RMS power across the block (baseline period + following stimulus period). Baseline correction was performed by subtracting the average of the 2 s of the baseline period from the entire block. This will be referred to as the ‘block baseline correction’ from here on. RMS power was chosen as the metric to correlate bNIRS and EEG data as previous studies have demonstrated that task-related BOLD changes are best explained by RMS (Kilner et al., 2005; Rosa et al., 2010). The blocks were then averaged across trials to obtain an averaged RMS response per participant. A portion of the averaged RMS power was then entered into a GLM analysis described below – this consisted of 8 s of the stimulus period. Figure 6—figure supplement 1 provides a visual depiction of how the RMS power was derived from the pre-processed EEG data. For each participant, the RMS power was also averaged across the stimulus period for statistical analysis of the EEG data. For each frequency band, statistical t-tests were performed on this averaged RMS power comparing the social condition versus the baseline (RMS power was averaged during the baseline period), the non-social condition versus the baseline, and social versus non-social. The FDR procedure using the Benjamin-Hochberg method (Benjamini and Hochberg, 1995) was performed to correct for multiple comparisons, across the 32 EEG channels.
 
-## Data analysis
+### Data analysis
 
 Figure 6—figure supplement 2 outlines the data analysis pipelines for both bNIRS and EEG data, as well as the procedure for the combined bNIRS-EEG analysis.
 
-## Combined NIRS-EEG analysis
+### Combined NIRS-EEG analysis
 
 A GLM (Friston et al., 1994) approach was employed to investigate the relationship between the bNIRS haemodynamic and metabolic data with the EEG neural data. Figure 6 shows the physiological relationship between EEG neural activity and the bNIRS haemodynamic and metabolic signals. The canonical GLM typically uses a model of the expected haemodynamic response, that is the HRF, to predict the haemodynamic signal. However, given the differences in the haemodynamic response in adults and infants, the standard adult HRF model cannot be assumed for infant data. For example, infants display a delay in their haemodynamic responses (Schroeter et al., 2004; Shimada and Hiraki, 2006; Minagawa-Kawai et al., 2011). In addition, the analogous of the HRF is not established for the metabolic response (i.e. the metabolic response function [MRF]). Therefore, the first step of this analysis involved reconstructing the HRF for HbO2 and HHb and the MRF for oxCCO before combing bNIRS and EEG data.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/84122/elife-84122-fig6-v3.jpg)
+
+**Figure 6.:** High-frequency neural activity causes the release of neurotransmitters such as glutamate and noradrenaline which bind to either N-methyl-D-aspartate (NMDA) receptors in interneurons or metabotropic glutamate receptors (mGluR) or adrenaline receptors in astrocytes. In both cases, this causes an influx of calcium (Ca2+) which in turn leads to an increase in adenosine triphosphate (ATP) production through the mitochondrial electron transport chain (ETC). As a by-product, in interneurons, nitric oxide (NO) is produced in the interneurons which dilates arterioles to increase blood flow leading to increased oxygen delivery in surrounding brain regions. Alternatively, in astrocytes derivates of arachidonic acid (AA) include prostaglandins (PG) and epoxyeicosatrienoic acids (EET) which cause vasodilation. This figure has been adapted from Harris et al., 2011.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84122/elife-84122-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Each 1 s segment is made up of 200 ms of the previous segment and 800 ms of the current segment. The task-averaged RMS power shown here is average theta power across all infants from a single channel for the purposes of outlining the procedure.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84122/elife-84122-fig6-figsupp2-v3.jpg)
 
 The reconstruction of the infant HRF and MRF started with block-averaging the HbO2, HHb, and oxCCO signals for social and non-social conditions within each infant. Based on our previous study (Siddiqui et al., 2021), we selected only the channels that displayed statistically significant responses to the contrast task versus baseline. The single subjects block-averaged responses were averaged across the social and non-social conditions and then across the significant channels. The resulting block-averaged responses were then averaged across the group to obtain a ‘grand average’ HbO2, HHb, and oxCCO response.
 
@@ -141,7 +159,7 @@ To constrain the analysis, we chose to investigate coupling of haemodynamic and 
 
 For the bNIRS analysis, data from 25 infants was included while for the EEG analysis, data from 35 infants were included. For the joint bNIRS-EEG analysis, only infants that had both valid bNIRS and EEG data for both social and non-social conditions were included and therefore 14 infants were included in this analysis.
 
-## Image reconstruction
+### Image reconstruction
 
 Image reconstruction was performed on the bNIRS data, at the individual subject level and then averaged across infants to produce a grand average that is shown in Figure 4. This was done to visually assess the similarities in the spatial distributions of the changes in HbO2, HHb, oxCCO. For this analysis, three additional long-distance channels were created over the right hemisphere (in addition to the 19 bNIRS channels) that had a source/detector separation of 4.3 cm to generate multiple and overlapping channels.
 

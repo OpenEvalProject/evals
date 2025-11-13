@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Department of Pathology and Laboratory Medicine, Western University London Canada
-2. https://ror.org/02grkyz14 Department of Computer Science, Western University London Canada
+1. Department of Pathology and Laboratory Medicine, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. Department of Computer Science, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 

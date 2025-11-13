@@ -32,7 +32,7 @@
 
 ## Abstract
 
-The organizational integrity of the adaptive immune system is determined by functionally discrete subsets of CD4 + T cells, but it has remained unclear to what extent lineage choice is influenced by clonotypically expressed T-cell receptors (TCRs). To address this issue, we used a high-throughput approach to profile the αβ TCR repertoires of human naive and effector/memory CD4 + T-cell subsets, irrespective of antigen specificity. Highly conserved physicochemical and recombinatorial features were encoded on a subset-specific basis in the effector/memory compartment. Clonal tracking further identified forbidden and permitted transition pathways, mapping effector/memory subsets related by interconversion or ontogeny. Public sequences were largely confined to particular effector/memory subsets, including regulatory T cells (Tregs), which also displayed hardwired repertoire features in the naive compartment. Accordingly, these cumulative repertoire portraits establish a link between clonotype fate decisions in the complex world of CD4 + T cells and the intrinsic properties of somatically rearranged TCRs.
+The organizational integrity of the adaptive immune system is determined by functionally discrete subsets of CD4+ T cells, but it has remained unclear to what extent lineage choice is influenced by clonotypically expressed T-cell receptors (TCRs). To address this issue, we used a high-throughput approach to profile the αβ TCR repertoires of human naive and effector/memory CD4+ T-cell subsets, irrespective of antigen specificity. Highly conserved physicochemical and recombinatorial features were encoded on a subset-specific basis in the effector/memory compartment. Clonal tracking further identified forbidden and permitted transition pathways, mapping effector/memory subsets related by interconversion or ontogeny. Public sequences were largely confined to particular effector/memory subsets, including regulatory T cells (Tregs), which also displayed hardwired repertoire features in the naive compartment. Accordingly, these cumulative repertoire portraits establish a link between clonotype fate decisions in the complex world of CD4+ T cells and the intrinsic properties of somatically rearranged TCRs.
 
 ## Introduction
 
@@ -44,35 +44,223 @@ Each effector/memory subset was characterized by distinct features that were rec
 
 ## Results
 
-## Experimental logic and study design
+### Experimental logic and study design
 
 We set out to investigate the naive origins and effector/memory relationships of classically defined CD4+ T-cell subsets in humans. An overview of the experimental workflow designed to capture these complexities is presented in Figure 1.
 
-## Effector/memory CD4+ T-cell subsets express physicochemically distinct TCRs
+![Figure 1.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig1-v2.jpg)
+
+**Figure 1.:** Top: schematic representation of the general questions addressed in this study. Bottom: schematic representation of the experimental pipeline. Naive and effector/memory CD4+ T-cell subsets were flow-sorted from peripheral blood samples obtained from healthy donors. Repertoire characteristics were extracted from normalized datasets obtained from each subset via high-throughput sequence analysis of all expressed TCRs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Single lymphocytes were identified in a forward scatter-area (FCS-A) versus forward scatter-height (FSC-H) plot. Viable CD3+CD14−CD19− cells were gated in the CD4+ lineage, and naive cells were excluded as CCR7+CD45RA+ events. Effector/memory subsets were then sorted as Tfh cells (CXCR5+), Th1 cells (non-Tfh/Th22/Treg CCR4−CCR6−CXCR3+), Th1-17 cells (non-Tfh/Th22/Treg CCR4−CCR6+CXCR3+), Th17 cells (non-Tfh/Th22/Treg CCR4+CCR6+CXCR3−), Th22 cells (CCR10+), Th2a cells (non-Tfh/Th22/Treg CCR4+CCR6−CRTh2+CXCR3−), Th2 cells (non-Tfh/Th22/Treg CCR4+CCR6−CRTh2−CXCR3−), or Tregs (CD25highCD127low).
+
+### Effector/memory CD4+ T-cell subsets express physicochemically distinct TCRs
 
 To investigate the TCR repertoires of functionally and phenotypically distinct effector/memory CD4+ T cells, we used polychromatic flow cytometry to identify and sort the commonly recognized Tfh, Th1, Th1-17, Th17, Th22, Th2a, Th2, and Treg subsets from the peripheral blood of healthy donors (n = 5). The gating strategy is described in Figure 1—figure supplement 1 and Table 1. Subset frequencies are listed in Table 2. The corresponding TCRα and TCRβ repertoires were obtained from purified mRNA using a high-throughput approach with template switch-based incorporation of unique molecular identifiers (UMIs) as described previously (Egorov et al., 2015).
+
+**Table 1.**
+ Gating strategy for the identification of effector/memory CD4+ T-cell subsets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gates 1 and 2</th>
+      <th>Gate 3</th>
+      <th>Gate 4</th>
+      <th>Gate 5</th>
+      <th>Gate 6</th>
+      <th>Gate 7</th>
+      <th>Gate 8</th>
+      <th>Subset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Live single CD3+ CD14− CD19− lymphocytes</td>
+      <td rowspan="8">CD4+</td>
+      <td rowspan="8">Exclude CCR7+ CD45RA+</td>
+      <td>CD25high CD127low</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Treg</td>
+    </tr>
+    <tr>
+      <td rowspan="7">CD25low CD127+</td>
+      <td>CXCR5+</td>
+      <td></td>
+      <td></td>
+      <td>Tfh</td>
+    </tr>
+    <tr>
+      <td>CCR10+</td>
+      <td></td>
+      <td></td>
+      <td>Th22</td>
+    </tr>
+    <tr>
+      <td rowspan="5">CXCR5− CCR10−</td>
+      <td>CXCR3+ CCR6−</td>
+      <td>CCR4−</td>
+      <td>Th1</td>
+    </tr>
+    <tr>
+      <td>CXCR3− CCR6+</td>
+      <td>CCR4+</td>
+      <td>Th17</td>
+    </tr>
+    <tr>
+      <td>CXCR3+ CCR6+</td>
+      <td>CCR4−</td>
+      <td>Th1-17</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CXCR3− CCR6−</td>
+      <td>CCR4+ CRTh2−</td>
+      <td>Th2</td>
+    </tr>
+    <tr>
+      <td>CCR4+ CRTh2+</td>
+      <td>Th2a</td>
+    </tr>
+  </tbody>
+</table>
+
+_See also Figure 1—figure supplement 1._
+
+**Table 2.**
+ Frequencies of sorted effector/memory CD4+ T-cell subsets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Tfh</th>
+      <th>Th1</th>
+      <th>Th1-17</th>
+      <th>Th17</th>
+      <th>Th22</th>
+      <th>Th2a</th>
+      <th>Th2</th>
+      <th>Treg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D1</td>
+      <td>5.44</td>
+      <td>1.91</td>
+      <td>1.44</td>
+      <td>3.06</td>
+      <td>2.60</td>
+      <td>1.04</td>
+      <td>4.86</td>
+      <td>3.99</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>5.82</td>
+      <td>3.29</td>
+      <td>3.50</td>
+      <td>3.14</td>
+      <td>6.64</td>
+      <td>1.53</td>
+      <td>9.24</td>
+      <td>6.92</td>
+    </tr>
+    <tr>
+      <td>D3</td>
+      <td>2.05</td>
+      <td>0.19</td>
+      <td>0.31</td>
+      <td>1.31</td>
+      <td>0.81</td>
+      <td>0.26</td>
+      <td>1.93</td>
+      <td>1.84</td>
+    </tr>
+    <tr>
+      <td>D4</td>
+      <td>6.70</td>
+      <td>2.33</td>
+      <td>2.11</td>
+      <td>4.22</td>
+      <td>2.02</td>
+      <td>0.57</td>
+      <td>7.19</td>
+      <td>3.95</td>
+    </tr>
+    <tr>
+      <td>D5</td>
+      <td>4.39</td>
+      <td>1.16</td>
+      <td>1.17</td>
+      <td>3.32</td>
+      <td>2.12</td>
+      <td>0.82</td>
+      <td>3.96</td>
+      <td>3.99</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>4.88</td>
+      <td>1.78</td>
+      <td>1.71</td>
+      <td>3.01</td>
+      <td>2.84</td>
+      <td>0.84</td>
+      <td>5.44</td>
+      <td>4.14</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>1.79</td>
+      <td>1.17</td>
+      <td>1.19</td>
+      <td>1.06</td>
+      <td>2.23</td>
+      <td>0.48</td>
+      <td>2.84</td>
+      <td>1.81</td>
+    </tr>
+  </tbody>
+</table>
+
+_Shown as % of live CD3+CD4+CD14−CD19− non-naive cells. Details in Figure 1—figure supplement 1._
 
 Statistical analyses of the curated TCRα and TCRβ datasets allowed us to describe the somatically rearranged third complementarity-determining region (CDR3) loops in terms of amino acid representation among distinct subsets of effector/memory CD4+ T cells. As in previous studies (Bolotin et al., 2017; Izraelson et al., 2018; Egorov et al., 2018; De Simone et al., 2019; Logunova et al., 2020), we focused on amino acid residues located in the middle of the CDR3 loop, which typically dominate contacts with the peptide component of any cognate pMHC (Egorov et al., 2018), and quantified several key physicochemical properties, including hydrophobicity (Kidera et al., 1985) and the predicted energy of TCR interactions averaged across diverse pMHCs (Miyazawa and Jernigan, 1996; Kosmrlj et al., 2008; Kosmrlj et al., 2010). This latter parameter provides a generic measure of interaction strength and depends mainly on the prevalence of aromatic and hydrophobic amino acid residues (Chakrabarti and Bhattacharyya, 2007). Hydrophobicity and the propensity to form strong interactions are common but not necessarily determinative features of highly cross-reactive TCRs (Kosmrlj et al., 2008; Kosmrlj et al., 2010; Stadinski et al., 2016).
 
 Although some distinct features, including high scores for hydrophobicity (low Kidera factor 4) and interaction strength in the Treg CDR3β repertoires, were expected from previous studies in mice (Bolotin et al., 2017; Izraelson et al., 2018; Logunova et al., 2020; Feng et al., 2015), more unanticipated characteristics were identified among other subsets of effector/memory CD4+ T cells (Figure 2). In particular, the Tfh CDR3β repertoires exhibited the lowest averaged scores for hydrophobicity (high Kidera factor 4; Figure 2C), interaction strength (Figure 2D), and volume (Figure 2F, reflects the number of bulky amino acid residues, namely W, R, K, Y, and F [Shugay et al., 2015]), and the highest averaged score for surface (Figure 2E, provides an in silico predictive measure of amino acid residues that remain unchanged in terms of accessibility and position in the liganded versus unliganded state [Martin and Lavery, 2012]). These exceptional features suggest that selection into the Tfh subset is driven by highly antigen-specific and minimally cross-reactive TCRs. It is tempting to speculate that such defined molecular patterns, which are mirrored in mature antibody repertoires (Grimsholm et al., 2020), act to minimize the risk of autoimmunity, given that Tfh cells play a critical role in the development of B-cell responses.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig2-v2.jpg)
+
+**Figure 2.:** (A–F) Averaged physicochemical characteristics were measured for the five amino acids in the middle of the CDR3β sequences obtained from each effector/memory CD4+ T-cell subset (n = 8) from each healthy donor (n = 5). Calculations were weighted by clonotype frequency. Unweighted analyses yielded similar results (data not shown). (A) Non-germline nucleotide (N) additions. (B) CDR3β length (nucleotides). (C) Kidera factor 4 (arbitrary scale). (D) Interaction strength (arbitrary scale). (E) Surface (arbitrary scale). (F) Volume (arbitrary scale). (G) Principal component analysis of the cumulative CDR3α and CDR3β repertoires from each subset of effector/memory CD4+ T cells (n = 28 parameters computed in VDJtools). Top contributing factors to PC1: CDR3β volume, mjenergy, core, beta, length, number of added nucleotides, strength, and alpha. Top contributing factors to PC2: CDR3α disorder, CDR3α Kidera factor 3, CDR3β disorder, CDR3α Kidera factor 1, CDR3α strength, CDR3β Kidera factors 2, 3, 4, and 10, and CDR3β charge. (H) Relative publicity measured for each effector/memory CD4+ T-cell subset as the number of identical or near-identical (maximum n = 1 mismatch) amino acid residue-defined CDR3β variants shared between the top 20,000 most frequent clonotypes in the corresponding repertoires from each pair of donors. Dashed lines indicate means. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Averaged physicochemical characteristics were measured for the five amino acids in the middle of the CDR3α sequences obtained from each effector/memory CD4+ T-cell subset (n = 8) from each healthy donor (n = 5). Calculations were weighted by clonotype frequency. (A) Non-germline nucleotide (N) additions. (B) CDR3α length (nucleotides). (C) Kidera factor 4 (arbitrary scale). (D) Interaction strength (arbitrary scale). (E) Surface (arbitrary scale). (F) Volume (arbitrary scale). *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean).
+
 In addition to Tregs, relatively high numbers of strongly interacting amino acid residues were observed in the Th22, Th2a, and Th2 CDR3β repertoires, which also scored highly in the volume analyses. Of particular note, Th22 cells expressed TCRs with the highest averaged number of random nucleotide (N) additions and the longest averaged CDR3β length, suggesting a distinct but as yet unknown selection process. Consistent physicochemical differences were also apparent between subsets considered as two distinct groups. In general, amino acid characteristics in the Th1/Th1-17/Th17 group resembled those of Tfh cells, whereas amino acid characteristics in the Th22/Th2a/Th2 group resembled those of Tregs (Figure 2A–F). Similar patterns were detected in the corresponding CDR3α repertoires (Figure 2—figure supplement 1). This overall dichotomy at the population level was clearly visualized using principal component analysis of the cumulative CDR3α and CDR3β repertoires (Figure 2G).
 
 Collectively, these data show that subset fate is associated with the physicochemical properties of amino acids in the middle of the CDR3α and CDR3β loops, which typically dominate TCR contacts with the peptide moiety in cognate pMHCs.
 
-## Repertoire diversity varies substantially among effector/memory CD4+ T-cell subsets
+### Repertoire diversity varies substantially among effector/memory CD4+ T-cell subsets
 
 In further analyses, we compared repertoire clonality and diversity across the same phenotypically defined subsets of effector/memory CD4+ T cells. Each cloneset was normalized to the lower bound of 16,000 randomly sampled UMI-labeled TCRα or TCRβ cDNA molecules (Izraelson et al., 2018). Consistent differences in the corresponding metrics were observed among the various subsets (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig3-v2.jpg)
 
-**Figure 3.:** + T-cell subsets.Observed diversity (top), the Chao1 estimator (middle), and the normalized Shannon-Wiener index (bottom) were calculated for each TCRα (left) and TCRβ repertoire (right) obtained from each effector/memory CD4+ T-cell subset (n = 8) from each healthy donor (n = 5). Dashed lines indicate means. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean).
+**Figure 3.:** Observed diversity (top), the Chao1 estimator (middle), and the normalized Shannon-Wiener index (bottom) were calculated for each TCRα (left) and TCRβ repertoire (right) obtained from each effector/memory CD4+ T-cell subset (n = 8) from each healthy donor (n = 5). Dashed lines indicate means. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean).
 
 Prominent clonal expansions, reflected by low normalized Shannon-Wiener indices, were apparent in the Th22 and Th2a subsets, indicating focused antigen-specific proliferation. In contrast, the Tfh subset was highly diverse, incorporating approximately 14,500 distinct sequence variants per 16,000 cDNA molecules. Similar levels of diversity have been observed in umbilical cord blood samples, which almost exclusively contain naive T cells (https://www.biorxiv.org/content/early/2018/09/05/259374). The absence of large clonal expansions among circulating Tfh cells concurs with the findings of a recent study, which also reported greater clonality among donor-matched samples of tonsil-resident Tfh cells (Brenna et al., 2020). Relatively high levels of diversity were also observed in the Th1, Th17, and Th2 subsets.
 
 Collectively, these results expose substantial variations in clonality and diversity among effector/memory subsets of CD4+ T cells, likely reflecting distinct selection processes driven by cognate interactions with distinct arrays of pMHCs.
 
-## Clonal transitions identify related subsets of effector/memory CD4+ T cells
+### Clonal transitions identify related subsets of effector/memory CD4+ T cells
 
 Effector/memory CD4+ T cells can switch from one functional subset to another, both in vitro, driven by cytokines, and in vivo, driven by changes in the microenvironment. For example, Th2 cells have been shown to adopt a Th1-like phenotype in mice after infection with lymphocytic choriomeningitis virus, which induces type I and type II IFNs (Hegazy et al., 2010). Conversely, Th1 and Th17 cells effectively transitioned into the Th2 subset after transfer into helminth-infected mice, whereas effector Tregs maintained a stable phenotype in the same model (Panzer et al., 2012). Previous studies have also shown that human effector Tregs are relatively stable, with rare transitions to the Th1 phenotype occurring only under extreme conditions (Zhou et al., 2009a; Krebs and Steinmetz, 2016; McClymont et al., 2011). However, experiments conducted in vitro or ex vivo are not sufficient to allow reliable quantitative estimates of plasticity among human effector/memory CD4+ T-cell subsets in vivo.
 
@@ -80,7 +268,27 @@ To address this issue, we measured relative overlap as the number of nucleotide-
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig4-v2.jpg)
 
-**Figure 4.:** + T-cell subsets.(A) Relative overlap between nucleotide-defined CDR3β repertoires obtained from donor-matched pairs of effector/memory CD4+ T-cell subsets. Clonotypes were matched on the basis of identical TRBV gene segments and identical CDR3β sequences. Data were normalized to the top 20,000 most frequent clonotypes and weighted by clonotype frequency (F2 metric in VDJtools). The dashed line indicates the mean (n = 5 donors). *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean). (B) Heatmap representations of the weighted overlap (F2 metric in VDJtools, left) and the estimated relative overlap of nucleotide-defined CDR3β clonotypes (calculated via the D metric in VDJtools, right) between donor-matched pairs of effector/memory CD4+ T-cell subsets.
+**Figure 4.:** (A) Relative overlap between nucleotide-defined CDR3β repertoires obtained from donor-matched pairs of effector/memory CD4+ T-cell subsets. Clonotypes were matched on the basis of identical TRBV gene segments and identical CDR3β sequences. Data were normalized to the top 20,000 most frequent clonotypes and weighted by clonotype frequency (F2 metric in VDJtools). The dashed line indicates the mean (n = 5 donors). *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean). (B) Heatmap representations of the weighted overlap (F2 metric in VDJtools, left) and the estimated relative overlap of nucleotide-defined CDR3β clonotypes (calculated via the D metric in VDJtools, right) between donor-matched pairs of effector/memory CD4+ T-cell subsets.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig5-v2.jpg)
+
+**Figure 5.:** Cytoscape network analysis schemes represent the number and size (frequency) of nucleotide-defined clonotype variants shared among the top 2000 most frequent CDR3β clonotypes in each subset. Each bubble represents one CDR3β clonotype. The size of each bubble is proportional to the frequency of each CDR3β clonotype in the corresponding repertoire. Shared clonotypes are depicted as connected clouds among the corresponding subsets. The size of each bubble in these clouds is proportional to the frequency of each CDR3β clonotype averaged across the maternal subsets. Representative plots were selected for illustrative purposes from donors D1, D3, and D5. (A) Th1/Th1-17/Th17. (B) Th17/Th22/Th2a/Th2. (C) Tregs versus other subsets. Only clonotypes shared with Tregs are shown. (D) Tfh cells versus other subsets. Only clonotypes shared with Tfh cells are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Cytoscape plots for each donor represent the number and size (frequency) of nucleotide-defined clonotype variants shared among the top 2000 most frequent CDR3β clonotypes in each subset. Details as in Figure 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Cytoscape plots for each donor represent the number and size (frequency) of nucleotide-defined clonotype variants shared among the top 2000 most frequent CDR3β clonotypes in each subset. Details as in Figure 5.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Cytoscape plots for each donor represent the number and size (frequency) of nucleotide-defined clonotype variants shared among the top 2000 most frequent CDR3β clonotypes in each subset. Only clonotypes shared with Tregs are shown. Details as in Figure 5.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Cytoscape plots for each donor represent the number and size (frequency) of nucleotide-defined clonotype variants shared among the top 2000 most frequent CDR3β clonotypes in each subset. Only clonotypes shared with Tfh cells are shown. Details as in Figure 5.
 
 The complementarity and relative functional proximity of the Th17 and Th22 subsets was described previously, albeit without direct evidence of clonal transitions in vivo (Eyerich et al., 2009; Akdis et al., 2012). However, the close relationships between the Th17 and Th2 subsets and between the Th22 and Th2a/Th2 subsets were unforeseen. Of note, several subsets, including Th17 and Th2 cells, shared large clonal expansions with the Th22 subset (Figure 5B and Figure 5—figure supplement 1). This observation appears to conflict with the dogma that Th22 cells are stable (Eyerich et al., 2009; Plank et al., 2017) and suggests that individual clonotypes can seed and/or transition among distinct subsets within the Th17/Th22/Th2a/Th2 group.
 
@@ -88,7 +296,7 @@ It has been suggested previously that Th1-17 cells represent a more mature form 
 
 Collectively, these findings suggest that plasticity is common between certain subsets, such as Th17/Th22 and Th17/Th2, but rare between other subsets, such as Th17/Treg and Th1/Th17 (Maggi et al., 2012). In addition, the Tfh and Treg subsets were largely discrete at the clonal level (Figures 4 and 5, and Figure 5—figure supplements 3 and 4). This latter observation contrasts with previous reports of Treg plasticity (Zhou et al., 2009a) but does not exclude the possibility of transient conversions from the committed Treg phenotype (Yang et al., 2008; Voo et al., 2009).
 
-## Publicity is a notable feature of Tfh cells and Tregs
+### Publicity is a notable feature of Tfh cells and Tregs
 
 To extend these analyses, we estimated the extent to which amino acid residue-defined CDR3β clonotypes in each subset were shared among donors, essentially providing a measure of publicity. The top 20,000 most frequent clonotypes were selected from each TCRβ cloneset to normalize the comparisons.
 
@@ -96,13 +304,25 @@ Publicity was observed most commonly among Tfh cells and Tregs, the latter in ag
 
 The relative paucity of N additions in these subsets could reflect low levels of terminal deoxynucleotidyl transferase (TdT) activity, especially among Tregs, some of which arise early in life (Tulic et al., 2012; Coutinho et al., 2005; Thiault et al., 2015; Darrigues et al., 2018). A similar phenomenon may likewise explain interindividual differences in publicity, given that all subset-specific effector/memory CD4+ T-cell repertoires in one donor were characterized by low numbers of N additions and relatively short CDR3β loops (Figure 2A,B).
 
-## Tregs display similar repertoire features in the naive and effector/memory pools
+### Tregs display similar repertoire features in the naive and effector/memory pools
 
 In general, naive CD4+ T cells are thought to be capable of differentiating into any effector/memory subset from the Th0 state, depending on the composite strength of TCR interactions with cognate pMHCs, costimulatory signals, and the cytokine microenvironment (Sad and Mosmann, 1994). However, this paradigm of multipotency has been challenged by the demonstration in several reports that at least some naive CD4+ T cells are predisposed to a specific functional program or even committed to a predetermined fate. This phenomenon was first described for thymic Tregs (tTregs), which maintain a largely stable phenotype in the periphery (Silva et al., 2016; Hoffmann et al., 2006). At the early immature double-negative stage, thymocytes are already predisposed to the Treg lineage via epigenetic modifications and increased expression of FoxP3 (Ohkura et al., 2012; Arvey et al., 2015). Other inputs are then required to confirm this commitment, including signals delivered by the IL-2 receptor and intermittent stimulation via high-affinity TCRs (Levine et al., 2014). A similar process of agonist-driven selection has been described for thymic Th17 cells in mice (Marks et al., 2009). Accordingly, subset fate may be imprinted at the progenitor stage (Feng et al., 2015), during thymic development (Li and Rudensky, 2016), after thymic emigration and before determinative antigen encounter (Fink, 2013), and/or during the key priming event that signals expansion and maturation (Figure 1).
 
 On the basis of these considerations, we reasoned that certain subset-specific repertoire features, at least in the case of Tregs, could be conserved between the corresponding naive and effector/memory pools. To investigate this prediction, we profiled the TCRα and TCRβ repertoires of naive CD4+ T cells flow-sorted as recent thymic emigrants (RTEs) (Kilpatrick et al., 2008), mature naive T cells, or naive Tregs from the peripheral blood of healthy donors (total, n = 12; twin pairs, n = 5).
 
 The naive Treg CDR3β repertoires were enriched for bulky, hydrophobic, and strongly interacting amino acid residues compared with the corresponding RTE and mature naive T-cell repertoires (Figure 6A and Figure 6—figure supplement 1). These observations are consistent with potent agonist-driven selection in the thymus (Feng et al., 2015; Jordan et al., 2001). In addition, naive Tregs expressed TCRs with shorter CDR3α and CDR3β loops. Similar features were observed in the effector/memory Treg compartment (Figure 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig6-v2.jpg)
+
+**Figure 6.:** (A) Repertoire analysis of RTEs (CD25−CD31+), mature naive T cells (mNaive; CD25−CD31−), and naive Tregs (nTreg; CD25high) from healthy donors (n = 12). Matched letters in the key indicate twin pairs. (B) Repertoire analysis of naive Th1-like cells (non-Treg CCR4−CXCR3+), naive Th2-like cells (non-Treg CCR4+CXCR3−), naive Tregs (CD25highCD127low), and the corresponding non-Treg CCR4−CXCR3− and non-Treg CCR4+CXCR3+ populations from healthy donors (n = 4) matching those shown in Figure 2. Averaged physicochemical characteristics were measured for the five amino acids in the middle of the CDR3β sequences obtained from each naive CD4+ T-cell subset. Calculations were weighted by clonotype frequency. Parameter details as in Figure 2. Dashed lines indicate means. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Repertoire metrics are shown for RTEs (CD25−CD31+), mature naive T cells (mNaive; CD25−CD31−), and naive Tregs (nTreg; CD25high) from healthy donors (n = 7). Matched letters in the key indicate twin pairs. Averaged physicochemical characteristics were measured for the five amino acids in the middle of the CDR3α sequences obtained from each naive CD4+ T-cell subset. Calculations were weighted by clonotype frequency. Parameter details as in Figure 2. Dashed lines indicate means. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (one-way ANOVA followed by the two-sample Welch t-test with Bonferroni correction for each group versus the mean).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57063/elife-57063-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Lymphocytes were identified in a forward scatter-area (FSC-A) versus side scatter-area (SSC-A) plot, and single cells were identified in FSC-A versus forward scatter-height (FSC-H) and FSC-A versus side scatter-width (SSC-W) plots. Naive cells were gated as viable CD3+CD4+CD8−CD14−CD19−CCR7+CD45RA+CD95− events, and subsets were sorted as naive Th1-like cells (non-Treg CCR4−CXCR3+), naive Th2-like cells (non-Treg CCR4+CXCR3−), or naive Tregs (CD25highCD127low), alongside the corresponding non-Treg CCR4−CXCR3− and non-Treg CCR4+CXCR3+ populations.
 
 To confirm and extend these findings, we conducted similar analyses of naive CD4+ T-cell subsets flow-sorted as Th1-like cells (non-Treg CCR4−CXCR3+), Th2-like cells (non-Treg CCR4+CXCR3−), and Tregs (CD25highCD127low) from healthy donors (n = 4) matching those shown in Figure 2. The corresponding non-Treg CCR4−CXCR3− and non-Treg CCR4+CXCR3+ populations were analyzed in parallel for comparative purposes.
 
@@ -136,22 +356,75 @@ Effector/memory CD4+ T-cell subsets are classified according to distinct patter
 
 ## Materials and methods
 
-## Samples
+### Samples
 
 Venous blood samples were collected from healthy adult donors (n = 17) directly into heparinized syringes or Vacutainer EDTA Tubes (BD Biosciences). Peripheral blood mononuclear cells (PBMCs) were isolated via density gradient centrifugation over Ficoll-Paque (PanEco) or Histopaque-1077 (Sigma-Aldrich). Ethical approval was granted by the institutional review committees at Cardiff University School of Medicine (16/55) and the Pirogov Russian National Research Medical University (2017/52). All donors provided written informed consent in accordance with the Declaration of Helsinki.
 
-## Flow cytometric sorting of effector/memory CD4+ T-cell subsets
+### Flow cytometric sorting of effector/memory CD4+ T-cell subsets
 
 PBMCs were stained immediately after isolation (n = 5 donors) with LIVE/DEAD Fixable Aqua (Thermo Fisher Scientific) and the following directly conjugated monoclonal antibodies: anti-CCR6–PE (clone 11A9), anti-CCR7–PE-Cy7 (clone 3D12), anti-CD14–V500 (clone M5E2), anti-CD19–V500 (clone HIB19), and anti-CRTh2–PE-CF594 (clone BM16) from BD Biosciences; anti-CCR4–BV605 (clone L291H4), anti-CD3–APC-Fire750 (clone SK7), anti-CD25–BV711 (clone MA251), anti-CD45RA–PE-Cy5 (clone HI100), anti-CD127–BV421 (clone A019D5), and anti-CXCR5–BV785 (clone J252D4) from BioLegend; anti-CCR10–APC (clone 314305) and anti-CXCR3–FITC (clone 49801.111) from R&D Systems; and anti-CD4–PE-Cy5.5 (clone S3.5) from Thermo Fisher Scientific. The gating strategy is described in Figure 1—figure supplement 1 and Table 1. Subsets were flow-sorted at >98% purity after exclusion of naive CCR7+CD45RA+ events from the Aqua−CD3+CD4+CD14−CD19− gate as Tfh cells (CXCR5+), Th1 cells (non-Tfh/Th22/Treg CCR4−CCR6−CXCR3+), Th1-17 cells (non-Tfh/Th22/Treg CCR4−CCR6+CXCR3+), Th17 cells (non-Tfh/Th22/Treg CCR4+CCR6+CXCR3−), Th22 cells (CCR10+), Th2a cells (non-Tfh/Th22/Treg CCR4+CCR6−CRTh2+CXCR3−), Th2 cells (non-Tfh/Th22/Treg CCR4+CCR6−CRTh2−CXCR3−), or Tregs (CD25highCD127low) using a modified FACSAria II (BD Biosciences). All cells (n = 6,000–150,000 per subset) were sorted directly into RLT buffer (Qiagen) containing 1% 2-mercaptoethanol (Sigma-Aldrich). Subset frequencies are listed in Table 2. Acquisition and post-sort data were analyzed using FlowJo software version 10.6.1 (Tree Star).
 
-## Flow cytometric sorting of naive CD4+ T-cell subsets
+### Flow cytometric sorting of naive CD4+ T-cell subsets
 
 To identify RTEs, mature naive T cells, and naive Tregs in the CD4+ lineage, PBMCs were stained immediately after isolation (n = 12 donors) with the following directly conjugated monoclonal antibodies: anti-CD4–PE (clone 13B8.2) and anti-CD27–PE-Cy5 (clone O323) from Beckman Coulter; and anti-CD25–eFluor450 (clone BC96), anti-CD31–PE-Cy7 (clone WM59), and anti-CD45RA–FITC (clone JS-83) from eBioscience. The gating strategy was described previously (Egorov et al., 2018). Subsets were flow-sorted at >98% purity from the CD4+CD27+CD45RA+ gate as RTEs (CD25−CD31+), mature naive T cells (CD25−CD31−), or naive Tregs (CD25high) using a FACS Aria III (BD Biosciences). To identify naive Th1-like cells, naive Th2-like cells, and naive Tregs in the CD4+ lineage, PBMCs were stained immediately after isolation (n = 4 donors) with LIVE/DEAD Fixable Aqua (Thermo Fisher Scientific) and the following directly conjugated monoclonal antibodies: anti-CCR7–PE-Cy7 (clone 3D12), anti-CD8–V500 (clone RPA-T8), anti-CD14–V500 (clone M5E2), and anti-CD19–V500 (clone HIB19) from BD Biosciences; anti-CCR4–BV605 (clone L291H4), anti-CD3–APC-Fire750 (clone SK7), anti-CD25–BV711 (clone MA251), anti-CD45RA–PE-Cy5 (clone HI100), anti-CD95–PE (clone DX2), and anti-CD127–BV421 (clone A019D5) from BioLegend; anti-CXCR3–FITC (clone 49801.111) from R&D Systems; and anti-CD4–PE-Cy5.5 (clone S3.5) from Thermo Fisher Scientific. The gating strategy is described in Figure 6—figure supplement 2. Subsets were flow-sorted at >98% purity from the Aqua−CD3+CD4+CD8−CD14−CD19−CCR7+CD45RA+CD95− gate as naive Th1-like cells (non-Treg CCR4−CXCR3+), naive Th2-like cells (non-Treg CCR4+CXCR3−), or naive Tregs (CD25highCD127low), alongside the corresponding non-Treg CCR4−CXCR3− and non-Treg CCR4+CXCR3+ populations, using a modified FACS Aria II (BD Biosciences). All cells (n = 260-150,000 per subset) were sorted directly into RLT buffer (Qiagen) containing 1% 2-mercaptoethanol (Sigma-Aldrich). Subset frequencies are listed in Table 3. Acquisition and post-sort data were analyzed using FlowJo software version 10.6.1 (Tree Star).
 
-## TCR sequencing and data analysis
+**Table 3.**
+ Frequencies of sorted naive CD4+ T-cell subsets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Th1-like CCR4−CXCR3+</th>
+      <th>Th2-like CCR4+CXCR3−</th>
+      <th>CCR4− CXCR3−</th>
+      <th>CCR4+ CXCR3+</th>
+      <th>Treg CD25high CD127low</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D1</td>
+      <td>1.75</td>
+      <td>5.46</td>
+      <td>44.80</td>
+      <td>0.23</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>0.77</td>
+      <td>6.77</td>
+      <td>20.40</td>
+      <td>0.32</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>D3</td>
+      <td>0.15</td>
+      <td>5.67</td>
+      <td>42.60</td>
+      <td>0.19</td>
+      <td>1.70</td>
+    </tr>
+    <tr>
+      <td>D4</td>
+      <td>0.16</td>
+      <td>6.33</td>
+      <td>33.10</td>
+      <td>0.05</td>
+      <td>1.11</td>
+    </tr>
+  </tbody>
+</table>
+
+_Shown as % of live CD3+CD4+CD8−CD14−CD19− naive cells. Details in Figure 6—figure supplement 2._
+
+### TCR sequencing and data analysis
 
 TCRα and TCRβ cDNA libraries were prepared using a Human TCR Kit (MiLaboratory LLC) with template switch-based incorporation of UMIs as described previously (Egorov et al., 2015). Libraries were sequenced in paired-end mode (150 + 150 bp) on a NextSeq500 (Illumina). Raw sequence data were analyzed using MIGEC software version 1.2.9 (Shugay et al., 2014). Briefly, UMI sequences were extracted from demultiplexed data using the Checkout utility, yielding sample barcode matches in ~90% of cases. Data were then assembled using the erroneous UMI filtering option in the Assemble utility. For most tasks, the minimum required number of reads per UMI was set at 1. For analyses of overlap and publicity, which are sensitive to even minor cross-sample contaminations, the minimum required number of reads per UMI was set at 3 (Egorov et al., 2015). In-frame TCRα and TCRβ repertoires were extracted using MiXCR software version 2.1.1 (Bolotin et al., 2017; Bolotin et al., 2018; Bolotin et al., 2015). At a threshold of 3 reads per UMI, the number of obtained UMI-labeled cDNA molecules per repertoire per sample ranged from 5300 to 303,500, and the number of CDR3 clonotype variants at the nucleotide level per repertoire per sample ranged from 1200 to 83,200. Normalization, data transformation, in-depth analyses, and statistical calculations were performed using R scripts and VDJtools software version 1.2.1 (Shugay et al., 2015). Analyses of averaged CDR3 characteristics were weighted by the abundance of each clonotype in each sample. Basic characteristics included CDR3 length, the number of N additions, interaction strength, hydrophobicity (Kidera factor 4), volume, and surface, which were selected in previous analyses of various somatically rearranged lymphocyte receptor datasets (Izraelson et al., 2018; Egorov et al., 2018; Davydov et al., 2018). The amino acid properties used in these analyses can be viewed at https://github.com/mikessh/vdjtools/blob/master/src/main/resources/profile/aa_property_table.txt. The strength feature reflects the predicted sum of interaction affinities between pairs of amino acids at the TCR-pMHC interface, Kidera factor 4 reflects the abundance of hydrophobic amino acids on an inverted scale, and the surface characteristic reflects the relative abundance of amino acids with no predicted changes in accessibility during TCR engagement with cognate pMHCs. Amino acid hierarchies by probability of active involvement at the protein-protein interface or conformational stability relative to the native form in the absence of an interaction were derived from previous work (Martin and Lavery, 2012), in which extensive cross-docking experiments were performed across 198 proteins and 300 partners in silico to infer the general roles of amino acids at protein-protein interfaces. Physicochemical characteristics were calculated and averaged for the five amino acid residues located in the middle of each CDR3 loop, which are most likely to contact the peptide epitope in any cognate pMHC (Egorov et al., 2018). Principal component analysis was performed using 28 parameters computed as the average across each CDR3α and CDR3β cloneset: Kidera factors (n = 10), strength, mjenergy, count (CDR3 length), NDN length, number of N insertions, vdins, djins, core, rim, volume, polarity, disorder, surface, alpha, beta, turn, charge, and hydropathy (VDJtools software version 1.2.1). No significant variations in V/J segment use were detected among subsets (data not shown). Network visualization was performed using Cytoscape (https://cytoscape.org). Repertoire overlap was analyzed using the unweighted D (reflecting the proportion of shared clonotypes between paired repertoires) and weighted F2 (reflecting the proportion of shared T cells between paired repertoires) metrics in VDJtools software version 1.2.1.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical analyses were performed on processed datasets in R. Multiple parameter inferences were estimated using ANOVA if the data were distributed normally or the Kruskal-Wallis test if any of the data were not distributed normally. The corresponding p values were calculated using the two-sample Welch t-test or the Wilcoxon rank sum test. The false discovery rate was controlled using Benjamini-Hochberg correction unless stated otherwise. Post-hoc tests were performed using the ggpubr package (https://CRAN.R-project.org/package=ggpubr).

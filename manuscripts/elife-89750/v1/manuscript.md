@@ -17,7 +17,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0388c3403 Key Laboratory of Animal Disease Resistance Nutrition of China Ministry of Education, Key Laboratory of Animal Disease resistant Nutrition and Feed of China Ministry of Agriculture and Rural Affairs, Key Laboratory of Animal Disease resistant Nutrition of Sichuan Province, Animal Nutrition Institute, Sichuan Agricultural University Chengdu China
+1. Key Laboratory of Animal Disease Resistance Nutrition of China Ministry of Education, Key Laboratory of Animal Disease resistant Nutrition and Feed of China Ministry of Agriculture and Rural Affairs, Key Laboratory of Animal Disease resistant Nutrition of Sichuan Province, Animal Nutrition Institute, Sichuan Agricultural University Chengdu China ([ROR:0388c3403](https://ror.org/0388c3403))
 
 † Corresponding author
 
@@ -35,47 +35,75 @@ In our study, we explored the effects of leucine on lipopolysaccharide (LPS)-ind
 
 ## Results
 
-## Leucine improves survival and inhibits cytokine storm in LPS-induced endotoxemic mice
+### Leucine improves survival and inhibits cytokine storm in LPS-induced endotoxemic mice
 
 Firstly, we determined whether leucine prevents LPS-induced acute endotoxemia by i.p. injection of 25 mg/kg LPS. The injection of a lethal dose of LPS caused the death of all mice within 72 hr. Providing 2% leucine from feed or 5% leucine from water improved survival rate of LPS-injected mice to 34% and 60%, respectively (Figure 1A). Thus, leucine appeared to protect against LPS-induced acute endotoxemia in mice.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig1-v1.jpg)
 
-**Figure 1.:** (A) Kaplan–Meier curve showing survival of the mice (n = 12). (B) Average daily weight gain of mice (n = 8). (C, D) Measurement of IL-6, IFN-γ, and TNF-α secretion in mouse serum and liver by enzyme-linked immunosorbent assay (ELISA) after treatment with LPS for 6 hr. (E–F) mRNA expression of Il6, Il1β, Nlrp3, Mcp1, and Inos, measured by real-time PCR in the liver and spleen. (G) mRNA expression of Il6, Il1b, Mcp1, Arg1, Mgl1, and Mgl2, measured by real-time PCR in the bone marrow. Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.Figure 1—source data 1.Figure 1A).Figure 1—source data 2.Figure 1B).Figure 1—source data 3.Figure 1C).Figure 1—source data 4.Figure 1D).Figure 1—source data 5.Figure 1E), spleen (Figure 1F), and bone marrow (Figure 1G).
+**Figure 1.:** (A) Kaplan–Meier curve showing survival of the mice (n = 12). (B) Average daily weight gain of mice (n = 8). (C, D) Measurement of IL-6, IFN-γ, and TNF-α secretion in mouse serum and liver by enzyme-linked immunosorbent assay (ELISA) after treatment with LPS for 6 hr. (E–F) mRNA expression of Il6, Il1β, Nlrp3, Mcp1, and Inos, measured by real-time PCR in the liver and spleen. (G) mRNA expression of Il6, Il1b, Mcp1, Arg1, Mgl1, and Mgl2, measured by real-time PCR in the bone marrow. Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.
 
 LPS-induced endotoxemia and death are partially due to systemic and local inflammation. We next investigated the effect of leucine on acute inflammation caused by non-lethal doses of LPS in mice. Mice fed leucine in the feed, drinking water, or a combination of both exhibited higher body weight gain than control mice before LPS stimulation (Figure 1B). In addition, LPS, compared with the control, significantly increased levels of the pro-inflammatory cytokines IL-6, IFN-γ, and TNF-α in both the serum and liver after 6 hr i.p. injection. Mice administered 2% leucine in the feed, 5% leucine in the drinking water, or a combination of both, compared with the LPS group, showed significantly lower cytokine levels in the serum and liver (Figure 1C,D). We also investigated expression of inflammation-related markers in various tissues. Compared with that in the LPS group, the expression of Il6, Il1b, Nlrp3, Mcp1, and Inos in liver and spleen was significantly lower in mice receiving 2% leucine from the feed, 5% leucine from the drinking water, or a combination of both (Figure 1E–G). In addition, mice receiving 2% leucine from the feed, 5% leucine from the drinking water, or a combination of both, compared with the LPS group, showed lower expression of Il6, Il1b, and Mcp1, and higher expression of the anti-inflammation-related markers Arg1, Mgl1, and Mgl2 in the bone marrow (Figure 1E–G).
 
 Collectively, our results indicated that 2% leucine from feed, 5% leucine from drinking water, or a combination of both significantly inhibits pro-inflammatory cytokine production in mice with LPS-induced endotoxemia.
 
-## Leucine regulates macrophage polarization in endotoxemic mice
+### Leucine regulates macrophage polarization in endotoxemic mice
 
 Inflammatory cytokines are derived primarily from a variety of immune cells, such as macrophages and neutrophils. Briefly, LPS i.p. injection resulted in significantly more white blood cells, neutrophils, monocytes, eosinophils, and basophils in the blood than observed in the control group. Providing leucine in the drinking water, feed, or both significantly decreased white blood cells, neutrophils, monocytes, eosinophils, and basophils (Figure 2A). Thus, the alleviation of inflammation and death in CSS might have been due to changes in immune cell populations and the regulation of immune cell differentiation by leucine.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig2-v1.jpg)
 
-**Figure 2.:** (A) White blood cell composition and proportion in mice (n = 8). (B) Gating strategy for macrophage flow cytometry in the bone marrow. (C) Percentages of CD45+, CD86+, CD206+, and CD86+/CD206+, detected by flow cytometry in the bone marrow (n = 8). (D) Percentages of CD45+, CD86+, CD206+, and CD86+/CD206+, detected by flow cytometry in the spleen (n = 8). (E) White blood cell composition and proportion in mice (n = 5–6). (F) Measurement of IL-6, IFN-γ, and TNF-α secretion in mouse serum by enzyme-linked immunosorbent assay (ELISA) after treatment with lipopolysaccharide (LPS) for 6 hr (n = 6). Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.Figure 2—source data 1.Figure 2A).Figure 2—source data 2.Figure 2C).Figure 2—source data 3.Figure 2D).Figure 2—source data 4.Figure 2E).Figure 2—source data 5.Figure 2F).
+**Figure 2.:** (A) White blood cell composition and proportion in mice (n = 8). (B) Gating strategy for macrophage flow cytometry in the bone marrow. (C) Percentages of CD45+, CD86+, CD206+, and CD86+/CD206+, detected by flow cytometry in the bone marrow (n = 8). (D) Percentages of CD45+, CD86+, CD206+, and CD86+/CD206+, detected by flow cytometry in the spleen (n = 8). (E) White blood cell composition and proportion in mice (n = 5–6). (F) Measurement of IL-6, IFN-γ, and TNF-α secretion in mouse serum by enzyme-linked immunosorbent assay (ELISA) after treatment with lipopolysaccharide (LPS) for 6 hr (n = 6). Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.
 
 Macrophages are derived from monocytes and are the main cells producing cytokines. Typically, macrophages polarize to pro-inflammatory (M1) and anti-inflammatory (M2) phenotypes, depending on their microenvironment (Locati et al., 2020). Therefore, we determined how leucine modulates macrophage polarization by performing flow cytometry sorting in endotoxemic mice. The immune cell population was labeled by CD45+, and CD11b+ and F4/80+ double-positive labeled macrophages were used. To determine the proportions of macrophage subsets, we used CD86+ and CD206+ as molecular markers for M1 and M2 macrophages, respectively (Figure 2B). Briefly, LPS i.p. injection significantly increased the percentage of CD86+ and decreased the percentage of CD206+ in both the bone marrow and spleen, thus suggesting that LPS i.p. injection led to a transition toward M1 polarization in mice (Figure 2C,D). In contrast, providing leucine in the drinking water, feed, or both decreased the percentage of CD86+ and increased the percentage of CD206+, thus indicating that leucine ameliorated inflammation in mice and decreased macrophage M1 polarization, but markedly promoted M2 polarization (Figure 2C,D). Together, these results indicated that the anti-inflammatory effects of leucine were probably mediated by modulating macrophage polarization, through suppressing M1 polarization but promoting M2 polarization.
 
 To further evaluated the role of macrophage in leucine-mediated alleviation of CSS, macrophages were depleted in mice by vein injection of clodronate-containing liposomes before administration of LPS. Macrophage depletion significantly eliminated the mitigating effect of leucine in endotoxemic mice by blood immune cells (Figure 2E) and serum inflammatory factors IL-6, TNF-α, and IFN-γ (Figure 2F).
 
-## Leucine promotes M2 polarization in BMDMs
+### Leucine promotes M2 polarization in BMDMs
 
 To further determine the effects of leucine on macrophage polarization, we induced BMDMs to differentiate into M1 or M2 macrophages through stimulation with LPS or IL-4, respectively (Figure 3A). LPS promoted M1 macrophage polarization, as indicated by increased release of the pro-inflammatory cytokines IL-6 and TNF-α, and induction of mRNA expression of Il1β, Tnfa, Il6, and Nlrp3 in BMDMs (Figure 3B, C). In LPS-stimulated cells, leucine decreased the secretion of IL-6 and TNF-α in culture supernatant and suppressed the expression of Il1β and Tnfα, particularly at 10 mM concentration (Figure 3B, C). However, the mRNA expression of Il6 and Nlrp3, which is regulated by NFκB, was uninfluenced by leucine treatment (Figure 3C). To rule out that leucine treatment was toxic to cells and thus indirectly regulated the inflammatory response, we examined the effects of 2 and 10 mM leucine on cell viability. The results revealed that cell viability was increased after 6 and 24 hr of 2 and 10 mM leucine treatment, further suggesting that leucine was a direct inhibitor of inflammatory cytokine production (Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic diagram of macrophage polarization. (B) Measurement of IL-6 and TNF-α secretion in cell culture supernatants by enzyme-linked immunosorbent assay (ELISA) (n = 6). (C) mRNA expression of Il1b, Tnfa, Il6, and Nlrp3, measured by real-time PCR in BMDMs (n = 6). (D, E) Detection of arginase-1 activity in the medium and BMDMs (n = 5–6). (F) BMDMs isolated from mice were stimulated with leucine, IL-4, or both, and the protein expression of Arg1 was determined. (G) mRNA expression of Arg1, Ym1, Fizz1, and Mgl2, measured by real-time PCR in BMDMs (n = 3–4). Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cell viability of 2 and 10 mM leucine treatments detected by CCK8 (n = 5). Student’s t-test was used to determine statistical significance, defined as **p < 0.01, ***p < 0.001, and ****p < 0.0001.
+
 Next, we investigated the effects of leucine on M2 macrophage polarization. IL-4 promoted M2 macrophage polarization, as indicated by increased activity of arginase-1, and induction of mRNA expression of Arg1, Ym1, Fizz1, and Mgl2 in BMDMs. Arg1, a hallmark feature of M2 macrophages, competes with inducible nitric oxide synthase for L-arginine, and decreases nitric oxide synthesis, thereby preventing local inflammation and tissue repair (Arlauckas et al., 2018). In IL-4-stimulated cells, leucine increased the activity of Arg1 in the culture supernatant and promoted the protein expression of Arg1, particularly when administered at 10 mM concentration (Figure 3D–F). Additionally, leucine promoted the mRNA expression of Arg1, Ym1, Fizz1, and Mgl2, thus further validating that leucine promotes M2 polarization (Figure 3G). Together, these findings suggested that leucine promotes M2 polarization in BMDMs.
 
-## mTORC1 mediates leucine-induced M2 polarization
+### mTORC1 mediates leucine-induced M2 polarization
 
 M2 polarization involves activation of signal transducer and activator of transcription 6 (STAT6), which directly mediates the transcriptional activation of M2 macrophage-specific genes such as Arg1 (Goenka and Kaplan, 2011). In general, IL-4 activates the STAT6 signaling pathway and consequently promotes Arg1 expression, thus contributing to M2 polarization (Yang et al., 2021). However, our results indicated that leucine did not further activate STAT6; therefore, leucine did not promote M2 polarization through the STAT6 pathway (Figure 4A). A key effector of leucine is believed to activate the mTORC1 protein kinase (Cangelosi et al., 2022). In our study, inhibiting mTORC1 was found to suppress Arg1 expression and inhibit leucine-mediated M2 polarization (Figure 4A and Figure 4—figure supplement 1A–C). Notably, Torin1 inhibited M2 polarization more significantly compared to rapamycin. The above findings underscored the pivotal role of leucine in driving M2 polarization through the mTORC1 pathway.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig4-v1.jpg)
+
+**Figure 4.:** (A) Protein levels of ARG1, p-STAT6, STAT6, p-mTOR, and mTOR, determined by western blotting. (B, C) Detection of arginase-1 activity in the medium and BMDMs (n = 4). (D) mRNA expression of Arg1, Fizz1, Mgl1, and Mgl2, measured by real-time PCR in BMDMs (n = 3–5). Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) mRNA expression of Arg1, Fizz1, Mgl1, and Mgl2 in rapamycin-treated BMDMs measured by real-time PCR (n = 4). (B) mRNA expression of Arg1, Fizz1, Mgl1, and Mgl2 in wortmannin-treated BMDMs measured by real-time PCR (n = 4–6). (C) Protein levels of p-AKT (T308) and p-AKT (S473), determined by western blotting. Student’s t-test was used to determine statistical significance, defined as **p < 0.01, ***p < 0.001, and ****p < 0.0001.
 
 To further confirm the role of leucine in regulating M2 polarization via mTORC1, we next directly detected the activity of arginase-1 in culture supernatants and cells. Inhibition of mTORC1 was followed by arginase-1 activity inhibition (Figure 4B,C). Moreover, the expression of the M2 marker genes Arg1, Fizz1, Mgl1, and Mgl2 was also completely inhibited (Figure 4D). The above results again confirmed that the effect of leucine on M2 polarization occurs through mTORC1 signaling.
 
 In addition, although inhibition of mTORC1 slightly inhibited p-STAT6 activation, it was insufficient to explain the complete inhibition of Arg1 caused by inhibition of mTORC1, thus indicating that mTORC1 regulates M2 polarization by mediating other pathways. Together, our findings suggested that leucine mediates M2 polarization via the mTORC1 pathway.
 
-## LXRα is essential for leucine-induced macrophage polarization
+### LXRα is essential for leucine-induced macrophage polarization
 
 LXRα is a transcription factor for Arg1 in macrophages, and its activation enhances the expression of Arg1 (Pourcet et al., 2011). In our study, leucine promoted the protein expression of LXRα upon IL-4 activation of M2 macrophage (Figure 5A). The transcriptional regulation of Arg1 requires the entry of LXRα into the nucleus. Leucine increased the abundance of LXRα in the nucleus (Figure 5B) and also increased Arg1 expression (Figure 5E) in IL-4-stimulated cells. Moreover, inhibition of LXRα activity by GSK2033 muted the effect of leucine on Arg1 activity and mRNA expression of M2 macrohphage markers Fizz1, Mgl1, and Mgl2 demonstrating that LXRα mediates the effect of leucine on M2 polarization (Figure 5C, D). Next, we inhibited LXRα in LPS-stimulated mice by i.v. injection of GSK2033, and found that the reduction of cytokine in serum and peritoneal fluid (Figure 5—figure supplement 1A). These results showed that LXRα is essential for leucine-induced macrophage polarization.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig5-v1.jpg)
+
+**Figure 5.:** (A) Protein levels of LXRα, ARG1, p-STAT6, and STAT6, determined by western blotting. (B) The nuclear proteins of BMDMs were extracted, and the protein levels of histones and LXRα were determined by western blotting. (C, D) Detection of arginase-1 activity in the medium and BMDMs (n = 4). (E) mRNA expression of Arg1, Fizz1, Mgl1, and Mgl2, measured by real-time PCR in BMDMs (n = 5–6). Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Measurement of IFN-γ and TNF-α secretion in mouse serum and peritoneal fluid by enzyme-linked immunosorbent assay (ELISA) after treatment with lipopolysaccharide (LPS) for 6 hr (n = 6). Student’s t-test was used to determine statistical significance, defined as *p < 0.05 and **p < 0.01.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89750/elife-89750-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) AST and ALT levels in serum and liver (n = 6). Student’s t-test was used to determine statistical significance, defined as *p < 0.05, **p < 0.01, and ***p < 0.001.
 
 ## Discussion
 
@@ -95,7 +123,7 @@ Beyond STAT6, a prior study has identified that LXRα regulates Arg1 expression 
 
 Our results suggested that leucine regulates M2 via the mTORC1/LXRα/Arg1 pathway, thus alleviating LPS-mediated CSS. Leucine also has regulatory effects on M1. In present study, we report the first evidence that leucine decreases mortality in mice after a lethal dose of LPS, and attenuates secretion of the pro-inflammatory factors IL-6, IFN-γ, and TNF-α in the serum. The anti-inflammatory effects of leucine were probably mediated by modulation of macrophage polarization, because leucine suppressed CD86 expression (M1 macrophage marker) but increased CD206 (M1 macrophage marker) expression in both the bone marrow and spleen. This possibility was corroborated by in vitro data in BMDMs. Leucine inhibited LPS-driven M1 polarization, and decreased the secretion of IL-6, IL-1β, and TNF-α in BMDMs. Together, our in vivo and in vitro results suggest that leucine may also inhibit inflammation driven by M1 macrophages. Therefore, subsequent studies of the specific mode of action of leucine on the polarization of M1 macrophages will be essential.
 
-## Conclusions
+### Conclusions
 
 In summary, the present study revealed that leucine ameliorates CSS in mice exposed to LPS by inhibiting macrophage M1 polarization and promoting M2 polarization. On the basis of our results, a role of leucine in macrophage inflammatory responses via the mTORC1/LXRα/Arg1 axis is proposed (Figure 6), in which leucine promotes M2 macrophage polarization through the mTORC1/LXRα/Arg1 signaling pathway, thereby contributing to the resolution of inflammation and the repair of damaged tissues.
 
@@ -105,42 +133,42 @@ In summary, the present study revealed that leucine ameliorates CSS in mice expo
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 The experimental procedures and animal care were performed in accordance with the regulations of the Animal Care Committee of Sichuan Agricultural University (No. 20180701). Forty male C57BL/6J mice (8 weeks) were purchased from Dashuo Laboratory Animal Co, Ltd (Chengdu, China). Mice with similar body weights (n = 8) were randomly divided into five treatment groups: (1) control group; (2) LPS group; (3) LPS + 2% leucine drinking water group (LPS + 2% W Leu); (4) LPS + 5% leucine food group (LPS + 5% F Leu); and (5) LPS + 2% leucine drinking water + 5% leucine food group (LPS + 2% W + 5% F Leu). All mice were housed in cages with constant humidity (40–70%) and temperature (20–25°C) under a 12-hr light/dark cycle, and were given free access to drinking water and food for 21 days. On day 21, the mice were challenged with LPS (intraperitoneal injection); 6 hr after the challenge, the mice were anesthetized by 20 s exposure to carbon dioxide, and blood samples were collected through cardiac puncture. Collected samples were snap frozen in liquid nitrogen and stored at −80°C until analysis. Blood samples were centrifuged at 3000 × g for 15 min at 4°C, and then the serum was separated and stored at −20°C until further analysis.
 
-## Macrophage isolation and stimulation
+### Macrophage isolation and stimulation
 
 BMDMs were prepared as previously described (Byles et al., 2013). Briefly, after 6- to 8-week-old C57BL/6J mice were euthanized with CO2, the femurs and tibias were removed and centrifuged to obtain cells. For macrophage differentiation, bone marrow-derived cells were plated in Petri dishes and cultured for 7 days in αMEM (containing 10% fetal bovine serum and 1% penicillin/streptomycin) supplemented with 10 ng/ml macrophage colony-stimulating factor (M-CSF). Adherent cells were collected and seeded into new dishes for subsequent experiments. For M1-like activation, 25 × 104 BMDMs were placed in 12-well plates and treated with 100 ng/ml LPS (Sigma–Aldrich) for 6 hr. For M2 polarization, cells were treated with 20 ng/ml IL-4 (Peprotech) for 24 hr. Leucine treatment was usually performed 1 hr before LPS/IL-4 stimulation.
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 Total RNA was extracted with TRIzol reagent (Invitrogen) according to the manufacturer’s instructions. The reaction solution was prepared according to the instructions of the reverse transcription kit (Takara) to reverse-transcribe RNA to cDNA. QPCR was then performed with a reaction mixture consisting of 5 μl SYBR Green (Takara), 0.2 μl Rox, 3 μl dH2O, 0.4 μl primers (F +R) for each gene used in the study, and 1 μl cDNA. Relative gene expression was calculated with the ΔΔCT method, and results were normalized to values for the housekeeping gene Ppia. Primer sequences are listed in Supplementary file 1.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were washed with ice-cold phosphate-buffered saline, and proteins were extracted with RIPA lysis buffer (containing phenylmethanesulfonylfluoride (PMSF) and phosphatase inhibitors). After a 30 min incubation at 4°C, samples were sonicated and centrifuged at 12,000 × g for 15 min at 4°C, and clear supernatant was collected. Concentrations were determined, and samples were assayed with a BCA protein assay kit (Thermo Scientific, MA, USA). Equal amounts of protein were then separated through 10% sodium dodecyl sulfate–polyacrylamide gel electrophoresis and transferred to polyvinylidene fluoride membranes (Merck Millipore Ltd, Tullagreen, Ireland). Membranes were blocked in 5% nonfat dry milk in 1× tris buffered saline with Tween 20 (TBST) for 1 hr at room temperature, then incubated with specific primary antibodies overnight at 4°C. Membranes were washed three times with TBST and incubated with horseradish peroxidase (HRP)-conjugated secondary antibodies for 1 hr at room temperature. Finally, protein bands were visualized with an ECL chemiluminescence kit (Beyotime Biotechnology, Shanghai, China). Protein band density was quantified in Image Lab software (Bio-Rad). The ratio of the densitometric values of the target protein to the reference protein was calculated and expressed relative to the control value. Antibody information is listed in Supplementary file 2.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Fluorescently labeled antibodies (purified anti-mouse CD16/32, FITC anti-mouse CD45, APC anti-mouse F4/80, PerCP/Cy5.5 anti-mouse CD11b, APC/Cy7 anti-mouse CD86, and PE/Cy7 anti-mouse CD206) were used according to the manufacturer’s instructions. Cells were collected on a BD FACSVerse instrument (BD Biosciences) and analyzed in FlowJo10 software. Antibody information is listed in Supplementary file 2.
 
-## Arginase assays
+### Arginase assays
 
 Arginase was measured as described above (Corraliza et al., 1994). In brief, cells were lysed with 0.1% Triton X-100 and incubated at 37°C for 30 min to release enzymes by cell rupture. Subsequently, MnCl2 and Tris–HCl (pH = 7.5) were added and heated at 56°C for 10 min to activate arginase-1. Subsequently, 500 mM L-arginine (pH = 9.7) was added and incubated at 37°C for 30 min to hydrolyze L-arginine. Hydrolysis was stopped with acid stop solution (H2SO4:H3PO4:H2O = 1:3:7 vol/vol). Finally, 9% α-isonitrosopropiophenone (dissolved in 100% ethanol) was added and heated at 100°C for 15 min. Urea was measured at 540 nm, and all samples were read in triplicate.
 
-## Enzyme-linked immunosorbent assays
+### Enzyme-linked immunosorbent assays
 
 The cytokines TNF-α, IL-6, and IFN-γ (Beijing Sizhengbai Biotechnology, China) were determined with commercial enzyme-linked immunosorbent assays. Briefly, serum or cell culture supernatants were collected and analyzed according to the manufacturer’s recommendations.
 
-## AST and ALT assays
+### AST and ALT assays
 
 For liver function tests, glutamic oxaloacetic transaminase (also known as aspartate transaminase, AST) and ALT levels in mouse serum and liver homogenate supernatants were detected with kits (Nanjing Jiancheng Bioengineering Institute, Nanjing, China) according to the manufacturer’s instructions.
 
-## Routine blood examination
+### Routine blood examination
 
 Analysis of white blood cell composition and proportion (WBC, Neu#, Mon#, Lym#, Bas#, Eos#) was performed with an automatic biochemical analyzer (Hitachi 3100).
 
-## Statistical analysis
+### Statistical analysis
 
 The results are presented as mean ± standard error of the mean. Groups were compared with unpaired two-tailed Student’s t-test and/or one-way analysis of variance. The p values are indicated in the figures as follows: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, and ns, not significant (p > 0.05). All results were plotted in GraphPad Prism 8 software.

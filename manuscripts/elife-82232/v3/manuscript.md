@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Center for Translational Neuromedicine, University of Copenhagen Copenhagen Denmark
-2. https://ror.org/00trqv719 Center for Translational Neuromedicine, University of Rochester Medical Center Rochester United States
-3. https://ror.org/00b30xv10 Department of Neurology, University of Pennsylvania Philadelphia United States
-4. https://ror.org/032d4f246 School of Pharmacy, China Medical University Shenyang China
+1. Center for Translational Neuromedicine, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+2. Center for Translational Neuromedicine, University of Rochester Medical Center Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))
+3. Department of Neurology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. School of Pharmacy, China Medical University Shenyang China ([ROR:032d4f246](https://ror.org/032d4f246))
 
 † Corresponding author
 
@@ -39,29 +39,809 @@ The purpose of this study was to characterize the impact of genetic AQP4 deletio
 
 ## Results
 
-## AQP4 KO mice having larger brain volumes and smaller CSF spaces
+### AQP4 KO mice having larger brain volumes and smaller CSF spaces
 
 First, we hypothesized that AQP4 deletion would alter macroscopic features of the adult murine brain as previously reported (Trillo-Contreras et al., 2018; Katada et al., 2014; Li et al., 2009; Yao et al., 2008; Haj-Yasein et al., 2011). We employed 3D constructive interference in steady-state (CISS)-based CSF space volumetry and cisternography to delineate highly T2-weighted water signal allowing high-resolution mapping of the brain fluid compartments. We found the brain volume 5–10% larger in AQP4 KO than in WT mice (p<0.01, mean ± SD KO = 521 ± 13 vs. WT = 477 ± 24 mm3; Figure 1A) with no significant differences between animal age (p=0.697), body weight (p=0.7662) or signal-to-noise ratio (p=0.1385) of the 3D-CISS images from two genotypes (Table 1– Methods). This difference in brain volume coincided with ~6% increase in the brain water content measured ex vivo (p<0.05, min-max of 2–11%, KO = 3.66 ± 0.09 vs. WT = 3.46 ± 0.05 ml/g dry brain weight; Figure 1D; Li et al., 2009; Haj-Yasein et al., 2011).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/82232/elife-82232-fig1-v3.jpg)
 
-**Figure 1.:** in vivo.Overlaid 3D surface images of the co-registered and averaged 3D-CISS brain volumes, and whiskers-box plots comparing (A) the brain volumes and (B) segmented CSF space volumes from 6 WT and 5 AQP4 KO mice (see Figure 1—source data 1). (C) Overlaid 3D surface reconstruction of the co-registered whole CSF spaces segmented from 3D-CISS from all WT (gray) and KO (blue) animals, along with whiskers-box plot comparisons of main CSF compartments volumes segmented: whole ventricular (left top), lateral (middle top) and third ventricular (right top), and whole perivascular space at the skull base (PVS; left bottom). (D) Whiskers-box plots comparing brain water content from 5 WT and 3 KO ex vivo (Figure 1—source data 2). (E) Whiskers-box plots comparing CSF production rates measured in 6 WT and 5 KO in vivo (Figure 1—source data 3). (F) Whiskers-box plots for the extracellular space volume and tortuosity measured using real-time iontophoresis with tetramethylammonium (TMA) in awake (17 WT, 6 KO) and K/X anesthetized (16 WT, 7 KO) animals (Figure 1—source data 4). Legend: ns-not significant, *-p<0.05, **-p<0.01; Mann-Whitney U-test (A–E), one-way ANOVA with Bonferroni’s post-hoc correction (F).Figure 1—source data 1.in vivo - source data.Figure 1—source data 2.ex vivo - source data.Figure 1—source data 3.in vivo - source data.Figure 1—source data 4.
+**Figure 1.:** Overlaid 3D surface images of the co-registered and averaged 3D-CISS brain volumes, and whiskers-box plots comparing (A) the brain volumes and (B) segmented CSF space volumes from 6 WT and 5 AQP4 KO mice (see Figure 1—source data 1). (C) Overlaid 3D surface reconstruction of the co-registered whole CSF spaces segmented from 3D-CISS from all WT (gray) and KO (blue) animals, along with whiskers-box plot comparisons of main CSF compartments volumes segmented: whole ventricular (left top), lateral (middle top) and third ventricular (right top), and whole perivascular space at the skull base (PVS; left bottom). (D) Whiskers-box plots comparing brain water content from 5 WT and 3 KO ex vivo (Figure 1—source data 2). (E) Whiskers-box plots comparing CSF production rates measured in 6 WT and 5 KO in vivo (Figure 1—source data 3). (F) Whiskers-box plots for the extracellular space volume and tortuosity measured using real-time iontophoresis with tetramethylammonium (TMA) in awake (17 WT, 6 KO) and K/X anesthetized (16 WT, 7 KO) animals (Figure 1—source data 4). Legend: ns-not significant, *-p<0.05, **-p<0.01; Mann-Whitney U-test (A–E), one-way ANOVA with Bonferroni’s post-hoc correction (F).
+
+**Table 1.**
+ Summary of demographic characteristics of the animals used in 8 experiments performed, and (B) details of MRI protocols and acquisition parameters for evaluation of the brain CSF and ISF spaces, employed in the current study.Legend: CryoProbe – cryogenically-cooled MR coil; TA - time of acquisition; Tx/Rx - transmit/receive; TR - time to repetition; TE - time to echo; FA - flip angle; FOV - field of view; Av. / Rep. – averages for image formation or independently repeated acquisitions; FISP - steady-state free precession sequence; TrueFISP - true balanced steady-state free precession sequence; EPI - echo-planar imaging sequence; VTR – variable TR; VFA – variable flip angle; CM – cisterna magna; p - statistical p-value from Mann-Whitney U-test; N/A – data not available; NS - statistically not significant finding (p>>0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th colspan="3">No.of animals</th>
+      <th colspan="2">Age [weeks]</th>
+      <th colspan="2">Body weight [g]</th>
+      <th colspan="2">Respiration [bpm]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>KO</td>
+      <td>WT</td>
+      <td>Male [%]</td>
+      <td>Overall (mean ±SD)</td>
+      <td>p</td>
+      <td>Overall (mean ±SD)</td>
+      <td>p</td>
+      <td>Overall (mean ±SD)</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>3D-CISS volumetry</td>
+      <td>5</td>
+      <td>6</td>
+      <td>72.7</td>
+      <td>13.8±1.8</td>
+      <td>NS</td>
+      <td>27.3±2.1</td>
+      <td>NS</td>
+      <td>176±30</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>MR-DWI</td>
+      <td>6</td>
+      <td>6</td>
+      <td>41.7</td>
+      <td>10.4±0.7</td>
+      <td>NS</td>
+      <td>22.4±3.0</td>
+      <td>NS</td>
+      <td>175±11</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>DCE-MRI</td>
+      <td>5</td>
+      <td>6</td>
+      <td>45.5</td>
+      <td>13.4±1.6</td>
+      <td>NS</td>
+      <td>27.3±2.2</td>
+      <td>NS</td>
+      <td>182±14</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>AQP4 expression</td>
+      <td>-</td>
+      <td>4</td>
+      <td>50</td>
+      <td>10.0±0.0</td>
+      <td>NS</td>
+      <td>25–30</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Vascular density</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>14.6±1.0</td>
+      <td>NS</td>
+      <td>24.3±4.6</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CSF production</td>
+      <td>5</td>
+      <td>6</td>
+      <td>45.5</td>
+      <td>15.4±0.5</td>
+      <td>NS</td>
+      <td>28.7±4.2</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ISF space volume estimation using TMA</td>
+      <td>8</td>
+      <td>20</td>
+      <td>55</td>
+      <td>10.0±0.0</td>
+      <td>NS</td>
+      <td>25–30</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Brain water content</td>
+      <td>3</td>
+      <td>5</td>
+      <td>62.5</td>
+      <td>12.0±1.0</td>
+      <td>NS</td>
+      <td>25–30</td>
+      <td>N/A</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td colspan="8">MR sequences and acquisition parameters</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence (Tx/Rx coil; slice orientation)</td>
+      <td>TR [ms]</td>
+      <td>TE [ms]</td>
+      <td>FA [deg]</td>
+      <td>Av./Rep.</td>
+      <td>Voxel size [mm3](interpolation)</td>
+      <td>Bandwidth [Hz/pix]</td>
+      <td>Matrix size</td>
+      <td>TA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="9">MR CSF space volumetry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3D-TrueFISP (CryoProbe; sagittal)</td>
+      <td>5.2</td>
+      <td>2.6</td>
+      <td>50</td>
+      <td>2</td>
+      <td>0.033×0.033×0.033 (2.0×1.6×1.0)</td>
+      <td>260</td>
+      <td>19.2×12.8×12.8</td>
+      <td>27 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="10">MR-DWI (in vivo and ex vivo) (δ=3 and Δ=10ms for gradient duration and separation times)*(b-values (Av.&gt;1)): 40, 50, 59, 70, 92, 113, 165, 197, 238, 342, 445, 649, 854, 1057 (2), 1564 (2), 2071 (2), 3081 (2) s2/mm</td>
+    </tr>
+    <tr>
+      <td>2D-EPI (volumetric; axial)</td>
+      <td>3600</td>
+      <td>30</td>
+      <td>90</td>
+      <td>3</td>
+      <td>0.15×0.15×0.5 (0.2 mm gap, 16 slices)</td>
+      <td>3307</td>
+      <td>16.2×14.4×11.2</td>
+      <td colspan="2">20–30 min (respiratory-gated)</td>
+    </tr>
+    <tr>
+      <td colspan="9">DCE-MRI via CM-injection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3D-FISP (CryoProbe; sagittal)</td>
+      <td>3.26</td>
+      <td>1.63</td>
+      <td>15</td>
+      <td>1</td>
+      <td>0.1×0.1×0.1</td>
+      <td>781</td>
+      <td>19.2×12.8×12.8</td>
+      <td>90 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="9">Microbeads phantom ex vivo - T1 mapping(VTR: 12000, 9000, 6500, 4000, 2000, 1000, 800, 500, 300, 100, 80, 50, 15ms) (VFA: 45° and 90°)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2D-RARE (volumetric; axial)</td>
+      <td>VTR</td>
+      <td>3.1</td>
+      <td>90</td>
+      <td>2</td>
+      <td>0.1×0.1×3.0</td>
+      <td>671</td>
+      <td>16.2×16.2×1</td>
+      <td>3 h 20 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2D-RARE (volumetric; axial)</td>
+      <td>12000</td>
+      <td>3.1</td>
+      <td>VFA</td>
+      <td>3</td>
+      <td>0.1×0.1×3.0</td>
+      <td>671</td>
+      <td>16.2×16.2×1</td>
+      <td>1 hr 40 min</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Presented averages of measured values from 3 diffusion encoding directions are slightly higher than the set-up, due to gradient preparation time._
 
 Total CSF volume was estimated as 2.4–4.4% of the parenchymal volume among all animals and no difference in delineated CSF space volumes was found between KO and WT (p=0.1255, KO = 15.1 ± 1.9 vs. WT = 17.7 ± 2.4 mm3). Yet the whole segmented CSF space to brain volume ratio was 23–29% smaller in KO compared to WT (p<0.05, KO = 2.99 ± 0.43 % vs. WT = 3.86 ± 0.41 %; Figure 1B). This difference was mainly noted within the ventricular system comprising of the lateral, third and fourth ventricles (p<0.05; Figure 1C), consistent with previous ex vivo (Li et al., 2009) or lower resolution 2D assessment with low-field strength MRI (Trillo-Contreras et al., 2018; Trillo-Contreras et al., 2021; Li et al., 2009). The most prominent difference was in the lateral (p<0.05, mean ± SEM WT-KO = 0.57 ± 0.15 %) and third ventricles (p<0.01, WT-KO = 0.13 ± 0.03 %), but not the fourth ventricle (p=0.6623; Appendix 1—figure 1A). These changes in the ventricular volume were not driven by CSF production, since we found similar CSF volume production in AQP4 KO and WT mice (Figure 1E) using a newly developed in vivo approach (Liu et al., 2020). No difference in the CSF spaces of the parietal cisterns was noted (p=0.4589; Appendix 1—figure 1A). Perhaps most surprisingly, no differences were noted in the segmented perivascular CSF space between KO and WT (p=0.1623; Figure 1C) or its individual components (skull base/ Circle of Willis, p=0.9307; basilar artery, p=0.4286; anterior/posterior perivascular spaces, p=0.2486; Appendix 1—figure 1A). Quantification of interstitial space volume using real-time iontophoresis with tetramethylammonium (TMA) (Odackal et al., 2017), showed that both awake and ketamine/xylazine anesthetized AQP4 KO mice exhibited a larger interstitial space (p<0.05 for both, Figure 1F). The relative enlargement in the interstitial space volume fraction, α, that occured in response to ketamine/xylazine administration did not differ between the two genotypes (p=0.9186, Δαawake-K/X KO = 0.090 ± 0.047 vs. WT = 0.093 ± 0.059; Mann-Whitney U-test). We found no difference in tortuosity between genotypes (p=0.1412, Figure 1F). Thus, deletion of AQP4 is linked to an expansion of the interstitial space volume fraction as well as in total brain volume, with no clear abnormalities in the glymphatic influx paths such as the size of the larger periarterial spaces.
 
-## Genetic loss of AQP4 alters water diffusivity independent of the microvascular density
+### Genetic loss of AQP4 alters water diffusivity independent of the microvascular density
 
 We next asked how deletion of AQP4 affected the brain’s water mobility within the brain parenchyma and CSF compartments. First, we used a standard DWI model which, by assuming monoexponential signal decay using apparent diffusion coefficient (ADC), provides very sensitive but non-specific scoring for cellularity, the integrity of the cell membranes, and difference in intracellular and ISF volumes (Le Bihan et al., 1988) or their composition and viscosity (Le Bihan et al., 1986; Le Bihan and Iima, 2015). Second, we applied a biexponential intravoxel-incoherent motion (IVIM) DWI model (Le Bihan et al., 1988; Le Bihan et al., 1986) to measure passive molecular water diffusion (D) separately from the water motion affected by tissue perfusion (Fournet et al., 2017; Federau, 2017; Vieni et al., 2020).
 
 ADC and D (IVIM) provided similar results (Pearson’s linear correlation, r=0.94, P<0.0001, Appendix 1—figure 1B), and no differences were found within all 5 large CSF space regions (Table 2, Appendix 1—figure 1C). Both revealed increased slow diffusion measures within the brain parenchyma, with KO animals exhibiting ADC and D 5.7 ± 1.5 % higher than in WT (Figure 2A and C), consistent with previous ADC estimates in KO animals using lower resolution at 7 Tesla MR and time-dependent diffusion (Pavlin et al., 2017). This was evident in 10 out of 15 parenchymal regions assessed (Figure 2A), with the largest differences visible in 4 brainstem areas (thalamic, midbrain, periaquaductal gray, and hindbrain) as well as 4 cortical regions (olfactory, somatosensory, auditory, and hippocampal), and the caudate region (min. p<0.05 for all). Overall, these results support the hypothesis of increased ISF space volume, with no difference in slow water mobility within the large CSF spaces in KO animals.
 
+**Table 2.**
+ Summary of findings for (A) average ADC and D-IVIM, (B) direction-wise MR diffusion and pseudodiffusion among 21 ROI assessed, along with statistical scoring.Asterisks reflect ‘p’ significance values from the nonparametric Mann-Whitney test comparing diffusion measures between KO vs. WT animals ROI-wise (total n=21, balanced groups), along with the magnitude of the difference expressed by the inequality sign. Legend: OLF-olfactory, CA / RSP-cingulate / retrosplenial, VIS-visual (V1), SS-somatosensory (S1), AUD-auditory, HIP-hippocampus, PERI-perirhinal, TH-thalamus, HAB-habenula, HY-hypothalamus, MB-midbrain, PAG-periaqueductal gray, HB-hindbrain; CP-caudate putamen, WM-white matter; 3V-third ventricle, LV-lateral ventricle, 4V-fourth ventricle, PCS-pericisternal space, CoW-Circle of Willis, CB-cerebellum. NS- no significant difference, *-p<0.05, **-p<0.01, by means of Mann-Whitney U-test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th rowspan="2">ROI</th>
+      <th colspan="2">Average ADC</th>
+      <th colspan="2">Average D-IVIM</th>
+      <th>IVIM</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Finding</th>
+      <th>Significance</th>
+      <th>Finding</th>
+      <th>Significance</th>
+      <th>D*, Fp,Fp x D*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Cerebral cortex</td>
+      <td>OLF</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CA / RSP</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>VIS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>SS</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AUD</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HIP</td>
+      <td>KO&gt;WT</td>
+      <td>**</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PERI</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Brain stem</td>
+      <td>TH</td>
+      <td>KO&gt;WT</td>
+      <td>**</td>
+      <td>KO&gt;WT</td>
+      <td>**</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HAB</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HY</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>MB</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PAG</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HB</td>
+      <td>KO&gt;WT</td>
+      <td>**</td>
+      <td>KO&gt;WT</td>
+      <td>**</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebral nuclei and tracts</td>
+      <td>CP</td>
+      <td>KO&gt;WT</td>
+      <td>**</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>WM</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="5">CSF space</td>
+      <td>3V</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>LV</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>4V</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PCS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CoW</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>CB</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WTFp = 0.0649</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td rowspan="3">ROI</td>
+      <td colspan="6">IVIM</td>
+      <td colspan="6">ADC / D</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Direction Z(cranio-caudal)</td>
+      <td colspan="2">Direction X(bilateral)</td>
+      <td colspan="2">Direction Y(ventral-dorsal)</td>
+      <td colspan="2">Direction Z (cranio‐caudal)</td>
+      <td colspan="2">Direction X (bilateral)</td>
+      <td colspan="2">Direction Y (ventral‐dorsal)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Finding</td>
+      <td>Signif.</td>
+      <td>Finding</td>
+      <td>Signif.</td>
+      <td>Finding</td>
+      <td>Signif.</td>
+      <td>Finding</td>
+      <td>Signif.</td>
+      <td>Finding</td>
+      <td>Signif.</td>
+      <td>Finding</td>
+      <td>Signif.</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Cerebral cortex</td>
+      <td>OLF</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>Fp x D*KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>**/*</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>CA / RSP</td>
+      <td>D*KO&gt;WT</td>
+      <td>*</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>VIS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+    </tr>
+    <tr>
+      <td>SS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>-/*</td>
+      <td>KO&gt;WT</td>
+      <td>**/P=0.056</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+    </tr>
+    <tr>
+      <td>AUD</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>*/*</td>
+      <td>KO&gt;WT</td>
+      <td>**/*</td>
+      <td>KO&gt;WT</td>
+      <td>*/*</td>
+    </tr>
+    <tr>
+      <td>HIP</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>*/*</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+      <td>KO&gt;WT</td>
+      <td>**/*</td>
+    </tr>
+    <tr>
+      <td>PERI</td>
+      <td>D*KO&gt;WT</td>
+      <td>**</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Brain stem</td>
+      <td>TH</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>**/**</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+    </tr>
+    <tr>
+      <td>HAB</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>HY</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>MB</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>-/*</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+      <td>KO&gt;WT</td>
+      <td>**/-</td>
+    </tr>
+    <tr>
+      <td>PAG</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>*/**</td>
+      <td>KO&gt;WT</td>
+      <td>**/-</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+    </tr>
+    <tr>
+      <td>HB</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>*/*</td>
+      <td>KO&gt;WT</td>
+      <td>**/-</td>
+      <td>KO &gt;WT</td>
+      <td>*/*</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebral nuclei and tracts</td>
+      <td>CP</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>**/**</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>WM</td>
+      <td>D*KO&gt;WT</td>
+      <td>**</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>KO&gt;WT</td>
+      <td>*/-</td>
+    </tr>
+    <tr>
+      <td rowspan="5">CSF space</td>
+      <td>3V</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>Fp /Fp x D*KO&gt;WT</td>
+      <td>** / *</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>LV</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>4V</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>PCS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>CoW</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>CB</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+      <td>-</td>
+      <td>NS</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/82232/elife-82232-fig2-v3.jpg)
 
-**Figure 2.:** in vivo and ex vivo, vascularity, and AQP4 cellular surface expression ex vivo.Radar plots showing statistical significances for the differences between the slow diffusion measures among 15 parenchymal ROI assessed, for average ADC (A) and D, and in (B) 3 diffusion-encoding direction separately; (C) Whiskers-box plots for the mean of the average ADC values among 6 AQP4 KO and 6 WT animals analyzed, including: the regions showing the most significant differences (top); exemplary regions showing significant differences (middle); exemplary regions showing no differences (bottom), by means of the Mann-Whitney U-test (Figure 2—source data 1); (D) mean and 95% confidence intervals of ADC and D calculated in a water phantom (+0.001 mM/ml gadobutrol) and 3 water phantoms filled with Sephadex-G25 microbeads of fine, moderate and coarse sizes; (E) Correlation plots of the calculated mean ± SD of ADC and D to the T1 relaxation values and free fluid volumes obtained from the phantoms using MRI (left), and micro-computed tomography (µCT; middle) (Figure 2—source data 2). Single-slices of turbo-spin echo (RARE) MR images from respective phantoms (right, upper) along with µCT images of the central portion of the respective phantoms (right, lower) filled with 1:1 solution of Ominpaque 350 contrast agent and 0.9% NaCl. Semi-transparent red area marks the free fluid space considering only voxels above 75th percentile of Hounsfield units (HU) intensity distribution in each µCT image; (F) Exemplary immunohistochemistry images (Olympus UplanXApo 10 x/numerical aperture 0.40, ∞/compatible cover glass thickness 0.17 mm/field number 26.5 mm, no immersion liquid) (left) from the hippocampal area from WT and KO animal (magenta vascular labeling) along with whiskers-box plot for the comparison of the mean vascular density among 17 regions analyzed (right) (Figure 2—source data 3); (G) Region-wise correlation plot of calculated ADC to vascular density among 12 regions analyzed with both methods, in WT and KO animals; (H) Exemplary image for vasculature (green, AlexaFluor 488) and AQP4 (magenta) immunohistochemistry staining (Olympus UplanXApo 60 x/numerical aperture 1.42, ∞/compatible cover glass thickness 0.17 mm/field number 26.5 mm, oil immersion) (left), bar-plot comparison of the mean AQP4 channel expression among 11 ROI assessed from 4 WT mice (right) (Figure 2—source data 4); (I) ROI-wise correlation plot comparing average ADC and D with the mean AQP4 channel expression among 10 regions assessed with both methods. Legend: OLF-olfactory, CA / RSP-cingulate / retrosplenial, VIS (V1)-visual, SS (S1)-somatosensory, M1-motorcortex, AUD-auditory, HIP-hippocampus, PERI-perirhinal, INS-insular, TH-thalamus, HAB-habenula, HY-hypothalamus, MB-midbrain, PAG-periaqueductal gray, HB-hindbrain; CP-caudate putamen, WM-white matter; PCS-pericisternal space, CoW-Circle of Willis, EPD-ependymal layer around lateral ventricles; SD-standard deviation; ns-not significant, *-p<0.05, **-p<0.01, by means of Mann-Whitney U-test (A–C, F), Kruskal-Wallis one-way ANOVA with Dunn’s correction (D, H). All correlation plots show respective regression lines along with semi-transparent areas marking 95% confidence intervals of the fitting. The highest obtained Pearson’s linear or Spearman’s range correlation scores are reported and considered significant if correlation value >0.5 with p<0.05, and non-zero regression slope.Figure 2—source data 1.in vivo - source data.Figure 2—source data 2.Figure 2—source data 3.Figure 2—source data 4.
+**Figure 2.:** Radar plots showing statistical significances for the differences between the slow diffusion measures among 15 parenchymal ROI assessed, for average ADC (A) and D, and in (B) 3 diffusion-encoding direction separately; (C) Whiskers-box plots for the mean of the average ADC values among 6 AQP4 KO and 6 WT animals analyzed, including: the regions showing the most significant differences (top); exemplary regions showing significant differences (middle); exemplary regions showing no differences (bottom), by means of the Mann-Whitney U-test (Figure 2—source data 1); (D) mean and 95% confidence intervals of ADC and D calculated in a water phantom (+0.001 mM/ml gadobutrol) and 3 water phantoms filled with Sephadex-G25 microbeads of fine, moderate and coarse sizes; (E) Correlation plots of the calculated mean ± SD of ADC and D to the T1 relaxation values and free fluid volumes obtained from the phantoms using MRI (left), and micro-computed tomography (µCT; middle) (Figure 2—source data 2). Single-slices of turbo-spin echo (RARE) MR images from respective phantoms (right, upper) along with µCT images of the central portion of the respective phantoms (right, lower) filled with 1:1 solution of Ominpaque 350 contrast agent and 0.9% NaCl. Semi-transparent red area marks the free fluid space considering only voxels above 75th percentile of Hounsfield units (HU) intensity distribution in each µCT image; (F) Exemplary immunohistochemistry images (Olympus UplanXApo 10 x/numerical aperture 0.40, ∞/compatible cover glass thickness 0.17 mm/field number 26.5 mm, no immersion liquid) (left) from the hippocampal area from WT and KO animal (magenta vascular labeling) along with whiskers-box plot for the comparison of the mean vascular density among 17 regions analyzed (right) (Figure 2—source data 3); (G) Region-wise correlation plot of calculated ADC to vascular density among 12 regions analyzed with both methods, in WT and KO animals; (H) Exemplary image for vasculature (green, AlexaFluor 488) and AQP4 (magenta) immunohistochemistry staining (Olympus UplanXApo 60 x/numerical aperture 1.42, ∞/compatible cover glass thickness 0.17 mm/field number 26.5 mm, oil immersion) (left), bar-plot comparison of the mean AQP4 channel expression among 11 ROI assessed from 4 WT mice (right) (Figure 2—source data 4); (I) ROI-wise correlation plot comparing average ADC and D with the mean AQP4 channel expression among 10 regions assessed with both methods. Legend: OLF-olfactory, CA / RSP-cingulate / retrosplenial, VIS (V1)-visual, SS (S1)-somatosensory, M1-motorcortex, AUD-auditory, HIP-hippocampus, PERI-perirhinal, INS-insular, TH-thalamus, HAB-habenula, HY-hypothalamus, MB-midbrain, PAG-periaqueductal gray, HB-hindbrain; CP-caudate putamen, WM-white matter; PCS-pericisternal space, CoW-Circle of Willis, EPD-ependymal layer around lateral ventricles; SD-standard deviation; ns-not significant, *-p<0.05, **-p<0.01, by means of Mann-Whitney U-test (A–C, F), Kruskal-Wallis one-way ANOVA with Dunn’s correction (D, H). All correlation plots show respective regression lines along with semi-transparent areas marking 95% confidence intervals of the fitting. The highest obtained Pearson’s linear or Spearman’s range correlation scores are reported and considered significant if correlation value >0.5 with p<0.05, and non-zero regression slope.
 
 To evaluate whether a fast bulk displacement of intravascular water protons due to capillary perfusion may contribute to our findings, we performed an additional scoring for differences associated with intra-voxel pseudodiffusive fluid regimes (Le Bihan and Iima, 2015), using IVIM diffusion model. IVIM may reveal pathophysiological impairment in the microcirculation by estimating perfusion fraction (Fp) and pseudodiffusion coefficient (fast diffusion, D*; Le Bihan and Turner, 1992; Henkelman, 1990; Henkelman et al., 1994), but can also detect general fluid dynamics associated with macromolecules such as proteins or biological polymers (Le Bihan, 2019). Transferring IVIM measures to standard perfusion measurements, D* can be associated with mean transit time, Fp with a flowing blood fraction that is correlated with vessel density or cerebral blood volume, and the product of Fp × D* with relative cerebral blood flow in each voxel. We found no differences in average D*, Fp and the product of Fp × D* within all parenchymal regions from KO and WT mice (Table 2A). This suggests similar blood perfusion, and is supported with our histological analysis showing no significant differences in the vascular density between the genotypes (Figure 2F), with a trend towards a small increase within the thalamus and olfactory bulb (11 and 15 %, respectively; both p≈0.1). The lack of change in both IVIM measures and vessel density supports the conclusion that no tangible differences in microcirculation exist between KO and WT and is supported by no difference in the H217O washout between KO and WT at 9.4 Tesla MR (Zhang et al., 2019).
 
-## Directional water diffusion as a measure of anatomical differences in AQP4 KO mice
+### Directional water diffusion as a measure of anatomical differences in AQP4 KO mice
 
 Application of both DWI and IVIM models confirmed increased slow MR diffusion in the brain parenchyma, with no difference in the fast MR diffusion (psuedodiffusion) in AQP4 KO mice (Table 2A, Appendix 1—figure 1B–C). We next investigated tissue orientation-specific water mobility restrictions, by assessing the diffusion separately for cranio-caudal (slice, Z), in-plane bilateral (X), and ventral-dorsal (Y) encoding directions. Overall, the largest differences in both ADC and D were found in the direction parallel to the main orientation of neuronal tracts (i.e. bilateral for the auditory cortex, bilateral and ventral-dorsal for hindbrain, ventral-dorsal for midbrain, cranio-caudal for caudate and thalamus).
 
@@ -71,19 +851,583 @@ Fast water diffusion was altered between KO and WT solely in the cranio-caudal (
 
 Overall, slightly increased average ADC and D along with no difference in average IVIM measures suggest existence of larger interstitial space volume in AQP4 KO, perhaps as a result of increased water exchange time (Urushihata et al., 2021), and without tangible alterations in parenchymal blood perfusion. We tested this hypothesis by mimicking increasing interstitial space volume using three water phantoms filled with Sephadex G-25 microbeads of coarse, moderate and fine particle size (Figure 2D and E). The coarse beads will have greater spaces between the particles than the fine (see MRI and µCT images in Figure 2E), yet all microbeads possess the same porosity so a similar exchange rate between stored and free water pools is expected. We found both ADC and D increased along with the free fluid space volume surrounding the microbeads, as expected (Lee et al., 2016), with no difference in IVIM measures between the phantoms with microbeads (Appendix 1—figure 1E). This was reflected with high linear correlation between ADC and D, and T1 relaxation times (r=0.977, p<0.05) and free fluid volume fractions estimated (r=0.97, p<0.01) using MRI and µCT in all phantoms (Figure 2D-E). We conclude that these increased ADC and D with increased free water pools support larger interstitial space volume in AQP4 KO compared to WT mice.
 
-## Reduced gadolinium-based MRI tracer influx into AQP4 KO mouse brain
+### Reduced gadolinium-based MRI tracer influx into AQP4 KO mouse brain
 
 Our noninvasive MR measurements showed increased ADC values along with increased brain volume and reduced CSF space in AQP4 KO mice. Next, we tested whether these measures were associated with reduction in the gadolinium CSF tracer influx from the cisterna magna into the brain parenchyma by means of standard DCE-MRI (Figure 3A). As of particular importance for studying AQP4, it is worth noting that tracer transport (here gadobutrol) does not directly reflect the movement of water. The water can move into the tissue not only through the paracellular gap between astrocytic endfeet but also via diffusive transcellular exchange. The transport of membrane-impermeable CSF tracers, however, is limited to paracellular transport between the gaps of astrocytic endfeet (Salman et al., 2022; Salman et al., 2021).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82232/elife-82232-fig3-v3.jpg)
 
-**Figure 3.:** in vivo (Figure 3—source data 1).(A) 3D multiplanar reconstructions of dynamic-contract enhanced (DCE) MRI – sagittal slices from mean images of 6 WT (top) and 5 AQP4 KO (bottom) using 3D-FISP, after applying gadobutrol injection via cisterna magna (CM); mean ± SD DCE time-curves from WT (gray) and AQP4 KO (blue): (B) main CSF compartments ventrally and caudo-cranially from CM, (C) parenchymal regions where significant differences between WT and KO were found, (D) ventricular and CSF efflux regions. (E) 3D multiplanar reconstruction of DCE-MRI from mean 3D FISP images of 6 WT animals, along with Allen Brain Atlas-based segmentation maps color-coded according to p-significance value from nonparametric Two-way ANOVA with post-hoc, showing WT vs. KO differences in the CSF tracer dynamics at 60th minute after gadobutrol injection start. Legend: ns-not significant, *-p<0.05, **-p<0.01, by means of nonparametric Two-way Anova with Bonferroni’s post-hoc.Figure 3—source data 1.in vivo - source data.
+**Figure 3.:** (A) 3D multiplanar reconstructions of dynamic-contract enhanced (DCE) MRI – sagittal slices from mean images of 6 WT (top) and 5 AQP4 KO (bottom) using 3D-FISP, after applying gadobutrol injection via cisterna magna (CM); mean ± SD DCE time-curves from WT (gray) and AQP4 KO (blue): (B) main CSF compartments ventrally and caudo-cranially from CM, (C) parenchymal regions where significant differences between WT and KO were found, (D) ventricular and CSF efflux regions. (E) 3D multiplanar reconstruction of DCE-MRI from mean 3D FISP images of 6 WT animals, along with Allen Brain Atlas-based segmentation maps color-coded according to p-significance value from nonparametric Two-way ANOVA with post-hoc, showing WT vs. KO differences in the CSF tracer dynamics at 60th minute after gadobutrol injection start. Legend: ns-not significant, *-p<0.05, **-p<0.01, by means of nonparametric Two-way Anova with Bonferroni’s post-hoc.
 
 In contrast to prior report (Li et al., 2009), but consistent with the glymphatic model where ventricular fluid dynamics are upstream of cisterna magna injections (Iliff et al., 2012), no differences in the tracer distribution were found in the ventricular systems. From the cisterna magna (Figure 3A), the CSF tracer dispersed via the subarachnoid space cisterns to the Circle of Willis, and then dorsally along the middle cerebral artery into the brain parenchyma and anteriorly toward the olfactory bulb (Figure 3B), consistent with the previous reports using fluorescent tracers (Iliff et al., 2012; Mestre et al., 2018a). Importantly, there were no differences in the tracer distribution within the perivascular space at the basal cistern (Figure 3B – ‘Circle of Willis’), consistent with the perivascular space volume not differing between the two genotypes (Figure 1C, Appendix 1—figure 1A). Yet, the peak and overall magnitude of the parenchymal signal enhancement were significantly lower in KO than WT brains (lowest p<0.01; Figure 3B–D). Differences were especially visible in the striatum (p<0.01), thalamus (p<0.05), hippocampus (p<0.01), and visual and cingulate/retrosplenial cortex (p<0.01 for both; Figure 3C). Within parenchyma, the difference increased with time from infusion and was largest in the cortex and hippocampus (p<0.001 at T=80 min; Figure 3C and E, and Appendix 1—figure 2A). Finally, while the tracer in WT accumulated around the venous sinuses as previously reported (Iliff et al., 2013), the AQP4 KO mice exhibited substantially less accumulation (p=0.0148; Figure 3D). The reduced parenchymal influx of contrast agent after cisterna magna injection in KO vs. WT mice are consistent with current models of glymphatic function (Iliff et al., 2012; Mestre et al., 2018a; Kress et al., 2014; Mestre et al., 2018b).
 
 Next, to identify possible differences in the tracer dynamics between KO and WT mice, we calculated area under curve, arrival time, time-to-peak, peak intensity, and duration of significant from baseline parenchymal tracer accumulation (Table 3). Overall, the arrival time was similar, if slightly longer in KO than in WT mice. The largest delay in the tracer arrival time was visible in the lateral ventricles and caudate nucleus in KO (Table 3). The duration of time-to-peak was ~30% longer in KO among all regions, with the largest difference visible in the hippocampus, midbrain, thalamus, cerebellum and superior sagittal sinus, though this trend was not significant due to high variability. In regions neighboring or related to the CSF spaces and dorsal cortex (i.e. olfactory and somatosensory cortex, hypothalamus, periaqueductal gray, hindbrain or perivascular) time-to-peak was longer in WT, which might be an overall effect of lower tracer penetration in KO. The relative WT-KO differences of peak intensities and parenchymal accumulation durations were always positive and moderately correlated (Pearson’s linear correlation of relative peak intensity to relative duration difference of r=0.7212, p=0.0003; Appendix 1—figure 2B), which suggests that duration was shorter in KO due to smaller tracer penetration into the brain. This would be confirmed with the area under the DCE curve that consistently was smaller in KO (Table 3, ‘Mean AUC’). Together, delayed tracer arrival time and time-to-peak, lower peak intensity, and duration of tracer accumulation, as well as smaller area under the DCE curve in KO mice indicate a reduced tracer parenchymal influx and higher parenchymal resistance associated with lack of AQP4 channels (Mestre et al., 2018a).
 
-## AQP4 distribution determines regional differences in the parenchymal fluid flow
+**Table 3.**
+ DCE-derived parameters from 21 ROI (matching those analyzed by means of MR-DWI) in 5 KO and 6 WT littermate mice, along with associated nonparametric pair-wise statistics using a two-tailed Wilcoxon signed-rank test and median ± standard deviation (SD) values strain-wise.Legend: Mean AUC – mean from areas under the DCE curves along with associated p-statistical values (p-stat) from nonparametric Mann–Whitney U-test ROI-wise; Duration – duration of significantly different from the baseline signal enhancement, mimicking the parenchymal tracer accumulation; Aqp4(+/+) – wildtype control; Aqp4(-/-) – AQP4 KO mice; Δ – WT-KO difference; rel. Δ – ((WT-KO)/WT)×100% relative difference (negative ‘-‘ sign means the shorter duration of interstitial tracer accumulation in KO mice); For ROI abbreviations, see caption Figures 2 and 3, or Table 2. # –Two-way Anova with Bonferroni's post-hoc. ¶ – mean of standard deviations ROI wise. * – p<0.05, ** – p<0.01.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th rowspan="3">#WT vs. KO time-series different?</th>
+      <th colspan="3">Mean AUC [a.u.]</th>
+      <th colspan="3">Arrival time [min]</th>
+      <th colspan="3">Time- to-peak [min]</th>
+      <th colspan="3">Peak intensity [a.u.]</th>
+      <th colspan="4">Interstitial tracer accumulation time [min]</th>
+      <th colspan="3">Duration [min]</th>
+    </tr>
+    <tr>
+      <th rowspan="2" colspan="2">ROI</th>
+      <th rowspan="2">Aqp4(+/+)</th>
+      <th rowspan="2">Aqp4(-/-)</th>
+      <th rowspan="2">p-stat</th>
+      <th rowspan="2">Aqp4(+/+)</th>
+      <th rowspan="2">Aqp4(-/-)</th>
+      <th rowspan="2">Δ</th>
+      <th rowspan="2">Aqp4(+/+)</th>
+      <th rowspan="2">Aqp4(-/-)</th>
+      <th rowspan="2">Δ</th>
+      <th rowspan="2">Aqp4(+/+)</th>
+      <th rowspan="2">Aqp4(-/-)</th>
+      <th rowspan="2">rel. Δ [%]</th>
+      <th colspan="2">Aqp4(+/+)</th>
+      <th colspan="2">Aqp4(-/-)</th>
+      <th rowspan="2">Aqp4(+/+)</th>
+      <th rowspan="2">Aqp4(-/-)</th>
+      <th rowspan="2">rel. Δ [%]</th>
+    </tr>
+    <tr>
+      <th>Start</th>
+      <th>End</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Cortical</td>
+      <td>OLF</td>
+      <td>NS</td>
+      <td>7207</td>
+      <td>5619</td>
+      <td>NS</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>61</td>
+      <td>52</td>
+      <td>9</td>
+      <td>106</td>
+      <td>79</td>
+      <td>25.5</td>
+      <td>43</td>
+      <td>80</td>
+      <td>39</td>
+      <td>70</td>
+      <td>38</td>
+      <td>32</td>
+      <td>–15.8</td>
+    </tr>
+    <tr>
+      <td>CA/RSP</td>
+      <td>**</td>
+      <td>1662</td>
+      <td>616</td>
+      <td>**</td>
+      <td>7</td>
+      <td>7</td>
+      <td>0</td>
+      <td>89</td>
+      <td>90</td>
+      <td>-1</td>
+      <td>27</td>
+      <td>12</td>
+      <td>55.6</td>
+      <td>59</td>
+      <td>90</td>
+      <td>66</td>
+      <td>90</td>
+      <td>32</td>
+      <td>25</td>
+      <td>–21.9</td>
+    </tr>
+    <tr>
+      <td>VIS</td>
+      <td>**</td>
+      <td>1699</td>
+      <td>529</td>
+      <td>**</td>
+      <td>7</td>
+      <td>8</td>
+      <td>-1</td>
+      <td>89</td>
+      <td>90</td>
+      <td>-1</td>
+      <td>33</td>
+      <td>9</td>
+      <td>72.7</td>
+      <td>54</td>
+      <td>90</td>
+      <td>73</td>
+      <td>90</td>
+      <td>37</td>
+      <td>18</td>
+      <td>–51.4</td>
+    </tr>
+    <tr>
+      <td>SS</td>
+      <td>NS</td>
+      <td>537</td>
+      <td>438</td>
+      <td>NS</td>
+      <td>6</td>
+      <td>7</td>
+      <td>-1</td>
+      <td>20</td>
+      <td>16</td>
+      <td>4</td>
+      <td>8</td>
+      <td>7</td>
+      <td>12.5</td>
+      <td>12</td>
+      <td>32</td>
+      <td>11</td>
+      <td>25</td>
+      <td>21</td>
+      <td>15</td>
+      <td>–28.6</td>
+    </tr>
+    <tr>
+      <td>AUD</td>
+      <td>NS</td>
+      <td>454</td>
+      <td>340</td>
+      <td>NS</td>
+      <td>7</td>
+      <td>7</td>
+      <td>0</td>
+      <td>89</td>
+      <td>89</td>
+      <td>0</td>
+      <td>10</td>
+      <td>5</td>
+      <td>50.0</td>
+      <td>67</td>
+      <td>90</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>24</td>
+      <td>N/A</td>
+      <td>&lt;-100</td>
+    </tr>
+    <tr>
+      <td>HIP</td>
+      <td>**</td>
+      <td>3258</td>
+      <td>1622</td>
+      <td>*</td>
+      <td>5.5</td>
+      <td>7.5</td>
+      <td>-2</td>
+      <td>63</td>
+      <td>81</td>
+      <td>–18</td>
+      <td>46</td>
+      <td>22</td>
+      <td>52.2</td>
+      <td>45</td>
+      <td>90</td>
+      <td>74</td>
+      <td>90</td>
+      <td>46</td>
+      <td>17</td>
+      <td>–63.0</td>
+    </tr>
+    <tr>
+      <td>PERI</td>
+      <td>P=0.052</td>
+      <td>3513</td>
+      <td>2659</td>
+      <td>NS</td>
+      <td>4</td>
+      <td>5</td>
+      <td>-1</td>
+      <td>83</td>
+      <td>90</td>
+      <td>-7</td>
+      <td>59</td>
+      <td>44</td>
+      <td>25.4</td>
+      <td>53</td>
+      <td>90</td>
+      <td>57</td>
+      <td>90</td>
+      <td>38</td>
+      <td>34</td>
+      <td>–10.5</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Brain stem</td>
+      <td>TH</td>
+      <td>*</td>
+      <td>3471</td>
+      <td>2557</td>
+      <td>0.052</td>
+      <td>2–3</td>
+      <td>2–3</td>
+      <td>0</td>
+      <td>82</td>
+      <td>90</td>
+      <td>-8</td>
+      <td>61</td>
+      <td>45</td>
+      <td>26.2</td>
+      <td>53</td>
+      <td>90</td>
+      <td>58</td>
+      <td>90</td>
+      <td>38</td>
+      <td>33</td>
+      <td>–13.2</td>
+    </tr>
+    <tr>
+      <td>HAB</td>
+      <td>NS</td>
+      <td>2379</td>
+      <td>1992</td>
+      <td>NS</td>
+      <td>9</td>
+      <td>11</td>
+      <td>-2</td>
+      <td>89</td>
+      <td>90</td>
+      <td>-1</td>
+      <td>45</td>
+      <td>36</td>
+      <td>20.0</td>
+      <td>54</td>
+      <td>90</td>
+      <td>58</td>
+      <td>90</td>
+      <td>37</td>
+      <td>33</td>
+      <td>–10.8</td>
+    </tr>
+    <tr>
+      <td>HY</td>
+      <td>NS</td>
+      <td>7908</td>
+      <td>6766</td>
+      <td>NS</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>39</td>
+      <td>34</td>
+      <td>5</td>
+      <td>123</td>
+      <td>105</td>
+      <td>14.6</td>
+      <td>23</td>
+      <td>59</td>
+      <td>21</td>
+      <td>54</td>
+      <td>37</td>
+      <td>34</td>
+      <td>–8.1</td>
+    </tr>
+    <tr>
+      <td>MB</td>
+      <td>*</td>
+      <td>6125</td>
+      <td>4013</td>
+      <td>*</td>
+      <td>3</td>
+      <td>4</td>
+      <td>-1</td>
+      <td>66</td>
+      <td>83</td>
+      <td>–17</td>
+      <td>87</td>
+      <td>56</td>
+      <td>35.6</td>
+      <td>42</td>
+      <td>84</td>
+      <td>53</td>
+      <td>90</td>
+      <td>43</td>
+      <td>38</td>
+      <td>–11.6</td>
+    </tr>
+    <tr>
+      <td>PAG</td>
+      <td>NS</td>
+      <td>25740</td>
+      <td>22474</td>
+      <td>NS</td>
+      <td>8</td>
+      <td>10</td>
+      <td>-2</td>
+      <td>43</td>
+      <td>38</td>
+      <td>5</td>
+      <td>350</td>
+      <td>311</td>
+      <td>11.1</td>
+      <td>35</td>
+      <td>75</td>
+      <td>31</td>
+      <td>61</td>
+      <td>41</td>
+      <td>31</td>
+      <td>–24.4</td>
+    </tr>
+    <tr>
+      <td>HB</td>
+      <td>NS</td>
+      <td>9291</td>
+      <td>8124</td>
+      <td>NS</td>
+      <td>2–3</td>
+      <td>2–3</td>
+      <td>0</td>
+      <td>42</td>
+      <td>38</td>
+      <td>4</td>
+      <td>133</td>
+      <td>114</td>
+      <td>14.2</td>
+      <td>28</td>
+      <td>66</td>
+      <td>27</td>
+      <td>61</td>
+      <td>39</td>
+      <td>35</td>
+      <td>–10.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Nuclei / tracts</td>
+      <td>CP</td>
+      <td>NS</td>
+      <td>1736</td>
+      <td>1167</td>
+      <td>NS</td>
+      <td>4</td>
+      <td>8</td>
+      <td>-4</td>
+      <td>89</td>
+      <td>90</td>
+      <td>-1</td>
+      <td>39</td>
+      <td>25</td>
+      <td>35.9</td>
+      <td>54</td>
+      <td>90</td>
+      <td>58</td>
+      <td>90</td>
+      <td>37</td>
+      <td>33</td>
+      <td>–10.8</td>
+    </tr>
+    <tr>
+      <td>WM</td>
+      <td>**</td>
+      <td>6953</td>
+      <td>5445</td>
+      <td>**</td>
+      <td>4.5</td>
+      <td>6.5</td>
+      <td>-2</td>
+      <td>51</td>
+      <td>53</td>
+      <td>-2</td>
+      <td>105</td>
+      <td>80</td>
+      <td>23.8</td>
+      <td>37</td>
+      <td>73</td>
+      <td>38</td>
+      <td>69</td>
+      <td>37</td>
+      <td>32</td>
+      <td>–13.5</td>
+    </tr>
+    <tr>
+      <td rowspan="4">CSF space</td>
+      <td>CM</td>
+      <td>NS</td>
+      <td>23276</td>
+      <td>19903</td>
+      <td>NS</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>24</td>
+      <td>24</td>
+      <td>0</td>
+      <td>397</td>
+      <td>339</td>
+      <td>14.6</td>
+      <td>15</td>
+      <td>50</td>
+      <td>16</td>
+      <td>47</td>
+      <td>36</td>
+      <td>32</td>
+      <td>–11.1</td>
+    </tr>
+    <tr>
+      <td>PCS</td>
+      <td>NS</td>
+      <td>15163</td>
+      <td>12498</td>
+      <td>NS</td>
+      <td>2–3</td>
+      <td>2–3</td>
+      <td>0</td>
+      <td>41</td>
+      <td>31</td>
+      <td>10</td>
+      <td>224</td>
+      <td>187</td>
+      <td>16.5</td>
+      <td>23</td>
+      <td>59</td>
+      <td>20</td>
+      <td>50</td>
+      <td>37</td>
+      <td>31</td>
+      <td>–16.2</td>
+    </tr>
+    <tr>
+      <td>3V</td>
+      <td>NS</td>
+      <td>12228</td>
+      <td>10441</td>
+      <td>NS</td>
+      <td>5</td>
+      <td>6</td>
+      <td>-1</td>
+      <td>45</td>
+      <td>46</td>
+      <td>-1</td>
+      <td>180</td>
+      <td>151</td>
+      <td>16.1</td>
+      <td>34</td>
+      <td>76</td>
+      <td>33</td>
+      <td>61</td>
+      <td>43</td>
+      <td>29</td>
+      <td>–32.6</td>
+    </tr>
+    <tr>
+      <td>LV</td>
+      <td>NS</td>
+      <td>8288</td>
+      <td>6555</td>
+      <td>NS</td>
+      <td>6</td>
+      <td>11</td>
+      <td>-5</td>
+      <td>90</td>
+      <td>90</td>
+      <td>0</td>
+      <td>157</td>
+      <td>123</td>
+      <td>21.7</td>
+      <td>54</td>
+      <td>90</td>
+      <td>58</td>
+      <td>90</td>
+      <td>37</td>
+      <td>33</td>
+      <td>–10.8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Caudal</td>
+      <td>SSS</td>
+      <td>*</td>
+      <td>5832</td>
+      <td>1430</td>
+      <td>**</td>
+      <td>1</td>
+      <td>3</td>
+      <td>-2</td>
+      <td>64</td>
+      <td>88</td>
+      <td>–24</td>
+      <td>77</td>
+      <td>22</td>
+      <td>71.4</td>
+      <td>38</td>
+      <td>90</td>
+      <td>75</td>
+      <td>90</td>
+      <td>53</td>
+      <td>16</td>
+      <td>–69.8</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>NS</td>
+      <td>7369</td>
+      <td>6151</td>
+      <td>NS</td>
+      <td>6</td>
+      <td>7</td>
+      <td>-1</td>
+      <td>47</td>
+      <td>59</td>
+      <td>–12</td>
+      <td>97</td>
+      <td>80</td>
+      <td>17.5</td>
+      <td>29</td>
+      <td>75</td>
+      <td>31</td>
+      <td>67</td>
+      <td>47</td>
+      <td>37</td>
+      <td>–21.3</td>
+    </tr>
+    <tr>
+      <td colspan="3">MEDIAN ±SD</td>
+      <td>6125±1653¶</td>
+      <td>4013±1306¶</td>
+      <td></td>
+      <td>5.0±2.2</td>
+      <td>6.5±2.8</td>
+      <td rowspan="2"></td>
+      <td>63±23</td>
+      <td>81±27</td>
+      <td rowspan="2"></td>
+      <td>56</td>
+      <td>87</td>
+      <td>24±19</td>
+      <td rowspan="2" colspan="4"></td>
+      <td>37±7</td>
+      <td>32±7</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">KO vs. WT difference(Wilcoxon signed-rank test)</td>
+      <td colspan="2">WT &gt;KO, p&lt;0.0001</td>
+      <td></td>
+      <td colspan="2">WT &lt;KO, p&lt;0.01</td>
+      <td colspan="2">WT ~KO, p=0.2971</td>
+      <td colspan="3">WT &gt;KO, p&lt;0.0001</td>
+      <td colspan="2">WT &gt;KO, P&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+### AQP4 distribution determines regional differences in the parenchymal fluid flow
 
 Increased AQP4 KO brain volume is associated with decreased ventricular volumes, increased slow MR diffusion markers, reduced glymphatic transport, and small region-specific, non-significant differences in the vascular density (Figure 2F). Using immunohistochemistry for AQP4, we found heterogenous expression in WT animals, with the highest expression in the hippocampus, thalamus, and habenula (Figure 2H; Yao et al., 2008; Hubbard et al., 2015). Next, we asked which factor reflected the changes in MR-DWI or DCE-MRI derived markers more: vascular density or local AQP4 expression?
 
@@ -92,6 +1436,86 @@ The vascular density did not correlate with ADC or IVIM measures in both KO and 
 ## Discussion
 
 Using non-invasive high-resolution MR CSF space volumetry and cisternography in vivo, we found increased brain volume and decreased CSF pool volume, mainly in the ventricular compartment, in mice genetically lacking the water channel AQP4, alongside increased brain-water content (Table 4). Changes in brain water content and CSF pool size were not explained by changes in CSF production or the volume of the larger perivascular CSF spaces. Next, we investigated the brain water mobility in AQP4 KO animals using standard MR-DWI and IVIM-DWI. Measures of fast MR diffusion and vascular density were also unchanged between KO and WT mice, although KO animals exhibited a higher variability in vascular density. Slow diffusion (ADC and D) estimates were increased within the parenchyma of KO animals and so was the cortical interstitial space volume measured using the real-time ionophoresis TMA technique. Finally, we asked whether AQP4 expression or local vascular density correlated to slow diffusion, fast diffusion (IVIM), or with measures of decreased CSF MR tracer influx into the AQP4 KO brains. In WT animals, slow diffusion measures were correlated with AQP4 expression and differential vascular density was nonlinearly correlated to measures of tracer accumulation. AQP4 KO animals had a very low correlation of vascular density to time-to-peak tracer accumulation. These correlations suggest that the vascular network provides a highway for perivascular CSF inflow and thereby drives the initial tracer distribution within the parenchyma. Increased AQP4 expression in regions manifesting high ADC or D in WTs, possible due enlarged interstitial volume, may reflect a compensatory upregulation of AQP4 due to fluid stagnation consistent with the notion that AQPs reduce parenchymal resistance and facilitate the water and solute movement. Consistent with this hypothesis, recent studies report dynamic AQP4 relocalization leading to changes in signaling pathways (Salman et al., 2022). Thus, our data overall suggest that the markedly altered brain fluid transport in AQP4 KO mice may result from a reduction in glymphatic fluid export, leading to stagnation of ISF and enlargement of the interstitial space. The interstitial fluid stagnation will in turn reduce CSF influx and give rise to an overall reduction in glymphatic transport.
+
+**Table 4.**
+ Descriptive summary of findings presented in the current study.Bold italic font highlights the regions of the largest differences found between KO and WT animals, by means of 3 MRI and 5 physiological and histological assessment methods applied.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Magnetic resonance imaging in vivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Measurement</td>
+      <td>General findings in KO compared to WT</td>
+      <td>Region of largest difference</td>
+    </tr>
+    <tr>
+      <td rowspan="3">non-invasive</td>
+      <td>3D cisternography</td>
+      <td>- 5–10% larger brain volumes- 22–29% smaller CSF space / brain volume ratio</td>
+      <td>ventricular space, 3rd ventricle</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2D diffusion-weighted imaging</td>
+      <td>5–6% higher ADC and D</td>
+      <td>(difference present for average and in all diffusion directions)- thalamus, hindbrain, periaqueductal gray regions, auditory cortex and hippocampus</td>
+    </tr>
+    <tr>
+      <td colspan="2">Higher Fp and Fp × D* only in the 3rd ventricle</td>
+    </tr>
+    <tr>
+      <td>invasive</td>
+      <td>Dynamic CSF tracer imaging via cisterna magna`</td>
+      <td>reduced parenchymal tracer influx and evacuation</td>
+      <td>- influx: cortical ROI, hippocampus- efflux: superior sagittal sinus</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Physiological and histological measurements</td>
+    </tr>
+    <tr>
+      <td colspan="2">Measurement</td>
+      <td>General findings in KO compared to WT</td>
+      <td>Region of largest difference</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ex vivo and histology</td>
+      <td>Brain water content</td>
+      <td>~6% larger brain water content</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQP4 expression</td>
+      <td>(only WT) heterogenous AQP4 expression in the brain</td>
+      <td>largest expression in the thalamus, hippocampus, habenula</td>
+    </tr>
+    <tr>
+      <td>Vascular density</td>
+      <td>similar vascular density to WT</td>
+      <td>trend for larger vascular density in the thalamus and olfactory area</td>
+    </tr>
+    <tr>
+      <td rowspan="2">in vivo</td>
+      <td>CSF production</td>
+      <td>similar CSF production to WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Real-time ionophoresis TMA</td>
+      <td>ISF space volume larger</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Why would AQP4 play a role in export of brain interstitial fluid? In general, AQPs increase membrane water permeability and are present in kidney and exocrine organs where fluid transport is driven by relatively small osmotic gradients produced by plasma membrane ion transporters (Salman et al., 2022; Salman et al., 2021). AQPs facilitate near-isomolar transepithelial fluid transport and AQP deletions have previously been shown to be associated with reduced fluid secretion (Verkman, 2009). A recent study showed that AQP4 sharply reduces outflow of interstitial fluid (Plá et al., 2022). It has been shown that brain interstitial fluid leaves by multiple pathways including perivenous efflux, along cranial and spinal nerves and also along the ventricular and pial surfaces (Rasmussen et al., 2022). The fluid is then absorbed by meningeal and cervical lymphatic vessels for export to the venous system. AQP4 is intensely expressed in glia limitans facing the ependymal layers of the ventricles and also the pial membrane surrounding the brain surfaces. Recent studies showed dynamic and reversible AQP4 channel membrane relocalization for regulation of local water homeostasis (Salman et al., 2022) in response to hypothermia and hypotonic treatment in cultured rat (Kitchen et al., 2015) and human primary cortical astrocytes (Salman et al., 2017) without change in AQP4 mRNA levels, and nonuniformity of these responses among AQP4 subtypes (Ciappelloni et al., 2019). Similarly, the vascular endfeet of astrocytes plastered around both arterioles, capillaries and veins in both rodent and human brain express high levels of AQP4 in the membrane facing the vessel wall (Nielsen et al., 1997; Rash et al., 1998; Oberheim et al., 2009; Zeppenfeld et al., 2017). In fact, the intensity of AQP4 immunofluorescence signal in endfeet plastered around veins is almost double of those surrounding arteries (Iliff et al., 2012). Fibrous astrocytes in white matter tracts are also recognized for their high AQP4 expression (Lundgaard et al., 2014). Thus, AQP4 is present at high density at most if not all glymphatic efflux paths, and therefore also in a prime position to mediate outflow of interstitial fluid.
 
@@ -107,35 +1531,35 @@ Glymphatic disruption has been observed in preclinical models of Alzheimer’s d
 
 ## Materials and methods
 
-## Animals and experimental setups
+### Animals and experimental setups
 
 Animal approval was received from both the University of Copenhagen Animal Experiment Inspectorate and the University of Rochester Medical Center Committee on Animal Resources. The same AQP4 knockout (Aqp4(-/-), KO) mouse line (Thrane et al., 2011), regularly cross-breed with wildtype (WT) mice was bred in both Copenhagen and Rochester, and in total n=97 10–16 weeks old AQP4 KO and WT (Aqp4(+/+)) littermates mice on a C57BL/6 background (Mestre et al., 2018a) was used (Table 1A). All animals were group-housed (up to 5 mice/cage) with ad-libitum access to food and water, temperature (22 ± 2°C), and humidity-controlled (55 ± 10%) environment with a 12/12 hr light/dark cycle. The animals were subdivided randomly into groups, and each group underwent one of the experimental paradigms including three in vivo magnetic resonance imaging (MRI) experiments: 3D CSF space volumetry and cisternography, 2D diffusion-weighted imaging (DWI), dynamic contrast-enhanced (DCE) MRI via cisterna magna; or in vivo CSF production, and three ex vivo measurements: vascular density, AQP4 expression, brain water content. At the end of each in vivo experiment, mice were sacrificed via K/X overdose and cervical dislocation.
 
-## MRI
+#### MRI
 
 All MRI scanning was performed at 9.4T MRI device (BioSpec 94/30USR, Bruker BioSpin, Ettlingen, Germany) in the head-first prone position with animal’s body temperature maintained at 37 ± 1°C with a thermostatically-controlled waterbed and monitored, along with the respiratory rate, by an MR compatible remote monitoring system (SA Instruments, NY, USA).
 
-## Non-contrast MRI volumetry and cisternography
+#### Non-contrast MRI volumetry and cisternography
 
 To achieve high-spatial resolution of MRI CSF space volumetry and cisternography a 3D constructive interference in steady-state (CISS) sequence along with a cryogenically cooled Tx/Rx quadrature-resonator (CryoProbe, Bruker BioSpin) and 240 mT/m gradient coil (BGA-12S) were used. During MRI, the animals (5 KO and 6 WT) were anesthetized under Ketamine/Xylazine (i.p. K/X: 100/10 mg/kg) and underwent acquisition of two 3D-TrueFISP volumes of opposite phase encoding direction (i.e.: 0° and 180°) (Table 1B), for further 3D-CISS image calculation. The complete MRI protocol lasted over an hour so every animal was implanted with a permanent intraperitoneal PE-10 catheter in the abdominal area, connected to a 1 mL syringe filled with K/X solution. The syringe was kept outside MR during whole imaging, and animals received a single supplementary dose of K/X after the first TrueFISP volume acquired. No difference in age (p=0.697 for KO vs. WT using Mann-Whitney U-test), body weight (p=0.7662), respiration rate during MRI (p>0.99) as well as signal-to-noise ratio (SNR) of computed 3D-CISS images (3.5 ± 0.4 vs 3.7 ± 0.2; p=0.1385) was found between KO and WT animals (Table 1A) so no animals were excluded from further analysis.
 
-## DWI and IVIM-DWI
+#### DWI and IVIM-DWI
 
 To assess differences in the brain water mobility between the genotypes, echo-planar-imaging (EPI)-based diffusion-weighted imaging (DWI) was performed using a room-temperature volumetric Tx/Rx resonator (in. ø40 mm) and 1500mT/m gradient coil (BFG6S, Bruker). The animals (6 KO and 6 WT) were anesthetized with K/X (i.p. 100/10 mg/kg) and underwent DWI with 17 b-values measured in 3 orthogonal directions of diffusion encoding gradients (Table 1B). To reduce the effect of respiratory motion (Federau et al., 2013), all DWI images were acquired with respiratory-gating in exhale, assisted by the remote monitoring system (see above). To minimize the influence of deep anesthesia and long scanning time on the measurements, the imaging protocol encompassed solely DWI lasting <40 min so no supplementary K/X was required. No difference in age (p>0.99 for KO vs. WT; Mann-Whitney U-test), body weight (p=0.935), respiration rate during MRI (p=0.632) was found between KO and WT so no animals were excluded from further analysis (Table 1A).
 
 It is worth mentioning, that there is an ongoing debate on efficacy of IVIM modelling in reflecting phenomena in microvascular network or related to tissue microarchitecture (Fournet et al., 2017; Meeus et al., 2017; Paschoal et al., 2018; Schneider et al., 2019; Niendorf et al., 1996). We have aimed to provide an optimal setup for DWI (Liao et al., 2021; Lemke et al., 2011) by measuring MR diffusion signal using 30ms echo time (TE) and 17 b-values with increased averaging for b-values≥1000 s2/mm (see Table 1B). Based on or preliminary assessment (unpublished) application of higher than minimal available (here minimal ~22ms) TE would reduce the influence of ghosting and perfusion-related artefact, and higher averging would reduce the influence of possible Rician noise at high b-values. Although IVIM estimates were reported to depend on TE (Führes et al., 2022; Bisdas and Klose, 2015), mostly for perfusion fraction, our evaluation focused predominantly on the slow diffusion component. Furthermore, by sampling signal up to 3000 s2/mm b-value, which may lead to presented slight lower ADC values, we aimed for depicting dominant signal from extracellular space at high b-values (Le Bihan, 2019; Cihangiroglu et al., 2009; Clark and Le Bihan, 2000; Niendorf et al., 1996). However indicatively useful, higher order models and the models focused on separating hindered MR diffusion signal according to assumption on microarchitecture (Latour et al., 1994; Palombo et al., 2020; Burcaw et al., 2015; Kaden et al., 2016; Wu and Zhang, 2019; Olesen et al., 2022; Pfeuffer et al., 1998) or assessment of diffusion signal distribution (Roth et al., 2008; Benjamini and Basser, 2019; Slator et al., 2021; Ronen et al., 2006) are beyond presented general evaluation.
 
-## CM cannulation and DCE-MRI
+#### CM cannulation and DCE-MRI
 
 For DCE-MRI, cisterna magna (CM) cannulation based on the previous studies (Xavier et al., 2018) was performed in mice (5 KO and 6 WT; Table 1A) anesthetized with Ketamine/Dexmedetomidine (i.p. K/Dex: 75/1 mg/kg). After exposing CM, a 30 G copper cannula (out. ø0.32 mm; Nippon Tokushukan, Mfg, Tokyo, Japan), attached to a PE-10 tube filled with aCSF, was inserted into CM and fixed in position with a drop of cyanoacrylate glue followed by a drop of glue accelerator. The incision site and the skull were then covered by a mixture of cyanoacrylate glue and dental cement. Subsequently, the exposed PE-10 tubing was attached to a cannula filled with contrast agent (gadobutrol, 20 mM; Gadovist, Bayer Pharma AG, Leverkusen, Germany) and the animals were moved to MR scanner. The filled cannula was then connected to a syringe in a microinfusion pump. Head movements during the scanning were minimized by fixing the animals head in an MR-compatible stereotactic holder with ear bars, and the animals were put into MR with the head centered under the CryoProbe. The scanning protocol based on the previously described (Stanton et al., 2021) and whole mouse brain pre- and post-contrast T1-weighted DCE-MRI was acquired with 1 min temporal and 100 µm isotropic spatial resolutions using 3D-FISP sequence (Table 1B). DCE-MRI continued over 90 measurements (90 min), and T1-enhancing contrast agent was infused into the CM (gadobutrol, 1 µL/min for 10 min) after the first three baseline scans (i.e., after 3 min).
 
-## Microbeads phantom ex vivo
+#### Microbeads phantom ex vivo
 
 To verify whether ADC and D may reflect the volume of interstitial fluid (ISF) space in the brain parenchyma, we performed an additional DWI measurements by mimicking increasing ISF space volume in 3 water phantoms filled with Sephadex G-25 microbeads (Sephadex G-25; Sigma-Aldrich, St. Louis, MO, USA) of coarse (100–300 μm), medium (50–150 μm), fine particle size (20–80 μm of wet particle size). All microbeads possess the same porosity <5 kD so a similar exchange rate between stored and free water pools is expected. Each phantom was of the same in-house design (in. volume ~0.5 ml.), formed from of thick plexiglas tube (~25 mm in. long, out./in. ø10/5 mm) with a thread plug at both sides. The thread plug was made from the same tube, with a standard bonded polyester microfilter placed inside (Appendix 1—figure 1E) to prevent evacuation of the microbeads. For DWI, microbeads for each phantom were placed initially in a distilled water for 24 hr, to achieve their maximal size. Afterwards, a 2 ml syringe filled with distilled water solution of 0.001 mM/ml gadobutrol was attached to the thread plug on one side of the phantom and the phantom was filled with the microbeads. Gadobutrol was used to obtain optimal MR signal shortening for the echo time used in the same EPI sequence as employed in vivo (Table 1B). Any possible air bubbles remaining between the microbeads were carefully removed using a 1 µl inoculating loop. Subsequently, the other side of the phantom was closed with the thread plug, the phantom was flushed with ~1.8 ml gadobutrol solution in the attached syringe, and the solitary plug was sealed with a rubber syringe cap and parafilm. The syringe with a residual of gadobutrol solution at the other end was left to support pressure equalization inside the phantom.
 
 DWI was performed 6 times in each phantom, with a central slice imaged in 1/3 phantom’s distal portion from the syringe. To verify the diffusion values in a free water environment, DWI was performed 4 times in the same phantom filled solely with gadobutrol solution.
 
-## Free fluid volume estimation in the phantom
+#### Free fluid volume estimation in the phantom
 
 To confirm that the free fluid volume surrounding the microbeads increases with increasing particles size, additional measurements were performed employing MR T1 mapping and contrast-enhanced micro computed-tomography (µCT).
 
@@ -145,135 +1569,163 @@ For free fluid space estimation using µCT, all phantoms previously scanned for 
 
 To verify the relation between MR diffusion values and the T1 relaxation times as well as free fluid estimates using µCT, DWI was performed 4 times in each phantom (as above).
 
-## AQP4 channel staining ex vivo
+#### AQP4 channel staining ex vivo
 
 C57Bl/6 brain sections collected previously (Hablitz et al., 2020, ) were newly reimaged and an entirely new analysis done for current experiment. Originally, mice (4 WT; Table 1A) were cardiac perfused with AlexaFluor 488 conjugated wheat germ agglutinin (Thermofisher Scientific) at 15 µg/mL in 20 mL of phosphate buffered saline (PBS), and then perfused with 20 mL PBS with 4% paraformaldehyde (PFA). Subsequently, the brains were extracted and were immersed in 4% PFA overnight. This step labels the vasculature and fixes the brain tissue. Brains were sectioned coronally at 100 µm using a vibratome (Leica VT1200s) and equivalent sections from +1.2 to –1.8 bregma were stained for AQP4. Floating sections were permeabilized with 0.1% Triton-X-100 in PBS, blocked with 7% normal donkey serum (Jackson Immunoresearch) in PBS with 0.03% Triton-X-100, and then incubated with Anti-AQP4 primary antibody (AB3594, Millipore; 1:1000 dilution) overnight. The sections were afterwards washed three times with PBS and incubated with Alexa 594 fluorophore-linked donkey anti-rabbit secondary antibody (A21207, Invitrogen; 1:500 dilution) and DAPI (D1306, Invitrogen; 1:2000 dilution). Stained sections were mounted with Fluoromount G (Thermofisher Scientific).
 
-## Vascular density measurements ex vivo
+#### Vascular density measurements ex vivo
 
 Vascular density was measured in mice brains (6 AQP4 KO and 6 C57Bl6; Table 1A) prepared in few steps. All mice were cardiac perfused with AlexaFluor 488 conjugated wheat germ agglutinin at 15 ug/mL in 20 mL of PBS, and then perfused with 20 mL 4% PFA. Afterwards, the brains were extracted and immersed in 4% PFA overnight. 100 µm coronal sections were taken using a vibratome (Leica 1200 S). Anterior brain sections at +1.2 mm bregma, and posterior brain sections –1.8 mm bregma were mounted in Prolong Gold media with DAPI (Invitrogen). Equivalent sections were used for all biological replicates.
 
-## CSF production measurements in vivo
+#### CSF production measurements in vivo
 
 The measurements were performed in mice (5 KO and 6 WT; Table 1A) as described previously (Liu et al., 2020). Mice were anesthetized with K/X (100 mg/kg / 20 mg/mL i.p.) and 2% isoflurane, and placed in a stereotactic frame. Their scalp was shaved, and the skin was cleaned with a chlorhexidine swab followed by an alcohol wipe to remove the chlorhexidine. An iodine solution was applied and left to dry, and the scalp was opened and the skin retracted. The exposed skull was irrigated with sterile saline and cleaned by applying sterile cotton swabs, and a sterilized stainless-steel light-weight head plate (0.9×19×12 mm dimension), equipped with a round hole of at the center (in. ø9.0 mm), was attached to the mouse skull using a mixture of dental cement with cyano-acrylate glue (Sweeney et al., 2019). Pre-operatively as well as for three days post-surgery the mice received Banamine (1.1 mg/kg) subcutaneously as an analgesic. The mice were trained to tolerate positioning in the head plate stand (Cat# MAG-1, Narishige International USA Inc), as well as a restraint tube in three daily training sessions, each lasting 30 min for 3 days post-surgery.
 
 For measuring CSF production during wakefulness, the mice were anesthetized with 2% isoflurane during cannula implantation. A cannula (30 G needle) attached to artificial CSF filled PE-10 tubing was implanted into the right lateral ventricle through a small burr hole (AP = −0.1 mm, ML = 0.85 mm, DV = –2.00 mm from the postion of bregma). The cannula was fixed to the skull with dental cement and the opposite end of the PE tubing was sealed by high-temperature cautery. Once the cannula was in place, the neck was flexed 90 degrees and the headplate was attached to the head stand. Then a separate cannula was inserted into the CM and advanced into the 4th ventricle. One microliter of mineral oil was infused into the 4th ventricle to block the exit of CSF into the subarachnoid space. All incisions were infiltrated with 0.25% bupivacaine topical anesthetic to prevent the animal from experiencing post-surgical pain. The measurements were collected while the animal rested in an open cylinder restraint tube (9 cm length, in. ø3.5 cm), to which the animals were accustomed during training. Anesthesia was discontinued and CSF production was measured in head-fixed mice in 10 min intervals for 65 min, after a 30-min recovery period.
 
-## Tetramethylammonium microiontophoresis for interstitial fluid space volume estimation
+#### Tetramethylammonium microiontophoresis for interstitial fluid space volume estimation
 
 Real-time iontophoresis with tetramethylammonium (TMA) was performed in mice (8 KO and 20 WT, body weight not recorded) as adapted from the previous studies (Nicholson, 1993; Xie et al., 2013). The single barrel iontophoresis microelectrode (tip out. ø2–3 µm) contained 150 mM tetramethylammonium (TMA)-chloride and 10 µM Alexa 488. A series of currents of 20 nA, 40 nA and 80 nA were applied by a dual channel microelectrode pre-amplifier. For measurements of TMA, microelectrodes (out. ø2–3 µm) were fabricated from double-barreled theta-glass using a tetraphenylborate-based ion exchanger. The TMA barrel was backfilled with 150 mM TMA chloride, while the reference barrel contained 150 mM NaCl and 10 µM Alexa 568. All recordings were obtained by inserting the two electrodes to a depth of 150 µm below the cortical surface. Recording electrodes were inserted 2.5 mm lateral and 2 mm posterior to bregma. The electrode tips were imaged after insertion using 2-photon excitation to determine the exact distance between the electrodes (typically ~150 µm). The TMA signal was calculated by subtracting the voltage measured by the reference barrel from the voltage measured by the ion-detecting barrel using a dual-channel microelectrode pre-amplifier. The Nikolsky equation was used for calibration of the TMA electrodes based on measurements obtained in electrodes containing 0.5, 1, 2, 4, and 8 mM TMA-chloride in 150 mM NaCl. The TMA measurements were acquired relative to similar recordings obtained in 0.3% agarose prepared from a solution containing 0.5 mM TMA and 150 mM NaCl. A custom-made software in Matlab (v. R2019a, The Mathworks, Inc, Natick, MA.), ‘Walter’, developed by C. Nicholson was used to calculate α and λ values (Nicholson, 1993; Xie et al., 2013).
 
-## Brain water content ex vivo
+#### Brain water content ex vivo
 
 Anesthetized animals (3 KO and 5 WT, gender and body weight not recorded; Table 1A) were decapitated, the whole brains were taken out and weighed immediately (Wwet). Brain tissue was dried at 65 °C for 48 h until it reached a constant weight, and brain were re-weighed (Wdry). The ratio between the difference of Wwet - Wdry and Wdry was considered reflecting the brain water content (ml H2O/g dry weight).
 
-## Data processing and statistical analysis
+### Data processing and statistical analysis
 
-## MRI
+#### MRI
 
 All acquired images were visually checked and no presence of significant artefacts influencing morphological and functional assessment was found. Further processing pipelines were applied, and included motion-correction, spatial co-registration, and automatic or semi-automatic pre- and final postprocessing.
 
 All described statistical analyses were performed in GraphPad Prism 8 (GraphPad Software) and Matlab. The results coming from statistical comparisons were considered significant for p<0.05 after post-hoc correction, when applicable.
 
-## 3D-CISS volumetry and cisternography
+#### 3D-CISS volumetry and cisternography
 
 All 3D-CISS volumes were calculated in few steps using in-house pre-processing pipeline (Appendix 1—figure 3A). For each animal, every 3D-TrueFISP volume acquired with two repetitions was motion-corrected (10 times or until no further improvement) and averaged. Subsequently, the second averaged 3D-TrueFISP volume (180° encoding direction) was subjected to rigid-body registration (6 df.) to the first volume (0° encoding direction). Both motion-correction and registration were performed in AFNI (Oakes et al., 2005), and aimed to reduce the influence of random motion on the computed 3D-CISS image. Finally, 3D-CISS image was computed as a maximum intensity projection from 2 co-registered 3D-TrueFISP volumes, resulting in an image of almost completely removed banding artifacts. Afterwards, every computed 3D-CISS volume underwent semi-automatic brain parenchyma image extraction using the ‘Segment 3D’ tool in ITK-SNAP (Yushkevich et al., 2006), to remove the regions outside the brain parenchyma image from further analysis. Brain parenchyma was considered as the brain tissue volume surrounded with dark regions of skull image and including intracerebral vessels. To correct for intensity inhomogeneities coming from the B0 field and the surface profile of the CryoProbe (B1), the extracted brain parenchyma image underwent bias field correction using FSL (Zhang et al., 2001) (0.5 sigma, 20 mm FWHM, 4 iterations). At each step of pre-processing, the results were visually checked and confirmed for correctness.
 
-## Automatic CSF space segmentation
+#### Automatic CSF space segmentation
 
 For a single, bias-corrected 3D-CISS volume the ventricular and perivascular CSF spaces were separated from the brain parenchyma image in 3 dimensions using an in-house fully automatic adaptive algorithm in Matlab (Gomolka et al., 2021), in four steps (Appendix 1—figure 3B). First, high-intensity regions, as branches of the optic nerve’s residual after the semi-automatic brain extraction and not adjacent to the parenchyma in all image slices, were excluded using a bounding box enclosing the brain (Appendix 1—figure 3B ‘Bounding box and adaptive thresholding’). The bounding box was automatically computed based on a maximization of the voxels intensity variance slice-wise, separately in three orthogonal planes. The parenchyma volume surrounded by the bounding box was enclosed and the solitary regions were removed based on their geometrical properties calculated slice-wise in the sagittal plane: eccentricity≥0.5, roudness≥0.5, perimeter<0.005% of the brain parenchyma voxels count. The resulting brain image mask was geometrically dilated with a disk kernel of 11 pixels diameter, to enclose potentially removed or non-continuous parenchymal regions. The non-continuity appeared in case of residuals from banding artifacts at the borders of the skull and the ethmoidal bone. Subsequently, brain parenchyma volume was updated according to the resulting mask, for further automatic segmentation of the CSF space.
 
-Second, initial CSF space separation was performed by means of an adaptive intensity threshold and calculation of cumulative distribution of voxels intensities>0 from the separated and bias-corrected brain volume. As the overall distribution of the brain intensities differed slightly between the 3D-CISS images due to their SNR, a threshold-correcting factor (denoted fc) was calculated by means of the formula:(1)fc=σdμd+σd
+Second, initial CSF space separation was performed by means of an adaptive intensity threshold and calculation of cumulative distribution of voxels intensities>0 from the separated and bias-corrected brain volume. As the overall distribution of the brain intensities differed slightly between the 3D-CISS images due to their SNR, a threshold-correcting factor (denoted fc) was calculated by means of the formula:
 
-where µd is a mean and σd is a standard deviation (SD) of aggregated brain parenchyma voxels intensity distribution. Separation of the CSF space was performed assuming that CSF intensities reflect those ≥95th percentile of the aggregated intensities distribution. Hence, the intensity of each voxel was rescaled according to the formula:,(2)Ir=I-1.33×σdσd
+$$
+f_{c}=\frac{\sigma_{d}}{\mu_{d}+\sigma_{d}}
+$$
+
+where µd is a mean and σd is a standard deviation (SD) of aggregated brain parenchyma voxels intensity distribution. Separation of the CSF space was performed assuming that CSF intensities reflect those ≥95th percentile of the aggregated intensities distribution. Hence, the intensity of each voxel was rescaled according to the formula:
+
+$$
+I_{r}=\frac{I-1.33\times\sigma_{d}}{\sigma_{d}}
+$$
 
 where I and Ir are the original and the rescaled voxels intensities. The rescaled voxels intensities were encoded using a floating point precision in range between −1.33 × σd and a distribution peak close to the image SNR calculated as µd/σd (i.e. maximum rescaled intensity ~10 with the mean value varying between 3 and 5 among all analyzed images). Third, all the rescaled voxels possessing negative intensity (i.e. brain parenchyma) were assigned to 0, and a new aggregated distribution of the rescaled voxels of >0 intensity was computed. Subsequently, all voxels intensities ≤95.5th percentile of the new distribution were assigned to 0 to keep only the high intensity CSF seed regions. For the images of SNR >4 (i.e. lower contribution of Rician noise), the new distribution threshold was set of ≤95.5 +fc. The correction factor fc accounted for subtle intensity changes and did not result in the threshold exceeding the 97th percentile. A mask image of the initially separated CSF space was computed by assigning all remaining nonzero voxels to 1, for further application of a region-growing algorithm.
 
 The final segmentation was performed using a 2D region-growing algorithm applied slice-wise, consecutively in sagittal, axial and coronal planes (Appendix 1—figure 3B- ‘in Sagittal plane’, ‘in Axial plane’, ‘in Coronal plane’). In each slice, the algorithm reconsidered the voxels at the boundary of the CSF space in horizontal, vertical and diagonal directions separately. The algorithm based on extension of the method for contrast calculation applied to study properties of hemorrhagic and ischemic regions in clinical CT images (Nowinski et al., 2014; Gomolka et al., 2017). The calculations were performed considering the initially separated CSF space mask and the original 3D-CISS image, in two steps: (1) CSF mask dilation; (2) CSF mask erosion.
 
-## CSF mask dilation
+##### CSF mask dilation
 
 To assure that only voxels belonging to the CSF space and not affected by the partial volume from the surrounding parenchyma were included into calculation, the contrast was computed for the initially separated CSF boundary voxels reflecting the intensities ≥97.5th - fc percentile (i.e., µd + 2 × σd) of the aggregated intensities distribution from not intensity-rescaled brain parenchyma image. The boundary contrast was obtained as a ratio of an absolute difference between considered boundary voxel intensity and the mean intensity of the n consecutive voxels to the left/top/left-diagonal to the sum of the boundary voxel intensity and the mean intensity of the n consecutive voxels to the right/bottom/right-diagonal in the original CISS image (absolute relative CSF/brain parenchyma contrast in horizontal/vertical/diagonal directions, respectively). The contrast was calculated for n from 1 to 4 in the sagittal and from 1 to 3 voxels in the axial and coronal planes. The voxels at nth distance from the boundary were included into the updated CSF mask if their absolute relative contrast was <2%.
 
-## CSF space erosion
+##### CSF space erosion
 
 The boundary of the updated CSF mask was recalculated, and the voxels were reconsidered using the same method for the contrast calculation (see above). Herein, however, the contrasts were calculated for n from 1 to 2 in the sagittal and from 1 to 3 in the axial and coronal planes, to avoid removing small regions belonging to the perivascular space around the main cerebral arteries. The voxels at nth distance were removed from the updated CSF mask if their intensity in the original CISS image was ≤95.5th - fc percentile (for sagittal, and <95.5th - fc for axial and coronal planes) of the aggregated intensity distribution, and the absolute relative contrast to the respective boundary voxel was >2.5% (for sagittal, and ≥2.5% for the other planes). To further remove remaining false-positively segmented single voxels and to enclose wrongly opened larger regions the final CSF mask was subjected to 3D median filtration with a 3×3 voxels kernel (Appendix 1—figure 3B ‘Filtration and labeling’). Final CSF volume was visually assessed for correctness by RSG and YM, by overlaying with its parental 3D-CISS volume in ITK-SNAP.
 
-## CSF compartments labeling and statistical comparison
+##### CSF compartments labeling and statistical comparison
 
 The delineated CSF space was separated manually from the final CSF mask in ITK-SNAP into seven compartments (Appendix 1—figure 3B – ‘Filtration and labeling’), for further statistical comparison: lateral ventricles; third ventricle; fourth ventricle; basilar artery; basal perivascular space at the skull base surrounding the Circle of Willis; parietal perivascular spaces and cisterns (ventrally from the position of posterior cerebral artery, via space neighboring the transverse sinuses and dorsally to the junction of the superior sagittal sinus and transverse sinuses); remaining perivascular space within the olfactory area, surrounding anterior cerebral and frontopolaris arteries, middle cerebral arteries branches, and posterior cisterns including pontine and cisterna magna. For supplementary comparison, the segmented lateral, third and fourth ventricular spaces were considered jointly as the ventricular space, and the basilar, basal and the remaining anterior/posterior CSF spaces were considered jointly as the whole perivascular space. Number of voxels was counted, and the volume of each segment was calculated by multiplying the voxels count by the voxel dimension from the original 3D-CISS image, for subsequent statistical comparison.
 
-To compensate for the brain capsule volume differences and provide a reliable measure of the brain’s CSF space volume between animals, a ratio of the CSF to the brain volume (intracranial volume) was calculated for each delineated CSF segment as:.(3)RatioCSFspace=CSFcompartmentvolumeBrainvolume−CSFwholesegmentedvolume
+To compensate for the brain capsule volume differences and provide a reliable measure of the brain’s CSF space volume between animals, a ratio of the CSF to the brain volume (intracranial volume) was calculated for each delineated CSF segment as:
+
+$$
+Ratio_{CSFspace}=\frac{CSF_{compartmentvolume}}{Brain_{volume}−CSF_{wholesegmentedvolume}}
+$$
 
 The ratios obtained for each of the CSF compartments, as well as the segmented brain volumes were compared between KO and WT animals using nonparametric Mann-Whitney U-test.
 
-## DWI and IVIM-DWI
+### DWI and IVIM-DWI
 
-## Preprocessing
+#### Preprocessing
 
-For every animal, all DWI volumes acquired were subjected to motion-correction in AFNI to avoid influence of random and subtle frame-to-frame image displacements. The motion-correction was performed (4 times or until no further improvement) in reference to the first image acquired using the first b-value (b0), and the results were visually confirmed for correctness by RSG. Images acquired with different number of repetitions were averaged according to b-value and diffusion encoding direction, for subsequent calculation of diffusion measures in all 3 directions. Separately, an averaging took place considering only b-values, to calculate an average diffusion images. To normalize the image intensities and reduce influence of nonstationary noise, volume-wise normalization of voxels intensities was performed in all images from different b-values using a mean value of a background signal defined in a half-ball VOI including 704 voxels outside the visible tissue image. The VOI was manually set in an averaged b0 image and applied to every averaged volume from each b-value for the background signal depiction. The intensity normalization was performed according to formula:,(4)DWIbvalnorm=DWIbval−(μbvalnoise−6×σbvalnoise)
+For every animal, all DWI volumes acquired were subjected to motion-correction in AFNI to avoid influence of random and subtle frame-to-frame image displacements. The motion-correction was performed (4 times or until no further improvement) in reference to the first image acquired using the first b-value (b0), and the results were visually confirmed for correctness by RSG. Images acquired with different number of repetitions were averaged according to b-value and diffusion encoding direction, for subsequent calculation of diffusion measures in all 3 directions. Separately, an averaging took place considering only b-values, to calculate an average diffusion images. To normalize the image intensities and reduce influence of nonstationary noise, volume-wise normalization of voxels intensities was performed in all images from different b-values using a mean value of a background signal defined in a half-ball VOI including 704 voxels outside the visible tissue image. The VOI was manually set in an averaged b0 image and applied to every averaged volume from each b-value for the background signal depiction. The intensity normalization was performed according to formula:
+
+$$
+DWI_{bvalnorm}=DWI_{bval}−(\mu_{bvalnoise}−6\times\sigma_{bvalnoise})
+$$
 
 where DWIbval and DWIbval norm are the original and normalized voxels intensities, and µbval noise and σbval noise are respectively the mean and SD of the background signal at b-value. To reduce the influence of distortion artefacts, all DWI images were subjected to slice-wise spatial smoothing using a 0.5 sigma [3×3] Gaussian filter. To automatically exclude the voxels outside the brain regions in subsequent diffusion curve fitting, a brain mask image was calculated from b0 image and applied to all images from different b-values. The mask image excluded all the voxels below the mean + 0.5 × SD of the b0 image intensity. As initial threshold excluded voxels ventrally from the brain image, the mask was subjected to morphological dilation with a diamond shape kernel of 2 pixels diameter, and subsequent image filling to include sole obsolete voxels inside the mask.
 
-## Diffusion-curves fitting
+#### Diffusion-curves fitting
 
-All calculations were performed in Matlab using in-house computational pipelines and curve-fitting implementations based on the least squares method. For a standard DWI model, monoexponential curve-fitting was performed voxel-wise using all 17 b-values. The ADC and estimated S0 images were calculated voxel-wise based on the formula:. (5)Sbval=S0×e(−bval×ADC)
+All calculations were performed in Matlab using in-house computational pipelines and curve-fitting implementations based on the least squares method. For a standard DWI model, monoexponential curve-fitting was performed voxel-wise using all 17 b-values. The ADC and estimated S0 images were calculated voxel-wise based on the formula:
 
-For IVIM model, a two-step algorithm was used as considered providing more robust and reliable results compared to standard biexponential curve-fitting (Lee et al., 2016). In the first step, a perfusion fraction (Fp) was estimated as a voxel-wise ratio of the difference between b0 and approximated S0 to b0 image. Voxels intensities in the S0 image were estimated from the linear regression approximation considering the logarithm intensities of the volumes from the IVIM threshold to the highest b-value. The threshold b-value used was closest to 250 s2/mm (here ~238 s2/mm). The slow diffusion D was estimated as the slope coefficient of the linear regression function. Subsequently, for the voxels where a positive and nonzero Fp value was calculated (presence of fast diffusion) a biexponential curve-fitting was performed using the calculated Fp and D:,(6)Sbval=S0×(Fp×e(−bval×D∗)+(1−Fp)×e(−bval×D))
+$$
+S_{bval}=S_{0}\timese^{(−bval\timesADC)}
+$$
+
+For IVIM model, a two-step algorithm was used as considered providing more robust and reliable results compared to standard biexponential curve-fitting (Lee et al., 2016). In the first step, a perfusion fraction (Fp) was estimated as a voxel-wise ratio of the difference between b0 and approximated S0 to b0 image. Voxels intensities in the S0 image were estimated from the linear regression approximation considering the logarithm intensities of the volumes from the IVIM threshold to the highest b-value. The threshold b-value used was closest to 250 s2/mm (here ~238 s2/mm). The slow diffusion D was estimated as the slope coefficient of the linear regression function. Subsequently, for the voxels where a positive and nonzero Fp value was calculated (presence of fast diffusion) a biexponential curve-fitting was performed using the calculated Fp and D:
+
+$$
+S_{bval}=S_{0}\times(F_{p}\timese^{(−bval\timesD^{∗})}+(1−F_{p})\timese^{(−bval\timesD)})
+$$
 
 where D is the slow (‘pure’) molecular water diffusion, D* is the fast diffusion (pseudodiffusion).
 
-## Regions of interest definition and statistical comparison
+#### Regions of interest definition and statistical comparison
 
 For further statistical comparison, the mean and SD of ADC, Fp, D and D* signal intensities were calculated within 21 regions of interest (ROI), for every animal brain image separately. The regions were chosen based on reported high Aqp4 expression (Hsu et al., 2011; Hubbard et al., 2015) and were drawn manually using ITK-SNAP in estimated S0 image, and overlaid on the calculated diffusion parameters maps. The defined ROIs included from 48 to 250 voxels depending on the anatomical structure and excluding neighboring distortion artefact, and covered the position of cortical (olfactory area - OLF; cingulate/retrosplenial cortex - CA/RSP; visual - VIS; somatosensory - SS; auditory - AUD; hippocampus - HIP; perirhinal - PERI), brain stem (thalamus - TH; habenula - HAB; hypothalamus - HY; midbrain - MB; periaqueductal gray - PAG; hindbrain - HB), cerebral nuclei and tracts (caudate putamen - CP; white matter including striatal regions - WM); CSF space (lateral ventricles - LV; third ventricle - 3 V; fourth ventricle - 4 V; pericisternal space - PCS; perivascular space within the Circle of Willis - CoW) and the cerebellar ROI (cerebellum - CB). Application of automatic segmentation template was avoided due to variable influence of distortion and ghosting artefacts at large span of 17 b-values measured, resulting in erroneous template registration and delineation of signal from specific anatomical structures. The regions were set manually by RSG in reference to the Allen Brain Atlas, and verified by YM and MN.
 
 Due to presence of distortion and ghosting artefacts resulting in possible inhomogeneous noise properties of EPI images acquired, voxel intensities within delineated ROIs were considered coming from independent and non-uniform signal distributions (i.e., comparing ventral vs. dorsal ROI). Therefore, mean ADC, D, Fp, D* and Fp × D* were calculated excluding <0 and>99 percentiles of their intensity distribution within each ROI (see calculated values in the supplementary Excel file), and were compared ROI-wise between KO and WT animals using a nonparametric Mann-Whitney U-test. To confirm reliability of the slow diffusion measures, Pearson’s linear correlation was calculated between the mean ADC and D from all animals.
 
-## DCE-MRI
+### DCE-MRI
 
-## Preprocessing
+#### Preprocessing
 
 Time-series of FISP volumes acquired were motion-corrected and spatially normalized with ANTs (Avants et al., 2014) and co-registered to the respective baseline image, subject-wise. For every animal, the co-registration process was repeated twice using rigid-body (6 df.) and twice using an affine transformation (12 df.) to assure accuracy. Subsequently, the intensities from the first volume acquired after the dummy scan (i.e., of unstable steady-state MR signal) were subtracted voxel-wise from succeeding volumes to reveal only the regions enhanced with the contrast agent. To normalize the CSF signal in each time-series their voxel intensities were subjected to Gaussian normalization using the first 3D-FISP volume. The resulting images were smoothed with a 3×3×3 voxels kernel of [0.2, 1, 0.2] weights along each axis, to reduce the influence of possible artifacts after the automatic registration and subtracting the baseline volume.
 
-## Volumes of interest definition and statistical comparison
+#### Volumes of interest definition and statistical comparison
 
 For further statistical comparison, DCE 3D-FISP signal was derived from 21 ROI reflecting those from DWI analysis (see above), in each animal individually. All ROI were defined in a 3D template volume, based on Reference Space Model from Allen Brain Atlas, of the same spatial resolution as 3D-FISP volumes acquired. The reference volume was automatically registered in AFNI using affine registration (6 df.) to the baseline DCE volume. Mean DCE signal was depicted from every 3D-FISP volume in every animal ROI-wise (90 signal intensity values / ROI), for further statistical comparison. The first volume following the dummy scan was rejected from further consideration as it had previously been used for the signal normalization. To compare ROI-wise DCE signals between KO and WT animals, a repeated measurements Two-way ANOVA along with post-hoc Bonferroni’s correction was used in search for differences between the signal changes at specific time points and compared to the baseline signal before the gadolinium infusion. Further calculation of DCE-derived scores of CSF tracer arrival time, relative time-to-peak, peak intensity, and duration of significant from baseline interstitial tracer accumulation was performed based on the rank-sum scores provided by Dunn’s multiple comparison from nonparametric Friedman’s one-way ANOVA, performed separately in KO and WT groups. Arrival time was considered as a difference in time between the baseline time point, and time point where the negative rank-sum score was at least three times that from the baseline. Time-to-peak was calculated as a time difference between the start of the gadobutrol infusion and the subsequent time point at which the maximum negative rank-sum score was calculated (i.e. corresponding to the peak CSF signal intensity within the group). The peak intensity was considered as a relative signal increase occurring at the time-to-peak. Duration of significant from baseline interstitial tracer accumulation was obtained as a time difference between the last and the first time points, where DCE signal increase was significantly different from baseline. Area under the DCE curve was calculated for each subject as a sum of DCE signal amplitudes over all the measured time points. DCE scores derived for KO and WT groups were compared ROI-wise using nonparametric two-tailed Wilcoxon signed-rank test.
 
-## Microbeads MR phantom ex vivo
+### Microbeads MR phantom ex vivo
 
 DWI and IVIM measures were computed using the same processing pipeline as for in vivo imaging. To avoid influence of artefacts due to field inhomogeneity or at the border of the phantom lumen, all diffusion values were depicted in a 1.5 mm diameter circular region around the center of the phantom image, in all slices. Mean diffusion values from all phantoms were compared using nonparametric Kruskal-Wallis one-way ANOVA with Dunn’s post-hoc.
 
-## T1 mapping
+#### T1 mapping
 
-Calculation of T1 maps was performed using an in-house algorithm in Matlab. The voxel intensities from spin-echo images of the phantoms were approximated over the increasing repetition times, by inversely solving the equation with the least squares method:,(7)STR=S0×1-eTRT1+ε
+Calculation of T1 maps was performed using an in-house algorithm in Matlab. The voxel intensities from spin-echo images of the phantoms were approximated over the increasing repetition times, by inversely solving the equation with the least squares method:
+
+$$
+S_{TR}=S_{0}\times1-e^{\frac{TR}{T1}}+\epsilon
+$$
 
 where TR is a repetition time, S0 is the estimate of the proton density, STR is the intensity of the considered voxel from the corresponding slice, and ε is an estimator of a random error. To reduce influence of transmit inhomogeneity on T1 estimations, B1-correction was applied using dual-angle method based on relationship between an effective and nominal flip angles (Cunningham et al., 2006) and by applying voxel-wise a correction factor dependent on the intensities from two spin-echo volumes acquired with 45° and 90° flip angles.
 
-## Free water volume fraction
+#### Free water volume fraction
 
 Evaluation of the free water volume fraction inside the phantoms with microbeads was performed based on percentage of the contrast-filled volume, quantified in 8 bits gray scale axial images. First, the central portion of the phantom volume, reflecting that from DWI analysis, was manually separated in ImageJ (v. 1.53 j, NIH, USA). The free fluid volume regions (filled with Omnipaque 350 solution) were of clearly higher Hounsfield Units (HU) intensities compared to those from the microbeads. Thus, the voxels belonging to the free fluid were empirically verified occupying >75th percentile of the cumulative HU distribution in all the separated volume images, from all phantoms. Therefore, the voxels belonging to the free fluid were counted three times, considering only voxels above 75th, 80th, and 85th percentile of HU distribution. For each phantom, the free fluid volume fraction was estimated as a mean voxel count from all thresholds, divided by the voxels count in the separated volume image. As objective separation of the fluid space was impossible in the phantom with the fine microbeads and lower HU thresholds would consider voxels affected by partial volume from the microbeads, proposed free fluid volume fraction estimation was found sufficient to correct for the changes in shape of voxels HU distribution from different phantoms.
 
-## AQP4 staining and vascular density image analysis
+### AQP4 staining and vascular density image analysis
 
 Brain sections were imaged using a conventional fluorescence macroscope (Stereo Investigator with objective UplanXApo 10x /numerical aperture 0.40, ∞/compatible cover glass thickness 0.17 mm/field number 26.5 mm, no immersion liquid (air); Olympus) and subsequently analyzed using ImageJ. Multiple FOVs were acquired in a 1360 × 1024 px / 1392.44 ×1048.43 µm frames (1.048 µm2/pixel), and subsequently aligned and stitched together to provide image of entire brain section. Both AQP4 and vascular staining were assessed in a complimentary anterior and posterior entire brain sections (cf. AQP4 channel staining ex vivo). To minimize the reader-associated bias, all image analyses were performed by the investigator (MG) blinded to the image content and animal genotype, and in randomized images.
 
-## AQP4 staining
+#### AQP4 staining
 
 For each brain hemisphere in each section, all ROIs were manually drawn according to the Allen Brain Atlas and using auto fluorescence from the green channel following visible anatomical landmarks and confirming AQP4 expression visibility. Each subregion measured from 0.03 to 1.69 mm2. Therefore, a universal threshold was applied manually to all images as a preferred method for reduction of the background signal influence. Subsequently, a mean area fraction covered by AQP4 in both hemispheres/sections was measured for each ROI. In total, mean AQP4 expression was calculated for 11 ROIs (retrosplenial cortex - RSP, visual - VIS; somatosensory - SS; auditory - AUD; hippocampus - HIP; perirhinal - PERI; thalamus - TH; habenula - HAB; hypothalamus - HY; pericisternal - PCS; white matter - WM) in 4 WT mice. A nonparametric Kruskal-Wallis one-way ANOVA with Dunn’s post-hoc was employed to compare the mean AQP4 channel expressions between ROIs.
 
-## Vascular density
+#### Vascular density
 
 ROIs were manually outlined around each anatomical subregion according to the Allen Brain Atlas, and using visible anatomical landmarks. Due to differences in fluorescent labeling intensity, each region was thresholded individually to isolate labeled blood vessels from the background, so each region measured from 0.023 to 4.67 mm2 within each hemisphere/section. Area fraction of blood vessels above the threshold was measured for each ROI. In total, mean vascular density was calculated from multiple subregions for 17 ROI (olfactory area - OLF; cingulate cortex - CA; retrosplenial cortex - RSP; primary visual - V1; primary somatosensory - S1; primary motor area - M1; auditory - AUD; hippocampus - HIP; perirhinal - PERI; insular - INS; thalamus - TH; habenula - HAB; hypothalamus - HY; caudate putamen - CP; white matter - WM; pericisternal - PCS; ependymal around lateral ventricles - EPD) in 6 KO and 6 WT animals. Further statistical comparison was performed assuming inhomogeneous signal distribution properties between different ROI (similarly as for DWI). Hence, considering independent measurements of vascular densities among ROI analyzed and due to small group size, nonparametric Mann-Whitney U-test was employed to compare the vessel densities from KO and WT animals ROI-wise.
 
 For ROI-wise correlation analysis, a mean value of AQP4 expressions as well as vascular densities at ROI was calculated from all respective animals strain-wise.
 
-## TMA measurements in vivo and remaining statistics
+### TMA measurements in vivo and remaining statistics
 
 For ISF space volume estimation with TMA: to keep uniformity of obtained α and λ values distribution within KO and WT groups altered by uneven group size, only the animals expressing α within mean ± 1.5 × SD of α distribution within the group (within ~90% of cumulative distribution) were kept. Therefore, two animals from KO and three animals from WT group were removed from among awake batch, and one KO and four WTs were removed from the K/X anesthetized batch of animals (6–7 KO and 16–17 WT remaining).
 
 The obtained α and λ values form TMA were compared using one-way ANOVA with Bonferroni’s post-hoc. Differences in α and λ values between awake and anesthetized animals, total excreted CSF volumes, brain water contents, as well as demographic characteristics parameters (Table 1A) between KO and WT mice were compared using Mann-Whiteny U-test.
 
-## Visualizations
+### Visualizations
 
 Whisker-box and correlation plots were generated using Graphpad and radar plots comparing DWI and IVIM values ROI-wise were generated using OriginPro (v. 2020, OriginLab Corporation, Northampton, MA).
 

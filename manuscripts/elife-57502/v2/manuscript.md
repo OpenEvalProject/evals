@@ -27,9 +27,21 @@ In the V1-V2-V4-IT pathway, orientation maps have been reported in V1, V2, and V
 
 ## Results
 
-## Curvature domains imaged using intrinsic signal optical imaging (ISOI)
+### Curvature domains imaged using intrinsic signal optical imaging (ISOI)
 
 Through ISOI on anaesthetized macaques, we imaged cortical hemodynamic signals for various contour features. The stimulus set included simple contour shapes, including circles and triangles, as well as parts of these shapes, including curves, angles, and short straight lines. As shown in Figure 1C, the contours were presented on a full screen and drifted along one of four or eight directions. Each stimulus condition was presented for 3.5 s and repeated 25–50 times in a random sequence. The light reflectance was imaged through an optical chamber covering parts of V1, V2, and V4 (Figure 1A and B). The exposed V4 region corresponded to the visual field of 0°−10° eccentricity in a lower quadrant. We obtained support vector machine (SVM) maps that compared cortical images collected during two stimulus conditions (Figure 1D–L). In the circle vs. triangle map (Figure 1D), the black and white patches corresponded to regions that preferred circles and triangles, respectively. This V4 pattern significantly differed from the orientation (Figure 1E) and color patterns (Figure 1F) obtained with established methods (Tanigawa et al., 2010; Li et al., 2013). In contrast to V4, we did not observe circle vs. triangle patterns in V1 and V2, or in the cortex anterior to the superior temporal sulcus (Figure 1D). We also examined single-condition maps (stimulus vs. blank); however, the responses were dominated by feature-non-specific activation and the shape-selective response patterns were not apparent (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig1-v2.jpg)
+
+**Figure 1.:** (A) A schematic representation of the macaque brain showing the imaging region (green circle) and sulci locations. lu, lunate sulcus; st, superior temporal sulcus; and io, inferior occipital sulcus. (B) In vivo image of the blood vessel pattern in the 16 mm diameter imaging region in Case 1, which included parts of V1, V2, and V4. The exposed V4 region was between the st and lu sulci. A, anterior; M, medial. (C) An illustration of the full-screen stimulus pattern used for ISOI imaging. Circle diameter: 2.5°. Drifting speed: 4°/s. (D–L) Functional maps (SVM maps) from Case 1. The icons shown at the top represent the stimulus conditions being compared. In the ISOI maps, dark and white regions were preferentially activated by the stimulus icons shown on the left and right, respectively. For the maps shown in G, H, J, and K, data from different stimulus orientations were pooled for lines, curves, and angles. Other maps were obtained with the exact stimuli as shown on the maps. (D) The circle vs. triangle map shows clear patches in V4 (dark regions preferred circles and white regions preferred triangles), which were absent in V1 and V2. The dotted line represents the border between V1 and V2. (E) The orientation preference map shows the 45° (dark) and 135° (white) orientation domains in V2 and V4. The lack of orientation domains in V1 could have been resulted from the low SF of the stimulus gratings (0.25 c/degrees). (F) The color preference map shows the color domains in V1, V2, and V4. (G) The circle vs. straight line map shows a preference pattern similar to that in the circle vs. triangle map (D). (H) The curve vs. straight line map shows patterns similar to those in D and G. The curve was a half-circle. (I) The curve-orientation map shows smaller and weaker patches preferring different curve orientations. (J) The triangle vs. straight line map shows weaker and larger patches than those in the circle vs. straight line map in G. The dark domains preferred triangles over lines and occupied the same regions as the white patches in D. (K) The angle vs. straight line map shows a very weak pattern similar to that in J. (L) There was no clear pattern in the angle-orientation map.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A single-condition SVM map obtained by comparing circle response and blank response from Case 1. (B) As in A, but for triangle response. (C) The difference map comparing circle and triangle responses (same as shown in Figure 1D). (D–O) As in A–C, single-condition maps (top two rows) and their corresponding difference maps (bottom row). The single-conditions maps contained stimulus-non-specific hemodynamic signals, which were diffuse and low contrast. Difference maps removed these common responses and revealed stimulus-specific responses. Maps A–I and J–O were obtained from the same chamber in two separate experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) All four curve-orientation maps of Case 1 comparing opposite curve orientations. B is the same map as shown in Figure 1I. (E) The vector-summation map for the curve-orientation preferences calculated based on the maps in A-D. (F) An enlarged view of the vector-summation map showed in E. (G–L) Functional maps of Case 1 obtained with the same method as those in Figure 1. (M and N) Circle vs. triangle maps obtained with binocular stimulation (M, same as in Figure 1D) or monocular left-eye stimulation (N). The red-framed regions in M are enlarged in O-R. The value at bottom of N is the correlation between V4 regions in the two maps. (O–R) Zoom-in views of 4 regions (locations are indicated in M) from 12 functional maps (columns) for detailed comparisons. The stimulus conditions are illustrated on the top of each column. Values at the bottom are correlation values between the whole V4 region in the corresponding map (not only the enlarged regions) and the V4 region in the circle vs. triangle map (M).
 
 Similar V4 patterns were observed in the circle vs. triangle (Figure 1D), circle vs. line (Figure 1G), and curve vs. line maps (Figure 1H). Although the strength of the dark patches in the latter two maps appeared weaker, they had similar general layouts and locations as the first one (also see Figure 1—figure supplement 2O–R for enlarged views). This similarity suggests that the key contour feature responsible for these dark patches was the curviness. Therefore, we have henceforth referred to these patches as ‘curvature domains’. These curvature domains contained smaller substructures. For example, a map comparing differently oriented curves showed smaller and weaker patches within the curvature domains (Figure 1I, Figure 1—figure supplement 2). Note that this curve orientation (also called direction) is different from the grating orientation (0–180°) and has a range of 0–360°.
 
@@ -37,17 +49,49 @@ Compared with the curvature domains, triangle-activated cortical regions appeare
 
 Imaging results of seven hemispheres (cases) of six macaque monkeys were consistent (Figure 2B, Figure 2—figure supplement 1B). We observed curvature domains in the entire exposed V4 surface representing both foveal and peripheral visual fields, but peripheral V4 tend to prefer larger circles (Figure 2—figure supplement 2A–D). Moreover, similar patterns can be repeatedly imaged from the same chamber over months (Figure 2—figure supplement 3). Modification of the experimental conditions (e.g. monocular left- or right-eye viewing conditions or binocular conditions, see Figure 1—figure supplement 2M and N) and noncritical stimulus parameters (e.g. contour brightness, filled disks, and regular vs. random contour arrangements) did not alter the main pattern features (Figure 2—figure supplement 2E–I).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Maps from Cases 2–4 are shown in rows 1–3. (A) The blood vessel patterns of the imaging regions. (B) The circle vs. triangle maps obtained using the same stimuli as those for Figure 1D. (C) Orientation preference maps showing the 45° vs. 135° orientation patterns in V1, V2, and V4. The dotted lines represent the borders between V1 and V2. Case 4 did not have V2 exposed on the surface. (D) The spatial relationship between the curvature and orientation domains (0°, 45°, 90°, 135°) in each case. (E) The curvature and orientation domains had similar domain sizes. (F) The curvature and orientation domains had similar response amplitudes. (G) The size of the overlap regions between the curvature and orientation domains was smaller than that of the random prediction (p=0.030; paired t-test, n = 7), which indicates a tendency of separation of these two types of domains.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Blood-vessel patterns of the seven chambers used in ISOI imaging, plotted in the same convention as that in Figure 1B. Cases 1–5 were from left hemispheres, and Cases 6 and 7 were from right hemispheres. A, anterior; M, medial; lu, lunate sulcus; st, superior temporal sulcus; and io, inferior occipital sulcus. (B) Circle vs. triangle maps. (C) Orientation preference maps. (D) Color preference maps. (E) The overlap of three types of domains. (F) Percentages of areas occupied by four types of domains in V4 (first four columns), which serve as a random distribution control for the proportion of overlapped region by another type of domain (five columns on the right). One or two asterisks indicates p<0.05 or p<0.01, respectively (paired t-test, n = 7). Error bars: s.e.m.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Circle vs. triangle maps obtained with three different circle sizes (A: 1.25°; B: 2.5°; C: 5°). The size of the triangle was kept at 2.5°. Three rows are maps from three different cases. Red frames in the maps are enlarged in D for detailed comparison. The lateral V4 represents the foveal visual field (lower visual eccentricity), and the medial V4 represents peripheral (higher visual eccentricity). When the circle size increased, stronger activation domains in V4 shifted from lateral to medial. (D) Zoom-in views of the regions indicated in A–C. Maps in the three columns correspond to the three columns in A–C. When circle size increased, the activation of the lateral domains (labeled 1) decreased (from the left column to the right column), while medial domains (labeled 3) increased their activity. Domain in the middle (labeled 2) were more activated by mid-sized circles. (E) Standard circle vs. triangle maps of Cases 2, 4, and 5. These maps are the same as those shown in Figure 2—figure supplement 1B and were obtained with a regular stimulus protocol. (F–I) Circle vs. triangle maps obtained with different types of circle stimuli, while triangle stimuli were kept the same as in E, including: circles randomly positioned as contrast to orderly positioned ones (e.g. Figure 1C) (F); Black circles (G), Filled gray disks (H), and Filled dark disks (I).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–C) Circle vs. triangle maps obtained from four cases (four rows) on different days (three columns). The stimulus protocols were the same as the example shown in Figure 1D. Imaging dates are indicated on the top of each map.
+
 The curvature domains had an average diameter of 518 ± 25 μm (mean ± s.e.m), which was similar to that of the orientation domains (479 ± 16 μm, p=0.074, paired t-test, n = 7; Figure 2E). The curvature domains occupied 12.1 ± 1.7% of the V4 surface, smaller than the coverage of the orientation domains (22.3 ± 3.7%, p=0.025, paired t-test, n = 7). The intrinsic optical signal amplitude (percentage change), which was measured from the raw subtraction maps, was numerically, but not significantly, larger for the circle vs. triangle maps than the orientation maps (curvature domains: 0.036%, orientation domains: 0.029%, p=0.15, paired t-test, n = 7, Figure 2F).
 
 Both the curvature and orientation domains represent shape features; therefore, it is logical to expect that they might overlap. However, we observed little overlap between the curvature and orientation domains (Figure 2D). The overlap size was significantly smaller than that expected in a random distribution (p=0.03, paired t-test, n = 7, Figure 2G), which indicates an avoidance tendency between both domains. Moreover, the curvature domains did not overlap with the color domains (p=0.004, paired t-test, n = 7, Figure 2—figure supplement 1F). Contrastingly, the triangle-preferring white patches in the circle vs. triangle maps tended to overlap with the orientation (p=0.003, paired t-test, n = 7; Figure 2—figure supplement 1F) but not the color domains (p=0.17, paired t-test, n = 7; Figure 2—figure supplement 1F).
 
-## Two-photon calcium imaging of the responses to contour shapes
+### Two-photon calcium imaging of the responses to contour shapes
 
 ISOI used a metabolism-based hemodynamic signal; therefore, the actual neuronal responses and neuron constitution within these domains were unclear. Moreover, ISOI could not provide information regarding the variations in different cortical layers. We then used two-photon calcium imaging to address these questions. Based on the ISOI functional maps, we injected AAV1/9-GCaMP6s virus into multiple locations in two chambers (Cases 3 and 4 in Figure 2A, Figure 3—figure supplement 1). The injections targeted either the centers of the curvature domains or regions outside these domains. We imaged the monkeys under similar anesthesia conditions 1.5 months after the injections. Figure 3C shows an image from Case 3 (red frame in Figure 3A and B, also see Figure 3—video 1) at a 210 μm depth. The center of this image frame contained a curvature domain (Figure 3B). Mapped with both manual and computer-controlled visual stimuli, the population receptive field (RF) of this region was ~4° in size and approximately 7° from the fovea (Figure 4—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig3-v2.jpg)
+
+**Figure 3.:** (A) An image of the cortical region obtained from Case 3 in which AAV-GCaMP6s was injected for calcium imaging. The red and green frames indicate two regions examined using two-photon imaging. (B) Circle vs. triangle map of the region shown in A. (C) Neurons in the red-frame region shown in A and B that were imaged using a 16× objective at a 210 μm depth from the cortical surface. Two neurons marked in red are examined in detail in panel F. Scale bar applies to C–E. (D and E) Single-condition response maps (ΔF) for the circle (D), and triangle (E) stimuli. Each map was obtained after averaging 15 repeats and pooling of 4 orientations. (F) Responses (ΔF/F) of 3 neurons to 14 typical contour stimuli (showed at the bottom, red: curvature stimuli; green: rectilinear stimuli). The responses to circle and triangle were the best-orientation ones. Cells 1 and 2 were selected from the curvature domain shown in C. Although both neurons preferred circle stimuli, they exhibited different response levels to other stimuli types. Cell 3 was selected from a rectilinear region (marked in Figure 4F) and was strongly activated by the triangle stimulus and one of its line segment. The gray and blue lines represent individual trials and the average, respectively. The stimulus duration (2 s) is labeled at the bottom of the last row.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The blood vessel map of Case 3, in which five V4 regions studied with the two-photon imaging are indicated (red squares). A, anterior; M, medial; lu, lunate sulcus; st, superior temporal sulcus; and io, inferior occipital sulcus. (B) The circle vs. triangle map of Case 3. The two-photon imaged regions (red squares) are further enlarged in C. (C) The zoom-in views of the five regions indicated in the circle vs. triangle map in B. Site one was the same as shown in Figure 4A. Site four was the same site as shown in Figure 4D. (D) Curvature (red) vs. rectilinear (green) preference maps of the five regions (five columns), plotted with the same convention as those in Figure 4B and C. The different maps in each column were from different imaging depths (indicated at the bottom right of each map). A consistency among different depths, as well as with the ISOI maps in C, can be observed. (E–H) Similar to A–D, the maps from Case 4 show the same trend. Site one was the same as shown in Figure 4G.
 
 We tested 19 different curved and rectilinear contours, presented at different orientations, which resulted 73 unique stimuli (Figure 6A, also see Materials and methods). Each stimulus contained a single contour element similar to those used in the ISOI experiments (Figure 3—video 1). The stimulus moved across the population RF along a direction randomly chosen. Consistent with the ISOI results (Figure 3B), we observed significant activation of the neurons by circle stimuli (Figure 3D). The whole frame showed a scaled-down response to triangles (Figure 3E). The results demonstrate that different stimuli types mainly affected the population response amplitudes rather than activating different cells within the curvature domain.
 
 We determined the preferences of curved and rectilinear stimuli for each pixel in the two-photon image (Figure 4B). This imaged region showed a preference for curved (red) over rectilinear (green) stimuli. Consistent preference patterns were observed for this two-photon map (Figure 4B) and the ISOI map from the same region (Figure 4A). Similar preference patterns were observed at deeper layers for this (Figure 4B and C) and all five locations imaged at multiple depths (Figure 4D–I, Figure 3—figure supplement 1). Therefore, the curvature domains form a columnar structure within at least the top V4 layers.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig4-v2.jpg)
+
+**Figure 4.:** (A) An enlarged view of a curvature domain in an ISOI circle-triangle map in Case 3 (the red-framed region in Figure 3B). (B) A curvature (red) vs. rectilinear (green) preference map for the same image used in Figure 3C. Each pixel is color coded for its preferred responses to the curvature (red-framed icons in Figure 3F) or rectilinear stimuli (green-framed icons in Figure 3F). The brightness of the pixels is proportional to the fluorescence strength and shape preference (see Materials and methods). (C) Preference maps for the same location shown in B but obtained from a deeper layer (350 μm from the surface). Contour-type preferences are similar as shallower depths (B). (D–F) As in A-C, but for another location in Case 3 (green-framed regions in Figure 3A and B). This region contained a subregion preferring curved stimuli (top right) and a subregion preferring rectilinear stimuli (lower left). Two-photon preference maps show consistent contour-type preferences with the ISOI map, as well as consistency between different depths. Cell 3 with an arrow was also used in Figure 3F. (G–I) As in above two sites, a third example obtained from Case 4, which contained a small curvature domain. Consistency between ISOI imaging and two-photon imaging, as well as consistency between different depths of two-photon images are evident. (J) Comparison of the ISOI and two-photon responses. The Y-axis represents differences in the fluorescent responses (optimal orientation) to circles and triangles in all neurons. The X-axis represents differences in hemodynamic responses for corresponding neuron pixels in the ISOI circle vs. triangle maps. There was a significant correlation between the two types of responses (Pearson r = 0.42, p=9.45×10−83, n = 1923). (K) Similar to J, there was a significant correlation between the fluorescent responses (optimal orientation) to curves vs. lines and ISOI responses to circles vs. triangles (Pearson r = 0.43, p=9.35×10−88, n = 1923). (L) The RF sizes of all neurons measured (Y-axis) had a negative correlation with the circle-triangle preferential responses of the corresponding pixels in the ISOI imaging (X-axis, same as the X-axis values in J and K). The dotted vertical line represents the threshold chosen (2SD) in determining whether a pixel is inside the curvature domains (the right side of the line) or outside (the left side of the line). (M) The average RF size was smaller for neurons inside the curvature domains (1.95 ± 0.032°, n = 583) than those outside (2.37 ± 0.038°, n = 835, p=1.15×10−14, t-test). Error bar: s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The RF plot for the imaged neurons in Figure 3C. The red asterisk indicates the fovea location estimated from a back-projected plot of the blind spot. The center locations of the RFs were calculated from the responses to the 5 × 5 grid RF mapping stimuli, and the RF sizes were calculated from the size-tuning fitting functions. (B) The RF size of two example sites which shows progressive change in the right image, but not in the left image. (C) The curvature (red) vs. rectilinear (green) preference maps corresponding to the site shown on the top. (D) The RF sizes of all neurons measured (Y-axis) had a negative correlation with the curve-line preferential responses (optimal orientation) measured in the two-photon imaging (X-axis). Different colors indicate different two-photon sites (n = 9, different depths of the same site were pooled). (E) The distribution of the correlation values between RF sizes and curve-line preferential responses for 9 two-photon sites, measured from panel D. The X axis represents the standard deviation of curve-line preferential responses among the neurons in each two-photon site. (F and G) As in D and E, but for neurons’ surround suppression, which was positively correlated with their curvature preference, and such correlation was also influenced by the homogeneity of neurons in the imaging site (G). Note: A total of 1493 neurons had significant RF size tuning. The RF sizes were calculated from the size-tuning fitting functions. In these neurons, 13 had RF sizes smaller than 0.5°, and 62 had RF sizes larger than 12°. These 75 neurons were not included in the above plot or the analysis in panels D–G. In addition, 18 neurons had RF sizes too large (6–12°) to fit in the above plots, but were included in the population analysis.
 
 We also performed PCA analysis on the response patterns of all the neurons. This data-driven analysis also revealed a major difference in curved and rectilinear responses, and its association with the neurons’ locations that either inside or outside the curvature domains (Figure 5).
 
@@ -57,9 +101,21 @@ We also performed PCA analysis on the response patterns of all the neurons. This
 
 Although neurons inside the domains exhibited a common preference for curve stimuli, individual neurons showed diverse response properties. Figure 3F shows the responses of 3 example neurons to 14 typical stimuli. Two neurons were selected from the curvature domain showed in Figure 3C (red markers). Both neurons were strongly activated by circle stimuli; however, cell 2 was also activated by multiple other stimuli. Cell 3 were selected from a region highly activated by rectilinear stimuli (Figure 4F arrow) and it showed strong responses to the triangle as well as a 45°-orientated line that resembled an edge of the triangle. Thus, at cellular level, contour-tuning differences exist not only between cells belonging to different functional domains but also between cells within a functional domain. This is further explored in Figure 6.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig6-v2.jpg)
+
+**Figure 6.:** (A) Response matrix of an example ‘curve-orientation-preferring neuron’, which showed strong preference for a half circle oriented at 90° and an oval contained a similar curve fragment. (B) Orientation tuning curve for curves (half circles). Green dots represent response values to the curves at eight different orientations. Blue line represents fitting curve for the responses. Red circle represents the neurons’ average response level (a single value) for the circle stimuli. Pale-blue and red lines represent ± s.e.m of the responses. (C, D) As in A and B, but for a ‘dual-preference neuron’. This neuron showed significant orientation tuning to curves, along with a maximal response for the circle. (E, F) As in A-D, but for a ‘circle-preferring neuron’. This neuron responded best to the circles, but did not exhibit curve-orientation tuning. There was no fitting curve for the neuron shown in F due to its weak responses. (G) Neurons tended to cluster according to their preferences for circles or curves. Three maps are from three different two-photon imaged locations, and neurons are color coded as shown in the icon: red: circle-preferring neurons; green: curve-orientation-preferring neurons; yellow: dual-preference neurons. Neurons in gray did not pass the circle or curve-orientation preference tests. The neurons in the dotted ovals are further examined in Figure 7. (H) Neurons showed curve-orientation tuning (including curve-orientation-preferring and dual-preference neurons) tended to cluster according to their preferred orientations. The color of the neurons represents their preferred orientation (0–360°). (I) The percentages of the three neuron types inside and outside the curvature domains. The color code is the same as that in G. (J) The average cell-to-cell distances for circle-preferring neurons (red) and neurons showing curve-orientation tuning with similar preferred orientations (differences < 45°, green and yellow) were shorter than the overall average distance (dotted line) (p<0.001, t-test). Error bar: s.e.m. (K) Population averaged fluorescent responses to different contours. For each contour, the response to the optimal orientation was used. The circle-preferring neurons (red) showed gradual increase of response with the length or completeness of the circle, while the curve-orientation-preferring neurons (green) did not. Error bar: s.e.m. (L) As in K, but used orientation-averaged responses.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Percentages of the response variance accounted for by the top 10 principle components obtained from the PCA analysis of neurons inside curvature domains (n = 722). (B) PC1 shows a negative response relationship between cirlces and most of the other stimuli that unlike circles. PC1 explained 32.1% of the response variance. (C) As in B, for PC2, which shows a positive contribution from circles and other closed shapes, PC2 explained 23.7% of the variance. (D) All neuron in curvature domains are plotted according to their PC1 and PC2 coordinates. Circle-preferring neurons (red) tended to separate from curve-orientation-preferring neruons (green). Dual-preference neurons (yellow) tend to co-located with circle neurons. Neurons in gray were those do not belong to the above three groups.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57502/elife-57502-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The correlation coefficients of curve-orientation tuning of cell pairs inside the curvature domains, based on their responses to the eight half-circle curves, were calculated, and then grouped based on the distance of the cell pairs at a step of 20 μm. The relationship between the average correlation coefficients of curve-orientation tuning and the distances of the cell pairs were plotted, and shown a trough around 360 μm and a second peak around 720 μm. Red line and shadow represent mean ± s.e.m of the correlation coefficients.
+
 We identified 1923 neurons in 10 two-photon imaged locations (Figure 3—figure supplement 1); among them, 788 neurons were in the curvature domains while 1135 neurons were outside of these domains. Despite certain variability due to alignment error, a comparison of the neurons’ calcium responses and their corresponding pixel responses in ISOI maps revealed a general consistency between the two measurements (Figure 4J and K). Figure 4J and K also shows that more neurons had a greater response to curved stimuli than to rectilinear ones (more neurons had a positive Y axis value in both figures). Overall, the neurons with a stronger response to curved stimuli tended to have smaller RFs (Figure 4L and M, Figure 4—figure supplement 1B-E) and greater surround suppression (Figure 4—figure supplement 1F and G), which is consistent with previous findings on the relationship between end-stopping properties and curvature selectivity (Hubel and Wiesel, 1965; Dobbins et al., 1987; Ponce et al., 2017).
 
-## Microarchitectures of the curvature domains
+### Microarchitectures of the curvature domains
 
 Curvature domains imaged with curves and circles in ISOI were generally similar (e.g. Figure 1G and H). However, individual neurons inside the curvature domain often showed different responses to these two stimuli. Figure 6A,C and E shows response matrices of three example neurons selected from the curvature domains. Each neuron showed a wide response spectrum to the 73 contour stimuli. To analyze different responses to curves and circles, we labeled neurons that exhibited significant orientation tuning to curves as ‘curve-orientation-preferring neurons’ (e.g. Figure 6A and B) and those with stronger responses to circles than to curves as ‘circle-preferring neurons’ (e.g. Figure 6E and F). Some neurons that met both criteria were labeled ‘dual-preference neurons’ (e.g. Figure 6C and D). Note that after dual-preference neurons were isolated into a separate group, the earlier two groups no longer contained dual-preference neurons. PCA analysis of response patterns for neurons inside curvature domain also showed differences between circle-preferring neurons and curve-orientation-preferring neurons (Figure 6—figure supplement 1). Among the 788 neurons imaged inside the curvature domains, circle-preferring comprised 25.6% (202), dual-preference comprised 14.4% (113), and curve-orientation-preferring neurons comprised 19.2% (151), with the rest not passing the statistical tests. The corresponding proportions of these three groups in the 1135 neurons outside the curvature domains were 7.3% (83), 1.8% (20), and 11.7% (133), respectively (Figure 6I). As expected, the summed proportion of these three types of neurons was larger inside the curvature domains (59.1%) than the outside (20.8%). The ratio of circle-preferring to curve-orientation-preferring neurons also appeared to be larger inside (1.35) than outside (0.62) the curvature domains.
 
@@ -67,7 +123,7 @@ When neurons were labeled according to their preferences, there was a tendency o
 
 Circle-preferring neurons also showed some interesting features. Figure 6K plots average responses to different contours for circle-preferring neurons (red) and curve-orientation neurons (green). For each stimulus, neurons’ maximum orientation-responses were averaged. For circle-preferring neurons, their responses increased approximately linearly with the length of the circle fragment. This was not the case for curve-orientation neurons. Also, their responses to closed shapes seemed to be proportional to the general similarity between the shape and the circle. As a comparison, Figure 6L plotted their orientation-averaged responses. The two curves are similar to those in Figure 6K, except that the green curve becomes lower on the left side, reflecting the modulation of curve orientation on the responses of the curve-orientation-preferring neurons.
 
-## Diversity of contour tuning for neurons in the curvature domains
+### Diversity of contour tuning for neurons in the curvature domains
 
 So far, we have shown the common response properties for neurons within the curvature domains and their subdomains. To have a full picture of the neuronal constituents within these functional domains, we examined the diversity of neuronal tunings inside the curvature domains.
 
@@ -113,35 +169,101 @@ The primary new finding of this study is the functional architecture for curvatu
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Macaque, male)</td>
+      <td>Macaca mulatta</td>
+      <td>Suzhou Xishan Zhongke animal Company, Ltd Hubei Topgene Biotechnology Co.,Ltd</td>
+      <td></td>
+      <td>http://xsdw.bioon.com.cn/ http://topgenebio.com/</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Macaque, male)</td>
+      <td>Macaca fascicularis</td>
+      <td>Beijing Inst. of Xieerxin Bology Resource</td>
+      <td></td>
+      <td>http://www.xexbio.com/</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.Syn.GCaMP6S.WPRE.SV40</td>
+      <td>Addgene</td>
+      <td>v25497</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9.Syn.GCaMP6S.WPRE.SV40</td>
+      <td>Addgene</td>
+      <td>CS1282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATALAB R2017b</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td>https://www.mathworks.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Codes for ISOI data analysis</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://osf.io/qydj5/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Codes for 2P data analysis</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://osf.io/qydj5/</td>
+    </tr>
+  </tbody>
+</table>
+
 A total of seven hemispheres (i.e. cases) from six adult male macaque monkeys (five Macaca mulatta, one Macaca fascicularis) were imaged. ISOI were performed on all seven cases, two-photon imaging were performed on two cases (Case 3 and Case 4). These monkeys also participated in other studies. All procedures were performed in accordance with the National Institutes of Health Guidelines and were approved by the Institutional Animal Care and Use Committee of the Beijing Normal University (protocol number: IACUC(BNU)-NKCNL2016-06).
 
-## Surgery procedures
+### Surgery procedures
 
 Animals were sedated with ketamine (10 mg/kg) or Zoletil (tiletamine HCl and zolazepam HCl, 4 mg/kg) and transferred to the lab. They were artificially ventilated on a stereotaxic and anesthetized with isoflurane (1.5–2.5%) during surgery. A 22–24 mm (diameter) circular craniotomy and durotomy were performed (center location, 30–37 mm from midline, 15–24 mm from posterior bone ridge) to expose visual areas V1, V2, and V4 (illustrated in Figure 1A). ISOI was performed right after the surgery (see below). Then, one of two types of protocols was chosen: For cases only used for ISOI, we implanted an optical chamber and recovered the animal. For cases used for two-photon calcium imaging, we injected virus into the visual cortex, placed back the bone and sealed the craniotomy (described below). After 1.5 months, we reopen the craniotomy and implanted an optical chamber for the following weekly based two-photon imaging experiments. The same type of chronic chamber was used for ISOI and two-photon imaging (Li et al., 2017). The inside diameter of the chamber was 13–16 mm, thickness of the glass is 0.18 mm. Case 2 was only imaged once and then used for other studies thus no chamber was implanted.
 
-## Intrinsic signal optical imaging (ISOI)
+### Intrinsic signal optical imaging (ISOI)
 
 ISOI were performed either right after the surgery (without a chamber), or on a weekly-base after a chamber was implanted. Imaging usually lasted for 8 hr. Right before the imaging, anesthesia was switched from isoflurane to a mixture of propofol (induction 2 mg/kg, maintenance 2 mg/kg/hr) and sufentanil (induction 0.15 μg/kg, maintenance: 0.15 μg/kg/hr) (in four cases), or to Zoletil (tiletamine HCl and zolazepam HCl, induction 4 mg/kg, maintenance 1.25 mg/kg/hr, in three cases). The monkeys were immobilized with vecuronium bromide (induction 0.25 mg/kg, maintenance 0.05 mg/kg/hr) to prevent eye movements. Anesthetic depth was assessed continuously via monitoring the electrocardiogram, end-tidal CO2, blood oximetry, and body temperature. Eyes were dilated (atropine sulfate, 0.5 mg/ml) and fit with contact lenses of appropriate curvatures to focus on a stimulus screen 57 cm from the eyes.
 
 Images of reflectance change (intrinsic hemodynamic signals) corresponding to local cortical activity were acquired (Imager 3001, Optical Imaging Inc) with 632 nm illumination. Frame size was 540 × 654 pixels, representing either 15.5 × 19 mm or 18 × 22 mm of imaged area, depending on the lenses chosen. For each trial, imaging started 0.5 s before the stimulus onset and collected at 4 Hz frame rate. Each visual stimulus was presented for 3.5 s. The total imaging time for each trial was 4 s, during which 16 frames were imaged. Interstimulus intervals were at least 6 s. Stimulus conditions were displayed in a randomized order.
 
-## Virus injection
+### Virus injection
 
 Virus injection and two-photon imaging procedures were similar to those described in Li et al., 2017. In two cases (Case 3 and Case 4), we injected 500 nL AAV9.Syn.GCaMP6S.WPRE.SV40 (CS1282, titer 3.34e13 GC/ml, Addgene), or AAV1.Syn.GCaMP6S.WPRE.SV40 (v25497, titer 2.5e13 GC/ml, Addgene) into 10–15 cortical locations at a depth of 500 μm. After virus injection, cortex was covered with a piece of artificial dura. And the remaining dura was covered and glued to the top of the artificial dura with medical adhesive (Beijing Compont medical devices Co. Ltd). The original bone was placed back, secured with titanium lugs and bone wax in the gap. The scalp was sutured. A second surgery was performed 1.5 months later, in which the old craniotomy was reopened and an optical chamber was implanted for the following ISOI and two-photon imaging.
 
-## Two-photon imaging
+### Two-photon imaging
 
 Two-photon calcium imaging was performed on a weekly-base after the chamber implanting. Animal anesthesia and preparation were the same as those in the ISOI experiments. Two-photon microscope was a Brucker Ultima IV Extended Reach (Bruker Nano Inc). Laser was generated with a Chameleon Ultra II (Coherent Inc). The excitation wavelength of the laser was set at 980 nm. Scanning frame rate was 1.3 Hz in a galvo scanning mode. Under a 16X objective (0.8 N.A., Nikon), 515 × 512 pixel images were collected, representing a 830 × 830 μm cortical surface. Imaging was continuous and the beginning of each stimulus presentation was synchronized with the beginning of a frame scanning.
 
 As the microscope was vertical, we rotated the stereotaxic and the animal for ~45° so that the chamber plane was perpendicular to the laser beam. We imaged 10 cortical locations in the two virus-injected chambers (Figure 3—figure supplement 1A and E). Images were normally collected at a depth between 210 and 350 μm from the cortical surface. In six locations, we imaged at two depths, a depth around 230 μm and a depth around 310 μm (Figure 3—figure supplement 1D and H). During the imaging session, slow drifts of cortex in the imaging window was observed. The drift was normally less than 50 μm in the X-Y plane and less than 150 μm along the Z-axis in a course of 6–8 hr. We closely monitored the cell features during the imaging and adjusted position of the focal plane accordingly. Drifts in the X-Y plane were further corrected in offline data analysis (described below). In addition, population receptive field locations were re-plotted every 1–1.5 hr in order to check the stableness of the eye positions. In half of the experiments, some eye drift (1–2°) was detected during the imaging session. If drift was larger than 1°, we repeated the last stimulus run at the new receptive field position. If the drift was smaller than 1°, we adjusted the stimulus location for the following stimuli and continued the imaging. Replication of two-photon imaging of the same neuron population were tried but was not systematically tested. A general replication of the population-level responses was qualitatively observed.
 
-## Visual stimuli for ISOI
+### Visual stimuli for ISOI
 
 Visual stimuli were generated using ViSaGe (Cambridge Research Systems Ltd.) and presented on a CRT monitor positioned 57 cm from the eyes. The stimulus screen was gamma corrected and worked at 100 Hz refreshing rate. We compared contour preference maps obtained with monocular and binocular conditions in Case 1 (Figure 1—figure supplement 2M and N), as well as two monocular conditions in Case 4 and did not find obvious differences. Since ISOI signal is normally stronger in binocular condition, all but one case (Case 5) were imaged in binocular conditions. For orientation and color preference maps, full-screen drifting sinewave gratings were used. The mean luminance was 28.9 cd/m2. Gratings of two SF (0.25 and 1 c/deg, except for Case 6 in which only 0.25 c/deg were tested) and two (45° and 135°, for Cases 5 and 6) or four orientations (0°, 45°, 90°, and 135°, for other five cases) were tested. Gratings were drifting at 4°/s along a random direction perpendicular to its orientation and were presented in a random order. The initial phases of the gratings were also randomly selected.
 
 For contour shape preference maps (e.g. Figure 1D–L), drifting contour patterns were used. Each contour element was ~2.5° and placed in a 3 × 3° grid (Figure 1C). The white contour lines was 0.2° in width and had a luminance of 111.2 cd/m2. The dark background had a luminance of 20.6 cd/m2. For each trial, a contour pattern was presented and drifted at one out of four or eight directions for 3.5 s at a speed of 4°/s. Interstimulus intervals were 6 s, during which a gray screen (20.6 cd/m2) was presented. The initial phase (i.e. relative position) of the pattern was random. Each stimulus was repeated for 25–50 times. The essential stimuli (e.g. circle, triangle, gratings) was obtained in all seven cases (Figure 2—figure supplement 1), new stimuli were added in later cases and are described in the Results whenever is necessary.
 
-## Visual stimuli for two-photon imaging
+### Visual stimuli for two-photon imaging
 
 Visual stimuli used for two-photon imaging were generated in a similar way as those in the ISOI imaging and presented on a 21-inch LCD monitor (Dell E1913Sf) positioned 57 cm from the eyes. The stimulus screen was gamma corrected and worked at 60 Hz refreshing rate. All stimuli were bright stimulus (80.8 cd/m2) on a gray (13.2 cd/m2) background and presented monocularly to the left eye.
 
@@ -151,7 +273,7 @@ To obtain detailed RF size information, we presented circular patches of square-
 
 To test the contour-shape preferences of the neurons, we presented single contour elements in the population RF. Single contour element was the same as those used in the ISOI experiments. The size of the contour was adjusted to 40% of the population RF. Each stimulus was presented for 2 s, during which it first appeared in the center of the population RF and drifted along one of eight directions (randomly selected). After it moved to the edge of a virtual window equal to the population RF diameter, it disappeared and reappeared in the opposite side of the window, and continue its motion along the same direction (illustrated in Figure 3—video 1). The speed of the contour movement was adjusted to (half of the diameter of the population RF)/s. The interstimulus intervals were 3 s. Each stimulus was usually repeated for 10–15 times. As shown in Figures 6A, 19 different contour shapes were used, most of them was presented in four orientations, two stimuli were presented in two orientations (square, hexagon), and one stimulus (half circle) was presented in eight orientations. This made up 73 different stimulus conditions. We also included four identical circles instead of 1 to be comparable to other stimuli’s four orientations. The final stimulus matrix contained 76 stimuli.
 
-## ISOI data analysis
+### ISOI data analysis
 
 ISOI data analysis was performed using MatLab 2017 (The MathWorks, Natick, MA). We first obtained ΔR/R response to each stimulus using following formula ΔR/R=(R8-16 - R1-4)/R1-4, in whichR8-16 is the average of frames 8–16, R1-4 is the average of frames 1–4. The ΔR/R frames for each trial were then used for following analysis.
 
@@ -163,7 +285,7 @@ To separate domain region from non-domain regions (e.g. Figure 2D), we used 0 �
 
 To estimate domain sizes (e.g. Figure 2E), neighboring domains were often connected and we separated them using a watershed algorithm. First, the image values were reversed to make the negative domains positive. Then we located the strongest response pixel, and cut out a 31 × 31 (0.9 × 0.9 mm) pixel region around this pixel. For all pixels in this square that had a value lower than 0+2SD, they were set as 0+2SD. The response pattern was fitted with a two-dimentional Gaussian. An oval was obtained from the two-dimentional Gaussian with a threshold so that the oval had half of its pixels valued larger than 0+2SD (and the other half pixel all had values of 0+2SD). This oval was taken as the representation of this curvature domain. Before search for the next domain, the pixels in the oval region in the original map was set as 0+2SD. The searching stopped until no more pixels had value larger than 0+2SD. In addition, small domains had fewer than 75 pixels were not included in the size analysis. Individual domain size was described as the diameter of an equivalent disk. Domain sizes were then averaged according to map types and cases. To measure the map strength of a functional map (e.g. Figure 2F), we calculated the differences of average pixel values in white and dark domains in the subtraction map, using the domain masks described above. For example, the map strength of a 45° vs. 135° orientation map was calculated as the subtraction between the average pixel values of 135° domains and the average pixel values of 45° domains in the 45°−135° subtraction map.
 
-## Two-photon data analysis
+### Two-photon data analysis
 
 Two-photon data analysis was performed using MatLab 2017 (The MathWorks, Natick, MA). Image alignment and cell identification algorithms were modified from those used in Li et al., 2017. To correct slow cortex drifts and biological movements (likely due to heart pulsation and artificial ventilation) within the X-Y plane (normally less than 20 pixels during the whole imaging session, typically five pixels), we first obtained a frame template by averaging 1000 frames from a chosen session, then all frames of that experiment, and frames from other days of the same cortical layer, were aligned to this template using a cross-correlation method.
 
@@ -173,30 +295,54 @@ Cell bodies were first identified based on their responses to each visual stimu
 
 A cell was identified if more than 30 connected pixels had values larger than mean+2.75SD, in which SD is the standard deviation of the pixel values of the whole filtered subtraction image. After cell locations were determined, we calculated fluorescence responses for cells to each stimulus using following formula: ΔF/F0=(F-F0)/F0, in which F is the average pixel value covered by the cell in the response image, and F0 is average pixel values in the baseline image. A cell was included for the following analysis if any of its stimulus responses (ΔF/F0) was larger than 0.3 for the stimuli tested.
 
-## Orientation tuning to curves
+### Orientation tuning to curves
 
-A cell was identified as a curve-orientation-preferred cell (e.g. Figure 6A–D) if its responses to eight curve orientations passed the Rayleigh test for circular uniformity (Fisher, 1993) at a significant level of p<0.05. Then we fitted the responses with a modified von Mises function (Mardia, 1972):F(θ)=a0+b1×ec1×cos⁡(θ-θp)+b2×ec2×cos⁡(θ-θp-180)where θ is the orientation of curve (0–360°); θp is the preferred orientation; a0 is the baseline offset; (b1, b2) and (c1, c2) determine the amplitude and shape of the tuning curve, respectively. Fitting parameters were obtained with a least-square nonlinear regression method (nlinfit in Matlab, Mathworks). Goodness of fit (R2) values were >0.7 for all neurons which have significant orientation tuning to curve (n = 417). Cells’ preferred orientations were then calculated from the fitting curve (Figure 6B).
+A cell was identified as a curve-orientation-preferred cell (e.g. Figure 6A–D) if its responses to eight curve orientations passed the Rayleigh test for circular uniformity (Fisher, 1993) at a significant level of p<0.05. Then we fitted the responses with a modified von Mises function (Mardia, 1972):
 
-## Circle preference
+$$
+F(\theta)=a0+b1\timese^{c1\timescos⁡(\theta-\thetap)}+b2\timese^{c2\timescos⁡(\theta-\thetap-180)}
+$$
+
+where θ is the orientation of curve (0–360°); θp is the preferred orientation; a0 is the baseline offset; (b1, b2) and (c1, c2) determine the amplitude and shape of the tuning curve, respectively. Fitting parameters were obtained with a least-square nonlinear regression method (nlinfit in Matlab, Mathworks). Goodness of fit (R2) values were >0.7 for all neurons which have significant orientation tuning to curve (n = 417). Cells’ preferred orientations were then calculated from the fitting curve (Figure 6B).
+
+### Circle preference
 
 A cell was determined as circle-preferred cell if it met following two criteria: 1. The cell’s response was significantly modulated by contour types (bar, 90°-angle, triangle, curve, each was represented by its optimal oriented stimulus, and circle, p<0.05, one-way ANOVA) and its maximum response was to the circle. 2. The cell’s response to the circle was significantly larger than its response to the curve of its preferred orientation (p<0.05, paired t-test).
 
-## Shape preference
+### Shape preference
 
 In calculation of the preferential responses to two contours (e.g. Figure 4J and K), we first normalized the cell’s ΔF/F0 responses to the whole stimulus set to 0–1, then the differences of the responses to the two types of stimuli were calculated.
 
-## RF size and surround suppression
+### RF size and surround suppression
 
-To measure cell RF sizes (e.g. Figure 4L and M), we first performed a two-way ANOVA analysis (with repetition) for the cell’s responses to square-wave gratings of 6 different sizes and eight different moving directions. If the size factor is significant (p<0.05), then we fitted a ratio of Gaussian function (Cavanaugh et al., 2002) to the direction-averaged size tuning curve:Rx=kcLc(x)1+ksLs(x)Lcx=(2π∫0xe-(y/wc)2dy)2Lsx=(2π∫0xe-(y/ws)2dy)2where x is the stimulus diameter, kc and ks are gains for the RF center and surround, Lc and Ls are the total squared responses of the center and surround, and wc and ws are the size of the center and surround (wc <ws). Fitting parameters were obtained with a least-square nonlinear regression method (nlinfit in Matlab, Mathworks). The optimal stimulus size was determined as the diameter corresponding to the peak response in the fitted function. Goodness of fit (R2) values were >0.7 for all neurons that had significant size tuning to square wave gratings (n = 1493), and 95% (1418/1493) of these neurons had a preferred stimulus size between 0.5° and 12°. If a cell’s responses were not modulated by stimulus size (i.e. size factor was not significant in the two-way ANOVA analysis), then this cell was not included in the RF size related analysis. Surround suppression index (e.g. Figure 4—figure supplement 1F) was calculated from the size tuning curve as (maximum response – minimum response)/maximum response, in which minimum response was the least response obtained for stimulus size larger than that of maximum response (maximum surround suppression).
+To measure cell RF sizes (e.g. Figure 4L and M), we first performed a two-way ANOVA analysis (with repetition) for the cell’s responses to square-wave gratings of 6 different sizes and eight different moving directions. If the size factor is significant (p<0.05), then we fitted a ratio of Gaussian function (Cavanaugh et al., 2002) to the direction-averaged size tuning curve:
 
-## Pixel-based contour-preference map
+$$
+Rx=\frac{k_{c}L_{c}(x)}{1+k_{s}L_{s}(x)}
+$$
+
+
+
+$$
+L_{c}x=(\frac{2}{\sqrt{\pi}}\int_{0}^{x}e^{-(y/wc)^{2}}dy)^{2}
+$$
+
+
+
+$$
+L_{s}x=(\frac{2}{\sqrt{\pi}}\int_{0}^{x}e^{-(y/ws)^{2}}dy)^{2}
+$$
+
+where x is the stimulus diameter, kc and ks are gains for the RF center and surround, Lc and Ls are the total squared responses of the center and surround, and wc and ws are the size of the center and surround (wc <ws). Fitting parameters were obtained with a least-square nonlinear regression method (nlinfit in Matlab, Mathworks). The optimal stimulus size was determined as the diameter corresponding to the peak response in the fitted function. Goodness of fit (R2) values were >0.7 for all neurons that had significant size tuning to square wave gratings (n = 1493), and 95% (1418/1493) of these neurons had a preferred stimulus size between 0.5° and 12°. If a cell’s responses were not modulated by stimulus size (i.e. size factor was not significant in the two-way ANOVA analysis), then this cell was not included in the RF size related analysis. Surround suppression index (e.g. Figure 4—figure supplement 1F) was calculated from the size tuning curve as (maximum response – minimum response)/maximum response, in which minimum response was the least response obtained for stimulus size larger than that of maximum response (maximum surround suppression).
+
+### Pixel-based contour-preference map
 
 Pixel-based contour-preference maps (e.g. Figure 4B) were a combination of a gray value (G) map and a red/green hue map. For each pixel, we first calculated a shape preference index: SPI = abs(ΔFcc-ΔFbat)/max(ΔFcc,ΔFbat), where ΔFcc is the maximum fluorescence increase to curves and circles (red framed ones in Figure 3F), ΔFbat is the maximum fluorescence increase to bar, angle and triangle (green framed ones in Figure 3F). Then we calculated the gray value as: G = 200xSPIxFp/Fp_f, where Fp is the maximum of the fluorescence values in the response images to all five types of stimuli, Fp_f is the average of all pixels’ Fp in the same frame. Hue for a pixel is red if its ΔFcc is larger than ΔFbat, and is green if not.
 
-## PCA
+### PCA
 
 PCA results were shown in Figure 5 and Figure 6—figure supplement 1. For each neuron, its response matrix was normalized to 0–1. Its responses to different orientations were sorted, so that for each contour, 0° represented its highest response and 135° for the lowest (thus no longer correspond to the stimulus icons). Only neurons tested with the full stimulus set were analyzed (n = 1556). The responses of these neurons were arranged as a 2D matrix, and the mean response to each stimulus was subtracted before the PCA analysis was performed. In Figure 5E, the color of the neurons was determined based on their coordinates on PC1.
 
-## Statistical analysis
+### Statistical analysis
 
 All t-tests and paired t-test are two-tailed.

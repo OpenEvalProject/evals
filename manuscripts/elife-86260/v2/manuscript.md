@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/021018s57 Department of Biochemistry and Molecular Biology, Faculty of Biology, University of Barcelona Barcelona Spain
-2. https://ror.org/05t8khn72 Institute for Molecular Biology of Barcelona, National Research Council (IBMB-CSIC) Barcelona Spain
-3. https://ror.org/02g87qh62 Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBER-EDH) Madrid Spain
-4. https://ror.org/021018s57 Department of Pulmonary Medicine, Hospital Clínic-Institut d’Investigacions Biomèdiques August Pi I Sunyer (IDIBAPS); University of Barcelona Barcelona Spain
-5. https://ror.org/02g87qh62 Centro de Investigación Biomédica en Red de Enfermedades Respiratorias (CIBERES) Madrid Spain
-6. https://ror.org/03nzegx43 Department of Pulmonary Medicine, Dr. Josep Trueta University Hospital de Girona, Santa Caterina Hospital de Salt and Girona Biomedical Research Institute (IDIBGI) Girona Spain
-7. https://ror.org/01nrxwf90 University/BHF Centre for Cardiovascular Science, University of Edinburgh Edinburgh United Kingdom
-8. https://ror.org/00wjc7c48 Department of Pharmaceutical Sciences, Università degli Studi di Milano Milan Italy
-9. https://ror.org/03yczjf25 Universidad Peruana Cayetano Heredia Lima Peru
-10. https://ror.org/021018s57 Institute of Biomedicine (IBUB), University of Barcelona Barcelona Spain
+1. Department of Biochemistry and Molecular Biology, Faculty of Biology, University of Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+2. Institute for Molecular Biology of Barcelona, National Research Council (IBMB-CSIC) Barcelona Spain ([ROR:05t8khn72](https://ror.org/05t8khn72))
+3. Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBER-EDH) Madrid Spain ([ROR:02g87qh62](https://ror.org/02g87qh62))
+4. Department of Pulmonary Medicine, Hospital Clínic-Institut d’Investigacions Biomèdiques August Pi I Sunyer (IDIBAPS); University of Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+5. Centro de Investigación Biomédica en Red de Enfermedades Respiratorias (CIBERES) Madrid Spain ([ROR:02g87qh62](https://ror.org/02g87qh62))
+6. Department of Pulmonary Medicine, Dr. Josep Trueta University Hospital de Girona, Santa Caterina Hospital de Salt and Girona Biomedical Research Institute (IDIBGI) Girona Spain ([ROR:03nzegx43](https://ror.org/03nzegx43))
+7. University/BHF Centre for Cardiovascular Science, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+8. Department of Pharmaceutical Sciences, Università degli Studi di Milano Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))
+9. Universidad Peruana Cayetano Heredia Lima Peru ([ROR:03yczjf25](https://ror.org/03yczjf25))
+10. Institute of Biomedicine (IBUB), University of Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Here, we have approached the study of endothelial cells dysfunction and metaboli
 
 ## Results
 
-## AMIECs display impaired growth and migration
+### AMIECs display impaired growth and migration
 
 AMIECs were isolated from coronary atherothrombotic specimens from eight patients undergoing percutaneous coronary intervention with thrombectomy for the treatment of acute ST-segment elevation myocardial infarction (STEMI). Hereafter, the eight patient-derived cell lines are designated CE followed by two digits (CE45, CE46, CE48, CE51, CE52, CE53, CE60, CE61).
 
@@ -47,7 +47,7 @@ At 80% confluence, AMIECs presented the expected shape and appeared similar to c
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86260/elife-86260-fig1-v2.jpg)
 
-**Figure 1.:** (A) Bright field images of human coronary artery endothelial cells (HCAECs) (left panels) vs. AMIECs (right panels), captured under 10 x and 20 x objectives on a Leica microscope. (B) Representative Western blotting experiments for the endothelial markers, PECAM-1, V-CAM1, CD-34, and CD-10 (Figure 1—source data 1 and 2). (C) Growth rate of AMIECs and control HCAEC, expressed as fold change relative to initial cell number seeded. Error bars represent mean ± SD (n=3). (D) Cell cycle analysis of AMIECs and HCAECs under logarithmic growth conditions, showing a non-significant trend for AMIECs to accumulate G1 phase as compared to HCAEC. Error bars represent mean ± SD (n=3). (E) Representative images of Mito C-treated migration in scratch wound assays, showing reduced migration of AMIECs compared to control HCAECs. (F) Quantification of cell migration in scratch wound assays, represented as % of wound closure. Values are mean ± SD (n=3). Student’s t-test significance values were calculated for AMIECs vs. HCAEC: *p≤0.05 **p≤0.01, ***p≤0.001.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) Bright field images of human coronary artery endothelial cells (HCAECs) (left panels) vs. AMIECs (right panels), captured under 10 x and 20 x objectives on a Leica microscope. (B) Representative Western blotting experiments for the endothelial markers, PECAM-1, V-CAM1, CD-34, and CD-10 (Figure 1—source data 1 and 2). (C) Growth rate of AMIECs and control HCAEC, expressed as fold change relative to initial cell number seeded. Error bars represent mean ± SD (n=3). (D) Cell cycle analysis of AMIECs and HCAECs under logarithmic growth conditions, showing a non-significant trend for AMIECs to accumulate G1 phase as compared to HCAEC. Error bars represent mean ± SD (n=3). (E) Representative images of Mito C-treated migration in scratch wound assays, showing reduced migration of AMIECs compared to control HCAECs. (F) Quantification of cell migration in scratch wound assays, represented as % of wound closure. Values are mean ± SD (n=3). Student’s t-test significance values were calculated for AMIECs vs. HCAEC: *p≤0.05 **p≤0.01, ***p≤0.001.
 
 Because optimal growth conditions for endothelial cells entail maintaining them at a relatively high confluence, they cannot be kept in culture for prolonged periods at an optimal confluence (70–80%), as overgrowth will cause cells to pile up and lose their physiological monolayer growth pattern. Therefore, cell growth monitoring was limited to 168 hr. Under these conditions, all AMIECs consistently displayed slower growth rates as compared to control HCAECs (Figure 1D). Indeed, after 168 hr, while control HCAECs had reached a plateau in their growth, AMIECs continued to proliferate exponentially, albeit at slow rates, without reaching saturation.
 
@@ -57,7 +57,7 @@ In wound-healing migration assays, control HCAECs achieved a complete closure of
 
 These results indicate that AMI patient-derived coronary endothelial cells are dysfunctional in major cell-autonomous processes, namely growth and migration.
 
-## Defective tubulogenesis in AMIECs
+### Defective tubulogenesis in AMIECs
 
 The ability to migrate is a critical function of healthy endothelial cells, which can migrate while branching from existing blood vessels toward sources of angiogenic stimuli, guided by tip cells. Impairment in this fundamental endothelial function is considered a hallmark of vascular diseases (De Bock et al., 2013). Thus, we next assessed the tubulogenic potential of AMIECs, as an indicator of their vasculogenic (angiogenic) potential. Control HCAECs and AMIECs were cultured under conditions that favor tubulogenesis, and branching points scored after 12 hr of switching to a tubulogenic medium containing VEGF (Figure 2A). While control HCAECs averaged 80 branching points, AMIECs displayed a significantly reduced tubulogenic potential, evident both as a diminished number of branching points and as shorter and fragmented tubes as compared to control cells (Figure 2B). The branching capacity of the AMIECs derived from different patients was linearly correlated (R2=0.67) with their ability to migrate (Figure 2C) regardless of their growth rates suggesting that the deficient tubulogenesis or sprouting of these cells is linked to a defect in their migration properties, rather than to abnormal proliferation or survival.
 
@@ -65,7 +65,7 @@ The ability to migrate is a critical function of healthy endothelial cells, whic
 
 **Figure 2.:** (A) Endothelial tube network formation after 12 hr of VEGF stimulation. Shown are representative bright field images from triplicate experiments. Scale bar = 100 μm. (B) Tube branch point quantification of images from experiments performed as in (A). Values are mean ± SD (n=3). Student’s t-test significance values were calculated for AMIECs vs. human coronary artery endothelial cell (HCAEC): *p≤0.05 **p≤0.01, ***p≤0.001. (C) Correlation between relative migration (Figure 1F) and tubulogenesis in AMIECs and HCAECs.
 
-## AMIECs display low glucose consumption and high lactate production
+### AMIECs display low glucose consumption and high lactate production
 
 The above characterization points to cell-autonomous defects in AMI patient-derived endothelial cells that compromise their ability to proliferate, migrate, and form branched tubular structures. We next tackled the hypothesis that the metabolic features of these cells might be associated with at least part of the observed phenotypes. To assess nutrient and metabolite consumption and production rates, the concentration of selected metabolites in culture media was determined. We focused on glucose as the major carbon source of the glycolytic pathway, lactate as the main metabolic end-product of glycolysis, and glutamine/glutamate as alternative sources of carbon metabolism and major providers of mitochondrial anaplerosis. We found that 6 out of the 8 AMIECs consumed glucose at significantly lower rates than control HCAECs (Figure 3A), which may reconcile with the lower growth rates of patient-derived cells, while two patient-derived cell lines consumed more glucose than control cells. Remarkably, all AMIECs displayed a strong production of lactate, comparable or superior to control cells, regardless of their levels of glucose uptake (Figure 3B).
 
@@ -75,7 +75,7 @@ The above characterization points to cell-autonomous defects in AMI patient-deri
 
 Two of the AMIECs, CE-45, and CE-61, consumed high levels of glucose and displayed robust lactate production (Figure 3A and B), and thus, it may be assumed that lactate is produced through glycolysis. The cells may also be hypothesized to be under a Warburg effect. However, their slow rates of proliferation stand in contrast to the rapid proliferation phenotypes seen in other cell types displaying a Warburg effect, such as cancer cells. On the other hand, the remaining six patient-derived endothelial cell lines, also slow growers, showed high levels of lactate production in spite of low glucose consumption (Figure 3A and B). This uncoupling of lactate production from glycolysis suggests the existence of an alternative source of lactate in these cells. In this regard, it is worth noting that glutaminolysis also produces lactate, in a pathway that involves the oxidation of glutamine to malate and then to pyruvate by the malic enzyme (ME), followed by conversion to lactate by the action of LDH-A (Brooks, 2018).
 
-## AMIECs shunt glycolysis towards PPP and NADPH generation
+### AMIECs shunt glycolysis towards PPP and NADPH generation
 
 The low glucose uptake observed in 6 out of the 8 patient-derived endothelial cell lines prompted us to explore the expression of key enzymes in the glycolytic pathway. Under normal conditions, endothelial cells rely mainly on glycolysis to generate the energy required for their functions (De Bock et al., 2013; Dromparis and Michelakis, 2013; Goveia et al., 2014). A key rate-limiting enzyme in this pathway is phosphofructokinase 1 (PFK1), responsible for the phosphorylation of fructose-6-phosphate (F-6-P) to fructose-1,6-phosphate (F-1,6-P) in an ATP-dependent reaction. PFK1 is allosterically activated by fructose-2,6-bisphosphate (F-2,6-BP), produced from F-6-P through the catalytic activity of 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatases encoded in mammals by paralogs PFKFB1, PFKFB2, PFKFB3, PFKFB4 and TP53-induced glycolysis and apoptosis regulator (TIGAR) (Bensaad et al., 2006; Eelen et al., 2018). These are bifunctional enzymes bearing, on the same polypeptide, an N-terminal 6-phosphofructo-2-kinase domain, and a C-terminal fructose 2,6-bisphosphatase domain. Given its relative kinase and bisphosphatase activities, PFKFB3 is a preferred target to inhibit glycolysis over other isoforms in this family of enzymes. PFKFB3 has been described to play a significant role in the glycolytic activity of pathological ECs, and its inhibition dramatically abrogates their proliferation and migration (Li et al., 2019; Schoors et al., 2014).
 
@@ -83,7 +83,7 @@ We determined PFKFB3 protein levels by Western blotting, finding significantly l
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/86260/elife-86260-fig4-v2.jpg)
 
-**Figure 4.:** (A) Representative Western blotting of PFKFB3 and PFKFB4 in AMIECs and human coronary artery endothelial cells (HCAECs) (Figure 4—source data 1 ). (B) Quantification of band intensities for PFKFB3 and PFKFB4 in triplicate western blotting experiments, normalized to β-actin band intensities. Values are mean ± SD (n=3). (C) Representative Western blotting for glucose-6-phosphate dehydrogenase (G6PD) in AMIECs and HCAECs (Figure 4—source data 2). (D) Quantification of band intensities for G6PD in triplicate Western blotting experiments, normalized to β-actin band intensities. (E) G6PD enzyme activities normalized to intracellular protein content (n=3). (F) Reactive oxygen species (ROS) levels are determined by flow cytometry. Results are expressed as the mean fluorescent intensity. (G) Total intracellular reduced glutathione content. Values are normalized to cellular protein concentration. Error bars represent mean ± SD (n=3). For all experiments, Student’s t-test significance values were calculated for AMIECs vs. HCAECs: *p≤0.05 **p≤0.01, and ***p≤0.001.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Representative Western blotting of PFKFB3 and PFKFB4 in AMIECs and human coronary artery endothelial cells (HCAECs) (Figure 4—source data 1 ). (B) Quantification of band intensities for PFKFB3 and PFKFB4 in triplicate western blotting experiments, normalized to β-actin band intensities. Values are mean ± SD (n=3). (C) Representative Western blotting for glucose-6-phosphate dehydrogenase (G6PD) in AMIECs and HCAECs (Figure 4—source data 2). (D) Quantification of band intensities for G6PD in triplicate Western blotting experiments, normalized to β-actin band intensities. (E) G6PD enzyme activities normalized to intracellular protein content (n=3). (F) Reactive oxygen species (ROS) levels are determined by flow cytometry. Results are expressed as the mean fluorescent intensity. (G) Total intracellular reduced glutathione content. Values are normalized to cellular protein concentration. Error bars represent mean ± SD (n=3). For all experiments, Student’s t-test significance values were calculated for AMIECs vs. HCAECs: *p≤0.05 **p≤0.01, and ***p≤0.001.
 
 We also determined PFKFB4 protein levels, finding significantly higher levels of expression in AMIECs compared to control cells (Figure 4A and B). Low levels of PFKFB3 expression coupled with high levels of PFKFB4 expression in AMI patient-derived cells predict a redirection of glucose-6-phosphate (G6P) towards the PPP. As a consequence, we would expect (1) increased production of NADPH-reducing equivalents through the oxidative branch of the PPP (Dasgupta et al., 2018; Ros et al., 2017) and (2) increased production of ribose-5-phosphate through the non-oxidative branch, for de novo synthesis of nucleotides as well as acetyl-CoA carboxylase 1 activation and lipogenesis (by inhibiting activation of liver kinase B1/AMPK signaling). The NADPH-reducing equivalents produced through the non-oxidative branch afford the maintenance of redox homeostasis by scavenging ROS (Benito et al., 2017; Li et al., 2014; Sun et al., 2017; Xia et al., 2017). The nucleotides supplied through the non-oxidative branch of the PPP can be used for DNA synthesis in proliferating cells, and also in DNA damage repair (Bester et al., 2011).
 
@@ -91,13 +91,13 @@ In light of these predictions, we determined the expression level and activity o
 
 In vivo, endothelial cells in AMI patients are under numerous physiological and pathological stresses, including mechanical and inflammatory, which may generate excess ROS and oxidative stress (Dasgupta et al., 2018; Seo and Lee, 2014). However, our patient-derived cells are no longer in an in vivo environment and are rather in an in vitro environment identical to that of control endothelial cells, and, therefore, their increased ROS levels cannot be directly attributed to environmental factors. Absent maintenance of long-term epigenetic memory of past stress responses in vivo, it is reasonable to assume that the high levels of ROS in AIM patient-derived cells may be elicited by endogenous damage signals impinging upon mitochondria (Murphy, 2009) or through NAD(P)H oxidases.
 
-## AMIECs exhibit a strong glutamine metabolism
+### AMIECs exhibit a strong glutamine metabolism
 
 Given the likely relevance of glutathione in the observed phenotypes and the possibility of a glutamine origin of the excess lactate produced in AMIECs, we assessed glutamate and cysteine contents in these cells. Determination of the extracellular fluxes of glutamine showed that the consumption of glutamine in AMIECs is higher than in control HCAECs (Figure 5A). The latter consumed more glucose than patient-derived cells (see above), and thus the glutamine-to-glucose consumption ratio is far greater in patient-derived cells than in control cells (Figure 5B). This suggests that AMI patient-derived cells mainly resort to glutamine, rather than glucose, as their carbon source.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86260/elife-86260-fig5-v2.jpg)
 
-**Figure 5.:** (A) Glutamine and glucose production levels in cell culture medium after 48 hr. Negative values reflect net consumption. (B) Representative Western blotting experiments in AMIECs and human coronary artery endothelial cells (HCAECs) for the two major isoforms of GLS1, kidney-type glutaminase (KGA), and glutaminase C (GAC), using isoform-specific antibodies (Figure 5—source data 1). (C) Quantification of band intensities for KGA and GAC in triplicate western blotting experiments, normalized to β-actin band intensities. (D) Ratio of KGA vs. GAC isoform expression levels, calculated from the actin-normalized band intensities quantitated in (C). (E) Intracellular amino acid levels (F) Glutamate and glutamine production levels in cell culture medium after 48 hr. Negative values reflect net consumption. (G) Glutamine/glutamate consumption ratio. (H) Mitochondrial metabolic potential of AMIECs and control HCAEC cells. Cells were stained with 50 nM DiIC1(5) without or with 50 µM carbonyl cyanide 3-chlorophenylhydrazone (CCCP). Error bars represent mean ± SD (n=3). For all experiments, Student’s t-test significance values were calculated for AMIECs vs. HCAECs: *p≤0.05 **p≤0.01, and ***p≤0.001.Figure 5—source data 1.
+**Figure 5.:** (A) Glutamine and glucose production levels in cell culture medium after 48 hr. Negative values reflect net consumption. (B) Representative Western blotting experiments in AMIECs and human coronary artery endothelial cells (HCAECs) for the two major isoforms of GLS1, kidney-type glutaminase (KGA), and glutaminase C (GAC), using isoform-specific antibodies (Figure 5—source data 1). (C) Quantification of band intensities for KGA and GAC in triplicate western blotting experiments, normalized to β-actin band intensities. (D) Ratio of KGA vs. GAC isoform expression levels, calculated from the actin-normalized band intensities quantitated in (C). (E) Intracellular amino acid levels (F) Glutamate and glutamine production levels in cell culture medium after 48 hr. Negative values reflect net consumption. (G) Glutamine/glutamate consumption ratio. (H) Mitochondrial metabolic potential of AMIECs and control HCAEC cells. Cells were stained with 50 nM DiIC1(5) without or with 50 µM carbonyl cyanide 3-chlorophenylhydrazone (CCCP). Error bars represent mean ± SD (n=3). For all experiments, Student’s t-test significance values were calculated for AMIECs vs. HCAECs: *p≤0.05 **p≤0.01, and ***p≤0.001.
 
 Glutamine is the most abundant free amino acid in circulation and in intracellular pools, and it is used by cells for both bioenergetics and biosynthetic needs; it can act as a carbon source or nitrogen donor and is consequently used as a precursor for the synthesis of amino acids, proteins, nucleotides and lipids, and represents the main substrate for TCA cycle anaplerosis (DeBerardinis and Cheng, 2010; Draoui et al., 2017; Fitzgerald et al., 2018; Laplante and Sabatini, 2012). Moreover, glutamine participates in redox homeostasis, a process that has a close connection with the PPP, as one of its main functions is to generate glutathione to counter the oxidative stress generated by ROS (see above). Thus, the increased glutamine consumption observed in AMIECs is consistent with the increased glutathione levels observed in these cells (Figure 4G).
 
@@ -133,47 +133,150 @@ Primary dysfunctions in mitochondria, from either inherited or acquired genetic 
 
 ## Methods
 
-## Endothelial cells
+### Endothelial cells
 
 AMIECs were isolated from coronary atherothrombotic specimens in patients undergoing percutaneous coronary intervention with thrombectomy for the treatment of acute STEMI at the Royal Infirmary of Edinburgh, Scotland, UK. Relevant clinical features of the patients are summarized in Table 1. The study protocol was approved by the Institutional Research Ethics Committee, and all subjects provided written informed consent. Specimens were washed with phosphate-buffered saline (PBS) and manually disaggregated. Tissue explants were seeded onto collagen-I coated six-well plates and maintained under standard cell culture conditions. After 24 hr, tissue explants, non-adherent cells, and debris were aspirated. The medium was changed every other day until the first passage of coronary endothelial outgrowth cells emerged and cells were cultured as described (Brittan et al., 2015; Padfield et al., 2013; Tura et al., 2013), on 0.2% gelatin-coated plates with EGM-2 BulletKit medium (Lonza, Basel, Switzerland), containing EBM-2 basal medium along with the EGM-2 SingleQuots kit components, 10% fetal bovine serum (FBS) and penicillin-streptomycin. Human coronary artery endothelial cells (HCAECs) were purchased from Lonza Clonetics (Walkersville, USA) and used as controls. All cell cultures were maintained in a 37 °C humidified incubator at 5% CO2.
 
-## Cell proliferation and viability assays
+**Table 1.**
+ Clinical characteristics of patients providing coronary endothelial outgrowth following thrombectomy for ST-segment elevation myocardial infarction.Values are number (%) or mean ± standard deviation. ACE = angiotensin-converting enzyme; CABG = coronary artery bypass grafting; PCI = percutaneous coronary intervention.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n=8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, years</td>
+      <td>60±15</td>
+    </tr>
+    <tr>
+      <td>Gender, male</td>
+      <td>5 (66%)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Medical history and risk factors</td>
+    </tr>
+    <tr>
+      <td>Previous myocardial infarction</td>
+      <td>1 (12%)</td>
+    </tr>
+    <tr>
+      <td>Previous PCI/CABG</td>
+      <td>1 (12 %)</td>
+    </tr>
+    <tr>
+      <td>Current smoker</td>
+      <td>3 (37%)</td>
+    </tr>
+    <tr>
+      <td>Ex-smoker</td>
+      <td>2 (25%)</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>1 (12%)</td>
+    </tr>
+    <tr>
+      <td>Hyperlipidaemia</td>
+      <td>4 (50%)</td>
+    </tr>
+    <tr>
+      <td>Family history of premature coronary heart disease</td>
+      <td>1 (12%)</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Medication on admission</td>
+    </tr>
+    <tr>
+      <td>Aspirin</td>
+      <td>2 (25%)</td>
+    </tr>
+    <tr>
+      <td>Clopidogrel</td>
+      <td>1 (12%)</td>
+    </tr>
+    <tr>
+      <td>B-Blockers</td>
+      <td>1 (12%)</td>
+    </tr>
+    <tr>
+      <td>ACE-Inhibitors</td>
+      <td>1 (12%)</td>
+    </tr>
+    <tr>
+      <td>Statins</td>
+      <td>3 (38%)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Myocardial injury</td>
+    </tr>
+    <tr>
+      <td>Troponin I concentration, micrograms/L</td>
+      <td>27.9±20.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Culprit vessel</td>
+    </tr>
+    <tr>
+      <td>Left anterior descending artery, n=12</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Circumflex artery, n=2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Right coronary artery, n=23</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell proliferation and viability assays
 
 Cells were counted either with a Scepter Handheld Automated Cell Counter (Merck Millipore, Billerica, MA, USA) or by Hoechst nuclear staining (HO33342, Sigma-Aldrich) (Aguilar et al., 2016).
 
-## In vitro migration (wound healing) assay
+### In vitro migration (wound healing) assay
 
 Cells were cultured on 12-well plates in a complete medium supplemented with 10% FBS and antibiotics. After reaching confluence, cells were starved for 1 hr in a medium containing 0.5% FBS and mitomycin C (1 mg/mL), a cytostatic drug that reacts covalently with DNA forming crosslinks between the complementary strands of DNA, preventing the separation of the complementary DNA strands and inhibiting DNA replication.
 
-## Tubulogenesis assay
+### Tubulogenesis assay
 
 Endothelial tube formation was monitored using an in vitro angiogenesis assay kit (Merck Millipore ECM625) following the manufacturer’s instructions. Briefly, EC cells were cultured in 96 wells plates coated with 5% Matrigel (growth factor-free, Corning # 354230) in EGM2 medium without FBS and supplemented with 1% non-essential amino-acids and antibiotics and left in the incubator for 12 hr. Tube branching points were scored in 5 random fields per concentration using the Angiogenesis plug-in of the Image J software.
 
-## Western blotting
+### Western blotting
 
 70–80% confluent cells were harvested by trypsinization, washed 2 x with cold PBS, pellets resuspended in RIPA buffer (50 mM Tris pH 8.0, 150 mM NaCl, 0.1% SDS, 1% Triton X-100 and 0.5% sodium deoxycholate) supplemented with protease inhibitor cocktail (Sigma-Aldrich) and incubated on ice for 5–10 min. Equal amounts of protein per sample were electrophoresed on 8% or 12% SDS-PAGE and subjected to Western blotting.
 
-## Quantification of metabolites
+### Quantification of metabolites
 
 Glucose, lactate, glutamate, and glutamine were determined by spectrophotometry (COBAS Mira Plus, Horiba ABX) from cell culture media by monitoring the production of NAD(P)H in specific reactions for each metabolite at 340 nm.
 
-## Analysis of polar intracellular metabolites (TCA cycle intermediates and amino acids)
+### Analysis of polar intracellular metabolites (TCA cycle intermediates and amino acids)
 
 Cells were grown to 70–80% confluence at the required condition for each cellular model and then media were removed, and plates were washed with ice-cold PBS. TCA cycle intermediates were extracted with the addition of 100% methanol:H2O (1:1) mixture and scrapping on ice; then, the extracts were sonicated using a titanium probe (VibraCell, Sonics & Materials Inc, three cycles of 5 s), chloroform added to the lysates and tubes placed in a shaker for vigorous agitation at 4 °C for 30 min. Subsequently, samples were centrifuged and the upper aqueous phase was separated and evaporated under airflow at room temperature, adding dichloromethane (CH2Cl2) for complete dehydration of the samples. TCA cycle intermediates were derivatized by adding 2% (v/v) methoxyamine hydrochloride in pyridine and shaken vigorously at 37 °C for 90 min. Next, N-methyl-N- (tert-butyldimethylsilyl) trifluoroacetamide (MBTSTFA) and 1% tertbutyldimetheylchlorosilane (TBDMCS) were added, samples incubated for 1 hr at 55 °C and finally transferred to GC/MS vials. GC/MS analysis was performed under an electron impact ionization model (Cascante and Marin, 2008; Dettmer et al., 2007). The relative concentration of the polar intracellular metabolites is quantified using Norvaline (1 mg/mL) as an internal standard.
 
-## Glucose-6-phosphate dehydrogenase activity
+### Glucose-6-phosphate dehydrogenase activity
 
 Cell extracts were prepared using lysis buffer 20 mM Tris-HCl, supplemented with 1 mM DTT, 1 mM EDTA, 0.02% (v/v) Triton X-100, 0.02% (v/v) sodium deoxycholate and protease inhibition cocktail (Sigma-Aldrich). Lysates were sonicated (VibraCell, Sonics & Materials Inc) and centrifuged at 12,000 × g for 20 min at 4 °C. G6PDH specific activity was measured by adding samples to a cuvette containing 0.5 mM NADP+ in 50 mM Tris-HCl, pH 7.6, at 37 °C. The reaction was initiated by the addition of glucose-6-phosphate at a final concentration of 2 mM (Aguilar et al., 2016).
 
-## Intracellular ROS determination
+### Intracellular ROS determination
 
 Total intracellular ROS levels were determined by means of flow cytometry using the H2DCFDA probe (Invitrogen). Cells were incubated with incubation buffer 5.5 mM glucose in PBS containing 5 µM H2DCFDA for 30 min at 37 °C and 5% CO2.
 
-## GSH/GSSG quantification
+### GSH/GSSG quantification
 
 Fresh cells were lysed with 5% 5-sulfosalicylic acid (Sigma-Aldrich) solution, vortexed, and disrupted by two freeze/thaw cycles in liquid N2 and 37 °C water bath. Fifty µL of this solution was separated for subsequent protein quantification. Cell extracts were kept at 4 °C for 10 min and centrifuged at 10,000 × g for 10 min. For glutathione quantification, 15 U/mL of glutathione reductase and 40 µg/mL of 5,5’-dithiobis(2-nitrobenzoic acid) (Sigma-Aldrich) were dissolved in assay buffer (100 mM K2HPO4/KH2PO4, 1 mM EDTA, pH 7.0).
 
-## Mitochondrial membrane potential
+### Mitochondrial membrane potential
 
 Cells were incubated with MitoProbe DiIC1(5) (1,1′,3,3,3′,3′-hexamethylindodicarbo -cyanine iodide) with or without CCCP (carbonyl cyanide 3-chlorophenylhydrazone) as a mitochondrial membrane potential disruptor, and scored by flow cytometry.
 

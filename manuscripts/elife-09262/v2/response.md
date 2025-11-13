@@ -94,9 +94,7 @@ In our hands, synaptobrevin-mOrange (unlike synaptophysin-pHtomato or vGlut-pHlu
 
 ROIs were in 3 µm radius around the syb2-mOrange puncta. We now included this information in the Methods section. The need for larger ROIs was necessitated by the fact that mSCTs (seen in the presence of Mg2+) typically occur within the vicinity but not directly juxtaposed to presynaptic terminals. The frequency of the mSCTs and their sensitivity to AP5 and alterations in spontaneous release supports their synaptic origin.
 
-7) Introducing Fluo-4 salt with a patch pipette reduced observation frequency of mSCTs and the authors interpret this as being due to wash-out. However, it seems that the pipette solution contained high gluconate, which is known to buffer Ca2+ (Kd ∼35 mM). Although Kd may appear high it would be expected to affect [Ca2+] due to its very high concentration. Washout should produce a decrease in frequency over time compared to Fluo-4 AM, was this observed?10.7554/eLife.09262.014Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.09262.014
-
-DOI: http://dx.doi.org/10.7554/eLife.09262.014
+7) Introducing Fluo-4 salt with a patch pipette reduced observation frequency of mSCTs and the authors interpret this as being due to wash-out. However, it seems that the pipette solution contained high gluconate, which is known to buffer Ca2+ (Kd ∼35 mM). Although Kd may appear high it would be expected to affect [Ca2+] due to its very high concentration. Washout should produce a decrease in frequency over time compared to Fluo-4 AM, was this observed?10.7554/eLife.09262.014Author response image 1.
 
 We were concerned about wash out as well as photobleaching and therefore we limited our acquisition time to 2 min. This duration was also necessitated by the relatively high temporal resolution of our optical recordings.
 

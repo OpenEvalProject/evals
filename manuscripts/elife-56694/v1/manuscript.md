@@ -37,21 +37,45 @@ Here, we report four lines of evidence supporting a causal involvement of the ca
 
 We trained two monkeys to report their decision by making a saccadic eye movement at a self-determined time. As we reported previously, the monkeys’ performance depended on both the strength and direction of the visual-motion evidence and the reward asymmetry on each trial, with consistent biases toward choices associated with large reward (Figure 1B and C). More details about these two monkeys’ performance on this task can be found in Fan et al., 2018.
 
-## Caudate neurons encode both visual and reward information
+### Caudate neurons encode both visual and reward information
 
 We first tested if and how individual caudate neurons encoded task-relevant visual and reward information. We predicted that, if the caudate nucleus contributes to integrating these different sources of information, then the activity of individual neurons would be modulated by properties of both the visual motion evidence and the reward context. Alternatively, if the caudate nucleus processes reward and visual information separately, then the activity of individual caudate neurons would be modulated by either type of information alone but not together.
 
 We found that many caudate neurons are sensitive to both visual and reward information used to perform the task. Specifically, we recorded single-unit activity from 142 caudate neurons in the two monkeys (n = 49 for monkey C, 93 for monkey F). These caudate neurons showed diverse patterns of task-dependent modulations that in many cases included a combination of visual and reward modulations. For example, the activity of the neuron depicted in Figure 2A showed three types of modulation: (1) more activity during the blocks when the contralateral choice was paired with small reward and the ipsilateral choice was paired with large reward (green > purple); (2) more activity for trials with stronger versus weaker motion evidence (dark shade > light shade; i.e., higher versus lower coherence levels, respectively), particularly for trials with contralateral choices; and (3) more activity for trials with contralateral versus ipsilateral choices, both during motion viewing and around saccade onset (Contra > Ipsi). This neuron’s activity thus reflected a combination of reward context, motion strength, and eventual choice. The example neuron depicted in Figure 2B showed: (1) more activity on trials with higher coherence levels (dark shade > light shade); (2) a contralateral choice preference, both during motion viewing and around saccade onset (Contra > Ipsi); and (3) more activity when the choice was associated with large reward (red > blue). This neuron’s activity thus reflected choice, the strength of motion stimulus leading to the choice, and the reward size expected for the choice. Additional examples are shown in Figure 2—figure supplement 1.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Activity of two example neurons. Shades: coherence levels. Colors: reward context (A) and reward size (B). Firing rates were computed using a 200 ms running window (50 ms steps). Only correct trials were included. (C-F) Fractions of neurons showing significant coefficients for task-related regressors in the seven task epochs defined in Figure 1A (see Equation 1 for the formulation of the regression). Horizontal dashed lines: chance levels, adjusted based on the number of tests used and a 5% chance level for a single test. Filled circles: fractions that were significantly above chance levels (Chi-square test, p<0.05/63 (seven epochs and nine comparisons)). Coh: activity with non-zero coefficients for unsigned coherence values. Coh × Reward: activity with non-zero coefficients for the coherence × reward size interaction. Coh + Reward: activity with non-zero coefficients for coherence on trials with either choice and non-zero coefficients for either reward context or reward size.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Same format as Figure 2A and B. Note that colors indicate reward contexts in (A-C) and reward size in (D-E). Bars above the curves indicate the epochs used for regression analysis. Regression coefficients for each epoch are shown on the right. Bold: t-test, p<0.05. (A) A neuron with activity modulated by choice and coherence, but not reward-related quantities, during motion viewing. (B) A neuron with activity modulated by choice, reward context, expected reward size, coherence, and coherence-reward size interaction for trials with ipsilateral choices. (C) A neuron with different modulation patterns for activity during and after motion viewing. (D) A neuron with post-decision activity modulated by choice, expected reward size, and coherence. (E) A neuron with post-decision activity modulated by choice and coherence-reward size interaction for trials with ipsilateral choices.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Color map showing the presence of significant non-zero regression coefficients for each combination neuron during Epoch 5 in Figure 1A (from 100 ms after motion onset until 100 ms before saccade onset). Only correct trials were included for regression analysis. Yellow: positive; dark blue: negative; green: not significant; criterion: p=0.05. Neurons were sorted by the signs of the coefficients.
+
 Across the sampled population, individual caudate neurons were sensitive to choice, reward context, expected reward size, and motion strength. We measured the selectivity of single-unit activity using multiple linear regression for seven task epochs (Figure 2C; Equation 1; epochs are defined in Figure 1A). Selectivity for reward context persisted throughout the trial (green), whereas selectivity for choice, reward size, and motion strength emerged during motion viewing (Epochs 4–7). The selectivity for reward size and motion strength was more prevalent in Epoch 5 (variable duration covering the whole motion viewing period) than in Epoch 4 (fixed duration covering only the early motion viewing period), consistent with a developing latent decision variable that accumulates evidence over time, increasing sensitivity of the regression analysis with longer analysis windows, and/or additional sensitivity to RT closer to the time of saccade. Many neurons also showed joint modulations by both motion strength and either the reward context or expected reward size (“Coh + Reward”, Figure 2D). A smaller proportion of neurons showed a different form of joint modulation by visual and reward-related information: their activity was sensitive to the interaction between motion strength and reward size (“Coh ×Reward”, Figure 2E). Overall, 101 out of 142 neurons showed at least one of these forms of joint modulation in at least one epoch. This fraction was significantly above chance level, even considering the multiple tests done in seven epochs (Figure 2F; Chi-squared test, p=0.0035). These neurons also showed heterogenous modulation patterns, as illustrated for the 44 neurons with joint modulation during motion viewing (Figure 2—figure supplement 2).
 
 Thus, information about both the visual motion evidence and reward expectation were represented in the caudate nucleus at both the population and single-neuron levels. The combined evidence-reward representations at the single-neuron level in some caudate neurons suggest that the caudate nucleus may contribute directly to the process of integrating both sources of information into the decision.
 
-## Caudate microstimulation evoked reward context-dependent effects on behavior
+### Caudate microstimulation evoked reward context-dependent effects on behavior
 
 We next tested if and how the caudate nucleus contributes causally to decisions that balance visual evidence and reward information. We identified caudate sites with task-modulated activity and delivered electrical microstimulation during motion viewing at these sites in randomly interleaved trials. We were particularly interested in microstimulation effects that depended on visual and reward information interactively, which would imply that the caudate nucleus contributes to the integration of those sources of information into the decision.
 
 Consistent with the heterogeneity of response properties identified above and our previous findings (Ding and Gold, 2012b), we found examples of microstimulation effects that were either independent of or dependent on reward context. Figure 3A shows an example session in which the microstimulation effects depended on visual evidence but not reward context. At this site, microstimulation induced contralateral biases (a leftward shift in the psychometric function), reduced sensitivity to the visual motion evidence (a reduction in the slope of the psychometric function), decreased mean RT for the contralateral choice, and increased mean RT for the ipsilateral choice, with similar magnitudes of changes for the two reward contexts. In contrast, Figure 3B shows an example session in which the microstimulation effects depended on both visual evidence and reward context. At this site, microstimulation induced ipsilateral choice biases, slope reduction, and decreases in RT for ipsilateral saccades. The effects were more prominent when the ipsilateral choice was paired with large reward (open circles). Thus, microstimulation changed the relationship between choice/RT and visual evidence in a reward context-dependent fashion. These changes were consistent with a perturbation of a process that incorporates both visual evidence and reward asymmetry information into the decision.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Two example sessions from monkey C showing different patterns of microstimulation effects. Black: trials without microstimulation; red: trials with microstimulation. Open circles and dashed lines: data and fits for blocks in which the ipsilateral choice was paired with large reward and the contralateral choice was paired with small reward. Filled circles and solid lines: data and fits for blocks in which the ipsilateral choice was paired with small reward and the contralateral choice was paired with large reward. Abscissa: signed coherence (positive: motion was toward the contralateral target; negative: motion was toward the ipsilateral target). Top panels: probability of making the contralateral choice. Lines are logistic fits to the choice data. Middle and bottom panels: mean reaction time (RT) for the two reward contexts. Circles and crosses represent correct and error choices, respectively. Lines: linear fits to single-trial RT data. (C, D) Summary of effects induced by microstimulation for both reward contexts (C, estim terms) and by interactions between microstimulation and reward context (D, rew × estim terms). The top rows illustrate the effects on psychometric and chronometric curves for positive values of the corresponding terms. Bottom rows show the histograms of changes in choice bias (logistic shift in %coh), perceptual sensitivity (logistic slope in 1/%coh), and intercept and slope of linear regression of RT as a function of unsigned motion coherence. Thick vertical lines indicate the median values. Green lines, Wilcoxon signed-rank test, p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Scatter plots for microstimulation-induced effects for the Ipsi-LR blocks (x-axis) and Contra-LR blocks (y-axis). A1, choice bias (logistic shift in %coh, positive: biasing toward the contralateral choice). A2: perceptual sensitivity (logistic slope in 1/%coh, positive: increasing sensitivity). A3 and A4: intercept (ms, A3) and slope (ms/|%coh|, A4) of linear fits to RT for contralateral saccades. A5 and A6: corresponding values for ipsilateral saccades. Magenta circles: sessions with significant effects for monkey C. Green circles: sessions with significant effects for monkey F. Labels (a, b) correspond to the example sessions in Figure 3A and B, respectively. Lines with triangles on the histograms: median values. Green lines, Wilcoxon signed-rank test, p<0.05. (B) Scatter plots for microstimulation-induced effects that were reward context-independent ("estim", x-axis) and -dependent ("rew × estim", y-axis). Red circles: sessions in which both “estim” and “rew × estim” measurements from the original data were outside the 95% confidence intervals of measurements from shuffled data (the designations of trials with and without microstimulation were shuffled for each session 200 times). Green circles: only one measurement was outside the confidence intervals. The values correspond to illustrations in Figure 3C and D. The histograms are the same as those in Figure 3C and D. Labels (a, b) correspond to the example sessions in Figure 3A and B, respectively. Lines with triangles on the histograms: median values. Green lines, Wilcoxon signed-rank test, p<0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The average RT was longer for Ipsi-LR and Contra-LR blocks for the two monkeys, respectively (Wilcoxon signed rank test, p=0.002 and <0.0001). Data were from trials without stimulation. Dashed line: unity slope. Each circle represents one session. (B) Results of linear regressions using the difference in average RT between reward context as the independent variable and the rew × estim effects in Figure 3D as the dependent variables. %EV: percentage of variance explained by the difference in RT. Note the low %EV values for most regressions.
 
 Across the 55 sites tested (n = 24 sessions for monkey C, 31 for monkey F), we found many sites with microstimulation effects that reflected different combinations of effects that were independent of reward context and others that showed interactive effects on visual and reward processing. To quantify these diverse microstimulation effects, we fitted logistic (Equation 2) and linear (Equation 3) functions to the choice and RT data, respectively. We parsed the microstimulation effects into two types. First, the “estim” type measured the average microstimulation effect, independent of reward context (Figure 3C). These effects tended to include positive changes in choice bias (biasing toward contralateral choices), negative changes in the slope of the psychometric function (reductions in sensitivity to the visual evidence), negative changes in the intercept of RT, and positive changes in the slope of the RT-coherence function (faster RTs that were less sensitive to motion strength). Second, the “rew × estim” type measured the extent to which the microstimulation effect differed between the two reward contexts (i.e., the interaction between reward context and microstimulation effects), which is the focus of the present study and is equivalent to measuring the microstimulation effects on the monkeys’ behavioral adjustments to the asymmetric reward contexts (Figure 3D). These effects tended to include positive values for choice bias, negative values for the slope of the psychometric function, negative values for the ipsilateral RT, and positive values for the slope of the RT-coherence function. Values for individual sessions are plotted in Figure 3—figure supplement 1B, and summary statistics are in Supplementary file 1a. The median “rew × estim”-type effects tended to have the same signs as the corresponding median “estim”-type effects (compare the vertical lines in Figure 3C and D), indicating that the microstimulation effects tended to be larger when the large reward was paired with choices contralateral to the site of microstimulation. Note that for the directional choice bias, this tendency may manifest itself as microstimulation inducing either larger contralateral biases in “Contra-LR” blocks, or larger ipsilateral bias in “Ipsi-LR” blocks (Figure 3B). These dependencies on reward context were similarly apparent when considering the two reward contexts separately (Figure 3—figure supplement 1A).
 
@@ -59,13 +83,13 @@ Overall, microstimulation induced at least one statistically reliable effect on 
 
 Because we delivered microstimulation throughout motion viewing for an RT task, the difference in average RT between reward contexts may contribute to “rew × estim”-type microstimulation effects. We found that the average RT tended to be longer for the “Ipsi-LR” and “Contra-LR” blocks for the monkeys C and F, respectively (Figure 3—figure supplement 2A). However, the difference in average RT between reward contexts alone cannot explain the “rew × estim”-type microstimulation effects. For each effect in Figure 3D, we performed a linear regression using the difference in RT as the independent variable (Figure 3—figure supplement 2B). The percentage of variance explained was lower than 30% for monkey C and lower than 10% for monkey F. Even for the case with the largest explained variance, the relationship was opposite to what would be expected, that is, sessions with larger RT differences tended to show smaller “rew × estim”-type microstimulation effects on choice bias for monkey C. Thus, the dependence of the microstimulation effects on reward context more likely reflected a causal involvement of the caudate nucleus in balancing visual evidence and reward asymmetry information.
 
-## Microstimulation caused coordinated adjustments to reward-dependent decision biases that mimicked the monkeys’ voluntary strategy
+### Microstimulation caused coordinated adjustments to reward-dependent decision biases that mimicked the monkeys’ voluntary strategy
 
 We next examined more closely how these diverse microstimulation effects on choice and RT were related to the specific strategies that the monkeys were using to balance visual evidence and reward asymmetry information. We previously showed that, on the same task without microstimulation, the monkeys’ choice and RT behaviors can be well described by a drift-diffusion model (DDM), in which noisy visual evidence is accumulated over time until reaching a pre-defined, time-varying, bound (Figure 4A; Fan et al., 2018; Ratcliff and Rouder, 1998; Zylberberg et al., 2016). Within this framework, the balance between visual evidence and reward asymmetry is captured by two reward context-dependent parameters that induce asymmetries in the drift rates and the relative bound heights for the two choices, respectively. A change in the drift rate was implemented as additional momentary evidence (me) that is added to the motion evidence at each accumulating step. A change in the relative bound heights was implemented as a shift in the starting point (z) of the DDM. A positive difference in Δdrift or Δbound between reward contexts, that is, positive Δdrift (rew) or Δbound (rew), leads to more and faster choices to the large-reward option. Either Δdrift (rew) or Δbound (rew) can have similar effects on the psychometric function but are distinguishable via different effects on the chronometric function (see Figure 3—figure supplement 1 in Fan et al., 2018). Here, we used the DDM to compare the monkeys’ voluntary decision strategies with the effects of microstimulation on those strategies.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig4-v1.jpg)
 
-**Figure 4.:** (A) Drift-diffusion model. Motion evidence (E) is modeled as samples from a Gaussian distribution (mean = signed coherence, variance = 1). The decision variable is computed as the time integral of E and compared at each time point to two (possibly time-varying) decision bounds. Crossing of either bound results in the corresponding choice. RT is modeled as the sum of the time to bound crossing and a non-decision time. Bias can be induced with offsets in evidence (me, biasing the drift rate) or relative bound heights (z, biasing bounds). (B) For the simulations in (C-F), reward context-dependent modulation of drift and bound on trials without microstimulation (i.e. Δdrift (rew) and Δbound (rew)) were negatively correlated across sessions. Each colored circle represents a session. (C and D) Microstimulation induces independent changes in baseline drift0 and bound0 values (C) or independent changes in Δdrift (rew) and Δbound (rew) (D). Note the absence of negative correlation in the rew × estim effects. (E) Microstimulation additively affected reward context-dependent adjustments in drift and bound in a coordinated manner. The dashed line represents a significant correlation. (F) Microstimulation additively and multiplicatively affected reward context-dependent adjustments in drift and bound in a coordinated manner. Note that the rew × estim effects were negatively correlated between drift and bound (dashed line). The rew × estim effects were negatively correlated with the reward effects without microstimulation in F (compare the orders of color progression to that in ), but not (BC-E). See Materials and methods for simulation parameters.
+**Figure 4.:** (A) Drift-diffusion model. Motion evidence (E) is modeled as samples from a Gaussian distribution (mean = signed coherence, variance = 1). The decision variable is computed as the time integral of E and compared at each time point to two (possibly time-varying) decision bounds. Crossing of either bound results in the corresponding choice. RT is modeled as the sum of the time to bound crossing and a non-decision time. Bias can be induced with offsets in evidence (me, biasing the drift rate) or relative bound heights (z, biasing bounds). (B) For the simulations in (C-F), reward context-dependent modulation of drift and bound on trials without microstimulation (i.e. Δdrift (rew) and Δbound (rew)) were negatively correlated across sessions. Each colored circle represents a session. (C and D) Microstimulation induces independent changes in baseline drift0 and bound0 values (C) or independent changes in Δdrift (rew) and Δbound (rew) (D). Note the absence of negative correlation in the rew × estim effects. (E) Microstimulation additively affected reward context-dependent adjustments in drift and bound in a coordinated manner. The dashed line represents a significant correlation. (F) Microstimulation additively and multiplicatively affected reward context-dependent adjustments in drift and bound in a coordinated manner. Note that the rew × estim effects were negatively correlated between drift and bound (dashed line). The rew × estim effects were negatively correlated with the reward effects without microstimulation in F (compare the orders of color progression to that in B), but not (C-E). See Materials and methods for simulation parameters.
 
 As we reported previously, the reward function (average reward rate) on our task depended on perceptual sensitivity, reward context, and the relative sizes of large and small rewards in a given session. The monkeys tended to use positive Δdrift (rew) values that changed in magnitude according to session-by-session variations in the reward function (see Figure 6 in Fan et al., 2018), implying fast adaptation within a session. In addition to these positive, but variable, Δdrift (rew) values, the monkeys tended to use negative Δbound (rew) values that also changed systematically with changes in the reward function, such that the values of Δdrift (rew) and Δbound (rew) were negatively correlated with each other across sessions (Figure 5B). These coordinated adjustments produced overall biases toward the large-reward choice consistently across sessions (see also Figure 1C). We also showed previously that this negative correlation followed the predicted relationship based on a heuristic decision strategy that used features of the session-specific reward function to achieve near-maximal, “good-enough” reward rate (Fan et al., 2018).
 
@@ -75,7 +99,43 @@ We fitted the monkeys’ single-trial data with different DDM variants (see fits
 
 We found that the microstimulation effects on Δdrift (rew) and Δbound (rew) were most consistent with the coordinated-scaling scenario in Figure 4F, based on several observations. First, DDM variants with microstimulation-induced changes in both me and z outperformed variants with no such changes in me or z (Figure 5—figure supplement 2B and C; the “NoME” and “NoZ” models provided the best fits for only three sessions), suggesting that caudate microstimulation affected both drift rates and bounds. Second, despite the variations in the microstimulation effects on me and z across sessions (Figure 5A), the combined effects produced similar changes in bias to those measured using logistic fits (Figure 5—figure supplement 3), reminiscent of our previous observation that the monkeys used both Δdrift (rew) and Δbound (rew) to produce consistent reward biases. Third, the interaction (“rew × estim”) effects on Δdrift and Δbound maintained a highly consistent relationship across sessions. As expected for a coordinated bias strategy, the monkeys’ voluntary, reward-dependent adjustments were negatively correlated on trials without microstimulation (Figure 5B). Strikingly, and consistent with only the coordinated-effects scenarios in Figure 4E and F, the interaction effects between reward and microstimulation followed almost the same negative correlation (Figure 5D, compare red dashed line and black solid lines). The same patterns were observed in both monkeys (Figure 5—figure supplement 4). Fourth, there were strong negative correlations between the reward effects on trials without microstimulation and interaction effects for both Δdrift and Δbound (Figure 5C; also compare the orders of color progressions in B and D). This result is consistent with the scenario in Figure 4F and thus suggests the presence of a multiplicative component in the microstimulation effects on coordination. Together, these results show that caudate microstimulation recapitulated the coupling between reward context-dependent adjustments to drift rates and relative bound heights that was evident in the monkeys’ voluntary adjustments.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig5-v1.jpg)
+
+**Figure 5.:** (A) Scatter plots of changes in drift and bound induced by electrical microstimulation (abscissa and top histograms) and by interactions between electrical microstimulation and reward condition (ordinate and right histograms). Solid lines in histograms: mean values across sessions, t-test, p>0.05. Labels (a, b) correspond to the example sessions in Figure 3A and B, respectively. (B) On trials without microstimulation, the differences in Δdrift and Δbound between the two reward contexts were negatively correlated. Line and shaded area: linear regression and 95% confidence interval, t-test, p<0.0001. “a” and “b” indicate the data points for the examples in Figure 3A and B. Data are color-coded by the values of Δbound (rew) no estim. (C) Scatter plots of reward effects on trials without microstimulation (abscissa) and interaction effects (ordinate) for Δdrift (left) and Δbound (right). Lines represent results of linear regression (shaded area: 95% confidence interval). (D) The interaction effects (Δdrift (rew x estim) and Δbound (rew x estim)), equivalent to the difference between “Δdrift/bound (rew) with estim” and “Δdrift/bound (rew) no estim”, were negatively correlated. Same format as B. t-test, p<0.0001. Red dashed line re-plots the linear regression results from Figure 5B, using the appropriate range of Δdrift (rew x estim) as x-values. Data are color-coded by the values of Δbound (rew) no estim. Note that the roughly reversed orders of color progressions in B and D is most consistent with simulated effects in Figure 4F.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) DDM fit for the example session in Figure 3A. Lines are DDM fits to both choice and single-trial RT data (circles, correct trials; crosses, error trials). Same format as Figure 3A. (B) Illustration of average timecourses of decision variable, using the fitted DDM parameters. Thick and thin lines represent high and low coherence levels, respectively. Same line colors and types as in A. Dotted lines indicate collapsing bounds. (C, D) DDM fit for the example session in Figure 3B. Same format as A,B.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Histogram of the difference in AIC between the full model, in which all DDM parameters were allowed to vary by reward context and microstimulation status, and a reduced model, in which all DDM parameters were allowed to vary by reward context but not microstimulation status. Negative ΔAIC implies that the full model is better. The red arrow indicates the criterion we used and corresponds to the gap in the histogram. (B) Map showing the best DDM variant (lowest AIC, black bar) for sessions with significant microstimulation effects (n = 39 sessions to the left of the red arrow in A). In the reduced models, parameters associated with collapsing bounds (β_alpha and β_d, “NoCollapse”), total bound height (a, “NoA”), drift rate scalor (k, “NoK”), bias in drift rate (me, “NoME”), relative bound height (z, “NoZ”), and non-decision times (t_contra and t_ipsi, “NoT0”) were allowed to vary based on reward context, but not microstimulation status. (C) Histograms of differences in AIC between the full model and reduced models for the 39 sessions to the left of the red arrow in A. Mean ΔAIC values were negative for reduced models (t-test, p<0.001 for all). (D) Scatter plots of changes in DDM parameters induced by electrical microstimulation in the Ipsi-LR blocks (abscissa and top histograms) or in the Contra-LR blocks (ordinate and right histograms). Solid lines in histograms: mean values across sessions. Red lines, t-test p<0.05. Labels (a, b) correspond to the example sessions in Figure 3A and B, respectively.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Scatter plots of microstimulation effects on choice bias, measured with logistic fit (abscissa) and DDM fits (ordinate). Bias values for the DDM were simulated using fitted parameters. Lines: linear regression.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A-C) Results from monkey C. Same format as Figure 5B and D. Data points were color-coded based on ∆bound (rew) no estim values. Red dashed lines replotted the linear regression in A, with x-values centered on ∆drift (rew) with estim and ∆drift (rew × estim), respectively. Solid lines, linear regressions with t-test, p<0.0001 ,=0.0058, and 0.004. respectively. (D-F) Results from monkey F. Linear regression, t-test, p<0.0001 for all.
+
 We considered four alternative explanations and found that the correlated “rew × estim” effects on drift and bound were not artifact, trivial, or a necessary consequence of reward-dependent biases. First, our methods of DDM fitting and parsing reward- and microstimulation-related effects might have introduced artificial correlations. This explanation would predict a similar correlation in the overall, reward-independent microstimulation effects on drift and bound. We did not observe such a correlation between Δdrift (estim) and Δbound (estim), despite similar magnitudes of changes to their reward-dependent counterparts (Figure 6A). To further control for this scenario, we shuffled all the fitted DDM parameters across sessions and simulated a new data set with matched trial numbers for each session (“Shuffle 1”). We fitted the full DDM to these simulated data and did not observe a negative correlation as in the original data (Figure 6B–D). Fits with the “NoCollapse” variant did not show negative correlation, either (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig6-v1.jpg)
+
+**Figure 6.:** (A) The average microstimulation effects on ∆drift and ∆bound that were independent of reward context were not correlated. Same format as Figure 5D. Linear regression, t-test, p=0.60. (B-D) The patterns of correlation in Figure 5B and D were not observed in data simulated with shuffled DDM parameters (Shuffle 1). ∆drift and ∆bound values were obtained by fitting the simulated data with the “Full” DDM model. Linear regression, t-test, p=0.78, 0.81, 0.26 for the three panels, respectively. (E) The observed relationship between Δdrift (rew × estim) and Δbound (rew × estim) was different from those observed in shuffled data. Shuffle 2 (red): shuffle ∆drift and ∆bound values for trials with and without microstimulation across sessions independently. Shuffle 3 (gray, solid): shuffle ∆drift and ∆bound values for microstimulation trials only and across sessions independently. Shuffle 4 (gray, dashed): shuffle ∆drift and ∆bound values for microstimulation trials only across sessions while maintaining the coupling between drift and bound. Histograms were obtained from 200 shuffles for each method. Vertical lines indicate the mean slope values.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Linear regression, t-test, p=0.25, 0.65, and 0.66 for the three panels, respectively.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Each data point represents one session. n = 18 and 21 for monkeys C and F, respectively. Linear regression, t-test, p<0.0001 for both monkeys. Red dashed lines re-plot the regression for “(rew) no estim” effects as in Figure 5B.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Scatter plot of the projection values for the first principal component (PC) based on eight fitted parameters (x-axis, [me or z] × [contra-LR or ipsi-LR] × [with estim or no estim]) and for the first PC based on ∆drift (rew × estim) and ∆bound (rew × estim) (y-axis). The dashed diagonal line represents unity slope. Rho and p values were obtained with Pearson correlation.
 
 Second, the coordinated effects of microstimulation on Δdrift and Δbound might have been a trivial consequence of reward-dependent biases, independent of the reward context-dependent coordination of the two quantities. This possibility is countered by three findings: 1) the presence of correlated reward-dependent adjustments alone do not necessarily produce correlated “rew × estim” effects (e.g. Figure 4C and D); 2) removing coordinated, reward-induced effects by shuffling the best-fitting values of those two parameters independently across sessions (as in Figure 4D) resulted in substantially less correlated “rew × estim” effects than in the real data (Figure 6E, “Shuffle 2” and “Shuffle 3”, red and gray solid lines, compare to the data in black). That is, even with the mean and variance values matched exactly to the experimental data, the model in Figure 4D cannot capture the correlated pattern we observed in the experimental data; and 3) partial shuffling that disrupted only possible relationships with session-specific properties (e.g. microstimulation sites or voluntary performance), by shuffling the paired Δdrift and Δbound across sessions, also significantly weakened the correlation between “rew × estim” effects (Figure 6E, “Shuffle 4”).
 
@@ -85,11 +145,19 @@ Fourth, given the inter-session variability in microstimulation effects, it is p
 
 Taken together, these results suggest that the shared correlation patterns in reward context-dependent voluntary and evoked adjustments were not trivial, but instead reflected the caudate nucleus’ causal involvements in mediating the monkeys’ specific strategy to balance visual evidence and reward asymmetry information.
 
-## Coordinated microstimulation effects depended on neural selectivity patterns and baseline adjustments
+### Coordinated microstimulation effects depended on neural selectivity patterns and baseline adjustments
 
 The microstimulation effects on Δdrift (rew) and Δbound (rew) tended to be negatively correlated with each other but also showed substantial variability across sessions (Figure 5D). We examined three potential sources of these effects: 1) the monkey’s baseline (microstimulation-independent) adjustments in Δdrift (rew) and Δbound (rew) (Figure 5B), 2) the task-related activity patterns of neurons recorded near the stimulation site, and 3) the anatomical location of the stimulation site. As detailed below, we found that microstimulation effects on Δdrift (rew) and Δbound (rew) depended systematically on both the baseline adjustments and neural selectivity at the site of microstimulation, but not the anatomical location of the site.
 
 We first performed multiple linear regressions, using the baseline adjustments and neural selectivity at the site of microstimulation as the independent variables and the microstimulation effects as the dependent variables (Equation 4). We quantified the baseline adjustments in terms of the two principal components (PCs) of the relationship between Δdrift (rew) and Δbound (rew), which to a first approximation divides the effects into the average coordinated trajectory (the projection onto PC1) and the deviation from the average trajectory (the projection onto PC2). We quantified neural selectivity during motion viewing (Epoch 5in Figure 1A, when the decisions were formed) for each site using a multiple linear regression that also allowed us to identify neurons with combined modulations by visual evidence and reward context (n = 16 sites total, 9 and 7 for monkeys C and F, respectively; Equation 1). We quantified the microstimulation effects as the projections of Δdrift (rew × estim) and Δbound (rew × estim) onto the PCs defined from the baseline adjustments, which measured the degree to which the “rew × estim” interaction effects conformed to the voluntary adjustments in response to the asymmetric reward contexts (Figure 7A and B, right panels).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig7-v1.jpg)
+
+**Figure 7.:** (A and B) Principal components (PCs) were estimated for reward context modulation of Δdrift and Δbound without microstimulation (left panels; mean subtracted) for the two monkeys separately. The values of Δdrift (rew × estim) and Δbound (rew × estim) were projected onto these two PCs (right panels). (C) Visualization of the dependence of rew × estim effects on neural selectivity and reward effects without microstimulation for sites with combined modulations by motion coherence and reward context (top) and for other sites (bottom). Proj1(2): projection onto PC1(2). Each row shows the results from one multiple linear regression, with the quantity on the ordinate as the dependent variable and the quantities on the abscissa as the independent variables. Significance was assessed with bootstrap methods using 1000 shuffles of the independent variables. The number in each box indicates the number of shuffles with the same or stronger effect as the experimental data (e.g., six means an estimated p value of 0.006 and 0 means an estimated p value of < 0.001). Colors indicate the signs of regression coefficients (significance criterion: p<0.0125 = 0.05/4-regressions). (D) Percent explained variance for the regressions in (C), respectively. A black bar indicates that the experimental value is outside the 95 percentile of the bootstrapped distribution.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56694/elife-56694-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Recording and microstimulation sites projected on coronal slices. AC: anterior commissure. Positive numbers: anterior to AC. Negative numbers: posterior to AC. Scale bars: 5 mm. (B) Summary of microstimulation sites, flattened along the Anterior-Posterior axis. Red: sites with significant rew × estim effects on choice, based on logistic fits. Same sites as colored dots with significant y-axis values in Figure 3—figure supplement 1, B1 and B2. (C) Same format as B. Red: sites with significant rew × estim effects on RT, based on linear fits. Same sites as colored dots with significant y-axis values in Figure 3—figure supplement 1, B3-B6. (D) microstimulation sites color-coded by the ranks of ∆drift (rew x estim) (top) and ∆bound (rew x estim) (bottom). Small vertical lines in the color bars indicate zero crossing.
 
 We found that the microstimulation effects along the average coordinated trajectory (i.e. the PC1 projection of rew × estim effects) depended: 1) negatively on the baseline effects along that trajectory (i.e., the PC1 projection of baseline Δdrift (rew) and Δbound (rew)), 2) negatively on neural selectivity for choice at the site of microstimulation, 3) positively on neural selectivity for reward context at the site of microstimulation, and 4) positively on neural selectivity for motion coherence for trials with contralateral choices at the site of microstimulation (Figure 7C, colored boxes). The explained variance of this regression was 89% and significantly higher than that of shuffled data (Figure 7D, top panel). The microstimulation effects perpendicular to the average coordinated trajectory also depended positively on neural selectivity for motion coherence for trials with contralateral choices, but the explained variance was not significantly different from that of shuffled data. In contrast, for other sites without combined modulations by motion coherence and reward context (n = 23 sites total, 9 and 14 for monkeys C and F, respectively), the microstimulation effects along the average coordinated trajectory also depended negatively on the baseline adjustments along that trajectory, but the microstimulation effects did not otherwise depend on the baseline adjustments or neural tuning from that session (Figure 7C, bottom panel). For these sites, the explained variance was substantially lower than for the sites with combined modulations and did not differ from the shuffled data (Figure 7D, bottom panel). These results imply that the microstimulation effects on the monkeys’ reward bias strategy reflected both their baseline reward-driven biases and specific contributions of caudate neurons at the site of microstimulation, particularly those encoding both reward context and motion coherence, instead of non-specific microstimulation effects from altering overall caudate activity.
 
@@ -121,76 +189,293 @@ Collectively, our results suggest that caudate neurons contribute causally to de
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Python 3.5</td>
+      <td>Python Software Foundation</td>
+      <td>https://www.python.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>https://www.mathworks.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Psychophysics Toolbox</td>
+      <td>Kleiner et al., 2007</td>
+      <td>http://psychtoolbox.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Pandas v0.19.2</td>
+      <td>Python Data Analysis Library</td>
+      <td>https://pandas.pydata.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Scikit-learn v0.18.1</td>
+      <td>Pedregosa et al., 2011</td>
+      <td>https://scikit-learn.org/stable/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Scipy v0.18.1</td>
+      <td>SciPy.org</td>
+      <td>https://docs.scipy.org/doc/scipy/reference/stats.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 We used two adult male rhesus macaques (Macaca mulatta) for this study. They were first trained extensively on an equal-reward reaction-time random-dot motion discrimination task (Ding and Gold, 2010; Ding and Gold, 2012a; Ding and Gold, 2012b) and then trained with the asymmetric-reward contexts (Fan et al., 2018). All training and experimental procedures were in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the University of Pennsylvania Institutional Animal Care and Use Committee (protocol #804726).
 
-## Method details
+### Method details
 
-## Behavioral task
+#### Behavioral task
 
 Task details are reported elsewhere (Fan et al., 2018). Briefly, a trial began with a central fixation point presentation (Figure 1A). Upon acquiring and maintaining fixation, two choice targets were presented to inform the monkeys the two possible motion directions. After a random delay picked from a truncated exponential distribution (mean = 0.7 s, range: 0.4–2.5 s), the fixation point was dimmed and a random-dot kinematogram was shown at the center of the screen (“motion onset”). For each trial, the kinematogram had a constant speed of 6°/s, aperture size of 5°, and randomly interleaved motion direction and strength (five levels of coherence: 3.2, 6.4, 12.8, 25.6, 51.2%). The monkey reported the perceived motion direction by making a self-timed saccade to the corresponding choice target. A minimum 50 ms latency was imposed, although the monkeys rarely made fast-guess responses during this study. Once the monkey’s gaze exited the fixation window (4° square window), the kinematogram was extinguished. Once the monkey’s gaze reached the choice target window (4° square window), a 400 ms minimum fixation time was imposed to register the monkey’s choice. Correct choices were rewarded with juice. Error choices were not rewarded and penalized with a timeout before the next trial (3 s for monkey F, 0.5–2 s for monkey C).
 
 Two asymmetric reward contexts were alternated in a block design. In Contra-LR blocks, the choice contralateral to the recording/stimulation site was paired with large reward (LR). In Ipsi-LR blocks, the choice ipsilateral to the recording/stimulation site was paired with large reward. The other choice was paired with small reward. At the start of each block, the choice targets were presented with different colors to signal the current reward context to the monkeys, followed by two additional high-coherence trials to allow the monkeys to experience the current reward context. These trials were excluded from analysis. For recording sessions, each block consisted of ~49 trials for monkey C (IQR: 43–55) and 40 trials for monkey F (IQR: 36–55). For microstimulation sessions, each block consisted of ~100 trials (IQR: 98–118) for monkey C and ~61 trials (IQR: 60–61) for monkey F. The large:small reward ratio was ~2:1 (2.02 ± 0.19) for monkey C for both recording and microstimulation sessions. For monkey F, the large:small reward ratio was 3:2 (1.48 ± 0.13) for recording sessions and 5:3 (1.65 ± 0.03) for microstimulation sessions. For monkey C, the average small reward was 0.1 and 0.07 mL and the average large reward was 0.2 and 0.12 mL during recording and microstimulation sessions, respectively. For monkey F, the average small reward was 0.2 and 0.12 mL and the average large reward was 0.29 and 0.25 mL during recording and microstimulation sessions, respectively.
 
-## Data acquisition
+#### Data acquisition
 
 Eye position was monitored using a video-based system (ASL) sampled at 240 Hz. Single-unit recordings focused on putative projection neurons (Ding and Gold, 2010). We searched for task-relevant neurons while the monkeys performed the equal-reward motion discrimination task with horizontal dots motions and determined the presence of task-related modulation of neural activity by visual and audio inspection of ~10–20 trials. For analyses of neural response properties in recording sessions, only well-isolated single units were included. For analyses of microstimulation effects, sites with either single- or multi-unit task-related modulations were used. Neural signals were amplified, filtered and stored using a MAP acquisition system (Plexon, Inc), along with time-stamped event codes, analog eye position signals and trial parameter values. Single-unit activity was identified by offline spike sorting (Offline Sorter, Plexon, Inc). Multi-unit activity was measured using waveforms that passed an offline amplitude threshold. For the microstimulation experiments, we first identified a caudate site with task-related activity and then interleaved trials with and without microstimulation pseudo-randomly at a 1:1 ratio. Electrical microstimulation was delivered during motion stimulus presentation (negative-leading bipolar current pulses, 300 Hz, 50 µA, 250 µs pulse duration; from motion onset until a saccade was detected). Caudate microstimulation with these parameters did not evoke saccades (Ding and Gold, 2012b; Nakamura and Hikosaka, 2006a; Watanabe and Munoz, 2010).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Neural data analysis
+#### Neural data analysis
 
-For each single/multi-unit dataset, we computed the average firing rates in seven task epochs (Figure 1A): three epochs before motion stimulus onset (Epoch 1: 400 ms window beginning at target onset, Epoch 2: a variable window from target onset to motion onset, and Epoch 3: a 400 ms window ending at motion onset), two epochs during motion viewing (Epoch 4: a fixed window from 100 ms after motion onset to 100 ms before median RT, and Epoch 5: a variable window from 100 ms after motion onset to 100 ms before saccade onset), a peri-saccade 300 ms window beginning at 100 ms before saccade onset (Epoch 6), and a post-saccade 400 ms window beginning at saccade onset (Epoch 7; before feedback and reward delivery). For each unit, a multiple linear regression was performed on the firing rates in correct trials, for each task epoch separately.(1)FR=β0+βChoice×IChoice+βRewCont×IRewCont+βRewSize×IRewSize   + βCoh−Contra×ICoh−Contra+ βCoh−Ipsi×ICoh−Ipsi  + βRewCoh−Contra×ICoh−Contra×IRewSize + βRewCoh−Ipsi×ICoh−Ipsi×IRewSize,whereIChoice={1 for contralateral choice−1 for ipsilateral choice,IRewCont={1 for contralateral−large reward blocks−1 for ipsilateral−large reward blocks,IRewSize={1 if a large reward is expected for the choice−1 if a small reward is expected for the choice,ICoh−Contra={absolute coherence for contralateral choice (centered at mean value)0 for ipsilateral choice,andICoh−Ipsi={0 for contralateral choiceabsolute coherence for ipsilateral choice (centered at mean value).
+For each single/multi-unit dataset, we computed the average firing rates in seven task epochs (Figure 1A): three epochs before motion stimulus onset (Epoch 1: 400 ms window beginning at target onset, Epoch 2: a variable window from target onset to motion onset, and Epoch 3: a 400 ms window ending at motion onset), two epochs during motion viewing (Epoch 4: a fixed window from 100 ms after motion onset to 100 ms before median RT, and Epoch 5: a variable window from 100 ms after motion onset to 100 ms before saccade onset), a peri-saccade 300 ms window beginning at 100 ms before saccade onset (Epoch 6), and a post-saccade 400 ms window beginning at saccade onset (Epoch 7; before feedback and reward delivery). For each unit, a multiple linear regression was performed on the firing rates in correct trials, for each task epoch separately.
+
+$$
+FR=\beta_{0}+\beta_{Choice}\timesI_{Choice}+\beta_{RewCont}\timesI_{RewCont}+\beta_{RewSize}\timesI_{RewSize}   + \beta_{Coh−Contra}\timesI_{Coh−Contra}+ \beta_{Coh−Ipsi}\timesI_{Coh−Ipsi}  + \beta_{RewCoh−Contra}\timesI_{Coh−Contra}\timesI_{RewSize} + \beta_{RewCoh−Ipsi}\timesI_{Coh−Ipsi}\timesI_{RewSize},
+$$
+
+where
+
+$$
+I_{Choice}={1 for contralateral choice−1 for ipsilateral choice,
+$$
+
+
+
+$$
+I_{RewCont}={1 for contralateral−large reward blocks−1 for ipsilateral−large reward blocks,
+$$
+
+
+
+$$
+I_{RewSize}={1 if a large reward is expected for the choice−1 if a small reward is expected for the choice,
+$$
+
+
+
+$$
+I_{Coh−Contra}={absolute coherence for contralateral choice (centered at mean value)0 for ipsilateral choice,
+$$
+
+and
+
+$$
+I_{Coh−Ipsi}={0 for contralateral choiceabsolute coherence for ipsilateral choice (centered at mean value).
+$$
 
 Significance of non-zero coefficients was assessed using t-test (criterion: p=0.05).
 
-## Behavioral analysis
+### Behavioral analysis
 
-## Measuring microstimulation effects on choice using a logistic function
+#### Measuring microstimulation effects on choice using a logistic function
 
-For each microstimulation session, a logistic function was fitted to the choice data for all trials:(2)Pcontra choice= 11+ e−Slope×(Coh+Bias),where Coh is the signed motion coherence,Slope = slope0 + sloperew×RewCont+slopeestim×Estim +sloperew×estim×RewCont×Estim,Bias = bias0 + biasrew×RewCont+biasestim×Estim +biasrew×estim×RewCont×Estim ,RewCont={1 for contralateral−large reward blocks−1 for ipsilateral−large reward blocks,andEstim={1 for microstimulation trials0 for control trials.
+For each microstimulation session, a logistic function was fitted to the choice data for all trials:
 
-Significance of non-zero coefficients was tested using bootstrap methods by shuffling Estim values across trials for each session 200 times (criterion: the experimental value is outside the 95% confidence intervals for shuffled data).
+$$
+P_{contra choice}= \frac{1}{1+ e^{−Slope\times(Coh+Bias)}},
+$$
 
-## Measuring microstimulation effects on RT using a linear function
+where $Coh$ is the signed motion coherence,
 
-RT was measured as the time from motion onset to saccade onset, the latter identified offline with respect to velocity (>40°/s) and acceleration (>8000°/s2). A linear function was fitted to RT data for correct trials:(3)RT = rt0 + Interceptrew×RewCont+Sloperew×RewCont×Cohabs+Interceptestim×Estim+Slopeestim×Estim×Cohabs+Interceptrew×estim×RewCont×Estim +Sloperew×estim×RewCont×Estim×Cohabs,where Cohabs is the absolute value of motion coherence. Significance of non-zero coefficients was tested using t-test (criterion: p = 0.05).
+$$
+Slope = slope0 + slope_{rew}\timesRewCont+slope_{estim}\timesEstim +slope_{rew\timesestim}\timesRewCont\timesEstim,
+$$
 
-## Measuring microstimulation effects on both choice and RT using the drift-diffusion model (DDM)
 
-We also fitted the choice and RT data for all trials simultaneously to different variants of the drift-diffusion model (DDM; Figure 4A). The basic DDM assumed that the decision variable (DV) is the time integral of evidence (E), which was modeled as a Gaussian distributed random variable,E∼N(k∗coherence, 1)andDV= ∫E dt
 
-The scale parameter k controlled the drift rate. At each time point, the DV was compared with two collapsing choice bounds (Zylberberg et al., 2016). The time course of the choice bounds was specified as a/(1+eβ_alpha(t−β_d)), where β_alpha and β_d controlled the rate and onset of decay, respectively. Note that the effects of collapsing bounds can be equivalently implemented by adding a choice-independent urgency signal (Drugowitsch et al., 2012; Churchland et al., 2008). If DV crossed the upper bound first, a contralateral choice was made; if DV crossed the lower bound first, an ipsilateral choice was made. RT was modeled as the sum of the time till first bound crossing and saccade-specific non-decision times that accounted for evidence-independent sensory/motor delays (t_contra and t_ipsi). Two types of biases were used to account for reward asymmetry-induced biases, a bias in drift rate (me) and a bias in the relative bound heights (z) (Fan et al., 2018).
+$$
+Bias = bias0 + bias_{rew}\timesRewCont+bias_{estim}\timesEstim +bias_{rew\timesestim}\timesRewCont\timesEstim ,
+$$
+
+
+
+$$
+RewCont={1 for contralateral−large reward blocks−1 for ipsilateral−large reward blocks,
+$$
+
+and
+
+$$
+Estim={1 for microstimulation trials0 for control trials.
+$$
+
+Significance of non-zero coefficients was tested using bootstrap methods by shuffling $Estim$ values across trials for each session 200 times (criterion: the experimental value is outside the 95% confidence intervals for shuffled data).
+
+#### Measuring microstimulation effects on RT using a linear function
+
+RT was measured as the time from motion onset to saccade onset, the latter identified offline with respect to velocity (>40°/s) and acceleration (>8000°/s2). A linear function was fitted to RT data for correct trials:
+
+$$
+RT = rt0 + Intercept_{rew}\timesRewCont+Slope_{rew}\timesRewCont\timesCoh_{abs}+Intercept_{estim}\timesEstim+Slope_{estim}\timesEstim\timesCoh_{abs}+Intercept_{rew\timesestim}\timesRewCont\timesEstim +Slope_{rew\timesestim}\timesRewCont\timesEstim\timesCoh_{abs},
+$$
+
+where $Coh_{abs}$ is the absolute value of motion coherence. Significance of non-zero coefficients was tested using t-test (criterion: p = 0.05).
+
+#### Measuring microstimulation effects on both choice and RT using the drift-diffusion model (DDM)
+
+We also fitted the choice and RT data for all trials simultaneously to different variants of the drift-diffusion model (DDM; Figure 4A). The basic DDM assumed that the decision variable (DV) is the time integral of evidence ($E$), which was modeled as a Gaussian distributed random variable,
+
+$$
+E∼N(k∗coherence, 1)andDV= \intE dt
+$$
+
+The scale parameter k controlled the drift rate. At each time point, the DV was compared with two collapsing choice bounds (Zylberberg et al., 2016). The time course of the choice bounds was specified as $a/(1+e^{\beta_alpha(t−\beta_d)})$, where $\beta_alpha$ and $\beta_d$ controlled the rate and onset of decay, respectively. Note that the effects of collapsing bounds can be equivalently implemented by adding a choice-independent urgency signal (Drugowitsch et al., 2012; Churchland et al., 2008). If DV crossed the upper bound first, a contralateral choice was made; if DV crossed the lower bound first, an ipsilateral choice was made. RT was modeled as the sum of the time till first bound crossing and saccade-specific non-decision times that accounted for evidence-independent sensory/motor delays (t_contra and t_ipsi). Two types of biases were used to account for reward asymmetry-induced biases, a bias in drift rate (me) and a bias in the relative bound heights (z) (Fan et al., 2018).
 
 DDM model fitting was performed, separately for each session, using the maximum a posteriori estimate method (python v3.5.1, pymc 2.3.6) and prior distributions suitable for human and monkey subjects (Wiecki et al., 2013). We performed at least five runs for each variant and used the run with the highest likelihood for further analyses.
 
-We used eight variants of the DDM model: in the “Full” model, all parameters were allowed to vary by reward context and microstimulation status; in the “NoEstim” model, all parameters were allowed to vary by reward context, but not microstimulation status (Figure 5—figure supplement 2A); in the “NoCollapse” model, β_alpha and β_d were fixed across microstimulation status; in the “NoA”, “NoK”, “NoME”, and “NoZ” models, a, k, me, and z were fixed across microstimulation status, respectively; and in the “NoT0” model, saccade-specific non-decision times (t_contra and t_ipsi) were fixed across microstimulation status (Figure 5—figure supplement 2B and C). We used the Akaike information criterion (AIC) for model comparisons, with lower values indicating more parsimonious model variants.
+We used eight variants of the DDM model: in the “Full” model, all parameters were allowed to vary by reward context and microstimulation status; in the “NoEstim” model, all parameters were allowed to vary by reward context, but not microstimulation status (Figure 5—figure supplement 2A); in the “NoCollapse” model, $\beta_alpha$ and $\beta_d$ were fixed across microstimulation status; in the “NoA”, “NoK”, “NoME”, and “NoZ” models, a, k, me, and z were fixed across microstimulation status, respectively; and in the “NoT0” model, saccade-specific non-decision times (t_contra and t_ipsi) were fixed across microstimulation status (Figure 5—figure supplement 2B and C). We used the Akaike information criterion (AIC) for model comparisons, with lower values indicating more parsimonious model variants.
 
-For a given DDM parameter (Para), we parsed the different effects as follows (LR: large reward):ΔPara(base)=(Paracontra−LR, no estim+Paraipsi−LR, no estim)/2ΔPara(rew)=(Paracontra−LR, no estim − Paraipsi−LR, no estim)/2ΔPara(estim)=(Paracontra−LR,estim+Paraipsi−LR,estim−Paracontra−LR,no estim−Paraipsi−LR, no estim)/2ΔPara(rew×estim)=(Paracontra−LR,estim−Paraipsi−LR,estim−Paracontra−LR,no estim+Paraipsi−LR,no estim)/2
+For a given DDM parameter ($Para$), we parsed the different effects as follows (LR: large reward):
 
-## Generating predictions for hypothesized reward context-microstimulation interaction effects on drift rate and bound height
+$$
+ΔPara(base)=(Para_{contra−LR, no estim}+Para_{ipsi−LR, no estim})/2
+$$
 
-We simulated four types of microstimulation effects (Figure 4). For all simulations, we assumed that,Δbound(rew) = γ×Δdrift(rew) + δ,μdrift =mean( Δdrift(rew×estim) ),σdrift =std( Δdrift(rew×estim) ),μbound =mean( Δbound(rew×estim) ),σbound =std( Δbound(rew×estim) ),where γ  and δ are the slope and intercept measured from linear regression of Δdrift (rew) and Δbound (rew) in the experimental data (Figure 5B). Δbound (rew) for different sessions (colors in Figure 4B) were set as equally spaced values within the range for the experimental data.
 
-For the simulations in Figure 4C,Δdrift(rew×estim) ∼Normal(0, σdrift),Δbound(rew×estim) ∼Normal(0, σbound),
 
-For the simulation in Figure 4D,Δdrift(rew×estim) ∼Normal(μdrift, σdrift),Δbound(rew×estim) ∼Normal(μbound, σbound),
+$$
+ΔPara(rew)=(Para_{contra−LR, no estim} − Para_{ipsi−LR, no estim})/2
+$$
 
-For the simulation in Figure 4E,Δdrift(rew×estim) ∼Normal(μdrift, σdrift),Δbound(rew×estim) ∼γ×Δdrift(rew×estim)+Normal(0, σbound−γ× σdrift),
 
-For the simulation in Figure 4F,Δdrift(rew×estim) ∼k×Δdrift(rew) + m +Normal(0, σdrift/2),Δbound(rew×estim) ∼γ×Δdrift(rew×estim)+Normal(0, σbound/2),where k and m are slope and intercept, respectively, measured from linear regression of Δ∆drift(rew×estim)  and Δ∆drift(rew) in the experimental data. The noise terms are reduced to account for variations in Δ∆drift(rew).
 
-## Δdrift (rew × estim) and Δbound (rew × estim)
+$$
+ΔPara(estim)=(Para_{contra−LR,estim}+Para_{ipsi−LR,estim}−Para_{contra−LR,no estim}−Para_{ipsi−LR, no estim})/2
+$$
+
+
+
+$$
+ΔPara(rew\timesestim)=(Para_{contra−LR,estim}−Para_{ipsi−LR,estim}−Para_{contra−LR,no estim}+Para_{ipsi−LR,no estim})/2
+$$
+
+#### Generating predictions for hypothesized reward context-microstimulation interaction effects on drift rate and bound height
+
+We simulated four types of microstimulation effects (Figure 4). For all simulations, we assumed that,
+
+$$
+Δbound(rew) = \gamma\timesΔdrift(rew) + \delta,
+$$
+
+
+
+$$
+\mu_{drift} =mean( Δdrift(rew\timesestim) ),\sigma_{drift} =std( Δdrift(rew\timesestim) ),
+$$
+
+
+
+$$
+\mu_{bound} =mean( Δbound(rew\timesestim) ),\sigma_{bound} =std( Δbound(rew\timesestim) ),
+$$
+
+where $\gamma$ and $\delta$ are the slope and intercept measured from linear regression of Δdrift (rew) and Δbound (rew) in the experimental data (Figure 5B). Δbound (rew) for different sessions (colors in Figure 4B) were set as equally spaced values within the range for the experimental data.
+
+For the simulations in Figure 4C,
+
+$$
+Δdrift(rew\timesestim) ∼Normal(0, \sigma_{drift}),
+$$
+
+
+
+$$
+Δbound(rew\timesestim) ∼Normal(0, \sigma_{bound}),
+$$
+
+For the simulation in Figure 4D,
+
+$$
+Δdrift(rew\timesestim) ∼Normal(\mu_{drift}, \sigma_{drift}),
+$$
+
+
+
+$$
+Δbound(rew\timesestim) ∼Normal(\mu_{bound}, \sigma_{bound}),
+$$
+
+For the simulation in Figure 4E,
+
+$$
+Δdrift(rew\timesestim) ∼Normal(\mu_{drift}, \sigma_{drift}),
+$$
+
+
+
+$$
+Δbound(rew\timesestim) ∼\gamma\timesΔdrift(rew\timesestim)+Normal(0, \sigma_{bound}−\gamma\times \sigma_{drift}),
+$$
+
+For the simulation in Figure 4F,
+
+$$
+Δdrift(rew\timesestim) ∼k\timesΔdrift(rew) + m +Normal(0, \sigma_{drift}/2),
+$$
+
+
+
+$$
+Δbound(rew\timesestim) ∼\gamma\timesΔdrift(rew\timesestim)+Normal(0, \sigma_{bound}/2),
+$$
+
+where $k$ and $m$ are slope and intercept, respectively, measured from linear regression of Δ$\Deltadrift(rew\timesestim)$ and Δ$\Deltadrift(rew)$ in the experimental data. The noise terms are reduced to account for variations in Δ$\Deltadrift(rew)$.
+
+#### Δdrift (rew × estim) and Δbound (rew × estim)
 
 We performed three shuffling-based control analyses (Figure 6). For data shown in Figure 6B–D, we pooled the fitted DDM values across reward-microstimulation conditions and sessions for each parameter, resampled from these values with replacement for each session and reward-microstimulation condition, simulated sessions with matched numbers of trials for each condition using the resampled parameter values, and re-fitted these simulated data with the Full and NoCollapse DDM models (“Shuffle 1”). For data shown in Figure 6E, we performed 200 iterations of shuffling for three types of schemes. For “Shuffle 2”, we shuffled the fitted me and z values for trials with and without microstimulation across sessions. For “Shuffle 3”, we kept the me and z values for trials without microstimulation and shuffled me and z values independently for trials with microstimulation. For “Shuffle 4”, we kept the me and z values for trials without microstimulation and shuffled the session identity for paired me and z values for trials with microstimulation. The fitted values from the simulated/shuffled data were parsed in the same way as those from the experimental data. We considered the experimental result to be significantly different from shuffled results if the former was outside the 95% confidence intervals of the latter.
 
-## Relating microstimulation effects to neural selectivity and the monkeys’ voluntary strategy
+#### Relating microstimulation effects to neural selectivity and the monkeys’ voluntary strategy
 
-For the microstimulation experiments, we recorded single- or multi-unit activity before microstimulation and performed the multiple linear regression in Equation 1 for each unit separately. The regression coefficients were normalized by β0 in the regression, which measured the average firing rates. These β values indexed the neural selectivity for different task-related regressors. If more than one unit was recorded at a site, for each regressor, we used the β value associated with the lowest p value (i.e. most reliable modulation).
+For the microstimulation experiments, we recorded single- or multi-unit activity before microstimulation and performed the multiple linear regression in Equation 1 for each unit separately. The regression coefficients were normalized by $\beta_{0}$ in the regression, which measured the average firing rates. These $\beta$ values indexed the neural selectivity for different task-related regressors. If more than one unit was recorded at a site, for each regressor, we used the $\beta$ value associated with the lowest p value (i.e. most reliable modulation).
 
 We derived two principal components (PCs) from Δdrift (rew, no estim) and Δbound (rew, no estim) values (Figure 7A and B, left). The projections of Δdrift (rew, no estim) and Δbound (rew, no estim) values onto the two PCs indexed the effects of reward context on the monkeys’ voluntary strategy in each session, relative to their average tendencies across sessions.
 
-We projected Δdrift (rew × estim) and Δbound (rew × estim) values onto the same two PCs (Figure 7A and B, right). These projections indexed the microstimulation effects in each session, relative to the monkeys’ average tendencies in their reward context-dependent voluntary strategy across sessions. We then performed the following multiple linear regression:(4)Projection of (rew × estim) values=α0+βChoice×αChoice+βRewCont×αRewCont+βRewSize×αRewSize+ βCoh−Contra×αCoh−Contra+ βCoh−Ipsi×αCoh−Ipsi+ βCohRew−Contra×αCohRew−Contra+ βCohRew−Ipsi×αCohRew−Ipsi+Projection of (rew, no estim) values ×αprojection
+We projected Δdrift (rew × estim) and Δbound (rew × estim) values onto the same two PCs (Figure 7A and B, right). These projections indexed the microstimulation effects in each session, relative to the monkeys’ average tendencies in their reward context-dependent voluntary strategy across sessions. We then performed the following multiple linear regression:
 
-The α values (except for α0) measured the dependence of microstimulation effects on neural selectivity and the monkeys’ daily variations in their voluntary strategy. Significance of α values was assessed by comparing the experimental value with their corresponding null distributions. The null distributions were estimated using 1000 iterations of regression based on shuffled independent variables. The number of iterations with values exceeding the experimental values was used to estimate p values for regression coefficients (Figure 7C) and explained variance (Figure 7D). A criterion of p<0.0125 was used to correct for multiple regressions (0.05/4 regressions).
+$$
+Projection of (rew \times estim) values=\alpha_{0}+\beta_{Choice}\times\alpha_{Choice}+\beta_{RewCont}\times\alpha_{RewCont}+\beta_{RewSize}\times\alpha_{RewSize}+ \beta_{Coh−Contra}\times\alpha_{Coh−Contra}+ \beta_{Coh−Ipsi}\times\alpha_{Coh−Ipsi}+ \beta_{CohRew−Contra}\times\alpha_{CohRew−Contra}+ \beta_{CohRew−Ipsi}\times\alpha_{CohRew−Ipsi}+Projection of (rew, no estim) values \times\alpha_{projection}
+$$
+
+The $\alpha$ values (except for $\alpha_{0}$) measured the dependence of microstimulation effects on neural selectivity and the monkeys’ daily variations in their voluntary strategy. Significance of $\alpha$ values was assessed by comparing the experimental value with their corresponding null distributions. The null distributions were estimated using 1000 iterations of regression based on shuffled independent variables. The number of iterations with values exceeding the experimental values was used to estimate p values for regression coefficients (Figure 7C) and explained variance (Figure 7D). A criterion of p<0.0125 was used to correct for multiple regressions (0.05/4 regressions).

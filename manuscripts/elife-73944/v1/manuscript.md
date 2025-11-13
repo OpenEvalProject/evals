@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01s5axj25 Lunenfeld-Tanenbaum Research Institute, Sinai Health System Toronto Canada
-2. https://ror.org/03dbr7087 Department of Molecular Genetics, University of Toronto Toronto Canada
+1. Lunenfeld-Tanenbaum Research Institute, Sinai Health System Toronto Canada ([ROR:01s5axj25](https://ror.org/01s5axj25))
+2. Department of Molecular Genetics, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
@@ -32,13 +32,33 @@ Here, we sought to determine how growth arrest is initiated in response to alter
 
 ## Results
 
-## Centrinone B induces concentration-dependent changes in centrosome number
+### Centrinone B induces concentration-dependent changes in centrosome number
 
 Centrinone is a PLK4-specific inhibitor that is often used to study the cellular response to centrosome loss (Wong et al., 2015). Another PLK4 inhibitor, CFI-400945, induces both centrosome amplification, or loss, in a concentration-dependent manner (Mason et al., 2014). Since CFI-400945 also inhibits other mitotic kinases such as AURKB (Suri et al., 2019) it is unclear if its reported phenotypes are due to effects on PLK4, mitosis, or both. Centrinone and centrinone B are both potent inhibitors of PLK4 that show selectivity over the Aurora-family kinases (Wong et al., 2015). We used centrinone B for our experiments since it shows an even greater selectivity over the Aurora kinases compared to centrinone (Wong et al., 2015; Suri et al., 2019). We treated RPE-1 cells with 200 and 500 nM centrinone B and found that cell growth was greatly inhibited at both centrinone B concentrations (Figure 1A). As expected, cell growth arrest was correlated with induction of p53 and p21 (Figure 1B, C, Figure 1—figure supplement 1A, B), resulting in the accumulation of cells with 1 N DNA content (Figure 1—figure supplement 1C). We next imaged cells treated with centrinone B for 3 days to determine how centrosome number was affected as a function of centrinone B concentration. As expected, 500 nM centrinone B resulted in cells containing either a single or no centrosome, but cells treated with 200 nM failed to lose centrosomes and instead accumulated supernumerary centrosomes in approximately 50% of cells (Figure 1C and D, Figure 1—figure supplement 1B, D). Staining for a panel of centriole and centrosome markers revealed that these extra structures contained CEP135, CEP120, CETN2, glutamylated tubulin, and could accumulate PCNT and CEP192 indicating that treatment with 200 nM centrinone B can induce amplification of bona fide centrosomes (Figure 1—figure supplement 1E). Together, these data indicate that centrosomes can be amplified or lost using 200 or 500 nM centrinone B, respectively, and that both phenotypes result in p53-dependent G1 arrest.
 
-## Global cellular responses to abnormal centrosome number
+![Figure 1.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig1-v1.jpg)
+
+**Figure 1.:** (A) RPE-1 cells were serially grown for 12 days and treated with DMSO or the indicated concentration of centrinone B. Relative cell number compared to a DMSO-treated control was determined and plotted. Three independent replicates plotted with mean with standard deviation shown. Significant p-values (<0.05) from Dunnett post hoc test using ‘DMSO’ as control after one-way ANOVA shown. (B) RPE-1 cells were treated with DMSO or 200 or 500 nM centrinone B for 4 days and prepared for Western blot probing for the indicated proteins. Ponc.S indicates total protein. (C) RPE-1 cells were treated as in (B), fixed for immunofluorescence and stained for p53. (D) RPE-1 cells were treated as in (B), fixed for immunofluorescence and stained for CEP135. Examples of cells with no centrosomes or one centrosome are shown. Inset magnified 3×. See Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) RPE-1 cells were treated with DMSO, or 200 or 500 nM centrinone B for 4 days. Fixed cells were immunostained for p21 and the percent p21-positive cells was quantified. Mean and standard deviation shown (n=2, N≥100). Significant p-values (<0.05) from Dunnett post hoc test using 'DMSO' as control after a one-way ANOVA are shown. (B) Cells prepared as in Figure 1C were automatically analyzed for nuclear p53 or manually scored for the presence or absence of CEP135 foci. Mean and standard deviation shown (n=3, N≥100). (C) RPE-1 cells treated as in (A) were fixed, stained with propidium iodide, and subjected to flow cytometry to analyze DNA content. The results from a representative experiment are shown. (D) Cells prepared as in Figure 1D were manually scored for CEP135 foci. Means and standard deviation shown (n=3, N≥100). (E) RPE-1 cells treated with DMSO or 200 nM centrinone B for 4 days were fixed and stained for the indicated proteins. Two representative images per condition are shown. See Figure 1—figure supplement 1—source data 1.
+
+### Global cellular responses to abnormal centrosome number
 
 To understand the mechanisms of centrinone-induced cell cycle arrest, we performed genome-wide CRISPR screens in the presence of 200 and 500 nM centrinone B (Figure 2A; Hart et al., 2015). We reasoned that cell fitness at each centrinone B condition would require distinct sets of genes. Since loss of components in the p53 pathway itself would also increase fitness, we performed a parallel screen in the presence of Nutlin-3a, a small molecule that prevents the MDM2-mediated inactivation of p53 (Vassilev et al., 2004), allowing us to filter out core p53 pathway components. RPE-1 or A375 cells stably expressing Cas9 were infected with the TKOv1 lentiviral sgRNA library (Hart et al., 2015), selected, and subsequently treated with the indicated drug concentrations (Figure 2A). After growth for 21 days, cells were harvested and subjected to next-generation sequencing (NGS) and model-based analysis of genome-wide CRISPR-Cas9 knockout (MAGeCK) analysis (Li et al., 2014). Genes with a false discovery rate (FDR) of <0.05 were considered hits for subsequent analyses. The combined screens to identify regulators of growth arrest using Nutlin-3a, 200 and 500 nM centrinone B yielded 91, 136, and 56 high-confidence hits that positively or negatively affected cell growth, respectively (Supplementary file 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic outlining our screening procedures. Cells expressing Cas9 were infected with the TKOv1 genome-wide CRISPR sgRNA library and subsequently grown for 21 days in the presence of DMSO, 200 nM centrinone B, 500 nM centrinone B, or 600 nM Nutlin-3a. Genomic DNA was prepared and sgRNA counts in each pool of cells were determined using next-generation sequencing (NGS) and analyzed using model-based analysis of genome-wide CRISPR-Cas9 knockout (MAGeCK). Screens were performed in technical triplicate. (B) The significant hits (p<0.05) from all screens were combined to form a network. Each unique cell and drug combination used for screening were set as hubs (i.e., RPE-1 200 nM centrinone B). All other nodes represent genes identified. Edges connect identified genes with a screening condition with edge weight inversely proportional to false discovery rate (FDR). The general layout using the automated yFiles organic method from Cytoscape was preserved while individual nodes were manually arranged to facilitate visualization. Selected complexes and protein nodes are circled and highlighted. Except for the hubs, large nodes represent genes identified by previous PLK4 inhibition screens (see Supplementary file 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Biological process enrichment from significant genes scoring in each screen using RPE-1 cells. Screen type indicated in each figure. (E) Protein-protein interaction network of genes identified as suppressors in the Nutlin-3a screen.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–E) Venn diagrams showing the overlap among the hits from screens performed in this study. Screen conditions indicated in each panel. Genes from selected overlap regions are shown. (F) Comparison of genes identified using 200 nM centrinone B in both RPE-1 and A375 (200 nM) and after PLK4 overexpression in RPE-1 cells (Evans). Genes identified in RPE-1 cells colored red, genes identified in A375 cells underlined. (G) Comparison of genes from 500 nM screens performed here in RPE-1 and A375 cells (500 nM) with other PLK4 inhibition screens performed using RPE-1 cells (Meitinger, Lambrus, and Fong). Color scheme identical to panel F.
 
 We created a network diagram to visualize the hits on a global scale (Figure 2B). Each unique cell line and condition act as the hubs (i.e., RPE-1, 200 nM centrinone B) while the hits from each condition are the remaining nodes. Each screen identified overlapping and distinct sets of genes, supporting our hypothesis that cells respond differently to each of the conditions tested (Figure 2B, Figure 2—figure supplement 2A-D, Supplementary file 2). The Nutlin-3a dataset contained core p53 pathway genes TP53 and CDKN1A and genes coding for p53 regulators TP53BP1 and USP28, consistent with their role in promoting p53 transcriptional activity (Cuella-Martin et al., 2016). This dataset likely contains other mediators of the p53 pathway. The disruption of both BAG6 and EP300 increased fitness in Nutlin-3a. EP300 is an acetyltransferase that binds to and affects the acetylation of p53 while BAG6 modulates this acetylation event by EP300 (Sebti et al., 2014; Liu et al., 1999). Likewise, inactivation of AHR and ARNT, which form a transcriptional complex activated by exogenous ligands, promoted growth when p53 is activated in RPE-1 cells, but not A375. ARNT was previously identified as a FRET interactor with p53 (Li et al., 2017) and interacts with EP300 (Tohkin et al., 2000; Tong et al., 2016). Deletion of TSC1/2 that integrates p53 signalling with the mTOR pathway (Armstrong et al., 2017; Lee et al., 2007) caused decreased fitness after p53 activation. We used Genemania (Franz et al., 2018) to further probe the pairwise physical interactions among the hits from the RPE-1 Nutlin-3a screen and generated a significantly enriched network (~20-fold enrichment, p=4.1 × 10–31). In this network, 27 of the 57 hits formed physical interactions with eight proteins forming complexes with p53 itself (Figure 2—figure supplement 1E). Our high-confidence hits from the Nutlin-3a screen identified known p53 pathway members and likely contains unknown regulators of this pathway that will warrant further characterization.
 
@@ -46,17 +66,45 @@ The 200 nM centrinone B screens (i.e., condition that produces supernumerary cen
 
 We identified a total of 37 suppressors probing the response to centriole depletion (500 nM centrinone B), with five scoring in both cell lines (TP53, CDKN1A, TP53BP1, USP28, and TRIM37). Our results are similar to previous screens aimed at identifying suppressors of growth arrest due to centrosome loss from PLK4 inhibition that identified 31, 41, and 27 genes, respectively (Lambrus et al., 2016; Fong et al., 2016; Meitinger et al., 2016). Four of the five common hits (TP53, TP53BP1, USP28, CDKN1A) correspond to core p53 pathway components and were the only genes identified by all screens performed to date (Figure 2—figure supplement 2G). CHD8 and FBXO42 were previously identified in the response to centrosome loss (Fong et al., 2016) and also scored in our 200 and 500 nM centrinone B screens, respectively; however they also appeared in our Nutlin-3a hits suggesting that these genes might not be specific to centrosome biology. Indeed, both FBXO42 and CHD8 are known to negatively regulate p53 activity (Sun et al., 2009; Nishiyama et al., 2009; Lü, 2022). Two of the previous centriole loss screens also identified TRIM37 (Lambrus et al., 2016; Meitinger et al., 2016) which was unique among all the other hits since it was the only gene outside the p53 pathway that scored in both RPE-1 and A375 cells in both centrinone B concentrations. We therefore chose to study TRIM37 further.
 
-## TRIM37 localizes near the centrosomes but is not required for centriole duplication
+### TRIM37 localizes near the centrosomes but is not required for centriole duplication
 
 Our combined screens indicated that TRIM37 was required for growth arrest in response to PLK4 inhibition that results in either centrosome overduplication or loss. Since TRIM37 has been implicated in centriole duplication (Balestra et al., 2013), we determined if loss of TRIM37 affected centrosome number after treatment with centrinone B. RPE-1 cells were infected with viruses expressing two independent sgRNAs targeting TRIM37 (Figure 3—figure supplement 1) and selected cell pools were treated with 200 and 500 nM centrinone B and assessed for centriole number (Figure 3A). As previously observed (Balestra et al., 2013), we noted a small number of TRIM37-disrupted cells harbored extra centrioles in untreated cells. However, centriole amplification or loss after centrinone B treatment was not greatly affected (Figure 3A). To further characterize TRIM37, we created a TRIM37-disrutped RPE-1 clonal cell line using CRISPR/Cas9 (Figure 3—figure supplement 1). After treatment of cells with centrinone B, p53 and p21 failed to accumulate in TRIM37-/- cells at 200 or 500 nM centrinone B (Figure 3B). In the presence of supernumerary centrosomes, but not in the absence of centrosomes, MDM2 is cleaved via the ANKRD26/PIDDosome pathway that relieves its p53 inhibitory function and promotes p53 transcriptional activity (Evans et al., 2021; Burigotto et al., 2021; Fava et al., 2017). We also noted a small amount of cleaved MDM2 (Fava et al., 2017) in untreated TRIM37-/- cells with no additional increase after 200 nM centrinone B. This cleavage product was lost after treatment with 500 nM centrinone B. Thus, we find that TRIM37 does not affect gain or loss of centrosomes after centrinone B treatment but is required for the induction of both p53 and p21 in response to these treatments as previously observed (Meitinger et al., 2016), and is required for MDM2 cleavage.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig3-v1.jpg)
+
+**Figure 3.:** (A) RPE-1 Cas9 cells were stably infected with virus directing the expression of one of two sgRNAs against TRIM37 or empty vector. Selected cells were treated with DMSO, or 200 or 500 nM centrinone B for 4 days, fixed and stained for CEP135 and foci counted. Means and standard deviation shown (n=3, N≥169). (B) Cells from (A) were also processed for Western blotting using the indicated antibodies. FL – full length. p60 – p60 fragment. Ponc.S indicates total protein. (C) Asynchronous RPE-1 cells were fixed and stained with the indicated antibodies. Pairwise merged images are shown (bottom). (D) Asynchronus RPE-1 Cas9 cells were fixed and stained for TRIM37, PCNA, and CEP120. The number of TRIM37-positive centrosomes was manually determined for each cell cycle stage. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3, N≥96). p-value from one-way ANOVA. (E) and (F) RPE-1 Cas9 cells were fixed and stained for the indicated antibodies. Examples of different cell cycles stages and TRIM37 localizations are shown in (E) and (F), respectively. Arrowhead in (E) indicates TRIM37 preference for one of two centrosomes. M/D: mother/daughter, M: mother, D: daughter. (G) Quantification of cells shown in (E) and (F). Individual data points shown as open circles. REsulting mean and standard deviation show (n=3, N = ≥94). Significant p-values (< 0.05) from a pairwise t-test between G1 and S/G2 populations indicated. (H) RPE-1 TRIM37-/- cells stably expressing FB-TRIM37 were fixed, stained with the indicated antibody, and imaged using 3D-SIM. Two representative images are shown. (I) RPE-1 TRIM37-/- cells stably expressing the indicated construct (FB = FLAG BirA) were pre-extracted, fixed, and stained for the indicated protein. (J) Centrosomal TRIM37 signal from cells in (I) was quantified. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3, N≥84). Significant p-values (< 0.05) from Dunnett post hoc test using ‘WT’ as control after one-way ANOVA shown. Note that the results from (I) and (J) and those in Figure 7—figure supplement 1C, E are from the same experiment therefore ‘FLAG-BirA’ and ‘WT’ are duplicated in these panels. See Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Samples from control RPE-1 Cas9 (empty) or cells expressing the indicated TRIM37 sgRNA were collected and subjected to Sanger sequencing. Underline indicates sgRNA position and arrow indicates predicted Cas9 cleavage site. (B) Sequences from (A) were analyzed using CRISPR TIDE. Efficiency and indel distribution are shown. (C) The indicated cell lines were analyzed by Western blotting for TRIM37. ‘Clone 1’ indicates single RPE-1 TRIM37-/- clonal line. ‘Pool’ represents RPE-1 and A375 TRIM37-/- pools. Ponc.S indicates total protein. (D) Genomic DNA from clonal RPE-1 TRIM37-/- gene disruption analyzed using Synthego CRISPR analysis tool. WT sequence is shown at bottom. sgRNA sequence is underlined and PAM colored red. Vertical line indicates predicted Cas9 cleavage site. The deconvolved sequences indicate alleles with 1 and 2 nucleotide deletions. (E) RPE-1 and clonal RPE-1 TRIM37-/- cells were pre-extracted and fixed for immunofluorescence using the indicated antibodies. Insets enlarged 3× and 4× as indicated. (F) TRIM37 intensity at the centrosome was automatically determined in interphase and mitotic cells. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (interphase; n=3, N≥209, mitotic; n=3, N=15). Significant p-values (< 0.05) from a pairwise t-test comparing WT and TRIM37-/- cells are shown. (G) RPE-1 and RPE-1 TRIM37-/- cells were treated with control siRNA (GL2), or siRNA directed against TRIM37. The centrosomal intensity of TRIM37 was determined in interphase and mitotic cells. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (interphase; n=3, N≥179, mitotic n=3, N≥15). Significant p-values (< 0.05) from a pairwise test comparing control siRNA to TRIM37 siRNA are shown. Figure 3—figure supplement 1—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) WT RPE-1 or TRIM37-/- cells stably expressing FLAG-BirA or the indicated FB-TRIM37 mutant were processed for Western blot using an anti-FLAG antibody. Ponc.S indicates total protein.(B) RPE-1 TRIM37-/- cells stably expressing FLAG-BirA or the indicated FB-TRIM37 mutant were fixed and stained for BirA. (C) Quantification of cells in (B). The number of cells with a fluorescence intensity above a threshold were scored as positive. Individual data points from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3, N≥240). Significant p-values (< 0.05) from Dunnett post hoc test using ‘empty’ as control after one-way ANOVA shown. See Figure 3—figure supplement 2—source data 1.
 
 Since TRIM37 was a prey for multiple centrosome baits in our previous BioID survey of centrosomal proteins (Gupta et al., 2015), we sought to determine if TRIM37 localized to centrosomes. Immunofluorescence staining of endogenous TRIM37 indicated that the protein was associated with the centrosome in most cells although it did not strictly co-localize with either γ-tubulin or CEP120 (Figure 3C). We verified that the anti-TRIM37 antibody used reliably detected endogenous TRIM37. The overall TRIM37 signal was greatly reduced in TRIM37-/- cells (Figure 3—figure supplement 1) and TRIM37 detected at the centrosome in interphase cells was largely diminished (Figure 3—figure supplement 1). We noted that a minor TRIM37 signal at the centrosome remained in TRIM37-/- cells but could not be further reduced using siRNA directed against TRIM37 (Figure 3—figure supplement 1) suggesting the antibody displays weak cross reactivity with another centrosomal component. Since the intensity difference in mitotic cells was not as large that observed in interphase cells after disruption and/or knockdown, we restricted our analysis to interphase cells (Figure 3—figure supplement 1). To determine if TRIM37 localization was cell cycle-dependent, we co-stained TRIM37 with PCNA and CEP120 (Figure 3D) and detected TRIM37 in all cell cycle stages we could discern. We further determined if TRIM37 preferentially localized to mother or daughter centrioles by staining with CETN2 to detect all centrioles and CEP120 that preferentially localizes to daughter centrioles (Figure 3F and G). TRIM37 localized to both mother and daughter centrioles in most cells and localized exclusively to the mother or daughter in only a small percentage of cells. Interestingly, in cells with two centrosomes, TRIM37 appeared to favor one centrosome over the other (Figure 3E, arrowhead) and we observed a minor preference for exclusive association with mother or daughter centrioles in G1 cells (Figure 3G). Given that the fluorescence signal from detecting endogenous protein was too low for super-resolution imaging, we performed 3D-SIM on RPE-1 Cas9 TRIM37-/- cells stably expressing FLAG-BirA-TRIM37 (FB-TRIM37) (Figure 3H, Figure 3—figure supplement 2). FB-TRIM37 formed partial ring structures preferentially surrounding one of the γ-tubulin foci. Moreover, the FB-TRIM37 signal was discontinuous with a dot-like distribution around the ring.
 
 As a member of the TRIM family of E3 ligases, TRIM37 contains an N-terminal RING domain followed by a B-box and a coiled-coil region CCR (Hatakeyama, 2017). The E3 ligase activity of TRIM37 has been implicated in its centrosomal-related functions in mitotic length (Meitinger et al., 2020), PCM stability (Yeow et al., 2020; Meitinger et al., 2020), and PLK4 localization (Meitinger et al., 2020). We created two TRIM37 E3 ligase mutants, one containing a C18R point mutation (Bhatnagar et al., 2014) and another deleting the RING domain entirely (ΔRING). After stable expression in RPE-1 TRIM37-/- cells, the steady-state abundance of both ligase mutants was greater than the wild type (WT) protein, consistent with TRIM37 auto-regulating its stability (Meitinger et al., 2020; Figure 3—figure supplement 2). Correspondingly, immunofluoresence for the tagged proteins confirmed their relative abundances and demonstrated that the proteins were expressed in all cells (Figure 3—figure supplement 2). The proteins were found primarily in the cytoplasm, sometimes in punctate structures possibly representing their peroxisomal localization (Wang et al., 2017). Further, we quantified the centrosomal localization of these proteins and found that both E3 mutants localized to the centrosome, albeit at slightly lower levels than the WT protein (Figure 3I and J). Thus, TRIM37 localizes to an area near the centrosomes proper, surrounding the PCM in a manner that is partially dependent on its E3 ligase activity.
 
-## An E3-independent TRIM37 activity mediates growth arrest after PLK4 inhibition
+### An E3-independent TRIM37 activity mediates growth arrest after PLK4 inhibition
 
 To determine if TRIM37 E3 ligase activity promotes growth arrest after centrinone B treatment, we performed clonogenic survival assays with the E3 mutant rescue lines in the presence of DMSO, 200 or 500 nM centrinone B (Figure 4A). Expression of FB-TRIM37 fully restored the growth arrest triggered by centrinone B as did the expression of either C18R or ΔRING (Figure 4A). These data suggest that TRIM37 promotes growth arrest in response to centrinone B in an E3-independent manner.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig4-v1.jpg)
+
+**Figure 4.:** (A) WT RPE-1, TRIM37-/- (none), and TRIM37-/- cells expressing FLAG-BirA (FB) or the indicated FB-TRIM37 (WT, C18R, ΔRING) construct were seeded for clonogenic assays and grown in DMSO or the indicated concentration of centrinone B for 14 days. Colony density was quantified and growth compared to that in DMSO determined. Means and standard deviation shown (n=3). Significant p-values (< 0.05) from a Dunnett post hoc test using 'RPE-1' as a control after one-way ANOVA shown. (B) WT RPE-1, TRIM37-/- (pool), and TRIM37-/- expressing FB or the indicated FB-TRIM37 construct were seeded for clonogenic assays and grown in DMSO or the indicated concentration of centrinone B for 14 days. Colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from Dunnett post hoc test using ‘WT’ as control after one-way ANOVA shown. Note that the results from this experiment and those in Figure 7 are from the same experiment; therefore ‘WT’, ‘TRIM37-/- none’, ‘TRIM37-/- FLAG-BirA’, and ‘TRIM37-/- WT’ are duplicated in these panels. (C) WT or TRIM37-/- (pools) RPE-1 cells were treated with DMSO (0) or the indicated concentration of centrinone B (nM) for 4 days before fixing and staining for CEP135. CEP135 foci per cell were manually counted. Mean and standard deviation shown (n=3, N≥55 per condition). (D) RPE-1 cells were transfected with GFP-PLK4kin + L1 and treated with DMSO or the indicated concentration of centrinone B for 16 hr. The mean and standard deviation among the independent replicates is shown (n=3, N≥12). (E) Model showing growth inhibition ‘phases’. Growth is inhibited as a function of centrinone B. Phases dependent on TRIM37 are indicated. Red dots indicate centrosome number. (F) RPE-1 TRIM37-/- cells expressing DOX-inducible TRIM37-3xFLAG or TRIM37 C18R-3xFLAG were seeded for clonogenic assays in the absence and presence of doxycycline and DMSO or the indicated concentration of centrinone B. After incubation for 14 days, colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=4). Significant p-values (< 0.05) from pairwise t-tests comparing -DOX and +DOX samples are shown. (G) RPE-1 TRIM37-/- SASS6-/- cells expressing DOX-inducible TRIM37-3xFLAG or TRIM37 C18R-3xFLAG were seeded for clonogenic assays in the absence and presence of doxycycline. After incubation for 14 days, colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from pairwise t-tests comparing -DOX and +DOX samples are shown. (H) The indicated RPE-1 line expressing inducible PLK4-3xFLAG were seeded for clonogenic assays in the absence and presence of doxycycline. After incubation for 14 days, colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (<0.05) from pairwise t-tests comparing -DOX and +DOX samples are shown. See Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) WT RPE-1 and a pooled RPE-1 TRIM37-/- line stably expressing FLAG-BirA of the indicated FB-TRIM37 fusion protein were harvested and analyzed by Western blot using an anti-FLAG antibody. Ponc.S indicates total protein. (B) WT A375 and a pooled A375 TRIM37-/- line stably expressing FLAG-BirA of the indicated FB-TRIM37 fusion protein were harvested and analyzed by Western blot using an anti-FLAG antibody. Ponc.S indicates total protein. (C) WT A375, TRIM37-/- (pool), and TRIM37-/- expressing FB or the indicated FB-TRIM37 construct were seeded for clonogenic assays and grown in DMSO or the indicated concentration of centrinone B for 14 days. Colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from Dunnett post hoc test using ‘WT’ as control after one-way ANOVA shown. (D) WT RPE-1 or TRIM37-/- cells were treated with DMSO or the indicated concentration of centrinone B for 4 days. Samples were prepared for Western blot and probed for p53 and p21. PS indicates total protein. Band intensity was determined and normalized to DMSO for each cell line. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). (E) WT or TRIM37-/- (pool) A375 cells were treated with the indicated concentration of centrinone B (nM) for 4 days before fixing and staining for CEP135. CEP135 foci per cell were manually counted. Mean and standard deviation shown (n=3, N≥63 per condition). See Figure 4—figure supplement 1—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The indicated cell lines were grown in the absence or presence of doxycycline for 3 days (TRIM37-/-: RPE-1 TRIM37-/-; WT:RPE-1, FB-TRIM37: FB-TRIM37 expressed in TRIM37-/-, pInducer TRIM37 expressed in WT: RPE-1 and T37-/-: RPE-1 TRIM37-/-). Cells were prepared for Western blot and probed for TRIM37. Ponc.S indicates total protein. (B) Quantification of (A). Relative intensities from each replicate are shown as open circles. Resulting mean and standard deviation shown (n = 3). Significant p-values (< 0.05) from Dunnett post hoc test using ‘RPE1’ as control after one-way ANOVA shown. Only RPE-1, TRIM37-/- pInducer TRIM37 +DOX, and RPE-1 pInducer TRIM37 +DOX were compared. RPE-1 and FB-TRIM37 were compared using a pairwise t-test. (C) The indicated cell lines from (A) were also fixed and stained for TRIM37 and γ-tubulin. The total centrosomal intensity in the TRIM37 channel was determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n = 3, N ≥ 164). Significant p-value (< 0.05) from a pairwise t-test is shown. (D) RPE-1 TRIM37-/- cells expressing inducible WT or C18R TRIM37 were grown in the absence or presence of doxycycline for 3 days. Samples were processed for Western blot and probed for TRIM37. Ponc.S indicates total protein. (E) Quantification of (D). Relative intensities from each replicate are shown as open circles. Resulting mean and standard deviation shown (n = 3). The doxycycline-induced samples were compared using a pairwise t-test. Significant p-values (< 0.05) are shown. See Figure 4—figure supplement 2—source data 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) WT RPE-1, TRIM37-/- and TRIM37-/- SASS6-/- cells were prepared for Western blot and probed for SASS6. Ponc.S indicates total protein. (B) WT RPE-1, TRIM37-/- and TRIM37-/-/SASS6-/- cells were seeded for clonogenic assays and grown in DMSO or the indicated concentration of centrinone B for 14 days. Colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n = 5). Significant p-values (< 0.05) from Dunnett post-hoc test using ‘WT’ as control after one-way ANOVA shown. (C) RPE-1 TRIM37-/-/SASS6-/- cells expressing inducible WT or C18R TRIM37 were grown in the absence or presence of doxycycline for 3 d. Samples were prepared for Western blot and probed for TRIM37. Ponc.S indicates total protein. (D) Quantification of the induced samples in (C). Individual data points shown as open circles. Resulting mean and standard deviation shown. WT and C18R were compared using a pairwise t-test and significant p-value (< 0.05) is shown. (E) WT RPE-1, TP53-/- and TRIM37-/- expressing inducible PLK4-3xFLAG were grown in the absence and presence of doxycycline for 16 h. Cells were fixed and stained for CEP135. The number of CEP135 foci was manually counted. Means and standard deviation are shown (n = 2, N ≥ 54 per condition). See Figure 4—figure supplement 3—source data 1.
 
 To corroborate these observations, we created TRIM37 knockout pools in RPE-1 and A375 cells using an sgRNA distinct from that used to make the clonal line (Figure 3—figure supplement 1). These pools were infected with virus to express TRIM37 and the indicated TRIM37 mutants (Figure 4—figure supplement 1 and B). In addition, we performed clonogenic assays using varying centrinone B concentrations to fully characterize the growth arrest activity promoted by TRIM37 (Figure 4B, Figure 4—figure supplement 1). Robust cell arrest of WT cells was observed after treatment with 125 nM centrinone B or greater. Correspondingly, in RPE-1 cells, we observed increases of p53 and p21 abundance with increasing centrinone B that was attenuated in TRIM37-/- cells (Figure 4—figure supplement 1). Interestingly, cells lacking TRIM37 arrested after treatment with very low doses of centrinone B (50–125 nM) but only partially after higher concentrations (≥150 nM). As observed with cell lines derived from the clonal TRIM37 disruption, both E3-defective mutants, C18R and ΔRING, promoted growth arrest activity. To examine PLK4 function more closely after inhibition by centrinone B, we monitored centrosome number and cellular PLK4 mobility. There was a dose-dependent increase in centrosome number up to 167 or 200 nM after which cells harbored one or no centrosomes (Figure 4C and Figure 4—figure supplement 1). Surprisingly, abnormal centrosome number did not correlate with robust growth arrest in WT cells; cell growth was almost completely inhibited at 125 nM centrinone B although we observed minor centrosome abnormalities at this concentration. Recently, PLK4 phosphorylation status near its phosphodegron sequence was linked to its cellular mobility where decreased phosphorylation at this site resulted in decreased mobility (Yamamoto and Kitagawa, 2019). We expressed a PLK4 reporter construct (GFP-PLK kin + L1) and monitored PLK4 mobility using FRAP after treatment with centrinone B (Figure 4D; Yamamoto and Kitagawa, 2019). PLK4 mobility decreased with increasing centrinone B concentrations that mirrored growth arrest activity. Based on RPE-1 cells, our data uncovered three phases in response to PLK4 inhibition. Phase I is TRIM37-independent and occurs at centrinone B concentrations where cells display minor centrosome number aberration (≤125 nM); a TRIM37-dependent phase II occurs at ≥150 nM centrinone B and can be further separated based on centrosome number; phase IIa cells harbor overduplicated centrosomes (150–200 nM) while phase IIb cells have lost one or both centrosomes (500 nM) (Figure 4E). Similar trends were observed using A375 cells, although the exact concentrations of centrinone B required differed between the cell lines (Figure 4—figure supplement 1).
 
@@ -64,25 +112,49 @@ We noted that our FB-TRIM37 construct was overexpressed compared to the endogeno
 
 To distinguish between PLK4 activity and centrosome number, we used orthologous methods tTo corroborate these observations, we creato control centrosome number. First, we disrupted the gene encoding SASS6, a protein required for centriole duplication (Leidel et al., 2005; Dammermann et al., 2004), to induce centrosome loss in TRIM37-/- cells (Figure 4—figure supplement 3A). We recovered cells lacking centrioles indicating that TRIM37 is also required for growth arrest in these conditions since SASS6 is essential in WT cells (Leidel et al., 2005). Interestingly, TRIM37-/-SASS6-/- cells were completely resistant to any dose of centrinone B, unlike TRIM37-/- alone (Figure 4—figure supplement 3B). Similar to centrosome loss induced by PLK4 inhibition, inducible expression of TRIM37 C18R partially rescued the growth arrest phenotype caused by SASS6 loss (Figure 4G, Figure 4—figure supplement 3C,D). To induce centrosome amplification, we overexpressed PLK4 (Figure 4—figure supplement 3E). Similar to previous studies (Evans et al., 2021), we found that disruption of TRIM37 was unable to suppress growth arrest in these conditions (Figure 4H). Together, these data suggest that TRIM37 is required for growth arrest after moderate or full PLK4 inhibition and this activity is partially independent of TRIM37’s E3 ligase activity.
 
-## Growth arrest upon treatment with centrinone B does not correlate with an increase in mitotic length
+### Growth arrest upon treatment with centrinone B does not correlate with an increase in mitotic length
 
 Abnormal mitotic length has been put forth as an attractive model to explain growth arrest after centrosome loss (Lambrus et al., 2016). We measured mitotic length after inhibiting PLK4 at different centrinone B concentrations using live-cell imaging of WT or TRIM37-/- RPE-1 cells. Cells were treated with the indicated concentration of centrinone B for 3 days before imaging them for 24 hr, and the length of mitosis from nuclear envelope breakdown (NEBD) to telophase was quantified (Figure 5A). WT RPE-1 cells treated with centrinone B did not exhibit a significant increase in mitotic length, compared to untreated cells, until concentrations reached 150 nM. Strikingly, the mitotic length of TRIM37-/- cells treated with centrinone B was similar to that of WT cells until concentrations of 200 and 500 nM centrinone B; at which point the absence of TRIM37 partially suppressed the increase in mitotic length in WT cells (Meitinger et al., 2020). We next examined whether TRIM37 E3 activity was required to rescue the shortened mitotic length observed in TRIM37-/- cells. We induced the expression of WT TRIM37 and the C18R mutant in TRIM37-/- cells, treated them with 500 nM centrinone B and measured mitotic length. In the absence of protein induction, we observed a slight increase in mitotic length after centrinone B treatment and a larger increase after induction of WT TRIM37 (Figure 5B). In contrast, the mitotic length in the presence of centrinone B after expression of TRIM37 C18R did not change compared to similarly treated uninduced cells. Thus, the increase in mitotic length observed after full PLK4 inhibition (500 nM centrinone B) appears to be dependent on TRIM37 E3 activity.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig5-v1.jpg)
 
-**Figure 5.:** (A) WT RPE-1 and TRIM37-/- cells were incubated with DMSO (0) or the indicated concentration of centrinone B for 3 days before live imaging for 24 hr. The time from nuclear envelope breakdown (NEBD) to telophase was determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from pairwise t-tests comparing WT and TRIM37-/- samples are shown. (n=3, N≥30). Table below indicates average mitotic length and p-value from a Dunnett post hoc test using ‘DMSO’ as control after one-way ANOVA. (B) RPE-1 TRIM37-/- cells were treated with DMSO or 500 nM centrinone B (Cent.B) in the absence or presence of doxycycline (DOX) for 3 days before live imaging for 24 hr. The time from NEBD to telophase was determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from Dunnett post hoc test using ‘uninduced, DMSO treated’ cells as a control after a one-way ANOVA are shown (n=3, N≥46). (C) RPE-1 TRIM37-/- cells expressing the indicated TRIM37 protein (WT or C18R) were treated with DMSO or 500 nM centrinone B (Cent.B) in the absence or presence of DOX for 3 days before fixing and staining for CEP192. Representative images shown. (D) The number of discernable microtubule organizing centers (MTOCs) characterized by the accumulation of CEP192 in cells from (C) was quantified. Means and standard deviation shown (n=3, N≥29). For each TRIM37 construct, the number of cells incubated with centrinone B and with two MTOCs in uninduced and induced samples was compared using a pairwise t-test. Significant p-values (< 0.05) are shown. See Figure 5—source data 1.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) WT RPE-1 and TRIM37-/- cells were incubated with DMSO (0) or the indicated concentration of centrinone B for 3 days before live imaging for 24 hr. The time from nuclear envelope breakdown (NEBD) to telophase was determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from pairwise t-tests comparing WT and TRIM37-/- samples are shown. (n=3, N≥30). Table below indicates average mitotic length and p-value from a Dunnett post hoc test using ‘DMSO’ as control after one-way ANOVA. (B) RPE-1 TRIM37-/- cells were treated with DMSO or 500 nM centrinone B (Cent.B) in the absence or presence of doxycycline (DOX) for 3 days before live imaging for 24 hr. The time from NEBD to telophase was determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from Dunnett post hoc test using ‘uninduced, DMSO treated’ cells as a control after a one-way ANOVA are shown (n=3, N≥46). (C) RPE-1 TRIM37-/- cells expressing the indicated TRIM37 protein (WT or C18R) were treated with DMSO or 500 nM centrinone B (Cent.B) in the absence or presence of DOX for 3 days before fixing and staining for CEP192. Representative images shown. (D) The number of discernable microtubule organizing centers (MTOCs) characterized by the accumulation of CEP192 in cells from (C) was quantified. Means and standard deviation shown (n=3, N≥29). For each TRIM37 construct, the number of cells incubated with centrinone B and with two MTOCs in uninduced and induced samples was compared using a pairwise t-test. Significant p-values (< 0.05) are shown. See Figure 5—source data 1.
 
 In the absence of centrosomes, amorphous collections of primarily PCM components act as pseudo-MTOCs in cells lacking TRIM37 (Meitinger et al., 2016). We induced the expression of WT TRIM37 or TRIM37 C18R in TRIM37-/- cells, treated them with 500 nM centrinone B for 3 days before staining for CEP192 (Figure 5C) and analyzed mitotic cells for the number of MTOCs in each cell based on CEP192 distribution (Figure 5D). In DMSO-treated cells, all lines mostly formed two distinct MTOCs. In the presence of centrinone B, but in the absence of induced protein, most cells formed two fragmented MTOCs, characteristic of TRIM37-/- cells after PLK4 inhibition (Meitinger et al., 2016). Cells expressing WT TRIM37 and treated with centrinone B harbored a single fragmented MTOC or none at all. Lastly, cells expressing TRIM37 C18R and treated with centrinone B displayed a partial phenotype where some cells formed two dispersed MTOCs while others displayed a single dispersed MTOC. Thus, TRIM37 E3 ligase activity is not strictly required to suppress pseudo-MTOCs or to promote cell growth after centrosome loss.
 
-## TRIM37 affects the abundance and localization of both centriolar and PCM components in an E3-dependent manner
+### TRIM37 affects the abundance and localization of both centriolar and PCM components in an E3-dependent manner
 
 To assess whether TRIM37 regulates the abundance of centriolar or PCM components, we initially probed for PCM components in RPE-1 and RPE-1 TRIM37-/- lines but did not detect any significant changes in steady-state protein levels (Figure 6A and Figure 6—figure supplement 1A). To determine if overexpressed TRIM37 affected steady-state PCM levels, we again probed for PCM proteins in TRIM37-/- cells stably expressing FLAG-BirA, FB-TRIM37, or the TRIM37 E3 mutants. We observed a significant decrease in CEP192 that was E3-dependent but did not observe significant changes in PCNT or CEP215 (Figure 6B and Figure 6—figure supplement 1B). We next expressed inducible WT or C18R TRIM37 in WT RPE-1 cells (Yeow et al., 2020; Meitinger et al., 2020). After expression of WT TRIM37 for 4 or 8 hr, we detected a 50–75% decrease in total CEP192 protein (Figure 6C, left panels). In all cases the decrease in CEP192 was E3-dependent. These results are consistent with previous observations that also indicated that TRIM37 is a negative regulator of CEP192 abundance (Yeow et al., 2020; Meitinger et al., 2020). We extended these findings by using immunofluorescence to specifically detect changes at mitotic centrosomes (Figure 6—figure supplement 1C). Quantification revealed that acute expression of WT TRIM37, but not C18R decreased the intensity of CEP192 and PCNT at the centrosome (Figure 6D). Interestingly the centriole component CEP120 was similarly diminished at the centrosome indicating that this effect is not specific to PCM proteins (Figure 6D). We find that overexpression of TRIM37 affects the overall abundance of CEP192 and the mitotic accumulation of CEP192, PCNT, and CEP120 in an E3-dependent manner.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig6-v1.jpg)
+
+**Figure 6.:** (A) WT RPE-1 and TRIM37-/- cells were processed for Western blot and probed for the indicated proteins. Band intensity was quantified and expressed as expression compared to WT cells. Relative intensity from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Data was tested by pairwise t-test between WT and TRIM37-/-. No significant differences were observed. (B) TRIM37-/- RPE-1 cells stably expressing FLAG-BirA or the indicated FB-TRIM37 protein were processed for Western blot and probed for the indicated proteins. Band intensity was quantified and expressed as expression compared to cells expressing FLAG-BirA. Relative intensity from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from Dunnett post hoc test using FLAG-BirA as a control after a one-way ANOVA are shown. The band intensity from FLAG-BirA cells was set to ‘1’ and is omitted from the plot for clarity. (C) WT RPE-1 cells expressing doxycline-inducible TRIM37-3xFLAG (WT) or TRIM37 C18R-3xFLAG (C18R) were induced with doxycycline for 0, 4, or 8 hr. At each time point, extracts were prepared and analyzed by Western blot for the indicated protein (right). Ponc.S indicates equal loading. CEP192 abundance was quantified and normalized to the intensity at time 0 hr (bottom). Mean and standard deviation shown (n=3). Significant p-values (< 0.05) from Dunnett post hoc test using time 0 hr as a control after a one-way ANOVA are shown. (D) Cells from (C) were also fixed and immunostained for the indicated proteins. The centrosomal intensity from mitotic cells was determined. Intensity values were normalized to 0 hr. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3, N=60). Significant p-values (< 0.05) from Dunnett post hoc test using time 0 hr as a control after a one-way ANOVA are shown. (E) RPE-1 TRIM37-/- cells were fixed and stained for CEP120 and the indicated proteins. (F) RPE-1 (WT) or TRIM37-/- cells stably expressing FLAG-BirA or the indicated FB-TRIM37 protein were fixed and stained for the indicated protein. Arrowhead indicates centrosome defined by CEP192. Caret mark indicates ectopic structure defined by CEP120. See Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) WT RPE-1 and TRIM37-/- cells were processed for Western blot and probed for the indicated protein. Ponc.S indicates total protein. Quantification in Figure 6A. (B) TRIM37-/- RPE-1 cells stably expressing FLAG-BirA (FB) or the indicated FB-TRIM37 protein were processed for Western blot and probed for the indicated protein. Ponc.S indicates total protein. Quantification in Figure 6B. (C) RPE-1 TRIM37-/- cells expressing inducible TRIM37 or TRIM37 C18R were induced with doxycycline for the indicated time. Cells were fixed and stained for the indicated protein. Sample images of mitotic cells quantified in Figure 6D.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) RPE-1 cells were treated with non-targeting (CON) siRNA or siRNA targeting CEP120 (CEP120). Cells were fixed after 72 hr and stained for the indicated protein. Closed arrowhead indicates centrosome based on γ-tubulin. Caret mark (open arrowhead) indicates ectopic structures based on CEP120 and/or CNTROB. Cells were manually scored for the number of cells with ectopic CNTROB structures that also co-stained with CEP120 (mean with standard deviation). (B) TRIM37-/- RPE-1 cells expressing inducible PLK4-3xFLAG were treated with doxycycline. Cells were harvested at the indicated time, fixed and stained for FLAG (left panels) or PLK4 (right panels) and the indicated proteins. Closed arrowhead indicates the centrosome based on CEP135 and the caret mark indicates ectopic structures based on the non-centrosomal CEP120 signal. (C) TRIM37-/- RPE-1 cells were grown in the absence and presence of 500 nM centrinone B for 3 days. Cells were fixed and stained for the indicated proteins. (D) Quantification of cells in (C). The number of cells with non-centrosomal CNTROB was scored. Means and standard deviation shown. Control samples were compared to centrinone B treated using a pairwise t-test and no significant difference was observed. (E) RPE-1 (WT), RPE-1 TRIM37-/- or RPE-1 TRIM37-/- cells expressing FLAG-BirA or the indicated FB-TRIM37 protein were fixed and stained for CEP120. The percent cells exhibiting non-centrosomal CEP120 was quantified. Individual replicates are shown as open circles. Resulting mean and standard deviation shown (n=3, N>35). Significant p-values (< 0.05) from a Dunnett post-hoc test using 'WT' as a control after a one-way ANOVA shown. See Figure 6—figure supplement 2—source data 1.
+
 In the absence of TRIM37, some centriolar proteins form CTNROB-dependent ectopic intracellular aggregates, termed Cenpas, in interphase cells (Balestra et al., 2021; Meitinger et al., 2020). We initially observed that CEP120 was mislocalized in TRIM37-/- cells and co-localized with CNTROB (Figure 6E). Ectopic CNTROB structures remained after CEP120 depletion using siRNA suggesting that CEP120 is assembled downstream of CNTROB. (Figure 6—figure supplement 2A). We found that CEP120 and CNTROB were detected in these structures and CETN2 foci accumulated near them (Figure 6E). Notably, we did not detect PLK4 in the CNTROB/CEP120 structure. Previously, PLK4 has been observed in these structures but could only be detected using a single antibody and the signal remained after siRNA treatment (Meitinger et al., 2016; Balestra et al., 2021; Meitinger et al., 2021). To determine if PLK4 could be recruited into these structures, we expressed PLK4-3xFLAG from an inducible promoter in TRIM37-/- cells. PLK4-3xFLAG was not detected at non-centrosomal aggregates after 3 or 6 hr induction using either anti-FLAG or anti-PLK4 antibodies, despite its accumulation at the centrosome (Figure 6—figure supplement 2B). Additionally, these assemblies were not affected by the loss of PLK4 activity as they were observed in TRIM37-/- cells treated with 500 nM centrinone B for 3 days (Figure 6—figure supplement 2C, D). After stable expression of TRIM37 mutants in TRIM37-/- cells these structures disappeared in an E3-dependent manner (Figure 6F, Figure 6—figure supplement 2E). We find that CEP120 is a downstream component of the CNTROB structures formed in TRIM37-/- cells and that the suppression of their formation requires TRIM37 E3 ligase activity.
 
-## TRIM37 promotes the phosphorylation of PLK4
+### TRIM37 promotes the phosphorylation of PLK4
 
 TRIM37 is suggested to associate with and ubiquitinate PLK4 (Meitinger et al., 2020). We performed a structure-function analysis of TRIM37 to determine which region(s) of TRIM37 were required for PLK4 complex formation (Figure 7A) We transiently expressed a series of FB-TRIM37 deletion mutants and Myc-PLK4 in RPE-1 cells, immunoprecipitated the FB-TRIM37 constructs, and probed for PLK4 (Figure 7A and B, Figure 7—figure supplement 1A). Our results confirmed that PLK4 and TRIM37 form a complex in RPE-1 cells (Meitinger et al., 2020). Further, the region from amino acids 505–709 of TRIM37 was sufficient to immunoprecipitate PLK4. Conversely, a TRIM37 mutant lacking this region (FB-Δ505–709) failed to pull down PLK4. When stably expressed in TRIM37-/- cells, FB-505–709 and FB-Δ505–709 were well expressed (Figure 7—figure supplement 1B, D) but only FB-Δ505–709 localized to centrosomes (Figure 7—figure supplement 1C, E). To determine if the PLK4/TRIM37 association was required for growth arrest activity, we performed clonogenic assays using TRIM37-/- cell lines stably expressing FB-TRIM37 505–709 and FB-TRIM37 Δ505–709 (Figure 7C, Figure 7—figure supplement 1B-E) or expressing inducible FB-Δ505–709 (Figure 7—figure supplement 1F, G). Surprisingly, the association between PLK4 and TRIM37 did not appear to be required for centrinone B-induced growth arrest.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig7-v1.jpg)
+
+**Figure 7.:** (A) TRIM37 domain schematic. Constructs used for structure-function experiments indicated below. (B) RPE-1cells were transfected to express Myc-PLK4 and FLAG-BirA or the indicated FB-TRIM37 fusion protein (top). Cells were lysed and subjected to anti-FLAG immunoprecipitation. Input and immunoprecipitates were analyzed by immunoblotting for the FLAG-BirA fusions (FLAG) or for Myc-PLK4. Ponc.S indicates total protein. * indicates position of FLAG-Cas9. (C) WT RPE-1, TRIM37-/- and TRIM37-/- expressing FB or the indicated FB-TRIM37 construct were seeded for clonogenic assays and grown in DMSO or the indicated concentration of centrinone B for 14 days. Colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from Dunnett post hoc test using ‘WT’ as a control after one-way ANOVA shown. Note that the results from this experiment and those in Figure 4B are from the same experiment; therefore ‘WT’, ‘TRIM37-/- none’, ‘TRIM37-/- FLAG-BirA’, and ‘TRIM37-/- WT’ are duplicated in these panels. (D) HEK293T cells transfected to express Myc-PLK4 and the indicated protein (top) were grown overnight and subsequently treated with DMSO or MLN4924 for 22 hr and MG132 for the final 4 hr. Cell extracts were prepared and probed by Western blot using the indicated antibodies. Ponc.S indicates total protein. (E) HEK293T cells were transfected to express Myc-PLK4, HA-Ub, and the indicated protein (top). Cells were harvested after 48 hr and subjected to immunoprecipitation using anti-Myc antibodies. Input and immunoprecipitates were analyzed by immunoblotting for PLK4 and HA-Ub. Ponc.S indicates total protein. (F) HEK293T cells were transfected to express Myc-PLK4 and eGFP or the indicated T7-TRIM37 protein (top) for 48 hr. MG132 was added for the final 4 hr. Lysates were mock treated (-λ) or incubated with λ-phosphatase (+λ) and subsequently subjected to immunoblot for PLK4. (CB) indicates total protein. (G) HEK293T cells were transfected to express Myc-PLK4 and T7-TRIM37 Δ505–709 for 48 hr. Cells were treated with the indicated inhibitor (top) for 3 or 6 hr and analyzed by immunoblot for PLK4. Ponc.S indicates total protein. See Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) RPE-1cells were transiently transfected to express Myc-PLK4 and FLAG-BirA or the indicated FB-TRIM37 construct (top). Cells were lysed and subjected to anti-FLAG immunoprecipitation. Input and immunoprecipitates were analyzed by immunoblotting with the indicated antibodies. Ponc.S indicates total protein. * indicates position of FLAG-Cas9. (B) RPE-1 TRIM37-/- cells stably expressing the indicated FB-TRIM37 protein were fixed and stained using an anti-BirA antibody. (C) Cells as in (B) were pre-extracted, fixed and stained for the indicated protein (FB: FLAG-BirA). (D) Quantification of cells in (B). Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3, N≥296). Significant p-values (< 0.05) from Dunnett post-hoc test using ‘empty’ as a control after a one-way ANOVA are shown. (E) Quantification of cells in (C). Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3, N≥78). Samples stained with α-FLAG were compared using a pairwise t-test. For samples stained with α-TRIM37, significant p-values (< 0.05) from Dunnett post hoc test using ‘WT’ as a control after a one-way ANOVA are shown. Note that the results from the α-TRIM37 samples and those in Figure 3I and J are from the same experiment; therefore ‘FLAG-BirA’ and ‘WT’ are duplicated in these panels. (F) RPE-1 TRIM37-/- cells expressing the inducible FB-TRIM37 protein indicated were grown for 3 days in the absence and presence of doxycycline. Samples were prepared for Western blot and probed for TRIM37. (CB) indicates total protein. (G) RPE-1 TRIM37-/- cells expressing the indicated inducible TRIM37 construct were seeded for clonogenic assays in the absence and presence of doxycycline and DMSO or the indicated concentration of centrinone B. After incubation for 14 days, colony density was quantified and growth compared to that in DMSO determined. Means from each replicate are shown as open circles. Resulting mean and standard deviation shown (n=3). Significant p-values (< 0.05) from pairwise t-tests comparing -DOX and +DOX for each line are shown. (H) WT RPE-1 and TRIM37-/- cells were transfected to express GFP-PLK4. FRAP analyses were performed after treating cells with DMSO or 500 nM centrinone B (cent.) for 16 hr. The mean and standard deviation among the independent replicates is shown (n=3, N≥10). (I) WT RPE-1 cells were treated with control siRNA (siCON) or siRNA against TRIM37 (siTRIM37) for 72 hr. Cells were transfected to express GFP-PLK4 after 48 hr and further treated with DMSO or 500 nM centrinone B (cent.) for the final 16 hr before performing FRAP analyses. The mean and standard deviation among the independent replicates is shown (n=3, N≥10). See Figure 7—figure supplement 1—source data 1.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73944/elife-73944-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Table summarizing TRIM37 rescue constructs, expression system, and relative phenotypes.
 
 PLK4 protein abundance is tightly controlled by multiple post-translational modifications including phosphorylation and ubiquitination (Rogers et al., 2009; Cunha-Ferreira et al., 2009; Guderian et al., 2010; Yamamoto and Kitagawa, 2019). The co-expression of Myc-PLK4 and T7-TRIM37 in HEK293T cells resulted in modification of PLK4 (Figure 7D). The modification was partially dependent on TRIM37 E3 activity, was not observed when TRIM37 505–709 was expressed, and increased in the presence of TRIM37 Δ505–709. MLN4924 is a general inhibitor of cullin-RING E3 ligases and treating cells with this compound should inhibit ubiquitination of PLK4 by SCFβ-TrCP (Soucy et al., 2009). Treatment of cells with MLN4924 resulted in stabilization of PLK4 but the modified forms remained (Figure 7D). To directly test if the observed modification was ubiquitinated PLK4, we co-expressed Myc-PLK4, T7-TRIM37, and HA-Ub in 293T cells. After immunoprecipitating PLK4, we probed for HA-Ub to detect ubiquitinated species (Figure 7E). Although we detected an E3-dependent increase in total ubiquitinated proteins in the input of cells expressing WT and Δ505–709 T7-TRIM37, we only detected low levels of HA-Ub conjugates in the anti-Myc immunoprecipitates, suggesting that PLK4 modification upon expression of TRIM37 may not be due to its ubiquitination. As an alternative possibility, we tested if the modified PLK4 bands were due to phosphorylation by treating cell lysates with λ-phosphatase (Figure 7F). The slower migrating forms of PLK4 were lost after phosphatase treatment indicating that these modifications are primarily due to phosphorylation. To identify the kinase(s) responsible for the modification, we treated cells with inhibitors targeting PLK4, AURKA, PLK1, and CDK1 for 3–6 hr and probed for PLK4. The only treatment that substantially reduced PLK4 phosphorylation was PLK4 inhibition (Figure 7G). Since we observed that TRIM37 promotes PLK4 phosphorylation (Figure 7G), we monitored GFP-PLK4 mobility by FRAP in WT, TRIM37-/- cells and after TRIM37 siRNA but did not observe any differences compared to control cells indicating that the phospho-forms of PLK4 stabilized by TRIM37 likely lie outside the phosphodegron region (Figure 7—figure supplement 1H, I). Together these data suggest that TRIM37 promotes the accumulation of phosphorylated PLK4 in an E3-dependent manner but this phenomenon does not require robust interaction with PLK4 itself.
 
@@ -112,39 +184,1036 @@ In closing, we used CRISPR/Cas9 screening to characterize the global, dose-depen
 
 ## Materials and methods
 
-## Cell culture and drug treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>RPE-1, Epithelial (female, immortalized with hTERT)</td>
+      <td>ATCC</td>
+      <td>CRL-4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>A375, Epithelial (female, malignant melanoma)</td>
+      <td>ATCC</td>
+      <td>CRL-1619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>RPE-1 Cas9</td>
+      <td>Zimmermann et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>A375 Cas9</td>
+      <td>Hart et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK 293T, Epithelial (female, fetal kidney)</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>RPE-1 TRIM37-/- (clone)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Created by transfecting RPE-1 Cas9 with sgRNA TRIM37 1.Single clones selected and screened for TRIM37 disruption by PCR and Western blot.</td>
+    </tr>
+    <tr>
+      <td>Cell line (humanl)</td>
+      <td>RPE-1 TRIM37-/- (pool)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Created by transfecting RPE-1 Cas9 with sgRNA TRIM37 e5.Pools selected by treatment with centrinone B.</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>A375 TRIM37-/- (pool)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Created by transfecting A375 Cas9 with sgRNA TRIM37 e5.Pools selected by treatment with centrinone B.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid, viral library)</td>
+      <td>TKOv1 library</td>
+      <td>Hart et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>plentiGuide-Puro</td>
+      <td>Sanjana et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLgP TRIM37sg1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLgP TRIM37sg2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5-FRT/TO-Myc-PLK4</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA</td>
+      <td>Gupta et al., 2015</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BIrA-TRIM37</td>
+      <td>Gupta et al., 2015</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 C18R</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 RING</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 ΔRING</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 1–256</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 257–964</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 1–409</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 410–964</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 505–709</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 FLAG-BirA-TRIM37 Δ505–709</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pSIN FLAG-BirA</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pSIN FLAG-BirA-TRIM37</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pSIN FLAG-BIrA-TRIM37 C18R</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pSIN FLAG-BirA-TRIM37 ΔRING</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pSIN FLAG-BirA-TRIM37 505–709</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pSIN FLAG-BirA-TRIM37 Δ505–709</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pInduce PLK4 3xFLAG</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA3-HA-ubiquitin</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5-FRT/TO-eGFP</td>
+      <td>Kean et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>p T7 TRIM37</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>p T7 TRIM37 C18R</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>p T7 TRIM37 505–709</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>p T7 TRIM37 Δ505–709</td>
+      <td>This study</td>
+      <td></td>
+      <td>Cloning details in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 eGFP PLK4</td>
+      <td>Yamamoto and Kitagawa, 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA5 eGFP PLK4 kinase +L1</td>
+      <td>Yamamoto and Kitagawa, 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NGS outer FOR</td>
+      <td>Hart et al., 2015</td>
+      <td></td>
+      <td>AGGGCCTATTTCCCATGATTCCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NGS outer REV</td>
+      <td>Hart et al., 2015</td>
+      <td></td>
+      <td>TCAAAAAAGCACCGACTCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 1 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>CACCGACTTCAGGAGGTGGAGCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 1 reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>AAACGGTGCTCCACCTCCTGAAGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 2 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>CACCGTCGTAGCTGGAGTGGAGCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 2 reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>AAACGTGCTCCACTCCAGCTACGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 1 IVT forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>GGATCCTAATACGACTCACTATAGGGACTTCAGGAGGTGGAGCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 1 IVT reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTCTAGCTCTAAAACGGTGCTCCACCTCCTGAAGTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 1 check forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>TCTGGCCCACTTTGTATTCTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA 1 check reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>CCAGGTCAGGAGATCGAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA exon 5 IVT forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>GGATCCTAATACGACTCACTATA GTCTGCCATCAGTGTGCACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 sgRNA exon 5 IVT reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTCTAGCTCTAAAACAAGTGCACACTGATGGCAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 exon 5 check forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>AAGCACATGCCCAAAATGTAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 exon 5 check reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>GGGTCCATCAAACCACACAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cr_tracr_RNA</td>
+      <td>This study</td>
+      <td></td>
+      <td>GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IVT forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>TAATACGACTCACTATAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IVT reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>AAAAGCACCGACTCGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>ACTAGGCGCGCCAGATGAACAGAGCGTGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTAGGCGGCCGCTTACCTTCCACTATTTTCATCTGTATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 256 reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTAGGCGGCCGCTTACATGGGCTTCCGATGAACTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 257 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>ACTAGGCGCGCCAGCATCTTTTGTTACCACTCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 409 reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTAGGCGGCCGCTTATTGAAAGAAAGTTGGTGAACGTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 410 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>ACTAGGCGCGCCAAAATCCCGGGACCAGCATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 RING reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTAGGCGGCCGCTTAATCAAGCTGTTGTGTTACTTCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 505 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>ACTAGGCGCGCCACAGAATGAAGATTATCATCACGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 709 reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTAGGCGGCCGCTTACATGTCTCCAGAAGCAGCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 710 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>ACTAGGCGCGCCACAGACAAGCCTTTTTTCTGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 Δ 505–709 forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>CAGACAAGCCTTTTTTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 Δ 505–709 reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>AATCTTCTCCTCATCTTCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 C18R forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>TCCCGCAATTTCTCCATACGAATGAAACATCGGAAAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 C18R reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>GGTTTTCCGATGTTTCATTCGTATGGAGAAATTGCGGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 Δ RING forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>GCTCCACTCCAGCTACGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 Δ RING reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>TCGGAAAACCTCAGCAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Remove FLAG-BirA reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>GGTACCAAGCTTAAGTTTAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Remove FLAG-BirA forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>GGGGGATCTGGCCCCGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T7 tag forward</td>
+      <td>This study</td>
+      <td></td>
+      <td>CAGCCTCCGGACTCTAGCGTTTAAACTTAAGCTTGGTACCATGGCCAGCATGACCGGCGGCCAGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T7 tag reverse</td>
+      <td>This study</td>
+      <td></td>
+      <td>CTCTGTTCATCTGGCGCGCCGCCGCCGGGGCCAGATCCCCCACCCATCTGCTGGCCGCCGGTCATGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PLK4 for</td>
+      <td>This study</td>
+      <td></td>
+      <td>TTGGCGCGCCAATGGCGACCTGCATCGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PLK4 rev</td>
+      <td>This study</td>
+      <td></td>
+      <td>CCGCTCGAGTTAACATTCTTGTTGGATTATCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CEP120 siRNA siGENOME</td>
+      <td>Comartin et al., 2013</td>
+      <td></td>
+      <td>GAUGAGAACGGGUGUGUAU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIM37 siRNA ON-TARGETplus SMARTpool</td>
+      <td>This study, Dharmacon</td>
+      <td></td>
+      <td>GGACUUUGCUGGAGGUUAA, AUACGAAACUCCACAAAUA, AGAGUGAGUUGAUAUCUAA, GAAUGUAGAAGCUGUAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Non-target #4</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td>AUGAACGUGAAUUGCUCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Luciferase GL2 control</td>
+      <td>Dharmacon</td>
+      <td></td>
+      <td>CGUACGCGGAAUACUUCGA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP135(rabbit, polyclonal)</td>
+      <td>Bird and Hyman, 2008</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 (mouse, monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-126</td>
+      <td>Western blot (1:250)IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p21 (mouse, monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-817</td>
+      <td>Western blot (1:200)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mdm2 (mouse, monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>MABE340</td>
+      <td>Western blot (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>γ-Tubulin (mouse, monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>T6557</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TRIM37 (rabbit, polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A301-174A</td>
+      <td>Western blot (1:250)IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP120 (rat, polyclonal)</td>
+      <td>PMID:29741480</td>
+      <td></td>
+      <td>Western blot (1:1000)IF (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CETN2 (mouse, monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>04-1624</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG (mouse, monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>F7425</td>
+      <td>Western blot (1:1000)IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PLK4 (mouse, monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>MABC544</td>
+      <td>Western blot (1:500)IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BirA (mouse, monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NBP2-59939</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Centrobin (rabbit, polyclonal)</td>
+      <td>Proteintech</td>
+      <td>26880-1-AP</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP192 (rabbit, polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A302-324</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP192 (rabbit, polyclonal)</td>
+      <td>Pelletier et al., 2004</td>
+      <td></td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PCNT (rabbit, polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab4448</td>
+      <td>Western blot (1:500)IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PCNT (mouse, monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab28144</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SASS6 (rabbit, polyclonal)</td>
+      <td>Dammermann et al., 2004</td>
+      <td></td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SASS6 (goat, polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-81431</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Glutamylated tubulin (GT335) (mouse, monoclonal)</td>
+      <td>Adipogen</td>
+      <td>AG-20B-0020-C100</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP97 (goat, polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-100028</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CEP215 (rabbit, polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>06-1398</td>
+      <td>Western blot (1:500)IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>T7 (mouse, monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>69522-3</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (mouse, monoclonal)</td>
+      <td>Covance</td>
+      <td>MMS-101R</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Myc (goat, polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab9132</td>
+      <td>Immunoprecipitation (1 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa Fluor 488 (donkey, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A21202</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 568 (donkey, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A10042</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat Alexa Fluor 647 (donkey, polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>712-605-153</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat Alexa Fluor 647 (donkey, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A21447</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse HRP</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>170-6516</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit HRP</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>170-6515</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IRDye 800CW</td>
+      <td>LI-COR</td>
+      <td>926-32211</td>
+      <td>Western blot (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IRDye 680RD</td>
+      <td>LI-COR</td>
+      <td>926-8070</td>
+      <td>Western blot (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Invitrogen/Thermo Fisher Scientific</td>
+      <td>D21490</td>
+      <td>500 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prolong Gold antifade reagent</td>
+      <td>Life Technologies/Thermo Fisher Scientific</td>
+      <td>P36930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Centrinone B</td>
+      <td>Tocris Bioscience</td>
+      <td>1384545</td>
+      <td>Used as indicated</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nutlin-3a</td>
+      <td>Cayman Chemical</td>
+      <td>10004372-1</td>
+      <td>600 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RO-3306</td>
+      <td>Selleck Chemicals</td>
+      <td>S7747</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BI-2536</td>
+      <td>ChemieTek</td>
+      <td>CT-BI2536</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MLN8237</td>
+      <td>Selleck Chemicals</td>
+      <td>S1133</td>
+      <td>200 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG132</td>
+      <td>Selleck Chemicals</td>
+      <td>S2619</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418</td>
+      <td>WISENT Bioproducts</td>
+      <td>400-130-IG</td>
+      <td>Used as indicated</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SiR-DNA</td>
+      <td>Spirochrome</td>
+      <td>CY-SC007</td>
+      <td>200 nM</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>SoftWoRx software</td>
+      <td></td>
+      <td>RRID:SCR_019157</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CellProfiler Image Analysis Software</td>
+      <td>Broad Institute</td>
+      <td>RRID:SCR_007358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>R Project for Statistical Computing</td>
+      <td></td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji</td>
+      <td>Max Planck Institute of Molecular and Cell Biology and Genetics; Dresden; Germany</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>NIS-Elements</td>
+      <td></td>
+      <td>RRID:SCR_014329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>LI-COR Image Studio Software</td>
+      <td></td>
+      <td>RRID:SCR_015795</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiScribe T7 High Yield RNA Synthesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E2040S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agencourt RNAClean XP</td>
+      <td>Beckman Coulter</td>
+      <td>A63987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp DNA Blood Maxi Kit</td>
+      <td>Qiagen</td>
+      <td>51194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Spin Miniprep Kit</td>
+      <td>Qiagen</td>
+      <td>27106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Life Technologies/Thermo Fisher Scientific</td>
+      <td>13778-150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>Life Technologies/Thermo Fisher Scientific</td>
+      <td>L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HiFi HotStart ReadyMix</td>
+      <td>Kapa Biosystems</td>
+      <td>KK2601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>E2611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Multi Site Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>200513</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and drug treatments
 
 All cell lines were cultured in a 5% CO2 humidified atmosphere at 37°C. HEK293T (female, human embryonic kidney epithelial), hTERT RPE-1 (female, human epithelial cells immortalized with hTERT), and A375 cells (female, human malignant melanoma epithelial) are from ATCC. hTERT RPE-1 and A375 stably expressing Cas9 were from D Durocher (Hart et al., 2015; Zimmermann et al., 2018). All references to RPE-1 and A375 cells herein refer to hTERT RPE-1 or A375 stably expressing Cas9. RPE-1, HEK293T, and A375 were grown in Dulbecco’s modified Eagle’s medium (Gibco) supplemented with 10% (v/v) fetal bovine serum (FBS; Gibco) and 2 mM Glutamax (Gibco). PLK4 inhibitor centrinone B (Tocris) was used as described. Nutlin-3a (Cayman Chemical) was used at 600 nM. The CDK1, PLK1, and Aurora A kinase inhibitors RO-3306 (Selleck Chemicals), BI-2536 (ChemieTek), and MLN8237 (Selleck Chemicals) were used at 10 μM, 100 nM, and 200 nM, respectively. MG132 (Selleck Chemicals) was used at 10 μM. G418 (WISENT Bioproducts) was used at 600 μg/mL for cell selection and 200 μg/mL for routine culture. All cell lines used have been authenticated by STR profiling and tested negative for mycoplasma contamination.
 
-## Plasmid construction
+### Plasmid construction
 
 TRIM37 C18R was created with pcDNA5 FB TRIM37 as a template using site-directed mutagenesis (QuikChange, Agilent). Truncation mutants were created by PCR using pcDNA FB TRIM37 as a template and ligated into pcDNA5 FLAG-BirA digested with NotI and AscI. Internal deletions were created using pcDNA5 FB TRIM37 as a template using the Q5 Site-Directed Mutagenesis kit (NEB). pSIN constructs were created by amplifying the insert from the corresponding pcDNA5 plasmid and using Gibson cloning (NEB) to ligate into pSIN previously digested with BamHI and NotI. To create T7-tagged TRIM37, first FLAG-BirA was removed from pcDNA5 Flag-BirA by PCR. The appropriate TRIM37 mutant was amplified with primers encoding the T7 tag and inserted in the pcDNA5 template using Gibson cloning. PLK4 was amplified from cDNA and ligated into pcDNA5-FRT/TO-Myc using AscI and XhoI. sgRNA guide sequences were cloned into pLentiguidePuro as described (Sanjana et al., 2014).
 
-## Virus production
+### Virus production
 
 To produce lentivirus, 4 × 106 HEK293T were seeded in a T-75 flask and subsequently transfected with 4 μg of the appropriate transfer vector, 3 μg psPAX2, and 2 μg pCMV-VSV-G using 18 µL each Lipofectamine 3000/P3000 reagent (Invitrogen). After 24 hr, growth medium was replaced with fresh medium containing 30% FBS and viral supernatant was collected after a further 48 hr. Virus was stored at –80°C.
 
-## CRISPR/Cas9 screening
+### CRISPR/Cas9 screening
 
 CRISPR screens were performed as described (Hart et al., 2015; Zimmermann et al., 2018). Briefly, Cas9-expressing cells were transduced with the TKOv1 viral library (~90 k sgRNA) (Hart et al., 2015) at low MOI (~0.3) in the presence of 4 μg/mL polybrene. RPE-1 cells were selected as described (Olivieri and Durocher, 2021). A375 cells were selected using 2 μg/mL puromycin. 10× 106 cells were harvested 4 days post-transduction and represents day 0. Cells were grown for 6 days before being split for drug treatment in technical triplicate and further grown for 21 days. A library coverage of >100 cells/sgRNA was maintained at each step. gDNA from cell pellets was isolated using a QIAamp Blood Maxi Kit (Qiagen) and genome-integrated sgRNA sequences were amplified using the KAPA HiFi HotStart ReadyMix (Kapa Biosystems). Sequencing libraries were made by addition of i5 and i7 multiplexing barcodes in a second round of PCR and the product gel purified using QIAquick Gel Purification kit (Qiagen). Libraries were sequenced using Illumina HiSeq2500 or NextSeq500. Sequence data was analyzed using MAGeCK (Li et al., 2014) to determine sgRNA distribution among the samples. Drug-treated samples at 21 days post-drug addition were compared to DMSO-treated cells at 12 days post-drug addition to equalize the number of cell doublings. Genes with FDR <0.05 were used for further analysis. The significant gene list for the RPE-1 200 nM screen is the union from two independent biological replicates.
 
-## Network analysis and gene enrichment
+### Network analysis and gene enrichment
 
 High-scoring genes from MAGeCK analysis were visualized using Cytoscape (Shannon et al., 2003). General node arrangement was performed using the yFiles Organic Layout and manually modified to facilitate visualization. Each screen condition (200 nM centrinone B, 500 nM centrinone B, and Nutlin-3a) was considered as a source node, corresponding hits as target nodes, and FDR as edge attributes. Genes from the indicated datasets were analyzed using the ClueGo app within Cytoscape (Bindea et al., 2009). Enrichments for Biological Function (circles) or Cellular Component (hexagons) based on all experimental evidence was determined. Only pathways with p-value < 0.05 are shown. Nodes arranged using the yFiles Organic Layout.
 
-## CRISPR/Cas9 gene disruption
+### CRISPR/Cas9 gene disruption
 
 For lentivirus-mediated gene disruption of TRIM37, sgRNA sequences were cloned into plentiGuide-Puro as described (Sanjana et al., 2014). RPE-1 Cas9 cells were infected with lentiviral particles and selected as described above for CRISPR/Cas9 screening. A Clonal TRIM37-/- line was generated using in vitro transcribed (IVT) sgRNA. IVT templates were created by PCR using cr_tracrRNA, IVT forward, IVT reverse, and sgRNA-specific oligonucleotides (TRIM37 sgRNA 1). PCR products were used directly as templates for IVT using HiScribe T7 transcription kit (NEB). Resulting RNA was purified using RNAClean XP beads (Beckman Coulter) and used to transfect RPE-1 cells using RNAiMAX (ThermoFisher) according to the manufacturer’s instructions. Clonal lines were generated by limiting dilution and assessed for gene disruption by Western blot and TIDE (Brinkman et al., 2014) or Synthego ICE (Synthego Performance Analysis, ICE Analysis. 2019. v2.0. Synthego; accessed 9/19/2018) analyses. TRIM37-/- pools in RPE-1 and A375 cells were generated similarly using an sgRNA targeting exon 5. After transfection, cells were grown in medium containing 500 nM centrinone B for 2 weeks to select for TRIM37 disruption before growth in normal medium.
 
-## Stable cell line generation
+### Stable cell line generation
 
 To generate cell lines, 200,000 cells were seeded with serial aliquots of viral supernatant and 4 μg/mL polybrene (MilliporeSigma) in one well of a six-well plate. Medium was changed after 24 hr and appropriate drug selection was added after an additional 24 hr where required. For stable expression of FLAG-BirA rescue constructs, immunofluorescence was performed to ensure all cells expressed the appropriate transgene. Doxycycline-inducible lines were selected with 600 μg/mL G418 until control cells died. We used pools that showed approximately 30% survival after initial selection.
 
-## siRNA conditions
+### siRNA conditions
 
 For siRNA knockdown experiments, 200 k cells were seeded per well of a six-well plate. Cells were reverse transfected using the indicated siRNA trigger (Horizon Discovery, Dharmacon; Supplementary file 3). For each well, 5 μL of 20 μM siRNA was combined with 3 μL Lipofectamine RNAiMAX (ThermoFisher) in 125 µL OPTIMEM medium (Gibco). Media was replaced after 24 hr and cells processed after 72 hr.
 
-## Immunofluorescence staining and microscopy
+### Immunofluorescence staining and microscopy
 
 Cells were grown as indicated on No. 1.5 coverslips, washed once with PBS, and fixed with –20°C methanol for at least 10 min. All subsequent steps performed at room temperature (RT). Coverslips were rinsed with PBS and blocked with antibody solution (PBS, 0.5% (w/v) BSA and 0.05% Tween-20) for 15–30 min. Samples were incubated with primary antibodies (Supplementary file 3) for 1 hr, washed 3 × 5 min and incubated with secondary antibodies (Supplementary file 3) and DAPI (0.1 μg/mL) for 45 min. Coverslips were washed 3 × 5 min and mounted on slides using Prolong Gold (Invitrogen). Deconvolution wide-field microscopy was performed using the DeltaVision Elite system equipped with an NA 1.42 60× PlanApo objective (Olympus) and an sCMOS 2048 × 2048 camera (Leica Microsystems). Each field was acquired with a z-step of 0.2 μm through the entire cell and deconvolved using softWoRx (v6.0, Leica Microsystems). Maximum intensity projections are shown (0.1080 μm/pixel). Display levels are the same for all images in a panel unless otherwise indicated.
 
@@ -152,7 +1221,7 @@ For live imaging, 15,000 cells were seeded per well in an eight-well Lab-Tek II 
 
 Super-resolution microscopy was performed on a three-dimensional structured-illumination microscope (3D-SIM) (OMX Blaze v4, Leica Microsystems) as described (Mojarad et al., 2017).
 
-## Image analysis
+### Image analysis
 
 All automated quantification pipelines were created using CellProfiler 3.0 (McQuin et al., 2018) (http://www.cellprofiler.org/).
 
@@ -164,22 +1233,22 @@ Figure 3—figure supplement 2 and Figure 7—figure supplement 1D: Nuclei were 
 
 Figure 6D and Figure 6—figure supplement 1D: Each image was manually cropped to include a single mitotic cell. Each channel was background subtracted using the lower quartile intensity of the entire image and each channel was segmented into objects using a robust background thresholding and the integrated intensity of each object was measured.
 
-## Western blot
+### Western blot
 
 Cells were grown as indicated, washed once with PBS and resuspended directly in 2× SDS-PAGE sample buffer containing Benzonase (0.25 U/μL, MilliporeSigma) and heated at 95°C for 5 min. Proteins (typically 10–20 μg) were separated by SDS-PAGE and transferred to PVDF using a wet transfer apparatus (Bio-Rad). Total protein was detected by staining with PonceauS (MilliporeSigma) and scanning. All steps performed at RT unless indicated. Blocking and primary antibody incubations were performed using TBS-T (TBS + 0.05% Tween-20) with 0.5% skim-milk powder (Bioshop). Membranes were blocked for 30 min and incubated with primary antibody (Supplementary file 3) overnight at 4°C. After washing 3 × 5 min, membranes were incubated with secondary antibodies for 45. HRP-conjugated secondary antibodies (Bio-Rad) were incubated in TBS-T/milk for 45 min and washed 3 × 5 min with TBS-T before detecting using a Chemidoc imager (Bio-Rad). NearIR-conjugated secondary antibodies (LI-COR Biosciences) were incubated in TBS-T/milk + 0.015% SDS for 45, washed 3 × 5 min with TBS-T and 1 × 5 min with TBS before drying the membrane for 2 hr at RT. Dried blots were imaged using an Odyssey CLx imager (LI-COR Biosciences).
 
 Quantification of Western blots were performed on images obtained using NearIR secondary antibodies. Images were quantified using Image Studio software (LI-COR Biosciences) and normalized to Ponceau S or Coomassie Blue staining of the same lane.
 
-## Clonogenic survival assays
+### Clonogenic survival assays
 
 Two-hundred and fifty RPE-1 or 200 A375 cells were seeded in either a 10 cm dish or six-well plate. The next day medium was removed and medium containing the indicated drug was added. For experiments using doxycycline-inducible cell lines, the media was refreshed every 3–4 days to ensure continued expression of the induced proteins. After 12–14 days, plates were rinsed once with PBS and fixed and stained with 0.5% crystal violet (MilliporeSigma) in 20% methanol for at least 20 min. Plates were washed extensively with water, dried, and scanned. Images were segmented using the Trainable Weka Segmentation tool (Arganda-Carreras et al., 2017) in ImageJ. A new model was built for each replicate if required. The resulting segmentation image was thresholded and used as a mask to overlay the original image that was inverted and background subtracted using a 50-pixel rolling circle, or the average of a region not containing colonies. The colony intensity per well or dish was then measured within the masked region.
 
-## Immunoprecipitation and protein treatments
+### Immunoprecipitation and protein treatments
 
 To detect complex formation between PLK4 and TRIM37, 2 × 106 RPE-1 cells were seeded per 10 cm dish and transfected with 3.75 μg Myc-PLK4 and 3.75 μg pcDNA5 FLAG-BirA construct using 15 μL Lipofectamine 3000/P3000 (ThermoFisher). Cells were harvested 24 hr post-transfection, washed once with PBS, and resuspended in lysis buffer (50 mM HEPES pH 8; 100 mM KCl; 2 mM EDTA; 10% glycerol; 0.1% NP-40; 1 mM DTT; protease inhibitors [Roche] phosphatase inhibitor cocktail 3 [MilliporeSigma]) for 30 min on ice. Lysates were frozen in dry ice for 5 min, then thawed and centrifuged for 20 min at 16,000× g at 4°C. An aliquot representing the input was removed before cleared supernatants were incubated with equilibrated anti-FLAG M2 Affinity Gel (MilliporeSigma) for 1–2 hr at 4°C. Beads were washed three times with lysis buffer before resuspension in 2× SDS-PAGE sample buffer. Samples were heated at 95°C for 5 min.
 
 To probe PLK4 modification in Figure 7D,F,G, 350 k HEK293T cells were seeded per well of a six-well plate and subsequently transfected with 0.67 μg Myc-PLK4 and 1 μg T7-TRIM37 construct using 3.34 μL Lipofectamine 3000/P3000. Medium was changed after 6 hr and cells incubated for 48 hr in total before sampling. For Figure 7G, the indicated drug was added 3 and 6 hr before collection. Cells were collected directly in 2× SDS-PAGE sample buffer for Figure 7D and G. For Figure 7F, cells were collected and washed once with PBS. Cells were resuspended in a modified TNTE buffer (10 mM Tris-HCl, pH = 7.4, 100 mM NaCl, 1 mM EDTA, 1 mM DTT, 0.1% TX-100; protease inhibitors; ±phosphatase inhibitor cocktail 3) and incubated for 30 min on ice before addition of MnCl2 and λ-phosphatase (Bio-Rad) to the appropriate samples for 30 min at 30°C. The soluble fractions were obtained by centrifugation at 16,000× g for 30 min. To probe for PLK4 ubiquitination, 1.5 × 106 HEK293T cells were seeded in a 10 cm dish and transfected with 2 μg Myc-PLK4, 2 μg HA-ubiquitin, and 2 μg eGFP or T7-TRIM37 with 12 μL Lipofectamine 3000/P3000. The medium was changed after 16 hr and cells harvested after 48 hr. Cells were washed once with PBS and resuspended in modified TNTE buffer and the soluble fraction was obtained as described above. Lysates were incubated with 3 μg anti-Myc antibodies (Supplementary file 3) and incubated for 1 hr at 4°C. Equilibrated Protein G Sepharose 4 Fast Flow beads (Cytiva) were added and samples further incubated for 1 hr at 4°C. Immunoprecipitates were washed 3× with modified TNTE buffer and eluted by addition of 2× SDS-PAGE sample buffer and heating at 95°C for 5 min.
 
-## FRAP analysis
+### FRAP analysis
 
 For experiments using disruption lines, 62.5 k cells were seeded per well of an eight-well LabTekII chamber. Cells were transfected with 400 ng pcDNA5 GFP-PLK4 or pcDNA5 GFP-PLK4 kin + L1 using 0.8 and 0.6 µL P3000/Lipofectamine 3000. Media was removed after 6 hr and replaced with media containing DMSO or centrinone B. Cells were incubated approximately 16 hr before imaging using a Nikon A1R-HD25 scanning laser confocal microscope with a LUN4 laser unit and GaAsP PMT. A single Z-slice was imaged in Galvano mode, 1.2 μs dwell time using a 488 nm excitation wavelength, a 521/42 bandpass emission filter, and a 60× NA 1.2 water immersion objective. GFP-PLK4 condensates were imaged at 0, 4, and 8 s before bleaching for 500 ms using 60% 488 laser power and 16 fps scan speed. Images were acquired every 4 s for a total of 90 s after bleaching. Imaging parameters were adjusted as needed between replicates (typically 1.2% laser power with gain setting of 10). Analysis was performed using NIS-elements ‘time measurement’ module. For each image an ROI was drawn around the targeted area, a similar unbleached area, and a background region. Where appropriate, the ROI was moved to track the structure of interest. The signal from the targeted area (ROI1) was background subtracted (ROI3) and then normalized using the unbleached area (ROI2) to correct for photobleaching during imaging. Ten to 15 GFP-PLK4 condensates from different cells were analyzed per condition per replicate.

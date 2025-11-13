@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Although thrombosis has been extensively studied using various animal models, our understanding of the underlying mechanism remains elusive. Here, using zebrafish model, we demonstrated that smarca5 -deficient red blood cells (RBCs) formed blood clots in the caudal vein plexus. We further used the anti-thrombosis drugs to treat smarca5 embryos and found that a thrombin inhibitor, argatroban, partially prevented blood clot formation in zko1049a smarca5 . To explore the regulatory mechanism of zko1049a smarca5 in RBC homeostasis, we profiled the chromatin accessibility landscape and transcriptome features in RBCs from smarca5 and their siblings and found that both the chromatin accessibility at the zko1049a keap1a promoter and expression of keap1a were decreased. Keap1 is a suppressor protein of Nrf2, which is a major regulator of oxidative responses. We further identified that the expression of hmox1a , a downstream target of Keap1-Nrf2 signaling pathway, was markedly increased upon smarca5 deletion. Importantly, overexpression of keap1a or knockdown of hmox1a partially rescued the blood clot formation, suggesting that the disrupted Keap1-Nrf2 signaling is responsible for the RBC aggregation in smarca5 mutants. Together, our study using zebrafish smarca5 mutants characterizes a novel role for smarca5 in RBC aggregation, which may provide a new venous thrombosis animal model to support drug screening and pre-clinical therapeutic assessments to treat thrombosis.
+Although thrombosis has been extensively studied using various animal models, our understanding of the underlying mechanism remains elusive. Here, using zebrafish model, we demonstrated that smarca5-deficient red blood cells (RBCs) formed blood clots in the caudal vein plexus. We further used the anti-thrombosis drugs to treat smarca5zko1049a embryos and found that a thrombin inhibitor, argatroban, partially prevented blood clot formation in smarca5zko1049a. To explore the regulatory mechanism of smarca5 in RBC homeostasis, we profiled the chromatin accessibility landscape and transcriptome features in RBCs from smarca5zko1049a and their siblings and found that both the chromatin accessibility at the keap1a promoter and expression of keap1a were decreased. Keap1 is a suppressor protein of Nrf2, which is a major regulator of oxidative responses. We further identified that the expression of hmox1a, a downstream target of Keap1-Nrf2 signaling pathway, was markedly increased upon smarca5 deletion. Importantly, overexpression of keap1a or knockdown of hmox1a partially rescued the blood clot formation, suggesting that the disrupted Keap1-Nrf2 signaling is responsible for the RBC aggregation in smarca5 mutants. Together, our study using zebrafish smarca5 mutants characterizes a novel role for smarca5 in RBC aggregation, which may provide a new venous thrombosis animal model to support drug screening and pre-clinical therapeutic assessments to treat thrombosis.
 
 ## Introduction
 
@@ -38,17 +38,41 @@ In our previous study, genetic deletion of an epigenetic regulator-smarca5 (smar
 
 ## Results
 
-## The blood clots are formed in the CVP in smarca5zko1049a
+### The blood clots are formed in the CVP in smarca5zko1049a
 
 In our previously generated smarca5zko1049a mutants (Ding et al., 2021), we observed that the blood clots were formed in CVP at 2 days post fertilization (dpf), which was not present in their sibling embryos (Figure 1A). Our whole mount in situ hybridization (WISH) data showed that scl was expressed in blood clots, indicating that cells in the observed blood clots were primitive RBCs in smarca5zko1049a (Figure 1B). To directly observe the blood clot formation in the CVP, we used the transgenic line (Tg) (gata1:dsRed;kdrl:GFP) to label RBCs and endothelial cells, in smarca5zko1049a and in siblings. Confocal imaging analysis showed that the blood clots were formed inside the blood vessels (Figure 1C). Notably, there was no difference in the distribution of myeloid cells labeled by Tg (coro1a:GFP) or Tg (mpo:GFP) in caudal hematopoietic tissue (CHT) between smarca5zko1049a and their siblings, and we did not observe accumulation of myeloid cells in the blood clots of smarca5zko1049a (Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig1-v2.jpg)
+
+**Figure 1.:** (A) The bright-field of tail region in smarca5zko1049a and their siblings at 2 days post fertilization (dpf). The areas circled by red dotted line show the blood clots in the caudal vein plexus. (B) Expression of scl at 2 dpf in smarca5zko1049a and their siblings by WISH. The amplification region in the black rectangular box in CHT shows the enriched expression of scl in blood clots (indicated by arrow heads) in the caudal vein plexus. (C) The confocal imaging of transgenic line (Tg) (gata1:dsRed;kdrl:GFP) in smarca5zko1049a and their siblings at 2 dpf. The amplification region in the white rectangular box in CHT shows the coagulation of red blood cells (RBCs) (indicated by arrow heads) in the caudal vein plexus. (D) Expression of gata1, ikaros and scl at 33 hr post fertilization (hpf) in smarca5zko1049a and their siblings by WISH. (E) qPCR analysis showing the expression of gata1, ikaros, hbae1, and hbbe1 in smarca5zko1049a and their siblings at 33 hpf. The expression level of these genes in smarca5 siblings was set at 1. Data are mean ± s.d. (E). Asterisk presents statistical significance (n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The confocal imaging of Tg (mpo:GFP; gata1:dsRed) and Tg (coro1a:GFP; gata1:dsRed) in smarca5zko1049a and their siblings at 2 dpf. (B) Expression of pu.1 and lyz at 33 hpf and/or 2 dpf in smarca5zko1049a and their siblings by WISH. (C) qPCR analysis showing the expression of pu.1, mfap4, and lyz in smarca5zko1049a and their siblings at 33 hpf and 2 dpf. The expression level of these genes in smarca5 siblings was set at 1. Data are mean ± s.d. (C). Asterisk presents statistical significance (n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
 
 To further determine whether smarca5 is involved in the development of primitive hematopoiesis, we examined the expression level of gata1 and pu.1, which are the erythrocyte and myeloid marker genes, respectively, in smarca5zko1049a and their siblings. WISH and quantitative PCR (qPCR) analyses showed that the expression level of gata1 and pu.1 was comparable between smarca5zko1049a and their siblings at 33 hours post fertilization (hpf) (Figure 1D–E and Figure 1—figure supplement 1B-C) . Moreover, the expression level of ikaros and scl, which are two primitive erythrocyte markers, was normal (Figure 1D–E), as well as the expression of globin genes in smarca5zko1049a (Figure 1E). In addition, the myeloid markers pu.1, lyz and mfap4 were normally expressed in smarca5zko1049a at 33 hpf and 2 dpf (Figure 1—figure supplement 1B-C). Thus, the early development of primitive erythrocytes and myeloid cells, is not affected upon the loss of smarca5 in zebrafish embryos.
 
 Taken together, these results show that smarca5 is functionally required for normal behaviors of primitive erythrocytes and the blood clotting is formed by erythrocytes in smarca5zko1049a.
 
-## The blood clots are formed by RBC aggregation
+### The blood clots are formed by RBC aggregation
 
 To visualize how smarca5-deficient RBCs formed blood clots in the CVP of smarca5zko1049a, we performed time lapse imaging using Tg (gata1:dsRed). We tracked the behavior of circulating RBCs in siblings (, Video 1) and smarca5zko1049a (Video 2) from 36 hpf to 2 dpf. The results showed that smarca5-deficient RBCs tended to clump in the CVP at around 40 hpf, after which these clots will migrate or break off under blood flow at the early stage. As the blood clots formed with larger size, these clots will finally lodge in the vein (Video 2). The snapshot of Tg (gata1:dsRed) showed the process of blood clots formation from 36 hpf to 2 dpf in smarca5zko1049a and their siblings (Figure 2A). These results show that the clumping of RBCs precedes their sequestration in CVP, suggesting that the formation of blood clots might be independent of vascular niche.
+
+![Video 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-video1.mp4.jpg)
+
+**Video 1.:** The time lapse imaging of sibling embryos with Tg (gata1:dsRed) background from 36 hpf to 2 dpf.
+
+![Video 2.](https://cdn.elifesciences.org/articles/72557/elife-72557-video2.mp4.jpg)
+
+**Video 2.:** The time lapse imaging of smarca5zko1049a with Tg (gata1:dsRed) background from 36 hpf to 2 dpf.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig2-v2.jpg)
+
+**Figure 2.:** (A) The snapshot of Tg (gata1:dsRed) in smarca5zko1049a and their siblings from 36 hpf to 2 dpf. The yellow rectangular boxes in CHT show the formed blood clots smarca5zko1049a. (B) The bright-field of parabiosis at 2 dpf between smarca5zko1049a and their siblings. The amplification region in the red rectangular box in CHT shows the blood clots (indicated by arrow heads) in smarca5zko1049a and their siblings. (C) The confocal imaging of parabiosis generated between smarca5zko1049a and their siblings with Tg (gata1:GFP) and Tg (gata1:dsRed) background, respectively. The magnification in CHT shows the aggregation of gata1:GFP+ cells (indicated by arrow heads) in the caudal vein plexus. (D) The confocal imaging of Tg (CD41:GFP) in smarca5zko1049a and their siblings at 2 dpf. The magnification in the yellow rectangular box in CHT shows the blood clots and the distribution of CD41:GFP+ cells. (E) Drugs used to examine whether the blood clots in smarca5zko1049a can be alleviated. (F) The bright-field of tail region in smarca5zko1049a at 2 dpf in control group and with argatroban treatment. The blood clots are indicated by arrow heads. (G) The quantification of blood clots phenotype in (F). Data are mean ± s.d. (G). Asterisk presents statistical significance (**p< 0.01). p Values were calculated by two-tailed unpaired Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The confocal imaging of Tg (kdrl:mCherry;cmyb:GFP) in smarca5zko1049a and their siblings at 2 dpf. (B) The statistical data shows the number of cmyb:GFP+ cells in the CHT in (A). Data are mean ± s.d. (B). Asterisk presents statistical significance (n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
 
 To further explore whether the blood clots formed in smarca5zko1049a were not resulted from the abnormal niche environment, we performed parabiosis experiment using smarca5zko1049a and their siblings. The parabiotic embryo pairs with smarca5zko1049a and siblings share a common bloodstream so that the behavior of circulating cells could reflect the influence of niche environment on these cells. We found that the blood clots, which occurred in smarca5 mutants, were observed in both smarca5zko1049a and their siblings in parabiosis pairs (Figure 2B), indicating the smarca5-deficient RBCs form blood clots largely independent of niche environment. To specifically label the RBCs in smarca5zko1049a and their siblings, the Tg (gata1:dsRed) or Tg (gata1:GFP) transgenic line was used, respectively. The results showed that smarca5-deficient RBCs labeled by gata1:GFP aggregated both in smarca5zko1049a and in their siblings in parabiosis pairs (Figure 2C). Although several sibling RBCs labeled by gata1:dsRed were found trapped in blood clots, the vast majority of gata1:dsRed+ cells were normally circulating in blood stream both in smarca5zko1049a and their siblings (Figure 2C). Overall, these results indicate that the blood clots in smarca5zko1049a are formed largely in RBC-autonomous manner. To further explore whether thrombocytes participate in the formation of blood clots, we detected the blood clots using Tg (CD41:GFP). The imaging data showed that no CD41:GFPhigh-labeled thrombocytes were present in the blood clots (Figure 2D).
 
@@ -56,7 +80,7 @@ The CHT is a hematopoietic tissue critical for HSPC development. We thus wanted 
 
 Zebrafish is a useful model to screen drugs for preclinical applications. In our smarca5-deficient zebrafish model, we observed blood clots in veins, raising questions regarding whether there was a thrombus-like phenotype. To this end, we tried to test the clinically used anti-thrombosis drugs to treat smarca5zko1049a embryos. We tested reagents including heparin, aspirin, and argatroban that have been reported to target thrombosis to examine whether the blood clots in smarca5zko1049a can be alleviated after chemical treatment. The embryos were incubated in aspirin or injected with heparin or argatroban at 36 hpf and the phenotype was examined at 2 dpf. As a result, we found that a direct thrombin inhibitor, argatroban, but not an antithrombin-dependent drug, heparin, or a platelet aggregation inhibitor, aspirin, partially prevented blood clot formation in smarca5zko1049a at 2 dpf (Figure 2E-G). These results suggest that the RBC aggregation in smarca5zko1049a is more relevant to venous thrombosis and the smarca5-deficient zebrafish model may serve as a venous thrombosis model to screen drugs in preclinical setting.
 
-## Smarca5-deficient RBCs manifest disintegration of cristae in mitochondria
+### Smarca5-deficient RBCs manifest disintegration of cristae in mitochondria
 
 Both quantitative and qualitative changes in RBCs have been linked to thrombosis (Weisel and Litvinov, 2019). To identify whether smarca5 deletion will lead to the quantitative changes of RBCs, we performed fluorescence activating cell sorter (FACS) analysis of the percentage of gata1:dsRed+ cells in smarca5zko1049a and their siblings. Deletion of smarca5 did not lead to the significant changes in RBC counts at 2 dpf (Figure 3—figure supplement 1A-B). These data suggest that the blood clots in smarca5zko1049a are formed by RBC aggregation with no overt cell number change.
 
@@ -64,9 +88,25 @@ To explore whether there exist qualitative changes in smarca5-deficient RBCs, we
 
 To further investigate the changes in subcellular structure of erythrocytes in smarca5zko1049a, we performed TEM analysis. Compared with smarca5 sibling embryos in which the circulating RBCs had normal organization in mitochondria (Figure 3A–B), we found that the smarca5-deficient erythrocytes displayed disintegration of cristae in mitochondria while nuclear integrity was preserved in smarca5zko1049a (Figure 3C–E). The area of mitochondria was not significantly changed and the number of mitochondria was slightly increased but not significantly changed in smarca5-deficent RBCs (Figure 3F–G). We propose that the erythrocytes in smarca5zko1049a may have undergone cellular damages, such as oxidative stress, which could lead to the disintegration of mitochondria (Lewerenz et al., 2018). It is also possible that the mitochondrial defects may further exacerbate oxidative stresses (Dan Dunn et al., 2015; Yang et al., 2016), thereafter leading to the erythroid defects caused by smarca5 deletion. Thus, the morphological disruption in mitochondria suggests the disorder of cellular homeostasis in erythrocytes after smarca5 deletion.
 
-## Transcriptional dysregulation of genes related to erythrocyte function and homeostasis after Smarca5 deletion
+![Figure 3.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig3-v2.jpg)
+
+**Figure 3.:** (A) The transmission electron microscopy (TEM) view of a longitudinal section through the artery and vein plexus in sibling tail region at 2 dpf. (B) TEM view of erythrocytes in sibling embryos. The red arrow heads indicate the characteristic pattern of organization in mitochondria. (C) TEM view of a longitudinal section through the artery and vein plexus in smarca5zko1049a tail region at 2 dpf. (D) The blue rectangular box showing blood clots in the caudal vein plexus in smarca5zko1049a. The magnification of blood clots is shown (right). (E) TEM view of erythrocytes in smarca5zko1049a. The red arrow heads indicate the characteristic pattern of organization in mitochondria. The disintegration of cristae in mitochondria is observed in smarca5-deficient RBCs. Ery, erythrocyte; EC, endothelial cell; Mito, mitochondria; Nuc, nucleus; Cyto, cytoplasm. (F) Scatter plots showing the section area of mitochondria relative to cell in RBCs from smarca5zko1049a and their siblings. (G) Scatter plots showing the number of mitochondria per cell section in RBCs from smarca5zko1049a and their siblings. Data are mean ± s.d. (F and G). Asterisk presents statistical significance (n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) FACS of gata1:dsRed+ cells in wild-type embryos and Tg (gata1: dsRed) in smarca5zko1049a and their siblings at 2 dpf. (B) The statistical data show the percentage of gata1: dsRed+ cells in smarca5zko1049a and their siblings in (A). (C) Blood-smear and Giemsa-staining analysis in smarca5zko1049a and their siblings at 2 dpf. (D) Scatter plots showing the nucleocytoplasmic ratio in RBCs from smarca5zko1049a and their siblings. Data are mean ± s.d. (B and D). Asterisk presents statistical significance (n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
+
+### Transcriptional dysregulation of genes related to erythrocyte function and homeostasis after Smarca5 deletion
 
 Smarca5 typically regulates nucleosome spacing, further affecting gene transcription (Clapier et al., 2017). To decipher how loss of Smarca5 affects the transcriptome, RNA-seq was used to profile sorted erythrocytes labeled by gata1:dsRed from smarca5zko1049a and their siblings at 2 dpf, respectively (Figure 4A). Principal components analysis (PCA) indicated clear separation of the smarca5zko1049a and sibling samples (Figure 4—figure supplement 1A). A total of 1506 genes were upregulated and 633 genes were downregulated significantly (Log2(fold change) > 1, adjusted p-value < 0.05) in smarca5-deficient erythrocytes compared to erythrocytes from siblings (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of the RBC RNA-seq workflow in smarca5zko1049a and their siblings at 2 dpf. (B) Volcano plot showing differential expression genes between RBCs from smarca5zko1049a and their siblings by DESeq2. −Log10 P, negative log10 adjusted p-value. Adjusted p-value < 0.05, log2 fold change >1. (C) Differential pathways enriched in RBCs from smarca5zko1049a and their siblings by GSVA. The x axis represents the t values of GSVA scores. Two-sided unpaired limma-moderated t test. (D) Enrichment plots for the top pathways in the mutant RBCs by GSEA (Gene Set Enrichment Analysis).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Principal components analysis (PCA) plot of biological replicates by the transcriptional data. (B) Bar plot showing the gene counts of hbae1.1, hbae1.2, hbae1.3, hbae3, hbbe1.3, hbbe2, hbbe3, hbaa1, hbba1, and hbba2 in RBCs from smarca5zko1049a and siblings. (C) Expression of hbae1, hbae3, hbbe1, hbbe2, hbbe3, hbaa1, hbba1, and hbba2 at 2 dpf in smarca5zko1049a and their siblings by WISH. (D) O-dianisidine staining in smarca5zko1049a and their siblings at 2 dpf. The amplification region in the black rectangular box in CHT shows the blood clots (indicated by arrow heads) in smarca5zko1049a. (E) Bar plot showing the gene counts of spi1a, spi1b, mfap4, and lyz in RBCs from smarca5zko1049a and siblings. (F) The bright-field of tail region in smarca5zko1049a at 2 dpf in control group and with pu.1 MO injection. The blood clots are indicated by arrow heads. (G) The quantification of blood clots in (F). Data are mean ± s.d. (G). Asterisk presents statistical significance (n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
 
 Gene set variation analysis (GSVA) revealed a strong enrichment of terms related to ‘Gata1 targets’, ‘autophagy’, ‘erythrocytes take up carbon dioxide and release oxygen’ and ‘erythrocytes take up oxygen and release carbon dioxide’ in sibling erythrocytes; for smarca5zko1049a, while the ‘apoptosis’, ‘environmental stress response’, ‘senescence’, and ‘cell oxidation’ were markedly increased (Figure 4C). The enrichment plots showed the decreased expression of genes related to ‘erythrocyte homeostasis’ in smarca5zko1049a, whereas the expression of genes related to ‘inflammatory response’ was increased (Figure 4D). These results suggest that the disrupted pathways in smarca5-deficient RBCs were highly related to erythrocyte function and cellular homeostasis.
 
@@ -76,17 +116,37 @@ In addition, we observed the persistent expression of spi1a, spi1b, mfap4, and l
 
 Taken together, smarca5 deletion leads to the disrupted pathways related to erythrocyte function and cellular homeostasis.
 
-## Deletion of Smarca5 disrupts chromatin accessibility in RBCs
+### Deletion of Smarca5 disrupts chromatin accessibility in RBCs
 
 To explore the mechanism through which Smarca5 in regulating the chromatin accessibility in RBCs, we performed the ATAC-seq in FACS-purified RBCs from smarca5zko1049a and their siblings at 2 dpf. Density heatmaps of mapped ATAC-seq reads showed that fragments less than 100 bp in length clustered immediately upstream of transcriptional start sites (TSSs) throughout the zebrafish genome in both mutant and sibling RBC nuclei (Figure 5—figure supplement 1A-B). The PCA analysis was performed for ATAC-seq samples and the results showed that the mutant samples or sibling samples can be grouped together, respectively (Figure 5—figure supplement 1C). The feature distributions of mutant-ATAC-seq peaks and sibling-ATAC-seq peaks across the genome were identified by ChIPseeker (Figure 5—figure supplement 1D).
 
 We then calculated the number of genes with changes in chromatin accessibility after smarca5 deletion (Figure 5A). The chromatin accessibility at promoters of 256 genes was decreased in smarca5zko1049a, while there were 439 genes with increased chromatin accessibility at promoters after smarca5 deletion. Next, we screened the motifs enriched in sibling RBC-specific accessible chromatin regions. We found that the erythrocyte master regulator-Gata1 motif was on the top list (Figure 5B). Thus, deletion of smarca5 might affect the binding of hematopoietic transcription factors in erythrocytes, such as Gata1. It has been reported that Smarca5 could interact with Gata1 in erythrocytes (Rodriguez et al., 2005). We propose that Smarca5 might be recruited by Gata1 and mediate the chromatin accessibility of Gata1-binding sites in target genes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig5-v2.jpg)
+
+**Figure 5.:** (A) Venn plot showing the genes of sibling and mutant specific accessible chromatin regions at promoter and distal regulator regions, respectively. (B) Motifs enriched in nucleosome-free regions (NFRs) with lost accessibility after smarca5 deletion. (C) Venn plot showing the overlap of genes with specific accessible chromatin at promoter regions and upregulated expression in mutant (top) and sibling (bottom) RBCs, respectively. Genes for ATAC-seq were assigned by differential accessible regions. (D) Bar plot showing the selected sibling and mutant-specific differential expression genes. Fold change, log2 fold change.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmaps showing density of mapped ATAC-seq reads from single biological replicates 1 kb up and downstream of transcriptional start sites (TSS) in danRer10. Separate heatmaps for fragments of nucleosome free (less than 100 bp) and mononucleosome (between 180 and 247 bp) are shown. (B) Density plots flanking danRer10 TSS from sibling and mutant RBCs for mapped reads shown in (A). (C) PCA plot of biological replicates using all ATAC-seq peaks. (D) Bar plot drew by ChIPseeker showing the feature distributions of mutant-ATAC-seq peaks and sibling-ATAC-seq peaks across the genome. (E) Venn plot showing the overlap of genes with specific accessible chromatin at distal regions and up-regulated expression in mutant (top) and sibling (bottom) RBCs, respectively. Genes for ATAC-seq were assigned by differential accessible regions.
+
 We further detected the genes in which the chromatin accessibility at promoters or distal regions and their transcription were both increased or decreased after smarca5 deletion (Figure 5C and Figure 5—figure supplement 1E). The results showed that the chromatin accessibility at promoters and transcription of 84 genes, such as il34, cox4i2, skap2, vclb, and acbd7, were increased, while the chromatin accessibility at promoters and transcription of 36 genes, such as trim2a, keap1a, acox3, igfbp1a, and ada, were decreased in smarca5-deficient RBCs (Figure 5D). The lack of overlap between changes in gene expression and ATAC-seq signals may partially due to the complex interactions between cis-regulatory elements and trans-regulatory elements in the regulation of gene expression (Gibson and Weir, 2005; Hill et al., 2021; Wittkopp, 2005; Wittkopp et al., 2004). Moreover, cells exhibit signiﬁcant variations in gene expression and the underlying regulation of chromatin because of intrinsic and extrinsic factors (Ma et al., 2020). The accessibility of peaks and the expression of genes are not exactly matched, which may contribute to explaining the lack of overlap between changes in gene expression and ATAC-seq signals. Taken together, smarca5 deletion leads to the disrupted chromatin accessibility and transcriptome in RBCs.
 
-## Keap1a acts as a downstream target of Smarca5 in RBC aggregation
+### Keap1a acts as a downstream target of Smarca5 in RBC aggregation
 
 Based on the screening results, the chromatin accessibility at keap1a promoters, which contains Gata1 motif, was decreased in smarca5zko1049a (Figure 6A). The transcription level of keap1a detected by qPCR was also decreased in smarca5-deficient RBCs (Figure 6B). Given that keap1 was previously identified to correlate with human venous thrombosis (Akin-Bali et al., 2020), we propose that keap1a may act as a downstream target of Smarca5 in RBCs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig6-v2.jpg)
+
+**Figure 6.:** (A) The browser views showing the ATAC-seq peaks in keap1a promoter with in smarca5zko1049a and their siblings. Gray box indicates the change of ATAC-seq peaks after smarca5 deletion. The location of Gata1 motif at keap1a promoter is indicated by arrow. (B) qPCR analysis showing the expression of keap1a in RBCs from smarca5zko1049a and their siblings at 2 dpf. (C) qPCR analysis showing the expression of hmox1a, gclc, ggt1b, gsr, gstp1, gstk1, fbp1a, gsto2, prdx1, pgd and g6pd in RBCs from smarca5zko1049a and their siblings at 2 dpf. (D) The imaging of EGFP fluorescence in Tg (hsp70:keap1a-EGFP) embryos at 2 dpf. Heat shock was performed at 36 hpf. The bright-field of tail region in smarca5zko1049a and their siblings, with or without Smarca5 overexpression at 2 dpf. (E) The quantification of blood clots phenotype in (D). (F) The bright-field of tail region in smarca5zko1049a and their siblings, in control group and with hmox1a MO injection. The blood clots are indicated by arrow heads. (G) The quantification of blood clots phenotype in (F). (H) Schematic representation of Smarca5 in regulating erythrocyte aggregation via Keap1-Nrf2 signaling. In cytoplasm, Keap1 could anchor to Nrf2 to facilitate the Nrf2 degradation, while the release of Nrf2 to the nucleus could activate the expression of oxidation defense factors. In smarca5-deficient RBCs, the chromatin accessibility at keap1a promoters and the transcription of keap1a were decreased, which led to the excessive activation of hmox1a. Data are mean ± s.d. (B, C, E, G). Asterisk presents statistical significance (*p < 0.05, **p < 0.01, ***p < 0.001, n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic representation the induction of erythroid differentiation of K562 cells using hemin. (B) Benzidine staining of K562 cells in control group and with hemin treatment. (C) qPCR analysis showing the expression of SMARCA5 in control (siControl) and after SMARCA5 knockdown (siSMARCA5-1, siSMARCA5-2, siSMARCA5-3). The expression level of SMARCA5 was normalized to Gapdh. (D) Western blot showing the protein level of SMARCA5 in control and after SMARCA5 knockdown. (E) qPCR analysis showing the expression of NRF2, KEAP1, and HMOX1 in control and after SMARCA5 knockdown. Data are mean ± s.d. (C and E). Asterisk presents statistical significance (*p < 0.05, **p < 0.01, ***p < 0.001, n.s. not significant). p Values were calculated by two-tailed unpaired Student’s t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/72557/elife-72557-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) The bright-field of tail region in smarca5zko1049a at 2 dpf in control group and with glutathione treatment. The blood clots are indicated by arrow heads. (B) The quantification of blood clots phenotype in (A). Data are mean ± s.d. (B). Asterisk presents statistical significance (*p < 0.05, **p < 0.01). p Values were calculated by two-tailed unpaired Student’s t-test.
 
 Keap1-Nrf2 system is an evolutionarily conserved defense mechanism in oxidative stress (Itoh et al., 1997; Itoh et al., 1999). In cytoplasm, Keap1 could anchor to Nrf2 to facilitate the Nrf2 degradation, while oxidative stress leads to the proteasomal degradation of Keap1 and release of Nrf2 to the nucleus, thereafter activate the expression of oxidation defense factors. Both our RNA-seq and qPCR analysis showed the downregulation of keap1a and as a downstream target of Nrf2, hmox1a showed a markedly increase in gene expression upon smarca5 deletion (Figure 6C), suggesting the disruption of Keap1-Nrf2 signaling pathway. It is worthy of note that, although the upregulated expression of Keap1-Nrf2 downstream targets can protect cells from oxidative damage, the excessive activation of hmox1a, which catalyzes the degradation of heme to biliverdin, carbon monoxide, and Fe2+, could even lead to the oxidative stress (Hassannia et al., 2019). Thus, we propose that the unbalanced Keap1-Nrf2 signaling, especially the upregulation of hmox1a, could increase oxidative damage in smarca5-deficient RBCs. We next performed functional validation of keap1a in smarca5zko1049a by overexpression of hsp70:keap1a-EGFP. Heat shock was performed at 24 hpf and 36 hpf, and the phenotype was examined at 2 dpf. The results showed that overexpression of keap1a in smarca5zko1049a could partially rescue the blood clots phenotype (Figure 6D–E). In addition, knockdown of hmox1a, the downstream target of Keap1-Nrf2, can also partially rescue the blood clots phenotype in smarca5zko1049a (Figure 6F–G), further supporting that the Keap1-Nrf2 signaling pathway downstream of Smarca5 is essential for blood clot formation (Figure 6H).
 
@@ -114,80 +174,80 @@ In summary, we have demonstrated, for the first time, that deletion of smarca5 i
 
 ## Materials and methods
 
-## Zebrafish strains
+### Zebrafish strains
 
 Zebrafish strains including Tubingen, Tg (CD41:GFP) (Lin et al., 2005), Tg (gata1:dsRed) (Traver et al., 2003), Tg (kdrl:mCherry) (Bertrand et al., 2010), Tg (gata1:dsRed;kdrl:GFP) (kindly provided by Stefan Schulte-Merker (Hubrecht Institute, Utrecht, The Netherlands)), Tg (mpo:GFP) (Renshaw et al., 2006), Tg (coro1a:GFP) (Li et al., 2012), smarca5zko1049a heterozygous mutants (Ding et al., 2021) were raised under standard conditions (28.5 °C in system water). The zebrafish embryos were raised in incubator at 28.5 °C. The present study was approved by the Ethical Review Committee of the Institute of Zoology, Chinese Academy of Sciences, China.
 
-## Cell line
+### Cell line
 
 The human K562 cells (ATCC:CCL-243) were cultured in RPMI-1640 medium supplemented with 10 % FBS at 37 °C in 5 % CO2.
 
-## Whole mount in situ hybridization (WISH)
+### Whole mount in situ hybridization (WISH)
 
 WISH was performed as previously described (Wang et al., 2011). The Digoxigenin-labeled RNA probe genes including gata1, ikaros, scl, pu.1, lyz, hbae1, hbae3, hbbe1, hbbe2, hbbe3, hbaa1, hbba1, and hbba2 were cloned from zebrafish cDNA and ligated to the T-vector, then in vitro transcribed using T7 or SP6 polymerase.
 
-## Quantitative PCR (QPCR)
+### Quantitative PCR (QPCR)
 
 Total RNAs were extracted from smarca5zko1049a and their sibling embryos using TRIzol reagent (Life technologies, 15596018) or from sorted RBCs using QIAGEN RNeasy Mini Kit (Cat. No. 74104). The cDNA was reverse transcribed using M-MLV Reverse Transcriptase (Promega, M1701). The detailed primers used for qPCR are listed in Supplementary file 1A.
 
-## Morpholinos (MOs)
+### Morpholinos (MOs)
 
 The antisense MOs were purchased from GeneTools. The sequences of MOs were used as previous described, these gene-specific MOs include hmox1a MO and pu.1 MO. The detailed sequence and dosage used in this work are listed in Supplementary file 1B.
 
-## Parabiosis experiment
+### Parabiosis experiment
 
 Parabiosis experiment was performed by following the previous published procedures (Demy et al., 2013; Hagedorn et al., 2016). Briefly, smarca5zko1049a and their sibling embryos between the 128 cell blastula and 30 % epiboly stages were removed out of chorions and gently transferred into methylcellulose drop under fish water. Then, detach a few cells from each embryo at the contact points using the pulled glass micropipette and move these two embryos contact each other properly until they fusion together.
 
 O-dianisidine staining, Giemsa-staining, and Benzidine staining smarca5zko1049a and their sibling embryos at 2 dpf were stained with o-dianisidine staining solution for 15 min in the dark as previously described (Detrich et al., 1995). The blood cells from smarca5zko1049a and their sibling embryos at 2 dpf were collected from heart and caudal vein and attached to slides. The dried slides will be stained by Fast Giemsa Stain (Yeasen Biotech Co., Ltd, CAT: 40,751ES02) following the standard manufacturer’s instructions. The K562 cells were collected and washed once using PBS. Then the cells were suspended using 500 μl PBS. Subsequently, add 10 μl 0.4 % benzidine, 1 μl 30 % H2O2, and 1 μl 5 % sodium nitroferricyanide dihydrate and incubate for 3 min, 5 min and 3 min, respectively. Then the cells were attached to slides for further imaging.
 
-## Chemical treatment
+### Chemical treatment
 
 Argatroban (Sigma, A0487), dissolved in DMSO (2 mg/ml), was injected into smarca5zko1049a and their sibling embryos at 36 hpf at the dosage of 4 nl/embryo. The control embryos were injected with DMSO alone at the same dosage. Heparin (Sigma, H3393), dissolved in H2O (2.5 mg/ml), was injected into smarca5zko1049a and their sibling embryos at 36 hpf at the dosage of 4 nl/embryo. For aspirin treatment, the smarca5zko1049a and sibling embryos at 36 hpf were incubated with aspirin (Sigma, A2093) at the concentration of 5 μg/ml. The smarca5zko1049a and sibling embryos at 36 hpf were incubated with Glutathione (Sigma, PHR1359) at the concentration of 0.5 mg/ml.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Confocal microscopy was performed using Nikon confocal A1 laser microscope (Nikon) and Andor high speed confocal (dragonfly, Belfast, UK). The embryos were embedded in 1.2 % low melting agarose.
 
-## Generation of transgenic zebrafish
+### Generation of transgenic zebrafish
 
 For overexpression experiment, the full length CDS of keap1a was cloned into pDestTol2pA2 with a hsp70 promoter and an EGFP reporter by DNA assembly (NEBuilder HiFi DNA Assembly Master Mix, E2621S). The plasmids together with tol2 mRNA were injected into zebrafish embryos at one-cell stage to generate Tg (hsp70:flag-keap1a-EGFP).
 
-## Short interfering RNAs (SiRNAs) and RNA interference
+### Short interfering RNAs (SiRNAs) and RNA interference
 
 Control and SMARCA5 siRNAs were synthesized by GenePharma Corporation. The K562 cells were maintained in RPMI-1640 medium supplemented with 10 % FBS and stimulated with hemin (Sigma, 51280, 30 μM) for 3 days to induce erythroid differentiation. Then, the hemin-induced K562 cells were transfected with siRNAs using Lipofectamine RNAiMAX Reagent (Invitrogen, 13778–030) following the manufacturer’s instructions. The detailed sequences are listed in Supplementary file 1C.
 
-## Western blotting
+### Western blotting
 
 The western blotting was performed to detect the protein level of SMARCA5 in K562 cells after siRNA transfection. The antibodies used were as followings: anti-Smarca5 antibody (Santa Cruz, H-300: sc-13054), anti-β-Actin antibody (Cell Signaling Technology, 4967).
 
-## Flow cytometry
+### Flow cytometry
 
 The smarca5zko1049a and their sibling embryos with Tg (gata1:dsRed) background at 2 dpf were collected and washed by Ringers buffer. After digesting into single-cell suspension using 0.5 % trypsin, the reaction was stopped by adding CaCl2 up to 1 M and fetal calf serum up to 10 %. Then the cells were filtered through 300 Mesh nylon cell-strainer to make single-cell suspension. The RBCs (gata1:dsRed+) were sorted using MoFlo XDP (Beckman Coulter) and collected into PBS containing 1 % FBS.
 
-## RNA-seq
+### RNA-seq
 
 RNA-seq was performed in FACS-purified RBCs from smarca5zko1049a and their siblings at 2 dpf. A total of 50,000 RBCs were used per sample for RNA-seq experiments. The RNAs of sorted HSPCs were isolated using QIAGEN RNeasy Mini Kit (Cat. No. 74104) following the standard manufacturer’s instructions. The mRNA libraries were constructed using NEBNext Ultra RNA Library Prep Kit for Illumina and sequenced under Illumina HiSeq X Ten with pair end 150 bp (PE150).
 
-## Processing of RNA-Seq analysis
+### Processing of RNA-Seq analysis
 
 Raw RNA-seq reads data were trimmed using the fastp (Chen et al., 2018) (v2.4) (parameter: with default parameters), and aligned to ‘Danio_rerio GRCz10’ cDNA reference sequence using the STAR (Dobin et al., 2013) (v 2.7.7 a) with the default parameters. Read counts for each gene were quantified as the total number of reads mapping to exons using featureCounts (Liao et al., 2014) (subread v1.5.3). DESeq2 (Love et al., 2014) was applied to perform differential expression analysis with raw counts quantified by featureCounts. We used Benjamini-Hochberg adjusted p-value < 0.05 and log2 fold change >1 as the threshold for significant difference. Gene set enrichment analysis was performed using GSEA function in the clusterProfiler (Yu et al., 2012) package (v 3.18.0). Gene set variation analysis was performed by the GSVA (Hänzelmann et al., 2013) package (v 1.38.0). The gene sets we used were exported by the msigdbr package (v 7.2.1). The differences in pathway activities scored between smarca5zko1049a and their sibling RBCs were calculated with limma (Ritchie et al., 2015) package (v 3.46.0).
 
-## Assay for transposase-accessible chromatin with high-throughput sequencing (ATAC-Seq)
+### Assay for transposase-accessible chromatin with high-throughput sequencing (ATAC-Seq)
 
 ATAC-seq was performed in FACS-purified RBCs from smarca5zko1049a and their siblings at 2 dpf. A total of 50,000 RBCs were used per sample for ATAC-seq library preparation using TruePrep DNA Library Prep Kit V2 for Illumina (Vazyme, TD501) as previously described (Ding et al., 2021). Firstly, wash the sorted RBCs using 1xPBST. Then, the cell pellet was lysed using 50 μl cold lysis buffer (10 mM Tris-HCl (pH 7.4), 10 mM NaCl, 3 mM MgCl2 and 0.15% NP-40) for 5 min on ice. Centrifuge and discard the supernatant to get the cell pellet (about 2 μl). Then, the transposition reaction system combining 5xTTBL (10 μl), TTE Mix (5 μl), and H2O (33 μl) was added immediately to the cell pellet and pipetted up and down gently for several times. After the incubation at 37 °C for 30 min, the DNA was extracted with chloroform-phenol. After the purification, the DNA was amplified using TruePrep DNA Index Kit V2 for Illumina (Vazyme, TD202). After the fragments length purification using VAHTS DNA Clean Beads (Vazyme, N411), The DNA libraries are under sequencing under Illumina NovaSeq with pair end 150 bp (PE150).
 
-## Processing of ATAC-Seq analysis
+### Processing of ATAC-Seq analysis
 
 Raw ATAC-seq reads were trimmed using cutadapt (v 2.4) (parameter: -q 20 m 20) and mapped to the danRer10 reference genome using Bowtie2 (Langmead and Salzberg, 2012) (v 2.3.4.2) (default parameters). Sorting, removal of PCR duplicates and conversion from SAM to BAM files were performed using SAMtools (Li et al., 2009) (v 1.3.1). For quality assessment of ATAC-seq libraries, we applied an R package ATACseqQC (Ou et al., 2018) (v 1.6.4) to check the fragment size distributions, Transcription Start Site (TSS) enrichment scores, and plot heatmaps for nucleosome positions. We employed deepTools2 (Ramírez et al., 2016) (v 2.5.7) to check the reproducibility of the biological replicates and generated bigwig files from BAM output to visualize mapped reads. Peaks were called using MACS2 (Zhang et al., 2008) (v2.1.2) (parameter: --nomodel --nolambda --gsize 1.4e9 --keep-dup all --slocal 10000). Differentially accessible regions were identified using an R package DiffBind (Ross-Innes et al., 2012) (v 2.10.0) with a log2 fold change threshold of 0.5, and Benjamini-Hochberg adjusted p-value < 0.1. Peak annotation was performed by an R package ChIPseeker (Yu et al., 2015) (v 1.18.0). We identified the enriched de novo motifs across the whole genomic regions using the findMotifsGenome.pl function of HOMER (Heinz et al., 2010) (parameter: -size 500 -len 8,10,12 -mask -dumpFasta).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 The tail region of smarca5zko1049a and their siblings at 2 dpf were fixed with 2.5 % (vol/vol) glutaraldehyde and 2 % paraformaldehyde in phosphate buffer (PB) (0.1 M, pH 7.4). After washing with PB for four times, the tissues were immersed in 1 % (wt/vol) OsO4 and 1.5 % (wt/vol) potassium ferricyanide aqueous solution at 4 °C for 1 hr. After washing, the tissues were incubated in ﬁltered 1 % thiocarbohydrazide (TCH) aqueous solution (Sigma-Aldrich) at room temperature for 30 min, followed by 1 % unbuffered OsO4 aqueous solution at 4 °C for 1 hr and 1% UA aqueous solution at room temperature for 2 hr. The tissues were dehydrated through graded alcohol (30%, 50%, 70%, 80%, 90%, 100%, 100%, 10 min each, at 4 °C). Then, transfer the tissues into pure acetone for 10 min (twice). Tissues were infiltrated in graded mixtures of acetone and SPI-PON812 resin (21 ml SPI-PON812, 13 ml DDSA and 11 ml NMA) (3:1, 1:1, 1:3), then transfer the tissues into pure resin. Finally, the tissues were embedded in pure resin with 1.5 % BDMA and polymerized at 45 °C for 12 hr, followed by at 60 °C for 48 hr. The ultrathin sections (70 nm thick) were sectioned with microtome (Leica EM UC6), and examined by a transmission electron microscope (FEI Tecnai Spirit120kV).
 
-## Image analysis
+### Image analysis
 
 Raw image data were processed using ImageJ, photoshop CC 2018 and Adobe Illustrator CC 2018.
 
-## Statistical analysis
+### Statistical analysis
 
 All the statistical analysis was performed for at least three independent biological repeats. GraphPad Prism six was used to analyze the data. Data are mean ± s.d. p Values calculated by two-tailed unpaired Student’s t-test were used to indicate the significance if not clarified in figure legends.

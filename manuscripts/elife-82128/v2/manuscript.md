@@ -8,12 +8,12 @@
 
 ### Affiliations
 
-1. https://ror.org/047s2c258 Department of Electrical and Computer Engineering, A. James Clark School of Engineering, The University of Maryland College Park United States
-2. https://ror.org/00za53h95 Department of Oncology, Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University School of Medicine Baltimore United States
-3. https://ror.org/00za53h95 Convergence Institute, Johns Hopkins University Baltimore United States
-4. https://ror.org/00za53h95 Bloomberg-Kimmel Immunotherapy Institute, Johns Hopkins University School of Medicine Baltimore United States
-5. https://ror.org/00za53h95 Department of Applied Mathematics and Statistics, Johns Hopkins University Baltimore United States
-6. https://ror.org/00za53h95 Department of Biomedical Engineering, Johns Hopkins University School of Medicine Baltimore United States
+1. Department of Electrical and Computer Engineering, A. James Clark School of Engineering, The University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+2. Department of Oncology, Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Convergence Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+4. Bloomberg-Kimmel Immunotherapy Institute, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+5. Department of Applied Mathematics and Statistics, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+6. Department of Biomedical Engineering, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ We present scatterHatch, an R package for generating easily interpretable scatte
 
 ## Results
 
-## scatterHatch adds patterns to scatter plots with mixtures of dense and sparse regions
+### scatterHatch adds patterns to scatter plots with mixtures of dense and sparse regions
 
 In this paper, we present scatterHatch, a R/Bioconductor package to generate colorblind-friendly point visualizations commonly used in single-cell and spatial bioinformatics data analyses. scatterHatch greatly enhances the accessibility of low-dimensional scatter plots and in situ spatial plots of single-cell and spatial omics by using a combination of colors and patterns. A scatterHatch plot effectively represents mixtures of varying point distributions by using simple patterns which are easily plotted over dense clusters as well as sparsely distributed points.
 
@@ -41,7 +41,7 @@ Figure 1 shows the scatterHatch workflow. The minimum required input to scatterH
 
 **Figure 1.:** For every point group, scatterHatch separates sparsely distributed points from the dense clusters. scatterHatch plots coarse patterns over the dense clusters and individually plots patterns over the sparse points. Created using Biorender.com.
 
-## Improving the accessibility of scatter plots for all types of color vision deficiencies
+### Improving the accessibility of scatter plots for all types of color vision deficiencies
 
 Here, we demonstrate the accessibility of a reduced-dimension UMAP scatter plot of single-cell data generated using scatterHatch from the perspective of different CVDs. Specifically, 10,000 cells were selected at random from single-cell data collected from a resection specimen (Lin et al., 2018) of Pancreatic Ductal Carcinoma (PDAC) and adjacent normal tissues. The reduced-dimension coordinates are calculated using the UMAP algorithm (Becht et al., 2018) and the cells are classified into four groups using K-means clustering of the UMAP coordinates. A scatterHatch plot was generated where a color and pattern were assigned to each cell group. Subsequently, we used the cvdPlot function from the R package colorblindness to simulate common CVDs such as deuteranomaly (red-green colorblindness), protanomaly (blue-yellow colorblindness), and monochromacy (complete color blindness or grayscale vision).
 
@@ -51,7 +51,7 @@ Figure 2 compares the accessibility of the UMAP scatter plot when compared to a 
 
 **Figure 2.:** Simulated perception of a UMAP scatter plot compared with a scatterHatch plot by individuals with (A) normal color vision, (B) deuteranomaly, (C) protanomaly, and (D) monochromacy, with the insets showing a magnified sparse region showing patterns assigned to individual cells. Despite the change in color perception, readers have access to secondary visual information in the form of patterns to help interpret the data. CVD, color-vision deficiency.
 
-## Increasing the accessibility of scatter plots with large number of cell groups
+### Increasing the accessibility of scatter plots with large number of cell groups
 
 The benefits of enhanced accessibility are not just limited to individuals with CVD. Different backgrounds can cause the same color to be perceived differently, or for two different colors to be perceived as the same (Wong, 2010). When publishing a plot with few colors, the authors can appropriately assign distinct colors to individual cell groups to avoid confusing color perceptions. As the number of colors in a scatter plot increases, however, the ability to choose distinct colors as well as to control the relative distribution of these colors in the plot is severely hampered, leading to a higher probability of color misperception. Redundant coding with patterns facilitated the interpretation of such plots for all readers.
 
@@ -61,9 +61,55 @@ Figure 3A shows a spatial scatter plot of the cells from the PDAC resection spec
 
 **Figure 3.:** Perception of a spatial plot of the PDAC data set with 82-cell groups compared with a corresponding scatterHatch plot as simulated for (A) normal color vision, (B) deuteranomaly, (C) protanomaly, and (D) monochromacy. As the number of colors in the scatter plot increases, its interpretability reduces even for normal color vision. The redundant coding used in scatterHatch plots results in increased accessibility. PDAC, Pancreatic Ductal Carcinoma.
 
-## User-programmable aesthetics and patterns further increase the addressable dimensionality of scatterHatch
+### User-programmable aesthetics and patterns further increase the addressable dimensionality of scatterHatch
 
 Combining the 40 colors and the 7 patterns provided in the default settings, scatterHatch is already capable of visualizing 280 patterns. Users can input custom color palettes with higher number of colors. In addition, advanced users can customize patterns by choosing line types, line colors, and line widths to achieve a broader pattern library. Finally, scatterHatch also facilitates the introduction of new patterns composed of one or more lines by providing a list of line angles and custom aesthetics. For example, in Figure 4, the different cell groups are represented using patterns with custom line types (PDAC cell group), custom line colors (Other and Pancreas cell groups), and completely new patterns (Small Intestine cell group). Table 1 shows the parameters that can be used to either customize the aesthetics of a pattern or to create new patterns.
+
+**Table 1.**
+ Parameters to enable users to customize pattern aesthetics or to create new patterns.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pattern</td>
+      <td>Specifies the pattern type</td>
+      <td>Default options are ‘horizontal’, ‘vertical’, ‘positiveDiagonal’, ‘negativeDiagonal’, ‘cross’, ‘checkers’, ‘blank’E.g.: pattern=‘checkers”</td>
+    </tr>
+    <tr>
+      <td>angle</td>
+      <td>Allows users to specify line angles to be included in the pattern (enables users to create new patterns)</td>
+      <td>Numeric array with values from 0 to 180.E.g.: angle=c(45, 90, 135)</td>
+    </tr>
+    <tr>
+      <td>lineWidth</td>
+      <td>Width of the lines in a pattern</td>
+      <td>Numeric - default value based on point sizeE.g.: lineWidth=0.1</td>
+    </tr>
+    <tr>
+      <td>lineColor</td>
+      <td>Color of the lines in a pattern</td>
+      <td>Character string specifying a colorE.g.: lineColor=‘white’</td>
+    </tr>
+    <tr>
+      <td>lineType</td>
+      <td>Type of the lines in a pattern</td>
+      <td>Character string to specify the line type from the ggplot2 package.E.g.: lineType=‘dotted’</td>
+    </tr>
+    <tr>
+      <td>LineAlpha</td>
+      <td>Transparency of the lines in a pattern</td>
+      <td>Numeric value from 0 to 1. Default is 1.Ex: lineAlpha=0.1</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82128/elife-82128-fig4-v2.jpg)
 
@@ -75,7 +121,7 @@ We present scatterHatch, a R/Bioconductor package for generating colorblind-frie
 
 Despite the consensus on the need for bioinformatics visualizations that are accessible across the spectrum of color perception, the progress has been slow in terms of actually affecting this change in our publications. While well intentioned, recommendations for incorporating additional steps to ensure accessible visualizations are not sufficient by themselves. For example, simulating multiple CVDs and subjectively selecting the best possible color palette for their visualizations may not come naturally to a vast majority of researchers who have normal color vision. In fact, such strategies are themselves not practical for individuals with one type of CVD who wish to ensure accessibility for other types of CVD. Software packages, such as ggpattern, dittoSeq, and scatterHatch, remove this subjectivity to a large extent by using colorblind-friendly color palettes as default, and enabling the use of visualization strategies that reduce the dependence on color. Future work could include the development of a software suite that combines the functionalities of these packages into a comprehensive software solution for creating CVD-friendly visualizations. Meanwhile, there is also a need for standards and guidelines for creating accessible visualizations, which requires support at multiple levels—from funding agencies, journals, and developers of large-scale analysis software and visualization tools (Speir et al., 2021). The submission review process for R or Python packages should require that the default color palettes used by the software visualizations are colorblind friendly according to well-established accessibility standards. In addition, we should develop processes for periodically incorporating the best practices for accessibility introduced in new software packages into the graphical design language standards expected from newer packages. Finally, the strategies developed by scatterHatch and other recent software only address color-vision deficiencies and not other visual impairments such as double vision or complete blindness. In such cases, we need to incorporate accessibility features such as screen reader-friendly alternate texts (Jung et al., 2022) which describe the graphical elements of the visualizations.
 
-## Code availability
+### Code availability
 
 scatterHatch is available on Bioconductor at https://bioconductor.org/packages/release/bioc/html/scatterHatch.html.
 

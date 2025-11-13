@@ -38,11 +38,185 @@ Approach (a) yielded five complete or partial protein sequences, three from Anth
 
 Approach (b) was based on comparison between 432 OBP protein sequences from different animal sources with plant protein sequences. Only five animal protein families share sequence similarity with plant proteins, as summarized in Table 1. Sequences were considered similar when showing BLAST E-values close to 0, and sequence identity ranges (20–45%) with a confident query coverage (highest values varying from 60% to 96%).
 
+**Table 1.**
+ Similarities of animal and plant protein families with odorant receptor/transporter/channel functions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal protein family</th>
+      <th>Similar plant proteins</th>
+      <th>Identity percentage range</th>
+      <th>Sequence coverage range</th>
+      <th>BLAST E-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bovine cyclic nucleotide gated olfactory channel of Bos Taurus</td>
+      <td>Potassium voltage-gated channel</td>
+      <td>25–30%</td>
+      <td>60–75%</td>
+      <td>≤3e-27</td>
+    </tr>
+    <tr>
+      <td>Chloride channel Anoctamin-2 of Mus musculus</td>
+      <td>anoctamin-like protein</td>
+      <td>22–27%</td>
+      <td>50–70%</td>
+      <td>≤3e-20</td>
+    </tr>
+    <tr>
+      <td>Human/mouse receptor expression enhancing molecules</td>
+      <td>HVA22 e HVA22-like plants proteins</td>
+      <td>27–44%</td>
+      <td>40–96%</td>
+      <td>≤7e-21</td>
+    </tr>
+    <tr>
+      <td>BPI fold containing family B member three from Mus musculus and Rattus norvegicus</td>
+      <td>putative BPI, lipid-binding protein, hypothetical protein, and unnamed protein</td>
+      <td>20–30%</td>
+      <td>25–60%</td>
+      <td>≤6e-07</td>
+    </tr>
+    <tr>
+      <td>putative OBP 5a from Drosophila melanogaster</td>
+      <td>FT, D3-like, protein ‘Mother of FT and TFL1-like (Terminal flower 1-like)’ (MFT), ZCN9 (MFT-like), Heading Date 3A-like</td>
+      <td>28–41%</td>
+      <td>51–86%</td>
+      <td>≤5e-18</td>
+    </tr>
+  </tbody>
+</table>
+
 Interestingly, all plant protein sequences reported in Table 1 are related to inflorescence signaling. HVA22 is induced by abscisic acid (ABA)/stress and has a role in the gibberellic acid (GA)-induced cellular death and in the regulation of seed germination (Shen et al., 2001). FT is a florigen that induces and promotes the transition from vegetative growth to flowering (Koornneef et al., 1998). The protein MFT is involved in regulation of seeds germination by ABA/GA signaling (Vaistij et al., 2018). Heading date 3A-like, as FT, is a probable florigen, which promotes the transition from vegetative growth to flowering downstream of HD1 and EHD1 under short day conditions (Taoka et al., 2011). It is also remarkable that plant proteins previously reported in the literature (COI1–JAZ, SABP2, and TPL, see Introduction) were not retrieved by our search based on plant–animal protein similarities. This suggests that plant proteins may be able to work as OBPs even if different from animal OBPs, both at primary and tertiary structure levels.
 
 The putative OBPs retrieved by approaches (a) and (b) were added to the three plant OBPs already described in the literature (see Introduction), and all proteins were checked for availability of experimental 3D structure data in the second step of our study. This search was successful for nine putative plant OBPs that were then selected for molecular docking simulations of the interactions between potential plant OBPs and selected VOCs, to finally identify candidate plant OBPs.
 
 Table 2 reports the binding energy values obtained by docking simulations for each complex between potential plant OBPs and ligands (plant VOCs), together with the binding energy values obtained as a reference for experimental complexes after a redocking procedure, when available (see Materials and methods).
+
+**Table 2.**
+ Binding energy values (Kcal mol−1), obtained by docking simulations, between putative plant OBPs and isoprenoid VOCs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>OBPs</th>
+      <th>α-Pinene</th>
+      <th>Limonene</th>
+      <th>β-Myrcene</th>
+      <th>β-Caryophyllene</th>
+      <th>Isoprene</th>
+      <th>Linalool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TPL-like</td>
+      <td>−5.06</td>
+      <td>−4.76</td>
+      <td>−3.95</td>
+      <td>−6.16</td>
+      <td>−3.39</td>
+      <td>−3.94</td>
+    </tr>
+    <tr>
+      <td>ABA receptor</td>
+      <td>−4.69</td>
+      <td>−4.73</td>
+      <td>−3.84</td>
+      <td>−6.32</td>
+      <td>−3.35</td>
+      <td>−4.12</td>
+    </tr>
+    <tr>
+      <td>GA receptor</td>
+      <td>−5.50</td>
+      <td>−5.44</td>
+      <td>−4.92</td>
+      <td>−6.94</td>
+      <td>−3.78</td>
+      <td>−4.69</td>
+    </tr>
+    <tr>
+      <td>Heading Date 3A</td>
+      <td>−5.46</td>
+      <td>−4.99</td>
+      <td>−4.29</td>
+      <td>−6.83</td>
+      <td>−3.44</td>
+      <td>−4.79</td>
+    </tr>
+    <tr>
+      <td>FT</td>
+      <td>−5.23</td>
+      <td>−5.07</td>
+      <td>−4.26</td>
+      <td>−6.65</td>
+      <td>−3.15</td>
+      <td>−4.98</td>
+    </tr>
+    <tr>
+      <td>TFL1</td>
+      <td>−5.30</td>
+      <td>−5.53</td>
+      <td>−4.38</td>
+      <td>−7.15</td>
+      <td>−3.70</td>
+      <td>−4.98</td>
+    </tr>
+    <tr>
+      <td>Partial JA receptor</td>
+      <td>−5.23</td>
+      <td>−4.79</td>
+      <td>−4.16</td>
+      <td>−6.05</td>
+      <td>−2.78</td>
+      <td>−4.21</td>
+    </tr>
+    <tr>
+      <td>Complete JA receptor</td>
+      <td>−5.92</td>
+      <td>−5.11</td>
+      <td>−4.41</td>
+      <td>−6.61</td>
+      <td>−2.82</td>
+      <td>−4.49</td>
+    </tr>
+    <tr>
+      <td>SABP2</td>
+      <td>−6.03</td>
+      <td>−6.12</td>
+      <td>−5.14</td>
+      <td>−6.73</td>
+      <td>−3.25</td>
+      <td>−4.70</td>
+    </tr>
+    <tr>
+      <td>Reference protein*</td>
+      <td>−5.42</td>
+      <td>−6.29</td>
+      <td>−4.15</td>
+      <td>Not available</td>
+      <td>Not available</td>
+      <td>Not available</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Reference protein is the protein for which it has been found an experimental complex with the ligand. For α-pinene, limonene, and β-myrcene, the reference proteins are cytochrome P450 2B6 complexed with α-pinene (PDB code: 4I91), lipid binding protein complexed with limonene 1,2 epoxide (PDB code: 2A2G, and linalool dehydratase/isomerase complexed with β-myrcene [PDB code: 5HSS]), respectively._
 
 The predicted binding constant (Ki) values are reported in Supplementary file 3 and should be interpreted only as indicative values. Reported Ki values are very high compared to those found for animal OBPs, but are consistent with other plant Ki studies, confirming that plants may sense VOCs only when exposed to higher concentrations than animals (Nagashima et al., 2019).
 
@@ -57,6 +231,18 @@ Our analysis overall confirms that OBPs might be present in plants, and also bin
 Interestingly, monoterpenes seem to bind more efficiently with OBPs that are also reported to bind other plant volatiles. In particular, SABP2, the protein that strongly binds the stress-induced volatile MeSA, also seems to be a candidate for three tested monoterpenes. Protein heading date 3A and tfl1, GA receptor, and FT may also bind, perhaps more specifically, the three monoterpenes. Our results suggest that, as reported for the OBPs from animals and insects (Ramoni et al., 2007), the candidate plant OBPs have a broad ligand binding specificity and, consequently, they are likely to bind several different VOCs. This should be tested experimentally by monitoring in vivo the docking patterns of constitutive and induced VOCs.
 
 We noticed that in many cases binding of the ligands occurs at the same protein structure site, as shown for SABP2 in the experimentally reported complex with SA (Figure 1A), and in the simulated complexes with α-pinene, limonene, and β-myrcene (Figure 1B–D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66741/elife-66741-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental structure of SABP2 protein structure with salicylic acid in the binding site (PDB structure 1Y7I). The architecture of SABP2 is schematized by the backbone structure (green), with ribbons and arrows to evidence helices and beta strands, respectively. The salicylic acid molecule (colored in red) is in space-fill representation. (B) Left: Molecular docking simulation of SABP2 protein structure with α-pinene (red molecule) in the binding site. SABP2 is shown with the same spatial orientation as in panel (A) to emphasize that α-pinene occupies the same binding site of salicylic acid. Right: Focus on the binding site of SABP2. α-Pinene (red molecule) interacts directly with amino acid residues labeled with carbon atoms in green. Amino acid residues with carbon atom in grey are also part of the binding site, although not directly in contact with α-pinene. Standard colors are used for the other amino acid atoms (red = oxygen, blue = nitrogen, yellow = sulphur, white = hydrogen). (C) Left: SABP2 protein with limonene (red molecule) in the binding site. SABP2 is shown with the same spatial orientation of (A), to better show that limonene occupies the same binding site of the salicylic acid. Right: Focus of the binding site of SABP2. Details as in panel (B). (D) Left: SABP2 protein with β-myrcene (red molecule) in the binding site. SABP2 is shown with the same spatial orientation of (A), to better show that β-myrcene occupies the same binding site of the salicylic acid. Right: Focus of the binding site of SABP2. Details as in (B).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66741/elife-66741-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** For each candidate OBP, the 2D image shows β-caryophyllene in the center, surrounded by the residues with which it interacts. The type of interaction is defined according to the color legend in figure. Images are obtained with DiscoveryStudio software.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66741/elife-66741-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The search was performed at two levels of investigation. The first level was the identification of candidate plant OBPs, based on features and similarities of protein sequences from public data bases (boxes labeled a and b) and on literature evidences. This level identified proteins or protein families, for which amino acid sequences are available. The second level was the validation by in silico molecular simulations, to verify the potential capability of the candidate proteins to bind selected VOCs. This level can be applied only to the candidate proteins, selected from the first level, for which the three-dimensional structure is made available by experimental studies.
 
 The SABP2 binding site (represented in the right panels of Figure 1B–D) is characterized by the presence of aromatic side chains (two phenylalanines, one tyrosine, and one tryptophan), also observed in other candidate plant OBPs (GA receptor: two phenylalanines and four tyrosines; JA receptor: one phenylalanine, one tyrosine, and one tryptophan residue; FT receptor: two phenylalanines and one tryptophan). Other candidate plant OBPs have some aromatic side chains in the binding site, although in lower number (e.g., the ABA receptor has one phenylalanine and one tyrosine, while TLF1 has two phenylalanines). This is also reminiscent of the binding site of OBPs from animal organisms (Bianchet et al., 1996). Bovine OBPs include five phenylalanines and one tyrosine; Drosophila OBPs have four phenylalanines and one tryptophan; and porcine OBPs have two phenylalanines. This conserved feature across biomes may reveal that a hydrophobic environment where odorant molecules can be accommodated is needed. Analysis of the β-caryophyllene complexes (see Figure 1—figure supplement 1) also suggests that larger ligands may interact with additional aromatic or hydrophobic side chains in the binding pockets.
 

@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.46773.001 Neurexophilins are secreted neuropeptide-like glycoproteins, and neurexophilin1 and neurexophilin3 are ligands for the presynaptic cell adhesion molecule α-neurexin. Neurexophilins are more selectively expressed in the brain than α-neurexins, however, which led us to ask whether neurexophilins modulate the function of α-neurexin in a context-specific manner. We characterized the expression and function of neurexophilin4 in mice and found it to be expressed in subsets of neurons responsible for feeding, emotion, balance, and movement. Deletion of Neurexophilin4 caused corresponding impairments, most notably in motor learning and coordination. We demonstrated that neurexophilin4 interacts with α-neurexin and GABA A Rs in the cerebellum. Loss of Neurexophilin4 impaired cerebellar Golgi-granule inhibitory neurotransmission and synapse number, providing a partial explanation for the motor learning and coordination deficits observed in the Neurexophilin4 null mice. Our data illustrate how selectively expressed Neurexophilin4, an α-neurexin ligand, regulates specific synapse function and modulates cerebellar motor control.
+Neurexophilins are secreted neuropeptide-like glycoproteins, and neurexophilin1 and neurexophilin3 are ligands for the presynaptic cell adhesion molecule α-neurexin. Neurexophilins are more selectively expressed in the brain than α-neurexins, however, which led us to ask whether neurexophilins modulate the function of α-neurexin in a context-specific manner. We characterized the expression and function of neurexophilin4 in mice and found it to be expressed in subsets of neurons responsible for feeding, emotion, balance, and movement. Deletion of Neurexophilin4 caused corresponding impairments, most notably in motor learning and coordination. We demonstrated that neurexophilin4 interacts with α-neurexin and GABAARs in the cerebellum. Loss of Neurexophilin4 impaired cerebellar Golgi-granule inhibitory neurotransmission and synapse number, providing a partial explanation for the motor learning and coordination deficits observed in the Neurexophilin4 null mice. Our data illustrate how selectively expressed Neurexophilin4, an α-neurexin ligand, regulates specific synapse function and modulates cerebellar motor control.
 
 ## Introduction
 
@@ -43,49 +43,109 @@ Here, we study Nxph4, whose function has not been previously described. We found
 
 ## Results
 
-## Nxph4 is expressed only in specific brain circuits
+### Nxph4 is expressed only in specific brain circuits
 
 Because there is no antibody for endogenous Nxph4 currently available, we generated Nxph4-βgeo knock-in mice using targeted embryonic stem cells (ESCs) obtained from the Knock-out Mouse Project (KOMP) repository (Austin et al., 2004) to study Nxph4 expression. The construct for this mouse is designed to simultaneously disrupt endogenous Nxph4 transcript expression while driving expression of a β-galactosidase reporter gene in a promoter-specific manner (Figure 1—figure supplement 1A and B), so that β-galactosidase activity indicates Nxph4 expression. We therefore performed β-galactosidase staining in combination with conventional RNA in situ hybridization to visualize Nxph4 expression in the brain (Figure 1—figure supplement 1C).
 
 Nxph4 is expressed in subsets of neurons that are interconnected components of several functionally defined brain circuits. For instance, Nxph4 is enriched in the mammillary body circuit, which includes the medial, supramammillary, and lateral mammillary bodies (Figure 1Ai), as well as its input sources, the dorsal tegmental nucleus and the presubiculum (Figure 1Aii, Aiii, and Aiv) (Vann and Aggleton, 2004). Nxph4 is also expressed in two of the three sensory circumventricular organs—the subfornical organ, which is important for controlling fluid balance (Fry and Ferguson, 2007; Johnson and Gross, 1993; Zimmerman et al., 2016), and the area postrema, which is important for energy homeostasis (Figure 1Bii and Cii) (Cottrell and Ferguson, 2004; Tan et al., 2016)—and in nuclei that project to or receive projections from these circumventricular organs. For example, the subfornical organ has reciprocal connections with the medial preoptic nucleus and lateral hypothalamic area (Fry and Ferguson, 2007), which are both Nxph4-positive (Figure 1Bi,Biii, and Biv). In addition, the nucleus of the vagus nerve that projects to area postrema (Fry and Ferguson, 2007), also expresses Nxph4 (Figure 1Ci and Ciii).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig1-v3.jpg)
+
+**Figure 1.:** (A–D) β-galactosidase staining of adult Nxph4βgeo/+ mice shows signals in mammillary body-related circuits (A), circumventricular organs (B–C), and cerebellar-vestibular circuits (D). Blue staining represents β-galactosidase activity. Top panels are stereotaxic maps adapted from the Paxinos and Franklin mouse brain atlas, with the red circle indicating the region for the image shown on the bottom panels. Aiv, Biv, Ciii, and Div illustrate the main connections among Nxph4+ regions in each circuit described. The inset in Di shows the blue staining in the cerebellar cortex granular layer. Scale bars: Ai, 500 μm; Aii, 100 μm; Aiii, 500 μm; Bi 500 μm; Bii, Biii 200 μm; Ci, Cii 100 μm; Di, Dii, Diii, 1 mm; Di inset, 100 μm. SUM, supramammillary body; MM, medial mammillary body; LM, lateral mammillary body; DTN, dorsal tegmental nucleus; PrS, presubiculum; LH, lateral hypothalamus; SFO, subfornical organ; MPO, median preoptic nucleus; CNX, nucleus of vagus nerve; AP, area postrema; DCN, deep cerebellar nuclei; MV, medial vestibular nucleus; SV, superior vestibular nucleus; ECu, external cuneate nucleus; Psol, parasolitary nucleus. (E) Double in situ staining of adult wild type mouse DCN and cerebellar cortex with probes against Nxph4, Vglut2 (an excitatory neuron marker), and Gad1 (an inhibitory neuron marker). PC: Purkinje cells. Scale bars: 50 μm. (F) Double in situ staining of mouse cerebellum shows that Nxph4 signals overlap with Grm2 (a Golgi cell marker) but not Pvalb or Calb2. Scale bars: 200 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Targeting scheme to generate Nxph4-βgeo allele. Doted lines indicate homologous recombination sites. ES cells with correct Nxph4-βgeo allele were obtained from KOMP. (B) Genotype analysis of tail DNA showed a 180 bp band from Nxph4 wild type allele and a 150 bp band from Nxph4-βgeo allele. PCR products were separated on 3% MetaPhor agarose gel. (C) A parasagittal section of an adult Nxph4βgeo/+ mouse brain processed for β-galactosidase staining, resulting in a blue reaction product where Nxph4 is expressed. Arrows indicate regions with strong Nxph4 expression. Scale bar: 1 mm. (D) Double in situ staining of adult wild type mice with probes against Nxph4, Vglut1/2 (excitatory neuron markers), and Gad1 (an inhibitory neuron marker). Nxph4 co-localized with Vglut2 in the olfactory bulb, vestibular nuclei, and cerebral cortex, but also showed overlapping signal with Gad1 in the vestibular nuclei. Scale bar, 100 μm. (E) β-galactosidase staining of adult Nxph4βgeo/+ mice shows Nxph4 expression in the glomerular layer (gl) and mitral cell layer (ml) of the main olfactory bulb, ventral cochlear nucleus (VCN), pontine nuclei (PN), and locus coeruleus (LC). Scale bars: Eii, 200 μm; others, 500 μm. (F) RNA in situ hybridization with a probe against Nxph4 detected Nxph4 in several regions of adult mouse brain. Scale bars: Cerebellum, 1 mm; OB (Olfactory Bulb), 500 μm; Amygdala, 100 μm; SFO, 200 μm; MPO, 200 μm; MB, 300 μm; PrS, 100 μm; AP, 100 μm.
+
 Importantly, Nxph4 is expressed in several parts of the cerebellar-vestibular circuitry. It is prominent in the medial and superior vestibular nuclei (Figure 1Di and Dii), which have reciprocal projections with each other and send information to the cerebellar cortex through mossy fibers (Figure 1Div) (Barmack, 2003). In the cerebellum, Nxph4 is expressed in excitatory neurons of the deep cerebellar nuclei and inhibitory neurons in the granular layer, demonstrated by overlapping with the excitatory neuron marker Slc17a6 (also known as vesicular glutamate transporter 2, referred to as Vglut2 henceforth), and inhibitory neuron marker Gad1, respectively (Figure 1Di and E). Specifically, Nxph4 mRNA signal overlaps with Golgi cell marker Grm2 (Ohishi et al., 1993) but not markers of other inhibitory neurons in the cerebellum (Figure 1F, Pvalb: basket, stellate, and Purkinje cells [Weyer and Schilling, 2003]; Calb2: Lugaro cells [Lainé and Axelrad, 2002]), suggesting that Nxph4 is only expressed in the Golgi cells in the cerebellar cortex. Nxph4 is visible in the external cuneate nucleus (Figure 1Diii), which also projects to the cerebellum through mossy fibers, and the parasolitary nucleus (Figure 1Diii), which receives inputs from the vestibular nuclei (Figure Div) (Barmack, 2003).
 
 Nxph4 is in fact expressed in additional locations throughout the brain, including excitatory neurons in the glomerular layer of the main olfactory bulb (Figure 1—figure supplement 1D, Ei, and Eii), excitatory neurons in the cerebral cortex layer 6b (Figure 1—figure supplement 1C and D), ventral cochlear nucleus (Figure 1—figure supplement 1Eiii), pontine nuclei (Figure 1—figure supplement 1Eiv), locus coeruleus (Figure 1Ev), and other areas as summarized in Figure 1—source data 1. The in situ hybridization for Nxph4 revealed an almost identical expression pattern of Nxph4 as observed for β-galactosidase staining (Figure 1—figure supplement 1F and Figure 2—figure supplement 1A left), except for the amygdala (basolateral area and cortical amygdala, Figure 1—figure supplement 1Fiii), which did not show strong β-galactosidase activity in the Nxph4βgeo/+ mouse brain. The specific expression pattern of Nxph4 in these select neurons suggests that Nxph4 plays a critical role in the physiological function of these circuits, namely motor control, food and energy balance, olfactory function, and emotion.
 
-## Nxph4 loss leads to reduced weight and anxiety, motor incoordination, and, in male mice, reduced pre-pulse inhibition
+### Nxph4 loss leads to reduced weight and anxiety, motor incoordination, and, in male mice, reduced pre-pulse inhibition
 
 To assess the effect of Nxph4 ablation on brain function, we bred Nxph4βgeo/+ mice to generate Nxph4βgeo/βgeo homozygous knockout mice (KO), which were born at normal Mendelian ratios. There was no specific Nxph4 RNA signal detected in the KO mice using in situ hybridization with a probe against Nxph4 (Figure 2—figure supplement 1A). We also barely detected Nxph4 mRNA in the KO mice by real time RT-PCR (Figure 2—figure supplement 1B). Therefore, we successfully generated a Nxph4-null allele.
 
 Nxph4 KO mice did not show an overt phenotype, but they did gain less weight than controls starting from 5 weeks of age (Figure 2A). Their smaller size became more pronounced by the time the mice were 9 months old (Figure 2—figure supplement 1C and D). To further characterize the KO mice we then performed a battery of behavioral assays; here we present those relevant to the sites of strong Nxph4 expression. In the open field test, Nxph4 KO mice traveled similar distances as controls (Figure 2—figure supplement 1E and F). Both male and female Nxph4 KO mice, however, had difficulty staying on the accelerating rotarod as they only lasted half as long as the heterozygous (Nxph4βgeo/+; HET) and wild type (Nxph4+/+; WT) controls (Figure 2B). More strikingly, KO mice failed to improve their performance on this task during four days of training. To examine vestibular function, we performed righting reflex assay on postnatal day 10 mice. Both male and female KO mice took similar time to right themselves after being placed on their back (Figure 2—figure supplement 1G and H). Thus, Nxph4 KO mice had normal locomotor activity and righting reflex but displayed defects in motor coordination and motor learning.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig2-v3.jpg)
+
+**Figure 2.:** (A) Plots of weight as a function of age (male n = 13, female n = 16–18; #, difference between HET and KO; * difference between WT and KO). (B) Latency to fall from the accelerating rotarod plotted as a function of training days (male n = 10–12, female n = 12). (C) Average time spent in the open arms of the elevated plus maze (male n = 13–17, female n = 12–14). (D) Mean of response to the 120 dB acoustic stimulus (male n = 13–15, female n = 12–14). (E) Pre-pulse inhibition at 74 dB, 78 dB and 82 dB pre-pulses (male n = 13–15, female n = 12–14). Data are presented as mean ± SEM. *, # p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; by one-way or two-way ANOVA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) RNA in situ hybridization with a probe against Nxph4 only detected Nxph4 signal in WT but not KO mice. Scale bars: 2 mm. (B) RT-qPCR from cerebellar samples with specific primers for Nxph4 (n = 3). (C, D) Weight of male mice at 9 months of age and female mice at 13 months of age (male n = 14–18, female n = 10). (E, F) Total distance traveled in the open field assay (male n = 12–14, female n = 16–17). (G, H) Righting reflex assay was performed on postnatal day 10 mice. Y-axis shows the time that mice spent to reflex themselves after being placed on their back (male n = 11–28, female n = 11–29). Data are presented as mean ± SEM. *, p<0.05; **, p<0.01; n.s., not significant; by one-way ANOVA.
+
 Since Nxph4 is expressed in many regions of the amygdala, we tested the mice for anxiety-like behavior using the elevated plus maze assay. Both male and female KO mice spent significantly more time in the open arms (Figure 2C), indicating reduced anxiety. We also performed acoustic startle and pre-pulse inhibition assays to evaluate sensorimotor arousal and gating. Female but not male Nxph4 KO mice displayed increased response to acoustic stimulus (Figure 2D), indicating increased sensorimotor arousal. In contrast, male but not female KO mice showed reduced pre-pulse inhibition when given 74 and 78 dB pre-pulses (Figure 2E), suggesting an impairment in sensorimotor gating. It is worth noting that the pre-pulse inhibition defect in the male mice is reminiscent of the greater prevalence of altered sensorimotor gating reported in male patients with schizophrenia and major depression disorder (Kumari et al., 2004; Matsuo et al., 2017).
 
-## Nxph4 is a secreted glycoprotein
+### Nxph4 is a secreted glycoprotein
 
 Nxph4 has a similar domain structure as Nxph1, which is a secreted glycoprotein localizing on synapses to interact with α-neurexin (Figure 3A) (Born et al., 2014; Missler et al., 1998). The molecular role of Nxph4, however, remains unknown, and previous studies failed to verify Nxph4 as an α-neurexin ligand (Missler et al., 1998). We proposed that Nxph4 is also a secreted glycoprotein that interacts with synaptic proteins. To test our hypothesis, we expressed Nxph4-3xFLAG-mCherry in primary cultured cortical neurons using lentivirus infection. We used cortical neurons because it is hard to culture Nxph4-expressing neurons, such as cerebellar Golgi cells. A ~ 62 kDa protein was detected in both the cell lysates and the media, indicating that Nxph4 is secreted to the media (Figure 3B). We established that Nxph4 is indeed glycosylated as its molecular weight was reduced with glycosidase treatment or when all of the four asparagine glycosylation sites were mutated to glutamine (Nxph4-4Q-HA, Figure 3C and D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig3-v3.jpg)
+
+**Figure 3.:** (A) A domain model of Nxph4 (adapted from Missler and Südhof, 1998). I: signal peptide; II: a variable domain; III: a conserved domain; IV: a linker region; V: C-terminal domain. Positions of N-glycosylation sequences are marked by letter Y, and the conserved cysteine residues are identified by the letter C. (B) Immunoblotting of samples from cultured cortical neurons that are infected with lentivirus expressing Nxph4-3xFLAG or the control lentivirus. Nxph4-3xFLAG was detected in the cell lysates as well as the media. (C) Treatment with glycosidase altered the electrophoretic motility of recombinant Nxph4-HA. (D) Nxph4-HA-4Q mutant has a smaller molecular mass compared with the wild type recombinant Nxph4-HA. (E) Immunoblotting analysis detects Nxph4-3xFLAG expression in the KI mouse synaptosomes. (F) Immunoblotting analysis of fractions derived from cerebellar synaptosomal preparation detects Nxph4-3xFLAG in the synaptosomes. β-actin was used as loading control. H: homogenate. S1 and S2 are successive supernatants in the synaptosomal preparation protocol. S2 is also the cytosolic fraction. Syn: synaptosomes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A schematic diagram of the strategy to generate an Nxph4-3xFLAG knock-in allele. An sgRNA is designed to excise the coding region corresponding to the C-terminal region of Nxph4 third domain. In the donor vector, the 3xFLAG sequence is inserted after the sequence of Nxph4 third domain. The homologous arms of the donor vector are indicated as HA-L and HA-R. Two pairs of primers designed for genotyping are shown with green and red arrows. (B) Representative genotyping results using two different pairs of primers to distinguish Nxph4FLAG/+ from Nxph4+/+ mice. Left, the forward primer is outside of the HA-L and the reverse primer in within 3xFLAG region (red arrows in A). Right: the forward and the reverse primers flank the 3xFLAG sequence (green arrows in A). (C) Representative immunofluorescence images illustrate the expression of Nxph4-3xFLAG in specific brain regions. Scale bars: 200 μm. (D) Treatment with glycosidase altered the electrophoretic motility of Nxph4-3xFLAG. (E) Latency to fall from the accelerating rod (mixed male and female mice, n = 17–19). Data are presented as mean ± SEM. n.s., not significant; by two-way ANOVA.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunoblot analysis of fractions derived from different steps of synaptosomal preparation. Synapse specific protein PSD-95 showed enriched signal in purified synaptosomes as expected. Somatic protein TGF-β1 is enriched in the cytosolic fraction S2. Nuclear protein MeCP2 is barely detectable in S1, S2 or Syn. H: homogenate. S1 and S2 are successive supernatants in the synaptosomal preparation protocol. S2 is also the cytosolic fraction. Syn: synaptosomes.
+
 To study Nxph4 subcellular localization and identify Nxph4’s interacting partners in vivo, we generated a Nxph4-3xFLAG knock-in mouse using the CRISPR-Cas9 system. A triple FLAG tag was inserted into the boundary between the 3rd and 4th domains of Nxph4 (Figure 3—figure supplement 1A and B). The anti-FLAG antibody detected a ~ 45 kDa protein in the Nxph4FLAG/FLAG mice (referred to ‘KI mice’), corresponding to the full-length Nxph4 (Figure 3E). In the KI but not WT mice, immunofluorescence detected a specific Nxph4-3xFLAG signal only in regions that are positive for Nxph4 (Figure 3—figure supplement 1C). Nxph4-3xFLAG is similarly glycosylated (Figure 3—figure supplement 1D). The KI mice (with KI allele in absence of wild type allele) showed normal motor coordination and motor learning on the rotarod (Figure 3—figure supplement 1E), which indicates that the Nxph4-3xFLAG preserved the function of the wild type protein. In the KI mice, we did not see strong signal of Nxph4 on synapses with immunofluorescence staining, possibly due to low concentration of Nxph4 after secretion. To probe the presence of Nxph4 at synapses, we prepared subcellular fractionation of the cerebellum. The synaptosomes (Syn) showed enriched synaptic protein PSD-95, while, the cytosolic fraction (S2) showed enriched somatic protein TGFβ−1 (Figure 3—figure supplement 2A). Nxph4 is clearly detected in both the cytosolic and synaptosomal fractions, suggesting it is localized at both the synapse and soma (Figure 3F). A similar distribution pattern has been reported for other proteins with critical synaptic functions, including Nxph1 (Reissner et al., 2014) and RanBP9 (Palavicini et al., 2013).
 
-## Nxph4 interacts with α-neurexin in vivo
+### Nxph4 interacts with α-neurexin in vivo
 
 Because both Nxph1 and Nxph3 are endogenous ligands of α-neurexin (Ullrich et al., 1995), we wondered if Nxph4 interacts with α-neurexin. Using the synaptosomes prepared from the KI mice, we were able to pull down Nxph4 by an anti-FLAG antibody. Indeed, we detected α-neurexin in the elution of Nxph4-3xFLAG immunoprecipitation (IP) (Figure 4A). To further confirm the α-neurexin-Nxph4 complex in the brain, we performed reciprocal co-IP by pulling down α-neurexin and detected Nxph4-3xFLAG in the elution (Figure 4B), further supporting the interaction between α-neurexin and Nxph4. We performed both of the two co-IP experiments in the presence of EDTA, suggesting that Nxph4 interaction with α-neurexin is Ca2+ independent. We also precipitated neurexin1α-Nxph4 complex in HEK293T cells when over-expressing them together in vitro (Figure 4—figure supplement 1A). In the same condition, we could not detect β-neurexin interaction with Nxph4 regardless of the presence of splicing site 4 (Figure 4C and D), suggesting that Nxph4 is an α-neurexin specific ligand. In addition, we explored which of the α-neurexin specific domains (LNS1-5, Figure 4E) might interact with Nxph4 by co-expressing Nxph4 with individual LNS domains in HEK293T cells. We cloned individual LNS domains with an N-terminal signal peptide followed by a HA tag, such that they were secreted into the media after expression in HEK293T cells. In the media, we precipitated Nxph4:LNS2 and Nxph4:LNS4, suggesting that both LNS2 and LNS4 interact with Nxph4 (Figure 4F). Thus, our data indicate that Nxph4 is an endogenous α-neurexin ligand.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig4-v3.jpg)
+
+**Figure 4.:** (A) Synaptosomes (tissue used: olfactory bulb, hypothalamus, midbrain, hindbrain, and the cerebellum) from Nxph4-3xFLAG KI or WT (negative control) mice were precipitated with an antibody against FLAG. Bound proteins as well as 2% input were analyzed by immunoblotting with anti-FLAG and anti-α-neurexin antibodies as indicated. (B) Brain lysates from Nxph4-3xFLAG KI mice were precipitated with an anti-α-neurexin antibody. Elution and 2% input were analyzed by immunoblotting with anti-α-neurexin and anti-FLAG antibodies. IgG was used as negative control. (C, D) Nxph4-3xFLAG and HA-neurexin1β S4(+) (with the insertion of splicing site 4, C) or HA-neurexin1β S4(-) (without the insertion of splicing site 4, D) were co-expressed in HEK293T cells. Cell lysates were precipitated with an anti-FLAG antibody. Bound proteins were analyzed by immunoblot showing pulling down of Nxph4-3xFLAG but not HA-neurexin1β. Cells transfected with HA-neurexin1β alone were used as negative control. (E) Schematic drawing of the extracellular domain structure of α- and β-neurexins. α-neurexin contains 6 LNS domains interspersed by 3 EGF-like repeats. β-neurexin has a single LNS6 domain. S: signal peptide; 1–6: LNS1-6; E: EGF-like domain. (F) Nxph4-3xFLAG was co-expressed with individual α-neurexin specific LNS domains in HEK293T cells. Culture media was precipitated by an anti-FLAG antibody. LNS2 and LNS4 were co-precipitated with Nxph4-3xFLAG. (G) Cultured primary cortical neurons overexpressing wild type or mutant Nxph4-HA were subjected to co-IP with an anti-HA antibody. Elution and 5% input were analyzed by immunoblotting with anti-HA, anti-α-neurexin, and anti-vinculin antibodies. Wild type and Nxph4 mutants were fused with mCherry. Nxph4-4Q-HA was not detectable in 5% input and was only detected as a faint band in the IP sample.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HA-neurexin1α and Nxph4-3xFLAG were co-expressed in HEK293T cells. Cell lysates were precipitated with beads conjugated with an anti-FLAG antibody. Bound proteins as well as input were analyzed by immunoblotting. (B) Media from primary cultured neurons over-expressing wild type and mutant Nxph4 was collected. After precipitation by beads conjugated with an anti-HA antibody, bound proteins were analyzed by immunoblotting. (C) Both wild type Nxph4 and Nxph4-6A showed similar reduction of molecular mass after glycosidase treatment.
+
 We further investigated how glycosylation and Nxph4 C-terminal cysteine residues may affect Nxph4 binding affinity to α-neurexin. When we over-expressed an mCherry fused Nxph4-4Q-HA (mutated Nxph4 without glycosylation) in primary cultured cortical neurons through lentivirus infection, we could barely detect its expression in the cell lysates (Figure 4G), suggesting that, in neurons, Nxph4 is not stable without glycosylation. On the other hand, Nxph4-6A-HA, with six cysteine residues mutated to alanine, was similarly expressed, glycosylated, and secreted (Figure 4G, Figure 4—figure supplement 1B and C) as wild-type Nxph4. However, it failed to interact with α-neurexin when over-expressed in the cultured primary cortical neurons (Figure 4G), revealing that the cysteine residues are essential for Nxph4 interaction with α-neurexin.
 
-## Nxph4 interacts with GABAARs in the cerebellum
+### Nxph4 interacts with GABAARs in the cerebellum
 
 In addition to α-neurexin, we wondered whether Nxph4 has any post-synaptic interaction partners. GABAA receptors are putative candidates because Nxph1 has been shown to recruit post-synaptic GABAARs (Born et al., 2014). GABAARs are pentameric assemblies of subunits, and 19 subunits have been cloned so far (Sigel and Steinmann, 2012). Interestingly, GABAARα6 is mainly expressed in cerebellar granule cells, the synaptic partner of cerebellar Golgi cells where Nxph4 is expressed (Eccles et al., 1966; Szentagothai, 1965). To test if the complementary expressed Nxph4 and GABAARα6 interact, we prepared cerebellar synaptosomes extracted from Nxph4-3xFLAG KI mice and pulled down Nxph4-3xFLAG. GABAARα6 was also precipitated in the elution (Figure 5A). In the cerebellar granule cells, GABAARα1 is another critical subunit in addition to GABAARα6 as all GABAA receptors contain one or both of these two subunits (Wisden et al., 1996). In the cerebellum synaptosomal preparation, we also precipitated Nxph4-3xFLAG together with GABAARα1 (Figure 5B). Moreover, Nxph4 is co-precipitated with the N-terminal extracellular domain of the GABAA receptors (Figure 5C and D), suggesting that it may interact with GABAA receptors extracellular domain. Taken together, Nxph4 forms a complex with GABAARs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig5-v3.jpg)
 
-**Figure 5.:** ARs.(A,B) Cerebellar synaptosomes from three Nxph4-3xFLAG KI or WT (negative control) mice were precipitated with an antibody against FLAG. Bound proteins as well as 2% input were analyzed by immunoblotting with anti-FLAG and anti-GABAARα6 (A), or anti-GABAARα1 (B) antibodies as indicated. (C) Nxph4-3xFLAG and the N-terminal extracellular domain of GABAARα1 were co-expressed in HEK293T cells. Cell lysates were precipitated with an anti-FLAG antibody and elution was analyzed by immunoblot showing the precipitation of Nxph4-GABAARα1N complex. Cells transfected with GABA alone were used as negative control. (ARα1N-HAD) Nxph4-3xFLAG binds to the N-terminal extracellular domain of GABAARα6.
+**Figure 5.:** (A,B) Cerebellar synaptosomes from three Nxph4-3xFLAG KI or WT (negative control) mice were precipitated with an antibody against FLAG. Bound proteins as well as 2% input were analyzed by immunoblotting with anti-FLAG and anti-GABAARα6 (A), or anti-GABAARα1 (B) antibodies as indicated. (C) Nxph4-3xFLAG and the N-terminal extracellular domain of GABAARα1 were co-expressed in HEK293T cells. Cell lysates were precipitated with an anti-FLAG antibody and elution was analyzed by immunoblot showing the precipitation of Nxph4-GABAARα1N complex. Cells transfected with GABAARα1N-HA alone were used as negative control. (D) Nxph4-3xFLAG binds to the N-terminal extracellular domain of GABAARα6.
 
-## Loss of Nxph4 impairs Golgi inhibitory control over granule cells in the cerebellar cortex
+### Loss of Nxph4 impairs Golgi inhibitory control over granule cells in the cerebellar cortex
 
 As an α-neurexin ligand and an interaction partner of GABAARs, Nxph4 may play a role in regulating synaptic function. To determine its physiological role at synapses, we studied synaptic neurotransmission in the Nxph4 KO mice. We focused on the cerebellar cortex because Nxph4 is solely expressed in the Golgi cells of this region, where they are the main source of inhibitory control over granule cells (Figure 6A), the most abundant cell type in the brain. Nxph4 may function at the presynaptic terminal of Golgi cells to regulate Golgi-granule synapses, as other neurexin secreted ligands, such as Cbln1 and C1ql2/3, work at the presynaptic terminals of the cells they are secreted from Hirai et al. (2005); Matsuda et al. (2016). In addition, GABAARα1 and α6 are the main α-type GABAA receptors in cerebellar granule cells (Wisden et al., 1996), whose dysfunction has been associated with ataxia in mice (Chen et al., 1999; Payne et al., 2007). Therefore, Nxph4 may play a critical role in regulating cerebellar Golgi-granule inhibitory synapses through interacting with α-neurexin and GABAARs. To test this, we prepared mouse cerebellar slices and performed whole-cell patch clamp recordings on granule cells. We first examined the spontaneous inhibitory postsynaptic current (sIPSC, Figure 6B) as a measurement of inhibitory synaptic strength. Comparing with WT mice, we detected a 60% reduction in the frequency of sIPSC in Nxph4 KO mice (Figure 6C). The amplitude was not much altered (Figure 6D). This suggests that deletion of Nxph4 impaired the inhibitory control over granule cells. To further dissect mechanisms underlying the impaired inhibition, we recorded miniature inhibitory postsynaptic current (mIPSC, Figure 6E) on the granule cells to analyze pre and postsynaptic functions. Consistent with the remarkably reduced sIPSC frequency, mIPSCs frequency in the KO mice was also severely decreased to about half of that in the WT mice (Figure 6F). In addition, the amplitude of mIPSCs was also significantly reduced in the Nxph4 KO mice (Figure 6G). There were no significant alterations in mIPSC rise or decay time (Figure 6—figure supplement 1A and B). The reduced mIPSC frequency and amplitude imply that, in the Nxph4 KO mice, both the pre and postsynaptic functions of the inhibitory synapses projected on the granule cells are impaired. Golgi cells provide the main inhibitory inputs on the granule cells. To directly test if loss of Nxph4 impaired Golgi-granule inhibitory synapses and thus resulted in the reduced inhibitory synaptic events detected in KO mice, we used the multi-cell patch recording to compare the connectivity rate of Golgi-granule synapses in WT and KO mice. Golgi cells were identified as large, multipolar cells against densely populated small granule cells in granular layers, and their firing patterns and intrinsic membrane properties were highly distinct from granule cells (Figure 6I). We performed whole-cell recording on one Golgi cell first and then recorded its nearby granule cells sequentially to test synaptic connectivity between these two cells while inducing action potentials in Golgi cells (Figure 6H). In WT, the probability of finding a connected pair of Golgi-granule cells was ~22% (7 connections out of 32 potential connections tested, Figure 6I and J). However, their connectivity rate in KO mice was significantly reduced (1 connection out of 31 potential connections tested,~3%, Figure 6I and J). These results directly confirm that loss of Nxph4 impairs Golgi to granule GABAergic synaptic connectivity. In addition to inhibitory transmission, we also examined excitatory inputs projected to granule cells. We recorded evoked excitatory postsynaptic current (eEPSC) from granule cells by stimulating their excitatory inputs, the mossy fibers (Figure 6—figure supplement 2A–F). All parameters of eEPSC were comparable across genotype, suggesting that excitatory inputs on the granule cells are not significantly affected after loss of Nxph4. Taken together, Nxph4 may play a critical role in regulating cerebellar Golgi-granule inhibitory synapses, so that deletion of Nxph4 specifically impaired Golgi inhibitory control over granule cells. There were no significant differences between Nxph4-3xFLAG KI and WT mice in the mIPSC recorded on the granule cells (Figure 6—figure supplement 3A), further confirming that Nxph4-3xFLAG maintains the function of endogenous Nxph4.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig6-v3.jpg)
+
+**Figure 6.:** (A) A simplified diagram illustrating the inhibitory circuit of cerebellar granular layer and single-cell recording experimental design. GC: granule cells; GoC: Golgi Cells; pf: parallel fibers. Arrows indicate the direction of information flow. (B) Representative traces of spontaneous IPSC recorded from the WT and KO cerebellar granule cells. (C–D) Statistical analysis of sIPSC frequency (C, Mann-Whitney U test) and amplitude (D, t-test) (n = 11–17 cells from 4 WT and 4 KO mice). (E) Representative traces of miniature IPSCs recorded from the WT and KO cerebellar granule cells. Insect is the averaged traces. (F–G) Statistical analysis of mIPSC frequency (F, Mann-Whitney U test) and amplitude (G, t-test). Cumulative probability plots were analyzed by Kolmogorov-Smirnov test (n = 20–28 cells; 6–7 mice). (H) Multi-channel recording configuration. A GoC was first identified and recorded in the granular layer, and then nearby GCs were sequentially recorded to test the connectivity in GOC->GC while inducing action potentials in the GoC. mol: molecular layer. (I) Samples of connected GoC->GC pairs in WT and KO, showing their firing patterns and unitary GABAergic postsynaptic poetntials (uPSP). The recordings were performed in the presence of AMPA and NMDA receptor antagonists to only detect GABAergic synaptic transmission. Given the high-chloride internal solution being used, GABAergic synaptic potentials were depolarized at the resting membrane potentials. Iinj: injected current; AP: action potential. (J) The connectivity rate (GoC->GC) was significantly lower in KO compared with WT (4 WT and 3 KO mice). Chi-square test. Data are presented as mean ± SEM. n.s., not significant; *p<0.05; ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Statistical analysis of mIPSC decay (A, t-test) and rise time (B, Mann-Whitney U test). Data are presented as mean ± SEM. n.s., not significant.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Sample traces of granule cell EPSC, evoked by stimulating mossy fibers, exhibited paired-pulse depression at ISI (inter-stimulus interval) 50 ms and ISI 100 ms from WT and KO mice. (B–F) Summary of eEPSC paired-pulse ratio (EPSC2/EPSC1, PPR) at ISI 50 ms and ISI 100 ms, amplitude, rise time, and decay (n = 5–7 mice). Data are presented as mean ± SEM. n.s., not significant; by Mann-Whitney U test or t-test.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Miniature IPSCs recorded from the KI and WT cerebellar granule cells. From left to right: representative mIPSC traces, mean mIPSC frequency, amplitude, rise, and decay (n = 11–14 cells; 5mice). Data are presented as mean ± SEM. n.s., not significant; by t test.
+
 The Golgi-granule inhibitory synapses and the mossy fiber-granule cell excitatory synapses form a typical glomerulus structure in the cerebellar granular layer (Mapelli et al., 2014) (Figure 7—figure supplement 1A). To test if loss of Nxph4 affects synapse number, we used a combination of pre and postsynaptic markers to label synapses projected on granule cells. Gephyrin and vGAT (vesicular GABA transporter) were used to label inhibitory synapses while PSD-95 and vGlut1 (vesicular glutamate transporter 1) were used for excitatory synapses. A puncta with co-localization of pre and postsynaptic markers was considered as a synapse. In the granular layer, the inhibitory synapse number in the Nxph4 KO mice was significantly reduced compared with WT (Figure 7A and B). However, excitatory synapse number was not significantly altered in the KO mice (Figure 7C and D), suggesting that loss of Nxph4 specifically reduced Golgi-granule cell inhibitory synapses. Given the impaired mIPSC amplitude, we also investigated Nxph4 loss-of-function effects on the expression and localization of GABAARs. In the cerebellar synaptosomes, we detected similar amount of GABAARα1 and α6 in both the KO and WT mice (Figure 7—figure supplement 1B). In addition, GABAARs showed similar localization and comparable cluster density and size in the two genotypes (Figure 7—figure supplement 1C and D). This suggests that Nxph4 might not directly affect GABAARs expression or localization. Taken together, deletion of Nxph4 reduced Golgi-granule cell inhibitory synapse number and impaired the inhibitory neurotransmission onto granule cells.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig7-v3.jpg)
+
+**Figure 7.:** (A) Gephyrin and vGAT staining in the cerebellar granular layer indicates Golgi-granule inhibitory synapses. (B) Quantification of puncta co-expressing gephyrin and vGAT as an indicator of inhibitory synapse number. (C) vGlut1 and PSD-95 staining in the cerebellar granular layer indicates mossy fiber-granule cell excitatory synapses. (D) Quantification of puncta co-expressing vGlut1 and PSD-95 as an indicator of excitatory synapse number. Data are presented as mean ± SEM. n.s., not significant; *p<0.05; by t test (B) or Mann-Whitney U test (D).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46773/elife-46773-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) In the cerebellar granular layer, vGAT marks the Golgi cell inhibitory terminals and vGlut1 marks the mossy fiber endings. Scale bar: 20 μm. (B) Immunoblotting analysis of GABAARα1/6 in the cerebellar synaptosomes of the WT and Nxph4 KO mice (n = 6–8). (C–D) Top: Immunofluorescence staining of GABAARα1 (C) and GABAARα6 (D) in the cerebellar granular layer. Scale bar: 20 μm. Bottom: Quantification of GABAAR cluster density and size (n = 17 sections; 3 mice). Data are presented as mean ± SEM. n.s., not significant; by t test.
 
 ## Discussion
 
@@ -101,77 +161,430 @@ The present work suggests that Nxph4 has a critical role in regulating synapse f
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Mouse husbandry and handling
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG M2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F1804 RRID:AB_262044</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pan Neurexin-1</td>
+      <td>Millipore</td>
+      <td>Cat# ABN161 RRID:AB_10917110</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA1.1</td>
+      <td>Bioledgend</td>
+      <td>Cat# 901513, RRID:AB_2565335</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Vinculin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# V9131, RRID:AB_477629</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GABAARα1</td>
+      <td>Synaptic System</td>
+      <td>Cat# 224 203, RRID:AB_2232180</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GABAARα6</td>
+      <td>Synaptic System</td>
+      <td>Cat# 224 603, RRID:AB_2619945</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Vglut1</td>
+      <td>Millipore</td>
+      <td>Cat# MAB5502, RRID:AB_262185</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-vGAT</td>
+      <td>Frontier Institute co. Ltd</td>
+      <td>Cat#: VGAT-GP-Af1000, RRID: AB_2571624</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-beta Actin</td>
+      <td>Abcam</td>
+      <td>Cat#: ab20272 RRID:AB_445482</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TGF beta 1</td>
+      <td>Abcam</td>
+      <td>Cat#: ab92486, RRID:AB_10562492</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-MeCP2</td>
+      <td>Zoghbi Lab</td>
+      <td>#0535</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Gephyrin</td>
+      <td>Synaptic system</td>
+      <td>Cat#: 14701, RRID:AB_887717</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti- PSD-95</td>
+      <td>Cell signaling</td>
+      <td>Cat # 2507, RRID:AB_561221</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti-mCherry</td>
+      <td>Addgene</td>
+      <td>Cat# 36084, RRID:Addgene_36084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti-Nxph4-3xFLAG-mCherry</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 is a secreted glycoprotein’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti--Nxph4-4Q-HA-mCherry</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection ‘Nxph4 is a secreted glycoprotein’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti--Nxph4-6A-HA-mCherry</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection ‘Nxph4 is a secreted glycoprotein’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-Nxph4-HA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 is a secreted glycoprotein’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-Nxph4-4Q-HA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 is a secreted glycoprotein’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-Nxph4-6A-HA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1β S4(+)</td>
+      <td>Addgene</td>
+      <td>Cat# 59410, RRID:Addgene_59410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1β S4(-)</td>
+      <td>Addgene</td>
+      <td>Cat# 59409, RRID:Addgene_59409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1α</td>
+      <td>Addgene</td>
+      <td>Cat# 58266, RRID:Addgene_58266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1α-LNS1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1α-LNS2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1α-LNS3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1α-LNS4</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HA-Nrxn1α-LNS5</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection ‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-GABARα1N-HA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection ‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-GABARα6N-HA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Results subsection ‘Nxph4 interacts with α-neurexin in vivo’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-Gal</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 15520034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 11668500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Antigen Unmasking Solution (citrate based)</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# H-3300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Avidin/Biotin Blocking Kit</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# SP-2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TSA Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# T-20932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Papain Dissociation System Kit</td>
+      <td>Worthington Biochemical Corp.</td>
+      <td>Cat# LK003150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PNGase F</td>
+      <td>NEB</td>
+      <td>Cat# P0704S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>miRNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#: 217004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>M-MLV Reverse Transcriptase</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 28025013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>iTaq Universal SYBR Green SuperMix</td>
+      <td>BIO-RAD</td>
+      <td>Cat#: 1725124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T cells</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: FVB</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 001800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: Nxph4 βgeo+/-</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>The Jackson Laboratory: 033791</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: Nxph4 FLAG/FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>The Jackson Laboratory: 033792</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nxph4βgeo+/- genotyping forward primer: 5’-AAAGACTAGCAGACGCAGCA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods subsection ‘Nxph4-βgeo mouse’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nxph4βgeo+/- genotyping reverse primer: 3’-CCCTAACTCCCCCAAACAGA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials andmethods subsection ‘Nxph4-βgeo mouse’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nxph4 FLAG/FLAGgenotyping forward primer: 5’-TCAAGTTCTCGCTGTTGGTG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods subsection‘Nxph4FLAG/FLAG knock-in mouse’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nxph4 FLAG/FLAG genotypingreverse primer: 3’-TTCCACGTGGCAATTAAAAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods subsection‘Nxph4FLAG/FLAG knock-in mouse’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Mouse husbandry and handling
 
 Mice were group housed in an AAALAS-certified animal facility on a 14 hr/10 hr light/dark cycle. All procedures to maintain and use these mice were approved by the Institutional Animal Care and Use committee for Baylor College of Medicine.
 
-## Nxph4-βgeo mouse
+### Nxph4-βgeo mouse
 
 Nxph4βgeo+/- mice were generated within our lab using standard methods of ESC injection into blastocysts followed by implantation into pseudopregnant female mice. Briefly, embryonic stem cells (strain background, C57BL/6N +Agouti mutation) possessing targeted insertion of a ‘gene-trap’ splice acceptor construct, containing an in-frame β-galactosidase cassette and a PGK-neomycin cassette, into intron 2 of the mouse endogenous Nxph4 locus on chromosome 10 were obtained from the Knock-out Mouse Project (KOMP) repository (Austin et al., 2004). This construct is designed to simultaneously disrupt endogenous Nxph4 transcript expression while driving expression of a β-galactosidase reporter gene in a precise promoter specific manner. Targeting in ESCs was confirmed by long-range PCR targeting the 5’ and 3’ junctions of the targeting construct. Chimeric mice were crossed to wild type C57BL/6J Albino mothers to detect germline transmission, and successful progenies were screened by PCR assay for presence of the Nxph4-βgeo construct. Primers were 5’-AAAGACTAGCAGACGCAGCA and 3’-CCCTAACTCCCCCAAACAGA. Nxph4-βgeo positive mice were then expanded for further analysis by mating to wild type C57BL/6J mice. Mice at 14 to 16 weeks of age were used for most behavioral assays except for righting reflex with age stated in the results. Littermates of the same sex were randomly assigned to experimental groups.
 
-## Nxph4FLAG/FLAG knock-in mouse
+### Nxph4FLAG/FLAG knock-in mouse
 
 The Nxph4FLAG/FLAG knock-in mouse was generated according to CRISPR genome editing method described previously (Ran et al., 2013). Briefly, an optimal sgRNA sequence (5’-gcggcacgatactgacgctt) close to the genomic target site was chosen using the http://crispr.mit.edu/ design tool. The sgRNA was cloned into the pSpCas9(BB)−2A vector (pX330) via BbsI digestion and insertion site. T7 promoter was added to the sgRNA template by polymerase chain reaction (PCR). The PCR products were then purified and used as template for in vitro transcription using MEGAshortscript T7 Transcription Kit. sgRNA was purified with MEGAclear Transcription Clean-Up Kit. A dsDNA donor was designed with a linker sequence and 3xFLAG sequence inserted at the end of Nxph4 third domain (after 5’-ctccaagcgtgtggagttc). The PAM site (AGG) was mutated into AGA to avoid cleaving by Cas9. Two ~ 1.5 kb homologous arms on both ends flanking the inserted region were included into the dsDNA donor. At last, a 2945 kb dsDNA was synthesized for use as donor DNA (5’-agagaatcaacacagccacacaca…taatctaagcgtcagtatcgtgccgccc…gttcGGAGGCAGTGGGGGTAGTGGCGGGTCAGGAGGATCCGACTACAAGGACGACGATGACAAGGACTATAAGGACGATGATGACAAGGACTATAAGGATGACGATGACAAAGGCGGAAGTGGTGGCTCCGGGGGATCTGGGGGGTCAGGTGAGgggggcgtctg….gaagcggggacagcgtaggc, the inserted sequence is showed as upper case). To prepare protein mix for pronuclear injection, 4.5 μg Cas9 protein (Sigma) and 3 μg sgRNA were diluted into 150 μl buffer containing 10 mM Tris (pH = 7.5) and 0.25 mM EDTA, which was incubated in 37°C for 5 min. Then 4 μg donor dsDNA was added to the mix, followed by centrifugation at 20,000 xg for 10 min in 4°C. Top 100 μl was used for pronuclear injection to generate knock-in mice based on standard procedures. At last one founder mouse was identified with four different pairs of primers to confirm the correct insertion of the tag. Sanger sequencing was performed to confirm that intact donor DNA was inserted into the mouse genome. Knock-in mice were then crossed with wild type C57BL/6J mice for three generations before expending for further analysis. Positive progenies were identified by PCR assays with the following primers: 5’-TCAAGTTCTCGCTGTTGGTG and 3’-TTCCACGTGGCAATTAAAAG. Adult male and female mice were equally used in the experiments.
 
-## HEK293T cell culture
+### HEK293T cell culture
 
 HEK293T cells (authenticated by ATCC with STR profiling, mycoplasma contamination testing negative) were cultured in DMEM (Invitrogen) containing 10% FBS.
 
-## Primary cortical neuron culture
+### Primary cortical neuron culture
 
 Mouse cerebral cortices were removed from E16.5 embryos of wild type FVB mice and dissociated with papain dissociation kit (Worthington). The neurons were plated on poly-D-lysine-coated 12-well plates and maintained at 37°C incubator for ~13 days. Neurons were treated with lentivirus at DIV 1.
 
-## Method details
+### Method details
 
-## β-galactosidase staining
+#### β-galactosidase staining
 
 β-galactosidase staining was performed essentially according to Juntti et al. (2010). Both male and female Nxph4βgeo+/- mice were used and did not display obvious difference in β-galactosidase staining. Mice for β-galactosidase staining were transcardially perfused with 1xPBS followed by 4% paraformaldehyde. Brains were dissected out and post-fixed in 4% paraformaldehyde for another 2 hr followed by dehydrating in 20% sucrose solution overnight. Brains were then embedded in optimum cutting temperature (O.C.T.; Sakura Finetak) and frozen at −80°C. Sectioning was performed on a Leica cryostat at 25 μM per section. Mounted sections were washed with 3 changes of solution A (1X PBS, 2 mM MgCl2) for 5 min each. Slides were then incubated in pre-warmed solution B (0.1 M NaPO4, 2 mM MgCl2, 0.02% NP40, 0.01% sodium deoxycholate) for 10 min followed by incubation in X-gal working solution (0.6 mg/ml X-gal, 0.5 M potassium ferrocyanide, 0.5 M potassium ferricyanide in solution B) at 37°C for ~36 hr. Sections were then washed in 1X PBS and then counter-stained with Nuclear Fast Red. Slides were mounted in aqueous mounting medium (Aqua Permount) and cover-slipped.
 
-## RNA In situ hybridization
+### RNA In situ hybridization
 
 RNA in situ hybridization (ISH) was performed on 25 µm thick coronal sections cut from fresh frozen adult WT/Nxph4 KO mice. We generated digoxigenin (DIG)-labeled mRNA antisense probes against Nxph4 and a fluorescein (FITC)-labeled probe against Gad1, vGlut1 and vGlut2 using reverse-transcribed mouse cDNA as a template. Both DIG- and FITC-labeled probes were made using RNA labeling kits from Roche. Primer and probe sequences for the Nxph4, vGlut1, and vGlut2 probes were based on the published sequences in Allen Brain Atlas and the Gad1 was based on the probe sequence described in EurExpress.
 
 ISH was performed by the RNA In Situ Hybridization Core at Baylor College of Medicine using an automated robotic platform as previously described (Yaylaoglu et al., 2005), with modifications of the protocol for double ISH. Modifications in brief (see Yaylaoglu et al., 2005) for buffer descriptions): both probes were hybridized to the tissue simultaneously (Nxph4/Gad1, Nxph4/vGlut1 or Nxph4/vGlut2). After the described washes and blocking steps the DIG-labeled probes were visualized using tyramide-Cy3 Plus (1/50 dilution, 15 min incubation, Perkin Elmer). After washes in TNT the remaining HRP-activity was quenched by a 10 min incubation in 0.2 M HCl. The sections were then washed in TNT, blocked in TNB for 15 min before a 30 min room temperature incubation with HRP-labeled sheep anti-FITC antibody (1/500 in TNB, Roche). After washes in TNT the FITC-labeled probe was visualized using tyramide-FITC Plus (1/50 dilution, 15 min incubation, Perkin Elmer). Following washes in TNT the slides were removed from the machine and mounted in ProLong Diamond with DAPI (Molecular Probes).
 
-## RT-qPCR
+### RT-qPCR
 
 Cerebella from adult WT and Nxph4 KO mice were dissected and processed by miRNeasy mini kit to collect RNA (Qiagen, 74104). First-strand cDNA was synthesized using M-MLV reverse transcriptase (Life Technologies). We performed qPCR with Bio-Rad CFX96 Real-Time system using iTaq Universal SYBR Green SuperMix (BIO-RAD). The relative amount of cDNA was determined based on the cycle threshold. All reactions were conducted in triplicate and the results were averaged for each sample, normalized to Ppia levels, and analyzed using the ddCt method. Relative expression level of Nxph4 was determined by normalizing the expression level of each sample to the average of WT controls. The following primers were used in the experiment:
 
-## Behavioral assays
+### Behavioral assays
 
 All the behavioral assays were carried out blinded to the genotype. Mice at 14 to 16 weeks of age were habituated in the testing room for at least 30 min before the test.
 
-## Accelerating rotarod
+### Accelerating rotarod
 
 Mice were placed on an accelerating rotarod (Ugo Basile) whose speed increased from 4 to 40 rpm over a five-minute period. Each animal was tested in four trials per day for four consecutive days, with a 30 min interval between two trials in the same day. Latency to fall was recorded when the mouse fell from the rod or when the mouse had ridden the rotating rod for two revolutions without regaining control. Data are shown as mean ± standard error of mean and analyzed by two-way ANOVA with Tukey’s post hoc analysis.
 
-## Open field assay
+### Open field assay
 
 After habituation in the testing room (200 lux, 60 dB white noise), mice were individually placed in the center of an open Plexiglas chamber (40 × 40 × 30 cm) with photo beams (Accuscan) to measure their activity for 30 min. Data are shown as mean ± standard error of mean and analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Elevated plus maze
+### Elevated plus maze
 
 After habituation to the testing room (200 lux, 60 dB white noise), the mouse was placed in the center of a four-arm maze (each arm 25 × 7.5 cm), with two opposing arms enclosed by 15 cm high walls and the other two open. The maze was 50 cm above the ground level. Activity was recorded by a suspended digital camera and ANY-maze (Stoelting Co.) video tracking software for 10 min. Data are shown as mean ± standard error of mean and analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Acoustic startle response and Pre-pulse inhibition
+### Acoustic startle response and Pre-pulse inhibition
 
 Mice were habituated outside the test room for 30 min. Each mouse was placed in a Plexiglas tube inside of a sound-insulated lighted box (SR-Lab, San Diego Instruments). Startle stimulus was 120 dB and three pre-pulses used were 74, 78, and 82 dB. Pre-pulse inhibition was calculated as 1-[averaged startle response to startle stimulus with pre-pulse/averaged response to startle stimulus] x 100. Data are shown as mean ± standard error of mean. Acoustic startle response data are analyzed by one-way ANOVA with Tukey’s post hoc analysis. Pre-pulse Inhibition data are analyzed by two-way ANOVA with Tukey’s post hoc analysis.
 
-## Righting reflex
+### Righting reflex
 
 At postnatal day 10, pups were put on their back for 5 s on the bench and then were released. The time that pups spent to return to prone position was recorded. We performed this test before knowing the genotype of the pups, therefore more HET than WT and KO mice were tested. Data are analyzed by one-way ANOVA.
 
-## Lentivirus production
+### Lentivirus production
 
 Lentivirus was produced by transfecting HEK293T cells with lentiviral transfer plasmids, packaging plasmids, and envelope plasmids using Lipofectamine 2000 reagent (Invitrogen). Media from transfected cells were harvested 48 and 72 hr after transfection. Viruses were concentrated from the media using Lenti-X concentrator (Clontech) for further use.
 
-## Protein analysis for HEK293T cells
+### Protein analysis for HEK293T cells
 
 HEK293T cells (obtained and certified from ATCC) were cultured in DMEM (Invitrogen) containing 10% FBS. After transfection (Lipofectamine 2000, Invitrogen), cells were cultured for another 48 hr and then lysed with 2% TX-100 buffer (150 mM NaCl, 50 mM Tris-HCl [pH 7.5], 2% TX-100, protease and phosphatase inhibitors (Gendepot)). After 10 min incubation on ice, lysates were centrifuged at 17,000 g, 10 min, 4°C, and supernatant was then used for immunoblotting or IP. For immunoblotting, sample buffer and reducing agent were mixed with each sample followed by a 10 min incubation at 70°C. Samples were then run on a 4–12% Bis-Tris gel, transferred to a PVDF membrane and blocked for one hour with 5% non-fat milk prior to primary antibody incubation. For IP, 20 µl antibody conjugated beads (anti-FLAG magnetic beads, Sigma-Aldrich, M8823 or anti-HA magnetic beads, Fisher, 88836) were added to the sample followed by overnight incubation at 4°C with rotation. Beads were then washed with 3 × 1000 µl of 0.2% TX-100 buffer (150 mM NaCl, 50 mM Tris-HCl [pH 7.5], 0.2% TX-100, protease inhibitors (Gendepot), and phosphatase inhibitor (Gendepot)) before being eluted in 2X elution buffer at 95°C for ten minutes.
 
-## Protein analysis for mouse brains
+### Protein analysis for mouse brains
 
 To purify synaptosomes to prove the presence of Nxph4 on synapses, mouse cerebella was homogenized with 20 strokes by TKA EUROSTAR 900 rpm in sucrose homogenization buffer (320 mM sucrose, 10 mM Tric-HCl [pH 7.5], 5 mM EDTA, protease and phosphatase inhibitors (Gendepot)). The lysates (H) were then centrifuged at 900 g for 10 min at 4°C. The supernatant (S1) was further centrifuged at 17,000 g for 20 min at 4°C. Supernatant (cytosolic fraction, S2) was removed and the pellet (crude synaptosomes, P2) was resuspended in sucrose homogenization buffer followed by sucrose gradient ultracentrifugation at 64,000 g for 2 hr (0.8/1.0/1.2 M sucrose gradients). The interface of 1.0/1.2 M was collected and centrifuged at 164,000 g for 1 hr. The resulting pellet, the synaptosomes (Syn), was dissolved in sucrose homogenization buffer for analysis.
 
@@ -179,11 +592,11 @@ The crude synaptosomes were used for IP experiments. To pull down Nxph4-3xFLAG, 
 
 To detect Nxph4-GABAARs complex, mouse cerebella were processed similarly as above to get crude synaptosomes, which was then resuspended in 1% TX-100 buffer (150 mM NaCl, 50 mM Tris-HCl [pH 7.5], 1% TX-100, protease and phosphatase inhibitors (Gendepot)) followed by a 30 min incubation on ice. The supernatant was collected and concentration was determined by BCA assay. Two percent of the sample was saved as input. Normal rabbit IgG (Millipore, 12370) or 5 ul anti-α-neurexin antibody (Millipore, ABN161; ABN161-I) was added to the sample followed by overnight incubation at 4°C with rotation. The next day, 20 µl Protein A Sepharose (Fisher, 17-0780-01) was added followed by a one-hour incubation. Beads were then washed with 3 × 1000 µl of 0.2% TX-100 buffer (150 mM NaCl, 50 mM Tris-HCl [pH 7.5], 0.2% TX-100, protease inhibitor and phosphatase inhibitors (Gendepot)) before being eluted in 2X elution buffer at 95°C for ten minutes.
 
-## Deglycosylation
+### Deglycosylation
 
 PNGase F (NEB, P0704S) was used based on the manufacture manual. After being mixed with glycoprotein denaturing buffer, cell or brain lysates were denatured by heating at 100°C for 10 min. The denatured protein was then mixed with G7 reaction buffer, NP40, and PNGaseF. The sample was incubated at 37°C for 1 hr for deglycosylation.
 
-## Cerebellar slice electrophysiology
+### Cerebellar slice electrophysiology
 
 Mice (sIPSCs, and eEPSCs:~3 months old; Nxph4 KO and WT mIPSCs:~P25-35; Nxph4 KI and WT mIPSCs:~P30-40) were anesthetized by isoflurane inhalation and decapitated immediately. Acute cerebellar sagittal slices (350 µm thick) were cut with a vibratome (LEICA VT 1200, Leica Microsystems Ins., Buffalo Grove, IL) in a chamber filled with cutting solution. The sucrose containing cutting solution was used to prepare slices for mIPSC recording (Egawa et al., 2012; Pan et al., 2009) including (in mM) 235 sucrose, 2.5 KCl, 1.25 NaH2PO4, 28 NaHCO3, 0.5 CaCl2, 7 MgSO4, 28 D-glucose. The choline-chloride cutting solution was used to prepare slices for sIPSC recording, which included (in mM) 110 choline-chloride, 25 NaHCO3, 25 D-glucose, 11.6 sodium ascorbate, 7 MgSO4, 3.1 sodium pyruvate, 2.5 KCl, 1.25 NaH2PO4, and 0.5 CaCl2 with atropine (20 µM). The slices were then incubated in artificial cerebrospinal fluid (ACSF, in mM) containing 126 NaCl, 26 NaHCO3, 20 D-glucose, 2.5 KCl, 2.0 CaCl2, 2.0 MgSO4, and 1.25 NaH2PO4 at room temperature after recovery at 37 ± 1°C for 30 min. The solutions were bubbled through with 95% O2 and 5% CO2.
 
@@ -191,7 +604,7 @@ Whole-cell recordings were performed using a patch clamp amplifier (MultiClamp 7
 
 Simultaneous multi-cell patch recordings were obtained from neurons in granular layers of cerebellar slices as described previously (Jiang et al., 2015; Jiang et al., 2013). P21-P31 male mice were used in the experiment. Briefly, patch pipettes (5–7 MΩ) were filled with intracellular solution containing 121 mM potassium gluconate, 10 mM HEPES, 25 mM KCl, 4 mM MgATP, 0.3 mM Na3GTP, and 10 mM sodium phosphocreatine (pH 7.25). Whole-cell recordings were made from up to eight neurons with two Quadro EPC 10 amplifiers (HEKA Electronics, Lambrecht, Germany). A built-in LIH 8+8 interface board (HEKA) was used to achieve simultaneous A/D and D/A conversion of current, voltage, command and triggering signal for up to eight amplifiers. Patch Master software (HEKA) and custom-written Matlab-based programs (Mathworks) were used to operate the recording system and perform online and offline analysis of the electrophysiology data (Hao, 2019; copy archived at https://github.com/elifesciences-publications/PatchClamp-ShowConnection) (Jiang et al., 2015; Jiang et al., 2013). Action potentials (APs) were evoked by current injection into the presynaptic Golgi cells at 2 nA for 2 ms at 0.1 Hz for 30–50 trials, and the average of the sweeps in postsynaptic granule cells was used to detect synaptic connections (connection or no connection), and calculate the basic properties of evoked unitary postsynaptic potentials (uPSPs), such as synaptic latency, 10–90% rise time and decay time constant if two cells were connected. The recordings were performed in the presence of AMPA receptor antagonist CNQX (20 µM) and NMDA receptor antagonist DL-APV (100 µM) to only detect GABAergic synaptic transmission. We considered the synaptic response as a postsynaptic event when the amplitude of the response was larger than 2 times the baseline standard deviation. In addition to detecting the synaptic connection between cell pair, we also recorded the firing pattern and intrinsic electrophysiological properties of all recorded neurons.
 
-## Immunostaining
+### Immunostaining
 
 Perfused mouse brains were incubated in 4% PFA at 4°C overnight and protected by 30% sucrose before embedding in O.C.T. Frozen sections were cut with 20 or 45 μm thickness, and O.C.T. was removed by incubating in 1X PBS at RT for 30 min.
 
@@ -199,6 +612,6 @@ For FLAG staining, 20 μm sections were permeablized with 1X PBS containing 0.1%
 
 For synaptic markers and GABARs staining, perfused mouse brains were embedded in paraffin and cut with 6 μm thickness. Sections were then rehydrated with xylene followed by antigen retrieval with citric acid. Samples were stained overnight with primary antibody, 2 hr with secondary antibody, and mounted with Vectashield hardset antifade mounting medium. Images of the granular layer were acquired with 63x or 100x magnification using a Leica TCS SP8 confocal system. To count synapse number, images were analyzed using Imaris spot analysis tool. Briefly, with a given detection threshold, which was the same for each marker across samples, the software counted the number of puncta expressing each marker. It also counted among those puncta how many were very close to pucncta expressing another marker, which was considered as co-localization/co-expression. GABARs clusters density and size were analyzed using Fiji software. First, a region in the granular layer was set as a region of interest. Then we used the built-in rolling ball method to subtract background. We further used the watershed function to better separate puncta. The number and area of puncta were measured by the Analyze Particles function in Fiji. The density was calculated by the number of puncta divided by the area of ROI. The same settings were used for all the samples. Data were analyzed by an individual blinded to the genotype.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were analyzed using student’s t test, Mann-Whitney U test, one-way or two-way ANOVA followed by Tukey’s post hoc analysis in GraphPad Prism 6 and 8 or SPSS. A p-value cut-off of 0.05 was considered statistically significant. Sample sizes were determined by previous experience (Chao et al., 2010; Meng et al., 2016). Number of animals and cells used for each experiment can be found in the figure legends. Data were presented as mean ± standard error of the mean (SEM).

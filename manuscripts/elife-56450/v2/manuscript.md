@@ -31,7 +31,7 @@
 
 ## Abstract
 
-Despite a common understanding that Gli TFs are utilized to convey a Hh morphogen gradient, genetic analyses suggest craniofacial development does not completely fit this paradigm. Using the mouse model ( Mus musculus ), we demonstrated that rather than being driven by a Hh threshold, robust Gli3 transcriptional activity during skeletal and glossal development required interaction with the basic helix-loop-helix TF Hand2. Not only did genetic and expression data support a co-factorial relationship, but genomic analysis revealed that Gli3 and Hand2 were enriched at regulatory elements for genes essential for mandibular patterning and development. Interestingly, motif analysis at sites co-occupied by Gli3 and Hand2 uncovered mandibular-specific, low-affinity, ‘divergent’ Gli-binding motifs ( d GBMs). Functional validation revealed these d GBMs conveyed synergistic activation of Gli targets essential for mandibular patterning and development. In summary, this work elucidates a novel, sequence-dependent mechanism for Gli transcriptional activity within the craniofacial complex that is independent of a graded Hh signal.
+Despite a common understanding that Gli TFs are utilized to convey a Hh morphogen gradient, genetic analyses suggest craniofacial development does not completely fit this paradigm. Using the mouse model (Mus musculus), we demonstrated that rather than being driven by a Hh threshold, robust Gli3 transcriptional activity during skeletal and glossal development required interaction with the basic helix-loop-helix TF Hand2. Not only did genetic and expression data support a co-factorial relationship, but genomic analysis revealed that Gli3 and Hand2 were enriched at regulatory elements for genes essential for mandibular patterning and development. Interestingly, motif analysis at sites co-occupied by Gli3 and Hand2 uncovered mandibular-specific, low-affinity, ‘divergent’ Gli-binding motifs (dGBMs). Functional validation revealed these dGBMs conveyed synergistic activation of Gli targets essential for mandibular patterning and development. In summary, this work elucidates a novel, sequence-dependent mechanism for Gli transcriptional activity within the craniofacial complex that is independent of a graded Hh signal.
 
 ## Introduction
 
@@ -49,9 +49,17 @@ In this study we combined expression, genetic, genomic and bioinformatic studies
 
 ## Results
 
-## Loss of Gli TFs and Hand2 generates micrognathia and aglossia
+### Loss of Gli TFs and Hand2 generates micrognathia and aglossia
 
 To attain a comprehensive understanding of Gli TF function during craniofacial development, we generated conditional mutant mice lacking Gli2 and Gli3 in the NCC-derived mesenchyme (Gli2f/f;Gli3f/f;Wnt1-Cre, herein referred to as Gli2/3 cKO). While these mutants present with a variety of cranial defects including mid-facial widening, cleft lip/palate (Chang et al., 2016) and a domed cranial vault; we also observed a severe micrognathic phenotype in Gli2/3 cKO embryos. Relative to wild-type embryos, Gli2/3 cKO mutants presented with low-set pinnae, aglossia and micrognathia (Figure 1A–C’, I). While the distal mandible was hypoplastic and certain distal structures such as the incisors were absent, the proximal mandible was more severely affected. Proximal mandibular structures such as the coronoid, condylar, and angular processes, were almost completely lost (Figure 1D,I, Figure 1—figure supplement 1A–B) and posterior cranial skeletal structures including the tympanic ring were hypoplastic. Interestingly, conditional loss of either Gli2 or Gli3 alone (Gli2f/f;Wnt1-Cre or Gli3f/f;Wnt1-Cre) did not replicate the mandibular phenotype observed in double mutants (Chang et al., 2016).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig1-v2.jpg)
+
+**Figure 1.:** (A,C,E,G) Lateral cranial view or (A’,C’,E’,G’) dorsal mandibular view of wild-type, Gli2f/f;Gli3f/f;Wnt1-Cre, Hand2f/f;Wnt1-Cre, and Gli2f/f;Gli3f/f;Hand2f/f;Wnt1-Cre embryos at E14.5. Red arrow indicates micrognathia. Red arrowhead indicates low-set pinnae. Dotted black line denotes tongue and red asterisk highlights observed aglossia. (B,D,F,H) Lateral view of Alizarin Red and Alcian Blue staining to mark bone and cartilage respectively in wild-type, Gli2f/f;Gli3f/f;Wnt1-Cre, Hand2f/f;Wnt1-Cre, and Gli2f/f;Gli3f/f;Hand2f/f;Wnt1-Cre mandibles at E18.5. Abbreviations: md, mandible; in, incisor; crp, coronoid process; cdp, condylar process; (I) Measurements of MNP and mandibular bone. Data are expressed as mean + SD with individual data points. *p<0.05, **p<0.01, ***p<0.001. (J) Co-immunoprecipitation showing interaction between Gli3 and Hand2 within E10.5 MNPs. Scale bar: 1 mm. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Lateral cranial view of skeletal stains for whole heads of wild-type, Gli2f/f;Gli3f/f;Wnt1-Cre, Hand2f/f;Wnt1-Cre, and Gli2f/f;Gli3f/f;Hand2f/f;Wnt1-Cre mutants at E18.5. (E, F) Lateral cranial view and (E’, F’) dorsal mandibular view of Gli2f/+;Gli3f/+;Wnt1-Cre and Hand2f/+;Wnt1-Cre embryos at E14.5. Dotted black line indicates presence of tongue in both allelic combinations. (G–G’) Lateral cranial and dorsal mandibular view of Gli2f/+;Gli3f/+;Hand2f/+;Wnt1-Cre mutants at E14.5. Red arrowhead indicates mildly low-set pinnae. Red asterisk highlights observed aglossia. (H–H’) Lateral cranial view of skeletal stain for whole head or mandible of Gli2f/+;Gli3f/+;Hand2f/+;Wnt1-Cre mutants at E18.5. (I) Measurements of triple heterozygotus mutant mandibular bone in relation to other conditional KOs (also shown in Figure 1). Data are expressed as mean + SD with individual data points. ***p<0.001. (J) Co-immunoprecipitation showing interaction between Gli2 and Hand2 within E10.5 MNPs. Abbreviations: agp, angular process; pmx, pre-maxilla; nas, nasal bone; jb, jugal bone; hb, hyoid bone; fb, frontal bone; pb, parietal bone; tb, temporal bone; g, gonial; tr, tympanic ring; hb, hyoid bone. Scale bar: 1 mm.
 
 While Hand2f/f;Wnt1-Cre mutants (herein referred to as Hand2 cKO) did not present with mid-facial, clefting or calvarial phenotypes, they did present with low-set pinnae, aglossia and micrognathia, similar to Gli2/3 cKO embryos (Figure 1E–E’, I; Morikawa et al., 2007; Barron et al., 2011). Skeletal analysis of Hand2 cKO mutants confirmed a dysmorphic and hypoplastic mandible and loss of Meckel’s cartilage (Figure 1F,I). Compared to the Gli2/3 cKO embryos, Hand2 cKO embryos exhibited a less severe proximal mandibular phenotype. While the tympanic ring and angular processes were absent, the coronoid and condylar processes were not severely hypoplastic (Figure 1—figure supplement 1C). Although the hyoid bone was present, it was abnormally fused to middle ear cartilage and underwent excessive/ectopic ossification (Barron et al., 2011). Most strikingly; however, the Hand2 cKO mutants exhibited extreme distal jaw hypoplasia. Together, these phenotypic analyses suggested that while Gli2 and Gli3 were predominantly required for proximal jaw development and Hand2 was predominantly required for distal jaw development, both Gli2/3 and Hand2 were necessary for proper mandibular development.
 
@@ -61,35 +69,67 @@ To test the hypothesis that Gli TFs and Hand2 regulate a common transcriptional 
 
 Finally, to determine if Hand2 and Gli TFs physically interact in vivo, we performed co-immunoprecipitation assays using embryonic day (E) E10.5 wild-type MNPs. Hand2 physically interacted with both full-length and truncated isoforms of Gli3, but only the truncated isoform of Gli2 (Figure 1J, Figure 1—figure supplement 1J). Taken together, these data provided genetic, molecular and biochemical evidence suggesting that Gli and Hand2 TFs participate within a common transcriptional network important for mandibular development, and further suggested that there may be a unique role for Gli/Hand2 cooperation.
 
-## Gli2, Gli3, and Hand2 are co-expressed in NCC-derived populations associated with skeletal and glossal progenitors
+### Gli2, Gli3, and Hand2 are co-expressed in NCC-derived populations associated with skeletal and glossal progenitors
 
 To explore the molecular basis for Gli-mediated micrognathia and investigate the hypothesis that Gli TFs and Hand2 cooperate to initiate MNP patterning and development, we examined the endogenous expression of these TFs during early MNP development using single molecule fluorescent in situ hybridization (RNAscope). Contrary to the distinct and opposing Gli2 and Gli3 expression domains observed in other developing organ systems (Lee et al., 1997; Sasaki et al., 1997; Büscher and Rüther, 1998; Lei et al., 2004), no spatial distinction or opposing expression gradients were observed between Gli2 and Gli3 in the developing MNP (Figure 2A–C’). Furthermore, Gli2 and Gli3 were co-expressed within many cells of the developing MNP (Figure 2C–C’), supporting the hypothesis that the developing MNP uses unique mechanisms to integrate spatiotemporal information.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Expression of Gli2 and Gli3 within the developing MNP as revealed by smFISH on sagittal sections of E10.5 embryos. (C’) Higher magnification of C. (D–F) Expression of Gli3 and Hand2 within the developing MNP as revealed by smFISH on frontal sections of E10.5 embryos. (F’) Higher magnification of F. (G) tSNE plot of single-cell RNA-sequencing of the E11.5 MNP. (H–J) Single-cell expression of Gli2, Gli3, and Hand2 in the E11.5 MNP. Dotted red line indicates Gli+/Hand2+ NCC clusters (0, 4, 5). (K–L) GO-terms associated with marker genes for clusters 0, 4, 5 indicate Gli+/Hand2+ cells may contribute to skeletogenesis and glossal development. Scale bar: 100 µm. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Single-cell expression of Snai1, Twist1, and Dlx5 in the E11.5 MNP. Black outline emphasizes the enriched expression of these markers to indicate NCC-derived mesenchyme. (D) Percent of Gli3+ cells that co-express Hand2 in all E11.5 MNP scRNA-seq clusters or clusters 0, 4, and 5. (E) Percent of Gli3+ or Hand2+ cells with greater than 1.5 TPM that reside in E11.5 scRNA-seq clusters 0, 4, and 5, or all other clusters.
 
 As opposed to the widespread MNP expression of Gli3 and Gli2, Hand2 expression was confined to the medial aspect of the MNP (Figure 2D–E; Srivastava et al., 1997; Thomas et al., 1998; Barron et al., 2011; Funato et al., 2016). Interestingly, while many Gli3+ cells did not express Hand2, most or all Hand2+ cells co-express Gli3 (Figure 2F,F’). To confirm co-expression and further determine the identity of cells co-expressing Gli2/3 and Hand2, we performed single-cell RNA-sequencing (scRNA-seq) in the developing MNP. At E11.5, unsupervised clustering identified 17 distinct clusters in the MNP, including a central grouping of mesenchymal clusters derived from NCCs (Figure 2G; Figure 2—figure supplement 1A–C). Coincident with RNAscope, Gli2 and Gli3 expression were not restricted to, nor enriched in any particular cell cluster. While we failed to observe a gradient or polarized expression of Gli TFs throughout the MNP, there were over 2-fold more cells expressing Gli3 compared to Gli2 (Figures 2H–I, 1006 cells, 14.2% vs., 440 cells, 6.2%). In contrast to Gli3 expression, Hand2 expression was not uniformly expressed, with 43% of cells expressing Hand2 occupying clusters 0,4 and 5 (Figure 2J). In addition to Hand2, markers for these clusters also included Alx3, Dlx5, and Col2a1. scRNA-seq analyses further allowed for quantification of which NCC-cell clusters had the most robust Gli3/Hand2 co-expression. We found that 35% of Gli3+ cells also expressed Hand2 at E11.5 (Figure 2—figure supplement 1D). Furthermore, 50% of Gli3+ cells in cluster 0,4, and five were also Hand2+ (Figure 2—figure supplement 1D). This was particularly striking since clusters 0, 4 and 5 only accounted for 31% of MNP cells. While cells expressing Gli TFs did not organize to any particular clusters, 49% of cells with greater than 1.5 transcripts per million (TPM) Gli3 expression occupied clusters 0, 4, and 5. Furthermore, 62% of cells with greater than 1.5 TPM Hand2 expression, also occupied clusters 0, 4, and 5 (Figure 2—figure supplement 1E). This was in stark contrast to the other clusters with greater than 1.5 TPM Hand2 expression (clusters 7, 8, 16), which only account for 14% of the highest expressing Hand2 cells.
 
 Gene Ontology (GO) analyses for clusters 0, 4, and 5 revealed that these neural crest-derived cells contributed to biological processes altered in Gli2/3 cKO and Hand2 cKO mutant embryos, such as skeletal and glossal development, and pattern specification (Figure 2K). Additionally, GO-terms for phenotypes arising from dysregulation of these cell clusters included ‘decreased tongue size’ and ‘small mandible’ (Figure 2L), suggesting that expression of Gli2/3 and Hand2 in clusters 0, 4, and five may be responsible for the phenotypes present in the conditional knockouts. Since a Gli2/3 expression gradient or restriction from cell types cannot explain diverse Gli-dependent transcriptional outputs, we hypothesized that functional interactions with Hand2 in clusters 0, 4, and 5 may explain this phenomenon.
 
-## Gli3 and Hand2 occupy CRMs near shared targets in mandibular NCCs
+### Gli3 and Hand2 occupy CRMs near shared targets in mandibular NCCs
 
 To determine if Gli TFs and Hand2 regulated a common group of target genes, we performed bulk RNA-sequencing on E10.5 Gli2/3 cKO and Hand2 cKO MNPs. Transcriptome profiling and GO analyses revealed a wide variety of differentially expressed genes affecting a number of biological processes including ‘muscle system process’, ‘anterior/posterior patterning’, ‘regionalization’, and ‘cell-cell signaling’ (Figure 3A–B). Furthermore, hypergeometric tests revealed significant enrichment of shared transcripts. 50% of genes differentially expressed in Gli2/3 cKO MNPs were also differentially expressed in Hand2 cKO MNPs (Figure 3C, p=3.7E-284), with 29% being decreased in both mutants and 21% being increased in both mutants (Figure 3—figure supplement 1A–A’). This highly significant overlap led us to further investigate mechanisms of a possible co-factorial relationship between Gli TFs and Hand2.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Volcano plots and GO terms associated with differentially expressed genes from Gli2f/f;Gli3f/f;Wnt1-Cre or Hand2f/f;Wnt1-Cre E10.5 MNPs (fold change >1.5, adjusted p-value<0.05). (C) Venn diagram of shared differentially expressed genes in Gli2f/f;Gli3f/f;Wnt1-Cre and Hand2f/f;Wnt1-Cre MNPs. (D) Endogenously FLAG-tagged mice used for in vivo ChIP-seq. (E) Known motif enrichment of Gli3 and Hand2 ChIP-seq peaks. (F) E-box motif enrichment by HOMER in Gli3 MNP ChIP-seq peaks. (G) Venn diagram comparing overlap between Gli3 and Hand2 ChIP-seq peaks, p-value calculated using RELI.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–A’) Venn diagrams of shared significantly decreased (A) or shared significantly increased (A’) in bulk RNA-seq of Gli2f/f;Gli3f/f;Wnt1-Cre and Hand2f/f;Wnt1-Cre MNPs.
 
 Next, we assessed whether Gli TFs and Hand2 occupied the same CRMs by performing ChIP-seq analyses in vivo using endogenously FLAG-tagged alleles for each TF (Lopez-Rios et al., 2014; Osterwalder et al., 2014; Lorberbaum et al., 2016; Figure 3D). Since our previous biochemical and expression data supported a unique relationship between Gli3 and Hand2 in the MNP, we focused our characterization of genomic binding on Gli3. As expected, the most highly enriched TF binding site observed in Gli3 ChIP-seq on either E11.5 whole face (frontonasal, maxillary and mandibular prominences) or MNPs alone reflected the previously reported ‘canonical’ Gli-binding motif (cGBM) defined by the GACCACCC 8-mer (Kinzler and Vogelstein, 1990; Vokes et al., 2008; Figure 3E). Similarly, Hand2 peaks contained both canonical bHLH E-box motifs (CANNTG) and Hand-specific E-box motifs (Maves et al., 2009; Kulakovskiy et al., 2013; Figure 3E). Further motif enrichment analyses revealed that bHLH motifs were also significantly enriched within Gli3 MNP peaks (Figure 3F). Comparison between Gli3 and Hand2 MNP ChIP-seq peaks via regulatory element locus intersection (RELI) (Harley et al., 2018) revealed a significant overlap of genomic locations occupied by Gli3 and Hand2 in the MNP (Figure 3G, 62%, 18-fold enriched, p=2.88E-213).
 
 To determine if the overlap of Gli3 and Hand2 binding at CRMs was biologically relevant, we examined GO-terms associated with genes that were differentially expressed in Gli2/3 cKO mutants near either Gli3 alone or Gli3/Hand2 overlapping peaks (see Methods). Overall, the GO-terms for differentially expressed genes near Gli3 alone peaks were substantially different from the GO-terms for differentially expressed genes near Gli3/Hand2 overlapping peaks (Figure 4A). Interestingly, while GO-terms for differentially expressed genes near Gli3 alone peaks included pattern specification, embryonic organ development and Hh signaling, those associated with differentially expressed genes near Gli3-Hand2 overlapping peaks included a different set of tissue-specific processes including regulation of chondrocyte differentiation and muscle cell differentiation (Figure 4A). Not only did it appear that Gli3/Hand2 input conveyed distinct biological relevance, but the number of instances in which differentially expressed genes in Gli2/3 cKO mutants were near a Gli3/Hand2 overlapping peak were greater than those near a Gli3 peak alone. While approximately 337 differentially expressed genes were associated with a Gli3 alone peak, 463 differentially expressed genes were associated with a Gli3/Hand2 overlapping peak (Figure 4B). Finally, to assess how Gli3/Hand2 interactions could be influencing differentially expressed genes, we analyzed the direction of fold change. 17% of genes with a Gli3/Hand2 overlapping peak that were increased in the Gli2/3 cKO, were also increased in the Hand2 cKO. Conversely, 33% of genes with a Gli3/Hand2 overlapping peak that were decreased in the Gli2/3 cKO, were also decreased in the Hand2 cKO (Figure 4—figure supplement 1A). Together, these data suggested that Gli3 and Hand2 were cooperating to positively regulate genes important for mandibular development.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig4-v2.jpg)
+
+**Figure 4.:** (A) GO-terms associated with significantly decreased differentially expressed (DE) genes from Gli2/3 cKO MNP bulk RNA-seq near Gli3 ChIP-seq peaks without Hand2 (Gli3 alone) or near Gli3-Hand2 overlap peaks. (B) Number of DE genes from Gli2/3 cKO MNP bulk RNA-seq near Gli3 ChIP-seq peaks without Hand2 (Gli3 alone) or near Gli3-Hand2 overlap peaks. (C) Enrichment of all MNP clusters or clusters 0, 4, and 5 from E11.5 scRNA-seq near Gli3 ChIP-seq peaks without Hand2 (Gli3 alone) or near Gli3-Hand2 overlap peaks calculated using RELI. ***p<0.001, n.s. not significant. (D) tSNE plot of single-cell RNA-sequencing from E13.5 wild-type MNP. (E–F) Single-Cell Trajectory analysis plot of integrated E11.5 and E13.5 scRNA-seq MNP samples showed the E13.5 glossal (1,15, 19) and skeletal (3, 4, 5, 6, 11) clusters are likely derived from E11.5 Gli3+/Hand2+ NCC clusters (0,4,5). See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A higher percentage of genes near Gli3-Hand2 overlap peaks with significantly decreased expression in the Gli2/3 cKO MNP by bulk RNA-seq is also significantly decreased in the Hand2 cKO compared to genes with significantly increased expression in both cKOs. (B) Box and whisker plots of percent of E11.5 scRNA-seq cluster markers with a Gli3 alone or Gli3-Hand2 peak nearby. (C) Box and whisker plots of percent of E11.5 scRNA-seq cluster markers that are DE in Gli2/3 cKO MNP bulk RNA-seq, *p<0.05, **p<0.01, ***p<0.001. (D) Full single-cell trajectory analysis of E11.5 and E13.5 MNP scRNA-seq data. (E–F) UMAP after Integration analysis and re-clustering of E11.5 and E13.5 MNP scRNA-seq data shows E11.5 cluster 0, 4, and five are most similar to skeletal and glossal E13.5 clusters. (E’–F’) Full UMAP after integration of E11.5 and E13.5 MNP scRNA-seq and re-clustering with visualization of clusters based on timepoint.
+
 We next superimposed E11.5 single-cell cluster markers onto these findings to reveal that marker genes for NCC clusters had a greater association with Gli3/Hand2 overlapping peaks than Gli3 peaks alone (Figure 4—figure supplement 1B). More specifically, genes that were differentially expressed in both Gli2/3 and Hand2 cKOs were more likely to be marker genes for clusters 0, 4 and 5 than marker genes for other NCC clusters or other non-NCC clusters (Figure 4—figure supplement 1C). To confirm the statistical significance of this finding, we used RELI to test if there was enrichment for scRNA-seq cluster marker genes near Gli3 alone or Gli3/Hand2 overlapping peaks. While there was significant enrichment of cluster marker genes associated with the entire E11.5 MNP near Gli3 alone peaks, there was not a significant enrichment for marker genes for clusters 0, 4, 5 (Figure 4C). Interestingly, and supportive of our previous data, when we repeated this analysis for Gli3/Hand2 overlapping peaks, we found that there was significant enrichment for cluster marker genes for the entire E11.5 MNP, but also a higher enrichment for marker genes for clusters 0, 4, and 5 (Figure 4C). Thus, these analyses suggested a distinct role for the combined action of Gli3 and Hand2 in a subset of NCCs (clusters 0, 4 and 5) during mandibular development.
 
 While our previous data suggested that Gli3/Hand2 interactions conveyed a distinct function in NCC clusters 0, 4 and 5, it was unclear how these clusters contributed to mandibular development. To further delineate the fate of these clusters, we performed scRNA-seq on MNPs at E13.5, a stage when NCC differentiation into distinct cell types had initiated (Figure 4D). We used Monocle to perform trajectory analysis on integrated E11.5 and E13.5 scRNA-seq datasets (Figure 4E,F; Figure 4—figure supplement 1D). These analyses revealed that E11.5 clusters 0, 4 and 5 gave rise to two distinct cell populations at E13.5: the Myf5 and Myod1 expressing glossal musculature (clusters 1, 15, and 19) and skeletogenic progenitors (clusters 3, 4, 5, 6, and 11), marked by many osteochondrogenic genes including Sp7, Runx2, Sox9, Col1a1, Col9a2, and Barx1. These findings were consistent when Integration Analysis and re-clustering of these datasets was performed and visualized using UMAP (Figure 4—figure supplement 1E–F’). Together, these analyses suggested that Gli3/Hand2 interactions were enriched in E11.5 clusters 0, 4 and 5, which in turn give rise to skeletogenic and glossal components of the lower jaw.
 
-## Low-affinity Gli-binding motifs are within close proximity to E-boxes and specific to the developing mandible
+### Low-affinity Gli-binding motifs are within close proximity to E-boxes and specific to the developing mandible
 
 Collectively, our genetic analysis, expression profiling and TF binding data supported a critical role for Gli3/Hand2 interactions during mandibular development; however, the specific mechanisms underlying combinatorial transcriptional regulation for shared Gli3/Hand2 targets was unclear. To further investigate potential co-regulatory interactions, we performed de novo motif analysis on Gli3-alone vs. Gli3/Hand2-overlapping peak regions. As expected, the most enriched motif within Gli3-alone peaks was the previously reported ‘canonical’ GBM (cGBM) defined by the ‘GACCACCC’ 8-mer (Kinzler and Vogelstein, 1990), which was 9.8-fold-enriched compared to background sequences (Figure 5A). Surprisingly, when we performed motif analysis on overlapping peaks shared between Gli3 whole face and Hand2 MNP samples, the top-ranked GBM (6.3-fold-enriched over background sequences) deviated from the cGBM 8-mer, with the most notable change being the reduced weight of the highly conserved ‘A’ at the 5th position (Figure 5A’). To specifically address the Gli3/Hand2 relationship in the MNP, we repeated these analyses using only overlapping peaks from Gli3 and Hand2 MNP samples. Here, the top-ranked GBM present (6.2-fold-enriched over background) differed even further from the canonical 8-mer, having a higher probability of either a ‘T’ rather than ‘A’ at the highly constrained 5th position (Figure 5A’’). We designated this GACCTCCC 8-mer as a ‘divergent’ GBM (dGBM). Interestingly, the dGBM was most clearly revealed upon comparisons between MNP data sets, with 85% of Gli3/Hand2 overlapping peaks containing dGBM and only 9% of Gli3/Hand2 overlapping peaks contained a cGBM. 6% of Gli3/Hand2 overlapping peaks contained neither a cGBM or a dGBM (Figure 5—figure supplement 1A). These data supported the possibility that the dGBM utilized by Gli3 and Hand2 was specific to the MNP. To test this hypothesis, we repeated our de novo motif analysis comparing to publicly available data from the developing limb (Figure 5B; Osterwalder et al., 2014). Strikingly, the dGBM present in our MNP analysis was not present when comparing Hand2 binding in the limb. Rather, these analyses revealed the highly constrained 5th position remained exclusively a heavily weighted ‘A’. Together, these data suggested a tissue-specific role for this MNP-enriched dGBM.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig5-v2.jpg)
+
+**Figure 5.:** (A–A’’) De novo motif enrichment for Gli3-only peaks in MNP, Gli3/Hand2 overlapping peaks, comparing (A’) Gli3-whole face peaks to Hand2 MNP peaks or (A’’) Gli3 MNP peaks to Hand2 MNP peaks. (B) (Top) Known motif enrichment of Hand2 peaks from limb buds of endogenously FLAG-tagged mice. (Bottom) De novo motif enrichment of Gli3/Hand2 overlapping peaks, comparing Gli3 peaks from whole face and Hand2 peaks from limb. (C) Electrophoretic mobility shift assay (EMSA) and quantification of affinity showing that the Gli3 DNA-binding domain (Gli3DBD) binds with increased affinity to canonical GBMs (cGBM) relative to divergent GBMs (dGBMs). Results used for quantification are shown in triplicate, *p<0.05, **p<0.01, ***p<0.001. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) 9% of Gli3-Hand2 overlapping ChIP-seq peaks contained a cGBM, 85% lacked a cGBM but did contain a dGBM, and 6% contained neither a cGBM or a dGBM.
 
 To confirm the decreased frequency of cGBM binding events in the presence of Hand2 in the MNP, we quantified the incidence of the cGBM 8-mers using a strict counting method. While the consensus cGBM 8-mer (GACCACCC) was detected in 16% of Gli3-only peaks collected from the MNP, its occurrence was significantly reduced to only 2% of Gli3/Hand2 overlapping peaks. Additionally, while the cGBM was the 33rd most frequent 8-mer in Gli3-only MNP peaks (out of 32,896 possibilities), it was 563rd in frequency in Gli3/Hand2 overlapping MNP peaks (Supplementary file 2). This finding, in conjunction with the motif enrichment results, further supported a deviation from the cGBM when Hand2 and Gli3 peaks overlapped.
 
 To examine the effect an ‘A’ to ‘T’ transition at the 5th position had on relative binding affinity, we utilized previously published Gli3 protein-binding microarray (PBM) E-score data (Peterson et al., 2012). PBM E-scores range from −0.5 to +0.5, with values above 0.4 generally considered strong binding sites (Berger et al., 2006; Berger and Bulyk, 2009). Interestingly, substitution of ‘A’ to ‘T’ in the 5th position of comparable 8-mers reduced the E-score for Gli3 binding from 0.42 to 0.33, indicating that Gli3 has a lower affinity for the dGBM sequence. Likewise, previous studies in Drosophila reported that low-affinity non-canonical GBMs with a ‘T’ in the 5th position, similar to what we term the dGBM, were responsible for regulating broad expression of Ci targets in zones of lower Hh signaling (Parker et al., 2011). To directly test the binding affinity of Gli3 to a dGBM, we performed gel-shift assays on synthetic sequences containing either a dGBM+E-box or cGBM+E-box. These experiments confirmed that a single nucleotide alteration from ‘A’ to ‘T’ in the 5th position significantly decreased the affinity of Gli3 DNA binding (Figure 5C). Together, these data confirmed the identification of distinct, low-affinity dGBMs enriched at genomic loci bound by both Gli3 and Hand2 within the MNP.
 
-## dGBMs direct unique gene regulatory programs in neural crest-derived skeletal and glossal progenitors of the MNP
+### dGBMs direct unique gene regulatory programs in neural crest-derived skeletal and glossal progenitors of the MNP
 
 To specifically address the possible functional consequences of utilization of a cGBM vs. dGBM, we superimposed our motif analysis on GO-terms associated with genes that were differentially expressed in Gli2/3 cKO mutants near Gli3/Hand2 overlapping peaks (Figure 6A). Overall, the GO-terms associated with cGBMs were substantially different from those associated with dGBMs. Furthermore, GO-terms associated specifically with the dGBM included a muscle-specific subset. We next examined the prevalence of dGBMs near genes that were differentially expressed in conditional KO mutants and near Gli3/Hand2 overlapping peaks. These analyses revealed that relatively few differentially expressed genes were associated with peaks containing a cGBM, whereas many more differentially expressed genes were associated with peaks containing a dGBM (Figure 6B).
 
@@ -101,11 +141,31 @@ To determine if these trends hold true in NCCs specifically, we combined our mot
 
 Having identified a global trend of dGBM association with NCC marker genes, we sought to identify specific targets from our transcriptome and ChIP-seq analyses relevant for MNP development. We chose four targets relevant to MNP development including Forkhead Box d1 (Foxd1) a well-characterized Gli target involved in MNP regionalization (Jeong et al., 2004); Pleiomorphic adenoma gene-like 1 (Plagl1), a gene which impacts glossal development (Li et al., 2014); Myosin heavy chain 6 (Myh6), a myosin isoform found in specialized skeletal muscles (Lee et al., 2019) and Avian Musculoaponeurotic fibrosarcoma oncogene homolog (Maf), a TF involved in chondrocyte differentiation (Hong et al., 2011). To identify regions with potential regulatory function, we integrated Cis-BP-identified (Weirauch et al., 2014) cGBMs with our MNP-specific ATAC-seq and ChIP-seq data to highlight regions of open chromatin that were bound by Gli3 and Hand2. Interestingly, we frequently saw areas of open chromatin occupied by Gli3 and Hand2 that did not contain a high-affinity cGBM (Figure 7A–D, black lines). Instead, these loci all displayed Gli3 and Hand2-bound regions containing dGBMs (Figure 7A–D, red lines). This was in stark contrast to the Gli3-bound areas of open chromatin heavily populated with cGBMs at the Ptch1 locus (Figure 7—figure supplement 1A, black lines). Furthermore, all four of the selected target genes were initially expressed in E11.5 clusters 0, 4, and 5 (Figure 7E–H), which were shown to give rise to NCC-derived skeletal and glossal derivatives in the E13.5 MNP (Figure 7I–L), via trajectory analysis (Figure 7M–S).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig7-v2.jpg)
+
+**Figure 7.:** (A–D) Overview of MNP-specific regulatory input to the Foxd1, Plagl1, Myh6, and Maf locus. cGBMs (black line) and dGBMs (red lines) are indicated below the signal tracks for Gli3 (red) and Hand2 (blue) ChIP-seq and ATAC-seq (green). PP1 = promoter proximal 1, PP2 = promoter proximal 2. (E–H) Single-cell expression of Foxd1, Plagl1, Myh6, and Maf in the E11.5 MNP. Dotted red line indicates Gli+/Hand2+ NCC clusters (0, 4, 5). (I–L) E13.5 scRNA-seq expression in Gli3/Hand2+ -derived clusters of Gli3 and Hand2 targets involved with MNP patterning. (M–S) Single-cell Trajectory analysis plot of integrated E11.5 and E13.5 scRNA-seq MNP samples highlighting E11.5 clusters 0, 4, and 5 likely give rise to the E13.5 glossal and skeletal clusters (T–U) Expression of Shh, Ptch1, and Gli3 as revealed by smFISH in sagittal sections of E10.5 MNPs. Dotted yellow line indicates highest Shh-responsive area marked by Ptch1. (V–Y) smFISH expression of Gli3 and Hand2 targets involved with MNP patterning. Scale bar: 100 µm. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) MNP regulatory landscape for Ptch1. Predicated cGBMs are shown as black tickmarks below the tracks and the associated motif is shown above. (B) Table showing percent of Foxd1+, Plagl1+, Myh6+, or Maf+ NCCs from scRNA-seq of the E11.5 MNP are also Gli3+, Hand2+, or Ptch1-.
+
 To follow up on differences in GBM quality/variants observed between Ptch1 and our identified target genes, we examined expression patterns for all four genes in E10.5 MNPs using RNAscope. As expected, Ptch1 was expressed in neural crest mesenchyme directly adjacent to an epithelial source of Shh on the oral axis of the MNP and was indicative of a high level of Shh pathway activity (Figure 7T, dotted yellow line). As previously described, Gli3 expression was uniformly observed throughout the oral-aboral axis of the MNP (Figure 7U). Interestingly, all four of our identified target genes (Foxd1, Plagl1, Myh6 and Maf) were expressed both within and outside of the Ptch1 domain in neural crest-derived mesenchyme of the MNP (Figure 7T–Y). To quantify this observed phenomenon, we used our E11.5 scRNA-seq to determine that the majority of Foxd1+, Plagl1+, Myh6+, or Maf+ NCCs did not express Ptch1 (Figure 7—figure supplement 1B). Thus, our data suggested that Hand2 and Gli3 collaborate at dGBMs to activate transcriptional networks within MNP NCCs to establish osteogenic, chondrogenic, and glossal/muscle cell fates. These data further suggested that despite being Gli3 targets, these genes did not require graded Shh activity for expression, but rather utilized combined input from Gli3/Hand2.
 
-## Gli3 and Hand2 synergize at dGBMs
+### Gli3 and Hand2 synergize at dGBMs
 
 Cooperating TFs frequently bind with a preferred spacing and orientation (Jolma et al., 2013; Narasimhan et al., 2015). To further understand the mechanisms of Gli3 and Hand2 cooperation at CRMs containing dGBMs, we tested if there was a statistical preference for any single spacing or orientation of GBMs and E-boxes inside of Gli3/Hand2 overlapping genomic regions using the previously published COSMO method (Narasimhan et al., 2015). Despite identifying 628 ‘intersecting peaks’ that contain a GBM and Hand2 motif within 100 bases of each other, no particular spacing/configuration was present in greater than ~0.2% of sequences (Figure 8—figure supplement 1A; Supplementary file 3). These findings suggested flexibility in the regulatory architecture governing the spacing and orientation of Gli3 and Hand2 binding sites within CRMs bound in the developing MNP. Based on these results, we identified three potential regulatory regions near the Foxd1 promoter for further functional analysis. We designated a region containing a dGBM 22 base pairs downstream of an E-box and two base pairs upstream of a second E-box as promoter proximal 1 (PP1) and promoter proximal 2 (PP2), respectively, and designated a second putative regulatory region downstream of the Foxd1 coding region as +37086 (Figures 7A and 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig8-v2.jpg)
+
+**Figure 8.:** (A–C) Luciferase reporter activity of the endogenous Foxd1 putative regulatory region fragments PP1, PP2, and +37086 after transfection with Gli3, Hand2, or both in O9-1 cells. (D) Luciferase reporter activity of synthetic constructs containing a cGBM and E-box (solid bars) or dGBM and E-box (hatched bars) in response to transfection of Gli3, Hand2, or both in O9-1 cells. Data are expressed as mean + SD with biological replicates shown as dots. *p<0.05, **p<0.01, ***p<0.001. See also Figure 8—figure supplements 1 and 2.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Heatmap showing p-values associated with COSMO outputs for spacing and orientation of TF binding site enrichment. Number of base pairs separating motifs increase from left to right, orientations and directionality of motifs tested are schematized on the left. No single orientation or spacing was conserved for GBMs and E-boxes within Gli3 and Hand2 overlapping ChIP-seq peaks in the MNP. (B) EMSA for PP1 and PP2 using increasing concentrations of Gli3DBD, Hand2 full-length (FL), and E47L/Tcf3, the Hand2 heterodimerization partner. Increasing concentrations of Gli3DBD results in increased binding of a supershift complex. The observed complexes are illustrated for clarity.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Western blot using α-FLAG antibody to detect protein expression from plasmids p3XFLAG-Hand2 and p3XFLAG-Gli3, following transfection into mouse embryonic fibroblasts. (B) RT-qPCR fold change of Foxd1 after transfection with Gli3, Hand2, or both in O9-1 cells. Data are expressed as mean + SD with biological replicates indicated as dots. *p<0.05, **p<0.01, ***p<0.001.
 
 While ChIP data was highly suggestive of Gli3/Hand2 co-occupancy at regulatory regions containing dGBM and E-box motifs, it did not test if Gli3 and Hand2 were able to simultaneously bind an endogenous dGBM and an adjacent E-box. To address this question, we performed gel-shift assays with the Gli3 DNA-binding domain and full-length Hand2 (Hand2FL) on putative endogenous CRMs near the Foxd1 locus. Gel-shift analysis revealed that the Gli3 DNA-binding domain independently binds the dGBM present in PP1 and PP2 (Figure 8A). In addition, we found that Hand2 could not independently bind the E-box motifs present in the PP1 and PP2 probes but could bind as a heterodimer in the presence of E47L (Tcf3), an E-protein bHLH that cooperatively binds DNA with many tissue-specific bHLHs (Figure 8A). This is consistent with reports that binding of many bHLH TFs require dimerization with other widely expressed E-protein family members (Firulli, 2003). Importantly, Gli3 and Hand2 were able to simultaneously bind dGBM/E-box regions within both PP1 and PP2 (Figure 8A), in a dose-dependent manner (Figure 8—figure supplement 1B). Together, these data suggested that Gli3 and Hand2 simultaneously occupy potential regulatory regions containing a low-affinity dGBM and an E-box. We next sought to investigate how Gli3/Hand2 cooperation impacted transcriptional output.
 
@@ -115,6 +175,14 @@ To confirm that the observed synergism was dependent upon the presence of Gli3 a
 
 To confirm that this synergism was dependent upon the presence of both a dGBM and E-box, we performed site-directed mutagenesis. Mutation of either the dGBM or E-box sequence eliminated synergistic output in Foxd1 endogenous putative regulatory regions (Figure 9A; Figure 9—figure supplement 1A). Furthermore, to determine if the central ‘T’ which we used to define dGBMs was causative for the synergistic output, we mutated the ‘T’ in the PP2 putative regulatory region to an ‘A’, resembling a cGBM. This single base-pair ‘T > A’ change significantly increased affinity of Gli3 for the GBM and abolished the synergistic luciferase output when Gli3 and Hand2 were co-expressed (Figure 9B–E). Together, these data support a novel, tissue-specific transcriptional mechanism in which Gli3 and Hand2 utilize low-affinity dGBM and E-boxes to promote synergistic activation of Foxd1 (and likely other MNP targets) outside of a Hh gradient (Figure 10).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig9-v2.jpg)
+
+**Figure 9.:** (A) Luciferase reporter activity of mutant GBM or E-box motifs from Foxd1 PP2 showing mutation of E-box or GBM abolishes synergistic activation. (B–C) EMSA for Gli3DBD binding affinity of (C) endogenous Foxd1 PP2 or (D) T > A mutant Foxd1 PP2. (D) Quantification of (B) and (C) showing increased Gli3DBD binding affinity of endogenous Foxd1 PP2 (white hatched) compared to T > A mutant Foxd1 PP2 (green). (E) Increased luciferase reporter activity when T > A change is made within Foxd1 PP2. Data are expressed as mean + SD. Luciferase data have biologic replicates shown as dots. *p<0.05, **p<0.01, ***p<0.001. See also Figure 9—figure supplement 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Luciferase reporter activity of mutant GBM or E-box motifs from Foxd1 +37086 showing mutation of E-box or GBM abolishes synergistic activation. Data are expressed as mean + SD with biological replicates indicated as dots. *p<0.05, **p<0.01, ***p<0.001.
+
 ![Figure 10.](https://cdn.elifesciences.org/articles/56450/elife-56450-fig10-v2.jpg)
 
 **Figure 10.:** Model of Gli3-Hand2-specific cooperation at low-affinity dGBMs drives patterning, skeletal and glossal GRN in regions of the MNP outside of the highest Shh ligand concentration.
@@ -123,13 +191,13 @@ To confirm that this synergism was dependent upon the presence of both a dGBM an
 
 Substantial evidence has long supported the idea that the Hh signaling pathway utilizes a morphogen gradient to convey a threshold of activation responses necessary to pattern tissues throughout the embryo (Dessaud et al., 2008). While the concept of a morphogen gradient has been supported by several biochemical and genetic studies, a significant gap remains in understanding the mechanisms of how cells perceive and transduce morphogens. This knowledge gap is especially evident within the developing craniofacial complex, where despite requiring a localized, epithelial Hh source, neither a Gli gradient nor a primary requirement of a single Gli (e.g. Gli2 or Gli3) is apparent within facial prominences. In this study, we have uncovered a unique mechanism used in the developing mandible that produces synergistic target gene responses outside of a traditional morphogen gradient by utilizing regulatory elements containing low-affinity GBMs that integrate input from a tissue-specific binding partner. Specifically, our results establish a novel relationship between Gli3 and Hand2, in which these factors synergize at low-affinity ‘divergent’ GBMs (dGBMs) for a subset of target genes important for key processes in mandibular development including patterning, skeletogenesis and glossogenesis (Figure 10). To our knowledge, this is the first study to identify and explore variable levels of Gli-dependent transcriptional activity across a field of cells as a mechanism for generating cellular identities in the developing face.
 
-## Low-affinity GBMs function as important transcriptional determinants
+### Low-affinity GBMs function as important transcriptional determinants
 
 TF binding site affinity is one mechanism utilized by cells in other tissues to produce graded threshold responses (Driever et al., 1989; Oosterveen et al., 2012; Peterson et al., 2012). The established model states that target genes within a high concentration of the morphogen gradient are activated through low-affinity sites (Jiang and Levine, 1993), whereas those exposed to lower morphogen concentrations utilize high-affinity sites (Ip et al., 1992). Despite the validation of this idea in many contexts, regulation of several Hh targets are inconsistent with this model. For example, in the Drosophila imaginal disc, ptc is restricted to the highest Hh threshold and is regulated by high-affinity canonical GBMs, whereas, dpp is expressed broadly throughout the Hh gradient and is regulated by low-affinity non-canonical GBMs (Wang and Holmgren, 1999; Parker et al., 2011). Previous ChIP studies in the developing limb have reported that while 55% of Gli-binding regions contained a high-affinity GBM, the remaining 45% of regions contained a low-affinity GBM or no GBM. Interestingly, low-affinity GBMs are strongly conserved across both tissues and species (Vokes et al., 2008; Parker et al., 2011). Furthermore, the same study also reported that a small number of Gli-binding regions contained limb-specific variants of the GBM, supporting previous reports that low-affinity motifs are absolutely critical to confer spatially distinct gene expression (Jiang and Levine, 1993; Lebrecht et al., 2005; Vokes et al., 2008). Our findings are the first to report how GBM affinity is utilized in a craniofacial context. In the face, we identified low-affinity, divergent binding sites that were necessary and sufficient to drive robust gene expression required for mandibular development (Figure 10). Interestingly, as no discernable concentration gradient of Gli2/Gli3 in the developing mandible exists, the utilization of these low- affinity divergent sites is likely not dictated by a graded Hh signal. It should be noted, that while Gli3 is capable of binding to dGBMs on its own, motif enrichment analyses did not reflect this occurring at a high frequency in vivo. Thus, these data suggested that co-factors such as Hand2 may be necessary to ‘recruit’ Gli3 to dGBMs in proximity to an E-box. This hypothesis is further supported by the fact that despite Hand2 having a more restricted expression domain than Gli3 within the developing MNP, conditional loss of Hand2 alone in NCCs generates a more severe mandibular phenotype than that observed in Gli2/Gli3 conditional mutants. Additional studies will be necessary to fully understand the complex network of inputs that contribute to GBM binding specificity.
 
 Previous studies examining Gli-binding in the limb and central nervous system (CNS) have identified E-boxes within Gli ChIP-seq peaks. De novo motif analysis revealed an E-box enriched in limb Gli-binding regions with or without a high-affinity GBM (Vokes et al., 2008). At the time, the significance of the E-box to Gli3 transcriptional activity was unknown. In the developing CNS, an E-box was the second ranked motif identified in Gli1 ChIP-seq peaks (Lee et al., 2010). Mutational analyses determined these E-boxes had varying (context-specific) effects on Gli-mediated transcription, sometimes conferring no affect, while in other cases reducing Gli1-responsiveness (Lee et al., 2010). Our studies significantly advance these findings by demonstrating that co-utilization of GBMs and E-boxes allows Gli TFs to utilize lower affinity sites and produce synergistic transcriptional outputs. Furthermore, our mutational analyses revealed that a single base-pair substitution (‘A’ with a ‘T’ at the central 5th residue) was sufficient to convey both affinity and synergism. Interestingly, similar divergent, low-affinity GBMs with a medial ‘T’ were previously reported in Drosophila within the dpp enhancer (Parker et al., 2011). In light of the dpp expression pattern, which is broad and found throughout the Hh gradient, it is tempting to speculate that the presence of this medial ‘T’ and subsequent low-affinity GBM could be an evolutionarily conserved mechanism used to generate variable levels of Hh target gene expression independent of a Hh threshold and distinct activator and repressor Gli isoforms.
 
-## Interactions with other TFs control context-specific functions of Gli TFs in the face
+### Interactions with other TFs control context-specific functions of Gli TFs in the face
 
 While traditional descriptions of Gli-mediated Hh signal transduction do not include the requirement of binding partners, there is an established precedence for this concept. A number of TFs have been implicated as partners capable of interacting with Gli TFs and subsequently modulating Gli transcriptional activity. For example, Gli and Zic proteins were previously reported to physically interact through their zinc-finger domains to regulate subcellular localization and transcriptional activity important during neural and skeletal development (Brewster et al., 1998; Koyabu et al., 2001; Zhu et al., 2008). The pluripotency factor Nanog was also reported to physically interact with enhancer-bound Gli proteins to reduce the transcriptional response of cells to a Hh stimulus (Li et al., 2016). The Sox family of TFs has also been implicated in associating with Gli proteins to modulate transcriptional responses in various tissues (Peterson et al., 2012; Tan et al., 2018). Within the developing NT, Sox2 was determined to have a significant number of overlapping target genes, as Gli1 and Gli1/Sox2-bound CRMs were shown to induce Shh target gene expression (Peterson et al., 2012). Furthermore, Sox9 and Gli directly and cooperatively regulate several genes important in chondrocyte proliferation (Tan et al., 2018). Finally, recent studies have revealed that the bHLH TF Atoh1 synergizes with Gli2 to activate a medulloblastoma transcriptional network (Yin et al., 2019).
 
@@ -137,7 +205,7 @@ While several previous studies have reported interactions between Hand2 and the 
 
 Our work identified a novel relationship between Gli3 and Hand2 that is both unique to the tissue of origin (mandible) and the nature of the interaction (physical interaction, DNA-dependence) (Figure 10). First, our RNA-seq analyses on Gli2f/f;Gli3f/f;Wnt1-Cre and Hand2f/f-Wnt1-Cre mandibular tissue did not reveal any changes in Hand2 or Shh expression, respectively, suggesting that unlike the relationship in the limb or in establishing polarity, there was not a cross-regulatory relationship between Shh and Hand2 in the mandible. Second, our site-directed mutagenesis experiments suggested that DNA-binding at some level is required for the Gli3/Hand2 synergism in the MNP, as opposed to the posited DNA-independent mechanism in the limb. Interestingly, the orientation and spacing of E-box and GBMs was not conserved, suggesting flexibility in the architecture underlying Gli3 and Hand2 co-regulatory interactions. The presence of additional TF motifs found in close proximity to GBMs, together with the established knowledge that Gli can interact with a number of other TFs, suggests that a larger protein complex may be at work (Figure 10, dotted circle). Furthermore, the cadre of proteins in this complex could vary depending upon the particular genomic locus and the role it plays regulating transcription either positively or negatively. Future studies will address the role, if any, these other proteins play in modulating Gli transcriptional output in the developing craniofacial complex.
 
-## Gli3 functions as an activator within the developing craniofacial complex
+### Gli3 functions as an activator within the developing craniofacial complex
 
 In general, there are two accepted mechanisms for positive Gli-mediated transcriptional regulation: activation and de-repression (Falkenstein and Vokes, 2014). Activation refers to the full-length GliA isoform binding regulatory regions of target genes and driving gene expression. Gli1 and Gli2 play the predominant role in activating transcription (Ding et al., 1998; Matise et al., 1998; Park et al., 2000; Stamataki et al., 2005), and are believed to function within the highest concentrations of the Hh gradient (Pan et al., 2006). In the human face, loss of Gli2 has been associated with several craniofacial anomalies presenting with loss-of-function Hh phenotypes such as microcephaly, hypotelorism and a single central incisor (Roessler et al., 2003). Interestingly, mutations in Gli2 have no reported effects on the mandible.
 
@@ -151,73 +219,391 @@ In closing, our results reveal a novel transcriptional mechanism for Gli signal 
 
 ## Materials and methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gli3 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat.#AF3690; RRID:AB_2232499</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dHand M-19 (Goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat.#Sc-9409; RRID:AB_2115995</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag M2 (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#F1804; RRID:AB_262044</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>O9-1 cells</td>
+      <td>Ishii et al., 2012</td>
+      <td></td>
+      <td>Gift from R. Lipinski Lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>BL21 cells</td>
+      <td>Promega</td>
+      <td>Cat.#L1195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>E47L/Tcf3</td>
+      <td>Purified protein, contact B. Gebelein</td>
+      <td>NP_001157619.1</td>
+      <td>peptide, recombinant protein</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Gli3DBD</td>
+      <td>This paper</td>
+      <td>NP_032156.2 (full protein)</td>
+      <td>Purified protein, inquiries should be addressed to B. Gebelein</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Hand2</td>
+      <td>This paper</td>
+      <td>NP_034532.3</td>
+      <td>Purified protein, inquiries should be addressed to B. Gebelein</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human FGF basic</td>
+      <td>R and D Systems</td>
+      <td>Cat.# 233-FB-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Leukemia Inhibitory Factor (LIF)</td>
+      <td>Millipore</td>
+      <td>Cat.# ESG1106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual Luciferase Reporter Assay System</td>
+      <td>Promega</td>
+      <td>Cat.#E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gli2flox</td>
+      <td>PMID:16571625</td>
+      <td>JAX stock # 007926; RRID:IMSR_JAX:007926</td>
+      <td>Gift from A. Joyner, Memorial-Sloan-Kettering Cancer Center</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gli3flox</td>
+      <td>PMID:18480159</td>
+      <td>JAX stock # 008873; RRID:IMSR_JAX:008873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hand2flox</td>
+      <td>PMID:17075884</td>
+      <td>JAX stock # 027727; RRID:IMSR_JAX:027727</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Wnt1-Cre: H2az2Tg(Wnt1-cre)11Rth</td>
+      <td>PMID:9843687</td>
+      <td>MGI:2386570; RRID:IMSR_JAX:003829</td>
+      <td>Gift from R. Stottmann</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gli3tm1.1Amc/Grsr (3XFLAGbio)</td>
+      <td>PMID:24990743; 27146892</td>
+      <td>JAX stock #026135</td>
+      <td>Generated by K.A. Peterson</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hand23xFlag</td>
+      <td>PMID:25453830</td>
+      <td></td>
+      <td>Generated by R. Zeller</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL3-promoter (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat.#E1761</td>
+      <td>Luciferase reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3XFLAG-Gli3 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length Mouse Gli3 cloned into p3XFlag backbone. Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3XFLAG-Hand2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length Mouse Hand2 cloned into p3XFlag backbone. Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gli2_Flox_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGG TCC TCT TAT TGT CAG GC; Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gli2_Flox_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAG ACT CCA AGG TAC TTA GC; Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gli3_Flox_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTC TGT AAC CAG ACG GCA CT; Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gli3_Flox_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAG AAT GTG TGA CTC CAT GC; Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hand2_Flox_F</td>
+      <td>JAX</td>
+      <td>PCR primers</td>
+      <td>ACT TGC TGA CTG GGT CCT TG;</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hand2_Flox_R</td>
+      <td>JAX</td>
+      <td>PCR primers</td>
+      <td>CTC GGC CTA GAG GAC ACT GA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTCCCATTTA CTGACCGTAC ACC; Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTTATTCGGA TCATCAGCTA CACC; Inquiries should be addressed to S. Brugmann</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’IREdye-700 labeled oligo</td>
+      <td>IDT</td>
+      <td>For EMSA assays</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Gli3</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#445511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Hand2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#499821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Shh</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#314361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Ptch1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#402811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Foxd1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#495501-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Plagl1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#462941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Myh6</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#506251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Gli2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#405771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe- Mm Maf</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat.#412951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Strand NGS</td>
+      <td>https://www.strand-ngs.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>PMID:20513432</td>
+      <td>RRID:SCR_010881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELI</td>
+      <td>PMID:29662164</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COSMO</td>
+      <td>PMID:25905672</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cis-BP</td>
+      <td>PMID:25215497</td>
+      <td>RRID:SCR_017236</td>
+      <td>Transcription factor motif library http://cisbp.ccbr.utoronto.ca/index.php</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 The Wnt1-Cre, Hand2fl (Stock No 027727), and Gli3fl (Stock No 008873) mouse strains were purchased from Jackson Laboratory. Gli2f/f mice were provided by Dr. Alexandra Joyner at Memorial Sloan-Kettering Cancer Center. As described in PMID 18501887, conditional deletion of Hand2 using Wnt1-Cre is embryonic lethal ~E12 due to loss of norepinephrine. To rescue this phenotype and for investigation of Hand2f/f;Wnt1-Cre mutants at later embryonic stages, beginning at embryonic day (E) 8, pregnant dams were fed water containing 100 μg/mL L-phenylephrine, 100 μg/mL isoproterenol, and 2 mg/mL ascorbic acid. All mice were maintained on a CD1 background. Both male and female mice were used. A maximum of 4 adult mice were housed per cage, and breeding cages housed one male paired with up to two females. All mouse usage was approved by the Institutional Animal Care and Use Committee (IACUC) and maintained by the Veterinary Services at Cincinnati Children’s Hospital Medical Center. N ≥ 5 biologic replicates (biologically distinct samples) for each genotype shown.
 
-## Embryo collection and tissue preparation
+### Embryo collection and tissue preparation
 
 Timed matings were performed, with noon of the day a vaginal plug was discovered designated as E0.5. Embryos were harvested between E10.5–18.5, collected in PBS, and fixed in 4% paraformaldehyde (PFA) overnight at 4°C, unless otherwise noted. For paraffin embedding, embryos were dehydrated through an ethanol series, washed in xylene, and embedded in paraffin.
 
-## Skeletal preparations
+### Skeletal preparations
 
 For skeletal preparations, E18.5 embryos were immersed in hot water before skin and soft tissue were removed. Embryos were immersed in 100% ethanol for 48 hr, then acetone for 48 hr. 0.015% alcian blue solution (20% glacial acetic acid and 80% 200 proof ethanol) for 24 hr to stain cartilage was added, then washed with ethanol for 24 hr. Embryos were immersed in 1% fresh KOH for 24–31 hr, then stained with 0.005% alizarin red (in 1% KOH) for 15 hr and transitioned through a series of glycerol dilutions.
 
-## RNAscope in situ hybridization
+### RNAscope in situ hybridization
 
 Paraffin-embedded embryos were cut at 5 µm, and staining was performed with the RNAscope Multiplex Fluorescent Kit v2.0 according to the manufacturer’s instructions. Briefly, sections were deparaffinized in xylene, rehydrated through an ethanol series, and antigen retrieval was performed. The following day, probes were hybridized to sections, paired with a fluorophore, and mounted with Prolong Gold after counterstaining with DAPI. Shh, Ptch1, Gli2, Gli3, Hand2, Foxd1, Myh6, Maf, and Plagl1 probes for the assay were designed and synthesized by Advanced Cell Diagnostics. RNAScope experiments were performed on N ≥ 3 biological replicates for each probe.
 
-## RNA extraction and reverse transcription
+### RNA extraction and reverse transcription
 
 RNA was extracted from cells using Trizol-Micro Total RNA Isolation Kit (Invitrogen, 15596026). cDNA was synthesized from up to 2 µg of RNA with the High Capacity RNA-to-cDNA Kit (Invitrogen, 4387406).
 
 Quantitative Real-Time PCR qRT-PCR was performed in technical (multiple replicates of the same biological sample) triplicate using PowerUP SYBR Green Master Mix (ThermoFisher Scientific, A25742) on Applied Biosystems QuantStudio 3 Real-Time PCR System (ThermoFisher Scientific) for N = 3 biological replicates. All genes were normalized to Gapdh expression.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 MNPs were harvested from E10.5 CD-1 embryos, pooled, and lysed in RIPA buffer containing Halt protease inhibitor cocktail. Protein lysate was incubated with Hand2 (polyclonal goat IgG) or control goat IgG primary antibody overnight at 4C with nutation. Dynabeads Protein G were added the next day and incubated with antibody-lysate mixture for 4 hr at 4C on a nutator. Dynabeads Protein G-antibody-antigen complex was washed three times using RIPA buffer, and antigens were eluted from the beads in SDS sample buffer by boiling for 5 min. N = 4 biological replicates of pooled litters.
 
-## Western blotting
+### Western blotting
 
 For co-immunoprecipitation, eluted products and 10% of the input were separated by SDS-PAGE and transferred to a PVDF membrane for blotting at 4C with Gli3 (polyclonal goat IgG 1:1000, R and D Systems) and Hand2 (polyclonal goat IgG or mouse monoclonal IgG1 1:1000) primary antibodies. Detection of primary antibodies was performed using infrared-conjugated secondary antibodies (donkey anti-goat or goat anti-mouse IRDye 800CW, LICOR) and acquired using a LICOR infrared scanner. For plasmid verification, F primary antibody (monoclonal M2 mouse IgG1) and enhanced chemiluminescence assay (Amersham ECL Primer, GE Healthcare Life Science) were used for detection.
 
-## RNA-sequencing
+### RNA-sequencing
 
 MNPs were dissected from E10.5 embryos, using at three biologic samples. RNA was prepared for RNA-seq using Invitrogen RNAqueous-Micro RNA Isolation Kit (AM1931). Sequencing was carried out in 150 bp paired-end reads using the Illumina HiSeq2500 system.
 
-## Single-cell RNA-sequencing
+### Single-cell RNA-sequencing
 
 Mandibles from E11.5 or E13.5 wildtype CD1 mouse embryos were quickly dissected in ice-cold PBS and minced to a fine paste. Cells were dissociated into a single-cell suspension and sequenced using NovaSeq 6000 and the S2 flow cell. 12.5 mg of tissue was placed in a sterile 1.5 mL tube containing 0.5 mL protease solution containing 125 U/mL DNase and Bacillus Licheniformis (3 mg/mL for E11.5 sample and 5 mg/mL for E13.5 sample). The samples were incubated at 4C for a total of 10 min, with trituration using a wide boar pipette tip every minute after the first two. Protease was inactivated using ice-cold PBS containing 0.02% BSA and filtered using 30 µM filter. The cells were pelleted by centrifugation at 200G for 4 min and resuspended in 0.02% BSA in PBS. Cell number and viability were assessed using a hemocytometer and trypan blue staining. 9,600 cells were loaded onto a well on a 10x Chromium Single-Cell instrument (10X Genomics) to target sequencing of 6,000 cells. Barcoding, cDNA amplification, and library construction were performed using the Chromium Single-Cell 3’ Library and Gel Bead Kit v3. Post cDNA amplification and cleanup was performed using SPRI select reagent (Beckman Coulter, Cat# B23318). Post cDNA amplification and post library construction quality control was performed using the Agilent Bioanalyzer High Sensitivity kit (Agilent 5067–4626). Libraries were sequenced using a NovaSeq 6000 and the S2 flow cell. Sequencing parameters used were: Read 1, 28 cycles; Index i7, eight cycles; Read 2, 91 cycles, producing about 300 million reads. The sequencing output data was processing using CellRanger (http://10xgenomics.com) to obtain a gene-cell data matrix.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Individual ChIP-seq experiments were carried out on pooled embryonic tissue collected in ice-cold PBS. Dissected tissues were immediately fixed in 1% formaldehyde/PBS for 20 min at room temp followed by glycine quench (125 mM). ChIP procedures were performed as previously described (Peterson et al., 2012 and Osterwalder et al., 2014). All ChIP experiments were performed using mouse monoclonal anti-FLAG M2 antibody (Sigma-Aldrich). A mock control ChIP sample was made by performing ChIP on tissues isolated from wild-type embryos.
 
-## ATAC-seq
+### ATAC-seq
 
 Individual E11.5 MNP’s were collected from wild-type embryos and immediately snap frozen in liquid nitrogen. Nuclei were isolated by incubating in homogenization buffer (250 mM sucrose; 25 mM KCl; 5 mM MgCl2; 20 mM Tricine-KOH; 1 mM EDTA; and 1% IGEPAL) for 30 min at 4°C with shaking (800 rpm). Cell nuclei were counterstained with Trypan Blue and counted. Approximately 5 × 104 nuclei were processed for ATAC-seq as previously described (Buenrostro et al., 2015). DNA libraries were sequenced on NextSeq550 (Illumina) to generate 75 bp paired-end reads.
 
-## Protein purification and EMSA
+### Protein purification and EMSA
 
 Coding regions for all protein fragments used for EMSA were cloned in-frame with an N-terminal 6xHis-tag in the pET14b vector (Novagen) and expressed in BL21 cells. The mouse E47 (E47L) isoform of the Tcf3 protein containing the bHLH domain (amino acids 271 to 648), the mouse Gli3 (Gli3DBD) protein containing the five zinc fingers in its DNA-binding domain (amino acids 465–648), and the full-length mouse Hand2 (Hand2FL) protein (amino acids 1–217) were purified under denaturing conditions via Ni-chromatography and refolded in Native lysis buffer while on Ni-beads as described previously (Witt et al., 2010; Zhang et al., 2019). Expression of each protein was confirmed via coomassie staining, and protein concentrations were measured via Bradford Assay. Probes were generated as previously described by annealing a 5’IREdye-700 labeled oligo from IDT with the following sequence 5’- CTATCGTAGACTTCG-3’ to each oligo listed below and filling in via a Klenow reaction (Uhl et al., 2016). EMSAs were performed as previously described with the following modification to allow homodimer and heterodimer exchange between bHLH proteins (E47 and Hand2): binding reactions were incubated at 37°C for 40 min before allowing each reaction to cool to room temperature and incubating with DNA probes for an additional 15 min prior to separation on a native SDS gel (Uhl et al., 2010; Uhl et al., 2016). All EMSAs were imaged using a LICOR Clx scanner.
 
-## In vitro cell culture
+### In vitro cell culture
 
 Immortalized O9-1 cranial NCCs were a gift from Dr. Robert Lipinski, originally provided by Dr. Robert Maxon, Keck School of Medicine at the University of Southern California. They were cultured as described in Ishii et al., 2012. Our lab confirmed the identity of these cells by qPCR of neural crest markers and by differentiation into neural crest derivatives. Cells were periodically screened to ensure no mycoplasma contamination.
 
-## Plasmid constructs
+### Plasmid constructs
 
 Luciferase reporter constructs were generated by cloning putative enhancer fragments into the pGL3-promoter luciferase reporter plasmid. Hand2 and Gli3, were all cloned into a p3XFlag CMV 7.1 plasmid.
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 O9-1 cells were co-transfected in triplicate with the appropriate luciferase reporter plasmid, a Renilla control plasmid, and a combination of plasmids expressing Gli3 or Hand2 using Lipofectamine 3000. Cells were harvested 24 hr after transfection, and luciferase activity was determined using the Dual Luciferase Reporter Assay System (Promega) and the GLOMAX luminometer. N ≥ 3 biological replicates performed in technical triplicate for each condition.
 
-## Bulk RNA-seq analysis
+### Bulk RNA-seq analysis
 
 Paired-end reads were mapped to mm10 genome and transcript abundance was determined using Strand NGS. Differential expression was determined using DESeq2 within Strand NGS. Differentially expressed genes associated with GO-terms are listed in Supplementary file 6.
 
-## Single-cell RNA-seq analysis
+### Single-cell RNA-seq analysis
 
 Raw reads were sequenced using 10x v2 chemistry for two samples E11.5 and E13.5 MNP. Reads were mapped to mouse transcriptome (mm10) version of the UCSC using Cellranger (Zheng et al., 2017, https://github.com/10XGenomics/cellranger). 7099 E11.5 cells and 6318 E13.5 cells were sequenced, with ~2300 genes per cell in the E11.5 sample, and ~2800 genes per cell in the E13.5 sample. Approximately 70% of the reads were confidently mapped to the transcriptome for each sample. Quality control (QC) was carried out where cells with less than ~1 k UMIs were removed from the quantification analysis. Finally, raw reads were quantified into a raw-counts matrix for cells that passed QC.
 
@@ -227,7 +613,7 @@ Further, to understand the similarities and differences among cell types annota
 
 Trajectory analysis or ‘Pseudotime’ analysis was performed using Monocle (Trapnell et al., 2014). Briefly, the integrated E11.5 and E13.5 scRNA-seq dataset was assessed for differential gene expression by original cluster, with the top 2000 being used for ordering. Data dimension reduction was performed using the DDRTree method, and cells were ordered using the orderCells function in Monocle 1. All visualization of the trajectory analysis was performed using functions embedded in Monocle.
 
-## ChIP-seq analysis
+### ChIP-seq analysis
 
 ChIP-seq libraries were prepared according to manufacturers’ instructions and 1 × 75 bp reads were generated on a NextSeq instrument (Illumina). The resulting reads were mapped to mouse genome assembly mm10 (GRCm38/mm10) using bwa (Li and Durbin, 2009). Pooled replicates were used to identify potential regulatory regions (Supplementary file 4). A final set of peak calls for each factor to use for motif enrichment was determined using bedtools (Quinlan and Hall, 2010) to merge biological replicates and identify peaks shared between replicates (Supplementary file 5). ChIP-seq peak overlap significance was calculated using the RELI software package (Harley et al., 2018; https://github.com/WeirauchLab/RELI). Nearest upstream and downstream genes were determined for each ChIP-seq peak for global analysis and comparison to bulk and scRNA-seq datasets. Gli3/Hand2 overlapping ChIP-seq peaks were also split into the following categories: those with a cGBM (80% match to the top CisBP identified canonical GBM, M08023_2.00), those without a cGMB, and those without a cGMB and with a dGBM (with at least CCTCC). TF binding site motif enrichment analyses were performed using the HOMER software package (Heinz et al., 2010) modified to use a log 2-based scoring system and contain mouse motifs obtained from the Cis-BP database, build 1.94d (Weirauch et al., 2014). DNA 8mer counts were calculated by examining the number of times each of the possible 32,896 8mers occurs in the sequences contained within the given ChIP-seq peakset (on either strand, avoiding double-counting for palindromic sequences). Enrichment for particular orientations and spacings between Gli and Hand motifs was performed using the COSMO software package (Narasimhan et al., 2015).
 

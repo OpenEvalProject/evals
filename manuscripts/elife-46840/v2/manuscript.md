@@ -53,7 +53,7 @@
 
 ## Abstract
 
-10.7554/eLife.46840.001 The immunoreceptor tyrosine-based inhibition motif (ITIM)-containing receptor G6b-B is critical for platelet production and activation. Loss of G6b-B results in severe macrothrombocytopenia, myelofibrosis and aberrant platelet function in mice and humans. Using a combination of immunohistochemistry, affinity chromatography and proteomics, we identified the extracellular matrix heparan sulfate (HS) proteoglycan perlecan as a G6b-B binding partner. Subsequent in vitro biochemical studies and a cell-based genetic screen demonstrated that the interaction is specifically mediated by the HS chains of perlecan. Biophysical analysis revealed that heparin forms a high-affinity complex with G6b-B and mediates dimerization. Using platelets from humans and genetically modified mice, we demonstrate that binding of G6b-B to HS and multivalent heparin inhibits platelet and megakaryocyte function by inducing downstream signaling via the tyrosine phosphatases Shp1 and Shp2. Our findings provide novel insights into how G6b-B is regulated and contribute to our understanding of the interaction of megakaryocytes and platelets with glycans.
+The immunoreceptor tyrosine-based inhibition motif (ITIM)-containing receptor G6b-B is critical for platelet production and activation. Loss of G6b-B results in severe macrothrombocytopenia, myelofibrosis and aberrant platelet function in mice and humans. Using a combination of immunohistochemistry, affinity chromatography and proteomics, we identified the extracellular matrix heparan sulfate (HS) proteoglycan perlecan as a G6b-B binding partner. Subsequent in vitro biochemical studies and a cell-based genetic screen demonstrated that the interaction is specifically mediated by the HS chains of perlecan. Biophysical analysis revealed that heparin forms a high-affinity complex with G6b-B and mediates dimerization. Using platelets from humans and genetically modified mice, we demonstrate that binding of G6b-B to HS and multivalent heparin inhibits platelet and megakaryocyte function by inducing downstream signaling via the tyrosine phosphatases Shp1 and Shp2. Our findings provide novel insights into how G6b-B is regulated and contribute to our understanding of the interaction of megakaryocytes and platelets with glycans.
 
 ## Introduction
 
@@ -67,13 +67,226 @@ In this study, we identified the physiological ligand of G6b-B, the molecular ba
 
 ## Results
 
-## Identification of perlecan as a ligand of G6b-B
+### Identification of perlecan as a ligand of G6b-B
 
 To identify the tissue expressing the physiological ligand of G6b-B, we generated a recombinant mouse G6b-B Fc-fusion protein (mG6b-B-Fc), consisting of the murine G6b-B ectodomain and the human IgG-Fc tail (to mediate dimer formation), which we used to stain frozen mouse tissue sections. We consistently observed prominent staining in large vessels, including the vena cava and aorta, and also in smaller vessels in the liver and spleen, that were not observed with the negative control (IgG-Fc) (Figure 1), suggesting the presence of G6b-B ligand in vessel walls. The highly vascularized bone marrow sections showed a more diffuse staining, indicative of the presence of the ligand in the bone marrow ECM (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig1-v2.jpg)
+
+**Figure 1.:** Immunohistochemistry staining of frozen mouse tissue sections with mG6b-B-Fc or human IgG-Fc fragments (control). Bound protein was visualized using a secondary anti-human-Fc-HRP antibody and DAB substrate, prior to counterstaining with hematoxylin. The images were captured by a Zeiss Axio Scan.Z1 slidescanner, and images were exported using the Zeiss Zen software. (A) Overview and (B) zoomed-in images for the indicated tissues. lu, vessel lumen. Larger overview sections of the tissues are shown in Figure 1—figure supplements 1, 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Overview sections of the tissues depicted in Figure 1. Boxed areas mark the sections shown in Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Overview sections of the tissues depicted in Figure 1. Boxed areas mark the sections shown in Figure 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Vena cava homogenates were incubated with G6b-B-Fc or Fc control protein as well as protein G sepharose beads to precipitate G6b-B binding partners. Following multiple washing steps, samples were analyzed by SDS page and colloidal coomassie staining. Recombinant G6b-B-Fc alone was loaded as an additional negative control. Boxed areas in the magnified section mark the regions that were excised and analyzed by mass spectrometry, with results shown in Table 1 and the corresponding source tables.
+
 Because of the strong signals and easy accessibility of the vena cava, we incubated vena cava homogenates with mG6b-B-Fc and protein G sepharose beads to precipitate and identify G6b-B binding partners. SDS-PAGE and colloidal coomassie staining revealed bands of high molecular weight that were absent in the negative control (IgG-Fc pulldown, Figure 1—figure supplement 3). Bands were excised and proteins identified by mass spectrometry, revealing basal membrane-specific HS proteoglycan (HSPG) core protein or perlecan as the most abundant protein specifically pulled-down with mG6b-B-Fc (Table 1).
 
+**Table 1.**
+ List of proteins immunoprecipitated with mG6b-B-Fc from vena cava lysatesTable 1—source data 1.Mass spectrometry results for proteins precipitated from vena cava lysates with mG6b-B-Fc.Table 1—source data 2.Mass spectrometry results for proteins precipitated from vena cava lysates with Fc control protein.Table 1—source data 3.Mass spectrometry results for the proteins detected at the respective height after loading mG6b-B-Fc only (no vena cava lysate).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Accession number</th>
+      <th>Name</th>
+      <th>Peptides</th>
+      <th>Protein score</th>
+      <th>Protein score negative control</th>
+      <th>FE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E9PZ16</td>
+      <td>Basement membrane-specific heparan sulfate proteoglycan core protein (perlecan)</td>
+      <td>131</td>
+      <td>607.22</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E9QPE7</td>
+      <td>Myosin-11</td>
+      <td>103</td>
+      <td>468.02</td>
+      <td>719.71</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>F8VQJ3</td>
+      <td>Laminin subunit gamma-1</td>
+      <td>75</td>
+      <td>434.43</td>
+      <td>9.66</td>
+      <td>45.0</td>
+    </tr>
+    <tr>
+      <td>Q5SX39</td>
+      <td>Myosin-4</td>
+      <td>80</td>
+      <td>328.62</td>
+      <td>587.14</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>Q8VDD5</td>
+      <td>Myosin-9</td>
+      <td>81</td>
+      <td>318.18</td>
+      <td>513.68</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>P97927</td>
+      <td>Laminin subunit alpha-4</td>
+      <td>56</td>
+      <td>285.20</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Q61292</td>
+      <td>Laminin subunit beta-2</td>
+      <td>63</td>
+      <td>262.37</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B2RWX0</td>
+      <td>Myosin, heavy polypeptide 1,  skeletal muscle, adult</td>
+      <td>61</td>
+      <td>244.66</td>
+      <td>446.14</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>P02469</td>
+      <td>Laminin subunit beta-1</td>
+      <td>57</td>
+      <td>236.87</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>J3QQ16</td>
+      <td>Protein Col6a3</td>
+      <td>61</td>
+      <td>232.99</td>
+      <td>14.76</td>
+      <td>15.8</td>
+    </tr>
+    <tr>
+      <td>G3UW82</td>
+      <td>MCG140437, isoform CRA_d</td>
+      <td>54</td>
+      <td>214.75</td>
+      <td>378.87</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>B7FAU9</td>
+      <td>Filamin, alpha</td>
+      <td>58</td>
+      <td>202.67</td>
+      <td>139.51</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Q3UHL6</td>
+      <td>Putative uncharacterized protein — fibronectin</td>
+      <td>48</td>
+      <td>192.76</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Q9JKF1</td>
+      <td>Ras GTPase-activating-like protein IQGAP1</td>
+      <td>31</td>
+      <td>107.79</td>
+      <td>68.57</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>M0QWP1</td>
+      <td>Agrin</td>
+      <td>21</td>
+      <td>84.47</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P19096</td>
+      <td>Fatty acid synthase</td>
+      <td>27</td>
+      <td>74.68</td>
+      <td>23.81</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Q61001</td>
+      <td>Laminin subunit alpha-5</td>
+      <td>23</td>
+      <td>73.24</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E9QPX1</td>
+      <td>Collagen alpha-1(XVIII) chain</td>
+      <td>16</td>
+      <td>59.16</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A2AJY2</td>
+      <td>Collagen alpha-1(XV) chain</td>
+      <td>14</td>
+      <td>53.53</td>
+      <td>n.d.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B7ZNH7</td>
+      <td>Collagen alpha-1(XIV) chain</td>
+      <td>15</td>
+      <td>43.27</td>
+      <td>3.09</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <td>P26039</td>
+      <td>Talin-1</td>
+      <td>11</td>
+      <td>42.29</td>
+      <td>29.93</td>
+      <td>1.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_Fold enrichment (FE)=score G6b-B-FC precipitation/score negative control; n.d. = not detectable. Proteins that are prominently present in the negative control (FE < 2) are shown in italic. The protein score was calculated using the SEQUEST HT search algorithm and is the sum of all peptide Xcorr values above the specified score threshold (0.8 + peptide_charge × peptide_relevance_factor where peptide_relevance_factor is a parameter with a default value of 0.4). The full data set, including the mass spectrometry result for the respective band of a G6b-B-FC only sample, is found in Table 1—source data 1–3. A picture of a gel and the bands excised for mass-spectrometric analysis are shown in Figure 1—figure supplement 3._
+
 The interaction with perlecan was verified using an in vitro binding assay, which measured the binding of soluble mG6b-B-Fc to immobilized molecules. mG6b-B-Fc bound robustly to perlecan, but not to bovine serum albumin (BSA) (control) or other ECM molecules, including collagen I and IV, various forms of laminin (111, 411, 421, 511 and 521), fibronectin or the related and recombinantly expressed HSPGs syndecan-2 or agrin (Figure 2A). Hence, the laminin and collagen identified by G6b-B pulldown and mass spectrometry (Table 1) most probably represented perlecan-associated proteins (Battaglia et al., 1992) rather than direct binding partners of G6b-B. Human G6b-B-Fc (huG6b-B-Fc) showed binding characteristics similar to those of mG6b-B-Fc (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig2-v2.jpg)
+
+**Figure 2.:** (A) 96-well plates were coated with the indicated substrates (5 µg/ml) and incubated with mouse G6b-B-Fc (10 µg/ml), human G6b-B-Fc (30 µg/ml) or Fc-control (10 µg/ml). Bound protein was detected with an anti-human-Fc-HRP antibody and 3,3′,5,5′-tetramethylbenzidine (TMB) substrate. n = 2–4; SA, streptavidin. (B) Perlecan and bovine serum albumin (BSA) were treated or not with heparinase III (5 mU/ml) prior to blocking, and mG6b-B-Fc binding was measured. n = 4. (C) mG6b-B binding to immobilized perlecan was measured in the presence of the indicated concentrations of heparin and heparan sulfate. n = 3. P-values were calculated using ordinary one-way ANOVA with Dunnett’s post-hoc test and asterisks denote statistical significance compared to the respective control. ***, p<0.001. Source files of all binding assays are available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** 96-well plates were coated with streptavidin followed by incubation of biotinylated heparin. Binding of the huG6b-B monomer–anti-G6b-B antibody complex (1 µg/ml each) was measured in the presence of (A) heparin or oligosaccharides of defined length (dp, degree of polymerization = number of saccharides) or (B) selectively desulfated heparin species at the given concentration. % inhibition was calculated by normalizing optical density (OD) to maximum and minimum values. Representative results for two independent experiments are shown.
 
 Treatment of perlecan with the enzyme heparinase III, which removes the HS side-chains, significantly reduced G6b-B binding to immobilized perlecan (Figure 2B), indicating that G6b-B binds to the HS side-chains rather than the protein core. This observation was further supported by a competition assay, in which the addition of soluble HS inhibited the binding of G6b-B to immobilized perlecan (Figure 2C). Of note, unfractionated heparin, which is closely related to HS, also interfered with G6b-B binding to perlecan and streptavidin-immobilized biotin-conjugated heparin and also bound directly to G6b-B-Fc (Figure 2A).
 
@@ -83,15 +296,158 @@ As the binding assay results suggested that the G6b-B ligand was primarily compo
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig3-v2.jpg)
 
-**Figure 3.:** (A) Recombinant G6b-B, produced as a monomeric biotinylated protein and conjugated to streptavidin-PE to generate an avid probe, binds to HEL, HEK293 and COLO-320-HSR cells. (B) A genome-wide loss-of-function approach identifies the HS biosynthesis pathway as the factor required to mediate the binding of recombinant G6b-B to HEK293 cells (left panel). X- and y-axis represent the log-fold-change (LFC) and robust rank aggregation (RRA) score calculated using the MAGeCK software, respectively. Circles represent individual genes and sizes represent the false-discovery rate (FDR): large circle = FDR < 1%, small circle = 1% < FDR < 5%. Genes with FDR < 5% are color coded according to their functional annotation and genes corresponding to the HS biosynthesis pathway are additionally named. The HS biosynthesis pathway is depicted in the right panel with the genes identified in the loss-of-function approach highlighted. Similar results were obtained in HEL cells (not shown). (C) G6b-B binding to HEK293 cells was measured by flow cytometry in the presence or absence of the indicated concentration of heparin or chondroitin sulfate. One representative out of three experiments is shown. (D) G6b-B loses its binding to cell lines when SLC35B2, encoding a transporter required for the sulfation of glycosaminoglycans (GAGs), is targeted. To ensure that the KO cells lack GAGs, a known HS binding protein, FGFRL1, is used as a control that confirms the loss of binding on these cell lines. Source data for the genomic screens in HEK293 and HEL cells are available in Figure 3—source data files 1–2 and 3–4, respectively.10.7554/eLife.46840.014Figure 3—source data 1.10.7554/eLife.46840.015Figure 3—source data 2.10.7554/eLife.46840.016Figure 3—source data 3.10.7554/eLife.46840.017Figure 3—source data 4.
+**Figure 3.:** (A) Recombinant G6b-B, produced as a monomeric biotinylated protein and conjugated to streptavidin-PE to generate an avid probe, binds to HEL, HEK293 and COLO-320-HSR cells. (B) A genome-wide loss-of-function approach identifies the HS biosynthesis pathway as the factor required to mediate the binding of recombinant G6b-B to HEK293 cells (left panel). X- and y-axis represent the log-fold-change (LFC) and robust rank aggregation (RRA) score calculated using the MAGeCK software, respectively. Circles represent individual genes and sizes represent the false-discovery rate (FDR): large circle = FDR < 1%, small circle = 1% < FDR < 5%. Genes with FDR < 5% are color coded according to their functional annotation and genes corresponding to the HS biosynthesis pathway are additionally named. The HS biosynthesis pathway is depicted in the right panel with the genes identified in the loss-of-function approach highlighted. Similar results were obtained in HEL cells (not shown). (C) G6b-B binding to HEK293 cells was measured by flow cytometry in the presence or absence of the indicated concentration of heparin or chondroitin sulfate. One representative out of three experiments is shown. (D) G6b-B loses its binding to cell lines when SLC35B2, encoding a transporter required for the sulfation of glycosaminoglycans (GAGs), is targeted. To ensure that the KO cells lack GAGs, a known HS binding protein, FGFRL1, is used as a control that confirms the loss of binding on these cell lines. Source data for the genomic screens in HEK293 and HEL cells are available in Figure 3—source data files 1–2 and 3–4, respectively.
 
-## Molecular basis of G6b-B interaction with the HS side-chains of perlecan
+### Molecular basis of G6b-B interaction with the HS side-chains of perlecan
 
 The extracellular domain of G6b-B is enriched in positively charged residues, especially arginines (12 in 125 amino acids; 9.6% vs 5.6% average frequency in mammalian membrane proteins [Gaur, 2014]), which are known to mediate strong binding to heparin (Margalit et al., 1993). Prior to obtaining the crystal structure, we generated a structural model of G6b-B using template-based tertiary structure prediction (RaptorX Structure Prediction server) and used this model to aid in the identification of candidate residues for mutagenesis. Examination of the model showed four basic residues (Lys54, Lys58, Arg60 and Arg61) in close spatial proximity to each other on a solvent-exposed loop. We tested whether these amino acids are involved in heparin binding by generating a mutant G6b-B (K54D, K58D, R60E, R61E; Figure 4—figure supplement 1A) and by comparing heparin binding to WT G6b-B in transiently transfected CHO cells. An anti-G6b-B monoclonal antibody demonstrated a robust cell surface expression of mutant G6b-B that was comparable to that of WT G6b-B, suggesting that the quadruple mutation did not disrupt protein folding or expression (Figure 4—figure supplement 1B). Cells expressing WT G6b-B showed an increase in heparin binding compared to that in non-transfected cells, whereas the cells expressing mutant G6b-B showed impaired binding when compared to WT G6b-B expressing cells, demonstrating that these amino acids (or a subset thereof) are involved in ligand binding (Figure 4—figure supplement 1C).
 
-## The crystal structure of the G6b-B extracellular domain (ECD)–dp12–Fab complex
+### The crystal structure of the G6b-B extracellular domain (ECD)–dp12–Fab complex
 
 Subsequent to the tertiary structure prediction, we were able to generate crystals of the ternary complex of the ectodomain of G6b-B bound to the heparin oligosaccharide dp12, scaffolded by a G6b-B-specific Fab fragment, and we determined the structure of this complex by X-ray crystallography to 3.1 Å resolution (Figure 4 and Table 2). The construct that was used was N32D, S67A, S68A, S69A, T71A. The N32D mutation was made to remove the single potential N-linked glycosylation site. Intact mass spectrometry also revealed that after having made the N32D mutation, the measured mass of the protein was 948 Da greater than expected, consistent with O-glycosylation. Subsequent analysis identified five Ser and Thr residues as O-glycosylation sites, of which four were mutated to Ala in successful crystallization experiments.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig4-v2.jpg)
+
+**Figure 4.:** (A) Overview of the structure, with G6b-B colored in magenta and dark green, heparin shown as spheres, and the Fab fragment chains in light green/light blue, respectively. The assembly represents the asymmetric unit of the crystal lattice (space group C2). (B) Close-up view illustrating the position of the heparin ligand relative to the secondary structure of the G6b-B dimer. Heparin residues (shown as sticks) are sulfated D-glucosamine (SGN) and L-iduronic acid (IDS). The color coding of heparin atoms is: C, yellow; O, red; N, blue; and S, green. β-strands in G6b-B are labeled according to the canonical Ig-fold. (C) Superposition of chains F (various colors) and E (gray) of the G6b-B ECD. Strands are labeled according to the canonical β-sandwich topology of the variable Ig domain. The fold of G6b-B deviates from the canonical Ig fold in missing strand C′′, and as strand A is part of the β-sheet of strands B, E and D. Chain F is color ramped from blue (N-terminus) to red (C-terminus), and the position of the disulfide bond (Cys35–Cys108) is indicated by sticks in magenta. The glycosylation site Thr73 is shown (sticks) with glycosyl groups omitted from the view. (D) Multiple sequence alignment of G6b-B orthologs across mammalian species with secondary structure elements indicated above the sequence. Residue numbers refer to the sequence of human G6b. Conserved residues are boxed, with identities shown as white letters on a red background. Species abbreviations are: Hs, Homo sapiens; Pg, Pan troglodytes (chimpanzee); Mm, Mus musculus (mouse); Rn, Rattus norvegicus (rat); Oc, Oryctolagus cuniculus (rabbit); Cl, Canis lupus familiaris (dog); Sc, Sos scroftus (wild boar); and Bt, Bos taurus (cattle). G6b_mut is the sequence of the recombinant human G6b-B ECD used in crystallization, with mutations of the five putative glycosylation sites (marked with M). GY indicates the retained O-glycosylation site and DS indicates the disulfide cysteine residues.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) G6b-B model. (i) Ribbon representation showing predicted locations of basic residues K54, K58, R60 and R61 in green. (ii) Superposition of the G6b-B model (dark blue) with Siglec-7 (cyan) in complex with its sialic acid ligand (yellow). (iii) and (iv) Electrostatic surface potentials as calculated by ABPS for both the wild-type G6b-B model and the G6b-B K54D, K58D, R60E, R61E mutant, respectively. Positively charged surfaces are blue and negatively charged are red. (B, C) CHO cells were transiently transfected with wild-type (WT) or mutant G6b-B and analyzed by flow cytometry. (B) Staining of cells with an anti-G6b-B antibody confirms similar transfection efficacy and G6b-B expression. (C) CHO cells were incubated with biotinylated heparin, followed by PE-labeled streptavidin. Heparin-biotin binding of all cells (left) and G6b-B+ cells (right) was measured. As there are no G6b-B+ mock transfected cells, the histogram from the entire cell population is shown in the right panel for comparison. Representative results from two independent experiments are shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Crystal lattice of the ternary complex of G6b-B bound to heparin and the G6b-B-specific Fab fragment. The top and bottom halves of the view are related by a 90° rotation about the horizontal axis. Proteins are shown as Cα traces, with G6b-B in magenta and dark green, and the Fab fragment chains in light blue and light gray, respectively. (B) Illustration of crystal lattice contacts by the G6b-B ECD dimer. The view shown is the same as in (A), but omitting the Fab fragment chains. The top and bottom views are related by a 90° rotation about the horizontal axis.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig4-figsupp3-v2.jpg)
+
+**Table 2.**
+ Crystallographic data collection and refinement statistics for the G6b-B ECD–dp12–Fab complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>X-ray diffraction data</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>I03, Diamond Light Source</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.97624</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Cell parameters (Å)</td>
+      <td>183.8, 72.34, 131.0, β = 124.5°</td>
+    </tr>
+    <tr>
+      <td>Complexes per asymmetric unit</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>65.27–3.13</td>
+    </tr>
+    <tr>
+      <td>High resolution shell (Å)</td>
+      <td>3.18–3.13</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)*</td>
+      <td>17.0 (146.6)</td>
+    </tr>
+    <tr>
+      <td>Total observations, unique reflections</td>
+      <td>74,255/24,543</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)*</td>
+      <td>4.0 (0.7)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)*</td>
+      <td>97.2 (98.2)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity*</td>
+      <td>3.0 (3.1)</td>
+    </tr>
+    <tr>
+      <td>CC1/2*, †</td>
+      <td>0.991 (0.348)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution range</td>
+      <td>63.1–3.13</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>24,543</td>
+    </tr>
+    <tr>
+      <td>Rcryst, Rfree (%)</td>
+      <td>22.6, 26.0</td>
+    </tr>
+    <tr>
+      <td>Number of non-H atoms</td>
+      <td>7852</td>
+    </tr>
+    <tr>
+      <td>RMSD bonds (Å)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>RMSD angles (°)</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wilson (Å2)</td>
+      <td>77.5</td>
+    </tr>
+    <tr>
+      <td>Average overall (Å2)</td>
+      <td>84.7</td>
+    </tr>
+    <tr>
+      <td>RMSD B-factors (Å2)</td>
+      <td>5.737</td>
+    </tr>
+    <tr>
+      <td>Ramachandran statistics‡</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored regions (%)</td>
+      <td>91.2</td>
+    </tr>
+    <tr>
+      <td>Allowed regions (%)</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_* parentheses refer to the high resolution shell.† as defined in Karplus and Diederichs (2012).‡ calculated using molprobity (Williams et al., 2018)._
 
 The solved complex encompasses six protein subunits, a dimer of G6b-B and two Fab fragments. As expected for a Fab-scaffolded structure, crystal packing contacts occur predominantly between the Fab fragment subunits (Figure 4—figure supplement 2A), but sparse direct contacts between symmetry-related G6b-B subunits also occur (Figure 4—figure supplement 2B).
 
@@ -105,15 +461,162 @@ The ectodomain of G6b-B assembles into an apparent dimer with a pseudo two-fold 
 
 The interface between chains E and F buries approximately 800 Å2 of solvent accessible surface area. In line with the modest surface area buried between the two subunits, the interface analysis using the PISA software does not predict a stable complex (Krissinel and Henrick, 2007), consistent with the observation that ectodomain dimerization is induced by the heparin ligand. Non-covalent contacts between the two chains consist almost entirely of van der Waals (vdW) and hydrophobic interactions, with Trp65F and Pro62F positioned centrally in the interface, contacting Pro62E and Arg61E, while Trp65E forms vdW contacts with Val77F. There are very few H-bond interactions (Ser57E-Oγ – Ala66F-O/Ala68F-N; Lys58E-Nζ – Arg43F-O) across the interface, and notably the central β-sheet (strands C′–C–F–G–A) is not continuous in that it lacks main chain – main chain hydrogen bonds between the C′ strands of opposing protomers (Figure 4B). Nevertheless, dimerization creates a deep cleft, into which the heparin ligand inserts (Figure 6A). Crystallization involved a dodeca-saccharide, of which eight residues are visible in the electron density map (Figure 6—figure supplement 1), with the central residues 4 and 5 representing sulfated L-iduronic acid (IDS) and D-glucosamine (SGN), respectively. Although the ligand-binding cleft provides partial charge complementarity to the sulfate groups of the heparin ligand (Figure 6A), perhaps surprisingly, only one sulfate group (residue SGN5) forms ionic interactions with basic side-chains (SGN5-O2S – Arg60F-Nε 3.3 Å, SGN5-O3S– Lys109F-Nζ 3.2 Å, where the superscript refers to the chain ID; Figure 6B,C). The other eight polar contacts (within a distance cut-off of 4 Å) involving sulfate groups are with backbone amides (Arg60E, Glu113E, His112E; 2.8–3.3 Å) rather than side-chains, while nine residues, including Lys109E, form vdW interactions with the ligand (Figure 6B,C). There is exquisite shape complementarity between the heparin and the surface of the G6b-B dimer, even though the S-shaped ligand only partially fills the ligand-binding cleft.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig6-v2.jpg)
+
+**Figure 6.:** (A) The G6b-B dimer is shown with a translucent surface colored according to electrostatic surface potential (calculated using CCP4mg). The heparin ligand is shown as a stick model and polar contacts are indicated by dashed lines in magenta. Selected residues are labeled with superscripts indicating the relevant G6b-B protein chain. (B, C) Representation of non-covalent contacts between heparin and the G6b dimer. (B) Residues of G6b-B forming non-covalent contacts with heparin. Polar contacts are indicated by dashed lines in magenta, van der Waals interactions are visualized by showing the relevant residues with their (transparent) molecular surface. Superscript capitals designate the G6b-B protein chain. (C) LigPlot representation of the heparin–G6b-B contacts, with van der Waals or hydrophobic interactions indicated by the bent comb symbol, and polar contacts shown as dashed lines with distance indicated in units of Å.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The electron map has been calculated with phases from a structure model lacking the heparin atoms and with amplitudes (Fo – Fc), contouring the map at 2.8 σ above the mean.
+
 We next measured the binding affinities of G6b-B for the various ligands using surface plasmon resonance (SPR). The human G6b-B-Fc-His6 homodimer and the human G6b-B-Fc-His6/Fc-StreptagII heterodimer were used as dimeric and monomeric G6b-B molecules, respectively. It is important to note that SPR measures the overall avidity rather than the direct binding affinity of the interactions, factoring in the effects of the multivalent nature of both the receptor (bivalent dimeric form) and the ligands themselves. In the configuration with chip-immobilized G6b-B molecules, heparin bound to both monomeric and dimeric G6b-B with high affinity (low nanomolar range). Similar values were obtained for fractionated (9 kDa) HS and the 12 saccharide heparin oligomer dp12. The binding affinity of perlecan was 366-fold weaker than that of heparin, in the low micromolar range (Table 3 and Figure 7A). The reverse configuration was also tested, in which ligands were biotinylated and immobilized on streptavidin chips. The binding avidity of dimeric G6b-B to perlecan, fractionated HS and heparin was comparable to that measured in the ligand-immobilized configuration (Table 3 and Figure 7A). Interestingly, in the ligand-immobilized configuration, differences in the binding of monomeric and dimeric G6b-B were observed for both heparin and fractionated HS, with the binding of the monomer being approximately 100-fold weaker than that of the dimer (Table 3 and Figure 7B). The apparent decrease in the potency of monomer in the ligand-immobilized configuration versus that in the G6b-B-immobilized configuration is likely to be the result of the ligands themselves being multi-site molecules that are able to bind several sites on the immobilized G6b-B protein surface. Even when the monomeric form of G6b-B is immobilized in the standard assay configuration, the ligands’ size and avidity allows them to bind multiple immobilized monomers simultaneously. When the configuration is reversed and the monomeric G6b-B is passed over the flow cell, only a weaker one-to-one binding mode is observed. More efficient binding of the dimeric form in this assay configuration correlates with our crystallography data showing that ligand binding induces dimer formation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig7-v2.jpg)
 
 **Figure 7.:** Representative traces of the surface plasmon resonance experiments, results of which are presented in Table 3. (A) Binding of the indicated compound to immobilized dimeric G6b-B in the standard configuration. (B) Results from the reversed configuration, depicting traces of dimeric and monomeric G6b-B binding to immobilized heparin.
 
-## Biological effects of perlecan, heparin and HS on platelets and MKs
+**Table 3.**
+ Surface plasmon resonance affinities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Immobilized G6b-B receptor (standard configuration)</th>
+    </tr>
+    <tr>
+      <th>Ligand</th>
+      <th>G6b-B</th>
+      <th>Kon</th>
+      <th>Koff</th>
+      <th>KD (M)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heparin</td>
+      <td>Monomer</td>
+      <td>1.12 ± 0.39×106</td>
+      <td>2.01 ± 0.54×10−3</td>
+      <td>2.00 ± 1.17×10−9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dimer</td>
+      <td>0.60 ± 0.56×106</td>
+      <td>3.16 ± 1.17×10−3</td>
+      <td>7.76 ± 5.30×10−9</td>
+    </tr>
+    <tr>
+      <td>Fractionated HS</td>
+      <td>Monomer</td>
+      <td>1.33 ± 0.01×105</td>
+      <td>9.99 ± 0.16×10−4</td>
+      <td>7.47 ± 0.17×10−9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dimer</td>
+      <td>1.20 ± 0.08×105</td>
+      <td>1.71 ± 1.11×10−3</td>
+      <td>14.0 ± 8.26×10−9</td>
+    </tr>
+    <tr>
+      <td>Perlecan</td>
+      <td>Monomer</td>
+      <td>1.94 ± 1.72×102</td>
+      <td>1.01 ± 0.37×10−4</td>
+      <td>7.32 ± 4.64×10−7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dimer</td>
+      <td>5.79 ± 6.94×103</td>
+      <td>2.28 ± 2.51×10−3</td>
+      <td>4.74 ± 1.34×10−7</td>
+    </tr>
+    <tr>
+      <td>dp12</td>
+      <td>Monomer</td>
+      <td>0.31 ± 0.27×106</td>
+      <td>2.39 ± 1.79×10−3</td>
+      <td>8.12 ± 1.22×10−9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dimer</td>
+      <td>2.50 ± 2.72×106</td>
+      <td>4.60 ± 5.01×10−3</td>
+      <td>1.84 ± 0.01×10−9</td>
+    </tr>
+    <tr>
+      <td colspan="5">Immobilized ligand (reversed configuration)</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>G6b-B</td>
+      <td>Kon</td>
+      <td>Koff</td>
+      <td>KD (M)</td>
+    </tr>
+    <tr>
+      <td>Heparin</td>
+      <td>Monomer</td>
+      <td>1.30 ± 0.29×105</td>
+      <td>8.85 ± 0.40×10−2</td>
+      <td>6.99 ± 1.25×10−7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dimer</td>
+      <td>3.28 ± 0.53×105</td>
+      <td>1.73 ± 0.04×10−3</td>
+      <td>5.33 ± 0.75×10−9</td>
+    </tr>
+    <tr>
+      <td>Fractionated HS</td>
+      <td>Monomer</td>
+      <td>9.22 ± 2.67×103</td>
+      <td>6.40 ± 0.33×10−3</td>
+      <td>7.31 ± 2.47×10−7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dimer</td>
+      <td>3.76 ± 4.69×104</td>
+      <td>4.58 ± 6.32×10−4</td>
+      <td>7.70 ± 7.21×10-9</td>
+    </tr>
+    <tr>
+      <td>Perlecan</td>
+      <td>Monomer</td>
+      <td>6.73 ± 3.38×103</td>
+      <td>1.28 ± 0.24×10−3</td>
+      <td>2.28 ± 1.51×10−7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dimer</td>
+      <td>4.90 ± 2.16×104</td>
+      <td>6.78 ± 2.57×10−4</td>
+      <td>1.41 ± 0.09×10−8</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are means ± SD from two independent experiments._
+
+### Biological effects of perlecan, heparin and HS on platelets and MKs
 
 Having established HS as ligand for G6b-B, we examined the effect of surface-bound ligand on platelet function, using an in vitro platelet adhesion assay, in which human platelets were incubated on different substrates and their adhesion was quantified colorimetrically. Platelets bound to fibrinogen, as expected, but failed to adhere to perlecan (Figure 8A). However, removal of the HS side-chains by heparinase III treatment resulted in robust adhesion to perlecan. This adhesion might be mediated by interaction of integrin α2β1 with the perlecan protein core (Bix et al., 2007), but the contribution of other receptors cannot be excluded. Importantly, perlecan also inhibited the adhesion to fibrinogen and collagen when immobilized together with these substrates. Again, this anti-adhesive effect was abolished upon treatment with heparinase III (Figure 8A). These results suggest that the HS side-chains of perlecan negatively regulate platelet adhesion.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig8-v2.jpg)
+
+**Figure 8.:** The indicated substrates were coated alone or in combination onto wells in 96-well plates (2.5 µg/ml collagen and 10 µg/ml for all other substrates) overnight. Where indicated, wells were treated with 5 mU/ml heparinase III. Platelets from (A) humans or (B) mice were allowed to adhere for 1 hr and adhesion was quantified colorimetrically with 4-nitrophenyl phosphate(pNPP). (A) Human, platelets; n = 4–5 individual donors from 3 to 4 independent experiments; P-values were calculated using one-way ANOVA with Sidak’s post-hoc test. (B) Mouse platelets; n = 4 samples/condition/genotype from two independent experiments. Owing to severe thrombocytopenia, platelets from up to five mice were pooled for one KO sample. P-values for differences between WT and Mpig6b–/–mice were calculated using two-way ANOVA with Sidak’s post-hoc test. (C, D) Adhesion of (C) human or (D) WT and G6b–/–platelets on fibrinogen and perlecan. (i) Mean surface area of individual platelets quantified by KNIME software analysis. In panel (C) (i) n = 5 donors from two independent experiments. P-values were calculated using one-way ANOVA with Sidak’s post-hoc test. Total number of cells analyzed: fibrinogen, 1957; perlecan, 239; perlecan + heparinase III, 686. In panel (D) (i) n = 5–7 mice/condition/genotype from 2 to 3 independent experiments. P-values were calculated using two-way ANOVA with Sidak’s post-hoc test. Total number of cells analyzed: 134–176 for perlecan conditions, and 913–1277 for fibrinogen conditions. *, p<0.05; **, p<0.01; and ***, p<0.001. (ii) Representative images of platelets stained for actin with phalloidin-Alexa-488; scale bar: 5 µm; hep III, heparinase III.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Mean surface area of the individual platelets analyzed in Figure 8C,D. Each dot represents an individual platelet from a total of (A) five human donors or (B) 5–7 mice/condition/genotype from 2 to 3 independent experiments. Numbers indicate the absolute number of platelets analyzed. Mean ± SD are overlaid.
 
 To determine whether this inhibitory effect of perlecan on platelet adhesion is mediated via G6b-B, we performed platelet adhesion experiments with platelets from WT and G6b-B knockout (Mpig6b–/–) mice (Figure 8B). WT mouse platelets exhibited adhesion characteristics that were similar to those of human platelets, with the exception that they adhered weakly to heparinase III-treated perlecan (Figure 8B). Importantly, co-coating of fibrinogen together with perlecan reduced the adhesion of WT but not of G6b–/–platelets, resulting in enhanced adhesion of Mpig6b–/–platelets under this condition. Pre-treatment of perlecan with heparinase III abolished this difference (Figure 8B). Adhesion of WT platelets to collagen was inhibited by perlecan in a similar manner as human platelets (data not shown). Platelets from Mpig6b–/–could not be meaningfully evaluated on collagen, because of the severe reduction in GPVI surface expression (Mazharian et al., 2012). Collectively, these findings demonstrate that the G6b-B–HS interaction inhibited the adhesion of human platelets to the perlecan protein core, collagen and fibrinogen, suggesting an inhibitory effect on integrin and GPVI signaling.
 
@@ -122,6 +625,18 @@ We next investigated the morphological changes in platelets that are adherent
 Mouse WT platelets, like human platelets, did not spread on perlecan and were small (Figure 8D), although platelets from Mpig6b–/–mice spread to a greater extent, indicating their activation. This was not simply due to the larger size of the Mpig6b–/–platelets, as they did not differ in size from WT platelets when spread on fibrinogen, in line with previous findings (Mazharian et al., 2012). Moreover, this size difference was abolished upon heparinase III treatment of perlecan, demonstrating that HS also has an activating effect on platelets, presumably through an activation receptor that is inhibited by G6b-B. Of note, platelets from Mpig6bdiY/F mice, which express physiological levels of a signaling-incompetent G6b-B, recapitulated the enhanced spreading phenotype of Mpig6b KO platelets (data not shown). Hence, we conclude that G6b-B signaling is required to inhibit platelet activation in the presence of HS.
 
 We next investigated the potential effect of perlecan on MKs. Staining of WT mouse bone marrow sections revealed perlecan expression in vessel walls, which co-localized with the sinusoid marker endoglin (CD105) (Figure 9A and Figure 9—figure supplement 1). This raised the possibility that MK G6b-B is likely to come into direct contact with the HS chains of perlecan in sinusoidal vessels during MK maturation and proplatelet formation. The same observation was made in the bone marrow of G6b-B-deficient animals (Figure 9A). Consistent with previous findings (Mazharian et al., 2012), however, we observed an increased number of MKs in Mpig6b–/–animals (Figure 9B), distributed throughout the bone marrow as atypical clusters (Figure 9C and Figure 9—figure supplement 2). Despite the increase in the number of MKs, Mpig6b–/–mice showed similar frequencies of the different maturation stages of MKs, as quantified by EM (Figure 9D,E), arguing against an overall defect of MK maturation in Mpig6b–/–mice.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig9-v2.jpg)
+
+**Figure 9.:** (A) Analysis of immunofluorescent images of murine femur sections from WT and Mpig6b–/–mice. Sinusoids were marked using anti-endoglin (CD105) and MKs by anti-GPIX antibodies. Perlecan is abundantly expressed within the bone marrow cavity, present in intersinusoidal spaces and part of basement membranes in sinusoids and arterioles. MKs come into contact with perlecan. Scale bar: 20 µm. (B) Quantification of MKs in the bone marrow of WT and Mpig6b–/–mice; three animals of each genotype with five images per animal were analyzed. (C) Analysis of MK clustering, with % of clustered MKs per visual field with a total number of three mice per genotype analyzed; P values were calculated with Mann-Whitney U-test **, p<0.01. (D) Classification of the MK according to their maturation stage: stage I (absence of granules), stage II (granules and developing demarcation membrane system (DMS) not yet organized), stage III (DMS organized in cytoplasmic territories). Data are reported as the percentage of the total number of MK. Bars represent the mean ± SEM in three bone marrow samples (total number of MK counted 395–469). (E) Representative transmission electron microscopy (TEM) images of bone marrow from WT and Mpig6b−/− mice. Bars: 10 µm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Overview sections of the bone marrow in femora of WT and Mpig6b–/–depicted in Figure 9A are shown.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Megakaryocytes are indicated with a transparent orange overlay and endothelial cells with a transparent blue overlay. *indicates the sinusoidal lumen; MK, megakaryocyte. Bars: 10 µm.
 
 To investigate the impact of the G6b-B interaction with HS on MKs, we analyzed the spreading and adhesion of bone marrow-derived MKs on different surfaces in vitro (Figure 10). We found that only very few WT and Mpig6b–/–MKs adhered to a perlecan-coated surface (Figure 10). Whilst perlecan-adherent WT MKs were small in size, Mpig6b–/–MKs spread to a greater degree on the same substrate. The same effect was observed when perlecan was co-immobilized with fibrinogen, and heparinase III treatment abolished the difference (Figure 10). Hence, similar to platelets, exposure of MKs to HS resulted in increased size in the absence of G6b-B, confirming the inhibitory function of this receptor.
 
@@ -141,11 +656,19 @@ We next examined the effect of heparin and APAC on WT and G6b-B deficient platel
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig12-v2.jpg)
 
-**Figure 12.:** Mpig6b KO platelets.Mouse blood, diluted 1:10 in Tyrode’s buffer was incubated with the indicated compounds (0.05 µM) in the (A) absence or (B) presence of a stimulating CLEC-2 (3 µg/ml) for the indicated time. Samples were fixed and TLT-1 surface levels, a marker for platelet degranulation or fibrinogen-Alexa488 binding (a measure of integrin activation), were determined by flow cytometry. n = 5–6 mice/condition/genotype from two independent experiments. P-values were calculated using (A) two-way ANOVA with Sidak’s post-hoc test (comparison of WT APAC vs Mpig6b–/– APAC) or (B) two-way ANOVA with Tukey’s post-hoc test, and refer to the difference between WT and Mpig6b ***, p<0.001; **, p<0.01; and *, p<0.05. (–/–.C) Mouse blood was incubated with the indicated compounds for 20 min. Samples were fixed and TLT-1 surface levels were determined by flow cytometry. n = 6–8 mice/condition/genotype from three independent experiments. P-values were calculated using two-way ANOVA with Tukey’s post-hoc test. ***, p<0.001; and **p<0.01. Source data are available in Figure 12—source data 1.10.7554/eLife.46840.036Figure 12—source data 1.Figure 12A–C.
+**Figure 12.:** Mouse blood, diluted 1:10 in Tyrode’s buffer was incubated with the indicated compounds (0.05 µM) in the (A) absence or (B) presence of a stimulating CLEC-2 (3 µg/ml) for the indicated time. Samples were fixed and TLT-1 surface levels, a marker for platelet degranulation or fibrinogen-Alexa488 binding (a measure of integrin activation), were determined by flow cytometry. n = 5–6 mice/condition/genotype from two independent experiments. P-values were calculated using (A) two-way ANOVA with Sidak’s post-hoc test (comparison of WT APAC vs Mpig6b–/– APAC) or (B) two-way ANOVA with Tukey’s post-hoc test, and refer to the difference between WT and Mpig6b–/–. ***, p<0.001; **, p<0.01; and *, p<0.05. (C) Mouse blood was incubated with the indicated compounds for 20 min. Samples were fixed and TLT-1 surface levels were determined by flow cytometry. n = 6–8 mice/condition/genotype from three independent experiments. P-values were calculated using two-way ANOVA with Tukey’s post-hoc test. ***, p<0.001; and **p<0.01. Source data are available in Figure 12—source data 1.
 
-## Conjugated heparin induces the phosphorylation of G6b-B and downstream signaling
+### Conjugated heparin induces the phosphorylation of G6b-B and downstream signaling
 
 We performed signaling studies to gain mechanistic insights into the opposing effects of soluble heparin vs. conjugated heparin. Washed human platelets were incubated with heparin or APAC, and their lysates were immunoblotted with an anti-phospho-tyrosine antibody (p-Tyr). Both heparin or APAC induced moderate changes in whole-cell tyrosine phosphorylation as compared to collagen, with APAC having a stronger effect (Figure 13A). The most pronounced change observed in response to G6b-B ligation was an increase in the signal intensity of a 150 kDa protein, as well as of a doublet in the heparin- and APAC-treated sample migrating at 27 and 32 kDa, which correlated with glycosylated and non-glycosylated human G6b-B. Hence, we assessed the phosphorylation status of G6b-B using custom phospho-tyrosine-specific G6b-B antibodies directed against phosphorylated ITIM and ITSM of G6b-B (Figure 13A), and by immunoprecipitating the receptor and blotting with the p-Tyr antibody (Figure 13—figure supplement 1A). Heparin, and to a greater extent APAC, enhanced the basal phosphorylation of G6b-B, which was accompanied by an increase in Shp1 and Shp2 association (Figure 13A and Figure 13—figure supplement 1). Similar results were obtained with HS, but to a lesser extent than with either heparin or APAC (Figure 13—figure supplement 1B). Perlecan did not induce the phosphorylation of G6b-B, in line with our observation in the aggregation assay, suggesting perlecan must be surface-immobilized to have an effect on platelets (Figure 13—figure supplement 1A).
+
+![Figure 13.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig13-v2.jpg)
+
+**Figure 13.:** (A) Washed human platelets (5 × 108/ml) were incubated for 90 s with 0.05 µM APAC, 0.7 µM heparin or buffer in the presence of 10 µM integrilin. Where indicated, platelets were additionally stimulated with 3 µg/ml collagen for 90 s following compound treatment. Samples were lysed and whole cell lysates (WCL) were analyzed by western blotting. Representative western blots are from n = 3–5 independent experiments. (B) Lysates were also analyzed by quantitative capillary-based gel electrophoresis with the indicated antibodies. Representative data are displayed as blots on the left and as quantified peak areas on the right. (C, D) Washed mouse platelets (5 × 108/ml) were incubated for 90 s with 0.05 µM APAC or buffer in the presence of 10 µM lotrafiban. Samples were analyzed as described above. The Mpig6b–/–samples show IgG light chain fragments, which result from IgG binding to the platelet surface. P-values were calculated using one-way ANOVA with Sidak’s post-hoc test. ***, p<0.001; **, p<0.01; and *, p<0.05. p-Tyr, anti-phosphotyrosine (4G10).
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig13-figsupp1-v2.jpg)
+
+**Figure 13—figure supplement 1.:** (A,B) Washed human platelets (5 × 108/ml) were incubated for 90 s with the indicated compounds in the presence of 10 µM integrillin. Whole cell lysates (WCL) subjected to immunoprecipitation (IP) with an anti-human G6b-B antibody, followed by western blotting.
 
 Using a quantitative capillary-based gel electrophoresis platform (ProteinSimple Wes), we investigated the effects of heparin and APAC on the phosphorylation status of the tyrosine phosphatases Shp1 (pTyr562) and Shp2 (p-Tyr580 and p-Tyr542), which are essential effectors of G6b-B signaling (Geer et al., 2018). Strikingly, APAC induced prominent phosphorylation of Shp1 and Shp2, whereas heparin only induced modest changes in Shp2 phosphorylation (Figure 13B). We also observed a marginal increase in SFK phosphorylation (p-Tyr418) in platelets treated with heparin and APAC, correlating with increased phosphorylation of G6b-B under these conditions (Figure 13B).
 
@@ -167,6 +690,14 @@ Since G6b-B shows a considerable degree of glycosylation, the question arises as
 
 Investigating the functional consequences of this interaction revealed that heparin and HS have complex effects on platelet function and that G6b-B is a key regulator in this process. Our data demonstrates that, to induce robust inhibitory biological or signaling effects, G6b-B ligands need to be either immobilized to a surface, as in the case of perlecan-coated plates, or multivalent, as in the case of APAC. By contrast, single-chain heparin and HS enhanced rather than inhibited platelet aggregation. These findings are in line with numerous previous reports, showing enhancing effects of heparin on platelet aggregation in platelet-rich plasma (Gao et al., 2011; Saba et al., 1984; Salzman et al., 1980). This most likely also contributes to a mild drop in platelet counts in patients receiving heparin, referred to as non-immune heparin-induced thrombocytopenia (Cooney, 2006). On the basis of our signaling data and size-exclusion chromatography data, we assume that heparin, despite being able to dimerize the receptor, fails to cluster G6b-B sufficiently into higher-order oligomers to induce robust downstream signaling (Figure 14A,B). It remains to be determined whether the enhancing effects of heparin and HS on platelet aggregation is mediated by reducing the inhibitory effects of G6b-B alone or by additional effects on other platelet receptors, which promote platelet activation, such as the integrin αIIbβ3, previously shown to bind heparin (Fitzgerald et al., 1985; Gao et al., 2011; Sobel et al., 2001).
 
+![Figure 14.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig14-v2.jpg)
+
+**Figure 14.:** (A) In the absence of any ligand, G6b-B is mainly present in a monomeric state and phosphorylated to a low degree. (B) Small soluble ligands, for example heparin, induce the dimerization of the receptor, but induce only mild G6b-B phosphorylation and downstream signaling. (C) Multivalent ligands, for example the HS chains of vessel-wall perlecan (not shown) or the heparin molecules in APAC, cluster G6b-B dimers into higher-order oligomers. Hence, they facilitate downstream signaling of G6b-B, including robust phosphorylation of G6b-B and downstream Shp1 and Shp2 phosphatases, resulting in the inhibition of platelet activation. SFK, src family kinase.
+
+![Figure 14—figure supplement 1.](https://cdn.elifesciences.org/articles/46840/elife-46840-fig14-figsupp1-v2.jpg)
+
+**Figure 14—figure supplement 1.:** Side-by-side views of Cα traces (ribbon representation) and electrostatic surfaces of proteins bound to heparin or a heparin analog. The subset includes structures in which the heparin ligand bridges two or more subunits. At the time of writing, the PDB contained 33 proteins structures with heparin as a ligand, in addition to a few structures with heparin analogs. From top to bottom: G6b-B (Fab fragments and glycosyl chains omitted from view); 4r9w, i.e. platelet factor four bound to fondaparinux (synthetic heparin analogue) (Cai et al., 2015); 4rda. i.e. the E2 domain of amyloid precursor protein-like protein 1 (APLP1) (Dahms et al., 2015); 2vra, i.e. immunoglobulin-like domains 1 and 2 of Drosophila Robo (Fukuhara et al., 2008); 1e0o, the ternary complex of FGF1, FGFR2 and heparin (Pellegrini et al., 2000); and 1fq9, the ternary complex of FGF2, FGFR1 and heparin (Schlessinger et al., 2000). The coloring of the electrostatic surfaces show a potential scale from –0.5 V (−19.5 kT/e, red) to +0.5 V (+19.5 kT/e, blue). The ribbon representations are colored by peptide chain, and heparin is shown as a stick model with color code: C, yellow; O, red; N, blue; and S, green.
+
 In contrast to these soluble, monovalent ligands, the HS side-chains of immobilized perlecan exerted an inhibitory effect on platelets, as evidenced by the impaired adhesion of platelets to collagen and fibrinogen. This extends observations from previous reports describing the anti-adhesive properties of the HS chains of perlecan, although the underlying mechanism was not known (Klein et al., 1995; Lord et al., 2009). Moreover, heparinized polymers showed less platelet adhesion than their non-heparinized counterparts (Han et al., 1989; Lindhout et al., 1995; Olsson et al., 1977). Our results with platelets from G6b-B-deficient mice demonstrate that heparin or HS engagement by G6b-B on these surfaces induces an inhibitory signal, blocking platelet activation and adhesion.
 
 The failure of perlecan to have an effect on collagen-mediated platelet aggregation and platelet signaling in solution might simply be a consequence of the test conditions and suggests that it must be immobilized to a surface in order to present HS chains at a density sufficient to induce the inhibitory effects observed. Hence, to determine the effect of G6b-B clustering in solution, we took advantage of APAC, which mimics naturally occurring macromolecular heparin proteoglycans and harbors a higher GAG density than perlecan. On the basis of our findings, and given the dependence of G6b-B binding to sulfate groups and the common use of heparin as an analog for the NS domains of HS (Xu and Esko, 2014), we concluded that the inhibitory effect of both APAC and the HS chains of perlecan is mediated by clustering G6b-B. We compared the effect of APAC to that of single-chain heparin, which differ only by the clustering of the chains, but not the structure or composition of the polysaccharide chains. Similar to previous reports (Kauhanen et al., 2000; Lassila and Jouppila, 2014; Lassila et al., 1997), we found that APAC inhibited platelet activation via the ITAM-containing GPVI-FcR γ-chain receptor complex, and also via the hemi-ITAM-containing receptor CLEC-2. Thus, by increasing the clustering capacity of heparin to a multivalent form, an inhibitory effect on platelet function was achieved in solution. In line with this observation, we found that APAC induced stronger phosphorylation of G6b-B, which was accompanied by the association and phosphorylation of the tyrosine phosphatases Shp1 and Shp2, which is not observed in G6b-B-deficient platelets. We therefore conclude that clustering of G6b-B receptor dimers into higher-order oligomers by an immobilized or multivalent ligand is required for the inhibitory effect on platelet function (Figure 14C).
@@ -181,59 +712,433 @@ In summary, our findings establish the interaction of G6b-B with heparan sulfate
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mpig6b–/–</td>
+      <td>PMID: 23112346</td>
+      <td></td>
+      <td>Dr. Yotis Senis (University of Birmingham and EFS Grand Est, Inserm UMR-S1255)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mpig6bdiYF/diYF</td>
+      <td>PMID: 29891536</td>
+      <td></td>
+      <td>Dr. Yotis Senis (University of Birmingham and EFS Grand Est, Inserm UMR-S1255)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>A5 CHO</td>
+      <td>other</td>
+      <td></td>
+      <td>provided by Dr. Ana Kasirer-Friede and Dr. Sanford Shattil (University of California, San Diego)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-perlecan (rat monoclonal)</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>clone A7L6; sc-33707; RRID:AB_627714</td>
+      <td>(1:100); used for IF staining of bone marrow (BM)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD105 (Endoglin) (rat monoclonal)</td>
+      <td>eBioscience/Thermo Fisher Scientific</td>
+      <td>#MA5-17943; clone MJ7/18; RRID:AB_2539327</td>
+      <td>(1:100); used for IF staining of BM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GPIX-Alexa488 (rat monoclonal)</td>
+      <td>other</td>
+      <td>clone 56F8</td>
+      <td>1.4 µg/ml; used for IF staining of BM, custom made lab reagent</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti rat IgG Alexa 647 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>#A-21247; RRID:AB_141778</td>
+      <td>(1:300); used for IF staining of BM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti rat IgG Alexa 546 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>#A-11081; RRID:AB_141738</td>
+      <td>(1:300); used for IF staining of BM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#A4700, clone AC-40; RRID:AB_476730</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#T6199, clone DM1A; RRID:AB_477583</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2118, clone: 14C10; RRID:AB_561053</td>
+      <td>(1:10) dilution, on 0.05 mg/ml lysates for Wes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Src p-Tyr418 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#44660G; RRID:AB_1500523</td>
+      <td>(1:10) dilution, on 0.05 mg/ml lysates for Wes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Shp1 p-Tyr564 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#8849, clone: D11G5; RRID:AB_11141050</td>
+      <td>(1:10) dilution, on 0.2 mg/ml lysates for Wes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Shp2 p-Tyr542 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3751; RRID:AB_330825</td>
+      <td>(1:10) dilution, on 0.2 mg/ml lysates for Wes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Shp2 p-Tyr580 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3703; RRID:AB_2174962</td>
+      <td>(1:10) dilution, on 0.2 mg/ml lysates for Wes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Syk p-Tyr525/6 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2711; RRID:AB_2197215</td>
+      <td>(1:50) dilution, on 0.2 mg/ml lysates for Wes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SH-PTP1/Shp-1 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-287 (C19); RRID:AB_2173829</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SH-PTP2/Shp-2 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-280 (C18); RRID:AB_632401</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phosphotyrosine (mouse monoclonal)</td>
+      <td>Merck-Millipore</td>
+      <td>05–321, clone 4G10; RRID:AB_309678</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human G6b-B (mouse monoclonal)</td>
+      <td>other</td>
+      <td>clone 17–4</td>
+      <td>10 µg/ml, custom-made lab reagent</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>purified human IgG-Fc fragment</td>
+      <td>Bethyl Laboratories</td>
+      <td>P80-104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant Mouse Syndecan-2/CD362 protein, CF</td>
+      <td>R&amp;D Systems</td>
+      <td>6585-SD-050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinanthuman Agrin protein, N-terminal, CF</td>
+      <td>R&amp;D Systems</td>
+      <td>8909-AG-050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rec. human laminin 111</td>
+      <td>Biolamina</td>
+      <td>LN111-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rec. human laminin 411</td>
+      <td>Biolamina</td>
+      <td>LN411-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rec. human laminin 421</td>
+      <td>Biolamina</td>
+      <td>LN421-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rec. human laminin 511</td>
+      <td>Biolamina</td>
+      <td>LN511-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rec. human laminin 521</td>
+      <td>Biolamina</td>
+      <td>LN521-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparan sulfate proteoglycan</td>
+      <td>Sigma-Aldrich</td>
+      <td>H4777</td>
+      <td>alternative name: perlecan</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparin</td>
+      <td>Iduron</td>
+      <td>HEP001</td>
+      <td>https://iduron.co.uk/product/Heparin-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparin oligosaccharide dp4</td>
+      <td>Iduron</td>
+      <td>HO04</td>
+      <td>https://iduron.co.uk/product/Heparin-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparin oligosaccharide dp8</td>
+      <td>Iduron</td>
+      <td>HO08</td>
+      <td>https://iduron.co.uk/product/Heparin-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparin oligosaccharide dp12</td>
+      <td>Iduron</td>
+      <td>HO12</td>
+      <td>https://iduron.co.uk/product/Heparin-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparin oligosaccharide dp20</td>
+      <td>Iduron</td>
+      <td>HO20</td>
+      <td>https://iduron.co.uk/product/Heparin-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-O-desulphated heparin</td>
+      <td>Iduron</td>
+      <td>DSH001/2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-O-desulphated heparin</td>
+      <td>Iduron</td>
+      <td>DSH002/6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N desulphated heparin</td>
+      <td>Iduron</td>
+      <td>DSH003/N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-desulphated re N-acetylated heparin</td>
+      <td>Iduron</td>
+      <td>DSH004/Nac</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparan sulphate</td>
+      <td>Iduron</td>
+      <td>GAG-HS01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HS fraction III approx. mol. wt. 9 kDa</td>
+      <td>Iduron</td>
+      <td>GAG-HS III</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>APAC</td>
+      <td>Aplagon Oy</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparinase III (heparitinase I) Flavobacterium heparinum (EC 4.2.2.8)</td>
+      <td>AMSBiotechnology</td>
+      <td>AMS.HEP-ENZ III</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin−biotin sodium salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>B9806-10MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>fibronectin</td>
+      <td>Cabiochem</td>
+      <td>Cat #341631</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>fibrinogen</td>
+      <td>Enzyme Research Laboratories</td>
+      <td>Fib 3 3496L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>collagen I</td>
+      <td>Takeda</td>
+      <td>1130630</td>
+      <td>collagen reagens horms</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cultrex Mouse Collagen IV</td>
+      <td>Trevigen</td>
+      <td>3410-010-01</td>
+      <td>purchased via R &amp; D Systems</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Laminin from EHS murine sarcoma basement membrane</td>
+      <td>Sigma-Aldrich</td>
+      <td>L2020</td>
+      <td>refers to mouse laminin-111 in this study</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>streptavidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>S4762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Cell Profiler (2.2.0)</td>
+      <td>Broad Institute</td>
+      <td>http://cellprofiler.org/ RRID:SCR_007358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji</td>
+      <td>PMID: 22743772</td>
+      <td>https://imagej.net/Fiji; RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mpig6b (Mpig6b–/–) and Mpig6bdiY/F knock-in (Mpig6bdiYF/diYF) mice were generated on a C57BL/6 background by Taconic Artemis (Cologne, Germany) as previously described (Geer et al., 2018; Mazharian et al., 2012). Control mice were pure C57BL/6 (Mpig6b+/+), referred to as WT. All procedures were undertaken with UK Home Office approval (project license No P46252127) in accordance with the Animals (Scientific Procedures) Act of 1986.
 
-## Reagents and antibodies
+### Reagents and antibodies
 
 See Key Resources Table for information on the sources of key reagents used in this study.
 
 p-nitrophenyl phosphate (pNPP) and goat anti-human IgG–HRP antibody were obtained from Sigma-Aldrich, Dorset, UK. The semisynthetic macromolecular conjugate of unfractionated heparin and a human serum albumin, APAC, was from Aplagon Oy, Helsinki, Finland. Blocking medium (2.5% horse serum) and 3,3'-diaminobenzidine tetrahydrochloride (DAB) peroxidase substrate for immunohistochemistry were purchased from Vector Laboratories, Peterborough, UK and 3,3,5,5 tetramethylbenzidine (TMB) was from BD Biosciences, Wokingham, UK. Polyclonal phospho-specific G6b-B antibodies were generated by Biogenes, Berlin, Germany. Phalloidin-Alexa 488 was from Invitrogen Life Technologies, Paisley, UK. All other antibodies and chemicals were either purchased or generated as previously described (Mazharian et al., 2012).
 
-## Constructs
+### Constructs
 
 Recombinant proteins: the cDNA encoding the mouse G6b-B extracellular domain was amplified by PCR using the primers GATC AAGCTT ATG GCC TTG GTC CTG CCG CTG (forward) and GATC GGATCC ACT TAC CTG T CTC GTA CCC GTG GGT AGA TCC (reverse) from a mouse megakaryocyte cDNA library template. The PCR product was cleaved using Hind III and Bam HI and ligated into pCDNA3Ig, which was comprised of the genomic human IgG1 hinge-C2-C3 Fc region cloned into the HindIII and Not I sites of pcDNA3. This creates a construct encoding the extracellular part of G6b, spliced in frame with the IgG1 hinge, producing a G6b-B-Fc chimeric dimer. The resulting protein, mG6b-B-Fc, was expressed in COS-7 cells and then purified via affinity chromatography. The human G6b-B-Fc dimer (hG6b-B-Fc) construct was produced using an identical approach to the murine construct, using the primers GATC AAGCTT ATG GCT GTG TTT CTG CAG CTG (forward) and GATC GGATCC ACTTACCTGT CTG GGG ATA CAC GGA CCC ATG (reverse). Similarly, untagged monomeric G6b-B (residues 18–142) as well as His-tagged versions were produced — human G6b-B (residues 18–142)-Fc-His6 (expressed as a homodimer) and human G6b-B (residues 18–142)-Fc-His6/Fc-streptagII (heterodimer, monomeric for G6b-B; Peak Proteins Limited, Alderley Park) — for use in surface plasmon resonance measurements. All human constructs were expressed transiently in HEK293-6E cells.
 
 Cell culture: The cDNA encoding the full length of human G6b-B protein was amplified by PCR from a human cDNA library. This PCR fragment was first cloned into the pCR-Blunt vector (Invitrogen), and then subcloned into the pCDNA3 vector, for the expression of untagged G6b-B in heterologous cell systems. Subsequently, the G6b-B mutant that is mutated in the potential heparin binding site (hG6b-B K54D/K58D/R60E/R61E) was generated with the Quick Change Site-directed mutagenesis kit (Agilent Technologies, Stockport, UK).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry stainings were performed according to standard protocols. In brief, frozen mouse tissue sections (Zyagen, San Diego, CA, USA) were thawed and washed once in phosphate buffered saline (PBS). After blocking for 20 min (min) at room temperature (RT), tissues were incubated with mG6b-B-Fc or human IgG-Fc fragment (negative control, 5 µg/ml in PBS) for 75 min at RT. After three washing steps in PBS, slides were fixed in acetone/PFA for 4 min and endogenous peroxidase was blocked with 3% H2O2 in methanol (5 min). Slides were incubated with anti-human IgG–HRP antibody (1:600 in PBS, 0.1% Tween 20) and the signal developed with DAB substrate. Subsequently, tissue sections were counterstained with hematoxylin. Images were acquired on a Zeiss Axio Scan.Z1 (Zeiss, Cambridge, UK) equipped with an 3CCD color 2MP Hitachi 1200 × 1600 HV-F202SCL camera, using a 10x (NA 0.45) or 20x (NA 0.8) plan apochromat air objective. Images were acquired and exported with the Zeiss Zen software.
 
-## Femur sectioning and staining
+### Femur sectioning and staining
 
 Femurs of mice aged 6–12 weeks were sectioned and stained as described previously (Kawamoto, 2003; Semeniak et al., 2016). In brief, femora were isolated, fixed for 4 hr at 4°C in 4% PFA before being transferred along a sucrose gradient from 10%, 20% and 30%, each for 24 hr. Next, femora were embedded in SCEM medium (Section lab, Hiroshima, Japan) and frozen at −80°C until sectioning. Megakaryocytes were stained with anti-GPIX-Alexa488 antibody, and CD105 was used as an endothelial cell marker. Additional stainings were performed using antibodies against perlecan. Corresponding secondary antibodies were used at a 1:300 dilution. Slides were mounted in Fluoromount G including DAPI (Thermo Fisher Scientific). Recording was performed using a Leica TCS SP8 confocal laser scanning microscope (Leica, Wetzlar, Germany) with an 40x oil objective at 20°C. The numerical aperture (NA) of the objective lens was 1.3 and the software used for data acquisition was LAS X (Leica). Subsequently, images were processed with ImageJ (NIH, Bethesda, MD, USA). No 3D reconstruction, gamma adjustments or deconvolution were performed.
 
 For reconstruction of whole femora sections, single images were taken with a resonant scanner and digitally stitched using LAS X software.
 
-## Electron microscopy studies
+### Electron microscopy studies
 
 Bone marrow samples obtained by flushing mouse femora with 0.1 M sodium cacodylate buffer were fixed in 2.5% glutaraldehyde and embedded in Epon as described (Eckly et al., 2012). Thin sections were stained with uranyl acetate and lead citrate, and examined under a JEOL 2100Plus transmission electron microscope at 120 kV (Jeol, Tokyo, Japan). Megakaryocytes were counted on whole transversal sections and the number of cells was expressed as a density per unit area (defined as one square of the grid, i.e. 13 000 μm2). Megakaryocytes at stages I, II and III were identified using distinct ultrastructural characteristics: stage I, a cell 10–50 μm in diameter with a large nucleus; stage II, a cell 20–80 μm in diameter containing platelet-specific granules; stage III, a megakaryocyte containing a well-developed demarcation membrane system defining cytoplasmic territories and a peripheral zone. Samples from three mice of each genotype were examined in each case.
 
-## Pull-down and identification of the ligand
+### Pull-down and identification of the ligand
 
 Venae cavae were dissected from wild-type mice and fat and connective tissue were removed. The endothelial tissue was placed in lysis buffer (10 mM Tris-HCl (pH 7.6), 150 mM NaCl, 1 mM EGTA, 1 mM EDTA, 1% IGEPAL CA-630, 5 mM Na3VO4, 0.5 mM 4-(2-aminoethyl) benzenesulfonyl fluoride hydrochloride, 5 µg/ml leupeptin, 5 µg/ml aprotinin, 0.5 µg/ml pepstatin) and homogenized with a PowerGen homogenizer (Fisher Scientific, Loughborough, UK). Lysates were centrifuged at 13,000 × g for 10 min at 4°C. Supernatants were collected and re-centrifuged under the same conditions. Protein lysate was precleared with Protein G sepharose (PGS, 50% slurry) and human IgG-Fc fragment by agitation for 1 hr at 4°C. The lysate was then split into two samples which received either mG6b-B-Fc or human IgG-Fc fragment (negative control). After 1.5 hr, PGS was added and samples were agitated for another 1.5 hr at 4°C. Finally, PGS was washed three times in lysis buffer and bound proteins were eluted by boiling the PGS pellet for 5 min in 40 µl 2x SDS sample buffer. Samples were then resolved on a NuPage 4–12% Bis-Tris-Gradient Gel (Invitrogen), alongside mG6b-B-Fc (additional negative control) and stained with colloidal coomassie. Bands appearing in the mG6b-B-Fc pulldown, but not in the negative controls, were excised and subjected to mass spectrometry analysis (Orbitrap, Thermo Fisher Scientific, Paisley, UK). Corresponding areas from the control pulldown were cut and analyzed in parallel to account for background signals.
 
-## In vitro binding assay
+### In vitro binding assay
 
 Nunc MaxiSorp plates (Thermo Fisher Scientific) were coated overnight with 50 μl of substrates, diluted in PBS (supplemented with 0.9 mM CaCl2 and 0.5 mM MgCl2 for laminins) at a concentration of 5 μg/ml. Plates were washed three times with Tris buffered saline (TBS) containing 0.1% Tween 20 (TBS-T) and blocked for 1.5 hr at 37°C with 2% fat free milk in TBS and 0.02% Tween 20. For heparin immobilization, biotinylated heparin (5 μg/ml) was added to streptavidin-coated wells for 1 hr at RT prior to the blocking step. After one washing step, recombinant G6b-B-Fc or human IgG-Fc fragment (negative control) in 3% BSA in TBS-T was added and incubated for 2 hr at 37°C. In competition assays, this incubation step was performed in the presence of the indicated compound. After five washing steps, wells were incubated with HRP-conjugated anti-human IgG antibody for 1 hr at RT at low agitation. Alternatively, monomeric, untagged G6b-B was incubated with anti-G6b-B antibody, and bound complexes were detected with HRP-conjugated anti-mouse IgG antibody. Plates were washed seven times and the signals were developed with TMB. The reaction was stopped by the addition of 2 M H2SO4 (50 μl/well) and absorbance at 450 nm and 570 nm (background) was measured with a Versa max plate reader (Molecular Devices, Wokingham, UK).
 
-## Genome-wide cell-based genetic screening
+### Genome-wide cell-based genetic screening
 
 The cell-based genome-wide genetic screen was performed essentially as described (Sharma et al., 2018). In brief, 3 × 107 Cas9-expressing HEK293 cells were transduced with a library of lentiviruses, each encoding a single gRNA from a pool of 90,709 individual gRNAs targeting 18,009 human genes at a low multiplicity of infection of 0.3 to increase the chances that each cell received a single gRNA. Ten million lentivirally transduced cells were selected using a blue fluorescent protein (BFP) marker three days after transduction using fluorescence-activated cell sorting. The sorted cells were placed back into culture and further selected for five days with 2 μg/mL puromycin. On day nine post transduction, 100 × 106 cells were stained with a recombinant protein consisting of the entire ectodomain of biotinylated human G6b-B clustered around phycoerythrin (PE)-conjugated streptavidin for an hour at room temperature. The cells were sorted using an XDP flow sorter and the BFP+/PE- population collected, representing ~1% of the total cell population. A total of 600,000 cells were collected from which genomic DNA was extracted, and gRNA sequences were amplified by PCR before their abundances were determined by next generation sequencing. The enrichment of gRNA sequences targeting specific genes in the sorted versus unsorted populations were quantified from the sequence data using MAGeCK software (Li et al., 2014) as previously described (Sharma et al., 2018).
 
 FGFRL1 was used as a positive control for testing the KO of SLC35B2, as it is known to interact with heparan sulfate (Trueb, 2011). Both G6b-B and FGFRL1 were produced as biotinylated proteins in HEK293 cells by co-transfection with a plasmid encoding a secreted form of the Escherichia coli biotin ligase, BirA (Bushell et al., 2008). The ectodomain of FGFRL1, aa 1–378, was subcloned from the Origene plasmid sc123844 by PCR with KOD enzyme and primers containing the Not-AscI restriction sites, and cloned into an expression vector containing a rat Cd4 domains 3 and 4 (CD3+4) tag and biotinylatable sequence. Avid fluorescent binding forms of the proteins were generated by conjugating the biotinylated recombinant ectodomain of FGFRL1 with streptavidin-PE. Parental and cells in which SLC35B2 was targeted were stained with the fluorescent reagent as described before (Sharma et al., 2018).
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 The interaction of the recombinant heterodimeric (‘monomer’) and homodimeric (‘dimer’) human G6b-B extracellular domain with different ligands was quantified using a BIAcoreTM 8K instrument (GE Healthcare, Little Chalfont, UK). Recombinant G6b-B proteins were immobilized on CM5 sensor chips (GE Healthcare) via an Fc antibody using the Human Antibody Capture Kit (GE Healthcare). Immobilization levels ranged from 7800 to 9000 response units (RU) for the Fc antibody and 3000 to 4000 RU for the G6b-B proteins. Single cycle kinetics (SCK) measurements were undertaken with perlecan, heparin, fractionated HS and dp12. The analytes were injected in increasing concentrations of 0.1, 1, 10, 100 and 1000 nM. Analytes were flowed over the immobilized G6b-B surface at 30 µl/min with 60 s injection time and 60 s dissociation per concentration. In the ‘reversed configuration’, biotinylated heparin, HS and perlecan were immobilized on streptavidin sensor chips (GE Healthcare); fractionated HS and perlecan were biotinylated using the Lightning-Link Biotinylation kit (Innova Biosciences, Cambridge, UK). Immobilization levels of the biotinylated species were between 900 and 1000 RU. The SCK of ‘monomeric’ and ‘dimeric’ G6b-B were evaluated at 0.05, 0.5, 5, 50 and 500 nM. The analytes were flowed over the immobilized peptides at 10 µl/min with 180 s injection time and 360 s dissociation at each concentration. Data were collected from two replicates per experiment type and analyzed using the BIA evaluation software (GE Healthcare). Sensorgrams were double referenced prior to global fitting the SCK sensorgrams to one-to-one binding models in order to determine the rate constant of association (kon) and dissociation (koff). Binding affinities (KD) were calculated from the equation KD = koff/kon.
 
-## Theoretical modeling of G6b-B structure
+### Theoretical modeling of G6b-B structure
 
 The G6b-B ectodomain model was generated by submitting the amino acid sequence for G6b-B residues 18–142 to the RaptorX Structure Prediction server (http://raptorx.uchicago.edu/) (Källberg et al., 2012). Subsequent modeling of the K54D, K58D, R60E, R61E G6b-B mutants and all molecular graphics figure generation was carried out using PyMOL (The PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC.). The electrostatic surfaces of both wild-type and mutant G6b-B models were calculated using the APBS suite (Jurrus et al., 2018).
 
-## Crystallography
+### Crystallography
 
 Production of recombinant G6b-B and the anti-G6b-B Fab fragment. The G6b-B extracellular domain (ECD) construct encompassing residues 18–133 which include the mutations N32D, S67A, S68A, S69A, T71A was expressed in mammalian HEK293 cells and purified by cation exchange and size-exclusion chromatography. The N32D mutation was used to remove the single potential N-linked glycosylation site that we showed by SDS-PAGE and mass spectrometry to be partially utilized. Intact mass spectrometry also revealed that after having made the N32D mutation, the measured mass of the protein was 948 Da greater than expected, a mass that is consistent with a common O-linked oligosaccharide, 2x sialic acid, galactose, N-acetyl galactosamine. The O-glycosylation was located using TOF-mass spectrometry of a chymotryptic digest of a region encompassing residues 66–80 with the sequence ASSSGTPTVPPLQPF. Each of the five potential sites was mutated to Ala individually in tandem with N32D. This showed that the predominant site was T73, although other Ser or Thr residues could be modified to a lesser degree. Finally, two constructs were made and tested for crystallization, one with four residues mutated to Ala but leaving T73 and one with all five residues mutated to Ala. The construct with four changes crystallized more readily and enabled us to solve the structure. The recombinant anti-G6b-B Fab fragment was also produced in HEK cells, synthetic genes for light and heavy chains were obtained from Invitrogen GeneArt. The G6b-B ECD-Fab complex was formed by incubating the components together for 2 hr at room temperature with G6b-B ECD in a 1.5 molar excess, and the complex was subsequently purified by size-exclusion chromatography. Protein was concentrated to 12 mg/ml in 20 mM Hepes (pH 7.1) and 75 mM NaCl, and finally incubated with 2 mM (10-fold molar excess) of the heparin oligosaccharide dp12 for 1 hr at 4°C prior to setting up the crystallization experiment.
 
@@ -243,31 +1148,31 @@ The structure was initially solved by molecular replacement using the program Ph
 
 The final model represents a complex of G6b-B ECD, dp12 and Fab fragment chains in the ratio 2:1:2, respectively. The refined structure of G6b-B ECD chain has observable electron density for residues Pro19 to Thr38, Arg43 to Arg83 and Ile91 to Cys129. The G6b-B ECD, as expected, is shown to be a member of the IgV superfamily, with the solved structure comprising two antiparallel β-sheets formed by strands ABDE and A′CC′FG. There is also evidence from the electron density for O-linked glycosylation at Thr73 in both copies of the G6b-B ECD. Final refinement statistics for the G6b-B ECD-dp12-Fab dimer complex are given in Table 2.
 
-## Size chromatography of G6b-B ECD
+### Size chromatography of G6b-B ECD
 
 The G6b-B ECD protein encompassing residues 18–133 (N32D, S67A, S68A, S69A, T71A) was either analyzed immediately, or after incubation with heparin oligosaccharide dp12. A Superdex 75 10/300 GL column (GE Healthcare) was both equilibrated and run in 20 mM Hepes (pH 7.1) and 75 mM NaCl. dp12 was added to the G6b-B ECD at a 4-fold molar excess (150 µM final concentration). After the addition of dp12, the sample was aspirated gently and incubated for 90 min on ice, prior to SEC analysis. Columns were run at 0.3 ml/min, and 400 µl of G6b-B ECD samples were loaded (200 µg). A calibration curve was prepared in the same buffer using conalbumin (75 kDa), ovalbumin (44 kDa), carbonic anhydrase (29 kDa), ribonuclease A (13.7 kDa) and aprotinin (6.6 kDa) (LMM gel filtration standard kit, GE Healthcare). This calibration curve was then used to estimate the molecular weight of both G6b-B ECD and G6b-B ECD +dp12 in order to determine their polymeric states.
 
-## Flow-cytometric analysis of heparin binding in transfected CHO cells
+### Flow-cytometric analysis of heparin binding in transfected CHO cells
 
 A5 CHO cells were kindly provided by Ana Kasirer-Friede and Sanford Shattil (University of California, San Diego). A test for mycoplasma contamination was negative. Transfections of WT or mutant hG6b-B into CHO cells were carried out in 6-well plates (3 × 105 cells in 2 ml DMEM medium, supplemented with 10% fetal bovine serum, 2 mM glutamin) using polyethylenimine (Sigma-Aldrich) as described (Ehrhardt et al., 2006). Cells were harvested 2 days after transfection by detaching them with accutase, and resuspended in PBS containing 0.2 mg/ml BSA and 0.02% sodium azide. Cells were incubated with heparin-biotin (10 μg/ml) and mouse anti-human G6b-B antibody for 45 min at RT, washed twice, and incubated with streptavidin-PE (BD Biosciences) and anti-mouse-alexa488 antibody (Invitrogen). Cells were fixed with 1% formaldehyde and analyzed on a BD FACSCalibur (BD Biosciences).
 
-## Aggregometry
+### Aggregometry
 
 Platelet rich plasma (PRP) was prepared from blood collected from healthy drug-free volunteers as described previously (Dawood et al., 2007). Donors gave full informed consent according to the Helsinki declaration. Ethical approval for collecting blood was granted by Birmingham University Internal Ethical Review (ERN_11–0175 and ERN_15–0973). In brief, 9 volumes of blood were collected into 1 vol of 4% (w/v) sodium citrate solution. Blood was centrifuged at 200 × g for 20 min at RT and PRP was collected. Platelet aggregation was measured using a lumi-aggregometer (Chrono-Log, Abingdon on Thames, UK, Model 700).
 
-## Platelet adhesion assay
+### Platelet adhesion assay
 
 This assay was performed as described previously (Bellavite et al., 1994). In brief, Nunc MaxiSorp plates were coated overnight with 50 μl of substrates, diluted in PBS at a concentration of 10 μg/ml, except for collagen which was used at 2.5 μg/ml. Plates were then washed three times and blocked with 2% BSA in PBS for 1 hr at 37°C. After washing, 50 µl heparinase III (5 mU/ml) or buffer (20 mM Tris-HCl (pH 7.5), 0.1 mg/ml BSA and 4 mM CaCl2) were added to each well and incubated for 1.5 hr. After three washing steps, 50 μl of platelet suspension modified Tyrode’s buffer, prepared as previously described (Pearce et al., 2004), at a concentration of 1 × 108/ml were added and incubated for 1 hr at 37°C. After three washing steps with PBS, 140 µl of substrate solution was added to each well and incubated on a rocker at RT for 40 min. Then, 50 µl of 3M NaOH was added and the signal was quantified 5 min later by measuring the absorbance at 405 nm and 620 nm (background). Percentage of adhesion was calculated by normalizing the measured ODs to the signal obtained by directly lysing 50 µl of platelet suspension.
 
-## Flow cytometric analysis of platelet activation
+### Flow cytometric analysis of platelet activation
 
 5 µl staining solution, containing 1.5 µg fibrinogen-Alexa488 conjugate (Invitrogen) and 1 µg of anti-TLT-1-Alexa 647 antibody (Biotechne, Abingdon, UK) and 5 µl of whole blood were provided in a well of a 96-well plate. Stimulation was started by adding 40 µl of heparin, APAC (0.05 µM final concentration) or buffer, with or without CLEC-2 antibody (3 µg/ml final concentration; Bio-Rad, Oxford, UK). The plate was incubated in the dark for the indicated time and the reaction was stopped by addition of 200 µl 1% ice-cold formalin. Samples were analyzed on a BD Accuri flow cytometer. Platelets were gated using forward and side scatter.
 
-## Preparation and culture of mouse megakaryocytes
+### Preparation and culture of mouse megakaryocytes
 
 Megakaryocytes were prepared as previously described (Dumon et al., 2006; Mazharian et al., 2011). In brief, bone marrow cells were obtained from mouse femurs and tibias by flushing, and cells expressing lineage-specific surface markers (CD16/CD32, Gr1, B220, or CD11b) were depleted using immunomagnetic beads (sheep anti-rat IgG Dynabeads, Invitrogen). The remaining population was cultured in 2.6% serum-supplemented StemPro medium with 2 mM L-glutamine, penicillin/streptomycin, and 20 ng/mL of murine stem cell factor at 37°C under 5% CO2 for 2 days, and for a further 4 days in the presence of stem cell factor and 50 ng/mL thrombopoietin (37°C, 5% CO2). Mature megakaryocytes were then enriched using a 1.5%/3% bovine serum albumin gradient under gravity (1 g) for 45 min at room temperature.
 
-## Microscopical analysis of platelet and MK adhesion
+### Microscopical analysis of platelet and MK adhesion
 
 Glass Coverslips (5 mm diameter) were incubated with 50 μl of perlecan (25 μg/ml), fibrinogen (25 μg/ml) or both overnight at 4°C. Surfaces were then blocked with denatured BSA (5 mg/ml) for 1 hr at room temperature. After washing, 50 µl heparinase III (12.5 mU/ml) or buffer were added to each well and incubated for 1.5 hr at 37°C. Platelets (2 × 107/ml, 50 µl) were transferred to the slides and incubated at 37°C for 45 min in a humid atmosphere. Mature megakaryocytes (6 × 103/ml, 100 µl) were incubated for 5 hr. Non-adherent cells were removed by gently washing wells with PBS and adherent cells were fixed with 3.7% paraformaldehyde and permeabilized with 0.2% Triton-X 100 in water. MKs were stained with tubulin-antibody for 1 hr followed by anti-mouse-Alexa-488 and rhodamin-conjugated phalloidin for 30 min, and coverslips were mounted onto microscope slides for imaging using or Antifade Mountant with DAPI (Invitrogen). Platelets were stained with phalloidin-Alexa-488 for 1 hr and coverslips were mounted using Hydromount (National Diagnostics, Nottingham, UK). Images were captured by a Zeiss Axio Observer.Z1/7 epifluorescence microscope using ZEN Software and 20x (MK) or 63x oil immersion (platelet) plan apochromat objectives.
 
@@ -275,7 +1180,7 @@ For platelets, each coverslip was imaged in three random areas. For analysis, th
 
 For MK, three tiles of 3 × 3 images were acquired per coverslip. Average surface area per cell was calculated by analyzing total surface area and number of cells per image by using ImageJ. Both, imaging and analysis were performed blinded.
 
-## Western blotting and immunoprecipitation
+### Western blotting and immunoprecipitation
 
 Washed human or mouse platelets (5 × 108/ml) in the presence of 10 µM integrilin or lotrafiban (integrin αIIbβ3 inhibitors), respectively, were incubated with the respective compound under stirring conditions (1200 rpm, 37°C) for the indicated time. Platelets were lysed by the addition an equal volume of ice cold 2 x lysis buffer and insoluble cell debris was removed by centrifugation for 10 min at 13,000 x g, at 4°C.
 
@@ -283,6 +1188,6 @@ For immunoprecipitations, whole cell lysates (WCLs) were precleared using protei
 
 WCLs were either boiled in SDS-loading buffer and analyzed by SDS-PAGE (NuPage 4–12% Bis-Tris-Gradient Gel) and traditional western blotting or, for quantitative analysis, analyzed with an automated capillary-based immunoassay platform (Wes, ProteinSimple, San Jose, USA), according to the manufacturer’s instructions. Briefly, WCLs were diluted to the required concentration with 0.1X sample buffer, then prepared by adding 5X master mix containing 200 mM dithiothreitol (DTT), 5 × sample buffer and fluorescent standards (Standard Pack 1, PS-ST01-8) and boiled for 5 min at 95°C. Samples, antibody diluent 2, primary antibodies and anti-rabbit secondary antibody, together with luminol S-peroxide mix and wash buffer, were displaced into Wes 12–230 kDa prefilled microplates (pre-filled with separation matrix 2, stacking matrix 2, split running buffer two and matrix removal buffer, SM-W004). The microplate was centrifuged for 5 min at 2500 rpm at room temperature. To start the assays, the capillary cartridge was inserted into the cartridge holder and the microplate placed on the plate holder. To operate Wes and to analyze results, Compass Software for Simple Western was used (version 3.1.7, ProteinSimple). Separation time was set to 31 min, stacking loading time to 21 s and sample loading time to 9 s. Primary antibodies were incubated for 60 min and the High Dynamic Range (HDR) profile was used for detection. For each antibody, a lysate dilution experiment was performed first to confirm the optimal dynamic range of the corresponding protein on Wes. This was followed by an antibody optimization experiment to compare a range of dilutions and to select an antibody concentration that was close to saturation level to allow a quantitative comparison of signals between samples. The optimized antibody dilutions and final lysate concentrations were as indicated in the key resources table.
 
-## Statistical analysis
+### Statistical analysis
 
 All data are presented as mean ± standard deviation (SD). Statistical significance was analyzed by one-way or two-way ANOVA, followed by the appropriate post hoc test, as indicated in the figure legend, using GraphPad Prism 6 (GraphPad Software Inc, San Diego, CA, USA).

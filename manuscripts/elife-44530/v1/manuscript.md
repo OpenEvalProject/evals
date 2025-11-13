@@ -43,7 +43,7 @@
 
 ## Abstract
 
-10.7554/eLife.44530.001 Two-dimensional (2D) human skeletal muscle fiber cultures are ill-equipped to support the contractile properties of maturing muscle fibers. This limits their application to the study of adult human neuromuscular junction (NMJ) development, a process requiring maturation of muscle fibers in the presence of motor neuron endplates. Here we describe a three-dimensional (3D) co-culture method whereby human muscle progenitors mixed with human pluripotent stem cell-derived motor neurons self-organize to form functional NMJ connections. Functional connectivity between motor neuron endplates and muscle fibers is confirmed with calcium imaging and electrophysiological recordings. Notably, we only observed epsilon acetylcholine receptor subunit protein upregulation and activity in 3D co-cultures. Further, 3D co-culture treatments with myasthenia gravis patient sera shows the ease of studying human disease with the system. Hence, this work offers a simple method to model and evaluate adult human NMJ de novo development or disease in culture.
+Two-dimensional (2D) human skeletal muscle fiber cultures are ill-equipped to support the contractile properties of maturing muscle fibers. This limits their application to the study of adult human neuromuscular junction (NMJ) development, a process requiring maturation of muscle fibers in the presence of motor neuron endplates. Here we describe a three-dimensional (3D) co-culture method whereby human muscle progenitors mixed with human pluripotent stem cell-derived motor neurons self-organize to form functional NMJ connections. Functional connectivity between motor neuron endplates and muscle fibers is confirmed with calcium imaging and electrophysiological recordings. Notably, we only observed epsilon acetylcholine receptor subunit protein upregulation and activity in 3D co-cultures. Further, 3D co-culture treatments with myasthenia gravis patient sera shows the ease of studying human disease with the system. Hence, this work offers a simple method to model and evaluate adult human NMJ de novo development or disease in culture.
 
 ## Introduction
 
@@ -55,27 +55,71 @@ Here we report a method integrating architectural cues with co-culture technique
 
 ## Results
 
-## Myogenic differentiation in 3D enhances fiber maturation and AChR clustering
+### Myogenic differentiation in 3D enhances fiber maturation and AChR clustering
 
 We performed a side-by-side comparison of human skeletal muscle fiber populations derived in standard 2D culture versus 3D culture and uncovered differences in fiber maturation and AChR clustering (Figure 1—figure supplement 1A). We established primary myogenic progenitor and fibroblast-like cell lines from human biopsy tissues (Blau and Webster, 1981) (Figure 1—figure supplement 1B), and seeded them at defined ratios either within a fibrin/Geltrex hydrogel (3D) or into 12-well tissue culture plastic dishes coated with Geltrex (2D) or a fibrinogen/Geltrex blend (Figure 1—figure supplement 1A). Muscle cell laden hydrogels were formed within a polydimethylsiloxane channel and anchored at each end of the channel to the nylon hooks of Velcro fabric (Bell et al., 1979; Madden et al., 2015; Vandenburgh et al., 1988), which act as artificial tendons and establish uniaxial tension during 3D tissue remodeling and differentiation (Figure 1—figure supplement 1C).
 
 Immunofluorescence analysis of the muscle contractile protein sarcomeric α-actinin (SAA) revealed the uniform alignment of striated muscle fibers along the tension axis in the 3D tissues (Figure 1A and Figure 1—figure supplement 1E), while 2D muscle fiber cultures were regionally aligned (Figure 1A), but globally disorganized (Figure 1—figure supplement 1D). In contrast to the muscle fibers established in 2D cultures, those derived in 3D culture progressively increased in diameter over three weeks in culture (Figure 1B) while maintaining fiber alignment and assembled contractile apparatus (Figure 1A). Furthermore, over time in 3D culture, muscle tissues upregulated expression of the fast and slow adult isoforms of myosin heavy chain (MHC), which was accompanied by a downregulation of embryonic MHC expression, suggesting a gradual sarcomere structural maturation (Figure 1C and Figure 1—figure supplement 2A–E). The absence of these trends in 2D muscle fiber culture may be explained by the inability of tissue culture plastic to support muscle fiber contraction resulting in the increased incidence of damaged fibers observed in 2D cultures (Figure 1—figure supplement 1D) and an enrichment of small, immature fibers (Figure 1A–B and Figure 1—figure supplement 2G–H).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative confocal images of muscle fibers established in 2D (top row) and 3D conditions and immunostained for sarcomeric α-actinin (SAA; red), α-bungarotoxin (BTX; green), and Hoechst 33342 (blue) after 1, 2, and 3 weeks of culture. Scale bar, 50 μm. White arrowheads indicate broken fibers. (B) Bar graph of muscle fiber diameter quantified in 2D (light blue) and 3D (blue) cultures over time. n = 9 independent samples from three muscle patient donors. A minimum of 50 myotubes per time point per patient sample were analyzed. ##p<0.01 and ###p<0.001 compared with 3D cultures at week 1. $$p<0.01 compared with 2D culture at week 1. (C) Representative western blot images of myosin heavy chain (MHC) isoforms (fast, slow, embryonic (emb), and pan (MF-20)) nicotinic AChR-β (nAChR-β), and β-tubulin in 2D compared with 3D cultures over time. (D) Representative confocal images of muscle fibers cultured in 2D or 3D for two weeks and then labeled with α-bungarotoxin (green). AChR clusters are outlined with white dashed lines. Scale bar, 25 μm. (E–G) Bar graphs indicating average (E) number of AChR clusters per fiber, (F) AChR cluster size, and (G) AChR cluster lacunarity in 2D (light blue) and 3D (blue) muscle fiber cultures at week 2. n = minimum of 9 independent samples from three muscle patient donors. A minimum of 30 microscopic images per culture condition were analyzed. In (B), (C), and (E–G) each symbol represents data from one muscle patient donor. Values in (B), (E), (F), and (G) are mean ±SEM. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic overview of human muscle cell isolation and downstream culture methods. (B) (left panel) Representative fluorescence activated cell sorted (FACS) dot plot of primary human myoblasts (CD56+) and fibroblasts (CD56—). (middle panel) Representative confocal image of a 2D muscle fiber culture established from the CD56+ population and immunostained for desmin (green) and DRAQ5 (white). (right panel) Representative confocal image of the CD56— population in 2D culture immunostained for vimentin (green) and DRAQ5 (blue). Scale bars, 100 μm middle and 200 μm bottom right. (C) (top panel) Stitched phase contrast tiled image of a representative well immediately after seeding the cell/extracellular matrix scaffold mix into the PDMS channel and (bottom panel) after two weeks of differentiation. PDMS channel is outlined with yellow dashed lines. Velcro attachments are outlined with red dotted lines. Remodeled muscle tissue is outlined with green dotted lines. Scale bar, 2 mm. (D) (left panel) 2D muscle fiber culture at two weeks of differentiation immunostained for sarcomeric α-actinin (green) and DRAQ5 (blue). Scale bar, 1 mm. (right panel) Magnified confocal image of a 2D muscle culture at two weeks of differentiation immunostained for sarcomeric α-actinin (red). White arrowheads indicate broken fibers. Scale bar, 100 μm. (E) Confocal tiled and stitched immunofluorescence image of a representative 3D skeletal muscle tissue immunostained for sarcomeric α-actinin (green) and DRAQ5 (blue). Scale bar, 1 mm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Western blot images of myosin heavy chain (MHC) isoforms (fast, slow, embryonic (emb), and pan (MF-20)), nicotinic AChR-β (nAChR-β), and β−tubulin protein expression in 2D compared with 3D cultures over time. Data obtained from cultures established from two separate muscle patient donors is shown. (B–F) Bar graphs quantifying the fold-change in MHC (B) fast, (C) slow, (D) embryonic and (E) pan isoforms, as well as (F) nAChR-β protein expression in 2D (light blue) and 3D (blue) cultures over time relative to 3D culture at week 1. n = 9 samples from three muscle patient donors. *p<0.05, ***p<0.001, and #p<0.05 compared with 3D culture at week 1. (G) Bar graph indicating average muscle fiber diameter quantified from 2D fibrinogen/Geltrex muscle fiber cultures over time. n = 7 (week 1) and n = 9 (weeks 2 and 3) samples from three muscle patient donors. A minimum of 50 muscle fibers were analyzed per time point. *p<0.05 using one-way ANOVA followed by Tukey’s multiple comparison test (H) Histogram displaying muscle fiber diameter quantified from 2D Geltrex (black bars), 2D fibrinogen/Geltrex (green bars), and 3D fibrin/Geltrex (gray bars) muscle fiber culture conditions. n = 9 samples from three muscle patient donors. A minimum of 50 muscle fibers were analyzed per culture condition at week 2. In (B–H) each symbol represents data from one muscle patient donor. Values reported in (B–H) are mean ±SEM. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative epifluorescence images of a GCaMP6 transduced 3D muscle tissue to visualize muscle fiber calcium transients at time-points before (t = 0 s) and after (t = 1, 2, and 3 s) ACh stimulation. Scale bars, 250 μm. (B) Graph quantifying a time course of GCaMP6 reporter fluorescence following ACh-induced stimulation of a representative 3D muscle tissue. (C) Bar graph showing quantification of GCaMP6 signal after 3D skeletal muscle tissue low (1 Hz) or high (20 Hz) electrical stimulation, or ACh biochemical stimulation, and relative to phosphate buffered saline treated control tissues (dotted line). Values are reported as mean ±SEM. *p<0.05, and **p<0.01. n = 3 samples from three muscle patient donors. Each symbol represents data from one muscle patient donor (D) Representative bright-field image of the sharp microelectrode recording a muscle fiber within a 3D human skeletal muscle tissue. Micropipette shadow is highlighted by yellow arrowheads and the pierced muscle fiber is outlined with white dashed lines. (E) Representative sharp microelectrode recording of a 3D muscle-alone culture showing an absence of miniature end plate potentials. (F) Representative sharp microelectrode recording of a ChR2 transduced 3D muscle. Blue light stimulation points are indicated by blue squares under the trace for the transduced muscle. (G) Representative traces of muscle cell excitability within a 3D tissue responding to a series of increasing step currents (0.8 nA - 30 nA, 400 ms). (E–G) 3D muscle tissues assessed at week 2 of culture.
+
 In support of our molecular characterization, 3D human muscle tissues were capable of generating active force in as early as 10 days of differentiation as evidenced by spontaneous twitches (Video 1), which were not observed in 2D cultures. Consistent with prior reports (Madden et al., 2015), two-week old 3D muscle tissue twitch response could be paced by low frequency electrical stimuli (1 Hz; Video 1), which converted into tetanus contractions in response to increased frequency (20 Hz; Video 1). Similarly, ACh stimulation (10 μM) produced an immediate tetanus response (Video 1) in 3D tissues suggesting an abundance of active AChRs, while the response of 2D muscle fiber cultures at this time-point was significantly less and inevitably resulted in muscle fiber damage and/or release from the culture substrate (Video 2).
+
+![Video 1.](https://cdn.elifesciences.org/articles/44530/elife-44530-video1.mp4.jpg)
+
+**Video 1.:** A series of four representative bright-field real-time videos of three-dimensional human muscle tissues after 10–12 days of culture exhibiting spontaneous contractions, or contracting in response to electrical (1 Hz, 20 Hz) or acetylcholine (10 μM) stimulation.
+
+![Video 2.](https://cdn.elifesciences.org/articles/44530/elife-44530-video2.mp4.jpg)
+
+**Video 2.:** Epifluorescence real-time video of a two-dimensional GCaMP6 transduced human muscle fiber culture contracting in response to 10 μM acetylcholine stimulation after 2 weeks of culture. Black arrow heads indicate a muscle fiber that breaks post acetylcholine stimulation.
 
 To evaluate the calcium handling capacity of 3D muscle fiber cultures, we transduced human muscle progenitor cells with lentiviral particles encoding GCaMP6 (Chen et al., 2013), a sensitive calcium indicator protein, driven by the MHCK7 (Madden et al., 2015) promoter, a muscle specific gene. Muscle fibers in 3D tissues generated strong collective calcium transient in response to electrical stimulation and immediately following exposure to ACh (Figure 1—figure supplement 3A–C and Video 3).
 
+![Video 3.](https://cdn.elifesciences.org/articles/44530/elife-44530-video3.mp4.jpg)
+
+**Video 3.:** A series of two representative epifluorescence time-lapse videos of three-dimensional human skeletal muscle tissues after 10–12 days of culture stimulated with acetylcholine (10 μM) and then with L-glutamate (50 μM). Muscle fiber calcium transients are visualized in green by following a GCaMP6 calcium reporter that was transduced into the human muscle cells.
+
 To evaluate the electrophysiological characteristics of single muscle fibers in 3D cultures, muscle progenitor cells were stably transduced with a light-gated ion channel, channelrhodopsin-2 (ChR2), driven by an EF1α promoter (Zhang et al., 2007). 3D muscle tissues generated using optogenetically-responsive muscle progenitor cells contracted in response to light stimulation on the second week of the culture (Video 4). Single muscle fiber membrane potentials were recorded in these tissues using sharp microelectrode recording (Figure 1—figure supplement 3D). As expected, recordings of 3D muscle prior to light stimulation revealed little electrical activity (Figure 1—figure supplement 3E), while light activation generated a clear depolarization of the membrane potential (Figure 1—figure supplement 3F). We also took a more traditional approach using single, sharp electrode electrophysiology to measure membrane potential and test excitability. Passing depolarizing current led to regenerative potentials that become faster with increasing depolarization (Figure 1—figure supplement 3G).
+
+![Video 4.](https://cdn.elifesciences.org/articles/44530/elife-44530-video4.mp4.jpg)
+
+**Video 4.:** A real-time bright field video of a 3D human skeletal muscle tissue transduced with ChR2 (H134R) and stimulated by blue light. Red circles indicate the time and period of light pulses.
 
 Finally, we compared AChR clustering, an integral step in NMJ development, in 2 week differentiated 2D and 3D muscle fiber cultures (). We observed significantly higher expression of the nAChR-β protein in 3D compared to 2D cultures at 2 weeks of fiber differentiation (Figure 1C and Figure 1—figure supplement 2A and 2F). Further, our analyses revealed a greater number of AChR clusters per muscle fiber established in 3D compared to 2D culture (Figure 1E). Indeed, we noted that at 2 weeks of culture, the majority of muscle fibers in 2D cultures lacked AChR clusters (Figure 1A and E). Interestingly, although average AChR cluster area was not significantly different (Figure 1F), we observed a high frequency of branched and perforated AChR clusters in our 3D muscle cultures, whereas oval shaped AChR clusters dominated on muscle fibers cultured in 2D conditions (Figure 1D). To quantify this observation, we assessed the lacunarity of AChR clusters formed on muscle fibers cultured in 2D and 3D conditions. Lacunarity is a measure of shape morphological heterogeneity and ‘gappiness’. Patterns with high lacunarity contain gaps or ‘lacunas’, whilst lower lacunarity implies pattern homogeneity or rotational invariance (Karperien et al., 2013; Smith et al., 1996). Lacunarity calculated from box counting validated our qualitative observations by indicating a significantly higher average lacunarity of AChR clusters formed in 3D cultures compared to 2D cultures (Figure 1G).
 
 Overall our comparison of muscle fibers established in 2D and 3D formats suggests that the 3D culture method better supports rapid contractile apparatus maturation and function, as well as AChR clustering and morphological maturation.
 
-## 3d human neuromuscular co-cultures recapitulate early NMJ synaptogenesis
+### 3d human neuromuscular co-cultures recapitulate early NMJ synaptogenesis
 
 Since muscle fiber maturation is a prerequisite for NMJ development (Fox, 2009), we evaluated the hypothesis that the 3D skeletal muscle tissue platform would be well suited for human PSC-derived MN incorporation to model human NMJ synaptogenesis. We utilized MN clusters (Day 20) differentiated from WA09 human embryonic stem cell – derived OLIG2+ progenitor cells (Figure 2—figure supplement 1A–B) (Lippmann et al., 2015). Resulting MN clusters were enriched (>85%) for cells expressing the HB9 and ISL1 transcription factors as well as the mature neurofilament marker SMI32 (Figure 2—figure supplement 1C–D). MN clusters were collected prior to muscle tissue preparation, mixed with the muscle progenitor cells in the hydrogel mix, and seeded together into the PDMS channels. The 3D skeletal muscle tissue media was optimized to support co-culture health by supplementation with brain derived and glial cell line derived neurotrophic factors (BDNF, GDNF) to support MN viability.
 
 Co-cultures examined after 10 days in differentiation media showed close contact between the MN clusters and the muscle tissue by phase-contrast microscopy (Figure 2A). Immunostaining co-cultures on the second week of culture for the motor neuron marker SMI-32, muscle fiber marker sarcomeric α-actinin, and α-bungarotoxin (to visualize AChRs) revealed that the co-cultures self-organized such that muscle progenitor cells fused to form multinucleated, aligned and striated muscle fibers and the MN clusters were positioned at the periphery of muscle bundles (Figure 2B). Importantly, the MNs were capable of regrowing neurites that were found in contact with α-bungarotoxin positive AChR clusters on muscle fibers (Figure 2B–C). In vivo studies by others found that postsynaptic AChR aggregation on muscle fibers is supported by agrin secretion from MN axon terminals (Gautam et al., 1996). We confirmed agrin expression in our PSC-derived MN cultures (Figure 2—figure supplement 1E). Furthermore, western blot analysis of neuromuscular co-cultures confirmed expression of MuSK (Figure 2—figure supplement 2A) and rapsyn (Figure 2—figure supplement 2B) proteins, two decisive synaptic proteins for mediating agrin-induced synaptogenesis (Glass and Yancopoulos, 1997). We did not observe any examples of bungarotoxin-labeled AChR clusters co-localizing with either rapsyn or MuSK proteins in our 2D muscle-alone or neuromuscular co-cultures (Figure 2—figure supplement 2C). In our study we observed a single incidence of MuSK protein co-localization with an AChR cluster in our 3D muscle-alone cultures (Figure 2—figure supplement 2D) and no examples of rapsyn co-localization with AChR clusters. By comparison, the prevalence of rapsyn (Figure 2D) and MuSK (Figure 2—figure supplement 2E) co-localization with bungaroxin-labeled AChR clusters was substantially higher in 3D neuromuscular co-cultures, but was not observed on all fibers.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig2-v1.jpg)
+
+**Figure 2.:** (A) Stitched phase contrast image of a representative 3D skeletal muscle-motor neuron (MN) co-culture at two weeks of culture. Neuromuscular tissue outlined with red dashed line in left panel. Region outlined in green box is magnified in the image to the immediate right. Red dashed lines in right panel outline motor neuron clusters. Scale bars, 2 mm (left panel) and 200 μm (right panel). (B) Representative confocal image of a two-week old neuromuscular co-culture immunostained for sarcomeric α-actinin (SAA; green), α-bungarotoxin (BTX; magenta), and neurofilament heavy SMI-32 (red). AChR clusters co-localized with neurites are outlined with yellow boxes. Scale bar, 200 μm. (C) Representative confocal image indicating co-localization of a SMI-32 (red) labeled neurite terminal and a BTX (white) labeled AChR cluster on a striated muscle fiber as seen by SAA (green) staining. Scale bar, 50 μm. (D) Representative confocal image of a neuromuscular co-culture immunostained on Day 10 of differentiation for Rapsyn (red), bungarotoxin (BTX, white), and counter stained with Hoechst 33342 to visualize the nuclei (blue). Motor neurons (green) were derived from GFP expressing human iPSCs. Scale bar 25 μm. (E,I) Representative confocal images of AChR clusters formed on muscle fibers cultured in 3D (E) with (+) or without (-) motor neurons (MN) or (I) supplemented with agrin and labeled with α-bungarotoxin after two weeks of culture. Scale bars, 25 μm (E) and 50 μm (I). AChR clusters are outlined with white dashed lines in (E). (F–H, J–K) Bar graphs indicating average (F,J) number of AChR clusters per fiber, (G,K) AChR cluster size, and (H) AChR cluster lacunarity in 3D cultures (F–H) with (+; purple) or without (-; blue) MN or (J–K) with or without agrin supplementation at week 2. In (F–H), values are normalized to 3D muscle cultures without MNs. In (J–K) values are normalized to untreated control. (L) Representative confocal image of a neuromuscular co-culture immunostained for laminin-β2 (red), bungarotoxin (BTX, white), and SMI-32 (green). Scale bars, 10 μm. For (F–H) and (J–K), n = minimum of 9 independent samples from three muscle patient donors. For agrin treated samples in (J–K), 6 samples from three muscle donors were analyzed. A minimum of 30 (F–H) or 6 (J–K) microscopic images per culture condition were analyzed. In (F–H) and (J–K) each symbol represents data from one muscle patient donor. Values in (F–H) and (J–K) are mean ±SEM. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic diagram of the protocol and timeline for differentiating embryonic stem cells (ESCs) to a post-mitotic motor neuron (MN) fate. (B) Representative bright field images of the OLIG2+ (left panel) progenitors after 6 days of differentiation and post-mitotic MN clusters (right panel) after 20 days of differentiation. White arrows point to motor neuron clusters. Scale bar, 500 μm. (C–D) Merged (left panels) and split (right panels) representative confocal images of a day 20 MN cluster immunostained for (C) the ISL1 (red) and HB9 (green) transcription factors and Hoechst 33342 (blue) or for (D) neurofilament heavy SMI-32 (green) and Hoechst 33342 (blue). Scale bars, 100 μm. (E) PCR agarose gel images depicting agrin (AGRN) and GAPDH gene expression bands for three-independent (N1, N2, and N3) ESC-derived MN differentiations.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) Western blot images (top) and corresponding bar graphs (bottom) showing quantification of (A) muscle specific kinase (MuSK) and (B) rapsyn protein expression in 3D muscle (-MN) and neuromuscular co-cultures (+MN) at week 2 of culture. n = 9 samples from three muscle patient donors. (C) Representative confocal images of 2D neuromuscular co-cultures immunostained for MuSK (red, top panels) and rapsyn (red, bottom panels) and α-bungarotoxin (BTX, white). Nuclei are counter stained with Hoechst 33342 (blue) and motor neurons are (green). Scale bar 100 μm. (D) Representative confocal image of a 3D muscle culture immunostained on Day 10 differentiation for MuSK (red), bungarotoxin (BTX, white), and counter stained with Hoechst 33342 to visualize the nuclei (blue). Scale bar 25 μm. (E) Representative confocal image of a neuromuscular co-culture immunostained on Day 10 differentiation for MuSK (red), bungarotoxin (BTX, white). Nuclei are counter stained with Hoechst 33342 to visualize the nuclei (blue) and motor neurons are (green). Yellow arrows indicate the location of the AChR clusters co-localizing with the MuSK protein at the formed NMJ. Scale bar 25 μm. In (C,E), motor neurons (green) were derived from GFP expressing human iPSCs. (F) Representative confocal image (left) and corresponding zoom in (right, yellow outlined region and image) of a 2D neuromuscular co-culture immunostained for dystrophin (dys, green), neurofilament heavy SMI-32 (SMI-32, red), α-bungarotoxin (BTX, white), and Hoechst 33342 (Nuclei, blue) at week 2 of culture. Scale bar, 100 μm. Inset scale bar, 50 μm. (G) Representative western blot image (left) and corresponding bar graph (right) showing quantification of laminin-β2 in 3D muscle-alone and neuromuscular co-cultures at week 2 of culture. n = 9 samples from three muscle patient donors. In (A–B) and (G) each symbol represents data from one muscle patient donor. Values in (A), (B) and (G) are mean ±SEM and were deemed non-significant by statistical test.
 
 Consistently, we observed more and larger α-bungarotoxin positive AChR clusters in 3D neuromuscular co-cultures as compared to 3D muscle-alone cultures (Figure 2E–G), particularly at sites where MN neurites contacted muscle fibers (Figure 2B, yellow boxes). In addition, we observed a higher frequency of perforated and branched AChR clusters in our 3D co-cultures as evidenced by the higher lacunarity of AChR clusters formed in co-cultures (Figure 2H) supporting a role for motor axon derived factors in post synaptic differentiation of the NMJ. As expected, by supplementing 3D human muscle tissue media with neural agrin (50 ng/mL) we phenocopied these co-culture results (Figure 2I–K). An evaluation of 2D neuromuscular co-cultures at the same time-point revealed a local alignment of the neurites and muscle fibers (Figure 2—figure supplement 2C and F, right panel), and a qualitative improvement in MN health and muscle fiber number and integrity (data not shown). However, only rare muscle fibers possessed clustered AChRs and we could not detect co-localization of the AChRs with SMI-32 stained neurites at this time point (Figure 2—figure supplement 2F).
 
@@ -83,13 +127,41 @@ In further support of 3D muscle fiber synaptogenic maturation, the LAMB2 gene en
 
 Our characterizations demonstrate that a 3D neuromuscular co-culture system recapitulates many aspects of early synaptogenesis that were first identified with in vivo studies.
 
-## 3d human neuromuscular co-cultures are functionally innervated
+### 3d human neuromuscular co-cultures are functionally innervated
 
 We next sought to evaluate NMJ functionality in our neuromuscular co-cultures. With a combination of calcium handling analyses and electrophysiological recordings we report that 3D human neuromuscular co-cultures are functionally innervated in as early as two weeks. Using the fluorescent styryl dye FM 1–43 (Gaffield and Betz, 2006) and confocal microscopy we performed exocytosis assays on differentiated MNs (Day 20) and confirmed that human PSC-derived MNs exocytose in response to potassium chloride (KCl, 60 mM) and the excitatory neurotransmitter, L-glutamate (50 μM) stimuli (Figure 3—figure supplement 1A–D and Video 5). The latter is particularly important, since the amino acid glutamate is a neurotransmitter that specifically stimulates MN cells but not muscle fibers (50 μM; Video 3).
 
+![Video 5.](https://cdn.elifesciences.org/articles/44530/elife-44530-video5.mp4.jpg)
+
+**Video 5.:** Representative time-lapse microscope videos of FM 1–43 loaded PSC-derived motor neurons response to various stimuli (KCl (60 mM), HBSS and L-Glutamate (50 µM)). Videos illustrate loss of fluorescent intensity from the neurites post glutamate and potassium chloride stimuli indicative of exocytosis. White lines outline the neurites in HBSS and L-Glutamate stimulation videos.
+
 Next, we stimulated neuromuscular co-cultures that were generated using GCaMP6 transduced muscle progenitor cells with a 50 μM glutamate solution and observed calcium transients (Figure 3A–B and Video 6) and synchronous tissue contractions (Figure 3C and Video 7) in the muscle fibers in close proximity to the MN clusters in as early as 14 days of co-culture, indicating the formation of functional connectivity between MN endplates and muscle fibers. Stimulating the same tissue with ACh, following the glutamate stimulation, provided a rapid way to stimulate and visualize all muscle fibers in the tissue. Our analysis of this serial stimulation data revealed that many, but not all the fibers were functionally innervated (Figure 3A–B and Video 6). As expected, direct stimulation of AChRs using ACh led to higher co-culture contractile force generation as quantified by tissue movement (Figure 3C). To further validate that the presynaptic activation of motor neurons (i.e. glutamate stimulation) caused the observed changes in muscle fiber calcium transients and muscle fiber contractions, we studied the effect of BOTOX (BOT, presynaptic blocker) and d-tubocurarine (DTC, post synaptic blocker) treatments in our system. Our studies revealed a significant decrease in calcium transient activity and an absence of tissue contraction in response to glutamate stimulation if neuromuscular co-cultures were pre-treated with BOTOX or d-tubocurarine (Figure 3D and Video 7) doses reported by others to fully block activity (Ko et al., 2019; Madden et al., 2015).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig3-v1.jpg)
+
+**Figure 3.:** (A) Phase contrast (far left panel) and GCaMP6 epifluorescence images (right panels) of a 3D neuromuscular co-culture after treatment with phosphate buffered saline (middle left panel), glutamate (middle right panel), or ACh (far right panel). Motor neuron clusters are outlined with white dashed lines. Scale bar, 250 μm. (B) Bar graph indicating quantification of fluorescence signal from neuromuscular co-cultures following glutamate (Glut) and Acetylcholine (ACh) stimulations relative to treatment with phosphate buffered saline (Ctrl). n = 9 neuromuscular co-culture samples from three separate muscle patient donors. #p<0.05 and ###p<0.001 compared with saline stimulation (Ctrl). (C) Quantification of neuromuscular co-culture tissue contraction in response to ACh (10 μM) and glutamate (50 μM). (D) Bar graph quantification of the percent tissue area occupied by glutamate (glut, 50 μM) responsive (GCaMP6+) fibers in saline (Ctrl), BOTOX (BOT, 1 U/ml), and d-tubocurarine (DTC, 25 μM) treated 3D neuromuscular co-cultures. #p<0.05 and ###p<0.001 compared with saline treated sample. In (C, D) n = 8 independent neuromuscular samples from three separate muscle patient donors. In (B–D) each symbol represents data from one muscle patient donor. Values in (B–D) are mean ±SEM. ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Representative epifluorescence still images and (C–D) corresponding graphs quantifying a time course of fluorescence intensity during a potassium chloride (A and C), glutamate (B and D), or HBSS saline solution (A and D) stimulation of differentiated motor neuron (MN) cultures loaded with styryl dye FM 1–43 (green). Scale bars 50 μm for KCL panels and 25 μm for HBSS and glutamate panels.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative phase contrast (top left) and GCaMP6 epifluorescence images of a 2D neuromuscular co-culture after treatment with phosphate buffered saline (top right, pre-stimulation), glutamate (bottom left), and ACh (bottom right). Motor neuron cluster location is outlined with white dashed lines. Scale bars, 250 μm. (B) Histogram indicating the average number of glutamate responsive fibers (y-axis) at each given distance from the motor neuron cluster (x-axis) at two weeks of co-culture. n = 9 samples from three muscle patient donors. A minimum of 50 GCaMP+ muscle fibers per co-culture were analyzed in each experiment. Statistical analysis was performed using one-way ANOVA followed by multiple comparisons to compare differences between groups using Tukey multiple comparisons test. (*) indicates statistical differences relative to the first column (i.e. 0–100 μm distance). **p<0.01, and ***p<0.001. Values shown are mean ±SEM. (C) Representative traces of sharp microelectrode recordings showing endogenous EPPs recorded in single fibers recorded in three separate neuromuscular co-cultures before and after addition of glutamate (arrow; 50 μM) to the bath media. (D) Line graph indicating the frequency of endogenous EPPs recorded in 3D neuromuscular co-cultures in response to increasing glutamate concentration. (E) Line graph indicating the amplitude of endogenous EPPs recorded in 3D neuromuscular co-cultures in response to increasing glutamate concentration. Each line in D and E corresponds to data obtained from a co-culture constructed using myoblasts from a separate muscle donor (Donor 1–3), where each symbol represents data from one muscle patient donor. (F) Representative action potential-like events recorded from a 3D neuromuscular co-culture following glutamate stimulation.
+
+![Video 6.](https://cdn.elifesciences.org/articles/44530/elife-44530-video6.mp4.jpg)
+
+**Video 6.:** A representative epifluorescence time-lapse video in which GCaMP6 transduced muscle cells co-cultured with pluripotent stem cell-derived motor neurons for 14 days in three-dimensions are first treated with HBSS saline solution, followed by L-glutamate (50 μM), and then acetylcholine (10 μM). White dashed lines outline the muscle tissue and yellow dotted circles outline motor neuron clusters.
+
+![Video 7.](https://cdn.elifesciences.org/articles/44530/elife-44530-video7.mp4.jpg)
+
+**Video 7.:** A representative epifluorescence time-lapse video in which GCaMP6 transduced muscle cells co-cultured with GFP-expressing induced pluripotent stem cell-derived motor neurons in three-dimensions demonstrate synchronous contraction in response to treatment with L-glutamate (50 μM) at Day 14 of culture. BOTOX (1 U/ml) and d-tubocurarine (25 μM) treatments blocked the glutamate induced muscle fiber contractions. White circles outline the location of motor neuron clusters.
+
 In contrast, and as expected, we observed very few functional connections when evaluating 2D neuromuscular co-cultures matured for 2 weeks and then treated with glutamate (Figure 3—figure supplement 2A and Video 8). Indeed, a prior report of 2D human neuromuscular co-cultures performed functional assays only after 60 days of culture (Steinbeck et al., 2016). To confirm that the muscle fibers possessed functional AChR channels, despite limited innervation at this time point, the 2D co-cultures were stimulated with ACh (100 μM). Calcium transients visualized by tracking GCaMP signal indicated the presence of ACh responsive muscle fibers in close proximity to the MN cluster (Figure 3—figure supplement 2A and Video 8).
+
+![Video 8.](https://cdn.elifesciences.org/articles/44530/elife-44530-video8.mp4.jpg)
+
+**Video 8.:** A representative epifluorescence time-lapse video in which GCaMP6 transduced muscle cells co-cultured with pluripotent stem cell-derived motor neurons for two-weeks in 2D culture are first treated with L-glutamate (50 μM) on Day 14. On Day 15 the co-culture is pre-treated with Waglerin-1 (WTX-1) and then stimulated with L-glutamate, followed by acetylcholine (10 μM). Muscle fiber calcium transients are visualized in green by following the GCaMP6 calcium reporter.
 
 Next, to determine the maximum length of the functional connectivity between the MN cluster and the muscle fibers in 3D cultures, we generated neuromuscular tissues using GCaMP6 transduced muscle progenitor cells and a single MN cluster. On the second week of co-culture, calcium transients arising from the 3D neuromuscular tissues were recorded during glutamate (50 μM) stimulation. Analysis of pre- and post-stimulation videos, to identify glutamate responsive fibers and substract spontaneously active fibers, indicated an average maximum functional connectivity length of 1042.7 ± 104.5 μm at this time-point. As expected, the number of innervated fibers decreased as the distance from the MN cluster increased (Figure 3—figure supplement 2B).
 
@@ -97,19 +169,74 @@ Finally, we performed electrophysiological recording to directly address the fun
 
 Together, these studies indicate that 3D neuromuscular co-cultures support efficient functional innervation that occurs faster than previously reported for 2D neuromuscular co-cultures (Steinbeck et al., 2016).
 
-## 3d human neuromuscular co-cultures to model adult NMJ development and disease
+### 3d human neuromuscular co-cultures to model adult NMJ development and disease
 
 Next, given the high degree of innervation achieved in our neuromuscular co-cultures, we hypothesized that the 3D model might be capable of supporting the gamma (embryonic) to epsilon (adult)-subunit switch that was not observed in 2D human neuromuscular co-cultures (Steinbeck et al., 2016). Selective transcription of the AChR subunits occurs during different developmental stages (Martinou et al., 1991) and neural derived glycoprotein neuregulin-1 (NRG1), a motor neuron-derived factor, is thought to stimulate expression of the epsilon subunit of the AChR gene (CHNRE), which encodes an adult muscle AChR subunit (Jo et al., 1995; Falls et al., 1993). Using western blot experiments, we confirmed the expression of NRG1-β1 in our PSC-derived MNs (Figure 4—figure supplement 1A). Next, we quantified CHRNE expression in our 2D and 3D muscle-alone cultures and neuromuscular co-cultures. We observed a significant increase in the expression of the CHRNE gene in co-cultures compared to muscle-alone cultures, in both 2D and 3D, after two weeks of culture (Figure 4—figure supplement 1B), suggesting involvement of MN-derived trophic factors in CHRNE gene expression. To test whether the increase can be associated with NRG1-β1-mediated induction of the CHRNE gene, we supplemented our 2D and 3D muscle-alone cultures with recombinant NRG1- β1 (5 nM) and detected a significant increase in CHRNE expression in the supplemented muscle fiber cultures (Figure 4—figure supplement 1B). Treating 3D muscle-alone cultures with motor neuron-derived conditioned media did not induce epsilon subunit gene expression above untreated 3D muscle alone cultures (CHRNE 0.5 ± 0.4% of GAPDH expression), suggesting that MN axon contact with muscle fibers may be necessary to locally deliver concentrated neurotrophic factors and modulate epsilon gene expression in muscle fibers. Further, given the limited innervation observed in 2D co-cultures at this time-point (Figure 3—figure supplement 2A and Video 8), we speculate that an NMJ-independent mechanism of localized neurotrophic factor delivery contributes to CHRNE gene expression in muscle cells.
 
 We next evaluated AChR epsilon expression at the protein level and found that it was upregulated in 3D co-cultures, but not in 2D co-cultures (Figure 4A–B). The upregulation of AChR epsilon protein expression in 3D co-cultures was accompanied by a significant increase in AChR beta and no change in the AChR gamma subunit (Figure 4A–B), in support of studies concluding that gamma subunit transcription and translation does not appear to influence the onset or magnitude of epsilon expression (Witzemann et al., 1996; Yampolsky et al., 2008), and hinting that some embryonic AChRs may remain. MN-dependent changes in AChR subunit protein levels (beta, gamma, and epsilon) were not observed in 2D co-cultures (Figure 4A). These observations support the notion that AChR epsilon protein stability is influenced by the degree of muscle fiber and NMJ activity (Caroni et al., 1993; Missias et al., 1996; Witzemann et al., 2013; Xu and Salpeter, 1997; Yampolsky et al., 2008).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative western blot images of nicotinic acetylcholine receptor subunit epsilon (nAChR-ε), gamma (nAChR-γ), and beta (nAChR-β) proteins in 2D and 3D muscle-alone (-MN) and neuromuscular co-cultures (+MN) at two weeks of culture. (B) Bar graph quantification of nACHR subunit ε, γ, and β protein expression in 3D muscle (blue) and 3D neuromuscular (purple) cultures. Values are normalized to 3D muscle cultures. (C) (left panel) Representative epifluorescence images of GCAMP6 signals in response to glutamate (glut) stimulation before (top panel) and after (bottom panel) 3D neuromuscular co-culture treatment with Waglerin 1 (WTX-1). Yellow arrowheads point out fibers with dampened GCAMP6 fluorescence signal following WTX-1 treatment. White arrowheads indicate fibers that did not dampen calcium handling after WTX-1 treatment. Scale bar, 50 μm. (right panel) Bar graph indicating the percentage of 3D neuromuscular co-culture tissue area occupied by glutamate responsive fibers (GCaMP6+) before (-) and after (+) WTX (1 μM) treatment. (D) Bar graph quantifying glutamate-induced GCAMP6 signals from individual fibers before (-) and after (+) WTX-1 treatment. In (C–D), data is normalized to (-) WTX condition. For (B–D), n = 9 independent muscle or neuromuscular samples from three muscle patient donors. A minimum of 50 fibers were analyzed for data presented in (D). (E) Representative confocal images of a 3D muscle culture co-treated with Myasthenia gravis (MG) patient IgG and human complement and then immunostained for human complement component C3c (red, top) and α-bungarotoxin (BTX, green, middle). Bottom panel is a merged image of the top and middle panels. Scale bars, 10 μm. (F) Representative epifluorescence images of GCaMP6 signals from a glutamate stimulated 3D neuromuscular co-culture following a 72 hr treatment with 300 nM of healthy (top panel) or MG (bottom panel) patient IgG and human complement. Scale bars, 100 μm. (G) Bar graph indicating the percent tissue area occupied by glutamate (glut, 50 μM) responsive (GCaMP6+) fibers in healthy and MG patient IgG treated 3D neuromuscular co-cultures. Data normalized to the total area of ACh responsive (GCaMP6+) tissue in each co-culture. n = 4 independent neuromuscular tissues treated with healthy IgG and three neuromuscular tissues each treated with serum IgG from one of three separate MG patient donors. In (B–D) and (G) each symbol represents data from one patient donor. Values in (B–D) and (G) are mean ±SEM. *p<0.05 ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44530/elife-44530-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blot images of neuregulin 1-β1 (NRG1- β1; top) and β-actin (bottom) protein expression in three-independent ESC-derived MN cultures (N1 – N3). (B) Bar graph quantifying qRT-PCR results for epsilon subunit of AChR (CHRNE) gene expression in 2D (light blue) and 3D (blue bars) muscle alone, NRG1- β1 treated muscle cultures, and neuromuscular co-cultures. N = 3 muscle patient donors for data presented in (B). In (B) each symbol represents data from one muscle patient donor. Values in (B) are mean ±SEM. *p<0.05 and **p<0.01 compared to 3D muscle alone, and ##p<0.01 compared to 2D muscle culture. (C) Representative GCaMP6 epifluorescence images of 3D neuromuscular co-cultures pre-treated for 3 days with healthy (top) or myasthenia gravis (MG, bottom) patient IgG, together with human complement, and then stimulated with ACh (100 μM). Scale bars, 250 μm. (D) Bar graph indicating the percent total 3D tissue area occupied by muscle fibers responding to acetylcholine (ACh) stimulation in healthy and MG patient IgG treated neuromuscular co-cultures. n = 4 neuromuscular tissues treated with healthy IgG and three neuromuscular tissues each treated with serum IgG from one of three separate MG patient donors. Values in (D) are mean ±SEM. ***p<0.001.
+
 We then sought to determine if the 3D human neuromuscular co-culture system was suitable for modeling congenital myasthenic syndromes caused by mutations in CHRNE by blocking the AChR-epsilon subunit using Waglerin-1 (WTX); a peptide that selectively binds and blocks the epsilon subunit of the muscle AChR (McArdle et al., 1999). The AChR channel contains two binding sites for ACh, and one of those sites sits between the epsilon and a beta subunit in the adult AChR. Thus, if the epsilon subunit is functionally integrated into the AChR in neuromuscular co-cultures, then WTX treatment is expected to dampen calcium transients following glutamate stimulation by decreasing the statistical likelihood that the AChR channel will open (Jha and Auerbach, 2010; Ohno et al., 1996). In these experiments, 3D neuromuscular tissues were generated using GCaMP6 transduced muscle progenitor cells and each tissue was stimulated with glutamate twice: pre- and post WTX treatment (1 μM), with a 24 hr recovery time allocated between each stimulation. We recorded videos during glutamate stimulation and then quantified the maximal tissue area containing glutamate responsive fibers by analyzing the GCaMP6 fluorescence signal in the same tissue pre- and post-WTX treatment at defined regions of interests (Figure 4C and Video 9). Consistently, we observed a 46.47 ± 15% (N = 3; p<0.05) decrease in glutamate responsive tissue area following glutamate stimulation in WTX pre-treated neuromuscular tissues (Figure 4C). Similar results were obtained by analyzing calcium transients in individual fibers pre- and post WTX treatment in response to glutamate stimulation (Figure 4D; 55.8 ± 1.8% decrease). This analysis also revealed a subset of WTX-treatment refractory single fibers (Figure 4C, white arrowheads), indicating that not all AChRs in the 3D neuromuscular co-culture undergo the developmental switch by this time point. We performed similar experiments on 2D neuromuscular co-cultures (Video 8), and 3D muscle-alone cultures (Video 10), but did not observe calcium transient changes. Importantly, 3D neuromuscular tissue GCaMP signal was not dampened by serial glutamate stimulation (see methods) excluding the possibility that GCaMP dampening was the result of glutamate neurotoxicity.
+
+![Video 9.](https://cdn.elifesciences.org/articles/44530/elife-44530-video9.mp4.jpg)
+
+**Video 9.:** A representative epifluorescence time-lapse video in which GCaMP6 transduced muscle cells co-cultured with pluripotent stem cell-derived motor neurons for two-weeks in 3D culture are treated with L-glutamate (50 μM) on Day 14, and then with Waglerin-1 (WTX) followed by L-glutamate (50 μM) on Day 15. Muscle fiber calcium transients are visualized in green by following the GCaMP6 calcium reporter. A yellow dotted line outlines the location of the motor neuron cluster.
+
+![Video 10.](https://cdn.elifesciences.org/articles/44530/elife-44530-video10.mp4.jpg)
+
+**Video 10.:** A representative epifluorescence time-lapse video in which GCaMP6 transduced muscle cells cultured two-weeks in 3D culture are first treated with ACh (10 μM) on Day 14, and then pre-treated with Waglerin-1 (WTX, 1 μM) followed by another ACh (10 μM) stimulation. Muscle fiber calcium transients are visualized in green by following the GCaMP6 calcium reporter.
 
 Collectively, this data suggests that the 3D neuromuscular co-culture platform allows for rapid and easy modeling and study of diseases impacting the adult human NMJ.
 
-## 3d human neuromuscular co-cultures to model myasthenia gravis
+### 3d human neuromuscular co-cultures to model myasthenia gravis
 
 To demonstrate the tractability and robustness of the 3D neuromuscular co-culture system to study human disease, we treated co-culture tissues with IgG isolated from three patients afflicted with AChR-targeted myasthenia gravis (Table 1) to model autoimmune myasthenia gravis. Myasthenia gravis (MG) is an autoimmune disease manifesting as muscle weakness caused by the production of autoantibodies that alter, block, or destroy NMJ receptors required for signal transmission. IgG and complement deposit at the NMJ eliciting inflammation and subsequent destruction of AChRs on the postsynaptic NMJ membrane (Engel et al., 1977). Therefore, we treated our neuromuscular tissues with IgG (300 nM) isolated from healthy or MG patients together with human serum, which contains complement. Localized deposition of complement on BTX stained AChRs was confirmed by staining for the complement C3c protein one-day after co-treating muscle tissues with MG IgG and active human complement (Figure 4E). We recorded neuromuscular co-culture GCaMP signals arising from L-glutamate (50 μM) stimulation after a 3 day incubation with healthy or MG IgG (Figure 4F), to visualize NMJ activity. We then stimulated the co-cultures with ACh to quantify the total area occupied by muscle fibers. Our analysis revealed a clear decrease in the area of stimuli responsive muscle fibers (Figure 4G and Videos 11–12) and a decline in the area of the tissue responsive to ACh stimulation (Figure 4—figure supplement 1C–D and Videos 11–12) when tissues were treated with MG compared to healthy patient IgG.
+
+**Table 1.**
+ Myasthenia Gravis patient information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient ID</th>
+      <th>Sex</th>
+      <th>Anti-AChR titer (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MG#1</td>
+      <td>Male</td>
+      <td>&gt;10</td>
+    </tr>
+    <tr>
+      <td>MG#2</td>
+      <td>Female</td>
+      <td>8.6</td>
+    </tr>
+    <tr>
+      <td>MG#3</td>
+      <td>Female</td>
+      <td>&gt;10</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 11.](https://cdn.elifesciences.org/articles/44530/elife-44530-video11.mp4.jpg)
+
+**Video 11.:** A representative epifluorescence time-lapse video in which GCaMP6 transduced muscle cells co-cultured with pluripotent stem cell-derived motor neurons for 14 days in three-dimensions are first stimulated with L-glutamate (50 μM) to assess neuromuscular junction transmission, and then with acetylcholine (100 μM) to visualize all fibers in the culture. These cultures were treated for 3 days (Day 11 to Day 14) with Myasthenia gravis patient IgG (300 nM) and 2% human serum. A yellow dotted line outlines the location of the motor neuron cluster.
+
+![Video 12.](https://cdn.elifesciences.org/articles/44530/elife-44530-video12.mp4.jpg)
+
+**Video 12.:** A representative epifluorescence time-lapse video in which GCaMP6 transduced muscle cells co-cultured with pluripotent stem cell-derived motor neurons for 14 days in three-dimensions are stimulated first with L-glutamate (50 μM) to assess neuromuscular junction transmission, and then with acetylcholine (100 μM) to visualize all fibers in the culture. These cultures were treated for 3 days (Day 11 to Day 14) with healthy patient IgG (300 nM) and 2% human serum. A yellow dotted line outlines the location of the motor neuron cluster.
 
 This study demonstrates the simplicity of implementing the 3D neuromuscular co-culture system to the application of modeling a human NMJ disorder in culture.
 
@@ -133,21 +260,261 @@ In summary, this approach to model the adult human NMJ in a dish provides a vers
 
 ## Materials and methods
 
-## Human primary myoblast derivation and propagation
+### Human primary myoblast derivation and propagation
 
 Small skeletal muscle samples (~1 cm3) were obtained from the multifidus muscle of patients undergoing lumbar spine surgery. Primary myoblast and fibroblast-like cell lines were established and maintained as previously described (Blau and Webster, 1981). Briefly, human skeletal muscle samples were minced and then dissociated into a single cell slurry with clostridium histolyticum collagenase (Sigma, 630 U/mL) and dispase (Roche, 0.03 U/mL) in Dulbecco’s Modified Eagle’s medium (DMEM; Gibco). The cell suspension was passed multiple times through a 20 G needle to facilitate the release of the mononucleated cell population and subsequently depleted of red blood cells with a brief incubation in red blood cell lysis buffer (Table 2). The resulting cell suspension containing a mixed population of myoblasts and fibroblast-like cells was plated in a collagen-coated tissue culture dish containing myoblast growth medium: F-10 media (Life Technologies), 20% fetal bovine serum (Gibco), 5 ng/mL basic fibroblast growth factor (bFGF; ImmunoTools) and 1% penicillin-streptomycin (Life Technologies). After one passage, the cell culture mixture was stained with an antibody recognizing the neural cell adhesion molecule (NCAM/CD56; BD Pharmingen; Table 3), and the myogenic progenitor (CD56+) and fibroblast-like cell (CD56—) populations were separated and purified using fluorescence-activated cell sorting (FACS) and maintained on collagen coated dishes in growth medium. Subsequent experiments utilized low passage cultures (P4—P9).
 
-## Human primary myoblast two-dimensional culture
+**Table 2.**
+ Cell Culture Media and Solutions
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Blocking solution</td>
+      <td>20% goat serum, 0.3% Triton-X 100 in PBS</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Fibrinogen stock solution</td>
+      <td>10 mg / mL fibrinogen in 0.9% (wt/v) NaCl solution in water</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Human fibroblast growth media</td>
+      <td>Dulbecco’s Modified Eagle’s medium (DMEM), 10% fetal bovine serum, 1% penicillin-streptomycin</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Human myoblast differentiation media</td>
+      <td>Dulbecco’s Modified Eagle’s medium (DMEM), 2% horse serum, 10 μg / mL insulin, 1% penicillin-streptomycin</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Human myoblast growth media</td>
+      <td>Ham’s F-10 nutrient mix, 20% fetal bovine serum, 5 ng / mL basic fibroblast growth factor, 1% penicillin-streptomycin</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Hydrogel mixture</td>
+      <td>Dulbecco’s Modified Eagle’s medium (DMEM), 4 mg / mL bovine fibrinogen, Geltrex (20% v / v), thrombin (0.2 unit/mg fibrinogen)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Milk based blocking solution</td>
+      <td>5% (wt/v) skim milk (BioShop) in TBST</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Red blood cell lysis buffer</td>
+      <td>15.5 mM NH4Cl, 1 mM KHCO3, 10 μM EDTA</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Tris-buffered saline Tween (TBST)</td>
+      <td>50 mM Tris (BioShop), 150 mM NaCl (Sigma), 0.1% (v/v) Tween 20 (BioShop)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ List of primary antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Antibody</th>
+      <th>Species</th>
+      <th>Dilution</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Alexa Fluor 647 mouse anti-human CD56</td>
+      <td>Mouse</td>
+      <td>1:20</td>
+      <td>BD Pharmingen</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Anti-200 kD neurofilament heavy (SMI-32)</td>
+      <td>Rabbit</td>
+      <td>1:200</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Anti-C3c (FITC)</td>
+      <td>Rabbit</td>
+      <td>1:200</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Anti-HB9/HLXB9</td>
+      <td>Rabbit</td>
+      <td>1:100</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Anti-vimentin</td>
+      <td>Rabbit</td>
+      <td>1:100</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Anti- β -tubulin</td>
+      <td>Rabbit</td>
+      <td>1:5000</td>
+      <td>Cell Signaling</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>DRAQ5</td>
+      <td>-</td>
+      <td>1:1000</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Hoechst 33342</td>
+      <td>-</td>
+      <td>1:1000</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Islet-1</td>
+      <td>Goat</td>
+      <td>5 μg/ml</td>
+      <td>R and D systems</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>NRG1- β1</td>
+      <td>Mouse</td>
+      <td>1:500</td>
+      <td>R and D Systems</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Monoclonal anti-β-actin-peroxidase</td>
+      <td>Mouse</td>
+      <td>1:50000</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Monoclonal mouse anti-human desmin</td>
+      <td>Mouse</td>
+      <td>1:100</td>
+      <td>Dako</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>MuSK (PA5-14703) [WB]</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MuSK (PA1-1741) [IF]</td>
+      <td>Rabbit</td>
+      <td>1:50</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Myosin heavy chain - embryonic</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>DSHB</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Myosin heavy chain - fast</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>DSHB</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Myosin heavy chain - slow</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>DSHB</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Myosin heavy chain - pan</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>DSHB</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Nicotinic acetylcholine receptor β</td>
+      <td>Rabbit</td>
+      <td>1:2000</td>
+      <td>Novus</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Nicotinic acetylcholine receptor epsilon</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Novus</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Rapsyn</td>
+      <td>Mouse</td>
+      <td>1:1000</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Sarcomeric alpha-actinin</td>
+      <td>Mouse</td>
+      <td>1:200</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>α-Bungarotoxin, Alexa Fluor 647 conjugate</td>
+      <td>-</td>
+      <td>1:500</td>
+      <td>ThermoFisher</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human primary myoblast two-dimensional culture
 
 Primary human myoblasts were mixed with primary human muscle fibroblast-like cells at the following ratios: CD56+ (95%) and CD56— (5%). For Geltrex culture dish coating, 1 mg of Geltrex was resuspended in 12 mL of ice-cold DMEM and 1 mL was transferred to each well of a 12 well plate. Plates were incubated at 37°C overnight. DMEM was aspirated the next day just prior to cell culture. 3 × 106 cells resuspended in bFGF-free myoblast growth media (Table 2) were plated into each Geltrex (Life Technologies) coated well. The growth media was exchanged 2 days later with myoblast differentiation medium (Table 2). Half of the culture media was exchanged every other day thereafter. In some experiments (Figure 1—figure supplement 2G-H), fibrinogen was supplemented into the differentiation media at 10 μg/mL to control for the effect of fibrinogen receptor ligation on two-dimensional (2D) muscle fiber differentiation.
 
-## PDMS mold fabrication for 3d human muscle tissue culture
+### PDMS mold fabrication for 3d human muscle tissue culture
 
 Standard 12-well culture plates were coated with 500 μL of liquid PDMS (184 Silicone Elastomer Kit, 10 parts elastomer to one part curing). After curing at 50°C for at least 3 hr, another 750 μl of liquid PDMS was added to each well and a laser cut, dumbbell shaped piece of acrylic (middle channel dimensions = 14 mm by 2.75 mm; side chamber dimensions = 5.7 mm by 2.5 mm) was submerged in the liquid PDMS. Plates were then placed within a vacuum chamber for a minimum of 10 min to remove bubbles from the liquid PDMS. The PDMS was cured by incubating the plates in a 50°C oven for 3 hr. Acrylic pieces were then removed from the PDMS, leaving a dumbbell-shaped depression in the PDMS, and two pieces of Velcro fabric were affixed at each end of the channel using liquid PDMS as glue (Figure 1—figure supplement 1C). Each well was sterilized with 70% ethanol at room temperature in a tissue culture hood for at least 30 min. At this point, plates were parafilm sealed, and stored at room temperature. Prior to use, PDMS mold wells were incubated with a 5% pluronic acid (Sigma) solution in ddH2O for 12 hr at 4°C. Pluronic acid solution was aspirated and molds were rinsed with a PBS solution before seeding human muscle tissues.
 
 Remark: The integrity of nylon hooks, as anchor points, on the Velcro pieces is critical for the successful culture of 3D tissues and preventing their immature rupture. As such, we recommend careful inspection of the Velcro pieces before to ensure latch and hooks are without defects, and after to ensure pieces are well adhered in the dish. These are critical steps pre-tissue seeding to ensure successful tissue remodeling and culture.
 
-## Human myoblast three-dimensional culture
+### Human myoblast three-dimensional culture
 
 Three-dimensional (3D) human skeletal muscle tissues were generated in culture as previously described (Madden et al., 2015) with the following modification: FACS-purified CD56+ myoblasts (95%) and CD56— fibroblast-like cells (5%) were incorporated into tissues. Briefly, cells at these defined ratios were resuspended in the hydrogel mixture (Table 2) in the absence of thrombin. Thrombin (Sigma) was added at 0.2 unit per mg of fibrinogen just prior to evenly seeding the cell/hydrogel suspension in the long channel of the dumbbell-shaped molds. Tissues were then incubated for 5 min at 37°C to expedite fibrin polymerization. Myoblast growth media (Table 2) lacking bFGF, but containing 1.5 mg/mL 6-aminocaproic acid (ACA; Sigma), was added. 2 days later the growth media was exchanged to myoblast differentiation medium (Table 2) containing 2 mg/mL ACA. Half of the culture media was exchanged every other day thereafter. In agrin treatment experiments, recombinant rat agrin (R and D Systems) was supplemented in the culture media at 50 ng/ml. In experiments using neuregulin1-β1 treatment, recombinant human neuregulin1-β1 (R and D Systems) was supplemented in the culture media at 5 nM. In both cases (agrin, neuregulin), treatment began when tissues were switched to differentiation medium and recombinant proteins were added to exchange media at 2-fold concentration. hESC differentiation to post-mitotic motor neurons.
 
@@ -159,7 +526,7 @@ Remark: Batch-to-batch variability of small molecules and growth factors used in
 
 Remark: If starting with frozen vials of PSC-derived Olig2+ precursor cells, note that excessive shearing of the Olig2+ cells post-thaw dramatically reduces the differentiation efficiency. As such, the cell pellet post thaw should be transferred from the conical tube to the culture plate with passage through a pipette no more than three times.
 
-## Two- and three-dimensional neuromuscular co-culture
+### Two- and three-dimensional neuromuscular co-culture
 
 24 hr after seeding myogenic progenitor cells for culture in 2D (as described above), 5 ESC-derived motor neuron clusters were detached and transferred to the muscle cell culture plates using a 1 ml pipette tip in myoblast media lacking bFGF, but now containing 10 ng / ml brain derived neurotrophic factor (BDNF) and 10 ng / ml glial cell line derived neurotrophic factor (GDNF). Mid-sized clusters (150 to 300 μm in diameter) were visually identified and selected for transfer. 24 hr later the media was removed and replaced with myogenic differentiation media (Table 2) supplemented with 10 ng / mL BDNF and 10 ng / mL GDNF. Half of the culture media was exchanged every other day thereafter and included both neurotrophic factors at 2-fold concentration.
 
@@ -171,27 +538,27 @@ Remark: Collection of motor neuron clusters that are ~300 μm in diameter for m
 
 Remark: High levels of spontaneous contractile activity of myofibers is observed in 3D muscle-motor neuron co-cultures post day 10 differentiation which might lead to their premature rupture at an earlier time before day 14. As such, 3D co-culture tissues should be inspected carefully post-day 10 differentiation.
 
-## Immunostaining and fluorescence microscopy
+### Immunostaining and fluorescence microscopy
 
 2D cultures and 3D tissue whole mounts were fixed in 4% PFA for 10 min and then washed with phosphate buffered saline (PBS). Following fixation, samples were incubated in blocking solution (Table 2) for at least 1 hr. Samples were incubated in primary antibody solutions (Table 3) diluted in blocking solution (Table 2) overnight at 4°C. After several washes in blocking solution, samples were incubated with appropriate secondary antibodies diluted in the blocking solution for 30 min at room temperature. Hoechst 33342 or DRAQ5 (ThermoFisher) were used to counterstain cell nuclei. Confocal images were acquired with Fluoview-10 software using an Olympus IX83 inverted microscope. Epifluorescence images were acquired with CellSense software using an Olympus IX83 microscope equipped with an Olympus DP80 dual CCD color and monochrome camera. Images were analyzed and prepared for publication using NIH ImageJ software.
 
-## Myofiber size analysis
+### Myofiber size analysis
 
 Myofiber size was measured by assessing 40X magnification confocal images of 2D and 3D cultures immunostained for sarcomeric α-actinin. 2D muscle culture images and flattened z-stack images of 3D muscle tissues were analyzed to quantify the diameter of each muscle fiber using the NIH ImageJ.
 
-## Western blotting
+### Western blotting
 
 3D tissues were collected at the indicated time points and flash frozen in liquid nitrogen, while 2D cell cultures were directly lysed in RIPA buffer (Table 2) and flash frozen. Processed 2D and 3D samples were stored at −80°C until all desired time points were collected. Tissues and 2D samples were lysed in RIPA buffer (ThermoFisher) containing protease inhibitors, and then lysates were analyzed for total protein concentration using the BCA protein assay kit (ThermoFisher). 15 μg of protein was analyzed on an 8% SDS PAGE gel. Western blot was performed using a Bio-Rad Power Pac 1000 and Trans-Blot Turbo Transfer System to transfer the proteins from the polyacrylamide gel to a nitrocellulose membrane. Primary antibodies (Table 3) were incubated with membranes overnight at 4°C in milk-based blocking solution (Table 2). Membranes were washed 3 × 30 min with rocking in a Tris-buffered saline with Tween (TBST; Table 2) and then transferred into blocking solution containing horseradish peroxidase conjugated anti-rabbit and anti-mouse secondary antibodies (Cell Signaling; 1:5000). Chemoluminescence was performed using ECL substrate (ThermoFisher) with a MicroChemi 4.2 chemiluminescence imaging system (DNR Bio-Imaging Systems). Images were analyzed using the NIH ImageJ.
 
-## AChR cluster analysis
+### AChR cluster analysis
 
 α-bungarotoxin staining was performed to visualize and quantify the number, size, and morphology of AChR clusters in 2D cell and 3D tissue cultures. Briefly, fixed tissues were incubated with 5 nM of Alexa Fluor 647 conjugated α-bungarotoxin for 30 min to label AChRs. Samples were then washed with PBS and 40X images, all 0.1 mm2 in area, were captured at a minimum of 6 random locations per sample. AChR cluster outlines in each 40X image were generated using the ImageJ particle analyzer. Clusters smaller than 5 μm2 were excluded from analysis. AChR cluster outline drawings were binarized to facilitate downstream analysis. To assess cluster number, AChR cluster were quantified for each image and was then normalized to the number of sarcomeric α-actinin+ fiber units present in the quantified image. To assess cluster area, the area of each individual AChR cluster was measured and averaged for each experiment using NIH ImageJ software. Fractal analysis was performed on α-bungarotoxin stained sample images to quantify AChR cluster morphological differences across the different culture conditions. After binarization of the AChR cluster outline drawings, lacunarity, a measure of gappiness and heterogeneity in a shape, was measured for each AChR cluster using the NIH ImageJ FracLac plug-in. The Sub Sample and Particle Analyzer method was used with FracLac along with default settings and four grid locations. Lacunarity was measured for each AChR cluster within an experiment and then averaged.
 
-## Electrical stimulation
+### Electrical stimulation
 
 To ensure accurate and reproducible conditions for electrical stimulation, a custom-made stimulation chamber was produced using a 35 mm petri-dish, two carbon rods, and platinum wires. Before each use the stimulation chamber was sterilized using 70% ethanol. At day 14 of differentiation, an individual tissue was transferred to the chamber and covered in differentiation medium. Platinum wires were hooked up to a commercial function generator (Rigol DG1022U). A Rigol DS1102E digital oscilloscope was used to confirm the frequency and amplitude of signals before connecting the pulse generator to the platinum wires. 3D tissues were stimulated using square pulses with 20% duty cycle, 5V amplitude (field strength of 1.67 V/cm), and the reported frequencies.
 
-## Calcium transient analysis
+### Calcium transient analysis
 
 CD56+ sorted human myogenic progenitor cells were transduced with a lentiviral vector encoding the fluorescent calcium indicator GCaMP6 driven by the muscle specific gene MHCK7 (AddGene plasmid #65042). Cells were then sorted to purify the infected cells based on GFP expression. Human skeletal muscle progenitor cultures expressing GCaMP6 were imaged using an Olympus IX83 microscope equipped with modules to control the temperature and CO2 concentration. Videos were recorded at 4X magnification at 12 frames per second under physiological condition (37°C and 5% CO2) in differentiation media using an Olympus DP80 dual CCD color and monochrome camera and CellSense software. Acetylcholine (BIO BASIC) was reconstituted to produce a 100 mM stock solution in PBS and was diluted to the final working concentration (as specified in the text) by addition directly into the culture chamber.
 
@@ -201,15 +568,15 @@ To assess the effect of Waglerin-1 on glutamate-stimulated calcium transients, a
 
 To assess the effect of BOTOX (Allergan, Irvine, CA) and d-tubocurarine (Sigma) treatments on glutamate-stimulated calcium transients, co-cultures were treated with BOTOX (1 U/ml) (Santhanam et al., 2018) and d-tubocurarine (25 μM) for at least 10 min before glutamate stimulation in their culture media. BOTOX was prepared at 100 U/ml in PBS and d-tubocurarine was reconstituted at 2.5 mM in DMEM.
 
-## Tissue contraction quantification
+### Tissue contraction quantification
 
 To assess the contraction of neuromuscular tissues following glutamate and acetylcholine stimulations, co-cultures were stimulated under the indicated experimental conditions and videos were recorded at 4X magnification at 12 frames per second under physiological conditions (37°C and 5% CO2). To quantify neuromuscular tissue contraction, videos were assembled into stacks using ImageJ software and 3 regions of interest were traced within each stack. Maximum movement distance for each trace was determined and averaged for each sample. Data are presented as movement (distance) in pixels.
 
-## Length of functional connectivity between MN cluster and muscle fibers
+### Length of functional connectivity between MN cluster and muscle fibers
 
 In this studies, neuromuscular co-cultures were generated using GCaMP6 transduced human myogenic progenitor cells and a single motor neuron cluster. At week two of co-culture, tissues were stimulated by a 50 μM L-glutamate solution diluted in DMEM. Videos were captured at a frequency of 12 frames per second for at least 15 s before and after stimulation. Videos were processed exactly as described above (calcium transient analysis) to eliminate the spontaneously active fibers from the analysis. The location of the motor neuron cluster was identified from a bright field image, which was used to outline the structure with a circle in the epifluorescent images. Using NIH ImageJ software, concentric circles, each 100 μm larger in radius than the prior, were outlined around the motor neuron cluster until the circles encompassed all the glutamate responsive fibers (i.e. GcAMP6+) on the subtracted image. The number of active fibers in each circle were then quantified to determine the number of fibers in each concentric circle ‘bin’. Binned data from three independent experiments were then reported on a histogram to report the average number of glutamate responsive fibers as it relates to the distance (i.e. concentric circle bin) from the motor neuron cluster.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Individual muscle fibers were impaled with 30–40 MΩ sharp electrodes pulled from borosilicate glass (World Precision Instruments), filled with 3M KCl. Membrane potential was recorded in the current clamp configuration using a Digidata 1440A and MultiClamp 700 A amplifier (Axon Instruments, Molecular Devices). Data were digitized at 10 kHz and filtered at 2.6 kHz. Data were quantified using MiniAnalysis (Synaptosoft). Each fiber was allowed to recover for a few minutes, to allow its resting membrane potential to stabilize before recordings were performed. For electrophysiological recordings following optogenetic stimulation, 3D muscle tissues were generated using human skeletal muscle progenitors transduced with a lentiviral vector encoding humanized ChR2 with H134R mutation fused to EYFP and driven by EF1a (AddGene plasmid #20942). Cells were sorted to purify the infected cells based on the EYFP signal. Optogenetic stimulation was performed using blue LED (KSL-70, RAPP OptoElectronic) with a wavelength of 470 nm, and controlled by the Axon amplifier software. In glutamate stimulation experiments, glutamate was pipetted by hand into the edge of the bath and allowed to diffuse to the tissue. For all recordings, the bath solution was standard DMEM (Gibco).
 
@@ -217,21 +584,50 @@ Remark: To facilitate electrophysiological recordings, 3D neuromuscular tissues 
 
 Remark: Spontaneous contractions of the neuromuscular tissues complicate the sharp microelectrode recordings. Neuromuscular tissues are most spontaneously active once removed from the incubator. As such, resting the tissue at room temperature for 5–10 min after transferring from the 37 C incubator reduces the spontaneous activity and facilitates the sharp microelectrode recordings.
 
-## Myasthenia gravis disease modeling
+### Myasthenia gravis disease modeling
 
 Serum from three patients diagnosed with Anti-AChR MG (Table 1) was collected and IgG fractions were purified using a Protein A IgG purification kit (Thermofisher) based on the manufacturers instruction. Purified IgG was reconstituted in PBS and IgG content was quantified using a NanoDrop 1000 spectrophotometer (ThermoFisher). On Day 11 of neuromuscular co-culture, IgG was added to the differentiation media at 300 nM final concentration and 2% human serum (Sigma) was supplemented in the differentiation medium rather than horse serum. IgG from healthy human serum (Sigma) was used in ‘healthy’ control experiments. In these experiments, IgG was added once and the media was not exchanged thereafter. After 3 days of treatment, the Day 14 co-cultures were stimulated with glutamate followed by an acetylcholine stimulation and calcium transients were captured by imaging the GCaMP6 signals using an Olympus IX83 microscope. Video segments, equal in length, representing GCaMP6 signals from glutamate and ACh serially stimulated tissues were each projected into a 2D image. For Figure 4—figure supplement 1B, GCaMP6 signals were analyzed to quantify the area of ACh responsive tissue in equal sized ROI for healthy compared to MG IgG treated tissues, and presented as fold change. For Figure 4G, healthy and MG IgG treated tissues were analyzed to quantify the area of GCaMP6 signal at the same ROIs after glutamate (glut) and then acetylcholine (ACh) stimulation and the ratio of glutamate- to ACh-induced GCaMP6 signals was reported.
 
 In a subset of experiments, we performed serial glutamate stimulation experiments in which we stimulated the same neuromuscular co-culture on Day 11 and then Day 14 of culture with a 50 μM L-glutamate solution and measured the area of GCaMP6+ tissue as described above. Our analysis indicated that the area of glutamate responsive tissue increased from ~2% at Day 11 to more than 13% on Day 14, arguing against glutamate-induced cytotoxic effects arising from our experimental methods.
 
-## FM 1–43 labeling and imaging
+### FM 1–43 labeling and imaging
 
 Motor neuron clusters were separated from undifferentiated single cells using Accutase (ThermoFisher) and transferred to a Geltrex coated 6-well plate on Day 14 of differentiation. Clusters were then cultured for an additional week in E6 media supplemented with 10 ng/mL BDNF and 10 ng/mL GDNF, to permit the regrowth of the neurites, and were then labeled with the FM 1–43 styryl dye (Molecular Probes) following the manufacturer’s instructions. Briefly, MN clusters were stimulated using high potassium solution (60 mM) and incubated with FM 1–43 (2 μM) in HBSS (+Mg2+and + Ca2+) for 20 min to enable dye loading. Clusters were washed with HBSS for at least one hour at room temperature before imaging. Samples were imaged using an IX83 Olympus confocal microscope with FV-10 software at physiological conditions (37°C and 5% CO2). MN clusters were then stimulated with either high potassium solution (60 mM in PBS), L-glutamate (50 μM in HBSS), or control solutions (HBSS or PBS) while acquiring time-lapse video sequences. Videos were analysed for fluorescence intensity before and after stimulation at each indicated time-point using NIH ImageJ software.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA was extracted from three technical replicate muscle tissues or neuromuscular co-culture for each of 3 biological replicate experiments using the PureLink RNA Micro Kit according to the manufacturer’s protocol (ThermoFisher). cDNA was reverse transcribed from 400 ng of RNA using the High-Capacity cDNA Reverse Transcription kit (Applied Biosystems). For quantitative real-time PCR (qRT-PCR), CHRNE and CHRNG primers were acquired from Bio-Rad and reactions were run according to manufacturer’s protocol on the Roche LightCycler 480 (Roche) using LightCycler 480 SYBR Green I Master (Roche). All results were normalized to the housekeeping gene glyceraldehyde 3-phosphate dehydrogenase (GAPDH). Gene expression is reported in % of GAPDH expression ±SEM. To assess agrin gene expression in differentiated MNs, cDNA samples were prepared from three consecutive MN differentiations. Genes were amplified using Arktik thermal cycler according to the manufacturer’s protocol (ThermoFisher). PCR amplification products were analyzed on a 2% agarose gel with SYBR safe DNA gel stain (Invitrogen). GAPDH gene expression served as the loading control. All oligo sequences are summarized in Table 4.
 
-## Statistical analysis
+**Table 4.**
+ Real-time PCR primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GENE</th>
+      <th>Species</th>
+      <th>Forward 5’−3’</th>
+      <th>Reverse 3’−5’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AGRN</td>
+      <td>human</td>
+      <td>CCTGACCCTCAGCTGGCCCT</td>
+      <td>AGATACCCAGGCAGGCGGCA</td>
+    </tr>
+    <tr>
+      <td>GAPDH</td>
+      <td>human</td>
+      <td>GTGAAGGTCGGAGTCAACG</td>
+      <td>TGAGGTCAATGAAGGGGTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 Each study in this manuscript was performed using three primary myoblast lines derived from three separate muscle patient donors (N = 3 biological replicates). Each experiment within a study was set-up with cells from a separate muscle donor and included at least n = 3 technical replicates. Exceptions include Figure 2I–J, Figure 4G, Figure 1—figure supplement 2G, Figure 1—figure supplement 3C, and Figure 4—figure supplement 1D. In , two muscle tissue cultures (technical replicates) were treated with Agrin for each biological replicate (six samples in total). In Figure 4G and Figure 4—figure supplement 1D, IgG purified from sera collected from 3 MG patients was tested (N = 3 biological replicates), and compared to IgG purified from a single healthy donor and tested on 3D neuromuscular tissues engineered using a single immortalized cell line. In and 7 technical replicates from three muscle patient donors was analyzed at the 1 week culture time point. In Figure 1—figure supplement 3C, one muscle sample was analyzed for each muscle patient donor (N = 3 muscle patient donors). For all other neuromuscular co-culture studies, each primary myoblast line was co-cultured with MNs established from separate human pluripotent stem cell derivations.
 

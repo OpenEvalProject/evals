@@ -18,9 +18,9 @@
 
 ### Affiliations
 
-1. https://ror.org/033vjfk17 State Key Laboratory of Virology, College of Life Sciences, Department of Anesthesiology, Zhongnan Hospital of Wuhan University, Frontier Science Center for Immunology and Metabolism, Wuhan University Wuhan China
+1. State Key Laboratory of Virology, College of Life Sciences, Department of Anesthesiology, Zhongnan Hospital of Wuhan University, Frontier Science Center for Immunology and Metabolism, Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))
 2. Institute of Biology Paris Seine, Neuroscience Paris Seine, CNRS UMR8246, INSERM U1130, Sorbonne Universite Paris France
-3. https://ror.org/04eymdx19 The Key Laboratory of Neural and Vascular Biology, Ministry of Education Hebei Medical University Shijiazhuang China
+3. The Key Laboratory of Neural and Vascular Biology, Ministry of Education Hebei Medical University Shijiazhuang China ([ROR:04eymdx19](https://ror.org/04eymdx19))
 
 † Corresponding author
 
@@ -40,9 +40,33 @@ Here, we show that the regulator of phosphokinases magnesium (Mg2+) exerts an en
 
 ## Results
 
-## Mg2+ enhances both the chemical and thermal sensitivity of TRPV2
+### Mg2+ enhances both the chemical and thermal sensitivity of TRPV2
 
 Enriched in cell cytoplasm, Mg2+ regulates the function of a variety of ion channels (Antonov and Johnson, 1999; Cao et al., 2014; Lee et al., 2005; Luo et al., 2012; Obukhov and Nowycky, 2005). A couple of TRP ion channels have been reported to be modulated by a high concentration of Mg2+ (Cao et al., 2014; Yang et al., 2014). We therefore examined whether TRPV2 activity is sensitive to Mg2+. Considering that TRPV2 is abundantly and functionally expressed in macrophages where other types of TRPV channels are barely detectable (Figure 1—figure supplement 1; Link et al., 2010; Nagasawa et al., 2007), we used rBMDMs as an endogenous cell system to record TRPV2 currents. We found that TRPV2 currents at –60 mV evoked by 0.3 mM 2-APB were slowly but dramatically enhanced in the presence of 5 mM Mg2+ (Figure 1A). The pipette solution contained 1 mM adenosine disodium triphosphate (Na2ATP). In general, Mg2+-potentiated responses typically developed over a period of about 100 s to reach a plateau. The presence of 5 mM Mg2+ augmented the peak current amplitudes by ~19-fold (Figure 1B). Notably, the following response to 0.3 mM 2-APB was somewhat variable but still remained an ~14-fold increase from that before Mg2+ treatment (Figure 1A–B). We further recorded the effect of Mg2+ on TRPV2 current responses in neurons. TRPV2 channels are predominantly expressed in medium- to large-sized dorsal root ganglia (DRGs) neurons that typically express fewer TRPV1 channels (Caterina et al., 1999). As illustrated in Figure 1C–D, we witnessed similar potentiating effects of Mg2+ on 2-APB-evoked currents in a small population of DRG neurons, while the lack of TRPV1 expression was confirmed by the absence of responses to capsaicin, indicating these 2-APB-evoked currents were mediated by TRPV2 channels. To further investigate whether the regulatory effect of Mg2+ on TRPV2 reflects a channel-inherent mechanism, we performed recordings in a variety of heterologous expression systems including HEK293T (Figure 1E–F), CHO, Hela, and ND7/23 cells (Figure 1—figure supplement 2) where TRPV2 was transiently expressed. Indeed, the profound enhancement of TRPV2 activity by Mg2+ was observed in all expression cell lines. Additionally, we found that prolonged application of 0.3 mM 2-APB alone didn’t have a notable sensitizing effect on TRPV2 currents, while subsequent application of the same stimulus in the presence of 5 mM Mg2+ produced a significant increase of the TRPV2 currents, indicating that it was Mg2+ not 2-APB that sensitized TRPV2 (Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig1-v2.jpg)
+
+**Figure 1.:** (A) Mg2+ potentiates 2-aminoethyl diphenylborinate (2-APB) responses in a representative rat bone marrow-derived macrophage (BMDM) cell. The cell was exposed to 0.3 mM 2-APB without or with 5 mM Mg2+ and 3 mM 2-APB as indicated by the bars. Membrane currents were recorded in whole-cell configuration, and the holding potential was –60 mV. Bars represent duration of drug application. The dotted line indicates zero current level. (B) Summary of relative currents evoked by 0.3 mM 2-APB in the presence of 5 mM Mg2+ (indicated by red triangle) and the subsequent application of 0.3 mM 2-APB (indicated by blue triangle). Numbers of cells are indicated in parentheses. (C) Whole-cell currents at –60 mV in a rat dorsal root ganglion (DRG) neuron treated with 10 μM Cap, 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+, and 3 mM 2-APB. (D) Summary of relative currents elicited with 5 mM Mg2+ (marked by red triangle) and the subsequent application of 0.3 mM 2-APB (marked by blue triangle). (E–F) Parallel whole-cell recordings in TRPV2-expressing HEK293T cells and the relative changes caused by Mg2+. (G) Dose dependence of Mg2+ effects on 2-APB response (0.3 mM). The solid line represents a fit by Hill’s equation with EC50 = 0.96 ± 0.03 mM and nH = 2.0 ± 0.1 (n ≥ 5). (H) Dose-response curves of 2-APB for activation of TRPV2 in the presence of 0 or 5 mM Mg2+. The solid lines corresponds to Hill’s equation with EC50 = 0.59 ± 0.01 mM and nH = 3.6 ± 0.1 for 0 Mg2+ (n = 11); and EC50 = 0.24 ± 0.01 mM and nH = 3.4 ± 0.1 for application of 5 mM Mg2+ (n = 21). (I) Representative responses to a family of temperature pulses for TRPV2-expressing HEK293T cells under control (n = 5). Temperature pulses stepped from room temperature generated by laser irradiation were 100 ms long and had a rise time of 2 ms. (J) Current vs. temperature relations at −60 mV obtained from experiments as in (I). Individual cells are shown with currents normalized by their amplitude at 44°C. (K) Plot of log(Itest/I44oC+1) obtained from the relations in (I). (L–N) Representative current traces, temperature-activation relations, and plot of log(Itest/I44oC+1) determinations for Mg2+ pretreated TRPV2-expressing cells (n = 6).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Relative mRNA expression levels of different Trpv and Trpc channels in BMDMs were assessed by qPCR. (B) Expression of TRPV2 protein in BMDMs. (C) Immunoblot analysis (with anti-TRPV2 or anti-β-actin) of BMDM cells transfected for 72 hr with TRPV2-targeting shRNA (shTRPV2#1, shTRPV2#2, shTRPV2#3, and shTRPV2#4) or shControl to test knockdown efficiency of shRNA. (D–E) Typical response of DMBMs transfected with shControl (D) or shTRPV2#1 (E) to 2-APB. (F) Summary plot of current density. The peak current densities evoked by 2-APB are normalized by membrane capacitance. The dotted line indicates zero current level. *p < 0.05, ***p < 0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Representative whole-cell recordings in CHO, Hela, or ND7/23 that expressed TRPV2 showing the response to 0.3 mM 2-aminoethyl diphenylborinate (2-APB), 0.3 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB. The dotted line indicates zero current level. (D) Summary of relative currents induced by 0.3 mM 2-APB plus 5 mM Mg2+ (marked by red triangle).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative whole-cell recordings in bone marrow-derived macrophages (BMDMs) showing the responses to 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB. The dotted line indicates zero current level. (B) Summary of relative currents evoked by 0.3 mM 2-APB (marked by dark cyan triangle) and 0.3 mM 2-APB plus 5 mM Mg2+ (marked by red triangle). (C) Whole-cell recordings from TRPV2-expressing HEK293T cells were consecutively challenged by 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+, and 3 mM 2-APB. (D) Summary of the relative changes.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A–H) Representative whole-cell currents in TRPV2-expressing HEK293T cells induced by 0.3 mM 2-APB, the combination of 0.3 mM 2-APB and various divalent cations Mn2+ (A), Ca2+ (B), Ba2+ (C), Zn2+ (D), Cu2+ (E), Ni2+ (F), Cd2+ (G), and Co2+ (H), respectively. The dotted line indicates zero current level. (I) Summary of relative currents evoked by the combination of 0.3 mM 2-APB and different divalent cations vs. 0.3 mM 2-APB only.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A–B) Representative whole-cell currents at –60 mV evoked by increasing concentrations of 2-APB in TRPV2-expressing HEK293T cells. Note the pipette solution contained 0 mM Mg2+ (A) or 5 mM Mg2+ (B). The dotted line indicates zero current level. (C) Concentration-response curves of 2-APB for activation of TRPV2. The solid lines correspond to Hill’s equation with EC50 = 0.56 ± 0.01 mM and nH = 3.9 ± 0.2 for 0 Mg2+ in pipette (n = 7); and EC50 = 0.36 ± 0.01 mM and nH = 3.7 ± 0.3 for 5 mM Mg2+ in the pipette solutions (n = 9).
 
 Next, we asked whether other divalent cations exert similar regulatory effects on TRPV2 currents as Mg2+ does. We thus repeated the experiments in TRPV2-expressing HEK293T cells with different cations including Mn2+, Ca2+, Ba2+, Zn2+, Cu2+, Ni2+, Cd2+, and Co2+. As shown in Figure 1—figure supplement 4, among all the tested divalent cations, Ba2+, Cu2+, and Zn2+ had a remarkable inhibition of TRPV2 currents, while Mg2+, Mn2+, and Co2+ enhanced the currents of TRPV2 to different degrees. Among them, Mg2+ exhibited a more profound effect on enhancing the TRPV2 channel activity.
 
@@ -50,19 +74,31 @@ To further characterize the regulatory effects of Mg2+ on TRPV2 activity, whole-
 
 TRPV2 is a member of the temperature-sensitive ion channel. Therefore, we examined the effect of Mg2+ on TRPV2 thermosensitivity using laser irradiation-based temperature controlling and whole-cell recording (Yao et al., 2009). HEK293T cells expressing TRPV2 were held at −60 mV when the temperature jumps were delivered (Figure 1I, inset). The above experiments showed that the enhanced effect of Mg2+ on TRPV2 channel requires long-term continuous treatment, however, prolonged high-temperature stimulation incurs excessive thermal stress and leads to the instability of whole-cell recordings. For such a reason, we first sensitized the TRPV2 channel by stimulating the cells with the combination of 0.3 mM 2-APB and 5 mM Mg2+, and then immediately applied the temperature pulses to the same cell right after completely washout 2-APB by bath solution. As illustrated in Figure 1I–N, the pretreatment with Mg2+ evidently lowered the temperature threshold in TRPV2 activation by ~6°C. Together, these results indicate that Mg2+ enhances both the chemical and thermal responses of the TRPV2 ion channel.
 
-## Mg2+ potentiates TRPV2 activation via an indirect intracellular pathway
+### Mg2+ potentiates TRPV2 activation via an indirect intracellular pathway
 
 To identify whether Mg2+ directly activates TRPV2, we recorded its currents in HEK293T cells using whole-cell patch-clamp in the presence of various concentrations of Mg2+ (Figure 2A). We observed that even 100 mM Mg2+ did not induce any detectable current (Figure 2A–B), indicating that extracellular Mg2+ cannot directly activate TRPV2 channels. Likely, Mg2+ enhances TRPV2 activation via an intracellular mechanism. Thus, extracellularly applied Mg2+ might need to permeate into cell cytosol through the activated channel. To probe the mechanism of Mg2+-mediated enhancement of TRPV2 activity, we added a high concentration of chelator (EDTA, 20 mM) into the pipette solution to maintain a lower concentration of free intracellular Mg2+. As shown in Figure 2C–D, chelating intracellular Mg2+ with 20 mM EDTA delivered through patch pipette abolished the enhancement effect.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig2-v2.jpg)
 
-**Figure 2.:** 2+ has an indirect effect on transient receptor potential vanilloid 2 (TRPV2) channels.(A) High concentrations of Mg2+ have no direct effect on TRPV2 channels from the extracellular side. Representative whole-cell currents at –60 mV in a TRPV2-expressing HEK293T cells consecutively treated with 10, 30, 100 mM Mg2+ and 3 mM 2-aminoethyl diphenylborinate (2-APB). (B) Comparison of current density evoked by different concentrations of Mg2+ and 3 mM 2-APB. (C) Whole-cell recordings from TRPV2-expressing HEK293T cells showing the response to 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+, and 3 mM 2-APB. Note the pipette solution contained 20 mM EDTA. (D) Average plot of the relative changes. p = 0.0006 by unpaired Student’s t-test. (E) Current traces recorded in inside-out configuration evoked by different concentrations of Mg2+ and 5 mM 2-APB. (F) Summary plot of relative currents elicited with 10, 30, 100 mM Mg2+ and 3 mM 2-APB. The dotted line indicates zero current level.
+**Figure 2.:** (A) High concentrations of Mg2+ have no direct effect on TRPV2 channels from the extracellular side. Representative whole-cell currents at –60 mV in a TRPV2-expressing HEK293T cells consecutively treated with 10, 30, 100 mM Mg2+ and 3 mM 2-aminoethyl diphenylborinate (2-APB). (B) Comparison of current density evoked by different concentrations of Mg2+ and 3 mM 2-APB. (C) Whole-cell recordings from TRPV2-expressing HEK293T cells showing the response to 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+, and 3 mM 2-APB. Note the pipette solution contained 20 mM EDTA. (D) Average plot of the relative changes. p = 0.0006 by unpaired Student’s t-test. (E) Current traces recorded in inside-out configuration evoked by different concentrations of Mg2+ and 5 mM 2-APB. (F) Summary plot of relative currents elicited with 10, 30, 100 mM Mg2+ and 3 mM 2-APB. The dotted line indicates zero current level.
 
 The above results suggest that the enhancing effect of Mg2+ on TRPV2 activation takes place on the intracellular side. We then performed inside-out patch-clamp to examine whether Mg2+ directly activates TRPV2 from the intracellular side (Figure 2E). Akin to extracellular application, even 100 mM Mg2+ did not induce any detectable current from the intracellular side (Figure 2F). Together, our results suggest that the potentiation effect of Mg2+ on TRPV2 activation relies on an indirect intracellular mechanism.
 
-## JAK1-mediated tyrosine phosphorylation regulates TRPV2 sensitivity
+### JAK1-mediated tyrosine phosphorylation regulates TRPV2 sensitivity
 
 Previous studies suggest that some stimuli, like insulin, recruit TRPV2 to the plasma membrane to increase the whole-cell response (Hisanaga et al., 2009; Kanzaki et al., 1999; Nagasawa et al., 2007). To verify whether Mg2+ solicits similar mechanisms, we compared the saturation currents evoked by a high dose of 2-APB (3 mM) before and after Mg2+ treatment. Our data displayed that subsequent to Mg2+ application, though the currents evoked by sub-saturation doses of 2-APB were well potentiated, there was no significant change in the maximum saturation currents (Figure 3A). This observation indicates that Mg2+ does not alter the expression level of TRPV2 at the plasma membrane.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative whole-cell recordings from TRPV2-expressing HEK293T cells showing the responses to 3 mM 2-aminoethyl diphenylborinate (2-APB) before and after the treatment by 0.3 mM 2-APB plus 5 mM Mg2+ (left). Average peak responses to 3 mM 2-APB before and after Mg2+ application (right). The dotted line indicates zero current level. The holding potential was –60 mV. p = 0.12 by one-sample t-test. (B) Tyrosine phosphorylation and serine/threonine phosphorylation of immunoprecipitated TRPV2-Flag transiently transfected in HEK293T cells in the absence and presence of 5 mM Mg2+ were determined by immunoblotting with anti-phosphotyrosine antibody (pTyr) and anti-Phospho-(Ser/Thr) Phe antibody (pSer/Thr). Inset, Protein amounts of tyrosine-phosphorylated or serine/threonine-phosphorylated immunoprecipitated TRPV2 proteins were quantified, and phospho-Tyr TRPV2/total TRPV2 and phospho-Ser/Thr TRPV2/total TRPV2 were calculated from at least three independent experiments. Error bars indicate SD. (C) Left, representative whole-cell currents at –60 mV in a TRPV2–expressing HEK293T cell treated with 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB. The pipette solution contained adenosine triphosphate ( ATP) nonhydrolyzable analog adenylyl imidodiphosphate (AMP-PNP). Right, summary of relative changes under different conditions. p = 9.29E-6 by unpaired Student’s t-test. (D) Whole-cell currents in response to 2-APB under inhibition of JAK1 by Ruxolitinib. (E) Summary plot of Mg2+ effects on TRPV2 currents under the various conditions. ***p < 0.001. (F) In vitro kinase assay with [32P]-γ-ATP, tyrosine kinase JAK1, and recombinant His-tagged rat TRPV2 N-terminus. Phosphorylation signals were detected by autoradiography. Loading amount of different TRPV2 proteins was accessed by coomassie blue staining. (G) Flow cytometry analysis for phagocytosis. Flow cytometry analysis was employed to determine the phagocytosed level of green fluorescent protein (GFP)-expressing Escherichia coli (GFP E. coli) by bone marrow-derived macrophages (BMDMs) treated with varying concentrations of Ruxolitinib or transfected with shTRPV2#1. Bar graph displaying the effects on phagocytosis under different conditions. *p < 0.05, **p < 0.01, ***p < 0.001. (H) Immunoblot analysis (with anti-JAK1 or anti-β-actin) of BMDM cells transfected for 72 hr with JAK-1-targeting shRNA (shJAK1#1, shJAK1#2, and shJAK1#3) or shControl to test knockdown efficiency of shRNA. (I) Immunoblot analysis of the tyrosine phosphorylation levels of TRPV2 in BMDM cells transfected with shJAK1#3 or shControl for 72 hr in the absence and presence of Mg2+, respectively. (J) Whole-cell recordings in BMDM cells transfected with shJAK1#3 showing the responses to 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB. (K) Comparison of relative increase under different conditions. p = 4.49E-6 by unpaired Student’s t-test. Error bars indicate standard error of the mean (SEM).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Representative whole-cell currents in a TRPV2-expressing HEK293T cell elicited with 0.3 mM 2-aminoethyl diphenylborinate (2-APB), 0.3 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB. Please note the pipette solutions containing with 1 mM adenosine disodium triphosphate (Na2ATP) (A) or without ATP (B). The dotted line indicates zero current level. (C) Summary plot of the relative changes under different conditions. p = 0.998 by unpaired Student’s t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** LC-MS/MS analysis showing the phosphorylation of TRPV2 in HEK293T cells after treatment by 0.3 mM 2-aminoethyl diphenylborinate (2-APB) plus 5 mM Mg2+, followed by immunoprecipitation (with anti-FLAG agarose). Peaks corresponding to phosphorylated TRPV2 peptides were obtained from MS. MS/MS ion spectrum with the matched b and y ions of the pY335-containing tryptic peptide KFTEWCpYGPVR was shown.
 
 Alternatively, Mg2+ is known as an essential cofactor for enzymatic reactions (de Baaij et al., 2015). Especially, Mg2+ is an important regulator of phosphokinases and plays a crucial role in their catalytic activity. Enzymatic/catalytic processes also corroborate the fact that the enhancing effect of Mg2+ on TRPV2 took a relatively long time (~100 s) and could not be immediately eluted (Figure 1A–B). Hence, we hypothesize that Mg2+ regulates TRPV2 channels through phosphorylation or dephosphorylation. To test this hypothesis, we investigated the phosphorylation level of immunoprecipitated TRPV2 with anti-phosphotyrosine and anti-phospho-Ser/Thr antibody in the presence of 2-APB agonist, with and without Mg2+ (Figure 3B). The results revealed a significant increase in tyrosine phosphorylation and serine/threonine phosphorylation levels of TRPV2 in the presence of Mg2+. Since the mechanism of phosphorylation involves the transfer of a phosphate (Pi) from ATP to the substrate, we thus used AMP-PNP, a nonhydrolyzable analog of ATP, to replace ATP to inhibit the process of phosphorylation. As shown in Figure 3C, the enhancement effect of Mg2+ on TRPV2 currents was abolished when dialyzed AMP-PNP (4 mM) into the cell through recording pipette, suggesting that Mg2+ potentiates phosphorylation of TRPV2 upon agonist stimulation. Interestingly, the sensitizing effect of Mg2+ was also observed in the whole-cell recordings without the addition of ATP in the pipette solution (Figure 3—figure supplement 1). This is most likely due to the abundance of ATP in the cell which is not rapidly diluted by the patch pipette solutions. Or the intracellular ATP has a concentration gradient at various sites and is associated with endogenous enzymes at different localizations.
 
@@ -74,9 +110,21 @@ TRPV2 ion channel has been shown to regulate the phagocytosis of macrophages (Li
 
 Next, we evaluated the regulatory effect of JAK1 on TRPV2 function using shRNA-mediated knockdown (Figure 3H). We observed that selective knockdown of JAK1 expression largely reduced Mg2+-mediated tyrosine phosphorylation of TRPV2 protein (Figure 3I). Consistently, knockdown of JAK1 expression inhibited the enhancing effect of Mg2+ on TRPV2 current responses in BMDM cells (Figure 3J–K). These results together suggest that JAK1 is the kinase underlying Mg2+-induced enhancement of TRPV2 activation.
 
-## JAK1 phosphorylates TRPV2 at Y335, Y471, and Y525 molecular sites
+### JAK1 phosphorylates TRPV2 at Y335, Y471, and Y525 molecular sites
 
 Our above results showed that the influx of Mg2+ through TRPV2 channel would activate JAK1 and increase the phosphorylation level of the channel, we then investigated the molecular mechanism. Since our mass spectrometry experiment had shown that Y335 was a potential site that may be phosphorylated by JAK1 (Figure 3—figure supplement 1), we asked whether the mutation at this site would affect the effect of Mg2+ on TRPV2 currents. Indeed, mutating Y335 into phenylalanine to simulate dephosphorylation partially inhibited the enhancement of TRPV2 currents by Mg2+ (Figure 4A–B). For comparison, the treatment with 5 mM Mg2+ increased the 2-APB response (0.3 mM) by approximately 9-fold for mutation Y335F, whereas approximately 16-fold for wild-type (WT) TRPV2. The substitution of Y by F approximates a tyrosine that cannot be phosphorylated, while mutations to the negative charge of aspartic acid (D) or glutamic acid (E) are commonly used to mimic phosphorylated tyrosine (Pearlman et al., 2011). As expected, we observed that mutants TRPV2-Y335D and TRPV2-Y335E increased the sensitivity to 2-APB (Figure 4C–D). We thus further verified the effect of Y335F mutation on protein phosphorylation status. Figure 4E illustrates that JAK1-mediated phosphorylation of TRPV2-Nt was abolished by TRPV2(Y335F) and significantly inhibited by the dominant-negative mutant of JAK1 (JAK1-K908A). These data suggest that Y335 is a critical site for JAK1-mediated tyrosine phosphorylation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative whole-cell currents at –60 mV elicited with 0.3 mM 2-APB, 0.3 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB in HEK293T cells that expressed TRPV2(Y335F). Bars represent duration of stimuli. The dotted line indicates zero current level. (B) Comparison of relative changes between wild-type TRPV2 and TRPV2(Y335F) following the treatment by Mg2+. p = 0.003 by unpaired Student’s t-test. (C) Representative whole-cell currents at –60 mV evoked by varying concentrations of 2-APB in HEK293T cells that expressed TRPV2(Y335D) or TRPV2(Y335E). (D) Concentration-response curves of 2-APB for TRPV2 mutants. Solid lines represent fits by a Hill’s equation with EC50 = 0.53 ± 0.01 mM and nH = 3.5 ± 0.1 for TRPV2-WT (n = 9); EC50 = 0.28 ± 0.01 mM and nH = 3.4 ± 0.2 for Y335D (n = 8); EC50 = 0.31 ± 0.01 mM and nH = 3.3 ± 0.1 for Y335E (n = 7) and EC50 = 0.60 ± 0.01 mM and nH = 3.4 ± 0.2 for Y335F (n = 8). (E) In vitro kinase assay with [32P]-γ-ATP, immunoprecipitated tyrosine kinase JAK1 and recombinant His-tagged wild-type or mutant TRPV2 N-terminus. Phosphorylation signals were examined by autoradiography. (F) Linear diagram of the TRPV2 channel topology, with all intracellular tyrosine residues labeled, and a summary of substitutions of tyrosine by phenylalanine used in this study. (G) Summary plot of the Mg2+-dependent enhancement in various mutants. All the TRPV2 mutants retained their normal responses to 2-APB. *p < 0.05, ***p < 0.001. (H) Statistic results for the Mg2+-dependent enhancement for mutants which were respectively reverse mutated from TRPV2-6YF. ***p < 0.001. (I) Representative whole-cell currents at –60 mV elicited with 0.15 mM 2-APB, 0.15 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB in HEK293T cells that expressed TRPV2-Y335/471/525F. (J) Average plot of the relative changes of wild-type and Y335/471/525F currents following treatment by Mg2+. p = 2.30E-9 0.001 by unpaired Student’s t-test. (K) Immunoblotting analysis with anti-phosphotyrosine antibody (pTyr) showing the tyrosine phosphorylation levels in HEK293T cells transfected with TRPV2 or TRPV2-Y335/471/525F in the absence and presence of Mg2+. Right, quantitative analysis of the fold increase of tyrosine-phosphorylated TRPV2 proteins and TRPV2(Y335/471/525F) proteins following different treatments (n = 3; means ± SD [standard deviation]). Error bars indicate standard error of the mean (SEM).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Multiple alignments of TRPV2 amino acid sequences surrounding Y335, Y471, and Y525 from rat, mouse, human, rabbit, macaque, cattle, dog, horse, and whale. The residues of Y335, Y471, and Y525 are boxed in the sequence alignment.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) Representative currents at +60 mV recorded in an inside-out patch excised from transient receptor potential vanilloid 2 (TRPV2)(wild-type)-expressing cells (A), the TRPV2(wild-type)-expressing cells pretreated with 10 μM Ruxolitinib (B), and TRPV2(Y335/471/525F)-expressing cells (C). The dotted line indicates zero current level. (D) Average plot of the relative changes. p = 7.05E-7 for control vs. Ruxolitinib treatment and p = 2.78E-9 for control vs. Y335/471/525F treatment using one-way analysis of variance (ANOVA) t-test. Error bars indicate standard error of the mean (SEM).
 
 Since mutation Y335F partially abolishes the enhancement effect of Mg2+, there may exist other phosphorylation sites in TRPV2 channel protein. Using mutant Y335F as a template, we further mutated the tyrosine residues in the N-terminal ankyrin repeat domain, the membrane-proximal domain, intracellular linkers (Linker), and the C-terminal (Ct) into phenylalanine by site-directed mutagenesis, respectively. We obtained the following mutants: 8YF (Y98/105/111/162/208/228/271/335F), 3YF (Y323/335/343F), 6YF (Y335/455/471/514/515/525F), and 2YF (Y335/675F) (Figure 4F). Mutant 6YF greatly reduced the Mg2+-induced enhancement of TRPV2 response (Figure 4G). When phenylalanine at positions 471 and 525 were reversed back to tyrosine from the 6YF mutant (6YF471Y and 6YF525Y), the enhancement of TRPV2 was rescued (Figure 4H).
 
@@ -84,15 +132,31 @@ Triple mutant TRPV2(Y335/471/525F) was generated to confirm the significance of 
 
 To discern the potentiation is depended on intracellular signaling, we repeated the experiments in excised membrane patches. As shown in Figure 4—figure supplement 2A, the inside-out recordings from TRPV2-expressing HEK293T cells at +60 mV show that the presence of Mg2+ increased the 2-APB response. However, whether the excised membrane patches might attach portion of tyrosine kinase JAK1 remained unknown. Therefore, we further conducted the experiments by pretreatment with the JAK1 inhibitor, Ruxolitinib, which indeed reduced the enhancement caused by Mg2+ (Figure 4—figure supplement 2B). This confirms the Mg2+-induced TRPV2 current enhancement is modulated by JAK1 phosphorylation (Figure 3). Moreover, we performed inside-out recordings to test the effect of Mg2+ on TRPV2(Y335/471/525F) mutant channel that loses the capability to be phosphorylated by JAK1. As expected, Mg2+ failed to enhance the 2-APB-evoked currents (Figure 4—figure supplement 2C). Together, these data corroborate that Mg2+-JAK1-mediated phosphorylation contributes to the increased sensitivity of the TRPV2 channel (Figure 4—figure supplement 2D). Of note, our findings also imply that the excised membrane patches cannot completely isolate the regulatory effect of the intracellular signaling pathway occurring underneath the cell membrane site.
 
-## Tyrosine phosphorylation enhances chemical and thermal sensitization of TRPV2
+### Tyrosine phosphorylation enhances chemical and thermal sensitization of TRPV2
 
 Protein phosphorylation is a reversible post-translational modification mediated by kinases and phosphatases. Having characterized JAK1 as the kinase for tyrosine phosphorylation of TRPV2, we next sought to identify the phosphatases that counteracted this process. We took advantage of various protein phosphatase inhibitors to search for the phosphatases that mediated the dephosphorylation of TRPV2. The protein phosphatases comprise the phosphoprotein phosphatase (PPP) family, the protein phosphatase Mg2+- or Mn2+-dependent (PPM) family, and the protein tyrosine phosphatase (PTP) (Barford et al., 1998). We first examined the effect of pretreatment of the phosphatase inhibitors, which would elevate the basal phosphorylation level of TRPV2 and compromise the subsequent enhancing effect of Mg2+ on current responses. As shown in Figure 5A–B and a significant impact was observed with PTP inhibitor 1 (2-bromo-4'-hydroxy acetophenone) and PTP inhibitor 2 (4-(bromoacetyl)anisole), but not PPP inhibitors salubrinal, LB-100, cyclosporin A, cantharidin, nor the PPM inhibitor CCT007093. We then confirmed that inhibition of tyrosine dephosphorylation by PTP inhibitors indeed increased tyrosine phosphorylation levels of TRPV2 (Figure 5C–D). Besides, we found that in BMDM, the upregulation of tyrosine phosphorylation of TRPV2 caused by PTP inhibitors induced a left-shift of the concentration-response curve to agonist application (Figure 5E–F). The corresponding EC50 values were 0.18 ± 0.01 and 0.09 ± 0.01 mM in the presence of PTP inhibitor 1 or 2, respectively, compared to EC50 = 0.55 ± 0.01 mM under control condition. Conversely, TRPV2(Y335/471/525F) mutant deficit in Mg2+ influx showed no significant change in the presence of PTP inhibitors (Figure 5G).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig5-v2.jpg)
+
+**Figure 5.:** (A) Whole-cell recordings from TRPV2-expressing HEK293T cell were consecutively challenged with 0.3 mM 2-aminoethyl diphenylborinate (2-APB), 0.3 mM 2-APB plus 5 mM Mg2+ and 3 mM 2-APB. The cells were pretreated with protein tyrosine phosphatase (PTP) inhibitor 1 and PTP inhibitor 2 for 5 min, respectively. The dotted line indicates zero current level. (B) Summary plot of effects of various phosphatase inhibitors on TRPV2 currents. (C) Immunoblotting analysis with anti-phosphotyrosine antibody exhibiting tyrosine phosphorylation of immunoprecipitated TRPV2-Flag in HEK293T cells under control conditions and after treatment with PTP inhibitor 1 or PTP inhibitor 2. (D) Schematic diagram showing increased TRPV2 tyrosine-phosphorylation levels caused by phosphokinase JAK1 or inhibition of PTP activity. (E) Representative whole-cell currents evoked by increasing concentrations of 2-APB for rat bone marrow-derived macrophages (rBMDMs). The cells were pretreated with PTP inhibitor 1 (top) and PTP inhibitor 2 (bottom). (F) Dose-response curves of 2-APB. Fitting by Hill’s equation resulted in the following: EC50 = 0.55 ± 0.01 mM and nH = 3.9 ± 0.2 for control (n = 6); EC50 = 0.18 ± 0.01 mM and nH = 3.4 ± 0.1 for treatment by PTP inhibitor 1 (n = 6) and EC50 = 0.09 ± 0.01 mM and nH = 3.3 ± 0.3 for treatment by PTP inhibitor 2 (n = 7). (G) Concentration-response curves of 2-APB in TRPV2-Y335/471/525F-expressing HEK293T cells under treatment by DMSO, PTP inhibitor 1 or PTP inhibitor 2. Fitting by Hill’s equation resulted in the following: EC50 = 0.36 ± 0.01 mM and nH = 3.8 ± 0.1 for control (n = 5); EC50 = 0.34 ± 0.01 mM and nH = 3.1 ± 0.1 for treatment by PTP inhibitor 1 (n = 6) and EC50 = 0.26 ± 0.01 mM and nH = 3.8 ± 0.7 for treatment by PTP inhibitor 2 (n = 6). (H–J) Representative current traces, temperature-activation relations, and plot of log(Itest/I40oC+1) determinations for DMSO pretreated rBMDMs. (K–M) Representative current traces, temperature-activation relations, and plot of log(Itest/I40oC+1) determinations for PTP inhibitor 1 pretreated rBMDMs. (N–P) Representative current traces, temperature-activation relations, and plot of log(Itest/I40oC+1) determinations for PTP inhibitor 2 pretreated rBMDMs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Representative whole-cell recordings from TRPV2-expressing HEK293T cells pretreated with PTP inhibitor 1 (A) and PTP inhibitor 2 (B). The cells were exposed to increasing concentrations of 2-APB and the holding potential was –60 mV. The dotted line indicates zero current level. (C) Concentration-response curves of 2-APB. Solid lines indicate fits by a Hill’s equation, with EC50 = 0.48 ± 0.02 mM and nH = 3.7 ± 0.4 for control (n = 7); EC50 = 0.16 ± 0.01 mM and nH = 3.4 ± 0.2 for the treatment by PTP inhibitor 1 (n = 6), and EC50 = 0.10 ± 0.01 mM and nH = 3.2 ± 0.3 for the treatment by PTP inhibitor 2 (n = 7). (D–F) Representative current traces, temperature-activation relations, and plot of log(Itest/I40oC+1) determinations for DMSO pretreated TRPV2-expressing HEK293T cells. (G–I) Representative current traces, temperature-activation relations, and plot of log(Itest/I40oC+1) determinations for PTP inhibitor 1 pretreated TRPV2-expressing HEK293T cells. (J–L) Representative current traces, temperature-activation relations, and plot of log(Itest/I40oC+1) determinations for PTP inhibitor 2 pretreated TRPV2-expressing HEK293T cells. Error bars indicate standard error of the mean (SEM).
+
 We next determined the effect of PTP-mediated dephosphorylation of TRPV2 on its temperature sensitivity. We employed an ultrafast infrared laser system capable of delivering a short temperature pulse surrounding BMDMs. Figure 5H–P illustrates heat-activated currents of TRPV2 treated with DMSO (Figure 5H–J), PTP inhibitor 1 (Figure 5K–M), and PTP inhibitor 2 (Figure 5N–P), respectively. Remarkably, we observed that boosting tyrosine phosphorylation lowered the thermal activation threshold of TRPV2 by ~12°C. Similar results were obtained for TRPV2 channels expressed in HEK293T heterologous expression systems (Figure 5—figure supplement 1). Taken together, these results support that tyrosine phosphorylation promotes both the chemical and thermal sensitivities of TRPV2, which are both controlled by phosphatase dephosphorylation.
 
-## PTPN1 phosphatase controls tyrosine phosphorylation homeostasis
+### PTPN1 phosphatase controls tyrosine phosphorylation homeostasis
 
 We further determined the subtypes of PTP phosphatases involved in controlling TRPV2 phosphorylation processes. We observed that knocking down of PTPN1 phosphatase by shRNA increased the tyrosine phosphorylation of TRPV2 (Figure 6A–B), which increased its sensitivity to the chemical agonist 2-APB (Figure 6C). Conversely, no effect was observed following the inhibition of the expression of PTPN2, PTPN11, PTPN12, PTPN14, PTP4A1, or PTEN (Figure 6C). As corroboration, downregulating PTPN1 expression to boost the basal phosphorylation level compromised the enhancing effect of subsequently applied Mg2+ on TRPV2 current responses (Figure 6D–E).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig6-v2.jpg)
+
+**Figure 6.:** (A) Immunoblot analysis (with anti-PTPN1 or anti-β-action) of HEK293T cells transfected for 48 hr with PTPN1-targeting shRNA (shPTPN1#1 and shPTPN1#2) or shControl to test knockdown efficiency of shRNA. (B) Immunoblot analysis of the tyrosine phosphorylation level of TRPV2 in HEK293T cells transfected with shControl or shPTPN1#2 for 48 hr. (C) Concentration-response curves of 2-aminoethyl diphenylborinate (2-APB). Whole-cell recordings were performed in HEK293T transfected with various protein tyrosine phosphatase-targeting shRNA. (D) Whole-cell recordings in TRPV2-expressing HEK293T cells that were transfected for 48 hr with shPTPN1#2 showing the response to 0.1 mM 2-APB, 0.1 mM 2-APB plus 5 mM Mg2+ and 1 mM 2-APB. The dotted line indicates zero current level. (E) Comparison of relative changes under different conditions. p = 3.88E-10 by unpaired Student’s t-test. (F–H) Representative current traces, temperature-activation relations, and plot of log(Itest/I44oC+1) determinations for TRPV2-expressing HEK293T cells which were transfected for 48 hr with shControl. (I–K) Representative current traces, temperature-activation relations, and plot of log(Itest/I44oC + 1) determinations for TRPV2-expressing HEK293T cells which were transfected for 48 hr with shPTPN1#2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78301/elife-78301-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** This study demonstrates that JAK1 phosphokinase mediates Mg2+-dependent phosphorylation of TRPV2 at Y335, Y471, and Y525 residues. And, increasing tyrosine phosphorylation of TRPV2 lowers its thermal activation threshold and enhances its sensitivity to agonistic stimuli. Furthermore, protein tyrosine phosphatase non-receptor type 1 (PTPN1) is the tyrosine phosphatase that mediates the dephosphorylation of the TRPV2 channel.
 
 We then investigated the effect of PTPN1 on heat activation of TRPV2, by applying time-locked temperature jumps. Increasing tyrosine phosphorylation by inhibition of the PTPN1-mediated dephosphorylation significantly decreased the temperature threshold of TRPV2 activation (Figure 6F–K). These data suggest that PTPN1 phosphatase restrains basal phosphorylation levels of TRPV2 to regulate its function.
 
@@ -114,50 +178,319 @@ By specifically perturbing the JAK1-mediated phosphorylation and PTPN1-mediated 
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phosphotyrosine antibody (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab179530; RRID: AB_828379</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-(Ser/Thr)Phe antibody (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab17464; RRID: AB_443891</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag antibody (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#20543–1-AP; RRID: AB_11232216</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRPV2 antibody (Rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat#ACC-032; RRID: AB_2040266</td>
+      <td>WB (1:500), IP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (H+L) (Goat polyclonal)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#115-035-003; RRID: AB_10015289</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG (H+L) (Goat polyclonal)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#111-005-003; RRID: AB_2337913</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-JAK1 antibody (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab133666</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PTPN1 antibody (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab244207; RRID: AB_2877148</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag Affinity Gel (Mouse monoclonal)</td>
+      <td>Bimake</td>
+      <td>Cat#B23102;RRID: AB_2728745</td>
+      <td>(15 μl)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProteinIso Protein G Resin</td>
+      <td>TransGen</td>
+      <td>Cat#DP401</td>
+      <td>(30 μl)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-APB</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#D9754,CAS: 524-95-8</td>
+      <td>TRPV2 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2·6H2O</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#M2393,CAS: 7791-18-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Na2-ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A2383;CAS: 34369-07-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Biosharp</td>
+      <td>Cat#BS107;CAS: 60-00-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMP-PNP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A2647;CAS: 25612-73-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-2206</td>
+      <td>TargetMol</td>
+      <td>Cat#T1952;CAS: 1032350-13-2</td>
+      <td>Akt inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staurosporine</td>
+      <td>TargetMol</td>
+      <td>Cat#T6680;CAS: 62996-74-1</td>
+      <td>PKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KN-93 Phosphate</td>
+      <td>TargetMol</td>
+      <td>Cat#T2606;CAS: 1188890-41-6</td>
+      <td>CaMKII inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D4476</td>
+      <td>TargetMol</td>
+      <td>Cat#T2449;CAS: 301836-43-1</td>
+      <td>CK1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U0126-EtOH</td>
+      <td>TargetMol</td>
+      <td>Cat#T6223;CAS: 1173097-76-1</td>
+      <td>MEK1/2 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ruxolitinib</td>
+      <td>TargetMol</td>
+      <td>Cat#T1829;CAS: 941678-49-5</td>
+      <td>JAK1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Salubrinal</td>
+      <td>TargetMol</td>
+      <td>Cat#T3045;CAS: 405060-95-9</td>
+      <td>PP1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB-100</td>
+      <td>MCE</td>
+      <td>Cat#HY-18597;CAS: 1632032-53-1</td>
+      <td>PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclosproin A</td>
+      <td>TargetMol</td>
+      <td>Cat#T0945;CAS: 59865-13-3</td>
+      <td>PP2B inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cantharidin</td>
+      <td>Aladdin</td>
+      <td>Cat#c111020;CAS: 56-25-7</td>
+      <td>PP1 and PP2A inhibitors</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CCT007093</td>
+      <td>TargetMol</td>
+      <td>Cat#T1927;CAS:176957-55-4</td>
+      <td>PPM1D inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PTP inhibitor 1</td>
+      <td>TargetMol</td>
+      <td>Cat#T7084;CAS: 2491-38-5</td>
+      <td>PTPs inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PTP inhibitor 2</td>
+      <td>TargetMol</td>
+      <td>Cat#T7541;CAS: 2632-13-5</td>
+      <td>PTPs inhibitor</td>
+    </tr>
+    <tr>
+      <td>Cell lines (species)</td>
+      <td>Human embryo kidney (HEK) 293T (human)</td>
+      <td>ATCC</td>
+      <td>Cat#CRL-3216;RRID: CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>QStudio</td>
+      <td>Developed by Dr Feng Qin from University of New York at Buffalo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Micro-Manager 1.4</td>
+      <td>Vale Lab, UCSF</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Clampfit</td>
+      <td>Molecular Devices, Sunnyvale, CA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>IGOR</td>
+      <td>Wavemetrics, Lake Oswego, OR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>SigmaPlot</td>
+      <td>SPSS Science, Chicago, IL</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>OriginPro</td>
+      <td>OriginLab Corporation, Northampton, MA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HEK293T cell line used in this study was from the American Type Culture Collection and Thermo Fisher, authenticated by STR locus and tested negative for mycoplasma contamination. HEK293T cells were grown in Dulbecco’s modified Eagle’s medium (DMEM, Thermo Fisher Scientific, Waltham, MA) containing 4.5 mg/ml glucose, 10% heat-inactivated fetal bovine serum (FBS), 1% penicillin-streptomycin, and were incubated at 37°C in a 5% CO2 humidified incubator. Cells grown into ~80% confluence were transfected with the desired DNA constructs using Lipofectamine 2000 (Invitrogen, Carlsbad, CA) following the protocol provided by the manufacturer. Transfected cells were reseeded on poly-L-lysine-coated glass coverslips for electrophysiological experiments. Experiments took place usually 12–24 hr after transfection.
 
-## cDNA constructs and mutagenesis
+### cDNA constructs and mutagenesis
 
 WT rat TRPV2 (rTRPV2) was generously provided by Dr Feng Qin (State University of New York at Buffalo, Buffalo, NY). JAK1 was a gift from Dr Hongbing Shu (Medical Research Institute, Wuhan University). All mutations were generated using the overlap-extension polymerase chain reaction method as previously described (Wang et al., 2020) and were verified by DNA sequencing. Oligo DNAs targeting JAK1, PTPN1, and several PTPs were synthesized, annealed, and inserted into pLKO.1 vector. The sequences of JAK1 shRNA are as follows: for rat JAK1 shRNA: #1, 5′-GCCCTGAGTTACTTGGAAGAT-3′; #2, 5′-CGGTCCAATC TGCACAGAATA-3′; #3, 5′-GCAGAAACCAAATGTTCTTCC-3′; for human JAK1 shRNA: #1, 5′-GAGACTTCCATGTTACTGATT-3′; #2, 5′-GACAGTCACAAGAC TTGTGAA-3′; #3, 5′-GCCTTAAGGAATATCTTCCAA-3′. The sequences of PTPN1 shRNA are as follows: for human PTPN1 shRNA: #1, 5′-TGCGACAGCTAGAATTGGAAA-3′; #2, 5′-GCTGCTCTGCTATATGCCTTA-3′. The sequences of rat TRPV2 shRNA are as follows: #1, 5′-GCATGCTCTGGTAATG ATTGC-3′; #2, 5′-GCTGTTCAAGTTCACCATTGG-3′; #3, 5′-GGAAATCTCCA ACCACCAAGG-3′; #4, 5′-GGAAGTTGCAGAAAGCCATCT-3′.
 
-## Rat and mouse bone marrow-derived macrophages
+### Rat and mouse bone marrow-derived macrophages
 
 Bone marrow-derived cells were isolated from 4- to 8-week-old Sprague-Dawley (SD) rats as described (Zhang et al., 2020). After the rats were euthanized, the femurs and tibias were collected. The cells were resuspended in bone marrow differentiation media, RPMI1640 supplemented with 1% penicillin-streptomycin, 10% FBS, and 30% L929 cells conditioned medium containing macrophage colony stimulating factor (M-CSF) for 4–6 days to obtain BMDMs. Cells were cultured at 37°C in a classic CO2 incubator with 5% CO2.
 
 All animals were housed in the specific pathogen-free animal facility at Wuhan University and all animal experiments were following protocols approved by the Institutional Animal Care and Use Committee of Wuhan University (No. WDSKY0201804) and adhered to the Chinese National Laboratory Animal-Guideline for Ethical Review of Animal Welfare. The animals were euthanatized with CO2 followed by various studies.
 
-## Preparation of DRG neurons
+### Preparation of DRG neurons
 
 DRG neurons were prepared for electrophysiological experiments by minor modification of a previously described method (Tian et al., 2019). Briefly, 4- to 6-week-old adult SD male rats were deeply anesthetized and decapitated. DRGs together with dorsal-ventral roots and attached spinal nerves were isolated from thoracic and lumbar segments of spinal cords. After removal of the attached nerves and surrounding connective tissues, DRG neurons were rinsed with ice-cold phosphate buffer saline (PBS). Ganglia were dissociated by enzymatic treatment with collagenase type IA (1 mg/ml), trypsin (0.4 mg/ml), and DNase I (0.1 mg/ml) and incubated at 37°C for 30 min. Then cells were dispersed by gentle titration, collected by centrifuge, seeded onto 0.1 mg/ml poly-L-lysine-coated coverslips, and maintained in DMEM/F12 medium containing 10% FBS, 1% penicillin, and streptomycin. Electrophysiology recordings were carried out ~2–4 hr after plating.
 
-## Electrophysiology
+### Electrophysiology
 
 The patch-clamp recording of channel currents was made in either whole-cell or inside-out configuration. Currents were amplified using an Axopatch 200B amplifier (Molecular Devices, Sunnyvale, CA) through a BNC-2090/MIO acquisition system (National Instruments, Austin, TX). Data acquisition was controlled by QStudio developed by Dr Feng Qin at State University of New York at Buffalo. Data were typically sampled at 5 kHz and low-pass filtered at 1 kHz. Recording pipettes were pulled from borosilicate glass capillaries (World Precision Instruments [WPI]) to 2–4 MΩ when filled with 150 mM NaCl solution. The compensation of pipette series resistance (>80%) and capacitance was taken by using the built-in circuitry of the amplifier, and the liquid junction potential between the pipette and bath solutions was zeroed prior to seal formation. All voltages were defined as membrane potentials with respect to extracellular solutions. For whole-cell recording, the bath solution contained the following (in mM): 140 NaCl, 5 KCl, 3 EGTA, 10 HEPES (the pH was adjusted to 7.4 with NaOH). In one set of experiments, the salt of YCl2 (Y means Mg2+, Mn2+, Ca2+, Ba2+, Zn2+, Cu2+, Ni2+, Cd2+, or Co2+) was individually dissolved in deionized water to make stock solutions and subsequently diluted into a basic solution ([in mM] 140 NaCl, 5 KCl, and 10 HEPES, pH 7.4) to make a desired final concentration. The solution containing 10–100 mM Mg2+ was prepared from 140 mM NaCl-containing solution by replacing the appropriate NaCl with MgCl2. The internal pipette solution consisted of (in mM): 140 CsCl, 10 HEPES, and 1 ATP-Na2, pH 7.4 (adjusted with CsOH). For inside-out recordings, the bath and pipette solutions were symmetrical and contained (in mM): 140 NaCl, 5 KCl, 10 HEPES, pH 7.4 adjusted with NaOH. For cation substitution experiment, pipette solution contains (in mM): 140 NaCl and 10 HEPES, pH 7.4 adjusted with NaOH. After the whole-cell configuration was obtained, bath solution was replaced with specific cationic solution, and a voltage step pulse was used to measure the reversal potential. Channel activators were diluted into the recording solution at the desired final concentrations and applied to the cell of interest through a gravity-driven local perfusion system. Unless otherwise stated, all chemicals were purchased from Sigma (Sigma, St Louis, MO). Water-insoluble reagents were dissolved in either 100% ethanol or DMSO to make stock solutions and were diluted in the recording solutions at appropriate concentrations before experiments. The final concentrations of ethanol or DMSO did not exceed 0.3%, which did not affect the currents. All experiments except those for heat activation were sampled at room temperature (22–24°C).
 
-## Temperature jump
+### Temperature jump
 
 Fast-temperature jumps were produced by a single emitter infrared laser diode (1470 nm) as previously described (Yao et al., 2009). Briefly, the laser diode was driven by a pulsed quasi-CW current power supply (Stone Laser, Beijing, China), and the pulsing of the controller was controlled from a computer through the data acquisition card using QStudio software. Constant temperature steps were generated by irradiating the tip of an open pipette filled with the pipette solution and the current of the electrode was used as a readout for feedback control. The sequence of the modulation pulses was stored and subsequently played back to apply temperature jumps to the cell of interest. The temperature was calibrated offline from the pipette current based on the temperature dependence of electrolyte conductivity. The threshold temperature for heat activation of TRPV2 was determined by the methods as previously described (Zhang et al., 2018).
 
-## Immunoprecipitation and Western blot
+### Immunoprecipitation and Western blot
 
 In brief, cells were collected and lysed in Nonidet P-40 lysis buffer containing 150 mM NaCl, 1 mM EDTA, 1% Nonidet P-40, 1% protease inhibitor cocktail, and 1% phosphatase inhibitor cocktail if needed after washing with PBS. The anti-Flag affinity gel or the appropriate antibodies were added into the lysates and incubated at 4°C for 4 hr or overnight with slow rotation. After being washed three times with prelysis buffer containing 500 mM NaCl, the precipitants were resuspended into 2× SDS sample buffer, boiled, and subjected to SDS-polyacrylamide gel electrophoresis (SDS-PAGE). Immunoblot analysis was performed with the appropriate antibodies.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 To identify in vivo tyrosine phosphorylation sites of TRPV2, HEK293T cells were transfected with Flag-tagged TRPV2. After 24 hr, the cells were harvested following the treatment with 0.3 mM 2-APB or the combination of 0.3 mM 2-APB and 5 mM Mg2+ lasting for 5 min. Flag-TRPV2 was immunoprecipitated by anti-Flag affinity gel and subjected to SDS-PAGE.
 
 The samples were digested with trypsin, enriched by titanium dioxide, and then analyzed by liquid chromatography–tandem mass spectrometry (LC-MS/MS) using a Q Exactive-HF mass spectrometer (Thermo Fisher Scientific). Dynamic modification included oxidation (Met) and phosphorylation (STY), and static modification included carbamidomethylation (Cys). The LC-MS/MS data were processed using Proteome Discoverer (version 2.1, Thermo Fisher Scientific) and searched against the Swiss-prot Homo sapiens protein sequence database.
 
-## In vitro kinase assay
+### In vitro kinase assay
 
 In vitro kinase assay was performed as previously described (Li et al., 2019). In brief, HEK293T cells were transfected with plasmids encoding Flag-JAK1, Flag-JAK1(K908A), respectively. Cells were lysed with NP-40 lysis buffer and the cell lysates were immunoprecipitated with anti-Flag agarose (Sigma, St Louis, MO). His-tagged TRPV2 and His-tagged TRPV2 (Y335F) were purified from bacteria (E. coli) using Ni-Agarose Resin. For the JAK1 in vitro kinase assay in Figure 3, Flag-JAK1 was respectively incubated with His-TRPV2 in the kinase buffer (6.25 mM Tris-HCl [pH 7.5], 0.125 mM Na3VO4, 2.5 mM MgCl2, 0.125 mM EGTA, 0.625 mM DTT, and 0.01% Triton X-100) in the presence of 10 μCi [32P]-γ-ATP (Perkin Elmer Company) with a final volume of 20 μl. For the JAK1 in vitro kinase assay in Figure 4, His-TRPV2 and His-TRPV2 (Y335F) were incubated with or without Flag-JAK1 and Flag-JAK1(K908A) in the kinase buffer in the presence of 10 μCi [32P]-γ-ATP with a final volume of 20 μl. The mixture was incubated at 30°C on a shaker with 300 rpm shaking for 60 min. The reaction mixtures were resolved by SDS-PAGE, and 32P-labeled proteins were analyzed by autoradiography.
 
-## Assessment of phagocytosis
+### Assessment of phagocytosis
 
 For phagocytosis assays, BMDMs were incubated with RPMI 1640 medium addition of GFP E. coli together with 0.1 or 0.05 mM SKF96365, or 2, 5, and 10 μM Ruxolitinib in six-well translucent plates (JET Biofil, China) for 2 hr at 37°C. After washing two to three times by PBS, the BMDMs were harvested by cell Scrapers, resuspended into PBS, and analyzed by flow cytometry using a CytoFLEX Flow Cytometer (Beckman Coulter, Brea, CA).
 
-## Statistical analysis
+### Statistical analysis
 
 Electrophysiological data were analyzed offline with Clampfit (Molecular Devices, Sunnyvale, CA), IGOR (Wavemetrics, Lake Oswego, OR), SigmaPlot (SPSS Science, Chicago, IL), and OriginPro (OriginLab Corporation, Northampton, MA). For concentration-dependent analysis, the modified Hill’s equation was used: Y = A1 + (A2 – A1)/[1+10^(logEC50 – X)*nH], in which EC50 is the half-maximal effective concentration, and nH is the Hill’s coefficient. All data are expressed as either mean ± standard error of the mean (SEM) or mean ± standard deviation (SD) as stated, from a population of cells (n). Statistical tests of significance were carried out by Student’s t-test for one-group comparison and two-group comparison or one-way analysis of variance (ANOVA) tests for multiple group comparisons, and p < 0.05 was considered statistically significant (*p < 0.05, **p < 0.01, ***p < 0.001).

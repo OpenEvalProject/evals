@@ -7,13 +7,13 @@
 ### Affiliations
 
 1. Health and Medical University, Institute for Mind, Brain and Behavior Potsdam Germany
-2. https://ror.org/001w7jn25 Charité – Universitätsmedizin Berlin, Department of Psychiatry and Neurosciences, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin Berlin Germany
+2. Charité – Universitätsmedizin Berlin, Department of Psychiatry and Neurosciences, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
 
 † Corresponding author
 
 ## Abstract
 
-The human ability to introspect on thoughts, perceptions or actions − metacognitive ability − has become a focal topic of both cognitive basic and clinical research. At the same time it has become increasingly clear that currently available quantitative tools are limited in their ability to make unconfounded inferences about metacognition. As a step forward, the present work introduces a comprehensive modeling framework of metacognition that allows for inferences about metacognitive noise and metacognitive biases during the readout of decision values or at the confidence reporting stage. The model assumes that confidence results from a continuous but noisy and potentially biased transformation of decision values, described by a confidence link function. A canonical set of metacognitive noise distributions is introduced which differ, amongst others, in their predictions about metacognitive sign flips of decision values. Successful recovery of model parameters is demonstrated, and the model is validated on an empirical data set. In particular, it is shown that metacognitive noise and bias parameters correlate with conventional behavioral measures. Crucially, in contrast to these conventional measures, metacognitive noise parameters inferred from the model are shown to be independent of performance. This work is accompanied by a toolbox ( ReMeta ) that allows researchers to estimate key parameters of metacognition in confidence datasets.
+The human ability to introspect on thoughts, perceptions or actions − metacognitive ability − has become a focal topic of both cognitive basic and clinical research. At the same time it has become increasingly clear that currently available quantitative tools are limited in their ability to make unconfounded inferences about metacognition. As a step forward, the present work introduces a comprehensive modeling framework of metacognition that allows for inferences about metacognitive noise and metacognitive biases during the readout of decision values or at the confidence reporting stage. The model assumes that confidence results from a continuous but noisy and potentially biased transformation of decision values, described by a confidence link function. A canonical set of metacognitive noise distributions is introduced which differ, amongst others, in their predictions about metacognitive sign flips of decision values. Successful recovery of model parameters is demonstrated, and the model is validated on an empirical data set. In particular, it is shown that metacognitive noise and bias parameters correlate with conventional behavioral measures. Crucially, in contrast to these conventional measures, metacognitive noise parameters inferred from the model are shown to be independent of performance. This work is accompanied by a toolbox (ReMeta) that allows researchers to estimate key parameters of metacognition in confidence datasets.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Here I argue that an unbiased estimation of latent metacognitive parameters requ
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig1-v1.jpg)
 
-**Figure 1.:** Input to the model is the stimulus variable x, which codes the stimulus category (sign) and the intensity (absolute value). Type 1 decision-making is controlled by the sensory level. The processing of stimuli x at the sensory level is described by means of sensory noise (σs), bias (δs) and threshold (ϑs) parameters. The output of the sensory level is the decision value y, which determines type 1 decisions d and provides the input to the metacognitive level. At the metacognitive level it is assumed that the dominant source of metacognitive noise is either noise at the readout of decision values (noisy-readout model) or at the reporting stage (noisy-report model). In both cases, metacognitive judgements are based on the absolute decision value |y| (referred to as sensory evidence), leading to a representation of metacognitive evidence  at the metacognitive level. While the “readout” of this decision value is considered precise for the noisy-report model (z*z = ), it is subject to metacognitive readout noise z∗z ∼ fm(z; z*,σm) in the noisy-readout model, described by a metacognitive noise parameter σm. A link function transforms metacognitive evidence to internal confidence . In the case of a noisy-report model, the dominant metacognitive noise source is during the report of confidence, that is confidence reports c∗c are noisy expressions of the internal confidence representation: c ∼ fm(c; c*,σm). Metacognitive biases operate at the level of sensory evidence (multiplicative evidence bias φm, additive evidence bias δm) or at the level of the confidence link function (multiplicative confidence bias λm, additive confidence bias κm).
+**Figure 1.:** Input to the model is the stimulus variable x, which codes the stimulus category (sign) and the intensity (absolute value). Type 1 decision-making is controlled by the sensory level. The processing of stimuli x at the sensory level is described by means of sensory noise (σs), bias (δs) and threshold (ϑs) parameters. The output of the sensory level is the decision value y, which determines type 1 decisions d and provides the input to the metacognitive level. At the metacognitive level it is assumed that the dominant source of metacognitive noise is either noise at the readout of decision values (noisy-readout model) or at the reporting stage (noisy-report model). In both cases, metacognitive judgements are based on the absolute decision value |y| (referred to as sensory evidence), leading to a representation of metacognitive evidence $z^{*}$ at the metacognitive level. While the “readout” of this decision value is considered precise for the noisy-report model (z = $z^{∗}$), it is subject to metacognitive readout noise z ∼ fm(z; z*,σm) in the noisy-readout model, described by a metacognitive noise parameter σm. A link function transforms metacognitive evidence to internal confidence $c^{∗}$. In the case of a noisy-report model, the dominant metacognitive noise source is during the report of confidence, that is confidence reports c are noisy expressions of the internal confidence representation: c ∼ fm(c; c*,σm). Metacognitive biases operate at the level of sensory evidence (multiplicative evidence bias φm, additive evidence bias δm) or at the level of the confidence link function (multiplicative confidence bias λm, additive confidence bias κm).
 
 A few key design choices deserve emphasis. First, the model assumes that confidence is a second-order process (Fleming and Daw, 2017) which assesses the evidence that guided type 1 behavior. In the proposed nomenclature of Maniscalco and Lau, 2016 it corresponds to a hierarchical model and not to a single-channel model in that it considers additional sources of metacognitive noise. A consequence of the hierarchical structure is that it is essential to capture the processes underlying the decision values at the type 1 level as precisely as possible, since decision values are the input to metacognitive computations. In the present model, this includes an estimate of both a sensory bias and a sensory threshold, both of which will influence type 1 decision values.
 
@@ -51,41 +51,77 @@ This article is accompanied by a toolbox − the Reverse engineering of Metacogn
 
 Results are structured in three parts. The first part introduces the architecture and the computational model, from stimulus input to type 1 and type 2 responses. The second part provides the mathematical basis for model inversion and parameter fitting and systematically assesses the success of parameter recovery as a function of sample size and varied ground truth parameter values. Finally, in the third part, the model is validated on an empirical dataset (Shekhar and Rahnev, 2021).
 
-## Computational model
+### Computational model
 
-## Computing decision values
+#### Computing decision values
 
-For the model outlined here, the task space is restricted to two stimulus categories referred to as S− and S+. Stimuli are described by the stimulus variable x, the sign of which codes the stimulus category and the absolute value |x| codes the intensity of the stimulus. The sensory level computes decision values y* from the stimulus input x as follows:(1)y∗={x+δsif|x|> ϑsδselse
+For the model outlined here, the task space is restricted to two stimulus categories referred to as S− and S+. Stimuli are described by the stimulus variable x, the sign of which codes the stimulus category and the absolute value |x| codes the intensity of the stimulus. The sensory level computes decision values $y^{*}$ from the stimulus input x as follows:
 
-The sensory bias parameter δsϵR captures systematic preferences for one response category (Figure 2A) and corresponds to a horizontal shift of the resulting psychometric function. Positive (negative) values of δs lead to a propensity to choose stimulus category S+ (S−). In addition, the sensory threshold ϑsϵR+ defines the minimal stimulus intensity which is necessary to drive the system, that is, above which the observer’s type 1 choices can be better than chance level (Figure 2B). Decision values y* are fixed to zero below ϑs in the absence of a sensory bias, and fixed to δs in the presence of a bias (Figure 2C). Note that a sensory threshold parameter should only be considered if the stimulus material includes intensity levels in a range at which participants perform close to chance. Otherwise, the parameter cannot be estimated and should be omitted, that is, Equation 1 reduces to  y* = x + δs.
+$$
+y^{∗}={x+\delta_{s}if|x|> ϑ_{s}\delta_{s}else
+$$
+
+The sensory bias parameter $\delta_{s}ϵR$ captures systematic preferences for one response category (Figure 2A) and corresponds to a horizontal shift of the resulting psychometric function. Positive (negative) values of δs lead to a propensity to choose stimulus category S+ (S−). In addition, the sensory threshold $ϑ_{s}ϵR^{+}$ defines the minimal stimulus intensity which is necessary to drive the system, that is, above which the observer’s type 1 choices can be better than chance level (Figure 2B). Decision values $y^{*}$ are fixed to zero below $ϑ_{s}$ in the absence of a sensory bias, and fixed to δs in the presence of a bias (Figure 2C). Note that a sensory threshold parameter should only be considered if the stimulus material includes intensity levels in a range at which participants perform close to chance. Otherwise, the parameter cannot be estimated and should be omitted, that is, Equation 1 reduces to  $y^{*}$ = x + δs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig2-v1.jpg)
+
+**Figure 2.:** Top left legends indicate the values of varied parameters, bottom right legends settings of the respective other parameters. (A) The sensory bias parameter δs horizontally shifts the psychometric function, leading to a propensity to choose stimulus category S− (δs < 0) or stimulus category S+ (δs > 0). (B) Stimulus intensities below the threshold parameter ϑs lead to chance-level performance. (C) Example for simultaneous non-zero values of the bias and threshold parameter. (D) The sensory noise parameter σs changes the slope of the psychometric function.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Early visual processing likely involves nonlinear transformations of stimulus signals, including processes such as contrast gain control nonlinearities or nonlinear transduction. In the toolbox, either a power transformation or an exponential transformation is considered. In both cases, the transformation includes a renormalization to 1, such that any difference in linear stimulus intensity scaling between participants is captured by the decision noise parameter σs. (A) Power transformation. (B) Exponential transformation.
 
 In the model described here I assume that decision values can be linearly constructed from the stimulus variable x. In practice, this may often be too strong of an assumption, and it may thus be necessary to allow for a nonlinear transformation of x (‘nonlinear transduction’, see e.g. Dosher and Lu, 1998). The toolbox therefore offers an additional nonlinear transformation parameter γs (see Figure 2—figure supplement 1 for an illustration).
 
-The final decision value y is subject to sources of sensory noise σs, described by a logistic distribution fs(y):(2)y ~ fsy=π3σsexpπ(y- y*)3σs1+expπ(y- y*)3σs2
+The final decision value y is subject to sources of sensory noise σs, described by a logistic distribution fs(y):
 
-Equation 2 is a reparameterization of a standard logistic distribution in terms of the standard deviation σs using the fact that the standard deviation of the logistic distribution is equal to sπ/3 (where s is the conventional scale parameter of the logistic distribution). Figure 2D shows psychometric functions with varying levels of sensory noise σs. The logistic distribution was chosen over the more conventional normal distribution due to its explicit analytic solution of the cumulative density − the logistic function. In practice, both distributions are highly similar, and which one is chosen is unlikely to matter.
+$$
+y ~ f_{s}y=\frac{\pi}{\sqrt{3}\sigma_{s}}\frac{exp\frac{\pi(y- y^{*})}{\sqrt{3}\sigma_{s}}}{1+exp\frac{\pi(y- y^{*})}{\sqrt{3}\sigma_{s}}^{2}}
+$$
 
-Type 1 decisions d between the stimulus categories S+ and S− are based on the sign of y:(3)d={S+if y≥0S−if y<0
+Equation 2 is a reparameterization of a standard logistic distribution in terms of the standard deviation σs using the fact that the standard deviation of the logistic distribution is equal to sπ/$\sqrt{3}$ (where s is the conventional scale parameter of the logistic distribution). Figure 2D shows psychometric functions with varying levels of sensory noise σs. The logistic distribution was chosen over the more conventional normal distribution due to its explicit analytic solution of the cumulative density − the logistic function. In practice, both distributions are highly similar, and which one is chosen is unlikely to matter.
 
-## From decision values to metacognitive evidence
+Type 1 decisions d between the stimulus categories S+ and S− are based on the sign of y:
 
-The decision values computed at the sensory level constitute the input to the metacognitive level. I assume that metacognition leverages the same sensory information that also guides type 1 decisions (or a noisy version thereof). Specifically, metacognitive judgements are based on a readout of absolute decision values |y|, henceforth referred to as sensory evidence. Respecting a multiplicative (φm ∈ ℝ+) and an additive (δm ∈ ℝ) evidence bias, an estimate of sensory evidence is computed at the metacognitive level – metacognitive evidence z*:(4)z*=maxφmy+δm , 0
+$$
+d={S^{+}if y\geq0S^{−}if y<0
+$$
+
+#### From decision values to metacognitive evidence
+
+The decision values computed at the sensory level constitute the input to the metacognitive level. I assume that metacognition leverages the same sensory information that also guides type 1 decisions (or a noisy version thereof). Specifically, metacognitive judgements are based on a readout of absolute decision values |y|, henceforth referred to as sensory evidence. Respecting a multiplicative (φm ∈ ℝ+) and an additive (δm ∈ ℝ) evidence bias, an estimate of sensory evidence is computed at the metacognitive level – metacognitive evidence $z^{*}$:
+
+$$
+z^{*}=max\phi_{m}y+\delta_{m }, 0
+$$
 
 The multiplicative evidence bias φm and the additive evidence bias δm are two different types of metacognitive biases at the readout stage, which are described in more detail in ‘Metacognitive biases’. Note that the max operation is necessary to enforce positive values of metacognitive evidence.
 
-## The link function: from metacognitive evidence to confidence
+#### The link function: from metacognitive evidence to confidence
 
-The transformation from metacognitive evidence to internal confidence c* is described by a link function. A suitable link function must be bounded, reflecting the fact that confidence ratings typically have lower and upper bounds, and increase monotonically.
+The transformation from metacognitive evidence to internal confidence $c^{*}$ is described by a link function. A suitable link function must be bounded, reflecting the fact that confidence ratings typically have lower and upper bounds, and increase monotonically.
 
-I assume that observers aim at reporting probability correct, leading to a logistic link function in the case of the logistic sensory noise distribution (Equation 2). Without loss of generality, I use the range [0;1] for confidence ratings, such that a confidence level of 0 indicates expected chance-level type 1 performance (probability correct = 0.5) and a confidence level of 1 the expectation of optimal type 1 performance (probability correct = 1.0). Note that I do not consider the possibility that type 1 errors can be reported at the time of the confidence report, that is, confidence cannot be negative. With these constraints and using the simple mathematical relationship between the logistic function and the tangens hyperbolicus, one arrives at the following link function (see Appendix 1, Equation A1, for the derivation):(5)c*=tanh⁡π23σsz
+I assume that observers aim at reporting probability correct, leading to a logistic link function in the case of the logistic sensory noise distribution (Equation 2). Without loss of generality, I use the range [0;1] for confidence ratings, such that a confidence level of 0 indicates expected chance-level type 1 performance (probability correct = 0.5) and a confidence level of 1 the expectation of optimal type 1 performance (probability correct = 1.0). Note that I do not consider the possibility that type 1 errors can be reported at the time of the confidence report, that is, confidence cannot be negative. With these constraints and using the simple mathematical relationship between the logistic function and the tangens hyperbolicus, one arrives at the following link function (see Appendix 1, Equation A1, for the derivation):
 
-Note that I use the variable z as opposed to z*, to indicate that the metacognitive evidence that enters the link function may be a noisy version of z* (see the description of the noisy-readout model below). Figure 3 shows examples of evidence-confidence relationships based on the link function in Equation 5 and in dependence of several model parameters.
+$$
+c^{*}=tanh⁡\frac{\pi}{2\sqrt{3}\sigma_{s}}z
+$$
+
+Note that I use the variable z as opposed to $z^{*}$, to indicate that the metacognitive evidence that enters the link function may be a noisy version of $z^{*}$ (see the description of the noisy-readout model below). Figure 3 shows examples of evidence-confidence relationships based on the link function in Equation 5 and in dependence of several model parameters.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig3-v1.jpg)
+
+**Figure 3.:** All metacognitive bias parameters and noise parameters affect the relationship between the sensory evidence |y| and confidence, assuming the link function provided in Equation 5. (A) Effect of metacognitive bias parameters on the evidence-confidence relationship. Metacognitive noise was set to zero for simplicity. (B) Effect of metacognitive noise σm and sensory noise σs on the evidence-confidence relationship. Metacognitive noise renders confidence ratings more indifferent with respect to the level of sensory evidence. Note that, due to the absence of an analytic expression, the illustration for the effect of metacognitive noise is based on simulation. Increasing sensory noise affects the slope of the confidence-evidence relationship, reflecting changes to be expected from an ideal metacognitive observer.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Alternative choices for link functions provided by the ReMeta toolbox describing the relationship between metacognitive evidence and confidence. Note that these link functions do not compute the subjective probability of being correct. Link functions: tanh (simple tangens hyperbolicus), linear (linear slope, no intercept), step function (criterion-based link function with three criteria placed at evidence levels 0.2, 0.4, and 0.7), piecewise (piecewise linear function with three criteria placed at evidence levels of 0.05, 0.2, and 0.5), piecewise invertible (piecewise linear function with two criteria placed at evidence levels of 0.1 and 0.3; to attain invertibility, the last piece is described by a tangens hyperbolicus with an additional parameter).
 
 Many other link functions are conceivable, which do not assume that observers aim at expressing confidence as probability correct. In particular, such link functions may not involve an estimate of sensory noise σs. Figure 3—figure supplement 1 illustrates alternative link functions provided by the ReMeta toolbox.
 
-I refer to c* as the internal confidence, which may be different from the ultimately reported confidence c. This distinction becomes important when metacognitive noise is considered at the level of the confidence report (see Result, ‘Metacognitive noise: noisy-report models’).
+I refer to $c^{*}$ as the internal confidence, which may be different from the ultimately reported confidence c. This distinction becomes important when metacognitive noise is considered at the level of the confidence report (see Result, ‘Metacognitive noise: noisy-report models’).
 
-## Metacognitive biases
+#### Metacognitive biases
 
 Metacognitive biases describe a systematic discrepancy between objective type 1 performance and subjective beliefs thereof (expressed via confidence ratings). Relative to an ideal metacognitive observer of stastistical confidence, overconfident observers report systematically higher levels of confidence and underconfident observers report systematically lower levels of confidence. Importantly, metacognitive biases are orthogonal to the metacognitive sensitivity of an observer. For instance, an underconfident observer who consistently chooses the second-lowest confidence rating for correct choices could have high metacognitive sensitivity nevertheless, as long as they consistently choose the lowest rating for incorrect choices. In the present model I consider metacognitive biases either at the level of evidence or at the level of confidence (Figure 1).
 
@@ -93,7 +129,11 @@ Metacognitive evidence biases represent a biased representation of sensory evide
 
 An alternative interpretation of metacognitive evidence biases at the readout stage is that they correspond to an under- or overestimation of one’s own sensory noise σs. Applying this view, a value of φm > 1 would suggest that the observer underestimated sensory noise σs and hence shows overconfidence, whereas a value of φm < 1 implies that the observer overestimated σs and thus is underconfident.
 
-In addition, the present model considers metacognitive bias parameters loading on internal confidence representations. To this end, the confidence link function (Equation 5) is augmented by a multiplicative confidence bias λm and an additive confidence bias κm:(6)c*=λmtanh⁡π23σsz+κm
+In addition, the present model considers metacognitive bias parameters loading on internal confidence representations. To this end, the confidence link function (Equation 5) is augmented by a multiplicative confidence bias λm and an additive confidence bias κm:
+
+$$
+c^{*}=\lambda_{m}tanh⁡\frac{\pi}{2\sqrt{3}\sigma_{s}}z+κ_{m}
+$$
 
 Analogous to the evidence biases, values of λm < 1 and κm < 0 reflect underconfidence, and values of λm > 1 and κm > 0 reflect overconfidence. The effects of all metacognitive evidence and confidence bias parameters are illustrated in Figure 3A.
 
@@ -101,7 +141,7 @@ To assess how evidence- and confidence-related metacognitive biases relate to co
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig4-v1.jpg)
 
-**Figure 4.:** φm, δm, λm, κm).Gray shades indicate areas of true overconfidence according to the generative model. Gray stripes areas indicate additional areas that would be classified as overconfidence in conventional analyses of confidence data, i.e. when simply comparing objective und subjective probability correct. Simulations are based on a noisy-report model with a truncated normal metacognitive noise distribution. Metacognitive noise was set close to zero for simplicity. (Left panels) Calibration curves. Calibration curves compute the proportion of correct responses (objective probability correct) for each interval of subjective confidence reports. Calibration curves above and below the diagonal indicate under- and overconfident observers, respectively. For this analysis, confidence was transformed from rating space [0; 1] to probability space [0.5; 1] and divided in 100 intervals with bin size 0.01. Average type 1 performance for this simulation was around 70%. (Middle panels) Confidence bias in dependence of type 1 performance. Different levels of type 1 performance were simulated by sweeping the sensory noise parameter between 0.01 and 50. Confidence bias was computed as the difference between subjective probability correct and objective proportion correct. (Right panels) Recovery of metacognitive bias parameters in dependence of performance. Shades indicate standard deviations.
+**Figure 4.:** Gray shades indicate areas of true overconfidence according to the generative model. Gray stripes areas indicate additional areas that would be classified as overconfidence in conventional analyses of confidence data, i.e. when simply comparing objective und subjective probability correct. Simulations are based on a noisy-report model with a truncated normal metacognitive noise distribution. Metacognitive noise was set close to zero for simplicity. (Left panels) Calibration curves. Calibration curves compute the proportion of correct responses (objective probability correct) for each interval of subjective confidence reports. Calibration curves above and below the diagonal indicate under- and overconfident observers, respectively. For this analysis, confidence was transformed from rating space [0; 1] to probability space [0.5; 1] and divided in 100 intervals with bin size 0.01. Average type 1 performance for this simulation was around 70%. (Middle panels) Confidence bias in dependence of type 1 performance. Different levels of type 1 performance were simulated by sweeping the sensory noise parameter between 0.01 and 50. Confidence bias was computed as the difference between subjective probability correct and objective proportion correct. (Right panels) Recovery of metacognitive bias parameters in dependence of performance. Shades indicate standard deviations.
 
 As mentioned previously, metacognitive sensitivity (AUROC2, meta-d’) is strongly dependent on type 1 performance. How do metacognitive biases perform in this regard, when measured in a model-free manner from choice and confidence reports? To find out, I simulated confidence biases for a range of metacognitive bias parameter values and type 1 performance levels (by varying the sensory noise parameter). Confidence biases were computed as the difference between subjective probability correct (by linearly transforming confidence from rating space [0; 1] to probability space [0.5; 1]) and objective probability correct. As shown in the middle panels of Figure 4, these results showcase the limits of naively measuring confidence biases in this way. Again, the bias-free observer shows an apparent overconfidence bias. In addition, this bias increases as type 1 performance decreases, reminiscent of the classic hard-easy effect for confidence (Lichtenstein and Fischhoff, 1977a; for related analyses, see Soll, 1996; Merkle, 2009; Drugowitsch, 2016; Khalvati et al., 2021). At chance level performance, the overconfidence bias is exactly 0.25.
 
@@ -113,7 +153,7 @@ Is it possible to recover unbiased estimates for the metacognitive bias paramete
 
 Finally, note that the parameter recovery shown in Figure 4 was performed with four separate models, each of which was specified with a single metacognitive bias parameter (i.e., φm, δm, λm, or κm). Parameter recovery can become unreliable when more than two of these bias parameters are specified in parallel (see ‘Parameter recovery’). In practice, the researcher thus must make an informed decision about which bias parameters to include in a specific model. In most scenarios one or two metacognitive bias parameters are likely a good choice. While the evidence-related bias parameters φm and δm have a more principled interpretation (e.g. as an under/overestimation of sensory noise), it is not unlikely that metacognitive biases also emerge at the level of the confidence report (λm, κm). The first step thus must always be a process of model specification or a statistical comparison of candidate models to determine the final specification (see also ‘On using the model framework’).
 
-## Confidence criteria
+#### Confidence criteria
 
 In the model outlined here, confidence results from a continuous transformation of metacognitive evidence, described by a parametric link function (Equation 5). The model thus has no confidence criteria. However, it would be readily possible to replace the tangens hyperbolicus with a stepwise link function where each step is described by the criterion placed along the z-axis and the respective confidence level (alternatively, one can assume equidistant confidence levels, thereby saving half of the parameters). Such a link function might be particularly relevant for discrete confidence rating scales where participants associate available confidence ratings with often idiosyncratic and not easily parameterizable levels of metacognitive evidence.
 
@@ -123,9 +163,9 @@ My premise here is that these two specific criteria can be described as an impli
 
 Importantly, a minimum confidence criterion is implicit to the additive evidence bias δm. As explained above, a negative value of δm effectively corresponds to a metacognitive threshold, such that metacognitive evidence z (and hence confidence) is zero for decision values smaller than δm. A maximum confidence criterion can be realized by the confidence bias parameters λm and κm. Specifically, assuming λm > 1 or κm > 0, the maximum criterion is the point along the metacognitive evidence axis at which a link function of the form λm·tanh(..) + κm becomes exactly 1. In sum, both a minimum and a maximum confidence criterion can be implemented as a form of a metacognitive bias.
 
-## Metacognitive noise: noisy-readout models
+#### Metacognitive noise: noisy-readout models
 
-A key aspect of the current model is that the transformation from sensory decision values to confidence reports is subject to sources of metacognitive noise. In this section, I first consider a model of type noisy-readout, according to which the metacognitive noise mainly applies to the metacognitive readout of absolute sensory decision values (i.e. z*). The final metacognitive evidence z is thus a noisy version of z*. By contrast, sources of noise involved in the report of confidence are considered negligible and the internal confidence estimate c* resulting from the link function is equal to the reported confidence c.
+A key aspect of the current model is that the transformation from sensory decision values to confidence reports is subject to sources of metacognitive noise. In this section, I first consider a model of type noisy-readout, according to which the metacognitive noise mainly applies to the metacognitive readout of absolute sensory decision values (i.e. $z^{*}$). The final metacognitive evidence z is thus a noisy version of $z^{*}$. By contrast, sources of noise involved in the report of confidence are considered negligible and the internal confidence estimate $c^{*}$ resulting from the link function is equal to the reported confidence c.
 
 Metacognitive noise is defined by a probability distribution and a metacognitive noise parameter σm. The appropriate noise distribution for such readout noise is an open empirical question. Here, I introduce a family of potential candidates. A key consideration for the choice of a noise distribution is the issue of sign flips. I distinguish two cases.
 
@@ -143,13 +183,13 @@ While truncated distributions behave well mathematically, compared to censored d
 
 Finally, there are many candidates of probability distributions that are naturally bounded at zero, perhaps the most prominent one being the lognormal distribution. In addition, I consider the Gamma distribution (Figure 5C), which has a more pronounced lower tail and is also the connatural counterpart to the Beta distribution for noisy-report models (see next section).
 
-## Metacognitive noise: noisy-report models
+#### Metacognitive noise: noisy-report models
 
-In contrast to noisy-readout models, a noisy-report model assumes that the readout noise of decision values is negligible (z = z*) and that the dominant source of metacognitive noise occurs at the reporting stage: c ∼ fm(c). Reporting noise itself may comprise various different sources of noise, occurring for example during the mental translation to an experimental confidence scale or in the form of visuomotor noise (e.g. when using a mouse cursor to indicate a continuous confidence rating).
+In contrast to noisy-readout models, a noisy-report model assumes that the readout noise of decision values is negligible (z = $z^{*}$) and that the dominant source of metacognitive noise occurs at the reporting stage: c ∼ fm(c). Reporting noise itself may comprise various different sources of noise, occurring for example during the mental translation to an experimental confidence scale or in the form of visuomotor noise (e.g. when using a mouse cursor to indicate a continuous confidence rating).
 
 A hard constraint for reporting noise is the fact that confidence scales are typically bounded between a minimum and a maximum confidence rating (reflecting the bounds [0; 1] for c in the present model). Reported confidence cannot be outside these bounds, regardless of the magnitude of reporting noise. As in the case of the noisy-readout model, one may consider either censored (Figure 5D), truncated (Figure 5E) or naturally bounded distributions (Beta distribution; Figure 5F) to accommodate this constraint.
 
-## Metacognitive noise as a measure of metacognitive ability
+#### Metacognitive noise as a measure of metacognitive ability
 
 As outlined above, I assume that metacognitive noise can be described either as variability during readout or report. In both cases, metacognitive noise is governed by the parameter σm. Higher values of σm will lead to a flatter relationship between reported confidence and sensory evidence, that is, confidence ratings become more indifferent with regard to different levels of evidence (Figure 3B).
 
@@ -159,39 +199,67 @@ Here, I was interested in two main questions: can metacognitive noise σm be tru
 
 To assess the type 1 performance dependency, I simulated data with varying levels of sensory noise σs and five different values of σm. In each case I computed Mratio on the data and also fitted the model to recover the metacognitive noise parameter σm. As shown in the left panels of Figure 6A (noisy-report) and 6B (noisy-readout), Mratio shows a nonlinear dependency with varying type 1 performance levels. While this simulation was based on multiple stimulus levels, a similar nonlinear dependency is also present for a scenario with constant stimuli (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig6-v1.jpg)
+
+**Figure 6.:** Different performance levels were induced by varying the sensory noise of the forward model. Five different levels of metacognitive noise were simulated for a truncated normal noise distribution, covering the range between low and high metacognitive noise. While Mratio showed a nonlinear dependency with varying type 1 performance levels both for (A) noisy-report models and (B) noisy-readout models, the recovered metacognitive noise parameter σm was largely independent of type 1 performance. Shaded areas indicate standard deviations across 100 simulated subjects. Right panels: Relationship between metacognitive noise and Mratio. Simulated data were generated with a range of varying metacognitive noise parameters σm and constant sensory noise (σs = 0.5; proportion correct responses: 0.82). Computed Mratio values show a clear negative correspondence with σm, reflecting the fact that metacognitive performance decreases with higher metacognitive noise.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** This simulation mirrors the simulations in Figure 6 but is based on only a single stimulus intensity level for both stimulus categories. While parameter recovery improves for the noisy-readout model under the extreme regime of low sensory and high metacognitive noise relative to a scenario with varying stimulus levels (Figure 6), parameter recovery becomes somewhat more unstable at low type 1 performance levels / high sensory noise.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** This simulation mirrors the simulations in Figure 6, while varying settings for other parameters (as indicated in the title for each column). Changed parameters: sensory threshold ϑs, sensory bias δs, multiplicative evidence bias φm, additive evidence bias δm, multiplicative confidence bias λm, additive confidence bias κm. Note that metacognitive confidence biases are incompatible with a noisy-readout model and hence this combination was omitted.
+
 By contrast, the parameter σm is recovered without bias across a broad range of type 1 performance levels and at different levels of generative metacognitive noise (Figure 6, middle panels). The exception is a regime with very high metacognitive noise and low sensory noise under the noisy-readout model, in which recovery becomes biased. A likely reason is related to the inversion of the link function, which is necessary for parameter inference in noisy-readout models (‘Metacognitive level’): since the link function is dependent on sensory noise σs, its inversion becomes increasingly imprecise as σs approaches very small or very high values. However, apart from these extremal cases under the noisy-readout model, σm is largely unbiased and is thus a promising candidate to measure metacognitive ability independent of type 1 performance. Figure 6—figure supplement 2 shows that this conclusion also holds for various settings of other model parameters.
 
 Despite the fact that Mratio may not be entirely independent of type 1 performance, it is likely that it captures the metacognitive ability of observers to some degree. It is thus interesting to assess the relationship between the model-based measure of metacognitive noise σm and Mratio. To this aim, I performed a second simulation in which type 1 performance was kept constant (at around 82% correct) by using a fixed sensory noise parameter (σs = 0.5) while varying the generative metacognitive noise parameter σm. In addition, Mratio was computed for each simulated observer. As shown in the right panels of Figure 6A and B, there was indeed a strong negative correlation between σm and Mratio both for the noisy-report (r = −0.97) and the noisy-readout model (r = −0.91). Of note, a very similar relationship is observed for the unnormalized measure meta-d’ (noisy-report: r = −0.97; noisy-readout: r = −0.91). The negative sign of the correlation is expected since a higher degree of noise should lead to more imprecise confidence ratings and thus reduced metacognitive performance.
 
-## Model fitting
+### Model fitting
 
 Model fitting proceeds in a two-stage process. First, parameters of the sensory level are fitted by maximizing the likelihood of the model with respect to the observed type 1 decisions. Second, using the decision values predicted by the sensory level, the parameters of the metacognitive level are fitted by maximizing the likelihood with respect to observed confidence reports. The two levels are thus fitted independently. The reason for the separation of both levels is that choice-based parameter fitting for psychometric curves at the type 1/sensory level is much more established and robust compared to the metacognitive level for which there are more unknowns (e.g. the type of link function or metacognitive noise distribution). Hence, the current model deliberately precludes the possibility that the estimates of sensory parameters are influenced by confidence ratings.
 
-In the following, the capital letter D denotes observed type 1 decisions, and the capital letter C denotes observed confidence ratings. The set of parameters of the sensory level is denoted as Ps:={σs,ϑs,δs} and the set of parameters of the metacognitive level as Pm:={σm,φm,δm,λm,κm}.
+In the following, the capital letter D denotes observed type 1 decisions, and the capital letter C denotes observed confidence ratings. The set of parameters of the sensory level is denoted as $P_{s}:={\sigma_{s},ϑ_{s},\delta_{s}}$ and the set of parameters of the metacognitive level as $P_{m}:={\sigma_{m},\phi_{m},\delta_{m},\lambda_{m},κ_{m}}$.
 
-## Sensory level
+#### Sensory level
 
-At the sensory level, sensory noise is considered to follow a logistic distribution (Equation 2). The likelihood L of a particular type 1 decision D for stimulus x has an analytic solution given by the logistic function:(7)L(D=S+∣Ps)=1−L(D=S−∣Ps)=11+exp(−π3σsy∗(x;ϑs,δs))
+At the sensory level, sensory noise is considered to follow a logistic distribution (Equation 2). The likelihood $L$ of a particular type 1 decision D for stimulus x has an analytic solution given by the logistic function:
 
-where y* (x; ϑs, δs) is given by Equation 1. By maximizing the (cumulative) likelihood across trials, estimates for σs, ϑs, and δs are obtained.
+$$
+L(D=S^{+}∣P_{s})=1−L(D=S^{−}∣P_{s})=\frac{1}{1+exp(−\frac{\pi}{\sqrt{3}\sigma_{s}}y^{∗}(x;ϑ_{s},\delta_{s}))}
+$$
 
-## Metacognitive level
+where $y^{*}$ (x; ϑs, δs) is given by Equation 1. By maximizing the (cumulative) likelihood across trials, estimates for σs, ϑs, and δs are obtained.
+
+#### Metacognitive level
 
 Parameter inference at the metacognitive level requires the output of the sensory level (decision values y) and empirical confidence ratings C. In addition, if the goal is to compute confidence as probability correct (as assumed here), the estimate of sensory noise σs is required. By running the model in feed-forward mode and using the fitted sensory parameters, the likelihood of confidence ratings is evaluated either at the stage of readout (noisy-readout model) or report (noisy-report model).
 
 Special consideration is necessary for the noisy-readout model in which the significant metacognitive noise source is assumed at the level of an unobserved variable − metacognitive evidence. For this reason, the model must be inverted from the point of the observed variable (here confidence ratings) into the space of the latent variable (metacognitive evidence). A consequence of this is that the link function that transforms metacognitive decision values to confidence ratings must be strictly monotonically increasing in the noisy-readout scenario, as model inversion would otherwise be ambiguous.
 
-Using the link function considered for this work, the tangens hyperbolicus (Equation 5), the inversion is as follows:(8)Z=23σsπarctanh(C−κmλm)
+Using the link function considered for this work, the tangens hyperbolicus (Equation 5), the inversion is as follows:
 
-Importantly, the likelihood L(C∣Pm) of observed confidence ratings C given parameters Pm not only depends on the uncertainty of the model prediction for metacognitive decision values z* (y), but also on the uncertainty around the decision values y themselves. Computing the likelihood L(C∣Pm) thus requires an integration over the probability density fs(y):(9)Noisy-readout:        L(C∣Pm)=∫fm(Z∣z∗(y))fs(y) dy
+$$
+Z=\frac{2\sqrt{3}\sigma_{s}}{\pi}arctanh(\frac{C−κ_{m}}{\lambda_{m}})
+$$
+
+Importantly, the likelihood $L(C∣P_{m})$ of observed confidence ratings C given parameters $P_{m}$ not only depends on the uncertainty of the model prediction for metacognitive decision values $z^{*}$ (y), but also on the uncertainty around the decision values y themselves. Computing the likelihood $L(C∣P_{m})$ thus requires an integration over the probability density fs(y):
+
+$$
+Noisy-readout:        L(C∣P_{m})=\intf_{m}(Z∣z^{∗}(y))f_{s}(y) dy
+$$
 
 The term z*(y) is given by Equation 4.
 
-In case of the noisy-report model, the likelihood can be directly computed with respect to the observed confidence reports C, that is, without inversion of the link function:(10)Noisy-report:        L(C∣Pm)=∫fm(C∣c∗(y))fs(y) dy
+In case of the noisy-report model, the likelihood can be directly computed with respect to the observed confidence reports C, that is, without inversion of the link function:
+
+$$
+Noisy-report:        L(C∣P_{m})=\intf_{m}(C∣c^{∗}(y))f_{s}(y) dy
+$$
 
 The term c*(y) corresponds to the link function in Equation 6.
 
-## Parameter recovery
+#### Parameter recovery
 
 To ensure that the model fitting procedure works as expected and that model parameters are distinguishable, I performed a parameter recovery analysis. To this end, I systematically varied each parameter of a model with metacognitive evidence biases and generated data (see below, for a model with confidence biases). Specifically, each of the six parameters (σs, ϑs, δs, σm,φm, δm) was varied in 500 equidistant steps between a sensible lower and upper bound. The model was then fit to each dataset to obtain the recovered parameters.
 
@@ -200,6 +268,34 @@ To assess the relationship between fitted and generative parameters, I computed 
 To test whether parameter recovery was robust against different settings of the respective other parameters, I performed this analysis for a coarse parameter grid consisting of three different values for each of the six parameters except σm, for which five different values were considered. This resulted in 35·51=1,215 slope matrices for the entire parameter grid.
 
 Figure 7 shows the result of this analysis both for a noisy-report and a noisy-readout model, expanded along the sensory (σs) and metacognitive (σm) noise axis of the coarse parameter grid. Overall, generative and fitted parameters show excellent correspondence, that is, nearly all slopes on the diagonal are close to 1.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig7-v1.jpg)
+
+**Figure 7.:** Linear dependency between generative parameters and fitted parameters for the six parameters of the noisy-report and noisy-readout model (σs, $ϑ_{s}$, δs, σm, φm, δm). Linear dependency between generative and fitted parameters was assessed through robust linear slopes. The optimal value for diagonal elements is 1 while off-diagonal elements should be close to zero. Multiple slope matrices were computed for each node of a coarse parameter grid (see text). The figure thus shows average slope matrices, expanded along the coarse parameter grid axes for sensory noise σs and metacognitive noise σm. The row-wise values for σs and the column-wise values for σm indicate the parameter values used for data generation, except when σs or σm where themselves varied.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Sensory parameters: sensory noise σs, sensory threshold ϑs, sensory bias δs. Metacognitive parameters: metacognitive noise σm, multiplicative evidence bias φm, additive evidence bias δm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Note that metacognitive confidence biases are incompatible with a noisy-readout model and hence this combination was omitted. Sensory parameters: sensory noise σs, sensory threshold ϑs, sensory bias δs. Metacognitive parameters: metacognitive noise σm, multiplicative confidence bias λm, additive confidence bias κm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** For simplicity and clarity, this figure shows only slope matrices for intermediate levels of sensory (σs = 0.7) and metacognitive (σm = 0.2) noise, and for 10,000 trials. Sensory parameters: sensory noise σs, sensory threshold ϑs, sensory bias δs. Metacognitive parameters: metacognitive noise σm, multiplicative evidence bias φm, additive evidence bias δm, multiplicative confidence bias λm, additive confidence bias κm. The title displayed over each slope matrix indicates the metacognitive bias parameters that were included in the model.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** For these analyses, the sample size was fixed to 10,000 trials. Sensory parameters: sensory noise σs, sensory threshold ϑs, sensory bias δs. At the metacognitive level the model was specified either with evidence-related (middle row) or confidence-related (bottom row) metacognitive bias parameters. Metacognitive parameters: metacognitive noise σm, multiplicative evidence bias φm, additive evidence bias δm, multiplicative confidence bias λm, additive confidence bias κm. Note that confidence-based metacognitive bias parameters are incompatible with a noisy-readout model and hence this combination was omitted. Error bars represent mean ± standard deviation. Dashed lines indicate the true values of the parameters. The error bars for the model with metacognitive evidence biases were displaced horizontally by −3% (noisy-report) and +3% (noisy-readout) of the full x-range to avoid mutual occlusion.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** Sensory parameters: sensory noise σs, sensory threshold ϑs, sensory bias δs. At the metacognitive level the model was specified either with evidence-related (middle row) or confidence-related (bottom row) metacognitive bias parameters. Metacognitive parameters: metacognitive noise σm, multiplicative evidence bias φm, additive evidence bias δm, multiplicative confidence bias λm, additive confidence bias κm. Note that confidence-based metacognitive bias parameters are incompatible with a noisy-readout model and hence this combination was omitted. For simplicity, all parameters of the generative models were set to 0.2. Error bars represent mean ± standard deviation, dashed lines the true parameter value.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig7-figsupp6-v1.jpg)
+
+**Figure 7—figure supplement 6.:** Data were generated for noisy-readout and noisy-report models with different settings for sensory noise (σs) and metacognitive noise (σm). Model recovery was quantified by the frequency/probability with which the data of a particular generative model were best fitted by the noisy-readout and the noisy-report model. Top panel: 10,000 trials per observer. Bottom panel: 500 trials per observer.
 
 Off-diagonal slopes indicate a potential trade-off between different parameters in the fitting procedure. In the present analysis, the only marked trade-off emerges between metacognitive noise σm and the metacognitive evidence biases (φm, δm) in the noisy-readout model, under conditions of low sensory noise. In this regime, the multiplicative evidence bias φm becomes increasingly underestimated and the additive evidence bias δm overestimated with increasing metacognitive noise. Closer inspection shows that this dependency emerges only when metacognitive noise is high – up to σm≈ 0.3 no such dependency exists. It is thus a scenario in which there is little true variance in confidence ratings (due to low sensory noise many confidence ratings would be close to 1 in the absence of metacognitive noise), but a lot of measured variance due to high metacognitive noise. It is likely for this reason that parameter inference is problematic. Overall, except for this arguably rare scenario, all parameters of the model are highly identifiable and separable.
 
@@ -211,25 +307,33 @@ While the previous analysis indicates overall excellent parameter recovery perfo
 
 Finally, to more systematically assess the precision of parameter recovery in dependence of trial number, I set the value of each generative parameter to 0.2 (arbitrary value) and tested parameter recovery across a range of trial numbers between 500 and 10,000. The results in Figure 7—figure supplement 5 provide a reference for the expected precision of parameter estimates in dependence of trial number.
 
-## Model recovery
+#### Model recovery
 
 One strength of the present modeling framework is that it allows testing whether inefficiencies of metacognitive reports are better described by metacognitive noise at readout (noisy-readout model) or at report (noisy-report model). To validate this type of application, I performed an additional model recovery analysis which tested whether data simulated by either model are also best fitted by the respective model.
 
 Figure 7—figure supplement 6 shows that the recovery probability was close to 1 in most cases, thus demonstrating excellent model identifiability. With fewer trials per observer, recovery probabilities decreased expectedly, but were still at a reasonable level. The only edge case with poorer recovery was a scenario with low metacognitive noise and high sensory noise. Model identification is particularly hard in this regime because low metacognitive noise reduces the relevance of the metacognitive noise source, while high sensory noise increases the general randomness of responses.
 
-## Application to empirical data
+### Application to empirical data
 
-## On using the model framework
+#### On using the model framework
 
 The present work does not propose a single specific model of metacognition, but rather provides a flexible framework of possible models and a toolbox to engage in a metacognitive modeling project. Applying the framework to an empirical dataset thus requires a number of user decisions: which metacognitive noise type is likely more dominant? which metacognitive biases should be considered? which link function should be used? These decisions may be guided either by a priori hypotheses of the researcher or can be informed by running a set of candidate models through a statistical model comparison.
 
 As an exemplary workflow, consider a researcher who is interested in quantifying overconfidence in a confidence dataset with a single parameter to perform a brain-behavior correlation analysis. The concept of under/overconfidence already entails the first modeling choice, as only a link function that quantifies probability correct (Equation 6), i.e. statistical confidence, allows for a meaningful interpretation of metacognitive bias parameters. Moreover, the researcher must decide for a specific metacognitive bias parameter. The researcher may not be interested in biases at the level of the confidence report, but, due to a specific hypothesis, rather at metacognitive biases at the level of readout/evidence, thus leaving a decision between the multiplicative and the additive evidence bias parameter. Also, the researcher may have no idea whether the dominant source of metacognitive noise is at the level of the readout or report. To decide between these options, the researcher computes the evidence (e.g., AIC) for all four combinations and chooses the best-fitting model (ideally, this would be in a dataset independent from the main dataset).
 
-## Application to an example dataset (Shekhar and Rahnev, 2021)
+#### Application to an example dataset (Shekhar and Rahnev, 2021)
 
 To test the proposed model on real-world empirical data, I used a data set recently published by Shekhar and Rahnev, 2021 which has a number of advantageous properties for a modeling approach. First, a high number of 2,800 trials were measured for each of the 20 participants, enabling a precise estimate of computational parameters (Figure 7—figure supplement 5). Second, the task design comprised multiple stimulus intensities, which is expected to improve the fit of a process model. And third, participants rated their confidence on a continuous scale. While the model works well with discrete confidence ratings, only continuous confidence scales harness the full expressive power of the model. In each trial, participants indicated whether a Gabor patch imposed on a noisy background was tilted counterclockwise or clockwise from a vertical reference and simultaneously rated their confidence. The average performance was 77.7% correct responses.
 
 Figure 8A visualizes the overall model fit at the sensory level. The posterior, defined as the probability of choosing S+, closely matched the model fit. The average posterior probability showed a slight x-offset toward higher choice probabilities for S+ which was reflected in a positive average sensory bias δs (group mean ± SEM = 0.06 ± 0.03). Since no stimulus intensities near chance-level performance were presented to participants, a sensory threshold parameter ϑswas not fitted.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig8-v1.jpg)
+
+**Figure 8.:** (A) Posterior probability (choice probability for S+) as a function of normalized signed stimulus intensity. Model-based predictions closely follow the empirical data. Means and standard errors across subjects were computed for the three difficulty levels of each stimulus category. The fit is based on a logistic function with a sensory bias parameter δs. (B) Comparison of noisy-readout and noisy-report models featuring different metacognitive noise distributions. Model comparison was based on the Akaike information criterion (AIC) which quantified model evidence at the metacognitive level (the sensory level is identical between models). Error bars indicate standard errors of the mean (SEM). (C) Breakdown of best-fitting models across participants. (D–G) Inspection of the metacognitive level for the winning model of the type noisy-report with a truncated Gumbel noise distribution. (D) Empirical confidence is well-fitted by model-based predictions of confidence which are based on an average of 1000 runs of the generative model. Error bars represent SEM. (E) Relationship of empirical Mratio and model-based metacognitive noise σm. (F) Partial correlation of the empirical confidence bias the and model-based multiplicative evidence bias φm. The additive evidence bias was partialed out from the confidence bias. (G) Partial correlation of the empirical confidence bias and the model-based additive evidence bias δm. The multiplicative evidence bias was partialed out from the confidence bias.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Empirical confidence distributions are depicted as gray histograms. Distributions of generative models are depicted as orange line plots for the winning model at the group level (noisy-report+truncated Gumbel) and as green line plots for the winning model at the single-subject level.
 
 At the metacognitive level, I compared noisy-readout and noisy-report models in combination with the metacognitive noise distributions introduced in Result, ‘Metacognitive noise: noisy-readout models’ and ‘Metacognitive noise: noisy-report models’. For this analysis, I considered metacognitive evidence biases only (i.e. multiplicative evidence bias φm and additive evidence bias δm). The model evidence was computed based on the Akaike information criterion (AIC; Akaike, 1974). As shown in Figure 8B, with the exception of censored distributions, all models performed at a similar level. Seven of the 10 tested models were the winning model for at least one participant (Figure 8C).
 
@@ -247,15 +351,15 @@ In a final step, I focus on the model fit of a single participant (Figure 9). Th
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/75420/elife-75420-fig9-v1.jpg)
 
-**Figure 9.:** Shekhar and Rahnev, 2021.The applied model was a noisy-report model with a metacognitive noise distribution of the type truncated Gumbel and metacognitive evidence biases Each stimulus category in Shekhar and Rahnev, 2021 was presented with three intensity levels, corresponding to values of ±1/3, ±2/3, and ±1 in normalized stimulus space (variable x). (A) Choice probability for S+ as a function of stimulus intensity. The positive sensory bias δs shifts the logistic function toward the left, thereby increasing the choice probability for S+. (B) Link function, average confidence ratings and likelihood. The link function was transformed into decision value space y, for illustratory purposes. The flat range of the link function is caused by a relatively large additive evidence bias δm. Confidence ratings from empirical data (gray) and from the generative model (orange) for each stimulus levels i are indicated by their mean and standard deviation. Note that these confidence averages derive from the whole range of possible decision values and they are anchored at the most likely decision values  of each stimulus level yi*i only for illustratory purposes. The likelihood for confidence ratings is shown only for the most likely decision values  of each stimulus level yi*i. (C) Confidence distributions and likelihood. Empirical confidence ratings are shown as a histograms and confidence ratings obtained from the generative model as line plots. To visualize the effect of sensory uncertainty on the metacognitive level, likelihood distributions are plotted not only for the most likely values  of the decision value distributions, but also half a standard deviation below (dashed and lighter color) and above (solid and lighter color). The width of likelihood distributions is controlled by the metacognitive noise parameter yi*σm. Distributions colored in red indicate that a sign flip of decision values has occurred, i.e. responses based on these decision values would be incorrect.
+**Figure 9.:** The applied model was a noisy-report model with a metacognitive noise distribution of the type truncated Gumbel and metacognitive evidence biases Each stimulus category in Shekhar and Rahnev, 2021 was presented with three intensity levels, corresponding to values of ±1/3, ±2/3, and ±1 in normalized stimulus space (variable x). (A) Choice probability for S+ as a function of stimulus intensity. The positive sensory bias δs shifts the logistic function toward the left, thereby increasing the choice probability for S+. (B) Link function, average confidence ratings and likelihood. The link function was transformed into decision value space y, for illustratory purposes. The flat range of the link function is caused by a relatively large additive evidence bias δm. Confidence ratings from empirical data (gray) and from the generative model (orange) for each stimulus levels i are indicated by their mean and standard deviation. Note that these confidence averages derive from the whole range of possible decision values and they are anchored at the most likely decision values $y_{i}^{*}$ of each stimulus level i only for illustratory purposes. The likelihood for confidence ratings is shown only for the most likely decision values $y_{i}^{*}$ of each stimulus level i. (C) Confidence distributions and likelihood. Empirical confidence ratings are shown as a histograms and confidence ratings obtained from the generative model as line plots. To visualize the effect of sensory uncertainty on the metacognitive level, likelihood distributions are plotted not only for the most likely values $y_{i}^{*}$ of the decision value distributions, but also half a standard deviation below (dashed and lighter color) and above (solid and lighter color). The width of likelihood distributions is controlled by the metacognitive noise parameter σm. Distributions colored in red indicate that a sign flip of decision values has occurred, i.e. responses based on these decision values would be incorrect.
 
 Figure 9B and C visualize the results of the metacognitive level, which is again of the type noisy-report+truncated Gumbel. For this participant, the model fit indicates a negative additive evidence bias δm, thereby introducing a threshold below which stimuli are not metacognitively accessible (indicated by a flat region for the link function in Figure 9B). This negative additive evidence bias is compensated by a relatively high multiplicative evidence bias φm = 1.15, resulting in an average confidence of 0.488 that is close to the group average (0.477 ± 0.038).
 
 While below average in terms of type 1 performance, this participant excels in terms of metacognitive performance. This is both indicated by a high Mratio of 1.23 (group mean ± SEM = 0.88 ± 0.05) and a low metacognitive noise parameter σm of 0.06 (group mean ± SEM = 0.10 ± 0.02).
 
-It is important to note that a low metacognitive noise parameter σm does not imply that the participants’ confidence ratings are expected to be within a narrow range for each specific stimulus intensity. This is because the uncertainty of the sensory level translates to the metacognitive level: the width of decision value distributions, as determined by sensory noise σs, also affects the expected width of downstream confidence distributions. Indeed, the behavioral confidence distributions in Figure 9C are spread out across the entire confidence range for all difficulty levels. In Figure 9C this aspect is emphasized by not only showing the confidence likelihood for the most likely decision value yi* of each stimulus level i, but also for sensory decision values 0.5 standard deviations below and above yi* .
+It is important to note that a low metacognitive noise parameter σm does not imply that the participants’ confidence ratings are expected to be within a narrow range for each specific stimulus intensity. This is because the uncertainty of the sensory level translates to the metacognitive level: the width of decision value distributions, as determined by sensory noise σs, also affects the expected width of downstream confidence distributions. Indeed, the behavioral confidence distributions in Figure 9C are spread out across the entire confidence range for all difficulty levels. In Figure 9C this aspect is emphasized by not only showing the confidence likelihood for the most likely decision value $y_{i}^{*}$ of each stimulus level i, but also for sensory decision values 0.5 standard deviations below and above $y_{i}^{*}$ .
 
-Note that when considering decision values 0.5 standard deviations above yi* , a sign flip occurs for the two lower stimulus intensities of S− (indicated with likelihood distributions shaded in red). In these cases, the participant would make an incorrect choice. Moreover, the two lower stimulus intensities of S− show a well-known characteristic of statistical confidence: an increase of confidence for incorrect choices as stimulus difficulty increases (Sanders et al., 2016).
+Note that when considering decision values 0.5 standard deviations above $y_{i}^{*}$ , a sign flip occurs for the two lower stimulus intensities of S− (indicated with likelihood distributions shaded in red). In these cases, the participant would make an incorrect choice. Moreover, the two lower stimulus intensities of S− show a well-known characteristic of statistical confidence: an increase of confidence for incorrect choices as stimulus difficulty increases (Sanders et al., 2016).
 
 To compare the empirical confidence distribution of this participant with the distribution predicted by the model, the parameters in the generative model were set to their corresponding fitted values and sampled confidence ratings. The average predicted confidence ratings (Figure 9B, orange error bars) and the density histograms (Figure 9C, orange line plots) obtained from this sampling procedure demonstrate a close fit with the participant’s confidence rating distributions. This close correspondence is not limited to this particular participant. As shown in Figure 8—figure supplement 1, a generative model described by σm, δm and φm is able to approximate a wide range of idiosyncratic empirical confidence distributions.
 
@@ -293,13 +397,13 @@ In sum, while a type 2 ROC analysis – as a descriptive approach – does not a
 
 Finally, how does the present model relate to the recent discussion between Bayesian and Non-Bayesian models of confidence (Aitchison et al., 2015; Sanders et al., 2016; Adler and Ma, 2018a)? A Bayesian observer of the (inner) world is one who maintains a posterior probability density over possible states of that world. In particular, computing confidence for such an observer corresponds to integrating the posterior over all possible states for which the type 1 choice would be correct. In this sense, the model proposed here with the link function provided in Equation 5 corresponds to a Bayesian observer, albeit one that can be susceptible to metacognitive biases and to additional sources of metacognitive noise. Thus, while the observer is Bayesian in nature, it may not be Bayes optimal. At the same time, the framework and the toolbox are flexible to allow for ‘non-Bayesian’ link functions (Figure 3—figure supplement 1) that could represent certain idiosyncratic heuristics and shortcuts inherent to human confidence judgements. Of note, the model proposed here does not consider prior distributions over the stimulus categories (see e.g. Adler and Ma, 2018a). Instead, it is assumed that the observer considers both stimulus categories equally likely which is considered a reasonable assumption if stimulus categories are balanced.
 
-## Conclusion
+### Conclusion
 
 The model outlined in this paper casts confidence as a noisy and potentially biased transformation of sensory decision values. The model parameters that shape this transformation provide a rich account of human metacognitive inefficiencies and metacognitive biases. In particular, I hope that the underlying framework will allow a systematic model comparison in future confidence datasets to elucidate sources of metacognitive noise, to narrow down candidate noise distributions and to differentiate between different kinds of metacognitive biases. The accompanying toolbox ReMeta provides a platform for such investigations.
 
 ## Materials and methods
 
-## The ReMeta toolbox
+### The ReMeta toolbox
 
 The code underlying this work has been bundled in a user-friendly Python toolbox (ReMeta) which is published alongside this paper at https://github.com/m-guggenmos/remeta, (copy archived at swh:1:rev:43ccbf2e35b1e934dab83e156e4fbb22ac160cd2; Guggenmos, 2022). While its core is identical to the framework outlined here, it offers a variety of additional parameters and settings. In particular, it allows fitting separate values for each parameter depending on the sign of the stimulus (for sensory parameters) or the decision value (for metacognitive parameters). Moreover, it offers various choices for noise distributions and link functions, including criterion-based link functions.
 

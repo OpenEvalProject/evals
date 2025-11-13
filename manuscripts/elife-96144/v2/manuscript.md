@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03n6nwv02 Laboratorio Cajal de Circuitos Corticales, Centro de Tecnología Biomédica, Universidad Politécnica de Madrid Madrid Spain
-2. https://ror.org/012gwbh42 Instituto Cajal, Consejo Superior de Investigaciones Científicas (CSIC) Madrid Spain
-3. https://ror.org/00ca2c886 Centro de Investigación Biomédica en Red sobre Enfermedades Neurodegenerativas (CIBERNED), ISCIII Madrid Spain
+1. Laboratorio Cajal de Circuitos Corticales, Centro de Tecnología Biomédica, Universidad Politécnica de Madrid Madrid Spain ([ROR:03n6nwv02](https://ror.org/03n6nwv02))
+2. Instituto Cajal, Consejo Superior de Investigaciones Científicas (CSIC) Madrid Spain ([ROR:012gwbh42](https://ror.org/012gwbh42))
+3. Centro de Investigación Biomédica en Red sobre Enfermedades Neurodegenerativas (CIBERNED), ISCIII Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 
 † Corresponding author
 
@@ -39,33 +39,191 @@ Our previous studies of the EC in autopsy tissue have analyzed the neuropil of l
 
 In the present study, we used coronal sections of the MEC at a caudal level—following the subarea delimitation proposed in Insausti et al., 2017—to analyze layers I, II, III, IV, V, and VI of the EC. The layers were individually delimited based on cytoarchitectural characteristics, identified by two different staining techniques (i.e., Nissl and toluidine blue on semithin sections), as well as by direct visualization using FIB/SEM. Layer I showed a uniform, thick band with very few neurons present. Layer II presented clear islands occupied by large, stellate cells and modified pyramidal neurons, and transition zones with very few neurons between islands (Insausti et al., 2017; Kobro-Flatmoen and Witter, 2019). This clear separation enabled us to study both areas separately (referred to here as ‘layer II-is’ for the area occupied by the islands, and ‘layer II-ni’ for the neuropil between islands). Layer III comprised a homogeneous population of medium-sized pyramidal neurons, radially organized (Insausti et al., 2017). Layer V, in turn, was characterized by the presence of large pyramidal neurons homogeneously distributed throughout the layer (Insausti et al., 2017; Insausti and Amaral, 2012). This layer is traditionally divided into three subdivisions: layers Va, Vb, and Vc. However, at the level analyzed in the present study, sublayers Va and Vb are often indistinguishable (Insausti et al., 2017). Therefore, here we considered both as a single layer (for the sake of clarity, we will refer to it as Va/b). Layer Vc consisted of a pronounced band formed by a few neurons and a dense plexus of fibers. In the analyzed sections, this sublayer became apparent and it could be mistaken for the caudal extension of the lamina dissecans (or layer IV) (Insausti et al., 2017; Insausti and Amaral, 2012). Finally, layer VI presented a heterogeneous population of neurons, forming a thick layer that exhibits an abrupt border with the underlying white matter (Insausti et al., 2017; Insausti and Amaral, 2012). Given these evident cytoarchitectural differences, data from all layers included in the present study were displayed and analyzed separately.
 
-## Neuropil occupies most of the grey matter volume
+### Neuropil occupies most of the grey matter volume
 
 Estimation of the volume fraction (Vv) occupied by different cortical elements (i.e., neuropil, cells bodies—neuronal, glial, and undetermined somata—and blood vessels) was performed in all MEC layers studied, applying the Cavalieri principle (Gundersen et al., 1988). The neuropil constituted the main element in all layers, with the minimum proportion found in layer III (86%) and the maximum in layer I (96%). (Figure 1; Supplementary file 1a and b). Cell bodies occupied a variable range, with the lowest Vv in layer I (1%) and the highest in layers II-is, III, and Va/b (9% in each layer) (Figure 1; Supplementary file 1a and b). The Vv of blood vessels ranged from 3% in layer I to 6% in layer III—and the rest of the layers presented values within this range (Figure 1; Supplementary file 1a and b).
 
-## Electron microscopy
+![Figure 1.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig1-v2.jpg)
+
+**Figure 1.:** (A) Semithin section, stained with toluidine blue, with a superimposed grid, where points hitting the different cortical elements were counted (grid spacing of 5 µm). Black arrowhead indicates a blood vessel; black arrows indicate cell bodies. (B) Graph showing the volume fraction of every cortical element. Values are detailed in Supplementary file 1a and b. (C) Mean synaptic density (± SD) per layer of the MEC. Each colored dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). No differences in the mean synaptic densities were found between layers (Kruskal–Wallis [KW]; p>0.05). (D) Proportion of asymmetric synapses (AS) and symmetric synapses (SS) per layer, expressed as percentages. Scale bar (in A): 25 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Mean intersynaptic distances (± SD) for each MEC layer. Each colored dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). No differences in the mean intersynaptic distances were found between layers (Kruskal–Wallis [KW]; p>0.05). (B–D) Representative plots for G (B), K (C), and F (D) functions. Red dashed traces correspond to a theoretical homogeneous Poisson process for each function. The black continuous traces correspond to the experimentally observed function in the sample. The shaded areas represent the envelopes of values calculated from a set of 99 simulations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Separated plots per layer show the synaptic density (A) and intersynaptic distance (B) per case (mean ± SD). No significant differences were found in any layer (Kruskal–Wallis [KW], p>0.05). Each colored dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). p-Values of comparisons are shown in Supplementary file 3.
+
+### Electron microscopy
 
 A total of 63 stacks of images were obtained in the neuropil of layers I, II, III, Va/b, Vc, and VI using FIB/SEM. All results presented here were obtained exclusively from the neuropil, which only comprises those synapses located among the cell bodies and blood vessels, thereby excluding perisomatic synapses or those established on the proximal parts of the apical and basal dendrite trunks.
 
 The number of sections per stack ranged from 229 to 319 (Supplementary file 1c), which corresponds to a raw volume ranging from 360 to 502 µm3 (mean: 450 µm3). A total of nine stacks of images per layer were obtained to analyze the neuropil (three stacks of images per case studied, in a total volume of 28,476 µm3; Supplementary file 1c). Details of the sizes and volumes of each individual stack of images are provided in Supplementary file 2.
 
-## No differences in the synaptic density are found between layers
+### No differences in the synaptic density are found between layers
 
 A total of 12,974 synapses from the 63 stacks of images examined were individually identified, and its synaptic junctions were reconstructed in 3D. After discarding incomplete synapses and those touching the exclusion edges of the unbiased counting frame (CF), 8605 synapses were finally analyzed. In layer I, 1345 synapses were analyzed in a total volume of 2585 μm3. A total of 1355 synapses were analyzed in layer II-is, in a total volume of 2949 μm3. For layer II-ni, 1387 synapses were analyzed, in a volume of 2820 μm3. Similarly, in layer III, 1290 synapses were analyzed in a total volume of 2901 μm3. In layer Va/b, 1195 synapses were analyzed in a total volume of 3017 μm3. In the case of the layer Vc samples, a total of 1344 synapses were analyzed in a volume of 2983 μm3. Lastly, 1230 synapses were analyzed in layer VI, in a total volume of 3112 μm3 (Table 1; Supplementary file 1d).
 
+**Table 1.**
+ Accumulated data obtained from the ultrastructural analysis of neuropil from layers I, II-is, II-ni, III, Va/b, Vc, and VI of the MEC.Data in parentheses are not corrected for shrinkage. AS, asymmetric synapses; CF, counting frame; SS, symmetric synapses; SAS, synaptic apposition surface.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>No. of AS</th>
+      <th>No. of SS</th>
+      <th>No. all synapses</th>
+      <th>% AS (mean)</th>
+      <th>% SS (mean)</th>
+      <th>CF volume (μm3)</th>
+      <th>No. AS/µm3 (mean ± SD)</th>
+      <th>No. SS/µm3 (mean ± SD)</th>
+      <th>No. all synapses/µm3 (mean ± SD)</th>
+      <th>Area of SAS AS (nm2; mean ± SE)</th>
+      <th>Area of SAS SS (nm2; mean ± SE)</th>
+      <th>Intersynaptic distance (nm; mean ± SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I</td>
+      <td>1265</td>
+      <td>80</td>
+      <td>1345</td>
+      <td>94</td>
+      <td>6</td>
+      <td>2585 (3265)</td>
+      <td>0.44 ± 0.06 (0.39 ± 0.05)</td>
+      <td>0.03 ± 0.01 (0.03 ± 0.01)</td>
+      <td>0.47 ± 0.06 (0.41 ± 0.05)</td>
+      <td>105,906 ± 3583 (98,493 ± 3332)</td>
+      <td>53,367 ± 2337 (49,631 ± 2173)</td>
+      <td>850 ± 64(824 ± 62)</td>
+    </tr>
+    <tr>
+      <td>II-is</td>
+      <td>1255</td>
+      <td>100</td>
+      <td>1355</td>
+      <td>92.6</td>
+      <td>7.4</td>
+      <td>2949 (3142)</td>
+      <td>0.38 ± 0.04 (0.40 ± 0.05)</td>
+      <td>0.03 ± 0.01 (0.03 ± 0.01)</td>
+      <td>0.42 ± 0.04 (0.43 ± 0.05)</td>
+      <td>118,070 ± 6221 (109,805 ± 5786)</td>
+      <td>67,492 ± 5135 (62,768 ± 4776)</td>
+      <td>876 ± 68(850 ± 66)</td>
+    </tr>
+    <tr>
+      <td>II-ni</td>
+      <td>1290</td>
+      <td>97</td>
+      <td>1387</td>
+      <td>93.1</td>
+      <td>6.9</td>
+      <td>2820 (3018)</td>
+      <td>0.41 ± 0.05 (0.43 ± 0.06)</td>
+      <td>0.03 ± 0.01 (0.03 ± 0.01)</td>
+      <td>0.44 ± 0.06 (0.46 ± 0.06)</td>
+      <td>118,550 ± 5606 (110,251 ± 5214)</td>
+      <td>73,141 ± 6195 (68,022 ± 5762)</td>
+      <td>845 ± 52(819 ± 51)</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>1216</td>
+      <td>74</td>
+      <td>1290</td>
+      <td>94.1</td>
+      <td>5.9</td>
+      <td>2901 (3013)</td>
+      <td>0.38 ± 0.07 (0.40 ± 0.08)</td>
+      <td>0.02 ± 0.01 (0.02 ± 0.01)</td>
+      <td>0.40 ± 0.08 (0.43 ± 0.07)</td>
+      <td>130,268 ± 5734 (121,150 ± 5333)</td>
+      <td>74,248 ± 9112 (69,051 ± 8474)</td>
+      <td>882 ± 90(856 ± 87)</td>
+    </tr>
+    <tr>
+      <td>Va/b</td>
+      <td>1145</td>
+      <td>50</td>
+      <td>1195</td>
+      <td>95.8</td>
+      <td>4.2</td>
+      <td>3017 (3131)</td>
+      <td>0.34 ± 0.05 (0.36 ± 0.06)</td>
+      <td>0.01 ± 0.005 (0.01 ± 0.005)</td>
+      <td>0.35 ± 0.05 (0.38 ± 0.06)</td>
+      <td>136,111 ± 5571 (126,583 ± 5181)</td>
+      <td>74,698 ± 7914 (69,469 ± 7360)</td>
+      <td>899 ± 48(871 ± 46)</td>
+    </tr>
+    <tr>
+      <td>Vc</td>
+      <td>1257</td>
+      <td>87</td>
+      <td>1344</td>
+      <td>93.5</td>
+      <td>6.5</td>
+      <td>2983 (3118)</td>
+      <td>0.38 ± 0.08 (0.40 ± 0.9)</td>
+      <td>0.03 ± 0.01 (0.03 ± 0.01)</td>
+      <td>0.41 ± 0.08 (0.43 ± 0.09)</td>
+      <td>126,298 ± 5071 (117,457 ± 4716)</td>
+      <td>87,377 ± 4716 (81,377 ± 4408)</td>
+      <td>865 ± 66(840 ± 64)</td>
+    </tr>
+    <tr>
+      <td>VI</td>
+      <td>1177</td>
+      <td>53</td>
+      <td>1230</td>
+      <td>95.6</td>
+      <td>4.4</td>
+      <td>3112 (3239)</td>
+      <td>0.34 ± 0.05 (0.37 ± 0.06)</td>
+      <td>0.02 ± 0.01 (0.02 ± 0.01)</td>
+      <td>0.36 ± 0.05 (0.38 ± 0.06)</td>
+      <td>99,489 ± 6438 (92,525 ± 5987)</td>
+      <td>69,365 ± 10,685 (64,509 ± 9937)</td>
+      <td>851 ± 77(826 ± 75)</td>
+    </tr>
+    <tr>
+      <td>I-VI</td>
+      <td>8605</td>
+      <td>541</td>
+      <td>9146</td>
+      <td>94.1</td>
+      <td>5.9</td>
+      <td>20,367 (21,926)</td>
+      <td>0.38 ± 0.03 (0.39 ± 0.02)</td>
+      <td>0.02 ± 0.01 (0.02 ± 0.01)</td>
+      <td>0.41 ± 0.04 (0.42 ± 0.03)</td>
+      <td>119,242 ± 2512 (110,895 ± 2336)</td>
+      <td>71,384 ± 2806 (66,387 ± 2610)</td>
+      <td>867 ± 67(841 ± 65)</td>
+    </tr>
+  </tbody>
+</table>
+
 Synaptic density values were obtained by dividing the total number of synapses included within the unbiased CF by its volume. The mean synaptic density considering all samples and layers was 0.41 synapses/μm3. There were some differences between layers, although none of these were found to be statistically significant (Kruskal–Wallis [KW], p>0.05). Specifically, layer I had the highest density of synapses (0.47 synapses/μm3). Layers II and III had similar density values (Layer II-is, 0.42 synapses/μm3; layer II-ni, 0.44 synapses/μm3; layer III, 0.40 synapses/μm3). Layers Va/b and VI, in turn, shared a similar number of synapses per volume unit (0.35 synapses/μm3 and 0.36 synapses/μm3, respectively), whereas layer Vc had a higher density of 0.41 synapses/μm3 (Figure 1C, Table 1, Supplementary file 1d).
 
-## Most synapses are AS, with a similar AS:SS ratio between layers
+### Most synapses are AS, with a similar AS:SS ratio between layers
 
 Asymmetric synapses (AS) are considered to be mostly glutamatergic and excitatory, while symmetric synapses (SS) are mostly GABAergic and inhibitory (Ascoli et al., 2008; DeFelipe and Fariñas, 1992) . Since the synaptic junctions of all synapses analyzed in this study were fully reconstructed in 3D, we classified each of them as AS or SS based on their postsynaptic density (PSD) thickness, and the proportions of AS and SS were calculated in each layer. The AS:SS ratio ranged from 93:7 in layer II-is to 96:4 in layers Va/b and VI (Figure 1D, Table 1, Supplementary file 1d).
 
-## Synaptic distribution is indistinguishable from a random spatial distribution
+### Synaptic distribution is indistinguishable from a random spatial distribution
 
 To study the spatial distribution of the synapses, the actual position of each of the synapses in each stack of images was compared with a random spatial distribution model complete spatial randomness (CSR). For this, the functions F, G, and K were calculated (see ‘Materials and methods’) in the 63 stacks included in the present study. In the vast majority of stacks analyzed, the three spatial statistical functions resembled the theoretical curve that simulates the random spatial distribution pattern, indicating that synapse distributions could not be distinguished from the random spatial distribution model in all layers (Figure 1—figure supplement 1). However, some of the stacks (12 out of 63) showed a tendency toward either regular or clustered grouping, as manifested by one or more statistical functions.
 
 Additionally, we estimated the distance of each synapse to its nearest synapse (i.e., intersynaptic distance). The mean synaptic distance to the nearest neighbor, considering all layers, was 867 nm. The mean data per layer is shown in Table 1 and Figure 1—figure supplement 1. No differences were found between the layers (KW, p>0.05; Table 1; Supplementary file 1d).
 
-## AS are larger than SS
+### AS are larger than SS
 
 The study of the synaptic size was performed by analyzing the area of the synaptic apposition surface (SAS) of each synapse identified and 3D reconstructed in all stacks of images (Figure 2). Considering all layers, the mean SAS areas of AS and SS were 119,242 nm2 and 71,384 nm2, respectively (Table 1; Supplementary file 1d). Data regarding AS and SS area per layer are shown in Table 1 and Supplementary file 1d. Regardless of the layer analyzed, AS presented significantly larger SAS areas than SS (Mann–Whitney [MW], p<0.0001 in layers I, II-is, II-ni, III; p<0.01 in layer Va/b and Vc; p<0.05 in layer VI; p<0.0001 considering all layers; Figure 3).
 
@@ -73,33 +231,81 @@ The study of the synaptic size was performed by analyzing the area of the synapt
 
 **Figure 2.:** (A) SAS of asymmetric (green) synapses was distributed into 20 bins of equal size. An example synapse of each bin is illustrated here. (B) SAS of symmetric (red) synapses, distributed and represented as in (A). Scale bar (in B): 240 nm in (A, B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig3-v2.jpg)
+
+**Figure 3.:** (A) Plots of the mean SAS area (± SE) per synaptic type show larger synaptic sizes of AS (green) compared to SS (red) in all EC layers studied (Mann–Whitney [MW], p<0.0001 in layers I, II-is, II-ni, III; p<0.01 in layer Va/b and Vc; p<0.05 in layer VI; p<0.0001 considering all layers). (B) Frequency distribution graph of the SAS area illustrating that small SS (red) were more frequent than small AS (green) in all layers (Kruskal–Wallis [KW], p<0.0001). (C) Plot of the mean SAS area of AS (± SE) in all layers, with the smallest values in layer VI (Dunn’s test, p<0.05). Each colored dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). (D) Frequency distribution plot of SAS area per layer, showing that smaller sizes were more frequent in layer VI (Kolmogorov–Smirnov [KS], p<0.0001). Layer II-is had the highest interindividual variability for SAS area of AS, and statistical differences between cases were found (see detailed analysis of the variability in Figure 3—figure supplement 1 and Supplementary file 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Separated plots per layer show the SAS area of AS (A) and SS (B) per case (mean ± SD). In layer II-is, AB2 shows a larger SAS area of AS than AB7 (Dunn’s test, p<0.05). No significant differences were found in the remaining comparisons (Dunn’s test, p>0.05). Each colored dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). p-Values of comparisons are shown in Supplementary file 3.
+
 The analyses of the mean SAS area of AS were also performed to compare the analyzed cortical layers (Table 1; Supplementary file 1d). The SAS area of AS showed differences between layers (KW, p<0.0001). We did observe that layer VI had smaller AS (99,489 nm2) than layer III and Vab, which showed the largest AS (130,268 nm2 and 136,111 nm2; Dunn’s test, p<0.05; Figure 3). Additionally, layer Va/b showed a larger mean SAS than layer I (105,906 mm2; Dunn’s test, p<0.01). Moreover, these differences were also found when comparing the probability density functions between these two layers, indicating that smaller SAS areas of AS were more frequent in layer VI (Kolmogorov–Smirnov [KS], p<0.0001; Figure 3). The size of SS was also compared between MEC layers. Layer I had the lowest mean values (53,367 nm2), whereas layer Vc showed the largest mean sizes (87,377 nm2; Dunn’s test; p<0.05; Table 1).
 
 In order to study the frequency distribution of the SAS area between AS and SS for each individual layer, we performed probabilistic density functions, revealing that smaller synapses were more frequent in SS than in AS, in all layers studied (KS, p<0.0001 in layers I, II-is, II-ni, III, Va/b and Vc; p<0.05 in layer VI; p<0.0001 considering all layers; Figure 3).
 
-## SAS area fits into a log-normal distribution
+### SAS area fits into a log-normal distribution
 
 The distribution function of SAS area data of AS and SS was also studied in each layer. For this purpose, we carried out goodness-of-fit tests to find the theoretical probability density functions that best fitted the empirical distribution of the SAS area in each layer. We found that both types of synapses (AS and SS) can be fitted to a log-normal probability distribution, although with some variations in the parameters of the functions (µ and σ) between layers (Supplementary file 1e). The fit to the theoretical log-normal function was better for the AS, given the smaller number of SS analyzed in the present study. Considering all layers pooled together, the distribution of AS and SS SAS area data also fitted to a theoretical log-normal probability distribution.
 
-## Macular small synapses are the most frequent regardless of the layer
+### Macular small synapses are the most frequent regardless of the layer
 
 To analyze the shape of the synaptic contacts, we classified each identified synapse into one of four categories: macular (with a flat, disk-shaped PSD), perforated (with one or more holes in the PSD), horseshoe (with an indentation in the perimeter of the PSD), or fragmented (with two or more physically discontinuous PSDs). For the sake of clarity, the last three categories (perforated, horseshoe, and fragmented) were considered complex-shaped synapses. The percentages regarding macular and complex synaptic shapes for AS and SS are shown in Figure 4 and Supplementary file 1f (see also Supplementary file 1g for values for each individual case). The majority of both AS and SS presented a macular shape, regardless of the cortical layer. However, we found some significant differences in the distribution of these synaptic shapes between layers. Particularly, macular synapses (both AS and SS) were less frequent in layer VI (78 and 59%, respectively), whereas the highest values were found in layer II-is (χ2, p<0.0001; Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representations of the different types of synapses based on the shape of their synaptic junction: macular, perforated, horseshoe, and fragmented. Perforated, horseshoe, and fragmented were grouped into complex-shaped synapses. Scale bar: 250 nm. (B) Pie chart showing the proportion of AS presenting macular and complex-shaped synapses in all layers. Macular synapses represented the most common shape (84%). (C) Mean plot of the synaptic apposition surface (SAS) area (± SE) of macular and complex-shaped AS considering all layers. Complex-shaped AS were larger than macular synapses (Mann-Whitney [MW], p<0.0001). Each dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). (D) Pie chart showing the proportion of SS presenting macular and complex-shaped synapses in all layers. Once again, macular synapses represented the most common shape (76%). (E) Mean plot of the SAS area (± SE) of macular and complex-shaped SS considering all layers. Complex-shaped SS were larger than macular synapses (MW, p<0.0001). See Figure 4—figure supplement 1 for a detailed description of each layer. The statistical interindividual variability test for SAS area of complex AS showed differences between cases in layer VI (see detailed analysis of the variability in Figure 4—figure supplement 5 and Supplementary file 3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Proportion of macular and complex-shaped AS (i.e., perforated, horseshoe, and fragmented). Layer VI presented the lowest percentage of macular synapses (78%; χ2, p<0.0001). (B) Plot of the mean synaptic apposition surface (SAS) area (± SE) of macular and complex-shaped AS. Complex-shaped AS were significantly larger than macular synapses (Mann–Whitney [MW], p<0.05 in all layer comparisons). Each dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). (C) Proportion of macular and complex-shaped SS. Again, layer VI presented the lowest percentage of macular synapses (59%). (D) Plot of the mean SAS area (± SE) of macular and complex-shaped SS. Complex-shaped SS were larger than macular synapses in all layers; however, only layer I and layer VI presented significant differences (MW, p<0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Proportion of AS and SS macular synapses. The overall AS:SS ratio of macular synapses was 95:5. No significant differences were found between layers (χ2, p>0.0001). (B) Proportion of AS and SS complex-shaped synapses. The overall ratio on complex-shaped synapses was 92:8. No significant differences were found between the layers (χ2, p>0.0001).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Plots of the mean SAS area (± SE) of macular AS per layer. Layer VI had the smallest macular synapses of all layers (Dunn’s test, p<0.05). Each dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). (B) Frequency distribution plot of SAS area per layer, for macular synapses, showing that smaller sizes were more frequent in layer VI (Kolmogorov–Smirnov [KS], p<0.0001). (C) Plots of the mean SAS area (± SE) of complex-shaped AS per layer. Again, layer VI had the smallest complex-shaped synapses of all layers (Dunn’s test, p<0.05). (D) Frequency distribution plot of SAS area per layer, for complex synapses, showing that smaller sizes were more frequent in layer VI (KS, p<0.0001).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Separated plots per layer show the SAS area of macular AS (A) and SS (B) per case (mean ± SD). No significant differences were found in any layer (Kruskal–Wallis [KW], p>0.05). Each colored dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). p-Values of comparisons are shown in Supplementary file 3.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Separated plots per layer show the SAS area of complex-shaped AS (A) and SS (B) per case (mean ± SD). In LVI, AB2 have larger SAS area of complex-shaped AS than AB7 (Dunn’s test, p<0.05). No significant differences were found in the rest of the layers (Dunn’s test, p>0.05). Each colored dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). p-Values of comparisons are shown in Supplementary file 3.
+
 The proportion of the synaptic type (AS and SS) on macular and complex synaptic shapes was also determined. Considering all layers, 95% of all macular synapses were AS and 5% were SS. In the case of complex synapses, 92% were AS, with the rest being SS. Slight variations in these percentages were found in the different layers (shown in Figure 4—figure supplement 2). No significant differences were found compared to the general distribution of AS:SS (χ2, p>0.0001).
 
-## Macular synapses have the smallest sizes, regardless of the layer
+### Macular synapses have the smallest sizes, regardless of the layer
 
 We also determined whether the shape of the synapses was related to their size. For this purpose, the area of the SAS was analyzed for each synaptic shape. Macular AS synapses presented a significantly smaller mean size compared to complex synapses, regardless of the layer (MW; p<0.0001 in all layers; Figure 4 and Supplementary file 1h; see also Supplementary file 1i for values for each individual case). Macular SS synapses also presented a smaller mean size compared to complex-shaped synapses, considering all layers (MW, p<0.0001; Figure 4). However, these differences were not as evident as for AS, and most layers did not present a marked change in the mean size of the SS according to their shape; only layers I and VI exhibited significant differences (MW, p<0.05 for layer I and p<0.01 for layer VI; Figure 4—figure supplement 1). In fact, layer VI presented the smallest macular SS and the biggest complex-shaped SS (44,170 nm2 and 110,547 nm2, respectively; Figure 4—figure supplement 1). Again, these results were also evidenced by the frequency distribution analyses of the SAS (KS, p<0.0001, considering all layers).
 
 However, when comparing macular and complex synapses separately between layers, we also found significant differences (KW, p<0.01). Specifically, layer VI presented both the smallest macular (79,331 nm2) and complex AS (170,959 nm2) of all layers, whereas layer Va/b had the largest SAS for macular synapses (112,898 nm2)—and, in the case of complex-shaped synapses, the largest SAS were found in layer III (244,603 nm2; Dunn’s test, p<0.05; Figure 4—figure supplement 3). These differences were also shown in the frequency distribution analysis of the SAS for each shape (KS, p<0.0001 in all layers, Figure 4—figure supplement 3).
 
-## Most synapses are established on dendritic spines
+### Most synapses are established on dendritic spines
 
 Postsynaptic targets were identified and classified as dendritic spines (including both complete and incomplete spines, as detailed in 'Material and methods') or dendritic shafts (Figure 5 displays 3D reconstruction examples of dendritic segments in which synapses were established). In addition, when the postsynaptic element was identified as a dendritic shaft, it was classified as ‘spiny’ or ‘aspiny’. Considering all layers, 59.3% of the total synapses were AS established on dendritic spine heads, 34.3% were AS on dendritic shafts (including spiny and aspiny shafts), 5.1% were SS on dendritic shafts (including spiny and aspiny shafts), 0.7% were SS on dendritic spine heads, 0.5% were AS established on dendritic spine necks, and 0.1% were SS on dendritic spine necks (Figure 6, see also Supplementary file 1j). When the different layers were compared, layer VI presented the highest proportion of AS established on dendritic spine heads (76.2%), whereas layer Va/b had the lowest value (52.9%, χ2, p<0.0001; Figure 6; Supplementary file 1j).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig5-v2.jpg)
 
 **Figure 5.:** Three different dendritic segments (A–C) illustrating synaptic junctions at different view angles. Numbers correspond to the same synapse in each dendritic segment. Note the different sizes and shapes of the synaptic junctions on each dendritic segment. The dendritic surface of the shaft presents relatively few synaptic contacts. Scale bar (in C): 3.6 µm in (A–C). See also Figure 13.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig6-v2.jpg)
+
+**Figure 6.:** (Left) Schematic representation of the distribution of synapses according to their postsynaptic element: data refer to the percentages of axospinous (i.e., head and neck of dendritic spines) and axodendritic (spiny and aspiny shafts) asymmetric (green) and symmetric (red) synapses (see Supplementary file 1j for detailed information regarding the absolute number of each synaptic type). (Right) Pie charts to illustrate the proportion of asymmetric synapses (AS) (green) and symmetric synapses (SS) (red) according to their location as axospinous synapses (i.e., on the head or neck of the spine) or axodendritic synapses (i.e., spiny or aspiny shafts) in each MEC layer (see legend). AS were preferentially formed on dendritic spine heads (63%), although differences were observed between layers (χ2, p<0.0001). Supplementary file 1k shows the percentage and absolute number of each synaptic type.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Proportion of AS and SS synapses on dendritic spines. The overall AS:SS ratio was 99:1. No significant differences were found between the layers (χ2, p>0.0001). (B) Proportion of AS and SS on dendritic shafts. The overall ratio was 87:13. No significant differences were found between the layers (χ2, p>0.0001).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Data in parentheses refer to the absolute number of spines.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Plots of the mean SAS area (± SE) for AS established on spine heads, necks, and dendritic shafts, considering all layers. Each dot represents a stack of images from the analyzed cases AB2, AB7, and M16 (see Supplementary file 1p for details). Synapses established on the spine neck were significantly smaller (Dunn’s test, p<0.001). (B–H) Plots of the mean SAS area (± SE) for AS established on spine heads, necks, and dendritic shafts of each MEC layer.
 
 We also analyzed the proportion of AS and SS synapses separately, categorized by their location on dendritic spines (heads or necks) or dendritic shafts. The proportion of AS formed on the different postsynaptic targets greatly resembled the general distribution of synapses established on the postsynaptic targets described above, given the greater number of AS than SS. In all layers of the MEC, AS were mostly established on dendritic spine heads (63%), followed by AS established on dendritic shafts (36.5%; 17.6% on spiny shafts and 18.9% on aspiny shafts) and, lastly, we found a small percentage of AS formed on dendritic spine necks (0.5%; Supplementary file 1k). Our analysis revealed significant differences between MEC layers regarding the proportions of AS synapses established on dendritic spine heads. Layer VI exhibited the highest proportion of AS on spine heads (79.6%), whereas layer Va/b had the lowest proportion (54.9%; χ2, p<0.0001). These findings are illustrated in Figure 6 and Supplementary file 1k.
 
@@ -109,27 +315,114 @@ Considering all types of synapses established on dendritic spines, the proportio
 
 Additionally, we were able to detect dendritic spines that contained more than one synapse (i.e., multisynaptic spines). The vast majority of dendritic spines (96%) contained only one AS, followed by a small pool of spines that showed different combinations regarding the type (AS or SS), number, and localization (head or neck) of synapses (Figure 6—figure supplement 2). There were no significant differences in the proportion of multisynaptic spines between the different layers (χ2, p>0.0001). Nevertheless, interestingly, the proportion of spines presenting one AS and one SS (0.73%) was higher than the percentage of dendritic spines containing a single SS (0.50%)——and this was consistent in most of the layers (Figure 6—figure supplement 2).
 
-## AS established on dendritic spine necks are the smallest
+### AS established on dendritic spine necks are the smallest
 
 The relationship between the postsynaptic elements of the synapses and their size was also determined. For this purpose, the areas of the SAS—of both AS and SS—were analyzed according to the postsynaptic targets. In order to perform a more accurate analysis of the size of the axospinous synapses, we excluded those synapses established on incomplete spines. Considering all layers, for AS, the mean area of synapses established on dendritic spine heads was similar to those of synapses established on dendritic shafts (127,956 nm2 and 120,978 nm2, respectively). However, AS established on dendritic spine necks were notably smaller considering all layers (66,435 nm2; Dunn’s test, p<0.001, Figure 6—figure supplement 3; Supplementary file 1l; see also Supplementary file 1m for values for each individual case). All layers displayed a similar distribution regarding the size of spine heads, necks, and dendritic shafts (Figure 6—figure supplement 3; Supplementary files 1l and m). When comparing the SAS area of AS on spine heads separately between layers, we found that layer Va/b presented the largest sizes (148,730 nm2) and layer VI the smallest (105,948 nm2) of all layers (Dunn’s test, p<0.05). In addition, analysis of the SAS area of AS on shafts showed that layer Va/b had the largest synapses (143,122 nm2) and layer I the smallest (99,960 nm2; Dunn’s test, p<0.01). Additionally, the analysis of the size of AS on multisynaptic spines revealed that AS established on AS:SS multisynaptic spines had larger SAS (155,446 nm2) than AS formed on single spines (120,186 nm2; KS, p<0.01).
 
 SS showed similar results. Synapses established on dendritic shafts and spine heads shared a similar value (76,801 nm2 and 70,198 nm2, respectively), whereas SS on spine necks exhibited a smaller SAS (53,608 nm2), considering all layers (Supplementary files 1l and m). However, due to the small number of SS established both on dendritic spine heads and necks, we were not able to perform any robust statistical analyses.
 
-## Complex-shaped synapses are more frequently found on dendritic spines
+### Complex-shaped synapses are more frequently found on dendritic spines
 
 Finally, we examined whether macular and complex synapses have a particular distribution on different postsynaptic targets. The general distribution of AS established on dendritic spine heads and dendritic shafts was 63:37, considering all layers. This proportion ranged from 80:20 in layer VI to 55:45 in layer Va/b. When considering macular AS, 61% of them were established on dendritic spine heads, and 39% were formed on shafts (Figure 7). Complex-shaped AS were even more predominantly established on dendritic spine heads (75%, Figure 7); in fact, this proportion was significantly different from the general distribution (χ2, p<0.0001). All layers exhibited similar tendencies (Figure 7—figure supplements 1 and 2), although layer VI exhibited both the highest proportion of macular and complex-shaped synapses established on dendritic spines (78% and 85%, respectively).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig7-v2.jpg)
+
+**Figure 7.:** (A) Pie chart illustrating the proportion of macular AS on spine heads and dendritic shafts, considering all layers. This distribution is similar to the general proportion of AS on spine heads and shafts, regardless of the synaptic shape (63:37). (B) Frequency distribution plot of the synaptic apposition surface (SAS) of macular AS on spine heads and dendritic shafts, showing that smaller macular AS were more frequent on spine heads (Kolmogorov–Smirnov [KS], p<0.0001). (C) Pie chart illustrating the proportion of complex-shaped AS on spine heads and dendritic shafts, considering all layers. In this case, the proportion of complex synapses on spine heads is higher than what would be expected from the general distribution (χ2, p<0.0001). (D) Frequency distribution plot of the SAS of complex-shaped AS on spine heads and dendritic shafts, showing that smaller complex-shaped AS were more frequent on dendritic shafts (KS, p<0.0001). See Figure 7—figure supplements 1 and 2 for a detailed description of each layer.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Distribution of macular AS on spine heads and dendritic shafts in each layer. Layer VI exhibited the highest proportion of macular AS established on spine heads (78%; χ2, p<0.0001). (B–H) Frequency distribution plots of the synaptic apposition surface (SAS) of macular AS established on spine heads and dendritic shafts, per cortical layer.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Distribution of complex-shaped AS on spine heads and dendritic shafts in each layer. Layer VI exhibited the highest proportion of complex-shaped AS established on spine heads (85%, χ2, p<0.0001). (B–H) Frequency distribution plots of the synaptic apposition surface (SAS) of complex-shaped AS established on spine heads and dendritic shafts, per cortical layer.
+
 To further study this, we carried out frequency distribution analyses of the SAS from the macular and complex synapses established on dendritic spines and dendritic shafts. We found that smaller macular synapses were more frequent on spine heads than on dendritic shafts (Figure 7; KS, p<0.0001), whereas smaller complex-shaped synapses were more frequent on dendritic shafts than on dendritic spine heads (Figure 7; KS, p<0.0001). All layers displayed similar tendencies (Figure 7—figure supplements 1 and 2). There were not enough SS established on dendritic spines to perform a robust analysis.
 
-## Synaptic parameters show little variability
+### Synaptic parameters show little variability
 
 Variability between cases was examined by calculating the coefficient of variation (CV, see ‘Materials and methods’) and by statistically comparing each synaptic parameter in every MEC layer (Figure 1—figure supplement 2, Figure 3—figure supplement 1, Figure 4—figure supplements 4 and 5; p-values are detailed in Supplementary file 3).
 
 We observed little variability between cases for any of the synaptic characteristics analyzed (Table 2). Overall, the SAS area of the AS exhibited the highest CV values of all the parameters analyzed, ranging from 3.3% in layer I to 19.6% in layer VI (see Table 2). Statistical analyses only showed significant differences in two particular comparisons: SAS area of AS in layer II-is (KW, p<0.05) and SAS area of complex AS in layer VI (KW, p<0.01); in both analysis, differences were found between AB2 and AB7 (Dunn’s test, p<0.05; Figure 3—figure supplement 1, Figure 4—figure supplement 5, Supplementary file 3).
 
+**Table 2.**
+ Coefficient of variation (CV) of the analyzed synaptic parameters in each MEC layer between individuals.CV was calculated by dividing the SD by the mean and multiplying by 100 for each of the synaptic parameters analyzed.AS, asymmetric synapses; SAS, synaptic apposition surface.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Synaptic density</th>
+      <th>Proportion of AS</th>
+      <th>AS SAS area</th>
+      <th>Proportion of macular AS</th>
+      <th>Proportion of AS on spines</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I</td>
+      <td>5.4</td>
+      <td>1.0</td>
+      <td>3.3</td>
+      <td>4.0</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <td>II-is</td>
+      <td>7.0</td>
+      <td>0.8</td>
+      <td>17.3</td>
+      <td>7.0</td>
+      <td>11.4</td>
+    </tr>
+    <tr>
+      <td>II-ni</td>
+      <td>1.3</td>
+      <td>3.3</td>
+      <td>10.7</td>
+      <td>6.5</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>4.3</td>
+      <td>0.4</td>
+      <td>5.4</td>
+      <td>3.9</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Va/b</td>
+      <td>9.9</td>
+      <td>0.3</td>
+      <td>15.5</td>
+      <td>5.7</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>Vc</td>
+      <td>11.7</td>
+      <td>1.9</td>
+      <td>2.4</td>
+      <td>4.6</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>VI</td>
+      <td>11.7</td>
+      <td>1.7</td>
+      <td>19.6</td>
+      <td>3.8</td>
+      <td>5.0</td>
+    </tr>
+  </tbody>
+</table>
+
 We also calculated the variability between the stack of images, examining the CV for the same synaptic parameter in each MEC layer. In this case, the highest variabili ty was observed in the synaptic density in layer Vc (20.4%; Supplementary file 1n). However, the rest of the layers presented low variability regarding synaptic density. Furthermore, the SAS area of AS presented a relatively higher variability than the rest of the synaptic parameters analyzed, ranging from 10.2% in layer I to 19.4% in layer VI (Supplementary file 1n).
 
-## Summary of results
+### Summary of results
 
 In the present study, we obtained the following findings:
 
@@ -137,7 +430,7 @@ In the present study, we obtained the following findings:
 
 In the present study, we have performed the first detailed description of the synapses of layers I, II (both between and within the cell islands), III, Va/b, Vc, and VI from the human MEC using FIB/SEM technology. The main findings indicate that the MEC exhibits a distinct set of synaptic features that differentiates this region from other human cortical areas. Additionally, our results reveal common patterns in the synaptic structure across mammalian brains, such as the proportion of synaptic types and shapes. Furthermore, ultrastructural synaptic characteristics within the MEC are predominantly similar, although layers I and VI exhibit several synaptic characteristics that are distinct from those in the other layers.
 
-## The synaptic density is similar in all layers and most synapses are excitatory
+### The synaptic density is similar in all layers and most synapses are excitatory
 
 Synaptic density is considered a meaningful parameter, in terms of connectivity, to describe the synaptic organization of a brain region (Cano-Astorga et al., 2021). In the present study, we found that the analyzed MEC layers had similar synaptic density values. Moreover, the average density was 0.41 synapses/μm3, very close to the previously reported values in layers II and III of the intermediate-caudal EC (0.42 synapses/μm3, Domínguez-Álvaro et al., 2021a). However, MEC had slightly lower synaptic densities than other cortical regions from human samples studied using identical processing and analyzing methods, such as layer III from Brodmann area 21 (0.49 synapses/μm3, Cano-Astorga et al., 2023); layer III from Brodmann area 24 (0.49 synapses/μm3), area 38 (ranging from 0.54 to 0.76 synapses/μm3; Cano-Astorga et al., 2023), area 17 and area 3b (0.45 and 0.44 synapses/μm3 , respectively, Cano-Astorga et al., 2024a), and the CA1 hippocampal field (ranging from 0.45 synapses/μm3 in the stratum oriens to 0.99 synapses/μm3 in the superficial stratum pyramidale; Montero-Crespo et al., 2020). These differences were more evident for deep MEC layers (especially Va/b and VI), which had the lowest values (0.35 and 0.36 synapses/μm3, respectively). Indeed, the data presented here highlight the importance of studying the human brain by region and in a layer-specific manner since synaptic values might depend on the specific features of the particular brain region and/or layer. Further analysis of human deep layers from other cortical areas might provide information to determine whether deep layers have a lower synaptic density or whether there is specificity depending on the brain region.
 
@@ -149,7 +442,7 @@ It has been widely reported that the cortical neuropil has a larger proportion o
 
 However, interpreting the functional relevance of AS:SS is challenging due to variations in cytoarchitecture and connectivity across different cortical regions. Although AS:SS ratios were similar in all MEC layers, we cannot rule out differences in the proportion of AS and SS on the dendritic arbors of particular neurons. For example, previous studies have demonstrated variations in the number of inputs of glutamatergic and GABAergic synapses in different neuronal types (e.g., Bourne and Harris, 2011; DeFelipe, 1997; DeFelipe and Fariñas, 1992; Hu and Vervaeke, 2018; Schubert et al., 2007). Therefore, examining synaptic inputs for specific cell types is necessary to assess potential differences in the AS:SS ratio in these cells, even though the overall AS:SS ratio may remain constant in the neuropil. Additionally, it is important to mention that our current study exclusively focuses on neuropil synapses, while the analysis of perisomatic innervation remains unexplored. Investigating perisomatic innervation would undoubtedly enhance our comprehension of the synaptic organization of these cortical circuits. The study of the axo-somatic innervation on neuronal somata would require a different technical approach (e.g., see Ostos et al., 2023).
 
-## Synaptic distribution is indistinguishable from a random spatial distribution
+### Synaptic distribution is indistinguishable from a random spatial distribution
 
 The present analysis of the synaptic spatial distribution indicated that statistical tests were unable to distinguish synapse distributions from random distributions in the neuropil of most of the FIB/SEM samples.
 
@@ -159,7 +452,7 @@ Previous ultrastructural studies of other human cortical areas, including the CA
 
 Nevertheless, a few stacks of images from different layers showed slight tendencies toward either cluster or regular distributions. These ‘unexpected’ 3D distributions may arise from particular elements of the tissue studied, such as the presence of large trunks of apical dendrites or myelin fibers that could reduce the effective neuropil space where synapses may be established.
 
-## Macular small synapses are the most frequent and have the smallest sizes
+### Macular small synapses are the most frequent and have the smallest sizes
 
 Determination of the individual synaptic characteristics (such as synaptic size and shape) provides crucial data on the functionality of the synapses, regarding both synaptic transmission efficiency and dynamics. It has been proposed that synaptic size correlates with release probability, synaptic strength, efficacy, and plasticity (see Chindemi et al., 2022 and references therein). It has been demonstrated that synaptic size correlates with the number of receptors in the PSD; larger PSDs have more receptors (as reviewed in Lüscher and Malenka, 2012; Lüscher et al., 2000; Magee and Grienberger, 2020; Sumi and Harada, 2020; Toni et al., 2001). In the present study, MEC layers presented an average SAS area of 119,242 nm2 for AS and 71,384 nm2 for SS. In the MEC layers included in the present study, the analysis of SAS area also revealed that AS were larger than SS, as previously reported in other human cortical regions and layers (e.g., Cano-Astorga et al., 2021; Cano-Astorga et al., 2024a; Montero-Crespo et al., 2020). This finding supports the idea that this synaptic characteristic is highly conserved in the human cerebral cortex.
 
@@ -169,7 +462,7 @@ The analysis of AS SAS area revealed it to be rather uniform across layers, alth
 
 Furthermore, we observed that the majority of synapses in the MEC, regardless of the analyzed layer, exhibited a macular shape (84%, considering all layers). These findings are consistent with previous research conducted in various brain regions (e.g., Cano-Astorga et al., 2021; Cano-Astorga et al., 2024a; Domínguez-Álvaro et al., 2021b; Montero-Crespo et al., 2020). However, differences in this proportion were observed among the MEC layers. Specifically, layer VI had the lowest proportion of macular synapses (78%), for both AS and SS, while layer II-is displayed the highest percentage of macular synapses (88%). Once again, this suggests layer-specific variations. In all layers of the MEC, the sizes of complex-shaped synapses—including perforated, horseshoe-shaped, and fragmented synapses—were consistently larger compared to simple-shaped synapses (macular synapses). As mentioned above, larger synapses contain a higher proportion of AMPA receptors. Complex-shaped synapses have been reported to have a larger population of AMPA and NMDA receptors compared to macular synapses. This makes them a relatively powerful and more stable pool of synapses, contributing to long-lasting memory-related functionality (see Ganeshina et al., 2004a; Ganeshina et al., 2004b). The smaller area of macular synapses, on the other hand, may play a crucial role in synaptic plasticity (Kharazia and Weinberg, 1999). Consequently, the higher proportion of complex-shaped synapses in layer VI may indicate a specific connectivity pattern characterized by synapses with higher synaptic strengths, while the prevalence of macular synapses in layer II, which had the highest macular population, may suggest lower release probability, synaptic strength and efficacy.
 
-## Synapses are mainly established on dendritic spines
+### Synapses are mainly established on dendritic spines
 
 Examining the postsynaptic target for each 3D reconstructed synapse may allow us to identify variations in the proportion of synapses on dendritic spines and shafts. These differences might signify a microanatomical specialization of the examined cortical layers. Such variations could have significant functional implications for information processing. Studies have shown (e.g., Cornejo et al., 2022) that the membrane potential of the postsynaptic neuron is modulated differently depending on whether a synapse is established on a dendritic spine or a dendritic shaft. Consequently, variations in the proportions of these synaptic targets are likely to have clear functional significance. The present study showed that 60% of total synapses were AS established on dendritic spines (considering all layers), whereas the proportion of AS on dendritic shafts was 34%. Using the same techniques and analysis (in previous studies), this ratio has varied depending on the region examined. For example, in layers II and III of the EC, the results were similar (54% and 52% of synapses were on dendritic spines, respectively; Domínguez-Álvaro et al., 2021b)—and this was also the case in the stratum lacunosum-moleculare of CA1 (57%; Montero-Crespo et al., 2020). However, there is a higher proportion of AS on dendritic spines in layer III in Brodmann areas 24, 38 (ventral and dorsal), 21, 17, and 3b (70%, 74%, 72%, 71%, 67%, and 69%, respectively; Cano-Astorga et al., 2024a) and in the stratum pyramidale of CA1 (88% in the superficial part and 81% in the deep layer; Montero-Crespo et al., 2020). These differences may indicate another microanatomical specialization of the synaptic structure in the neuropil (see Supplementary file 1o for a comparison on the distribution of synapses established on the different postsynaptic targets from a variety of mammal species and brain regions).
 
@@ -179,13 +472,13 @@ Regarding the size of the synaptic junctions, it has been observed in several ne
 
 Additionally, the study of the multisynaptic spines revealed that, regardless of the layer analyzed, the vast majority of spines contained only a single AS on their head (96%). Once again, this percentage is in agreement with previous studies that showed around 95% of AS on spines were single synapses in layer III of Brodmann areas 21, 24, and 38 (ventral and dorsal), 17, 4 and 3b (Cano-Astorga et al., 2024a). The hippocampal CA1 region presented a slightly higher percentage of single AS on spines (97.9%; Montero-Crespo et al., 2020). These results highlight another microanatomical specialization concerning the presence of single AS on spines, although its functional relevance remains unclear. In fact, the generation of multisynaptic spines has been associated with synaptic potentiation and has been linked to memory processes (Giese et al., 2015; McLeod et al., 2020). Furthermore, in the mouse neocortex, it has been suggested that spines receiving one AS and one SS are electrically more stable than spines establishing a single AS (Villa et al., 2016). As mentioned above, more stable synapses would lead to an increment in their synaptic size. Indeed, in the MEC, AS established on multisynaptic spines containing an SS were 30% larger than single AS.
 
-## Complex-shaped synapses are more frequently found on dendritic spines
+### Complex-shaped synapses are more frequently found on dendritic spines
 
 In the present study, we observed that, out of the total macular AS, the distribution of these synapses on dendritic spine heads and dendritic shafts was 61:39. This ratio is very similar to the distribution of all AS (without considering their shape) on the same postsynaptic targets, which was 63:37. However, when making the same comparison for complex synapses, this ratio was 75:25 for AS established on dendritic spine heads and dendritic shafts. This indicates that the proportion of complex synapses in spine heads is almost 15% higher than what would be expected based on the overall distribution of synapses.
 
 Indeed, complex AS established on dendritic spine heads were larger than those established on dendritic shafts, whereas macular AS established on dendritic shafts were larger than those on dendritic spine heads (see Figure 7). As mentioned above, complex-shaped synapses presented larger synaptic sizes than macular synapses, and this correlates with higher synaptic strengths. This type of synapse contributes to the formation of more stable circuits (Ganeshina et al., 2004a; Ganeshina et al., 2004b). In the MEC, while the general distribution of synapses established on dendritic spine heads and dendritic shafts appears to be quite similar, especially when compared to other neocortical regions such as Brodmann areas 21, 24, 38, 17, 4 or 3b (see Cano-Astorga et al., 2024a), complex synapses established on dendritic spine heads may play a crucial role in consolidating the synaptic circuits that are formed in the different layers. Indeed, persistent dendritic spines, which form the basis of consolidated circuits, are described to be larger and have bigger PSDs (see Holtmaat et al., 2006; Yuste, 2011).
 
-## Ultrastructural characteristics of synapses are similar across layers of the MEC
+### Ultrastructural characteristics of synapses are similar across layers of the MEC
 
 Similarity of the synaptic characteristics of the MEC may seem surprising given its cytoarchitectonic and innervation complexity. Indeed, MEC layers contain a variety of neuronal classes heterogeneously distributed across layers, as extensively reviewed in Kobro-Flatmoen and Witter, 2019. All these neurons are highly innervated, receiving information from both local and intercortical connections. Figure 8 summarizes the extrinsic and intrinsic circuits formed in the different layers of the MEC. Unfortunately, all these connectivity data come from experimental animals, and information from the human brain is very scarce in this regard. Nevertheless, Figure 8 illustrates clear differences in the connectivity pattern between the different layers, where superficial neurons mainly receive information from other brain areas (such as the PRC and PHC) to be transmitted to the hippocampus, whereas deep-located cells are the recipient of the hippocampal return connections, giving rise to the cortical output of the EC (Insausti and Amaral, 2008; Insausti and Amaral, 2012; Melzer et al., 2012; Muñoz and Insausti, 2005; Nilssen et al., 2019; Ohara et al., 2021; Ohara et al., 2023; Sürmeli et al., 2016; Vandrey et al., 2022). In addition, the MEC shows profuse intracortical connectivity, with (i) deep-located neurons sending projections to upper layers (Chrobak and Amaral, 2007; Ohara et al., 2021; Sürmeli et al., 2016) and (ii) both excitatory and inhibitory intralayer innervation (Nilssen et al., 2019; Rozov et al., 2020; Winterer et al., 2017).
 
@@ -205,7 +498,7 @@ Overall, the present data point to a set of highly conserved synaptic characteri
 
 ## Materials and methods
 
-## Tissue preparation
+### Tissue preparation
 
 Human brain tissue was obtained from autopsies from two men and one woman (with short postmortem delays of less than 4 hr, and ages ranging from 40 to 66 years old; Supplementary file 1p) with no recorded neurological or psychiatric alterations (supplied by Unidad Asociada Neuromax, Laboratorio de Neuroanatomía Humana, Facultad de Medicina, Universidad de Castilla-La Mancha, Albacete, Spain). The consent of the individuals was obtained, and the sampling procedure was approved by the Institutional Ethical Committee of the Albacete University Hospital. The tissue was obtained following national laws and international ethical and technical guidelines on the use of human samples for biomedical research purposes. Human brain tissue from the same subjects has been used in previous studies (e.g., Cano-Astorga et al., 2021; Cano-Astorga et al., 2023; Domínguez-Álvaro et al., 2021a; Domínguez-Álvaro et al., 2021b; Montero-Crespo et al., 2020).
 
@@ -217,15 +510,15 @@ After fixation, the tissue was washed in PB and sectioned coronally in a vibrato
 
 **Figure 9.:** (A) Low-power photograph of a coronal section from the human hippocampal formation and entorhinal cortex. (B) Higher magnification of the MEC shown in (A), to illustrate the laminar pattern (layers I to VI are indicated). This image was reused from Figure 8. The delimitation of layers is based on the toluidine blue-stained semithin section (C), adjacent to the block for focused ion beam FIB/SEM imaging (D). (D) SEM image illustrating the block surface with trenches made in the neuropil of MEC layers. Arrows in (A) and (B) mark the same blood vessel, allowing the regions of interest to be accurately located. (E) SEM image showing the front of a trench made to acquire the FIB/SEM stack of images. CA1: cornu ammonis 1; CA2: cornu ammonis 2; CA3: cornu ammonis 3; DG: dentate gyrus; EC: entorhinal cortex; HF: hippocampal fissure; PaS: parasubiculum; PrS: presubiculum; S: subiculum. Scale bar: 1.4 mm in (A), 260 µm in (B), 175 µm in (C), 165 µm in (D) and 2 µm in (E).
 
-## Electron microscopy
+### Electron microscopy
 
 Selected sections (150-µm-thick) were post-fixed for 24 hr in a solution containing 2% paraformaldehyde, 2.5% glutaraldehyde (TAAB, G002, UK), and 0.003% CaCl2 (Sigma, C-2661-500G, Germany) in sodium cacodylate (Sigma, C0250-500G, Germany) buffer (0.1 M). The sections were treated with 1% OsO4 (Sigma, O5500, Germany), 0.1% potassium ferrocyanide (Probus, 23345, Spain), and 0.003% CaCl2 in sodium cacodylate buffer (0.1 M) for 1 hr at room temperature. They were then stained with 1% uranyl acetate (EMS, 8473, USA), dehydrated, and flat-embedded in Araldite (TAAB, E021, UK) for 48 hr at 60°C (Merchán-Pérez et al., 2009; Cano-Astorga et al., 2024b). The embedded sections were then glued onto a blank Araldite block and trimmed. Semithin sections (1–2 μm thick) were obtained from the surface of the block and stained with 1% toluidine blue (Merck, 115930, Germany) in 1% sodium borate (Panreac, 141644, Spain). The last semithin section (which corresponds to the section immediately adjacent to the block surface) was examined under a light microscope and photographed to accurately locate the neuropil region to be later examined with the FIB/SEM (Figure 9).
 
-## Volume fraction estimation of cortical elements
+### Volume fraction estimation of cortical elements
 
 Five to six semithin sections (1–2 μm thick) from each case, stained with 1% toluidine blue, were used to estimate the volume fraction occupied by neuropil, cell bodies (including neuronal somata, glia, and undetermined cells), and blood vessels. This estimation was performed applying the Cavalieri principle (Gundersen et al., 1988) by point counting (Q) using the integrated Stereo Investigator stereological package (version 8.0, MicroBrightField Inc, VT) attached to an Olympus light microscope (Olympus, Bellerup, Denmark) at ×40 magnification. A grid, whose points covered an area of 2500 μm2, was randomly overlaid at 10–15 sites over the previously traced layer (separately) in each semithin section to determine the volume fraction (Vv) occupied by the different elements. Vv (e.g., in the case of the neuropil) was estimated with the following formula: Vv-neuropil = Q-neuropil × 100/(Q-neuropil + Q-neurons + Q-glia + Q-undetermined cells + Q-blood vessels).
 
-## Three-dimensional electron microscopy
+### Three-dimensional electron microscopy
 
 The blocks containing the embedded tissue were glued onto a sample stub using carbon adhesive tabs (Electron Microscopy Sciences, 77825-09, USA). All surfaces of the blocks except the one to be studied (the top surface) were covered with silver paint (Electron Microscopy Sciences, 12630) to prevent any charging of the resin. The stubs with the mounted blocks were then placed into a sputter coater (Emitech K575X, Quorum Emitech, Ashford, Kent, UK) and the top surface was coated with several 10-nm-thick layers of gold/palladium to facilitate charge dissipation.
 
@@ -237,13 +530,41 @@ All measurements were corrected for tissue shrinkage, which occurs during the ti
 
 Additionally, a correction in the volume of the stack of images for the presence of fixation artifacts (e.g., swollen neuronal or glial processes) was applied after quantification with the Cavalieri principle (Gundersen et al., 1988). A total of 63 FIB/SEM stacks were examined using FIJI (https://fiji.sc/), and the artifact volume ranged from 1.4 to 27.0% of the volume stacks.
 
-## Three-dimensional analysis of synapses
+### Three-dimensional analysis of synapses
 
 The 63 stacks of images obtained by the FIB/SEM were analyzed using EspINA software (EspINA Interactive Neuron Analyzer, 2.9.12; https://cajalbbp.csic.es/espina-2), allowing the segmentation of synapses in the reconstructed 3D volume (see Morales et al., 2011 for a detailed description of the segmentation algorithm). Of these stacks, six were from layers II and III of case M16, which were previously used in Domínguez-Álvaro et al., 2021a and were reanalyzed in the present study.
 
 The user identifies synapses by assessing the presence of pre- and postsynaptic densities, along with the accumulation of synaptic vesicles in the presynaptic terminal. Synaptic segmentation depends on the intense electron density of these pre- and postsynaptic regions. Users must establish a gray-level threshold, and the segmentation algorithm subsequently selects pixels in the synaptic junction darker than the chosen threshold. The resulting segmentation creates a 3D object encompassing the active zone and postsynaptic densities as these represent the two darkest areas of the synaptic junction. EspINA software allows the user to supervise the result of segmentation and reconstruction; each synapse segmentation is revised and validated by the user, and the segmentation can be manually edited if necessary to accurately delimitate the active zone and PSD of each synapse.
 
 There is a consensus for classifying cortical synapses into AS (or type I) and SS (or type II). The main characteristic distinguishing synapses is the prominent or thin PSD, respectively (Colonnier, 1968; Gray, 1959; Peters et al., 1991; Figure 10).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig10-v2.jpg)
+
+**Figure 10.:** (A) Two synapses are indicated as examples of asymmetric (AS, green arrow) and symmetric (SS, red arrow) synapses. Figure 10—figure supplements 1–6 show FIB/SEM images from the neuropil of the rest of the layers. (B–F) FIB/SEM serial images of the AS indicated in (A). (G–K) FIB/SEM serial images of the SS indicated in (A). Synapse classification was based on the examination of full sequences of serial images. Scale bar (in K): 500 nm for (A–K).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Focused ion beam FIB/SEM image resolution in the xy plane was 5 nm/pixel. Resolution in the z-axis (section thickness) was 20 nm. Scale bar indicates 575 nm.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** Focused ion beam FIB/SEM image resolution in the xy plane was 5 nm/pixel. Resolution in the z-axis (section thickness) was 20 nm. Scale bar indicates 575 nm.
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig10-figsupp3-v2.jpg)
+
+**Figure 10—figure supplement 3.:** Focused ion beam FIB/SEM image resolution in the xy plane was 5 nm/pixel. Resolution in the z-axis (section thickness) was 20 nm. Scale bar indicates 575 nm.
+
+![Figure 10—figure supplement 4.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig10-figsupp4-v2.jpg)
+
+**Figure 10—figure supplement 4.:** Focused ion beam FIB/SEM image resolution in the xy plane was 5 nm/pixel. Resolution in the z-axis (section thickness) was 20 nm. Scale bar indicates 575 nm.
+
+![Figure 10—figure supplement 5.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig10-figsupp5-v2.jpg)
+
+**Figure 10—figure supplement 5.:** Focused ion beam FIB/SEM image resolution in the xy plane was 5 nm/pixel. Resolution in the z-axis (section thickness) was 20 nm. Scale bar indicates 575 nm.
+
+![Figure 10—figure supplement 6.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig10-figsupp6-v2.jpg)
+
+**Figure 10—figure supplement 6.:** Focused ion beam FIB/SEM image resolution in the xy plane was 5 nm/pixel. Resolution in the z-axis (section thickness) was 20 nm. Scale bar indicates 575 nm.
 
 Also, these two types of synapses are associated with different functions: AS are mostly glutamatergic and excitatory, while SS are mostly GABAergic and inhibitory (DeFelipe and Fariñas, 1992; Ascoli et al., 2008). Nevertheless, in single sections, the synaptic cleft and the pre- and postsynaptic densities are often blurred if the plane of the section does not pass at right angles to the synaptic junction. Since the software EspINA allows navigation through the stack of images, it was possible to unambiguously identify every synapse as AS or SS based on the thickness of the PSD (Merchán-Pérez et al., 2009; Cano-Astorga et al., 2024b). Synapses with prominent PSDs were classified as AS, while thin PSDs were classified as SS (Figure 10). All synapses were manually identified by an expert, and unclear synapses were reevaluated by the consensus of two or three experts.
 
@@ -263,11 +584,15 @@ In addition, the visualization of each 3D reconstructed synaptic junction allowe
 
 Furthermore, to identify the postsynaptic targets of the axon terminals, we navigated through the image stacks using EspINA to determine whether the postsynaptic element was a dendritic spine or a dendritic shaft (Figure 13 and Figure 13—video 1). As previously described in Cano-Astorga et al., 2023, unambiguous identification of dendritic spines requires the spine to be visually followed to the parent dendrite, in which case we refer to it as a ‘complete spine’. When synapses are established on a dendritic spine-shaped postsynaptic element whose neck cannot be traced to the parent dendrite, we identify these elements as ‘incomplete spines’. These incomplete dendritic spines were identified based on their size and shape, the lack of mitochondria, and the presence of a spine apparatus (Peters et al., 1991)—or because they were filled with a characteristic fluffy material (used to describe the fine and indistinct filaments present in the spines). We also described the presence of single or multiple synapses on a single dendritic spine. Finally, if the synapse was established on a dendritic shaft, we could further determine whether the target dendrite was spiny or aspiny (based on the presence of dendritic spines along its path throughout the image stack).
 
-## Spatial distribution analysis of synapses
+![Figure 13.](https://cdn.elifesciences.org/articles/96144/elife-96144-fig13-v2.jpg)
+
+**Figure 13.:** (A, B) Serial images showing a dendritic segment partially reconstructed (in purple). An asymmetric synapse (in A) on a dendritic spine head and a symmetric synapse (in B) on a shaft are indicated in green and red, respectively. (C) 3D reconstruction of the dendritic segment indicated in (A) and (B). Three dendritic spines receiving asymmetric synapses can be observed, along with a symmetric synapse formed on the dendritic shaft. (D) Snapshot of EspINA software interface displaying the reconstructed dendritic segment. Scale bar (in C): 500 nm in (A, B), 370 nm in (C) and 900 in (D).
+
+### Spatial distribution analysis of synapses
 
 Spatial distribution features (centroids) of each 3D reconstructed synapse were also calculated by EspINA in all FIB/SEM stacks of images. To analyze the spatial distribution of synapses (i.e., whether synapses are arranged in a regular, random, or clustered distribution), spatial point-pattern analysis was performed as described elsewhere (Merchán-Pérez et al., 2014). Briefly, we compared the actual position of the synapse centroids with the CSR model—a random spatial distribution model that defines a situation where a point is equally likely to occur at any location within a given volume. The mathematical model underlying CSR is a homogeneous spatial Poisson point process. For each of the 63 different samples, we calculated three functions commonly used for spatial point pattern analysis: F, G, and K functions, each of which computes different parameters (see Merchán-Pérez et al., 2014 for a detailed description). Briefly, the F function, known as the empty space function, is—for a distance d—the probability that the distance of each point to its nearest synapse centroid is at most d. The G function, also called the nearest-neighbor distance cumulative distribution function, is—for a distance d—the probability that a typical point separates from its nearest neighbor by a distance of at most d. The K function, called the reduced second-moment function, is—for a distance d—the expected number of points within a distance d of a typical point of the process divided by the intensity λ. An estimation of the K function is given by the mean number of points within a sphere of increasing radius d centered on each sample point, divided by an estimation of the expected number of points per unit volume. In addition, we calculated the theoretical distribution that corresponds to a homogeneous spatial Poisson point process which serves as a reference point, in each stack of images. We then calculated the envelope area corresponding to the Poisson distribution, obtained from 99 simulations performed with the same number of centroids in each of the stacks analyzed. Thus, if the curves obtained from the F, G, or K functions in any or the stacks of images appear to be inside the envelope area, it means that the spatial distribution of the centroids in the stack of images is indistinguishable from random. This study was carried out using the spatstat package and R Project program (Baddeley et al., 2016).
 
-## Statistical analysis
+### Statistical analysis
 
 We studied differences in synaptic density, as well as morphological and spatial parameters, between layers by conducting multiple mean comparison tests on data from the various MEC layers studied. In this case, we performed KW, followed by a post hoc Dunn’s multiple comparison test (when KW test finds statistical significance), and MW nonparametric U-test, since normality and homoscedasticity criteria were not met in any comparison. Frequency distribution analysis of the area of the SAS was performed using KS nonparametric test. The analysis of proportions was carried out using pairwise comparisons in contingency tables (χ2), followed by a post hoc Bonferroni correction test for multiple comparisons. The criterion for statistical significance was considered to be met if p<0.05 when the sample size was equal to the number of subjects or image stacks (i.e., MW and KW tests) and if p<0.0001 when the sample size was equal to the number of synapses (i.e., KS and pairwise comparison) in order to avoid overestimation of the differences due to a very large sample size.
 

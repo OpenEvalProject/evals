@@ -22,16 +22,16 @@
 
 ### Affiliations
 
-1. https://ror.org/049s0rh22 Department of Microbiology and Immunology, Geisel School of Medicine at Dartmouth, Dartmouth College Hanover United States
-2. https://ror.org/049s0rh22 Thayer School of Engineering, Dartmouth College Hanover United States
-3. https://ror.org/049s0rh22 Biomedical Data Science, Dartmouth College Hanover United States
-4. https://ror.org/00d1dhh09 Department of Pediatrics, Geisel School of Medicine at Dartmouth, Dartmouth-Hitchcock Medical Center Lebanon United States
-5. https://ror.org/037zgn354 Department of Pathology, Johns Hopkins School of Medicine Baltimore United States
-6. https://ror.org/037zgn354 Department of Medicine, Division of Infectious Diseases, Johns Hopkins School of Medicine Baltimore United States
-7. https://ror.org/01cwqze88 Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States
+1. Department of Microbiology and Immunology, Geisel School of Medicine at Dartmouth, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))
+2. Thayer School of Engineering, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))
+3. Biomedical Data Science, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))
+4. Department of Pediatrics, Geisel School of Medicine at Dartmouth, Dartmouth-Hitchcock Medical Center Lebanon United States ([ROR:00d1dhh09](https://ror.org/00d1dhh09))
+5. Department of Pathology, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+6. Department of Medicine, Division of Infectious Diseases, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+7. Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 8. Hadassah University Medical Center Jerusalem Israel
-9. https://ror.org/01r9htc13 Institute for Medical Immunology, Université libre de Bruxelles Charleroi Belgium
-10. https://ror.org/05cmp5q80 Pediatric Department, CHU St Pierre Brussels Belgium
+9. Institute for Medical Immunology, Université libre de Bruxelles Charleroi Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
+10. Pediatric Department, CHU St Pierre Brussels Belgium ([ROR:05cmp5q80](https://ror.org/05cmp5q80))
 
 † Corresponding author
 
@@ -51,35 +51,314 @@ The extent to which preexisting responses to prior endemic CoV exposures may inf
 
 ## Results
 
-## Structural analysis of SARS-CoV-2
+### Structural analysis of SARS-CoV-2
 
 Sequence conservation across the human CoV spike protein is not uniformly distributed: the N-terminal domain (NTD) of SARS-CoV-2 that contains the RBD responsible for interacting with human angiotensin-converting enzyme 2 (ACE2) and initiating viral entry has lower homology to the corresponding subdomains of other CoVs than do the S2 subdomains where the fusion peptide, heptad repeat, and central helix required for fusion are located (Figure 1A). In contrast to the S2 domain, structural comparison of various subdomains of the SARS-CoV-2 S protein shows that both the NTD and RBD of the spike protein are poorly conserved across CoV (Figure 1B). Superimposition of the SARS CoV-2 S1 and S2 domains with the most well-conserved widely circulating endemic human CoV, OC43, show high structural conservation in S2 and the NTD, and a complete lack of homology in the RBD that is consistent with the differing entry receptors used by these β-CoV (Figure 1C, Figure 1—figure supplement 1). Based on both structural and sequence homology, it stands to reason that preexisting antibodies raised against endemic human CoV are more likely to target the better-conserved regions of SARS-CoV-2 such as S2, and less likely to recognize the RBD (Yuan et al., 2020; Wrapp et al., 2020).
 
-## Subject cohorts
+![Figure 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sequence alignment of SARS-CoV-2 spike protein to other human coronaviruses. Consensus identity is shown on a scale from red (least conserved) to green (most conserved). Color bars are used to indicate different regions of the spike protein: N-terminal domain (NTD, blue), receptor-binding domain (RBD, green) in the S1 domain and fusion peptide (FP, cyan), heptad repeat 1 (HR1, yellow), central helix (CH, orange), and connector domain (CD, purple) in the S2 domain. (B) Structural model of the spike protein monomer colored by percent sequence conservation across deposited coronaviridae sequences shown as a ribbon model for one protomer (left) and spacefill for the spike trimer (right). (C) Superimposed structural model of the spike protein S1 (left) and S2 (right) domains for SARS-CoV-2 (black) and OC43 (teal).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Structural models of the N-terminal domain (NTD) and receptor-binding domain (RBD) as ribbons, colored by strain: SARS-CoV-2 (black), 229E (orange), OC43 (blue), NL63 (green), and HKU1 (yellow). Structural alignments were restricted to the residues of the S1 domain. Right alignments between SARS-CoV2 and the endemic S1 domains shown individually rather than overlayed, with β-CoV at left, and α-CoV at right.
+
+### Subject cohorts
 
 A diversity of cohorts were evaluated in this observational study (Table 1). Subjects naturally infected with SARS-CoV-2 comprised a small cohort of convalescent subjects for which serum and mucosal samples were available, a larger cohort of convalescent plasma donors, acutely infected individuals, pregnant women infected in their third trimester, and a small set of subjects for whom pre- and post-infection samples were available. Subjects vaccinated against SARS-CoV-2 with mRNA included cohorts of healthy adults and pregnant women vaccinated in their third trimester. Samples were analyzed alongside samples from naïve (n = 15) and commercial (n = 38) negative controls.
 
-## Elevated responses to endemic CoV in serum, nasal wash, and stool among SARS-CoV-2-infected subjects
+**Table 1.**
+ Cohort characteristics.NA: not applicable or available; IQR: interquartile range; DHMC: Dartmouth-Hitchcock Medical Center; JHMI: Johns Hopkins Medical Institutions. Partially reproduced from Natarajan et al., 2021.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristic</th>
+      <th>DHMC naive</th>
+      <th colspan="2">DHMC convalescent</th>
+      <th colspan="2">JHMI convalescent</th>
+      <th colspan="2">Acute</th>
+      <th colspan="2">Pre- and post-infection</th>
+      <th colspan="3">Pregnant infected</th>
+      <th colspan="2">Pregnant vaccinated</th>
+      <th colspan="2">Vaccinated</th>
+      <th colspan="2">Commercial controls</th>
+    </tr>
+    <tr>
+      <th>n = 15</th>
+      <th colspan="2">n = 26</th>
+      <th colspan="2">n = 126</th>
+      <th colspan="2">n = 10</th>
+      <th colspan="2">n = 3</th>
+      <th colspan="3">n = 38</th>
+      <th colspan="2">n = 50</th>
+      <th colspan="2">n = 37</th>
+      <th colspan="2">n = 38</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Median age (IQR), years</td>
+      <td>34(28–52)</td>
+      <td colspan="2">58(18–77)</td>
+      <td colspan="2">42(29–53)</td>
+      <td colspan="2">27(20–30)</td>
+      <td colspan="2">62(61–64)</td>
+      <td colspan="3">31(27–35)</td>
+      <td colspan="2">32(29–35)</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">39(28–50)</td>
+    </tr>
+    <tr>
+      <td>Sex (n, %)</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>8 (53%)</td>
+      <td colspan="2">13 (50%)</td>
+      <td colspan="2">58 (46%)</td>
+      <td colspan="2">3 (30%)</td>
+      <td colspan="2">2 (67%)</td>
+      <td colspan="3">38 (100%)</td>
+      <td colspan="2">50 (100%)</td>
+      <td colspan="2">17 (46%)</td>
+      <td colspan="2">22 (58%)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>7 (47%)</td>
+      <td colspan="2">13 (50%)</td>
+      <td colspan="2">68 (54%)</td>
+      <td colspan="2">7 (70%)</td>
+      <td colspan="2">1 (33%)</td>
+      <td colspan="3">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">20 (54%)</td>
+      <td colspan="2">16 (42%)</td>
+    </tr>
+    <tr>
+      <td>Hospitalized (severity)</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>NA</td>
+      <td colspan="2">20 (77%)</td>
+      <td colspan="2">114 (90.5%)</td>
+      <td colspan="2">10 (100%)</td>
+      <td colspan="2">3 (100%)</td>
+      <td colspan="3">NA</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td></td>
+      <td colspan="2">6 (23%)</td>
+      <td colspan="2">12 (9.5%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Median days since PCR+ or symptom onset (IQR)</td>
+      <td>NA</td>
+      <td colspan="2">42.5 (19–154)</td>
+      <td colspan="2">43 (38–48)</td>
+      <td colspan="2">11 (9–14)</td>
+      <td colspan="2">12 (11–14)</td>
+      <td colspan="3">49 (22–78)</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Median days since second vaccine dose (IQR)</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td colspan="3">NA</td>
+      <td colspan="2">20 (12–29)</td>
+      <td colspan="2">8 (7–11)</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>US</td>
+      <td colspan="2">US</td>
+      <td colspan="2">US</td>
+      <td colspan="2">US</td>
+      <td colspan="2">US</td>
+      <td colspan="3">Belgium</td>
+      <td colspan="2">Israel</td>
+      <td colspan="2">US</td>
+      <td colspan="2">US</td>
+    </tr>
+    <tr>
+      <td>IRB</td>
+      <td>DHMC</td>
+      <td colspan="2">DHMC</td>
+      <td colspan="2">JHMI</td>
+      <td colspan="2">DHMC</td>
+      <td colspan="2">DHMC</td>
+      <td colspan="3">CHU St. Pierre</td>
+      <td colspan="2">Hadassah Medical Center</td>
+      <td colspan="2">JHMI</td>
+      <td colspan="2">BioIVT clinical sites</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Elevated responses to endemic CoV in serum, nasal wash, and stool among SARS-CoV-2-infected subjects
 
 The magnitude and specificity of IgM, IgA, and IgG responses were determined across a panel of SARS-CoV-2 and endemic CoV antigens in two previously described cohorts of convalescent subjects (Butler, 2020; Klein et al., 2020; Table 1). In the smaller (Dartmouth-Hitchcock Medical Center [DHMC], n = 26) cohort, mucosal samples were available, and responses in nasal wash and stool were also defined. Relative to SARS-CoV-2-naïve controls, elevated serum IgA and IgG but not IgM responses to whole S of diverse endemic CoV were frequently observed (Figure 2). Among endemic CoV, elevated levels of OC43-specific responses in serum were most pronounced, but were largely restricted to the S2 domain and whole unstabilized S. Similarly, elevated IgG responses to other endemic CoV were observed in serum from convalescent subjects to the spike proteins of endemic CoV, but not to the S1 domain alone. Indeed, elevated serum responses specific to the S1 domain of these CoV were not observed for any antibody isotype or subclass (Figure 2B, Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-v1.jpg)
+
+**Figure 2.:** (A) IgG responses in serum (top), nasal wash (middle), and stool (bottom) across antigens from CoV-2, OC43, and other endemic CoV S, and S1 proteins in the Dartmouth-Hitchcock Medical Center (DHMC) convalescent cohort. Samples from naïve subjects are indicated in gray, SARS-CoV-2 convalescents at 1 month post infection in blue, and buffer blanks in hollow circles. (B) Volcano plot of fold change and significance (unpaired t-test) of differences between antibody responses observed in convalescent subjects of the DHMC (left) and Johns Hopkins Medical Institutions (JHMI) (right) cohorts 1 month post infection and naïve subjects in serum (top) and nasal wash (bottom). Each symbol represents an antibody response feature, with Fc domain characteristics represented by color and Fv antigen specificity indicated by shape. Dotted horizontal line illustrates p=0.05. Statistical significance was defined by Mann–Whitney U-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) IgA (A) and IgM (B) responses in serum (top), nasal wash (middle), and stool (bottom) across antigens from CoV-2, OC43, and other endemic CoV S, and S1 proteins. Samples from naïve subjects are indicated in gray, SARS-CoV-2 convalescents at 1 month post infection in color, and buffer blanks in hollow circles.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Heatmap of filtered and hierarchically clustered features and within-subject groups according to infection and hospitalization status. Ab responses to SARS CoV-2 features are shown on the left and those specific to endemic CoV on the right. Responses were scaled and centered within features, and the scale was truncated at ±3 SD. Antigen specificity (Fv) and Fc characteristics (Fc) are indicated in the color bars.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) Comparison between IgG (A) and IgM (B) levels in naïve, Dartmouth-Hitchcock Medical Center (DH), and Johns Hopkins Medical Institutions (JH) cohort samples to OC43 S, OC43 S2, and OC43 S-2P. Significant differences were defined by ANOVA with Dunnett’s correction (****p<0.0001).
 
 These observations were validated in a larger (Johns Hopkins Medical Institutions [JHMI], n = 126) cohort of convalescent plasma donors: elevated levels of IgG and IgA, but not IgM, to diverse endemic CoV were observed in plasma (Figure 2B, Figure 2—figure supplement 2). Elevated responses were most pronounced for β-CoV (OC43 and HKU1) but were present for α-CoV as well. The absence of elevated IgM responses among convalescent subjects is consistent with recall of class-switched antibodies as opposed to the de novo elicitation of cross-reactive antibodies. Additionally, differential reactivity profiles were observed across three different OC43 antigens: proline-stabilized OC43 S (S-2P), OC43 S, and OC43 S2. Whereas elevated responses to OC43 S-2P among convalescent subjects in either cohort were not observed compared to naïve controls, responses to both OC43 S and OC43 S2 (available only for the smaller cohort) were observed for IgG, but not IgM (Figure 2—figure supplement 3).
 
 This effect was not limited to serum; elevation of endemic CoV antibody responses was also observed in nasopharyngeal wash samples (Figure 2A and B, Figure 2—figure supplement 1) and stool (Figure 2—figure supplement 1). Again, these elevated responses were restricted to IgG and/or IgA isotypes, consistent with cross-reactive antibodies being boosted in a recall response during SARS-CoV-2 infection, and were observed for whole S or the S2 domain, but not S1.
 
-## OC43-specific antibody responses in acute infection
+### OC43-specific antibody responses in acute infection
 
 To better explore the kinetics of these responses, antibodies were measured in serum collected from a cohort of acutely infected subjects (n = 10, Table 1) 2 weeks after a positive PCR diagnosis afforded by twice-weekly surveillance. At this early timepoint, subjects appeared to have robustly elevated levels of CoV-2 unstabilized S-specific IgG compared to naïve controls (Figure 3A). Again, these responses were observed for whole unstabilized S and the S2 domain, but not for the prefusion conformation-stabilized S-2P form of OC43 spike. In contrast, only a minor increase in IgM recognizing unstabilized OC43 S was observed (less than twofold) (Figure 3A). Though cross-sectional in nature and reliant on a small number of subjects, these isotype profiles in acute infection nonetheless further suggest a recalled rather than novel response against the relevant cross-reactive epitopes in S2 and unstabilized spike, presumably in the postfusion conformation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig3-v1.jpg)
+
+**Figure 3.:** (A) OC43 and CoV-2-specific IgM (orange), IgA (purple), and IgG (blue) responses in 10 acutely infected subjects (color) 2 weeks post infection (WPI) as compared to naïve subjects (black). Statistical significance was assessed by unpaired t-test (*p<0.05, ***p<0.0005, ****p<0.00005). Fold change in means between groups is presented in inset. (B) IgM (orange), IgA (purple), and IgG (blue) responses across CoV-2, other CoV, and control antigens in three subjects (indicated by shape) pre- (black) and post- (color) SARS-CoV-2 infection. Serum samples were taken 2 and 10 WPI.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Volcano plot of fold change and significance (paired t-test) of differences between antibody responses observed in convalescent subjects in the pre- and post-infection cohort. Dotted horizontal line indicates unadjusted p=0.05. Each symbol represents an antibody response feature, with Fc domain characteristics represented by color and Fv antigen specificity indicated by shape.
+
 In an effort to resolve whether elevated responses to endemic β-CoV were driven by boosting of preexisting cross-reactive antibody lineages, a small cohort of subjects (n = 3) for which pre- and post-SARS-CoV-2 infection serum samples were available was analyzed (Table 1). The median increase in OC43 S2-specific IgA and IgG were 3.7- and 20-fold, respectively, between the pre- and post-infection timepoints (Figure 3B). In contrast, the median change in OC43 S2-specific IgM was within twofold, providing further support that the elevated responses to endemic β-CoV are due to boosting of preexisting cross-reactive antibodies originally raised against homologous epitopes found in endemic CoV. Like in other convalescent subject cohorts, this boosting effect was observed in response to OC43 S and S2, but not the prefusion conformation-stabilized S-2P form of OC43, which showed a median change less than 1.1-fold across isotypes. Boosting of IgG responses specific to the full-length spike of another endemic β-CoV, HKU1, was also observed. IgG and IgA but not IgM responses to whole unstabilized S, but not the S1 domain, of HKU1 were elevated following SARS-CoV-2 infection (Figure 3B, Figure 3—figure supplement 1). Collectively, these results further suggest that recalled cross-reactive antibodies may be more likely to recognize both the better-conserved S2 domain and post- rather than prefusion conformations of spike.
 
-## Correlations between antibody responses to OC43 and SARS-CoV-2
+### Correlations between antibody responses to OC43 and SARS-CoV-2
 
 We next examined correlative relationships between SARS-CoV-2- and OC43-specific IgG responses in convalescent cohorts. Whereas the magnitude of IgG responses to CoV-2 S2 were well correlated to those binding unstabilized OC43 S (RP = 0.61) and its S2 domain (RP = 0.45), they were less well correlated to responses to stabilized OC43 S-2P (RP = 0.29) (Figure 4A). Expanding this analysis to include additional CoV-2 specificities and other isotypes showed a hierarchy of correlative relationships (Figure 4B, Figure 4—figure supplement 1). CoV-2-specific responses were better correlated to OC43 responses specific for unstabilized rather than stabilized spike. IgG responses showed stronger relationships than did IgA, which were in turn stronger than IgM. Consistent with the lack of elevated IgM to endemic CoV, these measures only rarely showed a statistically significant relationship with CoV-2-specific IgM responses. Lastly, among CoV-2 antigens tested, correlations with OC43 responses were strongest for the S2 domain and whole spike (S-2P), and weaker or absent for S1 and the RBD. Collectively, these correlative relationships are consistent with recall of class-switched antibodies recognizing shared epitopes in the S2 domain from prior endemic CoV exposure induced by SARS-CoV-2 infection.
 
-## Direct evidence of molecular cross-reactivity of SARS-CoV-2 and OC43-specific antibodies
+![Figure 4.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig4-v1.jpg)
+
+**Figure 4.:** (A) Scatterplots of IgG responses specific to OC43 S, OC43 S2, and OC43 S-2P versus CoV-2 S2. Naïve subjects were excluded from calculations of correlative relationships. (B) Correlations (RP) between IgG, IgA, and IgM specific to different stabilized SARS-CoV-2 spike and its subdomains with responses to OC43 S (maroon) and OC43 S-2P. Size and fill of symbols indicate statistical significance. Responses and relationships for naïve subjects are shown in black and convalescent donors shown in maroon (OC43 S), salmon (OC43 S2), and gray (OC43 S-2P).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Heatmap of Pearson correlation coefficients observed among SARS-CoV-2- and OC43-specific IgM (left), IgA (center), and IgG (right) isotypes.
+
+### Direct evidence of molecular cross-reactivity of SARS-CoV-2 and OC43-specific antibodies
 
 To date, antibody cross-reactivity has been inferred from indirect evidence in the form of boosted responses to endemic CoV (Guo et al., 2021; Morgenlander et al., 2021; Wang et al., 2021; Kaplonek et al., 2021; Ortega et al., 2021), and more conclusively observed for select monoclonal antibodies that have been cloned and cross-tested (Sakharkar et al., 2021; Dugan et al., 2021). To better generalize the more definitive monoclonal studies, we sought to directly define the cross-reactivity of polyclonal antibodies raised following SARS-CoV-2 infection. Antibodies specific to stabilized CoV-2 S-2P, RBD, and S2 and unstabilized OC43 S were selectively purified from serum samples from 30 SARS-CoV-2-infected subjects with a range of disease severity and humoral response profiles. Unfractionated and antigen-specific antibodies eluted from affinity purification matrices presenting various epitopes of the CoV-2 spike protein and OC43 were then characterized to determine their cross-reactivity and isotype profiles. Successful affinity purification was confirmed by comparison of antigen-specific binding signal relative to total Ig levels for each isotype (Figure 5A, Figure 5—figure supplements 1–12). While relative binding signal was elevated for each targeted antigen, it was not observed for control antigens such as influenza hemagglutinin (HA) (Figure 5A) or tetanus toxoid (Figure 5—figure supplements 1–12).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-v1.jpg)
+
+**Figure 5.:** (A) Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (red, top) and OC43 S- (teal, bottom) fractions (eluate) from 30 SARS-CoV-2 convalescent subjects. Reactivity to CoV-2 S-2P, CoV-2 RBD, CoV-2 S2, OC43 S, and a control antigen (influenza hemagglutinin [HA]) are reported. (B) Antigen-binding profiles of IgG (top) and IgM (bottom) in unfractionated serum (load, black) and affinity-purified CoV-2 S2-specific (yellow) eluate. Reactivity to CoV-2 S2 (left) and OC43 S (right) is shown. For (A, B), responses to the matched antigen (positive control) used in purification are indicated by green asterisks and to HA (negative control) antigen with red asterisks. Smoothed curves and 95% confidence intervals are shown for both eluate and load fractions. (C) Neutralization activity of pooled elution fractions of antibodies affinity-purified against CoV-2 S-2P (gray square), CoV-2 RBD (red triangle), CoV-2 S2 (yellow triangle), and OC43 S (teal circle). Error bars depict standard error of the mean across assay duplicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (eluate, red) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 RBD- (eluate, pink) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified CoV-2 S2- (eluate, yellow) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Antigen-binding profiles of IgG in unfractionated serum (load, black) and affinity-purified OC43 S- (eluate teal) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgG quantitation.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (eluate, red) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified CoV-2 RBD- (eluate, pink) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified CoV-2 S2- (eluate, yellow) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp8-v1.jpg)
+
+**Figure 5—figure supplement 8.:** Antigen-binding profiles of IgA in unfractionated serum (load, black) and affinity-purified OC43 S- (eluate teal) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgA quantitation.
+
+![Figure 5—figure supplement 9.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp9-v1.jpg)
+
+**Figure 5—figure supplement 9.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified CoV-2 S-2P- (eluate, red) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.
+
+![Figure 5—figure supplement 10.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp10-v1.jpg)
+
+**Figure 5—figure supplement 10.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified CoV-2 RBD- (eluate, pink) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.
+
+![Figure 5—figure supplement 11.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp11-v1.jpg)
+
+**Figure 5—figure supplement 11.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified CoV-2 S2- (eluate, yellow) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.
+
+![Figure 5—figure supplement 12.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig5-figsupp12-v1.jpg)
+
+**Figure 5—figure supplement 12.:** Antigen-binding profiles of IgM in unfractionated serum (load, black) and affinity-purified OC43 S- (eluate teal) fractions from 30 SARS-CoV-2 convalescent subjects across OC43, control, CoV-2, pathogenic CoV, and other endemic CoV. y-axis depicts binding signal for indicated antigen specificity, x-axis depicts signal from total IgM quantitation.
 
 A number of interesting differences in cross-reactivity for antibodies with differing isotypes and antigen-specificities were apparent. For example, OC43 S-specific fractions showed elevated recognition of CoV-2 S2 and S-2P, but not RBD (Figure 5A), demonstrating molecular cross-reactivity as a general feature of polyclonal IgG responses in convalescent subjects. Additionally, IgG in the CoV-2 S2-specific fractions cross-reacted robustly with OC43 S, but no cross-reactivity in the IgM fraction was observed, despite a robust IgM response to CoV-2 S2 (Figure 5B), suggesting that while SARS-CoV-2 infection elicits IgM responses to the S2 domain, these presumed de novo responses are not cross-reactive to OC43.
 
@@ -97,9 +376,21 @@ Similarly, across all isotypes, antibody pools purified based on binding to stab
 
 Lastly, OC43 S-specific antibodies were similarly purified and profiled for cross-reactivity. Despite the presumption that subjects had not experienced OC43 infection recently, IgM, IgA, and IgG to OC43 S were all successfully enriched (Figure 6D). IgA and IgM fractions showed cross-reactivity to a broad array of endemic CoV S but not S1 proteins. Likewise, OC43-specific IgA and IgG antibodies showed cross-reactivity to SARS-CoV-2 proteins containing the S2 domain. In contrast, OC43 S-specific IgM antibodies showed elevated recognition of diverse pandemic, pathogenic, and endemic S proteins in unstabilized forms, but a lack of recognition of stabilized prefusion conformations of CoV-2 spike, or the S1 domains of most other CoV tested. Given binding to whole S but not the S1 domain, this recognition is presumably principally driven via recognition of S2.
 
-## Immunization with stabilized spike changes cross-reactivity profiles
+### Immunization with stabilized spike changes cross-reactivity profiles
 
 Based on the differential ability of affinity-purified antibodies to recognize stabilized and unstabilized forms of CoV spike proteins, we next sought to determine whether responses to natural infection differ from those that result from mRNA vaccination with stabilized SARS-CoV-2 spike (S-2P). To investigate this possibility, antibody responses were analyzed in two cohorts of pregnant women (Table 1) who were either infected (n = 38) or vaccinated (n = 50) during their third trimester, as well as a validation cohort of healthy vaccinated subjects (n = 37). Fascinatingly, despite inducing considerably greater levels of SARS-CoV-2-specific antibodies, immunization with stabilized spike (S-2P) failed to result in elevated IgG responses to endemic CoV among pregnant women (Figure 7). Similarly, elevated levels of OC43-reactive IgA responses were not observed among vaccinated mothers, and neither infected nor vaccinated mothers showed elevated levels of OC43-reactive IgM (Figure 7—figure supplement 1). These differing immunogenicity profiles suggest that the presentation of native spike in the context of natural infection and stabilized spike in the context of mRNA vaccination are distinct. Lastly, to confirm this observation, responses, a validation cohort of mRNA-vaccinated healthy adults was evaluated (Table 1). In this cohort, while IgG responses to OC43 were statistically significantly elevated for S and S2 antigens, the effect was small (<2.5-fold) (Figure 7); elevated IgA or IgM responses were not observed (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig7-v1.jpg)
+
+**Figure 7.:** IgG responses to SARS-CoV-2 (top) and OC43 (bottom) spike proteins. For each CoV strain, responses to S (left), the S2 domain (center), and stabilized S (S-2P, right) are shown. Responses in SARS-CoV-2-naïve subjects are indicated in black, SARS-CoV-2-infected subjects in light blue, and SARS-CoV-2-vaccinated (mRNA) subjects in dark blue. Pregnant subjects are indicated with triangles. Statistical significance by ANOVA with Dunnett’s correction (*p<0.05, **p<0.005, ****p<0.0001). Fold changes between mean response levels in seropositive and naïve cohorts are shown below each graph.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Box plots of IgM (top) and IgA (bottom) responses to SARS CoV-2 S-2P (left) and OC43 (right) S, S2, and S-2P. Statistical significance by ANOVA with Dunnett’s correction.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/75228/elife-75228-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Heatmap of filtered and hierarchically clustered SARS CoV-2-specific Ab features defined by multiplex assay among contemporaneous commercial naïve control subjects and vaccinated pregnant subject cohorts. Responses were scaled and centered by feature, and the scale was truncated at ±2 SD. Antigen specificity (Fv) and Fc characteristics (Fc) are indicated in the color bars. Cohort group is shown in the cohort color bar, with control subjects illustrated in red and vaccinated subjects in blue.
 
 In sum, elevated IgA and IgG but not IgM responses to the endemic CoV OC43 were observed in five distinct cohorts, including acutely infected, cross-sectional, and longitudinal convalescent cohorts. In contrast, two cohorts of subjects immunized with stabilized spike in the form of mRNA-based vaccines showed no (IgA and IgM) or only a small (IgG only, and in only one cohort) elevation of binding to endemic CoV OC43 (Figure 8). In combination with the lack of boosting of responses that cross-react with endemic CoV, the high levels of neutralization activity observed to result from vaccination (Jackson et al., 2020) suggest favorable antigenicity of the prefusion conformation of S, and that, if detrimental, the costs of original antigenic sin might be avoided by immunogen design.
 
@@ -131,11 +422,350 @@ In sum, this study provides evidence that antibodies targeting OC43 are robustly
 
 ## Materials and methods
 
-## Structure visualization and manipulation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H1N1 HA1</td>
+      <td>Immune Technology</td>
+      <td>IT-003-00110p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HSV gE</td>
+      <td>Immune Technology</td>
+      <td>IT-005-005p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Tetanus toxoid</td>
+      <td>Sigma</td>
+      <td>676570-37-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 N</td>
+      <td>Immune Technology</td>
+      <td>IT-002-033Ep</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 fusion peptide</td>
+      <td>New England Peptide</td>
+      <td></td>
+      <td>LCBiot-SKPSKRSFIEDLLFNKVTLADAGFIKQYGD</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 S1</td>
+      <td>ACROBiosystems</td>
+      <td>S1N-C52H3-100ug</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 RBD</td>
+      <td>BEI Resources</td>
+      <td>NR-52366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 S2</td>
+      <td>Immune Technology</td>
+      <td>IT-002-034p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 S-2P</td>
+      <td>Wrapp et al., 2020</td>
+      <td></td>
+      <td>Produced in Expi 293</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 S-6P</td>
+      <td>Hsieh et al., 2020</td>
+      <td></td>
+      <td>Produced in Expi 293</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>WIV1 S-2P</td>
+      <td>Plasmid provided by Jason McLellan</td>
+      <td></td>
+      <td>Produced in Expi 293</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-1 S</td>
+      <td>Sino Biological</td>
+      <td>40634-V08B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-1 S1</td>
+      <td>Sino Biological</td>
+      <td>40150-V08B1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MERS S</td>
+      <td>Sino Biological</td>
+      <td>40069-V08B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MERS S1</td>
+      <td>Sino Biological</td>
+      <td>40069-V08B1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>OC43 S</td>
+      <td>Sino Biological</td>
+      <td>40607-V08B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>OC43 S-2P</td>
+      <td>Plasmid provided by Jason McLellan</td>
+      <td></td>
+      <td>Produced in HEK 293F</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>OC43 S2</td>
+      <td>Sino Biological</td>
+      <td>40069-V08B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>229E S</td>
+      <td>Sino Biological</td>
+      <td>40601-V08H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>229E S1</td>
+      <td>Sino Biological</td>
+      <td>40605-V08H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HKU1 S</td>
+      <td>Sino Biological</td>
+      <td>40606-V08H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HKU1 S1</td>
+      <td>Sino Biological</td>
+      <td>40606-V08H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NL63 S</td>
+      <td>Sino Biological</td>
+      <td>40606-V08B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NL63 S1</td>
+      <td>Sino Biological</td>
+      <td>40604-V08H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG Fc-PE (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>1030-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG1 Fc-PE (mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>9054-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG2 Fc-PE (mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>9070-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG3 Fc-PE (mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>9210-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG4 Fc-PE (mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>9200-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgA Fc-PE (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>2050-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgA1 Fc-PE (mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>9130-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgA2 Fc-PE (mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>9140-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgM Fc-PE (mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>9020-09</td>
+      <td>Used at 0.65 µg/mL. 40 µL used per well in 384-well plates</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgM mouse/bovine/horse SP ads-UNLB (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>2023-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fab2 anti-human Fab2 (min × abs) (goat polyclonal)</td>
+      <td>Jackson Laboratories</td>
+      <td>109-006-097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgA (goat polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>2053-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK Freestyle 293F</td>
+      <td>Thermo Fisher</td>
+      <td>R79007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Expi293F</td>
+      <td>Thermo Fisher</td>
+      <td>A14527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T-ACE2</td>
+      <td>Takara</td>
+      <td>631289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VSV-SARS-CoV-2</td>
+      <td>Letko et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads</td>
+      <td>Thermo Fisher</td>
+      <td>65011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDC</td>
+      <td>Thermo Fisher</td>
+      <td>22980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sulfo-NHS</td>
+      <td>Thermo Fisher</td>
+      <td>24510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 9</td>
+      <td>GraphPad Prism version 9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>ChimeraX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 3.6.1</td>
+      <td>R</td>
+      <td></td>
+      <td>Packages: pracma, ggplot2, pheatmap</td>
+    </tr>
+  </tbody>
+</table>
+
+### Structure visualization and manipulation
 
 The sequence alignments were performed using Geneious 2021.1.1. Sequences and coordinates for CoV spike proteins were retrieved from the Protein Data Bank (PDB) entries SARS-CoV-2 (PDB 6XKL), 229E (PDB 6U7H), OC43 (PDB 6OHW), NL63 (PDB 5SZS), HKU1 (PDB 5I08), and SARS-CoV-2 Closed (PDB 6X6P). SARS-CoV-2 was structurally aligned to the other models by domain using the MatchMaker function with default parameters and visualized using Chimera version 1.15 (Pettersen et al., 2004). For structural characterization of conservation among the 60 complete genomes of the Coronaviridae suborder (https://www.ncbi.nlm.nih.gov/genomes/GenomesGroup.cgi?taxid=11118), Batch Entrez was used to find 585 associated proteins, which were then further downselected to spike proteins (N = 56) and aligned using Clustal Omega. This alignment was used to render by conservation and visualized using ChimeraX version 1.2 (Goddard et al., 2018).
 
-## Human subjects
+### Human subjects
 
 Initial study cohorts comprised 126 adult subjects interested in donating COVID-19 convalescent plasma. All were diagnosed with SARS-CoV-2 infection by PCR-based assays of nasopharyngeal swab, met the standard eligibility criteria for blood donation, and were collected in the Baltimore, MD, and Washington DC area (JHMI cohort), as previously described (Klein et al., 2020) and partially reported in Natarajan et al., 2021, and 26 SARS-CoV-2 convalescent individuals from the Lebanon, New Hampshire area (DHMC cohort) and partially reported previously in Butler, 2020. SARS-CoV-2 infection status was confirmed in all subjects by nasopharyngeal swab PCR. Plasma (JHMI) or serum (DHMC) was collected approximately 1 month after symptom onset or first positive PCR test.
 
@@ -149,11 +779,11 @@ Negative controls included samples from 15 naïve subjects collected from the Ha
 
 Human subject research was approved by the Johns Hopkins University School of Medicine’s Institutional Review Board, the Dartmouth-Hitchcock Medical Center, CHU St. Pierre, Hadassah Medical Center, and BioIVT clinical site Committees for the Protection of Human Subjects as described in Table 1. Participants provided informed written consent. Table 1 provides the basic clinical and demographic information for each cohort.
 
-## Fc array assay
+### Fc array assay
 
 SARS-CoV-2 antigens, including spike protein in its trimeric and subdomain forms (i.e., S1, S2, RBD), endemic CoV, and the control antigens influenza HA and tetanus toxoid were covalently coupled to Luminex Magplex magnetic microspheres by two-step carbodiimide chemistry as previously described (Brown et al., 2012). Anti-isotype and subclass primary antibodies were used to quantify the total amount of each immunoglobulin isotype in a sample before (load) and after (eluate) antigen-specific antibody purification. The load was diluted in 1× PBS by 1:100 followed by seven fivefold serial dilutions. The eluate was diluted beginning from 1:10 with six fivefold serial dilutions. Antibody isotypes and subclasses were detected using R-phycoerythrin (PE)-conjugated secondary Abs as previously described (Brown et al., 2017). A FlexMap 3D array instrument was then used to measure the median fluorescence intensity (MFI) of the bead sets.
 
-## Antigen-specific antibody purification
+### Antigen-specific antibody purification
 
 Human CoV antigens were covalently attached to magnetic Dynabeads (Thermo Fisher, 65011) using carbodiimide chemistry and as per the manufacturer’s instructions. Briefly, 1 nmol of antigen was coupled to 300 μL of beads using a solution of 10 mg/mL EDC and 10 mg/mL sulfo-NHS. Bead activation and antigen coupling took place at room temperature with end-over-end mixing for 30 min and overnight, respectively. Following washes, the beads were reconstituted to 150 μL in PBS-TBN (Teknova, P0220).
 
@@ -161,16 +791,16 @@ The initial DHMC and JHMI cohorts were downselected to a total of 30 subjects, 1
 
 In a nonbinding, clear-bottom 96-well plate, 5 μL of beads were diluted with 5 μL of 1× PBS before adding 50 μL of serum or plasma to the well. The plate was covered and shook at 800 rpm for 2.5 hr at room temperature. Using a magnetic base insert from a plate washer, the beads were pulled down from suspension for 1 min before decanting the waste. The beads were washed three times using 100 μL of PBS-TBN and 3 min of shaking for each wash. Following the third wash, the magnetic separation and decanting step was followed up by pipetting all residual buffer out of the wells while the plate sat on the magnetic base. Antibodies specific to the antigen found on the beads were eluted using 20 μL of 1% formic acid (pH 2.9). After incubating with shaking for 10 min at room temperature and separating the beads, the eluate was pipetted from each well and transferred to a plate with wells containing 8 μL of 0.5 M sodium phosphate.
 
-## Neutralization assay
+### Neutralization assay
 
 Neutralization was performed using a VSV-SARS-CoV-2 pseudovirus assay as previously described (Butler, 2020; Letko et al., 2020). Briefly, serum or plasma samples were serially diluted twofold starting from a 1:25 dilution and incubated at 37°C for 1 hr with VSV-SARS-CoV-2 pseudovirus. Virus-serum/plasma mixtures were then added to pre-plated 293T-ACE2-expressing target cells in white 96-well plates at a final volume of 100 μL per well and incubated at 37°C for 24 hr. To test for neutralization by antibody eluates, samples were first concentrated 10-fold using Amicon Ultra 0.5 mL centrifugal filter devices (molecular weight cutoff of 100K Da) followed by twofold serial dilution from 1:30, incubation with VSV-SARS-CoV-2 S pseudovirus, and addition of the mixtures to 293T-ACE2 target cells as described. Luciferase activity was measured using the Bright-Glo system and percent neutralization determined relative to control wells consisting of 293T-ACE2 cells infected with the pseudovirus alone.
 
-## Data analysis
+### Data analysis
 
 Basic statistical data analysis and visualization or raw Fc Array data were performed using GraphPad Prism, with statistical tests described in each figure legend. Heatmaps were visualized using the ‘pheatmap’ (pheatmap, 2019) package with hierarchical cluster analysis (Bridges, 2016) defined using Manhattan distance (Minkowski, 1910) in R version 3.6.1. Fc Array features were log transformed, then scaled and centered by their standard deviation from the mean (z-score).
 
 In order to quantify the enrichment of antigen-specific antibodies, individual features (antigen-detection pair) were plotted relative to the total immunoglobulin isotype in serum across a titration range for each sample. A generalized additive model (GAM) (Hastie and Tibshirani, 2017) with a cubic spline basis was used to fit a smoothed curve to load and eluate sample data using the ‘ggplot2’ package in R (Wickham, 2016). To quantify the difference between the load and eluate curves, we fit a separate GAM curve to the differences of the predicted values from the load and eluate GAM curves over total antibody as previously suggested (Rose et al., 2012). We approximated the area under the difference curve (AUC) using the trapezoidal rule (Whittaker, 1967; Poisson, 1827) in the ‘pracma’ (Borchers, 2021) package in R.
 
-## Data availability
+### Data availability
 
 Data that support the findings of this study are available at https://github.com/AckermanLab/Crowley_et_al_SARS-CoV-2_Boosting, (copy archived at swh:1:rev:25dbaa42711c91ca06661794e8e11ab72eacdbae; AckermanLab, 2021).

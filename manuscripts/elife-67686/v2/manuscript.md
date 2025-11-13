@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Wolbachia are the most widespread bacterial endosymbionts in animals. Within arthropods, these maternally transmitted bacteria can selfishly hijack host reproductive processes to increase the relative fitness of their transmitting females. One such form of reproductive parasitism called male killing, or the selective killing of infected males, is recapitulated to degrees by transgenic expression of the prophage WO-mediated killing ( wmk ) gene. Here, we characterize the genotype-phenotype landscape of wmk- induced male killing in D. melanogaster using transgenic expression. While phylogenetically distant wmk homologs induce no sex-ratio bias, closely-related homologs exhibit complex phenotypes spanning no death, male death, or death of all hosts. We demonstrate that alternative start codons, synonymous codons, and notably a single synonymous nucleotide in wmk can ablate killing. These findings reveal previously unrecognized features of transgenic wmk -induced killing and establish new hypotheses for the impacts of post-transcriptional processes in male killing variation. We conclude that synonymous sequence changes are not necessarily silent in nested endosymbiotic interactions with life-or-death consequences.
+Wolbachia are the most widespread bacterial endosymbionts in animals. Within arthropods, these maternally transmitted bacteria can selfishly hijack host reproductive processes to increase the relative fitness of their transmitting females. One such form of reproductive parasitism called male killing, or the selective killing of infected males, is recapitulated to degrees by transgenic expression of the prophage WO-mediated killing (wmk) gene. Here, we characterize the genotype-phenotype landscape of wmk-induced male killing in D. melanogaster using transgenic expression. While phylogenetically distant wmk homologs induce no sex-ratio bias, closely-related homologs exhibit complex phenotypes spanning no death, male death, or death of all hosts. We demonstrate that alternative start codons, synonymous codons, and notably a single synonymous nucleotide in wmk can ablate killing. These findings reveal previously unrecognized features of transgenic wmk-induced killing and establish new hypotheses for the impacts of post-transcriptional processes in male killing variation. We conclude that synonymous sequence changes are not necessarily silent in nested endosymbiotic interactions with life-or-death consequences.
 
 ## Introduction
 
@@ -32,41 +32,57 @@ The discovery of wmk has now enabled investigation of the impacts of genetic var
 
 Building on this background, several key questions emerge: Do closely-related or distantly-related homologs induce male killing? How sensitive is the wmk phenotype to small or large genetic changes? And how adapted are wmk homologs to their arthropod hosts? Here, we evaluate codon-optimized wmk homologs that span a spectrum of genetic divergence (Figure 1), including homologs (i) from distantly-related hosts, (ii) with putative upstream alternative start codons, (iii) with a single amino acid change, or (iv) with one or more synonymous codon changes, all in the D. melanogaster host. In this way, we aimed to investigate how a variety of genetic alterations to wmk, from a single synonymous nucleotide to the gene level, affect the phenotype. In particular, we hypothesized that divergent strains would not induce the phenotype due to co-adaptation with a distantly-related host. We also anticipated that the alternative start codons would inhibit function based on previous results (Perlmutter et al., 2020). In contrast, we hypothesized that neither a single amino acid change nor synonymous codon changes would alter the male-killing phenotype. We report that while distant homologs do not cause a male-killing phenotype in this host, single amino acid and synonymous nucleotide changes remarkably do alter the phenotype. Thus, wmk male killing is sensitive to the full spectrum of genetic alterations at a fine-scale level not previously recognized. Notably, synonymous sequence changes and post-transcriptional processes appear to play a role in controlling the genotype-phenotype relationships that underpin wmk male killing.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67686/elife-67686-fig1-v2.jpg)
+
+**Figure 1.:** To investigate the genotype-phenotype landscape, we transgenically expressed wmk homologs with varying degrees of genetic changes. These sequences are codon-optimized based on different codon biases due to different tRNA abundances in the divergent bacterial source and eukaryotic destination species (Plotkin and Kudla, 2011; Gustafsson et al., 2004). Transgenic wmk in Drosophila melanogaster embryos results in three different phenotypes: no killing, male killing, and killing of males and females. Compared to wMel wmk, these transgenes were either divergent homologs from other Wolbachia strains, a homolog with a single amino acid change, homologs with an additional nine codons at the 5’ ends of the genes starting at an alternative upstream start codon, or variants with a single synonymous codon or nucleotide difference. These genotypes resulted in varying degrees of RNA sequence- and amino acid-level changes. Created with BioRender.com.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67686/elife-67686-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (Top) Bayesian nucleotide phylogeny of insect hosts based on 652 bp of the cytochrome oxidase subunit 1 (COI) gene from D. melanogaster, H. bolina, D. bifasciata, C. cautella, D. innubila, D. borealis, D. suzukii, and D. recens. Branch labels and scale bar indicate posterior probability. Species names are colored either by group within the Drosophila genus or by Order Lepidoptera. Underlines indicate hosts in which male-killing strains have been reported. Colored circles indicate host species group. (Middle) Bayesian nucleotide phylogenies of native (middle left, non-transgenic) or transgene (middle right) wmk sequences based on 690 or 686 bp, respectively. Label colors reflect groups from host phylogeny for comparison. Colored circles indicate host species group. Branch labels and scale bar indicate posterior probability. wBif wmk branches distantly due to a highly divergent sequence. wBor and wInn wmk share a branch because they share the same transgenic sequence. (Bottom) Nucleotide alignment of transgenes tested in this study as compared to the previously tested wMel wmk, with the regions encompassing the Helix-turn-helix (HTH) protein domains marked with black lines. Black ticks indicate sequence differences with the wMel wmk reference strain, light gray indicates sequence matches to the reference sequence, and white indicates an indel in at least one strain. In parentheses under strain names, percentages refer to nucleotide similarity compared to the wMel wmk transgene. MK indicates a male-killing strain in its native host, transgenic MK indicates the ability to induce a biased sex ratio transgenically only, and MK in sister species indicates the ability to kill males in a sister host species but not in the native host species. Alignment excludes the HA tag in the tagged strain, which is located between the two HTH domains.
+
 ## Results
 
-## Closely-related homologs of wmk
+### Closely-related homologs of wmk
 
 We tested homologs from strains related to wMel that occur in several groups of species in the Drosophila genus, along with two from Order Lepidoptera (Figure 1—figure supplement 1). The phylogenetic clades of both the native Wolbachia genes and their transgenes are similar to those of the host species. Roughly divided, the transgenes group into two clusters that offer a range of genetic divergence for evaluating genotype-phenotype relationships (Figure 1—figure supplement 1) - those distantly related to the wMel wmk transgene (less than 90 % codon-optimized nucleotide sequence similarity to transgenic wMel wmk) and those closely related (greater than 90 % identity, from wRec, wSuzi, and an HA-tagged wMel homolog).
 
 The closely-related wmk homologs to wMel include those from Wolbachia strains (i) wSuzi of the fruit pest species D. suzukii that has no confirmed reproductive phenotype but notably occurs in populations with female-biased sex ratios (Hamm et al., 2014; Drummond et al., 2019) and (ii) wRec of D. recens that kills males when introgressed into its sister species, D. subquinaria (Jaenike, 2007). The natural wSuzi wmk homolog has one synonymous single nucleotide polymorphism (SNP) compared to the wMel wmk reference, thus yielding the same amino acid sequence. The natural wRec wmk homolog has three SNPs, one of which is non-synonymous relative to wMel wmk, located in the first HTH DNA-binding domain (Figure 2A). These transgenes were codon optimized for expression in D. melanogaster. We hypothesized that both transgenes would induce a biased sex ratio comparable to wmk when expressed in D. melanogaster. However, transgenic expression of both homologs unexpectedly resulted in death of all expressing flies, both male and female (Figure 2B). In addition, we simultaneously tested a transgene of wMel wmk with an internal 3X HA tag epitope in the linker region between the two HTH DNA-binding domains. This transgene, HA-wmk, exhibited a sex ratio bias comparable to wMel wmk, as expected (Figure 2B). Therefore, two transgenes of wMel wmk (one with a tag) resulted in the biased sex ratio previously reported (Perlmutter et al., 2019), while two closely-related transgenes from strains that at least associate with female-biased host sex ratios yielded an all-killing phenotype.
 
-## Gene expression similarities
+![Figure 2.](https://cdn.elifesciences.org/articles/67686/elife-67686-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of wMel, wSuzi, and wRec wmk native nucleotide sequences. The blue tick mark indicates a non-synonymous nucleotide difference. Black tick marks indicate synonymous nucleotide changes. Numbers indicate nucleotide position across the entire 912 nucleotide sequence. (B) Sex ratios of adult flies are shown for expressing (Act5c-Gal4) and non-expressing (CyO) embryonic offspring. Each sample point represents the adult offspring (N = 50–157, mean 86) produced by a replicate family of ten mothers and two fathers, with expressing and non-expressing flies of a given genotype being siblings. Bars represent the mean sex ratio. Statistics are based on a Kruskal-Wallis, one-way ANOVA followed by Dunn’s correction across either expressing or non-expressing flies. wRec and wSuzi wmk have no points in the expressing category due to death of most or all males and females. HA-wmk contains a 3 X HA tag in the linker region between the two helix-turn-helix domains. This experiment was performed twice. Data and statistical outputs are available in Figure 2—source data 1 and Figure 2—source data 2, respectively. (C) Gene expression in embryos 4–5 h AED of each indicated wmk transgene from (B), relative to Drosophila housekeeping gene, rp49. There is no significant difference in expression based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction. Data and statistical outputs are available in Figure 2—source data 3 and Figure 2—source data 4, respectively. (D) Gene expression in embryos 4–5 h AED of the host msl-2 dosage compensation gene relative to rp49 under simultaneous expression of the indicated transgene. There is no significant difference in expression based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction. Data and statistical outputs are available in Figure 2—source data 5 and Figure 2—source data 6, respectively. (E) Predicted RNA secondary structures of native wMel wmk and several transgene strains. Black arrows point to the location of the start codon within each structure.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67686/elife-67686-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (Top) Sex ratios of adult flies are shown for expressing (Act5c-Gal4) and non-expressing (CyO) offspring. Each sample point represents the adult offspring (N = 50–120, mean 84) produced by a replicate family of 10 mothers and 2 fathers, with expressing and non-expressing flies of a given genotype being siblings. Bars represent the mean sex ratio. Statistics are based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction across either expressing or non-expressing flies. This experiment was performed twice. Data and statistical outputs are available in and , respectively. (Bottom) Predicted RNA secondary structures of the wRec and wSuzi wmk transgenes with the additional 5’ sequence exhibit slight structural changes compared to their non-lengthened counterparts (included again from Figure 2 for ease of comparison). Black arrows point to the location of the start codon within each structure.
+
+### Gene expression similarities
 
 To assess if variation in gene expression underpins the phenotypic variation, we measured the transcript levels of the transgenes in embryos 4–5 h AED (after egg deposition) when wmk kills males (Perlmutter et al., 2019). Gene expression levels are not significantly different across wSuzi, wMel, wRec, or HA tag wMel wmk transgenes, indicating that transcript levels do not account for the phenotypic differences (Figure 2C). An alternative hypothesis is that transgenic expression of the wSuzi and wRec homologs impacts native expression of a host gene in D. melanogaster that causes male and female lethality. For instance, transgenic expression of the DNA-binding dosage compensation gene, male-specific lethal 2 (msl-2), can induce total lethality with male-killing Spiroplasma (Cheng et al., 2016). Based on this, we quantified msl-2 transcript levels in embryos expressing wMel wmk (sex ratio bias), wSuzi wmk (all expressing hosts die), and wBif wmk (no killing or sex ratio bias) and found that msl-2 levels were comparable across all genotypes and phenotypes (Figure 2D).
 
-## RNA structural model variation
+### RNA structural model variation
 
 We next considered mRNA secondary structural differences of the transgene transcripts as a factor explaining the observed phenotypic variation. Modeling RNA structures showed they were substantially different, even in the case of few to no amino acid level changes from one sequence to another. Notably, some RNA structural features grouped by phenotype, such as the location of the start codon (Figure 2E). Two transgenic transcripts, wMel wmk and HA-wmk, cause a sex ratio bias and have start codons in the middle of the structure, while the other transgenes, wSuzi wmk and wRec wmk, that kill all flies have start codons on outer loops or hairpins. Although caution is warranted with this predicted structural analysis, mRNA secondary structure could explain some phenotypic outcomes of closely-related wmk homologs. Native wMel wmk also has a start codon on an outer loop but does not induce an ‘all killing’ phenotype like the wSuzi and wRec wmk transgenes, which may be due to lower expression of native genes (Perlmutter et al., 2019) and/or other structural differences.
 
-## Distantly-related homologs of wmk
+### Distantly-related homologs of wmk
 
 To determine if wmk homologs from distantly-related strains induce a biased sex ratio in D. melanogaster, we transgenically expressed four codon-optimized homologs from known male-killing strains of Wolbachia: the wBol1b strain from Hypolimnas bolina butterflies (Dyson et al., 2002), the wBif strain from Drosophila bifasciata flies (Riparbelli et al., 2012), the wCaub strain from Cadra cautella moths (Sasaki et al., 2002), and the wInn strain from D. innubila flies (Dyer and Jaenike, 2004) (same gene sequence as the wBor male-killing strain from D. borealis flies Carson, 1956; Figure 1—figure supplement 1). While transgene expression of wMel wmk induces a biased sex ratio (~one third of expressing males die), none of the more distantlyrelated wBol1b, wBif, wCaub, or wInn/wBor wmk homologs yield a biased sex ratio, demonstrating that they do not recapitulate male killing when transgenically expressed in D. melanogaster under the conditions tested (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67686/elife-67686-fig3-v2.jpg)
 
-**Figure 3.:** wmk from male-killing strains do not induce a biased sex ratio in D. melanogaster.Sex ratios of adult flies are shown from either expressing (Act5c-Gal4) or non-expressing (CyO) offspring. WT refers to the background insertion line and Control gene refers to the WD0034 control transgene that induces no sex ratio bias. Each sample point represents the adult offspring (N = 50–132, mean 69) produced by a replicate family of ten mothers and two fathers, with expressing and non-expressing flies of a given genotype being siblings. Bars represent the mean sex ratio. Statistics are based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction across either expressing or non-expressing flies. This experiment was performed twice. Data and statistical outputs are available in Figure 3—source data 1 and Figure 3—source data 2, respectively.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** Sex ratios of adult flies are shown from either expressing (Act5c-Gal4) or non-expressing (CyO) offspring. WT refers to the background insertion line and Control gene refers to the WD0034 control transgene that induces no sex ratio bias. Each sample point represents the adult offspring (N = 50–132, mean 69) produced by a replicate family of ten mothers and two fathers, with expressing and non-expressing flies of a given genotype being siblings. Bars represent the mean sex ratio. Statistics are based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction across either expressing or non-expressing flies. This experiment was performed twice. Data and statistical outputs are available in Figure 3—source data 1 and Figure 3—source data 2, respectively.
 
-## Alternative start codon variation and male killing
+### Alternative start codon variation and male killing
 
 Relevant to the studies here, we previously provided evidence that some strains contain alternative start codons upstream of the annotated start for wmk, and these upstream regions are expressed in the wMel strain (Perlmutter et al., 2020). When wMel wmk was transgenically expressed with the most likely upstream start codon, the phenotype was lost, and no biased sex ratio resulted. We also showed that some non-male-killing strains tended to have more of the alternative start codons (Perlmutter et al., 2020). To determine if wRec and wSuzi wmk transgene phenotypes are similarly sensitive to transcript changes, we expressed them with upstream codons that are native to each of their genetic sequences. As previously observed with other homologs, they lost their killing phenotype with only nine amino acids added to the 5’ end of the gene, despite being smaller than many commonly used protein tags (Figure 2—figure supplement 1). All expressing flies survived with no sex ratio bias. Returning to the RNA structure models, we find that simply adding the corresponding nucleotides at the 5’ end of each homolog resulted in several predicted differences in RNA secondary structure for each transgene compared to the structures without the additional 5’ nucleotides (Figure 2—figure supplement 1). This includes additional loops and different predicted placement of the start codon.
 
-## Silent site variation and male killing
+### Silent site variation and male killing
 
 Finally, to identify particular nucleotides that may account for phenotypic variation among the homologs, we aligned the sequences of the four transgenes in Figure 2 and investigated codons that clustered by phenotype (sex ratio bias for wMel wmk and HA-wmk, or all killing for wRec and wSuzi wmk). Across the length of the genes (and excluding the HA tag), there were only two codon differences: one at the sixteenth amino acid position and another near the end of the gene. As previous work demonstrated that changes at the 5’ end of this gene affect phenotype (Perlmutter et al., 2020) and since approximately the first 10 codons in model prokaryotic genes are known to substantially affect mRNA structure and resulting translation rate (Bentele et al., 2013), we focused on the earlier codon at site 16. This codon, which codes for Serine in all homologs, segregates among sequences by phenotype. The HA-wmk and wMel wmk transgenes, which recapitulate male killing, have a TCG codon, while the all-killing transgenes wSuzi and wRec wmk have TCC and AGC, respectively (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67686/elife-67686-fig4-v2.jpg)
 
-**Figure 4.:** wmk alters resulting phenotype.(A) Sequence alignment of transgenic wmk homologs. The codon farthest on the left is the fourth codon in the sequence, and the highlighted codon is the 16th, with the farthest right representing the 23rd codon, and ellipses indicating codons continuing on either side. The red box outlines where the genotypes cluster by phenotype. The ‘HA-wmk’ and ‘wMel wmk’ genotypes share the same codon in this position, and both induce male-specific death. The ‘wRec wmk’ and ‘wSuzi wmk’ genotypes both exhibit different codons from the previous two and exhibit an all-killing phenotype. Colors correlate with amino acid identity. (B) Sequence alignment of transgenes with either the wMel wmk sequence made anew (wMel wmk new), or with the 16th codon (red box) replaced with the synonymous codons from the wRec and wSuzi wmk transgenes. The colors and symbols reflect those in (A). (C) Sex ratios of adult transgenic flies are shown for expressing (Act5c-Gal4) and non-expressing (CyO) offspring that include the original transgene wMel wmk strain used in previous figures, along with the newly created identical wMel wmk (new) transgene and the additional transgenes with the single codon swapped out for the indicated codons noted in (A). wSuzi codon and wRec codon refer to the strains that have the same sequence as the wMel wmk, but with one or three silent sites changed in the single codon at the 16th amino acid position. Each sample point represents the adult offspring (N = 50–161, mean 73) produced by a replicate family of 10 mothers and two fathers, with expressing and non-expressing flies of a given genotype being siblings. Bars represent the mean sex ratio. Statistics are based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction across either expressing or non-expressing flies. This experiment was performed twice. Data and statistical outputs are available in Figure 4—source data 1 and Figure 4—source data 2, respectively. (D) Gene expression in embryos 4–5 h AED denotes expression of each transgene relative to that of rp49. There is no significant difference in expression based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction. Data and statistical outputs are available in Figure 4—source data 3 and Figure 4—source data 4, respectively. (E) Predicted RNA secondary structures are shown for the wMel wmk transcript compared to both of the wRec or wSuzi codon transgenes exhibiting slight structural differences. The structure for transgene wMel wmk is included again from Figure 3 for ease of comparison. Black arrows point to the location of the start codon within each structure. Black circles highlight a key area of difference between the structures, with a stem absent in the wSuzi codon strain, and different base pair match probabilities calculated for each as indicated by color (blue to red, low to high probability). Within the black circle, the wSuzi codon transgene structure is missing a predicted stem that the others have. The stem in the wRec codon line, while present, has a weaker prediction as noted by the cooler colors, so there may be structural differences compared to the wMel wmk model.Figure 4—source data 1.Figure 4C.Data for qPCR from expression of transgenes with single codon changes corresponding to Figure 4D.Figure 4—source data 2.Figure 4D.Figure 4—source data 3.Figure 4D.Figure 4—source data 4.Figure 4D.
+**Figure 4.:** (A) Sequence alignment of transgenic wmk homologs. The codon farthest on the left is the fourth codon in the sequence, and the highlighted codon is the 16th, with the farthest right representing the 23rd codon, and ellipses indicating codons continuing on either side. The red box outlines where the genotypes cluster by phenotype. The ‘HA-wmk’ and ‘wMel wmk’ genotypes share the same codon in this position, and both induce male-specific death. The ‘wRec wmk’ and ‘wSuzi wmk’ genotypes both exhibit different codons from the previous two and exhibit an all-killing phenotype. Colors correlate with amino acid identity. (B) Sequence alignment of transgenes with either the wMel wmk sequence made anew (wMel wmk new), or with the 16th codon (red box) replaced with the synonymous codons from the wRec and wSuzi wmk transgenes. The colors and symbols reflect those in (A). (C) Sex ratios of adult transgenic flies are shown for expressing (Act5c-Gal4) and non-expressing (CyO) offspring that include the original transgene wMel wmk strain used in previous figures, along with the newly created identical wMel wmk (new) transgene and the additional transgenes with the single codon swapped out for the indicated codons noted in (A). wSuzi codon and wRec codon refer to the strains that have the same sequence as the wMel wmk, but with one or three silent sites changed in the single codon at the 16th amino acid position. Each sample point represents the adult offspring (N = 50–161, mean 73) produced by a replicate family of 10 mothers and two fathers, with expressing and non-expressing flies of a given genotype being siblings. Bars represent the mean sex ratio. Statistics are based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction across either expressing or non-expressing flies. This experiment was performed twice. Data and statistical outputs are available in Figure 4—source data 1 and Figure 4—source data 2, respectively. (D) Gene expression in embryos 4–5 h AED denotes expression of each transgene relative to that of rp49. There is no significant difference in expression based on a Kruskal-Wallis one-way ANOVA followed by Dunn’s correction. Data and statistical outputs are available in Figure 4—source data 3 and Figure 4—source data 4, respectively. (E) Predicted RNA secondary structures are shown for the wMel wmk transcript compared to both of the wRec or wSuzi codon transgenes exhibiting slight structural differences. The structure for transgene wMel wmk is included again from Figure 3 for ease of comparison. Black arrows point to the location of the start codon within each structure. Black circles highlight a key area of difference between the structures, with a stem absent in the wSuzi codon strain, and different base pair match probabilities calculated for each as indicated by color (blue to red, low to high probability). Within the black circle, the wSuzi codon transgene structure is missing a predicted stem that the others have. The stem in the wRec codon line, while present, has a weaker prediction as noted by the cooler colors, so there may be structural differences compared to the wMel wmk model.
 
 To functionally test if the silent changes in this Serine codon accounted for the phenotype differences, we generated three new transgenes (Figure 4B): (i) wMel wmk control with no changes compared to the previously tested transgene (TCG codon, labeled ‘wMel wmk (new)’), (ii) wMel wmk with three nucleotide changes in the codon that reconstitutes the AGC present in the wRec transgene line (labeled ‘wRec codon’), and (iii) wMel wmk with one nucleotide change in the codon that reconstitutes the TCC present in the wSuzi transgene line (labeled ‘wSuzi codon’). When these three otherwise identical genes were transgenically expressed, the wMel wmk (new) transgene with no changes caused a biased sex ratio as expected; however, and remarkably, expression of transgenes with two different Serine codons ablated the phenotype and resulted in a non-biased sex ratio with normal numbers of expressing flies (Figure 4C). This ablation occurs even though transcript levels remain similar across all transgenes and despite sequencing confirmation of the single codon differences (Figure 4D). Thus, a minimum of one single synonymous site change in the 5’ region was sufficient to alter the sex ratio phenotype. However, while the nucleotide changes in the codon changed the phenotype, they did not recapitulate the all-killing phenotypes of their corresponding homologs. The predicted RNA secondary structures from the transgenes with the single codon changes are similar to the original wMel wmk transgene, but they differ in some aspects such as presence or absence of stems and loops and the probability score of the base pair match as indicated by color (scale of red to blue, warmer colors indicate high probability, cooler colors indicate low probability). (Figure 4E).
 
@@ -96,33 +112,269 @@ Taken together, this work reports previously unrecognized relationships for wmk-
 
 ## Materials and methods
 
-## Drosophila strains and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Wolbachia pipientis)</td>
+      <td>WD0626</td>
+      <td>NCBI</td>
+      <td>NCBI:WD_RS02815</td>
+      <td>Also known as wmk (WO-mediated killing)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Act5c-Gal4/CyO</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:3953; FlyBase FBti0012290</td>
+      <td>P{AyGAL4}25</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>WT (y1w67c23; P[CaryP]P2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:8622; FlyBase FBti0040535</td>
+      <td>WT strain used in this study; P{CaryP}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wMel wmk</td>
+      <td>This paper; Perlmutter et al., 2019; PMID:31504075</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wBol1b wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wBif wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wCaub wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wInn/wBor wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter; wInn and wBor wmk have same exact sequence</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wSuzi wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wRec wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>HA-wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter; 3 X HA tag epitope in linker between HTH domains of wMel wmk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>5’ wRec wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter; Sequence has additional nine amino acids starting at upstream alternative start codon</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>5’ wSuzi wmk</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter; Sequence has additional nine amino acids starting at upstream alternative start codon</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wMel wmk (new)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter; Same exact sequence as wMel wmk, newly transformed strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wSuzi codon</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter; Same as wMel wmk, but with 16th amino acid position using TCC Serine codon from wSuzi wmk strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wRec codon</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expresses codon-optimized transgene; UAS promoter; Same as wMel wmk, but with 16th amino acid position using AGC Serine codon from wRec wmk strain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTIGER (plasmid)</td>
+      <td>Ferguson et al., 2012; PMID:22328499</td>
+      <td></td>
+      <td>Modified pUASp plasmid for enhanced germline expression under Gal4/UAS control</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rp49_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGGTTACGGATCGAACAAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rp49_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTTGCGCTTCTTGGAGGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>wmk_homologs_opt_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGTATGCCATTGCCGAGACCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>wmk_homologs_opt_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCACCAGATCCTTGGCGATCTTCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Msl-2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGATTAACGCGGTCTAAGCATGTGTAACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Msl-2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTATGCCGTCTGGGCCATGATG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MiniPrep Kit</td>
+      <td>Zymo</td>
+      <td>R2051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript VILO cDNA Synthesis Kit</td>
+      <td>ThermoFisher</td>
+      <td>11754050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase, RNase-free</td>
+      <td>Ambion, Life Technologies</td>
+      <td>AM2222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>iTaq Universal SYBR Green Mix</td>
+      <td>Bio-Rad</td>
+      <td>1725120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Prism 8</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious Pro v.2019.2; Geneious Pro v.2020.2.4</td>
+      <td>Geneious</td>
+      <td>RRID:SCR_010519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>jModelTest</td>
+      <td>jModelTest</td>
+      <td>RRID:SCR_015244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNAfold WebServer</td>
+      <td>University of Vienna, Gruber et al., 2008, Lorenz et al., 2011</td>
+      <td>PMID:18424795; PMID:22115189</td>
+      <td>http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi</td>
+    </tr>
+  </tbody>
+</table>
+
+_**Reagents source from this paper may be obtained from Bordenstein lab._
+
+### Drosophila strains and maintenance
 
 D. melanogaster strains used in this study include Act5c-Gal4/CyO (BDSC 3953, ubiquitously-expressing zygotic driver), the WT background line of genotype y1w67c23; P[CaryP]P2 (BDSC 8622), the WD0626 (wmk) and WD0034 (control gene) transgene constructs previously described (Perlmutter et al., 2019), and several new transgene constructs. Briefly, each Wolbachia gene of interest was codon-optimized for optimal D. melanogaster expression using algorithms developed by GenScript Biotech (Piscataway, NJ). These sequences were then synthesized as DNA nucleotides and cloned by GenScript into the pTIGER plasmid (Ferguson et al., 2012). The pTIGER vector is a UASp-based plasmid optimized for germline expression and uses PhiC31 integrase (Groth et al., 2004) for targeted integration into the D. melanogaster genome. It also includes UAS promoters for inducible expression with a Gal4 driver (Southall et al., 2008) as well as a w+ red eye marker for transformant screening. The plasmids were then sent to BestGene (Chino Hills, CA), which performed injections of the vectors into embryos of the BDSC 8622 background line with PhiC31 integrase to integrate the vector into the attP2 insertion site in the genome. Successful transformants were selected based on the red eye marker, and each transgene line is descended from the offspring of a single transformant (isofemale).
 
 D. melanogaster were reared on standard cornmeal, molasses, and yeast (CMY) media (5% w/v cornmeal (Quaker, Chicago IL), 1.875% w/v yeast (Red Star Yeast, Milwaulkee WI), 7.8% v/v molasses (Sweet Harvest Foods, Rosemount MN), 0.5% w/v type II Drosophila agar (Genesee Scientific, San Diego CA), 0.056% w/v tegosept (Genesee Scientific, San Diego CA), and 0.39% v/v propionic acid (Sigma Aldrich)). Stocks were maintained at 25 °C with virgin flies stored at room temperature. During virgin collections, stocks were kept at 18 °C overnight and 25 °C during the day. All flies were kept on a 12 hr light/dark cycle.
 
-## Sex ratio assays
+### Sex ratio assays
 
 To assess the effect of transgene expression on adult sex ratios (measurement of male killing), sex ratio assays were performed as previously described (Perlmutter et al., 2019). Briefly, twenty biological replicates of 10 uninfected, 4- to 7-day-old virgin, female Act5c-Gal4/CyO driver flies and two uninfected, 1- to 2-day-old virgin, male transgene flies were each set up in vials with CMY media. Individuals were randomly allocated to each vial after all females or males of a given genotype were mixed together. They were left on the media to lay eggs for 4 days at 25 °C with a 12 hr light/dark cycle, at which point adults were discarded. The vials are then left at 25 °C until the offspring are counted. After 9 days of adult offspring emergence, they were scored for both sex and expression (red eye color from Act5c-Gal4 chromosome) or non-expression (curly wings from CyO balancer chromosome). The number of adult offspring per vial across all experiments ranges from 50 to 170, with a mean of 120 (ranges and means per experiment are included in figure captions). Any vials with fewer than 50 adult offspring were removed from the analysis, as this indicates either abnormally poor egg laying or hatching (typically 0–2 vials per group). In addition, vials with no adult emergence, while others of the same genotype had typical levels of offspring, were also excluded (typically 2–3 vials per group). Results were graphed in GraphPad Prism 8.4.0, which applies a ‘Standard Plot Appearance’ correction for visibility of data distribution where the width of distribution of points is proportional to the number of points at that y-value.
 
-## RNA secondary structures
+### RNA secondary structures
 
 RNA secondary structures were generated by uploading the nucleotide sequences of the indicated gene to the RNA fold web server (Gruber et al., 2008; Lorenz et al., 2011). The structures shown are the graphical outputs of the MFE (minimum free energy) secondary structures. Colors indicate base pair probabilities, from blue to red, with blue indicating a probability of 0 and red indicating a probability of 1.
 
-## Gene expression
+### Gene expression
 
 Gene expression was measured in Drosophila embryos aged 4–5 hr AED. Each point represents a biological replicate with the RNA of 30 pooled embryos from crosses between a unique set of 60 uninfected, 4- to 7-day-old virgin, female Act5c-Gal4/CyO driver flies and 12 uninfected, 1- to 2-day-old virgin, male transgene flies of the indicated genotype. Each point represents a biological replicate from different bottles. Individuals were randomly allocated to each bottle after all females or males of a given genotype were mixed together. Each collection chamber consisted of a grape juice agar plate with yeast in an eight oz round bottom bottle, and flies. These were placed in a 25 °C incubator overnight (16 hr). Then, the plates were swapped with fresh ones. The flies were allowed to lay eggs for 1 hr. The plates were then left at 25 °C for an additional 4 hr to age them to be 4–5 hr old (the estimated time of male death in wmk crosses). Embryos were then gathered in groups of 30 (each group from a unique bottle/biological replicate) and flash frozen in liquid nitrogen. RNA was extracted using the Direct-zol RNA MiniPrep Kit (Zymo), RNase-free DNase (Ambion, Life Technologies), cDNA was generated with SuperScript VILO (Invitrogen), and RT-qPCR was run using iTaq Universal SYBR Green Mix (Bio-Rad). qPCR was performed on a Bio-Rad CFX-96 Real-Time System. Primers are listed in the Key Resources Table. Conditions were as follows: 50 °C 10 min, 95 °C 5 min, 40 x (95 °C 10 s, 55 °C 30 s), 95 °C 30 s. Differences in gene expression were done by calculating 2-Δct (difference in ct values of two genes of interest). Data points were excluded if a sample had low-quality cDNA that did not amplify in qPCR. Data points of each biological replicate are measured as the mean of two technical replicates from each sample.
 
-## Phylogenetic trees
+### Phylogenetic trees
 
 The nucleotide phylogenetic trees of host COI genes and wmk native gene or transgene sequences were inferred based on a MUSCLE alignment in Geneious Prime 2020.2.4 followed by stripping all sites with gaps. The resulting 652, 690, 686 nucleotide base pair alignments (respectively) were then analyzed via jModelTest 2.1.10 v20160303 (Darriba et al., 2012Guindon and Gascuel, 2003). The AICc-corrected best model, JC, was predicted for all three alignments and was used to build the trees using the MrBayes (Huelsenbeck and Ronquist, 2001; Ronquist and Huelsenbeck, 2003) Geneious plugin with the JC69 model (Jukes and Cantor, 1969) and equal rate variation.
 
-## Transgene sequence alignments
+### Transgene sequence alignments
 
 The sequence alignments of different wmk transgenes in Figure 2 and Figure 4 were conducted in Geneious Pro v.2019.2 using a MUSCLE alignment. Black bars in Figure 2 indicate sequence mismatches compared to the wMel wmk transgene reference sequence with any gaps stripped. Codons in Figure 4 are colored by amino acid.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample sizes for experiments were based on previous publications, which demonstrated repeatability in relative differences between treatment groups. Each experiment was completed twice, and statistical tests were applied to both to confirm repetition in differences between treatment groups. In all plots, the first experiment is the representative one shown. For sex ratios, we tested different sample sizes for reliability in sex ratio measurements, and found that 20 biological samples per group, with 10 females and 2 males per sample, resulted in consistently replicable data, which is the standard we apply here. qPCR data was approached similarly, by previous work in the lab demonstrating that with embryos 4–5 h AED, we are able to get consistent, high-quality, replicable data with 30 embryos per sample, and at least eight samples per group.
 

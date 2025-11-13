@@ -34,55 +34,63 @@ The mammalian Yrt orthologs EPB41L4B and EPB41L5 (also known as EHM2/LULU2 and Y
 
 ## Results
 
-## Yrt increases Myosin-dependent cortical tension
+### Yrt increases Myosin-dependent cortical tension
 
 It was previously shown that loss of Yrt expression increases cell diameter in pupal tissues (40), thus suggesting that Yrt may promote actomyosin-based contraction to define cell width. To test this hypothesis directly, we measured the retraction velocity after laser ablation of cell borders in the Drosophila embryonic epidermis, which reflects Myosin-dependent cortical tension (Hutson et al., 2003). Knockdown of yrt expression decreased the retraction velocity after laser ablation by 49% with respect to controls (Figure 1A, B; Video 1). In contrast, Yrt overexpression increased the retraction velocity after ablation by 43% (Figure 1C, D; Video 2). We quantified changes to the material properties of the apical cell surface using a Kelvin-Voigt model to measure the relaxation times of laser ablation experiments, proportional to the viscosity-to-elasticity ratio (Fernandez-Gonzalez et al., 2009). yrt knockdown and Yrt overexpression did not affect tissue viscoelasticity: relaxation times were 12 ± 1 seconds for yrt knockdown vs. 11 ± 2 seconds for controls, and 8 ± 1 seconds for Yrt overexpression vs. 10 ± 1 seconds for controls. Together, our data indicate that Yrt positively regulates cortical tension in the Drosophila embryonic epidermis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig1-v2.jpg)
 
-**Figure 1.:** (A) Epidermal cells in stage 14 Drosophila embryos expressing DE-cad::GFP and shRNA against mCherry or yrt before (cyan in merge) and after (red in merge) laser ablation of a cell-cell interface (white arrowheads). Scale bar, 10 µm. Circular marks visible after ablation indicate where the UV laser passed through the vitelline membrane, creating autofluorescent holes. Bottom panel shows kymographs of interface retraction over time (scale bar, 4 s). Yellow asterisks indicate the position of the tracked vertices. (B) Retraction velocity after laser ablation in embryos expressing shRNA against mCherry (n = 17 junctions in 17 different embryos) or yrt (n = 12). (C) Epidermal cells in stage 14 Drosophila embryos expressing DE-cad::GFP and wild-type levels of Yrt expression (left panel; expression of LacZ as control) or overexpression of FLAG-Yrt (right panel) before (cyan in merge) and after (red in merge) ablation of a cell-cell interface (white arrowheads). Scale bar, 10 µm. (D) Retraction velocity after laser ablation in embryos with wild-type Yrt expression (n = 13 junctions in 13 different embryos) or overexpressing FLAG-Yrt (n = 12). In B and D, error bars indicate the standard deviation (s.d.), and the black bold line denotes the mean. ** p ≤ 0.01, *** p ≤ 0.001 (Mann-Whitney test).  Figure 1—source data 1.Raw data for Figure 1B and D.
+**Figure 1.:** (A) Epidermal cells in stage 14 Drosophila embryos expressing DE-cad::GFP and shRNA against mCherry or yrt before (cyan in merge) and after (red in merge) laser ablation of a cell-cell interface (white arrowheads). Scale bar, 10 µm. Circular marks visible after ablation indicate where the UV laser passed through the vitelline membrane, creating autofluorescent holes. Bottom panel shows kymographs of interface retraction over time (scale bar, 4 s). Yellow asterisks indicate the position of the tracked vertices. (B) Retraction velocity after laser ablation in embryos expressing shRNA against mCherry (n = 17 junctions in 17 different embryos) or yrt (n = 12). (C) Epidermal cells in stage 14 Drosophila embryos expressing DE-cad::GFP and wild-type levels of Yrt expression (left panel; expression of LacZ as control) or overexpression of FLAG-Yrt (right panel) before (cyan in merge) and after (red in merge) ablation of a cell-cell interface (white arrowheads). Scale bar, 10 µm. (D) Retraction velocity after laser ablation in embryos with wild-type Yrt expression (n = 13 junctions in 13 different embryos) or overexpressing FLAG-Yrt (n = 12). In B and D, error bars indicate the standard deviation (s.d.), and the black bold line denotes the mean. ** p ≤ 0.01, *** p ≤ 0.001 (Mann-Whitney test).
+
+![Video 1.](https://cdn.elifesciences.org/articles/67999/elife-67999-video1.mp4.jpg)
+
+**Video 1.:** Video of representative laser ablation experiments in control and yrt knockdown embryos.
+
+![Video 2.](https://cdn.elifesciences.org/articles/67999/elife-67999-video2.mp4.jpg)
+
+**Video 2.:** Video of representative laser ablation experiments in control and Yrt-overexpressing embryos.
 
 Knockdown of yrt decreased cortical Spaghetti squash (Sqh; the Drosophila Myosin regulatory light chain) localization to cell boundaries without affecting Sqh intensity at the apex of epidermal cells from stage 14 of embryogenesis, a time point coinciding with the apical recruitment of Yrt (Laprise et al., 2006), whereas Yrt depletion had no major impact on Myosin distribution at earlier stages of development (Figure 2A–D). In addition, FLAG-Yrt expression resulted in apical enrichment of Sqh in adult ovarian follicle cells (Figure 2E,F). These data suggest that Yrt controls contractility at the apical domain. Consistent with this premise, mosaic overexpression of FLAG-Yrt induced apical constriction in the embryonic epidermis (Figure 3A,B) and the adult ovarian follicular epithelium (mRFP-positive cells; Figure 3C,D). Knockdown of sqh suppressed Yrt-induced apical constriction in (Figure 3E,F). Taken together, these results establish that Yrt promotes Myosin-based changes in cell mechanics to support cortical tension and/or apical constriction in various epithelial tissues, thereby providing putative molecular insights into how Yrt controls tissue morphogenesis (Franke et al., 2005; Hoover and Bryant, 2002; Laprise et al., 2006).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig2-v2.jpg)
 
-**Figure 2.:** (A, B) Expression of Sqh:GFP and shRNA targeting either mCherry or yrt in the embryonic epidermis at stages 13 (A) and 14 (B). Intensity vs. distance is plotted for indicated yellow lines. (C, D) Mean Sqh intensity and heterogeneity of Sqh signal for antero-posterior linescans in stage 13 embryos (C; n = seven sh mCherry, nine sh yrt) and in stage 14 embryos (D; n = 14 sh mCherry, 11 sh yrt). Error bars indicate the standard deviation (s.d.), and black lines denote the mean. *** p < 0.001 (Mann-Whitney test). (E) Mosaic expression of FLAG-Yrt in follicular epithelial cells constitutively expression Sqh::GFP, which was visualized by immunofluorescence. FLAG-Yrt-expressing cells (right panels) are labeled with mRFP, which was co-expressed with LacZ in control clones (left panels). Scale bar represents 5 μm. (F) Quantification of the fluorescence intensity of apical Sqh::GFP in cells expressing the exogenous proteins described in E (stage 5 and 6 follicles were used for quantification). Results were calculated as a ratio between FLAG-Yrt-expressing cells and control cells in the same follicle (n = 18 follicles for the control and n = 19 follicles for FLAG-Yrt). **** p ≤ 0.0001 (one-way ANOVA), error bars indicate s.d.; bold black lines denote the mean in F.  Figure 2—source data 1.Raw data for Figure 2A–D.  Figure 2—source data 2.Raw data for Figure 2F.
+**Figure 2.:** (A, B) Expression of Sqh:GFP and shRNA targeting either mCherry or yrt in the embryonic epidermis at stages 13 (A) and 14 (B). Intensity vs. distance is plotted for indicated yellow lines. (C, D) Mean Sqh intensity and heterogeneity of Sqh signal for antero-posterior linescans in stage 13 embryos (C; n = seven sh mCherry, nine sh yrt) and in stage 14 embryos (D; n = 14 sh mCherry, 11 sh yrt). Error bars indicate the standard deviation (s.d.), and black lines denote the mean. *** p < 0.001 (Mann-Whitney test). (E) Mosaic expression of FLAG-Yrt in follicular epithelial cells constitutively expression Sqh::GFP, which was visualized by immunofluorescence. FLAG-Yrt-expressing cells (right panels) are labeled with mRFP, which was co-expressed with LacZ in control clones (left panels). Scale bar represents 5 μm. (F) Quantification of the fluorescence intensity of apical Sqh::GFP in cells expressing the exogenous proteins described in E (stage 5 and 6 follicles were used for quantification). Results were calculated as a ratio between FLAG-Yrt-expressing cells and control cells in the same follicle (n = 18 follicles for the control and n = 19 follicles for FLAG-Yrt). **** p ≤ 0.0001 (one-way ANOVA), error bars indicate s.d.; bold black lines denote the mean in F.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig3-v2.jpg)
 
-**Figure 3.:** (A) Mosaic expression of FLAG-GFP or FLAG-Yrt in the embryonic epidermis at stage 14. Crb immunostaining (magenta) marks the apical domain, whereas immunolabeling of L(2)gl or Discs large 1 (Dlg1) label the lateral membrane. (B) Quantification of apical domain width (n = 13 for FLAG-GFP and n = 15 for FLAG-Yrt; images were acquired from seven individual embryos for each genotype). Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same segment (**** p ≤ 0.0001). Scale bar represents 5 μm. (C) Clonal expression of membrane-targeted RFP (mRFP) and LacZ (control; left panels), or mRFP and FLAG-Yrt (F-Yrt; right panels) in the follicular epithelium. Immunostaining of mRFP highlights cells expressing the transgenes, whereas immunolabeling of endogenous Dlg1 (green) marks the lateral membrane of all epithelial cells. (D) Quantification of apical domain width of cells expressing the transgenes listed in C. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (E) Mosaic expression of a shRNA targeting sqh (left panels), of FLAG-Yrt (center panels), or expression of both sh-sqh and FLAG-Yrt (right panels). mRFP was co-expressed with these constructs, and used to label positive cells. (F) Quantification of the apical diameter of cells expressing the transgenes indicated in E. Results are expressed as a ratio to the width of control cells. In B, D and F, error bars indicate s.d.; bold black lines denote the mean; n ≥ 20; **** p ≤ 0.0001 (Student’s t-test was used in B, one-way ANOVA for D, F). Follicles shown in C and E were at stage 5. Scale bars represent 5 μm.  Figure 3—source data 1.Raw data for Figure 3B,D,F.
+**Figure 3.:** (A) Mosaic expression of FLAG-GFP or FLAG-Yrt in the embryonic epidermis at stage 14. Crb immunostaining (magenta) marks the apical domain, whereas immunolabeling of L(2)gl or Discs large 1 (Dlg1) label the lateral membrane. (B) Quantification of apical domain width (n = 13 for FLAG-GFP and n = 15 for FLAG-Yrt; images were acquired from seven individual embryos for each genotype). Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same segment (**** p ≤ 0.0001). Scale bar represents 5 μm. (C) Clonal expression of membrane-targeted RFP (mRFP) and LacZ (control; left panels), or mRFP and FLAG-Yrt (F-Yrt; right panels) in the follicular epithelium. Immunostaining of mRFP highlights cells expressing the transgenes, whereas immunolabeling of endogenous Dlg1 (green) marks the lateral membrane of all epithelial cells. (D) Quantification of apical domain width of cells expressing the transgenes listed in C. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (E) Mosaic expression of a shRNA targeting sqh (left panels), of FLAG-Yrt (center panels), or expression of both sh-sqh and FLAG-Yrt (right panels). mRFP was co-expressed with these constructs, and used to label positive cells. (F) Quantification of the apical diameter of cells expressing the transgenes indicated in E. Results are expressed as a ratio to the width of control cells. In B, D and F, error bars indicate s.d.; bold black lines denote the mean; n ≥ 20; **** p ≤ 0.0001 (Student’s t-test was used in B, one-way ANOVA for D, F). Follicles shown in C and E were at stage 5. Scale bars represent 5 μm.
 
-## aPKC counteracts Yrt-induced apical constriction by preventing the Crb-dependent apical recruitment of Yrt
+### aPKC counteracts Yrt-induced apical constriction by preventing the Crb-dependent apical recruitment of Yrt
 
 aPKC phosphorylates Yrt on evolutionarily conserved residues (Gamblin et al., 2014). This prevents Yrt oligomerization, thereby antagonizing its ability to support lateral membrane stability and to restrict apical membrane growth (Gamblin et al., 2018). Expression of membrane-targeted aPKC (aPKCCAAX) suppressed FLAG-Yrt-induced apical constriction (Figure 4A–C,H), showing that aPKC has a broad impact on Yrt function and also alters its ability to promote Myosin activity. However, aPKCCAAX had no effect on apical constriction induced by FLAG-Yrt5A in which the amino acids targeted by aPKC were replaced by non-phosphorylatable alanine residues [(Gamblin et al., 2014; Figure 4D,E,H)]. In addition, mutation of the aPKC phosphorylation sites into aspartic acids to generate the phosphomimetic Yrt mutant protein FLAG-Yrt5D (Gamblin et al., 2014) abolished the ability of Yrt to induce apical constriction (Figure 4F,I). Similarly, another FLAG-Yrt mutant protein unable to oligomerize [FLAG-YrtFWA; (Gamblin et al., 2018)] failed to sustain apical constriction (Figure 4G,I). These results argue strongly that aPKC targets Yrt directly to inhibit its ability to support apical constriction.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig4-v2.jpg)
 
-**Figure 4.:** (A–G) Clonal expression of the indicated proteins in the follicular epithelium. Clones were positively labeled with mRFP or Yrt staining. (H, I) Quantification of the apical diameter of cells expressing the transgenes indicated in A–E (H) or F, G (I). Results are expressed as a ratio to the width of control cells in the same follicle (stage 5 and 6 follicles were used for quantification). Scale bars represent 5 μm. **** p ≤ 0.0001 (one-way ANOVA), error bars indicate s.d.; bold black lines denote the mean, n ≥ 19.  Figure 4—source data 1.Raw data for Figure 4H,I.
+**Figure 4.:** (A–G) Clonal expression of the indicated proteins in the follicular epithelium. Clones were positively labeled with mRFP or Yrt staining. (H, I) Quantification of the apical diameter of cells expressing the transgenes indicated in A–E (H) or F, G (I). Results are expressed as a ratio to the width of control cells in the same follicle (stage 5 and 6 follicles were used for quantification). Scale bars represent 5 μm. **** p ≤ 0.0001 (one-way ANOVA), error bars indicate s.d.; bold black lines denote the mean, n ≥ 19.
 
 To gain further insights on how aPKC impacts on Yrt function in the follicular epithelium, we analyzed Yrt subcellular localization upon modulation of aPKC activity. We observed apical accumulation of Yrt in wild-type cells treated with a chemical inhibitor of aPKC or in aPKC knockdown cells (Figure 5A,B). These results show that aPKC normally acts to restrict Yrt apical localization, which depends on Crb in the embryonic epidermis and in pupal photoreceptor cells (Laprise et al., 2006). This is also the case in adult follicular epithelial cells, as Yrt failed to accumulate apically in crb mutant cells treated with the aPKC inhibitor (Figure 5C,D; crb mutant cells are positively labeled with GFP). Similarly, Yrt was absent from the apical membrane upon inhibition of aPKC in cells exclusively expressing a mutant Crb protein containing an amino acid substitution inactivating its FBM [CrbY10A; (Figure 5E,F; Klebes and Knust, 2000)], which prevents the direct association of Yrt and Crb proteins (Laprise et al., 2006). This suggests that Crb plays a pivotal role in Yrt-dependent apical constriction. Accordingly, FLAG-Yrt5A triggered apical constriction in wild-type cells, whereas it was unable to induce this phenotype in Crb-depleted cells or cells expressing specifically CrbY10A (Figure 5G–J). Although our data establish that Crb and Yrt cooperate in promoting apical constriction, apical localization of Yrt in cells with suboptimal aPKC activity is not sufficient to induce prominently this phenotype (Figure 5A,B). Yrt and Moe, another FERM-domain protein binding to Crb, have opposite effects on Myosin-induced cortical tension [this study; (Flores-Benitez and Knust, 2015; Laprise et al., 2006; Médina et al., 2002; Salis et al., 2017)]. It is thus possible that the amount of Yrt relocalized to the apical domain upon inhibition of aPKC is not sufficient to outcompete Moe, whereas Yrt overexpression reaches the threshold required to displace most Moe proteins from Crb. Accordingly, inhibition of aPKC in Moe knockdown cells caused apical constriction, in contrast to what was observed in control cells (Figure 6A,B). In addition, expression of active Moe (Karagiosis and Ready, 2004) suppressed Yrt-induced apical constriction (Figure 6C,D), thereby confirming that these proteins are involved in a competitive functional interaction. Together, these results establish that aPKC precludes cortical tension by repressing the Yrt–Crb association, and that Moe antagonizes Yrt function.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig5-v2.jpg)
 
-**Figure 5.:** (A) Panels depict immunofluorescence of Yrt (green in merge) and Fasciclin 3 (Fas3; lateral marker, magenta) in the follicular epithelium treated for 2 hr with the aPKC inhibitor CRT-006-68-54. (B) aPKC knockdown cells (mRFP positive) were immunostained for Yrt. (C) crb (null allele) homozygous mutant clones were produced in adult 11A22crb/+ female flies (mutant clones are GFP positive). Dissected ovaries were incubated with the aPKC inhibitor CRT-006-68-54 prior to fixation and Yrt immunostaining. (D) Quantification of apical Yrt intensity in control or crb mutant cells within the same follicle in presence of the aPKC inhibitor CRT-006-68-54. (E) Analysis of Yrt localization in control or crb mutant cells expressing exogenous Crb11A22Y10A (GFP-positive cells) exposed to the aPKC inhibitor CRT-006-68-54. (F) Quantification of apical Yrt staining in control and crb null cells expressing exogenous CrbY10A treated with the aPKC inhibitor. (G) FLAG-Yrt5A was specifically expressed in crb mutant cell clones (right panels). Mosaic expression of FLAG-Yrt5A in control cells or crb mutant clones were used as controls (middle and left panels, respectively). Clones were labeled with GFP (left panels) or by Yrt immunostaining (middle and right panels). Dlg1 staining was used to label the lateral membrane. (H) Quantification of the apical domain width of cells expressing the transgenes listed in G. (I) Immunostaining of Yrt and Dlg1 in follicular epithelial cells expressing FLAG-Yrt5A and exogenous wild-type Crb (left panels), or FLAG-Yrt5A together with CrbY10A (right panels). (J) Quantification of the apical domain width of cells expressing the transgenes listed in I. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. Stage three follicles were depicted in A and B, whereas panels C, E, G, and I display stage five follicles. In D, F, H, and J error bars indicate s.d.; bold black lines denote the mean; n ≥ 20; ** p ≤ 0.01, *** p ≤ 0.001, **** p ≤ 0.0001 (one-way ANOVA). All scale bars represent 5 μm.  Figure 5—source data 1.Raw data for Figure 5H,J.
+**Figure 5.:** (A) Panels depict immunofluorescence of Yrt (green in merge) and Fasciclin 3 (Fas3; lateral marker, magenta) in the follicular epithelium treated for 2 hr with the aPKC inhibitor CRT-006-68-54. (B) aPKC knockdown cells (mRFP positive) were immunostained for Yrt. (C) crb11A22 (null allele) homozygous mutant clones were produced in adult crb/+ female flies (mutant clones are GFP positive). Dissected ovaries were incubated with the aPKC inhibitor CRT-006-68-54 prior to fixation and Yrt immunostaining. (D) Quantification of apical Yrt intensity in control or crb mutant cells within the same follicle in presence of the aPKC inhibitor CRT-006-68-54. (E) Analysis of Yrt localization in control or crb11A22 mutant cells expressing exogenous CrbY10A (GFP-positive cells) exposed to the aPKC inhibitor CRT-006-68-54. (F) Quantification of apical Yrt staining in control and crb null cells expressing exogenous CrbY10A treated with the aPKC inhibitor. (G) FLAG-Yrt5A was specifically expressed in crb mutant cell clones (right panels). Mosaic expression of FLAG-Yrt5A in control cells or crb mutant clones were used as controls (middle and left panels, respectively). Clones were labeled with GFP (left panels) or by Yrt immunostaining (middle and right panels). Dlg1 staining was used to label the lateral membrane. (H) Quantification of the apical domain width of cells expressing the transgenes listed in G. (I) Immunostaining of Yrt and Dlg1 in follicular epithelial cells expressing FLAG-Yrt5A and exogenous wild-type Crb (left panels), or FLAG-Yrt5A together with CrbY10A (right panels). (J) Quantification of the apical domain width of cells expressing the transgenes listed in I. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. Stage three follicles were depicted in A and B, whereas panels C, E, G, and I display stage five follicles. In D, F, H, and J error bars indicate s.d.; bold black lines denote the mean; n ≥ 20; ** p ≤ 0.01, *** p ≤ 0.001, **** p ≤ 0.0001 (one-way ANOVA). All scale bars represent 5 μm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig6-v2.jpg)
 
-**Figure 6.:** (A) Mosaic knockdown of Moe in absence or presence of the aPKC inhibitor CRT-006-68-54. Clones are positively labeled with membrane-targeted RFP. (B) Quantification of apical domain width of knockdown cells in absence or presence of the aPKC inhibitor CRT-006-68-54. Results were calculated as a ratio between clonal cells and control cells in the same follicle. (C) Clonal expression of FLAG-Yrt, Myc-MoeT559D (Karagiosis and Ready, 2004), or both proteins (clones are labeled with mRFP). (D) Quantification of the apical domain width of cells expressing the transgenes listed in C. Results are expressed as the ratio between the width of cells expressing transgenes and the width of control cells in the same follicle (quantification was performed using stage five follicles). In B and D, error bars indicate s.d.; bold black lines denote the mean; n ≥ 18; * p ≤ 0.05, **** p ≤ 0.0001 (one-way ANOVA). All scale bars represent 5 μm.  Figure 6—source data 1.Raw data for Figure 6B,D.
+**Figure 6.:** (A) Mosaic knockdown of Moe in absence or presence of the aPKC inhibitor CRT-006-68-54. Clones are positively labeled with membrane-targeted RFP. (B) Quantification of apical domain width of knockdown cells in absence or presence of the aPKC inhibitor CRT-006-68-54. Results were calculated as a ratio between clonal cells and control cells in the same follicle. (C) Clonal expression of FLAG-Yrt, Myc-MoeT559D (Karagiosis and Ready, 2004), or both proteins (clones are labeled with mRFP). (D) Quantification of the apical domain width of cells expressing the transgenes listed in C. Results are expressed as the ratio between the width of cells expressing transgenes and the width of control cells in the same follicle (quantification was performed using stage five follicles). In B and D, error bars indicate s.d.; bold black lines denote the mean; n ≥ 18; * p ≤ 0.05, **** p ≤ 0.0001 (one-way ANOVA). All scale bars represent 5 μm.
 
-## Pak1 and PP2A decrease Yrt phosphorylation and are required for Yrt-induced apical constriction
+### Pak1 and PP2A decrease Yrt phosphorylation and are required for Yrt-induced apical constriction
 
 It was recently shown that aPKC and Pak1 share common phosphorylation targets, namely the polarity proteins L(2)gl, Bazooka (Baz), Par6, and Crb (Aguilar-Aragon et al., 2018). It was also proposed that aPKC and Pak1 act redundantly on these substrates (Aguilar-Aragon et al., 2018). However, it remains to be determined whether Pak1 impacts the function of other aPKC substrates such as Yrt. In addition, it is unclear if aPKC and Pak1 function is fully redundant in epithelial cells, or whether these kinases also have specific roles. Overexpression of Par6 together with aPKCCAAX, which accumulated ectopically at the lateral membrane (Figure 7A), strongly reduced membrane localization of Yrt (Figure 7A,B). Expression of membrane-targeted Pak1 [Pak1Myr; (Noren et al., 2000)] suppressed Yrt cortical release induced by aPKC and Par6 (Figure 7A,B). This result raises the intriguing possibility that Pak1 opposes aPKC function, a premise that we explored by investigating Yrt phosphorylation upon overexpression of these kinases. Overexpression of Par6 and aPKCCAAX is associated with an upward shift in the gel migration profile of Yrt (Figure 7C). This resulted from increased Yrt phosphorylation, as treatment of samples with the λ Phosphatase prior to electrophoresis abolished the impact of aPKCCAAX on Yrt gel mobility (Figure 7C; Gamblin et al., 2014). In contrast to aPKC, Pak1Myr decreased Yrt phosphorylation levels (Figure 7C). Given that Pak1 is a kinase, this observation is counterintuitive. However, it has been shown that Pak1 can activate the phosphatase PP2A (Staser et al., 2013), thus raising the possibility that the latter targets Yrt downstream of Pak1. Accordingly, Yrt phosphorylation levels were increased strongly in PP2A-A mutant embryos, or in wild-type embryos treated with the PP2A inhibitor Cantharidin (Figure 7D,E). Strikingly, inhibition of PP2A suppressed the impact of Pak1Myr expression on Yrt phosphorylation (Figure 7F), arguing that PP2A acts downstream of Pak1.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig7-v2.jpg)
 
-**Figure 7.:** (A) Yrt immunostaining in control follicular epithelial cells or clones of cells expressing aPKCCAAX together with Par6, Pak1Myr, or aPKCCAAX with Par6 and Pak1Myr. Clones were positively labeled with RFP or aPKC immunostaining in stage four follicles. Scale bar represents 5 μm. (B) Quantification of lateral Yrt staining intensity in genotypes described in A. Error bars indicate s.d.; bold black lines denote the mean; n ≥ 16; **** p ≤ 0.0001 (one-way ANOVA). (C) Control embryos, embryos overexpressing Par-6 and aPKCCAAX, or embryos expressing Pak1Myr were homogenized. Samples were incubated or not with the λ phosphatase and processed for SDS-PAGE. Western blotting using anti-Yrt antibodies showed the migration profile of phosphorylated (pYrt) or unphosphorylated Yrt, whereas β-Tubulin (βTub) was used as loading control. (D) Western blots showing the migration profile of Yrt (pYrt stands for phosphorylated Yrt) extracted from wild-type (WT) or PP2A-A mutant embryos. The expression level of PP2A-A is also shown, and Actin was used as loading control. (E) Wild-type embryos were treated or not with the PP2A inhibitor Cantharidin, homogenized, and processed for SDS-PAGE. Western blotting using control samples shows the phosphorylation levels of Yrt (pYrt), whereas samples incubated with λ Phosphatase prior to gel electrophoresis show unphosphorylated Yrt. β-Tubulin (βTub) was used as loading control. (F) Embryos overexpressing Pak1Myr were treated or not with PP2A inhibitor and homogenized. Western blotting using anti-Yrt antibodies showed the migration profile of phosphorylated (pYrt) or unphosphorylated Yrt. λ Phosphatase was used as a positive control of Yrt dephosphorylation, and β-Tubulin (βTub) was used as loading control.  Figure 7—source data 1.Raw data for Figure 7B.  Figure 7—source data 2.Original scan for Figure 7C.  Figure 7—source data 3.Original scan for Figure 7D.  Figure 7—source data 4.Original scan for Figure 7E,F.  Figure 7—source data 5.Original scan of loading controls.  Figure 7—source data 6.Region of each blot shown in Figure 7C–F are highlighted with a yellow box.
+**Figure 7.:** (A) Yrt immunostaining in control follicular epithelial cells or clones of cells expressing aPKCCAAX together with Par6, Pak1Myr, or aPKCCAAX with Par6 and Pak1Myr. Clones were positively labeled with RFP or aPKC immunostaining in stage four follicles. Scale bar represents 5 μm. (B) Quantification of lateral Yrt staining intensity in genotypes described in A. Error bars indicate s.d.; bold black lines denote the mean; n ≥ 16; **** p ≤ 0.0001 (one-way ANOVA). (C) Control embryos, embryos overexpressing Par-6 and aPKCCAAX, or embryos expressing Pak1Myr were homogenized. Samples were incubated or not with the λ phosphatase and processed for SDS-PAGE. Western blotting using anti-Yrt antibodies showed the migration profile of phosphorylated (pYrt) or unphosphorylated Yrt, whereas β-Tubulin (βTub) was used as loading control. (D) Western blots showing the migration profile of Yrt (pYrt stands for phosphorylated Yrt) extracted from wild-type (WT) or PP2A-A mutant embryos. The expression level of PP2A-A is also shown, and Actin was used as loading control. (E) Wild-type embryos were treated or not with the PP2A inhibitor Cantharidin, homogenized, and processed for SDS-PAGE. Western blotting using control samples shows the phosphorylation levels of Yrt (pYrt), whereas samples incubated with λ Phosphatase prior to gel electrophoresis show unphosphorylated Yrt. β-Tubulin (βTub) was used as loading control. (F) Embryos overexpressing Pak1Myr were treated or not with PP2A inhibitor and homogenized. Western blotting using anti-Yrt antibodies showed the migration profile of phosphorylated (pYrt) or unphosphorylated Yrt. λ Phosphatase was used as a positive control of Yrt dephosphorylation, and β-Tubulin (βTub) was used as loading control.
 
 We then tested the functional impact of Pak1- and PP2A-dependent modulation of Yrt phosphorylation. Chemical inhibition of Pak1 or PP2A, or knockdown of their expression suppressed apical constriction induced by FLAG-Yrt (Figure 8A–H). Of note, FLAG-Yrt5A maintained its ability to induce apical constriction in the presence of Cantharidin, or when Pak1 or PP2A were depleted (Figures 8C–D,E–H). Pak1 and PP2A are thus dispensable for Yrt-induced apical constriction when aPKC target sites on Yrt are mutated to non-phosphorylatable residues. Altogether, these data suggest that Pak1 acts upstream of PP2A that antagonizes aPKC function by dephosphorylating Yrt, thereby allowing the latter to induce apical tension (Figure 9).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig8-v2.jpg)
 
-**Figure 8.:** (A) Stage four follicles clonally overexpressing FLAG-Yrt were incubated with the vehicle DMSO or the Pak1 inhibitor (IPA-3; Pak1 inh.) prior to fixation and immunostaining with antibodies directed against Yrt and Dlg1. (B) Quantification of the apical diameter of cells expressing transgenes indicated in A incubated or not with IPA-3. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (C) Immunostaining of Dlg1 in follicles displaying mosaic expression of a shRNA targeting Pak1 and the indicated FLAG-Yrt constructs. Clones were labeled with mRFP or Yrt staining. (D) Quantification of the diameter of cells expressing the exogenous proteins described in C. Results were calculated as a ratio between transgene expressing cells and control cells within the same follicle. (E) Follicles containing cell clones expressing FLAG-Yrt or FLAG-Yrt5A (mRFP-positive cells) were incubated or not with the PP2A inhibitor Cantharidin (PP2A inh.) prior to immunostaining with indicated antibodies. (F) Quantification of the apical diameter of cells expressing transgenes indicated in E. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (G) Panels depict follicular epithelium displaying mosaic knockdown of PP2A-A (left panels), mosaic expression of FLAG-Yrt (middle panels), or the combination of the indicated FLAG-Yrt constructs with a shRNA targeting PP2A-A (middle and right panels). Immunostaining of mRFP or Yrt highlights cells expressing the transgenes, whereas immunolabeling of endogenous Dlg1 shows the lateral domain of all epithelial cells. (H) Quantification of the apical diameter of cells expressing transgenes indicated in G. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. B, D, F, and H, error bars indicate s.d.; bold black lines denote the mean; n ≥ 16; * p ≤ 0.05, **** p ≤ 0.0001 (one-way ANOVA). (C, F and G) imaged follicles were at stages 5 or 6. All scale bars represent 5 μm.  Figure 8—source data 1.Raw data for Figure 8B,D,F,H.
+**Figure 8.:** (A) Stage four follicles clonally overexpressing FLAG-Yrt were incubated with the vehicle DMSO or the Pak1 inhibitor (IPA-3; Pak1 inh.) prior to fixation and immunostaining with antibodies directed against Yrt and Dlg1. (B) Quantification of the apical diameter of cells expressing transgenes indicated in A incubated or not with IPA-3. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (C) Immunostaining of Dlg1 in follicles displaying mosaic expression of a shRNA targeting Pak1 and the indicated FLAG-Yrt constructs. Clones were labeled with mRFP or Yrt staining. (D) Quantification of the diameter of cells expressing the exogenous proteins described in C. Results were calculated as a ratio between transgene expressing cells and control cells within the same follicle. (E) Follicles containing cell clones expressing FLAG-Yrt or FLAG-Yrt5A (mRFP-positive cells) were incubated or not with the PP2A inhibitor Cantharidin (PP2A inh.) prior to immunostaining with indicated antibodies. (F) Quantification of the apical diameter of cells expressing transgenes indicated in E. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. (G) Panels depict follicular epithelium displaying mosaic knockdown of PP2A-A (left panels), mosaic expression of FLAG-Yrt (middle panels), or the combination of the indicated FLAG-Yrt constructs with a shRNA targeting PP2A-A (middle and right panels). Immunostaining of mRFP or Yrt highlights cells expressing the transgenes, whereas immunolabeling of endogenous Dlg1 shows the lateral domain of all epithelial cells. (H) Quantification of the apical diameter of cells expressing transgenes indicated in G. Results are expressed as the ratio between the width of cells expressing the transgenes and the width of control cells in the same follicle. B, D, F, and H, error bars indicate s.d.; bold black lines denote the mean; n ≥ 16; * p ≤ 0.05, **** p ≤ 0.0001 (one-way ANOVA). (C, F and G) imaged follicles were at stages 5 or 6. All scale bars represent 5 μm.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/67999/elife-67999-fig9-v2.jpg)
 
@@ -102,40 +110,696 @@ Overall, our work reveals a novel mechanism regulating cortical tension at the a
 
 ## Materials and methods
 
-## Drosophila genetics
+### Drosophila genetics
 
 The UAS-GAL4 system was employed to drive the expression of transgenes (Brand et al., 1994). Mosaic analysis in the follicular epithelium was performed using the Flippase recognition target (FRT)/Flippase (FLP) system in which the FLP recombinase was under the control of a heat shock promoter (hsFLP) (Chou and Perrimon, 1996; Golic and Lindquist, 1989). Newly hatched females were heat-shocked for 3 hr at 37°C on two consecutive days. Ovaries were dissected and processed 48 hr after the second heat shock. Tables 1 and 2 depict the stock list and the complete genotype of flies used in this study, respectively.
 
-## Laser ablation for measurement of mechanical properties
+**Table 1.**
+ List of fly stocks used in this study.
 
-Stage 14 embryos were dechorionated for 2 min in 50% bleach, washed with water, and glued on a coverslip using heptane glue (Scepanovic et al., 2021). Ablations were induced using a pulsed Micropoint N2 laser (Andor) tuned to 365 nm on a Revolution XD spinning disk confocal microscope. The laser produces 120 μJ pulses at durations of 2–6 ns each. For ablation of cell junctions, 10 consecutive laser pulses were delivered to a single spot along a cell interface. Images were acquired every 4 s before and after ablation of a single interface using a 60x oil immersion lens (Olympus, NA 1.35). The positions of the tricellular vertices connected by the ablated interface were manually tracked prior to and for 36 s following ablation using the image analysis platform SIESTA (Fernandez-Gonzalez and Zallen, 2011; Leung and Fernandez-Gonzalez, 2015). To measure retraction velocity, the change in distance between the tricellular vertices was measured comparing images acquired immediately before and after ablation and divided by the time elapsed between the two images. To quantify the viscoelastic properties of the tissue, we modeled the laser ablation results as the damped recoil of an elastic fibre, using a Kelvin-Voigt mechanical-equivalent circuit (Fernandez-Gonzalez et al., 2009). Briefly, the Kelvin-Voigt circuit models cell interfaces as a spring (elasticity) and a dashpot (viscosity) configured in parallel. As a result, the distance between the ends of the interface when tension is released can be quantified as:Lt=D1-e-tτwhere L(t) is the distance between the tricellular vertices at the end of the severed interface at time t after ablation, D is the asymptotic value of the distance between the tricellular junctions, and the relaxation time τ:τ=μEis the ratio of the viscosity (μ) to the elasticity (Ε) of the tissue. Statistical differences between groups were measured using the nonparametric Mann-Whitney U test.
 
-## Immunofluorescence
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D. melanogaster: UAS-FLAG-Yurt</td>
+      <td>Reference (Gamblin et al., 2014)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-FLAG-Yurt[5A]</td>
+      <td>Reference (Gamblin et al., 2014)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-FLAG-Yurt[FWA]</td>
+      <td>Reference (Gamblin et al., 2018)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-FLAG-Yurt[5D]</td>
+      <td>Reference (Gamblin et al., 2014)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-sh yurt</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 36118</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-sh squash</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 32439</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-aPKC[CAAX]</td>
+      <td>Reference (Sotillos et al., 2004)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-aPKC[CAAX], Par6</td>
+      <td>Gift from T. Harris (Harris and Tepass, 2010)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-sh mCherry</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 35785</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: FRT82b, crb[11a22]</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 3448</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-sh aPKC</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 34332</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-sh Pak1</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 41714</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-Pak[myr]</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 8804</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: foscrb[Y10A]; FRT82b, crb[11a22]</td>
+      <td>Reference (Klose et al., 2013)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-LacZ</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 8529</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: sh Pp2a-A</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 55050</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: endo-E-Cadherin::GFP</td>
+      <td>Reference (Huang et al., 2009)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: sqh-sqh::GFP</td>
+      <td>Reference (Royou et al., 2004)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: matαtub67;15 GAL4</td>
+      <td>Reference (Staller et al., 2013)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: daughterless-GAL4</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 27608</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: hs-FLP;; tub-FRT-Gal80-FRT-Gal4, UAS–mRFP</td>
+      <td>Gift from Y. Bellaiche, Institut Curie, PSL Research University, Paris, France.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: hs-FLP; tub-GAL4, UAS-GFP; FRT82b, tub-GAL80</td>
+      <td>Gift from N. Perrimon, Harvard Medical School, Boston, USA</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: hs-FLP; sqh-Sqh::GFP; tub&gt;Gal80&gt;Gal4, UAS–mRFP</td>
+      <td>Gift from Y. Bellaiche, Institut Curie, PSL Research University, Paris, France.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: wild type</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 25210</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: PP2A-A[EP2332] / Cyo</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 1704</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: Patched-GAL4</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 65661</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-myc-Moesin[T559D]</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 8630</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-sh Moesin</td>
+      <td>Drosophila Bloomington Stock Centre</td>
+      <td># 8629</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster: UAS-FLAG-GFP</td>
+      <td>Reference (Gamblin et al., 2018)</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Detailed genotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Figure 1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>endo-E-Cadherin::GFP / +; UAS-sh mCherry / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>endo-E-Cadherin::GFP / +; UAS-sh yrt / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>endo-E-Cadherin::GFP / +; UAS-sh mCherry / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>endo-E-Cadherin::GFP / +; UAS-sh yrt / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>endo-E-Cadherin::GFP / UAS-LacZ; daughterless-GAL4 / +</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>endo-E-Cadherin::GFP / +; UAS-FLAG-Yrt / daughterless-GAL4</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>endo-E-Cadherin::GFP / UAS-LacZ; daughterless-GAL4 / +</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>endo-E-Cadherin::GFP / +; UAS-FLAG-Yrt / daughterless-GAL4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 2</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>sqh-Sqh::GFP; UAS-sh mCherry / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sqh-Sqh::GFP ; UAS-sh yrt / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>sqh-Sqh::GFP; UAS-sh mCherry / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sqh-Sqh::GFP ; UAS-sh yrt / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>sqh-Sqh::GFP; UAS-sh mCherry / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sqh-Sqh::GFP ; UAS-sh yrt / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>sqh-Sqh::GFP; UAS-sh mCherry / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sqh-Sqh::GFP ; UAS-sh yrt / matαtub67;15 GAL4</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>hs-FLP; sqh-Sqh::GFP; UAS-LacZ / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; sqh-Sqh::GFP; UAS-FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>hs-FLP; sqh-Sqh::GFP; UAS-LacZ / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; sqh-Sqh::GFP; UAS-FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 3</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Patched-GAL4 / +; UAS-FLAG-GFP / +</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Patched-GAL4 / +; IAS-FLAG-Yrt / +</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Patched-GAL4 / +; UAS-FLAG-GFP / +</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Patched-GAL4 / +; IAS-FLAG-Yrt / +</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>hs-FLP / +; sh sqh / +; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh LexA / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh sqh / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>hs-FLP / +; sh sqh / +; UAS- LacZ / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh LexA / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh sqh / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 4</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>hs-FLP / +; ; UAS- aPKC[CAAX] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5D] / tub-FRT-GAL80-FRT-Gal4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt[FWA] / tub-FRT-GAL80-FRT-Gal4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>hs-FLP / +; ; UAS- aPKC[CAAX] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-aPKC[CAAX], UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>hs-FLP / +; UAS- LacZ / +; + / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-Gal4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5D] / tub-FRT-GAL80-FRT-Gal4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt[FWA] / tub-FRT-GAL80-FRT-Gal4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 5</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>wild type ovaries treated with DMSO or aPKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>hs-FLP / +; ; sh aPKC / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / +; FRT82b, crb[11a22] / FRT82b, tub-GAL80 treated with aPKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / +; FRT82b, crb[11a22] / FRT82b, tub-GAL80 treated with aPKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80 treated with aPKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80 treated with aPKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-LacZ; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b / FRT82b,tub-GAL81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-LacZ; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b / FRT82b,tub-GAL81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td>J</td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP; tub-GAL4, UAS-GFP / UAS-FLAG-Yrt[5A], fosCrb[Y10A]; FRT82b, crb[11a22] / FRT82b,tub-GAL80</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 6</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>hs-FLP / +; ; UAS-sh moe / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with H2O or aPKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>hs-FLP / +; ; UAS-sh moe / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with H2O or aPKC inhibitor</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS- LacZ / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS- myc-Moesin[T559D] / +; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 7</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-Gal80-FRT-Gal4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>hs-FLP / +; ; UAS- LacZ / tub-FRT-Gal80-FRT-Gal4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; + / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS-Pak[Myr] / +; UAS-aPKC[CAAX], Par6 / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Daughterless-GAL4 / +; UAS-FLAG-GFP / Daughterless-GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Daughterless-GAL4 / +; UAS-aPKC[CAAX], Par6 / Daughterless-GAL4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Daughterless-GAL4 / UAS-Pak[myr]; + / Daughterless-GAL4</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>wild type</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pp2A-29b[EP2332]</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>wild type embryos treated with DMSO or PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Daughterless-GAL4 / UAS-Pak[myr]; + / Daughterless-GAL4 treated with DMSO or PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 8</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with DMSO or Pak1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with DMSO or Pak1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>hs-FLP / +; sh Pak1; + / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>hs-FLP / +; sh Pak1; + / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh Pak1; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with DMSO or PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with DMSO or PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with DMSO or PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; ; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP treated with DMSO or PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>hs-FLP / +; ; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS-FLAG-Yrt; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS-FLAG-Yrt[5A]; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>hs-FLP / +; ; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS-FLAG-Yrt; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; sh lexA; UAS- FLAG-Yrt[5A] / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hs-FLP / +; UAS-FLAG-Yrt[5A]; sh Pp2A-29b / tub-FRT-GAL80-FRT-GAL4, UAS–mRFP</td>
+    </tr>
+  </tbody>
+</table>
+
+### Laser ablation for measurement of mechanical properties
+
+Stage 14 embryos were dechorionated for 2 min in 50% bleach, washed with water, and glued on a coverslip using heptane glue (Scepanovic et al., 2021). Ablations were induced using a pulsed Micropoint N2 laser (Andor) tuned to 365 nm on a Revolution XD spinning disk confocal microscope. The laser produces 120 μJ pulses at durations of 2–6 ns each. For ablation of cell junctions, 10 consecutive laser pulses were delivered to a single spot along a cell interface. Images were acquired every 4 s before and after ablation of a single interface using a 60x oil immersion lens (Olympus, NA 1.35). The positions of the tricellular vertices connected by the ablated interface were manually tracked prior to and for 36 s following ablation using the image analysis platform SIESTA (Fernandez-Gonzalez and Zallen, 2011; Leung and Fernandez-Gonzalez, 2015). To measure retraction velocity, the change in distance between the tricellular vertices was measured comparing images acquired immediately before and after ablation and divided by the time elapsed between the two images. To quantify the viscoelastic properties of the tissue, we modeled the laser ablation results as the damped recoil of an elastic fibre, using a Kelvin-Voigt mechanical-equivalent circuit (Fernandez-Gonzalez et al., 2009). Briefly, the Kelvin-Voigt circuit models cell interfaces as a spring (elasticity) and a dashpot (viscosity) configured in parallel. As a result, the distance between the ends of the interface when tension is released can be quantified as:
+
+$$
+Lt=D1-e^{-\frac{t}{\tau}}
+$$
+
+where L(t) is the distance between the tricellular vertices at the end of the severed interface at time t after ablation, D is the asymptotic value of the distance between the tricellular junctions, and the relaxation time $\tau$:
+
+$$
+\tau=\frac{\mu}{E}
+$$
+
+is the ratio of the viscosity (μ) to the elasticity (Ε) of the tissue. Statistical differences between groups were measured using the nonparametric Mann-Whitney U test.
+
+### Immunofluorescence
 
 Dissected ovaries or dechorionated embryos were fixed for 15 min in 4% paraformaldehyde or heat fixed (aPKC, Yrt, Crb, and Arm stainings) as previously described (Gamblin et al., 2014). Fixed ovaries and embryos were blocked for 1 hr in NGT (2% normal goat serum, 0.3% Triton X-100 in PBS). Ovaries and embryos were incubated with the following primary antibodies overnight at 4°C: mouse anti-Dlg1 [4F3, Developmental Studies Hybridoma Bank at the University of Iowa (DSHB)], 1:25 dilution; rabbit anti-Yrt, 1:1000 (Biehler et al., 2020); guinea-pig anti-Yrt (Laprise et al., 2006), 1:250; mouse anti-GFP (Roche, Sigma Aldrich), 1:200; rabbit anti-GFP (A-11122, Invitrogen) 1:200; mouse anti-Fas3 (7G10, DSHB), 1:10; rabbit anti-RFP (600-401-379, Rockland), 1:400; rabbit anti-Lgl (d-300, Santa Cruz), 1:100; rabbit anti-aPKC (C-20, Santa Cruz Biotechnology), 1:200; rat anti-Crb (Sollier et al., 2015), 1:250. Ovaries and embryos were then washed three times in PBT (0.3% Triton X-100 in PBS) before and after incubation with secondary antibodies (1:400 in NGT, 1 hr at room temperature), which were conjugated to Cy3 (Jackson ImmunoResearch Laboratories) or Alexa Fluor 488 (Molecular Probes). Ovarioles were mechanically separated and mounted in Vectashield mounting medium (Vector Labs), and imaged with a LSM700 confocal (63× Apochromat lens with a numerical aperture of 1.40). Embryos were mounted in Vectashield mounting medium and imaged with the Zeiss LSM700 confocal using LD C-Apochromat 40x 1.1 NA water Korr objective. Images were uniformly processed with ImageJ (National Institutes of Health).
 
-## Phosphatase assays
+### Phosphatase assays
 
 Dechorionated embryos were homogenized in ice-cold lysis buffer (1% Triton X-100, 50 mM TRIS-HCl pH 7.5, 5% glycerol, 150 mM NaCl, 1 mM PMSF, 0.5 μg/mL aprotinin, 0.7 μg/mL pepstatin, and 0.5 μg/mL leupeptin). Lysates were cleared by centrifugation at 4°C, and 400 units of λ Phosphatase (New England Biolabs) was added to 30 μg of proteins extracted from embryos. The volume of the reaction mix was completed to 30 μl with the MetalloPhosphatase buffer (New England Biolabs) containing 1 mM of MnCl2 prior to a 30-min incubation at 30°C. The reaction was stopped by addition of Laemmli’s buffer.
 
-## Western blotting
+### Western blotting
 
 Dechorionated embryos were homogenized in ice-cold lysis buffer (1% Triton X-100, 50 mM TRIS HCl pH 7.5, 5% glycerol, 100 mM NaCl, 50 mM NaF, 5 mM EDTA pH 8, 40 mM β-glycerophosphate, 1 mM PMSF, 0.5 μg/mL aprotinin, 0.7 μg/mL pepstatin, 0.5 μg/mL leupeptin and 0.1 mM orthovanadate) and processed for SDS-PAGE and western blotting as previously described (Laprise et al., 2002). Primary antibodies used: Rabbit anti-Yrt (Biehler et al., 2020), 1:10,000; mouse anti-β−Tubulin (E7, DSHB), 1:2000; rabbit anti-aPKC (C-20, Santa Cruz Biotechnology), 1:2000; rabbit anti-PP2A-A (Krahn et al., 2009), 1:10,000; mouse anti-Actin (NB-100–74340, Novus Biologicals), 1:2000. HRP-conjugated secondary antibodies were from GE Healthcare and used at a 1:2000 dilution.
 
-## Chemical treatment of embryos
+### Chemical treatment of embryos
 
 Dechorionated embryos were incubated under agitation for 1 hr at room temperature in a 0.9% NaCl solution supplemented with 100 μM of Cantharidin under an octane phase (1:1). Embryos were then washed three times in PBT.
 
-## Chemical treatment of ovaries
+### Chemical treatment of ovaries
 
 Dissected ovaries were treated for 2 hr with inhibitors of aPKC (CRT-006-68-54, Bio-Techn Sales Corporation, 10 μM) or Pak1 (IPA-3, Millipore Sigma, 50 μM) as described (Chartier et al., 2012).
 
-## Measurements of apical domain size and quantification of fluorescence intensity
+### Measurements of apical domain size and quantification of fluorescence intensity
 
 Stage 3-6 follicles were imaged, and the apical diameter or fluorescence intensity of genetically modified cells (positively labeled with mRFP or GFP) was measured using ImageJ (National Institutes of Health). Control cells facing labeled cells on the opposite side of the follicle were used as control. Results are expressed as the ratio between measurements in labeled cells and control cells. A minimum of 15 follicles were analyzed in each condition. A similar approach was used to analyse apical domain width of epidermal cells expressing FLAG-GFP (control) or FLAG-Yrt in stage 13 embryos (n ≥ 13 from 7 different embryos). FLAG-GFP- or FLAG-Yrt-negative cells in the same embryonic segment were used as control. Statistical differences between groups were determined using one-way ANOVA (apical domain size) or Student’s t-test (fluorescence intensity).
 
-## Analysis of myosin distribution in the embryonic epidermis
+### Analysis of myosin distribution in the embryonic epidermis
 
-To analyze myosin distribution in epidermal cells in stage 13 and stage 14 embryos, image stacks were acquired of embryos expressing sqh:GFP and either shRNA targeting mCherry or yrt. Maximum intensity projections were generated from slices representing the apical domain (5 slices of 0.5 μm each) of the epidermis. A 20 μm line was drawn along the anterior-posterior axis of the tissue in each embryo to calculate mean intensity and heterogeneity (Zulueta-Coarasa and Fernandez-Gonzalez, 2018) of the GFP signal. Here, heterogeneity is defined as:standarddeviation(intensity)mean(intensity)
+To analyze myosin distribution in epidermal cells in stage 13 and stage 14 embryos, image stacks were acquired of embryos expressing sqh:GFP and either shRNA targeting mCherry or yrt. Maximum intensity projections were generated from slices representing the apical domain (5 slices of 0.5 μm each) of the epidermis. A 20 μm line was drawn along the anterior-posterior axis of the tissue in each embryo to calculate mean intensity and heterogeneity (Zulueta-Coarasa and Fernandez-Gonzalez, 2018) of the GFP signal. Here, heterogeneity is defined as:
+
+$$
+\frac{standarddeviation(intensity)}{mean(intensity)}
+$$
 
 This measurement captures the variability within each linescan, which increases when there are clear peaks and troughs.

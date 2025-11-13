@@ -26,27 +26,27 @@ If you decide to attend a conference, the next decision you need to make is if 
 
 If you are bringing your child to a conference, the basic logistics that everyone has to deal with (flights, hotel, transportation and meals) become more complicated, and you also have to worry about childcare. Below I discuss some considerations for each.
 
-## Childcare
+### Childcare
 
 For conferences that are child-friendly, it may be possible to wear or stroll young infants through the conference center, and older children may be able to entertain themselves quietly during presentations. However, this is not practical for all children, and many parents find that they need to arrange childcare for all or part of the conference. The on-site childcare provided at some conferences can be a great option. Unfortunately, even when available, this service often does not extend into evenings, meaning you will have to skip later sessions and dinners. It can also be expensive (Langin, 2018), and in many cases, funders will not allow you to claim back this cost (Together Science Can, 2018). At a conference I recently attended childcare was $100/day per child – well over the price of conference registration.
 
 The other option is to bring a caregiver with you, perhaps a partner, family member, babysitter or nanny. (I have done this with my daughter.) Of course, this only works if you are lucky enough to have such a person who can accompany you. It also means that the caregiver’s travel costs will have to be paid for, often by you.
 
-## Flights
+### Flights
 
 If your child is under two, you may be able to avoid buying an additional ticket by holding them on your lap (though this is not free for all airlines). However, this does come with drawbacks: say goodbye to finishing your presentation on the plane. Otherwise, you will need to buy a ticket for your child (or children), as well as for any caregivers who are traveling with you – and in most cases, you will not be able to claim these costs back (Together Science Can, 2018).
 
 Bringing a child also often involves additional schedule considerations. You may want to avoid tight connections and very early or very late flights, or want to try to time flights with naps. This may mean that you end up spending more money to get the flights you need.
 
-## Transport at destination
+### Transport at destination
 
 For cities with good public transport, taking your child on buses, trains or subways may be a fun adventure and likely would not add a huge expense. Cities that do not have reliable public transport are more difficult. You may be forced to choose between renting a car (which some institutions may not reimburse) or taking taxis/Ubers/Lyfts. Both of these options might also involve the challenge of trying to install a car seat in an unfamiliar vehicle (perhaps multiple times).
 
-## Food
+### Food
 
 For some children, dining out exclusively may be a viable option, but for others it can be a recipe for disaster. In any case, eating out frequently can get expensive. Many children also require a seemingly endless supply of snacks, which may require access to a refrigerator or kitchenette.
 
-## Accommodation
+### Accommodation
 
 Many conferences have a designated conference hotel, which is normally in the most convenient location and may allow you to drop in and out of sessions. However, standard hotel rooms can be small and painfully boring to spend long periods of time in, and the single-room layout may leave you sitting in the dark for hours after your child goes to sleep. This can be particularly frustrating if you know you are missing out on networking events, collaborator meetings or social gatherings.
 

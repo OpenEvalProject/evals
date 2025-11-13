@@ -21,15 +21,11 @@ Thank you for helping us to clarify this important issue. Our analysis, which we
 
 “In the VWFA (Figure 2B; all ROIs are in the left hemisphere) following the Braille course, the response to tactile Braille words changed from de-activation to positive activation, resulting in a significant difference between tactile words and their control (interaction: p<0.001). […] These responses remained unchanged throughout the course. The lateral occipital area (Figure 2C) showed a similar emergence of responses to tactile Braille words after the course as well.”
 
-As to what causes the drop of activation to control stimuli, we believe that the pattern of activation in SI and SII is very informative here. In SI, but most vividly in SII, there is a general drop in activation to all tactile stimuli after the course of 15 and 31 percent, respectively (Author response image 1).10.7554/eLife.10762.014Author response image 1.SI and SII activity for tactile stimuli before and after the course.DOI: http://dx.doi.org/10.7554/eLife.10762.014
+As to what causes the drop of activation to control stimuli, we believe that the pattern of activation in SI and SII is very informative here. In SI, but most vividly in SII, there is a general drop in activation to all tactile stimuli after the course of 15 and 31 percent, respectively (Author response image 1).10.7554/eLife.10762.014Author response image 1.SI and SII activity for tactile stimuli before and after the course.
 
-DOI: http://dx.doi.org/10.7554/eLife.10762.014
-
-This most likely reflects more efficient tactile processing. It is plausible that this decrease in the somatosensory cortex also led to a general decrease of somatosensory response in the higher visual cortex (Author response image 2). As the below figure explains, our interpretation is that the magnitude of the final response is most likely a result of two processes – a general decrease of activation for all somatosensory stimuli (both tactile Braille words and control), and a specific increase of activation for Braille words.10.7554/eLife.10762.015Author response image 2.Possible contributions to the decrease of activity for tactile stimuli.Two contributions to interaction for tactile stimuli (example for Visual Word Form Area, based on Figure 2).DOI: http://dx.doi.org/10.7554/eLife.10762.015
+This most likely reflects more efficient tactile processing. It is plausible that this decrease in the somatosensory cortex also led to a general decrease of somatosensory response in the higher visual cortex (Author response image 2). As the below figure explains, our interpretation is that the magnitude of the final response is most likely a result of two processes – a general decrease of activation for all somatosensory stimuli (both tactile Braille words and control), and a specific increase of activation for Braille words.10.7554/eLife.10762.015Author response image 2.Possible contributions to the decrease of activity for tactile stimuli.Two contributions to interaction for tactile stimuli (example for Visual Word Form Area, based on Figure 2).
 
 Two contributions to interaction for tactile stimuli (example for Visual Word Form Area, based on Figure 2).
-
-DOI: http://dx.doi.org/10.7554/eLife.10762.015
 
 A second factor contributing to increased deactivation to control stimuli after the course might be a disengagement of attention from control stimuli. Before the course, our subjects could not distinguish Braille words from control stimuli. After the course, Braille words became clearly distinguishable to them. The subjects could therefore disengage their attention rapidly from tactile control stimuli. One can see this very significant (p<0.001) disengagement in ROI analysis of the IPS (Figure 2E). Disengagement of IPS for written word stimuli is a known hallmark of reading activations, that appears quite early during the course of reading development.
 
@@ -41,11 +37,9 @@ To reflect the above in the new version of the manuscript, we have made the foll
 
 although the lateral occipital area was chosen here as a control site, doesn't the FMRI data (Figure 2C) suggest it shows a similar effect to the VWFA? How should this be reconciled?
 
-The Lateral Occipital area (LOA) plays a crucial role in object recognition (Grill-Spector et al., 2001). It is also activated in various word recognition tasks (Duncan et al., 2009; Wright et al., 2008). However, the exact role of LOA in reading remains unknown. Its lesion seems not to affect reading itself (Philipose et al., 2007). Milner et al., (1991), already reported a case study of a patient with left lateral occipital lesion who suffered from visual agnosia with reading functions relatively unimpaired. On the other hand, the LOA is known to be activated when advanced readers start reading a novel script. For example, French native speakers activated bilateral LOA when observing Chinese characters – stimuli that were not familiar to them (Szwed et al., 2014)(Author response image 3).10.7554/eLife.10762.016Author response image 3.LOA activates when French, Chinese-naive native speakers see Chinese characters.Source Szwed et al., 2014.DOI: http://dx.doi.org/10.7554/eLife.10762.016
+The Lateral Occipital area (LOA) plays a crucial role in object recognition (Grill-Spector et al., 2001). It is also activated in various word recognition tasks (Duncan et al., 2009; Wright et al., 2008). However, the exact role of LOA in reading remains unknown. Its lesion seems not to affect reading itself (Philipose et al., 2007). Milner et al., (1991), already reported a case study of a patient with left lateral occipital lesion who suffered from visual agnosia with reading functions relatively unimpaired. On the other hand, the LOA is known to be activated when advanced readers start reading a novel script. For example, French native speakers activated bilateral LOA when observing Chinese characters – stimuli that were not familiar to them (Szwed et al., 2014)(Author response image 3).10.7554/eLife.10762.016Author response image 3.LOA activates when French, Chinese-naive native speakers see Chinese characters.Source Szwed et al., 2014.
 
 Source Szwed et al., 2014.
-
-DOI: http://dx.doi.org/10.7554/eLife.10762.016
 
 Based on those observations and a large body of existing results, including the TMS work by Zangaladze, Epstein, Grafton, and Sathian, (1999) and Merabet et al., (2004) discussed in the eighth paragraph of the Discussion, a plausible explanation is that the LOA is responsible for analysing object features, including tactile object features. However, it is not critical for visual and Braille word recognition.
 
@@ -65,15 +59,11 @@ The following lines were modified and added in the Discussion:
 
 4) Figure 1G shows a correlation between post-training activity during tactile Braille reading and Braille reading speed. How many subjects had a reading speed of 0 WPM? Is the spread of reading speed suitable for a linear regression analysis?
 
-There were 2 subjects who read 0 words per minute at the end of the Braille course. The distribution of reading speed was normal (Shapiro-Wilk (29)= 0.94, p = 0.123, Figure 1), with the mean =6.21, SD=3.94, median=5, range 0-17).10.7554/eLife.10762.017Author response image 4.The distribution of final Braille reading speed (words per minute, WPM).DOI: http://dx.doi.org/10.7554/eLife.10762.017
+There were 2 subjects who read 0 words per minute at the end of the Braille course. The distribution of reading speed was normal (Shapiro-Wilk (29)= 0.94, p = 0.123, Figure 1), with the mean =6.21, SD=3.94, median=5, range 0-17).10.7554/eLife.10762.017Author response image 4.The distribution of final Braille reading speed (words per minute, WPM).
 
-DOI: http://dx.doi.org/10.7554/eLife.10762.017
-
-The subject who read 17 words per minute was an outlier (Figure 1B). In order to check whether the final outcome of the model was not due to the effect of this outlier, we recalculated the model excluding this subject. At p=0.005 voxelwise we found a cluster of 50 voxels including left middle occipital gyrus (z=3.45, BA19, MNI -42 -85 -1) and left inferior occipital gyrus (z=2.92, BA19, MNI -45 -73 -13, Figure 2).10.7554/eLife.10762.018Author response image 5.Tactile Braille modulated by reading speed after course (outlier excluded).Voxel-wise p=0.005, k=50.DOI: http://dx.doi.org/10.7554/eLife.10762.018
+The subject who read 17 words per minute was an outlier (Figure 1B). In order to check whether the final outcome of the model was not due to the effect of this outlier, we recalculated the model excluding this subject. At p=0.005 voxelwise we found a cluster of 50 voxels including left middle occipital gyrus (z=3.45, BA19, MNI -42 -85 -1) and left inferior occipital gyrus (z=2.92, BA19, MNI -45 -73 -13, Figure 2).10.7554/eLife.10762.018Author response image 5.Tactile Braille modulated by reading speed after course (outlier excluded).Voxel-wise p=0.005, k=50.
 
 Voxel-wise p=0.005, k=50.
-
-DOI: http://dx.doi.org/10.7554/eLife.10762.018
 
 We therefore demonstrate that while the outlier influenced cluster size and Z value, exclusion of the outlier did not change the localization of the effect: the only neural correlate of Braille reading speed was found in the left visual cortex.
 

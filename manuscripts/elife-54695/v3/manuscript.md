@@ -58,9 +58,33 @@ Several recent reports applied this technique on mouse bone marrow mesenchymal c
 
 ## Results
 
-## Single cell transcriptomic profiling of bone marrow mesenchymal lineage cells
+### Single cell transcriptomic profiling of bone marrow mesenchymal lineage cells
 
 Consistent with our previous report (Chandra et al., 2017), Td labeled the following cells in the long bone of 1-month-old Col2:Td mice: all chondrocytes (1052 out of 1052 chondrocytes counted, n = 4 mice, 100%) in the growth plate, osteoblasts and all osteocytes (3600 out of 3600 osteocytes counted, n = 4 mice, 100%) in trabecular and cortical bone, all CD45- stromal cells (2050 out of 2050 cells with stromal morphology counted, n = 4 mice, 100%), all Perilipin+ adipocytes (5 out of 5 adipocytes counted, n = 4 mice, 100%), and many pericytes throughout the bone marrow from metaphysis to diaphysis (Figure 1A, Figure 1—figure supplement 1A). We previously developed an enzymatic digestion method to release bone marrow cells trapped within the trabecular bone (endosteal bone marrow) and demonstrated that they contain a higher frequency of mesenchymal progenitors than central bone marrow flushed from the diaphysis of long bones (Siclari et al., 2013). This enzymatic digestion method collects osteoblasts as well and thus, is better than conventional flushing method by providing a definite cluster of mature cells for single cell analysis. Due to its small quantity, Td+ peak among endosteal bone marrow cells was sometimes distinguishable (1.2 ± 0.1%) but often not. Nevertheless, fractioning all cells into the top 1%, 1–2%, and >2% cells based on the Td signal (Figure 1—figure supplement 1B) revealed that the top 1% group contains all the CFU-F forming cells (Figure 1—figure supplement 1C) and almost all CFU-F colonies (98.7%) are Td+ (Figure 1—figure supplement 1D). Since osteoblasts are also Td+, these data suggested that the top 1% cells include all bone marrow mesenchymal progenitors as well as osteoblasts.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig1-v3.jpg)
+
+**Figure 1.:** (A) Fluorescent image of distal femur of 1-month-old Col2:Td mice. (B) The tSNE plot of 7585 Td+ mesenchymal lineage cells isolated from endosteal bone marrow of 1–1.5 month-old Col2:Td mice (n = 5 mice). Cell numbers are listed in parenthesis next to cluster names. OB: osteoblast; Ocy: osteocyte; LCP: lineage committed progenitor; AD: adipocyte; CH: chondrocyte. (C) Violin plots of marker gene expression for EMPs, LMPs, osteoblast/osteocyte, adipocyte, and chondrocyte clusters. (D) Monocle trajectory plot of bone marrow mesenchymal lineage cells. (E) Slingshot trajectory plot of bone marrow mesenchymal lineage cells. In D and E, cells are labeled according to their Seurat clusters. (F) The percentage of proliferative cells (S/G2/M phase) among each cluster was quantified. (G) Hierarchy clustering and heatmap of mesenchymal lineage clusters. Color bar on the top indicates the gene expression level. Each cluster contains two batches (top and bottom) of samples.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fluorescent images of distal femur show that chondrocytes (a), osteoblasts and osteocytes in trabecular bone (b) and cortical bone (c), CD45- stromal cells (d), adipocytes (e), and pericytes (arrows, f) are Td+. GP: growth plate; Emcn: Endomucin. (B) Endosteal bone marrow cells were FACS sorted into top 1% (<1%), 1–2%, and >2% Td expressing cells. (C) Unsorted and sorted cells were cultured for CFU-F assay. Cell number per flask is listed below. n = 3–4 flasks/group. (D) All CFU-F colonies from top 1% group were Td+.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Violin plots show numbers of genes, UMIs, and percentages of mitochondrial genes among two batches of samples (1 and 1.5 month). Red box indicates cells within the selection criteria of quality controls. (B) The tSNE plot of 13759 Td+ endosteal bone marrow cells isolated from 1 to 1.5 month-old Col2:Td mice (n = 5). Cell numbers are listed in parenthesis next to cluster names. OB: osteoblast; Ocy: osteocyte; LCP: lineage committed progenitor; AD: adipocyte; CH: chondrocyte; MK: megakaryocytes; EC: endothelial cells. (C) Violin plots of cluster-specific makers. (D) Violin plots of mesenchymal, hematopoietic, and endothelial lineage specific markers.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Mesenchymal lineage cells were circled. Color bar on the right of each panel indicates the expression level.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The UMAP plot of 7585 Td+ mesenchymal lineage cells isolated from endosteal bone marrow of 1–1.5 month-old Col2:Td mice (n = 5 mice). (B) The distribution of cells from 1 month and 1.5 month datasets in the tSNE plot of mesenchymal lineage cells. (C) The distribution of cells from 1 month and 1.5 month datasets in each cluster.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) The expression patterns are shown in tSNE plots that only contain mesenchymal lineage cells. (B) The expression patterns are shown in tSNE plots that contain all sequenced cells. Green, red, and yellow arrows point to endothelial, mural, and hematopoietic cell clusters, respectively. (C, D) The expression patterns of markers are shown in UMAP plots.
 
 Using 10x Genomics approach, we sequenced the top 1% Td+ endosteal bone marrow cells from 1- to 1.5-mo-old Col2:Td mice. We profiled 13,759 cells with a median of 2686 genes/cell and a median of 12215 UMIs/cell (Figure 1—figure supplement 2A). Unsupervised clustering of the gene expression profiles using Seurat identified 22 groups, including 9 groups of mesenchymal lineage cells and 11 groups of hematopoietic cells, 1 group of endothelial cells, and 1 group of mural cells (Figure 1—figure supplement 2B-D). For reasons unclear at present, we observed a large number of non-mesenchymal lineage cells, which is confirmed by detectable Td and Col2a1 expression in those cells (Figure 1—figure supplement 3). tSNE (Figure 1B) and UMAP (Figure 1—figure supplement 4A) analyses of 7585 mesenchymal lineage cells yielded the same cell cluster pattern containing 9 subpopulations. Cells from two batches of experiments were present at a roughly similar proportion in each subpopulation (Figure 1—figure supplement 4B, C). Examination of lineage-specific markers identified clusters with gene signatures of osteoblast (cluster 4), osteocyte (cluster 5), adipocyte (cluster 7), and chondrocyte (cluster 8 and 9, Figure 1C). Chondrocyte clusters, while unexpected, likely represent growth plate chondrocytes released from bone fragments during enzymatic digestion after we cut off epiphyses at the growth plate site. Since chondrocytes originate from the resting zone progenitors but not bone marrow MSCs (Mizuhashi et al., 2018), they were excluded from subsequent analysis.
 
@@ -70,7 +94,7 @@ Computational cell cycle analysis was performed to understand the proliferative 
 
 During the past decade, many proteins have been proposed as mesenchymal progenitor markers based on lineage tracing and in vitro culture data, such as Lepr (Zhou et al., 2014), myxovirus resistance-1 (Mx1) (Park et al., 2012), glioma-associated oncogene homolog 1 (Gli1) (Shi et al., 2017), paired related homeobox 1 (Prxx1) (Logan et al., 2002), gremlin (Grem1) (Worthley et al., 2015), platelet derived growth factor receptor alpha (Pdgfrα)/Sca1 (PαS) (Morikawa et al., 2009), Nestin (Méndez-Ferrer et al., 2010), Osterix (Mizoguchi et al., 2014), c-x-c motif chemokine 12 (Cxcl12) (Omatsu et al., 2010), integrinαV/OX-2 membrane glycoprotein (Cd200) (Chan et al., 2015), and early B cell factor 3 (Ebf3) (Seike et al., 2018). However, our data suggested that among them, only Sca1 preferentially marks cluster 1. Pdgfra, Itgav, Gli1, and Prrx1 are broadly expressed across all mesenchymal lineage cells; Sp7 (Osterix) and Cd200 are expressed at a higher level in LMPs and LCPs than in EMP; Grem1, Lepr, Cxcl12 and Ebf3 are highly expressed in adipocytes but also have expression in other mesenchymal cells (Figure 1—figure supplement 5A); Nestin and Mx1 are mainly expressed in endothelial/mural cells and hematopoietic cells, respectively (Figure 1—figure supplement 5B). Their expression patterns were further confirmed by UMAP (Figure 1—figure supplement 5C, D). Hence, the in vivo EMPs we computationally identified here are similar to the previously proposed PαS cells but different from other proposed MSCs. PαS cells have been shown to display mesenchymal progenitor properties in culture and after transplantation (Morikawa et al., 2009).
 
-## The osteogenic and adipogenic lineage commitment of bone marrow mesenchymal progenitors
+### The osteogenic and adipogenic lineage commitment of bone marrow mesenchymal progenitors
 
 Positioning individual cells along a linear pseudotimeline with EMPs as the root revealed transcription factors (TFs) differentially expressed after the branch point of osteogenic and adipogenic lineages (Figure 2A). Consistent with its longer differentiation pseudotime, adipogenic differentiation required many more unique TFs than osteogenic differentiation, including master regulators Pparg and Cebpa, several known TFs related to adipogenesis, such as Klf2, Ebf1, and Ebf2 (Lee et al., 2019), as well as many novel ones. Surprisingly, this analysis only revealed master osteogenic regulator Sp7 but not Runx2. Indeed, the expression of Runx2 started from IMPs and stayed constant during osteogenic differentiation (Figure 1C). Our observation that adipogenic differentiation is accompanied with more changes in TFs than osteogenic differentiation is consistent with a recent analysis of in vitro adipogenic and osteogenic differentiation of human MSC-TERT4 cells (Rauch et al., 2019).
 
@@ -82,7 +106,7 @@ Analyzing differentiated expressed genes (DEGs) revealed that up-regulated genes
 
 To validate the lineage differentiation routes predicted by our Seurat and Monocle data, we chose two genes, Dmp1 and Acta2 (αSMA), for further investigation. DMP1 was previously reported as an osteocyte marker (Lu et al., 2007). Our sequencing analysis revealed that its expression is turned on in LCPs mostly in osteogenic differentiation route (Figure 2D,E). In 3-month-old Dmp1-Cre Rosa26 <lsl-tdTomato> (Dmp1:Td) mice, Td labeled almost all osteoblasts and osteocytes, some stromal cells and a few Perilipin+ adipocytes (6 out of 92 adipocytes counted, n = 3 mice, 6.1%, Figure 2F), which is similar to a previously reported Dmp1-Cre targeting pattern (Lim et al., 2016). αSMA was previously reported as an osteoprogenitor marker (Kalajzic et al., 2008). We found that it is a marker for the LMP cluster (Figure 2G,H). In Acta2-CreER Rosa26 <lsl-tdTomato> (Acta2ER:Td) mice at 3 months after Tamoxifen injections, Td labeled many osteoblasts, osteocytes (185 out of 256 osteocytes counted, n = 3 mice, 68.2%), and bone marrow Perilipin+ adipocytes (42 out of 124 adipocytes counted, n = 3 mice, 33.7%, Figure 2I), confirming that αSMA labels mesenchymal progenitors before bifurcated differentiation.
 
-## Age-dependent changes in bone marrow mesenchymal subpopulations
+### Age-dependent changes in bone marrow mesenchymal subpopulations
 
 Mouse bone marrow mesenchymal progenitor pool shrinks drastically over time. Indeed, CFU-F frequency of endosteal bone marrow harvested from 16-month-old Col2:Td mice decreased by 73% compared to that from 1-month-old mice (Figure 3A). Similar to adolescent mice, almost all CFU-F colonies from adult and aging mice were Td+ (Figure 3A) and top 1% Td+ cells sorted from endosteal bone marrow contained almost all CFU-Fs (100% Td+) in unsorted cells (Figure 3—figure supplement 1A, B). These data support the use of a similar scRNA-seq approach on adult and aging bone marrow mesenchymal lineage cells.
 
@@ -90,33 +114,91 @@ After quality control, we obtained 4502 cells with 19 clusters in a 3 month data
 
 Merging all age datasets generated 6 clusters: EMP, LMP, osteoblast, osteocyte, LCP, and adipocyte (Figure 3E). It is conceivable that the mesenchymal progenitor pool with bi-lineage differentiation ability was drastically shrunk in the aging sample while the adipocyte population was greatly expanded (Figure 3F-G), which is consistent with our CFU-F results. Pseudotime trajectory analyses again revealed a similar Y shape curve as 1 month dataset (Figure 3—figure supplement 2A). Interestingly, while EMP and LMPs in 1 and 3 month datasets were more centered at the starting point of pseudotime, those cells in 16 month dataset shifted toward differentiated status, particularly the adipocyte end (Figure 3—figure supplement 2B, C). We further examined the expression pattern of adipocyte markers in each cell cluster among different age groups (Figure 3—figure supplement 2D). Some of them, such as Cebpa and Lpl, were expressed at higher levels in most mesenchymal subpopulations, particularly EMP and LMP, in 16 month dataset comparing to 1 and 3 month datasets, suggesting an adipocytic drift during aging. Lepr was previously described as a marker labeling adult MSCs but not young MSCs (Zhou et al., 2014). Here we observed that Lepr expression is much higher in 16 month EMPs than in 1 month EMPs, likely providing an explanation for why Lepr-Cre labels adult MSCs but not young MSCs in mouse bone marrow (Zhou et al., 2014).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig3-v3.jpg)
+
+**Figure 3.:** (A) CFU-F assays of endosteal bone marrow cells from 1-, 3-, and 16-month-old Col2:Td mice. n = 3 mice/group. Td+ and Td- CFU-F colonies are quantified. (B) The tSNE plots of Td+ mesenchymal lineage cells isolated from endosteal bone marrow of 3- and 16-month-old Col2:Td mice (n = 3 mice/group). Cell numbers are listed in parenthesis next to cluster names. OB: osteoblast; Ocy: osteocyte; LCP: lineage committed progenitor; AD: adipocyte; CH: chondrocyte. (C) Violin plots of marker gene expression for indicated clusters in 3 and 16 month datasets. (D) Monocle (left) and Slingshot (right) trajectory plots of bone marrow mesenchymal lineage cells (excluding chondrocytes) in 3 and 16 month datasets. Cells are labeled according to their Seurat clusters. (E) An integrated tSNE plot of 1, 3, and 16 month datasets shows the clustering pattern. (F) An integrated tSNE plot of 1, 3, and 16 month datasets shows the distribution of each age group. (G) The percentages of mesenchymal progenitors before lineage commitment and adipocytes (ADs) within bone marrow mesenchymal lineage cells are quantified in each age group based on tSNE distribution.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Endosteal bone marrow cells from 3- and 16 month old mice were FACS sorted into top 1% (<1%) and >1% Td expressing cells. (B) Unsorted and sorted cells were cultured for CFU-F assay. Cell number per flask is listed below. n = 3–4 flasks/group. (C) The tSNE plot of 4502 and 8823 Td+ endosteal bone marrow cells isolated from 3- and 16-month-old Col2:Td mice, respectively (n = 3/age). Cell numbers are listed in parenthesis next to cluster names. OB: osteoblast; Ocy: osteocyte; LCP: lineage committed progenitor; AD: adipocyte; CH: chondrocyte; MK: megakaryocyte; EC: endothelial cell. (D) The UMAP plot of 2510 and 7354 mesenchymal lineage cells from 3- and 16-month-old Col2:Td mice.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Monocle (left) and Slingshot (right) trajectory plots of bone marrow mesenchymal lineage cells of integrated database from mice at 1, 3 and 16 months of ages. Cells are labeled according to their Seurat clusters. (B) Monocle trajectory plots are separated based on age groups. (C) Monocle trajectory plots are separated based on age groups and Seurat clusters. (D) Dotplot of Cebpa, Pparg, Lpl, Adipoq and Lepr in Seurat clusters across different age groups. The circle size is proportional to the percentage of cells expressing the gene and transparency of circle is reversely correlated with the average gene expression level.
+
 In summary, we conclude that the same pool of EMPs with the same hierarchy differentiation pattern is responsible for bone formation by mesenchymal lineage cells at adolescent, adult, and aging stages. During aging, EMPs are not only reduced in numbers but also drifted toward more adipogenic status, which might further account for the loss of progenitor activity.
 
-## Discovery of a novel adipogenic lineage cell population in bone
+### Discovery of a novel adipogenic lineage cell population in bone
 
 The conventional view of bone marrow adipocytes is that they are Perilipin+ cells with a single large lipid droplet (Horowitz et al., 2017). However, due to their large size and buoyance, those cells cannot be captured by pelleting and cell sorting. Furthermore, they are rare in the adolescent mouse bones. Therefore, we were surprised to identify a large cell cluster in young mice that express common adipocyte markers, including Pparg, Cebpa, Adipoq, Apoe, and Lpl (Figure 4—figure supplement 1A, C). However, they do not express Plin1, a gene encoding lipid droplet coating protein, and they express Fabp4, a gene encoding a fatty acid binding protein, at a very low level, implying that they do not contain lipid droplets. In addition, these cells express a variety of other group defining genes, such as Lepr, Cxcl12, Il1rn, Serpina3g, Kng1, Kng2, Agt, Esm1, and Gdpd2 (Figure 4—figure supplement 1B, D). qRT-PCR analysis demonstrated that those genes are indeed up-regulated during adipogenic differentiation of mesenchymal progenitors in culture (Figure 4—figure supplement 2), supporting that cluster 7 in 1 month dataset represents adipose lineage cells.
 
 To validate this population, we constructed adipocyte-specific Adipoq-Cre reporter mice: Adipoq:Td mice with or without Col1a1-GFP that labels osteoblasts. In line with the above sequencing data, there were many Td+ cells, existing either as CD45- stromal cells or pericytes, in the bone marrow of newborn pups (Figure 4—figure supplement 3) when long bone undergoes rapid bone formation. At 1 month of age, Td labeled all Perilipin+ adipocytes, CD45- stromal cells with a reticular shape, and pericytes, but not osteoblasts, osteocytes, growth plate or articular chondrocytes (Figure 4A). The majority of Td+ cells did not harbor lipid droplets (Figures 4B, 1995 out of 2000 cells counted, n = 6 mice, 99.8%) and none of them incorporated EdU (Figures 4C, 0 out of 2060 cells counted, n = 3 mice, 0%). After isolated from bone marrow, Td+ cells attached to the culture dish but did not form CFU-F colonies (Figures 4D, 0 out of 100 colonies counted, n = 3 mice, 0%). In freshly isolated endosteal bone marrow, Td+ cells constituted about 18% of CD45-Ter119- cells. During culture, the percentage of Td+ cells decreased progressively after cell passage (P0 when CFU-F colonies became confluent: 2.03%; P1: 0.93%: P2: 0.31%, by flow cytometry analysis), suggesting that those cells have much less proliferative ability if any compared to mesenchymal progenitors. Moreover, while freshly sorted Td+ cells from bone marrow of Col2:Td mice formed bone with a hematopoietic compartment after transplanted under mouse kidney capsule, freshly sorted Td+ cells from Adipoq:Td bone did not form bone-like structure (Figure 4E), demonstrating that they are not mesenchymal progenitors. This is consistent with the notion that Adipoq-Cre does not label adipoprogenitors in peripheral fat depots (Liu et al., 2017). Indeed, the stromal vascular fraction (SVF) of visceral fat from Adipoq:Td mice contained no Td+ CFU-F colonies (data not shown).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig4-v3.jpg)
+
+**Figure 4.:** (A) Representative fluorescent images of 1-month-old Adipoq:Td:Col1a1-GFP (a–d) or Adipoq:Td (f–g) femur reveal many bone marrow Td+ cells. (a) A low magnification image of a distal femur. (b–g) At a high magnification, Td does not label chondrocytes in articular cartilage (b) and growth plate (c), osteoblasts and osteocytes (arrows, d) but labels pericytes (arrows, e), Perilipin+ adipocytes (f), and CD45- stromal cells (g). (B) According to BODIPY lipid staining, those Td+ stromal cells in a reticular shape (arrow) have no lipid accumulation. (C) In vivo EdU injection reveals that Td+ cells in Adipoq:Td mice do not proliferate. (D) CFU-F assay of bone marrow cells from Adipoq:Td mice shows that all CFU-F colonies are made of Td- cells (a). (b) Some Td+ cells do attach to the dish but have minimum proliferation ability. n = 5 mice. (E) Endosteal bone marrow Td+ cells from 1-month-old Col2:Td mice (5 out of 5 transplants), but not Adipoq:Td mice (0 out of 3 transplants) form bone-like structure after transplanted under the kidney capsule. Representative fluorescent images of transplants were shown here. Osterix: osteoblasts; CD45: hematopoietic cells; Calcein: new bone surface. (F) In vitro adipogenic differentiation assay demonstrates that non-lipid-laden adipocytes exist as an intermediate state between mesenchymal progenitors and lipid-laden adipocytes. Mesenchymal progenitors, which are Td-, were obtained from culturing endosteal bone marrow cells from 1-month-old Adipoq:Td mice. Upon confluency, cells were cultured in adipogenic differentiation medium. The same area was imaged daily by inverted fluorescence microcopy. (G) CFU-F assay of bone marrow cells from P23 AdipoqER:Td mice (Tamoxifen injections at P14-16) shows that all CFU-F colonies are made of Td- cells (a). (b) Some Td+ cells do attach to the dish but have minimum proliferation ability. n = 3 mice. (H) Immunofluorescence staining shows that Perilipin+bone marrow adipocytes are derived from non-lipid-laden adipocytes in 1-month-old AdipoqER:Td mice (Tamoxifen injections at P6, 7). (I) Representative images of co-localization of Td and Lepr in stromal (white arrows) and pericytes (yellow arrows) in bone marrow of 1-month-old Adipoq:Td mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The expression patterns of known adipocyte markers in tSNE plots. The number in parenthesis below each gene indicates its rank among all genes based on its expression level in the adipocyte cluster. (B) The expression patterns of predicted markers for the adipocyte cluster in tSNE plots. (C, D) The expression patterns of above markers in UMAP plots.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Bone marrow mesenchymal progenitors were cultured to confluence and switched to adipogenic differentiation medium. Cells were harvested at indicated time points for qRT-PCR analysis of newly identified marker genes. *: p<0.05; **: p<0.01; ***: p<0.001 compared with day 0.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Fluorescent image of the proximal tibia at a low magnification. Arrow points to patellar fat pad. (B–D) At a high magnification, it is obvious that Td does not label osteoblasts and osteocytes in trabecular bone (B) but does label pericytes (C, arrow) and CD45- stromal cells (D).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Low magnification image of a femur from a P23 AdipoqER:Td mouse (Tamoxifen at P14-16) reveals abundant Td+ cells in the bone marrow. Td does not label chondrocytes in articular cartilage and growth plate. (B–E) High magnification images show that Td+ cells are located inside bone marrow (B). Similar to Adipoq:Td mice, Td+ cells in AdipoqER:Td mice are not osteoblasts and osteocytes (C). They are indeed pericytes (arrows, D) and Perilipin+ adipocytes (arrow, E).
+
 To delineate the relationship among mesenchymal progenitors, non-lipid-laden Perilipin-Td+ cells, and lipid-laden Perilipin+Td+ cells, we subjected confluent mesenchymal progenitors from Adipoq:Td mice, which are Td-, to adipogenic differentiation. Interestingly, Td- cells (day 0) became Td+ cells (days 1 and 2) with no lipid droplets and then evolved into Td+ cells with lipid accumulation (days 3–5, Figure 4F). For fate mapping in vivo, we generated Adipoq-CreER Rosa26 <lsl-tdTomato> (AdipoqER:Td) mice. Tamoxifen injections at P14-16 induced many Td+ cells in bone marrow at P23 with a similar distribution pattern as Td+ cells in Adipoq:Td mice (Figure 4—figure supplement 4). All CFU-Fs from their bone marrow were Td- and only a few Td+ cells attached to the dish without further proliferation (Figure 4G). AdipoqER:Td mice receiving Tamoxifen injections at P6-7, when no Perilipin+ adipocytes can be detected in the proximal tibia, displayed Perilipin+Td+ adipocytes at 1 month of age (Figure 4H), suggesting that Perilipin-Td+ cells become bone marrow adipocytes in vivo. Taken together, our data clearly demonstrate that non-lipid-laden, Adipoq-Cre labeled cells constitute a mesenchymal subpopulation situated after mesenchymal progenitors and before classic lipid-laden adipocytes (LiLAs) along the adipogenic differentiation route of bone marrow EMPs. As a further validation that Adipoq-Cre labeled cells are cells in cluster 7 of 1 month dataset, we stained sections with Lepr, a cluster 7 marker. As expected, almost all Td+ cells are Lepr+ as well (Figure 4I).
 
 Compared to conventional adipose depots, we did not detect the expression of Lep (white adipocyte marker), Ucp1 (brown adipocyte marker), Tnfrsf9 (beige adipocyte marker) in cells of adipocyte cluster based on our sequencing data. Other adipose depot markers, such as Hoxc8, Hoxc9 (white), Cidea, Cox7a1, Zic1 (brown), Cited1, Shox2, Tbx1 (beige) (Cheng et al., 2018; Wu et al., 2012), were expressed either at very low level or ubiquitously among most mesenchymal lineage cells. Overall, our results indicate that bone marrow contains a unique, large population of adipogenic lineage cells that have no lipid storage.
 
-## A 3D network in bone marrow formed by Adipoq-labeled stromal cells and pericytes
+### A 3D network in bone marrow formed by Adipoq-labeled stromal cells and pericytes
 
 In the bone marrow of young Adipoq:Td mice, Perilipin-Td+ cells far exceeded Perilipin+Td+ adipocytes in number. Cell counting in tibial sections revealed approximate 400:1 and 1000:1 ratios of Perilipin-Td+ cells to Perilipin+Td+ in the metaphyseal and diaphyseal bone marrow, respectively (n = 3 mice). Morphologically, Perilipin-Td+ cells exist as stromal cells and pericytes. PDGFRβ is a general pericyte marker (Crisan et al., 2008) and Laminin is a component of basement membrane secreted by both pericytes and endothelial cells (Yousif et al., 2013). Our scRNA-seq data showed that both Pdgfrb and Lamb1 are expressed at relatively higher levels in the adipocyte cluster among all mesenchymal clusters (Figure 5A, Figure 5—figure supplement 1). Pericytes identified by PDGFRβ or Laminin staining in a peri-capillary location were Td+ (850 out of 850 cells counted, n = 3 mice, 100%, Figure 5B), indicating that Adipoq marks pericytes surrounding bone marrow capillaries. To further confirm their pericyte nature, we mixed sorted Td+ cells from Adipoq:Td bone marrow with endothelial progenitors and conducted vasculogenic tube assays. Strikingly, most Td+ cells co-localized with newly formed tubes (Figure 5C), suggesting that they function as pericytes. Consistent with this, the adipocyte cluster express many angiogenic factors, such as Vegfa, Vegfc, Angpt4, Rspo3 etc (Figure 5D, Figure 5—figure supplement 1). Gene profiling of fractionated Td+ cells from Adipoq:Td bone marrow confirmed the remarkably high expression of these angiogenic factors as well as adipocyte markers and other newly identified markers (Figure 5E). Bone marrow pericytes seem to be unique because we did not observe Td+ pericytes in other tissues of Adipoq:Td mice, such as muscle, liver, lung, brain, heart, and kidney (Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig5-v3.jpg)
+
+**Figure 5.:** (A) The expression patterns of Pdgfrb and Lamb1 are shown in tSNE plots. (B) Immunofluorescence staining reveals that all PDGFRβ+ and Laminin+ cells with a pericyte morphology are Td+ (pointed by arrows). (C) Td+ cells sorted from Adipoq:Td bone marrow act as pericytes after cocultured with bone marrow endothelial cells undergoing tube formation assay. (D) The expression patterns of angiogenic factors are shown in tSNE plots. (E) qRT-PCR analyses comparing mRNA levels in Td+ versus Td- cells (set as 1) sorted from bone marrow of 1-month-old Adipoq:Td mice confirm that Adipoq-Cre labeled cells highly express angiogenic factors, known adipocyte markers, and novel markers suggested by sequencing data. *: p<0.05; **: p<0.01; ***: p<0.001 Td+ vs Td-, n = 3 mice. (F) A 3D network in bone marrow formed by Td+ stromal cells and pericytes in 1-month-old Adipoq:Td mice. (a) A low magnification image reveals the network of Td+ cells in the femoral bone marrow. (b) Td+ cell bodies and their processes are more obvious in a high magnification image. See Figure 5—video 1 for a 3D structure. (c) Those Td+ cells have PDGFRβ staining all over their cell processes. See Figure 5—video 2 for a 3D structure. (d) They also have punctuated Connexin 43 staining in their process, indicating cell-cell communication. See Figure 5—video 3 for a 3D structure. (e) Td+ pericytes have cell processes. Some processes protrude into bone marrow just like those of Td+ stromal cells and some of them wrap around the vessel wall. Similarly, Td+ stromal cells also extend their processes toward vessels either wrapping around the vessel wall (yellow triangles) or contacting the processes from pericytes. White arrows point to cells with a typical pericyte morphology. A blue arrow points to a Td+ cell sitting on a vessel with a stromal cell shape. Therefore, considering the presence of cell processes and connections, Td+ stromal cells and pericytes are indeed very similar. See Figure 5—video 4 for a 3D structure. (f) Cell processes from Td+ cells touch almost every CD45+ hematopoietic cells inside bone marrow. (g) They also reach trabecular bone surface. (h) On the contrary, most cell surface of Perilipin+Td+ adipocytes are smooth and round. See Figure 5—video 5 for a 3D structure.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig5-figsupp1-v3.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Td+ pericytes are not detected in muscle, liver, lung, brain, heart, and kidney of 1-month-old Adipoq/Td mice. Emcn: Endomucin. n = 3 mice.
+
 Interestingly, when we scanned 50 µm-thick sections of Adipoq:Td long bones, we observed a striking 3D network made of cell processes from Td+ cells that were ubiquitously distributed inside bone marrow (Figure 5Fa, b, Figure 5—video 1). In sharp contrast to round hematopoietic cells, Td+ stromal cells and pericytes possessed an average of 6.1 ± 0.2 cell processes (52 cells counted, n = 3 mice), which were covered by cell membrane proteins, such as PDGFRβ and gap junction Connexin 43 (Figure 5Fc, d, Figure 5—videos 2 and 3). These processes were reminiscent of osteocytic canaliculi structure, although they are much longer and more disorientated. With these processes, Td+ stromal cells and pericytes were morphologically similar (Figure 5Fe, Figure 5—video 4). They all extended cell processes into the marrow, making numerous connections amongst themselves, around endothelial walls (Figure 5Fe), with hematopoietic cells (Figure 5Ff), and with bone surface (Figure 5Fg). In LiLAs, cell processes were only detected at a small portion of cell surface next to cytoplasm and nuclei but not at the most part of cell surface next to the lipid droplet (Figure 5Fh, Figure 5—video 5). The vast 3D structure of Td+ cells implies a unique communication role.
 
-## The critical function of Adipoq-labeled cells in bone
+### The critical function of Adipoq-labeled cells in bone
 
 We next sought to study the function of these Td+ cells by ablating them in 1-month-old Adipoq-Cre Rosa26 <lsl-tdTomato>DTR (Adipoq:Td:DTR) mice via diphtheria toxin (DT) injections. After two weeks, DT-treated mice displayed pale bones as compared to vehicle-treated mice (Figure 6A). In bone marrow Perilipin+Td+ and Perilipin-Td+ cells were greatly reduced by 95% and 88%, respectively (Figure 6B,C). Bone marrow vasculature underwent severe pathological changes, becoming dilated and distorted (Figure 6D,E). Quantification revealed 2.3- and 1.9-fold increases in vessel diameter and vessel area, respectively, and a 36% decrease in vessel density (Figure 6F). Additionally, the number of Emcn+CD31+ endothelial cells decreased by 45% after DT treatment (Figure 6G). In bone marrow, Adipoq-Cre labeled a similar density of pericytes as Col2-Cre (0.0172 ± 0.0019 vs 0.0174 ± 0.0028 pericytes/µm vessel length, n = 3 mice/group). Strikingly, DT injections drastically decreased Td+ pericytes by 90% to 0.0018 ± 0.0005 pericytes/µm vessel length (n = 3 mice/group, Figure 6E). Hence, one role of these non-lipid laden Td+ cells is to maintain normal bone marrow vessels.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig6-v3.jpg)
 
-**Figure 6.:** + cells are critical for supporting marrow vasculature.(A) Ablation of Adipoq-Cre labeled cells changes the color of long bones from red to pink. One-month-old Adipoq:Td:DTR mice received either veh or DT injections (50 μg/kg) every other day for 2 weeks and long bones were harvested for analysis. (B) Inside the long bone, Td+ cells were significantly reduced by DT injections. (C) Perilipin+ adipocytes were also diminished by DT injections. (D) Fluorescent images of vessel staining in femur at a low magnification revealed abnormal bone marrow vessel structure after DT injections. (E) Fluorescent images of vessel staining in femur at a high magnification showed that vessels were dilated coinciding with the depletion of Td+ pericytes (arrows) after DT injections. (F) Vessel diameter, area, and density are quantified in the central bone marrow. n = 3 mice. ***: p<0.001 DT vs veh. (G) Flow cytometric analysis of endothelial cells (Emcn+CD31+) in bone marrow after DT injections.Figure 6—source data 1.Figure 6F.
+**Figure 6.:** (A) Ablation of Adipoq-Cre labeled cells changes the color of long bones from red to pink. One-month-old Adipoq:Td:DTR mice received either veh or DT injections (50 μg/kg) every other day for 2 weeks and long bones were harvested for analysis. (B) Inside the long bone, Td+ cells were significantly reduced by DT injections. (C) Perilipin+ adipocytes were also diminished by DT injections. (D) Fluorescent images of vessel staining in femur at a low magnification revealed abnormal bone marrow vessel structure after DT injections. (E) Fluorescent images of vessel staining in femur at a high magnification showed that vessels were dilated coinciding with the depletion of Td+ pericytes (arrows) after DT injections. (F) Vessel diameter, area, and density are quantified in the central bone marrow. n = 3 mice. ***: p<0.001 DT vs veh. (G) Flow cytometric analysis of endothelial cells (Emcn+CD31+) in bone marrow after DT injections.
 
 The color change in bone after cell ablation was due to de novo trabecular bone formation throughout the marrow cavity, especially in the diaphysis that is normally devoid of any trabeculae (Figure 7A–C). MicroCT quantification of newly formed bone in the diaphyseal region revealed that it resembles metaphyseal trabecular bone in normal mice (Figure 7D). Numerous Osterix+ osteoblasts were observed inside the diaphyseal bone marrow (Figure 7E), suggesting that osteogenic differentiation is rapidly activated. The fact that nearly all osteoblasts are Td- further confirmed that Adipoq-Cre rarely labels mesenchymal progenitors that generate osteoblasts. Furthermore, DT injections drastically reduced CFU-F frequency from bone marrow (Figure 7F), suggesting a direct or indirect effect of Td+ cells on progenitors. The new bone formation along the endosteal surface of cortical bone was mostly woven bone with misaligned collagen fibrils (Figure 7G). This resulted in increased cortical thickness and area, reduced endosteal perimeter, and low tissue mineral density (Figure 7H).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig7-v3.jpg)
+
+**Figure 7.:** (A) 3D μCT images of Adipoq:Td:DTR femurs reveal drastic de novo bone formation in the midshaft region after 2 weeks of DT injections. (B) H and E staining of femoral sections. (C) 3D reconstructed microCT images of femoral midshaft region. (D) MicroCT measurement of trabecular bone structural parameters from the midshaft region. BV/TV: bone volume fraction; Tb.N: trabecular number; Tb.Th: trabecular thickness; Tb.Sp: trabecular separation; Conn.D: connective density; SMI: structural model index. n = 6 mice/group. *: p<0.05; ***: p<0.001 DT vs veh. (E) Fluorescent image shows that newly formed osteoblasts (Osterix+ cells) in the diaphyseal bone marrow are Td- cells. (F) CFU assay demonstrates a decrease in mesenchymal progenitors in Adipoq:Td:DTR femurs after DT injections. n = 3 mice/group. ***: p<0.001 DT vs veh. (G) Second harmonic generation images of femoral sections reveal that collagen fibers in the newly formed bone on the endocortical surface are mostly misaligned in Adipoq:Td:DTR mice after DT injections. (H) MicroCT measurement of cortical bone structural parameters from the midshaft region. Ps.Pm: periosteal perimeter; Ec.Pm: endosteal perimeter; Ct.Th: cortical thickness; Ct.Ar: cortical area; Ct.TMD: cortical tissue mineral density. n = 6 mice/group. *: p<0.05; **: p<0.01; ***: p<0.001 DT vs veh.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) 2 weeks of DT injections significantly reduce femoral BM cellularity in 1-month-old Adipoq:Td:DTR mice. (B) Peripheral blood (PB) and BM frequency of hematopoietic lineage cells were assessed by flow cytometry. (C) Bone marrow frequency of various hematopoietic stem and progenitor cell compartments were assessed by flow cytometry using SLAM marker scheme. Hematopoietic stem cell (SLAM LSK): Lin-Sca1+cKit+CD48-CD150+; Multipotent progenitor (MPP): Lin-Sca1+cKit+CD48+CD150-. LSK: Lin-Sca1+cKit+; LKS-: Lin-Sca1-cKit+; LK: Lin-cKit+. Each symbol represents an individual mouse. Horizontal lines represent the mean and vertical bars indicate the SD. **: p<0.01 DT vs veh.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A) 2 weeks of DT injections significantly reduce the number of bone marrow Td+ cells in vertebrae of 1-month-old Adipoq:Td:DTR mice. (B) Vessel staining reveals that DT injections alter vessel structure and integrity in the vertebral bone marrow of Adipoq:Td:DTR mice. (C) Osterix staining suggests more bone forming cells after cell ablation. (D) Representative microCT images of vertebral bone. (E) MicroCT measurement of trabecular bone structural parameters in vertebrae. n = 6 mice/group. BV/TV: bone volume fraction; Tb.N: trabecular number; Tb.Th: trabecular thickness; Tb.Sp: trabecular separation; Conn.D: connective density; SMI: structural model index. BMD: bone mineral density. *: p<0.05; **: p<0.01; ***: p<0.001 DT vs veh.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Blood glucose level was measured in Adipoq:Td:DTR mice received vehicle injections (veh group), DT injections (DT group), and DT injections after fat transplantation (DT+Fat group). n = 3 mice/group. **: p<0.01 DT vs veh, ##: p<0.01 DT+Fat vs DT. (B) Fat transplantation does not reverse DT-induced vessel damage in bone marrow. Top panel: fluorescent images of Td+ cells in femurs. Middle panel: fluorescent images of vessel staining at a low magnification. Bottom panel: fluorescent images of vessel staining at a high magnification. Arrows point to Td+ pericytes. (C) 3D μCT images of Adipoq;Td:DTR femurs reveal that fat transplantation does not block de novo bone formation in the midshaft region induced by DT injections. (D) 3D reconstructed microCT images of femoral midshaft region. (E) MicroCT measurement of trabecular bone structural parameters in femoral midshaft region. n = 3 mice/group. BV/TV: bone volume fraction; Tb.N: trabecular number; Tb.Th: trabecular thickness; Tb.Sp: trabecular separation. *: p<0.05; **: p<0.01; ***: p<0.001 vs veh.
 
 After DT treatment, the overall bone marrow cellularity was significantly decreased (Figure 7—figure supplement 1A). However, the hematopoietic components, including hematopoietic stem/progenitors cells and lineage specific cells, as well as peripheral blood components, remained largely unaltered (Figure 7—figure supplement 1B, C). Therefore, the reduced cellularity is likely caused by the smaller marrow cavity secondary to the new bone formation.
 
@@ -129,6 +211,18 @@ Taken together, our data indicate that these Adipoq-Cre labeled, non-lipid-laden
 ## Discussion
 
 In this study, we computationally delineated the entire in vivo differentiation process of mesenchymal progenitors and defined the mesenchymal lineage hierarchy inside bone marrow (Figure 8). Stem cell heterogeneity and plasticity have been recognized in some well-studied mammalian tissue stem cells (Tang, 2012). However, in the past, owing to a lack of discerning investigative tools, we purposely ignored these features of mesenchymal lineage cells by simply referring to all progenitors as MSCs or mesenchymal progenitors and searching for one or a set of marker(s) to cover all of them. Our work computationally addresses this long-standing uncertainty and clarifies the expression patterns of previously proposed MSC markers in mesenchymal subpopulations.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig8-v3.jpg)
+
+**Figure 8.:** OB: osteoblast; Ocy: osteocyte; EMP: early mesenchymal progenitor; LMP: late mesenchymal progenitor; LCP: lineage committed progenitors; MALPs: marrow adipogenic lineage precursors; LiLA: lipid-laden adipocytes.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** An alternative annotation of cell clusters based on our data is indicated by red in parentheses below Tikhonova’s annotation.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/54695/elife-54695-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Violin plots of cluster 7 markers, including known adipocyte markers and novel markers in Zhong’s 1–1.5 month-old dataset and Baryawno’s dataset. Red boxes are cluster 7 adipocyte in Zhong dataset and blue boxes are cluster 1 Lepr-MSC in Baryawno dataset. All those markers have the same expression patterns in adipocytes annotated by Zhong et al. and MSCs annotated by Baryawno et al. (B) An alternative annotation of cell clusters in the tSNE plot of Baryawno dataset. Our annotation results, indicated by red in parentheses below Baryawno’s annotation, are based on examining violin plots of all our cluster marker genes in Baryawno dataset.
 
 It is generally believed that during organ homeostasis, a small number of quiescent, self-renewing stem cells give rise to a large number of fast-proliferating, non-renewing progenitor cells, which then mature into various terminally differentiated cell types. This unidirectionality guarantees that different cell types in an organ have distinct identities and play specialized functions. Our proposed mesenchymal progenitors at different stages and their bi-lineage differentiation routes based on scRNA-seq analysis are consistent with the above concept. Specifically, at various ages, the EMPs cluster always has the least number of cells among all mesenchymal cell clusters and is always situated at one end of trajectory. Moreover, it shrinks in size during aging. Compared to other progenitors, they are less proliferative and they do not express lineage master regulators, such as Runx2, Sp7, Cebpa, or Pparg. Instead, they express constellation of group-defining genes, including Ly6a, Cd34, and Thy1, which have been shown to mark other adult stem cells, such as HSCs, keratinocyte stem cells, cancer stem cells, muscle stem cells etc (Sidney et al., 2014; Wilson et al., 2007; Shaikh et al., 2016; Nakamura et al., 2006). Along the differentiation routes of progenitors, the expression levels of lineage specific genes, such as Bglap2, Col1a1, Ibsp, Adipoq, and Apoe, progressively increase. The EMP cells in our dataset are also consistent with a previous study showing that mouse bone marrow Sca1+PDGFRα+CD45-Ter119- cells generate colonies at a high frequency and differentiate into hematopoietic niche cells, osteoblasts, and adipocytes after in vivo transplantation (Morikawa et al., 2009). Nevertheless, future lineage tracing experiments are required to demonstrate that cells in the EMP cluster give rise to cells in LMP and LCP clusters, and resultant terminally differentiated cells in vivo.
 
@@ -146,11 +240,238 @@ The main functions of currently known adipocytes are lipid storage, thermogenesi
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Col2-Cre</td>
+      <td>PMID:10686612</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Dmp1-Cre</td>
+      <td>PMID:22623172</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Adipoq-Cre</td>
+      <td>PMID:21356515</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Acta2-CreER</td>
+      <td>PMID:18571490</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Col1a1-GFP</td>
+      <td>PMID:11771662</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26 iDTR</td>
+      <td>Jackson Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26</td>
+      <td>Jackson Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse LepR</td>
+      <td>R and D system</td>
+      <td>Cat.#: AF497</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-mouse Laminin</td>
+      <td>Sigma</td>
+      <td>Cat.#: L9393</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse CD45</td>
+      <td>Biolegend</td>
+      <td>Cat.#: 103101</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse Endomucin</td>
+      <td>Santa cruz</td>
+      <td>Cat.#: sc 65495</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Osterix</td>
+      <td>Abcam</td>
+      <td>Cat.#: ab22552</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Perilipin</td>
+      <td>Cell signaling</td>
+      <td>Cat.#: 9349</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-mouse PDGFRβ</td>
+      <td>Biolegend</td>
+      <td>Cat.#: 136002</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-mouse connexin 43</td>
+      <td>Cell signaling</td>
+      <td>Cat.#: 3512</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC rat anti-mouse Endomucin</td>
+      <td>Santa cruz biotechology</td>
+      <td>Cat.#: sc-65495</td>
+      <td>Flow analysis (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-Gr-1 APC-Cy7,</td>
+      <td>BD</td>
+      <td>Cat.#: 557661</td>
+      <td>Flow analysis (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-Mac-1 APC</td>
+      <td>eBioscience</td>
+      <td>Cat.#: 17-0112-83</td>
+      <td>Flow analysis (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-B220 FITC</td>
+      <td>eBioscience</td>
+      <td>Cat.#: 11-0452-82</td>
+      <td>Flow analysis (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hamster anti-CD3 PE-Cy7</td>
+      <td>eBioscience</td>
+      <td>Cat.#: 25-0031-82</td>
+      <td>Flow analysis (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC rat anti-mouse CD31</td>
+      <td>Biolegend</td>
+      <td>Cat.#: 561814</td>
+      <td>Flow analysis (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Click-iT EdU Alexa Fluor 647 Imaging Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat.#: D3822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Calcein</td>
+      <td>Sigma</td>
+      <td>Cat.#: C0875</td>
+      <td>15 mg/kg forin vivo injection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphtheria toxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#: D0564-1MG</td>
+      <td>50 µg/kg forin vivo injection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ACK lysing buffer</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat.#: A1049201</td>
+      <td>500 ul/ 50 million cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger 3.02</td>
+      <td></td>
+      <td></td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat V2, V3</td>
+      <td>PMID:25867923 PMID:31178118</td>
+      <td></td>
+      <td>https://satijalab.org/seurat/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle V2</td>
+      <td>PMID:24658644</td>
+      <td></td>
+      <td>http://cole-trapnell-lab.github.io/monocle-release/docs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slingshot 1.5.1</td>
+      <td>PMID:29914354</td>
+      <td></td>
+      <td>https://bioconductor.org/packages/devel/bioc/vignettes/slingshot/inst/doc/vignette.html</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BODIPY dye</td>
+      <td>ThermoFisher scientific</td>
+      <td>D3822</td>
+      <td>IF (1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 All animal work performed in this report was approved by the Institutional Animal Care and Use Committee (IACUC) at the University of Pennsylvania under Protocol 804112. University Laboratory Animal Resources (ULAR) of the University of Pennsylvania is responsible for the procurement, care, and use of all university-owned animals as approved by IACUC. Animal facilities in the University of Pennsylvania meet federal, state, and local guidelines for laboratory animal care and are accredited by the Association for the Assessment and Accreditation of Laboratory Animal Care International.
 
-## Animal study design
+### Animal study design
 
 Col2-Cre Rosa26 <lsl-tdTomato> (Col2:Td), Dmp1-Cre Rosa26 <lsl-tdTomato> (Dmp1:Td), Adipoq-Cre Rosa26 <lsl-tdTomato> (Adipoq:Td), Adipoq-CreER Rosa26 <lsl-tdTomato> (AdipoqER:Td), and Acta2-CreER Rosa26 <lsl-tdTomato> (Acta2ER:Td) mice were generated by breeding Rosa26 <lsl-tdTomato> (Jackson Laboratory, Bar Harbor, ME, USA) mice with Col2-Cre (Ovchinnikov et al., 2000), Dmp1-Cre (Lu et al., 2007), Adipoq-Cre (Eguchi et al., 2011), Adipoq-CreER (Jeffery et al., 2014), and Acta2-CreER (Kalajzic et al., 2008) mice respectively. Adipoq-Cre Rosa26 <lsl-tdTomato>Col1a1-GFP (Adipoq:Td:Col1-GFP) were generated by breeding Adipoq:Td mice with Col1a1-GFP mice (Kalajzic et al., 2002). For lineage tracing experiments, mice received Tamoxifen injections (75 mg/kg/day) at indicated age and their bones were harvested later. Adipoq-Cre Rosa26 <lsl-tdTomato>DTR (Adipoq:Td:DTR) mice were generated by breeding Adipoq:Td mice with DTR mice (Jackson Laboratory). Mice received vehicle (1xPBS) or DT injections (50 µg/kg) every other day for 2 weeks. Bones were harvested at indicated times for histology and microCT analysis.
 
@@ -158,11 +479,11 @@ For in vivo transplantation of mesenchymal cells, freshly FACS-sorted Td+ cells 
 
 For fat transplantation, donor fat pads from WT siblings were cut into 100–150 mg pieces and subcutaneously implanted into 1 month old Adipoq:Td:DTR mice through small incisions in the skin with one piece per incision and six pieces per mouse as described previously (Zou et al., 2019; Gavrilova et al., 2000). Two weeks later, Adipoq:Td:DTR mice received vehicle or DT injections (50 µg/kg) every other day. At 1 week after starting DT injections, mice were starved for 6 hr followed by blood glucose measurement using a drop of tip tail blood. At 2 weeks after starting DT injections, mice were euthanized to harvest bones.
 
-## Endosteal bone marrow Td+ cell isolation and cell sorting
+### Endosteal bone marrow Td+ cell isolation and cell sorting
 
 Endosteal bone marrow cells were harvested as described previously (Zhu et al., 2015). Briefly, the outer surfaces of long bones were scraped and digested to remove the periosteum. After cutting off the epiphyses and flushing out the central bone marrow, metaphyseal bone fragments were longitudinally cut into two halves and digested by proteases to collect endosteal bone marrow cells. Freshly isolated endosteal bone marrow cells were resuspended into FACS buffer containing 25 mM HEPES (Thermofisher scientific) and 2% FBS in PBS and sorted for top 1% Td+ cells if a Td peak was not obvious or Td+ cells if a Td peak was obvious using Influx B (BD Biosciences, San Jose, CA) or Aria B (BD Biosciences, San Jose, CA).
 
-## Single-cell RNA sequencing of endosteal bone marrow cells
+### Single-cell RNA sequencing of endosteal bone marrow cells
 
 We constructed 4 batches of single cell libraries for sequencing: endosteal Td+bone marrow cells from 1-month-old (n = 2), 1.5-month-old (n = 3), 3-month-old (n = 3) and 16-month-old (n = 3) male Col2:Td mice. 20,000 cells were loaded in aim of acquiring one single library of 10,000 cell for each age group by Chromium controller (V3 chemistry version, 10X Genomics Inc, San Francisco, USA), barcoded and purified as described by the manufacturer, and sequenced using a 2 × 150 pair-end configuration on an Illumina HiSeq platform at a sequencing depth of ~400 million reads. Cell ranger (Version 3.0.2, https://support.10xgenomics.com/single-cell-geneexpression/software/pipelines/latest/what-is-cell-ranger) was used to demultiplex reads, followed by extraction of cell barcode and unique molecular identifiers (UMIs). The cDNA insert was aligned to a modified reference mouse genome (mm10). Doublets or cells with poor quality (genes > 6000, genes < 200, or >5% genes mapping to mitochondrial genome) were excluded. Expression was natural log transformed and normalized for scaling the sequencing depth to a total of 1 × 104 molecules per cell, followed by regressing out the number of UMIs and percent mitochondrial genes using Seurat V2 (Satija et al., 2015).
 
@@ -178,13 +499,13 @@ To computationally delineate the developmental progression of bone marrow mesenc
 
 We also performed the trajectory analysis using Slingshot (Street et al., 2018). Briefly, UMAP was used as dimensional reduction after the PCA were calculated for individual or integrated datasets. Then Seurat objects were transformed into SingleCellExperiment objects. Slingshot trajectory analysis was conducted using the Seurat clustering information and with dimensionality reduction produced by UMAP.
 
-## Histology
+### Histology
 
 To obtain whole mount sections for immunofluorescent imaging, freshly dissected bones (femurs, tibiae, L4/L5 vertebrae) were fixed in 4% PFA for 1 day, decalcified in 10% EDTA for 4–5 days, and then immersed into 20% sucrose and 2% polyvinylpyrrolidone (PVP) at 4°C overnight. Then sample was embedded into 8% gelatin in 20% sucrose and 2% PVP embedding medium. Samples were sectioned at 50 µm in thickness. Sections were incubated with goat anti-LepR (R and D system, AF497), rabbit anti-Laminin (Sigma, L9393), rat anti-CD45 (Biolegend, 103101), rat anti-Endomucin (Santa cruz, sc-65495), rabbit anti-Osterix (Abcam, ab22552), rabbit anti-Perilipin (Cell signaling, 9349), rat anti-mouse PDGFRβ (Biolegend, 136002), rabbit anti-mouse connexin 43 (Cell signaling, 3512) at 4°C overnight followed by Alexa Fluor 488-conjugated donkey anti-goat (Abcam, ab150129), Alexa Fluor 647 anti-rat (Abcam, ab150155) or anti-rabbit (Abcam, ab150157) secondary antibodies incubation 1 hr at RT. For lipid staining, BODIPY dye (ThermoFisher scientific, D3822) was added together with secondary antibody and incubate for 1 hr at RT. For EdU staining, mice received 1.6 mg/kg EdU 1 day and 3 hr before sacrifice and the staining was carried out according to the manufacturer’s instructions (ThermoFisher scientific, Click-iT EdU Alexa Fluor 647 Imaging Kit, D3822). To characterize bone marrow vessels after DT injections, all vessels in a 0.3 mm2 area in the diaphyseal bone marrow were selected to measure their diameter of semi-minor axis (vessel diameter), area (vessel area), and number (vessel density).
 
 To reconstruct 3D structure of bone marrow, fluorescence images were captured by a Zeiss LSM 710 scanning confocal microscope interfaced with the Zen 2012 software (Carl Zeiss Microimaging LLC, Thornwood, NY). Confocal image stacks were collected to a depth of ~50 µm and a step size of 1 µm at 63x magnification. Laser power and detector sensitivity were adjusted for z-correction to compensate for signal dissipation at greater imaging depths. Detector gain and offset were adjusted according to the most intense regions to ensure minimal saturation of the signal over the entire imaging area. Imaris 9.2 software (Oxford instruments, Switzerland) was used for processing z-stack and generating movies. The number of cell processes per cell was manually quantified.
 
-## Cell culture
+### Cell culture
 
 For CFU-F assay, unsorted endosteal bone marrow cells were plated at 1 × 106 cells/T25 flask. Sorted endosteal bone marrow cells were plated at 1 × 104, 1 × 104, and 9.8 × 105 cells/T25 flask for top 1%, 1–2%, and >2% group, respectively, based on Td intensity. Cells were cultured in growth medium (α-MEM supplemented with 15% FBS, 0.1% β-mercaptoethanol, 20 mM glutamine, 100 IU/ml penicillin, and 100 µg/ml streptomycin) for 7 days before counting CFU-F number.
 
@@ -192,22 +513,22 @@ Mesenchymal progenitors were obtained by culturing endosteal bone marrow cells a
 
 For tube formation assay, we used Endothelial Progenitor Outgrowth Cells (EPOC, Biochain, Z7030001) cultured in growth medium (mouse EPOC basal medium with 10% FBS, 100 IU/ml penicillin, and 100 µg/ml streptomycin). 3.5 × 105 EPOC cells were mixed with 1.4 × 105 freshly sorted Td+ cells from endosteal bone marrow of 1-month-old Adipoq:Td mice and seeded into matrigel-coated slide chamber. After 8 hr, cells were observed under fluorescence microscopy.
 
-## Flow cytometry
+### Flow cytometry
 
 Freshly isolated endosteal bone marrow cells were centrifuged to pellet cells. ACK lysing buffer (ThermoFisher Scientific, A1049201) was added to lyse red blood cells and then stained with Endomucin (FITC rat anti-mouse Endomucin, Santa cruz biotechology sc-65495) and CD31 (APC rat anti-mouse CD31, Biolegend, 561814) antibodies for 45 min on ice. After washed with flow buffer (2% FBS in PBS) twice, samples were run on LSR A and data were analyzed by FlowJo X. qRT-PCR analysis.
 
 Sorted cells or cultured cells were collected in TRIzol Reagent (Sigma, St. Louis, MO, USA). A High-Capacity cDNAReverse Transcription Kit (Applied BioSystems, Inc, Foster City, CA, USA) was used to reverse transcribe mRNA into cDNA. Following this, quantitative realtime PCR (qRT-PCR) was performed using a Power SYBR Green PCR Master Mix Kit (Applied BioSystems, Inc). The primer sequences for the genes used in this study are listed in Supplementary file 1.
 
-## Micro-computed tomography (microCT) analysis
+### Micro-computed tomography (microCT) analysis
 
 MicroCT analysis (microCT 35, Scanco Medical AG, Brüttisellen, Switzerland) was performed at 6 µm isotropic voxel size as described previously (Chandra et al., 2014). At the femoral midshaft, a total of 100 slices located 4.8–5.4 mm away from the distal growth plate were acquired for trabecular bone and cortical bone analyses by visually drawing the volume of interest (VOI) separately. In the L4/L5 vertebrae, the region (total about 300 slices) 50 slices away from the top and bottom end plates was acquired for trabecular bone analysis. The trabecular bone tissue within the VOI was segmented from soft tissue using a threshold of 487.0 mgHA/cm3 and a Gaussian noise filter (sigma = 1.2, support = 2.0). The cortical bone tissue was using a threshold of 661.6 mgHA/cm3 and a Gaussian noise filter (sigma = 1.2, support = 2.0). Three-dimensional standard microstructural analysis was performed to determine the geometric trabecular bone volume/total volume (BV/TV) fraction, connectivity density (Conn-Dens), trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), trabecular number (Tb.N), and structure model index (SMI). For analysis of cortical bone, periosteal perimeter (Ps.Pm), endosteal perimeter (Ec.Pm), porosity, cortical bone area (Ct.Ar), cortical thickness (Ct.Th), polar moment of inertia (pMOI), and tissue mineral density (TMD) were recorded.
 
-## Hematopoietic phenotyping of bone marrow cells
+### Hematopoietic phenotyping of bone marrow cells
 
 Peripheral blood of mice was collected retro-orbitally. To analyze the peripheral blood of mice, red blood cells were first lysed and then stained for myeloid (rat anti-Gr-1 APC-Cy7, BD, 557661, rat anti-Mac-1 APC, eBioscience, 17-0112-83) or lymphoid lineages (rat anti-B220 FITC, eBioscience, 11-0452-82, hamster anti-CD3 PE-Cy7, eBioscience, 25-0031-82).
 
 Bone marrow was flushed from femurs and cellularity was quantified with 3% acetic acid in methylene blue (STEMCELL). The lineage cell compartment of the bone marrow was analyzed by staining for myeloid and lymphoid lineages as in the peripheral blood. The HSPC compartment was analyzed by staining for Lineage (biotin-Ter-119, -Mac-1, -Gr-1, -CD4, -CD8α, -CD5, -CD19 and -B220 (eBioscience, 13-5921-85, 13-0051-85, 13-5931-86, 13-0112-86, 13-0452-86, 13-0041-86, 13-0081-86, 13-0193-86) followed by staining with streptavidin-PE-TexasRed (Invitrogen, SA1017), rat anti-cKit APC-Cy7 (eBioscience, 47-1171-82), rat anti-Sca1 PerCP-Cy5.5 (eBioscience, 45-5981-82), hamster anti-CD48 APC (eBioscience, 17-0481-82) and rat anti-CD150 PE-Cy7 (Biolegend, 115914). All flow cytometry analysis was performed on a BD LSR Fortessa flow cytometer and was analyzed on FlowJo v10.5.3 for MAC.
 
-## Statistics
+### Statistics
 
 Data are expressed as means ± standard error (SEM) and analyzed by t-tests or two-way ANOVA with a bonferroni’s post-test for multiple comparisons using Prism software (GraphPad Software, San Diego, CA). For cell culture experiments, observations were repeated independently at least three times with a similar conclusion, and only data from a representative experiment are presented. Values of p<0.05 were considered significant.

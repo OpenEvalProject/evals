@@ -16,9 +16,9 @@
 
 ### Affiliations
 
-1. https://ror.org/006e5kg04 Brussels Health Campus/Faculty of Medicine and Pharmacy, Research Group Genetics Reproduction and Development, Vrije Universiteit Brussel Brussels Belgium
-2. https://ror.org/038f7y939 Brussels Health Campus, Brussels IVF, Universitair Ziekenhuis Brussel (UZ Brussel) Brussels Belgium
-3. https://ror.org/038f7y939 Brussels Health Campus, Medical Genetics, Universitair Ziekenhuis Brussel (UZ Brussel) Brussels Belgium
+1. Brussels Health Campus/Faculty of Medicine and Pharmacy, Research Group Genetics Reproduction and Development, Vrije Universiteit Brussel Brussels Belgium ([ROR:006e5kg04](https://ror.org/006e5kg04))
+2. Brussels Health Campus, Brussels IVF, Universitair Ziekenhuis Brussel (UZ Brussel) Brussels Belgium ([ROR:038f7y939](https://ror.org/038f7y939))
+3. Brussels Health Campus, Medical Genetics, Universitair Ziekenhuis Brussel (UZ Brussel) Brussels Belgium ([ROR:038f7y939](https://ror.org/038f7y939))
 
 † Corresponding author
 
@@ -46,17 +46,25 @@ In this study, we investigated the cellular responses to complex aneuploidy duri
 
 ## Results
 
-## Human embryos with complex aneuploidy show gene dosage defects and transcriptomic signatures of p53 activation and apoptosis
+### Human embryos with complex aneuploidy show gene dosage defects and transcriptomic signatures of p53 activation and apoptosis
 
 We first tested for the presence of a common transcriptomic response to different complex aneuploidies. For this, we studied the transcriptome of a TE biopsy of fifty human blastocysts (5 or 6dpf) previously diagnosed by Preimplantation Genetic Testing (PGT) as either euploid or as containing an aneuploidy of at least two whole chromosomes in all cases except for one embryo (further referred to as aneuploid, detailed karyotypes can be found in the Supplementary file 1). The aneuploidy was presumed to have occurred during meiosis or during the first cleavage from the zygote to the two-cell stage, resulting in all or most of the cells of the TE biopsy containing the same genetic imbalances. We also included a TE sample of eleven human blastocysts that were treated with 0.5 µM reversine from 3dpf to 4dpf, to induce complex mosaic aneuploidy (referred to as reversine-treated embryos). Of these, 14 euploids, 20 aneuploids, and 11 reversine-treated embryos yielded good quality RNA-sequencing results.
 
 Principal component analysis using all expressed genes revealed no clustering of the euploid, aneuploid, or reversine-treated embryos into distinct groups (Figure 1A, Figure 1—figure supplement 1A). We used InferCNV (https://github.com/broadinstitute/inferCNV/wiki) to bioinformatically infer the chromosomal copy numbers based on the higher or lower expression of the genes located on chromosomes with gains or losses (Figure 1B, Figure 1—figure supplement 1B–C). We compared the inferred karyotypes to those obtained during PGT and found a match for 45/48 of the full chromosome aneuploidies, while euploidy was correctly predicted in all cases (Figure 1—figure supplement 1B). These results show that aneuploidy in human blastocysts results in abnormal gene dosage effects. Of note, the karyotypes of the reversine-treated embryos could not be determined since this drug induces different aneuploidies in each cell, leading to mosaic TE biopsies. Also, the karyotypes of the 3dpf embryos were not determined by PGT before the reversine treatment. InferCNV detected only a trisomy 12 in one of the reversine-treated embryos, likely of meiotic or first-cleavage origin (Figure 1—figure supplement 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88916/elife-88916-fig1-v1.jpg)
+
+**Figure 1.:** (a) Principal component analysis after transcriptome analysis of aneuploid versus euploid embryos. T=Trisomy, M=Monosomy. (b) Comparison between the diagnosis of aneuploid embryos obtained after Preimplantation Genetic Testing (PGT) (list on the left) and the results obtained after using InferCNV after RNA-sequencing (plot on the right). Red and blue indicate gain or loss of the chromosome, respectively. (c) Volcano plot after differential gene expression analysis with a cutoff value of |log2 fold change|>1 and -log10(FDR)<0.05 for aneuploid versus euploid embryos showing 21 upregulated and two downregulated genes. (d) Barplot of enriched Hallmark pathways after gene set enrichment analysis of aneuploid versus euploid embryos using a cut-off value of 25% FDR. (e) Barplot of TOP20 enriched C2 library pathways after gene set enrichment analysis of aneuploid versus euploid embryos using a cut-off value of 25% FDR. (f) Enrichment plots of p53-pathway, mitotic spindle, oxidative phosphorylation, MYC targets V1 and ribosome, showing up- or downregulation of genes that are part of the corresponding pathway. Source of all embryos: Experiment 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88916/elife-88916-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Principal component analysis of reversine versus euploid embryos. (b) InferCNV analysis of individual euploid samples compared to the reference set. (c) InferCNV analysis of individual reversine samples compared to the reference set. (d) Volcano plot after differential gene expression analysis with a cutoff value of |log2 fold change|>1 and -log10(FDR)<0.05 for reversine versus euploid embryos showing 34 upregulated and 22 downregulated genes. (e) Barplot of enriched Hallmark pathways after gene set enrichment analysis of reversine versus euploid embryos using a cut-off value of 25% FDR. (f) Barplot of TOP20 enriched C2 library pathways after gene set enrichment analysis of reversine versus euploid embryos using a cut-off value of 25% FDR. Source of all embryos: Experiment 1.
+
 Despite the abnormal gene dosage, but in line with the lack of clear clustering in the PCA, the differential gene expression analysis yielded 21 significantly upregulated and two downregulated genes (Figure 1C, Supplementary file 2). These findings are similar to those of other studies on the transcriptome of aneuploid human embryonic cells, which also found a few significantly deregulated genes (Gallardo et al., 2023; Groff et al., 2019; Martin et al., 2023; Maxwell et al., 2022). We next focused on pathway analysis based on a ranked gene list of the whole transcriptome. We found that cellular stress gene sets were positively enriched in the aneuploid samples, including the p53-pathway and apoptosis (Figure 1D–F). Gene sets related to metabolism, translation, mitochondrial function, and proliferation, such as translation and ribosome, oxidative phosphorylation and MYC targets, were negatively enriched (Figure 1D–F).
 
 When comparing reversine-treated versus euploid embryos we found 34 significantly upregulated and 22 significantly downregulated genes (Figure 1—figure supplement 1D–F, Supplementary file 3). The expression profile differed from that identified in the endogenously aneuploid embryos. Here, we found mitotic spindle, WNT-beta catenin signaling, KRAS signaling, and lysosome gene sets to be positively enriched while oxidative phosphorylation, MYC targets, translation, and ribosome were negatively enriched. We found no evidence of p53 activation or apoptosis. This suggests that naturally acquired aneuploidies of meiotic origin may elicit a different transcriptomic response than reversine-induced mitotic aneuploidies, with a differential induction of the p53 signaling pathway and apoptosis, and inhibition of proliferation.
 
-## High gene-dosage imbalances result in high p53 activation and apoptosis while low gene dosage imbalances induce pro-survival pathways
+### High gene-dosage imbalances result in high p53 activation and apoptosis while low gene dosage imbalances induce pro-survival pathways
 
 To test whether there is a relationship between the type of cellular stress signatures and the size of the chromosomal imbalances, as previously described in cancer cells (Dürrbaum and Storchová, 2016), we categorized the aneuploid embryos into a low- and a high- imbalanced gene dosage group. This separation was based on the total number of coding loci that were affected by the aneuploidies (Supplementary file 4). The low-dosage group contained the embryos under the 50th percentile when ranking the embryos from the lowest to the highest number of unbalanced loci. The high-dosage group contained the embryos with the 50th percentile or higher. Principal component analysis showed that high-dosage embryos clustered separately from the euploid embryos (Figure 2A), with 65 significantly upregulated and 153 significantly downregulated genes (Figure 2B, Supplementary file 5). High-dosage embryos showed a transcriptomic profile consistent with activation of the p53-pathway and apoptosis, while the unfolded protein response, DNA-repair, MYC targets, oxidative phosphorylation, translation, and ribosome were inhibited (Figure 2C–E).
 
@@ -66,9 +74,17 @@ To test whether there is a relationship between the type of cellular stress sign
 
 In contrast, low-dosage embryos lacked separation from the euploid embryos in the PCA (Figure 2F) and only had one differentially expressed gene (Figure 2G). While we still found aneuploidy-related stress responses such as p53-pathway and apoptosis to be activated, we found also pro-survival gene sets such as MYC targets (Dang et al., 2006; Wang et al., 2021), MTORC1 signaling (Hung et al., 2012), unfolded protein response (Hetz et al., 2020; Zanetti et al., 2016) and hypoxia (Simões-Sousa et al., 2018) to be enriched (Figure 2H–J). Low-dosage embryos showed no profiles of ribosome or translation impairment. Last, the plotting of the expression levels of genes in the p53 and apoptosis pathways show their progressive stronger induction or suppression from euploid to low- and high-dosage embryos (Figure 2K). This illustrates the association between the severity of the protein pool imbalance and the induction of the cellular stress response.
 
-## Aneuploidy triggers proteotoxic stress, DNA-damage independent p53-activation, autophagy, and apoptosis
+### Aneuploidy triggers proteotoxic stress, DNA-damage independent p53-activation, autophagy, and apoptosis
 
 To further investigate the cellular stress responses identified by the transcriptomic analysis, we carried out immunostaining on the same embryos that underwent TE biopsy for transcriptome analysis. The results show that aneuploid and reversine-treated embryos have increased signal intensity of active CASP3/7 and CASP8 (Figure 3A–D). Both aneuploid and reversine-treated embryos also have lower cell numbers than euploid embryos, likely due to the apoptosis-mediated cell loss (Figure 3E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88916/elife-88916-fig3-v1.jpg)
+
+**Figure 3.:** (a) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white) and CASP3/7 (green). T=Trisomy, M=Monosomy. Source: Experiment 1. (b) Orthogonal projections after immunostaining of euploid, aneuploid, and reversine-treated embryos for DNA (white) and CASP8 (green). T=Trisomy. Source: Experiment 1. (c) CASP3/7 mean intensity per cell. Euploid n=13, Aneuploid n=8 embryos. Unpaired t-test, *p=0.0177. Source: Experiment 1. (d) CASP8 mean intensity per cell. Euploid n=6, Aneuploid n=9, Reversine-treated n=8 embryos. One-way ANOVA, *p=0.04, **p=0.0098, ns=non-significant. Source: Experiment 1. (e) Number of nuclei per embryo. Euploid n=26, Aneuploid n=29, Reversine-treated n=8 embryos. One-way ANOVA, ****p<0.0001, **p=0.0033, ns = non-significant. Source: Experiment 1 and 3. (f) Orthogonal projections after immunostaining of euploid, aneuploid, and reversine-treated embryos for DNA (white), LC3B (turquoise), and HSP70 (magenta). T=Trisomy. Source: Experiment 1. (g) LC3B puncta per cell. Euploid n=19, Aneuploid n=22 embryos, Reversine-treated n=8 embryos. One-way ANOVA, **p=0.0069, ***p=0.0003, ns=non-significant. Source: Experiment 1. (h) HSP70 mean intensity per cell. Euploid n=13, Aneuploid n=8, Reversine-treated n=8 embryos. One-way ANOVA, *p=0.0121, **p=0.0096, ns = non-significant. Source: Experiment 1. (i) Orthogonal projections after immunostaining of euploid, aneuploid for DNA (white), and p62 (turquoise). White square shows a zoom of a representative area. T=Trisomy, M=Monosomy. Source: Experiment 1. (j) p62 puncta per cell. Euploid n=6, Aneuploid n=9 embryos. Unpaired t-test, *p=0.0284. Source: Experiment 1. (k) Optical sections of reversine treated embryos for DNA (white), CASP8 (green), HSP70 (red) showing cells with presence (yellow arrow) or absence (yellow arrowhead) of the proteins to investigate co-localization. Source: Experiment 1. (l) Percentage of cells of reversine embryos positive for either CASP8/HSP70, CASP8, or HSP70. One-way ANOVA, CASP8/HSP70 vs CASP8 ***p=0.0003, CASP8/HSP70 vs HSP70 ***p=0.0005, ns = non-significant. Source: Experiment 1. (m) Orthogonal projections after immunostaining of euploid, aneuploid for DNA (white), and Serine (S) 15 p53 (turquoise). Source: Experiment 4. (n) Percentage of Serine 15 p53 positive cells per embryo. Euploid n=3, Aneuploid n=5. Unpaired t-test with Welch’s correction, *p=0.0356. T=Trisomy. Source: Experiment 4. (o) Orthogonal projections of immunostained untreated (n=6) and Bleomycin treated (n=6) embryos for DNA (white) and gH2AX (magenta) showing few foci in the untreated and pan-nuclear expression of gH2AX. Source: Experiment: 2. (p) Orthogonal projections of immunostained euploid (n=7) and aneuploid (n=11) embryos for DNA (white), NANOG (green) and gH2AX (magenta). T=Trisomy. Source: Experiment 3. (q) Percentage of cells with gH2AX foci or pan nuclear expression of euploid (n=7) and aneuploid (n=11) embryos in NANOG-negative, NANOG positive cells and whole embryos. Source: Experiment 3. (r) Percentage of cells with gH2AX foci or pan nuclear expression of euploid (n=7), low-dosage (n=5), and high-dosage (n=6) aneuploid embryos in NANOG-negative, NANOG positive cells and whole embryos. Source: Experiment 3. (s) Orthogonal projections of immunostained euploid (n=6) and aneuploid (n=11) embryos for DNA (white), DRAM1 (turquoise), and NANOG (green). T=Trisomy. Source: Experiment 3. (t) DRAM1 mean cytoplasmatic intensity in TE and ICM of euploid and aneuploid cells. Euploid TE (n=312 cells from 6 embryos). Aneuploid TE (n=434 cells from 11 embryos). Euploid ICM (n=43 cells from five embryos). Aneuploid ICM (n=70 cells from 10 embryos). Each dot represents the mean of all cells per embryo. Unpaired t-test, *p=0.0267, ns = non-significant. Source: Experiment 3. Embryo sources are indicated in each section. Brightfield pictures were obtained during confocal imaging. All scale bars are 20 µm. Box and whisker plots show median, and whiskers show minimum to maximum values. Bar plots and scatter plots show mean ± s.d.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88916/elife-88916-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white), S15p53 (turquoise), and OCT4 (magenta). (b) Percentages of nuclei positive for S15p53 per embryo in euploid (n=3) and aneuploid (n=4) embryos in the ICM. (c) Percentages of nuclei positive for S15p53 per embryo in euploid (n=3) and aneuploid (n=5) embryos in the TE. Brightfield pictures were obtained during confocal imaging. All scale bars are 20 µm. Box and plots show median and minimum to maximum values. Bar plots show mean ± s.d. For all plots each dot represents a single embryo. Source of all embryos: Experiment 4.
 
 We next sought to corroborate the transcriptomic signatures of proteotoxic stress and autophagy. The number of puncta per cell of LC3B, and p62, as well as the intensity of HSP70 staining, as markers of autophagy and chronic protein misfolding, were significantly increased in both aneuploid and reversine-treated embryos (Figure 3F–J). We also tested for the colocalization of CASP8 and HSP70 at the individual cell level. We found that reversine-treated embryonic cells mainly co-express CASP8/HSP70, while the minority is single positive for either CASP8 or HSP70 (Figure 3K–L). These results show that although the transcriptomic profile of naturally occurring aneuploidies and reversine-treated embryos is moderately different (Figure 1C–F, Figure 1—figure supplement 1D–F), the downstream protein response is similar.
 
@@ -78,7 +94,7 @@ We then stained an additional batch of embryos (Supplementary file 6) for the do
 
 Lastly, the transcriptome analysis showed significant upregulation in aneuploid and high-dosage aneuploid embryos of the gene DRAM1 (DNA Damage Regulated Autophagy Modulator-1, Figure 2B). DRAM1 is in the lysosomal membrane, and it increases autophagic flux and apoptosis after stress-induced p53 activation in cancer cells (Crighton et al., 2006; Guan et al., 2015). We stained euploid and aneuploid embryos (Supplementary file 6) for DRAM1 and NANOG and found that the expression of DRAM1 is increased specifically in the cytoplasm of aneuploid TE cells but not in the ICM (NANOG-positive cells, Figure 3S, T).
 
-## Aneuploidy increases apoptosis in the trophectoderm and impairs lineage segregation events
+### Aneuploidy increases apoptosis in the trophectoderm and impairs lineage segregation events
 
 We next investigated whether the stress responses to aneuploidy are cell-type specific, as shown in the mouse (Bolton et al., 2016; Singla et al., 2020) and human 2D gastruloids (Yang et al., 2021). Concretely, we aimed to study the consequences of aneuploidy during the first lineage segregation event to TE and ICM, and the second lineage segregation event to EPI and PrE.
 
@@ -86,7 +102,7 @@ We first immunostained euploid and aneuploid 5-6dpf human embryos for the plurip
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88916/elife-88916-fig4-v1.jpg)
 
-**Figure 4.:** (a) Orthogonal projections after immunostaining of euploid (n=7) and aneuploid embryos (n=10) for DNA (white) and NANOG (green). T=Trisomy. Source: Experiment 3. (b) NANOG nuclear enrichment in cells of the trophectoderm (TE) and inner cell mass (ICM) of euploid and aneuploid embryos. Each dot represents the mean of all cells per embryo. Euploid TE (n=718 cells from seven embryos). Aneuploid TE (n=708 cells from 10 embryos). Euploid ICM (n=77 cells from seven embryos). Aneuploid ICM (n=77 cells from 10 embryos). For euploid TE versus aneuploid TE: Unpaired t-test, **p=0.0011. For euploid versus aneuploid ICM: Unpaired t-test with Welch’s correction, *p=0.0474. (c) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white) and OCT4 (magenta). The first aneuploid panel (Trisomy 14 and 16) shows a similar number of ICM cells compared to the euploid embryo. The second aneuploid panel (Trisomy 14 and 22) shows an embryo without an ICM. T=Trisomy. Source: Experiment 4. (d,e,f) Differences in number of nuclei per embryo between euploid and aneuploid embryos in the (d) OCT4-negative cells (trophectoderm) ***p=0.0006, (e) OCT4-positive cells (ICM/epiblast, EPI), **p=0.0055 and (f) whole embryo ***p=0.0003. Euploid n=16, Aneuploid n=18. Unpaired t-test. Source: Experiment 4. (g) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white), CASP3/7 (green), and OCT4 (magenta). c. T=Trisomy, M=Monosomy. Yellow arrows indicate presence of the signal and yellow arrow heads indicate absence of signal. (h) Percentage (%) of CASP3/7 positive (+) cells in the trophectoderm lineage (OCT4-negative cells). Euploid n=9, Aneuploid n=14. Unpaired t-test with Welch’s correction, *p=0.0453. Source: Experiment 4. (i) CASP3/7 mean intensity per cell of whole embryos. Euploid n=9, Aneuploid n=14. Unpaired t-test with Welch’s correction, *p=0.0332. Source: Experiment 4. (j) Left panel: Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white) and CASP3/7 (green) showing micronuclei. Yellow box indicates zoomed-in region of interest (ROI). Yellow arrows indicate presence of micronuclei and overlap between DNA and CASP3/7. Source: Experiment 4. (k) Number of micronuclei per cell in euploid and aneuploid whole embryos. Euploid n=9, Aneuploid n=14. Unpaired t-test with Welch’s correction, *p=0.0115. Source: Experiment 4. (l) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white), LC3B (turquoise), and OCT4 (magenta). Yellow circle indicates the ICM. The first aneuploid panel (Trisomy 1 and 20 and monosomy 18) shows OCT4-positive cells (ICM/EPI) with low levels of autophagy. The second aneuploid panel (Monosomy 14) shows an embryo with high levels of autophagy in the ICM. Source: Experiment 4. (m, n, o) Differences in LC3B puncta per cell between euploid (n=10) and aneuploid (n=9) embryos in the (m) whole embryo, *p=0.0220, (n) OCT4-negative cells (trophectoderm),*P=0.0172 and (o) OCT4-positive cells (ICM/EPI) ns = non-significant. Mann-Whitney test. Source: Experiment 4. (p) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white), OCT4 (magenta), and GATA4 (green). The first aneuploid panel (trisomy 13 and 15) shows an embryo with presence of GATA4 positive cell (PrE). The second aneuploid panel (Trisomy 7 and monosomies 5, 12, and 21) shows an embryo that did not contain GATA4 positive cells. Source: Experiment 4. (q) Differences in the number of cells per embryo that were OCT4 positive and either GATA4 negative (magenta) or positive (green) or OCT4 negative and GATA4 positive (gray) between euploid (n=15) and aneuploid (n=18) embryos. In case GATA4-positive cells (PrE) were present we considered the GATA4-negative cells to be epiblast (EPI). All euploid embryos contained GATA4-positive cells, 7/18 aneuploid embryos had an ICM completely lacking GATA4-positive cells (Fisher-exact test, p=0.009). (r) Differences in the PrE/EPI ratio between euploid and aneuploid embryos that had an ICM containing GATA4-positive cells. Euploid n=15, Aneuploid n=10. Unpaired t-test, **p=0.0068. Source: Experiment 4. (s) Violin plots with box plots of OCT4-positive-cells (ICM/EPI) per embryo (left, ns), OCT4-negative cells (trophectoderm) per embryo (center, ***p<0.001), and GATA4-positive-cells (PrE) per embryo (right, ***p<0.001, Jonkheere-Terpstra test) depending on gene dosage. Euploid (light blue), Low-dosage (middle blue), and High-dosage (darkest blue). Source: Experiment 4. Brightfield pictures were obtained during confocal imaging. All scale bars are 20 µm. Box and whisker plots show median and minimum to maximum values. Bar plots show mean ± s.d. Besides (b) all dots represent one embryo.Figure 4—source data 1.
+**Figure 4.:** (a) Orthogonal projections after immunostaining of euploid (n=7) and aneuploid embryos (n=10) for DNA (white) and NANOG (green). T=Trisomy. Source: Experiment 3. (b) NANOG nuclear enrichment in cells of the trophectoderm (TE) and inner cell mass (ICM) of euploid and aneuploid embryos. Each dot represents the mean of all cells per embryo. Euploid TE (n=718 cells from seven embryos). Aneuploid TE (n=708 cells from 10 embryos). Euploid ICM (n=77 cells from seven embryos). Aneuploid ICM (n=77 cells from 10 embryos). For euploid TE versus aneuploid TE: Unpaired t-test, **p=0.0011. For euploid versus aneuploid ICM: Unpaired t-test with Welch’s correction, *p=0.0474. (c) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white) and OCT4 (magenta). The first aneuploid panel (Trisomy 14 and 16) shows a similar number of ICM cells compared to the euploid embryo. The second aneuploid panel (Trisomy 14 and 22) shows an embryo without an ICM. T=Trisomy. Source: Experiment 4. (d,e,f) Differences in number of nuclei per embryo between euploid and aneuploid embryos in the (d) OCT4-negative cells (trophectoderm) ***p=0.0006, (e) OCT4-positive cells (ICM/epiblast, EPI), **p=0.0055 and (f) whole embryo ***p=0.0003. Euploid n=16, Aneuploid n=18. Unpaired t-test. Source: Experiment 4. (g) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white), CASP3/7 (green), and OCT4 (magenta). c. T=Trisomy, M=Monosomy. Yellow arrows indicate presence of the signal and yellow arrow heads indicate absence of signal. (h) Percentage (%) of CASP3/7 positive (+) cells in the trophectoderm lineage (OCT4-negative cells). Euploid n=9, Aneuploid n=14. Unpaired t-test with Welch’s correction, *p=0.0453. Source: Experiment 4. (i) CASP3/7 mean intensity per cell of whole embryos. Euploid n=9, Aneuploid n=14. Unpaired t-test with Welch’s correction, *p=0.0332. Source: Experiment 4. (j) Left panel: Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white) and CASP3/7 (green) showing micronuclei. Yellow box indicates zoomed-in region of interest (ROI). Yellow arrows indicate presence of micronuclei and overlap between DNA and CASP3/7. Source: Experiment 4. (k) Number of micronuclei per cell in euploid and aneuploid whole embryos. Euploid n=9, Aneuploid n=14. Unpaired t-test with Welch’s correction, *p=0.0115. Source: Experiment 4. (l) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white), LC3B (turquoise), and OCT4 (magenta). Yellow circle indicates the ICM. The first aneuploid panel (Trisomy 1 and 20 and monosomy 18) shows OCT4-positive cells (ICM/EPI) with low levels of autophagy. The second aneuploid panel (Monosomy 14) shows an embryo with high levels of autophagy in the ICM. Source: Experiment 4. (m, n, o) Differences in LC3B puncta per cell between euploid (n=10) and aneuploid (n=9) embryos in the (m) whole embryo, *p=0.0220, (n) OCT4-negative cells (trophectoderm),*P=0.0172 and (o) OCT4-positive cells (ICM/EPI) ns = non-significant. Mann-Whitney test. Source: Experiment 4. (p) Orthogonal projections after immunostaining of euploid and aneuploid embryos for DNA (white), OCT4 (magenta), and GATA4 (green). The first aneuploid panel (trisomy 13 and 15) shows an embryo with presence of GATA4 positive cell (PrE). The second aneuploid panel (Trisomy 7 and monosomies 5, 12, and 21) shows an embryo that did not contain GATA4 positive cells. Source: Experiment 4. (q) Differences in the number of cells per embryo that were OCT4 positive and either GATA4 negative (magenta) or positive (green) or OCT4 negative and GATA4 positive (gray) between euploid (n=15) and aneuploid (n=18) embryos. In case GATA4-positive cells (PrE) were present we considered the GATA4-negative cells to be epiblast (EPI). All euploid embryos contained GATA4-positive cells, 7/18 aneuploid embryos had an ICM completely lacking GATA4-positive cells (Fisher-exact test, p=0.009). (r) Differences in the PrE/EPI ratio between euploid and aneuploid embryos that had an ICM containing GATA4-positive cells. Euploid n=15, Aneuploid n=10. Unpaired t-test, **p=0.0068. Source: Experiment 4. (s) Violin plots with box plots of OCT4-positive-cells (ICM/EPI) per embryo (left, ns), OCT4-negative cells (trophectoderm) per embryo (center, ***p<0.001), and GATA4-positive-cells (PrE) per embryo (right, ***p<0.001, Jonkheere-Terpstra test) depending on gene dosage. Euploid (light blue), Low-dosage (middle blue), and High-dosage (darkest blue). Source: Experiment 4. Brightfield pictures were obtained during confocal imaging. All scale bars are 20 µm. Box and whisker plots show median and minimum to maximum values. Bar plots show mean ± s.d. Besides (b) all dots represent one embryo.
 
 Finally, we observed that the counts of OCT4-positive cells in the aneuploid embryos were distributed in two groups: one with very low counts and one with counts in the range of that of euploid embryos (Figure 4E). This led us to hypothesize that some of the aneuploid embryos had a delayed ICM development, with impairment of the second lineage segregation event. All blastocysts analyzed above were re-stained for GATA4 (PrE marker) and imaged together with OCT4 (ICM/EPI marker). We found that while all euploid embryos contained GATA4-positive cells, 39% of aneuploid embryos had no GATA4-positive cells (Figure 4P–Q). Furthermore, in those aneuploid embryos that contained GATA4-positive PrE cells, there was a significantly lower ratio of GATA4-positive to OCT4-positive/GATA4-negative cells (Figure 4R). Categorization of the aneuploid embryos into a low- and a high-dosage group (Supplementary file 8) showed that the higher the number of imbalanced loci, the lower the cell numbers in the TE and PrE but not in the EPI (Figure 4S).
 
@@ -120,47 +136,148 @@ Taken together, our results show that while the same pathways appear to be activ
 
 ## Methods
 
-## Ethical approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP70 (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>MA3-007</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SQSTM1/p62(Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab56416</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant Anti-LC3B (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab192890</td>
+      <td>IF(1:838)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OCT3/4 (Mouse monoclonal)</td>
+      <td>Santa-Cruz</td>
+      <td>sc-5279</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human phosphor-p53 S15 (Rabbit polyclonal)</td>
+      <td>R&amp;D</td>
+      <td>AF1043</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GATA4 (Rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>14-9980-82</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DRAM (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>PA20-335</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-histone H2A.X Ser139 (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>05–636</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NANOG (Goat polyclonal)</td>
+      <td>R&amp;D</td>
+      <td>AF1197</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Reversine</td>
+      <td>Stem Cell Technologies</td>
+      <td># 72614</td>
+      <td>0.5 µM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CaspGLOW Fluorescein Active Caspase-8 Staining Kit</td>
+      <td>Invitrogen</td>
+      <td>88-7005-42</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellEvent Caspase-3/7 Green Detection Reagent</td>
+      <td>Invitrogen</td>
+      <td>C10423</td>
+      <td>IF(1:400)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethical approval
 
 All experiments have been approved by the local Commission of Medical Ethics of the UZ Brussel (B.U.N. 143201628722) and the Federal Committee for Medical and Scientific Research on Human Embryos in vitro (AdV069 and AdV091). Patients from Brussels IVF (UZ Brussel) donated their embryos for research after written informed consent.
 
-## Culture of human pre-implantation embryos
+### Culture of human pre-implantation embryos
 
 All human embryos, unless stated otherwise, were warmed using the Vitrification Thaw Kit (Vit Kit-Thaw; Irvine Scientific, USA) and cultured in 25 µL droplets of Origio Sequential Blast medium (Origio) at 37 °C with 5% O2, 6% CO2, and 89% N2. Embryos were graded before vitrification by experienced clinical embryologists according to Gardner and Schoolcraft, 1999.
 
-## Experiment 1
+#### Experiment 1
 
 We warmed vitrified human blastocysts (5-6dpf) after PGT (28 euploid and 22 aneuploid) or at 3dpf (n=11). Post-PGT-embryos were left to recover for 2 hr in a culture medium, after which they underwent a second TE biopsy. For the reversine experiment, we cultured the 3dpf embryos for 24 hr in a culture medium supplemented with 0.5 µM reversine (Stem Cell Technologies), and after wash-out we let them develop until 5dpf and subsequently took a biopsy. The concentration of 0.5 µM reversine was chosen based on previous experiments in mouse embryos (Bolton et al., 2016; Singla et al., 2020).
 
-## Experiment 2
+#### Experiment 2
 
 We warmed 12 vitrified and undiagnosed human blastocysts (5-6dpf) of which six were cultured in culture medium for 16 hr. The other 6 embryos were cultured in medium supplemented with 0.1 mg/mL Bleomycin (Sigma-Aldrich) for 16 hr.
 
-## Experiment 3
+#### Experiment 3
 
 We warmed vitrified human blastocysts (5-6dpf) after PGT (7 euploid and 11 aneuploid) that were left to recover for 2 hr in culture medium.
 
-## Experiment 4
+#### Experiment 4
 
 We warmed 5dpf-6dpf PGT embryos (10 euploid and 14 aneuploid) and cultured them for 16 hr to ensure sufficient time to progress to the second lineage differentiation. Prior to fixation, we live-stained all the embryos with either Caspase-3/7 or Caspase-8 (Supplementary file 9) for 30 min. Additionally, we warmed 5dpf-6dpf PGT embryos (6 euploid and 4 aneuploid) and cultured them for 16 hr without live-staining.
 
-## Biopsy procedure
+### Biopsy procedure
 
 The zona pellucida was opened (15–25 µm) on 4dpf using a Saturn Laser (Cooper Surgical). For PGT cycles, expanded good quality embryos were biopsied on 5dpf; early blastocysts were evaluated again for expansion on 6dpf. Briefly, embryos were transferred to HEPES buffered medium and biopsied on a Nikon inversed microscope equipped with a Saturn Laser. The herniated TE cells were then aspirated and cut using manual laser shoots. In case of sticking cells this was supported by mechanical cutting. After successful tubing, the blastocysts were vitrified using CBS-VIT High-Security straws (CryoBioSystem, L’Aigle, France) with dimethylsulphoxide-ethylene glycol-sucrose as the cryoprotectants (Irvine Scientific Freeze Kit, Newtownmountkennedy, County Wicklow, Ireland) (Van Landuyt et al., 2011). The TE biopsy for RNA-sequencing (Experiment 1) was performed with the same procedure, cells were biopsied from the same opening in the zona pellucida.
 
-## PGT
+### PGT
 
 During PGT, our Center of Medical Genetics at the UZ Brussels analyzed a TE sample with multiple cells for each embryo. Next Generation Sequencing: The chromosomal analysis was performed by WGA (Sureplex, Illumina) followed by library preparation (KAPA HyperPlus, Roche), sequencing on a NovaSeq (Illumina), and an in-house developed interpretation pipeline. The analysis has an effective resolution of 5 Mb.
 
-## SNP-array
+#### SNP-array
 
 We relied on whole genome amplification (MDA, Repli-G) followed by genome-wide SNP array using Karyomapping (Vitrolife) with Bluefuse software (Vitrolife). In addition, SNP array data were analyzed with an in-house developed interpretation pipeline for aneuploidy detection.
 
-## RNA-sequencing
+### RNA-sequencing
 
 Multiple (5-10) TE cells were used as input to generate full-length cDNA with the SMART-SeqTM v4 UltraTM Low Input RNA Kit (Clontech Laboratories, Inc) according to the manufacturer’s instructions. The quality of cDNA was checked using the AATI Fragment Analyzer (Advances Analytical). Library preparation was performed using the KAPA HyperPlus Library Preparation Kit (KAPA Biosystems) according to the manufacturer’s instructions. During cDNA synthesis and library preparation we used 17 and 11 PCR cycles, respectively. Sequencing was performed on a NovaSeq 6000 (Illumina) with 25 million reads per sample.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Reads were trimmed using cutadapt version 1.11 to remove the ‘QuantSEQ FWD’ adaptor sequence. We checked the quality of the reads using the FastQC algorithm (Love et al., 2014). Count tables were generated using STAR (Dobin et al., 2013) (version 2.5.3) through mapping against the Genome Reference Consortium Human Build 38 patch release 10 (GRCh38.p10) combined with a general transfer format (GTF) file, both downloaded from the Ensembl database. The RNA-sequencing by Expectation Maximization (RSEM) (Li and Dewey, 2011) software (version 1.3.0) was used to produce the count tables.
 
@@ -170,18 +287,18 @@ Gene set enrichment analysis (GSEA) was performed using the GSEA software (versi
 
 The copy number variation (CNV) analysis was inferred from our RNA-sequencing data set using inferCNV R package (version 1.7.1) (Inferring copy number alterations from tumor single cell RNA-seq data https://github.com/broadinstitute/inferCNV/wiki). Our count table was used as input and compared to the reference set which in our case was the expression data of the euploid embryos. The analysis followed the standard workflow in inferCNV with the following parameters: ‘denoise’ mode, value of 1 was used for the ‘cutoff,’ prediction of CNV states using default Hidden Markov Models (HMM) method, ‘cluster_by_groups’ was set to TRUE, and other values were set by default.
 
-## Gene dosage analysis
+### Gene dosage analysis
 
 We calculated the total number of loci with imbalanced gene expression based on the genetic abnormalities identified during the PGT. For this, we used the number of coding loci per chromosomal region as listed in the ENSMBL database (ensemble.org) and included both gains and losses, either mosaic or homogeneously present, and both full chromosomal aneuploidy as well as segmental abnormalities. The embryos were ranked based on the total number of imbalanced loci and separated into a low- and a high-imbalanced gene dosage group. The low-dosage group contained the embryos with the lowest 50th percentile in number of unbalanced loci, the high-dosage group the embryos with 50th percentile or higher.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Prior to fixation we removed the zona pellucida using pre-warmed to 37 °C Acidic Tyrode’s Solution (Sigma-Aldrich) for 30 s–2 min and subsequently washed in PBS/2%BSA. Embryos were then fixed using 4% paraformaldehyde (Sigma-Aldrich) for 10 min, washed three times in PBS/2% BSA for 5 min, and then permeabilized using 0.1% Triton X-100 (Sigma-Aldrich) for 20 min followed by another washing cycle. We used PBS/2% BSA supplemented with 10% FBS for 1 hr to block non-specific protein binding. The embryos were then incubated overnight with primary antibodies (Supplementary file 9) diluted in blocking buffer at 4 °C. The next day, they underwent another washing cycle using PBS/2% BSA and were then incubated with secondary antibodies (1:200, Supplementary file 9) for 1 h at room temperature. After washing, nuclei were stained using Hoechst 33342 (5µg/mL, Life Technologies) diluted in PBS/2% BSA for 15 min. For imaging, we mounted the embryos on poly-L-lysine coated glass slides (Sigma-Aldrich) in 3 µL of PBS. To avoid flattening of the embryos we used Secure-Seal Spacers (9 mm diameter, 0.12 mm deep, Thermo Fisher) before putting the coverslips in place. For the experiments that required re-staining we imaged the embryos in 3 µL PBS/2%BSA in 18 well µ-Slides (Ibidi) and subsequently recuperated them. After recuperation, we photobleached the embryos stained for CASP3/7 by using maximum laser power of the 488 nm channel and maximum size of the pinhole for 10 min. The embryos were then re-stained using rat anti-GATA4 primary antibody and the matching Alexa Fluor 488 secondary antibody (Supplementary file 9) (to replace the CASP3/7 staining).
 
-## Imaging and image analysis
+### Imaging and image analysis
 
 Confocal imaging was performed using the LSM800 (Zeiss). Z-stacks were taken with a LD C-Apochromat 40 x/1.1 NA water immersion objective in optical sections of 1 µm. Nuclei were counted using the Blob finder function of Arivis Vision 4D (3.4.0). All other measurements were performed using the Zen 2 (blue edition) or Image J software based on the optical sections and/or orthogonal projections.
 
-## Statistics
+### Statistics
 
 The type of statistical test and p-values are mentioned in the figure legends. For most comparisons we used one-way ANOVA or Student’s t-test with or without Welch’s correction. For experiments that contained groups with small sample sizes, we used non-parametric tests (Mann-Whitney). Fisher-exact test was used to determine the dependency of the ploidy status on the presence or absence of primitive endoderm. We used GraphPad Prism 9.0.0 for statistical testing. The trend analysis regarding gene dosage effects was performed with SPSS using the Jonckheere-Terpstra test.

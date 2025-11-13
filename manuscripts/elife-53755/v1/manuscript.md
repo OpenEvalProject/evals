@@ -52,7 +52,7 @@ Tumor dissemination is a multistep process that involves the passage of tumor ce
 
 Historically, Paget's 'seed and soil' metaphor has been used to describe how dissemination results from favorable interactions between circulating tumor cells (the seed) and the specific microenvironments they encounter (the soil). This analogy is still used today, although we know much more about what happens at the cellular and molecular levels (Langley and Fidler, 2011). Here we discuss causality during the three stages of dissemination, and show how some or all of the six characteristics mentioned above are involved.
 
-## Exit from the primary tumor
+### Exit from the primary tumor
 
 Different causal factors, both intrinsic and extrinsic to the tumor cell, are involved in the two processes that make up this step – the detachment of cancer cells from the tumor, and their journey towards an accessible blood or lymph vessel (which, depending on the size and vascularization of the primary tumor, may require invasion of the surrounding tissue, also known as local or loco-regional invasion). In particular, the epithelial-to-mesenchymal transition (EMT) enables cancer cells to lose intercellular adherence and acquire the mesenchymal properties that foster local invasion and migration. Other tumor-cell-intrinsic mechanisms are involved, such as aberrant intracellular signaling (e.g., EGFR amplification or truncation), the loss of adhesion molecules (such as E-cadherin), the expression of transcription factors that regulate the transition, and the production of proteins that degrade the extracellular matrix.
 
@@ -60,7 +60,7 @@ Tumor-cell-extrinsic factors are also crucial for local invasion (Quail and Joyc
 
 Local invasion also displays characteristics of causal necessity and/or sufficiency and sequence-dependent causality. For instance, the effects of TGF-β on cancer progression are highly dose-dependent and they may vary from step to step: for example, TGF-β can act as a tumor suppressor in one step, and then help to stimulate the EMT in a later step (Bachman and Park, 2005). Moreover, some epithelial cells can enter the circulation without undergoing an EMT: this is possible due to the phenomena of clustered migration (where transitioned and non-transitioned cells move together) and the remodeling of the primary microenvironment by mesenchymal cells. This means that the EMT may be considered permissive rather than necessary for metastasis (Jolly et al., 2017).
 
-## Circulation
+### Circulation
 
 To enter the bloodstream or the lymphatic system – a process known as intravasation – a cancer cell must cross an endothelial barrier. Again, this involves both tumor-cell-intrinsic factors (such as the expression of adhesion molecules and permeability factors) and tumor-cell-extrinsic factors (such as interactions with myeloid cells and endothelial cells, or feedback loops involving small signaling molecules called cytokines; Su et al., 2014). An instance of causal intricacy here is the fact that the tumor vasculature can undergo its own EMT (called an endoEMT) and favor the transmigration of tumor cells into the circulation by disrupting the endothelial cell barrier during intravasation.
 
@@ -68,7 +68,7 @@ Once in the bloodstream, the survival of circulating tumor cells, their arrest i
 
 When metastatic cells reach the vessels at the secondary site, their exit from the circulation relies on both intrinsic changes (such as the reversal of the EMT for cells that have transitioned) and extrinsic factors (such as another EndoEMT, this time linked to tumor cell extravasation). Neutrophil extracellular traps also have an important role in removing tumor cells so that they can undergo extravasation (Cools-Lartigue et al., 2013), as does the nature of the surface molecules expressed by endothelial cells at the metastatic sites.
 
-## Colonization of the metastatic site
+### Colonization of the metastatic site
 
 The successful colonization of a secondary site depends on the early establishment of a 'pre-metastatic niche' (i.e., a local environment that is favorable to the seeding of circulating cancer cells). Again, both tumor-cell-intrinsic factors (such as cytokines and exosomes derived from the primary tumor; Tung et al., 2019) and tumor-cell-extrinsic factors (e.g., subsets of cells derived from the bone marrow; Gao et al., 2019) are involved. Moreover, the types of causal explanations for site-specific seeding are multiple and diverse. Some organs (such as the growth factor–enriched bone microenvironment) may manifest a certain predisposition for welcoming tumor cells. Other metastases rely mainly on specific organ chemokines binding to cancer cell receptors (such as CXCL12 binding to CXCR4; see also Liotta, 2001). Recent research also suggests that organ-specific angiocrine signaling from endothelial cells may be an important site-specific mechanism for metastasis.
 

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.29319.001 Support for open science is growing, but motivating researchers to participate in open science can be challenging. This in-depth qualitative study draws on interviews with researchers and staff at the Montreal Neurological Institute and Hospital during the development of its open science policy. Using thematic content analysis, we explore attitudes toward open science, the motivations and disincentives to participate, the role of patients, and attitudes to the eschewal of intellectual property rights. To be successful, an open science policy must clearly lay out expectations, boundaries and mechanisms by which researchers can engage, and must be shaped to explicitly support their values and those of key partners, including patients, research participants and industry collaborators.
+Support for open science is growing, but motivating researchers to participate in open science can be challenging. This in-depth qualitative study draws on interviews with researchers and staff at the Montreal Neurological Institute and Hospital during the development of its open science policy. Using thematic content analysis, we explore attitudes toward open science, the motivations and disincentives to participate, the role of patients, and attitudes to the eschewal of intellectual property rights. To be successful, an open science policy must clearly lay out expectations, boundaries and mechanisms by which researchers can engage, and must be shaped to explicitly support their values and those of key partners, including patients, research participants and industry collaborators.
 
 ## Introduction
 
@@ -31,21 +31,21 @@ Despite the benefits offered by open science, it has proven difficult to impleme
 
 Our analysis yielded a number of key themes which we summarize below. Please see Ali-Khan et al. (2015) for the full research report, and MNI, 2017 for the latest information about the initiative. In this manuscript, we sometimes use proportions or numbers to quantify the number of interviewees who expressed a particular opinion: please see 'Materials and methods: Reporting' below for further details and a caveat.
 
-## Nebulous definition breeds uncertainty
+### Nebulous definition breeds uncertainty
 
 Our analysis revealed that MNI researchers were generally favorable toward the notion of open science, reporting that they already engage in significant sharing. Nevertheless, almost half our interviewees noted that the concept is vague (Fecher and Friesike, 2014; Grubb and Easterbrook, 2011; OECD, 2015) and expressed uncertainty about what precisely open science would require of them (Open Research Data Task Force, 2017; Neylon, 2017; Ferguson, 2014). Based on our data, this uncertainty can discourage participation in two ways. First, the absence of clearly articulated definitions raised fears that open science practice may extend beyond comfort levels. Conversely, those who desired greater openness were cautious about taking part lest the lack of clarity prevent meaningful change.
 
-## Open science needs to be stakeholder driven
+### Open science needs to be stakeholder driven
 
 In the context of the MNI’s initiative, just over half of researchers stated that an institution-level open science policy could only be successful if it was developed in close collaboration with researchers, rather than simply imposed in a top-down fashion by management. Researchers were concerned that a broad one-size-fits-all directive may have adverse effects on their scientific priority and curtail their academic freedom by denying them, for example, the right to choose where to publish (Levin et al., 2016), to patent findings (Murray, 2010), to publish first and to control access to research outputs (Fecher et al., 2015).
 
 A further dominant opinion, explicitly mentioned by over a quarter of interviewees, was that open science should not be implemented for ‘its own sake’. Instead, policy should reflect the values and needs of key stakeholders. Misgivings about open science were always tied to perceived negative effects on their careers, on their relationships with the patients who participate in research projects, or on their collaborations with industry.
 
-## Current state of sharing
+### Current state of sharing
 
 More than three quarters of interviewees reported that they already share data and research tools on request after publication as a standard practice, and that they share with established collaborators before publication. However, outside of the bioinformatics and imaging area, few engaged in large-scale public sharing. Willingness to share varied depending on the data type and the resources involved in their development. Unsurprisingly, interviewees noted that digital data is more shareable. Most said that patients’ clinical and genomic data should be widely shared, subject to consent and ethics protections (Kaye, 2012), due to the limited intellectual contribution made by the researcher who collected the data. Four researchers felt that these data belonged to patients and thus should not be hoarded. On the other hand, two interviewees said it would be unfair to force early sharing of data and materials yielded through resource-intensive processes, such as iPS cell lines, or rare and depletable biosamples. Overall, there was wide agreement among interviewees that it is appropriate to wait until after publication to share experimental data beyond established collaborators. This was true even in the case of bioinformatics and imaging researchers, whom we expected to be the most comfortable with open pre-publication sharing.
 
-## Researchers are motivated by ethics and also by career advancement
+### Researchers are motivated by ethics and also by career advancement
 
 Approximately three quarters of our interviewees articulated ethical motivations for more rapid, open sharing of data and scientific resources. These include the belief that publicly-funded research outputs ought to be released with minimal delay and that consistent with patients’ wishes, researchers have a duty to ensure that samples are broadly shared to maximize research and discovery. Likewise, many alluded to the negative impact of data ‘bottlenecking’ before publication, and the increased efficiency that would result from earlier and greater access to research outputs (Fecher et al., 2015).
 
@@ -55,15 +55,15 @@ Related to this, almost all interviewees raised a fundamental concern: that open
 
 Most interviewees stated a preference to fully understand and publish before publicly releasing a dataset or reagent. Further, approximately half of researchers mentioned that it is socially irresponsible to release data before it is fully validated and its quality is assured, as this could waste others’ time and promote erroneous conclusions. Several noted the potential for shared data to be used in research or for applications with which they do not agree (Wouters and Haak, 2017). They worried that their or the MNI’s reputation might be compromised by such associations. Thus, while nearly all interviewees said the culture of science is shifting toward greater openness, more than half cautioned that the MNI should advance with care.
 
-## Attribution and publication
+### Attribution and publication
 
 Almost every interviewee emphasized the highly competitive nature of biomedical research (Harley, 2010), and the central importance of maintaining strong academic metrics. A third of interviewees underlined that ensuring proper attribution and returns for sharing would motivate their participation in open science practice (Wouters and Haak, 2017). They noted that this could include citation, acknowledgement and in some cases co-authorship for use of shared data, as well as the development of new metrics to measure sharing contributions (so that they could be included in funding and academic advancement decisions).
 
-## Infrastructure and resources
+### Infrastructure and resources
 
 All but one interviewee stressed that openness is time- and resource-intensive, including for example, the need for payment of open access publication fees, and for the preparation, formatting and handling of data and other research outputs for sharing (Levin et al., 2016; LERU Research Data Working Group, 2013). More broadly, researchers spoke of the costs inherent in the set-up and management of sharing infrastructure, including cyber and biobanking frameworks. Thus, interviewees emphasized that institutional support will be critical to support open science practice amongst researchers (Das et al., 2016; Poupon et al., 2017).
 
-## On patients
+### On patients
 
 The majority of interviewees underlined public and patient benefit as the preeminent goal of open science at the MNI (Rouleau, 2017). The institution’s dual research and clinical functions offer the potential for ongoing data collection from consented patients across multiple research modalities. Opening this platform to outside researchers promises a powerful collaborative discovery resource, but raises familiar concerns about the protection of patients and research participants (Kaye, 2012).
 
@@ -71,11 +71,11 @@ The setting in which patients would be engaged about open science research and t
 
 A few researchers said that patients may be concerned about the potential for their data or samples to be shared with as-yet unknown researchers. However, most thought that patients would be strong advocates for open science, given the framework’s promise for advancing new understanding and treatments. Some further suggested that open science would increase patient and public trust (Royal Society, 2012; Grand et al., 2012) given its emphasis on minimizing intellectual property, increasing transparency and channeling benefits to patients, rather than to industry. They noted this could increase the stature of the MNI in attracting high-quality researchers and trainees, greater patient participation in research and augmented private donation. Finally, several interviewees pointed to the potential for open science to allow patients to become more equal and informed research partners due to greater transparency through the research process. Improvement of researcher-participant relationships could enable more patient-responsive studies, enhancing patient satisfaction and research outcomes.
 
-## Research ethics
+### Research ethics
 
 Many interviewees emphasized the key role of the institutional Research Ethics Board (REB) in facilitating their open science practice. One third of interviewees suggested that the REB is sometimes overly stringent and acts as a barrier to efficient sharing of their own research data, or to making use of patient data shared through open web repositories. Conversely, just under two thirds of interviewees said that the REB is evolving in step with open approaches to science, for example partnering with researchers to develop detailed governance mechanisms and patient consent protocols to allow broad sharing (Das et al., 2016; Poupon et al., 2017). Some interviewees underlined that harmonizing ethical requirements across Canada and internationally is a key priority to realize the promise of global open science. One way that harmonization could accelerate open science would be the introduction of standard click-wrap agreements that are signed when patient-derived data are downloaded, thus avoiding the need use traditional (and cumbersome) side agreements that are signed (and sometimes notarized) by central administrators (NKI-RS, 2017).
 
-## On intellectual property, industry and collaboration
+### On intellectual property, industry and collaboration
 
 Forgoing intellectual property, particularly patents, within the context of the MNI’s research activities is unprecedented for a major academic research institution (Stilgoe, 2016). Thus, unsurprisingly, the topic of intellectual property polarized opinion. Many of the basic science researchers we interviewed felt that pursuing patents is inefficient, noting that patenting is rarely worth its costs from either a commercial or translational standpoint. Conversely, many clinical-translational researchers said that the freedom to pursue intellectual property is an important aspect of their academic freedom and professional impact. Several underlined the importance of patents in facilitating partnerships with industry stakeholders (Murray and Stern, 2006). Only five of this latter group mentioned personal material benefit as a motivation. Further, some conceded that patents are often pursued too early in the research process, which may slow scientific progress. However, despite many of the interviewees not being interested in holding intellectual property themselves, there was a widespread belief that patents or other modes of legal protection are essential to ensure the translation of research later in the process.
 
@@ -107,17 +107,17 @@ Our study reiterates previously reported researcher concerns toward the adoption
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 This study uses qualitative research methods: in-depth semi-structured interviews, followed by thematic content analysis. This methodology is best suited to in-depth exploration of the experiences and perceptions of research participants, and the meanings they attach to these (Braun and Clarke, 2006; Patton, 2002). As such, it is well-aligned with the needs of case studies undertaken to inform policy, as was the current research (Ritchie and Spencer, 2002). We report these methods according to Consolidated Criteria for Reporting Qualitative Research (COREQ) guidelines (Tong et al., 2007).
 
-## Study sample and research design
+### Study sample and research design
 
 Due to the small community of relevant research participants, we used a purposive and snowball sample strategy to select invitees. The interviews were conducted in two phases. The first focused on MNI researchers and staff over Summer 2015. We conducted a second phase of interviews in Fall 2016, to address knowledge gaps concerning the viewpoints of researchers’ industry collaborators, and to update perspectives subsequent to launch of the open science initiative (Owens, 2016b). Thus, we re-interviewed three researchers and one whom we had not previously engaged, who all interact with industry partners. We also interviewed one industry collaborator, one industry veteran and one not-for-profit collaborator, and obtained a public statement from Thermo Fisher Scientific on its partnership with the MNI.
 
 To begin the first phase of interviews, the MNI management provided a list of research areas and principal investigators that we independently used to selectively invite participants via email. During interviews we asked for suggestions for others who may provide insight, whom we subsequently invited. In the second phase we re-contacted select participants.
 
-## Data collection
+### Data collection
 
 One of us (SEA) with LH and/or a colleague (Kendra Levasseur; KL) conducted the interviews. None of these researchers was known to any of the participants prior to receiving the study invitation. ERG, who did not participate in the interviews, may have been known to some, as all are employed at the same institution. We conducted all interviews with MNI researchers face-to-face at locations of the interviewees’ choosing, namely their offices or labs, in June through September 2015. Before beginning interviews, we described our credentials, professional positions, the study context, confidentiality and privacy considerations, and noted the independent, academic nature of our research. All interviews with industry or non-profit collaborators were conducted over the phone.
 
@@ -125,20 +125,20 @@ All but one interview was digitally recorded and transcribed verbatim by LH, KL 
 
 To start each interview, we collected demographic information to facilitate comparative analysis across interviews. We then asked open-ended, semi-structured questions to explore individual experience and knowledge. In qualitative research, the dataset is considered complete when a point of theoretical saturation is achieved—meaning no new major ideas, information or themes are emerging from interviews (Morse, 1995). Participant recruitment continued until we reached this point, and with consideration for achieving balanced representation across gender and research area. In total, we conducted 21 interviews with MNI researchers and staff in the first phase. In the second we interviewed four MNI researchers, and three external participants as described in ‘Study sample’, resulting in 25 interviewees in total.
 
-## Qualitative thematic analysis
+### Qualitative thematic analysis
 
 We analyzed these data using thematic content analysis methods (Braun and Clarke, 2006; Ritchie and Spencer, 2002) This process consists of seven iterative stages: (i) familiarization; (ii) generation of an initial coding framework and application of these codes to the dataset; (iii) searching for and verification of themes across the entire dataset; (iv) identification of relationships and distinct differences between codes/subgroups of ideas; (v) definition and naming of themes; (vi) re-reading of the interviews and modifying codes based on emerging themes; and finally (vii) mapping and interpretation of the overall narrative identified from the data. We used NVivo 10 software to organize and manage our analysis (QSR International, 2016). This software enables tracking of the research process, thereby facilitating auditability and reproducibility, and thus the credibility of the work.
 
-## Development of analytical categories
+### Development of analytical categories
 
 During the thematic analysis process we developed several analytic categories. These capture what we defined as 1) 'substantive’; 2)’ auxiliary’; and 3)’ key’ data or issues. ‘Substantive’ categories captured interviewees’ opinions, concerns, ideas and motivations regarding open science. Those categorized as ‘auxiliary’ captured contextual information that we used to further our understanding of the ‘substantive categories’, such as the types of resources or stakeholders the interviewees mentioned as relevant. For example, where a researcher expressed concern about sharing iPS cells because of the large investment required to generate them, the text would be coded into a substantive category (“disincentives to sharing or open science – researcher time and money invested in resource creation”) and an auxiliary category (“types of resources – iPS cells and other cell lines”) to give contextual information. ‘Key categories’ represent the subset of interviewees’ opinions, concerns and motivations that we determined are the most relevant to the development of an open science policy at the MNI. Often, this material represents the most significant sources of disagreement or tension about the proposed shift to open science, and material that was the most emphasized by interviewees. See the full coding framework in the supplementary materials.
 
-## Validity and reliability of analysis
+### Validity and reliability of analysis
 
 To support the validity of our analysis three coders (SEA, KL and LH) worked together to develop the initial coding framework and ensure it was consistently applied across interview transcripts. This coding framework was informed by our knowledge of the literature and the focus of our research questions (a top-down or deductive approach), in addition to new ideas that we identified inductively from the ‘grounded’ data (a bottom-up approach; Patton, 2002; Ritchie and Spencer, 2002). LH and KL then divided the interviews amongst them to code individually. SEA, KL and LH met regularly throughout the research process to compare and discuss data interpretation and modify the framework. The entire research team met on a weekly basis to discuss emerging findings (SEA, LH, KL and ERG).
 
 KL and LH also undertook a formal inter-coder reliability analysis using NVivo 10 software (QSR International, 2016), by both coding the same interview and measuring agreement between the two copies. Most inter-coder percentage agreement at each category varied from 80 to 100%, revealing only minimal disagreement between coders. Categories at which agreement was lower were among the ‘auxiliary’ group. When we inspected discrepancies, we observed that this was due to minor differences in the length of the text coders had selected for auxiliary categories, with minimal implications for our analyses. Finally, we triangulated data across interviews and available policy, academic and web resources, further seeking to ensure the accuracy of our findings.
 
-## Reporting
+### Reporting
 
 Our analysis yielded ten major themes of discussion, which we report here as nine themes after combining the intellectual property and collaboration themes to improve the flow of the text (see Ali-Khan et al., 2015 for the full report). We note that in this manuscript we may indicate the proportion or number of our interviewees who held the described opinions. Two limitations to this approach should be considered. First, our sample, while broadly representative of the units, demographics and responsibilities at the MNI, is not random. Further, we note that in the course of semi-structured interviews, respondents will answer according to their specific interests and knowledge (Patton, 2002; Ritchie and Spencer, 2002). Therefore, the content of individual interviews is not always directly comparable. Subject to this caution, we believe that the inclusion of proportions enhances the informativeness of our findings (Maxwell, 2010). Finally, we note that we took a reflexive standpoint on our data, critically considering them within the broader context of the academic and policy literature and our professional knowledge and experience in this domain.

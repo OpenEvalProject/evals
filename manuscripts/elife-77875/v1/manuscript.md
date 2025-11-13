@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04mz5ra38 Department of General Zoology, University of Duisburg-Essen Essen Germany
-2. https://ror.org/0415vcw02 Department of Game Management and Wildlife Biology, Faculty of Forestry and Wood Sciences, Czech University of Life Sciences Praha Czech Republic
-3. https://ror.org/01hcx6992 Institute for Theoretical Biology, Department of Biology, Humboldt-Universität zu Berlin Berlin Germany
+1. Department of General Zoology, University of Duisburg-Essen Essen Germany ([ROR:04mz5ra38](https://ror.org/04mz5ra38))
+2. Department of Game Management and Wildlife Biology, Faculty of Forestry and Wood Sciences, Czech University of Life Sciences Praha Czech Republic ([ROR:0415vcw02](https://ror.org/0415vcw02))
+3. Institute for Theoretical Biology, Department of Biology, Humboldt-Universität zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
 4. Independent researcher São Paulo Brazil
 
 † Corresponding author
@@ -51,19 +51,827 @@ Lateralization strength (MeanAbsHI) but not direction (MeanHI) displays a strong
 
 **Figure 2.:** Attributions only apply to the species that represent the respective genus within our sample. Color coding: Ecology – green: arboreal, yellow: terrestrial; Habitual tool use – gray: present; white: absent. Brain size is visualized here as the log-transformed genus average of female endocranial volume.
 
+**Table 1.**
+ Hand preferences of anthropoid species as recovered by the tube task.Bold numbers indicate significant results. Results marked with an asterisk (*) remain significant after Bonferroni correction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>N</th>
+      <th># Left (%)</th>
+      <th># Right (%)</th>
+      <th># Ambipreferent (%)</th>
+      <th>MeanHI</th>
+      <th>MeanAbsHI</th>
+      <th>Species direction bias (HI), p value</th>
+      <th>Species L/R/A distribution, p value</th>
+      <th>nGenus</th>
+      <th>Genus direction bias (HI), p value</th>
+      <th>Genus L/R/A distribution, p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ateles fusciceps</td>
+      <td>46</td>
+      <td>20 (43.5)</td>
+      <td>22 (47.8)</td>
+      <td>4 (8.7)</td>
+      <td>0.063</td>
+      <td>0.798</td>
+      <td>0.618</td>
+      <td>0.288</td>
+      <td rowspan="3">87</td>
+      <td rowspan="3">0.759</td>
+      <td rowspan="3">0.031</td>
+    </tr>
+    <tr>
+      <td>Ateles geoffroyi</td>
+      <td>23</td>
+      <td>10 (43.5)</td>
+      <td>11 (47.8)</td>
+      <td>2 (8.7)</td>
+      <td>0.061</td>
+      <td>0.829</td>
+      <td>0.748</td>
+      <td>0.536</td>
+    </tr>
+    <tr>
+      <td>Ateles hybridus</td>
+      <td>18</td>
+      <td>13 (72.2)</td>
+      <td>5 (27.8)</td>
+      <td>0</td>
+      <td>–0.377</td>
+      <td>0.917</td>
+      <td>0.086</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>Cercocebus torquatus</td>
+      <td>31</td>
+      <td>13 (41.9)</td>
+      <td>11 (35.5)</td>
+      <td>7 (22.6)</td>
+      <td>–0.029</td>
+      <td>0.665</td>
+      <td>0.832</td>
+      <td>0.836</td>
+      <td>31</td>
+      <td>0.832</td>
+      <td>0.836</td>
+    </tr>
+    <tr>
+      <td>Cercopithecus diana</td>
+      <td>20</td>
+      <td>7 (35)</td>
+      <td>10 (50)</td>
+      <td>3 (15)</td>
+      <td>0.178</td>
+      <td>0.755</td>
+      <td>0.339</td>
+      <td>0.836</td>
+      <td rowspan="2">45</td>
+      <td rowspan="2">0.572</td>
+      <td rowspan="2">0.222</td>
+    </tr>
+    <tr>
+      <td>Cercopithecus neglectus</td>
+      <td>25</td>
+      <td>14 (56)</td>
+      <td>7 (28)</td>
+      <td>4 (16)</td>
+      <td>–0.258</td>
+      <td>0.621</td>
+      <td>0.061</td>
+      <td>0.140</td>
+    </tr>
+    <tr>
+      <td>Gorilla gorilla</td>
+      <td>76</td>
+      <td>17 (22.4)</td>
+      <td>41 (53.9)</td>
+      <td>18 (23.7)</td>
+      <td>0.248</td>
+      <td>0.541</td>
+      <td>&lt;0.001*</td>
+      <td>0.007</td>
+      <td>76</td>
+      <td>&lt;0.001*</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Homo sapiens</td>
+      <td>127</td>
+      <td>12 (9.5)</td>
+      <td>111 (87.4)</td>
+      <td>4 (3.1)</td>
+      <td>0.761</td>
+      <td>0.943</td>
+      <td>&lt;0.001*</td>
+      <td>&lt;0.001*</td>
+      <td>127</td>
+      <td>&lt;0.001*</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Hylobates lar</td>
+      <td>36</td>
+      <td>17 (47.2)</td>
+      <td>16 (44.5)</td>
+      <td>3 (8.3)</td>
+      <td>–0.011</td>
+      <td>0.614</td>
+      <td>0.924</td>
+      <td>0.182</td>
+      <td rowspan="2">58</td>
+      <td rowspan="2">0.612</td>
+      <td rowspan="2">0.125</td>
+    </tr>
+    <tr>
+      <td>Hylobates moloch</td>
+      <td>22</td>
+      <td>11 (50)</td>
+      <td>8 (36.4)</td>
+      <td>3 (13.6)</td>
+      <td>–0.115</td>
+      <td>0.799</td>
+      <td>0.540</td>
+      <td>0.552</td>
+    </tr>
+    <tr>
+      <td>Leontopithecus chrysomelas</td>
+      <td>30</td>
+      <td>7 (23.3)</td>
+      <td>12 (40)</td>
+      <td>11 (36.7)</td>
+      <td>0.151</td>
+      <td>0.514</td>
+      <td>0.171</td>
+      <td>0.012</td>
+      <td rowspan="3">73</td>
+      <td rowspan="3">0.241</td>
+      <td rowspan="3">&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Leontopithecus chrysopygus</td>
+      <td>15</td>
+      <td>3 (20)</td>
+      <td>4 (26.7)</td>
+      <td>8 (53.3)</td>
+      <td>0.039</td>
+      <td>0.350</td>
+      <td>0.744</td>
+      <td>0.001*</td>
+    </tr>
+    <tr>
+      <td>Leontopithecus rosalia</td>
+      <td>28</td>
+      <td>10 (35.7)</td>
+      <td>8 (28.6)</td>
+      <td>10 (35.7)</td>
+      <td>0.022</td>
+      <td>0.502</td>
+      <td>0.850</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Macaca fascicularis</td>
+      <td>20</td>
+      <td>8 (45)</td>
+      <td>10 (45)</td>
+      <td>2 (10)</td>
+      <td>–0.036</td>
+      <td>0.684</td>
+      <td>0.835</td>
+      <td>0.233</td>
+      <td rowspan="5">102</td>
+      <td rowspan="5">0.692</td>
+      <td rowspan="5">0.863</td>
+    </tr>
+    <tr>
+      <td>Macaca nemestrina</td>
+      <td>29</td>
+      <td>9 (31)</td>
+      <td>11 (37.9)</td>
+      <td>9 (31)</td>
+      <td>0.035</td>
+      <td>0.527</td>
+      <td>0.768</td>
+      <td>0.750</td>
+    </tr>
+    <tr>
+      <td>Macaca silenus</td>
+      <td>35</td>
+      <td>14 (40)</td>
+      <td>9 (25.7)</td>
+      <td>12 (34.3)</td>
+      <td>–0.051</td>
+      <td>0.467</td>
+      <td>0.596</td>
+      <td>0.328</td>
+    </tr>
+    <tr>
+      <td>Macaca sylvanus</td>
+      <td>24</td>
+      <td>12 (50)</td>
+      <td>10 (41.7)</td>
+      <td>2 (8.3)</td>
+      <td>–0.025</td>
+      <td>0.670</td>
+      <td>0.873</td>
+      <td>0.129</td>
+    </tr>
+    <tr>
+      <td>Macaca tonkeana</td>
+      <td>14</td>
+      <td>5 (35.7)</td>
+      <td>3 (21.4)</td>
+      <td>6 (42.9)</td>
+      <td>–0.057</td>
+      <td>0.543</td>
+      <td>0.753</td>
+      <td>0.291</td>
+    </tr>
+    <tr>
+      <td>Mandrillus sphinx</td>
+      <td>32</td>
+      <td>6 (18.8)</td>
+      <td>10 (31.2)</td>
+      <td>16 (50)</td>
+      <td>0.034</td>
+      <td>0.389</td>
+      <td>0.701</td>
+      <td>0.006</td>
+      <td>32</td>
+      <td>0.701</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Nomascus gabriellae</td>
+      <td>10</td>
+      <td>5 (50)</td>
+      <td>2 (20)</td>
+      <td>3 (30)</td>
+      <td>–0.173</td>
+      <td>0.618</td>
+      <td>0.465</td>
+      <td>0.436</td>
+      <td rowspan="2">36</td>
+      <td rowspan="2">0.539</td>
+      <td rowspan="2">0.805</td>
+    </tr>
+    <tr>
+      <td>Nomascus leucogenys</td>
+      <td>26</td>
+      <td>9 (34.6)</td>
+      <td>11 (42.3)</td>
+      <td>6 (23.1)</td>
+      <td>–0.031</td>
+      <td>0.555</td>
+      <td>0.818</td>
+      <td>0.869</td>
+    </tr>
+    <tr>
+      <td>Pan paniscus</td>
+      <td>118</td>
+      <td>50 (42.4)</td>
+      <td>51 (43.2)</td>
+      <td>17 (14.4)</td>
+      <td>0.044</td>
+      <td>0.529</td>
+      <td>0.431</td>
+      <td>0.237</td>
+      <td rowspan="2">654</td>
+      <td rowspan="2">&lt;0.001*</td>
+      <td rowspan="2">&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Pan troglodytes</td>
+      <td>536</td>
+      <td>155 (28.9)</td>
+      <td>266 (49.6)</td>
+      <td>115 (21.5)</td>
+      <td>0.133</td>
+      <td>0.507</td>
+      <td>&lt;0.001*</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Papio anubis</td>
+      <td>84</td>
+      <td>27 (32.1)</td>
+      <td>41 (48.8)</td>
+      <td>16 (19.1)</td>
+      <td>0.108</td>
+      <td>0.527</td>
+      <td>0.102</td>
+      <td>0.073</td>
+      <td rowspan="2">108</td>
+      <td rowspan="2">0.079</td>
+      <td rowspan="2">0.239</td>
+    </tr>
+    <tr>
+      <td>Papio hamadryas</td>
+      <td>24</td>
+      <td>6 (25)</td>
+      <td>7 (29.2)</td>
+      <td>11 (45.8)</td>
+      <td>0.066</td>
+      <td>0.408</td>
+      <td>0.533</td>
+      <td>0.082</td>
+    </tr>
+    <tr>
+      <td>Pithecia pithecia</td>
+      <td>7</td>
+      <td>5 (71.4)</td>
+      <td>2 (28.6)</td>
+      <td>0</td>
+      <td>–0.385</td>
+      <td>0.934</td>
+      <td>0.312</td>
+      <td>0.221</td>
+      <td>7</td>
+      <td>NA</td>
+      <td>0.221</td>
+    </tr>
+    <tr>
+      <td>Pongo sp.</td>
+      <td>47</td>
+      <td>27 (57.5)</td>
+      <td>9 (19.1)</td>
+      <td>11 (23.4)</td>
+      <td>–0.225</td>
+      <td>0.487</td>
+      <td>0.006</td>
+      <td>0.012</td>
+      <td>47</td>
+      <td>0.006</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Pygathrix cinerea</td>
+      <td>18</td>
+      <td>6 (33.3)</td>
+      <td>10 (55.6)</td>
+      <td>2 (11.1)</td>
+      <td>0.165</td>
+      <td>0.499</td>
+      <td>0.268</td>
+      <td>0.196</td>
+      <td>18</td>
+      <td>0.268</td>
+      <td>0.196</td>
+    </tr>
+    <tr>
+      <td>Rhinopithecus roxellana</td>
+      <td>24</td>
+      <td>17 (70.8)</td>
+      <td>7 (29.2)</td>
+      <td>0</td>
+      <td>–0.319</td>
+      <td>0.729</td>
+      <td>0.040</td>
+      <td>&lt;0.001*</td>
+      <td>24</td>
+      <td>0.040</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Saimiri sciureus</td>
+      <td>36</td>
+      <td>21 (58.4)</td>
+      <td>14 (38.9)</td>
+      <td>1 (2.7)</td>
+      <td>–0.119</td>
+      <td>0.757</td>
+      <td>0.382</td>
+      <td>0.031</td>
+      <td>36</td>
+      <td>0.382</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>Sapajus apella</td>
+      <td>25</td>
+      <td>11 (44)</td>
+      <td>10 (40)</td>
+      <td>4 (16)</td>
+      <td>–0.028</td>
+      <td>0.687</td>
+      <td>0.854</td>
+      <td>0.961</td>
+      <td rowspan="3">80</td>
+      <td rowspan="3">0.922</td>
+      <td rowspan="3">0.905</td>
+    </tr>
+    <tr>
+      <td>Sapajus flavius</td>
+      <td>21</td>
+      <td>10 (47.6)</td>
+      <td>7 (33.3)</td>
+      <td>4 (19)</td>
+      <td>–0.130</td>
+      <td>0.769</td>
+      <td>0.495</td>
+      <td>0.755</td>
+    </tr>
+    <tr>
+      <td>Sapajus xanthosternos</td>
+      <td>34</td>
+      <td>14 (41.2)</td>
+      <td>15 (44.1)</td>
+      <td>5 (14.7)</td>
+      <td>0.089</td>
+      <td>0.677</td>
+      <td>0.492</td>
+      <td>0.906</td>
+    </tr>
+    <tr>
+      <td>Semnopithecus entellus</td>
+      <td>30</td>
+      <td>15 (50)</td>
+      <td>7 (23.4)</td>
+      <td>8 (26.6)</td>
+      <td>–0.184</td>
+      <td>0.560</td>
+      <td>0.110</td>
+      <td>0.315</td>
+      <td>30</td>
+      <td>0.110</td>
+      <td>0.315</td>
+    </tr>
+    <tr>
+      <td>Symphalangus syndactylus</td>
+      <td>31</td>
+      <td>11 (35.5)</td>
+      <td>9 (29)</td>
+      <td>11 (35.5)</td>
+      <td>–0.048</td>
+      <td>0.482</td>
+      <td>0.663</td>
+      <td>0.118</td>
+      <td>31</td>
+      <td>0.663</td>
+      <td>0.118</td>
+    </tr>
+    <tr>
+      <td>Theropithecus gelada</td>
+      <td>38</td>
+      <td>6 (15.8)</td>
+      <td>6 (15.8)</td>
+      <td>26 (68.4)</td>
+      <td>0.053</td>
+      <td>0.257</td>
+      <td>0.326</td>
+      <td>&lt;0.001*</td>
+      <td>38</td>
+      <td>0.326</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Trachypithecus auratus</td>
+      <td>8</td>
+      <td>5 (62.5)</td>
+      <td>3 (37.5)</td>
+      <td>0</td>
+      <td>–0.256</td>
+      <td>0.984</td>
+      <td>0.499</td>
+      <td>0.176</td>
+      <td rowspan="2">26</td>
+      <td rowspan="2">0.153</td>
+      <td rowspan="2">0.004</td>
+    </tr>
+    <tr>
+      <td>Trachypithecus hatinhensis</td>
+      <td>18</td>
+      <td>11 (61.1)</td>
+      <td>7 (38.9)</td>
+      <td>0</td>
+      <td>–0.248</td>
+      <td>0.817</td>
+      <td>0.219</td>
+      <td>0.023</td>
+    </tr>
+  </tbody>
+</table>
+
 Ancestral hand preference strength was modelled to have been similarly moderate in the stem lineages of hominoids (AbsHI = 0.606) and cercopithecoids (AbsHI = 0.627), while it was inferred to be higher in the ancestral platyrrhines (AbsHI = 0.740; Figure 1, Supplementary file 1). We found hand preference strength to be particularly weak among some species in the Papionina clade (baboons and their relatives) and to be least expressed in the gelada (Theropithecus gelada – MeanAbsHI = 0.257). The strongest preferences were found in humans (MeanAbsHI = 0.943), langurs of the genus Trachypithecus (MeanAbsHI = 0.868), and spider monkeys (Ateles spp. – MeanAbsHI = 0.831). Very pronounced individual preferences were also found in white-faced sakis (Pithecia pithecia – MeanAbsHI = 0.934) but our sample size for this species was notably small (n=7). In consequence, all aforementioned taxa included only very few, if any, ambipreferent individuals. Besides the saki genus Pithecia, the South Asian colobines Rhinopithecus and Trachypithecus were the only genera in which no ambipreferent individuals were found. Direction of manual lateralization was far more uniform across the anthropoid radiation than strength (Figure 1; Supplementary file 1). No species approached the extreme direction bias of humans (compare Figure 2), and only 2 of 37 non-human species exhibited a significant population-level bias as indicated by the one-sample t-test after correcting for multiple testing (4 of 37 when no correction was applied), namely gorillas and chimpanzees. Thus, such biases were restricted to the African ape lineage. After correcting for multiple testing, intraspecific frequencies of ambipreferent individuals, right-, and left-handers, as indicated by the chi-square goodness-of-fit test, differed significantly from the superordinate taxon estimate in four non-human species. These were chimpanzees, which are right-handed at the population level, and the predominately left-handed golden snub-nosed monkeys (Rhinopithecus roxellana), as well as geladas and black lion tamarins (Leontopithecus chrysopygus), both of which encompass a large proportion of ambipreferent individuals (Table 1). When omitting correction, respective biases were more frequent and found in 12 non-human species across the three major clades studied. Species- and genus-level results closely corresponded to each other (Table 1).
 
 Our selected predictors for phylogenetic generalized least squares (PGLS) models showed a mixed and overall weak performance in explaining expression patterns of hand preference strength and direction in anthropoids (Table 2, Figure 3). For the initial model on lateralization direction, we found a significant effect of ecology, with terrestrial species displaying a right-hand bias compared to arboreal ones (p=0.04; Table 2A). However, when humans were removed from the model, this effect was merely recovered as a non-significant trend (p=0.07; Table 2B). Other predictors had no significant effect on lateralization direction, regardless of whether humans were considered in the model or not (p>0.2, Table 2A and B). When humans were included (Table 3A), models encompassing the component ecology as well as some considering brain size outperformed the lateralization direction null model. When humans were omitted from the analysis, the null model was solely outperformed by one that exclusively included the ecological component, and only slightly so (ΔAICc = 1.23; Table 3B), indicating a notable bias derived from the extreme right-handedness of our species. Thus, whereas habitual tool use and absolute brain size clearly do not influence the direction of lateralization among anthropoids in general, the analyses provide evidence for a weak but detectable effect of ecology in non-human taxa. Such ecological signatures were found to be of somewhat greater relevance for patterns of lateralization strength. Here, a significant negative effect of a terrestrial lifestyle was found (p=0.04; see Table 2C). In line with that, models including the component ecology consistently outperformed the null model, which was not the case for those including only tool use and/or brain size (Table 3C). Still, even the accuracy of the model relying on ecology alone exceeded that of the null model only moderately (ΔAICc = 2.53; Table 3C). Thus, terrestrial anthropoids tend to show weaker hand preferences than arboreal ones while there is no correlation with brain size or habitual tool use for this trait.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77875/elife-77875-fig3-v1.jpg)
 
-**Figure 3.:** A, B) as well as strength (C) in anthropoid primates.Two models for lateralization direction were computed, one including (A), the other one excluding humans (B). The strength model encompassed humans as well (C).
+**Figure 3.:** Two models for lateralization direction were computed, one including (A), the other one excluding humans (B). The strength model encompassed humans as well (C).
+
+**Table 2.**
+ Conditional average of phylogenetic generalized least squares (PGLS) model coefficients for lateralization strength and direction in anthropoid primate species.Bold numbers indicate significant results. VIF = variable inflation factor.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">A: Conditional PGLS model average for lateralization direction, including humans</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Predictor</td>
+      <td>Estimate</td>
+      <td>Std. error</td>
+      <td>VIF</td>
+      <td>p value</td>
+    </tr>
+    <tr>
+      <td>Ecology (terrestrial lifestyle)</td>
+      <td>0.153</td>
+      <td>0.072</td>
+      <td>1.499</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>Tool use (present)</td>
+      <td>0.104</td>
+      <td>0.082</td>
+      <td>1.164</td>
+      <td>0.220</td>
+    </tr>
+    <tr>
+      <td>Log10 brain size</td>
+      <td>0.050</td>
+      <td>0.043</td>
+      <td>1.612</td>
+      <td>0.254</td>
+    </tr>
+    <tr>
+      <td colspan="5">B: Conditional PGLS model average for lateralization direction, excluding humans</td>
+    </tr>
+    <tr>
+      <td>Predictor</td>
+      <td>Estimate</td>
+      <td>Std. error</td>
+      <td>VIF</td>
+      <td>p value</td>
+    </tr>
+    <tr>
+      <td>Ecology (terrestrial lifestyle)Log10 brain sizeTool use (present)</td>
+      <td>0.108–0.0200.003</td>
+      <td>0.0560.0370.068</td>
+      <td>1.4191.4051.098</td>
+      <td>0.0670.6010.962</td>
+    </tr>
+    <tr>
+      <td colspan="5">C: Conditional PGLS model average for lateralization strength</td>
+    </tr>
+    <tr>
+      <td>Predictor</td>
+      <td>Estimate</td>
+      <td>Std. error</td>
+      <td>VIF</td>
+      <td>p value</td>
+    </tr>
+    <tr>
+      <td>Ecology (terrestrial lifestyle)</td>
+      <td>–0.143</td>
+      <td>0.067</td>
+      <td>1.813</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>Tool use (present)</td>
+      <td>0.060</td>
+      <td>0.070</td>
+      <td>1.235</td>
+      <td>0.402</td>
+    </tr>
+    <tr>
+      <td>Log10 brain size</td>
+      <td>0.035</td>
+      <td>0.047</td>
+      <td>1.997</td>
+      <td>0.468</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Results of phylogenetic generalized least squares (PGLS) model averaging for lateralization direction (considering the inclusion and exclusion of humans) and strength.Null models are shown in italics. Df. = degrees of freedom. AICc = second-order Akaike information criterion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">A: PGLS model for lateralization direction, including humans</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Components</td>
+      <td>Df.</td>
+      <td>AICc</td>
+      <td>ΔAICc</td>
+      <td>Weight</td>
+    </tr>
+    <tr>
+      <td>Ecology</td>
+      <td>3</td>
+      <td>–13.60</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>Ecology, tool use</td>
+      <td>4</td>
+      <td>–13.37</td>
+      <td>0.23</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Brain size</td>
+      <td>3</td>
+      <td>–12.22</td>
+      <td>1.38</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Ecology, brain size</td>
+      <td>4</td>
+      <td>–12.07</td>
+      <td>1.54</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Ecology, tool use, brain size</td>
+      <td>5</td>
+      <td>–10.87</td>
+      <td>2.73</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>(NULL)</td>
+      <td>2</td>
+      <td>–10.37</td>
+      <td>3.23</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Tool use, brain size</td>
+      <td>4</td>
+      <td>–10.20</td>
+      <td>3.41</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Tool use</td>
+      <td>3</td>
+      <td>–9.48</td>
+      <td>4.12</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td colspan="5">B: PGLS model for lateralization direction, excluding humans</td>
+    </tr>
+    <tr>
+      <td>Components</td>
+      <td>Df.</td>
+      <td>AICc</td>
+      <td>Δ</td>
+      <td>Weight</td>
+    </tr>
+    <tr>
+      <td>Ecology</td>
+      <td>3</td>
+      <td>–30.60</td>
+      <td>0</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>(NULL)</td>
+      <td>2</td>
+      <td>–29.37</td>
+      <td>1.23</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Ecology, brain size</td>
+      <td>4</td>
+      <td>–28.82</td>
+      <td>1.78</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Ecology, tool use</td>
+      <td>4</td>
+      <td>–28.01</td>
+      <td>2.59</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Tool use</td>
+      <td>3</td>
+      <td>–26.98</td>
+      <td>3.62</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Brain size</td>
+      <td>3</td>
+      <td>–26.97</td>
+      <td>3.63</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Ecology, tool use, brain size</td>
+      <td>5</td>
+      <td>–26.16</td>
+      <td>4.44</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Tool use, brain size</td>
+      <td>4</td>
+      <td>–24.42</td>
+      <td>6.18</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td colspan="5">C: PGLS model for lateralization strength</td>
+    </tr>
+    <tr>
+      <td>Components</td>
+      <td>Df.</td>
+      <td>AICc</td>
+      <td>ΔAICc</td>
+      <td>Weight</td>
+    </tr>
+    <tr>
+      <td>Ecology</td>
+      <td>3</td>
+      <td>–8.84</td>
+      <td>0</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Ecology, brain size</td>
+      <td>4</td>
+      <td>–7.85</td>
+      <td>0.99</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Ecology, tool use</td>
+      <td>4</td>
+      <td>–7.33</td>
+      <td>1.51</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>(NULL)</td>
+      <td>2</td>
+      <td>–6.31</td>
+      <td>2.53</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Ecology, brain size, tool use</td>
+      <td>5</td>
+      <td>–5.46</td>
+      <td>3.38</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Tool use</td>
+      <td>3</td>
+      <td>–5.05</td>
+      <td>3.80</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Brain size</td>
+      <td>3</td>
+      <td>–4.14</td>
+      <td>4.71</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Tool use, brain size</td>
+      <td>4</td>
+      <td>–3.19</td>
+      <td>5.66</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
 
 At the individual level, Bayesian models showed that neither age nor sex had an influence on lateralization direction when the total sample was concerned (the respective credible intervals overlapped with zero; Supplementary file 2). However, we recovered a notable effect of age on lateralization direction in the hominoid subsample exclusively, with subadults tending more toward left-handedness than adults (credible interval = –0.28 to –0.01; Supplementary file 2). We observed a different pattern for lateralization strength. Here, an effect of age but again not sex was recovered for both the total sample (credible interval = –0.11 to –0.05) and the hominoid subsample (credible interval = –0.16 to –0.02), with weaker lateralization in subadults compared to adults. Such an influence of age was not detectable in neither platyrrhines nor cercopithecoids when these taxa were considered separately (credible intervals overlapping with zero; Supplementary file 2).
 
 ## Discussion
 
-## General
+### General
 
 Our study provides the first quantitative phylogenetic perspectives on hand preferences in monkeys, apes, and humans. While population-level lateralization strength is highly varied among anthropoid primates and often distinctly expressed in specific lineages, direction fluctuates irrespective of phylogeny and appears comparatively uniform. Indeed, significant population-level biases in the latter are notably rare, both at the species and genus level. After expanding the sample size for some species in which such biases have been previously reported based on the tube task (siamang – Morino et al., 2017; de Brazza’s monkey – Schweitzer et al., 2007), we failed to replicate significant deviations from a chance distribution (even if not correcting for multiple testing). The only taxon in which significant hand use biases for bimanual manipulation occur frequently is constituted by the great apes and humans. Nevertheless, since sample sizes for species in this group are consistently and conspicuously large, statistical analyses performed on them (in particular the commonly applied one-sample t-test) will have higher power compared to tests done on taxa represented by a smaller number of individuals. It is therefore premature to assume that hominids display qualitatively different population-level lateralization patterns than other primates based on this statistical parameter. In fact, we would like to stress that due to this issue, simply determining the presence or absence of significant population-level handedness is of little merit for comparative studies, since species with vastly different hand preference distributions might fall into either category dependent on the available sample sizes (Figure 2). Looking at the population-level frequencies of right-handed, left-handed, and ambipreferent individuals, non-hominoid species such as the golden snub-nosed monkey (70.8% left-handers, 0% ambipreferents, MeanHI: –0.319) and the brown spider monkey (72.2% left-handers, 0% ambipreferents, MeanHI: –0.377) approach a human-like skew more than any great ape species does, albeit in the contrary direction to lateralization in our species (approximated herein as encompassing 87.3% right-handers, 3.1% ambipreferents, MeanHI: 0.761). Whether the hand preference patterns recovered for these rather poorly sampled monkeys are indeed representative for the respective species, needs to be clarified by future studies encompassing greater numbers of individuals.
 
@@ -71,7 +879,7 @@ Our finding that hand preference strength is generally weaker in juveniles compa
 
 The fact that population-level hand preference fluctuates without phylogenetic and with rather weak ecological signatures among anthropoids suggests that there are no strong directional selective pressures acting on this trait, different from what pertaining hypotheses predict (see below). On the other hand, population-level lateralization strength is more variable but consistent among closely related taxa, thus exhibiting a strong phylogenetic signal. PGLS modelling demonstrated a significant negative effect of a terrestrial lifestyle on hand preference strength, indicating a relevant but previously undescribed influence of ecology. It appears intuitive that terrestrial taxa tend to be less lateralized than arboreal ones, since the latter often need to flexibly stabilize their body in the canopy, for instance while foraging. Accordingly, one hand will be preferably used to provide such support, but whether the left or the right one adopts this function seems to be arbitrary. The fact that these lateralization tendencies were found in zoo-housed primates that often adopt locomotor regimes very different from their wild conspecifics (e.g., captive spider monkeys and gibbons spend considerable amounts of time moving and feeding on the ground) suggests a significant innate component to these patterns. However, within ecologically uniform groups the variability of hand preference strength can still be notable, at times even among closely related taxa (compare, e.g., Javan gibbon and siamang), pointing at further important but yet unidentified biological influences being at play as well. Accordingly, the explanatory power of PGLS models for lateralization strength that considered the component ecology, only moderately exceeded that of a null model (compare Table 3C). Nevertheless, given the great variability of lateralization strength among anthropoids and its ties to phylogeny, this aspect of manual lateralization should receive more research attention in the future. In the past, most work and evolutionary considerations regarding primate handedness have instead focused on lateralization direction, surely for anthropocentric reasons. As we attempt to show here, however, the explanatory power of these in parts very long-lived conjectures appears to be remarkably limited.
 
-## Testing prevalent hypotheses
+### Testing prevalent hypotheses
 
 Our data does not unambiguously support any of the tested hypotheses on hand preference evolution in primates. The traditional POH assumes right-hand tendencies for manipulation across anthropoid taxa. However, we found that anthropoid population-level lateralization is in most cases not notably shifted into either direction, with a slight majority of species displaying a weak left-hand bias (21 of 38 species). It is important to note that the recovered correlation between arboreality and hand preference strength does not corroborate any version of the POH, as they focus exclusively on lateralization direction. The novel POH assumes that terrestrial non-human primates tend to be right-handed, while arboreal ones tend to be left-handed, a prediction that gains weak support from our data. But while the mean handedness indices (HIs) of terrestrial and arboreal non-human species appear dissimilar, they do not deviate strongly from zero and there is a notable overlap in variation between the two ecological groups (MeanHIarboreal: –0.08, SD: 0.16; MeanHIterrestrial: 0.04, SD: 0.10). Thus, the predictive power of the hypothesis is markedly low, which is reflected by our modelling results (Tables 2 and 3). Admittedly though, improved sampling both within and across species might consolidate ecological patterns in the future, so that we certainly do not want to dismiss relevant effects of lifestyle on lateralization direction at this point.
 
@@ -83,7 +891,7 @@ All in all, none of the hypotheses on primate handedness that we addressed were 
 
 Another limitation is posed by our sample composition. Both the number of species and subjects per species need to be increased to further validate the patterns communicated here. In particular, extended sampling of the speciose New World monkey families Pitheciidae and Callitrichidae would be desirable, to make the inferences presented herein more robust. To allow for proper predictions on hand preferences in anthropoid ancestors and early crown-group primates, additional tests with tarsiers and strepsirrhines would be crucial. Our experience suggests that at least pitheciids and lemurs only reluctantly engage in the tube task so that it might be advisable to apply different bimanual testing schemes in these groups. In lemurs, puzzle boxes have been employed as such: The animals open the lid of a box with one hand while the other one is retrieving food stored within (Regaiolli et al., 2016; Batist and Mayhew, 2020). Future studies need to check the functional equivalence of this approach with the tube task (which is not a trivial question, compare, e.g., Lilak and Phillips, 2008) to establish a set of behavioral assays that could be employed to study hand preferences in the whole primate order. These methods might then also be applied to other dexterous and ecologically variable mammalian groups, such as musteloid carnivorans (Kitchener et al., 2017), to test hypotheses on the evolution of manual laterality across a wider phylogenetic margin. Finally, we need to acknowledge the limitations of our phylogenetic modelling approach. In particular, the binary coding of ecology (arboreal vs. terrestrial) obviously simplifies the remarkable spectrum of positional behaviors found among anthropoids. Future studies might explore alternative strategies to statistically code this multifaceted variable.
 
-## The evolutionary issue of human handedness
+### The evolutionary issue of human handedness
 
 In line with previous research, we found human right-handedness to be unparalleled among primates. We want to stress, however, that humans only deviate markedly from all other taxa in direction and not in strength of lateralization for bimanual manipulation. When it comes to the latter, the human condition is at least approached by groups such as leaf monkeys and spider monkeys. Perhaps surprisingly, handedness strength in great apes is modest in comparison (Table 1). Still, humans are highly deviant among predominately terrestrial primates in displaying such strong individual hand preferences. Whether this difference relates to bipedal locomotion, which has often been championed as a correlate of human handedness (Westergaard et al., 1998; Cashmore et al., 2008; Prieur et al., 2019), is open for debate. Since no other extant primate shows similar adaptations to terrestrial bipedalism, the validity of this assumption is hard to test in the framework of comparative approaches (but see Giljov et al., 2015). Interestingly, quadrupedal primates tend to exhibit stronger hand preferences when adopting the relatively unstable bipedal posture (Westergaard et al., 1998). Still, whether this finding has any evolutionary implications remains unclear and it should be emphasized that although humans are bipeds, a high percentage of complex manual actions, including numerous examples of bimanual manipulation and tool use, are not (and never have been) habitually performed in a bipedal posture. In any case, our results suggest that bipedalism is at least not a prerequisite to evolve strong hand preferences in anthropoid primates.
 
@@ -91,15 +899,548 @@ When turning to lateralization direction, however, the statement of Corballis, 1
 
 Besides that, there is of course the notion of coevolution between language and handedness, which might explain human-specific patterns of population-level manual lateralization. For this hypothesis to be convincing, the development and function of neural substrates controlling vocal behavior and those regulating manual motor control would need to be uniquely intertwined in humans. Indeed, the connectivity of the arcuate fasciculus, a tract critically involved in language processing and production, is highly derived in humans, suggesting important qualitative differences to other species (Rilling et al., 2008; but see Barrett et al., 2020, for other elements relevant for language production which are conserved across catarrhine primates). Nevertheless, how such neuroanatomical traits could functionally relate to population-level handedness remains totally unclear. In fact, despite the popularity of the idea, a link between handedness and language processing that goes beyond superficial left-hemisphere collateralization in right-handers (not even in the majority of left-handers) is far from evident (Fitch and Braccini, 2013). To defend an evolutionary connection between these phenomena, pleiotropic or otherwise functionally linked genes influencing the development of both language areas and those related to handedness would need to be identified. So far, this has not been accomplished and current evidence suggests that language and handedness are largely independent on various structural levels (Ocklenburg et al., 2014; Schmitz et al., 2017b). Hence, despite the continuing efforts to unravel the evolution of human right-handedness, including the ones made by us herein, it remains an essentially unsolved issue of human cognitive evolution.
 
-## Conclusions
+### Conclusions
 
 We recovered highly variable patterns of hand preference strength in anthropoid primates, which correlate with ecology and phylogeny. In contrast to this, no phylogenetic signal and weaker ecological effects were found for lateralization direction, and few species exhibit significant population-level hand preferences. We tested three pertaining conjectures on primate handedness evolution, the POH, tool use, and brain size hypotheses, but none were unambiguously corroborated by our data. Hypotheses on the evolution of primate hand preferences should put a stronger focus on manual lateralization strength rather than direction to address the phylogenetic patterns described herein. However, additional datasets on primates and potentially non-primate mammals are needed to robustly inform novel concepts. By relying on standardized testing paradigms, such as the tube task, researchers can effectively build on our as well as others’ results and expand multispecies datasets for further comparative phylogenetic studies. Although we are convinced that such approaches could significantly improve our understanding of general trends in the evolution of primate hand preferences, the unusual autapomorphic handedness pattern of humans will very likely require explanations that cannot be derived from such comparative behavioral studies. The evolutionary underpinnings of handedness expression in our species remain enigmatic.
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 We analyzed the expression of hand preferences for object manipulation in the tube task, as well as potential factors influencing their evolution, for a dataset of anthropoid primates (infraorder Anthropoidea: New World monkeys [Platyrrhini], Old World monkeys [Cercopithecoidea], and apes [Hominoidea]) from 38 species. Data from 501 individuals belonging to 26 primate species were collected in the tube task paradigm (see below) between September 2017 and May 2020 in 39 institutions in Europe, Brazil, and Indonesia (Table 4). Of these species, 14 had never been tested in the tube task before. Additional datasets were drawn from the literature, resulting in a total sample of 1786 individuals from 38 species and 22 genera, covering all anthropoid primate families except Aotidae. Data for humans were derived from Cochet and Vauclair, 2012. In this study, participants had to use one hand to repeatedly retrieve pieces of paper out of a plastic cylinder while the other one had to tilt and stabilize the receptacle. We considered this bimanual testing paradigm as functionally equivalent to the tube task. Our complete study sample with annotated respective literature sources and raw data on manual lateralization (itemized at the individual level and also at the insertion level for data generated in this study) can be viewed at Dryad (https://doi.org/10.5061/dryad.8sf7m0crv).
+
+**Table 4.**
+ Composition of the study sample, listing taxonomic identity, sex, age, and origin of subjects.See cited studies for locations of individuals drawn from the literature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Family</th>
+      <th>Species</th>
+      <th># Subjects tested</th>
+      <th># Subjects drawn from literature*</th>
+      <th>Total sample</th>
+      <th># Adult females</th>
+      <th># Adult males</th>
+      <th># Subadult females</th>
+      <th># Subadult males</th>
+      <th># Unsexed subadults</th>
+      <th>Locations for subjects in this study</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atelidae</td>
+      <td>Ateles fusciceps</td>
+      <td>37</td>
+      <td>9§</td>
+      <td>46</td>
+      <td>30</td>
+      <td>11</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Berlin (Zoo), Doué-la-Fontaine, Landau, Mulhouse, Munich, Osnabrück, Wuppertal</td>
+    </tr>
+    <tr>
+      <td>Atelidae</td>
+      <td>Ateles geoffroyi</td>
+      <td>9</td>
+      <td>14¶</td>
+      <td>23</td>
+      <td>12</td>
+      <td>9</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Basel, Karlsruhe</td>
+    </tr>
+    <tr>
+      <td>Atelidae</td>
+      <td>Ateles hybridus</td>
+      <td>18</td>
+      <td></td>
+      <td>18</td>
+      <td>10</td>
+      <td>7</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Doué-la-Fontaine, Erfurt, Frankfurt, Neuwied, Stuttgart</td>
+    </tr>
+    <tr>
+      <td>Callitrichidae</td>
+      <td>Leontopithecus chrysomelas</td>
+      <td>30</td>
+      <td></td>
+      <td>30</td>
+      <td>11</td>
+      <td>16</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Apeldoorn, Karlsruhe, Magdeburg, Mulhouse, São Paulo, Stuttgart, Wuppertal</td>
+    </tr>
+    <tr>
+      <td>Callitrichidae</td>
+      <td>Leontopithecus chrysopygus</td>
+      <td>15</td>
+      <td></td>
+      <td>15</td>
+      <td>6</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>São Paulo</td>
+    </tr>
+    <tr>
+      <td>Callitrichidae</td>
+      <td>Leontopithecus rosalia</td>
+      <td>28</td>
+      <td></td>
+      <td>28</td>
+      <td>7</td>
+      <td>16</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>Apeldoorn, Basel, Doué-la-Fontaine, Duisburg, Frankfurt, Heidelberg,Landau, Magdeburg, Münster, São Paulo</td>
+    </tr>
+    <tr>
+      <td>Cebidae</td>
+      <td>Saimiri sciureus</td>
+      <td></td>
+      <td>36**</td>
+      <td>36</td>
+      <td>14</td>
+      <td>16</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cebidae</td>
+      <td>Sapajus apella</td>
+      <td></td>
+      <td>25††,‡ ‡</td>
+      <td>25</td>
+      <td>10</td>
+      <td>11</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cebidae</td>
+      <td>Sapajus flavius</td>
+      <td>3</td>
+      <td>18‡ ‡</td>
+      <td>21</td>
+      <td>7</td>
+      <td>9</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>São Paulo</td>
+    </tr>
+    <tr>
+      <td>Cebidae</td>
+      <td>Sapajus xanthosternos</td>
+      <td>16</td>
+      <td>18‡ ‡</td>
+      <td>34</td>
+      <td>11</td>
+      <td>19</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Apeldoorn, Magdeburg, Münster, Overloon</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Cercocebus torquatus</td>
+      <td>18</td>
+      <td>13§ §</td>
+      <td>31</td>
+      <td>15</td>
+      <td>13</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Apeldoorn, Berlin (Tierpark), Karlsruhe, Münster</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Cercopithecus diana/roloway</td>
+      <td>20</td>
+      <td></td>
+      <td>20</td>
+      <td>9</td>
+      <td>7</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Amsterdam, Berlin (Tierpark), Doué-la-Fontaine, Duisburg,Heidelberg, Liberec, Mulhouse, Osnabrück</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Cercopithecus neglectus</td>
+      <td>12</td>
+      <td>13§ §,¶ ¶</td>
+      <td>25</td>
+      <td>8</td>
+      <td>12</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>Bekesbourne, Duisburg, Hannover, Overloon</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Macaca fascicularis</td>
+      <td>12</td>
+      <td>8***</td>
+      <td>20</td>
+      <td>13</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Basel, Hamm, Mönchengladbach</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Macaca nemestrina</td>
+      <td>29</td>
+      <td></td>
+      <td>29</td>
+      <td>12</td>
+      <td>15</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Arnhem, Bali, Berlin (Tierpark), Gelsenkirchen, Osnabrück</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Macaca silenus</td>
+      <td>35</td>
+      <td></td>
+      <td>35</td>
+      <td>16</td>
+      <td>17</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Apeldoorn, Bekesbourne, Berlin (Zoo), Cologne, Dresden, Duisburg, Hodenhagen, Rheine</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Macaca sylvanus</td>
+      <td>15</td>
+      <td>9†††,‡ ‡ ‡</td>
+      <td>24</td>
+      <td>11</td>
+      <td>12</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Aachen, Rheine</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Macaca tonkeana†</td>
+      <td></td>
+      <td>14§ § §</td>
+      <td>14</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Mandrillus sphinx</td>
+      <td>32</td>
+      <td></td>
+      <td>32</td>
+      <td>14</td>
+      <td>7</td>
+      <td>4</td>
+      <td>7</td>
+      <td>0</td>
+      <td>Amsterdam, Berlin (Zoo), Dresden, Hamm, Hodenhagen</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Papio anubis</td>
+      <td></td>
+      <td>84¶ ¶ ¶</td>
+      <td>84</td>
+      <td>48</td>
+      <td>22</td>
+      <td>5</td>
+      <td>9</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Papio hamadryas</td>
+      <td>24</td>
+      <td></td>
+      <td>24</td>
+      <td>14</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Cologne, Frankfurt, Krefeld</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Pygathrix cinerea</td>
+      <td></td>
+      <td>18****</td>
+      <td>18</td>
+      <td>7</td>
+      <td>11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Rhinopithecus roxellana</td>
+      <td></td>
+      <td>24††††</td>
+      <td>24</td>
+      <td>8</td>
+      <td>5</td>
+      <td>8</td>
+      <td>3</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Semnopithecus entellus</td>
+      <td>30</td>
+      <td></td>
+      <td>30</td>
+      <td>17</td>
+      <td>7</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Apeldoorn, Berlin (Zoo), Gelsenkirchen, Hannover, Heidelberg</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Theropithecus gelada</td>
+      <td>38</td>
+      <td></td>
+      <td>38</td>
+      <td>20</td>
+      <td>11</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Bekesbourne, Berlin (Tierpark), Magdeburg, Rheine, Stuttgart</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Trachypithecus auratus</td>
+      <td>8</td>
+      <td></td>
+      <td>8</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Bali, Stuttgart</td>
+    </tr>
+    <tr>
+      <td>Cercopithecidae</td>
+      <td>Trachypithecus hatinhensis</td>
+      <td></td>
+      <td>18****</td>
+      <td>18</td>
+      <td>8</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Gorilla gorilla</td>
+      <td></td>
+      <td>76‡ ‡ ‡ ‡</td>
+      <td>76</td>
+      <td>22</td>
+      <td>18</td>
+      <td>19</td>
+      <td>17</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Homo sapiens</td>
+      <td></td>
+      <td>127§ § § §</td>
+      <td>127</td>
+      <td>71</td>
+      <td>56</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Pan paniscus</td>
+      <td></td>
+      <td>118‡ ‡ ‡ ‡</td>
+      <td>118</td>
+      <td>29</td>
+      <td>23</td>
+      <td>35</td>
+      <td>31</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Pan troglodytes</td>
+      <td></td>
+      <td>536‡ ‡ ‡ ‡</td>
+      <td>536</td>
+      <td>186</td>
+      <td>138</td>
+      <td>110</td>
+      <td>102</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hominidae</td>
+      <td>Pongo sp.</td>
+      <td></td>
+      <td>47‡ ‡ ‡ ‡</td>
+      <td>47</td>
+      <td>17</td>
+      <td>12</td>
+      <td>9</td>
+      <td>9</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Hylobates lar</td>
+      <td>16</td>
+      <td>20¶ ¶ ¶ ¶,*****, †††††</td>
+      <td>36</td>
+      <td>14</td>
+      <td>18</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Berlin (Tierpark), Cologne, Doué-la-Fontaine, Landau, Stuttgart,Ulm, Wuppertal</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Hylobates moloch</td>
+      <td>22</td>
+      <td></td>
+      <td>22</td>
+      <td>8</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>0</td>
+      <td>Bekesbourne, Lympne, Munich</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Nomascus gabriellae</td>
+      <td>6</td>
+      <td>4*****</td>
+      <td>10</td>
+      <td>5</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Arnhem, Doué-la-Fontaine</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Nomascus leucogenys /siki</td>
+      <td>7</td>
+      <td>19¶ ¶ ¶ ¶,*****, ‡ ‡ ‡ ‡ ‡</td>
+      <td>26</td>
+      <td>15</td>
+      <td>7</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Apeldoorn, Frankfurt, Osnabrück</td>
+    </tr>
+    <tr>
+      <td>Hylobatidae</td>
+      <td>Symphalangus syndactylus</td>
+      <td>14</td>
+      <td>17¶ ¶ ¶ ¶, *****</td>
+      <td>31</td>
+      <td>12</td>
+      <td>11</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>Arnhem, Bekesbourne, Berlin (Zoo), Dortmund, Doué-la-Fontaine,Munich, Arnhem, Hodenhagen, Osnabrück</td>
+    </tr>
+    <tr>
+      <td>Pitheciidae</td>
+      <td>Pithecia pithecia</td>
+      <td>7</td>
+      <td></td>
+      <td>7</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Basel, Dresden, Krefeld</td>
+    </tr>
+    <tr>
+      <td>Total ‡</td>
+      <td></td>
+      <td>501</td>
+      <td>1285</td>
+      <td>1786</td>
+      <td>724</td>
+      <td>583</td>
+      <td>231</td>
+      <td>232</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Fulfilling our criteria.†Ages unknown, sex derived from given names.‡Not including M. tonkeana in sex and age specific categories.§Nelson and Boeving, 2015.¶Motes Rodrigo et al., 2018.**Meguerditchian et al., 2012.††Phillips et al., 2007.‡ ‡De Andrade and Sousa, 2018.§ §Maille et al., 2013.¶ ¶Schweitzer et al., 2007.***Chatagny et al., 2013.†††Schmitt et al., 2008.‡ ‡ ‡Regaiolli et al., 2018.§ § §Canteloup et al., 2013.¶ ¶ ¶Vauclair et al., 2005.****Cubí and Llorente, 2021.††††Zhao et al., 2012.‡ ‡ ‡ ‡Hopkins et al., 2011.§ § § §Cochet and Vauclair, 2012.¶ ¶ ¶ ¶Morino et al., 2017.*****Caspar et al., 2018.†††††Spoelstra, 2021.‡ ‡ ‡ ‡ ‡Fan et al., 2017._
 
 We classified the tested subjects into two age categories, adults (n=1307, sexually mature individuals) and subadults; the latter being comprised by infants (n=9, individuals that had not yet been weaned) and juveniles (n=456, weaned individuals that had not reached sexual maturity). If previous tube task studies assigned age categories to their subjects, we adopted this classification for the individuals concerned. In other cases and for our original data, age classification followed life history data from Harvey and Clutton-Brock, 1985. The taxonomy and nomenclature we apply follows Mittermeier et al., 2013, with the following exceptions: The recently diverging sister species pairs Cercopithecus diana and Cercopithecus roloway (Diana and Roloway monkeys) as well as Nomascus leucogenys and Nomascus siki (white-cheeked gibbons) are treated here as one respective taxonomic unit and data were pooled to obtain larger sample sizes (exact species identity of subjects is annotated in the raw data). Because the hand preference literature on orangutans (Pongo spp.) did not consider the species status of the individuals concerned, we analyzed respective data on the genus level. In other cases, we carefully checked the current taxonomic status of subjects drawn from the literature and tried to avoid the inclusion of interspecific hybrids. This was particularly relevant for data on lab-housed tufted capuchins (Sapajus spp.). If the species or hybrid status of animals was ambiguous, we did not consider them for our analyses (e.g., capuchins in Westergaard and Suomi, 1996).
 
@@ -107,7 +1448,7 @@ Although available for testing at most of the institutions we visited, lemurs co
 
 All experimental procedures strictly adhered to the guidance of the responsible zoo staff were approved by the institutional boards in charge and complied to the applicable animal welfare and testing regulations of the countries they were performed in. No further ethical permissions had to be obtained.
 
-## Experimental procedure and data scoring
+### Experimental procedure and data scoring
 
 All species were uniformly tested in the established bimanual tube task paradigm (Hopkins, 1995). Due to the pronounced differences in body size between the studied species, PVC tubes of varying length and diameter were employed (Figure 4). Lion tamarins (Leontopithecus) were presented with small-sized tubes that were 5 cm long and had an inner diameter of 1 cm. Capuchins and sakis (Sapajus, Pithecia) received 10 cm × 2 cm medium-sized tubes and all remaining species large tubes measuring 10 cm × 2.5 cm. The tubes were filled with various food incentives, which differed dependent on the nutrition regimes enacted by the respective institutions. Among preferred food items for cercopithecines, gibbons, spider monkeys, and capuchins were oatmeal mixed with banana mash, soaked pellets, and boiled carrots (but note that the latter did not appeal to Cercopithecus and Ateles). Geladas (T. gelada) exclusively received boiled carrots. Langurs (Semnopithecus, Trachypithecus) and sakis were preferably tested with boiled rice, and tubes for the latter were also stowed with nuts as an additional incentive. Lion tamarins received tubes filled with pure banana mash or commercial tamarin pie. Primates were preferably tested within their social groups. A separation of individuals was only undertaken in exceptional cases when it was necessary to counteract social tension created by the presentation of the tubes. Dependent on the constructional restraints of the enclosures, tubes were either placed into a separated part of the enclosure before the primates could enter or were handed over directly through the wire mesh. In the latter case, the hand that the experimenter used to offer the tube was noted. To check whether the hand used by the experimenter to offer the tube had an effect on the directional hand preferences of the tested primates, we ran a linear mixed effect model employing a binomial link function. No effect on the recovered hand preferences in the respective sessions was found (t=–1.31, SE = 0.02, p=0.191).
 
@@ -117,7 +1458,7 @@ All species were uniformly tested in the established bimanual tube task paradigm
 
 The tube tasks were recorded with digital cameras and scored from the video footage. For each subject, we obtained a minimum of 30 bimanual insertions (one hand is holding the tube, the other one is retrieving food; mean number of insertions: 50.66±20.98, range: 30–155) in at least six bouts (uninterrupted manipulation sequences, as defined by Morino et al., 2017; mean number of bouts: 20.60±11.13, range: 6–82). Literature data for individual subjects had to match or exceed these thresholds to be included into the analysis. Unimanual or foot-assisted insertions were not scored and were, whenever possible, also carefully excluded from the literature data. We noted the digit used to extract the food as well as the body posture of the manipulating individual (sitting, crouched bipedal stance, erect bipedal stance, suspended [clinging to wire mesh or other substrates without the hands stabilizing posture, always tail-assisted in spider monkeys]). The vast majority of responses were observed in a sitting position (n=22,993; 90.6%). Due to this imbalance, because posture-related information was mostly unavailable for literature data, and since its influence on manual laterality already received great research attention in the past (Sanford et al., 1984; Westergaard et al., 1998; Blois-Heulin et al., 2007; Laurence et al., 2011), we refrained from including posture effects into our analyses. Nevertheless, for potential future use by other researchers, we decided to include this measure, alongside information on digit use (‘N.A.’ if ambiguous in the respective footage) during manipulation, alongside the respective raw data.
 
-## Statistics
+### Statistics
 
 Data were analyzed in R (R Development Core Team, 2020). Preferably, analyses were performed on insertion data (also called frequencies) instead of manipulations bouts to approximate laterality. Unfortunately, not all available tube task studies provided insertion data (e.g., Maille et al., 2013; Fan et al., 2017; Spoelstra, 2021), so that in the final dataset, estimates of manual lateralization based on insertions and bouts had to be mixed for certain species (Cercocebus torquatus, Cercopithecus neglectus, Hylobates lar, N. leucogenys, and Sapajus spp.). However, since previous work demonstrated that hand preferences derived from bouts and insertions are highly correlated and non-conflicting, we do not consider this a confounding factor for our analysis (Hopkins et al., 2001; Hopkins, 2013b).
 

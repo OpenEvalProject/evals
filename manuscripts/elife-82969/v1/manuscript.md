@@ -15,18 +15,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00pd74e08 Institute of Cardiovascular Organogenesis and Regeneration, Faculty of Medicine, WWU Münster Münster Germany
-2. https://ror.org/00pd74e08 Münster Imaging Network, Cells in Motion Interfaculty Centre, Faculty of Biology, WWU Münster Münster Germany
-3. https://ror.org/0165r2y73 Max Planck Institute for Heart and Lung Research, Department of Developmental Genetics Bad Nauheim Germany
-4. https://ror.org/01v55qb38 Department of Cell Biology, National Cerebral and Cardiovascular Center Research Institute Osaka Japan
-5. https://ror.org/00pd74e08 Münster Imaging Network, Cells in Motion Interfaculty Centre, WWU Münster Münster Germany
-6. https://ror.org/00rcxh774 Institute for Dental Research and Oral Musculoskeletal Biology, Center for Biochemistry, Faculty of Medicine and University Hospital Cologne, University of Cologne Cologne Germany
+1. Institute of Cardiovascular Organogenesis and Regeneration, Faculty of Medicine, WWU Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+2. Münster Imaging Network, Cells in Motion Interfaculty Centre, Faculty of Biology, WWU Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+3. Max Planck Institute for Heart and Lung Research, Department of Developmental Genetics Bad Nauheim Germany ([ROR:0165r2y73](https://ror.org/0165r2y73))
+4. Department of Cell Biology, National Cerebral and Cardiovascular Center Research Institute Osaka Japan ([ROR:01v55qb38](https://ror.org/01v55qb38))
+5. Münster Imaging Network, Cells in Motion Interfaculty Centre, WWU Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+6. Institute for Dental Research and Oral Musculoskeletal Biology, Center for Biochemistry, Faculty of Medicine and University Hospital Cologne, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
 
 † Corresponding author
 
 ## Abstract
 
-Multiple factors are required to form functional lymphatic vessels. Here, we uncover an essential role for the secreted protein Svep1 and the transmembrane receptor Tie1 during the development of subpopulations of the zebrafish facial lymphatic network. This specific aspect of the facial network forms independently of Vascular endothelial growth factor C (Vegfc) signalling, which otherwise is the most prominent signalling axis in all other lymphatic beds. Additionally, we find that multiple specific and newly uncovered phenotypic hallmarks of svep1 mutants are also present in tie1 , but not in tie2 or vegfc mutants. These phenotypes are observed in the lymphatic vasculature of both head and trunk, as well as in the development of the dorsal longitudinal anastomotic vessel under reduced flow conditions. Therefore, our study demonstrates an important function for Tie1 signalling during lymphangiogenesis as well as blood vessel development in zebrafish. Furthermore, we show genetic interaction between svep1 and tie1 in vivo, during early steps of lymphangiogenesis, and demonstrate that zebrafish as well as human Svep1/SVEP1 protein bind to the respective Tie1/TIE1 receptors in vitro. Since compound heterozygous mutations for SVEP1 and TIE2 have recently been reported in human glaucoma patients, our data have clinical relevance in demonstrating a role for SVEP1 in TIE signalling in an in vivo setting.
+Multiple factors are required to form functional lymphatic vessels. Here, we uncover an essential role for the secreted protein Svep1 and the transmembrane receptor Tie1 during the development of subpopulations of the zebrafish facial lymphatic network. This specific aspect of the facial network forms independently of Vascular endothelial growth factor C (Vegfc) signalling, which otherwise is the most prominent signalling axis in all other lymphatic beds. Additionally, we find that multiple specific and newly uncovered phenotypic hallmarks of svep1 mutants are also present in tie1, but not in tie2 or vegfc mutants. These phenotypes are observed in the lymphatic vasculature of both head and trunk, as well as in the development of the dorsal longitudinal anastomotic vessel under reduced flow conditions. Therefore, our study demonstrates an important function for Tie1 signalling during lymphangiogenesis as well as blood vessel development in zebrafish. Furthermore, we show genetic interaction between svep1 and tie1 in vivo, during early steps of lymphangiogenesis, and demonstrate that zebrafish as well as human Svep1/SVEP1 protein bind to the respective Tie1/TIE1 receptors in vitro. Since compound heterozygous mutations for SVEP1 and TIE2 have recently been reported in human glaucoma patients, our data have clinical relevance in demonstrating a role for SVEP1 in TIE signalling in an in vivo setting.
 
 ## Introduction
 
@@ -42,11 +42,27 @@ Murine SVEP1 has been shown to bind to the α9 form of integrin (ITGA9) as well 
 
 ## Results
 
-## Svep1 is required for facial collecting lymphatic vessel formation in a Vegfc-independent manner
+### Svep1 is required for facial collecting lymphatic vessel formation in a Vegfc-independent manner
 
 Since svep1 mutants had previously been analyzed for lymphatic defects only in the trunk vasculature, we examined the head vasculature of svep1 mutants to detect further possible malformations of the lymphatic system. At 5 dpf we observed that svep1 mutants showed specific facial lymphatic defects, which seemed to be complementary to the facial lymphatic defects found in mutants of the Vegfc/Vegfr3 pathway members (Figure 1A). While mutants for Vegfc/Vegfr3 pathway members like ccbe1, adamts3/14, and vegfc retained the facial collecting lymphatic vessel (FCLV) (red dotted line in Figure 1A, B) but lacked all other structures of the facial lymphatics, svep1 mutants showed a specific loss of the FCLV. All other parts of the mature facial lymphatic network (including lymphatic branchial arches, lateral facial lymphatic, medial facial lymphatic, and otolithic lymphatic vessel (blue dotted line in Figure 1A)) were only partially reduced in svep1 mutants. Although the formation of the FCLV was strongly affected in all svep1 mutants analyzed, the severity of the defects of facial lymphatic structures varied between individual svep1 mutant embryos (Figure 1—figure supplement 1). Only simultaneous interference of both the Vegfc and Svep1 signalling pathways completely blocked the development of all facial lymphatic structures (Figure 1—figure supplement 2). To further characterize the differential roles of Svep1 and Vegfc during the formation of the facial lymphatic network, we examined the expression patterns of svep1 and vegfc during sprouting of the PHS-LP, the progenitor cells of the FCLV, at 50 hpf using transgenic reporter lines. We detected svep1 expression in cells juxtaposed to the sprouting LECs around the PHS, which later will form the FCLV, while vegfc expression was more restricted to the lateral facial lymphatic sprout arising from the CCV in all embryos analyzed (Figure 1C, Figure 1—figure supplement 3). Taken together, these observations indicate a Vegfc-independent role of Svep1 during the development of distinct aspects of the facial lymphatics.
 
-## Svep1 is essential for sprouting of BLECs and is expressed in close proximity to BLECs
+![Figure 1.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of facial lymphatic network at 5 dpf and maximum intensity projection of confocal images of flt4:mCitrine positive svep1 mutants (n = 10) and siblings (n = 6), highlighting facial lymphatic structures at 5 dpf. Scale bar = 100 µm. Note the absence of the FCLV (red dotted line) in svep1 mutants whereas other facial lymphatic structures are less strongly affected (OLV, LFL, MFL, and LAA marked by blue dotted lines). (B) Confocal images of flt4:mCitrine positive facial lymphatics in vegfc (n = 19), ccbe1 (n = 5), and adamts3;adamts14 (n = 2) mutants at 5 dpf. Scale bar = 100 µm. (C) Confocal images of svep1 and vegfc expression domains during sprouting from the PHS at 2 dpf, with schematic representation of different lymphatic progenitor populations. svep1 is expressed in close proximity to sprouting PHS-LPs, while vegfc expressing cells are more concentrated on the LECs arising from the CCV. Arrows point to sprouting PHS-LP. Scale bar = 50 µm. Expression patterns were confirmed in six embryos each (Figure 1—figure supplement 3). CCV, common cardinal vein; dpf, days post-fertilization; FCLV, facial collecting lymphatic vessel; FLS, facial lymphatic sprout; hpf, hours post-fertilization; LAA, lymphatic branchial arches; LEC, lymphatic endothelial cell; LFL, lateral facial lymphatic; MFL, medial facial lymphatic; OLV, otolithic lymphatic vessel; PHS, primary head sinus; PHS-LP, primary head sinus lymphatic progenitor; VA, ventral aorta; VA-A, ventral aorta angioblast; VA-L, ventral aorta lymphangioblast; WT, wildtype.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Confocal images of siblings and svep1 mutant embryos at 5 dpf, expressing the flt4:mCitrine transgene. Asterisk indicates reduced lymphatic vessels. Scale bar = 100 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Facial lymphatic phenotype of svep1; ccbe1 double mutants (n = 6) at 5 dpf expressing flt4:mCitrine. Note the complete lack of all lymphatic structures in double mutant embryo (D). OLV, LVL, MFL, marked by blue dotted lines. FCLV marked by red dotted lines. Scale bar = 100 µm.; FCLV, facial collecting lymphatic vessel; LFL, lateral facial lymphatic; MFL, medial facial lymphatic; OLV, otolithic lymphatic vessel.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Confocal images of svep1:Gal4; UAS:RFP; flt4:mCitrine and vegfc:Gal4; UAS:RFP; flt4:mCitrine transgenic embryos 2 dpf. Scale bar = 100 µm.
+
+### Svep1 is essential for sprouting of BLECs and is expressed in close proximity to BLECs
 
 Since Svep1 is required for the formation of facial lymphatic structures (Figure 1), we wondered whether it is also involved in the development of an additional set of lymphatic endothelial cells, the BLECs. In mutants of the Vegfc/Vegfr3 pathway, BLECs are completely absent (Bower et al., 2017; van Lessen et al., 2017). In svep1 mutants, BLECs were found to be absent in most cases, but some embryos showed either reduced numbers or – in rare cases – even wildtype-like numbers of BLECs at 3 dpf (Figure 2A, B). In line with the idea that svep1 is required for the sprouting and migration of BLECs, we observed svep1 expressing cells in close proximity to the migrating BLECs at 3 dpf (Figure 2C, D). Thus, there is close juxtaposition of svep1 expressing cells with migrating LECs in all developing lymphatic structures examined, including the PLs in the trunk (Karpanen et al., 2017).
 
@@ -54,33 +70,89 @@ Since Svep1 is required for the formation of facial lymphatic structures (Figure
 
 **Figure 2.:** (A) Confocal images of sprouting BLECs, marked by flt4:mCitrine, at 3 dpf in svep1 mutants and siblings. Asterisks mark missing BLECs in svep1 mutants. Scale bar = 100 µm. (B) Quantification of BLECs at 3 dpf on each side of the embryo showed that svep1 mutants have significantly less BLECs on one or both sides of the brain hemispheres compared to siblings. For statistical analysis, no BLECs were counted as 0, BLECs being present on only one hemisphere as 1, whereas BLECs being detectable on both brain hemispheres were included as 2, for each embryo (svep1+/+: n = 10; svep1+/−: n = 12; svep1−/−: n = 12). Mann–Whitney test was applied for statistical analysis. Values are presented as means ± standard deviation (SD), ****p < 0.0001, ns = not significant. Scale bar = 100 µm. (C) Confocal images of svep1:Gal4; UAS:RFP, showing svep1 expression immediately adjacent to BLECs, marked by arrowheads, at 3 dpf. Scale bar = 100 µm. (D) Magnification and reduced stack numbers of boxed area in (C). Arrowhead marks BLEC. Scale bar = 50 µm. BLEC, brain lymphatic endothelial cell; dpf, days post-fertilization; MsV, mesencephalic vein; PHS, primary head sinus;.
 
-## svep1 and tie1 mutants show near-identical lymphatic defects
+### svep1 and tie1 mutants show near-identical lymphatic defects
 
 Murine SVEP1 has been shown to bind the TIE2 ligands ANG1 and ANG2 in vitro and to regulate expression of Tie1 as well as Tie2 (Morooka et al., 2017). It also has been suggested to play a role in TIE2-related PCG (Young et al., 2020). Hence, we wanted to investigate the role of Tie signalling in zebrafish lymphangiogenesis in order to assess potential interactions with svep1 in an in vivo situation. Lymphatic defects have not been previously reported in zebrafish mutants for either tie1 or tie2 (Carlantoni et al., 2021; Gjini et al., 2011; Jiang et al., 2020). Given the fact that there seems to be a very specific requirement for svep1 in FCLV development, we analysed facial lymphatic structures of tie1 and tie2 mutants in direct comparison to svep1 mutants. Since tie1 mutants developed strong edema at 4 dpf (data not shown), we focused our analysis on lymphatic phenotypes at 2 and 3 dpf to exclude secondary effects on the lymphatic vasculature. Significantly, tie1 mutant embryos showed the same facial lymphatic defects as svep1 mutant embryos at 3 dpf (Figure 3A), with the FCLV being strongly affected. We confirmed this observation also in a lyve1:DsRed transgenic background (Figure 3—figure supplement 1). This finding suggests that Tie1, either independently or in concert with Svep1 is responsible for FCLV formation in a Vegfc-independent manner. Examining other lymphatic cells, we found that tie1 mutants did not show any BLECs at 3 dpf and exhibited significantly reduced numbers of PLs at 2 dpf, similar to svep1 mutants (Figure 3B–E). Importantly, tie2 mutant embryos, when examined for the same anatomical features, were found to display normal facial lymphatics, BLECs and PL numbers (Figure 3A–C and E). Taken together, these findings demonstrate that loss of tie1, but not tie2, results in lymphatic defects highly similar to the ones seen in svep1 mutants, indicating that Svep1 constitutes an essential component acting in the Tie1 pathway.
 
-## tie1 and svep1 mutants display identical PL cell migration and survival defects
+![Figure 3.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig3-v1.jpg)
+
+**Figure 3.:** (A) Facial lymphatics at 3 dpf in flt4:mCitrine positive tie1, svep1 and tie2 mutants and sibling embryos (lateral view). Arrowheads point to FCLV and asterisks indicate the absence of FCLV. Scale bar = 100 µm. (B) flt4:mCitrine; flt1:tdTomato positive dorsal head vasculature in tie1, svep1, and tie2 mutants and in siblings at 3 dpf (dorsal view). In svep1 and tie1 mutants (but not in tie2 mutants) the presence of BLECs is strongly reduced. Arrowheads point to BLECs and asterisks indicate areas lacking BLECs. Scale bar = 100 µm. (C) Confocal images of PL cells, indicated by arrowheads, at 2 dpf in flt4:mCitrine; flt1:tdTomato positive tie1, svep1, and tie2 mutants and siblings, showing reduced PL numbers in svep1 and tie1 mutants. Asterisks indicate missing PLs. Scale bar = 100 µm. (D) Quantification of the presence of BLECs in tie1 mutants compared to siblings. (tie1+/+: n = 6; tie1+/−: n = 16; tie1−/−: n = 10) Mann–Whitney test was applied for statistical analysis. ***p = 0.001, ns = not significant. (E) Quantification of PL cell numbers in tie1 (tie1+/+: n = 9; tie1+/−: n = 23; tie1−/−: n = 14), svep1 (svep1+/+: n = 16; svep1+/−: n = 31; svep1−/−: n = 19), and tie2 (tie2+/+: n = 17; tie2+/−: n = 27; tie2−/−: n = 16) mutants compared to siblings. Mann–Whitney test was applied for statistical analysis. Values are presented as means ± standard deviation (SD), ****p < 0.0001, ns = not significant; BLEC, brain lymphatic endothelial cell; dpf, days post-fertilization; FCLV, facial collecting lymphatic vessel; PL, parachordal lymphangioblast.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Confocal images of lyve1:DsRed transgenic svep1 (n = 9) and tie1 mutant (n = 6) embryos and siblings (n = 19) at 3 dpf. Scale bar = 100 µm. Arrowhead indicates FCLV in siblings and asterisk marks loss of FCLV in svep1 and tie1 mutants. dpf, days post-fertilization; FCLV, facial collecting lymphatic vessel.
+
+### tie1 and svep1 mutants display identical PL cell migration and survival defects
 
 PLs first migrate along the HM and then start to migrate dorsally and ventrally along arteries to form the DLLV or the TD, respectively. Previously, it was shown that PLs in svep1 mutants fail to migrate dorsally or ventrally and rather remain at the HM (Karpanen et al., 2017). Here, we compared PL migration in svep1 and tie1 mutants using overnight imaging from 2.5 to 3.5 dpf to analyse if PLs in tie1 mutants phenocopy the PL migration defects of svep1 mutants (Figure 4A–L, Figure 4—videos 1–3). While around 40–50% of PLs in sibling embryos migrated along the artery, only 11% of PLs in tie1 and svep1 mutants showed migration in either dorsal or ventral direction along the artery (Figure 4M, N). Additionally, we observed around 33% apoptotic PLs in tie1 mutants and 55% in svep1 mutants. These apoptotic events could be a consequence of failed migration, or could be due to decreased survival as a direct consequence of absent Svep1 or Tie1 activity. To further characterize migration of PLs in svep1 and tie1 mutants, we tracked and plotted the migration route of individual PLs (Figure 4O, Q, Figure 4—figure supplements 1 and 2) and quantified the migration distance in the Y direction (i.e. migration in dorsal or ventral direction), mean velocity and total migration distance in tie1 and svep1 mutants (Figure 4P, R). PLs in svep1 as well as in tie1 mutants showed significantly less migration in ventral and dorsal directions compared to siblings, while the mean velocity and total migration distance were unchanged. Therefore, we can conclude that Svep1 and Tie1 are required for PL migration along the arteries in dorsal or ventral direction. Since we could observe the same specific migratory defects in both svep1 and tie1 mutants, these results further support a possible cross-talk between both proteins.
 
-## tie1 mutants show blood vascular defects under reduced flow conditions
+![Figure 4.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig4-v1.jpg)
+
+**Figure 4.:** (A–L) Still frames from confocal time-lapse imaging of embryos in a flt4:mCitrine; flt1:tdTomato transgenic background. (A–D) PL migration (indicated by arrowheads) of sibling embryo along aISV from 2.5 to 3.5 dpf. (E–H) Failed PL migration (indicated by asterisk) of svep1 mutants and (I–L) tie1 mutants along artery from 2.5 to 3.5 dpf. (M, N) Classification of PL migration along arteries. Statistical analysis was performed using Mann–Whitney test comparing the % of PL migration along arteries in each sibling and mutant embryo (sibling: n = 96 PLs in 18 embryos; svep1−/−: n = 36 PLs in 15 embryos; siblings: n = 52 PLs in 14 embryos; tie1−/−: n = 28 PLs in 10 embryos); ****p < 0.0001, ***p = 0.0003. (O, Q) Representative cell tracking routes (tracks centred to origin) of single PL cells marked by different colours in siblings (n = 17 PLs in 4 embryos; n = 7 in 2 embryos), tie1−/− (n = 5 PLs in 2 embryos) and svep1−/− (n = 6 PLs in 3 embryos). (P, R) Quantification of dorsal and ventral PL migration (delta Y migration distance), mean velocity and total migration distance in svep1 and tie1 mutants compared to sibling embryos excluding apoptotic PLs quantified in (M, N) revealed decreased migration in dorsal and ventral direction in svep1 (*p = 0.0148) as well as tie1 mutants (**p = 0.0023). ns = not significant; aISV, arterial intersegmental vessel; dpf, days post fertilization; HM, horizontal myoseptum; PL, parachordal lymphangioblast. Scale bar = 100 µm (D, H, L = 25 µm).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Additional cell tracking routes of PL cells in svep1 (n = 12 PLs in 5 embryos) from 2.5 to 3.5 dpf compared to siblings (n = 72 PLs in 14 embryos) tracked with manual tracking tool in each of three individual experiments. dpf, days post fertilization; PL, parachordal lymphangioblast.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Additional cell tracking routes of PL cells in tie1 mutants (n = 14 PLs in 6 embryos) from 2.5 to 3.5 dpf compared to siblings (n = 42 PLs in 12 embryos) tracked with manual tracking tool in each of three individual experiments. dpf, days post fertilization; PL, parachordal lymphangioblast.
+
+### tie1 mutants show blood vascular defects under reduced flow conditions
 
 While svep1 mutants were initially identified on the basis of their lymphatic phenotype (Karpanen et al., 2017), Coxam et al. recently showed that svep1 mutant embryos display unique vascular defects under reduced flow conditions (Coxam et al., 2022). Treatment of embryos with 0.014% tricaine between 30 and 48 hpf leads to incomplete formation of the dorsal longitudinal anastomotic vessel (DLAV) with gaps and non-lumenized DLAV segments at 2 dpf in svep1 mutant embryos. This phenotype is accompanied by increased Vegfa/Vegfr signalling and increased number of Apelin positive tip cells (Coxam et al., 2022). To investigate if tie1 mutants mimic this very specific and unusual vascular defect, we treated embryos from tie1 heterozygous parents with 0.014% tricaine between 30 and 48 hpf, and subsequently imaged the intersegmental vessels in the trunk. Our analysis showed that tie1 mutants treated with tricaine exhibited significantly more gaps and fewer lumenized DLAV segments (Figure 5D) compared to both untreated tie1 mutants (Figure 5B) and treated siblings (Figure 5C, E, F), suggesting that Svep1 and Tie1 might interact not only in lymphangiogensis but also during blood vessel development. For tie2 and vegfc mutants we did not observe any defects in DLAV formation upon tricaine treatment, indicating that this phenotype is specific for loss of Svep1 and Tie1 (Figure 5—figure supplement 1). Additionally, upon tricaine treatment, and even in untreated conditions, apelin expressing ECs were increased in ISVs of tie1 mutants as already shown for svep1 morphants treated with tricaine in Coxam et al., 2022 (Figure 5G–J). Since we observed increased apelin expressing ECs in tie1 mutants already in untreated conditions, we investigated if svep1 morphants also show increased apelin expression even without tricaine treatment (Figure 5I, J). svep1 morphants already showed increased apelin expression in the ISVs in untreated conditions ( Figure 5—figure supplement 2). We confirmed our results using in situ hybridization ( Figure 5—figure supplement 3). These observations indicate that apelin expression is affected in tie1 mutants as well as svep1 morphants, and support the hypothesis of Tie1 and Svep1 acting in the same molecular pathway.
 
-## tie2 loss of function does not exacerbate the tie1 mutant phenotype
+![Figure 5.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Confocal images of sibling and tie1 mutant embryos at 2 dpf in a flt4:mCitrine and flt1:tdTomato transgenic background. (B’) Magnification and reduced stack of boxed area in (B). (C, D) Confocal images of sibling and tie1 mutant embryos treated with 0.014% tricaine from 30 until 48 hpf. Asterisks indicate incompletely formed DLAV segments. (D’) Magnification and reduced stack numbers of boxed area in (D). (E) Quantification of gaps in the DLAV in sibling and tie1 mutants that were either untreated or treated with 0.014% tricaine revealed significant increase of gaps in the DLAV in tie1 mutants. (F) Quantification of lumenized trunk segments of the DLAV in siblings and tie1 mutants, either untreated or treated with 0.014% tricaine (siblings untreated: n = 16; tie1−/− untreated: n = 20; siblings treated with 0.014% tricaine: n = 20; tie1−/− treated with 0.014% tricaine: n = 22), revealed significant decrease of lumenized segment numbers in the DLAV in tie1 mutants. Mann–Whitney test was applied for statistical analysis. (G, H) apelin:eGFP and flt1:tdTomato expression in 48-hpf-old embryos after tricaine treatment from 30 to 48 hpf and (I, J) in untreated conditions. (K) Maximum intensity projection of an aISV at 48 hpf, highlighting the ventral and dorsal region used for further quantifications in (J) adapted from Figure 5J of Coxam et al., 2022. (L) Quantification of ISVs with apelin expression in dorsal and ventral parts of the ISVs. Dorsal part was counted from DLAV until midline region. Lateral region was counted from midline region onwards in ventral direction. tie1 mutants showed significant increase of apelin positive ECs compared to siblings in untreated (dorsal: ***p = 0.0001; ventral: **p = 0.0028) and treated with 0.014% tricaine conditions (dorsal: **p = 0.0033; ventral: ***p = 0.0002) (siblings untreated: n = 53; tie1−/− untreated: n = 21; siblings treated with 0.014% tricaine: n = 66; tie1−/− treated with 0.014% tricaine: n = 28). Mann–Whitney test was applied for statistical analysis. Values are presented as means ± standard deviation (SD). ****p < 0.0001. Scale bar = 100 µm. hpf, hours post-fertilization; ISV, intersegmental vessel; DLAV, dorsal longitudinal anastomotic vessel; dpf, days post-fertilization.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Confocal images of sibling and tie2 mutant embryos, expressing flt4:mCitrine and flt1:tdTomato at 2 dpf treated with 0.014% tricaine from 30 until 48 hpf. (C) Quantification of gaps in the DLAV in sibling and tie2 mutants that were either untreated or treated with 0.014% tricaine (siblings untreated: n = 8; tie2−/− untreated: n = 7; siblings treated with 0.014% tricaine: n = 24; tie2−/− treated with 0.014% tricaine: n = 11). (D) Quantification of lumenized trunk segments of the DLAV in siblings and tie2 mutants, either untreated or treated with 0.014% tricaine. (E, F) Confocal images of sibling and vegfc mutant embryos, expressing flt4:mCitrine and flt1:tdTomato at 2 dpf treated with 0.014% tricaine from 30 until 48 hpf. (G) Quantification of gaps in the DLAV in sibling and tie2 mutants that were either untreated or treated with 0.014% tricaine (siblings untreated: n = 22; vegfc−/− untreated: n = 9; siblings treated with 0.014% tricaine: n = 26; vegfc−/− treated with 0.014% tricaine: n = 10). (H) Quantification of lumenized trunk segments of the DLAV in siblings and tie2 mutants, either untreated or treated with 0.014% tricaine. Mann–Whitney test was applied for statistical analysis. Scale bar = 100 µm. DLAV, dorsal longitudinal anastomotic vessel; dpf, days post-fertilization; ISV, intersegmental vessel.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) apelin:eGFP and flt1:tdTomato expression at 2 dpf in UIC compared to (B) svep1 morphants. (C, D) Quantification of ISVs with apelin expression in dorsal and ventral parts of the ISVs. Dorsal part was counted from dorsal longitudinal anastomotic vessel (DLAV) until midline region. Lateral region was counted from midline region onwards in ventral direction. svep1 morphants showed significant increase of apelin positive ECs compared to siblings (UIC: n = 21; svep1 MO: n = 21). Mann–Whitney test was applied for statistical analysis. Values are presented as means ± standard deviation (SD). ****p < 0.0001, ***p = 0.0002. Scale bar = 100 µm. dpf, days post-fertilization; hpf, hours post-fertilization; ISV, intersegmental vessel; UIC, uninjected control.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Representative pictures of in situ hybridization of apelin in svep1 (n = 7) and tie1 (n = 9) mutants (B, E) and siblings (n = 26 + 23) (A, D) at 48 hpf. Prior to genotyping the staining intensity was categorized in three groups (weak, medium, and strong). For statistical analysis (C, F), weak staining was counted as 0, medium staining as 1, whereas strong staining was included as 2, for each embryo. Mann–Whitney test was applied for statistical analysis. Values are presented as means ± standard deviation (SD), **p = 0.0011; ***p = 0.0001. Scale bar = 100 µm. hpf, hours post-fertilization.
+
+### tie2 loss of function does not exacerbate the tie1 mutant phenotype
 
 To investigate a possible contribution of Tie2 to lymphatic Tie signalling as well as possible compensatory mechanisms, we examined tie1; tie2 double mutants at 2 dpf (Figure 6A–G). While tie1 mutants showed a highly significant reduction in PL numbers (Figure 6D, G), we found that an additional loss of one or two functional copies of tie2 did not further affect PL numbers in tie1 mutant embryos (Figure 6E–G). Additionally, loss of one tie1 allele in tie2 mutants did not result in any defects (Figure 6C, G). To further exclude contributions of Tie2 at later stages of lymphatic development on TD formation, we quantified the segments of TD across 10 consecutive trunk segments at 5 dpf. In line with our analysis at 2 dpf, heterozygous loss of tie1 did not reveal any defects in tie2 mutants (Figure 6H). These results therefore do not support a role of tie2 in zebrafish lymphatic development.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig6-v1.jpg)
 
-**Figure 6.:** tie1; tie2 double mutants show no exacerbation of the tie1 mutant defects.(A–F) Confocal images of blood and lymphatic vasculature in the trunk of 2 dpf old embryos derived from tie1; tie2 double heterozygous parents, showing no genetic interaction between tie1 and tie2. (G) Quantification of PLs at 2 dpf and of thoracic duct fragments at 5 dpf (siblings: n = 50; tie1+/−; tie2+/−: n = 62; tie1+/+; tie2−/−: n = 13; tie1+/−; tie2−/−: n = 20; tie1−/−; tie2+/+: n = 10; tie1−/−; tie2+/−: n = 32; tie1−/−; tie2−/−: n = 10). (H) TD fragments were counted over the anterior-most 10 somites (siblings: n = 47; tie1+/−; tie2+/−: n = 34; tie1+/+; tie2−/−: n = 5; tie1+/−; tie2−/−: n = 16). Mann–Whitney test was applied for statistical analysis. ***p = 0.0002, ns = not significant. Scale bar = 100 µm. dpf, days post-fertilization; PL, parachordal lymphangioblast; TD, thoracic duct.
+**Figure 6.:** (A–F) Confocal images of blood and lymphatic vasculature in the trunk of 2 dpf old embryos derived from tie1; tie2 double heterozygous parents, showing no genetic interaction between tie1 and tie2. (G) Quantification of PLs at 2 dpf and of thoracic duct fragments at 5 dpf (siblings: n = 50; tie1+/−; tie2+/−: n = 62; tie1+/+; tie2−/−: n = 13; tie1+/−; tie2−/−: n = 20; tie1−/−; tie2+/+: n = 10; tie1−/−; tie2+/−: n = 32; tie1−/−; tie2−/−: n = 10). (H) TD fragments were counted over the anterior-most 10 somites (siblings: n = 47; tie1+/−; tie2+/−: n = 34; tie1+/+; tie2−/−: n = 5; tie1+/−; tie2−/−: n = 16). Mann–Whitney test was applied for statistical analysis. ***p = 0.0002, ns = not significant. Scale bar = 100 µm. dpf, days post-fertilization; PL, parachordal lymphangioblast; TD, thoracic duct.
 
-## Genetic interaction between svep1 and tie1 during PL migration in the trunk
+### Genetic interaction between svep1 and tie1 during PL migration in the trunk
 
 After having excluded a potential role for Tie2 during lymphangiogenesis, and given the high phenotypic similarity between tie1 and svep1 mutants, we wondered whether both genes might act in the same pathway during lymphangiogenesis and would therefore show a genetic interaction. To this end, we quantified PL cell numbers in embryos from svep1; tie1 double heterozygous parents at 2 dpf. In svep1; tie1 double heterozygous embryos we could not observe any PL number reduction, reduction of BLECs or reduced facial lymphatics compared to siblings (Figure 7A, B, H; Figure 7—figure supplement 1), while tie1 and svep1 single mutants again showed severe reduction of PL cell numbers (Figure 7C, D, H). Importantly, these defects were significantly exacerbated in svep1+/−; tie1−/− compared to svep1+/+; tie1−/− mutant embryos (Figure 7D, F, H). In svep1−/−, tie+/− mutant embryos, we observed a tendency of fewer PLs compared to svep1 single mutants (Figure 7C, E, H). However, this effect was not significant. Taken together, this interaction study strengthens the idea that Svep1 converges in the Tie1 pathway.
 
-## Svep1 is a binding ligand of Tie1
+![Figure 7.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig7-v1.jpg)
+
+**Figure 7.:** (A–G) Confocal images of blood and lymphatic vasculature in the trunk of 2-dpf-old embryos derived from svep1; tie1 double heterozygous fish, showing severely reduced PL numbers in svep1; tie1 double mutants and significant decrease of PL cell numbers in svep1+/−; tie1−/− compared to svep1+/+; tie1−/− (**p = 0.0012). (H) Quantification of PL cell numbers at 2 dpf using Mann–Whitney test (siblings: n = 45; svep1+/−; tie1+/−: n = 45; svep1−/−; tie1+/+: n = 13; svep1+/+; tie1−/−: n = 15; svep1−/−; tie1+/−: n = 20; svep1+/−; tie1−/−: n = 21; svep1−/−; tie1−/−: n = 11). Scale bar = 100 µm. Values are presented as means ± standard deviation (SD), ****p < 0.0001, ***p = 0.007, *p = 0.0163, ns = not significant. dpf, days post-fertilization; PL, parachordal lymphangioblast.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** flt4:mCitrine; flt1:tdTomato positive dorsal head vasculature in (A) siblings and (B) svep1+/−; tie1+/− embryos at 3 dpf (dorsal view). svep1+/−; tie1+/− embryos (n = 9) show normal amount of BLECs. Scale bar = 100 µm. Facial lymphatics at 3 dpf in flt4:mCitrine positive (D) svep1+/−; tie1+/− embryos (n = 6) and in (C) siblings (n = 7) (lateral view). Arrowheads point to BLECs in (A, B) and to FCLV in (C, D). Scale bar = 100 µm. BLEC, brain lymphatic endothelial cell; dpf, days post-fertilization; FCLV, facial collecting lymphatic vessel.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** In situ hybridization of tie1 in sibling (n = 14) (A, B) and svep1 mutants (n = 6) (C, D) at 24 hpf. Images have been assembled from individual pictures to ensure proper focus of all areas. (B and D) are magnifications of boxed area in (A and C), respectively. Scale bar = 100 µm. hpf, hours post-fertilization.
+
+### Svep1 is a binding ligand of Tie1
 
 To interrogate whether Svep1 and Tie1 bind directly, we performed biochemical analyses using co-immunoprecipitation of Svep1 and Tie1 proteins. We co-transfected zebrafish Svep1 with zebrafish Tie1 or Tie2 constructs and detected Tie1 and Tie2 after immunoprecipitation of Svep1. Tie1 showed robust binding with Svep1 in every experiment (seven out of seven independent experiments; Figure 8A), while Tie2 co-precipitated with Svep1 in only two out of four experiments (Figure 8—figure supplement 1A). These results demonstrate that zebrafish Tie1 constitutes a binding partner for zebrafish Svep1. We performed the same experiment with human proteins, this time using only the C-terminus of human SVEP1 (aa: 2261–3571). We could observe that TIE1 showed binding to SVEP1, demonstrating that the SVEP1/TIE1 interaction is evolutionary conserved (Figure 8B). Additionally, we observed SVEP1 association with TIE2 (Figure 8—figure supplement 1B). In a second approach, we used purified SVEP1 protein (C-terminus) and the lysates of TIE1 or TIE2 transfected cells, to confirm our results and to obtain a better impression of the respective binding affinities. After pull-down of SVEP1, we detected binding of SVEP1 with TIE1 (Figure 8C) but no significant binding of TIE2 (Figure 8—figure supplement 1C). Therefore, we conclude that TIE1 is a ligand for SVEP1.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig8-v1.jpg)
+
+**Figure 8.:** (A) 293T HEK cells were transfected with zebrafish Svep1-HIS (zfSvep1) and zebrafish Tie1-HA (zfTie1). zfSvep1 was immunoprecipitated and associated Tie1 was detected by western blot. (B) Co-immunoprecipitation of C-terminal human SVEP1 co-transfected in 293T HEK cells with human TIE1. (C) Pull-down of recombinant C-terminal human SVEP1-Strep-tag II protein, which was incubated with TIE1 transfected 293T HEK cell lysates, shows binding of TIE1. Protein structure with all domains indicated and C-terminal part used for pull-down assays (adapted from Figure 2F of Karpanen et al., 2017, published under the CC BY-NC 4.0 license, https://creativecommons.org/licenses/by-nc/4.0/). It is not covered by the CC-BY 4.0 license and further reproduction of this panel would need to follow the terms of the CC BY-NC 4.0 license. Ly05-265 indicates position of stop codon in the zebrafish hu6985 allele (Karpanen et al., 2017), suggesting that the protein domains C-terminal to the nonsense allele are critical for function. Red and blue rectangle: signal peptide; blue pentagon: von Willebrand factor type A domain (vWF); orange rectangle: ephrin-receptor like domain; brown rectangle: Hyalin repeat; yellow ovals: SUSHI repeat; green pentagons: epidermal growth factor (EGF)-like and calcium-binding EGF-like domains; and pink hexagon: pentraxin domain (PTX).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/82969/elife-82969-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) 293T HEK cells were transfected with zebrafish Svep1-HIS (zfSvep1) and zebrafish Tie2-HA (zfTie2). zfSvep1 was immunoprecipitated and associated Tie2 was analysed by western blot. (B) Immunoprecipitation of SVEP1 protein bound to TIE2. (C) Pull-down of recombinant C-terminal human SVEP1-Strep-tag II, which was incubated with TIE2 transfected cell lysates, shows no binding of TIE2.
 
 ## Discussion
 
@@ -98,40 +170,407 @@ In summary, we here show that zebrafish Svep1 as well as human SVEP1 can bind to
 
 ## Materials and methods
 
-## Zebrafish strains and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(flt4:mCitrine)hu7135</td>
+      <td>van Impel et al., 2014</td>
+      <td>ZFIN: hu7135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(flt1enh:tdTomato)hu5333</td>
+      <td>Bussmann and Schulte-Merker, 2011</td>
+      <td>ZFIN: hu5333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(lyve1:DsRed2)nz101</td>
+      <td>Okuda et al., 2012</td>
+      <td>ZFIN: nz101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(UAS:RFP)nkuasrfp1a</td>
+      <td>Asakawa et al., 2008</td>
+      <td>ZFIN: nkuasrfp1a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(vegfc:Gal4FF)mu402</td>
+      <td>Wang et al., 2020</td>
+      <td>ZFIN: mu402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(svep1:GAL4FF)hu8885</td>
+      <td>Karpanen et al., 2017</td>
+      <td>ZFIN: hu8885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>adamts3hu10891</td>
+      <td>Wang et al., 2020</td>
+      <td>ZFIN: hu10891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>adamts14hu11304</td>
+      <td>Wang et al., 2020</td>
+      <td>ZFIN: hu11304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>vegfchu6410</td>
+      <td>Helker et al., 2013; Le Guen et al., 2014</td>
+      <td>ZFIN: hu6410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>ccbe1hu10965</td>
+      <td>Kok et al., 2015</td>
+      <td>ZFIN: hu10965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>svep1hu6123</td>
+      <td>Karpanen et al., 2017</td>
+      <td>ZFIN: hu6123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>svep1hu4767</td>
+      <td>Karpanen et al., 2017</td>
+      <td>ZFIN: hu4767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>tie1bns208</td>
+      <td>Carlantoni et al., 2021</td>
+      <td>ZFIN: bns208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>tie2hu1667</td>
+      <td>Gjini et al., 2011</td>
+      <td>ZFIN: hu1667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>TgBAC(apln:EGFP)bns157</td>
+      <td>Helker et al., 2020</td>
+      <td>ZFIN: bns157</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T HEK cells</td>
+      <td>Roukens et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 EBNA</td>
+      <td>Manuel Koch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. rerio)</td>
+      <td>zfTie1-HA in PCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by Naoki Mochizuki</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. rerio)</td>
+      <td>zfTie2-HA in PCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>zfTie2 cDNA provided by Naoki Mochizuki</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. rerio)</td>
+      <td>zfSvep1-HIS in PCS2+</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>TIE1-HA in PCEP4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TIE1 cDNA provided by Hellmut Augustin</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>TIE2-HA in PCEP4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by Manuel Koch</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>SVEP1-Strep II in PCEP4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by Manuel Koch</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>mouse nope ectodomain with Fc tag strep</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by Manuel Koch</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (rat monoclonal)</td>
+      <td>Roche</td>
+      <td>11867423001</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rat (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td># A18745</td>
+      <td>1:15,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HIS (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td># PA1-983B</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HIS (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td># MA1-135</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse (goat polyclonal)</td>
+      <td>dako</td>
+      <td>P0447</td>
+      <td>1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DIG primary antibody (sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>11093274910</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>apelin in pGEM-t-easy</td>
+      <td>Provided by Christian Helker</td>
+      <td></td>
+      <td>For in situ probe generation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SVEP1-Strep IIPurified recombinant protein</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Provided by Manuel Koch</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DIG RNA Labeling Mix</td>
+      <td>Roche</td>
+      <td>11277073910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamin 2000 transfection reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11668030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE HD Transfection Reagen</td>
+      <td>Promega</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T4 Ligase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>EL0012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCS</td>
+      <td>Merck Chemicals GmbH</td>
+      <td>F7524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q5 Hot Start High-Fidelity DNA Polymerase</td>
+      <td>New England Biolabs GmbH</td>
+      <td>M0493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM/F-12, GlutaMAX Supplement</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10565018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strep-Tactin Superflow high capacity resin</td>
+      <td>IBA Lifesciences GmbH</td>
+      <td>2-1208-002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6</td>
+      <td>GraphPad Software, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji-ImageJ (version 1.52);Manual tracking plugin;StrackReg plugin</td>
+      <td>DOI:10.1038/nmeth.2019; Fabrice Cordelières, Institut Curie, Orsay (France);DOI:10.1109/83.650848</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python (version 3.8)</td>
+      <td>Python.org</td>
+      <td>RRID:SCR_008394</td>
+      <td>Code available at https://github.com/MuensterImagingNetwork/Hussmann_et_al_2022</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Strep-Tactin HRP conjugate</td>
+      <td>Iba-lifesciences</td>
+      <td>2-1502-001</td>
+      <td>1:10,000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish strains and husbandry
 
 Animal work followed guidelines of the animal ethics committees at the University of Münster, Germany, and fish were maintained following FELASA guidelines (Aleström et al., 2020). The following transgenic and mutant lines have been used in this study: Tg(flt4:mCitrine)hu7135 (van Impel et al., 2014), Tg(flt1enh:tdTomato)hu5333 (Bussmann and Schulte-Merker, 2011), Tg(lyve1:DsRed2)nz101 (Okuda et al., 2012), Tg(UAS:RFP)nkuasrfp1a (Asakawa et al., 2008), Tg(vegfc:Gal4FF)mu402 (Wang et al., 2020), Tg(svep1:GAL4FF)hu8885 (Karpanen et al., 2017), adamts3hu10891 (Wang et al., 2020), adamts14hu11304 (Wang et al., 2020), vegfchu6410 (Helker et al., 2013; Le Guen et al., 2014), ccbe1hu10965 (Kok et al., 2015), svep1hu6123 (Karpanen et al., 2017), svep1hu4767 (Karpanen et al., 2017) (only used for svep1;ccbe1 double knockout, Figure 1—figure supplement 2), tie1bns208 (Carlantoni et al., 2021), tie2hu1667 (Gjini et al., 2011), and TgBAC(apln:EGFP)bns157 (Helker et al., 2020).
 
-## Genotyping
+### Genotyping
 
 For genotyping of svep1, adamts3, adamts14, vegfc, and tie2, KASPar (Biosearch Technologies) was used, and for ccbe1 and tie1 High-Resolution Melt Analysis (Samarut et al., 2016; Supplementary file 1).
 
-## Live imaging and microscopy
+### Live imaging and microscopy
 
 Live imaging was carried out on 2, 3, and 5 dpf embryos. Before 24 hpf, 1-phenyl-2-thiourea (75 mM, Sigma, #P7629) was added to inhibit melanogenesis (Karlsson et al., 2001). For imaging, embryos were anesthetized with 42 mg/l tricaine (Sigma, #A5040) and embedded in 0.8% low melting agarose (Thermo Fischer, #16520100) dissolved in embryo medium. Embryo medium containing tricaine was layered on top of the agarose once solidified for overnight imaging. Additionally, embryos were kept at 28°C during overnight imaging. Embryos were imaged with an inverted Leica SP8 microscope using a ×20/×0.75 dry objective or a ×40/1.1 water immersion objective detection and employing Leica LAS X 3.5.7.23225 software. Scoring of PLs or TD fragments was performed using a Leica M165 FC and an X-Cite 200DC (Lumen Dynamics) fluorescent light source. Confocal stacks were processed using Fiji-ImageJ version 1.52 g. Brightfield images were taken using an Olympus SZX16 microscope and a LEICA DFC450 C camera. Images and figures were assembled using Adobe Illustrator. All data were processed using raw images with brightness, colour, and contrast adjusted for printing.
 
-## Cell tracking
+### Cell tracking
 
 To quantify the migration distance and mean velocity of the PLs from 2.5 to 3.5 dpf, the leading edge of each PL was manually tracked using ‘Manual Tracking’-Plugin (Fabrice Cordelières, Institut Curie, Orsay (France)) in Fiji-ImageJ (version 1.52 g source, Schindelin et al., 2012). For image stabilization ‘StackReg’ using rigid body (Thevenaz et al., 1998) was applied to the maximum intensity projections of the time-lapse movies prior to manual tracking. Mean track velocity and total migration distance (sum of all leading edge displacements) were calculated using a custom Python script (version 3.8). To plot the migration route, track start coordinates were centred to the origin and individual cell tracks were represented using a line plot (Python). Y PL migration was defined as the absolute value of the distance in Y direction (dorsal and ventral) from track origin to the last tracking point (ΔY). Scripts used for data analysis are available at GitHub. Data were analyzed using GraphPad for plotting and statistical analysis.
 
-## Tricaine treatment
+### Tricaine treatment
 
 Where applicable, embryos were treated with 0.014% tricaine (Sigma, #A5040) from 30 to 48 hpf to slow down heart rate and blood flow during DLAV formation as previously described (Coxam et al., 2022).
 
-## In situ hybridization
+### In situ hybridization
 
 Antisense RNA probes of tie1 were generated from amplified cDNA. Primers for cDNA generation are listed in Supplementary file 1. Antisense RNA probes of apelin were generated from cDNA kindly provided by Christian Helker (Helker et al., 2015). Since the reverse primer contained a T3 overhang, we proceeded with in vitro transcription using T3 RNA polymerase and digoxigenin (DIG)-labelled UTP (2 hr at 37°C). Fixation of 24 hpf embryos from a svep1 heterozygous incross was performed with 4% paraformaldehyd (PFA) overnight at 4°C. In situ hybridization was performed according to previous published protocols using 100 ng of each of the respective probes (Schulte-Merker, 2002). Staining procedure was monitored regularly over time to ensure proper detection of differences in staining intensities between embryos.
 
-## Cloning and expression of human SVEP1, TIE1, and TIE2
+### Cloning and expression of human SVEP1, TIE1, and TIE2
 
 The C-terminal part of SVEP1 was amplified from human cDNA using Q5 polymerase and cloned into the sleeping beauty transposon system (Kowarz et al., 2015; NM_153366.4 aa: 2261–3571; N-terminal BM-40 signal peptide followed by a Twin-Strep-tag). After verification of the plasmid by sequencing, the expression construct was co-transfected with the transposase plasmid (10:1) into HEK293 EBNA cells (tested negative for mycoplasma) using FuGENE HD transfection reagent (Promega GmbH, Madison, USA) in DMEM/F12 supplemented with 6% fetal bovine serum. After high puromycin selection (3 µg/ml; Sigma), cells were expanded in triple flasks and protein production induced with doxycycline (0.5 µg/ml, Sigma). Supernatants of confluent cells were harvested every 3 days, filtered and recombinant proteins purified via Strep-TactinXT (IBA Lifescience, Göttingen, Germany) resin. SVEP1 was eluted with biotin-containing buffer (IBA Lifescience, Göttingen, Germany), dialyzed against TBS and stored at 4°C or −80°C. The human sequences of TIE1 (NP_005415.1 aa: 21–1138) and TIE2 (NP_000450.3 aa: 23–1124) were cloned into the PCEP episomal expression system (transient) including an HA-tag sequence at the C-terminal part in the reverse primers. For the PCR amplification, TIE2 was amplified from human cDNAs, and TIE1 from a plasmid kindly provided by Hellmut Augustin.
 
-## In vitro binding assay
+### In vitro binding assay
 
 For co-immunoprecipitation we first transfected 293T HEK cells with zebrafish Svep1-HIS, zebrafish Tie1-HA, zebrafish Tie2-HA, human SVEP1 (C-Terminus)-StrepII, human TIE1-HA or human TIE2-HA as well as the indicated combinations using Lipofectamin 2000 reagent. After 48 hr the cell lysates were collected using Ripa buffer (50 mM Tris pH 7.5, 1% NP-40, 0.1% sodium dodecyl sulfate, 0.5% Na-deoxycholate, 150 mM NaCl). For co-immunoprecipitation of zebrafish Svep1-HIS, the cell lysates were incubated for 1 hr with 30 µl G-Sepharose beads (17061801, GE Healthcare) and 3 µg of anti-HIS antibody (# PA1-983B, Invitrogen). For pull-down of human SVEP1-StrepII, we used Strep-TactinXT 4Flow high capacity resin (2-5030-025, iba-lifesciences). Afterwards, the beads were washed five times with Ripa buffer and boiled for 5 min at 95°C in sample buffer.
 
 In an independent approach, the C-terminus of human StrepII tagged SVEP1 protein (amino acids 2261–3571) was generated and purified. This protein and a StrepII tagged control protein (3 µg) were incubated with 50 µl Strep-TactinXT 4Flow high capacity resin in 500 µl binding buffer (50 mM Tris–HCl at pH 7.5, 100 mM NaCl, 0.02% Triton X-100) for 30 min and added to the cell lysate of TIE1-HA and TIE2-HA transfected cells. After 2 hr incubation, the beads were washed with Ripa buffer and processed like the co-transfection samples. All samples were subjected to western blot analysis using anti-HA high affinity antibody (11867423001, Roche) to detect co-precipitated TIE1 and TIE2. The respective secondary antibody was HRP conjugated and detected using Lumi-Light Western Blotting Substrate (12015200001, Roche) and ChemiDoc MP Imaging System (Biorad). For western blot analysis of zfSvep1-HIS we used anti-His mouse antibody (# MA1-135, Invitrogen) and for SVEP1 we used Strep-Tactin HRP conjugate (2-1502-001, iba-lifesciences).
 
-## Statistics and reproducibility
+<table>
+  <thead>
+    <tr>
+      <th>antibody</th>
+      <th>dilution</th>
+      <th>provider</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>anti-HA rat</td>
+      <td>1:10000</td>
+      <td>11867423001, Roche</td>
+    </tr>
+    <tr>
+      <td>anti-rat donkey</td>
+      <td>1:15000</td>
+      <td># A18745, Invitrogen</td>
+    </tr>
+    <tr>
+      <td>anti-HIS rabbit</td>
+      <td>1:250</td>
+      <td># PA1-983B, Invitrogen</td>
+    </tr>
+    <tr>
+      <td>anti-HIS mouse</td>
+      <td>1:250</td>
+      <td># MA1-135, Invitrogen</td>
+    </tr>
+    <tr>
+      <td>anti-mouse goat</td>
+      <td>1:4000</td>
+      <td>P0447, dako</td>
+    </tr>
+    <tr>
+      <td>Strep-Tactin HRP conjugate</td>
+      <td>1:10000</td>
+      <td>2-1502-001, iba-lifesciences</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics and reproducibility
 
 Data sets were tested for normality (Shapiro–Wilk) and equal variance p-values of data sets with normal distribution were determined by Welch’s t-test or Student’s t-test. In case data values did not show normal distribution, a Mann–Whitney test was performed instead. All statistical tests were performed using GraphPad Prism 8 or Microsoft Excel. All experiments were carried out at least two times. Only tricaine treatment of vegfc mutants (Figure 5—figure supplement 1) was carried out once.

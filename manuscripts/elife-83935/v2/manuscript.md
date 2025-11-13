@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Physiology, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/00wm07d60 Department of Structural Biology, Van Andel Institute Grand Rapids United States
-3. https://ror.org/00za53h95 Solomon H. Snyder Department of Neuroscience, Johns Hopkins University School of Medicine Baltimore United States
+1. Department of Physiology, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Structural Biology, Van Andel Institute Grand Rapids United States ([ROR:00wm07d60](https://ror.org/00wm07d60))
+3. Solomon H. Snyder Department of Neuroscience, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
 ## Abstract
 
-Proton-activated chloride (PAC) channel is a ubiquitously expressed pH-sensing ion channel, encoded by PACC1 ( TMEM206 ). PAC regulates endosomal acidification and macropinosome shrinkage by releasing chloride from the organelle lumens. It is also found at the cell surface, where it is activated under pathological conditions related to acidosis and contributes to acid-induced cell death. However, the pharmacology of the PAC channel is poorly understood. Here, we report that phosphatidylinositol (4,5)-bisphosphate (PIP 2 ) potently inhibits PAC channel activity. We solved the cryo-electron microscopy structure of PAC with PIP 2 at pH 4.0 and identified its putative binding site, which, surprisingly, locates on the extracellular side of the transmembrane domain (TMD). While the overall conformation resembles the previously resolved PAC structure in the desensitized state, the TMD undergoes remodeling upon PIP 2 -binding. Structural and electrophysiological analyses suggest that PIP 2 inhibits the PAC channel by stabilizing the channel in a desensitized-like conformation. Our findings identify PIP 2 as a new pharmacological tool for the PAC channel and lay the foundation for future drug discovery targeting this channel.
+Proton-activated chloride (PAC) channel is a ubiquitously expressed pH-sensing ion channel, encoded by PACC1 (TMEM206). PAC regulates endosomal acidification and macropinosome shrinkage by releasing chloride from the organelle lumens. It is also found at the cell surface, where it is activated under pathological conditions related to acidosis and contributes to acid-induced cell death. However, the pharmacology of the PAC channel is poorly understood. Here, we report that phosphatidylinositol (4,5)-bisphosphate (PIP2) potently inhibits PAC channel activity. We solved the cryo-electron microscopy structure of PAC with PIP2 at pH 4.0 and identified its putative binding site, which, surprisingly, locates on the extracellular side of the transmembrane domain (TMD). While the overall conformation resembles the previously resolved PAC structure in the desensitized state, the TMD undergoes remodeling upon PIP2-binding. Structural and electrophysiological analyses suggest that PIP2 inhibits the PAC channel by stabilizing the channel in a desensitized-like conformation. Our findings identify PIP2 as a new pharmacological tool for the PAC channel and lay the foundation for future drug discovery targeting this channel.
 
 ## Introduction
 
@@ -32,39 +32,67 @@ Major breakthroughs have been made in recent years to characterize the structure
 
 ## Results
 
-## PIP2 inhibits PAC channel activity
+### PIP2 inhibits PAC channel activity
 
 Considering the widespread influence of PIP2 on ion channel function, we hypothesized that PIP2 could potentially regulate the PAC channel. To test whether PIP2 modulates PAC activity, we applied a soluble version of PIP2 lipid, dioctanoyl phosphatidylinositol 4,5 bisphosphate (diC8-PIP2), to HEK293 cells, which endogenously express the acid-induced chloride currents. Whole-cell ICl,H were detected in real-time, by perfusing the cells with an acidic solution at pH 5.0, followed by an application of 10 µM diC8-PIP2. Immediately upon adding PIP2, there was a rapid drop in ICl,H, followed by a steady decline (Figure 1A). Furthermore, this effect was reversible by washing out the soluble lipid from the cell membrane with a pH 5.0 solution (Figure 1A). Approximately 37% of the initial current amplitude was detectable after PIP2 perfusion for 150 s (Figure 1B and C). This short timescale of PIP2 action on PAC activity indicates that its effect is most likely direct. Further supporting this, PIP2 inhibited ICl,H in a dose-dependent manner, with half-maximal inhibition, IC50, of 4.9 µM (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative whole-cell current trace at + 100 mV (2 s/sweep) showing inhibition of endogenous PAC currents by bath perfusion of soluble diC8-PIP2 at 10 μM concentration. (B) PAC current densities before and after application of PIP2 for 150 s. Statistical significance was determined using a two-tailed Student’s paired t-test. (C) Representative I/V curve of pH 5-induced PAC currents before and after PIP2 treatment. (D) Dose-dependent inhibition of pH 5-induced PAC currents by PIP2 yielded a half-maximal inhibition, IC50, of 4.91 μM with a Hill slope of 1.57. Bars are reported as mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Current amplitude was measured at pH 5.0 before (1) and after (2) perfusion of diC8-PIP2 at pH 7.3 (+PIP2). The control cells were perfused with pH 7.3 only. There was no significant difference in current density before and after treatment of cells with PIP2 at neutral pH. Statistical significance was determined using a two-tailed Student’s unpaired t-test. (B) Representative current trace at + 100 mV (3 s/sweep) of the experiment described in (A).
+
 At neutral pH, the PAC channel is in its resting/closed state, and it is activated/open when the pH drops below 5.5 at room temperature (Yang et al., 2019). To examine if PIP2 exerts its effect on the PAC channel in its closed or open state, we pre-treated the cells with soluble PIP2 at pH 7.3, and then activated the channel with acid. ICl,H amplitude at pH 5.0 did not show any significant difference before and after perfusion of PIP2 at the neutral pH (Figure 1—figure supplement 1A, B). This result suggests that PIP2 may not act on the resting state of PAC and is only effective once the channel undergoes proton-induced activation or the subsequent desensitization.
 
-## Phosphates and the acyl chain synergistically contribute to PIP2-mediated PAC inhibition
+### Phosphates and the acyl chain synergistically contribute to PIP2-mediated PAC inhibition
 
 To test if there is a preference among different phosphatidylinositol lipids, we used soluble (diC8) versions of lipids at 10 µM concentration and compared their inhibitory effects on pH 5.0-induced endogenous PAC currents. PI(3)P (phosphatidylinositol 3-phosphate) with a single phosphate on its inositol headgroup, inhibited PAC significantly less than either bisphosphonates, PI(4,5)P2 or PI(3,5)P2 (phosphatidylinositol (3,5)-bisphosphate) (Figure 2A). The additional phosphate on PIP3 (phosphatidylinositol (3,4,5)-trisphosphate) yielded the IC50 of 3 µM (Figure 2B). Therefore, to reach potent inhibition, a minimum of two phosphates on the inositol headgroup are required. This is additionally supported by a modest inhibitory effect of PI (phosphatidylinositol) that does not have any active headgroup phosphates (Figure 2C). Interestingly, IP3 (inositol 1,4,5-trisphosphate), a triple-phosphorylated inositol headgroup without an acyl chain, displayed a similarly modest inhibition on PAC as PI (Figure 2D). Phosphates on the headgroup are therefore necessary, but not sufficient for PAC inhibition, indicating that the lipid chain contributes to inhibitory properties of PIP2 as well. diC8-diacyl-glycerol (DAG), the lipid chain without inositol head, had no inhibitory effect on PAC (Figure 2D). Acyl chain alone is therefore not sufficient to inhibit PAC.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig2-v2.jpg)
 
-**Figure 2.:** 2.(A) Percent inhibition of pH 5-induced PAC currents by different diC8-phosphatidylinositol lipids at 10 μM concentration: PI(3)P, PI(4,5)P2, PI(3,5)P2, and PI(3,4,5)P3. Statistical significance was determined using ordinary one-way ANOVA with the Dunnett post hoc test. Bars are reported as mean ± SEM. (B) Dose-dependent inhibition of PAC currents by PIP3. Bars are reported as mean ± SEM. (C) Dose-dependent inhibition of PAC currents by phosphatidylinositol (PI). Bars are reported as mean ± SEM. (D) Percent inhibition of pH 5-induced PAC currents by phosphatidylinositol lipids of different acyl chain length 10 μM concentration: Diacylglycerol (DAG), diC8-PI, IP3(1,4,5), diC6-PI(3,5)P2 and diC18:0-20:4-PI(4,5)P2. Statistical significance was assessed using ordinary one-way ANOVA with the Dunnett post hoc test. Bars are reported as mean ± SEM.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Percent inhibition of pH 5-induced PAC currents by different diC8-phosphatidylinositol lipids at 10 μM concentration: PI(3)P, PI(4,5)P2, PI(3,5)P2, and PI(3,4,5)P3. Statistical significance was determined using ordinary one-way ANOVA with the Dunnett post hoc test. Bars are reported as mean ± SEM. (B) Dose-dependent inhibition of PAC currents by PIP3. Bars are reported as mean ± SEM. (C) Dose-dependent inhibition of PAC currents by phosphatidylinositol (PI). Bars are reported as mean ± SEM. (D) Percent inhibition of pH 5-induced PAC currents by phosphatidylinositol lipids of different acyl chain length 10 μM concentration: Diacylglycerol (DAG), diC8-PI, IP3(1,4,5), diC6-PI(3,5)P2 and diC18:0-20:4-PI(4,5)P2. Statistical significance was assessed using ordinary one-way ANOVA with the Dunnett post hoc test. Bars are reported as mean ± SEM.
 
 Next, we examined the inhibitory effect of phosphatidylinositol lipids with varying chain lengths. PIP2 with two carbons less on its acyl chain, diC6-PIP2, was significantly less potent than diC8-PIP2 in inhibiting ICl,H (Figure 2D). On the other hand, full-length diC18:0-20:0 -PIP2, displayed a potent inhibition on the PAC channel, comparable to that of diC8-PIP2 (Figure 2D). Based on these results, we conclude that an acyl chain with a minimum of 8 carbons is required for potent inhibition of PAC by PIP2. Together, the number of phosphates on the inositol headgroup and lipid chain length synergistically contribute to the inhibitory potency of PIP2 to the PAC channel.
 
-## Cryo-EM structure reveals the PIP2 binding site on the PAC channel
+### Cryo-EM structure reveals the PIP2 binding site on the PAC channel
 
 PIP2 often binds to motifs on the intracellular side of ion channels, which contain positively charged residues that directly interact with the negatively charged phosphates on its inositol head. Indeed, the desensitized structure of PAC that we determined previously, a cluster of lipid-like density is present in the cytoplasmic fenestration area (Ruan et al., 2020). The C-terminus of TM2 has several positively charged residues, including K325, K329, K333, R335, K336, R337, K340, R341, R342, that we focused on initially and studied for their impact on PIP2 sensitivity (Figure 3—figure supplement 1A). Mutating single or triple lysine and arginine residues to alanine or making a 10-residue deletion at the C-terminal domain did not affect PIP2-mediated inhibition on pH 5.0-induced PAC currents (Figure 3—figure supplement 1B). In addition, when diC8-PIP2 was applied to the cells through an intracellular solution in the patch pipette, at a physiological concentration of 10 µM, there was no detectable change in the endogenous PAC current amplitude (Figure 3—figure supplement 1C). Similarly, ICl,H remained intact when endogenous PIP2 was depleted from the inner membrane leaflet using 100 μg/ml Poly-L-Lysine (PLL) in the patch pipette (Figure 3—figure supplement 1D). These results are surprising because endogenous PIP2 is known to be almost exclusively localized to the inner leaflet of the plasma membrane. Thus, the effect we observed with the perfusion of exogenous PIP2 may occur via inhibition of the PAC channel through a potentially unconventional mechanism.
 
 To reveal the mechanism underlying PIP2 inhibition, we solved the cryo-EM structure of PAC in nanodiscs with 0.5 mM diC8-PIP2 at pH 4.0 to an overall resolution of 2.70 Å (Figure 3A, Supplementary file 1). The structure adopts a conformation similar to the previously reported desensitized state at low pH (Ruan et al., 2020). However, a strong branched lipid density is observed on the cryo-EM map of the PAC channel in the outer membrane leaflet, between TM1 and TM2 of adjacent subunits (Figure 3A, Figure 3—figure supplement 2, Figure 3—figure supplement 3). We suspected that the density may represent a bound PIP2 molecule, although we cannot rule out the possibility that this density may represent other types of lipids, such as phosphatidic acid. When trying to fit a diC8-PIP2 molecule into this density (Figure 3B), we found that the phosphatidyl group is reasonably well defined, with its phosphate group forming a salt bridge interaction with R93 and its two acyl tails interacting with a number of hydrophobic residues on both transmembrane helices, including W304 (Figure 3C). In contrast, the hydrophilic head group, such as inositol-4,5-bisphosphate (Ins(4,5)P2) moiety of PIP2, is not resolved and therefore not modeled. The absence of the head group may be explained by its intrinsic flexibility and/or, if it is Ins(4,5)P2, its susceptibility to radiation damage due to the negative charges it carries. Nevertheless, the local biochemical environment of the site is consistent with PIP2 binding, in which the hypothetical location of Ins(4,5)P2 is surrounded by several positively charged residues, including K97, K106, and K294 (Figure 3C). The putative PIP2 binding site is also in accordance with our observation that a higher number of negatively charged phosphates, as well as the presence of an acyl chain, contribute to stronger channel inhibition by PIP2 (Figure 2). Moreover, small, but notable, conformational changes are observed in the transmembrane helices (TM1 and TM2) upon adding PIP2, which supports the binding of PIP2 to PAC. Specifically, TM1 tilts inside by 3 Å which causes a concerted rotation motion of TM2 (Figure 3B). The pore radius profile is similar to the desensitized state of PAC without PIP2, with the smallest radius of 0.43 Å (Figure 3D). Therefore, the PIP2-bound conformation also represents a non-conductive state (Figure 3A–C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cryo-EM structure of PAC channel at pH 4.0 with bound PIP2. One subunit is shown in red with TM1 and TM2 labeled. The density corresponding to putative PIP2 is colored green. (B) The structural model of PAC channel at pH 4.0 with bound PIP2 in side view (left) and bottom-up view (right). For comparison, the PAC channel at pH 4.5 without PIP2 (PDBID: 7SQH) is shown in cyan for the bottom-up view (right). (C) A close-up view of the PIP2 binding site. (Left) Cartoon representation of the PIP2 binding site. Important residues relevant to the study of the putative PIP2 binding site, including R93, K97, H98, K106, K294, and W304, are shown in stick. Cryo-EM densities for PIP2 and the nearby residues are shown in a semi-transparent surface. The Ins(4,5)P2 group is not resolved in the Cryo-EM map and thus not modeled in the deposited structure. (Right) Surface representation of the PIP2 binding site colored with electrostatic potential. Unit in kcal/mol/e-. A full PIP2 molecule, including the hypothetically positioned Ins(4,5)P2 group, is shown in the right panel. (D) The pore profile of PAC at pH 4.0 with PIP2 (PDBID: 8FBL) and at pH 4.5 without PIP2 (PDBID: 7SQH). The smallest radius along the pore axis is 0.43 Å, suggesting that both structures are impermeable to chloride ions. (E) Mutating PIP2-binding residues to alanine significantly decreases diC8-PIP2-mediated inhibition on pH 5-induced PAC currents. The constructs were expressed in PAC KO HEK293 cells for recordings. Statistical significance was assessed using one-way ANOVA with the Dunnett post hoc test. Bars are reported as mean ± SEM. (F) Multiple sequence alignment of several PAC orthologs. Key residues that form the PIP2 binding site are labeled using green dots. Binding site residues that are not conserved in zebrafish PAC (PAC_DANRE) are indicated by red triangles. (G) Percent inhibition (mean ± SEM) of hPAC or fPAC current at pH 5.0 by 10 μM diC8-PIP2. Zebrafish PAC (fPAC) shows significantly less inhibition by PIP2 compared to human PAC. Statistical significance was determined using a two-tailed Student’s unpaired t-test. (H) Mutating zebrafish PAC residues to the corresponding human PAC residues, M94R, N98K and Q295K, significantly increases the inhibition by PIP2 in comparison to the wild-type zebrafish PAC. Statistical significance was determined using a two-tailed Student’s unpaired t-test. Bars are reported as mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) We hypothesized that a cluster of positively charged residues at the C-terminus of PAC, outlined in red, binds PIP2. (B) Potential cytosolic PIP2-binding residues were screened by making grouped alanine mutations, or single alanine mutants, and by deleting a 10 amino-acid sequence at the C-terminal end of PAC. There was no significant difference in PIP2 inhibition on pH 5.0-induced PAC currents when the mutants were overexpressed in PAC knockout HEK293 cells. Statistical significance was determined using one-way ANOVA with Dunnett post hoc test. Bars are reported as mean ± SEM. (C) 10 μM diC8-PIP2 added through a patch pipette containing intracellular solution (ICS) in whole-cell configuration showed no significant difference when compared to ICS without PIP2 in HEK293 cells. Statistical significance was determined using a two-tailed Student’s unpaired t-test. Bars are reported as mean ± SEM. (D) Current density before and after depleting endogenous PIP2 from the inner leaflet by applying 100 μg/ml of Poly-L-Lysine (PLL) through the patch pipette in HEK293 cells. Statistical significance was determined using a two-tailed Student’s unpaired t-test. Bars are reported as mean ± SEM. (E) Current density before adding PIP2 is unaffected when PIP2-binding residues were mutated to alanine in hPAC. Statistical significance was determined using one-way ANOVA with the Dunnett post hoc test. Bars are reported as mean ± SEM. (F) Minimal desensitization (mean ± SEM) of PIP2-binding mutants at pH 5.0. Desensitized current after 30 s of acidic exposure was normalized to the initial maximum current of that recording and expressed as a percentage. Statistical significance was determined using one-way ANOVA with the Dunnett post hoc test. (G) Current density is unchanged when fPAC residues are mutated to the corresponding hPAC residues, while it is significantly decreased in the presence of PIP2. Statistical significance was determined using a two-tailed Student’s unpaired t-test. Bars are reported as mean ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** A more detailed description of this process can be found in the Materials and methods section. The refined map displayed in the workflow contains a transparent outline that is made of the unsharpened PAC map refined without using a mask. This is solely for visualization purposes such that the nanodisc signal (indicative of the transmembrane domain) can be seen more obviously.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) The gold-standard Fourier shell correlation curve of the final cryo-EM map (EMD-28964). (B) The angular distribution of particles that give rise to the final reconstruction. (C) The representative densities of the reconstruction map, including TM1/2, β2, β9, β12, and PIP2.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The putative PIP2 binding site is made by the adjacent TM1 and TM2, which are colored in magenta and brown, respectively. Relevant residues for PIP2 binding are colored in blue.
+
 To validate our structural model and the putative PIP2 binding site, we carried out site-directed mutagenesis and patch-clamp electrophysiological experiments. When overexpressed in PAC knockout (KO) HEK293 cells, mutation of any residues R93, K97, K106, K294, and W304 to alanine significantly relieved the inhibition by PIP2 on pH 5.0-induced PAC currents, confirming that this was indeed its binding site on the channel (Figure 3E). We also examined an adjacent residue, H98, which is not at a distance from the binding site that would allow direct interaction with PIP2. As expected, H98A mutant was still sensitive to PIP2 inhibition (Figure 3E), suggesting that PIP2 specifically recognizes the binding pocket observed in our structure. None of the mutations we tested affected the PAC channel activity, as indicated by the normal current densities and very small desensitization at pH 5.0 (Figure 3—figure supplement 1E, F). Moreover, the PIP2 binding site is unlikely to exist in the resting and activated states of PAC because the TMD, particularly TM1, undergoes significant conformational changes relative to the desensitized state, and therefore a PIP2 molecule cannot be accommodated in these states (Figure 3—figure supplement 4).
 
 Putative PAC PIP2-binding residues are conserved amongst higher vertebrates. On the contrary, in zebrafish (Danio rerio), several PIP2-binding site residues are different, including M94, N98, and Q295 (Figure 3F). Interestingly, the zebrafish PAC channel (fPAC) was significantly less inhibited by PIP2 compared to the human PAC (hPAC) when overexpressed in PAC KO HEK293 cells (Figure 3G). To test if the reduced PIP2 sensitivity of zebrafish PAC is due to these amino acid differences, we used site-directed mutagenesis to convert zebrafish residues to the corresponding ones of the human PAC channel. Interestingly, zebrafish triple mutant M94R, N98K, Q295K (fPAC numbering) showed a significant increase in PIP2 inhibition when compared to the wild-type channel (Figure 3H, Figure 3—figure supplement 1G). This further substantiates our finding that the PIP2 binding site on the PAC channel is located in the outer membrane leaflet.
 
-## PIP2-mediated PAC inhibition correlates with the degree of channel desensitization
+### PIP2-mediated PAC inhibition correlates with the degree of channel desensitization
 
 Since PIP2-bound PAC structure resembles the desensitized state and the PAC channel exhibits apparent desensitization at pH 4.0 (Osei-Owusu et al., 2022b) we sought to examine how pH may influence PIP2-mediated PAC inhibition by applying diC8-PIP2 at pH 4.0 when the currents stabilized after the initial fast desensitization (Figure 4A and B). The percentage of PAC inhibition by PIP2 increased significantly at pH 4.0 compared with pH 5.0 (Figure 4C). These results suggest that PIP2 inhibition is more effective when the PAC channel is already poised toward the desensitized state under more acidic conditions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig4-v2.jpg)
 
-**Figure 4.:** 2-mediated PAC inhibition correlates with the degree of channel desensitization.(A, B) Representative current traces at + 100 mV (5 s/sweep) of endogenous PAC currents at pH 4.0 and 5.0 treated with 10 μM diC8-PIP2. diC8-PIP2 was applied after desensitized current reached a plateau. (C) Percent inhibition (mean ± SEM) of PAC currents at pH 4.0 and 5.0, 100 s after perfusion of 10 μM diC8-PIP2. Statistical significance was determined using a two-tailed Student’s unpaired t-test. (D, E) Representative current traces at + 100 mV (5 s/sweep) of overexpressing PAC WT and E94R at pH 5.0 treated with 10 μM diC8-PIP2. (F) Percent inhibition (mean ± SEM) of PAC WT and E94R currents at pH 5.0, 100 s after perfusion of 10 μM diC8-PIP2. Statistical significance was determined using a two-tailed Student’s unpaired t-test.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A, B) Representative current traces at + 100 mV (5 s/sweep) of endogenous PAC currents at pH 4.0 and 5.0 treated with 10 μM diC8-PIP2. diC8-PIP2 was applied after desensitized current reached a plateau. (C) Percent inhibition (mean ± SEM) of PAC currents at pH 4.0 and 5.0, 100 s after perfusion of 10 μM diC8-PIP2. Statistical significance was determined using a two-tailed Student’s unpaired t-test. (D, E) Representative current traces at + 100 mV (5 s/sweep) of overexpressing PAC WT and E94R at pH 5.0 treated with 10 μM diC8-PIP2. (F) Percent inhibition (mean ± SEM) of PAC WT and E94R currents at pH 5.0, 100 s after perfusion of 10 μM diC8-PIP2. Statistical significance was determined using a two-tailed Student’s unpaired t-test.
 
 We recently showed that reversing the charge of E94 residue to E94R induces PAC desensitization, even at pH 5.0 (Figure 4D and E; Osei-Owusu et al., 2022b). Structurally, E94 is located in TM1, facing the opposite side of the PIP2 binding pocket. Therefore, the E94 mutation is unlikely to affect PIP2 binding directly, representing an ideal candidate to test if there is a correlation between PIP2 inhibition and channel desensitization. Indeed, we found that PIP2 exerted a much higher degree of inhibition on the E94R mutant than the WT PAC channel (Figure 4F). Because E94 is distal to the PIP2 binding site, these effects are most likely due to the altered conformational dynamics toward desensitization. It is also important to note that the desensitization of PIP2-binding mutants was not altered (Figure 3—figure supplement 1F). Together with its pH-dependency, our data suggest that PIP2 inhibition is more effective when the PAC channel is more prone to becoming desensitized.
 
@@ -76,7 +104,7 @@ Our data indicate that the degree of PIP2-mediated PAC inhibition correlates wit
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83935/elife-83935-fig5-v2.jpg)
 
-**Figure 5.:** 2.PAC channel adopts resting/open/desensitized states depending on the acidity of the environment. PIP2 selectively binds and stabilizes the desensitized conformation of PAC on the extracellular side of the membrane, altering the conformational/free energy landscape of the channel. As a result, in the presence of PIP2, a significant portion of PAC will be restricted in the desensitized conformation, leading to channel inhibition.
+**Figure 5.:** PAC channel adopts resting/open/desensitized states depending on the acidity of the environment. PIP2 selectively binds and stabilizes the desensitized conformation of PAC on the extracellular side of the membrane, altering the conformational/free energy landscape of the channel. As a result, in the presence of PIP2, a significant portion of PAC will be restricted in the desensitized conformation, leading to channel inhibition.
 
 Furthermore, we characterized pharmacological properties that contribute to phosphatidylinositol inhibitory potency on PAC. PIP3 displayed the strongest inhibition of PAC, while IP3 had a negligible effect (Figure 2). A higher number of phosphates and a longer acyl chain increase the inhibitory potency of the lipid. This indicates that the negative charge on the inositol head, as well as acyl chain insertion into the membrane, synergistically contribute to the lipid binding and stabilization of the desensitized channel state.
 
@@ -88,48 +116,261 @@ In conclusion, to our knowledge, PIP2 is the first PAC channel modulator with a 
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hPAC</td>
+      <td>doi:10.1126/science.aav9739</td>
+      <td>NP_060722/Q9 H813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>fPAC</td>
+      <td>doi:10.1126/science.aav9739</td>
+      <td>NP_001278691/Q7SY31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGC-hPAC(plasmid)</td>
+      <td>doi:10.1038/s41586-020-2875-7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-EGFP-hPAC (plasmid)</td>
+      <td>doi:10.1126/science.aav9739</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-EGFP-fPAC (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>In the cell culture section of Materials and methods in this paper</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGC-hPAC</td>
+      <td>doi:10.1038/s41586-020-2875-7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat#:CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>tsA-201</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: 85120602</td>
+      <td>Cell line (Homo-sapiens)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>PACC1 KO HEK293T</td>
+      <td>doi:10.1126/science.aav9739</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>08:0 PI (1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol) (ammonium salt))</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:850181 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>08:0 PI(4,5)P2 (1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol-4',5'-bisphosphate) (ammonium salt))</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:850185 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>08:0 PI(3,5)P2 (1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol-3',5'-bisphosphate) (ammonium salt))</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:850184 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>08:0 PI(3)P (1,2-dioctanoyl-sn-glycero-3-(phosphoinositol-3-phosphate) (ammonium salt))</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:850187 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>06:0 PI(3,5)P2 (1,2-dihexanoyl-sn-glycero-3-phospho-(1'-myo-inositol-3',5'-bisphosphate) (ammonium salt))</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:850174 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>18:0-20:0- PI(4,5)P2 (1-stearoyl-2-arachidonoyl-sn-glycero-3-phospho-(1'-myo-inositol-4',5'-bisphosphate)) (ammonium salt)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:850165 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IP3(1,4,5) (D-myo-inositol-1,4,5-triphosphate (ammonium salt))</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:850115 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>08:0 DG (1,2-dioctanoyl-sn-glycerol)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#:800800O</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-Lysine (PLL)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:26124-78-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat#:11668–019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II XL site-directed mutagenesis</td>
+      <td>Agilent Technologies</td>
+      <td>Cat#:200522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit 10.7</td>
+      <td>Molecular devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>https://www.ebi.ac.uk/Tools/msa/clustalo/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>doi:10.7554/eLife.42166</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cryosparc</td>
+      <td>doi:10.1038/nmeth.4169</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>doi:10.1038/nmeth.4193</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>doi:10.1002/pro.3943</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>doi:10.1016/j.jsb.2015.08.008</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HEK293T cells were purchased from ATCC, routinely maintained in the lab without further authentication, and tested negative for mycoplasma. HEK293T cells endogenously expressing PAC channel, or PAC KO HEK293T cells, generated previously using CRISPR technology (Yang et al., 2019) were maintained in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 1% penicillin/streptomycin (P/S) at 37 °C in humidified 95% CO2 incubator. All PAC mutants mentioned in this manuscript were expressed and recorded in the PAC KO HEK2935 cell line. PAC KO cells were transfected with 500–800 ng/ml of plasmid DNA using Lipofectamine 2000 (Life Technologies according to the manufacturer’s instructions. Cells were seeded on 12 mm diameter Poly-L-lysine Sigma-Aldrich) coated glass coverslips and were recorded within 24 hr after seeding/transfection.
 
-## Constructs and mutagenesis
+### Constructs and mutagenesis
 
 Human PAC isoform 2 coding sequence (NP_060722), previously subcloned into pIRES2-EGFP vector (Clontech) using XhoI and EcoRI restriction enzyme sites (Yang et al., 2019), was used for whole-cell patch-clamp recording experiments. Zebrafish PAC coding sequence (NP_001278691) was subcloned into pIRES2-EGFP vector (Clontech) using NheI and EcoRI restriction enzyme sites. Mutations were introduced using sense and antisense oligos with 15 base pairs of homology on each side of the mutated site. Site-directed mutagenesis was carried out using QuikChange II XL site-directed mutagenesis kit (Agilent Technologies) according to the manufacturer’s instructions. All constructs were confirmed by sequencing the entire open reading frame using Sanger sequencing.
 
-## Sequence alignments
+### Sequence alignments
 
 PAC multiple protein sequence alignments were created using Clustal Omega software (EMBL-EBI). Protein sequences from the following vertebrate species were obtained from UniProt (ID): human PAC (Q9H813), rat PAC (Q66H28), mouse PAC (Q9D771), frog PAC (Q0V9Z3), zebrafish PAC (Q7SY31), bovine PAC (Q2KHV2), orangutan PAC (Q5RDP8), chicken PAC (E1C5B3), and green anole PAC (G1KFB8).
 
-## Lipids and chemicals
+### Lipids and chemicals
 
 All lipids used in this paper were ordered from Avanti Polar Lipids, and dissolved in water or DMSO, depending on the chain length, to make stock solutions. If not stated otherwise, lipids were added at 10 µM concentration directly to the extracellular solution. Please refer to the table for the list of all the lipids used in this paper. Poly-L-Lysine (PLL) (Sigma-Aldrich) was added to the intracellular solution at 100 μg/ml.
 
-## Electrophysiology
+### Electrophysiology
 
 Whole-cell patch-clamp experiments were performed using the extracellular recording solution (ECS) containing (in mM): 145 NaCl, 2 MgCl2, 2 KCl, 1.5 CaCl2, 10 HEPES, 10 glucose. The osmolarity of the ECS solution was 300–310 mOsm/kg and the pH was titrated to 7.3 using NaOH. Acidic extracellular solutions contained the same ionic composition, except 5 mM sodium citrate was used as a buffer instead of HEPES, and the pH was adjusted using citric acid. ECS solutions were applied 100–200 µm away from the recording cell, using a gravity perfusion system with a small tip. Recording patch pipettes, made of borosilicate glass (Sutter Instruments), were pulled with a Model P-1000 multi-step puller (Sutter Instruments). The patch pipettes had a resistance of 2–4 MΩ when filled with an intracellular solution (ICS) containing (in mM): 135 CsCl, 2 CaCl2, 1 MgCl2, 5 EGTA, 4 MgATP, 10 HEPES. The osmolarity of the ICS solution was 280–290 mOsm/kg and pH was titrated to 7.2 using CsOH. ICl, H recordings were acquired using voltage ramp pulses from –100 to + 100 mV. The time interval between two ramp pulses was 2 or 5 s at a speed of 1 mV/ms and the holding potential was 0 mV. All recordings were performed with a MultiClamp 700B amplifier and 1550B digitizer (Molecular Devices) at room temperature. Signals were filtered at 2 kHz, digitized at 10 kHz, and the series resistance was compensated for at least 80% (Yang et al., 2019).
 
-## Data analysis
+### Data analysis
 
 Electrophysiology data were analyzed using Clampfit 10.7. Statistical analysis was performed using GraphPad Prism 9 software. Comparison between two groups was carried out using an unpaired two-tailed Student’s t test unless stated otherwise. Multiple group comparisons were performed using ordinary one-way analysis of variance (ANOVA). The significance level was set at p<0.05. All numerical data are shown as mean ± SEM. For the time-constant experiments, the currents were fit using a one-phase decay equation: Y=(Y0 - Plateau)*exp(-K*X)+Plateau, where Y0 was the time-point of adding PIP2 to the cells. For the IC50 values, the normalized data was fitted to the following sigmoidal 4PL equation, where X is log (concentration): Span = Top - Bottom; Y=Bottom + (Top-Bottom)/(1+10^((LogIC50-X)*HillSlope)) (Ruan et al., 2020).
 
-## Protein expression and purification
+### Protein expression and purification
 
 The pEGC-hPAC plasmid containing the human PAC gene, a Strep-tag II tag, a thrombin cleavage site, an eGFP, and an 8xHis tag, was used for expressing PAC protein in mammalian cells using BacMam system (Goehring et al., 2014, Ruan et al., 2020). The bacmid was produced by transforming the DH10Bac cells with pEGC-hPAC plasmid. Positive white clones were selected from a Luria Broth (LB) plate with kanamycin (50 μg/mL), tetracycline (10 μg/mL), gentamicin (7 μg/mL), Bluo-gal (100 μg/mL Bluo-gal), and IPTG (40 μg/mL). Bacmid DNA was purified from LB cultures of the white colonies using the alkaline lysis method. The bacmid was then transfected into adherent Sf9 cells grown in Sf-900 II media (Gibco) using Cellfectin II reagent by following the manufacturer’s recommended protocol. After 5 days, the media of Sf9 cell culture was filtered and stored as the P1 virus. Subsequently, the P2 virus was made by infecting suspension Sf9 cells grown in Sf-900 II media with P1 virus at a 1:5000 ratio (v/v). After 5 days, the media containing P2 virus was harvested, filtered, and stored at 4 °C with 1% fetal bovine serum (FBS). Mammalian cells (tsA-201 cell line) grown in FreeStyle 293 media (Gibco) supplemented with 1% FBS was used for protein expression. When suspension cells reached 3.5x10^6 cells/ml density, 10% (v/v) P2 virus was added to tsA-201 cells, and cells were allowed to grow for 8–12 hr at 37 °C. To boost protein expression, 5 mM sodium butyrate was added to the cell culture, and cells were allowed to grow for another 60 hr at 30 °C. The mammalian cells expressing PAC were then spun down at 6000 rpm for 15 min, and the pellet is stored at –80 °C until protein purification.
 
 The cell pellet was resuspended in ice-cold TBS buffer (20 mM Tris pH 8 and 150 mM NaCl) with a protease inhibitor cocktail (1  mM PMSF, 0.8  μM aprotinin, 2  μg/ml leupeptin, 2  mM pepstatin A) and lysed by sonication. The debris was removed by centrifugation at 4000 rpm for 10 min at 4 °C. The supernatant underwent ultracentrifugation at 40,000 rpm for 1 hr and the cell membrane was collected. The membrane was solubilized in TBS buffer with 1% glyco-diosgenin (GDN) detergent (Anatrace) and the protease inhibitor cocktail for 1 hr at 4 °C with gentle rotation. The sample was clarified by ultracentrifugation at 40,000 rpm for 1 hr. The supernatant was subjected to immobilized metal affinity chromatography (IMAC) with talon resin (Takara Bio USA). The bound protein was washed with TBS buffer containing 0.02% GDN and 20 mM imidazole and eluted with TBS buffer containing 0.02% GDN and 250 mM imidazole. The PAC protein was then concentrated to 1 ml using a 100 kDa concentrator. The sample was then mixed with soybean lipid extract (Anatrace) and His-tag free membrane scaffold protein 1E3D1 (Denisov et al., 2007) at a 1:200:3 molar ratio. The GDN detergent was removed through three rounds of biobeads (Bio-Rad) incubation at 4 °C. To remove ‘empty’ nanodiscs, the sample was filtered to remove biobeads and incubated with talon resin at 4 °C for another 1 hr. The volume of the sample was expanded to 25 ml by adding TBS buffer such that the imidazole concentration was at 10 mM. The resin was washed with TBS buffer containing 10 mM imidazole, and the protein was eluted with TBS buffer containing 250 mM imidazole. PAC-nanodisc protein was then concentrated to 500 μL using an Amicon Ultra-15 concentrator (100 kDa cutoff). Thrombin (0.03 mg/ml) was added to cleave GFP from the PAC protein at 4 °C overnight. PAC-nanodisc was further purified by size-exclusion chromatography (SEC) using TBS buffer. The peak fractions were concentrated to 5 mg/ml before making cryo-EM grids.
 
-## Cryo-EM grid preparation
+### Cryo-EM grid preparation
 
 Purified human PAC protein in nanodiscs was first mixed with 1 mM diC8-PI(4,5)P2 (Avanti) on ice for 1 hr. The pH of the protein sample was adjusted to 4.0 by adding an acidic acid buffer (1 M, pH 3.5) at a 1:20 ratio (v/v). We also added 0.5 mM fluorinated octyl maltoside (Anatrace) to improve sample quality. An FEI Vitrobot Mark III was used for plunge-freezing. Specifically, a 3 μl aliquot of the protein sample was applied to a glow-discharged Quantifoil holey carbon grid (Au 300 2/1 mesh) (Electron Microscopy Sciences), blotted for 2 s, vitrified in liquid ethane, and transferred to liquid nitrogen for storage. The temperature and humidity of the chamber was kept at 18 °C and 100% throughout the grid preparation.
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 The cryo-EM grids were initially screened in an FEI Talos Arctica transmission electron microscope equipped with a K2 summit camera. High-resolution data collection was facilitated by the Pacific Northwest Center for Cryo-EM (PNCC) using an FEI Titan Krios transmission electron microscope equipped with a BioQuantum energy filter (20 eV slit width) and a K3 camera with a nominal magnification of 105,000. SerialEM was used for automated data collection in super-resolution mode with a pixel size of 0.413 Å (Mastronarde, 2005). The raw movie stack contained a total of 52 frames with a total dose of 50 e–/Å2. The nominal defocus value was allowed to vary between –0.6 and –2.4 μ m.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 The cryo-EM data processing workflow is summarized in Figure 3—figure supplement 2. Specifically, the raw movies were motion corrected using relion 3.1 and binned to the physical pixel size at 0.826 Å (Zivanov et al., 2018). The defocus parameters of motion-corrected micrographs were estimated using ctffind 4.1.10 (Rohou and Grigorieff, 2015). Particle picking was performed using both gautomatch_v0.56 and topaz v0.2.5 (Bepler et al., 2019). Particles picked by each program were independently subjected to 2D classification (relion 3.1) or heterogeneous refinement with C1 symmetry (cryosparc v3.0) to get rid of junk particles (Punjani et al., 2017; Zivanov et al., 2018). Good particles with clear features were pooled together and refined in relion 3.1. 3D refinement with a solvent mask and C3 symmetry, resulting in a 4.4 Å map. We noticed that the size of nanodiscs could be heterogeneous, which may negatively affect particle alignment. Therefore, we created a loose mask of the protein based on the atomic model and performed signal subtraction to remove the nanodisc signal. The process allowed us to obtain a reconstruction at 4.2 Å resolution. To sort out the conformational heterogeneity of the dataset, we performed 3D classification without image alignment in relion 3.1. The best class of the job was selected and refined to 3.6 Å resolution. We then performed several rounds of CTF refinement and Bayesian polishing (Zivanov et al., 2019), and the map was eventually refined to 3.17 Å. We noticed an improvement in the map quality when the box size of the images was expanded from 240 pixels to 300 pixels at this stage. To further improve map reconstruction, we first split the original consensus particles after 2D and heterogeneous refinement into 6 portions. We combined each portion with the best particles that gave rise to the 3.17 Å reconstruction and performed another round of 3D classification. This procedure was effective in attracting good particles from the initial consensus map particles. After combining the best class and removing duplicates, we identified 84 k particles that could be refined to 3.07 Å in relion after iterative CTF refinement and Bayesian Polishing. We then exported the particles to cryosparc and conducted CTF refinement followed by local refinement. We also supplied a mask to get rid of nanodisc signal during the refinement. In the end, we obtained a 2.71 Å reconstruction as judged by gold-standard Fourier shell correlation. This map is deposited in the EMDB under the accession EMD-28535. We noticed that the intracellular side of TMD is very heterogeneous, which may limit the quality of the final reconstruction. As the last step of our data analysis, we refined the particles by using a mask that excludes signals of the intracellular region of PAC. This additional step allowed us to obtain a reconstruction of PAC ECD and the extracellular region of TMD at 2.70 Å (Figure 3—figure supplement 2). Although the nominal resolution of this map is comparable to the full protein map, we noticed improved map quality, especially the lipid density. Postprocessing of the maps, including local map sharpening and resolution estimation is performed using Phenix (Terwilliger et al., 2018). This map is deposited in the EMDB under the accession EMD-28964.
 
-## Model building, validation, and analysis
+### Model building, validation, and analysis
 
 The atomic model was generated by first docking the structural model of human PAC at pH 4.5 (PDBID: 7SQH) into the cryo-EM map (Wang et al., 2022). The diC8-PI(4,5)P2 molecule was manually placed into the cryo-EM density. The Grade Web Server (Bepler et al., 2019) was used to generate a restraint file for flexible fitting of the diC8-PI(4,5)P2 molecule. Subsequently, the model underwent real space refinement in phenix and manual adjustment to fix Ramachandran outliers, rotamer outliers, and clashes (Adams et al., 2010). We manually removed the phosphatidylinositol 4,5-bisphosphate group from the atomic model due to the limited support from the cryo-EM density. The final model was validated by the molprobity in phenix to obtain validation statistics (Williams et al., 2018). The cryo-EM map and atomic model were visualized using UCSF ChimeraX (Pettersen et al., 2021). The pore profile of the PAC channel was calculated using the HOLE 2.0 program (Smart et al., 1996).

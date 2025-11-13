@@ -12,13 +12,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03qxff017 Department of Ecology, Evolution and Behavior, Alexander Silberman Institute of Life Sciences, Faculty of Science, The Hebrew University of Jerusalem Jerusalem Israel
+1. Department of Ecology, Evolution and Behavior, Alexander Silberman Institute of Life Sciences, Faculty of Science, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
 
 † Corresponding author
 
 ## Abstract
 
-While the biogenesis of microRNAs (miRNAs) in both animals and plants depends on the RNase III Dicer, its partner proteins are considered distinct for each kingdom. Nevertheless, recent discovery of homologs of Hyponastic Leaves1 (HYL1), a ‘plant-specific’ Dicer partner, in the metazoan phylum Cnidaria, challenges the view that miRNAs evolved convergently in animals and plants. Here, we show that the HYL1 homolog Hyl1-like a (Hyl1La) is crucial for development and miRNA biogenesis in the cnidarian model Nematostella vectensis . Inhibition of Hyl1La by morpholinos resulted in metamorphosis arrest in Nematostella embryos and a significant reduction in levels of most miRNAs. Further, meta-analysis of morphants of miRNA biogenesis components, like Dicer1, shows clustering of their miRNA profiles with Hyl1La morphants. Strikingly, immunoprecipitation of Hyl1La followed by quantitative PCR revealed that in contrast to the plant HYL1, Hyl1La interacts only with precursor miRNAs and not with primary miRNAs. This was complemented by an in vitro binding assay of Hyl1La to synthetic precursor miRNA. Altogether, these results suggest that the last common ancestor of animals and plants carried a HYL1 homolog that took essential part in miRNA biogenesis and indicate early emergence of the miRNA system before plants and animals separated.
+While the biogenesis of microRNAs (miRNAs) in both animals and plants depends on the RNase III Dicer, its partner proteins are considered distinct for each kingdom. Nevertheless, recent discovery of homologs of Hyponastic Leaves1 (HYL1), a ‘plant-specific’ Dicer partner, in the metazoan phylum Cnidaria, challenges the view that miRNAs evolved convergently in animals and plants. Here, we show that the HYL1 homolog Hyl1-like a (Hyl1La) is crucial for development and miRNA biogenesis in the cnidarian model Nematostella vectensis. Inhibition of Hyl1La by morpholinos resulted in metamorphosis arrest in Nematostella embryos and a significant reduction in levels of most miRNAs. Further, meta-analysis of morphants of miRNA biogenesis components, like Dicer1, shows clustering of their miRNA profiles with Hyl1La morphants. Strikingly, immunoprecipitation of Hyl1La followed by quantitative PCR revealed that in contrast to the plant HYL1, Hyl1La interacts only with precursor miRNAs and not with primary miRNAs. This was complemented by an in vitro binding assay of Hyl1La to synthetic precursor miRNA. Altogether, these results suggest that the last common ancestor of animals and plants carried a HYL1 homolog that took essential part in miRNA biogenesis and indicate early emergence of the miRNA system before plants and animals separated.
 
 ## Introduction
 
@@ -34,13 +34,33 @@ In addition to the presence of HYL1 homologs in Cnidaria, homologs are also pres
 
 ## Results
 
-## Hyl1La plays an essential role in Nematostella development
+### Hyl1La plays an essential role in Nematostella development
 
 Mutants of miRNA biogenesis pathway components exhibit severe developmental defects in both plants and animals (Alvarez-Garcia and Miska, 2005; Schauer et al., 2002). The HYL1 protein is known to play an essential role in the growth and development of the model plant Arabidopsis thaliana by regulating miRNA biogenesis (Achkar et al., 2018; Han et al., 2004a). Similarly, in mice, TRBP mutants show multiple developmental abnormities and a reduction in miRNA accumulation (Koscianska et al., 2011; Zhong et al., 1999). The Hyl1La gene of Nematostella contains 11 exons and 10 introns predicted to code for a protein containing three DSRM domains (Figures 1B and 2A). Unlike its paralog Hyl1Lb that is specific to stinging cells and carries additional protein domains, Hyl1La expression is ubiquitously distributed throughout Nematostella tissues and shares its domain structure with other cnidarian HYL1 homologs (Moran et al., 2013). Thus, we decided to focus our analysis on this gene. To decipher the function of Hyl1La in Nematostella, we designed two different splicing morpholinos (MOs) (Hyl1La SI MO1 and Hyl1La SI MO2) to knockdown by mis-splicing the gene at two different intron-exons junctions. Additionally, the gene was also targeted for inhibition by using a translation-blocking MO (Hyl1La TB MO) which binds on the 5′ UTR and sterically blocks translation (Figure 2A). We injected each of the three MOs into Nematostella zygotes in parallel with a control MO designed to bind to no target in the sea anemone genome. The effect of SI MOs was validated by PCR followed by cloning and sequencing which revealed intron retention in both cases (Figure 2—figure supplement 1—source data 1, Supplementary file 1). All the injected animals were studied until 9 days post-fertilization (dpf). We observed that more than 80% of the animals injected with control MO developed normally and metamorphosed into primary polyps. In contrast, the animals injected with any of the three Hyl1La MOs showed developmental abnormalities, where more than 90% of the animals did not settle and metamorphosed into primary polyps until 9 dpf (Figure 2B–D and F). The developmental abnormalities observed here were grossly similar to those observed in Nematostella morphants of other miRNA processing components such as HEN1, Dicer1, AGO1, and AGO2 knockdown animals (Fridrich et al., 2020; Modepalli et al., 2018; Figure 2E). These results indicate that Hyl1La plays an essential role in Nematostella development, possibly by regulating the processing and expression of miRNAs.
 
-## Hyl1La regulates the miRNA biogenesis
+![Figure 2.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of the Hyl1La gene showing the intron-exon junction as defined by comparing the transcript (NCBI Accession KF192067.1) to the Nematostella vectensis genome. The positions targeted by different morpholinos used in the study are shown by red symbols. The black arrows represent the position of primers designed for the validation of splicing morpholino and the product size is indicated below. (B–D) Images of 9 days post-fertilization (dpf) animals showing similar developmental defects in different morphants. (E) Images of 10 dpf Dicer1 morphants showing similar developmental defects to Hyl1La morphants. Scale bars are 500 µm. (F) Bar chart representing percentage of developed and undeveloped animals for each of the morphants. More than 80% of Hyl1La-depleted animals did not develop into the primary polyp stage after 9 dpf. Data was taken in triplicates, in each n = 200, ***p < 0.001 (Student’s t-test). (G) Principal component analysis (PCA) plot of the miRNA expression following the knockdown of miRNA biogenesis components: Hyl1La, HEN1, Dicer2, AGO1, and AGO2. Morphants are in blue and control in orange, different symbols represent different miRNA biogenesis components and their respective controls from the same experiment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** cDNAs were amplified by using two different primer sets for different morpholinos (Hy1La SI MO1 and Hyl1La SI MO2). The control morpholino lane showed the band of spliced Hyl1La while the Hyl1La SI morpholino lane showed the band of size equivalent for intron retention. The genomic DNA was amplified by using the same primer pairs to check the size and primer efficiency (Figure 2—figure supplement 1—source data 1).
+
+### Hyl1La regulates the miRNA biogenesis
 
 The above observed metamorphosis arrest suggested the possible involvement of Hyl1La in miRNA biogenesis, as mutants defective in their miRNA biogenesis exhibit abnormal development in both animals and plants (Achkar et al., 2018; Zhong et al., 1999). HYL1 in Arabidopsis interacts with the stem region of miRNA precursors by using its DSRM domains and works with DCL1 synergistically (Song et al., 2007; Wu et al., 2007). Although the Dicer homolog alone is capable of processing the precursor into a mature miRNA, the presence of HYL1 is essential as it enhances the efficiency and in some cases the accuracy of miRNA biogenesis in plants (Dong et al., 2008; Szarzynska et al., 2009). To assay the possible role of Hyl1La on miRNA expression in Nematostella, we performed small RNA sequencing of animals, injected with Hyl1La SI MO1 and with control MO. The analysis of read length distribution showed that the small RNA reads that lied between the size of miRNAs (20–24 nt) were higher (p < 0.01, Student’s t-test) in control as compared to knockdown embryos (Figure 3A). Further, we analyzed the miRNA expression by using miRProf (Stocks et al., 2012) and normalized the miRNA reads in transcripts per million (TPM) (Supplementary file 2). For the miRNA quantification we used the most recent Nematostella miRNA datasets that were obtained by AGO immunoprecipitation (IP) (Fridrich et al., 2020). The expression of normalized miRNA reads was compared between control and Hyl1La SI MO1. About 54% of the total identified miRNAs showed downregulation of more than twofold in Hyl1La SI MO1-injected animals as compared to the control (Figure 3B). Further, a significant reduction in overall miRNA abundance was observed in the knockdown morphants (p < 0.00001, Wilcoxon signed-rank test) (Figure 3C). The expression variation caused by the action of other two MOs (Hyl1La SI MO2 and Hyl1La TB) was also assayed by quantitative stem-loop PCR of five miRNAs (Figure 3D and Figure 3—figure supplement 1). Significant downregulation of three miRNAs: miR2022-3p, miR2025-3p, and miR2026-5p was detected in all three MOs (with the exception of miR-2026–5p with SI MO1), which supported the small RNA sequencing results. In contrast, two miRNAs, miR2027-5p and miR2028-5p, either showed upregulation or were not significantly affected by the Hyl1La knockdown. Previous studies have also shown that these two miRNAs may respond differently to other miRNAs in HEN1 and Dicer1 knockdown morphants of Nematostella (Modepalli et al., 2018). This might be relevant to other miRNAs that did not show downregulation and suggest differences in their biogenesis. Further, we also checked for the processing accuracy of all the identified miRNAs by mapping them onto their respective precursors. The analysis did not reveal any aberrant processing. These results suggest that like its homolog in plants, Hyl1La in Nematostella might be involved in enhancement of Dicer efficiency and is not involved in size selection.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig3-v2.jpg)
+
+**Figure 3.:** (A) Average read length distribution of small RNA reads after adapter removal. (B) Scatter plot representing normalized read counts of miRNAs in control and treated animals. Each dot represents the average expression of an individual miRNA. The miRNAs showing a depletion greater than twofold are indicated in green. The axes are scaled to Log10 of normalized read counts. The data represents the mean of three independent biological replicates. (C) Box plot showing the average abundance of miRNA read counts in Hyl1La SI MO1 and control MO. A significant reduction of miRNA read counts is noted in Hyl1La SI MO1 (p < 0.0001, Wilcoxon signed-rank test). The data represents the mean of three independent biological replicates ± SD. (D) Bar plot showing the expression of miR-2022, miR-2025, miR-2026, miR-2027, and miR-2028 as quantified using stem-loop PCR in translation-blocking (TB) and control morpholino. The data represents the mean of three independent biological replicates ± SD. ***p < 0.001, **p ≤ 0.01, *p ≤ 0.05 (Student’s t-test), n.s. (not significant).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The expression of miR-2022, miR-2025, miR-2026, miR-2027, and miR-2028 was checked by using the stem-loop PCR between the Hyl1La SI MO1 vs. control MO and Hyl1La SI MO2 vs. control MO. The data represents the mean of four independent biological replicates ± SD. ***p < 0.001, **p ≤ 0.01, *p ≤ 0.05, (Student’s t-test), n.s. (not significant).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Box plot showing the average of abundance of siRNA read counts in Hyl1La SI MO1 and control MO. A significant slight reduction of siRNA read counts is noted in Hyl1La SI MO1 (p < 0.00001, Wilcoxon signed-rank test). The data represents the mean of three independent biological replicates ± SD. (B) Scatter plot representing normalized read counts of siRNAs in control and treated animals. Each dot represents the average expression of an individual siRNA. The siRNAs showing a depletion greater than twofold are indicated in green. The axes are scaled to Log10 of normalized read counts. The data represents the mean of three independent biological replicates. (C) Box plot showing the average of abundance of piRNA read counts in Hyl1La SI MO1 and control MO. A significant upregulation of piRNA read counts is noted in Hyl1La SI MO1 (p < 0.00001, Wilcoxon signed-rank test). The data represents the mean of three independent biological replicates ± SD. (D) Scatter plot representing normalized read counts of piRNAs in control and treated animals. Each dot represents the average expression of an individual piRNA. The piRNAs showing an upregulation greater than twofold are indicated in green. The axes are scaled to Log10 of normalized read counts. The data represents the mean of three independent biological replicates.
 
 To further explore the effect Hyl1La knockdown has on the expression of mature miRNAs in Nematostella, we performed a meta-analysis comparing the effect of knocking down previously characterized miRNA biogenesis components such as HEN1, Dicer1, AGO1, and AGO2 (Fridrich et al., 2020; Modepalli et al., 2018; Figure 2G and Supplementary file 3). Using principal component analysis (PCA), we see that broadly the expression of mature miRNAs following the knockdown of Hyl1La behaves similarly to other characterized miRNA processing components. This is evident with Hyl1La morphants clustering with all miRNA biogenesis components compared to control, particularly with HEN1 and Dicer1. We also observe that both AGO1 and AGO2 are the most distant among the miRNA biogenesis components, which is consistent with their function of loading and therefore affecting a particular subset of miRNAs (Fridrich et al., 2020), while Hyl1La, HEN1, and Dicer1 affect the majority of the same miRNA in the same manner.
 
@@ -52,15 +72,35 @@ To further support our results obtained with MOs, we attempted to knock down thi
 
 **Figure 4.:** (A–C) Structure of different shRNAs designed from different positions of Hyl1La gene along with GC content and their position are shown. In the shRNA sequence, the red color shows the nucleotides edited for mismatch and blue color represents loop region. The red colored nucleotides on precursor’s structure indicate the small RNA derived from the shRNAs. (D) Real-time quantification of Hyl1La from animals injected with different shRNAs relative to control. The data represents the mean of three independent biological replicates ± SD. (E) Quantification of small RNAs produced from Hyl1La shRNA1. The quantification was performed by using stem-loop qRT-PCR.
 
-## Hyl1La interacts with pre-miRNAs but not with pri-miRNAs
+### Hyl1La interacts with pre-miRNAs but not with pri-miRNAs
 
 The above observed reduction in miRNA expression indicates the possible involvement of Hyl1La in miRNA biogenesis. Being a DSRM-containing protein, it could interact with either pri-miRNA, pre-miRNA, or with both. Hence to test if Hyl1La interacts with pre- and/or pri-miRNA, we conducted an IP assay by injecting a plasmid carrying a cassette encoding an N-terminal 3 × FLAG-tagged full-length Hyl1La (‘FLAG-Hyl1La’) followed by a 3′-memOrange2 separated by a P2A self-cleaving peptide (Figure 5A; Kim et al., 2011; Shaner et al., 2008). The expression of the FLAG-Hyl1La cassette was confirmed by visualizing the animals under fluorescence microscope (Figure 5B) and by using anti-FLAG western blot (Figure 5—figure supplement 1—source data 1; Figure 5—figure supplement 1—source data 2). Further, RNA immunoprecipitation (RIP) with anti-FLAG antibody was performed (Figure 5—source data 1 and Figure 5—source data 2) in three different biological replicates followed by qPCR analysis. Interestingly, we observed that there was very poor enrichment of pri-miRNA (Ct-values >30, sometimes undetected) as compared to pre-miRNA (Supplementary file 4 and Figure 5—figure supplement 1B, C; Figure 5—figure supplement 1—source data 3 and Figure 5—figure supplement 1—source data 4). Due to the very high Ct values measured for pri-miRNA, we were not able to compare the levels of pri-miRNAs bound with IgG and accurately compare them to FLAG-Hyl1La. Interestingly, when we compared the enrichment of pre-miRNAs, we found that six out of eight were significantly enriched in FLAG-Hyl1La IP in comparison to IgG, with miR-2023 showing a trend similar to other miRNAs but not reaching significance (Figure 5D and Figure 5—figure supplement 1—source data 3 and Figure 5—figure supplement 1—source data 4). Expectedly, miR-2029 showed no enrichment in anti-FLAG samples. This miRNA might be processed independently of Hyl1La since it is also not significantly decreased following Hyl1La and Dicer1 knockdowns (Modepalli et al., 2018). Taken together, these results showed that Hyl1La interacts with pre-miRNA but not with pri-miRNA.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of the FLAG-Hyl1-like a (Hyl1La) construct with a TBP promoter, a self-cleaving P2A sequence, a memOrange2 gene, and the polyadenylation signal SV40. (B) The plasmid-injected and -uninjected embryos were visualized under a florescence microscope after 2 days. The injected embryos were showing the expression of memOrange2 (right side). (C) Immunoprecipitation (IP) of 3 × FLAG-Hyl1La with mouse anti-FLAG antibody or whole mouse IgG by using Protein G Magnetic Beads. The input and IP samples were subjected to Western blot with mouse anti-FLAG antibody. The red arrow (110 kDa) indicates the 3 × FLAG-Hyl1La (Figure 5—source data 1 and Figure 5—source data 2). (D) pre-miRNA expression of eight different miRNAs were measured using the qRT-PCR. The Y-axis represents the 2-ΔΔCt values of three independent biological replicates. ***p < 0.001, **p ≤ 0.01, *p ≤ 0.05 (Student’s t-test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot of 3 × FLAG-Hyl1-like a (Hyl1La) with mouse anti-FLAG antibody (Figure 5—source data 1 and Figure 5—source data 2). Gel image showing RT-PCR amplified (B) pri-miRNA (primary miRNA) and (C) pre-miRNA (precursor miRNA) transcripts. The pri- and pre-miRNA were amplified with their specific primers from RNA isolated from samples immunoprecipitated with mouse anti-FLAG antibody (Hyl1La IP)/whole mouse IgG (IgG IP). The red arrow indicates the expected product size. Ubiquitin was taken as control housekeeping gene (HKG) (Figure 5—figure supplement 1—source data 3 and Figure 5—figure supplement 1—source data 4).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The secondary structure of miRNA precursors used in this study for identification of functional interaction with Hyl1-like a (Hyl1La). The green arrow indicates the primer positions used for pre-miRNA quantification. The blue box represents position of miRNA/miRNA* duplex.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** The probable sequence of pri-miRNA taken from the Nematostella genome browser (https://simrbase.stowers.org/). The underlined sequences represent the pre-miRNA. The sequences with purple and green color represent primer position for pri- and pre-miRNA, respectively.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Immunoprecipitation RNA sequencing of FLAG-Hyl1-like a (Hyl1La). Read counts mapped to the Nematostella genome were Log2 and trimmed mean of M (TMM) normalized. A combination of coding (messenger RNA [mRNA]), non-coding RNA (rRNA, snoRNA, tRNA) and repetitive elements were quantified for both FLAG-Hyl1La and IgG. Error bars correspond to standard deviation among replicates (n = 4). All comparisons were not significant (Student’s t-test). (B) Representation of size distribution of libraries generated from RIP samples, validated with TapeStation system (Agilent, Santa Clara, CA, USA).
 
 Next, we generated libraries from FLAG-Hyl1La immunoprecipitated samples and analyzed the expression of additional longer (>100 bp) transcripts (Figure 5—figure supplement 4 and Supplementary file 5). We observed no significant enrichment for pri-miRNA, mRNA, non-coding RNA (rRNA, snoRNA, and tRNA) and repetitive elements. These results suggest that Hyl1La specifically binds pre-miRNAs. To further validate Hyl1La affinity to pre-miRNAs, we tested Hyl1La binding to pre-miRNAs via in vitro binding assay. We generated synthetic pre-miRNAs based on the pre-miR-2022 backbone with the mature miRNA sequence changed so it will not target Nematostella genes. As a control we used a shuffled version of the same pre-miRNA that does not create a hairpin secondary structure (Figure 6A–B). Both pre-miRNAs were labeled with biotin at their 3' end and incubated with protein lysates from FLAG-Hyl1La expressing animals in three biological replicates. Western blot conducted with anti-FLAG antibodies revealed Hyl1La binding the pre-miRNA with significantly higher efficiency than the shuffled sequence (Figure 6C, D; Figure 6—source data 1; Figure 6—source data 2; Figure 6—source data 3; Figure 6—source data 4; Figure 6—source data 5; Figure 6—source data 6 and Supplementary file 6), thus supporting the specific affinity of Hyl1La to miRNA precursors.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69464/elife-69464-fig6-v2.jpg)
 
-**Figure 6.:** (A) The sequence and secondary structure of biotin-labeled synthetic pre-microRNA (miRNA) used for in vitro binding assay. (B) The sequence and secondary structure of biotin-labeled shuffled synthetic pre-miRNA used as negative control for in vitro binding assay. (C) Pull-down of biotin-labeled synthetic pre-miRNA and shuffled pre-miRNA negative control using streptavidin magnetic beads. The pull-down samples were subjected to Western blot with mouse anti-FLAG antibody (Figure 6—source data 1; Figure 6—source data 2; Figure 6—source data 3; Figure 6—source data 4; Figure 6—source data 5; Figure 6—source data 6). (D) Relative intensity of Western blot bands with mouse anti-FLAG antibody, showing pull-down of biotin-labeled synthetic pre-miRNA and shuffled pre-miRNA negative control. Error bars correspond to standard deviation among replicates (n = 3). **p ≤ 0.01 (Student’s t-test).Figure 6—source data 1.Figure 6C – Western blot of biotin pull-down with anti-FLAG antibody – replicate1.Figure 6—source data 2.Figure 6C – Figure includes the image of Western Blot Protein Ladder used as a size ruler – replicate1.Figure 6—source data 3.Figure 6C – Western blot of biotin pull-down with anti-FLAG antibody – replicate2.Figure 6—source data 4.Figure 6C – Figure includes the image of Western Blot Protein Ladder used as a size ruler – replicate2.Figure 6—source data 5.Figure 6C – Western blot of biotin pull-down with anti-FLAG antibody – replicate3.Figure 6—source data 6.Figure 6C – Figure includes the image of Western Blot Protein Ladder used as a size ruler – replicate3.
+**Figure 6.:** (A) The sequence and secondary structure of biotin-labeled synthetic pre-microRNA (miRNA) used for in vitro binding assay. (B) The sequence and secondary structure of biotin-labeled shuffled synthetic pre-miRNA used as negative control for in vitro binding assay. (C) Pull-down of biotin-labeled synthetic pre-miRNA and shuffled pre-miRNA negative control using streptavidin magnetic beads. The pull-down samples were subjected to Western blot with mouse anti-FLAG antibody (Figure 6—source data 1; Figure 6—source data 2; Figure 6—source data 3; Figure 6—source data 4; Figure 6—source data 5; Figure 6—source data 6). (D) Relative intensity of Western blot bands with mouse anti-FLAG antibody, showing pull-down of biotin-labeled synthetic pre-miRNA and shuffled pre-miRNA negative control. Error bars correspond to standard deviation among replicates (n = 3). **p ≤ 0.01 (Student’s t-test).
 
 ## Discussion
 
@@ -74,13 +114,401 @@ Finally, here we report that Hyl1La plays an important role in miRNA biogenesis 
 
 ## Materials and methods
 
-## Animal culture and microinjection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(Nematostella vectensis)</td>
+      <td>Hyl1La</td>
+      <td>GenBank</td>
+      <td>KF192067</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Nematostella vectensis)</td>
+      <td>Lab strain, Rhode River, MD</td>
+      <td>Lab strain</td>
+      <td></td>
+      <td>Sea anemone species</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Escherichia coli)</td>
+      <td>NEB 5-alpha Competent E. coli (High Efficiency) (DH5α)</td>
+      <td>New England Biolabs</td>
+      <td>C2987I</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-FLAG M2 antibody(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804-50UG</td>
+      <td>IP (5 µg per test)WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase-AffiniPure Goat Anti-Mouse IgG(Goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>115-035-146</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pER242 (plasmid)</td>
+      <td>Admoni et al., 2020</td>
+      <td></td>
+      <td>Used as backbone</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR Primers</td>
+      <td>Integrated DNA Technologies</td>
+      <td>In this paper</td>
+      <td>See Materials and methods and Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA template of shRNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>In this paper</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Morpholino</td>
+      <td>Gene Tools</td>
+      <td>In this paper</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Thermo (Ambion)</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tryptone</td>
+      <td>Merck Millipore</td>
+      <td>61930505001730</td>
+      <td>For bacterial media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yeast extract purified for Microbiology</td>
+      <td>Merck Millipore</td>
+      <td>61931105001730</td>
+      <td>For bacterial media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agar purified for Microbiology</td>
+      <td>Merck Millipore</td>
+      <td>61939005001730</td>
+      <td>For bacterial media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>ROTH</td>
+      <td>K029.1</td>
+      <td>For bacterial media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran Alexa Fluor 488</td>
+      <td>Thermo (Molecular Probes)</td>
+      <td>D22910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Red sea salt</td>
+      <td>Red sea</td>
+      <td></td>
+      <td>For Nematostella vectensis growth</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Cysteine</td>
+      <td>Merck Millipore</td>
+      <td>1028380100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween20</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9416-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP40</td>
+      <td>Sigma-Aldrich</td>
+      <td>NP40S-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Skim milk</td>
+      <td>BD</td>
+      <td>232100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin (fraction V)</td>
+      <td>MP</td>
+      <td>160069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris-glycine-SDS buffer</td>
+      <td>Bio-Rad</td>
+      <td>1610772</td>
+      <td>For SDS-PAGE</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Total mouse IgG</td>
+      <td>Sigma-Aldrich</td>
+      <td>I5381-1MG</td>
+      <td>IP (5 µg per test)</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Thermo (Invitrogen)</td>
+      <td>18080044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>Bio-Rad</td>
+      <td>1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Fast SYBR Green Master Mix</td>
+      <td>Thermo (ABI)</td>
+      <td>AB-4385612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Q5 High-Fidelity DNA Polymerase</td>
+      <td>New England Biolabs</td>
+      <td>M0493S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>AmpliScribe T7-Flash Transcription Kit</td>
+      <td>Lucigen</td>
+      <td>ASF3507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Quick-RNA Miniprep</td>
+      <td>Zymo Research</td>
+      <td>R1054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>NucleoSpin Gel and PCR Clean-up</td>
+      <td>Macherey-Nagel</td>
+      <td>MAN-740609.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>NEBuilder HiFi DNA Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>E2621S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>CloneJet cloning kit</td>
+      <td>Thermo (Fermentas)</td>
+      <td>K1231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>HiSpeed Plasmid Midi Kit</td>
+      <td>Qiagen</td>
+      <td>12643</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>PureLink Quick Plasmid Miniprep Kit</td>
+      <td>Thermo (Invitrogen)</td>
+      <td>K210010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>NextSeq 500/550v2 Kits (75 cycles)</td>
+      <td>Illumina</td>
+      <td>FC-404–2005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>NEBNext Multiplex Small RNA Library Prep Set for Illumina (1-12) – 24 rxns</td>
+      <td>New England Biolabs</td>
+      <td>NEB-E7300S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Pierce RNA 3' End Biotinylation Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>20160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Ovation SoLo RNA-seq systems kit</td>
+      <td>Tecan Genomics</td>
+      <td>0500–32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>SureBeads Protein G Magnetic Beads</td>
+      <td>Bio-Rad</td>
+      <td>1614023</td>
+      <td>For IP</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Streptavidin Magnetic Beads</td>
+      <td>New England Biolabs</td>
+      <td>S1420S</td>
+      <td>For pull-down</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>RNase Inhibitor, Murine</td>
+      <td>New England Biolabs</td>
+      <td>M0314L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>cOmplete ULTRA Tablets, Mini, EASYpack Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>05892970001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Protease Inhibitor Cocktail Set III, EDTA-Free</td>
+      <td>Merck-Millipore</td>
+      <td>539134–1ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>4–15% Mini-PROTEAN TGX Precast Protein Gels</td>
+      <td>Bio-Rad</td>
+      <td>4561083</td>
+      <td>For Western blot</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay, kit</td>
+      <td>Trans-Blot Turbo Mini 0.2 µm PVDF Transfer Packs</td>
+      <td>Bio-Rad</td>
+      <td>1704156</td>
+      <td>For Western blot</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>miRDeep2</td>
+      <td>doi:10.1093/nar/gkr688 (2012)</td>
+      <td></td>
+      <td>Small RNA analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>The UEA small RNA Workbench</td>
+      <td>doi:10.1093/bioinformatics/bts311</td>
+      <td></td>
+      <td>Small RNA analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic (v3.4)</td>
+      <td>doi:10.1093/bioinformatics/btu170. Epub 2014 Apr 1</td>
+      <td></td>
+      <td>Total RNA analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR (v2.7.9)</td>
+      <td>doi:10.1093/bioinformatics/bts635</td>
+      <td></td>
+      <td>Total RNA analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM</td>
+      <td>doi:10.1186/1471-2105-12-323</td>
+      <td></td>
+      <td>Total RNA analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>shRNA design</td>
+      <td>doi:10.1016/j.ydbio.2019.01.005</td>
+      <td>https://www.invivogen.com/sirnawizard/index</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein Domain Search</td>
+      <td>https://pfam.xfam.org/search#tabview=t</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Homologs search</td>
+      <td>https://blast.ncbi.nlm.nih.gov/Blast.cgi/Proteins</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal culture and microinjection
 
 Nematostella were grown in 16‰ artificial salt water (ASW) at 18°C in a dark culture room. The growing animals were fed with freshly hatched Artemia salina nauplii three times a week. Induction of spawning was performed as previously described (Genikhovich and Technau, 2009): the mature male and female animals were induced to produce eggs and sperm by placing them in an incubator for 8 hr under constant white light and heat (25°C). After induction, the tanks were further kept at 18°C (in the culture room) for 2 hr to allow the release of egg packages and sperm. Further, the egg packages were fertilized for 30 min by placing the packages inside the male tanks. The quality of egg packages was checked under the stereomicroscope and egg packages of round shape and homogenous size were processed further for dejellying using 3% of L-cysteine in 16‰ ASW pH 7.2 (titrated with 10 M NaOH). The selected egg packages were kept in the cysteine solution for 15 min while rotated by hand. The eggs were washed using 16‰ ASW in tissue culture plates. These clean eggs (zygotes) were further used for microinjection. For microinjection 1 mM stock solutions of both MO and shRNA were prepared by dissolving them into nuclease-free water. The toxicity of MOs as well as shRNA was optimized by injecting different concentrations into the animals along with the control-injected animals. Concentrations resulting in toxicity of less than 30% of the animals (estimated morphologically in the 2 days following the injection) were considered suitable for injection. All MOs used in this study were designed and synthesized by Gene Tools, LLC (Philomath, OR, USA). The same control MO was used in all experiments.
 
 We found that the optimum concentrations were 300, 900, and 450 µM for the Hyl1La TB, Hyl1La SI MO1, and Hyl1La SI MO2, respectively. Dicer1 TB MO was injected at the concentration of 805 µM. For all the three shRNAs, 600 ng/µl concentration was found to be suitable. Similar concentration of control MO was used for microinjection in parallel with Hyl1La MOs. In every shift, we injected 600 zygotes (300 control MO and 300 Hyl1La MO) by mixing the injected material with dextran Alexa Fluor 488 (Thermo Fisher Scientific, Waltham, MA, USA) which was used as a fluorescent tracer while injection was carried under magnification by a TS-100F fluorescent microscope (Nikon). The injected zygotes were kept at 22°C for further growth. The morphology of the animals was observed for up to 9 days after which the number of settled and unsettled animals were counted and documented under SMZ-18 fluorescent stereomicroscope (Nikon). Animals injected with Dicer1 MO were observed and documented after 10 days. For RNA extraction microinjected zygotes were flash-frozen in liquid nitrogen after 3 days of growth and stored at –80°C until RNA extraction. All the MO and shRNA injection experiments were performed in three independent biological replicates with three distinct animals’ batches. Dicer1 MO injection was performed in one replicate to repeat an experiment with published results (Modepalli et al., 2018).
 
-## Small RNA sequencing and analysis
+### Small RNA sequencing and analysis
 
 The RNA was isolated using Trizol (Thermo Fisher Scientific) from 3-day-old animals. Small RNA sequencing was performed for only Hyl1La SI MO1 and control MO-injected animals. The small RNA library was prepared using NEBNext Multiplex Small RNA Library Prep Illumina kit (New England Biolabs, Ipswich, MA, USA) with some modifications (Plotnikova et al., 2019). In brief, small RNAs were isolated (18–30 nt) from 1 µg of total RNA using 15% urea-PAGE (Bio-Rad, Hercules, CA, USA) followed by overnight precipitation using 0.3% NaCl. The size-selected small RNAs were further precipitated using ice-cold ethanol (2.5 × volume) and 1 µl of GlycoBlue (Thermo Fisher Scientific) by centrifugation at 21130 × g. The pellet was dissolved in 7.5 µl nuclease-free water and used further for adapter ligation. The ligated products were subjected to 14 cycles of PCR amplification using adapter specific primers. The PCR product was run on 2% agarose gel followed by staining with GelRed (Biotium, Fremont, CA, USA). The band size between 137 and 149 nt was selected and purified using Gel Extraction Kit (Macherey-Nagel, Düren, Germany). The quality of the purified product (sRNA-seq libraries) was checked by using TapeStation system (Agilent, Santa Clara, CA, USA). The libraries having a dominant peak at the size range of 137–149 nt were sequenced by NextSeq500 (Illumina) in single-end mode.
 
@@ -88,46 +516,46 @@ The small RNA data was analyzed using miRProf (Stocks et al., 2012) with the fol
 
 Meta-analysis was performed to compare the pattern of miRNA expression following the knockdown of miRNA biogenesis components. Raw reads from small RNA-seq experiments involving the knockdown of various miRNA biogenesis components (Hyl1La, Dicer1, HEN1, AGO1, and AGO2) were downloaded from the NCBI Sequence Read Archive (Fridrich et al., 2020; Modepalli et al., 2018). Raw reads were trimmed using Cutadapt (v3.4) (Martin, 2011) and sequences shorter than 18 nt were discarded. Filtered reads were mapped to the Nematostella genome using Bowtie (v1.3.1) (Langmead et al., 2009) and miRNA loci quantified using featureCounts (v2.0.0)(Liao et al., 2014) from previously characterized coordinates. Due to differences in developmental stages and library preparation, reads were normalized between morphants and their respective control samples. PCA was then performed using these normalized values using ggplot2 in R (v4.1.0).
 
-## Total RNA sequencing and analysis
+### Total RNA sequencing and analysis
 
 To generate total RNA libraries from immunoprecipitated samples, RNA was extracted with 1 ml Trizol (Thermo Fisher Scientific) and purified following the manufacturer’s protocol. To increase the yield, we added 1 µl of RNA-grade glycogen (Roche, Basel, Switzerland) into the isopropanol during the precipitation step and conducted two rounds of 75% ice-cold ethanol washes. RNA pellets were dissolved with 8 µl low-EDTA TE buffer (Thermo Fisher Scientific) and diluted with 0.1% Tween-20 (Sigma-Aldrich, Saint Louis, MO, USA). The samples were prepared for sequencing using Ovation SoLo RNA-seq systems kit (Tecan Genomics, Redwood City, USA) according to the manufacturer’s protocol with the exclusion of the AnyDeplete stage. The samples were amplified for 13, 14, and 16 cycles using uniquely barcoded adaptors provided in the kit. The quality and size distribution of the produced libraries was checked using TapeStation system (Agilent). The pooled libraries were run on NextSeq500 (Illumina) in the concentration of 1.1 pM.
 
 Raw reads were processed by Trimmomatic (v3.4), using the following parameters (HEADCROP:9 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:20 MINLEN:36) (Bolger et al., 2014). High-quality reads retained were mapped to the Nematostella genome (JGI.Nemve1) using STAR (v2.7.9) (Dobin et al., 2013) and de-duplexed using NuDup (https://github.com/tecangenomics/nudup; software by Tecan Genomics, Bruns, 2022). Transcript abundances were estimated to previously characterized coding (Schwaiger et al., 2014) and non-coding RNA (Fridrich et al., 2020; Modepalli et al., 2018) using RSEM (v1.3) (Li and Dewey, 2011) and cross-sample normalized using TMM (Robinson and Oshlack, 2010).
 
-## Synthesis of shRNA
+### Synthesis of shRNA
 
 Potential shRNA precursors for Hyl1La gene were predicted using the shRNA prediction tools (https://www.invivogen.com/sirnawizard/index.php) (Karabulut et al., 2019). Three precursors from three different regions were further chosen, all having GC content of more than 35%. Further, we also added to the sequence a T7 promotor and three different mismatches at nucleotide positions 10, 13, and 16 to create bulges in the precursors (Figure 4A–C). All these modified precursors were reverse complemented and synthesized at the DNA level by Integrated DNA Technologies, Inc (IDT, Coralville, IA, USA). The DNA templates and reverse primer were mixed (1:1) and denatured at 98 °C for 5 min and cooled to 24 °C. Further, this mixture was mixed with the components of AmpliScribe T7-Flash Transcription Kit (Lucigen, Middleton, WI, USA) and incubated for 8 hr at room temperature. The in vitro transcribed product was further purified using Quick-RNA Miniprep (Zymo Research, Irvine, CA, USA). The quality and size of the precursor was checked on agarose gel and its concentration was measured using Qubit RNA BR (Broad Range) Assay Kit with the Qubit Fluorometer (Thermo Fisher Scientific). The concentration ranged from 1500 to 2000 ng/µl.
 
-## Reverse transcription-quantitative PCR
+### Reverse transcription-quantitative PCR
 
 For the quantification of Hyl1La transcripts from shRNA-injected animals and for checking the splicing inhibition (Hyl1La SI MO-injected animals), cDNA was prepared from 500 ng of total RNA using the iScript cDNA Synthesis Kit (Bio-Rad). For the quantification of miRNAs and shRNA, we designed the stem-loop primers for five different miRNAs and shRNA (Chen et al., 2005). For cDNA preparation, 100 ng of total RNA was reverse transcribed using the SuperScript III Reverse Transcriptase (Thermo Fisher Scientific). The specificity of the miRNA primers was determined by using end point PCR (Varkonyi-Gasic et al., 2007). For this, we used 2 µl of cDNA as template, miRNAs-specific forward primer and stem-loop-specific reverse primer and run the PCR at 94°C for 2 min, followed by 35 cycles of 94°C for 15 s and 60°C for 1 min. For analyzing differential expression, we ran qRT-PCR with 5sRNA as an internal control. For amplification of pre-miR-2029, pre-miR-2030, and pre-miR-2035–1, we used 1.5 µl of cDNA. For all the real-time experiments, we used Fast SYBR Green Master Mix (Thermo Fisher Scientific) and samples were run on StepOnePlus Real-Time PCR System (Thermo Fisher Scientific). All the real-time experiments were performed in three independent biological replicates and two technical replicates and data was analyzed using 2-ΔΔCt method (Livak and Schmittgen, 2001). All the primers are listed in Supplementary file 7.
 
-## Cloning and sequencing of Hyl1La SI MO-injected animals
+### Cloning and sequencing of Hyl1La SI MO-injected animals
 
 To validate the effect of splicing MO, we designed the primers pairs spanning the introns lying on the boundary of exons. PCR of the Hyl1La was done using Q5 High-Fidelity DNA Polymerase (New England Biolabs). The PCR products were run on the gel and the expected-sized PCR product was purified with a kit. Then the purified PCR products were ligated into the pJet2.1 vector (Thermo Fisher Scientific) and transformed into the Escherichia coli DH5α strain (NEB5α, New England Biolabs). The plasmids were purified by a PureLink miniprep kit (Thermo Fisher Scientific) and outsourced for Sanger sequencing (HyLabs, Israel).
 
-## Plasmid generation
+### Plasmid generation
 
 Two gBlock synthetic DNA fragments (IDT) at the lengths of 1.6 and 1.7 kb corresponding to Hyl1La fragments with a 3 × FLAG tag and 20 bp overlaps were ordered and used for generating the expression cassette. These fragments were PCR-amplified by Q5 Hot Start High-Fidelity DNA Polymerase (New England Biolabs), visualized on 1% agarose gel and purified by NucleoSpin Gel and PCR Clean-up (Macherey-Nagel). Gibson assembly was performed with the NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs) following the manufacturer’s protocol. The resulting product was further subcloned by restriction digestion with AscI and SalI into a pER242 vector having a TBP promoter previously proved to drive ubiquitous expression in Nematostella (Admoni et al., 2020), memOrange2, and SV40 polyadenylation signal (Figure 5A). The transformation was performed in E. coli DH5α strain (New England Biolabs). The plasmid was purified by HiSpeed Plasmid Midi Kit (Qiagen, Hilden, Germany) and sequenced by the Sanger method (HyLabs, Israel); 100 ng/µl of purified plasmid was injected into the fertilized Nematostella embryo and visualized after 2 days under an SMZ18 stereomicroscope equipped with a DS-Qi2 camera (Nikon, Tokyo, Japan).
 
-## Hyl1La IP
+### Hyl1La IP
 
 One-hundred µl of protein G SureBeads magnetic beads (Bio-Rad) were washed five times with 1 × PBS (phosphate-buffered saline). Five µg of monoclonal mouse anti-FLAG M2 antibody (Sigma-Aldrich) or total mouse IgG (Sigma-Aldrich) were added to the washed beads and incubated overnight at 4°C on a rotating shaker. Three thousand zygotes were injected with the plasmid containing 3 × FLAG-Hyl1La among which ~2000 animals survived after 2 days and were used for protein extraction. Protein was extracted in lysis buffer with the following composition: 25 mM Tris-HCl (pH 7.4), 150 mM KCl, 25 mM EDTA, 0.5% NP-40, 1 mM DTT, Protease inhibitor cOmplete ULTRA tablets (Roche, Germany) and Protease Inhibitor Cocktail Set III, EDTA-Free (Merck Millipore, Burlington, MA, USA). Murine RNase inhibitor (New England Biolabs) was used in RNA processing buffer. The RNase and protease inhibitors were added fresh just before use. For protein extraction, the frozen animals were mechanically homogenized in 1 ml lysis buffer and incubated for rotation at 4°C. After 2 hr the samples were centrifuged at 16000 × g for 15 min at 4°C and supernatant was collected. Then, 100 µl of protein G magnetic beads were washed thrice with 1 ml 1 × PBS, once with lysis buffer and then mixed with the protein lysate. The tube volume was maintained to 1.2 ml using the lysis buffer containing RNase inhibitor and incubated at 4°C on a rotating shaker (Intelli-Mixer ELMI, Newbury Park, CA, USA), for 1 hr. After 1 hr, the pre-cleared lysate was collected and added to the antibody-bound beads that were preincubated with the antibody overnight. These samples were incubated for 2 hr in rotation at 4°C. After incubation, the beads were collected by using a magnetic stand and washed six times with lysis buffer containing RNase inhibitor and one time with PBS with RNAse inhibitor. For Western blot 40 µl SDS sample buffer (New England Biolabs) were added to the beads and heated at 100°C for 8 min and placed on ice for 1 min. The samples were then centrifuged for 1 min at 16,000 × g at 4°C, and the supernatant was collected.
 
 For RNA extraction, the beads were mixed with 1 ml Trizol (Thermo Fisher Scientific) and purified following the manufacturer’s protocol. We added 1 µl of RNA-grade glycogen (Roche, Switzerland) into the isopropanol during the precipitation step. The isolated RNA was treated with Turbo DNAse (Thermo Fisher Scientific) for 30 min at 37°C, purified with RNA Clean & Concentrator-5 kit (Zymo Research), eluted in 8 µl and used for cDNA preparation.
 
-## Primer designing for pre- and pri-miRNA quantification
+### Primer designing for pre- and pri-miRNA quantification
 
 The pre-miRNA primer pairs were designed from stable stem region of precursors (Figure 5—figure supplement 2) as described previously (Schmittgen et al., 2008). The pre-miRNA sequence was obtained from our recently published data (Fridrich et al., 2020). The primer pairs for pri-miRNA were designed so they will anneal at least 10 nucleotides away from the pre-miRNA primers (Figure 5—figure supplement 3). These probable pri-miRNA sequences flanking the pre-miRNA were obtained from the Nematostella genome browser (https://simrbase.stowers.org/).
 
-## Biotin-labeled synthetic pre-miRNA generation
+### Biotin-labeled synthetic pre-miRNA generation
 
 Synthetic pre-miRNA for in vitro binding assay was designed based on miR-2022 backbone, with the mature and star stands changed to target an mCherry synthetic gene, which is not found in the Nematostella genome. To generate a control sequence, the original sequence was shuffled and non-hairpin secondary structure was validated with RNAfold web server (Lorenz et al., 2011). The reverse complement DNA templates were ordered from IDT (USA) and transcribed using the AmpliScribe T7-Flash Transcription kit protocol (Lucigen). The DNase-treated products were cleaned with Quick-RNA MiniPrep Kit (Zymo Research), then validated on agarose gel and concentration was measured with Epoch Microplate Spectrophotometer (BioTek Instruments, Inc, USA). Next, 790 ng of the products were biotinylated with Pierce RNA 3' End Biotinylation Kit (Thermo Fisher Scientific). After ligation of 15 hr, products were cleaned according to the manufacturer’s protocol and pellets were dissolved with 12.5 µl nuclease-free water. A second cleaning step was conducted with Quick-RNA MiniPrep Kit (Zymo Research). Products were eluted with 16 µl nuclease-free water and concentration was measured with NanoDrop (Thermo Fisher Scientific).
 
-## In vitro binding assay
+### In vitro binding assay
 
 In vitro binding assay was performed according to a previously described method (Lewandowska et al., 2021). In brief, 4000 zygotes were injected with the plasmid containing 3 × FLAG-Hyl1La, from which ~3000 survived after 2 days. Embryos were flash-frozen with liquid nitrogen and stored in –80°C. Next, animals were mechanically homogenized in the following lysis buffer: 50 mM Tris-HCl (pH 7.4), 150 mM KCl, 0.5% NP-40, 10% glycerol, Protease inhibitor cOmplete ULTRA tablets (Roche, Switzerland), Protease Inhibitor Cocktail Set III, EDTA-Free (Merck Millipore), and Murine RNase inhibitor (New England Biolabs). Protease and RNase inhibitors were added fresh just before use. Lysed animals were incubated and supernatants were collected as described before. Next, the lysate was pre-cleared as follows: 100 µl of streptavidin magnetic beads (New England Biolabs) were washed in 1 ml of 1 × PBS for three times and the FLAG-tagged Hyl1La lysate was added to the washed beads. Lysis buffer was added to make up 1.3 ml and samples were incubated at 4°C rotation for 1 hr. After the incubation, the pre-cleared lysates were collected and mixed with the biotin-labeled pre-miRNA or biotin-labeled shuffled pre-miRNA as negative control in the final concentration of 8.23 ng/ml and ATP (New England Biolabs) in the final concentration of 0.5 mM. Samples were incubated for 1 hr in rotation at room temperature. Simultaneously, 100 µl of fresh streptavidin magnetic beads were washed as described before and blocked with 3-day-old wild-type lysate for 1 hr at 4°C. Biotin-labeled precursors containing lysates were added to the blocked beads and incubated for 2 hr in rotation at 4°C for biotin-labeled pre-miRNA pull-down. Sixty µl was taken from each lysate before addition to the beads as input sample. After the incubation, the lysates were discarded and the beads were washed three times with 500 µl of the following wash buffer: 50 mM Tris-HCl (pH 7.4), Protease inhibitor cOmplete ULTRA tablets, Protease Inhibitor Cocktail Set III, EDTA-Free and Murine RNase inhibitor. Subsequently, 40 µl of filtered double-distilled water and 20 or 30 µl of Blue Protein Loading Dye (New England Biolabs) were added to the beads or the inputs, respectively. The samples were heated and centrifuged as described before and the supernatant was collected for Western blot. Intensities of Western bands were determined by using the ImageStudio software (LI-COR Biosciences, Lincoln, NE, USA). Enrichment of pre-miRNA pull-down compared to shuffled pre-miRNA pull-down was determined by the ratio of the band to the background intensity.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 For phenotypic analysis, we performed Student’s t-test between the number of developed and undeveloped animals. To test differences in size distribution of small RNA sequencing reads, Student’s t-test (paired two-tailed) was performed between control and Hyl1La SI MO1 samples. For statistical analysis of qRT-PCR data, Student’s t-test (one-tailed assuming equal variance) was performed on ΔCt values between different biological replicates. For in vitro binding assay analysis, Student’s t-test (paired two-tailed) was performed on the ratio of the bands to background intensity. To check overall significant difference between the miRNA expression levels, Wilcoxon signed-rank test was done. The Student’s t-test was conducted in Microsoft Excel while Wilcoxon signed-rank test was done using socscistatistics (https://www.socscistatistics.com/tests/signedranks/default.aspx).

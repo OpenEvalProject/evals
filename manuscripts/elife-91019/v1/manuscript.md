@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0384j8v12 School of Psychology, The University of Sydney Sydney Australia
-2. https://ror.org/02vm5rt34 Department of Psychology, Vanderbilt University Nashville United States
+1. School of Psychology, The University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+2. Department of Psychology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ To preview the results, across three experiments we find no evidence using the t
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 Many previous bCFS studies have shown that increasing contrast eventually causes a target image to overcome interocular suppression (i.e. emerge into awareness). To our knowledge, however, none has investigated the contrast at which an initially visible image succumbs to suppression as its contrast is decreased. Experiment 1 uses the tCFS method to continuously track changes in target visibility as it rises and falls in contrast. As shown in Figure 2b, this provides a series of bCFS thresholds (upper turning points) as well as thresholds for the target’s re-suppression (lower turning points: reCFS thresholds). We compare these thresholds to those obtained with a discrete procedure in which contrast either increased steadily from a low starting point until breakthrough (standard bCFS measure) or decreased steadily from a high starting point until suppression was achieved. On each trial, the target image was either a face or a familiar object, with the images all matched in size, RMS contrast and mean luminance.
 
@@ -52,7 +52,7 @@ After confirming a difference between bCFS and reCFS thresholds, we next compare
 
 We quantified the evidence for this null-effect on suppression depth with a subsequent Bayesian model comparison. A Bayesian repeated-measures ANOVA (2x2; procedure x image type on suppression depth) found that the best model to explain suppression depth included the main effect of procedure (BF10=3231.74), and weak evidence/data insensitivity for image type (BF10=0.37). This indicates that the data was insensitive as to whether image-type was better at predicting suppression depth than the null model. In other words, there is a large disparity in contrast between targets breaking and re-entering CFS, but the magnitude of this disparity is most likely the same for objects and for faces. This potentially important finding is the focus of our next Experiment.
 
-## Experiment 2
+### Experiment 2
 
 Experiment 1 disclosed that bCFS thresholds were not equivalent to reCFSthresholds, and demonstrated that the suppression depth of images could be quantified in an image-specific manner. Furthermore, Experiment 1 showed that suppression depth could be measured rapidly using the tCFS procedure and did not differ between faces and objects. In Experiment 2, we tested whether the constant suppression depth obtained in Experiment 1 for two image types would replicate across a larger variety of image categories.
 
@@ -68,7 +68,7 @@ This result is plotted in Figure 3, which clearly shows differences in bCFS thre
 
 Replicating the result of Experiment 1, approximately 15 dB of suppression depth was observed in Experiment 2 (Figure 3b), which was practically identical across image types (Faces, M=14.35 (SD = 5.64); Objects, M=14.61 (SD = 6.07); Gratings, M = 14.88 (SD = 5.55); phase-scrambled images, M=14.70 (SD = 5.39)); polar patterns, M=14.69 (SD = 6.50). A repeated-measures ANOVA confirmed that suppression depth did not differ across image categories (F(4,68) = 0.1, p=0.98).
 
-## Experiment 3
+### Experiment 3
 
 Experiments 1 and 2 introduced the tCFS method and, using that new method, demonstrated that bCFS thresholds vary depending on target type, as many previous bCFS studies have shown. Importantly, reCFS thresholds varied in parallel with bCFS thresholds which, when expressed in terms of suppression depth, reveals that depth of suppression is strikingly uniform across target image categories in CFS. This uniformity of suppression depth could indicate that neural events mediating CFS suppression transpire within a common visual mechanism, one that is not selective for image type, complexity or semantic meaning. This view is compatible with popular models of binocular rivalry built around the concept of reciprocal inhibition and neural adaptation (Alais et al., 2010; Kang and Blake, 2010; Mcdougall, 1901), as well as with more recent Bayesian-inspired inference-based models in which perceptual alternations in dominance are triggered by accumulating residual error signal associated with competing stimulus interpretations (Hohwy et al., 2008). As pointed out elsewhere (Blake, 2022), steadily increasing error signal effectively plays the same role as does steadily decreasing inhibition strength caused by neural adaptation in reciprocal inhibition models.
 
@@ -76,11 +76,19 @@ In the context of the tCFS method, the steady increases and decreases in the tar
 
 A 3x2 x 4 repeated measures ANOVA compared three rates of contrast change (slow, medium, fast), on both thresholds (bCFS, reCFS) across four image categories (face, object, grating, phase scrambled) using the tCFS paradigm. There was a significant main effect of threshold (F(1,16) = 116.56, p<0.001, ηp2 = 0.88) again indicating that bCFS and reCFS contrasts differ. There was also a significant main effect of image type (F(3,48) = 9.40, p<0.001, ηp2 = 0.37), again with no interaction with threshold (p=0.19). This result indicates that bCFS and reCFS thresholds vary in tandem regardless of image type. This null-effect of image-type was again confirmed with a Bayesian model comparison (3 speed x 4 image categories on suppression depth), demonstrating moderate support for the null effect of image category (BF01 = 4.06). Critically, there was a significant interaction between rate of contrast change and thresholds (F(2,32) = 128.60, p<0.001, ηp2 = 0.89), as expected, indicating that the difference between bCFS and reCFS thresholds (i.e. suppression depth) depended on the target’s rate of contrast change. Figure 4 displays a summary of these results (averaged across image types), showing that as the rate of contrast change increases, so does suppression depth (Slow M=9.64 dB, SD = 4.37, Medium M=14.6 dB, SD = 5.43; Fast M=18.97 dB, SD = 6.93).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/91019/elife-91019-fig4-v1.jpg)
+
+**Figure 4.:** (a) bCFS (blue) and reCFS (red) thresholds collected during tCFS with three rates of contrast change (RCC) for the sample of 17 participants. Figure elements are the same as in Figure 3a. (b) Suppression depth increases when the rate of contrast change increases during tCFS. All error bars correspond to ± 1 SEM corrected for within participant comparisons (Cousineau, 2005). (c) Example trials at each rate of contrast change from a single participant. Red markers indicate reCFS responses, blue markers show bCFS.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91019/elife-91019-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Average histogram across participants for all percept durations by experimental condition. Solid lines show tCFS conditions, broken lines show discrete (unidirectional) conditions. Shading corresponds to ± 1 SEM corrected for within participant comparisons (Cousineau, 2005). (b–c) Average histograms for tCFS in Experiment 2, and Experiment 3, respectively. Figure conventions as in (a). (d) tCFS durations of Experiment 3 when split by rate of contrast change. Vertical lines and arrows indicate the mean of median percept durations across participants.
+
 We performed additional analyses to rule out an alternative explanation for the increased suppression durations demonstrated in Experiment 3. We reasoned that if alternations between bCFS and reCFS were happening with a regular periodicity, such that responses were made every 1 second (for example), then these consistent responses could result in smaller suppression thresholds when the rate of contrast change was slow, as we have observed. Similarly, larger suppression thresholds would be measured if the same 1 s interval had elapsed while the rate of contrast change was fast. Inspection of the raw tCFS time-series qualitatively indicated that perceptual durations were varying with the rate of target contrast change (Figure 4c). To test this possibility, we compared the group average perceptual durations across all experiments, to test whether the average duration of percepts was the same despite different rates of contrast change. Figure 4—figure supplement 1 displays the results of this analysis. The histograms of perceptual durations for Experiments 1 (all tCFS median M=3.83, SD = 1.66) and Experiment 2 (M=3.48, SD = 1.36) show similar means and distributions, with no significant difference between them (t(36) = 0.72, p=0.48). This is unsurprising given their similar design and matched rate of contrast change. In Experiment 3, however, the distribution of percept durations is shown to vary by rate of contrast change. With shorter median percept durations for fast rates of contrast change (M = 3.08, SD = 1.07), and slower percept durations for slow rates of contrast change (M=4.61, SD = 2.05) compared to medium (M = 3.45, SD = 1.29). A repeated measures ANOVA confirmed that median percept durations varied by rate of contrast change (F(2,32) = 30.89, p<0.001, ηp2=0.66).
 
 This analysis thus confirmed that these differences in suppression depth were not driven by fixed rates of perceptual alternation across the three levels of rate of contrast change (Figure 4c and Figure 4—figure supplement 1).
 
-## Perceptual switches during tCFS are described by a damped harmonic oscillator
+### Perceptual switches during tCFS are described by a damped harmonic oscillator
 
 The results of Experiment 3 demonstrated that when the opportunity for target adaptation is increased, as when the target’s rate of contrast change was slow, that suppression depth is reduced and a smaller contrast decrease is needed for a visible target to reenter CFS (see Figure 4a).One possible account for this relates to the balance of excitation/inhibition in neural systems, which have been particularly fruitful models of interocular competition (Alais et al., 2010; Li et al., 2017). In these models, adaptation over time is a critical parameter governing changes in visual consciousness (Alais et al., 2010), which motivated us to explore in our final analysis whether suppression depths also fluctuated over time. Accordingly, our final analysis sought to model the temporal nature of perceptual switches during tCFS, to understand whether a balance of excitation and inhibition may be contributing to the sequential contrast thresholds that govern target visibility.
 
@@ -94,6 +102,101 @@ We next tested whether these sequential changes in suppression depth could be de
 
 As can be appreciated in Figure 5c, sequential changes in suppression depth were well described by the damped harmonic oscillator model of excitation and inhibition, which well captured the modulations early in the trial. For each rate of target contrast change, the damped harmonic oscillator model was the superior fit to the data (Slow contrast change, R2=0.68, BIC = –1847.2; Medium contrast change, R2=0.63, BIC = –2125.29; Fast contrast change, R2=0.36, BIC = –1041.29). In each case, the change in Bayesian Information Criterion between the damped harmonic oscillator and the next best fitting cubic polynomial model was large (Slow contrast change, ΔBIC = –1072.88; Medium contrast change, ΔBIC = –781.5; Fast contrast change, ΔBIC = –97.06). Table 1 displays the assessments of each model fit for each rate of change condition.
 
+**Table 1.**
+ Summary of results from model fits and comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Slow RCC</th>
+      <th>Medium RCC</th>
+      <th>Fast RCC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model</td>
+      <td>Measure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(cubic) 1</td>
+      <td>R2</td>
+      <td>.07</td>
+      <td>.19</td>
+      <td>.29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BIC</td>
+      <td>–774.31</td>
+      <td>1343.79</td>
+      <td>–944.23</td>
+    </tr>
+    <tr>
+      <td>(harmonic) 2</td>
+      <td>R2</td>
+      <td>.005</td>
+      <td>.006</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BIC</td>
+      <td>–706.85</td>
+      <td>1138.595</td>
+      <td>–600.34</td>
+    </tr>
+    <tr>
+      <td>(dHO) 3</td>
+      <td>R2</td>
+      <td>.684</td>
+      <td>.632</td>
+      <td>.361</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BIC</td>
+      <td>–1847.19</td>
+      <td>–2125.29</td>
+      <td>–1041.29</td>
+    </tr>
+    <tr>
+      <td>Comparison</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2–1</td>
+      <td>ΔBIC</td>
+      <td>67.46</td>
+      <td>205.195</td>
+      <td>343.89</td>
+    </tr>
+    <tr>
+      <td>3–1</td>
+      <td>ΔBIC</td>
+      <td>–1072.88</td>
+      <td>–781.5</td>
+      <td>–97.06</td>
+    </tr>
+    <tr>
+      <td>3–2</td>
+      <td>ΔBIC</td>
+      <td>–1140.34</td>
+      <td>–986.695</td>
+      <td>–440.95</td>
+    </tr>
+  </tbody>
+</table>
+
 The damped harmonic oscillator has been proposed to capture the response of neural populations governed by excitation/inhibition balance after external perturbation, with a given rate of decay. We return to the interpretation of these models in the Discussion.
 
 ## Discussion
@@ -102,7 +205,7 @@ This study introduces a new CFS methodology that indexes suppression depth based
 
 The tCFS method offers two important advances for studying visual processing outside of awareness. First, it is fast and efficient. The data in Figure 2b, for example, show that 90 s is sufficient to collect a robust set of data comprising 16 thresholds, eight each for bCFS and reCFS. The second advantage is that by providing easy quantification of breakthrough and suppression thresholds, tCFS allows the calculation of a rational index of strength of suppression for evaluating whether certain categories of images (e.g. faces) receive prioritized processing, a controversial issue within the CFS literature. We will have more to say about claims of preserved visual processing despite suppression, and claims of unconscious processing more generally in a moment (see No effect of image category on suppression depth).
 
-## Thresholds for breaking and entering suppression quantify suppression depth
+### Thresholds for breaking and entering suppression quantify suppression depth
 
 In Experiment 1, we used the tracking CFS method to measure bCFS and reCFS contrast thresholds, and compared them to those obtained using discrete unidirectional contrast changes – a series of measures with increasing target contrast to obtain bCFSthresholds as conventionally done, and also a series with decreasing target contrast to measure suppression (reCFS) thresholds. For both conditions, significant differences between bCFS and reCFS thresholds were observed. This difference indicates that suppression is not a passive process where a given contrast threshold determines a narrow awareness/suppression border. Instead, there is a contrast range (i.e. suppression depth) between awareness and suppression. This is consistent with models of interocular suppression involving mutually inhibitory left- and right-eye processes. The fact that binocular rivalry produces a significant degree of suppression depth is well known in that literature (Blake and Camisa, 1979; Nguyen et al., 2003) but is rarely considered in CFS studies (an exception to this rule is the study by Tsuchiya et al., 2006 who used a briefly presented test probe to compare depth of suppression associated with CFS and with BR; suppression depth was considerably larger for the former than for the latter) where the focus is typically on the breakthrough threshold for awareness.
 
@@ -110,7 +213,7 @@ Intuitively, the average contrast threshold for reCFS should be lower than for b
 
 As an aside, the existence of distinctly different, complementary transition thresholds for bCFS and reCFS is reminiscent of the behavior termed hysteresis: a property of dynamical systems wherein output values, rather than being solely governed by corresponding input values, also exhibit lags or delays based on the valence of continuous changes in the input values. Examples of hysteresis in visual perception include transitions between binocular fusion and binocular rivalry (Anderson, 1992; Buckthought et al., 2008; Julesz and Tyler, 1976), perception of motion direction in random-dot cinematograms (Williams et al., 1986), and repetition priming in perception of bistable configurations (Pastukhov et al., 2015). To paraphrase Maglio and Polman, 2016, hysteresis can be construed as a form of memory whereby prior states influence the persistence of current states into the future.
 
-## No effect of image category on suppression depth
+### No effect of image category on suppression depth
 
 Having demonstrated a difference between bCFS and reCFS thresholds using the tCFS procedure, Experiment 2 compared suppression depth across five different image categories. As noted in the Introduction, a number of previous studies have interpreted differences in bCFS thresholds (or suppression durations) for different categories of images without taking into account thresholds for inducing suppression, which we believe is an important piece of information necessary for calculating suppression depth. In this paper, we applied the tCFS method to assess whether bCFS thresholds differed among several image categories and, as well, whether category-specific differences in suppression depth would be obtained when reCFS thresholds were also included in the equation. As an important prerequisite for asking this question, our bCFS thresholds indeed did replicate the often reported finding that certain image types break out of suppression into awareness at lower contrasts than do others (see Figure 3a). For example, bCFS thresholds for faces were lower than bCFS thresholds for phase-scrambled images by 5.3 dB. Critically, however, while bCFS thresholds varied with image type, the reCFS thresholds for those and, indeed, for all images was approximately 15 dB lower than bCFS, regardless of image type. In other words, all five of the image categories we tested, regardless of complexity or familiarity, produced a constant depth of suppression averaging about 15 dB (see Figure 3b), even though their bCFS thresholds varied.
 
@@ -130,74 +233,90 @@ Some caution is warranted here, however. It is not clear that all variation in b
 
 A hybrid-model might therefore be needed for a full account of CFS, similar to those proposed for binocular rivalry (Cao et al., 2021; Wilson, 2003). Based on our results here, we imagine a hybrid model in which relative suppression depth for a given image arises from low-level interocular mutual inhibition acting equivalently on any kind of image (yielding the uniform suppression depth we observe), and the absolute level of breakthrough threshold could be impacted by high-level salience (e.g. Hesse and Tsao, 2020). Careful manipulation of low- and high-level properties, in combination with the tCFS method, should be able to test this model, as discussed earlier.
 
-## Suppression depth is modulated by rate of contrast change
+### Suppression depth is modulated by rate of contrast change
 
 Experiment 3 varied the rate of target contrast change with the expectation that this would alter the magnitude of adaptation during tCFS. We predicted that a faster contrast change would reduce the opportunity for adaptation to accrue, thereby requiring a greater change in contrast to overcome suppression during CFS. Similarly, a slower rate of change should increase the opportunity for adaptation, resulting in the inverse effect. We observed strong modulations of suppression depth based on the rate of contrast change, confirming these predictions (Figure 4). Follow-up analyses confirmed that all three rates of contrast change had distinct percept duration times (Figure 4—figure supplement 1), indicating that the differences in suppression depth we observed were not due to an artefact such as participants responding with a fixed inter-response interval, which would spuriously increase suppression depth for a fast rate of change.
 
-## Damped harmonic oscillator model
+### Damped harmonic oscillator model
 
 We modeled the changes in contrast between successive bCFS and reCFS thresholds over a trail and found that a damped harmonic oscillator (DHO) provided an excellent fit to these sequential estimates of suppression depth. The applicability of this model is noteworthy for a number of reasons. First, in neuroscience, the DHO model provides a valuable mathematical framework for understanding the dynamics of neural systems and their responses to external stimuli, particularly with regard to the interplay between excitation and inhibition (Freeman, 1961; Hodgkin and Huxley, 1952; Spyropoulos et al., 2022). In the present context, the high starting contrast of the suprathreshold target in tCFS trials is analogous to the external perturbation. The asymptotic differences in thresholds over time are reminiscent of both earlier (Wilson, 2003), and more recent computational models Cao et al., 2021 of interocular competition, models proposing that changes to visual awareness are driven by an out-of-equilibrium cortical network. We note that the locus of competing neural ensembles could reside in early visual stages (Alais et al., 2010; Lankheet, 2006; Li et al., 2017), late stages (Hohwy et al., 2008) or across hierarchical (Cao et al., 2021; Wilson, 2003) levels of visual processing. Although it is beyond the scope of the present work, future studies could vary the starting conditions of the tCFSprocedure, or manipulate higher-order influences such as attention and expectation to examine whether the return to equilibrium we have revealed conforms to the predictions of competing models.
 
-## Future directions
+### Future directions
 
 The tCFS method equips researchers with a convenient method to measure bCFS and reCFS thresholds, and thus suppression depth. We have used tCFS here to establish that a uniform suppression depth exists across image categories, and that differences in bCFS thresholds alone cannot provide strong evidence for unconscious processing. Many substantive questions remain. For example, the depth of interocular suppression is reported to partially depend on spatial feature similarity between the competing images (Alais and Melcher, 2007; Drewes et al., 2023) and their temporal frequency (Han et al., 2018b; Han and Alais, 2018a). These factors could be parametrically varied to examine specifically whether they modulate bCFS thresholds alone, or whether they also cause a change in suppression depth by asymmetrically affecting reCFS thresholds. Previous findings can easily be revisited, such as results showing that bCFS varies with manipulations of semantic content (e.g. face inversion, or manipulating a face’s emotion), results which form part of the claimed evidence for expedited unconscious processing of certain suppressed images.
 
-## Conclusion
+### Conclusion
 
 Across three experiments we have introduced the tCFS method and shown that traditional evidence for unconscious processing – based on differences in the threshold to reach awareness (bCFS threshold) – provide only half the story. Misleading conclusions about unconscious processing must be supported by measures of suppression depth, which can be calculated as the difference between both breakthrough (bCFS) and suppression (reCFS) thresholds. Using the tCFS method, we have measured these thresholds, and found uniform suppression depth across five image five categories. Notably, this uniform suppression depth is increased with reduced opportunity for target image adaptation, as is the case when target contrast changes rapidly. Collectively, the three tCFS experiments refute existing claims of high-level semantic information or target complexity influencing the depth of unconscious processing during interocular suppression. Future findings may yet confirm differences in suppression depth in certain circumstances, yet this will require measurement of both breakthrough and suppression thresholds to demonstrate the requisite changes in suppression depth.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 36 undergraduate psychology participants volunteered in exchange for course credit. All participated with informed consent and had normal or corrected-to-normal vision. Our sample size for Experiment 1 was based on power estimates to detect a moderate sized effect in a 2x2 repeated-measures design (Faul et al., 2009), while also exceeding the typical sample size used in bCFS studies to compensate for our novel paradigm (e.g. n=10, Cha et al., 2019, n=10–16, Han et al., 2021). We adjusted our power analysis after observing a strong effect size for the difference between bCFS and reCFS thresholds when using the tCFS method, resulting in fewer participants in Experiments 2 and 3. Experiment 1: N=20, (15 females), Experiment 2: N=18 (12 females), Experiment 3, N=17 (11 females). All participants in Experiment 3 also did Experiment 2, and one author (JC) also completed experiments 2 and 3. This study was approved by the University of Sydney Human Research Ethics Committee (HREC 2021/048).
 
-## Apparatus
+### Apparatus
 
 Visual stimuli were displayed on a Mac Pro (2013; 3.7 GHz Quad-Core Intel Xeon E5) computer, displayed on an Apple LED Cinema monitor (24 inch, 1920x1,200 pixel resolution, 60 Hz refresh rate), running OS X El Capitan (10.11.6). All experiments were programmed using custom MATLAB code, and displayed using Matlab (ver R2017b) and Psychtoolbox (ver 3.0.13; Brainard and Vision, 1997). Responses were collected via the left mouse button of the right hand. A mirror stereoscope was used to partition participant’s vision into separate left- and right-eye views, located approximately 51 cm from the screen, with a total optical path length of 57 cm.
 
-## Stimuli
+### Stimuli
 
 Participants dichoptically viewed a high-contrast Mondrian mask pattern (400x400 pixels, 7° x 7°) with one eye and a small target stimulus (130x130 pixels, 2.2° x 2.2°) with the other eye. Two binocularly presented white squares surrounded the mask and served as a fusion lock to maintain stable fusion, and each eye had a central fixation cross (18x18 pixels; 0.3° x 0.3°). The Mondrian pattern was greyscale and consisted of overlapping circles of various sizes and intensities and was updated every fifth video frame (12 Hz). The mask’s RMS contrast ranged between 0.07 and 0.09. As previous research has indicated that achromatic masks may be optimal to suppress achromatic targets (reviewed in Pournaghdali and Schwartz, 2020), we opted for grayscale Mondrian patterns to match our targets.
 
 In all experiments, targets were viewed by the right eye and were selected at random from a set that was standardised in RMS contrast (20%) and mean luminance (before contrast ramping was applied). Target contrast was ramped up or down by scaling the target image’s standard contrast within a range of.02–1.0. Importantly, all contrast scaling was done on a logarithmic scale in decibel units (i.e. conDb = 20 x log10(con)) to make the changing contrast effectively linear, thus coinciding with the visual system’s logarithmic contrast response function. Minimum (.02) and maximum (1.0) contrast values were thus –33.98 and 0 dB, respectively, and contrast steps were.07 dB per video frame. In experiment 3, where the rate of target contrast change was manipulated, the contrast steps were.035,.07, or.105 dB units per video frame. Target location varied between trials, drawn from a uniform distribution of 200x200 pixels centred on the fixation cross.
 
-## Procedure
+### Procedure
 
 Participants were given practice trials until they were familiar with CFS and the task used in these experiments. Participants were instructed to respond via mouse click the moment their subjective visibility of the target stimulus changed (either when a visible target became suppressed, or when a suppressed target became visible). Realizing that phenomenological quality of reversals may differ among participants (Moors et al., 2017; Zadbood et al., 2011), we encouraged participants in our study to establish a criteria for target appearance/disappearance in the practice session and to maintain it throughout the experiment. In all experiments, the dependent variable was the target contrast at the moment when a change in target visibility was judged to have occurred (either breaking suppression or succumbing to suppression).
 
-## Experiment 1 - Using tCFS to measure suppression depth
+### Experiment 1 - Using tCFS to measure suppression depth
 
 Our first experiment tested two different procedures for measuring reCFS and bCFS thresholds: a continuous tracking procedure and a discrete trials procedure similar to that used in previous bCFS research. We hypothesised that a difference between bCFS and reCFS thresholds would provide evidence for a contrast range (i.e. suppression depth) between awareness and suppression, in contrast to the possibility of a given contrast threshold determining a narrow awareness/suppression border. By comparing the results between discrete and continuous methods, we sought to establish the feasibility of collecting multiple thresholds within a single-trial, allowing the rapid quantification of suppression depth in CFS paradigms. Experiment 1 compared CFS thresholds for targets (faces and objects) increasing in contrast and decreasing in contrast (i.e. bCFS and reCFS thresholds) in discrete trials and in continuous tracking trials, in a 2x2 repeated-measures, within-subjects design. In the discrete conditions, participants completed eight blocks of eight trials, during which target contrast always changed in one direction - either increasing from low to high as is typically done in bCFS studies to measure breakthrough thresholds, or decreasing from high contrast to low to measure a suppression threshold. In the continuous condition, the target contrast tracked down and up continuously, reversing direction after each participant response. Continuous trials always began with the target decreasing from maximum contrast so that the participant’s first response was to report when it disappeared, which caused target contrast to increase until breakthrough was reported, which caused it to decrease again until suppression, etc.,. Continuous trials terminated after 16 reports of change in target visibility. When the contrast time series is plotted as shown in Figure 2b, the plot shows eight upper turning points where the target broke into awareness (bCFS thresholds) and eight lower turning points where the target became re-suppressed (reCFS thresholds). The order of discrete and continuous blocks was counterbalanced and randomized across participants. Images for the eight trials of each block type were drawn from the same set of four faces and four naturalistic objects, with no repetitions within a block. Before each block began, participants completed a series of practice trials that utilised an independent set of six images. They were able to complete practice trials as many times as they wished until they had confidently established interocular fusion and were comfortable with the requirements of the task.
 
-## Experiment 2 - The effect of image category
+### Experiment 2 - The effect of image category
 
 Experiment 2 tested the suppression depth obtained for different image categories. Experiment 2 used only the continuous tracking ‘tCFS’ method and compared five image types (faces, familiar objects, linear gratings, phase scrambled images, and polar patterns that were radial lines or concentric circles). The trials contained 20 reports (10 bCFS and 10 reCFS thresholds) and the data were analysed in a 5 (image type) x 2 (bCFS vs reCFS thresholds) within-subjects, repeated-measures ANOVA. There were 10 tracking trials, with each trial containing a single target image from a subset of ten (two of each image category, randomly ordered for each participant).
 
-## Experiment 3 - Rate of contrast change on suppression depth
+### Experiment 3 - Rate of contrast change on suppression depth
 
 Experiments 1 and 2 introduced the tCFS method and demonstrated a uniformity of suppression depth across multiple target image categories. This uniformity of suppression depth could indicate that neural events mediating CFS suppression are not selective for complexity or semantic meaning, and like popular models of binocular rivalry, could instead be based on low-level reciprocal inhibition and neural adaptation processes (Alais et al., 2010; Kang and Blake, 2010; Mcdougall, 1901), in which case suppression depth should vary with the rate of contrast change of the monocular target. More specifically, based on the adapting mutual inhibition model, we predicted that at a slower rate of contrast change neural adaptation for the monocular target would increase, lowering the amount of contrast change necessary to transition between visibility states. Similarly, a faster rate of target contrast change would reduce the time for neural adaptation of the monocular target, resulting in an increase in the required change in contrast necessary to transition a target into and out of awareness. Expressed in operational terms, the depth of suppression should increase with the rate of target change, which was the focus of Experiment 3.
 
 Experiment 3 used the tCFS method and compared the rate of target contrast change (slow, medium, fast) across four image categories (faces, objects, linear gratings, and phase scrambled images). The trials contained 20 reports (10 bCFS and 10 reCFS thresholds) and the data were analysed in a 3 (contrast change rate) x 4 (image type) x 2 (bCFS vs reCFS thresholds) repeated-measures, within-subjects design. The medium rate of change was the same as used in Experiments 1 and 2, and the slow and fast rates were 0.5 and 1.5 times the medium rate, respectively. There were 12 tracking trials, given by the factorial combination of four target image types repeated at the three rates of target contrast change (in a randomised order for each participant).
 
-## Data analysis
+### Data analysis
 
 Data analysis was performed in Matlab (ver R2022a), and SPSS/JASP (ver 28). Initial inspection identified 1 participant for exclusion (from Experiment 3), based on failure to follow task instructions. For visualization and analysis, all contrast thresholds are expressed in decibel units.
 
 We performed Bayesian model comparison to quantify evidence for and against the null in JASP, using Bayesian repeated measures ANOVAs (uninformed prior with equal weight to all models). We report Bayes factors (B) for main effects of interest (e.g. effect of image type on suppression depth), as evidence in favor compared to the null model (BF10=B). Following the guidelines recommended in Dienes, 2021, B values greater than 3 indicate moderate evidence for H1 over H0, and B valuesless than1/3 indicate moderate evidence in favor of the null. B values residing between 1/3 and 3 are interpreted as weak evidence, or an insensitivity of the data to distinguish between the null and alternative models.
 
-## Model fitting
+### Model fitting
 
 We additionally quantified the change in relative contrast over time, and evaluated a series of model fits to describe these data. For this analysis, bCFS and reCFS thresholds were first averaged within their respective response number, enabling a comparison of thresholds over the course of each trial. The modelling used the absolute change in contrast between each sequential threshold in the tracking series as its dependent variable, which we modeled after detrending, per participant, and at the group level.
 
-We compared three basic models to this data. All models were fit with a non-linear least-squares approximation using a maximum of 400 iterations (lsqcurvefit.m in MATLAB). The first was a simple cubic polynomial with three free parameters:(1)ax3+bx2+cx
+We compared three basic models to this data. All models were fit with a non-linear least-squares approximation using a maximum of 400 iterations (lsqcurvefit.m in MATLAB). The first was a simple cubic polynomial with three free parameters:
 
-where a, b and c are coefficients for the cubic, quadratic, and linear term. We also fit a simple harmonic oscillator with three free parameters:(2)a×sin⁡(b×t+c)
+$$
+ax^{3}+bx^{2}+cx
+$$
 
-where a is amplitude, b is frequency, c is a phase offset, and t is time. We also fit a damped harmonic oscillator model with four free parameters:(3)a×e−b×t×sin(c×t+d)
+where a, b and c are coefficients for the cubic, quadratic, and linear term. We also fit a simple harmonic oscillator with three free parameters:
+
+$$
+a\timessin⁡(b\timest+c)
+$$
+
+where a is amplitude, b is frequency, c is a phase offset, and t is time. We also fit a damped harmonic oscillator model with four free parameters:
+
+$$
+a\timese^{−b\timest\timessin(c\timest+d)}
+$$
 
 where a and b describe the amplitude and damping coefficient of decay, and c and d describe the frequency and phase shift of the oscillatory response.
 
-To fit each model, we linearly interpolated between the turning points (thresholds) in the tCFS time series of each trial to increase the observations to 1000 samples, and estimated the goodness of each fit through a series of steps. First, we calculated the sum of squared residual errors for each fit (SSE), and calculated the Bayesian Information Criterion (BIC) using Equation 4:(4)BIC=n×log(SSE/n)+k×log(n);
+To fit each model, we linearly interpolated between the turning points (thresholds) in the tCFS time series of each trial to increase the observations to 1000 samples, and estimated the goodness of each fit through a series of steps. First, we calculated the sum of squared residual errors for each fit (SSE), and calculated the Bayesian Information Criterion (BIC) using Equation 4:
+
+$$
+BIC=n\timeslog(SSE/n)+k\timeslog(n);
+$$
 
 where n represents the number of observations in the dataset, SSE is the sum of squared errors, and k is the number of parameters in the model. The BIC allows a comparison of model fits while taking into account the goodness of fit and complexity of each model. It includes a penalty on the number of parameters in the model by including a term that scales with the logarithm of sample size. When comparing two models, the model with a lower BIC is considered favorable, with a change of 0–2 BIC as weak evidence in favor, and 6–10 as strong evidence in favor (Kass and Raftery, 1995).

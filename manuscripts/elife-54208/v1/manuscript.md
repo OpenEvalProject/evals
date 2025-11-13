@@ -40,13 +40,13 @@ Here we describe an alternative approach to address these knowledge gaps. We del
 
 ## Results
 
-## Comparative detection of direct protein recruitment by opioid receptors in living cells
+### Comparative detection of direct protein recruitment by opioid receptors in living cells
 
 Two agonist-activated opioid receptor complexes have been described in structural detail (Figure 1A), one bound to a nucleotide-free G protein heterotrimer and another to an active state-stabilizing nanobody (Nb) (Huang et al., 2015; Koehl et al., 2018). The receptor conformation resolved in each complex is similar but not identical, with Nb and G protein interactions involving distinct molecular contacts on cytoplasmic domains of the receptor. Nbs are inherently orthogonal to intracellular biochemistry but heterotrimeric G proteins engage multiple cellular proteins in addition to activated receptors. Thus we focused on mini-G (mG) proteins, engineered versions of the Ras-like domain of G protein alpha subunits which bind directly to activated GPCRs but are not known to engage other cellular proteins (Nehmé et al., 2017; Wan et al., 2018). We assessed binding to receptors in intact cells by redistribution of fluorescently labeled Nb or mG fusion proteins from the cytoplasm to the plasma membrane (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig1-v1.jpg)
 
-**Figure 1.:** (A) Crystal structures of the DAMGO-bound MOR (red) - Gi (green/blue) complex (PDB: 6DDF) and the BU27-bound MOR (red) – nanobody (green) complex (PDB: 5C1M). Ligands are shown in blue. (B) Schematic of nanobody (Nb)/miniGsi (mGsi) and OR localization in cells and expected probe re-localization upon agonist addition. (C) Scheme of a cell imaged by total internal reflection fluorescence microscopy (TIR-FM). The evanescent excitation field selectively illuminates fluorophores close to the plasma membrane. (D) TIR-FM images of a time series of a HEK293 cell, expressing Venus-mGsi and FLAG-KOR (not shown). Medium was exchanged to DynA (agonist, 100 nM) and to 5’GNTI (antagonist, 100 μM) by bath application. The scale bar represents 10 μm. Intensity of mGsi and KOR (labeled with anti-FLAG M1-AF647) during the TIR-FM time-lapse. 5 s between frames is shown. F0, average fluorescence intensity before agonist. (E) Same as in (D) but with HEK293 cell expressing EGFP-Nb33 instead of mGsi. Intensity of Nb33 and KOR during TIR-FM time-lapse with 5 s between frames is shown. (F) Intensity of mGs and KOR (labeled with anti-FLAG M1-AF647) during the TIR-FM time-lapse, adding increasing concentrations of DynA (1 nM - 10 μM). 5 s between frames is shown. F0, average fluorescence intensity before agonist. (G) mGsi intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi and KOR, adding increasing concentrations of U69 (1 nM - 10 μM) followed by reference compound DynA (10 μM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference compound DynA). (H) Same as in (F) with HEK293 cell expressing EGFP-Nb33 instead of mGsi. (I–K) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR, measured by TIR-FM upon different agonists. Normalization of intensity values is shown (range [0–1]). Regression curves with Hill slope of 1 are shown. (I) DynA concentration response (n = 3; average ± SEM). (J) U69 concentration response, normalized to DynA (n = 3; average ± SEM). (K) U50 concentration response, normalized to DynA (n = 4; average ± SEM).Figure 1—source data 1.Figure 1I-K).
+**Figure 1.:** (A) Crystal structures of the DAMGO-bound MOR (red) - Gi (green/blue) complex (PDB: 6DDF) and the BU27-bound MOR (red) – nanobody (green) complex (PDB: 5C1M). Ligands are shown in blue. (B) Schematic of nanobody (Nb)/miniGsi (mGsi) and OR localization in cells and expected probe re-localization upon agonist addition. (C) Scheme of a cell imaged by total internal reflection fluorescence microscopy (TIR-FM). The evanescent excitation field selectively illuminates fluorophores close to the plasma membrane. (D) TIR-FM images of a time series of a HEK293 cell, expressing Venus-mGsi and FLAG-KOR (not shown). Medium was exchanged to DynA (agonist, 100 nM) and to 5’GNTI (antagonist, 100 μM) by bath application. The scale bar represents 10 μm. Intensity of mGsi and KOR (labeled with anti-FLAG M1-AF647) during the TIR-FM time-lapse. 5 s between frames is shown. F0, average fluorescence intensity before agonist. (E) Same as in (D) but with HEK293 cell expressing EGFP-Nb33 instead of mGsi. Intensity of Nb33 and KOR during TIR-FM time-lapse with 5 s between frames is shown. (F) Intensity of mGs and KOR (labeled with anti-FLAG M1-AF647) during the TIR-FM time-lapse, adding increasing concentrations of DynA (1 nM - 10 μM). 5 s between frames is shown. F0, average fluorescence intensity before agonist. (G) mGsi intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi and KOR, adding increasing concentrations of U69 (1 nM - 10 μM) followed by reference compound DynA (10 μM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference compound DynA). (H) Same as in (F) with HEK293 cell expressing EGFP-Nb33 instead of mGsi. (I–K) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR, measured by TIR-FM upon different agonists. Normalization of intensity values is shown (range [0–1]). Regression curves with Hill slope of 1 are shown. (I) DynA concentration response (n = 3; average ± SEM). (J) U69 concentration response, normalized to DynA (n = 3; average ± SEM). (K) U50 concentration response, normalized to DynA (n = 4; average ± SEM).
 
 For a mG probe we chose mGsi, derived from the Ras-like domain of Gs alpha but with nine residues at the distal C-terminus replaced by the corresponding residues from Gi alpha1. These C-terminal residues form a major determinant of G protein coupling specificity (Conklin et al., 1993) by folding into a helical structure (alpha-5 helix) that occupies the agonist-activated GPCR core (Carpenter and Tate, 2017; Koehl et al., 2018). Because Gs couples poorly to opioid receptors, we reasoned that a sensor derived from mGsi would primarily detect this interaction. For a Nb probe we selected Nb33, previously used to detect activated mu (MOR) and delta (DOR) opioid receptors in living cells (Stoeber et al., 2018). Nb33 shares receptor contact residues with Nb39, a close analog that has been resolved at high resolution in complex with activated MOR (Huang et al., 2015) and in a similar complex with activated kappa opioid receptor (KOR) (Che et al., 2018). Because cytoplasmic residues contacted by the Nb in these structures are largely distinct from those engaged by the G protein alpha-5 helix, we reasoned that the Nb-derived sensor has the potential to provide different allosteric information.
 
@@ -54,29 +54,29 @@ Fluorescent protein fusions of mGsi or Nb33 localized diffusely when expressed i
 
 We next tested two non-peptide KOR full agonists, U69593 (U69) and U50488 (U50). We generated concentration-response curves by increasing agonist concentration in a stepwise manner and then adding DynA in excess (10 μM) at the end of each series as an internal reference (Figure 1G and H). Both Nb33 and mGsi were robustly recruited in a concentration-dependent manner in response to DynA and both of the non-peptide full agonist drugs (Figure 1I–K), consistent with the previously established pharmacology of these compounds (DiMattio et al., 2015), but we also noted that the concentration-response relationship for mGsi recruitment was consistently left-shifted relative to Nb33. These results demonstrate that both Nb33 and mGsi are robustly recruited by KOR after activation by peptide and non-peptide full agonists in living cells, but with a potency shift indicating that the interactions are not identical.
 
-## Agonist-selective recruitment of engineered protein probes
+### Agonist-selective recruitment of engineered protein probes
 
 We then applied the same approach to investigate the effect of the alkaloid agonist etorphine (ET) on mGsi and Nb33 recruitment by KOR. ET is an opiate alkaloid drug that is structurally distinct from opioid peptides as well as from U50 and U69. ET efficaciously promotes G protein activation and signaling but has long been recognized to drive KOR internalization and phosphorylation poorly, supporting its classification as a G protein-biased agonist by operational criteria (Chu et al., 1997; DiMattio et al., 2015; Jordan et al., 2000). ET behaved as a potent but partial agonist in the mGsi recruitment assay, producing a maximum biosensor recruitment response reaching 67% of that produced by DynA (Figure 2A and D). Remarkably, ET produced little or no recruitment of Nb33 despite a robust response to DynA verified in each assay and in the same cells (Figure 2B and E). This lack of Nb33 recruitment was evident even at very high concentrations of ET (Figure 2B and C), in contrast to mGsi that was potently recruited (Figure 2C–E). Further verifying this difference, selective recruitment of mGsi relative to Nb33 was observed when the biosensors were tagged with distinct fluorophores, co-expressed, and imaged in parallel in the same cells (Figure 2F). Again, mGsi was potently recruited in response to ET but Nb33 was not, despite DynA producing strong recruitment of both probes and in the same cells (Figure 2G). These results indicate that mG and Nb probes can distinguish receptor-proximal agonist effects in intact cells.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig2-v1.jpg)
 
-**Figure 2.:** (A) mGsi intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi and KOR, adding increasing concentrations of etorphine (1 nM - 10 μM), followed by reference compound DynA (10 μM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference compound DynA). (B) Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing EGFP-Nb33 and KOR, treated, imaged, and normalized as in (A). (C) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR upon etorphine (ET) addition, measured by TIR-FM and using DynA as reference. Normalization of intensity values is shown (range [0–1]). Regression curves with Hill slope of 1 are shown. n = 5; average ± SEM. (D) TIR-FM images of a time series of a HEK293 cell, expressing Venus-mGsi and KOR (not shown). Increasing concentrations of etorphine were added, followed by DynA. Venus-mGsi is pseudocolored, low to high intensity. The scale bar represents 10 μm. (E) Same as in (D) but with HEK293 cell expressing EGFP-Nb33 instead of mGsi. EGFP-Nb33 is pseudocolored, low to high intensity. The scale bar represents 10 μm. (F) Experimental set up for measuring agonist-dependent recruitment of both mGsi and Nb33 to KOR in same cell. (G) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-KOR. Cell was treated with increasing concentrations of etorphine, followed by DynA, and antagonist 5’GNTI. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference DynA). Lower panel: 10 min kymograph traced inside the cell, depicting intensities of Venus-mGsi, mCherry-Nb33, and FLAG-KOR (labeled with anti-FLAG M1-AF647), all pseudocolored, low to high intensity. (H) Schematic of the C-tail domain of KOR, indicating the known agonist-dependent phosphorylation sites that are mutated to alanine in KOR-TPD. (I) Same as in (G) but with HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-KOR-TPD. (J) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR-TPD upon etorphine addition. Experimental setup and analysis as in (C). n = 5; average ± SEM. (K) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR upon etorphine addition, in cells pre-treated with GRK2/3 inhibitor Cmpd101 (30 μM). Experimental setup and analysis as in (C). n = 3; average ± SEM.Figure 2—source data 1.
+**Figure 2.:** (A) mGsi intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi and KOR, adding increasing concentrations of etorphine (1 nM - 10 μM), followed by reference compound DynA (10 μM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference compound DynA). (B) Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing EGFP-Nb33 and KOR, treated, imaged, and normalized as in (A). (C) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR upon etorphine (ET) addition, measured by TIR-FM and using DynA as reference. Normalization of intensity values is shown (range [0–1]). Regression curves with Hill slope of 1 are shown. n = 5; average ± SEM. (D) TIR-FM images of a time series of a HEK293 cell, expressing Venus-mGsi and KOR (not shown). Increasing concentrations of etorphine were added, followed by DynA. Venus-mGsi is pseudocolored, low to high intensity. The scale bar represents 10 μm. (E) Same as in (D) but with HEK293 cell expressing EGFP-Nb33 instead of mGsi. EGFP-Nb33 is pseudocolored, low to high intensity. The scale bar represents 10 μm. (F) Experimental set up for measuring agonist-dependent recruitment of both mGsi and Nb33 to KOR in same cell. (G) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-KOR. Cell was treated with increasing concentrations of etorphine, followed by DynA, and antagonist 5’GNTI. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference DynA). Lower panel: 10 min kymograph traced inside the cell, depicting intensities of Venus-mGsi, mCherry-Nb33, and FLAG-KOR (labeled with anti-FLAG M1-AF647), all pseudocolored, low to high intensity. (H) Schematic of the C-tail domain of KOR, indicating the known agonist-dependent phosphorylation sites that are mutated to alanine in KOR-TPD. (I) Same as in (G) but with HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-KOR-TPD. (J) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR-TPD upon etorphine addition. Experimental setup and analysis as in (C). n = 5; average ± SEM. (K) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR upon etorphine addition, in cells pre-treated with GRK2/3 inhibitor Cmpd101 (30 μM). Experimental setup and analysis as in (C). n = 3; average ± SEM.
 
 A simple interpretation of these results is that differential probe recruitment reflects a primary allosteric effect at the level of receptor-proximal protein engagement by the agonist-activated opioid receptor. An alternative possibility is that agonists produce differential probe recruitment as a secondary consequence of agonist-selective post-translational modifications of the receptor. In particular, because agonist-induced internalization of KOR requires multi-site phosphorylation on its cytoplasmic tail, and ET is known to stimulate this phosphorylation less strongly than DynA (Chen et al., 2016), we considered the possibility that differential biosensor recruitment occurs secondarily to differential phosphorylation. To test this, we measured biosensor recruitment by a mutant KOR lacking all relevant phosphorylation sites in the cytoplasmic tail (KOR-TPD for ‘total phosphorylation defective’, Figure 2H). The pronounced difference in mGsi relative to Nb33 recruitment was still observed (Figure 2I and J). Independently verifying this, selective probe recruitment by wild type KOR was not detectably perturbed in the presence of Compound101 (Figure 2K), a chemical inhibitor of GRK2/3 activity known to strongly reduce KOR phosphorylation in HEK293 cells (Chiu et al., 2017). Together, these results support the hypothesis that selective recruitment of mG relative to Nb probes occurs as a primary consequence of allosteric protein selection at the receptor, rather than a secondary effect of differential phosphorylation.
 
-## Agonist-selective probe recruitment is not restricted to KOR
+### Agonist-selective probe recruitment is not restricted to KOR
 
 We next asked if our experimental strategy can also detect differential protein recruitment by MOR. Nb33 is already known to be recruited by agonist-activated MORs (Stoeber et al., 2018), and we verified that this is also the case for mGsi. DAMGO, a peptide full agonist of MOR, produced rapid and robust recruitment of mGsi that was rapidly reversed by the competitive antagonist naloxone (Figure 3A and B). Similar to what was observed for recruitment of the engineered protein probes by KOR, the concentration-response relationship for recruitment of mGsi by DAMGO was left-shifted relative to Nb33 (Figure 3C). ET (also an agonist of MOR) promoted recruitment of both probes by MOR, and to the same maximum degree when compared to the peptide full agonist (Figure 3C). This contrasts with partial recruitment of mGsi and no detectable recruitment of Nb33 by KOR (Figure 2), indicating that differential recruitment of the engineered protein probes by opioid receptors is both agonist-dependent and receptor subtype-specific.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig3-v1.jpg)
 
-**Figure 3.:** (A) 7 min kymograph traced inside a cell expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR (labeled with anti-FLAG M1-AF647) and treated with increasing concentrations of DAMGO (agonist), followed by addition of Naloxone (antagonist). Fluorescence intensities are pseudocolored, low to high intensity. (B) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of DAMGO followed by Naloxone. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DAMGO). (C) Concentration-dependent recruitment of mGsi and Nb33 to MOR upon DAMGO and etorphine addition, measured by TIR-FM. Normalization of intensity values is shown (range [0–1]) with DAMGO as reference. Regression curves with Hill slope of 1 are shown. DAMGO n = 3, etorphine n = 4, average ± SEM. (D) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of morphine or PZM21 followed by reference compound DAMGO (10 μM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DAMGO). (E) Concentration-dependent recruitment of mGsi and Nb33 probes to MOR upon morphine or PZM21 treatment, setup and analysis as in (C). morphine n = 5, PZM21 n = 5, average ± SEM. (F) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of mitragynine pseudoindoxyl (MP) followed by DAMGO, using bath application. 5 s between frames is shown. (G) mGsi (left) and Nb33 (right) intensity during TIR-FM time-lapse series of a cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding 10 μM of reference DAMGO, followed by agonist washout using perfusion (‘wo’, highlighted in gray), and addition of 10 μM MP. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DAMGO). (H) Concentration-dependent recruitment of mGsi and Nb33 to MOR upon MP addition, measured by TIR-FM with DAMGO as reference. n = 4; average ± SEM.Figure 3—source data 1.
+**Figure 3.:** (A) 7 min kymograph traced inside a cell expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR (labeled with anti-FLAG M1-AF647) and treated with increasing concentrations of DAMGO (agonist), followed by addition of Naloxone (antagonist). Fluorescence intensities are pseudocolored, low to high intensity. (B) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of DAMGO followed by Naloxone. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DAMGO). (C) Concentration-dependent recruitment of mGsi and Nb33 to MOR upon DAMGO and etorphine addition, measured by TIR-FM. Normalization of intensity values is shown (range [0–1]) with DAMGO as reference. Regression curves with Hill slope of 1 are shown. DAMGO n = 3, etorphine n = 4, average ± SEM. (D) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of morphine or PZM21 followed by reference compound DAMGO (10 μM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DAMGO). (E) Concentration-dependent recruitment of mGsi and Nb33 probes to MOR upon morphine or PZM21 treatment, setup and analysis as in (C). morphine n = 5, PZM21 n = 5, average ± SEM. (F) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of mitragynine pseudoindoxyl (MP) followed by DAMGO, using bath application. 5 s between frames is shown. (G) mGsi (left) and Nb33 (right) intensity during TIR-FM time-lapse series of a cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding 10 μM of reference DAMGO, followed by agonist washout using perfusion (‘wo’, highlighted in gray), and addition of 10 μM MP. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DAMGO). (H) Concentration-dependent recruitment of mGsi and Nb33 to MOR upon MP addition, measured by TIR-FM with DAMGO as reference. n = 4; average ± SEM.
 
 To expand our search, and taking into account the fact that DAMGO and ET are both generally classified as full agonists at MOR, we next examined morphine and PZM21. Both of these non-peptide drugs are partial agonists with respect to assays of G protein activation or signaling, but each is derived from a different chemical scaffold and differs in degree of bias estimated using a beta-arrestin recruitment assay (Manglik et al., 2016). Using the same experimental protocol, and comparing recruitment promoted by the test ligand relative to the peptide full agonist (DAMGO) reference, both morphine and PZM21 produced partial recruitment of mGsi as well as Nb33 (Figure 3D and E). Whereas morphine and PZM21 were similar in the degree of mGsi recruitment that they produced at saturating concentration, morphine was found to be significantly more efficacious than PZM21 in recruiting Nb33. Together, these results reveal a range of selective protein recruitment effects among chemically diverse MOR partial agonists.
 
 The experimental strategy used to compare test agonist effects relative to the peptide reference was robust in practice but, in principle, it could underestimate differences relative to the reference peptide if the test agonist dissociates slowly or has an on-rate much faster than the peptide reference. We found evidence for this when evaluating another chemically distinct MOR partial agonist, the semi-synthetic natural product mitragynine pseudoindoxyl (MP) (Váradi et al., 2016). Using the sequential agonist addition protocol, MP appeared to be similarly efficacious to DAMGO in promoting recruitment of mGsi because no further increase was elicited by subsequent addition of DAMGO while, in contrast, MP failed to produce any detectable recruitment of Nb33. However, we noted that DAMGO also failed to promote recruitment of Nb33 in cells that were previously exposed to MP (Figure 3F), despite DAMGO promoting a strong Nb33 recruitment response in cells not previously exposed to MP (Figure 3B). Adding a perfusion wash step, in order to remove excess test agonist between applications, avoided this complication. With this modification, MP was verified to indeed promote mGsi recruitment by MOR, but to a significantly reduced maximal degree relative to DAMGO and without promoting detectable recruitment of Nb33 (Figure 3G and H). These results further expand the range of differential protein recruitment effects documented among chemically diverse MOR agonists.
 
-## Differential protein recruitment can be elicited by diverse opioid agonists
+### Differential protein recruitment can be elicited by diverse opioid agonists
 
 To simplify comparison across agonists and receptors, we defined the maximum recruitment response elicited by each agonist compared to the corresponding peptide full agonist reference (DynA for KOR and DAMGO for MOR) as a relative ‘intrinsic activity’ for each agonist (Figure 4A). We then plotted these relative values for each biosensor (Figure 4B). Some non-peptide agonists were indistinguishable from the reference peptide by this analysis, recruiting both protein probes to a similar maximal degree (corresponding to an ‘I.A.’ value of 1 for both probes), but others departed from the diagonal. This is not consistent with the traditional concept of partial agonism based on a unitary agonist-induced receptor ‘on’ state, which would predict the recruitment responses elicited by all agonists to fall along the diagonal. Rather, the present results support the view that opioid receptors are more flexibly activated, enabling them to selectively recruit one interaction probe over another in living cells. They further suggest that the ability to promote selective protein recruitment is widespread among chemically diverse opioid agonists (Figure 4C).
 
@@ -84,13 +84,13 @@ To simplify comparison across agonists and receptors, we defined the maximum rec
 
 **Figure 4.:** (A) Table summarizing mGsi and Nb33 recruitment efficacies to KOR and MOR upon different agonists. Intrinsic activities (‘I.A.’, maximal response) for both probes and each agonist are given (average ± SEM). DynA serves as reference for KOR, DAMGO as reference for MOR. mGsi/Nb33 = ratios of intrinsic activities. (B) Plot of intrinsic activities (maximal responses) of mGsi recruitment as function of Nb33 recruitment for all KOR and MOR agonists. The diagonal (dotted) line indicates the theoretical trajectory for probe recruitment without bias. MS = morphine, ET = etorphine, MP = mitragynine pseudoindoxyl. (C) Summary of the effects of DynA vs. etorphine on KOR-proximal protein recruitment. The chemically distinct agonists differentially promote recruitment of protein probes mGsi (interaction 1) and Nb33 (interaction 2), revealing biased recruitment of cytoplasmic proteins by opioid receptors.
 
-## Relevance to agonist-selective recruitment of GRK2
+### Relevance to agonist-selective recruitment of GRK2
 
 While we found the engineered proteins useful as orthogonal probes to unambiguously assess receptor-proximal recruitment in living cells, their disconnection from endogenous cellular machineries and pathways means that they are not directly related to function. Accordingly, we next asked if agonist-selective protein recruitment applies to a physiologically relevant GPCR-interacting protein. We focused on GRK2 because this kinase is known to be important for generating agonist-selective patterns of multi-site phosphorylation in the MOR cytoplasmic tail, which convey biased effects downstream from the receptor by distinguishing engagement of beta-arrestins and regulating receptor entry into the endocytic network (Just et al., 2013; Lau et al., 2011). We were also intrigued by GRK2 because it is recruited by activated GPCRs through multiple interactions, including with the activated GPCR and with beta-gamma subunits that are exposed on the inner membrane leaflet following activation of the G protein heterotrimer (DebBurman et al., 1995; Lodowski et al., 2003; Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig5-v1.jpg)
 
-**Figure 5.:** (A) Schematic depicting two modes of GRK2 recruitment from the cytosol to the plasma membrane upon KOR activation: one involves interaction with G beta-gamma subunits exposed upon G protein activation and another with the activated receptor itself. (B) GRK2 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing GRK2-EGFP and KOR, adding increasing concentrations of DynA. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DynA). (C) GRK2 intensity for cells transfected as in (B) but adding increasing concentrations of etorphine (ET), followed by 10 μM DynA as reference. Imaging and normalization as in (B). (D) Concentration-dependent recruitment of GRK2 to the plasma membrane upon DynA or ET addition, measured by TIR-FM. Normalization of intensity values is shown (range [0–1]) with DynA as reference. Regression curve with Hill slope of 1 is shown for DynA, no fit for ET. DynA n = 6, ET n = 7, average ± SEM. (E) Intensity of GRK2 during the TIR-FM time-lapse series of a HEK293 cell, expressing GRK2-EGFP and FLAG-KOR (not shown). Medium was exchanged to ET (100 nM) and then to DynA (1 μM) by bath application. 5 s between frames is shown. F0 is the average fluorescence intensity before agonist. n = 4, average ± SEM. (F) GRK2 intensity time course as in (E), but cells express FLAG-KOR-TPD instead of wild-type. n = 4, average ± SEM. (G) Intensity of GRK2-C-tail during the TIR-FM time-lapse series of a HEK293 cell, expressing GRK2-C-tail-EGFP and FLAG-KOR, imaged and treated as in (E). n = 5, average ± SEM. (H) GRK2 intensity time course as in (E), but cells were pre-treated with pertussis toxin (PTX, 100 ng/ml). n = 3, average ± SEM.Figure 5—source data 1.Figure 5D).Figure 5—source data 2.Figure 5E–H).
+**Figure 5.:** (A) Schematic depicting two modes of GRK2 recruitment from the cytosol to the plasma membrane upon KOR activation: one involves interaction with G beta-gamma subunits exposed upon G protein activation and another with the activated receptor itself. (B) GRK2 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing GRK2-EGFP and KOR, adding increasing concentrations of DynA. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 μM DynA). (C) GRK2 intensity for cells transfected as in (B) but adding increasing concentrations of etorphine (ET), followed by 10 μM DynA as reference. Imaging and normalization as in (B). (D) Concentration-dependent recruitment of GRK2 to the plasma membrane upon DynA or ET addition, measured by TIR-FM. Normalization of intensity values is shown (range [0–1]) with DynA as reference. Regression curve with Hill slope of 1 is shown for DynA, no fit for ET. DynA n = 6, ET n = 7, average ± SEM. (E) Intensity of GRK2 during the TIR-FM time-lapse series of a HEK293 cell, expressing GRK2-EGFP and FLAG-KOR (not shown). Medium was exchanged to ET (100 nM) and then to DynA (1 μM) by bath application. 5 s between frames is shown. F0 is the average fluorescence intensity before agonist. n = 4, average ± SEM. (F) GRK2 intensity time course as in (E), but cells express FLAG-KOR-TPD instead of wild-type. n = 4, average ± SEM. (G) Intensity of GRK2-C-tail during the TIR-FM time-lapse series of a HEK293 cell, expressing GRK2-C-tail-EGFP and FLAG-KOR, imaged and treated as in (E). n = 5, average ± SEM. (H) GRK2 intensity time course as in (E), but cells were pre-treated with pertussis toxin (PTX, 100 ng/ml). n = 3, average ± SEM.
 
 We began by examining a functional GFP-fusion of GRK2 using the same TIR-FM imaging assay used to monitor orthogonal probe recruitment. We focused on comparing the effects of ET relative to DynA on KOR because these agonist-receptor pairs appeared to differ most dramatically based on the orthogonal biosensor recruitment assay (Figure 4). DynA promoted rapid, concentration-dependent recruitment of GRK2 to the plasma membrane (Figure 5B) while ET, despite being highly potent, produced a degree of GRK2 recruitment clearly lower than that produced by DynA (Figure 5C and D). This difference was not a secondary effect of receptor phosphorylation because ET also produced less maximal GRK2 recruitment than DynA using the phosphorylation-defective mutant KOR-TPD in place of KOR (Figure 5E and F).
 
@@ -100,7 +100,7 @@ The above results indicate that ET and DynA share the ability to promote GRK2 re
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig6-v1.jpg)
 
-**Figure 6.:** (A) Schematic of receptor clustering in the plasma membrane using cross-linking by polyclonal antibody. (B) TIR-FM images of a cell expressing GRK2-mCherry and SEP-KOR. KOR was cross-linked with polyclonal antibodies before imaging. Frames were collected immediately before agonist (left panels) and 1 min after application of 1 μM DynA (right panels). The scale bar represents 10 μm. (C) Same as in (B) but cells were treated with etorphine (ET, 1 μM) instead of DynA. The scale bar represents 10 μm. (D) GRK2 intensity in KOR clusters relative to surrounding plasma membrane (see methods). Quantification of images collected before agonist and 2 min after agonist (DynA or ET) application, similar to images shown in (A) and (B). DynA (26 cells) and ET (15 cells) across three independent experiments. Mean with SD is shown. ***p = <0.0001 by paired two-tailed t-test. n.s. = not significant (p=0.30). (E) The two biochemical modes of GRK2 recruitment are selectively promoted by distinct agonists. While etorphine only drives GRK2 binding to G beta-gamma, DynA additionally promotes direct interaction of GRK2 with activated KOR.Figure 6—source data 1.Figure 6D).
+**Figure 6.:** (A) Schematic of receptor clustering in the plasma membrane using cross-linking by polyclonal antibody. (B) TIR-FM images of a cell expressing GRK2-mCherry and SEP-KOR. KOR was cross-linked with polyclonal antibodies before imaging. Frames were collected immediately before agonist (left panels) and 1 min after application of 1 μM DynA (right panels). The scale bar represents 10 μm. (C) Same as in (B) but cells were treated with etorphine (ET, 1 μM) instead of DynA. The scale bar represents 10 μm. (D) GRK2 intensity in KOR clusters relative to surrounding plasma membrane (see methods). Quantification of images collected before agonist and 2 min after agonist (DynA or ET) application, similar to images shown in (A) and (B). DynA (26 cells) and ET (15 cells) across three independent experiments. Mean with SD is shown. ***p = <0.0001 by paired two-tailed t-test. n.s. = not significant (p=0.30). (E) The two biochemical modes of GRK2 recruitment are selectively promoted by distinct agonists. While etorphine only drives GRK2 binding to G beta-gamma, DynA additionally promotes direct interaction of GRK2 with activated KOR.
 
 ## Discussion
 
@@ -118,30 +118,264 @@ In sum, and viewed more broadly, the present results reinforce an emerging under
 
 ## Materials and methods
 
-## Mammalian cell culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human, female)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573; RRID: CVCL_0045</td>
+      <td>Human embryonic kidney</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-FLAG (M1)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F-3040; RRID: AB_439712</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFP</td>
+      <td>Invitrogen</td>
+      <td>A-11122; RRID: AB_221569</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-Nb33</td>
+      <td>(Stoeber et al., 2018)</td>
+      <td>N/A</td>
+      <td>EGFP-C1 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmApple-Nb33</td>
+      <td>(Stoeber et al., 2018)</td>
+      <td>N/A</td>
+      <td>pmApple-C1 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NES-Venus-mGsi</td>
+      <td>(Wan et al., 2018)</td>
+      <td>N/A</td>
+      <td>pcDNA3 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NES-Venus-mGs</td>
+      <td>(Wan et al., 2018)</td>
+      <td>N/A</td>
+      <td>pcDNA3 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>signal sequence FLAG (ssf)-MOR, murine</td>
+      <td>(Stoeber et al., 2018)</td>
+      <td>N/A</td>
+      <td>pcDNA3 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ssf-KOR, murine</td>
+      <td>(Chu et al., 1997)</td>
+      <td>N/A</td>
+      <td>pcDNA3 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ssf-KOR-TPD (S356A, T357A, T363A, S369A)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>pcDNA3 backbone, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Super ecliptic pHluorin (SEP) -KOR, murine</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>pCAGGS-SE backbone, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GRK2-EGFP, murine</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>pCAGGS-SE backbone, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GRK2-pmApple, murine</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>pCAGGS-SE backbone, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GRK2-C-tail- EGFP (aa 546–670)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>pCAGGS-SE backbone, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Dynorphin A (1–17, DynA)</td>
+      <td>Anaspec</td>
+      <td>AS-24298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DAMGO, [D-Ala2, N-Me-Phe4, Gly5-ol]-Enkephalin acetate salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>E7384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U-69593 (U69)</td>
+      <td>Cayman Chemical</td>
+      <td>13255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U-50488 hydrochloride (U50)</td>
+      <td>Tocris</td>
+      <td>0495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GNTI dihydrochloride (5’GNTI)</td>
+      <td>Axon Med Chem</td>
+      <td>1226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etorphine-HCl</td>
+      <td>NIDA</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Morphine sulfate (MS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>1448005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Naloxone hydrochloride dihydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>N7758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PZM21</td>
+      <td>Enamine</td>
+      <td>N/A</td>
+      <td>custom synthesis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mitragynine pseudoindoxyl (MP)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>(Váradi et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Compound101 (Cmpd101)</td>
+      <td>HelloBio</td>
+      <td>HB2840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pertussis toxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 647 Protein Labeling Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A20173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>8.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Imagej.net/contributors</td>
+      <td>2.0.0-rc-54/1.51 g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>R2014b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger</td>
+      <td>v1.7.4.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian cell culture conditions
 
 HEK293 (CRL-1573, ATCC, female, mycoplasma-tested) were cultured in Dulbecco’s modified Eagle’s medium (DMEM, GIBCO), supplemented with 10% fetal bovine serum (UCSF Cell Culture Facility). Stably transfected HEK293 cells expressing N-terminally FLAG-tagged MOR or KOR were cultured in the presence of 250 μg/ml Geneticin (Gibco). For transient DNA expression, Lipofectamine 2000 (Invitrogen) was used according to manufacturer’s instructions. For live cell imaging, cells were plated on poly-L-lysine-coated 35 mm glass-bottomed culture dishes (MatTek Corporation) 48 hr before the experiments. Cells were transfected 24 hr prior to imaging. Per 35 mm culture dish, 200 ng DNA was used for mGsi and Nb33, 300 ng DNA was used for GRK2 constructs and 1.2 μg DNA was used for receptor constructs.
 
-## cDNA constructs
+### cDNA constructs
 
 GRK2-EGFP and GRK2-pmApple were created by amplifying murine GRK2 and GFP or pmApple DNA by PCR and inserting GRK2 and the respective fluorescent protein using In-Fusion cloning into pCAGGS-SE cut with KpnI and EcoRI. Super ecliptic pHluorin (SEP)-KOR was generated by PCR amplification of SEP and KOR, and insertion using In-Fusion cloning into pCAGGS-SE cut with KpnI and EcoRI. ssfKOR-TPD was generated by In-Fusion cloning of three PCR fragments that cover ssfKOR and introduce mutations S356A, T357A, T363A, and S369A.
 
-## Live cell total internal reflection fluorescence microscopy (TIR-FM)
+### Live cell total internal reflection fluorescence microscopy (TIR-FM)
 
 Live cell image series measuring protein recruitment to the plasma membrane were performed at 37°C using a Nikon Ti-E microscope equipped for through-the-objective TIR-FM with a temperature-, humidity- and CO2-controlled chamber (Okolab), objective heater, perfect focus system, and an Andor DU897 EMCCD camera. Images were obtained with a 100 × 1.49 NA Apo TIRF objective (Nikon) with solid-state lasers of 488, 561 and 647 nm (Keysight Technologies). Before imaging, receptors at the cell surface were labelled with M1 monoclonal FLAG antibody (1:1,000) conjugated to Alexa647 dye for 10 min at 37°C. Cells were then washed and live imaged in HBS imaging solution (Hepes buffered saline (HBS) with 135 mM NaCl, 5 mM KCl, 0.4 mM MgCl2,1.8 mM CaCl2, 20 mM Hepes, 5 mM d-glucose adjusted to pH 7.4 and 300–315 mOsmol/l). Agonists or antagonists were either added by bath application at concentrations indicated in the figure legends or by media perfusion. For the latter, an insert was 3D-printed and placed inside the imaging dish where it left a dead volume of about 300 μL. It was used to perfuse HBS imaging solution with agonists or without agonists (agonist washout) at concentrations indicated in the figure legends with a flow rate of 1.5 ml/min.
 
-## Cell treatments prior to live cell imaging
+### Cell treatments prior to live cell imaging
 
 To cluster receptors in the plasma membrane, cells transfected with SEP–KOR were treated with a polyclonal rabbit anti-GFP antibody (1:100) for 15 min at 37°C. Cells were then washed and imaged live in HBS imaging solution. To inhibit GRK2/3, cells were pre-incubated with Compound101 (30 μM) for 15 min at 37°C and Compound101 was present throughout the imaging experiment. To inhibit KOR coupling to Gai/o, cells were treated with PTX (100 ng/mL) for 16 hr and PTX was present throughout the imaging experiment.
 
-## Agonist concentration dependence of protein recruitment
+### Agonist concentration dependence of protein recruitment
 
 For probing protein recruitment to the plasma membrane, HEK293 cells co-expressing the cytosolic protein of interest (mGsi, Nb33, or GRK2) and MOR or KOR were imaged using TIR-FM. Cells were treated with increasing concentrations of agonist (bath application) and imaged at a frame rate of 0.2/s (total movie length 6–8 min). Protein intensity during time lapse series was measured using ImageJ. If indicated, values were normalized between 0 (before agonist) and 1 (10 μM reference agonist). Regression curves with Hill slope of 1 were fit using Prism 8.
 
-## Quantitative image analysis
+### Quantitative image analysis
 
 All quantitative image analysis was performed on unprocessed images using MATLAB (MathWorks, R2014b) or ImageJ (2.0.0). For quantifying GRK2-mCherry recruitment to the plasma membrane and receptor clusters, we used a custom written MATLAB script. In brief, a polygon was drawn on the TIR-FM image to encompass the cell of interest. Then, a mask of the receptor clusters was generated by thresholding the SEP-KOR signal within the polygon. The average GRK2-mCherry fluorescence was measured within the cluster mask (KOR clusters) and outside of the mask (membrane) of the polygon, allowing to calculate the ratio. Quantification was performed in cells imaged before (t = 0) and after (t = 1–2 min) agonist addition.
 
-## Statistics
+### Statistics
 
 Quantification of data are presented as mean ± standard error of the mean (SEM) or standard deviation of the mean (SD) based on at least three biologically independent experiments with the precise number indicated in the figure legends. Statistical analysis was performed using Prism (8.1.1, GraphPad) and using paired or unpaired two tailed Student’s t test.

@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Division of Basic Sciences, Fred Hutchinson Cancer Center Seattle United States
-2. https://ror.org/006w34k90 Howard Hughes Medical Institute, Fred Hutchinson Cancer Center Seattle United States
+1. Division of Basic Sciences, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Howard Hughes Medical Institute, Fred Hutchinson Cancer Center Seattle United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -33,11 +33,275 @@ Here, we systemically explored the evolution of SNBP genes via a detailed phylog
 
 ## Results
 
-## SNBP genes in Drosophila species
+### SNBP genes in Drosophila species
 
 To study SNBP evolution in Drosophila species, we performed a detailed survey of all testis-specific genes encoding HMG boxes in D. melanogaster. Our survey did not reveal any additional genes beyond the 15 previously identified autosomal SNBP genes, which function at different stages of spermatogenesis (Table 1). For example, CG14835, ProtA, ProtB, Mst77F, Prtl99C, and ddbt all encode SNBP proteins present in the mature sperm head (Jayaramaiah Raja and Renkawitz-Pohl, 2005; Eren-Ghiani et al., 2015; Yamaki et al., 2016). In contrast, Tpl94D, tHMG-1, tHMG-2, and CG30356 encode transition SNBP proteins during the transition between histone and protamines but are not retained in mature sperm (Gärtner et al., 2015; Rathke et al., 2007). The five remaining SNBP genes (Mst33A, CG30056, CG31010, CG34269, and CG42355) remain cytologically uncharacterized (Eren-Ghiani et al., 2015). Using single-cell transcriptomic data (Witt et al., 2021), we confirmed that all candidate SNBP genes are transcribed in male germline cells, with the highest level of expression of most SNBP genes occurring in late spermatocytes. The only exceptions are CG34269, which is transcribed earlier in late spermatogonia, and CG30056, which is transcribed later in late spermatids (Figure 1—figure supplement 1). SNBP proteins in D. melanogaster tend to be short (<200 a.a.) and mostly have high isoelectric points (>10), consistent with their basic charge and potential function in tight packaging of DNA (Table 1). A closer examination revealed that 11 SNBP genes encode a single HMG box, whereas four genes (Tpl94D, Prtl99C, Mst33A, and CG42355) encode two HMG boxes (Figure 1—figure supplement 2).
 
+**Table 1.**
+ McDonald–Kreitman tests for positive selection on sperm nuclear basic protein (SNBP) genes in two Drosophila species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Location (Mb)</th>
+      <th rowspan="2">Length</th>
+      <th rowspan="2">pI*</th>
+      <th rowspan="2"># of HMG</th>
+      <th colspan="2">D. melanogaster</th>
+      <th colspan="2">D. serrata</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Alpha</th>
+      <th>χ2 p-value</th>
+      <th>Alpha</th>
+      <th>χ2 p-value</th>
+      <th>Expression stage†</th>
+      <th>Phenotype</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CG30056</td>
+      <td>2R:12.6</td>
+      <td>137</td>
+      <td>11.05 (10.70)</td>
+      <td>1</td>
+      <td>-5</td>
+      <td>0.09</td>
+      <td>0.75</td>
+      <td>0.208</td>
+      <td>Undefined</td>
+      <td>Undefined</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>CG30356</td>
+      <td>2R:8.7</td>
+      <td>149</td>
+      <td>10.65 (10.89)</td>
+      <td>1</td>
+      <td>0.785</td>
+      <td>0.011</td>
+      <td>0.44</td>
+      <td>0.226‡</td>
+      <td>Pre-individualization</td>
+      <td>Undefined</td>
+      <td>b,c</td>
+    </tr>
+    <tr>
+      <td>CG31010</td>
+      <td>3R:30.7</td>
+      <td>254</td>
+      <td>4.77 (8.10)</td>
+      <td>1</td>
+      <td>0.535</td>
+      <td>0.034</td>
+      <td>0.61</td>
+      <td>0.001</td>
+      <td>Undefined</td>
+      <td>Undefined</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>CG34269</td>
+      <td>3L:0.5</td>
+      <td>191</td>
+      <td>10.7 (10.34)</td>
+      <td>1</td>
+      <td>–0.263</td>
+      <td>0.613</td>
+      <td>0.736</td>
+      <td>0.001</td>
+      <td>Undefined</td>
+      <td>Undefined</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>CG42355</td>
+      <td>3L:2.0</td>
+      <td>161</td>
+      <td>11.29 (10.89)</td>
+      <td>2</td>
+      <td>0.682</td>
+      <td>0.012</td>
+      <td>0.682</td>
+      <td>0.036</td>
+      <td>Undefined</td>
+      <td>Undefined</td>
+      <td>b,c</td>
+    </tr>
+    <tr>
+      <td>Mst33A</td>
+      <td>2L:11.6</td>
+      <td>359</td>
+      <td>10.61 (10.14)</td>
+      <td>2</td>
+      <td>0.208</td>
+      <td>0.391</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Undefined</td>
+      <td>Undefined</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <td>ddbt</td>
+      <td>3L:0.3</td>
+      <td>117</td>
+      <td>12.3 (11.76)</td>
+      <td>1</td>
+      <td>–0.316</td>
+      <td>0.642</td>
+      <td>–0.333</td>
+      <td>0.647</td>
+      <td>Mature sperm</td>
+      <td>Sterile</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <td>Mst77F</td>
+      <td>3L:20.8</td>
+      <td>215</td>
+      <td>10.34 (9.95)</td>
+      <td>1</td>
+      <td>–0.308</td>
+      <td>0.628</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Mature sperm</td>
+      <td>Sterile</td>
+      <td>e</td>
+    </tr>
+    <tr>
+      <td>Prtl99C</td>
+      <td>2R:29.8</td>
+      <td>201</td>
+      <td>11.25 (10.57)</td>
+      <td>2</td>
+      <td>0.242</td>
+      <td>0.483</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Mature sperm</td>
+      <td>Sterile</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <td>Tpl94D</td>
+      <td>2R:23.0</td>
+      <td>164</td>
+      <td>11.3 (10.11)</td>
+      <td>2</td>
+      <td>0.571</td>
+      <td>0.023</td>
+      <td>0.52</td>
+      <td>0.074‡</td>
+      <td>Pre-individualization</td>
+      <td>Fertile</td>
+      <td>g</td>
+    </tr>
+    <tr>
+      <td>CG14835</td>
+      <td>3L:7.4</td>
+      <td>152</td>
+      <td>10.43 (4.81)</td>
+      <td>1</td>
+      <td>0.332</td>
+      <td>0.416</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Mature sperm</td>
+      <td>Fertile</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>ProtA§</td>
+      <td>2R:14.9</td>
+      <td>146</td>
+      <td>11.12 (11.52)</td>
+      <td>1</td>
+      <td>0.027</td>
+      <td>0.941</td>
+      <td>0.667</td>
+      <td>0.012</td>
+      <td>Mature sperm</td>
+      <td>Low fertility</td>
+      <td>e</td>
+    </tr>
+    <tr>
+      <td>ProtB§</td>
+      <td>2R:14.9</td>
+      <td>144</td>
+      <td>10.8 (11.60)</td>
+      <td>1</td>
+      <td>–0.029</td>
+      <td>0.945</td>
+      <td>0.952</td>
+      <td>0</td>
+      <td>Mature sperm</td>
+      <td>Low fertility</td>
+      <td>e</td>
+    </tr>
+    <tr>
+      <td>tHMG-1</td>
+      <td>3R:22.5</td>
+      <td>126</td>
+      <td>7.67 (6.11)</td>
+      <td>1</td>
+      <td>0.659</td>
+      <td>0.02</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Pre-individualization</td>
+      <td>Fertile</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td>tHMG-2</td>
+      <td>3R:22.5</td>
+      <td>133</td>
+      <td>8.94 (7.19)</td>
+      <td>1</td>
+      <td>0.443</td>
+      <td>0.199</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Pre-individualization</td>
+      <td>Fertile</td>
+      <td>b</td>
+    </tr>
+  </tbody>
+</table>
+
+_We only show results from unpolarized MK tests using all (including rare) SNPs. Other variations of these results (e.g., polarized, excluding rare SNPs) are shown in Supplementary file 5.Citations: aYamaki, 2018, bGärtner et al., 2015, cDoyen et al., 2015, dYamaki et al., 2016, eJayaramaiah Raja and Renkawitz-Pohl, 2005, fEren-Ghiani et al., 2015, gRathke et al., 2007.Genes with any evidence of positive selection have p-values in bold.*Isoelectric point of either the whole protein or just HMG domains only (in parentheses).†Post-meiotic protein expression.‡A significant signature of positive selection is obtained after removing low-frequency SNPs (<5%) and/or after polarizing changes (see Supplementary file 5).§Independent duplications in two species._
+
 To investigate the retention of SNBP genes across Drosophila species, we expanded our analysis to homologs of D. melanogaster SNBP genes found in published genome assemblies from 15 Drosophila species with NCBI gene annotation. We also included Scaptodrosophila lebanonensis as an outgroup species. Our phylogenomic analyses revealed that two SNBP genes (tHMG and Prot) underwent recent gene duplications in D. melanogaster. Both are present as closely related paralogs (tHMG-1 and tHMG-2, ProtA and ProtB) in D. melanogaster but only in one copy in closely related species (Figure 1; Tirmarche et al., 2014; Jayaramaiah Raja and Renkawitz-Pohl, 2005). Five SNBP genes are found only in the Sophophora subgenus: CG42355, Mst33A, Mst77F, Prtl99C, and Tpl94D (Figure 1), and are, therefore, less than 40 million years old. At the other extreme, we found orthologs of eight D. melanogaster SNBP genes (CG14835, CG30056, CG30356, CG31010, CG34529, ddbt, tHMG, and Prot) in the outgroup species, S. lebanonensis. Thus, these eight SNBP genes are at least 50 million years old (Suvorov et al., 2022).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig1-v1.jpg)
+
+**Figure 1.:** (A) Phylogenomic analysis of 13–15 SNBP genes from D. melanogaster organized into three groups (dotted lines): required for male fertility, not required for male fertility, or untested in previous analyses. We identified homologs of these genes in 14 other Drosophila species and an outgroup species, S. lebanonensis, whose phylogenetic relationships and divergence times are indicated on the left (Kumar et al., 2017). Genes retained in autosomal syntenic locations are indicated by black squares, whereas paralogs located in non-syntenic autosomal locations, or X-chromosomes, or Y-chromosomes are indicated in gray, blue and red squares, respectively. Numbers within the squares show the copy number, if >1, of different genes, e.g., D. melanogaster has two paralogs each of both Prot and tHMG genes. An empty square with a line across it indicates that only a pseudogene can be found in the shared syntenic location, whereas an ‘X’ indicates that no ortholog is found, even though one is expected based on the phylogenomic inference of SNBP age. Based on this analysis, we infer that eight SNBP genes are at least 50 million years old, but only three genes are strictly retained in all 16 species (CG30056, CG31010, and Prot). Indeed, none of the SNBP genes required for male fertility in D. melanogaster are strictly conserved in other Drosophila species, either arising more recently (Mst77F, Prtl99C) or having been lost in at least one species after birth (ddbt). We also marked the montium group species, D. kikkawai, in red, because it has unusually lost six SNBP genes. (B, C) We compared dN/dS (B) or dN (C) values for all orthologous SNBP genes (red dots) in D. melanogaster compared to a histogram of the same values for the genome-wide distribution (gray bars) obtained from an analysis using six species by the 12 Drosophila genomes project (Clark et al., 2007). Our analyses reveal that most SNBP genes are at or beyond the 95th or 99th percentile for dN/dS or dN values (blue dashed lines). The values of CG34269 are calculated using only five species because it is lost in one of the surveyed species, D. ananassae; therefore; we do not show its dN, as it is not comparable to other genes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Using single-cell expression data from Witt et al., 2021, we estimated SNBP gene expression in each cell type using the NormalizeData function of Seurat (Hao et al., 2021), with a scale factor of 10000. The cell type is assigned by the expression of stage-specific genes in the previous study (Witt et al., 2021).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** We plotted the location of HMG boxes in 15 SNBP proteins encoded by the D. melanogaster genome. Among them, 11 have only one HMG box, whereas 4 of them have two HMG boxes. The location of HMG boxes varies between SNBP proteins. A scale bar for protein size is at the bottom of the figure.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** We estimated the expression of SNBP orthologs (A) and paralogs (B) using publicly available transcriptome datasets. We used colors to represent expression levels in each sample. Our analyses reveal that almost all SNBP genes are expressed only in testes. The raw values are shown in Supplementary file 2.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** We estimated the expression level of each SNBP gene in testes across seven Drosophila species (D. melanogaster, D. simulans, D. yakuba, D. ananassae, D. pseudoobscura, D. virilis, and Scaptodrosophila lebanonensis) and compared the relative expression level of orthologs to each other. The numbers below the diagonal are spearman rho coefficients. Our data suggest a moderate to high correlation between Sophophora species. The raw values are shown in Supplementary file 2.
 
 Our inability to detect homologs beyond the reported species does not appear to result from their rapid sequence evolution. Indeed, abSENSE analyses (Weisman et al., 2020) support the finding that Prtl99C, Mst77F, Mst33A, Tpl94, and CG42355 were recently acquired in Sophophora within 40 MYA. For example, the probability of a true homolog being undetected for Prtl99C and Mst77F is 0.07 and 0.18 (using E-value = 1), respectively (Supplementary file 1, 'Materials and methods'). We also examined the syntenic regions of SNBP genes (conserved genomic neighboring genes) to confirm the loss of SNBP genes in some representative species, e.g., D. kikkawai, D. ananassae, D. pseudoobscura, D. willistoni, D. albomicans, D. virilis, and S. lebanonensis. Although abSENSE and synteny analyses rule out the absence of true homologs, they cannot rule out the less parsimonious possibility that SNBP genes are older but were lost multiple times in non-Sophophora species. Similarly, our analysis focuses on SNBP genes present in D. melanogaster, but other Drosophila species may have additional, unrelated SNBP genes.
 
@@ -45,7 +309,7 @@ We confirmed that Drosophila SNBP gene expression is primarily male-limited acro
 
 In addition to orthologs of these SNBP genes found in shared syntenic locations on autosomes, we also found sex chromosome-linked paralogs of SNBP genes in several species. The most dramatic example is the presence of 34 copies of tHMG paralogs in the poorly assembled X chromosomal region of D. simulans (Figure 1). These are discussed in more detail later in this study.
 
-## Rapid evolution and positive selection of Drosophila SNBP genes
+### Rapid evolution and positive selection of Drosophila SNBP genes
 
 Based on the precedent of rapidly evolving protamines in mammals, we next investigated whether Drosophila SNBP genes also evolve rapidly. We calculated protein evolution rates (non-synonymous substitution rates over synonymous substitution rates, dN/dS) for 13 of 15 D. melanogaster SNBP genes for six species in the melanogaster group (Supplementary file 4). We excluded two SNBP genes, ProtB and tHMG-2, since these duplicates are not found outside D. melanogaster. We found that 11 of 13 SNBP genes (except CG30056 and ProtA) evolve faster (higher dN/dS) than 95% of protein-coding genes across the genome (Figure 1B). These high protein evolution rates are due to high dN instead of low dS (Figure 1C), suggesting that SNBPs evolve under either extensive positive selection or reduced functional constraints.
 
@@ -55,7 +319,7 @@ We also took advantage of genome sequences from 110 D. serrata strains to carry 
 
 Finally, we used maximum-likelihood analyses using the site model of the codeml program in the PAML package (Yang, 2007; Yang et al., 2000) to investigate whether any residues in the SNBP genes had evolved under recurrent positive selection. We limited our analyses to 17 species of the melanogaster group to avoid saturation of synonymous substitutions. Although we recapitulated a previously published positive selection result using ddbt genes from just five Drosophila species (Yamaki et al., 2016), analyses using 17 melanogaster group species did not find a significant signature of site-specific positive selection in any SNBP gene (Supplementary file 6). The discrepancy between the McDonald–Kreitman tests and the PAML results indicates that although many SNBP genes evolve under positive selection, either SNBP genes or the exact residues evolving under recurrent positive selection vary throughout Drosophila evolution.
 
-## What determines SNBP essentiality for male fertility
+### What determines SNBP essentiality for male fertility
 
 Of 15 SNBP genes, nine have been previously characterized for their roles in male fertility based on gene knockout or knockdown experiments in D. melanogaster (Table 1). These genes show differences in their importance for male fertility in D. melanogaster. Three genes (Mst77F, Prtl99C, and ddbt) are essential for male fertility (Tirmarche et al., 2014; Kimura and Loppin, 2016; Jayaramaiah Raja and Renkawitz-Pohl, 2005; Eren-Ghiani et al., 2015; Rathke et al., 2010), but separate knockouts of six individual genes (CG14835, ProtA, ProtB Tpl94D, tHMG-1, and tHMG-2) do not appear to impair male fertility under standard laboratory conditions. Further experimentation has revealed a fertility cost for double knockouts of ProtA/ProtB but only in conditions of sperm exhaustion via mating with excess numbers of females (Tirmarche et al., 2014). No information is currently available for the remaining six SNBP genes. We also found nearly strict retention of all SNBP genes in all sequenced strains of D. melanogaster, no matter whether they are essential for male fertility in laboratory experiments or not (Supplementary file 7).
 
@@ -63,7 +327,7 @@ There are a few distinguishing characteristics common to SNBP genes required for
 
 How does SNBP essentiality in D. melanogaster correlate with age and retention across Drosophila species evolution? We find that two essential SNBP genes (Prtl99C and Mst77F) are evolutionarily young, i.e., they arose relatively recently in Drosophila evolution. Moreover, both genes have been lost at least once in the montium group species since their birth. The third essential SNBP gene, ddbt, arose before the separation of Drosophila and S. lebanonensis, but it has also been lost at least once (in D. willistoni) among the 15 species analyzed (Yamaki et al., 2016 Figure 1A). Based on these findings, we infer that not only are these three essential SNBP genes subject to evolutionary turnover, but they also gain or lose essential function across Drosophila evolution. Our findings are reminiscent of recent studies that show the high evolutionary lability of many genes involved in essential heterochromatin or centromere function in Drosophila (Kasinathan et al., 2020; Bayes and Malik, 2009).
 
-## CG30056 is dispensable for male fertility in D. melanogaster despite being universally retained in Drosophila species
+### CG30056 is dispensable for male fertility in D. melanogaster despite being universally retained in Drosophila species
 
 Given the high evolutionary turnover of SNBP genes in our sampling of 15 Drosophila species, we investigated whether any SNBP genes are universally retained across all Drosophila species. For this purpose, we expanded our phylogenomic analysis of SNBP evolution to a recently published dataset of 78 highly contiguous and complete Drosophila genomes (Kim et al., 2021), using tblastn and reciprocal blastx searches (Altschul et al., 1990). Based on this analysis, we find only two SNBP genes have been strictly retained across all Drosophila species — Prot and CG30056 (Figure 1A), while the CG31010 gene has only been lost in one species. Prot and CG30056 also have the lowest dN/dS among SNBP genes (Figure 1B), suggesting that they evolve under a higher degree of selective constraint than other SNBP genes.
 
@@ -71,7 +335,7 @@ Previous studies have shown that a dual loss of ProtA/ProtB reduces male fertili
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig2-v1.jpg)
 
-**Figure 2.:** CG30056, is dispensable for male fertility in D. melanogaster.(A) The SNBP gene, CG30056, is encoded co-directionally in an intron of the essential frazzled gene. Using guide RNAs designed to match sites flanking CG30056, and a healing construct encoding eye-specific DsRed, we created a knockout allele replacing CG30056 with DsRed. The knockout was verified using PCR and primers flanking the CG30056 locus (right). Note that balancer lines encode a wildtype copy of CG30056. (B) We performed fertility assays comparing CG30056 homozygous knockout flies with heterozygous controls, either KO/Balancer or KO/wt (gray ovals). Each dot represents a single replicate, and the average and 95% confidence interval based on standard errors are shown in the figures. Fertility assays were performed either for a few days or to sperm exhaustion (gray ovals). We also assayed fertility of knockout strains for the fertility-essential Mst77F gene, and the fertility-nonessential Tpl94D gene. We also documented the sex ratios of the resulting progeny in (C). Consistent with previous findings, we found that Mst77F knockout males are essentially sterile and Tpl94D knockout males were indistinguishable from their heterozygous controls. We found either no or weak evidence of fertility impairments in two different crosses with homozygous CG30056 knockout males compared to KO/Balancer controls. However, we found no evidence of CG30056 requirement for male fertility in more stringent ‘sperm exhaustion’ fertility experiments compared to KO/wildtype controls (gray ovals). (C) We observed no significant evidence of sex-ratio distortion that would suggest an X-versus-Y meiotic drive in progeny resulting from either CG30056, Mst77F, or Tpl94D knockout males. Although there is suggestive evidence of sex-ratio distortion in progeny of one of the Mst77F genotypes, this is inconsistent between the two crosses and most likely due to stochastic effects of having very few resulting progeny. The raw data of (B) and (C) are shown in Supplementary file 8.Figure 2—source data 1.Figure 2C.Figure 2—source data 2.Figure 2C.
+**Figure 2.:** (A) The SNBP gene, CG30056, is encoded co-directionally in an intron of the essential frazzled gene. Using guide RNAs designed to match sites flanking CG30056, and a healing construct encoding eye-specific DsRed, we created a knockout allele replacing CG30056 with DsRed. The knockout was verified using PCR and primers flanking the CG30056 locus (right). Note that balancer lines encode a wildtype copy of CG30056. (B) We performed fertility assays comparing CG30056 homozygous knockout flies with heterozygous controls, either KO/Balancer or KO/wt (gray ovals). Each dot represents a single replicate, and the average and 95% confidence interval based on standard errors are shown in the figures. Fertility assays were performed either for a few days or to sperm exhaustion (gray ovals). We also assayed fertility of knockout strains for the fertility-essential Mst77F gene, and the fertility-nonessential Tpl94D gene. We also documented the sex ratios of the resulting progeny in (C). Consistent with previous findings, we found that Mst77F knockout males are essentially sterile and Tpl94D knockout males were indistinguishable from their heterozygous controls. We found either no or weak evidence of fertility impairments in two different crosses with homozygous CG30056 knockout males compared to KO/Balancer controls. However, we found no evidence of CG30056 requirement for male fertility in more stringent ‘sperm exhaustion’ fertility experiments compared to KO/wildtype controls (gray ovals). (C) We observed no significant evidence of sex-ratio distortion that would suggest an X-versus-Y meiotic drive in progeny resulting from either CG30056, Mst77F, or Tpl94D knockout males. Although there is suggestive evidence of sex-ratio distortion in progeny of one of the Mst77F genotypes, this is inconsistent between the two crosses and most likely due to stochastic effects of having very few resulting progeny. The raw data of (B) and (C) are shown in Supplementary file 8.
 
 Next, we tested how CG30056 contributes to male fertility. We first generated CG30056-KO homozygous males by crossing two different CG30056-KO founder lines either to each other or to a D. melanogaster strain with a large deletion spanning CG30056 (Df(2R)BSC880). This ‘trans-heterozygote’ strategy prevents our phenotypes from being affected by CRISPR/Cas9-generated off-target mutations generated in the same founder chromosome. As controls, we used CG30056/SM6a or CG30056/CyO heterozygous males (SM6a and CyO are balancer chromosomes with an intact copy of CG30056). We compared the fertility of these males by mating them with two wildtype females at room temperature and counting their adult offspring. We found only modest differences in offspring number between heterozygous controls and homozygous knockout males (Figure 2B; Supplementary file 8), implying that loss of CG30056 does not significantly lower male fertility. We also detected no evidence of sex-ratio distortion in our crosses (Figure 2C; Supplementary file 8). Parallel fertility experiments conducted with mutants of Mst77F or Tpl94D recapitulated previous findings, confirming the essentiality of Mst77F and the dispensability of Tpl94D (Figure 2B; Supplementary file 8; Gärtner et al., 2015; Kimura and Loppin, 2016).
 
@@ -79,13 +343,192 @@ Comparisons to balancer chromosome-containing males could mask more subtle ferti
 
 Thus, two of three SNBP genes (Mst77F and Prtl99C) essential for male fertility are evolutionarily young and poorly retained. In contrast, one of the most well-conserved and well-retained SNBP genes (CG30056) is not essential. Our work suggests that newly arisen Drosophila SNBP genes are more likely to encode essential, non-redundant male fertility functions than ancient, well-retained ones.
 
-## Recurrent amplification of a subset of SNBP genes on sex chromosomes
+### Recurrent amplification of a subset of SNBP genes on sex chromosomes
 
 Our analysis of SNBP genes across a limited set of Drosophila species had already revealed significant evidence of evolutionary turnover (Figure 1). We further analyzed evolutionary turnover of SNBP genes in 78 Drosophila species and two other Drosophilidae species, most of which lack detailed gene annotation (Kim et al., 2021). We inferred gains and losses of SNBP genes in these species, which we represent on a circular phylogram of all species. To assign the chromosomal location of SNBP genes, we estimated coverage of publicly available Illumina and Nanopore reads (represented in Figure 3 and Supplementary file 9) of either male or mixed-sex flies from various Drosophila species. We also assigned location to specific Muller elements based on 3285 BUSCO (Benchmarking Universal Single-Copy Orthologs) genes on the contigs (Manni et al., 2021). We could readily assign male-specific regions to the Y chromosomes for species where sequencing reads were available from male and female flies separately. However, we could not ascribe a sex-chromosomal linked location of a contig to either the X or Y chromosome in cases where there was no linkage information from BUSCO genes and no read data available from females, only from males and mixed-sex flies.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig3-v1.jpg)
+
+**Figure 3.:** (A) Using reciprocal BLAST (see 'Materials and methods'), we searched for homologs of each D. melanogaster SNBP gene in 78 distinct Drosophila species and two outgroup species (shown in dot lines). We depict our findings using the circular phylogram representation for SNBP gene CG31010. The innermost circle is a circular phylogeny of the species (Kim et al., 2021). The next circle ring indicates autosomal copies, with colors to indicate copy number (scale bar, top left; note that scales are different for each gene). Thus, CG31010 is present in one autosomal copy in all but one Drosophila species (gray bar). The third circle indicates sex-chromosomal copies. Red and blue frames in the middle ring indicate X- or Y-linkage if that can be reliably assigned. Dotted frames indicate copies that might not be real orthologs based on phylogeny, whereas solid frames indicate five or more copies. For example, CG31010 is present in five copies on the X-chromosome of D. obscura. The outermost circle shows copies with ambiguous chromosomal location: there are no such copies for CG31010. (B) Using the same representation scheme, we indicate gene retention and amplification for seven other SNBP genes for which we find robust evidence of amplification, from a copy number of five (CG14835) to nearly 50 (tHMG). We also marked the montium group species that lost many SNBP genes with yellow lines. We note that assemblies of Lordiphosa species have lower quality, and the data need to be interpreted carefully. (C) SNBP gene amplifications (five or more copies) are heavily biased for sex chromosomal linkage. Given the relative size of sex chromosomes and autosomes, this pattern is highly non-random (test of proportions, p=2.3e-5).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** We searched for homologs of each D. melanogaster SNBP gene in 78 distinct Drosophila species using reciprocal BLAST. We represent our findings using the same circular representation as in Figure 3: the innermost ring indicates autosomal genes, the middle ring indicates sex-linked genes, and the outer ring shows genes with an ambiguous location. In contrast to the significant gene amplification of eight SNBP genes shown in Figure 3, the five SNBP genes represented here only underwent a relatively modest copy number change of twofold or three-fold.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Phylogenetic analyses of the eight SNBP genes that underwent gene amplifications reveal that most of these amplifications are evolutionarily young. The phylogeny also suggests concerted evolution among the amplified copies of CG14835 in the D. arawakana clade and Prtl99C in the D. suzukii clade, similar to the amplified tHMG-hetX copies on D. mauritiana and D. simulans (Figure 4). The phylogenies from amplified copies of tHMG and ProtA/B in Lordiphosa species are not shown here because of their low-quality sequences.
 
 All ancestrally-retained SNBP genes are located on autosomes in D. melanogaster. This is also the case in most Drosophila species. On the circular phylogram, we represented losses or duplications of the ancestral autosomal gene in the innermost circle, gains on the sex chromosomes are represented in the next (middle) concentric circle, and gains with ambiguous chromosomal location are represented in the outermost concentric circle (Figure 3, Figure 3—figure supplement 1). We use the CG31010 gene to illustrate this representation. CG31010 has been retained in all Drosophila species except one, which is shown by a gray bar in the innermost concentric circle. In addition, CG31010 amplified to a total of five X-linked copies in D. obscura, represented by a dark red bar in the middle concentric circle (Figure 3A).
 
 Our expanded survey reinforced our initial findings (Figure 1A) that multiple SNBP genes are subject to lineage-specific amplifications (more than five copies in one species). We found that 8 of 13 D. melanogaster SNBP genes investigated (CG14835, ddbt, Mst33A, Mst77F, Prtl99C, Prot, tHMG, and CG31010) underwent amplification in at least one species (Figure 3 and Table 2). In total, we found that SNBP genes have experienced 20 independent amplification events, including one event in the outgroup species, Leucophenga varia (Figure 3A and B). Most SNBP amplifications are evolutionarily young (<10 million years old; Figure 3—figure supplement 2), and 15 of them are specific to a single surveyed species (Figure 3A and B). Like their parental genes, most amplified copies encode positively charged HMG domain-containing proteins (Supplementary file 3) and have male-specific, mostly testis-specific, expression (Figure 1—figure supplement 3B). Thus, amplified copies are also likely to function as SNBP genes. Many amplified SNBP genes are arranged in tandem arrays, making their sequences hard to assemble. Moreover, some amplified SNBP genes, e.g., Dox-related genes derived from ProtA/B in D. simulans (Vedanayagam et al., 2021; Muirhead and Presgraves, 2021), are too diverged from the parental genes for unambiguous assignment and are missing in our survey. Therefore, our reported numbers are thus likely underestimates.
+
+**Table 2.**
+ Summary of evolution events of Drosophila sperm nuclear basic protein (SNBP) genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phenotype</th>
+      <th>Age (My)</th>
+      <th>Expression level (TPM)*</th>
+      <th>Evolutionary rate (dN/dS)†</th>
+      <th>Positive selection(MK test)‡</th>
+      <th>Amplification event(s)§</th>
+      <th>Number of loss events in 80 species¶</th>
+      <th>Number of loss events in the montium group(X-Y fusion)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CG30356</td>
+      <td>Undefined</td>
+      <td>&gt;65</td>
+      <td>353</td>
+      <td>0.39</td>
+      <td>+</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CG31010</td>
+      <td>Undefined</td>
+      <td>&gt;65</td>
+      <td>346</td>
+      <td>0.35</td>
+      <td>+</td>
+      <td>1X</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CG34269</td>
+      <td>Undefined</td>
+      <td>&gt;65</td>
+      <td>49</td>
+      <td>0.34</td>
+      <td>+</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>CG42355</td>
+      <td>Undefined</td>
+      <td>35</td>
+      <td>532</td>
+      <td>0.36</td>
+      <td>+</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mst33A</td>
+      <td>Undefined</td>
+      <td>35</td>
+      <td>632</td>
+      <td>0.43</td>
+      <td>-</td>
+      <td>1Y</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ddbt</td>
+      <td>Sterile</td>
+      <td>&gt;65</td>
+      <td>130</td>
+      <td>0.35</td>
+      <td>-</td>
+      <td>1X</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mst77F</td>
+      <td>Sterile</td>
+      <td>35</td>
+      <td>3636</td>
+      <td>0.45</td>
+      <td>-</td>
+      <td>1Y</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Prtl99C</td>
+      <td>Sterile</td>
+      <td>45</td>
+      <td>540</td>
+      <td>0.30</td>
+      <td>-</td>
+      <td>2X</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CG30056</td>
+      <td>Fertile</td>
+      <td>&gt;65</td>
+      <td>406</td>
+      <td>0.10</td>
+      <td>-</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CG14835</td>
+      <td>Fertile</td>
+      <td>&gt;65</td>
+      <td>432</td>
+      <td>0.36</td>
+      <td>-</td>
+      <td>1X</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Tpl94D</td>
+      <td>Fertile</td>
+      <td>45</td>
+      <td>564</td>
+      <td>0.41</td>
+      <td>+</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Prot</td>
+      <td>Fertile</td>
+      <td>&gt;65</td>
+      <td>1118,1619</td>
+      <td>0.21</td>
+      <td>+</td>
+      <td>2A;1X;2Y;4X/Y;1U</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>tHMG</td>
+      <td>Fertile</td>
+      <td>&gt;65</td>
+      <td>935,1194</td>
+      <td>0.39</td>
+      <td>+</td>
+      <td>2X; 1U</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Gene expression level in D. melanogaster testes (Supplementary file 2).†dN/dS in D. melanogaster subgroup species (Supplementary file 4).‡Positive selection based on McDonald–Kreitman tests in D. melanogaster and/or D. serrata.§Any specific location with five or more copies of any one SNBP gene. A represents all autosomes combined, X represents the X chromosome, Y represents the Y chromosome, X/Y represents either the X or Y chromosome, and U represents regions with unknown chromosome locations.¶Number of potential loss events inferred by the phylogeny (Figure 3 and Figure 3—figure supplement 1). Some of these may represent false negatives due to incomplete genome assemblies._
 
 We found that eight amplifications are X-linked and four are Y-linked, whereas, for four amplifications, we can infer sex chromosomal linkage but cannot distinguish between X- or Y-linkage (Figure 3; Supplementary file 10). Thus, we conclude that 80% (16/20, Figure 3B) of amplifications occurred on sex chromosomes. This high fraction is significantly higher than the null expectation (Test of Proportions, p=2.3e-5) if SNBP amplifications were randomly distributed between sex chromosomes or autosomes. Under the null expectation, ~33% should be on sex chromosomes, given each chromosome arm, except the dot chromosome, has a similar size.
 
@@ -93,9 +536,9 @@ To better understand the evolutionary origins and potential function of SNBP gen
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig4-v1.jpg)
 
-**Figure 4.:** tHMG genes in D.simulans and close relatives.(A) Using a combination of genome assemblies and phylogenetic analyses, we traced the evolutionary origins and steps that led to the massive amplification of tHMG genes on the D. simulans X chromosome. The first step in this process was the duplication of the ancestral tHMG gene (flanked by CCT1 and Octb1R) on the 3R chromosomal arm to a new location on 3R (tHMG-3R#2 now flanked by CG31468 and Gba1a) and to a location on the X chromosome euchromatin, where tHMG-euX is flanked by CG12691 and CG15572. We infer that this CG12691-tHMG-euX locus then duplicated to another locus in X-heterochromatin, between Atbp and the flamenco locus, and further amplified. These resulting copies experienced different fates in D. simulans and its sibling species. For example, in D. sechellia, tHMG-3R#2, tHMG-euX, and tHMG-hetX were all lost but a degenerated copy of tHMG-3R#2 and flanking genes can be found on its Y chromosome. In contrast, in D. mauritiana, tHMG-3R#2 pseudogenized on 3R, tHMG-euX was retained while tHMG-hetX underwent an amplification to a copy number of 15 tandemly arrayed genes in the X heterochromatin. Finally, in D. simulans, tHMG-3R#2 was completely lost, tHMG-euX was pseudogenized, and tHMG-hetX amplified to a copy number of 15 on the X heterochromatin. We note that the amplification unit sizes are different between D. simulans and D. mauritiana, suggesting that these were independent amplifications. Moreover, we detected different copy numbers (all more than 30) of tHMG-hetX across three sequenced strains of D. simulans we surveyed. This difference is likely due to both incomplete assemblies of this region and strain-specific differences. In addition to this X chromosomal expansion, we also found a few degenerated copies of tHMG on the 3R heterochromatic region and the Y chromosome. (B) The alignment shows the divergence between different tHMG copies in the D. simulans clade and D. melanogaster. Surprisingly, we X-linked tHMG duplicates diverged more from parental genes on autosomes, indicating that they experienced different evolutionary forces than the parental copies. Among 243 aligned nucleotide sites, we found 19 non-synonymous changes and only 3 synonymous changes shared in all X-linked copies after they diverged from the parental copy. Similarly, four non-synonymous changes and no synonymous change occurred on the parental copy in the ancestral species of the simulans clade. Most non-synonymous changes are in the DNA-binding HMG box. As a result, parental copies and new X-linked copies in D. simulans and D. mauritiana only share ~70% protein identity, which is very low given the <3 MY divergence. Our branch test using PAML further shows that both branches have significantly higher protein evolution rates (ω = 1.6, LRT test, p=0.007; Supplementary file 11). However, we did not find evidence of positive selection using a branch-site test (LRT test, p=0.23; Supplementary file 11). (C) Phylogenetic analyses of the various tHMG genes confirm the chronology of events outlined in (A) and find strong evidence of concerted evolution among the amplified tHMG-hetX copies on D. mauritiana and D. simulans, in which copies from the X-linked heterochromatic region are highly homogeneous within species, but diverged between species. For comparison, we showed the species tree on the left, and the phylogeny of three D. simulans clade species is not solved due to lineage sorting and gene flow. To simplify the analysis, we only used sequences that are annotated in NCBI databases.
+**Figure 4.:** (A) Using a combination of genome assemblies and phylogenetic analyses, we traced the evolutionary origins and steps that led to the massive amplification of tHMG genes on the D. simulans X chromosome. The first step in this process was the duplication of the ancestral tHMG gene (flanked by CCT1 and Octb1R) on the 3R chromosomal arm to a new location on 3R (tHMG-3R#2 now flanked by CG31468 and Gba1a) and to a location on the X chromosome euchromatin, where tHMG-euX is flanked by CG12691 and CG15572. We infer that this CG12691-tHMG-euX locus then duplicated to another locus in X-heterochromatin, between Atbp and the flamenco locus, and further amplified. These resulting copies experienced different fates in D. simulans and its sibling species. For example, in D. sechellia, tHMG-3R#2, tHMG-euX, and tHMG-hetX were all lost but a degenerated copy of tHMG-3R#2 and flanking genes can be found on its Y chromosome. In contrast, in D. mauritiana, tHMG-3R#2 pseudogenized on 3R, tHMG-euX was retained while tHMG-hetX underwent an amplification to a copy number of 15 tandemly arrayed genes in the X heterochromatin. Finally, in D. simulans, tHMG-3R#2 was completely lost, tHMG-euX was pseudogenized, and tHMG-hetX amplified to a copy number of 15 on the X heterochromatin. We note that the amplification unit sizes are different between D. simulans and D. mauritiana, suggesting that these were independent amplifications. Moreover, we detected different copy numbers (all more than 30) of tHMG-hetX across three sequenced strains of D. simulans we surveyed. This difference is likely due to both incomplete assemblies of this region and strain-specific differences. In addition to this X chromosomal expansion, we also found a few degenerated copies of tHMG on the 3R heterochromatic region and the Y chromosome. (B) The alignment shows the divergence between different tHMG copies in the D. simulans clade and D. melanogaster. Surprisingly, we X-linked tHMG duplicates diverged more from parental genes on autosomes, indicating that they experienced different evolutionary forces than the parental copies. Among 243 aligned nucleotide sites, we found 19 non-synonymous changes and only 3 synonymous changes shared in all X-linked copies after they diverged from the parental copy. Similarly, four non-synonymous changes and no synonymous change occurred on the parental copy in the ancestral species of the simulans clade. Most non-synonymous changes are in the DNA-binding HMG box. As a result, parental copies and new X-linked copies in D. simulans and D. mauritiana only share ~70% protein identity, which is very low given the <3 MY divergence. Our branch test using PAML further shows that both branches have significantly higher protein evolution rates (ω = 1.6, LRT test, p=0.007; Supplementary file 11). However, we did not find evidence of positive selection using a branch-site test (LRT test, p=0.23; Supplementary file 11). (C) Phylogenetic analyses of the various tHMG genes confirm the chronology of events outlined in (A) and find strong evidence of concerted evolution among the amplified tHMG-hetX copies on D. mauritiana and D. simulans, in which copies from the X-linked heterochromatic region are highly homogeneous within species, but diverged between species. For comparison, we showed the species tree on the left, and the phylogeny of three D. simulans clade species is not solved due to lineage sorting and gene flow. To simplify the analysis, we only used sequences that are annotated in NCBI databases.
 
-## Short life of sex chromosome-linked SNBP genes
+### Short life of sex chromosome-linked SNBP genes
 
 Previous studies showed that the Dox meiotic driver arose from an SNBP partial gene amplification (ProtA/B) in D. simulans (Vedanayagam et al., 2021; Muirhead and Presgraves, 2021; Vedanayagam et al., 2022). We hypothesize that the Drosophila sex-chromosomal SNBP amplifications we have found might similarly be involved in genetic conflicts between sex chromosomes across the Drosophila genus, via X-versus-Y meiotic drive. In contrast, all ancestral single-copy SNBP genes that gave rise to these amplifications are encoded on autosomal loci and thus are more likely to encode suppressors of meiotic drive, as is the case for the ProtA/B genes against Segregation Distorter (Gingell and McLean, 2020).
 
@@ -105,9 +548,17 @@ If our hypothesis for this duality of SNBP gene functions is correct, we would f
 
 **Figure 5.:** SNBP genes are ancestrally encoded on autosomes. Following chromosome fusion over Drosophila evolution, we found eight cases in which three SNBP genes (CG14835, CG34269, and ddbt) became linked to sex chromosomes. In 1/8 cases, SNBP genes translocated back to an autosome. In 2/8 cases, the sex chromosome-linked SNBP genes degenerated despite being otherwise widely conserved in non-montium Drosophila species. In 5/8 cases, SNBP genes were retained on neo-sex chromosomes in 5/8 cases. Among these, we observed one amplification event; ddbt amplified to six copies in D. repletoides. In contrast to sex chromosomal linkage, SNBP genes that remained linked to autosomes despite chromosomal fusions were strictly retained in 16/16 cases. These retention patterns differ significantly between sex chromosomes and autosomes (Fisher’s exact test, p=0.03).
 
-## Loss of SNBP genes in the montium group coincides with X-Y chromosomal fusion
+### Loss of SNBP genes in the montium group coincides with X-Y chromosomal fusion
 
 Our phylogenomic analyses also highlighted one Drosophila clade—the montium group of species (including D. kikkawai)—which suffered a precipitous loss of at least five SNBP genes (Figure 3). In contrast to D. kikkawai, three of these five SNBP genes are retained in all other D. melanogaster group species. For the other two genes, Mst77F was lost twice and tHMG was lost three times (D. fuyamai has lost both Mst77F and tHMG). A closer examination allowed us to infer that six different SNBP genes underwent 11 independent degeneration events in the montium group (Figure 6A). Intriguingly, five of six SNBP genes lost in the montium clade (Mst77F, Prtl99C, Mst33A, tHMG, CG14835) are also among the eight SNBP genes subject to sex chromosome-specific amplifications in other Drosophila species (Figure 3 and Table 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig6-v1.jpg)
+
+**Figure 6.:** (A) Using a phylogeny of species from the montium group, we traced the retention or loss of SNBP genes that are otherwise primarily conserved across other Drosophila species. Genes retained in autosomal syntenic locations are indicated in black squares, whereas pseudogenes are indicated by an empty square with a diagonal line. We traced a total of 11 independent pseudogenization events. Three of these pseudogenization events occurred early such that all species from this group have lost CG14835, Mst33A, and tHMG. Three other SNBP genes were lost later (in some cases on multiple occasions) and are, therefore, missing only in a subset of species. For example, we infer that CG34629 was lost on at least five independent occasions (and also in outgroup species D. ananassae). We correlated this dramatic loss of otherwise-conserved SNBP genes with the X-chromosome linkage of genes that are ancestrally Y-linked in other Drosophila species, shown on the right. For example, of 12 Y-chromosomal genes in most related species, including D. melanogaster and D. ananassae, most are now X-linked in montium group species (e.g., 11/12 in D. triauraria, 9/11 in D. jambulina, and 7/10 in D. bocqueti and D. kikkawai). We note these species still harbor a Y chromosome; however, this Y-chromosome lacks most ancestrally Y-linked genes. (B) We traced the chromosomal arrangement and linkage of ancestrally Y-linked genes in D. triauraria using new genome assembly (NCBI accession: GCA_014170315.2) and genetic crosses in (C). We were able to show that the D. triauraria X chromosome represents a fusion of the X chromosome (e.g., from D. melanogaster) and chromosomal segments containing 11 protein-coding genes that are typically found on the Y chromosome (e.g., from D. melanogaster). Genetic crosses confirmed the X-linkage of 9 of these previously Y-linked genes. The lack of allelic differences in D. triauraria prevented us from confirming this for the other two genes: CCY and WDY. (C) An example of the genetic cross used to verify X-linkage. Using genetic crosses between different D. triauraria strains with allelic variation in ancestral Y-linked genes, we evaluated whether male flies inherit these genes maternally, paternally, or from both parents. We observed only maternal inheritance, confirming the X-chromosomal linkage of these genes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Two hypotheses have been proposed for the relocation of ancestrally Y-linked genes in the montium species group. The first hypothesis proposed by Dupim et al., 2018 posits that the Y-chromosomal genes duplicated onto another chromosome, following which either the Y-linked or non-Y-linked genes were retained. We favor an alternate hypothesis in which all Y-linked genes got fused to the X-chromosome, following which some Y-linked genes relocated back to the Y chromosome in some but not all montium group species. We find strong evidence for the second hypothesis regarding the PRY and Ppr-Y gene, which are both located on the same contig in D. triauraria and D. kikkawai even though they are X-linked in D. triauraria and Y-linked in D. kikkawai. Phylogenetic analyses of PRY suggest that it relocated back to the Y chromosome from the X chromosome in the D. kikkawai lineage. Similarly, the WDY and kl-2 genes are also co-located on the D. triauraria X chromosome and D. kikkawai Y chromosome. However, in this case, the phylogeny is ambiguous enough to prevent us from distinguishing between the two hypotheses for the WDY and kl-2 genes in D. jambulina, D. bocqueti, and D. kikkawai.
 
 Notably, we did not find SNBP amplification events in any species of the montium clade. Given our hypothesis that autosomal SNBP genes might be linked to the suppression of meiotic drive (above), we speculated that the loss of these genes in the montium group of Drosophila species may have coincided with reduced genetic conflicts between sex chromosomes in this clade.
 
@@ -119,7 +570,7 @@ The translocation of a large segment of the Y-chromosome to the X-chromosome in 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/85249/elife-85249-fig7-v1.jpg)
 
-**Figure 7.:** Drosophila species.SNBP genes are ancestrally encoded on autosomes where we hypothesize that some of them act to suppress meiotic drive between sex chromosomes (e.g., ProtA/B). However, in some cases, paralogs of these SNBP genes duplicate onto sex chromosomes where they undergo dramatic amplification. We propose that this amplification creates an opportunity for them to act as meiotic drive elements themselves (e.g., Dox), imbuing sex chromosomes that inherit them with transmission advantages. A fusion of the sex chromosomes (e.g., D. montium species group) leads to a loss of meiotic competition between sex chromosomes, which will subsequently lead to the loss or degeneration of the suppressing SNBP genes on autosomes since their drive suppression functions are rendered superfluous.
+**Figure 7.:** SNBP genes are ancestrally encoded on autosomes where we hypothesize that some of them act to suppress meiotic drive between sex chromosomes (e.g., ProtA/B). However, in some cases, paralogs of these SNBP genes duplicate onto sex chromosomes where they undergo dramatic amplification. We propose that this amplification creates an opportunity for them to act as meiotic drive elements themselves (e.g., Dox), imbuing sex chromosomes that inherit them with transmission advantages. A fusion of the sex chromosomes (e.g., D. montium species group) leads to a loss of meiotic competition between sex chromosomes, which will subsequently lead to the loss or degeneration of the suppressing SNBP genes on autosomes since their drive suppression functions are rendered superfluous.
 
 ## Discussion
 
@@ -139,7 +590,7 @@ One clue for this unexpected lability emerges from discovering SNBP genes that a
 
 ## Materials and methods
 
-## Molecular evolutionary analyses of SNBP genes
+### Molecular evolutionary analyses of SNBP genes
 
 We use PAML 4.9 (Yang, 2007; RRID:SCR_014932) to calculate protein evolution rates (dN/dS) of SNBP genes and conduct site-model, branch-model, and branch-site model analyses. We compare the protein evolution rates of SNBP genes to the genome-wide rates (8521 genes) from the 12 Drosophila genomes project (Clark et al., 2007). Many SNBP genes analyzed in our study were missed in previous analyses because they are rapidly evolving and hard to align. Therefore, we aligned the coding sequences of orthologous SNBP genes from the same six Drosophila species used to calculate dN/dS previously (Clark et al., 2007), taking care to only use orthologous sequences. For all phylogenic analyses, we first constructed maximum-likelihood trees using iqtree 2.1.3 (Minh et al., 2020) using parameters '-m MFP -nt AUTO -alrt 1000 -bb 1000 -bnni'. We then calculated protein evolution rates of SNBP genes using the same parameters with the generated gene trees (model = 0 and CodonFreq = 2).
 
@@ -149,17 +600,17 @@ For the branch-model codeml analyses, we first simplified the tree by reconstruc
 
 To look for positive selection in two individual lineages, D. melanogaster and D. serrata, we applied McDonald–Kreitman tests to compare within-species polymorphism and between-species divergence (McDonald and Kreitman, 1991). We used D. simulans as the closely related outgroup species for the D. melanogaster analysis, and D. bunnanda for the D. serrata analysis. To polarize the changes in each lineage, we inferred ancestral sequences of D. melanogaster and D. simulans using seven species in the D. melanogaster group (D. melanogaster, D. simulans, D. mauritiana, D. sechellia, D. yakuba, D. erecta, and other well-aligned outgroup species: D. biarmipes, D. elegans, D. eugracilis, D. ficusphila, or D. rhopaloa) using MEGAX (10.1.8; RRID:SCR_000667; Stecher et al., 2020). Similarly, we used five species in the montium group (D. serrata, D. bunnanda, D. birchii, D. truncata, and D. mayri) to polarize the D. serrata-specific changes. We extracted population data from public datasets of >1000 D. melanogaster strains (Hervas et al., 2017; Lack et al., 2016) and 111 D. serrata strains (Reddiex et al., 2018). We conducted both polarized and unpolarized McDonald–Kreitman tests using R scripts (https://github.com/jayoung/MKtests_JY) and confirmed our findings using an online server (Egea et al., 2008; http://mkt.uab.es/mkt/MKT.asp).
 
-## Searching for homologs of SNBP genes in Drosophila and outgroup species
+### Searching for homologs of SNBP genes in Drosophila and outgroup species
 
 We used tblastn and reciprocal blastx to search homologs of all SNBP genes across all genome assemblies (RRID:SCR_004870; Altschul et al., 1990) using D. melanogaster protein sequences as queries. Since SNBP genes are rapidly evolving, we used the following parameters: e-value < 1e-2, amino acid identity > 20%, and blast score > 10. We further required that the best reciprocal blastx hit when searching D. melanogaster genes was the original query gene to ensure that we were recovering true orthologs. To further confirm questionable orthologs, e.g., only one species with the homolog in the lineage, we examined its synteny, anticipating that orthologs should also have shared syntenic contexts. We also examined the syntenic regions of SNBP genes and conducted blastx using a lower threshold (e-value < 1) to confirm the loss of SNBP genes in some lineages, especially in the montium group species.
 
 We used the abSENSE package (RRID:SCR_023223; Weisman et al., 2020) to calculate the probability of not detecting homologs in more diverged species (using E-value = 1), enabling us to distinguish whether our inability to detect homologs was due to rapid divergence or true absence.
 
-## Transcriptomic analyses of SNBP genes
+### Transcriptomic analyses of SNBP genes
 
 We combined the public gene annotations with our own annotated SNBP gene annotations and mapped publicly available transcriptome datasets (Supplementary file 13) to the genome assemblies using HiSAT2 (v2.2.1 with parameters –exon and –ss to specify the exon positions and splice sites; RRID:SCR_015530; Kim et al., 2019). We then estimated the expression levels using the gene annotations as input for Stringtie (v2.1.4 with parameters -dta -G to specify annotation files; RRID:SCR_016323; Kovaka et al., 2019). For single-cell transcriptomic data, we downloaded and used the scripts and data from (Witt et al., 2021). We modified the published scripts to extract and plot the expression level of SNBP genes using the NormalizeData function of Seurat (RRID:SCR_007322; Hao et al., 2021).
 
-## Assigning sex-linkage of contigs in genome assemblies
+### Assigning sex-linkage of contigs in genome assemblies
 
 We mapped Nanopore and Illumina reads from male samples (sometimes from mixed-sex or female samples) to genome assemblies using minimap2 (RRID:SCR_018550; Li, 2021) and bwa-mem (RRID:SCR_022192; Vasimuddin et al., 2019) using the default parameters. We calculated coverage of each site using samtools depth and estimated the median coverage of each 10 kb window and each contig. We then examined the genome-wide distribution of 10 kb window coverage using the density function in R. We called two peaks of coverage using turnpoints function in R. As we expected, the prominent peak with higher coverage mostly represents autosomal regions, whereas the lower coverage peak mostly represents sex-linked regions. We used the average of coverage from the two peaks as the threshold to assign autosomal and sex-chromosomal contigs.
 
@@ -167,7 +618,7 @@ We also confirmed our assignments using the sequence-homology method. We identif
 
 We used genetic mapping to examine the X-linkage of ancestral Y-linked genes in D. triauraria. We first identified polymorphic SNPs in D. triauraria SNBP genes using publicly available Illumina data (Conner et al., 2021) and called SNPs (bcftools call -m -Oz; RRID:SCR_005227) in each strain (Li et al., 2009; Li, 2011). We took advantage of the fact that F1 males will only inherit maternal X alleles. Four D. triauraria strains (14028-0691.01 [National Drosophila Species Stock Center], KMJ1 [Ehime-Fly: E-15304], OKNG12-6 [Ehime-Fly: E-15309] and YKS-MTK [Ehime-Fly: E-15303]) were kindly provided by Dr. Brandon Cooper. We crossed two strains with different alleles of ancestrally Y-linked genes (14028-0691.01 with KMJ1 and OKNG12-6 with YKS-MTK) and genotyped these genes in F1 males using PCR (Supplementary file 14) and Sanger sequencing to examine whether their allele-specific inheritance patterns were more consistent with Y-linkage (paternal inheritance), X-linkage (maternal inheritance), or autosomal linkage (both paternal and maternal inheritance).
 
-## CRISPR/Cas9 knockout and fertility assays
+### CRISPR/Cas9 knockout and fertility assays
 
 To generate the CG30056 knockout strain, we first cloned two guide RNAs, targeting either the 5′ or 3′ end of CG30056, into pCFD4-U6:1_U6:3tandemgRNAs (RRID:Addgene_49411) using NEBuilder HiFi DNA Assembly Master Mix (NEB catalog E2621). For the repairing construct, we used independent PCR reactions to amplify 3xP3 DsRed, the backbone of pDsRed-attP (RRID:Addgene_51019), and ~1 kb homologous sequences of upstream and downstream of CG30056 using PCR independently. These four fragments were annealed using NEBuilder HiFi DNA Assembly Master Mix. We then used the Q5 Site-Directed Mutagenesis Kit (NEB catalog E0554S) to mutate the gRNA target PAM sites on the repairing construct so that they would not also be targeted by the guide RNAs we used. All primers are listed in Supplementary file 14. These two constructs were injected into y[1] M{GFP[E.3xP3]=vas-Cas9.RFP-}ZH-2A w[1118] (RRID:BDSC_55821) embryos by BestGene. The resulting transgenic flies were backcrossed to yw, selected using the DsRed marker, and balanced by CyO. The transgenic flies were further confirmed by PCR using independent primer sets (Figure 3A and Supplementary file 14).
 

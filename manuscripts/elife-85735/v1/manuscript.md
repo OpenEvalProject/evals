@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04q84b570 International Agency for Research on Cancer (IARC/WHO), Early Detection, Prevention and Infections Branch Lyon France
+1. International Agency for Research on Cancer (IARC/WHO), Early Detection, Prevention and Infections Branch Lyon France ([ROR:04q84b570](https://ror.org/04q84b570))
 2. Karkinos Healthcare Ernakulam India
 
 † Corresponding author
@@ -31,7 +31,7 @@ In a previous study, conducted before the COVID-19 pandemic in a high-income cou
 
 To estimate the impact of HPV vaccination on cervical cancer burden, we used the agent-based HPV transmission model, EpiMetHeos (Man et al., 2022), in combination with the cervical cancer progression model, Atlas (Bonjour et al., 2021). Routine HPV vaccination at age 10 under the GO or GN strategy was modelled with different vaccination coverages in boys and girls from the range between 0% and 100%, at 10% intervals, as we do not yet know what coverage a national HPV immunisation programme in India may reach. Estimates of the life-time number of cervical cancer cases prevented per 100,000 girls born were derived by cohort.
 
-## GN vaccination to improve resilience of cervical cancer prevention
+### GN vaccination to improve resilience of cervical cancer prevention
 
 To consider the impact of scaling up vaccination from such suboptimal coverage in girls, we highlighted the following four scenarios: (A) GO strategy with 60% coverage in girls, (B) GO strategy with 90% coverage in girls, (C) GN strategy with 60% coverage in both girls and boys, (D) GN strategy with 90% coverage in both girls and boys. As the base case, we simulated disruption in vaccination for 5 years, taking place 10 years after the introduction of vaccination. Life-time cervical cancer cases prevented in the birth cohorts vaccinated prior to the disruption period ranged between 562 (UI: 444, 676) and 807 (UI: 752, 853) cases per 100,000 girls born in the four highlighted scenarios. The highest impact was achieved by the GN strategy with 90% coverage, closely followed by GO with 90% coverage, then GN with 60% coverage, and then GO with 60% coverage (Figure 1).
 
@@ -51,7 +51,141 @@ Sensitivity analyses on less strong disruption in vaccination coverage or altern
 
 **Figure 2.:** Predicted life-time cervical cancer cases prevented by birth cohorts (per 100,000 girls born) under different durations of disruption (panel) and in the four highlighted scenarios: girls-only strategy with 60% coverage (light red), girls-only strategy with 90% coverage (dark red), gender-neutral strategy with 60% coverage (light blue), and gender-neutral strategy with 90% coverage (dark blue). Vaccination coverage was fixed at 0% in girls and boys during the period of disruption. Birth cohort 0 corresponds to the first vaccinated cohort. Birth cohorts with disruption correspond to dashed lines and birth cohorts without disruption to solid lines.
 
-## GN vaccination to enhance progress towards elimination of cervical cancer
+**Table 1.**
+ Sensitivity analyses on coverage at disruption and duration of disruption on resilience.Life-time number of cervical cancer cases prevented per 100,000 girls born in birth cohorts vaccinated prior to disruption in part I. Sensitivity analyses on coverage at disruption in part II and on duration of disruption in part III on resilience (defined as the life-time number of cervical cancer cases still prevented in the birth cohorts with disruption of vaccination per 100,000 girls born) and resilience ratio (defined as fold change in resilience by switching from one scenario to another). Uncertainty intervals are reported in brackets. [Resilience ratio of scenario X to scenario Y] is defined as [resilience of scenario Y]/[resilience of scenario X]. For example, in the base case, [resilience ratio of GO 60% to GO 90%] = [resilience of GO 90%]/[resilience of GO 60%]=209/107=2.0.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">I. Life-time number of cervical cancer cases prevented prior to disruption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scenario</td>
+      <td>GO 60%</td>
+      <td>GO 90%</td>
+      <td>GN 60%</td>
+      <td>GN 90%</td>
+    </tr>
+    <tr>
+      <td>No disruption</td>
+      <td>562 (444, 676)</td>
+      <td>773 (701, 836)</td>
+      <td>647 (539, 746)</td>
+      <td>807 (752, 853)</td>
+    </tr>
+    <tr>
+      <td colspan="8">II. Sensitivity analyses on coverage at disruption (with duration of disruption fixed at 5 years)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Coverage at disruption in %</td>
+      <td colspan="4">Resilience by vaccination strategy and coverage</td>
+      <td colspan="3">Resilience ratio</td>
+    </tr>
+    <tr>
+      <td>GO 60%</td>
+      <td>GO 90%</td>
+      <td>GN 60%</td>
+      <td>GN 90%</td>
+      <td>GO 60% to GO 90%</td>
+      <td>GO 60% to GN 60%</td>
+      <td>GO 90% to GN 90%</td>
+    </tr>
+    <tr>
+      <td>0 (base case)</td>
+      <td>107 (7, 214)</td>
+      <td>209 (81, 340)</td>
+      <td>302 (170, 437)</td>
+      <td>464 (328, 602)</td>
+      <td>2.0</td>
+      <td>2.8</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>271 (155, 391)</td>
+      <td>355 (221, 490)</td>
+      <td>425 (297, 559)</td>
+      <td>550 (416, 680)</td>
+      <td>1.3</td>
+      <td>1.6</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>410 (277, 534)</td>
+      <td>476 (343, 599)</td>
+      <td>527 (401, 647)</td>
+      <td>621 (500, 730)</td>
+      <td>1.2</td>
+      <td>1.3</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td colspan="6">III. Sensitivity analyses on duration of disruption (with coverage at disruption fixed at 0%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Duration of disruption in years</td>
+      <td colspan="4">Resilience by vaccination strategy and coverage</td>
+      <td colspan="3">Resilience ratio</td>
+    </tr>
+    <tr>
+      <td>GO 60%</td>
+      <td>GO 90%</td>
+      <td>GN 60%</td>
+      <td>GN 90%</td>
+      <td>GO 60% to GO 90%</td>
+      <td>GO 60% to GN 60%</td>
+      <td>GO 90% to GN 90%</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>137 (26, 253)</td>
+      <td>261 (125, 407)</td>
+      <td>365 (215, 502)</td>
+      <td>517 (372, 655)</td>
+      <td>1.9</td>
+      <td>2.7</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>125 (17, 233)</td>
+      <td>240 (105, 375)</td>
+      <td>344 (206, 480)</td>
+      <td>500 (359, 642)</td>
+      <td>1.9</td>
+      <td>2.7</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>5 (base case)</td>
+      <td>107 (7, 214)</td>
+      <td>209 (81, 340)</td>
+      <td>302 (170, 437)</td>
+      <td>464 (328, 602)</td>
+      <td>2.0</td>
+      <td>2.8</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>80 (0, 182)</td>
+      <td>154 (33, 275)</td>
+      <td>226 (96, 358)</td>
+      <td>382 (240, 525)</td>
+      <td>1.9</td>
+      <td>2.8</td>
+      <td>2.5</td>
+    </tr>
+  </tbody>
+</table>
+
+### GN vaccination to enhance progress towards elimination of cervical cancer
 
 Subsequently, we assessed the feasibility of reaching the WHO elimination threshold for ASIR of cervical cancer under highlighted scenarios. Introducing GO vaccination with 60% coverage would have the lowest impact, reducing the nationwide ASIR of cervical cancer from 11 cases, which is the present level before the introduction of vaccination, to 4.7 (UI: 4.3, 5.1) cases per 100,000 woman-years in 100 years, but this remained above the WHO elimination threshold (Figure 3). The other highlighted scenarios enabled elimination to be reached within 55–62 years. Introducing GN vaccination with 60% coverage in both girls and boys would reduce incidence down to 2.8 (UI: 2.5, 3.2) cases per 100,000 woman-years, hence below the elimination threshold. The GO strategy with 90% coverage, as recommended by WHO, would also decrease incidence below the threshold to 2.4 (UI: 2.3, 2.6) cases per 100,000 woman-years. Lastly, given the already high vaccination coverage of 90% in girls, switching to the GN strategy would only marginally reduce incidence to 2.3 (UI: 2.2, 2.3) cases per 100,000 woman-years.
 
@@ -89,19 +223,19 @@ In conclusion, within the limitations of our model, the model-based estimates sh
 
 ## Materials and methods
 
-## Model
+### Model
 
 EpiMetHeos was used to simulate a dynamic sexual contact network, which allows long-term and overlapping partnerships, through which HPV infections were transmitted. Based on the impact of vaccination on high-risk HPV incidence derived from EpiMetHeos, Atlas was then used to derive the impact on cervical cancer burden.
 
 The models were previously calibrated to sexual behaviour, HPV prevalence, and/or (delete as appropriate) cervical cancer incidence in India to assess the impact of single-dose vaccination in India, while accounting for the uncertainty in the duration of vaccine protection (Man et al., 2022). Since the high-quality data on HPV prevalence and cervical cancer incidence data needed to calibrate the models to each Indian state were not available, we used a Footprinting framework to approximate the missing data and extrapolate the impact by state. In short, we first identified clusters of states with similar patterns of cervical cancer incidence. We then calibrated EpiMetHeos to the state of Tamil Nadu to represent the states in the high cancer incidence cluster, and the state of West Bengal to represent the states in the low cancer incidence cluster, using the available sexual behaviour and HPV prevalence data of these two states. Finally, we estimated the impacts for Tamil Nadu and West Bengal and extrapolated these to other states within each cluster. The model was calibrated for previous publications (Man et al., 2022; Man et al., 2023). See more details of the model in Appendix 1 sections ‘HPV transmission model’, ‘Model calibration’, and ‘Computation of the model outcomes’. This study adheres to HPV-FRAME, a quality framework for modelled evaluations of HPV-related cancer control (Reporting standard 1) (Canfell et al., 2019).
 
-## Simulation scenarios
+### Simulation scenarios
 
 Recently, marketing authorisation has been awarded to a locally produced quadrivalent HPV vaccine in India based on successful immunobridging between the new vaccine and the existing quadrivalent vaccine (Gardasil, MSD) (The Lancet Oncology, 2022). While it is still uncertain which HPV vaccine will be used in the Indian immunisation programme, we simulated vaccination with a quadrivalent vaccine targeting two high-risk types, HPV16 and HPV18 (and two low-risk types, HPV6 and HPV11). The efficacy estimates of the locally produced HPV vaccine were not available to us; hence, we based our model assumptions on the efficacy estimates of the IARC India vaccine trial, which considered Gardasil (Basu et al., 2021; Joshi et al., 2023). In this trial, no difference was found between the efficacy estimates of the single-dose and two-dose schedules, which were moreover stable after up to 10 years’ follow-up. Hence, we based the model on pooled efficacy estimates (95% efficacy for HPV16 and HPV18, 9% cross-protection for HPV 31, HPV33, and HPV45, and 0% efficacy for the remaining high-risk HPV types) and assumed no waning of vaccine immunity over time. In doing so, the modelled efficacy could represent vaccination under either a single-dose or two-dose schedule. Vaccine protection was modelled through an all-or-nothing working mechanism, that is, if the efficacy is X%, then X% of the vaccinated individuals in the model are fully protected and 100-X% fully not protected.
 
 To assess the resilience of different vaccination strategies on cervical cancer prevention, we simulated the above scenarios first without disruption of the HPV vaccination programme, and then with disruption occurring 10 years after the start of vaccination. As the base case, we simulated a disruption period of 5 years with total interruption of HPV vaccine delivery, that is, 0% vaccination coverage in both boys and girls. As sensitivity analyses, we considered less severe disruption with still 20% and 40% vaccination coverage in girls (but still 0% in boys), as well as shorter or longer durations of disruption of 1, 2, and 10 years, and no restart of vaccination. These sensitivity analyses were considered to represent different types of disruption attributable to a COVID-19 pandemic or to any other interference of the HPV vaccination programme.
 
-## Model outcomes
+### Model outcomes
 
 Estimates of the life-time number of cervical cancer cases prevented per 100,000 girls born were derived by cohort. The first 40 birth cohorts following the introduction of vaccination were considered to have estimates for both cohorts before and after the disruption period. The mean number of cases prevented across the first 10 vaccinated birth cohorts was used to evaluate the impact prior to the disruption. As a measure of resilience, we used the mean number of cases still prevented, as a result of previous HPV vaccination, across the birth cohorts with disruption. Considering such a metric of resilience allows us to evaluate whether any given strategy provides a sufficient level of protection retained during disruption as compared to a possible prefixed target level of protection. Estimates of resilience were compared between the highlighted scenarios A–D based on their ratio.
 

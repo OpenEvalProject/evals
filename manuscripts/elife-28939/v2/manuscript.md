@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.28939.001 Endothelial cells respond to different levels of fluid shear stress through adaptations of their mechanosensitivity. Currently, we lack a good understanding of how this contributes to sculpting of the cardiovascular system. Cerebral cavernous malformation (CCM) is an inherited vascular disease that occurs when a second somatic mutation causes a loss of CCM1/KRIT1, CCM2, or CCM3 proteins. Here, we demonstrate that zebrafish Krit1 regulates the formation of cardiac valves. Expression of heg1 , which encodes a binding partner of Krit1, is positively regulated by blood-flow. In turn, Heg1 stabilizes levels of Krit1 protein, and both Heg1 and Krit1 dampen expression levels of klf2a, a major mechanosensitive gene. Conversely, loss of Krit1 results in increased expression of klf2a and notch1b throughout the endocardium and prevents cardiac valve leaflet formation. Hence, the correct balance of blood-flow-dependent induction and Krit1 protein-mediated repression of klf2a and notch1b ultimately shapes cardiac valve leaflet morphology.
+Endothelial cells respond to different levels of fluid shear stress through adaptations of their mechanosensitivity. Currently, we lack a good understanding of how this contributes to sculpting of the cardiovascular system. Cerebral cavernous malformation (CCM) is an inherited vascular disease that occurs when a second somatic mutation causes a loss of CCM1/KRIT1, CCM2, or CCM3 proteins. Here, we demonstrate that zebrafish Krit1 regulates the formation of cardiac valves. Expression of heg1, which encodes a binding partner of Krit1, is positively regulated by blood-flow. In turn, Heg1 stabilizes levels of Krit1 protein, and both Heg1 and Krit1 dampen expression levels of klf2a, a major mechanosensitive gene. Conversely, loss of Krit1 results in increased expression of klf2a and notch1b throughout the endocardium and prevents cardiac valve leaflet formation. Hence, the correct balance of blood-flow-dependent induction and Krit1 protein-mediated repression of klf2a and notch1b ultimately shapes cardiac valve leaflet morphology.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ The developmental connection of Ccm proteins with the regulation of klf2a expres
 
 ## Results
 
-## Expression levels of heg1 mRNA are positively regulated by blood-flow and Klf2a/b
+### Expression levels of heg1 mRNA are positively regulated by blood-flow and Klf2a/b
 
 To test whether the regulation of heg1 or krit1 mRNAs responds to changes in blood-flow, we measured their expression levels using RT-qPCR in troponin T type 2a (tnnt2a) morphants that have a non-contractile heart and thus lack blood-flow (Sehnert et al., 2002). Under this condition, mRNA levels of heg1 but not of krit1 were significantly lower than in wild-type (WT) embryos at 54 hr post fertilization (hpf) (Figure 1A). Similarly, antisense oligonucleotide morpholino (MO)-mediated knockdown of Klf2a/b caused significant downregulation of heg1 mRNA. In comparison, the expression levels of krit1 mRNA were not significantly altered (Figure 1A). To test whether heg1 is positively regulated by Klf2a, we generated transgenic lines of zebrafish for heat-shock-mediated induction of klf2a [Tg(hsp70l:klf2a_IRES_EGFP)pbb22]. We found that overexpression of klf2a upon heat-shock at 48–50 hpf led to a significant upregulation of heg1 mRNA expression by 54–55 hpf (Figure 1B). However, the treatment did not significantly upregulate levels of krit1 mRNA.
 
@@ -40,25 +40,77 @@ It has previously been shown that heg1 is expressed within endocardium (Mably et
 
 As Heg1 and Krit1 proteins are known to interact in vitro (Kleaveland et al., 2009), we next tested whether Heg1 protein affects protein levels of its binding partner Krit1. To this end, we first generated a transgenic line of zebrafish for expression of EGFP-Krit1 [Tg(UAS:EGFP-krit1)pbb21]. Next, we analyzed the levels of EGFP-Krit1 protein in heg1 MO-injected embryos and found that they were significantly lower than in WT control embryos in the heart (Figure 1C–E) and the caudal vasculature at 30 hpf (Figure 1—figure supplement 2). Taken together, the levels of heg1 mRNA expression are positively regulated by blood-flow and Klf2a-dependent mechanotransduction. In turn, Heg1 has a stabilizing effect on Krit1 levels.
 
-## Overexpression of heg1 or krit1 mRNA dampens expression levels of klf2a mRNA
+### Overexpression of heg1 or krit1 mRNA dampens expression levels of klf2a mRNA
 
 A loss of Ccm proteins in zebrafish or mice results in higher levels of klf2 mRNA expression, suggesting that the physiological role of Ccm proteins is to modulate klf2 expression levels in response to blood-flow (Renz et al., 2015; Zhou et al., 2015, 2016). Given that levels of heg1 mRNA expression are affected by blood-flow, we explored whether upregulation of Heg1 or Krit1 would have an impact on endothelial mechanotransduction pathways. First, we injected heg1 mRNA at the one-cell stage and assessed klf2a mRNA levels at 24 and 48 hpf. At both times, high levels of heg1 mRNA correlated with significantly lower levels of klf2a expression (Figure 2A). Next, we tested whether overexpression of krit1 also downregulates levels of klf2a mRNA by using a transgenic line with heat-shock-inducible krit1 [Tg(hsp70l:krit1_IRES EGFP)md6]. Treatment with multiple heat-shocks at 14, 24, and 40 hpf resulted in significant downregulation of klf2a mRNA levels throughout the entire embryo at 48 hpf as determined by RT-qPCR (klf2a: fold change 0.63, p<0.05, n = 4 replicates; krit1: fold change 9.77, p<0.001, n = 4 replicates). Cardiac cushions formed normally after this treatment (Figure 2—figure supplement 1) and blood-flow was not affected as assessed by visual inspection (n > 100 embryos analyzed showed normal blood circulation). Hence, the forced upregulation of heg1 or krit1 dampens expression levels of klf2a mRNA. This finding suggests that the strength of the biomechanical forces resulting from blood-flow impacts the expression levels of Ccm proteins; this modulates mechanosensitive signaling within endothelial cells upstream of klf2a.
 
-## Krit1 and Ccm2 impact expression of the mechanosensitive Notch activity reporter Tg(TP1:VenusPEST)
+![Figure 1.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig1-v2.jpg)
+
+**Figure 1.:** (A) RT-qPCR quantifications of heg1 and krit1 mRNA levels at 54 hpf in morphant embryos lacking blood-flow [troponin T type 2a (tnnt2a)], or Krüppel like factors 2a and 2b (klf2a/b) compared with wild-type expression levels. (B) RT-qPCR quantification showing that heat-shock-induced overexpression of klf2a causes significant upregulation of heg1 but not of krit1 expression at 54 hpf. (C–E) Morpholino-mediated knockdown of Heg1 significantly reduces endocardial EGFP-Krit1 protein levels of 30 hpf Tg(fli:GAL4FF)ubs3; Tg(UAS:EGFP-Krit1)pbb21 embryos. Scale bars are 50 µm. Mean values ± SEM of three (tnnt2a MO, hs:klf2a, heg1 MO) or four (klf2a/b MO) individual experiments are shown. Ratio paired (A, B) or unpaired (E) t-test was used to compare each condition with controls (ns: not significant, *p<0.05, ***p<0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) At 30 hpf, heg1 is expressed throughout the entire endocardium. (B) Later, at 48 hpf, heg1 expression becomes restricted to high fluid shear stress regions of the endocardium including the atrioventricular canal (AVC). (C) The strong expression of heg1 at the AVC persists at 72 hpf. (D) Expression of heg1 was reduced in morphant embryos lacking blood-flow [troponin T type 2a (tnnt2a)] at 48 hpf. A: atrium, V: ventricle, OFT: outflow tract, arrowheads in B, C, and D point at the AVC.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Morpholino-mediated knockdown of Heg1 significantly reduces EGFP-Krit1 protein levels in the trunk vasculature of 30 hpf Tg(fli:GAL4FF)ubs3; Tg(UAS:EGFP-Krit1)pbb21 embryos. Scale bars are 50 µm. Mean values ± SEM of three individual experiments are shown. Unpaired t-test was used to compare conditions with control (****p<0.0001).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig2-v2.jpg)
+
+**Figure 2.:** (A) Correlation of high heg1 and low klf2a mRNA expression levels at 24 and 48 hpf as determined by RT-qPCR. (B–D) Projections of confocal z-stack images of 54 hpf hearts expressing the flow-responsive marker Tg(TP1:VenusPEST)s940 in heat-shocked wild-type (WT) (B), heat-shock- (hs) induced krit1 overexpression (C), and hs-induced ccm2 overexpression (D). (E) Different ratios of corrected total tissue fluorescence (CTTF) of atrial versus ventricular (+atrioventricular canal region (AVC), arrowhead) expression of the flow-responsive marker Tg(TP1:VenusPEST)s940 between 54 hpf WT and krit1-overexpressing hearts (n = 37) and WT and ccm2-overexpressing hearts (n = 39). krit1- or ccm2-overexpression results in more equal chamber expression of flow-responsive marker Tg(TP1:VenusPEST)s940 expression (depicted is a WT heart corresponding to the krit1-overexpression experiment). (F) Fold change of relative fluorescence (CTTF) in the AVC of Tg(TP1:VenusPEST)s940 in krit1- and ccm2- overexpressing hearts versus the corresponding controls. Scale bars are 50 µm. Mean values ± SEM are shown. Unpaired t-test was used to compare each condition with the WT (*p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) (A) Maximum projections of confocal z-stacks of 48 hpf heat-shocked wild-type (WT) embryo, (B) heat-shock-induced (hs) krit1 overexpressing embryo, and (C) hs-induced ccm2 overexpressing embryo. Myocardial cells and endocardial cushions are stained for Alcam (Magenta). Myocardial cells do not express the destabilized Notch reporter Tg(TP1:VenusPEST)s940 (yellow), which is expressed within endocardium and endocardial cushions. (A’–C’) Shown are projections of 3 confocal z-stack planes (1 μm each) of the same hearts as shown in (A–C). (A’’–C”’) Single confocal z-section images of the atrioventricular canal (AVC) region highlighted with a white square in the panels D-F. (A’’’–C’’’) Inverted images of Notch reporter shown in A’’-C’’ (asterisks mark endocardial cushion cells). Note dowregulation of Notch activity on Krit1 and Ccm2 overexpression (B, C, B’–C’’’). The morphology of endocardial cushions remains unaltered on krit1 and ccm2 overexpression at this stage (B’’–C’’). A: atrium, V: ventricle, arrowheads point at the AVC. Scale bars are 50 µm in A-F and 10 µm in D’-F’’.
+
+### Krit1 and Ccm2 impact expression of the mechanosensitive Notch activity reporter Tg(TP1:VenusPEST)
 
 To further assess the physiological effects of altered levels of CCM proteins for endocardial patterning, we analyzed expression levels of the transgenic line Tg(TP1:VenusPEST)s940, which expresses destabilized Venus protein in regions of strong Notch activity (Ninov et al., 2012). In zebrafish, notch1b is a blood-flow-responsive gene that is highly expressed at cardiac cushions (Vermot et al., 2009). By 54 hpf, the expression of Tg(TP1:VenusPEST)s940 is restricted to the ventricular chamber and is particularly strong within the AVC region (Figure 2B). To induce upregulation of krit1 or ccm2, Tg(hsp70l:krit1_IRES EGFP)md6 or Tg(hsp70l:ccm2_IRES EGFP)md12 embryos were treated with multiple heat-shocks at 14, 24, 40, and 48 hpf. On krit1 or ccm2 overexpression, and consistent with a dampening of blood-flow responses, expression from the Tg(TP1:VenusPEST)s940 reporter was generally weakened and was not restricted to the ventricle and AVC region at 54 hpf (Figure 2B–F; Figure 2—figure supplement 1). Hence, overexpression of krit1 or ccm2 affects the expression levels and pattern of the Tg(TP1:VenusPEST)s940 reporter, which is responsive to blood-flow within the heart. Notably, the expression of this Notch reporter was exclusively endocardial in all of these experimental conditions (Figure 2—figure supplement 1). This result suggests that endocardial cells become desensitized to blood-flow-induced mechanosensitive signaling when krit1 or ccm2 are overexpressed.
 
-## Krit1 is required for generation of abluminal cell fates during valvulogenesis
+### Krit1 is required for generation of abluminal cell fates during valvulogenesis
 
 Given the strong involvement of Ccm proteins in mechanotransduction pathways, we next explored whether they have a developmental role during remodeling of cardiac cushions into valve leaflets, a morphogenetic process that is highly sensitive to the biomechanical stimulus of blood-flow (Beis et al., 2005; Pestel et al., 2016; Scherz et al., 2008; Steed et al., 2016; Vermot et al., 2009). Previously, it was not possible to address such a potential developmental role as zebrafish ccm mutant endocardial cells fail to form cardiac cushions [Figure 3B; (Renz et al., 2015). This is in contrast to WT endocardial cushion cells that acquire cuboidal shapes at 48 hpf and express activated leukocyte cell adhesion molecule (Alcam) (Figure 3A; Beis et al., 2005). To elucidate whether CCM proteins play a role in this process, we performed a rescue experiment by injecting mRNA encoding EGFP-Krit1 into krit1ty219c mutants, which rescued the cardiovascular defects associated with the loss of Krit1 at 48 hpf (Figure 3C, Figure 3—figure supplement 1). Zebrafish ccm mutants have increased endocardial cell numbers by 48 hpf (Renz et al., 2015). To determine whether injection of mRNA encoding EGFP-Krit1 into krit1ty219c mutants could rescue endocardial cell numbers, we compared ventricular endocardial cell numbers of WT and krit1ty219c rescued embryos at 48 and 55 hpf (Figure 3—figure supplement 2). Consistent with the strong rescue of the krit1ty219c mutant phenotype at 48 hpf, the number of ventricular endocardial cells was normal at this stage. However, by 55 hpf, ventricular endocardial cell numbers had increased beyond those in WT, which suggests that at this stage the krit1ty219c mutant phenotype becomes expressed again. To assay whether the re-appearance of a late krit1ty219c mutant phenotype correlated with decreasing egfp-krit1 mRNA levels, we monitored krit1 mRNA levels over time using RT-qPCR. Indeed, WT embryos injected with egfp-krit1 mRNA showed a significant decrease of krit1 mRNA levels between 24 and 96 hpf (Figure 3—figure supplement 3). This result is consistent with recurrence of the krit1ty219c mutant phenotype at 55 hpf.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig3-v2.jpg)
+
+**Figure 3.:** (A–F) Single confocal z-section images of endocardial cells within the atrioventricular canal (AVC) region marked by Tg(kdrl:EGFP)s843 expression (cyan) and Alcam staining (magenta). (A) At 48 hpf, wild-type (WT) endocardial cushion cells express Alcam (asterisks). (B) In krit1ty219c mutants, endocardial cells of the AVC region do not express Alcam and cushions do not form (arrow). (C) Injection of egfp-krit1 mRNA rescues cardiac cushion formation in krit1ty219c mutants (n = 15/15). krit1ty219c mutant hearts form cardiac cushions and endocardial cushion cells express Alcam. (D) By 96 hpf, Alcam expression is mainly restricted to luminal endocardial cells of the developing WT cardiac valve leaflet (asterisks). (E) krit1ty219c mutants do not form valve leaflets but AVC endocardial cells express Alcam (asterisks). (F) krit1ty219c mutant that was initially rescued by egfp-krit1 mRNA injection has a dysmorphic cardiac valve leaflet at 96 hpf with an agglomeration of luminal Alcam-positive cells (asterisks). (G–L) Whole-mount in situ hybridization of klf2a cardiac expression. (G) At 54 hpf, klf2a expression is restricted to endocardial cells of the AVC in WT while (H) klf2a is strongly expressed throughout the entire endocardium in krit1ty219c mutant. (I) krit1ty219c mutant rescued by injection of egfp-krit1 mRNA has a restricted and strong klf2a expression at the AVC (n = 6/6). (J) By 96 hpf, klf2a expression is restricted to the AVC in WT while (K) klf2a is strongly expressed throughout the entire endocardium in krit1ty219c mutants. (L) krit1ty219c mutant embryo injected with egfp-krit1 mRNA has high klf2a levels throughout the entire endocardium (n = 8/8). A: atrium, V: ventricle, L: luminal, AL: abluminal. Scale bars are 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Projections of confocal z-stack images of (A) 48 hpf wild-type (WT), (B) krit1ty219c mutant, and (C) rescued krit1ty219c mutant hearts marked by Tg(kdrl:EGFP)s843 expression. In comparison to WT, krit1ty219c mutant hearts are dilated and lack the atrioventricular canal (AVC) (red arrowhead). (C) Injection of egfp-krit1 mRNA into krit1ty219c mutants rescues the krit1ty219c mutant cardiac phenotype (n = 82/82 krit1ty219c mutant embryos rescued). (D–F) Projections of confocal z-stack images of 48 hpf caudal plexus regions of the vasculature marked by Tg(kdrl:EGFP)s843 expression. (D) In comparison to the highly branched WT morphology of the caudal vein plexus (red asterisks), (E) the krit1ty219c mutant vasculature has a fused morphology. (F) Injection of egfp-krit1 mRNA into krit1ty219c mutants rescues the krit1ty219c mutant vascular phenotype including a highly branched WT-like caudal vein plexus (red asterisks). A: atrium, V: ventricle. Scale bars are 50 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Quantification of ventricular endocardial cell numbers reveals normal numbers in rescued krit1ty219c mutants by 48 hpf. At 55 hpf, ventricular endocardial cell numbers in krit1ty219c mutants injected with mRNA encoding EGFP-Krit1 increase considerably compared to wild-type (WT). Mean values ± SEM are shown. ns: not significant, *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Significant decrease of krit1 levels from 24 to 48 hpf and from 48 to 96 hpf as determined by RT-qPCR. Mean values ± SEM are shown. ns: not significant, *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A–C) Projections of confocal z-stack images of 96 hpf embryonic hearts marked by Cadherin 5 (Cdh5) staining. (A’–C’’’) Details are shown in single confocal plane sections of the atrioventricular canal (AVC) region (boxes) of superior cardiac valve leaflets of 96 hpf hearts marked by Tg(kdrl:EGFP)s843 expression (cyan), Cdh5 staining (yellow), and Alcam staining (magenta). (A’–A’’’) At 96 hpf, Alcam and Cdh5 expression is mainly restricted to luminal endocardial cells of the developing wild-type (WT) cardiac valve leaflet (asterisks). (B’–B’’’) krit1ty219c mutants do not form valve leaflets and endocardial cells express Alcam and Cdh5 (asterisks). (C’–C’’’) Injection of egfp-krit1 mRNA into krit1ty219c mutants results in a dysmorphic cardiac valve leaflet at 96 hpf with an agglomeration of luminal leaflet cells marked by Alcam and Cdh5 expression (asterisks) (n = 17/23 krit1ty219c mutants). A: atrium, V: ventricle, L: luminal, AL: abluminal. Scale bars are 50 μm (A–C) and 20 µm (A’–C’’’).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Details of a single confocal plane section of the atrioventricular canal (AVC) region of superior cardiac valve leaflet. A group of krit1ty219c mutants injected with egfp-krit1 mRNA showing a normal distribution of Alcam (magenta) positive luminal endocardial cells by 96 hpf (n = 6/23 krit1ty219c mutants). A: atrium, V: ventricle, L: luminal, AL: abluminal. Scale bars are 10 µm.
+
 During the stage at which cardiac cushions form, we selected egfp-krit1 mRNA injected krit1ty219c mutant embryos with normal blood-flow and found that they had developed normal endocardial cushions by 48 hpf (Figure 3C). Next, we analyzed whether these rescued krit1ty219c mutant embryos would revert to a mutant cardiovascular phenotype by 96 hpf, a point at which endocardial cushions have been transformed via complex cellular rearrangements into double-layered valve leaflets (Beis et al., 2005; Pestel et al., 2016; Scherz et al., 2008; Steed et al., 2016). In WT, those endocardial cells that face the luminal side of the valve leaflet and are exposed to the strongest shear stress, express high levels of klf2a (Steed et al., 2016) and can be identified by strong Alcam (Figure 3D) and Cdh5 expression (Steed et al., 2016) (Figure 3—figure supplement 4A’–A’’’). In comparison, endocardial cells on the abluminal side of the valve leaflet have lower levels of klf2a, (Steed et al., 2016) and Alcam (Figure 3D) and Cdh5 are only weakly expressed in abluminal cells (Figure 3—figure supplement 4A’–A’’’). This is in tune with the more mesenchymal identity ascribed to this endocardial cell population (Pestel et al., 2016; Steed et al., 2016). We found that krit1ty219c mutant embryos with a cardiac rescue that were exposed to normal blood-flow at 48 hpf, developed strongly dysmorphic valve leaflets by 96 hpf (n = 17/23 krit1ty219c mutant embryos). At that stage, most mutants had valve leaflet endocardial cells on the abluminal sides that strongly expressed high levels of Alcam similar to luminal klf2a-positive cells in WT (Figure 3F; n = 17/23 krit1ty219c mutant embryos). In addition, Cdh5 colocalized with Alcam on the abluminal side of dysmorphic valve leaflets (Figure 3—figure supplement 4C’–C’’’). This phenotype corresponded with an agglomeration of endocardial cushion cells with characteristics of luminal cells. We ruled out that the observed phenotype resulted from an egfp-krit1 overexpression effect because krit1 mRNA levels in these rescued embryos had decreased to a basal level of expression by 96 hpf (Figure 3—figure supplement 3). In tune with this observation, untreated krit1ty219c mutants express high levels of Cdh5 throughout the entire endocardium at 96 hpf (Figure 3—figure supplement 4B–B’’’) and Alcam is expressed at high levels within the AVC region (Figure 3E, Figure 3—figure supplement 4B’–B’’’). Only few krit1ty219c mutant embryos had a normal distribution of Alcam-positive luminal endocardial cells by 96 hpf, a phenotype more similar to WT (n = 6/23 krit1ty219c mutant embryos; Figure 3—figure supplement 5). Taken together, the loss of Krit1 mostly resulted in a failure of endocardial cells to acquire mesenchymal-like fates and to generate an abluminal population of valve leaflet cells.
 
-## Krit1 dampens klf2a expression and Notch activation during cardiac valve morphogenesis
+### Krit1 dampens klf2a expression and Notch activation during cardiac valve morphogenesis
 
 Ingression of abluminal cells from cardiac cushions has been associated with a bias in klf2a expression levels: whereas some endocardial cushion cells express high levels of klf2a and contribute to the luminal part of the valve leaflet, others express lower levels of klf2a which correlates with a mesenchymal-like morphology and their contribution to the abluminal portion of the valve leaflet (Steed et al., 2016). Our findings suggest that elevated levels of klf2a mRNA are the cause for defects in valve leaflet morphogenesis. To assess klf2a expression in rescued krit1ty219c mutant hearts, we used whole-mount in situ hybridization. By 54 hpf, klf2a was strongly expressed within cardiac cushions at the AVC, whereas in other regions of the endocardium expression levels were lower or undetectable (Figure 3G). In krit1ty219c mutants, klf2a was strongly expressed throughout the entire endocardium and was not restricted to the AVC (Figure 3H). At 54 hpf, in krit1ty219c mutant embryos that were rescued by injection of mRNA encoding EGFP-Krit1, the expression of klf2a had a normal pattern with a localized strong expression at the AVC cushions (n = 6/6) (Figure 3I). However, by 96 hpf, the expression of klf2a was not restricted to the AVC and outflow tract regions of the endocardium as in WT (Figure 3J) but had reverted to wide and strong expressionpresent throughout the entire endocardium (n = 8/8) (Figure 3L).
 
 klf2a is a regulator of notch1b expression at cardiac cushions (Vermot et al., 2009). In addition, several studies have demonstrated that the reduction of CCM protein levels is associated with decreased Notch activity in human endothelial cells (Wüstehube et al., 2010; You et al., 2013). Hence, changes in Notch activity may contribute to defective cardiac valve leaflet morphogenesis in ccm mutants. To address this question, we first assessed notch1b expression by whole-mount in situ hybridization. At 48 hpf, notch1b was strongly expressed within high shear stress regions including the AVC of the WT heart (Figure 4A). In contrast, notch1b was expressed throughout the entire endocardium in krit1ty219c mutant embryos (Figure 4B). Next, we characterized Notch signaling activity using the Tg(TP1:VenusPEST)s940 reporter. In WT, Notch activity was in a mosaic pattern within endocardial cushions and a few cushion cells neighboring the ventricle were consistently downregulating Notch activity (Figure 4C’; n > 30 embryos analyzed). Those cells lacking Notch activity were in positions that have been shown to initiate endocardial sprouting behaviors and to contribute to formation of the abluminal portion of the cardiac valve leaflets (Steed et al., 2016). In striking contrast, in ccm2m201 and krit1ty219c mutants, Notch reporter expression was expanded throughout large regions of the endocardium (Figure 4D, Figure 4—figure supplement 1B), and was especially active within all endocardial cells at the AVC region which demonstrated that a singling-out process and downregulation of Notch signaling among few cushions cells did not occur (Figure 4D’; n > 30 embryos analyzed). In comparison, the expression of tbx2b, another AVC marker gene (Sedletcaia and Evans, 2011), was not expanded in ccm2m201 mutants (Figure 4—figure supplement 1C–D). Hence, expansion of notch1b expression domain in ccm2m201 or krit1ty219c mutants is not a result of regional expansion of the AVC. Taken together, our findings suggest a critical role for Krit1 in modulating expression levels of klf2a and for Notch signaling among endocardial cushion cells which may control endocardial sprouting during the formation of cardiac valve leaflets.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Whole-mount in situ hybridization of notch1b cardiac expression at 48 hpf. (A) notch1b expression is restricted to endocardial cells of the atrioventricular canal (AVC) in wild-type (WT), while notch1b is strongly expressed throughout all ventricular cells in krit1ty219c mutants (B). (C, D) Projections of single confocal z-section images of endocardial cells marked by Tg(TP1:VenusPEST)s940 expression (yellow) and Alcam staining (magenta) at 54 hpf. (C) In WT, Notch activity is highest in endocardial cells of the AVC and outflow regions. (C’) Single confocal plane section of the AVC (white box in C) reveals that some endocardial cells close to the ventricle lack Notch activity (asterisks). (D) In ccm2m201 mutants, the domain of high Notch activity is expanded to most ventricular endocardial cells. (D’) Single confocal plane section of the AVC region (box in D, arrow) shows high Notch expression in all endocardial cells of the AVC region. A: atrium, V: ventricle, Scale bars are 50 μm (C, D), and 10 µm (C’, D’).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28939/elife-28939-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Projections of confocal z-stack images of embryonic hearts marked by Tg(TP1:VenusPEST)s940 expression (yellow), Myh6 staining (cyan), and Actin staining (magenta) at 54 hpf. (A) In wild-type (WT), Notch activity is highest in endocardial cells of the atrioventricular canal (AVC) and outflow regions. (B) In krit1ty219c mutants, the domain of high Notch activity is expanded to ventricular and atrial endocardial cells. (C, D) Whole-mount in situ hybridization of tbx2 cardiac expression at 48 hpf. (A) Tbx2 expression is restricted to the atrioventricular canal (AVC) both in wild-type (WT) and in ccm2m201 mutants (B). Arrowheads point at the AVC. A: atrium, V: ventricle, Scale bars are 50 μm (A, B).
 
 ## Discussion
 
@@ -74,15 +126,480 @@ Taken together, our findings uncover crucial roles of Heg1 and Krit1 in controll
 
 ## Materials and methods
 
-## Zebrafish genetics and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (heg1)</td>
+      <td>heg1</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENE-040714–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (krit1)</td>
+      <td>krit1</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENE-030131–555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (klf2a)</td>
+      <td>klf2a</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENE-011109–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (klf2b)</td>
+      <td>klf2b</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENE-011109–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (tnnt2a)</td>
+      <td>tnnt2a</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENE-000626–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (ccm2)</td>
+      <td>ccm2</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENE-040712–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (notch1b)</td>
+      <td>notch1b</td>
+      <td>ZFIN</td>
+      <td>ZFIN ID: ZDB-GENE-990415–183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (krit1ty219c)</td>
+      <td>krit1ty219c</td>
+      <td>DOI:10.1242/dev.02469</td>
+      <td>ZFIN ID: ZDB-ALT-980203–1289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (ccm2m201)</td>
+      <td>ccm2m201</td>
+      <td>PMID:9007227</td>
+      <td>ZFIN ID: ZDB-ALT-980203–523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Tg(EPV.Tp1-Mmu.Hbb: Venus-Mmu.Odc1)s940)</td>
+      <td>Tg(EPV.Tp1-Mmu.Hbb: Venus-Mmu.Odc1)s940</td>
+      <td>DOI:10.1242/dev.076000</td>
+      <td>ZFIN ID: ZDB-ALT-120419–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Tg(kdrl:EGFP)s843)</td>
+      <td>Tg(kdrl:EGFP)s843</td>
+      <td>DOI:10.1242/dev.02087</td>
+      <td>ZFIN ID: ZDB-ALT-050916–14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Tg(fli1a:GAL4FF)ubs3)</td>
+      <td>Tg(fli1a:GAL4FF)ubs3</td>
+      <td>DOI:10.1016/j.cub. 2011.10.016</td>
+      <td>ZFIN ID: ZDB-ALT-120113–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Tg(hsp70l:Krit1_IRES_EGFP)md6)</td>
+      <td>Tg(hsp70l: Krit1_IRES_EGFP)md6</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Tg(hsp70l:Ccm2_IRES_EGFP)md12)</td>
+      <td>Tg(hsp70l: Ccm2_IRES_EGFP)md12</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Tg(hsp70l:Klf2a_IRES_EGFP)pbb22)</td>
+      <td>Tg(hsp70l: Klf2a_IRES_EGFP)pbb22</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Tg(UAS:EGFP-Krit1, cryaa:EGFP)pbb21)</td>
+      <td>Tg(UAS:EGFP-Krit1, cryaa:EGFP)pbb21</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (tnnt2a morpholino)</td>
+      <td>tnnt2a MO</td>
+      <td>DOI:10.1038/ng875</td>
+      <td>ZFIN ID: ZDB-MRPHLNO-060317–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (klf2a morpholino)</td>
+      <td>klf2a MO</td>
+      <td>DOI:10.1038/nature08889</td>
+      <td>ZFIN ID: ZDB-MRPHLNO-100610–9</td>
+      <td>2 ng/embryo</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (klf2b morpholino)</td>
+      <td>klf2b MO</td>
+      <td>DOI:10.1016/j.devcel. 2014.12.016</td>
+      <td>ZFIN ID: ZDB-MRPHLNO-150427–1</td>
+      <td>1 ng/embryo</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (heg1 morpholino)</td>
+      <td>heg1 MO</td>
+      <td>PMID:14680629</td>
+      <td>ZFIN ID: ZDB-MRPHLNO-080714–5</td>
+      <td>5 ng/embryo</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (klf2a probe)</td>
+      <td>klf2a</td>
+      <td>DOI:10.1016/j.devcel. 2014.12.016</td>
+      <td>ZFIN ID: ZDB-FIG-150407–1</td>
+      <td>5 ng/embryo</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (notch1b probe)</td>
+      <td>notch1b</td>
+      <td>DOI:10.1126/science. 293.5535.1670</td>
+      <td>ZFIN ID: ZDB-FIG-151113–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (heg1 probe)</td>
+      <td>heg1</td>
+      <td>DOI: 10.1242/dev.143362</td>
+      <td>ZFIN ID: ZDB-PUB-031217–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (tbx2 probe)</td>
+      <td>tbx2</td>
+      <td>DOI: 10.1002/dvdy.22622</td>
+      <td>ZFIN ID: ZDB-PUB-110502–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit anti-VE- Cadherin (Cdh5))</td>
+      <td>Cdh5</td>
+      <td>DOI:10.1016/j.ydbio. 2008.01.038</td>
+      <td>ZFIN ID: ZDB-PUB-080326–18</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse anti-Zn-8/Alcam)</td>
+      <td>Alcam</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>ZFIN ID: ZDB-ATB-081002–22</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse anti-Myh6)</td>
+      <td>Myh6</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>ZFIN ID: ZDB-ATB-081002–54</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody (Alexa Fluor 633-conjugated goat anti-rabbit)</td>
+      <td>Alexa Fluor 633- conjugated goat anti-rabbit</td>
+      <td>Invitrogen A21070</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rhodamine Red- X-conjugated goat anti-mouse)</td>
+      <td>Rhodamine Red- X- conjugated goat anti-mouse</td>
+      <td>Jackson ImmunoResearch Laboratories 115-295-003</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (Dylight 649- conjugated goat anti-mouse)</td>
+      <td>Dylight 649- conjugated goat anti-mouse</td>
+      <td>Jackson ImmunoResearch Laboratories 115-495-003</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (pDestTol2 (#426))</td>
+      <td>pDestTol2</td>
+      <td>N. Lawson</td>
+      <td>Lawson Lab: #426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p5E-hsp70l (#222))</td>
+      <td>p5E-hsp70l</td>
+      <td>N. Lawson</td>
+      <td>Lawson Lab: #222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p5E-CMV/SP6 (#382))</td>
+      <td>p5E-CMV/SP6</td>
+      <td>Chien, Univ. Utah</td>
+      <td>Tol2kit: #382</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p5E-UAS (#327))</td>
+      <td>p5E-UAS</td>
+      <td>Chien, Univ. Utah</td>
+      <td>Tol2kit: #327</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p3E-IRES_EGFPpA (#389))</td>
+      <td>p3E-IRES_EGFPpA</td>
+      <td>N. Lawson</td>
+      <td>Lawson Lab: #389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p3E-cryaa:EGFPpA)</td>
+      <td>p3E-cryaa:EGFPpA</td>
+      <td>other</td>
+      <td></td>
+      <td>plasmid was generated in our lab</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p3E-EGFPpA (#366))</td>
+      <td>p3E-EGFPpA</td>
+      <td>Chien, Univ. Utah</td>
+      <td>Tol2kit: #366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p3E-pA (#383))</td>
+      <td>p3E-pA</td>
+      <td>Chien, Univ. Utah</td>
+      <td>Tol2kit: #383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (pDest_Tol2pA_Hsp70l: Krit1_IRES_EGFPpA)</td>
+      <td>pDest_Tol2pA_Hsp70l: Krit1_IRES_EGFPpA</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (pDest_Tol2pA_Hsp70l: Ccm2_IRES_EGFPpA)</td>
+      <td>pDest_Tol2pA_Hsp70l: Ccm2_IRES_EGFPpA</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (p3E-pA (pDest_Tol2pA_ Hsp70l:Klf2a_IRES_EGFPpA)</td>
+      <td>pDest_Tol2pA_Hsp70l: Klf2a_IRES_EGFPpA</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (pDest_Tol2pA_UAS: EGFP-Krit1pA,cryaa:EGFPpA)</td>
+      <td>pDest_Tol2pA_UAS: EGFP-Krit1pA,cryaa:EGFPpA</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent (pDest_Tol2pA_CMV/SP6: EGFP-Krit1pA)</td>
+      <td>pDest_Tol2pA_CMV/SP6: EGFP-Krit1pA</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer heg1 FW)</td>
+      <td>heg1 FW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer heg1 RW)</td>
+      <td>heg1 RW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer krit1 FW)</td>
+      <td>krit1 FW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer krit1 RW)</td>
+      <td>krit1 RW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer klf2a FW)</td>
+      <td>klf2a FW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer klf2a RW)</td>
+      <td>klf2a RW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer eif1b FW)</td>
+      <td>eif1b FW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent (qPCR-primer eif1b RW)</td>
+      <td>eif1b RW</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit (SP6 polymerase (mMessage Machine kit, Ambion))</td>
+      <td>SP6 polymerase</td>
+      <td>Ambion</td>
+      <td>Ambion:AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit (RevertAid H Minus First Strand cDNA Synthesis kit (ThermoFisher Scientific))</td>
+      <td>RevertAid H Minus First Strand cDNA Synthesis kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific:K1631</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit (KAPA Sybr Fast qPCR kit (Peqlab))</td>
+      <td>KAPA Sybr Fast qPCR kit</td>
+      <td>Peglab</td>
+      <td>Peglab:4385612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (1- phenyl-2-thiourea (PTU))</td>
+      <td>PTU</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich:P7629</td>
+      <td>0.003%</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Rhodamine-Phalloidin)</td>
+      <td>Rhodamine-Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:R415</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Tricaine (3-amino benzoic acidethylester))</td>
+      <td>Tricaine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma Aldrich:A-5040</td>
+      <td>0.16 mg/ml</td>
+    </tr>
+    <tr>
+      <td>software, algorithm (GraphPad Prism6)</td>
+      <td>GraphPad Prism6</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Imaris (Bitplane, Version 8.1))</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Fiji software)</td>
+      <td>Fiji</td>
+      <td>DOI:10.1038/nmeth.2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Adobe Bridge and Photoshop (Adobe Systems))</td>
+      <td>Adobe Bridge and Photoshop</td>
+      <td>Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Zen 8.1 Software (Zeiss))</td>
+      <td>Zen</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Excel 2010 (Microsoft Office))</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (PikoReal software 2.2 (ThermoFisher Scientific))</td>
+      <td>PikoReal software</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish genetics and maintenance
 
 Handling of zebrafish was done in compliance with German and Brandenburg state law, carefully monitored by the local authority for animal protection (LUVG, Brandenburg, Germany; Animal protocol #2347-18-2015). The following strains of zebrafish were maintained under standard conditions as previously described (Westerfield et al., 1997): krit1ty219c (Mably et al., 2006), ccm2m201 (Driever et al., 1996), Tg(EPV.Tp1-Mmu.Hbb:Venus-Mmu.Odc1)s940 [here referred to as Tg(TP1:VenusPEST)s940] (Ninov et al., 2012), Tg(kdrl:EGFP)s843 (Jin et al., 2005), Tg(fli1a:GAL4FF)ubs3 (Herwig et al., 2011). Some embryos were treated with 1-phenyl-2-thiourea (PTU) (Sigma Aldrich) prior to the appearance of pigmentation.
 
-## Morpholino injections
+### Morpholino injections
 
 The following morpholinos were used: tnnt2a (5’-CATGTTTGCTCTGATCTGACACGCA-3’) (2 ng/embryo) (Sehnert et al., 2002), klf2a (5’-CTCGCCTATGAAAGAAGAGAGGATT-3’) (1 ng/embryo) (Nicoli et al., 2010), klf2b (5’-AAAGGCAAGGTAAAGCCATGTCCAC-3’) (5 ng/embryo) (Renz et al., 2015), heg1 (5’-GTAATCGTACTTGCAGCAGGTGACA-3’) (5 ng/embryo) (Mably et al., 2003).
 
-## Molecular cloning
+### Molecular cloning
 
 The open reading frames of zebrafish krit1 (NM_001317001), klf2a (NM_131856), and ccm2 (NM_001002315) were amplified by PCR and cloned into the Gateway pDONR221 vector (referred to as pME-krit1, pME-klf2a, and pME-ccm2, respectively). To generate the krit1 fusion plasmids, EGFP was fused in the N-terminal site of krit1 (pME-EGFP-krit1).
 
@@ -100,7 +617,7 @@ pDest_Tol2pA_UAS:EGFP-Krit1pA,cryaa:EGFPpA,
 
 pDest_Tol2pA_CMV/SP6:EGFP-Krit1pA.
 
-## Generation of transgenic lines of zebrafish
+### Generation of transgenic lines of zebrafish
 
 Transformation plasmids (25 pg/embryo) were co-injected together with mRNA encoding Tol2 transposase (50 pg/embryo) into one-cell-stage zebrafish embryos. Several independent transgenic lines were established for each construct. In functional tests and localization studies, these independent lines resulted in comparable phenotypes. One transgene for each construct was selected for further analyses:
 
@@ -112,78 +629,630 @@ Tg(hsp70l:Klf2a_IRES_EGFP)pbb22
 
 Tg(UAS:EGFP-Krit1,cryaa:EGFP)pbb21 [here referred to as Tg(UAS:EGFP-Krit1)pbb21]
 
-## Heat-shock experiments
+### Heat-shock experiments
 
 To assess levels of klf2a mRNA following krit1 overexpression, Tg(hsp70l:Krit1_IRES_EGFP)md6 was crossed to wild-type and the resulting embryos were heat-shocked at 14 hpf (30 min at 37°C), at 24 hpf (40 min at 38°C), and at 40 hpf (45 min at 38°C). Alternatively, for the experiment shown in Figure 2C,D, embryos obtained from Tg(hsp70l:Krit1_IRES_EGFP)md6 or Tg(hsp70l:Ccm2_IRES_EGFP)md12 crossed to Tg(TP1:VenusPEST)s940 were additionally heat-shocked at 48 hpf (45 min at 38°C). For the experiment shown in Figure 1B, Tg(hsp70l:Klf2a_IRES_EGFP)pbb22 were crossed to wild-type and the resulting embryos were heat-shocked at 48 hpf (45 min at 38°C).
 
-## mRNA injection experiments
+### mRNA injection experiments
 
 Capped mRNA encoding EGFP-Krit1 or Heg1 was synthesized using SP6 polymerase (mMessage Machine kit, Ambion). For rescue experiments, 150 pg of egfp-krit1 mRNA was injected into one-cell-stage zebrafish embryos. Embryos were selected for EGFP fluorescence at 6 hpf and the genotype was assessed by sequencing. For heg1 overexpression, 100 pg of heg1 mRNA was injected into one-cell-stage zebrafish embryos.
 
-## Statistical analysis of the efficiency of mRNA rescue experiments
+### Statistical analysis of the efficiency of mRNA rescue experiments
 
 Statistical analysis of the efficiency of egfp-krit1 mRNA rescue experiments (as shown in Figure 3—figure supplement 1) was done using GraphPad Prism6 (Student’s t-test, p=0.008 and p=0.005, respectively).
 
-Unpaired t-testMean diff.SummaryIndividual P value48 hpf egfp-krit1 mRNAWT vs. krit1100.0****<0.0001WT vs. WT + egfp-krit1 mRNA0.0ns>0.9999WT vs. krit1 + egfp-krit1 mRNA28***0.0004
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Unpaired t-test</th>
+      <th>Mean diff.</th>
+      <th>Summary</th>
+      <th>Individual P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">48 hpf egfp-krit1 mRNA</td>
+      <td>WT vs. krit1</td>
+      <td>100.0</td>
+      <td>****</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>WT vs. WT + egfp-krit1 mRNA</td>
+      <td>0.0</td>
+      <td>ns</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>WT vs. krit1 + egfp-krit1 mRNA</td>
+      <td>28</td>
+      <td>***</td>
+      <td>0.0004</td>
+    </tr>
+  </tbody>
+</table>
 
 Statistical analysis of the rescue efficiency of egfp-krit1 mRNA injection into krit1ty219c mutant embryos was based on the presence of blood-flow at 48 hpf for all embryos, and at 96 hpf for those embryos that had blood-flow at 48hpf. The percentages of embryos with blood-flow was recorded for three individual experiments and compared with GraphPad Prism6, using a 2way ANOVA with Multiple comparisons without correction.
 
-48 hpfNumber of WT with blood-flow/totalNumber of krit1ty219c with blood-flow/totalNumber ofWT + egfp-krit1 mRNA with blood-flow/totalNumber ofkrit1ty219c + egfp-krit1 mRNA with blood-flow/total15/50/332/3215/15278/780/1740/4042/42369/690/2621/2111/11
+<table>
+  <thead>
+    <tr>
+      <th>48 hpf</th>
+      <th>Number of WT with blood-flow/total</th>
+      <th>Number of krit1ty219c with blood-flow/total</th>
+      <th>Number ofWT + egfp-krit1 mRNA with blood-flow/total</th>
+      <th>Number ofkrit1ty219c + egfp-krit1 mRNA with blood-flow/total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>5/5</td>
+      <td>0/3</td>
+      <td>32/32</td>
+      <td>15/15</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>78/78</td>
+      <td>0/17</td>
+      <td>40/40</td>
+      <td>42/42</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>69/69</td>
+      <td>0/26</td>
+      <td>21/21</td>
+      <td>11/11</td>
+    </tr>
+  </tbody>
+</table>
 
-96 hpfNumber of WT with blood-flow at 48 hpf and 96 hpf/totalNumber of krit1ty219c with blood-flow at 48 hpf and 96 hpf/totalNumber of WT + egfp- krit1 mRNA withblood-flow at 48 hpf and 96 hpf/totalNumber ofkrit1ty219c + egfp-krit1 mRNA with blood-flowat 48 hpf and 96hpf/total167/670/2859/595/22270/700/1120/211/11357/570/1330/307/18
+<table>
+  <thead>
+    <tr>
+      <th>96 hpf</th>
+      <th>Number of WT with blood-flow at 48 hpf and 96 hpf/total</th>
+      <th>Number of krit1ty219c with blood-flow at 48 hpf and 96 hpf/total</th>
+      <th>Number of WT + egfp- krit1 mRNA withblood-flow at 48 hpf and 96 hpf/total</th>
+      <th>Number ofkrit1ty219c + egfp-krit1 mRNA with blood-flowat 48 hpf and 96hpf/total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>67/67</td>
+      <td>0/28</td>
+      <td>59/59</td>
+      <td>5/22</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>70/70</td>
+      <td>0/11</td>
+      <td>20/21</td>
+      <td>1/11</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>57/57</td>
+      <td>0/13</td>
+      <td>30/30</td>
+      <td>7/18</td>
+    </tr>
+  </tbody>
+</table>
 
-Within each row, compare columns (simple effects within rows)Uncorrected Fisher's LSDMean diff.SummaryIndividual P value48 hpfWT vs. krit1100.0****<0.0001WT vs. WT + egfp-krit1 mRNA0.0ns>0.9999WT vs. krit1 + egfp-krit1 mRNA0.0ns>0.999996 hpfWT vs. krit1100.0****<0.0001WT vs. WT + egfp-krit1 mRNA1.590ns0.7212WT vs. krit1 + egfp-krit1 mRNA76.44****<0.0001
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="4">Within each row, compare columns (simple effects within rows)</th>
+    </tr>
+    <tr>
+      <th>Uncorrected Fisher's LSD</th>
+      <th>Mean diff.</th>
+      <th>Summary</th>
+      <th>Individual P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">48 hpf</td>
+      <td>WT vs. krit1</td>
+      <td>100.0</td>
+      <td>****</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>WT vs. WT + egfp-krit1 mRNA</td>
+      <td>0.0</td>
+      <td>ns</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>WT vs. krit1 + egfp-krit1 mRNA</td>
+      <td>0.0</td>
+      <td>ns</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td rowspan="3">96 hpf</td>
+      <td>WT vs. krit1</td>
+      <td>100.0</td>
+      <td>****</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>WT vs. WT + egfp-krit1 mRNA</td>
+      <td>1.590</td>
+      <td>ns</td>
+      <td>0.7212</td>
+    </tr>
+    <tr>
+      <td>WT vs. krit1 + egfp-krit1 mRNA</td>
+      <td>76.44</td>
+      <td>****</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
 
-## Quantifications of ventricular endocardial cell numbers
+### Quantifications of ventricular endocardial cell numbers
 
 Endocardial cell numbers of the ventricles at 48 hpf and 55 hpf of WT and krit1ty219c mutants were quantified as previously shown (Renz et al., 2015). Nuclei were visualized by Tg(kdrl:GFP)s843 expression and were counted within the ventricle (for endocardium). Cell numbers are shown as means with SEM. Prism 6 (GraphPad) was used to perform an unpaired t-test (Figure 3—figure supplement 2). Means are significantly different when p<0.05.
 
-48 hpfnAverage cell numberSEMp-valueWT668±2.3620.5723krit1 + egfp-krit1 mRNA665±3.572
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="3">48 hpf</td>
+      <td></td>
+      <td>n</td>
+      <td>Average cell number</td>
+      <td>SEM</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>6</td>
+      <td>68</td>
+      <td>±2.362</td>
+      <td rowspan="2">0.5723</td>
+    </tr>
+    <tr>
+      <td>krit1 + egfp-krit1 mRNA</td>
+      <td>6</td>
+      <td>65</td>
+      <td>±3.572</td>
+    </tr>
+  </tbody>
+</table>
 
-55 hpfnAverage cell numberSEMp-valueWT378±2.0280.0093krit1 + egfp-krit1 mRNA3112±7.024
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="3">55 hpf</td>
+      <td></td>
+      <td>n</td>
+      <td>Average cell number</td>
+      <td>SEM</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>3</td>
+      <td>78</td>
+      <td>±2.028</td>
+      <td rowspan="2">0.0093</td>
+    </tr>
+    <tr>
+      <td>krit1 + egfp-krit1 mRNA</td>
+      <td>3</td>
+      <td>112</td>
+      <td>±7.024</td>
+    </tr>
+  </tbody>
+</table>
 
-## Whole-mount immunohistochemistry and in situ hybridization
+### Whole-mount immunohistochemistry and in situ hybridization
 
 Zebrafish whole-mount immunohistochemistry was performed on 30 hpf, 48 hpf, 54 hpf, and 96 hpf embryos as previously described (Renz et al., 2015). The following antibodies were used: rabbit anti-VE-Cadherin (Cdh5) (1:200, a kind donation from Markus Affolter, Basel) (Blum et al., 2008), mouse anti-Zn-8/Alcam (1:25, Developmental Studies Hybridoma Bank), and mouse anti-Myh6 (1:10, Developmental Studies Hybridoma Bank, S46). Secondary antibodies were Alexa Fluor 633-conjugated goat anti-rabbit (1:200, Invitrogen A21070), Rhodamine Red-X-conjugated goat anti-mouse (1:200, Jackson ImmunoResearch Laboratories 115-295-003), and Dylight 649-conjugated goat anti-mouse (1:200, Jackson ImmunoResearch Laboratories 115-495-003). Rhodamine-Phalloidin (1:250, Invitrogen R415) was incubated together with secondary antibodies. For Cdh5 antibody staining, embryos were fixed with 2% PFA overnight and permeabilized with PBST with 0.5% Triton X-100 for 1 hr and subsequently incubated with primary antibody diluted in PBST with 0.2% Triton X-100, 1% BSA, and 5% NGS. All specimens were mounted in SlowFade Gold (Invitrogen S36936). Images were recorded on LSM 710, or LSM 780 confocal microscopes (Zeiss) and processed with Imaris (Bitplane, Version 8.1) or Fiji software (Schindelin et al., 2012).
 
 Whole-mount in situ hybridization experiments were performed as previously described (Jowett and Lettice, 1994). For all experiments embryos were fixed overnight with 4% PFA. For Figures 3G–L, 54 hpf and 96 hpf embryos were stained with a klf2a probe previously published (Renz et al., 2015). For Figures 4A–B, 48 hpf embryos were stained with a notch1b probe previously published (Walsh and Stainier, 2001) (the plasmid was a kind gift from Didier Stainier). For Figure 1—figure supplements 1, 30 hpf and 48 hpf embryos were stained with a heg1 probe previously published (Münch et al., 2017). For Figure 4—figure supplements 1C–D, 48 hpf embryos were stained with a tbx2b probe (Sedletcaia and Evans, 2011). Images were recorded with 10x or 20x objectives on an Axioskop (Zeiss) with an EOS 5 D Mark III (Canon) camera, and processed using Adobe Bridge and Photoshop (Adobe Systems).
 
-## Live imaging
+### Live imaging
 
 Embryos were dechorionated manually and embedded in 1% low melting agarose (Lonza 50081) containing 0.16 mg/ml Tricaine (3-amino benzoic acidethylester, Sigma-Aldrich A-5040). Images were recorded with a LSM 710 confocal microscope (Zeiss) at 10x.
 
-## Ratiometric corrected total tissue fluorescence (CTTF) image analysis
+### Ratiometric corrected total tissue fluorescence (CTTF) image analysis
 
 The ratiometric measurements of Tg(TP1:VenusPEST)s940 fluorescence in atrium versus ventricle and AVC of the embryonic heart (Figure 2E) was done as previously described (McCloy et al., 2014). As overexpression of krit1 also resulted in an upregulation of EGFP, the overlap of EGFP with Tg(TP1:VenusPEST)s940 fluorescence was safely separated into two different channels by recording the images using the online fingerprinting function of the Zen 8.1 Software (Zeiss). Images were acquired maintaining fixed recording settings. From a 3D confocal image, the z-portion corresponding to the entire heart was selected. Regions of single z-planes corresponding to atrium or to ventricle plus the AVC were selected and fluorescence was measured until entire hearts were covered. The corrected total tissue fluorescence [CTTF = integrated density – (area of selected tissue x mean fluorescence of background readings)] was calculated using Excel 2010 (Microsoft Office). Next, all CTTF values collected for atrium as well as for ventricle plus AVC of each heart were averaged. The mean of atrium CTTF values was divided by the mean of ventricle plus AVC CTTF values. A mean value of 1 corresponds to an equal expression of Tg(TP1:VenusPEST)s940 in both heart chambers. All measurements and tissue selection were performed using Fiji software (Schindelin et al., 2012). Statistical analysis was done with Excel 2010 (Microsoft Office) using an unpaired t-test (n: number of hearts analyzed, hs: heat-shock, *p<0.05, **p<0.01).
 
-nRatio TP1:VenusPEST Atrium/Ventricle (CTTF)SEMpWT190.213±0.0240.0005hs:Krit1180.418±0.048
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n</th>
+      <th>Ratio TP1:VenusPEST Atrium/Ventricle (CTTF)</th>
+      <th>SEM</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>19</td>
+      <td>0.213</td>
+      <td>±0.024</td>
+      <td rowspan="2">0.0005</td>
+    </tr>
+    <tr>
+      <td>hs:Krit1</td>
+      <td>18</td>
+      <td>0.418</td>
+      <td>±0.048</td>
+    </tr>
+  </tbody>
+</table>
 
-nRatio TP1:VenusPEST Atrium/Ventricle (CTTF)SEMpWT190.290±0.0400.0261hs:Ccm2200.428±0.044
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n</th>
+      <th>Ratio TP1:VenusPEST Atrium/Ventricle (CTTF)</th>
+      <th>SEM</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>19</td>
+      <td>0.290</td>
+      <td>±0.040</td>
+      <td rowspan="2">0.0261</td>
+    </tr>
+    <tr>
+      <td>hs:Ccm2</td>
+      <td>20</td>
+      <td>0.428</td>
+      <td>±0.044</td>
+    </tr>
+  </tbody>
+</table>
 
 To quantify the fluorescent levels of Tg(TP1:VenusPEST)s940 in the AVC of WT (heat-shock control) (Figure 2F), hs:Krit1 and hs:Ccm2, a section of 20 µm corresponding to the entire AVC was selected from a maximum projection of confocal z-stacks of the AVC. The CTTF value of each AVC was measured and all the values were divided by the average CTTF of the controls for normalization.
 
-nCTTF meanSEMpWT191.000±0.1210.0426hs:Krit1190.671±0.099
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n</th>
+      <th>CTTF mean</th>
+      <th>SEM</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>19</td>
+      <td>1.000</td>
+      <td>±0.121</td>
+      <td rowspan="2">0.0426</td>
+    </tr>
+    <tr>
+      <td>hs:Krit1</td>
+      <td>19</td>
+      <td>0.671</td>
+      <td>±0.099</td>
+    </tr>
+  </tbody>
+</table>
 
-nCTTF meanSEMpWT191.000±0.0590.0481hs:Ccm2200.798±0.078
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n</th>
+      <th>CTTF mean</th>
+      <th>SEM</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>19</td>
+      <td>1.000</td>
+      <td>±0.059</td>
+      <td rowspan="2">0.0481</td>
+    </tr>
+    <tr>
+      <td>hs:Ccm2</td>
+      <td>20</td>
+      <td>0.798</td>
+      <td>±0.078</td>
+    </tr>
+  </tbody>
+</table>
 
 To quantify the fluorescent levels of EGFP-Krit1 in WT and heg1 morphants, maximum projections of confocal z-stacks of manually extracted 30 hpf hearts (Figure 1C–E) or of the caudal plexus region (Figure 1—figure supplement 2) were used. The background intensity was measured in five different areas of each image. To measure the caudal plexus region, an area between two intersegmental vessels from the most dorsal to the most ventral side of the caudal plexus was selected. This was repeated in three different areas for each embryo. All measurements and tissue selection were performed using Fiji software (Schindelin et al., 2012). The CTTF was calculated using Excel 2010 (Microsoft Office). All the values were divided by the average intensity of the controls.
 
-nCTTF mean heartsSEMPEGFP-Krit1 levels WT51.000±0.074≤0.0005EGFP-Krit1 levels heg1 MO100.600±0.049
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n</th>
+      <th>CTTF mean hearts</th>
+      <th>SEM</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EGFP-Krit1 levels WT</td>
+      <td>5</td>
+      <td>1.000</td>
+      <td>±0.074</td>
+      <td rowspan="2">≤0.0005</td>
+    </tr>
+    <tr>
+      <td>EGFP-Krit1 levels heg1 MO</td>
+      <td>10</td>
+      <td>0.600</td>
+      <td>±0.049</td>
+    </tr>
+  </tbody>
+</table>
 
-nCTTF mean caudal plexus regionSEMpEGFP-Krit1 levels WT51.000±0.081<0.0001EGFP-Krit1 levels heg1 MO50.305±0.059
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n</th>
+      <th>CTTF mean caudal plexus region</th>
+      <th>SEM</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EGFP-Krit1 levels WT</td>
+      <td>5</td>
+      <td>1.000</td>
+      <td>±0.081</td>
+      <td rowspan="2">&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>EGFP-Krit1 levels heg1 MO</td>
+      <td>5</td>
+      <td>0.305</td>
+      <td>±0.059</td>
+    </tr>
+  </tbody>
+</table>
 
-## Quantifications of mRNA expression by RT-qPCR
+### Quantifications of mRNA expression by RT-qPCR
 
 For RT-qPCR experiments, 25 zebrafish embryos were pooled for each condition (three biological replicates). For heat-shock conditions, controls of each biological replicate were composed of heat-shocked siblings from the same clutch lacking EGFP expression. Total RNA was extracted with Trizol (Sigma) and Phase Lock Gel Heavy tubes (1.5 mL, Prime 5) and the corresponding cDNA was synthesized from total RNA with the RevertAid H Minus First Strand cDNA Synthesis kit (ThermoFisher Scientific). RT-qPCR experiments were performed as described (Renz et al., 2015) using 18 ng cDNA per technical replicate and the KAPA Sybr Fast qPCR kit (Peqlab) on a PikoReal 96 Real-Time PCR System (ThermoFisher Scientific). Cycle threshold (Ct) values were determined by PikoReal software 2.2 (ThermoFisher Scientific). eif1b was used as a housekeeping gene.
 
 The following primers were used for qRT-PCR:
 
-TargetSequence 5’−3’heg1Fw _ GCTCTTATTGTCACCTGCTGC Rv _ CGGATAGATGCAGGAATGCCkrit1Fw _ GTCTGAGCACTAGTGAGGGTG Rv _ GACCTGTCCTGTGAAAAACGCklf2aFw _ CTGGGAGAACAGGTGGAAGGA Rv _ CCAGTATAAACTCCAGATCCAGGeif1bFw _ CAGAACCTCCAGTCCTTTGATC Rv _ GCAGGCAAATTTCTTTTTGAAGGC
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Sequence 5’−3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>heg1</td>
+      <td>Fw _ GCTCTTATTGTCACCTGCTGC Rv _ CGGATAGATGCAGGAATGCC</td>
+    </tr>
+    <tr>
+      <td>krit1</td>
+      <td>Fw _ GTCTGAGCACTAGTGAGGGTG Rv _ GACCTGTCCTGTGAAAAACGC</td>
+    </tr>
+    <tr>
+      <td>klf2a</td>
+      <td>Fw _ CTGGGAGAACAGGTGGAAGGA Rv _ CCAGTATAAACTCCAGATCCAGG</td>
+    </tr>
+    <tr>
+      <td>eif1b</td>
+      <td>Fw _ CAGAACCTCCAGTCCTTTGATC Rv _ GCAGGCAAATTTCTTTTTGAAGGC</td>
+    </tr>
+  </tbody>
+</table>
 
 Results were analyzed using the comparative threshold cycle method (2–ΔΔCt) to compare gene expression levels between samples as previously described (Livak and Schmittgen, 2001). As an internal reference, we used zebrafish eif1b (Renz et al., 2015). Control sample values were normalized to 1. In the table below, the mean of the fold changes and the corresponding SEM of each biological replicate after normalization is shown. As each single biological replicate represents an independent experiment from an independent clutch of embryos, ratio paired t-tests were done with Prism 6 (GraphPad) (Stg: developmental stage of zebrafish embryos at RNA extraction, n: number of independent biological replicates analyzed, *p<0.05, **p<0.01, hs: heat-shock, mean >1 corresponds with target upregulation; mean <1 represents target downregulation).
 
-TreatmentStg (hpf)nheg1krit1klf2aMeanSEMpMeanSEMpMeanSEMptnnt2a MO5430.850.0080.0131.060.0090.103---klf2a/b MO5440.770.0340.0451.170.0290.103---hs:Klf2a5432.560.0890.0441.380.0610.151---hs:Krit1484---9.770.0630.0010.630.0590.044heg1 mRNA2434.010.0590.0095---0.310.1070.04heg1 mRNA4832.470.0360.0082---0.680.0230.019egfp-krit1 mRNA243---7.060.1250.021---egfp-krit1 mRNA483---3.240.0530.011---egfp-krit1 mRNA963---1.200.1610.675---
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Treatment</th>
+      <th rowspan="2">Stg (hpf)</th>
+      <th rowspan="2">n</th>
+      <th colspan="3">heg1</th>
+      <th colspan="3">krit1</th>
+      <th colspan="3">klf2a</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>SEM</th>
+      <th>p</th>
+      <th>Mean</th>
+      <th>SEM</th>
+      <th>p</th>
+      <th>Mean</th>
+      <th>SEM</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tnnt2a MO</td>
+      <td>54</td>
+      <td>3</td>
+      <td>0.85</td>
+      <td>0.008</td>
+      <td>0.013</td>
+      <td>1.06</td>
+      <td>0.009</td>
+      <td>0.103</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>klf2a/b MO</td>
+      <td>54</td>
+      <td>4</td>
+      <td>0.77</td>
+      <td>0.034</td>
+      <td>0.045</td>
+      <td>1.17</td>
+      <td>0.029</td>
+      <td>0.103</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>hs:Klf2a</td>
+      <td>54</td>
+      <td>3</td>
+      <td>2.56</td>
+      <td>0.089</td>
+      <td>0.044</td>
+      <td>1.38</td>
+      <td>0.061</td>
+      <td>0.151</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>hs:Krit1</td>
+      <td>48</td>
+      <td>4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>9.77</td>
+      <td>0.063</td>
+      <td>0.001</td>
+      <td>0.63</td>
+      <td>0.059</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>heg1 mRNA</td>
+      <td>24</td>
+      <td>3</td>
+      <td>4.01</td>
+      <td>0.059</td>
+      <td>0.0095</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.31</td>
+      <td>0.107</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>heg1 mRNA</td>
+      <td>48</td>
+      <td>3</td>
+      <td>2.47</td>
+      <td>0.036</td>
+      <td>0.0082</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.68</td>
+      <td>0.023</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>egfp-krit1 mRNA</td>
+      <td>24</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>7.06</td>
+      <td>0.125</td>
+      <td>0.021</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>egfp-krit1 mRNA</td>
+      <td>48</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3.24</td>
+      <td>0.053</td>
+      <td>0.011</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>egfp-krit1 mRNA</td>
+      <td>96</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1.20</td>
+      <td>0.161</td>
+      <td>0.675</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 To prove that differences in average values of krit1 mRNA levels between 24 hpf and 48 hpf, 48 hpf and 96 hpf, 24 hpf and 96 hpf were significant, a ratio paired t-test was performed, as in each single biological replicate, embryos of 24, 48, and 96 hpf were from the same clutches. The mean of the ratio indicated in the table below is always between 1 and 0, and this accounts for target downregulation.
 
-Compared stages (hpf)Mean of the ratioSEMp24–480.4594±0.0820.02748–960.3691±0.1100.02924–960.1696±01070.009
+<table>
+  <thead>
+    <tr>
+      <th>Compared stages (hpf)</th>
+      <th>Mean of the ratio</th>
+      <th>SEM</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>24–48</td>
+      <td>0.4594</td>
+      <td>±0.082</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>48–96</td>
+      <td>0.3691</td>
+      <td>±0.110</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>24–96</td>
+      <td>0.1696</td>
+      <td>±0107</td>
+      <td>0.009</td>
+    </tr>
+  </tbody>
+</table>

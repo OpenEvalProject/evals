@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Neurobiology, Howard Hughes Medical Institute, Stanford University Stanford United States
-2. https://ror.org/00f54p054 Neurosciences Program, Stanford University Stanford United States
-3. https://ror.org/05rrcem69 Center for Neuroscience, Department of Neurobiology, Physiology, and Behavior, University of California, Davis Davis United States
+1. Department of Neurobiology, Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Neurosciences Program, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Center for Neuroscience, Department of Neurobiology, Physiology, and Behavior, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -32,7 +32,7 @@ We assessed the capacity of high-density Neuropixels probes to identify function
 
 ## Results
 
-## Identifying functional interactions within single columns of visual cortex
+### Identifying functional interactions within single columns of visual cortex
 
 The activity of V1 neurons was recorded in two anesthetized macaque monkeys (M1, M2) using high-density, multi-contact Neuropixels probes (version 3A; IMEC Inc, Belgium; Figure 1a; Methods). Each probe consisted of 986 contacts (12 mm x 12 mm, 20 µm spacing) distributed across 10 mm, of which 384 contacts could be simultaneously selected for recording. Probes were inserted into the lateral operculum of V1 with the aid of a surgical microscope at angles nearly perpendicular to the cortical surface. The dense spacing between electrode contacts provided multiple measurements of the waveforms from individual neurons (mean = 4.52 measurements) (Figure 1a and b) and facilitated the isolation of large numbers of single neurons. In each of the 5 experimental sessions (3 in M1, 2 in M2), we measured the visual responses of 115–221 simultaneously recorded neurons to drifting gratings presented at varying orientations (total = 802 neurons). As expected, neurons were highly orientation selective, and exhibited both simple and complex cell properties (De Valois et al., 1982; Hubel and Wiesel, 1962; Hubel and Wiesel, 1968; Figure 1b). The ratio of simple to complex neurons, respectively, was 1:2.4; 236/802 neurons were simple, and 566/802 neurons were complex. As in previous studies (Briggs et al., 2013; Hembrook-Short et al., 2019; Jia et al., 2013; Kohn and Smith, 2005; Siegle et al., 2021; Smith and Kohn, 2008; Zandvakili and Kohn, 2015), we used the visually driven spike trains to measure crosscorrelations between simultaneously recorded neuronal pairs.
 
@@ -42,21 +42,59 @@ The activity of V1 neurons was recorded in two anesthetized macaque monkeys (M1,
 
 To estimate the functional interactions between pairs of neurons recorded simultaneously within columns of V1, we computed cross-correlograms (CCGs) using the 802 visually responsive neurons recorded across sessions. CCGs were computed from the spike trains of 68,579 pairs of simultaneously recorded neurons (6,555–24,310 pairs/session, Methods). Each CCG was normalized by the firing rate (FR) and jitter-corrected to mitigate the influences of FR (Bair et al., 2001; Mastronarde, 1983) and correlated slow fluctuations (Harrison and Geman, 2009; Smith and Kohn, 2008), respectively, yielding a corrected CCG (Figure 1c). In addition, as in previous studies, we considered a CCG significant only if its peak occurred within 10ms of zero time lag, and if that peak was >7 standard deviations above the mean of the noise distribution (Siegle et al., 2021). Using these criteria, a total of 10,246 significant CCGs were obtained from all recording sessions (Figure 1d), with each session yielding 755–3,022 significant CCGs. The peak lag of each CCG, defined as the differences between zero and the time when the peak occurred, estimates the synchrony and/or direction of functional interactions between neuronal pairs; whereas the peak efficacy measures the strength of interactions (Figure 1e).
 
-## Variation in the synchrony and strength of functional interactions within cortical columns
+### Variation in the synchrony and strength of functional interactions within cortical columns
 
 A number of previous studies using low-channel count probes or chronically implanted electrode arrays have shown that correlated activity in primate V1 declines with the horizontal distance separating pairs of neurons (Krüger and Aiple, 1988; Maldonado et al., 2000; Smith and Kohn, 2008) (see also Chu et al., 2014). Evidence from these studies suggest that correlations are greatest for pairs of neurons located within the same column, and diminish with greater columnar distance. Other evidence shows variation in the spike timing correlations between neuronal pairs located within different laminar compartments (Smith et al., 2013). However, considerably less is known about how the nature of correlations varies across the depth of individual columns where the degree of shared input and connectivity is at its highest. We therefore leveraged the large numbers of significantly correlated pairs obtained from high-density recordings to examine how the synchrony and strength of correlations depended on the vertical distance separating neurons within V1 columns. Figure 2a shows data from an example recording session in which 221 visually responsive neurons were recorded and 2,453 significantly correlated pairs were obtained. All neurons are shown along the ~2 mm depth of cortex. Shown also are two example correlated pairs whose CCGs are shown in Figure 1e. Of the two pairs, the vertical distance separating neurons in one pair was 138 µm greater than that of the other. In spite of this small difference, the CCG of the closer pair was both more synchronous and stronger than the more distant pair. This pattern of results was observed across all significantly correlated pairs and in all sessions (Figure 2b–c; Figure 2—figure supplements 1–2). The synchrony of correlated spiking diminished several fold across neuronal pair distance. This change could be fit with a linear function (r=0.42; p<10–5) in which the (absolute) peak lag increased at a rate of 1.3 ms / 500 µm of vertical distance. Peak efficacy of the significant CCGs also depended heavily on pair distance. This effect could be fit with an exponential decay function (r=–0.34; p<10–5) in which the peak efficacy decreased by half within 154 µm. Thus, both measures of functional interactions depended heavily on the vertical distance separating neuronal pairs. In addition, we confirmed that the effects of vertical distance on both the synchrony and strength of CCGs were independent of whether neuronal pairs were located within the same or different cortical layers (Figure 2—figure supplement 3).
 
-## Dependence of synchrony and strength of functional interactions on tuning similarity
+![Figure 2.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig2-v2.jpg)
+
+**Figure 2.:** (a) Example session (M1, session 3) with 221 visually responsive neurons recorded simultaneously and their locations across cortical depth. (Horizontal axis is magnified for visualization). Cortical depth 0 denotes the boundary between Layer 4c and Layer 5. Laminar boundaries were determined using histological data and current-source-density (CSD) profile for each session (Methods). Two example correlated pairs from Figure 1e with varied CCGs are shown in color (blue-yellow pair and pink-red pair corresponding to Figure 1e top and bottom, respectively). (b) Linear dependence of synchrony on vertical pair distance. (c) Strength of CCGs decay with greater pair distance. In b and c, all significantly correlated pairs from all sessions are combined and each dot denotes the mean peak lag or median peak efficacy of significantly correlated CCGs within a (10% quantile) vertical distance bin. Error bars denote 95% confidence intervals. Black lines denote the linear and exponential fits in b and c, respectively; slope (b) and decay constant (λ) are shown. Red lines and bar plots show marginal distributions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Linear dependence of synchrony on vertical pair distance for each of the 5 sessions (a–e). Plots follow the conventions used in Figure 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Peak efficacy of CCGs decays with greater pair distance in each of the 5 sessions (a–e). Plots follow the conventions used in Figure 2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a–b) Linear dependence of CCG peak lag on the distance between neurons for pairs of neurons composed of two neurons in the same layer of V1 (a) or two neurons in different layers of V1 (b). (c–d) Peak efficacy of CCGs decays with greater pair distance in pairs of neurons composed of two neurons in the same layer (c) and different layers (d). Plots follow the conventions used in Figure 2.
+
+### Dependence of synchrony and strength of functional interactions on tuning similarity
 
 In addition to the dependence of correlated activity on the distance between neuronal pairs, many studies have shown that greater functional and synaptic connectivity typically occurs between neurons with similar stimulus preferences (Chu et al., 2014; Constantinidis et al., 2001; Cossell et al., 2015; DeAngelis et al., 1999; Denman and Contreras, 2014; Funahashi and Inoue, 2000; Lee et al., 2016; Ts’o et al., 1986) (but see Das and Gilbert, 1999; Maldonado et al., 2000). Within primate V1, stimulus selectivity is notably similar for neurons within the same column, particularly for orientation selectivity (Blasdel and Salama, 1986; Hubel and Wiesel, 1968; Hubel and Wiesel, 1974; Ts’o et al., 1990), and this was evident in our recording sessions, where the peak visual responses were largely aligned at the same stimulus orientation across cortical depth (Figure 3a). We considered that within orientation columns, functional interactions could be homogenous for populations of similarly tuned neurons. Alternatively, it could be that even small variations in tuning similarity could result in robust differences in the synchrony and strength of correlated activity. To address this, we examined the dependence of synchrony and strength on the similarity of visual properties of neurons within the same cortical column. As in previous studies (Shadlen and Newsome, 1998; Zohary et al., 1994), we quantified tuning similarity by computing signal correlations (rori) for each neuronal pair (Methods). Across the total number of neuronal pairs (N=68,579), the mean rori was 0.25. For the significantly correlated neuronal pairs, the mean rori was 0.33. Signal correlations for the two previous example neuronal pairs are shown in Figure 3b. The responses of both pairs are positively correlated, yet that correlation is much higher in the second, more proximal, pair (Figure 2a) and the one with a more synchronous and stronger CCG (Figure 1e). Overall, we found that both the peak lag and peak efficacy of CCGs for significantly correlated neuronal pairs varied monotonically with tuning similarity across the range of signal correlations (Figure 3c and d). Neuronal pairs with the highest signal correlations exhibited half the peak lags and twice the peak efficacies of uncorrelated pairs. This pattern was observed in each of the individual recording sessions (Figure 3—figure supplements 1–2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig3-v2.jpg)
+
+**Figure 3.:** (a) Heat map of visual responses across drift directions of oriented gratings and across cortical depth. The response tuning of each of 802 neurons was aligned to the overall preferred orientation shared by neurons recorded from the same session, and all sessions were combined. (b) Signal correlation between exemplar neurons. Left, Scatter plot of normalized responses to different stimulus orientations (n=36) for the two example pairs shown in Figure 1e and Figure 2a. Signal correlations (rori) are also shown. Right, each neuron’s orientation tuning curve. (c) Linear dependence of synchrony on the corresponding signal correlation. (d) Linear dependence of CCG strength on the corresponding signal correlation. (e) Difference in peak lag of distance-matched CCGs was negatively correlated with difference in signal correlation. (f) Difference in peak efficacy of distance-matched CCGs was positively correlated with difference in signal correlation. In c-f, all significantly correlated pairs from all sessions are combined and each dot denotes mean peak lag or median peak efficacy of significantly correlated CCGs within a (10% quantile) signal correlation bin. Error bars denote 95% confidence intervals. Black lines denote linear fits; slopes (b) are shown. Red lines and bar plots show marginal distributions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Linear dependence of synchrony on tuning similarity in each of the 5 sessions (a–e). Plots follow the conventions used in Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Peak efficacy of CCGs is positively correlated with tuning similarity in each of the 5 sessions (a–e). Plots follow the conventions used in Figure 3.
+
 We considered that the apparent relationship between the synchrony and strength of functional interactions and signal correlation might result indirectly from a collinear effect of vertical distance on CCGs (Figure 2). To address this, we examined differences in the peak lags and peak efficacies of CCGs between combinations of two neuronal pairs separated by comparable cortical distances. Specifically, we sorted all significantly correlated CCGs by their vertical distances, and then examined whether differences in signal correlations (rori) among adjacently sorted (distance-matched) pairs were still associated with differences in CCG peak lags and peak efficacies (Methods). Indeed, we found that the differences in peak lags of distance-matched CCGs were negatively correlated with signal correlation (Figure 3e) and the differences in peak efficacies of distance-matched CCGs were positively correlated with signal correlation (Figure 3f). These results indicate that signal correlations within the column predicted both the synchrony and strength of functional interactions independent of vertical pair distance. Nonetheless, the distance-matched correlations (Figure 3e–f) were smaller than their corresponding unmatched correlations (Figure 3c–d), suggesting that the vertical distance between neurons and their orientation signal correlations exhibit distinct, but overlapping, effects on the timing and strength of functional interactions within a single cortical column.
 
-To quantify the distinct contributions of vertical pair distance and orientation signal correlation to the synchrony and strength of CCGs, we fit GLMs to predict CCG peak lag and peak efficacy using pair distance and signal correlation as predictors (Methods). Predictors were standardized (z-scored) so that their relative effects could be compared, and peak outliers (1.5*IQR criterion) were removed. The resulting regression equations were:peaklag=2.48+0.94×pairdist.−0.37×roripeakefficacy=0.018−0.0017×pairdist.+0.0029×rori
+To quantify the distinct contributions of vertical pair distance and orientation signal correlation to the synchrony and strength of CCGs, we fit GLMs to predict CCG peak lag and peak efficacy using pair distance and signal correlation as predictors (Methods). Predictors were standardized (z-scored) so that their relative effects could be compared, and peak outliers (1.5*IQR criterion) were removed. The resulting regression equations were:
 
-Regressions explained 19% of variance in peak lag (R2=0.191) and 20% of variance in peak efficacy (R2=0.195). Because predictors were standardized, the regression coefficients capture the change in peak lag/efficacy associated with a 1 standard deviation (SD) increase in pair distance/signal correlation. In the regression predicting CCG peak lag, a 1 SD increase in pair distance was associated with a 0.94ms increase in peak lag whereas a 1 SD increase in signal correlation was associated with a 0.37ms decrease in peak lag. Thus, for CCG peak lag, the coefficient of pair distance was nearly three times the coefficient of signal correlation. In contrast, for CCG peak efficacy, the coefficient of signal correlation was nearly twice that of pair distance. Thus, whereas signal correlation was less predictive of CCG peak lag, it was more predictive of CCG peak efficacy than pair distance.
+$$
+peaklag=2.48+0.94\timespairdist.−0.37\timesr_{ori}
+$$
 
-## Classification of functional interactions
+
+
+$$
+peakefficacy=0.018−0.0017\timespairdist.+0.0029\timesr_{ori}
+$$
+
+Regressions explained 19% of variance in peak lag ($R^{2}=0.191$) and 20% of variance in peak efficacy ($R^{2}=0.195$). Because predictors were standardized, the regression coefficients capture the change in peak lag/efficacy associated with a 1 standard deviation (SD) increase in pair distance/signal correlation. In the regression predicting CCG peak lag, a 1 SD increase in pair distance was associated with a 0.94ms increase in peak lag whereas a 1 SD increase in signal correlation was associated with a 0.37ms decrease in peak lag. Thus, for CCG peak lag, the coefficient of pair distance was nearly three times the coefficient of signal correlation. In contrast, for CCG peak efficacy, the coefficient of signal correlation was nearly twice that of pair distance. Thus, whereas signal correlation was less predictive of CCG peak lag, it was more predictive of CCG peak efficacy than pair distance.
+
+### Classification of functional interactions
 
 CCG peak lags and peak efficacies are often the parameters of interest in cross correlations (Briggs et al., 2013; Hembrook-Short et al., 2019; Smith and Kohn, 2008), yet they are simplifications of the more complex, underlying crosscorrelation functions. The shape of these correlation functions may offer additional insights into the distinct types and properties of functional interactions present among neurons within a network. Several theoretical studies have suggested a correspondence between CCG shape and underlying pairwise connectivity (Aertsen and Gerstein, 1985; Melssen and Epping, 1987) that can be further influenced by overall network structure and background noise (Ostojic et al., 2009). For example, synchronous CCGs tend to correspond to pairs of neurons that receive input from a common source, while asynchronous CCGs tend to correspond to pairs that have direct synaptic connections (Ostojic et al., 2009). Moreover, synchronous CCGs with narrow peaks and synchronous CCGs with broad peaks may correspond to pairs of neurons that receive input from common sources with shorter and longer autocorrelation timescales, respectively (Ostojic et al., 2009). Experimental studies have corroborated these findings and identified similar CCG shapes in different cortical regions and species (Alonso and Martinez, 1998; Constantinidis et al., 2001; Hembrook-Short et al., 2019; Siegle et al., 2021). However, the distribution of these CCG shapes within a single cortical column remains unknown. Furthermore, whether that distribution within V1 corroborates other evidence about the functional and/or anatomical relationships among V1 laminae and cell types remains unclear.
 
@@ -64,19 +102,86 @@ To address these questions, we clustered the entire population of CCGs, taking a
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig4-v2.jpg)
 
-**Figure 4.:** (a) Explained variance (left) and silhouette score (right) as a function of number of clusters. The dashed vertical line indicates the selected number of clusters (n=4). (b) Scatter plot of dimensionality-reduced CCGs in the first two dimensions of t-SNE space. Randomly selected example CCGs are overlayed on the scatterplot in their corresponding location in t-SNE space. (c) CCG templates generated by averaging over all the CCGs in each cluster. The templates include a ‘sharply synchronous’ class (S) with a narrow peak at sync, a ‘broadly synchronous’ class (τ=0B) with a wide peak at sync, a ‘forward’ class (τ=0F) (leading) with more probability density after async and a ‘reverse’ class (τ=0,R) (lagging) with more probability density before async. Numbers denote the percentage of each class among all significantly correlated pairs.τ=0
+**Figure 4.:** (a) Explained variance (left) and silhouette score (right) as a function of number of clusters. The dashed vertical line indicates the selected number of clusters (n=4). (b) Scatter plot of dimensionality-reduced CCGs in the first two dimensions of t-SNE space. Randomly selected example CCGs are overlayed on the scatterplot in their corresponding location in t-SNE space. (c) CCG templates generated by averaging over all the CCGs in each cluster. The templates include a ‘sharply synchronous’ class (Ssync) with a narrow peak at $\tau=0$, a ‘broadly synchronous’ class (Bsync) with a wide peak at $\tau=0$, a ‘forward’ class (Fasync) (leading) with more probability density after $\tau=0,$ and a ‘reverse’ class (Rasync) (lagging) with more probability density before $\tau=0$. Numbers denote the percentage of each class among all significantly correlated pairs.
 
-CCG shape was relatively heterogenous within each of the four clusters (Figure 4b). Nonetheless, by averaging over all CCGs in each cluster, we could construct CCG templates that summarized key characteristics of the clusters (Figure 4c). Within the full population, we identified two synchronous classes of functional interactions, a ‘sharply synchronous’ class (Ssync) with a narrow peak at τ=0 and a ‘broadly synchronous’ class (Bsync) with a wide peak at τ=0. In addition, two asynchronous classes were identified, a ‘reverse’ class (Rasync) (lagging) and a ‘forward’ class (Fasync) (leading) with more probability density before and after τ=0 (median τ=3ms), respectively (Figure 4c). Aside from clear differences in peak lags between subsets of the putative classes (e.g. synchronous vs. asynchronous), CCGs of different classes also differed in their peak efficacies; synchronous classes exhibited higher average peak efficacies than asynchronous classes (median peak efficacy: Ssync 0.021, Bsync 0.020, Fasync 0.015, Rasync 0.014). Importantly, our objective was not to find the exact number of distinct classes of functional interactions in V1 or to perfectly categorize every interaction into a homogenous cluster. Instead, we sought to identify at least one set of clusters that is consistent with that expected in local microcircuits.
+CCG shape was relatively heterogenous within each of the four clusters (Figure 4b). Nonetheless, by averaging over all CCGs in each cluster, we could construct CCG templates that summarized key characteristics of the clusters (Figure 4c). Within the full population, we identified two synchronous classes of functional interactions, a ‘sharply synchronous’ class (Ssync) with a narrow peak at $\tau=0$ and a ‘broadly synchronous’ class (Bsync) with a wide peak at $\tau=0$. In addition, two asynchronous classes were identified, a ‘reverse’ class (Rasync) (lagging) and a ‘forward’ class (Fasync) (leading) with more probability density before and after $\tau=0$ (median $\tau=3ms$), respectively (Figure 4c). Aside from clear differences in peak lags between subsets of the putative classes (e.g. synchronous vs. asynchronous), CCGs of different classes also differed in their peak efficacies; synchronous classes exhibited higher average peak efficacies than asynchronous classes (median peak efficacy: Ssync 0.021, Bsync 0.020, Fasync 0.015, Rasync 0.014). Importantly, our objective was not to find the exact number of distinct classes of functional interactions in V1 or to perfectly categorize every interaction into a homogenous cluster. Instead, we sought to identify at least one set of clusters that is consistent with that expected in local microcircuits.
 
-## Corroboration of putative CCG classes with V1 microcircuitry
+### Corroboration of putative CCG classes with V1 microcircuitry
 
 We next examined the extent to which the putative CCG classes were also distinguishable from one another along anatomical and functional lines given other known properties of V1 microcircuits. First, we considered that the identified classes might differ in their vertical pair distances and signal correlations. Indeed, we found that vertical pair distances were larger and orientation signal correlations were smaller in asynchronous (Fasync and Rasync) than in synchronous (Ssync and Bsync) classes (Figure 5a–b) (significant pairwise comparisons: p<10–5). Given that both the peak lag and peak efficacy components of CCGs were clearly predicted by distance and signal correlation (Figures 2–3), the observed difference between the synchronous and asynchronous classes is expected. However, additional differences emerged between the identified synchronous classes. For example, we found that in spite of exhibiting similar CCG peak lags, Bsync pairs were separated by greater vertical distances than Ssync ones (Figure 5a; p<10–5). Furthermore, in spite of being separated by a greater cortical distance, Bsync pairs exhibited higher signal correlations than Ssync pairs (Figure 5b; p<10–5). These findings thus provide some validation of the apparent subtypes of CCGs.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig5-v2.jpg)
+
+**Figure 5.:** (a, b) Boxplots of vertical pair distance (a) and orientation signal correlation (b) across the 4 identified CCG classes. Boxplots illustrate the medians, first and third quartiles, and non-outlier (1.5*IQR method) minima and maxima. Asterisks denote significant differences in medians between pairs of classes (Wilcoxon rank-sum test; P<0.05, Bonferroni corrected). (c) Percentage of CCGs in each class composed of two neurons from the same (‘within layer’) or different layers (‘between layer’). In a-c, the reference neuron in a neuronal pair was selected randomly. (d) Distribution of putative CCG classes among neuronal pairs composed of a simple cell as the reference neuron and complex cell as the target neuron. Only the pairwise comparison between Fasync and Rasync is illustrated to show the direction of functional interactions between simple and complex cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79322/elife-79322-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Plotted is the number (a) and percentage (b) of significant CCGs in each class composed of two neurons in the indicated layer pairing. For pair of neurons from the same layer, the reference neuron was selected randomly. For pair of neurons from different layers, the reference neuron was chosen from the layer noted first. For example, a CCG in the 2/3–4A/B pairing is composed of a reference neuron in layer 2/3 and a target neuron in 4A/B.
+
 Next, we examined whether the identified classes of functional interactions differed in their laminar distributions. Indeed, we found that different classes were differentially distributed across V1 layers such that one or more of the identified classes was often overrepresented among functional interactions within particular layers (Figure 5—figure supplement 1; p<10–5). To simplify this result, we compared the proportion of CCGs in each class composed of two neurons in the same layer or different layers. We found that most of the asynchronous pairs were composed of neurons from different layers, while most of the synchronous pairs, particularly the Ssync ones, were composed of neurons from the same layer (Figure 5c) (within vs between proportion: Ssync [0.65 vs 0.35], Bsync [0.52 vs 0.48], F [0.29 vs 0.71], R [0.27 vs 0.73], one proportion z-test: Ssync, F, R: P<10–5; Bsync: p=0.022). This observation dovetails the relationship between pair distance and CCG class described above. Nonetheless, we found that cortical layer had an independent effect of distance on CCG class assignment among nearby (~200 μm) pairs of neurons. The location of neuronal pairs within the same or different, nearby layers predicted whether pairs belonged to the Bsync class and the asynchronous classes (Fasync or Rasync), but not the Ssync class, when controlling for the effects of vertical distance (Table 1; logistic regression, p<10–2). More specifically, CCGs composed of two neurons within the same layer had a higher probability of falling in the Bsync class and a lower probability of falling into the asynchronous classes than CCGs with comparable vertical distances composed of two neurons in different cortical layers.
+
+**Table 1.**
+ Dependence of putative classes on laminar pairing and vertical distance for pairs of neurons separated by 86–310 μm.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependent variable (in/out of cluster)</th>
+      <th>Predictor</th>
+      <th>Coefficient</th>
+      <th>Standard error</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Ssync</td>
+      <td>Distance</td>
+      <td>–0.0043 /μm</td>
+      <td>0.001</td>
+      <td>4.00*10–5</td>
+    </tr>
+    <tr>
+      <td>Layer</td>
+      <td>0.104/layer</td>
+      <td>0.126</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Bsync</td>
+      <td>Distance</td>
+      <td>–0.0017 /μm</td>
+      <td>0.0007</td>
+      <td>9.24*10–3</td>
+    </tr>
+    <tr>
+      <td>Layer</td>
+      <td>0.244/layer</td>
+      <td>0.085</td>
+      <td>4.11*10–3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Fasync or Rasync</td>
+      <td>Distance</td>
+      <td>0.0032 /μm</td>
+      <td>0.0005</td>
+      <td>4.23*10–7</td>
+    </tr>
+    <tr>
+      <td>Layer</td>
+      <td>–0.262/layer</td>
+      <td>0.0802</td>
+      <td>1.13*10–3</td>
+    </tr>
+  </tbody>
+</table>
+
+_Coefficients, standard errors, and p-values from logistic regressions predicting class membership using the distance between pairs of neurons and whether pairs were located in the same or different cortical layer(s). Only pairs of neurons with pair distances greater than the 5% of pairs located in different cortical layers (>86 μm) and less than 5% of pairs located in the same cortical layer (<310 μm) were included. Significant predictors are highlighted._
 
 In addition to the laminar organization, V1 neurons exhibit clear differences in their receptive field properties. In particular, V1 neurons classically fall into two broad functional types: simple (S) and complex (C) cells (De Valois et al., 1982; Hubel and Wiesel, 1962; Hubel and Wiesel, 1968; Movshon et al., 1978; Skottun et al., 1991) (see also Chance et al., 1999; Mechler and Ringach, 2002; Priebe et al., 2004). Among the significant CCGs, a majority were comprised of pairs of complex cells (S/S=5.2%, C/C=63%; S/C=31.8%; one-proportion z-test: p<10–5). Complex cells appear to receive converging input from groups of simple cells, and thus simple cells should lead rather than lag complex cells in their CCGs. To test this in our data, we compared the distribution of putative CCG classes among significantly correlated neuronal pairs composed of a simple cell as the reference neuron and a complex cell as the target neuron (Figure 5d). We found that the proportion of forward (Fasync) CCGs was larger than the reverse (Rasync) class (p<10–5). Notably, although the dominant lead-lag relationship between simple and complex cells is consistent with established models of V1 (Alonso and Martinez, 1998; Martinez and Alonso, 2001; Yu and Ferster, 2013), there were also many CCG pairs in which complex cells led simple cells or where the pair fired synchronously. This heterogeneity in functional interactions between simple and complex cells is consistent with studies suggesting that simple and complex cells might arise from variations in a continuous process as opposed to being two clearly distinct populations (Chance et al., 1999; Kim et al., 2021; Mechler and Ringach, 2002; Priebe et al., 2004).
 
-## Corroboration of different classes with V1 input and local circuitry
+### Corroboration of different classes with V1 input and local circuitry
 
 Previous studies have characterized the anatomical organization of dorsal lateral geniculate nucleus (dLGN) input to V1 in extensive detail (Blasdel and Lund, 1983; Hendrickson et al., 1978; Hubel and Wiesel, 1972). In the macaque brain, dLGN magnocellular and parvocellular axons primarily project to V1 layers 4cα and 4cβ, respectively, along with inputs that terminate in layer 6 (reviewed in Briggs and Usrey, 2011; Lund, 1988; Merigan and Maunsell, 1993; Nassi and Callaway, 2009; Figure 6a). However, the extent to which functional interactions within layers of V1 reflect these anatomical projections remains unclear. Thus, we examined the distribution of CCG classes across pairs of V1 input layers 4cα, 4cβ, and 6. We found that for the 4cα-4cα, 4cβ-4cβ, and 6–6 pairings, Ssync CCGs were observed much more frequently than other CCG classes (Figure 6b) (chi-squared test; 4cα-4cα, 4cβ-4cβ: P<10–5, 6–6: P<10–2). This overrepresentation of Ssync CCGs may reflect the fact that neurons in 4cα, 4cβ and 6 receive common and converging input from the dLGN. Furthermore, it is noteworthy that the Ssync class was overrepresented in V1 input layers, but the Bsync class was not.
 
@@ -84,7 +189,7 @@ Previous studies have characterized the anatomical organization of dorsal latera
 
 **Figure 6.:** (a) Diagram of dLGN input to V1 layers 4cα, 4cβ, and 6; dLGN axons terminate in layers 4cα and 4cβ and layer 6, and layer 6 projects to layers 4cα and 4cβ. (b) Percentage of CCGs in each class composed of two neurons in layer pairings of 4cα-4cα, 4cβ-4cβ, or 6–6, out of all the pairwise layer pairing combinations. (c) Percentage of CCGs in each class composed of one neuron in layer 4cα and one in 4cβ (4cα-4cβ or 4cβ-4cα). In (b-c), the reference neuron in a neuronal pair was selected randomly. (d) Percentage of CCGs in each class composed of a reference neuron in layer 6 and a target neuron in 4cβ (left) or 4cα (right). For (b-d), error bars denote 95% confidence intervals. Large asterisks denote significant chi-squared test across all classes (p<0.05, Bonferonni corrected). Small asterisks denote significant chi-squared tests between a particular class and the class with the maximum percentage (p<0.05, Bonferroni corrected).
 
-In contrast to the overrepresentation of Ssync CCGs within the input layers, this class of CCGs was not overrepresented in functional interactions between input layers. Of the four CCG classes, the proportions of each found among pairs composed of one neuron in layer 4cα and one neuron in layer 4cβ were statistically indistinguishable (Figure 6c) (chi-squared test; p=0.20). The lack of an overrepresentation of Ssync CCGs among 4cα/4cβ pairs could reflect the lack of synchrony between magnocellular (fast) and parvocellular (slow) inputs to V1. This result is noteworthy given that the average distance between neuronal pairs across 4cα and 4cβ was comparable to the distances between neuronal pairs within V1 input layer 6 (mean distance: 4cα/4cβ = 106 µm; 6/6=80 µm). In examining functional interactions between layers 4c and 6, we considered that a temporal offset between layer 6 and 4c neurons might exist given extensive projections from layer 6 pyramidal neurons to layer 4c (Wiser and Callaway, 1996). To test this, we examined the 6–4cα and 6-4cβ pairs in which the layer 6 neuron was the reference neuron in the crosscorrelation function. Indeed, in addition to observing that Ssync CCGs were poorly represented, we found that the Fasync class was significantly overrepresented in these pairs (Figure 6d) (6–4cα: p<10–5, 6-4cβ: p<10–3).
+In contrast to the overrepresentation of Ssync CCGs within the input layers, this class of CCGs was not overrepresented in functional interactions between input layers. Of the four CCG classes, the proportions of each found among pairs composed of one neuron in layer 4cα and one neuron in layer 4cβ were statistically indistinguishable (Figure 6c) (chi-squared test; $p=0.20$). The lack of an overrepresentation of Ssync CCGs among 4cα/4cβ pairs could reflect the lack of synchrony between magnocellular (fast) and parvocellular (slow) inputs to V1. This result is noteworthy given that the average distance between neuronal pairs across 4cα and 4cβ was comparable to the distances between neuronal pairs within V1 input layer 6 (mean distance: 4cα/4cβ = 106 µm; 6/6=80 µm). In examining functional interactions between layers 4c and 6, we considered that a temporal offset between layer 6 and 4c neurons might exist given extensive projections from layer 6 pyramidal neurons to layer 4c (Wiser and Callaway, 1996). To test this, we examined the 6–4cα and 6-4cβ pairs in which the layer 6 neuron was the reference neuron in the crosscorrelation function. Indeed, in addition to observing that Ssync CCGs were poorly represented, we found that the Fasync class was significantly overrepresented in these pairs (Figure 6d) (6–4cα: p<10–5, 6-4cβ: p<10–3).
 
 Lastly, we examined the distribution of CCG classes across pairs of neurons involving layer 2/3 neurons. A wealth of evidence indicates that layer 2/3 neurons provide a major source of output to other neocortical areas (reviewed in Callaway, 1998; Douglas and Martin, 2004; Felleman and Van Essen, 1991; Harris and Shepherd, 2015; Thomson and Lamy, 2007). In macaque V1, layer 2/3 neurons send projections to higher visual areas such as V2 (Livingstone and Hubel, 1984; Rockland, 1992; Sincich and Horton, 2005) and V4 (Yukie and Iwai, 1985), and receive inputs from all the deeper cortical layers, including layers 4cα, 4cβ, 4A, 4B, 5, and 6 (Blasdel et al., 1985; Callaway, 1998; Callaway and Wiser, 1996; Fitzpatrick et al., 1985; Kisvarday et al., 1989; Lachica et al., 1992; Lund and Boothe, 1975; Sawatari and Callaway, 2000; Vanni et al., 2020; Wiser and Callaway, 1996; Yarch et al., 2017; Yoshioka et al., 1994; Figure 7a). Consequently, one might predict that a predominant proportion of projections to 2/3 neurons from other layers might be forward ones (Callaway, 1998; Mejias et al., 2016; Schmidt et al., 2018). Consistent with this prediction, we found that the forward (Fasync) class was overrepresented among functional interactions from layers 6, 5, 4cβ, 4cα, and 4A/B to layer 2/3 (Figure 7b) (chi-squared test; 6: p<10–5; 5: p<10–5; 4cβ: p<10–3; 4cα: p<10–2; 4A/B: p<10–5). In contrast, functional interactions within layer 2/3 exhibited a very different pattern. Within the same layer, the classes of 2/3-2/3 CCGs were more evenly represented, in stark contrast to the pattern of within-layer CCGs observed in the input layers (Figure 6b). Within layer 2/3, the Ssync and Bsync CCGs were overrepresented among functional interactions (Figure 7c) (chi-squared test: p<10–4), and there was an equal representation of Ssync and Bsync CCGs among 2/3-2/3 pairings.
 
@@ -96,23 +201,76 @@ Lastly, we examined the distribution of CCG classes across pairs of neurons invo
 
 Using high-density recordings from single neocortical columns of macaque V1, we identified 1000s of functionally interacting neuronal pairs using established crosscorrelation approaches. The results demonstrate clear and systematic variations in the synchrony and strength of functional interactions within single V1 columns. Notably, we observed that in spite of residing within the same column, the functional interactions between pairs of V1 neurons depended heavily on their vertical distance within the column; both the peak lag and peak efficacy of CCGs between neuronal pairs changed dramatically within only a few hundred micrometers of vertical distance within the column. In addition, we found that the synchrony and strength of CCGs also depended on laminar location and the similarity of orientation tuning between neuronal pairs. We leveraged the statistical power provided by the large numbers of functionally interacting pairs to categorize functional interactions between neurons based on their crosscorrelation functions. These analyses identified distinct classes of functional interactions within the full population. Those distinct classes exhibited different distributions across defined laminar compartments, and those differences were consistent with known and/or expected properties of V1 cortical circuitry. The results demonstrate a novel utility of high-density neurophysiological recordings in assessing circuit-level interactions within local neuronal networks. Below, we discuss both the implications and the limitations of this approach.
 
-## Effect of cortical distance on functional interactions
+### Effect of cortical distance on functional interactions
 
 A wealth of previous evidence has established a clear effect of cortical distance on functional interactions, yet a majority of past studies have focused on the effect of horizontal distance across which large changes in shared input between neurons are expected. Evidence that spiking correlations and synchrony decline with horizontal cortical distance within V1 has been shown in cats (Das and Gilbert, 1999; Gray et al., 1989; Hata et al., 1991) (but see Samonds et al., 2006; Schwarz and Bolz, 1991), monkeys (Chu et al., 2014; Krüger and Aiple, 1988; Maldonado et al., 2000; Smith and Kohn, 2008), and in mice (Denman and Contreras, 2014). Very few studies have examined crosscorrelations among pairs of neurons within a single column, where the feedforward input is largely shared (e.g. DeAngelis et al., 1999). Longer timescale, spike count (‘noise’), correlations, which have been widely assessed in studies of primate visual cortex (Averbeck et al., 2006) have been shown to be layer dependent within macaque V1 where weaker correlations occur in layer 4 (Hansen et al., 2012). However, no evidence that such correlations depend on distance independent of layer was observed. In contrast, measurement of crosscorrelations in earlier studies of V1 columns in cat indeed suggest that functional interactions are restricted to local regions across cortical depths (Toyama et al., 1981b). Within rat auditory cortex, functional interactions diminish dramatically within ~300 µm of vertical columnar distance (Atencio and Schreiner, 2013), similar to what is observed in rat somatosensory cortex (Khateb et al., 2021). A dependence of interactions on vertical distance is further supported by evidence from multiple whole-cell recordings in mouse visual cortex which demonstrates that connection probability decreases sharply within a distance of 250 µm (Jiang et al., 2015). Our observation that the peak efficacy of CCGs was greatly diminished within <200 µm within macaque V1 is thus consistent with estimates from other sensory cortices and species.
 
-## Effect of orientation tuning similarity on functional interactions
+### Effect of orientation tuning similarity on functional interactions
 
 Many previous studies have reported an effect of tuning similarity on functional interactions, yet most of these studies focused on interactions between pairs of neurons in different cortical columns. Evidence from horizontal array recordings in macaque V1 suggests that pairs of neurons selective for similar orientations (Chu et al., 2014; Kohn and Smith, 2005; Smith and Kohn, 2008), or color and luminance (Chu et al., 2014) tend to exhibit stronger functional interactions compared to pairs with dissimilar tuning, perhaps reflecting the functional specificity of horizontal connections (Gilbert and Wiesel, 1989). For example, one study found that the strength of functional interactions between neuronal pairs with the highest orientation signal correlations was nearly twice that of uncorrelated pairs (Smith and Kohn, 2008). Consistent with these previous studies, we also found that variations in tuning similarity resulted in robust differences in the synchrony and strength of correlated activity. However, our results demonstrate that an interdependence of tuning similarity and functional interaction exists even within single orientation columns. In addition, in contrast to comparisons across columns where tuning similarity appears to be the primary factor (Chu et al., 2014), we found that within single columns, vertical distance and orientation tuning similarity exerted distinct effects on the synchrony and strength of functional interactions.
 
-## Distinct classes of functional interactions
+### Distinct classes of functional interactions
 
 Upon clustering the full population of significant CCGs, we identified four putative classes of functional interactions. Notably, these classes of CCGs depicted the set of pairwise interactions that one might logically expect, namely two asynchronous classes (forward and reverse) and two synchronous ones (sharply and broadly synchronous). More importantly, the clustering-based evidence of distinct classes of CCGs was corroborated by the observation of highly differential distributions of those putative classes across cortical layers. For example, asynchronous CCG classes were more often observed among neuronal pairs within different layers, whereas synchronous pairs more often resided within the same layer. This corroboration of distinct classes extended to functional properties of V1 neurons as well in that simple cells were more often paired in a forward manner with complex cells, whereas the reverse was true for complex cells. Nevertheless, the existence of exactly four distinct classes among V1 pairs is by no means certain. Indeed, the choice of three classes was almost as valid as that of four in the clustering procedure (Figure 4). Yet, given the clear evidence of two asynchronous classes, and the differential distributions of broadly and sharply synchronous pairs across cortical layers, the choice of only three classes of CCGs seems less parsimonious than four. Although there appeared to be less evidence for the existence of five or more classes of functional interactions, that possibility cannot be ruled out either. For example, additional distinct classes of CCGs might be present, but significantly less frequent or weaker than the other four. Indeed, given their low incidence, our selection criteria already excluded CCGs with significant inhibitory peaks. As in previous studies, the frequency of excitatory CCGs in our dataset was considerably higher than that of inhibitory CCGs (Aertsen and Gerstein, 1985; Hembrook-Short et al., 2019; Table 2). Consequently, these additional classes were eliminated by the statistical threshold employed to identify significant CCGs. It is likely that additional distinct classes, excitatory or inhibitory, were also eliminated and/or simply fell within a mixture of the more dominant four classes that exceeded the statistical criterion. Future work will therefore be needed to more extensively characterize the distribution of distinct classes of spiking crosscorrelations among neuronal pairs in cortical columns.
 
-## Classes of functional interactions and V1 microcircuitry
+**Table 2.**
+ Number of CCGs with peaks or troughs significantly above or below noise.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stdev. above/below noise</th>
+      <th>Number of pairs with peaks above noise</th>
+      <th>Number of pairs with troughs below noise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>33,502</td>
+      <td>15,582</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>33,502</td>
+      <td>11,347</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>31,660</td>
+      <td>4,537</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>25,180</td>
+      <td>1,555</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>18,739</td>
+      <td>603</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>13,757</td>
+      <td>265</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>10,246</td>
+      <td>136</td>
+    </tr>
+  </tbody>
+</table>
+
+_The number of recorded pairs with a peak or trough at least 1–7 standard deviations (SD) above or below noise is shown. Only CCGs with peaks or troughs within 10ms of zero time lag were considered. 136 CCGs had troughs that were more than 7 SD below noise whereas 10,246 CCGs had peaks that were more than 7 SD above noise._
+
+### Classes of functional interactions and V1 microcircuitry
 
 We found that the four putative classes of functional interactions were differentially distributed across the cortical column and across functional pairs of neurons. Most notably, the different CCG classes were observed in different proportions across V1 layers. In spite of those differences, it need not follow that the relative distribution of any specific putative class (e.g. sharply synchronous) fits with the known (or predicted) connectivity between different V1 neurons. For example, our observation that asynchronous CCGs (Fasync and Rasync) were considerably more frequent among neuronal pairs situated in different laminae, and that synchronous CCGs (Ssync and Bsync) were found among neurons in the same laminae, would not be expected if the differences in synchrony resulted primarily from measurement noise. Likewise, the observed disproportionality of Fasync and Rasync CCGs among functional interactions between simple and complex cells would not be expected if the two asynchronous classes were indistinguishable in our measurements. Instead, not only were the two classes disproportionate among simple and complex cells, but the overall direction of disproportionality was consistent with the known connectivity between the two functional classes of cells (Alonso and Martinez, 1998; Martinez and Alonso, 2001; Yu and Ferster, 2013). Thus, overall, we found that the pattern of differential distributions of the putative classes of CCGs across the column and across functional pairs of neurons was largely consistent with known properties of V1 microcircuitry.
 
-## Functional interactions and synaptic connectivity
+### Functional interactions and synaptic connectivity
 
 Analyses of the statistical dependencies between spike trains of two or more neurons have long played an important role in estimating how ensembles of neurons interact with one another (Casile et al., 2021; Okatan et al., 2005; Perkel et al., 1967). We interpret the functional interactions identified here in the same manner. Using statistical criteria employed in a recent study of mouse visual cortex (Siegle et al., 2021), we found that ~15% (10,246/68,579) of neuronal pairs within columns of macaque V1 exhibited significant functional interactions. The proportion of significant pairs is within the range observed in previous studies in macaque V1 (Chu et al., 2014; Hembrook-Short et al., 2019; Kohn and Smith, 2005; Smith and Kohn, 2008). This similarity with previous studies exists in spite of notable differences in the electrophysiological approach and statistical criteria. In addition, the proportion of significant pairs is also similar to previous CCG measurements made in the cat (Alonso and Martinez, 1998) and mouse V1 (Denman and Contreras, 2014; Siegle et al., 2021).
 
@@ -120,17 +278,17 @@ In addition, it has long been understood that the statistical interdependence of
 
 Unfortunately, there exists little or no ground-truth measurements of the rate of synaptic connectivity, or common input, between neurons within single V1 columns in any species, though such measurements may be imminent (https://www.microns-explorer.org/). Nonetheless, the observed rate of asynchronous classes identified in our data is consistent with estimates of the connection probability among V1 neurons obtained in multi-patch, slice recordings. For example, recent studies identified synaptic connectivity in 5–12% of excitatory neurons in mouse/rat V1 (Cadwell et al., 2020; Song et al., 2005). Although estimates from such studies clearly underestimate the rate of connections given that many connections are cut in the slice preparation, they nonetheless provide a plausible lower bound. Thus, in spite of the inherent arbitrariness of the statistical criteria employed in identifying significant CCGs, the observed proportion of asynchronous interactions among pairs in our data appears largely consistent with previous estimates. As a means of comparing the criteria used here to those of prior studies in monkey V1, we applied one criterion used in Hembrook-Short et al., 2019 to our data, which required that CCG peaks be sharp and narrow (<5ms) to be considered monosynaptic. Using this criterion, we found that 86% of our asynchronous CCGs were categorized as consistent with monosynaptic connections. Thus, it seems likely that our asynchronous (Fasync and Rasync) classes captured a reasonable proportion of monosynaptically connected neurons within the V1 column.
 
-## Future studies
+### Future studies
 
 We found that the relative instances of different types of crosscorrelations observed among large populations of neuronal pairs may provide a means of constraining models of cortical microcircuits. This approach could prove particularly valuable in less experimentally tractable model systems such as nonhuman primates, or perhaps even in the human brain, where direct interrogation of microcircuits is difficult or not yet possible. In such cases, the ability of high-channel count, high-density, probes to dramatically increase the number of identifiable functional interactions within a local network of neurons is among their greater benefits. Our results thus far suggest that this approach works well and could be extended to examine higher-order interactions among larger sets of neurons, and to identify neuronal ensembles with distinct functional properties (Fujisawa et al., 2008; Miller et al., 2014; See et al., 2018). In addition, future studies should be able to compare local interactions across different putative cell types estimated from their spike waveforms (Johnston et al., 2009; Lee et al., 2021; Mitchell et al., 2007; Wilson et al., 1994) and/or spiking patterns (Onorato et al., 2020). Combined with measurements of functional interactions, such an approach could be used to constrain models of microcircuit architecture from neurophysiological data obtained from any number of uniquely evolved primate brain structures.
 
 ## Methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Anesthetized recordings were conducted in 2 adult male rhesus macaques (Macaca Mulatta, M1, 13 kg; M2, 8 kg). All experimental procedures were in accordance with National Institutes of Health Guide for the Care and Use of Laboratory Animals, the Society for Neuroscience Guidelines and Policies, and with approved Institutional Animal Care and Use Committee (IACUC) protocol (#APLAC-9900) of Stanford University.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Prior to each recording session, treatment with dexamethasone phosphate (2 mg per 24 hr) was instituted 24 hr to reduce cerebral edema. After administration of ketamine HCl (10 mg/kg body weight, intramuscularly), monkeys were ventilated with 0.5% isoflurane in a 1:1 mixture of N2O and O2 to maintain general anesthesia. Electrocardiogram, respiratory rate, body temperature, blood oxygenation, end-tidal CO2, urine output and inspired/expired concentrations of anesthetic gases were monitored continuously. Normal saline was given intravenously at a variable rate to maintain adequate urine output. After a cycloplegic agent was administered, the eyes were focused with contact lenses on a CRT monitor. Vecuronium bromide (60 μg/kg/hr) was infused to prevent eye movements.
 
@@ -138,52 +296,76 @@ With the anesthetized monkey in the stereotaxic frame, an occipital craniotomy w
 
 Given the length of the probe (1 cm), and the complete distribution of electrode contacts throughout its length, recordings could be made either in the opercular surface cortex (M1) or within the underlying calcarine sulcus (M2), by selecting a subset of contiguous set of active contacts (n=384) from the total number (n=986). Receptive fields (RFs) from online multi-unit activity were localized on the display using at least one eye. RF eccentricities were ~4–6° (M1) and ~6–10° (M2). Recordings were made at 1–3 sites in one hemisphere of each monkey. At the end of the experiment, monkeys were euthanized with pentobarbital (150 mg kg−1) and perfused with normal saline followed by 1 liter of 1% (wt/vol) paraformaldehyde in 0.1 M phosphate buffer, pH 7.4.
 
-## Visual stimulation
+### Visual stimulation
 
 Visual stimuli were presented on a LCD monitor NEC-4010 (Dimensions = 88.5 (H)* 49.7 (V) cm, pixels = 1360 * 768, frame rate = 60 Hz) positioned 114 cm from the monkey. Stimuli consisted of circular drifting Gabor gratings (2 deg./sec., 100% Michelson contrast) positioned within the joint RFs of recorded neurons monocularly. Gratings drifted in 36 different directions between 0–360° in 10° steps in a pseudorandom order. Four spatial frequencies (0.5, 1, 2, 4 cycle/deg.) were tested and optimal SFs were determined offline to categorize V1 neurons into simple or complex cell. The stimulus in each condition was presented for 1 second and repeated 5 or 10 times. A blank screen with equal luminance to the Gabor patch was presented for 0.25 s during the stimulus interval.
 
-## Data acquisition and spike sorting
+### Data acquisition and spike sorting
 
 Raw spike-band data was sampled and recorded at 30 kHz. It was then median-subtracted and high-pass filtered at 300 Hz during the pre-processing stage. Spike-sorting was carried out with Kilosort2 (https://github.com/MouseLand/Kilosort; Pachitariu et al., 2022) to find spike times and assign each spike to different units. The raw sorted data was then manually curated in Phy (https://github.com/cortex-lab/phy; Rossant et al., 2022) to remove spikes with atypical waveforms and perform minimal merging and splitting. One potential issue with the template-matching approach used by Kilosort2 is that the algorithm will occasionally fit a new template from the residual after subtracting the first template from the original data. This artificial template/neuron will share an abnormal number of double-counted spikes with the real neuron, resulting in a high zero-time lag synchrony between those two neurons. To examine whether this issue may affect our results, we used a criteria suggested by a previous study (Siegle et al., 2021) to identify double-counted spikes by counting spikes with peak times within 5 samples (0.167ms) and from pairs of neurons within 50 μm (~5 channels). Out of the total 68,579 pairs of neurons included in this current study, we found that only 7 pairs shared more than 20% overlapping spikes. Considering that we identified 1408 pairs of neurons in the sharply synchronous class, those potentially artificial pairs contributed to less than 0.5% of this class. Although we did not remove those pairs from the data, we believe their contributions are negligible. Here, we list key parameters in Kilosort2 that may affect the ‘double-counting’: Ops.th=[10,4]; Ops.lam=20; Ops.AUCsplit=0.9; Ops.ThPre=8; Ops.spkTh=-6. Moreover, only neurons with a minimum firing rate of 3 spikes/s were included in the study.
 
-## Layer assignment
+### Layer assignment
 
 The laminar location of our recording sites was estimated based on a combination of functional analysis and histology results. For each recording, we first performed the current source density (CSD) analysis on the stimulus-triggered average of local field potentials (LFP). LFP were low-pass filtered at 200 Hz and recorded at 2500 Hz. LFP signals recorded from each four neighboring channels were averaged and realigned to the onset of visual stimulus. CSD was estimated as the second-order derivatives of signals along the probe axis using the common five-point formula (Nicholson and Freeman, 1975). The result was then smoothed across space (σ=120 μm) to reduce the artifact caused by varied electrode impedance. We located the lower boundary of the major sink (the reversal point of sink and source) as the border between layer 4c and layer 5/6. Based on this anchor point, we assign other laminar compartment borders using the histological estimates.
 
-## Single neuron properties
+### Single neuron properties
 
 To characterize the visual properties of each neuron, the stimulus evoked activity was assessed using mean firing rate (spikes/s) over the entire stimulus presentation period, offset by a response latency of 30ms. Only responses to the preferred spatial frequency were used. Modulation ratio was defined as F1/F0, where F1 and F0 are the amplitude of the first harmonic at the temporal frequency of drifting grating and constant component of the Fourier spectrum to the neuron’s response to preferred orientation. Simple cells were defined as cells with modulation ratio larger than 1, and complex cells have modulation ratios smaller than 1 (De Valois et al., 1982; Skottun et al., 1991).
 
-## Signal correlations
+### Signal correlations
 
 To measure the similarity of orientation tuning between neuronal pairs, we computed an orientation signal correlation (rori). The orientation signal correlation was defined as the Pearson’s correlation coefficient between the mean responses of two neurons to each of the 36 stimulus orientations (Smith and Kohn, 2008). For each neuron and orientation, a single mean response was computed by averaging spiking activity over the entire duration of stimulus presentation (1 s) across all trials with a particular orientation.
 
-## Cross-correlograms (CCGs)
+### Cross-correlograms (CCGs)
 
-To measure correlated firing, we computed the crosscorrelation between spike trains of all pairs of simultaneously recorded neurons (Jia et al., 2013; Siegle et al., 2021; Smith and Kohn, 2008; Zandvakili and Kohn, 2015). We focused on the spiking activity within the 0.4–1 s window of each visual stimulus presentation, which ensured that the analysis was not affected by the transient response to stimulus onset. To mitigate firing rate effects, we normalized the cross-correlation for each pair of neurons by the geometric mean of their firing rates. Thus, the cross-correlogram CCG for a pair of neurons (j,k)was defined as follows:CCG(τ)j−k=1M∑i=1M∑t=1N−τxji(t)×xki(t+τ)θ(τ)λjλk
+To measure correlated firing, we computed the crosscorrelation between spike trains of all pairs of simultaneously recorded neurons (Jia et al., 2013; Siegle et al., 2021; Smith and Kohn, 2008; Zandvakili and Kohn, 2015). We focused on the spiking activity within the 0.4–1 s window of each visual stimulus presentation, which ensured that the analysis was not affected by the transient response to stimulus onset. To mitigate firing rate effects, we normalized the cross-correlation for each pair of neurons by the geometric mean of their firing rates. Thus, the cross-correlogram $CCG$ for a pair of neurons ($j,k$)was defined as follows:
 
-where M is the number of trials, N is the number of time bins within a trial, τ is the time lag, xjit is one if neuron j fired in time bin t of trial i and zero otherwise, and λj is the mean firing rate of neuron j computed over the same bins used to compute the CCG at each time lag. θτ is a triangular function, θ(τ)=N−|τ|, that corrects for the difference in the number of overlapping bins at different time lags. We denote the CCG computed with neuron j as the first (reference) neuron and k as the second (target) neuron in the correlation function as j-k.
+$$
+CCG(\tau)_{j−k}=\frac{\frac{1}{M}\sumi=1M\sumt=1N−\taux_{j}^{i}(t)\timesx_{k}^{i}(t+\tau)}{\theta(\tau)\sqrt{\lambda_{j}\lambda_{k}}}
+$$
 
-To correct for correlation due to stimulus-locking or slow fluctuations in population response (e.g. gamma-band activity), we computed a jitter-corrected cross-correlogram by subtracting a jittered cross-correlogram from the original cross-correlogram:CCGcorrected=CCGoriginal-CCGjittered
+where $M$ is the number of trials, $N$ is the number of time bins within a trial, $\tau$ is the time lag, $x_{j}^{i}t$ is one if neuron $j$ fired in time bin $t$ of trial $i$ and zero otherwise, and $\lambda_{j}$ is the mean firing rate of neuron j computed over the same bins used to compute the CCG at each time lag. $\theta\tau$ is a triangular function, $\theta(\tau)=N−|\tau|$, that corrects for the difference in the number of overlapping bins at different time lags. We denote the CCG computed with neuron j as the first (reference) neuron and k as the second (target) neuron in the correlation function as j-k.
 
-The jittered cross-correlogram (CCGjittered) reflects the expected value of cross-correlograms computed from all possible jitters of each spike train within a given jitter window (Harrison and Geman, 2009; Smith and Kohn, 2008). The jittered spike train preserves both the PSTH of the original spike train across trials and the spike count in the jitter window within each trial. As a result, jitter correction removes the correlation between PSTHs (stimulus-locking) and correlation on timescales longer than the jitter window (slow population correlations). Here, a 25 ms jitter window was chosen based on previous studies (Jia et al., 2013; Siegle et al., 2021; Zandvakili and Kohn, 2015).
+To correct for correlation due to stimulus-locking or slow fluctuations in population response (e.g. gamma-band activity), we computed a jitter-corrected cross-correlogram by subtracting a jittered cross-correlogram from the original cross-correlogram:
 
-We classified a CCG as significant if the peak of the jitter-corrected CCG occurred within 10ms of zero and was more than seven standard deviations above the mean of the noise distribution. The noise distribution for a CCG was defined as the flanks of the jittered-corrected CCG ({CCG(τ)∣100≥|τ|≥50}). This significance criterion was chosen based on that of Siegle et al., 2021. All analyses presented here involve only significant, jitter-corrected cross-correlograms. Note that the criterion identifies only positive peaks in the CCG and excludes significant inhibitory correlations. However, consistent with earlier studies (Aertsen and Gerstein, 1985; Hembrook-Short et al., 2019), we found that the frequency of CCGs with significant troughs was approximately 40x lower than those with significant peaks (Table 2).
+$$
+CCG_{corrected}=CCG_{original}-CCG_{jittered}
+$$
 
-## Classification of Cross-correlogram
+The jittered cross-correlogram ($CCG_{jittered}$) reflects the expected value of cross-correlograms computed from all possible jitters of each spike train within a given jitter window (Harrison and Geman, 2009; Smith and Kohn, 2008). The jittered spike train preserves both the PSTH of the original spike train across trials and the spike count in the jitter window within each trial. As a result, jitter correction removes the correlation between PSTHs (stimulus-locking) and correlation on timescales longer than the jitter window (slow population correlations). Here, a 25 ms jitter window was chosen based on previous studies (Jia et al., 2013; Siegle et al., 2021; Zandvakili and Kohn, 2015).
 
-To identify distinct classes of cross-correlation functions, we clustered significant crosscorrelations. We only analyzed crosscorrelation functions between τ=-10 and τ=10 such that our input CCGs had 21 features, corresponding to the 21 crosscorrelation values between τ=-10 and τ=10. For clustering, we included two crosscorrelation functions for each pair of neurons j,k , one computed using the above CCG function with neuron j as the reference neuron j-k and the other with neuron k as the reference neuron k-j . This was done in order to avoid introducing biases in the direction of the CCG templates. We z-scored each CCG prior to clustering to encourage clustering based on the shape of the correlation function rather than its magnitude. For subsequent statistical analyses, only a single neuron in the pair was used as the reference.
+We classified a CCG as significant if the peak of the jitter-corrected CCG occurred within 10ms of zero and was more than seven standard deviations above the mean of the noise distribution. The noise distribution for a CCG was defined as the flanks of the jittered-corrected CCG (${CCG(\tau)∣100\geq|\tau|\geq50}$). This significance criterion was chosen based on that of Siegle et al., 2021. All analyses presented here involve only significant, jitter-corrected cross-correlograms. Note that the criterion identifies only positive peaks in the CCG and excludes significant inhibitory correlations. However, consistent with earlier studies (Aertsen and Gerstein, 1985; Hembrook-Short et al., 2019), we found that the frequency of CCGs with significant troughs was approximately 40x lower than those with significant peaks (Table 2).
 
-To simplify the clustering problem, we used t-distributed stochastic neighbor embedding (t-SNE) to reduce our input data with 21 features to 3 features (tsne, MATLAB R2019a). t-SNE was used instead of principal component analysis (PCA) because it is more robust to outliers since it captures neighbor relationships in the input space. We clustered the dimensionality-reduced data using k-means with k=1 to 10 (50 replicates, 100 max iterations, kmeans MATLAB R2019a). To determine the optimal number of clusters, we used two complementary approaches, the elbow method and silhouette method. The elbow method selects k based on the magnitude of the change in the variance explained by clustering as k increases. For a set of points S=s1,s2,…,sn divided into k clusters S1,S2,…,Sk , the percent of variance explained by clustering ηk is:ηk=TSS-WCSSkTSSTSS=∑x∈S||x−mean(S)||WCSSk=∑i=1k∑x∈Si||x−mean(Si)||
+### Classification of Cross-correlogram
 
-where TSS denotes the total sums of squares and WCSSk denotes the sum of within cluster sums of squares over all clusters. The optimal number of clusters occurs at the point where the percent of explained variance plateaus (or ‘elbows’) as the number of clusters increases. The silhouette criterion captures how similar a point is to its own cluster versus how different it is from the nearest cluster that it is not a member of. We computed the silhouette criterion using MATLAB’s ‘evalclusters’ function with default parameters (MATLAB R2019a).
+To identify distinct classes of cross-correlation functions, we clustered significant crosscorrelations. We only analyzed crosscorrelation functions between $\tau=-10$ and $\tau=10$ such that our input CCGs had 21 features, corresponding to the 21 crosscorrelation values between $\tau=-10$ and $\tau=10$. For clustering, we included two crosscorrelation functions for each pair of neurons $j,k$ , one computed using the above CCG function with neuron j as the reference neuron $j-k$ and the other with neuron k as the reference neuron $k-j$ . This was done in order to avoid introducing biases in the direction of the CCG templates. We z-scored each CCG prior to clustering to encourage clustering based on the shape of the correlation function rather than its magnitude. For subsequent statistical analyses, only a single neuron in the pair was used as the reference.
 
-## Statistical analyses
+To simplify the clustering problem, we used t-distributed stochastic neighbor embedding (t-SNE) to reduce our input data with 21 features to 3 features (tsne, MATLAB R2019a). t-SNE was used instead of principal component analysis (PCA) because it is more robust to outliers since it captures neighbor relationships in the input space. We clustered the dimensionality-reduced data using k-means with $k=1$ to 10 (50 replicates, 100 max iterations, kmeans MATLAB R2019a). To determine the optimal number of clusters, we used two complementary approaches, the elbow method and silhouette method. The elbow method selects $k$ based on the magnitude of the change in the variance explained by clustering as $k$ increases. For a set of points $S=s_{1},s_{2},…,s_{n}$ divided into $k$ clusters $S_{1},S_{2},…,S_{k}$ , the percent of variance explained by clustering $η_{k}$ is:
+
+$$
+η_{k}=\frac{TSS-WCSS_{k}}{TSS}
+$$
+
+
+
+$$
+TSS=\sumx\inS||x−mean(S)||
+$$
+
+
+
+$$
+WCSS_{k}=\sumi=1k\sumx\inS_{i}||x−mean(S_{i})||
+$$
+
+where $TSS$ denotes the total sums of squares and $WCSS_{k}$ denotes the sum of within cluster sums of squares over all clusters. The optimal number of clusters occurs at the point where the percent of explained variance plateaus (or ‘elbows’) as the number of clusters increases. The silhouette criterion captures how similar a point is to its own cluster versus how different it is from the nearest cluster that it is not a member of. We computed the silhouette criterion using MATLAB’s ‘evalclusters’ function with default parameters (MATLAB R2019a).
+
+### Statistical analyses
 
 The effects of vertical pair distance and orientation signal correlation on CCG peak lag and peak efficacy were fit using linear and exponential functions. In linear regressions predicting CCG peak lag, all significant CCGs were included, and mean squared error was used as the cost function for regressions. In linear and exponential regressions predicting CCG peak efficacy, only significant CCGs with non-outlier peaks (1.5*IQR criterion) were included, and mean absolute error was used as the cost function for regressions to encourage fit of the plotted median peak efficacies.
 
 The relationships between classes of functional interactions and signal correlation/pair distance were evaluated using Wilcoxon rank-sum tests, and the relationship between functional class and layer/cell type pairings was assessed using chi-squared tests or one proportion z-tests. Finally, the dependence of functional class on whether a CCG was composed of two neurons within the same or different cortical layer(s) with comparable vertical distance was assessed using logistic regression.
 
-## Distance matching
+### Distance matching
 
 Distance matching was used to compare the effects of orientation signal correlation on CCG peak lag and peak efficacy among neuronal pairs with comparable cortical distances. To match pairs with comparable distances (Figure 3C), we sorted significant CCGs by cortical distance, then paired the CCGs with the smallest and second smallest distances and paired the CCGs with the third and fourth smallest distances and so forth. Thus, every significant CCG was paired with exactly one other significant CCG, resulting in 5122 pairs. To verify that this procedure effectively matched pairs of CCGs with comparable cortical distance, we examined the difference in cortical distance for distance-matched pairs. More than 99% (5067/5122) of the distance-matched pairs had a difference in cortical distance of less than 2 µm. Finally, we examined the correlation between the difference in CCG peak lag or peak efficacy and difference in signal correlation for matched pairs to determine whether signal correlation predicts peak lag or peak efficacy when controlling for distance.

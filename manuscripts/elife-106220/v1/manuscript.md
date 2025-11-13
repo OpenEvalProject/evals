@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00effsg46 Department of Biochemistry, Mountain Top University Makogi Oba Nigeria
+1. Department of Biochemistry, Mountain Top University Makogi Oba Nigeria ([ROR:00effsg46](https://ror.org/00effsg46))
 
 † Corresponding author
 

@@ -7,15 +7,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01rxvg760 School of Earth Sciences and Engineering, Nanjing University Najing China
-2. https://ror.org/034t30j35 Key Laboratory of Vertebrate Evolution and Human Origins of Chinese Academy of Sciences, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China
+1. School of Earth Sciences and Engineering, Nanjing University Najing China ([ROR:01rxvg760](https://ror.org/01rxvg760))
+2. Key Laboratory of Vertebrate Evolution and Human Origins of Chinese Academy of Sciences, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
 3. CAS Center for Excellence in Life and Paleoenvironment Beijing China
 
 † Corresponding author
 
 ## Abstract
 
-Placoderms, as the earliest branching jawed vertebrates, are crucial to understanding how the characters of crown gnathostomes comprising Chondrichthyes and Osteichthyes evolved from their stem relatives. Despite the growing knowledge of the anatomy and diversity of placoderms over the past decade, the dermal scales of placoderms are predominantly known from isolated material, either morphologically or histologically, resulting in their squamation being poorly understood. Here we provide a comprehensive description of the squamation and scale morphology of a primitive taxon of Antiarcha (a clade at the root of jawed vertebrates), Parayunnanolepis xitunensis , based on the virtual restoration of an articulated specimen by using X-ray computed tomography. Thirteen morphotypes of scales are classified to exhibit how the morphology changes with their position on the body in primitive antiarchs, based on which nine areas of the post-thoracic body are distinguished to show their scale variations in the dorsal, flank, ventral, and caudal lobe regions. In this study, the histological structure of yunnanolepidoid scales is described for the first time based on disarticulated scales from the type locality and horizon of P. xitunensis . The results demonstrate that yunnanolepidoid scales are remarkably different from their dermal plates as well as euantiarch scales in lack of a well-developed middle layer. Together, our study reveals that the high regionalization of squamation and the bipartite histological structure of scales might be plesiomorphic for antiarchs, and jawed vertebrates in general.
+Placoderms, as the earliest branching jawed vertebrates, are crucial to understanding how the characters of crown gnathostomes comprising Chondrichthyes and Osteichthyes evolved from their stem relatives. Despite the growing knowledge of the anatomy and diversity of placoderms over the past decade, the dermal scales of placoderms are predominantly known from isolated material, either morphologically or histologically, resulting in their squamation being poorly understood. Here we provide a comprehensive description of the squamation and scale morphology of a primitive taxon of Antiarcha (a clade at the root of jawed vertebrates), Parayunnanolepis xitunensis, based on the virtual restoration of an articulated specimen by using X-ray computed tomography. Thirteen morphotypes of scales are classified to exhibit how the morphology changes with their position on the body in primitive antiarchs, based on which nine areas of the post-thoracic body are distinguished to show their scale variations in the dorsal, flank, ventral, and caudal lobe regions. In this study, the histological structure of yunnanolepidoid scales is described for the first time based on disarticulated scales from the type locality and horizon of P. xitunensis. The results demonstrate that yunnanolepidoid scales are remarkably different from their dermal plates as well as euantiarch scales in lack of a well-developed middle layer. Together, our study reveals that the high regionalization of squamation and the bipartite histological structure of scales might be plesiomorphic for antiarchs, and jawed vertebrates in general.
 
 ## Introduction
 
@@ -29,19 +29,29 @@ Parayunnanolepis xitunensis from the Lower Devonian of South China, is known for
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig1-v1.jpg)
 
-**Figure 1.:** Parayunnanolepis xitunensis, holotype IVPP V11679.1.(A) Dorsal view. (B) Right lateral view. (C) Left lateral view. (D–I) Magnified images of rectangles in (A–C). (D) Dorsal fin in left lateral view. (E) Predorsal scales in dorsal view. (F–H) Flank scales (fs) in lateral view. (I) Postdorsal scales in dorsal view. The black arrow indicates the anterior direction. PL, posterior lateral plate; PVL, posterior ventrolateral plate; other abbreviations see text. A–C share a scale bar of 5 mm, D–I of 1 mm.
+**Figure 1.:** (A) Dorsal view. (B) Right lateral view. (C) Left lateral view. (D–I) Magnified images of rectangles in (A–C). (D) Dorsal fin in left lateral view. (E) Predorsal scales in dorsal view. (F–H) Flank scales (fs) in lateral view. (I) Postdorsal scales in dorsal view. The black arrow indicates the anterior direction. PL, posterior lateral plate; PVL, posterior ventrolateral plate; other abbreviations see text. A–C share a scale bar of 5 mm, D–I of 1 mm.
 
 ## Results
 
-## Scale morphology
+### Scale morphology
 
 The post-thoracic body (Figure 2) is completely covered by scales with substantial variability in shape (oval, or rhombic, or polygonal), size (length 0.3–2.6 mm in length, width 0.2–2.3 mm in width, 0.1–0.4 mm in height), overlap relationship (largely overlapping or no overlap), crown/base proportion, and base morphology (bulging, or flat, or concave). Most of the scales are rhombic in shape with their base concave and larger than the crown. Discrete tubercles (tub) ornament the scale crown, and the tubercle size changes with the different scale varieties (Figure 1D–I, tub). Basal pores are less developed. Scales are relatively flat, and barely bear the neck structure. The available scales were provisionally assigned to the thirteen morphotypes listed here.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig2-v1.jpg)
 
-**Figure 2.:** Parayunnanolepis xitunensis, drawn by Dinghua Yang.
-
 Morphotype 1— anterior dorsal scale (ads; Figure 3D; Figure 3—figure supplement 1A–E). The scale is distinguishable by a thickened crown, rounded anterior margin, and broad outline (width/length, abbreviated as w/l, ranging 1.3–1.6). The depressed field (df; Figure 3I, J), that is the area underlying neighboring scales (Chen et al., 2012), occupies 28–43% of the scale length. The base is concave under the crown, but convex under the df. The left scale overlaps the right and the back ones. The shape changes from roughly pentagonal at the first row to triangular at the second row, along with the size in length and width getting larger. Following the functional summary for various scale types by Reif, 1985, the thickened crown might protect the ads from abrasion in contact with the posterior median dorsal plate (PMD, Figure 3A) of the trunk shield.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) Squamation in (A) right lateral, (B) left lateral, (C) anterior, and (D) dorsal views. (E) Posterodorsal fulcral scales in ventral side. (F) Interpretative diagram of the dorsal fin scales, showing their contact relationships. (G) Dorsal fin scales in left lateral view. (H) Dorsal scales in right lateral view. (I–J) Anterior dorsal scales in (I) dorsal and (J) left lateral views. (K) Morphotype 6–7 scales on the right side in CT reconstruction (K1) and cross-section diagram (K2), showing the trajectory and profile of the lateral line groove. (L) Morphotype 6 scales on the left side. The black and red arrows indicate the anterior and dorsal directions, respectively. Dotted lines indicate the levels of vertical sections shown in (K2). PDL, posterior dorsolateral plate; other abbreviations see text and Figure 1. Scale bars equal to 2 mm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Dorsal squamation in (A1) dorsal and (A2) left lateral views. (B–E) Anterior dorsal scale in (B1–E1) dorsal and (B2–E)2 ventral views. (F, H and I) First, second and third dorsal ridge scale in (F1, H1 and I1) dorsal and (F2, H2 and I2) ventral views. (G) Anterior dorsolateral scale in (G1) dorsal, (G2) ventral and (G3) posterior views. (J–N) anterodorsal lateral line scale in (J1–N1) posterior and (J2–N2) ventral views. (O) Posterodorsal lateral line scale in (O1) dorsal, (O2) ventral and (O3) left lateral views. (P) Posterodorsal lateral line scale preserved on the left side in dorsal view. (Q–T) Posterodorsal fulcral scale in (Q1–T1) dorsal, (Q2–R2) mesial and (S2–T2) posterior views. The black and red arrows indicate the anterior and dorsal directions, respectively. of, overlapping field; other abbreviations see text. Scale bar equals to 1 mm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A1, C1–H1, J1–N1) Dorsal view. (A2, C2–H2, J2–N2) Ventral view. (B and I) Lateral view. The black arrow indicates the anterior direction. Scale bar equals to 1 mm.
 
 Morphotype 2—dorsal ridge scale (drs1-3; Figure 3D; Figure 3—figure supplement 1F, H, I). Also termed the ‘dorsal scute’ or ‘median dorsal scale’ (Zhang, 1978; Zhu et al., 2012), it is represented by three large, symmetric, polygonal scales (w/l of about 0.8) behind the ads. Each scale bears a conspicuous bump. The width of the scale decreases backward, with the bump sitting more posteriorly relative to the center of the scale from the first to the third one. The first dorsal ridge scale is featured by a roughly quadrangular outline and a vaulted base. The second one has waved lateral margins and a nearly flat base. The third one, narrow heptagonal in shape, bears developed anterior and lateral corners, and a slender longitudinally directed ridge (dr; Figure 3—figure supplement 1I). The base of the third scale is deeply concave beneath the ridge.
 
@@ -57,9 +67,25 @@ Morphotype 7—posterodorsal lateral line scale (ls.ps; Figure 3H; Figure 3—fi
 
 Morphotype 8—afs (Figure 4A; Figure 4—figure supplement 1A–E, G, I–M). The scales are oval to sub-rhomboid in shape and form the first 15 (on the right side) or 18 (on the left side) rows (Figure 4A, B) on the post-thoracic body. The crown, which is narrower than the base, slightly leans back, and usually beyond the base. The first three rows consist of closely packed scales, while the following rows consist of loosely packed scales. There is a trend of scale size reduction in the top-down direction. A shallow groove on the crowns of three adjacent flank scales in rows 7–9 of the left side represents the anterior elongation of the lateral line on the Morphotype 6 scales (Figure 4—figure supplement 1B, C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig4-v1.jpg)
+
+**Figure 4.:** (A) Left flank scales in lateral view. (B) Right flank scales in lateral view. (C) Left flank scales in ventral view. (D–E) A series of flank scales in (D) ventral and (E) anterior views, showing the anterior–posterior gradation of scales. The boundaries between the anterior and posterior flank areas are indicated by a solid line, which represents the extend line of the posterior edge of the dorsal fin. The red scales shown in (A) are interspersed scales (is). The red arrow indicates the dorsal direction. Scale bars equal to 1 mm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–E, (G), I–M) Anterior flank scales in (A1–E1, (G1), I1–M1) dorsal and (A2–E2, (G2), I2–M2) ventral views. (F and H) Posterior flank scales in (F1 and H1) dorsal and (F2 and H2) ventral views. The red arrow indicates the dorsal direction. Scale bars equal to 1 mm.
+
 Morphotype 9—posterior flank scale (pfs; Figure 4B; Figure 4—figure supplement 1F, H). They are represented by the flank scales lying in rows 16–22 (on the left side) or 18–22 (on the right side), posterior to the trailing edge of the dorsal fin (Figure 4A, B). The scales are rectangular (w/l of 0.83) in shape. The flat crown almost covers the base, rarely leaving a df.
 
 Morphotype 10—anterior ventral scute (avs; Figure 5A; Figure 5—figure supplement 1A, G). The ventral scutes in the first to third rows are asymmetric in shape with a straight mesial margin. The crown of the first scute is separated from the base posteriorly by a constricted groove (gr; Figure 5E–G). The scute consists of the lateral and ventral laminae (ll.vs, vl.vs; Figure 5C). The right scute overlaps the left one in the first two rows, but the left one in the third row overlaps the right one (Figure 5D, H, I).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig5-v1.jpg)
+
+**Figure 5.:** (A) Ventral scales in ventral view. (B) Virtual axial section of the ventral scutes at the level indicated by the white dotted line in (A). (C) Ventral scutes in anterior view. (D) Ventral scales in dorsal view. (E) A series of ventral scutes in posterior view. (F) The first right ventral scute in posterior view. (G) Virtual axial section of the scale in (F). (H–I) Anterior ventral scutes in (H) first and (I) second rows in ventral views. (J–K) Reconstruction and interpretative reconstructions of the posterior ventral scutes in the fourth and fifth rows in ventral view, respectively. (L) Virtual sagittal section of the additional scale and its surrounding scales. (M) Schematic diagram of the articulated way between ventral scutes in the front and back rows. (N) Ventrolateral scale and its surrounding flank scales. The black and red arrows indicate the anterior and dorsal directions, respectively. Scale bar equal to 2 mm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A), and (C–G) Anterior ventral scutes in (A1), and (C1–G1) dorsal and (A2), and (C2–G2) ventral views. (B) Ventral squaqmation in ventral view. (H–I) Ventrolateral scale in (H1–I1) dorsal, (H2–I2) ventral and (H3–I3) posterior views. (J–N) Posterior ventral scutes in (J1–N1) dorsal and (J2–N2) ventral views. The black and red arrows indicate the anterior and dorsal directions, respectively. Scale bar equals to 1 mm.
 
 Morphotype 11— posterior ventral scute (pvs; Figure 5D; Figure 5—figure supplement 1J–N). The ventral scutes behind the third row share a staggered arrangement (Figure 5J, K). Each scute overlaps the two back ones. The scute is nearly symmetric, with a roughly rhombic shape in most cases. The base is thickened and concave centrally. The upturned posterior margin of the front scute closely articulate with the downturned anterior margin of the back one (Figure 5B, M). Compared with Morphotype 10, the lateral lamina in the Morphotype 11 scale is much less developed (Figure 5C, E).
 
@@ -67,9 +93,17 @@ Morphotype 12—ventrolateral scale (vls; Figure 5A; Figure 5—figure supplemen
 
 Morphotype 13—caudal lobe scale (cls; Figure 3A). The scales with a small rectangular or square shape cover the hypochordal lobe. They align into four parallel rows in a longitudinal direction.
 
-## Squamation
+### Squamation
 
 The post-thoracic body of P. xitunensis (Figure 6) is about 3.8 mm in width, 6.7 mm in height, and 35.6 mm in length, and occupies approximately 58% of the length overall as noted before (Zhu et al., 2012). It is roughly triangular-shaped in the transverse section, and broadest at the level just posterior to the ventral wall of the trunk shield (Figure 3C, D). The dorsal fin is positioned at about the first third of the post-thoracic body length (Figures 1B, 3A, B), and its preserved part is about 3.0 mm in length, 1.0 mm in width, and 1.6 mm in height.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig6-v1.jpg)
+
+**Figure 6.:** (A) Squamation model showing division of areas. (B) 3D model by Dinghua Yang, showing distribution of scale morphotypes. Small letters in (A) represent the (a) predorsal, (b) dorsal fin, (c) posterodorsal, (d) dorsolateral, (e) anterior flank, (f) posterior flank, (g) ventral, (h) ventrolateral and (i) caudal lobe areas. Scales from CT reconstruction in (B) share the same scale bar and are aligned towards the anterior direction, as indicated by the black arrow. Each morphotype is represented by a typical scale or scales with the most disparity within the morphotype. Deep and light red lines represent the exact and inferred trajectory of the lateral line, respectively. ADL, anterior dorsolateral plate; AMD, anterior median dorsal plate; AVL,anterior ventrolateral plate; other abbreviations see text and Figures 1 and 3. Scale bars equal to 2 mm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Dorsal view. (B) Ventral view.
 
 The scales are packed into oblique dorsoventral rows (flank scales), longitudinal files (dorsal and ventral scales), and curved linear rows (caudal lobe scales) (Figure 6—figure supplement 1). According to the scale morphotypes and arrangements, the squamation can be divided into four large regions (dorsal, ventral, flank, and caudal lobe regions), which can be further divided into nine areas (Figure 6A).
 
@@ -81,15 +115,23 @@ The ventral region comprises the ventral and ventrolateral areas. The scales in 
 
 The caudal lobe region, or the ventral lobe of the caudal peduncle, is covered by tiny scales (Morphotype 13). Being the smallest amongst the squamation (Figure 6B), these scales are arranged in linear rows as the tail scales of other antiarchs, such as Pterichthyodes (Hemmings, 1978).
 
-## Histology of yunnanolepidoid scales
+### Histology of yunnanolepidoid scales
 
 Despite yunnanolepidoid antiarchs displaying abundant fossil records in the Early Devonian sediments of South China (Burrow et al., 2000; Zhao and Zhu, 2010; Zhu, 1996; Zhu et al., 2000), the identification of isolated scales has proven difficult as the scale sculpture, mainly composed of round tubercles, is less diagnostic. As such, yunnanolepidoid scales have never been investigated histologically. For the histological research, we selected dozens of isolated placoderm scales from the type locality and horizon of P. xitunensis, where yunnanolepidoid antiarchs are the most common placoderm fossils. These isolated scales (Figure 7—figure supplement 1) are difficult to be referred to as any definite species, however, they can be assigned to yunnanolepidoids with a reference to the articulated specimen of P. xitunensis described here in detail. Displaying various shapes, these scales should come from different species and/or different areas of the post-thoracic body: V28643, V28645, and V28646 can be assigned to Morphotype 8; V28644 and V28647, probably from the posterior flank area, can be referred to Morphotype 9; V28642 can be referred to Morphotype 11. The thin sections through different morphotypes of yunnanolepidoid scales show that the scale uniformly comprises two main divisions: a compact superficial layer, and a thick, lamellar basal layer (sup, bas; Figure 7). Thus, the histology of yunnanolepidoid scales is remarkably different from that of their dermal bony plates, which exhibits a three-layered structure including a thick cancellous spongiosa in the middle as in Yunnanolepis and Chuchinolepis (Giles et al., 2013). Significantly, the dermal skeletal differentiation across the dermal shield and scales with respect to the middle layer, is also the case for heterostracans and osteostracans (Denison, 1947; O’Shea et al., 2019).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig7-v1.jpg)
+
+**Figure 7.:** (A) IVPP V28642. (B) IVPP V28643. (C) IVPP V28644. (D) IVPP V28645. (E) IVPP V28646. (F) IVPP V29647. Scale bar equal to 100 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76661/elife-76661-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–E) Reconstruction of IVPP V28642–V28647 based on CT scanning. (A) V28646. (B) V28643. (C) V28645. (D) V28644. (E) V28647. (F) V28642. (A1–F1) Dorsal view. (A2–E2) Lateral view. (A3–E3, F2) Ventral view. Approximate planes of dorso-ventral vertical ground sections are indicated by short lines. Scale bar equals to 500 μm.
 
 The superficial layer of the yunnanolepidoid scale is confined to the tubercular ornament. No apparent dentine tubules could be identified due to recrystallization (rt; Figure 7E) of mineralized tissues. However, the dentine tissue was reported in yunnanolepidoid dermal plates (Giles et al., 2013; Young, 2008), suggesting another potential differentiation across the scale and the dermal plate. The odontodes in the superficial layer display signs of superpositional stacking of at least three generations (go1–3; Figure 7A), and the number of superimposed layers of odontodes decreases from the center of the scale to the edge. The younger odontodes cover the older generations of odontodes either completely or incompletely, suggesting a combined areo-superpositional growth (Ørvig, 1968) or a compound growth (Cui et al., 2021). Polyodontode and the compound growth pattern have been considered to be plesiomorphic in jawed vertebrates (Cui et al., 2021; Qu et al., 2013). The conditions in yunnanolepidoid scales offer support for these hypotheses. Most of the lacunae are star-shaped with rounded or more elongated cell bodies (lac; Figure 7A), and have ramifying canaliculi in all directions. The vasculature might be supplied by occasional ascending canals (vc; Figure 7A) from the basal layer, which opened to the surface but was buried later by younger odontodes. In this case, the middle/spongiosa layer may be poorly developed or absent in certain morphotypes. The basal layer is permeated by vertical Sharpey’s fibers (sf; Figure 7A). These fibers converge towards the center of the scale, at right angles to the lines of the laminae. The scale base shows a series of growth lines (gl; Figure 7A).
 
 ## Discussion
 
-## Squamation of antiarchs
+### Squamation of antiarchs
 
 As described above, P. xitunensis exhibits remarkable morphological variability in the scales of nine body areas. Also present in Romundina and Radotina (Ørvig, 1975), another two primitive members of placoderms (Li et al., 2021; Vaškaninová et al., 2020), the high regionalization of squamation probably represents a primitive character for jawed vertebrates.
 
@@ -101,7 +143,7 @@ In comparison, the squamation regionalization in the ventral and dorsal regions 
 
 It seems that the squamation is simplified in the aspect of regionalization or disparity in euantiarchs, and further simplified in the clade comprising Asterolepis and Remigolepis, as their ventral scales are not differentiated from the flank scales (Figure 8). The simplification of squamation has also occurred in crown sarcopterygians and actinopterygians (Cui et al., 2019; Friedman and Blom, 2006; Mondéjar-Fernández and Clément, 2012), and possibly in crown chondrichthyans (Ferrón et al., 2018), suggesting substantial parallelism of squamation in early jawed vertebrates.
 
-## Phylogenetic signals in scale microstructure
+### Phylogenetic signals in scale microstructure
 
 The dermal skeleton of heterostracans, osteostracans, placoderms, and early osteichthyans usually consists of three principal layers: a superficial layer composed of dentine and enameloid/enamel; a trabecular/cancellous layer composed of vascular bone; and a compact basal layer composed of lamellar/pseudolamellar bone (Burrow and Turner, 1999; Donoghue and Sansom, 2002; Giles et al., 2013; Qu et al., 2015b). This tripartite structure was considered to be plesiomorphic for early jawed vertebrates (Qu et al., 2015b; O’Shea et al., 2019). However, different dermal units evolve as independent modules (Qu et al., 2015b), and vary in histological structure as suggested by the conditions in yunnanolepidoids. In this section, we compare scales of early jawed vertebrates to assess how the variation of diagnostic scale traits including histology and sculpture is correlated with the phylogenetic relationships (Figure 9; Zhu et al., 2016).
 
@@ -125,7 +167,7 @@ In crown gnathostomes, the middle layer occurs extensively in early osteichthyan
 
 The osteonal middle layer was hypothesized evolved in a clade consisting of osteostracans plus jawed vertebrates (Keating and Donoghue, 2016). Then the middle layer of scales is reduced or absent in the jawed vertebrate node, since the bipartite scale (a thick basal layer +a superficial layer) is more likely to be a common feature for primitive placoderms (Burrow, 1996; Denison, 1978) with new evidence from yunnanolepidoid scales. The middle layer subsequently independently evolved several times in scales of euantiarchs, brindabellaspids, and a clade comprising more crownward placoderms including petalichthyids and arthrodires, plus crown gnathostomes, but lost again in the chondrichthyan total group (Figure 9). Alternatively, under the recent phylogenetic hypothesis by Zhu et al., 2021, the most parsimonious solution is that the well-developed middle layer independently evolved four times in petalichthyids + arthrodires, brindabellaspids, euantiarchs and osteichthyans.
 
-## Conclusions
+### Conclusions
 
 A comprehensive study on the squamation of P. xitunensis using X-ray computed tomography and the histology of disarticulated scales provides the following new features in yunnanolepidoid antiarchs: (1) scales are generally rhombic, thick and show a concave base, but still vary in shape, size, ornamentation, concavity of the base, and overlap relationships in one individual, based on which we classified them into at least thirteen morphotypes for P. xitunensis; (2) nine areas of the post-thoracic body are distinguished to show the scale variations in the dorsal, flank, ventral, and caudal lobe regions, revealing the high regionalization of squamation at the root of jawed vertebrates; (3) yunnanolepidoid scales are histologically bipartite, composed of a thin upper superficial layer with multiple generations of tubercles and a thick basal layer.
 

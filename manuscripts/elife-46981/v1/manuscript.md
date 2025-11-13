@@ -30,7 +30,7 @@
 
 ## Abstract
 
-Generation of skeletal muscle cells with human pluripotent stem cells (hPSCs) opens new avenues for deciphering essential, but poorly understood aspects of transcriptional regulation in human myogenic specification. In this study, we characterized the transcriptional landscape of distinct human myogenic stages, including OCT4::EGFP+ pluripotent stem cells, MSGN1::EGFP+ presomite cells, PAX7::EGFP+ skeletal muscle progenitor cells, MYOG::EGFP+ myoblasts, and multinucleated myotubes. We defined signature gene expression profiles from each isolated cell population with unbiased clustering analysis, which provided unique insights into the transcriptional dynamics of human myogenesis from undifferentiated hPSCs to fully differentiated myotubes. Using a knock-out strategy, we identified TWIST1 as a critical factor in maintenance of human PAX7::EGFP+ putative skeletal muscle progenitor cells. Our data revealed a new role of TWIST1 in human skeletal muscle progenitors, and we have established a foundation to identify transcriptional regulations of human myogenic ontogeny (online database can be accessed in http://www.myogenesis.net/ ).
+Generation of skeletal muscle cells with human pluripotent stem cells (hPSCs) opens new avenues for deciphering essential, but poorly understood aspects of transcriptional regulation in human myogenic specification. In this study, we characterized the transcriptional landscape of distinct human myogenic stages, including OCT4::EGFP+ pluripotent stem cells, MSGN1::EGFP+ presomite cells, PAX7::EGFP+ skeletal muscle progenitor cells, MYOG::EGFP+ myoblasts, and multinucleated myotubes. We defined signature gene expression profiles from each isolated cell population with unbiased clustering analysis, which provided unique insights into the transcriptional dynamics of human myogenesis from undifferentiated hPSCs to fully differentiated myotubes. Using a knock-out strategy, we identified TWIST1 as a critical factor in maintenance of human PAX7::EGFP+ putative skeletal muscle progenitor cells. Our data revealed a new role of TWIST1 in human skeletal muscle progenitors, and we have established a foundation to identify transcriptional regulations of human myogenic ontogeny (online database can be accessed in http://www.myogenesis.net/).
 
 ## Introduction
 
@@ -46,19 +46,45 @@ In this study, to systematically investigate the transcriptional blueprint for d
 
 ## Results
 
-## Generation of stage-specific genetic reporter hPSC lines to simulate human embryonic myogenesis in vitro
+### Generation of stage-specific genetic reporter hPSC lines to simulate human embryonic myogenesis in vitro
 
 During human embryonic myogenesis, several key marker genes are known to play significant roles in each stage (Figure 1A), for example, OCT4 and NANOG in pluripotent stem cells, MSGN1 and TBX6 in presomite cells (Chapman and Papaioannou, 1998; Fior et al., 2012; Loh et al., 2006; Thomson et al., 1998), PAX7 in putative myogenic stem/progenitor cells, and MYOD1 and MYOG in myoblasts before myotube formation (Nabeshima et al., 1993; Seale et al., 2000; Hasty et al., 1993; Kassar-Duchossoy et al., 2005). Previously, we have developed an in vitro myogenic specification protocol directing hPSCs into human skeletal muscle cells through the GSK3β and Notch signal inhibition pathway (Choi et al., 2016). We used this protocol to test whether differentiating hPSC cells express stage-specific myogenic transcription factors. Time course expression of each gene mentioned above was profiled using quantitative Real-Time PCR (qRT-PCR) analysis for the first 30 days of differentiation (Figure 1—figure supplement 1A). Expression levels of pluripotency markers, OCT4 and NANOG, were high in undifferentiated hESCs, but decreased rapidly upon initiation of muscle specification. Within 4 days of myogenic specification, the expression of mesoderm markers T (Brachyury), MIXL1, and presomite markers MSGN1 and TBX6 was induced, while the expression levels of PAX7, MYF5, MYOD1 and MYOG gradually increased around day 20. For the characterization between MSGN1 and PAX7, we performed the gene expression profiles of PAX3, MEOX1, FOXC1, FOXC2, PARAXIS, and SCLERAXIS during in vitro myogenesis. PAX3, MEOX1, FOXC1, and FOXC2 gene started their gene expression at Day 4, and had a peak between Day 6 and Day 8 which imply that intermediate somite stage fills the gap between MSGN1+ stage and PAX7+ stage. To determine protein expression levels, we performed immunostaining in each stage with OCT4, TBX6, PAX7, MYOG, MYHs (MF20), and ACTN1 (α-actinin) antibodies (Figure 1B). Distinct protein expression patterns were observed during our in vitro myogenic specification: OCT4 expressing cells were 96.42 ± 2.55% of undifferentiated hESCs (mean ± SEM); at day 4, 87.78 ± 4.46% of the cell population expressed TBX6; at day 20, 31.72 ± 5.78% of the cell population expressed PAX7; at day 25, 53.30 ± 6.39% of the cell population expressed MYOG; at day 40, 87.99 ± 3.64% of the cell population expressed MF20. Multinucleated and striated myofibers were generated with expression of the myofiber marker, α-actinin. Notably, cardiac troponin T (cTnT) and smooth muscle alpha actin (SMAA)-positive cells were hardly detected (data not shown), demonstrating that there is almost no contamination of cardiac muscle or smooth muscle lineage. Taken together, these data demonstrated that using our skeletal muscle protocol, hPSCs can be directed to skeletal muscle lineages with the expression of key marker genes.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the embryonic myogenesis of hPSCs with stage-specific marker genes. (B) Immunocytochemistry of OCT4, TBX6, PAX7, MYOG, MF20 and α-actinin during in vitro muscle differentiation. (bars, 100 μm) (C) FACS plots of multiple reporter lines during in vitro muscle differentiation with two chemical compounds and expression of MF20, myotube marker. (D) Plot of EGFP percentage for each marker in multiple reporter lines during in vitro muscle differentiation. Values were detected every 2 days. (E) Heatmap of stage-specific marker genes expression in FACS-sorted positive population for each marker in multiple reporter lines (OCT4::EGFP+ cells at day 0, MSGN1::EGFP+ cells at day 4, PAX7::EGFP+ cells between day 26 and day 30, MYOG::EGFP+ cells between day 34 and day 37, and myotube isolation at day 36–40. The maximum values in each column were adjusted to 100.).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) mRNA expression pattern of stage-specific marker genes for in vitro muscle specification. (B–C) The constructs for generation of PAX7::EGFP reporter line and MYOG::EGFP reporter line. (D) PAX7 gene expression levels in PAX7::EGFP+ cells and PAX7::EGFP- cells. (E) Early skeletal muscle specific marker gene expression levels in PAX7::EGFP+ cells and PAX7::EGFP- cells. (F) MYOG gene expression levels in MYOG::EGFP+ cells and MYOG::EGFP- cells. (G) Known myogenic key marker gene expression levels in MYOG::EGFP+ cells and MYOG::EGFP- cells. (H) Novel method for isolation of myotube from heterogeneous culture using differential rate of detachment of cell types upon trypsin. (I) Morphology of myotube culture before and after cell detachment by trypsin. (J) Expression of skeletal muscle regulation marker genes in detached cell group (myoblast) and remaining cell group (myotube).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) SOX10 gene expression levels of differentiated neural crest cells at day 10 as a positive control, PAX7::EGFP+, and PAX7::EGFP- cell populations (****, p value < 0.0001; ***, p value < 0.001; unpaired t-test). (B) PAX6 gene expression levels of differentiated neural crest cells at day 10 as a positive control, PAX7::EGFP+, and PAX7::EGFP- cell populations (***, p value < 0.001; ns, not significant; unpaired t-test). (C) Immunohistochemistry of SOX10 and AP2 in differentiated neural crest and PAX7::EGFP+ cell populations (bar, 100 μm). (D) Proportion of PAX7-positive cells, MYOD1-positive cells, and MYOG-positive cells in PAX7::EGFP+ cells. (E) Plot for percentage of Ki67-positive cells in PAX7-positive cells and MYOG-positive cells during in vitro skeletal muscle specification. (F) Heatmap of single-cell qRT-PCR of PAX7, MYF5, MYOD1, and MYOG in a PAX7::EGFP+ cell.
+
 To trace and isolate a homogenous cell population during in vitro human embryonic myogenesis, we generated two hESC genetic reporter lines for PAX7 and MYOG with the 2A-EGFP knock-in system (Figure 1—figure supplement 1B–C). PAX7 and MYOG are well known marker genes for skeletal muscle stem/progenitor cells and myoblasts, respectively, and both are expressed in our in vitro myogenic specification process. The genetic reporter lines were established using the CRISPR/Cas9 system (Cong et al., 2013; Mali et al., 2013) as described previously by our group (OCT4::EGFP and MSGN1::EGFP lines) (Choi et al., 2016; Kim et al., 2014). Each reporter clone was validated by FACS analysis (Figure 1C), and clones with detectable levels of EGFP expression were chosen for further studies. In each stage, the OCT4::EGFP reporter line showed EGFP percentages of 80.97 ± 2.09% at day 0; MSGN1::EGFP, 94.98 ± 0.60% at day 4; PAX7::EGFP, 17.80 ± 1.44% at day 33; MYOG::EGFP, 11.81 ± 1.41% at day 35 (mean ± SEM). Reporting ability was verified with FACS-sorted cells by analyzing the enrichment levels of the related marker gene expression with qRT-PCR (Figure 1—figure supplement 1D–G). PAX7::EGFP+ cells exhibited enrichments of MYF5 (24.04 ± 2.06, mean ± SEM of fold changes), MYOD1 (23.37 ± 1.77), and MYOG (22.98 ± 2.94) expression compared to PAX7::EGFP- cells, while MYOG::EGFP+ cells also showed increased levels of MYOD1, MEF2C and MYH2 expression (149.6 ± 36.77, 69.83 ± 16.18 and 1566 ± 808.5 fold changes, respectively) compared to MYOG::EGFP- cells. To confirm the cellular identity of the PAX7::EGFP+ cells generated by our skeletal muscle differentiation protocol, we performed qRT-PCR with primer sets specific for neural and neural crest lineages such as SOX10, PAX6, and antibody staining of SOX10 and AP2 (Figure 1—figure supplement 2A–B). Both PAX7::EGFP+ cells and PAX7::EGFP- cells showed significantly low levels of gene expression compared to hESC-derived neural crest cells (as a positive control). In the protein level, we did not detect any SOX10+ cells, or AP2+ cells in the PAX7::EGFP+ cells via antibody staining (Figure 1—figure supplement 2C). Furthermore, we confirmed the most of the PAX7::EGFP+ cells express PAX7 protein, but not MYOD1 and MYOG proteins (Figure 1—figure supplement 2D), while 33.17 ± 3.26% of Ki67+ cells are found in PAX7 + cells and 4.92 ± 0.79% of Ki67+ cells in MYOG + cells (Figure 1—figure supplement 2E). Single-cell transcription analysis data showed that some of PAX7::EGFP+ cells already show MYOG expression as well as other marker genes, including MYF5 and MYOD1, while most of the PAX7::EGFP+ cells have high level of PAX7 expression (Figure 1—figure supplement 2F). For the confirmation of fusion abilities with the PAX7::EGFP+ cells, post-sorted cells were induced to the terminal differentiation or myotube formation, and showed great fusion ability with spontaneous twitching (Video 1). FACS analysis followed by intracellular staining with MF20 antibody showed 85.28 ± 2.04% of expression at day 23 (Figure 1C).
+
+![Video 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-video1.mp4.jpg)
 
 Next, we examined the time-course expression levels of OCT4, MSGN1, PAX7 and MYOG in each genetic reporter line (Figure 1D). The OCT4::EGFP line had a peak EGFP percentage at day 0, MSGN1::EGFP line peaked at days 2 and 4, and both PAX7::EGFP and MYOG::EGFP lines showed EGFP+ cells at day 20, which gradually increased and reached highest levels at day 30. These results were corroborated by the gene expression profiles measured by qRT-PCR (Figure 1—figure supplement 1A) and demonstrated the reliable reporting ability of our genetic reporter hPSC lines.
 
 During skeletal muscle specification with each reporter cell line, EGFP+ cells were harvested using FACS purification at their highest peak of expression (OCT4::EGFP+ cells at day 0, MSGN1::EGFP+ cells at day 4, PAX7::EGFP+ cells between day 26 and day 30, and MYOG::EGFP+ cells between day 34 and day 37) and subjected to gene expression profiling. For multinucleated myotube isolation from the heterogeneous culture, we devised a new method based on differential detachment rates between myotubes and non-myotube cells upon trypsin treatment. Non-myotube cells tend to detach faster than myotubes, which enabled us to remove non-myotube cells (mostly myoblast-like cells) first, followed by harvesting remnant multinucleated myotubes a few minutes later (Figure 1—figure supplement 1H–I). We confirmed that the remnant cell population showed enriched gene expression levels of DMD (32.69 ± 1.28 fold changes), TTN (27.42 ± 1.26), and MYH2 (21.40 ± 0.95) compared to the detached cell population (Figure 1—figure supplement 1J). Each FACS purified population was validated using qRT-PCR (Figure 1E), and the results confirmed that each cell population showed high levels of expression of the representative marker genes for the corresponding stage of differentiation: OCT4 and NANOG in OCT4::EGFP+ cells, TBX6, T, and MSGN1 in MSGN1::EGFP+ cells, PAX3 and PAX7 in PAX7::EGFP+ cells, MYOD1, MYOG, MEF2C, MYH2, and TTN in MYOG::EGFP+ cells, and MEF2C, MYH2, and TTN in isolated myotubes.
 
-## Genome-wide transcriptome analysis of FACS-purified cell populations during human myogenesis
+### Genome-wide transcriptome analysis of FACS-purified cell populations during human myogenesis
 
 In order to comprehensively examine stage-specific gene expression profiles during in vitro human myogenesis at the genome-wide level, we carried out RNA Sequencing (RNA-seq) of the purified cells from five different stages of myogenesis: OCT4::EGFP+ cells, MSGN1::EGFP+ cells, PAX7::EGFP+ cells, MYOG::EGFP+ cells, and Myotubes. Using the isolation strategy outlined earlier, we prepared four populations with genetic reporter lines and one with myotube separation strategy (four independent biological replicates). On average, 83 million total reads and 34 million aligned reads were produced per sample, and sequencing reads were evenly distributed throughout the whole span of transcripts. Universal genes, such as GAPDH and ACTB, were evenly expressed across samples, whereas stemness markers (OCT4, NANOG, and SOX2), or pan somite markers (MSGN1, T (Brachyury), and TBX6), and myogenesis markers (PAX7, PAX3, MYF5, MYOD1, MYOG, TTN, MYH3, MYH2, and MYH7) were expressed only in subsets of groups (Figure 2A, Figure 2—figure supplement 1A, and Supplementary file 1). OCT4::EGFP+ cells expressed high levels of OCT4, NANOG, and SOX2, and MSGN1::EGFP+ cells were enriched with genes for the presomite stage, such as MSGN1, T, and TBX6. PAX7::EGFP+ cells had high expression of PAX7, PAX3, and MYF5, and MYOG::EGFP+ cells had enriched gene expression of MYOG, MYOD1, TTN and MYH3. While TTN and MYH3 were expressed in both MYOG::EGFP+ cells and Myotubes, MYH2 (fast twitching fiber marker gene) (Figure 2—figure supplement 1A) was expressed only in Myotube samples, which represent secondary myogenesis (Parker et al., 2003; Biressi et al., 2007).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig2-v1.jpg)
+
+**Figure 2.:** Each sample of cell population was collected as described in Figure 1E. (A) Coverage profiles of total RNA from each group: NANOG, SOX2, T, TBX6, PAX3, MYF5, MYOD1, TTN, MYH3, MYH7, and universally expressed gene ACTB. (B) Dendrogram of RNA-seq result produced by hierarchical clustering of five cell populations. (C) Principal component analysis (PCA) plot of five cell populations during in vitro myogenesis. Gray arrow indicates ‘Virtual myotime’ from OCT4::EGFP+ to Myotube samples. (D) Enriched Gene ontology (GO) terms with transcription factors that had high p values in five cell populations from RNA-seq data. (E) Venn diagram of the upregulated genes and their GO terms in PAX7::EGFP+ cells and MYOG::EGFP+ cells compared to OCT4::EGFP+ cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative coverage profile of stage-specific genes (OCT4, MSGN1, PAX7, MYOG, MYH2) including housekeeping gene (GAPDH). (B) Heatmap and hierarchical clustering of RNA-seq data. (C) Heatmap of GO term analysis pattern during in vitro myogenesis. (D) List of upregulated TFs in each PAX7::EGFP+ group and MYOG::EGFP+ group compared to each other.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Venn diagram of the PAX7::EGFP+, MYOG::EGFP+, and Myotube samples. (B) Pathway analysis of cell-type-specific gene signatures. (C) Heatmap of phosphorylation for multiple protein substrates in PAX7::EGFP+ cells and MYOG::EGFP+ cells.
 
 To evaluate the whole-transcriptome data set of individual groups, we compared differentially expressed genes across five stage-specific populations and grouped them based on their gene expression patterns. Unsupervised hierarchical clustering analysis of global gene expression showed correlations of five groups with clustering (Figure 2B). The heatmap showed 5361 differentially expressed genes through the groups with unsupervised hierarchical clustering (Figure 2—figure supplement 1B). The PAX7::EGFP+ population clustered with the MYOG::EGFP+ population and Myotubes, whereas the OCT4::EGFP+ population and MSGN1::EGFP+ cells clustered together in another branch away from the former group. To obtain an overview of the transcriptional association, principal component analysis (PCA) was performed, and the genetic distance and relatedness between the five cell populations were illustrated (Figure 2C). This analysis showed the transcriptional direction from pluripotent stem cells toward somite like cells, myogenic cells, and myotubes in three axes, named ‘virtual myotime’. In order to better understand the important biological processes during human skeletal muscle development, we performed statistical Gene Ontology (GO) analysis (Figure 2—figure supplement 1C). The GO terms of Anterior/posterior pattern specification (GO:0009952, p value, 2.02E-10) in MSGN1::EGFP+ cells and striated muscle tissue development (GO:0014706, 2.85E-08) in Myotubes showed statistical significance and revealed the transcriptional directionality from pluripotent stem cells into multinucleated myotubes. We next examined differentially expressed TFs between groups for the enrichment of GO biological process (Figure 2D). The GO analysis showed enrichment of Embryo Development (GO:0009790, 1.37E-06), Stem Cell Population Maintenance (GO:0019827, 2.44E-06), and Maintenance of Cell Number (GO:0098727, 2.77E-06) in OCT4::EGFP+ cells; Embryo Organ Development (GO:0048568, 6.11E-12), Regulation of Cell Differentiation (GO:0045595, 3.57E-11), and Anterior/posterior Pattern Specification (GO:0009952, 2.02E-10) in MSGN1::EGFP+ cells; and Muscle Structure Development (GO:0061061, 2.35E-11), Skeletal Muscle Tissue Development (GO:0007519, 1.76E-08), and Striated Muscle Tissue Development (GO:0014706, 2.85E-08) in Myotubes. The enriched GO terms in MYOG::EGFP+ cells included Regulation of Biological Process (GO:0050789, 1.04E-09), Skeletal Muscle Tissue Development (GO:0007519, 1.08E-09), and Skeletal Muscle Organ Development (GO:0060538, 1.62E-09), while PAX7::EGFP+ cells involved GO terms related to muscle development, such as Muscle Structure Development (GO:0061061, 3.42E-12), as well as general differentiation GO terms, including Regulation of Cell Differentiation (GO:0045595, 3.92E-14) and Regulation of Cell Proliferation (GO:0042127, 4.45E-12).
 
@@ -66,27 +92,67 @@ To further investigate the relationship between PAX7 and MYOG, we compared expre
 
 These data were confirmed via a phosphorylation antibody blot (R and D, ARY003B), presenting that significantly increased levels of phosphorylation in the CREB and β-catenin in the PAX7::EGFP+ cells over the MYOG::EGFP+ cells (Figure 2—figure supplement 2C). These data reflected that PAX7::EGFP+ cells have a distinctively different transcriptional nature from MYOG::EGFP+ cells.
 
-## Clustering analysis showed unique transcriptional expression profiles
+### Clustering analysis showed unique transcriptional expression profiles
 
 To uncover distinct transcriptional changes during in vitro human skeletal muscle specification, we employed K-mean clustering in order to group genes with significant changes in time-dependent expressions into 10 clusters with median values for a total of 22,939 gene expressions (Figure 3—figure supplement 1A and Supplementary file 3). To validate these categories, we visualized transcriptional levels of a top 50 gene list in each cluster, and their expression profiles were used to help establish milestones along the differentiation time course. To validate the clustering analysis, we chose well-known genes for each cluster and examined their expression levels in five stage-specific cell populations during myogenesis (Figure 3A and Supplementary file 3). All selected marker genes were highly enriched in their corresponding cell type groups, supporting the accuracy of K-mean clustering. The five clusters were chosen as these are representative to the known stages of myogenesis, and hoping to uncover previously unknown transcriptional regulator(s) in each stage. Several genes have spike during the skeletal muscle generation were selected for the further investigation (Figure 3B). Each cluster presented unique distinctive transcriptional changes during in vitro myogenesis. For example, Cluster 1 was comprised of genes upregulated in MSGN1::EGFP+ cells, which include distinct presomite marker genes such as TBX6, MSGN1, T, and MESP1, without overlapping expression of marker genes of pluripotent stem cell markers or myoblast markers. Also, expression of CDX1/2 and GSC genes in Cluster one were enriched exclusively in MSGN1::EGFP+ cells (Ikeya and Takada, 2001; Niehrs et al., 1994). While Cluster 2 included genes related to myotubes such as MYH1, MYL2, MYH2, ITGB1, and TMEM182 (Leikina et al., 2018; Mascarello et al., 2016; Stuart et al., 2016; Schwander et al., 2003), Cluster 3 had known myoblast marker genes with upregulated expression patterns in both PAX7::EGFP+ cells and MYOG::EGFP+ cells, such as SIX4, PITX3, MYF6, and MSTN (Bentzinger et al., 2012; Chang and Kioussi, 2018; McFarlane et al., 2011). Cluster 4 showed highly upregulated gene expression profiles in PAX7::EGFP+ cells, indicating the presence of early myoblast marker genes, such as PAX7 and MYF5 (Gianakopoulos et al., 2011). Also, CD271, EYA2, EVC, MYF5, ZEB2, and TWIST1 in Cluster four were highly expressed in PAX7::EGFP+ cells. The expression of genes MEF2C, MYH7, MYH3, MYOD1, TTN, DMD (Bentzinger et al., 2012; Mascarello et al., 2016; Stuart et al., 2016; Schiaffino et al., 2015), and RUNX1 in Cluster 10 gradually increased along muscle differentiation and reached peak levels at the late stage of myogenesis.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig3-v1.jpg)
+
+**Figure 3.:** (A) Validation of clustering analysis from RNA-seq data. The heatmap of gene sets from clusters in each cell population during myogenesis showed similar expression patterns of genes in the same cluster. (B) The expression patterns of multiple genes from each cluster; Cluster 1, Cluster 2, Cluster 3, Cluster 4, and Cluster 10 during muscle differentiation and their GO terms (C).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A total of 10 clustering categories were created by gene expression patterns in each stage of OCT4::EGFP+, MSGN1::EGFP+, PAX7::EGFP+, MYOG::EGFP+, and Myotube populations. (B) Coverage profiles of DMD gene from each group. (C) Western blot of DMD in PAX7::EGFP+ cells.
+
 GO analysis of each cluster revealed significant enrichment of genes related to myogenesis, highlighting myogenic specification from hESCs into multinucleated myotube (Figure 3C). Analysis of Cluster 1 presented GO terms of Embryo Development (GO:0009790, p value, 8.37E-21), Segmentation (GO:0035282, 1.97E-09), Mesoderm Development (GO:0007498, 5.15E-07), and Somitogenesis (GO:0001756, 2.17E-06), which are related to somite generation. Myotube related genes indicated GO terms of Skeletal System Development (GO:0001501, 5.92E-07), Myofibril (GO:0030016, 7.69E-07), Muscle System Process (GO:0003012, 7.73E-07), and Muscle Contraction (GO:0006936, 1.64E-06) in Cluster 2. Cluster 3 and Cluster 4 mainly included GO terms involving gene expression and regulation of signaling; however, Skeletal Muscle Cell Differentiation (GO:0035914, 4.74E-05) and Muscle Organ Development (GO:0007517, 6.25E-05) were included only in Cluster 3. Cluster 10 involved Myofibril (GO:0030016, 1.67E-46), Sarcomere (GO:0030017, 2.13E-45), Muscle System Process (GO:0003012, 3.85E-35), and Muscle Contraction (GO:0006936, 4.96E-32), which indicated late myogenesis progress. This clustering analysis demonstrated that each cluster comprised unique gene expression profiles that may reveal new genetic regulators for in vitro human myogenesis.
 
-## CD271 in Cluster 4 can mark PAX7::EGFP+ cells
+### CD271 in Cluster 4 can mark PAX7::EGFP+ cells
 
 One of the interesting transcripts in Cluster 4 was a cell surface marker, CD271 (Figure 4A). To test whether CD271 could be an alternative marker to isolate PAX7 expressing cells during in vitro myogenesis, we performed FACS analysis. Our data demonstrated that 92.55 ± 0.95% of PAX7::EGFP+ cells were positive for CD271 (mean ± SEM) (Figure 4B and Figure 4—figure supplement 1A). In post-sort analysis, 85.41 ± 3.24% of CD271bright cells expressed PAX7 based on antibody staining, whereas 3.41 ± 2.18% of CD271low cell population exhibited PAX7 immunoreactivity (Figure 4C and Figure 4—figure supplement 1B). To test the transcriptional enrichment of myogenic genes, we performed a post-sort qRT-PCR with CD271bright and CD271low populations and found that the levels of PAX7 (fold changes, 27.81 ± 11.84), MYF5 (43.85 ± 22.27), MYOD1 (19.05 ± 10.68), and MYOG (16.33 ± 7.82) expression were significantly enriched in CD271bright cells compared to CD271low cells (Figure 4D–E). To determine the functionality of CD271bright cells, isolated CD271bright cells were cultured and passaged until passage three and differentiated to myotubes in each passage (Figure 4—figure supplement 1C). Quantification of the myotube marker staining (fusion index, please see Materials and methods) showed sustained fusion ability of the expanded CD271bright cells during in vitro expansion (for three weeks, while there are unfused cells), and the levels were comparable to those of the isolated PAX7::EGFP+ cells (Figure 4F and Figure 4—figure supplement 1D–F). While CD271 has been reported as one of the key factors during muscle development (Reddypalli et al., 2005), our data indicated that CD271 can mark PAX7 expressing putative skeletal muscle stem/progenitor population, and purified CD271bright cells can be expanded without losing robust myogenic capability.
 
-## RUNX1 is expressed in subsets of myoblasts and multinucleated myotubes
+![Figure 4.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig4-v1.jpg)
+
+**Figure 4.:** (A) CD271 expression profile with RNA-seq data in five different cell populations during muscle specification. (B) FACS plots of CD271 in PAX7::EGFP+ cell population at day 30 of skeletal muscle specification. (C) The percentages of PAX7+ cells in CD271bright cells and CD271low cells at 4 hr after cell sorting (****, p value < 0.0001; unpaired t-test). (D) PAX7 gene expression levels of CD271bright/CD271low populations (***, p value < 0.001; unpaired t-test). (E) Fold changes of expression levels with myogenic-specific marker genes, PAX7, MYF5, MYOD1 and MYOG in the CD271bright/CD271low populations. (F) Myotube formation ability of CD271bright cells confirmed by DESMIN expression. (G) RUNX1 expression profile with RNA-seq data in five different cell populations during muscle differentiation. (H) Co-localization of RUNX1 and MF20 in differentiating muscle cells at day 30. (bars, 100 μm) (I) The validation of reporting ability of the RUNX1::EGFP reporter line by measuring RUNX1 levels in both RUNX1::EGFP+ and RUNX1::EGFP- cell populations. (J) FACS plots for EGFP reporting RUNX1 expression in RUNX1::EGFP reporter line at day 35 of in vitro myogenesis. (K) Myotube related gene expression levels in both RUNX1::EGFP+ and RUNX1::EGFP- cell populations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Proportion of PAX7::EGFP+ cells in CD271bright cells, CD271inter, and CD271low cells at day 30 of skeletal muscle specification. (B) Immunocytochemistry for the quantitative evaluation of PAX7 protein in CD271bright cells and CD271low cells 4 hr after cell sorting. (C) Cell proliferation ratio of CD271bright cells, CD271inter cells, and CD271low cells after sorting for two passages. (D) Fusion index of CD271bright cells, CD271inter cells, and CD271low cells at passage 1 (***, p value < 0.001; **, p value < 0.01; unpaired t-test). (E) Immunohistochemistry of MF20 in cultured CD271bright cells, CD271inter cells, and CD271low cells. (F) Fusion index in CD271bright cells during passages. (G) Co-localization of RUNX1 and PAX7 in differentiated skeletal muscle cells (bars, 100 μm). (H) Co-localization of RUNX1 and MYOG in differentiated skeletal muscle cells (bars, 100 μm). (I) Construct for the generation of the RUNX1::EGFP reporter line. (J) Morphology of undifferentiated RUNX1::EGFP reporter hESCs in the bright field. (K) mRNA expression pattern of several marker genes (GATA2, FOXA2, SOX17, and AGGRECAN) in RUNX1::EGFP+ cells and RUNX1::EGFP- cells (**, p value < 0.01; *, p value < 0.05; ns, not significant; unpaired t-test).
+
+### RUNX1 is expressed in subsets of myoblasts and multinucleated myotubes
 
 The expression pattern of genes in Cluster 10 gradually increased during muscle differentiation, suggesting that the transcription factors in Cluster 10 can be new markers for the multinucleated myotube stage. For example, the RUNX1 gene in Cluster 10 has been identified as a key transcriptional regulator for cell differentiation (Zhu et al., 1994) and demonstrated to be expressed in skeletal muscle (Wang et al., 2005). However, it is unknown in which cellular stage RUNX1 is expressed during skeletal muscle final differentiation. RUNX1 is particularly interesting as it is clustered in Cluster 10, enriched in the Myotube group (Figure 4G). Antibody staining data demonstrated that immunoreactivity of RUNX1 is found in some multinucleated myotubes and myoblasts; however, we could not find any co-localization between PAX7 and RUNX1 antibody staining (Figure 4H and Figure 4—figure supplement 1G–H). Next, to determine the expression levels of RUNX1 in our skeletal muscle specification process (Choi et al., 2016), we generated a RUNX1::EGFP reporter hiPSC line that marks the expression of all known RUNX1 isoforms (Figure 4—figure supplement 1I–J). In post-sort analysis, the RUNX1::EGFP+ population exhibited a significantly higher gene enrichment rate (p value, 0.005) of RUNX1 than RUNX1::EGFP- cells (Figure 4I), confirming the reporting ability of our RUNX1::EGFP reporter line. At the late stage of skeletal muscle specification (days 30–35), RUNX1::EGFP expression levels were examined by FACS analysis and 44.90 ± 3.23% of total cells showed RUNX1::EGFP expression (mean ± SEM) (Figure 4J). We found significant transcriptional enrichment of myotube marker genes, MEF2C (fold changes, 3.26 ± 0.40), TTN (5.19 ± 0.90), and DMD (1.94 ± 0.18) (Figure 4K). As our differentiation protocol showed highly efficient generation of skeletal muscle cells with over 85% of MF20+ cells as shown in Figure 1C, myogenic marker genes were already enriched in the RUNX1::EGFP+ cells and RUNX1::EGFP- cells. Furthermore, additional qRT-PCR analysis with primer set of other lineage markers, including GATA2 (endodermal), FOXA2 (endodermal), SOX17 (mesodermal), and AGGRECAN (mesenchymal) was confirmed that RUNX1::EGFP+ cells are not mixed with mesodermal, endodermal and mesenchymal cells (Figure 4—figure supplement 1K). These data demonstrate that RUNX1 is expressed during myogenic final differentiation and the RUNX1::EGFP+ cells are mostly skeletal muscle lineage cells.
 
-## The role of TWIST1 in specification, maintenance and differentiation of human PAX7::EGFP+ cells derived from hPSCs
+### The role of TWIST1 in specification, maintenance and differentiation of human PAX7::EGFP+ cells derived from hPSCs
 
 Genes in Cluster 4 show transcriptional activity only in PAX7::EGFP+ cells, suggesting that the transcription factors in Cluster 4 could have crucial roles in the biology of putative human skeletal muscle stem/progenitor cells derived from hPSCs. Among transcription factors in Cluster 4, TWIST1 is one of the interesting genes because TWIST2, an analog of TWIST, was reported as a key transcription factor in adult muscle progenitor cells in adult mouse (Liu et al., 2017). Considering the species differences between human and mouse and developmental stages between embryonic/fetal and postnatal stages, it will be interesting to investigate the roles of TWIST1 in in vitro human myogenesis, in particular PAX7 expressing cells. To investigate the function of the TWIST1 gene in Cluster 4 (Figure 5A), we generated three TWIST1 homozygote knock-out (KO) clones of the PAX7::EGFP reporter hESC line using the CRISPR/Cas9 System (Figure 5B). KO clone number one (#1) contained a deletion of 55 base pairs (bps) in one allele and 26 bps on the other allele including the start codon. KO Clone #3 had deletions of 9 bps on both alleles resulting in removal of the start codon of the TWIST1 gene. KO clone #7 had an insertion of one base pair (Adenosine, A) after the start codon and deletion of one base pair (A) after the start codon on the other allele, which induced frame-shifts on both alleles. Myogenic cells at day 30 derived from these KO clones did not express TWIST1 protein based on western blot experiment and antibody staining (Figure 5—figure supplement 1A) (TWIST1 was not detected in any of 1810 KO cells from three different clones), while TWIST1-positive cells were found in wild type (WT) (23.68 ± 2.25%, mean ± SEM).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig5-v1.jpg)
+
+**Figure 5.:** (A) TWIST1 gene expression pattern of RNA-seq data in five different cell populations during muscle differentiation. (B) The position of genomic DNA and the sequence of gRNA for KO of the TWIST1 gene and the clone numbers with deleted sequences. (C) The experimental scheme of skeletal muscle specification, purification and differentiation. (D) The formation of PAX7::EGFP+ cells in WT and TWIST1 KO lines. (E) The maintenance of PAX7::EGFP+ cell population in WT and TWIST1 KO lines during PAX7::EGFP+ cell expansion. (F) The ability of multinucleated myotube formation in WT and TWIST1 KO lines.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Validation of TWIST1 KO lines with western blot and quantification of TWIST1+ cells at day 30 of in vitro skeletal muscle specification. (B) FACS analysis of PAX7::EGFP in WT and TWIST1 KO clones (#1, #3, #7) at day 30 of in vitro muscle specification. (C) The formation ratio of PAX7::EGFP+ cells in each TWIST1 KO lines compared to WT (ns, not significant; unpaired t-test). (D) The percentage of Ki67+ cells in WT and TWIST1 KO lines. (E) The percentage of Annexin V+ cells in WT and TWIST1 KO lines. (F) Immunocytochemistry of MF20 and DESMIN in WT and TWIST1 KO lines.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) mRNA expression pattern of stage-specific marker genes for in vitro skeletal muscle specification. (B) Ratio of EGFP+ percentages in each TWIST1 KO clone (#1 and #3) compared to those of WT cells (**, p value < 0.01; *, p value < 0.05; ns, not significant unpaired t-test). (C) Quantification of cell size for cultured cells of WT and TWIST1 KO line (ns, not significant unpaired t-test). (D) Quantification of cell length for cultured cells of WT and TWIST1 KO line (ns, not significant unpaired t-test). (E) Images for cultured cells of WT and TWIST1 KO line. (F) Cell proliferation rates of WT and TWIST1 KO PAX7::EGFP+ cells after sorting. (G) Proportions of PAX7+ cells and MYOG+ cells in WT and TWIST1 KO lines during in vitro skeletal muscle specification.
 
 To investigate the roles of TWIST1, we focused on three different aspects: specification of PAX7+ cells, maintenance of PAX7 expression in putative skeletal muscle stem/progenitor cells, and terminal differentiation for the generation of multinucleated myotubes. First, the TWIST1 KO clones in the PAX7::EGFP reporter line were subjected to our myogenic specification protocol (Figure 5C). The levels of PAX7 expression in TWIST1 KO cells were comparable to that of the WT clones between day 25 and day 30 (9.29 ± 0.68% vs. 9.40 ± 1.35, Figure 5D and Figure 5—figure supplement 1B–C), demonstrating that TWIST1 KO does not affect the formation of PAX7+ skeletal muscle stem/progenitor cells during in vitro human skeletal muscle generation. Next, to see if TWIST1 has a role in cell proliferation of PAX7::EGFP+ cells, we tested their proliferation abilities during in vitro expansion. We found 69.88 ± 3.49% of Ki67+ cells in TWIST1 KO PAX7::EGFP+ cells, which was comparable to that of WT clones, indicating that TWIST1 did not affect cell proliferation capacity (Figure 5—figure supplement 1D). The level of apoptosis (examined using Annexin V analysis) in TWIST1 KO PAX7::EGFP+ cells was similar to that of WT clones (Figure 5—figure supplement 1E). To determine the functionality of TWIST1 KO PAX7::EGFP+ cells, isolated PAX7::EGFP+ cells were cultured until passage four and differentiated to myotubes in each passage (Figure 5F and Figure 5—figure supplement 1F). We found that there was no difference in the fusion index (MF20 antibody staining) between TWIST1 KO and WT PAX7::EGFP+ cells, indicating that TWIST1 deletion does not cause any detectable defects in multinucleated myotube formation. Interestingly, there are aberrant transcriptional patterns of PAX3, PAX7, MYF5, and MYOD1 during the myogenic specification (Figure 5—figure supplement 2A), although the levels of PAX7::EGFP+ cells in WT and TWIST1 KO clones (at Day 25 to Day 30 of myogenic specification) are comparable (Figure 5D and Figure 5—figure supplement 2B–C). To test the role of TWIST1 in maintenance of PAX7 expression in the isolated PAX7::EGFP+ cells, we performed weekly FACS analysis during cell expansion for a month. While both WT and KO PAX7::EGFP+ cells showed comparable levels of PAX7 expression at the early passages, the percentages of PAX7::EGFP+ cells in late passages (at passages 2 to 4) were significantly lower in TWIST1 KO PAX7::EGFP+ cells (15.98 ± 1.70% at passage 4) compared to the percentage of PAX7::EGFP+ cells in WT (29.80 ± 1.04% at passage 4) (p values, 0.0983, 0.0008,<0.0001, and 0.0012 at passages 1, 2, 3, and 4, respectively) (Figure 5E and Figure 5—figure supplement 2B). Furthermore, we could not find any significantly difference between the WT and the KO clones in terms of cell morphology, including cellular size and length, proliferation rates, and the proportions of PAX7+/MYOG+ cells (Figure 5—figure supplement 2C–G). These results revealed that TWIST1 deletion has a significant effect on maintaining PAX7::EGFP expression in putative human skeletal muscle stem/progenitor cells, but loss of TWIST1 has no effect on proliferation or apoptosis during in vitro expansion. Taken together, our results demonstrated that TWIST1 might have an important role in the maintenance of PAX7 expression in putative human skeletal muscle stem/progenitor cells.
 
 In order to understand the underlying mechanism of TWIST1’s role in in vitro human myogenesis at the genome-wide level, we carried out RNA-seq analysis for the purified cells from TWIST1 Knock-Out (KO) PAX7::EGFP+ cells. PCA showed that TWIST1 KO PAX7::EGFP+ cells were distinct from the other five cell populations in terms of genetic distance and relatedness (Figure 6—figure supplement 1A and Supplementary file 4, related to Figure 2C). To identify differential gene expression between TWIST1 KO PAX7::EGFP+ cells and WT PAX7::EGFP+ cells, we performed unsupervised hierarchical clustering analysis (Figure 6A and Supplementary file 4). The heatmap showed 643 differentially expressed genes between WT PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells. To investigate the similarities and dissimilarities in the global gene expression between WT PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells, a Venn diagram was plotted (Figure 6B and Supplementary file 4). Out of 4317 genes highly upregulated over OCT4::EGFP+ cell populations, WT PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells had 1996 shared genes with GO terms of Extracellular Matrix Organization (GO:0030198), Muscle Filament Sliding (GO:0030049), and Collagen Catabolic Process (GO:0030574). The 1736 genes upregulated in TWIST1 KO PAX7::EGFP+ cells were classified to GO terms such as Translational Initiation (GO:0006413), SRP-dependent cotranslational protein targeting to membrane (GO:0006614), and Viral Transcription (GO:0019083).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig6-v1.jpg)
+
+**Figure 6.:** (A) Heatmap and hierarchical clustering of RNA-seq data for PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells. (B) Venn diagram of the upregulated genes and their GO terms in PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells compared to OCT4::EGFP+ cells. (C) List of upregulated TFs in PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells compared to each other. (D) Enriched Gene ontology (GO) terms with whole transcriptome that had high p values between PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells from RNA-seq data. (E) Heatmap of Wnt signaling downstream target gene expression patterns in PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells. (F) FACS plots of EGFP percentage with Wnt activator (CHIR99021) in PAX7::EGFP+ cells during in vitro cell proliferation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The PCA plot including the TWIST1 KO PAX7::EGFP+ cell population during in vitro myogenesis. (B) The percentage of PAX7::EGFP+ cells with serial dose-dependent treatments of CHIR99021 during in vitro cell culture for maintaining PAX7 gene expression. (C) The FACS plots of EGFP percentage with Wnt inhibitor (XAV939) in TWIST1 KO PAX7::EGFP+ cells during in vitro cell proliferation. (D) The quantification of TWIST1 KO PAX7::EGFP+ cells with dose-dependent treatments of XAV939 and DMSO as a control during in vitro cell proliferation for maintaining PAX7 gene expression.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/46981/elife-46981-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) WGCNA dendrogram of five different cell types. (B) Protein interaction network plots of module 3, module 22, and module 43.
 
 In order to better understand the important biological features between these two populations, we selected upregulated transcription factors in PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells (Figure 6C and Supplementary file 4). The upregulated TFs in WT PAX7::EGFP+ cells included HES6, EGR2, YBX3, and TWIST1. On the other hand, YBX1, ZEB1, TCF12, SSRP1, NFE2L1, EBF3, BARX2, CTCF, FOXM1, and SMARCC2 were upregulated TFs in TWIST1 KO PAX7::EGFP+ cells. Next, we performed statistical Gene Ontology (GO) analysis between PAX7::EGFP+ cells and TWIST1 KO PAX7::EGFP+ cells (Figure 6D and Supplementary file 4). The GO terms indicated Response to Endoplasmic Reticulum Stress (GO:0034976, p value, 5.95E-04), Skeletal Muscle Tissue Development (GO:0007519, 9.35E-03), Skeletal Muscle Organ Development (GO:0060538, 1.06E-02), Muscle Organ Development (GO:0007517, 1.40E-02), and Transmembrane Transport (GO:0055085, 1.76E-02) in WT PAX7::EGFP+ cells. GO terms of Regulation of mRNA Processing (GO:0050684, 7.41E-05), Cell Division (GO:0051301, 1.96E-04), RNA Processing (GO:0006396, 1.83E-03), ER to Golgi Vesicle-mediated Transport (GO:0006888, 6.34E-03), and Wnt Signaling Pathway (GO:0016055, 7.63E-03) were enriched in TWIST1 KO PAX7::EGFP+ cells, suggesting that TWIST1 KO can affect a wide range of biological events.
 
@@ -116,34 +182,170 @@ Overall, our study depicts a transcriptional landscape of in vitro myogenesis fr
 
 ## Materials and methods
 
-## Cell culture and muscle specification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Degignation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>H9 Human ES</td>
+      <td>WiCell</td>
+      <td>WAe009-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-ACTININ (Sarcomeric) (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A7811 RRID: AB_476766</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AP2 (rabbit polyclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: 3B5 RRID: AB_528084</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD271 (mouse monoclonal)</td>
+      <td>Advanced Targeting Systems</td>
+      <td>Cat#: AB-N07 RRID: AB_171797</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DESMIN (mouse monoclonal)</td>
+      <td>DAKO</td>
+      <td>Cat#: M0760 RRID: AB_2335684</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DYSTROPHIN (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: MANDYS1(3B7) RRID:AB_528206</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MF20 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: MF20 RRID: AB_2147781</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MYOG (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: F5D RRID: AB_2146602</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NANOG (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 3580 RRID:AB_2150399</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OCT4 (mouse monoclonal)</td>
+      <td>SANTA CRUZ</td>
+      <td>Cat#: sc-5279 RRID:AB_628051</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PAX7 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: pax7 RRID:AB_528428</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RUNX1 (rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>Cat#: ab23980 RRID:AB_2200834</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOX10 (mouse monoclonal)</td>
+      <td>SANTA CRUZ</td>
+      <td>Cat#: sc-17343 RRID:AB_2255319</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TRA1-81 (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 4745 RRID:AB_2119060</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TWIST1 (mouse monoclonal)</td>
+      <td>abcam</td>
+      <td>Cat#: ab175430</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proteome Profiler Human Phospho-Kinase Array kit</td>
+      <td>R and D Systems</td>
+      <td>Cat#: ARY003B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>(1 ug/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and muscle specification
 
 WA09 (H9) human embryonic stem cell line was used (purchased from WiCell, confirmed by STR by WiCell, mycoplasma free by Lee lab). Culturing H9 hESCs (WiCell) and muscle specification were performed as previously described (Choi et al., 2016). Briefly, hESCs were maintained on mouse embryonic fibroblasts (MEFs, Applied StemCell) at 12,000 to 15,000 cells/cm2, and the cells were fed daily and passaged weekly using either 6 U/mL Dispase or mechanical means. For muscle specification, hESCs were dissociated to single cells using Accutase for 20 min and then plated on a 1% Geltrex-coated dish at the proper density in the presence of conditioned N2 media containing 10 ng/ml of FGF-2 and 10 μM of Y-27632 (Cayman Chemical Co.). At ~70% confluence, N2 media with CHIR99021 (3 μM, Cayman Company) was added, and media was changed every other day. At day 4, N2 media with DAPT (10 μM, Cayman Company) was added until day 12. Cells were harvested at different time points as described. For the maintaining EGFP+/-cells after cell sorting, EGFP+/-cells were plated in 1% Geltrex-coated dish with N2 media containing 5% FBS, 10 ng/ml FGF-2 and 100 ng/ml FGF-8. Media were changed at every other day. For passaging, cells were dissociated with Accutase for 20 min, washed once with N2 media.
 
-## Generation of genetic reporter hPSC lines
+### Generation of genetic reporter hPSC lines
 
 Genetically manipulated hPSC lines were generated using the CRISPR/Cas9 system as previously described (Choi et al., 2016). In brief, approximately 1.5 kbps of the homologous arm next stop codon of the targeted gene was amplified by genomic DNA PCR and cloned into a proper plasmid. The guide-RNAs were constructed as described by the manufacturer’s manual (Addgene). Nucleofection for gene targeting was performed according to manufacturer’s instruction (Lonza). Briefly, 1 μg donor vector, 1 μg guide RNA, and 1 μg Cas9 vector (Addgene plasmid #41815) were nucleofected into 2 × 106 dissociated hPSCs using the AMAXA nucleofector II. Nucleofected hPSCs were plated onto puromycin resistant MEFs (Applied StemCell), and cells were treated with puromycin for colony selection. Puromycin-resistant colonies were manually picked and expanded. EGFP expression was confirmed by FACS analysis after myogenic differentiation. For the RUNX1::EGFP reporter line, 5 μg donor vector, 2.5 μg ZFN1, and 2.5 μg ZFN2 from Sangomo were nucleofected into dissociated BC1 hiPSCs, which were generated from human adult bone marrow CD34+ cells (Chou et al., 2011; Connelly et al., 2014). Neomycin-resistant colonies were picked and confirmed by PCR assay.
 
-## Transcription analysis and immunofluorescence
+### Transcription analysis and immunofluorescence
 
 Total RNA was extracted from differentiating hPSC lines using TRIzol Reagent (Life Technologies), and 1 μg of RNA was reverse transcribed using the High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems). The qRT-PCR mixtures were prepared with SYBR Green PCR Master Mix Universal (Kapa Biosystem), and reactions were performed using Eppendorf Realplex2. The transcription levels were assessed by normalizing to GAPDH expression. For immunofluorescence, cells were fixed with 4% paraformaldehyde and permeabilized with 0.5% Triton X-100 in PBS solution. Primary antibodies were applied after blocking with 0.5% BSA solution. For imaging, the stained cells were visualized using Nikon Eclipse TE2000-E fluorescence microscopy. Fusion index was measured as previously described (Choi et al., 2016). Briefly, to determine myoblast fusion rates, cells were differentiated for 10 days and stained with MF20 antibody. Fusion index was calculated as the ratio of the number of nuclei inside MF20+ myotubes over the number of total nuclei in the image.
 
-## FACS analysis and sorting
+### FACS analysis and sorting
 
 For flow cytometry, cells were dissociated with Accutase and treated with DNase for 20 min at 37°C. The cells were analyzed by BD FACS Calibur (Becton Dickinson), and data were visualized using FlowJo software (Tree Star Inc). For the MF20 FACS analysis, cells were dissociated with Accutase and MF20 was applied and incubated 20 min at 25°C. Secondary antibody was used for the detecting by BD FACS Calibur (Becton Dickinson). Cell isolation experiments were performed by BD ARIA II at the Johns Hopkins Flow Cytometry Core Facility.
 
-## Global gene expression profile
+### Global gene expression profile
 
 RNA-seq libraries were constructed using Illumina TruSeq Stranded Total RNA RiboZero Gold sample Prep Kit (RS-122–2303) according to the manufacturer’s protocol (Illumina). cDNA libraries using unique barcoded adapters from 20 samples were analyzed with next-generation multiplexed sequencing Illumina Hiseq 3000, which resulted in high-quality output, with a mean quality score (Q score)>30% and 90% of perfect index reads for all samples. After the sequencing run, the Illumina Real Time Analysis (RTA) module was used to perform image analysis, followed by base calling and the BCL Converter (bcl2fastq v2.17.1.14) to generate FASTQ files that contain the sequence reads. Pair-end reads of cDNA sequences were aligned back to the human genome (UCSC hg19 from Illumina iGenome) by the spliced read mapper TopHat (v2.0.9). The sequencing depth was over 90 million (45 million paired-end) mappable sequencing reads. The alignment statistics and Q/C were achieved by SAMtools (v0.1.18) and RSeQC (v2.3.5) to calculate quality control metrics on the resulting aligned reads, which provided useful information on mappability, uniformity of gene body coverage, insert length distributions and junction annotation. The PCA plot and heatmap from the RNA-seq data were generated according to the manufacturer’s instructions (Partek Genomics Suite, version 6.6).
 
-## K-mean clustering
+### K-mean clustering
 
 Normalized gene expression RNA-seq data sets of step wise specification from hPSCs to skeletal muscle cells were further grouped via a K-mean clustering algorithm. The algorithm split the data into 10 clusters of genes with similar expression patterns over all five different specific stages. The number of correct clusters was determined by measuring the average of intracluster and intercluster distances based on the similarity of genes to genes in its own cluster as compared to genes in other clusters.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using the Graph Pad Prism software (version 6.0). The values were from at least three independent experiments with multiple replicates per each experiment, and they were reported as mean ± SEM. Comparisons among the groups were performed by either one-way ANOVA followed by Newman-Keuls test or an unpaired t-test. Statistical significance was assigned at p<0.05.
 
-## Data deposition
+### Data deposition
 
 The RNA-seq data were deposited to NCBI (GSE129505).

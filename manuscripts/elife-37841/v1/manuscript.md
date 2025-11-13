@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.37841.001 To restore vision for the blind, several prosthetic approaches have been explored that convey raw images to the brain. So far, these schemes all suffer from a lack of bandwidth. An alternate approach would restore vision at the cognitive level, bypassing the need to convey sensory data. A wearable computer captures video and other data, extracts important scene knowledge, and conveys that to the user in compact form. Here, we implement an intuitive user interface for such a device using augmented reality: each object in the environment has a voice and communicates with the user on command. With minimal training, this system supports many aspects of visual cognition: obstacle avoidance, scene understanding, formation and recall of spatial memories, navigation. Blind subjects can traverse an unfamiliar multi-story building on their first attempt. To spur further development in this domain, we developed an open-source environment for standardized benchmarking of visual assistive devices.
+To restore vision for the blind, several prosthetic approaches have been explored that convey raw images to the brain. So far, these schemes all suffer from a lack of bandwidth. An alternate approach would restore vision at the cognitive level, bypassing the need to convey sensory data. A wearable computer captures video and other data, extracts important scene knowledge, and conveys that to the user in compact form. Here, we implement an intuitive user interface for such a device using augmented reality: each object in the environment has a voice and communicates with the user on command. With minimal training, this system supports many aspects of visual cognition: obstacle avoidance, scene understanding, formation and recall of spatial memories, navigation. Blind subjects can traverse an unfamiliar multi-story building on their first attempt. To spur further development in this domain, we developed an open-source environment for standardized benchmarking of visual assistive devices.
 
 ## Introduction
 
@@ -30,43 +30,95 @@ Here, we present such an approach that bypasses the need to convey the sensory d
 
 ## Results
 
-## Design principles
+### Design principles
 
 CARA uses a wearable augmented reality device to give voices to all the relevant objects in the environment (Figure 1A). Unlike most efforts at scene sonification (Bujacz and Strumiłło, 2016; Csapó and Wersényi, 2013), our system communicates through natural language. Each object in the scene can talk to the user with a voice that comes from the object’s location. The voice’s pitch increases as the object gets closer. The user actively selects which objects speak through several modes of control (Figure 1—figure supplement 1): In Scan mode, the objects call out their names in sequence from left to right, offering a quick overview of the scene. In Spotlight mode, the object directly in front speaks, and the user can explore the scene by moving the head. In Target mode, the user selects one object that calls repeatedly at the press of a clicker. In addition, any surface in the space emits a hissing sound as a collision warning when the user gets too close (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig1-v1.jpg)
+
+**Figure 1.:** (A) The Microsoft HoloLens wearable augmented reality device. Arrow points to one of its stereo speakers. (B) In each trial of the object localization task, the target (green box) is randomly placed on a circle (red). The subject localizes and turns to aim at the target. (C) Object localization relative to the true azimuth angle (dashed line). Box denotes s.e.m., whiskers s.d. (D) Characteristics of the seven blind subjects.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) to (C) An object avoidance system is active in the background at all times. Whenever a real scanned surface or a virtual object enters a danger volume around the user (red in A), a spatialized warning sound is emitted from the point of contact (B). The danger volume expands automatically as the user moves (C), so as to deliver warnings in time. (D) to (E) Active exploration modes. In Scan mode (D) objects whose azimuthal angles fall in a certain range (e.g. between −60 and +60 deg) call themselves out from left to right. In Spotlight mode (E) only objects within a narrow cone are activated, and the object closest to the forward-facing vector calls out.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The acquisition system should parse the scene (A) into objects and assign each object a name and a voice (B). In our study, this was accomplished by a combination of the HoloLens and the experimenter. The HoloLens scans the physical space (C) and generates a 3D mesh of all surfaces (D). In this digitized space (E) the experimenter can perform manipulations such as placing and labeling virtual objects, computing paths for navigation, and animating virtual guides (F). Because of the correspondence established in D, these virtual labels are tied to the physical objects in real space.
 
 The system is implemented on the Microsoft HoloLens (Figure 1A), a powerful head-mounted computer designed for augmented reality (Hoffman, 2016). The HoloLens scans all surfaces in the environment using video and infrared sensors, creates a 3D map of the surrounding space, and localizes itself within that volume to a precision of a few centimeters (Figure 1—figure supplement 2). It includes a see-through display for digital imagery superposed on the real visual scene; open ear speakers that augment auditory reality while maintaining regular hearing; and an operating system that implements all the localization functions and provides access to the various sensor streams.
 
 Any cognitive assistant must both acquire knowledge about the environment and then communicate that knowledge to the user. Tracking and identifying objects and people in a dynamic scene still presents a challenge, but those capabilities are improving at a remarkable rate (Jafri et al., 2014; Verschae and Ruiz-del-Solar, 2015), propelled primarily by interests in autonomous vehicles (see also Technical extensions below). Anticipating that the acquisition problems will be solved shortly, we focus here on the second task, the interface to the user. Thus, we populated the real-space volume scanned by the HoloLens with virtual objects that interact with the user. The applications were designed using the Unity game development platform which allows tracking of the user’s head in the experimental space; the simulation of virtual objects; the generation of speech and sounds that appear to emanate from specific locations; and interaction with the user via voice commands and a clicker.
 
-## Human subject tests
+### Human subject tests
 
 After a preliminary exploration of these methods, we settled on a fixed experimental protocol and recruited seven blind subjects (Figure 1D). Subjects heard a short explanation of what to expect, then donned the HoloLens and launched into a series of four fully automated tasks without experimenter involvement. No training sessions were provided, and all the data were gathered within a 2 hr visit.
 
-## Object localization
+### Object localization
 
 Here, we tested the user’s ability to localize an augmented reality sound source (Figure 1B). A virtual object placed randomly at a 2 m distance from the subject called out ‘box’ whenever the subject pressed a clicker. The subject was asked to orient the head towards the object and then confirm the final choice of direction with a voice command. All subjects found this a reasonable request and oriented surprisingly well, with an accuracy of 3–12 degrees (standard deviation across trials, Figure 1C). Several subjects had a systematic pointing bias to one or the other side of the target (−9 to +13 deg, Figure 1C), but no attempt was made to correct for this bias. These results show that users can accurately localize the virtual voices generated by HoloLens, even though the software used a generic head-related transfer function without customization.
 
-## Spatial memory
+### Spatial memory
 
 Do object voices help in forming a mental image of the scene (Lacey, 2013) that can be recalled for subsequent decisions? A panel of five virtual objects was placed in the horizontal plane 2 m from the subject, spaced 30 degrees apart in azimuth (Figure 2A). The subject scanned this scene actively using the Spotlight mode for 60 s. Then the object voices were turned off and we asked the subject to orient towards the remembered location of each object, queried in random order. All subjects performed remarkably well, correctly recalling the arrangement of all objects (Figure 2B, Figure 2—figure supplement 1) with just one error (1/28 trials). Even the overall scale of the scene and the absolute positions of the objects were reproduced well from memory, to an average accuracy of ~15 deg (rms deviation from true position, Figure 2C–D). In a second round, we shuffled the object positions and repeated the task. Here three of the subjects made a mistake, presumably owing to interference with the memory formed on the previous round. Sighted subjects who inspected the scene visually performed similarly on the recall task (Figure 2—figure supplement 1). These experiments suggest that active exploration of object voices builds an effective mental representation of the scene that supports subsequent recall and orientation in the environment.
 
-## Direct navigation
+![Figure 2.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig2-v1.jpg)
+
+**Figure 2.:** (A) Five objects are arranged on a half-circle; the subject explores the scene, then reports the recalled object identities and locations. (B) Recall performance during blocks 1 (left) and 2 (right). Recalled target angle potted against true angle. Shaded bar along the diagonal shows the 30 deg width of each object; data points within the bar indicate perfect recall. Dotted lines are linear regressions. (C) Slope and (D) correlation coefficient for the regressions in panel (B).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Spatial memory data (Figure 2) from blocks 1 (left) and 2 (right) by subject. Shaded areas indicate the true azimuthal extent of each object. Markers indicate recalled location. Most recalled locations overlap with the true extent of the object. Subjects 8–10 were normally sighted and performed the exploration phase using vision.
+
+### Direct navigation
 
 Here, the subject was instructed to walk to a virtual chair, located 2 m away at a random location (Figure 3A). In Target mode, the chair called out its name on every clicker press. All subjects found the chair after walking essentially straight-line trajectories (Figure 3B–C, Figure 3—figure supplement 1). Most users followed a two-phase strategy: first localize the voice by turning in place, then walk swiftly toward it (Figure 3—figure supplement 1D–E). On rare occasions (~5 of 139 trials), a subject started walking in the opposite direction, then reversed course (Figure 3—figure supplement 1C), presumably owing to ambiguities in azimuthal sound cues (McAnally and Martin, 2014). Subject seven aimed consistently to the left of the target (just as in the task of Figure 1) and thus approached the chair in a spiral trajectory (Figure 3C). Regardless, for all subjects the average trajectory was only 11–25% longer than the straight-line distance (Figure 3E, Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig3-v1.jpg)
+
+**Figure 3.:** (A) For each trial, a target chair is randomly placed at one of four locations. The subject begins in the starting zone (red shaded circle), follows the voice of the chair, and navigates to the target zone (green shaded circle). (B) All raw trajectories from one subject (#6) including 1 s time markers. Oscillations from head movement are filtered out in subsequent analysis. (C) Filtered and aligned trajectories from all trials of 3 subjects (#3, 4, 7). Arrow highlights a trial where the subject started in the wrong direction. (D) Trajectories of subjects performing the task with only a cane and no HoloLens. (E) Deviation index, namely the excess length of the walking trajectory relative to the shortest distance between start and target. Note logarithmic axis and dramatic difference between HoloLens and Cane conditions. (F) Speed of each subject normalized to the free-walking speed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Trial distance (A) and trial duration (B) for the first 20 trials of all subjects. A modest effect of practice on task duration can be observed across all subjects (B). (C) Low-pass filtered, aligned trajectories of all subjects. In most trials, subjects reach the target with little deviation. (D) Dynamics of navigation, showing the distance to target as a function of trial time for one subject. (E) Head orientation vs distance to target for two subjects. Note subject six begins by orienting without walking, then walks to the target. Subject two orients and walks at the same time, especially during early trials.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) to B) Automated sign recognition using computer vision. Using Vuforia software (https://www.vuforia.com/) the HoloLens recognizes a men’s room sign (A), image viewed through HoloLens) and installs a virtual object (cube, arrow) next to the sign. (B) This object persists in the space even when the sign is no longer visible. (C) Automated wayfinding. The HoloLens generates a path to the target (door) that avoids the obstacle (white box). Then a virtual guide (orange balloon) can lead the user along the path. See Videos 2–3. (D) Navigation in the presence of obstacles. The subject navigates from the starting zone (red circle) to an object in the target zone (green circle) using calls emitted by the object. Three vertical columns block the path (black circles), and the subject must weave between them using the obstacle warning system. Raw trajectories (no filtering) of a blind subject (#5) are shown during outbound (left) and return trips (right), illustrating effective avoidance of the columns. This experiment was performed with a version of the apparatus built around the HTC Vive headset. (E) Orienting functions of the virtual guide. In addition to spatialized voice calls, the virtual guide may also offer turning commands toward the next waypoint. In the illustrated example, the instruction is ‘in x meters, turn right.’ (F) Real-time object detection using YOLO (Redmon and Farhadi, 2018). Left: A real scene. Note even small objects on a textured background are identified efficiently based on a single video frame. Right: A virtual scene from the benchmarking environment, rendered by Unity software.
+
 For comparison, we asked subjects to find a real chair in the same space using only their usual walking aid (Figure 3D). These searches took on average eight times longer and covered 13 times the distance needed with CARA. In a related series of experiments we encumbered the path to the target with several virtual obstacles. Using the alarm sounds, our subjects weaved through the obstacles without collision (Figure 3—figure supplement 2D). Informal reports from the subjects confirmed that steering towards a voice is a natural function that can be performed automatically, leaving attentional bandwidth for other activities. For example, some subjects carried on a conversation while following CARA.
 
-## Long-range guided navigation
+### Long-range guided navigation
 
 If the target object begins to move as the subject follows its voice, it becomes a ‘virtual guide’. We designed a guide that follows a precomputed path and repeatedly calls out ‘follow me’. The guide monitors the subject’s progress, and stays at most 1 m ahead of the subject. If the subject strays off the path, the guide stops and waits for the subject to catch up. The guide also offers warnings about impending turns or a flight of stairs. To test this design, we asked subjects to navigate a campus building that had been pre-scanned by the HoloLens (Figure 4A, Figure 4—figure supplement 1). The path led from the ground-floor entrance across a lobby, up two flights of stairs, around several corners and along a straight corridor, then into a second floor office (Figure 4B–C). The subjects had no prior experience with this part of the building. They were told to follow the voice of the virtual guide, but given no assistance or coaching during the task.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig4-v1.jpg)
+
+**Figure 4.:** (A) 3D reconstruction of the experimental space with trajectories from all subjects overlaid. (B and C) 2D floor plans with all first trial trajectories overlaid. Trajectories are divided into three segments: lobby (Start – Start 2), stairwell (Start 2 – Start 3), and hallway (Start 3 – Destination). Red arrows indicate significant deviations from the planned path. (D) Deviation index (as in Figure 3E) for all segments by subject. Outlier corresponds to initial error by subject 7. Negative values indicate that the subject cut corners relative to the virtual guide. (E) Duration and (F) normalized speed of all the segments by subject.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 3D model of the experimental space as scanned by the HoloLens. (B) Subject and guide trajectories from the long-range guided navigation task. Note small differences between guide trajectories across experimental days, owing to variations in detailed waypoint placement.
+
 All seven subjects completed the trajectory on the first attempt (Figure 4B–C, Video 1). Subject seven transiently walked off course (Figure 4B), due to her left-ward bias (Figures 1C and 3C), then regained contact with the virtual guide. On a second attempt, this subject completed the task without straying. On average, this task required 119 s (range 73–159 s), a tolerable investment for finding an office in an unfamiliar building (Figure 4E). The median distance walked by the subjects was 36 m (Figure 4D), slightly shorter (~1%) than the path programmed for the virtual guide, because the subjects can cut corners (Figure 4C). The subjects’ speed varied with difficulty along the route, but even on the stairs they proceeded at ~60% of their free-walking speed (Figure 4F). On arriving at the office, one subject remarked "That was fun! When can I get one?”. Other comments from subjects regarding user experience with CARA are provided in ‘Supplementary Observations’.
 
-## Technical extensions
+![Video 1.](https://cdn.elifesciences.org/articles/37841/elife-37841-video1.mp4.jpg)
+
+**Video 1.:** A video recording of a subject navigating in the long-range navigation task. The top right panel shows the first person view of the subject recorded by the HoloLens.
+
+### Technical extensions
 
 As discussed above, the capabilities for identification of objects and people in a dynamic scene are rapidly developing. We have already implemented real-time object naming for items that are easily identified by the HoloLens, such as standardized signs and bar codes (Sudol et al., 2010) (Figure 3—figure supplement 2A–B). Furthermore, we have combined these object labels with a scan of the environment to compute in real time a navigable path around obstacles toward any desired target (Figure 3—figure supplement 2C, Video 2, Video 3). In the few months since our experimental series with blind subjects, algorithms have appeared that come close to a full solution. For example, YOLO (Redmon and Farhadi, 2018) will readily identify objects in a real time video feed that match one of 9000 categories. The algorithm already runs on the HoloLens and we are adopting it for use within CARA (Figure 3—figure supplement 2F).
 
-## An open-source benchmarking environment for assistive devices
+![Video 2.](https://cdn.elifesciences.org/articles/37841/elife-37841-video2.mp4.jpg)
+
+**Video 2.:** A video demonstration of how automatic wayfinding works in a virtual environment.
+
+![Video 3.](https://cdn.elifesciences.org/articles/37841/elife-37841-video3.mp4.jpg)
+
+**Video 3.:** A point of view video demonstration of the automatic wayfinding function in an office space with obstacles. The path is calculated at the user’s command based on the geometry of the office.
+
+### An open-source benchmarking environment for assistive devices
 
 The dramatic advances in mobile computing and machine vision are enabling a flurry of new devices and apps that offer one or another assistive function for the vision impaired. To coordinate these developments one needs a reliable common standard by which to benchmark and compare different solutions. In several domains of engineering, the introduction of a standardized task with a quantitative performance metric has stimulated competition and rapid improvement of designs (Berens et al., 2018; Russakovsky et al., 2015).
 
@@ -75,6 +127,14 @@ On this background, we propose a method for the standardized evaluation of diffe
 At test time the subject dons a wireless headset and moves freely within a physical space of 4 m x 4 m. The Vive system localizes position and orientation of the headset in that volume. Based on these data, the virtual reality software computes the subject’s perspective of the virtual scene, and presents that view through the headset’s stereo goggles. An assistive device of the experimenter’s choice can use that same real-time view of the environment to guide a blind or blind-folded subject through the space. This approach is sufficiently general to accommodate designs ranging from raw sensory substitution – like vOICe (Meijer, 1992) and BrainPort (Stronks et al., 2016) – to cognitive assistants like CARA. The tracking data from the Vive system then serve to record the user’s actions and evaluate the performance on any given task.
 
 To illustrate this method, we constructed a virtual living room with furniture (Figure 5A). Within that space we defined three tasks that involve (1) scene understanding, (2) short-range navigation, and (3) finding a small object dropped on the floor. To enable blind subjects in these tasks we provided two assistive technologies: (a) the high-level assistant CARA, using the same principle of talking objects as described above on the HoloLens platform; (b) the low-level method vOICe that converts photographs to soundscapes at the raw image level (Meijer, 1992). The vOICe system was implemented using software provided by its inventor (Seeing With Sound, 2018).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig5-v1.jpg)
+
+**Figure 5.:** (A) A virtual living room including 16 pieces of furniture and other objects. (B) Localization of a randomly chosen object relative to the true object location (0 deg, dashed line) for four subjects using CARA (C) or vOICe (V). Box denotes s.e.m., whiskers s.d. For all subjects the locations obtained with vOICe are consistent with a uniform circular distribution (Rayleigh z test, p>0.05). (C) Navigation toward a randomly placed chair. Trajectories from one subject using CARA (left) and vOICe (middle), displayed as in Figure 3C. Right: Number of trials completed and time per trial (mean ±s.d.). (D) Navigation toward a randomly placed key on the floor (small green circle). Trajectories and trial statistics displayed as in panel C.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37841/elife-37841-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Trajectories of three additional subjects. (A) Navigation to a randomly placed chair, using either CARA or vOICe, displayed as in Figure 5C. Subject #4 exhibited some directed navigation using vOICe. (B) Finding a dropped key, as in Figure 5D.
 
 Here, we report performance of four subjects, all normally sighted. Each subject was given a short explanation of both CARA and vOICe. The subject was allowed to practice (~10 min) with both methods by viewing the virtual scene while either CARA or vOICe provided translation to sound delivered by headphones. Then, the subjects were blindfolded and performed the three tasks with sound alone. Each task consisted of 20 trials with randomly chosen goals, and a time limit of 60 s was applied to each trial.
 
@@ -100,25 +160,25 @@ Finally, we demonstrated a separate platform for standardized tests to evaluate 
 
 ## Materials and methods
 
-## General implementation of CARA
+### General implementation of CARA
 
 The hardware platform for the cognitive assistant is the Microsoft HoloLens Development Edition, without any modifications. This is a self-contained wearable augmented reality (AR) device that can map and store the 3D mesh of an indoor space, localize itself in real time, and provide spatialized audio and visual display (Hoffman, 2016). We built custom software in Unity 2017.1.0f3 (64-bit) with HoloToolkit-Unity-v1.5.5.0. The scripts are written in C# with MonoDevelop provided by Unity. The experiments are programmed on a desktop computer running Windows 10 Education and then deployed to Microsoft HoloLens. The software is versatile enough to be easily deployed to other hardware platforms, such as AR enabled smart phones.
 
-## User interface
+### User interface
 
 Before an experiment, the relevant building areas are scanned by the experimenter wearing the HoloLens, so the system has a 3D model of the space ahead of time. For each object in the scene, the system creates a voice that appears to emanate form the object’s location, with a pitch that increases inversely with object distance. Natural spatialized sound is computed based on a generic head-related transfer function (Wenzel et al., 1993); nothing about the software was customized to individual users. Object names and guide commands are translated into English using the text-to-speech engine from HoloToolkit. The user provides input by moving the head to point at objects, pressing a wireless Clicker, using hand gesture commands or English voice commands.
 
 In addition to instructions shown in the main body of the article, non-spatialized instructions are available at the user’s request by voice commands. The user can use two voice commands (e.g. ‘direction’, ‘distance’) to get the direction of the current object of interest or its distance. Depending on the mode, the target object can be the object label of user’s choice (Target Mode) or the virtual guide. ‘Turn-by-turn’ instructions can be activated by voice commands (e.g. ‘instruction’). The instruction generally consists of two parts, the distance the user has to travel until reaching the current target waypoint, and the turn needed to orient to the next waypoint (Figure 3—figure supplement 2E).
 
-## Experimental design
+### Experimental design
 
 All results in Figures 1–4 were gathered using a frozen experimental protocol, finalized before recruitment of the subjects. The tasks were fully automated, with dynamic instructions from the HoloLens, so that no experimenter involvement was needed during the task. Furthermore, we report performance of all subjects on all trials gathered this way. Some incidental observations and anecdotes from subject interviews are provided in Supplementary Observations. All procedures involving human subjects were reviewed and approved by the Institutional Review Board at Caltech. All subjects gave their informed consent to the experiments, and where applicable to publication of videos that accompany this article.
 
-## Measurement
+### Measurement
 
 Timestamps are generated by the internal clock of the HoloLens. The six parameters of the subject’s head location and orientation are recorded at 5 Hz from the onset to the completion of each trial in each task. All performance measures are derived from these time series. Localization errors of the HoloLens amount to <4 cm (Liu et al., 2018), which is insignificant compared to the distance measures reported in our study, and smaller than the line width in the graphs of trajectories in Figures 3 and 4.
 
-## Task design
+### Task design
 
 Task 1, object localization (Figure 1): In each trial, a single target is placed 1 m from the subject at a random azimuth angle drawn from a uniform distribution between 0 and 360 degrees. To localize the target, the subject presses the Clicker to hear a spatialized call from the target. After aiming the face at the object the subject confirms via a voice command (‘Target confirmed’). When the location is successfully registered, the device plays a feedback message confirming the voice command and providing the aiming error. The subject was given 10–15 practice trials to learn the interaction with CARA, followed by 21 experimental trials. To estimate the upper limit on performance in this task, two sighted subjects performed the task with eyes open: this produced a standard deviation across trials of 0.31 and 0.36 degrees, and a bias of 0.02 and 0.06 degrees. That includes instrumentation errors as well as uncertainties in the subject’s head movement. Note that these error sources are insignificant compared to the accuracy and bias reported in Figures 1 and 2.
 
@@ -132,7 +192,7 @@ Task 4, long range guided navigation (Figure 4): The experimenter defined a guid
 
 Free walking: To measure the free walking speed, we asked subjects to walk for 20 m in a straight line in an unobstructed hallway using their preferred walking aid. Subjects 1 and 2 used a guide dog, the others a cane.
 
-## Data analysis and visualization
+#### Data analysis and visualization
 
 MatLab 2017b (Mathworks) and Excel (Microsoft) were used for data analysis and visualization. Unity 5.6.1f1 was used to generate 3D cartoons of experiments and to visualize 3D trajectories. Photoshop CC 2017 was used for overlaying trajectories on floor plans.
 
@@ -140,17 +200,21 @@ Aiming: In tasks 1 and 2, aiming errors are defined as the difference between th
 
 Trajectory smoothing: The HoloLens tracks its wearer’s head movement, which includes lateral movements perpendicular to the direction of walking. To estimate the center of mass trajectory of the subject we applied a moving average with 2 s sliding window to the original trajectory.
 
-Length of trajectory and deviation index: In the directed navigation task and the long-range guided navigation task we computed the excess distance traveled by the subject relative to an optimal trajectory or the guide path. The deviation index, DI, is defined as(1)DI= Lexp- LrefLref
+Length of trajectory and deviation index: In the directed navigation task and the long-range guided navigation task we computed the excess distance traveled by the subject relative to an optimal trajectory or the guide path. The deviation index, $DI$, is defined as
 
-where Lexp is the length of the trajectory measured by experiment and Lref is the length of the reference trajectory. A value near 0 indicates that the subject followed the reference trajectory well.
+$$
+DI=\frac{L_{exp}-L_{ref}}{L_{ref}}
+$$
 
-In the direct navigation task, we divided each trial into an orientation phase where the subject turns the body to face the target, and a navigation phase where the subject approaches the target. We calculated head orientation and 2D distance to target in each frame, and marked the onset of the navigation phase when the subject’s distance to target changed by 0.3 m. Note that with this criterion the navigation phase includes the occasional trajectory where the subject starts to walk in the wrong direction. In this task, Lref is defined as the length of the straight line from the subject’s position at the onset of the navigation phase to the nearest point of the target trigger zone.
+where $L_{exp}$ is the length of the trajectory measured by experiment and $L_{ref}$ is the length of the reference trajectory. A value near 0 indicates that the subject followed the reference trajectory well.
 
-In the long-range guided navigation task, Lref is the length of the guide trajectory. Due to variability in placing waypoints and tracking, the length of guide trajectories varied slightly across subjects (Lref=36.4 ± 0.7 m, mean ±s.d.). Negative DI values are possible in this task if the subject cuts corners of the guide trajectory.
+In the direct navigation task, we divided each trial into an orientation phase where the subject turns the body to face the target, and a navigation phase where the subject approaches the target. We calculated head orientation and 2D distance to target in each frame, and marked the onset of the navigation phase when the subject’s distance to target changed by 0.3 m. Note that with this criterion the navigation phase includes the occasional trajectory where the subject starts to walk in the wrong direction. In this task, $L_{ref}$ is defined as the length of the straight line from the subject’s position at the onset of the navigation phase to the nearest point of the target trigger zone.
+
+In the long-range guided navigation task, $L_{ref}$ is the length of the guide trajectory. Due to variability in placing waypoints and tracking, the length of guide trajectories varied slightly across subjects ($L_{ref}$=36.4 ± 0.7 m, mean ±s.d.). Negative $DI$ values are possible in this task if the subject cuts corners of the guide trajectory.
 
 Speed: Speed is calculated frame-by-frame using the displacements in the filtered trajectories. For the long-range guided navigation task, which includes vertical movements through space, the speed of translation is computed in three dimensions, whereas for the other tasks that occur on a horizontal plane we did not include the vertical dimension. For all tasks, we estimated walking speed by the 90th percentile of the speed distribution, which robustly rejects the phases where the subject chooses an orientation. The normalized speed is obtained by dividing this value by the free walking speed.
 
-## Supplementary observations
+### Supplementary observations
 
 Here, we report incidental observations during experiments with CARA that were not planned in the frozen protocol, and comments gathered from blind subjects in the course of the experiments.
 
@@ -168,13 +232,13 @@ Subject 6: After all tasks says “That was pretty cool” and “The technology
 
 Subject 7: On the second trial with the virtual guide reports that she paid more attention to the ‘follow me’ sound (she strayed temporarily on the first trial, Fig. 4B). Wonders whether the object voices will be strong enough in a loud environment.
 
-## Benchmarking platform using virtual reality
+### Benchmarking platform using virtual reality
 
 The benchmarking platform runs on the HTC Vive VR headset and a Windows 10 desktop computer. A TPCast wireless adapter (CE-01H, https://www.tpcastvr.com/) replaces the standard headset cable so the subject can move freely within the 4 m x 4 m square arena. An Xbox One S controller is connected wirelessly to the host computer for the subject to start trials, confirm aiming, and control the modes of CARA. Audio is delivered by a pair of wireless headphones (SONY WH-1000XM2). All code and data to replicate this environment and the reported tests is publically available at https://github.com/meisterlabcaltech/CARA_Public (Liu and Meister, 2018; copy archived at https://github.com/elifesciences-publications/CARA_Public).
 
 All three benchmarking tasks are set in a 10 m x 10 m virtual environment that simulates a living room with 16 objects labeled with sound tags. The rendered scenes are close to photo-realistic, and computer vision algorithms trained on real scenes will correctly identify objects in the virtual scene as well (Figure 3—figure supplement 2F). The first benchmark task (Figure 5B) resembles Task 1 (see section on Task Design above) except that the aiming target is chosen at random from the 16 objects in the studio. CARA users have access to Spotlight and Target Mode. The second benchmark task (Figure 5C) resembles Task 3 with a 60 s time limit on each trial. CARA users only have Target Mode available for this task. To facilitate detection with vOICe the chair was made white, and left unoccluded by any other objects. The third benchmark task (Figure 5D) replaces the chair in the second benchmark task with a key on the floor. Within CARA, Target Mode and Spotlight Mode can be used in this task. Two conditions have to be met to finish a trial: (1) the head of the subject is within 1 m of the key and (2) the subject faces within 30 degrees of the key. To accomplish this the subject must bend down or kneel facing the key. At this point, a simple reach with the hand would allow grasping a real object. A trial fails if not finished within 60 s. To avoid excess frustration among the subjects a task is terminated after five failed trials.
 
-## Voice control on CARA
+#### Voice control on CARA
 
 In addition to the Clicker, subjects can also use natural language (e.g. English) as input to the system. Two subsystems of voice input are implemented: 1) keyword recognition (PhraseRecognitionSystem) monitors in the background what the user says, detects phrases that match the registered keywords, and activates corresponding functions on detection of keyword matches. 2) dictation (DictationRecognizer) records what the user says and converts it into text. The first component enables subjects to confirm their aiming in the object localization task and mental imagery task with the voice command “target confirmed”. It also enables the experimenter to control the experiment at runtime.
 
@@ -182,26 +246,26 @@ Keywords and their functions are defined through adding keywords to the keyword 
 
 To allow users to create object labels, the DictationRecognizer provided by HoloToolkit is used to convert natural language spoken by the user to English text. Due to the mutual exclusivity, KeywordRecognizer is shut down before DictationRecognizer is activated, and restarted after the dictation is finished.
 
-## Automated wayfinding
+#### Automated wayfinding
 
 In addition to hand-crafting paths, we implemented automated wayfinding by taking advantage of Unity’s runtime NavMesh ‘baking’ which calculates navigable areas given a 3D model of the space. At runtime, we import and update the 3D mesh of the scanned physical space and use it to bake the 3D mesh. When the user requests guided navigation, a path from the user’s current location to the destination of choice is calculated. If the calculated path is valid, the virtual guide guides the user to the destination using the computer-generated path.
 
-## Cost of the CARA system
+#### Cost of the CARA system
 
 The hardware platform used in the research – Microsoft HoloLens Development Edition – currently costs $3000. Several comparable AR goggles are in development, and one expects their price to drop in the near future. In addition, smart phones are increasingly designed with AR capabilities, although they do not yet match the HoloLens in the ability to scan the surrounding space and localize within it.
 
-## Battery and weight
+#### Battery and weight
 
 The current HoloLens weighs 579 g. Like all electronic devices, this will be further miniaturized in the future. The current battery supports our system functions for 2–5 hr, sufficient for the indoor excursions we envision in public buildings, led by the ‘virtual guide’. A portable battery pack can extend use to longer uninterrupted sessions.
 
-## Tracking robustness
+#### Tracking robustness
 
 While in most indoor scenarios that we have tested the tracking of HoloLens was reliable and precise, we have encountered occasional loss of tracking or localization errors. This occurs particularly when the environment lacks visual features such as a narrow space with white walls.
 
-## Extensions
+#### Extensions
 
 Because this cognitive assistant is largely defined by software its functionalities are very flexible. For example, the diverse recommendations from subjects noted above (Supplementary Observations) can be implemented in short order. In addition, one can envision hardware extensions by adding peripherals to the computer. For example, a haptic belt or vest could be used to convey collision alarms (Adebiyi et al., 2017), thus leaving the auditory channel open for the highly informative messages.
 
-## Data and materials availability
+### Data and materials availability
 
 Data and code that produced the figures are available on the Dryad Digital Repository.

@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/037zgn354 Laboratory for Computational Motor Control, Department of Biomedical Engineering, Johns Hopkins School of Medicine Baltimore United States
+1. Laboratory for Computational Motor Control, Department of Biomedical Engineering, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
 
 † Corresponding author
 
@@ -39,35 +39,61 @@ If we view the changes in pupil size as a proxy for activity in the brainstem no
 
 We tracked the eyes and the tongue of head-fixed marmosets as they performed visually guided saccades in exchange for food (Figure 1A). Each successful trial consisted of three visually guided saccades, at the end of which we delivered an increment of food (a slurry mixture of apple sauce and monkey chow). Because the reward amount was small (0.015–0.02 mL), the subjects rarely harvested following a single successful trial. Rather, they worked for a few trials, allowing the food to accumulate, then initiated their harvest by licking (Figure 1B). The key variables were how many trials they chose to work before starting harvest, and how vigorously they moved their eyes and tongue during the work and the harvest periods.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87238/elife-87238-fig1-v1.jpg)
+
+**Figure 1.:** (A) During the work period, marmosets made a sequence of saccades to visual targets. A trial consisted of three consecutive saccades, at the end of which the subject was rewarded by a small increment of food. We tracked the eyes, the tongue, and the food. (B) An example of two consecutive work-harvest periods, showing reward-relevant saccades (eye velocity) and tongue endpoint displacement with respect to the mouth. (C) Data for two sessions, one where the tube was placed close to the mouth (orange trace), and one where it was placed farther away (red trace). Two types of licks are shown: inner-tube licks and outer-tube licks. Depending on food location, both types of licks can contact the food. Data on the right two panels show endpoint displacement and velocity of the tongue during inner-tube licks. Error bars are SEM. (D) During the work period, the subjects attempted ~8 trials on average, succeeding in 4–5 trials before starting harvest, and then licked about 18 times to extract the food.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87238/elife-87238-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Error bars are SEM.
+
 Over the course of 2.5 y, we recorded 56 sessions in subject M (29 mo) and 56 sessions in subject R (23 mo). A typical work period lasted about 10 s, during which the subjects attempted ~8 trials and succeeded in 4–5 trials (Figure 1D) (a successful trial was when all three saccades were within 1.25o of the center of each target). The work period ended when the subject decided to stop tracking the targets and instead initiated harvest, which lasted about 6 s, resulting in 16–18 licks. Subject M completed an average of 909.5 ± 61 successful trials per session (mean ± SEM), producing an average of 241 ± 13.9 work-harvest pairs, and subject R completed an average of 1431 ± 65 successful trials, producing an average of 263 ± 8.9 work-harvest pairs.
 
 We delivered food via either the left or the right tube for 50–300 consecutive trials and then switched tubes. We tracked the motion of the tongue using DeepLabCut (Mathis et al., 2018), as shown for a typical session in Figure 1B. The licks required precision because the tube was just large enough (4.4 mm diameter) to allow the tongue to penetrate. As a result, about 30% of the reward-seeking licks were successful and contacted food (30 ± 1.6% for subject M, 28 ± 2.5% for subject R), as shown in Animation 1. Examples of licks that failed to contact food are shown in Animation 2–4.
 
-## Theory and predictions
+![Animation 1.](https://cdn.elifesciences.org/articles/87238/elife-87238-animation1-v1.mp4.jpg)
+
+![Animation 2.](https://cdn.elifesciences.org/articles/87238/elife-87238-animation2-v1.mp4.jpg)
+
+**Animation 2.:** Note the corrective sub-movements, as has been observed in mice (Bollu et al., 2021).
+
+![Animation 3.](https://cdn.elifesciences.org/articles/87238/elife-87238-animation3-v1.mp4.jpg)
+
+![Animation 4.](https://cdn.elifesciences.org/articles/87238/elife-87238-animation4-v1.mp4.jpg)
+
+### Theory and predictions
 
 During the decision-making part of the task, the brain explicitly determined how long to work before initiating harvest. During the work and the harvest periods, the brain implicitly controlled the vigor of movements. We imagined that these two forms of behavior were not independent, but rather coordinated via a control policy that maximized a single utility: the sum of rewards acquired, minus efforts expended, divided by time, termed the capture rate. We chose this formulation because it presents a normative approach that ecologists have used to understand the decisions that animals make regarding how far to travel for food, what mode of travel to use, and how long to stay before moving on to another patch (Richardson and Verbeek, 1986; Stephens and Krebs, 1987; Bautista et al., 2001).
 
-During a work period, our subjects decided to complete a number of saccade trials ns , a fraction βs of which were successful, earning food increment α, but expended effort cs that consumed time Ts for each trial. They then stopped working and initiated harvest, producing a number of licks nl , a fraction βl of which succeeded, thus expending effort cl and consuming time Tl for each lick. These actions produced the following capture rate:(1)J=αβsns(1-11+βlnl)-nlcl-ns2csnlTl+nsTs
+During a work period, our subjects decided to complete a number of saccade trials $n_{s}$ , a fraction $\beta_{s}$ of which were successful, earning food increment $\alpha$, but expended effort $c_{s}$ that consumed time $T_{s}$ for each trial. They then stopped working and initiated harvest, producing a number of licks $n_{l}$ , a fraction $\beta_{l}$ of which succeeded, thus expending effort $c_{l}$ and consuming time $T_{l}$ for each lick. These actions produced the following capture rate:
 
-In the numerator of Equation 1, the first term represents the fact that the food cache increased linearly with successful trials and was then consumed gradually with successful licks. The second term represents the effort expenditure of licking, and the third term represents the effort expenditure of working. Notably, the effort expenditure of work, ns2cs , grows faster than linearly as a function of trials. This nonlinearity is essential to reflect the idea that following a long work period, the capture rate must be more negative than following a short work period (i.e., more work trials produce a greater reduction in utility).
+$$
+J=\frac{\alpha\beta_{s}n_{s}(1-\frac{1}{1+\beta_{l}n_{l}})-n_{l}c_{l}-n_{s}^{2}c_{s}}{n_{l}T_{l}+n_{s}T_{s}}
+$$
 
-A control policy describes how long to work and harvest, and an optimal policy produces periods of working and harvesting, ns*, nl* , that maximize Equation 1. A closed-form solution for the optimal policy can be obtained (Supplementary file 1), and Figure 2A provides an example. As the work period concludes and the harvest period beings (nl=0), the capture rate is negative. This reflects the fact that the subject has performed a few trials and stockpiled food, thus expended effort but has not been rewarded yet. The capture rate rises when licking commences. Critically, the peak capture rate is not an increasing function of the work period. Rather, there is an optimal work period (ns* , red trace, Figure 2A) associated with a given effort cost of licking cl . If we now move the tube away from the mouth, that is, increase the effort cost of licking cl , the peak of the capture rate shifts and the optimal work period changes: the proper response to an increased effort cost of licking is to work longer, stowing more food before commencing harvest.
+In the numerator of Equation 1, the first term represents the fact that the food cache increased linearly with successful trials and was then consumed gradually with successful licks. The second term represents the effort expenditure of licking, and the third term represents the effort expenditure of working. Notably, the effort expenditure of work, $n_{s}^{2}c_{s}$ , grows faster than linearly as a function of trials. This nonlinearity is essential to reflect the idea that following a long work period, the capture rate must be more negative than following a short work period (i.e., more work trials produce a greater reduction in utility).
+
+A control policy describes how long to work and harvest, and an optimal policy produces periods of working and harvesting, $n_{s}^{*}, n_{l}^{*}$ , that maximize Equation 1. A closed-form solution for the optimal policy can be obtained (Supplementary file 1), and Figure 2A provides an example. As the work period concludes and the harvest period beings ($n_{l}=0$), the capture rate is negative. This reflects the fact that the subject has performed a few trials and stockpiled food, thus expended effort but has not been rewarded yet. The capture rate rises when licking commences. Critically, the peak capture rate is not an increasing function of the work period. Rather, there is an optimal work period ($n_{s}^{*}$ , red trace, Figure 2A) associated with a given effort cost of licking $c_{l}$ . If we now move the tube away from the mouth, that is, increase the effort cost of licking $c_{l}$ , the peak of the capture rate shifts and the optimal work period changes: the proper response to an increased effort cost of licking is to work longer, stowing more food before commencing harvest.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87238/elife-87238-fig2-v1.jpg)
 
-**Figure 2.:** (A) Capture rate (Equation 1) is plotted during the harvest period as a function of lick number  following various number of work trials nl . When the effort cost of licking is low (left plot, ns), the optimal work period is cl=0.5 (red trace). When the effort cost is higher (right plot, ns*=4), it is best to work longer before initiating harvest. (cl=2B) The metabolic cost of licking (Equation 2) is minimized when a lick has a specific duration. Tube distance varied from 0.1 to 0.3. Optimal duration that minimizes lick cost grows linearly with tube distance. (C) Optimal number of work trials  and licks ns* as a function food tube distance nl*. As the effort cost of harvest increases, one should respond by working longer, delaying harvest. (dD) Optimal lick duration  as a function of food tube distance. The lick duration Tl* that maximizes the capture rate is smaller than the one that minimizes the lick metabolic cost (Tl*B). That is, it is worthwhile moving vigorously to acquire reward. However,  grows faster than linearly as a function of tube distance. Thus, as the tube moves farther, it is best to reduce lick vigor. Hunger, modeled as increased value of reward, should promote work and increase vigor, while effort cost of harvest (tube distance) should promote work but reduce vigor. Parameter values for all simulations: Tl*, βs=0.5, βl=0.3, Ts=1, k=1 (low food value, less hunger), α=20 (high food value, hungry).α=25
+**Figure 2.:** (A) Capture rate (Equation 1) is plotted during the harvest period as a function of lick number $n_{l}$ following various number of work trials $n_{s}$ . When the effort cost of licking is low (left plot, $c_{l}=0.5$), the optimal work period is $n_{s}^{*}=4$ (red trace). When the effort cost is higher (right plot, $c_{l}=2$), it is best to work longer before initiating harvest. (B) The metabolic cost of licking (Equation 2) is minimized when a lick has a specific duration. Tube distance varied from 0.1 to 0.3. Optimal duration that minimizes lick cost grows linearly with tube distance. (C) Optimal number of work trials $n_{s}^{*}$ and licks $n_{l}^{*}$ as a function food tube distance $d$. As the effort cost of harvest increases, one should respond by working longer, delaying harvest. (D) Optimal lick duration $T_{l}^{*}$ as a function of food tube distance. The lick duration $T_{l}^{*}$ that maximizes the capture rate is smaller than the one that minimizes the lick metabolic cost (B). That is, it is worthwhile moving vigorously to acquire reward. However, $T_{l}^{*}$ grows faster than linearly as a function of tube distance. Thus, as the tube moves farther, it is best to reduce lick vigor. Hunger, modeled as increased value of reward, should promote work and increase vigor, while effort cost of harvest (tube distance) should promote work but reduce vigor. Parameter values for all simulations: $\beta_{s}=0.5$, $\beta_{l}=0.3$, $T_{s}=1$, $k=1$, $\alpha=20$ (low food value, less hunger), $\alpha=25$ (high food value, hungry).
 
-Notably, the higher cost of licking inevitably reduces the maximum capture rate (Figure 2A). This should impact movement vigor: animals tend to respond to a reduced capture rate by slowing their movements (Yoon et al., 2018), which can be viewed as an effective way to save energy (Shadmehr et al., 2016). To incorporate vigor into the capture rate, we tried to define the effort cost of a single lick cl in terms of its energetic cost, a relationship that is currently unknown. Fortunately, other movements provide a clue: the energetic cost of reaching (Shadmehr et al., 2016; Huang and Ahmed, 2014) and the energetic cost of walking (Ralston, 1958; Bastien et al., 2005) are both concave upward functions of the movement’s duration. That is, from an energetic standpoint, there is a reach speed and a walking speed that minimize the cost of each type of movement. We generalized these empirical observations to licking and assumed that the energetic cost of a single lick was a concave upward function of its duration:(2)clTl=d2Tl+kTl
+Notably, the higher cost of licking inevitably reduces the maximum capture rate (Figure 2A). This should impact movement vigor: animals tend to respond to a reduced capture rate by slowing their movements (Yoon et al., 2018), which can be viewed as an effective way to save energy (Shadmehr et al., 2016). To incorporate vigor into the capture rate, we tried to define the effort cost of a single lick $c_{l}$ in terms of its energetic cost, a relationship that is currently unknown. Fortunately, other movements provide a clue: the energetic cost of reaching (Shadmehr et al., 2016; Huang and Ahmed, 2014) and the energetic cost of walking (Ralston, 1958; Bastien et al., 2005) are both concave upward functions of the movement’s duration. That is, from an energetic standpoint, there is a reach speed and a walking speed that minimize the cost of each type of movement. We generalized these empirical observations to licking and assumed that the energetic cost of a single lick was a concave upward function of its duration:
 
-In Equation 2, the lick is aimed at a tube located at distance d and has a duration Tl . The parameter k describes the rate with which the cost grows as a function of duration. For example, the lick duration that minimizes the energetic cost is d/k . Thus, for an energetically optimal lick, duration grows linearly with tube distance (Figure 2B). However, our objective is not to minimize the cost of licking, but to maximize the capture rate. To do so, we insert Equation 2 into Equation 1 and find the optimal policy (ns*, nl*, Tl*), which now depends on the distance of the food tube to the mouth (Supplementary file 1).
+$$
+c_{l}T_{l}=\frac{d^{2}}{T_{l}}+kT_{l}
+$$
 
-The theory predicts that to maximize the capture rate (Equation 1), the response to an increased effort cost of harvest (i.e., tube distance) should be as follows: ns* should increase (Figure 2C), nl* should decrease (Figure 2C), and Tl* should increase (Figure 2D). Notably, the rate of increase in Tl* as a function of tube distance is faster than linear, while from an energetic point of view (Equation 2), increase in distance should produce a linear increase in lick duration. Thus, as the harvest becomes more effortful, the subject should work longer to stockpile food, but move slower to save energy.
+In Equation 2, the lick is aimed at a tube located at distance $d$ and has a duration $T_{l}$ . The parameter $k$ describes the rate with which the cost grows as a function of duration. For example, the lick duration that minimizes the energetic cost is $d/\sqrt{k}$ . Thus, for an energetically optimal lick, duration grows linearly with tube distance (Figure 2B). However, our objective is not to minimize the cost of licking, but to maximize the capture rate. To do so, we insert Equation 2 into Equation 1 and find the optimal policy ($n_{s}^{*}, n_{l}^{*}, T_{l}^{*}$), which now depends on the distance of the food tube to the mouth (Supplementary file 1).
+
+The theory predicts that to maximize the capture rate (Equation 1), the response to an increased effort cost of harvest (i.e., tube distance) should be as follows: $n_{s}^{*}$ should increase (Figure 2C), $n_{l}^{*}$ should decrease (Figure 2C), and $T_{l}^{*}$ should increase (Figure 2D). Notably, the rate of increase in $T_{l}^{*}$ as a function of tube distance is faster than linear, while from an energetic point of view (Equation 2), increase in distance should produce a linear increase in lick duration. Thus, as the harvest becomes more effortful, the subject should work longer to stockpile food, but move slower to save energy.
 
 To test our theory further, we thought it useful to have a way to alter decisions in one direction (say work longer) but change movement vigor in the opposite direction (move faster). In theory, this is possible: if the subject is hungry (darker lines in Figure 2C and D), that is, the reward is more valuable, then they should again work longer before initiating harvest. Paradoxically, they should also move faster.
 
 In summary, if decisions and actions are coordinated via a policy that aims to maximize the capture rate, then in response to an increased cost of harvest, one should work longer, but move with reduced vigor. In response to an increased reward value, as in hunger, one should also work longer, but now move with increased vigor.
 
-## Increased effort cost of harvest promoted work but reduced saccade vigor
+### Increased effort cost of harvest promoted work but reduced saccade vigor
 
 To vary the effort cost of harvest, we altered the tube distance to the mouth (but kept it constant during each session). Varying tube distance affected the decisions of the subjects: when the tube was placed farther, they chose to work longer before starting harvest (Figure 3A, left subplot): they attempted more trials during each work period (ANOVA, subject M: F(2,7908) = 41.5, p=5.2 × 10–25, subject R: F(2,10948) = 88.2, p=7 × 10–50) and produced more successful trials per work period (ANOVA, subject M: F(2,7908) = 63, p=2.8 × 10–24, subject R: F(2,10948) = 163, p<10–50). This policy of delayed gratification was present throughout the recording session (Figure 3A, middle plot). That is, when the harvest required more effort, the subjects worked longer to stockpile more food before initiating their harvest (Figure 3A, right plot, effect of tube distance on food cached: subject M: F(2,9566) = 176, p<10–50, subject R: F(2,8907) = 204, p<10–50).
 
@@ -87,13 +113,15 @@ At the onset of each work period, the pupils were dilated, but as the subjects p
 
 In summary, when we increased the effort cost of harvest, both the movements and the decisions changed: the pupils constricted and the movements slowed, but they chose to work more trials before initiating harvest.
 
-## Increased effort cost of harvest reduced lick vigor
+### Increased effort cost of harvest reduced lick vigor
 
 The work period ended when the subject chose to stop tracking the target and initiated harvest via a licking bout. As in saccades, we defined lick vigor via the ratio of the actual peak velocity of the lick with respect to the expected velocity for that lick amplitude. As amplitude increased, lick peak velocity increased during both protraction and retraction (Figure 4A). Some of the licks were reward seeking and directed toward the tube, while others were grooming licks, cleaning the tongue and the area around the mouth (Animation 5). Reward-seeking licks were more vigorous than grooming licks (two-way ANOVA, effect of lick type, protraction, subject M: F(1,272233) = 66, p=4.5 × 10–16, subject R: F(1,229052) = 698, p<10–50), and retraction was more vigorous than protraction (reward-seeking licks, retraction vs. protraction, subject M: t(241145) = 532, p<10–50, subject R: t(213674) = 665, p<10–50).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87238/elife-87238-fig4-v1.jpg)
 
 **Figure 4.:** (A) Peak speed of reward-seeking and grooming licks during protraction and retraction as a function of lick amplitude. (B) Vigor of reward-seeking licks (protraction) and pupil size as a function of lick number during harvest at various tube distances. (C) Lick vigor and pupil size as a function of time during the entire recording session. Line colors depict tube distance as in (B). (D) Average lick vigor and pupil size during a harvest as a function of number of trials successfully completed in the previous work period. Lick vigor and pupil size were greater when more food had been stored. (E) Following a successful lick (contact with food), the next lick was more vigorous and pupils dilated. Following a failed lick, the next lick was slowed and pupils were less dilated. (F) We observed no consistent effect of lick vigor on lick accuracy across subjects or across tube distances. Error bars are SEM.
+
+![Animation 5.](https://cdn.elifesciences.org/articles/87238/elife-87238-animation5-v1.mp4.jpg)
 
 As the harvest began, the first lick was very low vigor, but lick after lick, the movements gathered velocity, reaching peak vigor by the third or the fourth lick (Figure 4B). As the harvest continued, lick vigor gradually declined. Like saccades, licks had a lower vigor in sessions in which the tube was placed farther from the mouth (RMANOVA, effect of tube distance, subject M: F(2,59033) = 222.5, p<10–50, subject R: F(2,133502) = 224, p<10–50), and this pattern was present during the entire recording session (Figure 4C, left subplot). Thus, an increased effort cost of harvest promoted sloth: reduced vigor of saccades during the work period and reduced vigor of licks during the harvest period.
 
@@ -103,7 +131,7 @@ While the theory predicted that moving the tube farther would result in a longer
 
 In summary, within a harvest period, lick vigor rapidly increased and then gradually declined. Simultaneous with the changes in vigor, the pupils rapidly dilated and then gradually constricted. In sessions where the tube was placed farther from the mouth, the licks had lower vigor and the pupils were more constricted.
 
-## Expectation of greater reward increased lick vigor
+### Expectation of greater reward increased lick vigor
 
 As the subject worked, they accumulated food, thus increasing the magnitude of the available reward. To check whether reward magnitude affected movement vigor, for each tube distance we computed the average lick vigor during the harvest as a function of the number of trials completed in the preceding work period. We found that when the work period had included many completed trials, then the movements in the ensuing harvest period were more vigorous (Figure 4D, two-way ANOVA, effect of trials, subject M: F(4, 164242) = 353, p<10–50, subject R: F(4,123411) = 152, p<10–50). Thus, the licks were invigorated by the amount of food that awaited harvest.
 
@@ -113,7 +141,7 @@ For saccades, we had found that increased vigor was associated with greater accu
 
 In summary, the subject licked more vigorously following a long work period in which they had accumulated more reward. Moreover, when a lick was successful in acquiring reward, they increased the vigor of the subsequent lick.
 
-## Hunger promoted work and increased vigor
+### Hunger promoted work and increased vigor
 
 Our theory predicted that it should be possible to change decisions in one direction (say work longer), while altering movement vigor in the opposite direction (move faster). An increase in the subjective value of reward, as might occur when the subject is hungry, should have two effects: increase the number of trials that the subject chooses to perform before commencing harvest and increase movement vigor.
 
@@ -127,7 +155,7 @@ We found that when their weight was lower than average, the subjects chose to wo
 
 Thus, while both the effort cost of reward and hunger promoted greater work, effort promoted sloth while hunger promoted lick vigor.
 
-## Pupil size variations strongly correlated with changes in decisions and movements
+### Pupil size variations strongly correlated with changes in decisions and movements
 
 Finally, we considered the data across both the work and the harvest periods and asked how well movement vigor tracked pupil size. The results demonstrated that in both the work and the harvest periods, for both saccades and licks, an increase in pupil size was associated with an increase in vigor (Figure 5B, reward-relevant saccades, subject M: r = 0.989, p=7.7 × 10–9, subject R: r = 0.97, p=7.1 × 10–7; reward-seeking protraction licks, subject M: r = 0.969, p=9.8 × 10–7, subject R: r = 0.989, p=6.3 × 10–9). Moreover, when the pupil was dilated, the work periods tended to be shorter (Figure 5C, subject M: r = −0.90, p=0.00014, subject R: r = −0.97, p=6.3 × 10–7), while harvest durations tended to be longer (Figure 5C, subject M: r = 0.894, p=0.00021, subject R: r = 0.935, p=2.4 × 10–5). Thus, pupil dilation was associated with choosing to work less, while moving faster.
 
@@ -167,7 +195,7 @@ Behavioral and neurophysiological data were collected from two marmosets (Callit
 
 The marmosets were born and raised in a colony that Prof. Xiaoqin Wang has maintained at the Johns Hopkins School of Medicine since 1996. The procedures on the marmosets were evaluated and approved by the Johns Hopkins University Animal Care and Use Committee, protocol number PR22M285, in compliance with the guidelines of the United States National Institutes of Health.
 
-## Data acquisition
+### Data acquisition
 
 Following recovery from head-post implantation surgery, the animals were trained to make saccades to visual targets and rewarded with a mixture of apple sauce and lab diet (Sedaghat-Nejad et al., 2019). They were placed in a monkey chair and head-fixed while we presented visual targets on an LCD screen (Curved MSI 32” 144 Hz, model AG32CQ) and tracked both eyes at 1000 Hz using an EyeLink-1000 system (SR Research, USA). The timing of target presentation on the video screen was measured using a photo diode. Tongue movements were tracked with a 522 frame per second Sony IMX287 FLIR camera, with frames captured at 100 Hz.
 
@@ -177,7 +205,7 @@ The food was provided in two small tubes (4.4 mm diameter), one to the left and 
 
 The critical variables were the number of trials that the subject chose to perform before initiating harvest, the vigor of their saccades during the work period, and the vigor of their licks during the harvest period.
 
-## Data analysis
+### Data analysis
 
 All saccades, regardless of whether they were instructed by presentation of a visual target or not, were identified using a velocity threshold. Saccades to primary, secondary, and central targets were labeled as reward-relevant saccades, while all remaining saccades were labeled as task irrelevant.
 
@@ -187,13 +215,17 @@ We tracked the tongue tip and the edge of the food in the tube, along with contr
 
 Pupil area was measured during a ±250 ms period centered at the onset of each reward-relevant saccade and the onset of each lick. We then normalized the pupil measurements by representing it as a z-score with respect to the mean value for that session.
 
-## Saccade and tongue vigor
+### Saccade and tongue vigor
 
-We relied on previous work to define vigor of a movement (Yoon et al., 2020; Yoon et al., 2018; Reppert et al., 2015; Reppert et al., 2018). Briefly, if the amplitude of a movement is x and the peak speed of that movement is v, then for each subject the relationship between the two variables can be described as:(3)v=α1-11+βx
+We relied on previous work to define vigor of a movement (Yoon et al., 2020; Yoon et al., 2018; Reppert et al., 2015; Reppert et al., 2018). Briefly, if the amplitude of a movement is $x$ and the peak speed of that movement is $v$, then for each subject the relationship between the two variables can be described as:
 
-In the above expression, α,β≥0 and are subject-specific parameters. For a movement with amplitude x, its vigor was defined as the ratio of the actual peak speed with respect to the expected value of its peak speed, that is, vEvx . Expected value was computed by fitting Equation 3 to all the data acquired across all sessions. When vigor is greater than 1, the movement had a peak velocity that was higher than the mean value associated with that amplitude.
+$$
+v=\alpha1-\frac{1}{1+\betax}
+$$
 
-## Model formulation
+In the above expression, $\alpha,\beta\geq0$ and are subject-specific parameters. For a movement with amplitude $x$, its vigor was defined as the ratio of the actual peak speed with respect to the expected value of its peak speed, that is, $\frac{v}{Evx}$ . Expected value was computed by fitting Equation 3 to all the data acquired across all sessions. When vigor is greater than 1, the movement had a peak velocity that was higher than the mean value associated with that amplitude.
+
+### Model formulation
 
 We chose a formulation of utility (Equation 1) based on a normative approach that ecologists have used to understand the decisions that animals make regarding how far to travel for food, what mode of travel to use, and how long to stay before moving on to another reward opportunity (Richardson and Verbeek, 1986; Stephens and Krebs, 1987; Bautista et al., 2001). In a typical formulation of the theory, the numerator represents the reward gained (in units of energy), minus the effort expended (also in units of energy), while the denominator represents the amount of time spent during that behavior. We represented this idea in Equation 1 with saccades that produced reward accumulation and licks that produced reward consumption. Thus, the utility that we aim to maximize is the rate of energy gained.
 
@@ -203,20 +235,24 @@ A critical assumption that we made is that energy expended performing the saccad
 
 The model’s simplicity provided closed-form solutions across all parameter values, allowing us to make predictions without having to fit the model to the measured data. For example, for all parameter values that produce a real solution (as opposed to imaginary), the optimal number of saccade trials increases with the square root of the cost of licking. Thus, the basic prediction of the model is that to maximize the capture rate, regardless of parameter values, an increase in the effort required for harvest should be met with a greater willingness to work. The closed-form solutions are presented in the supplementary document (simulations.nb).
 
-## Other models of utility
+### Other models of utility
 
 In composing our utility (Equation 1), we chose to combine reward and effort additively. This is in contrast to other approaches in which effort discounts reward multiplicatively (Sugiwaka and Okouchi, 2004; Prévost et al., 2010; Klein-Flügge et al., 2015). Our reasoning is that multiplicative interactions have the limitation that they are incompatible with the observation that reward invigorates movements.
 
-To compare additive and multiplicative approaches, let us consider an arbitrary function U(T) that specifies how effort varies with movement duration T. Typically, this is a U-shaped function that describes energy expenditure as a function of movement duration, as in Shadmehr et al., 2016. In the case of multiplicative interaction between reward and effort, we can consider the following representation of utility:(4)J=α1+TU-1(T)
+To compare additive and multiplicative approaches, let us consider an arbitrary function $U(T)$ that specifies how effort varies with movement duration $T$. Typically, this is a U-shaped function that describes energy expenditure as a function of movement duration, as in Shadmehr et al., 2016. In the case of multiplicative interaction between reward and effort, we can consider the following representation of utility:
 
-In the above formulation, reward α is discounted hyperbolically with time and an increase in reward increases the utility of the action. The optimum movement vigor has the duration T∗ that maximizes this utility. Notably, because increasing reward merely scales this utility, it has no effect on vigor. Thus, a utility in which reward is multiplied by a function of effort generally fails to predict dependence of movement vigor on reward.
+$$
+J=\frac{\alpha}{1+T}U^{-1}(T)
+$$
 
-## Simulations
+In the above formulation, reward $\alpha$ is discounted hyperbolically with time and an increase in reward increases the utility of the action. The optimum movement vigor has the duration $T^{∗}$ that maximizes this utility. Notably, because increasing reward merely scales this utility, it has no effect on vigor. Thus, a utility in which reward is multiplied by a function of effort generally fails to predict dependence of movement vigor on reward.
 
-The optimal policy specifies the decisions and movements that for the effort cost defined in Equation 2 maximizes the capture rate defined in Equation 1. This policy selects the number of saccade trials ns to perform during the work period, the number of licks nl to perform during the harvest period, and the vigor of each lick, represented by the average duration of a lick Tl . To compute the optimal policy, we found the derivative of the capture rate with respect to each policy variable ns , nl , and Tl , then set each derivative equal to zero, producing three simultaneous nonlinear equations. In all three cases, we were able to solve for the relevant control variable analytically (see Supplementary file 1 for the derivations). We found that if the solution was a real number, then regardless of parameter values, an increase in d (distance of the tube to the mouth), the optimal policy produced an increase in ns* , decrease in nL* , and increase in TL* . Thus, the results illustrated in Figure 2 are robust to changes in parameter values.
+### Simulations
 
-To generate the plots in Figure 2A, we used the following parameter values: α=20, βs=0.5, βL=0.3, cs=0.5, Ts=1, TL=0.2, cL=0.5 (low effort), and cL=2.5 (high effort). For the plots in Figure 2C and D, we used the same parameter values, but cL was defined via Equation 2. Thus, tube distance d varied, and TL was unknown and was solved for. In Equation 2, kL=1. In the simulations, to describe state of hunger, we set α=20 for a sated state and α=25 for a hungry state.
+The optimal policy specifies the decisions and movements that for the effort cost defined in Equation 2 maximizes the capture rate defined in Equation 1. This policy selects the number of saccade trials $n_{s}$ to perform during the work period, the number of licks $n_{l}$ to perform during the harvest period, and the vigor of each lick, represented by the average duration of a lick $T_{l}$ . To compute the optimal policy, we found the derivative of the capture rate with respect to each policy variable $n_{s}$ , $n_{l}$ , and $T_{l}$ , then set each derivative equal to zero, producing three simultaneous nonlinear equations. In all three cases, we were able to solve for the relevant control variable analytically (see Supplementary file 1 for the derivations). We found that if the solution was a real number, then regardless of parameter values, an increase in $d$ (distance of the tube to the mouth), the optimal policy produced an increase in $n_{s}^{*}$ , decrease in $n_{L}^{*}$ , and increase in $T_{L}^{*}$ . Thus, the results illustrated in Figure 2 are robust to changes in parameter values.
 
-## Statistical analysis
+To generate the plots in Figure 2A, we used the following parameter values: $\alpha=20$, $\beta_{s}=0.5$, $\beta_{L}=0.3$, $c_{s}=0.5$, $T_{s}=1$, $T_{L}=0.2$, $c_{L}=0.5$ (low effort), and $c_{L}=2.5$ (high effort). For the plots in Figure 2C and D, we used the same parameter values, but $c_{L}$ was defined via Equation 2. Thus, tube distance $d$ varied, and $T_{L}$ was unknown and was solved for. In Equation 2, $k_{L}=1$. In the simulations, to describe state of hunger, we set $\alpha=20$ for a sated state and $\alpha=25$ for a hungry state.
+
+### Statistical analysis
 
 Hypothesis testing was performed using the functions provided by the MATLAB Statistics and Machine Learning Toolbox, version R2021b. For t-tests, across the one-sample, paired-sample, and two-sample conditions, p-values were computed using the ttest and ttest2 functions with data that was combined across sessions, separated by condition. For ANOVA, in the one-way condition, p-values were computed using a nonparametric Kruskal–Wallis test, using the kruskalwallis function. In the two-way condition, the anovan function was used to compute p-values, accounting for an unbalanced design resulting from a varied number of samples across conditions. In both cases, like in the t-tests, data was combined across sessions, separated by condition. In the repeated measures condition, each session was treated as a subject with multiple repeated measures representing a given variable (i.e., lick vigor per lick in a harvest period). To fit a repeated measures model, the fitrm function was used, then analyzed using the ranova function. In all cases of repeated measures ANOVA, compound symmetry assumptions were tested using the Mauchly sphericity test with the maulchy function. In cases where the assumption was violated (Maulchy test p<0.05), epsilon adjustments were used, with the epsilon function, to compute corrected p-values (for ε > 0.75, use Huynh–Feldt p-value; and for ε < 0.75, use Greenhouse–Geisser p-values). For correlation analyses, Pearson’s correlation coefficient, r, and corresponding p-values were computed using the corrcoef function.

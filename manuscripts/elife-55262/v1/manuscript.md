@@ -38,31 +38,31 @@ Due to a lack of available methodology, it has not been possible until recently 
 
 ## Results
 
-## 2H enrichment in serum water
+### 2H enrichment in serum water
 
 In rats labelled with deuterium over a period of 127 days (Figure 1a), 2H enrichment of serum occurred rapidly and in a similar manner to that reported previously in rodents (Kim et al., 2012), reaching a plateau of 5.6% by day 4, and remained constant throughout the study (Figure 1b). The enrichment curve, which was empirically derived from the GC-MS measurements at the sampled time points, defines two parameters: deuterium enrichment rate (kp) = 0.7913 and plateau (pss) = 0.0558; these values were used for subsequent kinetic curve fitting to calculate peptide turnover rate constants (k).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic showing 2H2O labelling of rats and details of sample collection, and interfascicular matrix isolation by laser capture microdissection (scale bar = 100 µm). (B) 2H enrichment in serum occurred rapidly, reaching a plateau of 5.6% by day 4 and remained constant throughout the study. Data are shown as mean ± SD and raw data provided in Figure 1—source data 1. (C) Example extracted ion chromatograms from tendon samples demonstrating increased abundance of higher mass isotopomer peaks over the course of the study (M1 – M5). (D) Example curve showing the relative abundance of the unlabelled monoisotopic peak (M0) for the cartilage oligomeric matrix protein (COMP) peptide QMEQTYWQANPFR, calculated by ProTurn software and plotted as a function of time.Figure 1—source data 1.
+**Figure 1.:** (A) Schematic showing 2H2O labelling of rats and details of sample collection, and interfascicular matrix isolation by laser capture microdissection (scale bar = 100 µm). (B) 2H enrichment in serum occurred rapidly, reaching a plateau of 5.6% by day 4 and remained constant throughout the study. Data are shown as mean ± SD and raw data provided in Figure 1—source data 1. (C) Example extracted ion chromatograms from tendon samples demonstrating increased abundance of higher mass isotopomer peaks over the course of the study (M1 – M5). (D) Example curve showing the relative abundance of the unlabelled monoisotopic peak (M0) for the cartilage oligomeric matrix protein (COMP) peptide QMEQTYWQANPFR, calculated by ProTurn software and plotted as a function of time.
 
-## Protein identification
+### Protein identification
 
 190 proteins with ≥2 unique peptides were identified in whole tendon digests and protein interactions are shown in Figure 2. Of these proteins, 72 were classified as ECM or ECM-related proteins by MatrisomeDB (Hynes and Naba, 2012). In samples collected by laser capture microdissection of tendon cryosections, 266 proteins with ≥2 unique peptides were identified in the IFM, 79 of which were ECM or ECM-related proteins (Figure 3). In the FM, 116 proteins were identified, of which 71 were ECM or ECM-related proteins (Figure 4). Protein interactions for each tendon component demonstrate a complex and highly interconnected proteome in tendon and its ECM phases.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig2-v1.jpg)
 
-**Figure 2.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 2—source data 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig3-v1.jpg)
 
-**Figure 3.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 3—source data 1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig4-v1.jpg)
 
-**Figure 4.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** Unconnected nodes were removed to provide clarity of the interactome. The total cluster was built with STRING (Szklarczyk et al., 2019) allowing for experimentally verified and predicted protein-protein interactions at high confidence levels (0.700). Line thickness indicates the strength of supporting data. Source data are provided in Figure 4—source data 1.
 
-## Protein turnover in whole tendon
+### Protein turnover in whole tendon
 
 Peptide turnover rates were calculated using ProTurn (v2.1.05; available at http://proturn.heartproteome.org; Lam et al., 2014; Lau et al., 2016; Lau et al., 2018; Wang et al., 2014), which automatically calculates turnover rate constants for all peptides that pass the selection criteria using non-steady state curve fitting (Figure 1). To assure data quality, we used a stringent cut-off, passing only peptides that are identified at 1% false discovery rate (FDR) and quantified at four or more time points. In total, 455 peptides, relating to 41 proteins, passed the ProTurn selection criteria and were used to calculate protein half-life in whole tendon samples.
 
@@ -76,19 +76,19 @@ The relative abundance of the unlabelled monoisotopic peak (M0), plotted as a fu
 
 **Figure 6.:** (A) The peptide rate constants (k) for individual proteins are plotted in descending order on a logarithmic scale, with the median value represented by a red line. (B) The median k values for each protein were used to calculate protein half-life, assuming a first order reaction. (C) Protein turnover rates plotted against MatrisomeDB and PANTHER categories, with the median value represented by a red line. Due to space constraints, gene, rather than protein, names are displayed in parts A and B. Source data, generated by ProTurn are available in Source data 1.
 
-## Protein turnover in tendon compartments
+### Protein turnover in tendon compartments
 
 246 peptides, relating to 20 proteins, and 121 peptides, relating to 12 proteins, passed the ProTurn selection criteria in the FM and IFM respectively. 55 peptides were present both in the IFM and FM, and k values were significantly greater for these peptides in the IFM compared to the FM (median: 0.018 vs. 0.010; p<0.0001), demonstrating an overall faster rate of protein turnover in the IFM. 39 peptides relating to collagen type I were identified in both the IFM and FM, with significantly greater k values in the IFM (p<0.0001; Figure 7a). The turnover rate constants and resultant half-lives for proteins identified in each tendon phase are shown in Figure 4b. Turnover rate constants for Col1a1 and Col1a2 were significantly higher in the IFM compared to the FM, but there were no significant differences in rate constants for Col3a1 between tendon phases.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig7-v1.jpg)
 
-**Figure 7.:** (A) Rate constants (k) for collagen type I peptides identified in both tendon phases were significantly greater in the IFM compared to the FM (n = 39). (B) Median peptide decay curves for Col1a1 and Col1a2 in the FM (▲; solid line) and IFM (●; dashed line), showing goodness of fit (r2) and standard error (S.E.). (C) Turnover rate constants (k) and corresponding half-lives for proteins identified in each phase. *** indicates p<0.0001. Source data, generated by ProTurn are available in Figure 7—source data 1 for the FM and Figure 7—source data 2 for the IFM.Figure 7—source data 1.hl tab contains protein half-life information organized by peptide sequence and hl-data tab contains isotopomer relative abundance at each time point.Figure 7—source data 2.hl tab contains protein half-life information organized by peptide sequence and hl-data tab contains isotopomer relative abundance at each time point.
+**Figure 7.:** (A) Rate constants (k) for collagen type I peptides identified in both tendon phases were significantly greater in the IFM compared to the FM (n = 39). (B) Median peptide decay curves for Col1a1 and Col1a2 in the FM (▲; solid line) and IFM (●; dashed line), showing goodness of fit (r2) and standard error (S.E.). (C) Turnover rate constants (k) and corresponding half-lives for proteins identified in each phase. *** indicates p<0.0001. Source data, generated by ProTurn are available in Figure 7—source data 1 for the FM and Figure 7—source data 2 for the IFM.
 
 Due to ProTurn software identifying a low number of proteins in laser captured samples, particularly in the IFM, turnover rate constants in tendon phases were calculated manually for a number of proteins of interest (Figure 8). Rate constants of turnover of decorin peptides were significantly higher in the IFM compared to the FM (Figure 8). It was not possible to assess differences in turnover of other proteins due to a low number of peptides identified at sufficient time points to allow accurate curve fitting (Figure 8c).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/55262/elife-55262-fig8-v1.jpg)
 
-**Figure 8.:** (A) Relative abundance of M0 as a function of time, and resultant non-linear curve fitting for peptides corresponding to decorin identified in the FM (▲; solid line) and IFM (●; dashed line). (B) Resultant k values for decorin peptides were significantly greater in the IFM than in the FM (p=0.042). (C) Manually calculated turnover rate constants (k) and corresponding half-lives for tendon proteins of interest. Source data are available in Figure 8—source data 1.Figure 8—source data 1.0 at different time points for decorin, fibromodulin, biglycan and Col3a1 peptides, and resultant K values.
+**Figure 8.:** (A) Relative abundance of M0 as a function of time, and resultant non-linear curve fitting for peptides corresponding to decorin identified in the FM (▲; solid line) and IFM (●; dashed line). (B) Resultant k values for decorin peptides were significantly greater in the IFM than in the FM (p=0.042). (C) Manually calculated turnover rate constants (k) and corresponding half-lives for tendon proteins of interest. Source data are available in Figure 8—source data 1.
 
 ## Discussion
 
@@ -112,48 +112,230 @@ We extend previous observations in tendon and other musculoskeletal tissues (Tho
 
 Our results show that proteome dynamics in tendon is highly complex, with differences in protein-selective turnover rates observed in distinct IFM and FM ECM phases. Regulation of protein turnover is multifactorial, involving pathways controlling protein synthesis, folding, transport, assembly, disassembly, and degradation (Powers et al., 2009). Recent studies have identified the important role of transforming growth factor-β (TGF-β) in regulating ECM remodelling in tendon and other tissues (Gumucio et al., 2015; Rys et al., 2016). Indeed, it has been shown that TGF-β localises to the IFM in developing and adult tendon (Kuo et al., 2008; Russo et al., 2015), which is consistent with the notion that increased TGF-β signalling could have a role in this faster protein turnover identified in the IFM.
 
-## Conclusions
+### Conclusions
 
 This is the first study to determine the turnover rate of individual proteins in different connective tissue phases, demonstrating complex proteome dynamics in tendon, with an overall faster turnover of proteins in the glycoprotein-rich IFM phase. Greater capacity for turnover of this phase of the tendon matrix may be indicative of a mechanism that reduces the accumulation of damage caused by the high shear environment within this region, although this remains to be directly determined. The techniques used here provide a powerful approach to interrogate alterations in connective tissue protein turnover with ageing and/or disease which are likely to influence injury risk.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus Norvegicus, Female)</td>
+      <td>Wistar</td>
+      <td>Charles River</td>
+      <td>RRID:RGD_13508588</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce protein assay</td>
+      <td>ThermoFisher</td>
+      <td>22660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[2H]2O</td>
+      <td>CK isotopes LtD</td>
+      <td>DLM-2259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetonitrile with 0.1% formic acid LCMS grade</td>
+      <td>Fisher Scientific</td>
+      <td>10723857</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium bicarbonate</td>
+      <td>Sigma</td>
+      <td>09830</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chondroitinase ABC</td>
+      <td>Sigma</td>
+      <td>C3667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dithiothreitol</td>
+      <td>Melford laboratories</td>
+      <td>MB1015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formic acid (0.1% v/v) LCMS grade</td>
+      <td>Fisher Scientific</td>
+      <td>10188164</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guanidine hydrocholoride</td>
+      <td>Sigma</td>
+      <td>G3272</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodoacetamide</td>
+      <td>Sigma Aldrich</td>
+      <td>I1149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RapiGest SF</td>
+      <td>Waters</td>
+      <td>186001861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trifluoroacetic acid Optima</td>
+      <td>Fisher Scientific</td>
+      <td>10723857</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trifluoroacetic acid (0.1% v/v) LCMS grade</td>
+      <td>Fisher Scientific</td>
+      <td>10516625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin Gold MS grade</td>
+      <td>Promega</td>
+      <td>V5280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Peaks Studio v8.5</td>
+      <td>Bioinformatics Solutions</td>
+      <td>www.bioinfor.com/peaks-studio</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STRING v11.0</td>
+      <td>PMID:30476243</td>
+      <td>string-db.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatrisomeDB</td>
+      <td>PMID:21937732</td>
+      <td>matrisomeproject.mit.edu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PANTHER</td>
+      <td>PMID:23868073</td>
+      <td>www.pantherdb.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ProLuCID</td>
+      <td>PMID:26171723</td>
+      <td>fields.scripps.edu/yates/wp/?page_id = 821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ProteoWizard v3</td>
+      <td>PMID:28188540</td>
+      <td>proteowizard.sourceforge.net/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ProTurn</td>
+      <td>PMID:24614109</td>
+      <td>proturn.heartproteome.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism v8.2</td>
+      <td>GraphPad</td>
+      <td>www.graphpad.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Filter units, Vivacon 500 10000 MWCO</td>
+      <td>Sartorius</td>
+      <td>VN01H02</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 - Female Wistar rats (n = 24, 12 week old, weight: 270 ± 18 g, range: 228–299 g, specific pathogen free, Charles River Company, UK) were randomly housed in polypropylene cages in groups of 3, subjected to 12 hr light/dark cycle with room temperature at 21 ± 2°C and fed ad libitum with a maintenance diet (Special Diet Services, Witham UK). All procedures complied with the Animals (Scientific Procedures) Act 1986, were approved by the local ethics committee at the Royal Veterinary College, were performed under project licence PB78F43EE and are reported according to the ARRIVE guidelines (Kilkenny et al., 2010).
 
-## In vivo isotope labelling
+### In vivo isotope labelling
 
 All rats, with the exception of the controls (n = 3) received two intraperitoneal injections of 99% [2H]2O (10 ml/kg; CK isotopes Ltd) spaced 4 hr apart, and were then allowed free access to 8% [2H]2O (v/v) in drinking water for the duration of the study to maintain steady-state labelling (Kim et al., 2012). All rats were acclimatized for 1 week prior to commencement of the study, and monitored daily and weighed weekly throughout the study; no adverse effects were observed. Rats in the control group were sacrificed on day 0. Rats in the isotope labelled groups were sacrificed on day 1, 3, 6, 15, 31, 63 and 127 (n = 3 per time point). Rats were culled at the same time of day (10 am) at each time point, to minimise any effect from diurnal variations. Blood was collected from each rat immediately post-mortem, and allowed to clot at room temperature. Blood samples were centrifuged at 1500 g for 10 min, and serum collected and stored at −20°C prior to analysis. Both Achilles tendons were harvested within 2 hr of death. The left Achilles was snap frozen in n-hexane cooled on dry ice for proteomic analysis of the whole tissue, and the right Achilles was embedded in optimal cutting temperature compound and snap frozen in n-hexane cooled on dry ice for isolation of fascicular and interfascicular matrices (Figure 1a).
 
-## GC-MS analysis of serum water
+### GC-MS analysis of serum water
 
 2H labelling in serum was measured via gas chromatography-mass spectrometry (GC-MS) after exchange with acetone and extraction with chloroform as described previously (McCabe et al., 2006). 30 µl extract was analysed using GC-MS (Waters GCT mass spectrometer, Agilent J and W DB-17MS column (30m × 0.25 mm x 0.25 µm)). The carrier gas was helium (flow rate: 0.8 ml/min). The column temperature gradient was as follows: 60°C initial, 20 °C/min increase to 100°C, 1 min hold, then 50 °C/min increase to 220°C. The injection volume was 1 µl and injector temperature was 220°C. The mass spectrometer operated in positive ion electron ionisation mode, the source temperature was 180°C and the range scanned was m/z 40–600 (scan time: 0.9 s). Mass spectral intensities for m/z values 58 and 59 were produced by combining the mass spectra in the acetone peak to create an averaged spectrum (Waters MassLynx). Serum 2H enrichment was calculated by comparison to a standard curve, and first order curve fitting (GraphPad Prism 8) used to calculate the rate constant (kp) and plateau (pss) of deuterium enrichment (Figure 1b).
 
-## Protein extraction from whole tendon
+### Protein extraction from whole tendon
 
 Left Achilles tendons were thawed, and their surface scraped with a scalpel, followed by PBS washes, to remove the epitenon and any residual non-tendinous tissue. Tendons were finely chopped, flash frozen in liquid nitrogen and pulverised in a dismembrator (Sartorius, mikro-dismembrator U, 1800rpm, 2 mins.). Proteins were extracted using previously optimised methodologies (Ashraf Kharaz et al., 2017). Briefly, following deglycosylation in chondroitinase ABC, proteins were extracted in guanidine hydrocholoride (GuHCl) as described previously (Kharaz et al., 2016). Protein content was determined using a Pierce protein assay according to the manufacturer’s instructions. Samples were stored at −80°C prior to preparation for LC-MS/MS by centrifugal filtration. Filter units (Vivacon 500; 10 000 MWCO) were rinsed with 1%(v/v) formic acid and a balance volume of buffer (4M GuHCl/50 mM ammonium bicarbonate (ambic)) was added. A volume equivalent to 50 µg protein was added to each filter and the samples vortexed gently. Filters were centrifuged (15 min, 12500 rpm, 20°C), washed with GuHCl buffer and centrifuged again. Proteins were reduced by DTT incubation (100 µl of 8 mM in 4M GuHCl, 15 min, 56°C) and then centrifuged (10 min, 12500 rpm). DTT was removed by washing twice with buffer as described above. Proteins were alkylated with 100 μl 50 mM iodoacetamide in 4M GuHCl solution, vortexed and incubated in the dark (20 min., room temperature). Iodoacetamide was removed by washing twice with GuHCl buffer as described above. Buffer was exchanged to ambic by 3 washes with 50 mM ambic, centrifuging after each wash. 1 µg trypsin in 50 mM ambic (40 µl) was added and proteins digested overnight at 37°C with mixing. Flow through was collected after centrifugation and addition of 40 µl 50 mM ambic. The flow though was combined and acidified using trifluoroacetic acid (10%(v/v)), and diluted 20-fold in 0.1%(v/v) TFA/3%(v/v) acetonitrile for LC-MS/MS analysis.
 
-## Isolation and extraction of fascicular and interfascicular matrix proteins
+### Isolation and extraction of fascicular and interfascicular matrix proteins
 
 Longitudinal cryosections (15 µm) from the right Achilles tendons (five time points, n = 2–3/time point) were adhered to membrane slides (PEN, Leica) and stored at −80°C. Sections were prepared for laser capture as described previously (Thorpe et al., 2016b) and approximately 1 mm2 of FM and IFM from each sample were collected into 50 µl molecular biology grade H2O (Leica LMD7000; Figure 1a). Samples were immediately frozen and stored at −80°C. Prior to digestion, samples were centrifuged immediately after removal from −80°C storage. Volume was adjusted to 80 µl by adding 50 mM ambic, and Rapigest SF (1%(v/v) in 25 mM ambic, Waters, UK) was added to a final volume of 0.1%(v/v). Samples were mixed (room temperature, 30 min) then incubated at 60°C (1 hr, 450 rpm). Samples were centrifuged (17200 g, 10 min), vortexed, then incubated at 80°C (10 min). Proteins were reduced by incubating with DTT (5 μL, 60 mM in 25 mM ambic, 10 min, 60°C) then alkylated by adding 5 μl 178 mM iodoacetamide in 25 mM ambic (30 min. incubation, room temperature, in dark). Trypsin (Promega Gold sequencing grade) was diluted in 25 mM ambic and added at an enzyme to protein ratio of 1:50 (based on estimated protein amount from tissue volume collected). Digests were incubated overnight at 37°C with an enzyme top-up after 3.5 hr. Rapigest was hydrolysed with TFA (0.5 μl, 37°C, 45 min.). Digests were centrifuged (17200 g, 30 min.), aspirated into low-bind tubes and de-salted on stage-tips as previously described (Thorpe et al., 2016b).
 
-## LC-MS/MS analyses
+### LC-MS/MS analyses
 
 Data-dependent LC-MS/MS analyses were conducted on a QExactive quadrupole-Orbitrap mass spectrometer (Williamson et al., 2016; Michalski et al., 2011) coupled to a Dionex Ultimate 3000 RSLC nano-liquid chromatograph (Thermo Fisher, UK). Digest was loaded onto a trapping column (Acclaim PepMap 100 C18, 75 µm x 2 cm, 3 µm packing material, 100 Å) using a loading buffer of 0.1%(v/v) TFA, 2%(v/v) acetonitrile in water for 7 min (flow rate: 9 µl/min). The trapping column was set in-line with an analytical column (EASY-Spray PepMap RSLC C18, 75 µm x 50 cm, 2 µm packing material, 100 Å) and peptides eluted using a linear gradient of 96.2% A (0.1%(v/v) formic acid):3.8% B (0.1%(v/v) formic acid in water:acetonitrile [80:20](v/v)) to 50% A:50% B over 30 min (flow rate: 300 nl/min), followed by 1% A:99% B for 5 min and re-equilibration of the column to starting conditions. The column was maintained at 40°C, and the effluent introduced directly into the integrated nano-electrospray ionisation source operating in positive ion mode. The mass spectrometer was operated in DDA mode with survey scans between m/z 300–2000 acquired at a mass resolution of 70,000 (FWHM) at m/z 200. The maximum injection time was 250 ms, and the automatic gain control was set to 1e6. The 10 most intense precursor ions with charges states of between 2+ and 4+ were selected for MS/MS with an isolation window of 2 m/z units. The maximum injection time was 100 ms, and the automatic gain control was set to 1e5. Peptides were fragmented by higher-energy collisional dissociation using a normalised collision energy of 30%. Dynamic exclusion of m/z values to prevent repeated fragmentation of the same peptide was used (exclusion time: 20 s).
 
-## Peptide and protein identification
+### Peptide and protein identification
 
 Proteins were identified from RAW data files, with trypsin specified as the protease, with one missed cleavage allowed and with fixed modifications of carbamidomethyl cysteine and variable modifications of oxidation of methionine and proline (Peaks Studio v8.5, Bioinformatics Solutions, Waterloo, Canada). Searches were performed against the UniProt Rattus Norvegicus database (www.uniprot.org/proteomes), with an FDR of 1%,≥2 unique peptides per protein and a confidence score >20. Protein network analysis was performed using the Search Tool for Retrieval of Interacting Genes/Proteins (STRING), v11.0 (Szklarczyk et al., 2019), and proteins were further classified using MatrisomeDB (Hynes and Naba, 2012) and the Protein ANalysis THrough Evolutionary Relationships (PANTHER) Classification System (Mi et al., 2013). The proteomic data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol et al., 2019) with the data set identifier PXD015928 and 10.6019/PXD015928.
 
-## Calculation of protein turnover rates
+### Calculation of protein turnover rates
 
 Peptides at each time point were identified using ProLuCID (Xu et al., 2015) searching against a reverse-decoyed protein sequence database (UniProt Rattus Norvigicus, reviewed, accessed 23/04/2018). Fixed modifications of carbamidomethyl cysteine and ≤3 variable modifications of oxidation of methionine and proline were allowed. Tryptic, semi-tryptic, and non-tryptic peptides within a 15-ppm mass window surrounding the candidate precursor mass were searched. Protein identification was performed using DTASelect (v.2.1.4) (Cociorva et al., 2006), with ≤1% global peptide FDR and ≥2 unique peptides per protein. Protein turnover rates and resulting half-lives were calculated using custom software (ProTurn v2.1.05; available at: http://proturn.heartproteome.org) as previously described and validated (Lam et al., 2014; Lau et al., 2016; Lau et al., 2018; Wang et al., 2014). Briefly, RAW files were converted into mzML format (ProteoWizard, v3.0.11781)(Adusumilli and Mallick, 2017) for input into ProTurn, along with DTAselect-filter text files for protein identification. ProTurn parameters were as follows: area-under-curve integration width: 60 p.p.m., extracted ion chromatograph smoothing: Savitzky-Golay filter (Savitzky and Golay, 1964) over seven data points. Non-steady state curve fitting was used to account for the initial delay in uptake of 2H, using a first-order kinetic curve to approximate the equilibration of 2H2O in body water. Values of kp and pss were inputted from the resultant curve fitting of 2H enrichment in serum samples. To control against false positive identifications, only peptides that were explicitly identified in ≥4 data points were accepted for the calculation of protein turnover. The ‘Allow Peptide Modification’ option was selected to include any identified post-translationally modified peptides in kinetic curve-fitting, and peptide isotopomer time series were included if R2 ≥0.8 or standard error of estimate (S.E)≤0.05 (Lam et al., 2014). Protein-level turnover rate is reported as the median and median absolute deviation of the turnover rate constants of each accepted unique constituent peptide, from which protein half-life can be calculated assuming a first order reaction (Lau et al., 2018).
 
-For some proteins of interest, particularly in the IFM, automated calculation of turnover rates was unsuccessful, due to unsuccessful automated identification of isotopomer peaks. In these cases, turnover rate constants were calculated manually, using isotopomer peak height to calculate the relative abundance of M0 as a function of time (Thermo Xcalibur v2.2), and fitting first order kinetic curves to estimate k (GraphPad Prism v8.0.2). As the labelling pattern of each peptide is dependent on the number of available labelling sites (N), unlabelled relative abundance of the 0th isotopomer (a), as well as the plateau level of enrichment of deuterium (pss); these values were used to calculate the plateau values of the 0th isotopomer (A0) which occurs when the peptide is fully labelled. N was calculated from the literature (Lam et al., 2014; Commerford et al., 1983). a was calculated from the peptide sequence and natural abundance of heavy isotopes of carbon, nitrogen, oxygen and sulphur (Lam et al., 2014). pss was calculated from the serum enrichment as detailed above. The following equation was then used to calculate the plateau of A0:A0,PLATEA=a(1−pss)N
+For some proteins of interest, particularly in the IFM, automated calculation of turnover rates was unsuccessful, due to unsuccessful automated identification of isotopomer peaks. In these cases, turnover rate constants were calculated manually, using isotopomer peak height to calculate the relative abundance of M0 as a function of time (Thermo Xcalibur v2.2), and fitting first order kinetic curves to estimate k (GraphPad Prism v8.0.2). As the labelling pattern of each peptide is dependent on the number of available labelling sites (N), unlabelled relative abundance of the 0th isotopomer (a), as well as the plateau level of enrichment of deuterium (pss); these values were used to calculate the plateau values of the 0th isotopomer (A0) which occurs when the peptide is fully labelled. N was calculated from the literature (Lam et al., 2014; Commerford et al., 1983). a was calculated from the peptide sequence and natural abundance of heavy isotopes of carbon, nitrogen, oxygen and sulphur (Lam et al., 2014). pss was calculated from the serum enrichment as detailed above. The following equation was then used to calculate the plateau of A0:
+
+$$
+A_{0,PLATEA}=a(1−p_{ss})^{N}
+$$
 
 Previous work demonstrates this accurately predicts the plateau measured experimentally (Lam et al., 2014), therefore, for curve fitting calculations the plateau was constrained to the calculated value for each peptide. To assess the degree of differences in curve fitting performed by automated and manual approaches, k values were calculated using both approaches for 10 peptides. Resulting k values differed by an average of 23%. This method does not allow for direct comparison between manual and automated calculations of k, due to differences in curve fitting method, but does allow differences in peptide k values between IFM and FM to be assessed, when both are calculated manually.
 
-## Statistical analysis
+### Statistical analysis
 
 When ≥ 3 peptides were identified corresponding to a particular protein, statistical differences in turnover rate constants in tendon phases were assessed using paired t-tests, Wilcoxon matched pairs tests, or Mann-Whitney tests, with p<0.05 (GraphPad Prism, v8.2). The statistical test chosen was dependent on whether data were normally distributed, which was assessed with Kolmogorov-Smirnov tests, and whether the same peptides were identified in tendon phases, which allowed for paired statistical tests.

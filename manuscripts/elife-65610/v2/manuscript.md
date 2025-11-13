@@ -38,25 +38,133 @@ In the present study, we investigated the effects of inbreeding on plant-pollina
 
 ## Materials and methods
 
-## Study species
+### Study species
 
 S. latifolia shows a distinct moth pollination syndrome with large, white, and funnel-shaped flowers (Dafni et al., 1997). The flowers open from dusk till mid-morning to release a scent bouquet composed of more than 60 VOC, whereby emission peaks around dusk (Dötterl and Jürgens, 2005; Dötterl et al., 2009; Mamadalieva et al., 2014). During the daytime, no measurable floral scent is emitted (Dötterl et al., 2005). Nectar production peaks 3–4 days after flower opening and is just as floral scent emission reduced after pollination (Gehring et al., 2004; Dötterl and Jürgens, 2005; Muhlemann et al., 2006). S. latifolia exhibits various sexual dimorphisms with male plants producing more and smaller flowers that excrete lower volumes of nectar with higher sugar concentrations as compared to females (Gehring et al., 2004; Delph et al., 2010). The quality of floral scent exhibits no clear sex-specific patterns, while male plants have been shown to emit higher or equal total amounts of VOC as compared to females in different studies (Dötterl and Jürgens, 2005; Waelti et al., 2009).
 
 Various diurnal generalist pollinators as well as crepuscular moths visit S. latifolia flowers. The latter, including the specialist Hadena bicruris Hufn. (Lepidoptera: Noctuidae), were shown to be the most efficient pollinators for S. latifolia (Young, 2002), which is the reason why we exclusively focus on nocturnal pollination in our study. All nocturnal pollinators are rewarded with nectar, while the specialist H. bicruris is additionally rewarded with oviposition sites. S. latifolia and H. bicruris form a well-studied nursery pollination system, in which female moths pollinate female plants while ovipositing on the flower ovaries to provide their larvae with developing seeds. Pollination services provided by male H. bicruris likely over-compensate the costs of seed predation by their offspring (Labouche and Bernasconi, 2010). A substantial fraction of floral VOC produced by S. latifolia triggers antennal and behavioural responses in male and female H. bicruris moths (Dötterl et al., 2006). The activity of H. bicruris peaks at dusk between May and July (Bopp and Gottsberger, 2004). H. bicruris is abundant in 90% of European S. latifolia populations but has not yet been introduced to North America. Other nocturnal moths including the specialist Hadena ectypa Morrison (Lepidoptera: Noctuidae) provide main pollination services to S. latifolia in the invaded range without imposing costs by seed predation (Young, 2002; Castillo et al., 2014).
 
-## Plant material
+### Plant material
 
 We collected seed capsules from five female individuals (maternal families) in each of eight European and eight invasive North American S. latifolia populations (Figure 1; Figure 1—figure supplement 1). Seeds from all maternal families (consisting of full-sibs and/or half-sibs, hereinafter referred to as sibs) were germinated and plants were grown under controlled greenhouse conditions for experimental crossings within populations. Each female individual from the P-generation received pollen from a male derived from the same maternal family (inbreeding) and pollen from a male derived from a different maternal family within the same population (outcrossing) at separate flowers (Figure 1—figure supplement 2). During the crossings, plants were kept at randomised positions in the greenhouse. Female flower buds were covered with mesh bags prior to opening until fruit maturation and opened flowers were released from bags only for directed pollen transfer. The field sampling, rearing conditions, and experimental crossing are described in detail in Schrieber et al., 2019a, Schrieber et al., 2019b. Seeds were dried and stored at room temperature until further use.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-v2.jpg)
+
+**Figure 1.:** Each of the eight listed methodologies is illustrated in detail in a figure supplement.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The crossings were performed with five families (numbered grey circles). Females (red plants, leaf pointing to left) were fertilised with pollen from males (blue plants, leaf pointing to right) from the same family for inbreeding (dashed arrows), and with pollen from males from a different family for outbreeding (solid arrows). Inbreeding and outbreeding were performed at distinct flowers of the same female individual.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Our study involved 320 plant individuals from two origins (Europe, North America) × 8 populations × 5 maternal families × 2 sexes (male, female) × 2 breeding treatments (outbred, inbred).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Spatial flower trait assessment. (A) Maximal synflorescence height above ground, (B) flower number, (C) petal limb area, (D) corolla expansion. (b) Variation in flower shape of Silene latifolia plants in our experiment. Photographs from female (upper row) and male (lower row) flowers with maximal deviation in flower shape were randomly chosen from the entire pool of experimental plants.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Flowers were inserted into VOC collection units (consisting of 50 mL PE cups with lids, both with 15 mm holes), which were fixed via wooden sticks at the plant pot exterior. Two polydimethylsiloxane (silicone) tubes of standardised size were inserted into the collection units and absorbed VOC for a period of 8 hr.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** The camera was fixed on a tripod positioned on an exact horizontal platform, which was oriented towards the setting sun (a) to take images of flowers in the visible light spectrum (b) and the ultraviolet light spectrum (c). Images included an intact and fully opened flower (i) that was carefully plugged into a black ethylene vinyl acetate sheet equipped with a label (ii), a size standard (iii), a 10% polytetrafluorethylene light standard (iv), and a 99% spectralon light standard (v).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Nectar was extracted into 1 or 2 µL microcapillary tubes. The length of the nectar column was measured with a calliper to determine the exact volume. Nectar sugar content was analysed with a refractometer adjusted for small sample sizes.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** The plots consisted of eight individuals representing all eight populations within one of the eight possible breeding treatment × sex × range combinations. Each of these combinations was replicated five times on the maternal family level, resulting in 40 plots. Plots were spaced at a distance of 6 m to provide pollinators with the choice of visiting plants of specific breeding treatment × sex × range combinations.
+
 For the experiment, we grew plants from the F1 generation under greenhouse conditions (16/8 hr light/dark at 20/10°C±6°C). After the onset of flowering, we randomly chose one female and one male individual per breeding treatment (inbred, outbred) × maternal family (1−5)×population (1−8) × origin (Europe, North America) combination, resulting in 320 plant individuals for the experiment (Figure 1—figure supplement 3). Using these individuals, we assessed the combined effects of breeding treatment, plant sex, and population origin on different flower traits and pollinator visitation rates over the summers 2019 and 2020. Plants were grown in 3 L (2019) and 6 L (2020) pots filled with a 3:1 mixture of potting soil (TKS2 Instant Plus, Floragrad, Oldenburg, Germany) and pine bark (Pine Bark 1–7 mm, Neede, Oosterbeek Humus Producten, The Netherlands). They were kept in pots with randomised positions either in the greenhouse, a common garden in Kiel, Germany (Europe) with sealed ground (54.346794°N, 10.107990°E, 19 m elevation) or a field site in Kiel, Germany (Europe), covered by an extensively used meadow (54.347742°N, 10.107661°E, 19 m elevation) for different parts of data acquisition. For an overview of the time schedule, locations, and exact sample sizes for data acquisition, see Table 1. Plants received water and fertilisation (UniversolGelb 12-30-12, Everris-Headquarters,Geldermalsen, The Netherlands) when necessary for the entire experimental period and were prophylactically treated with biological pest control agents under greenhouse conditions to prevent thrips (agents Amblyseius barkeri and Amblyseius cucumeris) and aphid (agent Chrysoperla carnea) infestation (Katz Biotech GmbH, Baruth, Germany).
 
-## Floral traits
+**Table 1.**
+ Overview of locations, times, and sample sizes for data acquisition.
 
-## Spatial flower traits
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait category</th>
+      <th>Location</th>
+      <th>Acquisition time (year, month, duration)</th>
+      <th>Nesting and intended total sample size</th>
+      <th>Realised total sample size</th>
+      <th>Replicates per group (breeding treatment × sex × origin combination)</th>
+      <th>Reason for sample size reduction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spatial flower traits (synflorescence height, flower number)</td>
+      <td>Greenhouse and common garden</td>
+      <td>2019 Jun., Jul., Aug. 5 days, respectively</td>
+      <td>Two breeding treatments × 2 sexes × 5 maternal families × 8 populations × 2 origins=320</td>
+      <td>316</td>
+      <td>36–40</td>
+      <td>Four individuals died</td>
+    </tr>
+    <tr>
+      <td>Flower scent</td>
+      <td>Greenhouse</td>
+      <td>2019 Jul. 8 hr</td>
+      <td>Two breeding treatments × 2 sexes × 3 maternal families × 8 populations × 2 origins=192</td>
+      <td>192</td>
+      <td>23–35</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Flower colour</td>
+      <td>Common garden</td>
+      <td>2019 Aug. 2 weeks</td>
+      <td>Two breeding treatments × 2 sexes × 5 maternal families × 8 populations × 2 origins=320</td>
+      <td>286</td>
+      <td>23–25</td>
+      <td>Four individuals died, no flowers available for remaining plants</td>
+    </tr>
+    <tr>
+      <td>Spatial flower traits (petal limb area and expansion)</td>
+      <td>Common garden</td>
+      <td>2019 Aug. 2 weeks</td>
+      <td>Two breeding treatments × 2 sexes × 5 maternal families × 8 populations × 2 origins=320</td>
+      <td>286</td>
+      <td>23–35</td>
+      <td>Four individuals died, no flowers available for remaining plants</td>
+    </tr>
+    <tr>
+      <td>Pollinator visitation rates</td>
+      <td>Field site</td>
+      <td>2020 May–Jul. 8 weeks</td>
+      <td>Two breeding treatments × 2 sexes × 5 maternal families × 8 populations × 2 origins=320</td>
+      <td>316</td>
+      <td>36–40</td>
+      <td>Four individuals died</td>
+    </tr>
+    <tr>
+      <td>Floral rewards</td>
+      <td>Common garden</td>
+      <td>2020 Aug. 4 weeks</td>
+      <td>Two breeding treatments × 2 sexes × 5 maternal families × 8 populations × 2 origins=320</td>
+      <td>280</td>
+      <td>30–40</td>
+      <td>Four individuals died, no flowers available for remaining plants</td>
+    </tr>
+  </tbody>
+</table>
+
+### Floral traits
+
+#### Spatial flower traits
 
 We determined the maximum height of synflorescences above ground level and the number of fully opened flowers per individual (Figure 1—figure supplement 4a). These traits were acquired thrice, in June, July, and August 2019 to account for phenological variation. For statistical analyses, these data were averaged over the three time points at the individual level. The size of S. latifolia flowers was not assessed via the length of their petal limbs as in previous studies, since this estimate does not account for the severe variation in their overall shape (Figure 1—figure supplement 4b). Instead, we assessed the exact area covered by all petal limbs and the expansion of the corolla (i.e., the area covered by the smallest possible circle drawn around all five petal limbs) (Figure 1—figure supplement 4a). Both traits were derived from digital images taken from one well-developed and fully opened flower per plant (see Flower colour section for further details) using the software ImageJ 1.47 t (Rueden et al., 2017).
 
-## Flower scent
+### Flower scent
 
 For characterisation of flower scent, we trapped the headspace VOC of S. latifolia flowers on absorbent polydimethylsiloxane (PDMS) tubing following the method of Kallenbach et al., 2014, Kallenbach et al., 2015. We placed the plants in a spatial distance of 50 cm to one another in the greenhouse and maintained high air ventilation 1 week prior to and during VOC collection. We selected one well-developed flower per individual and enclosed it in a VOC collection unit (Figure 1—figure supplement 5). The collection units consisted of polypropylene cups with lids (50 mL, Premium Line, Offenburg, Tedeco-Gizeh, Germany), both having holes (diameter 15 mm) to prevent heat and waterlogging. They were fixed via wooden sticks at the exterior of the plant pot. In addition, 14 control collection units were fixed on empty plant pots and positioned throughout the greenhouse. Prior use, the absorbent PDMS tubes (length 5 mm, external diameter 1.8 mm, internal diameter 1 mm; Carl Roth, Karlsruhe, Germany) were cleaned with solvents and heat as described in Kallenbach et al., 2014. Two PDMS tubes were added to each collection unit and remained in the floral headspace between 9 p.m. and 5 a.m., which is the time of peak scent emission in S. latifolia (Dötterl and Jürgens, 2005). Afterwards, the PDMS tubes were removed and stored at −20°C in sealed glass vials until analysis via thermal desorption–gas chromatography–mass spectrometry (TD-GC-MS, TD 30 – GC 2010plus – MS QP2020, Shimadzu, Kyoto, Japan).
 
@@ -64,23 +172,23 @@ All samples were measured in a single trial in a fully randomised order. Trapped
 
 Compounds were identified by comparing the KI and mass spectra with those of synthetic reference compoundsor with library entries of the National Institute of Standards and Technology (NIST) (Smith et al., 2004), Pherobase (El-Sayed, 2011), the PubChem database (Kim et al., 2016), and Adams, 2007. Control samples (collection units without flowers), and blanks (cleaned PDMS tubes) were used to identify and exclude contaminations, leaving a total number of 70 VOC (Supplementary file 1). Compounds were not quantified but the intensity of the total ion chromatogram of peaks was compared among treatment groups (hereinafter referred to as intensity). A linear relationship among peak areas and compound concentrations has been validated for the passive sorption method in Kallenbach et al., 2014. The intensities of VOC were not corrected for flower size because we wanted to capture all variation in scent emission that is relevant for the receiver, that is, the pollinator. For targeted statistical analyses, we focused on those VOC that evidently mediate communication with H. bicruris according to Dötterl et al., 2006. We analysed the Shannon diversity per plant (calculated with R-package: vegan v.2.5–5, Oksanen et al., 2019) for 20 floral VOC in our data set that were shown to elicit electrophysiological responses in the antennae of H. bicruris (Supplementary file 1). Moreover, we analysed the intensities of three lilac aldehyde isomers, which trigger oriented flight and landing behaviour in both male and female H. bicruris most efficiently when compared to other VOC in the floral scent of S. latifolia. Furthermore, H. bicruris is able to detect the slightest differences in the concentration of these three compounds at very low dosages (Dötterl et al., 2006).
 
-## Flower colour
+### Flower colour
 
 Flower colour was quantified using a digital image transformation approach that accounts for the visual system of the pollinator as well as natural light conditions (Troscianko and Stevens, 2015). Images were acquired in the common garden after plants had acclimated to ambient light conditions for 3 weeks. All images were taken during 1 hr of dusk time on rain-free days in order to fit the natural light conditions perceived by H. bicruris (Bopp and Gottsberger, 2004). We picked one well-developed, fully opened flower per plant and inserted it into a black ethylene vinyl acetate platform equipped with two reflectance standards (PTFB 10%; Spectralon 99% Labsphere, Congleton, UK) and a size standard (Figure 1—figure supplement 6). The platform had a fixed location in the field and was oriented towards the setting sun. Raw images were taken with a digital camera (Samsung NX1000,Suwon, South Korea, ) converted to full spectrum sensitivity (300–1000 nm) via removal of the sensor’s filter and fitted with an ultraviolet (UV) sensitive lens (Nikon EL 80‐mm, Japan). We took images in the visible and in the UV part of the light spectrum by fitting an UV and infrared (IR) blocking filter (UV/IR Cut, transmittance 400–700 nm, Baader Planetarium,Reutlingen, Germany) and an UV pass plus IR block filter (U-filter, transmittance 300–400 nm, Baader Planetraium,Reutlingen, Germany) to the lens, respectively. All images were taken as RAWs with an aperture of 5.6, an iso of 800, and a shutter speed varying according to light conditions.
 
 Images were processed using the Multispectral Image Calibration and Analysis (MICA)-Toolbox plugin (Troscianko and Stevens, 2015) in ImageJ 1.47 t (Rueden et al., 2017). They were linearised to correct for the non-linear response of the camera to light intensity and equalised with respect to the two light standards in order to account for variation in natural light perceived among images (Stevens et al., 2007). All petals were selected for analysis, and the reproductive organs and para-corolla were omitted. Linearised images were then mapped to the visual system of a nocturnal moth. As the visual system of H. bicruris is unexplored, we used the tri-chromatic visual system of Deilephila elpenor L. (Lepidoptera: Sphingidae), which includes three rhodopsins with absorption maxima of 350 nm (UV), 440 nm (blue), and 525 nm (green) (Johnsen et al., 2006). We considered this system to be comparable to that of H. bicruris, given the similar activity behaviour of adults, morphological similarity of the preferred plant species (Lonicera periclymenum L. [Caprifoliaceae] with white-creamy funnel-shaped flowers) and overlapping distribution ranges. We fitted the images to a cone catch model incorporating (i) the spectral sensitivity of our Samsung NX1000-Nikkor EL 80 mm 300–700 nm camera (data derived from Troscianko and Stevens, 2015); (ii) the spectral sensitivities of the three photoreceptors in the D. elpenor compound eye (data derived from Johnsen et al., 2006); and (iii) the spectral composition of sun light during dusk (data derived from Johnsen et al., 2006).
 
-## Floral rewards
+### Floral rewards
 
-As moths forage on liquids only, we measured nectar as floral reward (Figure 1—figure supplement 7). We selected one well-developed, closed flower bud per plant in the common garden and enclosed it in a transparent mesh bag (Organza mesh bags, Saketos, Sieniawka, Poland) until harvest to avoid pollination and nectar removal. All flowers were harvested at noon of the fourth day after opening and were stored immediately at 4°C until processing to prevent further nectar secretion. Nectar was extracted into 1–2 µL microcapillary tubes (Minicaps NA-HEP, Hirschmann Laborgeräte, Eberstadt, Germany). The length of the nectar column was measured with a calliper to determine the exact volume. Nectar sugar content was analysed with a refractometer adjusted for small sample sizes (Eclipse Low Volume 0–50°brix, Bellingham and Stanley, UK). Since nectar volume trades off against nectar quality in pollinator attraction (Cnaani et al., 2006), we addressed floral rewards in S. latifolia via the total amount of sugar excreted per flower as calculated based on the following equation: gsugar=volume[L]∗(∘brix∗(1+4.25∗∘brix1000)∗10).
+As moths forage on liquids only, we measured nectar as floral reward (Figure 1—figure supplement 7). We selected one well-developed, closed flower bud per plant in the common garden and enclosed it in a transparent mesh bag (Organza mesh bags, Saketos, Sieniawka, Poland) until harvest to avoid pollination and nectar removal. All flowers were harvested at noon of the fourth day after opening and were stored immediately at 4°C until processing to prevent further nectar secretion. Nectar was extracted into 1–2 µL microcapillary tubes (Minicaps NA-HEP, Hirschmann Laborgeräte, Eberstadt, Germany). The length of the nectar column was measured with a calliper to determine the exact volume. Nectar sugar content was analysed with a refractometer adjusted for small sample sizes (Eclipse Low Volume 0–50°brix, Bellingham and Stanley, UK). Since nectar volume trades off against nectar quality in pollinator attraction (Cnaani et al., 2006), we addressed floral rewards in S. latifolia via the total amount of sugar excreted per flower as calculated based on the following equation: $gsugar=volume[L]∗(^{∘}brix∗(\frac{1+4.25∗^{∘}brix}{1000})∗10)$.
 
-## Pollinator visitation rates
+### Pollinator visitation rates
 
 We quantified visits by crepuscular pollinators belonging to the order of Lepidoptera at the field site. For this purpose, plants were arranged in plots (1.5 m × 1.5 m, distance among plants = 0.5 m) that consisted of eight individuals representing all populations from one breeding treatment × sex × origin combination. Each of the possible combinations (N = 8) was replicated five times at the level of maternal families, resulting in a total number of 40 plots (N = 320 plants in total). Plots were spaced from each other at a distance of 6 m in order to provide pollinators with the choice of visiting specific breeding treatment × sex × origin combinations (Glenny et al., 2018). The position of plots and plants within plots was fully randomised (Figure 1—figure supplement 8). We performed 14 observation trials between May and July to cover the annual peak activity of H. bicruris (Bopp and Gottsberger, 2004). Each trial comprised 5 min observation time for each of the plots (total observation time: 2800 min, observation time per plot: 70 min) and was completed within 1 hr in the dawn time by four observers. The exact daytime of observation was acquired at the plot level for each of the trials. Plant and flower visits were determined at the plant individual level. If a moth had first contact with a flower, this was counted as a plant visit. The number of approached flowers per plant during a visit was counted until a moth either left or switched to another plant. The number of plant and flower visits per trial was averaged at the plot level for further analyses. The number of visiting moth individuals and moth species was not determined. The vast majority of visits were performed by H. bicruris (personal observation).
 
 Please note that North American S. latifolia populations were tested in their ‘away’ habitat only and that the observed plant performance and pollinator visitation rates can thus provide no direct implications for their ‘home’ habitat. However, we neither aimed at elaborating on the invasion success of S. latifolia nor on adaptive differentiation among European and North American populations, but at investigating inbreeding effects on plant-pollinator interactions in multiple plant populations in a common environment. Given the close taxonomic relationship of H. bicruris (main pollinator in Europe) and H. ectypa (main pollinator in North America) (Young, 2002; Castillo et al., 2014), the behavioural responses of the former species to variation in the quality of its host plant were considered to overlap sufficiently with responses of the latter species.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed in R v4.0.3 (R Development Core Team, 2020) with (generalised) linear mixed effects models (LMMs: R-package lme4 v1.1–23, Bates et al., 2014, GLMMs: R-package glmmTMB v1.0.2.1, Brooks et al., 2017). Models for responses reflecting spatial flower traits, floral scent, colour, and rewards included the predictors breeding treatment, sex, and origin, as well as all possible interactions among these factors. The latitudinal coordinate of the population origin was included as covariate in all models, whereas the exact age of the plant individuals (accounts for difference of 12 days in planting date) was included only in models for flower scent, which was acquired in early phases of the experiment. Both covariates were centred and scaled (i.e., subtraction of mean and division by standard deviation). The random effects for floral trait models were population, affiliation of paternal plant in P-generation to field collected family nested within population, and affiliation of maternal plant in P-generation to field collected family nested within population. Models for pollinator visitation rates included the predictors breeding treatment, sex, and origin, as well as all possible interactions among them, the covariate daytime (centred and scaled), and the random effects of plot and trail (latitude of population origin, population, maternal and paternal affiliation not included, since data were averaged on plot level, see Pollinator visitation rates section). Several of the described models included count data responses with an access of zeroes (intensities of lilac aldehydes and pollinator visitation rates). These models were additionally fitted with zero inflation formulas. The fit of lilac aldehydes models was best when including only an intercept model for zero inflation, whereas the fit of pollinator visitation rate models was best when including the same predictors and random effects in the conditional and zero inflation part of the model.
 
@@ -88,23 +196,526 @@ All of the described models (Table 1) were validated based on checking plots (qu
 
 ## Results
 
-## Floral traits
+### Floral traits
 
 Spatial flower traits of S. latifolia varied pronouncedly between plants of different breeding treatments, sexes, and population origins (Table 2). Synflorescences of inbreds had lower maximal height above ground than those of outbreds (p<0.001, χ²(1DF)=37.31, Figure 2a). Flower number (Figure 2b) was higher in plants from North America than Europe (p=0.005, χ²(1DF)=8.01) and additionally depended on the interaction breeding treatment × sex (p=0.003, χ²(1DF)=8.99). Inbred plants generally produced fewer flowers than outbreds, and this effect was more severe in females (35% reduced by inbreeding, ppost <0.001) than males (12% reduced by inbreeding, ppost = 0.011). The number of flowers produced was lower in male than female plants in both inbreds (78% reduced in females, ppost <0.001) and outbreds (71% reduced in females, ppost <0.001). The area of petal limbs (Figure 2c) was smaller in female than male plants (p<0.001, χ²(1DF)=51.35) and reduced by inbreeding (p=0.002, χ²(1DF)=9.25). The expansion of the corolla depended on the interaction breeding treatment × sex (p=0.004, χ²(1DF)=8.17). Inbreeding reduced corolla expansion in females by 17% (ppost <0.001) but had no effect in male plants, and differences between sexes in corolla expansion were consequently apparent in inbreds (23% lower in females than males, ppost <0.001) but not in outbreds (Figure 2d). Corolla expansion additionally depended on the interaction sex × origin (p=0.009, χ²(1DF)=6.86). It was lower in female than male plants in populations originating from North America only (23% lower in females, ppost <0.001).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig2-v2.jpg)
+
+**Figure 2.:** Graphs show estimated marginal means and standard errors for outbred (Ou, filled bars) and inbred (In, open bars), female (Fe, red bars) and male (Ma, blue bars) plants from Europe (Eu, dark coloured bars) and the North America (Na, bright coloured bars). Estimates were extracted from (generalised) linear mixed effects models for significant interaction effects and main effects of factors not involved in an interaction (significance levels based on Wald χ² tests denoted at top of plot). Interaction effect plots additionally indicate significant differences among breeding treatments, sexes, or origins within levels of other factors involved in the respective interaction (estimated based on post hoc comparisons, denoted within plots). Exact sample sizes for all traits are listed in Table 1. Significance levels: ***p<0.001, **p<0.01, *p<0.05, •p<0.06.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Please note that the amount of variation in response variables that is explained by fixed effects exceeds the amount of variance explained by the population random factor in 9 of 12 models.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Patterns were compared for outbred (Ou, filled squared) and inbred (In, open squares), female (Fe, red) and male (Ma, blue) plants from Europe (Eu, dark coloured) and North America (Na, bright coloured). Each square represents one population, data within populations were averaged to improve clarity.
+
+**Table 2.**
+ Overview and results of statistical analyses with (generalised) linear mixed effects models.The table summarises the model types and error distributions used for each of the responses (printed in subscript), the parameter estimates on the link function scale with significance levels assessed based on Wald χ² tests for all fixed effects (***p<0.001, **p<0.01, and *p<0.05 printed in bold), and random effect variances (printed in italic). For zero inflated responses, estimates from the conditional model parts appear in the first line and estimates from zero inflation model parts in the second line. All listed fixed effects consume 1 degree of freedom.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Intercept</th>
+      <th>Btmt [outbred –inbred]</th>
+      <th>Sex [female –male]</th>
+      <th>Origin [Europe –US]</th>
+      <th>Btmt × sex</th>
+      <th>Btmt × origin</th>
+      <th>Sex × origin</th>
+      <th>Btmt × sex × origin</th>
+      <th>Latitude</th>
+      <th>Plant age</th>
+      <th>Obs. time</th>
+      <th>Pop</th>
+      <th>Pop: mother</th>
+      <th>Pop : father</th>
+      <th>Plot</th>
+      <th>Obs. trial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spatial flower traits</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Synflorescence heightLMM(G)</td>
+      <td>81.03</td>
+      <td>3.56***</td>
+      <td>−0.40NS</td>
+      <td>1.84</td>
+      <td>0.67</td>
+      <td>0.11</td>
+      <td>1.07Ns</td>
+      <td>−0.15</td>
+      <td>1.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>5.42</td>
+      <td>16.76</td>
+      <td>0.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>No. flowersGLMM(NBQ)</td>
+      <td>2.61</td>
+      <td>0.14***</td>
+      <td>−0.70***</td>
+      <td>−0.25**</td>
+      <td>0.08**</td>
+      <td>−0.04</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.12</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Petal limb areaLMM(G)</td>
+      <td>2.76</td>
+      <td>0.16**</td>
+      <td>−0.38***</td>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>0.10</td>
+      <td>0.03</td>
+      <td>0.19</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.15</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Corolla expansionLMM(G)</td>
+      <td>5.21</td>
+      <td>0.21**</td>
+      <td>−0.44***</td>
+      <td>0.33</td>
+      <td>0.23**</td>
+      <td>0.02</td>
+      <td>0.21**</td>
+      <td>0.11</td>
+      <td>0.06</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.29</td>
+      <td>0.30</td>
+      <td>0.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Flower scent traits</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Shannon index VOCLMM(G)</td>
+      <td>1.86</td>
+      <td>0.03</td>
+      <td>−0.13*</td>
+      <td>−0.06</td>
+      <td>0.01</td>
+      <td>0.04</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.03</td>
+      <td>−0.02*</td>
+      <td>Nt.</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lilac aldehyde AZI-GLMM(NBQ)</td>
+      <td>15.11</td>
+      <td>0.02</td>
+      <td>−0.06</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>−0.08</td>
+      <td>−0.04</td>
+      <td>−0.16*</td>
+      <td>0.01</td>
+      <td>−0.08</td>
+      <td>Nt.</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>−1.93***</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lilac aldehyde B/CZI-GLMM(NBL)</td>
+      <td>15.78</td>
+      <td>−0.08</td>
+      <td>−0.09</td>
+      <td>0.12</td>
+      <td>0.06</td>
+      <td>−0.10</td>
+      <td>−0.01</td>
+      <td>−0.03</td>
+      <td>−0.09</td>
+      <td>−0.03</td>
+      <td>Nt.</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.03</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>−1.93***</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lilac aldehyde DZI-GLMM(NBQ)</td>
+      <td>13.70</td>
+      <td>−0.05</td>
+      <td>0.14</td>
+      <td>−0.07</td>
+      <td>−0.09</td>
+      <td>−0.16</td>
+      <td>−0.06</td>
+      <td>−0.08</td>
+      <td>0.08</td>
+      <td>−0.17</td>
+      <td>Nt.</td>
+      <td>0.00</td>
+      <td>2.75</td>
+      <td>0.47</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>0.02Ns</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Flower colour</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reflectance UVLMM(G)</td>
+      <td>2.04</td>
+      <td>−0.05</td>
+      <td>−0.27***</td>
+      <td>0.05</td>
+      <td>0.04</td>
+      <td>0.08Ns</td>
+      <td>−0.04</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.01</td>
+      <td>0.03</td>
+      <td>0.01</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Reflectance blueLMM(G)</td>
+      <td>26.72</td>
+      <td>−0.02</td>
+      <td>−0.95***</td>
+      <td>0.10</td>
+      <td>0.24</td>
+      <td>0.05</td>
+      <td>0.21</td>
+      <td>0.14Ns</td>
+      <td>0.47</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.47</td>
+      <td>0.85</td>
+      <td>0.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Reflectance greenLMM(G)</td>
+      <td>39.87</td>
+      <td>−0.10</td>
+      <td>−0.19</td>
+      <td>0.40</td>
+      <td>0.26</td>
+      <td>0.17</td>
+      <td>0.12</td>
+      <td>0.31Ns</td>
+      <td>0.05</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>1.12</td>
+      <td>0.37</td>
+      <td>0.07</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Floral rewards</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Excreted sugarLMM(G)</td>
+      <td>5.70</td>
+      <td>0.03</td>
+      <td>−0.18***</td>
+      <td>−0.08</td>
+      <td>0.04</td>
+      <td>−0.02</td>
+      <td>−0.02</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+    </tr>
+    <tr>
+      <td>Pollinator visitation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">No. plant visitsZI-GLMM(P)</td>
+      <td>0.28</td>
+      <td>0.09</td>
+      <td>−0.67***</td>
+      <td>0.09</td>
+      <td>0.22</td>
+      <td>−0.20</td>
+      <td>−0.16</td>
+      <td>−0.29*</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>−0.11*</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.27</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>−0.48Ns</td>
+      <td>0.05</td>
+      <td>0.29</td>
+      <td>−0.21</td>
+      <td>−0.11</td>
+      <td>−0.11</td>
+      <td>0.10</td>
+      <td>−0.46*</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.10</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.14</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td rowspan="2">No. flowers visitedZI-GLMM(P)</td>
+      <td>0.79</td>
+      <td>0.04</td>
+      <td>−0.56***</td>
+      <td>−0.03</td>
+      <td>0.34*</td>
+      <td>−0.23</td>
+      <td>−0.22</td>
+      <td>−0.46**</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.19***</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.68</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>−0.09Ns</td>
+      <td>−0.04</td>
+      <td>0.47**</td>
+      <td>−0.23</td>
+      <td>−0.19</td>
+      <td>−0.02</td>
+      <td>0.17</td>
+      <td>−0.31*</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.47**</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>Nt.</td>
+      <td>0.16</td>
+      <td>0.47</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations. Btmt: breeding treatment, LMM: linear mixed effects model, (NBQ): negative binomial distribution with quadratic parametrisation and log-link, (NBL): negative binomial distribution with linear parametrisation and log-link, No.: number, Nt.: not tested, GLMM: generalised linear mixed effects model, Obs: observation, (P): Poisson distribution with log-link, Pop: population, ZI-GLMM: zero inflation generalised mixed effects model, (G): Gaussian distribution with identity link._
 
 Breeding treatment, sex, and population origin affected floral VOC in S. latifolia interactively (Table 2). The Shannon diversity of those VOC known to elicit antennal responses in H. bicruris depended on the interaction breeding treatment × origin (p=0.016, χ²(1DF)=5.83, Figure 2e). Inbreeding reduced the Shannon diversity of these VOC by 7% in European plants (ppost = 0.013) but had no significant effect on the Shannon diversity of the VOC in plants from North America. The intensity of lilac aldehyde A depended on the interaction breeding treatment × sex × origin in the conditional model (p=0.025, χ²(1DF)=5.03, Figure 2f). Post hoc comparisons yielded a marginally significant lower intensity of this compound in inbred than outbred females in plants from North America (41% reduced by inbreeding, ppost = 0.056) but no further differences occurred among other groups. Similar non-significant trends were observed for the other lilac aldehyde isomers (Supplementary file 1). Multivariate statistical analyses of 20 H. bicruris active VOC and all 70 VOC detected in S. latifolia revealed no clear separation of floral headspace VOC patterns for any of the treatments (Figure 2—figure supplement 2). In summary, the combined effects of breeding treatment, sex, and range on floral scent were rather weak.
 
 The proportion of flower colour detectable for crepuscular moths and the sugar excreted as reward with nectar were independent of breeding treatment and population origin but exhibited differences between plants of different sex (Table 2). Male flowers reflected more light in the spectrum detectable by the UV receptor (350 nm) (p<0.001, χ²(1DF)=41.92, Figure 2g) and the blue receptor (440 nm) (p<0.001, χ²(1DF)=39.59, Figure 2h) of moths than flowers of females. Likewise, the amount of sugar excreted with nectar was higher in male than female plants (p<0.001, χ²(1DF)=14.16, Figure 2i).
 
-## Pollinator visitation rates
+### Pollinator visitation rates
 
 The number of pollinator visits per plant by moths was shaped by the interaction breeding treatment × sex × origin in the conditional model (p=0.016, χ²(1DF)=5.84, Table 2, Figure 3a). Post hoc comparisons yielded that plant visits were reduced by 79% following inbreeding in female plants from North America (ppost = 0.007), but unaffected by inbreeding in European females and males from both origins. Moreover, plant visits were fewer in female than male plants in European outbreds (83% fewer in females, ppost < 0.001), European inbreds (78% fewer in females, ppost = 0.001), and North American inbreds (87% fewer in females, ppost < 0.001) as well as 77% lower in plants from Europe than North America in outbred females (ppost = 0.014). The number of flowers approached per plant visit was likewise shaped by the interaction breeding treatment × sex × origin in the conditional model (p=0.001, χ²(1DF)=10.61, Figure 3b, Table 2). Post hoc comparisons yielded that flower visits were 88% lower for inbred than outbred females (ppost = 0.001) but 64% higher for inbred than outbred males (ppost = 0.031) in plant populations from North America, whereas flower visits were unaffected by inbreeding in European male and female plants. Moreover, flower visits were reduced in females relative to males for European outbred plants (83% reduction in females, ppost = 0.003), European inbreds (73% reduction in females, ppost = 0.027), and North American inbreds (90% reduced in females, ppost = 0.002) but 59% higher in females than males in outbreds from North America (ppost < 0.001). Finally, flower visits were higher in North American than European outbred female plants (ppost = 0.001) but lower in European than North American outbred males (ppost = 0.001). Both the number of plant and flower visits depended on the interaction of breeding treatment × sex × origin in the zero inflation part of the model as well (Table 2, Figure 3—figure supplement 1). The direction and magnitude of these effects did not contrast with the conditional models.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig3-v2.jpg)
+
+**Figure 3.:** Graphs show estimated marginal means and standard errors for outbred (Ou, filled bars) and inbred (In, open bars), female (Fe, red bars) and male (Ma, blue bars) plants from Europe (Eu, dark coloured bars) and North America (Us, bright coloured bars). Estimates were extracted for significant interaction effects from the conditional part of generalised linear mixed effects models (significance levels based on Wald χ² -tests denoted at top of plot). Plots additionally indicate significant differences between breeding treatments, sexes, or origins within levels of other factors involved in the respective interaction (estimated based on post -hoc comparisons, denoted within plots). Exact sample sizes for all traits are listed in Table 1. Significance levels: ***p<0.001, **p<0.01, and *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65610/elife-65610-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Estimates were extracted for significant interaction effects from the zero inflation part of generalised linear mixed effects models (significance levels based on Wald χ² tests denoted at top of plot). Plots additionally indicate significant differences between breeding treatments, sexes, or origins within levels of other factors involved in the respective interaction (estimated based on post hoc comparisons, denoted within plots). Exact sample sizes for all responses are listed in Table 1. Significance levels: ***p<0.001, **p<0.01, and *p<0.05.
 
 ## Discussion
 
 Using an integrated methodological approach, we observed that (i) inbreeding compromises several flower traits in S. latifolia. The magnitude of these effects depended partially on (ii) plant sex, which demonstrates that the intrinsic biological differences between males and females shape the consequences of inbreeding in dioecious plant species as they are filtered through the selective environment. Inbreeding effects also depended on (iii) origin in a way indicating that divergent evolutionary histories have shaped the underlying genetic architecture. Finally, our study showed that (iv) the effects of inbreeding, sex, and origin on pollinator visitation rates specifically mirrored variation in floral scent, which yields interesting insight into the relative importance of different floral traits in shaping the behaviour of crepuscular moths.
 
-## Inbreeding compromises floral traits
+### Inbreeding compromises floral traits
 
 In partial accordance with our first hypothesis, inbreeding compromised several, but not all floral traits in S. latifolia. Spatial flower traits suffered most strongly from inbreeding in males and females from both origins (Figure 2a–c). These results are in line with previous studies on hermaphroditic, self-compatible species (Ivey and Carr, 2005; Glaettli and Goudet, 2006) and support that the complex genetic architecture underlying such traits (Feng et al., 2019) gives rise to dominance and over-dominance effects at multiple loci. The chemodiversity and abundance of floral VOC involved in communication with H. bicruris moths was reduced in a sex- and origin-specific manner in inbred relative to outbred S. latifolia (Figure 2e–g), while the full floral scent profile exhibited no differences among inbreds and outbreds (Figure 2—figure supplement 2). So far, lower emissions of floral VOC in inbreds have been reported for only few plant species pollinated by diurnal generalists (Ferrari et al., 2006; Haber et al., 2019; Kariyat et al., 2021). Our study revealed such effects for plants pollinated by specialist moths that use scent as a major cue for plant location (Riffell and Alarcón, 2013). Dominance and over-dominance may either have directly interfered with genes involved in VOC synthesis and their regulation in S. latifolia or unfolded their effects by disrupting physiological homoeostasis and thereby inducing intrinsic stress that came at the cost of scent production (Kristensen et al., 2010; Fox and Reed, 2011). A recent study indicates that the effects of inbreeding on the diversity of floral VOC in our study may even have been underestimated. Kergunteuil et al., 2021 demonstrated that porous polymers may differ in their affinity with specific VOC and hence in their sensitivity in recording variation in VOC diversity entailing blind spots. They recommend a shift in practice from the use of single to multiple porous polymers (e.g., a combination of PDMS and Poropak Q) for VOC collection in future plant ecological studies, which may uncover the full impact of plant inbreeding on the composition of floral volatiles.
 
@@ -112,7 +723,7 @@ In contrast to spatial flower traits and scent, flower colour and the total amou
 
 Overall, the observed inbreeding effects on floral traits were partially small and variable in their magnitude as compared to previous investigations. However, our findings highlight that even weak degrees of biparental inbreeding (i.e., one generation sib-mating) can result in an impairment of multiple flower traits that is detectable against the background of natural variation among multiple plant populations from a broad geographic region. This observation indirectly supports that the selfing syndrome (i.e., smaller, less scented flowers observed in selfing relative to outcrossing populations of hermaphroditic plant species) may not merely be a result of natural selection against resource investment into floral traits, but also a direct negative consequence of inbreeding (Andersson, 2012). Most importantly, we observed that variation in inbreeding effects was consistent in its dependency on plant sex, which gives insight into the role of intrinsic biological differences between males and females in the expression of inbreeding depression.
 
-## The cost of inbreeding for floral traits is higher in females than males
+### The cost of inbreeding for floral traits is higher in females than males
 
 Males outperformed females in all floral traits, except scent production (Figure 2). As such, our study confirmed previously observed sexual dimorphisms in S. latifolia (nectar: Gehring et al., 2004; flower number: Delph et al., 2010) but also yielded contradicting results. As opposed to Delph et al., 2010, we observed larger instead of smaller flowers in males. This may base on the use of a size estimate that accounts for variation in flower shape or the comparably large geographic range and higher number of populations covered by our study. Moreover, we discovered a novel sexually dimorphic trait in the colour appearance of S. latifolia to crepuscular moths in the UV and blue light spectrum (Figure 2g–h). Given that moths use blue light as a major cue to start feeding on nectar (Cutler et al., 1995), the lower light reflectance observed for female flowers is another trait rendering them less attractive than males.
 
@@ -120,13 +731,13 @@ The evolution of lower female attractiveness to pollinators is driven by sex-spe
 
 Not only floral traits but also plant viability may exhibit sex-specific inbreeding depression in dioecious species. This could result in deviations from optimal sex ratio and, consequently, reductions of effective population sizes that accelerate local extinctions under global change (Hultine et al., 2016; Rosche et al., 2018). Future studies should aim at disentangling the relative contribution of sex-specific selection and gene expression to differences in the magnitude of inbreeding depression between males and females and at assessing their feedback on sex ratios to predict and manage these specific threats.
 
-## Evolutionary history shapes the genetic architecture underlying inbreeding effects
+### Evolutionary history shapes the genetic architecture underlying inbreeding effects
 
 Plants exhibited a general difference among geographic origins in merely one floral trait (Figure 2b). Indeed, we had not expected broad differences in floral traits among European and North American S. latifolia plants (i.e., significant main effects of origin). A sufficient overlap in the composition of pollinator communities (H. ectypa replaces H. bicruris in the invaded range, Castillo et al., 2014) and appropriate pre-adaptations in floral traits were probably essential for S. latifolia as an obligate outcrossing plant species to successfully colonise North America. As discussed in detail in previous studies, higher flower numbers in North American S. latifolia (Figure 2b) may result from changes in the selective regimes for numerous abiotic factors (Keller et al., 2009) or from the release of seed predation. As opposed to H. bicruris, H. ectypa pollinates North American S. latifolia without incurring costs for seed predation, which may result in the evolution of higher flower numbers, specifically in female plants (Elzinga and Bernasconi, 2009).
 
 While adaptive differentiation among S. latifolia populations from different origins was not in the focus of this study, we hypothesised that North American populations purged genetic load linked to floral traits during the colonisation process (i.e., interaction breeding treatment × origin). In contrast to hypothesis iii, the magnitude of inbreeding effects was not consistently higher in European than North American populations. Instead, it was independent of origin for most floral traits, except flower scent, and either higher or lower in European plants for different scent traits (Figure 2f–g). These findings provide no support for recent purging events in North American populations. They rather add to evidence that the magnitude of inbreeding effects is highly specific for the traits as well as the populations or population groups under investigation (e.g., Escobar et al., 2008; Angeloni et al., 2011). This specifity roots in the composition of gene loci affected by dominance and over-dominance and is determined by the complex interplay of demographic population histories (i.e., size retractions and expansions, genetic drift, isolation, gene flow) and the selective environment (Charlesworth and Willis, 2009). As such, the precise mechanisms underlying variation in inbreeding effects on different scent traits across population origins of S. latifolia can only be explored based on comprehensive genomic resources, which are currently not available. Future studies should also incorporate field data on the abundance of specialist pollinators and extend the focus from variation in the magnitude of inbreeding effects among geographic origins to variation among populations within geographic origins and individuals within populations. This would allow a detailed quantification of geographic variation in inbreeding effects and elaborating on the causes and ecological consequences of such variation (Thompson, 2005; Schrieber and Lachmuth, 2017; Thompson et al., 2017).
 
-## Inbreeding effects on floral traits cause limited feedback on pollinator visitation rates
+### Inbreeding effects on floral traits cause limited feedback on pollinator visitation rates
 
 Pollinator visitation rates partially mirrored the above-discussed variation in flower traits. They depended on the breeding treatment in a highly sex- and origin-specific manner: In North American populations, inbred females received significantly fewer plant and flower visits than outbreds, whereas flower visits were higher in inbred than outbred males (Figure 3). We conclude that the severe inbreeding effects on spatial flower traits alone do not necessarily reduce moth visitation rates because these effects were observed for both plant sexes and origins (Figure 2a,b,c). A floral trait that was negatively affected by inbreeding only in North American female plants, just like pollinator visitation rates, was the abundance of lilac aldehyde A (Figure 2f). The other lilac aldehyde isomers exhibited similar but non-significant trends (Supplementary file 1). Although these findings provide limited support for our fourth hypothesis, they yield interesting insight into the relative importance of floral traits for the behaviour of a lepidopteran specialist pollinator.
 

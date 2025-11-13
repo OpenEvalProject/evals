@@ -37,7 +37,7 @@ The current study was initiated to investigate whether Opa supports late express
 
 ## Results
 
-## Opa regulates the sog_Distal enhancer demonstrating a role for this gene in DV axis patterning
+### Opa regulates the sog_Distal enhancer demonstrating a role for this gene in DV axis patterning
 
 In a previous study, we created a reporter in which the 650 bp sog_Distal enhancer sequence was placed upstream of a heterologous promoter from the even skipped gene (eve.p), driving expression of a compound reporter gene containing both a tandem array of MS2 sites and the gene yellow, including its introns (Koromila and Stathopoulos, 2017). We used this reporter to assay gene expression supported by the sog_Distal enhancer in the early embryo. While this enhancer becomes active at nc10 and continues into gastrulation, in this study we focused on late expression through sog_Distal during nc13 and nc14. Due to its length (i.e. ~45 min compared to ~15 min for nc13 at 23°C) nc14 was assayed in four, roughly 12 min intervals: nc14A, nc14B, nc14C, and nc14D. Live movies were analyzed using a previously defined computational approach tailored to spatiotemporal dynamics (Koromila and Stathopoulos, 2019).
 
@@ -45,11 +45,27 @@ In our previous study, mutation of the single Run binding site in the sog_Distal
 
 In concordance with this hypothesis, the sog Distal 650 bp enhancer sequence contains five putative 12 bp Opa binding sites, based on comparison with the vertebrate Zic3 consensus motif (JASPAR; Figure 1I). We introduced 2–4 bp mutations at these five sites (i.e. sogD_ΔOpa) and assayed MS2-MCP reporter expression by in vivo imaging of nascent transcription (Garcia et al., 2013; Lucas et al., 2013). We found that expression was relatively normal up to stage nc14B but then exhibited a visually apparent decrease at nc14C (Figure 1C compare to Figure 1A; Video 1). Quantitative analysis of MS2-MCP signal in embryos containing either the wildtype sog_Distal or sogD_ΔOpa reporters using a previously described analysis pipeline (Koromila and Stathopoulos, 2019) confirms that sog_Distal expression is greatly reduced at nc14C for the mutant reporter compared to wildtype (Figure 1B). A similar loss of late expression only (i.e. nc14C onwards) was observed when even a single Opa site is mutated (Figure 1—figure supplement 1B, B', E) and this decrease is comparable to when the Run site is mutated (Figure 1—figure supplement 1A, D; Koromila and Stathopoulos, 2019). These results support the view that Opa promotes expression through sog_Distal from nc14C onwards, possibly, by supporting Run’s switch from repressor to activator (see Discussion).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig1-v3.jpg)
+
+**Figure 1.:** In this and all other subsequent figures lateral views of embryos are shown with anterior to the left and dorsal up, unless otherwise noted. (A,C) Stills from movies (n = 3 for each) of the two indicated sog_Distal MS2-yellow reporter variants sog_Distal (A) or sogD_ΔOpa (C) in which five predicted Opa-binding sites were mutated as shown (H) and transcription detected in vivo via MS2-MCP-GFP imaging (Koromila and Stathopoulos, 2019) at three representative timepoints: nc13, nc14B, and nc14C. Blue dots indicate presence of GFP+ signal, representing nascent transcripts labeled by the MS2-MCP system; thresholding was applied and remaining signals identified by the Imaris Bitplane software, for visualization purposes only. Nuclei were labeled by Nup-RFP (Lucas et al., 2013). Scale bar represents 50 μm. (B) Plots of number of active nuclei, defined by counting dots (x-axis) versus relative DV axis embryo-width (EW) position (y-axis), analyzed from representative stills from movies of three embryos at nc14C. (D, E) Anti-Opa (D) and anti-Zld (E) antibody staining of early wild-type embryos at the indicated stages. (F) Integrative Genomics Viewer (IGV) genome browser track of the sog locus showing Zld and Opa ChIP-seq data for embryos at two timepoints: nc13-14 and nc14 late for Zld (GSM763061 and GSM763061, respectively; Harrison et al., 2011) and 3 hr and 4 hr for Opa. Zld nc13-14, Zld nc14 late and Opa 3 hr ChIP-seq samples are of overlapping timepoints, whereas Opa 4 hr ChIP-seq sample is later. Gray shading marks the region of sog_Distal enhancer location. (G) JASPAR consensus binding site for Opa based on mammalian Zic proteins identified by bacterial one-hybrid (Sen et al., 2010; Noyes et al., 2008). (H) Location of 5 sequences within the 650 bp sog_Distal enhancer region that match the Jaspar Opa consensus binding site allowing 1 bp mismatch. Mutated Opa sites introduced to eliminate binding are shown in blue, creating sogD_ΔOpa (C; see Materials and methods). Bases in bold (7 bp) indicate matches to the Opa de novo motifs identified by ChIP-seq analysis (see J). For sake of comparison to consensus sequence, reverse complement sequence is shown for a subset. (I) Consensus binding site for Mus musculus Zic3/Opa homolog identified using ChIP-seq (Lim et al., 2010). (J,K) Sequence logo representations of the most significant and abundant motifs, likely consensus binding sites, identified by HOMER de novo motif analysis in the Opa 3 hr and Opa 4 hr (J), or Zld nc13-14 and Zld nc14 late (K) ChIP-seq datasets defined (Central motif enrichment p-values 1e-566, 1e-354, 1e-3283, and 1e-2173, respectively). Grey-shaded box indicates the shared region between Opa motifs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B’) MS2-MCP imaging-based computationally defined dots of nascent transcripts (blue) and nuclear membranes marked by Nup-RFP (Lucas et al., 2013) associated with the sogD_Δrun reporter in which the single Run site (see C) is mutated (Koromila and Stathopoulos, 2019) or the sogD_Δopa4 reporter, in which only one Opa binding site, site 4 (C), is mutated. (A) Depicts a lateral view, including a ventral domain in which the reporter is repressed by Snail, whereas (B) Shows a dorsal-lateral view. (B’) Shows magnified views of B; expression is sometimes retained at the posterior of embryos. (C) 650 bp sog_Distal enhancer sequence showing relative organization of binding sites for transcription factors based on matches to consensus sequences: 5 sites for Opa, 3 sites for Zld, 3 sites for DL, 2 sites for Sna, 2 sites for Twi and 1 site for Run (JASPAR). Base-pair sequences for three Zld sites shown, which are matches to the consensus. Zld and Run sites were previously mutated and characterized (Foo et al., 2014; Koromila and Stathopoulos, 2017). (D, E) Plots of number of active nuclei, defined by counting dots (x-axis) versus relative DV axis embryo-width (EW) position (y-axis), analyzed from representative stills of three embryos (movies) at nc14C for both sogD_Δrun and sogD_Δopa4 reporters. Numbers in upper right corners represent widths of reporter expression defined as EW distance at 30% maximal signal; average values of data for three embryos (for detailed methods see Koromila and Stathopoulos, 2019). (F) Screenshot of the sogD_ΔOpa-MS2-yellow reporter at nc14B from a different movie depicting a ventral vantage point that demonstrates sogD_ΔOpa expression is repressed ventrally.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Seven most enriched motifs for Opa (3 hr) ChIP-seq ChIP-seq analysis as detected by HOMER. The top identified motifs also shown in Figure 1. A second motif exhibiting extended homology with the JASPAR Opa consensus was identified at lower frequency (see panel B). (B, C, D) Reverse complement of three most abundant motifs identified using HOMER within the 3 hr Opa ChIP-seq dataset, showing extended homology to JASPAR Opa site. (E) Seven most enriched motifs for Zld nc13-nc14 ChIP-seq analysis as detected by HOMER. The top identified motifs also shown in Figure 1. (F) Zld ChiP-seq eight most enriched motifs for nc14 late embryos.
+
+![Video 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-video1.mp4.jpg)
+
+**Video 1.:** Expression normally extends until gastrulation for the wildtype reporter (Koromila and Stathopoulos, 2019) but upon mutation of five Opa-binding sites expression is extinguished by nc14C. Stills from the movie are shown in Figure 1C.
+
 The timing of Opa expression supports a role for this factor in driving expression of sog_Distal at mid-nc14, approximately at the time of the MBT. Using an anti-Opa antibody (Mendoza-García et al., 2017), we examined spatiotemporal dynamics associated with Opa protein in the early embryo through analysis of localization in a time series of fixed embryos. Opa expression is absent at nc13, first observed at nc14B, and achieves its mature pattern approximately by nc14C (Figure 1D). The timing of Opa onset of expression correlates with the timing of loss of late expression from the sog_Distal reporter observed when Opa sites are mutated (i.e. sogD_ΔOpa; Figure 1D, compare with 1C). On the other hand, the ubiquitous, maternal transcription factor Zld is detected throughout this time period including during nc13 (Figure 1E). Loss of Zld input to sog_Distal through mutation of Zld binding sites leads to spatial retraction of the reporter pattern (sog_Shadow; Yamada et al., 2019) rather than an overall loss of expression as observed when Opa-binding sites are mutated (Figure 1C). Care was taken to preserve Zld and Run binding sites (and those of other predicted inputs: Dorsal, Twist, or Snail; Figure 1—figure supplement 1; Koromila and Stathopoulos, 2019) during generation of the Opa site mutant sog_Distal reporter (Figure 1—figure supplement 1C).
 
 These results suggest that Opa regulates late expression of sog_Distal, specifically, from mid-nc14 onwards. Recent studies have demonstrated that the opa gene is generally important for the temporal regulation of anterior-posterior (AP) axis segmental patterning in Drosophila as well as in Tribolium (Clark and Peel, 2018; Clark and Akam, 2016). However, as our results suggest a role for Opa in the regulation of sog expression, which relates to DV patterning, we hypothesized Opa’s role extends beyond control of segmentation to patterning of the embryo, in general.
 
-## Use of anti-Opa antibody to conduct assay of in vivo genome occupancy through ChIP-seq analysis
+### Use of anti-Opa antibody to conduct assay of in vivo genome occupancy through ChIP-seq analysis
 
 To examine the in vivo DNA occupancy of Opa in early Drosophila embryos, we conducted chromatin immunoprecipitation coupled to high-throughput sequencing (ChIP-seq). Two different anti-Opa rabbit polyclonal antibodies were used to immunoprecipitate chromatin obtained from two embryo samples of average age 3 hr (roughly stages 5–6, encompassing nc14) or 4 hr (roughly stages 6–8, later than nc14) (see Methods). For the 3 hr ChIP-seq dataset, the MACS2 peak caller was used to identify 16,085 peaks, providing an estimate of the number of genomic positions occupied by Opa in vivo at this developmental timepoint. 200 bp regions centered at these peaks were analyzed using the HOMER program (Heinz et al., 2010) to identify overrepresented sequences that align to transcription factor binding motifs (see Materials and methods). The most significant hit, present in over 19% of all peaks, is a 7 bp core sequence with homology to the 12 bp Opa JASPAR consensus (Figure 1J, compare with 1G; Figure 1—figure supplement 2) as well as to mammalian homolog Zic transcription factors (e.g. see Figure 1I; Lim et al., 2010). A second motif exhibiting extended homology with the JASPAR Opa consensus was also identified through analysis of the Opa 3 hr ChIP-seq dataset, but this extended site is present at lower abundance (Figure 1—figure supplement 2A, D). In the sog_Distal enhancer sequence, the five Opa sites initially identified by comparison to the JASPAR motif also match the ChIP-seq-derived Opa de novo consensus in 6 of the 7 bases (Figure 1H; compare to 1J). However, there is a notable mismatch in the 3’-most position; while the de novo Opa consensus from the 3 hr ChIP-seq dataset does not include Adenine at this position, both the JASPAR site and de novo Opa consensus derived from the 4 hr ChIP-seq dataset do [Figure 1H,J (bottom motif)]. These sequence discrepancies may relate to differences in optimal affinities for binding sites within sog_Distal compared to those identified by ChIP-seq or they may indicate binding preferences dictated by the presence of heterodimeric binding partners.
 
@@ -57,19 +73,35 @@ We hypothesized that Opa might also regulate expression of sog_Distal late, foll
 
 Opa (3 hr) and Opa (4 hr) ChIP-seq experiments each identified ~16K peaks of occupancy representing locations in the genome that are occupied by Opa, with 9995 peaks in common (Figure 2—figure supplement 1A). This suggests that ~6K peaks are occupied early-only (i.e. nc14; including late nc14 when enhancers associated with segmentation are active) and a roughly equal number are occupied late-only (following gastrulation, stage 6–8) possibly relating to Opa’s transition to a role in supporting visceral mesoderm specification (Mendoza-García et al., 2017) or other roles. Here, we focused on understanding Opa’s initial actions during nc14; therefore, region overlap analysis was used to identify common regions of occupancy for Opa and Zld, using several independently obtained ChIP-seq datasets inclusive of nc14: Opa (3 hr) and both Zld (nc13-14) and Zld (nc14 late) (this study and Harrison et al., 2011, respectively) (see Materials and methods). Zld motifs derived de novo from the two Zld ChIP-seq datasets are almost identical (Figure 1K); however, the two datasets differ with respect to the most enriched de novo motifs identified for other factors (Figure 1—figure supplement 2E, F).
 
-## Assay of overrepresented sites associated with Opa ChIP-seq peaks
+### Assay of overrepresented sites associated with Opa ChIP-seq peaks
 
 The HOMER sequence analysis program was used to identify overrepresented motifs within the Opa (3 hr), Zld (nc13-14) and Zld (nc14 late) peaks as well as for three classes of peaks: Opa-only, Zld-only, or Opa-Zld overlap; in order to identify associated motifs that might provide insight into the differential or combined functions of Opa and Zld.
 
 For the Opa 3 hr and Zld nc13-14 comparison, these datasets have 6087 peaks in common (Opa-Zld overlap), whereas 9998 regions were bound by Opa alone (Opa-only) and 10781 regions were bound by Zld alone (Zld-only) (Figure 2A). As expected, the top motifs in each class matched the Opa or Zld consensus sequences with 16% of the Opa-only peaks containing at least one Opa motif; 55% of the Zld-only peaks containing at least one Zld motif; and 5% and 15% of the Opa-Zld overlap peaks containing at least one Opa or one Zld motif, respectively (Figure 2B–D; see also Figure 2—source data 1). The second-most significant motif identified in each class of called peaks corresponds to Dref (6%) for Opa-only; Caudal (Cad; 14%) for Zld-only; and Trl/GAF (11%) for Opa-Zld overlap (Figure 2B–D). Dref (DNA replication-related element-binding factor) is a BED finger-type transcription factor shown to bind to the sequence 5′-TATCGATA (Hirose et al., 1993), a highly conserved sequence in the core promoters of many Drosophila genes (Ohler et al., 2002), whereas Cad encodes a homeobox transcription factor that is maternally provided and forms a concentration-gradient enriched at the posterior (Mlodzik et al., 1985). Cad exhibits preferential activation of DPE-containing promoters (Shir-Shapira et al., 2015). Trl/GAF is a transcriptional factor that regulates chromatin structure by promoting the open chromatin conformation in promoter gene regions, with optimal binding to the pentamer 5'-GAGAG-3' (Chopra et al., 2008).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig2-v3.jpg)
+
+**Figure 2.:** (A) Venn diagram showing overlap between peaks called using MACS2 analysis of Opa (3 hr) and Zld (nc13-14) ChIP-seq data. Opa and Zld experiments used embryos of 2.5–3.5 hr in age or nc13-14, respectively, which are overlapping timepoints. Opa-only peaks (*); Opa/Zld overlap peaks (**); Zld-only peaks (***). (B–D) Sequence logo representations of two to three most abundant motifs identified using HOMER de novo motif analysis within three sets of peaks: Opa-only, Zld-only, Opa/Zld overlap peaks (D). Sequence logo height indicates nucleotide frequency; corresponding percentage of peaks containing match to motifs also shown for each set, as indicated. p-Values represent the significance of motifs’ enrichment compared with the genomic background, which is greater than 1e-43 in all cases. See also Figure 2—source data 1. (E–G) Aggregation plots showing enrichment of Opa or Zld de novo motifs identified within Opa-only, Zld-only, or Opa/Zld-bound regions from Opa (3 hr) peaks and Zld (nc13-nc14) ChIP-seq peaks. Averaging of ChIP-seq data from two replicates was performed prior to the de novo analysis. (E) Opa-only bound regions (after exclusion of Zld-only and Opa-Zld overlap peaks); (F) Zld-only bound regions (after exclusion of Opa and Opa-Zld overlap peaks); and (G) for Opa-Zld overlap regions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Venn diagram comparing the number of Opa-early (3 hr) versus Opa-late (4 hr) ChIP-seq called peaks identified using the MACS2 peak caller (see Materials and methods). (B) Number of Opa or Zld peaks associated with Opa-only, Zld-only, or Opa/Zld-bound classes in comparison of Opa (3 hr) and Zld (nc14 late) ChIP-seq experiments; compare overlap/Venn diagram with Opa (3 hr) and Zld (nc13-nc14) ChIP-seq experiments analyzed in Figure 2A. Of the Opa-only, Zld-only, or Opa/Zld bound classes, data support the view that Opa-occupied peaks (with or without Zld) are more often associated with promoter regions (TSS ± 3 kB).
+
 Called peaks for the Opa 3 hr and Zld nc14 late samples were also compared using HOMER, and analysis revealed similar trends with the Zld nc13-14 earlier sample (Figure 2—figure supplement 1B). The main difference was that Caudal is no longer identified as the second-most significant site in the Zld-only peak class associated with Zld nc14 late. Collectively, these results support the view that distinct sets of transcription factors serve to facilitate the different functions of Opa and Zld over time in the embryo (see Discussion).
 
 Furthermore, a direct comparison of the Opa (3 hr) and Zld ChIP-seq occupancy at nc13-14, through aggregation plots, suggests that these two transcription factors can bind to the same enhancers (e.g. Figure 2G) as well as independently, to distinct enhancers (e.g. Figure 2E,F). Indeed, the respective sites appear explanatory for the observed in vivo occupancy to DNA sequences as the matches to the consensus sequences correlate with the center of the peak (Figure 2E–G). The widespread binding of Opa in the genome supports the view that this factor functions broadly to support gene expression, as previously suggested from ChIP-chip studies for a number of other transcription factors in the early embryo (X.-Y. Li et al., 2008). Therefore, we undertook an analysis of gene expression changes associated with knockdown of opa, in particular to assess whether it generally impacts patterning.
 
-## RNA-seq from opa RNAi embryos shows that gene expression is regulated by Opa along both axes at cellularization
+### RNA-seq from opa RNAi embryos shows that gene expression is regulated by Opa along both axes at cellularization
 
 To generate homogenous populations of mutant embryos, we used RNAi to knockdown levels of opa. Embryos were depleted of opa transcript by expression of a short hairpin (sh) RNAi construct at high levels using MTD-GAL4, a ubiquitous, maternal driver that is also active in early embryos (Figure 3A; Petrella et al., 2007; Staller et al., 2013). This same approach was used previously to perform zld sh RNAi (sh_zld) (Sun et al., 2015).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig3-v3.jpg)
+
+**Figure 3.:** (A) Anti-Opa antibody staining (cyan) of wildtype (wt; A), opa RNAi (sh_opa), or zld RNAi (sh_zld) embryos (n = 3–5 per genotype) at nc14D. The selected area (grey rectangular box) was quantified using ImageJ/Fiji (see Materials and methods). Gradient bars and numbers in upper right corners represent the intensity of each fluorescent image’s selected area. (B) In situ hybridization using riboprobes to sog at nc14D, as well as en staining at stage eight in wt, opa1 mutant and sh_opa.MTD-Gal4 embryos. (C) RNA-seq analysis was performed using control (yw females crossed to sh_opa males) and sh_opa embryos at nc14D (n = 3 per genotype). Replicate expression of up- and down-regulated genes is presented as a heatmap with Z-score representing relative expression value across replicates. Color-key: blue represents low expression and red high expression. This plot demonstrates consistency of RNA-seq results across different replicates. (D) Volcano plots for genes identified through RNA-seq to be significantly downregulated (left; blue versus grey) or significantly upregulated (right; red versus grey) genes. Subset of genes that exhibit Zld and/or Opa occupancy are noted; see also Figure 3—source data 1. (E) Images from the DVEX virtual expression software show expression patterns of some of the differentially expressed Opa/Zld or Opa-only targets (Karaiskos et al., 2017).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Heatmaps of normalized ChIP-seq data of Opa-early (3 hr; A), Zld nc13-nc14 (B), Zld nc14 late (C) samples centered at the transcription start sites of upregulated, or downregulated genes based on opa RNAi (sh_opa) RNA-seq data (see Figure 3). Transcription start sites are positioned at 0; the region shown is extended to 3 kb on either side. The size of the peaks is displayed as a color code from white (smallest) to red (largest). Key indicates normalized signal intensities. (D, E) Gene Ontology (GO) enrichment was used to create a functional profile of genes that are differentially expressed, upregulated (D) or downregulated (E), in sh_opa embryos according to the RNA-seq analysis. (F) Statistical analysis of Opa (3 hr) and Zld nc14 late binding at differentially expressed RNA-seq genes to determine if observed changes in expression relate to direct action of Opa and/or Zld.
 
 Using an anti-Opa antibody, we confirmed that protein levels are greatly diminished upon opa short hairpin (sh) RNAi (sh_opa) but are retained, though slightly reduced in sh_zld (Figure 3A; ~1.4 fold reduction, see Materials and methods). This result suggests that opa expression is only partially under Zld regulation, and indicates these factors may have separable roles. We also compared gene expression between opa1 mutants (Benedyk et al., 1994; Cimbora and Sakonju, 1995) and sh_opa embryos by performing in situ hybridization to visualize transcripts of representative Opa target genes sog and engrailed (en) (see Figure 1 and Clark and Akam, 2016; Benedyk et al., 1994). We found that expression phenotypes for sog and en were similar in these two opa mutant genotypes (Figure 3B).
 
@@ -77,25 +109,53 @@ In order to assay Opa’s broad effects on gene expression, RNA-sequencing (RNA-
 
 To determine if observed changes in expression relate to direct action of Opa, we assessed whether Opa binding was associated with affected genes. Opa (3 hr) ChIP-seq peaks were identified in promoter-proximal regions [transcription start site (TSS) ±3 kb] of both up- and down-regulated genes (Figure 3—figure supplement 1A). Some of these regions were also co-occupied by Zld later at cellularization, but more so for the upregulated gene set (Figure 3—figure supplement 1B, C, F). Gene Ontology (GO) analysis for these two sets of genes also demonstrate that upregulated genes tend to relate to nervous system development/neurogenesis; whereas downregulated genes tend to relate to cellular processes such as biogenesis of organelles and metabolism (Figure 3—figure supplement 1D, E). As Zld has been shown to promote neurogenesis (Liang et al., 2008), it is possible that Opa and Zld have antagonistic roles that coordinate the MZT (see Discussion).
 
-## Opa ChIP-seq peaks are associated with late-acting enhancers driving expression along both axes
+### Opa ChIP-seq peaks are associated with late-acting enhancers driving expression along both axes
 
 Within the total set of 16085 Opa ChIP peaks observed at the 3 hr timepoint we found, surprisingly, that Opa is associated with genes expressed along both the anterior-posterior (AP; Figure 4A–B’, D–E’) and dorsal-ventral (DV; Figure 4C and Figure 4—figure supplement 1A) axes. These targets include, but are not limited to, genes involved in segmentation (e.g. oc and slp1: Figure 4—figure supplement 1B, C) as predicted by previous studies (e.g. Clark and Akam, 2016; Prazak et al., 2010).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig4-v3.jpg)
+
+**Figure 4.:** (A–E’) In house (A’, hb_stripe ; Perry et al., 2012; Koromila and Stathopoulos, 2017) and publicly available genome-scale enhancer characterization (VT reporters; Kvon et al., 2014) demonstrating expression at nc14D by in situ (A’, B’, E’), as well as IGV browser tracks of genes expressed along either the AP (A, B, D, E) or DV (C) axes showing Zld nc13-14 (orange), Zld nc14 late (pink), and Opa (3 hr) (blue) ChIP-seq replicates (as indicated). Anti-Opa antibody was used to immunoprecipitate chromatin isolated from embryos ~ 3 hr in age (see Materials and methods). Published Zld ChIP-seq data for two different timepoints is shown (GSM763061: nc13-14 and GSM763061:nc14 late; Harrison et al., 2011). Nc14 was used as a point of comparison between the 3 ChIP samples. Gray boxes indicate regions with significant occupancy by both Opa and Zld as detected by ChIP-seq peaks, which can be located at promoter and/or distal regions (A, C, D, F); whereas, light blue boxes indicate regions with significant Opa-only binding at promoter and/or distal regions (A, B, E). (F, G) Heatmaps produced by deepTools (see Materials and methods) were used to plot histone H3K4me3 and H3K4me1 at nc14a (G) and H3K4me3 and H3K4me1 at nc14C (H) signal intensities centered at different ChIP-seq regions (Zld-only, Opa-Zld overlap, and Opa-only bound ChIP-seq peaks). For the two different timepoints nc14A and nc14C, different Zld ChIP data were used (GSM763061: nc13-nc14 and nc14 late, respectively; Harrison et al., 2011). Key indicates histone signal intensities (deepTools normalized RPKM with bin size 10). For this and all subsequent data presented using heatmaps, the first sample in the heatmap was used for sorting the genomic regions based on descending order of mean signal value per region; all other comparison samples were plotted using the same order determined by the first sample.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Embryo ventrolateral or lateral views are shown except (D), which shows a dorsal view; anterior is to the left. Embryos were stained by in situ hybridization using a GAL4 riboprobe. Images from Stark lab web viewer of data from Kvon et al., 2014. (A) Data from publicly available genome-scale enhancer characterization (Kvon et al., 2014) demonstrating expression for VT40842 enhancer associated with sim locus (stage 6 and stage 9/10). (B–D) IGV browser tracks of individual gene loci expressed showing combined replicates of Opa (3 hr) (blue), Zld nc13-nc14 (orange), Zld nc14 late (pink) ChIP-seq (as indicated) for comparisons at nc14. Publicly available data demonstrating expression for VT58873 enhancer associated with oc locus (nc14D), VT1965 enhancer associated with slp1 locus and VT24021 enhancer associated with rho locus.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) Histograms showing the distribution of the position of Opa-only (3 hr), Opa (3 hr)/Zld (nc13-14) overlap and Zld nc13-14 only peaks (A) or Opa_(3 hr) only, Opa_(4 hr) only, and Opa (3 hr) and (4 hr) overlap peaks (B) relative to the transcription start site (TSS). (C) Heatmaps of normalized ChIP-seq data of Opa-early (3 hr; left) or Opa-late (4 hr; right) centered on genomic sequences representing called peaks of one of three classes: Opa-early only (3 hr), Opa-late only (4 hr), or Opa-early and -late overlap. Center of ChIP-seq called peaks are positioned at 0, and extended to 3 kb shown on either side. The size of the peaks is displayed as a color code from blue (largest) to red (smallest). Opa-early only (3 hr; top), Opa-late only (4 hr; right) ChIP-seq regions split up to illustrate relative size of peaks and enrichment of these DNA regions in the two ChIP-seq samples. Key indicates normalized signal intensities (see Materials and methods) around different ChIP-seq regions. (D, E) Heatmaps produced by deepTools (see Materials and methods) were used to plot histone H3K4me3 and H3K4me1 at nc14A and at nc14C signal intensities around different promoter and non promoter ChIP-seq regions (Zld-only, Opa-Zld overlap, and Opa-only bound ChIP-Seq peaks). For the two different timepoints nc14A and nc14C, different Zld ChIP datasets were used (GSM763061: nc13-nc14 and nc14 late, respectively; Harrison et al., 2011). Heatmaps are centered on ChIP-seq peak summits. Key indicates histone signal intensities (deepTools normalized RPKM with bin size 10) around (±3 kb) different ChIP-seq regions.
 
 We also found evidence in occupancy trends for Opa and Zld that suggest both these factors influence the timing of enhancer action. Opa binding at the 3 hr timepoint is associated with enhancers that are initiated in nc14: hb_stripe (Figure 4A’; Koromila and Stathopoulos, 2017; Perry et al., 2012), slp1_DESE (Figure 4—figure supplement 1C; Prazak et al., 2010), and oc_Prox (Figure 4—figure supplement 1B; Chen et al., 2012). In contrast, Zld binding during the same stage, encompassed by Zld nc13-14 and nc14 late ChIP-seq, is associated primarily with enhancers active earlier such as the hb_stripe enhancer, whereas the hb_HG4-7 enhancer active later is not bound by Zld though it is associated with Opa (Figure 4A). Similarly at the even skipped (eve) and rhomboid (rho) loci, late-acting enhancers (i.e. eve_LE and rho_SHA) are bound predominantly by Opa; whereas, enhancers active earlier (i.e. eve3/7, rho_NEE or oc_Distal) receive input from Opa and Zld or Zld only (Figure 4B,B’ and Figure 4—figure supplement 1B, D). While Opa is associated with late-acting enhancers, we can not dismiss a role for Zld at later stages, as, for example, the VT40842 enhancer associated with the gene single-minded (sim) is active later (stage 6 onwards) and is bound by both Opa and Zld at an earlier stage (Figure 4C and Figure 4—figure supplement 1A).
 
 Furthermore, we found evidence that Opa is preferentially associated with promoters, whether or not Zld is co-associated (Figure 4—figure supplement 2A) as demonstrated by calculating the distances of ChIP-seq peak centers to TSS for both the Opa (3 hr) and (4 hr) samples (Figure 4—figure supplement 2B). While Zld was shown to preferentially associate with promoters at a much earlier stage (nc8; Harrison et al., 2011), we found that binding of Zld to Zld-only enhancers occurs in more distal regions at stage 5 (i.e. nc13/14 and nc14 late samples) (Figure 4—figure supplement 2A). It is possible that once Opa is expressed it preferentially associates with promoter regions and either competes and/or co-regulates with Zld (see Discussion).
 
-## H3K4me3 and H3K4me1 histone marks are enriched at nc14 at regions occupied by Opa
+### H3K4me3 and H3K4me1 histone marks are enriched at nc14 at regions occupied by Opa
 
 Previous genomics studies have demonstrated that particular histone marks correlate with active enhancers at different developmental stages in the early embryo. For example, there is a dramatic increase in the abundance of histone modifications at the MZT, coinciding with zygotic genome activation (Schulz and Harrison, 2019). We investigated whether Opa-only, Zld-only, and Opa-Zld overlap regions exhibit differences in chromatin marks that might support our hypothesis that Opa-associated regions are active later than Zld-only regions. For the purposes of this analysis, 10 published ChIP-seq datasets relating to histones or histone modifications (X.-Y. Li et al., 2014) were assayed for coincidence of any marks with Opa- and/or Zld-bound regions identified by our analysis (see Materials and methods). Only H3K4me3 and H3K4me1 histone marks were found to differ between Opa- versus Zld-bound peaks (Figure 4F,G). Both histone marks are first detectable at the MBT, while absent prior to nc14a, whereas their associated genes are considered to be activated at later stages (X.-Y. Li et al., 2014; Chen et al., 2013).
 
 Heatmap modules of deepTools (see Materials and methods) were used to calculate and plot histone H3K4me3 and H3K4me1 signal intensities assayed at two timepoints, nc14A and nc14C, for different ChIP-seq peak sets: Opa-only; Zld-only; or Opa-Zld overlap. Our analysis shows that Zld-only bound regions are depleted for H3K4me3, as shown previously (X.-Y. Li et al., 2014), as well as for H3K4me1 at both time points relative to Opa-only or Opa-Zld overlap bound regions (Figure 4F,G). The higher levels of H3K4me1 in the Opa-bound peaks could reflect a poised state of late-acting enhancers, relate to spatial regulation (e.g. repression), and/or support enrichment of Opa-binding at promoters (Figure 4—figure supplement 2A, D; Bonn et al., 2012; Koenecke et al., 2017; Rada-Iglesias et al., 2011).
 
-## opa knockdown results in global changes in chromatin accessibility
+### opa knockdown results in global changes in chromatin accessibility
 
 We hypothesized that Opa functions as a pioneer factor to regulate temporal gene expression starting at nc14 in the celluarizing blastoderm. To test this, we investigated whether Opa functions to regulate chromatin accessibility genome-wide. We used ATAC-seq (Assay for Transposase-Accessible Chromatin using sequencing; Buenrostro et al., 2015) to investigate the state of chromatin accessibility in opa RNAi and opa1 zygotic mutants compared to wild type by assaying carefully-staged individual embryos (see Methods).
 
 To provide insight into the potentially different roles of these two transcriptional factors, Opa and Zld, ATAC-seq analysis was conducted on single sh_opa, opa1 mutant, sh_zld, or ‘wt’ (control: opa sh without Gal4 driver) embryos and the results compared (see Materials and methods for details). To start, we determined the relative accessibility indices of embryos in wt versus sh_opa for Opa (3 hr) ChIP-seq peak regions as well as subclasses: Opa-only, Zld-only, or Opa-Zld overlap regions (i.e. Figure 2A) using deepTools (Ramírez et al., 2014) with RPKM method for normalization (see Materials and methods). A general decrease in chromatin accessibility was associated with the sh_opa sample relative to wt in nc14D embryos (Figure 5B and Figure 5—figure supplement 1D). Of the Opa-bound ChIP-seq defined peak regions, those also occupied by Zld (i.e. Opa-Zld overlap regions) had, on average, ~2 fold higher ATAC-seq signal (i.e. accessibility) in wt than those bound solely by either Zld or Opa (i.e. Zld-only or Opa-only) (Figure 5—figure supplement 1D). opa RNAi (sh_opa) decreases accessibility at Opa-only regions but also at the Opa-Zld overlap bound regions (Figure 5—figure supplement 2). In summary, occupancy of both Opa and Zld is a better indicator of open chromatin regions than either factor alone; and, surprisingly, Opa regulates chromatin accessibility at Opa-only as well as Zld-co-bound regions. As Zld has been documented to function as a pioneer factor that helps to make chromain accessible, these results suggest that Opa may also function in this role.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig5-v3.jpg)
+
+**Figure 5.:** (A, B) Heatmaps of normalized paired-end ATAC-seq signal from nc14D wt, sh_opa and opa1 mutant embryos for the regions called from Opa (3 hr) ChIP-seq. Each row of the heatmap is a genomic region, centered to peaks of accessibility signals. The accessibility is summarized with a color code key representative of no accessibility (white) to maximum accessibility (red). Plot at the top of the heatmap shows the mean signal at genomic regions centered at peaks of accessibility signals (Opa 3 hr: blue trace; Opa 4 hr: green trace). Averaging of ATAC-seq data from two nc14D embryos (n = 3) were used for this analysis (see Materials and methods). (C, D, G) UCSC dm6 genome browser tracks of representative loci showing Opa (3 hr) (navy blue), ChIP-seq replicates, as well as single replicates of nc14B (green box) and nc14D ATAC-seq. Examples of late enhancer regions that significantly gain/lose accessibility, compared to wt, in either UAS-opa, sh_opa and/or opa1 mutants are defined by blue shaded regions. Plots show mean normalized read coverage of the replicates (see also Figure 5—source data 1). (E, F) Cumulative distribution of measured distances between 21440 unbound (E) and 4481 bound (F) Opa motif sites and modeled nucleosome dyad positions (Schep et al., 2015) under wildtype conditions (blue) or upon ectopic expression of opa (red). The expected coverage of a nucleosome is depicted by the vertical dotted line. X-axis is log2 scaled.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Venn diagram comparing the number of closed chromatin peaks in sh_opa (3784), opa1 (3448) versus control at nc14D, and more open chromatin peaks in UAS-opa versus control at nc14B. There is 88.5% overlap (3301 peaks) between the opa1 and sh_opa closed chromatin peaks (versus open peaks in control), and 75% overlap (3187 peaks) between the sh_opa closed (accessible/open peaks in control) and UAS-opa open peaks (non-accessible/closed peaks in control). (B, C, E, F) UCSC dm6 genome browser tracks of representative loci showing Opa (3 hr) (navy blue), and Zld nc14 late (pink) ChIP-seq data for combined replicates (as indicated), as well as representative ATAC-seq data for individual nc14D embryos. Examples of late enhancer regions that significantly lose accessibility, compared to wt, either in sh_opa and opa1 mutants (B, E, F; blue shaded box) or in both opa mutants and sh_zld (C; grey shaded box). Mint shaded boxes in B and C define enhancer regions that lose accessibility in sh_zld but not in sh_opa or opa1 mutants. ChIP-seq plots show mean normalized read coverage of the replicates. (D) Normalized ATAC-seq signals of nc14D control and opa RNAi (sh_opa) sample groups (x-axis) were quantified within 1 kb genomic bins surrounding three classes of ChIP-seq regions: Opa-early only (3 hr), Opa-early and Zld-late (nc14 late) overlap or Zld-late only (nc14 late), and presented in a box plot. For comparison, ATAC-seq signals surrounding all ChIP-seq peak regions are presented for comparison. (G, H) Fragment-size distribution for single-embryo ATAC-seq samples. X-axis represents the fragment size (i.e. between 5’ ends of a pair-end sequencing read pair) measured by the mapped read pairs while Y-axis represents frequency counts.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A–D) Aggregated signals (A) and heatmaps of normalized paired-end ATAC-seq data from wt and sh_opa mutant nc14D embryos centered at Opa (3 hr) ChIP-seq called peak regions [i.e. Zld-only (B), Opa-Zld overlap (C), and Opa-only (D) regions; see Figure 2A]. Each line of the heatmap is a genomic region. The accessibility is summarized with a color code from red (no accessibility) to blue (maximum accessibility). The aggregation plot shows the mean signal at the genomic regions for these three classes of ChIP-seq defined regions, which were centered to peaks of corresponding accessibility signals.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Aggregation plots at the top show the mean signal at the genomic regions, which were centered to peaks of accessibility signals (A,D). Each line of the heatmap is a genomic region. The accessibility is summarized with a color code from white (no accessibility) to red (maximum accessibility). (A–D) Aggregated signals (A) and heatmaps of normalized ATAC-seq data from individual staged nc14 wt and sh_zld mutant embryos (average of two samples each) for Opa-only (B), Zld and Opa overlap (C) and Zld-only (D). (E–H) Aggregated signals (E) and heatmaps (F–H) of normalized ATAC-seq data from individual staged nc13 wt and sh_zld mutant embryos (average of two samples each) for Opa-only (F), Zld and Opa overlap (G) and Zld-only (H).
 
 We analyzed chromatin accessibility at an earlier timepoint, nc14B, finding that in wt the Opa-bound regions are less accessible at nc14B compared to nc14D, and investigated whether Opa levels relate to the timing of this change in accessibility (Figure 5A, left, compare with Figure 5B). To do this, we ectopically-expressed full-length opa again using the maternal-zygotic MTD-Gal4 driver to ensure strong early embryonic expression. Single embryos of stage nc14B that ectopically express opa (UAS-opa) in this fashion exhibit a clear increase in chromatin accessibility across Opa-bound regions (Figure 5A) suggesting that Opa acts to open chromatin.
 
@@ -103,11 +163,19 @@ We therefore hypothesized that Opa functions as a pioneer-like factor supporting
 
 To investigate Opa's mechanism of action, we compared the distance of opa motif to the nearest nucleosomes at nc14B between wildtype embryos and those that ectopically express opa to determine if evidence of nucleosome displacement could be inferred. ATAC-seq fragment sizes reflect nucleosome organization with a peak in the fragment-size distribution at 120–200 bp arising from DNA protected by a nucleosome. Ectopic expression of opa results in a trend toward shift in the positions of nucleosomes relative to binding sites (Figure 5—figure supplement 1G, H), suggesting that Opa displaces nucleosomes. To obtain more definitive evidence, we performed a quantitative analysis of our ATAC-seq data based on modeled nucleosome positions. The cumulative distribution of measured distances between 21440 unbound (Figure 5E) and 4481 bound (Figure 5F) Opa motif sites and modeled nucleosome dyad positions was determined using previously defined methods (see Materials and methods; Schep et al., 2015). We observe a shift to larger motif-nucleosome distance upon ectopic expression of opa compared to wildtype (Figure 5E,F; red versus blue lines, respectively). These data support the view that Opa occupancy on DNA displaces nucleosomes. A recent study found that alternatively in opa mutant embryos there is a shift to smaller distance, which also supports the view that Opa is required to displace nucleosomes (Soluri et al., 2020).
 
-## Opa-only occupied peaks require Opa to support accessibility at mid-nc14
+### Opa-only occupied peaks require Opa to support accessibility at mid-nc14
 
 Chromatin accessibility as characterized by single-embryo ATAC-seq revealed 88.5% overlap between the opa1 and sh_opa closed chromatin peaks (versus open peaks in control), as well as 75% overlap between the sh_opa closed (accessible/open peaks in control) and UAS-opa open peaks (non-accessible/closed peaks in control) (Figure 5—figure supplement 1A). Accessibility was also examined at particular enhancers known to be bound by Opa. In particular, enhancer regions active in nc14 for genes expressed along AP and DV axes exhibit Opa-dependent changes in accessibility. For example, the VT15161 en enhancer (Kvon et al., 2014) exhibits an increase in accessibility in response to higher Opa levels, but a decrease in both sh_opa and opa1 mutants (Figure 5C, blue shaded region). Similar trends were identified for oc_Proximal, sog_Distal, and hb_stripe enhancers (Figure 5D,G and Figure 5—figure supplement 1E; blue shaded regions) (Perry et al., 2011; Koromila and Stathopoulos, 2017). Moreover, the accessibility of these same enhancers was not affected in sh_zld (e.g. Figure 5—figure supplement 1B, E, F). On the other hand, accessibility at other enhancer sequences, such as eve_3–7, was affected by changes in both opa and zld (Figure 5—figure supplement 1C; grey-shaded box). The Opa-bound regions fall into three classes: (i) regions that require Opa for accessibility (blue-shaded regions); (ii) regions that require both Opa and Zld for accessibility (grey-shaded regions); and (iii) regions that require Zld, but not Opa, for accessibility [mint-shaded regions; e.g. enhancer sog_intronic (Markstein et al., 2002) and eve_LE (Fujioka et al., 2013; Figure 5—figure supplement 1B, C)]. Collectively, these results support the view that Opa can influence chromatin accessibility, but not all regions that are bound by Opa require this factor for accessibility (i.e. class iii). It is possible that at Opa-Zld overlap regions, in which both factors are bound, either Opa or Zld can suffice to support accessibility.
 
 To determine whether the global effects on chromatin accessibility observed in opa mutants have consequences for patterning, we examined gene expression in mutant embryos and assayed for patterning phenotypes. We performed in situ hybridizations on wildtype and sh_opa embryos using riboprobes to detect endogenous transcripts for the genes sog and sna, expressed along the DV axis, and for hb, expressed along the AP axis. zld RNAi (sh_zld) mutants were also examined for comparison; loss of zld is known to affect both sog and hb as well as to cause a delay in sna expression that recovers by nc14 (Nien et al., 2011; Liang et al., 2008). In addition, embryos were examined at two stages, nc13 and nc14B, corresponding to timepoints before Opa is expressed or when it first initiates, respectively (e.g. Figure 1D). Even early, at nc13, zld mutant embryos exhibit loss of expression for all three genes examined (hb, sna, and sog), supporting the view that Zld is necessary for early gene expression (Figure 6C,E). In contrast, little difference in expression was observed in opa mutants at nc13. This is unsurprising as opa is not expressed at nc13 and therefore would not be expected to affect patterning at this stage (Figure 6C). Later, at nc14C, opa mutants do exhibit expression defects, as both sog and hb expression is diminished (Figure 6D). These expression defects likely relate to lack of Opa input at sog_Distal, hb_stripe, and hb_HG4-7 enhancers that exhibit Opa-dependent changes in accessibility (Figure 5G; Figure 4A,A’).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig6-v3.jpg)
+
+**Figure 6.:** (A, B) Aggregated signals and heatmaps of nc14B normalized ATAC-seq signal from wt and UAS-opa, as well as nc14D wt and opa RNAi (sh_opa) mutant embryos for downregulated (blue trace) and upregulated target genes as identified by RNA-seq (green trace). Each row of the heatmap is a genomic region, centered to peaks of accessibility signals. The accessibility is summarized with a color code key representative of no accessibility (white) to maximum accessibility (red). Plot at the top of the heatmap shows the mean signal at genomic regions centered to peaks of accessibility signals (A). (C, D) In situ hybridization using riboprobes to hb, sna, and/or sog, as well as anti-Dorsal staining (where noted to highlight ventral regions) of wt and sh_opa embryos at indicated stages (n = 5 per genotype). (E) Schematic illustrating a model supported by our results, which is that Opa, a general timing factor and likely a late-acting pioneer factor, drives a secondary wave of zygotic gene expression, following and coordinating with Zelda, to support the maternal-to-zygotic transition.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59610/elife-59610-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Aggregated signals (A) and heatmaps of normalized pair-end ATAC-seq data from nc14B wt and UAS-opa, as well as nc14D wt and sh_opa mutant embryos for ChIP-seq Opa-only (3 hr) (B), Opa-only (4 hr; D) compared to peaks in common between Opa-early (3 hr) and Opa-late (4 hr) peaks (C). Each line of the heatmap is a genomic region. The accessibility is summarized with a color code from white (no accessibility) to red (maximum accessibility).
 
 In addition to these findings relating to patterning, we also observe temporal bias in Opa’s genomic effects. ATAC-seq data for nc14B individual embryos in which opa was ectopically expressed (UAS-opa) exhibit a significant increase in chromatin accessibility at regions bound by Opa early (ChIP-seq 3 hr; Figure 6—figure supplement 1A-C). However, ectopic expression of opa failed to increase accessibility at late-only regions bound by Opa (ChIP-seq 4 hr peaks not also present early) when assayed at nc14B (Figure 6—figure supplement 1A, D). Furthermore, only ChIP-seq regions that were present at the early timepoint exhibited decreased accessibility upon opa RNAi (i.e. 3 hr peaks as well as 3 hr + 4 hr overlap peaks). These data further support the view that Opa binding is dynamic and associated with changes in accessibility.
 
@@ -133,7 +201,178 @@ Opa is conserved, as it shares extended homology of protein sequence and DNA bin
 
 ## Materials and methods
 
-## Fly stocks and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eve2 promoter-MS2.yellow-attB</td>
+      <td>Bothma et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sogD_ΔOpa eve2 promoter-MS2.yellow-attB</td>
+      <td>This study</td>
+      <td>TK61_DNA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sogD_ΔOpa4 eve2 promoter-MS2.yellow-attB</td>
+      <td>This study</td>
+      <td>TK62_DNA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sog_Distal_ eve2 promoter-MS2.yellow-attB</td>
+      <td>Koromila and Stathopoulos, 2019</td>
+      <td>TK54_DNA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Opa (Rabbit polyclonal)</td>
+      <td>Mendoza-García et al., 2017</td>
+      <td>E990</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Opa (Rabbit polyclonal)</td>
+      <td>This study</td>
+      <td>E992</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Zelda (Rabbit polyclonal)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ZH-attP-86Fb</td>
+      <td>Bloomington Drosophila Stock Center (BDSC)</td>
+      <td>BDSC:23648; FLYB:FBti0076525; RRID:BDSC_23648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sog_Distal</td>
+      <td>Koromila and Stathopoulos, 2019</td>
+      <td>TK54</td>
+      <td>Transgenic insertion into 86Fb attP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sogD_ΔRun</td>
+      <td>Koromila and Stathopoulos, 2019</td>
+      <td>TK56</td>
+      <td>Transgenic insertion into 86Fb attP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sogD_ΔOpa4</td>
+      <td>This study</td>
+      <td>TK62</td>
+      <td>Transgenic insertion into 86Fb attP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sogD_ΔOpa</td>
+      <td>This study</td>
+      <td>TK61</td>
+      <td>Transgenic insertion into 86Fb attP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yw;Nucleoporin- RFP;MCP-NoNLS-GFP</td>
+      <td>Lucas et al., 2013 and Koromila and Stathopoulos, 2019</td>
+      <td>TK59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shRNA-opa</td>
+      <td>BDSC</td>
+      <td>BDSC:34706: FLYB:FBal0175559: RRID:BDSC_34706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MTD-Gal4</td>
+      <td>BDSC</td>
+      <td>BDSC:31777; FLYB:FBtp0001612; RRID:BDSC_31777</td>
+      <td>FlyBase symbol: P{GAL4-nos.NGT}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>opa1</td>
+      <td>BDSC</td>
+      <td>BDSC:3312; FLYB:FBst0305629;RRID:BDSC_3312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JASPAR</td>
+      <td>Khan et al., 2018</td>
+      <td>http://jaspar.binf.ku.dk/cgi-bin/jaspar_db.pl?rm=browse and db = core and tax_group = insects</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 9.0</td>
+      <td></td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>Zhang et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Halocarbon 27 oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>MKBJ5699</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and husbandry
 
 The y w [67c23] strain was used as wild type, unless otherwise noted. All flies were reared under standard conditions at 23°C, except for RNAi crosses involving MTD-Gal4 and controls that were reared at 26°C.
 
@@ -143,11 +382,11 @@ opa1/TM3,Sb [Bloomington Drosophila Stock Center(BDGP)#3312] mutant flies were r
 
 In all experiments, both male and female embryos were examined; sex was not determined but assumed to be equally distributed.
 
-## Cloning
+### Cloning
 
 The sog_Distal enhancer sequences with mutated Opa or Run binding sites (i.e. sogD_ΔOpa, sogD_ΔOpa4 and sogD_ΔRun) were chemically synthesized (GenScript) and ligated into the eve2promoter-MS2.yellow-attB vector using standard cloning methods as previously described (Koromila and Stathopoulos, 2019; Koromila and Stathopoulos, 2017). Site-directed transgenesis was carried out using a D. melanogaster stock containing attP insertion site at position ZH-86Fb (Bloomington stock #23648). Two constructs with either five Opa sites or a single site mutated (sogD_ΔOpa and sogD_ΔOpa4, respectively) were generated to check sog_Distal’s expression levels upon different levels of the activator Opa at nc14A and later. Mutated site sequences and their wildtype equivalent fragments are listed below:
 
-## In situ hybridizations, immunohistochemistry, and image processing
+### In situ hybridizations, immunohistochemistry, and image processing
 
 To prepare fixed samples, standard protocols were used for 2–4 hr embryo collection, fixing, and staining (T = 23°C). Samples were collected, stained, and processed in parallel and confocal microscope images were taken with identical settings. Specifically, enzymatic in situ hybridizations were performed with antisense RNA probes labeled with digoxigenin-, biotin- or FITC-UTP to detect reporter or endogenous gene expression. sna, hb, sog (both full-length and intronic), and opa intronic riboprobes were used for multiplex fluorescent in situ hybridization (FISH).
 
@@ -155,48 +394,52 @@ For immunohistochemistry, anti-Opa (rabbit; this study and Mendoza-García et al
 
 For the quantification of the anti-Opa antibody staining in wt, sh_zld and sh_opa embryos (Figure 3A), we selected the region of expected Opa expression (grey rectangular box) in ImageJ/Fiji and used a combination of this software’s available tools: 1) the Calibration bar (Analyze >Tools >Calibration bar) was used in order to establish the intensity range of each fluorescent image’s selected area, and 2) Measure (Analyze >Measure) was used to make intensity measurements (mean) of each selected area. Images were taken under the same settings, 26–30 Z-sections through the nuclear layer at 0.5 μm intervals, on a Zeiss LSM 880 laser-scanning microscope using a 20x air lens for fixed embryos.
 
-## Live imaging, data acquisition and analysis
+### Live imaging, data acquisition and analysis
 
 In order to monitor expression of the various sog_Distal reporters described above in live embryos, virgin females containing RFP-Nucleoporin (Nup) and MCP-GFP (i.e. yw; RFP-Nup; MCP-GFP) were crossed with males containing the sogD_MS2 reporter variants (i.e. wt or ΔOpa). Live confocal imaging on a Zeiss LSM 880 microscope as well as imaging optimization, segmentation, and data quantification were conducted as previously described (Koromila and Stathopoulos, 2019).
 
 For quantification purposes, the number of active nuclei, defined by counting dots (x-axis), was plotted against relative DV axis embryo-width (EW) position (y-axis), as analyzed from representative stills. In Figure 1B plots, black dotted traces overlay raw counts of MS2-MCP active nuclei-dots (bins represent minimum of four dots) detected throughout nc14 embryos containing indicated constructs after projection of scans of individual timepoints were collapsed along the anterior-posterior (AP) axis. Dots were then counted and binned across the DV axis (EW) (for details see: Koromila and Stathopoulos, 2019). The black line for either sog_Distal wild-type or mutant reporter constructs represents normalization after applying a smoothing curve. Such data were obtained and averaged for three representative videos (n = 3) of each genotype.
 
-## Genome-wide RNA-sequencing and data analyses
+### Genome-wide RNA-sequencing and data analyses
 
 Following total RNA isolation from control and sh_opa single embryos, RNA was quality controlled and quantified using a Bioanalyzer. Next, poly-A purified samples were converted to cDNA and high-throughput sequencing was performed to generate Illumina sequencing data by Fulgent Genetics. RNA-seq libraries were constructed using NEBNext Ultra II RNA Library Prep Kit for Illumina (NEB #E7770) following the manufacturer’s instructions. Resulting DNA fragments were end-repaired, dA tailed and ligated to NEBNext hairpin adaptors (NEB #E7335). After ligation, adaptors were converted to the ‘Y’ shape by treating with USER enzyme and DNA fragments were size selected using Agencourt AMPure XP beads (Beckman Coulter #A63880) to generate fragment sizes between 250 and 350 bp. Adaptor-ligated DNA was PCR amplified followed by AMPure XP bead clean up. Libraries were quantified with Qubit dsDNA HS Kit (ThermoFisher Scientific #Q32854) and the size distribution was confirmed with High Sensitivity DNA Kit for Bioanalyzer (Agilent Technologies #5067–4626).
 
 The collected raw FASTQ data files were trimmed to 40 bp paired-end reads for downstream analysis. To ensure sample identity, reads were first mapped to Gal4-VP16 sequence (Addgene #71728) associated with MTD-Gal4 (Petrella et al., 2007) using the BWA aligner. The read count statistics are included in Figure 3—source data 1. Sequencing reads were then aligned to Drosophila reference genome assembly (UCSC dm6) using TopHat2 (Kim et al., 2013) using no coverage search to speed up the process, and default settings for other parameters. Bam format of data alignment files and GTF format of the UCSC dm6 reference gene file were loaded to Cuffquant module of Cufflinks (Trapnell et al., 2012) to quantify gene expression. Differential expression analysis was performed using Cuffdiff module of Cufflinks with default parameters, and FPKM (Fragments Per Kilobase of transcript per Million mapped reads) values were normalized by the geometric method that Cuffdiff recommends. To identify a gene or transcript as differentially expressed, Cuffdiff tests the observed log fold change in its expression against the null hypothesis of no change (i.e., that the true log fold change = 0). Because measurement error, technical variability, and cross-replicate biological variability might result in an observed log fold change that is nonzero even if the gene/transcript is not differentially expressed, Cuffdiff also assesses the significance of each comparison. A gene is considered significantly affected if the adjusted p-value (q-value) is less than 0.05 between two groups. Consistency of differentially expressed genes across replicate samples was assessed by visualizing gene z-score values in a heatmap (generated using the R heatmap.2 function). The Z-score value is calculated as sample FPKM value minus population mean, divided by population standard deviation. In addition, a volcano plot was generated to show gene log2(fold change of expression) vs. -log2(adjusted p-value of change).
 
-## ChIP-seq procedure
+### ChIP-seq procedure
 
 Opa-ChIP was performed as described previously (Mendoza-García et al., 2017) using chromatin prepared from 100 mg of pooled collections of 3 hr (2.5–3.5 hr collection) and 4 hr (3.5–4.5 hr collection) y w[67c23] embryos with 10 ug affinity-purified anti-Opa antibodies from two different rabbits. Control ChIP-seq libraries were generated from input chromatin as well as from a ChIP assay done with preimmune serum from one of the two rabbits. The precipitated DNA fragments were ligated with adaptors and amplified by 10 cycles of PCR using NEBNext Ultra II DNAlibrary Prep Kit for Illumina (NEB) to prepare libraries for DNA sequence determination using Illumina HiSeq2500 and single-end reads of 50 bp. The libraries were quantified by Qubit and Bio-Analyzer (Agilent Bioanalyzer 2100).
 
-## ChIPseq data processing
+### ChIPseq data processing
 
 The raw fastq data (50 bp single-end) for Opa ChIP-seq libraries were generated from the Illumina HiSeq2500 platform. The raw data for Zld ChIP-seq (GSM763061/GSM763062) and histone H3K4me1/H3K4me3 (GSE58935) were downloaded from the Gene Expression Omnibus (GEO) database. Trimmomatic-0.38 tool (Bolger et al., 2014) was used to remove Illumina adapter sequence before alignment to the Drosophila dm6 reference genome assembly with the Bowtie2 alignment program (Langmead and Salzberg, 2012). Alignment BAM files were subject to further sorting and duplicate removal using the Samtools package (Li et al., 2009). Reads mapped to chr2L, chr2R, chr3L, chr3R, chr4, chrX were kept and biological replicate BAM files were merged for downstream analysis. ChIP-seq signal trace files were generated using the bamCoverage function of deepTools (Ramírez et al., 2014), with RPKM normalization and 10 bp for the genomic bin size.
 
 Both IP and input data were used for ChIP-seq peak calling. For calling of transcription factor binding sites, a workflow using bdgcmp and bdgpeakcall modules of the MACS2 peak caller (Zhang et al., 2008) was utilized. Peak calling was performed using merged replicate ChIP data (to improve the sensitivity of the peak calling by increasing the depth of read coverage) against input data (a proxy for genomic background). As noted, visual inspection of signal traces of both preimmune negative control data and genomic input data showed a clean background, thus mapped reads were merged to serve as background for ChIP-seq peak calling. Genomic regions with q-values of less than 10−5 were defined as ChIP-seq peak regions. To understand overlapping of Opa and Zld binding sites across the genome, Opa and Zld peak regions were combined and overlapping peaks were merged. Combined regions that overlapped both Opa and Zld peaks were defined as Opa-Zld overlap regions; regions overlapping with either Opa or Zld peaks were defined as Opa-only and Zld-only regions respectively. Further de novo motif analysis was performed on different ChIP-Seq regions using the HOMER program (Heinz et al., 2010) with default parameters and with options -size 200 and -mask. The most enriched de novo motifs identified from Opa ChIP-seq peaks and from Zld ChIP-seq peaks were queried against the Opa-Zld overlap, Opa-only and Zld-only regions for comparison and for generating aggregation plots. Average ATAC-seq signals around different ChIP-seq regions were also calculated using the annotatePeaks.pl module of HOMER, with the -size 4000 -hist 10 options used for aggregation plots. Also different ChIP-seq regions were annotated and linked to the nearest gene transcription start sites. Functional gene annotation was performed using DAVID v6.7 (https://david.ncifcrf.gov/home.jspcitation). In addition, computeMatrix and plotHeatmap modules of deepTools were used to calculate and plot normalized histone mark and ATAC-seq signal intensities around different ChIP-seq regions. DNA sequence logos were plotted using the seqLogo R package. Region overlap analysis was performed using an online tool (http://bioinformatics.psb.ugent.be/webtools/Venn/). Unless noted otherwise, R was used to generate plots. For this and all subsequent data presented using heatmaps, the first sample in the heatmap was used for sorting the genomic regions based on descending order of mean signal value per region; all other comparison samples were plotted using the same order determined by the first sample.
 
-## Single-embryo ATAC-seq procedure
+### Single-embryo ATAC-seq procedure
 
 Embryos were collected on agar plates from females of the following genotypes: wild-type/control (i.e y w females crossed to sh_opa males), mutant (i.e. opa1 and MTD-Gal4, sh_opa or sh_zld), or ectopically-expressing opa (i.e. MTD-Gal4, UAS-opa). Individual embryos were selected from plates, and nuclear morphology was observed live under a compound microscope at 20x magnification. Temperature for sample collection was maintained at 26°C within an incubator to minimize variation in staging. Under these conditions, cell cycling timing was indistinguishable between genotypes. The staging of the samples started at 3 min intervals from the onset of anaphase of the previous cell cycle. Each embryo was hand-selected and hand-dechorionated for the analysis. Prepared libraries were subject to either paired-end [wt (at nc14B and nc14D), UAS-opa (at nc14B), opa1 (at nc14D) and sh_opa (at nc14D); average of three single embryo replicates] or single-end sequencing (wt and sh_zld; average of one nc14B and one nc14D samples per timepoint as only these data passed quality control after sequencing) of 50 bp reads, using an Illumina HiSeq2500 platform. Fragmentation and amplification of single-embryo ATAC-seq libraries were performed essentially as described previously (Blythe and Wieschaus, 2016b; Buenrostro et al., 2015). Single embryos embryos were collected at nc14+20 min for nc14B and nc14+45 min for nc14D (T = 26°C). Developmental progression of individual embryos was monitored under a microscope, and embryos harvested at the indicated times ± 2 min (T = 23°C).
 
-## ATAC-seq processing, mapping and peak calling
+### ATAC-seq processing, mapping and peak calling
 
 ATAC-seq reads were trimmed and filtered using Trimmomatic (version 0.33) (Bolger et al., 2014) and cutadapt (version 1.15) (Martin, 2011). The first 30 bp from each read were mapped using Bowtie2 (version 2.1.0, parameters: --end-to-end --very-sensitive --no-mixed --no-discordant -q --phred33 -I 10 -X 700).
 
 HOMER (version 4.7, parameters: -localSize 50000 -minDist 50 -size 150 -fragLength 0) (Heinz et al., 2010) was used to call ATAC peaks. The peaks that overlap ENCODE ‘blacklist regions’ (Amemiya et al., 2019) were removed.
 
-For the individual loci ATAC-seq data that are depicted in Figure 5C,D,G and Figure 5—figure supplement 1B, C, E and F, mapped reads were normalized similarly to a published method for better visualization (Blythe and Wieschaus, 2016b). First, to define the background, 150 bp peaks were called from the original data using HOMER (-localSize 50000 -minDist 50 -size 150 -fragLength 0) to capture most of the non-background regions. These 150 bp peaks were extended from the center to form 20000 bp ‘signal zones’. Outside these signal zones are ‘background zones’. Next, to sample the background noise, 100000 150 bp random regions were generated. Those 150 bp random regions that completely fell into the ‘background zones’ were regarded as ‘background regions’. The mean and standard deviation for the background noise were calculated from positive RPM scores of each nucleotide in these regions (ypbkg) based on log-normal distribution. Finally, RPM scores for the whole genome were centered and scaled based on the mean and standard deviation calculated, using one as pseudocount:log2(ynorm+pseudocount)=log2y−log2ypbkg¯std(log2ypbkg)
+For the individual loci ATAC-seq data that are depicted in Figure 5C,D,G and Figure 5—figure supplement 1B, C, E and F, mapped reads were normalized similarly to a published method for better visualization (Blythe and Wieschaus, 2016b). First, to define the background, 150 bp peaks were called from the original data using HOMER (-localSize 50000 -minDist 50 -size 150 -fragLength 0) to capture most of the non-background regions. These 150 bp peaks were extended from the center to form 20000 bp ‘signal zones’. Outside these signal zones are ‘background zones’. Next, to sample the background noise, 100000 150 bp random regions were generated. Those 150 bp random regions that completely fell into the ‘background zones’ were regarded as ‘background regions’. The mean and standard deviation for the background noise were calculated from positive RPM scores of each nucleotide in these regions (ypbkg) based on log-normal distribution. Finally, RPM scores for the whole genome were centered and scaled based on the mean and standard deviation calculated, using one as pseudocount:
 
-## Integrative analysis of multi-omics data
+$$
+log_{2}(y_{norm}+pseudocount)=\frac{log_{2}y−log_{2}y_{pbkg}¯}{std(log_{2}y_{pbkg})}
+$$
+
+### Integrative analysis of multi-omics data
 
 ChIP-seq peak-associated genes and RNA-seq differentially expressed genes were subjected to overlapping count calculation, and the results were presented in a bar plot. To understand changes of chromatin accessibility surrounding transcription factor binding sites, ATAC-seq signals (average from three single embryo biological replicates; except for wt and sh_zld singled-end ATAC-seq data, as described above) within 1 kb genomic bins surrounding different categories of ChIP-seq regions were calculated, and presented in a box plot. For comparison, ATAC-seq signals surrounding ATAC-seq peak regions were also calculated and presented in a box plot (Figure 5—figure supplement 1D).
 
-## ATAC-seq differential peaks
+### ATAC-seq differential peaks
 
 We grouped mutant samples and control samples into two separate groups and merged all the aligned reads separately. Peaks were called for the two merged samples using the method described above. We were particularly interested in the peaks that were less accessible in sh_opa embryos (n = 3). Therefore, the peaks called from the merged control sample (n = 3), were converted into broad peaks by extending 200 bp upstream and downstream and merging overlapped ones. These broad peaks were used as candidate input and differential peaks called from these processed datasets using the getDifferentialPeaks function (parameters: -size 200 F 2) from HOMER (Heinz et al., 2010).
 
-## Nucleosome signature analysis
+### Nucleosome signature analysis
 
 From the broad peaks called from merged UAS-opa and control ATAC-seq samples at nc14B using the method described above, we called nucleosome locations using NucleoATAC based on fragment size and using default parameters (Figure 5E,F and Figure 5—figure supplement 1G, H; Schep et al., 2015). The peaks that had at least one nucleosome called by NucleoATAC were selected for downstream analyses. Genome motif scanning (fimo pipeline) using an Opa binding site consensus (JASPAR MA0456.1) revealed 25921 matches across the genome. These matches were further divided into 4481 ‘bound’ matched positions that overlap with Opa (3 hr) ChIP-seq peaks and 21440 ‘unbound’ ones that do not. Similarly, 3276 ‘bound’ and 22645 ‘unbound’ motif positions were also derived from those 25921 matches for Opa (4 hr) ChIP-seq peaks. For each of these four categories, matched motif positions that overlapped with the broad ATAC-seq called peaks (either UAS-opa or control samples) that also had at least one nucleosome called were identified. The distances between each motif location and its nearest nucleosome were recorded and plotted.

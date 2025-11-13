@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.27574.001 The temporal regulation of protein abundance and post-translational modifications is a key feature of cell division. Recently, we analysed gene expression and protein abundance changes during interphase under minimally perturbed conditions (Ly et al., 2014, 2015). Here, we show that by using specific intracellular immunolabelling protocols, FACS separation of interphase and mitotic cells, including mitotic subphases, can be combined with proteomic analysis by mass spectrometry. Using this PRIMMUS (PRoteomic analysis of Intracellular iMMUnolabelled cell Subsets) approach, we now compare protein abundance and phosphorylation changes in interphase and mitotic fractions from asynchronously growing human cells. We identify a set of 115 phosphorylation sites increased during G2, termed ‘early risers’. This set includes phosphorylation of S738 on TPX2, which we show is important for TPX2 function and mitotic progression. Further, we use PRIMMUS to provide the first a proteome-wide analysis of protein abundance remodeling between prophase, prometaphase and anaphase.
+The temporal regulation of protein abundance and post-translational modifications is a key feature of cell division. Recently, we analysed gene expression and protein abundance changes during interphase under minimally perturbed conditions (Ly et al., 2014, 2015). Here, we show that by using specific intracellular immunolabelling protocols, FACS separation of interphase and mitotic cells, including mitotic subphases, can be combined with proteomic analysis by mass spectrometry. Using this PRIMMUS (PRoteomic analysis of Intracellular iMMUnolabelled cell Subsets) approach, we now compare protein abundance and phosphorylation changes in interphase and mitotic fractions from asynchronously growing human cells. We identify a set of 115 phosphorylation sites increased during G2, termed ‘early risers’. This set includes phosphorylation of S738 on TPX2, which we show is important for TPX2 function and mitotic progression. Further, we use PRIMMUS to provide the first a proteome-wide analysis of protein abundance remodeling between prophase, prometaphase and anaphase.
 
 ## Introduction
 
@@ -47,9 +47,21 @@ Building on our previous work analysing the cell cycle regulated interphase prot
 
 ## Results
 
-## Optimisation of cell fixation and permeabilisation for proteome analysis
+### Optimisation of cell fixation and permeabilisation for proteome analysis
 
 We identified three steps in intracellular immunostaining procedures that have the potential to significantly impact peptide identification by MS-based proteomics: (1) irreversibility and/or chemical modifications associated with cell fixation, (2) loss of soluble proteins during permeabalisation and (3) interference from antibody-derived peptides (Figure 1A). Therefore, a series of experiments were performed to compare alternative fixation and permeabilisation parameters with respect to these effects.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig1-v1.jpg)
+
+**Figure 1.:** (A) An abbreviated schematic of the workflow for the Proteomics of Intracellluar IMMunolabelledcell Subsets (PRIMMUS) approach, highlighting specific steps for optimisation (fixation, permeabilisation). Lysates prepared from cells crosslinked with the indicated concentrations of formaldehyde (%v/v) in PBS (B) and then de-crosslinked with heating (C) were electrophoresed by SDS-PAGE and stained for protein using Sypro Ruby. (D). SILAC-labelled cells were either processed by fixation and permeabilisation, comparing 0.5% Triton X-100 (i) versus 90% methanol (ii), or with lysis only (iii). Cells were then mixed pairwise 1:1 and analysed by ‘single shot’ proteome workflows. The resulting SILAC ratios (e.g. H/L) are plotted as scatter plots for the pairwise comparisons, namely Triton X-100 vs. lysis only, methanol vs lysis only, and methanol versus methanol (technical replicate).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Immunoblot analysis of crosslinked lysates for alpha tubulin (A) and histone H3 (B). Immunoblot analysis of crosslinked and reverse crosslinked lysates for alpha tubulin (C) and histone H3 (D). Arrowheads indicate high MW bands remaining after reverse crosslinking step that migrate at a higher MW than the expected monomer mass (arrows).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) DNA content histograms from flow cytometry of cells fixed with the indicated concentrations of FA and using either propidium iodide (PI, left), or 4',6-diamidino-2-phenylindole (DAPI, right), as the DNA-binding dye.
 
 We chose to fix cells with formaldehyde (FA), which has been used extensively for other MS applications, such as protein-protein crosslinking (Larance et al., 2016) and crosslinked immunoprecipitations (Mohammed et al., 2016; Klockenbusch and Kast, 2010). FA forms reversible crosslinks that can be broken efficiently at high temperatures. However, prior work on model peptides shows that high FA concentrations can produce irreversible chemical modifications that compromise identification by MS (Toews et al., 2008), (Sutherland et al., 2008). FA concentrations and fixation times vary significantly between common immunostaining protocols (Stadler et al., 2010; Stadler et al., 2013). Therefore, we tested a range of FA concentrations in human myeloid leukemia NB4 cells, employing SDS-PAGE, immunoblotting and total protein gel stains to assay for crosslinking efficiency (Figure 1B). This identified 0.5% as the minimum concentration of FA that fixes cells and produces high-MW PAGE-impermeable crosslinked products. As shown by immunoblotting, crosslinking results in α tubulin migrating at increasingly higher MW bands in a FA-dependent manner, with no monomer remaining at 4% FA (Figure 1—figure supplement 1A). A similar FA-dependent shift is observed for histone H3 (Figure 1—figure supplement 1B). These data show that while 0.1% FA is sufficient to observe crosslinked proteins, 4% FA is required to crosslink most of the total protein pool. However, high FA concentrations reduce the efficiency of reverse-crosslinking, as discussed below.
 
@@ -67,11 +79,23 @@ In summary, we conclude that methanol is preferred over Triton-X100 as a permeab
 
 These data identify a protocol for immunostaining intracellular antigens that is compatible with efficient downstream MS-based peptide ID and quantitation and that minimises loss of protein identifications. While the fixation and permeabilisation steps slightly reduce the overall peptide signal (Figure 1F), these decreases are reproducible and can be accounted for in performing relative comparisons of protein abundance (Figure 1G). We term the resulting methodology using this optimised protocol, ‘PRIMMUS’ (Proteomics of intracellular immunolabelled cell subsets).
 
-## PRIMMUS analysis of protein accumulation across the cell division cycle
+### PRIMMUS analysis of protein accumulation across the cell division cycle
 
 The PRIMMUS methodology is well-suited for transforming end-point immunostaining flow cytometry assays for cell cycle analysis into a preparative procedure for global proteome characterisation. For example, G1, S and G2 and M cell populations can be distinguished by DNA content alone using flow cytometry. As G2 and M phase cells have identical DNA content and similar size distributions, an additional parameter is required to separate these phases. H3S10ph, which accompanies mitotic chromatin condensation (Hendzel et al., 1997), is a specific marker for mitotic cells in many cell types and across many phyla (Hans and Dimitrov, 2001). H3S10ph staining is often used as a proxy for mitotic index, particularly in flow cytometry assays (Juan et al., 1998). The specificity of the anti-H3S10ph antibody for mitotic cells also aids an evaluation of the potential effect of antibody IgG peptides on peptide identification.
 
 SILAC-labelled cells were fixed, permeabilised, immunostained and sorted into four subpopulations (i.e. G1, S, G2, and M), based on both DNA content and H3S10ph staining, then processed for MS analysis, as illustrated in Figure 2A. Four subpopulations are discernable in a representative psuedocolour scatter plot of the flow cytometric analysis, showing H3S10ph staining (y-axis), versus DNA content (x-axis) (Figure 2B). Cells were sorted into G1, S, G2 and M fractions using the sorting ‘gates’ indicated (Figure 2B, black boxes). The purities of G2 and M fractions were validated by co-immunostaining fractionated cells with anti-alpha tubulin antibodies and analysis by immunofluorescence (Figure 2C). This showed that none of the cells in the G2 fraction were mitotic and >96% of cells in the M fraction were mitotic, as evaluated by chromatin condensation and microtubule organisation (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig2-v1.jpg)
+
+**Figure 2.:** Workflow for PRIMMUS of human leukemia cells into four cell cycle phase fractions (G1, S, G2, and M). Stained cells were sorted by FACS into four populations (G1, S, G2, and M) based on the gates shown on the psuedocolour plot in (B). The mitotic index of the M phase fraction was independently visualised by immunofluorescence microscopy and co-staining for microtubules (C) and quantitated (D). Fractions were then mixed by cell number 1:1 with an asynchronous SILAC-labelled standard and processed for ‘single shot’ LC-MS/MS-based proteomics. The resulting measured SILAC ratios compare protein abundances in the sorted fraction versus the asynchronous standard (E). The analysis was performed with replicates (n = 4). Comparison of peptide ID rates across the sorted fractions (F).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Flow cytomety diagrams showing the gates used for FACS.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** A data-dependent search was performed and identified 0.07% and 0.01% for the major peptide adduct products of formaldehyde, that is methylene and methoyl, respectively.
 
 Relative protein abundances among the four sorted subpopulations of cells were determined using SILAC quantitation in single shot MS analyses (Figure 2E). Flow sorted ‘heavy’ cell populations were mixed with equal numbers of asynchronous ‘light’ cells, with the signal from the ‘light’ cells used as an internal standard to compare the four sorted populations (Figure 2E). Four biological replicates were performed.
 
@@ -93,15 +117,27 @@ We show individual profiles for selected proteins in Figure 3D. Aurora kinase A,
 
 Using FACS, each cell cycle phase is enriched with higher purity as compared with centrifugal elutriation. We therefore analysed whether this results in the PRIMMUS method providing increased sensitivity for detecting relative changes in protein abundance between cell cycle phases. Figure 3E shows a comparison between datasets obtained using either PRIMMUS (red circles) or elutriation (blue triangles). These 14 proteins all peak in abundance in G2 and M relative to G1 phases, show the highest G2 and M vs. Async ratios in the elutriation dataset, and are annotated with ‘cell cycle’ gene ontology terms (i.e. CDC20, AURKA, KIFC1, CCNB1, ANLN, HMMR, KIF20A, AURKB, CCNB2, RRM2, PLK1, RACGAP1, CENPF and PRC1). All 14 proteins show higher ratios in the PRIMMUS dataset. We conclude that the higher enrichment purities for cell subsets obtained by FACS results in PRIMMUS providing a sensitivity advantage over centrifugal elutriation.
 
-## PRIMMUS analysis of protein phosphorylation across interphase and mitosis
+### PRIMMUS analysis of protein phosphorylation across interphase and mitosis
 
 While formaldehyde-induced modifications are generally low (see above), the frequent reliance on single phosphopeptides for quantitation in phosphoproteomics means that phosphopeptide detection may be more challenging with fixed samples. We therefore assessed whether the PRIMMUS workflow was detrimental to phosphopeptide analysis. Lysates were generated from untreated cells and from cells processed using PRIMMUS. Proteins were precipitated, digested with LysC and Trypsin, and subjected to Ti:IMAC phospho-enrichment in technical triplicate, on different days. Enriched phosphopeptides were analysed using 2 hr LC-MS analyses detecting in total 6,587 phosphorylation sites and a mean of ~2,000 phosphorylation sites per individual analysis. Figure 4—figure supplement 1 shows a comparison of phosphopeptide detection rates between control cells and cells processed for PRIMMUS analysis. No significant difference between the phosphopeptide identification rate was measured (p>0.05, N = 3).
 
 We next investigated protein phosphorylation changes during interphase and mitosis using PRIMMUS. Using the identical sort strategy as above, we separated asynchronous NB4 cells into G1, S, G2 and M phase fractions by FACS (Figure 4A). The experiment was performed in biological duplicate. The cell fractions were then processed for phosphopeptide analysis and TMT-based quantitation (8-plex, two biological replicates x 4 cell cycle phase fractions). Enriched phosphopeptides with no further peptide fractionation were detected and quantitated using a single shot LC-MS/MS analysis. In total, 4,500 phosphorylation sites were identified on 1,558 proteins. Most phosphorylation sites were phosphoserines (83.2%), with smaller frequencies for phosphothreonines (15.8%) and phosphotyrosine (1.0%) (Figure 4B). Over 60% of the phosphorylation sites matched the proline-directed kinase motif (S/T followed by a proline (Figure 4C). CDKs and MAP kinases can phosphorylate the [S/T]P motif (as reviewed in [Amanchy et al., 2007]). The phosphoproteins detected are enriched in proteins with functions in cell division and DNA repair/stress response, in addition to ‘housekeeping’ proteins involved in gene expression (Figure 4D). The phosphorylation site abundance profiles for the duplicate measurements were similar (Figure 4E). As discussed in more detail below, many of the extreme differences in phosphorylation are observed in the mitotic fraction. Pearson correlations calculated for individual phosphorylation sites showed high correlation (Figure 4F). The maximum fold changes measured for individual phosphorylation sites were also highly correlated between the two replicates, showing that the quantitation was reproducible (Figure 4G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig4-v1.jpg)
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Three biological replicates comparing control and PRIMMUS samples were analysed. The y-axis is the relative number of phosphopeptides normalised to control.
+
 The identified phosphorylation sites were then clustered using k-means into six groups (Figure 5A). Cluster one contains phosphorylation sites that rise significantly during mitosis. Interestingly, many of these sites also show an increase in the G2 fraction (Figure 5A, arrow). We note that a similar trend is observed when phosphorylation changes are normalised to protein abundance changes (Figure 5—figure supplement 1). Clusters that peak in mitosis (1, 2, 3 and 5) represent 34% of the phosphorylations quantitated (Figure 5B). Interestingly, this number is significantly smaller than reported previously in a study measuring phosphorylation dynamics in HeLa cells synchronised using nocodazole arrest and arrest-release protocols (Olsen et al., 2010). A comparison of the ratios measured for the same phosphorylation sites identified in the PRIMMUS dataset and in this previous analysis in synchronised HeLa cells shows significant differences. Phosphorylation sites upregulated in both datasets are on proteins enriched for the gene ontology annotations ‘cell cycle’ and ‘mitosis’. We note that a similar enrichment for ‘cell cycle’ annotations was found for proteins whose phosphorylation sites specifically upregulated in this PRIMMUS dataset (Figure 5C, purple), which was performed using NB4 cells. In contrast, phosphorylation sites specifically upregulated in the previous HeLa cell arrest-release dataset (which are not changing in this PRIMMUS dataset), are instead on proteins showing significant enrichment for the gene ontology annotation ‘RNA splicing function’ and show no enrichment for either ‘mitosis’, or ‘cell cycle’ (Figure 5C, cyan). These differential enrichments in specific cellular functions for the proteins identified with changing levels of phosphorylation across the cell cycle suggest underlying physiological differences between the cells used in these respective studies (see also Discussion).
 
-## Identification of a set of ‘early rising’ phosphorylation sites
+![Figure 5.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig5-v1.jpg)
+
+**Figure 5.:** (A) K-means clustering of the phosphorylation profiles. (B) Distribution of mitosis-peaking phosphorylation sites, either in the entire dataset (left), or significantly changing phosphorylation sites (right). (C) A comparison of phosphorylation site ratios measured in this dataset and a previous analysis of mitotic phosphorylation in human cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig5-figsupp1-v1.jpg)
+
+### Identification of a set of ‘early rising’ phosphorylation sites
 
 While most of the significantly changing phosphorylation sites peak in mitosis, a subset, consisting of 115 sites, also show significantly increased phosphorylation in the G2 phase enriched fraction. We have termed these 115 phosphorylation sites, ‘early risers’. The high enrichment efficiency of FACS (c.f. Figure 2C) renders it unlikely that the increased G2 ratios measured originate from contamination from H3S10ph-positive mitotic cells in the G2-enriched fraction. Indeed, further analysis shows that early risers share additional functional similarities. Thus, early rising phosphorylation sites are situated on proteins highly enriched in nuclear, nuclear envelope and chromatin localisations using identified phosphoproteins as ‘background’(Figure 6A).
 
@@ -113,7 +149,7 @@ A STRING network analysis (Figure 6B) identifies several functional categories o
 
 One of the early risers identified was on the protein TPX2. Two TPX2 phosphorylation sites are quantitated in this dataset, that is, S185 and S738. Both sites have surrounding sequences matching the consensus CDK phosphorylation motif (SPEK and SPK, respectively) and show increased phosphorylation in the G2-phase enriched fraction, compared with the total levels of unmodified TPX2 protein (Ly et al., 2014). However, TPX2 S738 is an early riser site that is phosphorylated to a greater extent in the G2 phase fraction and this difference is further increased in the M-phase fraction. We therefore decided to explore whether there was any functional relevance for phosphorylation of TPX2 at S738 in mammalian cells by analysis of phosphodefective and phosphomimetic mutants.
 
-## Expression of S738A TPX2 mutant fails to rescue TPX2-depleted cells
+### Expression of S738A TPX2 mutant fails to rescue TPX2-depleted cells
 
 To assess the potential function of TPX2 phosphorylation at serine 738, the mitotic phenotype of porcine LLC-Pk1 cell lines expressing TPX2 or TPX2 mutants was analyzed. A mouse bacterial artificial chromosome (BAC) expressing wild type TPX2 with a GFP tag was mutated to generate either a phosphodefective TPX2-738A-GFP mutant, or a phosphomimetic TPX2-738D-GFP mutant. Cell lines expressing each of the constructs were generated. To examine spindle phenotypes, endogenous porcine TPX2 was depleted using siRNA (Ma et al., 2011) and spindle morphology was scored in either live, or fixed cells (Figure 7).
 
@@ -127,9 +163,17 @@ To further examine the consequences of mutation at serine 738 in more detail, ti
 
 Because the TPX2-738 phosphorylation site was classified as an early riser, a defect early in mitosis might be expected. TPX2 is nuclear throughout interphase, although a small fraction of the protein can be detected outside the nucleus, at the centrosome, in prophase (Ma et al., 2011; Vos et al., 2008); however, the contribution of TPX2 to the events of early mitosis is not yet established. Defects in mitotic progression prior to NEBD would be not be detected in our time-lapse imaging. However, the observed spindle defects are consistent with deficiencies in spindle formation and a contribution of the TPX2-738 site to mitosis in live cells.
 
-## PRIMMUS analysis of protein abundance variation during mitosis
+### PRIMMUS analysis of protein abundance variation during mitosis
 
 We next used the PRIMMUS method to perform a proteomic analysis of protein abundance variation across four temporally distinct stages of mitosis, reflecting prophase, prometaphase (1 and 2, see below) and anaphase. We aimed to screen for proteins that show abundance patterns resembling cyclins A and B, which could reveal novel targets whose degradation is also regulated during mitosis. We chose H3S28ph and cyclin A (CycA), as two markers with which to distinguish different mitotic subphases. Like H3S10ph, the H3S28ph signal is associated with chromatin condensation (as reviewed in [Hans and Dimitrov, 2001]). During mitosis, cells undergo reversible condensation of chromatin, with highest levels of compaction observed during prometaphase and metaphase (Hans and Dimitrov, 2001). Thus, cells showing the highest levels of H3S28ph signal (H3S28ph-high), represent prometaphase and metaphase cells, while cells showing intermediate levels of H3S28ph signal (H3S28ph-mid), are in early (prophase) and late (anaphase and telophase), stages of mitosis, respectively. Meanwhile, CycA is targeted for degradation by the APC/C during prometaphase in a SAC-independent manner (den Elzen and Pines, 2001). Thus, comparing either the presence, or absence, of CycA provides a means for distinguishing between ‘early’ (prometaphase and before) vs. ‘late’ (prometaphase and after) mitotic cells, respectively. Consistent with this, flow cytometry analysis of cells co-immunostained for H3S28ph and CycA show four subpopulations (labelled P1 – P4), which are H3S28ph positive (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig8-v1.jpg)
+
+**Figure 8.:** (A) Flow cytometry analysis of NB4 cells immunostained for H3S28ph and CycA. Gates show populations collected by FACS. (A, right) (B) Representative light microscopy images of cell fractions. Scale bars = 10 micron. (C) The frequency of each intra-mitotic stage was counted and quantified with 100 cells or more. (D) Wide field of view of population 4, the anaphase-enriched population. (E) Workflow for MS-based proteomic analysis involving SILAC and TMT based labelling and three biological replicates, resulting in 8,700 proteins identified in total. (F) K-means clustering of profiles were qualitatively agglomerated into three groups based on subpopulation where ‘trough’ in abundance occurs.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Flow cytomety diagrams showing the gates used for FACS.
 
 The four subpopulations described above were isolated by FACS and analysed by immunofluorescence microscopy (representative images are shown in Figure 8A, right). The frequency of interphase, prophase, prometaphase, anaphase and telophase cells were each measured, with at least 100 cells counted for each subpopulation (Figure 8B). This confirms that high enrichment efficiencies were obtained for prophase, prometaphase and anaphase, respectively. Telophase and cytokinesis cells were not observed in these subpopulations. We note that the gating strategy employed, which removes potential doublets from the analysis, biases against these cells (unpublished observations). Figure 8C shows a representative image of the P4 subpopulation, showing high enrichment of anaphase cells. Based on these high enrichment efficiencies, we have relabelled these populations according to the major enriched phase represented, that is, prophase (Pro), prometaphase 1 (PM1), prometaphase 2 (PM2) and anaphase (Ana), respectively.
 
@@ -141,7 +185,23 @@ The mean profiles for the 136 proteins showing the most significantly changing a
 
 We next examined the mean protein abundance profiles for cyclins A and B (Figure 9A,s.d. shown as a gray ribbon). As expected from the flow cytometry analysis and the sorting strategy employed, cyclin A2 shows high levels in Pro and PM1 and a marked decrease in PM2 and Ana. Two isoforms of cyclin B are detected (B1 and B2). The abundances of both isoforms remain relatively constant between Pro, PM1 and PM2 and decrease in Ana to 25–35% of prophase levels. These data are consistent with the targeting of cyclin B for degradation by the APC/C at the metaphase to anaphase transition. In contrast, the abundance of GAPDH, a protein that is not expected to be targeted for degradation during mitosis, is unchanged between these subpopulations.
 
-## RRM2 is degraded during prometaphase via a MLN-4924-sensitive proteasomal pathway
+![Figure 9.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig9-v1.jpg)
+
+**Figure 9.:** (A) Line graphs showing mean abundance profiles for Cyclin A2 (CycA), Cyclin B1, Cyclin B2, and GAPDH. Grey ribbons indicate 1 standard deviation from the mean. (B) Mean abundance profile for RRM2. (C) Flow cytometry analysis RRM2 levels vs. DNA content. (D) Flow cytometry-based comparison of beta-tubulin (negative control, left) and RRM2 (right) levels in CycA+ (red) vs. CycA- (blue) prometaphase cells. (E) Violin plots showing CycA, histone H3, and RRM2 levels in cells treated with either DMSO or microtubule drugs that activate the spindle assembly checkpoint (nocodazole, monastrol, taxol). (F) Violin plots showing levels of RRM2 in cells treated with either vehicle control (DMSO), MG132, apcin + proTAME, or MLN4924.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Flow cytometry analysis of cells treated either with non-targeting siRNA (siJumble), or siRNA against RRM2 and stained either with secondary antibody only (A), or anti-RRM2 antibody (B). (C) Immunoblot analysis of siJumble vs. siRRM2 cell lysates. (D) Overexpression of GFP-Fibrillarin (top) and RRM2-GFP (bottom). GFP and anti-RRM2 staining shows high correlation.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A) A representative image of FUCCI U2OS cells immunostained for RRM2. (B) A psuedocolour scatter plot with x- and y- axes representing the two proteins used in the FUCCI cell cycle reporter system (Red: Cdt1, Green: Geminin) with colour indicating anti-RRM2 signal. (C) Bar chart summarising (B).
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/27574/elife-27574-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** Anti-Cyclin B1 and anti-RRM2 signals were measured in U2OS cells by immunofluorescence microscopy. Representative images of cyclin B (A, left) and RRM2 (A, right) staining. (B) Quantitation of immunofluorescence with cells ranked ordered based on Cyclin B1 signal. The arrow indicates nuclear concentration of Cyclin B1 signal, which marks mitotic entry.
+
+### RRM2 is degraded during prometaphase via a MLN-4924-sensitive proteasomal pathway
 
 We were interested in examining other proteins that co-clustered with the cyclin proteins. In the literature, there are few examples of substrates targeted for degradation during prometaphase, as compared with anaphase. We are aware of only two proteins, cyclin A2 and Nek2, for which there is significant evidence in the literature for targeted degradation during prometaphase (van Zon and Wolthuis, 2010). Our data show three additional proteins clustering together with cyclin A2, that is, ATAD2, GMNN and RRM2. Inspection of the protein abundance profiles show that while GMNN levels decrease during prometaphase to ~60% of prophase levels, a second major decrease in GMNN abundance occurs during anaphase, where its levels drop to ~20%. ATAD2, a protein involved in transcriptional co-activation of cell cycle genes, such as c-myc, cyclin D1 and E2F1, shows ~50% reduction during prometaphase. ATAD2 contains a conserved, canonical D-box motif situated in a disordered linker region between a predicted DNA-binding bromo- domain and a second globular domain. ATAD2 was also recently shown to be cell cycle regulated via co-immunostaining of FUCCI-expressing cells with a rabbit polyclonal antibody recognising ATAD2 (Human Protein Atlas, www.proteinatlas.org).
 
@@ -187,33 +247,117 @@ In addition to PTM analyses, the PRIMMUS workflow can be extended in future by c
 
 ## Materials and methods
 
-## Key resources table
+### Key resources table
 
-## Cell culture
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human Cell Line</td>
+      <td>NB4</td>
+      <td>Ron Hay lab (Dundee),Lanotte et al., 1991</td>
+      <td>RRID:CVCL_0005</td>
+      <td>Tested negative for mycoplasma (Lonza MycoAlert)</td>
+    </tr>
+    <tr>
+      <td>Human Cell Line</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0030</td>
+      <td>Tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Human Cell Line</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0042</td>
+      <td>Tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Porcine Cell Line</td>
+      <td>LLC-Pk1</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0391</td>
+      <td>Tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-tubulin YL1/2</td>
+      <td>Accurate Scientific</td>
+      <td>RRID:AB_2687885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-RRM2</td>
+      <td>Human Protein Atlas</td>
+      <td>RRID:AB_2683304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-H3S10ph</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_331748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-H3S28ph HTA28</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2295065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-tubulin (DM1a)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_477593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNA, Expression construct</td>
+      <td>RRM2-GFP</td>
+      <td>Origene</td>
+      <td>RG205718</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 The NB4 cell line (RRID: CVCL_0005) was originally established from acute myeloid leukemia blast cells grown on bone-marrow stromal fibroblasts (Lanotte et al., 1991). NB4 cells were obtained from the Hay laboratory (University of Dundee). Cells were cultured at 37°C in the presence of 5% CO2 as a suspension in RPMI-1640 (Life Technologies, UK) supplemented with 2 mM L-glutamine, 10% v/v foetal bovine serum (FBS, Life Technologies), 100 units/ml penicillin and 100 μg/ml streptomycin (100X stock, Life Technologies). Cell cultures were maintained at densities between 1 × 105 to 1 × 106 cells/ml. For SILAC labelling, culture media without arginine or lysine (Dundee Cell Products, UK) was supplemented with either ‘light’ (Arg0, Lys0, Cambridge Isotope Labs, Tewksbury, MA, USA) or ‘heavy’ (Arg10, Lys8, Cambridge Isotope Labs) isotopomers of arginine and lysine. SILAC labelling media was additionally supplemented with dialysed serum (10% final), 1X insulin-transferrin-selenium (100X stock from Life Technologies), 1x MEM vitamins (100X stock from Life Technologies), and 90 mg/l proline. The U2OS cell line (U2OS; RRID: CVCL_0042) was cultivated at 37°C in a 5% CO2 humidified environmental condition using McCoy’s 5A modified medium supplemented with 10% foetal bovine serum (FBS, Sigma, St Louis, MO, USA) and 1% L-glutamine. Cells were harvested at around 60% confluency using trypsin (Trypsin-EDTA solution from Sigma-Aldrich). HeLa cells (ATCC, RRID: CVCL_0030) were cultured in DMEM media supplemented with 10% FBS (Gibco, South American origin) and penicillin/streptomycin. For transfection experiments, lipid complexes were prepared in serum-free media (Opti-MEM, Gibco)
 
-## TPX2 depletion and rescue experiments
+### TPX2 depletion and rescue experiments
 
 LLC-Pk1 cells (CVCL_0391) were grown in Hams F-10 mixed one to one with Opti-MEM, and containing 7.5% foetal calf serum and antibiotic/antimycotic at 37°C and 5% CO2. Prior to use in experiments cells were plated on 22 × 22 mm #1.5 coverslips in 35 mm dishes or on to the surface of glass bottom petri dishes (Mattek Corp).
 
 To generate mutants at residue S738, a mouse bacterial artificial chromosome (BAC) expressing a localisation and affinity purification tagged TPX2 was used (referred to hereafter as GFP tagged). Mutations were generated using site directed mutagenesis in bacteria and confirmed by sequencing (Poser et al., 2008). Purified BAC DNA was nucleofected into LLC-Pk1 cells using an Amaxa nucleofector and Mirus nucleofection reagent and antibiotic selection was performed as previously described (Ma et al., 2011). Prior to use in experiments, the cells were nucleofected with siRNA targeting endogenous pig TPX2 (5’ GAAUGGUACAGGAGGGCUU 3’). As a control for nucleofection, cells were nucleofected with siGLO (Dharmacon, Lafayette, CO, USA) according to the manufacturers recommendation. To score mitotic morphology, live cells were imaged on a confocal microscope in the GFP channel or following fixation (3.7% paraformaldehyde, 0.1% glutaraldehyde in PBS containing 0.5% Triton X-100) and staining for microtubules using a mouse anti-tubulin antibody (DM1a, RRID: AB_477593) or rat anti-tubulin (YL1/2, RRID: AB_2687885) and appropriate secondary antibodies. Incubations with primary antibodies were performed for either 1 hr at 37°C or overnight at room temperature; secondary antibodies were used at room temperature for 45 min. Antibodies were mixed at the appropriate final dilution with PBS containing 2% BSA, 0.1% Tween and 0.02% sodium azide. Cells were imaged using a Nikon Eclipse TE300 or TiE equipped with a Yokagawa spinning disc scan head and 100X NA 1.4 objective lens as previously described (Ma et al., 2011). Image analysis was performed in ImageJ or FIJI. For long-term imaging, cells were imaged on a Nikon TiE with a spinning disc confocal system (Yokogawa) at 40X. Cells were maintained at 37°C and 5% CO2 using an Oko Lab environmental stage insert. Images were collected from multiple points at 3 min intervals; images were collected at 488 nm or both the 488 and 561 nm for 3–5 hr. To measure mitotic duration, the time between nuclear envelope breakdown and anaphase was measured from the 488 channel.
 
-## Immunofluorescence staining for FACS
+### Immunofluorescence staining for FACS
 
 NB4 cells (~0.5 × 108 cells) were washed once with phosphate-buffered saline (PBS) and resuspended in freshly prepared 50 ml 0.5% formaldehyde in PBS. Cells were fixed with formaldehyde for 30 min at room temperature with shaking. Cells were pelleted, and permeabilised with 50 ml cold 90% methanol. Cells were then stored at −20°C prior to staining.
 
 Fixed, permeabalised cells were washed once with PBS and resuspended in blocking buffer, 5% bovine serum albumin (BSA) in Tris-buffered saline (TBS) + 0.05% sodium azide. Cells were blocked for 10 min at room temperature, pelleted, and resuspended in primary antibody solution (1:200 in blocking buffer). Cells were stained with primary antibody overnight at 4°C. The primary antibodies used for immunostaining are rabbit anti-RRM2 (HPA056994, RRID: AB_2683304), mouse anti-H3S10ph (Cell Signaling Technology 9706, RRID: AB_331748), rat anti-H3S28ph HTA28 (Abcam ab10543, RRID: AB_2295065), and mouse anti-alpha tubulin (Sigma DM1a, RRID: AB_477593). Stained cells were then washed twice with PBS, and stained with dye-conjugated secondary antibodies (1:200 in blocking buffer) for 1 hr at room temperature. Stained cells were washed twice with PBS, pelleted, and resuspended in DAPI solution (5 μg/ml in PBS).
 
-## RRM2 depletion and overexpression
+### RRM2 depletion and overexpression
 
 HeLa cells were transfected with either siJumble (Hutten et al., 2014), or a pool of 4 siRNA targeting RRM2 (ON-TARGETplus siRNA, GE Healthcare L-010379–00) using Lipofectamine RNAiMAX (Life Technologies) using manufacturer’s instructions. Cells were incubated 24 hr before harvest for immunoblot and flow cytometry assays. For overexpression experiments, HeLa cells were transfected with either GFP-fibrillarin, or RRM2-GFP (Origene RG205718) using Lipofectamine 3000 (Life Technologies). Transfected cells were incubated for 24 hr before harvesting for immunostaining using mouse anti-GFP (Roche, RRID: AB_390913) and rabbit anti-RRM2 primary antibodies (HPA056994, RRID: AB_2683304).
 
-## Flow cytometric analysis of cell cycle distribution
+### Flow cytometric analysis of cell cycle distribution
 
 Cells stained with either PI or DAPI were analysed on an LSR Fortessa flow cytometer and data acquired using DIVA software (Becton Dickinson). DNA content was evaluated based on DAPI fluorescence (measured using 355 nm excitation and emission at 450 ± 50 nm) or PI fluorescence (measured using 488 nm excitation and emission at 585 ± 42 nm). Doublet discrimination was used to remove cell doublets and clumps using DAPI/PI-A and DAPI/PI-W measurements. The cell cycle distribution of single (gated) cells was plotted as DAPI/PI-A. Data was analysed using Flowjo software (Treestar inc.) and cell cycle distributions determined using the Watson/Pragmatic model.
 
-## Fluorescence-activated cell sorting (FACS)
+### Fluorescence-activated cell sorting (FACS)
 
 FACS was performed on an Influx cell sorter (Becton Dickinson) equipped with 488 nm, 405 nm, and 642 nm laser light sources. Forward angle light scatter (FSC) and side angle (90°) light scatter (SSC) were determined by detection of scattered 488 nm light. DAPI fluorescence was measured using 405 nm excitation and emission detected at 460 ± 50 nm, Alexa Fluor 488 fluorescence was measured using 488 nm excitation and emission detected at 530 ± 40 nm, Alexa Fluor 568 fluorescence was measured using 488 nm excitation and emission detected at 610 ± 20 nm, and Alexa Fluor 647 fluorescence was measured using 642 nm excitation and emission detected at 670 ± 30 nm.
 
@@ -223,7 +367,7 @@ For cell sorting phosphate buffered saline pH 7.5 (PBS, Sigma Cat no. P-4417) wa
 
 Immediately prior to sorting, cells were passed through a 50 μm filter (Filcons, Becton Dickinson Cat no. 340629) to remove cell clumps. Sorted cells were collected into either 1.5 ml or 2.0 ml Protein LoBind Eppendorf tubes containing ~50 µl of PBS. Where cell numbers allowed, post-sort purity was checked by reanalysis of the collected cells by flow cytometry, and found to be >96% in all cases. Sorting and data analysis during sorting was performed using FACS Sortware (Becton Dickinson) and post-sort data analysis performed using Flowjo.
 
-## FACS population identification and gating strategies
+### FACS population identification and gating strategies
 
 To separate interphase and mitotic cells, cells were distinguished from particulate material based on FSC and SSC (Suppl. Figure 1A). DAPI fluorescence was detected and presented on a linear scale, setting the G1 peak at approximately channel 20,000 to allow good resolution of cell cycle, while keeping all data on scale. Integration of the DAPI signal pulses was performed electronically to provide pulse area (A) and pulse width (W), as well as pulse height (H). Cell doublets and aggregates were excluded based on DAPI-W v DAPI-A measurements. G1, S and G2 phases of the cell cycle were identified based on DNA content, determined from histogram plots of DAPI-A. In order to minimise contamination of samples with other phases of the cell cycle, the bottom half of the G1 peak, top half of the G2 peak and middle of the S phase were collected (Suppl. Figure 1A). H3S10ph positive cells were identified using either AlexaFluor 488 (H3S10ph)-conjugated antibodies. In both cases, fluorescent parameters were scaled logarithmically and positive gates for phosphohistone H3 determined using a negative (minus antibody) control. Representative plots of the gating strategy used is shown in Suppl. Figure 1A.
 
@@ -233,7 +377,7 @@ To separate mitotic subphases, interphase and mitotic cells were first identifie
 
 FSC v SSC: Identification of cells and elimination of debris >>DAPI W v DAPI-A: Identification of single 4N DNA content cells and exclusion of doublets and cell aggregates >> AF488 hr (pHH3) v AF568-H (Cyclin A): Sort gates identifying Cyclin A low/H3S28ph mid, Cyclin A low/H3 S28ph high, Cyclin A high/H3 S28ph mid, Cyclin A high/H3 S28ph high
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Cells purified by FACS were settled onto poly-lysine-coated coverslips (BD Biosciences) for 30 min at room temperature. The liquid was then carefully aspirated. Cells were fixed with 2% FA in PBS for 10 min at room temperature. Cells were washed twice with PBS and stained with primary antibodies for 1 hr at room temperature. Cells were washed twice with PBS and stained with dye-conjugated secondary antibodies for 30 min at room temperature. Cells were washed twice with PBS and stained with DAPI (5 μg/ml in PBS) for 1 min at room temperature. Cells were washed once with PBS and mounted in Vectashield medium (Vector Laboratories). Cells were visualised using a wide-field fluorescence microscope (Zeiss, Jena, Germany; Axiovert-DeltaVision Image Restoration; Applied Precision, LLC).
 
@@ -243,17 +387,17 @@ Immunostaining of the human U2OS cells was performed in a glass bottom plate (Gr
 
 U2OS cells were imaged using a Leica SP5 confocal microscope (DM6000CS) equipped with a 63-x/1.4 NA oil immersion objective was used for image acquisition. Images were acquired at room temperature in three sequential steps with the following scanning settings; Pinhole 1 Airy unit, 16-bit acquisition and a pixel size of 80 × 80 nm. The z focus-level was manually adjusted to represent the best visualisation of the target protein. The detector gain was maintained constant across all samples. Mitotic images were selected and the cells were labelled manually.
 
-## Cell lysis, reverse crosslinking, protein precipitation/SP3, Ti:IMAC phosphoenrichment
+### Cell lysis, reverse crosslinking, protein precipitation/SP3, Ti:IMAC phosphoenrichment
 
 Cells were resuspended in 4% SDS in PBS, homogenised with a probe sonicator (Branson, 10% power, 20 s, 4°C), and heated to 95°C for 30 min to reverse crosslinks. For MS analysis, proteins were then reduced and alkylated using TCEP (25 mM final concentration, Sigma) and iodoacetamide (55 mM final concentration, Sigma). G1, S, G2, and M phase lysates for the single shot analyses were then chloroform-methanol precipitated.
 
 The interphase fractions for phosphoenrichment and the mitotic substage fractions (G2, M, Pro, PM1, PM2, and Ana) were processed using the SP3 method, as described previously (Hughes et al., 2014). The mean cell counts for the phosphoenrichment experiment, which was performed in biological duplicate, was 10, 6, 3.5, and 1.5 million for G1, S, G2, and M phase fractions, respectively. The mean cell counts for mitotic subphases experiment, which was performed in biological triplicate, were 0.14, 0.52, 0.36, and 0.12 million for Pro, PM1, PM2, and Ana fractions, respectively. Lysis buffer volumes were adjusted according to cell count, and identical volumes were used for TMT labelling and mixing. Cell disruption and DNA homogenisation was performed using a Pico Bioruptor (Diagenode). Reverse crosslinking was performed as above. Proteins were recovered from lysates using the SP3 method and digested ‘on-bead’ with Lys-C followed by Trypsin. Peptides were then recovered by SP3, and TMT labelled according to manufacturer’s instructions. For phosphoenrichment, TMT labelled peptides were mixed and subjected to magnetic Ti:IMAC enrichment (Resyn Biosciences) using the manufacturer’s protocol.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Lysates for SDS-PAGE analysis were prepared in lithium dodecylsulphate sample buffer (Life Technologies) and 25 mM TCEP. Samples were heated to 65°C for 5 min and then loaded onto a NuPage BisTris 4–12% gradient gel (Life Technologies), in either MOPS, or MES buffer. Proteins were electrophoresed and then wet transferred to nitrocellulose membranes at 35 V for 1.5 hr. Membranes were then blocked in 5% BSA in immunoblot wash buffer (TBS +0.1% Tween-20) for 1 hr at room temperature. Membranes were then probed with primary antibody overnight at 4°C, washed and then re-probed with LiCor dye-conjugated secondary antibodies (either IRDye-688 or IRDye-800). Primary antibodies for cell cycle immunoblot analysis were obtained from Cell Signaling Technology (cyclin B1, cyclin A, cyclin E, CDT1). Bands were visualised using the Odyssey CLx scanner (LiCor Biosciences).
 
-## Offline HPLC and LC-MS/MS analysis
+### Offline HPLC and LC-MS/MS analysis
 
 Chloroform-methanol precipitated protein pellets were resuspended in 8 M urea in digest buffer (100 mM Tris pH 8.0, 1 mM CaCl2). The protein solution was then diluted to 4 M urea with digest buffer and then digested with Lys-C, which was added at a 1:50 w/w Lys-C:protein ratio from a 1 mg/ml stock in water (Wako Chemicals) overnight at 37°C. The lysates were then further diluted with digest buffer to 0.8 M urea and digested with trypsin, which was added at a 1:50 w/w trypsin:protein ratio from a 0.2 mg/ml stock in 50 mM acetic acid (Thermo Pierce) for four hours at 37°C. The digests were then desalted using SepPak-C18 SPE cartridges, dried, and resuspended in 5% formic acid. Peptide concentrations were determined using the amine-reactive, fluorogenic CBQCA assay (Life Technologies).
 
@@ -263,7 +407,7 @@ SILAC-labelled peptides were analyzed using a Dionex RSLCnano HPLC-coupled Q-Exa
 
 TMT-labelled peptides were analysed using a Dionex RSLCnano HPLC-coupled Tribrid Fusion mass spectrometer (Thermo Fisher Scientific). Peptides were first loaded onto a 2 cm PepMap trap column (100 µm) in 2% acetonitrile +0.1% formic acid. Trapped peptides were then separated on an analytical column (75 μm x 50 cm PepMap-C18 column) using the following mobile phases: 2% acetonitrile +0.1% formic acid (Solvent A) and 80% acetonitrile +0.1% formic acid (Solvent B). The linear gradient began with 5% B to 35% B over 220 min with a constant flow rate of 200 nl/min. The peptide eluent flowed into a nanoelectrospray emitter at the front end of either a Q-Exactive, or Q-Exactive Plus (quadrupole Orbitrap) mass spectrometer (Thermo Fisher Scientific). A max cycle time acquisition method was used (2 s). The primary mass spectrometry scan (MS1) was performed in the Oribtrap at 120,000 resolution. Then, the top N most abundant m/z signals were chosen from the primary scan for CID (30%) and Rapid-mode MS2 analysis in the linear ion trap. A synchronous precursor selection (SPS) method was employed. MS2 product ions were selected using four notches with a maximum injection time of 300 ms, fragmented by HCD (55%), and TMT tags mass analysed in the Orbitrap at 60,000 resolution. Precursor ion charge state screening was enabled and all unassigned charge states, as well as singly charged species, were rejected.
 
-## MS data analysis
+### MS data analysis
 
 The SILAC and TMT RAW data files produced by the mass spectrometer were analysed using the quantitative proteomics software MaxQuant, versions 1.5.1.2 and 1.5.3.30 (Cox and Mann, 2008). This version of MaxQuant includes an integrated search engine, Andromeda (Cox et al., 2011). The database supplied to the search engine for peptide identifications was a UniProt human protein database (‘Human Reference Proteome’ retrieved on April 16, 2016) combined with a commonly observed contaminants list. The initial mass tolerance was set to 7 p.p.m. and MS/MS mass tolerance was 20 ppm. The digestion enzyme was set to trypsin/P with up to two missed cleavages. Deamidation, oxidation of methionine and Gln->pyro Glu were searched as variable modifications. Identification was set to a false discovery rate of 1%. To achieve reliable identifications, all proteins were accepted based on the criteria that the number of forward hits in the database was at least 100-fold higher than the number of reverse database hits, thus resulting in a false discovery rate of less than 1%. Protein isoforms and proteins that cannot be distinguished based on the peptides identified are grouped by MaxQuant and displayed on a single line with multiple UniProt identifiers. The label-free quantitation (LFQ) algorithm in MaxQuant was used for protein quantitation. The algorithm has been previously described (Cox 2014). MaxQuant output was analysed in RStudio v1.0.136 with R v3.3.0. Protein quantitation was performed on unmodified peptides and peptides that have modifications that are known to occur during sample processing (pyro-Glu, deamidation). All resulting MS data were integrated and managed using PepTracker Data Manager, a laboratory information management system (LIMS) that is part of the PepTracker software platform (http://www.PepTracker.com).
 

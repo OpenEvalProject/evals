@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.04599.001 Actin filament dynamics govern many key physiological processes from cell motility to tissue morphogenesis. A central feature of actin dynamics is the capacity of filaments to polymerize and depolymerize at their ends in response to cellular conditions. It is currently thought that filament kinetics can be described by a single rate constant for each end. In this study, using direct visualization of single actin filament elongation, we show that actin polymerization kinetics at both filament ends are strongly influenced by the binding of proteins to the lateral filament surface. We also show that the pointed-end has a non-elongating state that dominates the observed filament kinetic asymmetry. Estimates of flexibility as well as effects on fragmentation and growth suggest that the observed kinetic diversity arises from structural alteration. Tuning elongation kinetics by exploiting the malleability of the filament structure may be a ubiquitous mechanism to generate a rich variety of cellular actin dynamics. DOI: http://dx.doi.org/10.7554/eLife.04599.001
+Actin filament dynamics govern many key physiological processes from cell motility to tissue morphogenesis. A central feature of actin dynamics is the capacity of filaments to polymerize and depolymerize at their ends in response to cellular conditions. It is currently thought that filament kinetics can be described by a single rate constant for each end. In this study, using direct visualization of single actin filament elongation, we show that actin polymerization kinetics at both filament ends are strongly influenced by the binding of proteins to the lateral filament surface. We also show that the pointed-end has a non-elongating state that dominates the observed filament kinetic asymmetry. Estimates of flexibility as well as effects on fragmentation and growth suggest that the observed kinetic diversity arises from structural alteration. Tuning elongation kinetics by exploiting the malleability of the filament structure may be a ubiquitous mechanism to generate a rich variety of cellular actin dynamics.
 
 ## Introduction
 
@@ -40,103 +40,359 @@ In this study, we used TIRF microscopy to study the effect of side-binding prote
 
 ## Results
 
-## Kinetic modulation at the barbed-end
+### Kinetic modulation at the barbed-end
 
-Fluorescently labeled actin was used to visualize the growth of actin filaments (
+Fluorescently labeled actin was used to visualize the growth of actin filaments (Figure 1A–B) using TIRF microscopy. In this technique, single actin filaments are tethered to a glass surface via a side-binding protein and their growth and/or shrinkage is monitored in real time (Figure 1A–B). From each frame, the filament is extracted and a kymograph is constructed (Figure 1—figure supplement 1). The position of each end of the filament was then determined by fitting an error function (Demchouk et al., 2011) to each line of the kymograph (see ‘Materials and methods’ and Figure 1—figure supplement 1 for details). This end-detection method provides a more accurate determination of the filament length and thereby a more reliable estimate of the instantaneous elongation velocity compared to methodologies used previously (Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig1-v2.jpg)
 
-**Figure 1.:** (A) A schematic of total internal reflection illumination and single actin filament imaging of filaments tethered to a glass surface. Filaments grow from the addition of subunits at either the barbed- or the pointed-end. (B) Selected frames from a movie showing the growth of a single actin filament that is tethered to the surface via α-actinin. The barbed-end is marked by a red arrowhead and the pointed-end by a blue dot. The elapsed time interval is given in seconds. Scale bar: 5 μm. L0 and ΔL are the initial filament length and the change in length, respectively. (C) ΔL as a function of time for single filaments grown on surfaces with different tethering proteins. (D) Elongation velocity (E) as a function of actin concentration in solution for different tethering proteins (inset, zoom out of the VASP and VASP ΔGAB values). The elongation velocity was determined from the slope of the graphs of ΔL vs time in regions where no pauses were observable. Error bars represent s.e.m. (n > 20). Tether density here is ∼2000 molecules/μm2.DOI: http://dx.doi.org/10.7554/eLife.04599.003
+**Figure 1.:** (A) A schematic of total internal reflection illumination and single actin filament imaging of filaments tethered to a glass surface. Filaments grow from the addition of subunits at either the barbed- or the pointed-end. (B) Selected frames from a movie showing the growth of a single actin filament that is tethered to the surface via α-actinin. The barbed-end is marked by a red arrowhead and the pointed-end by a blue dot. The elapsed time interval is given in seconds. Scale bar: 5 μm. L0 and ΔL are the initial filament length and the change in length, respectively. (C) ΔL as a function of time for single filaments grown on surfaces with different tethering proteins. (D) Elongation velocity (E) as a function of actin concentration in solution for different tethering proteins (inset, zoom out of the VASP and VASP ΔGAB values). The elongation velocity was determined from the slope of the graphs of ΔL vs time in regions where no pauses were observable. Error bars represent s.e.m. (n > 20). Tether density here is ∼2000 molecules/μm2.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) An image from a TIRF measurement of the elongation of an actin filament tethered to the surface using filamin. From the movie, an automated filament tracing analysis, developed by Kuhn and Pollard (2005), provides: (B) an estimate of the length of the filament based upon a polynomial fitting algorithm (Kuhn and Pollard, 2005); and (C) a kymograph of filament growth is produced. (D) From the kymograph, we determined the position of the ends of the filament using an error function fit as implemented by Demchouk et al. (2011). The growth of the ends and the elongation rate, determined from the consecutive differences in the position, are shown for the pointed and barbed-ends. Points represent raw data of the change in length, ΔL, as a function of time while the black solid lines correspond to the data using a running mean with a window of 10 s. (E) For comparison, a simple procedure to obtain estimates of elongation velocity is shown. First, ΔL outliers resulting from the algorithm (e.g., shown in green in panel A) were removed. Second, instantaneous elongation velocity was calculated from the trace of ΔL as a function of time. As can be observed, the error function fit to the kymograph provides better estimates of the position of the ends and displays less noise. Additionally, subtle changes in length at the pointed-end are detected that were not observed when using the length estimate from the automated filament tracing.DOI: http://dx.doi.org/10.7554/eLife.04599.004
+**Figure 1—figure supplement 1.:** (A) An image from a TIRF measurement of the elongation of an actin filament tethered to the surface using filamin. From the movie, an automated filament tracing analysis, developed by Kuhn and Pollard (2005), provides: (B) an estimate of the length of the filament based upon a polynomial fitting algorithm (Kuhn and Pollard, 2005); and (C) a kymograph of filament growth is produced. (D) From the kymograph, we determined the position of the ends of the filament using an error function fit as implemented by Demchouk et al. (2011). The growth of the ends and the elongation rate, determined from the consecutive differences in the position, are shown for the pointed and barbed-ends. Points represent raw data of the change in length, ΔL, as a function of time while the black solid lines correspond to the data using a running mean with a window of 10 s. (E) For comparison, a simple procedure to obtain estimates of elongation velocity is shown. First, ΔL outliers resulting from the algorithm (e.g., shown in green in panel A) were removed. Second, instantaneous elongation velocity was calculated from the trace of ΔL as a function of time. As can be observed, the error function fit to the kymograph provides better estimates of the position of the ends and displays less noise. Additionally, subtle changes in length at the pointed-end are detected that were not observed when using the length estimate from the automated filament tracing.
 
-The single-filament elongation experiments showed that the barbed-end grew at a constant velocity with occasional pauses for all constructs measured while the barbed-end elongation velocity varied depending on the particular side-binding protein used (Figure 1C,D). The elongation velocity ‘E’ at the barbed-end was the fastest with VASP and the slowest with α-actinin (Figure 1C). By varying the free actin concentration from 0.3 to 2 μM, we estimated the barbed-end association and dissociation rates, kon and koff, respectively (Figure 1D), using only the periods of elongation (i.e., E > 1.5 sub·s−1, referred to hereafter as the ‘kinetically active’ phases). Compared to the previously reported value of 11.6 sub·μM−1·s−1 for actin only in the absence of tethering proteins (Pollard, 1986), we found a higher value of kon in the presence of VASP, a similar value for actin alone and for NEM-myosin, and lower values when α-actinin or filamin were used (Figure 1D and Table 1). Extrapolating the elongation velocity as a function of actin concentration to zero actin provides an estimate of the dissociation rate, koff, of ATP-actin at the barbed-end (Table 1). In the presence of filamin, koff is indistinguishable from zero, whereas in the presence of VASP, koff increased compared to the value in the presence of NEM-myosin (1.6 ± 0.5 s−1). The estimated koff we measured in the presence of NEM-myosin was in agreement with the previously reported value of 1.4 s−1 (Pollard, 1986), whereas in the presence of α-actinin, koff was lower than 1.4 s−1. The ratio of inferred dissociation rates to the calculated association rate (i.e., koff/kon) is the critical concentration at which polymerization will occur and has been estimated to be ∼150 nM for the barbed-end (Pollard, 1986). We find a similar value (∼0.2 μM) for filaments elongated in the presence of VASP, α-actinin and NEM-myosin, but close to zero for filamin. The use of VASP induced the largest change in the measured kinetics. In contrast to the other three proteins measured, the kinetics were enhanced. VASP is known to act as a polymerase at the barbed-end by delivering subunits to the growing end (Hansen and Mullins, 2010; Breitsprecher et al., 2011). It achieves this function through its two actin-binding domains: a G-actin-binding domain that delivers monomers (via G-actin binding or GAB domain) while remaining attached to the filament via the F-actin-binding or FAB domain (Breitsprecher et al., 2008, 2011; Hansen and Mullins, 2010). To rule out the polymerase activity of VASP as the cause of enhanced kinetics, we also tested a VASP construct that lacks the GAB domain but retains its capacity to interact with the filament lattice (Breitsprecher et al., 2008). We continued to observe fast polymerization using this VASP-ΔGAB protein as a tether (Figure 1) in agreement with previous reports (Breitsprecher et al., 2008). The measured kinetic rates were 70 ± 30 sub·μM−1·s−1 for kon and 14 ± 9 s−1 for koff, about half of those determined using the full-length VASP construct. Therefore, the effect of immobilized VASP on filament kinetics is not only due to recruitment of monomers to the growing filament. These results demonstrate that ATP-actin kinetics at the barbed-end are sensitive to the particular side-binding protein interacting with the filament.10.7554/eLife.04599.005Table 1.Rate constants of Mg-ATP-actin monomer association and dissociation at both ends of the actin filament in the absence and presence of side-binding proteinsDOI: http://dx.doi.org/10.7554/eLife.04599.005Endkon (sub·μM−1·s−1)koff (sub·s−1)†koff/kon (μM)Referenceactin aloneBarbed11.6 ± 1.21.4 ± 0.80.12 ± 0.07(Pollard, 1986)Pointed1.3 ± 0.20.8 ± 0.30.6 ± 0.17(Pollard, 1986)Barbed9.7 ± 2*1 ± 0.30.1 ± 0.04this workPointed2.1 ± 0.80.8 ± 0.40.4 ± 0.35this workSurface adsorbed NEM-myosinBarbed11 ± 11.6 ± 0.70.15 ± 0.03this workPointed0.8 ± 0.10.4 ± 0.10.5 ± 0.2this work Dd VASPBarbed120 ± 301 ± 30.01 ± 0.03this workPointed48 ± 100.5 ± 20.01 ± 0.05this work filaminBarbed8.5 ± 1.30.1 ± 0.40.012 ± 0.002this workPointed5.3 ± 0.12.6 ± 0.20.5 ± 0.04this work α-actininBarbed7.7 ± 1.50.7 ± 10.1 ± 0.2this workPointed0.9 ± 0.30.9 ± 0.31 ± 1this work Dd VASP ΔGABBarbed70 ± 1314 ± 90.2 ± 0.2this workPointed16 ± 125 ± 80.3 ± 0.2this workIn solution Dd VASPBarbed126 ± 3043 ± 330.3 ± 0.2this workPointed12 ± 83 ± 80.3 ± 2this work filaminBarbed8.6 ± 1.1−1.3 ± 20.0 ± 0.1this workPointed5.5 ± 1.52.8 ± 1.60.5 ± 0.4this work Dd VASP ΔGABBarbed24 ± 114 ± 150.2 ± 1this workPointed3 ± 2.50.5 ± 4.50.2 ± 7this work Hs VASPBarbed24 ± 4−3 ± 50 ± 0.1(Hansen and Mullins, 2010)PointedNot reportedNot reportedNot reported(Hansen and Mullins, 2010)*All reported errors from this work are 95% confidence intervals whereas those of (Pollard, 1986) represent SD.†All reported dissociation constants from this work are inferred from extrapolation of the elongation velocity as a function of actin concentration to zero concentration, data from Figures 1, 2 and 4.
+The single-filament elongation experiments showed that the barbed-end grew at a constant velocity with occasional pauses for all constructs measured while the barbed-end elongation velocity varied depending on the particular side-binding protein used (Figure 1C,D). The elongation velocity ‘E’ at the barbed-end was the fastest with VASP and the slowest with α-actinin (Figure 1C). By varying the free actin concentration from 0.3 to 2 μM, we estimated the barbed-end association and dissociation rates, kon and koff, respectively (Figure 1D), using only the periods of elongation (i.e., E > 1.5 sub·s−1, referred to hereafter as the ‘kinetically active’ phases). Compared to the previously reported value of 11.6 sub·μM−1·s−1 for actin only in the absence of tethering proteins (Pollard, 1986), we found a higher value of kon in the presence of VASP, a similar value for actin alone and for NEM-myosin, and lower values when α-actinin or filamin were used (Figure 1D and Table 1). Extrapolating the elongation velocity as a function of actin concentration to zero actin provides an estimate of the dissociation rate, koff, of ATP-actin at the barbed-end (Table 1). In the presence of filamin, koff is indistinguishable from zero, whereas in the presence of VASP, koff increased compared to the value in the presence of NEM-myosin (1.6 ± 0.5 s−1). The estimated koff we measured in the presence of NEM-myosin was in agreement with the previously reported value of 1.4 s−1 (Pollard, 1986), whereas in the presence of α-actinin, koff was lower than 1.4 s−1. The ratio of inferred dissociation rates to the calculated association rate (i.e., koff/kon) is the critical concentration at which polymerization will occur and has been estimated to be ∼150 nM for the barbed-end (Pollard, 1986). We find a similar value (∼0.2 μM) for filaments elongated in the presence of VASP, α-actinin and NEM-myosin, but close to zero for filamin. The use of VASP induced the largest change in the measured kinetics. In contrast to the other three proteins measured, the kinetics were enhanced. VASP is known to act as a polymerase at the barbed-end by delivering subunits to the growing end (Hansen and Mullins, 2010; Breitsprecher et al., 2011). It achieves this function through its two actin-binding domains: a G-actin-binding domain that delivers monomers (via G-actin binding or GAB domain) while remaining attached to the filament via the F-actin-binding or FAB domain (Breitsprecher et al., 2008, 2011; Hansen and Mullins, 2010). To rule out the polymerase activity of VASP as the cause of enhanced kinetics, we also tested a VASP construct that lacks the GAB domain but retains its capacity to interact with the filament lattice (Breitsprecher et al., 2008). We continued to observe fast polymerization using this VASP-ΔGAB protein as a tether (Figure 1) in agreement with previous reports (Breitsprecher et al., 2008). The measured kinetic rates were 70 ± 30 sub·μM−1·s−1 for kon and 14 ± 9 s−1 for koff, about half of those determined using the full-length VASP construct. Therefore, the effect of immobilized VASP on filament kinetics is not only due to recruitment of monomers to the growing filament. These results demonstrate that ATP-actin kinetics at the barbed-end are sensitive to the particular side-binding protein interacting with the filament.
 
-## Kinetic modulation at the pointed-end
+**Table 1.**
+ Rate constants of Mg-ATP-actin monomer association and dissociation at both ends of the actin filament in the absence and presence of side-binding proteins
 
-Pointed-end association and dissociation rates were estimated in the same manner as those for the barbed-end (
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>End</th>
+      <th>kon (sub·μM−1·s−1)</th>
+      <th>koff (sub·s−1)†</th>
+      <th>koff/kon (μM)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>actin alone</td>
+      <td>Barbed</td>
+      <td>11.6 ± 1.2</td>
+      <td>1.4 ± 0.8</td>
+      <td>0.12 ± 0.07</td>
+      <td>(Pollard, 1986)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>1.3 ± 0.2</td>
+      <td>0.8 ± 0.3</td>
+      <td>0.6 ± 0.17</td>
+      <td>(Pollard, 1986)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Barbed</td>
+      <td>9.7 ± 2*</td>
+      <td>1 ± 0.3</td>
+      <td>0.1 ± 0.04</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>2.1 ± 0.8</td>
+      <td>0.8 ± 0.4</td>
+      <td>0.4 ± 0.35</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>Surface adsorbed</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NEM-myosin</td>
+      <td>Barbed</td>
+      <td>11 ± 1</td>
+      <td>1.6 ± 0.7</td>
+      <td>0.15 ± 0.03</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>0.8 ± 0.1</td>
+      <td>0.4 ± 0.1</td>
+      <td>0.5 ± 0.2</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>Dd VASP</td>
+      <td>Barbed</td>
+      <td>120 ± 30</td>
+      <td>1 ± 3</td>
+      <td>0.01 ± 0.03</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>48 ± 10</td>
+      <td>0.5 ± 2</td>
+      <td>0.01 ± 0.05</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>filamin</td>
+      <td>Barbed</td>
+      <td>8.5 ± 1.3</td>
+      <td>0.1 ± 0.4</td>
+      <td>0.012 ± 0.002</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>5.3 ± 0.1</td>
+      <td>2.6 ± 0.2</td>
+      <td>0.5 ± 0.04</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>α-actinin</td>
+      <td>Barbed</td>
+      <td>7.7 ± 1.5</td>
+      <td>0.7 ± 1</td>
+      <td>0.1 ± 0.2</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>0.9 ± 0.3</td>
+      <td>0.9 ± 0.3</td>
+      <td>1 ± 1</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>Dd VASP ΔGAB</td>
+      <td>Barbed</td>
+      <td>70 ± 13</td>
+      <td>14 ± 9</td>
+      <td>0.2 ± 0.2</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>16 ± 12</td>
+      <td>5 ± 8</td>
+      <td>0.3 ± 0.2</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>In solution</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dd VASP</td>
+      <td>Barbed</td>
+      <td>126 ± 30</td>
+      <td>43 ± 33</td>
+      <td>0.3 ± 0.2</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>12 ± 8</td>
+      <td>3 ± 8</td>
+      <td>0.3 ± 2</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>filamin</td>
+      <td>Barbed</td>
+      <td>8.6 ± 1.1</td>
+      <td>−1.3 ± 2</td>
+      <td>0.0 ± 0.1</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>5.5 ± 1.5</td>
+      <td>2.8 ± 1.6</td>
+      <td>0.5 ± 0.4</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>Dd VASP ΔGAB</td>
+      <td>Barbed</td>
+      <td>24 ± 11</td>
+      <td>4 ± 15</td>
+      <td>0.2 ± 1</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>3 ± 2.5</td>
+      <td>0.5 ± 4.5</td>
+      <td>0.2 ± 7</td>
+      <td>this work</td>
+    </tr>
+    <tr>
+      <td>Hs VASP</td>
+      <td>Barbed</td>
+      <td>24 ± 4</td>
+      <td>−3 ± 5</td>
+      <td>0 ± 0.1</td>
+      <td>(Hansen and Mullins, 2010)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pointed</td>
+      <td>Not reported</td>
+      <td>Not reported</td>
+      <td>Not reported</td>
+      <td>(Hansen and Mullins, 2010)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All reported errors from this work are 95% confidence intervals whereas those of (Pollard, 1986) represent SD.†All reported dissociation constants from this work are inferred from extrapolation of the elongation velocity as a function of actin concentration to zero concentration, data from Figures 1, 2 and 4._
+
+### Kinetic modulation at the pointed-end
+
+Pointed-end association and dissociation rates were estimated in the same manner as those for the barbed-end (Figure 2A). Both the estimated association rates and dissociation rates varied according to the associated side-binding protein used as a tether (Figure 2A and Table 1). The presence of filamin increased the konP by a factor of ∼5 (from 0.8 in the presence of NEM-myosin to 2.8 sub·μM−1·s−1). The konP for α-actinin was 0.9 sub·μM−1·s−1, while, when using VASP or VASP ΔGAB, the rate was 44 sub·μM−1·s−1 and 16 sub·μM−1·s−1, respectively. On the other hand, the presence of filamin also increased the inferred koffP by almost an order of magnitude from 0.4 (in the presence of NEM-myosin) to 2.6 s−1. The inferred koffP rates were 0.7 s−1, 8 s−1, and 5 s−1 with α-actinin, VASP, and VASP ΔGAB, respectively (Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig2-v2.jpg)
 
-**Figure 2.:** (A) The elongation velocity (E) is plotted as a function of free actin concentration. Error bars are s.e.m. (n > 20). (B–C) A gallery of traces of ΔL as a function of time for pointed-ends observed at (B) 1 μM or (C) 0.3 μM free actin monomer concentration for the different tethering proteins studied. The raw data are shown in color, and the black solid lines are a running average of 10 data points.DOI: http://dx.doi.org/10.7554/eLife.04599.006
+**Figure 2.:** (A) The elongation velocity (E) is plotted as a function of free actin concentration. Error bars are s.e.m. (n > 20). (B–C) A gallery of traces of ΔL as a function of time for pointed-ends observed at (B) 1 μM or (C) 0.3 μM free actin monomer concentration for the different tethering proteins studied. The raw data are shown in color, and the black solid lines are a running average of 10 data points.
 
 Unlike the barbed-end where there were occasional pauses (Figure 1C), the pointed-end displayed mostly a kinetically inactive phase or paused state and only grew sporadically (Figure 2B,C). Such kinetically inactive phases were observed for all free actin concentrations tested (250 nM–2 μM). Above the pointed-end critical concentration (e.g., using a free actin concentration of 1 μM), we observed a discontinuous (i.e., growth-pause) behavior for all side-binding proteins (Figure 2B). In the presence of VASP or filamin, pointed-end elongation was readily observed. Pointed-end elongation was much more difficult to visualize when using NEM-myosin and α-actinin (Figure 2B) where elongation occurred for brief periods of time and with slower rates. The elongation velocity during kinetically active phases was influenced strongly by the different tethering proteins used (Figure 2A). Elongation velocity followed the order of VASP > VASP ΔGAB > filamin > α-actinin > NEM-myosin (Figure 2A,B). On the other hand, at 300 nM free actin monomer concentration, i.e., below the pointed-end critical concentration of ∼600 nM (Pollard, 1986), we observed barbed-end growth (Figure 1D) and pointed-end depolymerization (Figure 2C), i.e., treadmilling, in the presence of filamin as a tethering protein (Figure 2C). Treadmilling was also present using NEM-myosin and α-actinin, albeit with slower rates, since pointed-end depolymerization establishes the overall treadmilling rate. In contrast to our expectations, there was no shrinkage at the pointed-end below the critical concentration but polymerization in the presence of VASP or VASP ΔGAB (Figure 2). These results suggest that side-binding proteins can also determine actin filament pointed-end growth and depolymerization dynamics. Additionally, these results show that observed effects at one end do not necessarily represent effects at both ends. For example, filamin reduces only the dissociation rate (and therefore the critical concentration) at the barbed-end although it alters both the association and dissociation rate at the pointed-end.
 
-## The elongation rate varies with occupancy of the side-binding proteins
+### The elongation rate varies with occupancy of the side-binding proteins
 
-Next, we studied how sensitive filament dynamics are to the presence of each of the proteins tested. Therefore, we measured the elongation rates and pausing as a function of the side-binding protein surface density (
+Next, we studied how sensitive filament dynamics are to the presence of each of the proteins tested. Therefore, we measured the elongation rates and pausing as a function of the side-binding protein surface density (Figure 3). For this, we varied the total protein concentration that was allowed to adsorb to the glass surface, therefore changing the number of tethering proteins that interact with a single filament. We estimated the lattice-binding protein surface density from the protein concentration, the sample volume (∼10 μL) and the surface to which the sample was adsorbed (a flow cell of 5 mm × 20 mm, giving 100 mm2) as done previously (Howard et al., 1989; Crevenna et al., 2008). All protein in solution was assumed to adsorb on the upper and lower glass surfaces. To achieve consecutive lower tether densities, the total protein concentration was serially diluted. At low tethering protein concentrations, individual filaments swiveled around distinctive attachment points indicating that they are bound to single tethering molecules as observed previously (Howard et al., 1989; Crevenna et al., 2008). To estimate the density in an alternative manner, we measured the average number of pivot points per micron of filament at the two lowest protein concentrations and divided that by the average area covered during swiveling. Assuming a linear scaling with protein concentration, this estimate results in a lower density (by a factor of 2) compared to those reported in Figure 3 and throughout the text. Estimated densities ranged from ∼5 up to ∼18,000 molecules·μm−2, which are equivalent to values between 0.1 and 110 tethers per micron of filament (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig3-v2.jpg)
 
-**Figure 3.:** (A–B) The change in length, ΔL, of actin filaments as a function of time when using filamin as the surface tethering protein at the (A) lowest (5.9 molecules/μm2 or 0.03 molecules per micron of filament) or (B) the highest (5900 molecules/μm2 or 35 molecules per micron of filament) density. (C–D) Distribution of elongation velocities for filaments using a filamin-coated surface at the (C) lowest or (D) highest density. Solid lines are fits to Gaussian distributions. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into 0.75 subunits/s bin size. (E) Elongation velocity as a function of tether surface density estimated from the kinetically active phases. The surface density is plotted as number of tethering proteins per unit surface area on the lower axis and the equivalent number of tethering proteins per μm of filament on the upper axis. Solid lines are fits to a model where protein binding induces an allosteric effect that persists along the filament over a certain length scale (see ‘Materials and methods’ for details). (F) Pausing probability as a function of surface tether density. Error bars represent s.e.m. (n > 20).DOI: http://dx.doi.org/10.7554/eLife.04599.007
+**Figure 3.:** (A–B) The change in length, ΔL, of actin filaments as a function of time when using filamin as the surface tethering protein at the (A) lowest (5.9 molecules/μm2 or 0.03 molecules per micron of filament) or (B) the highest (5900 molecules/μm2 or 35 molecules per micron of filament) density. (C–D) Distribution of elongation velocities for filaments using a filamin-coated surface at the (C) lowest or (D) highest density. Solid lines are fits to Gaussian distributions. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into 0.75 subunits/s bin size. (E) Elongation velocity as a function of tether surface density estimated from the kinetically active phases. The surface density is plotted as number of tethering proteins per unit surface area on the lower axis and the equivalent number of tethering proteins per μm of filament on the upper axis. Solid lines are fits to a model where protein binding induces an allosteric effect that persists along the filament over a certain length scale (see ‘Materials and methods’ for details). (F) Pausing probability as a function of surface tether density. Error bars represent s.e.m. (n > 20).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A–B) The change in length, ΔL, as a function of time for a filament tether to the surface using α-actinin at (A) low (16.7 molecules/μm2 or 0.1 molecules per micron of filament) or (B) high (16,700 molecules/μm2 or 100 molecules per micron of filament) surface densities. (C–D) The distribution of elongation velocities measured at (C) low or (D) high density. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into bins of 0.75 subunits/s. Solid lines are fits to Gaussian distributions. (E–F) The change in length, ΔL, as a function of time for a filament tether to the surface using NEM-myosin at (E) low (6.8 molecules/μm2 or 0.04 molecules per micron of filament) or (F) high (6800 molecules/μm2 or 40 molecules per micron of filament) surface densities. (G–H) Elongation velocity distribution of filaments using a NEM-myosin-coated surface at low (G) or high (H) density. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into bins of 0.75 subunits/s. Solid lines are fits to Gaussian distributions. (I–J) The change in length, ΔL, as a function of time for a filament tether to the surface using VASP at (I) low (18.2 molecules/μm2 or 0.1 molecules per micron of filament) or (J) high (18,200 molecules/μm2 or 100 molecules per micron of filament) surface density. (K–L) Elongation velocity distribution of filaments using a VASP-coated surface at low (K) or high (L) density. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into bins of 0.75 subunits/s and 10 subunits/s for the low- and high-density experiments, respectively. Solid lines are fits to Gaussian distributions. (M–N) The change in length, ΔL, as a function of time for a filament tether to the surface using VASP ΔGAB at (M) low (18.5 molecules/μm2 or 0.1 molecules per micron of filament) or (N) high (18,500 molecules/μm2 or 100 molecules per micron of filament) surface density. (O–P) Elongation velocity distribution of filaments using a VASP ΔGAB-coated surface at low (O) or high (P) density. The distribution is calculated by binning (0.75 sub/s and 10 sub/s bin size for low and high density, respectively) the instantaneous elongation velocity of more than 20 filaments. Solid lines are fits to Gaussian distributions.DOI: http://dx.doi.org/10.7554/eLife.04599.008
+**Figure 3—figure supplement 1.:** (A–B) The change in length, ΔL, as a function of time for a filament tether to the surface using α-actinin at (A) low (16.7 molecules/μm2 or 0.1 molecules per micron of filament) or (B) high (16,700 molecules/μm2 or 100 molecules per micron of filament) surface densities. (C–D) The distribution of elongation velocities measured at (C) low or (D) high density. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into bins of 0.75 subunits/s. Solid lines are fits to Gaussian distributions. (E–F) The change in length, ΔL, as a function of time for a filament tether to the surface using NEM-myosin at (E) low (6.8 molecules/μm2 or 0.04 molecules per micron of filament) or (F) high (6800 molecules/μm2 or 40 molecules per micron of filament) surface densities. (G–H) Elongation velocity distribution of filaments using a NEM-myosin-coated surface at low (G) or high (H) density. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into bins of 0.75 subunits/s. Solid lines are fits to Gaussian distributions. (I–J) The change in length, ΔL, as a function of time for a filament tether to the surface using VASP at (I) low (18.2 molecules/μm2 or 0.1 molecules per micron of filament) or (J) high (18,200 molecules/μm2 or 100 molecules per micron of filament) surface density. (K–L) Elongation velocity distribution of filaments using a VASP-coated surface at low (K) or high (L) density. The distribution is calculated by binning the instantaneous elongation velocity of more than 20 filaments into bins of 0.75 subunits/s and 10 subunits/s for the low- and high-density experiments, respectively. Solid lines are fits to Gaussian distributions. (M–N) The change in length, ΔL, as a function of time for a filament tether to the surface using VASP ΔGAB at (M) low (18.5 molecules/μm2 or 0.1 molecules per micron of filament) or (N) high (18,500 molecules/μm2 or 100 molecules per micron of filament) surface density. (O–P) Elongation velocity distribution of filaments using a VASP ΔGAB-coated surface at low (O) or high (P) density. The distribution is calculated by binning (0.75 sub/s and 10 sub/s bin size for low and high density, respectively) the instantaneous elongation velocity of more than 20 filaments. Solid lines are fits to Gaussian distributions.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Barbed-end (A) and pointed-end (B) pause-free elongation velocities (E) as a function of free actin concentration in solution in the presence, also in solution, of different tethering proteins. Solid lines are linear fits to the data. Solid lines are linear fits to the data. Error bars in (A–B) represent s.e.m. (n > 20). The side-binding protein concentrations in solution used here corresponded to 64 nM, 17 nM, 67 nM, and 100 nM for VASP, filamin, VASP ΔGAB and Hs VASP respectively. Data for Hs VASP were taken from Hansen and Mullins (2010).DOI: http://dx.doi.org/10.7554/eLife.04599.009
+**Figure 3—figure supplement 2.:** Barbed-end (A) and pointed-end (B) pause-free elongation velocities (E) as a function of free actin concentration in solution in the presence, also in solution, of different tethering proteins. Solid lines are linear fits to the data. Solid lines are linear fits to the data. Error bars in (A–B) represent s.e.m. (n > 20). The side-binding protein concentrations in solution used here corresponded to 64 nM, 17 nM, 67 nM, and 100 nM for VASP, filamin, VASP ΔGAB and Hs VASP respectively. Data for Hs VASP were taken from Hansen and Mullins (2010).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** (A) Elongation velocity of 1 μM actin (30% atto488 labeled) as a function of side-binding protein concentration in solution from kinetically active phases. A surface density of <100 molecules/μm2 of NEM-myosin was used to attach the filaments to the surface and thereby aid in imaging and analysis. (B) Pausing probability as a function of side-binding protein concentration. Error bars represent s.e.m. (n > 20).DOI: http://dx.doi.org/10.7554/eLife.04599.010
+**Figure 3—figure supplement 3.:** (A) Elongation velocity of 1 μM actin (30% atto488 labeled) as a function of side-binding protein concentration in solution from kinetically active phases. A surface density of <100 molecules/μm2 of NEM-myosin was used to attach the filaments to the surface and thereby aid in imaging and analysis. (B) Pausing probability as a function of side-binding protein concentration. Error bars represent s.e.m. (n > 20).
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** Interaction of a lattice-binding protein (red square) with the actin filament (blue) alters the basal elongation rate (kon0) of successive association events by a factor α over a characteristic length LC.DOI: http://dx.doi.org/10.7554/eLife.04599.011
+**Figure 3—figure supplement 4.:** Interaction of a lattice-binding protein (red square) with the actin filament (blue) alters the basal elongation rate (kon0) of successive association events by a factor α over a characteristic length LC.
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig3-figsupp5-v2.jpg)
 
-**Figure 3—figure supplement 5.:** Open green triangles are experimental data of barbed-end elongation as a function of VASP surface density in the presence of 1 μM-free actin in solution. The solid line is the expected average E calculated with Equation 3 assuming a local increase in actin concentration due to the capacity of VASP to simultaneously bind four actin monomers.DOI: http://dx.doi.org/10.7554/eLife.04599.012
+**Figure 3—figure supplement 5.:** Open green triangles are experimental data of barbed-end elongation as a function of VASP surface density in the presence of 1 μM-free actin in solution. The solid line is the expected average E calculated with Equation 3 assuming a local increase in actin concentration due to the capacity of VASP to simultaneously bind four actin monomers.
 
 At low tether densities (5–200 μm−2 or 0.025 to 1.0 molecules per micron of filament), the dynamics were independent of the tethering protein used. As an example, filamin is shown in Figure 3A–D. Elongating actin filaments (at a free actin monomer concentration of 1 μM) showed mostly kinetically active phases (Figure 3A), and the elongation velocity distributions were centered around ∼9 subunits·s−1 (Figure 3 and Figure 3—figure supplement 1). At high tether densities (600–18,000 μm−2 or 3–110 molecules per micron of filament), each side-binding protein tested generated a particular elongation behavior (Figure 3E and Figure 3—figure supplement 1). Using filamin, increasing the surface tether density decreased the mean elongation velocity of kinetically active phases (Figure 3B,D) and increased the fraction of time the filament spent in a paused state, i.e., the pausing probability ‘Pp’ (Figure 3B,D,F). In contrast, increasing the VASP or the VASP-ΔGAB density increased the elongation velocity while VASP also increased the Pp (Figure 3 and Figure 3—figure supplement 1). Higher surface concentrations of α-actinin or NEM-myosin had also an effect on the elongation velocity (Figure 3—figure supplement 1) and, in addition, the density of NEM-myosin had a strong effect on the Pp (Figure 3F and Figure 3—figure supplement 1).
 
 One possible explanation for these results could be geometric and/or mechanical constrains imposed on the filament by the high density of the surface-immobilized side-binding protein used. To investigate this possibility, we carried out experiments where a very low density of NEM-myosin was used to tether filaments to the surface while a second, side-binding protein was present in solution. We tested the effects of VASP, VASP-ΔGAB, and filamin on filament growth. The influence of all three side-binding proteins on the elongation rate of both the barbed- and pointed-end were similar to what we observed when using them to immobilize the actin filaments to the surface (Figure 3—figure supplement 2 and Table 1). We also performed these experiments with human VASP and the elongation rates measured for both Dd VASP and Hs VASP agree with previously reported results (Breitsprecher et al., 2008; Hansen and Mullins, 2010) (Figure 3—figure supplement 3). These results suggest that a variety of elongation kinetics can arise from the specific interaction of actin filaments with the particular associated side-binding protein.
 
-## Intrinsic filament dynamics
+### Intrinsic filament dynamics
 
-To further verify that the observed kinetic changes and pauses originate from the particular side-binding protein used as a tether, we investigated the intrinsic properties of filament elongation and controlled for artifacts. Single elongating filaments were measured at the lowest protein surface density possible that still allowed filament visualization. At the lowest α-actinin tether density used (5 molecules μm
+To further verify that the observed kinetic changes and pauses originate from the particular side-binding protein used as a tether, we investigated the intrinsic properties of filament elongation and controlled for artifacts. Single elongating filaments were measured at the lowest protein surface density possible that still allowed filament visualization. At the lowest α-actinin tether density used (5 molecules μm−2, which corresponds to 1 tether molecule every 5–10 microns along the filament), the ends swiveled around their tethering site due to Brownian motion and were clearly free of the surface (Figure 4A). Under these conditions, barbed-ends showed continuous elongation (Figure 4B) while pointed-ends were typically in the kinetically inactive state (only 2 of 50 filaments showed growth or depolymerization, Figure 4C–D). For the other tethering proteins, only the paused state was observed on freely swiveling pointed-ends (Figure 4—figure supplement 1). Using only the pause-free elongation velocities for each actin concentration tested, we estimated association and dissociation rates (slopes in Figure 4E, Table 1). Our estimated values for the pause-free elongation kinetics agree well with those previously obtained by EM (Table 1), which were measured on the 20–60 s time scale. When we convolute our pointed-end pause-free elongation rate with the pausing probability, our results are comparable to the kinetics estimated by TIRF experiments (Kuhn and Pollard, 2005). One possible explanation for this discrepancy is that continuous pointed-end growth occurs at the beginning of filament assembly, which is suggested from our data (Figure 4C) and is the time scale on which the EM data was acquired (Pollard, 1986). Moreover, the pausing probability, Pp, at either end was insensitive to the actin concentration used (Figure 4F).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig4-v2.jpg)
 
-**Figure 4.:** (A) A maximum projection image from a movie of an actin filament tethered to a glass surface via a single α-actinin molecule where the tethering position about which the filament swivels is visible as a constriction point. Scale bar: 3 μm. (B) Change in length of the barbed-end vs time for individual actin filaments attached to the surface using the lowest tethering protein surface densities at 300 nM and 2 μM concentrations of free actin monomers. (C–D) Change in length vs time of the pointed-ends of single, elongating actin filaments using the lowest tethering protein surface densities and either 2 μM (C) or 300 nM (D) of actin monomers free in solution. The red lines represent the expected elongation behavior based on previously reported rates using NEM-myosin as a tether (Kuhn and Pollard, 2005; Fujiwara et al., 2007). (E) The pause-free elongation velocity (E) plotted as a function of free actin concentration. The lines represent linear fits. Estimated rates are reported in Table 1. Error bars are s.e.m. (n > 20). (F) Pausing probability as a function of free actin concentration. Error bars represent s.e.m. (n > 20).DOI: http://dx.doi.org/10.7554/eLife.04599.013
+**Figure 4.:** (A) A maximum projection image from a movie of an actin filament tethered to a glass surface via a single α-actinin molecule where the tethering position about which the filament swivels is visible as a constriction point. Scale bar: 3 μm. (B) Change in length of the barbed-end vs time for individual actin filaments attached to the surface using the lowest tethering protein surface densities at 300 nM and 2 μM concentrations of free actin monomers. (C–D) Change in length vs time of the pointed-ends of single, elongating actin filaments using the lowest tethering protein surface densities and either 2 μM (C) or 300 nM (D) of actin monomers free in solution. The red lines represent the expected elongation behavior based on previously reported rates using NEM-myosin as a tether (Kuhn and Pollard, 2005; Fujiwara et al., 2007). (E) The pause-free elongation velocity (E) plotted as a function of free actin concentration. The lines represent linear fits. Estimated rates are reported in Table 1. Error bars are s.e.m. (n > 20). (F) Pausing probability as a function of free actin concentration. Error bars represent s.e.m. (n > 20).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A–B) The change in length of the pointed-end of actin filaments as a function of time at 1 μM-free actin concentration are shown when using (A) α-actinin, NEM-myosin, filamin, and (B) VASP as tethering proteins. Points represent raw data while black solid lines correspond to a running mean with a window of 20 s. The solid red line is the elongation rate expected based on reported values. A maximum projection image from the respective movie is shown as inset. (B) (upper left panel) Kymograph of a growing filament showing lateral fluctuations due to weak binding of the filament to the tether. For accurate length determination with filament sliding, both the pointed-end (lower left panel) and a fiduciary marker (upper right panel) were tracked. The corrected data (lower right panel) shows mostly a paused state. Scale bar: 5 μm.DOI: http://dx.doi.org/10.7554/eLife.04599.014
+**Figure 4—figure supplement 1.:** (A–B) The change in length of the pointed-end of actin filaments as a function of time at 1 μM-free actin concentration are shown when using (A) α-actinin, NEM-myosin, filamin, and (B) VASP as tethering proteins. Points represent raw data while black solid lines correspond to a running mean with a window of 20 s. The solid red line is the elongation rate expected based on reported values. A maximum projection image from the respective movie is shown as inset. (B) (upper left panel) Kymograph of a growing filament showing lateral fluctuations due to weak binding of the filament to the tether. For accurate length determination with filament sliding, both the pointed-end (lower left panel) and a fiduciary marker (upper right panel) were tracked. The corrected data (lower right panel) shows mostly a paused state. Scale bar: 5 μm.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** The distribution of the observed time to the first pause for depolymerizing pointed-ends at the lowest tether density (blue bar), at medium to high tether density (pooled data, red bars), or predicted using a model for light-induced dimerization (gray bars, see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.04599.015
+**Figure 4—figure supplement 2.:** The distribution of the observed time to the first pause for depolymerizing pointed-ends at the lowest tether density (blue bar), at medium to high tether density (pooled data, red bars), or predicted using a model for light-induced dimerization (gray bars, see ‘Materials and methods’).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** A schematic of the assay is shown. Actin filament fragments labeled in red with atto565 were used as seeds for filament growth in a solution of atto488-labeled (green) actin monomers. After 15 min, the reaction was stopped by addition of phalloidin and dilution to a final concentration below 200 nM of free monomers. Filaments formed during this time are therefore diluted and individual filaments can easily be visualized. The filaments exhibiting growth at the barbed-end or at both ends were counted. The last figure shows the results of the analysis: the observed (gray) frequency of filaments that exhibited pointed-end growth, 20% was significantly smaller than the predicted value (red) of 100% (n = 1000).DOI: http://dx.doi.org/10.7554/eLife.04599.016
+**Figure 4—figure supplement 3.:** A schematic of the assay is shown. Actin filament fragments labeled in red with atto565 were used as seeds for filament growth in a solution of atto488-labeled (green) actin monomers. After 15 min, the reaction was stopped by addition of phalloidin and dilution to a final concentration below 200 nM of free monomers. Filaments formed during this time are therefore diluted and individual filaments can easily be visualized. The filaments exhibiting growth at the barbed-end or at both ends were counted. The last figure shows the results of the analysis: the observed (gray) frequency of filaments that exhibited pointed-end growth, 20% was significantly smaller than the predicted value (red) of 100% (n = 1000).
 
 The low density used for these experiments and the observed pauses on freely swiveling actin filaments (pointed-end only) rules out surface effects (Kuhn and Pollard, 2005) as the determining cause for the pauses at the ends. Another possible source of pauses is light-induced photo-dimerization. From the work of Niedermayer et al. (2012), it is possible to quantitatively predict the accumulated fraction of filaments where depolymerization has been paused as a consequence of exposure to light (Figure 4—figure supplement 2). In contrast with this prediction, we observed all swiveling filament pointed-ends, under depolymerizing conditions, to be in a kinetically inactive state at the beginning of image acquisition (N = 40, Figure 4—figure supplement 2). Only in the presence of a medium to high density of tethering proteins did we observe depolyermization of pointed-ends (12 of 55, Figure 4—figure supplement 2).
 
 As an additional test to rule out any tether, surface or light-induced effect of the pausing, we used a two-color solution assay to investigate pointed-end growth. Here, a small seed (formed with atto565-labeled actin) was allowed to grow in solution for 15 min in the presence of atto488-labeled monomers, followed by stabilization, dilution, and visualization of the filaments (Figure 4—figure supplement 3). At a free actin concentration of 1 μM, the concentration used in solution to allow filament elongation, all pointed-ends are expected to grow at an average rate of ∼0.5 sub/s (Pollard, 1986). In contrast to this expectation, we observed that only 20% of the seeds grew at the pointed-end (N = 1000, Figure 4—figure supplement 3). This percentage is higher than we observe in the surface-based experiments, which could be due to annealing of filaments in solution (Sept et al., 1999; Andrianantoandro et al., 2001) or due to lack of the tethering protein. What is clear is that the non-elongating or paused state is not due to either surface or light-induced effects. Taken together, these results show that a single rate constant describes filament elongation kinetics from ATP-monomers in the absence of side-binding proteins and that the pointed-end has an intrinsic kinetically inactive state.
 
-## Structural effects of side-binding proteins on filaments
+### Structural effects of side-binding proteins on filaments
 
-During the course of filament elongation analysis as a function of side-binding protein density on the surface (
+During the course of filament elongation analysis as a function of side-binding protein density on the surface (Figure 3), we noticed that filaments appeared more bent as the tether density increased. To quantify this curviness, we estimated an apparent persistence length ‘Lp∗’ of individual filaments associated with different side-binding proteins (see ‘Materials and methods’ for details). The persistence length Lp (Boal, 2012) reflects the material properties of the filament, which are related to its structure (Chu and Voth, 2005, 2006; Pfaendtner et al., 2010), and has already been shown to be tunable by side-binding proteins (such as myosin or cofilin [McCullough et al., 2008; Murrell and Gardel, 2012; Bengtsson et al., 2013]). At the lowest side-binding protein density (∼10 molecules μm−2 or ∼0.1 molecules per filament micron), actin filaments had an Lp∗ of ∼18 μm and was independent of the associated protein (Figure 5A). At the highest densities (∼16,000 molecules·μm−2 or ∼100 molecules per filament micron), the presence of NEM-myosin decreased the Lp∗ to 4 ± 1 μm while it was reduced to 3 ± 1 μm, 5 ± 1 μm, and 2.2 ± 0.3 μm when using filamin, VASP and α-actinin, respectively (N > 50 for each condition, Figure 5A). Estimates for the persistence length of surface adsorbed filaments are consistent with what has been determined for freely fluctuating filaments (McCullough et al., 2008; Graham et al., 2014). We also tested the mechanical effect of the side binding proteins on the actin filament when the actin filaments were attached to the surface with a low density of NEM-myosin and the side-binding protein was present in solution. Again, we observed a decrease in the persistence length of about 30% for filamin, α-actinin, and NEM-myosin, whereas the effect was about 50% in the presence of VASP or VASP ΔGAB (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04599/elife-04599-fig5-v2.jpg)
 
-**Figure 5.:** (A) (left panels) Images of individual filaments attached to the surface using different side-binding proteins at the lowest or highest surface density of tethering protein. Scale bar: 5 μm. (right panels) Estimated apparent persistence length from the angular correlation along the filament contour length at the lowest (red) and the highest (blue) lattice-binding protein densities, and when the protein is present in solution (green). Error bars represent s.e.m. of more than 50 filaments measured per experimental condition. (B) Images from a movie of an individual growing actin filament under treadmilling conditions. The barbed-end is marked with a red arrowhead and pointed-end with a blue dot. The filament undergoes a fragmentation event (yellow star) at 488 s and afterwards depolymerizes from its new pointed-end while the newly created barbed-end does not elongate. The free-actin concentration was 400 nM. Time is given in seconds. Scale bar: 5 μm. (C) Characterization of the direction of barbed-end filament growth as a function of the tethering protein used (see ‘Materials and methods’ for details). Examples of each class are shown in the left panels. Scale bars: 3 μm. α-actinin was observed to grow almost exclusively in the counterclockwise direction. No preferred direction of growth is observed for the other side-binding proteins measured.DOI: http://dx.doi.org/10.7554/eLife.04599.017
+**Figure 5.:** (A) (left panels) Images of individual filaments attached to the surface using different side-binding proteins at the lowest or highest surface density of tethering protein. Scale bar: 5 μm. (right panels) Estimated apparent persistence length from the angular correlation along the filament contour length at the lowest (red) and the highest (blue) lattice-binding protein densities, and when the protein is present in solution (green). Error bars represent s.e.m. of more than 50 filaments measured per experimental condition. (B) Images from a movie of an individual growing actin filament under treadmilling conditions. The barbed-end is marked with a red arrowhead and pointed-end with a blue dot. The filament undergoes a fragmentation event (yellow star) at 488 s and afterwards depolymerizes from its new pointed-end while the newly created barbed-end does not elongate. The free-actin concentration was 400 nM. Time is given in seconds. Scale bar: 5 μm. (C) Characterization of the direction of barbed-end filament growth as a function of the tethering protein used (see ‘Materials and methods’ for details). Examples of each class are shown in the left panels. Scale bars: 3 μm. α-actinin was observed to grow almost exclusively in the counterclockwise direction. No preferred direction of growth is observed for the other side-binding proteins measured.
 
 Two other interesting phenomena were observed in the presence of side-binding proteins at high densities. First, the presence of filamin increased the spontaneous fragmentation of filaments (20 out of 197 filaments vs less than 1 fragmentation even per 200 filaments) (Figure 5B). Second, barbed-end elongation when tethered with α-actinin had a preference to grow in a counterclockwise direction (Figure 5C). This counterclockwise elongation observed when α-actinin was present was independent of the length the filament had when it landed on the surface. These observations suggest an influence of the tethering protein on the structural properties of the filament.
 
-Changes in the structure of the filament by binding proteins are known to be able to propagate over several subunits (Orlova et al., 1995). We hypothesize that structural alteration might be the origin of kinetic modulation. To test how well this interpretation could explain our results, we constructed a simple model based on long-range structural alterations to describe elongation as a function of tether density (Figure 3E). In our model, the interaction between a growing filament and a tethering protein gives rise to a modified association rate (i.e., α⋅kon0) at the site of interaction, which then propagates over a certain distance LC (Figure 3—figure supplement 4). From the interaction site, there is a linear decay of the modified association rate, as a linear decay would be expected for the release of torsional stress. Using a Monte Carlo method (see ‘Materials and methods’ for details), we calculated α and LC (which are the only free parameters) by comparing the simulated elongation rates to the experimental values and minimizing the χ2 (Table 2). This simple model satisfactorily described our experimental results (Figure 3E, solid lines) and provides an estimate for the propagation length. We also considered the possibility that VASP acts via a ‘local increase in monomer concentration’ similar to Breitsprecher et al. (2011) (see ‘Materials and methods’ for details). This local concentration model did not account for the tether density dependence of elongation velocity (Figure 3—figure supplement 5), nor it can account for the effect observed with VASP ΔGAB that does not have the capacity to bind actin monomers.10.7554/eLife.04599.018Table 2.Results of a Monte Carlo simulation describing the affect of lattice protein binding to the association rate of actin monomer binding to filamentsDOI: http://dx.doi.org/10.7554/eLife.04599.018αLC (monomers)VASP9* (7–10)†160* (145–175)†VASP ΔGAB5.1 (5.0–5.1)76 (74–76)α-actinin0.4 (0.4–0.7)1 (1–11)Filamin0.4 (0.2–0.8)11 (1–101)NEM-myosin0.7 (0.3–0.9)11 (1–201)The binding of an actin-binding protein onto the lattice of a filament leads to changes (with magnitude α) in association kinetics that are propagated over a certain characteristic length LC, as a number of monomers.*The value obtained by minimizing the χ2.†The values in parenthesis represent the 68% confidence interval.
+Changes in the structure of the filament by binding proteins are known to be able to propagate over several subunits (Orlova et al., 1995). We hypothesize that structural alteration might be the origin of kinetic modulation. To test how well this interpretation could explain our results, we constructed a simple model based on long-range structural alterations to describe elongation as a function of tether density (Figure 3E). In our model, the interaction between a growing filament and a tethering protein gives rise to a modified association rate (i.e., α⋅kon0) at the site of interaction, which then propagates over a certain distance LC (Figure 3—figure supplement 4). From the interaction site, there is a linear decay of the modified association rate, as a linear decay would be expected for the release of torsional stress. Using a Monte Carlo method (see ‘Materials and methods’ for details), we calculated α and LC (which are the only free parameters) by comparing the simulated elongation rates to the experimental values and minimizing the χ2 (Table 2). This simple model satisfactorily described our experimental results (Figure 3E, solid lines) and provides an estimate for the propagation length. We also considered the possibility that VASP acts via a ‘local increase in monomer concentration’ similar to Breitsprecher et al. (2011) (see ‘Materials and methods’ for details). This local concentration model did not account for the tether density dependence of elongation velocity (Figure 3—figure supplement 5), nor it can account for the effect observed with VASP ΔGAB that does not have the capacity to bind actin monomers.
+
+**Table 2.**
+ Results of a Monte Carlo simulation describing the affect of lattice protein binding to the association rate of actin monomer binding to filaments
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>α</th>
+      <th>LC (monomers)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VASP</td>
+      <td>9* (7–10)†</td>
+      <td>160* (145–175)†</td>
+    </tr>
+    <tr>
+      <td>VASP ΔGAB</td>
+      <td>5.1 (5.0–5.1)</td>
+      <td>76 (74–76)</td>
+    </tr>
+    <tr>
+      <td>α-actinin</td>
+      <td>0.4 (0.4–0.7)</td>
+      <td>1 (1–11)</td>
+    </tr>
+    <tr>
+      <td>Filamin</td>
+      <td>0.4 (0.2–0.8)</td>
+      <td>11 (1–101)</td>
+    </tr>
+    <tr>
+      <td>NEM-myosin</td>
+      <td>0.7 (0.3–0.9)</td>
+      <td>11 (1–201)</td>
+    </tr>
+  </tbody>
+</table>
+
+_The binding of an actin-binding protein onto the lattice of a filament leads to changes (with magnitude α) in association kinetics that are propagated over a certain characteristic length LC, as a number of monomers.*The value obtained by minimizing the χ2.†The values in parenthesis represent the 68% confidence interval._
 
 Our estimate of the propagation length should be considered as a lower limit since additional factors that could potentially influence our assay such as tether unbinding (i.e., which would lower the effective number of interacting side-binding proteins) and/or alternative tether density calculations (see above) would result in longer propagation lengths. The induced effects are local-to-short-ranged (∼2-11 monomers) for α-actinin, filamin, and NEM-myosin while they are long-ranged when using VASP and VASP-ΔGAB (160 and 76 monomers, respectively) (Table 2). Collectively, these results suggest that the side-binding proteins tested alter the structure of the filament.
 
 ## Discussion
 
-We have shown that asymmetry in filament elongation is a consequence of a non-elongating state at the pointed-end and that the general versatility of actin dynamics may be a response to the binding of various proteins. Through accurate measurements of pointed-end association kinetics, we have observed that experiments performed in the absence of tethering proteins and in the presence of VASP or VASP ΔGAB yielded equivalent critical concentrations for both ends (∼0.2 μM, Table 1). This implies that, under these conditions, detailed balance at equilibrium is fulfilled, i.e., koffB/konB=koffP/konP (Hill, 1987). We propose that the existing discrepancy in estimated critical concentrations at both ends (Fujiwara et al., 2007) originates from the presence of a previously uncharacterized kinetically inactive or non-elongating state at the pointed-end. This kinetically inactive state is consistent with a non-elongating structural conformation observed by cryo-electron microscopy (Narita et al., 2011). The kinetic asymmetry of the pure actin filament may be low (∼3) and such non-elongating or closed conformation at the pointed-end would reinforce the effective filament asymmetry. The transition at the pointed-end from the open to the closed state may be coupled to ATP hydrolysis or phosphate release at the terminal subunit. The presence of this open-to-closed transition at the pointed-end would explain why the terminal subunit has an estimated different rate of phosphate release compared to the filament lattice (Fujiwara et al., 2007).
+We have shown that asymmetry in filament elongation is a consequence of a non-elongating state at the pointed-end and that the general versatility of actin dynamics may be a response to the binding of various proteins. Through accurate measurements of pointed-end association kinetics, we have observed that experiments performed in the absence of tethering proteins and in the presence of VASP or VASP ΔGAB yielded equivalent critical concentrations for both ends (∼0.2 μM, Table 1). This implies that, under these conditions, detailed balance at equilibrium is fulfilled, i.e., $k_{off}^{B}/k_{on}^{B}=k_{off}^{P}/k_{on}^{P}$ (Hill, 1987). We propose that the existing discrepancy in estimated critical concentrations at both ends (Fujiwara et al., 2007) originates from the presence of a previously uncharacterized kinetically inactive or non-elongating state at the pointed-end. This kinetically inactive state is consistent with a non-elongating structural conformation observed by cryo-electron microscopy (Narita et al., 2011). The kinetic asymmetry of the pure actin filament may be low (∼3) and such non-elongating or closed conformation at the pointed-end would reinforce the effective filament asymmetry. The transition at the pointed-end from the open to the closed state may be coupled to ATP hydrolysis or phosphate release at the terminal subunit. The presence of this open-to-closed transition at the pointed-end would explain why the terminal subunit has an estimated different rate of phosphate release compared to the filament lattice (Fujiwara et al., 2007).
 
 Actin filaments in association with any of the five proteins tested displayed a change in elongation velocity, an increase in pausing, and a change in filament flexibility. Therefore, it is possible that these three characteristics have a common origin. For three of these filament-binding proteins (myosin, α-actinin, and filamin), the binding interface to the actin filament is formed by two consecutive monomers along the same strand (Galkin et al., 2008, 2010; Lorenz and Holmes, 2010). These side-binding proteins might directly occlude the binding site for the next monomer either partially (reducing the elongation velocity) or completely (giving rise to an elongation pause). Partial distortion of the filament could turn into a defect that propagates along the lattice decreasing the observed filament stiffness and impacting the association rate. In this respect, side-binding proteins could be thought of as allosteric regulators of actin filament kinetics. Indeed, actin filaments are known to be subject to allosteric regulation by other associated proteins (Egelman and Orlova, 1995; Galkin et al., 2012). In particular, myosin (Prochniewicz and Thomas, 1997), cofilin (Galkin et al., 2001; Prochniewicz et al., 2005), dystrophin (Prochniewicz et al., 2009), and utrophin (Prochniewicz et al., 2009) are known to induce structural changes in the actin filament. Similar to filamin and α-actinin, dystrophin and utrophin bind actin through calponin-homology (CH) domains (Galkin et al., 2010). Moreover, binding to the filament is cooperative for cofilin (De La Cruz, 2005), αE-catenin (Hansen et al., 2013), and myosin (Orlova and Egelman, 1997). The basis for this allosteric regulation could originate from the stabilization of an existing structural state of the filament (Galkin et al., 2001), given that the actin filament is structurally polymorphic (Galkin et al., 2010). Therefore, it is possible that the observed elongation kinetics and pauses arise from direct modulation of the filament structure. In line with this hypothesis, two other proteins, the actin-binding domain of αE-catenin (Hansen et al., 2013) and an N-WASP construct (Khanduja and Kuhn, 2014), have recently been shown to alter filament kinetics and one of them, the actin-binding domain of αE-catenin, also influences filament structure (Hansen et al., 2013). Although atomically accurate simulations and more high resolution experiments are required to understand the molecular basis of monomer association and dissociation from the filament ends, our results provide evidence that lattice structural changes affect actin filament growth kinetics. The influence of different side-binding proteins on the growth kinetics was found to persist over different length scales. Although we do not currently know the mechanism of this difference, it is interesting to note that actin-binding proteins with globular binding domains (α-actinin, filamin, and NEM-myosin) have short-range affects whereas VASP and VASP ΔGAB, which have an unstructured binding motif, have more long-range affects.
 
@@ -144,36 +400,64 @@ Our experimental approach of using tethers immobilized on a solid surface impose
 
 ## Materials and methods
 
-## Proteins
+### Proteins
 
 Actin was obtained from chicken muscle using the method of acetone powder. Actin was extracted by one round of polymerization and pelleting by centrifugation (Spudich and Watt, 1971). The resulting pellet was depolymerized in G-buffer (1 mM Tris–HCl pH 7.8, 2 mM ATP, 2 mM CaCl2, 2 mM DTT) overnight at 4°C followed by gel filtration on a Sephacryl S-300 column. Myosin was purified and chemically inactivated with N-Ethyl-Maleimide according to the published protocol (Breitsprecher et al., 2009). Atto488-actin, α-actinin, and filamin were purchased from Hypermol (Bielefeld, Germany). Alternatively, actin was labeled with succinimidyl ester atto488 (ATTO-TEC GmbH, Germany) on random lysine residues. Actin labeling was performed under polymerization conditions (50 mM KCl and 2 mM MgCl2) followed by depolymerization and gel filtration in G-buffer. The functionality of 1:1 dye:protein lysine-modified actin was found to be unaffected by the labeling as has been previously characterized using pyrene polymerization assays, TIRF elongation, EM and FCS experiments (Crevenna et al., 2013). Unlabeled and labeled actin were mixed to yield a final ratio of 2:1 unlabeled:labeled actin molecules. The actin mixture (20 μl) was snap frozen and stored at −80°C until further use. Before use, an actin aliquot was centrifuged to remove possible aggregates.
 
 A plasmid containing the gene of Dd VASP was kindly provided by J Faix, (Hanover, Germany). VASP was expressed using a pCoofy plasmid in Sf9 cells with a MBP-tag and purified following standard methods as described previously (Scholz et al., 2013). MBP-VASP was used without cleavage, since removal of the tag resulted in protein aggregation and degradation. For VASP ΔGAB purification, the VASP coding sequence without residues 198–220 was amplified using the pCoofy28-full-length VASP as a template, forward primer 5′-GCGCTTTTATCAACACCGCCACCTGCGGCTGG-3′ and the reverse primer 5′-GCAGGTGGCGGTGTTGATAAAAGCGCTGGTGTACCAACAAAAAC-3′. Then the VASP(delta198-220) coding sequence was further cloned into a pEC-GST vector and expressed using E. coli BL21(DE3) as reported previously (Wang et al., 2014). Briefly, the E. coli strain was grown at 37°C in 2 L of ZY auto-induction medium for 5 hr and then the temperature was reduced to 18°C overnight. Cells were harvested and resuspended in 50 mM Tris pH7.5, 500 mM NaCl, 1 mM DTT supplemented with protease inhibitors and the cells were disrupted using sonication. The protein was purified from clarified cell lysate using a 5-ml GSTrap FF column (GE Healthcare, Germany) with elution buffer 50 mM Tris, pH7.5, 150 mM NaCl, 20 mM reduced glutathione, 1 mM DTT and further purified using size exclusion chromatography (Superdex 75, GE Healthcare, Germany) with buffer 50 mM Tris, pH7.5, 500 mM NaCl, 1 mM DTT.
 
-## Imaging
+### Imaging
 
 Flow cells were made as a sandwich of a cover slip (20 × 20 mm), parafilm with an approximate 5-mm wide channel and a glass slide. The surfaces of the flow cells were passivated to avoid adsorption of actin to the sample holder by incubating them with 10% (wt/vol) of BSA in PBS for 10 min. Flow cells were washed three times with 90 μl of G-buffer. The tethering protein was then applied for 5 min and the flow cell was then washed again three times with 90 μl of G-buffer. Actin (33% atto488-actin) was incubated 5 min on ice with 1/10 volume of 10x ME buffer (400 μM MgCl2 and 2 mM EGTA) to exchange Ca2+ for Mg2+. The actin-containing solution was mixed with imaging buffer (catalase, β-mercaptoethanol, glucose oxidase, 0.8% [vol/vol] D-glucose, 0.25% [wt/vol] methylcellulose, and 1/10 volume of 10x KMEI buffer [500 mM KCl, 20 mM MgCl2, 20 mM EGTA, and 300 mM imidazole], with a final pH of 7.1) and introduced into the flow cell. TIRF microscopy was performed using a TILL photonics inverted microscope (FEI Munich GmbH, Germany). A single actin aliquot was used within 12 hr.
 
 The lattice-binding protein surface density was estimated from the protein concentration, the sample volume (∼10 μl) and the surface to which the sample was adsorbed (a flow cell of 5 mm × 20 mm, giving 100 mm2) as done previously (Howard et al., 1989; Crevenna et al., 2008). All protein in solution was assumed to adsorb on the upper and lower glass surfaces. To achieve consecutive lower tether densities, the total protein concentration was serially diluted. At low tethering protein concentrations, individual filaments swiveled around distinctive attachment points indicating that they are bound to single tethering molecules as observed previously (Howard et al., 1989; Crevenna et al., 2008). To estimate the density in an alternative manner, we measured the average number of pivot points per micron of filament at the two lowest protein concentrations and divided that by the average area covered during swiveling. Assuming a linear scaling with protein concentration, this estimation resulted in a slightly lower density (by a factor of 2) compared to those reported in Figure 3. The concentration-based estimated densities represent an upper limit and are easy to reproduce. Hence, we report both in the text.
 
-## Two-color solution assay
+### Two-color solution assay
 
 Filaments were formed using atto565-labeled actin in G-buffer by addition of 1/10 volume of 10x KMEI buffer. After more than 2 hr of polymerization at room temperature, filaments were fragmented by shearing and subsequently mixed with atto488-labeled monomers and allowed to elongate for 15 min. Filaments were then stabilized with unlabeled phalloidin and diluted for imaging on an Epi-Fluorescent Microscope (Axiovert 200, Zeiss, Germany).
 
-## Data analysis
+### Data analysis
 
 Raw movies were corrected for x- and y- stage drift by first calculating its magnitude via image correlation spectroscopy (Hebert et al., 2005), and secondly, correcting the drift by bicubic interpolation. Drift estimation and correction were implemented in custom programs written in LabView and MATLAB (The MathWorks, MA). Kymographs of single filaments were made using Metamorph or Image J, while further analysis was carried out using MATLAB. Filament analysis tools are available at: http://www.cup.uni-muenchen.de/pc/lamb/actin_filament_dynamics.html. The position of the filament tip, per line in the kymograph, was estimated by fitting an error function as previously described (Demchouk et al., 2011). More than 20 filaments were analyzed per condition. To estimate the first pause distribution, we used the model described by Niedermayer et al. (2012) with ω = 2 × 106. The light intensity for treadmilling experiments ranged from 0.74 to 0.92 mW·mm−2. Growth orientation was assessed manually with the following criteria: Barbed-end filament growth direction was classified as straight/not-defined, clockwise or counterclockwise from experiments at the highest surface tether density.
 
-## Monte Carlo simulations
+### Monte Carlo simulations
 
-For the model presented in Figure 3, we used a Monte Carlo method to simulate the polymerization of actin filaments at the barbed-end. For each condition, a 105 monomer long actin filament was polymerized, and the instantaneous elongation rate was calculated for every point and then averaged over the total length of the filament. The average elongation rate was calculated from the length of the polymer over time for each condition. The effect of the tethering protein was simulated by a change in the effective kon at the site and vicinity of the tethering protein (Figure 3—figure supplement 4). Over the 105 monomer sites, Nb side-binding proteins were randomly placed corresponding to the desired side-binding protein density. This gives on the order of 104 side binding proteins for the highest densities computed. First, the tethering protein's positions were randomly chosen according to the protein density. The surface density was calculated assuming that all added tethering proteins adsorbed to the surface and were functionally active. To convert from surface density to fractional occupancy, we used the area occupied by 1 μm of actin filament (0.006 μm2), using a value of 370 subunits per micron of filament. We neglected tether dissociation from the filament, as this would only reduce the effective tether density. During the simulated polymerization, the effective kon was changed to α⋅kon0 at the position of the tethering protein and decreased linearly until reaching the free actin value of kon0 after a characteristic length (LC) counted in monomers of actin. The values of 11 μM-1s−1 and 2 s−1 for barbed-end kon0 and koff, respectively, were taken from literature (Pollard, 1986), and the average elongation rate was taken from measurements at the lowest tethering protein density (Figure 3E). A first round of simulations was performed to roughly estimate the optimal interval for the parameters (α and LC). A second set of simulations over restrained intervals, with a better resolution on α and LC, yielded a 3D space (α, LC, v). The 2D χ2 was calculated, the minimum value gave the best (α, LC) and the confidence intervals were taken by Δχ2 = 1 (68%) and Δχ2 = 4 (95%). The only free parameters were α and LC, which were determined for each curve (i.e., elongation as a function of lattice-binding protein density) by comparing the simulated elongation rates to the experimental values and minimizing the χ2 using:χ2(α,LC)=∑i=1N(v(xi)−vsim(xi,α,LC)/std(xi))2,where v(xi) is the experimental velocity for density i, vsim(xi, α, LC) is the corresponding simulated velocity with parameters α and LC, and std(xi) is the experimental standard deviation for this data point. Hence, the only free parameters are α and LC and these were determined for each curve (i.e., elongation as a function of lattice-binding protein density). All simulations were done in MATLAB.
+For the model presented in Figure 3, we used a Monte Carlo method to simulate the polymerization of actin filaments at the barbed-end. For each condition, a 105 monomer long actin filament was polymerized, and the instantaneous elongation rate was calculated for every point and then averaged over the total length of the filament. The average elongation rate was calculated from the length of the polymer over time for each condition. The effect of the tethering protein was simulated by a change in the effective kon at the site and vicinity of the tethering protein (Figure 3—figure supplement 4). Over the 105 monomer sites, Nb side-binding proteins were randomly placed corresponding to the desired side-binding protein density. This gives on the order of 104 side binding proteins for the highest densities computed. First, the tethering protein's positions were randomly chosen according to the protein density. The surface density was calculated assuming that all added tethering proteins adsorbed to the surface and were functionally active. To convert from surface density to fractional occupancy, we used the area occupied by 1 μm of actin filament (0.006 μm2), using a value of 370 subunits per micron of filament. We neglected tether dissociation from the filament, as this would only reduce the effective tether density. During the simulated polymerization, the effective $k_{on}$ was changed to $\alpha⋅k_{on}^{0}$ at the position of the tethering protein and decreased linearly until reaching the free actin value of $k_{on}^{0}$ after a characteristic length (LC) counted in monomers of actin. The values of 11 μM-1s−1 and 2 s−1 for barbed-end $k_{on}^{0}$ and koff, respectively, were taken from literature (Pollard, 1986), and the average elongation rate was taken from measurements at the lowest tethering protein density (Figure 3E). A first round of simulations was performed to roughly estimate the optimal interval for the parameters (α and LC). A second set of simulations over restrained intervals, with a better resolution on α and LC, yielded a 3D space (α, LC, v). The 2D χ2 was calculated, the minimum value gave the best (α, LC) and the confidence intervals were taken by Δχ2 = 1 (68%) and Δχ2 = 4 (95%). The only free parameters were α and LC, which were determined for each curve (i.e., elongation as a function of lattice-binding protein density) by comparing the simulated elongation rates to the experimental values and minimizing the χ2 using:
 
-## Persistence length calculation
+$$
+χ^{2}(\alpha,L_{C})=\sumi=1N(v(x_{i})−v_{sim}(x_{i},\alpha,L_{C})/std(x_{i}))^{2},
+$$
 
-Individual filaments were extracted from the measured data using the algorithm of ‘open active contours’ within JFilamin, a plug in for Image J (Li et al., 2009; Smith et al., 2010). The filament persistence length ‘Lp’ was determined by calculating the angular correlation (Isambert et al., 1995):〈cos[θ(s)−θ(0)]〉=e−s/2Lp,where the brackets represent the average correlation function of the tangent θ, measured along the contour length s. The point spacing used to reconstruct a single filament was between 6 and 10 points per micron to avoid artifacts in the Lp estimation (Isambert et al., 1995; McCullough et al., 2008; Smith et al., 2010). All data analysis was done in MATLAB.
+where v(xi) is the experimental velocity for density i, vsim(xi, α, LC) is the corresponding simulated velocity with parameters α and LC, and std(xi) is the experimental standard deviation for this data point. Hence, the only free parameters are α and LC and these were determined for each curve (i.e., elongation as a function of lattice-binding protein density). All simulations were done in MATLAB.
 
-## Local change in actin concentration model
+### Persistence length calculation
 
-The strong increase in the elongation rate in the presence of, for example, VASP as a tethering protein was first thought to originate from the multiple actin monomer binding sites on each VASP protein (Breitsprecher et al., 2008, Hansen et al., 2010, Breitsprecher et al., 2011). Theoretically, the polymerization kinetics is expected to be inhomogeneous along the actin filament and only to be locally enhanced through a higher local concentration of free actin monomers due to the presence of VASP. The growth at one end of the polymer can be written as follows:(1)E(x)=konc(x)−koff,where E(x) is the elongation rate at the position x along the filament axis, c(x) the local concentration of globular actin at this position, and kon and koff are the association and dissociation rates. The average elongation rate along the filament length is given by,(2)〈E〉=kon〈c〉−koff,where 〈c〉=c0(1+4d), c0 is the free actin concentration in solution and d is the density of VASP protein at the surface. Given that one VASP protein can bind 4 actin monomers, the local concentration of actin monomers available for polymerization can be significantly increased at the site of a tethering protein. The relationship between the average elongation rate and the protein surface density was expected to be linear as follows:(3)〈E〉=konc0(1+4d)−koff.
+Individual filaments were extracted from the measured data using the algorithm of ‘open active contours’ within JFilamin, a plug in for Image J (Li et al., 2009; Smith et al., 2010). The filament persistence length ‘Lp’ was determined by calculating the angular correlation (Isambert et al., 1995):
+
+$$
+〈cos[\theta(s)−\theta(0)]〉=e^{−s/2L_{p}},
+$$
+
+where the brackets represent the average correlation function of the tangent θ, measured along the contour length s. The point spacing used to reconstruct a single filament was between 6 and 10 points per micron to avoid artifacts in the Lp estimation (Isambert et al., 1995; McCullough et al., 2008; Smith et al., 2010). All data analysis was done in MATLAB.
+
+### Local change in actin concentration model
+
+The strong increase in the elongation rate in the presence of, for example, VASP as a tethering protein was first thought to originate from the multiple actin monomer binding sites on each VASP protein (Breitsprecher et al., 2008, Hansen et al., 2010, Breitsprecher et al., 2011). Theoretically, the polymerization kinetics is expected to be inhomogeneous along the actin filament and only to be locally enhanced through a higher local concentration of free actin monomers due to the presence of VASP. The growth at one end of the polymer can be written as follows:
+
+$$
+E(x)=k_{on}c(x)−k_{off},
+$$
+
+where E(x) is the elongation rate at the position x along the filament axis, c(x) the local concentration of globular actin at this position, and kon and koff are the association and dissociation rates. The average elongation rate along the filament length is given by,
+
+$$
+〈E〉=k_{on}〈c〉−k_{off},
+$$
+
+where 〈c〉=c0(1+4d), c0 is the free actin concentration in solution and d is the density of VASP protein at the surface. Given that one VASP protein can bind 4 actin monomers, the local concentration of actin monomers available for polymerization can be significantly increased at the site of a tethering protein. The relationship between the average elongation rate and the protein surface density was expected to be linear as follows:
+
+$$
+〈E〉=k_{on}c_{0}(1+4d)−k_{off}.
+$$
 
 Experimental points do not show a linear dependency on the protein surface density as expected from this model (Figure 3—figure supplement 5). An alternative mode of operation for VASP has been recently postulated where the protein not only increases the local concentration but also transfers monomers from its monomer binding domains to the filament tip (Breitsprecher et al., 2011). The surface density dependency of this alternative model would, nonetheless, predict a linear behavior as well, albeit with a different slope. In addition, this increased local concentration model would not explain the effect observed when using filamin, α-actinin, or with the VASP ΔGAB construct, which is unable to bind monomers.

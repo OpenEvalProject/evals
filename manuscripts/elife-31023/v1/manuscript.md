@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.31023.001 The DUX4 transcription factor is encoded by a retrogene embedded in each unit of the D4Z4 macrosatellite repeat. DUX4 is normally expressed in the cleavage-stage embryo, whereas chromatin repression prevents DUX4 expression in most somatic tissues. Failure of this repression causes facioscapulohumeral muscular dystrophy (FSHD) due to mis-expression of DUX4 in skeletal muscle. In this study, we used CRISPR/Cas9 engineered chromatin immunoprecipitation (enChIP) locus-specific proteomics to characterize D4Z4-associated proteins. These and other approaches identified the Nucleosome Remodeling Deacetylase (NuRD) and Chromatin Assembly Factor 1 (CAF-1) complexes as necessary for DUX4 repression in human skeletal muscle cells and induced pluripotent stem (iPS) cells. Furthermore, DUX4-induced expression of MBD3L proteins partly relieved this repression in FSHD muscle cells. Together, these findings identify NuRD and CAF-1 as mediators of DUX4 chromatin repression and suggest a mechanism for the amplification of DUX4 expression in FSHD muscle cells.
+The DUX4 transcription factor is encoded by a retrogene embedded in each unit of the D4Z4 macrosatellite repeat. DUX4 is normally expressed in the cleavage-stage embryo, whereas chromatin repression prevents DUX4 expression in most somatic tissues. Failure of this repression causes facioscapulohumeral muscular dystrophy (FSHD) due to mis-expression of DUX4 in skeletal muscle. In this study, we used CRISPR/Cas9 engineered chromatin immunoprecipitation (enChIP) locus-specific proteomics to characterize D4Z4-associated proteins. These and other approaches identified the Nucleosome Remodeling Deacetylase (NuRD) and Chromatin Assembly Factor 1 (CAF-1) complexes as necessary for DUX4 repression in human skeletal muscle cells and induced pluripotent stem (iPS) cells. Furthermore, DUX4-induced expression of MBD3L proteins partly relieved this repression in FSHD muscle cells. Together, these findings identify NuRD and CAF-1 as mediators of DUX4 chromatin repression and suggest a mechanism for the amplification of DUX4 expression in FSHD muscle cells.
 
 ## Introduction
 
@@ -40,45 +40,268 @@ Here, we report a locus-specific proteomics-based characterization of proteins t
 
 ## Results
 
-## enChIP-MS identifies NuRD complex components as D4Z4 repeat-associated proteins
+### enChIP-MS identifies NuRD complex components as D4Z4 repeat-associated proteins
 
 To identify regulators of the D4Z4 macrosatellite repeat, we carried out engineered DNA-binding molecule-mediated chromatin immunoprecipitation (enChIP) followed by mass spectrometry (MS) (enChIP-MS) (Fujita and Fujii, 2013) (Figure 1A). We transduced human MB135 control (non-FSHD) myoblasts with a lentiviral vector co-expressing FLAG-tagged, nuclease-deficient Cas9 (FLAG-dCas9) and guide RNA (gRNA) targeting the 3’ end (gD4Z4-1), middle (gD4Z4-2) or 5’ end (gD4Z4-3) of the D4Z4 unit, or the MYOD1 distal regulatory region (DRR) (gMYOD1) for comparison. After confirming the expression, subcellular localization, and specific chromatin occupancy of FLAG-dCas9 in each cell line (Figure 1—figure supplement 1), complexes containing FLAG-dCas9 were immunoprecipitated and subjected to liquid chromatography-tandem mass spectrometry for protein identification.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic summary of the enChIP procedure. A 3xFLAG-dCas9-HA-2xNLS fusion protein (FLAG-dCas9) consisting of an N-terminal triple FLAG (3xFLAG) epitope tag, catalytically inactive Cas9 endonuclease (dCas9), C-terminal human influenza hemagglutinin (HA) epitope tag and tandem nuclear localization signal (2xNLS) is expressed with one or more guide RNA (gRNA) in an appropriate cell context. Cells are crosslinked, chromatin is fragmented and complexes containing FLAG-dCas9 are immunoprecipitated with an anti-FLAG antibody. After reversing the crosslinks, molecules associated with the targeted genomic region are purified and identified by downstream analyses including mass spectrometry and next-generation sequencing. Adapted from Fujita et al. (2016). (B–E) ChIP-qPCR enrichment of NuRD complex components CHD4 (B), HDAC2 (C), MTA2 (D) and MBD2 (E) along the D4Z4 repeat in MB2401 control myoblasts. The Chr18q12 amplicon contains no CpG dinucleotides and serves as a negative control site, while the TMEM130 promoter is occupied by NuRD complex components in published ENCODE datasets (ENCODE Project Consortium, 2012) and functions as a positive control locus. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific pulldown to the IgG control at each site using a two-tailed, two-sample Mann-Whitney U test. *, p≤0.05; ns, not significant, p>0.05. See also Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Diagram showing the location of the three gRNAs targeting the D4Z4 unit and their relationship to the DUX4 open-reading frame. 1, gD4Z4-1; 2, gD4Z4-2; 3, gD4Z4-3. (B–D) MB135 control myoblasts stably expressing FLAG-dCas9 together with gRNA targeting the D4Z4 repeat (gD4Z4-1, gD4Z4-2, gD4Z4-3) or the MYOD1 distal regulatory region (DRR) (gMYOD1) were examined for FLAG-dCas9 expression level by immunoblot (B), subcellular localization by immunofluorescence (C) and chromatin occupancy by enChIP-qPCR (D). A + indicates that existing cell lines were super-infected to enhance FLAG-dCas9 levels and/or to co-express two D4Z4 gRNAs. The arrowhead in (B) indicates the expected size of full-length FLAG-dCas9. See also Figure 1—source data 1.
+
 A total of 261 proteins were identified (Supplementary file 1), including known D4Z4-associated factors SMCHD1, CBX3/HP1γ and the cohesin complex components SMC1A, SMC3, RAD21 and PDS5B (Lemmers et al., 2012; Zeng et al., 2009) (Table 1). BRD3 and BRD4 were also identified (Supplementary file 1) and BET inhibitor compounds have recently been shown to regulate D4Z4 repression (Campbell et al., 2017). D4Z4-bound proteins were enriched in gene ontology categories that included telomere maintenance and chromatin silencing (Supplementary file 2), consistent with the subtelomeric localization and transcriptionally repressed state of the D4Z4 array. Strikingly, CHD4, HDAC2, MTA2 and RBBP4, which comprise many of the components of the Nucleosome Remodeling Deacetylase (NuRD) complex (Basta and Rauchman, 2015), were among the isolated proteins (Table 1). While each of these factors was identified as associated with the D4Z4 repeat in more than one gD4Z4 sample, they were either absent or present in only a single replicate from the gMYOD1 pulldowns (Supplementary file 1).
+
+**Table 1.**
+ Examples of proteins identified by enChIP-MS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Gene name</th>
+      <th colspan="4">Sample</th>
+      <th rowspan="3">Category</th>
+    </tr>
+    <tr>
+      <th colspan="2">gD4Z4</th>
+      <th colspan="2">gMYOD1</th>
+    </tr>
+    <tr>
+      <th># peptides*</th>
+      <th>% coverage†</th>
+      <th># peptides*</th>
+      <th>% coverage†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBX3/HP1γ</td>
+      <td>4.7</td>
+      <td>15.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td rowspan="7">Known D4Z4-associated proteins</td>
+    </tr>
+    <tr>
+      <td>NCL</td>
+      <td>47.4</td>
+      <td>22.3</td>
+      <td>34.0</td>
+      <td>14.2</td>
+    </tr>
+    <tr>
+      <td>PDS5B</td>
+      <td>2.0</td>
+      <td>11.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>RAD21</td>
+      <td>1.8</td>
+      <td>2.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>SMC1A</td>
+      <td>7.0</td>
+      <td>5.8</td>
+      <td>2.0</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>SMC3</td>
+      <td>17.0</td>
+      <td>6.7</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>SMCHD1</td>
+      <td>1.6</td>
+      <td>2.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>CHD4</td>
+      <td>8.3</td>
+      <td>3.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td rowspan="4">NuRD complex components</td>
+    </tr>
+    <tr>
+      <td>HDAC2</td>
+      <td>2.5</td>
+      <td>5.6</td>
+      <td>3.0</td>
+      <td>6.8</td>
+    </tr>
+    <tr>
+      <td>MTA2</td>
+      <td>1.2</td>
+      <td>2.2</td>
+      <td>1.0</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>RBBP4</td>
+      <td>4.5</td>
+      <td>7.5</td>
+      <td>4.0</td>
+      <td>6.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Average number of peptides recovered from each sample type, combining like (gD4Z4 or gMYOD1) immunoprecipitations.†Average percentage of each protein covered by the identified peptides from each sample type, combining like (gD4Z4 or gMYOD1) immunoprecipitations._
 
 Occupancy of CHD4, HDAC2 and MTA2 at the D4Z4 array was confirmed by chromatin immunoprecipitation (ChIP) in MB2401 myoblasts, an independent control muscle cell line (Figure 1B–D). The NuRD complex can be recruited to methylated DNA by the MBD2 subunit (Le Guezennec et al., 2006; Zhang et al., 1999), and indeed, ChIP showed MBD2 enrichment at the D4Z4 region in MB2401 control myoblasts (Figure 1E). Together, these data demonstrate that the D4Z4 macrosatellite repeat is bound by the MBD2/NuRD complex in control human muscle cells.
 
-## MBD2/NuRD complex components mediate transcriptional repression of the D4Z4 array
+### MBD2/NuRD complex components mediate transcriptional repression of the D4Z4 array
 
 The NuRD complex represses gene transcription via the concerted effort of the core subunits HDAC1 and HDAC2; CHD3 or CHD4; MBD2 or MBD3; MTA1, MTA2 or MTA3; RBBP4 and RBBP7; and GATAD2A and GATAD2B (Basta and Rauchman, 2015) (Figure 2A). In MB2401 control myoblasts, small interfering RNA (siRNA) depletion of the lysine deacetylases HDAC1 or HDAC2 had no significant effect on DUX4 mRNA levels, whereas concurrent HDAC1/HDAC2 knockdown increased DUX4 mRNA 100-fold resulting in the activation of DUX4 target genes ZSCAN4 and TRIM43 (Figure 2B and Figure 2—figure supplement 1A). In contrast, in MB073 FSHD1 and MB200 FSHD2 myoblasts, singular HDAC1 or HDAC2 depletion led to a ≥ 20-fold activation of DUX4 mRNA while dual HDAC1/HDAC2 knockdown increased DUX4 levels more than 140-fold, with comparable changes to DUX4 targets (Figure 2C–D and Figure 2—figure supplement 1B–C). Pharmacological inhibition of HDAC1/HDAC2 activity by MS-275 (Nebbioso et al., 2009) also increased DUX4 and DUX4 target gene expression, and enhanced histone H4 acetylation at the D4Z4 array (Figure 2—figure supplement 2). Collectively, these results indicate that HDAC1 and HDAC2 are associated with, and function to transcriptionally repress, the D4Z4 array. These data also show that the D4Z4 repeat in control myoblasts is more resistant to de-repression than the D4Z4 repeat in FSHD cells, which are sensitized because of a shortened array (FSHD1) or SMCHD1 mutation (FSHD2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the NuRD complex. Subunits colored darkest grey have the most lines of evidence linking them to DUX4 regulation (e.g. enChIP, siRNA and ChIP data), while more lightly colored subunits have progressively less experimental support. Adapted from Hota and Bruneau (2016). (B–J) DUX4 and DUX4 target gene expression as determined by RT-qPCR following control (CTRL), HDAC1/HDAC2 (B–D), CHD4 (E–G) or MBD2 (H–J) siRNA knockdown in MB2401 control (B,E,H), MB073 FSHD1 (C,F,I) or MB200 FSHD2 (D,G,J) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test. *, p≤0.05.See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) HDAC1 and HDAC2 gene expression as determined by RT-qPCR following control (CTRL), HDAC1, HDAC2 or simultaneous HDAC1/HDAC2 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) DUX4 and DUX4 target gene expression as determined by RT-qPCR in MB200 FSHD2 myoblasts treated with 2.5 µM MS-275 for the indicated times. Statistical significance was calculated by comparing the mRNA level at each time point to that at 0 hr using a two-tailed, two-sample Mann-Whitney U test. (B) ChIP-qPCR enrichment of histone H4 acetylation (H4Ac) along the D4Z4 repeat in MB200 FSHD2 myoblasts treated with 2.5 µM MS-275 for 24 hr. Statistical significance was calculated by comparing the H4Ac signal in untreated versus MS-275-treated cells at each site using a one-tailed, one-sample Wilcoxon signed-rank test. *, p≤0.05; ns, not significant, p>0.05. Error bars denote the standard deviation from the mean of three (or six, for the 0 hr and 12 hr time points in (A)) biological replicates. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A–C) CHD4 gene expression as determined by RT-qPCR following control (CTRL) or CHD4 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A–C) DUX4 and CHD3 gene expression as determined by RT-qPCR following control (CTRL) or CHD3 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A–C) TMEM130 and MBD2 gene expression as determined by RT-qPCR following control (CTRL) or MBD2 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test. *, p≤0.05. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A–C) DUX4 and MBD3 gene expression as determined by RT-qPCR following control (CTRL) or MBD3 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 2—source data 1.
 
 We next evaluated the necessity of the ATP-dependent chromatin remodelers CHD3 and CHD4 for D4Z4 repeat repression. Depleting CHD4 from MB2401 control myoblasts had no effect on DUX4 expression (Figure 2E and Figure 2—figure supplement 3A). However, CHD4 knockdown in MB073 FSHD1 or MB200 FSHD2 myoblasts increased DUX4 mRNA 20-fold and concomitantly activated DUX4 targets (Figure 2F–G and Figure 2—figure supplement 3B–C). In contrast, CHD3 depletion did not lead to DUX4 de-repression in either control or FSHD cells (Figure 2—figure supplement 4), consistent with its absence from the gD4Z4 enChIP purifications and the mutually exclusive nature of CHD3 and CHD4 within the NuRD complex. Together, these results reveal that CHD4 binds the D4Z4 repeat and is necessary to silence DUX4 expression in FSHD cells, whereas control myoblasts have a more stably repressed D4Z4 array.
 
 Similar to CHD4, depleting methyl-CpG-binding protein MBD2 from MB2401 control myoblasts had no effect on DUX4 mRNA levels (Figure 2H and Figure 2—figure supplement 5A). However, depleting MBD2 from MB073 FSHD1 myoblasts moderately, but significantly, increased DUX4 expression, whereas DUX4 was not de-repressed when MBD2 was knocked down in MB200 FSHD2 myoblasts (Figure 2I–J and Figure 2—figure supplement 5B–C). This difference suggests a possible D4Z4 context-dependent effect that was not observed for the single-copy NuRD complex-bound gene TMEM130 following MBD2 knockdown (Figure 2—figure supplement 5). We further observed that depletion of MBD3, which can recruit the NuRD complex to unmethylated DNA (Baubec et al., 2013; Le Guezennec et al., 2006; Saito and Ishikawa, 2002), did not de-repress DUX4 in MB2401 control, MB073 FSHD1 or MB200 FSHD2 myoblasts (Figure 2—figure supplement 6). Together, these data show that MBD2 occupies the D4Z4 array and is necessary for DUX4 repression in at least some contexts, and suggest that factors in addition to MBD2 might recruit components shared by the NuRD complex to silence the D4Z4 macrosatellite repeat.
 
-## Silencing the D4Z4 array requires components of the MBD1/CAF-1 complex
+### Silencing the D4Z4 array requires components of the MBD1/CAF-1 complex
 
 The NuRD complex is known to cooperate with other complexes to carry out its cellular functions. For example, NuRD and the CAF-1 chromatin assembly complex work together in several molecular processes (Helbling Chadwick et al., 2009; Yang et al., 2015) and share a core subunit, RBBP4, which was identified as associated with the D4Z4 repeat by gD4Z4 enChIP purification (Table 1). CHAF1A and CHAF1B comprise the other core members of the CAF-1 complex (Volk and Crispino, 2015) (Figure 3A). Depleting CHAF1A or CHAF1B resulted in the activation of DUX4 and DUX4 target genes in FSHD myoblasts (Figure 3B–D and Figure 3—figure supplement 1), confirming a role for this complex in D4Z4 regulation. CAF-1 interacts with CpG-binding protein MBD1, which binds both methylated and unmethylated DNA to inhibit transcription (Jørgensen et al., 2004; Reese et al., 2003). Knockdown of MBD1 led to DUX4 and DUX4 target gene activation in MB200 FSHD2 myoblasts but not in MB2401 control or MB073 FSHD1 myoblasts (Figure 3E–G and Figure 3—figure supplement 2), indicating a possible context-dependent relative necessity of MBD1 or MBD2 in different FSHD cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of the CAF-1 complex, with shading as in Figure 2A. All subunits have one line of evidence linking them to DUX4 regulation. (B–J) DUX4 and DUX4 target gene expression as determined by RT-qPCR following control (CTRL), CHAF1A/CHAF1B (B–D), MBD1 (E–G) or CHAF1A/CHD4 (H–J) siRNA knockdown in MB2401 control (B,E,H), MB073 FSHD1 (C,F,I) or MB200 FSHD2 (D,G,J) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) CHAF1A and CHAF1B gene expression as determined by RT-qPCR following control (CTRL), CHAF1A or CHAF1B siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) MBD1 gene expression as determined by RT-qPCR following control (CTRL) or MBD1 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A–C) CHAF1A and CHD4 gene expression as determined by RT-qPCR following control (CTRL), CHAF1A, CHD4 or simultaneous CHAF1A/CHD4 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A–E) CHD4, DUX4, and DUX4 target gene expression as determined by RT-qPCR following control (CTRL) or CHD4 siRNA knockdown in 54–2 FSHD1 (A), 2305 FSHD2 (B), 2453 FSHD2 (C), 2338 FSHD2 (D) or 1881 FSHD2 (E) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test and p was ≤0.05 unless otherwise specified as not significant (ns). See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A–E) MBD2, DUX4, and DUX4 target gene expression as determined by RT-qPCR following control (CTRL) or MBD2 siRNA knockdown in 54–2 FSHD1 (A), 2305 FSHD2 (B), 2453 FSHD2 (C), 2338 FSHD2 (D) or 1881 FSHD2 (E) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test and p was ≤0.05 unless otherwise specified as not significant (ns). See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A–E) CHAF1A, DUX4, and DUX4 target gene expression as determined by RT-qPCR following control (CTRL) or CHAF1A siRNA knockdown in 54–2 FSHD1 (A), 2305 FSHD2 (B), 2453 FSHD2 (C), 2338 FSHD2 (D) or 1881 FSHD2 (E) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test and p was ≤0.05 unless otherwise specified as not significant (ns). See also Figure 3—source data 1.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (A–E) MBD1, DUX4, and DUX4 target gene expression as determined by RT-qPCR following control (CTRL) or MBD1 siRNA knockdown in 54–2 FSHD1 (A), 2305 FSHD2 (B), 2453 FSHD2 (C), 2338 FSHD2 (D) or 1881 FSHD2 (E) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test and p was ≤0.05 unless otherwise specified as not significant (ns). See also Figure 3—source data 1.
 
 Notably, although knockdown of CHAF1A or CHD4 alone did not induce DUX4 expression in MB2401 control myoblasts (Figure 2E and Figure 3B), simultaneous depletion increased DUX4 mRNA levels over 150-fold (Figure 3H and Figure 3—figure supplement 3A). An additive or greater impact was also observed with dual versus singular CHD4 and CHAF1A knockdown in MB073 FSHD1 and MB200 FSHD2 myoblasts (Figure 3I–J and Figure 3—figure supplement 3B–C). Together, these results indicate that a combination of MBD1- and MBD2-mediated recruitment of the CAF-1 and NuRD repressive complexes, respectively, work together to silence the D4Z4 repeat in skeletal muscle cells.
 
 To extend these studies, we depleted CHD4, CHAF1A, MBD2, or MBD1 in five additional FSHD cell lines: one FSHD1 cell line (54-2) with three 4qA D4Z4 repeats (compared to the 8 repeats of the MB073 line), and four FSHD2 lines (2305, 2453, 2338, and 1881) with different SMCHD1 mutations and repeat sizes ranging from 11 to 15 D4Z4 units (Supplementary file 3). All five lines showed de-repression of DUX4 upon knockdown of MBD2 or CHAF1A, and all but one (2453, an FSHD2 cell line) showed increased DUX4 expression following CHD4 depletion, whereas de-repression following MBD1 knockdown was evident in the FSHD1 and two of the FSHD2 cell lines (Figure 3—figure supplements 4–7). Taken together, these data indicate the combined roles of the NuRD and CAF-1 complexes in repressing DUX4, and that the relative necessity of specific components of each pathway might vary depending on the cellular context, or possibly the efficiency of each knockdown.
 
-## Components shared by the NuRD and CAF-1 complexes mediate D4Z4 repeat repression
+### Components shared by the NuRD and CAF-1 complexes mediate D4Z4 repeat repression
 
 To repress transcription, core members of the NuRD and CAF-1 complexes utilize a shared set of auxiliary factors, namely the tripartite motif-containing protein TRIM28, the lysine methyltransferase SETDB1, and the lysine demethylase KDM1A (Ivanov et al., 2007; Loyola et al., 2009; Sarraf and Stancheva, 2004; Schultz et al., 2001; Wang et al., 2009; Yang et al., 2015). Knockdown of TRIM28, SETDB1 or KDM1A de-repressed DUX4 in MB073 FSHD1 and MB200 FSHD2 myoblasts to varying degrees ranging from 3- to 130-fold (Figure 4 and Figure 4—figure supplements 1–3), implicating them in facilitating silencing of the D4Z4 array. Of these factors, only KDM1A knockdown de-repressed DUX4 mRNA in the MB2401 control myoblasts, indicating a necessary role for this demethylase in maintaining repression of both normal and pathological D4Z4 alleles in muscle cells. In support of these expression data, peptides for TRIM28 were present in gD4Z4 enChIP pulldowns, although they did not meet our filtering criteria to be included in the list of D4Z4-associated proteins.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig4-v1.jpg)
+
+**Figure 4.:** (A–I) DUX4 and DUX4 target gene expression as determined by RT-qPCR following control (CTRL), TRIM28 (A–C), SETDB1 (D–F) or KDM1A (G–I) siRNA knockdown in MB2401 control (A,D,G), MB073 FSHD1 (B,E,H) or MB200 FSHD2 (C,F,I) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test and p was ≤0.05 for all comparisons except those in (A) and (D). See also Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) TRIM28 gene expression as determined by RT-qPCR following control (CTRL) or TRIM28 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 4—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) SETDB1 gene expression as determined by RT-qPCR following control (CTRL) or SETDB1 siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 4—source data 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A–C) KDM1A gene expression as determined by RT-qPCR following control (CTRL) or KDM1A siRNA knockdown in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 4—source data 1.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Schematic representation of the SIN3 complex, with shading as in Figure 2A depicting the amount of experimental support linking each subunit to DUX4 regulation. (B–G) SIN3A, SIN3B, DUX4, and DUX4 target gene expression as determined by RT-qPCR following control (CTRL), SIN3A or SIN3B siRNA knockdown in MB2401 control (B–C), MB073 FSHD1 (D–E) or MB200 FSHD2 (F–G) myoblasts. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 4—source data 1.
+
 Similarly, SIN3A peptides were found in a gD4Z4 pulldown before our final filtering steps. The transcriptionally repressive SIN3 complex shares core proteins HDAC1, HDAC2, RBBP4, and RBBP7 with the NuRD complex and is also composed of SDS3, SAP18, SAP30 and SIN3A or SIN3B subunits (Grzenda et al., 2009) (Figure 4—figure supplement 4A). Therefore, we tested its role in D4Z4 repeat repression and found that SIN3A or SIN3B depletion led to the activation of DUX4 and DUX4 target genes in FSHD cells (Figure 4—figure supplement 4B–G), supporting a role for the SIN3 complex in D4Z4 regulation. Taken together, these data indicate that D4Z4 array silencing is mediated by multiple chromatin regulatory factors that act together with core components of the NuRD complex and also depend on the CAF-1 chromatin assembly complex to achieve full epigenetic repression.
 
-## Proteins that repress the D4Z4 array in myoblasts also silence DUX4 in iPS cells
+### Proteins that repress the D4Z4 array in myoblasts also silence DUX4 in iPS cells
 
 We previously reported that DUX4 is expressed at very low levels in human iPS cell populations (Snider et al., 2010) and, similar to the expression pattern in FSHD myoblasts, this represents the occasional expression in a small number of cells (JWL, unpublished data). We have more recently shown that DUX4 is present in four-cell human embryos and that when expressed in iPS cells or muscle cells it activates a cleavage-stage transcriptional program similar to the program expressed in a subset of ‘naïve’ iPS or embryonic stem (ES) cells (Hendrickson et al., 2017; Whiddon et al., 2017). To determine whether factors responsible for silencing the D4Z4 repeat in myoblasts have a similar function in a model of early development, we knocked down components of the NuRD and CAF-1 complexes in human eMHF2 iPS cells, which were derived from an unaffected (non-FSHD) individual, and assessed the impact on DUX4 expression. Similar to our myoblast results, depletion of HDAC1/HDAC2, CHD4, CHAF1A, SETDB1 or SIN3B de-repressed DUX4 in iPS cells; whereas, unlike in myoblasts, knockdown of KDM1A in iPS cells had a more minor effect on the levels of DUX4 mRNA (Figure 5 and Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig5-v1.jpg)
+
+**Figure 5.:** (A–F) DUX4 gene expression as determined by RT-qPCR in human eMHF2 iPS cells following control (CTRL), HDAC1/HDAC2 (A), CHD4 (B), CHAF1A (C), SETDB1 (D), KDM1A (E) or SIN3B (F) siRNA knockdown. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test and p was ≤0.05 unless otherwise specified as not significant (ns). See also Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–F) Gene expression as determined by RT-qPCR in human eMHF2 iPS cells following control (CTRL), HDAC1/HDAC2 (A), CHD4 (B), CHAF1A (C), SETDB1 (D), KDM1A (E) or SIN3B (F) siRNA knockdown. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 5—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–E) Gene expression as determined by RT-qPCR in HFF3 fibroblasts (FB), three isogenic iPS cell lines generated by reprogramming the fibroblast line, and embryoid bodies (EB) derived from the iPS cells. OCT4 (A) is a pluripotency gene, while NCAM1 (B), KDR (C), AFP (D), and CDX2 (E) are highly expressed in ectoderm, mesoderm, endoderm, and trophoblast, respectively. See also Figure 5—source data 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A–D) Gene expression as determined by RT-qPCR following control (CTRL), CHD4 (A–B) or CHAF1A (C–D) siRNA knockdown in human HFF3 fibroblasts (FB) and three isogenic iPS cell lines generated by reprogramming the fibroblast line. DUX4 data were generated with 4qAL primers (see Materials and methods). Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 5—source data 1.
+
 To determine whether iPS cells have a greater necessity for NuRD and CAF-1 components to maintain DUX4 repression compared to somatic cells, we transduced a human foreskin fibroblast cell line (HFF3) with the reprogramming factors Oct4, Sox2, Nanog, and Lin28 to generate isogenic iPS cell clones (Figure 5—figure supplement 2). Notably, depletion of NuRD and CAF-1 complex components did not lead to DUX4 de-repression in the parental HFF3 fibroblast line, whereas the HFF3 iPS lines responded similarly to the eMHF2 iPS line (Figure 5—figure supplement 3). These results indicate that the NuRD and CAF-1 complexes that silence the D4Z4 macrosatellite array in muscle cells also contribute to the regulation of this locus in human iPS cells, and that iPS cells have decreased D4Z4 repression compared to their somatic counterpart, similar to the decreased repression in FSHD myoblasts compared to control myoblasts.
 
-## MBD3L2 de-represses the D4Z4 repeat
+### MBD3L2 de-represses the D4Z4 repeat
 
 In prior studies of DUX4-induced gene expression, we identified the MBD3L family (MBD3L2, MBD3L3, MBD3L4, and MBD3L5) as a direct target of DUX4 that was expressed in FSHD, but not control, muscle cells and muscle biopsies, and activated by exogenous DUX4 in cultured human myoblasts (Geng et al., 2012; Yao et al., 2014; Young et al., 2013). MBD3L family proteins can replace MBD2 or MBD3 in the NuRD complex but they lack the CpG-binding domain and antagonize NuRD-mediated transcriptional repression, possibly by preventing the complex from being recruited to its DNA targets (Jiang et al., 2002; Jin et al., 2005). To determine whether MBD3L proteins de-repress the NuRD complex-regulated D4Z4 array, we transduced control and FSHD myoblasts with a lentiviral vector delivering a doxycycline-inducible MBD3L2 transgene and, after selecting for transgene-expressing cells, analyzed DUX4 mRNA and protein after 48 hr of doxycycline treatment. Similar to the knockdown of NuRD complex members, expression of MBD3L2 induced DUX4 5–18-fold in MB073 FSHD1 and MB200 FSHD2 myoblasts and increased by 10-fold the number of myoblast nuclei expressing DUX4 protein, whereas DUX4 was not de-repressed in MB2401 control myoblasts (Figure 6A–E and Figure 6—figure supplement 1A–C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) DUX4 and DUX4 target gene expression as determined by RT-qPCR in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts without (-) or with (+) doxycycline (Dox) treatment for 48 hr to induce MBD3L2 transgene expression in clonal cell lines. (D–E) DUX4-positive nuclei upon overexpression of MBD3L2 in MB200 FSHD2 myoblasts as in (C) were detected by immunofluorescence (D) and quantified by counting three fields representing >125 nuclei (E). (F–G) DUX4 and DUX4 target gene expression as determined by RT-qPCR following control (CTRL) or MBD3L family gene shRNA knockdown in MB073 FSHD1 (F) or MB200 FSHD2 (G) myotubes. Error bars denote the standard deviation from the mean of three biological replicates. Statistical significance was calculated by comparing the specific knockdown to the control knockdown for each gene using a two-tailed, two-sample Mann-Whitney U test and p was ≤0.05 for all comparisons except in (A). See also Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–E) The ectopic (A–C) or endogenous (D–E) expression of MBD3L2 as determined by RT-qPCR in MB2401 control (A), MB073 FSHD1 (B) or MB200 FSHD2 (C) myoblasts cultured without (-) or with (+) doxycycline (Dox) for 48 hr, or in MB073 FSHD1 (D) or MB200 FSHD2 (E) myotubes expressing control (CTRL) or MBD3L gene shRNAs. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 6—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/31023/elife-31023-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) MBD3L2, DUX4, and DUX4 target gene expression as determined by RT-qPCR in two additional independent experiments with control (CTRL) or MBD3L shRNA-expressing MB073 FSHD1 (A–B) or MB200 FSHD2 (C–D) muscle cell lines differentiated into myotubes. Error bars denote the standard deviation from the mean of three biological replicates. See also Figure 6—source data 1.
 
 When cultured in low mitogen differentiation media, myoblasts fuse to form multinucleated myotubes, and DUX4 expression increases in FSHD myotubes compared to myoblasts (Balog et al., 2015). To determine whether the DUX4-induced MBD3L proteins might contribute to the increased DUX4 expression in myotubes, we expressed short hairpin RNA (shRNA) to inhibit MBD3L RNAs in MB073 FSHD1 and MB200 FSHD2 myotubes and found that these decreased DUX4 and DUX4 target gene expression by ~50% and~30%, respectively (Figure 6F–G, Figure 6—figure supplement 1D–E and Figure 6—figure supplement 2). Together, these data implicate MBD3L2 in the regulation of the D4Z4 array and demonstrate that endogenous DUX4-induced MBD3L proteins contribute to the amplification of DUX4 expression in FSHD myotubes.
 
@@ -98,54 +321,554 @@ In summary, we identified components of the NuRD and CAF-1 complexes as necessar
 
 ## Materials and methods
 
-## Cell culture and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>1881 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>2305 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>2338 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>2453 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>54–2 myoblasts</td>
+      <td>(Krom et al., 2012) (DOI:10.1016/j.ajpath.2012.07.007)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>eMHF2 iPS cells</td>
+      <td>University of Washington Institute for Stem Cell and Regenerative Medicine Tom and Sue Ellison Stem Cell Core (http://depts.washington.edu/iscrm/ellison)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HFF3 fibroblasts</td>
+      <td>ATCC</td>
+      <td>ATCC:SCRC-1043; RRID:CVCL_DB29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MB073 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MB135 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MB200 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MB2401 myoblasts</td>
+      <td>Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx)</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>alpha-Tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T9026; RRID:AB_477593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Acetyl-Histone H4</td>
+      <td>EMD Millipore</td>
+      <td>EMD Millipore:06866; RRID:AB_310270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CHD4</td>
+      <td>Bethyl Laboratories</td>
+      <td>Bethyl Laboratories:A301081A; RRID:AB_873001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DUX4 (14–3)</td>
+      <td>(Geng et al., 2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DUX4 (E5-5)</td>
+      <td>(Geng et al., 2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch:715095150; RRID:AB_2340792</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG M2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:F1804 or F3165; RRID:AB_262044 or RRID:AB_259529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HDAC2</td>
+      <td>Abcam</td>
+      <td>Abcam:ab7029; RRID:AB_305706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP anti-mouse</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch:115035146; RRID:AB_2307392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MBD2</td>
+      <td>Bethyl Laboratories</td>
+      <td>Bethyl Laboratories:A301632A; RRID:AB_1211478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MTA2</td>
+      <td>Abcam</td>
+      <td>Abcam:ab8106; RRID:AB_306276</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TRITC anti-rabbit</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch:711025152; RRID:AB_2340588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCW57.1-MBD3L2</td>
+      <td>This paper</td>
+      <td>Addgene plasmid #106332</td>
+      <td>Lentiviral vector expressing doxycycline-inducible MBD3L2 (generated using pCW57.1 [Addgene plasmid #41393])</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGIPZ-shControl</td>
+      <td>Fred Hutchinson Cancer Research Center Genomics Shared Resource (http://monod.fhcrc.org/rnai/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGIPZ-shMBD3L-1</td>
+      <td>Fred Hutchinson Cancer Research Center Genomics Shared Resource (http://monod.fhcrc.org/rnai/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGIPZ-shMBD3L-2</td>
+      <td>Fred Hutchinson Cancer Research Center Genomics Shared Resource (http://monod.fhcrc.org/rnai/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZLCv2-3xFLAG-dCas9-HA-2xNLS</td>
+      <td>This paper</td>
+      <td>Addgene plasmid #106357</td>
+      <td>Lentiviral vector expressing FLAG-tagged, nuclease-deficient Cas9 (generated using lentiCRISPRv2 [Addgene plasmid #52961] and pHR-SFFV-KRAB-dCas9-P2A-mCherry [Addgene plasmid #60954])</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZLCv2-gD4Z4-1-3xFLAG-dCas9-HA-2xNLS</td>
+      <td>This paper</td>
+      <td>Addgene plasmid #106352</td>
+      <td>Lentiviral vector expressing FLAG-dCas9 and a guide RNA targeting the D4Z4 unit</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZLCv2-gD4Z4-2-3xFLAG-dCas9-HA-2xNLS</td>
+      <td>This paper</td>
+      <td>Addgene plasmid #106353</td>
+      <td>Lentiviral vector expressing FLAG-dCas9 and a gRNA targeting the D4Z4 unit</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZLCv2-gD4Z4-3-3xFLAG-dCas9-HA-2xNLS</td>
+      <td>This paper</td>
+      <td>Addgene plasmid #106354</td>
+      <td>Lentiviral vector expressing FLAG-dCas9 and a gRNA targeting the D4Z4 unit</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZLCv2-gMYOD1-3xFLAG-dCas9-HA-2xNLS</td>
+      <td>This paper</td>
+      <td>Addgene plasmid #106355</td>
+      <td>Lentiviral vector expressing FLAG-dCas9 and a gRNA targeting the MYOD1 distal regulatory region</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>enChIP-/ChIP-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>gRNAs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>shRNAs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNAs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3X FLAG peptide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:F4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAshredder</td>
+      <td>Qiagen</td>
+      <td>Qiagen:79656</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen:74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand Synthesis System</td>
+      <td>Invitrogen/Thermo Fisher</td>
+      <td>Invitrogen/Thermo Fisher:18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Mercaptoethanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:M3148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM:Nutrient Mixture F-12</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:11320082</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher:18068015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycyline hyclate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco's Modified Eagle Medium (DMEM)</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:11965092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads-Protein G</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher:10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ham's F-10 Nutrient Mix</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:11550043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Horse serum</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:26050070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HyClone Fetal Bovine Serum</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>GE Healthcare Life Sciences:SH30071.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:I1882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KnockOut Serum Replacement</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:10828028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Invitrogen/Thermo Fisher</td>
+      <td>Invitrogen/Thermo Fisher:13778150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel</td>
+      <td>Corning Life Science</td>
+      <td>Corning Life Science:354277</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEM non-essential amino acids</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mTeSR1 medium</td>
+      <td>STEMCELL Technologies</td>
+      <td>STEMCELL Technologies:85850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Opti-MEM reducedserum medium</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher:31985070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin/streptomycin</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:107689</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recominant human basic fibroblast growth factor</td>
+      <td>Promega Corporation</td>
+      <td>Promega Corporation:G5071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pyruvate</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher:11360070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Transferrin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T0665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632 ROCK inhibitor</td>
+      <td>Miltenyi Biotec</td>
+      <td>Miltenyi Biotec:130106538</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for proteomics data analysis</td>
+      <td>This paper (Jagannathan, 2017)</td>
+      <td></td>
+      <td>The R code used for the proteomics data analysis can be accessed via github at https://github.com/sjaganna/2017-campbell_et_al</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:SCR_014477</td>
+      <td>Version 1.4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and reagents
 
 All reagents were obtained from Sigma-Aldrich (St. Louis, MO) unless otherwise specified. Human primary myoblast cell lines originated from the Fields Center for FSHD and Neuromuscular Research at the University of Rochester Medical Center (https://www.urmc.rochester.edu/neurology/fields-center.aspx) and were immortalized by retroviral transduction of CDK4 and hTERT (Stadler et al., 2011). Myoblasts were maintained in Ham’s F-10 Nutrient Mix (Gibco, Waltham, MA) supplemented with 20% HyClone Fetal Bovine Serum (GE Healthcare Life Sciences, Pittsburgh, PA), 100 U/100 μg penicillin/streptomycin (Gibco), 10 ng/ml recombinant human basic fibroblast growth factor (Promega Corporation, Madison, WI) and 1 μM dexamethasone. Differentiation of myoblasts into myotubes was achieved by switching the fully confluent myoblast monolayer into Dulbecco’s Modified Eagle Medium (DMEM, Gibco) containing 1% horse serum (Gibco), 100 U/100 μg penicillin/streptomycin, 10 μg/ml insulin and 10 μg/ml transferrin for 48–72 hr. Myoblasts harboring a transgene were additionally cultured in 2 μg/ml puromycin and transgene expression induced with 1 μg/ml doxycycline hyclate when required. Myoblast cell line identity was authenticated by monitoring fusion into myotubes, DUX4 expression, and the presence of a 4qA161 allele. Detailed characteristics of the myoblast lines used in this study are provided in Supplementary file 3. Human control (non-FSHD) iPS cells were obtained from the University of Washington Institute for Stem Cell and Regenerative Medicine Tom and Sue Ellison Stem Cell Core (eMHF2) (Hendrickson et al., 2017) or derived in-house from normal HFF3 foreskin fibroblasts reprogrammed via lentiviral transduction of Oct4, Sox2, Nanog and Lin28 (Yu et al., 2007), and grown in DMEM:Nutrient Mixture F-12 (1:1, Gibco) with 100 U/100 μg penicillin/streptomycin, 10 mM MEM Non-Essential Amino Acids (Gibco), 100 mM sodium pyruvate (Thermo Fisher Scientific, Waltham, MA, USA), 20% KnockOut Serum Replacement (Gibco), 1 mM 2-mercaptoethanol and 4 ng/ml recombinant human basic fibroblast growth factor under hypoxic (5% O2) conditions on 0.1% gelatin-coated plates pre-seeded with 1.3 × 104 cells/cm2 of irradiated mouse embryonic fibroblasts. While the full haplotypes are unknown, eMHF2 cells utilize DUX4 exon 3, suggesting a 4qA161S allele, while HFF3 cells use DUX4 exon 3b, suggesting a 4qA161L allele (Lemmers et al., 2018). HFF3 fibroblasts and 293T cells were maintained in DMEM supplemented with 10% HyClone Fetal Bovine Serum and 100 U/100 μg penicillin/streptomycin. Cell lines are tested periodically for Mycoplasma contamination by the Fred Hutchinson Cancer Research Center Specimen Processing/Research Cell Bank and have not shown evidence of Mycoplasma.
 
-## Cloning, virus production and transgenic cell line generation
+### Cloning, virus production and transgenic cell line generation
 
 To construct FLAG-dCas9-gRNA plasmids, the lentiCRISPRv2 vector (a gift from Feng Zhang, Addgene plasmid #52961) (Sanjana et al., 2014) was digested with AgeI and BamHI, PCR was used to amplify AgeI-3xFLAG-EcoRI from a synthesized template and EcoRI-dCas9-BamHI from pHR-SFFV-KRAB-dCas9-P2A-mCherry (a gift from Jonathan Weissman, Addgene plasmid #60954) (Gilbert et al., 2014), the three fragments were ligated together to create a 3xFLAG-dCas9-HA-2xNLS vector, and then D4Z4 or MYOD1 gRNA were inserted by digesting 3xFLAG-dCas9-HA-2xNLS with BsmBI and ligating it to annealed gRNA oligos. To construct the doxycycline-inducible MBD3L2 plasmid, the MBD3L2 coding region was subcloned into the NheI and SalI sites of the pCW57.1 vector (a gift from David Root, Addgene plasmid #41393). The pGIPZ-shControl and -shMBD3L vectors were obtained from the Fred Hutchinson Cancer Research Center Genomics Shared Resource. Lentiviral particles were produced in 293T cells by co-transfecting the appropriate lentiviral vector with pMD2.G (a gift from Didier Trono, Addgene plasmid #12259) and psPAX2 (a gift from Didier Trono, Addgene plasmid #12260) using Lipofectamine 2000 (Invitrogen, Carlsbad, CA) following the manufacturer’s instructions. To generate polyclonal transgenic cell lines, myoblasts were transduced with lentivirus in the presence of 8 μg/ml polybrene and selected using 2 μg/ml puromycin. Monoclonal transgenic lines were generated by transducing at a low cell density using a low multiplicity of infection (MOI <1) and allowing cells that survived selection to form colonies before individual clones were isolated using cloning cylinders.
 
-## Protein extraction and immunoblotting
+### Protein extraction and immunoblotting
 
 Total protein extracts were generated by lysing cells in SDS sample buffer (500 mM Tris-HCl pH 6.8, 8% SDS, 20% 2-mercaptoethanol, 0.004% bromophenol blue, 30% glycerol) followed by sonication and boiling with 50 mM DTT. Samples were run on NuPage 4–12% precast polyacrylamide gels (Invitrogen) and transferred to nitrocellulose membrane (Invitrogen). Membranes were blocked in PBS containing 0.1% Tween-20% and 5% non-fat dry milk for 1 hr at room temperature before overnight incubation at 4°C with primary antibodies in block solution. Membranes were then incubated for 1 hr at room temperature with horseradish peroxidase-conjugated secondary antibodies in block solution and chemiluminescent substrate (Thermo Fisher Scientific) used for detection on film.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were fixed in PBS containing 2% paraformaldehyde (Electron Microscopy Sciences, Hatfield, PA) for 7 min at room temperature and permeabilized for 10 min in PBS with 0.5% Triton X-100. Samples were then incubated overnight at 4°C with primary antibodies, followed by incubation with appropriate FITC- or TRITC-conjugated secondary antibodies for 1 hr at room temperature prior to DAPI counterstaining and imaging with a Zeiss Axiophot fluorescent microscope, AxioCam MRc digital camera and AxioVision 4.6 software (Carl Zeiss Microscopy, Thornwood, NY). Image J software (Schneider et al., 2012) was used for image analysis and quantification.
 
-## enChIP-qPCR
+### enChIP-qPCR
 
 FLAG-dCas9 chromatin occupancy was analyzed as previously described (Fujita and Fujii, 2013) using chromatin extraction and fragmentation methods from (Forsberg et al., 2000) and the following minor modifications. Five million trypsinized myoblasts were crosslinked with 1% formaldehyde (Thermo Fisher Scientific) for 10 min at room temperature. Chromatin was diluted to 0.5% SDS with IP Dilution Buffer (20 mM Tris pH 8.0, 2 mM EDTA, 150 mM NaCl, 1% Triton X-100, 0.01% SDS, cOmplete EDTA-free Protease Inhibitor Cocktail, 100 mM PMSF) and fragmented to an average length of 500 bp using a Fisher Scientific Model 500 Sonic Dismembrator probe tip sonicator. Soluble chromatin was diluted to 0.2% SDS with IP Dilution Buffer before pre-clearing with 5 μg of mouse IgG conjugated to 20 μl of Dynabeads-Protein G (Thermo Fisher Scientific) followed by immunoprecipitation with 5 μg of anti-FLAG M2 antibody conjugated to 50 μl of Dynabeads-Protein G. Quantitative PCR was carried out on a QuantStudio 7 Flex (Applied Biosystems, Waltham, MA) using locus-specific primers and iTaq SYBR Green Supermix (Bio-Rad Laboratories, Hercules, CA). Primer sequences are listed in Supplementary file 4.
 
-## enChIP-MS
+### enChIP-MS
 
 The enChIP-MS procedure was performed as described previously (Fujita and Fujii, 2013) using chromatin extraction and fragmentation methods from (Forsberg et al., 2000) and the following minor modifications. Forty million myoblasts were harvested by trypsinization and lysed in Cell Lysis Buffer (10 mM Tris pH 8.0, 10 mM NaCl, 0.2% IGEPAL-CA630, cOmplete EDTA-free Protease Inhibitor Cocktail, 100 mM PMSF). The isolated nuclei were crosslinked with 1–2% formaldehyde at room temperature for 10–20 min and then lysed in Nuclei Lysis Buffer (50 mM Tris pH 8.0, 10 mM EDTA, 1% SDS, cOmplete EDTA-free Protease Inhibitor Cocktail, 100 mM PMSF). Chromatin was diluted to 0.5% SDS with IP Dilution Buffer and fragmented using a Fisher Scientific Model 500 Sonic Dismembrator probe tip sonicator to an average length of 3 kb. Sonicated chromatin was diluted to 0.2% SDS with IP Dilution Buffer, pre-cleared with 25 μg of mouse IgG conjugated to 100 μl of Dynabeads-Protein G and immunoprecipitated with 70 μg of anti-FLAG M2 antibody conjugated to 180 μl of Dynabeads-Protein G. An additional two Dynabead washes in Low Salt Wash Buffer replaced the high-salt washes. Eluted and precipitated samples were resuspended in SDS sample buffer, boiled and subjected to SDS-PAGE. Entire gel lanes were excised and proteins analyzed using an OrbiTrap Elite mass spectrometer (Thermo Fisher Scientific) coupled to an Easy-nLC II (Thermo Fisher Scientific) at the Fred Hutchinson Cancer Research Center Proteomics Shared Resource. The raw spectra were searched against a UniProt human protein database that also included common contaminants as defined in Mellacheruvu et al. (2013) using Proteome Discoverer 1.4 software (Thermo Fisher Scientific) to generate peptide-spectrum matches. The number of peptides that mapped to each protein was summarized to generate a ‘pseudoquant’ metric. Proteins with at least one peptide-spectrum match in two experimental replicates were carried forward for further analysis, after filtering out common contaminants. Finally, the UniProt annotations for Function and Subcellular location were used to restrict the analysis to only the nuclear proteins to enrich for biologically relevant, nuclear interactions. The R code used for the proteomics data analysis can be accessed via github (https://github.com/sjaganna/2017-campbell_et_al) (Jagannathan, 2017). The gRNA sequences are listed in Supplementary file 4.
 
-## GO category analysis
+### GO category analysis
 
 GO analysis was carried out with the PANTHER classification system (Mi et al., 2016) using the statistical overrepresentation test against all human genes and the complete GO Biological process annotation. p-Values were corrected for multiple hypothesis testing using the Bonferroni correction.
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 The occupancy of NuRD complex components and acetyl-Histone H4 was determined using crosslinked ChIP coupled with micrococcal nuclease digestion as described previously (Skene and Henikoff, 2015). For acetyl-Histone H4 samples, the Lysis Buffer and IP Dilution Buffer were supplemented with 10 mM sodium butyrate. Quantitative PCR was carried out on a QuantStudio 7 Flex using locus-specific primers and iTaq SYBR Green Supermix. Primer sequences are listed in Supplementary file 4.
 
-## siRNA transfections
+### siRNA transfections
 
 Flexitube and ON-TARGETplus duplex siRNAs were obtained from Qiagen (Hilden, Germany) or GE Dharmacon (Lafayette, CO), respectively. Transfections of siRNAs into myoblasts and iPS cells were carried out using Lipofectamine RNAiMAX (Invitrogen) according to the manufacturer’s instructions. A double transfection protocol was followed in myoblasts to ensure efficient depletion of pre-existing proteins. Briefly, cells were seeded at ~30% confluence in six-well plates and transfected ~20 hr later with 6 μl Lipofectamine RNAiMAX and 25 pmol of either gene-specific siRNA(s) or a scrambled non-silencing control siRNA diluted in 125 μl Opti-MEM Reduced Serum Medium (Thermo Fisher Scientific). Forty-eight hours following this, myoblasts were transfected a second time and harvested for RNA analysis 48–72 hr later. In iPS cells, the same procedure was followed except cells were treated with 10 μM Y-27632 ROCK inhibitor (Miltenyi Biotec, Auburn, CA) for 24 hr before being trypsinized and seeded in mTeSR1 medium (STEMCELL Technologies, Vancouver, BC) at 1 × 105 cells/well on Matrigel (Corning Life Science, Tewksbury, MA)-coated six-well plates, and were harvested 48 hr after a single transfection. The sequences of siRNAs are listed in Supplementary file 4.
 
-## RNA isolation and RT-qPCR
+### RNA isolation and RT-qPCR
 
 Total RNA was extracted from whole cells using the RNeasy Mini Kit (Qiagen) according to the manufacturer’s instructions. The isolated RNA was treated with DNase I (Thermo Fisher Scientific), heat inactivated, and reverse transcribed into cDNA using Superscript III (Thermo Fisher Scientific) and oligo(dT) primers (Invitrogen) following the manufacturer’s protocol. Quantitative PCR was carried out on a QuantStudio 7 Flex using primers specific for each mRNA and iTaq SYBR Green Supermix. The relative expression levels of target genes were normalized to that of the reference genes RPL27, RPL13A or GAPDH by using the delta-delta-Ct method (Livak and Schmittgen, 2001) after confirming equivalent amplification efficiencies of reference and target molecules. Primer sequences are listed in Supplementary file 4.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used: α-Tubulin (T9026); Acetyl-Histone H4 (06–866 lot#2554112, EMD Millipore (Billerica, MA)); CHD4 (A301-081A, Bethyl Laboratories (Montgomery, TX)); FITC anti-mouse (715-095-150 lot#115855, Jackson ImmunoResearch (West Grove, PA)); FLAG M2 (F1804 lot#SLBG5673V and lot#124K6106); FLAG M2 (F3165 lot#SLBL1237V); HDAC2 (ab7029, lot#GR88809-7, Abcam (Cambridge, UK)); HRP anti-mouse (115-035-146, Jackson ImmunoResearch); MBD2 (A301-632A, Bethyl); mouse IgG (315-005-003 lot#120058, Jackson ImmunoResearch); MTA2 (ab8106 lot#GR185489-3, Abcam); TRITC anti-rabbit (711-025-152 lot#114768, Jackson ImmunoResearch); rabbit monoclonal antibodies against DUX4 (E5-5 and E14-3) were produced in collaboration with Epitomics and are described elsewhere (Geng et al., 2012).
 
-## Statistical analysis
+### Statistical analysis
 
 All collected data were included in the analyses. Statistical significance was determined using Mann-Whitney U or Wilcoxon signed-rank tests, as indicated in the corresponding figure legends. As is convention, at least three biological replicates per condition were used for ChIP-qPCR and RT-qPCR, as indicated. Here a biological replicate is defined as an independent culture of cells that was separately manipulated and subsequently analyzed. The enChIP-MS studies were multiple singleton experiments performed using several different gRNA that targeted the same genomic locus, as described. No statistical methods were used to predetermine sample size. Masking was not used during group allocation, data collection or data analysis.
 
-## Accession codes
+### Accession codes
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository (Vizcaíno et al., 2016) with the dataset identifier PXD006839.

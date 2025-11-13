@@ -10,18 +10,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0064kty71 Program in Bioinformatics, Zhongshan School of Medicine and The Fifth Affiliated Hospital, Sun Yat-sen University Guangzhou China
+1. Program in Bioinformatics, Zhongshan School of Medicine and The Fifth Affiliated Hospital, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
 2. Key Laboratory of Tropical Disease Control (Sun Yat-sen University), Ministry of Education Guangzhou China
-3. https://ror.org/0064kty71 Center for Precision Medicine, Sun Yat-sen University Guangzhou China
-4. https://ror.org/045kpgw45 Research Center of Medical Sciences, Guangdong Provincial People's Hospital, Guangdong Academy of Medical Sciences Guangzhou China
-5. https://ror.org/02mh8wx89 The Province and Ministry Co-sponsored Collaborative Innovation Center for Medical Epigenetics, Tianjin Medical University Tianjin China
-6. https://ror.org/023te5r95 Guangdong Provincial Key Laboratory of Biomedical Imaging and Guangdong Provincial Engineering Research Center of Molecular Imaging, The Fifth Affiliated Hospital, Sun Yat-sen University Zhuhai China
+3. Center for Precision Medicine, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
+4. Research Center of Medical Sciences, Guangdong Provincial People's Hospital, Guangdong Academy of Medical Sciences Guangzhou China ([ROR:045kpgw45](https://ror.org/045kpgw45))
+5. The Province and Ministry Co-sponsored Collaborative Innovation Center for Medical Epigenetics, Tianjin Medical University Tianjin China ([ROR:02mh8wx89](https://ror.org/02mh8wx89))
+6. Guangdong Provincial Key Laboratory of Biomedical Imaging and Guangdong Provincial Engineering Research Center of Molecular Imaging, The Fifth Affiliated Hospital, Sun Yat-sen University Zhuhai China ([ROR:023te5r95](https://ror.org/023te5r95))
 
 † Corresponding author
 
 ## Abstract
 
-Linkage disequilibrium and disease-associated variants in the non-coding regions make it difficult to distinguish the truly associated genes from the redundantly associated genes for complex diseases. In this study, we proposed a new conditional gene-based framework called eDESE that leveraged an improved effective chi-squared statistic to control the type I error rates and remove the redundant associations. eDESE initially performed the association analysis by mapping variants to genes according to their physical distance. We further demonstrated that the isoform-level eQTLs could be more powerful than the gene-level eQTLs in the association analysis using a simulation study. Then the eQTL-guided strategies, that is, mapping variants to genes according to their gene/isoform-level variant-gene cis -eQTLs associations, were also integrated with eDESE. We then applied eDESE to predict the potential susceptibility genes of schizophrenia and found that the potential susceptibility genes were enriched with many neuronal or synaptic signaling-related terms in the Gene Ontology knowledgebase and antipsychotics-gene interaction terms in the drug-gene interaction database (DGIdb). More importantly, seven potential susceptibility genes identified by eDESE were the target genes of multiple antipsychotics in DrugBank. Comparing the potential susceptibility genes identified by eDESE and other benchmark approaches (i.e., MAGMA and S-PrediXcan) implied that strategy based on the isoform-level eQTLs could be an important supplement for the other two strategies (physical distance and gene-level eQTLs). We have implemented eDESE in our integrative platform KGGSEE ( http://pmglab.top/kggsee/ #/) and hope that eDESE can facilitate the prediction of candidate susceptibility genes and isoforms for complex diseases in a multi-tissue context.
+Linkage disequilibrium and disease-associated variants in the non-coding regions make it difficult to distinguish the truly associated genes from the redundantly associated genes for complex diseases. In this study, we proposed a new conditional gene-based framework called eDESE that leveraged an improved effective chi-squared statistic to control the type I error rates and remove the redundant associations. eDESE initially performed the association analysis by mapping variants to genes according to their physical distance. We further demonstrated that the isoform-level eQTLs could be more powerful than the gene-level eQTLs in the association analysis using a simulation study. Then the eQTL-guided strategies, that is, mapping variants to genes according to their gene/isoform-level variant-gene cis-eQTLs associations, were also integrated with eDESE. We then applied eDESE to predict the potential susceptibility genes of schizophrenia and found that the potential susceptibility genes were enriched with many neuronal or synaptic signaling-related terms in the Gene Ontology knowledgebase and antipsychotics-gene interaction terms in the drug-gene interaction database (DGIdb). More importantly, seven potential susceptibility genes identified by eDESE were the target genes of multiple antipsychotics in DrugBank. Comparing the potential susceptibility genes identified by eDESE and other benchmark approaches (i.e., MAGMA and S-PrediXcan) implied that strategy based on the isoform-level eQTLs could be an important supplement for the other two strategies (physical distance and gene-level eQTLs). We have implemented eDESE in our integrative platform KGGSEE (http://pmglab.top/kggsee/#/) and hope that eDESE can facilitate the prediction of candidate susceptibility genes and isoforms for complex diseases in a multi-tissue context.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Although much achievement has been attained, identifying independently phenotype
 
 ## Results
 
-## Overview of the present study
+### Overview of the present study
 
 We previously proposed an effective chi-squared statistic called ECS for the unconditional and conditional gene-based association analysis (Li et al., 2019). Then we built a unified framework called DESE to estimate the potentially phenotype-associated tissues based on the conditional gene-based association analysis with ECS and gene selective expression analysis (Jiang et al., 2019). However, we found that the previous ECS was hindered by a potential type I error inflation issue and further undermined the accuracy of DESE. Here we proposed a new conditional gene-based association framework, eDESE (eQTL-guided DESE), which could also perform conditional gene-based association analysis and geneselective expression analysis, to systematically explore the susceptibility genes and tissues associated with complex diseases by using the GWAS summary statistics and multiple gene-variant mapping strategies. eDESE inherited the framework of DESE but had two important advantages over DESE. First, eDESE is built based on a new ECS, with which the type I error could be controlled within a proper level. Second, eDESE expands the conditional gene-based association analysis of DESE by not only using physically nearby SNPs but also using the gene-level and isoform-level cis-eQTLs associations (Figure 1).
 
@@ -47,7 +47,7 @@ We previously proposed an effective chi-squared statistic called ECS for the unc
 
 To evaluate the performance of the new ECS and eDESE, we performed extensive simulations and a real data application to schizophrenia. Specifically, we organized the present study in several sequential parts that cover the optimizing the exponent of chi-squared statistics to control the type I error rates, applying the new ECS to perform conditional gene-based association analysis in simulation data and real-world schizophrenia GWAS summary statistics data. For simplicity and clarity, the model integrating different mapping strategies, that is, physically nearby SNPs (distance), gene-level and isoform-level variant-gene cis-eQTLs associations, were named eDESE:dist, eDESE:gene and eDESE:isoform, respectively.
 
-## Choose the favorable exponent c for the correlation matrix of chi-squared statistics to control the type I error rates
+### Choose the favorable exponent c for the correlation matrix of chi-squared statistics to control the type I error rates
 
 We found that the exponent c in the correlation matrix of chi-squared statistics could determine the deviation of the p-values produced by the ECS tests against the uniform distribution. As shown in Figure 2, the c = 1.0 led to deflated p-values while the c = 2.0 led to inflated p-values in the upper tail of the Q-Q plot against the uniform distribution. This pattern was independent of sample sizes, variant number and phenotype distribution (for binary or continuous traits) (Figure 2). The stable trend determined by the c value also implied that the favorable c, which could properly control the type I error rate, measured by the minimal mean log fold change (MLFC), must be within range 1 and 2. Besides, our theoretical derivation also demonstrated that the c value should be within range 1 and 2. Moreover, it seemed that given the c value, the distributions of p-values were similar at different sample sizes and phenotype distributions. Figure 3 shows the favorable c obtained by the grid search algorithm at 84 different scenarios. As shown in Figure 3, most majority p-values at the sample size 10,000 and 40,000 of binary or continuous phenotypes are overlapped. Again, the favorable c values were approximately independent of trait types, sample sizes and variant number. For the sake of simplicity, we proposed to use the averaged favorable c value, 1.432, and integrated it into the improved ECS.
 
@@ -57,9 +57,9 @@ We found that the exponent c in the correlation matrix of chi-squared statistics
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70779/elife-70779-fig3-v1.jpg)
 
-**Figure 3.:** c values at different simulation scenarios.(a) Binary and continuous phenotypes; (b) Different sample sizes; (c) Different variant number.
+**Figure 3.:** (a) Binary and continuous phenotypes; (b) Different sample sizes; (c) Different variant number.
 
-## The type I error and power of the conditional gene-based association analysis based on the new effective chi-squared statistics (ECS)
+### The type I error and power of the conditional gene-based association analysis based on the new effective chi-squared statistics (ECS)
 
 We then investigated the type I error and power of the conditional gene-based association analysis based on the improved ECS with the favorable exponent c value. As shown in Figure 4, in six different scenarios, the conditional p-values of the genes without truly casual loci approximately follow the uniform distribution U[0,1], regardless of the variance explained by its nearby genes. Moreover, the distribution of conditional p-value was similar to that produced by the conventional likelihood ratio test for the nested linear regression models. These results suggested that the conditional gene-based association analysis based on the improved ECS could produce valid p-values for statistical inference. In contrast, the unconditional association test based on the improved ECS produced an inflated p-value due to the indirect associations produced by the nearby causal genes in the LD block. Concerning the statistical power, we found that conditional gene-based association analysis based on the improved ECS produced smaller p-values than the likelihood ratio test (Figure 5), suggesting a higher statistical power of the former. Another advantage of conditional gene-based association analysis based on the improved ECS over the likelihood ratio test was that the former did not require individual genotypes. The reason might be that the degree of freedom in the latter was inflated by the LD among variants.
 
@@ -71,7 +71,7 @@ We then investigated the type I error and power of the conditional gene-based as
 
 **Figure 5.:** The variant number of the two gene-variant pairs involved in (a)-(f) are the same as that in Figure 4 legend. The difference is: in (a)-(c), the QTL in either gene (former and latter) explained 0.25% of heritability. In (d)-(f), the QTL in either gene explained 0.5% of heritability. One thousand phenotype datasets were simulated for each scenario.
 
-## Apply eDESE:dist to predict the potential susceptibility genes of schizophrenia
+### Apply eDESE:dist to predict the potential susceptibility genes of schizophrenia
 
 We had demonstrated that the conditional gene-based analysis based on the improved ECS was more powerful than the likelihood ratio test in each simulation scenario. To evaluate the performance of the ECS and eDESE in the real-world data, we used a recent large-scale GWAS summary statistics dataset (Trubetskoy et al., 2022) and gene expression profiles (GTEx v8) of multiple human tissues (Consortium, 2020) to identify the susceptibility genes of schizophrenia. We found that the improved ECS identified 739 significant genes without conditioning on gene-expression profiles. Furthermore, we also found 205 significant genes out of the above 739 genes identified by eDESE:dist based on the improved ECS by conditioning on the gene-level expression profiles (see details in Supplementary file 1a).
 
@@ -79,69 +79,621 @@ We then compared the significant susceptibility genes identified by eDESE:dist w
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70779/elife-70779-fig6-v1.jpg)
 
-**Figure 6.:** (a) The Venn diagram shows the overlapped and unique genes identified by MAGMA and eDESE:dist. (b) The bar plot shows the top GO enrichment terms of the overlapped genes. MF: Molecular Function of GO. BP: Biological Process terms of GO. CC: Cellular Component terms of GO. The x-axis label represents the top ( ≤ 10) significant GO enrichment terms (MF, BP, and CC). The y-axis label represents the negative log10 of the adjusted p-value of each term. See also Figure 6—source data 1, Figure 6—source data 2 and Figure 6—source data 3.Figure 6—source data 1.Figure 6—source data 2.Figure 6—source data 3.
+**Figure 6.:** (a) The Venn diagram shows the overlapped and unique genes identified by MAGMA and eDESE:dist. (b) The bar plot shows the top GO enrichment terms of the overlapped genes. MF: Molecular Function of GO. BP: Biological Process terms of GO. CC: Cellular Component terms of GO. The x-axis label represents the top ( ≤ 10) significant GO enrichment terms (MF, BP, and CC). The y-axis label represents the negative log10 of the adjusted p-value of each term. See also Figure 6—source data 1, Figure 6—source data 2 and Figure 6—source data 3.
 
 Further, we performed Gene Ontology (GO) enrichment analysis to study the functional annotations of these significant genes. Interestingly, we found that most GO:BP and GO:CC enrichment terms of the overlapped genes were neuronal-, dendrite- or synaptic signaling-related terms. The GO:MF enrichment terms of the overlapped genes were all about signaling transduction (see examples in Figure 6b and details in Supplementary file 1b). We then found that the unique genes identified by eDESE:dist were enriched with three GO:CC terms, that is, dendrite, dendritic tree and distal axon, which were all dendrite-related terms. However, although the unique genes identified by MAGMA were enriched with thirty-one GO terms, none of these terms were neuronal-, dendrite-, or synaptic signaling-related terms. Moreover, systematic text-mining results in PubMed showed that 67 of the 205 (~32.7%) and 170 of the 619 (~27.5%) potential susceptibility genes had at least two search hits for eDESE:dist and MAGMA, respectively (see details in Supplementary file 1c). The GO enrichment results and the text-mining results both implied the utility of eDESE:dist.
 
-## Evaluate the type I error and power of gene-level eQTLs and isoform-level eQTLs in association analysis based on ECS
+### Evaluate the type I error and power of gene-level eQTLs and isoform-level eQTLs in association analysis based on ECS
 
 Next, we mapped variants to genes (or isoforms) according to their variant-gene/isoform eQTLs associations. Since the isoform-level and corresponding gene-level expression profiles were quantified based on the same RNA-sequencing data, we then investigated the type I error and power of the association analysis by ECS based on the gene-level and isoform-level eQTLs.
 
 We considered the multiple different scenarios that variants affected phenotype through regulating the gene expression. We simulated genotype data, gene-level and isoform-level expression data and corresponding phenotype data. In Table 1, AllVar means that all variants are used in the gene-based association analysis based on ECS. IsoeQTL denotes that the eQTL is associated with a susceptibility isoform. GeneQTL denotes that the eQTL is associated with a gene whose expression is averaged from three susceptibility isoforms (homogeneity). Gen3eQTL and Gen6eQTL denote that the eQTL is associated with a gene whose expression is averaged by three and six isoforms, one of which is the susceptibility isoform (heterogeneity), respectively.
 
+**Table 1.**
+ Type I error and power of different simulation scenarios in association analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenarios</th>
+      <th colspan="3">Important parameters</th>
+      <th colspan="5">Binary trait</th>
+      <th colspan="5">Continuous trait</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Eg</td>
+      <td>Vgp</td>
+      <td>Vge</td>
+      <td>AllVar</td>
+      <td>IsoeQTL</td>
+      <td>GeneQTL</td>
+      <td>Gen3eQTL</td>
+      <td>Gen6eQTL</td>
+      <td>AllVar</td>
+      <td>IsoeQTL</td>
+      <td>GeneQTL</td>
+      <td>Gen3eQTL</td>
+      <td>Gen6eQTL</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3"></td>
+      <td colspan="10">Type I error</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.05</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.002</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.001</td>
+      <td>0.002</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.15</td>
+      <td>0</td>
+      <td>0.002</td>
+      <td>0.001</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.001</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.002</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.002</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3"></td>
+      <td colspan="10">Power</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0</td>
+      <td>0.005</td>
+      <td>0.05</td>
+      <td>0.251</td>
+      <td>0.036</td>
+      <td>0.022</td>
+      <td>0.034</td>
+      <td>0.031</td>
+      <td>0.246</td>
+      <td>0.032</td>
+      <td>0.019</td>
+      <td>0.032</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0</td>
+      <td>0.005</td>
+      <td>0.15</td>
+      <td>0.219</td>
+      <td>0.021</td>
+      <td>0.013</td>
+      <td>0.023</td>
+      <td>0.032</td>
+      <td>0.301</td>
+      <td>0.025</td>
+      <td>0.017</td>
+      <td>0.037</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0</td>
+      <td>0.005</td>
+      <td>0.3</td>
+      <td>0.229</td>
+      <td>0.028</td>
+      <td>0.017</td>
+      <td>0.021</td>
+      <td>0.034</td>
+      <td>0.282</td>
+      <td>0.024</td>
+      <td>0.017</td>
+      <td>0.025</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0.05</td>
+      <td>0</td>
+      <td>0.017</td>
+      <td>0.019</td>
+      <td>0.006</td>
+      <td>0.001</td>
+      <td>0</td>
+      <td>0.017</td>
+      <td>0.027</td>
+      <td>0.009</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0.15</td>
+      <td>0</td>
+      <td>0.213</td>
+      <td>0.221</td>
+      <td>0.113</td>
+      <td>0.054</td>
+      <td>0.002</td>
+      <td>0.245</td>
+      <td>0.245</td>
+      <td>0.132</td>
+      <td>0.068</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0.3</td>
+      <td>0.018</td>
+      <td>0.704</td>
+      <td>0.659</td>
+      <td>0.581</td>
+      <td>0.388</td>
+      <td>0.027</td>
+      <td>0.72</td>
+      <td>0.686</td>
+      <td>0.607</td>
+      <td>0.446</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>0.1</td>
+      <td>0.005</td>
+      <td>0.05</td>
+      <td>0.288</td>
+      <td>0.052</td>
+      <td>0.076</td>
+      <td>0.043</td>
+      <td>0.043</td>
+      <td>0.313</td>
+      <td>0.063</td>
+      <td>0.091</td>
+      <td>0.05</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>0.1</td>
+      <td>0.005</td>
+      <td>0.15</td>
+      <td>0.403</td>
+      <td>0.33</td>
+      <td>0.302</td>
+      <td>0.199</td>
+      <td>0.134</td>
+      <td>0.46</td>
+      <td>0.357</td>
+      <td>0.334</td>
+      <td>0.229</td>
+      <td>0.136</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>0.1</td>
+      <td>0.005</td>
+      <td>0.3</td>
+      <td>0.569</td>
+      <td>0.778</td>
+      <td>0.738</td>
+      <td>0.677</td>
+      <td>0.485</td>
+      <td>0.62</td>
+      <td>0.805</td>
+      <td>0.774</td>
+      <td>0.712</td>
+      <td>0.512</td>
+    </tr>
+  </tbody>
+</table>
+
+_Eg denotes the effect size of gene expression on phenotype. Vgp denotes phenotype variance explained by all variants. Vge denotes gene expression variance explained by all variants._
+
 As shown in Table 1, our simulations' type I error rates are controlled within 0% ~ 0.3% (on average <0.1%) according to the p-value threshold 0.001 (scenarios 1–3). As expected, in scenarios 4–6, where gene expression cannot affect the phenotype (Eg = 0 in Table 1), AllVar is much more powerful than eQTLs. Further, in scenarios 7–12, where gene expression can affect the phenotype, our results suggest that the powers of eQTLs roughly increase with the phenotype variance explained by all variants (Vgp in Table 1) and gene expression variance explained by all variants (Vge in Table 1). Moreover, in scenarios 7–12, associations test totally based on the susceptibility isoforms (IsoeQTL and GeneQTL in Table 1) are more powerful than those based on the gene-level eQTLs. While IsoeQTL is computed based on fewer (i.e. one) susceptibility isoforms than GeneQTL (i.e. three), the power of IsoeQTL is the equal of GeneQTL. Thus, our simulation results revealed that isoform-level eQTLs were more powerful than gene-level eQTLs in association analysis in the scenarios that gene expression could affect the phenotype.
 
-## Estimate the potentially phenotype-associated tissues for schizophrenia
+### Estimate the potentially phenotype-associated tissues for schizophrenia
 
 Like DESE, eDESE can produce phenotype-associated genes and tissues. Therefore, we firstly adopted eDESE:dist to predict the phenotype-associated tissues of schizophrenia and found that all thirteen brain regions were significantly associated with schizophrenia and ranked the top based on the gene-level and isoform-level expression profiles, respectively (see details in Supplementary file 1d).
 
 Since all thirteen brain regions were predicted as the potentially phenotype-associated tissues of schizophrenia by eDESE:dist, removing the possible false positives would be necessary. Then we resorted to the eQTLs and assumed that if a tissue (say T1) is a phenotype-associated tissue, potential susceptibility genes identified based on the eQTLs of T1 will be more likely to be phenotype-associated genes and selectively express in T1 or similar tissues. We then computed the gene-level and isoform-level eQTLs of all thirteen brain regions and predicted the potentially phenotype-associated tissues using eDESE:gene and eDESE:isoform, respectively. Our results showed that the brain (all thirteen brain regions as a whole) was predicted as the schizophrenia-associated tissue based on the gene-level eQTLs of twelve brain regions, respectively (Table 2). However, on the more precise resolution, we found brain was predicted as schizophrenia-associated tissue only based on the isoform-level eQTLs of five brain regions, respectively (Table 2). Thus, the five brain regions were collectively optimized as the potentially phenotype-associated tissues of schizophrenia by eDESE:dist, eDESE:gene, and eDESE:isoform.
 
+**Table 2.**
+ The result about whether the brain was optimized as the schizophrenia-associated tissue based on each brain region’s gene/isoform-level eQTLs.Table 2—source data 1.Tissue significance estimated by eDESE:dist based on the gene-level expression profiles.Table 2—source data 2.Tissue significance estimated by eDESE:dist based on the isoform-level expression profiles.Table 2—source data 3.Tissue significance estimated by eDESE:gene based on the gene-level eQTLs of each brain region.Table 2—source data 4.Tissue significance estimated by eDESE:isoform based on the isoform-level eQTLs of each brain region.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain regions</th>
+      <th>Gene-level eQTL</th>
+      <th>Isoform-level eQTL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brain-Anterior cingulate cortex (BA24)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Brain-Cerebellum</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Brain-Frontal Cortex (BA9)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Brain-Hippocampus</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Brain-Spinal cord (cervical c-1)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Brain-Amygdala</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain-Caudate (basal ganglia)</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain-Cerebellar Hemisphere</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain-Cortex</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain-Hypothalamus</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain-Nucleus accumbens (basal ganglia)</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain-Putamen (basal ganglia)</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain-Substantia nigra</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+_“Yes” denotes that brain (i.e., all thirteen brain tissues) was estimated as the significantly schizophrenia-associated tissue based on the gene/isoform-level eQTLs of the tissue. “No” denotes the contrary. The font names of the optimized brain regions are bold. See also Table 2—source data 1, Table 2—source data 2, Table 2—source data 3 and Table 2—source data 4._
+
 In contrast, we predicted schizophrenia-associated tissues based on the gene-level and isoform-level eQTLs of Muscle Skeletal and Skin Sun Exposed Lower Leg, whose sample sizes were bigger than all the other tissues in GTEx(v8). The prediction results of Muscle Skeletal and Skin Sun Exposed Lower Leg showed that neither of them was predicted to be significant tissues of schizophrenia by using their gene-level and isoform-level eQTLs (see details in Supplementary file 1e), which demonstrated, at least partly, our assumption. Thus, our results showed the utility of integrating the three models of eDESE for optimizing the phenotype-associated tissues.
 
-## The comparison of eDESE:isoform versus eDESE:gene and S-PrediXcan
+### The comparison of eDESE:isoform versus eDESE:gene and S-PrediXcan
 
-## eDESE:isoform can identify more potential susceptibility genes
+#### eDESE:isoform can identify more potential susceptibility genes
 
 Our simulation study demonstrated that association analysis based on the improved ECS with the isoform-level eQTLs was more powerful than with the gene-level eQTLs. We further tested this finding in the real data and identified the potential susceptibility genes for schizophrenia using the eDESE:isoform and eDESE:gene, respectively. We found the number of potential susceptibility genes identified by eDESE:isoform was larger than that of eDESE:gene and S-PrediXcan under the same adjustment filter cutoff (Figure 7a, see details in Supplementary file 1fg and h). We further combined the potential susceptibility genes of the five optimized brain regions identified by S-PrediXcan, eDESE:gene and eDESE:isoform, respectively. Still, we found that the susceptibility genes exclusively identified by eDESE:isoform were the most among the three models (Figure 7b).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/70779/elife-70779-fig7-v1.jpg)
 
-**Figure 7.:** (a) The bar plot shows the count of potential susceptibility genes in each of the five optimized brain regions. (b) The Venn diagram shows the count of the overlapped and unique genes identified by S-PrediXcan, eDESE:gene and eDESE:isoform in the five optimized brain regions. See also Figure 7—source data 1 and Figure 7—source data 2.Figure 7—source data 1.Figure 7—source data 2.
+**Figure 7.:** (a) The bar plot shows the count of potential susceptibility genes in each of the five optimized brain regions. (b) The Venn diagram shows the count of the overlapped and unique genes identified by S-PrediXcan, eDESE:gene and eDESE:isoform in the five optimized brain regions. See also Figure 7—source data 1 and Figure 7—source data 2.
 
-## Potential susceptibility genes identified by eDESE:isoform were supported by more published studies
+#### Potential susceptibility genes identified by eDESE:isoform were supported by more published studies
 
 Then we searched the PubMed database with the combined susceptibility gene set (i.e. 391 genes for S-PrediXcan, 633 genes for eDESE:gene, and 854 genes for eDESE:isoform, Figure 7b) of all five optimized brain regions. We found that 135 genes for S-PrediXcan, 170 genes for eDESE:gene and 247 genes for eDESE:isoform had at least one search hit which reported the associations of these genes with schizophrenia in PubMed database, respectively (see details in Supplementary file 1ij and k).
 
 We also found 138 of the 524 (26.3%) potential susceptibility genes exclusively predicted by eDESE:isoform each had a least one search hit. Moreover, we found that 19 of the 524 (3.6%) potential susceptibility genes each had at least 10 supported papers in PubMed (Table 3, see details in ). Interestingly, TCF4 (transcription factor 4), RGS4 (regulator of G protein signaling 4) and RANGAP1 (Ran GTPase activating protein 1) were reported by more than 100 papers. RGS4 is reported to be biased expressed in brain (O’Leary et al., 2016). TCF4 and RANGAP1 are broadly expressed in the brain, and TCF4 may play an important role in nervous system development (O’Leary et al., 2016).
 
+**Table 3.**
+ The important examples of potential susceptibility genes exclusively predicted by eDESE:isoform.Table 3—source data 1.The PubMed search hits of the unique potential susceptibility genes of schizophrenia identified by eDESE:isoform (compared with S-PrediXcan and eDESE:gene).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th># of hits in PubMed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RGS4</td>
+      <td>&gt; 100</td>
+    </tr>
+    <tr>
+      <td>TCF4</td>
+      <td>&gt; 100</td>
+    </tr>
+    <tr>
+      <td>RANGAP1</td>
+      <td>&gt; 100</td>
+    </tr>
+    <tr>
+      <td>GRIA1</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>GRM3</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>TSPO</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>TPH2</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>FEZ1</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>ZDHHC8</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>VRK2</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>KCNN3</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>NCAM1</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>MIP</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>SLC39A8</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>DLG1</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>BDNF-AS</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>FGA</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>ADRA1A</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>MAPT</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
 Furthermore, we applied the Hetionet (v1.0) (Himmelstein et al., 2017), which encodes knowledge from millions of biomedical studies to connect diseases, genes, anatomies and more, to investigate the above top associations. We set the source node as the susceptibility gene and the target node as schizophrenia using the ‘Connectivity search’ function. We found that RGS4 and RANGAP1 both had multiple significant meta path types indicating their potential associations and mechanisms associated with schizophrenia.
 
-## Potential susceptibility genes identified by eDESE:isoform were enriched with more biologically sensible GO terms
+#### Potential susceptibility genes identified by eDESE:isoform were enriched with more biologically sensible GO terms
 
 Next, we performed the GO enrichment analysis and found that the potential susceptibility genes identified by eDESE guided by the eQTLs (eDESE:gene and eDESE:isoform) had more biologically sensible GO enrichment terms than S-PrediXcan (Table 4). In addition, the GO enrichment results also showed that the potential susceptibility genes identified by eDESE:isoform were enriched with more neuronal, dendritic or synaptic signaling-related biological process GO terms than S-PrediXcan and eDESE:gene.
 
+**Table 4.**
+ The GO enrichment terms of the potential susceptibility genes in each optimized brain region identified by S-PrediXcan, eDESE:gene and eDESE:isoform.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tissue name</th>
+      <th>*S-PrediXcan</th>
+      <th>eDESE:gene</th>
+      <th>eDESE:isoform</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brain-Anterior cingulate cortex (BA24)</td>
+      <td>-</td>
+      <td>Regulation of gap junction assembly (BP)</td>
+      <td>Potassium ion transmembrane transporter activity (MF); potassium: chloride symporter activity (MF); nervous system development (BP); generation of neurons (BP); neurogenesis (BP)</td>
+    </tr>
+    <tr>
+      <td>Brain-Cerebellum</td>
+      <td>Ion binding (MF); cation binding (MF); metal ion binding (MF); intracellular organelle (CC)</td>
+      <td>Dendrite (CC); dendritic tree (CC); neuron projection (CC); postsynapse (CC); synapse (CC)</td>
+      <td>Voltage-gated calcium channel activity involved in cardiac muscle cell action potential (MF); nervous system development (BP)</td>
+    </tr>
+    <tr>
+      <td>Brain-Frontal Cortex (BA9)</td>
+      <td>Intracellular organelle (CC); intracellular membrane-bounded organelle (CC)</td>
+      <td>Somatodendritic compartment (CC); dendrite (CC); dendritic tree (CC); synaptic vesicle membrane (CC); exocytic vesicle membrane (CC)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Brain-Hippocampus</td>
+      <td>Ion binding (MF)</td>
+      <td>-</td>
+      <td>Postsynaptic density (CC); asymmetric synapse (CC)</td>
+    </tr>
+    <tr>
+      <td>Brain-Spinal cord (cervical c-1)</td>
+      <td>-</td>
+      <td>High voltage-gated calcium channel activity (MF); voltage-gated calcium channel activity involved in AV node cell action potential (MF); regulation of B cell tolerance induction (BP); positive regulation of B cell tolerance induction (BP); L-type voltage-gated calcium channel complex (CC)</td>
+      <td>Nitrogen compound transport (BP); organelle (CC)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*MF: Molecular Function terms of GO. BP: Biological Process terms of GO. CC: Cellular Component terms of GO._
+
 We further performed the GO enrichment analysis based on the combined gene lists of all five optimized brain regions for S-PrediXcan, eDESE:gene and eDESE:isoform. However, we found that the 55 genes commonly identified by the three models were enriched with no GO term. Furthermore, the 240 unique genes identified by S-PrediXcan were also enriched with no GO term. On the other hand, the 319 unique genes identified by the eDESE:gene were enriched with ‘integral component of synaptic vesicle membrane’ (CC) and several general GO terms. In comparison, the 524 unique genes identified by eDESE:isoform were enriched with a considerable number of GO terms, in which a few neuronal, dendritic or synaptic signaling-related GO terms were found (Supplementary file 1l).
 
-## Potential susceptibility genes identified by eDESE:isoform were significantly enriched in a biologically sensible consensus module in the brain weighted gene co-expression network
+#### Potential susceptibility genes identified by eDESE:isoform were significantly enriched in a biologically sensible consensus module in the brain weighted gene co-expression network
 
 We then tested the enrichment of the potential susceptibility genes in the consensus modules of the brain weighted gene co-expression network. We found that the potential susceptibility genes identified by eDESE:gene and eDESE:isoform based on the gene-level and isoform-level eQTLs of Brain-Cerebellum were both enriched with a brain consensus module (colored ‘turquoise’) with statistical significance, that is, adjusted p-value = 0.0046 and 0.0061, respectively. Besides, the potential susceptibility genes identified by eDESE:gene based on the gene-level eQTLs of Brain-Frontal Cortex (BA9) were also enriched (adjusted p-value = 0.024) with the consensus module colored ‘turquoise’. However, no enriched consensus module was found for the potential susceptibility genes identified by S-PrediXcan. Moreover, we found that the ‘turquoise’ consensus module contained 7,726 genes and was enriched with plenty of neuronal and synaptic signaling-related GO terms (Figure 8, see details in Supplementary file 1m).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/70779/elife-70779-fig8-v1.jpg)
 
-**Figure 8.:** The x-axis label represents the top (≤10) significant GO enrichment terms (in MF, BP, and CC). The y-axis label represents the negative log10 of the adjusted p-value of each term. See also Figure 8—source data 1 and Figure 8—source data 2.Figure 8—source data 1.Figure 8—source data 2.
+**Figure 8.:** The x-axis label represents the top (≤10) significant GO enrichment terms (in MF, BP, and CC). The y-axis label represents the negative log10 of the adjusted p-value of each term. See also Figure 8—source data 1 and Figure 8—source data 2.
 
-## eDESE:isoform can predict the potential susceptibility isoforms of corresponding phenotype-associated tissues
+#### eDESE:isoform can predict the potential susceptibility isoforms of corresponding phenotype-associated tissues
 
 As shown in Figure 7b, 55 genes were collectively predicted to be susceptible to schizophrenia by S-PrediXcan, eDESE:gene, and eDESE:isoform. As eDESE:isoform could output susceptibility gene-isoform pairs for corresponding tissues, we further got the corresponding susceptibility isoforms of the 55 genes (see details in Supplementary file 1n). Interestingly, we found that the number or type of susceptibility isoforms for a gene varied greatly in the different optimized brain regions. For example, NAGA and CHRNA2 were reported to be associated with schizophrenia by three and seven research papers in the PubMed database, respectively. ENST00000407991 of CHRNA2 was significantly associated with schizophrenia only in Brain-Cerebellum, while ENST00000396398 of NAGA was significantly associated with schizophrenia in all the five optimized brain regions. We also found that different isoforms of the same gene were predicted to be significantly associated with schizophrenia in the different optimized brain regions. For example, SNX19 was reported to be associated with schizophrenia by seven research papers. ENST00000527116 of SNX19 in Brain-Anterior cingulate cortex (BA24), ENST00000528555 of SNX19 in Brain-Cerebellum, ENST00000265909 of SNX19 in Brain-Frontal Cortex (BA9) and Brain-Hippocampus, and ENST00000526579 of SNX19 in Brain-Spinal cord (cervical c-1) were significantly associated with schizophrenia, respectively.
 
 The above comparisons suggested that incorporating isoform-level eQTLs can help eDESE predict more potential susceptibility genes than gene-level eQTLs and S-PrediXcan in each optimized brain region. Our results further pointed that eDESE:isoform could help find some novel, biologically sensible susceptibility genes which S-PrediXcan and eDESE:gene cannot find. Moreover, we also found that the potential susceptibility genes identified by eDESE were enriched with a consensus module in the brain weighted gene co-expression network, which was significantly enriched with plenty of biologically sensible GO terms. Based on the isoform-level eQTLs of each phenotype-associated brain region, eDESE:isoform can also help gain insight into the potential susceptibility isoforms. Thus, our results revealed the potential advantages of eDESE:isoform, at least partly, over eDESE:gene and S-PrediXcan.
 
-## The druggability of the potential susceptibility genes
+### The druggability of the potential susceptibility genes
 
 Since drug target genes with genetic support are twice or as likely to be approved than target genes with no known genetic associations (King et al., 2019; Nelson et al., 2015), we searched the DrugBank database (Wishart et al., 2018) and found that seven potential susceptibility genes identified by eDESE in total (0.976% for eDESE:dist, 0.632% for eDESE:gene and 0.703% for eDESE:isoform) were the target genes of multiple antipsychotics (Table 5). Several popular target genes, such as DRD2 and ADRA1A, were identified by different eDESE models. Besides, we found that three genes (0.485%) of the 619 potential susceptibility genes identified by MAGMA were also the target genes of multiple antipsychotics. One gene (0.256%) of the 391 potential susceptibility genes identified by S-PrediXcan was the target gene of an atypical antipsychotic (i.e. paliperidone). The results suggested that the three models of eDESE could complement each other to identify more susceptibility genes which could be the target genes of the therapeutic drugs.
 
+**Table 5.**
+ The target genes of the antipsychotics predicted as the potential susceptibility genes by MAGMA, S-PrediXcan, and eDESE.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target gene</th>
+      <th>Models</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRD2</td>
+      <td>eDESE:dist &amp; eDESE:gene &amp; eDESE:isoform &amp; MAGMA</td>
+    </tr>
+    <tr>
+      <td>ADRA1A</td>
+      <td>eDESE:isoform</td>
+    </tr>
+    <tr>
+      <td>CHRM3</td>
+      <td>eDESE:gene &amp; eDESE:isoform</td>
+    </tr>
+    <tr>
+      <td>CHRM4</td>
+      <td>eDESE:gene &amp; eDESE:isoform&amp; MAGMA</td>
+    </tr>
+    <tr>
+      <td>OPRD1</td>
+      <td>eDESE:dist</td>
+    </tr>
+    <tr>
+      <td>GABRD</td>
+      <td>eDESE:isoform</td>
+    </tr>
+    <tr>
+      <td>CYP2D6</td>
+      <td>eDESE:gene &amp; eDESE:isoform&amp; MAGMA &amp; S-PrediXcan</td>
+    </tr>
+  </tbody>
+</table>
+
 To further investigate the drug-gene interactions of the potential susceptibility genes, we searched the Drug Gene Interaction database (DGIdb v4.2.0) (Freshour et al., 2021) and kept the drug-gene interaction terms with at least one supported PubMed paper. After the filtration, we kept 30,072 unique drug-gene interaction terms and found 679 unique drug-gene interaction terms for 34 antipsychotics (see details in Supplementary file 1o). Then we put the combined potential susceptibility gene list (identified by MAGMA, S-PrediXcan, eDESE:dist, eDESE:gene and eDESE:isoform, respectively) into DGIdb to investigate if the ‘antipsychotic’-‘potential susceptibility gene’ interaction terms were enriched in the known drug-gene interaction database, that is, DGIdb. As shown in Table 6, we found that ‘antipsychotic’ - ‘potential susceptibility gene’ interaction terms identified by MAGMA and the three models of eDESE were all significantly enriched in DGIdb. We also found 452 drug-gene interaction terms for the susceptibility gene identified by S-PrediXcan. However, only 12 ‘antipsychotic’- ‘potential susceptibility gene’ interaction terms were found (hypergeometric distribution test p-value = 0.33).
+
+**Table 6.**
+ The enrichment of drug-gene interaction terms in DGIdb for the susceptibility genes identified by MAGMA, S-PrediXcan and eDESE.Table 6—source data 1.The drug-gene interaction term results of the potential susceptibility genes of schizophrenia identified by MAGMA in DGIdb.Table 6—source data 2.The drug-gene interaction term results of the potential susceptibility genes of schizophrenia identified by S-PrediXcan in DGIdb.Table 6—source data 3.The drug-gene interaction term results of the potential susceptibility genes of schizophrenia identified by eDESE:dist in DGIdb.Table 6—source data 4.The drug-gene interaction term results of the potential susceptibility genes of schizophrenia identified by eDESE:gene in DGIdb.Table 6—source data 5.The drug-gene interaction term results of the potential susceptibility genes of schizophrenia identified by eDESE:isoform in DGIdb.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th># of antipsychotics-gene interaction terms</th>
+      <th># of total drug-gene interaction terms</th>
+      <th>Enrichment p*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MAGMA</td>
+      <td>57</td>
+      <td>937</td>
+      <td>1.62e-11</td>
+    </tr>
+    <tr>
+      <td>S-PrediXcan</td>
+      <td>12</td>
+      <td>452</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>eDESE:dist</td>
+      <td>34</td>
+      <td>279</td>
+      <td>1.56e-15</td>
+    </tr>
+    <tr>
+      <td>eDESE:gene</td>
+      <td>56</td>
+      <td>968</td>
+      <td>1.65e-10</td>
+    </tr>
+    <tr>
+      <td>eDESE:isoform</td>
+      <td>70</td>
+      <td>1,104</td>
+      <td>8.74e-15</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Enrichment p denotes the p-value of the hypergeometric distribution test. See also Table 6—source data 1, Table 6—source data 2, Table 6—source data 3, Table 6—source data 4, and Table 6—source data 5._
 
 Moreover, we investigated the potential druggability of the potential susceptibility genes. Among the 42 potentially druggable gene categories in DGIdb, we found that the top potentially druggable category for the potential susceptibility genes identified by MAGMA, S-PrediXcan and eDESE all were the “DRUGGABLE GENOME”. The number of “DRUGGABLE GENOME” genes were 168 (27.1%) for MAGMA, 86 (22.0%) for S-PrediXcan, 62 (30.2%) for eDESE:dist, 136 (21.5%) for eDESE:gene and 207 (24.2%) for eDESE:isoform.
 
@@ -167,29 +719,41 @@ In conclusion, in this study, we proposed a new statistical framework to predict
 
 ## Materials and methods
 
-## The new effective chi-squared statistics (ECS) for conditional gene-based association analysis
+### The new effective chi-squared statistics (ECS) for conditional gene-based association analysis
 
-The effective chi-squared statistics, ECS (Li et al., 2019), was improved by using a new correlation matrix of chi-squared statistics, which had two methodological advances to address the potential inflation issue, that is, a type I error-controlled correlation matrix of the observed chi-squared statistics and a non-negative least square solution for the independent chi-squared statistics. Suppose that gene set A contains n loci, to calculate the association p-value of another physically nearby gene (containing m loci) by conditioning on A, the first step of the conditional analysis was to produce the effective chi-squared statistics for A (n loci) and all the genes (n + m loci in total). Each locus had a p-value for phenotype association in the GWAS. The p-values can be converted to corresponding chi-squared statistics with the degree of freedom 1. According to Li et al., 2019, each locus could be assumed to have a virtually independent chi-squared statistic. An observed marginal chi-squared statistic of a locus was equal to the summation of its virtually independent chi-squared statistic and the weighted virtually independent chi-squared statistic of the nearby loci. The weight was related to the correlation of chi-squared statistics, a key parameter of the analysis. The correlation of chi-squared statistics between two loci was approximated by the absolute value of genotypic correlation to the power of c, that is, |r|c. We derived that exponent c ranged from 1 to 2, corresponding to different noncentrality parameters of a non-central chi-squared distribution (See the derivation in the third section of Materials and methods). The n virtually independent chi-squared statistics of the gene set A could be approximated by a linear transformation of the n observed chi-squared statistics by Formula (1),(1)[x´12d1......x´n2dn]≈[1...|r1,n|c...1...|rn,1|c...1]−1×[x121......xn21]
+The effective chi-squared statistics, ECS (Li et al., 2019), was improved by using a new correlation matrix of chi-squared statistics, which had two methodological advances to address the potential inflation issue, that is, a type I error-controlled correlation matrix of the observed chi-squared statistics and a non-negative least square solution for the independent chi-squared statistics. Suppose that gene set A contains n loci, to calculate the association p-value of another physically nearby gene (containing m loci) by conditioning on A, the first step of the conditional analysis was to produce the effective chi-squared statistics for A (n loci) and all the genes (n + m loci in total). Each locus had a p-value for phenotype association in the GWAS. The p-values can be converted to corresponding chi-squared statistics with the degree of freedom 1. According to Li et al., 2019, each locus could be assumed to have a virtually independent chi-squared statistic. An observed marginal chi-squared statistic of a locus was equal to the summation of its virtually independent chi-squared statistic and the weighted virtually independent chi-squared statistic of the nearby loci. The weight was related to the correlation of chi-squared statistics, a key parameter of the analysis. The correlation of chi-squared statistics between two loci was approximated by the absolute value of genotypic correlation to the power of c, that is, |r|c. We derived that exponent c ranged from 1 to 2, corresponding to different noncentrality parameters of a non-central chi-squared distribution (See the derivation in the third section of Materials and methods). The n virtually independent chi-squared statistics of the gene set A could be approximated by a linear transformation of the n observed chi-squared statistics by Formula (1),
 
-where x´n2(≥0) , dn ( > 0), xn2 and |ri,j| denoted a virtually independent chi-squared statistic, degree of freedom of the virtually independent chi-squared statistic, an observed chi-squared statistic and the absolute value of the LD correlation coefficient (approximated by genotypic correlation), respectively. The effective chi-squared statistic S´n with the degree of freedom d´n of the n loci was then obtained by Formula (2):(2){S´n=Σi=1nx´i2d´n=Σi=1ndi
+$$
+[x´_{1}^{2}d_{1}......x´_{n}^{2}d_{n}]≈[1...|r_{1,n}|^{c}...1...|r_{n,1}|^{c}...1]^{−1}\times[x_{1}^{2}1......x_{n}^{2}1]
+$$
 
-The effective chi-squared statistics (S´n+m) and degree of freedom (d´n+m) of the n + m loci were calculated in the same way. The effective chi-squared statistics of the m loci conditioning on the n loci were approximated by Formula (3),(3)S´m|n=S´n+m−S´n
+where $x´_{n}^{2}(\geq0)$ , $d_{n}$ ( > 0), $x_{n}^{2}$ and $|r_{i,j}|$ denoted a virtually independent chi-squared statistic, degree of freedom of the virtually independent chi-squared statistic, an observed chi-squared statistic and the absolute value of the LD correlation coefficient (approximated by genotypic correlation), respectively. The effective chi-squared statistic $S´_{n}$ with the degree of freedom $d´_{n}$ of the n loci was then obtained by Formula (2):
 
-with the degree of freedom d´m|n=d´n+m−d´n . Because d´m|n was no longer an integer, we used the Gamma distribution to calculate the p-values. Given the above statistics and degree of freedom, the p-value was equal to F(x≥S´m|n2;d´m|n2,2) , where the F(x) function was the cumulative distribution function of a Gamma distribution.
+$$
+{S´_{n}=Σ_{i=1}^{n}x´_{i}^{2}d´_{n}=Σ_{i=1}^{n}d_{i}
+$$
+
+The effective chi-squared statistics ($S´_{n+m}$) and degree of freedom ($d´_{n+m}$) of the n + m loci were calculated in the same way. The effective chi-squared statistics of the m loci conditioning on the n loci were approximated by Formula (3),
+
+$$
+S´_{m|n}=S´_{n+m}−S´_{n}
+$$
+
+with the degree of freedom $d´_{m|n}=d´_{n+m}−d´_{n}$ . Because $d´_{m|n}$ was no longer an integer, we used the Gamma distribution to calculate the p-values. Given the above statistics and degree of freedom, the p-value was equal to $F(x\geq\frac{S´_{m|n}}{2};\frac{d´_{m|n}}{2},2)$ , where the F(x) function was the cumulative distribution function of a Gamma distribution.
 
 Because the virtually independent chi-squared statistics and degree of freedom were expected to be larger than 0, we adopted a sequential coordinate-wise algorithm to approximate them (Franc et al., 2005). This algorithm avoided unstable solutions in Formula (1) due to stochastic errors in the correlation matrix and observed chi-squared statistics.
 
-## Choose the favorable c value for the correlation matrix of chi-squared statistics
+### Choose the favorable c value for the correlation matrix of chi-squared statistics
 
 After multiple approximations, the analytic solution for the exponent c in Formula (1) was still difficult to obtain. We proposed a grid search algorithm to find a favorable value of exponent c to control the type I error rates of ECS. The type I error rate was examined by the departure between the obtained and the theoretical (under the uniform distribution) top 1% p-values given a c value, measured as mean log fold change (MLFC) (Tokheim et al., 2016). In the grid search process, we increased c from 1.00 to 2.00 by an interval of 0.01. The c value leading to the minimal MLFC was defined as the favorable c value. We considered in total 84 parameter settings, i.e., a combination of three different sample sizes (10,000, 20,000 and 40,000) and 14 different variant number (10, 30, 50, 80, 100, 125, 150, 200, 250, 300, 400, 500, 800, and 1000) for both binary and continuous traits, respectively. For a parameter setting, 40,000 datasets were simulated and used to produce p-values to determine the favorable c value. A region on chromosome 2 [chr2: 169,428,016–189,671,923] was randomly drawn for the simulation. The allele frequencies and LD structure of variants in the European panel of the 1000 Genomes Project were used as a reference to simulate genotype data by the HapSim algorithm (Montana, 2005). Each subject was randomly assigned a phenotype value under the null hypothesis according to the Bernoulli or Gaussian distribution. The Wald test, which encoded the major and minor allele as 0 and 1 under either logistic regression or linear regression, was used to produce the association p-value at each variant. The p-values of the variants were then analyzed by the effective chi-squared test for the gene-based association analysis.
 
-## Approximate the correlation of chi-square statistics under the alternative Hypothesis
+### Approximate the correlation of chi-square statistics under the alternative Hypothesis
 
-Let two normal random variables X ∼N(μ1,σ12) and Y ∼N(μ2,σ22) have covariance a. Note that a squared normal random variable has non-central chi-square distribution, and the squared mean of the variable is called noncentrality parameter. The two variables can also be factorized as X=μ1+σ1U, Y=μ2+σ2(ρU+1−ρ2V) where U,V∼iidN(0,1) and ρ=a/(σ1σ2) .
+Let two normal random variables $X ∼N(\mu_{1},\sigma_{1}^{2})$ and $Y ∼N(\mu_{2},\sigma_{2}^{2})$ have covariance a. Note that a squared normal random variable has non-central chi-square distribution, and the squared mean of the variable is called noncentrality parameter. The two variables can also be factorized as $X=\mu_{1}+\sigma_{1}U$, $Y=\mu_{2}+\sigma_{2}(ρU+\sqrt{1−ρ^{2}}V)$ where $U,V∼iidN(0,1)$ and $ρ=a/(\sigma_{1}\sigma_{2})$ .
 
-Then we can calculate the correlation of the two non-central chi-square variables X2 and Y2 by the factorized variables, cor(X2,Y2)=2μ1μ2a+a22μ12σ12+σ142μ22σ22+σ24 . Suppose X is the z-score of the true casual variant, and Y is the z-score of a non-functional variant in LD (coefficient r) with the causal variant. One can assume μ2=rμ1 , σ12=1 , σ22=1 and a = r. Therefore, the correlation of X2 and Y2 can be simplified as, c′=2r2μ12+r22μ12+12μ12r2+1 .
+Then we can calculate the correlation of the two non-central chi-square variables X2 and Y2 by the factorized variables, $cor(X^{2},Y^{2})=\frac{2\mu_{1}\mu_{2}a+a^{2}}{\sqrt{2\mu_{1}^{2}\sigma_{1}^{2}+\sigma_{1}^{4}}\sqrt{2\mu_{2}^{2}\sigma_{2}^{2}+\sigma_{2}^{4}}}$ . Suppose X is the z-score of the true casual variant, and Y is the z-score of a non-functional variant in LD (coefficient r) with the causal variant. One can assume $\mu_{2}=r\mu_{1}$ , $\sigma_{1}^{2}=1$ , $\sigma_{2}^{2}=1$ and a = r. Therefore, the correlation of X2 and Y2 can be simplified as, $c^{′}=\frac{2r^{2}\mu_{1}^{2}+r^{2}}{\sqrt{2\mu_{1}^{2}+1}\sqrt{2\mu_{1}^{2}r^{2}+1}}$ .
 
-Under the null hypothesis, μ1=0 then cor(X2,Y2)=r2 . Under the alternative hypothesis, μ12 is the noncentrality parameter (λ). According to Sham and Purcel (Sham and Purcell, 2014), the noncentrality parameter can be approximated by the following Formula for a quantitative phenotype, μ12=λ=N2β2p(1−p)Residualvarianceofphenotype, where N, p and β are the sample sizes, allele frequency and the regression coefficient (corresponding to effect size), respectively. This Formula can be extended for qualitative phenotype under a liability threshold model. N is very large for a large sample, and the noncentrality parameter will be large for common variants. Therefore, the correlation of X2 and Y2 converges to |r| as λ→∞,cor(X2,Y2)= 2|r|2+1μ122+1r2μ12+r22μ12+12r2μ12+1= 2|r|2+1λ2+1λr2+r22λ+12λr2+1→|r|.
+Under the null hypothesis, $\mu_{1}=0$ then $cor(X^{2},Y^{2})=r^{2}$ . Under the alternative hypothesis, $\mu_{1}^{2}$ is the noncentrality parameter (λ). According to Sham and Purcel (Sham and Purcell, 2014), the noncentrality parameter can be approximated by the following Formula for a quantitative phenotype, $\mu_{1}^{2}=\lambda=N\frac{2\beta^{2}p(1−p)}{Residualvarianceofphenotype}$, where N, p and β are the sample sizes, allele frequency and the regression coefficient (corresponding to effect size), respectively. This Formula can be extended for qualitative phenotype under a liability threshold model. N is very large for a large sample, and the noncentrality parameter will be large for common variants. Therefore, the correlation of X2 and Y2 converges to |r| as $\lambda→∞$,$cor(X^{2},Y^{2})=$ $\frac{2|r|}{\sqrt{2+\frac{1}{\mu_{1}^{2}}}\sqrt{2+\frac{1}{r^{2}\mu_{1}^{2}}}}+\frac{r^{2}}{\sqrt{2\mu_{1}^{2}+1}\sqrt{2r^{2}\mu_{1}^{2}+1}}=$ $\frac{2|r|}{\sqrt{2+\frac{1}{\lambda}}\sqrt{2+\frac{1}{\lambdar^{2}}}}+\frac{r^{2}}{\sqrt{2\lambda+1}\sqrt{2\lambdar^{2}+1}}→|r|$.
 
 Overall, the correlation between the two (non-central) chi-square ranges can be approximated as |r|c', in which the c' ranges from 1 to 2. In simulation studies, we also showed that as the relative risk ratio increased to 1.5 in a moderate sample of 1000 cases and 1000 controls, the correlation of X2 and Y2 became close to |r| (See Figure 9).
 
@@ -197,63 +761,71 @@ Overall, the correlation between the two (non-central) chi-square ranges can be 
 
 **Figure 9.:** (a) Under the additive model; (b) Under the multiplicative model. The allele frequencies are assigned randomly.
 
-## The conditional gene-based association analysis for genome-wide association study
+### The conditional gene-based association analysis for genome-wide association study
 
 In a GWAS, the p-values of all genes in the unconditional gene-based association analysis were firstly calculated using the above effective chi-squared statistics. Then, for a given p-value cutoff, the significant genes were extracted and subjected to the conditional gene-based association analysis. Multiple significant genes in an LD block were conditioned one by one in a pre-defined order. The order of the gene was defined according to the unconditional p-value of the gene. Here the genes within 5 Mb were assigned into the same LD block. The conditional p-value of the first gene was defined as its unconditional p-value. The conditional p-value of the second gene was obtained by conditioning on the first gene, and that of the third gene was obtained by conditioning on the first two genes. The conditional p-values of subsequent genes were calculated according to the same procedure.
 
-## Investigate the type I error and power of the conditional gene-based association analysis
+### Investigate the type I error and power of the conditional gene-based association analysis
 
-Independent computer simulations based on a different reference population (i.e., EAS) and genomic regions were performed to investigate type I error and the power of the conditional gene-based association analysis. To approach the association redundancy pattern in realistic scenarios, we used the real genotypes and simulated phenotypes. The high-quality genotypes of 2,507 Chinese subjects from a GWAS were used (Kung et al., 2010), and phenotypes of subjects were simulated according to the genotypes under an additive model. Given total variance explained by n independent variants, Vg, the effect of an allele at a bi-allelic variant was calculated by a=Vg/[∑i=1n2PAi(1−PAi)] , where PAi was the frequency of alternative alleles. The total expected effect A of a subject was equal to a*[the number of alternative alleles of all the n variants]. Each subject’s phenotype was simulated by P = A + e, where e was sampled from a normal distribution N(0, 1-Vg). We randomly sampled three pairs of genes, i.e., SIPA1L2 vs. LOC729336, CACHD1 vs. RAVER2, and LOC647132 vs. FAM5C, representing three scenarios where the nearby gene (i.e., the first gene) had similar (SIPA1L2 vs. LOC729336), larger (CACHD1 vs. RAVER2) and smaller (LOC647132 vs. FAM5C) variant number than the target gene (i.e., the second gene) in terms of SNP number, respectively. The target gene had no QTLs in the type I error investigation, while the nearby gene had one or two QTLs. In the investigation of the statistical power, both the target and nearby genes had QTLs.
+Independent computer simulations based on a different reference population (i.e., EAS) and genomic regions were performed to investigate type I error and the power of the conditional gene-based association analysis. To approach the association redundancy pattern in realistic scenarios, we used the real genotypes and simulated phenotypes. The high-quality genotypes of 2,507 Chinese subjects from a GWAS were used (Kung et al., 2010), and phenotypes of subjects were simulated according to the genotypes under an additive model. Given total variance explained by n independent variants, Vg, the effect of an allele at a bi-allelic variant was calculated by $a=\sqrt{V_{g}/[\sumi=1n2P_{A_{i}}(1−P_{A_{i}})]}$ , where $P_{A_{i}}$ was the frequency of alternative alleles. The total expected effect A of a subject was equal to a*[the number of alternative alleles of all the n variants]. Each subject’s phenotype was simulated by P = A + e, where e was sampled from a normal distribution N(0, 1-Vg). We randomly sampled three pairs of genes, i.e., SIPA1L2 vs. LOC729336, CACHD1 vs. RAVER2, and LOC647132 vs. FAM5C, representing three scenarios where the nearby gene (i.e., the first gene) had similar (SIPA1L2 vs. LOC729336), larger (CACHD1 vs. RAVER2) and smaller (LOC647132 vs. FAM5C) variant number than the target gene (i.e., the second gene) in terms of SNP number, respectively. The target gene had no QTLs in the type I error investigation, while the nearby gene had one or two QTLs. In the investigation of the statistical power, both the target and nearby genes had QTLs.
 
 The likelihood ratio test based on the linear regression was adopted for power comparison to perform the conditional gene-based association analysis with raw genotypes. In the full model, genotypes of all SNPs encoded as 0, 1, or 2 according to the number of alternative variants entered the regression model as explanatory variables. In the subset model, the SNPs of the nearby genes entered the regression model. The calculation of the likelihood ratio test was performed according to the conventional procedure. The R packaged "lmtest" (version 0.9.37) was adopted to perform the likelihood ratio test.
 
-## Investigate the power and type I error of gene-level eQTLs and isoform-level eQTLs in gene-based association analysis
+### Investigate the power and type I error of gene-level eQTLs and isoform-level eQTLs in gene-based association analysis
 
-The same region on chromosome 2 [chr2: 169,428,016–189,671,923] was considered for the simulation. In the EUR panel of 1000 Genomes Project (Auton et al., 2015), this region contains 1,600 common variants (MAF >0.05). Genotypes of the variants were simulated given allelic frequencies and LD correlation matrix according to the HapSim algorithm (Montana, 2005). Phenotypes were simulated under a polygenic model of random effect (Bulik-Sullivan et al., 2015). According to severe LD pruning (r2 <0.01), eighty-two independent variants were extracted from the 1,600 variants. The SNPs' genotypes (s) contributing to the phenotypes were then standardized as, g=s-2q/2q1-q , where q was the allele frequency of the alterative allele. Phenotypes were simulated under a polygenic model of random effect (Bulik-Sullivan et al., 2015). We assumed that 40% of the independent causal variants (mX) regulated gene expression (total heritability hX2). The expression of a gene (X) was simulated according to Formula (4):(4)X=∑i=1mXgiβX,i+ϵX
+The same region on chromosome 2 [chr2: 169,428,016–189,671,923] was considered for the simulation. In the EUR panel of 1000 Genomes Project (Auton et al., 2015), this region contains 1,600 common variants (MAF >0.05). Genotypes of the variants were simulated given allelic frequencies and LD correlation matrix according to the HapSim algorithm (Montana, 2005). Phenotypes were simulated under a polygenic model of random effect (Bulik-Sullivan et al., 2015). According to severe LD pruning (r2 <0.01), eighty-two independent variants were extracted from the 1,600 variants. The SNPs' genotypes (s) contributing to the phenotypes were then standardized as, $g=s-2q/\sqrt{2q1-q}$ , where q was the allele frequency of the alterative allele. Phenotypes were simulated under a polygenic model of random effect (Bulik-Sullivan et al., 2015). We assumed that 40% of the independent causal variants (mX) regulated gene expression (total heritability $h_{X}^{2}$). The expression of a gene (X) was simulated according to Formula (4):
 
-Where βX,i∼N(0,hX2/mX) and ϵX∼N(0,1−hX2).
+$$
+X=\sumi=1m_{X}g_{i}\beta_{X,i}+ϵ_{X}
+$$
 
-The gene expression then contributed δ to a phenotype (Y). The phenotype value was simulated according to the Formula (5):(5)Y=δX+∑i=1mYgiβY,i+ϵY
+Where $\beta_{X,i}∼N(0,h_{X}^{2}/m_{X})$ and $ϵ_{X}∼N(0,1−h_{X}^{2})$.
 
-where Y was a continuous phenotype, βY,i ∼N(0,hY2/mY) and ϵY ∼N(0,1−hY2−δ2) . For a binary phenotype, a cutoff t was set according to a given disease prevalence K under a standard normal distribution and the liability threshold model (Gillett et al., 2018). Subjects with simulated Y values ≥ t were set as patients, and others were set as normal controls.
+The gene expression then contributed $\delta$ to a phenotype (Y). The phenotype value was simulated according to the Formula (5):
+
+$$
+Y=\deltaX+\sum_{i=1}^{m_{Y}}g_{i}\beta_{Y,i}+ϵ_{Y}
+$$
+
+where Y was a continuous phenotype, $\beta_{Y,i} ∼N(0,h_{Y}^{2}/m_{Y})$ and $ϵ_{Y} ∼N(0,1−h_{Y}^{2}−\delta^{2})$ . For a binary phenotype, a cutoff t was set according to a given disease prevalence K under a standard normal distribution and the liability threshold model (Gillett et al., 2018). Subjects with simulated Y values ≥ t were set as patients, and others were set as normal controls.
 
 When a gene had multiple isoforms, we assumed that one of the isoforms was associated with phenotype, and we simulated the expression values of the isoform according to Formula (5). The expression values of the remaining isoforms were simulated by the standard normal distribution N(0,1). The expression profile of a gene with multiple isoforms was averaged by all the isoforms belonging to the gene. The gene-level eQTLs and isoform-level eQTLs were examined by the Wald test under the linear regression model. The variant-phenotype association analysis was performed based on the conventional association analysis procedure, and the statistical significance cutoff was p-value < 0.001. For each parameter setting, t (an integer) datasets were simulated, and the power and type I error were estimated by m/t, in which m was the number of datasets with significant p-values for testing δ.
 
-## Genome-wide association study of schizophrenia
+### Genome-wide association study of schizophrenia
 
 The schizophrenia GWAS included 53,386 cases and 77,258 controls of European ancestry samples (hg19 assembly). Genotypes in the CEU panel from the 1000 Genomes Project were used to correct for the relatedness of the summary statistics. The variants in the major histocompatibility complex (MHC) region, i.e., chr6:27,477,797–34,448,354, were excluded in the present study because of the high polymorphism. Detailed descriptions of population cohorts, quality control methods and association analysis methods can be found in reference (Trubetskoy et al., 2022).
 
-## The Genotype-Tissue Expression (GTEx) Project
+### The Genotype-Tissue Expression (GTEx) Project
 
 The GTEx project (release v8, RRID:SCR_013042) created a resource including whole-genome sequence data and RNA sequencing data from ~900 deceased adult donors (Consortium, 2020). Four tissues or cell types (i.e., whole blood, stomach, pancreas and pituitary) were filtered out in the following analyses because of their small sample sizes or weak correlations with most other tissues.
 
-## g:Profiler and Hetionet
+### g:Profiler and Hetionet
 
 All GO enrichment analyses were performed by g:Profiler (Raudvere et al., 2019). g:Profiler (RRID:SCR_006809) is based on Fisher’s one-tailed test. The statistical p-value is multiple testing-corrected. The GO enrichment analysis uses the set of all annotated protein-coding genes for Homo sapiens (Human) as background. Significant GO terms were filtered by the threshold of "Padj" < 0.05. The bar plots of GO enrichment terms were drawn based on R-4.0.3.
 
 Hetionet (Himmelstein et al., 2017) integrates relationships among genes, compounds, diseases, and more from 29 different databases. It can help researchers refine their phenotype-gene associations by considering anatomies, biological processes, side-effects, symptoms and more.
 
-## Construct the weighted gene co-expression network for brain and perform the consensus analysis
+### Construct the weighted gene co-expression network for brain and perform the consensus analysis
 
 The thirteen brain regions' fully processed, filtered, and normalized gene-level expression profiles in GTEx (v8) were used. Consensus network analysis and module identification were performed based on the "WGCNA" (v1.69, RRID:SCR_003302) (Langfelder and Horvath, 2008). For each dataset, WGCNA was performed to build a signed gene co-expression network following the standard procedure, and the soft-threshold was finally set as 12 after testing a series of soft-threshold powers (ranging from 2 to 20). As for constructing the block-wise consensus modules, the hierarchical cluster tree in the co-expression network was cut into gene modules using the dynamic tree cut algorithm with a minimum module size of 30 genes (Langfelder et al., 2008). The parameter of "networkCalibration" was set as "single quantile". The "consensusQuantile" and "calibrationQuantile" were both set as 0.95. The parameter of "deepSplit" was set as 3. Other parameters were used as recommended by WGCNA. The co-expression analysis and consensus clustering analysis produced eighteen consensus modules, in which the module sizes ranged from 41 to 7,726. The significant consensus modules were filtered by the threshold of "Padj" < 0.05.
 
-## Drug Gene Interaction Database (DGIdb)
+### Drug Gene Interaction Database (DGIdb)
 
 DGIdb (v4.2.0, RRID:SCR_006608) provides a resource of genes that have the potential to be druggable and contains two main classes of druggable genome information (Freshour et al., 2021). The first class includes genes with known drug interactions, and the other includes genes that are potentially druggable according to their membership in gene categories associated with druggability.
 
-## PubMed text-mining analysis
+### PubMed text-mining analysis
 
 To find supports from the published research, we performed a text-mining analysis based on PubMed database on August 27th, 2021 using a java script. We put each gene symbol name or its synonyms into the PubMed database with the items of “((schizophrenia[tiab]+ OR + Schizophrenia[tiab]+ OR + SCZ[tiab])+ AND + (genename[tiab])+ AND + (gene[tiab]+ OR + genes[tiab]+ OR + mRNA[tiab]+ OR + protein[tiab]+ OR + proteins[tiab]+ OR + transcription[tiab]+ OR + transcript[tiab]+ OR + transcripts[tiab]+ OR + expressed[tiab]+ OR + expression[tiab]+ OR + expressions[tiab]+ OR + locus[tiab]+ OR + loci[tiab]+ OR + SNP[tiab]))&datetype = edat&retmax = 100”. The java script output a file with the first column representing gene name, the second column representing the synonym of the gene name and the last column representing the PubMed ids of hit papers.
 
-## Identify the potentially phenotype-associated tissues of schizophrenia
+### Identify the potentially phenotype-associated tissues of schizophrenia
 
 To estimate the potentially phenotype-associated tissues, eDESE:dist, eDESE:gene and eDESE:isoform were used, respectively. The Genotypes in the EUR panel from the 1000 Genomes Project (phase 3) were downloaded from IGSR and used as reference genotype data. Three columns, that is., chromosome identifier, base-pair position and p-value in the GWAS summary statistics, were used. SNPs with minor allele frequency (MAF) less than 0.05 were excluded. Genes approved by HGNC (HGNC Database, H.G.N.C.H, 2021) were included in the following analyses. The multiple testing adjustment method was Bonferroni correction, and the cutoff for the adjusted p-value was set as p-value < 0.05. The threshold for filtering the significant phenotype-associated tissues was set as α = 0.05/50 = 1e-3. The detailed commands of eDESE to identify the potential phenotype-associated tissues are described on the KGGSEE website and the original paper (Jiang et al., 2019).
 
-## Identify gene-level and isoform-level eQTLs
+### Identify gene-level and isoform-level eQTLs
 
 The present study focused on the cis-eQTLs. Specifically, two files (expression profiles and corresponding genotype data file from the European ancestry subjects in GTEx v8) were put into KGGSEE to produce the gene/isoform-level eQTLs for each tissue. Two levels (gene-level and isoform-level) expression profiles of 50 tissues were downloaded from the GTEx v8 project and were normalized as GTEx did (https://gtexportal.org/home/documentationPage). Genes/isoforms were selected based on TPM >0.1 and read count ≥6 in at least 20% of all samples. Only variants with MAF ≥0.05 were included in the eQTLs identification. GTEx v8 is based on the human reference genome GRCh38/hg38. Thus, to be consistent with the GWAS results of schizophrenia (hg19 assembly), we converted the GRCh38/hg38 coordinates into hg19 by using the UCSC LiftOver (Hinrichs et al., 2006). Variants with Hardy-Weinberg disequilibrium (HWD) test p-value < 1.0e-3 were filtered out. The mapping window was defined as 1 Mb up- and downstream of the gene boundary. The covariates used in eQTLs identification include donor sex, age and death classification. The threshold for selecting the gene-level/isoform-level eQTLs was p-value < 0.01.
 
-## Estimate the potential susceptibility genes and isoforms
+### Estimate the potential susceptibility genes and isoforms
 
 For eDESE:dist, if a variant was within ±5 kb around a gene boundary, the variant will be mapped to the gene according to a gene model, for example, RefSeqGene. For eDESE:gene and eDESE:isoform, a variant was mapped to a gene or isoform if the variant is a gene/isoform-level eQTL of the gene or isoform.
 
@@ -267,14 +839,14 @@ In the following iteration, genes/isoforms with higher tissue-selective expressi
 
 The detailed commands, input and output datasets of eDESE can be seen on the KGGSEE website. The bar plot of the comparison of potential susceptibility genes was drawn based on R-4.0.3. The venn diagram was drawn based on a web app Venny 2.1.0.
 
-## MAGMA
+### MAGMA
 
 MAGMA (RRID:SCR_005757) is a popular tool for gene and generalized gene-set analysis based on the GWAS summary statistics. Here the parameters and options were used as recommended by MAGMA (v 1.09). Annotation analysis was performed based on the SNP and gene location files (hg19, build 37). The SNP location information was extracted from the GWAS summary statistics file of schizophrenia. Both gene location and reference data were downloaded from the MAGMA website. An SNP was mapped to a gene if the SNP was in the window of ±5 kb around the gene boundary (same as eDESE:dist). Then the gene analysis was performed based on the annotation results and reference data file which was created from Phase 3 of 1000 Genomes of the European population in reference to the human genome (build 37). Multiple testing was corrected by using Bonferroni correction. Significant genes were filtered by "Padj" < 0.05.
 
-## S-PrediXcan
+### S-PrediXcan
 
 S-PrediXcan is command-line based and implemented with python environment and mainly uses summary statistics. To estimate the disease-associated genes of each tissue, we prepared three input files, that is, schizophrenia GWAS summary statistics file, a transcriptome prediction model database file and a file with the covariance matrices of the SNPs within each gene model (Barbeira et al., 2018; Gamazon et al., 2015; Barbeira et al., 2021). Here, GTEx-based tissues and 1000 Genomes covariances precalculated data from the PredictDB repository were downloaded (http://predictdb.org), and the MASHR-based model based on the expression data of GTEx v8 release was used. Other options and parameters were used as recommended. Multiple testing was corrected by using Bonferroni correction. Significant genes in each tissue were filtered by "Padj" < 0.05.
 
-## Data availability statement
+### Data availability statement
 
 All the data used in this study are from public resources. The source data files for the main figures and tables in the manuscript have been provided and are specified in Source Data. The annotations of drug-gene interaction terms are publicly available in Drug Gene Interaction (DGIdb v4.2.0) database in https://dgidb.org. The information on FDA-approved antipsychotics was extracted from DrugBank 5.1.1, which can be freely downloaded from https://go.drugbank.com/releases/5-1-1/downloads/all-full-database with a simple registration for academic users. The functional enrichment analyses were performed by g:Profiler in https://biit.cs.ut.ee/gprofiler. Hetionet v1.0 can be freely accessed at https://het.io/. Venny is in https://bioinfogp.cnb.csic.es/tools/venny/index.html. MAGMA and corresponding reference data were freely downloaded from https://ctg.cncr.nl/software/magma. S-PrediXcan was freely downloaded from https://github.com/hakyimlab/MetaXcan (hakyimlab, 2021) copy archived at swh:1:rev:cfc9e369bbf5630e0c9488993cd877f231c5d02e. The source code of eDESE (including eDESE:dist, eDESE:gene and eDESE:isoform) is implemented in KGGSEE and can be publicly available in http://pmglab.top/kggsee/#/.The custom scripts used in this study can be freely accessed at https://github.com/pmglab/eDESE (pmglab, 2021) copy archived at swh:1:rev:68fbbe429f23011f544cdd34ce09c98a2540f68b (Li and Li, 2021).

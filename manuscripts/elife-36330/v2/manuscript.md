@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.36330.001 How trafficking pathways and organelle abundance adapt in response to metabolic and physiological changes is still mysterious, although a few transcriptional regulators of organellar biogenesis have been identified in recent years. We previously found that the Wnt signaling directly controls lipid droplet formation, linking the cell storage capacity to the established functions of Wnt in development and differentiation. In the present paper, we report that Wnt-induced lipid droplet biogenesis does not depend on the canonical TCF/LEF transcription factors. Instead, we find that TFAP2 family members mediate the pro-lipid droplet signal induced by Wnt3a, leading to the notion that the TFAP2 transcription factor may function as a ‘master’ regulator of lipid droplet biogenesis.
+How trafficking pathways and organelle abundance adapt in response to metabolic and physiological changes is still mysterious, although a few transcriptional regulators of organellar biogenesis have been identified in recent years. We previously found that the Wnt signaling directly controls lipid droplet formation, linking the cell storage capacity to the established functions of Wnt in development and differentiation. In the present paper, we report that Wnt-induced lipid droplet biogenesis does not depend on the canonical TCF/LEF transcription factors. Instead, we find that TFAP2 family members mediate the pro-lipid droplet signal induced by Wnt3a, leading to the notion that the TFAP2 transcription factor may function as a ‘master’ regulator of lipid droplet biogenesis.
 
 ## Introduction
 
@@ -30,6 +30,14 @@ Recently, we used genome-wide, high-content siRNA screens to identify genes that
 
 Wnt-induced lipid droplet formation could be conveniently visualized using BODIPY, which accumulated in lipid droplets (Figure 1A) and (Scott et al., 2015), and quantified by automated microscopy (Figure 1B, and all subsequent figures). Similarly, accumulation of lipid droplets in Wnt-treated cells could also be revealed in cells expressing the lipid droplet protein PLIN1a tagged with the GFP (Figure 3—figure supplement 1C–F; quantification in D and G, respectively) or by direct determination of triglyceride and cholesteryl ester amounts (Figure 3—figure supplement 1) and (Scott et al., 2015). In our previous work, we had observed that Wnt stimulates lipid droplet accumulation through upstream elements of the Wnt signalling pathway, including the canonical surface receptors and adenomatous polyposis coli (APC), a component of the destruction complex (Scott et al., 2015). This role of Wnt is well in-line with the established functions of Wnt signaling in the control of cellular metabolism, including carbohydrate, protein and lipid (Prestwich and Macdougald, 2007; Sethi and Vidal-Puig, 2010; Ackers and Malgor, 2018). Therefore, to further characterize the signaling cascade leading to the accumulation of lipid droplets after Wnt addition, we tested the key components from the canonical Wnt signalling pathway for a role in lipid droplet regulation, starting with the core enzyme of the destruction complex, GSK3B (Figure 1A–C). We found that overexpression of both the wild-type, and the constitutively active S9A (Stambolic and Woodgett, 1994) mutant of GSK3B were capable of attenuating lipid droplet accumulation in response to Wnt3a-treatment (Figure 1A–B), consistent with the function of GSK3B activity as a negative regulator of Wnt signalling. Further, siRNAs to GSK3B were sufficient to induce lipid droplet accumulation (Figure 1A,C) — much like we had shown after gene silencing of APC, another member of the destruction complex (Scott et al., 2015).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) HeLa-MZ cells were transfected with plasmids encoding wild-type or a S9A mutant of GSK3B 24 hr before the addition of Wnt-3a- or control-conditioned media (CM) for a further 24 hr. Cells were fixed, labeled with BODIPY (lipid droplets, green) and Hoechst 33342 (nuclei, magenta), and imaged by light microscopy. In (B) the number of lipid droplets was quantified by automated microscopy (bar graph), and the data are presented as the mean number of lipid droplets per cell of five independent experiments ± SEM, normalized to the control condition. (C–D) As in (A), except that HeLa-MZ cells (C) or L Cells (D) were transfected with siRNAs against the indicated targets for 48 hr, before the addition of Wnt3a. Efficient silencing was confirmed by qPCR (Figure 1—figure supplement 1B) and the data are presented as the mean number of lipid droplets per cell of 3 independent experiments ± SEM, normalized to the control condition. (E) L cells were incubated with the indicated compounds together with Wnt3a for 24 hr, processed and analyzed as in (A) and the data are presented as the mean number of lipid droplets per cell of five independent experiments ± SEM, normalized to the control condition. (F) Evolutionary relationship of the 19 Wnt ligands. Color indicates ability to induce lipid droplets as detailed in (G). (G) L Cells were transfected with plasmids containing each of Wnt ligand for 48 hr, imaged and analyzed as in (A). Data are normalized to the empty vector control and were tested for significance and are presented as the mean number of lipid droplets per cell of two independent replicates of the screen ± SEM, normalized to the control condition. The data are color-coded from a high (light) to a low (dark) number of lipid droplets induced by each Wnt ligand. (H–I) High-content image-based screen of a library of compounds that affect the Wnt pathway in HeLa-MZ cells. Cells were incubated for 24 hr with Wnt-3a- or control-conditioned media for 24 hr in the presence of the compounds at 1 µM and 10 µM, fixed, labeled with BODIPY (lipid droplets) and Hoechst 33342 (nuclei) and imaged by automated microscopy. The number of droplets per cell was counted and the zscores established, in order to quantify the ability of each compounds to induce lipid droplets in untreated cells (H, left panel), or to inhibit lipid droplet formation in Wnt3a-treated cells (H, right panel). Panel I illustrates the effects of compounds that induce droplet formation (left column) or that do (Trichostatin A) or do not (niclosamide, hexachlorophene) inhibit droplet formation (right column) in Wnt3a-treated cells. Nuclei are in magenta, and lipid droplets in green. Green bars, control-conditioned media (control CM); Red bars, Wnt3a-conditioned media (Wnt3a CM). In this figure, pValues are indicate as: *,<0.05; **, <0.005, and n.s., not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) L cells were treated with the indicated siRNAs for 48 hr before addition of the indicated compounds together with control, or Wnt3a, conditioned media and incubation for an additional 24 hr. Cells were then fixed, stained and lipid droplet number quantified as in Figure 1A. Data are presented as the normalized mean number of lipid droplets per cell of three independent experiments ± SEM. (B) L Cells were treated as in Figure 1A with the indicated siRNAs and the amounts of the corresponding mRNA were determined by qPCR.
+
 We next investigated the possible role of the downstream targets of the Wnt pathway at the transcription level. Surprisingly, siRNAs to TCF/LEF transcription factors relevant in canonical Wnt signaling, failed to affect lipid droplet accumulation - and yet there is no doubt that lipid droplet accumulation in response to Wnt3a is transcriptionally mediated. Indeed, the expression of SOAT1 and DGAT2, which encode key-enzymes of lipid droplet formation, increased in response to Wnt3a-treatment (Scott et al., 2015). In addition, silencing these genes inhibited lipid droplet accumulation in response to Wnt3a, most potently in combination with each other (Figure 1D; silencing efficiency Figure 1—figure supplement 1B), or with specific inhibitors to DGAT1 or SOAT (Figure 1E, Figure 1—figure supplement 1A). Finally, Wnt3a-induced lipid droplets were decreased after treatment with the general inhibitor of transcription Actinomycin D (Figure 1E). While these data altogether confirmed that the Wnt pathway was mediating the pro-lipid droplet signal, our inability to link lipid droplet induction to TCF/LEF led us to consider the possibility that a branching signaling path, under the control of GSK3B and/or ß-catenin but not the canonical Wnt transcription factors TCF/LEF, was inducing the accumulation of lipid droplets in cells. To explore this possibility, we initiated several parallel and complementary systems-level analyses with the aim to identify the transcriptional regulators proximal to lipid droplet biogenesis.
 
 To better understand the nature of the pro-lipid droplet signal induced by Wnt, we revaluated the involvement of individual components of the Wnt signaling pathway in the induction of lipid droplet accumulation. First, we tested the ability of each of the 19 human Wnt ligands to induce lipid droplet accumulation in L Cells by transfection and autocrine or paracrine induction of the Wnt pathway (Figure 1F–G). Wnt ligands displayed a broad, but not universal capacity to induce lipid droplet accumulation that paralleled both their evolutionary pedigree (Figure 1F), and previously reported abilities to activate canonical Wnt signaling as measured by a TCF/LEF reporter system (Najdi et al., 2012). This confirmed that the pro-lipid droplet signal was indeed transiting, at least initially, through canonical Wnt signaling components.
@@ -39,6 +47,26 @@ To systematically assess the involvement of the remaining components of the Wnt 
 While these data certainly confirm the role of Wnts in regulating lipid droplets, they did not reveal the pathway linking the Wnt destruction complex to the transcriptional changes we observed (Figure 1A–E, [Scott et al., 2015]). Given these results, and the large number of ß-catenin-independent targets of the destruction complex (Kim et al., 2009), we initiated several strategies to identify candidate regulators, in particular the proximal transcription factors directly upstream from lipid droplet biogenesis. Our aim was to identify factors linked to Wnt signalling and to characterize the signalling pathway from ligand-stimulation to lipid droplet accumulation.
 
 We first started by taking the subset of genes annotated as ‘transcription factor activity’ (GO:0000988) from our primary genome-wide siRNA screen data (Scott et al., 2015) to identify transcription factors that influenced cellular cholesterol levels in the cell (Figure 2—figure supplement 1B; Figure 2—source data 1). While several of these candidates have well-established roles in regulating general proliferation (i.e. MACC1, JDP2, SP3, TP53, ZNF217, TAF1), or links to the WNT pathway in keeping with our findings (i.e. GLI3, SIX2, SOX9, FOXK2, BARX1), we were particularly interested in identifying candidates with reported functions in lipid metabolism. The latter subset included ARNT2, STAT3, KDM3A, ATF5, KLF5, KLF6 and members of the TFAP2 (AP-2) transcription factor family (see below).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig2-v2.jpg)
+
+**Figure 2.:** (A-B) HeLa-MZ cells were treated with control- or Wnt3a-conditioned media for 2 hr or 6 hr before RNA isolation and RNAseq analysis. Panel (A) shows the pathway enrichment of perturbed mRNAs. Node size indicates number of genes in each ontology and colour the statistical strength of the enrichment. Edge thickness indicates the strength of overlap of related ontologies. From (A), the fold change of transcription factors amounts in response to Wnt3a is shown in panel B. C. The ability of TFAP2 family member TFAP2A to bind to regulatory regions of lipid droplet at lipid metabolic enzyme genes was tested by ChIP-qPCR (see Materials and methods). Data are presented as the mean DNA amounts normalized to the negative control (CTCF) of three independent experiments ± SEM. (*) indicates a p-value<0.05; (**) indicates a p-value<0.005. Inset; re-scaled view of signal of the control conditions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Transcription factors that influence cellular cholesterol amounts from a genome-wide screen of cholesterol regulatory genes (Scott et al., 2015). Node size is proportional to the absolute z-score difference from the control, and the color indicates increased (green) or decreased (blue) cellular cholesterol levels. (B) Existing mRNA profiling experiments of cells treated with Wnt3a (blue), or perturbations likely to induce lipid droplet accumulation (see Materials and methods) (pink), were analyzed for enrichment of genes linked to known transcriptions factors to identify candidate transcription factors linking Wnt3a to lipid droplet biogenesis.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Enrichment of known transcription factor consensus sequences in lipid droplet genes. (B) TFAP2A and TFAP2C consensus binding site motifs. (C) Distribution of TFAP2 consensus sites in the promoter region of genes annotated to be lipid droplet related.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Cells were treated with control- or Wnt3a-conditioned media for the indicated times before lysis. A. mRNA was extracted from L Cells cells and amounts were determined by qPCR. B. Cell extracts were analyzed by SDS-PAGE and western blot using antibodies against the indicated proteins.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) L Cells were transfected or not with constitutively active truncation mutants of SREBF1a, SREBF1c, and SREBF2 for 24 hr before addition of control- or Wnt3a-conditioned media for an additional 24 hr. Cells were fixed, labeled and imaged by automated microscopy as in Figure 1A. Data are box-and-whisker plots of a representative experiment. (B) L Cells were treated with the indicated chemical inhibitors simultaneously with the conditioned media, and processed as (A). PF-429242; inhibitor of the SREBF site one protease (S1P). Torin-2; mTOR inhibitor. (C) L Cells were transfected as in A before mRNA extraction and quantitation of HMGCR and LDLR mRNAs by qPCR.
 
 As a second approach to search for candidate transcriptional regulators of lipid droplets, we compared existing transcriptome data of Wnt3a-treated cells with that of other conditions known to induce the accumulation of lipid droplets in tissue culture cells. It is well-established that the formation of lipid droplets is stimulated artificially by the addition of exogenous fatty acids (Martin and Parton, 2006), and the process has been studied at the transcriptional level in multiple studies. We therefore combined our Wnt3a gene array data (Scott et al., 2015) with three published datasets of mRNA levels after treatment of cells with fatty acids or knockout of lipid droplet regulatory factors (Li et al., 2010; Lockridge et al., 2008; Shaw et al., 2013). Our rationale was to identify the relevant transcription factors required for the induction of lipid droplet biogenesis by inferring from the expression data what is the common set of transcription factors active in response to Wnt3a and/or to the modulation of lipid droplets by fatty acid treatment or gene knockout. This analysis involved testing for over-representation of genes annotated to be regulated by a specific transcription factor in the set of the most perturbed genes after either treatment. Wnt3a-stimulation influenced a larger number of transcriptional regulators (172) as compared to lipid droplet modulation (91), but the vast majority of this subset (>75%) were also changed by Wnt3a (Figure 2—figure supplement 1B). With this approach, we found that many candidate transcription factors known to function in both lipid metabolism and adipogenesis were influenced by Wnt3a-treament and fatty acid perturbation (Figure 2—source data 2), including TFAP2A (p-value Wnt3a treatment: 3.5 × 10−9; p-value fatty acid perturbation: 4.8 × 10−4).
 
@@ -55,6 +83,26 @@ Along with DDIT3 and SREBF1, our list of early Wnt3a-responsive transcription fa
 Given that our datamining efforts identified TFAP2 family members as putative transcription factors regulating lipid droplet proteins and that TFAP2C was among the most upregulated transcription factors in response to Wnt3a (Figure 2B), we next investigated whether TFAP2 family members played a direct role in regulating lipid droplets. To this end, we tested the ability of TFAP2A to directly bind to the promoter region of known lipid droplet, and lipid metabolic genes containing a predicted TFAP2 consensus site by ChIP-PCR (Figure 2C), including the enzymes ACSL3, ACSL4, AGPAT2, AGPAT3, LPCAT2, and MGLL, and the lipid droplet resident proteins PLIN3, PLIN4, PNPLA2, and PNPLA3 (Meyers et al., 2017; Barneda and Christian, 2017). Indeed, we found that the TFAP2A protein was able to bind the upstream promoter of all the genes we tested, supporting the notion that expression was controlled by TFAP2 family members. Next, we tested whether Wnt3a retained the ability to induce lipid droplets after TFAP2 depletion by RNAi. While knock-down of either TFAP2A or TFAP2C had no or only a modest effect, tandem silencing of both homologs produced a marked reduction in the number of lipid droplets present in cells in response to Wnt3a (Figure 3A–B; knock-down efficiency Figure 3—figure supplement 2) and markedly decreased the amounts of cholesteryl esters (Figure 3—figure supplement 1A). In keeping with these findings, these siRNA treatments diminished the mRNA levels of SOAT1, a key enzyme proximal to the production of lipid droplets (Figure 3C) that mediate the production of cholesteryl esters (Chang et al., 2001). These observations indicate that TFAP2 family members exhibit complementary functions.
 
 As an alternative approach, we used CRISPR/Cas9 gene knockout to generate HeLa-MZ cells clones lacking TFAP2A (Figure 3D–E). While tandem depletion by RNAi was necessary to reduce lipid droplet production after Wnt3a addition in L Cells, two knockout clones of TFAP2A demonstrated a complete lack of change in lipid droplet number after Wnt3a stimulation (Figure 3D–E; and see Figure 3—figure supplement 1C–D) and failed to accumulate triglycerides (Figure 3—figure supplement 1B). The ability of Wnt to induce LD formation could be rescued upon TFAP2A re-expression (Figure 4—figure supplement 1D), demonstrating that the inhibition observed in knock-out cells was not caused by some off-target or indirect effect of the treatment. Together, these results imply that TFAP2A/TFAP2C are necessary for mediating the pro-lipid droplet signal of the Wnt pathway.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) L Cells were treated with siRNAs against the indicated targets for 48 hr before the addition of Wnt3a-conditioned medium for an additional 24 hr. Cells were then fixed, labeled, imaged and analyzed by automated microscopy as in Figure 1A. In (A), data are presented as the normalized mean number of lipid droplets per cell of 5 independent experiments ± SEM. Cells treated with non-target siRNAs or with siRNAs to both TFAP2A and TFAB2C are shown in panel B (nuclei in magenta; lipid droplets in green). (C) L cells were treated with siRNAs against both TFAP2A and TFAP2C or with non-targeting controls as in (A), before the addition of Wnt3a- or control-conditioned media for an additional 24 hr. RNA was isolated and analyzed by qPCR using primers to the indicated genes, and that data are expressed relative to the non-target control and are presented as the mean mRNA amounts of two to five independent experiments ± SEM. (D–E) HeLa-MZ cells were transfected with targeted CRISPR/Cas9 plasmids against TFAP2A. The corresponding knock-out clones as well as control cells were treated with Wnt3a-conditioned media for 24 hr. In D), the number of lipid droplets was quantified as in Figure 1A and is expressed as fold induction relative to the control cells in five independent experiments ± SEM. Inset: TFAP2A protein levels of each clone determined by Western blot. Arrow indicate position of 50 kDa marker. Representative images are shown in E (nuclei in magenta; lipid droplets in green). (F–H) L Cells were transfected or not with mCherry-tagged TFAP2 family members for 48 hr before fixation, labeling and imaging as in Figure 1A. The mean number of lipid droplets per cell expressing each mCherry-tagged TFAP2 protein was counted, and is expressed, as in panel (D), as fold induction relative to the control cells in six independent experiments ± SEM. Panel G shows cells expressing each mCherry-tagged TFAP2 protein (Blue, nucleus; Green, lipid droplets; Red, TFAP2-mCherry fusion proteins), and panel H shows the number of lipid droplets per cell in cells overexpression TFAP2C-mCherry, binned by their nuclear:cytoplasmic distribution. Data are the mean lipid droplets per cell ±SEM for 450 cells. (I) L Cells were treated as in (F) before extraction and determination of the indicated mRNAs by qPCR. Data are presented as the mean mRNA amounts of two to five independent experiments ± SEM. In this figure, (*) indicates a p-value<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) L Cells were treated with the indicated siRNAs for 48 hr before an additional 24 hr with control-, or Wnt3a-conditioned media before cells were collected and assayed for protein and cholesterol ester content (see Materials and methods). Data are the mean normalized increase in triglycerides of two replicates ± SEM. (B) CRISPR clones were treated for 24 hr with control- or Wnt3a-conditioned media before lysis and determination of protein and triglyceride content (see Materials and methods). Data are the mean normalized increase in triglycerides of two replicates ± SEM. (C–D) CRISPR cells were transfected PLIN1a-GFP and treated as in (B) before fixation, staining and determination of lipid droplet number by automated microscopy (representative images in C). Data are presented in (D) and are the mean relative induction of lipid droplets with at least 3000 cells measured per condition and are representative of two independent experiments and the SEM for each condition. (E) HeLa-MZ were transfected with the indicated plasmids (control; LAMP1-mCherry) for 36 hr before lipid and protein determination as in (A–B) Data are the mean of two replicates ± SEM. (F–G) HeLa-MZ were co-transfected with the indicated plasmids (control; LAMP1-mCherry) and PLIN1a-GFP for 36 hr before quantitation as in (C–D) Data are presented in (G) and are the mean relative induction of lipid droplets with at least 500 cells measured per condition and are representative of two independent experiments and the SEM for each condition.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) mRNA was extracted from HeLa-MZ (B,D) or L Cells (A,C) transfected with either siRNAs (72 hr; A,C) or the indicated plasmids (48 hr (B), (D) and amounts determined by qPCR. Data are the normalized means of two or three replicates, presented ± SEM. In this figure, (*) indicates a p-value<0.05.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig4-v2.jpg)
+
+**Figure 4.:** qPCR of DDIT3, DGAT2 and SOAT1 after overexpression of DDIT3-mCherry (A), or siRNAs to DDIT3 (B). Data are presented as the mean of two to five independent experiments ± SEM. (C). L cells were treated, processed and analyzed like in Figure 3A, except that they were transfected with siRNAs to DDIT3 before stimulation with Wnt3a. Data are presented as the normalized mean number of lipid droplets per cell of three independent experiments ± SEM. (*) indicates a p-value<0.05. Panel E shows cells treated with non-target or anti-DDIT3 siRNAs (magenta, nucleus; green, lipid droplets). D. HeLa-MZ CRISPR/Cas9 clones were prepared and analysed as in Figure 3D. Data are expressed as fold induction relative to the control cells in five independent experiments ± SEM. Inset: DDIT3 protein levels of each clone determined by western blot. Arrow indicate position of 25 kDa marker. Representative images are shown (nuclei in magenta; lipid droplets in green). (E) L cells were treated, processed and analyzed like in Figure 3F, except that they were transfected with a plasmid encoding DDIT3-mCherry. Data are presented as the normalized mean number of lipid droplets per cell of six independent experiments ± SEM. (*) indicates a p-value<0.05. Panel E shows cells expressing or not DDIT3-mCherry (blue, nucleus; green, lipid droplets, red, DDIT3-mCherry fusion protein). In this figure, (*) indicates a p-value<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36330/elife-36330-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Location of DDIT3:CEBPA consensus sites in the promoter regions of the transcription factors Figure 2B reported to be involved in lipid homeostasis. Indicated is the pvalue of the match of the consensus motif. (B) HeLa-MZ cells were treated with siRNAs to the indicated target proteins for 48 hr, and then further incubated for 24 hr in the presence of control- or Wnt3a-conditioned media. Cells were then fixed, stained and the number of lipid droplets was quantified as in Figure 1A. Data are presented as the normalized mean number of lipid droplets per cell of three independent experiments ± SEM. (C) DDIT3-mCherry was overexpressed in HeLa-MZ cells for 24 hr and then further incubated for 24 hr in the presence of control, or Wnt3a, conditioned media. Cells were then fixed and labeled, and the number of lipid droplets per cell expressing DDIT3-mCherry was quantified as in Figure 4F. Data are presented as the normalized mean number of lipid droplets per cell of 5 independent experiments ± SEM. (D) CRISPR clones and the Hela-MZ parental line were transfected with the indicated plasmids for 36 hr before addition of control-, or Wnt3a-conditioned media for and additional 24 hr. Cells were fixed, stained and the number of lipid droplets quantified by automated microscopy and transfected cells were identified by the presence of mCherry. Data are expressed as the normalized mean induction of lipid droplets per transfected cell of three independent experiments ± SEM.
 
 We next sought to determine if the TFAP2 family is sufficient for the induction of lipid droplets. For this, we fused full-length TFAP2A, TFAP2B, and TFAP2C to mCherry and overexpressed these as exogenous chimeras. As transcription factors the TFAP2 family members function in the nucleus, the mCherry-tagged TFAP family members exhibited a somewhat heterogeneous distribution between cytoplasm and nuclei, presumably because of variations in expression levels. Impressively, the number of lipid droplets per cell increased with increased nuclear localization of each TFAP2 family member (Figure 3H; (Figure 3—figure supplement 1F–G); relative overexpression Figure 3—figure supplement 2B), and, in cells with TFAP2 nuclear localization, the expression of each family member was clearly sufficient to cause lipid droplet biogenesis (Figure 3F–G). Moreover, the expression of TFAP2C was also able to trigger the expression of lipid droplet enzymes (Figure 3I) and accumulation of cholesterol esters and triglycerides (Figure 3—figure supplement 1E), further supporting the notion that TFAP2 family members function as transcriptional regulators of lipid droplet biogenesis.
 
@@ -82,7 +130,647 @@ The Wnt pathway is also not the first developmental signalling pathway found to 
 
 ## Materials and methods
 
-## Cells, media, reagents and antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>L Cells</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat #: CRL-2648; RRID:CVCL_4536</td>
+      <td>PMID:14056989</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>L Wnt3A Cells</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat #: CRL-2647; RRID:CVCL_0635</td>
+      <td>PMID:12717451</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa-MZ</td>
+      <td>other</td>
+      <td></td>
+      <td>Clone of HeLa (American Type Culture Collection Cat#: CCL-2) provided by Prof. Lucas Pelkmans (University of Zurich)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>CRISPR DDIT3</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>CRISPR TFAP2A</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>GSK3B</td>
+      <td>Addgene</td>
+      <td>Cat #: 49491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>GSK3BS9A</td>
+      <td>Addgene</td>
+      <td>Cat #: 49492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Wnt Project plasmid library</td>
+      <td>Addgene</td>
+      <td>Kit # 1000000022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCMV-SREBP-1a(460 )</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat #: 99637</td>
+      <td>PMID:9062341</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCMV-SREBP-1c(436 )</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat #: 99636</td>
+      <td>PMID:9062341</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCMV-SREBP-2(468)</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat #: 63452</td>
+      <td>PMID:9062341</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>DDIT3-mCherry</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>mCherry-TFAP2A</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>mCherry-TFAP2B</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>mCherry-TFAP2C</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>V5-TFAP2A</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bos taurus)</td>
+      <td>Lipoprotein-depleted serum</td>
+      <td>PMID:13252080</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-AP2 alpha; anti-TFAP2A</td>
+      <td>Abcam</td>
+      <td>Cat #: ab52222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-CHOP (L63F7); anti-DDIT3</td>
+      <td>Cell Signaling</td>
+      <td>Cat #: 2895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-V5 Tag</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: R960-25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CRISPR Forward: DDIT3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>CACCGGCACCTATATCTCATCCCC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CRISPR Forward: TFAP2A</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>CACCGGAGTAAGGATCTTGCGACT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CRISPR Reverse: DDIT3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>AAACGACTGATCCAACTGCAGAGAC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CRISPR Reverse: TFAP2A</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>AAACAGTCGCAAGATCCTTACTCC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: ACSL3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TGAGCTCTCTTTGCTTGGTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: ACSL4</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>AAGGACATCCCGAAACACAC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: AGPAT2</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>GGCCTAAGGCAAAAGGATGTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: AGPAT3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>ACCCAAGCTCAGCAAGTCC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: CTCF</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>GCCAGTCCAACCGGCTTATG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: LPCAT2</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>AGGGGAAGTGGTTGCTCAATG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: MGLL</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>GAACCCAGCTCAGTTCAGG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: PLIN3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TTTGGCAGAGGTGGCAAAC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: PLIN4</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>AACCTGCAGGGAAGGTGTTC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: PNPLA2</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TGGCTTCCCTAACTCAGCTTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Forward: PNPLA3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TGTCAAGGAAAACAGAAGGAAGC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: ACSL3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TGAAAGGTTGCCTTCCTGAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: ACSL4</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TCGCCTCAAGTTGTTGCTC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: AGPAT2</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>CTTCAAATGAATGGGGAACTGC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: AGPAT3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>GCCCGGTACCTTGTGTGAC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: CTCF</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>GGTTCTCCCAAGCAGGAGCA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: LPCAT2</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TCTATGAACCTCGGTTGCCTTC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: MGLL</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>CAGCCACGCACTCCTCTC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: PLIN3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>GATCCACAGGAAGTTCAAGCTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: PLIN4</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TTCCTCCTTCGCTTGCTTC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: PNPLA2</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>TCATCTCTGGACCTAGCTGTTGC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer Reverse: PNPLA3</td>
+      <td>Microsynth</td>
+      <td></td>
+      <td>GCAGCGACTCGAGAGAAAGC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: ACSL3</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT01068333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: ACTB</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT01136772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: AGPAT2</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00104888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: AGPAT3</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00131481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: DDIT3</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT01749748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: DGAT2</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00134477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: HMGCR</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00004081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: LDLR</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00045864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: MGLL</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT01163428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: PLIN4</td>
+      <td>QIAGEN</td>
+      <td>Cat #; QT00112301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: PNPLA2</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00111846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: SOAT1</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT01046472</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: SREBPF1</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00167055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: SREBPF1</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00036897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: SREBPF2</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00255204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: SREBPF2</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00052052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: TFAP2A</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00085225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primer set: TFAP2C</td>
+      <td>QIAGEN</td>
+      <td>Cat #: QT00073073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA DDIT3</td>
+      <td>Dharmacon</td>
+      <td>Cat #: J-062068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA TFAP2A</td>
+      <td>Dharmacon</td>
+      <td>Cat #: J-062799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA TFAP2C</td>
+      <td>Dharmacon</td>
+      <td>Cat #: J-048594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA APC</td>
+      <td>QIAGEN</td>
+      <td>Cat #: S102757251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA DGAT1</td>
+      <td>QIAGEN</td>
+      <td>Cat #: S100978278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA DGAT2</td>
+      <td>QIAGEN</td>
+      <td>Cat #: S100978278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA GSK3B</td>
+      <td>QIAGEN</td>
+      <td>Cat #: S100300335</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA SOAT1</td>
+      <td>QIAGEN</td>
+      <td>Cat #: S101428924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Rad Protein Assay Kit</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>Cat #: 500 – 0006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SsoAdvanced SYBR Green Supermix</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>Cat #: 1725270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Colorimetric Assay Kit</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat #: 10010303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Wizard SV gel and PCR Clean -up system</td>
+      <td>Promega</td>
+      <td>Cat #: A9281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat #: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat #: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amplex Red Cholesterol Assay Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: A12216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA Synthesis Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: 11754050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wnt Pathway Library</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat #: BML-2838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BODIPY 493/503</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: D3922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: H3570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine LTX</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: A12621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMax</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: 13778100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A-922500</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat #: 3587</td>
+      <td>PMID:18183944</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PF-429242</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat #: 3354</td>
+      <td>PMID:17583500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Torin-2</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat #: 4248</td>
+      <td>PMID:21322566</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells, media, reagents and antibodies
 
 HeLa-MZ cells, a line of HeLa cells selected to be amiable to imaging, were provided by Prof. Lucas Pelkmans (University of Zurich). HeLa cells are not on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
@@ -94,27 +782,27 @@ Transfections of cDNA and siRNAs were performed using Lipofectamine LTX and Lipo
 
 Plasmids encoding GSK3B and GSK3BS9A, and were from Addgene (Cambridge, MA) and the SREBF truncations from ATCC; TFAP2A, TFAP2B, and DDIT3 coding sequences were obtained from the Gene Expression Core Facility at the EPFL, and TFAP2C from DNASU (Arizona State University) and cloned into appropriate mammalian expression vectors using Gateway Cloning (Thermo Fisher Scientific). Knock-out cell lines of TFAP2A and DDIT3 were obtained by clonal isolation after transfection of a pX330 Cas9 plasmid (Cong et al., 2013) with appropriate guide sequences (see Supplementary Methods).
 
-## Lipid droplet quantitation
+### Lipid droplet quantitation
 
 L Cells were seeded (6 000 cells/well) in imaging plates the day before addition of control-conditioned, or Wnt3a-conditioned media for 24 hr, before fixation with 3% paraformaldehyde for 20 min. Where necessary, cells were treated with siRNAs and Lipofectamine RNAiMax Reagent (Thermo Fisher) per the manufacturer’s instructions for 48 hr before seeding into imaging plates. Lipid droplets and nuclei were labelled with 1 µg/mL BODIPY 493/503 (Invitrogen; D3922) and 2 µg/mL Hoechst 33342 (Invitrogen; H3570) for 30 min, wash with PBS, and the plate sealed and imaged with ImageXpress Micro XLS (Molecular Devices, Sunnyvale, CA) automated microscope using a 60X air objective. Images were segmented using CellProfiler (Carpenter et al., 2006) to identify and quantify nuclei, cells, and lipid droplets.
 
-## Wnt ligand screen
+### Wnt ligand screen
 
 L Cells cells were seeded into image plates (6000 cells/well) the morning before transfection with Lipofectamine 3000 (Invitrogen) as per the manufacturer’s instructions with a subset of untagged Wnts from the open source Wnt Project plasmid library (Najdi et al., 2012). Cells were fixed with 3% PFA after 48 hr, and lipid droplets quantified as above. Data were normalized to the number of lipid droplets in the empty vector condition. The circular phylogenetic tree was constructed using human Wnt sequences and the Lasergene (v12.1; DNAStar, Madison WI) bioinformatics software.
 
-## Wnt compound screen
+### Wnt compound screen
 
 L Cells were seeded into imaging plates (6000 cells/well) the day before addition of the Wnt Pathway Library (BML-2838; Enzo Life Sciences, Farmingdale, NY) at either 1 µM or 10 µM, with either control-conditioned or Wnt3a-conditioned media for 24 hr, before fixation and lipid droplet quantitation as above. Data were normalized by z-score and the average of quadruplicates.
 
-## mRNA determination
+### mRNA determination
 
 Total-RNA extraction was performed using RNeasy Mini Kit from Qiagen (74104) from L Cells or HeLa-MZ according to manufacturer’s recommendation. cDNA synthesis was carried out using SuperScript VILO cDNA Synthesis Kit (Life Technologies AG; Basel, Switzerland) from 250 ng of total RNA. mRNA expression was evaluated using SsoAdvanced SYBR Green Supermix (Bio-Rad Laboratories, Hercules, CA) with 10 ng of cDNA with specific primers of interest on a CFX Connect real-time PCR Detection System(Bio-Rad). Relative amounts of mRNA were calculated by comparative CT analysis with 18S ribosomal RNA used as internal control. All primers are QuantiTect primer from Qiagen (Hilden, Germany) and were: SOAT1 (QT01046472), DGAT2 (QT00134477), ACSL3 (QT01068333), AGPAT2 (QT00104888), AGPAT3 (QT00131481), MGLL (QT01163428), PLIN4 (QT00112301), PNPLA2 (QT00111846), SREBPF1 (QT00167055), SREBPF1 (QT00036897), SREBPF2 (QT00255204), SREBPF2 (QT00052052), DDIT3 (QT01749748), TFAP2A (QT00085225), TFAP2C (QT00073073), ACTB (QT01136772), LDLR (QT00045864), HMGCR (QT00004081).
 
-## Lipid determinations
+### Lipid determinations
 
 Cholesterol esters and triglycerides amounts were determined using the Amplex Red Cholesterol Assay Kit (A12216; Thermo Fisher Scientific) and the Triglyceride Colorimetric Assay Kit (10010303; Cayman Chemicals), respectively. Briefly, cells were cultured as needed and scraped directly into lysis buffer (150 mM NaCl, 20 mM HEPES pH 7.4, 1% Triton X-100). Protein concentrations were determined for normalization using Bio-Rad Protein Assay Kit (500–0006) and lipid determinations were made as per the manufacturer’s instructions. Cholesterol determinations were made twice, with and without cholesterol esterase, in order to infer the amount of cholesteryl esters.
 
-## RNAseq
+### RNAseq
 
 HeLa-MZ cells were treated in triplicate with control-conditioned, or Wnt3a-conditioned media for 2 hr or 6 hr before cells were collected and RNA isolated. Purification of total RNA was done with the RNeasy Mini Kit from Qiagen according to the manufacturer’s instructions. The concentration, purity, and integrity of the RNA were measured with the Picodrop Microliter UV-Vis Spectrophotometer (Picodrop), and the Agilent 2100 Bioanalyzer (Agilent Technologies), together with the RNA 6000 Series II Nano Kit (Agilent) according to the manufacturer’s instructions. Purified RNAs were sequenced with a HiSeq 4000 (Illumina) at the iGE3 Genomics Platform of the University of Geneva (https://ige3.genomics.unige.ch).
 
@@ -122,101 +810,101 @@ Sequencing reads were mapped to the hg38 genome using bowtie2 in local alignment
 
 The fold induction was determined as a ratio of mRNA amounts of Wnt3a to control. Genes with message levels increase more than 1.5-fold, or decreased less than 0.8-fold were collected and tested for pathway enrichment using DAVID bioinformatics resources (v6.8) (Huang et al., 2009) and the resulting data compiled and plotted using Cytoscape (Shannon et al., 2003) and previously described Matlab scripts (Mercer et al., 2012).
 
-## Wnt siRNA screen analysis
+### Wnt siRNA screen analysis
 
 Data from the genome-wide siRNA screen (Scott et al., 2015) was used to produce the subset of annotated transcription factors (GO:0003700) cellular cholesterol levels after gene silencing provided by AmiGO 2 (version 2.4.26) (Carbon et al., 2009). Data were filtered for genes that increased or decreased total cellular cholesterol a z-score of 1.5 or greater.
 
-## Transcription factor enrichment
+### Transcription factor enrichment
 
 Transcript data from cells treated with Wnt3a (E-MTAB-2872 [Scott et al., 2015]), or fatty acids (GSE21023 [Lockridge et al., 2008], GSE22693 [Xu et al., 2015], GSE42220 [(Shaw et al., 2013]) were collected and mRNAs that significantly changed in response to treatment were compiled and analyzed for transcription factor enrichment using GeneGo (MetaCore) bioinformatics software (Thomson Reuters). Data from both conditions was compared and ordered by a sum of ranking.
 
-## Promoter analysis
+### Promoter analysis
 
 Promoter sequences from the current (GRCh38) human genome were collected using Regulatory Sequence Analysis Tools (RSAT) software (Medina-Rivera et al., 2015) to collect the non-overlapping upstream promoter sequences (<3 000 bp) of genes of interest which were tested for enriched sequences using either the RSAT’s oligo-analysis or Analysis of Motif Enrichment (AME) module of MEME Suite (v.4.12.0) (McLeay and Bailey, 2010). Genes with no non-overlapping upstream region were discarded from the analysis. Identification and quantitation of consensus binding sites was done with either RSAT’s matrix-scan or MEME Suite’s Motif Alignment and Search Tool (MAST) module using a cut-off of <0.0001 to define a consensus site. Consensus sites from JASPAR (Mathelier et al., 2016) were: DDIT3:CEBPA (MA0019.1), TFAP2A (MA0003.2, MA0810.1), TFAP2C (MA0524.1, MA0524.2).
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 Hela-MZ cells were transfected as above with empty vector or pcDna6.2-V5-TFAP2A. After 24 hr Hela medium was replaced with either: fresh medium (mock), control or Wnt3a-conditional medium. At 48 hr from transfection cell were incubated with PFA 1% for 8 min; after quenching the reaction with glycine 0.125M, cells were resuspended sequentially in the following lysis buffers: lysis buffer I (50 mM Hepes-KOH, 140 mM NaCl, 1 mM EDTA, 10% glycerol, 0.5% of NP-40, 0.25% Triton X-100; adjust final pH to 7.5), lysis buffer II (10 mM Tris-HCl pH: 8.0, 200 mM NaCl, 1 mM EDTA, 0.5 mM EGTA; adjust final pH to 8.0), lysis buffer III (10 mM Tris-HCl pH: 8.0, 100 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 0.1% Na-deoxycholate, 0.5% N-lauroylsarcosine; adjust final pH to 8.0) all containing protease inhibitors. Chromatin is sonicated using a Bioruptor Sonicator (Diagenode Inc.) to generate 200- to 1000 bp DNA fragments (30 pulses of 30 s at high power- total time of 30 min, 30 s ON, 30 s OFF). After microcentrifugation, the supernatant is diluted in buffer III in order to have 2 mg of protein in 1 ml (1:10 of each sample has been removed and use as input for the relative sample). Chromatin was incubated with 5 μg of antibody (V5 Tag Monoclonal Antibody; R960-25 Thermo Fisher Scientific) on a rotator for 14–16 hr at 4°C and 4 h hours more after adding 50 μl of magnetic beads (Dynabeads Protein G fron Invitrogen). After the reverse cross-linking and elution immunoprecipitated chromatin was purified by columns (Promega Wizard SV gel and PCR Clean-up system; A9281). Quantitative PCR was performed using the SsoAdvanced SYBR Green Supermix, and an CFX Connect real-time PCR Detection System (Bio-Rad Laboratories, Hercules, CA) according to manufacturer's instructions. Primers used are listed below. Dissociation curves after amplification showed that all primer pairs generated single products. The amount of PCR product amplified was calculated as percent of the input. A genomic region of an intron in Myc gene (CTCF, CCCTC-Binding Factor) was used as negative control.
 
-## List of primers for ChIP-qPCR
+### List of primers for ChIP-qPCR
 
-## MGLL
+#### MGLL
 
 Forward: GAACCCAGCTCAGTTCAGG
 
 Reverse: CAGCCACGCACTCCTCTC
 
-## PLIN4
+#### PLIN4
 
 Forward: AACCTGCAGGGAAGGTGTTC
 
 Reverse: TTCCTCCTTCGCTTGCTTC
 
-## ACSL3
+#### ACSL3
 
 Forward: TGAGCTCTCTTTGCTTGGTG
 
 Reverse: TGAAAGGTTGCCTTCCTGAG
 
-## AGPAT3
+#### AGPAT3
 
 Forward: ACCCAAGCTCAGCAAGTCC
 
 Reverse: GCCCGGTACCTTGTGTGAC
 
-## ACSL4
+#### ACSL4
 
 Forward: AAGGACATCCCGAAACACAC
 
 Reverse: TCGCCTCAAGTTGTTGCTC
 
-## AGPAT2
+#### AGPAT2
 
 Forward: GGCCTAAGGCAAAAGGATGTG
 
 Reverse: CTTCAAATGAATGGGGAACTGC
 
-## PNPLA3
+#### PNPLA3
 
 Forward: TGTCAAGGAAAACAGAAGGAAGC
 
 Reverse: GCAGCGACTCGAGAGAAAGC
 
-## PNPLA2
+#### PNPLA2
 
 Forward: TGGCTTCCCTAACTCAGCTTG
 
 Reverse: TCATCTCTGGACCTAGCTGTTGC
 
-## LPCAT2
+#### LPCAT2
 
 Forward: AGGGGAAGTGGTTGCTCAATG
 
 Reverse: TCTATGAACCTCGGTTGCCTTC
 
-## PLIN3
+#### PLIN3
 
 Forward: TTTGGCAGAGGTGGCAAAC
 
 Reverse: GATCCACAGGAAGTTCAAGCTG
 
-## CTCF site inside the gene Myc:
+#### CTCF site inside the gene Myc:
 
 Foward: GCCAGTCCAACCGGCTTATG
 
 Reverse: GGTTCTCCCAAGCAGGAGCA
 
-## Construction of gene edited knock out cell lines
+### Construction of gene edited knock out cell lines
 
 The guide sequences used to construct specific CRISPR/Cas9 vectors were determined using the CRISPR Design Tool(Ran et al., 2013) and were:
 
-## TFAP2A
+#### TFAP2A
 
 Fwd: CACCGGAGTAAGGATCTTGCGACT
 
 Rev: AAACAGTCGCAAGATCCTTACTCC
 
-## DDIT3
+#### DDIT3
 
 Fwd: CACCGGCACCTATATCTCATCCCC
 

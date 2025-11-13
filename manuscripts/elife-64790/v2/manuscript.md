@@ -37,13 +37,49 @@ Here, we provide the first archipelago-wide view of regional and small-scale var
 
 ## Results and discussion
 
-## Geography of heat resistance
+### Geography of heat resistance
 
 Across 221 colonies of the tabletop coral A. hyacinthus from 37 reefs in Palau, we found wide variation in bleaching susceptibility. In a simple 2-day standardized heat stress experiment, colonies ranged from retaining virtually all of their original symbiont load at 34–35°C (ca. 4–5°C above ambient temperatures) to less than 10% at these temperatures (Figure 1). Reef regions with the most heat-resistant colonies have higher exposure to temperature extremes (>32°C, Figure 2C), and the same pattern occurs among individual reefs (Figure 2D, Spearman’s rank correlation for 32°C, S = 3725, p = 0.0304; linear model R2 = 0.1216, p = 0.02648; see supplemental appendix for data and analysis on reef temperature and Figure 2—figure supplement 4 for this relationship using temperature thresholds of 31–35°C). Previous studies showed that bleaching-resistant individuals can inhabit a subset of microclimates such as shallow back reefs (Oliver and Palumbi, 2011) or the intertidal zone where large temperature swings are common (Schoepf et al., 2015). Our data extend this to warm lagoon patch reefs, a very common feature of complex reef ecosystems around the world, and even to some fore reef locations with high heat exposure, helping identify other possible targets for heat resistance prospecting.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig1-v2.jpg)
+
+**Figure 1.:** (A) Map of 39 reef locations surveyed, arranged in groups in the North (blue), West (red), East (green), and South (yellow). Ten reefs that are outlined in purple are at fore reef locations. (B) Mean proportion of symbionts in tissues from corals before and after heating. (C) The fraction of symbionts retained after heating across all 221 colonies. Accompanying source data are available as Figure 1—source data 1data.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Symbiont cell proportions are highly correlated with visual bleaching score, though there is high variance particularly among colonies with low bleaching scores. Note: Measurements are of all colonies from the experimental heat treatments as well as the control treatments. Accompanying source data are available as Figure 1—figure supplement 1—source data 1.data.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Accompanying source data are available as Figure 1—figure supplement 2—source data 1.data.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig2-v2.jpg)
+
+**Figure 2.:** (A) Location of corals in the top 25% of values for symbiont retention. See Figure 1A for reef locations. Numbers above each reef label are the number of colonies sampled from that reef. (B) Location of corals that are in the top 25% in symbiont retention by region and associated mean temperatures (note log scale for 32°C). (C) Plot showing the relationship between the average number of 10 min intervals above 32°C on a reef and the fraction of colonies on that reef in the top 25% of values for symbiont retention. (D) The distribution and frequency of bleaching-resistant colonies across the Palauan archipelago. Colors correspond to the frequency of highly heat-resistant corals found in this survey on each reef. Accompanying source data are available as Figure 2—source data 1.data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The fourth location is 0.4° latitude east of the northern squares. The adjacent barplot depicts the percentage of days spent above mean monthly maximum for all four locations outlined on the map. Accompanying source data are available as Figure 2—figure supplement 1—source data 1.data.xlsx.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Average proportion of symbionts in control treatment nubbins at the end of the experiment across the 38 reefs in this study. Accompanying source data are available in Supplementary file 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Colors represent the same areas as in Figure 2. Accompanying source data are available as Figure 2—figure supplement 1, Figure 2—figure supplement 3—source data 1data.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Accompanying source data are available as Figure 2—figure supplement 4—source data 1data.
+
 Yet, we also find wide variation in heat resistance on individual reefs with cooler temperatures. For example, two patch reefs and one fore reef in the Northern Lagoon experience few warm water events but have high numbers of heat-resistant colonies (reefs 41, 42, 65, Figure 2D), Across all reefs, bleaching-resistant colonies are widespread: 24 of 37 reefs harbor at least one colony that falls in the top quartile for bleaching resistance (Figure 2A and B; Video 1). Thus, well-defined conservation strategies that focus on wide regions that have historically experienced higher temperatures such as the Red Sea (Krueger et al., 2017) could overlook smaller, local geographic areas where bleaching resistance is more common. Even fore reefs, which include fewer high-temperature microclimates than back reefs or patch reefs, harbor enough heat resistance in Palau to significantly increase the inventory of such corals across the archipelago.
 
-## Bleaching intensity, symbiont load, and growth
+![Video 1.](https://cdn.elifesciences.org/articles/64790/elife-64790-video1.mp4.jpg)
+
+**Video 1.:** Animation depicting the approximate locations of bleaching-resistant colonies sampled for this study across the Palauan archipelago.
+
+### Bleaching intensity, symbiont load, and growth
 
 Symbiont load in individual colonies was bimodal in our non-heated control nubbins and had a considerable range (Figure 1B): the higher group of corals showed 11–20% symbiont cells per counted coral cell, whereas the lower group was centered on symbiont levels of 5–6% (Figure 1B; dip test, n = 221, p = 0.0167). Variation in load was high within reefs as well as between reefs (average standard deviation within reefs = 0.041, compared to 0.045 for the whole data set), reflecting marked variation among colonies close to one another. Some reefs had significantly higher loads (reefs 27, 51, 65; ANOVA, p = 0.005) but these were not related to temperature, depth, latitude, or other environmental correlates (R2 <0.005).
 
@@ -51,11 +87,57 @@ However, variation in symbiont load was inversely correlated with symbiont reten
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64790/elife-64790-fig3-v2.jpg)
 
-**Figure 3.:** (A) Mean starting symbiont density of A. hyacinthus colonies across Palau is negatively correlated with the fraction of symbionts retained after heat stress. Colonies with lower symbiont population densities (fraction of symbiont cells per coral cells) tend to show higher retention after 2 days of standardized heat stress (r2 = 0.080, p = 9.063 × 10–4). (B) Annual growth (2018–2019) is higher for colonies with higher symbiont loads (r2 = 0.026, p = 0.0398). Accompanying source data are available as Figure 3—source data 1.data.Figure 3—source data 1.
+**Figure 3.:** (A) Mean starting symbiont density of A. hyacinthus colonies across Palau is negatively correlated with the fraction of symbionts retained after heat stress. Colonies with lower symbiont population densities (fraction of symbiont cells per coral cells) tend to show higher retention after 2 days of standardized heat stress (r2 = 0.080, p = 9.063 × 10–4). (B) Annual growth (2018–2019) is higher for colonies with higher symbiont loads (r2 = 0.026, p = 0.0398). Accompanying source data are available as Figure 3—source data 1.data.
+
+**Table 1.**
+ Comparison of bleaching-resistant and beaching-prone individuals.Table 1—source data 1.Symbiont load and retention for all colonies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Control</th>
+      <th>Heated</th>
+      <th>Heated</th>
+      <th></th>
+      <th colspan="2">Temperature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rank</td>
+      <td>Symbiont proportion</td>
+      <td>Symbiont proportion</td>
+      <td>Retention</td>
+      <td>Avg depth</td>
+      <td>No. intervals above 31°C</td>
+      <td>No. intervals above 32°C</td>
+    </tr>
+    <tr>
+      <td>Top 25%</td>
+      <td>0.080</td>
+      <td>0.082</td>
+      <td>1.041</td>
+      <td>0.954</td>
+      <td>1703</td>
+      <td>114</td>
+    </tr>
+    <tr>
+      <td>Bottom 25%</td>
+      <td>0.113</td>
+      <td>0.023</td>
+      <td>0.22</td>
+      <td>1.062</td>
+      <td>1714</td>
+      <td>79</td>
+    </tr>
+  </tbody>
+</table>
 
 We returned to the marked colonies in July 2019 to re-measure colony size after 1 year of growth in the field. Average colony linear extension (4.8 cm year–1, standard deviation = 3.2 cm) and percent growth (5.96%, standard deviation = 4.1%) were similar to averages seen for these species in other locations (Gold and Palumbi, 2018). After removing size decreases from damage or disease (conservatively, decreases exceeding 10%), colonies with higher symbiont load have significantly higher growth rates (Figure 3B, R2 = 0.026, p = 0.0398). We saw a similarly significant increase in growth in colonies with the highest symbiont load in a linear model with size, retention, and symbiont load as fixed effects (R2 = 0.038, p = 0.0477). Comparing corals with higher versus lower than median symbiont load, growth was approximately twice as high, 5.6% and 2.7%, respectively.
 
-## A tripartite coral phenotype
+### A tripartite coral phenotype
 
 These data point to a complex interrelationship between three coral phenotypes: bleaching resistance, symbiont load, and growth potential. Cunning and Baker, 2012; Cunning and Baker, 2014, first showed that corals with high symbiont load were more susceptible to bleaching, and suggested that higher levels of molecules arising from damage to the symbiont photosystem – for example, ‘reactive oxygen species’ – in tissues with denser symbiont populations might explain this pattern. Other potential mechanisms, such as increased metabolic demands by the symbiont in warmer conditions (Wooldridge, 2009), could also favor hosts maintaining symbiont populations at low levels.
 
@@ -65,7 +147,7 @@ The relationship between symbiont load and growth is more complex. Wright et al.
 
 Our study examines all three of these crucial facets of coral biology simultaneously, and for the first time shows how the role of symbiont density in both growth and bleaching might result in a negative tradeoff between them (Figure 3A and B). In this view, maintaining low loads of Cladocopium spp. symbionts could be a bet-hedging strategy where a coral grows at a slower rate but minimizes its risk of bleaching, in some ways analogous to the well-known tradeoff in growth versus heat resistance between Cladocopium spp. and Durusdinium spp. symbionts (Lesser et al., 2013). If this kind of tradeoff is widespread across corals, it may need to be taken further into account when heat tolerance is used as a criterion in reef restoration.
 
-## Resilience tests in conservation and restoration
+### Resilience tests in conservation and restoration
 
 As climate change continues to reshape the seascape, conservationists and managers will need to quickly assess the vulnerability of populations to current and future temperatures, and design management plans that engineer resilience into populations under threat (National Academies of Sciences Engineering and Medicine, 2019a; National Academies of Sciences Engineering and Medicine, 2019b). Our study outlines a protocol using simple, standard heat stress tests to identify bleaching-resistant corals, which can help inform conservation strategies, in addition to informing future research that will be needed to effectively engineer climate resilience into future populations.
 
@@ -73,7 +155,7 @@ We found that across the Palauan archipelago, bleaching-resistant colonies inhab
 
 A second use is in assisted migration – transplanting heat-resistant corals to other habitats so that they can inject heat resistance genes into local populations. Bay and Palumbi, 2017, modeled adding 1–5% heat-resistant corals to a cool-adapted population in the Cook Islands and found that this could help prevent population extinction in some future CO2 emissions scenarios. However, this model of selection and others (e.g., Walsworth et al., 2019; McManus et al., 2021) do not take into account the growth tradeoff we see here.
 
-## Conclusions
+### Conclusions
 
 There is an increasing call to renew ecosystems with future-adapted populations rather than restore them with populations adapted to previous conditions (e.g., O’brien et al., 2007). These management plans are advanced by standardized stress testing, rapid data collection, and extensive geographic surveys. By generating the first archipelago-wide map of coral heat resistance, we have shown a surprisingly wide distribution of heat-resistant colonies in some unexpected reef regions. Potential tradeoffs between bleaching resistance and other important phenotypes suggest caution in strategies of reef protection and assisted evolution that help heat tolerance at the cost of other key features like growth. Small-scale environmental variation (on the order of 1–10’s of km) leading to exceptionally warm microclimates may have generated phenotypic variation in stress tolerance among many coral species, which could become an important asset in managing these reefs in the future.
 

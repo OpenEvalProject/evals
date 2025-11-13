@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012jban78 Division of Neonatology, Shawn Jenkins Children’s Hospital Charleston United States
-2. https://ror.org/012jban78 Darby Children’s Research Institute, Medical University of South Carolina Charleston United States
+1. Division of Neonatology, Shawn Jenkins Children’s Hospital Charleston United States ([ROR:012jban78](https://ror.org/012jban78))
+2. Darby Children’s Research Institute, Medical University of South Carolina Charleston United States ([ROR:012jban78](https://ror.org/012jban78))
 
 † Corresponding author
 

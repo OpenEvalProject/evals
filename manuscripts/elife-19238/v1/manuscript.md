@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.19238.001 Cytosolic Ric-8A has guanine nucleotide exchange factor (GEF) activity and is a chaperone for several classes of heterotrimeric G protein α subunits in vertebrates. Using Hydrogen-Deuterium Exchange-Mass Spectrometry (HDX-MS) we show that Ric-8A disrupts the secondary structure of the Gα Ras-like domain that girds the guanine nucleotide-binding site, and destabilizes the interface between the Gαi1 Ras and helical domains, allowing domain separation and nucleotide release. These changes are largely reversed upon binding GTP and dissociation of Ric-8A. HDX-MS identifies a potential Gα interaction site in Ric-8A. Alanine scanning reveals residues crucial for GEF activity within that sequence. HDX confirms that, like G protein-coupled receptors (GPCRs), Ric-8A binds the C-terminus of Gα. In contrast to GPCRs, Ric-8A interacts with Switches I and II of Gα and possibly at the Gα domain interface. These extensive interactions provide both allosteric and direct catalysis of GDP unbinding and release and GTP binding. DOI: http://dx.doi.org/10.7554/eLife.19238.001
+Cytosolic Ric-8A has guanine nucleotide exchange factor (GEF) activity and is a chaperone for several classes of heterotrimeric G protein α subunits in vertebrates. Using Hydrogen-Deuterium Exchange-Mass Spectrometry (HDX-MS) we show that Ric-8A disrupts the secondary structure of the Gα Ras-like domain that girds the guanine nucleotide-binding site, and destabilizes the interface between the Gαi1 Ras and helical domains, allowing domain separation and nucleotide release. These changes are largely reversed upon binding GTP and dissociation of Ric-8A. HDX-MS identifies a potential Gα interaction site in Ric-8A. Alanine scanning reveals residues crucial for GEF activity within that sequence. HDX confirms that, like G protein-coupled receptors (GPCRs), Ric-8A binds the C-terminus of Gα. In contrast to GPCRs, Ric-8A interacts with Switches I and II of Gα and possibly at the Gα domain interface. These extensive interactions provide both allosteric and direct catalysis of GDP unbinding and release and GTP binding.
 
 ## Introduction
 
@@ -35,45 +35,47 @@ Here, we report experiments using time-resolved HDX-MS to observe, at a resoluti
 
 ## Results and discussion
 
-## Acquisition and analysis of HD-MX data
+### Acquisition and analysis of HD-MX data
 
 We analyzed the amide hydrogen exchange properties of rat Gαi1 in complex with rat Ric-8A, the stable intermediate for Ric-8A-catalyzed nucleotide exchange in which the nucleotide-binding site of Gαi1 is empty. Free Ric-8A and Gαi1•GDP are the reference states to which both components of the Gαi1:Ric-8A complex are compared. We also measured the HDX properties of Gαi1•Mg2+GTPγS (henceforth Gαi1•GTPγS) in which Gαi1 is activated for effector engagement. Gαi1•GDP is the reference state for the latter as well. In the experiments described here, we used non-myristoylated rat Gαi1 and rat (1-491) Ric-8A, in which the 29 C-terminal residues of the full-length protein are absent. This C-terminally truncated Ric-8A exhibits roughly 10% higher GEF activity than the native protein (Thomas et al., 2008) and is henceforth referred to as Ric-8A. The Gαi1:Ric-8A complex remains intact and active in GTPγS uptake throughout the course of the of the HDX experiment (Figure 1—figure supplement 1).
 
-We measured HDX from Gαi1•GDP, Gαi1•GTPγS, Ric-8A and Gαi1:Ric-8A at successive time points ranging from 30 s to 5 hr following dilution of proteins or protein complexes with deuterated buffer. These were then subjected to pepsin digestion at pH 2.5°C and 0°C to minimize back-exchange, yielding peptide fragments ranging in length from four to ~20 amino acid residues. In aggregate, overlapping peptide fragments recovered from pepsinolysis represent the entire amino acid sequence of Gαi1 and 87% of that of Ric-8A (
+We measured HDX from Gαi1•GDP, Gαi1•GTPγS, Ric-8A and Gαi1:Ric-8A at successive time points ranging from 30 s to 5 hr following dilution of proteins or protein complexes with deuterated buffer. These were then subjected to pepsin digestion at pH 2.5°C and 0°C to minimize back-exchange, yielding peptide fragments ranging in length from four to ~20 amino acid residues. In aggregate, overlapping peptide fragments recovered from pepsinolysis represent the entire amino acid sequence of Gαi1 and 87% of that of Ric-8A (Figures 1–3). The average and maximum number of peptides that overlap with any single residue is 2.5 and 6, respectively, for Gαi1 and 1.7 and 6, respectively for Ric-8A. Time-dependent HDX from Gαi1•GDP, Gαi1•GTPγS, Gαi1:Ric-8A and Ric-8A, are shown as heat maps in Figures 1–3 and the change in deuteration for all peptides with incubation is reported in Figure 1–source data 1, Figure 2–source data 1, Figure 3–source data 1. The absolute extent of exchange from corresponding peptides derived from different preparations of Gαi1 is not identical. However the same preparation of Gαi1 was used to measure the difference in the extent of HDX for the pair Gαi1•GDP and Gαi1:Ric-8A, and for the pair Gαi1•GDP, Gαi1•GTPγS. Likewise, the same preparation of Ric-8A was used to measure differences in HDX properties of free Ric-8A and its complex with nucleotide-free Gαi1. These differences are mapped onto the three-dimensional structures of Gαi1 determined by X-ray crystallography (Figures 4–6 and Video 1) and a representative computationally-derived (Bradley et al., 2005) model of the tertiary structure of Ric-8A obtained by use of the Robetta server (Kim et al., 2004) (Figure 7a). The overall pattern of HDX from Gαi1 secondary structures in the GTPγS-bound state is similar to that reported earlier for the GDP•Mg2+AlF complex of Gαi1 published earlier (Preininger et al., 2012).
+
+![Video 1.](https://cdn.elifesciences.org/articles/19238/elife-19238-media1.mp4.jpg)
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig1-v1.jpg)
 
-**Figure 1.:** HDX at successive time points are represented by sets of horizontal bars, progressing from top (30 s) to bottom (5 hr), mapped on the amino acid sequence of Gαi1 for Gαi1•GDP (upper set) and Gαi1:Ric-8A (lower set). Color coding (see key) indicates fraction (percent) of total amide hydrogen atoms exchanged per peptide at each time point. Location of secondary structure elements is shown above the amino acid sequence. Red dots indicate residues that form non-covalent interactions with GDP.DOI: http://dx.doi.org/10.7554/eLife.19238.00310.7554/eLife.19238.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.19238.004
+**Figure 1.:** HDX at successive time points are represented by sets of horizontal bars, progressing from top (30 s) to bottom (5 hr), mapped on the amino acid sequence of Gαi1 for Gαi1•GDP (upper set) and Gαi1:Ric-8A (lower set). Color coding (see key) indicates fraction (percent) of total amide hydrogen atoms exchanged per peptide at each time point. Location of secondary structure elements is shown above the amino acid sequence. Red dots indicate residues that form non-covalent interactions with GDP.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** The increase in tryptophan fluorescence emission upon addition of GTPγS at successive time points was measured after Ric-8A:Gαi1 (0.5 µM) in 20 mM HEPES, pH 8.0, 100 mM NaCl, 10 mM MgCl2, 1 mM DTT, and 0.05% C12E10 in a reaction volume of 400 µl was allowed to equilibrate for 10–15 min at 20°C in a quartz fluorescence cuvette. GTPγS (final concentration, 5 µM) was added to the reaction mixture, and the increase in fluorescence at 340 nm was monitored upon excitation at 290 nm as described in Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.19238.005
+**Figure 1—figure supplement 1.:** The increase in tryptophan fluorescence emission upon addition of GTPγS at successive time points was measured after Ric-8A:Gαi1 (0.5 µM) in 20 mM HEPES, pH 8.0, 100 mM NaCl, 10 mM MgCl2, 1 mM DTT, and 0.05% C12E10 in a reaction volume of 400 µl was allowed to equilibrate for 10–15 min at 20°C in a quartz fluorescence cuvette. GTPγS (final concentration, 5 µM) was added to the reaction mixture, and the increase in fluorescence at 340 nm was monitored upon excitation at 290 nm as described in Materials and methods.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig2-v1.jpg)
 
-**Figure 2.:** Image elements are as described in the legend to Figure 1.DOI: http://dx.doi.org/10.7554/eLife.19238.00610.7554/eLife.19238.007Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.19238.007
+**Figure 2.:** Image elements are as described in the legend to Figure 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig3-v1.jpg)
 
-**Figure 3.:** Location of predicted secondary structure elements is shown above the amino acid sequence. Red dots indicate residues which, upon substitution with alanine, result in significant impairment of GEF activity. Image elements are otherwise as described in the legend to Figure 1.DOI: http://dx.doi.org/10.7554/eLife.19238.00810.7554/eLife.19238.009Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.19238.009
+**Figure 3.:** Location of predicted secondary structure elements is shown above the amino acid sequence. Red dots indicate residues which, upon substitution with alanine, result in significant impairment of GEF activity. Image elements are otherwise as described in the legend to Figure 1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig4-v1.jpg)
 
-**Figure 4.:** (a) in the transition from Gαi1•GDP to Gαi1:Ric-8A-bound states, and (b) Gαi1•GDP to GTPγS complexes, as revealed by HDX-MS. The color scheme represents difference in per-residue deuteration relative to Gαi1•GDP mapped onto the structures of Gα•GDP (A, PDB 1GGD) or Gαi1•GTPγS (PDB 1GIT) Residues that undergo an increase in deuteration of 25% or greater are colored green (deprotection), and those that experience a decrease in deuteration of 25% or less are colored magenta (protection). Intermediate degrees of deuteration changes are colored according to the color key. Secondary structure elements are labeled; Switch I, Switch II and Switch III are labeled as S1, S2 and S3, respectively. Bound nucleotide, which is not present in the Gαi1:Ric-8A complex, is shown as a stick figure.DOI: http://dx.doi.org/10.7554/eLife.19238.010
+**Figure 4.:** (a) in the transition from Gαi1•GDP to Gαi1:Ric-8A-bound states, and (b) Gαi1•GDP to GTPγS complexes, as revealed by HDX-MS. The color scheme represents difference in per-residue deuteration relative to Gαi1•GDP mapped onto the structures of Gα•GDP (A, PDB 1GGD) or Gαi1•GTPγS (PDB 1GIT) Residues that undergo an increase in deuteration of 25% or greater are colored green (deprotection), and those that experience a decrease in deuteration of 25% or less are colored magenta (protection). Intermediate degrees of deuteration changes are colored according to the color key. Secondary structure elements are labeled; Switch I, Switch II and Switch III are labeled as S1, S2 and S3, respectively. Bound nucleotide, which is not present in the Gαi1:Ric-8A complex, is shown as a stick figure.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig5-v1.jpg)
 
-**Figure 5.:** (a) kinetics of HDX at selected Gαi1 peptides in Gαi1•GDP, light gray, and Gαi1•Ric-8A, dark gray; error bars represent the standard deviation computed for three technical replicates (see Materials and methods) (b) section of the beta sheet and α5 in the Ras domain that abut the nucleotide-binding site, colored according to the extent of HDX, using the coloring scheme used in Figure 4; (c) elements of the nucleotide-binding site featuring the hydrophobic cluster between αG, β4, β5 and α4. Tube diameter is proportional to deuteration. Side chains and GDP are shown as stick figures: carbon, gray, oxygen, red and nitrogen, blue.DOI: http://dx.doi.org/10.7554/eLife.19238.011
+**Figure 5.:** (a) kinetics of HDX at selected Gαi1 peptides in Gαi1•GDP, light gray, and Gαi1•Ric-8A, dark gray; error bars represent the standard deviation computed for three technical replicates (see Materials and methods) (b) section of the beta sheet and α5 in the Ras domain that abut the nucleotide-binding site, colored according to the extent of HDX, using the coloring scheme used in Figure 4; (c) elements of the nucleotide-binding site featuring the hydrophobic cluster between αG, β4, β5 and α4. Tube diameter is proportional to deuteration. Side chains and GDP are shown as stick figures: carbon, gray, oxygen, red and nitrogen, blue.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig6-v1.jpg)
 
-**Figure 6.:** (a) HDX kinetics of interdomain secondary structure elements. (b) side chains of conserved residues in human Gα isoforms.DOI: http://dx.doi.org/10.7554/eLife.19238.012
+**Figure 6.:** (a) HDX kinetics of interdomain secondary structure elements. (b) side chains of conserved residues in human Gα isoforms.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig7-v1.jpg)
 
-**Figure 7.:** (a) amplitude of HDX mapped on a model of the tertiary structure of Ric-8A, using the coloring scheme adopted in Figure 4; (b) GEF activity of Ric-8A mutants expressed as percent of WT Ric-8A activity. Each Ric-8A variant is mutated to alanine at one of the residues within the sequence 454–470 as indicated. GEF activity for the (1-452)Ric-8A truncation mutant is also shown. Relative GEF activity represented by the blue bars is measured as the initial velocity of GDP to GTPγS exchange at GDP-bound Gαi1 (2 μM), upon addition of GTPγS (10 μM) and Ric-8A (2 μM) [WT rate, 3.84 (1.45) μM/min (sample standard deviation in parentheses), n = 8] Orange bars represent the relative rate of GTPγS binding to nucleotide-free Gαi1:Ric-8A (2 μM) [WT rate, 4.66 (1.38), n = 8]. Error bars show standard deviation of mutant/WT GEF activity ratios based on three independent measurements. The bar labeled mGiα quantifies the intrinsic exchange rate of myristoylated Gαi1 [0.08 (0.02)] min−1. Asterisks above bars indicate significance (two-tailed Student’s t test) of the difference in the respective mutant Ric-8A-catalyzed rate to that of WT Ric-8A: *p<0.01; **p<0.005; ***p<0.001. For cases in which the difference between these rates is corresponds to p>0.01), no asterisk is shown.DOI: http://dx.doi.org/10.7554/eLife.19238.013
+**Figure 7.:** (a) amplitude of HDX mapped on a model of the tertiary structure of Ric-8A, using the coloring scheme adopted in Figure 4; (b) GEF activity of Ric-8A mutants expressed as percent of WT Ric-8A activity. Each Ric-8A variant is mutated to alanine at one of the residues within the sequence 454–470 as indicated. GEF activity for the (1-452)Ric-8A truncation mutant is also shown. Relative GEF activity represented by the blue bars is measured as the initial velocity of GDP to GTPγS exchange at GDP-bound Gαi1 (2 μM), upon addition of GTPγS (10 μM) and Ric-8A (2 μM) [WT rate, 3.84 (1.45) μM/min (sample standard deviation in parentheses), n = 8] Orange bars represent the relative rate of GTPγS binding to nucleotide-free Gαi1:Ric-8A (2 μM) [WT rate, 4.66 (1.38), n = 8]. Error bars show standard deviation of mutant/WT GEF activity ratios based on three independent measurements. The bar labeled mGiα quantifies the intrinsic exchange rate of myristoylated Gαi1 [0.08 (0.02)] min−1. Asterisks above bars indicate significance (two-tailed Student’s t test) of the difference in the respective mutant Ric-8A-catalyzed rate to that of WT Ric-8A: *p<0.01; **p<0.005; ***p<0.001. For cases in which the difference between these rates is corresponds to p>0.01), no asterisk is shown.
 
-## Secondary structure plasticity of Gαi1 in the Gαi1:Ric-8A complex
+### Secondary structure plasticity of Gαi1 in the Gαi1:Ric-8A complex
 
 Comparison of the fast HDX behavior of nucleotide-free Gαi1 bound to Ric-8A with that of Gαi1•GDP (Figure 4a) reveals changes in solvent accessibility throughout the structure of Gαi1 during the first 60 s of exposure to D2O. Ric-8A binding and GDP release result in structural changes manifested by up to a 40% increase in deuteration (deprotection) of some peptides and a decrease in deuteration exceeding 25% (protection) in others. In contrast, Ric-8A binding does not induce striking changes in slow protein dynamics (Figure 1—source data 1) as measured by the slope of HDX with time. Most of the peptide segments that directly contact the nucleotide-binding scaffold of Gαi1 are deprotected in the Ric-8A-bound state. The P-loop, which enfolds the α and β phosphates of bound guanine nucleotides, and the β5-αG loop, which harbors the NPXY motif that determines guanine- specificity at the purine binding sub-site, show high levels of deprotection (Figures 4a and 5, Video 1). Backbone amide deprotection extends to the α-helical (αG and a segment of α4) and β-sheet scaffolds (β1, β4 and β5) that support these nucleotide-contacting regions (Figure 5b, Video 1). Secondary structure elements αG, β4 and β5 in particular support a hydrophobic cluster that supports the purine binding site (Figure 5c, Video 1). Increased deuteration of these segments indicates that this main-chain hydrogen bonding network is destablized in the Gαi1:Ric-8A complex. van der Waals interactions within the cluster could in turn be disrupted, resulting in the loss of tertiary structural integrity of the nucleotide-binding site and the surrounding structure. In contrast, the segment extending from the C-terminus of α4 though β6 is protected by Ric-8A, as is the C-terminus of α5 (see below).
 
@@ -81,11 +83,11 @@ Secondary structure elements at the Ras domain-helical domain interface are dest
 
 In contrast, the αD-αE loop in the helical domain becomes moderately protected in Gαi1:Ric-8A (Figure 4a), even as the juxtaposed αG and Switch III in the Ras domain are strongly deprotected. The αD-αE loop, together with other features of the helical domain, including αA, may be shielded from solvent by interactions with Ric-8A.
 
-## HDX protection points to a potential Ric-8A-interaction surface of Gαi1
+### HDX protection points to a potential Ric-8A-interaction surface of Gαi1
 
 Switch I (~residues 176–181) and to a greater extent, Switch II (~residues 203–215), show modest protection from HDX in the Ric-8A complex (Figure 4a and Figure 5a, Video 1). Other evidence implicates these regions as possible loci of direct interaction between Gαi1 and Ric-8A. Specifically, EPR studies show that Gαi1 residues R209 and K180 in Switch I and Switch II, respectively, become partially immobilized upon binding to Ric-8A (Van Eps et al., 2015). The possibility that Switch II is a Ric-8A binding site is also suggested by the observation that a chimera of Gαs that harbors the Switch II sequence of Gαi1 is not protected from ubiquitination by Ric-8B, a Gαs-specific ortholog of Ric-8A (Nagai et al., 2010). The C-terminus of Gαi1, including residues of α5, is strongly protected from HDX by Ric-8A (Figure 4). This finding is consistent with other studies that implicate the C-terminus of Gαi1 as a Ric-8A interaction site, including the observation that a peptide encompassing this sequence is a competitive inhibitor of Gαi1 for Ric-8A GEF activity (Papasergi et al., 2015; Thomas et al., 2011). Also protected is the amino terminus of Gαi1, which packs against the C-terminus in crystal structures of Gαi1•GDP that crystallize in space group I4 (Mixon et al., 1995). Nevertheless, an N-terminal truncation mutant of Gαi1 remains a Ric-8A substrate (Thomas et al., 2011). From the HDX protection data, we infer a broad interaction surface for Gαi1 that encompasses structural elements of the helical domain near its interface with the Ras domain, extends to Switch I and Switch II, and includes the C-terminus, which may make the most intimate contacts with Ric-8A (Figure 4a, Video 1).
 
-## GDP → GTP exchange reverses Ric-8A – induced conformational changes
+### GDP → GTP exchange reverses Ric-8A – induced conformational changes
 
 Changes in HD protection that occur upon exchange of GDP for GTPγS are, for the majority of peptides analyzed, less pronounced than those observed when Ric-8A displaces GDP from Gαi1 (Figure 4b). In the P-loop and α1 at the nucleotide-binding site, changes in the magnitude of HDX are the opposite of those observed in the transition from Gα•GDP to Gα•Ric-8A. These latter segments become moderately protected, consistent with structural rigidification induced by nucleotide triphosphate binding. Modest protection extends also to the β4 – Switch III – α3 turn sequence, and αD-αF loop that flanks Switch III in polar inter-domain contacts. Notably, Switch III and α3 are consensus effector binding sites of GTP-activated Gα (Sprang et al., 2007) and protection from HDX could reflect a structural stiffening of these elements in the GTP-bound state. The pattern of changes in HDX protection upon transition between GDP and GTPγS-bound states roughly parallel the changes in amide chemical shifts observed in the HSQC spectra of Gαi1 (Goricanec et al., 2016).
 
@@ -93,21 +95,129 @@ A subset of Gαi1 peptides show similar changes in HDX in response to binding of
 
 The transition from GDP to GTP-bound states does not affect HDX at sequences (β5 - αG and β6 - α5) that contact the guanine base of GTP. This is consistent with crystal structures, which show residues in these two segments to be well ordered in both GTP and GTP-analog bound complexes of Gαi1 and transducin (Mixon et al., 1995; Lambright et al., 1996). Several structural elements show mild deprotection in the GTP-bound state. These include αA in the helical domain, and helical segments against which it packs, as well as residues at the N-terminus of β4 and in the α4-β6 purine-binding loop in the Ras domain. The structural origin of these changes is not apparent.
 
-## HD protection identifies potential Gαi1 binding site on Ric-8A
+### HD protection identifies potential Gαi1 binding site on Ric-8A
 
 The three dimensional structure of Ric-8A has not been determined, nor does it have significant amino acid sequence identity to members of any protein families represented in the Protein Data Bank. We therefore used the Robetta web server (Kim et al., 2004) to execute an automated sequence of Rosetta structure prediction tools (Bradley et al., 2005) that yielded five all-atom models that ranked highest with respect to specific stereochemical criteria. In agreement with earlier sequence analysis studies (Figueroa et al., 2009), Ric-8A is predicted to adopt an armadillo fold, similar to that of β-catenin and nuclear import proteins. The Ric-8A models differed mainly with respect to the packing interactions between neighboring helical segments within the ~130 residue C-terminal region and the spatial relationship of the latter to the N-terminal 400 residues, suggesting that the two regions constitute distinct structural domains. Throughout its primary structure, Ric-8A is highly susceptible to HDX (Figure 3), with nearly half of the observed peptide segments incorporating deuterium at 60% of exchangeable sites. Upon binding to Gαi1, Ric-8A undergoes changes in accessibility to HDX throughout its amino acid sequence (Figure 7a). Many Ric-8A-derived peptides show 5–15% changes in deuteration relative to free Ric-8A at successive α/α repeats, suggestive of distributive conformational changes.
 
 Notably, an extended sequence corresponding to the structural repeats in Ric-8A, from residue 425 to the C-terminus of the construct (residue 491) exhibit an 10–15% increase in HDX relative to free Ric-8A. This pattern is interrupted by a highly protected (25% decrease in deuteration) peptide comprising residues 454–470, which is rich in proline and acidic residues. Based on sequence analysis of more than 250 Ric-8A homologs using Jpred4 (Drozdetskiy et al., 2015), this polypeptide is predicted to be largely unstructured.
 
-The substantial protection afforded residues 454–470 in the Gαi1:Ric-8A complex implicates this segment to be a possible Gαi1 binding site. To test this hypothesis, we conducted an alanine scan of this region, and assayed the GEF activity of each alanine mutant using a tryptophan fluorescence assay that reports the exchange of GDP for GTPγS at Gαi1 (Higashijima et al., 1987a). For each mutant, we measured the initial velocity of nucleotide exchange from Gαi1•GDP upon addition of GTPγS and Ric-8A (blue bars in Figure 7b, Table 1). We also measured the initial rate of incorporation of GTPγS into Ric-8A-bound Gαi1, which results in dissociation of Ric-8A from the Gαi1•GTPγS (orange bars in Figure 7b, Table 1).10.7554/eLife.19238.014Table 1.Initial velocities of Ric-8A mutant guanine nucleotide exchange activity. Assays were conducted as described in Materials and methods section of the Main text. For measurement of v1, reaction buffer (50 M HEPES, pH 8.0, 150 M NaCl, 10 M MgCl2, and 1 M TCEP) at 25°C contained 2 μM Gαi1•GDP, 2 μM Ric-8A and 10 μM GTPγS (initial concentration); for measurement of v2, 2 μM Gαi1•GDP, 2 μM Ric-8A were incubated for 5 min before addition of 10 μM GTPγS.DOI: http://dx.doi.org/10.7554/eLife.19238.014Ric-8A mutantv1* (μM/min)v2 (μM/min)WT3.84 (1.45) 4.66 (1.38) P454A2.88 (0.80) 5.39 (0.43) V455A0.82 (0.05) 0.25 (0.01) T456A0.59 (0.04) 0.24 (0.06) G457A3.47 (1.11) 6.02 (1.19) R458A0.63 (0.07) 0.37 (0.03 V459A5.65 (0.68) 6.85 (1.44) E460A6.54 (0.83) 5.36 (1.39) E461A7.45 (0.65) 5.06 (0.59) K462A4.46 (0.92) 5.15 (0.24) P463A2.90 (0.69) 4.78 (1.26) P464A2.83 (0.94) 4.73 (1.21) N465A2.25 (1.03) 4.56 (0.51) P466A0.47 (0.01) 0.34 (0.02) M467A2.17 (0.06) 4.57 (0.44) E468A3.82 (0.55) 6.23 (0.88) G469A0.63 (0.08) 0.26 (0.05) (1-452)Ric-8A0.86 (0.22) 0.39 (0.03) * v1 for the reactionGαi1•GDP + GTPγS + Ric-8A → Gαi1•GTP + Ric-8A + GDPv2 for the reactionGαi1•Ric-8A + GTPγS → Gαi1•GTPγS + Ric-8AValues in parentheses are the standard deviation for three independent experiments.
+The substantial protection afforded residues 454–470 in the Gαi1:Ric-8A complex implicates this segment to be a possible Gαi1 binding site. To test this hypothesis, we conducted an alanine scan of this region, and assayed the GEF activity of each alanine mutant using a tryptophan fluorescence assay that reports the exchange of GDP for GTPγS at Gαi1 (Higashijima et al., 1987a). For each mutant, we measured the initial velocity of nucleotide exchange from Gαi1•GDP upon addition of GTPγS and Ric-8A (blue bars in Figure 7b, Table 1). We also measured the initial rate of incorporation of GTPγS into Ric-8A-bound Gαi1, which results in dissociation of Ric-8A from the Gαi1•GTPγS (orange bars in Figure 7b, Table 1).
 
-Alanine scanning revealed several ‘hotspots’ for GEF activity, clustered at the N- and C-termini of the 454–470 sequence. Experiments were performed with myristoylated Gαi1 harboring a hexahistidine tag in the helical domain (
+**Table 1.**
+ Initial velocities of Ric-8A mutant guanine nucleotide exchange activity. Assays were conducted as described in Materials and methods section of the Main text. For measurement of v1, reaction buffer (50 M HEPES, pH 8.0, 150 M NaCl, 10 M MgCl2, and 1 M TCEP) at 25°C contained 2 μM Gαi1•GDP, 2 μM Ric-8A and 10 μM GTPγS (initial concentration); for measurement of v2, 2 μM Gαi1•GDP, 2 μM Ric-8A were incubated for 5 min before addition of 10 μM GTPγS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ric-8A mutant</th>
+      <th>v1* (μM/min)</th>
+      <th>v2 (μM/min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>3.84 (1.45)</td>
+      <td>4.66 (1.38)</td>
+    </tr>
+    <tr>
+      <td>P454A</td>
+      <td>2.88 (0.80)</td>
+      <td>5.39 (0.43)</td>
+    </tr>
+    <tr>
+      <td>V455A</td>
+      <td>0.82 (0.05)</td>
+      <td>0.25 (0.01)</td>
+    </tr>
+    <tr>
+      <td>T456A</td>
+      <td>0.59 (0.04)</td>
+      <td>0.24 (0.06)</td>
+    </tr>
+    <tr>
+      <td>G457A</td>
+      <td>3.47 (1.11)</td>
+      <td>6.02 (1.19)</td>
+    </tr>
+    <tr>
+      <td>R458A</td>
+      <td>0.63 (0.07)</td>
+      <td>0.37 (0.03</td>
+    </tr>
+    <tr>
+      <td>V459A</td>
+      <td>5.65 (0.68)</td>
+      <td>6.85 (1.44)</td>
+    </tr>
+    <tr>
+      <td>E460A</td>
+      <td>6.54 (0.83)</td>
+      <td>5.36 (1.39)</td>
+    </tr>
+    <tr>
+      <td>E461A</td>
+      <td>7.45 (0.65)</td>
+      <td>5.06 (0.59)</td>
+    </tr>
+    <tr>
+      <td>K462A</td>
+      <td>4.46 (0.92)</td>
+      <td>5.15 (0.24)</td>
+    </tr>
+    <tr>
+      <td>P463A</td>
+      <td>2.90 (0.69)</td>
+      <td>4.78 (1.26)</td>
+    </tr>
+    <tr>
+      <td>P464A</td>
+      <td>2.83 (0.94)</td>
+      <td>4.73 (1.21)</td>
+    </tr>
+    <tr>
+      <td>N465A</td>
+      <td>2.25 (1.03)</td>
+      <td>4.56 (0.51)</td>
+    </tr>
+    <tr>
+      <td>P466A</td>
+      <td>0.47 (0.01)</td>
+      <td>0.34 (0.02)</td>
+    </tr>
+    <tr>
+      <td>M467A</td>
+      <td>2.17 (0.06)</td>
+      <td>4.57 (0.44)</td>
+    </tr>
+    <tr>
+      <td>E468A</td>
+      <td>3.82 (0.55)</td>
+      <td>6.23 (0.88)</td>
+    </tr>
+    <tr>
+      <td>G469A</td>
+      <td>0.63 (0.08)</td>
+      <td>0.26 (0.05)</td>
+    </tr>
+    <tr>
+      <td>(1-452)Ric-8A</td>
+      <td>0.86 (0.22)</td>
+      <td>0.39 (0.03)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* v1 for the reactionGαi1•GDP + GTPγS + Ric-8A → Gαi1•GTP + Ric-8A + GDPv2 for the reactionGαi1•Ric-8A + GTPγS → Gαi1•GTPγS + Ric-8AValues in parentheses are the standard deviation for three independent experiments._
+
+Alanine scanning revealed several ‘hotspots’ for GEF activity, clustered at the N- and C-termini of the 454–470 sequence. Experiments were performed with myristoylated Gαi1 harboring a hexahistidine tag in the helical domain (Mumby and Linder, 1994). Mutation of any of the five hotspot residues (V455, T456, R458, P466 and G469) resulted in a diminution in the initial rate of GTPγS incorporation to 12–20% that of WT Ric-8A. Using differential scanning fluorimetry, we found that most of the mutants were slightly destabilized, with thermal unfolding transitions (Tm) ranging from 38°C to 47°C, relative to WT Ric-8A, which transitions at 47°C (Figure 8). There is no apparent correlation between thermal melting temperature and GEF activity for these mutants. Comparable loss of GEF activity is achieved by C-terminal truncation of Ric-8A at residue 452, which entirely eliminates the protected sequence. Alanine mutants at residues 454 and 468 exhibited significantly slower rates for the overall exchange reaction than for exchange from the Gαi1:Ric-8A intermediate (p<0.001, P454A and p<0.02, R458A). Mutation of these residues appears to facilitate binding of GTPγS to, or release of Ric-8A from, the Gαi1:Ric-8A intermediate. We propose that residues at the N- and C-termini of the protected sequence in Ric-8A interact directly or through an allosteric interaction with the empty nucleotide-binding site of Gαi1 to increase its affinity for GTP.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/19238/elife-19238-fig8-v1.jpg)
 
-**Figure 8.:** Samples (10 μl) of wild type Ric-8A(1–491) and mutants thereof (~1 mg/ml) in 50 mM HEPES, pH 8.0, 150 mM NaCl and 1 mM TCEP were dispensed into glass capillaries and placed into the sample chamber of a Prometheus NT.48 differential scanning fluorimeter (NanoTemper Technologies, Inc, Munich, Germany). Samples were subjected to a time-dependent temperature gradient over 20–75°C at a rate of 1°C/min. Fluorescence emission at 330 nm and 350 mn (excitation wavelength, 295 nm) was recorded at seven second intervals. The transition temperature for thermal denaturation (Tm) is defined as the temperature at the maximum the first derivative of the ratio of fluorescence emission at 350 and 330 nm (F350/F330) as determined by a polynomial fit to the temperature-fluorescence ratio curve implemented in the manufacturer’s software.DOI: http://dx.doi.org/10.7554/eLife.19238.015
+**Figure 8.:** Samples (10 μl) of wild type Ric-8A(1–491) and mutants thereof (~1 mg/ml) in 50 mM HEPES, pH 8.0, 150 mM NaCl and 1 mM TCEP were dispensed into glass capillaries and placed into the sample chamber of a Prometheus NT.48 differential scanning fluorimeter (NanoTemper Technologies, Inc, Munich, Germany). Samples were subjected to a time-dependent temperature gradient over 20–75°C at a rate of 1°C/min. Fluorescence emission at 330 nm and 350 mn (excitation wavelength, 295 nm) was recorded at seven second intervals. The transition temperature for thermal denaturation (Tm) is defined as the temperature at the maximum the first derivative of the ratio of fluorescence emission at 350 and 330 nm (F350/F330) as determined by a polynomial fit to the temperature-fluorescence ratio curve implemented in the manufacturer’s software.
 
-## Ric-8A and GPCRs engage Gα by different mechanisms
+### Ric-8A and GPCRs engage Gα by different mechanisms
 
 The HDX results presented here suggest that GPCRs and Ric-8A adopt different strategies to induce roughly similar structural transitions in Gα that facilitate nucleotide exchange. This is not unexpected, since the two GEFs are structurally unrelated and act on different states of Gα: GPCRs on Gα•GDP bound to Gβγ, and Ric-8A on free Gα•GDP. Biochemical (Oldham and Hamm, 2008), structural (Van Eps et al., 2015; Westfield et al., 2011; Chung et al., 2011), computational (Dror et al., 2015) and conservation-based modeling studies
 
@@ -121,13 +231,13 @@ The mechanism by which Ric-8A induces structural changes in Gαi1 appears to dif
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 WT Ric-8A (1-491) was subcloned into the pET-28a vector for expression as an N-terminally hexahistidine tagged protein (Thomas et al., 2011). Mutants of Ric-8A were generated from the WT plasmid by user of the QuikChange II XL kit (Agilent Technologies, Santa Clara, CA). Rat Ric-8A (1-491) was expressed in Escherichia coli BL21 (DE3)-RIPL cells (Agilent Technologies, Santa Clara, CA) in LB media containing kanamycin (100 mg/L) and induced with 50 µM isopropyl β-D-thiogalactopyranoside (IPTG) at 20°C. After overnight growth at 20°C, cells were lysed using an EmulsiFlex-C56 cell disruptor (Avestin, Inc. Ottawa, Canada) at 4°C in lysis buffer (50 mM Tris, pH 8.0, 250 mM NaCl, 2 mM β-mercaptoethanol and 2 mM phenylmethylsulfonyl fluoride [PMSF]). The cell lysate was clarified by centrifugation and loaded onto a column containing 5 ml of Profinity IMAC resin (Bio-Rad, Hercules, CA). After extensive washing with lysis buffer, proteins were eluted from the resin with lysis buffer containing 300 mM imidazole and dialyzed against a low ionic strength buffer (50 mM Tris, pH 8.0 and 2 mM β-mercaptoethanol). The dialysate was loaded onto a HiTrap Q Sepharose FF column (GE Healthcare) and eluted with a 0–500 mM NaCl gradient on an AKTA Pure FPLC system (GE Healthcare). Pure Ric-8A 1–491 eluted from the Q-column at 165–175 mM NaCl.
 
 The W258A mutant of rat Gαi1, encoded in a Gateway pDEST15 vector (Thermo Fisher Scientific, Waltham, MA) (Thomas et al., 2011), was expressed as a tobacco etch virus protease (TEV)-cleavable, N-terminal glutathione-S-transferase (GST) fusion protein and purified as described (Thomas et al., 2008). Nucleotide-free complex of Gαi1 and Ric-8A were prepared, with slight modifications, as described (Thomas et al., 2011). Ric-8A was mixed with Gαi1•GDP (1:1.5 molar ratio, both in 50 mM TRIS pH 8.0, 150 mM NaCl and 2–5 mM DTT) in a 500 μl volume and incubated at 4°C for two hours. A 50 ml slurry of agarose resin bearing immobilized alkaline phosphatase (Sigma-Aldrich, St Louis, MO) was added to the reaction mixture to degrade the released GDP and centrifuged to remove the resin. The reaction mixture was subjected to size exclusion chromatography on a Sephadex200/G75 tandem column (GE Healthcare, Chicago, IL) equilibrated in 50 mM TRIS pH 8.0, 150 mM NaCl and 2 mM DTT. The fraction corresponding to the nucleotide-free Ric-8A:Gαi1 complex were pooled and concentrated to 10–12 mg/ml using Centricon concentrators (Millipore, Darmstadt, Germany).
 
-## Hydrogen Deuterium exchange mass spectrometry
+### Hydrogen Deuterium exchange mass spectrometry
 
 HDX data collection was performed on an Agilent 1290 ultrahigh pressure (UPLC) series chromatography instrument coupled to a 6538 UHD Q-TOF mass spectrometer (Agilent Technologies) in the positive mode. For non-deuterated control experiments, 10 μl of protein sample (Gαi1•GDP, Gαi1•GTPγS, Ric-8A or Gαi1:Ric-8A, at concentrations of approximately 10 mg/ml) was diluted 10 fold by adding H2O-based reaction buffer. Sample was quenched with a dilute formic acid solution (0.1%) at a ratio of 1:3 to achieve a final pH of 2.5. Quenched samples were digested for 2 min by addition of 15 μl of pepsin (1 mg/ml from porcine gastric mucosa, Sigma) to 60 µl of quenched protein. Quenching and digestion procedures for all samples were performed on ice.
 
@@ -137,27 +247,47 @@ Using Agilent Mass Hunter B.04.00 and Bio-Confirm, unique peptides were identifi
 
 Peptide sequence tags were generated by MS-MS data acquisition, with a scan range of 50–1700 m/z (auto MS-MS)) with an isolation width of 4 m/z and an acquisition rate of 1 spectrum/s. Four fixed collision energy voltage (20V, 25V,30V and 40V) and linear gradient voltages were applied in auto MS-MS mode. MS-MS data was analyzed and mapped to confirm the corresponding sequence using Bruker Daltonics Bio Tools 3.2 (Bruker Daltonics Inc, Billerica, MA). In addition, Peptide shaker software (Compomics, Gent, Belgium) was used to confirm assingments (Vaudel et al., 2015). For both Bruker and Peptide shaker analysis, raw MS-MS data files were converted to mgf format before data mapping. After the completion of data analysis, heat maps (Figures 1–3) were generated using the web-based application, MS tools (Kavan et al., 2011).
 
-Back-exchange during chromatography was estimated from a fully deuterated protein. The 24 hr time point was denoted as 100% (m100) exchange. The non-deuterated control was denoted as 0% (m0%) exchange. Percentage deuteration for each peptide at different time points was calculated by following formula:DP=(mt−m0%m100%−m0%)∙100
+Back-exchange during chromatography was estimated from a fully deuterated protein. The 24 hr time point was denoted as 100% ($m_{100}$) exchange. The non-deuterated control was denoted as 0% ($m_{0%}$) exchange. Percentage deuteration for each peptide at different time points was calculated by following formula:
 
-where  mt is peptide mass after incubation in deuterated buffer at time t.
+$$
+DP=(\frac{m_{t}−m_{0%}}{m_{100%}−m_{0%}})∙100
+$$
 
-To represent the extent of HDX on the cartoon representations of Gαi1 and Ric-8A (Figure 4–7) generated in PyMOL (Schrödinger, 2012), each Cα atom was assigned a percent deuteration value Di,Di= ∑j=1Niwji< DPji>∑j=1Niwji
+where $ m_{t}$ is peptide mass after incubation in deuterated buffer at time t.
 
-where < DPji> is the average % deuterium uptake over the first two time points (30 s and 60 s) for the jth of the Ni peptides that contain residue i, and wji is a weighting factor for DPji, equal to the lesser of: 1/Lji, where Lji is the length of the peptide, or 0.2. The color assigned to each residue is scaled to the value of Di according to the color key shown in Figure 4.
+To represent the extent of HDX on the cartoon representations of Gαi1 and Ric-8A (Figure 4–7) generated in PyMOL (Schrödinger, 2012), each Cα atom was assigned a percent deuteration value $D_{i}$,
 
-## Assay of Ric-8A guanine nucleotide exchange activity
+$$
+D_{i}=\frac{ \sumj=1N^{i}w_{j}^{i}< DP_{j}^{i}>}{\sumj=1N_{i}w_{j}^{i}}
+$$
+
+where $< DP_{j}^{i}>$ is the average % deuterium uptake over the first two time points (30 s and 60 s) for the jth of the Ni peptides that contain residue i, and $w_{j}^{i}$ is a weighting factor for $DP_{j}^{i}$, equal to the lesser of: $1/L_{j}^{i}$, where $L_{j}^{i}$ is the length of the peptide, or 0.2. The color assigned to each residue is scaled to the value of $D_{i}$ according to the color key shown in Figure 4.
+
+### Assay of Ric-8A guanine nucleotide exchange activity
 
 Ric-8A-catalyzed exchange of GTPγS for GDP at Gαi1 (blue histogram bars in Figure 7b) was followed by monitoring the change in intrinsic fluorescence of Gαi1 at 345 nm upon exchange of GDP with GTPγS (Higashijima et al., 1987a). Gαi1•GDP in exchange buffer composed of 50 mM HEPES, pH 8.0, 150 mM NaCl, 10 mM MgCl2, and 1 mM TCEP in a reaction volume of 500 µl was allowed to equilibrate for 5 min at 25°C in a quartz fluorescence cuvette with stirring. Ric-8A samples were equilibrated separately at 25°C. GTPγS in exchange buffer was added to the reaction mixture to a final concentration of 20 μM in the absence or presence of Ric-8A, and the increase in fluorescence at 345 nm was monitored upon excitation at 295 nm. Fluorescence measurements were conducted using an LS55 fluorescence Spectrometer (PerkinElmer Life Sciences, Waltham MA). The excitation and emission slit widths were set at 2.5 nm. All exciting light was eliminated by use of a 290 nm cut-off filter positioned in front of the emission photomultiplier.
 
 To determine the rate of exchange of Ric-8A for GTPγS at Gαi1:Ric-8A (orange histogram bars in Figure 7b), Ric-8A was added to the cuvette containing Gαi1:GDP after a 5 min equilibration at 25°C. The reaction mixture was incubated for another 5 min before addition of GTPγS in exchange buffer to a final concentration of 20 μM.
 
-10 min time courses of GTPγS binding were recorded and fit to a single exponential equation using SigmaPlot (Systat Software Inc., San Jose, CA):ΔFt= ΔFmax(1− e−kt)
+10 min time courses of GTPγS binding were recorded and fit to a single exponential equation using SigmaPlot (Systat Software Inc., San Jose, CA):
+
+$$
+ΔF_{t}= ΔF_{max}(1− e^{−kt})
+$$
 
 Where ΔFt is the increase in fluorescence relative to the baseline at time t. ΔFmax is the maximum change in in tryptophan fluorescence determined by extrapolation and k is the rate constant, in min−1 for the first-order change in fluorescence with time.
 
-The initial velocity of nucleotide exchange was calculated by taking the first derivative of this equation:vt =dFtdt= −k ΔFmax(1− e−kt)
+The initial velocity of nucleotide exchange was calculated by taking the first derivative of this equation:
 
-Where, at t = 0,v0 =dFtdt= k ΔFmax
+$$
+v_{t }=\frac{dF_{t}}{dt}= −k ΔF_{max}(1− e^{−kt})
+$$
+
+Where, at t = 0,
+
+$$
+v_{0 }=\frac{dF_{t}}{dt}= k ΔF_{max}
+$$
 
 For each experiment, the molar rate of nucleotide exchange was calculated using the ratio ΔFmax/[Gαi1•GDP]0 where [Gαi1•GDP]0 is the initial concentration of [Gαi1•GDP] in the reaction as determined from its computed extinction coefficient at 280 nm. The relative activity of each Ric-8A mutant was computed as the ratio of its GEF activity (v0) to that of WT Ric-8A. For each Ric-8A mutant, relative activities were determined for each of three samples derived from the same stock solution of protein and the average relative activity and standard deviation computed. Assays were conducted over a period of several days, using the same stock of Gαi1 and WT Ric-8A, and the activity of WT Ric-8A re-determined each day from a single sample.
 

@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04vq5kb54 Lundquist Institute for Biomedical Innovation at the Harbor-UCLA Medical Center Torrance United States
-2. https://ror.org/046rm7j60 Department of Medicine, David Geffen School of Medicine at UCLA Los Angeles United States
-3. https://ror.org/01kd65564 Department of Neuroscience, Developmental and Regenerative Biology, University of Texas at San Antonio San Antonio United States
+1. Lundquist Institute for Biomedical Innovation at the Harbor-UCLA Medical Center Torrance United States ([ROR:04vq5kb54](https://ror.org/04vq5kb54))
+2. Department of Medicine, David Geffen School of Medicine at UCLA Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+3. Department of Neuroscience, Developmental and Regenerative Biology, University of Texas at San Antonio San Antonio United States ([ROR:01kd65564](https://ror.org/01kd65564))
 
 † Corresponding author
 

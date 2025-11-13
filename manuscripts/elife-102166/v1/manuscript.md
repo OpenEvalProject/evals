@@ -15,21 +15,21 @@
 
 ### Affiliations
 
-1. https://ror.org/00mkhxb43 Department of Biological Sciences, University of Notre Dame Notre Dame United States
-2. https://ror.org/01an3r305 Department of Biological Sciences, University of Pittsburgh Pittsburgh United States
-3. https://ror.org/02wb73912 California Academy of Sciences San Francisco United States
-4. https://ror.org/00py81415 Program in Computational Biology and Bioinformatics, Duke University Durham United States
-5. https://ror.org/00py81415 Department of Evolutionary Anthropology, Duke University Durham United States
-6. https://ror.org/00py81415 Department of Biology, Duke University Durham United States
-7. https://ror.org/00py81415 Duke University Population Research Institute, Duke University Durham United States
-8. https://ror.org/02a33b393 Department of Primate Behavior and Evolution, Max Planck Institute for Evolutionary Anthropology Leipzig Germany
-9. https://ror.org/01sdtdd95 Canadian Institute for Advanced Research Toronto Canada
-10. https://ror.org/03s7gtk40 Faculty of Life Sciences, Institute of Biology, Leipzig University Leipzig Germany
-11. https://ror.org/0168r3w48 Department of Pediatrics and the Scripps Institution of Oceanography, University of California, San Diego San Diego United States
-12. https://ror.org/024mw5h28 Section of Genetic Medicine, Department of Medicine, University of Chicago Chicago United States
-13. https://ror.org/00py81415 Departments of Statistical Science, Mathematics, Computer Science, and Bioinformatics and Biostatistics, Duke University Durham United States
-14. https://ror.org/03s7gtk40 Center for Scalable Data Analytics and Artificial Intelligence, University of Leipzig Leipzig Germany
-15. https://ror.org/00ez2he07 Max Planck Institute for Mathematics in the Natural Sciences Leipzig Germany
+1. Department of Biological Sciences, University of Notre Dame Notre Dame United States ([ROR:00mkhxb43](https://ror.org/00mkhxb43))
+2. Department of Biological Sciences, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+3. California Academy of Sciences San Francisco United States ([ROR:02wb73912](https://ror.org/02wb73912))
+4. Program in Computational Biology and Bioinformatics, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+5. Department of Evolutionary Anthropology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+6. Department of Biology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+7. Duke University Population Research Institute, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+8. Department of Primate Behavior and Evolution, Max Planck Institute for Evolutionary Anthropology Leipzig Germany ([ROR:02a33b393](https://ror.org/02a33b393))
+9. Canadian Institute for Advanced Research Toronto Canada ([ROR:01sdtdd95](https://ror.org/01sdtdd95))
+10. Faculty of Life Sciences, Institute of Biology, Leipzig University Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+11. Department of Pediatrics and the Scripps Institution of Oceanography, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+12. Section of Genetic Medicine, Department of Medicine, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+13. Departments of Statistical Science, Mathematics, Computer Science, and Bioinformatics and Biostatistics, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+14. Center for Scalable Data Analytics and Artificial Intelligence, University of Leipzig Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+15. Max Planck Institute for Mathematics in the Natural Sciences Leipzig Germany ([ROR:00ez2he07](https://ror.org/00ez2he07))
 
 † Corresponding author
 
@@ -65,7 +65,7 @@ We began our analyses by identifying gut microbiome features that change reliabl
 
 ## Results
 
-## Many microbiome features change with age
+### Many microbiome features change with age
 
 Before creating the microbiome clock, we characterized microbiome features that change reliably with the age of individual hosts. Our subjects were 479 known-age baboons (264 females and 215 males) whose microbiome taxonomic compositions were characterized using 13,476 fecal-derived 16S rRNA gene sequencing profiles over a 14-year period (Figure 1A, B; baboon age ranged from 7 months to 26.5 years; 8245 samples from females; 5231 samples from males; range = 3–135 samples per baboon; mean = 35 samples per female and 26 samples per male).
 
@@ -73,29 +73,173 @@ We tested age associations for 1440 microbiome features, including: (1) five met
 
 We found that many aspects of microbiome community composition changed with host age (Figure 2; Figure 2—figure supplement 1). All alpha diversity metrics, except richness, the only unweighted metric, exhibited U-shaped relationships with age, with high values in early life and old age, and low values in young adulthood. While we should interpret this pattern with caution due to the small sample size beyond age 20 (n = 18 females), this U-shaped pattern differs somewhat from patterns in humans and chimpanzees: most human populations exhibit an asymptotic increase in alpha diversity with age (Badal et al., 2020; Caporaso et al., 2011) while in chimpanzees alpha diversity is highest in early life (Reese et al., 2021) (false discovery rate [FDR] <0.05; Figure 2C, E; Supplementary file 1A). Further, seven of the ten PCs of microbiome composition exhibited linear, and in some cases quadratic, relationships with age, with PC1, PC2, PC4, and PC6 exhibiting the strongest age associations (FDR <0.05; Figure 2C, F; Supplementary file 1A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig2-v1.jpg)
+
+**Figure 2.:** (A) and (B) show the percent mean relative abundance of microbial phyla across life for females and males, respectively. Panel (C) shows the estimates of the linear associations between mean-centered age for metrics of microbiome alpha diversity and principal components of microbiome compositional variation that exhibited significant associations with age (false discovery rate [FDR] <0.05). Positive values are more abundant in older hosts. Panel (D) shows the estimate of the linear association between mean-centered age and the top 50 microbiome features that exhibited significant associations with age. Positive values are more abundant in older hosts. Panel (E) shows the average value of the microbiome features from (C) as a function of age, across all subjects. Note that sample sizes for patterns beyond age 20 years rely on 256 samples from just 18 females; hence, we interpret the pattern in these oldest animals with caution. Panel (F) shows the average prevalence of the higher taxonomic designations from (D) as a function of age, across all subjects. In (C–F), points are colored by the category of the feature (see legend). UC is an abbreviation for uncharacterized. Features that had a significant quadratic age term are indicated by * (see also Figure 2—figure supplements 1 and 2; Supplementary file 1A).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** In the two panels, age was modeled as (A) a linear term, or (B) a quadratic term in a linear mixed model (false discovery rate [FDR] threshold = 0.05; darker colors represent the proportion of statistically significant features). All features were modeled using Gaussian error distributions. As described in the Results, feature types included five metrics of alpha diversity, the top 10 principal components of Bray–Curtis dissimilarity (collectively labeled ‘Composition’ in the gold bar), the abundances of each microbial phylum (n = 30), family (n = 290), and genus (n = 747), and amplicon sequence variances (ASVs) detected in >25% of samples (n = 358).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Plot shows the size of the quadratic estimate for each taxon that had a significant association with age. Bars are colored by the type of feature (see legend) and indicated by the letter in parentheses, with D indicating a diversity metric, C a compositional metric (i.e., a principal component of Bray–Curtis similarity), P for phylum, F for family, G for genus, and amplicon sequence variance (ASV) for an ASV. To make our quadratic terms more interpretable, we centered our age estimates on zero by subtracting the mean of age from each age value. Specifically, when a quadratic term is negative, the curve is concave, whereas when the term is positive, the curve is convex. UC is short for uncharacterized. Features that also had a significant linear age term are indicated by a *.
+
 51.6% of the 1440 features exhibited significant linear or quadratic relationships with host age (Figure 2—figure supplement 1 and Figure 2—figure supplement 2; Supplementary file 1A; FDR <0.05). 60% of phyla (18 of 30) decreased proportionally with age, while only three phyla—Kiritimatiellaeota, Firmicutes, and Chlamydiae—increased proportionally with age (FDR <0.05; Supplementary file 1A). Similarly, 66% (66 of 100) of age-associated families and 55% (115 of 209) of age-associated genera exhibited declining proportions with age (Supplementary file 1A). Consistent with the idea that age-related taxa differ across host populations and host taxa, none of the taxa that changed in this baboon population were commonly age associated in humans (Badal et al., 2020). The taxa most consistently linked to human aging include Akkermansia, Faecalibacterium, Bacteroidaceae, and Lachnospiraceae (Wilmanski et al., 2021; Badal et al., 2020) while in our sample of baboons, the strongest age-related changes were seen in the families Campylobacteraceae, Clostridiaceae, Elusimicrobiaceae, Enterobacteriaceae, Peptostreptococcaceae, and an uncharacterized family within Gastranaerophilales (Figure 2D, F; Supplementary file 1A). The genera that had the strongest relationships with age included Camplylobacter, Catenibacterium, Elusimicrobium, Prevotella, Romboutsia, and Ruminococcaceae UCG-011 (Figure 2D, F; Supplementary file 1A).
 
-## Microbiome clock calibration and composition
+### Microbiome clock calibration and composition
 
 We next turned our attention to building a microbiome clock using all 9575 microbiome compositional and taxonomic features present in at least 3 samples (Supplementary file 1B; the 1440 features discussed above only included taxa present in >25% of samples). We included all 9575 microbiome features in our age predictions, as opposed to just those that were statistically significantly associated with age because removing these non-significant features could exclude features that contribute to age prediction via interactions with other taxa. In developing the clock, we compared the performance of three supervised machine learning methods to predict the chronological age of individual hosts at the time each microbiome sample was collected. The three machine learning methods were elastic net regression, Random Forest regression, and Gaussian process (GP) regression (see Appendix). Because gut microbiomes are highly personalized in ours and other host populations (Björk et al., 2022), at least one sample from each host was always present in the training sets for these models (see Methods).
 
 We found that the most accurate age predictions were produced by a GP regression model with a kernel customized to account for heteroscedasticity (Figure 3; Figure 3—figure supplement 1; Figure 3—figure supplement 2). This model predicted host chronological age (agec), with an adjusted R2 of 48.8% and a median error of 1.96 years across all individuals and samples (Figure 3A, Table 1). As has been observed in some previous age clocks (e.g., Tian et al., 2017; Declerck and Vanden Berghe, 2018; de la Cuesta-Zuluaga et al., 2019), microbial age estimates (agem) were compressed relative to the x = y line, leading the model to systematically over-predict the ages of young individuals and under-predict the ages of old individuals (Figure 3A).
 
-When we subset our agem estimates by sex, we found that the microbiome clock was slightly more accurate for males than for females (Figure 3B, Table 1). The adjusted R2 for the correlation between agec and agem for males was 50.0%, with a median prediction error of 1.71 years as compared to an adjusted R2 of 48.9% and median error of 2.15 years for female baboons (Table 1). Male baboons also exhibit significantly older gut microbial age than females (Figure 3B, chronological age by sex interaction: β = 0.18, p < 0.001, Supplementary file 1C). Across the lifespan, males show a 1.4-fold higher rate of change in agem as a function of agec compared to females (relationship between agec and agem in males: β = 0.63, p < 0.001; relationship between agec and agem in females: β = 0.45, p < 0.001; Supplementary file 1D). Similar to patterns from a recent epigenetic age-predicting clock developed for this population (Anderson et al., 2021), this effect was only present after sexual maturity: when we subset the agem estimates to microbiome samples collected prior to the median age at sexual maturity (5.4 years for testicular enlargement in males and 4.5 years for menarche in females; Altmann et al., 2010), we found no significant interaction between sex and age (agec by host sex interaction prior to median age of maturity: β = –0.09, p = 0.203; agec by host sex interaction after median age of maturity: β = 0.15, p < 0.001; Supplementary file 1C). After maturity, we recapitulate the 1.4-fold higher rate of change in males compared to females observed in the full dataset (relationship between agec and agem in males only: β = 0.53, p < 0.001; relationship between agec and agem in females only: β = 0.38, p < 0.001; Supplementary file 1D).
+![Figure 3.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig3-v1.jpg)
+
+**Figure 3.:** Panels (A) and (B) show predicted microbiome age in years (agem) from a Gaussian process regression model, relative to each baboon’s true chronological age in years (agec) at the time of sample collection. Each point represents a microbiome sample. Panel (A) shows linear fit for all subjects in the model; (B) shows separate linear fits for each sex (Supplementary file 1D). Dashed lines show the 1-to-1 relationship between agec and agem. Panel (A) also shows the measurement of sample-specific microbiome Δage compared to chronological age. Whether an estimate is old- or young-for-chronological age is calculated for each microbiome sample as the difference between agem and agec. Because of model compression relative to the 1-to-1 line, we correct for host chronological age by including chronological age in any model. An example of an old-for-age sample is shown as a red point, with dashed lines showing the value of agec for a given sample with its corresponding agem.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Each plot shows predicted microbiome age (agem) relative to the true, chronological age (agec) of the baboon at the time of sample collection. (A) shows age predictions from an elastic net regression, and (B) depicts age predictions from Random Forest regression. Plots (C) and (D) show age predictions from Gaussian process regression without (C) and with (D) a kernel to account for heteroskedasticity. The most accurate age predictions (i.e., the model with the highest R2 value) were produced by a Gaussian process regression model with a kernel customized to account for heteroscedasticity (D). On each plot, points are colored by host sex; yellow indicates samples from females; blue indicates samples from males. Gray dashed lines indicate a 1-to-1 relationship between agec and agem.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Plots show chronological age relative to the residuals of the agem produced by a Gaussian process regression with a radial basis function kernel. Females are in yellow, and males are in blue. (A) and (B) show a scatter plot of agec and the residuals of agem. The spread of the residuals is wider for samples collected at older ages. (C) and (D) show the distributions of the residuals for different age subsets. The distribution flattens around 12.5 in females and 10 in males.
+
+**Table 1.**
+ Comparison of Gaussian process regression model performance between sexes.Model accuracy was determined based on the correlation between known chronological age (agec) and predicted age (agem), the variance explained in agec by agem (R2), and the median absolute difference between agec and agem (Horvath, 2013).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subset</th>
+      <th>Sample size</th>
+      <th>R2</th>
+      <th>Pearson’s R</th>
+      <th>Median error (years)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All subjects</td>
+      <td>13,476</td>
+      <td>48.8%</td>
+      <td>0.698</td>
+      <td>1.962</td>
+    </tr>
+    <tr>
+      <td>Females only</td>
+      <td>8245</td>
+      <td>48.9%</td>
+      <td>0.699</td>
+      <td>2.150</td>
+    </tr>
+    <tr>
+      <td>Males only</td>
+      <td>5231</td>
+      <td>50.0%</td>
+      <td>0.707</td>
+      <td>1.706</td>
+    </tr>
+  </tbody>
+</table>
+
+When we subset our agem estimates by sex, we found that the microbiome clock was slightly more accurate for males than for females (Figure 3B, Table 1). The adjusted R2 for the correlation between agec and agem for males was 50.0%, with a median prediction error of 1.71 years as compared to an adjusted R2 of 48.9% and median error of 2.15 years for female baboons (Table 1). Male baboons also exhibit significantly older gut microbial age than females (Figure 3B, chronological age by sex interaction: $\beta$ = 0.18, p < 0.001, Supplementary file 1C). Across the lifespan, males show a 1.4-fold higher rate of change in agem as a function of agec compared to females (relationship between agec and agem in males: $\beta$ = 0.63, p < 0.001; relationship between agec and agem in females: $\beta$ = 0.45, p < 0.001; Supplementary file 1D). Similar to patterns from a recent epigenetic age-predicting clock developed for this population (Anderson et al., 2021), this effect was only present after sexual maturity: when we subset the agem estimates to microbiome samples collected prior to the median age at sexual maturity (5.4 years for testicular enlargement in males and 4.5 years for menarche in females; Altmann et al., 2010), we found no significant interaction between sex and age (agec by host sex interaction prior to median age of maturity: $\beta$ = –0.09, p = 0.203; agec by host sex interaction after median age of maturity: $\beta$ = 0.15, p < 0.001; Supplementary file 1C). After maturity, we recapitulate the 1.4-fold higher rate of change in males compared to females observed in the full dataset (relationship between agec and agem in males only: $\beta$ = 0.53, p < 0.001; relationship between agec and agem in females only: $\beta$ = 0.38, p < 0.001; Supplementary file 1D).
 
 Overall, agem estimates performed reasonably well compared to other known predictors of age in the Amboseli baboons (Supplementary file 1E; Declerck and Vanden Berghe, 2018). Agem performed similarly to the non-invasive physiology and behavior clock (NPB clock) recently developed for this population (Weibel et al., 2024; R2 = 51%; median error = 2.33 years). Agem was a stronger predictor of host chronological age than body mass index (BMI; except juvenile male BMI), blood cell composition from flow cytometry, and differential white blood cell counts from blood smears (Supplementary file 1E; Anderson et al., 2021; Altmann et al., 2010, Weibel et al., 2024; Jayashankar et al., 2003; Galbany et al., 2011). However, agem was a less accurate predictor of chronological age than both dentine exposure (males and females, respectively: adjusted R2 = 73%, 85%; median error = 1.11 and 1.12 years; Supplementary file 1E) and an epigenetic clock based on DNA methylation data (males and females, respectively: adjusted R2 = 74%, 60%; median error = 0.85 and 1.62 years; Supplementary file 1E; and Declerck and Vanden Berghe, 2018).
 
-## Social and environmental conditions predict variation in microbiome age
+### Social and environmental conditions predict variation in microbiome age
 
 To test whether deviations in microbiome age for a given chronological age are correlated with socio-environmental predictors of health and mortality risk, we calculated whether microbiome age estimates from individual samples were older or younger than their hosts’ known chronological ages (Δage in years; Figure 3A). We then tested whether several social and environmental variables predicted individual variation in microbiome Δage in years (Supplementary file 1G; note that whether microbiome ages are old- or young-for-age is correlated with host age, hence our models always included host chronological age as a covariate). Overall, we expected that adult baboons who experienced harsh conditions in early-life adversity (the strongest socio-environmental predictor of adult mortality in Amboseli) would tend to look old-for-age based on the microbiome clock (Archie et al., 2014a; Archie et al., 2014b; Gesquiere et al., 2011; Lea et al., 2015; Tung et al., 2016; Lea et al., 2018). Alternatively, microbiome deviations from chronological age might be best predicted by an individual’s current social status or season, rather than past events. These results would support recency models of biological aging (Kuh et al., 2003; Shanahan et al., 2011) and would be consistent with findings from a recent epigenetic clock study in Amboseli (Anderson et al., 2021).
 
-We found that individual baboons varied considerably in gut microbiome Δage. For instance, in mixed effects models, individual identity explained ~25% to ~50% of the variance in Δage for females and males, respectively, over the course of their lives (Supplementary file 1F). Further, we found that season, dominance rank, and some aspects of early-life adversity (large group size, drought, and maternal social isolation) were linked to small deviations from chronological age. In support of our expectation that microbiome samples collected in the dry season are old-for-chronological age, we found that age estimates based on microbiome samples collected from female baboons in the dry season were ~2 months older than the host’s true chronological age (β = −0.180, p = 0.021, Table 2; Supplementary file 1C–F; Figure 4—figure supplement 1A). However, season did not significantly predict the difference between microbiome age and known age in male baboons.
+We found that individual baboons varied considerably in gut microbiome Δage. For instance, in mixed effects models, individual identity explained ~25% to ~50% of the variance in Δage for females and males, respectively, over the course of their lives (Supplementary file 1F). Further, we found that season, dominance rank, and some aspects of early-life adversity (large group size, drought, and maternal social isolation) were linked to small deviations from chronological age. In support of our expectation that microbiome samples collected in the dry season are old-for-chronological age, we found that age estimates based on microbiome samples collected from female baboons in the dry season were ~2 months older than the host’s true chronological age ($\beta$ = −0.180, p = 0.021, Table 2; Supplementary file 1C–F; Figure 4—figure supplement 1A). However, season did not significantly predict the difference between microbiome age and known age in male baboons.
 
-In terms of social status, we expected to observe that low-ranking females and high-ranking males would be old-for-chronological age (Anderson et al., 2021). In support, we found that estimates from high-ranking males were old-for-age compared to estimates from low-ranking males, but these effects were relatively weak and noisy (rank effect: β = 0.033, p < 0.001; Figure 4A; Table 2; Supplementary file 1C–F). Specifically, controlling for chronological age, alpha male gut microbiomes (ordinal rank = 1) appeared to be approximately 4 months older than microbiomes sampled from males with an ordinal rank of 10 (Table 2). However, contrary to our expectations, high-ranking female baboons also had old-for-age estimated when compared to low-ranking females (rank effect: β = 1.745, p < 0.001; Figure 4B; Table 2; Supplementary file 1A–F). Specifically, controlling for chronological age, the microbiome of an alpha female (proportional rank = 1) appeared to be approximately 1.75 years older than the lowest ranking females in the population (proportional rank = 0; Table 2).
+**Table 2.**
+ Social and environmental factors predicting variation in microbiome Δage in female and male baboons.Models below only show variables that minimize the Akaike information criterion (AIC) for each model; see Supplementary file 1F for full models. Coefficients for social dominance rank are transformed so higher values reflect higher rank/social status (see footnotes).
 
-Some forms of early-life adversity also predicted variation in microbiome Δage, but only in males, and in inconsistent directions. For instance, males born into the highest quartile of observed group sizes had old-for-age estimates. Males experiencing this source of early-life adversity had gut microbiomes that were predicted to be ~5.4 months older than males not experiencing this source of adversity (β = 0.471, p = 0.033, Table 2; Supplementary file 1D–F; Figure 4—figure supplement 1C). However, early-life drought and maternal social isolation were linked to young-for-age gut microbiomes in males (drought effect: β = −0.451, p = 0.021; maternal social isolation effect: β = −0.395, p = 0.006, Table 2; Supplementary file 1D–F; Figure 4—figure supplement 1D). Probably as a result of these conflicting effects, we found no effect of cumulative early adversity on microbiome Δage in males (Supplementary file 1B–F).
 
-## Microbiome age does not predict the timing of development or survival
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effect</th>
+      <th>β</th>
+      <th>p-value</th>
+      <th>Interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Predictors of microbiome Δage in females (n = 6743 samples from 192 females)</td>
+    </tr>
+    <tr>
+      <td>Chronological age</td>
+      <td>–0.551</td>
+      <td>&lt;0.001</td>
+      <td>Included to control for the correlation between chronological age and microbiome Δage (Figure 3)</td>
+    </tr>
+    <tr>
+      <td>Season</td>
+      <td>–0.180</td>
+      <td>0.021</td>
+      <td>Dry season samples are microbially old-for-age</td>
+    </tr>
+    <tr>
+      <td>Proportional rank*</td>
+      <td>1.745</td>
+      <td>&lt;0.001</td>
+      <td>Low-ranking females are microbially young-for-age</td>
+    </tr>
+    <tr>
+      <td colspan="4">Predictors of microbiome Δage in males (n = 4355 samples from 168 males)</td>
+    </tr>
+    <tr>
+      <td>Chronological age</td>
+      <td>–0.404</td>
+      <td>&lt;0.001</td>
+      <td>Included to control for the correlation between chronological age and microbiome Δage (Figure 3)</td>
+    </tr>
+    <tr>
+      <td>Ordinal rank†</td>
+      <td>0.033</td>
+      <td>&lt;0.001</td>
+      <td>Low-ranking males are microbially young-for-age</td>
+    </tr>
+    <tr>
+      <td>Born in a drought</td>
+      <td>–0.451</td>
+      <td>0.021</td>
+      <td>Males born during a drought are microbially young-for-age</td>
+    </tr>
+    <tr>
+      <td>Born into a large group</td>
+      <td>0.471</td>
+      <td>0.033</td>
+      <td>Males born into large groups are microbially old-for-age</td>
+    </tr>
+    <tr>
+      <td>Socially isolated mother</td>
+      <td>–0.395</td>
+      <td>0.006</td>
+      <td>Males with a socially isolated mother are microbially young-for-age</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Proportional rank ranges from 0 to 1, with higher values reflecting higher social status.†Ordinal rank is an integer ranking, with lower values reflecting higher social status; we have inverted the sign of the coefficient so higher numbers reflect higher rank to facilitate comparison to females._
+
+In terms of social status, we expected to observe that low-ranking females and high-ranking males would be old-for-chronological age (Anderson et al., 2021). In support, we found that estimates from high-ranking males were old-for-age compared to estimates from low-ranking males, but these effects were relatively weak and noisy (rank effect: $\beta$ = 0.033, p < 0.001; Figure 4A; Table 2; Supplementary file 1C–F). Specifically, controlling for chronological age, alpha male gut microbiomes (ordinal rank = 1) appeared to be approximately 4 months older than microbiomes sampled from males with an ordinal rank of 10 (Table 2). However, contrary to our expectations, high-ranking female baboons also had old-for-age estimated when compared to low-ranking females (rank effect: $\beta$ = 1.745, p < 0.001; Figure 4B; Table 2; Supplementary file 1A–F). Specifically, controlling for chronological age, the microbiome of an alpha female (proportional rank = 1) appeared to be approximately 1.75 years older than the lowest ranking females in the population (proportional rank = 0; Table 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig4-v1.jpg)
+
+**Figure 4.:** Panels (A) and (B) show the relationship between host proportional dominance rank and corrected gut microbiome Δage in (A) males (blue points) and (B) females (yellow points). Each point represents an individual gut microbiome sample. Corrected microbiome Δage is calculated as the residuals of agem correcting for host chronological age, season, monthly temperature, monthly rainfall, and social group and hydrological year at the time of collection.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102166/elife-102166-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Each point represents a sample: yellow points show samples from females, and blue points show samples from males. (A) Season was a weak but significant predictor of lifetime Δage in females (Supplementary file 1A–F). Panels (B–D) show that males who experienced (B) drought, (C) high group size at birth, or (D) low maternal social connectedness at birth exhibited variation in Δage, but in different directions: the experience of early-life drought and maternal social isolation predicted young-for-age gut microbiomes in males, while being born in a large group predicted old-for-age microbiomes (see Results for details). Corrected Δage represents the residuals of the relationship between agem and agec correcting for chronological age, season, monthly temperature, monthly rainfall, social group at the time of collection, and hydrological year (Supplementary file 1B–F).
+
+Some forms of early-life adversity also predicted variation in microbiome Δage, but only in males, and in inconsistent directions. For instance, males born into the highest quartile of observed group sizes had old-for-age estimates. Males experiencing this source of early-life adversity had gut microbiomes that were predicted to be ~5.4 months older than males not experiencing this source of adversity ($\beta$ = 0.471, p = 0.033, Table 2; Supplementary file 1D–F; Figure 4—figure supplement 1C). However, early-life drought and maternal social isolation were linked to young-for-age gut microbiomes in males (drought effect: $\beta$ = −0.451, p = 0.021; maternal social isolation effect: $\beta$ = −0.395, p = 0.006, Table 2; Supplementary file 1D–F; Figure 4—figure supplement 1D). Probably as a result of these conflicting effects, we found no effect of cumulative early adversity on microbiome Δage in males (Supplementary file 1B–F).
+
+### Microbiome age does not predict the timing of development or survival
 
 Finally, we tested whether variation in microbiome Δage predicted the timing of individual maturational milestones or survival using Cox proportional hazards models (Supplementary file 1H). Maturational milestones for females were the age at which they attained their first adult dominance rank, reached menarche, or gave birth to their first live offspring (Figure 1C). Male maturational milestones were the age at which they attained testicular enlargement, dispersed from their natal social group, or attained their first adult dominance rank (Figure 1D). We also tested if microbiome Δage predicted juvenile survival (in females and males) or adult survival (females only). We did not test adult survival in males because male dispersal makes it difficult to know age at death for most males (Campos et al., 2020).
 
@@ -121,11 +265,11 @@ In sum, our findings support the hypothesis that the gut microbiome is a biomark
 
 ## Materials and methods
 
-## Study population and subjects
+### Study population and subjects
 
 Our study subjects were 479 wild baboons (215 males and 264 females) living in the Amboseli ecosystem in Kenya between April 2000 and September 2013. The Amboseli baboon population is primarily composed of yellow baboons (Papio cynocephalus) with some admixture from nearby anubis baboon (Papio anubis) populations (Samuels and Altmann, 1986; Tung et al., 2008; Vilgalys et al., 2022). Prior research in our population finds no link between host hybrid ancestry and microbiome composition (Grieneisen et al., 2019). Since 1971, the Amboseli Baboon Research Project (ABRP) has been collecting continuous observations of the baboons’ demography, behavior, and environment (Alberts and Altmann, 2012). The baboons are individually identified by expert observers who visit and collect data on each social group 3–4 times per week (the subjects lived in up to 12 different social groups over the study period). During each monitoring visit, the observers conduct group censuses and record all demographic events, including births, maturation events, and deaths, allowing us to calculate age at maturity and lifespan with precision. This research was approved by the IACUC at Duke University, University of Notre Dame, and Princeton University and the Ethics Council of the Max Planck Society and adhered to all the laws and guidelines of Kenya.
 
-## Sample collection, DNA extraction, and 16S data generation
+### Sample collection, DNA extraction, and 16S data generation
 
 The 13,476 gut microbiome compositional profiles in this analysis represent a subset of 17,277 profiles, which were previously described in Grieneisen et al., 2021; Björk et al., 2022. The 13,476 samples in our analyses include those from baboons whose birthdates, and hence individual ages, were known with just a few days’ error. Each baboon had on average 33 samples collected across 6 years of their life (Figure 1A, B; range = 3–135 samples per baboon; median days between samples = 44 days).
 
@@ -135,13 +279,13 @@ DNA from 0.05 g of fecal powder was manually extracted using the MoBio (Catalog 
 
 Following DNA extraction, a ~390-bp segment of the V4 region of the 16S rRNA gene was amplified and libraries prepared following standard protocols from the Earth Microbiome Project (Gilbert et al., 2014). Libraries were sequenced on the Illumina HiSeq 2500 using the Rapid Run mode (2 lanes per run). Sequences were single indexed on the forward primer and 12 bp Golay barcoded. The resulting sequencing reads were processed following a DADA2 pipeline (Callahan et al., 2016), with the following additional quality filters: we removed samples with low DNA extraction concentrations (<4× the plate’s blank DNA extraction concentration), samples with <1000 reads, and amplicon sequence variants that appeared in one sample (see (Grieneisen et al., 2021) for details). ASVs were assigned to microbial taxa using the IdTaxa(…) function in the DECIPHER package, against the Silva reference database SILVA_SSU_r132_March2018.RData (Wright et al., 2012; Quast et al., 2013). The final set of samples had 1017–427,454 reads (median = 51,839 reads), with 8492 total ASVs.
 
-## Identifying microbiome features that contribute to age predictions and that change with age
+### Identifying microbiome features that contribute to age predictions and that change with age
 
 To identify microbiome features that change with host age, we ran linear mixed models on 1440 microbiome features (Supplementary file 1A). Models were run using the R package lme4, with p-value estimates from lmerTest (Bates et al., 2015; Kuznetsova et al., 2017). These features included: (1) five metrics of alpha diversity; (2) the top 10 PCs of microbiome compositional variation; (3) CLR transformed abundances (i.e., read counts) of each microbial phyla (n = 30), family (n = 290), genus (n = 747), and ASV detected in >25% of samples (n = 358). CLR transformations are a recommended approach for addressing the compositional nature of 16S rRNA amplicon read count data (Gloor et al., 2017). Alpha diversity metrics were calculated using the R package vegan and PCs of microbiome compositional variation were calculated using the R package labdsv (Dixon, 2003; Roberts, 2019).
 
 For each feature, we modeled its relationship to host chronological age using both linear and quadratic terms. To make our quadratic terms more interpretable, we centered our age estimates on zero by subtracting the average age in the dataset from each age value. Specifically, when a quadratic term is negative, the curve is concave, whereas when the term is positive, the curve is convex. We also included season (wet or dry) and z-scored read count, rainfall, and temperature as fixed effects, and individual identity, social group at time of collection, hydrological year, and the DNA extraction/PCR plate identity were modeled as random effects. We did not model individual social network position because prior analyses of this dataset find no evidence that close social partners have more similar gut microbiomes, probably because we lack samples from close social partners sampled close in time (Grieneisen et al., 2021; Björk et al., 2022). All community features (i.e., alpha diversity and PCs) and all taxa present in >25% of samples were modeled using a Gaussian error distribution. We extracted the coefficient, standard error, and p-value for the age term, then corrected for multiple testing using the FDR approach of Benjamini and Hochberg, 1995.
 
-## Building the gut microbiome clock
+### Building the gut microbiome clock
 
 We created a microbiome clock by fitting a GP regression model (with a kernel customized to account for heteroskedasticity) to predict each baboon’s chronological age at the time of sample collection using 9575 microbiome compositional and taxonomic features present in at least three samples (Supplementary file 1B; i.e., we did not restrict the features in the clock to the 1440 most abundant features used in the age-association analyses described above). The GP regression model with heteroskedasticity correction was the best performing of four supervised machine learning approaches we considered, including elastic net, Random Forest, and GP regression with and without the heteroskedasticity kernel (Figure 3—figure supplement 1; Supplementary file 1K; see Appendix for a comparison of other algorithms). Pearson’s correlations between age predictions across the four methods ranged from 0.69 between the Random Forests and the GP regression model without the heteroskedasticity kernel to 0.96 between the two GP regression models (with and without the heteroskedasticity kernel; Supplementary file 1K).
 
@@ -151,17 +295,17 @@ To calculate a microbial age estimate for every sample, and to estimate generali
 
 We assessed the accuracy of our microbiome clock by regressing each sample’s chronological age (agec) against the model’s predicted microbial age (agem) and determining the R2 value and Pearson’s correlation between agec and agem. We also calculated the median error of the model fit as the median absolute difference between agec and agem across all samples (Horvath, 2013).
 
-## Calculating microbiome Δage estimates
+### Calculating microbiome Δage estimates
 
 To characterize patterns of microbiome age from our microbiome clock, we calculated sample-specific microbiome Δage in years as the difference between a sample’s microbial age estimate, agem from the microbiome clock, and the host’s chronological age in years at the time of sample collection, agec. Higher microbiome Δages indicate old-for-age microbiomes, as agem > agec, and lower values (which are often negative) indicate a young-for-age microbiome, where agec > agem (see Figure 3). Because the microbiome clock systematically over predicted the ages of young animals and under predicted the ages of old animals, we also calculated a ‘corrected microbiome Δage’ as the residuals of agem correcting for host chronological age, season, monthly temperature, monthly rainfall, and social group and hydrological year at the time of collection. This measure is used for visualizations of the predictors of microbiome age and for testing whether average microbiome Δage predicts developmental milestones or survival.
 
-## Testing sources of variation in microbiome Δage
+### Testing sources of variation in microbiome Δage
 
 Many social and environmental factors have been shown to predict fertility and survival in the Amboseli baboons (Altmann et al., 2010; Archie et al., 2014b; Tung et al., 2016; Gesquiere et al., 2018; Altmann and Alberts, 2005). To test if some of the most important known factors also predict patterns of microbiome age, we used linear mixed models to test predictors of microbiome age in individual samples separately for males and females.
 
 In these models, the response variable was the sample-specific measure of Δage (agem − agec). All models included the following fixed effects: individual chronological age at the time of sample collection, to correct for model compression; the average maximum temperature during the 30 days before the sample was collected, total rainfall during the 30 days before the sample was collected, and the season (wet or dry) during sample collection (Supplementary file 1L). Every model also included, as fixed effects, measures of early-life adversity the individual experienced prior to 4 years of age (Supplementary file 1G). These were modeled as either six, individual, binary variables, reflecting the presence or absence of each source of adversity in the first 4 years of life, or as a cumulative sum of the number of sources of adversity the individual experienced, also in the first 4 years of life (Tung et al., 2016). Social rank at the time of sampling was also modeled as a fixed effect. For males we used ordinal rank, and for females we used proportional rank (Levy et al., 2020b). To make model interpretation more intuitive (high rank corresponds to higher values), we multiplied the coefficients for ordinal rank and maternal rank by –1. Random effects included individual identity, the social group the individual lived in at the time of collection, and hydrological year. In models of microbiome age in females, the number of adult females in the group at the time of sample collection was included as female-specific measure of resource competition.
 
-## Testing whether microbiome Δage predicts baboon maturation and survival
+### Testing whether microbiome Δage predicts baboon maturation and survival
 
 We used Cox proportional hazards models to test whether microbiome Δage predicted the age at which females and males attained maturational milestones and the age at death for juveniles and adult females (Supplementary file 1H). We only measured adult survival in females because males disperse between social groups, often repeatedly across adulthood, making it is difficult to know if male disappearances are due to dispersal or death (Campos et al., 2020). For females, the maturational milestones of interest were the age at adult rank attainment (median age 2.24 in Amboseli), age at menarche (median age 4.51 in Amboseli), and the age at first live birth (median age 5.97 in Amboseli). For males, these milestones were the age of testicular enlargement (median age 5.38 in Amboseli), the age of dispersal from natal group (median age 7.47 in Amboseli), and the age of first adult rank attainment (i.e., when a male first outranks another adult male in his group’s dominance hierarchy; median age 7.38 in Amboseli) (Charpentier et al., 2008; Onyango et al., 2013). See full descriptions of each milestone in Supplementary file 1H. To be included in these analyses, animals must have reached the milestone after the onset of sampling (April 2000) and had at least three samples available in the timeframe of interest. We verified that none of our models violated the proportional hazards assumption of a Cox regression.
 

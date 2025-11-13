@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 College of Chemistry, University of California, Berkeley Berkeley United States
-2. https://ror.org/021skqj79 EpiCypher, Inc, Research Triangle Park Durham United States
-3. https://ror.org/01an7q238 California Institute for Quantitative Biology, University of California, Berkeley Berkeley United States
-4. https://ror.org/01an7q238 Department of Molecular and Cellular Biology, University of California Berkeley United States
-5. https://ror.org/01an7q238 Innovative Genomics Institute, University of California, Berkeley Berkeley United States
-6. https://ror.org/02jbv0t02 Molecular Biophysics and Integrative Bio-Imaging Division, Lawrence Berkeley National Laboratory Berkeley United States
-7. https://ror.org/01an7q238 Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States
-8. https://ror.org/01an7q238 Biophysics Graduate Group, University of California, Berkeley Berkeley United States
+1. College of Chemistry, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. EpiCypher, Inc, Research Triangle Park Durham United States ([ROR:021skqj79](https://ror.org/021skqj79))
+3. California Institute for Quantitative Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. Department of Molecular and Cellular Biology, University of California Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+5. Innovative Genomics Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+6. Molecular Biophysics and Integrative Bio-Imaging Division, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
+7. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+8. Biophysics Graduate Group, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
@@ -38,17 +38,73 @@ Here, we have used cryo-EM to visualize NuA4 and have resolved the stable centra
 
 ## Results and discussion
 
-## Overall architecture of NuA4
+### Overall architecture of NuA4
 
 For our structural studies, we purified NuA4 from S. cerevisiae harboring a DNA fragment encoding a TAP tag at the 3′-end of the Esa1 acetyl transferase gene. The isolated NuA4 contained all 13 subunits of the complex (Figure 1A), as confirmed by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE), mass spectrometry, and mass photometry (Figure 1—figure supplement 1, Figure 1—figure supplement 2). Despite reports that the HAT module of NuA4 can also form an independent complex in yeast (Boudreault et al., 2003), smaller particles that could correspond to that module alone were not clearly apparent in our cryo-EM images and analysis (Figure 1, Figure 2 and Figure 3). Mass photometry data were not informative concerning the presence of the HAT module alone, as the detergent in our sample created a large peak in the low molecular weight (<300 kDa) region where the HAT module (195 kDa) would be expected (Figure 1—figure supplement 1C). Using single-particle cryo-EM image analysis we observe that the BS3 crosslinked NuA4 complex contains a rigid central hub with more flexible elements attached (Figure 1B, C). Focused refinement of the central hub allowed us to generate a density map for this region with an overall resolution of 3.1 Å (Figure 1D, E, Figure 1—figure supplement 3, Figure 1—figure supplement 4, Figure 1—figure supplement 5, Figure 1—figure supplement 6) and unambiguously identify the subunits Eaf1, Epl1, Swc4, Arp4, Act1, and the large Tra1 (Figure 1F, Figure 1—figure supplement 6). Missing from this more stable hub are most subunits of the HAT module, all subunits of the TINTIN module, and Yaf9, the three elements known to interact with nucleosomes (Li et al., 2014; Shi et al., 2006; Xu et al., 2016; Chittuluru et al., 2011; Sathianathan et al., 2016). Our cryo-EM map showed a large diffuse density above the FAT domain of Tra1 (Figure 1B) reflecting the presence of flexibly attached components of NuA4 that are likely to correspond to the missing HAT and TINTIN modules and the Yaf9 subunit.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain map of NuA4 subunits. Modeled regions are marked with a black bar; numbers indicate starting and ending residues. (B) Cryo-electron microscopy (cryo-EM) map in red showing the best-defined parts of NuA4. A transparent lower-threshold cryo-EM map is overlaid to show the flexible density likely corresponding to the histone acetyltransferase (HAT)/Trimer Independent of NuA4 involved in Transcription Interactions with Nucleosomes (TINTIN) modules. (C) Cartoon representation of NuA4 modules. (D) Venn diagram showing NuA4 subunit organization across different complex modules. Subunits in the core attach to Tra1 and act to tether the TINTIN and HAT modules to the complex. (E) Cryo-EM map of the NuA4 hub with individual subunits colored. (F) Model of the NuA4 hub with individual subunits colored and labeled.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) (Bio-Rad 4–20%) of purified S. cerevisiae NuA4, stained with Flamingo (Bio-Rad). (B) Mass spectrometry analysis showing the presence of all NuA4 subunits in purified sample. (C) Mass photometry analysis showing the molecular weights of particle species in NuA4 purification.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Domain maps of NuA4 subunits. For each bar, from top to bottom, are Consurf, PSIPRED/DISOPRED, PFAM, and amino acid biophysical properties (legend in the center bottom of the figure). Conservation scores ranging from high to low (pink to white to blue) were generated using the Consurf server (Ashkenazy et al., 2010; Ashkenazy et al., 2016). Predicted secondary structure based on PSIPRED and DISOPRED3 results (purple for helix, green for strand, orange for coil, and white for disordered) (Buchan et al., 2013; Buchan and Jones, 2019; Jones and Cozzetto, 2015). PFAM-predicted domains are labeled in bold (El-Gebali et al., 2019). Biophysical properties are colored based on amino acids hydrophilicity and charge: white-gold (hydrophilic–hydrophobic), red (negatively charged) and blue (positively charged).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Cryo-EM data collection and processing for NuA4. Particles from class averages outlined in red and 3D classes colored red were selected for further processing. Particles that went into gray classes were eliminated from further processing. The final global refinement yielded a map with an overall resolution of 3.07 Å. To improve map quality in the flexible region of Tra1, multibody refinement was performed for three sections, followed by 3D classification of the partially signal-subtracted particles. The lobes of NuA4, termed core, Tra1-FATKIN, and Tra1-HEAT were refined to resolutions 2.9, 2.9, and 3.4 Å, respectively. The regions of Tra1-HEAT, termed top, middle, and bottom were refined to resolutions 3.9, 3.4, and 3.7 Å, respectively. The scale bar in bottom right of the micrograph image is 500 Å.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Multibody maps colored by local resolution (Zivanov et al., 2018). Maps in the top row are from multibody refinement of NuA4. Maps in the bottom row are from multibody refinement of the Tra1-HEAT region. (B) Half-map FSC curves of the NuA4 multibody regions (left) and Tra1-HEAT multibody regions (right) (Rosenthal and Henderson, 2003). (C) Model-map FSC curve (map generated from a composite of multibody maps: core, Tra1-FATKIN, Tra1-HEAT). (D) Model of the core of RSC colored according to refined B-factors.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Euler angle distribution plots shown in three views. (B) 3DFSC plot generated using 3DFSC server for NuA4 consensus refinement (Tan et al., 2017).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Transparent regions of the consensus map of NuA4, segmented, with built atomic models shown.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Comparison between the NuA4 model in this study (left) and that of Wang et al. (right) (Wang et al., 2018). In contrast to the previous model, we identify Swc4 and Epl1 within the rigid hub, while do not assign any density to Eaf5. (B) Cross-linking mass spectrometry (CX-MS) data of NuA4 (Setiaputra et al., 2018) mapped on the two models. Crosslinks with a distance >30 Å between alpha carbons are colored red, those with a distance <30 Å are colored blue (Kosinski et al., 2015). (C) Graph displaying the distribution of crosslink distances between the two models (Goddard et al., 2018). Interchain crosslinks are shown in blue, intrachain crosslinks in orange. A vertical line indicates a cutoff at 30 Å, the distance considered reasonable for DSS crosslinks.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig2-v2.jpg)
 
 **Figure 2.:** (A) Structure of NuA4 with subunits of the core and Tra1 domains in different colors. Within Tra1, the pseudo-kinase domain is colored light blue, the FAT domain is colored pale yellow, and the HEAT domain is colored pink. The FAT and pseudo-kinase domains form the bulk of the interactions with the NuA4 core, highlighted in subpanels (1, 2, 4, and 5). Organization of the NuA4 core can be seen in subpanels (1, 2, and 3). Arp module containing Arp4 and Act1 assemble onto the HSA helix of Eaf1 (seen in subpanel 3). (B) Top: Eaf1 domain map, as introduced in Figure 1—figure supplement 2. Bars underneath are colored to indicate its protein interactions. Bottom: depiction of Eaf1 interaction with NuA4 subunits. Sections of Eaf1 are colored in a rainbow from N to C terminus with different colors representing regions with different protein–protein interactions. (C) Top: schematic representation of contacts between NuA4 subunits. The width of each line is proportional to the contact area between subunits. Bottom: table showing the contact area (Å2) between NuA4 subunits, colored from red (minimal contact) to green (maximal contact).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig3-v2.jpg)
+
+**Figure 3.:** (A) Model for NuA4 complex organization (NuA4 central hub model from the present cryo-electron microscopy (cryo-EM) structure, with the rest of the models from AlphaFold2 prediction) (Jumper et al., 2021; Mirdita et al., 2022). Spatial constraints are imposed on the position of flexible modules by the length of the linker to the connecting amino acids resolved in the structure. Additional low-resolution density adjacent to the NuA4 hub suggests the approximate location of the flexible modules. (B) Domain map showcasing the subunits that link the Trimer Independent of NuA4 involved in Transcription Interactions with Nucleosomes (TINTIN), histone acetyltransferase (HAT), and YAF9 modules to the HUB. (C) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) (Bio-Rad 4–20%) of purified NuA4 TINTIN and HAT modules, stained with InstantBlue (Expedeon). (D) dCypher assay results of nucleosome discovery screen for the purified HAT module. Error bars calculate from duplicate experiments, (E) dCypher assay result of nucleosome discovery screen for the purified TINTIN module. Error bars calculate from duplicate experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** AlphaFold2 prediction for the module structures of Trimer Independent of NuA4 involved in Transcription Interactions with Nucleosomes (TINTIN) (left), histone acetyltransferase (HAT) (middle), and Yaf8/Swc4 (right) (Jumper et al., 2021; Mirdita et al., 2022). (A) MSA coverage (MSA search and alignment using Jackhammer). (B) Predicted alignment error (blue high, red low). Colored bars on top of the graph indicate separate regions of interaction within the modules. (C) AlphaFold2 models (ordered regions) with crosslinks mapped (blue <30 Å, red >30 Å) (Setiaputra et al., 2018; Kosinski et al., 2015). Models colored based on the AlphaFold2 predicted interacting regions (as seen in panel B). (D) NuA4 crosslinking position with the given module indicated by cyan spheres (Setiaputra et al., 2018).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Negative stain reconstructions of NuA4 (A) and SAGA (C) displayed with two thresholds: high (solid red) and low (transparent white). The low threshold maps show extra density for the flexible chromatin-interacting modules of the two complexes. SAGA domain assignments are based on previous structural studies (Setiaputra et al., 2015; Papai et al., 2020; Wang et al., 2020). Cryo-electron microscopy (cryo-EM) reconstructions (solid red) of NuA4 (B) and SAGA (D) fit into low threshold negative stain reconstructions (transparent white). SAGA cryo-EM reconstructions from EMD-10412 (Wang et al., 2020).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Negative stain EM data collection and processing for NuA4. Collected images were subjected to contrast transfer function (CTF) estimation using GCTF and particles were picked and analyzed by 2D and 3D classification using Relion (Zhang, 2016; Zivanov et al., 2018). The scale bar in bottom right of the micrograph image is 500 Å.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Negative stain EM data processing for SAGA. Collected images were subjected to contrast transfer function (CTF) estimation using GCTF and particles were picked and analyzed by 3D classification using Relion (Zhang, 2016; Zivanov et al., 2018). The scale bar in bottom right of the micrograph image is 500 Å.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) dCypher nucleosome discovery screen-binding profile for purified histone acetyltransferase (HAT) module. Abbreviations for histone modifications are as follows: me, methyl; ac, acetyl; bu, butyryl; cr, crotonyl; ph, phosphoryl; ub, ubiquitin; cit, citrulline. Error bars calculate from duplicate experiments, (B) dCypher nucleosome discovery screen-binding profile for purified Trimer Independent of NuA4 involved in Transcription Interactions with Nucleosomes (TINTIN) module. Same abbreviations as panel A. Error bars calculate from duplicate experiments.
+
 Our cryo-EM-based structural model of the central hub was validated by mapping the previously reported chemical crosslinking and mass spectrometry (CX-MS) data of NuA4 (Setiaputra et al., 2018), which identified many crosslinks between subunits resolved in our structure of the central hub. Overlaying these crosslinks on our structure shows that all 82 identified interactions (52 intramolecular links and 30 intermolecular links) fall under the 30 Å cutoff for DSS crosslinks (Figure 1—figure supplement 7). This was not the case for the structure of NuA4 previously reported (Wang et al., 2018; Figure 1—figure supplement 7).
 
-## Structure of the NuA4 central hub
+### Structure of the NuA4 central hub
 
 The structure of the central hub of NuA4 includes Tra1 and a core of additional subunits that interact extensively with each other and tether all the rest of the components (Figures 1 and 2). The Tra1 subunit makes up most of the hub density (gray in Figure 1F), and has a very similar structure to that previously described (Diaz-Santín et al., 2017). It contains a large HEAT repeat (pink in Figure 2A), followed by the FAT (yellow in Figure 2) and pseudo-kinase domains (jointly also referred to as FATKIN) (cyan in Figure 2A). Eaf1, Epl1, and Swc4 within the core (red, green, and purple, respectively, Figures 1 and 2A) interact with Tra1 near the FATKIN region. Of these, Eaf1 is the primary Tra1 interaction partner, contributing 5500 Å2 of the total 7700 Å2 buried surface area between the core and Tra1 (Figure 2B, C). Arp4 and Act1 (orange and blue, respectively, Figures 1 and 2A) are the only components of the core that do not contact Tra1 (Figure 2C).
 
@@ -56,7 +112,7 @@ Structurally, the NuA4 core made of Eaf1, Epl1, Swc4, Arp4, and Act1, can be see
 
 While most of the components that make up the central hub of NuA4 interact with one another, Eaf1 stands out as the primary scaffolding factor, as it has the largest surface interface with Tra1, Swc4, and Epl1 (Figure 2B, C). It also contributes the conserved HSA helix to the Arp module. The role of Eaf1 as a scaffolding subunit within NuA4 is in good agreement with previous genetic and biochemical studies that show that its deletion results in loss of NuA4 complex assembly (Auger et al., 2008; Mitchell et al., 2008).
 
-## The central hub tethers the nucleosome-interacting components of NuA4
+### The central hub tethers the nucleosome-interacting components of NuA4
 
 Our cryo-EM reconstruction resolved the structure of the rigid hub of NuA4 containing the core and Tra1, but the three chromatin-interacting components – the HAT and TINTIN modules and the Yaf9 subunit (Steunou et al., 2016; Klein et al., 2018) – are missing. These missing parts are flexibly tethered to the core through Epl1, Eaf1, and Swc4, respectively. The missing components likely make up the diffuse density observed above the Tra1 FATKIN domain in our cryo-EM map, as all three have been shown to crosslink with the FATKIN domain (Figure 3A).
 
@@ -68,11 +124,19 @@ Finally, CX-MS data show that Yaf9 interacts with the C-terminus of Swc4 (residu
 
 NuA4 is not the only HAT to feature a modular structure composed of a central core tethering various flexibly chromatin-interacting and modifying modules. SAGA, the other major multisubunit HAT in yeast, has been reported to have similar flexible domains (Setiaputra et al., 2015). To directly compare the relative flexibility of the two complexes we performed negative stain electron microscopy of BS3 crosslinked HATs, NuA4, and SAGA (Figure 3—figure supplement 2, Figure 3—figure supplement 3, Figure 3—figure supplement 4). The negative stain structures show strong density for the central hub of the two complexes, both of which contain Tra1 and a core that tethers the more flexible modules. The negative strain structures show that the flexible regions of NuA4 appear to be more diffuse (lower occupancy) than the HAT and DUB modules of SAGA, and are more similar to what is seen as corresponding to the Spt8 subunit (Figure 3—figure supplement 2A, C; Setiaputra et al., 2015). Due to the similarities between NuA4 and SAGA, both containing the activator targeting Tra1 subunit and having a similar overall architecture that includes flexible attachment of chromatin-binding and modifying modules, we propose that these two HAT complexes are likely to have a similar chromatin targeting mechanism.
 
-## The HAT and TINTIN modules recognize active transcriptional marks
+### The HAT and TINTIN modules recognize active transcriptional marks
 
 Due to the small amounts of NuA4 that can be purified from yeast and the generally weak chromatin-binding activity of the complex, testing the chromatin recognition capabilities of NuA4 is difficult (Li et al., 2007). To overcome these constraints, we reconstituted the HAT and TINTIN modules separately through recombinant expression and utilized the dCypher approach (Weinberg et al., 2019; Marunde et al., 2022b; Marunde et al., 2022a) to interrogate the binding of the two modules against PTM-defined histone peptides (data not shown) and nucleosomes (Figure 3C).
 
 The HAT module contains three putative chromatin interacting domains: a chromodomain and the HAT domain in Esa1 (the later combines a zinc-finger and MOZ-type HAT domain), and a PHD in Yng2. Previous reports have shown that the PHD domain of Yng2 can bind H3K4me3, while the HAT domain binds the histone octamer surface of the nucleosome (Xu et al., 2016; Steunou et al., 2016). Although we did see increasing HAT module affinity for nucleosomes with a greater number of methyl groups on H3K4, affinity for nucleosomes containing both H3K4me3 and acetylation marks on H3 (K9, K14, and K18) demonstrated ~3× binding preference over H3K4me3 alone (Figure 3D, Figure 3, Figure 4 and Figure 5A). Tetra-acetylated H3 nucleosomes (K4, K9, K14, and K18) as well as singly acetylated K9, K14, and K18 nucleosomes were not bound by the HAT module, indicating that acetylation on its own is poorly or not recognized (Figure 3D). Instead, the acetylated lysines are likely to reduce overall interactions between the histone tails and DNA, allowing the tails greater accessibility by the HAT module of the H3K4me3 mark (Morrison et al., 2018; Marunde et al., 2022a; Morgan et al., 2021; Jain et al., 2022).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig4-v2.jpg)
+
+**Figure 4.:** (A) Table showing protein subunits of NuA4 and the complexes in yeast that share these subunits. (B) Comparison of Arp4–Act1 interactions with HSA helix in NuA4 (Eaf1 subunit), SWR1 (Swr1 subunit), and INO80 (Ino80 subunit) (Cao et al., 2016; Knoll et al., 2018). (C) Left/top: model of NuA4 depicting attachment of the core to Tra1. Right/bottom: the Tra1 subunit of NuA4 colored according to which protein chain contacts it. (D) Left/top: model of SAGA depicting attachment of the core to Tra1. Right: the Tra1 subunit in SAGA colored according to which protein chain contacts it (Papai et al., 2020; Wang et al., 2020).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Table of homologous protein subunits in budding yeast (S.c.; Saccharomyces cerevisiae) NuA4, S.c. Swr1 and human (H.s.; Homo sapiens) TIP60. (B) Domain similarities between S.c. Swr1 and S.c. NuA4 with H.s. EP400. (C) Schematic for the proposed path of EP400 based on the structures of yeast NuA4 and Swr1 (Willhoft et al., 2018).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81400/elife-81400-fig5-v2.jpg)
 
@@ -82,7 +146,7 @@ Within the TINTIN module, the only predicted chromatin interacting domain is the
 
 Our binding studies show that NuA4 prefers H3K4me3-containing nucleosomes that are hyperacetylated on H3. Acetylation of H3 in yeast is largely conferred by SAGA, both in the context of transcription and double strand break repair (Grant et al., 1997; Kuo et al., 1998). Thus, our binding studies suggest that NuA4 activity likely follow that of SAGA, while it would precede the recruitment of factors like TFIID or SWR1 that contain reader modules for H4 acetylation (Matangkasombut and Buratowski, 2003; Ladurner et al., 2003; Durant and Pugh, 2007).
 
-## Structural comparison of NuA4 with other complexes
+### Structural comparison of NuA4 with other complexes
 
 Many of the components of yeast NuA4 are shared with other complexes (Figure 4A; Doyon and Côté, 2004; Grant et al., 1998). Part of the ARP module is also found in the SWR1 and INO80 chromatin remodelers (Mizuguchi et al., 2004; Shen et al., 2000), while the large activator targeting Tra1 subunit is shared with SAGA, the other major HAT with functions in transcription (Grant et al., 1998). The HAT and TINTIN can also exist outside of NuA4 (Boudreault et al., 2003; Rossetto et al., 2014). Of note, the higher eukaryotic TIP60 complex combines components from the yeast NuA4 and SWR1 complexes (Auger et al., 2008).
 
@@ -92,7 +156,7 @@ In S. cerevisiae the multisubunit NuA4 and SAGA acetyltransferase complexes both
 
 The human TIP60 complex encompasses the functionalities of yeast NuA4 and SWR1 complexes (Doyon and Côté, 2004; Auger et al., 2008), with the metazoan EP400 being the key protein responsible for merging the two complexes present in lower eukaryotes (Auger et al., 2008, Figure 4—figure supplement 1A, B). Based on the domain organization of EP400 and the structures of SWR1 and NuA4, we propose a putative organization of the TIP60 complex (Figure 4—figure supplement 1C, Willhoft et al., 2018). The N-terminus of EP400 would be within the NuA4 portion of the TIP60 complex, forming part of the core and contributing the HSA helix to the ARP module. The next section of EP400 would go into the SWR1 portion of the complex, where it would contribute the Snf2 domain of the ATPase module, the RUVBL interaction domain, and the helicase domain of the ATPase module. From there, the C-terminal segment of EP400 would return to the NuA4 portion of the complex, where it would make further contributions to the core, ending with the interaction of its SANT domain with the TRRAP subunit (Tra1 homolog).
 
-## Model of nucleosome selection and acetylation by NuA4
+### Model of nucleosome selection and acetylation by NuA4
 
 From our structural and biochemical data, we propose a sequential model of NuA4 recruitment to target nucleosomes (Figure 5). The first step would be the binding of site-specific transcription factors, capable of interaction with the Tra1 subunit to recruit NuA4. The NuA4 flexible HAT and reader modules (TINTIN and Yaf9) would then be able to select neighboring nucleosomes containing preferred modifications, such as H3K4me3 with acetyl groups on H3 K9, K14, and K18. Once a nucleosome is selected by the complex, the HAT module would acetylate histones H2A and H4.
 
@@ -100,27 +164,27 @@ This NuA4 mechanism of recruitment is likely similar for the human TIP60 homolog
 
 ## Methods
 
-## Protein purification
+### Protein purification
 
-## NuA4 and SAGA
+#### NuA4 and SAGA
 
 NuA4 and SAGA were purified from S. cerevisiae using a modified TAP purification as described (Puig et al., 2001). A strain modified with a TAP tag on the C terminus of ESA1 or SPT7 (GE Dharmacon) was grown at 30°C in YPD. 12 l of cells were harvested at OD ~6.0 and lysed using a Planetary Ball Mill (Retsch PM100). The ground cells were resuspended in lysis buffer (100 mM HEPES [4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid] pH 7.9, 2 mM MgCl2, 300 mM KCl, 10 µM leupeptin, 0.5 mM PMSF [phenylmethylsulfonyl fluoride], 1× EDTA-free complete protease inhibitor [ethylenediaminetetraacetic acid], 0.05% NP-40, 10% glycerol) and dounced until homogenous. The lysate was centrifuged for 1 hr at 15,000 × g, and clarified lysate passed through a clean column frit, and aliquoted into 50 mL Falcon tubes. To each 50 ml tube of lysate, 200 µl of washed IgG resin was added and allowed to incubate overnight at 4°C with gentle rocking. After incubation, resin was collected by centrifuging tubes at 2000 × g for 10 min and removing the supernatant. Resin was resuspended in 400 µl of TAP buffer (20 mM HEPES pH 7.9, 2 mM MgCl2, 300 mM KCl, 10 µM leupeptin, 0.5 mM PMSF, 0.05% NP-40, 10% glycerol) and transferred to a microcentrifuge tube. Tubes were centrifuged for 2 min at 2000 × g and supernatant removed. Resin was washed 5× with TAP buffer. To washed resin, one volume of TAP buffer was added, then TCEP (tris(2-carboxyethyl)phosphine) was added to a concentration of 1 mM. 40 µg of TEV protease (Macrolab) was added for every 500 µl of resin, and tubes were let incubate at 4°C overnight.
 
 Tubes were centrifuged for 2 min at 2000 × g, and the supernatant transferred to another tube as the first elution. Resin was washed 2× with one volume of TAP buffer, and supernatant saved as second and third elutions. All elutions were run on SDS–PAGE and stained using Flamingo protein stain (Bio-Rad). Those containing NuA4 complex (based on SDS–PAGE and later confirmed by mass spectrometry) were pooled, and the calcium concentration increased by adding calcium chloride to 2 mM final by fast dilution. Pooled elutions were incubated with 150 µl washed CBP resin at 4°C for 4 hr. Tubes were centrifuged for 2 min at 2000 × g, and the supernatant removed. Resin was washed 5× with one volume of CBP wash buffer (20 mM HEPES pH 7.9, 2 mM MgCl2, 300 mM KCl, 2 mM CaCl2, 10 µM leupeptin, 0.01% NP-40, 10% glycerol). To washed resin, one volume of CBP elution buffer (20 mM HEPES pH 7.9, 2 mM MgCl2, 300 mM KCl, 2 mM EGTA (ethylene glycol-bis(β-aminoethyl ether)-N,N,N′,N′-tetraacetic acid), 10 µM leupeptin, 0.01% NP-40, 10% glycerol) was added and let incubate for 30 min. Tubes were centrifuged for 2 min at 2000 × g, and the supernatant was transferred to another tube. Elution was repeated three times. Elutions were run on SDS–PAGE and Flamingo stained, with those containing NuA4 or SAGA flash-frozen in liquid nitrogen.
 
-## HAT
+#### HAT
 
 The NuA4 HAT module was purified from Hi5 insect cells (Trichoplusia ni) coexpressing Yng2, Eaf6, Esa1, and Epl1 (1–400). All genes were codon optimized and synthesized as gBlocks (IDT), with Epl1 harboring a C-terminal HIS tag. Synthesized genes for Yng2, Eaf6, and Esa1 were cloned into plasmid 438 A. while Epl1 (1–400) was cloned into plasmid 38Q (N-terminal MBP – TEV site) (Gradia et al., 2017). Genes were then combined into a single plasmid (Gradia et al., 2017; Irwin et al., 2012) used to generate bacmids by transformation into DH10MultiBac cells (Macrolab). Purified bacmids were transfected into Sf9 cells (Spodoptera frugoperda) using FuGene (Promega) and baculoviruses amplified for two rounds before protein expression in Hi5 cells.
 
 Harvested cells were resuspended in 50 ml of lysis buffer (25 mM HEPES 7.9, 150 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 1× cOmplete EDTA-free protease inhibitor [Roche]) and sonicated for a total processing time of 5 min at 40% power. 5 µl of benzonase (Sigma) was added and incubated at 4°C for 20 min with gentle rocking. NaCl was added to a final concentration of 300 mM, as well as 50 µl of 10% Triton-X and 50 µl of NP-40 substitute. Lysate was incubated at 4°C for 10 min with gentle rocking. Lysate was centrifuged for 50 min at 18,000 rpm and supernatant was removed. Imidazole, to a final concentration of 10 mM was added to supernatant, which was then incubated with 1.5 ml washed and packed nickel resin (GoldBio) at 4°C for 1 hr with gentle rocking. Beads were removed and washed five times with 10 ml of wash buffer (25 mM HEPES 7.9, 300 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 25 mM imidazole). Protein was eluted with elution buffer (25 mM HEPES 7.9, 300 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 250 mM imidazole). Elutions were analyzed with SDS–PAGE, and samples containing NuA4 HAT were pooled. TCEP was added to a concentration of 1 mM, and pooled elutions were incubated with 4 ml of washed and packed amylose resin (GE) at 4°C for 1 hr with gentle rocking. Beads were removed and washed five times with 10 ml of amylose wash buffer (25 mM HEPES 7.9, 300 mM NaCl, 2.5 mM MgCl2, 10% glycerol). Protein was eluted with amylose elution buffer (25 mM HEPES 7.9, 100 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 20 mM maltose). Fractions containing NuA4 HAT were pooled and concentrated to 9 mg/ml. Sample was incubated with TEV protease (Macrolab) overnight at 4°C without any motion. Digested sample was centrifuged at max speed for 10 min, then 500 µl was loaded onto a 24 ml Superdex 200 increase size exclusion column equilibrated into sizing buffer (25 mM HEPES, 2.5 mM MgCl2, 100 mM NaCl, 10% glycerol). Peaks were analyzed with SDS–PAGE and samples containing the intact NuA4 HAT complex were pooled, concentrated to a final concentration of 5 mg/ml and frozen.
 
-## TINTIN
+#### TINTIN
 
 The NuA4 TINTIN module was purified from BL21STAR (Macrolab) E. coli cells coexpressing Eaf3, Eaf5, and Eaf7 in a polycistronic construct. The polycistronic block was synthesized in two gBlock (IDT) with the individual genes codon optimized and Epl7 harboring a C-terminal FLAG tag. The two gBlocks were cloned together into the 2G-T plasmid (Addgene #29707), so that Eaf3 would have a N-terminal HIS-GST-TEV site (Irwin et al., 2012). The constructed plasmids were transformed into BL21STAR cells. Cells were grown in TB media at 37°C till they reached an OD of 0.8, at which point the cells were cooled to 18°C and protein expression was induced with 0.1 mM IPTG (isopropyl β-d-1-thiogalactopyranoside). Cells were harvested after 16 hr.
 
 Cells were resuspended in 50 ml of lysis buffer (25 mM HEPES 7.9, 150 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 1× cOmplete EDTA-free protease inhibitor) and sonicated for a total processing time of 5 min at 40% power. 5 µl of benzonase was added and incubated at 4°C for 20 min with gentle rocking. NaCl was added to a final concentration of 300 mM, as well as 50 µl of 10% Triton-X and 50 µl of NP-40 substitute. Lysate was incubated at 4°C for 10 min with gentle rocking. Lysate was centrifuged for 50 min at 18,000 rpm and supernatant was removed. Imidazole, to a final concentration of 10 mM was added to supernatant, which was then incubated with 1.5 ml washed and packed nickel resin (GoldBio) at 4°C for 1 hr with gentle rocking. Beads were removed and washed five times with 10 mL of wash buffer (25 mM HEPES 7.9, 300 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 25 mM imidazole). Protein was eluted with elution buffer (25 mM HEPES 7.9, 100 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 250 mM imidazole). Elutions were analyzed with SDS–PAGE, and samples containing TINTIN were pooled. Sample was loaded onto a 1 ml HiTrap Q column and eluted via salt gradient. Fractions containing TINTIN were pooled and loaded onto a 1 ml Heparin column and eluted via salt gradient. Fractions containing TINTIN were pooled, concentrated, and loaded onto a 24 ml Superdex 200 increase size-exclusion column. Peaks were analyzed with SDS–PAGE and samples containing the intact TINTIN complex were pooled, concentrated to a final concentration of 2.5 mg/ml and frozen.
 
-## Mass photometry
+### Mass photometry
 
 Mass photometry experiment were performed on a Refeyn TwoMP mass photometer (Refeyn Ltd, Oxford, UK; Sonn-Segev et al., 2020). Data were collected using Refeyn AcquireMP (v.2022 R1) software in the large image size mode. Mass calibration was performed using bovine serum albumin (BSA, Thermo Fisher cat. #23209) and urease (Sigma-Aldrich cat. #T9145) standards with 66, 132, 272, and 544 kDa as mass references in DiscoverMP (v. 2022 R1) software. Mass calibration was performed by focusing instrument with 15 µl of 1× phosphate-buffered saline using droplet dilution method and adding 5 µl of premixed BSA (0.1 µM) and urease (0.1 mg/ml) standards for the measurement.
 
@@ -130,34 +194,192 @@ To determine the effect of the detergent present in the Nu4 sample, the same pro
 
 Particle landing events were analyzed in DiscoverMP with default parameters. Data are presented as histograms with Gaussian fit (Figure 1—figure supplement 1C). Displayed masses correspond to the single mass value present at the highest point of the fitted curve.
 
-## Negative stain sample preparation, data collection, and data processing
+### Negative stain sample preparation, data collection, and data processing
 
 Purified NuA4 complex was diluted 1:2 with negative stain crosslinking buffer (20 mM HEPES pH 7.9, 0.1 mM EDTA, 2 mM MgCl2, 1% trehalose, 1% glycerol, 75 mM KCl, 1 mM TCEP, 0.01% glutaraldehyde) and allowed to crosslink on ice for 5 min. 4 µl was then applied to a glow-discharged continuous carbon grid for 5 min and stained using uranyl formate. The negative stain dataset was collected on a Tecnai F20 microscope (FEI) operated at 120 keV and equipped with an Ultrascan 4000 camera (Gatan). Data were collected using Leginon data acquisition software (Suloway et al., 2005). The contrast transfer function (CTF) parameters were estimated using Gctf (version 1.16) and particles were picked using Relion (Zhang, 2016; Zivanov et al., 2018). Data processing was done using Relion (version 3.1) (Zivanov et al., 2018). Extracted particles were subjected to 2D classification, ab initio model generation, and 3D classification to identify different conformation states of the complex and to visualize the flexibility of its submodules.
 
 Purified SAGA complex was diluted 1:2 with negative stain crosslinking buffer (20 mM HEPES pH 7.9, 0.1 mM EDTA, 2 mM MgCl2, 1% trehalose, 1% glycerol, 75 mM KCl, 1 mM TCEP, 0.01% glutaraldehyde) and allowed to crosslink on ice for 5 min. 4 µl was then applied to a glow-discharged continuous carbon grid for 5 min, stained using uranyl formate, and tilted negative stain dataset collected on a Tecnai F20 microscope (FEI) operated at 120 keV/equipped with an Ultrascan 4000 camera (Gatan). Data were collected using Leginon data acquisition software (Suloway et al., 2005). The CTF parameters were estimated using Gctf (version 1.16), particles picked using Relion (Zhang, 2016), and data processing done using Relion (version 3.1) (Zivanov et al., 2018). Extracted particles were subjected to ab initio model generation and 3D classified to identify different conformation states of the complex and visualize the flexibility of its submodules.
 
-## Cryo-EM sample preparation
+### Cryo-EM sample preparation
 
 For cryo-EM sample preparation we used a Vitrobot Mark IV (FEI). NuA4 was crosslinked on ice using 1 mM BS3 (Thermo Fisher Scientific) for 15 min before 4 μl of sample was applied to a graphene oxide coated 1.2/1.3 UltrAuFoil grids (Quantifoil) at 4°C under 100% humidity (Patel et al., 2021). The sample was immediately blotted away using Whatman #1 for 2 s at 5 N force and then immediately plunge frozen in liquid ethane cooled by liquid nitrogen.
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 Grids were clipped and transferred to the autoloader of a Talos Arctica electron microscope (Thermo Fisher Scientific) operating at 200 keV acceleration voltage. Images were recorded with a K3 direct electron detector (Gatan) operating in superresolution mode at a calibrated magnification of 44,762 (.5585 Å/pixel), using the SerialEM data collection software (Mastronarde, 2005). 38-frame exposures were taken at 0.065 s/frame, using a dose rate of 12.98 e−/pixel/s (1.05 e−/Å2/frame), corresponding to a total dose of 40 e−/Å2 per micrograph (Figure 1—figure supplement 3). A total of 9701 movie were collected from a single grid.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 All data processing was performed using Relion3 (version 3.0) (Zivanov et al., 2018). Whole movie frames were aligned and binned by 2 (1.117 Å/pixel) with MotionCor2 to correct for specimen motion (Zheng et al., 2017). The CTF parameters were estimated using Gctf (Zhang, 2016). 3,276,565 particles were picked with Gautomatch (version 0.53, from K. Zhang, MRC-LMB, Cambridge). Particles were extracted binned by 4 (4.468 Å/pixel) and subjected to two-dimensional classification to remove ice, empty picks and graphene oxide creases, which resulted in 2,296,668 particles. These particles were reextracted binned by 3 (3.351 Å/pixel) and subjected to three-dimensional classification, and the best class, containing 635,860 particles, was selected for further processing. The particles were reextracted, binned by 1.2 (1.3404 Å/pixel) and subjected to three-dimensional refinement, resulting in a 3.98-Å map. Particles were subjected to CTF refinement and particle polishing before (Zivanov et al., 2018; Zivanov et al., 2019) performing another 3D refinement, which resulted in reconstructions at 3.1 Å. The core was then subjected to multibody refinement by masking the complex into three parts (core, Tra1-FATKIN, and Tra1-HEAT), which refine to 2.9, 2.9, and 3.4 Å (Nakane et al., 2018). While the core and Tra1-FATKIN regions refine to nearly uniform resolution the Tra1-HEAT region showed a wider range of resolutions (and map quality), indicating remaining flexibility within this region. To further refine the Tra1-HEAT region, the core, and Tra1-FATKIN regions were subtracted from the particle images and the particle box was recentered around the Tra1-HEAT region. The resulting particles were subjected to alignment-free three-dimensional classification and a single good class showing the highest resolution features was selected, resulting in 285,738 particles. These particles were refined to 3.6 Å, and subjected to multibody refinement by masking the Tra1-HEAT into three parts (top, middle, and bottom – set of helices), which refine to 3.9, 3.4, and 3.7 Å. While the resolution of the Tra1-HEAT region did not improve, the map quality did in parts, allowing better interpretability of the peripheral regions. All resolution calculations were determined from gold-standard refinements at a Fourier Shell Correlation of 0.143 (Scheres and Chen, 2012; Rosenthal and Henderson, 2003).
 
 Some of the software packages mentioned above were configured by SBgrid (Morin et al., 2013).
 
-## Model building and refinement
+### Model building and refinement
 
 The multibody maps for the core, Tra1-FATKIN, and Tra1-HEAT (top, middle and bottom) were combined for model building. The models for the Tra1 (PDB:5ojs) and Arp module (PDB:5i9e) (Diaz-Santín et al., 2017; Cao et al., 2016) were rigid-body docked into the combined map and adjusted where needed. The remaining density was manually built using COOT by building poly-alanine chains for all unaccounted density. Each chain segment was then inspected for stretches of high-quality density that could allow for the identification of potential side chain patterns that were then searched for within the sequences of known proteins within the complex (https://github.com/Stefan-Zukin/blobMapper; Zukin, 2021). Chain identification was also aided by secondary structure prediction and sequence conservation (Ashkenazy et al., 2010; Ashkenazy et al., 2016; Buchan et al., 2013; Buchan and Jones, 2019; Jones and Cozzetto, 2015). The resulting protein model was iteratively refined using PHENIX and manual adjustment in COOT (Afonine et al., 2018b; Emsley et al., 2010). The model was validated using MTRIAGE and MOLPROBITY within PHENIX (Afonine et al., 2018a; Chen et al., 2010). The refinement statistics are given in Table 1 and show values typical for structures in this resolution range. The FSC curve between the model and the map shows good correlation up to 3.0-Å resolution according to the FSC = 0.5 criterion (Rosenthal and Henderson, 2003).
 
-## dCypher-binding assays
+**Table 1.**
+ Refinement table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Data collection, map and model refinement, validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dataset</td>
+      <td>NuA4</td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td>Talos Arctica</td>
+    </tr>
+    <tr>
+      <td>Stage type</td>
+      <td>Autoloader</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Detector (mode)</td>
+      <td>Gatan K3(super-resolution)</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.117 (0.5585)</td>
+    </tr>
+    <tr>
+      <td>Electron dose (e−/Å2)</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Reconstruction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>RELION</td>
+    </tr>
+    <tr>
+      <td>Particles</td>
+      <td>635,860</td>
+    </tr>
+    <tr>
+      <td>Box size (pixels)</td>
+      <td>320</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>−78</td>
+    </tr>
+    <tr>
+      <td>Coordinate refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>PHENIX</td>
+    </tr>
+    <tr>
+      <td>Resolution cutoff (Å)</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>FSCmodel-vs-map = 0.5 (Å)</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Model-data fit (CCmask)</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residues</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>5259</td>
+    </tr>
+    <tr>
+      <td>B-Factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>65.28</td>
+    </tr>
+    <tr>
+      <td>RMS deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.507</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.72 (88th)</td>
+    </tr>
+    <tr>
+      <td>Molprobity clashscore</td>
+      <td>6.88 (87th)</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Cβ deviations (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>95.03</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>4.97</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### dCypher-binding assays
 
 dCypher-binding assays to PTM-defined histone peptides and semisynthetic nucleosomes were performed as previously (Weinberg et al., 2019; Marunde et al., 2022b; Marunde et al., 2022a; Morgan et al., 2021). Briefly, 5 µl of recombinant NuA4 HAT and TINTIN module Queries were titrated against 5 µl of histone peptide (100 nM) or nucleosome (10 nM) Targets and incubated for 30 min at room temperature in the appropriate optimized assay buffer Peptides: 50 mM Tris pH 7.5, 0.01% Tween-20, 0.01% BSA, 0.0004% poly-L-lysine, 1 mM TCEP; Nucleosomes: 20 mM Tris pH 7.5 [150 mM NaCl for HAT module or 200 mM NaCl for TINTIN module], 0.01% NP-40, 0.01% BSA, and 1 mM DTT [0.4 µg/ml sheared salmon sperm DNA (SalDNA) for HAT module or 0.04 µg/ml SalDNA for TINTIN module]. Then for the 6xHIS-tagged HAT module a 10 µl mixture of 5 µg/ml AlphaLISA Nickel chelate acceptors beads (PerkinElmer #AL108) and 10 µg/ml AlphaScreen donor beads (PerkinElmer #6760002); or for FLAG-tagged TINTIN module a 10 µl mixture of 1:400 anti-FLAG antibody (MIlliporeSigma # F7425), 5 µg/ml AlphaLISA protein-A acceptors beads (PerkinElmer #AL101), and 10 µg/ml donor beads were added, followed by a 60-min incubation. Alpha counts were measured on a PerkinElmer 2104 EnVision (680 nm laser excitation, 570 nm emission filter ± 50 nm bandwidth). To optimize salt (NaCl), competitor SalDNA concentrations, and query probing concentration, 2D assays were performed by titrating both query and salt (or SalDNA) against nucleosome substrates (Unmodified (WT), H3K4me3, H3K36me3, and biotin-DNA). It was found that the HAT module had weak DNA-binding ability that could be competed away with SalDNA (data not shown). Discovery screens consisting of 77 nucleosome substrates (EpiCypher #16-9001) were used to test the HAT (50 nM) and TINTIN (50 nM) modules (Figure 3—figure supplement 5). All binding interactions were performed in duplicate.
 
-## Creation of figures
+### Creation of figures
 
 Depiction of molecular models were generated using PyMOL (The PyMOL Molecular Graphics System, version 1.8, Schrödinger), the UCSF Chimera package from the Computer Graphics Laboratory, University of California, San Francisco (supported by National Institutes of Health P41 RR-01081) and UCSF ChimeraX developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases (Pettersen et al., 2004; Goddard et al., 2018; Pettersen et al., 2021). Protein domains graphs (Figures 2 and 3, Figure 1—figure supplement 2) were generated using domainsGraph.py (https://github.com/avibpatel/domainsGraph; Patel, 2022). Crosslinking mass spectrometry figures were generated using Xlink Analyzer (Kosinski et al., 2015). ColabFold MSA and predicted alignment error figures were generated using ColabFold AlphaFold2-Advanced Notebook (https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/beta/AlphaFold2_advanced.ipynb) (Mirdita et al., 2022).

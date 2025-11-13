@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/021sy4w91 The Jackson Laboratory Bar Harbor United States
+1. The Jackson Laboratory Bar Harbor United States ([ROR:021sy4w91](https://ror.org/021sy4w91))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ Here, we determine the extent to which genetic–epigenetic interactions between
 
 ## Results
 
-## Genetic–epigenetic interactions are pervasive and enriched within TAD boundaries
+### Genetic–epigenetic interactions are pervasive and enriched within TAD boundaries
 
 Although there are numerous reports detailing examples of genetic variants and chromatin state altering gene expression, the non-additive interactions between these features have yet to be systematically explored. We aimed to determine the extent to which genetic–epigenetic regulatory interactions occur on a systemic level, and whether these interactions exhibit any bias in their location within the genome. To explore these interactions, we utilized paired transcriptome and chromatin accessibility profiling of DO mESCs (Skelly et al., 2020). These samples incorporate genetic backgrounds from eight well-characterized founder strains from three M. musculus subspecies, randomly outbred for 19 generations. Thus, the resultant data constitute a unique resource for addressing questions of genetic–epigenetic regulatory interactions.
 
@@ -49,13 +49,21 @@ With 95 trillion possible interactions genome-wide, testing had to be focused to
 
 If interactions were detected randomly, we would expect a null distribution with no enrichment of low p-value models. Instead, the number of significant models was four orders of magnitude greater than expected, thus indicating the presence of true associations (Figure 2A). The locations of significant associations indicated non-additive interactions were much more likely to occur within the linkage disequilibrium block that contains the gene (Figure 2B), matching prior work that the majority of detectable genetic effects originate in local regulatory regions (Ronald et al., 2005; Su et al., 2010; Nelson et al., 2004). Approximately half (49%) of all significant interacting models included a genetic variant or ATAC peak within 4 Mb of the gene they affected. Within this range, we found that less than 10% of variants and ATAC peaks clustered closer to each other than they did to the gene they affected, indicating that co-localization may not the driving factor in many interacting models (Supplementary file 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig2-v1.jpg)
+
+**Figure 2.:** (A) Density of Bonferroni adjusted p-value distribution in randomly sampled intrachromosomal models. (B) Density of non-additive interacting models where adj. p < 1 × 10−7, by minimum distance between regulatory elements. (C) Distribution of model term retention across intra-topologically associated domain (TAD) models. (D, E) Euler plots of ATAC-seq peaks and genetic variants, dividing them by their participation in single-term, additive, and non-additive interacting models. ATAC-seq peaks and genetic variants involved in interacting models are highlighted, as they are investigated further in this paper.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Density of interacting models where adj. p < 1 × 10−7, by minimum distance between regulatory elements, measured in relation to number of topologically associated domains (TADs) between elements. (B) Density of additive models where adj. p < 1 × 10−7, by minimum bp distance between regulatory elements. (C, D) ATAC-seq peak and single-nucleotide polymorphism (SNP) participation in single-term, additive, and interacting models.
+
 As a result of these findings, we considered potential chromatin features that might influence the local area for genetic–epigenetic interactions. We hypothesized that TADs may play a role in determining the prevalence of non-additive interactions, as they are a 3D genome structure known to enable enhancer access to local genes. Therefore, we generated a second, TAD-focused subset of regression models, testing all potential combinations between each gene and every genetic variant and ATAC peak that fall within one TAD of its transcription start site (TSS) in either direction. TAD boundary locations were retrieved from publicly deposited Hi-C-based analyses of B6 embryonic stem cells (Dixon et al., 2012).
 
 Models with at least one interacting element within the same TAD as the gene were 3.7 times more likely to reach our threshold, compared to models that did not (3.3% vs. 0.9%). This constituted 3836 genetic variants and 3725 ATAC-seq peaks affecting the expression of 896 genes in our initial exploratory subset, and 11,904 SNPs, 25,961 ATAC-seq peaks, and 1099 genes in our equivalently sized TAD-centric subset (Supplementary files 1 and 2).
 
 ATAC-seq peaks involved in non-additive interactions favored results between CTCF-binding sites associated with TAD formation (Figure 2—figure supplement 1A). Regression models that did not identify interaction involvement also show this local, TAD-bound organization of ATAC-seq peaks (Figure 2—figure supplement 1B). Interacting regulatory elements as defined by our model are thus clustered within the same TAD as the gene they affect. This provides a possible structural explanation for previously observed local regulatory ranges.
 
-## Interacting elements in genetically diverse samples escape conventional discovery methods
+### Interacting elements in genetically diverse samples escape conventional discovery methods
 
 We next evaluated whether genetic–epigenetic, non-additive interactions provide information that genotyping or ATAC-seq alone cannot. To this end, we compared interacting models, found to represent 32.29% of significant intra-TAD models (Figure 2C), with models associated with genetic variants or ATAC-seq peaks without interactions. We broke down the overlap between intra-TAD regression model results by genetic variants and ATAC-seq peaks separately.
 
@@ -67,21 +75,41 @@ We found that 26.35% of genetic variants are shared between non-additive interac
 
 These results suggest that although genetic variants are the primary driver of variation in expression, non-additive interactions with chromatin states further reveal the origins of expression variation. Our findings also suggest that genetic variation and open chromatin data cannot be used independently to capture these regulatory features. Conversely, this suggests that ATAC-seq data alone are a less effective predictor of gene expression in a genetically diverse population.
 
-## TAD boundaries limit genetic–epigenetic interactions
+### TAD boundaries limit genetic–epigenetic interactions
 
 The specific preference for non-additive interactions within active CTCF-binding sites warranted further study. We sought to determine if active CTCF-binding sites provided an appreciable boundary to interactions (Figure 3A), similar to reported segregation of enhancer elements (Rodríguez-Carballo et al., 2020). We carried out regression analyses across the genome for all possible models involving each gene–genotype–ATAC combination within the gene’s TAD and nearest flanking TADs or intra-TAD regions. Although resolution of causal variant location limited by linkage disequilibrium, ATAC-seq peaks that interact with variants could be confidently localized in relation to TAD boundaries.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of a TAD loop, including gene (purple) and density of interacting model elements (red). Loop interior is in blue, exterior DNA is gray, and CTCF-binding sites are in yellow. (B) Location of interacting ATAC-seq peaks relative to TAD boundary location, merged across all genes. TAD interior denotes the TAD in which the dependent gene was found. (C) Interacting ATAC-seq peaks by distance from associated gene transcription start site (TSS). Local area cutoffs of 100 and 500 kb flanking regions are marked.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Location of all ATAC-seq peaks relative to topologically associated domain (TAD) boundary location, merged across all genes. TAD interior (x > 0) denotes the TAD in which the dependent gene was found.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Location of interacting ATAC-seq peaks relative to TAD boundary location, merged across all genes. Each bar represents an individual ATAC-seq peak, to demonstrate interactions per peak rather than density of interactions (see Figure 2B for this alternate view). Black horizontal line indicates 200 interactions per ATAC peak. TAD interior (x > 0) denotes the TAD in which the dependent gene was found.
+
 We found that TADs contained more ATAC peaks that interact with local genetic variants to affect expression of a resident gene (Figure 3B). With a window of 200 kb on either side of an active CTCF boundary, we found 52,511 ATAC-seq peaks sharing a TAD with their interacting gene, versus 24,229 peaks in different TADs or inter-TAD regions This constitutes a significant enrichment of intra-TAD gene–peak interactions over expectations based on overall ATAC-seq peak density (an odds ratio of 1.48, null expectation p < 2.2 × 10−16) (Figure 3—figure supplement 1). We also identified 29 individual ATAC-seq peaks that were involved in more than 200 non-additive interactions each, which are distinctly visible within the aggregate view (Figure 3—figure supplement 2). These were exclusively affecting genes within the same TAD as the interacting ATAC-seq peak, which suggests that our results are not due to higher density of open chromatin within TAD structures. This is consistent with previous findings that the effects of enhancers and other regulatory elements are constrained by TADs (Krijger and de Laat, 2016).
 
-## Revising constraints on local regulator area using genetic data
+### Revising constraints on local regulator area using genetic data
 
 Definitions of local regulatory area are used to establish the scope of analyses.
 
 Many cell types and animal models do not have publicly available Hi-C or CTCF ChIA-PET datasets, further limiting many researchers that may want to study genetic–epigenetic non-additive interactions. Our data support that TADs may act as a biologically defined boundary. Therefore, we wanted to determine how far the TAD-defined local area was likely to extend from any given gene. We found that to capture 95% of inter-TAD genetic–epigenetic interactions at adjusted p < 1 × 10−7, a window of 2,074,778 bp upstream and 2,575,581 bp downstream of the gene TSS was required (Figure 3C). The density of results using linear DNA sequence does not necessarily experience a linear drop-off over this distance, due to variable TAD lengths (Figure 4E, F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig4-v1.jpg)
+
+**Figure 4.:** (A) Counts of intra-TAD ATAC-seq peaks involved in all non-additive interactive models, centered on the transcription start site (TSS) of the gene affected by the genotype–ATAC interaction. Coordinates transformed to a standard scale. (B) Example TAD, displaying interacting ATAC peak density and gene locations. Peak relevance generally decays relative to intra-TAD distance rather than linear chromosomal distance. (C–F) A comparison between linear sequence-based and TAD-limited search methods for interacting ATAC-seq peaks. (C, D) compare percentage of significantly interacting ATAC-seq peaks at each gene-relative locus. (E, F) compare density of ATAC-seq peaks at each locus. TAD-based search shows a higher density of interactions and places limits on search distance due to testing only TAD-internal ATAC-seq peaks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Per-chromosome comparison of percentages of interacting ATAC-seq peaks in transcripts versus in enhancers. (B) TAD boundary locations relative to distance from each gene contained within them, normalized for TAD length.
+
 We next considered the location of these interacting elements with regard to genes and known regulatory elements. ATAC-seq peaks involved in non-additive genetic–epigenetic interactions were analyzed by overlap with mm10 NCBI RefSeq genes and selected Enhancer Atlas 2 datasets, as well as FANTOM5’s list of mm10 promoters (Lizio et al., 2015; Supplementary files 4 and 5). 65.37% of peaks on each chromosome fell within gene bodies. Normalized for length, exons were especially enriched, with 34.41% of peaks falling within exons, half of which fell within the first (or only) exon. 24.06% of peaks overlap with promoters. 6.09% of peaks fall within enhancers curated for ESC R, R1, KH2 embryonic stem cell lines. There was no inverse relationship between gene body versus enhancer peak percentage (Figure 4—figure supplement 1A), indicating that this was not simply reflecting the relative density of genes within various TADs across the genome.
 
-## Density of interactions between genomic elements is defined by 3D context
+### Density of interactions between genomic elements is defined by 3D context
 
 If TADs act as a constraint to local interaction, then their 3D looping structure should be reflected in the regulatory patterns of genes found within them. At the most basic level of TAD structural organization, the CTCF-binding site brings distant areas of chromatin into close physical association. We analyzed genome-wide distribution of genotype-interacting ATAC peaks relative to genes within their respective TADs.
 
@@ -97,7 +125,7 @@ Interestingly, there is a depletion in the non-additive interaction rate of ATAC
 
 Our results indicate that the local area for non-additive genetic–epigenetic interaction is not only constrained by TADs, but also shaped according to the overall 3D genome structure of the TAD loop. Analytical methods which reflect this are more efficient at discovering interacting regulatory elements.
 
-## Genetic–epigenetic interactions influence gene expression more than epigenetic factors alone
+### Genetic–epigenetic interactions influence gene expression more than epigenetic factors alone
 
 The coefficients estimated by our regression model quantify the effects of the genetic and epigenetic features on the expression of each gene (Equation 1, Methods). We postulated that our ATAC-seq, genotypic variants, and non-additive interaction effects would display patterns that corresponded to positive and negative regulatory roles with varying strengths.
 
@@ -109,11 +137,23 @@ The directionality of effects on gene expression specifies the positive or negat
 
 We found that models indicating redundancy or interference were the most common overall, totaling 40.53–39.54% of all models (Supplementary file 6). Synergistic effects were found in 17.02% of all models. These two observations, suggest that a greater proportion of regulatory non-additive interactions attenuate gene expression, rather than strengthening it. While ATAC-seq peaks are often correlated with increased gene expression (Cao et al., 2018), we were surprised to find that an increase in ATAC-seq signal had a negative effect on gene expression in 40.76% of models (Supplementary file 6). Due to the high proportion of ATAC-seq peaks found within gene bodies and the association between open chromatin and gene transcription, this result warranted further investigation.
 
-## Motif enrichment analysis reveals CTCF complex participation in genetic–epigenetic interactions
+### Motif enrichment analysis reveals CTCF complex participation in genetic–epigenetic interactions
 
 We looked next for potential binding sites or functional motifs underlying our results to provide clues as to the mechanistic underpinnings of model effects. We were especially interested in the subset of ATAC-seq peaks with negative effects on gene transcription, as these results were counter to our expectations. We hypothesized that these areas of open chromatin might expose binding sites of repressive regulatory factors.
 
 To test this hypothesis, we tested for DNA motif enrichment analysis using MEMEsuite (Figure 5A). We selected the subset of ATAC-seq peaks involved in 10 or more significant non-additive interactions, at least 50% of which have negative ATAC-seq effects (negative effectors). This subset was compared versus all ATAC peaks and against shuffled control sequences via STREME analysis, which finds enriched ungapped motifs in provided sequences.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig5-v1.jpg)
+
+**Figure 5.:** (A) A schematic of our motif analysis through MEMEsuite. FASTA files derived from interacting ATAC-seq peaks are used to identify enriched motifs, identify protein-binding sequences, and locate the sequences within the ATAC-seq peaks. (B, C) Binding sites found within significant motifs are less protected from genetic variation. Single-nucleotide polymorphism (SNP) counts are shown at each locus in the CTCF-binding sequence, comparing motifs within interacting ATAC-seq peaks versus all CTCF-binding sites.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Smad3- and CTCF-binding sites within motifs identified in Platr2’s TAD.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Relative effect magnitudes of all significant intra-topologically associated domain (TAD) interaction models, split by effect signs. Model signs are listed in the order ATAC, single-nucleotide polymorphism (SNP), Interaction, and positive (p) or negative (n).
 
 Results showed the negative effector subset was enriched for 49 motifs (Supplementary file 7), including the CTCF-binding site (p < 2.0 × 10−14) and SMAD3-binding site (p < 1.5 × 10−8). These motifs were present, but less significantly enriched in positive effectors, or in all significant ATAC-seq peaks. This suggested that a portion of negative ATAC-seq effects can be functionally explained by altered behavior of CTCF-binding sites carried by specific ancestries in the DO. To complement this analysis, we also quantified the CTCF motif occupancy in negative effectors versus other ATAC-seq peaks. FIMO motif scanning showed that 53.3% of top negative ATAC-seq sequences had at least one CTCF-binding motif in them, compared to 35.3% in ATAC-seq peaks with positive effectors on gene transcription (see deposited data).
 
@@ -121,19 +161,27 @@ We next examined whether these peak locations contain SNPs that might alter CTCF
 
 Most genomic sequences matching the CTCF-binding motif are not known to be bound, according to ChIP-seq experiments (Maurano et al., 2015). We wanted to determine the overlap between CTCF-binding sites found in our data and known active binding sites in mESCs. Comparing to available ENCODE CTCF ChIP-seq in C57BL/6 Bruce4 and 129/Ola E14TG2a.4 mESCs (ENCODE Project Consortium, 2012; Shen et al., 2012), we found 2.04% and 1.87% of these overlapped with negative ATAC effect CTCF-binding sites that contained SNPs, versus 17.45% and 16.20% overlapping with positive effect CTCF-binding sites that contained SNPs. Expanding the scope to attempt to find flanking Smad3 regions netted consistently low results, with a 1-kb flanking window returning between 1.20% and 0.41% for Bruce4 and E14TG2a.4, respectively. These findings show that the majority of CTCF-binding sites found within our significant models are not captured in previous analyses of ESCs two different M. musculus musculus strains.
 
-## Putative developmental regulator Platr2 is regulated by multiple redundant elements
+### Putative developmental regulator Platr2 is regulated by multiple redundant elements
 
 To provide an example of our analytical method and probe a gene previously proposed to be important in stem cell development, we examined Platr2 and its TAD. Platr2’s TAD contains a high concentration of confidently called regression models in our analysis (Supplementary file 8), with 1031 models of non-additive genotype–ATAC interaction reaching our significance cutoff for resident genes, of which 179 were models of Platr2 expression. It also contains 22 haplotype markers, allowing a certain level of model variant localization. Previous studies have found a group of genes regulated in trans by expression quantitative trait loci (eQTLs) mapped to Platr2 (Skelly et al., 2020). These target genes are associated with embryonic ectoderm, indicating Platr2 may act as a regulator of stem cell state. These factors made it a target of interest for further exploration.
 
 When the direction of effects for Platr2 was analyzed, the distribution showed a shift toward models where ATAC and genotype effects agreed with each other, but not with the interaction term (Supplementary file 8). As discussed above, this potentially indicates functional redundancy between haplotype and chromatin openness at these sites. Motif enrichment analysis of interacting ATAC-seq peaks identified a sequence at 16 sites which contain Smad3-binding motifs, and another sequence at 15 sites that contain CTCF-binding motifs (Figure 5—figure supplement 1A, B, Supplementary file 9), which may suggest modulation of CTCF-binding strength. These results suggest that Platr2 may have differential regulation patterns governed by changes in TAD formation.
 
-## CTCF binding in inbred mESCs validates strain-specific effects
+### CTCF binding in inbred mESCs validates strain-specific effects
 
 CTCF binding to DNA is associated with open chromatin around the binding site, TAD formation, and regulation of local gene expression (Oomen et al., 2019; van Ruiten and Rowland, 2021; Li et al., 2019; Andrey et al., 2013). Genetic variation within CTCF-binding sites can alter binding potential (Cao et al., 2018; Zuo et al., 2017). We hypothesized that our regression models indicated areas of strain-specific CTCF binding due to polymorphisms in the DO haplotypes. To test this, we performed CTCF ChIP-seq on mESCs derived from four of the eight DO founder strains, including representatives from the three subspecies contributing to the DO population. C57BL/6J was also included as the standard reference.
 
 Sample ChIP-seq-binding intensities clustered by strain with principal component analysis (PCA), and were separated by subspecies as expected (Figure 6—figure supplement 1). Consensus peaks were identified from replicates of each strain. Across all samples, 65,541 ChIP-seq peaks passed our significance threshold (found in at least two samples in at least one strain), or 68.21% of results. 90.65% of these overlapped with the publicly available TAD dataset we had employed for our previous analyses.
 
 Our DO data suggested to us that there are genetically determined differential CTCF-binding sites within that population. If that is the case, then we would expect to see strain-specific differences in CTCF peak occupancy. Consensus peaks were identified from replicates of each strain. Fifty-two percent of CTCF ChIP-seq peaks were shared across all four strains, with the remaining 48% found in three or fewer strains (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig6-v1.jpg)
+
+**Figure 6.:** (A) Percentage of ChIP-seq peaks in surveyed strains. (B) Variance (log10) in binding intensity fold enrichment for all ChIP-seq peaks. (C) Percentage of significance in association between DO genotype at CTCF peaks and CTCF-binding intensity on inbred ChIP-seq samples, in various subsets.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88222/elife-88222-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Principle component analysis of CTCF ChIP-seq-binding intensity. Batch numbers are included for each sample.
 
 We found 23,887 of our significant CTCF ChIP-seq peaks these overlapped with CTCF-binding sites that had been previously identified, or 36.45% overlap with significant results. We also found that 16,951 (25.86%) significant results overlap with the CTCF ChIP-seq data previously retrieved from ENCODE, and among those, 7880 (12.02%) that overlap with significant, interacting ATAC-seq peaks in our DO mESC data. About 80% of these (~6300) are found in all four strains.
 
@@ -143,7 +191,7 @@ Our analysis found a range of binding intensities at individual loci, with 13% h
 
 Fifty-two percent of CTCF ChIP-seq peaks were shared across all four strains, with the remaining 48% found in three or fewer strains (Figure 6A). A range of binding intensities was also found at individual loci, with 13% having a variance in fold enrichment greater than 10 (Figure 6B).
 
-## Non-additive interactions are predictive of CTCF-binding patterns
+### Non-additive interactions are predictive of CTCF-binding patterns
 
 With our ChIP-seq data indicating the presence of strain-specific CTCF binding, we hypothesized this differential binding could be predicted from our regression models. We anticipated that inbred founder strain CTCF ChIP-seq would have more genotype effects at binding sites with open chromatin in non-additive interactions with local genotype, as opposed to binding sites without interactions.
 
@@ -197,21 +245,25 @@ Overall, this study demonstrates that genetic–epigenetic interaction analysis 
 
 ## Methods
 
-## Sample production and initial processing
+### Sample production and initial processing
 
 DO mESC production was performed by Predictive Biology. Cultures were grown with G3SK inhibitor (1i medium). Bulk RNA and ATAC sequencing were performed and normalized as previously described (Skelly et al., 2020). RNA-seq resulted in 6M-55M 2 × 75 bp paired-end (PE) reads per sample. ATAC-seq libraries were amplified for nine cycles and purified with 1.7X AMPure beads. Expression data were formatted and analyzed as log2-transformed transcripts per million (TPM). ATAC-seq data were formatted as trimmed mean of M values (TMM) (Robinson and Oshlack, 2010). Genotyping was performed by Giga Mouse Universal Genotyping Array (GigaMUGA), an Illumina Infinium array of 143,000 SNP markers with a special focus on DO founder strains (Morgan et al., 2015). Aneuploidies were removed with the argyle R package, by identifying chromosome-level gene expression differences (Morgan, 2015). QTL2 haplotype reconstruction, normalization, and pseudoprobe processing were carried out as previously described (Skelly et al., 2020). Samples with X0 genotypes were removed, and the union of all samples with the required data types resulted in 176 samples.
 
 Sample genotypes were estimated in reflection of linkage disequilibrium and haplotype prediction confidence, employing a previously calculated grid of GigaMUGA pseudoprobes, which were evenly spaced by genetic distance (Bubier et al., 2020, Chick et al., 2016). This produced a subset of 68,413 imputed haplotype calls centered at specific loci which were most likely to match the actual haplotype in each region (Supplementary Information).
 
-## Regression modeling
+### Regression modeling
 
-RNA-seq, ATAC-seq, and haplotype data were processed into SQLite databases and fit to a regression model using the stats::step() function in R. We modeled the expression of each gene by linear regression with a genotype-by-ATAC non-additive interaction term:(1)yi=β0+β1x1+β2x2+β3x1x2+εi
+RNA-seq, ATAC-seq, and haplotype data were processed into SQLite databases and fit to a regression model using the stats::step() function in R. We modeled the expression of each gene by linear regression with a genotype-by-ATAC non-additive interaction term:
 
-where yi= RNA abundance (log2TPM), x1= genotype, and x2= ATAC intensity (TMM). Genotypes were taken from the haplotype estimations, and coded as 0 for reference, 1 for heterozygote, and 2 for homozygote non-reference. Multi-allelic variants were not present in the pseudoprobes and were therefore not accounted for in the method. Models that retained the β3x1x2 term by passing the default Akaike information criterion cutoff were deemed to be interacting. These were used as the input for all further analyses.
+$$
+y_{i}=\beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}+\beta_{3}x_{1}x_{2}+\epsilon_{i}
+$$
 
-This regression model was compared to a null model in which a genetic variant and open chromatin element affect gene expression, but do so independently of each other (β3=0 in Equation 1). F statistics were calculated with the R function pf(). Given the possibility of overfitting as the number of model terms increases and the high number of models tested (see Results), a Bonferroni adjusted p value cutoff of p < 1 × 10−7 was selected (hereafter referred to as ‘significant models‘). Bonferroni corrections were calculated via stats::p.a just().
+where $y_{i}=$ RNA abundance (log2TPM), $x_{1}=$ genotype, and $x_{2}=$ ATAC intensity (TMM). Genotypes were taken from the haplotype estimations, and coded as 0 for reference, 1 for heterozygote, and 2 for homozygote non-reference. Multi-allelic variants were not present in the pseudoprobes and were therefore not accounted for in the method. Models that retained the β3x1x2 term by passing the default Akaike information criterion cutoff were deemed to be interacting. These were used as the input for all further analyses.
 
-## Topologically association domain, motif, and DNA-binding analyses
+This regression model was compared to a null model in which a genetic variant and open chromatin element affect gene expression, but do so independently of each other ($\beta_{3}=0$ in Equation 1). F statistics were calculated with the R function pf(). Given the possibility of overfitting as the number of model terms increases and the high number of models tested (see Results), a Bonferroni adjusted p value cutoff of p < 1 × 10−7 was selected (hereafter referred to as ‘significant models‘). Bonferroni corrections were calculated via stats::p.a just().
+
+### Topologically association domain, motif, and DNA-binding analyses
 
 mESC TAD data were derived from previously published work (Dixon et al., 2012). in a liftover from mm9 to mm10 via UCSC genome browser (Kuhn et al., 2013). Chromosome information for mm10 retrieved from the Integrative Genomics Viewer (Robinson et al., 2011).
 
@@ -219,11 +271,11 @@ DNA motif and binding site discovery were performed using the MEMEsuite tools ME
 
 We downloaded the CTCF ChIP-seq in C57BL/6 Bruce4 and 129/Ola E14TG2a.4 mESCs from the ENCODE portal (Sloan et al., 2016) with the following identifiers: ENCSR000CCB and ENCSR362VNF (ENCODE Project Consortium, 2012). These were also used to estimate the locations of Smad3 activity. CTCF- and SMAD3-binding motifs were retrieved from HOCOMOCO (Kulakovskiy et al., 2018) with the identifiers CTCF_MOUSE.H11MO.0.A and SMAD3_MOUSE.H11MO.0.B. These were overlapped with our ATAC-seq dataset via FIMO (Grant et al., 2011).
 
-## Cell lines
+### Cell lines
 
 All cell line identities were authenticated using The Jackson Laboratory’s Genetic Quality Control Program. This Program includes a 27-SNP panel which was used for strain confirmation. Additionally, all cell lines tested negative for mycoplasma, using a qPCR-based assay, and bacterial and fungal contaminants.
 
-## CTCF ChIP-seq
+### CTCF ChIP-seq
 
 We performed CTCF ChIP-seq following previously established protocols (Oomen et al., 2019). Three cell lines were run for four isogenic mESC strains, C57BL/6J, CAST/EiJ, PWK/Ph, and WSB/EiJ. Cultures were grown in 1i medium. One sequencing run failed, resulting in the loss of one PWK and one WSB sample.
 

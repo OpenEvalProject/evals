@@ -13,19 +13,19 @@
 
 ### Affiliations
 
-1. https://ror.org/04bqh5m06 The National Geographic Society Washington DC United States
-2. https://ror.org/03rp50x72 Centre for the Exploration of the Deep Human Journey, School of Anatomical Sciences, University of the Witwatersrand Johannesburg South Africa
-3. https://ror.org/04jr01610 The Carnegie Institution for Science Washington DC United States
-4. https://ror.org/03ydkyb10 Department of Anthropology, University of Wisconsin Madison United States
-5. https://ror.org/00hx57361 Department of Anthropology, Princeton University Princeton United States
+1. The National Geographic Society Washington DC United States ([ROR:04bqh5m06](https://ror.org/04bqh5m06))
+2. Centre for the Exploration of the Deep Human Journey, School of Anatomical Sciences, University of the Witwatersrand Johannesburg South Africa ([ROR:03rp50x72](https://ror.org/03rp50x72))
+3. The Carnegie Institution for Science Washington DC United States ([ROR:04jr01610](https://ror.org/04jr01610))
+4. Department of Anthropology, University of Wisconsin Madison United States ([ROR:03ydkyb10](https://ror.org/03ydkyb10))
+5. Department of Anthropology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 6. The National Geographic Society Rising Star Project, Cradle of Humankind, UNESCO World Heritage Site Johannesburg South Africa
-7. https://ror.org/03rp50x72 Geography, Archaeology and Environmental Studies, University of the Witwatersrand Johannesburg South Africa
+7. Geography, Archaeology and Environmental Studies, University of the Witwatersrand Johannesburg South Africa ([ROR:03rp50x72](https://ror.org/03rp50x72))
 
 † Corresponding author
 
 ## Abstract
 
-The production of painted, etched, or engraved designs on cave walls or other surfaces is recognized as a major cognitive step in human evolution. Such intentional designs, which are widely interpreted as signifying, recording, and transmitting information in a durable manner, were once considered exclusive to Late Pleistocene Homo sapiens . Here we present observations of what appear to be engraved abstract patterns and shapes within the Dinaledi Subsystem of the Rising Star cave system in South Africa, incised into the dolomitic limestone walls of the cave. The markings described here are found on a pillar in the Hill Antechamber that extends into the natural fissure corridor that links the two chambers, and we associate them with Homo naledi . They include deeply impressed lines, cross-hatchings, percussion marks, and other geometric shapes on flat wall surfaces and in and around existing cracks and grooves in the dolomitic limestone walls, found in one specific location of the Dinaledi Subsystem. Remains of multiple H. naledi are found in this part of the cave system, and evidence of mortuary behavior appears in both the Dinaledi Chamber and adjacent Hill Antechamber dated to between 241 and 335 ka (Dirks et al., 2017; Robbins et al., 2021; Berger et al., 2025).
+The production of painted, etched, or engraved designs on cave walls or other surfaces is recognized as a major cognitive step in human evolution. Such intentional designs, which are widely interpreted as signifying, recording, and transmitting information in a durable manner, were once considered exclusive to Late Pleistocene Homo sapiens. Here we present observations of what appear to be engraved abstract patterns and shapes within the Dinaledi Subsystem of the Rising Star cave system in South Africa, incised into the dolomitic limestone walls of the cave. The markings described here are found on a pillar in the Hill Antechamber that extends into the natural fissure corridor that links the two chambers, and we associate them with Homo naledi. They include deeply impressed lines, cross-hatchings, percussion marks, and other geometric shapes on flat wall surfaces and in and around existing cracks and grooves in the dolomitic limestone walls, found in one specific location of the Dinaledi Subsystem. Remains of multiple H. naledi are found in this part of the cave system, and evidence of mortuary behavior appears in both the Dinaledi Chamber and adjacent Hill Antechamber dated to between 241 and 335 ka (Dirks et al., 2017; Robbins et al., 2021; Berger et al., 2025).
 
 ## Introduction
 
@@ -41,13 +41,13 @@ In this article, we describe our observations of Panel A within the passage link
 
 ## Results
 
-## Panel A
+### Panel A
 
 What we term Panel A is found on the southern face of the natural pillar that forms the southern edge of the entry from the Hill Antechamber into the southern of two passages leading to the Dinaledi Chamber (Figures 1 and 2). The panel is notable as an area of discolored rock that appears to have been smoothed by percussive blows by a hard object, as is evidenced by micro and macro pitting of the surface not found on the adjacent natural rock surfaces (Figures 3 and 4) and by the possible application of sand and grit both before and after markings were made (Figures 5 and 6) and (Figures 7—9) .
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89102/elife-89102-fig2-v1.jpg)
 
-**Figure 2.:** A, B) and Engraving Panel B (C, D).(A) was taken with a polarizing filter as described in the ‘Methods’. (B) was taken using only LED lights and approximates natural coloration. (C) shows the results of increasing contrast while lowering light on Panel B while (D) illustrates Panel B under LED lighting.
+**Figure 2.:** (A) was taken with a polarizing filter as described in the ‘Methods’. (B) was taken using only LED lights and approximates natural coloration. (C) shows the results of increasing contrast while lowering light on Panel B while (D) illustrates Panel B under LED lighting.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89102/elife-89102-fig3-v1.jpg)
 
@@ -105,7 +105,7 @@ We identified at least 46 engraved or altered marks we consider artificial on Pa
 
 **Figure 16.:** Non-natural engravings are traced in white lines and given yellow number references in the text.
 
-## Evidence of hominin manufacture of engravings on Panel A
+### Evidence of hominin manufacture of engravings on Panel A
 
 Dolomite is known for a pattern of natural weathering that results in patterns of recessed linear features on its surface often called ‘elephant skin’ patterning. Natural fissures and erosional features in weathered dolomite surfaces due to chemical weathering processes (Burger, 1989) are in our observations characteristically deeper than several millimeters, and they follow natural fracture planes within the rock. Natural erosional features in dolomite may have variable cross-sections, ranging from beveled to U-shaped to rectangular in cross section with rounded or flat bottoms (Jeelani et al., 2018) and are typically a few millimeters to many centimeters in depth, but do not have multiple parallel striations visible within them which would be characteristic of retouching or engraving. As opposed to natural surface weathering, artificial lines are limited in depth and extent due to the natural hardness of dolomite. This hardness (see Tabor, 1954) means that any substantial artificial marking requires multiple parallel incisions with a hard tool. Where artificial engraved markings intersect, they often appear to exhibit an ordering in which one was completed before the other (e.g., see Figures 6 and 13—15); this appearance of sequencing is not typical of natural weathering. In previous work, researchers have noted the limited depth of artificial lines, their composition from multiple parallel striations, and their association into a clear arrangement or pattern as evidence of hominin manufacture (Rodríguez-Vidal et al., 2014).
 
@@ -125,9 +125,7 @@ The means of manufacture of engraved lines in this context would have required a
 
 ![Figure 19.](https://cdn.elifesciences.org/articles/89102/elife-89102-fig19-v1.jpg)
 
-**Figure 19.:** Berger et al., 2025 (top) recovered from the Hill Antechamber burial immediately below Panels B and C compared to the artifact from Blombos Cave, South Africa, attributed by Henshilwood, 2009 as having symbolic markings in ochre made by Homo sapiens circa 78k years ago.
-
-## Panels B and C
+### Panels B and C
 
 Panels B and C are located on the northern wall within 2 m of the Hill Antechamber burial feature described in Berger et al., 2025. Panel B is situated lower and to the right (west) of Panel C. Both panels appear to have been prepared in a similar way to Panel A, with possible use of cave sediment applied to the surface, giving the surfaces of these panels an obvious textural difference to adjacent walls of the chambers (Figures 2B, C, 5). A number of etchings and engravings can be seen, some in the form of geometric figures (Figure 7), crosses, X’s and one possible non-linear geometric figure (Figure 5). It appears, in softer visible light, that a foreign substance has been applied to part of the panel. As was noted, the purpose of this article is not to describe these complex panels, but to simply note their presence in the Hill Antechamber. Future work in this difficult space is planned to sample the possible residues and map the non-natural etchings, attempt to date the etchings, and we will conduct experimental work on native dolomite in controlled experiments.
 
@@ -138,6 +136,171 @@ The context of these markings within the remote Dinaledi Subsystem, far from cav
 One possible objection is that some markings were not produced by hominins. For example, some have suggested that some of the apparent markings are consistent with weathered dolomite, while others may have been produced by non-hominin agents such as carnivores (Martinón-Torres et al., 2024). Linear features and other modifications of rock surfaces are sometimes produced by animal claws due to tunneling, climbing, or claw-sharpening, or other behaviors (Bednarik, 1991). Such features have often been observed within caves formed within relatively soft limestone formations, including those in some parts of Europe and southern Australia. Deeply incised claw markings are sometimes seen, which tend to include multiple parallel incisions with a spacing typical of the anatomical spacing between claws. When claw marks are made repeatedly on the same surface, they may cross each other or exhibit complex geometries. However, the susceptibility of a surface to marking by animal claws is determined by the hardness of the material. Animal claws have a hardness of 2–2.5 on Mohs hardness scale (Rothschild et al., 2013). Dolomite has a hardness of 3.5–4.5, with Malmani dolomites at the higher end of this scale, much harder than non-dolomitic limestones with hardness of 2–3, which are commonly marked by animal claws. None of the cave systems in the Malmani dolomite have been noted for incised claw markings into dolomite itself of the depth and form seen in the Dinaledi marks (Figure 17), even though clawed species like porcupines, honey badgers, and leopards do use caves and do dig into softer sediments found in the area. The hardness of the rock does not admit scratches by animal claws of this kind; additionally, the specific features of Panel A do not exhibit the kind of spacing or morphology that would be expected for repeated scratching by animal claws, and their position well above the cave floor would not lend itself naturally to scratching in that location. Further, there is no evidence of carnivore presence within the subsystem: no carnivore remains, no evidence of carnivore burrowing activity, no coprolites, and no bones with tooth marks attributable to carnivores (Dirks et al., 2015; Dirks et al., 2017).
 
 Another possible objection is that the engravings may be of comparatively recent origin, potentially made by modern cavers or other H. sapiens groups in Holocene or Late Pleistocene times (Herries, 2023; Petraglia et al., 2023; Martinón-Torres et al., 2024; Pettitt and Wood, 2024). This idea has two parts: one concerns the idea that other species or populations besides H. naledi were active within this subsystem; the other concerns the chronological placement of the markings relative to H. naledi. There is no evidence of any hominin activity in the Dinaledi Subsystem other than H. naledi. No remains attributable to other prehistoric hominin groups occur in this subsystem or any adjacent areas of the cave system, nor is there any other evidence of activity of such groups (Dirks et al., 2015; Dirks et al., 2017). Human cave explorers entered these areas only within the last 40 years, and the number of modern cavers and archaeologists who have entered the Dinaledi Subsystem is extremely limited (Table 1). There is no evidence of modern cavers altering cave walls in such a manner in the Dinaledi Subsystem, or elsewhere in the Rising Star system, and we have detected no evidence of traces of metallic tools in association with the markings. By contrast, abundant remains of H. naledi have been identified within the subsystem, including the Hill Antechamber Feature only 3–4 m away (Berger et al., 2025). Nevertheless, the nature and composition of the tools that made these engravings are an area that can be tested with future work.
+
+**Table 1.**
+ Known humans who have entered the Dinaledi System (In approximate order of entry).
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Neil Ringdahl</td>
+      <td>27</td>
+      <td>Eric Roberts</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Rick Hunter</td>
+      <td>28</td>
+      <td>Maropeng Ramalepa</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Steven Tucker</td>
+      <td>29</td>
+      <td>Elliott Ross</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>John Dickie</td>
+      <td>30</td>
+      <td>Tebogo Makhubela</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Selena Dickie</td>
+      <td>31</td>
+      <td>Mathabela Tsikoane</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Bruce Dickie</td>
+      <td>32</td>
+      <td>Riaan Hugo</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Matthew Dickie</td>
+      <td>33</td>
+      <td>Corey Jaskolski</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Matthew Berger</td>
+      <td>34</td>
+      <td>Kenny Broad</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Megan Berger</td>
+      <td>35</td>
+      <td>Juan Luis Arsuaga</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Marina Elliott</td>
+      <td>36</td>
+      <td>Ignacio Martínez Mendizábal</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Becca Peixotto</td>
+      <td>37</td>
+      <td>Carlos Lorenzo Merino</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Lindsay Eaves Hunter</td>
+      <td>38</td>
+      <td>Rolf Quam</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Hannah Morris</td>
+      <td>39</td>
+      <td>Keneiloe Molopyane</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Elen Feuerriegel</td>
+      <td>40</td>
+      <td>Kerryn Warren</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Alia Gurtov</td>
+      <td>41</td>
+      <td>Angharad Brewer-Gillham</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Christo Saayman</td>
+      <td>42</td>
+      <td>Raymond Messitar-Tooze</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Pieter Theron</td>
+      <td>43</td>
+      <td>Zubair Jinnah</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Andre Doussy</td>
+      <td>44</td>
+      <td>Samuel Nkwe</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Allen Herweg</td>
+      <td>45</td>
+      <td>Warren Smart</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Michael Herweg</td>
+      <td>46</td>
+      <td>Lee Berger</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Rupert Stander</td>
+      <td>47</td>
+      <td>Chris Collingridge</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Lindin Mazilis</td>
+      <td>48</td>
+      <td>Ginika Ramsawak</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Dirk van Rooyen</td>
+      <td>49</td>
+      <td>Sarah Johnson</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Ashley Kruger</td>
+      <td>50</td>
+      <td>Agustín Fuentes</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Zoë Rosen</td>
+      <td>51</td>
+      <td>Hipolito Collado Giraldo</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Garrreth Bird</td>
+      <td>52</td>
+      <td>Sara Garcês</td>
+    </tr>
+  </tbody>
+</table>
 
 It is very challenging to establish the chronological age of engraved markings on rock surfaces (Van, 1968; Butzer et al., 1979; Bednarik, 2002; Bednarik, 2008; Whitley, 2012). Successful use of geochronological methods may occur when some or all of the markings were buried within sediment that can be dated (Rodríguez-Vidal et al., 2014), or when markings were later covered in part by mineral formations that can be dated using radiometric methods (Hoffmann et al., 2016), or when exposure to weathering creates a varnish that can be dated (Dorn and Nobbs, 1992; Dragovich, 2000; Masson, 2006; Pillans and Fifield, 2013). Still, even where geochronological methods are possible, they may provide only a minimum age, which may be thousands of years after the marks were produced. The markings that we have identified within the Dinaledi Subsystem are not overlain by naturally forming sedimentary deposition. Without further excavation of sediments that adjoin cave walls, we cannot say whether additional markings may exist in subsurface contexts. No obvious mineral deposition overlaps the engraved features. Our observations do note that there may be materials added to the surface of the engraved areas, and these may provide an avenue of investigation. The situation as a whole makes it challenging to build alternative lines of evidence about the age of the engravings beyond their spatial proximity to the H. naledi evidence from only a few meters away (Berger et al., 2025).
 

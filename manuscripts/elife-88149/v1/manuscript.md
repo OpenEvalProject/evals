@@ -25,26 +25,26 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Genetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-2. https://ror.org/00hj8s172 Division of Nephrology, Department of Medicine, Columbia University New York United States
-3. https://ror.org/04fzwnh64 Department of Preventive Medicine, Northwestern University Feinberg School of Medicine Chicago United States
-4. https://ror.org/02qp3tb03 Department of Cardiovascular Medicine, Mayo Clinic Rochester United States
-5. https://ror.org/05dq2gs74 Department of Biomedical Informatics, Vanderbilt University Medical Center Nashville United States
-6. https://ror.org/008s83205 Department of Pediatrics, University of Alabama at Birmingham Birmingham United States
-7. https://ror.org/00hj8s172 Departments of Pediatrics and Medicine, Columbia University Irving Medical Center, Columbia University New York United States
-8. https://ror.org/008s83205 Department of Neurology, School of Medicine, University of Alabama at Birmingham Birmingham United States
-9. https://ror.org/01hcyya48 The Center for Autoimmune Genomics and Etiology, Division of Human Genetics, Cincinnati Children's Hospital Medical Center Cincinnati United States
-10. https://ror.org/05dq2gs74 Division of Clinical Pharmacology, Department of Medicine, Vanderbilt University Medical Center Nashville United States
-11. https://ror.org/04fzwnh64 Center for Genetic Medicine, Northwestern University Feinberg School of Medicine Chicago United States
-12. https://ror.org/00hj8s172 Department of Biomedical Informatics, Vagelos College of Physicians & Surgeons, Columbia University New York United States
-13. https://ror.org/04b6nzv94 Division of Rheumatology, Inflammation, and Immunity, Department of Medicine, Brigham and Women's Hospital and Harvard Medical School Boston United States
-14. https://ror.org/00wbzw723 Departments of Medicine (Medical Genetics) and Genome Sciences, University of Washington Medical Center Seattle United States
+1. Department of Genetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Division of Nephrology, Department of Medicine, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Department of Preventive Medicine, Northwestern University Feinberg School of Medicine Chicago United States ([ROR:04fzwnh64](https://ror.org/04fzwnh64))
+4. Department of Cardiovascular Medicine, Mayo Clinic Rochester United States ([ROR:02qp3tb03](https://ror.org/02qp3tb03))
+5. Department of Biomedical Informatics, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+6. Department of Pediatrics, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+7. Departments of Pediatrics and Medicine, Columbia University Irving Medical Center, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+8. Department of Neurology, School of Medicine, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+9. The Center for Autoimmune Genomics and Etiology, Division of Human Genetics, Cincinnati Children's Hospital Medical Center Cincinnati United States ([ROR:01hcyya48](https://ror.org/01hcyya48))
+10. Division of Clinical Pharmacology, Department of Medicine, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+11. Center for Genetic Medicine, Northwestern University Feinberg School of Medicine Chicago United States ([ROR:04fzwnh64](https://ror.org/04fzwnh64))
+12. Department of Biomedical Informatics, Vagelos College of Physicians & Surgeons, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+13. Division of Rheumatology, Inflammation, and Immunity, Department of Medicine, Brigham and Women's Hospital and Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+14. Departments of Medicine (Medical Genetics) and Genome Sciences, University of Washington Medical Center Seattle United States ([ROR:00wbzw723](https://ror.org/00wbzw723))
 
 † Corresponding author
 
 ## Abstract
 
-Apart from ancestry, personal or environmental covariates may contribute to differences in polygenic score (PGS) performance. We analyzed the effects of covariate stratification and interaction on body mass index (BMI) PGS (PGS BMI ) across four cohorts of European (N = 491,111) and African (N = 21,612) ancestry. Stratifying on binary covariates and quintiles for continuous covariates, 18/62 covariates had significant and replicable R 2 differences among strata. Covariates with the largest differences included age, sex, blood lipids, physical activity, and alcohol consumption, with R 2 being nearly double between best- and worst-performing quintiles for certain covariates. Twenty-eight covariates had significant PGS BMI –covariate interaction effects, modifying PGS BMI effects by nearly 20% per standard deviation change. We observed overlap between covariates that had significant R 2 differences among strata and interaction effects – across all covariates, their main effects on BMI were correlated with their maximum R 2 differences and interaction effects (0.56 and 0.58, respectively), suggesting high-PGS BMI individuals have highest R 2 and increase in PGS effect. Using quantile regression, we show the effect of PGS BMI increases as BMI itself increases, and that these differences in effects are directly related to differences in R 2 when stratifying by different covariates. Given significant and replicable evidence for context-specific PGS BMI performance and effects, we investigated ways to increase model performance taking into account nonlinear effects. Machine learning models (neural networks) increased relative model R 2 (mean 23%) across datasets. Finally, creating PGS BMI directly from GxAge genome-wide association studies effects increased relative R 2 by 7.8%. These results demonstrate that certain covariates, especially those most associated with BMI, significantly affect both PGS BMI performance and effects across diverse cohorts and ancestries, and we provide avenues to improve model performance that consider these effects.
+Apart from ancestry, personal or environmental covariates may contribute to differences in polygenic score (PGS) performance. We analyzed the effects of covariate stratification and interaction on body mass index (BMI) PGS (PGSBMI) across four cohorts of European (N = 491,111) and African (N = 21,612) ancestry. Stratifying on binary covariates and quintiles for continuous covariates, 18/62 covariates had significant and replicable R2 differences among strata. Covariates with the largest differences included age, sex, blood lipids, physical activity, and alcohol consumption, with R2 being nearly double between best- and worst-performing quintiles for certain covariates. Twenty-eight covariates had significant PGSBMI–covariate interaction effects, modifying PGSBMI effects by nearly 20% per standard deviation change. We observed overlap between covariates that had significant R2 differences among strata and interaction effects – across all covariates, their main effects on BMI were correlated with their maximum R2 differences and interaction effects (0.56 and 0.58, respectively), suggesting high-PGSBMI individuals have highest R2 and increase in PGS effect. Using quantile regression, we show the effect of PGSBMI increases as BMI itself increases, and that these differences in effects are directly related to differences in R2 when stratifying by different covariates. Given significant and replicable evidence for context-specific PGSBMI performance and effects, we investigated ways to increase model performance taking into account nonlinear effects. Machine learning models (neural networks) increased relative model R2 (mean 23%) across datasets. Finally, creating PGSBMI directly from GxAge genome-wide association studies effects increased relative R2 by 7.8%. These results demonstrate that certain covariates, especially those most associated with BMI, significantly affect both PGSBMI performance and effects across diverse cohorts and ancestries, and we provide avenues to improve model performance that consider these effects.
 
 ## Introduction
 
@@ -58,57 +58,305 @@ Using genetic data with linked-phenotypic information from electronic health rec
 
 ## Results
 
-## Effect of covariate stratification on PGSBMI performance
+### Effect of covariate stratification on PGSBMI performance
 
 We assessed 62 covariates for PGSBMI R2 differences (25 present, or suitable proxies, in multiple datasets Supplementary file 1b) after stratifying on binary covariates and quintiles for continuous covariates. With UKBB EUR as discovery (N = 376,729), 18 covariates had significant differences (Bonferroni p<0.05/62) in R2 among groups (Figure 2a), including age, sex, alcohol consumption, different physical activity measurements, Townsend deprivation index, different dietary measurements, lipids, blood pressure, and HbA1c, with 40 covariates having suggestive (p<0.05) evidence of R2 differences. From an original PGSBMI R2 of 0.076, R2 increased to 0.094–0.088 for those in the bottom physical activity, alcohol intake, and high-density lipoprotein (HDL) cholesterol quintiles, and decreased to 0.067–0.049 for those in the top quintile, respectively, comparable to differences observed between ancestries (Martin et al., 2019). We note that the differences in R2 due to alcohol intake and HDL were larger than those of any physical activity phenotype, despite physical activity having one of the oldest and most replicable evidence of interaction with genetic effects of BMI (Kilpeläinen et al., 2011; Rampersaud et al., 2008). Despite considerable published evidence suggesting covariate-specific genetic effects between BMI and smoking behaviors (Robinson et al., 2017; Justice et al., 2017), we were only able to find suggestive evidence for R2 differences when stratifying individuals across several smoking phenotypes (minimum p=0.016, for smoking pack years). R2 differences due to educational attainment were also only suggestive (p=0.015), with published evidence on this association being conflicting (Amin et al., 2018; Li et al., 2021; Frank et al., 2019).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig2-v1.jpg)
 
-**Figure 2.:** 2 stratified by quintiles for quantitative variables and by binary variables.(a) Continuous covariates with significant (p<8.1 × 10–4) R2 differences across quintiles in UK Biobank (UKBB) European ancestry (EUR). Pork and processed meat consumption per week were excluded from this plot in favor of pork and processed meat intake. (b) Covariates with significant differences that were available in multiple cohorts. When traits had the same or directly comparable units between cohorts we show the actual trait values (and show percentiles for physical activity, alcohol intake frequency, and socioeconomic status, which had slightly differing phenotype definitions across cohorts) plotted on x-axis. Townsend index and income were used as variables for socioeconomic status in UKBB and Genetic Epidemiology Research on Adult Health and Aging (GERA), respectively. Note that the sign for Townsend index was reversed, since increasing Townsend index is lower socioeconomic status, while increasing income is higher socioeconomic status. PA, physical activity (PA); IPAQ, International Physical Activity Questionnaire.
+**Figure 2.:** (a) Continuous covariates with significant (p<8.1 × 10–4) R2 differences across quintiles in UK Biobank (UKBB) European ancestry (EUR). Pork and processed meat consumption per week were excluded from this plot in favor of pork and processed meat intake. (b) Covariates with significant differences that were available in multiple cohorts. When traits had the same or directly comparable units between cohorts we show the actual trait values (and show percentiles for physical activity, alcohol intake frequency, and socioeconomic status, which had slightly differing phenotype definitions across cohorts) plotted on x-axis. Townsend index and income were used as variables for socioeconomic status in UKBB and Genetic Epidemiology Research on Adult Health and Aging (GERA), respectively. Note that the sign for Townsend index was reversed, since increasing Townsend index is lower socioeconomic status, while increasing income is higher socioeconomic status. PA, physical activity (PA); IPAQ, International Physical Activity Questionnaire.
 
 We replicated these analyses in three additional large-scale cohorts of European and African ancestry individuals (Figure 2b, Supplementary file 1c), as well as in African ancestry UKBB individuals. Among covariates with significant performance differences in the discovery analysis, we were able to replicate significant (p<0.05) R2 differences for age, HDL cholesterol, alcohol intake frequency, physical activity, and HbA1c, despite much smaller sample sizes. We again observed mostly insignificant differences across cohorts and ancestries when stratifying due to different smoking phenotypes and educational attainment. For each covariate and ancestry combination, we combined data across cohorts and conducted a linear regression weighted by sample size, regressing R2 values on covariate values across groupings. Slopes of the regressions across cohorts had different signs between ancestries for the same covariate (triglyceride levels, HbA1c, diastolic blood pressure, and sex), although larger sample sizes may be needed to confirm these differences are statistically significant.
 
 Several observations related to age-specific effects on PGSBMI we considered noteworthy. First, in the weighted linear regression of all R2 values across ancestries, expected R2 for African ancestry individuals can become greater than that of European ancestry individuals among individuals within bottom and top age quintiles observed in these data. For instance, the predicted R2 of 0.048 for 80-year-old European ancestry individuals would be lower than that of African ancestry individuals aged 24.7 and lower, indicating that differences in covariates can affect PGSBMI performance more than differences due to ancestry. Second, we obtained these results despite the average age of GWAS individuals being 57.8, which should increase PGSBMI R2 for individuals closest to this age (Mostafavi et al., 2020). This result suggests that PGS performance due to decreased heritability with age cannot be fully reconciled using GWAS from individuals of similar age being used to create PGSBMI (as heritability is an upper bound on PGS performance). Finally, we observed that PGSBMI R2 increases as age decreases, consistent with published evidence suggesting that the heritability of BMI decreases with age (Ge et al., 2017; Min et al., 2013).
 
-## PGS–covariate interaction effects
+### PGS–covariate interaction effects
 
 Next, we estimated the differences in PGS effects due to interactions with covariates by modeling interaction terms between PGSBMI and the covariate for each covariate in our list (described in ‘Materials and methods’). We implemented a correction for shared heritability between covariates of interest and outcome (which can inflate test statistics Aschard et al., 2015) to better measure the environmental component of each covariate, and show that this correction successfully reduces significance of interaction estimates (Figure 3—figure supplement 1). Again, using UKBB EUR as the discovery cohort, we observed 28 covariates with significant (Bonferroni p<0.05/62) PGS–covariate interactions (Table 1), with 38 having suggestive (p<0.05) evidence (Supplementary file 1d). We observed the largest effect of PGS–covariate interaction with alcohol drinking frequency (20.0% decrease in PGS effect per 1 standard deviation [SD] increase, p=2.62 × 10–55), with large effects for different physical activity measures (9.4–12.5% decrease/SD, minimum p=3.11 × 10–66), HDL cholesterol (15.3% decrease/SD, p=1.71 × 10–96), and total cholesterol (12.7% decrease/SD, p=1.64 × 10–71). We observed significant interactions with diastolic blood pressure (10.8% increase/SD, p=6.06 × 10–60), but interactions with systolic blood pressure were much smaller (1.17% increase/SD, p=4.41 × 10–3). Significant interactions with HbA1c (4.63% increase/SD, p=5.37 × 10–14) and type 2 diabetes (27.2% PGS effect increase in cases, p=1.83 × 10–7) were also observed. Other significant PGS–covariate interactions included lung function, age, sex, and LDL cholesterol – various dietary measurements also had significant interactions, albeit with smaller effects than other significant covariates. We were able to find significant interaction effects for smoking pack years (4.78% increase/SD, p=3.68 × 10–7), but other smoking phenotypes had insignificant interaction effects after correcting for multiple tests (minimum p=2.7 × 10–3); interactions with educational attainment were also insignificant (p=4.54 × 10–2).
 
+**Table 1.**
+ Model descriptive statistics on 28 of 62 covariates, which have significant (p<0.05/62) polygenic score (PGS)–covariate interaction terms, in UK Biobank (UKBB) European ancestry (EUR).The third column is the percentage change in PGS effect per unit change (standard deviations for continuous variables, binary variables encoded as 0 or 1) in covariate. The fifth column is the increase in model R2 with a PGS–covariate interaction term versus a main effects only model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable type</th>
+      <th>Covariate</th>
+      <th>% change in βPGS per covariate unit change</th>
+      <th colspan="2">Interaction p</th>
+      <th>R2 increase with interaction term</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="24">Continuous</td>
+      <td>HDL cholesterol</td>
+      <td>–15.29</td>
+      <td>1.71 × 10–96</td>
+      <td colspan="2">0.0012</td>
+      <td>328,719</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol</td>
+      <td>–12.70</td>
+      <td>1.64 × 10–71</td>
+      <td colspan="2">0.00082</td>
+      <td>359,221</td>
+    </tr>
+    <tr>
+      <td>IPAQ</td>
+      <td>–12.50</td>
+      <td>3.11 × 10–66</td>
+      <td colspan="2">0.001</td>
+      <td>304,951</td>
+    </tr>
+    <tr>
+      <td>Moderate-vigorous PA</td>
+      <td>–11.41</td>
+      <td>8.92 × 10–65</td>
+      <td colspan="2">0.001</td>
+      <td>304,951</td>
+    </tr>
+    <tr>
+      <td>Diastolic BP</td>
+      <td>10.84</td>
+      <td>6.06 × 10–60</td>
+      <td colspan="2">0.0007</td>
+      <td>352,804</td>
+    </tr>
+    <tr>
+      <td>Townsend Index</td>
+      <td>6.78</td>
+      <td>2.86 × 10–58</td>
+      <td colspan="2">0.00089</td>
+      <td>376,283</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–9.02</td>
+      <td>3.60 × 10–57</td>
+      <td colspan="2">0.00061</td>
+      <td>376,729</td>
+    </tr>
+    <tr>
+      <td>FVC</td>
+      <td>–9.66</td>
+      <td>4.69 × 10–56</td>
+      <td colspan="2">0.0008</td>
+      <td>343,467</td>
+    </tr>
+    <tr>
+      <td>Drink frequency/week</td>
+      <td>–19.96</td>
+      <td>2.62 × 10–55</td>
+      <td colspan="2">0.0024</td>
+      <td>122,281</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol</td>
+      <td>–9.86</td>
+      <td>2.63 × 10–51</td>
+      <td colspan="2">0.00058</td>
+      <td>358,556</td>
+    </tr>
+    <tr>
+      <td>N days vigorous PA/week</td>
+      <td>–9.37</td>
+      <td>2.42 × 10–35</td>
+      <td colspan="2">0.0007</td>
+      <td>299,963</td>
+    </tr>
+    <tr>
+      <td>FEV1</td>
+      <td>–7.38</td>
+      <td>7.15 × 10–35</td>
+      <td colspan="2">0.0005</td>
+      <td>343,544</td>
+    </tr>
+    <tr>
+      <td>Mean alcohol consumption</td>
+      <td>–7.38</td>
+      <td>7.65 × 10–22</td>
+      <td colspan="2">0.00113</td>
+      <td>126,756</td>
+    </tr>
+    <tr>
+      <td>HbA1c</td>
+      <td>4.63</td>
+      <td>5.37 × 10–14</td>
+      <td colspan="2">0.0002</td>
+      <td>358,798</td>
+    </tr>
+    <tr>
+      <td>Mean drinks/week</td>
+      <td>–7.66</td>
+      <td>1.01 × 10–13</td>
+      <td colspan="2">0.0008</td>
+      <td>112,204</td>
+    </tr>
+    <tr>
+      <td>Water intake</td>
+      <td>4.60</td>
+      <td>2.97 × 10–13</td>
+      <td colspan="2">0.00014</td>
+      <td>347,472</td>
+    </tr>
+    <tr>
+      <td>Processed meat intake</td>
+      <td>3.70</td>
+      <td>2.38 × 10–7</td>
+      <td colspan="2">0.0002</td>
+      <td>376,205</td>
+    </tr>
+    <tr>
+      <td>Starch mean</td>
+      <td>5.51</td>
+      <td>3.15 × 10–7</td>
+      <td colspan="2">0.00018</td>
+      <td>128,346</td>
+    </tr>
+    <tr>
+      <td>Smoking pack years</td>
+      <td>4.78</td>
+      <td>3.68 × 10–7</td>
+      <td colspan="2">0.0002</td>
+      <td>114,135</td>
+    </tr>
+    <tr>
+      <td>Protein mean</td>
+      <td>4.82</td>
+      <td>6.52 × 10–7</td>
+      <td colspan="2">0.00018</td>
+      <td>128,181</td>
+    </tr>
+    <tr>
+      <td>Saturated fat mean</td>
+      <td>4.92</td>
+      <td>1.23 × 10–6</td>
+      <td colspan="2">0.00017</td>
+      <td>127,899</td>
+    </tr>
+    <tr>
+      <td>Fat mean</td>
+      <td>4.40</td>
+      <td>1.64 × 10–5</td>
+      <td colspan="2">0.00013</td>
+      <td>128,092</td>
+    </tr>
+    <tr>
+      <td>Saturated fat grams/week</td>
+      <td>2.46</td>
+      <td>1.79 × 10–5</td>
+      <td colspan="2">4.00 × 10-5</td>
+      <td>364,629</td>
+    </tr>
+    <tr>
+      <td>Retinol mean</td>
+      <td>3.77</td>
+      <td>3.54 × 10–4</td>
+      <td colspan="2">9.00 × 10-5</td>
+      <td>126,029</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Binary</td>
+      <td>IPAQ</td>
+      <td>–12.68</td>
+      <td>5.30 × 10–62</td>
+      <td colspan="2">0.0009</td>
+      <td>304,951</td>
+    </tr>
+    <tr>
+      <td>Vigorous PA/week</td>
+      <td>–20.55</td>
+      <td>9.07 × 10–54</td>
+      <td colspan="2">0.0009</td>
+      <td>304,951</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>–11.02</td>
+      <td>1.41 × 10–24</td>
+      <td colspan="2">0.00025</td>
+      <td>376,729</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>27.19</td>
+      <td>1.83 × 10–7</td>
+      <td colspan="2">0.0004</td>
+      <td>375,903</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_BP = blood pressure, PA = physical activity, FVC = forced vital capacity, FEV1 = forced expiratory volume in 1 s, HDL = high-density lipoprotein, LDL = high-density lipoprotein, IPAQ = International Physical Activity Questionnaire._
+
 We replicated these analyses across ancestries and the other non-UKBB EUR cohorts (Figure 3, Supplementary file 1d). For age and sex, which were available for all cohorts, interactions were significant (p<0.05) and directionally consistent across cohorts and ancestries (except for GERA AFR, which had small sample size [N = 1,789]). We were able to test interactions with alcohol intake frequency and physical activity in GERA, and replicated significant and directionally consistent associations. We observed poor replication for LDL cholesterol, HbA1c, and smoking pack years, with insignificant and directionally inconsistent interaction effects across cohorts. Educational attainment was available in GERA, and interactions were once again insignificant. We observed significant and directionally consistent interaction effects for TG in eMERGE EUR and PMBB EUR, while the effect was inconsistent in UKBB EUR despite much larger sample size.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig3-v1.jpg)
+
+**Figure 3.:** Same covariate groupings and transformations were performed as in Figure 1. Similarly, actual values were used when variables had comparable units across cohorts, and standard deviations (SD) used otherwise.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Note age and sex PGS were not calculated, and their interaction p-values are excluded from this figure.
 
 However, despite significance of interaction terms, increases in model R2 when including PGS–covariate interaction terms were small. For instance, the maximum increase among all covariates in UKBB EUR was only 0.0024 from a base R2 of 0.1049 (2.1% relative increase), for alcoholic drinks per week. Across all cohorts and ancestries, the maximum increase in R2 was only 0.0058 from a base R2 of 0.09454 (6.1% relative increase), when adding a PGS–age interaction term for eMERGE EUR (p=5.40 × 10–46) – this was also the largest relative increase among models with significant interaction terms. This result suggests that, while interaction effects can significantly modify PGSBMI effect, their overall impact on model performance is relatively small, despite large differences in R2 when stratifying by covariates.
 
-## Correlations between R2 differences, interaction effects, and main effects
+### Correlations between R2 differences, interaction effects, and main effects
 
 We next investigated the relationship between interaction effects, maximum R2 differences across quintiles, and main effects of covariates on BMI. We first estimated the main effects of each covariate on BMI (‘Materials and methods’, Supplementary file 1e), and then calculated the correlation weighted by sample size between main effects, maximum PGSBMI R2 across quintiles, and PGS–covariate interaction effects (Figure 4) across all cohorts and ancestries – GERA data were excluded from these analyses due to slightly different phenotype definition (Supplementary file 1f), as were binary variables. Interaction effects and maximum R2 differences had a 0.80 correlation (p=2.1 × 10–27), indicating that variables with larger interaction effects also had larger effects on PGSBMI performance across quintiles, and that covariates that increase PGSBMI effect also have the largest effect on PGSBMI performance, that is, individuals most at risk for obesity will have both disproportionately larger PGSBMI effect and R2. Main effects and maximum R2 differences had a 0.56 correlation (p=1.3 × 10–11), while main effects and interaction effects had a 0.58 correlation (p=7.6 × 10–12), again suggesting that PGSBMI are more predictive in individuals with higher values of BMI-associated covariates, although less predictive than estimating the interaction effects themselves directly. However, this result demonstrates that covariates that influence both PGSBMI effect and performance can be predicted just using main effects of covariates, which are often known for certain phenotypes and easier to calculate, as genetic data and PGS construction would not be required.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig4-v1.jpg)
 
-**Figure 4.:** 2 differences across strata, main effects of covariate on log(BMI), and polygenic score (PGS)–covariate interaction effects on log(BMI).Main effect units are in standard deviations, interaction effect units are in PGS standard deviations multiplied by covariate standard deviations. Only continuous variables are plotted and modeled. Genetic Epidemiology Research on Adult Health and Aging (GERA) was excluded due to slightly different phenotype definitions. BMI, body mass index.
+**Figure 4.:** Main effect units are in standard deviations, interaction effect units are in PGS standard deviations multiplied by covariate standard deviations. Only continuous variables are plotted and modeled. Genetic Epidemiology Research on Adult Health and Aging (GERA) was excluded due to slightly different phenotype definitions. BMI, body mass index.
 
-## Increase in PGS effect for increasing percentiles of BMI itself, and its relation to R2 differences when stratifying by covariates
+### Increase in PGS effect for increasing percentiles of BMI itself, and its relation to R2 differences when stratifying by covariates
 
 Given large and replicable correlations between main effects, interaction effects, and maximum R2 differences for individual covariates, it seemed these differences may be due to the differences in BMI itself, rather than any individual or combination of covariates. To assess this, we used quantile regression to evaluate the effect of PGSBMI on BMI at different deciles of BMI itself. We observed that the effect of PGSBMI consistently increases from lower deciles to higher deciles across all cohorts and ancestries (Figure 5) – for instance, in European ancestry UKBB individuals, the effect of PGSBMI (in units of log(BMI)) when predicting the bottom decile of log(BMI) was 0.716 (95% CI: 0.701–0.732), and increased to 1.31 (95% CI: 1.29–1.33) in the top decile. Across all cohorts and ancestries, the effect of PGSBMI between lowest and highest effect decile ranged from 1.43 to 2.06 times larger, with all cohorts and ancestries having nonoverlapping 95% confidence intervals between their effects (except for African ancestry eMERGE individuals, which had much smaller sample size).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig5-v1.jpg)
+
+**Figure 5.:** Tau is an input parameter for quantile regression corresponding to the percentile of the BMI distribution being modeled, with lower tau values representing the lower deciles (e.g., tau = 0.1 for the 10th percentile) and higher tau values representing the upper deciles (e.g., tau = 0.9 for the 90th percentile). The effect of PGSBMI increases as BMI itself increases, suggesting that no individual covariate–PGS interaction is responsible for the nonlinear effect of PGSBMI. PGS, polygenic score; BMI, body mass index.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Residuals were sampled from a normal distribution (mean = 0, sigma = sqrt(π/2)) to give mean squared error = 1. 5,000 x-values were sampled for each line, uniformly distributed from 0 to 10. Despite having the same mean squared error, model R2 increases as beta increases.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** R2 is higher in younger individuals, which is partially a consequence of the larger effect (as shown in Figure 5—figure supplement 1), despite the mean squared error actually being higher.
+
 While this analysis showed that the effect of PGSBMI increases as BMI itself increases, which may help explain significant interaction effects between PGSBMI and different covariates, it does not directly explain differences in R2 when stratifying by different covariates – we describe several points that help explain this result and suggest they may actually be closely related. Essentially, as the magnitude of the slope of a regression line increases while the mean squared residual does not increase, model R2 will increase – we demonstrate this using simulated data (Figure 5—figure supplement 1). As the magnitude of the regression line’s slope decreases, the regression line becomes a comparatively worse predictor compared to just using the mean, which decreases R2 despite the mean error being the same across models. To demonstrate this in real data, we compared simple univariable models of log(BMI)~PGSBMI (in units of log(BMI)) between the bottom and top age quintiles in the European ancestry UKBB (Figure 5—figure supplement 2). As shown in previous sections, R2 and PGSBMI beta are higher in younger individuals (R2 = 0.088 versus R2 = 0.066, and beta = 1.12 and 0.87, respectively), which seem to be a direct consequence of one another, as the mean squared error in younger individuals is actually higher (0.027 versus 0.022, respectively). This description suggests that the use of R2 as the sole performance metric for evaluation of PGS may not always be appropriate, despite its overwhelming usage. Furthermore, this explanation helps explain the seemingly paradoxical results of significant interaction terms yet small increases in overall model R2 and comparably much larger differences in R2 in the stratified analyses.
 
-## Effects of machine learning approaches on predictive performance
+### Effects of machine learning approaches on predictive performance
 
 Given evidence of PGS–covariate dependence, we aimed to assess increases in R2 when using machine learning models (neural networks), which can inherently model interactions and other nonlinearities, over linear models even with interaction terms. We first included age and sex as the only covariates (along with genotype PCs and PGSBMI), as age and sex were present in all datasets and had significant and replicable evidence for PGS-dependence across our analyses. Three models were assessed – L1-regularized (i.e., LASSO) linear regression without any interaction terms, LASSO including a PGS–age and PGS–sex interaction term, and neural networks (without interaction terms). When comparing neural networks to LASSO with interaction terms, the relative tenfold cross-validated R2 increased up to 67% (mean 23%) across cohorts and ancestries (Figure 6, Supplementary file 1g). The inclusion of interaction terms increased cross-validated R2 up to 12% (mean 3.9%) when comparing LASSO including interaction terms to LASSO with main effects only.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig6-v1.jpg)
 
-**Figure 6.:** 2 from different machine learning models across cohorts and ancestries using age and gender as covariates (along with PGSBMI and PCs 1–5).Across all cohorts and ancestries, LASSO with PGS–age and PGS–gender interaction terms had better average tenfold cross-validation R2 than LASSO without interaction terms, while neural networks outperformed LASSO models. PGS, polygenic score; BMI, body mass index.
+**Figure 6.:** Across all cohorts and ancestries, LASSO with PGS–age and PGS–gender interaction terms had better average tenfold cross-validation R2 than LASSO without interaction terms, while neural networks outperformed LASSO models. PGS, polygenic score; BMI, body mass index.
 
 We then modeled all available covariates and their interactions with PGS for each cohort and did similar comparisons. Cross-validated R2 increased by up to 17.6% (mean 9.5%) when using neural networks versus LASSO with interaction terms, and up to 7.0% (mean 2.0%) when comparing LASSO with interaction terms to LASSO with main effects only. Increases in model performance using neural networks were smaller in UKBB, perhaps due to the age range being smaller than other cohorts (all participants aged 39–73). This result suggests that additional variance explained through nonlinear effects with age and sex are explained by other variables present in the remainder of the datasets. Our findings show machine learning methods can improve model R2 that include PGSBMI as variables beyond including interaction terms in linear models, even when variable selection is performed using LASSO, demonstrating that model performance can be increased beyond modeling nonlinearities through linear interaction terms and a feature selection procedure.
 
-## Calculating PGS directly from GxAge GWAS effects
+### Calculating PGS directly from GxAge GWAS effects
 
 Previous studies Mostafavi et al., 2020 have created PGS using GWAS stratified by different personal-level covariates, but for practical purposes this leads to a large loss of power as the full size of the GWAS is not utilized for each strata and continuous variables are forced into bins. We developed a novel strategy where PGS are instead created from a full-size GWAS that includes SNP–covariate interaction terms (‘Materials and methods’). We focused on age interactions, given their large and replicable effects based on our results – similar to a previous study (Mostafavi et al., 2020), we conducted these analyses in the European UKBB. We used a 60% random split of study individuals to conduct three sets of PGS using GWAS of the following designs: main effects only, main effects also with an SNP–age interaction term, and main effects but stratified into quartiles by age. Twenty percent of the remaining data were used for training and the final 20% were held out as a test set. The best-performing PGS created from SNP–age interaction terms (PGSGxAge) increased test R2 to 0.0771 (95% bootstrap CI: 0.0770–0.0772) from 0.0715 (95% bootstrap CI: 0.0714–0.0716), a 7.8% relative increase compared to the best-performing main effect PGS (Figure 7, Supplementary file 1h) – age-stratified PGS had much lower performance than both other strategies (unsurprising given reasons previously mentioned). Including a PGSGxAge–age interaction term only marginally increased R2 (0.0001 increase), with similar increases for the other two sets of PGS, further demonstrating that post hoc modeling of interactions cannot reconcile performance gained through directly incorporating interaction effects from the original GWAS. The strategy of creating PGS directly from full-sized SNP–covariate interactions is potentially quite useful as it increases PGS performance without the need for additional data – there are almost certainly a variety of points of improvement (described more in ‘Discussion’), but we consider their investigation outside the scope of this study.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88149/elife-88149-fig7-v1.jpg)
 
-**Figure 7.:** 2 based on three sets of genome-wide association studies (GWAS) setups.‘Main effects’ were from a typical main effect GWAS, ‘GxAge’ effects were from a GWAS with an SNP–age interaction term, and ‘Age stratified’ GWAS had main effects only but were conducted in four age quartiles. PGS R2 was evaluated using two models: one with main effects only and one with an additional PGS * Age interaction term.
+**Figure 7.:** ‘Main effects’ were from a typical main effect GWAS, ‘GxAge’ effects were from a GWAS with an SNP–age interaction term, and ‘Age stratified’ GWAS had main effects only but were conducted in four age quartiles. PGS R2 was evaluated using two models: one with main effects only and one with an additional PGS * Age interaction term.
 
 ## Discussion
 
@@ -124,77 +372,103 @@ PGS is a promising technique to stratify individuals for their risk of common, c
 
 ## Materials and methods
 
-## Study datasets
+### Study datasets
 
 Individual inclusion criteria and sample sizes per cohort are described below – additional information is available in Supplementary file 1a.
 
-## UKBB
+### UKBB
 
 Individual-level quality control (QC) and filtering have been described elsewhere (Zhang et al., 2022) for European ancestry individuals. Briefly, individuals were split by ancestry according to both genetically inferred ancestry and self-reported ethnicity (Bycroft et al., 2018). Individuals with low genotyping quality and sex mismatch were removed, only unrelated individuals (Plink pi-hat < 0.250) were retained, and variants were filtered at INFO > 0.30 and minor allele frequency > 0.01. For African ancestry, individuals were first selected based on self-reported ethnicity ‘Black or Black British’, ‘Caribbean’, ‘African’, or ‘Any other Black background’. Individuals who were low quality, that is, ‘Outliers for heterozygosity or missing rate’, and who were Caucasian from ‘Genetic ethnic grouping’ were removed. Of these individuals, those who were ±6 standard deviations from the mean of the first five genetic principal components provided by UKBB were excluded. Finally, only unrelated individuals were retained up to the second degree using plink2 (Chang et al., 2015) ‘-king-cutoff 0.125’. After QC and consideration of phenotype, a total of 7,046 individuals in the UKBB AFR data who also had BMI available were used for downstream analyses. In total, 383,775 individuals were used for analysis (NEUR = 376,729, NAFR = 7,046).
 
-## eMERGE
+### eMERGE
 
 Ancestry and relatedness inference have been described elsewhere (Stanaway et al., 2019). Individuals were split into European and African ancestry cohorts, and related individuals were removed (Plink pi-hat > 0.250) such that all were unrelated. In total, 35,064 individuals (NEUR = 31,961, NAFR = 3,103) were used for analysis.
 
-## GERA
+### GERA
 
 Ancestry inference has been described elsewhere (Banda et al., 2015), and study individuals were divided into European and African ancestry cohorts. Related individuals were removed using plink2 ‘-king-cutoff 0.125’. In total, 57,838 individuals (NEUR = 56,049, NAFR = 1,789) were used for analysis.
 
-## PMBB
+### PMBB
 
 Ancestry inference and relatedness inference have been described elsewhere (Penn Medicine BioBank, 2022). Individuals were split into European and African ancestry cohorts, and related individuals were removed at pi-hat > 0.250. In total, 36,046 individuals (NEUR = 26,372, NAFR = 9,674) were used for analysis.
 
-## Choice of covariates
+### Choice of covariates
 
 A total of 62 covariates were included in the analyses, 25 of which were present (or similar proxies) in multiple datasets. These covariates were selected based on relevance to cardiometabolic health and obesity, and previous evidence of context-specific effects with BMI (Rask-Andersen et al., 2017; Robinson et al., 2017; Justice et al., 2017; Tyrrell et al., 2017; Young et al., 2016; Winkler et al., 2015). For UKBB, phenotype values were used from the collection that was closest to recruitment, and for PMBB the median values were used – for GERA and eMERGE, only one value was available. Additional details on covariate constructions, transformations, filtering, and cohort availability are provided in Supplementary file 1b.
 
-## PGS construction
+### PGS construction
 
 PGS for BMI (PGSBMI) were constructed using PRS-CSx (Ruan et al., 2022), using GWAS summary statistics for individuals of European (Locke et al., 2015), African (Ng et al., 2017), and East Asian (Sakaue et al., 2021) ancestry that were out-of-sample of study participants. A set of 1.29 million HapMap3 SNPs provided by PRS-CSx was used for PGS calculation, which are generally well-imputed and variable frequency across global populations. Default settings for PRS-CSx (downloaded November 22, 2021) were used, which have been demonstrated to perform well for highly polygenic traits such as BMI (list of parameters is provided in Supplementary file 1i). The final PGSBMI per ancestry and cohort was calculated by regressing log(BMI) on the PGSBMI per ancestry without covariates – the combined, predicted value was used as a single PGSBMI in downstream analyses.
 
 For GERA, BMI was not transformed as it was already binned into a categorical variable with five levels (18≤, 19–25, 26–29, 30–39, >40). Additionally, for GERA the uncombined ancestry-specific PGSBMI was used in the final models as it had higher R2 than using the combined PGSBMI (data not shown).
 
-## PGSBMI performance after covariate stratification
+### PGSBMI performance after covariate stratification
 
-Analyses were performed separately for each cohort and ancestry. For each covariate, individuals were binned by binary covariates or quintiles for continuous covariates. Incremental PGSBMI R2 was calculated by taking the difference in R2 between:log(BMI)∼PGSBMI+Age+Sex+PCs1−5log(BMI)∼Age+Sex+PCs1−5
+Analyses were performed separately for each cohort and ancestry. For each covariate, individuals were binned by binary covariates or quintiles for continuous covariates. Incremental PGSBMI R2 was calculated by taking the difference in R2 between:
+
+$$
+log(BMI)∼PGS_{BMI}+Age+Sex+PCs_{1−5}
+$$
+
+
+
+$$
+log(BMI)∼Age+Sex+PCs_{1−5}
+$$
 
 We performed 5,000 bootstrap replications to obtain a bootstrapped distribution of R2. p-Values for differences in R2 were calculated between groups by calculating the proportion of overlap between two normal distributions of the R2 value using the standard deviations of the bootstrap distributions. Again for GERA, BMI was not transformed.
 
-## PGSBMI interaction modeling
+### PGSBMI interaction modeling
 
-Evidence for interaction with each covariate with the PGSBMI was evaluated using linear regression. It has been reported that the inclusion of covariates that are genetically correlated with the outcome can inflate test statistic estimates (Aschard et al., 2015; Kerin and Marchini, 2020; Vanderweele et al., 2013). To assuage these concerns, we introduced a novel correction, where we first calculated a PGS for the covariate (PGSCovariate) and included it in the model, as well as an interaction term between PGSBMI and PGSCovariate. The PGSCovariate terms were calculated using the European ancestry Neale Lab summary statistics (URLs) and PRS-CS (Ge et al., 2019). To standardize effect sizes across analyses, PGSBMI and Covariate were first converted to mean zero and standard deviation of 1 (binary covariates were not standardized). We demonstrate inclusion of PGSCovariate terms successfully reduced significance of the PGSBMI * Covariate term (Figure 3—figure supplement 1). The final model used to evaluate PGSBMI and Covariate interactions waslog(BMI)∼PGSBMI∗Covariate+PGSBMI+Covariate+PGSCovariate+PGSBMI∗PGSCovariate+Age+Sex+PCs1−5
+Evidence for interaction with each covariate with the PGSBMI was evaluated using linear regression. It has been reported that the inclusion of covariates that are genetically correlated with the outcome can inflate test statistic estimates (Aschard et al., 2015; Kerin and Marchini, 2020; Vanderweele et al., 2013). To assuage these concerns, we introduced a novel correction, where we first calculated a PGS for the covariate (PGSCovariate) and included it in the model, as well as an interaction term between PGSBMI and PGSCovariate. The PGSCovariate terms were calculated using the European ancestry Neale Lab summary statistics (URLs) and PRS-CS (Ge et al., 2019). To standardize effect sizes across analyses, PGSBMI and Covariate were first converted to mean zero and standard deviation of 1 (binary covariates were not standardized). We demonstrate inclusion of PGSCovariate terms successfully reduced significance of the PGSBMI * Covariate term (Figure 3—figure supplement 1). The final model used to evaluate PGSBMI and Covariate interactions was
+
+$$
+log(BMI)∼PGS_{BMI}∗Covariate+PGS_{BMI}+Covariate+PGS_{Covariate}+PGS_{BMI}∗PGS_{Covariate}+Age+Sex+PCs_{1−5}
+$$
 
 We report the effect estimates of the PGSBMI * Covariate term, and differences in model R2 with and without the PGSBMI * Covariate term. Again for GERA, BMI was not transformed.
 
-## Correlation between R2 differences, interaction effects, and main effects
+### Correlation between R2 differences, interaction effects, and main effects
 
-We estimated the main effects of each covariate on BMI with the following model:log(BMI)∼Covariate+Age+Sex+PCs1−5
+We estimated the main effects of each covariate on BMI with the following model:
+
+$$
+log(BMI)∼Covariate+Age+Sex+PCs_{1−5}
+$$
 
 Note that we ran new models with main effects only, instead of using the main effect from the interaction models (as the main effects in the interaction models depend on the interaction terms, and main effects used to create interaction terms are sensitive to centering of variables despite the scale invariance of linear regression itself; Afshartous and Preston, 2011). We then estimated the correlation between main effects, interaction effects, and maximum R2 differences across all cohorts and ancestries weighting by sample size, analyzing quantitative and binary variables separately.
 
-## Quantile regression to measure PGS effect across percentiles of BMI
+### Quantile regression to measure PGS effect across percentiles of BMI
 
 The effect of PGSBMI on BMI at different deciles of BMI was assessed using quantile regression. Tau – the parameter that sets which percentile to be predicted – was set to 0.10,0.20, …,0.90. Models included age, sex, and the top 5 genetic PCs as covariates. Analyses were stratified by ancestry and cohort, and BMI was first log transformed. GERA was excluded from these analyses as a portion of the models failed to run (as BMI values from GERA were already binned, some deciles all had the same BMI value – additionally, difference in effects between bins would be harder to evaluate as BMI within each decile would be more homogeneous).
 
-## Machine learning models
+### Machine learning models
 
 UKBB EUR and GERA EUR models were restricted to 30,000 random individuals for computational reasons – BMI distributions did not differ from the full-sized datasets (Kolmogorov–Smirnov p-values of 0.29 and 0.57, respectively). PGSBMI and top 5 genetic principal components were included as features in all models. Two sets of models were evaluated for each cohort and ancestry: including age and sex as features, and including all available covariates in each cohort as features. Interaction terms between PGS and each covariate were included for models using interaction terms. ‘Ever Smoker’ status was used in favor of ‘Never’ versus ‘Current smoking’ status (if present) as individuals with ‘Never’ versus ‘Current’ status are a subset of those with ‘Ever Smoker’ status. UKBB AFR with all covariates was excluded due to small sample size (N = 53).
 
 Neural networks were used as the model of choice, given their inherent ability to model interactions and other nonlinear dependencies. Prior to modeling, all features were scaled to be between 0 and 1. We used average tenfold cross-validation R2 to evaluate model performance. Separate models were trained using untransformed and log(BMI). L1-regularized linear regression was used with 18 values of lambda (1.0, 5.0 × 10–1, 2.0 × 10–1, 1.0 × 10–1, 5.0 × 10–2, 2.0 × 10–2, …, 1.0 × 10–5, 5.0 × 10–6, 2.0 × 10–6). Models were trained without inclusion of interaction terms (which neural networks can implicitly model) using 1,000 iterations of random search with the following hyperparameter ranges: size of hidden layers [10, 200], learning rate [0.01, 0.0001], type of learning rate [constant, inverse scaling], power t [0.4, 0.6], momentum [0.80, 1.0], batch size [32, 256], and number of hidden layers [1, 2].
 
-## GxAge PGSBMI creation and assessment
+### GxAge PGSBMI creation and assessment
 
 Analyses were conducted in the European UKBB (N = 376,629), as was done in a study on a similar topic (Mostafavi et al., 2020). Three sets of analyses were performed using GWAS conducted in a 60% random split of individuals using the following models (BMI was rank-normal transformed before GWAS):
 
-Using each set of GWAS, PGS was first calculated in a 20% randomly selected training set of the dataset using pruning and thresholding using 10 p-value thresholds (0.50, 0.10, …, 5.0 × 10–5, 1.0 × 10–5) and remaining settings as default in Plink 1.9. For (2), GxAge PGSBMI was calculated using SNPs clumped by their main effect p-values from (1), and additionally incorporating the GxAge interaction effects per SNP. In other words, instead of typical PGS construction asPGSi=β1k1+β2k2+...+βnkn
+Using each set of GWAS, PGS was first calculated in a 20% randomly selected training set of the dataset using pruning and thresholding using 10 p-value thresholds (0.50, 0.10, …, 5.0 × 10–5, 1.0 × 10–5) and remaining settings as default in Plink 1.9. For (2), GxAge PGSBMI was calculated using SNPs clumped by their main effect p-values from (1), and additionally incorporating the GxAge interaction effects per SNP. In other words, instead of typical PGS construction as
 
-For an individual i’s PGS calculation, with main SNP effect β, and n SNPs, PGS incorporating GxAge effects (PGSGxAge) was calculated asPGSGXAge,i=β1k1+βGXAge,1k1Agei+β2k2+βGXAge,2k2Agei...+βnkn+βGXAge,nknAgei
+$$
+PGS_{i}=\beta_{1}k_{1}+\beta_{2}k_{2}+...+\beta_{n}k_{n}
+$$
+
+For an individual i’s PGS calculation, with main SNP effect β, and n SNPs, PGS incorporating GxAge effects (PGSGxAge) was calculated as
+
+$$
+PGS_{GXAge,i}=\beta_{1}k_{1}+\beta_{GXAge,1}k_{1}Age_{i}+\beta_{2}k_{2}+\beta_{GXAge,2}k_{2}Age_{i}...+\beta_{n}k_{n}+\beta_{GXAge,n}k_{n}Age_{i}
+$$
 
 where βGxAge is the GxAge effect for each SNP n and Agei is the age for individual i.
 
 For each of the three analyses, the parameters and models resulting in the best-performing PGS (highest incremental R2, using same main effect covariates as in the three GWAS) from the training set were evaluated in the remaining 20% of the study individuals. For (3), models were first trained within each quartile separately. To maintain sense of scale across quartiles (after rank-normal transformation), R2 between all predicted values and true values was calculated together. For R2 confidence intervals, the training set was bootstrapped and evaluated on the test set 5,000 times.
 
-## URLs
+### URLs
 
 Neale Lab UKBB summary statistics: http://www.nealelab.is/uk-biobank.
 

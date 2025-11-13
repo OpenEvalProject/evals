@@ -25,7 +25,11 @@ For almost a century, researchers have gathered compelling evidence that sexual 
 
 In contrast to the predictions obtained from sexual conflict thinking, another line of theoretical and empirical work suggests that sexual selection can facilitate how populations cope with environmental change (Lorch et al., 2003; Candolin and Heuschele, 2008; Holman and Kokko, 2013; Martínez-Ruiz and Knell, 2017; Martinossi-Allibert et al., 2019; Rowe and Rundle, 2021). This latter school of thought is based on two main assumptions. First, we need to assume that intralocus sexual conflict is rare so that cross-sex genetic correlations of fitness are positive (Rowe and Rundle, 2021). This implies that sexual and natural selection are aligned, meaning that sexual selection favors alleles that also improve fecundity and survival − a process mediated by condition dependence of sexually selected traits (Rowe and Houle, 1997). Such an alignment is expected to manifest in a positive genetic correlation between male and female fitness as long as sexually antagonistic loci are rare and/or have minor fitness effects. Poissant et al., 2010 compiled cross-sex genetic correlations of various trait types and found that correlations are generally large and positive but tend to be lower for fitness components in comparison to morphological, behavioral, and developmental traits. Moreover, there is strong comparative and meta-analytic evidence supporting the idea that the expression of pre- and postcopulatory sexual traits depends on the overall condition of the male (Cotton et al., 2004; Macartney et al., 2019). This means that sexual selection may not only favor the evolution of prominent secondary sexual traits but also traits that confer health and vigor (Jennions et al., 2001), and therefore eventually purges deleterious alleles that are targeted by natural selection.
 
-In contrast to the extensive support for an alignment of sexual and natural selection in many species (Whitlock and Agrawal, 2009; Cally et al., 2019; Rowe and Rundle, 2021), we still know very little on whether the second key assumption for sexual selection to empower evolutionary adaptation is generally fulfilled across a broad range of taxa. Namely, sexual selection enforces natural selection only if it gives rise to stronger net selection (defined as the sum of genome-wide selection against deleterious alleles) on males compared to females. In a landmark synthesis paper, Whitlock and Agrawal, 2009 explored the effect of sex-specific selection on the population’s mutation load, that is the overall reduction of absolute fitness due to deleterious alleles in a population. They expanded the foundational work of Haldane, 1937 by relaxing the assumption of random mating to demonstrate that the mutation load L is expected to beL=2μsfs
+In contrast to the extensive support for an alignment of sexual and natural selection in many species (Whitlock and Agrawal, 2009; Cally et al., 2019; Rowe and Rundle, 2021), we still know very little on whether the second key assumption for sexual selection to empower evolutionary adaptation is generally fulfilled across a broad range of taxa. Namely, sexual selection enforces natural selection only if it gives rise to stronger net selection (defined as the sum of genome-wide selection against deleterious alleles) on males compared to females. In a landmark synthesis paper, Whitlock and Agrawal, 2009 explored the effect of sex-specific selection on the population’s mutation load, that is the overall reduction of absolute fitness due to deleterious alleles in a population. They expanded the foundational work of Haldane, 1937 by relaxing the assumption of random mating to demonstrate that the mutation load L is expected to be
+
+$$
+L=2\mu\frac{s_{f}}{s}
+$$
 
 where μ is the mutation rate from wild type to deleterious alleles and s is the average selection coefficient against deleterious alleles of females (sf) and males. Hence, the mutation load is reduced whenever sf < s, which arises if net selection is stronger on males compared to females. Given that the population’s productivity is typically governed by female fecundity, a population with stronger net selection on males can purge its mutation load and adapt faster to a new environment with a lowered demographic cost and thereby reduce its extinction risk. In other words, females benefit from being part of a gene pool that is purified primarily through stronger selection on males (Whitlock and Agrawal, 2009). It is important to note that this perspective assumes that the vast majority of deleterious alleles have negative fitness effects on both male and female fitness, which implies that sex-limited genes are relatively rare in the genome.
 
@@ -39,7 +43,7 @@ We found that the phenotypic coefficient of variation (CVP) of reproductive succ
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68316/elife-68316-fig1-v1.jpg)
 
-**Figure 1.:** CVP and CVG, respectively) for lifespan and reproductive success.Scatterplots show relationships between CVP and CVG for male (A) and female (B) reproductive success (green) and lifespan (brown). Shaded areas indicate the 95% confidence ellipses.
+**Figure 1.:** Scatterplots show relationships between CVP and CVG for male (A) and female (B) reproductive success (green) and lifespan (brown). Shaded areas indicate the 95% confidence ellipses.
 
 Most importantly, CVP of reproductive success was generally larger in males compared to females, which translated into a male bias in CVG, with sex explaining 7% and 4% of the observed variance, respectively (Table 1; Figure 2A-B and Figure 3). Interestingly, when running a preliminary test, we found that this sex difference could be detected in polygamous but not monogamous species, which manifested in a significant sex by mating system interaction (Table 1 and Supplementary file 1; Figure 3). These findings could be confirmed when analyses were run on a subset including only vertebrate species (Supplementary files 2 and 3). Contrary to the results for reproductive success, we did not observe consistent sex differences in CVP and CVG for lifespan (Table 1; Figure 2C-D). Finally, methodological heterogeneity among primary studies assessed in terms of study type, the estimate of genetic variance VG, and the type of reproductive success metric did not predict CVP and CVG or the observed sex differences (Supplementary files 4–6).
 
@@ -50,6 +54,229 @@ Most importantly, CVP of reproductive success was generally larger in males comp
 ![Figure 3.](https://cdn.elifesciences.org/articles/68316/elife-68316-fig3-v1.jpg)
 
 **Figure 3.:** Plots show posterior distributions for the sex difference of the phenotypic (A–C) and genetic (D–F) coefficient of variation (ΔCVP and ΔCVG, respectively) obtained from phylogenetic general linear mixed-effects models (PGLMMs; see Methods). Positive values indicate a male, negative values a female bias. Density plots contrast fitness components pooled across mating systems (A and D) or compare socially monogamous and polygamous species separately for reproductive success (B and E) and lifespan (C and F).
+
+**Table 1.**
+ Results of phylogenetic general linear mixed-effect models testing for an effect of sex on phenotypic (CVP) and genetic (CVG) coefficient of variation.Results shown for reproductive success (RS) and lifespan (LS) for models ran across mating systems and when ran separately for socially monogamous and polygamous species. Estimates are shown as posterior means with 95% highest posterior density (HPD) intervals, with positive values indicating a male bias. PMCMC is the probability of the posteriors including zero. The variance explained by sex is given as the marginal R2 and the phylogenetic signal is reported as H2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Response</th>
+      <th>Variance component</th>
+      <th colspan="3">Sex effect estimate</th>
+      <th>PMCMC</th>
+      <th colspan="3">Marginal R2</th>
+      <th colspan="3">Phylogenetic H2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Across mating systems</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS</td>
+      <td>CVP</td>
+      <td>0.234</td>
+      <td colspan="2">(0.149 ,0.322)</td>
+      <td>&lt;0.001</td>
+      <td>0.07</td>
+      <td>(0.02,</td>
+      <td>0.12)</td>
+      <td>0.12</td>
+      <td>(0.00,</td>
+      <td>0.32)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CVG</td>
+      <td>0.086</td>
+      <td colspan="2">(0.043, 0.128)</td>
+      <td>&lt;0.001</td>
+      <td>0.04</td>
+      <td>(0.00,</td>
+      <td>0.08)</td>
+      <td>0.28</td>
+      <td>(0.03,</td>
+      <td>0.58)</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>CVP</td>
+      <td>−0.005</td>
+      <td colspan="2">(−0.031, 0.021)</td>
+      <td>0.704</td>
+      <td>0.00</td>
+      <td>(0.00,</td>
+      <td>0.00)</td>
+      <td>0.41</td>
+      <td>(0.06,</td>
+      <td>0.81)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CVG</td>
+      <td>0.017</td>
+      <td colspan="2">(−0.006, 0.040)</td>
+      <td>0.149</td>
+      <td>0.01</td>
+      <td>(0.00,</td>
+      <td>0.02)</td>
+      <td>0.46</td>
+      <td>(0.12,</td>
+      <td>0.81)</td>
+    </tr>
+    <tr>
+      <td>Monogamy</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS</td>
+      <td>CVP</td>
+      <td>−0.012</td>
+      <td>(−0.063,</td>
+      <td>0.035)</td>
+      <td>0.602</td>
+      <td>0.00</td>
+      <td>(0.00,</td>
+      <td>0.00)</td>
+      <td>0.37</td>
+      <td>(0.01,</td>
+      <td>0.96)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CVG</td>
+      <td>−0.015</td>
+      <td>(−0.080,</td>
+      <td>0.046)</td>
+      <td>0.628</td>
+      <td>0.01</td>
+      <td>(0.00,</td>
+      <td>0.02)</td>
+      <td>0.43</td>
+      <td>(0.05,</td>
+      <td>0.92)</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>CVP</td>
+      <td>0.026</td>
+      <td>(−0.028,</td>
+      <td>0.079)</td>
+      <td>0.281</td>
+      <td>0.00</td>
+      <td>(0.00,</td>
+      <td>0.02)</td>
+      <td>0.37</td>
+      <td>(0.01,</td>
+      <td>0.87)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CVG</td>
+      <td>0.050</td>
+      <td>(−0.030,</td>
+      <td>0.125)</td>
+      <td>0.179</td>
+      <td>0.02</td>
+      <td>(0.00,</td>
+      <td>0.07)</td>
+      <td>0.46</td>
+      <td>(0.05,</td>
+      <td>0.89)</td>
+    </tr>
+    <tr>
+      <td>Polygamy</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS</td>
+      <td>CVP</td>
+      <td>0.312</td>
+      <td>(0.207,</td>
+      <td>0.417)</td>
+      <td>&lt;0.001</td>
+      <td>0.11</td>
+      <td>(0.03,</td>
+      <td>0.18)</td>
+      <td>0.20</td>
+      <td>(0.01,</td>
+      <td>0.47)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CVG</td>
+      <td>0.119</td>
+      <td>(0.068,</td>
+      <td>0.170)</td>
+      <td>&lt;0.001</td>
+      <td>0.07</td>
+      <td>(0.01,</td>
+      <td>0.13)</td>
+      <td>0.25</td>
+      <td>(0.02,</td>
+      <td>0.56)</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>CVP</td>
+      <td>−0.014</td>
+      <td>(−0.046,</td>
+      <td>0.018)</td>
+      <td>0.373</td>
+      <td>0.00</td>
+      <td>(0.00,</td>
+      <td>0.00)</td>
+      <td>0.69</td>
+      <td>(0.25,</td>
+      <td>0.97)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CVG</td>
+      <td>0.007</td>
+      <td>(−0.016,</td>
+      <td>0.031)</td>
+      <td>0.554</td>
+      <td>0.00</td>
+      <td>(0.00,</td>
+      <td>0.01)</td>
+      <td>0.44</td>
+      <td>(0.12,</td>
+      <td>0.78)</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -67,7 +294,7 @@ Collectively, our analysis reveals a pervasive male bias in the strength of net 
 
 ## Materials and methods
 
-## Literature search and characterization of primary studies
+### Literature search and characterization of primary studies
 
 We ran a systematic literature search in order to obtain an unbiased sample of coefficients of genetic variation for two major fitness components: reproductive success and lifespan. Even though we expects that both components contribute largely to overall fitness of an organism, they may differ in their explanatory power. Specifically, reproductive success (i.e., number of offspring or grand-offspring) likely translates proportionally into fitness whereas lifespan may not necessarily show a similar linear relationship (e.g., due to senescence). Therefore, genetic variance in reproductive success may represent a better predictor for net selection than lifespan.
 
@@ -79,11 +306,11 @@ We screened the ISI Web of Science Core Collection database (Clarivate Analytics
 
 Primary studies varied largely in terms of several methodological aspects (Supplementary file 9). First, our dataset includes 23 field studies and 32 laboratory studies. Moreover, primary studies differed in terms of how genetic variances were estimated including full-sib breeding designs (3 studies), half-sib breeding designs (12 studies), inbred lines (17 studies), pedigrees (21 studies), and twin studies (2 studies). This translated into differences regarding the obtained estimates of genetic variance with 33 studies reporting estimates of additive genetic variance and 22 studies reporting estimates of total genetic variance including additive variance, dominance variance, and epistatic variance. In addition, reproductive success was measured either for a limited period (22 studies) or in terms of lifetime reproductive success (20 studies). Reproductive success also varied with respect to the measured unit such that 24 studies quantified the number of adult offspring, 15 studies the number of juvenile offspring, 1 study the number of grand-offspring, and 2 studies quantified reproductive success in a sex-specific manner. Lifespan was primarily measured as adult survival (i.e., excluding mortality until reaching maturity; 33 out of 39 estimates) and in the few remaining cases as the age of last reproduction, reproductive lifespan (calculated as time between first and last reproduction), or total lifespan (including juvenile mortality). Finally, primary studies differed in the way that male reproductive success was estimated because paternity assessment is required in experimental setups that allow for male–male competition. Specifically, paternity was assessed based on social parentage (14 studies), phenotyping offspring using a genetic maker (i.e., using mutant lines as competitors; 13 studies), genotypic offspring using molecular techniques (5 studies), genotyping offspring in combination with behavioral observations (4 studies), and using the sterile male technique (i.e., sterilizing male competitors with radiation; 3 studies). In three studies, paternity assessment was not required because the experimental setup did not allow for male–male competition (i.e., enforced monogamy). This methodological heterogeneity may have introduced potential biases in absolute variance estimates but we do not expect that the different experimental approaches led to a systematic bias in the sex difference of genetic variance for at least two reasons. First, 53 out of the 55 primary studies (96%) used the same metric to quantify fitness components in both sexes (Supplementary file 9), suggesting that potential sex biases due to sex-specific measurements of fitness can only make a very minor contribution to the overall test of sex-specific genetic variances. Second, paternity is often assessed with a higher degree of uncertainty compared to maternity (e.g., due to incomplete and erroneous genotyping of offspring or due to binomial sampling variance), which may result in a higher variance in reproductive success of males compared to females. However, this sex-specific uncertainty in measuring reproductive success might lead to a male bias in phenotypic variance but not in genetic variance because the former is computed from the raw data (including uncontrolled residual variance) whereas the latter is the estimated variance that can attributed exclusively to genetic effects.
 
-## Data acquisition
+### Data acquisition
 
 For all primary studies, we extracted four parameters for both sexes: (1) sample size, (2) arithmetic mean, (3) phenotypic variance, and (4) genetic variance of reproductive success and/or lifespan. For 11 studies, at least one of these parameters was not reported in the article. In these cases, we received the parameter estimates from the authors upon request or reanalyzed the raw data (either published together with the article or provided by the authors). We computed the coefficients of phenotypic and genetic variation (CVP and CVG, respectively) as the square root of the variance (i.e., the standard deviation) divided by the arithmetic mean, which makes this metric comparable across contexts and species. Note that CV of a given trait is often denoted as ‘evolvability’ (Houle, 1992) and equals the square root of the opportunity for selection I, which is also frequently used to quantify the upper limit of the strength of selection (Jones, 2009; Hendry et al., 2018). In total, we obtained 101 paired estimates of CVP and CVG for males and females, including 62 estimates for reproductive success and 39 estimates for lifespan.
 
-## Phylogeny and mating system classification
+### Phylogeny and mating system classification
 
 The 55 primary studies encompass a total of 26 animal species with an overrepresentation of insects (N = 12) and birds (N = 7). In order to account for any source of phylogenetic nonindependence we reconstructed the phylogeny of all sampled species (Figure 5). First, we retrieved pairwise estimates of divergence times from the TimeTree database (http://www.timetree.org/; Kumar et al., 2017). Second, we aged undated nodes on the basis of divergence times of neighboring nodes applying the branch length adjuster (BLADJ) algorithm (Webb et al., 2008). Finally, we used the resulting distance matrix to compute a phylogeny, using the unweighted pair group method with arithmetic mean (UPGMA) algorithm implemented in MEGA (https://www.megasoftware.net/; Kumar et al., 2018) and transformed it into the Newick format for further analysis.
 
@@ -95,7 +322,7 @@ To explore the role of sexual selection in generating sex differences in phenoty
 
 It is important to stress that our analysis on the relationship between mating system (as a proxy for sexual selection) and the sex difference in genetic variances is rather exploratory and must be considered with caution for at least two reasons. First, our classification of the mating system is clearly an oversimplification of a continuum in the strength of sexual selection across species in nature. Moreover, it is questionable whether the propensity of having multiple mates (i.e., the key characteristic to define the mating system of a given species) translates into competition for mating partners and/or their gametes, which is the essence of sexual selection (Shuker, 2010; Shuker and Kvarnemo, 2021). Second, in our dataset we found that monogamous species are largely underrepresented (i.e., only 6 out of 26 species) and restricted to vertebrates with only 3 independent evolutionary transitions, which clearly imposes strong limitations on the interpretability of the obtained results (Uyeda et al., 2018).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were carried out in two steps. First, we examined the key assumption of the ‘phenotypic gambit’ by testing whether estimates of phenotypic variance predict the estimated genetic variance. For this we ran linear regressions with CVP defined as predictor variable and CVG defined as response variable. This was done separately for both sexes and the two fitness components. The analyses on the phenotypic gambit were motivated from a methodological perspective and we did not expect that interspecific variation in the difference between CVP and CVG can be explained by a shared phylogenetic history. However, for completeness, we also ran linear regressions on PICs computed using the crunch function of the caper R-package (version 1.0.1) in R (Orme et al., 2018) to test whether our findings were robust when accounting for potential phylogenetic nonindependence.
 

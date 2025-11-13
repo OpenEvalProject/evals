@@ -31,7 +31,7 @@
 
 ## Abstract
 
-While the liver, specifically hepatocytes, are widely accepted as the main source of hepatitis C virus (HCV) production, the role of the liver/hepatocytes in clearance of circulating HCV remains unknown. Frequent HCV kinetic data were recorded and mathematically modeled from five liver transplant patients throughout the anhepatic (absence of liver) phase and for 4 hr post-reperfusion. During the anhepatic phase, HCV remained at pre-anhepatic levels ( n = 3) or declined ( n = 2) with t 1/2 ~1 hr. Immediately post-reperfusion, virus declined in a biphasic manner in four patients consisting of a rapid decline ( t 1/2 = 5 min) followed by a slower decline ( t 1/2 = 67 min). Consistent with the majority of patients in the anhepatic phase, when we monitored HCV clearance at 37°C from culture medium in the absence/presence of chronically infected hepatoma cells that were inhibited from secreting HCV, the HCV t 1/2 in cell culture was longer in the absence of chronically HCV-infected cells. The results suggest that the liver plays a major role in the clearance of circulating HCV and that hepatocytes may be involved.
+While the liver, specifically hepatocytes, are widely accepted as the main source of hepatitis C virus (HCV) production, the role of the liver/hepatocytes in clearance of circulating HCV remains unknown. Frequent HCV kinetic data were recorded and mathematically modeled from five liver transplant patients throughout the anhepatic (absence of liver) phase and for 4 hr post-reperfusion. During the anhepatic phase, HCV remained at pre-anhepatic levels (n = 3) or declined (n = 2) with t1/2~1 hr. Immediately post-reperfusion, virus declined in a biphasic manner in four patients consisting of a rapid decline (t1/2 = 5 min) followed by a slower decline (t1/2 = 67 min). Consistent with the majority of patients in the anhepatic phase, when we monitored HCV clearance at 37°C from culture medium in the absence/presence of chronically infected hepatoma cells that were inhibited from secreting HCV, the HCV t1/2 in cell culture was longer in the absence of chronically HCV-infected cells. The results suggest that the liver plays a major role in the clearance of circulating HCV and that hepatocytes may be involved.
 
 ## Introduction
 
@@ -49,33 +49,418 @@ Here, we measured viral levels in five liver transplant patients over the course
 
 **Figure 2.:** (A) Prior to the anhepatic (AH) phase viral load is at a steady state in which virus production is balanced by viral clearance (Equation 1). (B) During the AH phase, the liver is not present and therefore there is no viral production (Equation 2). However, virus may appear to be cleared by the input of fluids that dilute the virus in circulation (see F in Equation 3) and through processes of physiological clearance. (C) Up to 4 hr post-reperfusion there is no viral production as the cells in the new liver if they have been infected have not yet started releasing new virions. Clearance still occurs both via fluid balances but is predicted via a time-dependent function (see c(t) in Equation 4) that may represent a rapid clearance phase (possibly due to viral binding/entry into hepatocytes) immediately after graft reperfusion and a second/slower clearance phase (physiological). (D) Longer after reperfusion (over 4 hr), the new liver begins producing new virions (as evident in Figure 1a in Cases 1–4).
 
+**Table 1.**
+ Characteristics of liver transplant (LT) recipients/donors and fluid balances during transplantation.BMI is the body mass index defined as a ratio of weight in kg to the square of height in meters. AH, anhepatic phase; RP, 4 hr after graft reperfusion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Case</th>
+      <th>Gender</th>
+      <th>Weight(kg)</th>
+      <th>BMI(kg/m2)</th>
+      <th>Ageat LT(year)</th>
+      <th>Donorage(year)</th>
+      <th>Donorgender</th>
+      <th>HCVgenotype</th>
+      <th>AH fluidintake(mL)</th>
+      <th>RP fluidintake(mL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>M</td>
+      <td>88</td>
+      <td>30</td>
+      <td>68</td>
+      <td>72</td>
+      <td>M</td>
+      <td>1b</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>F</td>
+      <td>70</td>
+      <td>31</td>
+      <td>66</td>
+      <td>33</td>
+      <td>M</td>
+      <td>1b</td>
+      <td>500</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>M</td>
+      <td>87</td>
+      <td>34</td>
+      <td>56</td>
+      <td>69</td>
+      <td>M</td>
+      <td>3</td>
+      <td>250</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>F</td>
+      <td>43</td>
+      <td>19</td>
+      <td>60</td>
+      <td>73</td>
+      <td>F</td>
+      <td>1b</td>
+      <td>750</td>
+      <td>3300</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>M</td>
+      <td>90</td>
+      <td>29</td>
+      <td>49</td>
+      <td>29</td>
+      <td>M</td>
+      <td>1b</td>
+      <td>951</td>
+      <td>3350</td>
+    </tr>
+    <tr>
+      <td>Median (range)</td>
+      <td></td>
+      <td>87(43–90)</td>
+      <td>30(19–34)</td>
+      <td>60(49–68)</td>
+      <td>69(29–73)</td>
+      <td></td>
+      <td></td>
+      <td>500(0–951)</td>
+      <td>1000(0–3350)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Viral kinetics before and during the anhepatic phase
+### Viral kinetics before and during the anhepatic phase
 
 Prior to the anhepatic phase, the viral load is at steady state. Since there was minimal variation prior to the anhepatic phase, we defined the final measured value of viral load prior to the anhepatic phase as the initial viral load for the model. The median viral load measured just before the anhepatic phase was 6.0 (range 3.7–6.4) log10 IU/mL (Figure 3; Table 2). We carried out a linear fit to the data during the anhepatic phase, which lasted 1.25–1.90 hr. We found that virus levels were flat in three cases (Case 1, Case 2, and Case 3) while in two patients (Case 4 and Case 5) the viral decline slope was 0.32 and 0.16 log10 IU/mL per hour, respectively (Table 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65297/elife-65297-fig3-v2.jpg)
 
-**Figure 3.:** Serum HCV RNA kinetics in five cases before transplant, during the anhepatic phase (gray rectangles), and during the first 4 hr after liver graft reperfusion. HCV RNA measurements are shown by gray circles and best-fit model predictions by solid black lines. HCV levels are graphed relative to the time of liver removal (t = 0) on the x-axis.Figure 3—source data 1.Also includes patients demographics, fluid intake/uptake, and timing of the anhepatic phase.
+**Figure 3.:** Serum HCV RNA kinetics in five cases before transplant, during the anhepatic phase (gray rectangles), and during the first 4 hr after liver graft reperfusion. HCV RNA measurements are shown by gray circles and best-fit model predictions by solid black lines. HCV levels are graphed relative to the time of liver removal (t = 0) on the x-axis.
 
-## Viral kinetics after graft reperfusion
+**Table 2.**
+ Hepatitis C virus (HCV) kinetics during anhepatic phase.The viral load prior to the anhepatic phase (AH) is the final measurement just before the anhepatic phase. The decrease was determined by linear regression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Case</th>
+      <th>Viral load prior to AH(log IU/mL)</th>
+      <th>Decrease slope (log/hr)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">AH</td>
+      <td>1</td>
+      <td>6.3</td>
+      <td>0.07</td>
+      <td>0.073</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6.0</td>
+      <td>0.30</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>5.3</td>
+      <td>0.06</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>6.4</td>
+      <td>0.32</td>
+      <td>1.3e-7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3.7</td>
+      <td>0.16</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Median(range)</td>
+      <td></td>
+      <td>6.0(3.7–6.4)</td>
+      <td>0.16(0.05–0.32)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Viral kinetics after graft reperfusion
 
 During the first 4 hr after reperfusion, HCV measurements were taken at intermittent times (Figure 3) and volume input was recorded. Fluid input during post-reperfusion for Cases 1–5 were 0, 1000, 250, 3300, and 3350 mL, respectively (Table 1). In Cases 1–4, HCV RNA declined in a biphasic manner, while in Case 5, HCV RNA remained at the same levels as at the end of the anhepatic phase. For Cases 1–4, the biphasic decline consisted of an initial, sharp decrease within 11–22 min, followed by a longer but slower decrease (Table 3). Using linear regression, the slope of the initial decrease was 2.7, 1.5, 2.1, and 2.0 log10 IU/mL per hour for Cases 1–4, respectively, that lasted for 1.2–2.8 min. The slower second phase slope for Cases 1–4 was 0.2, 0.3, 0.2, and 0.4 log10 IU/mL per hour, respectively (Table 3). The viral plateau in Case 5 is distinct from the other cases, although it is worth noting that this patient’s viral load continued to be flat for ~6 days post-reperfusion (Figure 1).
 
-## Modeling HCV kinetics
+**Table 3.**
+ Hepatitis C virus (HCV) kinetics during 4 hr post-reperfusion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Case</th>
+      <th>Viral load prior to RP*(log IU/mL)</th>
+      <th>Initial decrease slope (log/hr)† and (duration, min)</th>
+      <th>Second Decrease slope (log/hr) ‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">RP</td>
+      <td>1</td>
+      <td>6.3</td>
+      <td>2.7 (16)</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6.0</td>
+      <td>1.5 (22)</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>5.3</td>
+      <td>2.1 (14)</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5.9</td>
+      <td>2.0 (11)</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>5 §</td>
+      <td>3.4</td>
+      <td>–</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Median (range)</td>
+      <td></td>
+      <td>5.9(3.4–6.3)</td>
+      <td>2.0(1.5–2.8)</td>
+      <td>0.25(0.06–0.37)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The viral load prior to reperfusion is the final measurement during the anhepatic phase just before reperfusion.†Slopes were calculated using the measured viral load (VL) of the last point of anhepatic phase and the first 4four points of reperfusion phase.‡VL after the first 4four points of reperfusion until 4 hr post -reperfusion were used. All slopes (determined by linear regression) were significantly different than 0 (Pp ≤ 0.01).§For Case five5 during graft reperfusion (reperfusion) only one slope was estimated from the last point of anhepatic phase until 4 hr post -reperfusion (RP);. For Cases 1–4 during reperfusion, an initial rapid decrease was estimated, followed by a slower/second decrease._
+
+### Modeling HCV kinetics
 
 Model fits are shown in Figure 3 and viral clearance (cAH) estimates are shown in Table 4. The estimated virus clearance rates during the anhepatic phase in Cases 1–3 were ~0 (i.e., very long t1/2 that implies no clearance) but were significantly different from 0 in Cases 4 and 5 corresponding to an HCV t1/2 = Ln(2)/cAH of 1–2 hr. Similar results were obtained under the assumption of 5 L of extracellular fluid per 70 kg (Supplementary file 1, Table S1).
 
+**Table 4.**
+ Best-fit parameter estimates determined by fitting Equation. (3) to data obtained during the anhepatic (AH) phase (assuming extracellular fluid of 15 L per 70 kg), where we assumed that fluid intake and outtake are equal (see Materials and methods).VP, Due to viral plateau (not significantly different from slope 0 as indicated in Table 2) hepatitis C virus (HCV) half-life (t1/2) was not undefined. Note that in the model all parameter values are converted to mL, but for simplicity some are written here in terms of L. V0AH is the final measured value prior to the AH phase.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Case</th>
+      <th>Phase duration(days)</th>
+      <th>Num. data points</th>
+      <th>i(fluid intake/ phase duration)(L/day)</th>
+      <th>F(0) (weight*15 L/70 kg) (L)</th>
+      <th>V0AH(log IU/mL)</th>
+      <th>HCV t1/2(ln(2)/cAH)(min)(95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.074</td>
+      <td>8</td>
+      <td>0</td>
+      <td>18.9</td>
+      <td>6.3</td>
+      <td>VP</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.052</td>
+      <td>7</td>
+      <td>9.6</td>
+      <td>15.0</td>
+      <td>6.0</td>
+      <td>VP</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.062</td>
+      <td>8</td>
+      <td>4.0</td>
+      <td>18.6</td>
+      <td>5.3</td>
+      <td>VP</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0.079</td>
+      <td>12</td>
+      <td>9.5</td>
+      <td>9.2</td>
+      <td>6.4</td>
+      <td>57 (54–60)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.069</td>
+      <td>11</td>
+      <td>13.7</td>
+      <td>19.3</td>
+      <td>3.7</td>
+      <td>79 (67–95)</td>
+    </tr>
+    <tr>
+      <td>Median(range)</td>
+      <td></td>
+      <td>0.067(0.052–0.079)</td>
+      <td>8(7–12)</td>
+      <td>9.5(0–13.7)</td>
+      <td>18.6(9.2–19.3)</td>
+      <td>6.0 (3.7–6.4)</td>
+    </tr>
+  </tbody>
+</table>
+
 When fitting the model to data from the reperfusion phase, we found that there was significant correlation between the parameters c0 and cRP, representing the initial faster clearance rate, and the longer term slower clearance rate, respectively. The high correlation between the parameters suggests that these two parameters were not independently identifiable. This led us to fit the model in two steps. first, we set all of the parameters c0, cRP, and κ, which governs the speed of the transition from c0 to cRP, as free. Second, we fixed c0 to its best-fit value and then fit the model again estimating κ, cRP. For Cases 1–4, the initial viral clearance, c0, gave t1/2 on the order of 5 [0.4–16] min (Table 5). The median time constant was κ = 399/day meaning that the time it took for the clearance rate to shift from its initial value of c0 to its final value of cRP was around 4 min. The second, slower clearance rate, cRP, corresponded to a t1/2 of order 67 [54–79] min (Table 5 and Figure 3). In Case 5, Equation. (3) was used because an extremely slow (or plateaued) viral load (slope of 0.06 log10 IU/mL/hr) was observed suggesting no production and clearance during the first 6 hr post-reperfusion (Figure 3, Table 5) or the subsequent 6 days (Figure 1). Similar results were obtained under the assumption of 5 L of extracellular fluid per 70 kg (Supplementary file 2, Table S2).
 
-## HCV clearance from culture medium in vitro
+**Table 5.**
+ Best-fit parameter estimates determined by fitting Equation. (4) to data obtained during the 4 hr after graft reperfusion (assuming extracellular fluid of 15 L per 70 kg), where we assumed that fluid intake and outtake are equal (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Case</th>
+      <th colspan="2">Phase duration (days)</th>
+      <th>Num. data points</th>
+      <th>i(fluid intake/ duration)(L/day)</th>
+      <th>F(0) (weight*15 L/70 kg) (L)</th>
+      <th>V0RP(log IU/mL)†</th>
+      <th>Init. HCV (ln(2)/c0)t1/2* (min)</th>
+      <th>κ(1 /days)(95% CI)</th>
+      <th>HCV t1/2 (ln(2)/cRP) (min)(95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td colspan="2">0.17</td>
+      <td>15</td>
+      <td>0</td>
+      <td>18.9</td>
+      <td>6.3</td>
+      <td>2.9</td>
+      <td>143 [120–166]</td>
+      <td>77[53–140]</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td colspan="2">0.17</td>
+      <td>22</td>
+      <td>6.0</td>
+      <td>15.0</td>
+      <td>5.9</td>
+      <td>0.4</td>
+      <td>3620 [3080–4,150]</td>
+      <td>54[50–59]</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td colspan="2">0.17</td>
+      <td>15</td>
+      <td>1.5</td>
+      <td>18.6</td>
+      <td>5.3</td>
+      <td>1.9</td>
+      <td>399[348, 450]</td>
+      <td>79[63–105]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td colspan="2">0.17</td>
+      <td>18</td>
+      <td>19.8</td>
+      <td>9.2</td>
+      <td>5.7</td>
+      <td>15.8</td>
+      <td>100‡</td>
+      <td>59[52–68]</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td colspan="2">0.17</td>
+      <td>21</td>
+      <td>20.1</td>
+      <td>19.3</td>
+      <td>3.3</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>§</td>
+    </tr>
+    <tr>
+      <td colspan="2">Median (range)</td>
+      <td>0.17(0.17–0.17)</td>
+      <td>18(15-22)</td>
+      <td>6.0(0–20.1)</td>
+      <td>18.6(9.2–19.3)</td>
+      <td>5.7(3.3–6.3)</td>
+      <td>2.4(0.4–15.8)</td>
+      <td>399(143–3620)</td>
+      <td>68(54–79)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Since c0 and cRP were highly correlated and not independently identifiable (correlation matrix) and population modeling (using Monolix) indicated that c0 was not identifiable (not shown), the initial virus clearance rate (i.e., c0 in Equation. 4) was fixed to its best-fit value (first estimated with c0, cRP, and κ as free parameters) and then the errors on the remaining parameters (cRP and κ) were computed.†For 4 hr after reperfusion, the V0RP listed is the final value of the fit for anhepatic phase. This value was then used in the model for calibration with HCV data 4 hr after reperfusion.‡Parameter was set to this fixed value due to high uncertainty and was omitted from the calculation of median and range.§Equation. 3 was used to estimate the HCV t1/2. Since the best estimate of clearance was cRP~0, half-life is undefined._
+
+### HCV clearance from culture medium in vitro
 
 To further investigate the role of hepatocytes in HCV clearance, we turned to the more controlled in vitro HCV infection experimental system (Zhong et al., 2005) as previously described in detail (Yu and Uprichard, 2010). To determine the effect of Huh7 hepatoma cells on HCV clearance in vitro, we measured the half-life of HCV virions at 37°C in cell culture medium in the absence and presence of chronically infected Huh7 cells by monitoring the decrease of HCV RNA over time (Figure 4). To measure HCV half-life in cell culture medium in the presence of chronically HCV-infected cells, we established a steady-state chronic infection in Huh7 cells, and then inhibited the secretion of HCV from the cells using 1 nM of the NS5a inhibitor daclatasvir to block HCV replication and secretion (Meanwell and Belema, 2019) or 200 µM naringenin to block HCV secretion (Goldwasser et al., 2011). In the absence of cells, the HCV half-life observed was 112 hr (Figure 4a). In the presence of chronically infected cells inhibited from de novo virus secretion, the HCV half-life observed was 13 hr (Figure 4b), which is 8.5 times faster than the clearance observed in the absence of cells (Figure 4a).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65297/elife-65297-fig4-v2.jpg)
 
-**Figure 4.:** HCV RNA clearance from culture medium at 37°C was monitored by frequent sampling at the indicated time points. (A) Decline in HCV RNA in the absence of cells averaged across two experiments, each performed with four replicate wells per time point. (B) Decline in HCV RNA in the presence of chronically infected cells in which de novo HCV secretion is inhibited. Chronically HCV-infected non-growing Huh7 cells were mock-treated or treated with 200 μM of the HCV secretion inhibitor naringenin (NG) in two experiments performed with duplicate wells or 1 nM of the HCV replication and secretion inhibitor daclatasvir (DCV) in three experiments, two performed with duplicate wells, one performed in singlet. The average copies/mL ± standard deviation across these five experiments are graphed (blue diamonds). For all experiments, RNA was extracted, and HCV copies were quantified by RT-qPCR in technical duplicate. For the infection experiment, HCV copies/mL were normalized to mock-treated samples at each time point. Graphed is the average copies/mL ± standard deviation across experiments at the indicated times (blue diamonds). Linear regression (dashed lines) was performed to calculate the virus half-life (t½).Figure 4—source data 1.
+**Figure 4.:** HCV RNA clearance from culture medium at 37°C was monitored by frequent sampling at the indicated time points. (A) Decline in HCV RNA in the absence of cells averaged across two experiments, each performed with four replicate wells per time point. (B) Decline in HCV RNA in the presence of chronically infected cells in which de novo HCV secretion is inhibited. Chronically HCV-infected non-growing Huh7 cells were mock-treated or treated with 200 μM of the HCV secretion inhibitor naringenin (NG) in two experiments performed with duplicate wells or 1 nM of the HCV replication and secretion inhibitor daclatasvir (DCV) in three experiments, two performed with duplicate wells, one performed in singlet. The average copies/mL ± standard deviation across these five experiments are graphed (blue diamonds). For all experiments, RNA was extracted, and HCV copies were quantified by RT-qPCR in technical duplicate. For the infection experiment, HCV copies/mL were normalized to mock-treated samples at each time point. Graphed is the average copies/mL ± standard deviation across experiments at the indicated times (blue diamonds). Linear regression (dashed lines) was performed to calculate the virus half-life (t½).
 
 ## Discussion
 
@@ -99,35 +484,51 @@ The notion of the liver playing a significant role in the clearance of pathogens
 
 ## Materials and methods
 
-## Patients
+### Patients
 
 Five transplant recipients (termed cases) with median age 60 years (range, 49–68) and median BMI 30 kg/m2 (range, 19–34) underwent liver transplantation (Table 1). Four of the five liver donors were male with median age 69 years (range, 29–73) (Table 1). All patients received 500 mg methylprednisolone immediately before laparotomy and 500 mg during graft reperfusion. For each patient, blood samples (2 mL) were taken before liver transplantation, every 5–15 min during the anhepatic phase for a total of 7–12 samples, every 5 min during the first hour of reperfusion, and every 10 min until the end of surgery for a total of 15–21 samples. Thereafter, blood was sampled every hour for the first 6 hr, every 6 hr during the first day, and daily during the first week. Transfusion of blood products, saline, and albumin were recorded. The study was approved by the Ethics Committee at Hospital Clinic Barcelona and all patients provided a written informed consent.
 
-## Mathematical modeling of HCV kinetics during liver transplantation
+### Mathematical modeling of HCV kinetics during liver transplantation
 
-A schematic of the mathematical modeling approach utilized to understand HCV dynamics during the different stages of liver transplantation is shown in Figure 2. Shortly before liver removal, we assume that virus is produced at constant rate P and cleared from the serum at rate c per virion as in Neumann et al., 1998:(1)dV/dt=P−cV
+A schematic of the mathematical modeling approach utilized to understand HCV dynamics during the different stages of liver transplantation is shown in Figure 2. Shortly before liver removal, we assume that virus is produced at constant rate P and cleared from the serum at rate c per virion as in Neumann et al., 1998:
 
-where V is the viral load, expressed in international units (IU) per mL. Assuming the pre-transplant viral load to be at steady state, that is, dV/dt=0, implies that HCV production and clearance balance or P = cV. During the anhepatic phase and 4 hr after reperfusion, we assume that in the absence of the liver (i.e., anhepatic phase), virus production ceases, P = 0. Hence, Equation 1 reduces to(2)dV/dt=-cAHV
+$$
+dV/dt=P−cV
+$$
 
-where parameter c in Equation. 1 is replaced by cAH to represent viral clearance during the anhepatic phase. Some patients received albumin and blood transfusions to compensate for the fluid loss that occurred during transplant surgery. The blood loss causes a reduction in the absolute amount of virus in circulation, but does not affect the virus concentration, V. In contrast, the fluid intake results in a dilution of V. We can describe the change in patient viral load during the anhepatic phase as in Powers et al., 2006.(3)dVdt=-cAH+iFVdFdt=i-λ
+where V is the viral load, expressed in international units (IU) per mL. Assuming the pre-transplant viral load to be at steady state, that is, $dV/dt=0$, implies that HCV production and clearance balance or P = cV. During the anhepatic phase and 4 hr after reperfusion, we assume that in the absence of the liver (i.e., anhepatic phase), virus production ceases, P = 0. Hence, Equation 1 reduces to
+
+$$
+dV/dt=-c_{AH}V
+$$
+
+where parameter c in Equation. 1 is replaced by cAH to represent viral clearance during the anhepatic phase. Some patients received albumin and blood transfusions to compensate for the fluid loss that occurred during transplant surgery. The blood loss causes a reduction in the absolute amount of virus in circulation, but does not affect the virus concentration, V. In contrast, the fluid intake results in a dilution of V. We can describe the change in patient viral load during the anhepatic phase as in Powers et al., 2006.
+
+$$
+\frac{dV}{dt}=-c_{AH}+\frac{i}{F}V\frac{dF}{dt}=i-\lambda
+$$
 
 where F denotes the total body extracellular fluid which can vary over the course of the anhepatic phase, i is the rate of fluid intake, and λ is the rate of blood/fluid loss.
 
-To account for the initial rapid and second slower phases of HCV decline post-reperfusion (RP) in Cases 1–4, we modified Equation. 3 by including a time-dependent viral clearance rate ct (t).(4)dVdt=-ctt+iFVdFdt=i-λctt=c0+cRP-c01-e-κt
+To account for the initial rapid and second slower phases of HCV decline post-reperfusion (RP) in Cases 1–4, we modified Equation. 3 by including a time-dependent viral clearance rate ct (t).
+
+$$
+\frac{dV}{dt}=-c_{t}t+\frac{i}{F}V\frac{dF}{dt}=i-\lambdac_{t}t=c_{0}+c_{RP}-c_{0}1-e^{-κt}
+$$
 
 where c0 represents the initial rapid clearance rate, cRP the second slower clearance rate, and κ governs how quickly c0 reduces to c. Note that if κ = 0 or if κ is very large then ct (t) reduces to a constant. The units of cRP and c0 are both 1/day, V is in IU/mL, F is in mL, i and λ are in mL/day, κ is in units of 1/day and t is in days. For clarity parameter, units are sometimes converted to other units (e.g., liter to mL and day to hour).
 
-The fluid input and loss rates i,λ were computed by the ratio of recorded volumes of fluid input and loss divided by each patient’s duration in the anhepatic phase. In the absence of surgical complications, the fluid loss and intake are usually approximately balanced, though loss is generally slightly more than the input. Since the exact volume of blood loss was not available, we evaluated the maximum impact of fluid intake which occurs when the blood loss and input are balanced, that is, λ = i. When λ≤ i, the total fluid volume F is a non-decreasing function over time, which attains a minimum when λ = i. As a consequence, the impact of i/F, involved in describing viral concentration dynamics, is maximum if λ = i.
+The fluid input and loss rates $i,\lambda$ were computed by the ratio of recorded volumes of fluid input and loss divided by each patient’s duration in the anhepatic phase. In the absence of surgical complications, the fluid loss and intake are usually approximately balanced, though loss is generally slightly more than the input. Since the exact volume of blood loss was not available, we evaluated the maximum impact of fluid intake which occurs when the blood loss and input are balanced, that is, λ = i. When λ≤ i, the total fluid volume F is a non-decreasing function over time, which attains a minimum when λ = i. As a consequence, the impact of i/F, involved in describing viral concentration dynamics, is maximum if λ = i.
 
 Several studies have previously reported that HCV can be detected in different human body fluids of HCV-infected patients (Wang et al., 2006; Suzuki et al., 2005; Ortiz-Movilla et al., 2002; Bourlet et al., 2002; Leruez-Ville et al., 2000; Mendel et al., 1997; Numata et al., 1993; Pfaender et al., 2018). Therefore, the total fluid volume before surgery, F(0), was calculated using the patient’s body weight (Table 1) under the assumption of 15 L of extracellular fluid per 70 kg. In addition, we explored utilizing just 5 L of blood per 70 kg since transfusions are mainly given to compensate for blood loss during transplantation and HCV viral load is typically higher by several orders of magnitude in the blood compared to the other diverse body fluids (Numata et al., 1993; Pfaender et al., 2018). Lastly, parameter i was estimated by taking the recorded volumes of fluid input divided by each phase (actual anhepatic and 4 hr post-reperfusion).
 
 Model calibration was performed using Python 3.7.4 together with Scipy Version 1.3.1 and Numpy Version 1.17.2. The fitting used the optimize.least_squares function in Scipy, which minimizes the squares of the differences between the model and patient data (least squares). The minimization is done using the Trust Region Reflective Algorithm ‘trf,’. For the linear regression, the linregress function was used from the scipy.stats package. Results with p-values ≤ 0.05 were considered statistically significant. The viral slope was considered flat (or plateau) if the estimate was not significantly different from 0, that is, p > 0.05. To identify coupled parameters (i.e., identifiability issues), the optimize.least_squares provides the covariance matrix of the resulting fit, which was converted to the correlation matrix by normalizing the covariances by the standard deviations of the corresponding variables (Chis et al., 2016).
 
-## Cells and virus
+### Cells and virus
 
 Huh7 human hepatoma cells (JCRB0403; RRID.CVCL_0336) were obtained from the Japanese Collection of Research Bioresources Cell Bank. Cell stocks have only been passaged 19 times. Every time a new stock is generated, cells are mycoplasma-tested prior to freezing. New aliquots are thawed after 10 passages and cultured in complete Dulbecco’s modified Eagle’s medium supplemented with 100 units/mL penicillin, 100 mg/mL streptomycin, 2 mM L-glutamine (Corning), 10 mM HEPES (Santa Cruz), and non-essential amino acids (Thermofisher Scientific) and 10% fetal bovine serum (Hyclone or Gibco) at 37°C in 5% CO2. Stocks of HCVcc were generated as previously described from a plasmid encoding the JFH-1 genome that was provided by Takaji Wakita (National Institute of Infectious Diseases, Tokyo, Japan) (Zhong et al., 2005; Yu and Uprichard, 2010; Wakita et al., 2005).
 
-## Measuring HCV half-life in vitro
+### Measuring HCV half-life in vitro
 
 To measure the HCVcc half-life in the absence of cells, the JFH-1 HCVcc stock was diluted to 104 ffU/mL, which is the level observed in culture media during steady state in the JFH-1 HCVcc infection system (Zhong et al., 2005) and incubated at 37°C simulating conditions during HCV infection in cell culture. At indicated time points, medium was harvested from duplicate wells and frozen at –80°C until HCV RNA was isolated for quantification.
 

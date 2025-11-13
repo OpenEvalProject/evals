@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.40202.001 Parkinson’s disease-associated LRRK2 kinase phosphorylates multiple Rab GTPases, including Rab8A and Rab10. We show here that LRRK2 kinase interferes with primary cilia formation in cultured cells, human LRRK2 G2019S iPS cells and in the cortex of LRRK2 R1441C mice. Rab10 phosphorylation strengthens its intrinsic ability to block ciliogenesis by enhancing binding to RILPL1. Importantly, the ability of LRRK2 to interfere with ciliogenesis requires both Rab10 and RILPL1 proteins. Pathogenic LRRK2 influences the ability of cells to respond to cilia-dependent, Hedgehog signaling as monitored by Gli1 transcriptional activation. Moreover, cholinergic neurons in the striatum of LRRK2 R1441C mice show decreased ciliation, which will decrease their ability to sense Sonic hedgehog in a neuro-protective circuit that supports dopaminergic neurons. These data reveal a molecular pathway for regulating cilia function that likely contributes to Parkinson’s disease-specific pathology. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Parkinson’s disease-associated LRRK2 kinase phosphorylates multiple Rab GTPases, including Rab8A and Rab10. We show here that LRRK2 kinase interferes with primary cilia formation in cultured cells, human LRRK2 G2019S iPS cells and in the cortex of LRRK2 R1441C mice. Rab10 phosphorylation strengthens its intrinsic ability to block ciliogenesis by enhancing binding to RILPL1. Importantly, the ability of LRRK2 to interfere with ciliogenesis requires both Rab10 and RILPL1 proteins. Pathogenic LRRK2 influences the ability of cells to respond to cilia-dependent, Hedgehog signaling as monitored by Gli1 transcriptional activation. Moreover, cholinergic neurons in the striatum of LRRK2 R1441C mice show decreased ciliation, which will decrease their ability to sense Sonic hedgehog in a neuro-protective circuit that supports dopaminergic neurons. These data reveal a molecular pathway for regulating cilia function that likely contributes to Parkinson’s disease-specific pathology.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -35,21 +35,119 @@ We show here that Rab8A and Rab10 have opposing roles in normal ciliogenesis. Un
 
 ## Results
 
-## Rab8A increases while Rab10 inhibits cilia formation in A549 cells
+### Rab8A increases while Rab10 inhibits cilia formation in A549 cells
 
 To explore the relationship between primary cilia and two important LRRK2 substrates, we revisited the contributions of Rab8A and Rab10 to primary cilia formation. Throughout the text, Rab8 will refer to Rab8A unless otherwise indicated. Consistent with previous reports (Yoshimura et al., 2007; Nachury et al., 2007; Feng et al., 2012; Knödler et al., 2010; Sato et al., 2014; Babbey et al., 2010), some of the total pool of Rab8A localized at the base and within primary cilia (detected with anti-Arl13b antibody; Figure 1A). In contrast, a portion of the total pool of Rab10 localized only to the base of cilia in both hTERT-RPE as well as primary, antibody-panned, rat astrocyte cells (Figure 1A). To study the roles of Rab8A and Rab10 in primary cilia formation, the proteins were knocked out of A549 cells using CRISPR-Cas9, and their depletions were confirmed by immunoblot (Figure 1—figure supplement 1). As shown previously, loss of Rab8A decreased significantly the capacity of A549 or RPE cells to generate primary cilia (Figure 1B–D). Surprisingly, loss of Rab10 increased the percentage of cells that made primary cilia compared with parental wild type A549 and RPE cells (Figure 1B,C,E). Importantly, the effects of Rab8A or Rab10 knockout on primary cilia formation were reversed upon re-expression of exogenous Rab8A or Rab10 wild type proteins (Figure 1D,E; Rab10,~4 fold overexpressed and Rab8A,~10 fold): exogenous Rab8A stimulated while Rab10 inhibited ciliogenesis in cells lacking these proteins. Note that RPE cells start at a higher level of intrinsic ciliation (Figure 1C, right) and thus there is less possibility of enhancing ciliation in this cell type.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig1-v1.jpg)
+
+**Figure 1.:** hTERT-RPE cells (Figure 1A, upper panels) or primary rat astrocytes (Figure 1A, lower panels) were transfected with GFP-Rab8A (A, left) or GFP-Rab10 (A, right). 24 hr post transfection, cells were fixed and stained for primary cilia using anti-Arl13b antibodies (red). Dotted boxes indicate areas that are magnified in the insets. Yellow indicates co-localization between GFP-Rabs (green) and Arl13b (red). (B) A549 knock out cells lacking endogenous Rab10 (Rab10-KO) or Rab8A (Rab8-KO) were ciliated on glass coverslips and 48 hr later fixed and stained for primary cilia Arl13b (green). (C) Quantitation of data shown in (B) for A549 cells and also RPE cells analyzed in parallel. Error bars represent SEM from three experiments with >200 cells per condition in each experiment. (D,E) Rab8A-KO or Rab10-KO A549 cells were infected with lentivirus to stably express wild type GFP-Rab8A or GFP-Rab10, respectively. Cells were ciliated on coverslips and stained for Arl13b. (D) Quantitation of primary cilia in Rab8A-KO A549 cells stably expressing GFP-Rab8A-WT. (E) Quantitation of primary cilia in Rab10-KO A549 cells stably expressing GFP-Rab10-WT. (F) Quantitation of primary cilia in Rab8A-KO A549 cells treated with Rab10 shRNA. (G) Quantitation of primary cilia in WT and Rab10-KO A549 cells expressing GFP-Rab8A. Error bars represent SEM from three experiments with >200 cells per condition. *, p<0.05; **, p<0.01; ***. p<0.001; ns = not significant. Scale bars = 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A549 Rab10-KO and Rab8A-KO cells infected with lentivirus to deliver shRNAs targeting Rab8A or Rab10, respectively. A549 knock out cells were rescued by lentiviral delivery of GFP-Rab8A or Rab10. Immunoblot of 60 µg cell lysate probed with anti-GFP, anti-Rab8A or anti-Rab10 antibodies; tubulin was used as loading control. Numbers at left indicate mobility of molecular weight markers in kDa.
+
 Finally, to investigate the relationship between Rab8A ciliogenesis activation and Rab10 suppression, A549 cells lacking Rab8A were further depleted of Rab10 using a lentiviral shRNA. More than 90% of the endogenous Rab10 was depleted in these cells as seen by immunoblot (Figure 1—figure supplement 1, right panel). Surprisingly, loss of both Rab8A and Rab10 from A549 cells reversed the block of ciliogenesis observed in Rab8A KO cells (Figure 1F). Thus, Rab10 is a dominant suppressor of cilia formation. Even though A549 Rab10 KO cells are significantly ciliated, exogenous Rab8A even further increases ciliation in these cells (Figure 1G). Thus, Rab8A drives a Rab10-independent pathway for cilia formation. Note that loss of either Rab10 or Rab8A does not change the level of the other protein (Figure 1—figure supplement 1). In addition, Rab8 goes to the cilium in Rab10KO cells, as in wild type cells.
 
-## Rab8A and Rab10 mutants cannot be used to mimic phosphorylation
+### Rab8A and Rab10 mutants cannot be used to mimic phosphorylation
 
 Phosphorylation of Rab proteins by LRRK2 has been shown to interfere with their ability of to bind to numerous, cognate effector proteins (Steger et al., 2016). Studies of protein phosphorylation often utilize substrate mutants generated in the hope that they cannot be phosphorylated (T-to-A) or alternatively, that they will mimic the phosphorylation state (T-to-E). Unfortunately, we were unable to use such mutant Rab8A or Rab10 proteins as a series of functional and localization tests showed that they are nonfunctional. The non-phosphorylatable, threonine to alanine (TA) mutations in both Rab8A and Rab10 failed to reverse their respective ciliation phenotypes observed in knockout cells (Table 1), indicating that they are non-functional. Light microscopy of A549 cells expressing these mutants showed that unlike wild type Rab8A protein, Rab8A-TA was more concentrated over the Golgi and not seen in cilia; Rab8A-TE was more dispersed than the wild type protein and may aggregate upon expression in HEK293T cells. Rab10-TE was much more concentrated on the Golgi than the wild type protein and Rab10-TA was entirely cytosolic (Figure 2A), as confirmed by membrane fractionation after expression in HEK293T cells (Figure 2B). In vitro experiments using biotin-geranyl pyrophosphate as substrate confirmed that neither Rab8A-TE nor Rab10-TA mutants are good substrates for Rab geranylgeranyl transferase (Figure 2C). Finally, unlike the phosphorylated versions of Rab8A or Rab10 proteins (Steger et al., 2017), Rab8A-TE and Rab10-TE failed to show enhanced interaction with GFP-RILPL1 protein (Figure 2—figure supplement 1). This is a very important caution—the TA and TE mutants do not reflect the desired states and should not be used in future experiments exploring the consequences of Rab8A and Rab10 phosphorylation.
 
-## Phosphorylated Rab10 clusters near peri-centriolar membranes
+![Figure 2.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig2-v1.jpg)
+
+**Figure 2.:** (A) Rab8A-KO and Rab10-KO A549 cells were infected with lentivirus to stably express wild type (WT), phospho-mimetic (TE) or non-phosphorylatable (TA) mutants of Rab8A and Rab10, respectively. 24 hr post transfection, cells were fixed and stained with anti-GFP. (B) HEK293T cells were transfected with wild type (WT), T73E (TE) or T73A (TA) mutant GFP-Rab10 or GFP-Rab8A as indicated. After 24 hr, cells were fractionated into membrane and cytosol and 50 µg membranes and the equivalent volume of cytosol was immunoblotted using anti-GFP antibodies. Graph indicates the percent of total Rab10 or Rab8A protein that was membrane associated. (C) In vitro prenylation measured using cytosol fractions from (B), incubated for 4 hr with biotin-geranyl pyrophosphate at room temperature. The reaction was immunoprecipitated with GFP binding protein-Sepharose and samples were immunoblotted for biotin using Strepatavidin-Alexa 800 and anti-GFP.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** HEK293T cells were co-transfected with Y1699C-LRRK2, phospho-site mutants of HA-tagged Rab8A (WT/T72A/T72E) (A) or HA-tagged Rab10 (WT/T72A/T72E) and GFP-RILPL1 or GFP alone. Cells were treated with MLi2 as indicated. Lysates were immunoprecipitated with anti-GFP antibody and immunoblotted for Rab8A or Rab10 using anti-HA antibody to detect total proteins. Total lysates were immunoblotted for anti-HA, anti-GFP and anti-LRRK2 (UDD3). Immunoprecipitation is indicated by GFP-IP analyzed by immunoblot using anti-HA antibody and anti-pRab8A or anti-pRab10 antibody for detecting phosphorylated protein. Graph at bottom quantified the relative amount of Rab10 that was bound to RILPL1 in panel B. Error bars represent SEM from three independent experiments.
+
+**Table 1.**
+ Summary of Rab8A and Rab10 phosphosite mutant protein properties
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rab protein</th>
+      <th>Membrane associated</th>
+      <th>Localization</th>
+      <th>In vitro prenylated</th>
+      <th>In/at base of cilia</th>
+      <th>Rescue ciliation in knockout cells</th>
+      <th>Bind RILPL1 strongly</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rab8A WT</td>
+      <td>YES</td>
+      <td>Perinuclear Cilium</td>
+      <td>YES</td>
+      <td>In/at base</td>
+      <td>YES</td>
+      <td>When phosphorylated</td>
+    </tr>
+    <tr>
+      <td>Rab8A TA</td>
+      <td>YES</td>
+      <td>Golgi</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>Rab8A TE</td>
+      <td>Aggregated?</td>
+      <td>Golgi?</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>POORLY</td>
+    </tr>
+    <tr>
+      <td>Rab10 WT</td>
+      <td>YES</td>
+      <td>Perinuclear Cilium base</td>
+      <td>YES</td>
+      <td>At base</td>
+      <td>YES</td>
+      <td>When phosphorylated</td>
+    </tr>
+    <tr>
+      <td>Rab10 TA</td>
+      <td>NO</td>
+      <td>Cytosol</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <td>Rab10 TE</td>
+      <td>YES</td>
+      <td>Golgi</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>NO (dominant effect)</td>
+      <td>POORLY</td>
+    </tr>
+  </tbody>
+</table>
+
+### Phosphorylated Rab10 clusters near peri-centriolar membranes
 
 Rab10 is phosphorylated in cells transfected with LRRK2 kinase (Steger et al., 2016; Purlyte et al., 2018). To identify the localization of both total and phospho-Rab10 (pRab10) by immuno-staining, HeLa cells were co-transfected with the activated, pathogenic mutant LRRK2-R1441G and GFP-Rab10. After 24 hr,~80% of cells expressing exogenous LRRK2 showed total Rab10 concentrated over a perinuclear cluster (Figure 3A,B). Furthermore, labeling of LRRK2 expressing cells using a commercial anti-phosphoT73 Rab10-specific antibody revealed pRab10 staining only in LRRK2 co-expressing cells; the strongest pRab10 signal was also detected in the perinuclear region together with total Rab10 staining (Figure 3C). pRab10 localized adjacent to centrioles labeled with Centrin-3, and co-localized with perinuclear transferrin receptor (TfR)-containing membranes (Figure 3C). As noted earlier, RILPL1 interacts preferentially with the phosphorylated forms of Rab8A and Rab10 (Steger et al., 2017); Figure 2—figure supplement 1). In HEK293T cells co-transfected with RILPL1-GFP and LRRK2, the clustered pRab10 co-localized perfectly with RILPL1 in the peri-centriolar region. This strong co-localization supports the conclusion that RILPL1 binds to pRab10 in cells.
 
-## RILPL1 regulates pRab10 localization
+![Figure 3.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig3-v1.jpg)
+
+**Figure 3.:** HeLa cells stably expressing GFP-Rab10 were transfected with or without LRRK2-R1441G plasmid. After 24 hr, cells were fixed and stained with the indicated antibodies. (A) Localization of total GFP-Rab10 (green) without (left) or with (right) R1441G-LRRK2 transfection. (B) Quantitation of peri-nuclear clustering of GFP-Rab10. (C) Cells were stained with rabbit anti-pRab10 antibody (red) and co-stained with either mouse anti-GFP (green), mouse anti-Centrin-3 (green) or mouse anti-transferrin receptor (TfR, green). (D) HEK293T cells were co-transfected with myc-LRRK2-R1441G and RILPL1-GFP (green). After 24 hr, cells were fixed and stained for pRab10 (red) and LRRK2 (blue). Dotted lines indicate cell boundaries. Dotted boxes indicate the enlarged region of interest. Scale bars, 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Wild type, Rab8A-KO, Rab10-KO and RILPL1-KO A549 cells were transfected with RILPL1-GFP. After 24 hr, cells were fixed and stained with antibodies against the general centriolar marker, mouse anti-Centrin-3 or with a mother centriole-specific marker, mouse anti-CEP164 antibodies and co-stained with chicken anti-GFP. (A) RILPL-GFP (green) and Centrin-3 (red). (B) RILPL1-GFP (green) and CEP164 (red). Knock out cell lines are indicated. Dotted box indicates the areas magnified in the insets.
+
+### RILPL1 regulates pRab10 localization
 
 RILPL1 has been shown to associate with the mother centriole that becomes the basal body that nucleates the primary cilium (Schaub and Stearns, 2013); RILPL1’s C-terminal half is needed for this localization. We confirmed mother centriole localization of RILPL1 in A549 cells (Figure 3—figure supplement 1); RILPL1-GFP co-localized with CEP164, a marker of the mother centriole. Previous work also indicated that RILPL1 influences the removal of signaling receptors from primary cilia (Schaub and Stearns, 2013). Primary cilia form in G1 of the cell cycle and disassemble before mitosis. In RPE cells that had been induced to form cilia by serum starvation, endogenous RILPL1 co-localized with Rab10 at the base of primary cilia, identified by staining with anti-Arl13B antibodies (Figure 4A). A similar localization was also seen in ciliated, primary rat astrocytes (Figure 4B).
 
@@ -61,15 +159,23 @@ When RILPL1 expression was decreased in HEK293T cells using a lentiviral shRNA, 
 
 Similar results were obtained for pRab10 localization in A549 RILPL1 KO cells (created using CRISPR-Cas9; protein loss was confirmed by immunoblot; Figure 4H). While LRRK2 transfected, parental A549 cells displayed most pRab10 in a peri-nuclear cluster, RILPL1 KO A549 cells had a less focused distribution of pRab10 and showed additional punctate structures in the cytosol (Figure 4F–H). These data support the conclusion that RILPL1 enhances pRab10 clustering on pericentriolar membranes.
 
-## RILPL1 suppresses cilia formation at the mother centriole
+### RILPL1 suppresses cilia formation at the mother centriole
 
 Knockout of RILPL1 in A549 cells increased the percentage of cells that contained primary cilia, and the length of the cilia also increased (Figure 5A,B). This effect was abrogated upon expression of exogenous RILPL1 (Figure 5C), indicating that exogenous RILPL1 suppresses primary cilia formation, in wild type cells and in cells lacking RILPL1 protein. A similar inhibition of ciliogenesis was also detected in RPE cells (Figure 5D). Quantitation of ciliation as a function of RILPL1 expression in RPE cells showed that the phenotype was strongest in cells showing the highest RILPL1 expression levels (Figure 5E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig5-v1.jpg)
+
+**Figure 5.:** (A) Quantitation of primary cilia in WT and RILPL1-KO A549 cells. (B) Quantitation of cilia length in WT and RILPL1-KO cells. (C) Quantitation of cells with cilia when RILPL1-GFP is expressed in WT or RILP1-KO ad A549 cells. (D) Quantitation of cells with cilia when RILPL1-GFP is expressed in WT hTERT-RPE cells. (E) Quantitation of RILPL1-GFP expression in ciliated versus non-ciliated cells RPE by determining GFP signal intensity per cell in microscopy images. (F) Quantitation of cilia in A549 RILPL1-KO cells that were either un-transfected or transfected with GFP alone, GFP-Rab10 or GFP-Rab8A. (G) Quantitation of cilia in A549 cells lacking Rab8A or Rab10 as indicated, with or without RILPL1-GFP expression.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Measurements of the distances (in µm) between centriole dots in WT A549 cells alone, A549 after RILPL1-GFP transfection and RILPL1-KO cells. (B) Measurements of the distance (in µm) between centrioles when RILPL1-GFP is expressed in A549 cells lacking RILPL1, Rab10 or Rab8A. (C) A549 cells transfected for 24 hr with RILPL1-GFP plasmid, stained with mouse anti-Centrin-3 (red) and DAPI (blue). Dotted lines indicate the cell boundaries; boxes indicate the regions of the images magnified in the lower panels. Scale bars, 10 µm. (D) Distance between centrioles as a function of RILPL1-GFP expression, determined by quantitation of GFP fluorescence in expressing cells. Error bars represent SEM from two experiments. *, p<0.05. **, p<0.01; ***, p<0.001 by Student’s unpaired, two tailed T-test.
 
 To further study how RILPL1, Rab10 and/or RILPL1/pRab10 complexes suppress ciliogenesis, GFP-Rab10 or GFP-Rab8A were expressed in A549 cells lacking RILPL1. In this background, exogenous Rab10 inhibited and Rab8A stimulated ciliogenesis, even in the absence of RILPL1 (Figure 5F). This suggests that Rab8A and Rab10 do not absolutely require RILPL1 for their effects on ciliogenesis or can mediate their effects via another protein such as the related RILPL2. In contrast, when exogenous RILPL1 was introduced into cells lacking Rab8A or Rab10, it was no longer capable of repressing ciliogenesis (Figure 5G). These experiments demonstrate that RILPL1 needs Rab10 to repress ciliogenesis, however, exogenous Rab10 can also suppress ciliogenesis independent of RILPL1 protein (Figure 5D,E). Because cells lacking Rab8A are already poorly ciliated, we cannot discern further RILPL1-inhibition in this cell background.
 
 It was recently reported that LRRK2 overexpression in HEK293T cells decreases centrosomal cohesion (Madero-Pérez et al., 2018). Since RILPL1 and pRab10 accumulate in the pericentriolar region, we examined the effect of exogenous RILPL1 on centriolar markers in A549 cells (Figure 5—figure supplement 1). As noted earlier, exogenous RILPL1 was cytosolic but also enriched at the mother centriole (Figure 3—figure supplement 1). Its expression was sufficient to trigger an increase in the distance between mother and daughter centrioles in some cells: specifically, 20% of A549 cells showed centrioles > 2 µm apart, whereas 48% of cells showed this phenotype upon RILPL1 expression. However, there was no relationship between RILPL1 expression level and centriolar distance over 3 logs of expression measured by quantitative light microscopy (Figure 5—figure supplement 1). This indicates that centriolar separation may be a secondary phenomenon, indirectly triggered in some cells by RILPL1 expression. No change in centriolar distance was detected in RILPL1 KO cells; finally, the ability of RILPL1 to increase centriole distance was completely nullified in Rab10 or Rab8A-KO cells while the RILPL1 localization remained unchanged. In summary, RILPL1 blocks ciliation by a Rab10-dependent process and may disrupts centriolar pairs in some cells under the same conditions.
 
-## LRRK2 kinase acts via a pRab10-RILPL1 pathway to inhibit ciliogenesis
+### LRRK2 kinase acts via a pRab10-RILPL1 pathway to inhibit ciliogenesis
 
 We previously reported that mouse embryonic fibroblasts (MEFs) derived from LRRK2-R1441G mice showed fewer primary cilia, a phenotype that was reversed by adding the LRRK2-specific inhibitor, MLi2 (Steger et al., 2017). Endogenous pRab10 was detected (for the first time) in R1441G LRRK2 MEF cells localized at the base of primary cilia (Figure 6A). The pRab10 staining was lost on treatment with MLi2 along with a concomitant increase in ciliogenesis (Figure 6A,C). Thus, LRRK2 phosphorylated Rab10 is seen concentrated at the base of primary cilia.
 
@@ -81,7 +187,7 @@ To investigate whether pRab10 and RILPL1 contribute to the defect in ciliogenesi
 
 Figure 6D compares two scenarios by which Rab10 and RILPL1 interfere with cilia formation. At endogenous levels of expression, we propose that pathogenic LRRK2 generates an inhibitory complex that contains pRab10 and RILPL1. RILPL1 shows enhanced binding to p-Rab10, and our data show that LRRK2 inhibition requires both of these proteins to yield a ciliation defect. In addition, in the absence of pathogenic LRRK2, upon overexpression of RILPL1, we also detect inhibition of cilia formation; this inhibition requires the presence of Rab10, and may reflect a similar inhibitor complex that requires overexpression to generate in the absence of Rab10 phosphorylation. In addition, overexpressed Rab10 can also inhibit cilia formation in a RILPL1-independent manner that may involve RILPL2 or other proteins; RILPL1 appears a more potent inhibitor than Rab10 upon overexpression. Further work is needed to explore this possibility. In summary, our data support a model in which pathogenic LRRK2 alters cilia formation by phosphorylating Rab10, which recruits RILPL1 to coordinately interfere with cilia formation (Figure 6D, right). In the absence of LRRK2 activation, exogenous RILPL1 can also block ciliation from its location adjacent to the mother centriole; in this scenario, RILPL1 requires Rab10 protein (Figure 6D, left). We speculate that additional copies of exogenous RILPL1 are sufficient to bind non-phosphorylated Rab10 protein to generate a dominant inhibitor of ciliation.
 
-## Pathogenic LRRK2 decreases sonic hedgehog signaling in MEFs and human iPS cells
+### Pathogenic LRRK2 decreases sonic hedgehog signaling in MEFs and human iPS cells
 
 How might cilia dysfunction influence Parkinson’s disease pathology? Efficient Sonic hedgehog (Shh) signaling requires the ability of many cell types to form primary cilia and traffic signaling proteins such as Smoothened into the primary cilium (Rohatgi et al., 2007; Caspary et al., 2007). Shh signaling triggers a downstream pathway that increases the expression of the Gli1 transcription factor (Dahmane et al., 1997; Niewiadomski and Rohatgi, 2015). To test whether LRRK2 interference with ciliogenesis alters the ability of cells to respond to Shh, R1441G-expressing MEF cells were treated with Shh, with or without the LRRK2 inhibitor, MLi2; the amount of Gli1 transcript produced was then monitored by qPCR. As shown in Figure 7A, Gli1 expression increased upon addition of Shh; moreover, inhibition of the LRRK2 kinase in these cells resulted in an almost two fold increase in the response of these cells to Shh. These experiments show clearly that the ability of LRRK2 to block cilia formation correlates directly with the ability of LRRK2 expressing cells to carry out Shh signal transduction.
 
@@ -91,9 +197,17 @@ How might cilia dysfunction influence Parkinson’s disease pathology? Efficient
 
 Similar results were obtained using patient-derived, induced pluripotent stem cells (iPS cells) carrying the LRRK2 G2019S mutation (Figure 7B–E). Undifferentiated LRRK2 G2019S iPS cells (LRRK2G2019S/WT), and the corresponding, zinc finger-corrected wild type cell line (LRRK2WT/WT; Sanders et al., 2014) were plated on matrigel-coated coverslips and stained for the presence of cilia after 72 hr. Cells carrying the G2019S mutation showed 50% less ciliation than the corresponding, corrected iPS cells; the length of the cilia were comparable (Figure 7B,D). Importantly, the extent of ciliation in the G2019S iPS cells was fully restored upon treatment with MLi2 (Figure 7C). Like their R1441G LRRK2 MEF cell counterparts, LRRK2G2019S/WT iPS cells showed 50% less Gli1 expression than wild type cells, and this reduction was directly proportional to the extent of their loss of cilia (Figure 7C,E). These experiments demonstrate that pathogenic LRRK2 proteins can influence Shh signaling by changing the extent of ciliation in multiple cell types. That a heterozygous LRRK2 mutant iPS cell line showed this defect was striking.
 
-## LRRK2 R1441C mice show cilia defects in the brain
+### LRRK2 R1441C mice show cilia defects in the brain
 
 To study further whether primary cilia defects seen in cell culture are also present in the brain, brain sections from 7 month old, LRRK2 R1441C mutant mice were compared with age- and litter-matched wild type animals. Sagittally sectioned brain slices were stained with neuron-specific primary cilia markers: adenylate cyclase 3 (AC3), the major neuron-specific primary cilia marker, and somatostatin receptor 3 (SSTR3) that is also found in primary cilia in certain brain regions (Händel et al., 1999; Bishop et al., 2007; Berbari et al., 2008). According to the human protein atlas and (Mandemakers et al., 2012; West et al., 2014), LRRK2 expression is highest in the cerebellum, hippocampus and cortex (Figure 8G). The majority of the neurons in the cortex, striatum and hippocampus (but not the cerebellum) had AC3+ primary cilia. SSTR3+ cilia were found in the cortex and the hippocampus but not in the striatum, presumably because striatal neurons themselves secrete somatostatin to signal to other cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig8-v1.jpg)
+
+**Figure 8.:** Brains from wild type and 7 month old R1441C LRRK2 mice were stained with rabbit antibodies to neuron-specific primary cilia markers: somatostatin receptor 3 (SSTR3) or adenylate cyclase 3 (AC3). Primary cilia were quantified from somatosensory cortex, hippocampus and striatal regions. (A) Quantitation of neurons with SSTR3+ primary cilia in the cortex. (B) Percent of total neurons with AC3+ primary cilia in the cortex. (C) Representative image showing neuronal primary cilia stained for AC3 (red) and nuclei (blue) in the cortex. (D) Average length of primary cilia in the cortex (µm). (E) Cholinergic neurons in the striatum stained with goat anti-ChAT (choline acetyltransferase antibody, green), anti-AC3 (red) and nuclei (blue). (F) Quantitation of ChAT+ and ChAT- neurons in the striatum with AC3+ primary cilia;>50 cholinergic neurons were counted. (G) Cartoon depicting the regions in sagittal sections of mouse brains (yellow) where neurons were sampled for primary cilia (left image). Right panel depicts reciprocal communication between ChAT +neurons in the striatum (green) with tyrosine hydroxylase positive (TH+) dopaminergic neurons (grey) linked via Glia derived neurotrophic factor (GDNF) and Sonic hedgehog (Shh) signaling. Error bars represent standard error of the mean from n = 4 mice,>500 cells per mouse; p values were determined by Student’s unpaired 2-tailed t-test.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/40202/elife-40202-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Anti-Adenylate cyclase three staining for primary cilia in hippocampal (A–C) or striatal (D–F) regions of wild type and 7 month old LRRK2 R1441C mouse brains. (A,D) Length of primary cilia measured in µm. (B, E) Quantitation of neurons with primary cilia. (C, F) Representative images of brain sections stained with anti-AC3 antibodies (red) and DAPI (blue). Scale bar, 10 µm. Error bars represent SEM from four mice. WT and R1441C are indicated. p-values>0.05 were considered not significant (ns).
 
 Primary cilia length and density varied between these brain regions. Consistent with data from MEF-R1441G and human iPS cells, fewer neurons in the somatosensory cortex of R1441C mouse brains had primary cilia compared to wild type brains, detected using anti-SSTR3 and AC3 antibodies (Figure 8A,B). No significant difference was found between R1441C and wild type neurons in terms of overall cilia lengths in the cortex, hippocampus or striatum (Figure 8D). Cilia densities were slightly lower in R1441C hippocampus but the differences were not statistically significant (Figure 8—figure supplement 1).
 
@@ -117,72 +231,380 @@ In summary, pathogenic LRRK2 has a profound effect on cilia in cultured cells, a
 
 ## Materials and methods
 
-## Reagents
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>RILPL1</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>LRRK2</td>
+      <td>PMID: 2912546 PMID: 29125462</td>
+      <td>NM_198578.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Rab8a</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Rab10Rab10</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.Cg-Lrrk2tm1. 1Shn/J mouse,</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX stock #009346</td>
+      <td>Tong et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>SA Sprague Dawley rat</td>
+      <td>Charles River</td>
+      <td>Crl:SD/code 400</td>
+      <td>Foo et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (shRNA) / (Homo sapiens)</td>
+      <td>human Rab10</td>
+      <td>TRCN0000029191</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (shRNA) / (Homo sapiens)</td>
+      <td>human Rab8a</td>
+      <td>TRCN0000300539</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (shRNA) / (Homo sapiens)</td>
+      <td>human RILPL1</td>
+      <td>TRCN0000159762</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (shRNA) / (Mus musculus)</td>
+      <td>mouse RILPL1</td>
+      <td>TRCN0000033243</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (shRNA) / (Mus musculus)</td>
+      <td>mouse Rab8a</td>
+      <td>TRCN0000100422</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549 Rab8 KO</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549 Rab10 KO</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>https://mrcppureagents.dundee.ac.uk/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MEF-R1441G</td>
+      <td>https://mrcppureagents.dundee.ac.uk/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hTert-RPE</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>human iPSC</td>
+      <td>PMID: 24148854</td>
+      <td></td>
+      <td>Sanders et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCB306- eGFP-Rab8</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td>Steger et al., 2017 Steger et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCB306- eGFP-Rab10</td>
+      <td>PMID: 9212815</td>
+      <td></td>
+      <td>Purlyte et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCB306- eGFP-LRRK2</td>
+      <td>PMID: 9212815</td>
+      <td></td>
+      <td>Purlyte et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR-2x- myc-LRRK2</td>
+      <td>Addgene</td>
+      <td>25361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5D- FRT-TO-RILPL1</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td>Steger et al., 2017 Steger et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (gRNA)</td>
+      <td>RILPL1</td>
+      <td>https://mrcppureagents.dundee.ac.uk/</td>
+      <td>DU57861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (gRNA)</td>
+      <td>RILPL1</td>
+      <td>https://mrcppureagents.dundee.ac.uk/</td>
+      <td>DU57867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-RILPL1</td>
+      <td>Sigma</td>
+      <td>HPA-014314</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-Rab10</td>
+      <td>Cell Signaling</td>
+      <td>8127</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-LRRK2</td>
+      <td>Abcam</td>
+      <td>AB133518</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-phospho T73 Rab10</td>
+      <td>Abcam</td>
+      <td>AB230261</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-Rab8</td>
+      <td>Cell Signaling</td>
+      <td>6975</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-myc</td>
+      <td>9E10 clone hybridoma</td>
+      <td></td>
+      <td>(1:1)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken polyclonal anti-GFAP</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-05198</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-choline acetyl transferase</td>
+      <td>Millipore</td>
+      <td>AB144P</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Arl13b</td>
+      <td>Neuromab</td>
+      <td>75–287</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Cep164</td>
+      <td>Santa Cruz</td>
+      <td>SC-515403</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-adenylate cyclase 3</td>
+      <td>Santa Cruz</td>
+      <td>SC-588</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-NeuN</td>
+      <td>Biolegend</td>
+      <td>834501</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-GFP</td>
+      <td>Neuromab</td>
+      <td>N86-38</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MLi2</td>
+      <td>PMID: 29125462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 MLi2 LRRK2 inhibitor (Scott et al., 2017) was synthesized as described in (Miller et al., 2014). All DNA constructs and antibodies generated for the experiments are described in (Purlyte et al., 2018) and can be found at https://mrcppureagents.dundee.ac.uk.
 
-## General cloning and plasmids
+### General cloning and plasmids
 
 DNA constructs were amplified in E. coli DH5α and purified using mini prep columns (Econospin). DNA sequence verification of all plasmids was performed by Sequetech (http://www.sequetech.com). The following constructs were used: eGFP-Rab8A and eGFP-Rab10 were cloned into lentivirus vector pSLQ1371 between BstB1 and AvrII sites (Purlyte et al., 2018). Rab8A T72E/A and Rab10 T73E/A were generated by site directed mutagenesis using Pfu polymerase (Agilent Technologies). eGFP-LRRK2-G2019S was cloned into modified pSLQ1371 with eGFP at the N-terminus. Myc-LRRK2 was obtained from Addgene (#25361) and the R1441G mutation was introduced as described (Purlyte et al., 2018). RILPL1 was cloned into pcDNA5d/FRT/TO using Gibson assembly and RILPL1-C and RILPL1-N were made by site directed mutagenesis. Lentiviral shRNA pLKO.1 plasmids were obtained as bacterial stocks from Sigma: mouse Rab8A (TRCN0000100422), human Rab8A (RCN0000300539), human Rab10 (TRCN0000029191), mouse Rab10 (TRCN0000335543), mouse RILPL1 (TRCN0000033243) and human RILPL1 (UTR TRCN0000159762). For human Rab10, pSIH vector was also used with a GFP reporter. The shRNA sequence for hRab10 5'- GATCCGAAGATCAAGCTACAGATCTTCCTGTCAGAATCTGTAGCTTGATCTTCTTTTTG was cloned using EcoRI and BamHI restriction sites.
 
-## Cell culture, transfections and ciliogenesis
+### Cell culture, transfections and ciliogenesis
 
 HEK293T, HeLa, A549 and hTERT-RPE cells were obtained from ATCC and were cultured in Dulbecco’s modified Eagle’s medium containing 10% fetal bovine serum, 2 mM Glutamine, penicillin (100 U/ml)/streptomycin (100 µg/ml) and non-essential amino acids. HEK293T cells were transfected with Polyethylenimine HCl MAX 4000 (PEI) (Polysciences, Inc.) as described (Reed et al., 2006). RPE and HeLa cells were transfected with Fugene6 (Promega) while rat astrocytes and A549 cells were transfected using lipofectamine 3000 according to the manufacturer. Cells were checked routinely for Mycoplasma using either MycoALert Mycoplasma Detection Kit (Lonza LT07-318) or PCR.
 
-## Human iPS and rat astrocyte cell culture
+### Human iPS and rat astrocyte cell culture
 
 Human patient derived G2019S = NM_198578.3 (LRRK2): c.6055G > A (p.Gly2019Ser) iPS cultures were maintained as described (Sanders et al., 2014). Cells were plated on 4% matrigel coated, 24 well plates. Colonies of iPS cells were dissociated with Accutase, and resuspended in mTesR medium with 10 µM Y-27632. Cultures of primary rat astrocytes were obtained by antibody panning from rat pups as described (Foo et al., 2011). In brief, six to ten postnatal Sprague-Dawley rat cortices were mechanically and enzymatically dissociated to produce single cells. They were passed over successive, antibody-coated negative panning plates to rid the suspension of microglia, endothelial cells, and oligodendrocyte precursor cells before selecting for astrocytes with an anti-ITGB5-coated plate. Astrocytes that attached to the anti-ITGB5-coated plate were trypsinized and plated onto poly-D lysine coated ACLAR coverslips. Cells were incubated at 37°C with 10% CO2 and 90% O2 for one to three weeks.
 
-## Lentivirus production
+### Lentivirus production
 
 Lentivirus-based shRNA was used for gene knockdown of human Rab8A, mouse/human Rab10, mouse/human RILPL1 using pLKO or pSIH-GFP vector. The lentiviral vector was co-transfected with packaging vectors psPAX2, pMD2 VSV-G in HEK293T cells using PEI. pLKO-puro-scramble or pSIH-GFP-scramble was used as control. After 48 hr, culture supernatants were collected and virus concentrated 10x overnight with Lenti-X concentrator (Clontech) according to the manufacturer. Virus was transduced onto target cells with polybrene (2 µg/ml). To make stable cells, infected cells were selected with puromycin (0.2–1 µg/ml) 48 hr after infection. Expression of the target protein was verified by GFP-fluorescence, qPCR and/or immunoblotting.
 
-## Lysis and immunoblotting
+### Lysis and immunoblotting
 
 Cells were lysed 24 hr after transfection in ice-cold lysis buffer containing 50 mM Tris/HCl, pH 7.5, 1% (v/v) Triton X-100, 1 mM EGTA, 1 mM sodium orthovanadate, 50 mM NaF, 10 mM 2-glycerophosphate, 5 mM sodium pyrophosphate, 0.1 μg/ml mycrocystin-LR (Enzo Life Sciences), and EDTA-free protease inhibitor cocktail (Sigma). Lysates were centrifuged at 13800 x g for 15 min at 4°C and supernatants were quantified by Bradford assay (Thermo Scientific) and 60 µg of proteins used for immunoblotting. Antibodies were diluted in blocking buffer containing 5% milk in 0.05% Tween in Tris buffered saline (TBS) and incubated overnight on the blots.
 
-## Inducing primary cilia
+### Inducing primary cilia
 
 Cells were grown to confluency in DMEM with serum. Mouse embryonic fibroblasts (MEFs) (WT and R1441G) as well as hTERT-RPE cells were ciliated by overnight serum starvation in DMEM medium alone. For A549 cells, cells were plated at 80% confluency and 24 hr later, subjected to 2% serum for 48 hr. Neither rat astrocytes nor iPS cells needed cilia induction. Rat astrocytes made primary cilia after one week in culture while undifferentiated iPS cells made cilia by 72 hr in culture on matrigel. To identify primary cilia, cells were stained for cilia markers Arl13b or acetylated tubulin.
 
-## Membrane fractionation
+### Membrane fractionation
 
 Cells were chilled on ice, washed with ice cold PBS, and swelled in 10 mM HEPES pH 7.4. After 15 min, 5X buffer was added to achieve a final concentration of resuspension buffer (50 mM HEPES pH 7.4, 150 mM NaCl, 2 mM MgCl2, 2 mM DTT, 20 µM GDP, 1X protease inhibitor cocktail (Sigma)), and the suspension was passed 20 times through a 25 gauge syringe. Nuclei were pelleted by centrifugation at 1,000 X g for 5 min at 4°C. The postnuclear supernatant was spun 100,000 X g for 20 min in a table top ultracentrifuge in TLA100.2 rotor; the resulting supernatant was the cytosol fraction. Membrane pellets were solubilized in 1% Triton X100 containing 1X resuspension buffer. Protein was estimated by Bradford assay (BioRad, Richmond, CA). Samples containing 25 μg of membrane protein, or the equivalent volume of cytosolic protein, were heated at 95°C for 2 min after addition of 5X SDS–PAGE sample buffer. Samples were loaded in duplicate onto 12% SDS-PAGE gels for imunoblotting; filters were incubated with chicken anti-GFP (Aves, 1:2000) overnight then with donkey anti‐chicken 680 (Licor, 1:10,000) for 1 hr, imaged using an Odyssey Infrared scanner (Licor), and quantified using ImageJ software.
 
-## Hedgehog signaling
+### Hedgehog signaling
 
 MEFs were cultured in 24 well plates, and upon confluency, serum starved in DMEM and treated with 200 nM MLi2 or DMSO. At the same time, cells were treated with either 25 nM Sonic hedgehog (Shh) or PBS. After 16 hr ± MLi2,±Shh treatment, cells were lysed for RNA extraction and qPCR of Gli1 mRNA. Human patient derived iPS cells already have high Gli1 levels and did not need Shh treatment; iPS cells were lysed for qPCR analysis of Gli1 after 72 hr.
 
-## Quantitative PCR
+### Quantitative PCR
 
 To extract total RNA, cells are lysed in Trizol (Sigma) for 5 min in an RNA-free zone. RNA extraction was performed using chloroform/isopropyl alcohol according to the manufacturer. RNA was stored at −80°C. cDNA was synthesized using 500 ng to 1 µg RNA using high capacity cDNA synthesis kit with multiscribe reverse transcriptase (Applied Biosystems). The cDNA was diluted 50 fold and 1 µl cDNA was used as template in the PowerUp SYBR green 2X master mix and analyzed in a qPCR machine (7900HT Applied Biosystems). Gene expression was compared using 2^(delta-delta Ct) method with GAPDH or Actin as internal controls. The primers used for the qPCR were as follows – RAB10 HGNC:9759 -fw-GTGGGGAAGACCTGCGTCCTTT, rv- GAGGTTGTGATGGTGTGAAATCGC; RAB8A HGNC:7007 -fw–CTGGCGAGAGTGAAAAATGC, rv–AAAAGCTGGCCCTCGACTAT; RILPL1 HGNC:26814-fw–ATGGAAGAGGAAAACCGAATACC, rv–AGGCGCTTCTTATCTCGGGA; ACT HGNC:929-fw–GGCATCCTCACCCTGAAGTA,rv–AGAGGCGTACAGGGATAGCA; HPRT1 HGNC:5157-fw–GGTCAGGCAGTATAATCCAAAG, rv–GGACTCCAGATGTTTCCAAAC; GLI1 HGNC:4317 -fw–GAAGTCATACTCACGCCTCGAA, rv–CAGCCAGGGAGCTTACATACAT; Mus musculus GAPDH-fw–AGGTCGGTGTGAACGGATTTG, rv–TGTAGACCATGTAGTTGAGGTCA; Mus musculus RAB10-fw–GGCAAGACCTGCGTCCTTTT, rv–GTGATGGTGTGAAATCGCTCC; mRILPL1-fw–GGTTGCGCGTAGAGAGGATG, rv–CTCACGCTCTGACATGCCTTC; Mus musculus GLI1-fw- CCAAGCCAACTTTATGTCAGGG, rv- AGCCCGCTTCTTTGTTAATTTGA.
 
-## Generation of mutant mice
+### Generation of mutant mice
 
 The LRRK2R1441C/R1441C mice were obtained from The Jackson Laboratory (B6.Cg-Lrrk2tm1.1Shn/J mouse, JAX stock #009346; Tong et al., 2009) and kept in specific pathogen-free conditions at the University of Dundee (UK). All animal studies were ethically reviewed and carried out in accordance with Animals (Scientific Procedures) Act 1986 and regulations set by the University of Dundee and the U.K. Home Office. Animal studies and breeding were approved by the University of Dundee ethical committee and performed under a U.K. Home Office project license. Mice were multiply housed at an ambient temperature (20–24°C) and humidity (45–55%) and maintained on a 12 hr light/12 hr dark cycle, with free access to food (SDS RM No. three autoclavable) and water. Genotyping of mice was performed by PCR using genomic DNA isolated from ear biopsies. Primer 1 (5’ -CTGCAGGCTACTAGATGGTCAAGGT −3’) and Primer 2 (5’ –CTAGATAGGACCGAGTGTCGCAGAG- 3’) were used to detect the wild-type and knock-in alleles. Homozygous LRRK2-R1441C and littermate wild-type controls (7 months of age) were used for experiments shown in Figure 8. The genotype of these mice was confirmed by PCR on the day of experiment.
 
-## Generation of knock out A549 cells
+### Generation of knock out A549 cells
 
 A549 Rab8A knockout (Steger et al., 2017) and Rab10 knock-out (Ito et al., 2016) cell lines have been described (Steger et al., 2017). The A549 RILPL1 knockout cell line was generated using sense and anti-sense paired guides DU57861 and DU57867 (available at https://mrcppureagents.dundee.ac.uk), targeting exon 3 of RILPL1; sense guide: GGTGATGAAGAAGCTGAAGG (DU57861); anti-sense guide: GCTCCCGCTCTGACATGCCT (DU57867). Cells at about 80% confluency were co-transfected in a six-well plate with the pair of constructs using Lipofectamine LTX reagent (9 μl Lipofectamine LTX and 2.5 mg DNA per well). After 24 hr transfection, the medium was replaced with medium Supplemented with puromycin (2 mg/ml). After 24 hr selection, the medium was replaced with medium without puromycin and cells were left to recover for 48 hr before performing single-cell sorting using an Influx cell sorter (Becton Dickinson). Single cells were placed in individual wells of a 96-well plate containing DMEM Supplemented with 10% FBS, 2 mM L-glutamine, 100 units/ml penicillin,100 mg/ml streptomycin and 100 mg/ml normocin (InvivoGen). At about 80% confluency individual clones were transferred into six-well plates and screened for RILPL1 knock-out by immunoblotting.
 
-## Light microscopy
+### Light microscopy
 
 Cells were plated on collagen coated coverslips transfected with indicated plasmids. Cells were fixed with 3% paraformaldehyde for 20 min, permeabilized for 3 min in 0.1% Triton X 100 (or 0.1% saponin for anti-phospho Rab10 antibody staining) and blocked with 1% BSA in PBS. Antibodies were diluted as follows: mouse anti-Arl13b (1:1000, Neuromab), mouse anti-GFP (Neuromab, 1:1000); mouse anti-Myc (9E10 Hybridoma culture supernatant – 1:2), rabbit anti-RILPL1 (Sigma, 1:500), rabbit anti-GCC185 (Cheung et al. 2015, 1:1000), rabbit anti phospho Rab10 (1:1000, Abcam), rabbit anti adenylate cyclase III (Santa Cruz 1:100), mouse anti-NeuN (Proteintech, 1:1000), goat anti choline acetyltransferase (Millipore 1:100), rabbit anti Rab8A and Rab10 (1:1000, Cell Signaling), rabbit anti RILPL1 antibody (Steger et al., 2017), mouse anti tubulin (1:2000, Sigma), mouse anti acetylated tubulin (1:2000, Sigma), mouse anti Centrin-3 (gift from Tim Stearns, Stanford), chicken anti GFAP (1:5000, Novus Biologicals), mouse anti Transferrin receptor (1:500, BD Bioscience). Highly cross absorbed H + L secondary antibodies (Life Technologies) conjugated to Alexa 488, Alexa 568 or Alexa 647 were used at 1:2000 or 1:4000. All antibody dilutions for tissue staining included 1% DMSO to help antibody penetration. All images were obtained using a spinning disk confocal microscope (Yokogawa) with an electron multiplying charge coupled device (EMCCD) camera (Andor, UK) and a 100 × 1.4 NA oil immersion objective. Images were analyzed using Fiji (https://fiji.sc/) and whenever necessary, were presented as maximum intensity projections. Nuclei were stained using 0.1 µg/ml DAPI (Sigma).
 
-## In vitro prenylation
+### In vitro prenylation
 
 For in vitro prenylation, cytosol obtained from membrane fractionation was incubated with 6.7 µM biotin-geranyl pyrophosphate (Jena Bioscience) for 4 hr, rotating at room temperature. GFP-Rab8A or GFP-Rab10 were then immunoprecipitated using GFP binding protein immobilized on Sepharose for 1 hr at 4°C. Resin was washed 3 times with 1X membrane fractionation resuspension buffer and eluted with 2X SDS-PAGE sample buffer. The elutions were run on 12% SDS-PAGE gels for immunoblotting, detecting prenylation Streptavidin 800 nm (Licor, 1:1000) then chicken anti GFP (Aves 1:2000). Membranes were incubated with donkey anti chicken 680 (Licor 1:10,000) for 1 hr, imaged using an Odyssey Infrared scanner (Licor0 and quantified using ImageJ software. For Rab8A, dishes were treated with 10 µM lovastatin 16 hr before lysis—because Rab8A is monoprenylated, this increased the pool of non-prenylated Rab8A in the cytosol, enabling us to assay for prenylation capacity in vitro.
 
-## Mouse brain processing and primary cilia analyses
+### Mouse brain processing and primary cilia analyses
 
 Homozygous LRRK2-R1441C and littermate wild-type controls (7 months of age) were terminally anesthetized and perfused by injection of PBS into the left cardiac ventricle followed by injection of 4% paraformaldehyde in PBS before collecting the brains for analysis. Mice brains were immersed in 30% sucrose for 2 days until they were completely submerged. Brains were then embedded in plastic blocks with OCT (BioTek, USA), frozen on dry ice and stored at −80°C. While embedding, the anterior and posterior sides of the brains in the block were noted. For cryosectioning, OCT blocks were kept at −20°C for 10 min. The brains were oriented to cut sagittal sections on the cryotome (Leica CM3050S, Germany) at 16 µm thickness and adhered onto SuperFrost plus tissue slides (Thermo Fisher, USA). This orientation helped in visualizing cortex, hippocampus and striatal regions (Figure 8G).
 
 Slices closest to the midline were chosen for immunostaining. For primary cilia staining in brain sections, frozen slides were thawed at RT for 10 min then gently washed with PBS for 5 min. Sections were permeabilized with 0.1% Triton X-100 in PBS at room temperature for 15 min. Sections were blocked with 1% bovine serum albumin and 2% bovine calf serum in PBS for 2 hr at RT. Sections were incubated overnight with primary rabbit polyclonal antibodies and incubated with secondary antibodies (Thermo Scientific, 1:1000) at room temperature for 2 hr. Stained tissues were overlayed with Mowiol and a glass coverslip. Three brain areas were chosen – Somatosensory area of the cerebral cortex, pyramidal layer of the hippocampus and striatal area of the caudoputamen, adjacent to the lateral ventricle. Four to five regions within each brain area were imaged using 0.75 µm Z-sampling for each mouse brain. All image visualizations and analyses were performed using Fiji (https://fiji.sc). To analyze primary cilia, maximum intensity projections of Z-stacks were median filtered, thresholded and the resulting mask was subjected to the skeletonize function. Number of Primary cilia structures in these masks were then counted using Analyze > Analyze Particles. To measure primary cilia lengths, the output image from the previous step was subsequently analyzed using Analyze > Skeleton > Analyze Skeleton > Longest shortest path function. The number of nuclei in the cerebral cortex and striatal regions of the brain were determined by analyzing maximum intensity projections of the DAPI channel. The image was median filtered, subjected to ‘Fill Holes’, ‘Watershed’ followed by Analyze > Analyze Particles. The number of nuclei in the pyramidal layer of the hippocampus was determined manually by differential pseudo-coloring of the Z-stack to overcome counting errors caused by tight packing of the nuclei and intense nucleoli staining of neurons in this region. For cilia analysis of iPS cells, undifferentiated cells were plated on matrigel coated coverslips and cultured for 72 hr; the cells were subconfluent, two dimensional monolayers rather than organoids. Upon confluency (5 days), they lose their ciliation and were not analyzed further.
 
-## Quantitation of centriolar distance
+#### Quantitation of centriolar distance
 
 A549 cells transfected with RILPL1-GFP and stained for Centrin-3 or gamma tubulin were imaged on a confocal microscope with Z-step size of 0.5 µm. Distances were quantified from cells where only two dots were visible; cells in mitosis were excluded based on nuclear DAPI staining. Only a single plane from a Z-stack was used to quantify the distance between centrioles to eliminate error introduced by Z-sampling. The distance was measured using FIJI (https://fiji.sc) by drawing a straight line between the centers of the centriole dots. RILPL1 expression was quantified in FIJI by first subtracting background from the sum-intensity projection images, outlining the cells, followed by measuring the integrated density of the signal from a single cell.
 
-## Statistics
+#### Statistics
 
 Graphs were made using Graphpad Prism six software. Error bars indicate SEM. Unless specified, a Student’s T-test was used to test significance. Two tailed p-values<0.05 were considered statistically significant.

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.08833.001 Longevity mechanisms increase lifespan by counteracting the effects of aging. However, whether longevity mechanisms counteract the effects of aging continually throughout life, or whether they act during specific periods of life, preventing changes that precede mortality is unclear. Here, we uncover transcriptional drift , a phenomenon that describes how aging causes genes within functional groups to change expression in opposing directions. These changes cause a transcriptome-wide loss in mRNA stoichiometry and loss of co-expression patterns in aging animals, as compared to young adults. Using Caenorhabditis elegans as a model, we show that extending lifespan by inhibiting serotonergic signals by the antidepressant mianserin attenuates transcriptional drift, allowing the preservation of a younger transcriptome into an older age. Our data are consistent with a model in which inhibition of serotonergic signals slows age-dependent physiological decline and the associated rise in mortality levels exclusively in young adults, thereby postponing the onset of major mortality. DOI: http://dx.doi.org/10.7554/eLife.08833.001
+Longevity mechanisms increase lifespan by counteracting the effects of aging. However, whether longevity mechanisms counteract the effects of aging continually throughout life, or whether they act during specific periods of life, preventing changes that precede mortality is unclear. Here, we uncover transcriptional drift, a phenomenon that describes how aging causes genes within functional groups to change expression in opposing directions. These changes cause a transcriptome-wide loss in mRNA stoichiometry and loss of co-expression patterns in aging animals, as compared to young adults. Using Caenorhabditis elegans as a model, we show that extending lifespan by inhibiting serotonergic signals by the antidepressant mianserin attenuates transcriptional drift, allowing the preservation of a younger transcriptome into an older age. Our data are consistent with a model in which inhibition of serotonergic signals slows age-dependent physiological decline and the associated rise in mortality levels exclusively in young adults, thereby postponing the onset of major mortality.
 
 ## Introduction
 
@@ -37,17 +37,17 @@ In the present study, we set out to investigate the mechanisms by which the atyp
 
 ## Results
 
-## Aging causes a loss of co-expression patterns observed in young adults
+### Aging causes a loss of co-expression patterns observed in young adults
 
-To better understand how aging changes gene expression patterns in a eukaryotic organism, and how these changes are affected by longevity, we measured gene expression changes in mianserin-treated or untreated
+To better understand how aging changes gene expression patterns in a eukaryotic organism, and how these changes are affected by longevity, we measured gene expression changes in mianserin-treated or untreated C. elegans by RNA-sequencing (RNA-seq; Figure 1a). Cohort #1 was a time series to study how gene expression patterns change over time in control (water) animals or in animals treated with mianserin on day 1 of adulthood (24 hr after L4 stage). Cohort #2 was designed to study dosage effects of increasing concentrations of mianserin with aging, and cohort #3 was designed to study the effects of delayed mianserin-treatment of worms treated at day 3 or 5 of adulthood (Figure 1a). Lifespan of a sub-population of each cohort was simultaneously assessed to ensure the effect of mianserin.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig1-v2.jpg)
 
-**Figure 1.:** (a) Schematic of RNA-seq experiment. In cohort #1, water or mianserin was added on day 1 of adulthood and RNA samples were harvested on day 1 (water only), day 3 (d3), day 5 (d5) and day 10 (d10). In cohort #2, animals were treated with water or increasing concentrations of mianserin (2, 10 or 50 µM) on day 1 (d1) and RNA was harvested on day 5 (d5) for RNA-seq. In cohort #3, water or 50 µM mianserin was added on day 1, day 3, and day 5, and RNA was harvested on day 10 (d10) for RNA-seq. (b) Venn diagrams of the number of GOs enriched for genes that decrease expression with mianserin (down, dark blue circle) increase expression with mianserin (up, light blue circle) or are enriched for both (intersection). (c) Venn diagrams of the number of GOs enriched for genes that decrease expression with age (down, gray circle) increase expression with age (up, white circle) or are enriched for both (intersection). (d) Heat map depicting log2 changes in gene expression for oxidative stress genes elicited by increasing concentrations of mianserin (yellow, increased expression; blue, decreased expression) (e) Mianserin decreases expression of redox genes that increase with age and increases expression of genes that decrease with age. (f) Mianserin reverts age-associated changes on the level of GOs. Venn diagrams of the number of GOs enriched for genes that decrease expression with mianserin (down, dark blue circle) and increase with age (up, white circle) or vice versa (down with age, gray circle; up with mianserin, light blue circle). (g) Mianserin reverts age-associated changes on the level of individual genes. Volcano plot shows the negative log10 of P-values as a function of log2 fold changes of 3,367 genes that significantly change expression from day 1 to day 3 in samples of water-treated control animals (black) or samples from age-matched mianserin-treated animals (50 µM, blue). As animals age, gene expression levels change (“drift”) away from levels observed in young adults (yellow line). Mianserin treatment attenuates age-associated gene expression changes preserving expression levels as seen in young adults. (h) Drift-plot shows log fold change (old/young) as a function of age for each gene involved in oxidative phosphorylation (gray lines. KEGG: cel 04142). Superimposed are Tukey-style box-plots to graph the increases in drift-variance across the entire pathway. Gene expression changes are classified into type I, which describes activation or repression of the entire pathway and into type II, which describes changes among genes relative to each other (drift-variances), see red arrows. (i) Drift-plot for lysosomal genes (KEGG: cel 00190). See Figure 1—source data 1–5, Figure 1—figure supplement 1 and Table 1 for additional information on data-sets. Also see Methods section for transcriptional drift calculation in each figure panel.DOI: http://dx.doi.org/10.7554/eLife.08833.003  10.7554/eLife.08833.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08833.004  10.7554/eLife.08833.005Figure 1—source data 2.DOI: http://dx.doi.org/10.7554/eLife.08833.005  10.7554/eLife.08833.006Figure 1—source data 3.DOI: http://dx.doi.org/10.7554/eLife.08833.006  10.7554/eLife.08833.007Figure 1—source data 4.DOI: http://dx.doi.org/10.7554/eLife.08833.007  10.7554/eLife.08833.008Figure 1—source data 5.DOI: http://dx.doi.org/10.7554/eLife.08833.008
+**Figure 1.:** (a) Schematic of RNA-seq experiment. In cohort #1, water or mianserin was added on day 1 of adulthood and RNA samples were harvested on day 1 (water only), day 3 (d3), day 5 (d5) and day 10 (d10). In cohort #2, animals were treated with water or increasing concentrations of mianserin (2, 10 or 50 µM) on day 1 (d1) and RNA was harvested on day 5 (d5) for RNA-seq. In cohort #3, water or 50 µM mianserin was added on day 1, day 3, and day 5, and RNA was harvested on day 10 (d10) for RNA-seq. (b) Venn diagrams of the number of GOs enriched for genes that decrease expression with mianserin (down, dark blue circle) increase expression with mianserin (up, light blue circle) or are enriched for both (intersection). (c) Venn diagrams of the number of GOs enriched for genes that decrease expression with age (down, gray circle) increase expression with age (up, white circle) or are enriched for both (intersection). (d) Heat map depicting log2 changes in gene expression for oxidative stress genes elicited by increasing concentrations of mianserin (yellow, increased expression; blue, decreased expression) (e) Mianserin decreases expression of redox genes that increase with age and increases expression of genes that decrease with age. (f) Mianserin reverts age-associated changes on the level of GOs. Venn diagrams of the number of GOs enriched for genes that decrease expression with mianserin (down, dark blue circle) and increase with age (up, white circle) or vice versa (down with age, gray circle; up with mianserin, light blue circle). (g) Mianserin reverts age-associated changes on the level of individual genes. Volcano plot shows the negative log10 of P-values as a function of log2 fold changes of 3,367 genes that significantly change expression from day 1 to day 3 in samples of water-treated control animals (black) or samples from age-matched mianserin-treated animals (50 µM, blue). As animals age, gene expression levels change (“drift”) away from levels observed in young adults (yellow line). Mianserin treatment attenuates age-associated gene expression changes preserving expression levels as seen in young adults. (h) Drift-plot shows log fold change (old/young) as a function of age for each gene involved in oxidative phosphorylation (gray lines. KEGG: cel 04142). Superimposed are Tukey-style box-plots to graph the increases in drift-variance across the entire pathway. Gene expression changes are classified into type I, which describes activation or repression of the entire pathway and into type II, which describes changes among genes relative to each other (drift-variances), see red arrows. (i) Drift-plot for lysosomal genes (KEGG: cel 00190). See Figure 1—source data 1–5, Figure 1—figure supplement 1 and Table 1 for additional information on data-sets. Also see Methods section for transcriptional drift calculation in each figure panel.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Figure 1 in main text.Expression patterns of GO annotations are disrupted with age. Representative pie charts show a cross-section of 50 out of 249 GO annotations enriched for genes that change in opposing direction as animals age (day 3, 5, and 10). The fraction of genes whose expression increase with age (yellow), the fraction of genes whose expression decrease with age (black), and the fraction of genes that maintain the expression seen in young day 1 adults (white) are shown. GOs are sorted and represented in the figure, starting with GOs that show the least disruption in the upper left, and the GO’s with the most extreme changes in the lower right. As animals’ age progresses from day 3, 5 to 10, more and more genes change expression in opposing directions disrupting the transcriptional stoichiometry observed in young day 1 animals. None of these 50 pie charts, as is, allows any statements on how the functional states of the physiological processes they represent change with age. The GO names and number of genes (n) belonging to each GO are shown.DOI: http://dx.doi.org/10.7554/eLife.08833.009
+**Figure 1—figure supplement 1.:** Expression patterns of GO annotations are disrupted with age. Representative pie charts show a cross-section of 50 out of 249 GO annotations enriched for genes that change in opposing direction as animals age (day 3, 5, and 10). The fraction of genes whose expression increase with age (yellow), the fraction of genes whose expression decrease with age (black), and the fraction of genes that maintain the expression seen in young day 1 adults (white) are shown. GOs are sorted and represented in the figure, starting with GOs that show the least disruption in the upper left, and the GO’s with the most extreme changes in the lower right. As animals’ age progresses from day 3, 5 to 10, more and more genes change expression in opposing directions disrupting the transcriptional stoichiometry observed in young day 1 animals. None of these 50 pie charts, as is, allows any statements on how the functional states of the physiological processes they represent change with age. The GO names and number of genes (n) belonging to each GO are shown.
 
 Comparison of gene expression profiles of age-matched mianserin-treated and untreated controls, showed that approximately 3,000–6,000 genes changed with age in response to mianserin treatment (FDR<0.1, Figure 1—source data 1) (Robinson and Oshlack, 2010; Kim et al., 2013; Lawrence et al., 2013). We separated genes into sets that showed increased or decreased expression in response to mianserin, to conduct gene-set enrichment analysis. This revealed hundreds of gene ontologies (GO) that changed in response to mianserin (Figure 1—source data 2) (Ashburner et al., 2000; Mi et al., 2005). We observed that many GOs were enriched for both, genes that increased as well as decreased as a consequence of aging. This observation complicated any interpretation on whether pathways were activated or inhibited in response to mianserin, and how the associated function (GO) relates to mianserin-induced lifespan extension (Figure 1b).
 
@@ -57,29 +57,169 @@ Because the expression patterns observed in many GOs were difficult to interpret
 
 We therefore asked whether the complex gene-set enrichment patterns observed comparing mianserin-treated and untreated samples (Figure 1b,c) could be explained by mianserin preventing expression changes due to age. Indeed, many GO annotations that increased expression with age were decreased by mianserin treatment and vice versa (Figure 1f). This attenuation of age-associated changes by mianserin treatment was even more pronounced for individual genes (Figure 1g). Analyzing cohort #1 showed a significant change in expression levels of 3,367 genes, as the animals aged from day 1 to day 3, and a change in 5,947 genes from day 1 to day 10 (FDR < 0.1) (Figure 1g, significant genes only). Mianserin treatment reduced these age-associated expression changes in over 90% of cases. Including all age-associated expression changes for the 19,196 different transcripts present in our data-set, we found that mianserin treatment attenuated age-associated changes in transcription in 15,095 out of 19,169 genes (80%, binomial P < 10–100). Thus, most of the changes observed between mianserin-treated and untreated animals are due to mianserin preventing transcriptional changes with age.
 
-When we excluded all genes that changed due to age and were attenuated by mianserin, we obtained a much smaller gene-set consisting of mianserin-induced changes that was enriched for GOs related to stress, xenobiotic and immune-responses, as well as genes associated with aging and the determination of lifespan (Table 1, Figure 1—source data 5). These GOs have been previously shown to be regulated by serotonin in C. elegans with the exception of the xenobiotic response (Zhang et al., 2005; Petrascheck et al., 2007; Rangaraju et al., 2015a). Thus, accounting for age-associated transcriptional changes dramatically simplified a seemingly very complex gene-expression pattern (Figure 1b,c). It revealed that mianserin affected expression of a small set of physiological functions that are known to be regulated by serotonin and have been shown to be required for mianserin-induced lifespan extension or for aging in general (Garsin et al., 2003; Rangaraju, et al., 2015; Petrascheck, et al., 2007) (Table 1; Figure 1f; Figure 1—source data 5).10.7554/eLife.08833.010Table 1.GO annotations enriched for genes upregulated by mianserin during all ages, assessed by RNA-seq (day 3, 5 and 10).DOI: http://dx.doi.org/10.7554/eLife.08833.010GOEnriched P-valueresponse to stimulus4.47E-08response to stress5.83E-05response to xenobiotic stimulus3.25E-07defense response4.66E-05innate immune response1.56E-02immune response1.62E-02immune system process1.62E-02aging6.63E-05multicellular organismal aging6.63E-05determination of adult lifespan6.63E-05Note: No process was specifically downregulated for all three ages.
+When we excluded all genes that changed due to age and were attenuated by mianserin, we obtained a much smaller gene-set consisting of mianserin-induced changes that was enriched for GOs related to stress, xenobiotic and immune-responses, as well as genes associated with aging and the determination of lifespan (Table 1, Figure 1—source data 5). These GOs have been previously shown to be regulated by serotonin in C. elegans with the exception of the xenobiotic response (Zhang et al., 2005; Petrascheck et al., 2007; Rangaraju et al., 2015a). Thus, accounting for age-associated transcriptional changes dramatically simplified a seemingly very complex gene-expression pattern (Figure 1b,c). It revealed that mianserin affected expression of a small set of physiological functions that are known to be regulated by serotonin and have been shown to be required for mianserin-induced lifespan extension or for aging in general (Garsin et al., 2003; Rangaraju, et al., 2015; Petrascheck, et al., 2007) (Table 1; Figure 1f; Figure 1—source data 5).
+
+**Table 1.**
+ GO annotations enriched for genes upregulated by mianserin during all ages, assessed by RNA-seq (day 3, 5 and 10).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GO</th>
+      <th>Enriched P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>response to stimulus</td>
+      <td>4.47E-08</td>
+    </tr>
+    <tr>
+      <td>response to stress</td>
+      <td>5.83E-05</td>
+    </tr>
+    <tr>
+      <td>response to xenobiotic stimulus</td>
+      <td>3.25E-07</td>
+    </tr>
+    <tr>
+      <td>defense response</td>
+      <td>4.66E-05</td>
+    </tr>
+    <tr>
+      <td>innate immune response</td>
+      <td>1.56E-02</td>
+    </tr>
+    <tr>
+      <td>immune response</td>
+      <td>1.62E-02</td>
+    </tr>
+    <tr>
+      <td>immune system process</td>
+      <td>1.62E-02</td>
+    </tr>
+    <tr>
+      <td>aging</td>
+      <td>6.63E-05</td>
+    </tr>
+    <tr>
+      <td>multicellular organismal aging</td>
+      <td>6.63E-05</td>
+    </tr>
+    <tr>
+      <td>determination of adult lifespan</td>
+      <td>6.63E-05</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: No process was specifically downregulated for all three ages._
 
 Based on these observations, we classified gene expression changes for groups of genes into two types. Type I changes describe whether the overall expression across an entire functional group/pathway increases or decreases i.e. whether the pathway is up or down regulated with age. Type II changes describe the relative changes in gene expression among genes within functional groups with respect to each other. We named the type II change transcriptional drift. As animals age, genes within functional groups change expression levels in opposing directions resulting in the disruption of the co-expression patterns seen in young adults.
 
 To analyze the effects of aging on transcriptional drift (type II), we designed graphs that plot the log-fold changes (log [old/young reference day1]) in gene expression as a function of age. Such a plot can be constructed for whole transcriptomes as well as for any functional subset of genes, for example, genes involved in oxidative phosphorylation or lysosome biology (Figure 1h,i). In young adults, the log-fold change is 0 and values close to 0 therefore suggest gene expression as seen in young adults (Figure 1h,i). To quantify transcriptional drift changes with age (type II), we calculated the variance of the log-fold change for genes involved in each pathway. For the purpose of this study, we will refer to this variance as drift-variance (see Materials and methods). If gene expression ratios within a pathway stay constant with age, drift-variance will stay small. If a majority of genes within a pathway change expression in opposing directions or if the rates by which they change differ dramatically, drift-variance will increase. Note that “transcriptional drift” is different from “transcriptional noise” in that the former analyzes variance among genes within the same biological replicates, whereas the latter analyzes variance of the same genes among biological replicates. Hence, how far the aging transcriptome deviates away from the transcriptome seen in young adults can be graphed in a Tukey-style box plot, which plots the drift-variance as a function of age (Figure 1h,i). We will refer to these plots as drift-plots (Figure 1h; Figure 2—figure supplement 1a–d).
 
-## Longevity mechanisms attenuate transcriptional drift-variance
+### Longevity mechanisms attenuate transcriptional drift-variance
 
-We constructed drift-plots for all 19,196 genes in the data of cohort #1, which revealed a dramatic increase in drift-variance with age, showing a progressive loss of mRNA stoichiometries and co-expression patterns observed in young-adults (
+We constructed drift-plots for all 19,196 genes in the data of cohort #1, which revealed a dramatic increase in drift-variance with age, showing a progressive loss of mRNA stoichiometries and co-expression patterns observed in young-adults (Figure 2a, shaded region encompassing the whiskers of Tukey-plot). This effect was also seen in other publicly available data-sets of aging C. elegans transcriptomes and drift-variance continued to increase with age at least until day 20 (Figure 2—figure supplement 1e). Mianserin treatment attenuated the effect of aging across the whole transcriptome and preserved the co-expression patterns observed in young-adults into later age. To test whether transcriptional drift is driven by a small subset of mRNAs or a transcriptome-wide phenomenon, we randomly divided the transcriptome into subsamples of ~1,000 genes. Each subsample showed identical increases in drift-variance with age, confirming a transcriptome-wide effect (Figure 2—figure supplement 1f).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig2-v2.jpg)
 
-**Figure 2.:** (a) Drift-plots show that mianserin attenuates increasing drift-variance with age. Note that drift-variance in 10-day-old mianserin-treated animals is the same as in untreated 3-day-old control animals (dotted red line). (b) Drift-plots show that increasing concentrations of mianserin cause drift-variance to decrease. Drift-variance was measured on day 5 by RNA-seq. (c) Corresponding to b, lifespan curves show that increasing concentrations of mianserin leads to a dose-dependent increase in survival. (d) Drift-plots show that initiating mianserin treatment at later ages reduces (d3) or abolishes (d5) its effect on transcriptional drift. Drift-variance was measured on day 10 by RNA-seq. (e) Corresponding to d, lifespan curves show initiating mianserin treatment at later ages reduces (d3) or abolishes (d5) its effect on lifespan. (f) Log-fold change of xenobiotic gene expression on day 10 when mianserin was added on day 1 or day 5, compared to control animals treated with water on day 1. Adding mianserin on day 1 or day 5 leads to comparable changes. (g) Drift-plots show daf-2 RNAi attenuates increasing drift-variance with age in a manner dependent on daf-16. Left: vector control, middle: daf-2 RNAi, right: daf-16/daf-2 RNAi. P-values for transcriptional drift plots are calculated by robust Levene’s test, which compare variances and not mean values. ***P<0.001. All error bars show drift-variance. See Figure 2—figure supplement 1–2 for additional information on calculating drift-variance and Table 2. Also, see Methods section for transcriptional drift calculation in each figure panel.DOI: http://dx.doi.org/10.7554/eLife.08833.011
+**Figure 2.:** (a) Drift-plots show that mianserin attenuates increasing drift-variance with age. Note that drift-variance in 10-day-old mianserin-treated animals is the same as in untreated 3-day-old control animals (dotted red line). (b) Drift-plots show that increasing concentrations of mianserin cause drift-variance to decrease. Drift-variance was measured on day 5 by RNA-seq. (c) Corresponding to b, lifespan curves show that increasing concentrations of mianserin leads to a dose-dependent increase in survival. (d) Drift-plots show that initiating mianserin treatment at later ages reduces (d3) or abolishes (d5) its effect on transcriptional drift. Drift-variance was measured on day 10 by RNA-seq. (e) Corresponding to d, lifespan curves show initiating mianserin treatment at later ages reduces (d3) or abolishes (d5) its effect on lifespan. (f) Log-fold change of xenobiotic gene expression on day 10 when mianserin was added on day 1 or day 5, compared to control animals treated with water on day 1. Adding mianserin on day 1 or day 5 leads to comparable changes. (g) Drift-plots show daf-2 RNAi attenuates increasing drift-variance with age in a manner dependent on daf-16. Left: vector control, middle: daf-2 RNAi, right: daf-16/daf-2 RNAi. P-values for transcriptional drift plots are calculated by robust Levene’s test, which compare variances and not mean values. ***P<0.001. All error bars show drift-variance. See Figure 2—figure supplement 1–2 for additional information on calculating drift-variance and Table 2. Also, see Methods section for transcriptional drift calculation in each figure panel.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Figure 1c, d and Figure 5a,b in main text.(a) Relationship of (a) fold-changes in gene expression as measured by qRT-PCR to b) RNA-seq counts to (c) transcriptional drift and (d) drift-variance plots. Fold-changes in gene expression in older (day 5) animals by mianserin are mostly caused by mianserin preserving the expression levels seen in young animals, thus leading to small drift-variances for groups of genes. (e) Additional transcriptional drift plots for aging C. elegans based on GEO data-sets GSE21784 and GSE46051. Transcriptional drift increases continuously up until at least day 20 towards the end of the lifespan. (f) Transcriptional drift is observed across the entire transcriptome. Random sub-sampling generating ten sets of ~1,000 genes and plotting their drift-variance shows that transcriptional drift is a phenomenon present across the entire transcriptome and is not driven by small subsets of genes.DOI: http://dx.doi.org/10.7554/eLife.08833.012
+**Figure 2—figure supplement 1.:** (a) Relationship of (a) fold-changes in gene expression as measured by qRT-PCR to b) RNA-seq counts to (c) transcriptional drift and (d) drift-variance plots. Fold-changes in gene expression in older (day 5) animals by mianserin are mostly caused by mianserin preserving the expression levels seen in young animals, thus leading to small drift-variances for groups of genes. (e) Additional transcriptional drift plots for aging C. elegans based on GEO data-sets GSE21784 and GSE46051. Transcriptional drift increases continuously up until at least day 20 towards the end of the lifespan. (f) Transcriptional drift is observed across the entire transcriptome. Random sub-sampling generating ten sets of ~1,000 genes and plotting their drift-variance shows that transcriptional drift is a phenomenon present across the entire transcriptome and is not driven by small subsets of genes.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (a) DIC photomicrograph of eggs obtained from FUDR (120 µM final) treated animals. Eggs are terminally arrested around the ventral closure (“bean stage”, 400–500 nuclei) and show a shrunken cell mass. Birefringent gut granules are observed in the middle of the eggs. Images were taken ~48 hr after FUDR treatment. (Scale bar = 20 µm). (b) Number of adult worms that produce eggs 24 hr after FUDR treatment. Of the 298 worms evaluated, all of the animals developed germline with eggs inside. (c) Treatment with FUDR dramatically reduces the RNA content in eggs. Total RNA was extracted from FUDR-treated whole wt (N2) worms, from eggs isolated from FUDR-treated N2 worms after ~28 hr of FUDR treatment and from eggs from non-FUDR-treated N2 worms (the same time point as the RNA-seq young reference),. ***P<0.001, comparison between whole worms and eggs treated with FUDR, unpaired t-test, n=3, Error bars S.E.M; ##P<0.01, comparison between eggs treated with FUDR and no FUDR, unpaired t-test, n=3, Error bars S.E.M. (d) Electrophoresis of RNA extracted from whole worms or eggs isolated from FUDR treated animals. Same number of animals used for each sample. Comparison of equal volumes (10 µl) of total RNA loaded from FUDR-treated whole worms and eggs isolated from FUDR-treated animals, resolved in an agarose gel. (e) Original drift plot from Figure 2a is shown again for comparison. Note that box in the middle of the drift plot, which is a Tukey-pl﻿ot, represents the interquartile mean, or 50% of the transcriptome that changes less with age. As drift is also observed in the interquartile mean, drift is not driven by extreme outliers, but by the majority of the genes across the entire transcriptome. (f) Drift plot generated from our data-set only including genes that were also detected in the CF512 sterile strain data-set from (Murphy et al., 2003). (g) Drift plot generated after removing 7,292 genes involved in egg-related functions detected from an eggs-only RNA-seq data-set (Osborne Nishimura et al., 2015). (h) DIC photomicrograph of eggs obtained from untreated and FUDR-treated animals carrying the Pgcy-8::GFP reporter for AFD neurons. (i) Fluorescence microscopy images show AFD neurons in eggs derived from untreated adults (left panel, white arrows) but not in eggs obtained from FUDR-treated adults (middle panel), confirming that FUDR treated eggs do not progress past the “bean stage”. FUDR does not inhibit Pgcy-8::GFP expression in adults (right panel). (j) Overlay of h and i. (k) Drift plots using our data-set including only the genes that are highly enriched in AFD, ASE or NSM neurons (Etchberger et al., 2007; Spencer et al., 2014). As FUDR arrests embryonic development before the birth of these neurons, the drift-plots cannot be influenced by RNA derived from eggs. Explanations for Figure 2—figure supplement 2 In the experiments presented in the main manuscript, we used FUDR to sterilize the animals from which we subsequently extracted RNA for RNA-seq. Thus, our samples contained fractions of egg RNA. The following control experiments and analysis show that the fraction of RNA in our samples coming from eggs is small and does not influence the phenomenon of transcriptional drift and its attenuation by mianserin. We first isolated eggs from FUDR-treated and untreated animals. FUDR treatment causes the cell mass inside the eggs to shrink and to terminally arrest at around bean stage (400–500 nuclei) (Figure 2—figure supplement 2a). FUDR-treated animals all contained similar numbers of eggs 24 hr after FUDR treatement (n=298) (Figure 2—figure supplement 2b) Note that many of the reported FUDR side-effects such as a lack of germline are not observed in 96-well liquid culture (Gomez-Amaro et al., 2015). Extracting RNA from whole worms or eggs isolated from whole worms showed that FUDR-treated eggs contained 5 times less RNA compared to untreated eggs. The fraction of RNA originating from the eggs in FUDR-treated worms was roughly ~5% (Figure 2—figure supplement 2c,d). We next asked whether this fraction could in anyway influence the phenomenon of transcriptional drift. The original plots (Figure 2a, or Figure 2—figure supplement 2e) of the entire transcriptome show that drift-variance increases in the interquartile mean (boxes) showing that it is not driven by a set of outlier genes, making it unlikely that the 5% fraction would influence drift-variance (Krzywinski and Altman, 2014). Nevertheless, to test possible interference, we calculated drift plots for various subsets of our data excluding transcrips expressed in eggs. The Murphy data were derived from CF512 (sterile) animals and thus any genes detected do not originate from eggs. We therefore excluded all genes not detected by Murphy et al from our data-set and recalculated drift. The resulting drift plot still shows a dramatic increase in drift-variance and attenuation by mianserin (Figure 2—figure supplement 2f). A potential problem with the approach used in Figure 2—figure supplement 2f is that it only removed eggs/germline genes that are specific for eggs but that it did not remove genes that are present in both eggs and soma. We therefore removed all genes that were identified in C. elegans eggs by RNA-seq from our data-set to plot Figure 2—figure supplement 2g (Osborne Nishimura et al., 2015). Of the 7,700 transcripts identified in eggs, 7,200 were present in our data-set. Note that this approach removes all ubiquitously expressed genes like ribosomal, mitochondrial and similar housekeeping genes that are present in both embryos and soma. Even though this operation removes only 7,200 out of 19,196 individual genes present in the data-set, these 7,200 genes account for 73% of total mRNA counts. Despite this dramatic reduction in overall mRNA transcripts, the drift plot combining the remaining 11, 904 genes (mostly low expressing genes) confirms an increase in drift-variance with age that is suppressed by mianserin (Figure 2—figure supplement 2g). To identify gene-sets that cannot possibly originate from the FUDR-treated eggs we exploited the specific arrest in embryonic development caused by FUDR. The DIC images suggested that FUDR arrests embryonic development before the birth of AFD, ASE and NSM neurons. If so, genes in our data-set that are specifically expressed in these neurons have to originate from the adult somatic tissue. To test that FUDR treatment prevents the birth of these neurons, we imaged eggs of C. elegans carrying a Pgcy-8::GFP transgene (AFD marker) (Figure 2—figure supplement 2h, i, j). Eggs from untreated animals showed a clear expression of the marker while FUDR-treated eggs did not (Figure 2—figure supplement 2i, j (n>100)). FUDR did not repress the expression of the Pgcy-8::GFP transgene in adults, showing that the lack of a Pgcy-8::GFP signal in FUDR-treated eggs is due to an arrest before the neurons are born and not due to inhibition of the reporter expression by FUDR. As AFD neurons are born before ASE and NSM neurons, these results suggested that none of these three neurons are present in FUDR-treated eggs (Sulston et al., 1983). After having established the absence of AFD, ASE and NSM neurons in eggs derived from FUDR treated animals, we then used the published gene-sets that are highly enriched in these three neuron types (AFD, ASE, NSM) to construct drift-plots (Etchberger et al., 2007; Spencer et al., 2014). Even for these highly restricted sets of genes, drift-variance dramatically increased with age and was repressed by mianserin. Taken together, these results show that the RNA contamination from FUDR-treated eggs is minimal and that this residual amount does not influence our results.DOI: http://dx.doi.org/10.7554/eLife.08833.013
+**Figure 2—figure supplement 2.:** (a) DIC photomicrograph of eggs obtained from FUDR (120 µM final) treated animals. Eggs are terminally arrested around the ventral closure (“bean stage”, 400–500 nuclei) and show a shrunken cell mass. Birefringent gut granules are observed in the middle of the eggs. Images were taken ~48 hr after FUDR treatment. (Scale bar = 20 µm). (b) Number of adult worms that produce eggs 24 hr after FUDR treatment. Of the 298 worms evaluated, all of the animals developed germline with eggs inside. (c) Treatment with FUDR dramatically reduces the RNA content in eggs. Total RNA was extracted from FUDR-treated whole wt (N2) worms, from eggs isolated from FUDR-treated N2 worms after ~28 hr of FUDR treatment and from eggs from non-FUDR-treated N2 worms (the same time point as the RNA-seq young reference),. ***P<0.001, comparison between whole worms and eggs treated with FUDR, unpaired t-test, n=3, Error bars S.E.M; ##P<0.01, comparison between eggs treated with FUDR and no FUDR, unpaired t-test, n=3, Error bars S.E.M. (d) Electrophoresis of RNA extracted from whole worms or eggs isolated from FUDR treated animals. Same number of animals used for each sample. Comparison of equal volumes (10 µl) of total RNA loaded from FUDR-treated whole worms and eggs isolated from FUDR-treated animals, resolved in an agarose gel. (e) Original drift plot from Figure 2a is shown again for comparison. Note that box in the middle of the drift plot, which is a Tukey-pl﻿ot, represents the interquartile mean, or 50% of the transcriptome that changes less with age. As drift is also observed in the interquartile mean, drift is not driven by extreme outliers, but by the majority of the genes across the entire transcriptome. (f) Drift plot generated from our data-set only including genes that were also detected in the CF512 sterile strain data-set from (Murphy et al., 2003). (g) Drift plot generated after removing 7,292 genes involved in egg-related functions detected from an eggs-only RNA-seq data-set (Osborne Nishimura et al., 2015). (h) DIC photomicrograph of eggs obtained from untreated and FUDR-treated animals carrying the Pgcy-8::GFP reporter for AFD neurons. (i) Fluorescence microscopy images show AFD neurons in eggs derived from untreated adults (left panel, white arrows) but not in eggs obtained from FUDR-treated adults (middle panel), confirming that FUDR treated eggs do not progress past the “bean stage”. FUDR does not inhibit Pgcy-8::GFP expression in adults (right panel). (j) Overlay of h and i. (k) Drift plots using our data-set including only the genes that are highly enriched in AFD, ASE or NSM neurons (Etchberger et al., 2007; Spencer et al., 2014). As FUDR arrests embryonic development before the birth of these neurons, the drift-plots cannot be influenced by RNA derived from eggs. Explanations for Figure 2—figure supplement 2 In the experiments presented in the main manuscript, we used FUDR to sterilize the animals from which we subsequently extracted RNA for RNA-seq. Thus, our samples contained fractions of egg RNA. The following control experiments and analysis show that the fraction of RNA in our samples coming from eggs is small and does not influence the phenomenon of transcriptional drift and its attenuation by mianserin. We first isolated eggs from FUDR-treated and untreated animals. FUDR treatment causes the cell mass inside the eggs to shrink and to terminally arrest at around bean stage (400–500 nuclei) (Figure 2—figure supplement 2a). FUDR-treated animals all contained similar numbers of eggs 24 hr after FUDR treatement (n=298) (Figure 2—figure supplement 2b) Note that many of the reported FUDR side-effects such as a lack of germline are not observed in 96-well liquid culture (Gomez-Amaro et al., 2015). Extracting RNA from whole worms or eggs isolated from whole worms showed that FUDR-treated eggs contained 5 times less RNA compared to untreated eggs. The fraction of RNA originating from the eggs in FUDR-treated worms was roughly ~5% (Figure 2—figure supplement 2c,d). We next asked whether this fraction could in anyway influence the phenomenon of transcriptional drift. The original plots (Figure 2a, or Figure 2—figure supplement 2e) of the entire transcriptome show that drift-variance increases in the interquartile mean (boxes) showing that it is not driven by a set of outlier genes, making it unlikely that the 5% fraction would influence drift-variance (Krzywinski and Altman, 2014). Nevertheless, to test possible interference, we calculated drift plots for various subsets of our data excluding transcrips expressed in eggs. The Murphy data were derived from CF512 (sterile) animals and thus any genes detected do not originate from eggs. We therefore excluded all genes not detected by Murphy et al from our data-set and recalculated drift. The resulting drift plot still shows a dramatic increase in drift-variance and attenuation by mianserin (Figure 2—figure supplement 2f). A potential problem with the approach used in Figure 2—figure supplement 2f is that it only removed eggs/germline genes that are specific for eggs but that it did not remove genes that are present in both eggs and soma. We therefore removed all genes that were identified in C. elegans eggs by RNA-seq from our data-set to plot Figure 2—figure supplement 2g (Osborne Nishimura et al., 2015). Of the 7,700 transcripts identified in eggs, 7,200 were present in our data-set. Note that this approach removes all ubiquitously expressed genes like ribosomal, mitochondrial and similar housekeeping genes that are present in both embryos and soma. Even though this operation removes only 7,200 out of 19,196 individual genes present in the data-set, these 7,200 genes account for 73% of total mRNA counts. Despite this dramatic reduction in overall mRNA transcripts, the drift plot combining the remaining 11, 904 genes (mostly low expressing genes) confirms an increase in drift-variance with age that is suppressed by mianserin (Figure 2—figure supplement 2g). To identify gene-sets that cannot possibly originate from the FUDR-treated eggs we exploited the specific arrest in embryonic development caused by FUDR. The DIC images suggested that FUDR arrests embryonic development before the birth of AFD, ASE and NSM neurons. If so, genes in our data-set that are specifically expressed in these neurons have to originate from the adult somatic tissue. To test that FUDR treatment prevents the birth of these neurons, we imaged eggs of C. elegans carrying a Pgcy-8::GFP transgene (AFD marker) (Figure 2—figure supplement 2h, i, j). Eggs from untreated animals showed a clear expression of the marker while FUDR-treated eggs did not (Figure 2—figure supplement 2i, j (n>100)). FUDR did not repress the expression of the Pgcy-8::GFP transgene in adults, showing that the lack of a Pgcy-8::GFP signal in FUDR-treated eggs is due to an arrest before the neurons are born and not due to inhibition of the reporter expression by FUDR. As AFD neurons are born before ASE and NSM neurons, these results suggested that none of these three neurons are present in FUDR-treated eggs (Sulston et al., 1983). After having established the absence of AFD, ASE and NSM neurons in eggs derived from FUDR treated animals, we then used the published gene-sets that are highly enriched in these three neuron types (AFD, ASE, NSM) to construct drift-plots (Etchberger et al., 2007; Spencer et al., 2014). Even for these highly restricted sets of genes, drift-variance dramatically increased with age and was repressed by mianserin. Taken together, these results show that the RNA contamination from FUDR-treated eggs is minimal and that this residual amount does not influence our results.
 
-We previously showed, that the effect of mianserin to extend lifespan is dose-dependent (Petrascheck et al., 2007). To explore a possible quantitative relationship between longevity and drift-variance, we generated drift-plots for transcriptomes of animals treated with increasing doses of mianserin (Figure 1a, cohort #2). Increasing doses of mianserin progressively increased longevity and decreased drift-variance as measured in 5-day-old animals (Figure 2b,c; Table 2). Thus, remarkably, by varying the dose of a single molecule, it was possible to control the degree to which aging drives the loss of transcriptional co-expression away from patterns observed in young adults. These results suggested a quantitative relationship between mianserin-induced longevity and its effect on drift-variance.10.7554/eLife.08833.014Table 2.Survival data for lifespan of RNA-seq experimental cohorts.DOI: http://dx.doi.org/10.7554/eLife.08833.014StrainTreatmentTreatment added on [day]Conc. [µM]Change in lifespan [%] Expt.1/ Expt.2/ Expt.3P-value Expt.1/ Expt.2/ Expt.3Mean Lifespan [days] Expt.1/ Expt.2/ Expt.3Number of animals Expt.1/ Expt.2/ Expt.3N2Waterd1019.33/ 17.2/ 20.45132/ 149/ 130N2Miad12+7/ +12/ -40.20/ 0.04/ 0.2520.64/ 19.23/ 19.67125/ 133/ 151N2Miad110+30/ +16/ +62.5E-07/ 3.7E-03/ 0.5525.09/ 19.92/ 21.7494/ 138/ 136N2Miad150+46/ +39/ +251.1E-19/ 1.9E-15/ 2.8E-0828.25/ 23.92/ 25.6395/ 131/ 125N2Miad350+15/ +14/ +12.0E-03/ 9.3E-04/ 0.2922.23/ 19.69/ 20.75121/ 134/ 152N2Miad550-8/ +8/ -20.18/ 0.06/ 0.8417.79/ 18.52/ 20.13123/ 151/ 139Summary of all lifespan experiments performed in parallel for cohorts 1 and 2 of the RNA-seq studies in Figure 2c,e. The treatments, water or mianserin, at the indicated concentrations (conc.) were added on indicated day (D) of adulthood and lifespan (days) was scored until 95% of animals were dead in all tested conditions. All values (Change in lifespan [%], P-values) were calculated for the pairwise comparison between mianserin-treated and water-treated animals of the same condition, in 3 independent experiments (expts.). Statistical analysis was performed using the Mantel–Haenszel version of the log-rank test. Mean lifespan [days] and number of animals in each experiment are indicated.
+We previously showed, that the effect of mianserin to extend lifespan is dose-dependent (Petrascheck et al., 2007). To explore a possible quantitative relationship between longevity and drift-variance, we generated drift-plots for transcriptomes of animals treated with increasing doses of mianserin (Figure 1a, cohort #2). Increasing doses of mianserin progressively increased longevity and decreased drift-variance as measured in 5-day-old animals (Figure 2b,c; Table 2). Thus, remarkably, by varying the dose of a single molecule, it was possible to control the degree to which aging drives the loss of transcriptional co-expression away from patterns observed in young adults. These results suggested a quantitative relationship between mianserin-induced longevity and its effect on drift-variance.
+
+**Table 2.**
+ Survival data for lifespan of RNA-seq experimental cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Treatment</th>
+      <th>Treatment added on [day]</th>
+      <th>Conc. [µM]</th>
+      <th>Change in lifespan [%] Expt.1/ Expt.2/ Expt.3</th>
+      <th>P-value Expt.1/ Expt.2/ Expt.3</th>
+      <th>Mean Lifespan [days] Expt.1/ Expt.2/ Expt.3</th>
+      <th>Number of animals Expt.1/ Expt.2/ Expt.3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N2</td>
+      <td>Water</td>
+      <td>d1</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td>19.33/ 17.2/ 20.45</td>
+      <td>132/ 149/ 130</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>d1</td>
+      <td>2</td>
+      <td>+7/ +12/ -4</td>
+      <td>0.20/ 0.04/ 0.25</td>
+      <td>20.64/ 19.23/ 19.67</td>
+      <td>125/ 133/ 151</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>d1</td>
+      <td>10</td>
+      <td>+30/ +16/ +6</td>
+      <td>2.5E-07/ 3.7E-03/ 0.55</td>
+      <td>25.09/ 19.92/ 21.74</td>
+      <td>94/ 138/ 136</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>d1</td>
+      <td>50</td>
+      <td>+46/ +39/ +25</td>
+      <td>1.1E-19/ 1.9E-15/ 2.8E-08</td>
+      <td>28.25/ 23.92/ 25.63</td>
+      <td>95/ 131/ 125</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>d3</td>
+      <td>50</td>
+      <td>+15/ +14/ +1</td>
+      <td>2.0E-03/ 9.3E-04/ 0.29</td>
+      <td>22.23/ 19.69/ 20.75</td>
+      <td>121/ 134/ 152</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>d5</td>
+      <td>50</td>
+      <td>-8/ +8/ -2</td>
+      <td>0.18/ 0.06/ 0.84</td>
+      <td>17.79/ 18.52/ 20.13</td>
+      <td>123/ 151/ 139</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary of all lifespan experiments performed in parallel for cohorts 1 and 2 of the RNA-seq studies in Figure 2c,e. The treatments, water or mianserin, at the indicated concentrations (conc.) were added on indicated day (D) of adulthood and lifespan (days) was scored until 95% of animals were dead in all tested conditions. All values (Change in lifespan [%], P-values) were calculated for the pairwise comparison between mianserin-treated and water-treated animals of the same condition, in 3 independent experiments (expts.). Statistical analysis was performed using the Mantel–Haenszel version of the log-rank test. Mean lifespan [days] and number of animals in each experiment are indicated._
 
 Our previous studies had also shown that mianserin does not extend lifespan when added to 5-day-old post-reproductive adult animals (Petrascheck et al., 2007). Thus, we next tested whether mianserin attenuates transcriptional drift-variance independently of longevity by treating older animals. Mianserin did not attenuate transcriptional drift-variance when added on day 5 (Figure 2d). Adding mianserin on day 3 of adulthood caused a small extension of lifespan and a corresponding small attenuation of drift-variance, further supporting a quantitative relationship between suppression of drift-variance and extension of lifespan (Figure 1a, cohort #3, Figure 2d,e; Table 2). However, mianserin fully induced the xenobiotic response by up to 1,000-fold irrespective of whether added on day 1 or day 5 (Figure 2f). Therefore, the lack of an effect of mianserin when added to day 5 adults cannot be attributed to reduced drug uptake. Taken together, these results show that mianserin does not attenuate drift-variance when it does not extend lifespan.
 
@@ -89,51 +229,2735 @@ Conversely, suppressing longevity by daf-16(RNAi) prevented the attenuation of d
 
 From a technical perspective, the comparison between the mianserin data and the Murphy data (Murphy et al., 2003) also shows that the phenomenon of transcriptional drift is robust enough not to be influenced by the presence of eggs in the animals or the method of sterilization, as our study used FUDR and the Murphy et al. (2003) study used sterile mutants (Figure 2a,g; Figure 2—figure supplement 2).
 
-## Attenuating drift-variances in redox-pathways preserves homeostatic capacity
+### Attenuating drift-variances in redox-pathways preserves homeostatic capacity
 
-The results above suggested that preserving low drift-variance in transcriptomes preserves longevity. We therefore asked whether attenuating drift-variance in specific pathways preserves homeostatic capacity, the ability of pathways to appropriately respond to a stimulus or stress. Throughout life, organisms respond to stimuli by activating or repressing transcriptional programs, an ability that is lost with age. We hypothesized that one way by which regulatory ability may be lost could be due to a failure to return to their precise steady-state transcriptional levels after stimulation. This would give rise to increases in drift-variance (
+The results above suggested that preserving low drift-variance in transcriptomes preserves longevity. We therefore asked whether attenuating drift-variance in specific pathways preserves homeostatic capacity, the ability of pathways to appropriately respond to a stimulus or stress. Throughout life, organisms respond to stimuli by activating or repressing transcriptional programs, an ability that is lost with age. We hypothesized that one way by which regulatory ability may be lost could be due to a failure to return to their precise steady-state transcriptional levels after stimulation. This would give rise to increases in drift-variance (Figure 3a), as seen in the drift plots for oxidative phosphorylation or lysosome biology (Figure 1h,i). In this model, slight initial deviations in gene expression levels would be compounded over time resulting in imbalanced stoichiometries between pathway components resulting in functional decline with age (Figure 3a).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig3-v2.jpg)
 
-**Figure 3.:** (a) Model for the occurrence of transcriptional drift with age. Genes belonging to the same pathway appropriately respond to a stimulus but subsequently fail to return to steady-state levels. Repeated stimuli compound this effect leading to increases in transcriptional drift. If multiple genes within a pathway have propensity to drift in one or the other direction drift-variance increases with age. (b) Drift-plots show increases in drift-variance in multiple KEGG or GO annotations associated with redox processes. P-values compare variance, not mean, n: No. of genes in each category. *P<0.05, **P<0.01, ***P<0.001, Levene’s test. Error bars; drift-variance (c) Fold increase in survival of N2 wild-type (wt) mianserin treated vs. untreated animals when challenged with paraquat at different ages. The protective effect of mianserin increases with age. *P<0.05, t-test, Error bars: S.E.M. (d) Fold increase in survival of wt (N2) treated vs. untreated animals when challenged with paraquat on day 10. Delaying mianserin treatment into later life reduces its protective effect. *P<0.05, t-test, Error bars: S.E.M. (e) Linear regression of log fold-changes in gene expression with age for genes previously shown to change upon oxidative stress. Genes upregulated in response to oxidative stress (n=252) increase with age, and genes downregulated in response to oxidative stress decrease (n=88) with age. Mianserin attenuates age-associated expression changes in oxidative stress genes in the direction indicated by blue arrows. Shading: 95% confidence interval. ***P<0.001, Wilcoxon rank-sum test. See Tables 3–5 for detailed statistics and Methods section for transcriptional drift calculation in each figure panel.DOI: http://dx.doi.org/10.7554/eLife.08833.015
+**Figure 3.:** (a) Model for the occurrence of transcriptional drift with age. Genes belonging to the same pathway appropriately respond to a stimulus but subsequently fail to return to steady-state levels. Repeated stimuli compound this effect leading to increases in transcriptional drift. If multiple genes within a pathway have propensity to drift in one or the other direction drift-variance increases with age. (b) Drift-plots show increases in drift-variance in multiple KEGG or GO annotations associated with redox processes. P-values compare variance, not mean, n: No. of genes in each category. *P<0.05, **P<0.01, ***P<0.001, Levene’s test. Error bars; drift-variance (c) Fold increase in survival of N2 wild-type (wt) mianserin treated vs. untreated animals when challenged with paraquat at different ages. The protective effect of mianserin increases with age. *P<0.05, t-test, Error bars: S.E.M. (d) Fold increase in survival of wt (N2) treated vs. untreated animals when challenged with paraquat on day 10. Delaying mianserin treatment into later life reduces its protective effect. *P<0.05, t-test, Error bars: S.E.M. (e) Linear regression of log fold-changes in gene expression with age for genes previously shown to change upon oxidative stress. Genes upregulated in response to oxidative stress (n=252) increase with age, and genes downregulated in response to oxidative stress decrease (n=88) with age. Mianserin attenuates age-associated expression changes in oxidative stress genes in the direction indicated by blue arrows. Shading: 95% confidence interval. ***P<0.001, Wilcoxon rank-sum test. See Tables 3–5 for detailed statistics and Methods section for transcriptional drift calculation in each figure panel.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig4-v2.jpg)
 
-**Figure 4.:** (a) Survival of wt (dotted lines) or serotonin receptor mutants and serotonin synthesis mutant (bold lines) treated with water (black) or mianserin (blue) on day 1, followed by increasing concentrations of paraquat on day 5. (b) Bar graph shows fold protection as a ratio of survival of mianserin-treated vs. water-treated GPCR mutant animals ((Mia/water)-1). *P<0.05, **P<0.01, ***P<0.001, n.s., not significant, t-test; Error bars: S.E.M. See Figure 4—figure supplement 1, and Tables 6 and 7 for detailed statistics.DOI: http://dx.doi.org/10.7554/eLife.08833.016
+**Figure 4.:** (a) Survival of wt (dotted lines) or serotonin receptor mutants and serotonin synthesis mutant (bold lines) treated with water (black) or mianserin (blue) on day 1, followed by increasing concentrations of paraquat on day 5. (b) Bar graph shows fold protection as a ratio of survival of mianserin-treated vs. water-treated GPCR mutant animals ((Mia/water)-1). *P<0.05, **P<0.01, ***P<0.001, n.s., not significant, t-test; Error bars: S.E.M. See Figure 4—figure supplement 1, and Tables 6 and 7 for detailed statistics.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Figure 4a in main text.(a) Survival of wt and two independent alleles of ser-5 mutants, ser-5(tm2647) or ser-5(tm2654), treated with water or mianserin on day 1, followed by increasing concentrations of paraquat on day 5 of adulthood. (b) Hierarchical clustering of fold change [serotonin antagonist/DMSO] in protection of wt (N2) and ser-5 mutant animals, when treated with DMSO or serotonin antagonists on day 1 followed by paraquat on day 5, shows the degree of similarity in protection between 8 structurally different serotonin antagonists (left) and the requirement of ser-5 for these antagonists to protect from oxidative stress. (c) Bar graphs quantifying transcriptional drift by qRT-PCR (log fold-changes in gene expression) in 5-day-old N2 and ser-3(ad1774) animals (left panel), and N2 and ser-4(ok512) animals (right panel) treated with mianserin, relative to water-treated N2, determined by qRT-PCR. Mianserin treatment of ser-3(ad1774) and ser-4(ok512) strains result in a drift pattern, similar to those seen in N2. Thus, these receptors are neither required for drift-attenuation in redox genes, nor for the age-associated increase in oxidative stress resistance (Figure 4). Error bars: S.E.M. For detailed statistics, see Tables 6 and 7.DOI: http://dx.doi.org/10.7554/eLife.08833.017
+**Figure 4—figure supplement 1.:** (a) Survival of wt and two independent alleles of ser-5 mutants, ser-5(tm2647) or ser-5(tm2654), treated with water or mianserin on day 1, followed by increasing concentrations of paraquat on day 5 of adulthood. (b) Hierarchical clustering of fold change [serotonin antagonist/DMSO] in protection of wt (N2) and ser-5 mutant animals, when treated with DMSO or serotonin antagonists on day 1 followed by paraquat on day 5, shows the degree of similarity in protection between 8 structurally different serotonin antagonists (left) and the requirement of ser-5 for these antagonists to protect from oxidative stress. (c) Bar graphs quantifying transcriptional drift by qRT-PCR (log fold-changes in gene expression) in 5-day-old N2 and ser-3(ad1774) animals (left panel), and N2 and ser-4(ok512) animals (right panel) treated with mianserin, relative to water-treated N2, determined by qRT-PCR. Mianserin treatment of ser-3(ad1774) and ser-4(ok512) strains result in a drift pattern, similar to those seen in N2. Thus, these receptors are neither required for drift-attenuation in redox genes, nor for the age-associated increase in oxidative stress resistance (Figure 4). Error bars: S.E.M. For detailed statistics, see Tables 6 and 7.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig5-v2.jpg)
 
-**Figure 5.:** (a) Bar graphs quantifying transcriptional drift (log fold-changes in gene expression) as measured by qRT-PCR in 5-day-old N2 and ser-5(ok3087) animals treated with mianserin, relative to water-treated N2. Mianserin treatment increases expression of genes drifting down with age and decreases expression of genes drifting up with age in N2, but not in ser-5(ok3087) mutants. (See 5b). *P<0.05, **P<0.01, ***P<0.001,t-test; Error bars: S.E.M. (b) Log fold-change in gene expression as a function of age for stress response genes shown in a. Blue arrows indicate how mianserin treatment corrects age-associated changes in gene expression toward an expression pattern as seen in young adults. (c) Bar graphs quantifying log fold-changes in gene expression in 1-day-old N2 and ser-5(ok3087) animals treated with paraquat, relative to water-treated N2 animals. N2 and ser-5(ok3087) show an identical response to paraquat. (d) Mianserin treatment on day 1 of adulthood enhances transcription of sod and hsp-16.x genes in response to an 8h paraquat treatment on day 5 in wt (N2) animals compared to water treated controls. In contrast, mianserin treatment of ser-5(ok3087) animals did not enhance transcription of sod and hsp-16.x genes. mRNA levels of genes were evaluated by qRT-PCR and plotted as fold induction (PQ/water) (Y-axis) for each gene. (e) Survival plot of mianserin-treated and untreated N2 and ser-5(ok3087) animals. ***P<0.001, *P<0.05, Mantel–Haenszel version of the log-rank test. f) Percent increase in lifespan as a function of mianserin concentration. Mutations in ser-5 or synaptic components rendered the animals partially or completely resistant to mianserin-induced lifespan extension. See Figure 5—figure supplement 1 for additional data, and Table 8 for detailed statistics.DOI: http://dx.doi.org/10.7554/eLife.08833.018
+**Figure 5.:** (a) Bar graphs quantifying transcriptional drift (log fold-changes in gene expression) as measured by qRT-PCR in 5-day-old N2 and ser-5(ok3087) animals treated with mianserin, relative to water-treated N2. Mianserin treatment increases expression of genes drifting down with age and decreases expression of genes drifting up with age in N2, but not in ser-5(ok3087) mutants. (See 5b). *P<0.05, **P<0.01, ***P<0.001,t-test; Error bars: S.E.M. (b) Log fold-change in gene expression as a function of age for stress response genes shown in a. Blue arrows indicate how mianserin treatment corrects age-associated changes in gene expression toward an expression pattern as seen in young adults. (c) Bar graphs quantifying log fold-changes in gene expression in 1-day-old N2 and ser-5(ok3087) animals treated with paraquat, relative to water-treated N2 animals. N2 and ser-5(ok3087) show an identical response to paraquat. (d) Mianserin treatment on day 1 of adulthood enhances transcription of sod and hsp-16.x genes in response to an 8h paraquat treatment on day 5 in wt (N2) animals compared to water treated controls. In contrast, mianserin treatment of ser-5(ok3087) animals did not enhance transcription of sod and hsp-16.x genes. mRNA levels of genes were evaluated by qRT-PCR and plotted as fold induction (PQ/water) (Y-axis) for each gene. (e) Survival plot of mianserin-treated and untreated N2 and ser-5(ok3087) animals. ***P<0.001, *P<0.05, Mantel–Haenszel version of the log-rank test. f) Percent increase in lifespan as a function of mianserin concentration. Mutations in ser-5 or synaptic components rendered the animals partially or completely resistant to mianserin-induced lifespan extension. See Figure 5—figure supplement 1 for additional data, and Table 8 for detailed statistics.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Figure 5e in main text.(a) Kaplan-Meier graphs for lifespan of wt (dotted line) and synaptic mutant animals treated with water (black) or mianserin (blue). Synaptic transmission is required for mianserin-induced lifespan extension. For detailed statistics, see Table 8. (b) Kaplan-Meier graphs for lifespan of wt (dotted lines), ser-5(ok3087), (solid lines) treated with DMSO or serotonin antagonists namely: Dihydroergotamine, Metergoline, Amperozide, Methiothepin, Ketanserin, Mirtazapine, LY-165,163/PAPP or mianserin, on day 1 of adulthood. All 8 serotonergic antagonists completely or partially depend on ser-5.DOI: http://dx.doi.org/10.7554/eLife.08833.019
+**Figure 5—figure supplement 1.:** (a) Kaplan-Meier graphs for lifespan of wt (dotted line) and synaptic mutant animals treated with water (black) or mianserin (blue). Synaptic transmission is required for mianserin-induced lifespan extension. For detailed statistics, see Table 8. (b) Kaplan-Meier graphs for lifespan of wt (dotted lines), ser-5(ok3087), (solid lines) treated with DMSO or serotonin antagonists namely: Dihydroergotamine, Metergoline, Amperozide, Methiothepin, Ketanserin, Mirtazapine, LY-165,163/PAPP or mianserin, on day 1 of adulthood. All 8 serotonergic antagonists completely or partially depend on ser-5.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig6-v2.jpg)
 
-**Figure 6.:** (a) PCA plot of RNA-seq data. Each circle represents one RNA-seq sample with the age, in days, indicated. Mianserin-treated day 10 samples show the same transcriptional age as untreated day 3 animals, dotted red line. (b) Mortality curves (moving average) constructed using Gompertz equation for lifespan experiments from 15 independent experiments of ~100 animals each treated with water or mianserin 50 µM (n>1500 total for each condition). Mianserin treatment causes a 7–8 day parallel shift in log mortality as compared to the water-treated animals. (c) Survival of wt animals treated with mianserin for 8 hr, 1 day, 5 days or throughout life was determined and compared to water treated control animals. Removing mianserin after 8 hr or 1 day lessens its effect on lifespan, while removing mianserin on day 5 or maintaining treatment throughout life showed a comparable effect. (d) Mean survival of wt animals treated with water or mianserin for 8 hr, 1 day, 5, 10, 15 days or throughout life was plotted as a function of mianserin exposure in days. Mianserin treatment for 5 to 10 days was required and sufficient for an optimal lifespan extension. (e) Distinct modes of lifespan extension: Proportional lifespan extension leads to a proportional extension across life whereas period-specific lifespan extension leads to a reduced rate of age-associated degeneration during a specific period only. Mianserin reduces the rate of age-associated changes in early adulthood, thereby postponing mortality levels by 7–8 days causing a ‘period-specific lifespan extension’. (f) Model for how mianserin modulates age-associated mortality in early adulthood. Blocking serotonergic signaling via SER-5 decreases transcriptional drift-variance with age in redox genes, leading to preserved homeostatic capacity in redox function, which subsequently delays age-associated mortality. (g) Mianserin does not affect reproductive longevity. Wt animals were treated with water or mianserin (50 µM) on day 1 followed by counting the number of viable eggs laid by them on day 1, day 2, day 3 and day 4. h) Chymotrypsin-like 26S proteasome activity measured from wt animals treated with water or mianserin (50 µM) on day 1 followed by proteasome activity assay on day 2 (upper panel) or day 5 (lower panel). Mianserin treatment does not lead to an increase in proteasome activity, unlike long lived germline-less animals. Error bars S.E.M. See Figure 6—figure supplement 1 for additional data and detailed statistics.DOI: http://dx.doi.org/10.7554/eLife.08833.020
+**Figure 6.:** (a) PCA plot of RNA-seq data. Each circle represents one RNA-seq sample with the age, in days, indicated. Mianserin-treated day 10 samples show the same transcriptional age as untreated day 3 animals, dotted red line. (b) Mortality curves (moving average) constructed using Gompertz equation for lifespan experiments from 15 independent experiments of ~100 animals each treated with water or mianserin 50 µM (n>1500 total for each condition). Mianserin treatment causes a 7–8 day parallel shift in log mortality as compared to the water-treated animals. (c) Survival of wt animals treated with mianserin for 8 hr, 1 day, 5 days or throughout life was determined and compared to water treated control animals. Removing mianserin after 8 hr or 1 day lessens its effect on lifespan, while removing mianserin on day 5 or maintaining treatment throughout life showed a comparable effect. (d) Mean survival of wt animals treated with water or mianserin for 8 hr, 1 day, 5, 10, 15 days or throughout life was plotted as a function of mianserin exposure in days. Mianserin treatment for 5 to 10 days was required and sufficient for an optimal lifespan extension. (e) Distinct modes of lifespan extension: Proportional lifespan extension leads to a proportional extension across life whereas period-specific lifespan extension leads to a reduced rate of age-associated degeneration during a specific period only. Mianserin reduces the rate of age-associated changes in early adulthood, thereby postponing mortality levels by 7–8 days causing a ‘period-specific lifespan extension’. (f) Model for how mianserin modulates age-associated mortality in early adulthood. Blocking serotonergic signaling via SER-5 decreases transcriptional drift-variance with age in redox genes, leading to preserved homeostatic capacity in redox function, which subsequently delays age-associated mortality. (g) Mianserin does not affect reproductive longevity. Wt animals were treated with water or mianserin (50 µM) on day 1 followed by counting the number of viable eggs laid by them on day 1, day 2, day 3 and day 4. h) Chymotrypsin-like 26S proteasome activity measured from wt animals treated with water or mianserin (50 µM) on day 1 followed by proteasome activity assay on day 2 (upper panel) or day 5 (lower panel). Mianserin treatment does not lead to an increase in proteasome activity, unlike long lived germline-less animals. Error bars S.E.M. See Figure 6—figure supplement 1 for additional data and detailed statistics.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** figure 6 in main text.(a) Mortality curves constructed using Gompertz equation for lifespan experiments of wt (N2) animals from 15 independent experiments of ~100 animals each treated with water or mianserin 50 µM (n>1500 total for each condition). The shift in log mortality as a function of time with mianserin treatment is parallel to the water-treated animals. See table below for aggregate data showing hazard/mortality for water and mianserin treatment. (b) Power of detection for 500, 1000 and 1500 animals in each cohort as used in Figure 6b (α=0.01). Monte-Carlo simulations based on a parametric model derived from our data were used to determine the power of detection. A lifespan extension of 1 day corresponds to a 5% increase in lifespan. (c) Drift-plots show changes in drift-variance in proteasome pathway (KEGG annotation: 03050) associated with 38 genes involved in proteasome activity in animals treated with water or mianserin (50 µM) on day 1 and harvested on day 3, 5 and 10. Attenuation patterns of drift-variance with mianserin treatment corresponds functionally to changes in proteasome activity on day 2 and day 5 (See panel a). Mianserin slightly increases transcriptional drift on day 5 and slightly reduces proteasome activity function. P-values compare variance, not mean, **P<0.01, Levene’s test. Error bars; drift-variance.DOI: http://dx.doi.org/10.7554/eLife.08833.021
+**Figure 6—figure supplement 1.:** (a) Mortality curves constructed using Gompertz equation for lifespan experiments of wt (N2) animals from 15 independent experiments of ~100 animals each treated with water or mianserin 50 µM (n>1500 total for each condition). The shift in log mortality as a function of time with mianserin treatment is parallel to the water-treated animals. See table below for aggregate data showing hazard/mortality for water and mianserin treatment. (b) Power of detection for 500, 1000 and 1500 animals in each cohort as used in Figure 6b (α=0.01). Monte-Carlo simulations based on a parametric model derived from our data were used to determine the power of detection. A lifespan extension of 1 day corresponds to a 5% increase in lifespan. (c) Drift-plots show changes in drift-variance in proteasome pathway (KEGG annotation: 03050) associated with 38 genes involved in proteasome activity in animals treated with water or mianserin (50 µM) on day 1 and harvested on day 3, 5 and 10. Attenuation patterns of drift-variance with mianserin treatment corresponds functionally to changes in proteasome activity on day 2 and day 5 (See panel a). Mianserin slightly increases transcriptional drift on day 5 and slightly reduces proteasome activity function. P-values compare variance, not mean, **P<0.01, Levene’s test. Error bars; drift-variance.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/08833/elife-08833-fig7-v2.jpg)
 
-**Figure 7.:** (a) Transcriptional drift-variance in gene expression from different mouse tissues aged 13 to 130 weeks. Drift-plots show an increase in drift-variance with age in mouse brain, kidney, liver, lung and spleen (b) Drift-variance plotted as a function of age for different organs. To obtain drift-variance values for young animals, a single transcriptome was set aside and used a reference. (c) Drift-plot for gene expression from 32 human brains (frontal cortex) plotted as a function of age in years. Data binned in 20-year increments. (d) Drift-variance plotted as a function of age in years for individuals. Each dot corresponds to one brain sample (frontal cortex). Shading indicates 95% confidence interval (ρ=0.603, P=0.0014). (e) Drift plots show a higher transcriptional drift-variance in BJ fibroblasts (BJ) and fibroblasts from Hutchinson Gilford progeria syndrome (HGPS), when compared to H9 embryonic stem cells. Reprogramming the BJ and HGPS cells to induced pluripotent stem cells (iPSCs) leads to a partial reversal of the transcriptional drift-variance to a lower variance corresponding to the young phenotype of the iPSCs. See Figure 2—figure supplement 1 for additional information on transcriptional drift calculation, and Methods section for transcriptional drift calculation in each figure panel.DOI: http://dx.doi.org/10.7554/eLife.08833.022
+**Figure 7.:** (a) Transcriptional drift-variance in gene expression from different mouse tissues aged 13 to 130 weeks. Drift-plots show an increase in drift-variance with age in mouse brain, kidney, liver, lung and spleen (b) Drift-variance plotted as a function of age for different organs. To obtain drift-variance values for young animals, a single transcriptome was set aside and used a reference. (c) Drift-plot for gene expression from 32 human brains (frontal cortex) plotted as a function of age in years. Data binned in 20-year increments. (d) Drift-variance plotted as a function of age in years for individuals. Each dot corresponds to one brain sample (frontal cortex). Shading indicates 95% confidence interval (ρ=0.603, P=0.0014). (e) Drift plots show a higher transcriptional drift-variance in BJ fibroblasts (BJ) and fibroblasts from Hutchinson Gilford progeria syndrome (HGPS), when compared to H9 embryonic stem cells. Reprogramming the BJ and HGPS cells to induced pluripotent stem cells (iPSCs) leads to a partial reversal of the transcriptional drift-variance to a lower variance corresponding to the young phenotype of the iPSCs. See Figure 2—figure supplement 1 for additional information on transcriptional drift calculation, and Methods section for transcriptional drift calculation in each figure panel.
 
-Our previous studies showed that mianserin protected C. elegans from oxidative stress by a neuronal mechanism that modulated peripheral stress response genes (NEUROX) (Rangaraju et al., 2015a). We therefore constructed drift plots for redox-associated pathways that showed that mianserin indeed increased the overall expression of oxidative stress response genes (type I) relative to age-matched controls but also attenuated transcriptional drift (type II) (Figure 3b; Table 3).10.7554/eLife.08833.023Table 3.Gene ontology (GO) pathways of relevance to this study that are differentially regulated by mianserin.DOI: http://dx.doi.org/10.7554/eLife.08833.023KEGG / GO IDKEGG / GO TermNumber of Genes observedLevene’s test for variance (Difference in transcriptional drift- variance) Water D1 vs. water DxLevene’s test for variance (Difference in transcriptional drift- variance) water Dy vs. mianserin DyTranscriptome19,196D3 : P < 1.0E-100 D5 : P < 1.0E-100 D10: P < 1.0E-100D3 : P < 1.0E-100 D5 : P < 1.0E-100 D10: P < 1.0E-100KEGG:Cel00030Pentose phosphate pathway17D3 : P = 0.0096 D10: P <1.0E-5D3 : P <1.0E-4 D10: P = 0.01GO: 0006979Response to oxidative stress67D3 : P <1.0E-10 D10: P <1.0E-16D3 : P <1.0E-4 D10: P = 0.001GO: 0045454Cell redox homeostasis52D3 : P <1.0E-6 D10: P <1.0E-10D3 : P <1.0E-4 D10: P = 0.029GO: 006749Glutathione metabolism13D3 : P <1.0E-4 D10: P <1.0E-7D3 : P =0.041 D10: P <1.0E-4GO: 0007186G-protein coupled receptor signaling335D3 : P <1.0E-24 D10: P < 1.0E-100D3 : P <1.0E-4 D10: P <1.0E-4GO: 0016209Antioxidant activity34D3 : P <1.0E-8 D10: P <1.0E-10D3 : P = 0.002 D10: P = 0.06Summary of gene changes with RNA-seq transcriptome analysis in Figure 3b.GO ID is the Gene Ontology identification number.GO Term is the Gene Ontology term for the biological process.Dx = age in days for the animals indicated, compared with D1 water-treated animals.Dy = age in days for water- and mianserin-treated animals, compared on the same day of age indicated.
+Our previous studies showed that mianserin protected C. elegans from oxidative stress by a neuronal mechanism that modulated peripheral stress response genes (NEUROX) (Rangaraju et al., 2015a). We therefore constructed drift plots for redox-associated pathways that showed that mianserin indeed increased the overall expression of oxidative stress response genes (type I) relative to age-matched controls but also attenuated transcriptional drift (type II) (Figure 3b; Table 3).
 
-We therefore asked whether mianserin treatment increased resistance to oxidative stress by either directly activating the oxidative stress response or whether attenuating transcriptional drift would preserve homeostatic capacity into older age (Rahman et al., 2013). Animals were treated with water or mianserin on day 1 of adulthood, followed by treatment with the reactive oxygen species (ROS) generator paraquat on day 3, 5, or 10 (Figure 3c). On day 3 of adulthood, no difference in stress resistance between mianserin-treated and untreated animals was observed. As animals grew older (day 5 and day 10), mianserin treatment greatly improved stress resistance (Figure 3c; Table 4). Again, as with lifespan, delaying the start of mianserin treatment to day 3 and day 5 progressively reduced its protective effect on stress resistance, this time measured in animals subjected to paraquat on day 10 of adulthood (Figure 3d; Table 5). Thus, mianserin treatment specifically improves stress resistance in older (day 5 and day 10) but not in younger (day 3) animals consistent with a model in which it preserves the homeostatic capacity of redox function.10.7554/eLife.08833.024Table 4.Survival data for paraquat stress resistance assays.DOI: http://dx.doi.org/10.7554/eLife.08833.024StrainTreatmentConc.[µM]Treatment added [day]PQ 100 mM, added [day]Survival after PQ [%] (expt. 1)Survival after PQ [%] (expt. 2)Survival after PQ [%] (expt. 3)Mean, Survival after PQ [%]S.D., Survival after PQ [%]P-valueNo. of wellsTotal no. of animalsN2Water0d1d370.043.162.258.413.948450N2Mia50d1d387.347.953.963.021.37.72E-0148390N2Water0d1d555.856.266.159.35.848436N2Mia50d1d595.596.192.094.52.24.24E-0348435N2Water0d1d1063.337.441.747.513.948400N2Mia50d1d1091.982.185.486.45.02.85E-0248390Summary of all stress resistance assays performed in Figure 3c. The treatments, water or mianserin (Mia), at the indicated concentrations (conc.) were added on day 1 of adulthood. Paraquat (PQ) was added to a final conc. of 100 mM on day 3 (d3), day 5 (d5) or day 10 (d10) and survival after PQ [%] was calculated 24 hr after the respective PQ addition. Mean and standard deviation (S.D.) of survival after PQ [%] were calculated from 3 independent experiments (expts.). P-values were calculated between water and mianserin-treatments on the same day of PQ addition, using unpaired t-test. The total number of wells and animals from which data were collected are indicated.10.7554/eLife.08833.025Table 5.Survival data for paraquat stress resistance assays, mianserin added on different days.DOI: http://dx.doi.org/10.7554/eLife.08833.025StrainTreatmentConc. [µM]Treatment added dayPQ 100 mM, added daySurvival [%] (expt. 1)Survival [%] (expt. 2)Survival [%] (expt. 3)Mean, Survival [%]S.D., Survival [%]P-valueNo. of wellsTotal no. of animalsN2Water0d1d1063.3037.4441.7247.4813.8648400N2Mia50d1d1091.8582.0585.3886.434.972.85E-0248390N2Water0d3d1063.9741.2538.3547.8514.0248403N2Mia50d3d1078.5266.2273.6272.796.190.07448378N2Water0d5d1057.3143.8342.5747.908.1648387N2Mia50d5d1068.6350.5858.6259.289.040.1848398Summary of all stress resistance assays performed in Figure 3d. The treatments, water or mianserin (Mia), at the indicated concentrations (conc.) were added on day 1 (D1), day 3 (D3) or day 5 (D5) of adulthood. 100mM Paraquat (PQ) was added on day 10 (D10) and survival [%] was calculated after 24 hr. Mean and standard deviation (S.D) of survival [%] were calculated from 3 independent experiments (expts.). P-value calculated between water and mianserin-treatments using t-test. The total number of wells and animals from which data were collected are indicated.
+**Table 3.**
+ Gene ontology (GO) pathways of relevance to this study that are differentially regulated by mianserin.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>KEGG / GO ID</th>
+      <th>KEGG / GO Term</th>
+      <th>Number of Genes observed</th>
+      <th>Levene’s test for variance (Difference in transcriptional drift- variance) Water D1 vs. water Dx</th>
+      <th>Levene’s test for variance (Difference in transcriptional drift- variance) water Dy vs. mianserin Dy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transcriptome</td>
+      <td></td>
+      <td>19,196</td>
+      <td>D3 : P &lt; 1.0E-100 D5 : P &lt; 1.0E-100 D10: P &lt; 1.0E-100</td>
+      <td>D3 : P &lt; 1.0E-100 D5 : P &lt; 1.0E-100 D10: P &lt; 1.0E-100</td>
+    </tr>
+    <tr>
+      <td>KEGG:Cel00030</td>
+      <td>Pentose phosphate pathway</td>
+      <td>17</td>
+      <td>D3 : P = 0.0096 D10: P &lt;1.0E-5</td>
+      <td>D3 : P &lt;1.0E-4 D10: P = 0.01</td>
+    </tr>
+    <tr>
+      <td>GO: 0006979</td>
+      <td>Response to oxidative stress</td>
+      <td>67</td>
+      <td>D3 : P &lt;1.0E-10 D10: P &lt;1.0E-16</td>
+      <td>D3 : P &lt;1.0E-4 D10: P = 0.001</td>
+    </tr>
+    <tr>
+      <td>GO: 0045454</td>
+      <td>Cell redox homeostasis</td>
+      <td>52</td>
+      <td>D3 : P &lt;1.0E-6 D10: P &lt;1.0E-10</td>
+      <td>D3 : P &lt;1.0E-4 D10: P = 0.029</td>
+    </tr>
+    <tr>
+      <td>GO: 006749</td>
+      <td>Glutathione metabolism</td>
+      <td>13</td>
+      <td>D3 : P &lt;1.0E-4 D10: P &lt;1.0E-7</td>
+      <td>D3 : P =0.041 D10: P &lt;1.0E-4</td>
+    </tr>
+    <tr>
+      <td>GO: 0007186</td>
+      <td>G-protein coupled receptor signaling</td>
+      <td>335</td>
+      <td>D3 : P &lt;1.0E-24 D10: P &lt; 1.0E-100</td>
+      <td>D3 : P &lt;1.0E-4 D10: P &lt;1.0E-4</td>
+    </tr>
+    <tr>
+      <td>GO: 0016209</td>
+      <td>Antioxidant activity</td>
+      <td>34</td>
+      <td>D3 : P &lt;1.0E-8 D10: P &lt;1.0E-10</td>
+      <td>D3 : P = 0.002 D10: P = 0.06</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary of gene changes with RNA-seq transcriptome analysis in Figure 3b.GO ID is the Gene Ontology identification number.GO Term is the Gene Ontology term for the biological process.Dx = age in days for the animals indicated, compared with D1 water-treated animals.Dy = age in days for water- and mianserin-treated animals, compared on the same day of age indicated._
+
+We therefore asked whether mianserin treatment increased resistance to oxidative stress by either directly activating the oxidative stress response or whether attenuating transcriptional drift would preserve homeostatic capacity into older age (Rahman et al., 2013). Animals were treated with water or mianserin on day 1 of adulthood, followed by treatment with the reactive oxygen species (ROS) generator paraquat on day 3, 5, or 10 (Figure 3c). On day 3 of adulthood, no difference in stress resistance between mianserin-treated and untreated animals was observed. As animals grew older (day 5 and day 10), mianserin treatment greatly improved stress resistance (Figure 3c; Table 4). Again, as with lifespan, delaying the start of mianserin treatment to day 3 and day 5 progressively reduced its protective effect on stress resistance, this time measured in animals subjected to paraquat on day 10 of adulthood (Figure 3d; Table 5). Thus, mianserin treatment specifically improves stress resistance in older (day 5 and day 10) but not in younger (day 3) animals consistent with a model in which it preserves the homeostatic capacity of redox function.
+
+**Table 4.**
+ Survival data for paraquat stress resistance assays.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Treatment</th>
+      <th>Conc.[µM]</th>
+      <th>Treatment added [day]</th>
+      <th>PQ 100 mM, added [day]</th>
+      <th>Survival after PQ [%] (expt. 1)</th>
+      <th>Survival after PQ [%] (expt. 2)</th>
+      <th>Survival after PQ [%] (expt. 3)</th>
+      <th>Mean, Survival after PQ [%]</th>
+      <th>S.D., Survival after PQ [%]</th>
+      <th>P-value</th>
+      <th>No. of wells</th>
+      <th>Total no. of animals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N2</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>d1</td>
+      <td>d3</td>
+      <td>70.0</td>
+      <td>43.1</td>
+      <td>62.2</td>
+      <td>58.4</td>
+      <td>13.9</td>
+      <td></td>
+      <td>48</td>
+      <td>450</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>50</td>
+      <td>d1</td>
+      <td>d3</td>
+      <td>87.3</td>
+      <td>47.9</td>
+      <td>53.9</td>
+      <td>63.0</td>
+      <td>21.3</td>
+      <td>7.72E-01</td>
+      <td>48</td>
+      <td>390</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>d1</td>
+      <td>d5</td>
+      <td>55.8</td>
+      <td>56.2</td>
+      <td>66.1</td>
+      <td>59.3</td>
+      <td>5.8</td>
+      <td></td>
+      <td>48</td>
+      <td>436</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>50</td>
+      <td>d1</td>
+      <td>d5</td>
+      <td>95.5</td>
+      <td>96.1</td>
+      <td>92.0</td>
+      <td>94.5</td>
+      <td>2.2</td>
+      <td>4.24E-03</td>
+      <td>48</td>
+      <td>435</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>d1</td>
+      <td>d10</td>
+      <td>63.3</td>
+      <td>37.4</td>
+      <td>41.7</td>
+      <td>47.5</td>
+      <td>13.9</td>
+      <td></td>
+      <td>48</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>50</td>
+      <td>d1</td>
+      <td>d10</td>
+      <td>91.9</td>
+      <td>82.1</td>
+      <td>85.4</td>
+      <td>86.4</td>
+      <td>5.0</td>
+      <td>2.85E-02</td>
+      <td>48</td>
+      <td>390</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary of all stress resistance assays performed in Figure 3c. The treatments, water or mianserin (Mia), at the indicated concentrations (conc.) were added on day 1 of adulthood. Paraquat (PQ) was added to a final conc. of 100 mM on day 3 (d3), day 5 (d5) or day 10 (d10) and survival after PQ [%] was calculated 24 hr after the respective PQ addition. Mean and standard deviation (S.D.) of survival after PQ [%] were calculated from 3 independent experiments (expts.). P-values were calculated between water and mianserin-treatments on the same day of PQ addition, using unpaired t-test. The total number of wells and animals from which data were collected are indicated._
+
+**Table 5.**
+ Survival data for paraquat stress resistance assays, mianserin added on different days.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Treatment</th>
+      <th>Conc. [µM]</th>
+      <th>Treatment added day</th>
+      <th>PQ 100 mM, added day</th>
+      <th>Survival [%] (expt. 1)</th>
+      <th>Survival [%] (expt. 2)</th>
+      <th>Survival [%] (expt. 3)</th>
+      <th>Mean, Survival [%]</th>
+      <th>S.D., Survival [%]</th>
+      <th>P-value</th>
+      <th>No. of wells</th>
+      <th>Total no. of animals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N2</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>d1</td>
+      <td>d10</td>
+      <td>63.30</td>
+      <td>37.44</td>
+      <td>41.72</td>
+      <td>47.48</td>
+      <td>13.86</td>
+      <td></td>
+      <td>48</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>50</td>
+      <td>d1</td>
+      <td>d10</td>
+      <td>91.85</td>
+      <td>82.05</td>
+      <td>85.38</td>
+      <td>86.43</td>
+      <td>4.97</td>
+      <td>2.85E-02</td>
+      <td>48</td>
+      <td>390</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>d3</td>
+      <td>d10</td>
+      <td>63.97</td>
+      <td>41.25</td>
+      <td>38.35</td>
+      <td>47.85</td>
+      <td>14.02</td>
+      <td></td>
+      <td>48</td>
+      <td>403</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>50</td>
+      <td>d3</td>
+      <td>d10</td>
+      <td>78.52</td>
+      <td>66.22</td>
+      <td>73.62</td>
+      <td>72.79</td>
+      <td>6.19</td>
+      <td>0.074</td>
+      <td>48</td>
+      <td>378</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>d5</td>
+      <td>d10</td>
+      <td>57.31</td>
+      <td>43.83</td>
+      <td>42.57</td>
+      <td>47.90</td>
+      <td>8.16</td>
+      <td></td>
+      <td>48</td>
+      <td>387</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>Mia</td>
+      <td>50</td>
+      <td>d5</td>
+      <td>d10</td>
+      <td>68.63</td>
+      <td>50.58</td>
+      <td>58.62</td>
+      <td>59.28</td>
+      <td>9.04</td>
+      <td>0.18</td>
+      <td>48</td>
+      <td>398</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary of all stress resistance assays performed in Figure 3d. The treatments, water or mianserin (Mia), at the indicated concentrations (conc.) were added on day 1 (D1), day 3 (D3) or day 5 (D5) of adulthood. 100mM Paraquat (PQ) was added on day 10 (D10) and survival [%] was calculated after 24 hr. Mean and standard deviation (S.D) of survival [%] were calculated from 3 independent experiments (expts.). P-value calculated between water and mianserin-treatments using t-test. The total number of wells and animals from which data were collected are indicated._
 
 To further distinguish between a model in which mianserin directly activates an oxidative stress response from one that preserves the homeostatic capacity by attenuating drift-variance, we asked whether mianserin enhanced (direct activation) or attenuated (preserving capacity) genes that change in response to oxidative stress (Figure 3e). Oliveira et al. identified 252 genes that were upregulated and 88 genes that were downregulated in young C. elegans in response to oxidative stress, and can therefore be considered an experimentally determined oxidative stress signature (Oliveira et al., 2009). We hypothesized that a direct activation of the oxidative stress response by mianserin would mimic the increase in expression of the 252 genes and the decrease in the expression of the 88 genes as seen in response to oxidative stress. However, we observed an attenuation rather than an activation of the oxidative stress signatures, consistent with preserving homeostatic capacity rather than a direct activation. Genes that increased in response to oxidative stress (252) showed a lower expression while genes that decreased (88) in response to oxidative stress showed a higher expression in age-matched mianserin-treated animals (Figure 3e). Consistent with the functional data, differences in the oxidative stress signature were only observed in older animals (day 5, 10), but not in younger day 3 animals. These results are consistent with a model in which mianserin treatment preserves the redox system from age-associated decline, thus improving redox capacity in older age.
 
-## Mianserin requires the serotonin receptor SER-5 to preserve low drift-variances
+### Mianserin requires the serotonin receptor SER-5 to preserve low drift-variances
 
-In mammals, mianserin antagonizes serotonergic signals sent by 5-HT2A/C receptors (Gillman, 2006). We next asked whether preservation of redox capacity and reducing drift-variance in redox pathways by mianserin depends on serotonergic signaling. To identify the serotonergic receptor, we treated multiple mutants, each deficient in signaling by a single G-protein coupled receptor (GPCR) with mianserin on day 1, followed by increasing concentrations of paraquat on day 5 to induce oxidative stress (Figure 4a,b; Table 6). Mianserin was unable to protect multiple ser-5 mutant alleles (ok3087, tm2647, tm2654) from oxidative stress (Figure 4a,b; Figure 4—figure supplement 1a; Table 6). In addition, seven structurally distinct serotonergic antagonists/inverse agonists also protect from oxidative stress in a ser-5 dependent manner (Figure 4—figure supplement 1b; Table 7). Furthermore, mianserin did not protect animals unable to synthesize serotonin (tph-1(mg280)) (Figure 4a; Table 6) (Sze et al., 2000).10.7554/eLife.08833.026Table 6.Survival data for paraquat stress resistance assays.DOI: http://dx.doi.org/10.7554/eLife.08833.026StrainTreatmentConc. [µM]PQ conc. [mM]Survival after PQ [%] (expt. 1)Survival after PQ [%] (expt. 2)Survival after PQ [%] (expt. 3)Survival after PQ [%] (expt. 4)Survival after PQ [%] (expt. 5)Survival after PQ [%] (expt. 6)Mean, Survival after PQ [%]S.D., Survival after PQ [%]P-valueNo. of wellsTotal no. of animalsN2Water0089.998.995.898.293.993.295.03.448548Water01576.4888295.395.591.788.27.748578Water02574.291.38092.985.180.484.07.248531Water05066.267.863.881.961.667.868.27.148530Water07550.161.144.164.642.451.852.48.948545Water010036.234.435.553.52354.739.612.348503Mia50010010099.510010099.299.80.31.71E-0248556Mia501510098.287.610098.810097.44.93.52E-0248523Mia502596.298.89598.410098.297.81.84.54E-0348529Mia50509595.994.595.39998.296.31.81.19E-0448536Mia507598.989.389.492.697.598.194.34.41.29E-0548516Mia5010097.690.890.769.893.995.689.710.11.95E-0548539ser-1 (ok345)Water009271.389.284.211.224228Water01573.357.981.871.012.124187Water02571.355.967.865.08.124209Water05054.846.442.647.96.224213Water07539.456.350.748.88.624213Water010024.227.346.632.712.124224Mia5001001001001000.00.1324215Mia501598.897.797.698.00.70.0624211Mia502597.994.298.496.82.31.51E-0224194Mia505094.895.49795.71.14.52E-0324224Mia507593.989.992.492.12.09.87E-0324232Mia5010087.489.689.588.81.21.45E-0224234ser-2 (pk1357)Water0010010095.510098.92.332278Water0158897.573.792.287.910.232239Water02590.31008383.289.18.032206Water05076.787.273.762.775.110.132254Water07573.973.265.25366.39.732220Water01007259.654.447.758.410.332220Mia50098.910010010099.70.60.5132231Mia50151001001001001000.00.1032255Mia502598.910098.996.998.71.30.1032228Mia505010010095.596.998.12.31.71E-0232243Mia507598.99596.891.895.63.06.35E-0332245Mia501009788.792.395.493.43.73.80E-0332210ser-3 (ad1774)Water0010010092.697.54.324176Water0158988.586.888.11.224174Water02590.585.485.287.03.024216Water05081.37472.175.84.924176Water07570.848.658.959.411.124169Water010043.746.530.140.18.824140Mia50098.210095.898.02.10.8824176Mia501598.910098.499.10.83.25E-0424228Mia502593.810090.294.75.00.1024173Mia505098.110093.897.33.24.97E-0324174Mia507592.49591.893.11.73.20E-0224197Mia5010093.465.682.880.614.01.92E-0224180ser-4 (ok512)water0010087.610098.696.66.032249Water01510072.691.384.487.111.632262Water02598.267.972.585.581.013.732224Water0508867.183.363.575.512.032229Water0756947.275.861.463.412.332225Water010056.348.36043.252.07.632204Mia50010095.910010099.02.10.4932212Mia501596.997.297.597.797.30.40.2132228Mia502597.510091.795.596.23.50.1132230Mia505093.896.896.495.395.61.34.31E-0232261Mia507510091.588.196.594.05.39.66E-0332227Mia5010096.986.590.38990.74.43.75E-0432252ser-5 (ok3087)Water0098.892.29996.73.924206Water01591.183.685.586.73.924230Water02586.271.688.282.09.124222Water05083.267.575.975.57.924222Water07568.4647769.86.624216Water010065.158.262.962.13.524232Mia50098.693.999.297.22.90.8524248Mia501596.292.997.495.52.33.90E-0224221Mia50259578.490.988.18.60.4524184Mia505089.577.482.983.36.10.2524219Mia507573.255.772.567.19.90.7224213Mia501006454.679.466.012.50.6524200ser-5 (tm2647)Water0097.297.396.997.10.224248Water01588.891.287.389.12.024230Water02594.489.985.890.04.324227Water05079.584.681.781.92.624228Water07579.973.560.271.210.024248Water010051.65944.151.67.524224Mia50096.799.294.396.72.50.8024233Mia501596.788.49593.44.40.2324246Mia502597.288.592.492.74.40.4924187Mia505083.787.885.485.62.10.1324234Mia507569.777.373.573.53.80.7424203Mia5010046.475.170.363.915.40.3024196ser-5 (tm2654)Water0081.596.383.487.18.124232Water01568.886.675.977.19.024223Water02577.189.169.178.410.124226Water05055.279.878.471.113.824254Water07547.542.555.348.46.524209Water010041.23645.841.04.924215Mia50083.796.390.490.16.30.6324232Mia501573.770.382.675.56.40.8224232Mia502566.973.788.276.310.90.8124184Mia505054.568.854.659.38.20.2924200Mia507534.941.966.547.816.60.9524227Mia5010018.230.640.729.811.30.2224187ser-6 (tm2146)Water0098.996.998.610098.61.332230Water01595.189.696.593.73.632260Water02597.787.590.384.890.15.632221Water05095.397.584.878.188.99.132256Water07584.887.17763.578.110.632265Water010082.478.177.95372.913.432253Mia50010093.310096.997.63.20.5732278Mia501598.896.492.495.93.20.4932230Mia502597.997.596.491.395.83.00.1432190Mia505010010088.692.595.35.70.2932252Mia507592.210088.588.992.45.30.0732242Mia5010095.691.393.495.794.02.14.92E-0232221ser-7 (tm1325)Water0068.173.394.578.614.024200Water01548.149.632.443.49.524142Water02545.742.930.939.87.924152Water0503837.836.537.40.824152Water07516.420.241.826.113.724160Water010025.123.231.626.64.424134Mia50098.898.910099.20.70.1324217Mia501595.893.897.295.61.79.18E-0324212Mia502510093.497.496.93.32.25E-0324193Mia505088.59294.691.73.15.30E-0424179Mia507591.392.489.491.01.51.37E-0224189Mia5010096.991.781.690.17.88.94E-0424186tph-1 (mg280)Water0097.296.198.297.21.124148Water02566.967.87670.25.024156Water0505247.156.952.04.924164Water07532.234.64838.38.524148Water010012.26.742.320.419.224169Mia50094.310096.997.12.90.9624161Mia502590.458.778.675.916.00.6124159Mia505064.861.76965.23.72.33E-0224158Mia507552.928.957.946.615.50.4724143Mia501008.71.840.617.020.70.8524150Summary of all stress resistance assays performed in Figure 4a. The treatments, water or mianserin (50 µM), with their indicated concentrations (conc.) were added on day 1 of adulthood. Paraquat (PQ) was added in the concentration range of 0 to 100 mM on day 5 and survival after PQ [%] was calculated 24 hr later. Mean and standard deviation (S.D.) of survival after PQ [%] were calculated from 3 to 6 independent experiments (expts.). P-values were calculated between water and mianserin-treatments at the same PQ conc., using t-test. The total number of wells and animals from which data were collected are indicated.10.7554/eLife.08833.027Table 7.Summary of oxidative stress protection by serotonin antagonists.DOI: http://dx.doi.org/10.7554/eLife.08833.027Strain nameFold change in survival after PQ [(Drug/DMSO) -1] Expt.1Fold change in survival after PQ [(Drug/DMSO) -1] Expt.2Fold change in survival after PQ [(Drug/DMSO) -1] Expt.3Fold change in survival after PQ [(Drug/DMSO) -1] Expt.4Fold change in survival after PQ [(Drug/DMSO) -1] Expt.5Fold change in survival after PQ [(Drug/DMSO) -1] Expt.6Fold change in survival after PQ [(Drug/DMSO) -1] Expt.7Mean, Fold change in survival after PQS.D., Fold change in survival after PQP-valueDihydroergotamine 88 µMN20.620.700.790.191.751.430.910.57ser-5(ok3087)0.450.150.100.230.193.49E-02Metergoline 33 µMN20.540.570.680.941.241.670.940.44ser-5(ok3087)-0.05-0.27-0.11-0.12-0.130.091.50E-03Amperozide 13 µMN20.930.740.990.922.490.891.160.66ser-5(ok3087)0.300.03-0.58-0.090.451.63E-02Methiothepin 10 µMN20.801.080.950.360.772.941.391.190.89ser-5(ok3087)0.070.100.16-0.010.080.081.24E-02Ketanserin 176 µMN20.630.591.131.380.421.710.980.51ser-5(ok3087)-0.41-0.140.01-0.07-0.150.181.91E-03Mirtazapine 50 µMN20.80.71.10.41.00.81.50.890.35ser-5(ok3087)0.0-0.1-0.1-0.2-0.110.071.92E-04LY-165,163 33/PAPP µMN20.480.491.000.940.531.400.810.37ser-5(ok3087)-0.030.35-0.07-0.160.020.233.19E-03Mianserin 50 µMN21.101.111.180.533.241.601.460.94ser-5(ok3087)0.14-0.18-0.26-0.100.214.49E-02Summary of all stress resistance assays performed in Figure 4—figure supplement 1b. The treatments, DMSO or serotonin antagonists, with their indicated concentrations (conc.) were added on day 1 of adulthood. Paraquat (PQ) (100 mM) was added on day 5 and survival after PQ [%] was calculated 24 hr later. Mean and standard deviation (S.D.) of survival after PQ [%] were calculated from 3 to 7 independent experiments (expts.). P-values were calculated between N2 and mutant strains for fold change values with indicated small molecule treatments using t-test.
+In mammals, mianserin antagonizes serotonergic signals sent by 5-HT2A/C receptors (Gillman, 2006). We next asked whether preservation of redox capacity and reducing drift-variance in redox pathways by mianserin depends on serotonergic signaling. To identify the serotonergic receptor, we treated multiple mutants, each deficient in signaling by a single G-protein coupled receptor (GPCR) with mianserin on day 1, followed by increasing concentrations of paraquat on day 5 to induce oxidative stress (Figure 4a,b; Table 6). Mianserin was unable to protect multiple ser-5 mutant alleles (ok3087, tm2647, tm2654) from oxidative stress (Figure 4a,b; Figure 4—figure supplement 1a; Table 6). In addition, seven structurally distinct serotonergic antagonists/inverse agonists also protect from oxidative stress in a ser-5 dependent manner (Figure 4—figure supplement 1b; Table 7). Furthermore, mianserin did not protect animals unable to synthesize serotonin (tph-1(mg280)) (Figure 4a; Table 6) (Sze et al., 2000).
+
+**Table 6.**
+ Survival data for paraquat stress resistance assays.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Treatment</th>
+      <th>Conc. [µM]</th>
+      <th>PQ conc. [mM]</th>
+      <th>Survival after PQ [%] (expt. 1)</th>
+      <th>Survival after PQ [%] (expt. 2)</th>
+      <th>Survival after PQ [%] (expt. 3)</th>
+      <th>Survival after PQ [%] (expt. 4)</th>
+      <th>Survival after PQ [%] (expt. 5)</th>
+      <th>Survival after PQ [%] (expt. 6)</th>
+      <th>Mean, Survival after PQ [%]</th>
+      <th>S.D., Survival after PQ [%]</th>
+      <th>P-value</th>
+      <th>No. of wells</th>
+      <th>Total no. of animals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="12">N2</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>89.9</td>
+      <td>98.9</td>
+      <td>95.8</td>
+      <td>98.2</td>
+      <td>93.9</td>
+      <td>93.2</td>
+      <td>95.0</td>
+      <td>3.4</td>
+      <td></td>
+      <td>48</td>
+      <td>548</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>76.4</td>
+      <td>88</td>
+      <td>82</td>
+      <td>95.3</td>
+      <td>95.5</td>
+      <td>91.7</td>
+      <td>88.2</td>
+      <td>7.7</td>
+      <td></td>
+      <td>48</td>
+      <td>578</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>74.2</td>
+      <td>91.3</td>
+      <td>80</td>
+      <td>92.9</td>
+      <td>85.1</td>
+      <td>80.4</td>
+      <td>84.0</td>
+      <td>7.2</td>
+      <td></td>
+      <td>48</td>
+      <td>531</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>66.2</td>
+      <td>67.8</td>
+      <td>63.8</td>
+      <td>81.9</td>
+      <td>61.6</td>
+      <td>67.8</td>
+      <td>68.2</td>
+      <td>7.1</td>
+      <td></td>
+      <td>48</td>
+      <td>530</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>50.1</td>
+      <td>61.1</td>
+      <td>44.1</td>
+      <td>64.6</td>
+      <td>42.4</td>
+      <td>51.8</td>
+      <td>52.4</td>
+      <td>8.9</td>
+      <td></td>
+      <td>48</td>
+      <td>545</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>36.2</td>
+      <td>34.4</td>
+      <td>35.5</td>
+      <td>53.5</td>
+      <td>23</td>
+      <td>54.7</td>
+      <td>39.6</td>
+      <td>12.3</td>
+      <td></td>
+      <td>48</td>
+      <td>503</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>100</td>
+      <td>100</td>
+      <td>99.5</td>
+      <td>100</td>
+      <td>100</td>
+      <td>99.2</td>
+      <td>99.8</td>
+      <td>0.3</td>
+      <td>1.71E-02</td>
+      <td>48</td>
+      <td>556</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>100</td>
+      <td>98.2</td>
+      <td>87.6</td>
+      <td>100</td>
+      <td>98.8</td>
+      <td>100</td>
+      <td>97.4</td>
+      <td>4.9</td>
+      <td>3.52E-02</td>
+      <td>48</td>
+      <td>523</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>96.2</td>
+      <td>98.8</td>
+      <td>95</td>
+      <td>98.4</td>
+      <td>100</td>
+      <td>98.2</td>
+      <td>97.8</td>
+      <td>1.8</td>
+      <td>4.54E-03</td>
+      <td>48</td>
+      <td>529</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>95</td>
+      <td>95.9</td>
+      <td>94.5</td>
+      <td>95.3</td>
+      <td>99</td>
+      <td>98.2</td>
+      <td>96.3</td>
+      <td>1.8</td>
+      <td>1.19E-04</td>
+      <td>48</td>
+      <td>536</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>98.9</td>
+      <td>89.3</td>
+      <td>89.4</td>
+      <td>92.6</td>
+      <td>97.5</td>
+      <td>98.1</td>
+      <td>94.3</td>
+      <td>4.4</td>
+      <td>1.29E-05</td>
+      <td>48</td>
+      <td>516</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>97.6</td>
+      <td>90.8</td>
+      <td>90.7</td>
+      <td>69.8</td>
+      <td>93.9</td>
+      <td>95.6</td>
+      <td>89.7</td>
+      <td>10.1</td>
+      <td>1.95E-05</td>
+      <td>48</td>
+      <td>539</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-1 (ok345)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92</td>
+      <td>71.3</td>
+      <td>89.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>84.2</td>
+      <td>11.2</td>
+      <td></td>
+      <td>24</td>
+      <td>228</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>73.3</td>
+      <td>57.9</td>
+      <td>81.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>71.0</td>
+      <td>12.1</td>
+      <td></td>
+      <td>24</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>71.3</td>
+      <td>55.9</td>
+      <td>67.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>65.0</td>
+      <td>8.1</td>
+      <td></td>
+      <td>24</td>
+      <td>209</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>54.8</td>
+      <td>46.4</td>
+      <td>42.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>47.9</td>
+      <td>6.2</td>
+      <td></td>
+      <td>24</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>39.4</td>
+      <td>56.3</td>
+      <td>50.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>48.8</td>
+      <td>8.6</td>
+      <td></td>
+      <td>24</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>24.2</td>
+      <td>27.3</td>
+      <td>46.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>32.7</td>
+      <td>12.1</td>
+      <td></td>
+      <td>24</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>100</td>
+      <td>0.0</td>
+      <td>0.13</td>
+      <td>24</td>
+      <td>215</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>98.8</td>
+      <td>97.7</td>
+      <td>97.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>98.0</td>
+      <td>0.7</td>
+      <td>0.06</td>
+      <td>24</td>
+      <td>211</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>97.9</td>
+      <td>94.2</td>
+      <td>98.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>96.8</td>
+      <td>2.3</td>
+      <td>1.51E-02</td>
+      <td>24</td>
+      <td>194</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>94.8</td>
+      <td>95.4</td>
+      <td>97</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>95.7</td>
+      <td>1.1</td>
+      <td>4.52E-03</td>
+      <td>24</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>93.9</td>
+      <td>89.9</td>
+      <td>92.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>92.1</td>
+      <td>2.0</td>
+      <td>9.87E-03</td>
+      <td>24</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>87.4</td>
+      <td>89.6</td>
+      <td>89.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>88.8</td>
+      <td>1.2</td>
+      <td>1.45E-02</td>
+      <td>24</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-2 (pk1357)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>100</td>
+      <td>95.5</td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+      <td>98.9</td>
+      <td>2.3</td>
+      <td></td>
+      <td>32</td>
+      <td>278</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>88</td>
+      <td>97.5</td>
+      <td>73.7</td>
+      <td>92.2</td>
+      <td></td>
+      <td></td>
+      <td>87.9</td>
+      <td>10.2</td>
+      <td></td>
+      <td>32</td>
+      <td>239</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>90.3</td>
+      <td>100</td>
+      <td>83</td>
+      <td>83.2</td>
+      <td></td>
+      <td></td>
+      <td>89.1</td>
+      <td>8.0</td>
+      <td></td>
+      <td>32</td>
+      <td>206</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>76.7</td>
+      <td>87.2</td>
+      <td>73.7</td>
+      <td>62.7</td>
+      <td></td>
+      <td></td>
+      <td>75.1</td>
+      <td>10.1</td>
+      <td></td>
+      <td>32</td>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>73.9</td>
+      <td>73.2</td>
+      <td>65.2</td>
+      <td>53</td>
+      <td></td>
+      <td></td>
+      <td>66.3</td>
+      <td>9.7</td>
+      <td></td>
+      <td>32</td>
+      <td>220</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>72</td>
+      <td>59.6</td>
+      <td>54.4</td>
+      <td>47.7</td>
+      <td></td>
+      <td></td>
+      <td>58.4</td>
+      <td>10.3</td>
+      <td></td>
+      <td>32</td>
+      <td>220</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>98.9</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+      <td>99.7</td>
+      <td>0.6</td>
+      <td>0.51</td>
+      <td>32</td>
+      <td>231</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+      <td>100</td>
+      <td>0.0</td>
+      <td>0.10</td>
+      <td>32</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>98.9</td>
+      <td>100</td>
+      <td>98.9</td>
+      <td>96.9</td>
+      <td></td>
+      <td></td>
+      <td>98.7</td>
+      <td>1.3</td>
+      <td>0.10</td>
+      <td>32</td>
+      <td>228</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>100</td>
+      <td>100</td>
+      <td>95.5</td>
+      <td>96.9</td>
+      <td></td>
+      <td></td>
+      <td>98.1</td>
+      <td>2.3</td>
+      <td>1.71E-02</td>
+      <td>32</td>
+      <td>243</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>98.9</td>
+      <td>95</td>
+      <td>96.8</td>
+      <td>91.8</td>
+      <td></td>
+      <td></td>
+      <td>95.6</td>
+      <td>3.0</td>
+      <td>6.35E-03</td>
+      <td>32</td>
+      <td>245</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>97</td>
+      <td>88.7</td>
+      <td>92.3</td>
+      <td>95.4</td>
+      <td></td>
+      <td></td>
+      <td>93.4</td>
+      <td>3.7</td>
+      <td>3.80E-03</td>
+      <td>32</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-3 (ad1774)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>100</td>
+      <td>92.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>97.5</td>
+      <td>4.3</td>
+      <td></td>
+      <td>24</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>89</td>
+      <td>88.5</td>
+      <td>86.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>88.1</td>
+      <td>1.2</td>
+      <td></td>
+      <td>24</td>
+      <td>174</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>90.5</td>
+      <td>85.4</td>
+      <td>85.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>87.0</td>
+      <td>3.0</td>
+      <td></td>
+      <td>24</td>
+      <td>216</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>81.3</td>
+      <td>74</td>
+      <td>72.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>75.8</td>
+      <td>4.9</td>
+      <td></td>
+      <td>24</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>70.8</td>
+      <td>48.6</td>
+      <td>58.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>59.4</td>
+      <td>11.1</td>
+      <td></td>
+      <td>24</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>43.7</td>
+      <td>46.5</td>
+      <td>30.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40.1</td>
+      <td>8.8</td>
+      <td></td>
+      <td>24</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>98.2</td>
+      <td>100</td>
+      <td>95.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>98.0</td>
+      <td>2.1</td>
+      <td>0.88</td>
+      <td>24</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>98.9</td>
+      <td>100</td>
+      <td>98.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>99.1</td>
+      <td>0.8</td>
+      <td>3.25E-04</td>
+      <td>24</td>
+      <td>228</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>93.8</td>
+      <td>100</td>
+      <td>90.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>94.7</td>
+      <td>5.0</td>
+      <td>0.10</td>
+      <td>24</td>
+      <td>173</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>98.1</td>
+      <td>100</td>
+      <td>93.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>97.3</td>
+      <td>3.2</td>
+      <td>4.97E-03</td>
+      <td>24</td>
+      <td>174</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>92.4</td>
+      <td>95</td>
+      <td>91.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>93.1</td>
+      <td>1.7</td>
+      <td>3.20E-02</td>
+      <td>24</td>
+      <td>197</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>93.4</td>
+      <td>65.6</td>
+      <td>82.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>80.6</td>
+      <td>14.0</td>
+      <td>1.92E-02</td>
+      <td>24</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-4 (ok512)water</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>87.6</td>
+      <td>100</td>
+      <td>98.6</td>
+      <td></td>
+      <td></td>
+      <td>96.6</td>
+      <td>6.0</td>
+      <td></td>
+      <td>32</td>
+      <td>249</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>100</td>
+      <td>72.6</td>
+      <td>91.3</td>
+      <td>84.4</td>
+      <td></td>
+      <td></td>
+      <td>87.1</td>
+      <td>11.6</td>
+      <td></td>
+      <td>32</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>98.2</td>
+      <td>67.9</td>
+      <td>72.5</td>
+      <td>85.5</td>
+      <td></td>
+      <td></td>
+      <td>81.0</td>
+      <td>13.7</td>
+      <td></td>
+      <td>32</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>88</td>
+      <td>67.1</td>
+      <td>83.3</td>
+      <td>63.5</td>
+      <td></td>
+      <td></td>
+      <td>75.5</td>
+      <td>12.0</td>
+      <td></td>
+      <td>32</td>
+      <td>229</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>69</td>
+      <td>47.2</td>
+      <td>75.8</td>
+      <td>61.4</td>
+      <td></td>
+      <td></td>
+      <td>63.4</td>
+      <td>12.3</td>
+      <td></td>
+      <td>32</td>
+      <td>225</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>56.3</td>
+      <td>48.3</td>
+      <td>60</td>
+      <td>43.2</td>
+      <td></td>
+      <td></td>
+      <td>52.0</td>
+      <td>7.6</td>
+      <td></td>
+      <td>32</td>
+      <td>204</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>100</td>
+      <td>95.9</td>
+      <td>100</td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+      <td>99.0</td>
+      <td>2.1</td>
+      <td>0.49</td>
+      <td>32</td>
+      <td>212</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>96.9</td>
+      <td>97.2</td>
+      <td>97.5</td>
+      <td>97.7</td>
+      <td></td>
+      <td></td>
+      <td>97.3</td>
+      <td>0.4</td>
+      <td>0.21</td>
+      <td>32</td>
+      <td>228</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>97.5</td>
+      <td>100</td>
+      <td>91.7</td>
+      <td>95.5</td>
+      <td></td>
+      <td></td>
+      <td>96.2</td>
+      <td>3.5</td>
+      <td>0.11</td>
+      <td>32</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>93.8</td>
+      <td>96.8</td>
+      <td>96.4</td>
+      <td>95.3</td>
+      <td></td>
+      <td></td>
+      <td>95.6</td>
+      <td>1.3</td>
+      <td>4.31E-02</td>
+      <td>32</td>
+      <td>261</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>100</td>
+      <td>91.5</td>
+      <td>88.1</td>
+      <td>96.5</td>
+      <td></td>
+      <td></td>
+      <td>94.0</td>
+      <td>5.3</td>
+      <td>9.66E-03</td>
+      <td>32</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>96.9</td>
+      <td>86.5</td>
+      <td>90.3</td>
+      <td>89</td>
+      <td></td>
+      <td></td>
+      <td>90.7</td>
+      <td>4.4</td>
+      <td>3.75E-04</td>
+      <td>32</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-5 (ok3087)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>98.8</td>
+      <td>92.2</td>
+      <td>99</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>96.7</td>
+      <td>3.9</td>
+      <td></td>
+      <td>24</td>
+      <td>206</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>91.1</td>
+      <td>83.6</td>
+      <td>85.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>86.7</td>
+      <td>3.9</td>
+      <td></td>
+      <td>24</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>86.2</td>
+      <td>71.6</td>
+      <td>88.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>82.0</td>
+      <td>9.1</td>
+      <td></td>
+      <td>24</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>83.2</td>
+      <td>67.5</td>
+      <td>75.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>75.5</td>
+      <td>7.9</td>
+      <td></td>
+      <td>24</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>68.4</td>
+      <td>64</td>
+      <td>77</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>69.8</td>
+      <td>6.6</td>
+      <td></td>
+      <td>24</td>
+      <td>216</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>65.1</td>
+      <td>58.2</td>
+      <td>62.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>62.1</td>
+      <td>3.5</td>
+      <td></td>
+      <td>24</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>98.6</td>
+      <td>93.9</td>
+      <td>99.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>97.2</td>
+      <td>2.9</td>
+      <td>0.85</td>
+      <td>24</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>96.2</td>
+      <td>92.9</td>
+      <td>97.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>95.5</td>
+      <td>2.3</td>
+      <td>3.90E-02</td>
+      <td>24</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>95</td>
+      <td>78.4</td>
+      <td>90.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>88.1</td>
+      <td>8.6</td>
+      <td>0.45</td>
+      <td>24</td>
+      <td>184</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>89.5</td>
+      <td>77.4</td>
+      <td>82.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>83.3</td>
+      <td>6.1</td>
+      <td>0.25</td>
+      <td>24</td>
+      <td>219</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>73.2</td>
+      <td>55.7</td>
+      <td>72.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>67.1</td>
+      <td>9.9</td>
+      <td>0.72</td>
+      <td>24</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>64</td>
+      <td>54.6</td>
+      <td>79.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>66.0</td>
+      <td>12.5</td>
+      <td>0.65</td>
+      <td>24</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-5 (tm2647)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.2</td>
+      <td>97.3</td>
+      <td>96.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>97.1</td>
+      <td>0.2</td>
+      <td></td>
+      <td>24</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>88.8</td>
+      <td>91.2</td>
+      <td>87.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>89.1</td>
+      <td>2.0</td>
+      <td></td>
+      <td>24</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>94.4</td>
+      <td>89.9</td>
+      <td>85.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>90.0</td>
+      <td>4.3</td>
+      <td></td>
+      <td>24</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>79.5</td>
+      <td>84.6</td>
+      <td>81.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>81.9</td>
+      <td>2.6</td>
+      <td></td>
+      <td>24</td>
+      <td>228</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>79.9</td>
+      <td>73.5</td>
+      <td>60.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>71.2</td>
+      <td>10.0</td>
+      <td></td>
+      <td>24</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>51.6</td>
+      <td>59</td>
+      <td>44.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>51.6</td>
+      <td>7.5</td>
+      <td></td>
+      <td>24</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>96.7</td>
+      <td>99.2</td>
+      <td>94.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>96.7</td>
+      <td>2.5</td>
+      <td>0.80</td>
+      <td>24</td>
+      <td>233</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>96.7</td>
+      <td>88.4</td>
+      <td>95</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>93.4</td>
+      <td>4.4</td>
+      <td>0.23</td>
+      <td>24</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>97.2</td>
+      <td>88.5</td>
+      <td>92.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>92.7</td>
+      <td>4.4</td>
+      <td>0.49</td>
+      <td>24</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>83.7</td>
+      <td>87.8</td>
+      <td>85.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>85.6</td>
+      <td>2.1</td>
+      <td>0.13</td>
+      <td>24</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>69.7</td>
+      <td>77.3</td>
+      <td>73.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>73.5</td>
+      <td>3.8</td>
+      <td>0.74</td>
+      <td>24</td>
+      <td>203</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>46.4</td>
+      <td>75.1</td>
+      <td>70.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>63.9</td>
+      <td>15.4</td>
+      <td>0.30</td>
+      <td>24</td>
+      <td>196</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-5 (tm2654)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>81.5</td>
+      <td>96.3</td>
+      <td>83.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>87.1</td>
+      <td>8.1</td>
+      <td></td>
+      <td>24</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>68.8</td>
+      <td>86.6</td>
+      <td>75.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>77.1</td>
+      <td>9.0</td>
+      <td></td>
+      <td>24</td>
+      <td>223</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>77.1</td>
+      <td>89.1</td>
+      <td>69.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>78.4</td>
+      <td>10.1</td>
+      <td></td>
+      <td>24</td>
+      <td>226</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>55.2</td>
+      <td>79.8</td>
+      <td>78.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>71.1</td>
+      <td>13.8</td>
+      <td></td>
+      <td>24</td>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>47.5</td>
+      <td>42.5</td>
+      <td>55.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>48.4</td>
+      <td>6.5</td>
+      <td></td>
+      <td>24</td>
+      <td>209</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>41.2</td>
+      <td>36</td>
+      <td>45.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>41.0</td>
+      <td>4.9</td>
+      <td></td>
+      <td>24</td>
+      <td>215</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>83.7</td>
+      <td>96.3</td>
+      <td>90.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>90.1</td>
+      <td>6.3</td>
+      <td>0.63</td>
+      <td>24</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>73.7</td>
+      <td>70.3</td>
+      <td>82.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>75.5</td>
+      <td>6.4</td>
+      <td>0.82</td>
+      <td>24</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>66.9</td>
+      <td>73.7</td>
+      <td>88.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>76.3</td>
+      <td>10.9</td>
+      <td>0.81</td>
+      <td>24</td>
+      <td>184</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>54.5</td>
+      <td>68.8</td>
+      <td>54.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>59.3</td>
+      <td>8.2</td>
+      <td>0.29</td>
+      <td>24</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>34.9</td>
+      <td>41.9</td>
+      <td>66.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>47.8</td>
+      <td>16.6</td>
+      <td>0.95</td>
+      <td>24</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>18.2</td>
+      <td>30.6</td>
+      <td>40.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>29.8</td>
+      <td>11.3</td>
+      <td>0.22</td>
+      <td>24</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-6 (tm2146)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>98.9</td>
+      <td>96.9</td>
+      <td>98.6</td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+      <td>98.6</td>
+      <td>1.3</td>
+      <td></td>
+      <td>32</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>95.1</td>
+      <td></td>
+      <td>89.6</td>
+      <td>96.5</td>
+      <td></td>
+      <td></td>
+      <td>93.7</td>
+      <td>3.6</td>
+      <td></td>
+      <td>32</td>
+      <td>260</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>97.7</td>
+      <td>87.5</td>
+      <td>90.3</td>
+      <td>84.8</td>
+      <td></td>
+      <td></td>
+      <td>90.1</td>
+      <td>5.6</td>
+      <td></td>
+      <td>32</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>95.3</td>
+      <td>97.5</td>
+      <td>84.8</td>
+      <td>78.1</td>
+      <td></td>
+      <td></td>
+      <td>88.9</td>
+      <td>9.1</td>
+      <td></td>
+      <td>32</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>84.8</td>
+      <td>87.1</td>
+      <td>77</td>
+      <td>63.5</td>
+      <td></td>
+      <td></td>
+      <td>78.1</td>
+      <td>10.6</td>
+      <td></td>
+      <td>32</td>
+      <td>265</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>82.4</td>
+      <td>78.1</td>
+      <td>77.9</td>
+      <td>53</td>
+      <td></td>
+      <td></td>
+      <td>72.9</td>
+      <td>13.4</td>
+      <td></td>
+      <td>32</td>
+      <td>253</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>100</td>
+      <td>93.3</td>
+      <td>100</td>
+      <td>96.9</td>
+      <td></td>
+      <td></td>
+      <td>97.6</td>
+      <td>3.2</td>
+      <td>0.57</td>
+      <td>32</td>
+      <td>278</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>98.8</td>
+      <td></td>
+      <td>96.4</td>
+      <td>92.4</td>
+      <td></td>
+      <td></td>
+      <td>95.9</td>
+      <td>3.2</td>
+      <td>0.49</td>
+      <td>32</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>97.9</td>
+      <td>97.5</td>
+      <td>96.4</td>
+      <td>91.3</td>
+      <td></td>
+      <td></td>
+      <td>95.8</td>
+      <td>3.0</td>
+      <td>0.14</td>
+      <td>32</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>100</td>
+      <td>100</td>
+      <td>88.6</td>
+      <td>92.5</td>
+      <td></td>
+      <td></td>
+      <td>95.3</td>
+      <td>5.7</td>
+      <td>0.29</td>
+      <td>32</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>92.2</td>
+      <td>100</td>
+      <td>88.5</td>
+      <td>88.9</td>
+      <td></td>
+      <td></td>
+      <td>92.4</td>
+      <td>5.3</td>
+      <td>0.07</td>
+      <td>32</td>
+      <td>242</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>95.6</td>
+      <td>91.3</td>
+      <td>93.4</td>
+      <td>95.7</td>
+      <td></td>
+      <td></td>
+      <td>94.0</td>
+      <td>2.1</td>
+      <td>4.92E-02</td>
+      <td>32</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td rowspan="12">ser-7 (tm1325)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.1</td>
+      <td>73.3</td>
+      <td>94.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>78.6</td>
+      <td>14.0</td>
+      <td></td>
+      <td>24</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>15</td>
+      <td>48.1</td>
+      <td>49.6</td>
+      <td>32.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>43.4</td>
+      <td>9.5</td>
+      <td></td>
+      <td>24</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>45.7</td>
+      <td>42.9</td>
+      <td>30.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>39.8</td>
+      <td>7.9</td>
+      <td></td>
+      <td>24</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>38</td>
+      <td>37.8</td>
+      <td>36.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>37.4</td>
+      <td>0.8</td>
+      <td></td>
+      <td>24</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>16.4</td>
+      <td>20.2</td>
+      <td>41.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>26.1</td>
+      <td>13.7</td>
+      <td></td>
+      <td>24</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>25.1</td>
+      <td>23.2</td>
+      <td>31.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>26.6</td>
+      <td>4.4</td>
+      <td></td>
+      <td>24</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>98.8</td>
+      <td>98.9</td>
+      <td>100</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>99.2</td>
+      <td>0.7</td>
+      <td>0.13</td>
+      <td>24</td>
+      <td>217</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>15</td>
+      <td>95.8</td>
+      <td>93.8</td>
+      <td>97.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>95.6</td>
+      <td>1.7</td>
+      <td>9.18E-03</td>
+      <td>24</td>
+      <td>212</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>100</td>
+      <td>93.4</td>
+      <td>97.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>96.9</td>
+      <td>3.3</td>
+      <td>2.25E-03</td>
+      <td>24</td>
+      <td>193</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>88.5</td>
+      <td>92</td>
+      <td>94.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>91.7</td>
+      <td>3.1</td>
+      <td>5.30E-04</td>
+      <td>24</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>91.3</td>
+      <td>92.4</td>
+      <td>89.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>91.0</td>
+      <td>1.5</td>
+      <td>1.37E-02</td>
+      <td>24</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>96.9</td>
+      <td>91.7</td>
+      <td>81.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>90.1</td>
+      <td>7.8</td>
+      <td>8.94E-04</td>
+      <td>24</td>
+      <td>186</td>
+    </tr>
+    <tr>
+      <td rowspan="10">tph-1 (mg280)</td>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.2</td>
+      <td>96.1</td>
+      <td>98.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>97.2</td>
+      <td>1.1</td>
+      <td></td>
+      <td>24</td>
+      <td>148</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>25</td>
+      <td>66.9</td>
+      <td>67.8</td>
+      <td>76</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>70.2</td>
+      <td>5.0</td>
+      <td></td>
+      <td>24</td>
+      <td>156</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>50</td>
+      <td>52</td>
+      <td>47.1</td>
+      <td>56.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>52.0</td>
+      <td>4.9</td>
+      <td></td>
+      <td>24</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>75</td>
+      <td>32.2</td>
+      <td>34.6</td>
+      <td>48</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>38.3</td>
+      <td>8.5</td>
+      <td></td>
+      <td>24</td>
+      <td>148</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>100</td>
+      <td>12.2</td>
+      <td>6.7</td>
+      <td>42.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.4</td>
+      <td>19.2</td>
+      <td></td>
+      <td>24</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>0</td>
+      <td>94.3</td>
+      <td>100</td>
+      <td>96.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>97.1</td>
+      <td>2.9</td>
+      <td>0.96</td>
+      <td>24</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>25</td>
+      <td>90.4</td>
+      <td>58.7</td>
+      <td>78.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>75.9</td>
+      <td>16.0</td>
+      <td>0.61</td>
+      <td>24</td>
+      <td>159</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>64.8</td>
+      <td>61.7</td>
+      <td>69</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>65.2</td>
+      <td>3.7</td>
+      <td>2.33E-02</td>
+      <td>24</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>75</td>
+      <td>52.9</td>
+      <td>28.9</td>
+      <td>57.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>46.6</td>
+      <td>15.5</td>
+      <td>0.47</td>
+      <td>24</td>
+      <td>143</td>
+    </tr>
+    <tr>
+      <td>Mia</td>
+      <td>50</td>
+      <td>100</td>
+      <td>8.7</td>
+      <td>1.8</td>
+      <td>40.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>17.0</td>
+      <td>20.7</td>
+      <td>0.85</td>
+      <td>24</td>
+      <td>150</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary of all stress resistance assays performed in Figure 4a. The treatments, water or mianserin (50 µM), with their indicated concentrations (conc.) were added on day 1 of adulthood. Paraquat (PQ) was added in the concentration range of 0 to 100 mM on day 5 and survival after PQ [%] was calculated 24 hr later. Mean and standard deviation (S.D.) of survival after PQ [%] were calculated from 3 to 6 independent experiments (expts.). P-values were calculated between water and mianserin-treatments at the same PQ conc., using t-test. The total number of wells and animals from which data were collected are indicated._
+
+**Table 7.**
+ Summary of oxidative stress protection by serotonin antagonists.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Fold change in survival after PQ [(Drug/DMSO) -1] Expt.1</th>
+      <th>Fold change in survival after PQ [(Drug/DMSO) -1] Expt.2</th>
+      <th>Fold change in survival after PQ [(Drug/DMSO) -1] Expt.3</th>
+      <th>Fold change in survival after PQ [(Drug/DMSO) -1] Expt.4</th>
+      <th>Fold change in survival after PQ [(Drug/DMSO) -1] Expt.5</th>
+      <th>Fold change in survival after PQ [(Drug/DMSO) -1] Expt.6</th>
+      <th>Fold change in survival after PQ [(Drug/DMSO) -1] Expt.7</th>
+      <th>Mean, Fold change in survival after PQ</th>
+      <th>S.D., Fold change in survival after PQ</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="11">Dihydroergotamine 88 µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>0.62</td>
+      <td>0.70</td>
+      <td>0.79</td>
+      <td>0.19</td>
+      <td>1.75</td>
+      <td>1.43</td>
+      <td></td>
+      <td>0.91</td>
+      <td>0.57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>0.45</td>
+      <td>0.15</td>
+      <td></td>
+      <td>0.10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.23</td>
+      <td>0.19</td>
+      <td>3.49E-02</td>
+    </tr>
+    <tr>
+      <td colspan="11">Metergoline 33 µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>0.54</td>
+      <td>0.57</td>
+      <td>0.68</td>
+      <td>0.94</td>
+      <td>1.24</td>
+      <td>1.67</td>
+      <td></td>
+      <td>0.94</td>
+      <td>0.44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>-0.05</td>
+      <td>-0.27</td>
+      <td>-0.11</td>
+      <td></td>
+      <td>-0.12</td>
+      <td></td>
+      <td></td>
+      <td>-0.13</td>
+      <td>0.09</td>
+      <td>1.50E-03</td>
+    </tr>
+    <tr>
+      <td colspan="11">Amperozide 13 µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>0.93</td>
+      <td>0.74</td>
+      <td>0.99</td>
+      <td>0.92</td>
+      <td>2.49</td>
+      <td>0.89</td>
+      <td></td>
+      <td>1.16</td>
+      <td>0.66</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>0.30</td>
+      <td>0.03</td>
+      <td></td>
+      <td>-0.58</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-0.09</td>
+      <td>0.45</td>
+      <td>1.63E-02</td>
+    </tr>
+    <tr>
+      <td colspan="11">Methiothepin 10 µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>0.80</td>
+      <td>1.08</td>
+      <td>0.95</td>
+      <td>0.36</td>
+      <td>0.77</td>
+      <td>2.94</td>
+      <td>1.39</td>
+      <td>1.19</td>
+      <td>0.89</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>0.07</td>
+      <td>0.10</td>
+      <td></td>
+      <td>0.16</td>
+      <td>-0.01</td>
+      <td></td>
+      <td></td>
+      <td>0.08</td>
+      <td>0.08</td>
+      <td>1.24E-02</td>
+    </tr>
+    <tr>
+      <td colspan="11">Ketanserin 176 µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>0.63</td>
+      <td>0.59</td>
+      <td>1.13</td>
+      <td>1.38</td>
+      <td>0.42</td>
+      <td>1.71</td>
+      <td></td>
+      <td>0.98</td>
+      <td>0.51</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>-0.41</td>
+      <td>-0.14</td>
+      <td>0.01</td>
+      <td></td>
+      <td>-0.07</td>
+      <td></td>
+      <td></td>
+      <td>-0.15</td>
+      <td>0.18</td>
+      <td>1.91E-03</td>
+    </tr>
+    <tr>
+      <td colspan="11">Mirtazapine 50 µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>0.8</td>
+      <td>0.7</td>
+      <td>1.1</td>
+      <td>0.4</td>
+      <td>1.0</td>
+      <td>0.8</td>
+      <td>1.5</td>
+      <td>0.89</td>
+      <td>0.35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>0.0</td>
+      <td>-0.1</td>
+      <td></td>
+      <td>-0.1</td>
+      <td>-0.2</td>
+      <td></td>
+      <td></td>
+      <td>-0.11</td>
+      <td>0.07</td>
+      <td>1.92E-04</td>
+    </tr>
+    <tr>
+      <td colspan="11">LY-165,163 33/PAPP µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>0.48</td>
+      <td>0.49</td>
+      <td>1.00</td>
+      <td>0.94</td>
+      <td>0.53</td>
+      <td>1.40</td>
+      <td></td>
+      <td>0.81</td>
+      <td>0.37</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>-0.03</td>
+      <td>0.35</td>
+      <td>-0.07</td>
+      <td></td>
+      <td>-0.16</td>
+      <td></td>
+      <td></td>
+      <td>0.02</td>
+      <td>0.23</td>
+      <td>3.19E-03</td>
+    </tr>
+    <tr>
+      <td colspan="11">Mianserin 50 µM</td>
+    </tr>
+    <tr>
+      <td>N2</td>
+      <td>1.10</td>
+      <td>1.11</td>
+      <td>1.18</td>
+      <td>0.53</td>
+      <td>3.24</td>
+      <td>1.60</td>
+      <td></td>
+      <td>1.46</td>
+      <td>0.94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ser-5(ok3087)</td>
+      <td>0.14</td>
+      <td>-0.18</td>
+      <td></td>
+      <td>-0.26</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-0.10</td>
+      <td>0.21</td>
+      <td>4.49E-02</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary of all stress resistance assays performed in Figure 4—figure supplement 1b. The treatments, DMSO or serotonin antagonists, with their indicated concentrations (conc.) were added on day 1 of adulthood. Paraquat (PQ) (100 mM) was added on day 5 and survival after PQ [%] was calculated 24 hr later. Mean and standard deviation (S.D.) of survival after PQ [%] were calculated from 3 to 7 independent experiments (expts.). P-values were calculated between N2 and mutant strains for fold change values with indicated small molecule treatments using t-test._
 
 We next asked whether SER-5 was also required for mianserin to preserve low transcriptional drift-variances in redox-related genes. We measured redox gene expression levels by qRT-PCR in wild-type 5-day-old N2 and ser-5(ok3087) animals that were treated with mianserin or water on day 1 (Figure 5a,b; Figure 1—figure supplement 1a). In N2 samples, mianserin increased the expression of stress response genes that drift down with age (sod-1, sod-2, prdx-2, -3, -6) and decreased the expression of stress response genes that drift up with age (sod-4, sod-5, all hsp-16s), an effect that was not observed in ser-5(ok3087) mutants. In contrast, SER-3 and SER-4, two receptors we previously showed to be required for lifespan extension by mianserin, were dispensable for stress protection (Figure 4a,b) (Petrascheck et al., 2007), as well as for the attenuation of drift-variance in redox-associated genes (Figure 4—figure supplement 1c). Thus, in wild-type animals, mianserin treatment preserved low drift-variances in redox-related genes into older age (day 5), in a ser-5 dependent manner (Figure 5a,b).
 
@@ -141,9 +2965,212 @@ Importantly, ser-5 mutants were specifically defective in their response to mian
 
 To test the hypothesis that mianserin preserved the homeostatic capacity of the redox system, as suggested by Figure 3e, we asked whether the treatment with mianserin on day 1 of adulthood led to an enhanced redox gene expression in response to the stressor paraquat in older animals (day 5). We therefore challenged older mianserin-treated or control animals (day 5) with paraquat for 8 hr and measured redox-gene expression by qRT-PCR (Figure 5d). Mianserin treatment led to an enhanced transcription of redox genes in response to paraquat as compared to age-matched control animals. The enhanced response was ser-5 dependent (Figure 5d). Thus, SER-5 is required for mianserin to attenuate age-associated increases in drift-variance in redox genes, and to preserve the homeostatic capacity of the redox system into older age.
 
-Furthermore, lifespan-extension by mianserin was strongly reduced or abrogated in ser-5, snt-1 and unc-26 mutant animals (Figure 5e, f; Figure 5—figure supplement 1a; Table 8). Seven additional serotonergic antagonists/inverse agonists also extended lifespan in a manner that was partially or fully dependent on ser-5 (Figure 5—figure supplement 1b). Thus, these results show that inhibiting serotonergic signals via SER-5 extends lifespan, attenuates age-associated drift-variance in the redox system and preserves the homeostatic capacity of the redox system.10.7554/eLife.08833.028Table 8.Summary of all lifespan data for mianserin.DOI: http://dx.doi.org/10.7554/eLife.08833.028Cumulative statisticsStatistics of individual expts.StrainSmall moleculeNo. of expts.Mean lifespan [days] (+Mia/+water)change in lifespan [%]S.E.M.No. of animals (+Mia/+water)Mean lifespan (days) (+Mia/+water)change in lifespan [%]P-valueNo. of animals (+Mia/+water)N2Mia1226.7/19.8+35± 7642/57726.4/19.8+341.67E-0877/5925.5/21.5+196.85E-07113/9428.1/20.1+403.71E-1495/10430.6/19.0+643.17E-1557/5026.8/21.5+251.87E-11149/14522.6/16.6+271.61E-23151/125snt-1 (md290)Mia320.9/18.2+15± 2236/23123.3/19.9+171.84E-0586/9017.3/15.4+121.18E-0279/8022.1/19.3+152.4E-0371/61unc-26 (e205)Mia325.0/26.7-7± 7135/16527.8/26.9+30.5354/6822.2/26.5-164.52E-0214/2426.5/25.3+50.5267/73ser-5 (ok3087)Mia323.4/22.2+5± 5496/45823.6/20.6+154.19E-02152/14426.4/26.2+10.85174/14420.1/19.8-10.25170/170Summary of all lifespan experiments performed in Figure 5e,f and Figure 5—figure supplement 1a. N2 and mutant strains were treated with 50 µM mianserin (Mia) on day 1 and lifespan [days] was scored until 95% of animals were dead in all tested conditions. Cumulative statistics and statistics of individual experiments are shown. Mean lifespan [days], change in lifespan [%] and S.E.M. for mianserin-treated (+Mia) and water-treated (+water) animals from multiple, independent experiments (expts.) are shown. Change in lifespan [%] and P-values for individual experiments were calculated using the Mantel–Haenszel version of the log-rank test. Number of animals in individual experiments and all experiments combined are shown.
+Furthermore, lifespan-extension by mianserin was strongly reduced or abrogated in ser-5, snt-1 and unc-26 mutant animals (Figure 5e, f; Figure 5—figure supplement 1a; Table 8). Seven additional serotonergic antagonists/inverse agonists also extended lifespan in a manner that was partially or fully dependent on ser-5 (Figure 5—figure supplement 1b). Thus, these results show that inhibiting serotonergic signals via SER-5 extends lifespan, attenuates age-associated drift-variance in the redox system and preserves the homeostatic capacity of the redox system.
 
-## Mianserin prolongs lifespan by slowing age-associated change in young adults
+**Table 8.**
+ Summary of all lifespan data for mianserin.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Cumulative statistics</th>
+      <th colspan="4">Statistics of individual expts.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain</td>
+      <td>Small molecule</td>
+      <td>No. of expts.</td>
+      <td>Mean lifespan [days] (+Mia/+water)</td>
+      <td>change in lifespan [%]</td>
+      <td>S.E.M.</td>
+      <td>No. of animals (+Mia/+water)</td>
+      <td>Mean lifespan (days) (+Mia/+water)</td>
+      <td>change in lifespan [%]</td>
+      <td>P-value</td>
+      <td>No. of animals (+Mia/+water)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">N2</td>
+      <td rowspan="6">Mia</td>
+      <td>12</td>
+      <td>26.7/19.8</td>
+      <td>+35</td>
+      <td>± 7</td>
+      <td>642/577</td>
+      <td>26.4/19.8</td>
+      <td>+34</td>
+      <td>1.67E-08</td>
+      <td>77/59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>25.5/21.5</td>
+      <td>+19</td>
+      <td>6.85E-07</td>
+      <td>113/94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>28.1/20.1</td>
+      <td>+40</td>
+      <td>3.71E-14</td>
+      <td>95/104</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>30.6/19.0</td>
+      <td>+64</td>
+      <td>3.17E-15</td>
+      <td>57/50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>26.8/21.5</td>
+      <td>+25</td>
+      <td>1.87E-11</td>
+      <td>149/145</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>22.6/16.6</td>
+      <td>+27</td>
+      <td>1.61E-23</td>
+      <td>151/125</td>
+    </tr>
+    <tr>
+      <td rowspan="3">snt-1 (md290)</td>
+      <td rowspan="3">Mia</td>
+      <td>3</td>
+      <td>20.9/18.2</td>
+      <td>+15</td>
+      <td>± 2</td>
+      <td>236/231</td>
+      <td>23.3/19.9</td>
+      <td>+17</td>
+      <td>1.84E-05</td>
+      <td>86/90</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>17.3/15.4</td>
+      <td>+12</td>
+      <td>1.18E-02</td>
+      <td>79/80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>22.1/19.3</td>
+      <td>+15</td>
+      <td>2.4E-03</td>
+      <td>71/61</td>
+    </tr>
+    <tr>
+      <td rowspan="3">unc-26 (e205)</td>
+      <td rowspan="3">Mia</td>
+      <td>3</td>
+      <td>25.0/26.7</td>
+      <td>-7</td>
+      <td>± 7</td>
+      <td>135/165</td>
+      <td>27.8/26.9</td>
+      <td>+3</td>
+      <td>0.53</td>
+      <td>54/68</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>22.2/26.5</td>
+      <td>-16</td>
+      <td>4.52E-02</td>
+      <td>14/24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>26.5/25.3</td>
+      <td>+5</td>
+      <td>0.52</td>
+      <td>67/73</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ser-5 (ok3087)</td>
+      <td rowspan="3">Mia</td>
+      <td>3</td>
+      <td>23.4/22.2</td>
+      <td>+5</td>
+      <td>± 5</td>
+      <td>496/458</td>
+      <td>23.6/20.6</td>
+      <td>+15</td>
+      <td>4.19E-02</td>
+      <td>152/144</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>26.4/26.2</td>
+      <td>+1</td>
+      <td>0.85</td>
+      <td>174/144</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>20.1/19.8</td>
+      <td>-1</td>
+      <td>0.25</td>
+      <td>170/170</td>
+    </tr>
+  </tbody>
+</table>
+
+_Summary of all lifespan experiments performed in Figure 5e,f and Figure 5—figure supplement 1a. N2 and mutant strains were treated with 50 µM mianserin (Mia) on day 1 and lifespan [days] was scored until 95% of animals were dead in all tested conditions. Cumulative statistics and statistics of individual experiments are shown. Mean lifespan [days], change in lifespan [%] and S.E.M. for mianserin-treated (+Mia) and water-treated (+water) animals from multiple, independent experiments (expts.) are shown. Change in lifespan [%] and P-values for individual experiments were calculated using the Mantel–Haenszel version of the log-rank test. Number of animals in individual experiments and all experiments combined are shown._
+
+### Mianserin prolongs lifespan by slowing age-associated change in young adults
 
 We next asked whether drift-variance could be used as a metric to monitor age-associated change in young adults. Comparing drift-variances between mianserin-treated and untreated animals, we noticed that by day 10, mianserin-treated animals exhibited a drift-variance slightly lower than that of 3-day-old control animal (P=0.37). This suggested that mianserin-treated animals showed a ~7–8 day delay in age-associated transcriptional change compared to age-matched controls (Figure 2a).
 
@@ -159,7 +3186,7 @@ Since the effect of mianserin in early adulthood overlapped with the reproductiv
 
 We further considered the possibility that mianserin acted by a mechanism similar to lifespan extension by germline ablation (Figure 6h). Two previous findings suggested otherwise: i) Lifespan extension by germline ablation depends on daf-16, while mianserin does not (Arantes-Oliveira et al., 2002; Petrascheck et al., 2007); ii) germline ablation increases lifespan of eat-2(ad1116) mutants while mianserin does not (Crawford et al., 2007). We measured whether mianserin treatment mimicked the increased proteasome activity observed in glp-1 mutants (Vilchez et al., 2012) (Figure 6h). A 24 hr mianserin treatment did not increase the proteasome activity, as measured by a fluorescence-based assay for chymotrypsin-like activity. On day 5, mianserin slightly decreased proteasome activity, consistent with a slight increase in drift-variance in proteasome-related genes (Figure 6h; Figure 6—figure supplement 1c). We concluded that mianserin specifically lowers the rate of age-associated change in somatic tissues and does not involve a mechanism directly related to the germline.
 
-## Transcriptional drift-variance increases with age in mice and humans
+### Transcriptional drift-variance increases with age in mice and humans
 
 Our data demonstrate that changes in drift-variance provide a metric for aging that correlates with mortality in C. elegans. To test whether drift-variance also increases with age in mammals, we re-analyzed published gene expression data-sets obtained from aging mouse tissues, aging human brains, and from fibroblasts derived from Hutchinson-Gilford progeria syndrome patients (Figure 7) (Lu et al., 2004; Liu et al., 2011; Jonker et al., 2013). We calculated drift-variances from brain, kidney, liver, lung, and spleen based on gene expression data-sets from mice aged 13, 26, 52, 78, 104 and 130 weeks. We calculated drift-variances using 13-week-old mice as a young reference (see Methods) and pooled mice into age-bins of 30, 60 and 100 weeks to reduce variability. Drift-variance increased in all tissues with age (Figure 7a). Compared to the drift-variance changes observed in C. elegans (Figure 2a), these changes however were small.
 
@@ -179,7 +3206,7 @@ Using transcriptome-wide drift-variance values as a metric for age showed that m
 
 Measuring mortality levels supported this conclusion. By day 12, the entire mortality curve was shifted parallel by 7–8 days (Figure 6b) showing that the physiological delay leading to a lifespan extension was already completed. Experiments in which animals were exposed to mianserin for limited periods of time confirmed that mianserin exposure for the first 5–10 days of adulthood was necessary and sufficient to fully extend lifespan (Figure 6c,d). The most parsimonious explanation that accounts for all these results is that mianserin treatment slows degenerative processes specifically between day 1 and 10, extending the duration of the period of young adulthood thereby postponing the onset of major mortality around mid-life (Figure 6e,f).
 
-## Biological interpretation of transcriptional drift-variance
+### Biological interpretation of transcriptional drift-variance
 
 Aging has been shown to cause DNA damage, degeneration of the nuclear architecture, loss of histones, loss of histone modification (Kaeberlein et al., 1999; Scaffidi and Misteli, 2006; Burgess et al., 2012). These changes contribute to the degenerative phenotypes observed with aging (Mostoslavsky et al., 2006; Feser et al., 2010; Peleg et al., 2010). In the present study, we used expression patterns of young adults as a reference to monitor the aging process across the transcriptome. We found that aging causes the expression of genes within functional groups to drift apart, causing a loss of co-expression patterns as observed in young adults. We quantified this phenomenon using drift-variance, defined as the variance in gene expression among genes. It is important to distinguish transcriptional noise, which measures the variance of the same genes among samples (Bahar et al., 2006), from transcriptional drift, which measures variance among genes within the same samples. At present it is unclear whether transcriptional drift is the consequence of a regulated program or of degenerative changes in the nucleus that lead to a loss of transcriptional control. Consistent with a regulated program are recent findings that the germline actively represses the activation of heat shock promoters via histone methylation, causing a decline in heat shock capacity (Labbadia and Morimoto, 2015b). Consistent with degenerative changes are recent findings that show the loss of histone methylation to cause aberrant gene expression that increases with age leading to a transcriptional drift-like effect (Somel et al., 2006; Mercken et al., 2013; Pu et al., 2015; Sen et al., 2015).
 
@@ -193,7 +3220,7 @@ At this point, it is prudent to mention possible pitfalls associated with transc
 
 Conceptually, transcriptional drift is not a biomarker for aging. It is a metric for aging similar to lifespan measurements that can be used to monitor age-associated physiological changes on the molecular level within groups of genes. Lifespan measurements record the fraction of organisms alive in different cohorts at any given time to compare rates of aging, while drift-variance allows a similar comparison based on transcriptional drift-variance. What made drift-variance measures essential for the present study was that it allowed us to monitor age-associated physiological changes in young animals, at a time when age-associated mortality levels are too low to be accurately determined (see below).
 
-## Period-specific lifespan extension
+### Period-specific lifespan extension
 
 Measuring lifespan of mianserin-treated and untreated C. elegans revealed a mean lifespan extension of 7–8 days (Figure 2). Lifespan measurements detect differences after the majority of the animals have died and make no statements about the period during which the relevant physiological events that lead to an increase in lifespan occur (Figure 2c,e) (Mair et al., 2003; Partridge and Gems, 2007). The finding that transcriptional drift values in mianserin-treated animals already showed a 7–8 day delay in physiological change as early as day 10 suggested a model in which the physiological events responsible for the 7–8 days lifespan extension take place (and conclude) prior to day 10 (Figure 2a, 6a,e).
 
@@ -209,27 +3236,39 @@ In summary, this work describes the phenomenon of transcriptional drift and how 
 
 ## Materials and methods
 
-## Measurement of transcriptional drift and drift-variance
+### Measurement of transcriptional drift and drift-variance
 
 Analyzing the RNA-seq data in aging C. elegans, we observed dramatic changes in the transcriptome with age. We simply termed these changes ‘transcriptional drift’, to emphasize the ambiguity of these changes. These changes could either be the result of regulated changes as part of a biological program, or caused by a progressive loss of transcriptional control with age. Note that a progressive loss of transcriptional control does not necessarily have to result in random changes. A gene that is continuously activated in young animals may be less activated in older animals due to a progressive functional decline in the transcriptional machinery. Thus, a gradual loss of transcriptional control would cause an age-associated decline in expression of that gene in a non-random fashion. Conversely, repressive chromatin is lost with age leading to increases in transcription that are repressed in young animals. As most physiological processes depend at least to some degree on transcriptional regulation, we propose that expression changes of genes within the same pathway that go into opposing directions (drift-variance increases) are detrimental for the functionality of the pathway (as seen for redox pathways in Figure 3b). These changes may also allow us to indirectly track the functional decline by measuring transcriptional drift.
 
-## Calculating transcriptional drift and drift-variance
+### Calculating transcriptional drift and drift-variance
 
 Transcriptional drift (td) is the change in transcript level of a gene at a given age from its level in young animals (“young reference”). As all the subsequent calculations depend on the age chosen for “young reference” we made sure to indicate the age used as a “young reference” for each plot (see below). For all the C. elegans work, the “young reference” age was day 1, at the onset of reproductive maturity in adulthood.
 
-For any gene x, transcriptional drift (td) is defined as (Equation 1).(1)tdgene x = ( No.of transcriptsage[t]No.of transcriptsyoung reference)
+For any gene x, transcriptional drift (td) is defined as (Equation 1).
 
-or, which is the same as(2)tdgene x=(cpmage[t]cpmyoung reference)
+$$
+td_{gene x} = ( \frac{No.of transcripts_{age[t]}}{No.of transcripts_{young reference}})
+$$
+
+or, which is the same as
+
+$$
+td_{gene x}=(\frac{cpm_{age[t]}}{cpm_{young reference}})
+$$
 
 where, ‘cpm’ stands for counts per million; ‘t’ stands for time in days, weeks or years, dependent on the organism.
 
 Equation 1 normalizes the level of transcription for all genes to 0 for a young animal. Note: If several biological replicates are available for the age of the young reference, a variance for the young age can be calculated (see the section below titled ‘Variance for “the young reference”’).
 
-To evaluate changes in co-expression, we calculated the drift-variance (dv) (Equation 3) over a group of n genes with transcriptional drift-values ranging from tdi=1 to tdn.(3)drift variance=1n−1∑i=1n(tdi−td¯)2
+To evaluate changes in co-expression, we calculated the drift-variance (dv) (Equation 3) over a group of n genes with transcriptional drift-values ranging from tdi=1 to tdn.
+
+$$
+drift variance=\frac{1}{n−1}\sum_{i=1}^{n}(td_{i}−td¯)^{2}
+$$
 
 Thus, if genes maintain a youthful co-expression pattern, drift-variance stays relatively small. If large fractions of genes within a GO or an entire transcriptome change expression in opposing directions, the drift-variance increases, suggesting a loss of youthful co-expression patterns as shown in Figure 1h,i.
 
-## Variance for the “young reference”
+### Variance for the “young reference”
 
 If multiple replicate data-sets for the “young reference” age are available, it is possible to plot drift-variance for the young reference as well. There are two ways to incorporate multiple “young reference” data-sets, each of which has its advantages or disadvantages.
 
@@ -239,7 +3278,7 @@ Method #2 allows calculating a real drift-variance value for young animals by se
 
 How transcriptional drift and variance relate to measures like fold-changes in transcription is shown in Supplementary Figure 2a–d. To determine whether the differences in variance were statistically different, we used the Brown-Forsythe version of the Levene’s test, as implemented in STATA software.
 
-## Calculations for drift-plots in Figures
+### Calculations for drift-plots in Figures
 
 Figure: 1g: Volcano plot used mean cpm values from all three biological replicates.
 
@@ -299,42 +3338,375 @@ g) The drift plot was constructed by removing all genes from our data-set that w
 
 k) Gene-sets enriched in AFD neurons (left plot), ASE neurons (middle plot) and NSM neurons (right plot) were used to construct drift plots based on their expression in our data-set.
 
-## Principle component analysis
+### Principle component analysis
 
 Principal components analysis plot (Figure 6a) was generated from the counts table using multidimensional scaling as implemented by the plotMDS function in the edgeR package, which computes inter-sample distances as the root-mean-square of the 500 genes with the largest log2 fold-changes between each pair of sample (the 'leading log fold-change").
 
-## Chemicals
+### Chemicals
 
-Solvents used to prepare stock solutions: Paraquat was dissolved in water; mianserin was dissolved either in water or DMSO as mentioned; Mirtazapine, Dihydroergotamine, LY-165,163/PAPP, Mirtazapine, Metergoline, Ketanserin, Methiothepin, and Amperozide were dissolved in DMSO; FUDR was dissolved in S-complete (Table 9).10.7554/eLife.08833.029Table 9.List of small molecules and chemicals used in this study with informationDOI: http://dx.doi.org/10.7554/eLife.08833.029Molecule nameCAS numberCatalog numberManufacturerMianserin HCl21535-47-70997TocrisMirtazapine85650-52-8M3368LKT LaboratoriesDihydroergotamine mesylate6190-39-20475Tocris/R&D systemsLY-165,163/PAPP1814-64-8S009SigmaMirtazapine61337-67-5M3368LKT labsMetergoline17692-51-2M3668SigmaKetanserin tartarate83846-83-7S006SigmaMethiothepin mesylate74611-28-2M149SigmaAmperozide HCl86725-37-32746Tocris/R&D systemsParaquat (Methyl viologen)1910-42-5AC227320010Acros OrganicsFUDR50-91-9F0503Sigma-AldrichDMSO67-68-5472301Sigma-Aldrich
+Solvents used to prepare stock solutions: Paraquat was dissolved in water; mianserin was dissolved either in water or DMSO as mentioned; Mirtazapine, Dihydroergotamine, LY-165,163/PAPP, Mirtazapine, Metergoline, Ketanserin, Methiothepin, and Amperozide were dissolved in DMSO; FUDR was dissolved in S-complete (Table 9).
 
-## Strains
+**Table 9.**
+ List of small molecules and chemicals used in this study with information
 
-Detailed descriptions of all strains used in this study are tabulated below. All strains were backcrossed at least 4 times with the N2 Bristol strain. All strains were maintained as described in (Brenner, 1974). The strains with name starting with VV were generated by outcrossing to N2 Bristol strain in our lab (Table 10).10.7554/eLife.08833.030Table 10.List of mutant and fluorescent strains outcrossed and used in this study.DOI: http://dx.doi.org/10.7554/eLife.08833.030Strain nameGenotypeNo.of times outcrossedGene nameTransgeneAlleleParent strain(s)VV78unc-26 (e205) IV4unc-26e205CB205VV80snt-1 (md290) II4snt-1md290NM204MT15434tph-1 (mg280) II4tph-1mg280MT15434DA1814ser-1 (ok345) X10ser-1ok345DA1814OH313ser-2 (pk1357) X4ser-2pk1357OH313DA1774ser-3 (ad1774) I3ser-3ad1774DA1774AQ866ser-4 (ok512) III5ser-4ok512AQ866VV130ser-5(ok3087) I4ser-5ok3087RB2277FX2647ser-5 (tm2647) I0ser-5tm2647FX2647FX2654ser-5 (tm2654) I0ser-5tm2654FX2654FX2146ser-6 (tm2146) IV0ser-6tm2146FX2146DA2100ser-7 (tm1325) X10ser-7tm1325DA2100
 
-## Lifespan assay and analysis
+<table>
+  <thead>
+    <tr>
+      <th>Molecule name</th>
+      <th>CAS number</th>
+      <th>Catalog number</th>
+      <th>Manufacturer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mianserin HCl</td>
+      <td>21535-47-7</td>
+      <td>0997</td>
+      <td>Tocris</td>
+    </tr>
+    <tr>
+      <td>Mirtazapine</td>
+      <td>85650-52-8</td>
+      <td>M3368</td>
+      <td>LKT Laboratories</td>
+    </tr>
+    <tr>
+      <td>Dihydroergotamine mesylate</td>
+      <td>6190-39-2</td>
+      <td>0475</td>
+      <td>Tocris/R&amp;D systems</td>
+    </tr>
+    <tr>
+      <td>LY-165,163/PAPP</td>
+      <td>1814-64-8</td>
+      <td>S009</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Mirtazapine</td>
+      <td>61337-67-5</td>
+      <td>M3368</td>
+      <td>LKT labs</td>
+    </tr>
+    <tr>
+      <td>Metergoline</td>
+      <td>17692-51-2</td>
+      <td>M3668</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Ketanserin tartarate</td>
+      <td>83846-83-7</td>
+      <td>S006</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Methiothepin mesylate</td>
+      <td>74611-28-2</td>
+      <td>M149</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Amperozide HCl</td>
+      <td>86725-37-3</td>
+      <td>2746</td>
+      <td>Tocris/R&amp;D systems</td>
+    </tr>
+    <tr>
+      <td>Paraquat (Methyl viologen)</td>
+      <td>1910-42-5</td>
+      <td>AC227320010</td>
+      <td>Acros Organics</td>
+    </tr>
+    <tr>
+      <td>FUDR</td>
+      <td>50-91-9</td>
+      <td>F0503</td>
+      <td>Sigma-Aldrich</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>67-68-5</td>
+      <td>472301</td>
+      <td>Sigma-Aldrich</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
+
+Detailed descriptions of all strains used in this study are tabulated below. All strains were backcrossed at least 4 times with the N2 Bristol strain. All strains were maintained as described in (Brenner, 1974). The strains with name starting with VV were generated by outcrossing to N2 Bristol strain in our lab (Table 10).
+
+**Table 10.**
+ List of mutant and fluorescent strains outcrossed and used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Genotype</th>
+      <th>No.of times outcrossed</th>
+      <th>Gene name</th>
+      <th>Transgene</th>
+      <th>Allele</th>
+      <th>Parent strain(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VV78</td>
+      <td>unc-26 (e205) IV</td>
+      <td>4</td>
+      <td>unc-26</td>
+      <td></td>
+      <td>e205</td>
+      <td>CB205</td>
+    </tr>
+    <tr>
+      <td>VV80</td>
+      <td>snt-1 (md290) II</td>
+      <td>4</td>
+      <td>snt-1</td>
+      <td></td>
+      <td>md290</td>
+      <td>NM204</td>
+    </tr>
+    <tr>
+      <td>MT15434</td>
+      <td>tph-1 (mg280) II</td>
+      <td>4</td>
+      <td>tph-1</td>
+      <td></td>
+      <td>mg280</td>
+      <td>MT15434</td>
+    </tr>
+    <tr>
+      <td>DA1814</td>
+      <td>ser-1 (ok345) X</td>
+      <td>10</td>
+      <td>ser-1</td>
+      <td></td>
+      <td>ok345</td>
+      <td>DA1814</td>
+    </tr>
+    <tr>
+      <td>OH313</td>
+      <td>ser-2 (pk1357) X</td>
+      <td>4</td>
+      <td>ser-2</td>
+      <td></td>
+      <td>pk1357</td>
+      <td>OH313</td>
+    </tr>
+    <tr>
+      <td>DA1774</td>
+      <td>ser-3 (ad1774) I</td>
+      <td>3</td>
+      <td>ser-3</td>
+      <td></td>
+      <td>ad1774</td>
+      <td>DA1774</td>
+    </tr>
+    <tr>
+      <td>AQ866</td>
+      <td>ser-4 (ok512) III</td>
+      <td>5</td>
+      <td>ser-4</td>
+      <td></td>
+      <td>ok512</td>
+      <td>AQ866</td>
+    </tr>
+    <tr>
+      <td>VV130</td>
+      <td>ser-5(ok3087) I</td>
+      <td>4</td>
+      <td>ser-5</td>
+      <td></td>
+      <td>ok3087</td>
+      <td>RB2277</td>
+    </tr>
+    <tr>
+      <td>FX2647</td>
+      <td>ser-5 (tm2647) I</td>
+      <td>0</td>
+      <td>ser-5</td>
+      <td></td>
+      <td>tm2647</td>
+      <td>FX2647</td>
+    </tr>
+    <tr>
+      <td>FX2654</td>
+      <td>ser-5 (tm2654) I</td>
+      <td>0</td>
+      <td>ser-5</td>
+      <td></td>
+      <td>tm2654</td>
+      <td>FX2654</td>
+    </tr>
+    <tr>
+      <td>FX2146</td>
+      <td>ser-6 (tm2146) IV</td>
+      <td>0</td>
+      <td>ser-6</td>
+      <td></td>
+      <td>tm2146</td>
+      <td>FX2146</td>
+    </tr>
+    <tr>
+      <td>DA2100</td>
+      <td>ser-7 (tm1325) X</td>
+      <td>10</td>
+      <td>ser-7</td>
+      <td></td>
+      <td>tm1325</td>
+      <td>DA2100</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lifespan assay and analysis
 
 Lifespan assays were conducted in 96-well plates as described in (Solis and Petrascheck, 2011; Rangaraju et al., 2015b). Briefly, age-synchronized animals were cultured in S-complete media containing E. coli OP50 as feeding bacteria (~2 × 109 bacteria mL−1) in 96-well plates, such that 5–15 worms are in each well. At the L4 stage, FUDR was added to prevent animals from producing offspring. Solvent (water or DMSO) or small molecules were added on day 1 of adulthood, exposing the worms to control or compound treatment until the end of the assay. When used, DMSO was kept to a final concentration of 0.33% v/v. Live animals were scored visually, based on movement induced by shaking and application of light to each well. Animals were scored three times a week, until 95% of animals were dead in all the tested conditions. Statistical analysis was performed using the Mantel–Haenszel version of the log-rank test.
 
-## Stress resistance assays
+### Stress resistance assays
 
 Resistance to oxidative stress was determined by measuring survival of mianserin-treated and untreated worms after a 24 hr exposure to the ROS-generator paraquat (Methyl viologen). Experimental worm cultures were set up as described in Lifespan assays. For dose response assays, paraquat was added to a final concentration of 0, 25, 50, 75, 100 mM on day 5 of adulthood. For paraquat time-course experiment (Figure 3c), paraquat was added 3 days, 5 days, or 10 days after addition of mianserin on day 1 of adulthood. For mianserin time-course experiment (Figure 3d), 50 µM mianserin was added on day 1, day 3 or 5 of adulthood, followed by 100 mM paraquat on day 10. For all experiments, survival of worms was assessed 24 hr after paraquat addition and expressed as the percentage of live versus total animals.
 
-## RNA-sequencing (RNA-seq) transcriptional studies and data analysis
+### RNA-sequencing (RNA-seq) transcriptional studies and data analysis
 
 Mianserin-induced changes in transcription were determined by RNA-seq. A total of 12 conditions were tested each run in three biological replicates. N2 worms were cultured in 96-well plates as described in (Solis and Petrascheck, 2011). Animals in cohort #1 were treated on day 1 with water (solvent) or 50 µM mianserin, and harvested on day 3, 5, and 10 of adulthood. Animals in cohort #2 were treated with water (solvent control) or mianserin (2, 10, or 50 µM) on day 1 of adulthood and harvested on day 5. Animals in cohort #3 were treated with water (solvent) or 50 µM mianserin on day 1, day 3 and day 5 and harvested on day 10 (See Figure 1a). RNA was also harvested from untreated day 1 adults, to obtain the “young reference”. Harvested animals were washed three times in ice cold Dulbecco’s phosphate buffer saline and frozen in liquid nitrogen. A parallel lifespan assay was conducted for all cohorts to ensure mianserin action. Three biological replicates were harvested for every cohort. To extract RNA, frozen worms were re-suspended in ice-cold Trizol, zirconium beads, and glass beads (cat # 03961-1-103 and cat # 03961-1-104) in the ratio of 5:1:1 respectively, and disrupted in Precellys lysing system (6500 rpm, 3 x 10 s cycles) followed by chloroform extraction. For RNA-seq, the extracted RNA was precipitated and purified further using Qiagen RNAeasy Mini kit columns (cat # 74104). RNA was precipitated using isopropanol and washed once with 75% ethanol. Integrity of the RNA was confirmed with a Bioanalyzer (Agilent Technologies, Santa Clara, CA, USA). To prepare the library, 100 ng of total RNA per sample was processed using NuGEN Encore Complete DR RNA-seq Prep Kit (NuGEN; San Carlos; CA, USA), as per manufacturer’s instructions. The libraries were sequenced using v2 sequencing chemistry in a HiSeq2000 platform (Illumina, San Diego, CA, USA). A single-read sequencing approach was used with 100 cycles, resulting in reads with a length of 100 nucleotides each. Libraries containing their own index sequences were sequenced in a multiplex manner by pooling six libraries per lane. Resulting sequences were obtained after 20–30 million reads per sample. Sequence data were extracted in FASTQ format and used for data analysis.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 RNA-seq data were analyzed by aligning the reads to the C. elegans reference genome and transcriptome from WormBase using Tophat 2 (Kim et al., 2013), and unambiguously mapped reads were counted for each annotated gene in each sample (Lawrence et al., 2013). Data were normalized for sequencing depths (counts per million, cpm) but not for gene length as no comparisons between genes within the same sample were made. The quasi-likelihood F-test from the edgeR package (Robinson and Oshlack, 2010; Lund et al., 2012) was used to test these counts for statistically significant differential gene expression between water- and mianserin-treated samples, while controlling for expression differences between the 3 biological replicates. We performed multiple testing correction by using the Benjamini-Hochberg procedure to compute a false discovery rate (FDR) value for each gene, and we considered an FDR less than 10% to be significant (Benjamini and Hochberg, 1995; Zhang et al., 2009).
 
-## Quantitative real-time PCR (qRT-PCR) and data analysis
+### Quantitative real-time PCR (qRT-PCR) and data analysis
 
-All qRT-PCR experiments were conducted according to the MIQE guidelines (Bustin et al., 2009), except that samples were not tested in a bio-analyzer, but photometrically quantified using a Nanodrop. All strains were cultured in 96-well plates as described in (Solis and Petrascheck, 2011). Water (solvent) or mianserin were added on day 1 of adulthood and worms were harvested on day 5. RNA was extracted as described above, followed by DNAse (Sigma, cat # AMPD1-1KT) treatment and reverse transcription using iScript RT-Supermix (BIO-RAD, cat # 170–8841) at 42ºC for 30 min. Quantitative PCR reactions were set up in 384-well plates (BIO-RAD, cat # HSP3901), which included 2.5 µl Bio-Rad SsoAdvanced SYBR Green Supermix (cat # 172–5264) or Kapa SYBR Fast master mix (cat # KK4602), 1 µl cDNA template (2.5 ng/µl, to final of 0.5 ng/µl in 5 µl PCR reaction), 1 µl water, and 0.5 µl of forward and reverse primers (150 nM final concentration for BIO-RAD SYBR mix and 75 nM final for Kapa SYBR mix) (see Table below for oligo pairs used for qRT-PCR of genes tested). Quantitative PCR was carried out using a BIO-RAD CFX384 Real-Time thermocycler (95ºC, 3 min; 40 cycles of 95ºC 10 s, 60ºC 30 s; Melting curve: 95ºC 5 s, 60ºC- 95ºC at 0.5ºC increment, 10 s). Gene expression was normalized to three reference genes, rcq-5, crn-3 and rpl-6, using the BIO-RAD CFX Manager software. Statistical significance was determined using Student’s t-test (Table 11).10.7554/eLife.08833.031Table 11.List of oligos used for qRT-PCRDOI: http://dx.doi.org/10.7554/eLife.08833.031Gene nameqRT-PCR forward primer (5’-3’)qRT-PCR reverse primer (5’-3’)sod-1CGTAGGCGATCTAGGAAATGTGAACAACCATAGATCGGCCAACGsod-2TTCAACCGATCACAGGAGTCGCTCCAAATCAGCATAGTCGsod-3ATGGACACTATTAAGCGCGAGCCTTGAACCGCAATAGTGsod-4ATGTGGAACTATCGGAATTGTGGGTTGAGATTGTGTAACTGGAsod-5ATGGAGACTCAACCGATGGGACCACGGAATCTCTTCCTctl-1AATGGATACGGAGCGCATACAACCTTGAGCAGGCTTGAAActl-2TGATTACCCACTGATCGAGGGCGGATTGTTCAACCTCAGctl-3CAATCTAACGGTCAACGACACCATTGGATGTGGTGAGCAGprdx-2CATTCCAGTTCTCGCTGACATGATGAAGAGTCCACGGAprdx-3GTTCCGTTCTCTTGGAGCTGCTTGTTGAAATCAGCGAGCAprdx-6GGAGAACAATGGCTGATGCATCTGAACATGGCGTTTGChsp-16.1ACCACTATTTCCGTCCAGCTTGACGTTCCATCTGAGCCAThsp-16.11ACCACTATTTCCGTCCAGCTTGACGTTCCATCTGAGCCAThsp-16.2TCGATTGAAGCGCCAAAGAATCTCTTCGACGATTGCCTGThsp-16.41TCTTGGACGAACTCACTGGATCTTGGACGAACTCACTGGAhsp-16.48CTCATGCTCCGTTCTCCATTGAGTTGTGATCAGCATTTCTCCAhsp-16.49CTCATGCTCCGTTCTCCATTGAGTTGTGATCAGCATTTCTCCAcrn-3GAATGCACTCATGAACAAAGTCTAATGTTCGACTGATGAACCGrcq-5GATGTTAGAGCTGTAATTCACTGGATCTCTTCCAGCTCTTCCGrpl-6TTCACCAAGGACACTAGCGGACAGTCTTGGAATGTCCGA
+All qRT-PCR experiments were conducted according to the MIQE guidelines (Bustin et al., 2009), except that samples were not tested in a bio-analyzer, but photometrically quantified using a Nanodrop. All strains were cultured in 96-well plates as described in (Solis and Petrascheck, 2011). Water (solvent) or mianserin were added on day 1 of adulthood and worms were harvested on day 5. RNA was extracted as described above, followed by DNAse (Sigma, cat # AMPD1-1KT) treatment and reverse transcription using iScript RT-Supermix (BIO-RAD, cat # 170–8841) at 42ºC for 30 min. Quantitative PCR reactions were set up in 384-well plates (BIO-RAD, cat # HSP3901), which included 2.5 µl Bio-Rad SsoAdvanced SYBR Green Supermix (cat # 172–5264) or Kapa SYBR Fast master mix (cat # KK4602), 1 µl cDNA template (2.5 ng/µl, to final of 0.5 ng/µl in 5 µl PCR reaction), 1 µl water, and 0.5 µl of forward and reverse primers (150 nM final concentration for BIO-RAD SYBR mix and 75 nM final for Kapa SYBR mix) (see Table below for oligo pairs used for qRT-PCR of genes tested). Quantitative PCR was carried out using a BIO-RAD CFX384 Real-Time thermocycler (95ºC, 3 min; 40 cycles of 95ºC 10 s, 60ºC 30 s; Melting curve: 95ºC 5 s, 60ºC- 95ºC at 0.5ºC increment, 10 s). Gene expression was normalized to three reference genes, rcq-5, crn-3 and rpl-6, using the BIO-RAD CFX Manager software. Statistical significance was determined using Student’s t-test (Table 11).
 
-## Measurement of 26S proteasome activity
+**Table 11.**
+ List of oligos used for qRT-PCR
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>qRT-PCR forward primer (5’-3’)</th>
+      <th>qRT-PCR reverse primer (5’-3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sod-1</td>
+      <td>CGTAGGCGATCTAGGAAATGTG</td>
+      <td>AACAACCATAGATCGGCCAACG</td>
+    </tr>
+    <tr>
+      <td>sod-2</td>
+      <td>TTCAACCGATCACAGGAGTC</td>
+      <td>GCTCCAAATCAGCATAGTCG</td>
+    </tr>
+    <tr>
+      <td>sod-3</td>
+      <td>ATGGACACTATTAAGCGCGA</td>
+      <td>GCCTTGAACCGCAATAGTG</td>
+    </tr>
+    <tr>
+      <td>sod-4</td>
+      <td>ATGTGGAACTATCGGAATTGTG</td>
+      <td>GGTTGAGATTGTGTAACTGGA</td>
+    </tr>
+    <tr>
+      <td>sod-5</td>
+      <td>ATGGAGACTCAACCGATGG</td>
+      <td>GACCACGGAATCTCTTCCT</td>
+    </tr>
+    <tr>
+      <td>ctl-1</td>
+      <td>AATGGATACGGAGCGCATAC</td>
+      <td>AACCTTGAGCAGGCTTGAAA</td>
+    </tr>
+    <tr>
+      <td>ctl-2</td>
+      <td>TGATTACCCACTGATCGAGG</td>
+      <td>GCGGATTGTTCAACCTCAG</td>
+    </tr>
+    <tr>
+      <td>ctl-3</td>
+      <td>CAATCTAACGGTCAACGACAC</td>
+      <td>CATTGGATGTGGTGAGCAG</td>
+    </tr>
+    <tr>
+      <td>prdx-2</td>
+      <td>CATTCCAGTTCTCGCTGAC</td>
+      <td>ATGATGAAGAGTCCACGGA</td>
+    </tr>
+    <tr>
+      <td>prdx-3</td>
+      <td>GTTCCGTTCTCTTGGAGCTG</td>
+      <td>CTTGTTGAAATCAGCGAGCA</td>
+    </tr>
+    <tr>
+      <td>prdx-6</td>
+      <td>GGAGAACAATGGCTGATGC</td>
+      <td>ATCTGAACATGGCGTTTGC</td>
+    </tr>
+    <tr>
+      <td>hsp-16.1</td>
+      <td>ACCACTATTTCCGTCCAGCT</td>
+      <td>TGACGTTCCATCTGAGCCAT</td>
+    </tr>
+    <tr>
+      <td>hsp-16.11</td>
+      <td>ACCACTATTTCCGTCCAGCT</td>
+      <td>TGACGTTCCATCTGAGCCAT</td>
+    </tr>
+    <tr>
+      <td>hsp-16.2</td>
+      <td>TCGATTGAAGCGCCAAAGAA</td>
+      <td>TCTCTTCGACGATTGCCTGT</td>
+    </tr>
+    <tr>
+      <td>hsp-16.41</td>
+      <td>TCTTGGACGAACTCACTGGA</td>
+      <td>TCTTGGACGAACTCACTGGA</td>
+    </tr>
+    <tr>
+      <td>hsp-16.48</td>
+      <td>CTCATGCTCCGTTCTCCATT</td>
+      <td>GAGTTGTGATCAGCATTTCTCCA</td>
+    </tr>
+    <tr>
+      <td>hsp-16.49</td>
+      <td>CTCATGCTCCGTTCTCCATT</td>
+      <td>GAGTTGTGATCAGCATTTCTCCA</td>
+    </tr>
+    <tr>
+      <td>crn-3</td>
+      <td>GAATGCACTCATGAACAAAGTC</td>
+      <td>TAATGTTCGACTGATGAACCG</td>
+    </tr>
+    <tr>
+      <td>rcq-5</td>
+      <td>GATGTTAGAGCTGTAATTCACTGG</td>
+      <td>ATCTCTTCCAGCTCTTCCG</td>
+    </tr>
+    <tr>
+      <td>rpl-6</td>
+      <td>TTCACCAAGGACACTAGCG</td>
+      <td>GACAGTCTTGGAATGTCCGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Measurement of 26S proteasome activity
 
 Wild-type N2 worms were cultured as described (Solis and Petrascheck, 2011). Water or Mianserin 50 µM were added on day 1 and 26S proteasome activity was assayed on day 2 and day 5 using the Millipore Proteasome activity kit (cat# APT280), following manufacturer’s protocol. Equal number of worms per condition were washed off culture media using ice cold Dulbecco’s phosphate buffer saline and freshly lysed using Precellys system (6500 rpm, 3 x 10 s cycles) in assay buffer (25 mM HEPES, pH 7.5, 0.5mM EDTA, 0.05% NP-40, and 0.001% SDS (w/v)). Chymotrypsin-like proteasome activity in the lysates were assessed using the Suc-LLVY-AMC substrate and fluorogenic AMC substrate cleavage was measured in 20 min intervals for 120 min. A subset of lysates were pre-incubated with Lactacystin (12.5 µM final) to ensure specificity of AMC cleavage by 26S proteasome. The amount of cleaved AMC fragments were quantified using TECAN xfluor safire II system at excitation of 360 nm and emission of 480 nm. The resulting readings were normalized to the total protein content in the samples measured using Bradford assay.
 
-## Mortality curve and probability of detection
+### Mortality curve and probability of detection
 
 Mortality curves were generated based on the life table provided in Figure 6—figure supplement 1, tabulating death times of 15 independent experiments performed over 5 years. Each experiment consisted of 2 cohorts (water or 50 µM mianserin) and each cohort consisted of ~100 worms each amounting to ~1500 worms per condition. Power of detection was determined by Monte-Carlo simulations using a parametric model with parameters derived from our survival data of a cohort of over 5,026 N2 animals. The power of detection plot (Figure 6—figure supplement 1) shows the probability to detect a true lifespan extension with a significance level α=0.01 as a function of percent increase in lifespan for an experiment consisting of n animals. An accuracy of 1 day is the equivalent of a 5% increase in lifespan.

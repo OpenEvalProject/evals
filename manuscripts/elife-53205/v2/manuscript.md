@@ -36,41 +36,208 @@ Since the first demonstrations of 3PM for in vivo brain imaging (Horton et al., 
 
 ## Results
 
-## Signal photon count provides the fundamental metric for calcium imaging quality
+### Signal photon count provides the fundamental metric for calcium imaging quality
 
-High-quality calcium imaging enables reliable detection of calcium transients in the presence of noise. With a photomultiplier tube as the fluorescence detector, calcium imaging can be performed at the photon shot noise limit, where the photon fluctuation noise (N) and the signal (S) obey the relation: N=S. Therefore, quantifying the fluorescence signal with photon counts provides the noise statistics, and allows probabilistic inference of the true underlying signal. Assuming exponential decay of calcium transients, a single discriminability index (d′), as defined by Equation 1, has been derived in the past to assess the recording fidelity of a calcium transient (Wilt et al., 2013):(1)d′≈ΔFFF0τ1/e2where τ1/e is the 1/e decay time, ΔF/F is the peak fluorescence change of a single-action-potential-induced calcium spike, and F0 is the baseline brightness of the neuron. This expression holds as long as the frame rate is high enough to sample the exponential decay of the fluorescence intensity, and a higher d′ value indicates better calcium transient detection accuracy. In fact, the fidelity of calcium imaging is determined by the signal photon counts of each neuron. The minimum photon counts required to detect a calcium transient induced by a single action potential can be calculated at any given confidence level: using the parameters for GCaMP6s (ΔF/F ~ 30% and τ1/e ~ 2 s) (Chen et al., 2013), F0 is calculated to be ~100 photons/second to achieve d′=3, which allows 93% true detection and 7% false-positive detection rate. For large calcium transients induced by a short burst of multiple action potentials, F0 can be significantly lower since ΔF/F is larger by the accumulation of single-action-potential induced ΔF/F (Wilt et al., 2013). Given ΔF/F and τ1/e of a calcium indicator are fixed, the quality of calcium imaging can only be improved by increasing the baseline neuron brightness F0, which can be achieved by adjusting a number of imaging parameters, for example excitation repetition rate, pulse duration, pulse energy, focal spot size and laser dwell time on each neuron (a more detailed analysis is presented in Discussion). It is clear from the above analysis that extremely high sampling rates in either space (e.g., the number of pixels) or time (e.g., the frame rate) do not improve the overall calcium transient detection accuracy since the number of photons per neuron per second is conserved regardless of the sampling scheme.
+High-quality calcium imaging enables reliable detection of calcium transients in the presence of noise. With a photomultiplier tube as the fluorescence detector, calcium imaging can be performed at the photon shot noise limit, where the photon fluctuation noise ($N$) and the signal ($S$) obey the relation: $N=\sqrt{S}$. Therefore, quantifying the fluorescence signal with photon counts provides the noise statistics, and allows probabilistic inference of the true underlying signal. Assuming exponential decay of calcium transients, a single discriminability index ($d^{′}$), as defined by Equation 1, has been derived in the past to assess the recording fidelity of a calcium transient (Wilt et al., 2013):
 
-## 1320 nm 3PE is more power-efficient in signal generation than 920 nm 2PE in the deep cortex and beyond
+$$
+d^{′}≈\frac{ΔF}{F}\sqrt{\frac{F_{0}\tau_{1/e}}{2}}
+$$
+
+where $\tau_{1/e}$ is the 1/e decay time, $ΔF/F$ is the peak fluorescence change of a single-action-potential-induced calcium spike, and $F_{0}$ is the baseline brightness of the neuron. This expression holds as long as the frame rate is high enough to sample the exponential decay of the fluorescence intensity, and a higher $d^{′}$ value indicates better calcium transient detection accuracy. In fact, the fidelity of calcium imaging is determined by the signal photon counts of each neuron. The minimum photon counts required to detect a calcium transient induced by a single action potential can be calculated at any given confidence level: using the parameters for GCaMP6s ($ΔF/F$ ~ 30% and $\tau_{1/e}$ ~ 2 s) (Chen et al., 2013), $F_{0}$ is calculated to be ~100 photons/second to achieve $d^{′}=3$, which allows 93% true detection and 7% false-positive detection rate. For large calcium transients induced by a short burst of multiple action potentials, $F_{0}$ can be significantly lower since $ΔF/F$ is larger by the accumulation of single-action-potential induced $ΔF/F$ (Wilt et al., 2013). Given $ΔF/F$ and $\tau_{1/e}$ of a calcium indicator are fixed, the quality of calcium imaging can only be improved by increasing the baseline neuron brightness $F_{0}$, which can be achieved by adjusting a number of imaging parameters, for example excitation repetition rate, pulse duration, pulse energy, focal spot size and laser dwell time on each neuron (a more detailed analysis is presented in Discussion). It is clear from the above analysis that extremely high sampling rates in either space (e.g., the number of pixels) or time (e.g., the frame rate) do not improve the overall calcium transient detection accuracy since the number of photons per neuron per second is conserved regardless of the sampling scheme.
+
+### 1320 nm 3PE is more power-efficient in signal generation than 920 nm 2PE in the deep cortex and beyond
 
 In general, due to the higher-order nonlinear excitation, 3PE requires higher excitation intensity at the focus in order to generate the same amount of fluorescence as 2PE. For deep tissue imaging, however, the pulse energy at the brain surface can be less for 3PE than 2PE because photons at the longer wavelength used for 3PE experience less attenuation. To quantify the difference in tissue attenuation caused by wavelength, we imaged mouse brain vasculature uniformly labeled with fluorescein dextran and measured fluorescence signal decay as a function of depth. We centered the 3PE and 2PE excitation spectra at 1320 nm and 920 nm, respectively, since they are nearly optimal for GCaMP6 imaging (Ouzounov et al., 2019). Through simultaneous 2PM and 3PM imaging of the same blood vessel with the same fluorescent label, we ensured the same signal collection efficiency for the two imaging modalities, and any sample fluctuation over time is eliminated. As shown in Figure 1A, the effective attenuation length (EAL) at 1320 nm in the mouse cortex is almost twice of that at 920 nm (297 ± 11 μm vs. 153 ± 10 μm, mean ± standard deviation, n = 4, >12 weeks old mice, all males, Figure 1A and Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig1-v2.jpg)
+
+**Figure 1.:** (A) Power attenuation of 920 nm and 1320 nm excitation light in the mouse brain. The mouse brain vasculature was uniformly labeled with fluorescein dextran and imaged simultaneously by 920 nm 2PM and 1320 nm 3PM at precisely the same location. The fraction of excitation power reaching the focus from the brain surface (Focus Power/Surface Power) was calculated based on the attenuation of 2PE and 3PE signal with the imaging depth (Materials and methods). (B) The pulse energy required at the brain surface to generate the same 2PE and 3PE signal strength (0.1 signal photon detected per laser pulse) at different imaging depths, measured in fluorescein-labeled blood vessels (n = 1 shown) and GCaMP6s-labeled neurons (CamKII-tTA/tetO-GCaMP6s; n = 5 mice). The signal strength is scaled to 60 fs pulse duration for both 2PE and 3PE.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig1-figsupp1-v2.jpg)
+
 We measured the pulse energy required for detecting 0.1 photon per excitation pulse, which is a typical signal strength for multiphoton imaging (Figure 1B). To generate the same amount of signal in fluorescein-labeled blood vessels located at the brain surface, 3PE requires about 15 times the pulse energy of 2PE (1.1 ± 0.03 nJ vs. 0.07 ± 0.004 nJ, mean ± 95% confidence interval). As the imaging depth increases, to maintain the same signal strength, the 2PE pulse energy delivered to the brain surface has to increase more rapidly than that for 3PE since 920 nm photons experience more tissue attenuation than 1320 nm photons. Eventually, 3PE becomes more power-efficient than 2PE at a depth of around 750 μm, which is defined here as the cross-over depth. The same trend can be observed in GCaMP6s-labeled neurons. At the brain surface, 3PE at 1320 nm requires ~8 times the pulse energy as 2PE at 920 nm (1.86 ± 0.27 nJ vs. 0.24 ± 0.05 nJ, mean ± 95% confidence interval), while in cortical layers at the depth around 700 μm, the pulse energy required for 3PE becomes comparable to that of 2PE at the brain surface. The measured ratio of the 3PE to 2PE pulse energy and the cross-over depth are in good agreement with the calculation based on the typical value of 2PE and 3PE cross sections (Appendix 1). Our data show that, with the same repetition rate and pulse duration, 3PM is more power-efficient than 2PM when imaging in the deep cortex and beyond. In other words, even if 2PM were used to image at the same depth (e.g.,~1 mm), its repetition rate will have to be reduced to the same level as 3PM (typically ~1 MHz) to avoid tissue heating by the average power. This result is consistent with previous studies on deep brain 2-photon imaging, where the repetition rates were reduced to below 1 MHz at ~1 mm imaging depth (Theer et al., 2003; Wang et al., 2018a). Although our data were measured with fluorescein and GCaMP6s, the conclusion is likely applicable to other green fluorescent dyes.
 
-## 1320 nm 3PM has orders of magnitude higher SBR than 920 nm 2PM for deep imaging in the non-sparsely labeled mouse brain
+### 1320 nm 3PM has orders of magnitude higher SBR than 920 nm 2PM for deep imaging in the non-sparsely labeled mouse brain
 
-The imaging depth of 2PM is limited by the out-of-focus background in non-sparsely labeled samples (Theer and Denk, 2006). The SBR of an image is quantified as follows: the background is measured as the fluorescence intensity in unlabeled structures, and the signal is the fluorescence signal within the labeled structures minus the background. For both 2PM and 3PM, the background is negligible at the sample surface, with SBR ~100 in fluorescein-labeled blood vessels (Figure 2A and Figure 2B). As the imaging depth increases beyond 600 μm in the cortex, 920 nm 2PM background starts to increase rapidly, accompanied by apparent degradation of image quality (Figure 2A and Figure 2C lower panel). Since the SBR of 2PM depends on the staining density of the sample, we quantified the fractional vascular volume (2 ± 1%, mean ± standard deviation) and staining inhomogeneity (~50) of the labeled blood vessels (Figure 2—figure supplement 1 – Materials and methods). According to the theoretical calculation, the SBR of 2PM reaches one at ~4.7 EALs at such a staining inhomogeneity (Theer and Denk, 2006), which is in close agreement with our in vivo measurement (Figure 2B). In contrast, 1320 nm 3PM does not show any increase in the background until in the white matter (Figure 2A and Figure 2B). The background reduction by 3PE was contributed by the longer EAL of the long wavelength that reduces the normalized imaging depth (z/EAL), and the higher order of nonlinearity of 3PE that suppresses background generation in the out-of-focus volume, which plays a critical role when the 2PE and 3PE use the same wavelength and have the same EAL (Wang et al., 2018b). Large SBRs (>40) were reported on 3-photon imaging of mouse brain vasculature at an imaging depth of greater than 5 EALs (Liu et al., 2019). However, for the depths beyond the white matter, our measured SBR of 3PM is lower than the theoretical prediction, which may be caused by the deterioration of the point spread function due to the strong aberration induced by the white matter. Similar behavior was also observed in through-skull imaging (Wang et al., 2018b).
+The imaging depth of 2PM is limited by the out-of-focus background in non-sparsely labeled samples (Theer and Denk, 2006). The SBR of an image is quantified as follows: the background is measured as the fluorescence intensity in unlabeled structures, and the signal is the fluorescence signal within the labeled structures minus the background. For both 2PM and 3PM, the background is negligible at the sample surface, with SBR ~100 in fluorescein-labeled blood vessels (Figure 2A and Figure 2B). As the imaging depth increases beyond 600 μm in the cortex, 920 nm 2PM background starts to increase rapidly, accompanied by apparent degradation of image quality (Figure 2A and Figure 2C lower panel). Since the SBR of 2PM depends on the staining density of the sample, we quantified the fractional vascular volume (2 ± 1%, mean ± standard deviation) and staining inhomogeneity (~50) of the labeled blood vessels (Figure 2—figure supplement 1 – Materials and methods). According to the theoretical calculation, the SBR of 2PM reaches one at ~4.7 EALs at such a staining inhomogeneity (Theer and Denk, 2006), which is in close agreement with our in vivo measurement (Figure 2B). In contrast, 1320 nm 3PM does not show any increase in the background until in the white matter (Figure 2A and Figure 2B). The background reduction by 3PE was contributed by the longer EAL of the long wavelength that reduces the normalized imaging depth ($z/EAL$), and the higher order of nonlinearity of 3PE that suppresses background generation in the out-of-focus volume, which plays a critical role when the 2PE and 3PE use the same wavelength and have the same EAL (Wang et al., 2018b). Large SBRs (>40) were reported on 3-photon imaging of mouse brain vasculature at an imaging depth of greater than 5 EALs (Liu et al., 2019). However, for the depths beyond the white matter, our measured SBR of 3PM is lower than the theoretical prediction, which may be caused by the deterioration of the point spread function due to the strong aberration induced by the white matter. Similar behavior was also observed in through-skull imaging (Wang et al., 2018b).
 
-## 3PM has higher calcium imaging sensitivity and discriminability than 2PM in the deep brain
+![Figure 2.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig2-v2.jpg)
 
-The performance of 1320 nm 3PM calcium imaging was compared to 920 nm 2PM using a time-division multiplexing scheme, which allows essentially simultaneous recording of calcium dynamics from the same region of interest (ROI) with pixel-wise multiplexed 2PE and 3PE signals (Ouzounov et al., 2017) (Materials and methods). From the neurons in the shallow mouse cortical layer 2/3 and 4, we obtained nearly identical calcium traces with 2PM and 3PM (Figure 2C upper panel), with a Pearson’s correlation factor of 0.98 ± 0.01 (mean ± standard error, calculated from 60 traces, each 75 s from neurons located from 200 to 400 μm in depth). The relative ΔF/F of GCaMP6s measured by 1320 nm 3PM is close to that of 920 nm 2PM, with the ratio (ΔF/F)2P/(ΔF/F)3P = 1.0 ± 0.25 (mean ± standard deviation, n = 904 calcium transients from cells located from 240 to 450 μm), in close agreement to previous studies (Ouzounov et al., 2019; Ouzounov et al., 2017; Takasaki et al., 2020).
+**Figure 2.:** (A) Comparison of 3PM and 2PM images of fluorescein-labeled blood vessels at different depths. Scale bar 30 μm. (B) SBR measured simultaneously by 1320 nm 3PE and 920 nm 2PE on fluorescein-labeled blood vessels and GCaMP6s-labeled neurons. Each set of 3PE and 2PE comparison was performed in the same mouse. All vertical error bars denote the standard deviation of SBR caused by feature brightness variation, and horizontal error bars represent the depth range of the measurement. (C) Images and corresponding calcium traces of a cortical L4 neuron (410 μm) and a L5 neuron (600 μm), simultaneously recorded by 920 nm 2PM and 1320 nm 3PM. Both traces were low-pass filtered with a hamming window of a time constant 0.37 s. Scale bar, 10 μm. (D) The ratio of ΔF/F calculated on simultaneously recorded 3PM and 2PM calcium traces (CamKII-tTA/tetO-GCaMP6s; n = 3 mice). Each point was measured on a single calcium transient. The depth was normalized by the 2PM attenuation length at 920 nm of each animal to collapse the data better onto a single trendline. Data points from different neurons at the same depth are colored differently.
 
-As the imaging depth increases, however, the 2PM background contributes to the increase of baseline fluorescence of neurons as F0'=F0(1+1/SBR), which reduces the apparent ΔF/F by (1+1/SBR)−1 (assuming time-invariant background). A typical comparison of 3PM and 2PM calcium traces in the deep cortex is shown in Figure 2C lower panel, and the ratios of 2PM to 3PM ΔF/F are shown in Figure 2D. In the transgenic mouse brain (CamKII-tTA/tetO-GCaMP6s) at ~4 EALs at 920 nm, the apparent ΔF/F measured by 2PM is approximately half of that by 3PM, indicating SBR ~1, which corroborates with the direct SBR measurement in Figure 2B. The 2P ΔF/F deteriorates rapidly with even larger imaging depth, due to the rapid decline of SBR (e.g., Figure 2B). Similar results have been observed in other densely labeled transgenic lines (Slc17a7/ai162) by independent studies (Takasaki et al., 2020). The cell-to-cell variation of the ratio of 2PM to 3PM ΔF/F is mainly caused by the difference in GCaMP expression level (i.e., dimmer cells have lower SBR than brighter cells at the same depth). Therefore, the decreasing SBR is particularly detrimental for measuring the neuronal activity of the dimmer neurons for deep brain 2PM. Even at 3 EALs (~450 μm), some dimmer neurons already show lower ΔF/F for 2PM than that for 3PM (Figure 2D).
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig2-figsupp1-v2.jpg)
 
-In addition to the loss of contrast, the noise accompanied by the 2PM background reduces the calcium transient detection accuracy, which is quantified by modifying the expression of d′ to include the fluorescence background:(2)d′≈ΔFF0(1+1/SBR)F0(1+1/SBR)τ1/e2=11+1/SBR ΔFFF0τ1/e2
+**Figure 2—figure supplement 1.:** (A) Z-projection of the identified blood vessels by summing all the XY-images in a vertical image stack (0–400 μm deep, with 10 μm step size). Scale bar, 30 μm. (B) The fractional vascular area in each XY-image at various depths.
 
-For the same calcium sensitivity (ΔF/F) and baseline cell brightness (F0), the discriminability d′ of calcium transients is reduced by a factor of 1+1/SBR1/2 in the presence of the background. For example, when SBR=1, the d′ value is reduced by a factor of 1.4, resulting in a lower true-positive or higher false-positive rate for spike detection. To compensate for the reduced d′, F0 needs to be increased by a factor of (1+1/SBR), which can only be achieved by increasing the excitation pulse energy by a factor of 1+1/SBR 1/2 (since 2PE fluorescence ∝P2) or increasing the dwell time on each neuron by a factor of (1+1/SBR). Consequently, the cross-over depth between 1320-nm 3PM and 920-nm 2PM for achieving the same d′ with the same excitation pulse energy shifts to a shallower depth (~ 600 μm) than that based only on the signal strength (~ 700 μm), see Figure 1B and Figure 2—figure supplement 2. The SBR of 2PM drops even faster with depth than the exponential decay of the fluorescence signal because, in addition to the decrease of the signal, the background also increases with depth (Figure 2—figure supplement 2; Theer et al., 2003). Therefore, 2PM imaging far beyond the depth where SBR=1 is impractical.
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig2-figsupp2-v2.jpg)
 
-## Tissue heating and excitation saturation limit the average and peak power
+**Figure 2—figure supplement 2.:** The pulse energy required at the brain surface to generate the same $d^{′}$ per pulse sampling the neuron for 2PE and 3PE of GCaMP6s at different imaging depths.In the absence of the background fluorescence, $d^{′}$ is entirely determined by signal photon counts: when a neuron is sampled by 1000 excitation pulses in 1 s, it generates $F_{0}=1000 pulses \times 0.1 photon/pulse = 100 photons/s$, which gives $d^{′}∼3$. Therefore, Group ‘920nm 2PE w/o background’ and ‘1320nm 3PE w/o background’ exactly reproduce the pulse energy curves for the same signal of 0.1 photon/excitation pulse (Figure 1B). Group ‘920nm 2PE densely labeled’ and ‘920nm 2PE sparsely labeled’ are calculated based on the SBR measured in GCaMP6s-labeled neurons and fluorescein-labeled blood vessels, respectively (Figure 2B). 1320-nm 3PE is assumed to be background-free in the mouse cortex.
+
+### 3PM has higher calcium imaging sensitivity and discriminability than 2PM in the deep brain
+
+The performance of 1320 nm 3PM calcium imaging was compared to 920 nm 2PM using a time-division multiplexing scheme, which allows essentially simultaneous recording of calcium dynamics from the same region of interest (ROI) with pixel-wise multiplexed 2PE and 3PE signals (Ouzounov et al., 2017) (Materials and methods). From the neurons in the shallow mouse cortical layer 2/3 and 4, we obtained nearly identical calcium traces with 2PM and 3PM (Figure 2C upper panel), with a Pearson’s correlation factor of 0.98 ± 0.01 (mean ± standard error, calculated from 60 traces, each 75 s from neurons located from 200 to 400 μm in depth). The relative $ΔF/F$ of GCaMP6s measured by 1320 nm 3PM is close to that of 920 nm 2PM, with the ratio $(ΔF/F)_{2P}/(ΔF/F)_{3P} =$ 1.0 ± 0.25 (mean ± standard deviation, n = 904 calcium transients from cells located from 240 to 450 μm), in close agreement to previous studies (Ouzounov et al., 2019; Ouzounov et al., 2017; Takasaki et al., 2020).
+
+As the imaging depth increases, however, the 2PM background contributes to the increase of baseline fluorescence of neurons as $F_{0}^{'}=F_{0}(1+1/SBR),$ which reduces the apparent $ΔF/F$ by $(1+1/SBR)^{−1}$ (assuming time-invariant background). A typical comparison of 3PM and 2PM calcium traces in the deep cortex is shown in Figure 2C lower panel, and the ratios of 2PM to 3PM $ΔF/F$ are shown in Figure 2D. In the transgenic mouse brain (CamKII-tTA/tetO-GCaMP6s) at ~4 EALs at 920 nm, the apparent $ΔF/F$ measured by 2PM is approximately half of that by 3PM, indicating SBR ~1, which corroborates with the direct SBR measurement in Figure 2B. The 2P $ΔF/F$ deteriorates rapidly with even larger imaging depth, due to the rapid decline of SBR (e.g., Figure 2B). Similar results have been observed in other densely labeled transgenic lines (Slc17a7/ai162) by independent studies (Takasaki et al., 2020). The cell-to-cell variation of the ratio of 2PM to 3PM $ΔF/F$ is mainly caused by the difference in GCaMP expression level (i.e., dimmer cells have lower SBR than brighter cells at the same depth). Therefore, the decreasing SBR is particularly detrimental for measuring the neuronal activity of the dimmer neurons for deep brain 2PM. Even at 3 EALs (~450 μm), some dimmer neurons already show lower $ΔF/F$ for 2PM than that for 3PM (Figure 2D).
+
+In addition to the loss of contrast, the noise accompanied by the 2PM background reduces the calcium transient detection accuracy, which is quantified by modifying the expression of $d^{′}$ to include the fluorescence background:
+
+$$
+d^{′}≈\frac{ΔF}{F_{0}(1+1/SBR)}\sqrt{\frac{F_{0}(1+1/SBR)\tau_{1/e}}{2}}=\frac{1}{\sqrt{1+1/SBR}} \frac{ΔF}{F}\sqrt{\frac{F_{0}\tau_{1/e}}{2}}
+$$
+
+For the same calcium sensitivity ($ΔF/F$) and baseline cell brightness ($F_{0}$), the discriminability $d^{′}$ of calcium transients is reduced by a factor of $1+1/SBR^{1/2}$ in the presence of the background. For example, when $SBR=1$, the $d^{′}$ value is reduced by a factor of 1.4, resulting in a lower true-positive or higher false-positive rate for spike detection. To compensate for the reduced $d^{′}$, $F_{0}$ needs to be increased by a factor of $(1+1/SBR)$, which can only be achieved by increasing the excitation pulse energy by a factor of $1+1/SBR^{1/2}$ (since 2PE fluorescence $∝P^{2}$) or increasing the dwell time on each neuron by a factor of $(1+1/SBR)$. Consequently, the cross-over depth between 1320-nm 3PM and 920-nm 2PM for achieving the same $d^{′}$ with the same excitation pulse energy shifts to a shallower depth (~ 600 μm) than that based only on the signal strength (~ 700 μm), see Figure 1B and Figure 2—figure supplement 2. The SBR of 2PM drops even faster with depth than the exponential decay of the fluorescence signal because, in addition to the decrease of the signal, the background also increases with depth (Figure 2—figure supplement 2; Theer et al., 2003). Therefore, 2PM imaging far beyond the depth where $SBR=1$ is impractical.
+
+### Tissue heating and excitation saturation limit the average and peak power
 
 Laser-induced tissue damage can be categorized into thermal and nonlinear damage, with distinct mechanisms and dependence on imaging parameters. Continuous heating damages the brain tissue through high temperature, which disturbs various biophysical processes (Podgorski and Ranganathan, 2016). Heating-induced damage happens in the bulk tissue and depends on the average power per illumination volume. On the other hand, nonlinear damage is caused by the strong electric field at the focal point, which is related to focal spot size, pulse energy, and pulse duration.
 
 We used Monte Carlo method to calculate light intensity distribution and temperature rise caused by 1320 nm illumination and compared the simulation to immunohistochemistry results, following previous works on 2PM brain heating assessment. The previous works showed that brain tissue damage was observed at >250 mW average power of continuous 920 nm illumination in both anesthetized and awake mice with cranial windows (NA = 0.8; Linear FOV = 1 mm; focal depth = 250 μm) (Podgorski and Ranganathan, 2016). In comparison, 1320 nm light experiences stronger water absorption and weaker scattering, which implies higher heat generation in a smaller volume, and therefore tissue temperature is expected to rise faster with input power (Table 1). According to our simulation, at 1 mm imaging depth, the maximum brain temperature starts to rise above the normal body temperature of 37 °C at 80 mW average power immediately after the objective lens of 2 mm work distance (or 68 mW at the brain surface) with continuous scanning (Figure 3B and C; NA ~ 0.75; FOV = 230 μm). For power higher than 80 mW, the peak temperature rises at a rate of ~3 °C per 50 mW after the objective lens (Figure 3C). At low imaging power, light absorption does not raise the maximum tissue temperature but makes up for part of the heat loss through the cranial window (Podgorski and Ranganathan, 2016). As the input power keeps increasing, the temperature rises almost linearly with input power. The reason to distinguish the average power after the objective lens from that at the brain surface is that the absorption of 1320 nm light by immersion water is not negligible. For objective lenses with different work distances, the average power at the brain surface needs to be re-calibrated according to the actual thickness of immersion water (Figure 3—figure supplement 1-Materials and methods).
 
+**Table 1.**
+ Optical parameters of gray matter.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Parameter</th>
+      <th>Wavelength</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>μa</td>
+      <td>absorption coefficient</td>
+      <td>920</td>
+      <td>0.039</td>
+      <td>1/mm</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1280</td>
+      <td>0.078</td>
+      <td>1/mm</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1320</td>
+      <td>0.12</td>
+      <td>1/mm</td>
+    </tr>
+    <tr>
+      <td>μs</td>
+      <td>scattering coefficient</td>
+      <td>920</td>
+      <td>6.7</td>
+      <td>1/mm</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1280</td>
+      <td>3.2</td>
+      <td>1/mm</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1320</td>
+      <td>3.2</td>
+      <td>1/mm</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>anisotropy coefficient</td>
+      <td>All</td>
+      <td>0.9</td>
+      <td>dimensionless</td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>refractive index</td>
+      <td>All</td>
+      <td>1.36</td>
+      <td>dimensionless</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig3-v2.jpg)
+
+**Figure 3.:** (A) Monte Carlo simulation of light intensity of 1320 nm excitation light. The excitation light is focused at 1 mm below the brain surface in the cortex by an objective of 1.05 NA at ~75% filling of its back aperture and scanned telecentrically in a 230 μm diameter FOV (the horizontal magenta line segment). Three iso-contour lines (from inside to outside) correspond to 0.01, 0.1, and 0.5 of the maximum intensity. (B) Temperature maps under 1320 nm illumination calculated from the power absorption per unit volume in (A) after 60 s of continuous scanning with 100 and 150 mW average power after the objective lens. Temperature is color-coded with isotherms plotted at 1°C increment with the highest four temperature levels labeled. The average imaging power is listed at the top of each plot. (C) The maximum temperature versus imaging power for 1 mm and 1.2 mm focal depth, with other imaging parameters the same as in (A) and (B). The maximum temperature is calculated as the average in the hottest volume around the scanned area (~107 μm3). (D) Immunolabeled brain slices of mouse brains after 1320 nm 3PM scanning with 0, 50 mW, 100 mW, and 150 mW average power (one mouse is shown for each power). The brain was scanned for 20 min continuously at 1 mm below the surface, with 230 μm x 230 μm FOV and 2 Hz frame rate. The location of the damage is indicated by the white arrowheads. Scale bar, 0.5 mm. (E) Quantification of heat-induced damage by the fractional change of immunolabeling intensity relative to the region in the contralateral hemisphere. Shaded areas denote 95% confidence interval of the control group mean (n = 4 mice for control; n = 6 mice for 50 mW; n = 5 mice for 100 mW; n = 7 mice for 150 mW).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Power transmission versus immersion water thickness under the objective (Olympus XLPLN25XWMP2, 25X, NA=1.05, ~ 75% filling of the back aperture) for 5 spectra centered from 1280 nm to 1420 nm using broadband pulses from the NOPA. Each transmission curve is fitted with a single exponential function to calculate the apparent attenuation coefficient ($\mu_{app}$). The inset lists these coefficients. (B) The spectra of the pulses for the transmission measurement in (A).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The imaging depth grows in the increment of the nominal EAL of the cortex, which is 150 μm for 920 nm and 300 μm for both 1320 nm and 1280 nm. The linear scanning FOV diameter is 300 μm, and other parameters used for the simulation are listed in Table 1 and Table 3. For 1320 nm, the power immediately after the objective lens can be calculated by multiplying the power at the brain surface with a factor to correct for immersion water absorption: 1.42, 1.33, 1.27, 1.20, 1.13, 1.07, and 1.01 (from 0 to 6 EALs). For 1280 nm, the correction factors are: 1.20, 1.17, 1.13, 1.10, 1.07, 1.03, and 1.00 (from 0 to 6 EALs).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The simulation was performed for 1320 nm excitation wavelength at 1- and 1.2 mm imaging depth with various average powers after the objective lens. The NA and the back-aperture beam size remain the same as in Figure 3A. Each legend key indicates the power immediately after the objective lens, followed by the power at the brain surface after immersion water absorption (in the bracket).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/53205/elife-53205-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** The scanning was performed with 230 μm FOV for 20 min at various average powers in the mouse brain. The window and scanning area are on the right side of each brain slice, and the location of heating is indicated with white arrowheads. Scale bar, 500 μm.
+
 To experimentally determine the tissue heating at various average power, we immunolabeled post mortem brain slices of mice after the exposure to 20 min continuous scanning with 1320 nm 3PM at two imaging depths (1 mm and 1.2 mm, Figure 3D). According to the immunohistochemistry results, no tissue response was detected by measuring heat shock protein (﻿anti HSP-70/72), microglial (anti-GFAP), or astrocytic activation (﻿anti-Iba1) at 100 mW average power in anesthetized mice (NA = 0.75; Linear FOV = 230 µm; n = 5 mice, Figure 3—figure supplement 5); however, there is a non-zero chance (1 in 4 mice at 1 mm depth and 1 in 3 mice at 1.2 mm depth) of detectable tissue response with 150 mW imaging power, based on visual inspection of the brain slices (Figure 3D) and the quantification of immunolabeling intensity (Figure 3E). The variation in the levels of activation measured at the same average power in different mice may result from several factors, including the variation in attenuation length and the level of tissue growth 3 weeks after window implantation. Relating to the temperature calculation in Figure 3C, the immunohistochemistry results at 150 mW illumination suggest the upper bound of peak temperature should not exceed 41 °C, which is the peak temperature at an illumination power of 150 mW, according to our simulation (Figure 3C). Based on this estimated criterion, the maximum allowable imaging power can be interpolated for different imaging depths and FOVs, according to Figure 3—figure supplement 3 and Figure 3—figure supplement 4. In general, the maximum brain temperature is lower with larger imaging depth or scanning FOV for the same excitation power. Brain heating is independent of the imaging frame rate when the temperature change between successive frames is negligible. For example, because the brain tissue cools at the rate of ~0.1 °C/s (Podgorski and Ranganathan, 2016), the temperature fluctuation at a given point in the tissue due to beam scanning is only ~0.05 °C at 2 Hz frame rate. Under this condition, the brain heating can be modeled as under continuous wide-field illumination.
 
-In addition to 1320 nm, we also simulated brain heating with 1280 nm excitation light since the water absorption coefficient at 1280 nm is ~65% of that at 1320 nm (Table 1), leading to less than 50% of the total photons absorbed in the illuminated volume (Table 2). As a result, 3PE with 1280 nm allows almost 50% more average power than 1320 nm with similar EAL (Kobat et al., 2009), which is potentially beneficial for maximizing imaging depth or FOV. However, the GCaMP6 sensitivity (ΔF/F) with 1280 nm 3PE in vivo is only half of that with 1320 nm, which favors 1320 nm for 3-photon calcium imaging (Ouzounov et al., 2019).
+In addition to 1320 nm, we also simulated brain heating with 1280 nm excitation light since the water absorption coefficient at 1280 nm is ~65% of that at 1320 nm (Table 1), leading to less than 50% of the total photons absorbed in the illuminated volume (Table 2). As a result, 3PE with 1280 nm allows almost 50% more average power than 1320 nm with similar EAL (Kobat et al., 2009), which is potentially beneficial for maximizing imaging depth or FOV. However, the GCaMP6 sensitivity ($ΔF/F$) with 1280 nm 3PE in vivo is only half of that with 1320 nm, which favors 1320 nm for 3-photon calcium imaging (Ouzounov et al., 2019).
 
-High peak excitation intensity has several adverse effects on brain imaging, including fluorophore saturation, bleaching, and nonlinear tissue damage. For GCaMP6s, we calculated that fluorescence saturation (i.e., ground-state depletion) occurs at 4-5 nJ under 3PE under our imaging conditions (Materials and methods). Laser-induced nonlinear damage can be observed in cells as a sudden but irreversible elevation to extraordinary brightness, which is caused by the rapid ionization and recombination of molecules followed by pressure increase (Tsai et al., 2009). In general, the damage threshold for the peak intensity increases with wavelength (Fu et al., 2006; König et al., 1999; Olivié et al., 2008). Since the area of the focal spot scales as λ2, where λ is the excitation wavelength, the long wavelength used for 3PM allows higher pulse energy than 2PM. Our previous work showed that neurons remain healthy and viable for weeks after hours of exposure to 1.5 nJ pulses (60 fs and NA~0.75) at the 1300-nm wavelength (Ouzounov et al., 2017). As an estimate of the upper bound of pulse energy, we observed that ~10 nJ at the focus causes tissue ablation, in agreement with another independent study (Yildirim et al., 2019). In addition, it was shown that 1 to 2 nJ pulse energy at the focus (~ 40 fs, NA ~ 1.0) does not appear to alter the physiological response of the neurons under visual stimulation (Yildirim et al., 2019). Based on these results, 1 to 2 nJ pulse energy at the focus is reasonable for 3PM to achieve sufficient signal strength while avoiding nonlinear photodamage and fluorophore saturation.
+**Table 2.**
+ Percentage of Excitation Photons for Various Final Destinations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>920 nm</th>
+      <th>1320 nm</th>
+      <th>1280 nm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Contributing to heating</td>
+      <td>20</td>
+      <td>63</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>Back scattered to window</td>
+      <td>25</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Back scattered to skull</td>
+      <td>20</td>
+      <td>9</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Escaped*</td>
+      <td>35</td>
+      <td>19</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Photons escape the simulation volume by traveling too far (>6 mm) from the center of the cranial window or too deep (>6 mm) from the tissue surface._
+
+High peak excitation intensity has several adverse effects on brain imaging, including fluorophore saturation, bleaching, and nonlinear tissue damage. For GCaMP6s, we calculated that fluorescence saturation (i.e., ground-state depletion) occurs at 4-5 nJ under 3PE under our imaging conditions (Materials and methods). Laser-induced nonlinear damage can be observed in cells as a sudden but irreversible elevation to extraordinary brightness, which is caused by the rapid ionization and recombination of molecules followed by pressure increase (Tsai et al., 2009). In general, the damage threshold for the peak intensity increases with wavelength (Fu et al., 2006; König et al., 1999; Olivié et al., 2008). Since the area of the focal spot scales as $\lambda^{2}$, where $\lambda$ is the excitation wavelength, the long wavelength used for 3PM allows higher pulse energy than 2PM. Our previous work showed that neurons remain healthy and viable for weeks after hours of exposure to 1.5 nJ pulses (60 fs and NA~0.75) at the 1300-nm wavelength (Ouzounov et al., 2017). As an estimate of the upper bound of pulse energy, we observed that ~10 nJ at the focus causes tissue ablation, in agreement with another independent study (Yildirim et al., 2019). In addition, it was shown that 1 to 2 nJ pulse energy at the focus (~ 40 fs, NA ~ 1.0) does not appear to alter the physiological response of the neurons under visual stimulation (Yildirim et al., 2019). Based on these results, 1 to 2 nJ pulse energy at the focus is reasonable for 3PM to achieve sufficient signal strength while avoiding nonlinear photodamage and fluorophore saturation.
 
 ## Discussion
 
@@ -78,9 +245,9 @@ In this study, we quantitatively compared 1320 nm 3PM and 920 nm 2PM for deep ti
 
 We formulate a step-by-step procedure to optimize 3PM for neuronal imaging using the results in this paper. The excitation parameters (wavelength, pulse energy, and repetition rate, etc.) are optimized first, based on which the sampling parameters (FOV, frame rate, pixel size, etc.) are then derived accordingly.
 
-The excitation wavelength affects 3PE cross section, calcium indicator ΔF/F, and tissue heating. A previous study has shown that 3PE of GCaMP6s achieves the highest d′ with a center wavelength between 1300-1320 nm (Ouzounov et al., 2019). Brain heating is significantly increased beyond 1350 nm due to water absorption (Jacques, 2013) and much reduced at 1280 nm (see the previous section). Even though 1280 nm allows ~ 50% more average power than 1320 nm, it only generates ~50% more signal since the signal scales linearly with the average power when the peak intensity is maximized and fixed. For calcium imaging, this advantage in signal strength is offset by the lower ΔF/F, which results in a slightly lower d′ for 1280 nm (Ouzounov et al., 2019).
+The excitation wavelength affects 3PE cross section, calcium indicator $ΔF/F$, and tissue heating. A previous study has shown that 3PE of GCaMP6s achieves the highest $d^{′}$ with a center wavelength between 1300-1320 nm (Ouzounov et al., 2019). Brain heating is significantly increased beyond 1350 nm due to water absorption (Jacques, 2013) and much reduced at 1280 nm (see the previous section). Even though 1280 nm allows ~ 50% more average power than 1320 nm, it only generates ~50% more signal since the signal scales linearly with the average power when the peak intensity is maximized and fixed. For calcium imaging, this advantage in signal strength is offset by the lower $ΔF/F$, which results in a slightly lower $d^{′}$ for 1280 nm (Ouzounov et al., 2019).
 
-The repetition rate and pulse energy are optimized based on the constraints imposed by the linear (brain heating) and nonlinear effects. Since 3-photon imaging is essentially background-free for most practical imaging depths, the calcium imaging fidelity d′ depends solely on the signal strength, that is photons per neuron per second (F0). As a result, in order to maximize the number of neurons recorded, the total photon counts should be maximized within the thermal constraint and the peak intensity limit. Regardless of the imaging depth, the pulse energy at the focus should always be kept as high as possible (e.g., 1 to 2 nJ) to maximize the signal while avoiding the adverse nonlinear effects (e.g., fluorophore saturation and nonlinear damage). The maximum repetition rate is then the maximum average power allowed by the thermal constraint (e.g., as indicated in Figure 3—figure supplement 3) divided by the pulse energy at the sample surface, which can be calculated from the pulse energy at the focus using the EAL. The imaging power grows exponentially with depth, which is much faster than the quasi-linear growth of the heat dissipation capacity as a function imaging depth (Figure 3—figure supplement 3). Therefore, the maximum repetition rate decreases rapidly with imaging depth. For example, when imaging GCaMP6s-labeled neurons at 600 μm depth (~ 2 EALs) using 1320 nm 3PE, 1.86 nJ x exp(2) ~ 14 nJ pulse energy on the brain surface is required for 0.1 photon/pulse detected (Figure 1B), and the maximum repetition rate to avoid substantial tissue temperature rise is 100 mW/ 14 nJ = 7 MHz, where 100 mW is predicted as a safe power to avoid thermal damage at this imaging depth, given a large enough scanning FOV (Figure 3—figure supplement 3 and Figure 3—figure supplement 4). When imaging the hippocampus at ~ 1 mm depth (~ 4 EALs due to the presence of the white matter), the maximum repetition rate has to be reduced to 120 mW/100 nJ = 1.2 MHz for the same signal generation level at the focus. In both examples, the pulse energy at the brain surface was calculated by multiplying exp(the number of EALs) with the pulse energy at the focus (1.86 nJ).
+The repetition rate and pulse energy are optimized based on the constraints imposed by the linear (brain heating) and nonlinear effects. Since 3-photon imaging is essentially background-free for most practical imaging depths, the calcium imaging fidelity $d^{′}$ depends solely on the signal strength, that is photons per neuron per second ($F_{0}$). As a result, in order to maximize the number of neurons recorded, the total photon counts should be maximized within the thermal constraint and the peak intensity limit. Regardless of the imaging depth, the pulse energy at the focus should always be kept as high as possible (e.g., 1 to 2 nJ) to maximize the signal while avoiding the adverse nonlinear effects (e.g., fluorophore saturation and nonlinear damage). The maximum repetition rate is then the maximum average power allowed by the thermal constraint (e.g., as indicated in Figure 3—figure supplement 3) divided by the pulse energy at the sample surface, which can be calculated from the pulse energy at the focus using the EAL. The imaging power grows exponentially with depth, which is much faster than the quasi-linear growth of the heat dissipation capacity as a function imaging depth (Figure 3—figure supplement 3). Therefore, the maximum repetition rate decreases rapidly with imaging depth. For example, when imaging GCaMP6s-labeled neurons at 600 μm depth (~ 2 EALs) using 1320 nm 3PE, 1.86 nJ x exp(2) ~ 14 nJ pulse energy on the brain surface is required for 0.1 photon/pulse detected (Figure 1B), and the maximum repetition rate to avoid substantial tissue temperature rise is 100 mW/ 14 nJ = 7 MHz, where 100 mW is predicted as a safe power to avoid thermal damage at this imaging depth, given a large enough scanning FOV (Figure 3—figure supplement 3 and Figure 3—figure supplement 4). When imaging the hippocampus at ~ 1 mm depth (~ 4 EALs due to the presence of the white matter), the maximum repetition rate has to be reduced to 120 mW/100 nJ = 1.2 MHz for the same signal generation level at the focus. In both examples, the pulse energy at the brain surface was calculated by multiplying exp(the number of EALs) with the pulse energy at the focus (1.86 nJ).
 
 The repetition rate fundamentally limits the number of samples per second, and therefore the possible range of FOVs and frame rate. As a common practice, the pixel size is approximately the lateral spot size of the focus, for example two pixels per focal spot for a proper spatial sampling frequency. To ensure sampling uniformity when the repetition rate is low, the pixel clock is synchronized to the laser pulses, and there is an integer number of excitation pulses per pixel. Under this condition, a wide range of FOVs and frame rates can be chosen as long as the repetition rate is equal to the integer multiples of the product of the number of pixels in each frame and the frame rate. In addition, the following factors should also be taken into consideration for parameter selection. Tissue heating is higher with a smaller FOV, and therefore the imaging power should be reduced accordingly with the FOV (see Figure 3—figure supplement 4). For calcium imaging, the frame rate should be fast enough for capturing the temporal dynamics of the calcium indicator (e.g.,>5 Hz for GCaMP6s).
 
@@ -88,66 +255,227 @@ The maximum repetition rate limits the sampling rate for 3PM, and therefore the 
 
 ## Materials and methods
 
-## Simultaneous 1320 nm 3PM and 920 nm 2PM Imaging with Time Division Multiplex Scheme
+**Key resources table**
 
-The excitation source for 1320 nm 3PM was a noncollinear optical parametric amplifier (NOPA, Spectra-Physics) pumped by an ultrafast amplifier (Spirit, Spectra-Physics). The excitation source for 920 nm 2PM was a mode-locked Ti:Sapphire laser (Tsunami, Spectra-Physics). The two excitation beams were launched into a custom-built microscope, described in our previous works (Ouzounov et al., 2019; Ouzounov et al., 2017). The 3PE wavelength was centered at 1320 nm and 2PE at 920 nm for the optimal d′ (Ouzounov et al., 2019). The two excitation beams were verified to have similar spatial resolution well below the size of neurons or blood vessels such that their excitation volumes are almost identical (Ouzounov et al., 2019).
 
-Time-division multiplex (TDM) achieves nearly simultaneous 2PM and 3PM imaging by alternating between spatially overlapped 920 nm and 1320 nm laser beams on a microsecond time scale. 2PE and 3PE fluorescence signals were separated according to the recorded laser clock. More details about the setup can be found in Ouzounov et al. (2017). The calcium activities were recorded with 13.6 Hz frame rate, limited by the fastest achievable line rate of the galvanometer scanners. This frame rate is sufficiently high for imaging the temporal dynamics of GCaMP6s (τ1/e~2 s). For 2PM and 3PM comparison experiments, the FOV was reduced to fit a single neuron so that the signal-to-noise ratio was maximized to ensure accurate comparison between 2PM and 3PM calcium traces. The excitation power for 3PM and 2PM was adjusted to generate similar photon count per frame that lead to the same noise level, and the FOV was reduced to increase the laser dwell time on neuron bodies.
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.Cg-Tg(CamK2a-tTA)1Mmay/J</td>
+      <td>The Jackson Laborartory Stock: 007004</td>
+      <td>MGI:2179066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6;DBA-Tg(tetO-GCaMP6s)2Niell/J</td>
+      <td>The Jackson Laborartory Stock: 024742</td>
+      <td>MGI:5553332</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HSP70/72 (mouse monoclonal)</td>
+      <td>Enzo Life Sciences, Cat# SPA-810PED</td>
+      <td>RRID:AB-2264369</td>
+      <td>IHC(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFAP (mouse monoclonal)</td>
+      <td>Sigma-Aldrich, Cat# G3893</td>
+      <td>RRID:AB_477010</td>
+      <td>IHC(1:760)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Iba1 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich, Cat# SAB2702364</td>
+      <td>RRID:AB_2820253</td>
+      <td>IHC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse (polyclonal)</td>
+      <td>Thermo Fisher Scientific, Cat# A-11003</td>
+      <td>RRID:AB_2534071</td>
+      <td>IHC(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Source code 1: matlab code for simulating the brain temperature distribution under continuous long-wavelength illumination by 3PM using Monte Carlo method and heat equation.</td>
+      <td>Mathworks, Matlab 2016b</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-## Photon counting schemes
+### Simultaneous 1320 nm 3PM and 920 nm 2PM Imaging with Time Division Multiplex Scheme
 
-The microscope was first tested for shot-noise limited performance by photon counting the signal generated by stationary 1320-nm or 920-nm beam focused in fluorescein solution (~40 μM and pH=10). The laser power was chosen (~0.3 mW for both wavelengths) to ensure the photon counts per second is lower than 5% of the laser repetition rate of the NOPA, which limits the photon stacking error to within 2.5% of the total counts. According to Poisson statistics, photon stacking error causes a fraction of 1-(1-e-λ)/λ underestimation in photon counts, where λ is the average count per second divided by the laser repetition rate. For 2PE using the Ti:Sapphire laser, the photon stacking error is negligible since the typical photon counts are below 1% of its repetition rate (80 MHz). In this experiment, the PMT (Hamamatsu H7422-40) anode current was first amplified with a 10 MHz bandwidth pre-amplifier (C9999, Hamamatsu), and then counted by a photon counter (SR400, Stanford Research). Shot-noise limited performance was confirmed for our imaging system.
+The excitation source for 1320 nm 3PM was a noncollinear optical parametric amplifier (NOPA, Spectra-Physics) pumped by an ultrafast amplifier (Spirit, Spectra-Physics). The excitation source for 920 nm 2PM was a mode-locked Ti:Sapphire laser (Tsunami, Spectra-Physics). The two excitation beams were launched into a custom-built microscope, described in our previous works (Ouzounov et al., 2019; Ouzounov et al., 2017). The 3PE wavelength was centered at 1320 nm and 2PE at 920 nm for the optimal $d^{′}$ (Ouzounov et al., 2019). The two excitation beams were verified to have similar spatial resolution well below the size of neurons or blood vessels such that their excitation volumes are almost identical (Ouzounov et al., 2019).
+
+Time-division multiplex (TDM) achieves nearly simultaneous 2PM and 3PM imaging by alternating between spatially overlapped 920 nm and 1320 nm laser beams on a microsecond time scale. 2PE and 3PE fluorescence signals were separated according to the recorded laser clock. More details about the setup can be found in Ouzounov et al. (2017). The calcium activities were recorded with 13.6 Hz frame rate, limited by the fastest achievable line rate of the galvanometer scanners. This frame rate is sufficiently high for imaging the temporal dynamics of GCaMP6s ($\tau_{1/e}~2$ s). For 2PM and 3PM comparison experiments, the FOV was reduced to fit a single neuron so that the signal-to-noise ratio was maximized to ensure accurate comparison between 2PM and 3PM calcium traces. The excitation power for 3PM and 2PM was adjusted to generate similar photon count per frame that lead to the same noise level, and the FOV was reduced to increase the laser dwell time on neuron bodies.
+
+### Photon counting schemes
+
+The microscope was first tested for shot-noise limited performance by photon counting the signal generated by stationary 1320-nm or 920-nm beam focused in fluorescein solution (~40 μM and pH=10). The laser power was chosen (~0.3 mW for both wavelengths) to ensure the photon counts per second is lower than 5% of the laser repetition rate of the NOPA, which limits the photon stacking error to within 2.5% of the total counts. According to Poisson statistics, photon stacking error causes a fraction of $1-(1-e^{-\lambda})/\lambda$ underestimation in photon counts, where $\lambda$ is the average count per second divided by the laser repetition rate. For 2PE using the Ti:Sapphire laser, the photon stacking error is negligible since the typical photon counts are below 1% of its repetition rate (80 MHz). In this experiment, the PMT (Hamamatsu H7422-40) anode current was first amplified with a 10 MHz bandwidth pre-amplifier (C9999, Hamamatsu), and then counted by a photon counter (SR400, Stanford Research). Shot-noise limited performance was confirmed for our imaging system.
 
 During imaging, the photon counts of neurons were obtained by converting pixel values to photon counts according to a conversion factor. The calibration was done by parking a 920 nm or 1320 nm focus in a fluorescein solution sample and then perform photon counting and imaging consecutively. Linearity between pixel values and photon counts was tested by changing the laser power, and the ratio between them was used as the conversion factor. In fact, recording analog value is a better way to measure high photon counts, since there is no photon stacking error and the voltage signal can simply be summed. The conversion factor was further confirmed by observing the first mode in a pixel value histogram. The zeroth mode of a pixel histogram peaks at PMT offset value, and the first mode is larger than that, representing pixels receiving exactly one photon. Higher-order modes can also be observed, representing pixels receiving multiple photons. For all simultaneous 2P and 3P imaging, the sampling frequency was 5 MHz, so that direct photon counting based on images could also be performed, which showed consistent results in comparison to analog recordings.
 
-## Measurement of excitation light attenuation in the brain tissue based on fluorescence signal
+### Measurement of excitation light attenuation in the brain tissue based on fluorescence signal
 
 The vasculature imaging was performed simultaneously with 2PM and 3PM using the TDM scheme. The image stack was taken with 10 μm step size in depth, and the imaging power was increased with imaging depth to keep the signal level approximately constant. The signal of each frame was calculated as the average of the brightest 0.5% pixel values and then converted to photon counts per excitation pulse according to the method described in the previous section. The fraction of excitation power reaching the focus from the brain surface (Focus Power/Surface Power) was calculated as the square (cubic) root of the ratio of the 2PE (3PE) signal at the imaging depth and at the brain surface.
 
-## Measurement of the pulse energy required per 0.1 photon detection
+### Measurement of the pulse energy required per 0.1 photon detection
 
 To have a fair comparison on the excitation efficiency of 920 nm 2PM and 1320 nm 3PM, we controlled all the parameters regarding 2PE and 3PE except for the wavelength. For both wavelengths, the axial resolution was made equal by adjusting the beam size at the back aperture of the objective separately. The point spread functions of both wavelengths were also overlapped laterally (by fine-tuning the 920 nm beam pointing direction) and axially (by changing the field curvature of the 920 nm beam at the objective lens back aperture by fineadjustment of the distance between the lenses of a 1:1 telescope). For both wavelengths, the pulse durations were scaled to 60 fs (measured pulse durations were 60–70 fs in FWHM for 1320 nm, and 180–200 fs for 920 nm. All pulses were assumed to have sech2 profile). Light absorption by the immersion water was taken into account when calculating the pulse energy for 1320 nm on the brain surface. As we show in Figure 3—figure supplement 1, it is important to distinguish the pulse energy on the brain surface and after the objective lens for 1320 nm excitation.
 
-Based on the fluorescence signals derived from simultaneous 2P and 3P imaging, Figure 1B was plotted using the following equations (Xu and Webb, 1997):(3)S2P/f=C2(P/f)2/τ(4)S3P/f=C3P/f3/τ2where SnP/f is the n-photon-excited signal yield in the unit of detected photon/pulse, P is the average power at the brain surface, f is the repetition rate, τ is the pulse duration, and Cn (n=2 and 3) are the coefficients to be determined. For vasculature imaging, SnP/f is calculated as the average of the brightest 0.5% pixel values per frame, converted to photon counts. For GCaMP6s-labeled neurons, SnP/f was calculated from the sum of time-averaged pixel values in cell bodies (averaging time = 75 s, on 37 different cells in 5 animals). Given that P/f and τ are already measured during the experiment, Cn can be solved. To produce Figure 1B, we plugged Cn into the equations and set the signal yield (i.e., SnP/f) to 0.1 photon per pulse, pulse duration to 60 fs, and then solve for pulse energy P/f on the sample surface according to Equations 3 and 4.
+Based on the fluorescence signals derived from simultaneous 2P and 3P imaging, Figure 1B was plotted using the following equations (Xu and Webb, 1997):
 
-To account for the EAL variation recorded from different animals in Figure 1B, we measured EAL of the cortical layers of each animal by imaging fluorescein-labeled blood vessels immediately after calcium imaging. The depths of neurons were rescaled by dividing the measured EAL and then multiplying with the nominal EAL (i.e., 293 μm for 1320 nm 3PE and 154 μm for 920 nm, as measured by the vasculature data). The logarithm of the neuron signal was plotted against depth, and then fitted with a linear model for the slope and intercept (Figure 1B). The slope equals ln(10)/EAL, and the intercept equals to the pulse energy required to yield 0.1 detected photon per pulse on the sample surface (i.e., zero imaging depth).
+$$
+S_{2P}/f=C_{2}(P/f)^{2}/\tau
+$$
 
-## Measurement of Signal-to-background ratio
+
+
+$$
+S_{3P}/f=C_{3}P/f^{3}/\tau^{2}
+$$
+
+where $S_{nP}/f$ is the n-photon-excited signal yield in the unit of detected photon/pulse, $P$ is the average power at the brain surface, f is the repetition rate, $\tau$ is the pulse duration, and $C_{n}$ (n=2 and 3) are the coefficients to be determined. For vasculature imaging, $S_{nP}/f$ is calculated as the average of the brightest 0.5% pixel values per frame, converted to photon counts. For GCaMP6s-labeled neurons, $S_{nP}/f$ was calculated from the sum of time-averaged pixel values in cell bodies (averaging time = 75 s, on 37 different cells in 5 animals). Given that $P/f$ and $\tau$ are already measured during the experiment, $C_{n}$ can be solved. To produce Figure 1B, we plugged $C_{n}$ into the equations and set the signal yield (i.e., $S_{nP}/f$) to 0.1 photon per pulse, pulse duration to 60 fs, and then solve for pulse energy $P/f$ on the sample surface according to Equations 3 and 4.
+
+To account for the EAL variation recorded from different animals in Figure 1B, we measured EAL of the cortical layers of each animal by imaging fluorescein-labeled blood vessels immediately after calcium imaging. The depths of neurons were rescaled by dividing the measured EAL and then multiplying with the nominal EAL (i.e., 293 μm for 1320 nm 3PE and 154 μm for 920 nm, as measured by the vasculature data). The logarithm of the neuron signal was plotted against depth, and then fitted with a linear model for the slope and intercept (Figure 1B). The slope equals $ln(10)/EAL$, and the intercept equals to the pulse energy required to yield 0.1 detected photon per pulse on the sample surface (i.e., zero imaging depth).
+
+### Measurement of Signal-to-background ratio
 
 The signal of each frame was measured as the average of the brightest 0.1% pixel values. For vasculature data, the background was measured as the average pixel values of regions surrounding the blood vessels (i.e., not labeled). For GCaMP6 neural data, the background was measured as the pixel value in the shadow of big blood vessels. The pixel values of cortical tissue surrounding the neurons cannot be used as background since it contains densely labeled neuronal processes except for area within the blood vessels. SBR was calculated as the signal divided by the background.
 
-## Quantification of vasculature volume fraction and staining inhomogeneity
+### Quantification of vasculature volume fraction and staining inhomogeneity
 
-The SBR limit of 2PM depends on the spatial inhomogeneity of staining (Theer and Denk, 2006). We quantified the staining inhomogeneity of fluorescein-labeled vasculature in order to compare the in vivo SBR measurement to the theory and ex vivo fluorescent bead measurement (Theer and Denk, 2006). The volume fraction of the vasculature can be estimated by the fraction of the stained blood vessel area in each xy image frame. Figure 2—figure supplement 1 shows the fractional vascular area vs. imaging depth, derived from the same 3PM dataset, as in Figure 2B. The segmentation of blood vessel regions was performed with graythresh function in MATLAB and then inspected manually for correctness. We concluded that the labeled vascular volume accounts for 2 ± 1% (mean ± standard deviation) in the imaged column of the mouse cortex (~2mm lateral and 2mm caudal to the Bregma point, Figure 2B). Our result is in close agreement with other studies quantifying the fractional vascular volume by imaging sliced brains ex vivo (~2% for blood vessels of 20 μm or less diameter in the primary somatosensory cortex) (Wang et al., 2019; Xiong et al., 2017). We noticed that most of the blood vessels in the imaged volume has a diameter of less than 20 μm, except for a few on the brain surface (Figure 2—figure supplement 1A). The blood vessel density is lower in the white matter (~750-850 μm) than that in the cortex (Figure 2—figure supplement 1B). The staining inhomogeneity is defined as, χ=C^/⟨C⟩, where C=C(x,y,z) denotes the spatial distribution of dye concentration in the entire imaged volume, C^ is the maximum concentration, and C is the average concentration (Theer and Denk, 2006). Staining inhomogeneity can be estimated as 1/(factional vascular volume) with the assumption that all the labeled blood vessels are equally bright (C=1 for all vasculature), and the rest of tissue is completely unstained (C=0 for the rest). Our experiments show that 2PM reaches SBR of 1 at about 4.7 EALs, that is 730 μm with EAL=154 μm (Figure 2B). This result is in close agreement to the 4.7 EALs predicted by theoretical calculation with a staining inhomogeneity of 50 (Theer and Denk, 2006).
+The SBR limit of 2PM depends on the spatial inhomogeneity of staining (Theer and Denk, 2006). We quantified the staining inhomogeneity of fluorescein-labeled vasculature in order to compare the in vivo SBR measurement to the theory and ex vivo fluorescent bead measurement (Theer and Denk, 2006). The volume fraction of the vasculature can be estimated by the fraction of the stained blood vessel area in each xy image frame. Figure 2—figure supplement 1 shows the fractional vascular area vs. imaging depth, derived from the same 3PM dataset, as in Figure 2B. The segmentation of blood vessel regions was performed with graythresh function in MATLAB and then inspected manually for correctness. We concluded that the labeled vascular volume accounts for 2 ± 1% (mean ± standard deviation) in the imaged column of the mouse cortex (~2mm lateral and 2mm caudal to the Bregma point, Figure 2B). Our result is in close agreement with other studies quantifying the fractional vascular volume by imaging sliced brains ex vivo (~2% for blood vessels of 20 μm or less diameter in the primary somatosensory cortex) (Wang et al., 2019; Xiong et al., 2017). We noticed that most of the blood vessels in the imaged volume has a diameter of less than 20 μm, except for a few on the brain surface (Figure 2—figure supplement 1A). The blood vessel density is lower in the white matter (~750-850 μm) than that in the cortex (Figure 2—figure supplement 1B). The staining inhomogeneity is defined as, $χ=C^/⟨C⟩$, where $C=C(x,y,z)$ denotes the spatial distribution of dye concentration in the entire imaged volume, $C^$ is the maximum concentration, and $C$ is the average concentration (Theer and Denk, 2006). Staining inhomogeneity can be estimated as 1/(factional vascular volume) with the assumption that all the labeled blood vessels are equally bright ($C=1$ for all vasculature), and the rest of tissue is completely unstained ($C=0$ for the rest). Our experiments show that 2PM reaches SBR of 1 at about 4.7 EALs, that is 730 μm with EAL=154 μm (Figure 2B). This result is in close agreement to the 4.7 EALs predicted by theoretical calculation with a staining inhomogeneity of 50 (Theer and Denk, 2006).
 
-## Analysis of the calcium traces of neurons
+### Analysis of the calcium traces of neurons
 
-Sample motion in the original images, if any, was corrected by TurboReg plug-in in ImageJ. Regions of interest (ROIs) were generated by manual segmentation of neuron bodies. The pixel values of ROIs were exported to MATLAB 2016b for further processing. All the pixels in the ROI were summed and converted to photon counts. Spikes were inferred by thresholding the Poisson-distribution-based likelihood function derived from each trace (Wilt et al., 2013). The discrimination threshold (denoted by C in the cited paper) was chosen to be ln((1-r)/r), where r is the estimated firing rate, which was estimated for each individual trace as the fraction of the trace that is more than 1.5 standard deviation above its mean. The baseline (F0) was determined by averaging trace values, after excluding the spikes and their rising and falling edges. For the processed traces in Figure 1C, fluorescence intensity traces were low-pass filtered with a hamming window of a time constant of 0.37 s. Traces (F) were normalized according to the equation (F- F0)/F0 .
+Sample motion in the original images, if any, was corrected by TurboReg plug-in in ImageJ. Regions of interest (ROIs) were generated by manual segmentation of neuron bodies. The pixel values of ROIs were exported to MATLAB 2016b for further processing. All the pixels in the ROI were summed and converted to photon counts. Spikes were inferred by thresholding the Poisson-distribution-based likelihood function derived from each trace (Wilt et al., 2013). The discrimination threshold (denoted by $C$ in the cited paper) was chosen to be $ln((1-r)/r)$, where $r$ is the estimated firing rate, which was estimated for each individual trace as the fraction of the trace that is more than 1.5 standard deviation above its mean. The baseline ($F_{0}$) was determined by averaging trace values, after excluding the spikes and their rising and falling edges. For the processed traces in Figure 1C, fluorescence intensity traces were low-pass filtered with a hamming window of a time constant of 0.37 s. Traces ($F$) were normalized according to the equation $(F-F_{0})/F_{0}$.
 
-## Measurement of ΔF/F ratio from Simultaneously Recorded 3PM and 2PM Calcium Traces
+### Measurement of ΔF/F ratio from Simultaneously Recorded 3PM and 2PM Calcium Traces
 
-Based on the low-pass-filtered and normalized calcium traces described in the section above, the peaks of spikes were detected by finding local maxima that are larger than 30% ΔF/F in 3PM traces and have corresponding spike peaks detectable in 2PM traces. To produce the plot of Figure 2D, the ratios of 2PM and 3PM ΔF/F, that is ΔF/F2P/ΔF/F3P, of the same calcium transients were taken, and the depth of each neuron was normalized with the EAL of each animal.
+Based on the low-pass-filtered and normalized calcium traces described in the section above, the peaks of spikes were detected by finding local maxima that are larger than 30% $ΔF/F$ in 3PM traces and have corresponding spike peaks detectable in 2PM traces. To produce the plot of Figure 2D, the ratios of 2PM and 3PM $ΔF/F$, that is $ΔF/F_{2P}/ΔF/F_{3P}$, of the same calcium transients were taken, and the depth of each neuron was normalized with the EAL of each animal.
 
-## Monte Carlo simulation of light propagation and validation of tissue optical parameters
+### Monte Carlo simulation of light propagation and validation of tissue optical parameters
 
-We used Monte Carlo simulation to calculate light propagation in the brain tissue, following the algorithm described previously (Stujenske et al., 2015). Podgorski et al. adapted the same numerical recipe to predict tissue temperature change during 2-photon imaging, which agreed well with experimental measurements at the wavelengths of 800 nm, 920 nm, and 1064 nm (Podgorski and Ranganathan, 2016). In order to simulate for 1320 nm and 1280 nm excitation, we measured and estimated brain optical parameters as follows: For excitation wavelength longer than 1200 nm, water accounts for the majority of the light absorption in brain tissue in vivo (Jacques, 2013). Therefore, tissue absorption coefficients μa was approximated with 75% of the spectrum-weighted water absorption coefficient (defined in Section Measurement of Optical Absorption by Immersion Water), and the 75% is based on the water content of brain tissue (Jacques, 2013; Tschöp et al., 2012). Tissue scattering coefficients μs  were then calculated from our measured effective attenuation lengths according to EAL=1/(μa+μs), with EAL=150 μm at 920 nm, and 300 μm at 1320 nm and 1280 nm. As cross-validation, the calculated scattering coefficient at 1320 nm is close to that measured by Gebhart et al. (i.e., 3.0 mm−1) (Gebhart et al., 2006). We assumed an anisotropy factor g=0.9 and tissue refractive index n=1.36 for 920 nm, 1280 nm, and 1320 nm, since their variation in the wavelength range of interest is negligible. All the tissue optical parameters are summarized in Table 1.
+We used Monte Carlo simulation to calculate light propagation in the brain tissue, following the algorithm described previously (Stujenske et al., 2015). Podgorski et al. adapted the same numerical recipe to predict tissue temperature change during 2-photon imaging, which agreed well with experimental measurements at the wavelengths of 800 nm, 920 nm, and 1064 nm (Podgorski and Ranganathan, 2016). In order to simulate for 1320 nm and 1280 nm excitation, we measured and estimated brain optical parameters as follows: For excitation wavelength longer than 1200 nm, water accounts for the majority of the light absorption in brain tissue in vivo (Jacques, 2013). Therefore, tissue absorption coefficients μa was approximated with 75% of the spectrum-weighted water absorption coefficient (defined in Section Measurement of Optical Absorption by Immersion Water), and the 75% is based on the water content of brain tissue (Jacques, 2013; Tschöp et al., 2012). Tissue scattering coefficients $\mu_{s}$ were then calculated from our measured effective attenuation lengths according to $EAL=1/(\mu_{a}+\mu_{s}),$ with EAL=150 μm at 920 nm, and 300 μm at 1320 nm and 1280 nm. As cross-validation, the calculated scattering coefficient at 1320 nm is close to that measured by Gebhart et al. (i.e., 3.0 mm−1) (Gebhart et al., 2006). We assumed an anisotropy factor $g=0.9$ and tissue refractive index $n=1.36$ for 920 nm, 1280 nm, and 1320 nm, since their variation in the wavelength range of interest is negligible. All the tissue optical parameters are summarized in Table 1.
 
-To simulate underfilling of the objective back aperture, we initialized random photon distribution incident to the brain surface according to the relations:(5)w=w0−1/2ln(X)θ=sin−1(w/n0f)r=tan(θ)zwhere X is a random variable drawn from a uniform distribution from 0 to 1, w0 is the 1/e2 beam radius of the Gaussian beam at the objective back aperture, w is the radial distance to the objective optical axis of a randomly generated photon conforming to the Gaussian beam profile mentioned above, f is the objective focal length, n0 is the refractive index of immersion water, z is the imaging depth in the sample. r and θ define, respectively, the radial coordinate of photon position and the polar angle of propagation direction, both with respect to the objective optical axis (Figure 3—figure supplement 2). The objective (Olympus XLPLN25XWMP2, 25X, NA=1.05, focal length=7.2 mm) is under-filled, with 70% of its back aperture matched to the 1/e2 beam diameter of a Gaussian beam, which gives an effective NA of ~ 0.75 (Theer and Denk, 2006). The geometry of the simulation volume and boundary conditions are shown in Figure 3—figure supplement 2.
+To simulate underfilling of the objective back aperture, we initialized random photon distribution incident to the brain surface according to the relations:
 
-## Heat diffusion model with Bio-heat equation
+$$
+w=w_{0}\sqrt{−1/2ln(X)}\theta=sin^{−1}(w/n_{0}f)r=tan(\theta)z
+$$
 
-Using the light intensity as the heat source, we calculated the temperature distribution by solving numerically the bio-heat Equation (6), identical to that used previously by Stujenske et al. (2015):(6)ρc∂T(r→,t)∂t=k∇2T(r→,t)+ρbcbwb(TA−T(r→,t))+Sh(r→)+qmwhere Tr⃑,t  is the spatial-temporal temperature distribution, Shr⃑ is the radiative heat generation from Monto Carlo simulation, and the rest of the parameters and their values are listed in Table 3, which are the same as in Stujenske et al. (2015).
+where $X$ is a random variable drawn from a uniform distribution from 0 to 1, $w_{0}$ is the 1/e2 beam radius of the Gaussian beam at the objective back aperture, $w$ is the radial distance to the objective optical axis of a randomly generated photon conforming to the Gaussian beam profile mentioned above, $f$ is the objective focal length, n0 is the refractive index of immersion water, $z$ is the imaging depth in the sample. $r$ and $\theta$ define, respectively, the radial coordinate of photon position and the polar angle of propagation direction, both with respect to the objective optical axis (Figure 3—figure supplement 2). The objective (Olympus XLPLN25XWMP2, 25X, NA=1.05, focal length=7.2 mm) is under-filled, with 70% of its back aperture matched to the 1/e2 beam diameter of a Gaussian beam, which gives an effective NA of ~ 0.75 (Theer and Denk, 2006). The geometry of the simulation volume and boundary conditions are shown in Figure 3—figure supplement 2.
+
+### Heat diffusion model with Bio-heat equation
+
+Using the light intensity as the heat source, we calculated the temperature distribution by solving numerically the bio-heat Equation (6), identical to that used previously by Stujenske et al. (2015):
+
+$$
+ρc\frac{∂T(r→,t)}{∂t}=k∇^{2}T(r→,t)+ρ_{b}c_{b}w_{b}(T_{A}−T(r→,t))+S_{h}(r→)+q_{m}
+$$
+
+where $Tr⃑,t$ is the spatial-temporal temperature distribution, $S_{h}r⃑$ is the radiative heat generation from Monto Carlo simulation, and the rest of the parameters and their values are listed in Table 3, which are the same as in Stujenske et al. (2015).
+
+**Table 3.**
+ Thermal and mechanical properties of gray matter (Stujenske et al., 2015).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ρ</td>
+      <td>Density</td>
+      <td>1.04 × 10−3</td>
+      <td>g/mm3</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>Brain specific heat</td>
+      <td>3.65 × 103</td>
+      <td>mJ/g°C</td>
+    </tr>
+    <tr>
+      <td>k</td>
+      <td>Thermal conductivity</td>
+      <td>0.527</td>
+      <td>mW/mm °C</td>
+    </tr>
+    <tr>
+      <td>ρb</td>
+      <td>Blood density</td>
+      <td>1.06 × 10−3</td>
+      <td>g/mm3</td>
+    </tr>
+    <tr>
+      <td>cb</td>
+      <td>Blood specific heat</td>
+      <td>3.6 × 103</td>
+      <td>mJ/g°C</td>
+    </tr>
+    <tr>
+      <td>wb</td>
+      <td>Blood perfusion rate</td>
+      <td>8.5 × 10−3</td>
+      <td>/s</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Metabolic heat</td>
+      <td>9.5 × 10−3</td>
+      <td>mW/mm3</td>
+    </tr>
+    <tr>
+      <td>TA</td>
+      <td>Arterial temperature</td>
+      <td>36.7</td>
+      <td>°C</td>
+    </tr>
+  </tbody>
+</table>
 
 We calculated steady-state temperature distribution at various imaging depths (0–6 attenuation lengths) and average powers for 920 nm, 1320 nm, and 1280 nm. Figure 3—figure supplement 3 shows the maximum tissue temperature as a function of the average input power on the brain surface. The maximum temperature is evaluated as the average temperature in a volume of ~107 μm3 (Figure 3—figure supplement 3), or equivalent to a cylinder of ~120 μm radius and ~210 μm height enclosing the hottest region of the tissue. The power at the brain surface is calculated from the power immediately after the objective lens by taking account of the absorption by immersion water.
 
-## Immunohistolochemistry for assessing thermal damage induced by 1320 nm Illumination
+### Immunohistolochemistry for assessing thermal damage induced by 1320 nm Illumination
 
-The experiment was performed 3 weeks after the window implantation. Anesthetized (2% isoflurane mixed with oxygen) mice were exposed to continuous scanning for 20 min at a 2-Hz frame rate and 230 μm x 230 μm FOV. The FOV was chosen to be similar to the actual achievable FOVs at the imaging depth of 1-1.2 mm (Ouzounov et al., 2017; Weisenburger et al., 2019), and the frame rate was chosen to be comparable to that in typical structural imaging. Even at 2 Hz, the frame rate is fast enough to neglect tissue cooling (~0.1 °C/s) between successive frames (Podgorski and Ranganathan, 2016). After 18 hours, mice were perfused with 4% paraformaldehyde, and post fixed in the same solution for 24 hours, followed by sucrose solutions immersion (10%, 20%, and 30% incrementally). Scanned brain regions were coronally sectioned into 200 µm sections and blocked at room temperature. Alternating slices were incubated at 4 °C overnight, with primary antibodies for heat shock protein (HSP70/72), glial fibrillary acidic protein (GFAP), and Iba1. Primary antibodies used were mouse monoclonal anti-HSP70/72 (C92F3A-5) (1: 400 dilution, Enzo Life Sciences Cat# SPA-810PED, RRID:AB-2264369), mouse anti-GFAP (1:760 dilution, Sigma-Aldrich Cat# G3893, RRID:AB_477010), and mouse anti-Iba1 (1: 1000 dilution, Sigma-Aldrich Cat# SAB2702364, RRID:AB_2820253). Slices were washed and incubated with secondary antibody conjugated to Alexa Fluor 546 (1:500 dilution, Thermo Fisher Scientific Cat# A-11003, RRID:AB_2534071) at 4 °C overnight, washed again, and mounted in VECTASHIELD antifade medium for confocal imaging. Images were analyzed with ImageJ. The intensity (I0) was determined by the average intensity in the region of interest ~1 mm wide centered around the illuminated site covering the entire thickness of the neocortex, and the baseline I0 was determined in the mirror position in the contralateral hemisphere. The level of tissue response was quantified as the fractional change of immunolabeling intensity relative to the region of contralateral hemisphere: (I- I0)/I0. The procedures described here follows closely the previous studies on assessing thermal damage caused by 2-photon imaging of mouse brain (Podgorski and Ranganathan, 2016).
+The experiment was performed 3 weeks after the window implantation. Anesthetized (2% isoflurane mixed with oxygen) mice were exposed to continuous scanning for 20 min at a 2-Hz frame rate and 230 μm x 230 μm FOV. The FOV was chosen to be similar to the actual achievable FOVs at the imaging depth of 1-1.2 mm (Ouzounov et al., 2017; Weisenburger et al., 2019), and the frame rate was chosen to be comparable to that in typical structural imaging. Even at 2 Hz, the frame rate is fast enough to neglect tissue cooling (~0.1 °C/s) between successive frames (Podgorski and Ranganathan, 2016). After 18 hours, mice were perfused with 4% paraformaldehyde, and post fixed in the same solution for 24 hours, followed by sucrose solutions immersion (10%, 20%, and 30% incrementally). Scanned brain regions were coronally sectioned into 200 µm sections and blocked at room temperature. Alternating slices were incubated at 4 °C overnight, with primary antibodies for heat shock protein (HSP70/72), glial fibrillary acidic protein (GFAP), and Iba1. Primary antibodies used were mouse monoclonal anti-HSP70/72 (C92F3A-5) (1: 400 dilution, Enzo Life Sciences Cat# SPA-810PED, RRID:AB-2264369), mouse anti-GFAP (1:760 dilution, Sigma-Aldrich Cat# G3893, RRID:AB_477010), and mouse anti-Iba1 (1: 1000 dilution, Sigma-Aldrich Cat# SAB2702364, RRID:AB_2820253). Slices were washed and incubated with secondary antibody conjugated to Alexa Fluor 546 (1:500 dilution, Thermo Fisher Scientific Cat# A-11003, RRID:AB_2534071) at 4 °C overnight, washed again, and mounted in VECTASHIELD antifade medium for confocal imaging. Images were analyzed with ImageJ. The intensity ($I_{0}$) was determined by the average intensity in the region of interest ~1 mm wide centered around the illuminated site covering the entire thickness of the neocortex, and the baseline $I_{0}$ was determined in the mirror position in the contralateral hemisphere. The level of tissue response was quantified as the fractional change of immunolabeling intensity relative to the region of contralateral hemisphere: $(I-I_{0})/I_{0}$. The procedures described here follows closely the previous studies on assessing thermal damage caused by 2-photon imaging of mouse brain (Podgorski and Ranganathan, 2016).
 
-## Calculation of the pulse energy for fluorophore saturation under Three-photon excitation
+### Calculation of the pulse energy for fluorophore saturation under Three-photon excitation
 
-The excitation probability per pulse for a fluorescent molecule at the center of the focus is calculated as (Xu and Webb, 1997):(7)Pr=1−exp⁡[−gp(3)τ2σ3(NA2πλ3P2)3(P3Pf)3]where the definition and values of all the parameters remain the same as in the previous section. Using GCaMP6s 3PE cross section of 3 × 10−82 cm6s2, the pulse energy (i.e., P3Pf⋅hcλ3P) required for 10% and 63% excitation probability per pulse is 2 nJ and 4.3 nJ, respectively. We note that these pulse energies are much smaller (by ~ 2π) than those given by Yildirim et al. (2019). This factor of 2π error in Yildirim et al. (2019) is probably due to a typo (the Planck’s constant h and ℏ) since the correct equation for 2PE saturation intensity was given by the same authors in earlier work (So et al., 2000).
+The excitation probability per pulse for a fluorescent molecule at the center of the focus is calculated as (Xu and Webb, 1997):
 
-## Animal procedures
+$$
+Pr=1−exp⁡[−\frac{g_{p}^{(3)}}{\tau^{2}}\sigma_{3}(\frac{NA^{2}\pi}{\lambda_{3P}^{2}})^{3}(\frac{P_{3P}}{f})^{3}]
+$$
+
+where the definition and values of all the parameters remain the same as in the previous section. Using GCaMP6s 3PE cross section of 3 × 10−82 cm6s2, the pulse energy (i.e., $\frac{P_{3P}}{f}⋅\frac{hc}{\lambda_{3P}}$) required for 10% and 63% excitation probability per pulse is 2 nJ and 4.3 nJ, respectively. We note that these pulse energies are much smaller (by ~ 2π) than those given by Yildirim et al. (2019). This factor of 2π error in Yildirim et al. (2019) is probably due to a typo (the Planck’s constant $h$ and $ℏ$) since the correct equation for 2PE saturation intensity was given by the same authors in earlier work (So et al., 2000).
+
+### Animal procedures
 
 Chronic craniotomy was performed on mice according to the procedures described in Ouzounov et al. (2017). Windows of 5 mm diameter were centered at ~2.5 mm lateral and ~2 mm caudal from the bregma point over the somatosensory cortex. Vasculature imaging was performed on wild-type mice (8–15 weeks, male, C57BL/6J, The Jackson Laboratory) with retro-orbital injection of fluorescein dextran conjugate (10 kDa, 25 mg dissolved in 200 μl saline). Calcium imaging was performed on five different transgenic animals with GCaMP6s-labeled neurons (3 males and 2 females, 11–17 weeks, CamKII-tTA/tetO-GCaMP6s). The spontaneous calcium activity imaging was performed on awake or lightly anesthetized (0.5–1% isoflurane mixed with oxygen) animals. Thermal damage experiments were performed on wild-type mice (3 to 4 mice for each depth and power combination, for a total of 23 mice, 8–30 weeks, male, C57BL/6J, The Jackson Laboratory). All animal experimentation and housing procedures were conducted in accordance with Cornell University Institutional Animal Care and Use Committee guidance.

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03prydq77 Division of Microbial Ecology, Centre for Microbiology and Environmental Systems Science, University of Vienna Vienna Austria
+1. Division of Microbial Ecology, Centre for Microbiology and Environmental Systems Science, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 

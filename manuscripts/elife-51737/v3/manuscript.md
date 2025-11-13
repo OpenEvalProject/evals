@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Optogenetic tools have revolutionized the study of receptor-mediated processes, but such tools are lacking for RNA-controlled systems. In particular, light-activated regulatory RNAs are needed for spatiotemporal control of gene expression. To fill this gap, we used in vitro selection to isolate a novel riboswitch that selectively binds the trans isoform of a stiff-stilbene (amino- t SS)–a rapidly and reversibly photoisomerizing small molecule. Structural probing revealed that the RNA binds amino- t SS about 100-times stronger than the cis photoisoform (amino- c SS). In vitro and in vivo functional analysis showed that the riboswitch, termed Werewolf-1 (Were-1), inhibits translation of a downstream open reading frame when bound to amino- t SS. Photoisomerization of the ligand with a sub-millisecond pulse of light induced the protein expression. In contrast, amino- c SS supported protein expression, which was inhibited upon photoisomerization to amino- t SS. Reversible photoregulation of gene expression using a genetically encoded RNA will likely facilitate high-resolution spatiotemporal analysis of complex RNA processes.
+Optogenetic tools have revolutionized the study of receptor-mediated processes, but such tools are lacking for RNA-controlled systems. In particular, light-activated regulatory RNAs are needed for spatiotemporal control of gene expression. To fill this gap, we used in vitro selection to isolate a novel riboswitch that selectively binds the trans isoform of a stiff-stilbene (amino-tSS)–a rapidly and reversibly photoisomerizing small molecule. Structural probing revealed that the RNA binds amino-tSS about 100-times stronger than the cis photoisoform (amino-cSS). In vitro and in vivo functional analysis showed that the riboswitch, termed Werewolf-1 (Were-1), inhibits translation of a downstream open reading frame when bound to amino-tSS. Photoisomerization of the ligand with a sub-millisecond pulse of light induced the protein expression. In contrast, amino-cSS supported protein expression, which was inhibited upon photoisomerization to amino-tSS. Reversible photoregulation of gene expression using a genetically encoded RNA will likely facilitate high-resolution spatiotemporal analysis of complex RNA processes.
 
 ## Introduction
 
@@ -36,6 +36,44 @@ We sought to develop a synthetic riboswitch system that regulates gene expressio
 
 To isolate a new aptamer fused to a functional expression platform, we constructed an RNA pool derived from a bacterial SAM-I riboswitch (Winkler et al., 2003) by replacing its ligand-binding domain with a 45-nucleotide random sequence, partially randomizing its anti-terminator and terminator hairpins, and retaining its translation initiation sequences (Figure 1—figure supplement 1). We synthesized a photoactive ligand – a trans stiff-stilbene with an amino-terminated linker designed to maintain good cell permeability (Figure 1a). The ligand was also designed to have a narrow window for photoregulation of both isomerizations in order to keep the rest of the visible spectrum available for the potential readouts through luminescent or fluorescent reporters. Amino-tSS was characterized using UV-Vis and NMR spectroscopy to confirm photoisomerization to the cis conformation at 342 nm and back to the trans conformation at 372 nm, and to ensure that both isoforms are stable on timescales relevant to pulsed gene expression (Figure 1—figure supplement 2, Figure 1—figure supplement 3, Figure 1—figure supplement 4). The RNA pool- was selected in vitro to bind amino-tSS coupled to carboxylate agarose beads and eluted under denaturing conditions (Ellington and Szostak, 1990). We hypothesized that a pool of amino-tSS–binding aptamers would include motifs that do not bind the cis photoisoform of the ligand and that the tSS–binding conformation stabilizes the expression platform in a single state that affects either transcription or translation of a downstream open reading frame (ORF). After six rounds of in vitro selection, we cloned the pool into bacterial plasmids and tested individual sequences for amino-tSS binding by monitoring RNA–dependent changes in the fluorescence of the amino-tSS. One sequence (Figure 1c) showed markedly increased fluorescence of amino-tSS (Figure 1—figure supplement 3). This sequence, termed Werewolf-1 (Were-1) for its potential light-dependent conformational changes, was chosen for further analysis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-v3.jpg)
+
+**Figure 1.:** (a) Amino-tSS isomerizes from trans to cis conformation when exposed to 342 nm light, and back to the trans isoform at 372 nm. (b) RNase T1 probing of Were-1 structure. Right lanes contain a control with undigested RNA (ctrl), a T1-digested sequencing control (G), and a hydroxide-mediated partial digestion ladder (OH) of the RNA. The left lanes show partial T1 digestion in the presence of increasing amino-tSS at concentrations indicated above the gel image. The probing shows clear ligand-dependent changes—both increases (e.g. G53, G99, G114-117) and decreases (e.g. G 42, (G46, G77)—interspersed throughout the sequence. Below, an apparent KD of 1.1 µM was calculated based on the change in band intensity with increasing amino-tSS (dark, filled circles) for nucleotide G46, normalized to a control band (G72). Additionally, a KD of 108 µM was calculated based on the change in band intensity with increasing amino-cSS (open circles) for the same nucleotide and control (Figure 1—figure supplement 4g), suggesting high specificity for amino-tSS. An average KD value of 1.5 µM amino-tSS was calculated for changes in nucleotides G42, G46, G77, and G80. (c) Secondary structure prediction of Were-1 derived from all structural probing data in absence of the ligand (see also Figure 1—figure supplement 6, Figure 1—figure supplement 7, Figure 1—figure supplement 8, Figure 1—figure supplement 9). Partially randomized regions (light blue), the Shine-Dalgarno sequence (red), the start codon (green), and the 3' terminus sequence are derived from the B. subtilis mswA SAM-I riboswitch. The 5' part of the aptamer and the loop sequence (A98–U107) of the expression platform (pink) were selected from random regions of the starting pool (Figure 1—figure supplement 1). Outlined dark letters are positions where the selected sequence differs from the B. subtilis riboswitch expression platform. Boxed positions were mutated to the indicated nucleotides to identify regions of structural and functional importance. Black base-pairs indicate stems that do not change in the presence of amino-tSS, and asterisks (*) indicate nucleotide positions that do change in the presence of amino-tSS.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** An RNA pool was derived from B. subtilis mswA SAM-I riboswitch by replacing its ligand-binding domain with a 45-nucleotide random sequence (pink, boxed), partially randomizing (at a 15% level) its anti-terminator hairpin and the 5' half of the terminator hairpin (light blue), replacing the terminator-helix tetraloop sequence (UUAU) with a random decamer (pink), and retaining the 3' half of the terminator hairpin and its translation initiation sequences (red – Shine-Dalgarno sequence; green – start codon). The pool’s constant regions are shown in black.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (a) UV-Vis spectra of amino-tSS (red) and amino-tSS after 3 hr exposure to 342 nm (red, dashed), and amino-cSS (blue) and amino-cSS after 1.5 hr exposure to 372 nm (blue, dashed). Photo isomerization was performed in 30 mM DMSO solutions and subsequently diluted 1000 times for UV-Vis spectra measurement. (b) 1H NMR of amino-tSS, amino-cSS, and E/Z isomerization. At the photostationary state (amino-tSS exposed to 365 nm) the ratio of amino-tSS to amino-cSS is approximately 2:1 as determined by NMR.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp3-v3.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Both isoforms of the ligand are relatively stable in either solvent for the indicated times.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Fluorescence emission of 100 nM amino-tSS incubated with purified Were-1 RNA showing an increase in presence of Were-1 and suggesting RNA affinity for the target ligand. Emission spectra were collected using an excitation of 365/10 nm.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** (a) SHAPE analysis of Were-1. Left lanes show reverse transcriptase (RT) stops due to ddA (‘U’) and ddC (‘G’) incorporation for sequence reference, followed by a no-acylation RT control (ctrl) lane, and SHAPE reactions with amino-tSS at concentrations indicated above the gel image. (b) S1 digestion of Were-1. Left lanes contain a control with no RNA (ctrl), RNase T1 digestion for sequence reference, and a partial hydrolysis lane (OH). The right lanes show S1 digestion in the presence of increasing amino-tSS at concentrations indicated above the gel image. Analysis of the band intensity change at positions A44-G46 revealed an apparent KD value of 0.4 µM (below).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp7-v3.jpg)
+
+**Figure 1—figure supplement 7.:** Left lanes show RNase T1 digestion for sequence reference, and partial hydrolysis (OH). Middle lanes show Tb3+ footprinting in the presence of increasing amino-tSS at concentrations indicated above the gel image. Right lanes show control reactions with Were-1 in the presence of 30 µM controls, as labeled above the gel image. Right, a KD value of 4.8 µM was calculated based on the change in intensity with increasing amino-tSS at nucleotides A113 and U107.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp8-v3.jpg)
+
+**Figure 1—figure supplement 8.:** (a) T1 digestion controls. Left lanes contain a control with no RNA, partial hydrolysis (OH), and RNase T1 digestion for sequence reference. Right lanes indicate no ligand (0), followed by Were-1 in the presence of 30 µM controls, as labeled above the gel image. (b) In-line probing of Were-1 with 30 µM controls, as labeled above the gel image, followed by RNase T1 digestion for sequence reference, partial hydrolysis (OH), and a no ligand control (0).
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig1-figsupp9-v3.jpg)
+
+**Figure 1—figure supplement 9.:** (a) SHAPE of Were-1 in presence of control small molecules. Left lanes show RT stops for Were-1 in the presence of 30 µM amino-cSS, tDHS, tS, and SAM. Right lanes show RT stops due to ddT (‘A’), ddC (‘G’), ddG (‘C’), and ddA (‘U’) incorporation for sequence reference. (b) T1 digestion of Were-1 in the presence of increasing amino-cSS. Left lanes show undigested RNA, partial hydrolysis, and a G-specific sequencing lane. Middle lanes show Were-1 digestion in the presence of increasing amino-cSS and the right lane show amino-tSS experiments at low and high concentrations, for direct comparison of the ligand-induced structural probing. At high concentration (100 µM) amino-cSS mimics the bound profile of amino-tSS. The apparent KD calculation for cSS is shown below the gel image and in Figure 1b, revealing a KD of 108 µM.
+
 To assess the ligand-dependent structural modulation of Were-1, we performed multiple RNA structure-probing experiments, including digestions with T1 and S1 nucleases (Peng et al., 2012; Reynolds and Gottesfeld, 1985), terbium (III) footprinting (Harris et al., 2014), in-line probing (Regulski and Breaker, 2008), and selective 2' hydroxyl acylation by primer extension (SHAPE) (Wilkinson et al., 2006) using a range of amino-tSS concentrations (Figure 1b and Figure 1—figure supplement 4). The changes in the pattern of RNA probing suggested that Were-1 undergoes conformational modulation upon introduction of amino-tSS in both the sequence derived from the randomized region (the aptamer domain) and the expression platform (Figure 1b and Figure 1—figure supplement 7, Figure 1—figure supplement 8, Figure 1—figure supplement 9). Control experiments with amino-tSS analogs, such as trans-stilbene (tS), 4,4-trans-dihydroxystilbene (tDHS), and S-adenosyl methionine (SAM), showed no change in the probing patterns (Figure 1—figure supplement 7, Figure 1—figure supplement 8, Figure 1—figure supplement 9), suggesting that Were-1 is specific for amino-tSS. Analysis of the T1 probing experiments revealed a KD of 1.1 µM, based on the change in band intensity with increasing amino-tSS for nucleotide G42, normalized to a control band G72 (Figure 1b). A 108 µM KD was calculated based on the same band intensity change with increasing amino-cSS (Figure 1—figure supplement 9), revealing a 100-fold specificity for the target ligand, amino-tSS. The average amino-tSS KD derived form the T1 nuclease probing (at positions 42, 46, 77, and 80; normalized to the band intensity at position 72) was of 1.5 µM, whereas the nuclease S1 probing revealed a KD of 0.4 µM (based on band intensity change for positions A44-G46), and the terbium (III) footprinting yielded a somewhat higher apparent KD of 4.8 µM (calculated based on the change in intensity at positions A113 and U107, normalized to G134 control band; Figure 1—figure supplement 7).
 
 To establish the location of the amino-tSS aptamer domain, we modeled the secondary structure of Were-1 based on the probing data and created mutants hypothesized to affect ligand binding affinity or RNA structural stability (Figure 1c), and tested them in vitro and in vivo. The secondary structure modeling did not support a conformation containing a Rho-independent transcriptional terminator, in part because the selected sequence contained two mutations (C90A and U92A), which are predicted to disrupt the stability of a full-length transcription-terminating helix (Figure 1c). The structure-probing experiments (Figure 1b and Figure 1—figure supplement 6, Figure 1—figure supplement 7, Figure 1—figure supplement 8, Figure 1—figure supplement 9) supported a secondary structure consisting of four helical segments. Ligand-dependent changes mapped primarily to the loops of the molecule, suggesting that it does not undergo rearrangement in secondary structure upon amino-tSS binding. Instead, the structure probing experiments suggest that the loops either contact the ligand directly or make tertiary contacts to form its binding pocket.
@@ -43,6 +81,30 @@ To establish the location of the amino-tSS aptamer domain, we modeled the second
 To test whether Were-1 can directly couple light-induced states of the ligand to the activity of the expression platform in vitro, the aptamer was tested for amino-tSS–dependent conformational changes using a strand-displacement assay that mimics mRNA binding by the bacterial ribosome (Martini et al., 2016; Zhang and Winfree, 2009; Martini et al., 2015). We designed a DNA duplex in which the longer strand has a toehold sequence corresponding to the reverse complement of the Shine-Dalgarno sequence of Were-1 (Supplementary file 1 - Supplementary Table 1) and a fluorophore to assess whether the shorter DNA strand, containing a quencher chromophore, is displaced through RNA:DNA hybridization with Were-1 (Figure 2—figure supplement 1a). Polyacrylamide gel electrophoresis (PAGE)-purified Were-1 bound the toehold readily, but the strand displacement was diminished in the presence of amino-tSS (Figure 2—figure supplement 1b). Testing the toehold binding at various concentrations of amino-tSS revealed a dose dependence with a half–maximal inhibition of toehold binding at ~6 µM (Figure 2—figure supplement 1c).
 
 We next asked whether the ribosome mimic binds this RNA during in vitro transcription (Figure 2a and Figure 2—figure supplement 2). In the absence of the ligand, the RNA bound the toehold efficiently, showing a robust increase of fluorescence immediately after transcription initiation. In contrast, the addition of high concentration (14.8 µM) of amino-tSS strongly abrogated new binding of the toehold, as revealed by almost a full reduction in the slope of the fluorescence expansion curve (Figure 2b). Intermediate concentrations of amino-tSS were tested to assess RNA binding and specificity, yielding a ligand-dependent response with a half-maximum of ~4 µM amino-tSS (Figure 2c).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig2-v3.jpg)
+
+**Figure 2.:** (a) Schematic of co-transcriptional binding of Were-1 RNA to amino-tSS in the presence of a toehold-reporter complex. In absence of amino-tSS, the transcribed RNA exposes the ribosomal binding site (RBS), enabling binding of the complementary region of the toehold reporter, displacing the quencher strand, and producing a fluorescence signal. In presence of amino-tSS, the RNA binds the ligand, sequestering the RBS and preventing displacement of the quencher strand. (b) Co-transcriptional response of Were-1 to different concentrations of amino-tSS using the toehold reporter. Initial transcriptions of Were-1 without ligand show identical increase in toehold fluorescence for all samples. When amino-tSS is added (arrow), a dose-dependent decrease in fluorescence is observed. (c) Response (± SEM; n = 81) of Were-1 (black, open circles), and its variants (red) C89G (triangles), C91G (squares), G69C (half-shaded diamonds), and G69C/C84G (open diamonds), in the presence of amino-tSS shows a shift in dose-dependence for single mutations, particularly G69C, and partial recovery of activity for the G69C/C84G double mutant. Were-1 shows no response in the presence of amino-cSS (black circles), trans-stilbene (tS, green, open circles) and trans-4,4-dihydroxystilbene (tDHS, blue, open circles). Structures of tDHS and tS are shown below the graph. (d) Schematic of amino-tSS-dependent inhibition of protein expression in vitro using a Were-1-firefly luciferase (Were-1-Fluc) construct. In absence of the ligand, the RBS is exposed and luciferase is translated, whereas in presence of amino-tSS, the RBS is sequestered, abrogating Fluc expression. (e) In vitro translation of the Were-1-Fluc construct. Robust luminescence is observed when no ligand is present, but the signal is significantly lower in presence of amino-tSS. (f) Response (± SEM; n = 58) of the Were-1–regulated protein expression to amino-tSS. (g) Schematic of the Were-1-Fluc construct incorporated into a bacterial plasmid. (h) Were-1–controlled Fluc gene expression in E. coli. Bioluminescence is observed in absence of amino-tSS, and progressively diminished with increasing amino-tSS. (i) Expression of Were-1-Fluc (± SEM; n = 257) in vivo (black, open circles), and its variants (red) C89G (triangles), C91G (squares), and G69C/C84G (open diamonds), in the presence of amino-tSS, show a dose-dependent response. Were-1 mutant G69C (half-shaded diamond) and Were-1 in the presence of amino-cSS (black circles), trans-stilbene (green, open circles) and trans-4,4-dihydroxystilbene (blue, open circles) showed no change in bioluminescence, whereas the G69C/C84G double mutant shows restoration of activity similar to wild-type levels. Note, dose-response graphs (c, f, i) are on a log-log scale. The apparent amino-tSS IC50s are 3.9 ± 0.2, 2.5 ± 1.0, and 5.3 ± 1.1 µM for the toehold (c), in vitro translation (f), and in vivo expression (i), respectively. Dashed lines correspond to the 95% confidence interval of the binding model.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Schematic of strand displacement, where a DNA duplex containing a toehold complementary to the Shine-Dalgarno sequence of Were-1 is displaced when no amino-tSS is present, producing a fluorescence. (b) The presence of amino-tSS prevents the quencher strand release, suppressing toehold fluorescence (± SD) over time. Control reactions were performed using the unquenched fluorophore oligo (green) and the quenched toehold oligo (red) for fully quenched fluorescence to provide a window for maximum fluorescence, and a tRNA (blue) lacking the Shine-Dalgarno sequence as a negative control. (c) Dose-response curve of PAGE-purified Were-1 RNA in the presence of increasing concentrations of amino-tSS and analyzed by the toehold-fluorescence assay. Half maximum fluorescence is observed at 6.3 µM amino-tSS.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Whereas the rate of transcription increases with magnesium (black), the bound state (gray) does not change significantly, suggesting that co-transcriptional binding is minimally affected by magnesium concentration.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** A minor dose-response is observed in the presence of increasing tSS concentrations, but full inhibition, as seen for amino-tSS, is not observed, possibly due to low solubility of tSS.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** There is no significant difference in Luc2-pET luminescence (± SD) in the presence and absence of amino-tSS, suggesting that amino-tSS does not inhibit the in vitro translation system.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** Comparison of luciferase expression (± SEM) of Were-1-Fluc wild-type (wt; red) and Were-1-Fluc containing an AUG start codon (Were-1-Fluc AUG mutant; blue), in place of the pool-derived UUG minor start codon, with increasing amino-tSS concentrations. Bioluminescence was overall higher in the Were-1-Fluc AUG mutants for all conditions but retained the wt dose-dependent response.
 
 Probing-derived secondary structure modeling of Were-1 suggested formation of a ligand-insensitive hairpin (positions 69–84). To confirm the presence of this structural element, we created a variant containing a single mutation (G69C), that was predicted to disrupt the stem, and a presumed compensatory mutant (G69C/C84G) (Figure 1c). The G69C variant showed diminished response to amino-tSS, whereas the G69C/C84G double-mutant exhibited partially restored activity, suggesting that these two positions are indeed part of a helix. Other variants, C89G and C91G, designed based on parts of the sequence that showed amino-tSS–dependent changes in the structure-probing experiments, both showed decreased sensitivity to the ligand, suggesting that they are essential for ligand binding. Furthermore, when testing toehold binding using the purified cis isoform of the stiff stilbene (amino-cSS), as well as other stilbenes, such as tS, tDHS, and trans stiff stilbene (tSS; Were-1 ligand lacking the aminolated linker), no significant changes in fluorescence were observed (Figure 2c and Figure 2—figure supplement 3). These results demonstrate that amino-tSS stabilizes the RNA in an ‘OFF’ (ribosome-inaccessible) conformation in a dose-dependent manner and with high ligand specificity.
 
@@ -58,6 +120,26 @@ To study the system further, we used the Were-1-luciferase construct and the pur
 
 Finally, we used E. coli containing the Were-1-Fluc construct to determine whether gene expression can be regulated with a pulse of light. As shown in Figure 2i, bioluminescence was greatly diminished in the presence of amino-tSS. Upon exposing the bacteria to 342 nm light, we saw a modest increase in bioluminescence, relative to the unexposed control samples (Figure 3a and b, Figure 3—figure supplement 3), suggesting that upon photoisomerization of amino-tSS to the cis isoform with a pulse of light, Were-1 changed its conformation to expose its RBS and support luciferase production. Given that photoisomerization of stiff stilbenes from trans to cis is not quantitative (meaning, only about 40% of the ligand is photoisomerized; see Figure 1—figure supplement 2b), the trend in protein expression at individual amino-tSS concentrations can be rationalized in the following way: at low ligand concentrations, translation is weakly inhibited and photoisomerization has little impact on the rate of protein synthesis; at intermediate ligand concentrations (near the IC50 concentration, that is, at the most concentration-sensitive segment of the ligand-response curve) photoisomerization leads to a change in amino-tSS concentration that results in the biggest change in translation initiation; and, at high ligand concentrations, photoisomerization results in little derepression of translation initiation because enough amino-tSS remains to continue inhibiting protein synthesis. Thus the incomplete photoisomerization of the stiff stilbene results in the bell-shaped ligand dependence upon light exposure. Additionally, in another experiment, we excited cells with a different wavelength of light (500 nm) that should not impact the isomerization of the ligand (Figure 3—figure supplement 3). Both controls showed lower bioluminescence compared to the 342 nm–excited samples, suggesting that the increased protein expression was due to derepression of translation initiation upon photoisomerization of amino-tSS to amino-cSS, although the amplitude of the effect is variable, perhaps due to variability of Were-1–regulated protein expression at different cell densities.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig3-v3.jpg)
+
+**Figure 3.:** (a) Normalized amino-tSS–dependent bioluminescence (± SEM) of the Were-1-Fluc construct after 1 ms exposure of 342 ± 5 nm light (Φq = 1.4*10−2 W/cm2). The largest change in expression was observed in the presence of 10 µM amino-tSS. Inset shows the light–dependent bioluminescence of the bacterial cultures at 10 µM ligand. (b) Were-1 regulation of luciferase expression (± SEM) in vivo at various exposure times in presence of 10 µM amino-tSS. (c) Normalized bioluminescence of the Were-1-Fluc E. coli incubated with amino-cSS after 1 s exposure of 390 ± 9 nm light (Φq = 5.5*10−2 W/cm2) showing progressively lower protein expression at higher amino-cSS concentrations, presumably due to higher production of amino-tSS after photoisomerization. (d) Change of Fluc expression after photoisomerization of 15 µM amino-cSS at 390 ± 9 nm for various exposure times, showing largest photoswitching at 1 ms exposure. (e) Regulation of luciferase expression (± SEM) by the Were-1-Fluc construct before exposure, after a 1 ms pulse of 342 ± 5 nm light (black arrow), which resulted in increased bioluminescence (black and gray circles) compared to control (empty circles). Samples exposed to 0.5 ms of 390 ± 9 nm light (gray arrow) showed gradual inhibition of new protein production (gray) compared to samples that were only exposed to 342 nm (black).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Initial transcription of Were-1 without ligand was induced by adding ribonucleoside triphosphates (rNTPs) to a transcription mix, producing robust toehold fluorescence increase (see Figure 2b for examples of co-transcriptional toehold binding). Upon adding 11 µM amino-tSS (arrow), fluorescence growth decreased, suggesting that Were-1 is bound to the ligand and prevents toehold binding. The sample was then exposed to 342 nm (Φq = 6.8*10−5 W/cm2) for 60 s (indicated by '342 nm' under the graph), causing photoisomerization of the ligand, and resulting in increased toehold fluorescence slope. Were-1 transcription reaction was subsequently exposed to 372 nm light (Φq = 1*10−4 W/cm2) for 60 s, to switch the ligand from cis to trans conformation, which resulted in decrease of toehold fluorescence slope. This was repeated two more times, as indicated, until the transcription reaction plateaued, and all toehold was expended. The data suggest that the system can be regulated multiple times in one reaction. Error bars represent fluorescence slope error. (b) Kinetics of co-transcriptional toehold fluorescence after irradiation with short pulses of 342 ± 10 nm light (Φq = 1.4*10−2 W/cm2) with exposure lengths indicated to the right of the graph. Experiments with 10 (red hues) and 15 µM (blue hues) amino-tSS are shown. Error bars indicate average deviation of two experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** In vitro transcription-translation reaction of Were-1-Fluc mRNA in presence of amino-tSS (left column) was irradiated at 342 nm for 60 s (Φq = 6.8*10−5 W/cm2), resulting in an increase in luciferase production (± SEM). The reaction was then irradiated at 372 nm for 60 s (Φq = 1*10−4 W/cm2), resulting in a decrease in luciferase expression rate (± SEM; Φq = 1*10−4 W/cm2) over time.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Were-1 E. coli bioluminescence (± SEM) was measured in the presence of amino-tSS. Initial Fluc expression showed identical increases in bioluminescence for all samples. In the presence of 15 µM amino-tSS, samples were either exposed to (arrow) 342 nm light (blue) to isomerize amino-tSS, or 500 nm (green), a wavelength that does not affect amino-tSS isomerization. 342 nm–exposed samples showed significantly higher bioluminescence compared to those exposed to 500 nm light.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** Luciferase expression (± SEM) by the Were-1-Fluc G69C mutant, showing no significant change in expression after exposure to 342 nm (black, second and third bar), or 342 nm followed by 390 nm (second and third gray bar, respectively) compared to unexposed controls (clear).
+
 To further analyze the system, we tested the temporal dependence of Were-1–regulated Fluc production by exposing an amino-tSS–containing bacterial culture to 342 nm light for various lengths of time. Relative to unexposed controls at the same ligand concentration, the highest luciferase expression was seen at an exposure time of 500 µs (Figure 3b). The origin of the decrease in protein expression induction at longer exposures is currently unknown. E. coli viability begins to decrease above ~0.1 J/cm2 (at 325 nm light exposure, increasing to ~1 J/cm2 at 390 nm) (Vermeulen et al., 2008) and our photon flux was 0.014 and 0.055 W/cm2 for the 342 nm and 390 wavelengths of light, respectively. This means that at exposures above ~10 s, the photon flux in our experiments would begin to affect the cell viability. Our experiments were performed at UV exposures well below lethal doses at these wavelengths, even at the longest exposure times; therefore, we do not expect DNA or RNA damage to cause the exposure dependence shown in Figure 3b. We confirmed the cell viability using cells expressing the Were-1-Fluc construct in absence of amino-tSS, showing insensitivity to the UV even at multi-second exposures; therefore, the decrease of protein expression at longer exposures likely results from a cellular activity of the amino-tSS that is likely unrelated to the Were-1 riboswitch activity. Nonetheless, Were-1–regulated induction of protein expression using submilisecond pulses of light represents a significant advance in the RNA optogenetics field, even if the amplitude of the responses is rather modest.
 
 When testing the same system using amino-cSS, bioluminescence decreased in a dose-dependent manner with increasing amino-cSS concentration after exposure to 390 nm light (Figure 3c). This result strongly suggests that by isomerizing amino-cSS to its trans isoform with a pulse of light, Were-1 was able to sequester its RBS to inhibit luciferase production. Here, higher amino-cSS concentrations resulted in greater inhibition of translation, in line with the proportional conversion of amino-cSS to amino-tSS (Figure 3c). Testing the temporal response of Were-1–regulated Fluc expression in the presence of amino-cSS revealed that Were-1 again regulates protein expression optimally at short exposures, showing the highest inhibition at a millisecond of light exposure (Figure 3d). Based on the isomerization data (Figure 1—figure supplement 2, Figure 1—figure supplement 3, Figure 1—figure supplement 4), the long-exposure effect is likely due to the ligand reaching a semi-photostationary state combined with an unknown effect on the ligand observed for the longer exposures of the trans isoform. No difference in cell density was observed among the experiments, implying that neither the ligand, nor the light pulses affect the bacterial growth, and again suggesting negligible photo-damage to the cells.
@@ -72,19 +154,90 @@ We show that novel riboswitches, regulated by synthetic ligands, can be evolved 
 
 ## Materials and methods
 
-## Reagents and equipment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0016</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBV-Luc-c36 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>IPTG inducible Were-1–controlled firefly luciferase gene with T7 RNA polymerase promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBV-Luc (plasmid)</td>
+      <td>Adgene</td>
+      <td>RRID: Addgene_16539</td>
+      <td>Parent plasmid for Were-1 construct</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amino-tSS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Were-1 ligand, trans isoform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amino-cSS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cis isoform of the Were-1 ligand</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tSS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Were-1 ligand, trans isoform lacking a linker</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 139939</td>
+      <td>Trans stilbene</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tDHS</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>CAS 659-22-3</td>
+      <td>4,4-trans-dihydroxystilbene</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents and equipment
 
 Unless otherwise stated, all reagents were purchased from Sigma-Aldrich. (E)−6'-(2-aminoethoxy)−2,2',3,3' tetrahydro-[1,1'-biindenylidene]−6-ol (amino-tSS) was synthesized and prepared as described below. Commercially available reagents were used without further purification. Absorbance spectra were recorded with a Thermo Scientific NanoDrop 1000 spectrophotometer. Fluorescence excitation and emission spectra were measured with a Varian Cary Eclipse fluorescence spectrometer, unless otherwise specified. Bioluminescence was measured using an Andor 866 EMCDD camera, BioTek Synergy H1 plate reader, or IVIS Lumina II.
 
-## Synthesis of (E)−6'-(2-aminoethoxy)−2,2',3,3' tetrahydro-[1,1'-biindenylidene]−6-ol
+### Synthesis of (E)−6'-(2-aminoethoxy)−2,2',3,3' tetrahydro-[1,1'-biindenylidene]−6-ol
 
 All starting reagents were commercially available, and of analytical purity, and were used without further treatment. Solvents were dried according to standard methods. 1H and spectra were recorded on Varian UNITY INOVA-300 and Bruker Avance-600 instruments. Chemical shifts (δ) are reported in ppm relative to residual solvent peak (DMSO: δH = 2.50 ppm) as internal standard. Accurate mass measurements (HRMS) were obtained by ESI on an Agilent 6530 Q-TOF MS spectrometer. Analytical TLC was performed using a precoated silica gel 60 Å F254 plates (0.2 mm thickness) visualized with UV at 254 nm. Preparative column chromatography was carried out using silica gel 60 Å (particle size 0.063–0.200 mm). Purifications by HPLC were performed under the following conditions: Agilent ZORBAX SB-C18 column (5 µL, 9.4 × 150 mm); UV/Vis detection at λobs = 254 nm; flow rate 4 mL/min; gradient elution method H2O (0.1% TFA) – CH3CN (0.1% TFA) from 95:5 to 0:100 in 20 min. Purity of compounds was confirmed using Agilent eclipse plus C18 column (3.5 µL, 4.6 × 100 mm); UV/Vis detection at λobs = 254 nm; flow rate 0.5 mL/min; gradient elution method H2O (0.1% TFA) – CH3CN (0.1% TFA) from 95:5 to 0:100 in 20 min.
 
-## Synthesis details
+### Synthesis details
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig4-v3.jpg)
-
-**Scheme 1.:** , tSSamino-, and tSSamino-.cSS
 
 ![Chemical structure 1.](https://cdn.elifesciences.org/articles/51737/elife-51737-fig5-v3.jpg)
 
@@ -98,25 +251,25 @@ A mixture of tSS (125 mg, 0.47 mmol), 2-(Boc-amino)ethyl bromide (106 mg, 
 
 A solution of amino-tSS (15 mg, 35.6 μmol) in DMSO (1 ml) in NMR cuvette was irradiated with handheld UV lamp (8 W) for 15 min. The resulting mixture of amino-tSS and amino-cSS was purified by HPLC (gradient elution method H2O (0.1% TFA) – CH3CN (0.1% TFA) from 95:5 to 0:100) to afford amino-cSS (as a TFA salt) in 20% yield (2 mg) as an off-white solid. 1H NMR (400 MHz, DMSO-d6): δ 2.75 (m, 4H), 2.85 (m, 4H), 3.22 (t, J = 5.1 Hz, 2H), 4.13 (t, J = 5.1 Hz, 2H), 6.63 (dd, J = 8.2, 2.2 Hz, 1H), 6.84 (dd, J = 8.2, 2.2 Hz, 1H), 7.12 (d, J = 8.2 Hz, 1H), 7.25 (d, J = 8.3 Hz, 1H), 7.40 (d, J = 2.0 Hz, 1H), 7.53 (d, J = 2.0 Hz, 1H), 8.02 (s, 3H), 9.25 (s, 1H). 13C NMR (100 MHz, DMSO-d6): δ 29.2, 29.3, 34.9, 35.0, 38.5, 64.4, 108.9, 109.4, 114.5, 115.2, 125.8, 125.9, 134.4, 135.7, 138.6, 140.79, 140.84, 141.1, 155.46, 156.1. HRMS (ESI): m/z [M+H]+ calcd for C20H21NO2 308.1645; found: 308.1644.
 
-## In vitro RNA transcription
+### In vitro RNA transcription
 
 RNA was transcribed at 37 °C for one hour in a 50 μL volume containing 40 mM tris-HCl, 6 mM dithiothreitol (DTT), 2 mM spermidine, 1.25 mM each rNTP, 8 mM MgCl2, 1 unit of T7 RNA polymerase, and 5 pmol of DNA template. The transcripts were purified by 10% PAGE under denaturing conditions (7 M urea). RNA was eluted from the gel into 300 μL of 300 mM KCl and precipitated by adding 700 μL of 95% ethanol at –20°C.
 
-## In vitro selection of amino-tSS aptamers
+### In vitro selection of amino-tSS aptamers
 
 An RNA pool derived from a B. subtilis mswA SAM-1 riboswitch, located in the 5’ untranslated region of the metI (cystathionine gamma-synthase, also denoted as yjcI) gene (Winkler et al., 2003; Grundy and Henkin, 1998) was designed by replacing the riboswitch ligand-binding domain with a random region of 45 nucleotides. The anti-terminator stem and upstream half of the transcriptional terminator sequence were partially randomized at a 15% level, and the loop of the terminator stem was fully randomized. The remaining part of the riboswitch, including the downstream half of the transcriptional terminator stem, containing a ribosome binding site (RBS) that binds the 3' end of B. subtilis 16S rRNA (3'-UUUCCUCCACUAG-5') (Band and Henner, 1984) and an alternative UUG start codon, was retained (Figure 1—figure supplement 1). The pool was synthesized by Yale School of Medicine’s Keck Oligonucleotide Synthesis facility as a single template strand that was then purified by 10% PAGE and converted into dsDNA by a primer-extension reaction using a primer corresponding to the T7 RNA polymerase promoter. The pool was transcribed at an estimated sequence diversity of 1015.
 
-## From that pool, RNAs were selected to bind amino-tSS, as follows
+### From that pool, RNAs were selected to bind amino-tSS, as follows
 
 PAGE-purified 32P-labeled RNA transcripts of the pool were precipitated, dried, and resuspended in a solution containing 140 mM KCl, 10 mM NaCl, 10 mM tris-chloride, pH 7.5, and 5 mM MgCl2 (binding buffer). The RNA mixture was heated to 70°C for three minutes and loaded onto agarose beads for a counter-selection step. Binders were discarded and the flow-through was incubated on agarose beads linked to amino-tSS. The beads were shaken for five minutes at room temperature, and the unbound RNA was collected. Amino-tSS beads were then washed with binding buffer for five minutes at room temperature. This washing step was repeated six times. Potential aptamers were then eluted twice with denaturing buffer, consisting of 7 M urea and 5 mM ethylenediaminetetraacetic acid (EDTA) in 45 mM tris, 45 mM borate buffer, pH 8, and heated at 95°C for five minutes. Each fraction was analyzed for radioactivity using a liquid scintillation counter. Elutions were pooled, precipitated, dried, and resuspended in water for reverse transcription. The pool was reverse transcribed, and the cDNA was amplified by PCR and used for the next round of selection.
 
-## Screening of potential amino-tSS binders
+### Screening of potential amino-tSS binders
 
 After six rounds of in vitro selection, the selected pool was cloned into a TOPO TA plasmid (Invitrogen) and transformed into DH5α E. coli cells. Cells were plated on agar containing kanamycin and incubated overnight at 37 °C. Individual colonies were picked from the master plate and inoculated overnight in Luria Broth containing kanamycin. Plasmids were extracted and purified using a Miniprep Kit (QIAGEN), and sequenced (GENEWIZ). Individual clones were PCR-amplified using the library-specific primers and transcribed to test their optical activity in the presence and absence of amino-tSS. tSS emission spectra were collected using an excitation at 355 nm. Were-1 showed the highest increase in amino-tSS fluorescence at 430 nm and was chosen for further analysis.
 
-## Structure probing of Were-1
+### Structure probing of Were-1
 
-## T1 nuclease probing
+#### T1 nuclease probing
 
 Were-1 RNA was dephosphorylated in a solution of the reaction buffer (50 mM potassium acetate, 20 mM Tris-acetate, 10 mM magnesium acetate, 100 µg/ml BSA, pH 7.9), 1 μg of purified RNA, and 1.5 unit of Shrimp Alkaline Phosphatase (NEB). The reaction was incubated at 37°C for 30 min, and heat-inactivated at 65°C for 5 min.
 
@@ -126,70 +279,74 @@ The 5′–labeled Were-1 RNA was added into binding buffer and the indicated co
 
 A guanosine-specific sequencing lane was resolved in parallel to all samples using 5′–labeled or 3′–labeled RNA (8000 cpm), as specified, in T1 digestion buffer (250 mM sodium citrate, pH 7) and 0.5 units T1. Reactions were incubated at 55°C for 5 min and quenched with a solution containing 7 M urea and 10 mM EDTA. RNA was extracted using phenol-chloroform, as noted above. Partial alkaline hydrolysis was also resolved in parallel by adding 5′–labeled or 3′–labeled RNA (8000 cpm), as specified, into a hydrolysis buffer (50 mM NaHCO3, 1 mM EDTA, pH 10). Reactions were incubated at 95°C for 10 min and quenched in a solution containing 7 M Urea and 10 mM EDTA. RNA was extracted using phenol-chloroform.
 
-## Shape
+#### Shape
 
 A selective 2'-hydroxyl acylation and primer extension (SHAPE) reaction, as described (Spitale et al., 2013), was carried out on Were-1 in the presence of increasing amino-tSS concentrations and 30 µM controls (amino-cSS, tDHS, tS, and SAM).
 
-## S1 nuclease probing
+#### S1 nuclease probing
 
 Reactions were prepared by adding 3′–labeled Were-1 RNA (8000 cpm) into S1 nuclease buffer (40 mM sodium acetate, pH 4.5, 300 mM NaCl, and 2 mM ZnSO4), and the indicated concentrations of amino-tSS, and were incubated at 55°C for 5 min and subsequently cooled at room temperature for 5 min. Next, S1 nuclease was added (0.2 units; Thermo Fisher Scientific) and samples were incubated at 37°C for 10 min and quenched in a solution of 7 M Urea and 10 mM EDTA. Samples were extracted using phenol-chloroform and resolved on a denaturing 10% PAGE gel. The gel was then exposed to a phosphor image screen and scanned on a GE Typhoon phosphor imager. The sequences in the degradation pattern were assigned by running T1 digestion and partial alkaline hydrolysis in parallel lanes, as noted above.
 
-## Terbium (III) footprinting
+#### Terbium (III) footprinting
 
 Reactions were prepared by adding 5′–labeled Were-1 RNA (8000 cpm) into the binding buffer, and the indicated concentrations of amino-tSS or controls (no ligand, amino-cSS, tS, tDHS, and SAM), and were incubated at 55°C for 5 min and subsequently cooled at room temperature for 5 min. Terbium (III) chloride was added to a final concentration of 10 mM and samples were incubated at 37°C for 30 min and then quenched with a solution of 7 M urea and 10 mM diethylenetriaminepentaacetic acid (DTPA). Were-1 RNA was extracted using phenol-chloroform, as noted above, and samples were fractionated on a denaturing 10% PAGE gel. The gel was exposed to a phosphor image screen (GE Healthcare) and scanned on a GE Typhoon phosphor imager. The sequences in the degradation pattern were assigned by running TI digestion and partial alkaline hydrolysis in parallel lanes, as noted above.
 
-## In–line probing
+#### In–line probing
 
 Reactions were prepared by adding 3′–labeled RNA (8000 cpm) into the binding buffer, pH 8.5, and the indicated concentrations of controls (no ligand, cSS, tS, tDHS, and SAM). Samples were initially incubated at 55°C for 5 min and then cooled at room temperature for 5 min, and then incubated at 37°C for 20 hr. All conditions were quenched in a solution of 7 M Urea and 10 mM EDTA. Were-1 RNA was extracted using phenol-chloroform, as noted above, and run on a denaturing 10% PAGE gel. The gel was exposed to a phosphor image screen (GE Healthcare), and scanned on a GE Typhoon phosphor imager. The sequences in the degradation pattern were assigned by running T1 digestion and alkaline hydrolysis in parallel lanes, as noted above.
 
 All gels were analyzed in ImageJ. Structure predictions of Were-1 in the absence of amino-tSS were performed using RNAfold of the Vienna RNA package (Lorenz et al., 2011; Figure 1c).
 
-## In vitro strand displacement reaction
+### In vitro strand displacement reaction
 
 A dsDNA reporter was designed to contain a toehold that complements the Shine-Dalgarno sequence of the riboswitch, in which the longer (toehold) strand (Rep F) contained the 3' toehold sequence, a reverse complement of the Shine-Dalgarno sequence, as well as a 5' fluorescein. The shorter strand (Rep Q) contained a 3' Iowa black quencher (Supplementary file 1 - Supplementary Table 1). A solution of 2:1 Rep Q:Rep F oligos in binding buffer was incubated at 95°C for 1 min, followed by 25°C for 5 min, to anneal the strands and form the dsDNA reporter construct.
 
 In a Falcon 384-well Optilux Flat Bottom plate, strand displacement was initiated by adding 100 nM of purified Were-1 RNA to 50 nM of toehold-fluorophore reporter. Amino-tSS was quickly added to some samples to test for ligand-dependent displacement. Fluorescence emission was recorded in a BioTek Synergy plate reader over a 45 min period under continuous illumination using the following parameters: excitation wavelength, 485 nm; emission wavelength, 520 nm.
 
-## In vitro cotranscriptional toehold-binding kinetics of Were-1
+### In vitro cotranscriptional toehold-binding kinetics of Were-1
 
 In vitro transcription was performed similarly to the above–described RNA transcription assay with the following modifications: 3 pmol template DNA and 50 nM toehold-fluorophore reporter were used. A 30 μL transcription reaction was initiated by the addition of 4 mM rNTP mix (containing 1 mM of each rNTP) and fluorescence emission of the toehold-fluorophore reporter was recorded in a Varian Cary Eclipse fluorimeter under continuous illumination at 37°C using the following parameters: excitation wavelength, 485 nm; emission wavelength, 520 nm; increment of data point collection, 0.01 s; slit widths, 10 nm. These conditions were used for the entire experiment unless stated otherwise. After an initial fluorescence increase, corresponding to the initial burst of transcription, amino-tSS was rapidly added to the solution and fluorescence emission was recorded for 200 s. To switch amino-tSS to the cis isoform (amino-cSS), the solution was excited at 342 nm (slit width, 2.5 nm; Φq = 6.8*10−5 W/cm2) for 60 s. Fluorescence emission of the toehold-fluorophore reporter was again recorded for 200 s. To switch the cis isoform back to the trans state, the solution was excited at 372 nm (slit width, 2.5 nm; Φq = 10*10−5 W/cm2) for 60 s. Again, fluorescence emission of the toehold-fluorophore reporter was recorded for 200 s. This process was repeated two to three more times until fluorescence plateaued.
 
-## IC50 measurements
+### IC50 measurements
 
-A dose-response of the Were-1 riboswitch to the target ligand (amino-tSS) was assessed by measuring fluorescence as a function of ligand concentration in the presence of a toehold-fluorophore reporter construct (50 nM). Fluorescence emission was recorded under continuous illumination at 37°C using the following parameters: excitation wavelength, 485 nm; emission wavelength, 520 nm; increment of data point collection, 0.01 s; slit widths, 10 nm. The apparent rate constants were measured and plotted against the amino-tSS concentrations (or other ligands, as specified). The data were normalized to the no-amino-tSS control. The IC50 was extracted from fitting a curve to the graph using the equation:Normalized fluorescence =1- [ligand][ligand] + IC50
+A dose-response of the Were-1 riboswitch to the target ligand (amino-tSS) was assessed by measuring fluorescence as a function of ligand concentration in the presence of a toehold-fluorophore reporter construct (50 nM). Fluorescence emission was recorded under continuous illumination at 37°C using the following parameters: excitation wavelength, 485 nm; emission wavelength, 520 nm; increment of data point collection, 0.01 s; slit widths, 10 nm. The apparent rate constants were measured and plotted against the amino-tSS concentrations (or other ligands, as specified). The data were normalized to the no-amino-tSS control. The IC50 was extracted from fitting a curve to the graph using the equation:
 
-## In vitro co–transcriptional magnesium dependence of Were-1 toehold-binding
+$$
+Normalized fluorescence =1-\frac{[ligand]}{[ligand] + IC50}
+$$
+
+### In vitro co–transcriptional magnesium dependence of Were-1 toehold-binding
 
 Using the same conditions as above, the fluorescence response of toehold-binding to the Were-1 riboswitch in the presence of 8.4 µM amino-tSS under various Mg2+ concentrations was measured. Fluorescence emission was recorded under continuous illumination at 37°C on a BioTek Synergy H1 plate reader.
 
-## Cloning the Were-1 riboswitch for expression in E. coli cells
+### Cloning the Were-1 riboswitch for expression in E. coli cells
 
 Were-1 DNA was cloned into the pBV-Luc (Addgene) vector in order to obtain a fused riboswitch-firefly luciferase (Fluc) reporter construct. The PCR primers were designed to add a 5' EcoRI site to the template Were-1 DNA upstream of the T7 promoter and a 3' overhang containing 35 nucleotides of the Fluc gene directly downstream of its start codon to replace the Fluc start codon sequence. Both the PCR product and plasmid were digested by EcoRI HF and KasI (New England BioLabs) and purified. The purified construct was then inserted at the 5' end of the Fluc coding sequence with T4 DNA ligase (New England BioLabs). The resulting vector was termed Were-1-Fluc (Supplementary file 1).
 
 Were-1-Fluc was transformed into DH5α E. coli cells and grown overnight on agar plates containing ampicillin at 37°C. Ten colonies were picked from a master plate and individual clones were inoculated overnight in Luria Broth containing ampicillin. Plasmids were purified using a Miniprep Kit (QIAGEN) and individually sequenced (GENEWIZ). Correct constructs were transcribed in vitro and fractionated on an agarose gel to confirm sequencing results by measuring the size of the fused construct. Using the same procedure as above, one clone was analyzed in an in vitro co-transcriptional toehold-binding experiment to test whether the new fused construct was able to function similarly to the stand-alone riboswitch.
 
-## In vitro transcription and translation kinetics
+### In vitro transcription and translation kinetics
 
 The PURExpress in vitro protein synthesis kit (New England BioLabs) was used to transcribe and translate Were-1-Fluc. Experiments were performed similarly to the kit assay conditions with the following modifications: 200 ng/µL DNA, 100 µM D-luciferin, and 2 mM MgCl2. Amino-tSS (or other ligands, as specified) was added in conditions when specified. A control plasmid, pET-Luc2, was also tested in the presence and absence of 11 µM amino-tSS. All luminescence data were acquired using an ANDOR camera (EMCCD) at 25°C and analyzed using Solis software, and images were further processed and analyzed using ImageJ.
 
 To test whether Were-1 could regulate luciferase protein expression, samples were prepared under identical conditions and luminescence was measured for approximately 40 mins. Samples were then excited at 342 nm (Φq = 1.4*10−2 W/cm2) for 1 s, and luminescence was recorded for approximately 30 mins. Samples were excited at 390 nm (Φq = 5.5*10−2 W/cm2) for 1 s to switch Were-1 back to the bound ‘off’ state, and again, luminescence was measured for approximately 30 mins.
 
-## IC50 measurements
+### IC50 measurements
 
 A dose-response of the Were-1 riboswitch to amino-tSS was assessed by measuring luminescence as a function of increasing target concentration. All data were acquired using an ANDOR camera and analyzed with Solis software, and images were further processed and analyzed using ImageJ, as described above.
 
-## In vivo translation kinetics
+### In vivo translation kinetics
 
 Were-1-Fluc was transformed into BL21(DE3) E. coli cells and grown overnight in Luria Broth containing ampicillin (OD600 = 0.26). 1 mM IPTG was added to each well (containing 45 µL culture) to induce T7 RNA polymerase-driven expression and 100 µM D-luciferin to provide a substrate for Fluc. Amino-tSS or amino-cSS was also added where specified. Bioluminescence was recorded every five mins for one hour at 37°C using a BioTek Synergy H1 plate reader.
 
 To test whether the Were-1 riboswitch regulates the production of Fluc, samples were prepared under the same conditions. In the presence of amino-tSS, bioluminescence was measured on a BioTek Synergy H1 plate reader for approximately 15 mins before samples were excited at 342 nm for 1 s in order to isomerize amino-tSS to amino-cSS. Luminescence was recorded again for approximately 20 mins. Similar experiments were used regarding amino-cSS, with the exception of using 390 nm exposure for 0.5 ms in order to isomerize amino-cSS to amino-tSS, unless further specified.
 
-## In vivo light exposure analysis
+### In vivo light exposure analysis
 
 To determine the dependence of the amino-tSS exposure on the Were-1-Fluc expression, samples were prepared as described above and loaded into two black-bottom 96-well plates. One plate was used as a control and the other was exposed to 342 nm light (Φq = 1.4*10−2 W/cm2) for their specified time using a Nikon FM-10 camera shutter in order to isomerize amino-tSS to amino-cSS. The same procedure was performed in the presence of amino-cSS, except 390 nm light was used (Φq = 5.5*10−2 W/cm2) for their specified time to isomerize amino-cSS to amino-tSS. Bioluminescence was measured on an IVIS Lumina II imaging system 1 hr after light exposure.
 
 To test whether the Were-1 riboswitch regulates the production of Fluc multiple times, samples were prepared as described above and loaded in a black-bottom 96-well plate. The top half of the plate was used as a control, containing the unresponsive G69C mutant, and the bottom half contained Were-1. All samples contained 10 µM amino-tSS and had their bioluminescence was measured 25 min after induction on a BioTek Synergy H1 plate reader. Next, the first group of wells remained unexposed to light and the middle and far right samples were exposed to 342 nm (Φq = 1.4*10−2 W/cm2) for 1 ms. Measurements for all samples were taken 40 min after 342 nm exposure. Finally, the last group of wells (far right) were excited at 390 nm for 0.5 ms. Bioluminescence was measured again, for all samples, 40 min after exposure. The same experiment was repeated with the inactive mutant, G69C, as an additional control. Data were normalized to the unexposed samples, and OD600 values were obtained to confirm that there was no cell death from UV damage.
 
-## IC50 measurements
+### IC50 measurements
 
 A dose-response of the Were-1 riboswitch to the target metabolite (amino-tSS) was assessed by measuring bioluminescence inhibition as a function of increasing target concentration in BL21(DE3) E. coli cells. Bioluminescence was recorded under continuous conditions at 37°C.

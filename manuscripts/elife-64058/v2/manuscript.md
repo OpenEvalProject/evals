@@ -39,7 +39,7 @@ We built prediction models based on regional connectivity profiles using cross-v
 
 **Figure 2.:** We used a leave-one-family-out cross-validation scheme. For each data fold, we built a prediction model based on the training subjects' data (yellow color) to predict general intelligence (g) from the connectivity profile of a cortical region and applied the model to test subjects' connectivity profiles to predict their general intelligence scores (steps 1 and 2). We aggregated predicted and actually measured g across all cross-validation folds to assess model performance with cross-validated R2 (step 3) and repeated this procedure for other cortical regions' connectivity profiles (step 4). After the entire pipeline, we obtained an R2 for each of the 360 cortical regions, which stands for the amount of variance in g that can be accounted for by the region's connectivity profile. We repeated the pipeline for different kinds of connectivity profiles (spatial granularity, dataset, and alignment method) and compared them systematically (Figure 3, Figure 4, Figure 5), and these repetitions only differ in the connectivity profiles fed into the pipeline.
 
-## Hyperaligned fine-grained versus coarse-grained connectivity profiles
+### Hyperaligned fine-grained versus coarse-grained connectivity profiles
 
 Regional hyperaligned fine-grained task and resting connectivity profiles were highly predictive of general intelligence (Figure 3A, Figure 4A) and accounted for twice as much variance in general intelligence compared to coarse-grained connectivity profiles (Figure 3B, C, Figure 4B, C).
 
@@ -51,19 +51,19 @@ Regional hyperaligned fine-grained task and resting connectivity profiles were h
 
 **Figure 4.:** Prediction based on fine-grained (A) and coarse-grained (B) connectivity profiles. The scatterplot (C) shows that regional predictions based on hyperaligned fine-grained profiles accounted for more variance in all 360 ROIs. Prediction models based on each region's fine-grained hyperaligned resting functional connectivity profile accounted for 2.48 (95% CI: [2.18, 2.93]) times more variance in general intelligence on average than did models based on coarse-grained functional connectivity profiles. Each circle is a cortical region, and the color of each circle corresponds to the cortical system where it resides, using the same color scheme as in (E). Dashed lines denote average difference in R2 (gray) or identical R2 (black). (D) The 30 regions whose hyperaligned fine-grained connectivity best predicted general intelligence are colored as in (A) and (B). The default mode network is outlined in red, and the frontoparietal network is outlined in orange (Yeo et al., 2011). (E) Proportion of vertices in these regions that are in seven cortical systems delineated with resting state fMRI functional connectivity (Yeo et al., 2011).
 
-## Prediction of intelligence based on task fMRI connectivity profiles
+#### Prediction of intelligence based on task fMRI connectivity profiles
 
 On average across all cortical regions, prediction models based on hyperaligned fine-grained task fMRI connectivity accounted for 27.3% of variance in general intelligence (min: 11.2%; max: 38.9%). In other words, the correlation between predicted and measured intelligence scores ranged from r = 0.34 in the least predictive brain region to r = 0.62 in the most predictive brain region. By contrast, prediction models based on coarse-grained task fMRI connectivity (Figure 3B) accounted on average for only 14.9% of variance (min: 3.3%; max: 26.5%), which is only 54.2% (95% CI: [48.7%, 58.8%]) of VAF by hyperaligned fine-grained connectivity overall. VAF by hyperaligned fine-grained task connectivity was higher than VAF by coarse-grained connectivity in all 360 ROIs (Figure 3C). These results suggest that the information encoded in fine-grained interaction patterns between brain regions affords markedly stronger predictions of intelligence than the information in coarse-grained patterns.
 
 The 30 most predictive regions (Figure 3D, E; 33.8–38.9% VAF) were in bilateral inferior parietal cortex (15 regions), bilateral medial and superior prefrontal cortex (11 regions), bilateral medial parietal (2 regions), and bilateral posterior lateral temporal cortex (2 regions). The cortices in these regions were predominantly part of the default mode and frontoparietal systems (38.9% and 34.5% of cortical vertices, respectively) with small portions in the ventral and dorsal attention systems (11.3% and 10.6%, respectively; Figure 3D, E; Yeo et al., 2011). Assignment to cortical systems in a different parcellation tailored to the Glasser parcellation (Ji et al., 2019) similarly revealed the dominant role played by the default and frontoparietal systems (Appendix 1—figure 11).
 
-## Prediction of intelligence based on resting fMRI connectivity profiles
+#### Prediction of intelligence based on resting fMRI connectivity profiles
 
 Prediction of general intelligence based on resting fMRI connectivity showed a similar advantage for hyperaligned fine-grained profiles, relative to coarse-grained profiles (Figure 4), but performance was substantially lower than for task fMRI connectivity, consistent with previous reports (Greene et al., 2018; Jiang et al., 2020). Models based on hyperaligned fine-grained resting fMRI connectivity accounted on average for 19.8% of variance (Figure 4A; min: 4.7%; max: 31.2%), whereas models based on coarse-grained connectivity accounted on average for 8.1% of variance (Figure 4B; min: −1.2%; max: 17.4%), which is only 40.5% [CI: 34.2%, 45.8%] of VAF by hyperaligned fine-grained resting connectivity. Hyperaligned fine-grained resting fMRI connectivity, compared to coarse-grained resting fMRI connectivity, accounted for more variance in all 360 ROIs (Figure 4C). The vertices of 30 regions whose resting hyperaligned fine-grained connectivity was most predictive of general intelligence (25.3–31.2% VAF) had a distribution that was similar to that for hyperaligned task connectivity, sharing 68.3% of cortical vertices (compare Figure 3D, Figure 4D), with vertices mostly in the default mode network (49.0%) and smaller parts in the frontoparietal (19.4%), dorsal attention (15.8%), and ventral attention (10.0%) systems (Figure 4E; see also Appendix 1—figure 11).
 
 Consistent with previous reports (Greene et al., 2018; Jiang et al., 2020), task fMRI connectivity was significantly more predictive of general intelligence than was resting fMRI connectivity for both hyperaligned fine-grained data (difference = 7.6% VAF; 95% CI: [5.3%, 9.9%]) and coarse-grained data (difference = 6.8% VAF; 95% CI: [5.0%, 8.6%]). Task connectivity accounted for more variance than did resting connectivity in 358 of 360 ROIs for hyperaligned fine-grained data and in 343 of 360 ROIs for coarse-grained data (Appendix 1—figure 1).
 
-## Hyperaligned versus MSM-aligned fine-grained connectivity profiles
+### Hyperaligned versus MSM-aligned fine-grained connectivity profiles
 
 To test the efficacy of hyperalignment for revealing predictive individual differences in fine-grained connectivity topographies, we trained another set of models based on fine-grained functional connectivity of data without hyperalignment. These data were aligned with multimodal surface matching (MSM) (Robinson et al., 2014). Models based on MSM-aligned fine-grained task connectivity and resting connectivity accounted for, on average across ROIs, 17.6% (min: 5.1%; max: 28.7%) and 11.1% (min: 0.8%; max: 22.5%), respectively, of variance in general intelligence, which was 64.3% (95% CI: [59.9%, 68.3%]) and 56.0% (95% CI: [49.7%, 61.7%]) of that accounted for by models using hyperaligned data (Figure 5). Predictions based on hyperaligned fine-grained task connectivity were better than predictions based on MSM-aligned fine-grained connectivity in all 360 regions (Figure 5C). Predictions based on hyperaligned fine-grained resting connectivity were better than predictions based on MSM-aligned fine-grained connectivity in 357 of 360 regions (Figure 5D). The difference in model performance was larger for brain regions with more functional topographic idiosyncrasy for both task and resting connectivity (r = 0.435 and 0.425, respectively, p < 10−14), with two- to threefold increases in VAF in the most idiosyncratic regions. As for hyperaligned fine-scale connectivity and coarse-scale connectivity, MSM-aligned fine-scale task connectivity was more predictive of intelligence than was MSM-aligned fine-scale resting connectivity (difference = 6.5% VAF; 95% CI: [5.0%, 8.0%]; Appendix 1—figure 1C). Consistent with our previous findings (Feilong et al., 2018), these results show that hyperalignment factors out idiosyncrasies in functional topography to reveal how individuals differ in information encoded in fine-grained cortical functional architecture.
 
@@ -97,17 +97,17 @@ The efficiency of the default system apparently rests more on fine-grained featu
 
 ## Materials and methods
 
-## Dataset
+### Dataset
 
 We used data from the Human Connectome Project (HCP) (Van Essen et al., 2013) for our analysis. The final S1200 data release of the HCP Young Adult dataset contains multimodal MR imaging and behavioral data from 1206 participants that are 22–35 years old. This includes about 1 hr of resting-state fMRI data (four runs, 14.5 min each), 47 min of task fMRI data (seven tasks, two runs each), and extensive cognitive tests for each participant. Out of the 1206 participants, 888 have complete task and resting fMRI data, 1181 have complete scores of 10 cognitive tests, and 876 participants have both. In our analysis, we always used as many participants with complete data as possible to maximize statistical power. That is, we used data from the 1181 participants to derive the general intelligence score, data from the 888 participants to derive hyperalignment models and compute topographic idiosyncrasy, and data from the overlapping 876 participants for prediction analysis.
 
 We used a multimodal cortical parcellation tailored to this dataset (Glasser et al., 2016) to delineate cortical regions and compute connectivity targets for hyperalignment as described below. This parcellation is usually labeled as ‘Q1-Q6_RelatedParcellation210’ or ‘210P’ in the HCP dataset, and sometimes referred to as HCP MMP 1.0.
 
-## Measuring general intelligence
+### Measuring general intelligence
 
 General intelligence is a common factor, often referred to as g, underlying all cognitive abilities (Spearman, 1904). In this study, we measured general intelligence as the general factor obtained based on 10 cognitive test scores using a factor analysis with a bi-factor model (Dubois et al., 2018). These cognitive tests (Barch et al., 2013) include those from the NIH Toolbox for Assessment of Neurological and Behavioral Function (http://www.nihtoolbox.org) and additional computerized tests (Bilker et al., 2012; Gur et al., 2010), covering a range of memory, attention, language, and reasoning abilities. General intelligence can be accurately and consistently identified through different test batteries (Johnson et al., 2008; Johnson et al., 2004), and our findings are robust over choices of intelligence measures (Appendix 1—figures 6 and 7). For this dataset, the general factor of intelligence was derived from the code of Dubois et al., 2018, and it accounts for 58% of the covariance structure of cognitive tasks (Dubois et al., 2018).
 
-## MRI acquisition
+### MRI acquisition
 
 MRI data were acquired with a Siemens 3 T Skyra MRI scanner and a 32-channel head coil at Washington University (Van Essen et al., 2013). The scanner was customized with a gradient coil and gradient power. Each subject has 2 T1w and 2 T2w scans with 0.7 mm isotropic voxels, which were used to reconstruct high-resolution cortical surfaces.
 
@@ -115,13 +115,13 @@ Functional MRI data were acquired with a repetition time (TR) of 0.72 s, 2 mm is
 
 Resting fMRI data were acquired with four runs of 1200 TRs each. Each of the seven tasks were acquired with two runs, and the duration of each run varied across tasks (min: 176 TRs; max: 405 TRs). In total, for each participant, 57.6 min of resting fMRI data and 46.6 min of task fMRI data were acquired. See Uğurbil et al., 2013 for additional details of MRI acquisition.
 
-## MRI preprocessing
+### MRI preprocessing
 
 We used the same standard procedure to preprocess fMRI data for all task and resting fMRI data. Our preprocessing was based on the minimally preprocessed version of the dataset (Glasser et al., 2013), where data had been corrected for distortion and head motion, and aligned to a standard cortical surface mesh using MSM (Robinson et al., 2014), which aims to match multimodal properties across individuals while preserving topology. These data were labeled as ‘MSMAll’ in the HCP data files, and we refer to them as ‘MSM’ for short.
 
 We first normalized all fMRI data to percent signal change units, then used linear regression to remove nuisance components from them. These nuisance components include six motion parameters and their derivatives, five principal components from white matter and cerebrospinal fluid (Behzadi et al., 2007), global signal, and polynomial trends up to the third order. The white matter and cerebrospinal fluid components were extracted from volumetric data based on eroded anatomical masks. Both the regressors and data were low-pass filtered with a Gaussian kernel (standard deviation = 1 TR) prior to regression. These preprocessing steps were analogous to previous work (Dubois et al., 2018; Finn et al., 2015; Greene et al., 2018; Shen et al., 2017).
 
-## Hyperalignment
+### Hyperalignment
 
 We performed hyperalignment using these preprocessed data to align the fine-grained cortical functional architecture across individuals and obtained two sets of hyperaligned data (one based on task fMRI data, one based on resting fMRI data) besides the original MSM-aligned dataset. Specifically, we used connectivity hyperalignment (Guntupalli et al., 2018) to align fine-grained cortical functional architecture across individuals. We used regional average time series of the 360-region multimodal cortical parcellation (Glasser et al., 2016) as connectivity targets. For each of the 59,412 cortical vertices, we computed its connectivity profile as the correlations between its own time series and the 360 regional average time series. Therefore, each connectivity profile is a vector comprising 360 correlation coefficients. In each brain region, we derived a transformation matrix for each individual using these connectivity profiles, which remixes each individual's vertices into a common set of model dimensions through an improper rotation of a high-dimensional space. Each model dimension has similar functional properties across individuals instead of the same anatomical position, and these model dimensions together constitute a common model space. The common model space is usually instantiated as a reference brain, where each vertex corresponds to a model dimension. The information content in each individual's data—the configuration of connectivity vectors in the high-dimensional feature space—is perfectly preserved during the rotation, whereas how and where this information is encoded in idiosyncratic topographies is factored out into the transformation matrix.
 
@@ -129,7 +129,7 @@ In this study, hyperalignment was performed for each brain region separately (i.
 
 We used the HCP task fMRI dataset to derive the hyperalignment common model and transformations (i.e., to train hyperalignment) when we analyzed the task fMRI data, and resting fMRI dataset when we analyzed the resting fMRI data. Therefore, the task and resting fMRI datasets remain independent throughout the analysis. It is possible to train hyperalignment using one dataset and apply it to another, and such results are summarized in Appendix 1—figure 2.
 
-## Functional connectivity profiles
+### Functional connectivity profiles
 
 We used functional connectivity profiles to depict a brain region's functional interactions with the entire cerebral cortex. These connectivity profiles are different from the connectivity profiles used in connectivity hyperalignment as described above.
 
@@ -139,13 +139,13 @@ To separate information encoded in different spatial scales, we split the full f
 
 The analysis involves data aligned in three different ways: MSM, hyperalignment based on task fMRI data, and hyperalignment based on resting fMRI data. For each alignment method, we computed these three kinds of connectivity profiles for each participant and each region. The results of fine-grained connectivity profiles reported in the main text are based on residual fine-grained connectivity profiles, and similar results were obtained using full fine-grained connectivity profiles (Appendix 1—figure 2).
 
-## Topographic idiosyncrasy
+### Topographic idiosyncrasy
 
 We measured the level of each region's functional topographic idiosyncrasy as the average dissimilarity of hyperalignment transformation matrices across participant pairs for that region, after correcting for region size. Specifically, for each brain region, we computed the Frobenius norm of the difference between the two transformation matrices for each pair of participants and averaged it across all participant pairs to obtain an average matrix dissimilarity (i.e., average difference matrix norm) for the region. The 360 cortical regions differ in size (measured as the number of vertices in each region). As a result, transformation matrices also differ in size for different regions, and the average matrix norm was predominantly determined by region size. Across all 360 regions, the average matrix norm and the square root of region size had a correlation of r > 0.9999. To remove the confounding effects of region size, we fit a linear regression model across the 360 regions using sqrt(region size) as the independent variable and the average matrix dissimilarity as the dependent variable. We used the residual of the linear regression model to depict the heterogeneity of a region's functional topography across individuals.
 
 We performed hyperalignment twice in our analysis—once using task fMRI data, once using resting fMRI data—and therefore obtained two sets of transformation matrices for each region. Topographic idiosyncrasy indices based on each of the two sets are essentially identical (r = 0.960, p = 4 × 10−200). When we analyzed task fMRI data, we used topographic idiosyncrasy based on task fMRI (Figure 5C), and when we analyzed resting fMRI data, we used that based on resting fMRI (Figure 5D).
 
-## Cross-validation scheme
+### Cross-validation scheme
 
 We used leave-one-family-out cross-validation (Dubois et al., 2018) to assess prediction models. The 876 participants were from 411 families, and each family had 2.13 members on average (range: 1–5; with 103 participants with no other family members and 177, 107, 22, and 2 families with 2–5 participants, respectively). Therefore, this cross-validation scheme divided the entire dataset into 411 folds. Each time we leave out a family of k individuals (i.e., related to each other) as test data, and use the remaining 876 - k individuals (i.e., not related to test participants) as training data to train the model. We repeated this procedure, each time using a different family as test data. Therefore, after looping through all families, each individual's general intelligence score was predicted by a model trained with unrelated individuals.
 
@@ -153,13 +153,19 @@ For each cross-validation fold (i.e., each family as test data), we further spli
 
 To test the robustness of our prediction models against particular ways of splitting data, we replicated our analysis using an alternative cross-validation scheme. Instead of the leave-one-family-out cross-validation, we repeated tenfold cross-validation 50 times, and each time the data was split randomly into 10 chunks in a different way. To accommodate the family structure of the dataset, we ensured that each time individuals from the same family were always in the same chunk. The average model performance across the 50 repetitions was highly similar to that based on leave-one-family-out cross-validation across all regions and connectivity profile types (Appendix 1—figure 8), suggesting that our prediction model performance evaluation was accurate and unbiased.
 
-## Regression models
+### Regression models
 
 We used principal component regression with ridge regularization to predict general intelligence based on functional connectivity. First, we used principal component analysis (PCA) to derive principal components (PCs) from functional connectivity patterns based on training data. Dimensions in the PC space capture principal ways that individuals’ connectivity profiles differ. Thus, the connectivity profile for a region in each training set participant was transformed into a set of scores across PC dimensions. Then, we trained a ridge regression model to predict general intelligence based on these PC scores. The PCA and ridge regression models were then applied to test data to obtain the model predicted general intelligence scores. Model parameters (the number of PCs and the regularization parameter) were always chosen using nested cross-validation as stated above. Candidate model parameters were distributed evenly on a logarithmic scale. Choices for the number of PCs were 10, 20, 40, 80, 160, 320, and all PCs (i.e., no dimensionality reduction). The maximum number of PCs was usually 360 for coarse-grained connectivity profile and 876k for fine-grained connectivity profile. Choices for the regularization parameter α were 81 values from 10−20 to 1020.
 
-## Model evaluation
+### Model evaluation
 
-We evaluated our models using the cross-validated coefficient of determination (R2). R2 denotes the percent of variance in general intelligence that was accounted for (VAF) by prediction models. The formula isR2=1−∑i(yi−y^i)2∑i(yi− y¯i, train)2where yi is the measured score for subject i, y^i is the model predicted score for subject i, and y¯i,train is the prediction by the null model. The prediction of the null model is simply the average score of all training data, and thus it does not use any information from the features (fine- or coarse-grained functional connectivity in this case) at all. R2 maximizes at 100%, which means perfect prediction; 0 means model performance is only the same as the null model. In rare cases, cross-validated R2 can also be negative, which suggests the model performance is even worse than the null model.
+We evaluated our models using the cross-validated coefficient of determination (R2). R2 denotes the percent of variance in general intelligence that was accounted for (VAF) by prediction models. The formula is
+
+$$
+R^{2}=1−\frac{\sumi(y_{i}−y^_{i})^{2}}{\sumi(y_{i}− y¯_{i, train})^{2}}
+$$
+
+where $y_{i}$ is the measured score for subject i, $y^_{i}$ is the model predicted score for subject i, and $y¯_{i,train}$ is the prediction by the null model. The prediction of the null model is simply the average score of all training data, and thus it does not use any information from the features (fine- or coarse-grained functional connectivity in this case) at all. R2 maximizes at 100%, which means perfect prediction; 0 means model performance is only the same as the null model. In rare cases, cross-validated R2 can also be negative, which suggests the model performance is even worse than the null model.
 
 To assess model performance against chance, we used permutation testing to create a null distribution of R2. The HCP dataset has subjects that are from the same family, and they are more likely to have similar general intelligence scores compared with non-related subjects (Plomin and Deary, 2015). Therefore, the subject labels are not fully exchangeable, and we used multi-level block permutation (Winkler et al., 2015) to resolve the issue. With this hierarchical permutation approach, the data exchangeability is properly modeled, providing more accurate estimates of false positive rates.
 
@@ -167,22 +173,28 @@ For each of the 2160 conditions (360 brain regions × 3 connectivity profile t
 
 Across conditions (Appendix 1—figure 4), the maximum R2 of all 100 permutations was less than the value obtained with the prediction model (i.e., p < 0.01) for all models based on hyperaligned fine-grained connectivity or on MSM-aligned fine-grained task connectivity and for all models based on coarse-scale connectivity or on MSM-aligned fine-grained resting connectivity that had an R2 over 1.3%.
 
-## Estimating confidence intervals
+### Estimating confidence intervals
 
 We used bootstrap tests to estimate confidence intervals (CIs) for contrasts between VAF by different prediction models. In each of the 1,000,000 repetitions, we randomly sampled a group of 876 individuals used for model evaluation by sampling with replacement from the 876 original individuals. In other words, in each bootstrapped sample, a participant might be selected once, multiple times, or not selected at all. For each bootstrapped sample, we computed VAF differences and VAF ratios. The 95% CI of a difference or ratio is estimated as the 2.5th and 97.5th percentiles of the difference or ratio from the bootstrapped samples (i.e., the sampling distribution of the difference or ratio estimated by bootstrapping participants). The bootstrapping procedure used here only affects the participants used for model evaluation (i.e., the test set), and the model used to predict a participant's score was always trained with the same training set (i.e., participants who are not from the same family as the test participant). This was because prediction performance depends on training sample size (Appendix 1—figure 8), and duplicate instances in the training data do not have the same effect on machine learning algorithms as ‘real’ new data (e.g., noise from two duplicate instances are not independent), which makes the bootstrapped sample no longer representative of the population. Therefore, we only bootstrapped the participants used for model evaluation, so that the sampling distribution is not biased by training sample size or dependency.
 
-## Pearson correlation
+### Pearson correlation
 
 We used the Pearson correlation coefficient to assess the relationship between regional topographic idiosyncrasy and the difference in prediction performance based on hyperaligned and MSM-aligned data (Figure 5C, D), and the relationship between the square root of a region's size and the average transformation matrix dissimilarity. In both cases, n (the number of regions) is always 360, and the degrees of freedom is always 358.
 
-## Dice coefficient
+### Dice coefficient
 
-We used the Dice, 1945 similarity coefficient to quantify the amount of overlap between the 30 most predictive regions based on task fMRI data and those based on resting fMRI data. The formula isDSC =2| A∩B || A |+| B |where A is the set of vertices covered by the 30 most predictive regions based on task fMRI data, and B is that based on resting fMRI data. |⋅| denotes set cardinality. DSC is short for Dice similarity coefficient.
+We used the Dice, 1945 similarity coefficient to quantify the amount of overlap between the 30 most predictive regions based on task fMRI data and those based on resting fMRI data. The formula is
 
-## Overlap with cortical systems
+$$
+DSC =\frac{2|A∩B|}{|A|+|B|}
+$$
+
+where A is the set of vertices covered by the 30 most predictive regions based on task fMRI data, and B is that based on resting fMRI data. |⋅| denotes set cardinality. DSC is short for Dice similarity coefficient.
+
+### Overlap with cortical systems
 
 The cerebral cortex can be divided into seven cortical systems based on functional connectivity (Yeo et al., 2011). For each of the 360 regions, we computed the percentage of vertices belonging to each of the seven systems as the number of vertices belonging to the system divided by the total number of vertices in the region. For the 30 most predictive regions, we computed the percentage of vertices across all 30 regions that belonged to each system (Figure 3E, Figure 4E). Similar results were found with an alternative division into 12 cortical systems by Ji et al., 2019 (see Appendix 1—figure 11). In the scatterplots (Figure 3C, Figure 4C), each region was assigned to one of the cortical systems, which is the system that had the largest amount of vertices in the region.
 
-## Software used
+### Software used
 
 We implemented our analysis using Python and Python packages including NumPy (https://numpy.org/), SciPy (https://www.scipy.org/), and NiBabel (https://nipy.org/nibabel/). The code for performing hyperalignment and nuisance regression was adapted from PyMVPA (http://www.pymvpa.org/) (Hanke et al., 2009).

@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/04txgxn49 ITMO University, Computer Technologies Laboratory Saint Petersburg Russian Federation
-2. https://ror.org/01yc7t268 Washington University in St. Louis School of Medicine, Department of Pathology and Immunology St Louis United States
+1. ITMO University, Computer Technologies Laboratory Saint Petersburg Russian Federation ([ROR:04txgxn49](https://ror.org/04txgxn49))
+2. Washington University in St. Louis School of Medicine, Department of Pathology and Immunology St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
 
 † Corresponding author
 
 ## Abstract
 
-Transcriptomic profiling became a standard approach to quantify a cell state, which led to the accumulation of huge amount of public gene expression datasets. However, both reuse of these datasets or analysis of newly generated ones requires significant technical expertise. Here, we present Phantasus: a user-friendly web application for interactive gene expression analysis which provides a streamlined access to more than 96,000 public gene expression datasets, as well as allows analysis of user-uploaded datasets. Phantasus integrates an intuitive and highly interactive JavaScript-based heatmap interface with an ability to run sophisticated R-based analysis methods. Overall Phantasus allows users to go all the way from loading, normalizing, and filtering data to doing differential gene expression and downstream analysis. Phantasus can be accessed online at https://alserglab.wustl.edu/phantasus or can be installed locally from Bioconductor ( https://bioconductor.org/packages/phantasus ). Phantasus source code is available at https://github.com/ctlab/phantasus under an MIT license.
+Transcriptomic profiling became a standard approach to quantify a cell state, which led to the accumulation of huge amount of public gene expression datasets. However, both reuse of these datasets or analysis of newly generated ones requires significant technical expertise. Here, we present Phantasus: a user-friendly web application for interactive gene expression analysis which provides a streamlined access to more than 96,000 public gene expression datasets, as well as allows analysis of user-uploaded datasets. Phantasus integrates an intuitive and highly interactive JavaScript-based heatmap interface with an ability to run sophisticated R-based analysis methods. Overall Phantasus allows users to go all the way from loading, normalizing, and filtering data to doing differential gene expression and downstream analysis. Phantasus can be accessed online at https://alserglab.wustl.edu/phantasus or can be installed locally from Bioconductor (https://bioconductor.org/packages/phantasus). Phantasus source code is available at https://github.com/ctlab/phantasus under an MIT license.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Here, we present Phantasus: a web application for gene expression analysis that 
 
 ## Results
 
-## Phantasus web application
+### Phantasus web application
 
 We developed a web application called Phantasus for interactive gene expression analysis. Phantasus integrates a JavaScript-rich heatmap-based user interface originated from Morpheus (Gould, 2016) with an R back-end via the OpenCPU framework (Ooms, 2014). The heatmap graphical interface provides an intuitive way to manipulate the data and metadata: directly in a web browser the user can create or modify annotations, edit color schemes, filter rows and columns, and so on. On the other hand, the R back-end provides a way to easily run a multitude of computational analysis methods available as R packages. Altogether, this architecture (Figure 1) ensures a smooth experience for performing all common analysis steps: loading datasets, normalization, exploration, visualization, differential expression and gene set enrichment analyses.
 
@@ -50,7 +50,7 @@ All the plots produced by Phantasus during the data exploration and analysis can
 
 Another option for presenting final or intermediate results is session link sharing. When a link is generated, a snapshot with the current dataset and its representation – annotations, color scheme, sample dendrograms, etc. – are saved on the server. The link can be shared with other users, and, when opened, restores the session.
 
-## Stand-alone Phantasus distribution
+### Stand-alone Phantasus distribution
 
 Aside from using the official mirror (https://alserglab.wustl.edu/phantasus), there is a possibility to set up Phantasus locally. Phantasus can be installed as an R package from Bioconductor (https://bioconductor.org/packages/phantasus) or loaded as a Docker image (https://hub.docker.com/r/alserglab/phantasus). In both cases, almost all of the Phantasus functions will be available from the start.
 
@@ -60,19 +60,19 @@ Importantly, we have introduced a highly scalable data service (HSDS) server (ht
 
 An important feature of the stand-alone version of Phantasus is the ability to share manually curated datasets. Similar to Phantasus session link sharing, one can generate a named session consisting of a dataset and its visual representation. Link to this named session (e.g. https://alserglab.wustl.edu/phantasus/?preloaded=GSE53986.Ctrl_vs_LPS) can then be shared for the other users to view. Such a predictable display of the data can be particularly useful in a publication context.
 
-## Available datasets
+### Available datasets
 
 Phantasus provides streamlined access to more than 96,649 GEO datasets. For these datasets, the expression values and gene identifiers (Entrez, ENSEMBL, or Gene Symbol) are readily available (Figure 2). Moreover, these datasets are used to populate the initial Phantasus cache, and thus they have low loading times.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85722/elife-85722-fig2-v2.jpg)
 
-**Figure 2.:** For fully supported datasets, gene expression data is accompanied by gene annotations in a standardized format. Partial support datasets have either incomplete gene expression matrix or gene annotations.Figure 2—source data 1.Figure 2.
+**Figure 2.:** For fully supported datasets, gene expression data is accompanied by gene annotations in a standardized format. Partial support datasets have either incomplete gene expression matrix or gene annotations.
 
 Of these 96,649 datasets, 49,846 are microarrays based on 2767 platforms. For 1347 platforms, GEO databases have machine-readable annotations in the annot.gz format with Entrez gene and Gene symbol columns, corresponding to 39,621 datasets. The remaining 10,225 datasets are obtained from platforms that do not have a GEO-provided annotation. For these 1420 platforms, we have automatically marked up user-provided annotations in SOFT format to extract gene identifiers and convert the annotations into annot.gz format.
 
 The RNA-seq subset of the datasets with streamlined access consists of 46,803 datasets. As GEO does not store expression values for RNA-seq datasets, we rely on other databases for the expression data. The first-priority database for RNA-seq gene counts is ARCHS4 (Human, Mouse, and Zoo versions), which covers 35,088 datasets. The other source is the DEE2 database (human, mouse, and other available organisms), which covers an additional 11,715 datasets. The DEE2 database contains run-level quantification, so it has been preprocessed to sum read counts into sample-level tables.
 
-## Case study 1: Basic usage
+### Case study 1: Basic usage
 
 To illustrate the basic usage of Phantasus, we will consider the dataset GSE53986 (Noubade et al., 2014) from the GEO database (Figure 3). This dataset consists of 16 samples of bone marrow-derived macrophages, untreated and treated with three stimuli: LPS, IFNg, and combined LPS + IFNg. The gene expression was measured with Affymetrix Mouse Genome 430 2.0 Array. Here, we give an overview of the steps; the full walk-through for the analysis is available in Appendix 2.
 
@@ -84,7 +84,7 @@ After the normalization step, we can apply a number of exploratory techniques. I
 
 Finally, we can do a comparison between the sample groups, for example, by comparing untreated and LPS-treated samples. As the data has been normalized, we can apply limma for differential gene expression analysis. The result appears as additional gene annotation columns: p-values, log-fold-changes, and other statistics. Next, we can use differential expression results for a pathway enrichment analysis: for example, we can use R-based GSEA via the fgsea package or we can use external tools, such as Enrichr.
 
-## Case study 2: Data reanalysis
+### Case study 2: Data reanalysis
 
 To highlight Phantasus’s ability to reanalyze publicly available data in a context of a biological study, let us consider a study by Mowel et al., 2017. The study considers a genomic locus Rroid linked by the authors to homeostasis and function of group 1 innate lymphoid cells (ILC1). The authors hypothesized that Rroid locus controls ILC1s by promoting the expression of Id2 gene, a known regulator of ILCs. To confirm this hypothesis, the authors generated an Id2-dependent gene signature based on an existing transcriptomic data (Shih et al., 2016) and showed its deregulation in Rroid-deficient cells.
 
@@ -106,7 +106,7 @@ Phantasus is readily available online at https://alserglab.wustl.edu/phantasus, 
 
 ## Materials and methods
 
-## Web application architecture
+### Web application architecture
 
 Phantasus is a web application that combines an interactive graphical user interface with access to a variety of R-based analysis methods (Figure 1). The front-end, which is JavaScript-based, derives from the Morpheus web application designed for matrix visualization and analysis (Gould, 2016). The back-end is written in R, with an OpenCPU server (Ooms, 2014) translating HTTP-queries from the client into R procedure calls.
 
@@ -120,7 +120,7 @@ The transfer of large objects between the server and the client exploits a binar
 
 For further performance improvement, Nginx server is used to wrap the OpenCPU server. Nginx server caches the results of the OpenCPU method calls. If the same method with the same data is called again, the cached result can be returned without any additional computations. Furthermore, Nginx is used to serve static content and manage permissions.
 
-## Data sources and data gathering
+### Data sources and data gathering
 
 The main data source for Phantasus is the NCBI GEO database (Barrett et al., 2013). All of the GEO datasets are identified by a GSEnnnnn accession number (with a subset of the datasets having an additional GDSnnnnn identifier). However, depending on the type of dataset, the processing procedure is different.
 

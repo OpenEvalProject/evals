@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.40183.001 Optical super-resolution microscopy techniques enable high molecular specificity with high spatial resolution and constitute a set of powerful tools in the investigation of the structure of supramolecular assemblies such as viruses. Here, we report on a new methodology which combines Structured Illumination Microscopy (SIM) with machine learning algorithms to image and classify the structure of large populations of biopharmaceutical viruses with high resolution. The method offers information on virus morphology that can ultimately be linked with functional performance. We demonstrate the approach on viruses produced for oncolytic viriotherapy (Newcastle Disease Virus) and vaccine development (Influenza). This unique tool enables the rapid assessment of the quality of viral production with high throughput obviating the need for traditional batch testing methods which are complex and time consuming. We show that our method also works on non-purified samples from pooled harvest fluids directly from the production line.
+Optical super-resolution microscopy techniques enable high molecular specificity with high spatial resolution and constitute a set of powerful tools in the investigation of the structure of supramolecular assemblies such as viruses. Here, we report on a new methodology which combines Structured Illumination Microscopy (SIM) with machine learning algorithms to image and classify the structure of large populations of biopharmaceutical viruses with high resolution. The method offers information on virus morphology that can ultimately be linked with functional performance. We demonstrate the approach on viruses produced for oncolytic viriotherapy (Newcastle Disease Virus) and vaccine development (Influenza). This unique tool enables the rapid assessment of the quality of viral production with high throughput obviating the need for traditional batch testing methods which are complex and time consuming. We show that our method also works on non-purified samples from pooled harvest fluids directly from the production line.
 
 ## Introduction
 
@@ -33,23 +33,127 @@ First, we compare TIRF-SIM with alternative imaging modalities and show that it 
 
 ## Results
 
-## TIRF-SIM offers an optimal combination of throughput and resolution for the imaging of virus structure
+### TIRF-SIM offers an optimal combination of throughput and resolution for the imaging of virus structure
 
 First, we explored and compared three common SRM modalities for the structural investigation of purified NDV virus, namely direct stochastic optical reconstruction microscopy, dSTORM, stimulated emission depletion microscopy, STED and TIRF-SIM. NDV viruses were labelled for the envelope glycoprotein Hemagglutinin-Neuraminidase (HN) and imaged with all three SRM imaging techniques (see Figure 1). Labelling for HN allows us to directly and specifically observe the shape of the virus particles. For comparison, a conventional (non-super-resolved) TIRF wide-field image is also shown. Typical shapes observed with TIRF-SIM are shown in Figure 1(b). TIRF-SIM provides clear structural details to discern filamentous, spherical and rod-like structures in large NDV populations. A comparison of performance parameters (resolution and imaging speed) for the different methods is presented in Figure 1—figure supplement 1(a). It is clear that improving resolution beyond the ~90 nm offered by TIRF-SIM (see Figure 1—figure supplement 1(b)) comes at a significant cost in acquisition times and throughput. Furthermore, although dSTORM and STED offer theoretically higher resolution than SIM, the images obtained with these methods do not reveal additional structural details that are not also resolved by TIRF-SIM images. This indicates that the ~2 fold resolution improvement provided by TIRF-SIM is sufficient for the structural study presented here.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig1-v2.jpg)
+
+**Figure 1.:** (a) Representative images of purified NDV viruses with different imaging modalities. (b) Representative images of a purified NDV virus population imaged with TIRF-SIM and their corresponding TIRF wide-field image. WF: wide-field TIRF microscopy. Scale bar: 1 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Typical spatial resolution and acquisition times for the imaging of NDV structures highlighting the trade-off between speed and resolution (b) Representative TIRF-SIM image obtained from purified B Victoria LAIV and its corresponding Fourier transform (c). The Fourier transform highlights the resolution ~90 nm. The plot was obtained using the SIMcheck plugin (Ball et al., 2015). (d) Image and cross section of a single secondary antibody labelled with DyLight 488, showing a FWHM of ~90 nm. FFT: Fast Fourier transform.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** These images were obtained from a Philips CM 100 Compustage (FEI) TEM and negative staining.
+
 Traditionally, EM has been the method of choice for observing sub-diffraction structures of virus particles (see Figure 1—figure supplement 2 for examples of particles). Here we show that TIRF-SIM can offer significant advantages compared to EM (summarized in Table 1). The improvement in molecular specificity allows an unambiguous identification of viral components; the high signal-to-noise ratio (SNR) furthermore enables a robust and straightforward application of further image analysis steps (identification and classification of virus particles). Also, the capability of investigating unpurified and aqueous samples makes TIRF-SIM ideally suited to the present application.
 
-## Workflow of MiLeSIM
+**Table 1.**
+ Comparison of the key performance parameters of TIRF-SIM (proposed method) and EM in the context of high throughput imaging of virus structure.The resolution and acquisition time of EM were quoted for a standard TEM imaging (Philips CM 100 Compustage (FEI) Transmission Electron Microscope with an AMT CCD camera). *for a comparable field-of-view.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Tirf-sim</th>
+      <th>EM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Contrast</td>
+      <td>Fluorescence</td>
+      <td>Electron scattering</td>
+    </tr>
+    <tr>
+      <td>Molecular specificity</td>
+      <td>Very high</td>
+      <td>Medium to low</td>
+    </tr>
+    <tr>
+      <td>Spatial resolution achievable</td>
+      <td>~90 nm</td>
+      <td>~1 Å</td>
+    </tr>
+    <tr>
+      <td>Acquisition time/1000 virus particles*</td>
+      <td>2 s</td>
+      <td>2 s</td>
+    </tr>
+    <tr>
+      <td>Typical field of view size</td>
+      <td>30 µm x 30 µm</td>
+      <td>500 nm x 500 nm</td>
+    </tr>
+    <tr>
+      <td>Sample preparation complexity</td>
+      <td>Low</td>
+      <td>Low to Medium</td>
+    </tr>
+    <tr>
+      <td>Compatibility with aqueous buffers</td>
+      <td>High</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Compatibility with non-purified samples</td>
+      <td>High</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Signal to noise ratio achievable</td>
+      <td>Very high</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Sample preparation time</td>
+      <td>Low (2–3 hr)</td>
+      <td>Low to High</td>
+    </tr>
+    <tr>
+      <td>Expertise required for imaging</td>
+      <td>Medium</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td>Low (£100 k)</td>
+      <td>Medium (£250 k)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Workflow of MiLeSIM
 
 The images obtained with TIRF-SIM show a number of stereotypical virus structures in NDV samples labelled for HN, indicating a large morphological diversity in the virus populations that may stem from variability occurring during viral replication or at the purification stage. Understanding the origins and consequences of such heterogeneity informs not only on the life cycle of the virus but can also provide essential insights into the virus production process to manufacturers of virus-based therapeutics. An automated classification of virus shapes would enable the quantification of virus heterogeneity and permit further analysis of each individual class independently. The workflow to achieve these goals is shown in Figure 2.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig2-v2.jpg)
+
+**Figure 2.:** SIM image (a) and segmented particles (b). The classified single-virus images (b) can be further analysed with a set of class-specific tools (c). For the backbone analysis the mask and backbone are showed in blue and white respectively. For the model-fitting approach (spherical and rod-like), the data and model are showed in green and magenta respectively. LF: long filamentous, SF: short filamentous, LS: large spherical, SS: small spherical, RD: rod-shape, UK: unknown. LF, DLS, LRD and WRD represent the length of the filamentous particles, the diameter of the large spherical, the length of the rod-shaped particles and the width of the rod-shaped particles respectively. Images of individual particles cover a field of view of 1.6 × 1.6 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The original image is segmented and thinned to obtain the backbone of the particle. The backbone is up-sampled and interpolated outside the particle. It is then used to compute the model scaffold. For this, each end of the backbone is independently grown or reduced to adjust its length, hence LRD = Ltot – L1 – L2, where Ltot is the maximum length of the extended backbone, and L1 and L2 are the adjusted distances by which the backbone length is adjusted on each end respectively. Then, the image is dilated by a disk-shaped kernel of radius equal to half WRD. The outline of this image gives the model scaffold. The scaffold is then convolved with a Gaussian kernel representing the effect of image resolution (here 90 nm) and the image is down-sampled again to the original image size. The optimal LRD and WRD are those that minimize the difference image and the χ (Müller and Heilemann, 2013).
 
 Individual virus particles are first identified by automated segmentation and then fed to the ML routine for classification. We used a supervised ML algorithm (here a random forest algorithm (Breiman, 2001)) to ensure the robustness of the method and for ease of implementation. We identified six major structural classes in the NDV samples which we divide into long and short filamentous, small and large spherical, rod-like and unknown structures. The unknown class is made of clumps of viral material with no consistent and identifiable shapes. A control sample that was prepared identically to the other samples except without virus particles present allowed us to identify that non-specific bindings of antibodies appear as rare, dim and small point-like structures that could easily be discriminated and excluded from further analysis.
 
 The filamentous (long and short) class is further analysed by automatic extraction of the linear backbone of structures and measurement of their length. The width of these filamentous structures appeared to be limited by the resolution of the imaging technique (~90 nm for TIRF-SIM, see Figure 1—figure supplement 1, but also observed in higher resolution approaches such as dSTORM) and therefore, we considered the filamentous class as 1D structures. The spherical structures were analysed by estimating their equivalent radius from the area of the particle. We note that other methods for estimation of the radius, for example the ellipsoid localization microscopy (ELM) analysis (Manetsberger et al., 2015), could also be used here. The latter fits a shape model to imaging data to permit the extraction of structural parameters with precision higher than the inherent resolution of the imaging method (Laine et al., 2015; Manetsberger et al., 2015). A similar model-based fitting approach was used to fit rod-like viral particles and to obtain length and width parameters for this structural class (see Materials and methods section and Figure 2—figure supplement 1 for details).
 
-## Classification of virus structures using supervised machine learning algorithms
+### Classification of virus structures using supervised machine learning algorithms
 
 The structural classification was performed using a supervised ML algorithm which allows for rapid and automated classification of large datasets. The choice of algorithm and the set of features (often called predictors) extracted for each identified particle were optimised to maximise the overall accuracy of the model based on the training dataset (comprising of 370 manually annotated particles). Here, the model accuracy is defined as the fraction of correctly classified particles across all classes. Figure 3(a) describes the list of chosen individual features (selected from basic shapes features, Hu’s image moments (Hu, 1962), features obtained from the pre-trained convolutional neural network (CNN) AlexNet (Krizhevsky et al., 2012) and from Speeded Up Robust Features, SURF (Bay et al., 2008)). The predictors were selected based on the following criteria: basic structural features of the particles (e.g. area, eccentricity) and Hu’s moments were chosen because they are rotationally and translationally invariant. For the features from AlexNet and SURF a feature selection approach was designed based on maximising the standard deviation across the different structural classes. This approach constitutes a more rational choice compared to simple principal component analysis (PCA), which does not typically take the information regarding the classes into account, therefore our method selects for predictors that have high potential for class discrimination. This data reduction narrowed down the number of predictors to six for AlexNet and six for SURF.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig3-v2.jpg)
+
+**Figure 3.:** (a) Building the list of predictors from basic features, image moments, convolutional neural network (CNN) features and SURF bag of features (BoF). (b) Example of 2D scatter plots of pairs of predictors showing how some predictors allow identification of class clusters. (c) Confusion matrix obtained from the random forest showing the high true positive rate (TPR) and positive predictive values (PPV) of the classification. All numbers shown here are in percentage. (d) Scoring of the predictors sorted in descending order. IM: image moment. AN: AlexNet feature. BoF: SURF features. L1/L2: ratio of long axis over short axis. <I> : average intensity. P/A: perimeter to area ratio. σI: standard deviation of intensity. LF: long filamentous, SF: short filamentous, LS: large spherical, SS: small spherical, RD: rod-shape, UK: unknown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A strong emphasis should be put on the choice of predictors and the quality of the manual annotation (training dataset) prior to classification, as this will largely determine the quality of the classification.
 
 A total of 24 predictors was finally chosen: seven based on basic shapes (area, ratio of axis lengths, eccentricity, solidity, perimeter-to-area, mean intensity, standard deviation of pixel intensities), 5 of Hu’s image moments (Hu1, Hu4, Hu5, Hu6 and Phi4), six features obtained from the pre-trained convolutional neural network (CNN) AlexNet and six from a SURF bag of features. The classification workflow is described in Figure 3—figure supplement 1.
 
@@ -57,9 +161,17 @@ Panels described in Figure 3(b) show examples of scatter plot from arbitrarily c
 
 The scoring of the predictors presented in Figure 3(d) indicates the average accuracy of each individual predictor. A high score indicates a high capacity to discriminate between different classes. The scoring was performed by measuring the accuracy of the classification for many combinations of predictors and distributing the accuracy score across the predictors tested (see Materials and methods for details). In other words, if a combination of 2 predictors alone give an accuracy of 60%, a score of 30% is awarded to both individual predictors. This method was repeated and scores represent averages across >13,000 different combinations of predictors.
 
-## Structural details of an NDV virus population
+### Structural details of an NDV virus population
 
 We analysed a total of ~6500 particles using MiLeSIM and established that 49.7% of NDV particles presented a filamentous shape whereas the large spherical, small spherical and rods represent 18.6%, 7.8% and 7.3% of the total population, respectively (Figure 4(a)). In addition to structural classification, the high-resolution images also permitted a dimensional analysis to be performed at the single particle level. We estimated the particle radius from both small and large spherical particles by calculating the equivalent radius from the particle area; backbone extraction to the short and long filamentous particles, to estimate the particle length; and designed a model fitting for the rod structures. Figure 4 shows the distribution of structural parameters for each class. We observe that both long filamentous and large spherical are well described by a Gamma distribution whereas the small filamentous and small spherical are well described by a Gaussian distribution. The model-fitting applied to the rod-shaped particles (see Materials and methods and Figure 2—figure supplement 1 for details) allows the extraction of both the width and length of each particle. Therefore, it is possible to plot the distribution of structural parameters as a contour plot Figure 4(c)).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig4-v2.jpg)
+
+**Figure 4.:** The distribution of structural parameters for all classes was obtained from a total of ~6500 virus particles. LF: long filamentous, SF: short filamentous, LS: large spherical, SS: small spherical, RD: rod-shape, UK: unknown. Images of individual particles cover a field of view of 1.6 × 1.6 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) and B-Victoria LAIV (b) viruses. The distribution of diameters were fitted to a Gamma and Gaussian distributions respectively. The mean diameters and standard deviations of the data are shown.
 
 We estimated the mean and standard deviation of the structural parameters from the distributions and obtained: LLF = 650 ± 430 nm, LSF = 200 ± 100 nm, DLS = 338 ± 94 nm, DSS = 190 ± 10 nm. For the rod-shaped particles, we observed that the width WRD = 135 ± 30 nm and the length LRD = 610 ± 350 nm (all rounded to two significant figures, ± represents the standard deviation of the distribution). These values are distributed around two populations as shown on the contour plot in Figure 4(d).
 
@@ -67,9 +179,17 @@ However, we note that the radius analysis based on the area of the particle used
 
 It should be noted that the small spherical distribution is centred on the value of optical resolution of our SIM microscope, which indicates that the small spherical structures the small spherical structures are smaller than the point-spread-function.
 
-## MiLeSIM is capable of assaying influenza strains used for vaccine production in purified and non-purified samples from the production line
+### MiLeSIM is capable of assaying influenza strains used for vaccine production in purified and non-purified samples from the production line
 
 We applied our approach to four different strains of Live Attenuated Influenza Virus (LAIV) immuno-labelled for the glycoprotein Hemagglutinin (HA) present on the exterior of the viral envelope. The shape of the virus particles obtained here were classified using the same classifier as for NDV. The LAIV virus population was dominated by spherical structures (>60%). Figure 5 shows the distribution of particle sizes for four virus strains: a B-Victoria subtype (B/Brisbane/60/2008), a B-Yamagata subtype (B/Phuket/3073/2013) and two subtype A H1N1 strains (A/South Dakota/06/07 and A/Bolivia/559/2013). The fractions of small and large spherical particles are shown, as well as the equivalent radii and representative images of the viruses. It is clear that B-Victoria particles consist of mostly large hollow particles with an equivalent radius of ~130 nm, a value that is in good agreement with the ELM analysis and a resolution of 90 nm (Figure 4—figure supplement 1(b)).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig5-v2.jpg)
+
+**Figure 5.:** 2 types of B and A viruses were analysed here. The population was dominated by small and large spherical particles. The distributions of equivalent radius are shown here for both the large and small spherical for direct comparisons. The number of particles analysed were N = 3,821, 4704, 1062 and 1756 for B/Brisbane/60/2008 (B-Victoria), B/Phuket/3073/2013 (B-Yamagata), A/South Dakota/06/2007 and A/Bolivia/559/2013 respectively. Images of individual particles cover a field of view of 1.6 × 1.6 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40183/elife-40183-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) TIRF-SIM images. The images acquired here using PHF show an identical image quality as with highly purified samples. (b) Structural analysis of N = 1295 virus particles. Images of individual particles cover a field of view of 1.6 × 1.6 µm.
 
 In contrast, the B-Yamagata strain shows small and large particles of equal amount, indicating that the particles sizes are distributed around the region of overlap between small and large particles. This is confirmed by the nearly identical equivalent radius distributions.
 
@@ -87,19 +207,19 @@ Our particular classification uses random forest with a selection of predictors 
 
 ## Materials and methods
 
-## Sample preparation
+### Sample preparation
 
 The purified NDV samples were prepared on cover slips as previously described (Laine et al., 2015). Briefly, viruses were adhered on poly-L-lysine-coated Ibidi 8-well dishes, fixed, permeabilised and immuno-labelled for the envelope glycoprotein Hemagglutinin-Neuraminidase (HN) with primary antibodies (mouse anti-hemagglutinin-neuraminidase HN, Abcam, UK) followed by secondary labelling (goat anti-mouse labelled with Alexa Fluor 647 for dSTORM, with Alexa Fluor 488 for TIRF-SIM and with ATTO647-N for STED, Abcam, UK).
 
 The LAIV samples were prepared identically but using primary antibodies originating from MedImmune in-house, non-commercially available monoclonals that target the viral glycoprotein Hemagglutinin (HA) present on the exterior of the viral envelope: F16 mouse antibody for B-Victoria, Infa0121 mouse antibody for B-Yamagata and FY1 human antibody (Kallewaard et al., 2016) for A South Dakota and A Bolivia. The corresponding secondary antibodies were used (donkey anti-mouse DyLight 488 labelled or rabbit anti-human DyLight 488 labelled antibodies, ThermoFisher). All virus samples originated from the monovalent bulk (MVB) and are therefore highly purified, unless indicated in the text, where the direct pool harvest fluid (PHF) was used.
 
-## TIRF-SIM, STED and dSTORM imaging
+### TIRF-SIM, STED and dSTORM imaging
 
 Our custom-built TIRF-SIM system was described previously (Young et al., 2016). We used an Olympus UAPON 100x TIRF NA = 1.49 and an Orca Flash 4.0 camera, with a sample pixel size of 64 nm. A total of 9 SIM images were acquired (three phases, three orientations) with a camera exposure time of 200 ms and ~250 µW of 488 nm laser, measured at the back aperture of the objective. The SIM images were obtained using the reconstruction code provided by Dr Lin Shao (Shao et al., 2011), providing images with doubled resolution and 32 nm final pixel size using a Wiener filter of 0.01. The STED imaging was performed on our custom-built STED microscope as described previously (Mahou et al., 2015). The dSTORM imaging was performed on a custom-built single-molecule microscope previously described (Ströhl et al., 2017; Wong et al., 2017) and with mercaptoethylamine (MEA) buffer as previously described (Laine et al., 2015). The dSTORM image reconstruction was carried out using rapidSTORM 3 (Wolter et al., 2012).
 
 The resolution achieved by the TIRF-SIM microscope was assessed by identifying the edge of the spatial frequency support using the SIMcheck plugin (Ball et al., 2015), as shown in Figure 1—figure supplement 1. For STED microscopy, the resolution was estimated from cross-sections of 20 nm beads and reporting the full width at half maximum (FWHM). The dSTORM resolution reported here was obtained from the FWHM of the localization precision, estimated by (Thompson et al., 2002).
 
-## Classification
+### Classification
 
 All segmentations, predictors extractions and classifications were performed using MATLAB (Mathworks). The code is freely available (Laine, 2018). A general diagram of the method is shown in Figure 1—figure supplement 1. The segmentation was obtained by an initial Otsu binarization and refined by active contour. This allowed a better outline of the particles and efficient separation of particles in close proximity. The particles that were judged too small or too dim to be real particles (based on criteria obtained from the control sample) were excluded from further analysis.
 
@@ -107,24 +227,96 @@ The basic shape features were extracted using the MATLAB function regionprops. 
 
 The classification was performed using a random forest algorithm. The training dataset was made of 370 manually labelled individual particles and was used to train the random forest across 60 epochs. The classification was validated by 10-fold cross validation on the same dataset. The confusion matrix obtained from this cross-validation is shown in Figure 3. At the training stage, the training dataset was augmented 5-fold by transforming the images with image translation and rotation randomly picked between 0 and 1 pixel and between 0 and 360 degrees respectively.
 
-The accuracy of the model was estimated by calculating the fraction of correctly classified particles across all classes.accuracy=Number of particles correctly classifiedTotal number of particles
+The accuracy of the model was estimated by calculating the fraction of correctly classified particles across all classes.
 
-## Predictor scoring
+$$
+accuracy=\frac{Numberofparticlescorrectlyclassified}{Totalnumberofparticles}
+$$
 
-The predictors were scored by computing the accuracy of the random forest trained on the training dataset but with only subsets of features. Out of the 24 predictors all combinations of 2, 3, 4, 24, 23 and 22 predictors were tested corresponding to a total of 13,227 combinations of predictors. For each combination of predictors, the accuracy obtained was split equally across the different predictors used, producing a ‘local’ accuracy for each feature. This local score was average across all combinations using a specific feature to obtain the global score.Si=1Nci∑j=1NcaijPjnj
+### Predictor scoring
+
+The predictors were scored by computing the accuracy of the random forest trained on the training dataset but with only subsets of features. Out of the 24 predictors all combinations of 2, 3, 4, 24, 23 and 22 predictors were tested corresponding to a total of 13,227 combinations of predictors. For each combination of predictors, the accuracy obtained was split equally across the different predictors used, producing a ‘local’ accuracy for each feature. This local score was average across all combinations using a specific feature to obtain the global score.
+
+$$
+S_{i}=\frac{1}{N_{c}^{i}}\sumj=1N_{c}a_{ij}\frac{P_{j}}{n_{j}}
+$$
 
 Where Si is the global score of the feature i, Nci is the total number of combinations tested involving feature i, aij is a factor reflecting the presence of the feature i in the combination j. aij is equal to one if i is present in j, 0 otherwise. Pj is the accuracy of the combination j, Nc is the total number of combination tested and nj is the number of features present in the combination j.
 
-## Quantitative analysis
+### Quantitative analysis
 
 All quantitative analyses were performed using MATLAB (Mathworks). The code is freely available (Laine, 2018). The length of the filamentous structures were extracted by measuring the geodesic distance along the skeletonized image of the filament. The ELM analysis is freely available (Manetsberger et al., 2015) and the code was adapted to insert within the workflow of our approach. For ELM analysis, we observed no significant ellipticity in the spherical virus particles and fitted spherical shapes to extract the radius of the particles (Figure 4—figure supplement 1).
 
-The equivalent radius r of the spherical particles were simply calculated from the area A of the segmented particle.r=Aπ
+The equivalent radius r of the spherical particles were simply calculated from the area A of the segmented particle.
 
-The image model for the rod-shaped particles is presented in Figure 1—figure supplement 1. Briefly, the backbone of the particle was extracted by image thinning and then dilated by a disk-shaped kernel of radius equal to half of the width of the rod. The length of the rod could be adjusted by shortening the ends of the backbone or by extrapolating it outwards to lengthen it. The interior pixels of the image obtained were removed to leave the outline of the particle shape. This outline was then convolved with a Gaussian kernel in order to take into account the effect of the image resolution (here 90 nm). The intensity, the width and length of the model image were adjusted to minimize the sum of the square difference of intensity χ2.χ2=∑ijImi,j-Id(i,j)2
+$$
+r=\sqrt{\frac{A}{\pi}}
+$$
+
+The image model for the rod-shaped particles is presented in Figure 1—figure supplement 1. Briefly, the backbone of the particle was extracted by image thinning and then dilated by a disk-shaped kernel of radius equal to half of the width of the rod. The length of the rod could be adjusted by shortening the ends of the backbone or by extrapolating it outwards to lengthen it. The interior pixels of the image obtained were removed to leave the outline of the particle shape. This outline was then convolved with a Gaussian kernel in order to take into account the effect of the image resolution (here 90 nm). The intensity, the width and length of the model image were adjusted to minimize the sum of the square difference of intensity χ2.
+
+$$
+χ^{2}=\sum_{ij}I_{m}i,j-I_{d}(i,j)^{2}
+$$
 
 Where i and j refer to the indices in the image, Im(i,j) is the image model, and Id(i,j) is the data image.
 
-## Supplementary Note 1: Throughput of the method
+### Supplementary Note 1: Throughput of the method
 
 The imaging throughput of the method can be assessed in terms of number of particles imaged per second. The field-of-view achievable in our TIRF-SIM system is ~32 µm x 32 µm and a high quality sample preparation can yield a virus particle density of ~1 particle/µm2. Therefore, with an acquisition time of 200 ms/SIM raw frame (with a total of 9 frames), we assess that our single frame particle throughput can reach ~500 imaged particles/s. However, the acquisition of two consecutive fields-of-view are affected by imaging dead time as a consequence of stage movement and refocussing. In the study presented here, this step was done manually and took approximately 2–3 s. Therefore, a practical throughput achievable for the imaging is of the order of ~220 particles/s. We note however that both acquisition times and the stage movement time can be easily reduced by increasing illumination power and automation respectively. This makes the 500 particles/s not an unreasonable estimation for the achievable throughput of a further optimised acquisition. The throughput of the method can also be regarded as the time necessary to perform the complete study from sample preparation to analysis. Table 2 indicates typical times necessary to perform the individual steps of the workflow. This table indicates that a full structural analysis of a particular sample can be obtained within a day.
+
+**Table 2.**
+ Estimation of the time necessary to perform individual steps involved in MiLeSIM.Sample preparation was estimated based on standard immuno-labelling protocols. The computational times were assessed on an analysis machine with an i7 processor at 3.5 GHz and 64 GB of RAM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Description</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample preparation</td>
+      <td>Plating, permeabilising and immune-labelling of virus particles</td>
+      <td>2–3 hr</td>
+    </tr>
+    <tr>
+      <td>Instrument set-up</td>
+      <td>Quality check of set-up alignment, calibration and sample mounting</td>
+      <td>30 min</td>
+    </tr>
+    <tr>
+      <td>Imaging</td>
+      <td>Image acquisition, stage movement and refocus for ~ 50,000 particles (50 fields-of-view)</td>
+      <td>30 min</td>
+    </tr>
+    <tr>
+      <td>SIM reconstruction</td>
+      <td>SR reconstruction of 50 fields-of-view</td>
+      <td>&lt;30 min</td>
+    </tr>
+    <tr>
+      <td>Classification on unknown data</td>
+      <td>Extraction of predictors and classification (for 50 fields-of view)</td>
+      <td>1h</td>
+    </tr>
+    <tr>
+      <td>Structural analysis</td>
+      <td>Extraction of structural parameters for each classes (for 50 fields-of view)</td>
+      <td>1h</td>
+    </tr>
+    <tr>
+      <td>Data curation for training dataset</td>
+      <td>Generating manually labelled particle dataset (performed only once) for ~ 500 particles</td>
+      <td>2h</td>
+    </tr>
+    <tr>
+      <td>Generating classification model</td>
+      <td>Data augmentation, extraction of predictors, training of the model, cross-validation on ~ 500 particles (performed only once)</td>
+      <td>5–6 hr</td>
+    </tr>
+  </tbody>
+</table>

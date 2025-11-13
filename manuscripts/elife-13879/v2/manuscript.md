@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.13879.001 The correct distribution and activity of secreted signaling proteins called morphogens is required for many developmental processes. Nodal morphogens play critical roles in embryonic axis formation in many organisms. Models proposed to generate the Nodal gradient include diffusivity, ligand processing, and a temporal activation window. But how the Nodal morphogen gradient forms in vivo remains unclear. Here, we have measured in vivo for the first time, the binding affinity of Nodal ligands to their major cell surface receptor, Acvr2b, and to the Nodal inhibitor, Lefty, by fluorescence cross-correlation spectroscopy. We examined the diffusion coefficient of Nodal ligands and Lefty inhibitors in live zebrafish embryos by fluorescence correlation spectroscopy. We also investigated the contribution of ligand degradation to the Nodal gradient. We show that ligand clearance via degradation shapes the Nodal gradient and correlates with its signaling range. By computational simulations of gradient formation, we demonstrate that diffusivity, extra-cellular interactions, and selective ligand destruction collectively shape the Nodal morphogen gradient. DOI: http://dx.doi.org/10.7554/eLife.13879.001
+The correct distribution and activity of secreted signaling proteins called morphogens is required for many developmental processes. Nodal morphogens play critical roles in embryonic axis formation in many organisms. Models proposed to generate the Nodal gradient include diffusivity, ligand processing, and a temporal activation window. But how the Nodal morphogen gradient forms in vivo remains unclear. Here, we have measured in vivo for the first time, the binding affinity of Nodal ligands to their major cell surface receptor, Acvr2b, and to the Nodal inhibitor, Lefty, by fluorescence cross-correlation spectroscopy. We examined the diffusion coefficient of Nodal ligands and Lefty inhibitors in live zebrafish embryos by fluorescence correlation spectroscopy. We also investigated the contribution of ligand degradation to the Nodal gradient. We show that ligand clearance via degradation shapes the Nodal gradient and correlates with its signaling range. By computational simulations of gradient formation, we demonstrate that diffusivity, extra-cellular interactions, and selective ligand destruction collectively shape the Nodal morphogen gradient.
 
 ## Introduction
 
@@ -35,65 +35,140 @@ In this study, we have examined the diffusion coefficient of Nodals in live zebr
 
 ## Results
 
-## Nodal ligands demonstrate similar mobility profiles
+### Nodal ligands demonstrate similar mobility profiles
 
-To visualize Nodal ligands in vivo, we fused the enhanced green fluorescent protein (EGFP) with Sqt, Cyc, Sqt
+To visualize Nodal ligands in vivo, we fused the enhanced green fluorescent protein (EGFP) with Sqt, Cyc, SqtCyc2 and CycΔ2. The CycΔ2mutant, which lacks a lysosomal targeting region in the Cyc pro-domain, shows significantly increased stability and signaling range over wild type Cyc protein (Tian et al., 2008 and Figure 1). SqtCyc2 chimeric protein harbors the atypical lysosome-targeting region from Cyc, and shows reduced stability and signaling range in comparison to Sqt (Tian et al., 2008). We tested the activity of the fusion proteins by comparing nodal target gene induction by the various fusion proteins to that of their untagged counterparts, and found similar activity (Figure 1A–D and Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13879/elife-13879-fig1-v2.jpg)
 
-**Figure 1.:** (A) Constructs used for profiling fluorescent Nodal fusion proteins in embryos. S, signal peptide; Pro, pro-domain; Mat, mature-domain; sec-EGFP, secreted EGFP. Red arrow indicates convertase cleavage sites. (B) Injection procedure. (C) Confocal image of an injected embryo at 30% epiboly stage. White crosses mark the extracellular spots where the FCS measurements were taken. (D) Representative images of RNA in situ hybridization showing the activity range of Sqt, Cyc and mutant Nodals. Source cells are marked in brown and blue staining indicates expression of the Nodal target ntl. Scale bars, 50 μm. (E) Representative auto-correlation functions (dots) and fittings (line) of Sqt-EGFP (green) and sec-EGFP (black). (F) Table showing diffusion coefficients of the Nodal and Lefty fusion proteins as measured by FCS.DOI: http://dx.doi.org/10.7554/eLife.13879.00310.7554/eLife.13879.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.13879.004
+**Figure 1.:** (A) Constructs used for profiling fluorescent Nodal fusion proteins in embryos. S, signal peptide; Pro, pro-domain; Mat, mature-domain; sec-EGFP, secreted EGFP. Red arrow indicates convertase cleavage sites. (B) Injection procedure. (C) Confocal image of an injected embryo at 30% epiboly stage. White crosses mark the extracellular spots where the FCS measurements were taken. (D) Representative images of RNA in situ hybridization showing the activity range of Sqt, Cyc and mutant Nodals. Source cells are marked in brown and blue staining indicates expression of the Nodal target ntl. Scale bars, 50 μm. (E) Representative auto-correlation functions (dots) and fittings (line) of Sqt-EGFP (green) and sec-EGFP (black). (F) Table showing diffusion coefficients of the Nodal and Lefty fusion proteins as measured by FCS.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/13879/elife-13879-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Figure 1).Tagged Nodals show similar activity compared to their untagged counterparts. (A) Induction of ntl in embryos overexpressing Nodal or Nodal fusions. Five picogram aliquots of RNA was injected into one-cell stage wild-type embryos and ntl transcript expression was examined at 50% epiboly. Animal pole views of embryos showing endogenous ntl expression (I), and mild (II) or massive (III and IV) expansion of the ntl expression domain. Embryos were assessed and counted accordingly. Percentages for each class are shown in the histogram. (C) Induction of gsc in embryos overexpressing Nodal or Nodal fusions. Animal pole views of embryos showing endogenous gsc expression (I), mild expansion (II) or massive expansion (III and IV) of gsc expression domains. (C) Five picogram aliquots of RNA encoding Nodal or Nodal fusions were injected into one-cell at the 128-cell stage with a lineage tracer (Biotin-Dextran, brown color staining). Range of signaling was examined by detecting ntl transcription (blue/purple color staining). Scale bars represent 100 µm.DOI: http://dx.doi.org/10.7554/eLife.13879.005
+**Figure 1—figure supplement 1.:** Tagged Nodals show similar activity compared to their untagged counterparts. (A) Induction of ntl in embryos overexpressing Nodal or Nodal fusions. Five picogram aliquots of RNA was injected into one-cell stage wild-type embryos and ntl transcript expression was examined at 50% epiboly. Animal pole views of embryos showing endogenous ntl expression (I), and mild (II) or massive (III and IV) expansion of the ntl expression domain. Embryos were assessed and counted accordingly. Percentages for each class are shown in the histogram. (C) Induction of gsc in embryos overexpressing Nodal or Nodal fusions. Animal pole views of embryos showing endogenous gsc expression (I), mild expansion (II) or massive expansion (III and IV) of gsc expression domains. (C) Five picogram aliquots of RNA encoding Nodal or Nodal fusions were injected into one-cell at the 128-cell stage with a lineage tracer (Biotin-Dextran, brown color staining). Range of signaling was examined by detecting ntl transcription (blue/purple color staining). Scale bars represent 100 µm.
 
 The diffusivity of extracellular signaling molecules can determine their distribution and activity range. To examine the diffusivity of the Nodal ligands, we determined the diffusion coefficients of Sqt-, Cyc-, Sqt Cyc2- and CycΔ2-EGFP fusion proteins in vivo using FCS. EGFP-tagged Nodal fusion proteins were expressed from a localized source and FCS measurements were acquired in the extracellular space at various distances from the source cells (Figure 1 and Figure 1—source data 1). All the Nodal-GFP fusions, including Sqt, Cyc, SqtCyc2 and CycΔ2, as well as Lefty1 and Lefty2 fusions show very similar diffusion coefficients (Figure 1F). These results suggest that the free diffusivity alone is unlikely to differentiate the range and activity of the Nodal proteins.
 
-## Sqt binds to Acvr2b receptor with higher affinity compared to Cyc
+### Sqt binds to Acvr2b receptor with higher affinity compared to Cyc
 
-Cell surface receptors of extracellular signaling molecules can bind to the diffusible ligands, and thereby reduce their distribution range. In this scenario, the mobility of ligands that bind with higher affinity to the receptors will be more effectively retarded. To quantitate the binding affinity of Nodal ligands to the receptors, we determined the apparent dissociation constant (K
+Cell surface receptors of extracellular signaling molecules can bind to the diffusible ligands, and thereby reduce their distribution range. In this scenario, the mobility of ligands that bind with higher affinity to the receptors will be more effectively retarded. To quantitate the binding affinity of Nodal ligands to the receptors, we determined the apparent dissociation constant (Kd) of Sqt and Cyc in vivo (Foo et al., 2012b) with the predominant Nodal receptor Acvr2b, using FCCS. To uncouple binding from signaling events within the cytoplasm, we fused the extracellular and trans-membrane domains of Acvr2b lacking the intracellular kinase domain, to a red fluorescent protein, mCherry (Figure 2A–C). Sqt-EGFP, Cyc-EGFP or control secreted eGFP (sec-EGFP) fusion proteins were expressed from a localized source in embryos that uniformly expressed Acvr2b-mCherry, and correlation curves were obtained to infer the Kd. Surprisingly, the Kd of Sqt-Acvr2b is 65 ± 7 nM and the Kd of Cyc-Acvr2b is 124 ± 12 nM (Figure 2D–I). This result suggests Sqt binds with Acvr2b with an approximately twofold higher affinity compared to Cyc.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13879/elife-13879-fig2-v2.jpg)
 
-**Figure 2.:** (A) Sqt-/Cyc-/sec-EGFP and Acvr2b-mCherry constructs. S, signal peptide; Pro, pro-domain; Mat, mature-domain; ECM, extracellular and transmembrane domain. Red arrows indicate convertase cleavage sites. Sqt signal peptides and pro-domain were used in sec-EGFP constructs. (B) Injection procedure. (C) Representative image of an injected embryo at 30% epiboly stage showing the expression patterns of the fusion proteins. Scale bar represents 50 μm. (D,E,F) Representative auto-correlation (ACF) and cross-correlation functions (CCF) and fits. (G,H,I) Individual Ln(K) frequency histogram and Gaussian fitting (red curve). Inset, concentration plot and linear regression (red line). X axis, concentration of bound protein (Cdgr (x10-9 M)); Y axis, products of concentrations of free proteins (Cg x Cr (x10-16 M)). n = number of data points (number of embryos).DOI: http://dx.doi.org/10.7554/eLife.13879.006
+**Figure 2.:** (A) Sqt-/Cyc-/sec-EGFP and Acvr2b-mCherry constructs. S, signal peptide; Pro, pro-domain; Mat, mature-domain; ECM, extracellular and transmembrane domain. Red arrows indicate convertase cleavage sites. Sqt signal peptides and pro-domain were used in sec-EGFP constructs. (B) Injection procedure. (C) Representative image of an injected embryo at 30% epiboly stage showing the expression patterns of the fusion proteins. Scale bar represents 50 μm. (D,E,F) Representative auto-correlation (ACF) and cross-correlation functions (CCF) and fits. (G,H,I) Individual Ln(Kd) frequency histogram and Gaussian fitting (red curve). Inset, concentration plot and linear regression (red line). X axis, concentration of bound protein (Cgr (x10-9 M)); Y axis, products of concentrations of free proteins (Cg x Cr (x10-16 M)). n = number of data points (number of embryos).
 
-## Sqt binds to Lefty2 inhibitor with higher affinity compared to Cyc
+### Sqt binds to Lefty2 inhibitor with higher affinity compared to Cyc
 
-The Nodal antagonist Lefty prevents Nodal proteins from binding to their receptors and has the potential to influence the distribution of Nodal ligands. To test if binding to the inhibitor affects Nodal ligand distribution, we determined the affinity of Sqt and Cyc to Lefty2 in vivo by co-expressing Lefty-mCherry with Sqt-EGFP or Cyc-EGFP from a localized source and measuring the K
+The Nodal antagonist Lefty prevents Nodal proteins from binding to their receptors and has the potential to influence the distribution of Nodal ligands. To test if binding to the inhibitor affects Nodal ligand distribution, we determined the affinity of Sqt and Cyc to Lefty2 in vivo by co-expressing Lefty-mCherry with Sqt-EGFP or Cyc-EGFP from a localized source and measuring the Kdin the extracellular space of embryonic blastula cells at various distances from the source (Figure 3A–C). The Kd of Sqt-Lefty2 is 29 ± 1.2 nM and Cyc-Lefty2 Kd is 50 ± 3 nM (Figure 3D–I), indicating an approximately twofold higher affinity of Sqt-Lefty2 binding in comparison to Cyc-Lefty2 binding. The differential affinity of the Nodals for Lefty could fine-tune their activity range by removing freely diffusing Nodals from the signaling pool.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13879/elife-13879-fig3-v2.jpg)
 
-**Figure 3.:** (A) Constructs used for injection. S, signal peptide; Pro, pro-domain; Mat, mature-domain. Red arrows indicate the convertase cleavage sites. (B) Injection procedure. (C) Confocal image of an injected embryo at 30% epiboly showing the expression patterns of the fusion proteins. Scale bar represents 50 μm. (D, E, F) Representative auto- and cross-correlation functions (ACF; CCF) and fittings. (G, H, I) Individual Ln(K) frequency histogram and Gaussian fits (red curve). Inset, concentration plot and linear regression (red line). X axis, concentration of bound protein (Cdgr(x10-9 M)); Y axis, products of concentrations of free proteins (Cg x Cr(x10-17 M)). n = number of data points (i.e., number of embryos).DOI: http://dx.doi.org/10.7554/eLife.13879.007
+**Figure 3.:** (A) Constructs used for injection. S, signal peptide; Pro, pro-domain; Mat, mature-domain. Red arrows indicate the convertase cleavage sites. (B) Injection procedure. (C) Confocal image of an injected embryo at 30% epiboly showing the expression patterns of the fusion proteins. Scale bar represents 50 μm. (D, E, F) Representative auto- and cross-correlation functions (ACF; CCF) and fittings. (G, H, I) Individual Ln(Kd) frequency histogram and Gaussian fits (red curve). Inset, concentration plot and linear regression (red line). X axis, concentration of bound protein (Cgr(x10-9 M)); Y axis, products of concentrations of free proteins (Cg x Cr(x10-17 M)). n = number of data points (i.e., number of embryos).
 
-## The range of Nodal factors correlates with their stability
+### The range of Nodal factors correlates with their stability
 
-To visualize Nodal gradients in zebrafish embryos, we expressed Sqt, Cyc, Sqt
+To visualize Nodal gradients in zebrafish embryos, we expressed Sqt, Cyc, SqtCyc2 and CycΔ2-EGFP fusion proteins from a localized source (Figure 4A–D). Consistent with findings by Müller et al., Sqt-EGFP was found to reach the edges of the blastula with no more than 50–60% loss in intensity, whereas the intensity of Cyc-EGFP fusion protein falls steeply from the source (Figure 4B and Figure 4—source data 1). Interestingly, the gradient of the deletion mutant, CycΔ2-EGFP, which has a longer signaling range than Cyc-EGFP, was significantly shallower than that of Cyc, and the gradient of the SqtCyc2-EGFP chimera (which has reduced signaling range compared to Sqt) was steeper than that of Sqt-EGFP (Figure 4B and Figure 4—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13879/elife-13879-fig4-v2.jpg)
 
-**Figure 4.:** (A) Upper, representative image and region of interest (red rectangle) for measuring distribution; lower, inset showing magnified region of interest. (B) Normalized distribution profiles and fitting. Error bars indicate standard error of mean (s.e.m). (C) Representative western blots of Nodal proteins harvested from HEK293T cell culture medium at different time points after removal of the source. The Nodal proteins were immuno-precipitated with anti-FLAG antibody and detected by western blot with the same antibody. Schematics on the left show the position of the FLAG epitope tags in each construct. (D) The profile of Nodal protein levels over time after source removal. The data points were fitted with an exponential decay model. Error bars indicate s.e.m.DOI: http://dx.doi.org/10.7554/eLife.13879.00810.7554/eLife.13879.009Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.13879.009
+**Figure 4.:** (A) Upper, representative image and region of interest (red rectangle) for measuring distribution; lower, inset showing magnified region of interest. (B) Normalized distribution profiles and fitting. Error bars indicate standard error of mean (s.e.m). (C) Representative western blots of Nodal proteins harvested from HEK293T cell culture medium at different time points after removal of the source. The Nodal proteins were immuno-precipitated with anti-FLAG antibody and detected by western blot with the same antibody. Schematics on the left show the position of the FLAG epitope tags in each construct. (D) The profile of Nodal protein levels over time after source removal. The data points were fitted with an exponential decay model. Error bars indicate s.e.m.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/13879/elife-13879-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Figure 4).Representative immunoblots showing protein degradation over time. Left, representative immunoblots. Equal amounts of sec-GFP-3xFLAG supernatant was added in all of the samples as input controls. Right, quantitation and fitting of protein expression levels. Each experiment was repeated three times, and the band intensity of the Nodal or Lefty proteins was normalized to GFP (input control) and to time 0 hr. The plots were then fitted with exponential decay (equation shown on the upper right corner).DOI: http://dx.doi.org/10.7554/eLife.13879.010
+**Figure 4—figure supplement 1.:** Representative immunoblots showing protein degradation over time. Left, representative immunoblots. Equal amounts of sec-GFP-3xFLAG supernatant was added in all of the samples as input controls. Right, quantitation and fitting of protein expression levels. Each experiment was repeated three times, and the band intensity of the Nodal or Lefty proteins was normalized to GFP (input control) and to time 0 hr. The plots were then fitted with exponential decay (equation shown on the upper right corner).
 
 To determine the relative stability of Sqt, Cyc, CycΔ2 and SqtCyc2, we expressed FLAG-tagged versions of the proteins in HEK293T cells and examined the amount of secreted protein in the supernatant after various periods (Figure 4C,D and S2). By fitting the normalized band intensity acquired from immune-blots with an exponential decay model, we inferred the degradation rates (0.166 × 10−4 /s for Cyc-FLAG, 0.093 × 10−4 /s for CycΔ2-FLAG 0.090 × 10−4 /s for SqtCyc2-FLAG and 0.003 × 10−4 /s for Sqt-FLAG). The decay rate of these proteins shows a trend consistent with their gradient profile and their signaling range (Figure 4A–D, Figure 4—source data 1, Figure 1 and S2). These results indicate a strong correlation between Nodal ligand stability and the gradient.
 
-## Simulation of the Nodal gradient
+### Simulation of the Nodal gradient
 
-To test the validity of our measurements, we performed simulations to model the Nodal gradient. Modeling of the Nodal morphogen gradient requires a range of different parameters, of which some have been measured in vivo and are available, and we have in this study determined binding affinities, and inferred concentrations (Table 1). We found the dissociation constants, KD, of Sqt and Cyc to their major cell surface receptor Acvr2, to be ~60 and 120 nM, respectively. In addition, we determined the diffusion coefficients of the Nodals to be ~60 μm2/s. From the amplitude of our FCS measurements, we estimated the concentration of the Nodal factors to be on the order of 102 nM. We determined that the degradation rate for Cyc is higher than that for Sqt, confirming previous work (Tian et al., 2008; Jing et al., 2006). Nonetheless, because our degradation rate values were estimated from cell culture, in our simulations we use the values of 0.0001/s and 0.0005/s for Sqt and Cyc, respectively, documented in or estimated from previous reports (Jing et al., 2006;  Müller et al., 2012). In the simulations we produced particles with 0.07/s to 0.7/s in the simulation volume (corresponding to a production rate of 0.3–3 pM/s) to obtain sufficient number of particles for statistical analysis. The number of particles at equilibrium is given by the ratio of production over degradation rate, which was 700–7000 for a degradation rate of 0.0001/s and 140–1400 for 0.0005/s. Importantly, the production rate itself does not change the gradient shape and only the gradient amplitude is altered. Therefore, the gradient shape is determined by the degradation rate and diffusion.10.7554/eLife.13879.011Table 1.Simulation parametersDOI: http://dx.doi.org/10.7554/eLife.13879.011ParameterSqtCycReferenceKd60 nM120 nMThis workDegradation rate0.0001/s0.0005/sEstimated from Jing et al., 2006; Müller et al., 2012Ligand concentration~100 nM~100 nMEstimated from this workReceptor concentration40 μM40 μMEstimated from this workDfree [μm2/s]6060This workDtortuosity [μm2/s]3030This work and Müller et al., 2013Deff [μm2/s]0.0450.09This work
+To test the validity of our measurements, we performed simulations to model the Nodal gradient. Modeling of the Nodal morphogen gradient requires a range of different parameters, of which some have been measured in vivo and are available, and we have in this study determined binding affinities, and inferred concentrations (Table 1). We found the dissociation constants, KD, of Sqt and Cyc to their major cell surface receptor Acvr2, to be ~60 and 120 nM, respectively. In addition, we determined the diffusion coefficients of the Nodals to be ~60 μm2/s. From the amplitude of our FCS measurements, we estimated the concentration of the Nodal factors to be on the order of 102 nM. We determined that the degradation rate for Cyc is higher than that for Sqt, confirming previous work (Tian et al., 2008; Jing et al., 2006). Nonetheless, because our degradation rate values were estimated from cell culture, in our simulations we use the values of 0.0001/s and 0.0005/s for Sqt and Cyc, respectively, documented in or estimated from previous reports (Jing et al., 2006;  Müller et al., 2012). In the simulations we produced particles with 0.07/s to 0.7/s in the simulation volume (corresponding to a production rate of 0.3–3 pM/s) to obtain sufficient number of particles for statistical analysis. The number of particles at equilibrium is given by the ratio of production over degradation rate, which was 700–7000 for a degradation rate of 0.0001/s and 140–1400 for 0.0005/s. Importantly, the production rate itself does not change the gradient shape and only the gradient amplitude is altered. Therefore, the gradient shape is determined by the degradation rate and diffusion.
 
-First, we determined how the fact that particles have to transverse longer paths around obstacles (e.g., cells) during diffusion, renders diffusion apparently slower, and influences the effective diffusion coefficient (
+**Table 1.**
+ Simulation parameters
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Sqt</th>
+      <th>Cyc</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kd</td>
+      <td>60 nM</td>
+      <td>120 nM</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>Degradation rate</td>
+      <td>0.0001/s</td>
+      <td>0.0005/s</td>
+      <td>Estimated from Jing et al., 2006; Müller et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Ligand concentration</td>
+      <td>~100 nM</td>
+      <td>~100 nM</td>
+      <td>Estimated from this work</td>
+    </tr>
+    <tr>
+      <td>Receptor concentration</td>
+      <td>40 μM</td>
+      <td>40 μM</td>
+      <td>Estimated from this work</td>
+    </tr>
+    <tr>
+      <td>Dfree [μm2/s]</td>
+      <td>60</td>
+      <td>60</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>Dtortuosity [μm2/s]</td>
+      <td>30</td>
+      <td>30</td>
+      <td>This work and Müller et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Deff [μm2/s]</td>
+      <td>0.045</td>
+      <td>0.09</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
+First, we determined how the fact that particles have to transverse longer paths around obstacles (e.g., cells) during diffusion, renders diffusion apparently slower, and influences the effective diffusion coefficient (Figure 5A,B and Videos 1, 2). This is referred to as tortuosity by Müller et al. (2013) and reduces diffusion maximally by a factor 2 (Müller et al., 2013). In agreement with this, we determined that for cells with 10 μm diameter and cell membrane-to cell membrane distance of 2 μm, we obtain a reduction of diffusion by a factor 1.84 (Figure 5D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/13879/elife-13879-fig5-v2.jpg)
 
-**Figure 5.:** (A) Free diffusion with a diffusion coefficient D = 60 μm2/s. (Dashed circles indicate positions of cells in later simulations but not taken account of in this case). (B) Diffusion in the presence of cells. (C) Diffusion in the presence of cells and binding with an average number of free particles of 0.003, i.e. 99.7% of all particles are bound on average. Simulations were done in a 3D space as described in the text and the diffusion coefficient was D = 60 μm2/s. (D) Comparison of the spread of the particles as a function of the distance from the source (the left border in panels A–C). The concentration curves were fit with a bell curve that describes the diffusion of particles from the source. For free diffusion (A) we recover a diffusion coefficient of D = 63.4 μm2/s close to the input value, and in the presence of cells (B) this reduces to an effective diffusion coefficient of Deff = 33.8 μm2/s, demonstrating the effect of tortuosity. (E) Simulations of diffusion in the presence of cells, and with different amounts of binding. The simulated diffusion coefficient was D = 60 μm2/s. The concentration curves were fit with Equation 8. The recovered effective diffusion coefficients for a fraction of free particles of 0.1, 0.003, and 0.0015 were Deff = 2.99 μm2/s, Deff = 0.09 μm2/s, and Deff = 0.042 μm2/s, respectively, demonstrating the effect of binding on the effective diffusion coefficient. (F) Gradient formation using the effective diffusion coefficients determined from graph E and degradation rates of 0.0001/s and 0.0005/s, respectively. The blue curve represents Cyc, the red curve Sqt. Although Sqt has higher binding affinity and consequently a lower free mobile fraction, its lower degradation rate ensures that Sqt has a less steep gradient. The data was fit with an exponential function yielding gradients of 19 μm for Cyc and and 30 μm for Sqt, respectively.DOI: http://dx.doi.org/10.7554/eLife.13879.012
+**Figure 5.:** (A) Free diffusion with a diffusion coefficient D = 60 μm2/s. (Dashed circles indicate positions of cells in later simulations but not taken account of in this case). (B) Diffusion in the presence of cells. (C) Diffusion in the presence of cells and binding with an average number of free particles of 0.003, i.e. 99.7% of all particles are bound on average. Simulations were done in a 3D space as described in the text and the diffusion coefficient was D = 60 μm2/s. (D) Comparison of the spread of the particles as a function of the distance from the source (the left border in panels A–C). The concentration curves were fit with a bell curve that describes the diffusion of particles from the source. For free diffusion (A) we recover a diffusion coefficient of D = 63.4 μm2/s close to the input value, and in the presence of cells (B) this reduces to an effective diffusion coefficient of Deff = 33.8 μm2/s, demonstrating the effect of tortuosity. (E) Simulations of diffusion in the presence of cells, and with different amounts of binding. The simulated diffusion coefficient was D = 60 μm2/s. The concentration curves were fit with Equation 8. The recovered effective diffusion coefficients for a fraction of free particles of 0.1, 0.003, and 0.0015 were Deff = 2.99 μm2/s, Deff = 0.09 μm2/s, and Deff = 0.042 μm2/s, respectively, demonstrating the effect of binding on the effective diffusion coefficient. (F) Gradient formation using the effective diffusion coefficients determined from graph E and degradation rates of 0.0001/s and 0.0005/s, respectively. The blue curve represents Cyc, the red curve Sqt. Although Sqt has higher binding affinity and consequently a lower free mobile fraction, its lower degradation rate ensures that Sqt has a less steep gradient. The data was fit with an exponential function yielding gradients of 19 μm for Cyc and and 30 μm for Sqt, respectively.
 
-Secondly, we determined how binding affects the effective diffusion coefficient (Figure 5C,E and Video 3). For quantitative analysis, we simulated particles whose diffusion coefficient was recued from 60 to 30 μm2/s due to tortuosity and assumed that a fraction of the particles is bound to binding sites that are homogeneously distributed. The effective diffusion coefficient is reduced more for higher affinities, i.e. when more particles are bound on average. For instance, when 90 or 99% of particles are bound, morphogen diffusion is reduced by a factor 10 or 100, respectively. The actual amount of bound ligand depends on the total concentration of ligand (Lt), receptor (Rt) and the KD:(1)fbound=Kd+Lt+Rt2Lt−(Kd+Lt+Rt)24Lt2−RtLt
+![Video 1.](https://cdn.elifesciences.org/articles/13879/elife-13879-media1.mp4.jpg)
 
-Thirdly, for the simulations we assume that Sqt and Cyc share the receptors, and a ligand concentration of 100 nM is used for both Nodal ligands. The receptor concentration is on the order of 10 μM or more (see next paragraph), and is much higher than that of the ligands. As such, the exact ligand amount does not change the outcome significantly for ligand concentration changes within a factor of ~5. The differences in the gradient length are therefore, a result of diffusion, differential binding of Sqt and Cyc, as well as different degradation rates.10.7554/eLife.13879.015Video 3.Particle movement is hindered further by binding.DOI: http://dx.doi.org/10.7554/eLife.13879.015
+**Video 1.:** Dashed circles indicate positions of cells in later simulations (included here for illustration only, but have no influence on the simulation).
 
-Next, we determined the effective diffusion coefficient that results in a Sqt gradient length consistent with our measured values of about 30 μm. The gradient length is described by a model previously used for Fgf8 diffusion in zebrafish embryos (Müller et al., 2013; Yu et al., 2009):(2)λ=D/kR/Kd+1
+![Video 2.](https://cdn.elifesciences.org/articles/13879/elife-13879-media2.mp4.jpg)
+
+Secondly, we determined how binding affects the effective diffusion coefficient (Figure 5C,E and Video 3). For quantitative analysis, we simulated particles whose diffusion coefficient was recued from 60 to 30 μm2/s due to tortuosity and assumed that a fraction of the particles is bound to binding sites that are homogeneously distributed. The effective diffusion coefficient is reduced more for higher affinities, i.e. when more particles are bound on average. For instance, when 90 or 99% of particles are bound, morphogen diffusion is reduced by a factor 10 or 100, respectively. The actual amount of bound ligand depends on the total concentration of ligand (Lt), receptor (Rt) and the KD:
+
+$$
+f_{bound}=\frac{K_{d}+L_{t}+R_{t}}{2L_{t}}−\sqrt{\frac{(K_{d}+L_{t}+R_{t})^{2}}{4L_{t}^{2}}−\frac{R_{t}}{L_{t}}}
+$$
+
+Thirdly, for the simulations we assume that Sqt and Cyc share the receptors, and a ligand concentration of 100 nM is used for both Nodal ligands. The receptor concentration is on the order of 10 μM or more (see next paragraph), and is much higher than that of the ligands. As such, the exact ligand amount does not change the outcome significantly for ligand concentration changes within a factor of ~5. The differences in the gradient length are therefore, a result of diffusion, differential binding of Sqt and Cyc, as well as different degradation rates.
+
+![Video 3.](https://cdn.elifesciences.org/articles/13879/elife-13879-media3.mp4.jpg)
+
+Next, we determined the effective diffusion coefficient that results in a Sqt gradient length consistent with our measured values of about 30 μm. The gradient length is described by a model previously used for Fgf8 diffusion in zebrafish embryos (Müller et al., 2013; Yu et al., 2009):
+
+$$
+\lambda=\sqrt{\frac{D/k}{R/K_{d}+1}}
+$$
 
 where λ is the gradient length, D is the free diffusion coefficient, k is the clearance rate which is assumed constant, R is the concentration of the receptor, and Kd is the equilibrium dissociation constant, respectively (Table 1). Using a gradient length of about 30 μm and the other values as given in Table 1, we estimate the effective diffusion coefficient to be on the order of 0.045 μm2/s. With a Kd of 60 nM for Sqt and an Lt of 100 nM, this requires a bound fraction fbound of 99.85% and a receptor concentration of ~40 μM. The estimation of the receptor number of 40 μM is based on the value of Deff required to establish the gradient of appropriate dimensions for Sqt. At this time it is not clear whether this concentration comprises only membrane receptors or whether additional binding sites (e.g., in interstitial spaces between cells) contribute to it as shown for Fgf8 (Yu et al., 2009). Any corrections in binding affinities for the receptor or different affinities for additional binding sites would alter the required concentration. Importantly, this number is dependent on the clearance/degradation rates that we have based upon previous reports, and which could change with more precise in vivo measurements. Based on the above, we assume that 40 μM is the upper limit for the receptor concentration. At this receptor concentration, Cyc, with a Kd of 120 nM will have a bound fraction of 99.7% and an effective diffusion coefficient of 0.09 μm2/s.
 
@@ -115,60 +190,90 @@ In conclusion, we find that in addition to hindered diffusion via binding to the
 
 ## Materials and methods
 
-## Generation of constructs
+### Generation of constructs
 
 All the constructs were PCR amplified and cloned into pCS2+ vector with Kozak sequence gccacc immediate 5’ of the start codon. For Cyc and CycΔ2 fusions, EGFP or 3xFLAG (DYKDHDGDYKDHD-IDYKDDDDK) tag was inserted 4 amino acids after the cleavage site (RRGRR). For Sqt and SqtCyc2 fusions, EGFP or 3xFLAG tag was inserted 1 amino acid after the cleavage site (RRHRR). For Lefty1 and Lefty2 fusions, EGFP or 3xFLAG tag was fused to the C-terminus of the protein as previously described (Müller et al., 2012). For Acvr2b fusion, mCherry was fused to the C-terminus of Acvr2b (1–188 aa). For generating the sec-EGFP construct, the EGFP tag was fused to the C-terminus of 4 amino acids after the cleavage site (RRGRR) of Sqt. For sec-EGFP-3xFLAG construct, 3xFLAG tag was fused to the C-terminus of Sec-EGFP (Yu et al., 2009).
 
-## Zebrafish strains
+### Zebrafish strains
 
 Wild-type (AB) fish were maintained at 28.5°C and embryos were obtained from natural matings according to standard procedures and in accordance with institutional animal care regulations.
 
-## Capped RNA synthesis
+### Capped RNA synthesis
 
 The plasmids were linearized with NotI restriction endonuclease (NEB) and transcribed using the mMessage mMachine SP6 Kit (Ambion) to produce capped RNA. Synthetic RNA was purified with P-30 Bio-Spin columns (Bio-Rad, Hercules, CA) followed by phenol/chloroform extraction and ethanol precipitation, and RNA concentration was quantified by Nanodrop (Thermo Fisher Scientific, Waltham, MA) and estimation of agarose gel electrophoresis bands.
 
-## Microinjection and sample preparation
+### Microinjection and sample preparation
 
 To test overall inductivity of the various Nodal fusions, 5 ng of the RNA was mixed with 0.25% phenol red (Sigma, Aldrich, St Louis, MO) and injected into the yolk of 1-cell stage AB wild type embryos. To test the signaling range of the Nodal fusions, single cells of de-chorionated 128-cell stage embryos were injected with 2.5 pg RNA and 0.25% 10kDa biotin-Dextran (Thermo Fisher Scientific). Un-injected embryos from the same batch were used as controls and as reference for staging the embryos. Embryos were fixed at the 50% epiboly stage in 4% paraformaldehyde (PFA) in PBS at 4°C for at least 24 hr. The embryos were subjected to in situ hybridization to detect gsc and ntl expression levels as previously described (Le Good et al., 2005; Müller et al., 2012; Tian et al., 2008).
 
 To generate clones of cells expressing Nodal or Lefty, Sqt, Cyc, Lefty1 or Lefty2 -EGFP RNA (2.5 pg) was injected into single cells of 32–128-cell stage embryos. To determine the dissociation constant of Nodal and Acvr2b, 50 pg RNA encoding Acvr2b-mCherry was injected into 1-cell stage embryos prior to clone generation. The embryos were mounted on glass-bottom dishes (World Precision Instruments) in 0.75% low melting temperature agarose (in 30% Danieau’s solution) at the 30% epiboly stage for confocal imaging and FCS/FCCS measurements.
 
-## Protein expression and detection
+### Protein expression and detection
 
 HEK293T cells were transfected with plasmid DNA encoding 3xFLAG tagged proteins using FuGene HD (Promega, Madison, WI) transfection reagent. The medium with transfection reagent was removed and replaced with fresh Opti-MEM medium (Life Technologies, Carlsbad, CA) 24 hr after addition of transfection reagent. Cell culture supernatants were collected and flash frozen in liquid nitrogen 24 hr after the removal of the transfection reagent. Small aliquots of frozen supernatants were immunoprecipitated with anti-FLAG M2 antibody (Sigma) and protein G dynabeads (Life Technologies), and eluted with 3xFLAG peptide (Sigma). The samples were immunobloted with the same antibody and the signals were detected with a Syngene PXi gel imaging system. The band intensity was quantified using ImageJ. To determine the clearance rate of the proteins, the remaining supernatant was diluted to the same concentration as supernatants from non-transfected cells, mixed with sec-EGFP-3xFLAG supernatant for input control, added to dishes with non-transfected cells and collected at different time points. Proteinase inhibitor cocktail (Roche, Switzerland) was added immediately after the supernatants were collected and flash frozen in liquid nitrogen. The supernatants were enriched and detected as described above. The intensity of individual protein bands was normalized against EGFP to correct for differences in sample volume and immunoprecipitation, and normalized to time 0 for relative changes.
 
-## FCS/FCCS instrumentation
+### FCS/FCCS instrumentation
 
 A custom-built single wavelength fluorescence cross-correlation spectroscopy (SW-FCCS) system was used for the FCS and FCCS measurements as described (Shi et al., 2009a; 2009b).
 
-## Measurement of diffusion coefficients and binding affinity
+### Measurement of diffusion coefficients and binding affinity
 
 We obtained the correlation curve of the various fusion proteins by focusing the detection volume on the cell membrane at various distances from the source (Figure 2A–C). The correlation curves were analyzed and fitted with a bimolecular binding model to calculate the Kd. We co-expressed Lefty-mCherry with Sqt-EGFP or Cyc-EGFP from a localized source and measured the Kd in the extracellular space of blastula cells at various distances from the source.
 
-## FCS/FCCS data processing
+### FCS/FCCS data processing
 
 The experimental raw auto-correlation data was fitted with defined correlation function models.
 
-In FCS, a one-component 3D diffusion model with triplet state was used for free diffusing molecules:(3)G3D,1C,1trip(τ)=1N[1+(Ftrip1−Ftrip)e−τ/τtrip](1+ττd)−1[1+(ω0z0)2ττd]−1/2+G∞,
+In FCS, a one-component 3D diffusion model with triplet state was used for free diffusing molecules:
+
+$$
+G_{3D,1C,1trip}(\tau)=\frac{1}{N}[1+(\frac{F_{trip}}{1−F_{trip}})e^{−\tau/\tau_{trip}}](1+\frac{\tau}{\tau_{d}})^{−1}[1+(\frac{\omega_{0}}{z_{0}})^{2}\frac{\tau}{\tau_{d}}]^{−1/2}+G_{∞},
+$$
 
 where N is the number of particles in the confocal volume; Ftrip is the fraction of the particles that have entered the triplet state; τtrip is the triplet state relaxation time; τd is the average time required for one particle to diffuse through the confocal volume, ω0 and z0 are the radial and axial distances where the excitation intensity reaches 1/e2 of its value from the center of the confocal volume; and G∞ is the convergence value of the ACF for long times.
 
-In FCCS, a one-component 2D diffusion model and a two-component 3D model were used for the membrane anchored receptors and Nodal ligands, respectively:(4)G2D,1C,1trip(τ)=1N[1+(Ftrip1−Ftrip)e−τ/τtrip](1+ττd)−1+G∞(5)G3D,2C,1trip(τ)=1N[1+(Ftrip1−Ftrip)e−τ/τtrip]{∑i⁡Fi(1+ττdi)−1[1+(ω0z0)2ττdi]−1/2}+G∞
+In FCCS, a one-component 2D diffusion model and a two-component 3D model were used for the membrane anchored receptors and Nodal ligands, respectively:
 
-where τdi and Fi are the diffusion time and the amplitude of the ith component. The cross-correlation data was fitted by a one-component 2D model:(6)G3D,1C,1trip(τ)=1N(1+ττd)−1+G∞
+$$
+G_{2D,1C,1trip}(\tau)=\frac{1}{N}[1+(\frac{F_{trip}}{1−F_{trip}})e^{−\tau/\tau_{trip}}](1+\frac{\tau}{\tau_{d}})^{−1}+G_{∞}
+$$
+
+
+
+$$
+G_{3D,2C,1trip}(\tau)=\frac{1}{N}[1+(\frac{F_{trip}}{1−F_{trip}})e^{−\tau/\tau_{trip}}]{\sumi⁡F_{i}(1+\frac{\tau}{\tau_{di}})^{−1}[1+(\frac{\omega_{0}}{z_{0}})^{2}\frac{\tau}{\tau_{di}}]^{−1/2}}+G_{∞}
+$$
+
+where τdi and Fi are the diffusion time and the amplitude of the ith component. The cross-correlation data was fitted by a one-component 2D model:
+
+$$
+G_{3D,1C,1trip}(\tau)=\frac{1}{N}(1+\frac{\tau}{\tau_{d}})^{−1}+G_{∞}
+$$
 
 Data was fit with the Levenberg-Marquardt algorithm using the described models in Igor Pro 6.0 (WaveMetrics) (Wohland et al., 2001). The procedure of calibration and quantification of diffusion coefficient and dissociation constants were as previously described (Foo et al., 2012a; Shi et al., 2009a).
 
-## Gradient analysis
+### Gradient analysis
 
-EGFP fusion proteins were excited with a 488 nm laser beam and the emitted fluorescence was collected through a 10X objective lens (Olympus, UPLSAPO NA = 0.40) and a long-pass 505 emission filter with a 2.5X digital zoom. Images were acquired in planes ~15 μm below the enveloping layer of the embryos at 512 × 512 pixels with a corresponding size of 1.4 μm2/pixel. Acquired images were analyzed using the ImageJ package. A rectangular region of interest (ROI) with a fixed height of 50.4 μm (36 pixels) adjacent to the source was drawn. The width of the ROI differed depending on the size of the embryo. Windows of 7 × 50.4 μm2 (5 × 36 pixels) were binned and the average intensity of each binned window was calculated. Background auto-fluorescence was estimated from images of un-injected embryos and subtracted from all measurements. The data was normalized to the value closest to the source boundary, plotted on the intensity-distance coordinate with ImageJ. The data was pooled and fitted, or individual data sets were fitted and the gradient length was calculated as the mean of all fits. Both procedures yielded similar results. Fits were performed with an exponential decay:(7)C(x)=A∗exp[−xλ]+C
+EGFP fusion proteins were excited with a 488 nm laser beam and the emitted fluorescence was collected through a 10X objective lens (Olympus, UPLSAPO NA = 0.40) and a long-pass 505 emission filter with a 2.5X digital zoom. Images were acquired in planes ~15 μm below the enveloping layer of the embryos at 512 × 512 pixels with a corresponding size of 1.4 μm2/pixel. Acquired images were analyzed using the ImageJ package. A rectangular region of interest (ROI) with a fixed height of 50.4 μm (36 pixels) adjacent to the source was drawn. The width of the ROI differed depending on the size of the embryo. Windows of 7 × 50.4 μm2 (5 × 36 pixels) were binned and the average intensity of each binned window was calculated. Background auto-fluorescence was estimated from images of un-injected embryos and subtracted from all measurements. The data was normalized to the value closest to the source boundary, plotted on the intensity-distance coordinate with ImageJ. The data was pooled and fitted, or individual data sets were fitted and the gradient length was calculated as the mean of all fits. Both procedures yielded similar results. Fits were performed with an exponential decay:
+
+$$
+C(x)=A∗exp[−\frac{x}{\lambda}]+C
+$$
 
 where A is the amplitude of the gradient, λ is the gradient decay length and C is a possible offset.
 
-## Simulation of the Nodal gradient
+### Simulation of the Nodal gradient
 
-Simulations were performed with Mathematica 10.0 (Wolfram, Champaign, IL). Initial simulations to determine effective diffusion coefficients in the presence of cells as obstacles (tortuosity) and morphogen binding were conducted in 3D. For this purpose, we simulated a 3D slab of 2 μm height (z-axis), 44 μm width (y-axis), and 86.7 μm length (x-axis), for 5 s (Figure 5A,B). We used a diffusion coefficient of D = 60 μm2/s, and created 1000 particles at the left border of the simulation volume. The particles were allowed to perform a random walk for 5 s with a time resolution of 5 ms per step. At the left and right borders (along the x-axis), particles were reflected. At the other four borders we used periodic boundary conditions. Based upon actual measurements from early gastrula embryos, we assumed that the space is packed with cells of ~10 μm diameter, and an intercellular space (cell membrane-to-cell membrane distance) of ~2 μm. As the height of the simulation volume was only 2 μm, we used cylinders to represent the cells within this space. Under these circumstances, ligand diffusion was reduced by a factor of 1.84. This value is consistent with the findings of Müller et al. who reported tortuosity to reduce diffusion maximally by a factor of 2 (Müller et al., 2013). Therefore, for further modeling we assumed the effective diffusion coefficient of the Nodals to be ~30 μm2/s. In the case of binding we used the values in Table 1 and Equation 1 to determine the average number of free particles at each step. All concentration profiles were normalized and fitted by the following equation to determine the effective diffusion coefficient:(8)C(x,t)=exp[−x24Defft]
+Simulations were performed with Mathematica 10.0 (Wolfram, Champaign, IL). Initial simulations to determine effective diffusion coefficients in the presence of cells as obstacles (tortuosity) and morphogen binding were conducted in 3D. For this purpose, we simulated a 3D slab of 2 μm height (z-axis), 44 μm width (y-axis), and 86.7 μm length (x-axis), for 5 s (Figure 5A,B). We used a diffusion coefficient of D = 60 μm2/s, and created 1000 particles at the left border of the simulation volume. The particles were allowed to perform a random walk for 5 s with a time resolution of 5 ms per step. At the left and right borders (along the x-axis), particles were reflected. At the other four borders we used periodic boundary conditions. Based upon actual measurements from early gastrula embryos, we assumed that the space is packed with cells of ~10 μm diameter, and an intercellular space (cell membrane-to-cell membrane distance) of ~2 μm. As the height of the simulation volume was only 2 μm, we used cylinders to represent the cells within this space. Under these circumstances, ligand diffusion was reduced by a factor of 1.84. This value is consistent with the findings of Müller et al. who reported tortuosity to reduce diffusion maximally by a factor of 2 (Müller et al., 2013). Therefore, for further modeling we assumed the effective diffusion coefficient of the Nodals to be ~30 μm2/s. In the case of binding we used the values in Table 1 and Equation 1 to determine the average number of free particles at each step. All concentration profiles were normalized and fitted by the following equation to determine the effective diffusion coefficient:
+
+$$
+C(x,t)=exp[−\frac{x^{2}}{4D_{eff}t}]
+$$
 
 Here C(x, t) is the concentration profile, x is the coordinate along which the particle diffusion is observed, t is the time at which the profile is measured (i.e., 5 s), and Deff is the effective diffusion coefficient.
 
-Final simulations, including continuing particle production and degradation, used the values given in Table 1 and were run in 1D with an extent of 200 μm, assuming a reduced diffusion coefficient of 30 μm2/s due to tortuosity, and an average number of particles bound as determined by Equation 1.. To ensure that the gradients reached equilibrium, the simulation time was 16 hr 40 min. The normalized concentration gradients C(x) were fitted with a simple exponential function to determine the gradient length λ.(9)C(x)=exp[−xλ]
+Final simulations, including continuing particle production and degradation, used the values given in Table 1 and were run in 1D with an extent of 200 μm, assuming a reduced diffusion coefficient of 30 μm2/s due to tortuosity, and an average number of particles bound as determined by Equation 1.. To ensure that the gradients reached equilibrium, the simulation time was 16 hr 40 min. The normalized concentration gradients C(x) were fitted with a simple exponential function to determine the gradient length λ.
+
+$$
+C(x)=exp[−\frac{x}{\lambda}]
+$$

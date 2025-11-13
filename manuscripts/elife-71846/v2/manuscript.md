@@ -15,20 +15,20 @@
 
 ### Affiliations
 
-1. https://ror.org/05wg1m734 Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Centre Nijmegen Netherlands
-2. https://ror.org/05wg1m734 Department of Cognitive Neuroscience, Radboud University Medical Centre Nijmegen Netherlands
-3. https://ror.org/02bfwt286 Turner Institute for Brain and Mental Health, School of Psychological Sciences, and Monash Biomedical Imaging, Monash University Clayton Australia
-4. https://ror.org/04b8v1s79 Department of Communication and Cognition, Tilburg Centre for Cognition and Communication, Tilburg University Tilburg Netherlands
-5. https://ror.org/031zwx660 Institute of Biomedicine of Seville (IBiS) Seville Spain
-6. https://ror.org/05wg1m734 Department of Neurology, and Centre of Expertise for Parkinson & Movement Disorders, Radboud University Medical Centre Nijmegen Netherlands
-7. https://ror.org/0220mzb33 Centre for Neuroimaging Sciences, Institute of Psychiatry, King’s College London London United Kingdom
-8. https://ror.org/0172mzb45 Wellcome Centre for Integrative Neuroimaging (WIN FMRIB), University of Oxford Oxford United Kingdom
+1. Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+2. Department of Cognitive Neuroscience, Radboud University Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+3. Turner Institute for Brain and Mental Health, School of Psychological Sciences, and Monash Biomedical Imaging, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+4. Department of Communication and Cognition, Tilburg Centre for Cognition and Communication, Tilburg University Tilburg Netherlands ([ROR:04b8v1s79](https://ror.org/04b8v1s79))
+5. Institute of Biomedicine of Seville (IBiS) Seville Spain ([ROR:031zwx660](https://ror.org/031zwx660))
+6. Department of Neurology, and Centre of Expertise for Parkinson & Movement Disorders, Radboud University Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+7. Centre for Neuroimaging Sciences, Institute of Psychiatry, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+8. Wellcome Centre for Integrative Neuroimaging (WIN FMRIB), University of Oxford Oxford United Kingdom ([ROR:0172mzb45](https://ror.org/0172mzb45))
 
 † Corresponding author
 
 ## Abstract
 
-The striatum receives dense dopaminergic projections, making it a key region of the dopaminergic system. Its dysfunction has been implicated in various conditions including Parkinson’s disease (PD) and substance use disorder. However, the investigation of dopamine-specific functioning in humans is problematic as current MRI approaches are unable to differentiate between dopaminergic and other projections. Here, we demonstrate that ‘connectopic mapping’ – a novel approach for characterizing fine-grained, overlapping modes of functional connectivity – can be used to map dopaminergic projections in striatum. We applied connectopic mapping to resting-state functional MRI data of the Human Connectome Project (population cohort; N = 839) and selected the second-order striatal connectivity mode for further analyses. We first validated its specificity to dopaminergic projections by demonstrating a high spatial correlation ( r = 0.884) with dopamine transporter availability – a marker of dopaminergic projections – derived from DaT SPECT scans of 209 healthy controls. Next, we obtained the subject-specific second-order modes from 20 controls and 39 PD patients scanned under placebo and under dopamine replacement therapy (L-DOPA), and show that our proposed dopaminergic marker tracks PD diagnosis, symptom severity, and sensitivity to L-DOPA. Finally, across 30 daily alcohol users and 38 daily smokers, we establish strong associations with self-reported alcohol and nicotine use. Our findings provide evidence that the second-order mode of functional connectivity in striatum maps onto dopaminergic projections, tracks inter-individual differences in PD symptom severity and L-DOPA sensitivity, and exhibits strong associations with levels of nicotine and alcohol use, thereby offering a new biomarker for dopamine-related (dys)function in the human brain.
+The striatum receives dense dopaminergic projections, making it a key region of the dopaminergic system. Its dysfunction has been implicated in various conditions including Parkinson’s disease (PD) and substance use disorder. However, the investigation of dopamine-specific functioning in humans is problematic as current MRI approaches are unable to differentiate between dopaminergic and other projections. Here, we demonstrate that ‘connectopic mapping’ – a novel approach for characterizing fine-grained, overlapping modes of functional connectivity – can be used to map dopaminergic projections in striatum. We applied connectopic mapping to resting-state functional MRI data of the Human Connectome Project (population cohort; N = 839) and selected the second-order striatal connectivity mode for further analyses. We first validated its specificity to dopaminergic projections by demonstrating a high spatial correlation (r = 0.884) with dopamine transporter availability – a marker of dopaminergic projections – derived from DaT SPECT scans of 209 healthy controls. Next, we obtained the subject-specific second-order modes from 20 controls and 39 PD patients scanned under placebo and under dopamine replacement therapy (L-DOPA), and show that our proposed dopaminergic marker tracks PD diagnosis, symptom severity, and sensitivity to L-DOPA. Finally, across 30 daily alcohol users and 38 daily smokers, we establish strong associations with self-reported alcohol and nicotine use. Our findings provide evidence that the second-order mode of functional connectivity in striatum maps onto dopaminergic projections, tracks inter-individual differences in PD symptom severity and L-DOPA sensitivity, and exhibits strong associations with levels of nicotine and alcohol use, thereby offering a new biomarker for dopamine-related (dys)function in the human brain.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ In this work, we hypothesize that inter-individual differences in DaT availabili
 
 ## Results
 
-## Striatal connection topographies map onto DaT availability
+### Striatal connection topographies map onto DaT availability
 
 For our first analysis, we applied connectopic mapping (Haak et al., 2018) to resting-state fMRI data from 839 participants of the Human Connectome Project (HCP; Van Essen et al., 2013). Connectopic mapping extracts the dominant modes of functional connectivity change (or connection topographies) within the striatum based on a Laplacian eigenmap decomposition of the similarity matrix derived from functional connectivity (i.e., Pearson correlations) computed between each striatal voxel and the rest of the brain. It provides reproducible and parsimonious representations of overlapping connection topographies at both the group level and at the level of individual subjects. The connectopic mapping approach is detailed in Materials and methods, but a summary of this procedure can be found in Figure 1.
 
@@ -54,15 +54,168 @@ For all analyses described in this paper, connectopic mapping was applied to the
 
 The subject-specific second-order striatal connectivity modes were highly consistent across the two fMRI sessions (mean ± SD: ρ = 0.98 ± 0.07; averaged across all four subregions) of the HCP dataset, which is in line with what we have demonstrated previously for other brain regions and for the zeroth-order and first-order mode of connectivity in striatum. Furthermore, interclass correlation (ICC(2,k)), which indexes measurement consistency for a putative biomarker (Shrout and Fleiss, 1979; Koo and Li, 2016), showed excellent reproducibility of the subject-specific connectivity modes, while still being sensitive to inter-individual differences (see Table 1). Both the variations across subjects and the reproducibility within subjects are illustrated in Figure 2—figure supplement 3.
 
+**Table 1.**
+ Interclass correlation coefficients (ICCs) between the two scanning sessions and the session 1 to session 2 within-subject and between-subject spatial correlations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Striatal subregion</th>
+      <th>ICC[bootstrapped 95% CI]</th>
+      <th>Within-subject correlation</th>
+      <th>Between-subject correlation</th>
+      <th>Within vs. between permutation test(Nperm = 10,000)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left putamen</td>
+      <td>0.960 [0.951–0.965]</td>
+      <td>0.969</td>
+      <td>0.965</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Right putamen</td>
+      <td>0.961 [0.952–0.967]</td>
+      <td>0.970</td>
+      <td>0.966</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Left caudate-NAcc</td>
+      <td>0.974 [0.968–0.978]</td>
+      <td>0.981</td>
+      <td>0.976</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Right caudate-NAcc</td>
+      <td>0.974 [0.968–0.978]</td>
+      <td>0.981</td>
+      <td>0.977</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI = confidence interval; NAcc = nucleus accumbens._
+
 The group-level second-order connectivity mode across striatum is displayed in Figure 2 (second row). The modes for left and right putamen and caudate-NAcc have been combined in this figure (i.e., the four ROIs were loaded in FslView simultaneously from which the below figures were derived) to aid in visualization and for later comparison to the DaT SPECT scan. The second-order connectivity mode comprises a gradient from the dorsal putamen and dorsal caudate (shown in red) to the ventral putamen and ventral caudate including the NAcc (shown in blue). This coding indicates that the dorsal putamen and dorsal caudate exhibit a connectivity pattern with the rest of the brain that is similar to each other but different from the ventral putamen and ventral caudate and vice versa. This striatal connectivity pattern might thus correspond with the gradient of mesolimbic and nigrostriatal dopaminergic projections to striatum (ventral vs. dorsal striatum) well described by track-tracing studies in rodents and non-human primates (Steiner and Tseng, 2016; Haber, 2014; Björklund and Dunnett, 2007). We therefore investigated its spatial correspondence to DaT SPECT-derived DaT availability in striatum, which is assumed to be an index of dopaminergic projections. To this end, we averaged across DaT SPECT images obtained from 209 healthy control participants from the Parkinson’s Progression Markers Initiative (PPMI) dataset (Marek et al., 2011). As can be observed in Figure 2, the group-level second-order striatal connectivity mode indeed displays a remarkably high similarity with the group-level DaT availability in striatum, as quantified by a spatial voxel-wise correlation of r = 0.884 (p<0.001), thereby providing the first evidence for an fMRI-derived striatal connectivity marker strongly associated with dopaminergic projections into striatum. A high correlation (r = 0.925, p<0.001) is also present between the orthogonal TSM coefficients modelling the group-level second-order connectivity mode and the group-level DaT SPECT scan across the striatum, providing more evidence that the second-order connectivity mode maps onto dopaminergic projections. This finding does not strongly depend on the chosen model order, given that repeating this analysis using model order 3 (i.e., a cubic model with nine TSM coefficients for both the putamen and caudate-NAcc regions) resulted in a similar correlation (r = 0.90, p<0.0001).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig2-v2.jpg)
+
+**Figure 2.:** The figure displays the DaT SPECT image averaged across 209 Parkinson’s Progression Markers Initiative (PPMI) controls and the group-level connectivity modes obtained in 839 Human Connectome Project (HCP) subjects. The group-level modes were modelled separately for the left and right putamen and caudate-nucleus accumbens (caudate-NAcc) subregions and have been combined in this figure to aid in visualization. The voxel-wise spatial correlation between the second-order mode of connectivity in striatum and the DaT SPECT image is very high: r = 0.884 (p<0.001). Similarly, the correlation between the orthogonal trend surface model (TSM) coefficients modelling the second-order connectivity mode and the DaT SPECT scan in striatum is very high: r = 0.925 (p<0.001, bottom row). R-fMRI, resting-state fMRI; L, left; R, right.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The top panel displays the absolute, Fisher’s Z normalized correlations between the TSM coefficients modelling the second-order connectivity mode and the TSM coefficients of various SPECT- and PET-derived markers. The dotted lines represent significance values of p=0.01 and p=0.0008 (i.e., p=0.01/12 PET/SPECT scans; Bonferroni-corrected) derived from the null distribution in the bottom panel, which was generated by permuting the TSM coefficients obtained for each of the PET markers (N = 10,000) and computing the absolute (Fisher r-to-z normalized) correlations with the TSM coefficients of the connectivity mode.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Individual-subject connectivity modes are shown for 10 randomly selected Human Connectome Project (HCP) subjects (from a total of 839). This figure shows variations between subjects as well as variations between sessions for the same subjects.
 
 Finally, to further demonstrate the high specificity of the second-order connectivity mode to the DaT SPECT scan, we computed correlations with the TSM coefficients of all PET scans, tapping into various neurotransmitter systems, included in the publicly available JuSpace toolbox (Dukart et al., 2021). Figure 2—figure supplement 1 reveals that the correlation between the TSM coefficients of the second-order connectivity mode with the DaT SPECT scan is not only highly significant but also significantly higher than the correlations with the TSM coefficients of any other PET scan.
 
 In order to demonstrate that also individual variations in this connectivity mode are associated with individual variations in striatal dopaminergic projections, we further aimed to replicate this mapping at the within-subject level in a subsample of PPMI participants (130 datasets from PD patients and 14 from controls) with both DaT SPECT and resting-state fMRI data available. Within a smaller sample of PD patients and controls with good quality connectivity modes (see Appendix 1—Supplementary analyses and Figure 3—figure supplement 1 for further details), we not only replicated the spatial correspondence between the connectivity mode and DaT SPECT scan at the group level (PD group: r = 0.714; control group: r = 0.721) but also observed a within-subject spatial correlation of 0.58 across the four striatal subregions (0.44> r < 0.62; mean = 0.58, 95% CI = [0.56,0.60]) (see Figure 3). These findings were not induced by residual head motion (see Figure 3—figure supplement 2).
 
-## Striatal connection topographies are altered in PD
+![Figure 3.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig3-v2.jpg)
+
+**Figure 3.:** These correlations were obtained in a subsample of the PPMI dataset (6–8 datasets from controls and 73–82 datasets from Parkinson’s disease patients depending on the striatal subregion) with good-quality connectivity modes as defined by a high spatial correlation (r > 0.5) with the group-average Human Connectome Project (HCP) connectivity mode. Red dots represent control participants; black dots represent Parkinson’s disease patients.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** These plots show that when the connectivity mode of a subject resembles the HCP group-average connectivity mode – assumed to be an index of good quality – a high spatial similarity can be observed between the connectivity mode and the DaT SPECT scan of that subject. Red dots represent control participants, black dots represent Parkinson’s disease patients.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** These correlations were obtained in a subsample of the Parkinson’s Progression Markers Initiative (PPMI) dataset with good-quality connectivity modes as defined by a high spatial correlation (r > 0.5) with the group-average Human Connectome Project (HCP) connectivity mode. The meanFD cutoff = 0.126, meaning that if the meanFD of a subject was below 0.126 that subject was part of the low motion subsample, if the meanFD was above 0.126, the subject was part of the high motion subsample. Red dots represent control participants; black dots represent Parkinson’s disease patients.
+
+### Striatal connection topographies are altered in PD
 
 The strong association of the second-order striatal connectivity pattern with DaT availability suggests that this resting-state fMRI-derived connectivity mode can be used to assess variability (including disease-related alterations) in dopaminergic projections to the striatum. As such, we hypothesized that the second-order connectivity mode would be altered in PD since this disorder is characterized by progressive degeneration of nigrostriatal dopaminergic neurons. In order to validate this hypothesis, we made use of a separate high-resolution PD dataset (Dirkx et al., 2019) including 39 PD patients (19 patients with asymmetric symptoms on the left side of the body, i.e., they were left-dominant; 20 patients were right-dominant) and 20 controls that each underwent two high-resolution resting-state fMRI session (T = 860 ms, 700 time points). Participant characteristics can be found in Table 2. During one session, PD patients received dispersible 200/50 mg levodopa-benserazide (L-DOPA), a precursor of dopamine used for the treatment of PD, during the other session they received placebo (dispersible cellulose). Controls did not receive L-DOPA and placebo but just underwent two typical resting-state fMRI sessions under the same scanning protocol. Thus, this dataset did not only allow us to investigate the effects of clinical diagnosis, but also the effects of acute dopaminergic modulation on the underlying striatal connectivity mode. The associations with diagnosis and L-DOPA were investigated in both groups separately (left-dominant, right-dominant PD) because the side of predominant nigrostriatal dopamine depletion likely influences the pattern of striatal connectivity. As before, the second-order striatal connectivity mode was modelled separately for the putamen and caudate-NAcc subregions to increase regional specificity as PD is known to affect the putamen region of the striatum before the caudate-NAcc region (Kish et al., 1988). Group differences in the TSM coefficients modelling the putamen and caudate-NAcc subregions were subsequently assessed by conducting an omnibus test of all the TSM coefficients, that is, a likelihood ratio test in the context of a logistic regression. We applied correction for multiple comparisons (two groups: left- and right-dominant PD × 2 striatal subregions: putamen and caudate-NAcc) using a Bonferroni-corrected α-level of 0.05/4 = 0.0125. In addition, we also investigated associations between the TSM coefficients and symptom severity across PD patients. To this end, we fitted general linear models (GLMs) that included the TSM coefficients modelling the gradient during the placebo session to predict the total score on the motor section (part III) of the Movement Disorder Society Unified Parkinson’s Disease Rating Scale (UPDRS; Goetz et al., 2008). This analysis was again conducted separately for the left- and right-dominant groups and separately for putamen and caudate-NAcc subregions, and a Bonferroni-corrected α-level of 0.0125 was used for establishing statistical significance.
+
+**Table 2.**
+ Participant characteristics.Table 2—source data 1.Source data for participant characterists listed in Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Demographic information(mean, SD)</th>
+      <th colspan="2">ControlsN = 20</th>
+      <th colspan="2">PDN = 39</th>
+      <th colspan="2">Test statistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, years</td>
+      <td>61.9</td>
+      <td>10.4</td>
+      <td>60.9</td>
+      <td>10.7</td>
+      <td>t(57) = 0.337</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Sex, male (number, %)</td>
+      <td>11</td>
+      <td>55.0%</td>
+      <td>16</td>
+      <td>41.0%</td>
+      <td>X2(1) = 0.086</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>FAB, total score</td>
+      <td>17.6</td>
+      <td>0.67</td>
+      <td>17.3</td>
+      <td>0.97</td>
+      <td>t(57) = 0.23</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Disease duration, years</td>
+      <td colspan="2">NA</td>
+      <td>3.96</td>
+      <td>4.57</td>
+      <td></td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>L-DOPA equivalent at home (mg/day)</td>
+      <td colspan="2">NA</td>
+      <td>467.8</td>
+      <td colspan="2">227.3 (range: 0–1100)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>UPDRS total score (mean, SD)</td>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td>Placebo session</td>
+      <td colspan="2">NA</td>
+      <td>40.5</td>
+      <td>16.4</td>
+      <td rowspan="2">t(38) = 5.58</td>
+      <td rowspan="2">p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>L-DOPA session</td>
+      <td colspan="2">NA</td>
+      <td>31.9</td>
+      <td>13.1</td>
+    </tr>
+  </tbody>
+</table>
+
+_For the FAB, lower scores indicate worse functioning; for the UPDRS, higher scores indicate worse functioning. The FAB score was evaluated off medication.FAB = frontal assessment battery (score 0–18); UPDRS = Unified Parkinson’s Disease Rating Scale part III (score 0–132); NS = not significant; NA = not applicable; PD = Parkinson’s disease; L-DOPA = levodopa-benserazide._
 
 The PD (placebo session) vs. control group analysis (first session) of the TSM coefficients modelling the second-order striatal connectivity mode revealed a significant difference between the right-dominant PD group and the control group in bilateral putamen (but not in the caudate-NAcc region) of the striatum (see Figure 4A; omnibus test of all TSM coefficients: X2 = 27.17, p=0.007). No significant differences were observed between the left-dominant PD group and the control group. Moreover, within the right-dominant patient group, we observed a trend-level association between UPDRS symptom severity scores and the TSM coefficients modelling the putamen under placebo (GLM omnibus test of the TSM coefficients: X2 = 22.28, p=0.035). Post-hoc Pearson correlations revealed that this effect was driven by the quadratic TSM coefficients modelling the striatal connectivity mode in the right putamen in the Y (i.e., anterior-posterior) direction (right Y2: r = 0.476, p=0.034) and Z (i.e., superior-inferior) direction (right Z2: r = −0.460, p=0.041). This association can be observed in Figure 4B, which shows an increase in blue-coded voxels in the second-order striatal connectivity mode as symptom severity increases in PD. This pattern maps very well on the observed decrease in dopaminergic projections as PD becomes clinically more severe, as reflected by higher UPDRS scores. That is, given the spatial similarity of the second-order striatal connectivity mode with the DaT SPECT scan, we can interpret the observed alteration in the connection topography as a decrease in dopaminergic projections to striatum. In Figure 4B, this is evident as an increase in blue-coded voxels and a decrease in red-coded voxels as a function of UPDRS symptom severity. Supplementary analyses showed that the observed group differences and associations with symptom severity were independent of age and sex (Appendix 2—table 1).
 
@@ -70,19 +223,31 @@ The PD (placebo session) vs. control group analysis (first session) of the TSM c
 
 **Figure 4.:** (A) Significant difference between the control group and the right-dominant Parkinson’s disease group under placebo in putamen (omnibus test of all trend surface model [TSM] coefficients for putamen: X2 = 27.17, p=0.007). Images represent the mean connectivity modes across each of the investigated groups. The slices at MNI coordinates x = –26 and x = 26, respectively, show views of the striatal connectivity mode across left and right putamen where the connectivity mode is significantly different between groups (*); the slices at MNI coordinates x = –14 and x = 14, respectively, show views of the mode across left and right caudate-nucleus accumbens (caudate-NAcc) (no significant difference). (B) Trend-level association between the Unified Parkinson’s Disease Rating Scale (UPDRS) symptom severity score and the TSM coefficients modelling the second-order connectivity mode in putamen under placebo across patients in the right-dominant Parkinson’s disease group (general linear model [GLM] omnibus test of all TSM coefficients: X2 = 22.28, p=0.035). Post-hoc Pearson correlations revealed that this effect was driven by the quadratic TSM coefficients modelling the striatal connectivity mode in the right putamen in the Y (i.e., anterior-posterior) direction (right Y2: r = 0.476, p=0.034) and Z (i.e., superior-inferior) direction (right Z2: r = −0.460, p=0.041). The correlation between UPDRS symptom severity scores is displayed for the right Y2 coefficient. To visualize this association, the reconstructed second-order connectivity mode in the right putamen is shown for five Parkinson’s disease patients (data points circled) with increasing UPDRS symptom severity scores.
 
-## Striatal connection topographies are sensitive to acute dopaminergic modulation
+### Striatal connection topographies are sensitive to acute dopaminergic modulation
 
 After demonstrating that the second-order connectivity mode in putamen is indeed altered in PD, we investigated whether it was also sensitive to the acute effects of the dopamine precursor L-DOPA. We assessed differences in this striatal connectivity mode between the placebo and L-DOPA session in both PD groups by conducting an omnibus test of all the TSM coefficients, that is, a likelihood ratio test in the context of a logistic regression. We applied correction for multiple comparisons (two groups: left- and right-dominant PD × 2 striatal subregions: putamen and caudate-NAcc) using a Bonferroni-corrected α-level of 0.05/4 = 0.0125. These tests did not reveal significant differences between the placebo and L-DOPA session in the putamen or the caudate-NAcc region. However, treatment response to L-DOPA is known to differ among PD patients. To take this variability across patients into account, we conducted GLM analyses relating differences in the L-DOPA-induced change (difference between L-DOPA and placebo session) in the second-order striatal connectivity mode to differences in treatment response. These analyses showed that in both patient groups significant associations were present between the L-DOPA-induced change in UPDRS symptom severity scores and the L-DOPA-induced change in TSM coefficients in putamen (GLM omnibus test of all TSM coefficients in the right-dominant patient group: X2 = 25.48, p=0.012; in the left-dominant patient group: X2 = 34.07, p=0.001). Post-hoc Pearson correlations revealed that these effects were driven by the linear TSM coefficient (Y1) modelling the striatal connectivity mode in putamen in the Y (i.e., anterior-posterior) direction (right-dominant PD: left Y1: r = −0.548, p=0.012; left-dominant PD: right Y1: r = 0.345, p=0.15). As can be seen in Figure 5, a larger L-DOPA-induced reduction in UPDRS scores is associated with a larger positive change (i.e., an increase in red-coded voxels) in the superior-anterior part of the putamen, which we hypothesize maps onto an increase in dopamine-related connectivity. Supplementary analyses demonstrated that the observed effects of L-DOPA were independent of age and sex (see Appendix 2—table 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig5-v2.jpg)
 
-**Figure 5.:** X2 = 25.48, p=0.012).Post-hoc Pearson correlations revealed that this effect was driven by the linear TSM coefficient modelling the striatal connectivity mode in the left putamen in the Y direction (left Y1: r = −0.548, p=0.012). To visualize this association, the difference in the reconstructed second-order connectivity modes between the placebo and L-DOPA session is shown for the left putamen (at slice X = –24) for five PD patients (data points circled). Red-coded voxels are hypothesized to map onto an increase in dopaminergic connectivity, blue-coded voxels onto a decrease. A significant effect was also observed for the left-dominant PD group (GLM omnibus test of all TSM coefficients: X2 = 34.07, p=0.001), but as post-hoc Pearson correlations did not reveal significant associations with one of the individual TSM coefficients in this group, this association is not shown. ant, anterior; post, posterior putamen.
+**Figure 5.:** Post-hoc Pearson correlations revealed that this effect was driven by the linear TSM coefficient modelling the striatal connectivity mode in the left putamen in the Y direction (left Y1: r = −0.548, p=0.012). To visualize this association, the difference in the reconstructed second-order connectivity modes between the placebo and L-DOPA session is shown for the left putamen (at slice X = –24) for five PD patients (data points circled). Red-coded voxels are hypothesized to map onto an increase in dopaminergic connectivity, blue-coded voxels onto a decrease. A significant effect was also observed for the left-dominant PD group (GLM omnibus test of all TSM coefficients: X2 = 34.07, p=0.001), but as post-hoc Pearson correlations did not reveal significant associations with one of the individual TSM coefficients in this group, this association is not shown. ant, anterior; post, posterior putamen.
 
-## Striatal connection topographies are associated with the amount of substance use
+### Striatal connection topographies are associated with the amount of substance use
 
 Finally, dopaminergic signalling is also implicated in reward processing, alterations of which have been associated with substance use and compulsive behaviours (Laruelle et al., 1995; Barrett et al., 2004; Nutt et al., 2015). As such, we investigated whether the second-order striatal connectivity mode was also associated with tobacco and alcohol use. These quantities are amongst the set of demographic variates available from the HCP. In order to increase specificity and also in order to transcend analysis from a categorical comparison to a continuous characterization predicting the relative amount of substance usage, we consider here a subset of high tobacco and alcohol users. Specifically, we selected otherwise drug-naïve HCP participants who reported to have consumed ≥3 light and/or ≥ 1 heavy alcoholic units per day during the week preceding the scan (N = 30) and participants reporting to have smoked ≥5 cigarettes every day during the week preceding the scan (N = 38). GLM analyses investigating associations between the TSM coefficients modelling the second-order striatal connectivity mode and the amount of use over the past 7 days were conducted separately for the alcohol users and smokers and separately for putamen and caudate-NAcc subregions. We applied correction for multiple comparisons using a Bonferroni-corrected α-level of 0.0125 (see Materials and methods for more details).
 
 In smokers, we observed a significant association with the total number of cigarettes smoked over the past week for the TSM coefficients modelling the second-order connectivity mode in the caudate-NAcc region (X2 = 49.55, p=0.002), but not for the putamen region. Subsequent computation of the Pearson correlations between the individual TSM coefficients and the amount of use revealed that this association was driven by multiple TSM coefficients in both the left and right caudate-NAcc (left X3: r = −0.409, p=0.011; right Z1: r = 0.408, p=0.011; right Y3: r = 0.367, p=0.024; right Z3: r = −0.451, p=0.005; right Y4: r = 0.362, p=0.026; see Figure 6—figure supplement 1). As can be observed in Figure 6 (top panel), alterations in the second-order striatal connectivity mode are subtle but consist of an increase in inferior blue-coded voxels in the caudate-NAcc as tobacco use in this population cohort increases.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig6-v2.jpg)
+
+**Figure 6.:** Strong associations were observed between the trend surface model (TSM) coefficients modelling the connectivity mode in the caudate-nucleus accumbens (caudate-NAcc) region and the total amount of tobacco use as well as alcohol use over the past week (general linear model [GLM] omnibus test tobacco use: X2 = 49.55, p=0.002; alcohol use: X2 = 64.45, p<0.001). To visualize these relationships, Pearson correlations between one of the significant TSM coefficients and the amount of use are shown as well as the reconstructed second-order connectivity mode in the right caudate-NAcc (at slice X = 14) for four tobacco users and in the left caudate-NAcc (at slice X = –14) for four alcohol users with increasing of amounts of use (data points circled). Circles and arrows indicate where in the connectivity mode tobacco and alcohol use-related changes can be observed. Correlation plots for the other TSM coefficients can be found in Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** A strong association was observed between the trend surface model (TSM) coefficients modelling the connectivity mode in the caudate-nucleus accumbens (caudate-NAcc) region and the total amount of tobacco use over the past week (general linear model [GLM] omnibus test: X2 = 49.55, p=0.002). To visualize this relationship, Pearson correlations between the individual TSM coefficients and the amount of use were computed, and the correlations reaching significance (p<0.05) are shown in this figure.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71846/elife-71846-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** A strong association was observed between the trend surface model (TSM) coefficients modelling the connectivity mode in the caudate-nucleus accumbens (caudate-NAcc) region and the total number of alcoholic drinks over the past week (general linear model [GLM] omnibus test: X2 = 64.45, p<0.001). To visualize this relationship, Pearson correlations between the individual TSM coefficients and the amount of use were computed, and the correlations reaching significance (p<0.05) are shown in this figure.
 
 In the ‘heavy’ drinkers, we also observed a strong association with the total number of alcoholic drinks consumed over the past week for the TSM coefficients modelling the connectivity mode in the caudate-NAcc region (X2 = 64.45, p<0.001), but again not for the putamen region. Subsequent computation of the Pearson correlations between the individual TSM coefficients and the amount of use revealed that this association was driven by multiple TSM coefficients in both the left and right caudate-NAcc (left X1: r = −0.378, p=0.039; left Y1: r = 0.399, p=0.029; left Y2: r = 0.488, p=0.006; left Z2: r = −0.386, p=0.035; left X3: r = 0.519, p=0.003; left Y4: r = −0.417, p=0.022; right Z2: r = −0.418, p=0.022; right Z4: r = 0.488, p=0.006; see Figure 6—figure supplement 2). Similar to tobacco use, Figure 6 (bottom panel) shows that higher levels of alcohol use are accompanied by a subtle increase in blue-coded voxels as well as a decrease in red-coded voxels in the caudate-NAcc region of the second-order connectivity mode. We argue that these subtle increases in blue-coded voxels (and decrease in red-coded voxels) in high nicotine and alcohol users map onto decreases in dopaminergic connectivity, which corresponds with reported reductions in dopamine release in striatum in patients with nicotine and alcohol dependence (Nutt et al., 2015; Balfour, 2015). Supplementary analyses revealed that the associations with the amount of tobacco and alcohol use persisted under different usage thresholds and were independent of age and sex (see Appendix 2—tables 1–3). Finally, five subjects were included in both the tobacco and alcohol use analyses, but the associations with tobacco use (X2 = 39.40, p=0.025) and alcohol use (X2 = 62.01, p<0.001) also remained significant after excluding these subjects.
 
@@ -110,11 +275,11 @@ In conclusion, our results provide evidence that the second-order mode of restin
 
 ## Materials and methods
 
-## Resting-state fMRI data of the HCP dataset
+### Resting-state fMRI data of the HCP dataset
 
 For our first analysis, we used resting-state fMRI data from the HCP, an exceptionally high-quality, publicly available neuroimaging dataset (Van Essen et al., 2013). HCP participants were scanned on a customized 3 T Siemens Skyra scanner (Siemens AG, Erlanger, Germany) and underwent two sessions of two 14.4 min multiband accelerated (TR = 0.72 s) resting-state fMRI scans with an isotropic spatial resolution of 2 mm. Here, we included participants from the S1200 release who completed at least one resting-state fMRI session (2 × 14.4 min) and for whom data was reconstructed with the r227 reconstruction algorithm. (The reconstruction algorithm was upgraded in late April 2013 from the original 177 ICE version to the 227 upgraded ICE version. As the reconstruction version has been shown to make a notable signature on the data that can make a large difference in fMRI data analysis [for details, see https://wiki.humanconnectome.org/display/PublicData/Ramifications+of+Image+Reconstruction+Version+Differences], we only included participants with r227 reconstructions.) This resulted in the inclusion of 839 participants (aged 22–37 years; 458 females). Resting-state fMRI data were preprocessed according to the HCP minimal processing pipeline (Glasser et al., 2013), which included corrections for spatial distortions and head motion, registration to the T1w structural image, resampling to 2 mm MNI152 space, global intensity normalization, and high-pass filtering with a cutoff at 2000s. The data were subsequently denoised using ICA-FIX – an advanced independent component analysis-based artefact removal procedure (Salimi-Khorshidi et al., 2014) – and smoothed with a 6 mm kernel.
 
-## Connectopic mapping of the striatum in the HCP dataset
+### Connectopic mapping of the striatum in the HCP dataset
 
 We estimated connection topographies from the HCP resting-state fMRI data using the first session (2 × 14.4 min) for each subject. To this end, we used connectopic mapping (Haak et al., 2018), a novel method that enables the dominant modes of functional connectivity change within the striatum to be traced on the basis of the connectivity between each striatal voxel and the rest of the brain (see Figure 1). In previous work, we showed that the dominant mode (zeroth-order mode) of connectivity in the striatum obtained with connectopic mapping represented its anatomical subdivision into putamen, caudate, and NAcc. Since higher-order modes are restricted by lower-order modes, we decided to take the anatomical subdivision in the striatum into account by applying connectopic mapping in the current work to the left and right putamen and caudate-NAcc striatal subregions separately, thereby also increasing regional specificity. When referring to the second-order mode of connectivity in striatum, we thus refer to the combination of the second-order connectivity modes of putamen and caudate-NAcc. We did not apply connectopic mapping to the NAcc and caudate separately as the left NAcc and right NAcc only include 136 voxels and 127 voxels, respectively. We expect that this very small region is too homogenous in terms of connectivity with cortex to estimate reliable overlapping connectivity modes. Masks for the striatal regions were obtained by thresholding the respective regions from the Harvard-Oxford atlas at 25% probability.
 
@@ -122,17 +287,17 @@ In brief, we rearranged the fMRI time-series data from each striatal subregion a
 
 Finally, to enable statistical analysis over these connection topographies, we fitted spatial statistical models to obtain a small number of coefficients summarizing the second-order connectivity mode of each striatal subregion in the X, Y, and Z axes of MNI152 coordinate space. For this, we use ‘trend surface modelling’ (Gelfand et al., 2010), an approach originally developed in the field of geostatistics, but that has wide-ranging applications due to its ability to model the overall distribution of properties throughout space as a simplified surface. Here, we use the TSM approach to predict each individual subject’s connection topography by fitting a set of polynomial basis functions defined by the coordinates of each striatal location. We fit these models using Bayesian linear regression (Bishop, 2006), where we employed an empirical Bayes approach to set model hyperparameters. Full details are provided elsewhere (Bishop, 2006), but this essentially consists of finding the model hyperparameters (controlling the noise- and the data variance) by maximizing the model evidence or marginal likelihood. This was achieved using conjugate gradient optimization. For fixed hyperparameters, the posterior distribution over the trend coefficients can be computed in closed form. This, in turn, enables predictions for unseen data points to be computed. We used the maximum a posteriori estimate of the weight distribution as an indication of the importance of each trend coefficient in further analyses. To select the degree of the interpolating polynomial basis set, we fit these models across polynomials of degree 2–5 and then compared the different model orders using a scree plot analysis (Cattell, 1966). This criterion strongly favoured a polynomial of degree 2 for the putamen subregion and a polynomial of degree 4 for the caudate-NAcc subregion. This means that the connectivity mode in putamen was modelled with linear and quadratic functions in the X, Y, and Z directions of MNI152 coordinate space (six TSM coefficients) and the connectivity mode in the caudate-NAcc region with linear, quadratic, cubic, and quartic functions in the X, Y, and Z directions of MNI152 coordinate space (12 TSM coefficients). The TSM coefficients of the fitted polynomial basis functions describe the rate at which the connectivity mode changes along a given spatial dimension and can be used for statistical analysis. The polynomials summarized the connectivity modes well, explaining the following mean ± SD of the variance: left putamen: 90.5% ± 4.16%; right putamen: 90.2% ± 4.64%; left caudate-NAcc: 88.6% ± 2.54%; right caudate-NAcc: 89.4% ± 2.15%.
 
-## DaT SPECT imaging in the PPMI dataset
+### DaT SPECT imaging in the PPMI dataset
 
 To determine whether the second-order striatal connectivity mode was associated with dopaminergic projections in striatum, we investigated its spatial correspondence with DaT availability as revealed by DaT SPECT imaging. We selected DaT SPECT scans for all 210 healthy controls (aged 30–84 years; 71 females) included in the PPMI (Marek et al., 2011) database (https://www.ppmi-info.org/data). PPMI is a public–private partnership funded by the Michael J. Fox Foundation for Parkinson’s Research and funding partners (for up-to-date information, please visit https://www.ppmi-info.org/fundingpartners). Each participating PPMI site obtained ethical approval before study initiation, and written informed consent according to the Declaration of Helsinki was obtained from all participants in the study. PPMI scans were obtained at 24 different sites and acquired with a total of seven different SPECT camera models from different manufacturers. All brain images were registered to MNI152 standard space using a linear affine transformation implemented in FSL FLIRT (Jenkinson and Smith, 2001; Jenkinson et al., 2002) and a custom DaT SPECT template (http://www.nitrc.org/projects/spmtemplates; García-Gómez et al., 2013). Typically, analysis of DaT SPECT images is limited to determining the striatal-binding ratio. This index of DaT availability is calculated by normalizing the average DaT uptake in the striatum (or a striatal subregion) by a reference region of minimal DaT availability (e.g., cerebellum or occipital cortex). However, here we were interested in the detailed spatial profile of DaT availability across the striatum. To obtain this spatial profile, we intensity-normalized all raw DaT SPECT images (Llera et al., 2019) so as to optimize contrast in the DaT SPECT image and take into account variability in the DaT SPECT scans across the PPMI dataset as a result of different cameras and different scan sites. Finally, we averaged across all subjects and masked the striatum to obtain the average DaT SPECT image of the striatum.
 
-## Mapping the second-order striatal connectivity mode onto DaT availability
+### Mapping the second-order striatal connectivity mode onto DaT availability
 
 Next, we quantified the similarity between the second-order mode of connectivity in striatum and the DaT SPECT image. To this end, we combined the average (i.e., group level) second-order connectivity modes of putamen and caudate-NAcc obtained in the high-resolution HCP dataset and computed the voxel-wise spatial correlation of this mode with the average (i.e., group level) DaT SPECT image of striatum obtained in the PPMI dataset. Given that the voxel-wise spatial correlation between both images might be inflated due to potential spatial autocorrelation effects (i.e., the images represent smooth spatial functions), we additionally computed the correlation between the TSM coefficients modelling the group-average connectivity mode and the group-average DaT SPECT scan since TSM coefficients are orthogonal. More specifically, the TSM coefficients modelling the left and right putamen (2 × 6) and caudate-NAcc regions (2 × 12) were combined and the correlation was computed across all these 36 TSM coefficients. In addition, to show that our results do not heavily depend on the chosen model order, we repeated this analysis using model order 3 (i.e., a cubic model with nine TSM coefficients) for both the putamen and caudate-NAcc regions (i.e., 4 × 9 = 36 TSM coefficients).
 
 For a subsample of PPMI participants with a DaT SPECT scan, there was also a low-resolution resting-state fMRI scan available (130 datasets from PD patients and 14 from controls). We therefore also investigated the within-subject spatial correspondence between the DaT SPECT scan and the second-order connectivity mode for these subjects in the PPMI dataset. This procedure is detailed in Appendix 1—Supplementary analyses.
 
-## Resting-state fMRI data of the PD dataset
+### Resting-state fMRI data of the PD dataset
 
 Given that PD is characterized by a loss of dopaminergic neurons (Fearnley and Lees, 1991), we investigated whether the second-order striatal connectivity mode was altered in PD. For this analysis, we used high-resolution resting-state fMRI data from a cohort consisting of 39 patients with PD (aged 38–81, 23 females) and 20 controls (aged 42–80, 9 females), recruited at the Centre of Expertise for Parkinson & Movement Disorders at the Radboud University Medical Center (Radboudumc) in Nijmegen and scanned at the Donders Institute in Nijmegen, the Netherlands (Dirkx et al., 2019). All patients were diagnosed with idiopathic PD (according to the UK Brain Bank criteria), and all patients had a mild to severe resting tremor besides bradykinesia. In 20 patients, the motor symptoms were right-dominant, in 19 patients left-dominant (dominance here refers to the side of the body displaying the most prominent motor symptoms [including tremor]), which is believed to correspond with a dopamine depletion dominant to contralateral hemisphere in the brain. The study was approved by the local ethics committee, and written informed consent according to the Declaration of Helsinki was obtained from all participants. Detailed sample characteristics can be found in Table 2.
 
@@ -140,7 +305,7 @@ Patients with PD underwent two 10 min resting-state fMRI sessions, that is, a pl
 
 Preprocessing of the resting-state fMRI data included removal of the first five volumes to allow for signal equilibration, primary head motion correction via realignment to the middle volume MCFLIRT (Jenkinson et al., 2002), grand mean scaling, and spatial smoothing with a 6 mm FWHM Gaussian kernel. The preprocessing pipeline was furthermore designed to rigorously correct for potential tremor-induced head motion-related artefacts. To this end, we used ICA-AROMA (Pruim et al., 2015), an advanced ICA-based motion correction procedure to identify and remove secondary head motion-related artefacts with high accuracy while preserving signal of interest (Pruim et al., 2015; Parkes et al., 2018). Next, any remaining motion artefacts were removed from the data by regressing out the EMG parameters in addition to the white matter and CSF signal (Helmich et al., 2012). Finally, the data were temporally filtered with a high-pass filter of 0.01 Hz before being resampled to 2 mm MNI152 space.
 
-## Investigating the second-order striatal mode in PD
+### Investigating the second-order striatal mode in PD
 
 We applied connectopic mapping to the preprocessed resting-state fMRI data of each session from every participant and selected the second-order connectivity mode for further analyses using the same procedure as in the HCP dataset. The subject-specific second-order striatal connectivity modes for control participants were again consistent across the two fMRI sessions mean ± SD ρ = 0.85 ± 0.11 (individual subregions: left putamen: ρ = 0.78 ± 0.10; right putamen: ρ = 0.82 ± 0.12; left caudate-NAcc: ρ = 0.87 ± 0.14; and right caudate-NAcc: ρ = 0.92 ± 0.08). The polynomials also summarized the connectivity modes well, explaining mean ± SD 78.6% ± 11.8% of the variance across the striatum in controls (individual subregions: left putamen: 67.9% ± 16.2%; right putamen: 65.3% ± 21.2%; left caudate-NAcc: 90.5% ± 4.28%; right caudate-NAcc: 90.8% ± 5.63%), and explaining mean ± SD 78.0% ± 10.5% of the variance across striatum in PD patients under placebo (individual subregions: left putamen: 63.6% ± 19.6%; right putamen: 69.5% ± 13.0%; left caudate-NAcc: 88.5% ± 4.69%; right caudate-NAcc: 90.4% ± 4.58%). While these numbers are lower than observed for the connectivity modes obtained from the HCP dataset – which is not surprising given the exceptionally high quality of the HCP dataset – the reproducibility and explained variance of the TSM coefficients are still substantial.
 
@@ -150,10 +315,10 @@ In our first analysis, we compared the second-order striatal connectivity mode b
 
 Third, we assessed differences in the second-order striatal connectivity mode between the placebo and L-DOPA session in both PD groups. More specifically, session differences in the TSM coefficients were assessed by using a likelihood ratio test in the context of a logistic regression. We report the X2 (likelihood test) and corresponding p-value of tests that revealed significant differences between the placebo and L-DOPA session. Finally, treatment response to L-DOPA is known to differ among patients with PD. To take this variability across patients into account, we also investigated whether the L-DOPA-induced change in the second-order striatal connectivity mode was associated with L-DOPA-induced changes in UPDRS symptom severity. More specifically, we calculated the difference in UPDRS symptom scores and TSM coefficients between the placebo and L-DOPA session and investigated associations within the GLM framework. For all identified associations, we post-hoc computed Pearson correlations between the change in UPDRS symptom severity and the change in individual TSM coefficients to determine which coefficients most strongly contributed to the effect.
 
-## Investigating the second-order striatal mode in relation to tobacco and alcohol use
+### Investigating the second-order striatal mode in relation to tobacco and alcohol use
 
 Given that alterations in dopaminergic functioning have also been implicated in substance use, we also investigated the association between the second-order striatal connectivity mode and tobacco use as well as alcohol use across high users within the HCP dataset. To this end, we selected HCP participants testing negative for acute drug and alcohol use but who reported to have consumed ≥3 light and/or ≥1 heavy alcoholic drinks per day over the past week (N = 30), and participants reporting to have smoked ≥5 cigarettes every day over the past week (N = 38). Effects of smoking and drinking were analysed separately, and we again modelled the second-order striatal connectivity mode separately for left and right putamen and left and right caudate-NAcc. We conducted GLMs that included next to the amount of use over the past week (i.e., the total number of alcohol drinks or the total number of times tobacco was smoked), the TSM coefficients modelling the second-order striatal connectivity mode (i.e., the TSM coefficients modelling the putamen or caudate-NAcc). Multiple comparison correction was applied using a Bonferroni-corrected α-level of 0.0125 (2 substances * 2 striatal subregions). For all identified associations with the amount of alcohol use or tobacco use, we report the X2 (likelihood test) and the corresponding p-values and post-hoc compute Pearson correlations between the amount of use and the individual TSM coefficients to determine which coefficients most strongly contributed to the association.
 
-## Supplementary analyses
+### Supplementary analyses
 
 To further demonstrate the high specificity of the second-order connectivity mode to the DaT SPECT scan over and above other PET scans (i.e., other neurotransmitter systems), we computed correlations with the TSM coefficients of all PET scans, tapping into various neurotransmitter systems, included in the publicly available JuSpace toolbox (Dukart et al., 2021). This analysis is described in Appendix 1—Supplementary analyses. We also investigated whether the mapping of the second-order connectivity mode onto DaT SPECT scan was influenced by residual head motion. Furthermore, for the other analyses described above (effects of diagnosis and L-DOPA in the PD dataset and associations with tobacco and alcohol use in the HCP dataset), we conducted post-hoc sensitivity analyses to rule out that the group differences and associations revealed by our analyses were dependent on age and sex. In addition, we investigated whether the associations with the amount of tobacco and alcohol use persisted under different usage thresholds. All these analyses are also described in Appendix 1—Supplementary analyses.

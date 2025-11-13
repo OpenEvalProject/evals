@@ -29,13 +29,29 @@ Here, by using longitudinal in vivo two-photon imaging of fluorescently labeled 
 
 ## Results
 
-## Long-term detection of spine SEP-GluA1 in V1 L2/3 neurons in vivo
+### Long-term detection of spine SEP-GluA1 in V1 L2/3 neurons in vivo
 
 To track AMPAR and spine dynamics in L2/3 neurons of V1 in awake mice, we employed in utero electroporation to transfect L2/3 pyramidal neurons with the GluA1 AMPAR subunit tagged with Super Ecliptic pHluorin (SEP), a pH-sensitive form of green fluorescent protein, myc-GluA2 AMPAR subunit, and dsRed2 as previously described (Makino and Malinow, 2011; Suresh and Dunaevsky, 2017; Zhang et al., 2015; Figure 1; Figure 1—figure supplement 1). First, we found a high correlation between spine intensity of SEP-GluA1 and glutamate uncaging-evoked excitatory postsynaptic current (uEPSC) amplitude (Figure 1C,D), suggesting that spine enrichment of SEP-GluA1 largely reflects postsynaptic strength. Next, we repeatedly imaged the same dendritic spines in adult mice (P70 - P85) over 10 days (Figure 1A, B, E). To control for day-to-day variability in imaging conditions such as laser intensity and window quality, we normalized SEP-GluA1 spine and dendrite intensity and spine dsRed intensity to dendritic shaft dsRed2 intensity which would not be expected to change (Zhang et al., 2015). We found that the majority of spines in V1 L2/3 neurons (68%) persisted throughout all 10 imaging days (Figure 1F), comparable to previous reports (Holtmaat et al., 2005), suggesting that the modest overexpression of AMPARs does not affect spine dynamics. Total spine surface GluA1 (sGluA1) levels on a dendrite, average spine sGluA1 expression and spine size in persistent spines were all stable (Figure 1G–I). These results show that in adult animals, overall expression of spine sGluA1 expression remains constant throughout daily imaging sessions.
 
-## Dynamic baseline expression of sGluA1 within individual spines
+![Figure 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental timeline. (B) (Left) 3D reconstruction of L2/3 neurons of visual cortex transfected with SEP-GluA1 (green) and dsRed2 (magenta), merged in white. (Right) Z projection of imaging volume in white box. (C) Example of a whole-cell recording and glutamate uncaging at a spine with high sGluA1 enrichment. (D) Correlation between spine sGluA1 intensity and uEPSC amplitude (n = 146 spines; Pearson). (E) Representative time-lapse images of V1 L2/3 apical dendrites. Scale bar: 5 μm. (F) Percentage of spines that persist across 10 imaging days. (G) Total spine sGluA1 level on the dendrite did not change significantly with time. Total spine sGluA1 level on a dendrite was calculated by summing all spines on the same dendrite (n = 19 dendrites from five mice; one-way ANOVA). (H) Stable expression of average spine sGluA1 in persistent spines over 10 days (n = 23 dendrites from six mice; one-way ANOVA). (I) Average spine size in persistent spines had no significant change over days (n = 23 dendrites from six mice; one-way ANOVA).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunostaining of SEP and dsRed2 in brain slices from mice with in utero electroporation. SEP-GluA1 expressing neurons were located in L2/3 of the electroporated hemisphere but not in the control hemisphere. (B–D) High-magnification view of sGluA1/dsRed2 expressing neurons in V1 L2/3.
+
+### Dynamic baseline expression of sGluA1 within individual spines
 
 Since we were able to monitor individual synapse dynamics over time with two-photon imaging, we next examined expression of sGluA1 within individual spines. We observed that sGluA1 intensity within individual persistent spines was highly dynamic and varied over days (Figure 2A). Despite the dynamic expression across days, the relative sGluA1 level in individual spines at day 1 remained strongly correlated with their level at day 10 (Figure 2B), indicating that the difference in sGluA1 level between persistent spines doesn’t change over time with strong spines remaining strong and weak spines staying weak.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig2-v1.jpg)
+
+**Figure 2.:** (A) Heat map of sGluA1 expression within individual spines. Spines on the same dendrites were grouped together. (B) Correlation of spine sGluA1 level between day 1 and day 10 in V1 L2/3 neurons (n = 279 spines; Pearson). (C) Correlation between spine sGluA1 level at day 1 and its CV in V1 L2/3 neurons (n = 280 spines; Pearson). (D) The CV of spine sGluA1 signal in V1 L2/3 neurons before and after visual deprivation (VD) (n = 280/520 (Sham/VD) spines in V1 L2/3 neurons; Student’s t-test). (E) Representative images of newly-formed spines (bottom) and eliminated spines (upper). Scale bars: 2 μm. (F) sGluA1 levels in newly-formed spines and eliminated spines (n = 29 spines; Student’s t-test). (G) The CV of spine sGluA1 expression in persistent and transient spines in V1 L2/3 neurons (n = 327 persistent spines; n = 34 transient spines). (H) Correlation between spine size and spine sGluA1 intensity on imaging day 1 (n = 280 spines; Pearson). (I) Correlation between daily change in spine size and daily change in spine sGluA1 level (n = 1384 spines; Pearson). Data are presented as mean ± SEM. n.s., not significant; *p<0.05; **p<0.01; ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gradual increases of sGluA1 level in newly-formed spines after they were first detected on Dn (n = 16 spines; Student’s t-test); (B) Gradual decreases of sGluA1 level in eliminated spines in days prior to elimination (Dn) (n = 19 spines; Student’s t-test). Blue, average. Grey, individual spines. (C) Heat map of change in spine size within individual spines. (D) Correlation of spine size between day 1 and day 10 in V1 L2/3 neurons (n = 278 spines; Pearson). (E) Correlation between daily change in spine size and daily change in spine sGluA1 level in the subset of spines that have inverse correlations between daily spine size change and sGluA1 change (n = 246 spines; Pearson). (F) Percentage of spines that show an inverse correlation between daily spine size change and spine sGluA1 change (17.77%). (G) Spine sGluA1 level distribution of all spines and spines that have inverse correlations between daily spine size change and sGluA1 change (Invers) (Kolmogorov-Smirnov test, p=0.0013). Data are presented as mean ± SEM. *p<0.05; **p<0.01.
 
 Next we measured the dynamics of spine sGluA1 expression across days by calculating the coefficient of variance (CV) of sGluA1 signal from spines and investigated the underlying mechanisms. Intriguingly, we did not observe any correlations between CV of spine sGluA1 signal and their initial spine sGluA1 level (Figure 2C), suggesting that all spines show similar extent of dynamics despite their variances in sGluA1 levels. Structural spine dynamics including spine formation and elimination have been reported and it has been shown that the structural dynamics are dependent on sensory input (Holtmaat and Svoboda, 2009; Majewska and Sur, 2003). To assess whether the functional dynamic of AMPAR expression observed here is also dependent on experience or sensory input, we visually deprived mice using binocular enucleation and measured the ensuing dynamics. We found that the CV of V1 L2/3 neurons became significantly smaller after deprivation (Figure 2D). This demonstrates that AMPAR dynamics in individual spines is partially driven by sensory input.
 
@@ -43,31 +59,71 @@ We also characterized sGluA1 expression in non-persistent (transient) spines tha
 
 It is widely believed that the number of AMPARs in spines is strongly correlated with spine size (Nusser et al., 1998; Takumi et al., 1999). To test this, we quantified AMPAR expression relative to spine size as indicated by dsRed2 soluble-cell fill intensity. Similar to spine sGluA1 expression, persistent spines did not significantly vary in their average size across all time points (Figure 1I), although individual spines did display size fluctuation over the measured time course (Figure 2—figure supplement 1C). Similar to spine sGluA1 level, the relative spine size in individual spines at day 1 was strongly correlated with their size at day 10 (Figure 2—figure supplement 1D). Consistent with previous in vitro studies, we found a strong positive correlation between spine size and spine sGluA1 intensity in vivo (Figure 2H). Moreover, there was a highly positive correlation between the daily change of spine size and sGluA1 change (Figure 2I), indicating that spine size and GluA1 expression increase or decrease concurrently. However, we identified a small fraction of spines (~18%) that show an inverse correlation between daily spine size change and sGluA1 change (Figure 2—figure supplement 1E,F). We further examined the sGluA1 level distribution of those spines and found that there was a significant leftward shift of sGluA1 level distribution in those subsets of spines compared to all spines (Figure 2—figure supplement 1G), suggesting that they tend to be spines with lower sGluA1 level.
 
-## V1-specific spine sGluA1 increases following binocular deprivation
+### V1-specific spine sGluA1 increases following binocular deprivation
 
 Visual deprivation via dark exposure has been shown to induce homeostatic plasticity in V1 L2/3 neurons using ex-vivo measurements, wherein AMPARs in synaptosome preparations are increased following deprivation (Goel et al., 2006; Goel and Lee, 2007). To examine in vivo changes in the same V1 neurons, we repeatedly imaged apical dendrites from L2/3 neurons of awake mice before and after visual deprivation (VD) by binocular enucleation. Enucleation did not affect dendritic dsRed2 signal nor spine survival rate (Figure 3—figure supplement 1A,B). However, the average synaptic sGluA1 level in persistent spines of V1 neurons decreased 1 day after enucleation, recovered at day 2, and significantly increased by day 7 (Figure 3A,B; Figure 3—figure supplement 1C). The changes of spine size showed similar trends but with smaller changes (Figure 3C). We also imaged spines in visual cortical regions outside of V1 (non-V1) and found that there were no significant increases of sGluA1 expression, as well as spine size, in non-V1 visual cortex following 7 days of enucleation (Figure 3D–F). Indeed, we observed a systematic decrease in sGluA1 level after VD in those regions (Figure 3D,E). These data demonstrate that visual deprivation-induced spine enrichment of sGluA1 is specific to V1.
 
-## Heterogeneous responses of individual spines to visual deprivation
+![Figure 3.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Changes in spine sGluA1 expression and spine size before (baseline, BL) and after visual deprivation (VD) in V1 L2/3 neurons (n = 49 dendrites from eight mice; one-way ANOVA). Scale bar: 5 μm. (D–F) Changes in spine sGluA1 expression and spine size following VD in non-V1 visual cortex (n = 33 dendrites from six mice; one-way ANOVA). Scale bar: 5 μm. Data are presented as mean ± SEM. n.s., not significant; *p<0.05; ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Changes in dendrite dsRed2 level in mice following VD (n = 49 dendrites from eight mice; one-way ANOVA). (B) 10 days’ spine survival rate in mice with VD or sham-surgery (Sham-surgery: n = 23 dendrites from six mice; VD: n = 49 dendrites from eight mice. two-way ANOVA). (C) Changes in spine sGluA1 signal in mice with VD or sham-surgery (Sham-surgery: n = 23 dendrites from six mice; VD: n = 49 dendrites from eight mice. two-way ANOVA). Data are presented as mean ± SEM. n.s., not significant. **p<0.01; ****p<0.0001.
+
+### Heterogeneous responses of individual spines to visual deprivation
 
 As our imaging approach enables us to track changes of individual spines over time, we next examined how individual dendrites or spines of V1 L2/3 neurons responded to visual deprivation. We found that the responses of individual dendrites and spines were highly heterogeneous (Figure 4A; Figure 4—figure supplement 1A). Despite the overall increase in spine sGluA1 expression after 7 days of deprivation, some dendrites or spines did reduce sGluA1 expression (Figure 4A; Figure 4—figure supplement 1A), indicating that only a subset of spines undergo potentiation. However, compared to control mice with sham-surgery (SH), a greater proportion of dendrites or spines underwent increases (Figure 4A, B; Figure 4—figure supplement 1B). In the heatmap, we noticed that dendrites that showed decreases at day 7 tended to decrease sGluA1 level at day 1 following deprivation while the dendrites exhibiting increases of sGluA1 expression at day 7 did not show obvious decreases (Figure 4A). Therefore, we examined the relationship between spine sGluA1 changes of individual dendrites at day 1 and at day 7 after enucleation. A very strong positive correlation was detected (Figure 4C), indicating that dendrites that display a rapid decrease at day 1 would remain decreased at day 7 or show a reduced increase by day 7. We then separately plotted the dendrites that did or did not display a decrease after 1 day of enucleation and examined the relative sGluA1 levels of each group at day 7 (for details, see Methods). We observed two populations of dendrites: one population showed decrease of sGluA1 at day 1 but recovered to baseline level by day 7; The other population of dendrites did not change at day 1 but showed significant up-regulations of sGluA1 at day 7 (Figure 4D). The percentage of decrease dendrites was about 51% (Figure 4E, for details, see Methods). These two distinct populations of dendrites did not result from different populations of neurons, as we found that dendrites from the same neuron still responded differentially to deprivation (Figure 4F). Similarly, we observed two populations of spines with distinct responses to the enucleation (Figure 4—figure supplement 1C). Together, these results show that the responses of individual spines or dendrites to visual deprivation are highly heterogeneous.
 
-## Depth-dependent changes in spine sGluA1 expression after visual deprivation
+![Figure 4.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig4-v1.jpg)
+
+**Figure 4.:** (A) Heat map of change in sGluA1 level within individual dendrites in VD and sham-surgery (SH) groups. (B) Histogram of spine sGluA1 changes in dendrites 7 days after VD or sham-surgery (n = 23 dendrites in sham group; n = 49 dendrites in VD group; Kolmogorov-Smirnov test, p=0.079). (C) Correlation between spine sGluA1 changes of individual dendrites at day 1 and day 7 after VD (n = 49 dendrites; Pearson). (D) Changes of spine sGluA1 expression in dendrites that show decrease or no decrease at day 1 following VD in V1 L2/3 neurons. (n = 25 decrease dendrites and n = 24 no decrease dendrites from eight mice; one-way ANOVA). (E) Percentage of dendrites that decrease spine sGluA1 after 1 day of VD (51.02%). (F) Changes in spine sGluA1 of individual dendritic segments from the same V1 L2/3 neuron following binocular enucleation. Each line indicates individual dendritic segment. Data are presented as mean ± SEM. ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heat map of change in sGluA1 level within individual spines in L2/3 neurons following visual deprivation. (B) Histogram of spine sGluA1 changes in mice with or without 7 days of visual deprivation (n = 272 spines in sham group; n = 690 spines in VD group; Kolmogorov-Smirnov test, p=0.0007). (C) Changes of spine sGluA1 expression in spines that show decrease or no decrease at day 1 following VD in V1 L2/3 neurons. (n = 64 decrease spines and n = 584 no decrease spines from eight mice; one-way ANOVA). **p<0.01; ****p<0.0001.
+
+### Depth-dependent changes in spine sGluA1 expression after visual deprivation
 
 Previous studies using electrophysiological recordings in acute brain slices have reported that 2 days of visual deprivation is sufficient to increase AMPAR-mediated mEPSC amplitude in V1 L2/3 neurons (Bridi et al., 2018; Goel and Lee, 2007), however, we didn’t observe any changes in synaptic AMPAR expression at that time point in vivo. To address this, we performed biochemical experiments by dissecting V1 and isolating synaptosomes to examine synaptic AMPAR levels from mice 2 days after binocular enucleation or sham-surgery. In agreement with previous studies (Bridi et al., 2018; Goel and Lee, 2007), we observed a significant increase in synaptic GluA1 but not GluN1 in enucleated mice (Figure 5A,B). We next asked if the discrepancy in the imaging and biochemical results could result from analyzing distinct dendritic compartments, as in vivo imaging biases examination of more dorsal L1 synapses whereas in vitro biochemical experiments sample L1-L6 (Figure 5—figure supplement 1A). We isolated L1 and L2-6 by micro-dissecting V1 cortical tissue and then examined synaptic AMPAR expression separately (Figure 5—figure supplement 1A). The experiment revealed that synaptic GluA1 in L1 was decreased 2 days after enucleation but subsequently recovered to baseline by day 7, whereas synaptic GluA1 expression in L2-6 significantly increased following 2 days of enucleation and remained enhanced at day 7 (Figure 5C,D). These data suggest that visual deprivation has distinct effects on AMPAR expression in spines located in different layers. To verify this in vivo, we repeatedly imaged basal dendrites from L2/3 neurons (150–300 μm deep) before and after enucleation. The amount of spine sGluA1 on basal dendrites was significantly increased 1 day following enucleation and remained elevated afterwards (Figure 5E,F; Figure 5—figure supplement 1B,C). To confirm that the difference in time course between basal dendrites and apical dendrites in response to deprivation is dependent on locations rather than resulting from different populations of neurons being examined, we imaged both apical dendrites and basal dendrites from the same neurons. We found that spine sGluA1 increases were consistently and significantly larger on basal dendrites than on apical dendrites (Figure 5G). The ratios of relative change in spine sGluA1 from basal dendrites over apical dendrites were significantly larger than one following deprivation (Figure 5H). Taken together, these data reveal that spines on basal dendrites of L2/3 neurons increase GluA1 content faster and more robustly than spines on apical dendrites in response to visual deprivation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig5-v1.jpg)
+
+**Figure 5.:** (A and B) Synaptic GluA1 and GluN1 levels in V1 from 2 days’ enucleated or sham-surgery mice (n = 5; Student’s t-test). (C and D) Synaptic GluA1 levels from superficial (L1) and deep (L2-6) layers of V1 (n = 6–9; Student’s t-test). (E and F) Changes in spine sGluA1 on basal dendrites of V1 L2/3 neurons following VD (n = 40 dendrites from six mice; one-way ANOVA). Scale bar: 5 μm. (G) Changes in spine sGluA1 on basal and apical dendrites from the same neurons following VD (n = 16 neurons from seven mice; repeated measure two-way ANOVA). (H) Change ratios of basal dendrites to apical dendrites of the same neurons following VD were significantly larger than 1 (n = 16 neurons from seven mice. one sample t-test). Data are presented as mean ± SEM. n.s., not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) (Left) Schematic of imaging region of interest (ROI); (Right) Staining with trypan blue dye to distinguish L1 from L2-6 for micro-dissection. (B) Changes of spine sGluA1 on basal dendrites in mice with VD or sham-surgery (Sham-surgery: n = 23 dendrites from six mice; VD: n = 40 dendrites from six mice; two-way ANOVA). (C) Changes in spine size on basal dendrites before and after VD (n = 40 dendrites from six mice; one-way ANOVA). (D) Schematic of ascending and descending dendrites from L2/3 neurons. 0 indicates the most superficial dendrite within an imaging ROI or most superficial/proximal spine on a dendritic segment; one indicates the deepest dendrite in an imaging ROI or deepest/most distal spine along a dendrite. (E) Correlation between changes of average sGluA1 level on dendrites and the depth of dendrites from the pia (n = 167 dendrites; Pearson). (F) Correlations between change in spine sGluA1 expression 7 days after VD and spine depth from pia in ascending and descending dendrites (n = 1642 spines from ascending dendrites; n = 1998 spines from descending dendrites; Pearson). (G) Correlations between change in spine sGluA1 signal 7 days after VD and spine distance from dendrite branch point in ascending and descending dendrites (n = 1642 spines from ascending dendrites; n = 1998 spines from descending dendrites; Pearson). (H) Correlation between change in spine sGluA1 expression after 7 days of sham-surgery and spine depth (n = 293 spines; Pearson). (I) Correlations between baseline spine sGluA1 level (imaging day 1) and spine depth (n = 1642 spines from ascending dendrites; n = 1998 spines from descending dendrites; Pearson). (J) Correlations between baseline spine sGluA1 expression (imaging day 1) and spine distance from branch point (n = 1642 spines from ascending dendrites; n = 1998 spines from descending dendrites; Pearson). (K) Changes of spine sGluA1 level in spines located at different depths following 7 days of visual deprivation (n = 188–237 spines; Friedman test). Data are presented as mean ± SEM. n.s., not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
 To further investigate depth-dependent mechanisms of sGluA1 expression, we examined the relationship between the depth of dendrites from the pia mater and changes of sGluA1 in dendrites. The change of average spine sGluA1 expression level on dendrites after 7 days of enucleation was positively correlated with the depth of dendrites (Figure 5—figure supplement 1D,E), indicating that deep dendrites have greater increases than superficial dendrites. Next, we tested whether spines along the same dendrite had similar depth-dependent changes. To distinguish between the depth of spines and the distance from dendrite branch point, we separately analyzed ascending dendrites and descending dendrites. In both ascending dendrites and descending dendrites, there was a positive correlation between spine depth and deprivation-induced sGluA1 expression (Figure 5—figure supplement 1F), such that deep spines increase sGluA1 more than superficial spines following deprivation. Significantly, the correlation of spine sGluA1 change with the distance from dendrite branch point showed opposite directions in ascending and descending dendrites (Figure 5—figure supplement 1G), suggesting that changes in sGluA1 expression are correlated with spine depth instead of distance from dendrite branch point. This depth-dependent change in spine sGluA1 was not caused from imaging artifacts. First, such correlation was not observed in sham-surgery mice (Figure 5—figure supplement 1H). Second, when we focused on baseline expression of spine sGluA1, we found it was positively correlated with the distance from branch point but not with the depth of spines (Figure 5—figure supplement 1I,J). Because these correlations were weak but statistically significant, we further analyzed synaptic sGluA1 signal intensity in apical and basal dendritic compartments within each imaging session to determine if we would observe similar depth-dependent effects on sGluA1 expression following enucleation. We categorized spines by dendritic compartment and then compared the sGluA1 intensity in the deepest 15% of spines with the most superficial 15% of spines along the same dendritic segment. In both apical and basal dendrites we found that spines positioned more deeply from the pia exhibited greater deprivation-induced changes in synaptic sGluA1 expression than spines more superficially poised along the same dendrite (Figure 5—figure supplement 1K). Collectively, these data demonstrate that visual deprivation induces depth-dependent changes in spine sGluA1.
 
-## Lamina-specific increases of spine sGluA1 level after deprivation
+### Lamina-specific increases of spine sGluA1 level after deprivation
 
 Laminar differences have been reported for ex vivo measurements of homeostatic synaptic scaling induced by visual deprivation, where L4 scaling occurs only before P21, and L2/3 scaling is observed only after this age (Desai et al., 2002; Petrus et al., 2011). However, whether L5 neurons are involved in scaling remains largely unknown. Additionally, 7 days of enucleation did not induce a change of synaptic GluA1 expression in L1 in our in vitro biochemical experiments but caused a significant increase in spine sGluA1 level on apical dendrites of L2/3 neurons in vivo. As L5 neurons also have dendrites in L1, we asked if L5 neurons responded to visual deprivation. We similarly used in utero electroporation to transfect V1 L5 neurons and longitudinally imaged apical dendrites exclusively from these neurons (Figure 6A,B). Under baseline conditions we found that average spine sGluA1 expression and spine size on apical dendrites of L5 neurons were very stable with 66% spines persisting across 10 imaging days (Figure 6—figure supplement 1A–D). Similar to L2/3 neurons, sGluA1 intensity within individual spines on apical dendrites of L5 neurons was very dynamic as well. However, the average CV of spine sGluA1 signal on apical dendrites of L5 neurons was significantly smaller than that on apical dendrites of L2/3 neurons (Figure 6C), indicating that L5 neurons are less dynamic than L2/3 neurons. Following visual deprivation, the spine survival rate of L5 neurons remained unchanged (Figure 6—figure supplement 1D), but the CV of spine sGluA1 level was increased (Figure 6D), further suggesting that this dynamic is dependent on sensory input. Regarding synaptic AMPAR expression, we observed that spine sGluA1 expression was reduced after 1 day and then recovered to baseline levels (Figure 6E,F; Figure 6—figure supplement 1E). Nevertheless, in contrast to L2/3 neurons, we didn’t observe any significant increase after 7 days of deprivation in L5 neurons (Figure 6E,F; Figure 6—figure supplement 1E,F). We therefore conclude that visual deprivation specifically enhances AMPAR expression on apical dendrites of V1 L2/3 neurons but not on apical dendrites of L5 neurons, intriguingly suggesting exclusive mechanisms that regulate these distinct cortical circuits.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig6-v1.jpg)
+
+**Figure 6.:** (A) Experimental timeline. (B) 3D reconstruction of L5 neurons of visual cortex transfected with sGluA1 (green) and dsRed2 (magenta), merged in white. (C) Average CV of spine sGluA1 expression in V1 L2/3 and L5 neurons under baseline conditions. (n = 280 spines, L2/3 neurons; n = 256 spines, L5 neurons; Student’s t-test). (D) The CV of spine sGluA1 in L5 neurons before and after visual deprivation. (n = 256/277 (Sham/VD) spines in L5 neurons; Student’s t-test). (E) Representative time-lapse images of L5 apical dendrites. Scale bar: 5 μm. (F) Changes in spine sGluA1 expression on apical dendrites of V1 L5 neurons following VD (n = 35 dendrites from four mice; one-way ANOVA). (G) Correlation between spine sGluA1 changes of individual dendrites in L5 neurons at day 1 and day 7 after VD (n = 35 dendrites; Pearson). (H) Changes of spine sGluA1 expression in cells that show decrease or no decrease at day 1 following VD in L5 neurons. (n = 6 decrease cells and n = 6 no decrease cells from four mice; one-way ANOVA). Data are presented as mean ± SEM. **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Heat map of sGluA1 expression within individual spines of V1 L5 neurons. Spines on the same dendrites were grouped together. (B) Changes in spine sGluA1 expression in V1 L5 neurons under basal states (n = 29 dendrites from four mice; one-way ANOVA). (C) Changes in spine size in V1 L5 neurons under basal states (n = 29 dendrites from four mice; one-way ANOVA). (D) Percentage of spines that persist across 10 imaging days in L5 neurons from mice with or with visual deprivation. (n = 23/49 (Sham/VD) dendrites). (E) Changes in spine sGluA1 level in mice with sham-surgery or visual deprivation (Sham-surgery: n = 29 dendrites from four mice; VD: n = 35 dendrites from four mice; two-way ANOVA). (F) Changes in spine size in V1 L5 neurons before and after visual deprivation (n = 35 dendrites from four mice; one-way ANOVA). (G) Heat map of change in sGluA1 level within individual dendrites in V1 L5 neurons following visual deprivation. (H) Correlation between changes of average sGluA1 level on dendrites and the depth of dendrites from pia in V1 L5 neurons (n = 34 dendrites; Pearson). (I) Correlations between change in spine sGluA1 level 7 days after VD or sham-surgery and spine depth from the pia in ascending dendrites (n = 181 spines from VD group; n = 268 spines from sham group; Pearson). (J) Correlations between baseline spine sGluA1 expression (imaging day 1) and spine distance from dendrite branch point (n = 298 spines; Pearson). Data are presented as mean ± SEM. n.s., not significant; *p<0.05.
 
 We next examined how individual dendrites or spines in L5 responded to visual deprivation. Again, we found that the responses were very heterogeneous, with some dendrites increasing sGluA1 and some decreasing sGluA1 (Figure 6—figure supplement 1G). We also observed a similar positive correlation of spine sGluA1 changes between day 1 and day 7 following visual deprivation in L5 neurons (Figure 6G). We then categorized cells based on whether their apical dendrites did or did not display a decrease after 1 day of enucleation, and we found that there were two populations of cells with distinct responses to binocular deprivations: one group showed decrease at day 1 and day 2 after enucleation and then recovered to baseline later while the other group did not decrease at day 1 but exhibited a gradual increase following enucleation despite that increases were not significant at any time points compared to the baseline level (Figure 6H). Previous studies in the barrel cortex indicate that specific subtypes of L5 neurons respond differentially to changes in sensory experiences (Greenhill et al., 2015; Holtmaat et al., 2006). The two populations of cells in V1 L5 with distinct responses to visual deprivation observed here might be due to their different cell types.
 
 We also investigated whether visual deprivation induced a similar depth-dependent change of spine sGluA1 in L5 neurons as in L2/3 neurons despite the observation that there is no net increase. To accomplish this, we analyzed only ascending L5 dendrites since there are few descending apical L5 dendrites in L1. The change of synaptic sGluA1 expression on dendrites did not correlate with the depth (Figure 6—figure supplement 1H). For individual spines, in both sham-surgery and VD groups, we did not see any correlations between the change in spine sGluA1 and spine depth (Figure 6—figure supplement 1I). Nevertheless, there was a strong positive correlation between baseline spine sGluA1 level and the distance to dendrite branch point in L5 neurons (Figure 6—figure supplement 1J). These results indicate that the depth-dependent changes of spine sGluA1 induced by deprivation are specific to L2/3 neurons as well. However, the distance-dependent baseline expression of spine sGluA1 occurs in both L2/3 and L5 neurons, suggesting that this is a more general phenomenon.
 
-## GRIP1-dependent increases of sGluA1 following deprivation
+### GRIP1-dependent increases of sGluA1 following deprivation
 
 Finally, we sought to determine the mechanisms underlying the increase of synaptic AMPARs following visual deprivation in vivo. Glutamate receptor interacting protein 1 (GRIP1) is a multi-PDZ domain containing protein that binds directly with AMPAR subunits (Dong et al., 1997). We have previously shown that GRIP1 plays a key role in regulating AMPAR trafficking, synaptic targeting and homeostatic plasticity (Gainey et al., 2015; Mao et al., 2010; Pfennig et al., 2017; Tan et al., 2015). To test whether GRIP1 mediates the increase in synaptic GluA1 induced by visual deprivation, we generated Grip1 conditional knockout mice (neuron-specific deletion via Nestin-Cre expression) (Mejias et al., 2011). In wild type (WT) mice, using biochemical experiments we identified a significant increase in synaptic GluA1 as well as GRIP1 in V1 after 2 days of enucleation as described above (Figure 7A,B). However, no increase in synaptic GluA1 was observed in Grip1 knockout mice (Figure 7A,C). Moreover, we observed no increases of spine sGluA1 on apical dendrites of V1 L2/3 neurons in Grip1 knockout mice in vivo following enucleation. In fact, we observed a small decrease in spine sGluA1 level that recovered between day 3 and day 7 after deprivation (Figure 7D,E; Figure 7—figure supplement 1A,B). The initial decrease of sGluA1 after enucleation phenocopies our results from WT mice (Figure 3B) and might be extended in Grip1 knockout mice due to reduced AMPAR exocytosis. The later recovery could be some compensatory regulations by other AMPAR-binding proteins, like GRIP2 (Anggono and Huganir, 2012). Nevertheless, these data demonstrate that GRIP1 is essential for the deprivation-induced up-regulation of synaptic AMPARs.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig7-v1.jpg)
+
+**Figure 7.:** (A–C) Synaptic GluA1 and GRIP1 levels in V1 from WT and Grip1 knockout (KO) mice with 2 days of sham-surgery or VD (n = 5; Student’s t-test and two-way ANOVA). (D–E) Changes in spine sGluA1 expression on apical dendrites of V1 L2/3 neurons from Grip1 KO mice following VD (n = 32 dendrites from five mice; one-way ANOVA). Scale bar: 5 μm. (F) Model of spine GluA1 dynamics in mice with normal experience or visual deprivation. Data are presented as mean ± SEM. n.s., not significant; *p<0.05; ****p<0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Changes in spine sGluA1 following VD in WT mice and Grip1 KO mice (WT-VD: n = 49 dendrites from eight mice; Grip1 KO-VD: n = 32 dendrites from five mice; two-way ANOVA). (B) Changes in spine size following VD in Grip1 KO mice (n = 32 dendrites from five mice; one-way ANOVA). Data are presented as mean ± SEM. *p<0.05; **p<0.01. ***p<0.001. ****p<0.0001.
 
 ## Discussion
 
@@ -93,47 +149,183 @@ Overall, by tracking the strength of individual synapses with longitudinal imagi
 
 All experimental protocols were conducted according to the National Institutes of Health guidelines for animal research and were approved by the Animal Care and Use Committee at Johns Hopkins University School of Medicine.
 
-## In utero electroporation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRed2 (rabbit polyclonal)</td>
+      <td>Clontech</td>
+      <td>Cat# 632496, RRID:AB_10013483</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab13970, RRID:AB_300798</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 goat anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11011, RRID:AB_143157</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-chicken</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11039, RRID:AB_2534096</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluA1 (JH4294)</td>
+      <td>(Oku and Huganir, 2013)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluN1 (JH2590)</td>
+      <td>(Liao et al., 1999)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MNI-caged-L-glutamate</td>
+      <td>Tocris</td>
+      <td>Cat#0218, N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Mouse: WT C57BL/6N</td>
+      <td>Charles River</td>
+      <td>Strain #027, RRID:IMSR_CRL:027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Nestin-Grip1 fl/fl mouse</td>
+      <td>(Takamiya et al., 2008)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SEP-GluA1</td>
+      <td>(Zhang et al., 2015)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Myc-GluA2</td>
+      <td>(Zhang et al., 2015)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DsRed2</td>
+      <td>Clontech</td>
+      <td>Cat# 632405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>https://www.mathworks.com,RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>ScanImage</td>
+      <td>(Pologruto et al., 2003)</td>
+      <td>https://www.vidriotechnologies.com, RRID:SCR_014307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>IGOR Pro</td>
+      <td>WaveMetrics</td>
+      <td>https://www.wavemetrics.com /products/igorpro, RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>MapManager</td>
+      <td>(Zhang et al., 2015)</td>
+      <td>https://mapmanager.net/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>ImageJ</td>
+      <td>(Schneider et al., 2012)</td>
+      <td>https://imageJ.net/, RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### In utero electroporation
 
 Progenitor cells in the visual cortex were transfected with SEP-GluA1, myc-GluA2, and dsRed2 (4:2:1 ratio, respectively) by in utero electroporation of E15 and E14 embryos to label L2/3 and L5 pyramidal neurons, respectively as previously described (Saito and Nakatsuji, 2001; Zhang et al., 2015). Timed pregnant C57BL/6N mice (Charles River) or Grip1 conditional knockout mice were anesthetized with Avertin (0.02 ml/mg). Approximately 0.5–1 µl of DNA solution containing fast green was pressure injected into the left lateral ventricle of each embryo through a pulled-glass pipette. The head of each embryo was placed between two forceps-type electrodes. The anode contacted the prefrontal side of left hemisphere and the cathode faced the occipital side of the injected ventricle to target the visual cortex. Five pulses of 35 V for L2/3 or 30 V for L5 (50 ms duration, 1 Hz) were delivered through a square wave electroporator (CUY21, BEX Co, LTD., Japan).
 
-## Craniotomy
+### Craniotomy
 
 Electroporated animals were subsequently implanted with a 3 × 3 mm cranial window over the visual cortex region at the age of two months. Mice were anesthetized with Avertin and the skull was sealed using dental cement. A metal head bar was attached to the skull during the surgery to allow head fixation for future two-photon imaging. Carprofen (4–5 mg/kg) and Dexamethasone (4–5 mg/kg) were injected to reduce pain and inflammation during the surgery. The antibiotics sulfamethoxazole (1 mg/ml) and trimethoprim (0.2 mg/ml) were chronically administered in the drinking water, and the animals were housed individually after surgery.
 
-## Optical intrinsic imaging
+### Optical intrinsic imaging
 
 One week after the cranial window surgery, optical intrinsic imaging was performed as previously described (Kalatsky and Stryker, 2003; Nauhaus and Ringach, 2007). Mice were anesthetized and maintained on 0.75% isoflurane supplemented by xylazine (13 mg/kg). Drifting bar stimuli (vertically or horizontally) were displayed on a gamma-corrected LCD screen, which was placed 20 cm away from the right eye, covering the majority of unilateral visual space. The bar stimulus drifted 10 times along each cardinal axis. Spherical correction was applied to the stimulus to define eccentricity in spherical coordinates. Optical images of the visual cortex were acquired at 30 Hz using a CMOS (Complementary Metal-Oxide-Semiconductor) camera (FLIR GS3-U3-23S6M-C) under red LED light (630 nm) with a 2.5×/0.075 numerical aperture (NA) Zeiss objective. Multiframe image stacks were averaged across 30 trials. Next the images were Gaussian filtered (σ = 2 pixels) and baseline was subtracted. V1 was delineated by a strong visual response with orthogonal retinotopy contours and the appropriate visual field sign (Garrett et al., 2014). Non-V1 is the region outside of V1 but still responding to visual stimulation.
 
-## Two-photon imaging
+### Two-photon imaging
 
 In vivo images were acquired of awake mice with a custom-built, two-photon laser-scanning microscope controlled by ScanImage (Vidrio, Ashburn, VA) written in MATLAB (Pologruto et al., 2003). Mice were habituated under the microscope for one hour per day starting at one week before the beginning of imaging and subsequently imaged over a period of 10 days. Apical or basal dendrites of L2/3 or L5 pyramidal neurons of mouse visual cortex were imaged using a 20×/1.0 NA water-immersion objective lens (Zeiss). SEP-GluA1 and dsRed2 were excited at 910 nm with a Ti:sapphire laser (Coherent) with 10 ~ 150 mW of power delivered to the back-aperture of the objective. Green and red fluorescence signals were acquired simultaneously and separated by a set of dichroic mirrors (MOM system, Sutter Instrument) and filters (ET525/50 m for green channel, ET605/70 m for red channel, Chroma). Image stacks were acquired at 1,024 × 1024 pixels with a voxel size of 0.12 μm in x and y and a z-step of 1 μm. Representative images shown in figures were masked based on dendritic dsRed2 signal, median filtered, and contrast enhanced.
 
-## Binocular enucleation
+### Binocular enucleation
 
 Enucleation mice were shortly anesthetized with isoflorane vapor first and then both eyes were surgically removed (Aerts et al., 2014). Antibiotic ointment was applied and carprofen was administrated immediately after the enucleation. Control sham mice were given time-matched anesthesia, and received antibiotic ointment treatment and carprofen administration, but were not enucleated. Mice were then returned to their home cage and monitored daily to make sure there was no bleeding or infection.
 
-## Neuronal culture and transfection
+### Neuronal culture and transfection
 
 Rat embryonic (E18) hippocampal neurons were plated on poly-L-lysine coated tissue culture dishes at a density of 30,000 cells/cm2 and grown in neurobasal media (Invitrogen) supplemented with 2% (vol/vol) B-27, 2 mM GlutaMAX, 50 U/mL PenStrep. Cultured neurons were fed once per week and used at DIV 18–21. 2–3 days before uncaging experiments, neurons were transfected with SEP-GluA1, myc-GluA2 and dsRed2 (4:2:1) using lipofectamine 2000 (Invitrogen) according to the manufacturer’s instructions.
 
-## Glutamate uncaging and voltage-clamp recordings
+### Glutamate uncaging and voltage-clamp recordings
 
 Cultured rat hippocampal neurons were imaged and recorded 2–3 days after transfection in a modified HEPES-based ACSF buffer (in mM): 140 NaCl, 5 KCl, 10 glucose, 10 HEPES, 2 CaCl2, 1 MgCl2, 0.001 TTX, and 2.5 MNI-caged-L-glutamate (Tocris), pH = 7.30 and 310–316 mOsm. Recordings were made at room temperature in recirculated ACSF (3 mL/min). Recording pipettes were fabricated (Flaming/Brown Micropipette Puller, Sutter Instruments) from borosilicate capillary glass (Sutter, 4–6 MΩ open-tip resistance) and filled with (in mM): 115 CsMeSO4, 2.8 NaCl, 5 TEACl, 0.4 EGTA, 20 HEPES, 3 MgATP, 0.5 NaGTP, 10 NaPhosphocreatine, and 2.5 QX-314, pH = 7.32 and 306 mOsm. Whole-cell voltage-clamp recordings were made using a MultiClamp 700B amplifier and Digidata 1440A digitizer (Axon Instruments). MNI-Glutamate (Tocris) was uncaged (1 ms pulse width, 0.2 Hz) with a two-photon laser (Spectra Physics, Santa Clara, CA) onto visually identified spines at a wavelength of 730 nm and a power of 20 mW at the objective back aperture. Glutamate uncaging position was calibrated and controlled using custom software developed in house (Scan Stim by Dr. Ingie Hong). To minimize the effect of electrotonic filtering caused by variable numbers of branch points between the site of dendritic uncaging and the somatic recording pipette, we uncaged exclusively on spines of secondary dendrites (4–8 spines/dendritic segment and 1–3 dendritic segments/neuron). The glutamate-uncaging-evoked excitatory postsynaptic current (uEPSC) was measured by pClamp (Axon Instruments) and synchronized triggering of the uncaging laser with voltage-clamp recordings. Representative images shown in figures were median filtered and contrast enhanced.
 
-## Tissue collection
+### Tissue collection
 
 Mice were anesthetized by inhalation of isoflurane followed by immediate cervical dislocation. Brains were removed and primary visual cortices were dissected out on ice. For L1 micro-dissection, brains were sectioned in the coronal plane into 300 μm thick slices using a Vibratome (VT1200s, Leica) in ice-cold, oxygenated (95% O2 and 5% CO2) low-Ca2+/high-Mg2+ dissection buffer (in mM): 2.6 KCl, 1.25 NaH2PO4, 26 NaHCO3, 211 sucrose, 11 glucose, 0.5 CaCl2 and 7 MgCl2. The slices were then stained with trypan blue dye for 30 s and washed with cold dissection buffer. L1 and L2-6 of primary visual cortex were dissected out on ice under a dissection microscope.
 
-## PSD fractionation and western blot
+### PSD fractionation and western blot
 
 Primary visual (V1) cortices from control and enucleation mice were homogenized on ice in homogenization buffer buffer (in mM): 320 sucrose, five sodium pyrophosphate, 1 EDTA, 10 HEPES pH 7.4, 0.0002 okadaic acid, protease inhibitor cocktail (Roche)] using a 26-gauge needle. Homogenate was then centrifuged at 800 × g for 10 min at 4°C to yield P1 (nuclear) and S1 (post-nuclear). S1 was centrifuged at 17,000 × g for 20 min to yield P2 (membrane) and S2 (cytosol). P2 was then resuspended in water adjusted to 4 mM HEPES pH 7.4 followed by 30 min’ agitation at 4°C. Suspended P2 was centrifuged at 25,000 × g for 20 min at 4°C. The resulted pellet (synaptosome) was resuspended in 50 mM HEPES pH 7.4, mixed with an equal volume of 1% triton X-100, and agitated at 4°C for 10 min. The PSD fraction was generated by centrifugation at 25,000 x g for 20 min at 4°C. The PSD material was then resuspended in lysis buffer (PBS containing 50 mM NaF, 5 mM sodium pyrophosphate, 1% Nonidet P-40, 1% sodium deoxycholate, 0.02% SDS, 200 nM okadaic acid, and protease inhibitor cocktail). The protein concentration was determined by bicinchoninic acid assay (BCA) kit (Thermo Fisher) and material was analyzed by Western blot. The following antibodies were used: anti-GluA1 C-terminal polyclonal antibody (JH4294, made in house), anti-GluN1 polyclonal antibody (JH2590, made in house), anti-GRIP1 polyclonal antibody (Millipore).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were anesthetized with Avertin and transcardially perfused with 4% paraformaldehyde (PFA). The brain was removed and fixed in 4% PFA/PBS for 2 hr at room temperature. Brains were then sectioned in the coronal plane into 100 μm thick slices using a vibratome (VT-1000, Leica). Slices were first blocked in 1% BSA with 0.3% triton X-100 in PBS for 1 hr at room temperature and then incubated with primary antibodies overnight at 4°C followed by incubation with secondary antibodies for 2 hr at room temperature. Slices were mounted in PermaFluor mounting medium (Thermo Scientific) and tiled z stack images were obtained using a laser scanning confocal microscope (Zeiss LSM510). The following primary antibodies were used: rabbit anti-dsRed2 (1:1000, Clontech) and chicken anti-GFP (1:1000, Abcam). The following secondary antibodies were used: Alexa Fluor 568 goat anti-rabbit (1:500 Thermo Fisher Scientific) and Alexa Fluor 488 goat anti-chicken (1:500 Thermo Fisher Scientific).
 
-## Fluorescence intensity analysis
+### Fluorescence intensity analysis
 
 Signal intensity in spines was analyzed using a custom-written software MapManager (https://mapmanager.net) in Igor Pro as previously described (Zhang et al., 2015). Briefly, each spine was assigned two regions of interest (ROIs) with a spineROI enclosed the spine head and a shaftROI enclosing the dendritic shaft adjacent to that spine. A backgroundROI (same shape and number of pixels as the spineROI and shaftROI) was translated in x/y to a nearby region of the image that was representative of the background fluorescence. Intensity of SEP-GluA1 represents surface sGluA1 expression as SEP signal is pH-dependent, whereby acidic intracellular environments quenches the fluorescence. To compare intensity values between imaging sessions, the background subtracted spineROI from either the SEP-GluA1 or dsRed channel was normalized to background subtracted the dsRed signal on the adjacent dendritic shaftROI. Further forms of normalizations were performed for different analyses as described in the following paragraph.
 
@@ -147,6 +339,6 @@ In Figure 5—figure supplement 1E; Figure 6—figure supplement 1H, the depth o
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/52420/elife-52420-fig9-v1.jpg)
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed in GraphPad Prism 7. Data distribution was tested for normality (Shapiro-Wilk test) and then comparisons were made using parametric or non-parametric tests, as appropriate. Statistical significance was determined by Student’s t-test, one-sample t-test, Kolmogorov-Smirnov test, one-way or two-way ANOVA with Bonferroni post hoc test, Friedman test with Dunn’s post hoc test as indicated in the figure legends.

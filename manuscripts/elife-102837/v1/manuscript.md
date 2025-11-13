@@ -6,9 +6,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01tm6cn81 Department of Pharmacology, University of Gothenburg Gothenburg Sweden
-2. https://ror.org/01tm6cn81 Institute of Neuroscience and Physiology, University of Gothenburg Gothenburg Sweden
-3. https://ror.org/01tm6cn81 Sahlgreska Academy, University of Gothenburg Gothenburg Sweden
+1. Department of Pharmacology, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+2. Institute of Neuroscience and Physiology, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+3. Sahlgreska Academy, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
 
 † Corresponding author
 

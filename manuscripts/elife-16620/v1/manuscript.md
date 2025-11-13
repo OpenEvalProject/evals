@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.16620.001 BubR1 is a key component of the spindle assembly checkpoint (SAC). Mutations that reduce BubR1 abundance cause aneuploidization and tumorigenesis in humans and mice, whereas BubR1 overexpression protects against these. However, how supranormal BubR1 expression exerts these beneficial physiological impacts is poorly understood. Here, we used Bub1b mutant transgenic mice to explore the role of the amino-terminal (BubR1 N ) and internal (BubR1 I ) Cdc20-binding domains of BubR1 in preventing aneuploidy and safeguarding against cancer. BubR1 N was necessary, but not sufficient to protect against aneuploidy and cancer. In contrast, BubR1 lacking the internal Cdc20-binding domain provided protection against both, which coincided with improved microtubule-kinetochore attachment error correction and SAC activity. Maximal SAC reinforcement occurred when both the Phe- and D-box of BubR1 I were disrupted. Thus, while under- or overexpression of most mitotic regulators impairs chromosome segregation fidelity, certain manipulations of BubR1 can positively impact this process and therefore be therapeutically exploited. DOI: http://dx.doi.org/10.7554/eLife.16620.001
+BubR1 is a key component of the spindle assembly checkpoint (SAC). Mutations that reduce BubR1 abundance cause aneuploidization and tumorigenesis in humans and mice, whereas BubR1 overexpression protects against these. However, how supranormal BubR1 expression exerts these beneficial physiological impacts is poorly understood. Here, we used Bub1b mutant transgenic mice to explore the role of the amino-terminal (BubR1N) and internal (BubR1I) Cdc20-binding domains of BubR1 in preventing aneuploidy and safeguarding against cancer. BubR1N was necessary, but not sufficient to protect against aneuploidy and cancer. In contrast, BubR1 lacking the internal Cdc20-binding domain provided protection against both, which coincided with improved microtubule-kinetochore attachment error correction and SAC activity. Maximal SAC reinforcement occurred when both the Phe- and D-box of BubR1I were disrupted. Thus, while under- or overexpression of most mitotic regulators impairs chromosome segregation fidelity, certain manipulations of BubR1 can positively impact this process and therefore be therapeutically exploited.
 
 ## Introduction
 
@@ -36,119 +36,464 @@ Despite profound anti-tumor and anti-aneuploidization effects of BubR1 overexpre
 
 ## Results
 
-## Generation of transgenic mice overexpressing BubR1 mutants
+### Generation of transgenic mice overexpressing BubR1 mutants
 
-To determine the role of the N-terminal and internal Cdc20-binding domains in the protective effect of BubR1 overexpression on aneuploidy and cancer, we generated three distinct Flag-tagged mutant
+To determine the role of the N-terminal and internal Cdc20-binding domains in the protective effect of BubR1 overexpression on aneuploidy and cancer, we generated three distinct Flag-tagged mutant Bub1b transgenic mouse strains (Figure 1A). The first two mutants lacked either residues 1–363 containing the N-terminal Cdc20-binding domain (Bub1bΔN) or residues 525–700 (Bub1bΔI) which disrupts the Phe box, and removes D-box2 and KARD. The third mutant contained only the N-terminal Cdc20-binding domain (Bub1bN). Like FL-Bub1b, all three mutants were expressed under the control of the ubiquitously active CAAGS promoter (Baker et al., 2013). Enhanced green fluorescent protein (EGFP) was co-expressed from an internal ribosome entry site (IRES). Western blots of mouse embryonic fibroblasts (MEFs) and lung tissue from 5-month old mice revealed that each of the three BubR1 mutants was expressed at levels comparable to that of FL-BubR1 (strain T23; Figure 1B, and Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig1-v1.jpg)
 
-**Figure 1.:** (A) (top) Bub1b transgenic vector design. pCAGGS, promoter consisting of the CMV immediate enhancer and the chicken-actin promoter. FL, full-length. IRES, internal ribosome entry site. (bottom) Schematics of the Flag-Bub1b transgenic mouse constructs. KEN, KEN-box. D, destruction-(D-)box. GLEBs, GLEBs-binding motif. Phe, Phe box. KARD, kinetochore attachment regulatory domain. (B) Western blots of MEF (left) and lung tissue extracts (right) from wild-type (WT) and Flag-Bub1b transgenic mice. Blots were probed with the indicated antibodies. Ponceau S was used to normalize loading.DOI: http://dx.doi.org/10.7554/eLife.16620.003
+**Figure 1.:** (A) (top) Bub1b transgenic vector design. pCAGGS, promoter consisting of the CMV immediate enhancer and the chicken-actin promoter. FL, full-length. IRES, internal ribosome entry site. (bottom) Schematics of the Flag-Bub1b transgenic mouse constructs. KEN, KEN-box. D, destruction-(D-)box. GLEBs, GLEBs-binding motif. Phe, Phe box. KARD, kinetochore attachment regulatory domain. (B) Western blots of MEF (left) and lung tissue extracts (right) from wild-type (WT) and Flag-Bub1b transgenic mice. Blots were probed with the indicated antibodies. Ponceau S was used to normalize loading.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Full scan and multiple exposures of Western blots of MEF lysates from Figure 1B. WT, wild-type. FL, full-length.DOI: http://dx.doi.org/10.7554/eLife.16620.004
+**Figure 1—figure supplement 1.:** Full scan and multiple exposures of Western blots of MEF lysates from Figure 1B. WT, wild-type. FL, full-length.
 
-BubR1 is unique among mitotic regulators in that its overexpression does not lead to chromosome missegregation and aneuploidization and actually protects cells against chromosomal instability and karyotypic abnormalities (Baker et al., 2013; Ricke et al., 2011; Ryan et al., 2012; Sotillo et al., 2007). To examine whether the Bub1b mutants we created negatively impacted karyotype integrity, we performed chromosome counts on metaphase spreads of MEFs derived from wild-type and Bub1b transgenic MEFs (Table 1). There was no significant difference in aneuploidy rates between FL-Bub1b, Bub1bN, Bub1bΔI and wild-type MEFs, whereas Bub1bΔN MEFs had increased aneuploidy. However, these aneuploidy-prone MEFs did not have higher rates of chromosome segregation errors as assessed by live cell imaging (Table 2). As expected, missegregation rates for the FL-Bub1b, Bub1bN, and Bub1bΔI mutants were normal. By interphase FISH, none of the transgenic mouse lines, including Bub1bΔN, showed evidence of elevated aneuploidy rates in a broad spectrum of mouse tissues and organs collected from 5-month-old mice (Table 3). Altogether, these data indicated that our transgenic mutant lines could provide the framework necessary to characterize the benefits of FL-BubR1 overexpression.10.7554/eLife.16620.005Table 1.Karyotypes are stable in select BubR1 mutant overexpressing MEFs. Karyotype analysis of passage 5 MEFs of indicated genotype. n ≥ 3 lines, 50 cells per line. Data are mean ± s.d. WT, wild-type. FL, full-length. (See associated Table 1— source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.00510.7554/eLife.16620.006Table 1—source data 1.Source file for MEF aneuploidy rate data.DOI: http://dx.doi.org/10.7554/eLife.16620.006Mitotic MEF genotype (n)Mitotic figuresAneuploid figures % (s.d)Karyotype with indicated chromosome number363738394041424344WT (5) 2509 (6)11052279700FL-Bub1b (3)15010 (3)00121357500Bub1bΔI (3)1508 (3)00121389000Bub1bΔN (5)25018 (6)*0021520423600Bub1bN (3)1506 (2)00131414100*p<0.05.10.7554/eLife.16620.007Table 2.Bub1b transgenic MEFs have normal missegregation rates. Live-cell imaging of chromosome segregation defects in primary H2B-RFP MEFs of indicated genotypes. n ≥ 3 lines, ≥ 20 cells per line. Data are mean ± s.e.m. WT, wild-type. FL, full-length. (See associated Table 2—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.00710.7554/eLife.16620.008Table 2—source data 1.Source file for missegregation assay data.DOI: http://dx.doi.org/10.7554/eLife.16620.008MEF genotype (n)Mitotic cells inspectedCells with segregation defectsMetaphases with misaligned chromosomesAnaphases with lagging chromosomesAnaphases with bridges chromosome% (s.e.m)% (s.e.m)% (s.e.m)% (s.e.m)WT (3)9416 (1)0 (0)6 (3)13 (1)FL-Bub1b (3)10517 (2)3 (3)3 (2)11 (2)Bub1bΔI (3)10512 (1)1 (1)1 (1)10 (1)Bub1bΔN (3)10119 (1)1 (1)7 (1)11 (2)Bub1bN (3)9517 (6)3 (2)2 (2)12 (6)10.7554/eLife.16620.009Table 3.Bub1b transgenic mice have normal rates of aneuploidy in vivo. Interphase FISH on specified tissues from mice of indicated genotypes. n = 3 animals, 100 cells per tissue per animal. Data are mean ± s.d. WT, wild-type. FL, full-length. (See associated Table 3—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.00910.7554/eLife.16620.010Table 3—source data 1.Source file for tissue aneuploidy rate data.DOI: http://dx.doi.org/10.7554/eLife.16620.010Percentage of aneuploidy (s.d)Tissue TypeGenotypeChrom 4Chrom 7LungWT1.3 (0.6)3.0 (0)FL-Bub1b2.3 (0.6)2.0 (1)Bub1bΔI2.0 (0)2.3 (0.6)Bub1bΔN3.0 (1)2.3 (0.6)Bub1bN2.3 (0.6)2.3 (0.6)HeartWT2.0 (1)1.7 (0.6)FL-Bub1b1.3 (0.6)2.0 (1)Bub1bΔI1.3 (0.6)2.0 (0)Bub1bΔN1.7 (1.2)2.0 (1)Bub1bN1.3 (0.6)1.7 (0.6)EyeWT2.0 (0)2.0 (1)FL-Bub1b2.0 (0)2.3 (0.6)Bub1bΔI1.7 (0.6)1.3 (0.6)Bub1bΔN2.0 (1)2.3 (0.6)Bub1bN1.7 (0.6)2.0 (0)KidneyWT2.0 (1)2.0 (1)FL-Bub1b2.3 (0.6)2.0 (0)Bub1bΔI2.0 (1)1.3 (0.6)Bub1bΔN2.7 (0.6)2.0 (0)Bub1bN2.0 (1)1.3 (0.6)SpleenWT3.3 (0.6)2.3 (1.2)FL-Bub1b3.0 (1)2.0 (1)Bub1bΔI2.0 (1)1.7 (0.6)Bub1bΔN3.0 (1)2.7 (0.6)Bub1bN2.7 (0.6)3.0 (0)Skeletal muscleWT2.3 (0.6)2.6 (0.6)FL-Bub1b2.7 (0.6)2.0 (0)Bub1bΔI2.0 (0)2.0 (1)Bub1bΔN2.3 (1.2)2.7 (0.6)Bub1bN2.0 (0)2.3 (0.6)
+BubR1 is unique among mitotic regulators in that its overexpression does not lead to chromosome missegregation and aneuploidization and actually protects cells against chromosomal instability and karyotypic abnormalities (Baker et al., 2013; Ricke et al., 2011; Ryan et al., 2012; Sotillo et al., 2007). To examine whether the Bub1b mutants we created negatively impacted karyotype integrity, we performed chromosome counts on metaphase spreads of MEFs derived from wild-type and Bub1b transgenic MEFs (Table 1). There was no significant difference in aneuploidy rates between FL-Bub1b, Bub1bN, Bub1bΔI and wild-type MEFs, whereas Bub1bΔN MEFs had increased aneuploidy. However, these aneuploidy-prone MEFs did not have higher rates of chromosome segregation errors as assessed by live cell imaging (Table 2). As expected, missegregation rates for the FL-Bub1b, Bub1bN, and Bub1bΔI mutants were normal. By interphase FISH, none of the transgenic mouse lines, including Bub1bΔN, showed evidence of elevated aneuploidy rates in a broad spectrum of mouse tissues and organs collected from 5-month-old mice (Table 3). Altogether, these data indicated that our transgenic mutant lines could provide the framework necessary to characterize the benefits of FL-BubR1 overexpression.
 
-## BubR1 N-terminus is necessary but not sufficient to protect against cancer and aneuploidy
+**Table 1.**
+ Karyotypes are stable in select BubR1 mutant overexpressing MEFs. Karyotype analysis of passage 5 MEFs of indicated genotype. n ≥ 3 lines, 50 cells per line. Data are mean ± s.d. WT, wild-type. FL, full-length. (See associated Table 1— source data 1).Table 1—source data 1.Source file for MEF aneuploidy rate data.
 
-In earlier studies, we found that overexpression of FL-BubR1 markedly inhibits lung tumor formation in
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Mitotic MEF genotype (n)</th>
+      <th rowspan="2">Mitotic figures</th>
+      <th rowspan="2">Aneuploid figures % (s.d)</th>
+      <th colspan="9">Karyotype with indicated chromosome number</th>
+    </tr>
+    <tr>
+      <th>36</th>
+      <th>37</th>
+      <th>38</th>
+      <th>39</th>
+      <th>40</th>
+      <th>41</th>
+      <th>42</th>
+      <th>43</th>
+      <th>44</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT (5)</td>
+      <td>250</td>
+      <td>9 (6)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>227</td>
+      <td>9</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b (3)</td>
+      <td>150</td>
+      <td>10 (3)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>135</td>
+      <td>7</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI (3)</td>
+      <td>150</td>
+      <td>8 (3)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>138</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN (5)</td>
+      <td>250</td>
+      <td>18 (6)*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>15</td>
+      <td>204</td>
+      <td>23</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bub1bN (3)</td>
+      <td>150</td>
+      <td>6 (2)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>141</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05._
+
+**Table 2.**
+ Bub1b transgenic MEFs have normal missegregation rates. Live-cell imaging of chromosome segregation defects in primary H2B-RFP MEFs of indicated genotypes. n ≥ 3 lines, ≥ 20 cells per line. Data are mean ± s.e.m. WT, wild-type. FL, full-length. (See associated Table 2—source data 1).Table 2—source data 1.Source file for missegregation assay data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>MEF genotype (n)</th>
+      <th>Mitotic cells inspected</th>
+      <th>Cells with segregation defects</th>
+      <th>Metaphases with misaligned chromosomes</th>
+      <th>Anaphases with lagging chromosomes</th>
+      <th>Anaphases with bridges chromosome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>% (s.e.m)</td>
+      <td>% (s.e.m)</td>
+      <td>% (s.e.m)</td>
+      <td>% (s.e.m)</td>
+    </tr>
+    <tr>
+      <td>WT (3)</td>
+      <td>94</td>
+      <td>16 (1)</td>
+      <td>0 (0)</td>
+      <td>6 (3)</td>
+      <td>13 (1)</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b (3)</td>
+      <td>105</td>
+      <td>17 (2)</td>
+      <td>3 (3)</td>
+      <td>3 (2)</td>
+      <td>11 (2)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI (3)</td>
+      <td>105</td>
+      <td>12 (1)</td>
+      <td>1 (1)</td>
+      <td>1 (1)</td>
+      <td>10 (1)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN (3)</td>
+      <td>101</td>
+      <td>19 (1)</td>
+      <td>1 (1)</td>
+      <td>7 (1)</td>
+      <td>11 (2)</td>
+    </tr>
+    <tr>
+      <td>Bub1bN (3)</td>
+      <td>95</td>
+      <td>17 (6)</td>
+      <td>3 (2)</td>
+      <td>2 (2)</td>
+      <td>12 (6)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Bub1b transgenic mice have normal rates of aneuploidy in vivo. Interphase FISH on specified tissues from mice of indicated genotypes. n = 3 animals, 100 cells per tissue per animal. Data are mean ± s.d. WT, wild-type. FL, full-length. (See associated Table 3—source data 1).Table 3—source data 1.Source file for tissue aneuploidy rate data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Percentage of aneuploidy (s.d)</th>
+    </tr>
+    <tr>
+      <th>Tissue Type</th>
+      <th>Genotype</th>
+      <th>Chrom 4</th>
+      <th>Chrom 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Lung</td>
+      <td>WT</td>
+      <td>1.3 (0.6)</td>
+      <td>3.0 (0)</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b</td>
+      <td>2.3 (0.6)</td>
+      <td>2.0 (1)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI</td>
+      <td>2.0 (0)</td>
+      <td>2.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN</td>
+      <td>3.0 (1)</td>
+      <td>2.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bN</td>
+      <td>2.3 (0.6)</td>
+      <td>2.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Heart</td>
+      <td>WT</td>
+      <td>2.0 (1)</td>
+      <td>1.7 (0.6)</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b</td>
+      <td>1.3 (0.6)</td>
+      <td>2.0 (1)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI</td>
+      <td>1.3 (0.6)</td>
+      <td>2.0 (0)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN</td>
+      <td>1.7 (1.2)</td>
+      <td>2.0 (1)</td>
+    </tr>
+    <tr>
+      <td>Bub1bN</td>
+      <td>1.3 (0.6)</td>
+      <td>1.7 (0.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Eye</td>
+      <td>WT</td>
+      <td>2.0 (0)</td>
+      <td>2.0 (1)</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b</td>
+      <td>2.0 (0)</td>
+      <td>2.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI</td>
+      <td>1.7 (0.6)</td>
+      <td>1.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN</td>
+      <td>2.0 (1)</td>
+      <td>2.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bN</td>
+      <td>1.7 (0.6)</td>
+      <td>2.0 (0)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Kidney</td>
+      <td>WT</td>
+      <td>2.0 (1)</td>
+      <td>2.0 (1)</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b</td>
+      <td>2.3 (0.6)</td>
+      <td>2.0 (0)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI</td>
+      <td>2.0 (1)</td>
+      <td>1.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN</td>
+      <td>2.7 (0.6)</td>
+      <td>2.0 (0)</td>
+    </tr>
+    <tr>
+      <td>Bub1bN</td>
+      <td>2.0 (1)</td>
+      <td>1.3 (0.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Spleen</td>
+      <td>WT</td>
+      <td>3.3 (0.6)</td>
+      <td>2.3 (1.2)</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b</td>
+      <td>3.0 (1)</td>
+      <td>2.0 (1)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI</td>
+      <td>2.0 (1)</td>
+      <td>1.7 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN</td>
+      <td>3.0 (1)</td>
+      <td>2.7 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bN</td>
+      <td>2.7 (0.6)</td>
+      <td>3.0 (0)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Skeletal muscle</td>
+      <td>WT</td>
+      <td>2.3 (0.6)</td>
+      <td>2.6 (0.6)</td>
+    </tr>
+    <tr>
+      <td>FL-Bub1b</td>
+      <td>2.7 (0.6)</td>
+      <td>2.0 (0)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔI</td>
+      <td>2.0 (0)</td>
+      <td>2.0 (1)</td>
+    </tr>
+    <tr>
+      <td>Bub1bΔN</td>
+      <td>2.3 (1.2)</td>
+      <td>2.7 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Bub1bN</td>
+      <td>2.0 (0)</td>
+      <td>2.3 (0.6)</td>
+    </tr>
+  </tbody>
+</table>
+
+### BubR1 N-terminus is necessary but not sufficient to protect against cancer and aneuploidy
+
+In earlier studies, we found that overexpression of FL-BubR1 markedly inhibits lung tumor formation in KrasLA1 mice, a genetically engineered strain carrying a conditional oncogenic Kras allele (KrasG12D) that becomes active upon intrachromosomal homologous recombination (Baker et al., 2013; Johnson et al., 2001). Given the robustness of this tumor protection, we used KrasLA1 mice to explore the role of the amino-terminal and internal Cdc20-binding domains in the tumor protective effect of BubR1 overexpression on cancer. Consistent with our previously published data (Baker et al., 2013), overexpression of FL-BubR1 had a tumor-protective effect (Figure 2A–C). Bub1bN and Bub1bΔN, however, were unable to ameliorate the tumor burden of KrasLA1 mice, indicating that binding of Cdc20 mediated by the N-terminal domain is necessary, but not sufficient, to protect against tumor formation. In contrast, Bub1bΔI fully retained the tumor-protective benefit of FL-Bub1b. In addition to adenomas, KrasG12D produces a hyperplastic epithelium throughout the lung, which is prone to aneuploidization as evidenced by FISH for chromosomes 4 and 7 (Figure 2B,D) (Baker et al., 2013). Analysis of hyperplastic lung tissue from KrasLA1 mice containing the FL-Bub1b transgene revealed that BubR1 overexpression has the ability to counteract KrasG12D-mediated aneuploidization (Baker et al., 2013). Using FISH analysis, mice expressing the various Bub1b mutant transgenes revealed that tumor protection tightly correlated with an ability to counteract KrasG12D-mediated aneuploidization (Figure 2D). Taken together, these data are consistent with the idea that BubR1 exerts its anti-neoplastic actions by preserving genomic integrity and suggest that only a subset of functional domains of BubR1 are necessary to afford protection against aneuploidization, which includes the N-terminal domain required for potent inhibition of APC/CCdc20 (Malureanu et al., 2009).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig2-v1.jpg)
 
-**Figure 2.:** (A) Lung lobes of KrasLA1 mice and KrasLA1 mice expressing various BubR1 transgenic proteins sacrificed at 6 weeks of age. Entire lungs were inspected using a dissection microscope to quantitate the number of lung tumors (adenomas) per mouse. (B) Hematoxylin-eosin stained lung sections of representative normal (WT) lung and a KrasLA1 (Kras) hyperplastic tumor-bearing lung (the dashed line marks the adenoma boundary). Insets highlight normal and hyperplastic lung architecture. (C) Quantification of the number of lung tumors from mice shown in A. n = 20, except for full-length (FL)-Bub1b where n = 7. Data are mean ± s.e.m. ***p<0.001. (D) Interphase FISH on the lungs of wild-type and KrasLA1 with and without FL-BubR1 and mutant overexpression. n = 5, ≥ 100 cells per animal. Data are mean ± s.d. *p<0.05, **p<0.01. ***p<0.001. Scale bars: A, 2 mm; B, 200 µm (main image) and 50 µm (insets). (See associated Figure 2—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.01110.7554/eLife.16620.012Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.012
+**Figure 2.:** (A) Lung lobes of KrasLA1 mice and KrasLA1 mice expressing various BubR1 transgenic proteins sacrificed at 6 weeks of age. Entire lungs were inspected using a dissection microscope to quantitate the number of lung tumors (adenomas) per mouse. (B) Hematoxylin-eosin stained lung sections of representative normal (WT) lung and a KrasLA1 (Kras) hyperplastic tumor-bearing lung (the dashed line marks the adenoma boundary). Insets highlight normal and hyperplastic lung architecture. (C) Quantification of the number of lung tumors from mice shown in A. n = 20, except for full-length (FL)-Bub1b where n = 7. Data are mean ± s.e.m. ***p<0.001. (D) Interphase FISH on the lungs of wild-type and KrasLA1 with and without FL-BubR1 and mutant overexpression. n = 5, ≥ 100 cells per animal. Data are mean ± s.d. *p<0.05, **p<0.01. ***p<0.001. Scale bars: A, 2 mm; B, 200 µm (main image) and 50 µm (insets). (See associated Figure 2—source data 1).
 
-## Protection against aneuploidy and cancer correlates with increased BubR1 at kinetochores
+### Protection against aneuploidy and cancer correlates with increased BubR1 at kinetochores
 
-To understand the molecular mechanism(s) underlying BubR1’s protective qualities, we conducted an extensive comparative analysis between MEFs from transgenics expressing FL-BubR1 and our BubR1 mutants for their ability to engage pathways that safeguard against chromosome missegregation, including the SAC and the MT-KT attachment error correction machinery. First, we focused on BubR1-kinetochore localization, as this property has been shown to be important for its role in both error correction and SAC signaling (
+To understand the molecular mechanism(s) underlying BubR1’s protective qualities, we conducted an extensive comparative analysis between MEFs from transgenics expressing FL-BubR1 and our BubR1 mutants for their ability to engage pathways that safeguard against chromosome missegregation, including the SAC and the MT-KT attachment error correction machinery. First, we focused on BubR1-kinetochore localization, as this property has been shown to be important for its role in both error correction and SAC signaling (Malureanu et al., 2009). By immunostaining with antibodies directed against the BubR1 N-terminus, we found that both FL-Bub1b and Bub1bΔI prometaphases had markedly increased amounts of BubR1 compared to wild-type MEFs (Figure 3A,B). Due to antibody limitations, we were unable to distinguish the ratio of kinetochore-localized endogenous to transgenic BubR1 within the mutant MEFs, with the exception of Bub1bN, in which only endogenous protein can be detected. This illuminated that endogenous BubR1 was displaced from the kinetochore, but we cannot rule out that the other mutants also had lower endogenous levels at the kinetochore, which is likely due to increased abundance of mutant protein within the cell. By staining with a Flag antibody that recognizes only the transgenic BubR1 protein, we determined that the relative expression of BubR1ΔI was slightly higher than FL-BubR1, while BubR1N was equivalent to FL-BubR1 (Figure 3C,D). BubR1ΔN, which did not protect against cancer, failed to localize to kinetochores, consistent with a lack of the GLEBs motif (Lampson and Kapoor, 2005). Taken together, these data demonstrate a likely need for BubR1 to retain functionality, perhaps mediated through the N-terminal domain, at the kinetochore to prevent aneuploidy and tumorigenesis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig3-v1.jpg)
 
-**Figure 3.:** (A) MEFs of indicated genotypes were stained for BubR1 (red), centromeres (cyan), and DNA (blue). WT, wild-type. FL, full-length. (B) Quantification of immunostaining of BubR1 shown in A. Values were normalized to centromere stain and are relative to wild-type. n = 3 lines, ≥ 10 cells per line. Data are mean ± s.d. *p<0.05, ***p<0.001. (C) Same as in A except with anti-Flag antibody to detect transgenic BubR1. (D) Quantification of immunostaining of Flag shown in C. Values were normalized to centromere stain and are relative to wild-type. Wild-type and Bub1bN represent background. n = 3 lines, ≥ 10 cells per line. Data are mean ± s.d. *p<0.05, **p<0.01, ***p<0.001. Scale bar 10 µm. (See associated Figure 3—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.01310.7554/eLife.16620.014Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.014
+**Figure 3.:** (A) MEFs of indicated genotypes were stained for BubR1 (red), centromeres (cyan), and DNA (blue). WT, wild-type. FL, full-length. (B) Quantification of immunostaining of BubR1 shown in A. Values were normalized to centromere stain and are relative to wild-type. n = 3 lines, ≥ 10 cells per line. Data are mean ± s.d. *p<0.05, ***p<0.001. (C) Same as in A except with anti-Flag antibody to detect transgenic BubR1. (D) Quantification of immunostaining of Flag shown in C. Values were normalized to centromere stain and are relative to wild-type. Wild-type and Bub1bN represent background. n = 3 lines, ≥ 10 cells per line. Data are mean ± s.d. *p<0.05, **p<0.01, ***p<0.001. Scale bar 10 µm. (See associated Figure 3—source data 1).
 
-## BubR1ΔI extends metaphase and improves SAC sustainability
+### BubR1ΔI extends metaphase and improves SAC sustainability
 
-BubR1, Mad2, and Mps1 kinase set the speed limit for mitosis (
+BubR1, Mad2, and Mps1 kinase set the speed limit for mitosis (Meraldi et al., 2004), and perturbations of these proteins accelerate mitotic timing and promote erroneous chromosome segregation (Rodriguez-Bravo et al., 2014). Therefore, we sought to determine the effect of FL-BubR1 and mutant BubR1 overexpression on mitotic timing by following MEFs from nuclear envelope breakdown (NEBD) to anaphase onset by time-lapse microscopy (Figure 4A). Because errors such as misalignments that may be caused by unattached kinetochores can trigger the SAC to delay mitotic progression, only cells that proceeded through mitosis without missegregation defects were included. Overexpression of FL-BubR1 had no impact on mitotic timing and the same was true for BubR1N and BubR1∆N (Figure 4B). In contrast, Bub1bΔI MEFs spent significantly more time in mitosis (Figure 4A,B). The increase in mitotic timing was specifically attributed to the metaphase-to-anaphase transition, where Bub1bΔI MEFs spent more than twice as long.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig4-v1.jpg)
 
-**Figure 4.:** Bub1bΔI MEFs have an increased time in mitosis and duration of mitotic arrest.(A) Representative time-lapse images of live MEF cells of indicated genotypes progressing from prophase (t = 0) to anaphase (A). Time is indicated in min. WT, wild-type. P, prophase. M, metaphase. (B) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase onset in H2B-RFP MEFs of the indicated genotypes by live cell time-lapse imaging. n = 3 lines, ≥ 20 cells per line. Data are mean ± s.d. **p<0.01. FL, full-length. (C) In a nocodazole challenge, H2B-RFP MEFs of indicated genotypes were treated with 100 ng/ml of nocodazole (noc) and monitored by live cell time-lapse imaging. The point of time in which 50% of cells are arrested in mitosis is plotted. n ≥ 3 lines, ≥ 20 cells per line. Data are mean ± s.d. *p<0.05, **p<0.01. (D) H2B-RFP wild-type and mutant transgenic MEFs were treated concurrently with 100 ng/ml nocodazole and indicated concentrations of the Mps1 kinase inhibitor, AZ3146. The point of time in which 50% of cells are arrested in mitosis is plotted. n = 3 lines, ≥ 20 cells per line. Data are mean ± s.d. *p<0.05. Scale bar, 10 µm (See associated Figure 4—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.01510.7554/eLife.16620.016Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.016
+**Figure 4.:** (A) Representative time-lapse images of live MEF cells of indicated genotypes progressing from prophase (t = 0) to anaphase (A). Time is indicated in min. WT, wild-type. P, prophase. M, metaphase. (B) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase onset in H2B-RFP MEFs of the indicated genotypes by live cell time-lapse imaging. n = 3 lines, ≥ 20 cells per line. Data are mean ± s.d. **p<0.01. FL, full-length. (C) In a nocodazole challenge, H2B-RFP MEFs of indicated genotypes were treated with 100 ng/ml of nocodazole (noc) and monitored by live cell time-lapse imaging. The point of time in which 50% of cells are arrested in mitosis is plotted. n ≥ 3 lines, ≥ 20 cells per line. Data are mean ± s.d. *p<0.05, **p<0.01. (D) H2B-RFP wild-type and mutant transgenic MEFs were treated concurrently with 100 ng/ml nocodazole and indicated concentrations of the Mps1 kinase inhibitor, AZ3146. The point of time in which 50% of cells are arrested in mitosis is plotted. n = 3 lines, ≥ 20 cells per line. Data are mean ± s.d. *p<0.05. Scale bar, 10 µm (See associated Figure 4—source data 1).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Bub1bΔI MEFs do not have persistent Mad2 signaling.(A) MEFs of indicated genotypes and cell stage were stained for Mad2 (red), centromeres (cyan), and DNA (blue). White arrowhead depicts misaligned chromosome. WT, wild-type. FL, full-length (B) Table depicting the number of metaphases with at least one Mad2-positive kinetochore. n = 3 lines, 15 cells per line. (C) MEFs of indicated genotypes and cell stage were stained for Mad2 (red), centromeres (cyan), and DNA (blue). Scale bar 10 µm.DOI: http://dx.doi.org/10.7554/eLife.16620.017
+**Figure 4—figure supplement 1.:** (A) MEFs of indicated genotypes and cell stage were stained for Mad2 (red), centromeres (cyan), and DNA (blue). White arrowhead depicts misaligned chromosome. WT, wild-type. FL, full-length (B) Table depicting the number of metaphases with at least one Mad2-positive kinetochore. n = 3 lines, 15 cells per line. (C) MEFs of indicated genotypes and cell stage were stained for Mad2 (red), centromeres (cyan), and DNA (blue). Scale bar 10 µm.
 
 To verify that the extended time in mitosis was not due to unattached chromosomes, we performed an immunostaining for Mad2, which strongly localizes to unattached kinetochores (Waters et al., 1998). We found that while prometaphases of wild-type, FL-Bub1b and Bub1bΔI MEFs had many Mad2-positive kinetochores, there were very rare incidences of Mad2-positive kinetochores in metaphase (Figure 4—figure supplement 1). This indicated that the increased time of the metaphase-to-anaphase transition was delayed independent of unattached chromosomes or otherwise persistent Mad2 signaling. The extension of mitotic timing is a feature that is not shared with FL-overexpression alone, indicating it likely has a minimal contribution to tumor protection in our Kras model. However, it is particularly intriguing as a mechanism to prevent aneuploidy, as KT-MT attachment errors that are not detected by the SAC, namely merotelic attachments, may perhaps be given extra time to allow for the error correction machinery to prevent missegregation (Cimini et al., 2001; Rodriguez-Bravo et al., 2014).
 
 Next, we examined whether overexpression of BubR1 and its variants impacted SAC sustainability. To do this, we added 100 ng/ml of the microtubule depolymerizing agent nocodazole and monitored the amount of time individual cells stayed arrested in mitosis. FL-BubR1 overexpression caused a slight but significant increase in duration of arrest, with transgenic cells arresting on average for 3.7 hr compared to 3 hr for wild-type MEFs (Figure 4C). Bub1bN MEFs were unchanged from wild-type, while Bub1bΔN MEFs actually had a slight but significant reduction in arrest time. In contrast, Bub1bΔI MEFs showed a dramatic extension of checkpoint sustainability, with cells arresting for an average time of 6.2 hr. Thus, the two BubR1 alterations offering tumor protection, overexpression of FL-BubR1 and BubR1ΔI, improve checkpoint sustainability although the latter does so much more robustly. In complementary experiments, we challenged the SAC by inhibiting Mps1, a kinase necessary both for the establishment and maintenance of the SAC (Hewitt et al., 2010; Liu and Winey, 2012). Treatment of MEFs concomitantly with 100 ng/ml nocodazole and a high concentration of the Mps1 inhibitor AZ3146 (2 µM) completely abolished SAC activity irrespective of the Bub1b transgene expressed (Figure 4D). At a four-fold lower inhibitor concentration, wild-type, Bub1bN, Bub1bΔN MEFs were all capable of mounting a modest mitotic arrest. The relative extension of mitotic arrest in FL-Bub1b and Bub1bΔI MEFs, however, was considerably higher, with Bub1bΔI MEFs reaching a similar level of SAC signaling in the presence of 0.5 µM AZ3146 as wild-type MEFs in the absence of inhibitor (Figure 4D). Thus, under normal SAC conditions and conditions where the SAC signaling is weakened, both BubR1ΔI and FL-BubR1overexpression seem capable of prolonging mitotic arrest, albeit to different degrees.
 
-## BubR1ΔI lowers the threshold for SAC activation
+### BubR1ΔI lowers the threshold for SAC activation
 
-Because the internal Cdc20-binding domain of BubR1 has been implicated in both initiating and silencing the mitotic checkpoint (
+Because the internal Cdc20-binding domain of BubR1 has been implicated in both initiating and silencing the mitotic checkpoint (Diaz-Martinez et al., 2015; Lischetti et al., 2014), we hypothesized that FL-Bub1b and Bub1bΔI MEFs may have a lower threshold of checkpoint activation or a difficulty silencing the checkpoint, or both. To examine whether FL-Bub1band Bub1bΔI MEFs might have a lower threshold for SAC activation, we challenged them with low concentrations of nocodazole and monitored time to anaphase onset (Figure 5A). Based on the response of wild-type MEFs, we found that 20 ng/ml was the optimal dose to use in this experiment (Figure 5A). At this dose, however, the time Bub1bΔI MEFs took to go through mitosis increased by 60% compared to increases of ~25% in wild-type and FL-Bub1b MEFs, suggesting that these MEFs had a lower threshold for SAC activation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig5-v1.jpg)
 
-**Figure 5.:** Bub1b MEFs have a lower threshold to checkpoint activation.ΔI(A) Analysis of the time from NEBD to anaphase onset in H2B-RFP MEFs of the indicated genotypes treated with either DMSO vehicle (Veh) or indicated concentration of nocodoazole (Noc). n = 3 lines, ≥ 20 cells per line. Data are mean ± s.d. *p<0.05, **p<0.01. WT, wild-type. FL, full-length. (B) (top) Strategy for analyzing the checkpoint silencing efficiency. MEFs of indicated genotypes were treated with 100 ng/ml nocodazole for 1.5 hr before addition of either DMSO vehicle (Veh) or 2 µM AZ3146, at which point cells were marked and monitored for time of escape (time point zero). (bottom) Analysis of duration of mitotic arrest from time point zero as outlined in (top). n = 3 lines, ≥ 20 cells per line. (See associated Figure 5—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.01810.7554/eLife.16620.019Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.019
+**Figure 5.:** (A) Analysis of the time from NEBD to anaphase onset in H2B-RFP MEFs of the indicated genotypes treated with either DMSO vehicle (Veh) or indicated concentration of nocodoazole (Noc). n = 3 lines, ≥ 20 cells per line. Data are mean ± s.d. *p<0.05, **p<0.01. WT, wild-type. FL, full-length. (B) (top) Strategy for analyzing the checkpoint silencing efficiency. MEFs of indicated genotypes were treated with 100 ng/ml nocodazole for 1.5 hr before addition of either DMSO vehicle (Veh) or 2 µM AZ3146, at which point cells were marked and monitored for time of escape (time point zero). (bottom) Analysis of duration of mitotic arrest from time point zero as outlined in (top). n = 3 lines, ≥ 20 cells per line. (See associated Figure 5—source data 1).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Bub1bΔI MEFs.(A) Wild-type (WT) and Bub1bΔI MEFs were arrested in 100 ng/ml nocodazole and stained for PP2A (red), centromeres (cyan), and DNA (blue). (B) Quantification of immunostaining of PP2A in A. Values were normalized to centromere stain. n = 3 lines, ≥ 10 cells per line. Data are mean ± s.d. Scale bar 10 µm. (See associated Figure 5—figure supplement 1—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.02010.7554/eLife.16620.021Figure 5—figure supplement 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.021
+**Figure 5—figure supplement 1.:** (A) Wild-type (WT) and Bub1bΔI MEFs were arrested in 100 ng/ml nocodazole and stained for PP2A (red), centromeres (cyan), and DNA (blue). (B) Quantification of immunostaining of PP2A in A. Values were normalized to centromere stain. n = 3 lines, ≥ 10 cells per line. Data are mean ± s.d. Scale bar 10 µm. (See associated Figure 5—figure supplement 1—source data 1).
 
 Next, we sought to determine whether these MEFs also had difficulty in silencing the SAC. To test this we used a live-cell imaging-based approach in which we cultured MEFs in 100 ng/ml nocodazole for 1.5 hr to activate the SAC and then monitored mitotically-arrested cells for time to mitotic exit following treatment with either vehicle (DMSO) or 2 µm AZ3146 as a stimulus for dissolving MCCs (Figure 5B). In this assay, neither FL-BubR1 nor BubR1ΔI overexpression permitted an arrest longer than that observed in wild-type MEFs. Additionally, while BubR1-associated PP2A has been shown to be important for error correction in human cells (Suijkerbuijk et al., 2012), it is also important for silencing the SAC (Espert et al., 2014). As BubR1ΔI lacks the KARD region implicated in PP2A recruitment, its overexpression could potentially mislocalize PP2A and impede proper SAC silencing. We found PP2A localization to be normal in BubR1ΔI overexpressing cells, suggesting this branch of signaling is not impacted (Figure 5—figure supplement 1), and further supporting that silencing of the SAC is not disrupted. Taken together, these results suggest that the threshold to engage the SAC is instead lowered by the Bub1bΔI transgene.
 
-## The mitotic checkpoint complex composition is unique in Bub1bΔI MEFs
+### The mitotic checkpoint complex composition is unique in Bub1bΔI MEFs
 
-To explore the mechanism as to why
+To explore the mechanism as to why Bub1bΔI and FL-Bub1b MEFs both had more robust checkpoint signaling when challenged with nocodazole, we determined whether the amount of Cdc20 bound to BubR1 was increased in these cells. To this end, we treated wild-type, Bub1bΔI and FL-Bub1b MEFs cells with nocodazole for 1 hr before harvesting them by mitotic shake-off. We found that overexpression of FL-BubR1 lead to increased interaction of BubR1 and Cdc20, as had been previously shown (Figure 6A) (Baker et al., 2013). This was confirmed by Cdc20 and Mad2 co-IPs and subsequent analysis of co-precipitating proteins (Figure 6B,C) that indicated there were an increased amount of complexes consisting of BubR1-Cdc20-Mad2, a potent APC/C inhibitor. However, we found that while the total amount of BubR1 (wild-type and mutant) immunoprecipitated in Bub1bΔI MEFs is increased substantially over normal MEFs, BubR1 lacking the internal Cdc20-binding domain failed to pull-down excess Cdc20 and vice versa (Figure 6A,C). This suggests that while BubR1ΔI can likely bind to Cdc20, it is not a preferred partner. Surprisingly, the amount of Mad2 co-precipitated by Cdc20 was increased, indicating that a larger proportion of Cdc20 bound Mad2 than in wild-type MEFs, while retaining similar levels of BubR1-Cdc20-Mad2 complexes as wild-type. Immunoprecipitation of Mad2 and Cdc20 and analysis of co-precipitating MCC components confirmed this (Figure 6B,C). These unique MCC compositions did not result from changes to total levels of these proteins (Figure 6—figure supplement 1). Thus, FL-BubR1 overexpression alone results in the ability for cells to form more mitotic checkpoint complexes compared to wild-type MEFs, which can likely fortify the SAC signaling potential. Bub1bΔI, however, exerts its impacts on the MCC through a different mechanism. The increased abundance of Mad2-Cdc20 complexes, albeit a weaker inhibitor of APC/C than a full complement of the MCC, in addition to wild-type levels of MCC could represent a state in which the cells are poised to quickly activate the SAC. This is supported by our data in which Bub1bΔI show increased sensitivity to a weak SAC-inducing stimulus (Figure 5A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig6-v1.jpg)
 
-**Figure 6.:** Bub1bΔI MEFs.(A–D) Immunoblots of mitotic wild-type (WT) and indicated mutant MEF extracts subjected to co-immunoprecipitation with the indicated antibodies. Each blot is a representative of at least 3 experiments. FL, full-length.DOI: http://dx.doi.org/10.7554/eLife.16620.022
+**Figure 6.:** (A–D) Immunoblots of mitotic wild-type (WT) and indicated mutant MEF extracts subjected to co-immunoprecipitation with the indicated antibodies. Each blot is a representative of at least 3 experiments. FL, full-length.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Bub1b transgenic MEFs.Western blot analysis of mitotic MEF lysates of indicated genotypes. Blots were probed with indicated antibodies. Ponceau S was used to normalize loading. Blot is a representative of at least three experiments. WT, wild-type. FL, full-length.DOI: http://dx.doi.org/10.7554/eLife.16620.023
+**Figure 6—figure supplement 1.:** Western blot analysis of mitotic MEF lysates of indicated genotypes. Blots were probed with indicated antibodies. Ponceau S was used to normalize loading. Blot is a representative of at least three experiments. WT, wild-type. FL, full-length.
 
 In complimentary experiments, we sought to determine if an MCC-independent mechanism could also contribute to the extended SAC arrest of FL-Bub1b and Bub1bΔI MEFs. In addition to being incorporated into the MCC, Cdc20 is subject to two regulatory phosphorylation events that disrupt its ability to activate the APC/C (Jia et al., 2016). We examined the phosphorylation status of two residues of Cdc20 implicated in mediating this inhibition, S153 and S92 by Bub1 kinase and Plk1 kinase respectively, in wild-type, FL-Bub1b and Bub1bΔI MEFs by Western blot (Figure 6D) (Jia et al., 2016). We found the levels of phosphorylation of both these residues to be equivalent to wild-type MEFs, suggesting this method of APC/C control is not hyperactive in our mutants.
 
-## Protection from aneuploidy and tumorigenesis correlates with reinforced error correction
+### Protection from aneuploidy and tumorigenesis correlates with reinforced error correction
 
-Next we investigated whether and how overexpressed FL-BubR1 and BubR1
+Next we investigated whether and how overexpressed FL-BubR1 and BubR1ΔI contributed to high-fidelity chromosome segregation under mitotic duress by reinforcing the attachment error correction machinery. To do so, we used the motor protein Eg5 inhibitor monastrol to induce syntelic attachments, a malattachment type that presents as misaligned chromosomes and is resolved by the attachment error correction machinery (Lampson et al., 2004). Because error correction is highly efficient in wild-type MEFs, we challenged the machinery in our experimental system by limiting Aurora B kinase activity with 10 nM of the small molecule inhibitor AZD1152 (Ricke et al., 2012). FL-BubR1 and BubR1ΔI both significantly blunted the increase in syntelic attachments caused by hypoactive Aurora B (Figure 7). In contrast, no such corrective effects were observed in the Bub1bΔN or Bub1bN mutants.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig7-v1.jpg)
 
-**Figure 7.:** ΔIimproves error correction rates.(A) Representative images of MEFs with aligned or misaligned chromosomes after monastrol washout. White arrowhead depicts misaligned chromosome. (B) Analysis of chromosome misalignment in MEFs expressing the indicated Bub1b transgenes. MEFs were treated with 100 µM monastrol for 1 hr and then with monastrol and 10 µM MG132 for 1 hr and released for 90 min into MG132. Cells were treated with DMSO (Vehicle) or 10 nM AZD1152-HQPA (AZD) throughout the duration of the experiment. n = 6 lines (≥25 cells per line were analyzed). Data are mean ± s.d. *p<0.05, **p<0.01. Scale bar, 10 µm. WT, wild-type. (See associated Figure 7—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.02410.7554/eLife.16620.025Figure 7—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.025
+**Figure 7.:** (A) Representative images of MEFs with aligned or misaligned chromosomes after monastrol washout. White arrowhead depicts misaligned chromosome. (B) Analysis of chromosome misalignment in MEFs expressing the indicated Bub1b transgenes. MEFs were treated with 100 µM monastrol for 1 hr and then with monastrol and 10 µM MG132 for 1 hr and released for 90 min into MG132. Cells were treated with DMSO (Vehicle) or 10 nM AZD1152-HQPA (AZD) throughout the duration of the experiment. n = 6 lines (≥25 cells per line were analyzed). Data are mean ± s.d. *p<0.05, **p<0.01. Scale bar, 10 µm. WT, wild-type. (See associated Figure 7—source data 1).
 
-## Refined BubR1ΔI mutants are capable of reinforcing error correction and SAC signaling
+### Refined BubR1ΔI mutants are capable of reinforcing error correction and SAC signaling
 
-At the time of transgenic design, BubR1 residues 525–700 were defined as the internal Cdc20 domain (
+At the time of transgenic design, BubR1 residues 525–700 were defined as the internal Cdc20 domain (Malureanu et al., 2009). However, subsequent studies have revealed that this region includes at least three discrete functional units: the Phe-box, D-box2 and KARD, the first two of which function as non-redundant Cdc20-binding motifs (Diaz-Martinez et al., 2015; Lischetti et al., 2014; Suijkerbuijk et al., 2012). This prompted us to study the extent to which BubR1 overexpression is able to preserve genomic stability when these functional units are deleted individually or in combination (Figure 8). These mutants were expressed in wild-type primary MEFs using a lentiviral expression system that allows for doxycycline inducible transgene expression. FL-BubR1 and BubR1∆I expressed in the same system were used as controls. We confirmed that each mutant was specifically and highly overexpressed in the presence of doxycycline (Figure 8—figure supplement 1).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig8-v1.jpg)
 
-**Figure 8.:** Bub1b mutants.Schematics of the pTripZ-Flag-Bub1b constructs. D, destruction-(D-)box. GLEBs, GLEBs-binding motif. Phe, Phe box. KARD, kinetochore attachment regulatory domain. FL, full-length. Sequence alignment of the Phe box, D-box2, and KARD region of human and mouse BubR1. Residues characterized in human BubR1 are underlined, and homologous residues deleted in mouse Bub1b constructs are bold.DOI: http://dx.doi.org/10.7554/eLife.16620.026
+**Figure 8.:** Schematics of the pTripZ-Flag-Bub1b constructs. D, destruction-(D-)box. GLEBs, GLEBs-binding motif. Phe, Phe box. KARD, kinetochore attachment regulatory domain. FL, full-length. Sequence alignment of the Phe box, D-box2, and KARD region of human and mouse BubR1. Residues characterized in human BubR1 are underlined, and homologous residues deleted in mouse Bub1b constructs are bold.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig8-figsupp1-v1.jpg)
 
-**Figure 8—figure supplement 1.:** Bub1b deletion constructs in wild-type MEFs.Western blots of wild-type (WT) MEFs infected with the indicated constructs with or without doxycycline (Dox). Blots were probed with the indicated antibodies. Ponceau S was used to normalize loading. Asterisk indicates specific band for BubR1ΔI.DOI: http://dx.doi.org/10.7554/eLife.16620.027
+**Figure 8—figure supplement 1.:** Western blots of wild-type (WT) MEFs infected with the indicated constructs with or without doxycycline (Dox). Blots were probed with the indicated antibodies. Ponceau S was used to normalize loading. Asterisk indicates specific band for BubR1ΔI.
 
-Next, we examined the impact on mitotic timing by live cell imaging (
+Next, we examined the impact on mitotic timing by live cell imaging (Figure 9A). Overexpression of BubR1∆I provided a similar extension to the metaphase-to-anaphase transition as MEFs derived from Bub1b∆I transgenic mice. However, none of the other deletion constructs changed the duration of mitosis when overexpressed. An additional deletion mutant lacking the Phe box, D-box2 and the KARD (Bub1b∆PheD∆KARD) was generated to test if combined deletion of all three motifs would mimic Bub1b∆I (Figure 9—figure supplement 1). Again, no extended mitotic timing was observed, implying that an unmapped domain within residues 525–700 regulates mitotic timing.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig9-v1.jpg)
 
-**Figure 9.:** (A) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase onset in H2B-RFP wild-type MEFs infected with the indicated constructs with and without the addition of doxycycline (Dox) by live cell time-lapse imaging. n = 1 line, ≥ 20 cells per treatment. Data are mean ± s.e.m. ***p<0.001. FL, full-length. (B) In a nocodazole challenge, H2B-RFP wild-type MEFs infected with the indicated constructs with and without the addition of Dox were treated with 100 ng/ml of nocodazole and monitored by live cell time-lapse imaging. The point of time in which 50% of cells are arrested in mitosis is plotted. n = 1 line, ≥ 15 cells per treatment. *p<0.05, **p<0.01, ***p<0.001. (C) Analysis of chromosome misalignment in wild-type MEFs infected with the indicated constructs with and without addition of Dox. MEFs were treated with 100 µM monastrol for 1 hr and then with monastrol and 10 µM MG132 for 1 hr and released for 90 min into MG132. Cells were treated with DMSO (Vehicle) or 50 nM AZD1152-HQPA (AZD1152) throughout the duration of the experiment. n = 3 lines, 50 cells per line per treatment. Data are mean ± s.d. *p<0.05. (See associated Figure 9—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.02810.7554/eLife.16620.029Figure 9—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.029
+**Figure 9.:** (A) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase onset in H2B-RFP wild-type MEFs infected with the indicated constructs with and without the addition of doxycycline (Dox) by live cell time-lapse imaging. n = 1 line, ≥ 20 cells per treatment. Data are mean ± s.e.m. ***p<0.001. FL, full-length. (B) In a nocodazole challenge, H2B-RFP wild-type MEFs infected with the indicated constructs with and without the addition of Dox were treated with 100 ng/ml of nocodazole and monitored by live cell time-lapse imaging. The point of time in which 50% of cells are arrested in mitosis is plotted. n = 1 line, ≥ 15 cells per treatment. *p<0.05, **p<0.01, ***p<0.001. (C) Analysis of chromosome misalignment in wild-type MEFs infected with the indicated constructs with and without addition of Dox. MEFs were treated with 100 µM monastrol for 1 hr and then with monastrol and 10 µM MG132 for 1 hr and released for 90 min into MG132. Cells were treated with DMSO (Vehicle) or 50 nM AZD1152-HQPA (AZD1152) throughout the duration of the experiment. n = 3 lines, 50 cells per line per treatment. Data are mean ± s.d. *p<0.05. (See associated Figure 9—source data 1).
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig9-figsupp1-v1.jpg)
 
-**Figure 9—figure supplement 1.:** (A) Schematic of the pTripZ-Flag-Bub1b∆PheD∆KARD construct. D, destruction-(D-)box. GLEBs, GLEBs-binding motif. Phe, Phe box. KARD, kinetochore attachment regulatory domain. FL, full length. (B) Western blot of wild-type (WT) MEFs infected with Bub1b∆PheD∆KARD with or without doxycycline (Dox). Blot was probed with the indicated antibodies. Ponceau S was used to normalize loading. (C) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase onset in H2B-RFP WT MEFs infected with Bub1b∆PheD∆KARD with and without the addition of Dox by live cell time-lapse imaging. n = 1 line, ≥ 20 cells. Data are mean ± s.e.m. M, metaphase. (See associated Figure 9—figure supplement 1—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.03010.7554/eLife.16620.031Figure 9—figure supplement 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.031
+**Figure 9—figure supplement 1.:** (A) Schematic of the pTripZ-Flag-Bub1b∆PheD∆KARD construct. D, destruction-(D-)box. GLEBs, GLEBs-binding motif. Phe, Phe box. KARD, kinetochore attachment regulatory domain. FL, full length. (B) Western blot of wild-type (WT) MEFs infected with Bub1b∆PheD∆KARD with or without doxycycline (Dox). Blot was probed with the indicated antibodies. Ponceau S was used to normalize loading. (C) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase onset in H2B-RFP WT MEFs infected with Bub1b∆PheD∆KARD with and without the addition of Dox by live cell time-lapse imaging. n = 1 line, ≥ 20 cells. Data are mean ± s.e.m. M, metaphase. (See associated Figure 9—figure supplement 1—source data 1).
 
 As expected, BubR1∆I-expressing MEFs showed the most profound increase in the duration of nocodazole-mediated arrest, while FL-BubR1 overexpression caused a moderate, but significant increase (Figure 4B). Of our newly generated mutants, Bub1b∆Phe, Bub1b∆D and Bub1b∆KARD behaved like overexpression of FL-BubR1, while Bub1b∆PheD phenocopied Bub1b∆I. These findings indicate that none of the individual domains is required for SAC reinforcement by high levels of BubR1 and the combinatorial loss of both the Phe and D-box2 motifs is a requirement for robust checkpoint sustainability. When examined for the ability to improve microtubule-kinetochore attachment error correction in monastrol washout assays with and without Aurora B inhibition, all mutants did so to a similar extent as FL-BubR1 (Figure 9C), indicating that this feature of BubR1 overexpression is not impacted by any functional units in the central portion of BubR1. Altogether, our studies using refined BubR1ΔI mutants indicate that individual domains within the 525–700 region are not required for SAC and error correction reinforcement by BubR1 overexpression, and that maximal SAC reinforcement is achieved when both internal Cdc20-binding motifs are absent.
 
-## Cells expressing oncogenic Kras are prone to microtubule-kinetochore malattachment
+### Cells expressing oncogenic Kras are prone to microtubule-kinetochore malattachment
 
-Overexpression of FL-BubR1 and BubR1
+Overexpression of FL-BubR1 and BubR1∆I reduces tumor burden and aneuploidization in KrasLa1 mutant mice. To better understand the underlying mechanisms, we determined the type of mitotic errors caused by oncogenic Ras in wild-type MEFs. We found that ectopic expression of KrasG12V had no impact on timing of mitosis and SAC signaling (Figure 10A–C). On the other hand, in monastrol washout assays, KrasG12V-expressing MEFs produced significantly higher rates of misaligned chromosomes over empty vector alone (Figure 10D). In complementary experiments in which we monitored chromosome segregation errors by live cell imaging, KrasG12V-expressing MEFs showed a remarkable increase in misaligned chromosomes (Figure 10E). Collectively, these data suggest that oncogenic Kras cells may be particularly prone to syntelic attachments.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/16620/elife-16620-fig10-v1.jpg)
 
-**Figure 10.:** (A) Western blot of wild-type (WT) MEFs infected with pBABE-Puro-KRas(G12V) or empty vector (EV). Blot was probed with the indicated antibody. Ponceau S was used to normalize loading. (B) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase (A) onset in H2B-RFP wild-type MEFs infected with KrasG12V or EV by live cell time-lapse imaging. n = 1 line, ≥ 19 cells. Data are mean ± s.d. *p<0.05. M, metaphase (C) In a nocodazole challenge, H2B-RFP wild-type MEFs infected with KrasG12V or EV were treated with 100 ng/ml of nocodazole and monitored by live cell time-lapse imaging. The point of time in which 50% of cells are arrested in mitosis is plotted. n = 1 line, ≥ 20 cells. *p<0.05. (D) Analysis of chromosome misalignments in wild-type MEFs infected with KrasG12V or EV. MEFs were treated with 100 µM monastrol for 1 hr and then with monastrol and 10 µM MG132 for 1 hr and released for 90 min into MG132. n = 1 line, ≈200 cells. *p<0.05. (E) Live-cell imaging of chromosome segregation defects in primary H2B-RFP wild-type MEFs infected with Kras or EV. n = 1 line, ≈40 cells. *p<0.05. (See associated Figure 10—source data 1).DOI: http://dx.doi.org/10.7554/eLife.16620.03210.7554/eLife.16620.033Figure 10—source data 1.DOI: http://dx.doi.org/10.7554/eLife.16620.033
+**Figure 10.:** (A) Western blot of wild-type (WT) MEFs infected with pBABE-Puro-KRas(G12V) or empty vector (EV). Blot was probed with the indicated antibody. Ponceau S was used to normalize loading. (B) Analysis of the time from nuclear envelope breakdown (NEBD) to anaphase (A) onset in H2B-RFP wild-type MEFs infected with KrasG12V or EV by live cell time-lapse imaging. n = 1 line, ≥ 19 cells. Data are mean ± s.d. *p<0.05. M, metaphase (C) In a nocodazole challenge, H2B-RFP wild-type MEFs infected with KrasG12V or EV were treated with 100 ng/ml of nocodazole and monitored by live cell time-lapse imaging. The point of time in which 50% of cells are arrested in mitosis is plotted. n = 1 line, ≥ 20 cells. *p<0.05. (D) Analysis of chromosome misalignments in wild-type MEFs infected with KrasG12V or EV. MEFs were treated with 100 µM monastrol for 1 hr and then with monastrol and 10 µM MG132 for 1 hr and released for 90 min into MG132. n = 1 line, ≈200 cells. *p<0.05. (E) Live-cell imaging of chromosome segregation defects in primary H2B-RFP wild-type MEFs infected with Kras or EV. n = 1 line, ≈40 cells. *p<0.05. (See associated Figure 10—source data 1).
 
 ## Discussion
 
@@ -170,42 +515,42 @@ Whether or not aneuploidy causes cancer or is simply a feature is a longstanding
 
 ## Materials and methods
 
-## Mouse strains and husbandry
+### Mouse strains and husbandry
 
 All protocols were reviewed and approved by the Mayo Clinic Institutional Animal Care and Use Committee. Mice used in these studies were housed in a pathogen-free barrier and are maintained on a mixed 129SV/E × C57BL/6 genetic background. Full-length Flag-mBub1btransgenic mice have been described previously (Baker et al., 2013), and the generation of Flag-mBub1bN, Flag-mBub1bΔI, and Flag-mBub1bΔN was performed using a similar strategy. The development of constructs for these fragments of BubR1 has been described in detail (Malureanu et al., 2009). Tumor studies of KrasLA1 mice were performed as previously described (Baker et al., 2013). KrasLA1 mice were obtained from the MMHCC (NCI Frederick) (Johnson et al., 2001). Mice were sacrificed at 6 weeks of age and surface adenomas were counted using a dissection microscope. Formalin-fixed, paraffin-embedded lung samples were stained for histological analysis using routine haematoxylin and eosin staining.
 
-## Creation of inducible BubR1 deletion mutants
+### Creation of inducible BubR1 deletion mutants
 
 pTripz-Flag-FL-Bub1b was created from pTripz-PKG-puro-loxp (GE Dharmacon, Layfayette, CO). The loxp sites were removed and a multiple cloning site (MCS) was inserted. Flag-FL-Bub1b was removed from pMSCV-IRES-GFP (Malureanu et al., 2009) and cloned into the MluI site of the MCS. Deletion constructs were generated using the Q5 Site-Directed Mutagenesis Kit (New England Biolabs, Ipswich, MA; #E0554S) following manufacturer’s instructions from template pTripz-Flag-FL-Bub1b. The following primers were used to create the following deletion constructs: pTripZ-Flag-Bub1b∆I, Fwd 3’- GACGGGGCAGAAAATGCT-5’, Rev 3’- AAAAATGGAGAAAGGCATACTG-5’; pTripZ-Flag- Bub1b∆KARD, Fwd 3’- TCTGGCTTCTCCAGGTCTT-5’, Rev 3’- GAGGGCCTGGTGATGAAC-5’; pTripZ-Flag-Bub1b∆Phe, Fwd 3’- TCTCTTTCAGACAAAAAGGAC-5’; Rev 3’- ACTGGAACCTTTAGAATCAG-5’; pTripZ-Flag-Bub1b∆D, Fwd 3’- AAAACTACAGAAGTGGGC-5’, Rev 3’- CTGGGCATTGAGAACCTG-5’; pTripZ-Flag-Bub1b∆PheD, Fwd 3’- AAAACTACAGAAGTGGGC-5’, Rev 3’- CTGGAACCTTTAGAATCAG-5’. We used a similar approach to create pTripZ-Flag-Bub1b∆PheD∆KARD using pTripZ-Flag-Bub1b∆PheD forward and reverse primers and pTripZ-Flag-Bub1b∆KARD as a template. Cloned plasmids were transfected into HEK-293T cells using the Trans-Lentiviral shRNA packaging kit with calcium phosphate (GE Dharmacon; #TLP5912) and virus was harvested 48 hr post-transfection. Primary wild-type p3 MEFs were infected twice every 8 hr and selected with 2 µg/ml puromycin (InvivoGen, San Diego, CA) 48 hr post initial infection. At this time, 1 µg/ml doxycycline (Clontech, Mountain View, CA) was added and 48 hr later, cells were processed for western blotting or monastrol washout, or infected with H2B-RFP for live cell imaging.
 
-## In vitro Kras studies
+### In vitro Kras studies
 
 Wild-type MEFs were infected with pBABE-Puro-KRas(G12V) (Addgene plasmid #46746) or empty vector (Addgene plasmid #1764) and selected with 2 µg/ml puromycin 48 hr post-infection with cells for live-cell imaging being infected with H2B-RFP at this time. After 48 hr of selection, cells were processed for western blotting, monastrol washout, or live cell imaging.
 
-## Generation and culture of MEFs
+### Generation and culture of MEFs
 
 Wild-type and Bub1b transgenic MEFs were generated and cultured as described previously (Baker et al., 2004). At least three independently generated MEF lines per genotype were used unless otherwise stated. Asynchronous and mitotic shake-off MEF lysates were created as described previously (Baker et al., 2013).
 
-## Western blotting and co-immunoprecipitation
+### Western blotting and co-immunoprecipitation
 
 Western blot analysis was performed as previously described (van Ree et al., 2010). Lung tissue lysates were prepared as previously described (Baker et al., 2013). Briefly, the lung tissue was snap-frozen in liquid nitrogen and then ground into powder with a mortar and pestle. Ten milligrams of the powder was resuspended in 100 μl of PBS, boiled for 10 min at 100°C after the addition of 100 μl Laemmli lysis buffer (Bio-Rad, Hercules, CA), and loaded into Tris-HCl polyacrylamide gels (Bio-Rad). Primary antibodies used were mouse anti-BubR1 (BD Transduction, San Jose, CA; 612503, 1:1,000), rabbit anti-mouse BubR1 (aa382-420) ([Baker et al., 2004]; 1:1000), rabbit anti-human BubR1 (aa1-350) ([Baker et al., 2004]; 1:1000), rabbit anti-Flag (Sigma-Aldrich, St. Louis, MO; F7425, 1:1000), rabbit anti-Flag (Cell Signaling, Danvers, MA; 2368S, 1:1000), rabbit anti-Cdc20 (Santa Cruz, Dallas, TX; sc-8358, 1:1000), mouse anti-Kras (Santa Cruz; sc-30, 1:1000) and rabbit anti-pCdc20S92 and rabbit anti-pCdc20S153 (generous gifts from Hongtau Yu). All antibodies were detected with secondary HRP-conjugated goat anti-mouse or anti-rabbit antibodies (Jackson Immunoresearch, West Grove, PA; 1:10,000). Ponceau S staining (1% glacial acetic acid, 1.1 g/ml Ponceau S [Sigma-Aldrich]) served as a loading control for blots. All western data are representative for two or three independent experiments. Co-IP was performed with mitotic MEFs that were immortalized by expression of SV40 large T antigen as previously described (Baker et al., 2013). Primary antibodies used were mouse anti-BubR1 (BD Transduction; as above), rabbit anti-mouse BubR1 (aa382-420) ([Baker et al., 2004]; as above), rabbit anti-Cdc20 (Santa Cruz; as above), mouse anti-Mad2 (BD Transduction, 610679, 1:1000), rabbit anti-Mad2 ([Ricke et al., 2011]; 1:1000). All antibodies were detected with secondary HRP-conjugated goat anti-mouse or anti-rabbit antibodies (Jackson Immunoresearch; as above) except when Cdc20 immunoblot was performed from CDC20 IP, in which Rabbit TrueBlot Anti-Rabbit IgG HRP (Rockland, Limerick, PA; 18-8816-33 1:1000) was used.
 
-## Karyotype analyses
+### Karyotype analyses
 
 MEF karyotype analyses were performed as previously described on at least n = 3 individual MEF lines per genotype (Babu et al., 2003). Interphase FISH analysis on single cells isolated from various fresh tissues from 3-mo-old mice and KrasLA1 hyperplastic lungs was performed as described previously (Baker et al., 2008), and were analyzed in the Mayo Clinic Cytogenetics Core Facility. At least 100 cells were analyzed per sample. At least n = 3 individual mice per genotype per tissue were used.
 
-## Live-cell imaging experiments
+### Live-cell imaging experiments
 
 Chromosome segregation analysis was performed on MEFs stably expressing H2B-RFP, as previously described (Malureanu et al., 2009). In mitotic timing experiments, the time interval between nuclear envelope breakdown (NEBD) and anaphase onset was measured in H2B-mRFP positive cells by monitoring unchallenged mitoses. Briefly, cells undergoing NEBD were marked and monitored at two minute intervals until anaphase onset. For SAC sensitivity experiments, cells were treated with nocodazole (Sigma-Aldrich) at a final concentration of either 20 or 10 ng/ml and then monitored from NEBD to anaphase onset. Nocodazole challenge experiments were performed as previously described (Malureanu et al., 2009). Briefly, nocodazole was added to a final concentration of 100 ng/ml. Cells undergoing NEBD were marked and monitored at 10 min intervals to determine when they decondensed their chromosomes. The duration of arrest in mitosis, which is defined as the interval between NEBD (onset of mitosis) and chromatin decondensation (exit from mitosis without cytokinesis), was then calculated and plotted. For checkpoint silencing and sensitivity experiments, 500 nM or 2 µM AZ3146 (Sigma-Aldrich) was added either concurrently or in sequence with nocodazole. All experiments were performed on at least three independently generated MEF lines unless stated.
 
-## Monastrol washout
+### Monastrol washout
 
 Monastrol washout was performed as previously described (Ricke et al., 2012). Briefly 100 µM monastrol (Enzo Life Sciences, Famingdale, NY) was added to cells for 60 min, after which, 10 µM MG132 (Sigma-Aldrich) was added for 60 min. Cells were then released for 90 min into 10 µM MG132 alone before fixation (4% PFA for 10 min) and staining with Hoechst. Cells treated with Aurora B inhibitor were cultured in medium with 10 nM or 50 nM AZD1152-HQPA (ChemieTek, Indianapolis, IN), as specified for each experiment. Cells in which one or more chromosome was misaligned were considered misaligned. All experiments were performed on at least three independently generated MEF lines unless otherwise stated.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescence was performed and quantified as previously described (Kasper et al., 1999). In all cases, DNA was visualized with Hoechst and centromeres were visualized with human anti-centromeric antibody (Antibodies, Inc, Davis, CA; 15-234-001, 1:100). Primary antibodies used were mouse anti-BubR1 (BD Transduction; 612503, 1:250), rabbit anti-Flag (Cell Signaling; 2368S, 1:100), rabbit anti-Mad2 ([Ricke et al., 2011]; 1:500), and mouse-anti-PP2A-B56α (BD Transduction; 610615, 1:200). A laser-scanning microscope (LSM 880; Carl Zeiss) with an inverted microscope (Axiovert 100 M; Carl Zeiss) was used to capture images. For quantification, we used ImageJ software (National Institutes of Health, Bethesda, MD) as previously described (Ricke et al., 2012). All confocal microscopic images are representative of at least three independent experiments. All experiments were performed on at least three independently generated MEF lines.
 
-## Statistical analyses
+### Statistical analyses
 
 Prism software (GraphPad Software) was used for all statistical analyses. A two-tailed Mann-Whitney test was used for pairwise significance analysis in Figure 2C; Figure 9A; Figure 9—figure supplement 1C; Figure 10B. A log-rank Mantel-Cox test was used for significance analysis in Figure 5B; Figure 9B; Figure 10C. A two-tailed unpaired t -test was used for comparisons in the following figures: Figure 2D; Figure 3B and D; Figure 4B–D; Figure 5A; Figure 5—figure supplement 1B; Figure 7B; Tables 1–3. A two-tailed paired t-test was used for significance analysis in Figure 9C. A Fischer’s exact two-tailed test was used for significance analysis in Figure 10D and E. For consistency in these analyses, significance is indicated as follows: *p<0.05; **p<0.01; and ***p<0.001. Sample sizes were chosen based on previously published studies where differences were observed. No samples were excluded.

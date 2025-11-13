@@ -16,17 +16,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02vjkv261 Cognitive Neuroimaging Unit, CEA, INSERM, Université Paris-Saclay, NeuroSpin center Gif sur Yvette France
-2. https://ror.org/016xsfp80 Department of Neurophysics, Donders Centre for Neuroscience, Radboud University Nijmegen Nijmegen Netherlands
-3. https://ror.org/016xsfp80 Department of Psychiatry, Radboud University Nijmegen Medical Centre Nijmegen Netherlands
-4. https://ror.org/022k4wk35 State Key Laboratory of Cognitive Neuroscience and Learning & IDG, McGovern Institute for Brain Research, Beijing Normal University Beijing China
-5. https://ror.org/00zs45r78 Center for Brain Circuit Therapeutics, Department of Neurology, Brigham & Women’s Hospital, Harvard Medical School Boston United States
-6. https://ror.org/05f950310 Department of Neurosciences, Laboratory of Neuro- and Psychophysiology, KU Leuven Medical School Leuven Belgium
-7. https://ror.org/05f950310 Leuven Brain Institute, KU Leuven Leuven Belgium
-8. https://ror.org/058td2q88 Université Paris-Saclay (UVSQ), Hôpital Foch Suresnes France
-9. https://ror.org/002pd6e78 Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital Charlestown United States
-10. https://ror.org/03vek6s52 Department of Radiology, Harvard Medical School Boston United States
-11. https://ror.org/04ex24z53 Collège de France, Université Paris-Sciences-Lettres (PSL) Paris France
+1. Cognitive Neuroimaging Unit, CEA, INSERM, Université Paris-Saclay, NeuroSpin center Gif sur Yvette France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+2. Department of Neurophysics, Donders Centre for Neuroscience, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
+3. Department of Psychiatry, Radboud University Nijmegen Medical Centre Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
+4. State Key Laboratory of Cognitive Neuroscience and Learning & IDG, McGovern Institute for Brain Research, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+5. Center for Brain Circuit Therapeutics, Department of Neurology, Brigham & Women’s Hospital, Harvard Medical School Boston United States ([ROR:00zs45r78](https://ror.org/00zs45r78))
+6. Department of Neurosciences, Laboratory of Neuro- and Psychophysiology, KU Leuven Medical School Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+7. Leuven Brain Institute, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+8. Université Paris-Saclay (UVSQ), Hôpital Foch Suresnes France ([ROR:058td2q88](https://ror.org/058td2q88))
+9. Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+10. Department of Radiology, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+11. Collège de France, Université Paris-Sciences-Lettres (PSL) Paris France ([ROR:04ex24z53](https://ror.org/04ex24z53))
 
 † Corresponding author
 
@@ -52,11 +52,17 @@ Here, we directly compared the ability to spontaneously reverse learned associat
 
 ## Results
 
-## Summary of the experimental design
+### Summary of the experimental design
 
 In the first experiment, we examined the learning and reversibility of auditory–visual pairs, that is between a visual object and an auditory label. Over the course of 3 days, we exposed humans (n = 31) and macaque monkeys (n = 2) to four pairs of visual objects and speech sounds (Figure 1A; see Figure 1—figure supplement 1 for the five series of four pairs of audio–visual stimuli). Two of the pairs were presented in the auditory-to-visual direction and two in the visual-to-auditory direction, ensuring that all subjects had experience with both orders and would not be surprised by their temporal reversal per se (see discussion of the utility of this point in Medam et al., 2016). After 3 consecutive days of exposure to 100% of congruent canonical trials (24 canonical trials in total per pair, presented outside the scanner), subjects were tested for learning using 3T fMRI, during which they were passively exposed to pairs that respected or violated the learned pairings (Figure 1B). To sustain the memory for learned pairs, the design still included 70% of congruent canonical trials (identical to the trials to which they have been exposed outside the scanner). In addition, there were 10% of incongruent canonical trials, in which the temporal order was maintained but the pairings between auditory and visual stimuli were violated. Enhanced brain responses to such incongruent pairs would indicate surprise and therefore prove that the associations had been learned. Note that all auditory and visual stimuli themselves were familiar: only their pairing was unusual. The design also included 10% of reversed congruent and 10% of reversed incongruent trials, in which the habitual (i.e. canonical) order of presentation of the pairs was reversed (Figure 1A). Observing an incongruity effect on such reversed trials would indicate that subjects spontaneously reversed the pairings and were surprised when they were violated. Note that the frequency of the two types of reversed trials was equal, and thus did not afford any additional learning of the reversed pairs (unlike Chartier and Fagot, 2023).
 
-## Experiment 1 | audio–visual stimulus pairs
+![Figure 1.](https://cdn.elifesciences.org/articles/87380/elife-87380-fig1-v1.jpg)
+
+**Figure 1.:** (A) Subjects were exposed to four different visual–auditory pairs during 3 days (six repetitions of each pair, 3-min video). Two pairs were always presented in the ‘visual-then-auditory’ order (object to label), and two in the ‘auditory-then-visual’ (label to object) order. During the test phase, this canonical order was kept on 80% of trials, including 10% of incongruent pairs to test memory of the learned pairs, and was reversed on 20% of the trials. On reversed trials, half the pairs were congruent and half were incongruent (each 10% of total trials), thus testing reversibility of the pairings without affording additional learning. (B, C) Activation in sensory cortices. Although each trial comprises auditory and visual stimuli, these could be separated by the temporal offsets. Images show significantly activated regions in the contrasts image > sound (red-yellow) and sound > image (blue-light blue), averaged across all subjects and runs for humans (B) and monkeys (C). Average finite-impulse-response (FIR) estimate of the deconvolved hemodynamic responses for humans (D) and monkeys (E) within clusters shown in B and C, respectively, separately for visual–audio (VA) and audio–visual (AV) trials. Sign flipped on y-axis for monkey responses.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87380/elife-87380-fig1-figsupp1-v1.jpg)
+
+### Experiment 1 | audio–visual stimulus pairs
 
 We first mapped the cortical regions that were activated by visual and auditory stimuli, modelling the two stimuli within each pair with separate regressors (Figure 1B, C). Even though the onset of the two stimuli within a pair were just 800 ms apart, the fast acquisition allowed us to separate the timing of the activation of the visual and auditory pathways in both humans and monkeys (Figure 1D, E). In the visual cortex, the response evoked by the pair arose earlier when the first stimulus of the pair was visual compared to when it was auditory, and the other way around for the auditory cortex (Figure 1D, E). In the auditory cortex of monkeys the response was relatively weak (Figure 1C, E), in line with previous studies (Erb et al., 2019; Petkov et al., 2009; Uhrig et al., 2014). This might be related to the small size of auditory cortex relative to visual cortex in monkeys (Felleman and Van Essen, 1991), as well as relative to the size of the human auditory cortex (Woods et al., 2010).
 
@@ -68,33 +74,589 @@ Indeed, in humans, a vast network was activated by incongruity on both canonical
 
 **Figure 2.:** (A) Areas activated by incongruent trials more than by congruent trials in canonical trials (red), reverse trials (blue), and their overlap (green). Brain maps are thresholded at pvoxel < 0.001 and pcluster < 0.05 corrected for multiple comparisons across the brain volume. No interaction effect was observed between congruity and canonicity. (B) Average FIR estimate of the deconvolved hemodynamic responses within significant clusters in the left hemisphere, separately for VA and AV trials. Thirty-one human subjects were tested, on a single imaging session per subject after 3 days of exposure to canonical trials.
 
+**Table 1.**
+ Congruity effect in experiment 1 in 31 human subjects, with 1 imaging session per subject after 3 days of exposure to congruent canonical pairs.The MNI coordinates indicate the location of the peak of all significant clusters in the main effect of congruity, after correction for multiple comparisons across the whole brain (corrected pcluster < 0.05). Additional t-values are provided at the same peak location for the canonical and reverse congruity effects. A star is added when the voxels belong to a cluster that achieves corrected-level significance (corrected pcluster < 0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">Congruity effect (t-values)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Region</td>
+      <td>MNI coordinates</td>
+      <td>Main</td>
+      <td>Canonical trials</td>
+      <td>Reversed trials</td>
+    </tr>
+    <tr>
+      <td>L sup frontal</td>
+      <td>–26 56 24</td>
+      <td>4.40*</td>
+      <td>4.41*</td>
+      <td>2.10*</td>
+    </tr>
+    <tr>
+      <td>L precentral</td>
+      <td>–36 6 32</td>
+      <td>5.75*</td>
+      <td>3.57*</td>
+      <td>7.50*</td>
+    </tr>
+    <tr>
+      <td>L triangularis</td>
+      <td>–48 16 2</td>
+      <td>7.65*</td>
+      <td>5.45*</td>
+      <td>6.08*</td>
+    </tr>
+    <tr>
+      <td>L insula</td>
+      <td>–40 22 0</td>
+      <td>7.76*</td>
+      <td>5.84*</td>
+      <td>6.27*</td>
+    </tr>
+    <tr>
+      <td>L temporal pole</td>
+      <td>–60 2 –10</td>
+      <td>6.56*</td>
+      <td>3.95</td>
+      <td>5.71*</td>
+    </tr>
+    <tr>
+      <td>L ant STS</td>
+      <td>–62 –24 0</td>
+      <td>5.71*</td>
+      <td>4.28*</td>
+      <td>4.09*</td>
+    </tr>
+    <tr>
+      <td>L post STS</td>
+      <td>–54 –34 4</td>
+      <td>4.82*</td>
+      <td>2.78*</td>
+      <td>5.09*</td>
+    </tr>
+    <tr>
+      <td>L precuneus</td>
+      <td>–6 –68 40</td>
+      <td>4.68*</td>
+      <td>4.72*</td>
+      <td>3.39</td>
+    </tr>
+    <tr>
+      <td>L inf parietal</td>
+      <td>–28 –58 42</td>
+      <td>5.85*</td>
+      <td>3.97*</td>
+      <td>4.56*</td>
+    </tr>
+    <tr>
+      <td>L caudate</td>
+      <td>–10 2 14</td>
+      <td>5.22*</td>
+      <td>5.15*</td>
+      <td>3.03*</td>
+    </tr>
+    <tr>
+      <td>L cerebellum</td>
+      <td>–6 –82 –34</td>
+      <td>5.59*</td>
+      <td>3.98</td>
+      <td>3.27</td>
+    </tr>
+    <tr>
+      <td>R mid frontal</td>
+      <td>54 26 32</td>
+      <td>7.79*</td>
+      <td>5.34*</td>
+      <td>5.86*</td>
+    </tr>
+    <tr>
+      <td>R opercularis</td>
+      <td>50 20 32</td>
+      <td>7.32*</td>
+      <td>5.44*</td>
+      <td>6.74*</td>
+    </tr>
+    <tr>
+      <td>R insula</td>
+      <td>40 22 0</td>
+      <td>5.83*</td>
+      <td>4.93*</td>
+      <td>5.11*</td>
+    </tr>
+    <tr>
+      <td>R temporal pole</td>
+      <td>60 4 –14</td>
+      <td>6.89*</td>
+      <td>5.52*</td>
+      <td>4.49*</td>
+    </tr>
+    <tr>
+      <td>R post STS</td>
+      <td>48 –32 0</td>
+      <td>7.48*</td>
+      <td>5.96*</td>
+      <td>5.47*</td>
+    </tr>
+    <tr>
+      <td>R precuneus</td>
+      <td>4 –62 40</td>
+      <td>6.36*</td>
+      <td>5.16*</td>
+      <td>2.88</td>
+    </tr>
+    <tr>
+      <td>R inf parietal</td>
+      <td>34 –64 44</td>
+      <td>5.14*</td>
+      <td>3.57*</td>
+      <td>4.49*</td>
+    </tr>
+    <tr>
+      <td>R caudate</td>
+      <td>10 2 14</td>
+      <td>4.21*</td>
+      <td>4.35*</td>
+      <td>2.67*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_R: right; L: left; STS: superior temporal sulcus._
+
 We next asked whether monkeys (n = 2) learned the associations and did so in both directions. We used five stimulus sets comprising four pairs in each set to train and test monkeys (Figure 1—figure supplement 1). The canonical congruity effect, which indexes learning, was not significant when analysing the first imaging sessions (n = 5) after the first 3 days of exposure to the canonical pairs. As we had anticipated this based on previous work (Meyer and Olson, 2011), monkeys were further exposed during 2 weeks for three of the five stimulus sets (with in total ~960 canonical trials per pair) and tested during 4 consecutive days. After this extended exposure, we found consistent effects in both monkeys (averaged over the 12 scan sessions, 4 per stimulus set per monkey), with clusters in early visual areas (V1, V2, and V4), and auditory association areas in the left temporo-parieto-occipital cortex (AV and VA trials combined, p < 0.001, cluster p < 0.05, n = 2) (Figure 3 and Table 2). Crucially, however, this effect was confined to the canonical direction, with no significant clusters in the reversed direction at the whole-brain level, in accordance with the reversibility hypothesis. We specifically tested the difference between the congruity effect in the learned and the reversed direction by calculating the interaction effect between congruity and canonicity, which showed an activation pattern that was similar to the canonical congruity effect, which reached significance in areas V2 and V4. Figure 3C shows the corresponding hemodynamic signals, with an enhanced response to incongruent pairs in the canonical direction (continuous red curve) but not in the reversed direction (dashed red curve). The results thus indicated that monkey cortex could acquire audio–visual pairings, as also shown by prior visual–visual experiments (Meyer and Olson, 2011; Vergnieux and Vogels, 2020), but with two major differences with humans: the congruity effects did not involve a broad network of high-level cortical areas but remained restricted to early sensory areas, and the learned associations did not reverse.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87380/elife-87380-fig3-v1.jpg)
 
 **Figure 3.:** (A) Significant clusters from the incongruent–congruent canonical contrast. No significant clusters were found for the reversed direction. (B) Significant clusters from the interaction between congruity and canonicity (pvoxel < 0.001 and pcluster < 0.05 for both maps). (C, D) Average FIR estimate of the deconvolved MION responses within the clusters from the incongruent–congruent canonical contrast, averaged over VA and AV trials. All clusters in early visual areas were taken together to create figure C. The two monkeys were scanned after two additional weeks of exposure (4 imaging sessions per subject per stimulus set, three stimulus sets were used).
 
-## Experiment 2 | visual–visual stimulus pairs
+**Table 2.**
+ Congruity effect in experiment 1 in two monkeys after two additional weeks of exposure to congruent canonical pairs.Per subject, 3 stimulus sets were used, with 4 imaging sessions per stimulus set. The MNI coordinates indicate the location of the peak of all significant clusters for the canonical congruity contrast as well as the interaction between congruity and canonicity, after correction for multiple comparisons across the whole brain (corrected pcluster < 0.05). Other columns provide the other contrasts at the same peak location for reference. A star is added when the voxels belong to a cluster that achieves corrected-level significance (corrected pcluster < 0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>MNI coordinates</th>
+      <th>Congruity canonical</th>
+      <th>Congruity reversed</th>
+      <th>Congruity × canonicity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R V2, V4</td>
+      <td>17 –29 4</td>
+      <td>5.04*</td>
+      <td>–2.24</td>
+      <td>4.56*</td>
+    </tr>
+    <tr>
+      <td>L V2</td>
+      <td>–18 –30 2</td>
+      <td>4.6*</td>
+      <td>–0.09</td>
+      <td>3.08</td>
+    </tr>
+    <tr>
+      <td>R V4</td>
+      <td>21 –22 0</td>
+      <td>4.23*</td>
+      <td>–0.74</td>
+      <td>2.95</td>
+    </tr>
+    <tr>
+      <td>L TPO</td>
+      <td>–20 –21 11</td>
+      <td>4.13*</td>
+      <td>0.45</td>
+      <td>2.26</td>
+    </tr>
+    <tr>
+      <td>L LGN</td>
+      <td>–8 –8 –5</td>
+      <td>0.46</td>
+      <td>–4.27</td>
+      <td>3.98</td>
+    </tr>
+  </tbody>
+</table>
+
+_R: right; L: left; TPO: temporo-parieto-occipital cortex; LGN: lateral geniculate nucleus.For completeness, t-values are also given for non-significant clusters.*pcluster < 0.05._
+
+### Experiment 2 | visual–visual stimulus pairs
 
 The non-reversal in monkeys in the above audio–visual experiment could be due to a number of methodological choices. First, although the visual stimuli were optimised for monkeys, as three out of five sets of stimuli were pictures of familiar toys, the auditory stimuli (pseudowords) might have been suboptimal for them (although note that monkeys in our lab have extensive experience with human speech). It might be argued that this choice made their discrimination difficult (although note that the canonical congruity effect is evidence of discrimination). Indeed, the auditory cortex is relatively small in monkeys compared to humans (Woods et al., 2010), and there is evidence that auditory memory capacity is reduced in monkeys compared to humans (Scott and Mishkin, 2016). Second, the instructions differed: while we asked human subjects to fixate a dot at the centre of the screen and to pay attention to the stimuli, monkeys were simply rewarded for fixation.
 
 To address those concerns, we replicated the experiment with reward-dependent visual–visual associations in three macaque monkeys, one of which participated in both experiments (Figure 4; Figure 4—figure supplement 1A). First, we replaced the spoken auditory stimuli with abstract black-and-white shapes similar to the lexigrams used to train chimpanzees to communicate with humans (Matsuzawa, 1985; Figure 4—figure supplement 1B). Second, to enhance attention for the monkeys, we introduced a reward association paradigm that made the stimuli behaviourally relevant for them (Wikman et al., 2019). Within each presentation direction, one of the two pictures of objects was associated with a high reward, and one with a low reward (Figure 4—figure supplement 1A). Monkeys were still rewarded for fixation, but object identity predicted the size of the reward during the delay period following the presentation of the stimuli (two objects predicted a high reward, and two predicted a low reward). To calculate congruity effects, the two pairs within each direction were always averaged, making the reward association an orthogonal element in the design.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/87380/elife-87380-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experiment paradigm. Subjects were habituated to four different visual–visual pairs during 3 days. Two pairs were in the ‘object-then-label’ order and two pairs in the ‘label-then-object’ order. For the monkeys, one object in each direction was associated with a high reward while the other one was associated with a low reward, making reward size orthogonal to congruity and canonicity (see Figure 4—figure supplement 1 for details). (B) Monkey fMRI results. Significant clusters (pvoxel < 0.001 and cluster volume >50) from the incongruent–congruent canonical contrast (left) and the interaction between congruity and canonicity (right). One imaging session per subject per stimulus set was performed after 3 days of exposure to canonical trials in each of the three monkeys, with 5 stimulus sets per subject. (C) Human fMRI results. Areas more activated by incongruent trials than by congruent trials in the canonical (red), and the reversed direction (blue), and their overlap (green) (right) (pvoxel < 0.005 and cluster volume >50). No red voxels are visible because all of them figure in the overlap (green). One imaging session was performed per subject in 23 participants after 3 days of exposure to a short block of 24 canonical trials. (D) Human behavioural results. After learning, human adults rated the familiarity of different types of pairs (including a fifth category of novel, never-seen pairings). Each dot represents the mean response of a subject in each condition. Although the reversed congruent trials constituted only 10% of the trials, they were considered almost as familiar as the canonical congruent pairs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87380/elife-87380-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Subjects were habituated to four different visual–visual pairs during 3 days. Two pairs were in the ‘object–label’ order and two pairs in the ‘label–object’ order. During the test phase, the same canonical order was kept in 80% of the trials, including 10% of incongruent pairs. In reversed trials (20% of trials), the pairs were either congruent (10%) or incongruent (10%) with the learning. For the monkeys, one pair in each direction was associated with a high reward while the other one was associated with a low reward, making the reward size orthogonal to congruity and canonicity. (B) Stimulus sets for experiment 2 in monkeys. Humans were tested with stimulus set 2.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87380/elife-87380-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Significant clusters from the incongruent–congruent canonical contrast in low reward trials. (B) Significant from the incongruent–congruent canonical contrast in high reward trials. (C) Significant clusters from the interaction between congruity and reward. pvoxel < 0.001 and pcluster < 0.05 in all panels.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/87380/elife-87380-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Main effect of experiment. (B) Main effect of congruity. (C) Effect of congruity in the canonical trials and (D) in the reversed trials. (E) No significant cluster was observed for the interaction canonicity × congruity. (F) Slices in the three planes showing the only significant cluster in the experiment × congruity interaction. pvoxel < 0.001 and pcluster < 0.05 in all panels.
+
 Using this design, we obtained significant canonical congruity effects in monkeys on the first imaging day after the initial training (24 trials per pair), indicating that the animals had learned the associations (Figure 4B and Table 3). The effect was again found in visual areas (V1, V2, and V4), also spreading to the prefrontal cortex (45B and 46v), very similar to the visually activated areas (compare to Figure 1C). In addition, small clusters were also found in area 6 and in STS. Crucially, the congruity effect remained restricted to the learned direction, as no area showed a significant reversed congruity effect, again in accordance with the reversibility hypothesis. The interaction between congruity and canonicity indicated that there was a significant difference between the canonical and the reversed direction in a similar set of regions (V1, V2, area 45A, 46v, and 6).
+
+**Table 3.**
+ Congruity effect in experiment 2 in three monkeys after 3 days of exposure to congruent canonical pairs.Per subject, five stimulus sets were used, with 1 imaging session per stimulus set. The MNI coordinates indicate the location of the peak of all significant clusters for the canonical congruity contrast as well as the interaction between congruity and canonicity, after correction for multiple comparisons across the whole brain (corrected pcluster < 0.05). Other columns provide the other contrasts at the same peak location for reference. A star is added when the voxels belong to a cluster that achieves corrected-level significance (corrected pcluster < 0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>MNI coordinates</th>
+      <th>Congruity canonical</th>
+      <th>Congruity reversed</th>
+      <th>Congruity × canonicity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L V1, V2</td>
+      <td>–17 –36 1</td>
+      <td>5.18*</td>
+      <td>–2.64</td>
+      <td>4.82*</td>
+    </tr>
+    <tr>
+      <td>R V1, V2</td>
+      <td>15 –35 7</td>
+      <td>4.76*</td>
+      <td>0.98</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <td>L V4</td>
+      <td>–23 –23 8</td>
+      <td>3.92*</td>
+      <td>0.94</td>
+      <td>1.61</td>
+    </tr>
+    <tr>
+      <td>L area 45A, 46v</td>
+      <td>–17 14 6</td>
+      <td>3.89*</td>
+      <td>–2.2</td>
+      <td>4.00*</td>
+    </tr>
+    <tr>
+      <td>R area 6/STS 6</td>
+      <td>22 6 –3</td>
+      <td>3.65*</td>
+      <td>–1.26</td>
+      <td>3.37*</td>
+    </tr>
+    <tr>
+      <td>L TPO</td>
+      <td>–8 –17 13</td>
+      <td>3.45*</td>
+      <td>0.03</td>
+      <td>2.04</td>
+    </tr>
+  </tbody>
+</table>
+
+_MNI coordinates and t-values of each significant cluster at the peak voxel. R: right; L: left; STS: superior temporal sulcus; TPO: temporo-parieto-occipital cortex.For completeness, t-values are also given for non-significant clusters.*pcluster < 0.05._
 
 The greater involvement of the frontal cortex in the congruity effect in this paradigm fits with previous reports on the impact of reward association on long-term memory for visual stimuli in macaque monkeys (Ghazizadeh et al., 2018). To further investigate this, we split high versus low rewarded pairs and found that congruity effect was present only for high-reward conditions, with a significant interaction of congruity and reward in area 45 and caudate nucleus (Figure 4—figure supplement 2). Overall, these results indicate that, even when stimuli were optimised and made relevant for monkeys, leading to enhanced activations and an activation of prefrontal cortex to violations of expectations, the learned associations did not reverse in monkeys.
 
 We also ran this visual–visual paradigm in human participants (n = 24) with the goal to clarify the role of language in the reversibility process. Humans again gave evidence of reversed association, although weaker than with spoken words (Figure 4C and Table 4). At the normal threshold (voxel p < 0.001, cluster p < 0.05 corrected), the main effect of congruity was significant in a network very similar to experiment 1, including bilateral MFG, left IPS, bilateral AI, dACC, with an additional focus in left inferior temporal (IT) gyrus (Figure 4C and Table 4). The involvement of the language network was limited. In particular a main effect of congruity in the STS was absent, in agreement with the shift to visual symbols. Still, bilateral middle frontal gyri, STS, and the precuneus were again activated by the incongruent minus congruent contrast on reversed trials (voxel p < 0.001, cluster p < 0.05 corrected), thereby extending beyond the multiple-demand system (Duncan, 2010; Fedorenko et al., 2013). While sensory activated regions were again absent, in contrast to a previous study on congruity effects in humans when using associations between two visual objects (Richter et al., 2018). And crucially, no interaction effect was again found between congruity and canonicity, neither at the classical threshold (p < 0.001) nor at a lower threshold (p < 0.01). Those results indicate that humans can also encode pairs of visual stimuli in a symmetrical, reversible fashion, involving a network of high-level cortical areas, unlike monkeys.
 
+**Table 4.**
+ Congruity effect in experiment 2 in 23 human subjects, with 1 imaging session per subject after 3 days of exposure to congruent canonical pairs.The MNI coordinates indicate the location of the peak of all significant clusters in the main effect of congruity, after correction for multiple comparisons across the whole brain (corrected pcluster < 0.05). Additional t-values are provided at the same peak location for the canonical and reverse congruity effects. A star (*) is added when the voxels belong to a cluster that achieves corrected-level significance (corrected pcluster < 0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">Congruity effect (t-values)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Region</td>
+      <td>MNI coordinates</td>
+      <td>Main</td>
+      <td>Canonical trials</td>
+      <td>Reversed trials</td>
+    </tr>
+    <tr>
+      <td>L triangularis</td>
+      <td>–44 30 24</td>
+      <td>5.34*</td>
+      <td>3.64*</td>
+      <td>3.91*</td>
+    </tr>
+    <tr>
+      <td>L operculum</td>
+      <td>–34 26 0</td>
+      <td>4.43*</td>
+      <td>4.36*</td>
+      <td>1.91</td>
+    </tr>
+    <tr>
+      <td>L ant cingulaire</td>
+      <td>–8 18 42</td>
+      <td>4.52*</td>
+      <td>3.25*</td>
+      <td>3.13</td>
+    </tr>
+    <tr>
+      <td>L suppl motor area</td>
+      <td>2 20 52</td>
+      <td>3.79*</td>
+      <td>3.95*</td>
+      <td>1.40</td>
+    </tr>
+    <tr>
+      <td>L precentral</td>
+      <td>–48 4 40</td>
+      <td>4.82*</td>
+      <td>2.56</td>
+      <td>4.26*</td>
+    </tr>
+    <tr>
+      <td>L inf parietal</td>
+      <td>–30 –50 44</td>
+      <td>5.09*</td>
+      <td>3.90*</td>
+      <td>3.30*</td>
+    </tr>
+    <tr>
+      <td>L mid occipital</td>
+      <td>–28 –70 32</td>
+      <td>5.05*</td>
+      <td>2.89</td>
+      <td>2.79</td>
+    </tr>
+    <tr>
+      <td>L visual word form area</td>
+      <td>–50 –60 –12</td>
+      <td>4.43*</td>
+      <td>2.62</td>
+      <td>3.64</td>
+    </tr>
+    <tr>
+      <td>R sup frontal</td>
+      <td>56 24 36</td>
+      <td>4.93*</td>
+      <td>3.41*</td>
+      <td>3.57*</td>
+    </tr>
+    <tr>
+      <td>R orbito frontal</td>
+      <td>26 26 –16</td>
+      <td>5.05*</td>
+      <td>1.92*</td>
+      <td>5.22</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R operculum</td>
+      <td>50 16 –2</td>
+      <td>3.58*</td>
+      <td>2.96*</td>
+      <td>2.11</td>
+    </tr>
+    <tr>
+      <td>48 10 28</td>
+      <td>4.74*</td>
+      <td>2.20*</td>
+      <td>4.39*</td>
+    </tr>
+  </tbody>
+</table>
+
+_R: right; L: left; VWFA: visual word form area._
+
 Further evidence was obtained from a behavioural test, performed after imaging, where we collected familiarity ratings for each stimulus pair (see Methods, Figure 4). Although participants reported a higher familiarity with congruent canonical pairs (which were presented on 70% of trials) than with congruent reversed pairs (which were presented on 10% of trials, t(20) = 2.8, p = 0.01), both pairs were rated as much more familiar than their corresponding incongruent pairs (although they were also presented 10% of time), and than never-seen pairs (all t(20) > 7, p < 0.0001, bilateral paired t-test). This familiarity task thus confirms that humans spontaneously reverse associations and experience a memory illusion of seeing the reversed pairs.
 
-## Joint analysis of audio–visual and visual–visual stimulus pairs
+### Joint analysis of audio–visual and visual–visual stimulus pairs
 
 In order to better characterise the human reversible symbol learning network and its dependence on modality, we reanalysed both human experiments together (n = 55) (Figure 4—figure supplement 3). There was, unsurprisingly, a main effect of experiment with greater activation in a bilateral auditory and linguistic network in the AV experiment, and in the occipital, occipito-temporal, and occipito-parietal visual pathways in the VV experiment. A main effect of congruity was observed and was again significant in both directions, canonical and reversed, in bilateral regions: insula, MFG, precentral, IPS, precuneus, ACC, and STS. Crucially, there was still no region sensitive to the congruity × canonicity interaction, indicating that the learned associations were fully reversible. Finally, a single region, the left posterior STS, showed a significantly different congruity effect in the two experiments, as it was slightly larger in the AV relative to VV paradigm ([−60 –40 8], z = 4.51; 183 vox, pcor = 0.049), compatible with a specific role in learning of new spoken lexical items. The results therefore suggest that a broad and bilateral network, encompassing language areas but extending beyond them into dorsal parietal and prefrontal cortices, responded to violations of reversible symbolic association regardless of modality.
 
 To interrogate more finely the role of language- and non-related areas, we turned to a sensitive subject-specific region-of-interest (ROI) analysis. We used a separate set of data acquired during a ‘localiser’ task during the same fMRI session (Pinel et al., 2007) to recover, in a subject-specific manner, the coordinates of the 10% best voxels within ROIs which are considered as the main hubs of language (Pallier et al., 2011), mathematics (Amalric and Dehaene, 2016) and reading networks. Specifically in the conditions of that localiser, we considered activations to amodal sentence processing for the language ROIs, to simple mental arithmetic for the mathematical ROIs, and in sentence reading relative to listening for the visual word form area (VWFA). We added this last region as it is activated by written words, visual symbols par excellence. We then performed ANOVAs on the betas of the main experiment averaged over these voxels, thus the analyses were performed on a different dataset than the localiser data used to select the voxels.
 
 A main congruity effect was observed in all ROIs (Table 5). There was also a main effect of experiment in all language ROIs, VWFA and right IT, due on the one hand to larger activations in the AV than VV experiment in frontal and superior temporal ROIs, and on the other hand to the converse trend in the VWFA and IT ROIs. A significant congruity × experiment interaction was seen only in the pSTS and IFG triangularis, because these ROIs showed a large congruity effect in the AV experiment, but no effect in the VV experiment – thus further confirming that these areas contribute specifically to the acquisition of linguistic symbols, while all other areas were engaged regardless of modality. Importantly, in all these analyses, no significant interaction canonicity × congruity nor experiment × canonicity × congruity were observed, confirming the whole-brain analyses (Figure 4—figure supplement 3 and Table 5).
+
+**Table 5.**
+ Region-of-interest (ROI) analyses of the language and mathematics localiser: F-values of ANOVAs performed on the averaged betas of the main task across different ROIs (main effect of congruity, canonicity, experiment (1 or 2), and interaction effect of congruity and canonicity, and congruity and experiment).These ROIs correspond to the 10% best voxels selected in each participant thanks to an independent and short localiser, in regions commonly reported in the literature as activated in language and mathematical tasks. In this localiser, participants listened to and read short sentences of general content or requiring easy mental calculations. On the sagittal (x = −50 mm) and coronal (y = −58 mm) brain slices, the language and mathematical ROIs are presented as red and yellow areas, respectively. The left-lateralised white area corresponds to the visual word form area (VWFA); n = 52; df = 50.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Congruity</th>
+      <th>Canonicity</th>
+      <th>Experiment</th>
+      <th>Congruity × canonicity</th>
+      <th>Congruity × experiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ROIs language</td>
+      <td>Temporal pole</td>
+      <td>11.44†</td>
+      <td>&lt;1</td>
+      <td>6.02‡</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anterior STS</td>
+      <td>5.41‡</td>
+      <td>&lt;1</td>
+      <td>42.31*</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Posterior STS</td>
+      <td>18.70*</td>
+      <td>1.31</td>
+      <td>50.75*</td>
+      <td>&lt;1</td>
+      <td>17.01†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Temporo-parietal junction</td>
+      <td>20.81*</td>
+      <td>1.85</td>
+      <td>9.39†</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IFG orbitalis</td>
+      <td>22.47*</td>
+      <td>&lt;1</td>
+      <td>11.40†</td>
+      <td>&lt;1</td>
+      <td>1.64</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IFG triangularis</td>
+      <td>16.98*</td>
+      <td>&lt;1</td>
+      <td>22.42*</td>
+      <td>&lt;1</td>
+      <td>10.45‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VWFA</td>
+      <td>22.29*</td>
+      <td>&lt;1</td>
+      <td>11.77†</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td rowspan="8">ROIs math</td>
+      <td>Left precentral BA44d</td>
+      <td>29.71*</td>
+      <td>&lt;1</td>
+      <td>4.1§</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td>Right precentral BA44d</td>
+      <td>10.44*</td>
+      <td>1.23</td>
+      <td>&lt;1</td>
+      <td>1.49</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td>Left IPS</td>
+      <td>27.4*</td>
+      <td>&lt;1</td>
+      <td>1.81</td>
+      <td>1.77</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td>Right IPS</td>
+      <td>18.19*</td>
+      <td>6.77</td>
+      <td>1.70</td>
+      <td>2.37</td>
+      <td>5.29</td>
+    </tr>
+    <tr>
+      <td>Left IT</td>
+      <td>33.43*</td>
+      <td>&lt;1</td>
+      <td>4.43§</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td>Right IT</td>
+      <td>5.41‡</td>
+      <td>&lt;1</td>
+      <td>7.76‡</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+    <tr>
+      <td>Left cerebellum</td>
+      <td>5.51‡</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+      <td>2.87</td>
+    </tr>
+    <tr>
+      <td>Right cerebellum</td>
+      <td>19.20*</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+      <td>&lt;1</td>
+    </tr>
+  </tbody>
+</table>
+
+_STS: superior temporal sulcus; IFG: inferior frontal gyrus; IPS: intra-parietal sulcus; IT: inferior temporal.*pFDRcor < 0.001.†pFDRcor < 0.01.‡pFDRcor < 0.05.§pFDRcor < 0.1._
 
 Finally, in experiment 2 in which participants rated the familiarity of the pairs, we computed a within-subject behavioural index of reversibility as the difference in familiarity rating between incongruent and congruent reversed pairs. Across subjects, this index was correlated with the fMRI congruity effect (difference between incongruent and congruent trials in the ROI) on canonical trials (r = 0.49, p = 0.028) and especially on reversed trials (r = 0.64, p = 0.002) in the left dorsal part of area 44. In the right cerebellum, a similar correlation was observed but only for the reversed trials (r = 0.57, p = 0.008). No significant correlation was observed in other ROIs.
 
@@ -132,35 +694,35 @@ A third limitation is that we only compared humans to a single species, macaque 
 
 ## Methods
 
-## Participants
+### Participants
 
 We tested four adult rhesus macaques (male, 6–8 kg, 5–19 years of age). YS and JD participated in experiment 1 and JD, JC, and DN in experiment 2. All procedures were conducted in accordance with the European convention for animal care (86-406) and the NIH’s guide for the care and use of laboratory animals. They were approved by the Institutional Ethical Committee of the CEA and by the ethical committee for animal research of the KU Leuven. Animal housing and handling were according to the recommendations of the Weatherall report, allowing extensive locomotor behaviour, social interactions, and foraging. All animals were group-housed (cage size at least 16–32 m3) with diverse cage enrichment (auditory and visual stimuli, toys, foraging devices, etc.).
 
 We also tested 55 healthy human subjects with no known neurological or psychiatric pathology (experiment 1, n = 31; experiment 2, n = 24). In experiment 2, an additional three subjects were excluded because they showed no evidence of learning the canonical pairs. Human subjects gave written informed consent to participate in this study, which was approved by the French National Ethics Committee.
 
-## Stimuli
+### Stimuli
 
 For the visual objects, five sets of four objects each were designed and used for both experiments 1 and 2 (see Figure 1—figure supplement 1 for experiment 1 and Figure 4—figure supplement 1B for experiment 2). All five sets were used for each macaque monkey, while one set was used per human subject, alternating between sets 2 and 3 for subsequent subjects. The two first sets were 3D renderings of objects differing in their visual properties and semantic categories. As they might be considered as more familiar to humans, the other three sets of objects were photographs of monkey toys which the monkeys were exposed to in their home cages for at least 2 weeks prior to the training blocks. They were mostly geometrical 3D objects with no evident and consistent name for naive human participants. For each object eight different stimuli were generated by choosing eight different viewpoints. These stimuli are called ‘objects’ hereafter.
 
 A label was associated with each object in each set. For experiment 1, the labels were auditory French pseudo-words with large differences in the number and identity of their syllables within each set (e.g. ‘tøjɑ̃’, ‘ɡliʃu’, ‘byɲyɲy’, and ‘kʁɛfila’). Note that monkeys were daily exposed to French radio and television as well as to French-speaking animal caretakers. Macaque monkey vocalisations were not considered as these already have a defined meaning, often emotional, that could have disrupted the experiments. In experiment 2, the labels were abstract black-and-white visual shapes, difficult to name and similar to the lexigrams used to train chimpanzees to communicate with humans (Matsuzawa, 1985).
 
-## Experimental paradigm
+### Experimental paradigm
 
-## Stimulus presentation
+#### Stimulus presentation
 
 Each set to be learned comprised four pairs. Two pairs were presented in the label–object direction (L1–O1 and L3–O3), and two in the object–label direction (O2–L2 and O4–L4). Labels were speech sounds in experiment 1, and black-and-white shapes in experiment 2. In each trial, the first stimulus (label or object) was presented during 700 ms, followed by an inter-stimulus-interval of 100 ms then the second stimulus during 700 ms (total trial duration: 1500 ms). The pairs were separated by a variable inter-trial-interval randomly chosen among eight different durations between 3 and 4.75 s (step = 250 ms). The series of eight intervals was randomised each time that a series was completed. The visual stimuli were ~8 degrees in diameter, centred on the screen, with an average luminance set equal to the background. At each trial, the orientation of the object was randomly chosen among the eight possibilities. A cross was present at the centre of the screen when no visual stimulus was present. Auditory stimuli were presented to both ears at ~80 dB.
 
-## Training
+#### Training
 
 The experiment was designed to be also tested in 3-month-old human infants (Ekramnia and Dehaene-Lambertz, 2019), which explains our choice of short training sessions over 3 consecutive days because of the short attention span in infants and the reported benefit of sleep for encoding word meaning after a learning session (Friedrich et al., 2017). Therefore, training consisted of observing 24 trials as described above (1 block of 24 trials for each of the 3 training days). Two pairs (one in each direction) were introduced on the first day of training (e.g. L1–O1 and O2–L2). First, one pair was shown for six trials, then the other pair for six trials, then the two pairs were randomly presented for six trials each. On the second day of training, the two other pairs (L3–O3 and O4–L4) were presented using the same procedure as on day 1. On the 3 days, all pairs were randomly presented (six presentations each). The object–label pairing was constant but the direction of presentation (O–L or L–O) and the introduction of the pair on the first or second day was counterbalanced across participants. In experiment 1, the only sounds presented were the speech labels, while no sound was present in experiment 2, the objects and labels being visual stimuli.
 
-## Human protocol
+#### Human protocol
 
 In experiment 1, the participants came to the lab to watch a first video presenting the first block of trials, and on the next 2 consecutive days they received a web link on which a video was uploaded that contained the block of training for that day (24 trials, ~3 min long). For experiment 2, all three videos were sent via a web link and participants were instructed to attentively watch the video corresponding to the given day. The participants came for the fMRI session on the fourth day. Each participant saw only one set of objects–labels, either stimulus set 2 or 3, distributed equally across participants.
 
 In experiment 2, we added a behavioural test at the end of the MRI session to measure the learning of the subjects. They were shown all 16 possible trial pairs (incongruent and congruent in canonical and non-canonical order), plus 16 never seen, one by one. For each of them, they were asked to rate how frequently they had seen them (on a five-level scale ranging from never to rarely, sometimes, often and always). The results were analysed using a five-level ANOVA which included the canonicity × congruity 2 × 2 design. A computer crash erased responses from two participants and one subject did not participate leaving 21 subjects for this analysis.
 
-## Monkey protocol
+#### Monkey protocol
 
 Monkeys were implanted with an MR-compatible headpost under general anaesthesia. The animals were trained to sit calm in a sphinx position in a primate chair with their head fixed, inside a mock MRI setup, and trained to fixate a small dot (0.25 degrees) within a virtual window of 1.25–2 degrees diameter (Uhrig et al., 2014). Then they received 1 training block per day for 3 consecutive days (24 trials per block) for each stimulus set, similar to the human participants. On the fourth day, they were scanned while being presented with the test blocks for the corresponding stimulus set. Rewards were given at regular intervals for maintaining fixation during training and testing (within a virtual window of 1.25–2 degrees diameter), asynchronous with the visual and auditory stimulus presentation.
 
@@ -168,13 +730,13 @@ For experiment 1, there was no congruity effect for the first imaging sessions a
 
 In experiment 2, a reward association was introduced to promote monkeys’ engagement in the task. The amount of reward that the monkeys received after successfully fixating throughout the pair presentation was either increased or decreased for a duration of 1450 ms (starting 100 ms after the offset of the second stimulus), depending on the identity of the visual object. The amount of reward remained the same, but the time in between consecutive rewards was set either twice as short (for high rewards) or twice as long (for low rewards). For each temporal direction, one visual object was associated with a high reward while the other one was associated with a low reward (see Figure 4—figure supplement 1). By design, the two pairs that were averaged for each of the critical tested dimensions (direction, congruity, and canonicity of the pair) therefore had opposite reward size, making reward size an orthogonal design element. The first stimulus set was used for procedural training on this reward association paradigm for 2 weeks. Stimulus sets 2–5 were used for training as in experiment 1 (with 1 block per day for 3 consecutive days) and an fMRI test session on the fourth day.
 
-## Test in MRI
+#### Test in MRI
 
 The MRI session comprised four test blocks in a single fMRI session in humans and between 12 and 32 blocks per day per monkey (see below for the total number of valid runs). In both humans and monkeys, each block started with four trials in the learned direction (congruent canonical trials), one trial for each of the four pairs (two O–L and two L–O pairs). The rest of the block consisted of 40 trials in which 70% of trials were identical to the training (28 trials); 10% were incongruent pairs but the direction (O–L or L–O) was correct (4 incongruent canonical trials), thus testing whether the association was learned; 10% were congruent pairs but the direction within the pairs was reversed relative to the learned pairs (4 congruent reversed trials) and 10% were incongruent pairs in reverse (4 incongruent reversed trials). As the percentage of congruent and incongruent pairs was the same in the reversed direction, a difference can only be due to a generalisation from the canonical direction. For incongruent trials, the incongruent stimulus always came from the pair presented in the same direction (see Figure 1), in order to avoid that a change of position within the pair itself (first or second stimulus) induced the perception of an incongruity.
 
 Human participants were only instructed to keep their eyes fixed on the fixation point and pay attention to the stimuli. The monkeys were rewarded for keeping their eyes fixed on the fixation point. In experiment 1, the reward was constant, whereas in experiment 2, they received the differential reward that was implemented during training, as mentioned above.
 
-## Data acquisition
+### Data acquisition
 
 For experiment 1, both humans and monkeys were scanned with the 3T Siemens Prisma at NeuroSpin using a T2*-weighted gradient echo-planar imaging (EPI) sequence, using a 64-channel head coil for humans and a customised 8-channel phased-array surface coil (KU Leuven, Belgium) for monkeys. The imaging parameters were the following: in humans, resolution: 1.75 mm isotropic, TR: 1.81 s, TE: 30.4 ms, PF: 7/8, MB3, slices: 69; in monkeys, resolution: 1.5 mm isotropic, TR: 1.08 s, TE: 13.8 ms, PF: 6/8, iPAT2, slices: 34.
 
@@ -182,22 +744,22 @@ MION (monocrystalline iron oxide nanoparticle, Molday Ion, BioPAL, Worchester MA
 
 For experiment 2, the settings remained the same for the humans and for one of the monkeys (JD). Two new monkeys (JC and DN) were included at the Laboratory of Neuro- and Psychophysiology of KU Leuven and scanned with a 3T Siemens Prisma using a T2*-weighted gradient EPI sequence. For JC, an external 8-channel coil was used and the imaging parameters were the following: resolution: 1.25 mm isotropic, TR: 0.9 s, T7: 15 ms, PF: 6/8, iPAT3, multi-band 2, slices: 52. For DN, an implanted 8-channel coil was used and the imaging parameters were the following: resolution: 1.25 mm isotropic, TR: 0.9 s, TE: 15 ms, PF: 6/8, iPAT3, multi-band 2, slices: 40. Monkeys were also trained to sit in a sphinx position in a primate chair with their head fixed, and MION was again injected before scanning (11 mg/kg, i.v.). Eye movements were monitored and recorded by an eye tracking system (ETL200, ISCAN inc, Woburn, MA, USA). In addition, the animals were required to keep their hands in a box in front of the chair (as verified with optical sensors), which limited body motion. In total, we recorded 279 valid runs, 81 for JD, 106 for JC, and 92 for DN.
 
-## Preprocessing of monkey fMRI data
+### Preprocessing of monkey fMRI data
 
 Functional images were reoriented, realigned, resampled (1.00 mm isotropic), and coregistered to the anatomical template of the Montreal Neurologic Institute (MNI, Montreal, Canada) monkey space using Pypreclin, which is a custom-made scripts in Python programming language (Tasserie et al., 2020).
 
 Eye-data was analysed where only the runs with more than 85% fixation (virtual window of 2–2.5 degrees diameter) were included for further analyses (n = 16 excluded in experiment 1 and n = 14 excluded in experiment 2). Moreover, a trial was excluded if the eyes were closed for more than 650 ms (out of 700) while an image was present on the screen. In experiment 1, the top 5% of runs where motion was strongest across monkeys were excluded (n = 30) because there remained significant residual motion. For experiment 1, in total 395 runs remained to be analysed, 184 for YS and 211 for JD. For experiment 2, 268 runs remained, 77 for JD, 107 for JC, and 84 for DN.
 
-## Preprocessing of human fMRI data
+### Preprocessing of human fMRI data
 
 SPM12 (http://www.fil.ion.ucl.ac.uk/spm) was used for preprocessing of human data as well as first- and second-level models. Preprocessing consisted of standard preprocessing pipeline, including slice-time correction, realign, top-up correction, segmentation, normalisation to standard MNI space, and smoothing with a 4-mm isotropic Gaussian.
 
-## First- and second-level analyses
+### First- and second-level analyses
 
 After image preprocessing, active brain regions were identified by performing voxel-wise GLM analyses implemented in SPM12 in both monkeys and humans. For the first experiment, in a first-level SPM model, the twelve predictors included: (1–4) the onsets of the first stimulus of the pair (four regressors consisting in the combinations of audio/visual and canonical/non-canonical factors), and (5–12) the onsets of the second stimulus (eight regressors consisting in the combinations of audio/visual, canonical/non-canonical, and congruent/incongruent factors). These 12 events were modelled as delta functions convolved with the canonical hemodynamic response function (for MION in case of monkeys). Parameters of head motion derived from realignment were also included in the model as covariates of no interest. Contrast images for the effect of congruity (incongruent minus congruent canonical, and incongruent minus congruent non-canonical) as well as the interaction between congruity and canonicity were computed. For the second experiment, the analysis was the same, except that given the two elements of the pair were in the same (visual) modality only a single predictor was used for each stimulus pair, giving four predictors: the onsets of the second stimulus of the pair, with congruent/incongruent and canonical/non-canonical as the two factors. For the monkeys, an additional factor was whether the pair was associated with a high or a low reward, giving eight predictors in total. The temporal derivative of the hemodynamic response function was added to the model as well. Before entering the second-level analysis, the data was smoothed again, using a 5-mm smoothing kernel in humans and 2-mm in monkeys.
 
 For the second-level group analysis, subjects were taken as the statistical unit for the humans and runs were taken as statistical units for the monkeys. One-sample t-tests were performed on the contrast images to test for the effect of the condition. Results are reported at an uncorrected voxelwise threshold of p < 0.001 and a cluster p < 0.05 corrected for multiple comparisons (false discovery rate, FDR).
 
-## ROI analyses
+### ROI analyses
 
 In a separate localiser, human participants listened and read short sentences. In some of the sentences, the participants were asked to compute easy mathematical operations (math sentences). Subtracting activations to math and non-math sentences allowed to separate the regions more involved in mathematical cognition than in general sentence comprehension. We selected seven left-hemispheric regions previously reported as showing a language-related activation (Pallier et al., 2011), six bilateral ROIs showing mathematically related activations (Amalric and Dehaene, 2016), and finally a sphere around the VWFA (of 10 mm radius, centred on [–45 –57 –12]). In these ROIs, we recovered the subject-specific coordinates of each participant’s 10% best voxels in the following comparisons: sentences versus rest for the six language ROIs; reading versus listening for the VWFA; and numerical versus non-numerical sentences for the eight mathematical ROIs. We extracted the beta of these voxels and performed ANOVAs with congruity and canonicity as within-subject factors, and experiment as the between-subject factor. Two participants in experiment 1, and one participant in experiment 2 had no localiser, leaving 52 participants (n = 29 and n = 23) for these analyses. p-values were FDR corrected considering all 15 ROIs in each comparison.

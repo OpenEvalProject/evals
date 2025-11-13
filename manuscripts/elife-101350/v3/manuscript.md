@@ -19,14 +19,14 @@
 
 ### Affiliations
 
-1. https://ror.org/042aqky30 Department of Pediatrics, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany
-2. https://ror.org/042aqky30 Department of Neurology, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany
-3. https://ror.org/042aqky30 Department of Physiology, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany
-4. https://ror.org/042aqky30 Division of Nephrology, Department of Internal Medicine III, Faculty of Medicine and University Hospital Carl Gustav Dresden Germany
-5. https://ror.org/042aqky30 Department of Dermatology, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany
-6. https://ror.org/01xnwqx93 Institute for Clinical Chemistry and Clinical Pharmacology, University Hospital Bonn Bonn Germany
-7. https://ror.org/01xnwqx93 Department of Medicine III, University Hospital Bonn Bonn Germany
-8. https://ror.org/043j0f473 Deutsches Zentrum für Neurodegenerative Erkrankungen Dresden Germany
+1. Department of Pediatrics, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+2. Department of Neurology, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+3. Department of Physiology, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+4. Division of Nephrology, Department of Internal Medicine III, Faculty of Medicine and University Hospital Carl Gustav Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+5. Department of Dermatology, Faculty of Medicine and University Hospital Carl Gustav Carus, Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+6. Institute for Clinical Chemistry and Clinical Pharmacology, University Hospital Bonn Bonn Germany ([ROR:01xnwqx93](https://ror.org/01xnwqx93))
+7. Department of Medicine III, University Hospital Bonn Bonn Germany ([ROR:01xnwqx93](https://ror.org/01xnwqx93))
+8. Deutsches Zentrum für Neurodegenerative Erkrankungen Dresden Germany ([ROR:043j0f473](https://ror.org/043j0f473))
 
 † Corresponding author
 
@@ -48,67 +48,87 @@ In this work, we observed that pathology in the thymus of SAVI mice was dependen
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Heterozygous STING N153S/WT mice (STING ki) were previously described (Luksch et al., 2019). STING WT and STING ki mice were crossed to Tnfr1/2-/- mice, kindly provided by Hans-Joachim Anders, Munich, Germany (Mulay et al., 2017). All mice were housed at the Experimental Center of the University of Technology Dresden under specific pathogen-free conditions. All mice experiments were approved by the Landesdirektion Sachsen (TVV 4/2019, TVV 13/2019) and carried out in accordance with the institutional guidelines on animal welfare.
 
-## Cell preparations and flow cytometry
+### Cell preparations and flow cytometry
 
 Spleens and thymi were mechanically homogenized and passed through a 100 µm cell strainer. Single-cell suspensions of spleen, thymi, and blood were obtained by lysis of red blood cells and additional filtration through 30 µm meshes. All cell suspensions were washed with FACS buffer (PBS, 2%FCS, 2.5 mM EDTA). These isolated cells were incubated with fluorescence-labeled antibodies in FACS buffer for 30 min at 4°C. For a detailed overview of used antibodies, see Supplementary file 1, table S1. After incubation, cells were washed twice with FACS buffer. Exclusion of dead cells was performed by adding Zombie UV dye (BioLegend, USA). Cells were analyzed by LSR II and LSR FORTESSA (BD Biosciences, Germany) and evaluated with FlowJo V10 software (Tree Star, USA).
 
-## Histology of lung
+### Histology of lung
 
 Lung tissue was dissected from mice and fixed in 4% formaldehyde for 24 hr at 4°C and embedded in paraffin. Lung tissue sections (thickness of 3 µm) were stained with Mayer’s hemalum (Carl Roth, Germany) and counterstained with eosin (Carl Roth, Germany). For quantification of lung disease, whole tissue sections were scanned by Axio Scan Z1 and ZEN software (both from Zeiss, Germany). ZEN 3.0 (Zeiss, Germany) software was used for evaluation of inflammatory areas in all analyzed lung sections. The area of diseased lung in each section was calculated by inflamed area divided by total area of lung section, excluding large airway spaces.
 
-## Dye labeling of lymph nodes
+### Dye labeling of lymph nodes
 
 Identification of lymph nodes was performed as described previously (Harrell et al., 2008). Briefly, mice were anesthetized and 25 µl of 5% Evans Blue dye in PBS was injected subcutaneously into both hind paws. After 30 min of dye injection, mice were euthanized and dissected for visualization of blue-labeled lymph nodes.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA of lung and thymi was extracted from snap-frozen tissue by using the RNeasy Mini Kit (QIAGEN, Germany) according to the manufacturer’s instructions and cDNA was generated by MMLV reverse transcription (Promega, Germany). Quantitative real-time PCR assays were carried out by using GoTaq qPCR master mix (Promega, Germany) and QuantStudio 5 (Thermo Fisher Scientific, USA). PCR primers were generated from the Primer Bank database, see Supplementary file 3, table S3 (Spandidos et al., 2010). Expression of genes was normalized with respect to each housekeeping gene using ΔΔCt method for comparing relative expression.
 
-## LEGENDplex assay
+### LEGENDplex assay
 
 Mouse cytokine release syndrome panel LEGENDplex (BioLegend, USA) is a multiplex bead-based assay using the basic methodology of ELISA. Snap-frozen lung tissue was extracted by 1% NP-40 (Sigma-Aldrich, Germany) and cOmplete Protease Inhibitor Cocktail (Roche, Germany) in PBS. Collected serum and lung extracts from mice were incubated with bead-conjugated antibodies overnight at 4°C and permanent shaking. Content of chemokines/cytokines was quantified after washing and staining with biotinylated detection antibodies and phycoerythrin-bound streptavidin by using LSR II (BD Biosciences, Germany). Calculation of each chemokine/cytokine quantity was determined by using standard curves according to the manufacturer’s instructions.
 
-## Immunofluorescence staining of brain sections
+### Immunofluorescence staining of brain sections
 
 Mice were euthanized with an overdose of isoflurane (Baxter, Belgium) and perfused transcardially with 4% paraformaldehyde (PFA) in Tris-buffered saline (TBS, pH 7.6). The tissue was left in 4% PFA for another 48 hr at 4°C. For cryoprotection, brains were incubated in 30% sucrose in TBS. They were snap-frozen at –55°C in isopentane and stored at –80°C. 30-µm-thick coronal brain sections were obtained using a Cryostat (Leica CM3050 S Biosystems, Germany).
 
 Brain sections were rinsed in TBS three times for 10 min each. Afterward they were incubated for 1 hr at room temperature in a blocking buffer, which consisted of 10% donkey serum (BIOZOL Diagnostica Vertrieb GmbH, Germany), 0.2% Triton X-100 (Thermo Scientific, USA), and TBS. Incubation with primary antibody was performed by using sheep anti-TH, chicken anti-GFAP, and guinea pig anti-Iba1 (Supplementary file 2, table S2) at 4°C overnight. After three 10 min rinses with TBS, slices were incubated with fluorophore-conjugated secondary antibodies for 1 hr at room temperature Alexa Fluor 488-conjugated donkey anti-sheep, Alexa Fluor 647-conjugated donkey anti-chicken, CF555-conjugated donkey anti-guinea pig (Supplementary file 2, table S2). Hoechst was applied for nuclear counterstaining. Sections were mounted in Fluoromount-G (Invitrogen, USA).
 
-## Quantification of dopaminergic neurons, astrocytes, and microglia in the SNc
+### Quantification of dopaminergic neurons, astrocytes, and microglia in the SNc
 
 For each animal, we stained and slide-scanned every fourth brain section. Images were acquired using a spinning disk confocal microscope and a ×20/0.8 objective. The system consists of a Zeiss Axio Observer.Z1 Inverted Microscope (Zeiss, Germany) supported by a Yokogawa CSU-X1 unit (Yokogawa Life Science, Tokyo). Each section was scanned at seven Z-levels with 1 µm intervals and projected according to the ‘Orthogonal projection’ and ‘Stitching’ function in Zeiss Zen 3.1 software (Zeiss, Germany). TH-positive neurons of both hemispheres in the pars compacta of the substantia nigra (SNc) were manually counted in Zeiss Zen. Based on the TH staining, the SNc was manually encircled. The numbers of Iba1-positive microglia and GFAP-positive astrocytes were also quantified manually in both hemispheres within the marked area. Next, each cell type’s count was summed and multiplied by four since every fourth section was analyzed in order to represent the total number within the SNc. Counts of positive stained cells from STING WT and STING ki mice were normalized to the corresponding mean count in STING WT.
 
-## Transcriptomic analysis of murine lung endothelial cells
+### Transcriptomic analysis of murine lung endothelial cells
 
 Murine lung endothelial cells were isolated from perfused (10 U/ml heparin diluted in PBS) lung tissue. Single-cell suspension was obtained after digestion with 1 mg/ml Collagenase (Sigma-Aldrich, Germany), 3.5 mg/ml Dispase (Roche, Germany), and 25 µg/ml DNaseI (Roche, Germany) in native IMDM (Thermo Fisher Scientific, USA) over 45 min at 37°C. Collected cells were washed with PBS and passed through a 30 µm cell strainer. Lung endothelial cells were enriched by positive selection of CD31+ cells with microbeads (Miltenyi Biotec), according to the manufacturer’s protocol. All selected cells were stained with antibodies (all from BioLegend, USA) against CD45.2 (1:300), CD11b (1:500), Ter-119 (1:500), CD326 (1:500), CD31 (1:300), and separated by FACS Aria. Dead cells and cellular debris were excluded by PI staining. The designed gating strategy ensured the exclusion of leukocytes (CD45.2+ and CD11b+), erythrocytes (Ter-119+), and epithelial cells (CD326+). Total RNA was extracted by RNeasy Plus Mini Kit (QIAGEN, Germany) and poly-A enriched before library preparation using NEBNext Ultra II Directional RNA Library Prep Kit (NEB, USA). For each library, 30 mio single end reads were generated on an Illumina NovaSeq 6000. Reads were mapped to mouse genome GRCm39 followed by normalization, exploratory, and differential expression analysis using DESeq2 (Love et al., 2014). Data are deposited on GEO database, Accession no. GSE244062.
 
-## Functional assays of murine lung endothelial cells
+### Functional assays of murine lung endothelial cells
 
 Isolation and culture of murine lung endothelial cells was performed as described previously (Fehrenbach et al., 2009). In brief, mice were perfused transcardially with 10 U/ml heparin (Carl Roth, Germany) diluted in PBS. Lung tissue was removed and digested with 1 mg/ml Collagenase (Sigma-Aldrich, Germany), 3.5 mg/ml Dispase (Roche, Germany) and 25 µg/ml DNaseI (Roche) in native IMDM (Thermo Fisher Scientific, USA) over 45 min at 37°C. The resulting cell suspension was filtered through a 30 µm cell strainer. The filtered cell suspension was washed in PBS and resuspended in complete IMDM culture medium. The extracted cells of lung tissue were plated into Attachment Factor Protein- (Life Technologies, USA) coated T75 tissue culture flasks for 2 days. After this time, lung cells were detached by Accutase (BioLegend, USA) and the endothelial cells were separated using Dynabeads coupled to anti-CD31 antibody and anti-ICAM2 antibody (BioLegend, USA) according to the manufacturer’s instructions (Thermo Fisher Scientific, USA). Collected murine lung endothelial cells were cultured in coated T75 flasks. Cultured cells from passages 1–3 were used for analyzing neutrophil attachment and neutrophil transendothelial migration.
 
 For this purpose, 0.3×105 lung endothelial cells were seeded into 6-channel µ-Slides VI 0.4 (IBIDI, Germany), which were precoated with attachment factor (Thermo Fisher Scientific, USA). Cells were incubated for 4 days with changing media twice per day. For stimulated cells, last medium exchange was performed with either 5 ng/ml TNF (Peprotech, USA) or 100 ng/ml cLPS (Invivogen, USA) and incubation lasted overnight. For the migration assay, neutrophils were isolated from murine bone marrow using femur and tibia. Neutrophils were separated by gradient centrifugation using Histopaque 1119 and 1077 (Sigma-Aldrich, Germany) according to the manufacturer’s instructions. Neutrophils were washed, counted, and diluted to 1×106 cells/ml. Afterward flow was applied to µ slides at a flow rate of 0.5 ml/min (≡0.6 dyn/cm2) using a syringe pump for 10 min. Subsequently, 0.6×106 neutrophils were injected upstream of the endothelial monolayer via a port. Phase-contrast images (five per each channel) were taken with an AXIO OBSERVER Z1 (Zeiss, Germany) over 20 min at a speed of one image every 10 s. Evaluation of attached and transmigrated cells was performed using ZEN Blue software (Zeiss, Germany).
 
-## Statistics
+### Statistics
 
 All statistical analyses were performed by using GaphPad Prism 9. In the graphs, markers represent data from individual animals and lines represent means of all mice from the indicated genotype. Grubbs’ test was used to identify outliers. Comparison of two groups was performed by using Mann-Whitney test. For the comparison of more groups, one-way ANOVA including Dunnett’s multiple comparisons test or Kruskal-Wallis test including Dunn’s multiple comparisons test was used. Significance levels in each figure are indicated by symbols with *p≤0.05, **p<0.005, ***p<0.001, ****p<0.0001. Analysis of effect size and power were performed by G*Power 3.1.9.4 and collected in Supplementary file 4, table S4, effect size d convention (<0.5 = small, 0.5–0.8=medium, >0.8 = large effect) and effect size f convention (<0.25 = small, 0.25–0.4=medium, >0.4 = large effect).
 
 ## Results
 
-## Knockout of TNFR1 and TNFR2 does not significantly affect the numbers of blood T cell in STING ki mice
+### Knockout of TNFR1 and TNFR2 does not significantly affect the numbers of blood T cell in STING ki mice
 
 We established the STING ki;Tnfr1/2 -/- mouse line with the combination of the gain-of-function mutation of STING and nonfunctional TNFR1 and TNFR2 as double knockout (TNFR1/2). In addition, we generated two new mouse lines, STING ki;Tnfr1-/- (lacking TNFR1) and STING ki;Tnfr2-/- (lacking TNFR2). At the age of 10 weeks, mice were sacrificed and analyzed extensively in comparison to STING WT and STING ki mice (Figure 1—figure supplement 1 for STING WT and Figure 1 for STING ki). The genetic deletion of TNFR1, TNFR2 alone or together did not increase body weight in STING ki mice significantly (Figure 1A). Lack of TNFR1 resulted in elevation of blood CD4+ T cell and CD8+ T cell numbers in STING ki;Tnfr1-/- and STING ki;Tnfr1/2 -/- mice (Figure 1B–D, large effect size f, Supplementary file 4, table S4). The frequency of blood CD4+ naïve T cells (CD62Lhi, CD44low) was increased in STING ki;Tnfr1-/- and STING ki;Tnfr1/2-/- mice in comparison to STING ki mice (Figure 1E, large effect size f, Supplementary file 4, table S4). The absence of TNFR1 or TNFR2 had no protective effect on naïve CD8+ T cells (Figure 1F) and all effector T cell (CD62Llow, CD44hi) populations in the blood of all STING ki mice (Figure 1G and H). In addition, blood myeloid cell numbers were reduced between STING ki with or without TNFR knockout (Figure 1I and J, large effect size f, Supplementary file 4, table S4).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig1-v3.jpg)
+
+**Figure 1.:** (A) Normalized body weight of 10-week-old STING ki mice, compared to body weight data from strain C57BL/6NJ (#005304, Jackson Laboratory). (B) Representative FACS plots of blood CD4+ T cells and CD8+ T cells from STING ki mice on C57BL/6 (BL6) or Tnfr1/2-/- background. (C) Numbers of blood CD4+ T cells in STING ki mice of indicated genotype. (D) Numbers of blood CD8+ T cells in STING ki mice of indicated genotype. (E) Frequency of blood naïve (Tn) CD4+ T cell population in STING ki mice of indicated genotype. (F) Frequency of blood naïve (Tn) T cells of CD8+ T cell population in STING ki mice of indicated genotype. (G) Frequency of blood effector (Teff) CD4+ T cell population in STING ki mice of indicated genotypes. (H) Frequency of blood effector (Teff) CD8+ T cell population in STING ki mice of indicated genotypes. (I) Numbers of blood monocytes in STING ki mice of indicated genotypes. (J) Numbers of blood neutrophils in STING ki mice of indicated genotypes. Markers represent individual mice, bars represent mean of n=7–8 mice per group pooled from nine independent preparations analyzed by Kruskal-Wallis test including Dunn’s multiple comparisons test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Normalized body weight of 10-week-old STING WT mice, compared to body weight data from strain C57BL/6NJ (#005304, Jackson Laboratory). (B) Representative FACS plots of blood CD4+ T cells and CD8+ T cells from STING WT mice on C57BL/6 (BL6) or Tnfr1/2-/- background. (C) Numbers of blood CD4+ T cells in STING WT mice of indicated genotype. (D) Numbers of blood CD8+ T cells in STING WT mice of indicated genotype. (E) Frequency of blood naïve (Tn) CD4+ T cell population in STING WT mice of indicated genotype. (F) Frequency of blood naïve (Tn) T cells of CD8+ T cell population in STING WT mice of indicated genotype. (G) Frequency of blood effector (Teff) CD4+ T cell population in STING WT mice of indicated genotypes. (H) Frequency of blood effector (Teff) CD8+ T cell population in STING WT mice of indicated genotypes. The absence of TNFR1/2 led to significant increase of effector CD8+ T cell number in STING WT mice. (I) Numbers of blood monocytes in STING WT mice of indicated genotypes. (J) Numbers of blood neutrophils in STING WT mice of indicated genotypes. Markers represent individual mice, bars represent mean of n=7–8 mice per group pooled from nine independent preparations analyzed by Kruskal-Wallis test including Dunn’s multiple comparisons test.
+
 Parallel characterization of these parameters in all STING WT mice (Figure 1—figure supplement 1A–J) showed no differences with exception of significantly more CD8+ T effector cells in the blood of TNFR1/2 ko mice (Figure 1—figure supplement 1H).
 
-## Lack of TNFRs partially rescues thymus and spleen pathology in STING ki mice
+### Lack of TNFRs partially rescues thymus and spleen pathology in STING ki mice
 
 The thymus undergoes massive pathological modifications in murine SAVI disease. As previously shown, the numbers of thymocytes were significantly reduced in STING ki mice. Likewise, various inflammatory signaling pathways, detected by gene expression analysis of Sting1, Cxcl10, and Tnf, were upregulated. Finally, these inflammatory processes led to significant functional limitations of T cell maturation in the thymus of STING ki mice (Siedel et al., 2020).
 
 In order to study thymus and spleen pathology here, TNFR knockout mice were sacrificed and analyzed in comparison to respective STING WT and STING ki mice (Figure 2—figure supplement 1 for STING WT and Figure 2 for STING ki) at the age of 10 weeks.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig2-v3.jpg)
+
+**Figure 2.:** (A) Cellular count of all isolated cells per thymus in STING ki mice of indicated genotype. (B) Numbers of DN, (C) DP, (D) SP CD4+, and (E) SP CD8+ thymocytes per thymus in STING ki mice of indicated genotype. (F) Relative gene expression of Cxcl10, (G) Sting1, (H) Tnf, and (I) Il1b in thymus tissue from STING ki mice of indicated genotype. (J) Cellular count of all isolated cells per spleen in STING ki mice of indicated genotype. (K) Number of splenic CD4+ T cells, (L) splenic CD8+ T cells, (M) splenic monocytes, and (N) splenic neutrophils in STING ki mice of indicated genotypes. Markers represent individual mice, bars represent mean of n=7–8 mice per group pooled from nine independent preparations analyzed by Kruskal-Wallis test including Dunn’s multiple comparisons test. *p<0.05, **p<0.005, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cellular count of all isolated cells per thymus in STING WT mice of indicated genotype. (B) Numbers of DN, the loss of TNFR2 function in STING WT mice resulted in a reduction of DN cell number, (C) DP, (D) SP CD4+, and (E) SP CD8+ thymocytes per thymus in STING WT mice of indicated genotype. (F) Relative gene expression of Cxcl10, (G) Sting1, (H) Tnf, and (I) Il1b in thymus tissue from STING WT mice of indicated genotype. (J) Cellular count of all isolated cells per spleen in STING WT mice of indicated genotypes. (K) Number of splenic CD4+ T cells, (L) splenic CD8+ T cells, (M) splenic monocytes, and (N) splenic neutrophils in STING WT mice of indicated genotypes. Markers represent individual mice, bars represent mean of n=7–8 mice per group pooled from nine independent preparations analyzed by Kruskal-Wallis test including Dunn’s multiple comparisons test. *p<0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images of blue stained popliteal lymph nodes (white arrow) and (B) iliac lymph nodes (white arrow) of STING WT and STING ki mice with indicated genotype.
 
 Knockout of TNFR1, 2 or double knockout of 1 and 2 (1/2) was first studied in comparison to STING WT;BL6 mice. As shown in Figure 2—figure supplement 1, knockout of TNFR signaling resulted in unaltered thymic cellular content (Figure 2—figure supplement 1A). Double negative cells were slightly reduced by TNFR2 knockout (Figure 2—figure supplement 1B) while DP cells, SP CD4+ and SP CD8+ cells were unchanged (Figure 2—figure supplement 1C–E). Transcription of Cxcl10, Sting1, and TNF was unaltered (Figure 2—figure supplement 1F–H). However, transcription of Il1b was elevated in TNFR1 and TNFR2 knockout mice (Figure 2—figure supplement 1I), albeit unaltered in TNFR1/2 knockout mice in comparison to STING WT;BL6. The total splenic cell content was not altered in TNFR1 and TNFR2 knockout mice, respectively (Figure 2—figure supplement 1J) and the numbers of CD4+ and CD8+ T cells were reduced in the spleens of TNFR1/2 knockout mice (Figure 2—figure supplement 1K and L). Numbers of mononuclear cells did not vary between these genotypes (Figure 2—figure supplement 1M and N). These observations are in accordance with previously published data (Erickson et al., 1994; Peschon et al., 1998; Pfeffer et al., 1993).
 
@@ -118,17 +138,17 @@ Interestingly, disruption of TNFR signaling resulted in lower transcription of v
 
 In addition, absence of both TNFRs together resulted in an attenuated severity of splenomegaly (Figure 2J). The functional loss of TNFR1 or TNFR2 alone had no impact on the manifestation of splenomegaly in STING ki mice. We observed a decrease in splenic CD4+ T cell numbers in STING ki mice lacking TNFR2 (Figure 2K). Numbers of splenic CD4+ and CD8+ T cells were similar in STING ki;Tnfr1-/- and STING ki;Tnfr1/2-/- mice (Figure 2K and L). Furthermore, the spleens contained significantly fewer myeloid cells (monocytes and neutrophils) in STING ki;Tnfr1/2-/- mice compared to STING ki;BL6 mice (Figure 2M and N). Taken together, constitutive activation of STING in STING ki mice severely affected SP CD4+ and SP CD8+ T cells in the thymus. The content of CD8+ T cells in spleens of STING ki mice was independent of TNFR signaling. However, the numbers of CD4+ T cells in STING ki;Tnfr2-/- mice were dependent on TNFR2 signaling and the presence of myeloid cells in the spleen of STING ki mice depended on combined signaling of TNFR1 and TNFR2.
 
-## Lack of TNFRs does not restore the formation of lymph nodes in STING ki mice
+### Lack of TNFRs does not restore the formation of lymph nodes in STING ki mice
 
 Constitutive activation of STING N153S in mice led to blockade of lymph node development (Bennion et al., 2020). After dye injection, we detected stained popliteal and iliac lymph nodes only in STING WT mice, not in STING ki mice. Deletion of TNFR1 or/and TNFR2 had no influence on lymph node development in STING ki mice (Figure 2—figure supplement 2A and B).
 
-## Neuroinflammation and neurodegeneration in dependency of TNFR1/2 signaling
+### Neuroinflammation and neurodegeneration in dependency of TNFR1/2 signaling
 
 The extent of inflammation in mouse brain resulting from constitutive activation of STING N153S was reported by quantifying the density of Iba1-positive microglia (Figure 3A). Consistent with our previous findings (Szego et al., 2022), the density of Iba1-positive microglia in the substantia nigra was higher in STING ki;BL6 mice than in STING WT mice (Figure 3B). TNFR deficiency did not affect neuroinflammation because there was no significant difference between the density of Iba1-positive microglia between STING ki;BL6 mice and STING ki;Tnfr1/2-/- mice (Figure 3B). This suggests that the TNF pathway is not required for STING-induced microglia activation in the substantia nigra.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig3-v3.jpg)
 
-**Figure 3.:** substantia nigra of STING ki mice.(A) Representative images of TH-positive dopaminergic neurons, Iba1-positive microglia, and GFAP-positive astrocytes in the substantia nigra pars compacta (SNc, encircled area) of indicated genotypes. Scale bar represents 200 µm. (B–D) Number of Iba1-positive (B), GFAP-positive (C), TH-positive (D) cells in the SNc of the indicated genotypes expressed relative to the number of TH-positive neurons in the SNc of the corresponding mouse line without STING ki. Markers represent individual mice. Bars represent mean of all n=5–6 per group pooled from two independent preparations. Analysis by Mann-Whitney test. *p<0.05.
+**Figure 3.:** (A) Representative images of TH-positive dopaminergic neurons, Iba1-positive microglia, and GFAP-positive astrocytes in the substantia nigra pars compacta (SNc, encircled area) of indicated genotypes. Scale bar represents 200 µm. (B–D) Number of Iba1-positive (B), GFAP-positive (C), TH-positive (D) cells in the SNc of the indicated genotypes expressed relative to the number of TH-positive neurons in the SNc of the corresponding mouse line without STING ki. Markers represent individual mice. Bars represent mean of all n=5–6 per group pooled from two independent preparations. Analysis by Mann-Whitney test. *p<0.05.
 
 In addition, we measured the extent of STING-induced astrogliosis by quantifying the density of GFAP-positive cells (Figure 3A). Consistent with our previous findings, the density of GFAP-positive astroglia was higher in STING ki than in STING WT mice (Figure 3C). Yet, as for microglia, there was no significant difference between the density of GFAP-positive astroglia between STING ki;BL6 mice and STING ki;Tnfr1/2-/- mice (Figure 3C), suggesting that the TNF pathway is not required for STING-induced astrogliosis in the substantia nigra.
 
@@ -136,15 +156,23 @@ Finally, we measured the extent of STING-induced neurodegeneration by quantifyin
 
 Hence, there is a discrepancy between STING-induced effects on glial cells as opposed to STING-induced effects on neurons. The dependence of STING-induced neurodegeneration but not glial response on TNFR1/2 suggests that the STING-induced degeneration of dopaminergic neurons is not a direct consequence of microglia or astroglia activation. This is consistent with the emerging concept of a neuron-specific inflammatory response (Welikovitch et al., 2020).
 
-## TNFR1 signaling drives SAVI-associated lung inflammation in STING ki mice
+### TNFR1 signaling drives SAVI-associated lung inflammation in STING ki mice
 
 STING N153S gain-of-function mutation induces lethal inflammatory lung disease, a hallmark of SAVI disease. We previously demonstrated that interstitial lung disease developed largely independent of the IFN I signaling, and occurs in the absence of cGAS, IRF3, IRF7, and of IFNAR1 (Luksch et al., 2019).
 
 Inactivation of TNFR2 in STING ki mice only mildly reduced the transcription of SAVI-associated cytokines in lung tissue, while lack of TNFR1 led to a much stronger reduction of interferon-driven Cxcl10, Sting1, and NF-κB-driven Tnf or Il1b transcripts. Strikingly, co-deletion of both, Tnfr1/Tnfr2 genes, completely rescued the inflammatory transcriptional signature in lungs of STING ki mice compared to STING WT mice (Figure 4A–D; Figure 4—figure supplement 1A–D). Interestingly, on the protein level, only loss of TNFR1 or TNFR1/2 signaling reduced the amounts of produced CCL2 and IL-6 in lungs of STING ki mice, while loss of TNFR2 signaling alone had no effect (Figure 4E and F; Figure 4—figure supplement 1E and F). However, this effect appeared to be tissue-specific, as we failed to detect a reduction of systemic proinflammatory cytokines in serum (Figure 4—figure supplement 1H–O).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig4-v3.jpg)
+
+**Figure 4.:** (A) Gene expression of Cxcl10, (B) Sting1, (C) Tnf, and (D) Il1b in lung tissue from STING ki mice of indicated genotype. (E) Content of CCL2 and (F) IL-6 in lung tissue extracts from STING ki mice of indicated genotype. (G) Representative H/E lung sections of 10-week-old STING WT and STING ki mice of indicated genotype. (H) Quantification of lung disease severity from STING ki mice of indicated genotypes, data were analyzed by one-way ANOVA including Dunnett’s multiple comparisons test. Markers represent individual mice, bars represent mean of n=7–8 mice per group pooled from nine independent preparations analyzed by Kruskal-Wallis test including Dunn’s multiple comparisons test. *p<0.05, **p<0.005, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101350/elife-101350-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gene expression of Cxcl10, (B) Sting1, (C) Tnf, and (D) Il1b in lung tissue from STING WT mice of indicated genotype. (E) Content of CCL2 and (F) IL-6 in lung tissue extracts from STING WT mice of indicated genotype. (G) Quantification of lung disease severity from STING WT mice of indicated genotype. (H) Content of serum CXCL9 in STING ki mice, (I) serum CXCL9 in STING WT mice, (J) serum CXCL10 in STING ki mice, (K) serum CXCL10 in STING WT mice, (L) serum CCL2 in STING ki mice, (M) serum CCL2 in STING WT mice, (N) serum IL-6 in STING ki mice, and (O) serum IL-6 in STING WT mice of indicated genotype. Markers represent individual mice, bars represent mean of n=7–8 mice per group pooled from nine independent preparations analyzed by Kruskal-Wallis test including Dunn’s multiple comparison test.
+
 In our STING ki mice, carrying the N153S mutation, approximately 14% of the lung area were infiltrated by immune cells (Figure 4G and H; Figure 4—figure supplement 1G). Development of interstitial lung disease in STING ki mice was almost completely prevented by inactivation of TNFR1 (infiltration<0.5% of lung area) but not of TNFR2. Likewise, STING ki;Tnfr1/2-/- mice were completely devoid of lung inflammation. Collectively, our data suggest that the secretion of inflammatory cytokines and subsequent inflammation of lungs in STING ki mice are driven by aberrant signaling through TNFR1.
 
-## Lack of TNFR1/2 abrogates pathologic phenotype in primary lung endothelial cells
+### Lack of TNFR1/2 abrogates pathologic phenotype in primary lung endothelial cells
 
 Lung inflammation in STING ki mice manifested around pulmonary blood vessels. We hypothesized that lung endothelial cells could be involved in the development of interstitial lung disease. To address this, we isolated primary murine lung endothelial cells from STING WT, STING ki, and STING WT;Tnfr1/2-/- and STING ki;Tnfr1/2-/- mice and subjected them to bulk RNAseq. Analysis of the primary lung endothelial transcriptomes revealed a decreased transcription of several proinflammatory cytokines (e.g. Tnf, Il1b) and chemokines (e.g. Cxcl1, Cxcl2, Cxcl9, Cxcl10, Ccl2, Ccl3, and Ccl4) in STING ki mice lacking TNFR1/2 compared to STING ki mice (Figure 5A–C). Interestingly, chemokines CCL2, CCL3, and CCL4 are essential for the attachment of leukocytes and subsequent migration across the endothelial barrier (Roblek et al., 2019; Stamatovic et al., 2003). Furthermore, we observed a strongly reduced expression of several cell adhesions molecules (Jam3, Itgam, Vcam1, Glycam1, Madcam1, Ncam2, and Icam1) and matrix metalloproteinase 9 (Mmp9), all of which are essential for transmigration of leukocytes. This suggests that loss of complete TNFR signaling reverts the inflammatory state of primary lung endothelial cells in STING ki mice, including their transcriptional transmigration signature.
 

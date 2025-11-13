@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Many animals exhibit an astonishing ability to form groups of large numbers of individuals. The dynamic properties of such groups have been the subject of intensive investigation. The actual grouping processes and underlying neural mechanisms, however, remain elusive. Here, we established a social clustering paradigm in Drosophila to investigate the principles governing social group formation. Fruit flies spontaneously assembled into a stable cluster mimicking a distributed network. Social clustering was exhibited as a highly dynamic process including all individuals, which participated in stochastic pair-wise encounters mediated by appendage touches. Depriving sensory inputs resulted in abnormal encounter responses and a high failure rate of cluster formation. Furthermore, the social distance of the emergent network was regulated by ppk -specific neurons, which were activated by contact-dependent social grouping. Taken together, these findings revealed the development of an orderly social structure from initially unorganised individuals via collective actions.
+Many animals exhibit an astonishing ability to form groups of large numbers of individuals. The dynamic properties of such groups have been the subject of intensive investigation. The actual grouping processes and underlying neural mechanisms, however, remain elusive. Here, we established a social clustering paradigm in Drosophila to investigate the principles governing social group formation. Fruit flies spontaneously assembled into a stable cluster mimicking a distributed network. Social clustering was exhibited as a highly dynamic process including all individuals, which participated in stochastic pair-wise encounters mediated by appendage touches. Depriving sensory inputs resulted in abnormal encounter responses and a high failure rate of cluster formation. Furthermore, the social distance of the emergent network was regulated by ppk-specific neurons, which were activated by contact-dependent social grouping. Taken together, these findings revealed the development of an orderly social structure from initially unorganised individuals via collective actions.
 
 ## Introduction
 
@@ -39,11 +39,43 @@ In the current study, we established a paradigm for investigating connections be
 
 ## Results
 
-## Spontaneous formation of social clusters
+### Spontaneous formation of social clusters
 
 Although previous work has focused on social spacing (Simon et al., 2012; Burg et al., 2013) and modelling social interaction networks (SINs) (Schneider et al., 2012) in Drosophila, the mechanisms by which social clusters are formed remain unclear. To clarify this question, we developed an improved behavioural paradigm enabling the distribution of flies in a two-dimensional space to be determined using a programmable 8-megapixel digital camera (Figure 1—figure supplement 1A). In our set-up, a group of 50 male or female flies was allowed to walk freely on the surface of an agar pad (1% agar) in a horizontally placed circular arena (diameter: 90 mm) without external stimuli. The agar pad provided a moist environment for prolonged observation, and a soft substrate for flies to walk on, thus constituting a controlled but relatively naturalistic setting associated with minimal stress or disturbance to the flies (Figure 1—figure supplement 1A).
 
 After a short exploration period, a group of wild-type flies (Canton-S, CS) spontaneously aggregated toward a small region of the arena (Figure 1A–C; Figure 1—figure supplement 1B,C; Figure 1—video 1). Each fly was fitted to an ellipse to obtain its geometric parameters including length, width, orientation and centre of mass (Figure 1B,C). In subsequent quantifications, the location of a fly was represented by its centre of mass, and the distance between the centres of two flies was designated the inter-fly distance. To quantify the spatial distribution pattern of these flies, we first determined the accumulative distribution of all surrounding flies of each individual (designated as the reference fly) of one arena by aligning the centres of these individuals to the origin point and superimposing the surrounding flies onto a plane (Figure 1—video 2). The superimposed patterns of all arenas with the same experimental conditions were then merged again (Figure 1D; Figure 1—figure supplement 2A–D). In distribution plots of the number of merged surrounding flies over distances, we found more flies in proximity to the origin than the outside, suggesting a strong tendency for aggression (Figure 1D,E; Figure 1—figure supplement 2A–D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative images show the distribution of a group of Canton-S (CS) male flies at the indicated time points. Figure 1—video 1. (B) Enlarged view showing the distribution of six flies in the last image of (A). (C) Representation of flies in (B) by their centres of body mass. (D) Image showing the merged distribution of all surrounding flies in 31 arenas with female CS flies. The origin was the aligned centres of each reference fly. Figure 1—video 2. (E) Quantification of distributions of merged surrounding flies at a distance from the centre. Dark red: CS female; dark blue: CS male; light red: random female (RF); light blue: random male (RM). N = 31, 35, 44 arenas. The insert plot on the left shows an enlarged view of the region near zero. (F) Images showing the enlarged views of the merged distribution of surrounding flies near the origin in wild-type female flies (up) and random female flies (bottom). N = 10 arenas. (G) Distributions of the area-adjusted number of surrounding flies over distance in female (red) and random female flies (grey). The bold lines indicate the average values over all arenas of the same type of fly, with the shaded areas indicate values within one s.e.m (N = 31, 40). (H) Distributions of the density of surrounding flies over distance in female and random female flies. The bold lines indicate the averaged values over all arenas for the same types of fly, with the shaded areas indicate values within one standard deviation (N = 31, 40). (I) Illustration of the measurements of all possible distances from one fly (#40) to others in the arena. Red dots represent individual flies, and numbers indicate their IDs. (J) Matrix of inter-fly distances between all 50 flies in the fly group in (I). The colour bar indicates the distance values. Orange dots marked the positions of shortest distance along each column, resulting in the NND and corresponding nearest neighbour of each fly on the bottom. All flies were females. (K) Circular representation of distance relationship between all 50 flies in (J). The intensities of the blue arcs connecting two flies correspond to the inverse distances between them. (L) Distributions of sorted NNDs of female and random female flies. Bold lines indicate the averaged distribution curve of sorted NNDs over all arenas, with the shaded areas indicate values within one standard deviation. N = 31, 40 arenas. (M) Distribution of the averaged NNDs of all flies in an arena. The flies were female (red), male (blue) and random female flies (grey), in 31, 35 and 40 arenas, respectively. (N) Illustration the first (left) and up to eighth (right) nearest neighbours of the designated reference fly (#27) in a group. Numbers indicate the fly IDs of the identified near neighbours. (O) Distribution of the mean multi-neighbour distances over the number of near neighbours. First the averaged n-near neighbour distance of all flies in an arena was calculated, then the distance values were averaged over all arenas (bold lines). The shaded areas indicate values within one standard deviation. Red indicates female flies and grey indicates random female flies. N = 31 and 40 arenas. (P) Histogram of flies with NNDs in the indicated ranges of distance, with bin 1 = 0–5 mm, bin 2 = 5–10 mm, and bin 3 = 10–15 mm. The types of flies were female (red), male (blue) and random female (grey). N = 31, 35 and 40 arenas, respectively. (Q) Social Space Index was calculated from (P) by subtracting the value of bin2 from that of bin1 in each arena. N = 31, 35, 40 arenas for female (red), male (blue) and random female (grey), respectively. In a box and whisker plot, the scatter points show all data points, the box includes the 25th to 75th percentile, the whiskers mark minimum and maximum, and the middle line indicates the median of the data set. ***: p<0.001 (one-way ANOVA followed with Tukey’s post hoc test for multiple comparisons).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the setup for the social cluster paradigm. 50 flies in the circular arena were illuminated by a LED array from bottom and their distributions were recorded by a camera or camcorder. Light blue indicates the agarose pad on the bottom of the arena. (B) A representative image showing a cluster of male wild-type flies at 60 min. (C) Representative sequences of images showing distribution patterns of CS female (top) and male (bottom) flies at the indicated time points. At time zero, briefly anaesthetised flies were transferred to the centre regions of the arenas.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) An example of the distribution of superimposed surrounding flies from one arena with wild-type female flies. The plot was generated by superimposing the all surrounding flies for all flies in that arena, with each fly serving as the reference fly in turn. The origin point (red-cross) is the aligned body centre of the reference flies. The thin circle marks a distance of 90 mm from the origin. (B) A plot combining the superimposed surrounding flies of 10 arenas with wild-type female flies. (C, D) Heat map representations of the merged distributions of surrounding flies of females (C, 31 arenas) and males (D, 35 arenas). The colour bar indicates the number of flies. Data in (C) were replicated from Figure 1D. (E, F) Plots presenting the merged distributions of surrounding flies from a single arena (E) and 10 arenas (F) in random females. (G, H) Heat map representations of the merged distribution of surrounding flies of random females (G, 40 arenas) and random males (H, 41 arenas). (I) Plot showing the distribution of superimposed surrounding flies of a cluster from an arena of wild-type females. (J) Plots showing the merged distributions of surrounding flies of the same clusters from 31 arenas of wild-type females. For each arena, both reference flies and surrounding flies were from the same clusters. (K) A heat map image representation of the merged distribution of surrounding flies within clusters. Data were clustered female flies from 31 arenas. (L) Quantification of the distributions of merged surrounding flies over a distance from the origin in female (dark red), random female (pink), male (dark blue) and random male (light blue) flies. N = 31, 40, 35, 41 arenas, respectively. For (I)-(L), the criterial set for clustering is 5 (see Figure 2 for more).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic for making adjustments to the area when calculating the number of surrounding flies and the density of surrounding flies for a reference fly. The red-cross represents the reference fly, blue dots indicate its surrounding flies, and the green circle indicates the edge of the arena. Thin concentric circles indicate various distances from the reference fly. The bold red circle indicates the distance after which the area-correction was necessary. The red area of the intersection of the green and a thin-lined circle is the actual area (Areain) allowed for the flies to occur, whereas the grey area outside of the intersection of the green and the thin-lined circle (Areaout) would not contain flies, and would therefore need to be compensated. Cumulative distribution function of area-adjusted numbers of surrounding flies vs. a designated distance (from a reference fly)=number of surrounding flies (with that distance)*(Areaout + Areain)/Areain. From the cumulative distribution functions, the probability density functions in (B) and (C) were derived. Density of surrounding flies (within a designated distance from a reference fly)=number of surrounding flies (within that distance)/Areain. (B) Distribution of the area-adjusted number of surrounding flies over distance. Each thin line represents the average over all flies (each serving as the reference fly once) in one arena, the bold lines represent the average over all arenas of a type of flies. Red and grey indicate female and random flies; the number of arenas was 31 and 40, respectively. (C) Averaged distributions of the area-adjusted number of surrounding flies from all arenas of each type of flies, female (red), male (blue) and random female (grey); the number of arenas was 31, 35, and 40, respectively. (D) Distribution of the density of surrounding flies over distance. Each thin line represents the average of all flies (each serving as the reference fly once) in one arena. The bold lines represent the average of all arenas of the designated type of flies: female (red), male (blue) and random female (grey). The number of arenas was 31 and 40 for females and random females, respectively. The horizontal green line near 0.01 indicates the theoretical limit of density when distance reached the diameter of the arena. (E) Averaged distribution of the density of surrounding flies from all arenas, for each type of fly; female (pink), male (blue) and random female (grey); the number of arenas was 31, 35, and 40, respectively. Data in (B–C) were replicated in Figure 1G–H.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Example plot showing the inter-fly connections from a reference fly (ID: 26) to all other flies in an arena of wild-type females (CS). Red dots represent individual flies, the number near each dot indicates the fly ID, and grey lines represent connections. The grey circle indicates the edge of the arena. (B) A matrix showing distances between all possible pairs from the group in (A). The colour bar indicates the distance values. (C) Circular visualisation of inter-fly connections between all flies in (A). The numbers outside indicate fly IDs. The colour of each arc connecting two flies is correlated to the inverse distance between them; therefore, a darker colour indicates a shorter distance (and a stronger connection). (D) Example plot showing the inter-fly connections from a reference fly (ID: 28) to all other flies in an arena of random female flies. The colours and labels are the same as in (A). (E) Matrix showing distances between all possible pairs from the group in (D). (F) Circular visualisation of inter-fly connections between all flies in (D). The colours and labels are the same as in (C). Data in (A–C) were replicated in Figure 1I–K.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Representative plot showing all of the nearest neighbours in an arena of females. The red dots mark all flies, the blue circle represents a reference fly, the green circle indicates its nearest neighbour, the thick red line indicates the shortest among the distances from the reference fly to its surrounding flies (thin red lines). The bold blue lines connect all pairs of nearest neighbours. (B) Arrangement of all NNDs in (A) from small to large. Connecting the top red dots formed a curve reflecting distribution of NNDs within this arena. The two numbers under the vertical blue lines indicate the fly IDs of each pair. (C) The distribution of sorted NNDs in female (red) and random female (grey). Each thin line represents the distribution curve of sorted NNDs from one arena, the bold lines represent the average NNDs of all arenas (N = 31 and 40). (D) Averaged distributions of sorted NNDs in female (red), male (blue) and random female (grey) (N = 31, 35, and 40 respectively). (E) Comparing the averaged minimal NNDs. Data represent the distribution of the minimal NND of each arena in females (red), males (blue) and random females (grey) (N = 31, 35, and 40, respectively). Data in (C) were replicated in Figure 1O. In a box and whisker plot, the scatter points show all data points, the box includes 25th to 75th percentiles, and the middle line indicates the median of the data set. ***: p<0.001 (one-way ANOVA followed by Tukey’s post hoc test for multiple comparisons).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A–D) Plots of a group of flies from an arena showing examples to calculate the distances from a reference fly (blue dot, ID: 27) up to its 1st (A), 2nd (B), 5th (C) and 8th (D) nearest neighbours, referred as 1-, 2-, 5-, and 8-th near neighbour distances. For this arena, the N-th near neighbour distance was a collection of the averaged values over specific number of near neighbours of each reference flies (the neighbour count, N = 1–8). (E–H) The distributions of multi-neighbour distances in wild-type females. The thin lines represent the individual arenas and the bold lines represent averaged values over all arenas for each neighbour count: 1 (E), 2 (F), 5 (G) and 8 (H). (I–P) Comparing the distributions of averaged multi-neighbour distances in female (red), male (blue) and random females (grey). (Q–S) Comparing distributions of averaged multi-neighbour distances for different neighbour counts. The shades of colours from dark to light correspond to the neighbour count from 1 to 8. The coloured lines indicate female (red, (Q), male (blue, (R) and random female (grey, (S). (T) A plot showing the tendency of averaged multi-neighbour distances as the neighbour counts increased. The coloured lines indicate females (red), males (blue) and random females (grey). In this figure, the number of arenas was N = 31, 35, and 40 for females, males and random females, respectively. The values in (E)-(S) were the numbers of relevant events.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A–D) Histograms of the distance to the 1st nearest neighbours (same as NND) in female (A, red), male (B, blue), random females (C, grey) and the average of them (D). (A) and (D) were replicated of Figure 1—figure supplement 6E and I. In (A–C), the thin lines show histograms of all NNDs in each arena, while thick lines show averaged histograms of NNDs over all arenas of each types of fly. The coloured lines in (D) are replicas of the thick lines in (A–C). N = 31, 35, and 40 arenas. (E) Changes of averaged NNDs over the period of 32–120 min in female (red), male (blue), random flies (grey) (N = 21, 22, 24 arenas). Error bars indicate s.e.m.
 
 We next addressed whether such aggregation arose just by chance when individuals walked independently in the arena. We compared the spatial distributions of these social flies with that of ‘random flies’, which were presumed to act independently, with no social interactions between them (see Materials and methods). As shown in Figure 1E and Figure 1—figure supplement 2E-H, random flies exhibited different spatial distributions of merged surrounding flies, with more flies dispersed away from the origin, suggesting a dependency between individuals of wild-type groups to form spatial patterns, which was absent in a random distribution. Closely examining the distributions near the origin revealed that wild-type flies maintained a longer distance from their nearest neighbours than random flies (Figure 1F). Thus, wild-type flies maintained a larger impermissible zone regarding social space.
 
@@ -59,9 +91,49 @@ We employed the ‘Social Space Index’ (SSI), based on the NND, to quantify di
 
 Our comparison between the empirical results of wild-type flies with simulations of random flies suggested that self-organised clusters of wild-type flies would not emerge without interactions between individuals.
 
-## Social clusters in fruit flies are well-structured networks
+### Social clusters in fruit flies are well-structured networks
 
 To elucidate the local relationships of clustered flies, we designed a six-step procedure to define a cluster and further quantify the local regularity of the resultant cluster (Figure 2A; Figure 2—video 1). Our algorithm used two criteria to build a cluster: area threshold and distance threshold. The algorithm first identified and grouped flies with residing areas smaller than an area threshold into a basic cluster, then repeatedly incorporated nearby flies within a threshold distance (Figure 2A). Due to the inherent uncertainty of determining whether an object belongs to a cluster, we evaluated five criterial sets for clustering (CSC), with stringency from high to low (Figure 2B, see Materials and methods). Higher stringency limited the number of qualified flies, and resulted in smaller clusters or no clusters at all (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-v2.jpg)
+
+**Figure 2.:** (A) A six-step procedure to automatically reconstruct a cluster from a group of flies in two dimensional space. Step 1: Using digital image processing methods to extract the pixels of each fly from a raw image and calculating the geometric properties of the pixel set of that fly. Step 2: Dividing the area between all flies and the edge of arena. The divided area surrounding each fly is designated as its residing area. Step 3: Establishing the basic cluster by combining flies whose residing areas are smaller than an area threshold. Each red ellipse indicates a fly incorporated by the cluster; the corresponding pink shaded area indicates its residing area. Step 4: Repeatedly expanding the cluster to include surrounding flies (green) within a threshold distance. The leftover fly was coloured grey. Step 5: In the resultant cluster, identifying the insiders (red) and outsiders (blue). Step 6: Quantifying the local regularity of the cluster. Figure 2—video 1. (B) Showing the area threshold and distance threshold (as a set) to reconstruct clusters in (A). Five criterial settings for clustering (CSC), with stringency from high to low, were defined and evaluated in the following panels. (C) Comparing the percentages of arenas formed a cluster under the CSC from 1 to 5. N = 31, 34, 40 arenas for female, male and random female flies, respectively. (D) Average percentage of clustered flies (CSC = 2). (D) Average percentage of clustered flies (of total flies in an arena) (CSC = 2). (E) Average percentage of insiders of total flies (CSC = 2). (F) Average number of connections from an insider to its contiguous neighbours (CSC = 2). (G) Average distance of an insider to its contiguous neighbours (CSC = 2). N = 31, 34, 40 arenas in (C–E) and N = 31, 34, five arenas in (F–G) for female, male and random female flies, respectively. Data in (D, E) were part of Figure 2—figure supplement 2A and C; Data in (F,G) were part of Figure 2—figure supplement 3F and G. In a box and whisker plot, scatter points show all data points, the box includes 25th to 75th percentile, the whiskers mark minimum and maximum, and the middle line indicates the median of the data set. ***: p<0.001 (one-way ANOVA followed with Tukey’s post hoc test for multiple comparisons).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Examples of clusters formed by wild-type females (A) and random females (B and C). In a single arena, more flies were assigned into the cluster as the stringency decreased (from left to right). The CSC for building each cluster was indicated at the bottom. Red dots: cluster insiders; blue dots: cluster outsiders; grey dots: flies not associating with a cluster; red lines: connections of insiders. (A) Patterns of changing clusters in wild-type females. (B) Patterns of changing clusters in random females. This arena exhibited cluster formation across all clustering criteria (CSC = 1 ~ 5), among all arenas with random flies. (C) Patterns of changing clusters in random females. This arena exhibited the highest number of flies joining clusters at the relaxed condition (CSC = 5), among all arenas with random flies.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Comparing the CT values (percent of clustered flies in an arena) evaluated with different settings of criteria. Thin lines indicate the CT values of each arena; the thick lines show the averaged CT values of all arenas. Red: female, N = 31 arenas; grey: random females, N = 40 arenas, respectively. (B) Averaged percentage of clustered flies in females (red, N = 31 arenas), males (blue, N = 35 arenas), and random females (N = 40 arenas). Data for females and random females were replicated from (A). (C) Comparison of IT values (the percentage of insiders within an arena) evaluated with different sets of criteria. Thin lines indicate the values of each arena, the thick lines show the average IT values of all arenas. Red: female, N = 31 arenas; grey: random females, N = 40. (D) Averaged percentage of insiders for different types of fly: female (red, N = 31 arenas), male (blue, N = 35 arenas), and random female (grey, N = 40 arenas). Data for females and random females were replicated from (C). (E) Comparison of IC values (the percentage of insiders of the clustered flies in an arena) evaluated with different sets of criteria. Thin lines indicate the values of each arena; the thick lines show the average IT values of all arenas. The number of arenas for CSC from 1 to 5 were: 29, 30, 30, 30 and 30 in female (red), and 1, 5, 22, 31 and 40 in random females (grey), respectively. In random flies, quantification of the first two data points of the averaged IC values was tenuous, because only a few arenas containing identified clusters under high stringency (when CSC was 1 and 2, the number of clusters was 1 and 5, respectively). (F) Averaged percentage of insiders of clustered flies, for different types of flies. The number of arenas in males for CSC from 1 to 5 were: 33, 34, 35, 35 and 35, respectively. Data for females and random females were replicated from (E).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Illustration of the residing areas of three cluster insiders. Each pink region including an insider was separated automatically with red lines, the area of which was designated as the residing (or inhabited) area of that fly. (B–D) Distributions of the averaged residing areas of insiders in females (B), males (C) and random females (D) evaluated with stringency for cluster reconstruction from high to low. The five shades of each colour from light to dark correspond to CSC from 1 to 5. The numbers of arenas were 29–31 (female) and 33–35 (male). For random females, the numbers of arenas were 1, 5, 22, 31 and 40 for CSC from 1 to 5, respectively. (E) Comparing the distributions of the averaged residing areas of insiders under different criterial settings. The number of arenas for each type of flies were the same as in (C–E). (F) Averaged number of connections of insiders with contiguous neighbours under clustering criterial settings from 2 to 5. The number of arenas were 31 in females (red), 34–35 in males (blue). In random female flies (grey), the number of arenas were 5, 22, 31 and 40 for CSC from 2 to 5, respectively. (G) Averaged distance between insiders with contiguous neighbours under cluster criterial settings from 1 to 5, in females (red), males (blue) and random females (grey) flies. The number of arenas for each type of fly was the same as in (B–D).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Example arenas showing the peripheral (grey) and inner (purple) flies. The flies were classified based on whether they bordered with the edge of arena. Left: an arena with wild-type females; right: an arena with random females. (B) Histogram of the standard deviations of the distances of contiguous neighbors (DCN) of all inner flies. The number of flies was: 883 (female, red), 1013 (male, blue), 911 (random female, light grey) and 917 (random males, grey). (C) Quantification of the variation of the distance of contiguous neighbors in subpopulations. In each arena, the standard deviations of DCN falling into an indicated range (within percentile of 0 ~ 50 th, 0 ~ 75 th or 25th ~ 75 th) were averaged to generate a data point representing the arena. The number of arenas was: 30 (female, red), 35 (male, blue), 40 (random female, light grey) and 41 (random males, grey).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Representative images showing the distribution of flies in arenas of different diameters. The number of tested flies was 50. (B) SSIs of flies tested in the arenas with the indicated diameter (N = 13–20 arenas). (C) Nearest neighbour distance (of various numbers of wild-type flies in arenas of 90 mm diameter (N = 4–8 arenas). All experimental conditions are indicated with the plots. In a box and whisker plot, scatter points show all data points, the whiskers mark minimum and maximum, and the middle line indicates median of the data set. Error bars in (C) show s.e.m. n.s. (p>0.05) indicates not significant (Student’s t-test for two-group comparisons, one-way ANOVA followed with Tukey’s post hoc test for multiple comparisons).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Example of spatial distribution of a group of 70 simulated random dots in an arena. The minimal allowed distance (D; i.e., hard-core distance) between random dots was 4 mm. Blue dots represent random dots, light blue circles marked the impermissible regions of random dots. The grey circle indicates the edge of the arena (diameter = 90 mm). For simplification, the random dots were allowed to stay close to the edge of arena, regardless of their hard-core distance. (B) Same as (A) except that the minimal allowed distance between random dots was 8 mm. (C, D) Examples of spatial distribution of 50 random dots with hard-core distances of 5 mm (C) and 10 mm (D). (E) Distributions of NND over the size of a group in an arena. Different colours indicate different minimal allowed distances between random dots. The thin lines indicate individual distributions; the bold lines indicate the averaged value for each group with the same hard-core distance (N = 20 arenas for each hard-core distance). (F) Averaged NNDs over group size for minimal allowed distances ranging from 0 mm to 10 mm (N = 20 arenas for each hard-core distance). (G) Comparison of the averaged NNDs over group size in females (red, N = 4–8 arenas), male (blue, N = 4–8 arenas) and random dots (grey, N = 20 arenas. Average NNDs of random dots were replicated from (E), and the values for the wild-type flies were replicated from Figure 2—figure supplement 5C. Different shades of grey indicate random dots with hard-core diameters of 0, 4, 7, and 10 mm. Error bars show s.e.m.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Distance functions of attractive and repulsive forces by individual flies. To simplify the comparison, the area under each curve was one for the distance range from −20 to 20 mm. The blue curve is an arbitrarily-selected attraction profile defined by a Gaussian function, Fa = a*EXP(−(distance-µ)^2/ (2*σ^2))/ (σ*sqrt(2*pi)), with µ = 0 mm, σ = 5 mm and a = 1.0001. The light blue curve is another arbitrarily-selected attraction profile (Fa = b/4, when distance ≤2 mm; Fa = b/distance2, when distance >2 mm; b = 0.5263 mm). The red curve is a repulsive force resembling a step function (Fr = 0.1, when distance <5 mm; Fr = 0, when distance ≥5 mm). (B) Illustration of the summation of the attractive and repulsive forces on a fly. The small circles represent three flies establishing a small cluster and the hexagrams represent the testing fly. Left: attractive forces (light blue arrows) and their combined effect (blue arrow) perceived by the testing fly. Middle: repulsive forces (orange red arrows) and their combined effect (red arrow) perceived by the testing fly. Right: the net force (purple arrow) perceived by the testing fly. (C) The distributions of net force within a field of a narrow stripe. The upper panel shows the net forces that are repulsive (red). The lower panel shows the net forces that are attractive (blue). The relative strength and direction of the force vector at each randomly-selected location are represented by an arrow. (D) Computing the net force along a horizontal line (y = 0) in (C) with varying strengths between attractive function, Fa (distance), and repulsive function, Fr (distance). The net force: F = Fa + C*Fr. Left: the force of repulsion (red curves) increases as C factor increases. Right: the net force (green curves) switches from repulsion (<0) to attraction (>0) after a critical distance, when the C factor is sufficiently large (C ≥ 2). A positive value of net force indicates attraction, whereas a negative value indicates repulsion. Blue curve: attractive force. (E) Part of a force field generated by a set of nine flies. At each illustrated location, the direction of force is depicted by an arrow, while the strength of force is colour-coded. Red arrows indicate repulsion while arrows of other colours indicate attraction. Owing to the high dynamic range of the dataset of attractive forces, the colours of attraction arrows represent the percentile ranges in this dataset, instead of the force values. In (B–E), all distances between nearby flies in a set are 5 mm. The attraction functions used were the Gaussian function in (A); the other attraction function shown in (A) also produced similar results. In (C–E), the small cluster contains a set of nine flies as shown in (E). The C factors are 10 and 2 for (C) and (E), respectively.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Social isolation adversely affected social clustering. ‘Group’ indicates flies raised together after eclosion; ‘isolation’ indicates newly hatched flies reared alone for 7 days before the behavioural test (N = 10–12). (B) SSI representing the aggregation tendency of CS flies with different ages. The flies were tested 3 days, 10 days and 30 days after eclosion. Older flies exhibited decreased social clustering. (N = 10–12). (C) Starved CS flies exhibited decreased SSIs. Female flies were starved for 12 or 24 hr (N = 8–20). (D) The circadian oscillation of the tendency to form social clusters in male and females (N = 6–15). All experimental conditions are indicated with the plots. In a box and whisker plot, scatter points show all data points, the box includes 25th to 75th percentiles, the whiskers mark minimum and maximum, and the middle line indicates the median of the data set. N indicates the number of arenas. Error bars indicate s.e.m. n.s. indicates non-significance (p>0.05); *: p<0.05, ***: p<0.001 (Student’s t-test).
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** (A) Representative images show body surfaces of untreated (top) and dusted (middle and bottom) flies. (B) Grooming performance of individual female flies during 2 min trials. Top: untreated wild-type flies (control); bottom: dusted wild-type flies. Various colours indicate individual flies, and the lengths of horizontal bars indicate the durations of individual grooming events. (C) Quantification of the duration of grooming events (N = 5). (D) Comparison of Social Space Index of dusted flies with that of untreated flies. SSI was obtained at 60 min of the trial. (N = 10). All experimental conditions are indicated with the plots. In a box and whisker plot, scatter points show all data points, the box includes the 25th to 75th percentiles, the whiskers mark the minimum and maximum, and the middle line indicates median of the data set. Error bars indicate s.e.m. ***: p<0.001 (Student’s t-test).
 
 With each set of criteria, clusters in all arenas were automatically identified, and the percentage of arenas with clusters was then calculated for three types of flies: male, female, and random female (Figure 2C). Furthermore, the percentage of the number of clustered flies, out of the total flies in an arena (designated as CT value), was calculated then averaged over all arenas. As shown in Figure 2—figure supplement 2A,B, starting with criterial set #3, random flies began to show substantial cluster contents. Overall, male and female wild-type flies exhibited similar tendencies of increasing cluster size as the criteria became less stringent. The CT values of random flies also increased, but were far smaller than those of wild-type flies (Figure 2—figure supplement 2B). The maximal difference between wild-type flies and random flies occurred when using criterial set #2, by which only a smaller number of random flies were close enough to form clusters (Figure 2D; Figure 2—figure supplement 2B).
 
@@ -87,15 +159,27 @@ To evaluate the influence of self-grooming, we artificially increased grooming e
 
 Overall, we demonstrated that fruit flies self-organised collectively into an orderly cluster with the topology of a distributed network. The robustness and unique features of such social clustering prompted us to further investigate the dynamic processes and mechanisms underlying cluster formation.
 
-## Collective dyadic interactions contribute to the clustering process
+### Collective dyadic interactions contribute to the clustering process
 
 To better understand the dynamic process of social clustering, we recorded the arena with a camcorder from above and analysed the performance of groups of flies from video sequences. Massive sporadic movements of flies resulted in location changes for every individual by the end of the process. Individual flies walked for various distances, sometimes exploring the arena for a long time before occupying a final position in the cluster. During the period, flies involved numerous interactions with other flies.
 
 It took wild-type flies approximately 4 min (3.6 ± 0.3 min for female flies and 3.8 ± 0.2 min for male flies), 8–10 min (9.9 ± 0.8 min for female flies and 7.6 ± 0.2 min for male flies) and 22 min (22.2 ± 0.6 min for female flies and 21.9 ± 1.2 min for male flies) to reach cluster sizes of 10, 25 and 45 flies, respectively (Figure 3A). As the clusters grew quickly from 5 to 20 min, we subdivided this period into three 5 min phases (Stage 1, Stage 2 and Stage 3; Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig3-v2.jpg)
+
+**Figure 3.:** (A) Rapid increase of the cluster size (number of flies) through incorporating more flies during clustering (N = 7 arenas). (B) Total encounter events during the period between 5 and 20 min (N = 5 arenas). (C) The number of encounter events in three stages of cluster growth (N = 5 arenas). (D) Schematic of an encounter event to show the appendage touch-points on the Interactee. Eight touch-points were defined: F (Frontal), L1-L3 and R1-R3 (Legs), R (rear or wings). (E) The proportion of body points touched by an ‘Interactor’ in male flies. Flies are shown in white at the centre and the proportion of each touch point is presented by the length of colour-coded bar. N = 5 arenas, and the number of encounter events = 203, 180, 140 for stages 1, 2 and 3. (F, G) Percentage of behavioural responses of the ‘Interactee’ after touching by the ‘Interactor’, in males (F) and females (G). The ‘Interactee’ used wings (Wing) or legs (Leg) to repel the ‘Interactor’ after being touched. N = 5 arenas, number of events = 471 (male) and 199 (female). (H) Three images from a video sequence showing behaviours by the ‘Interactor’ and ‘Interactee’ during an encounter event. The red dashed line indicates the locomotion trajectory of ‘Interactor’. Figure 3—video 1. (I, J) Behaviour outputs after social encounters in the ‘Interactor’ and ‘Interactee’ in females (I) and males (J). Left panel: percentage of behavioural responses in the three stages; Right panel: percentage of net movement of encountered pairs (all three stages combined, quantified from the left panel). Stay: stay at the original location after encountering. Move: move away after encountering. N = 5 arenas, number of events = 1046 (male) and 474 (female).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Timed-event data showing quantification of the details of encounter responses of fly pairs in three stages of cluster development in one arena. Each row indicates a specific type of actions or events, the corresponding labels were as follows: Frontal, L1-3, R1-3 and Rear (appendage touch-points on ‘Interactee’), ‘B_Leg’ and ‘B_Wing’ (touch-evoked responses of ‘Interactee’), ‘A_Move’ or ‘A_Stay’ (‘Interactor’ moving away or staying at the encounter site after encountering), ‘B_Move’ or ‘B_Stay’ (‘Interactee’ moving away or remaining unmoved after encountering). (B) The distribution of touch points on the ‘Interactee’. The flies are shown in white at the centre. The proportion of the number of touches at each touch point is represented by the length of a colour-coded bar (N = 5 arenas).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** A sequence of frames from a high-speed video showing direct interactions (appendage touches) between a moving fly and a stationary fly. The moving fly is labelled with a green circle on its centre of body mass, and the trace of the centre of mass during the displayed period is plotted as pink dots in the last frame. The grey crosses mark the same location across all frames.
+
 Inter-fly interactions occurred exclusively between two flies, and the timing of these dyadic interactions appeared to be stochastic. We used two criteria to define an encounter event for a pair of flies: a) the distance between them was within 1.5 body length, and b) the approaching fly was facing and walking toward the other fly (i.e., the other fly was within its frontal 180° view). As shown in Figure 3B, numerous encountering events occurred during cluster formation with the overall number of encountering events in males (509 per group) being twice that in females (237 per group). Further, by surveying all dyadic interaction events, we calculated the frequency of inter-fly encounters at each phase across the entire arena. Interaction events were more frequent at first (100 ± 5 for females and 203 ± 9 for males in Stage 1) and then decreased over each consecutive 5 min (Figure 3C). These observations indicated that inter-fly interactions might contribute to the nucleation, growth and maturation of the social cluster.
 
-## Asymmetric interactions and stereotypic consequences of pair-wise social encounters
+### Asymmetric interactions and stereotypic consequences of pair-wise social encounters
 
 Closer inspection revealed that, in wild-type flies, inter-fly encounters were mainly asymmetric, occurring by one walking fly actively approaching a stationary fly, similar to findings reported by Schneider et al. (2012). The proportions of such asymmetric interactions among all encounter events in Stages 1–3 were 99%, 100%, and 100% in female groups, and 99%, 98%, and 98% in male groups, respectively. Adequate behavioural responses were elicited by the active fly through gentle touches of peripheral appendages when approaching the stationary fly (Figure 3—video 1).
 
@@ -103,9 +187,21 @@ To characterise the dyadic interactions for an encounter event, we defined the a
 
 We next examined the consequences of encounters in pairs of flies, focusing on changes of locomotion of the pair, which collectively contribute to the group dynamics. After encountering, one or both flies would subsequently move away, but also become stationary (‘interactor’) or remain stationary (‘interactee’) (Figure 3H; Figure 3—figure supplement 2; Figure 3—video 1). As shown in Figure 3I and J, female and male flies exhibited different tendencies for movement after encountering. In females, the ‘interactor’ tended to ‘move-away’ (‘A Move’, with alteration of walking trajectory) after encountering (Figure 3I). However, over time, in the growing and maturation phases, the proportions of ‘interactors’ that moved-away and stayed (‘A Move’ and ‘A Stay’) became similar (Figure 3I). For the female ‘interactee’, the tendencies to ‘move-away’ or ‘stay’ after encountering were approximately equal, with a slight increase of stay response over time (Figure 3I). In contrast, in male flies, a large proportion of ‘interactors’ preferred to ‘move-away’ rather than becoming stationary, while a higher proportion of ‘interactees’ remained stationary rather than walking away (Figure 3J). We observed an intriguing common pattern among males and females, by which, after a social encounter, the stationary fly tended to remain standing, whereas the incoming fly tended to move again and further ‘probe’ multiple stationary flies before settling down (Figure 3I,J). The scale and scope of social encounters and stereotypic ‘stay-or-move’ responses suggested that social encounters not only generated the group-level dynamics prerequisite for cluster formation, but also actively drove cluster development.
 
-## Clustering grows by social encountering at the border
+### Clustering grows by social encountering at the border
 
 To understand how seemingly spontaneous pairwise interactions result in a structured social network, we examined the contribution of encounter responses to cluster development. We focused on encounter events occurring at the periphery of a cluster. When a moving fly reached the cluster, it was likely (97% in male, 77% in female) to interact with flies composing the border, who were stationary. These ‘moving’ and ‘stationary’ flies were classified into three categories according to their final decisions after an encounter: stay in place, move out of the cluster, and move into the cluster (Figure 4A; Figure 4—video 1). For both males and females, most encounters by a pair of ‘moving’ and ‘stationary’ flies resulted in either moving in or staying at the border of the cluster, thereby increasing the number of flies in the cluster (Figure 4B–H; Figure 4—figure supplement 1A–G).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig4-v2.jpg)
+
+**Figure 4.:** (A) A schematic showing possible events occurring near the border of a cluster. Letter ‘A’ and ‘B’ are designated as the walking fly and the stationary fly (standing at the border of a cluster), respectively. ‘Move out’: move away to leave the cluster. ‘Move in’: move to join the cluster. ‘Stay’: stay near the cluster edge. ‘Directly move in’: the walking fly joins the cluster without first interacting with any flies. (B) Percentage of different encounter outputs of male walking flies after encounters at the cluster edge at the indicated stages. (N = 4 arenas, total number of encounter events = 92). (C) Total behavioural outputs of male walking flies after encountering at the cluster edge. Data were from (B). (D) Percentage of encounter responses of male stationary flies at the cluster edge after encountering (N = 4 arenas, total number of encounter events = 92). (E) Total behavioural outputs of male stationary flies at the cluster edge after encountering. Data were from (D). (F, G) The combined percentage of joining or leaving the cluster of walking flies (F) and stationary flies (G) after encountering at the cluster edge. Data sets came from (C) and (E), respectively. ‘in’ includes ‘move in’ + ‘stay’ + ‘directly move in’, ‘out’ is ‘move out’. (H) Total percentage of behavioural output of the pairs after encountering, indicating the combined contributions by walking and stationary flies to cluster growth. Data were from (F) and (G). Values shown in (F–H) are mean ± s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Percentage of different behavioural outputs of female moving flies after encounters at the cluster edge. The outputs of the previously moving flies are: ‘Move out’ (moving away to leave the cluster), ‘Move in’ (moving in to join the cluster), ‘Stay’ (staying at the encountering site near the cluster edge), ‘Directly move in’ (walking into the cluster without first interacting with any flies at the edge). Number of encounter events = 56, number of arenas = 4. (B) Total behavioural outputs of female moving flies after encountering at the cluster edge, combining all three stages in (B). (C) Percentage of behavioural outputs of female stationary flies after encountering at the cluster edge. Number of encounter events = 56, number of arenas = 4. (D) Total behavioural outputs of female stationary flies after encountering at the cluster edge, combining all three stages in (C). (E, F) Combined percentage of joining or leaving the cluster after encountering at the cluster edge in female ‘Moving’ flies (E) and ‘stationary’ flies (F). Data sets came from (B) and (D). ‘in’ includes ‘move in’ + ‘stay’ + ‘directly move in’;‘out’ indicates ‘move out’. (H) Total percentage of behavioural output of the pairs after encountering. The values indicated the combined contributions of both moving and stationary flies to cluster growth. Data sets came from (E) and (F). Values shown in (A–G) were mean ± s.e.m.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) A Schematic showing encounters occurring in three typical regions in an arena. (B) Proportions of encounter events at three typical regions during clustering stages (left) and their corresponding proportions of all observed encounter events (right) in wild-type female flies (number of arenas = 6).
 
 Specifically, as shown in Figure 4B–C, the ‘moving’ males were inclined to ‘Move-in’ (76%) to join the cluster after an encounter, while a small proportion (3%) of ‘moving’ males directly walked into a cluster without any prior interactions with others at the border. Only 10% of ‘moving’ male flies that chose to walk away after encounters at the cluster edge (Figure 4B,C). The ‘moving’ female flies displayed a similar tendency to join the cluster, with only 3% of moving females leaving the cluster (Figure 4—figure supplement 1A,B). The ‘stationary’ flies, which stayed at the cluster edge before encounters, showed a high rate (89% in males and 67% in females) of remaining within the cluster after an encounter (Figure 4D,E; Figure 4—figure supplement 1C,D).
 
@@ -115,9 +211,17 @@ The final positions of the flies joining the cluster were also dynamically deter
 
 Taken together, our results suggest that numerous encounter events occurring at the cluster edge directly drive the steady growth of a social cluster, despite the highly dynamic and sporadic nature of these events.
 
-## Multiple sensory modalities are required for cluster formation
+### Multiple sensory modalities are required for cluster formation
 
 To disentangle how sensory modalities mediate social aggregation, we quantified social clustering after selectively disrupting each sense, including vision, olfaction, gustation, audition and mechanosensation. Previous studies suggested that visual input is essential for mediating aggregation in both larvae (Dombrovski et al., 2017; Dombrovski et al., 2019) and adult flies (Simon et al., 2012; Burg et al., 2013), suggesting that vision might be necessary in our paradigm. When depriving wild-type flies of visual inputs by testing under infrared light, SSI values markedly decreased, compared with those of control flies tested under regular white light (Figure 5A). Furthermore, flies with visual deficiency, norpA33 (Pak et al., 1970) failed to form clusters, instead dispersing throughout the arena and exhibiting large social space, suggesting that the absence of visual cues impaired social aggregation (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig5-v2.jpg)
+
+**Figure 5.:** (A) The levels of SSI in flies without vision: wild-type flies under dark (illuminated by arrays of infrared LED (850 nm) and the norpA33 mutants (N = 10–25). (B) The levels of SSI of anosmic flies: wild-type flies without antennae and maxillary palps and the Orco-/- mutants (N = 8–20). (C) The levels of SSI in mutants with defective gustatory sensation (PoxnΔm22) (N = 9–26). (D) The levels of SSI in auditory/proprioceptive mutants (inactive1 and nanchung36a) and nociceptive touch mutants (ppkESB and PiezoKO) (N = 10–25). (E) Sequential images showing the spatial distribution of wild-type flies (top) and PiezoKO mutants (bottom) at 0, 1 and 5 min after the occurrence of a small cluster in each arena. Red arrows point to the sites of small clusters. (F) Representative data from an arena with the wild-type flies of indicating the onset and duration of transient clusters (blue) and mini-clusters (red). Transient clusters would be dissolved within 1 min, while a mini-cluster would last over 1 min, and served as the potential core to develop into a mature cluster. (G) Example data showing the events of transient clusters (blue) and mini-clusters (red) emergent in female CS, PiezoKO and norpA33 groups during the first 20 min of observation. Four arenas for each genotype. (H) Latency of emergence of the first transient cluster in the flies of different genotypes during 20 min (N = 6–8 arenas). (I) Number of transient clusters in flies of different genotypes during 20 min (N = 6–8 arenas). (J) Average durations of transient clusters in different genotypes during 20 min (N = 6–8 arenas). (K) Comparison of Nucleus Stability Index in flies with indicated genotypes. NSI describes the change in the size of the nascent cluster within 1 min. All genotypes and experimental conditions are indicated with the plots. In a box and whiskers plot, scatter points show all data points, the whiskers mark minimum and maximum, and the middle line indicates the median of the data set. n.s. indicates not significant (p>0.05); ***: p<0.001, **: p<0.01 (Student’s t-test within each genotype for two-group comparisons, one-way ANOVA with Dunnett’s test for multiple comparisons to control [CS]). In a bar graph plot, error bars in (H–K) indicate s.e.m.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) SSI of female flies with defective gustatory sensation or loss of contact pheromone perception (N = 4–15). (B) SSI of wild-type female and male flies with bilateral arista surgically removed (N = 7–16). All genotypes and experimental conditions are indicated with the plots. In a box and whisker plot, scatter points show all data points, the box includes 25th to 75th percentiles, the whiskers mark the minimum and maximum, and the middle line indicates the median of the data set. Error bars indicate s.e.m. n.s. indicates not significant. * indicates p<0.05; ***: p<0.001 (Student’s t-test for two-group comparisons, one-way ANOVA followed with Dunnett’s test post hoc test for multiple comparisons).
 
 To test whether the olfactory pathway mediates social interaction during network formation, we analysed flies with impaired olfaction by mutating Orco, a gene that encodes an olfactory coreceptor in Drosophila (Larsson et al., 2004). The SIN analysis revealed that male Orco mutants moved slowly and exhibited a reduced ability to form SINs, but SINs that were formed had a higher proportion of reciprocated interactions and a longer average network distance between individuals (Schneider et al., 2012). On the other hand, the olfactory deficit in Orco males did not affect social space (Simon et al., 2012). Interestingly, while female Orco mutant flies exhibited lower SSI values, impaired olfaction in male Orco mutants had no effect on social clustering (Figure 5B). Furthermore, the impaired behaviour in Orco-/- females was rescued by re-expressing the Orco gene in the olfactory system (Figure 5B). To further study the involvement of olfactory inputs in social clustering, we performed surgical experiments to eliminate olfactory inputs, removing antennae and maxillary palps housing olfactory receptors (Vosshall and Stocker, 2007). As shown in Figure 5B, without antennae and maxillary palps, female flies, but not male flies, displayed dramatically decreased SSI, confirming the phenotypes in female Orco mutants. This result suggests the possibility that the olfactory modality plays a sexually dimorphic role in social clustering behaviour.
 
@@ -127,11 +231,19 @@ To investigate the contribution of mechanosensory inputs to social aggregation b
 
 Together, our surveys of basic sensory modalities suggested that social clustering depends on intact perception of multiple sensory cues, as disruption of any basic sensory input results in impaired cluster formation. The surprisingly high demand on precise perception of sensory cues was in accord with our observations that collective social behaviour was mediated by complicated interactions between highly mobile individuals within a constantly changing social environment.
 
-## Abnormal encounter dynamic, rather than locomotion deficits, precluded cluster formation
+### Abnormal encounter dynamic, rather than locomotion deficits, precluded cluster formation
 
 To investigate why sensory disrupted flies failed to form social clusters, we examined the period of cluster initiation. We identified the occurrence of small clusters (aggregations of at least five flies in close proximity, within 1.5 body lengths), which would develop into social clusters by incorporating additional members. Small clusters arose in the group of mutant flies similar to wild-type flies, but were quickly disrupted, within minutes; for example the PiezoKO flies in Figure 5E. Accordingly, we classified small clusters into two types: transient clusters (stable for at least 5 s, but no more than 1 min) and mini-clusters (stable for over 1 min, which is the potential core of the cluster growth). In the wild-type population, while transient clusters occurred earlier and more frequently, a mini-cluster occurred once and lasted for the entire observation period (Figure 5F). Interestingly, in the population of PiezoKO and norpA33, transient clusters appeared much later than wild-type, and a stable mini-cluster never emerged in mutant flies despite multiple occurrences of transient clusters (Figure 5G). It took substantially longer for occurrence of transient clusters in other mutants as well (Figure 5H). The success in forming social clusters by wild-type flies did not depend on the frequency of transient clusters (Figure 5I). However, compared with wild-type flies, these mutants showed shorter durations of transient clusters, suggesting an inability to maintain a budding cluster (Figure 5J). We introduced the Nucleus Stability Index (NSI) to quantify changes in the size of nascent small clusters within 1 min. While nascent mini-clusters (nuclei) in wild-type flies were stable and grew steadily, small clusters in mutant flies shrank quickly and collapsed when flies dispersed (Figure 5K). These results demonstrated that sensory deficits affect the ability to develop or maintain a sizeable cluster.
 
 To better understand the mechanisms underlying the ways in which sensory inputs mediate social clustering, we performed detailed analyses of encounter responses over the course of clustering in mutants including norpA, Orco, inactive, nanchung, and Piezo. Interestingly, comparing with wild-type flies, all of the mutant flies displayed a high frequency of social encounter events (Figure 6A) and a short duration of social interaction (Figure 6B), suggesting that the high encounter frequency in mutant populations did not lead to effective social clustering. Further quantification of behavioural responses after dyadic encounters revealed that mutant ‘interactors’ exhibited a similar tendency to ‘move away’ after encounters compared with wild-type flies (Figure 6C). Conversely, mutant ‘interactees’ exhibited a significantly reduced tendency to ‘stay’ (Figure 6C). Considering the net results for encounters in mutants, the difference between the likelihood for both flies to stay and for both to move away, it was more frequent for both flies to ‘move’ than for both to ‘stay’ (Figure 6D). Therefore, the mutant pairs dispersed more effectively away from the encounter site.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig6-v2.jpg)
+
+**Figure 6.:** (A) Quantification of the number of encounter events during the indicated time periods in female flies of different genotypes (N = 4 arenas, n = 1090–10,205 encounters). (B) Average duration of encounters in different genotypes (60–120 encounters). The duration of an encounter is the time length from the beginning of physical contacts of two flies to the end of their last contact. (C) Percentage of behavioural outputs after encounter of the Interactor (A, red) and Interactee (B, pink), ‘A move’ and ‘B move’ indicate flies showing changes in locations after encounter, while ‘A stay’ and ‘B stay’ indicate flies that stayed at the encountering location (N = 3–5 arenas, n = 60–100 encounters). (D) Net behavioural output of the encounter events in (C). If only one fly moved away (either ‘A stay and B move’ or ‘A move and B stay’) would not change the number of flies at the encounter site since before the encounter, one fly (‘A’) walked into the site. Thus, we compared the likelihood of both A and B staying with that of both A and B moving away. The bar graph shows the difference in the percentages of these two types of outputs for each genotype (N = 3–5 arenas, n = 60–100 encounters). (E) The transient velocities of Interactors of different genotypes during the course of encounter. (N = 3 arenas, n = 30–60 encounters). (F) The average velocities of Interactors before and after encounter (N = 3 arenas, n = 30–60 encounters). (G, H) The transient velocities (G) and average velocities (H) of Interactees before and after encounter (N = 3 arenas, n = 30–60 encounters). All genotypes and experimental conditions are indicated with the plots. Error bars in (A–B) indicate s.e.m.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Spontaneous locomotion activity and exploration of the flies with indicated genotypes. The speed data were obtained from short walking bouts (10 s) of individual flies 5 min after they were introduced to a dish). The duration of each step is 0.04 s. For each genotype, the number of flies were 30–60 (from 3 to 6 arenas). (A) The distribution of the walking speeds of pooled walking events of indicated genotypes. The numbers of sampled events were 7438–14,871. (B) Comparison of the average walking speed of individual flies of the indicated genotype. (C) Comparison of the maximal walking speed of individual flies of different genotypes. (D–G) Quantifying changes of speed in flies of different genotypes over a walking bout. The speed of a fly was calculated at different times, and the change of speed was then divided by the step time, 0.04 s, to obtain an acceleration/deceleration event of that fly. (D) Comparison of the distribution of pooled acceleration and deceleration events of indicated genotypes. The number of sampled events were 7406–14,790. (E) Enlarged view of (D) showing deceleration events (left half) and acceleration (right half) events. (F) Comparison of the averaged acceleration and averaged deceleration of individual flies. Data shown were mean ± s.e.m. (N = 30–60 flies). (G) Comparison of the maximal acceleration and maximal deceleration of individual flies. Data shown were mean ± s.e.m. (N = 30–60 flies). ns. indicates not significant (p>0.05); ***: p<0.001; **: p<0.01 (one-way ANOVA with Dunnett’s test for multiple comparisons to control [CS]).
 
 To understand the encountering process in more detail, we analysed the transient velocities of flies before and after encounter events (+ /- 0.8 s). ‘Interactors’ exhibited decreased velocity before impact (Figure 6E–F) while ‘interactees’ exhibited increased velocities after encounters (Figure 6G–H). Compared with wild-type flies, mutant flies generally exhibited higher transient speeds either before or after encounters (Figure 6E–H).
 
@@ -139,11 +251,23 @@ To confirm that these mutant flies are capable of walking faster than wild-type 
 
 Therefore, abnormal social interactions stemmed from defective inter-fly communications, rather than locomotion per se, contributing to unsuccessful formation, maintenance or growth of social clusters. The increased population dynamics, including high locomotion speed, frequent encounters, short interaction duration, and effective dispersion after encounter, in mutants likely indicated their elevated but failed attempts to compensate for the loss of social cues mediating cluster formation.
 
-## ppk-specific neurons participate in establishing normal social space
+### ppk-specific neurons participate in establishing normal social space
 
 Stereotypic responses from dyadic interactions helped to build up the social cluster, these local interaction events highlighted the importance of physical contact in contributing to the clustering process, possibly by transducing mechanical and chemical signals. To further examine the neuronal basis of social clustering, we used neurogenetic approaches to modulate activities in target neurons while analysing behaviour change. The ubiquity of appendage-touch in eliciting encounter response prompted us to screen neurons potentially occurring in appendage organs using specific GAL4s, including all olfactory receptor-GAL4s, gustatory receptor-GAL4s, GAL4s labelling ion channels participating in mechanosensation in Drosophila including ppk (Adams et al., 1998; Zhong et al., 2010; Olds and Xu, 2014), inactive, nanchung (Gong et al., 2004; Karak et al., 2015; Li et al., 2016), nompC (Walker et al., 2000; Yan et al., 2013) and Piezo (Kim et al., 2012), and GAL4s targeted to the systems of neurotransmitters, neuropeptides, mechanosensation and those based on the expression patterns of a GAL4 driver line resource (Jenett et al., 2012; Ramdya et al., 2015; Tuthill and Wilson, 2016; Mamiya et al., 2018).
 
 We utilised the GAL4/UAS binary system to express an optogenetic activator, CsChrimson (Klapoetke et al., 2014), to forcibly activate selected neurons during social clustering. Interestingly, among the approximately 500 lines screened, ppk >CsChrimson flies exhibited extensive aggregation with significantly decreased social space in male and female flies (Figure 7A,B,D; Figure 7—figure supplement 1A,B). Optogenetic activation of the mechanosensory neurons in iav >CsChrimson, nompC > CsChrimson or Piezo > CsChrimson flies reduced SSIs, while nan >CsChrimson flies behaved normally as wild-type controls (Figure 7—figure supplement 1A,B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig7-v2.jpg)
+
+**Figure 7.:** (A–C) Representative images showing the spatial distributions of flies of genetic control (A), flies with optogenetically-activated ppk neurons (B), and flies with silenced ppk neurons (C). Bottom: the enlarged views of regions in corresponding arenas on the top, marked by red squares. (D) SSIs of flies with optogenetic activation of ppk neurons (red) and genetic controls (grey). (N = 16 arenas). (E) SSIs of flies with silenced ppk neurons (blue) and genetic controls (grey) (N = 16 arenas). (F) Comparing the cluster sizes (number of flies in a cluster) of female flies over the course of clustering (N = 8 arenas). (G) Comparing the locomotion speed in flies with optogenetically activated ppk neurons (red) and genetic controls (grey) (N = 3 arenas, n = 30 flies). (H–K) Expression pattern of ppk-GAL4 in the peripheral. Green channel shows GFP signals from ppk-GAL4 >UAS-mCD8-GFP and magenta channels show autofluorescence from the cuticle. Body parts shown are: foreleg (H, scale bar: 50 μm), wing (I, scale bar: 100 μm), tip of the tarsus (J, scale bar: 10 μm), and portions of a wing (K1: pre-wing margin, K2: vein in wing, K3: post-wing margin, scale bars in K2-3: 30 μm). All genotypes and experimental conditions are indicated with the plots. In a box and whisker plot, scatter points show all data points, the box includes the 25th to 75th percentiles, the whiskers show the minimum and maximum, and the middle line indicates the median of the data set. n.s. indicates not significant (p>0.05); **p<0.01, ***: p<0.001 (Student’s t-test). Error bars in (F) indicate s.e.m.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–D) Comparison of SSIs of flies with subpopulations of mechanosensory-related neurons being activated (A-B, A: females, B: males) or blocked (C-D, C: females; D: males). Different GAL4s labelled neurons involved in auditory/proprioceptive sensation (iav-GAL4 and nan-GAL4), nociceptive touch (ppk-GAL4 and Piezo-GAL4) and gentle touch (nompC-GAL4). Cha-GAL80 was used with Piezo-GAL4 to restrict Piezo neurons to legs. (N = 10–25). All genotypes are indicated with the plots. In a box and whisker plot, scatter points show all data points. The box includes 25th to 75th percentile, the whiskers mark minimum and maximum and the middle line indicates median of the data set. n.s. indicates not significant (p>0.05); * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001 (Student’s t-test).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** GFP fluorescence signals from various Gal4s driven UAS-mCD8-GFP were superimposed on an image acquired by transmitted light. The four images of each row show the wing margin and three segments of the foreleg of flies with corresponding genotypes. Red stars indicate the GFP-positive neurons. The scale bar is 50 μm.
 
 Moreover, to block the functions of mechanosensory neurons, we expressed tetanus toxin light chain (TNT) (Sweeney et al., 1995) in different candidate neurons. All flies with the corresponding neurons being silenced failed to form social clusters (Figure 7C,E; Figure 7—figure supplement 1C,D), suggesting that the activities of these neurons, including ppk-GAL4-labelled neurons, are required for cluster formation. Notably, video sequences of cluster development revealed that activating ppk-labelled neurons resulted in early formation of clusters, indicating that the emergence of social clusters was faster in ppk >CsChrimson flies than in wild-type flies (Figure 7F). However, the locomotion activity of ppk >CsChrimson flies was comparable to that of genetic controls (Figure 7G), suggesting that faster clustering is unlikely to be due to faster walking.
 
@@ -151,9 +275,17 @@ The reporter protein green fluorescent protein (GFP) revealed that ppk-specific 
 
 Together, our results indicated that ppk-specific neurons play a unique role in regulating cluster formation and social distance.
 
-## Social grouping elevates activity in tarsal ppk neurons
+### Social grouping elevates activity in tarsal ppk neurons
 
 Two findings, that appendage-touch played an important role in social encounters and that ppk was broadly expressed in the appendage organs, led us to investigate ppk neurons in appendages in more detail. We utilised an activity reporter system, calcium-dependent nuclear import of LexA (CaLexA) (Masuyama et al., 2012), to assess whether the activity of ppk neurons correlates with inter-fly physical interactions. Female flies were reared under isolated or social conditions, and the activities of ppk neurons were subsequently quantified. As shown in Figure 8A–C, flies raised in a group exhibited significantly increased activities in a small group of ppk neurons in the tip of the tarsus, compared with those raised alone. In contrast, there were no differences in CaLexA signals in neurons on the wing margin under single- or group-raised conditions (Figure 8—figure supplement 1A–D). Notably, grouping previously singly-raised flies together for 30 hr evoked substantial activity in ppk neurons in the tarsus (Figure 8B,C), suggesting that frequent inter-fly interactions involving appendage-touches while living in a group might increase the activity of ppk neurons in the tarsus.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig8-v2.jpg)
+
+**Figure 8.:** (A) A schematic showing the imaging area (tip of tarsus) for (B) and (D). (B) Representative images showing CaLexA signals in ppk neurons of female flies with different social experience. Single: individual flies were raised in isolation for 16 days after eclosion; Group: flies were raised in a group for 16 days after eclosion; Re-grouped: 10 singly-raised flies were combined together and maintained for 30 hr. Cyan: autofluorescence from the cuticle, Red: maximal intensity of CaLexA signals. Dashed lines trace the tip of tarsus as ROIs for calculating GFP signals. Scale bar, 10 μm. (C) Comparing the average intensity of CaLexA signals in ppk neurons from flies treated with indicated conditions shown in (B) (N = 8 arenas). (D) Schematics of different treatments (top) and the corresponding representative images (bottom) of the tip of the tarsus of ppk-GAl4 >CaLexA flies. Single: flies raised in single isolation for 16 days after eclosion; Netted single: single fly raised in a netted tube (diameter: 12 mm, covered by double-layered net on the top end) alone for 16 d; Netted in a group: single fly raised in a netted tube which was surrounded 50 flies (inaccessible) for 16 d; Re-grouped: 10 singly-raised flies were combined and maintained for 24 hr. Cyan: autofluorescence from the cuticle, Red: maximal intensity of CaLexA signals. Dashed lines trace the tip of the tarsus (as a ROI for computing the GFP signals). Scale bar, 10 μm. (E) Comparing the average intensity of CaLexA signals in ppk neurons from flies treated with indicated conditions shown in (D) (N = 8 arenas). All genotypes and experimental conditions are indicated with the plots. In a box and whisker plot, scatter points show all data points, whiskers mark minimum and maximum, and the middle line indicates median of the data set. n.s. indicates not significant (p>0.05); **: p<0.01, ***: p<0.001 (Student’s t-test within each genotype for two-group comparisons, one-way ANOVA with Tukey’s post hoc test for multiple comparisons).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/51921/elife-51921-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Schematic showing the imaging areas of wing margins. The red boxes indicate the pre-wing and post-wing areas evaluated in (B–D). (B) Comparison of the CaLexA signal intensities in ppk-positive neurons of singly-raised or group-raised female flies. Single: flies were raised in isolation for 16 days; Group: flies were raised in a group of 50 flies for 16 days. (N = 8). (C, D) Representative images of wing margins in female ppk-GAL4 >CaLexA flies, raised either in isolation (C) or in a group (D). Top: magenta channel shows autofluorescence signals from cuticles, and green channel shows the maximal intensity of CaLexA signal in wing margins. White brackets indicate the areas of quantification for (B). Bottom: images of corresponding regions with the GFP channel superimposed on the channel with transmitted light. Scale bar, 10 μm. All genotypes and experimental conditions are indicated with the plots. For bar graphs, mean ± s.e.m. is shown. n.s. indicates not significant, Student’s t-test.
 
 To discern the possible effects of contact pheromones, volatile chemicals and physical touch under grouped conditions, we raised a fly in a group but deprived it of direct contact with others. As shown in Figure 8D, each ‘netted in a group’ fly was grown in a small case and separated from the other flies via a double-layered net on top of the cage, while, as a control, ‘netted single’ flies were not in the presence of other flies outside the net. The net allowed odours, sounds and certain visual information to pass through, but blocked contact-dependent cues. Surprisingly, both ‘netted single’ and ‘netted in a group’ flies showed similar CaLexA signals in the tarsal ppk neurons as singly-raised flies (Figure 8D,E), while re-grouping the ‘netted single’ flies for 24 hr was sufficient to induce an increase in CaLexA signals (Figure 8D,E).
 
@@ -183,11 +315,280 @@ In conclusion, we developed a self-organised aggregation paradigm as a model for
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Canton-S</td>
+      <td>(Zhan et al., 2016)</td>
+      <td></td>
+      <td>https://doi.org/10.1038/ncomms13633</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC5905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>ppk-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC32079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>UAS-CsChrimson</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC55135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Piezo-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC58771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>ORCO-GAL4</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>nan-GAL4</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>iav-GAL4</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>nompC-GAL4</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>UAS-TNTE</td>
+      <td>Aike Guo and Yan Li lab (Liu et al., 2016)</td>
+      <td></td>
+      <td>http://dx.doi.org/10.7554/eLife.13238.001</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Tub-GAL80ts</td>
+      <td>Aike Guo and Yan Li lab (Liu et al., 2016)</td>
+      <td></td>
+      <td>http://dx.doi.org/10.7554/eLife.13238.001</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>Cha3.3kb-GAL80</td>
+      <td>Aike Guo and Yan Li lab (Zhang et al., 2013b)</td>
+      <td></td>
+      <td>https://doi.org/10.1523/JNEUROSCI.5365-12.2013</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>CaLexA</td>
+      <td>Jing Wang lab (Masuyama et al., 2012)</td>
+      <td></td>
+      <td>https://dx.doi.org/10.3109%2F01677063.2011.642910</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila melanogaster)</td>
+      <td>UAS-mCD8::GFP</td>
+      <td>(Zhan et al., 2016)</td>
+      <td></td>
+      <td>https://doi.org/10.1038/ncomms13633</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>norpA33</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC9047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Gr64f -/-</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC27883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Δppk23</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC33300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Gr33a1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC31427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>IR76b1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC51309</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>PiezoKO</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC58770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>nan36a</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC24902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>ORCO-/-</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-ORCO</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>iav1</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>PoxnΔm22</td>
+      <td>Yi Rao lab, Peking University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>ppkESB</td>
+      <td>Zuoren Wang lab (Guo et al., 2014)</td>
+      <td></td>
+      <td>https://doi.org/10.1016/j.celrep.2014.10.020</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>ΔGr32a1</td>
+      <td>Craig Montell lab (Moon et al., 2009)</td>
+      <td></td>
+      <td>https://doi.org/10.1016/j.cub.2009.07.061</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sigmacote</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat #: SLBF433V</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>All-trans-retinal</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat #: R2500</td>
+      <td>200 μM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad Prism https://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB 2018a</td>
+      <td>MathWorks, Natick, MA https://www.mathworks.com/products/matlab.html</td>
+      <td>RRID:SCR_006752</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH https://fiji.sc/</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe https://www.adobe.com/</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Premiere pro</td>
+      <td>Adobe https://www.adobe.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>Simulation of random flies/dots</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>White LED/Infrared LED arrays (850 nm)</td>
+      <td>Xin Xing Yuan Guangdian https://item.taobao.com/item.htmid=20158878058</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 Flies were reared on a standard medium at 25°C and 60% relative humidity, under a 12:12 hr light:dark regime. Flies at 3–6 days post-eclosion were used unless otherwise indicated. Canton S was used as a wild-type control. ORCO−/−, ORCO-GAL4, UAS-ORCO, iav1, iav-GAL4, nan-GAL4, nompC-GAL4 and PoxnΔm22 were kindly provided by Yi Rao. ppkESB was kindly provided by Zuoren Wang. ΔGr32a1was kindly provided by Craig Montell. UAS-TNTE, Tub-GAL80ts and Cha-GAL80 were kindly provided by Aike Guo and Yan Li. CaLexA (LexAop-mCD8-GFP-2A-mCD8-GFP; UAS-LexA-VP16-NFAT; LexAop-GFP/Tm6B) flies were kindly provided by Jing Wang. w1118 (BL5905), norpA33 (BL9047), ppk-GAL4 (BL32079), UAS-CsChrimson (BL55135 and BL55136), Piezo-GAL4 (BL58771), PiezoKO (BL58770), nan36a (BL24902), Gr64f -/- (BL27883), ΔPPK23 (BL33300), Gr33a1 (BL31427) and IR76b1 (BL51309) were obtained from the Bloomington Drosophila Stock Center. Mutant flies were outcrossed to CS background for at least eight generations.
 
-## Social clustering assay
+### Social clustering assay
 
 Social aggregation was tested using 3- to 6-day-old adult flies. Both male and female flies were tested, with the exception of some experiments (Figure 6, Figure 8 and the related supplement material). One day before the experiment, flies were collected under cold anaesthesia and kept with 50 flies per vial (except otherwise noted), with females and males separate. All experiments were conducted around Zeitgeber time 1–7 in a room with 25°C and 60% humidity. Flies were allowed to habituate to the environment for 30 min before the test. The behavioural arenas were modified from glass culture dishes (internal diameter of 90 mm, unless noted otherwise) with the wall and ceiling treated with Sigmacote (Sigma-Aldrich, SLBF433V), in accordance with the product protocol, to prevent flies from walking on the side and top of the arena. The bottom of the arena was covered by 1% agar serving as a water source to keep the arena humidified, with a space of 12 mm height formed between the agar surface and the ceiling of the arena. Prior to experiments, the arenas were allowed to adjust to room temperature overnight. After quick cold anaesthesia on ice (within 1 min), flies were carefully transferred to the centre of the arena. The arenas were back-illuminated by white LED arrays. For visual deprivation experiments, infrared LED arrays (850 nm) were used as the back-light source. The video- or time-lapse recordings started immediately when the flies were introduced to the arena; this was considered the zero hour.
 
@@ -195,7 +596,7 @@ Our system used a typical setting for behavioral observations but with improveme
 
 We estimated that over 225,000 flies of various genotypes were tested for social clustering in this project.
 
-## Image and video acquisition and analysis
+### Image and video acquisition and analysis
 
 Digital cameras (Canon A720) were used to capture a sequence of raw images (8 Megapixels) of fly distribution. A custom script was written to control the camera to acquire time-lapse images for 120 min. The recording began as soon as the flies were first introduced into the arena. The captured images were imported to Matlab for further analysis with custom scripts.
 
@@ -203,25 +604,25 @@ For dynamic analysis experiments, videos of fly distribution in the arena were o
 
 Details of touch-evoked encounter responses were analysed semi-automatically. Tracing of flies was aided by custom scripts/GUIs written in Matlab. Throughout this paper, the distance between two flies was measured between body centres, not between body surfaces.
 
-## Social Space Index (SSI)
+### Social Space Index (SSI)
 
 Photographs of the distribution of flies between 28 and 120 min after they were introduced into the arena were used for social space analysis. A Matlab program was written to extract the positions of flies and to quantify the social aggregation by calculating the NND for each fly. The percentages of flies with NNDs in bins of 5 mm were calculated. The SSI was then obtained by subtracting the percentage of flies in the second bin from that in the first bin (SSI = bin1 − bin2), as previously described (Simon et al., 2012).
 
-## Simulation with ‘random flies’ and ‘random dots’
+### Simulation with ‘random flies’ and ‘random dots’
 
-## Random flies
+#### Random flies
 
 For simulating flies without interactions between each other in arenas of similar size, we generated ‘random flies’ which followed the natural distribution of actual flies. A Matlab script first randomly picked digital ‘flies’ from the dataset of wild-type flies of corresponding gender and experimental conditions. These flies were plotted onto a digital arena (a circle with a diameter of 90 mm) using their original coordinates, body lengths and orientations. Flies that overlapped with others already existed in the arena were then removed. This process was repeated until the total number of virtual flies in the digital arena finally reached 50. The constituted arenas with ‘scrambled’ flies were then treated similarly to the real arenas, with these flies identified to provide controls for comparison with the actual flies. Because they came from the same dataset, the random flies shared the same overall spatial distribution of the actual flies, including frequent occurrence near the edge of arenas.
 
 Random males and random females were generated from the dataset of wild-type males and females, respectively. Because random males and females displayed almost identical averaged properties in our analysis, only the results from random females were shown in this paper.
 
-## Random dots
+#### Random dots
 
 To generate a group of a given number of random dots, a Matlab script generated a series of dots with random locations within a circular arena (diameter: 90 mm), with the restriction that each dot was not in the proximity of the other dots (within an impermissible distance, or minimal allowed distance). The positions of these randomly generated dots were then used to compute their distribution. When the minimal allowed distance was 0 mm, the distribution of these random dots followed a Poisson distribution. When the minimal allowed distance was larger than 0 mm, their distribution followed a Matérn hard-core point process (type II) with this distance serving as the hard-core distance (Turner, 2015). To simplify the narration, we used the hard-core distance for both distributions.
 
 Using spatial statistics to construct ‘random dots’ in this way enabled us to obtain spatial point processes that would not be observed otherwise in real experiments. In a 90 mm dish, random dots with a total number ranging from 5 to 100 and a hard-core distance ranging from 0 to 10 mm were generated.
 
-## Fly identification and cluster reconstruction
+### Fly identification and cluster reconstruction
 
 Several Matlab scripts worked sequentially to automatically find and join the flies, whose surrounding areas and distances to neighbours met predefined criteria (described in the following section), into a cluster (also see Figure 2A; Figure 2—video 1).
 
@@ -233,33 +634,59 @@ We identified contiguous flies whose residing areas were smaller than a threshol
 
 Flies in a cluster were classified into insiders (whose residing area only bordered with residing areas of flies from the same cluster) and outsiders (whose residing area was juxtaposed to regions not belonging to flies of the same cluster). Due to variation among outsiders, we only quantified the connectivity of insiders. Additionally, only connections between contiguous neighbours were considered for calculating the numbers and lengths of these links.
 
-## Predefined criterial sets for cluster reconstruction
+### Predefined criterial sets for cluster reconstruction
 
-First, we calculated the area of the arena, the unit area, and the unit distance with the following formulas:AreaofArena=π∗(RadiusofArena)2.UnitArea=AreaofArena/TotalNumberofFlies.UnitDistance=sqrt(4∗UnitArea/π)or2∗RadiusofArena/sqrt(TotalNumberofFlies).
+First, we calculated the area of the arena, the unit area, and the unit distance with the following formulas:
+
+$$
+AreaofArena=\pi^{∗}(RadiusofArena)^{2}.
+$$
+
+
+
+$$
+UnitArea=AreaofArena/TotalNumberofFlies.
+$$
+
+
+
+$$
+UnitDistance=sqrt(4^{∗}UnitArea/\pi)or2^{∗}RadiusofArena/sqrt(TotalNumberofFlies).
+$$
 
 Unit Area is the area per fly, assuming the area of the arena is divided evenly among all flies. Unit Distance is the diameter of a circle with an area equal to the Unit Area.
 
-Each criterial set was based on one of five Stringent Factors (0.25, 0.302, 0.423, 0.49 and 0.723, from most stringent to most relaxed), the square roots of which were 0.5, 0.55, 0.65, 0.70 and 0.85, respectively. The thresholds for maximal allowable area and distance for each criterial set were calculated with the corresponding Stringent Factor:AreaThreshold=UnitArea∗StringentFactorDistanceThreshold=UnitDistance∗sqrt(0.5∗StringentFactor)
+Each criterial set was based on one of five Stringent Factors (0.25, 0.302, 0.423, 0.49 and 0.723, from most stringent to most relaxed), the square roots of which were 0.5, 0.55, 0.65, 0.70 and 0.85, respectively. The thresholds for maximal allowable area and distance for each criterial set were calculated with the corresponding Stringent Factor:
+
+$$
+AreaThreshold=UnitArea^{∗}StringentFactor
+$$
+
+
+
+$$
+DistanceThreshold=UnitDistance^{∗}sqrt(0.5^{∗}StringentFactor)
+$$
 
 A pair of Area Threshold and Distance Threshold form a criterial set; thus, five Stringent Factors resulted in five criterial settings for clustering (CSCs) (with stringency from high to low, Figure 2B).
 
-## Surgical manipulation
+### Surgical manipulation
 
 For surgical removal of bilateral antenna, maxillary palps and arista, 3-day-old adult Canton S flies were used. The flies were anaesthetised on a CO2 pad and specific operations were conducted with fine forceps under a stereo microscope (Leica, S6E). To minimise CO2 toxicity, we operated on five flies in each batch. After the operations, the flies (50 in a group) were transferred to a standard food vial and maintained at 25°C with 60% humidity for 2 days before behavioural testing.
 
-## Dust-induced grooming
+### Dust-induced grooming
 
 The dust-induced grooming experiment was modified from a previous study (Seeds et al., 2014). A group of 50 flies was cold anaesthetised on ice and transferred to grooming chambers containing green phosphor (modified from a glass vial with a diameter of 31.8 mm and height of 80 mm). The chamber was gently shaken to uniformly coat each fly. Excess dust was removed by tapping the flies against nylon mesh before the flies were transferred to behavioural testing chambers for video recordings. Images of dusted flies in the behaviour chamber were checked at 0, 15 and 60 min under a fluorescence stereo microscope (Leica M205). Most body parts were almost clean at 15 min.
 
-## Optogenetic stimulation
+### Optogenetic stimulation
 
 A group of 50 flies were collected within 3 days after eclosion and transferred into a vial with regular food containing 200 μM all-trans retinal (Sigma R2500). The vials were wrapped in aluminium foil for protection from light, then kept at 25°C and 60% humidity for 2–4 days. After transferral to the test arena, flies were allowed to recover for 1 min, and then stimulated with light. An array of white LEDs was used as the source of stimulation. Unless otherwise noted, light stimulation was presented continually throughout the observation period. The light intensity was 28 mW/cm2, measured using a spectrometer (CCS200/M, Thorlabs).
 
-## Inducible inactivation
+### Inducible inactivation
 
 To deactivate mechanosensing neurons, the tetanus toxin light chain, TNT, was expressed in the indicated GAL4 labelled neurons continuously from the embryonic stage, except for nompC-GAL4. As inactivation of nompC neurons at an early stage is lethal, TNT was expressed exclusively in the adult stage using the TARGET system (McGuire et al., 2004). Flies with nompC-GAL4, UAS-TNT and Tub-GAL80ts were reared at 22°C and collected within 5 days of eclosion. A 2-day temperature shift to 30°C was applied to inhibit GAL80 activity, in order to induce TNT expression. Flies were collected and combined into 50 flies per vial one day prior to the test. The behavioural test was conducted at room temperature.
 
-## Expression patterns
+### Expression patterns
 
 Dissection and staining of the central nervous system were performed as previously described, with slight modification (Zhan et al., 2016). Dissection of intact brains of adult female flies was performed in cold phosphate buffered saline (PBS) under stereo microscopy and fixed in 4% fresh paraformaldehyde solution for 2 hr on ice. The tissues were then washed with PBT (0.1% Triton X-100 in 1 × PBS) five times (15 min each), blocked for 30 min with PBT containing 5% normal goat serum, and incubated with anti-nc82 antibody (1:100) in blocking buffer for 24 hr at 4°C. After washing with PBT five times, the tissues were incubated with secondary antibody (1:100) in PBT for 48 hr at 4°C. Samples were then washed with PBT three times (15 min each) before mounting.
 
@@ -267,16 +694,16 @@ For the imaging of expression in the peripheral systems, wings and legs were bil
 
 Samples were mounted in mounting medium (Vector, H-1000) under a coverslip. All of the fluorescent images were collected using a confocal microscope (Leica SP8) and processed with ImageJ (NIH).
 
-## CaLexA measurements
+### CaLexA measurements
 
 Flies with various social experiences were used for CaLexA experiments. ‘Single’: flies raised individually in isolation in a rearing tube (diameter: 31.8 mm, height: 80 mm) after hatching; ‘Group’: 50 flies (female and male) raised together after hatching; ‘Re-Grouped’: the singly-raised flies grouped together (10 flies/vial, diameter: 21 mm) and reared for additional 30 hr prior to imaging. ‘Netted’: single fly housed in a netted top tube cage with food at the bottom (diameter: 12 mm). ‘Netted in group’: single fly raised in a net house and surrounded by a group of untouchable flies. ‘Netted re-grouped’: 10 single isolated flies were put together to form a new group for 24 hr prior to testing.
 
 For CaLexA imaging, the ppk-GAL4 >CaLexA flies, 16 days old, were cold anaesthetised on ice for 5 min. The legs or wings were quickly removed with forceps, and mounted in mounting medium (Vector, H-1000) under a coverslip. Confocal images were acquired under a 40 × oil immersion objective lens with a confocal microscope (Leica SP8). The sum of all pixel intensities of stacks comprising the whole regions of interest (ROI) were calculated in GFP and autofluorescence channels. Average GFP signal was used for analysis.
 
-## Statistics
+### Statistics
 
 Statistical analysis was performed using Prism 7 (GraphPad Software). All experiments were performed in parallel with both experimental and control genotypes. In box and whisker plots, all data points in a data set were plotted; each box includes data from the 25th to the 75th percentile, and the line within the box indicates the median. P values were determined using the unpaired two-tailed Student’s t-tests for pairwise comparisons, one-way ANOVA with Tukey’s or Dunnett’s test for comparison of multiple groups. For bar graphs, the values shown were mean ± s.e.m.
 
-## Source data files
+### Source data files
 
 The source data for the behavioral analyses, summary statistics, and source code are included in the source data files.

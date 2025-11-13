@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03prydq77 Department of Cognition, Emotion, and Methods in Psychology, Faculty of Psychology, University of Vienna Vienna Austria
-2. https://ror.org/02crff812 Zurich Center for Neuroeconomics, Department of Economics, University of Zurich Zurich Switzerland
-3. https://ror.org/03prydq77 Vienna Cognitive Science Hub, University of Vienna Vienna Austria
-4. https://ror.org/03prydq77 Centre for Microbiology and Environmental Systems Science, University of Vienna Vienna Austria
-5. https://ror.org/03angcq70 Centre for Human Brain Health, Institute of Mental Health and School of Psychology, University of Birmingham Birmingham United Kingdom
-6. https://ror.org/03angcq70 Institute for Mental Health, School of Psychology, University of Birmingham Birmingham United Kingdom
+1. Department of Cognition, Emotion, and Methods in Psychology, Faculty of Psychology, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+2. Zurich Center for Neuroeconomics, Department of Economics, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+3. Vienna Cognitive Science Hub, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+4. Centre for Microbiology and Environmental Systems Science, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+5. Centre for Human Brain Health, Institute of Mental Health and School of Psychology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+6. Institute for Mental Health, School of Psychology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
 
 † Corresponding author
 
@@ -41,19 +41,47 @@ The willingness to engage in prosocial behaviour shows substantial individual di
 
 ## Results
 
-## Experimental approach
+### Experimental approach
 
 Ninety-six male participants were randomly assigned to undergo an established stress induction protocol or a control task (Dedovic et al., 2005; Tomova et al., 2017). Saliva samples and perceived stress ratings were collected as indicators of physiological and subjective stress responses throughout the experiment. Participants made incentivised choices in an fMRI scanner between ‘work’ (exerting effort) or ‘rest’ (not exerting effort) (Figure 1; Lockwood et al., 2021; Lockwood et al., 2017; Lockwood et al., 2022). If they chose ‘rest’, participants waited until the end of the trial and received one credit; if they chose ‘work’, then they could receive a larger reward (2, 4, 6, 8, or 10 credits; converted to money at the end of the experiment). To receive this larger reward, participants had to squeeze a hand dynamometer for at least 1 s at the required effort level (30, 40, 50, 60, or 70% of their maximum voluntary contraction [MVC]) during a 3-s window. To establish whether stress affected effort-based decision-making differently for self-benefitting rewards compared to other-benefitting rewards, on half the trials, participants themselves were the recipients of the credits (self trials), whereas on the other half of trials participants were told the next participant in the study would receive the credits (other trials). As all participants were men, the name of the next participant was gender matched (all participants were told he was called Thomas; see ‘Materials and methods’). Moreover, as participants did not see or interact with the next participant, familiarity was controlled across participants. We hypothesised that acute stress would decrease participants’ willingness to exert other-benefitting prosocial effort compared to self-benefitting effort. Moreover, using neuroimaging combined with computational modelling, we examined whether the effects of stress were related to changes in SV representations in dACC and AI on self- compared to other-benefitting trials.
 
-## Greater cortisol and perceived stress following stress induction
+![Figure 1.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig1-v1.jpg)
+
+**Figure 1.:** During the offer phase, participants made choices between rest, a fixed low reward (1 credit) involving no effort, and work, a variable higher reward (2, 4, 6, 8, or 10 credits) involving more effort (30, 40, 50, 60, or 70% of participant’s individual maximum voluntary contraction [MVC]). Higher effort levels were indicated by a more filled in circle. Participants had 3.2 s to make their choice, and the chosen option was then highlighted with a box for 0.3 s. If participants decided to work, then during the force phase, they had to squeeze the hand dynamometer at the required effort level (shown by the yellow line) for 1 s during a 3-s window. If they decided to rest, then the yellow line was displayed at the bottom of the bar and participants did not have to squeeze. During the outcome phase, the number of credits participants earned either for themselves or the next participant was displayed. Each phase of each trial was separated by a variable jitter shown at the bottom of the diagram.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Left panel: we used maximum likelihood estimation and a model comparison approach to determine which model best characterised participants’ choices. Twelve models were compared which included either one (1K) or two discount parameters (2K: Kself, Kother), either one (1B) or two (2B: βself, βother) temperature parameters, and either a parabolic (P), linear (L), or hyperbolic (H) discount function. Model 7 (2K 1B parabolic) had the lowest BIC across the whole sample. Model 10 (2K 2B parabolic) had the lowest BIC in the stress group. Right panel: across the whole sample, model 7 (for 77.66% of participants) was a better fit compared to model 10 (22.34%), so it was chosen for all analyses.
+
+### Greater cortisol and perceived stress following stress induction
 
 Participants rated their perceived stress at eight timepoints distributed across the experiment. We conducted a repeated-measures ANOVA with group as a between-subject factor and the eight sample timepoints as a within-subject factor. This revealed a significant interaction between group and sample timepoint, F(7,644) = 19.05, p<0.001, η2 = 0.101, showing that the increase in stress over time was greater in the stress group than in the control group (Figure 2). Follow-up tests revealed a significant difference between the groups at timepoints 2–7 (all ps<0.04) but not at timepoints 1 or 8 (all p-values were Bonferroni corrected for multiple comparisons; for changes in other emotions during the experiment, see Figure 2—figure supplement 1). For salivary cortisol (Figure 2), we also found a significant interaction between group × sample timepoint, F(5,445) = 6.945, p<0.001, η2 = 0.028. Follow-up tests revealed a significant difference between the groups at timepoints 3, 4, and 5 (all ps<0.001) but not at timepoints 1, 2, or 6 (all p-values were Bonferroni corrected). To create a measure of participants’ total stress response throughout the experiment, we calculated the area under the curve (AUC) with respect to ground for participants’ stress ratings and salivary cortisol (Pruessner et al., 2003).
 
-## Acute stress reduces effortful prosocial behaviour at a low level of effort
+![Figure 2.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig2-v1.jpg)
+
+**Figure 2.:** The grey box indicates the time participants spent in the scanner doing the tasks. Participants completed six runs of 25 trials for the prosocial effort task. Before each run, participants experienced either an adapted version of the Montreal Imaging Stress Test (MIST; Dedovic et al., 2005) or the counting task from the Trier Social Stress Test (Kirschbaum et al., 1993). The asterisks indicate the significant level for the pairwise tests having corrected for multiple comparisons (*p<0.05; ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The grey box indicates the time participants spent in the scanner doing the tasks. Apart from the emotions anxious and disgusted, all emotions showed a significant sample (1:8) by group (stress, control) interaction (all ps<0.001) when subjected to an ANOVA. This mirrored the results for the perceived stress ratings.
+
+### Acute stress reduces effortful prosocial behaviour at a low level of effort
 
 To determine differences in choices to engage in effortful behaviour, we conducted a mixed-effects logistic regression using the glmer function from the R package lme4 (Bates et al., 2015). Participants’ choices were entered as the dependent variable (work = 1; rest = 0), with the factors Group (stress, control), Recipient (self, other), Effort (five levels), and Reward (five levels) as fixed effects. As random effects, we included random intercepts for participant and a random slope for Recipient (Barr et al., 2013). Models with a more complex random-effects structure (i.e. with Reward or Effort as random slopes) were singular or did not converge (despite using BOBYQA optimisation). A model containing all the three-way interactions between the fixed effects was compared to a more complex model containing also the four-way interaction using the anova function in R. The more complex model did not provide a better fit to the data (AIC: 7109.5 [four-way interaction model] vs. 7094.1 [three-way interactions model]; BIC: 7885.6 vs 7749.6; p=0.413). For the more parsimonious three-way interaction model, there was a significant interaction between Group, Recipient, and Effort (type III Wald test, χ2[4] = 21.48, p<0.001). We ran follow-up tests using the emmeans package in R (Lenth, 2022). Here, we tested the interaction between Group and Recipient at each level of effort, while keeping the reward level constant (average reward level). We found a significant Group × Recipient interaction at effort level 2 (p<0.05: Bonferroni corrected for multiple comparisons). Similarly, in an exploratory follow-up analysis, when we contrasted the two lower effort levels (effort levels 1 and 2) with the two higher effort levels (effort levels 4 and 5), we found an interaction between Group and Recipient at the combined lower effort levels (p=0.035; Bonferroni corrected) but not at the combined higher effort levels (p=1.00).
 
 This pattern of results was driven by the finding that whereas participants in the control group did not show a significant difference in the likelihood of deciding to exert effort on self trials compared to other trials at effort level 1 (p=0.595) or 2 (p=0.882), participants in the stress group favoured putting in effort on self trials compared to other trials even at effort level 1 (p<0.001) and 2 (p<0.001). Thus, both our planned and exploratory analyses suggest that unlike participants in the control group, those in the stress group were less willing to put in effort to gain rewards for another person relative to themselves at a lower level of effort. The estimated marginal means for the three-way interaction between Group, Recipient, and Effort are shown in Figure 3.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig3-v1.jpg)
+
+**Figure 3.:** Follow-up tests showed that the three-way interaction between Group, Recipient, and Effort (type III Wald test, χ2[4] = 21.48, p<0.001) was driven by a significant interaction between Group and Recipient at effort level 2 (*p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** For each participant, we took the average of the ratings across all five effort levels and calculated the difference after the experiment (post) relative to before the experiment (pre). This produced three difference scores indicating how much more effortful, physically demanding, and uncomfortable it was to squeeze the hand dynamometer to the required effort levels after the experiment relative to before. We conducted Mann–Whitney U tests on each difference score to test for any differences between the stress group and control group. This revealed that following the experiment, participants in the stress group rated squeezing to the required effort levels as more physically demanding compared to the control group (medians: stress = 1.80, control = 0.00; p=0.037). There were no group differences in how much effort they reported exerting (p=0.824) or how uncomfortable it was (p=0.351). The results are shown in the box plot. Next, we determined whether changes in how physically demanding participants found squeezing to the required effort level were correlated with how often participants decided to exert effort (i.e. ‘work’ rather than ‘rest’) on self trials, other trials, and across all trials (total effortful choices). Across the whole sample or when analysing the stress group and control group individually, we did not find any significant correlations (see Supplementary file 1b). Moreover, changes in how physically demanding participants found squeezing to the required effort level did not correlate with the proportion of effortful prosocial choices participants made relative to the total number of effortful choices they made (% prosocial choices). Together, this suggests that whilst stressed participants found squeezing to the required effort level more physically demanding following the task relative to before, this was not related to how often participants exerted effort for self rewards or other rewards, nor the proportion of prosocial choices (% prosocial choices).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Estimated marginal means are plotted on a logit scale and were extracted using the emmeans package in R (Lenth, 2022). We ran the same model on the choices as for the main analysis (work = 1; rest = 0) but included the three-way interaction between the factors Group, Recipient, and Block (1:6). Although both groups showed a decline in the number of effortful choices during the experiment (main effect of Block: type III Wald test χ2[5] = 150.28, p<0.001), the two-way interaction between Group and Block (p=0.188) nor the three-way interaction between Group, Recipient, and Block were significant (p=0.138). Additionally, the three-way interaction between Group, Recipient, and Effort was unaffected when controlling for potential block effects (χ2[4]=22.06, p<0.001). This shows that whilst there was a decline in the number of effortful choices throughout the experiment, this was not more pronounced in the stress group, nor was it more pronounced in the stress group for self effortful choices relative to other effortful choices compared to the control group. Note that blocks 1, 3, and 5 were performed following a 6-min run of the Montreal Imaging Stress Test (MIST), and blocks 2, 4, and 6 were performed following the 2-min backwards counting task.
 
 There was a significant interaction between Group and Effort (type III Wald test, χ2[4] = 17.27, p=0.002), but follow-up tests did not reveal any significant differences at any effort level between the groups (all ps>0.26; Bonferroni corrected for multiple comparisons). There was a significant interaction between Recipient and Reward (type III Wald test, χ2[4] = 19.12, p<0.001) and also between Recipient, Effort, and Reward (type III Wald test, χ2[16] = 50.65, p<0.001) showing that the effect of Effort on Reward was different on self- compared to other-benefitting trials. The three-way interactions between Group × Recipient × Reward (p=0.285) and Group × Effort × Reward (p=0.064) were not significant (see Supplementary file 1c and d for the full model output of the choice data).
 
@@ -65,7 +93,7 @@ To summarise, at a lower level of effort, participants in the stress group showe
 
 We conducted additional analyses to rule out the influence of potential fatigue and block effects. The stress group rated squeezing to the required effort level as more physically demanding immediately after the experiment compared to before, which was not seen in the control group (Figure 3—figure supplement 1). However, this was not related to the number of effortful choices for self or other rewards (Supplementary file 1b). Moreover, when we conducted the same mixed-effects logistic regression on participants’ choices but also included the interaction between Group, Recipient, and Block, there was no significant three-way interaction between these factors, nor a significant two-way interaction between Group and Block (Figure 3—figure supplement 2). Additionally, the three-way interaction between Group, Recipient, and Effort was unaffected when controlling for potential block effects (type III Wald test χ2[4] = 22.06, p<0.001). Thus, whilst the stress group rated squeezing to the required effort level as more physically demanding following the experiment, this was not related to the number of effortful choices (for self or other) and the effects of Block on effortful choices (for self or other) did not differ between the group. Thus, changes in how physically demanding participants rated squeezing to the effort levels did not influence decisions to exert effort.
 
-## Social value orientation modulates the impact of perceived stress on effortful prosocial behaviour
+### Social value orientation modulates the impact of perceived stress on effortful prosocial behaviour
 
 To test the hypothesis whether more individualistic participants become even more selfish under stress, we first calculated the proportion of effortful prosocial choices participants made relative to the total number of effortful choices they made (% prosocial choices). In other words, this measured how often participants chose to put in effort (i.e. ‘work’) for the other person and thereby gain a higher reward for the other person relative to the total number of times they chose to put in effort to gain a higher reward (i.e. both for themselves and the other person). This enabled us to determine each participant’s prosocial effort relative to any general stress-induced decline in effortful behaviour. This measure combined all reward and effort levels.
 
@@ -77,11 +105,27 @@ We tested whether SVO angle and Group (i.e. stress vs. control) interacted to in
 
 **Figure 4.:** Left panel: the interaction between social value orientation (SVO) angle and perceived stress for the proportion of prosocial choices (B = 0.246, SE = 0.103, p=0.020). Participants with a more individualistic SVO angle (–1 SD; black dashed line) became more selfish (reduced proportion of prosocial choices) at increasing levels of perceived stress; this was not seen in more prosocial participants (+1 SD; orange solid line). Middle panel: the interaction between SVO angle and perceived stress (B = −0.044, SE = 0.018, p=0.017) for dorsal anterior cingulate cortex (dACC) activation to subjective value (SV). Participants with a more prosocial SVO angle showed reduced activation in the dACC to SV (collapsed across self and other trials) at increasing levels of perceived stress; this was not seen in participants with a more individualistic SVO angle. Right panel: interaction between SVO angle and Recipient for dACC activation to SV (B = 0.061, SE = 0.028, p=0.034). Participants with a more prosocial SVO angle showed increased activation to SVother (blue dashed line). Responses to SVself (red solid line) did not change at increasing SVO angle. The ribbons represent the 95% confidence intervals and each point represents the individual data points from the participants (note, in the middle and right panel each participant provided two data points - one for the self condition and one of the other condition).
 
-## Perceived stress modulates AI and dACC responses to SVself relative to SVother during effort-based decisions
+### Perceived stress modulates AI and dACC responses to SVself relative to SVother during effort-based decisions
 
 To identify the neural mechanisms underlying the effects of stress on prosocial behaviour, we analysed brain areas which during the offer period responded to the SV of the chosen option relative to the non-chosen option (i.e. work vs. rest) on each trial. We focused our analysis on the AI and dACC using anatomical masks independently determined by Lockwood et al., 2022. Both areas were of strong a priori interest as they have been reliably implicated in effort-based decision-making (Chong et al., 2017; Croxson et al., 2009; Engström et al., 2014; Lockwood et al., 2022; Prévost et al., 2010) and show a consistent sensitivity to stress (Ahs et al., 2006; Berretz et al., 2021; Cerqueira et al., 2007; Dedovic et al., 2009; Gathmann et al., 2014; King et al., 2009; Kogler et al., 2015; Morgado et al., 2015; Pruessner et al., 2008; Radley et al., 2005; Starcke and Brand, 2012; Wang et al., 2005).
 
-To calculate the SV for each participant on each trial, we used an established model which has consistently shown to best characterise participants’ choices on this task (Lockwood et al., 2017; Lockwood et al., 2021; Lockwood et al., 2022). The model contains two separate parabolic effort discounting parameters (Kself, Kother) and one temperature parameter (β):Subjectivevalue=Reward−(Discount×Effort2)Discountparameteronselftrails=KselfDiscountparameteronothertrails=Kother
+To calculate the SV for each participant on each trial, we used an established model which has consistently shown to best characterise participants’ choices on this task (Lockwood et al., 2017; Lockwood et al., 2021; Lockwood et al., 2022). The model contains two separate parabolic effort discounting parameters (Kself, Kother) and one temperature parameter (β):
+
+$$
+Subjectivevalue=Reward−(Discount\timesEffort^{2})
+$$
+
+
+
+$$
+Discountparameteronselftrails=K_{self}
+$$
+
+
+
+$$
+Discountparameteronothertrails=K_{other}
+$$
 
 Maximum likelihood estimation and a model comparison approach confirmed that this was the best-fitting model – in terms of the lowest Bayesian information criterion (BIC; see Figure 1—figure supplement 1). We further validated this winning model by performing parameter recovery (see Supplementary file 1a). Each participant’s Kself and Kother values were used to calculate the SV of the chosen option relative to the non-chosen option (i.e. work vs. rest) on each trial using the winning model.
 
@@ -89,11 +133,102 @@ These values were then used during the first-level analysis as a parametric modu
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87271/elife-87271-fig5-v1.jpg)
 
-**Figure 5.:** B = −0.566, SE = 0.237, p=0.019) and anterior insula (AI: B = −0.547, SE = 0.247, p=0.029).These show the percentage signal change to subjective value (SV) during the offer phase associated with perceived stress on self and other trials. For the dACC, simple slopes analysis revealed a negative association between perceived stress and SVother (blue dashed line) but not between perceived stress and SVself (red solid line). The ribbons represent the 95% confidence intervals. Each point represents the individual data points from the participants for the self (red squares) and other (blue triangles) condition.
+**Figure 5.:** These show the percentage signal change to subjective value (SV) during the offer phase associated with perceived stress on self and other trials. For the dACC, simple slopes analysis revealed a negative association between perceived stress and SVother (blue dashed line) but not between perceived stress and SVself (red solid line). The ribbons represent the 95% confidence intervals. Each point represents the individual data points from the participants for the self (red squares) and other (blue triangles) condition.
 
 When linking activation difference in dACC and AI to behaviour, we found that – independent of the stress manipulation – the difference in activation between SVself and SVother in the dACC predicted the proportion of prosocial choices. Thus, greater activation to SVself relative to SVother predicted a lower proportion of prosocial choices (B = −0.704, SE = 0.339, p=0.041). This relationship was not present in the AI (B = −0.423, SE = 0.332, p=0.205).
 
 To complement the ROI analyses, we conducted whole-brain analyses with a statistical threshold of p<0.05 family-wise error (FWE) corrected at the cluster level with a cluster defining threshold of p<0.001 across the whole brain. For each participant, we created contrast images for SVself – SVother (1 -1) and SVother – SVself (–1 1). These contrast images were then used in one-sample t-tests with Perceived Stress as a covariate. This revealed several complementary regions which responded preferentially to SVself compared to SVother at increasing levels of perceived stress, including the dorsolateral prefrontal cortex (dlPFC; middle frontal gyrus: x = –46, y = 20, z = 40; Table 1).
+
+**Table 1.**
+ Regions resulting from a whole-brain analysis in which activity scaled more with SVself compared to SVother that covaried with perceived stress (using a statistical threshold of p<0.05 FWE corrected at the cluster level having thresholded at p<0.001 across the whole brain).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Peak voxel</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brain region</td>
+      <td>x</td>
+      <td>y</td>
+      <td>z</td>
+      <td>Clustersize (k)</td>
+      <td>Z</td>
+    </tr>
+    <tr>
+      <td>SVself &gt; SVother covarying with perceived stress</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R inferior frontal gyrus (pars opercularis)</td>
+      <td>44</td>
+      <td>18</td>
+      <td>34</td>
+      <td>430</td>
+      <td>4.61</td>
+    </tr>
+    <tr>
+      <td>R midcingulate cortex</td>
+      <td>12</td>
+      <td>-6</td>
+      <td>44</td>
+      <td>157</td>
+      <td>4.57</td>
+    </tr>
+    <tr>
+      <td>L middle occipital gyrus</td>
+      <td>–38</td>
+      <td>–84</td>
+      <td>28</td>
+      <td>135</td>
+      <td>4.23</td>
+    </tr>
+    <tr>
+      <td>L thalamus</td>
+      <td>–10</td>
+      <td>–14</td>
+      <td>6</td>
+      <td>124</td>
+      <td>4.14</td>
+    </tr>
+    <tr>
+      <td>L middle frontal gyrus</td>
+      <td>–46</td>
+      <td>20</td>
+      <td>40</td>
+      <td>327</td>
+      <td>3.99</td>
+    </tr>
+    <tr>
+      <td>L middle temporal gyrus</td>
+      <td>–46</td>
+      <td>–58</td>
+      <td>14</td>
+      <td>187</td>
+      <td>3.98</td>
+    </tr>
+    <tr>
+      <td>R middle occipital gyrus</td>
+      <td>44</td>
+      <td>–86</td>
+      <td>16</td>
+      <td>144</td>
+      <td>3.91</td>
+    </tr>
+  </tbody>
+</table>
+
+_FWE, family-wise error; L, left; R, right; SV, subjective value._
 
 As with the behavioural analysis, we investigated whether SVO angle modulated the impact of perceived stress on responses to SVself and SVother in the dACC and AI. We conducted a linear mixed-effects model with SVO angle, Perceived Stress, and Recipient as predictors and the parameter estimates as the dependent variable. As there was no significant three-way interaction between SVO angle, Perceived Stress, and Recipient in either region (ps>0.089), which would have mirrored the behavioural data, we ran simpler models including only the interactions between SVO angle and Recipient as well as SVO angle and Perceived Stress. In the dACC, there was a significant interaction between Perceived Stress and SVO angle (B = −0.044, SE = 0.018, p=0.017) (Figure 4, middle panel). Simple slopes analyses revealed that those with a more prosocial SVO (+1 SD; 27.35°) showed a significant decline in activation to SV at increasing levels of perceived stress (B = −0.537, SE = 0.200, p=0.009), but this was not the case for participants with a more individualistic SVO (–1 SD; 11.00°; B = 0.182, SE = 0.189, p=0.337). There was also a significant interaction between SVO angle and Recipient in the dACC (B = 0.061, SE = 0.028, p=0.034) (Figure 4, right panel). Simple slopes analyses revealed a positive association between SVO angle and SVother (B = 0.043, SE = 0.021, p=0.041) but not SVself (B = −0.018, SE = 0.021, p=0.399). Thus, an increase in dACC activation to SVother relative to SVself was associated with a more prosocial SVO angle. In the AI, there was no significant interactions involving SVO angle (ps>0.126).
 
@@ -117,7 +252,7 @@ Our study extends previous findings demonstrating the importance of individual d
 
 The neuroimaging data showed – independent of our stress manipulation – that SVO angle predicted increased responses to SVother but not to SVself (Figure 4, right panel). This is in line with previous work showing that SVO modulates dmPFC/dACC activity depending on whether decisions are social or self-interested (Kuss et al., 2015). Additionally, participants with a more prosocial SVO showed reduced responses in the dACC to SV (across both self and other trials) at greater levels of perceived stress (Figure 4, middle panel). This suggests that more prosocial individuals may become less sensitive to SV overall following stress, whilst the responses of more individualistic participants to SV do not change under stress. Trying to link these activation differences to changes in effortful prosocial behaviour is difficult given the absence of the three-way interaction between SVO angle, Perceived Stress, and Recipient, which would have mirrored the behavioural results. Overall, differences in activation between SVself and SVother in the dACC predicted the proportion of prosocial choices, so greater activation to SVself relative to SVother predicted a lower proportion of prosocial choices. Thus, it remains unclear how activation differences to SV across both self trials and other trials relates to changes in prosocial behaviour under stress. Schulreich et al., 2022 found that a decline in charitable donations following increases in cortisol in high mentalisers was related to a reduced representation of value for donations in the right dlPFC. Whilst there are important differences between the present study and Schulreich et al., 2022, such as the way in which prosocial behaviour was measured, both studies suggest that existing differences in social preferences and abilities (i.e. mentalising, SVO) can have a detrimental effect on the neural representations of value following acute stress. Establishing how these changes in neural representations of value impact behaviour following acute stress is a challenge for future work.
 
-## Future directions and implications
+### Future directions and implications
 
 Participants earned money for either themselves or the next participant in the study who was not known to them. Future work should manipulate the social distance of the other recipient. This will determine whether participants under stress are more willing to put in effort for close others, such as family or friends (Margittai et al., 2015; Margittai et al., 2018). Additionally, it will be important to explore whether we see similar reductions in prosocial motivation under stress when preventing harm in others (Hartmann et al., 2022) rather than gaining rewards for them.
 
@@ -125,33 +260,33 @@ Since there are known sex/gender differences in social behaviours following acut
 
 The experience of stress is a common everyday occurrence (Hassard et al., 2018), and the negative effects of prolonged stress for our physical and mental health are well-documented (Lecrubier, 2001). Our results show that acute stress is not only potentially detrimental for our own well-being but can have negative consequences for our behaviour towards others. Given the importance of effortful prosocial behaviour for relationships and, more generally, for social cohesion, this highlights the importance of tackling the major sources of stress, such as low income (Haushofer and Fehr, 2014) and inequality (Pickett and Wilkinson, 2010), as well as providing individuals with the resources to cope with stress when it does occur (e.g. Meichenbaum, 2017).
 
-## Conclusion
+### Conclusion
 
 Our study demonstrates that participants under acute stress were less willing to exert effort for another person’s benefit at a low level of effort. The adverse effects of acute stress on prosocial effortful behaviour were most marked in more selfish individuals. These findings show that using effort-based tasks and incorporating trait differences in prosocial tendencies could be key to understanding changes in prosocial behaviour under acute stress. Additionally, we found that the effects of stress were related to activation differences in the AI and dACC – areas strongly implicated in effort-based decisions and sensitive to stress effects. Thus, we provide valuable insight into the potential neural mechanisms underlying stress-induced changes in effortful prosocial behaviour. Moreover, the results raise the possibility that shifts to automatic or habitual responding under stress could also apply within the social domain (Hermans et al., 2014). Together, this emphasises the need to tackle the sources of stress and provide individuals with the resources to cope with it, so that the potential detrimental effects of stress on prosocial behaviour are curtailed.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We recruited healthy, right-handed, male students who were non-smokers or smoked less than five cigarettes per day. Only male participants were included as previous work has shown that they show a stronger salivary glucocorticoid response to laboratory stressors (Kirschbaum et al., 1999). We did not recruit participants who had studied or were studying psychology nor those who had taken part in previous stress induction studies. To achieve 80% power to detect a small-to-medium effect size (f = 0.15; η2 = 0.022) in a between-subject (Group: stress vs. control) by within-subject (Recipient: self vs. other) design (calculated using G*Power, Faul et al., 2007), we required a sample size of at least 90 participants. To account for potential exclusions, we recruited 96 participants in total.
 
 Three participants were excluded due to either a disruption during the scanning (n = 1), having previously worked in the lab (n = 1), or never choosing to work on other trials (n = 1). This left a sample of 93 participants (mean age = 23.5 years, SD = 2.89, range = 18–31) for the behavioural analysis with 47 in the stress group and 46 in the control group. The study was approved by the ethics committee of the University of Vienna (reference number: 00412), and all participants provided written informed consent. Participants were paid 40 euros for their participation plus the money they received from the prosocial effort task (between 6 and 8 euros).
 
-## Procedure
+### Procedure
 
 Participants came to the lab twice. In the first session, participants were familiarised with the scanning environment and completed a series of online questionnaires, including SVO (Murphy et al., 2011; Murphy and Ackermann, 2014). Participants were told not to consume any alcohol, cigarettes, or medication, nor to engage in vigorous exercise 24 hr before the second session, and, 2 hr before the session, not to consume any food or drinks other than water. During the second session, participants completed the stress induction procedure (or a control procedure) and prosocial effort task within the MRI scanner. Saliva samples and visual analogue scales were used throughout the second session to measure cortisol and perceived stress. The second session was within approximately 1 wk of the first session, lasted 160 min, and always took place between 12:00 and 18:00 to account for diurnal fluctuations in cortisol.
 
-## Stress induction
+### Stress induction
 
 Participants in the stress group completed an adapted version of the Montreal Imaging Stress Test (MIST; Dedovic et al., 2005; Tomova et al., 2017) in which they completed challenging mental arithmetic questions under time pressure. During the MIST, participants saw their live and, seemingly, ‘below average’ performance on a scale at the top of the screen and a video stream of the experimenters observing their performance. This ensured social evaluation from the experimenters who also reminded participants that they could not use their data if their performance did not reach the group average. Throughout the scanning session, participants completed three 6-min blocks of the MIST and also completed a counting task three times in 2-min blocks (Kirschbaum et al., 1993). Here, participants were required to count backwards in steps of 13 or 17 from a large number (e.g. 2053, 2036, 2019, etc.). The experimenters asked participants to start the count again if they made a mistake or speed up if responses were not quick enough. Participants in the control group completed the same mental arithmetic questions in the MIST but without the time pressure and social evaluation. The experimenters wore white lab coats in the stress condition but not in the control condition. For the counting task, the control group counted silently in steps of either 5, 10, or 20 for 2 min and did not receive feedback from the experimenters. Participants completed a MIST block, a run of the prosocial effort task, the counting task, and another run of the prosocial effort task, and this sequence was repeated three times during the scanning period. This ensured that participants’ psychological and physiological stress responses were maintained throughout the scanning period (Figure 2).
 
-## Cortisol and stress measurements
+### Cortisol and stress measurements
 
 To measure cortisol responses, saliva samples were collected throughout the experiment using oral swabs (Sarstedt Salivette) which were placed in participants’ mouths for 2 min. Six saliva samples were collected (all times are relative to the start of stress induction): upon arrival (sample 1; –42 min), before the first block (sample 2; 0 min) of the MIST after the second MIST (sample 3; 38 min) and during the third MIST (sample 4; 64 min), at the end of the scan (sample 5; 94 min), and then following debrief (sample 6; 119 min). Following each session, saliva samples were frozen and stored at –20°C until analysis. During each saliva sample, we asked participants to complete a visual analogue scale to determine their perceived stress levels (‘Right now I feel stressed’) on a 7-point scale from ‘not at all’ (1) to ‘very much’ (7). Additionally, participants completed these ratings following the first MIST (rating 3; 11 min) and following the second counting task (rating 5; 51 min), although saliva samples were not collected at these timepoints (see Figure 2).
 
 After thawing, the oral swabs were centrifuged at 3000 rpm for 5 min, which resulted in a clear supernatant of low viscosity. Salivary concentrations were measured using commercially available chemiluminescence immunoassay with high sensitivity (IBL International, Hamburg, Germany). The intra- and inter-assay coefficients for cortisol were both below 9%. Three subjects were excluded from the cortisol analysis as they failed to provide sufficient saliva in five, three, and two (out of a possible six) saliva samples, respectively. One participant did not provide sufficient saliva for his fifth sample, but this value was interpolated using his fourth and sixth samples to allow AUC to be calculated. This created a final sample of 91 participants (stress = 46, control = 45) whose saliva samples were analysed. Three participants had a missing visual analogue scale stress rating, and these were interpolated in the same manner to allow AUC to be calculated.
 
-## Prosocial effort task
+### Prosocial effort task
 
 We used the prosocial effort task developed by Lockwood et al., 2017. On each trial, participants had a choice between two options: work or rest. The rest option always involved receiving a low reward for no effort (one credit for no effort), whereas the work option involved putting in physical effort for a higher reward (more credits for more effort). The rest option was always the same, whereas the effort level and reward level for the work option differed on each trial. There were five reward levels – 2, 4, 6, 8, or 10 credits – and these credits were converted to money at the end of the study. There were five effort levels – 30, 40, 50, 60, or 70% of participants’ MVC – and the effort level was indicated by how filled the circle was, that is, the more filled the circle, the more effort was required. Each participants’ MVC was collected at the start of the study by asking them to squeeze an MR-compatible hand dynamometer (Current Designs Inc, Philadelphia, USA) as hard as possible. Thus, the effort level was calibrated to each participants’ individual strength. Before and immediately after the experiment, participants experienced each effort level and rated (1) how much effort they exerted, (2) how physically demanding it was, and (3) how uncomfortable it was to squeeze to the required effort level on a 21-point Likert scale.
 
@@ -159,21 +294,21 @@ Each trial started with a variable jitter (2–3.5 s), after which participants 
 
 On half the trials, participants made decisions whether to put in effort to earn more money for themselves (self trials), and on the other half of trials, they could put in effort to earn money for the next participant in the study (other trials). On self trials, ‘You’ (German: ‘Du’) appeared in the middle of the screen and the stimuli were red, whereas, on other trials ‘Thomas’ (i.e. the name of the next participant) was displayed in the middle of the screen and the stimuli were presented in blue (Figure 1). At the end of the study, participants received the money they earned for themselves plus the money the previous participant had earned for them. Each combination of effort level and reward level was presented three times in self trials and three times in other trials. This created a total of 150 trials presented in a pseudorandomised order and split into six runs of 25 trials. The task was presented using the Cogent toolbox (http://www.vislab.ucl.ac.uk/cogent.php) in MATLAB (MathWorks).
 
-## Computational modelling of choices
+### Computational modelling of choices
 
 We used a model comparison approach (Lockwood et al., 2017) in which we compared models with a single discount parameter, K, to those with a separate discount parameter for self (Kself) and other (Kother), and models with a single noise parameter, β, to those with a separate noise parameter for self (βself) and other (βother) trials. We also compared models in which rewards were discounted linearly (subjective value = reward - effort * k), hyperbolically (subjective value = reward/[1 + [effort * k]]), and parabolically (subjective value = reward – effort2 * k). In total, these combinations (2 × 2 × 3) created 12 different models which we compared using the BIC based on the log-likelihood. The discount parameter, k, was bounded from 0 to 1.5 to ensure an appropriate range.
 
-## FMRI acquisition and analysis
+### FMRI acquisition and analysis
 
 MRI data were collected using a 3 Tesla MRI scanner (Skyra, Siemens Medical) and a 32-channel-head coil. The structural scans were acquired using a magnetization prepared rapid gradient echo (MPRAGE) sequence with the following parameters: TR = 2300 ms; TE = 2.43 ms; flip angle = 8°, voxel size = 0.8 mm isotropic; field of view (FOV) = 240 × 240 mm. BOLD functional scans were acquired with a multiband accelerated EPI sequence with the following parameters: TR = 1200 ms; TE = 34 ms; flip angle = 66°; slices = 52; multiband acceleration factor = 4 (i.e. 13 excitations per TR); FOV = 210 × 210 mm, voxel size = 2 × 2 × 2 mm.
 
-## Preprocessing
+### Preprocessing
 
 Data were preprocessed and analysed using SPM12 in MATLAB (http://www.fil.ion.ucl.ac.uk/spm/). The functional images were slice-time corrected to the middle slice, realigned to the mean image, and smoothed with a Gaussian kernel (5 mm full-width at half maximum). The structural scan was co-registered to the mean functional scan from the first run and then segmented into grey matter, white matter, cerebrospinal fluid, bone, soft tissue, and air. Diffeomorphic Anatomical Registration Through Exponentiated Lie Algebra (Ashburner, 2007) was used to normalise both the structural and functional scans to the Montreal Neurological Institute template.
 
 Next, we looked at head motion using framewise displacement (FD; Power et al., 2012) and excluded four participants who showed FD > 0.5 mm in over 35% of scans in two or more runs. Two particpiants showed an FD > 0.5 mm in over 35% of scans in run 6. These runs were excluded but the two participants remained in the analysis. Data from run 2 was missing for one participant due to a technical issue during the scan, so this run was also not included in the neuroimaging analysis. Finally, as outlined above, one subject in the stress group never chose to exert effort for the other, so was excluded from the analysis. This left a final sample of 89 participants (45 control; 44 stress) for the imaging analysis, with 3 out of these 89 participants missing one run from the six.
 
-## FMRI design
+### FMRI design
 
 To create our design matrix, regressors were constructed for three events in the trial – the offer phase, force phase, and outcome phase (Lockwood et al., 2022) – and these were convolved with SPM’s canonical haemodynamic response function. Each regressor had an associated parametric modulator: for the offer phase, this was the SV of the chosen option relative to SV of the non-chosen option; for the force phase, this was the chosen effort level (0:5); and for the outcome phase, this was the reward level (i.e. the number of credits) received at the end of the trial. Our hypotheses and research questions concerning the effects of acute stress concerned the offer phase, that is, when participants were deciding whether to exert effort or not (work vs. rest). Therefore, we limited our reporting to this event. We split the trials according to the recipient of the reward, so there were separate parametric regressors for self and other trials. If a participant did not respond quickly enough when making their choice (within 3.2 s), then this trial was labelled as a missed trial and was included as an additional regressor.
 

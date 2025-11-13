@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.46997.001 In mice, neonatally-developing, self-reactive B-1 cells generate steady levels of natural antibodies throughout life. B-1 cells can, however, also rapidly respond to infections with increased local antibody production. The mechanisms regulating these two seemingly very distinct functions are poorly understood, but have been linked to expression of CD5, an inhibitor of BCR-signaling. Here we demonstrate that TLR-mediated activation of CD5+ B-1 cells induced the rapid reorganization of the IgM-BCR complex, leading to the eventual loss of CD5 expression, and a concomitant increase in BCR-downstream signaling, both in vitro and in vivo after infections of mice with influenza virus and Salmonella typhimurium. Both, initial CD5 expression and TLR-mediated stimulation, were required for the differentiation of B-1 cells to IgM-producing plasmablasts after infections. Thus, TLR-mediated signals support participation of B-1 cells in immune defense via BCR-complex reorganization.
+In mice, neonatally-developing, self-reactive B-1 cells generate steady levels of natural antibodies throughout life. B-1 cells can, however, also rapidly respond to infections with increased local antibody production. The mechanisms regulating these two seemingly very distinct functions are poorly understood, but have been linked to expression of CD5, an inhibitor of BCR-signaling. Here we demonstrate that TLR-mediated activation of CD5+ B-1 cells induced the rapid reorganization of the IgM-BCR complex, leading to the eventual loss of CD5 expression, and a concomitant increase in BCR-downstream signaling, both in vitro and in vivo after infections of mice with influenza virus and Salmonella typhimurium. Both, initial CD5 expression and TLR-mediated stimulation, were required for the differentiation of B-1 cells to IgM-producing plasmablasts after infections. Thus, TLR-mediated signals support participation of B-1 cells in immune defense via BCR-complex reorganization.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ This study addresses some of these questions and reconciles previous divergent f
 
 ## Results
 
-## CD5 negative B-1 cells are responsible for local IgM secretion after influenza infection
+### CD5 negative B-1 cells are responsible for local IgM secretion after influenza infection
 
 We previously identified three populations of cells involved in natural IgM secretion: CD5+ B-1 cells, CD5- B-1 cells, and plasma cells, the latter are CD19- and CD138/Blimp-1+ (Savage et al., 2017) and also B-1-derived (B-1PC) (Savage et al., 2017). This was shown using a ‘neonatal chimera’ model, in which host B-1 cells are replaced in neonatal host mice by congenic but Ig-allotype-disparate donor B-1 cells, while the host B-2 cells remain of the host and thus its allotype (Lalor et al., 1989). After full reconstitution B-1 cells as well as their secreted IgM can be identified and quantified using allotype-specific anti-IgM (and anti-IgD) antibodies. Because B-1-derived IgM is important for protection from lethal influenza infection (Baumgarth et al., 2000), we sought to determine which B-1 cell populations generate IgM in the draining (mediastinal) lymph nodes (MedLN) after influenza infection (Choi and Baumgarth, 2008).
 
@@ -60,15 +60,23 @@ Because CD5- B-1 cells and IgM-secreting B-2 derived plasmablasts express a simi
 
 Because we had shown previously that Blimp-1+ B-1PC have reduced or absent CD19-expression (Savage et al., 2017) and found here that these cells are present after influenza infection (Figure 1A–B) and often lacked CD5-expression (Figure 1C), we expanded the analysis to include all IgMb-expressing (B-1 donor-derived) and IgMa negative (recipient-derived) cells, regardless of expression of CD19 or other surface markers (Figure 1H). Of note, a small number of double positive (IgMa+IgMb+) cells were always observed but excluded from the analysis, as these are likely IgMa+ B-2 cells with surface-bound serum IgM (B-1-derived and thus IgMb), attached via surface FcµR (Nguyen et al., 2017) (Figure 1A/H). In contrast to the analysis described above, this expanded analysis of all B-1 donor Igh-b cells revealed that the frequency of CD5 negative MedLN B-1 cells increased after influenza infection (Figure 1H–I), consistent with the development of CD5- B-1PC in this compartment (Figure 1A–C). Furthermore, FACS-sorting and culture of CD5+ and CD5- B-1 cells showed that a higher frequency and total number of CD5- B-1 cells secreted IgM in the MedLN compared to CD5+ B-1 cells on days 3, 5, and seven after infection (Figure 1J). Thus, CD5- B-1 cells increase in the MedLN and are a major source of local IgM production after influenza infection.
 
-## CD5+ B-1 cells decrease CD5 expression after LPS stimulation in vitro
+### CD5+ B-1 cells decrease CD5 expression after LPS stimulation in vitro
 
 To reconcile our previous findings about the role of CD5+ B-1 cells in influenza infection (Choi and Baumgarth, 2008; Waffarn et al., 2015), we considered whether CD5 surface expression may change after B-1 cell activation. Indeed, approximately 40% of highly purified FACS-sorted CD5+ B-1 cells from the peritoneal cavity lacked CD5 expression when cultured for 3 days in the presence but not absence of LPS, a stimuli that is known to induce IgM production by body cavity B-1 cells (Su et al., 1991) (Figure 2A). CD5 surface expression was unaffected during the first 2 cell divisions following stimulation, but was then quickly lost during the next 1–2 divisions (Figure 2B). Both, surface-expressed CD5 and cd5 mRNA, as assessed by qRT-PCR, were decreased among B-1 cells after 3 days of LPS stimulation (Figure 2C–D). Surface CD5 levels were decreased by 1.5 days of culture, while cd5 mRNA was not reduced until 2 days after culture onset (Figure 2C–D). The stimulated cells began secreting IgM before CD5 levels were reduced, but the increase in IgM secretion was more pronounced after 2 days of stimulation compared to the earlier time points (Figure 2E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46997/elife-46997-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative FACS plots (left) and mean percentage ± SD (right) of CD5+ and CD5- B-1 cells after FACS-purified peritoneal cavity CD19+ CD23- CD5+ B-1 cells were cultured with or without 10 µg/ml LPS for 3 days (n = 18). (B) CD5 expression on FACS-purified Efluor 670-stained proliferating peritoneal cavity CD5+ B-1 cells stimulated with LPS compared to CD5 FMO (fluorescence minus one) control. (C) Mean CD5 MFI ± SD, determined by flow cytometry, (D) mean Log(cd5 mRNA expression) ± SD, determined by qRT-PCR, and (E) mean IgM secretion ± SD (µg/ml), determined by ELISA, after purified peritoneal cavity CD5+ B-1 cells were cultured for indicated times with LPS (n = 3–4 per time and data point). Results are combined from 4 (A), or are representative of >5 (B), and 2 (C-E) independent experiments, respectively. Values in (C–E) were compared using an unpaired Student’s t test (*=p < 0.05, **=p < 0.005, ***=p < 0.0005, ****=p < 0.00005).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46997/elife-46997-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** CD5+ and CD5- B-1 cells isolated by FACS from the body cavities of wild type C57BL/6 mice were cultured separately or mixed as indicated for 72 hr in the presence or absence of LPS. (A) Sample FACS plots from cultures with or without LPS of purified CD5+ B-1 cells mixed or not with indicated percentages of CD5- B-1 cells. (B) Mean CD5 MFI ± SD (left) and mean percentage ± SD of CD5+ cells (right) of cultures in A (n = 3). (C) CD5+ (green) and CD5- (purple) B-1 cells were each labeled with either CFSE or Efluor670. Dyes used to label each population were switched for repeated experiments. (D) Mean percentage ± SD of live cells, or (E) of divided cells, (F) mean number of divisions ± SD among cells that had divided, and (G) mean percentage ± SD of cell numbers on day three compared to input numbers for CD5+ and CD5- cells cultured with LPS (n = 8). Results are representative of 2 (A–B) or 4 (D–G) independent experiments. Values in (B) and (D–G) were compared using an unpaired Student’s t test (*=p < 0.05, ****=p < 0.00005).
 
 A number of control studies were performed to ensure that the reduced frequencies of CD5+ B-1 cells in the cultures were not due to selective expansion of small numbers (<5%) of CD5- cells that might have contaminated the cultures at onset. First we separated CD5+ and CD5- B-1 cells from the body cavities by FACS to very high purities, and then cultured pure (100%) CD5+ B-1 cells, as well as cultures of CD5+ B-1 cells to which we added 1% and 5% CD5- B-1 cells, respectively. The data showed that the frequencies of CD5+ and CD5- cells after 3 days of culture were unaffected by the initial composition of the culture wells (Figure 2—figure supplement 1A). There was no significant difference in either CD5 MFI or in the percent of CD5+ and CD5- cells on day 3 of culture, independent of whether small numbers of CD5- cells were added to the CD5+ B-1 cell cultures (Figure 2—figure supplement 1B). Thus, small percentages of CD5- B-1 cells at culture onset, representative of potential sort impurities, could not explain the lack of CD5 expression by the CD5+ B-1 cells stimulated with LPS for 3 days.
 
 Next, we compared the ability of CD5+ and CD5- B-1 cells to survive and/or proliferate with and without LPS stimulation to ensure that CD5- B-1 cells do not demonstrate a more robust response than CD5+ B-1 cells. To ensure that the two populations were exposed to the same culture conditions, CD5+ and CD5- B-1 cells were sorted, labeled with different proliferation dyes, and cultured together (Figure 2—figure supplement 1C). Compared to B-1 cells that expressed CD5 on day 0, CD5- cells did neither demonstrate better survival (Figure 2—figure supplement 1D) nor enhanced proliferation in response to LPS stimulation compared to the CD5+ cells, in terms of both, the percentage of cells that underwent division, as well as the numbers of divisions each B-1 cell underwent (Figure 2—figure supplement 1E–F). In fact, the CD5+ B-1 cells had better overall survival rates compared to CD5- B-1 cells. Reflecting the similar rates of proliferation and the increased survival of the CD5+ B-1 cells, populations of B-1 cells that expressed CD5 at culture onset were present at higher frequencies of input cells compared to B-1 cells that were CD5 negative (Figure 2—figure supplement 1G). We conclude that CD5+ B-1 cells lose CD5 surface and mRNA expression after in vitro LPS stimulation.
 
-## CD5+ B-1 cells differentiate into CD5- IgM secreting cells after stimulation with multiple TLR agonists
+### CD5+ B-1 cells differentiate into CD5- IgM secreting cells after stimulation with multiple TLR agonists
 
 Endosomal TLR agonists Imiquimod (TLR7) and ODN CpG 7909 (TLR9) also induced CD5 downregulation on CD5+ B-1 cells after 3 days of culture (Figure 3A), as did stimulation with lipids from Mycobacterium tuberculosis (Mtb lipids), which activate cells primarily through TLR2 (Basu et al., 2012) (Figure 3C). These findings are consistent with the loss of CD5 expression seen after stimulation with various TLR agonists by Kreuk et al. (2019). Similar to LPS stimulation, CD5 expression decreased as the cells divided (Figure 3B). In contrast, stimulation of CD5+ B-1 cells isolated from mice lacking all TLR-signaling due to a deletion of genes encoding Unc93, TLR2 and TLR4 (kind gift of Greg Barton, UC Berkeley), were unable to respond with proliferation (Figure 3D), and failed to lose CD5 (not shown). Thus, B-1 cells were stimulated via TLR-engagement and not via the BCR. In all instances, the loss of CD5 was correlated with the differentiation of CD5+ B-1 cells to IgM-secreting cells, as stimulation of these cells with Imiquimod, CpG, and LPS for 3 days resulted in increased percentages of CD138+ cells (Figure 3E–F) and an increase in IgM concentrations in the culture supernatants (Figure 3G).
 
@@ -78,17 +86,25 @@ Endosomal TLR agonists Imiquimod (TLR7) and ODN CpG 7909 (TLR9) also induced CD5
 
 Finally, we examined whether phosphatidylcholine (PTC)-binding B-1 cells can lose CD5 surface expression after TLR-stimulation. PTC is a well-known specificity of a large subset of peritoneal cavity CD5+ B-1 cells (Mercolino et al., 1988; Arnold and Haughton, 1992). PTC-binding B-1 cells, identified by incubation of cells with a fluorescent PTC-liposome (kind gift of A. Kantor, Stanford University), lost CD5 expression similarly to PTC non-binders (Figure 3H). We conclude that TLR-mediated stimulation of CD5+ B-1 cells (‘B-1a’) causes the loss of CD5 surface expression, making these cells phenotypically indistinguishable from the proposed ‘sister’ B-1 cell population, the CD5- ‘B-1b’ cells.
 
-## CD5+ B-1 cells become CD5- IgM ASC in the MedLN after Influenza infection
+### CD5+ B-1 cells become CD5- IgM ASC in the MedLN after Influenza infection
 
 These results raised the possibility that pleural cavity CD5+ B-1 cells respond to influenza virus infection with down-regulation of CD5 in the MedLN. The data would explain the increases in CD5- B-1 cells in the MedLN after influenza infection (Figure 1). They would also explain how the frequencies of CD5- B-1 cells increased at that site, despite the fact that we had shown previously with neonatal chimeras reconstituted with only CD5- B-1 cells that CD5- B-1 cells cannot enter the MedLN after influenza infection, and that the CD5+ B-1 cells were sufficient to induce the entire B-1 cell response (Choi and Baumgarth, 2008).
 
 To confirm and expand these data and because these previous studies showed that only CD5+ B-1 cells could enter the MedLN, we established neonatal chimeras with varying mixes of CD5+ and CD5- B-1 cells (Figure 4A) and tested whether we could see a correlation between the frequencies of CD5+ and CD5- cells in the MedLN and/or the levels of B-1-derived IgM secretion in MedLN after influenza infection. For clarity we binned the results into chimeras reconstituted with >50% CD5- B-1 cells,>50% CD5+B-1 cells or only CD5+ B-1 cells (Figure 4B). As shown previously (Choi and Baumgarth, 2008), MedLN of mice reconstituted with mostly CD5- B-1 cells had reduced MedLN B-1 cell after infection (Figure 4B). Of note, among the total donor B-1 cells in the MedLN, the frequencies of CD5+ and CD5- cells were similar, regardless of the initial percentage of CD5+ cells (Figure 4C–D), consistent with the CD5+ B-1 cells losing surface CD5 expression. This is further consistent with the fact that in chimeras generated with only CD5+ B-1,>50% of B-1 cells in the MedLN lacked CD5 expression (Figure 4D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46997/elife-46997-fig4-v1.jpg)
+
+**Figure 4.:** (A) Neonatal chimeric mice were generated with FACS sorted CD19+ CD23- Ighb+ CD5+ (100%, blue), mostly CD5+ (orange), or mostly CD5- (green) peritoneal cavity-derived B-1 cells and infected with influenza A/Puerto Rico 8/34 for 7 days. (B) Mean number ± SD of B-1 cells in the MedLN of mice 7 days after infection. (C) FACS plot and (D, left) mean percentage ± SD of Dump- IgMb+ IgMa CD5+ and CD5- MedLN B-1 cells on day 7. CD5 FMO (fluorescence minus one) control for CD5. (D, right) Mice were grouped by initial percentage of CD5+ and CD5- B-1 cells (left) and % MedLN CD5+ B-1 cells present on days 0 (initial %) and 7 of infection were plotted with a line of best fit. (E) Mean B-1 derived IgM ASC ± SD per MedLN, grouped by initial percentage of CD5+ and CD5- cells (left) and plotted based on initial starting percentage of CD5+ cells (right) with a line of best fit. (F) Mean proliferation rate per day ± SD of CD5+, CD5-, and CD138+ B-1 cells and CD138+ B-2 cells (B-2 PC) in the MedLN of infected chimeras compared to proliferation rate per day of similar populations (B-1 or B-2 cells) in the peritoneal cavity of each mouse as determined by BrDU incorporation. Results for infected mice in (B–F) are combined from four independent experiments (n = 4 for>50% CD5-, n = 7 for>50% CD5+ cells, n = 5 for pure CD5+ cells). Results for uninfected chimeras in (E) are combined from three independent experiments, n = 6. Values in (B, D–F) were compared by unpaired Student’s t test (*=p < 0.05, **=p < 0.005).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46997/elife-46997-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Neonatal chimeric mice were generated with FACS sorted Dump- CD19+ CD23- Ighb+ CD5+ (100%, blue), CD5- (98%, green), or mostly CD5+ (orange) peritoneal cavity B-1 cells. (B) Mean number ± SD of CD5+ B-1 cells (IgMb+IgMa-) per Mesenteric LN (MesLN) (left) and Peyer’s Patch (PP) (right) and (C) mean percentage ± SD of CD5+ and CD5- B-1 cells in the MesLN (left) and PP (right) on day four after oral infection with S. typhimurium via drinking water (n = 3, CD5-; n = 4, 95% CD5+; n = 6, CD5+). (D) Mean B-1 derived IgM ASC ± SD per MesLN (left) and PP (right) (n = 3, CD5-; n = 4, 95% CD5+; n = 6, CD5+, uninfected). (E) B-1 and B-2 derived OmpD-binding IgM ASC per MesLN in uninfected and infected neonatal chimeric mice (n = 5–6). (F) Sample FACS plot showing B-1 (IgMb+) and B-2 (IgMa+) derived IgM+ plasmablasts (CD19 low CD43+CD138+) in the MesLN on day four after oral infection with S. typhimurium. Results in (B–F) are combined from two independent experiments, uninfected chimeras in (D) are combined from three independent experiments. Values in (B–E) were compared with an unpaired Student’s t test (*=p < 0.05).
+
 Allotype-specific ELISPOTs showed that chimeric mice generated with only CD5+ B-1 cells formed significantly higher frequencies of B-1-derived IgM-secreting cells compared to chimeric mice generated with predominantly CD5- B-1 cells (Figure 4E). In fact, chimeras generated with CD5- B-1 cells showed no more B-1 derived IgM ASC in their MedLN than uninfected chimeras, consistent with their previously reported deficiency in entering the MedLN after infection (Figure 4E, left panel) (Waffarn et al., 2015; Choi and Baumgarth, 2008). There was a significant positive correlation between the frequencies of CD5+ B-1 cells transferred to generate the neonatal chimeras and the ability of the mice to generate IgM ASC following influenza virus infection (Figure 4E, right panel).
 
 CD5+ B-1 cells failed to show signs of clonal expansion following their accumulation in the MedLN (Choi and Baumgarth, 2008), which was confirmed using BrdU injection on day six after infection. However, the CD5- MedLN B-1 cells showed increased proliferation compared to their counterparts in body cavities (Figure 4F). Among B-1 cells the proliferation rate was highest among the CD138+ B-1PC, with rates similar to that of the B-2 CD138+ plasma cell compartment (Figure 4F). The data support the hypothesis that CD5- B-1 cells, and in particular B-1PC in the MedLN, arise from proliferating CD5+ pleural cavity B-1 cells that accumulate in the MedLN and differentiate into CD5- IgM ASC following acute influenza virus infection.
 
-## CD5+ B-1 cells become CD5- IgM ASC in the Mesenteric LNs and Peyer’s Patches after Salmonella typhimurium infection
+### CD5+ B-1 cells become CD5- IgM ASC in the Mesenteric LNs and Peyer’s Patches after Salmonella typhimurium infection
 
 Numerous infection models have reported CD5- ‘B-1b’ cell responses after infection, including studies on mice infected with Streptococcus pneumonia (Haas et al., 2005) and S. typhimurium (Gil-Cruz et al., 2009). This has led to the concept that the CD5- B-1b are a ‘responder’ B-1 cell population, whereas CD5+ B-1 cells generate natural IgM exclusively in the steady state (Haas et al., 2005; Alugupalli and Gerstein, 2005). We therefore aimed to reexamine whether activation and differentiation of CD5+ B-1 cells into CD5- IgM ASC were more universal outcomes of CD5+ B-1 cell activation to infections.
 
@@ -98,7 +114,7 @@ The S. typhimurium surface antigen OmpD had been reported previously to stimulat
 
 Together these findings demonstrate that B-1 cells accumulate in draining lymph nodes at the site of both, bacterial and viral infections, where they lose CD5 expression and become the main source of B-1 derived secreted IgM. In vitro this process is recapitulated by stimulation with various TLR-ligands.
 
-## Changes in BCR signaling following innate activation of B-1 cells
+### Changes in BCR signaling following innate activation of B-1 cells
 
 Surface CD5 expression by B-1 cells has been linked previously to their inability to proliferate in response to BCR-mediated signaling (Bikah et al., 1996). To analyze the association of CD5 with the BCR on B-1 cells in steady state and to determine what changes the stimulation of the BCR may induce on B-1 cells, we analyzed the IgM-BCR-complexes on the cell surface of highly FACS-purified, then rested, peritoneal cavity CD5+ CD45 Rlo CD23- B-1 and splenic CD45Rhi CD23+ CD5 follicular B cells using Proximal Ligation Assay (PLA). On B-1 cells, both CD19 and CD5 were strongly associated with the surface-expressed IgM-BCR, while CD5 was not directly associated with the co-stimulator and signaling molecule CD19 (Figure 5A). Consistent with the lack of stimulation and strong interaction between IgM and CD5, the BCR-signaling chain CD79 only weakly interacted with the adaptor molecule Syk in B-1 cells in the steady-state. B-2 cells lack CD5 expression, and CD19 did not interact with the IgM-BCR prior to stimulation (Figure 5A).
 
@@ -114,7 +130,7 @@ In contrast to direct stimulation of the IgM-BCR, CpG stimulation led to changes
 
 **Figure 6.:** (A) FACS-purified peritoneal cavity CD19hi CD23- CD43+ CD5+B-1 and splenic CD19+ CD23+ CD43 CD5- B-2 cell of BALB/C mice were stimulated for the indicated times with TLR9-agonist ODN7909 prior to analysis by proximal ligation assay, probing for the following interactions (left to right): IgM:CD19, IgM:CD5, CD19:CD5 and CD79:syk. Left panel summarizes data on signal counts for 200 individual cells analyzed. Each symbol represents one cell, horizontal line indicates mean signal count per cell. Right panel show representative fluorescent images. (B) Analysis of the phosphorylation status of Akt by probing for Akt pS473 by flow cytometry on FACS-purified CD19hi CD23- CD5+ CD43+ B-1 cells from the peritoneal cavity and CD19+ CD23+splenic B-2 cells of BALB/C mice. Top panels show representative histogram plots, bottom summarizes the results. (C) Mean fluorescence intensity ± SD of staining for the immediate early activation factor Nur77, in CD5+ B-1 cells isolated as described in (A) and cultured for up to 2 days in the absence and presence of the indicated stimuli. (D) Shown are % frequencies of live PtC-binding B-1 cells among live FACS-purified CD5+ peritoneal cavity B-1 cells cultured with LPS stimulation for the indicated times, as assessed by flow cytometry. Each symbol represents results obtained from one culture well. Results are representative from experiments conducted at least twice with multiple repeats done per experiment (n = 2–5). Results in D are combined from two independent experiments. Values were compared using an unpaired Student’s t test (*=p < 0.05, **=p < 0.005, ***=p < 0.0005).
 
-## Initial stimulation through IgM-BCR suppresses subsequent activation of B-1 cells via TLR- stimulation
+### Initial stimulation through IgM-BCR suppresses subsequent activation of B-1 cells via TLR- stimulation
 
 We further analysed the impact of stimulation through the TLR or IgM-BCR on stimulation of B-1 cells by the other receptor. For that a set of in vitro experiments was conducted, in which FACS-purified, eFluor 670-stained and rested CD5+ body cavity B-1 cells and splenic follicular B-2 cells were stimulated in vitro with anti-IgM and/or CpG for a total of 72 hr at which time proliferation was assessed by flow cytometry. Stimulation with either anti-IgM or CpG for 2 hr followed by wash-out and then stimulation with the other stimulus for 70 hr showed no difference to stimulation with the second stimulus alone (not shown). However, initial stimulation for 24 hr followed by wash-out and restimulation with the second stimulus showed significant effects of initial IgM-BCR stimulation on subsequent CpG responsiveness by B-1 and B-2 cells (Figure 7). While B-1 cell responses to anti-IgM alone for 24 or 72 hr did not result in significant proliferation, when CpG was given after 24 hr anti-IgM stimulation a small but significant increase in proliferation was noted (Figure 7A). However, proliferation rates were greatly lower compared to stimulation with CpG first, followed by anti-IgM stimulation, or stimulation with CpG alone (Figure 7A). In contrast, initial anti-IgM stimulation of B-2 cells followed by stimulation with CpG resulted in the most robust B-2 cell proliferative response (Figure 7B), exceeding that of CpG stimulation alone or CpG stimulation followed by anti-IgM.
 
@@ -124,7 +140,7 @@ We further analysed the impact of stimulation through the TLR or IgM-BCR on stim
 
 Thus B-1 and B-2 cells greatly differ in their responses not only to BCR but also to TLR stimulation. While TLR stimulation by B-2 cells induced a strong and synergistic enhancement of proliferation initiated by BCR-signaling, B-1 cells did not respond to BCR-mediated stimulation with proliferation, independent of whether the BCR signal was given first or after a TLR-stimulus. However, only when TLR stimulation was provided first, did B-1 cells show robust proliferation in context of anti-IgM BCR-signaling.
 
-## Local IgM production following influenza infection depends on TLR expression
+### Local IgM production following influenza infection depends on TLR expression
 
 The data suggest that TLR-mediated stimulation alters the BCR-signalosome complex, which may drive B-1 cell responses to pathogens in vivo. Indeed, complete TLR-deficient mice (due to a lack of TLR2, TLR4 and Unc93) showed significant deficits in CD5+ B-1 cell responses following influenza infection (Figure 8). Significant increases in the ratios of CD5+ over CD5- and CD19+ CD43+ B cells were noted (Figure 8A). This suggested that CD5+ B-1 cells in TLR-deficient mice could enter the MedLN, consistent with our previous findings that this step is TLR-independent but Type I IFN-dependent (Waffarn et al., 2015), but once in the MedLN they were not activated via TLR-dependent signals, that is failed to downregulate CD5. Of importance, the lack of TLR-stimulation also resulted in a near complete loss of CD19lo/- IgM+ CD138+ B-1PC in the MedLN at day 5 of infection (Figure 8A/B) and a corresponding drop in IgM ASC in TLR-deficient compared to control mice at that timepoint (Figure 8C), while viral loads were similarly low in the lungs of both mouse strains (not shown). Generation of Ig-allotype chimeras in which only B-1 cells lacked TLR expression confirmed a B-1 cell-intrinsic requirement for TLR-signaling in B-1 cell differentiation to CD138+ ASC after influenza virus infection (Figure 8D–F).
 
@@ -156,23 +172,89 @@ Taken together, our data suggest that the BCR-complex composition on neonatally-
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse) musculus (mouse), C57BL/6J (M + F)</td>
+      <td>C57BL/6, Control, Ighb</td>
+      <td>The Jackson Laboratories</td>
+      <td>Stock 000664</td>
+      <td>Mus musculus (mouse), C57BL/6J (M + F)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Igha</td>
+      <td>The Jackson Laboratories</td>
+      <td>Stock 001317</td>
+      <td>Mouse, B6.Cg- Gpi1aThy1aIgha/J (M + F)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>BALB/C</td>
+      <td>The Jackson Laboratories</td>
+      <td>Stock 000651</td>
+      <td>Mouse, BALB/CJ mice (F)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Blimp-1YFP</td>
+      <td>Rutishauser et al., 2009</td>
+      <td></td>
+      <td>Breeding pairs from Michel Nussenzweig (The Rockefeller University) Mouse, B6-Cg- Tg(PRDM1- EYFP)^(1Mnz) (M + F)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>TLR-/-</td>
+      <td>Other</td>
+      <td></td>
+      <td>Breeding pairs from Greg Barton (The University of California, Berkeley) Mouse, Tlr2-/- Tlr4-/- Unc93b1^(3d/3d) (M + F)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Chimera</td>
+      <td>Lalor et al., 1989</td>
+      <td></td>
+      <td>Generated in-house Mouse, Igha/Ighb B-1 Cell Neonatal Chimera</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Chimera</td>
+      <td>Lalor et al., 1989</td>
+      <td></td>
+      <td>Generated in-house Mouse, Igha/Ighb- YFP B-1 Cell Neonatal Chimera</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 8-16 week old male and female C57BL/6J or female BALB/c mice and breeding pairs of B6.Cg-Gpi1aThy1aIgha/J (Igha) mice were purchased from The Jackson Laboratory. Female, 10 weeks old BALB/C mice were purchased from Jackson Laboratory. B6-Cg-Tg(prdmi-EYFP)1Mnz (Blimp-1 YFP) breeders were kindly provided by Michel Nussenzweig (The Rockefeller University, NY) and breeding pairs of Tlr2-/- x Tlr4-/- x Unc93b13d/3d (TLR-deficient) mice by Greg Barton (University of California, Berkeley, CA). Mice were housed under SPF conditions in micro-isolator cages with food and water provided ad libitum. Mice were euthanized by overexposure to carbon dioxide. All procedures were approved by the UC Davis Animal Care and Use Committee.
 
-## Chimera generation
+### Chimera generation
 
 Neonatal chimeric mice were generated as described previously (Lalor et al., 1989; Baumgarth et al., 2000; Baumgarth et al., 1999). Briefly, one-day old Igha C57BL/6 congenic mice were injected intraperitoneally with anti-IgMa (DS-1.1) diluted in PBS. On day 2 or three after birth mice were injected with total peritoneal cavity wash out, or with FACS-purified dump- CD19+ CD43+ CD5+ and/or CD5- B-1 cells from C57BL/6 (Ighb) mice. Over the next 6 weeks, these donor B-1 cells expand to fill all tested B-1 compartments, including the peritoneal and pleural body cavities, bone marrow, spleen, lymph nodes (mediastinal, mesenteric, inguinal, axilaris, cervical), gastrointestinal tract and lung, while host B-1 cells are depleted. Intraperitoneal anti-IgMa injections were continued twice weekly until mice reached 6 weeks of age. Mice were then rested for at least 6 weeks before use, for reconstitution of the conventional B cell populations from the host bone marrow. Due to the lack of significant B-1 cell development from bone marrow precursors after 6 weeks (Dorshkind et al.), the reconstituted mouse has exclusively host-derived B-2 cells (Igha) as well as a B-1 cell compartment that is 80–95% donor-derived (Ighb).
 
-## Influenza virus infection
+### Influenza virus infection
 
 Influenza A/Puerto Rico/8/34 was grown and harvested as previously described (Doucett et al., 2005). Mice were anesthetized with isoflurane and virus was diluted to a previously titrated sublethal dose of infection and administered intranasally in PBS.
 
-## Salmonella typhimurium infection
+### Salmonella typhimurium infection
 
 Oral infections with S. typhimurium were performed following previously described protocols (O'Donnell et al., 2015). S. typhimurium, strain SL1344, kindly provided by Stephen McSorley (University of California, Davis, CA), was grown overnight at 37°C in Luria-Bertani broth. A known volume of bacteria were centrifuged for 20 min at 6,000–8,000 rcf at 4°C after concentration was determined by spectrophotometer reading at OD600. Bacterial pellets were resuspended in mouse drinking water to a concentration of 109 CFU/ml. Water was provided to mice ad lib.
 
-## Flow cytometry and sorting
+### Flow cytometry and sorting
 
 Tissues were processed and stained as described previously (Rothaeusler and Baumgarth, 2006). Briefly, single cell suspensions of spleen, lymph node, and Peyer’s patches were obtained by grinding tissues between the frosted ends of two microscope slides, then resuspended in ‘Staining Media’ (Rothaeusler and Baumgarth, 2006). Peritoneal cavity washout was obtained by introducing Staining Media into the peritoneal cavity with a glass pipet and bulb, agitating the abdomen, and then removing the media. Samples were filtered through nylon mesh and treated with ACK lysis buffer as needed. Cell counts were performed using Trypan Blue exclusion to identify live cells.
 
@@ -184,30 +266,30 @@ Phosphoflow: Cells were fixed (BD Cytofix) for 12 min at 37°C. Cells were then 
 
 FACS analysis was done using either a 4-laser, 22-parameter LSR Fortessa (BD Bioscience) or a 3-laser FACSAria (BD Bioscience). Cells were sorted as previously described (Rothaeusler and Baumgarth, 2006) using the FACSAria and a 100 µm nozzle. Data were analyzed using FlowJo software (FlowJo LLC, kind gift of Adam Treister).
 
-## Elisa
+### Elisa
 
 Sandwich ELISA was performed as previously described (Rothaeusler and Baumgarth, 2006). Briefly, MaxiSorp 96 well plates (ThermoFisher) were coated with anti-IgM (Southern Biotech) and nonspecific binding was blocked with 1% NCS/0.1% dried milk powder, 0.05% Tween20 in PBS (‘ELISA Blocking Buffer’). Two-fold serial dilutions in PBS of culture supernatants and an IgM standard (Southern Biotech) were added to the plates at previously optimized starting dilutions. Binding was revealed with biotinylated anti-IgM (Southern Biotech), Streptavidin-Horseradish Peroxidase, both diluted in ELISA Blocking Buffer, and 0.005% 3,3’,5,5’-tetramethylbenzidine (TMB)/0.015% hydrogen peroxide in 0.05 M citric acid. The reaction was stopped with 1N sulfuric acid. Antibody concentrations were determined by measuring sample absorbance on a spectrophotometer (SpectraMax M5, Molecular Devices) at 450 nm (595 nm reference wavelength) and then compared to a standard curve created with a mouse IgM standard (Southern Biotech) of known concentration.
 
-## Culture and proliferation dye labeling
+### Culture and proliferation dye labeling
 
 After FACS sorting, cells were labeled with Efluor670 or CFSE at previously determined optimal concentrations, by incubation at 37°C for 10 mins., then washed three times with staining medium containing 10% neonatal calf serum and resuspended into ‘Culture Media’ (RPMI 1640 with 10% heat inactivated fetal bovine serum, 292 µg/ml L-glutamine, 100 Units/ml penicillin, 100 µg/ml streptomycin, and 50 µM 2-mercaptoethanol). Cells were plated at 105 cells/well of 96-well U bottom tissue culture plates (BD Bioscience), and unless otherwise indicated, cultured at 37°C/5% CO2 for 3 days. When indicated, LPS at 10 µg/ml, Mycobacterium TB lipids at 20 µg/ml (BIA), Imiquimod (R837, InvivoGen) at 1 µg/ml, CpG ODN 7909 at 5 µg/ml or anti-IgM (Fab)2 at 10–20 ug/ml were added to the wells. Cell enumeration after culture was performed using Molecular Probes CountBright Beads (Thermo Fisher) by flow cytometry, per manufacturer instructions. After culture, culture plates were spun and supernatant was collected and stored at −20°C, and cells were stained for FACS.
 
-## Elispot
+### Elispot
 
 IgM antibody secreting cells were enumerated as previously described (Doucett et al., 2005). Briefly, 96 well ELISPOT plates (Multi-Screen HA Filtration, Millipore) were coated overnight with anti-IgM (331) or recombinant OmpD (MyBioSource) and non-specific binding was blocked with 4% Bovine Serum Albumin (BSA)/PBS. Cell suspensions were processed, counted, and directly plated in culture medium into ELISPOT wells and subsequently serially diluted two-fold, or they were FACS-sorted directly into culture media-containing ELISPOT wells. Cells were incubated overnight at 37°C/5% CO2. Binding was revealed with biotinylated anti-IgM (Southern Biotech), anti-IgMa (BD Bioscience), or anti-IgMb (BD Bioscience), Streptavidin-Horseradish Peroxidase (Vector Labs) both diluted in 2% BSA/PBS, and 3.3 mg 3-amino-9-ethylcarbazole (Sigma Aldrich) dissolved in dimethyl formamide/0.015% hydrogen perioxide/0.1M sodium acetate. The reaction was stopped with water. Spots were enumerated using the AID EliSpot Reader System (Autoimmun Diagnostika, Strassberg, Germany).
 
-## qRT-PCR
+### qRT-PCR
 
 mRNA was isolated from cells using the RNeasy mini kit (Qiagen), per manufacturer instructions. cDNA was generated using random hexamer primers and SuperSript II reverse transcriptase (Invitrogen). qRT-PCR was performed using commercially available Taqman primer/probes for cd5 and ubc (Thermo Fisher).
 
-## BrDU labeling
+### BrDU labeling
 
 Mice were injected intraperitoneally with 1 mg of BrDU (Sigma-Aldrich) per mouse diluted in 100 µL PBS, 24 hr before tissue collection. Staining for BrDU was performed as described previously (Rothaeusler and Baumgarth, 2006).
 
-## Proximity Ligation Assay (PLA)
+### Proximity Ligation Assay (PLA)
 
 After FACS sorting, cells were resuspended in RPMI and rested for at least two hours before designated stimuli were added to culture media. Stimulated and unstimulated cells were cultured for 5 min, and 24 and 48 hr prior to PLA. PLA was performed as previously described (Kläsener et al., 2014). In brief: For PLA-probes against specific targets, the following unlabeled Abs were used: anti-IgM (Biolegend, clone RMM-1), anti-CD79a (Thermo Fisher, clone 24C2.5), anti-CD5 (Biolegend, clone 53–7.3), anti-Syk (Biolegend, clone Syk-01), and anti-CD19 (Biolegend, clone 6D5). Fab fragments against CD79a, Syk, IgM, and CD19 were prepared with Pierce Fab Micro preparation kit (Thermo Scientific) using immobilized papain according to the manufacturer’s protocol. After desalting (Zeba spin desalting columns, Thermo Scientific), all antibodies were coupled with PLA Probemaker Plus or Minus oligonucleotides (Sigma-Aldrich) to generate PLA-probes. For in situ PLA, B cells were settled on polytetrafluoroethylene slides (Thermo Fisher Scientific) for 30 min at 37°C. BCR. Cells were fixed with paraformaldehyde 4%, for 20 min. For intracellular PLA, B cells were permeabilized with 0,5% Saponin for 30 min at room temperature, and blocked for 30 min with Blocking buffer (containing 25 μg/ml sonicated salmon sperm DNA, and 250 μg/ml bovine serum albumin). PLA was performed with the Duolink In-Situ-Orange kit. Resulting samples were directly mounted on slides with DAPI Fluoromount-G (SouthernBiotech) to visualize the PLA signals in relationship to the nuclei. Microscope images were acquired with a Leica DMi8 microscope, 63 oil objective (Leica-microsystems). For each experiment a minimum of 100 B-1a/B-1b/B-2 peritoneal cavity or 1000 splenic B-2 cells from several images were analyzed with CellProfiler-3.0.0 (CellProfiler.org). Raw data were exported to Prism7 (GraphPad, La Jolla, CA). For each sample, the mean PLA signal count per cell was calculated from the corresponding images and the statistical significance with Mann–Whitney test.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was done using a two-tailed Student t test with help of Prism software (GraphPad Software). For time-course data, an ANOVA was performed with the help of Prism software, and if significant, Student t tests were performed to determine which time points were significant. When multiple comparisons were run on the same sets of data, Holm-Sidak correction was applied, using Prism software. p<0.05 was considered statistically significant.

@@ -10,12 +10,12 @@
 
 ### Affiliations
 
-1. https://ror.org/05dnene97 The Feinstein Institutes for Medical Research, Northwell Health Manhasset United States
-2. https://ror.org/00hj8s172 Departments of Psychiatry and Neurology, Columbia University College of Physicians and Surgeons New York United States
+1. The Feinstein Institutes for Medical Research, Northwell Health Manhasset United States ([ROR:05dnene97](https://ror.org/05dnene97))
+2. Departments of Psychiatry and Neurology, Columbia University College of Physicians and Surgeons New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 3. Translational Neuroscience Lab Division, Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute Orangeburg United States
-4. https://ror.org/03bqmcz70 Cognitive Science Department, Institute of Philosophy, Jagiellonian University Kraków Poland
-5. https://ror.org/01ff5td15 Departments of Neurology and Neurosurgery, Zucker School of Medicine at Hofstra/Northwell Hempstead United States
-6. https://ror.org/00wmhkr98 Department of Biomedical Engineering, The City College of New York New York United States
+4. Cognitive Science Department, Institute of Philosophy, Jagiellonian University Kraków Poland ([ROR:03bqmcz70](https://ror.org/03bqmcz70))
+5. Departments of Neurology and Neurosurgery, Zucker School of Medicine at Hofstra/Northwell Hempstead United States ([ROR:01ff5td15](https://ror.org/01ff5td15))
+6. Department of Biomedical Engineering, The City College of New York New York United States ([ROR:00wmhkr98](https://ror.org/00wmhkr98))
 
 † Corresponding author
 
@@ -37,41 +37,93 @@ While linear systems are an inadequate model of neuronal dynamics, they remain a
 
 ## Results
 
-## Extrinsic input leads to spurious recurrent connectivity
+### Extrinsic input leads to spurious recurrent connectivity
 
 To determine the effect of the extrinsic inputs on connectivity estimates, we either fit a VARX model or a VAR model (i.e. a VARX model with no external input). We analyze LFP data on all available recordings, movies, and resting state for all N = 26 recording sessions. As extrinsic inputs, we included film cuts, motion, fixation onset, fixation novelty, the sound envelope, and acoustic edges. VAR models contain the same external inputs as the VARX model, but the time alignment is disrupted by a circular shuffle. This keeps the number of parameters in different models constant and ensures the inputs have the same covariance structure. We found a similar connectivity structure for the estimated VAR and VARX models (Figure 1A, B). However, they vary systematically in the number of significant recurrent connections A (those with p < 0.0001, Figure 1D), which drops when adding inputs (median = −7.3 × 10–4, p < 0.0001, N = 26, Wilcoxon). The effect sizes R also significantly decrease in the VARX model (Figure 1E, median = −2.2 × 10–5, p < 0.0001, N = 26, Wilcoxon). Therefore, accounting for the external input removes spurious ‘connections’. We also analyzed how much each of these extrinsic inputs contributed to this effect. Removing any of the input features increased the effect size of recurrent connections compared to a model with all features (Figure 1—figure supplement 1). We then cumulatively added each feature to the VARX model. Effect size monotonically decreases with each feature added (Figure 1F). Decreases of effect size are significant when adding film cuts (ΔR = −3.6 × 10–6, p < 0.0001, N = 26, FDR correction, ɑ = 0.05) and the sound envelope (ΔR = −3.59 × 10–6, p = 0.002, N = 26, FDR correction, ɑ = 0.05). Thus, adding more input features progressively reduces the strength of recurrent ‘connections’.
 
-## Recurrent connectivity is reduced during movies compared to rest
+![Figure 1.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig1-v1.jpg)
+
+**Figure 1.:** Comparison of VARX model with and without inputs. (A) log p-values for each connection in A for a VARX model without inputs on one patient (Pat_1); (B) for a VARX model with inputs; (C) difference of log p-values for VARX model without minus with inputs (panels A and B). Both models are fit to the same data. (D) Thresholding panels A and B at p < 0.0001 gives a fraction of significant connections. Here, we show the fraction of significant channels for models with and without input. Each line is a patient with color indicating increase or decrease. (E) Mean over all channels for VARX models with and without inputs. Values in (D) and (E) have been normalized to models without input. (F) Change in R values when successively adding inputs to the VARX model. Black line shows mean across patients, shaded gray area the standard error of the mean. Stars indicate features that further reduce effect size over the previously added feature with statistical significance (Wilcoxon rank sum test p < 0.05). Negative values indicate a decrease in connectivity strength when the extrinsic inputs are accounted for. Results for broadband high-frequency activity (BHA) are shown in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Removing regressors for film cuts (ΔR = −12.8 × 10–6, p < 0.0001, N = 26), the auditory envelope (ΔR = −6.63 × 10–6, p = 0.0002, N = 26), fixation onset (ΔR = −5.6 × 10–6, p = 0.0009, N = 26), fixation novelty (ΔR = −4.6 × 10–6, p = 0.005, N = 26), or acoustic edges (ΔR = −3.95 × 10–6, p = 0.007, N = 26) significantly increases the effect size compared to the VARX model including all features. Removing the motion regressor does not show this effect (ΔR = −0.02 × 10–6, p = 0.64, N = 26). FDR correction, ɑ = 0.05. Black line shows the mean increase of effect size ΔR. Gray shaded area shows the standard error of the mean of ΔR across 26 patients. Stars indicate significant changes in effect size.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Same analysis as in Figure 1 with BHA data. (A) log p-values for each connection in VARX model without inputs on one patient (Pat_1); (B) for VARX model with inputs; (C) difference. Both models are fit to the same data. (D) Fraction of significant recurrent connections in VARX models with and without inputs (difference: median = −3.7 × 10–4, p < 0.0001, N = 26, Wilcoxon). (E) Effect size R over all electrodes between VARX models with and without inputs (difference: median = −1 × 10–5, p < 0.0001, N = 26, Wilcoxon). Each line is a patient, with color indicating an increase or decrease. Values in (D) and (E) have been normalized to models without input. (F) Difference between the VARX model without input and VARX models successively adding inputs. Black line shows mean across patients, shaded gray area the standard error of the mean. Stars indicate features that further reduce effect size over the previously added feature with statistical significance (Wilcoxon rank sum test p < 0.05). Negative values indicate a decrease in connectivity strength when the extrinsic inputs are accounted for. Adding film cuts (ΔR = −3.6 × 10–6, p < 0.0001, N = 26, FDR correction, ɑ = 0.05) and the auditory envelope (ΔR = −3.6 × 10–6, p = 0.002, N = 26, FDR correction, ɑ = 0.05) significantly decrease R values.
+
+### Recurrent connectivity is reduced during movies compared to rest
 
 Next, we compared recurrent connectivity between movie watching and rest (Figure 2). In the rest condition, patients have a fixation cross on a gray background. This obviously reduces the size and number of saccades as compared to movie watching, but does not abolish them (Figure 2—figure supplement 3). We therefore use a VARX model including fixation onset as an extrinsic variable in both cases. Movies include fixation novelty, film cuts, the sound envelope, acoustic edges, and motion as external inputs. To control for the number of free parameters, we include copies of features from the movies in the resting state model. The number of significant recurrent connections in A was significantly reduced during movie watching compared to rest (Figure 2C, fixed effect of stimulus: beta = –3.8 × 10–3, t(88) = –3.9, p < 0.001), as is the effect size (Figure 2D, fixed effect of stimulus: beta = –2.5 × 10–4, t(88) = –4.1, p < 0.001). While the effect size decreases on average, there is some variation across different brain areas (Figure 2E–G). In a subset of patients with eyes-closed resting state, we find the same effect, which is qualitatively more pronounced (Figure 2—figure supplement 1).
 
-## Recurrent connectivity enhances and prolongs stimulus responses
+![Figure 2.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig2-v1.jpg)
+
+**Figure 2.:** Effect size R for each connection in A for one patient (Pat_7) for (A) a VARX model during resting fixation with fixation onset as input feature. (B) The same with a VARX model of local field potential (LFP) recordings during movie watching, with the following input features: sound envelope, acoustic edges, fixation onsets, fixation novelty, motion, and film cuts. (C) Fraction of significant connections (p < 0.0001) for movies and rest. (D) Mean effect size across all channels for movies and rest. Each line is a patient, with color indicating a numerical increase or decrease. For the movie conditions, we averaged across four different 5-min movie segments. (E) Axial view of significant connections in resting state. Black dots show the location of contacts in MNI space. Lines show significant connections between contacts (p < 0.001) colored in red according to effect size R. For plotting purposes, connections in the upper triangle are plotted, and asymmetries are ignored. (F) The same for the movie task, and (G) the difference between movies and resting state, showing both increases and decreases for specific connections. Differences between broadband high-frequency activity (BHA) recurrent connectivity A during movies and resting state are shown in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Effect size R for each connection in A in one patient (Pat_18_02) for (A) a VARX model of 5 min of local field potential (LFP) recordings during movie watching, with sound envelope, acoustic edge, fixation onsets, and novelty, motion, and film cuts as input features. (B) VARX model during eyes-closed rest without input features. Notably, the majority of electrodes in this patient are located in the occipital cortex. (C) The number of significant connections (p < 0.0001) across all patients is lower during movie watching (median = −0.0017, p = 0.01, N = 8, Wilcoxon). (D) Mean effect size across all channels is lower during movie watching (median = −0.0045, p = 0.02, N = 8, Wilcoxon). Each line represents one patient.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Same analysis as in Figure 2 with BHA data. Effect size R for (A) a VARX model during resting fixation with fixation onset as input feature. (B) VARX model during movie watching, with sound envelope, acoustic edges, fixation onset and novelty, film cuts, and motion as input features. (C) Number of significant connections between movie and rest (fixed effect of stimulus: beta = –5.4 × 10–4, t(88) = –2.1, p = 0.042). (D) Mean effect size across all channels between movie and rest (fixed effect of stimulus: beta = –2.5 × 10–5, t(88) = –2.4, p = 0.17). Each line represents one patient.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Normalized histogram of inter-saccade interval, the time between consecutive saccades. (B) Normalized histogram of saccade amplitude. (C) Heatmaps of fixation position for different recordings. All figures are based on 10 min of data for ‘Despicable Me English’, ‘Monkey’, and ‘Inscapes’ and 5 min of resting state. ‘Despicable Me English’: N = 13,643 saccades across 24 patients, with one recording each; ‘Monkey’: N = 12,790 saccades across 23 patients, with up to two recordings; ‘Inscapes’: N = 8562 saccades across 20 patients, with one recording each; ‘Rest’: N = 1510 saccades across 22 patients, with one recording each.
+
+### Recurrent connectivity enhances and prolongs stimulus responses
 
 We also compared the feed-forward extrinsic effect B with the total system response H, which includes the additional effect of the recurrent connectivity A. We estimate B with the VARX model (Figure 3A) on data during video watching and resting state and estimate the total response H directly using TRFs (Figure 3B). Both models include fixation onset, film cuts, and sound envelope as external inputs. We compare the power and length of filters from both models (Figure 3C, D). We compare responses in channels with significant effects of B (FDR correction, ɑ = 0.05). We see that the total response H of fixation onset is significantly stronger (Figure 3C, medianΔ = 1.5 × 10–4, p < 0.0001, N = 23, Wilcoxon) and longer than the feed-forward effect B (Figure 3D, medianΔ = 10.9 ms, p = 0.0002, N = 23, Wilcoxon). The same effect is observed for BHA (Figure 3—figure supplement 1) and other input features (Figure 3—figure supplement 2). This suggests that the total response of the brain to these external inputs is dominated by the intrinsic dynamics of the brain.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig3-v1.jpg)
+
+**Figure 3.:** (A) Feed-forward responses B to fixation onset are weaker and shorter than (B) the overall system response H. Impulse response models for fixation onset in channels with significant responses for one example patient. (C) Power and (D) mean length of responses in significant channels for all patients. Each line is a patient. Responses to fixation onset in all significant channels, as well as auditory envelope and film cuts, are shown in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Feed-forward BHA responses B to fixation onset are weaker and shorter than (B) the overall system response H. Significant responses for Pat_1. (C) Power of responses B is weaker than H (medianΔ = −1.3 × 10–4, p = 0.0002, N = 18, Wilcoxon). (D) Mean length of responses B is shorter than H (medianΔ = −17.50 ms, p = 0.0002, N = 18, Wilcoxon). Each line represents average values across significant channels in a patient.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Input responses to fixations onset (A–D), film cuts (E–H), and auditory envelope (I–L). Feed-forward responses B (A, E, I) are weaker and shorter than the overall system response H (B, F, J). Significant responses for Pat_1. Power of responses to fixation onset B is weaker than H for (C) fixation onset (medianΔ = −1.5 × 10–4, p < 0.0001, N = 23, Wilcoxon), (G) film cuts (medianΔ = −3.9 × 10–5, p = 0.0001, N = 25, Wilcoxon), and (K) auditory envelope (medianΔ = −2.3 × 10–5, p = 0.0004, N = 25, Wilcoxon). Mean length of responses to fixation onset B is shorter than H for (D) fixation onset (medianΔ = −10.9 ms, p < 0.0001, N = 23, Wilcoxon), (H) film cuts (medianΔ = −14.98 ms, p = 0.0002, N = 25, Wilcoxon), (L) and auditory envelope (medianΔ = −10.53 ms, p < 0.0001, N = 25, Wilcoxon). Each line represents average values across significant channels in a patient.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Removing half of all channels that do not show responses to the auditory envelope does not change the estimate of the response filter B. (B) The estimate of the responses B to the auditory envelope (red line) is changed by adding a correlated feature (acoustic edges, blue line), but not by adding an uncorrelated feature (fixation onset, green dashed line). (C) The example channel shown in panels A and B shows responses to the auditory envelope, acoustic edges, and fixation onset. For clearer visualization purposes, responses have been filtered with a 10-Hz low-pass filter.
+
 As with conventional linear regression, the estimate in B for a particular input and output channel is not affected by which other signals are included in x(t) or y(t), provided those other inputs are uncorrelated. We confirmed this here empirically by removing dimensions from y(t) (Figure 3—figure supplement 3A), and by adding uncorrelated input to x(t) (Figure 3—figure supplement 3B, adding fixation onset does not affect the estimate for auditory envelope responses). In other words, to estimate B, we do not require all possible stimulus features and all brain activity to be measured and included in the model. In contrast, B does vary when correlated inputs are added to x(t) (Figure 3—figure supplement 3B, adding acoustic edges changes the auditory envelope response). Evidently, the auditory envelope and acoustic edges are tightly coupled in time, whereas fixation onset is not. When a correlated input is missing (acoustic edges), then the other input (auditory envelope) absorbs the correlated variance, thus capturing the combined response of both.
 
-## Results are similar for VARX models of BHA and LFP
+### Results are similar for VARX models of BHA and LFP
 
 We repeated the same analyses of Figures 1—3 with broadband high-frequency activity (BHA). While local field potentials (LFPs) are thought to capture dendritic currents, BHA is correlated with neuronal firing rates in the vicinity of an electrode. Generally, we find a more sparse recurrent connectivity for BHA as compared to LFP (compare Figures 1 and 2 with Figure 1—figure supplement 2 and Figure 2—figure supplement 2). Perhaps this is expected, given that LFP covers a broader frequency range. Regardless of this overall difference, we find similar results when analyzing BHA with the VARX model. Namely, taking the extrinsic input into account removed stimulus-induced recurrent connections (Figure 1—figure supplement 2); the fraction of significant channels decreases during movie watching compared to rest (Figure 2—figure supplement 2); and responses to the stimulus are stronger and more prolonged when separately modeling the effect of recurrent connectivity (Figure 3—figure supplement 1). In the Discussion section, we will argue that some of these results are expected in general when decomposing the total system response into extrinsic and intrinsic effects.
 
-## Intrinsic ‘noise’ in BHA is reduced by external stimulus
+### Intrinsic ‘noise’ in BHA is reduced by external stimulus
 
 So far, we have discussed the mean response captured by B and the activity mediated by A. We now want to analyze whether the external input modulates the internal variability of brain activity. As a metric of internal variability, we measured the power of the intrinsic innovation process e(t), which captures the unobserved ‘random’ brain activity that leads to variations in the responses. For the LFP signal, we see a drop in power during movies as compared to rest, for both the original signal y(t) (Appendix 1—figure 1A) and the model’s innovation process e(t) (Appendix 1—figure 1B). Notable is the stronger oscillatory activity during rest (Appendix 1—figure 1A). In this example, we see a drop in power in the theta/alpha band (5–11 Hz) during movie watching across all electrodes (Appendix 1—figure 1A, dotted lines). We observe a similar narrow-band drop in power in most patients, albeit at different frequencies (not shown). When analyzing BHA, we find no difference in the power of the innovation process between movie and rest, but we do find a drop in power relative to the overall BHA signals for some channels (Figure 4B). These channels seem to coincide with channels that responded to the external stimuli, that is channels with a significant effect in B (Figure 4A). If we take for each patient the median relative power for responsive channels (median among those with p < 0.0001), then we find that relative power drops for nearly all patients (Figure 4D, Wilcoxon rank sum test, p = 8.8 × 10–7, N = 26). The motivation for analyzing only responsive channels comes from a simple gain adaptation (Appendix 1—figure 2). Gain adaptation keeps the power constant, so that the extra power injected by the stimulus implicitly reduces the relative power of the innovation process. This effect is specific to channels receiving external input (Appendix 1—figure 2D) and absent in a linear system without gain adaptation (Appendix 1—figure 2C). To demonstrate that this simple gain adaptation can explain the noise quenching in the neural data, we simulated data with the gain adaptation model (Figure 4C) using parameters estimated for the example patient of Figure 4A, B.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig4-v1.jpg)
 
-**Figure 4.:** (A) Effect size R for extrinsic effect  in all channels for three input features (scene cuts, fixation onset, and sound envelope). In this example, 15 electrodes had significant responses to one of the three inputs (Bonferroni corrected at p < 0.01). (BB) Change in relative power of innovation (dB(innovation power/signal power), then subtracting movie − rest). (C) Change in relative power of innovation in a simulation of a VARX model with gain adaptation. Here, we are using the  and A filters that were estimated on BHA on the example from panels A and B. (BD) Median of power ratio change across all patients, contrasting responsive versus non-responsive channels.
+**Figure 4.:** (A) Effect size R for extrinsic effect B in all channels for three input features (scene cuts, fixation onset, and sound envelope). In this example, 15 electrodes had significant responses to one of the three inputs (Bonferroni corrected at p < 0.01). (B) Change in relative power of innovation (dB(innovation power/signal power), then subtracting movie − rest). (C) Change in relative power of innovation in a simulation of a VARX model with gain adaptation. Here, we are using the A and B filters that were estimated on BHA on the example from panels A and B. (D) Median of power ratio change across all patients, contrasting responsive versus non-responsive channels.
 
-## Direction of connectivity differs with cortical hierarchy
+### Direction of connectivity differs with cortical hierarchy
 
 Finally, we measured the directionality of the recurrent connections in the LFPs by analyzing the structure of the resulting R matrices of all patients, combining data from all available movies and resting state recordings. Columns in R represent outgoing connections, while rows are incoming connections. Therefore, the difference of R-RT (Figure 5A) averaged along a column has positive values if a node has overall stronger outgoing connections, and negative values if it has stronger incoming connections. We measured this directionality for each channel across all patients and averaged also across channels within parcels of the Desikan–Killiany atlas (N = 34 regions of interest, Figure 5B; Desikan et al., 2006). We expected this to co-vary with ‘cortical hierarchy’. To test this, we compared this asymmetry metric with the T1w/T2w ratio, which captures gray matter myelination and is used as an indirect measure of cortical hierarchy (Gao et al., 2020a; Wang, 2020). We also average the T1w/T2w ratio in the same parcels of the Desikan–Killiany atlas (Figure 5B). We used a mixed-effects model and found that cortical areas showing more outgoing connections (R-RT>0) have higher T1w/T2w ratio, which are located lower on the cortical hierarchy (t(533) = 2.62, p = 0.009, Figure 5C). BHA analysis shows the same effect (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig5-v1.jpg)
+
+**Figure 5.:** (A) Difference of R-RT showing asymmetric directed effects. Dashed lines indicate regions of interest in the Desikan–Killiany atlas. (B) Mean directionality across patients and T1w/T2w ratio are averaged in parcels of the Desikan–Killiany atlas. (C) Mean directionality is correlated with cortical hierarchy, estimated with the T1w/T2w ratio. Each dot represents a parcel in the Desikan–Kiliany atlas with error bars indicating error of the mean across patients with channels in that parcel. The datapoint on the top left is the transverse temporal gyrus. Note that the x-axis has been flipped to show areas higher on the cortical hierarchy on the right. T1w/T2w ratio and cortical hierarchy have an inverse relationship.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Analysis as in Figure 5. (A) Difference of R-RT showing asymmetric directed effects. Dashed lines indicate regions of interest in the Desikan–Killiany atlas. (B) Mean directionality across patients and T1w/T2w ratio are averaged in parcels of the Desikan–Killiany atlas. (C) Mean directionality is not significantly correlated with cortical hierarchy, estimated with the T1w/T2w ratio (t(533) = 2.19, p = 0.029).
 
 ## Discussion
 
 Our results suggest that the duration and magnitude of responses to extrinsic input are in large part a result of the intrinsic dynamic of the recurrent brain network. We also found that the intrinsic dynamic had reduced recurrent connectivity and weaker intrinsic variability during the movie stimulus.
 
-## Response to extrinsic input versus intrinsic dynamics
+### Response to extrinsic input versus intrinsic dynamics
 
 Previous literature does often not distinguish between intrinsic dynamics and extrinsic effects. By factoring out some of the linear effects of the external input, we conclude here that recurrent connectivity is reduced on average. From our prior work (Nentwich et al., 2023), we know that the stimulus features we included here capture a substantial amount of variance across the brain in intracranial EEG. Arguably, however, the video stimuli had rich semantic information that was not captured by the low-level features used here. Adding such semantic features could have further reduced shared variance, and consequently further reduced average recurrent connectivity in the model.
 
@@ -81,21 +133,21 @@ In this work, we focused on ‘passive’ tasks, that is resting with gaze on a 
 
 Conventional ‘encoding’ models, such as TRFs, capture the total response H of the brain to an external stimulus. Here, we factored this into a moving average filter B, followed by an autoregressive filter A. The important observation is that this intrinsic dynamic governed by A does not change during stimulus processing. Arguably then, the role of the initial responses B is to shape the input to be processed by the existing intrinsic dynamic. This interpretation is consistent with the view of ‘the brain from the inside out’ advocated by György Buzsáki (Buzsaki, 2019). In this view, learning of a stimulus representation consists in learning a mapping of the external stimulus to an existing intrinsic dynamic of the brain.
 
-## Similar findings for LFP and BHA
+### Similar findings for LFP and BHA
 
 We found more sparse recurrent connectivity for BHA as compared to LFP. This may be expected because correlations in lower frequencies (that dominate LFPs) reach over longer distances compared to correlations in higher frequencies (e.g. Muller et al., 2016). BHA has been linked to a mixture of neuronal firing and dendritic currents (Leszczyński et al., 2020), in contrast to LFP, which is thought to originate from widespread dendritic currents. Despite the observed differences in sparsity, for both LFP and BHA, we found that modeling the intrinsic dynamic removed spurious recurrent connections. Removal of spurious effects when controlling for a common cause is a generic finding in multivariate statistical models. We also found for both LFP and BHA that the duration and strength of stimulus responses can be largely attributed to the recurrent connections. Arguably, this is a generic feature of an autoregressive model, as it more readily captures longer impulse responses. However, the extrinsic filters B in principle have an advantage as they can be fit to each stimulus and brain location. In contrast, the recurrent filters A are constrained by having to capture a shared dynamic for all stimulus dimensions. Thus, the predominance of the intrinsic dynamic in the total system response is not a trivial result of the factorization into intrinsic and extrinsic effects.
 
-## Stimulus-induced reduction of noise in the intrinsic activity
+### Stimulus-induced reduction of noise in the intrinsic activity
 
 One difference we did find between LFP and BHA is the intrinsic innovation process, that is the internal sources of variability or ‘noise’. For both BHA and LFP, we saw a drop in the magnitude of signal fluctuations during the movie watching condition. For the BHA but not the LFP, this was explained as a drop in intrinsic noise. Specifically, for BHA, there was less relative power in the intrinsic ‘noise’ for channels that are responsive to the stimulus. This is consistent with the notion that response variability is due to variability of intrinsic activity (Arieli et al., 1996), which is found to decrease across the brain with the onset of an external stimulus (Churchland et al., 2010). This type of noise quenching has been associated with increased attention (Arazi et al., 2019) and improved visual discrimination performance (Arazi et al., 2017). The effect we found here can be explained by a VARX model with the addition of a divisive gain adaptation mechanism that keeps the total power of brain activity constant. When the input injects additional power, this nonlinear gain adaptation implicitly reduces the contribution of the intrinsic noise to the total power. The noise-quenching result and its explanation via gain adaptation show the benefit of using a parsimonious linear model, which can suggest nonlinear mechanisms as simple corrections from linearity.
 
 We also observed an overall drop in LFP power during movie watching. This phenomenon was strongest in oscillatory bands, with frequencies in theta (5–8 Hz) to beta (15–25 Hz) band differing across patients. In scalp EEG, noise quenching is associated with a similar overall drop in power with the stimulus (Arazi et al., 2019). This quenching of neural variability was also found to reduce correlation between brain areas for fMRI and neural spiking (Ito et al., 2020). Both fMRI and neural spiking correlated with BHA (Mukamel et al., 2005).
 
-## Stimulus features
+### Stimulus features
 
 During the movie and rest periods, we utilized fixation onset to capture activity that is time-locked to visual processing because patients move their eyes even during rest. We also added the fixation novelty regressor to capture semantic changes in the visual input across eye movements (Nentwich et al., 2023). We incorporated the sound envelope, a prominent feature known for capturing the dominant audio-induced variance in scalp EEG (Di Liberto et al., 2015), as well as acoustic edges that capture strong transients in the auditory input (Forseth et al., 2020; Oganian and Chang, 2019). In addition, we included film cuts as features, as we had previously demonstrated that they dominate the response in the BHA across the brain (Nentwich et al., 2023). Motion is added as an additional feature to capture, while other basic visual features such as overall optic flow or fixations on faces elicited responses in the BHA, their contribution was relatively smaller. The analysis is not limited to these few features, and future research should explore which stimulus features capture variance in the data and how they affect the apparent recurrent connectivity. There is a substantial body of literature on encoding models of semantic features, where nonlinear features of a continuous natural stimulus are extracted and then linearly regressed against fMRI (Huth et al., 2016; Nishimoto et al., 2011) or EEG (Broderick et al., 2018). This work can be directly replicated with the VARX model, which further models the recurrent connectivity.
 
-## Alternative approaches
+### Alternative approaches
 
 The traditional VAR model has been used extensively in neuroscience to establish directed ‘Granger causal’ connections (Barnett and Seth, 2014). This approach has been very fruitful and found numerous extensions (Sheikhattar et al., 2018; Soleimani et al., 2022). However, these model implementations do not specifically account for an external input.
 
@@ -103,7 +155,7 @@ A few methods have attempted to model the effect of varying task conditions on f
 
 A more principled modeling approach is ‘dynamic causal modeling’ (DCM) (Friston et al., 2003) and extensions thereof (Ryali et al., 2011). Similar to the VARX model, DCM includes intrinsic and extrinsic effects A and B. However, the modeling is limited to first-order dynamics (i.e. na = nb = 1). Thus, prolonged responses have to be entirely captured with a first-order recurrent A. In contrast, the DCM includes a multiplicative interaction of extrinsic input x(t) on the connectivity A, which does not exist in the VARX model. This interaction has been used to explicitly model a change in recurrent connectivity with task conditions. Here we found that this may not be necessary for intracranial EEG. A practical advantage of the VARX model is the assumption that the neural activity is directly observed. Instead, many existing models assume an error in the observations, which triggers computationally intensive estimation algorithms, typically the expectation maximization algorithm. The same is true for the ‘output error’ model in linear systems theory (Ljung, 1999). As a result, these models are often limited to small networks to test specific alternative hypotheses (Penny et al., 2004). (The original DCM proposed for fMRI included an added complication of modeling the hemodynamic response, which amounts to adding a temporal filter to each output node and prior to adding observation noise.) In contrast, here we have analyzed up to 300 channels per patient across the brain, which would be prohibitive with DCM. By analyzing a large number of recordings, we were able to draw more general conclusions about whole-brain activity.
 
-## Caveats
+### Caveats
 
 The stimulus features we included in our model capture mostly low-level visual and auditory input. It is possible that regressing out a richer stimulus characterization would have removed additional stimulus-induced correlation. While we do not expect that this would change the overall effect of a reduced number of ‘connections’ during movie watching compared to resting state, the interpretation of changes in specific connections will be affected by the choice of features. For example, in sensory cortices, higher recurrent connectivity in the LFP during rest would be consistent with the more synchronized state we saw in rest, as reflected by larger oscillatory activity. Synchronization in higher-order cortices, however, is expected to be more strongly influenced by the semantic content of external input.
 
@@ -113,7 +165,7 @@ We used fixation onsets as external input, but it should be noted that they are 
 
 The correlation between the average incoming and outgoing connections and cortical hierarchy (Figure 5) is not significant when normalizing for the number of electrodes in each region of interest. Regions in the temporal lobe with a large number of electrodes might drive this correlation. A more fine-grained analysis in these regions could be the goal of future analysis.
 
-## Conclusion
+### Conclusion
 
 We analyzed whole-brain intracranial recordings in human patients at rest and while they watched videos. We used a model that separates intrinsic dynamics from extrinsic effects. We found that the brain’s response to the audiovisual stimuli appears to be substantially shaped by its endogenous dynamics. The model revealed a small but significant decrease in recurrent connectivity when watching movies. Finally, we observed a reduction in intrinsic variance during the extrinsic stimulus, which may be the result of neuronal gain adaptation.
 
@@ -121,43 +173,148 @@ We analyzed whole-brain intracranial recordings in human patients at rest and wh
 
 The vector-autoregressive model with external input (VARX) falls within a group of well-established linear models used in neuroscience (see Table 1). Prominent examples in this group are the generalized linear model (GLM), DCM, and TRF. While these models have been extensively used for neural signal analysis, the VARX model has not. We start, therefore, with a brief introduction. For more details, please refer to Parra et al., 2025.
 
-## VARX model
+**Table 1.**
+ Models commonly used in neural signal analysis.(a) ‘Interact’ refers to an additional bilinear interaction term of the form x C y that allows for a modulation of intrinsic effect by the external input. (b) The DCM is defined in terms of the first derivative of y(t), which in discrete time is the same as na = 1. (c) It is straightforward to add an interaction term to the VARX model and maintain fast OLS estimation.
 
-The VARX model explains a time-varying vectorial signal y(t) as the result of an intrinsic autoregressive feedback driven by an innovation process e(t) and an extrinsic input x(t). (We adopt here the terminology of ‘intrinsic’ and ‘extrinsic’ as it is commonly used in neuroscience and psychology. In system modeling and econometrics, where the VARX model is prevalent, the more common terminology is ‘endogenous’ and ‘exogenous’ (meaning the same things).) For the ith signal channel, the recurrence of the VAX model is given by:yi(t)=∑j=1dy∑τ=1naAij(τ)yj(t−τ)+∑j=1dx∑τ=0nbBij(τ)xj(t−τ)+ei(t)\begin{document}$$\displaystyle  \boldsymbol{y} _{i}(t)\>=\>\sum\limits_{j=1}^{d_{y}}\sum\limits_{\tau=1}^{n_{a}}{\boldsymbol{A} _{ij}(\tau)\boldsymbol{y} _{j}(t-\tau)}\>+\>\sum\limits_{j=1}^{d_{x}}\sum\limits_{\tau=0}^{n_{b}}{\boldsymbol{B} _{ij}(\tau)\boldsymbol{x} _{j}(t-\tau)}\>+\>\boldsymbol{e} _{i}(t) $$\end{document}
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Intrinsic effect A</th>
+      <th>Extrinsic effect B</th>
+      <th>Interact</th>
+      <th>Delayna,, nb</th>
+      <th>Estimation speed</th>
+      <th>Reference, with code where available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GLM</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>= 1</td>
+      <td>Medium</td>
+      <td>Friston et al., 1994, SPM, FSL</td>
+    </tr>
+    <tr>
+      <td>DCM</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yesa</td>
+      <td>= 1b</td>
+      <td>Slow</td>
+      <td>Friston et al., 2003, no code</td>
+    </tr>
+    <tr>
+      <td>VAR</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>&gt;1</td>
+      <td>Fast/slow</td>
+      <td>Barnett and Seth, 2014</td>
+    </tr>
+    <tr>
+      <td>mTRF</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>&gt;1</td>
+      <td>Fast</td>
+      <td>Crosse et al., 2016</td>
+    </tr>
+    <tr>
+      <td>VARX</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Noc</td>
+      <td>&gt;1</td>
+      <td>Fast</td>
+      <td>Parra et al., 2025</td>
+    </tr>
+  </tbody>
+</table>
+
+### VARX model
+
+The VARX model explains a time-varying vectorial signal y(t) as the result of an intrinsic autoregressive feedback driven by an innovation process e(t) and an extrinsic input x(t). (We adopt here the terminology of ‘intrinsic’ and ‘extrinsic’ as it is commonly used in neuroscience and psychology. In system modeling and econometrics, where the VARX model is prevalent, the more common terminology is ‘endogenous’ and ‘exogenous’ (meaning the same things).) For the ith signal channel, the recurrence of the VAX model is given by:
+
+$$
+y_{i}(t)=\sumj=1d_{y}\sum\tau=1n_{a}A_{ij}(\tau)y_{j}(t−\tau)+\sumj=1d_{x}\sum\tau=0n_{b}B_{ij}(\tau)x_{j}(t−\tau)+e_{i}(t)
+$$
 
 A and B are matrices of filters of lengths na and nb respectively. Therefore, A has dimensions and has dimensions [dy, dx, nb], where dy, dx are the dimensions of y(t) and x(t) respectively. The innovation process e(t) captures the internal variability of the model. Without it, repeating the same input x(t) would always result in a fixed deterministic output y(t). The innovation is assumed to be uncorrelated in time and therefore has a uniform spectrum. The recurrent filters A modify this spectrum to match the spectrum of y(t), thereby capturing the intrinsic dynamic. The feed-forward filters B inject a filtered version of the extrinsic input x(t) into this intrinsic dynamic. The role of each of these terms for brain activity is explained in Figure 6. We will refer to the filters in the matrix A and B as recurrent and feed-forward ‘connections’, but avoid the use of the word ‘causal’, which can be misleading (Parra et al., 2025).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig6-v1.jpg)
 
-**Figure 6.:** (A) Block diagram of the VARX model.  represents observable neural activity in different brain areas, y(t) are observable features of a continuous sensory stimulus, x(t) represents the recurrent connections within and between brain areas (intrinsic effect), and A captures the transduction of the sensory stimuli into neural activity and transmission to different brain areas (extrinsic effect). The diagonal term in B captures recurrent feedback within a brain area. Finally, A captures unobserved ‘random’ brain activity, which leads to intrinsic variability. (e(t)B) Example of input stimulus features (xt). (C) Example of neural signal (yt) recorded at a single location in the brain. We analyze local field potentials (LFPs) and broad-band high-frequency activity (BHA) in separate analyses. (D) Examples of filters  for individual feed-forward connections between an extrinsic input and a specific recording location in the brain. (BE) Effect size R for the recurrent connections captured by auto-regressive filters .A
+**Figure 6.:** (A) Block diagram of the VARX model. y(t) represents observable neural activity in different brain areas, x(t) are observable features of a continuous sensory stimulus, A represents the recurrent connections within and between brain areas (intrinsic effect), and B captures the transduction of the sensory stimuli into neural activity and transmission to different brain areas (extrinsic effect). The diagonal term in A captures recurrent feedback within a brain area. Finally, e(t) captures unobserved ‘random’ brain activity, which leads to intrinsic variability. (B) Example of input stimulus features x(t). (C) Example of neural signal y(t) recorded at a single location in the brain. We analyze local field potentials (LFPs) and broad-band high-frequency activity (BHA) in separate analyses. (D) Examples of filters B for individual feed-forward connections between an extrinsic input and a specific recording location in the brain. (E) Effect size R for the recurrent connections captured by auto-regressive filters A.
 
-Filter matrices A and B are unknown and can be estimated from the observed history of x(t) and y(t) using ordinary least squares (OLS). The objective for the optimal model is to minimize the power of the unobserved innovation process e(t), that is the summed squares:σ2=1T∑t=1Te(t)2\begin{document}$$\displaystyle  \boldsymbol{\sigma} ^{2}=\frac{1}{T}\sum\limits_{t=1}^{T}{\boldsymbol{e} (t)^{2}} $$\end{document}
+Filter matrices A and B are unknown and can be estimated from the observed history of x(t) and y(t) using ordinary least squares (OLS). The objective for the optimal model is to minimize the power of the unobserved innovation process e(t), that is the summed squares:
 
-## Granger analysis
+$$
+\sigma^{2}=\frac{1}{T}\sumt=1Te(t)^{2}
+$$
 
-The innovation is also the prediction error, for predicting y(t) from the past y(t-1) and input x(t). In the Granger formalism, the prediction error is calculated with all predictors included (error of the full model, σf) or with individual dimensions in y(t-1) or x(t) omitted from the prediction (error of the reduced models, σr) (Granger, 1969). To quantify the ‘effect’ of the specific dimension, one can take the ratio of these errors (Geweke, 1982), leading to the test statistic D known as the ‘deviance’. When the number of samples T is large, the deviance follows the Chi-square distribution with cumulative density F, from which one can compute a p-value:D=Tlog(σr2/σf2)\begin{document}$$\displaystyle D=T\, log({\boldsymbol{\sigma} _{r}^{2}}/{\boldsymbol{\sigma} _{f}^{2}}) $$\end{document}p=1−F(D,T)\begin{document}$$\displaystyle p=1-F(D,T) $$\end{document}R2=1−e−D/T\begin{document}$$\displaystyle R^{2}=1-e^{-{D}/{T}}$$\end{document}
+### Granger analysis
+
+The innovation is also the prediction error, for predicting y(t) from the past y(t-1) and input x(t). In the Granger formalism, the prediction error is calculated with all predictors included (error of the full model, σf) or with individual dimensions in y(t-1) or x(t) omitted from the prediction (error of the reduced models, σr) (Granger, 1969). To quantify the ‘effect’ of the specific dimension, one can take the ratio of these errors (Geweke, 1982), leading to the test statistic D known as the ‘deviance’. When the number of samples T is large, the deviance follows the Chi-square distribution with cumulative density F, from which one can compute a p-value:
+
+$$
+D=Tlog(\sigma_{r}^{2}/\sigma_{f}^{2})
+$$
+
+
+
+$$
+p=1−F(D,T)
+$$
+
+
+
+$$
+R^{2}=1−e^{−D/T}
+$$
 
 The p-value quantifies the probability that a specific connection in either A or B is zero. Therefore, D, p and R2 all have dimensions [dy, dy] or [dy, dx] for A or B respectively. The ‘generalized’ R2 (Magee, 1990) serves as a measure of effect size, capturing the strength of each connection. While this Granger formalism is well established in the context of estimating A, that is VAR models, to our knowledge, have not been used in the context of estimating B, that is VARX or TRF models.
 
-## Overall system response
+### Overall system response
 
-The overall brain response to the stimulus for the VARX model is given by the system impulse response (written here in the z-domain, or Fourier domain):H=(1−A)−1B\begin{document}$$\displaystyle \boldsymbol{H} =(1-\boldsymbol{A} )^{-1}\boldsymbol{B} $$\end{document}
+The overall brain response to the stimulus for the VARX model is given by the system impulse response (written here in the z-domain, or Fourier domain):
+
+$$
+H=(1−A)^{−1}B
+$$
 
 What we see here is that the system response H is factorized into an autoregressive (AR) filter A and a moving average (MA) filter B. When modeled as a single MA filter, the total system response has been called the ‘multivariate Temporal Response Function’ (mTRF) in the neuroscience community (Crosse et al., 2016). We found that the VARX estimate H is nearly identical to the estimated mTRF (Parra et al., 2025). In other words, B and A are a valid factorization of the mTRF into feed-forward extrinsic versus recurrent intrinsic effects.
 
 Note that the extrinsic effects captured with filters B are specific (every stimulus dimension has a specific effect on each brain area), whereas the intrinsic dynamic propagates this initial effect to all connected brain areas via matrix A, effectively mixing and adding the responses of all stimulus dimensions. Therefore, this factorization separates stimulus-specific effects from the shared intrinsic dynamic.
 
-## Relation to common neural signal models
+### Relation to common neural signal models
 
 The VARX model fits naturally into the existing family of models used for neural signals analysis. While they differ in the formulation and statistical assumptions, their defining equations have a similar general form with the attributes summarized in Table 1.
 
 An important simplifying assumption for the mTRF, VAR, and VARX models is that y(t) is observable with additive normally distributed innovation. As a result, parameter estimation can use ordinary least squares, which is fast to compute. In contrast, GLM, DCM, and some variants of VAR models assume that y(t) is not directly observable and needs to be estimated in addition to the unknown parameters A or B. The same is true for the basic ‘output error’ model in linear systems theory (Ljung, 1999). This requires slower iterative algorithms, such as expectation maximization. As a result, these models are often limited to small networks of a few nodes to test specific alternative hypotheses (Penny et al., 2004) (The original DCM proposed for fMRI included an added complication of modeling the hemodynamic response, which amounts to adding a temporal filter to each output node and prior to adding observation noise). In contrast, here we will analyze up to 300 channels per patient to draw general conclusions about overall brain organization.
 
-## Validation of recurrent connectivity estimate with whole-brain neural mass model
+### Validation of recurrent connectivity estimate with whole-brain neural mass model
 
 To test the descriptive validity (Bassett et al., 2018) of the VARX model, we follow the approach of recovering structural connectivity from functional activity in simulation (Honey et al., 2009). Specifically, we will compare the recurrent connectivity A derived from brain activity simulated assuming a given structural connectivity, that is we ask, can the VARX model recover the underlying structural connectivity, at least in a simulated whole-brain model with known connectivity? We simulated neural activity for a whole-brain neural mass model (Cakan et al., 2023). We used the default model simulation of the neurolib python library (using their sample code for the ‘ALNModel’), which is a mean-field approximation of adaptive exponential integrate-and-fire neurons. This model can generate simulated mean firing rates in 80 brain areas based on connectivity and delay matrices determined with DTI. We used 5 min of ‘resting state’ activity (no added stimulus, simulated at 0.1 ms resolution, subsequently downsampled to 100 Hz). The VARX model was estimated with na=2, and no input. The resulting estimate for A is dominated by the diagonal elements that capture the autocorrelation within brain areas (Figure 7—figure supplement 1). The true connectivity matrix from DTI (Figure 7A) is similar to the effect size estimate for the recurrent connections (Figure 7B). Following Honey et al., 2009 we compare the two as a scatter plot (Figure 7C) and observe a Spearman correlation of 0.69. For comparison, we also used the sparse-inverse covariance method to recover connectivity from the correlation matrix (functional connectivity). This method is considered state-of-the-art as it is more sensitive than other methods in detecting structural connections (Smith et al., 2011) and uses the graphical lasso algorithm (Chen, 2023). The resulting connectivity estimate (Figure 7D) only achieves a Spearman correlation of 0.52. We note that the structural connectivity determined with DTI is largely symmetric. When enhancing the asymmetry, the VARX model is not as accurate, but correctly recovers the direction of the asymmetry (Figure 7—figure supplement 2).
 
-## Intracranial EEG recordings and stimulus features
+![Figure 7.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig7-v1.jpg)
+
+**Figure 7.:** (A) True structural connectivity C used to simulate neural activity using a neural mass model with the neurolib python toolbox. Structural connectivity is based on diffusion tensor imaging data between 80 brain areas (called Cmat in neurolib). Here showing the square root of the ‘Cmat’ matrix for better visibility of small connectivity values. (B) Effect size estimate R for the recurrent connectivity matrix A of the VARX model on the simulated data. The diagonal in R is omitted as it is also missing in the structural connectivity Cmat. (C) Comparison of true and VARX estimate of connectivity. (D) Absolute value of the sparse-inverse functional connectivity (estimated using graphical lasso Friedman et al., 2008).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Same effect size matrix R as in Figure 7B, except now the diagonal element is shown. Filter matrix A for (B) delay 1 and (C) delay 2. The color axis has been limited to ±0.25 for visibility of off-diagonal elements.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/104996/elife-104996-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Same as in Figure 7A, however, rows 1:10, 65:66, 33:36, and 55:56 have been downscaled by a factor of 0.1 to enhance the asymmetry of the structural connectivity matrix for nodes that had larger connectivity between distant brain areas. Note again that the diagonal in R is omitted as it is also missing in the structural connectivity matrix of the simulation. (B) Effect size R for VARX model on updated simulated data. (C) Spearman correlation drops to r = 0.54 (from 0.69 in Figure 7). (D) Absolute value of the sparse-inverse functional connectivity on updated simulated data. (E) Asymmetry is highlighted by subtracting the transpose (same as in Figure 5). (F) The VARX largely recovers the sign of the asymmetry. (G) But a number of nodes are misestimated. (H) The sparse inverse covariance, by definition, is symmetric and does not capture any asymmetry.
+
+### Intracranial EEG recordings and stimulus features
 
 We analyzed intracranial EEG and simultaneous eye-tracking data recorded from patients (N = 26 recordings, mean age 38.69 years, age range 19–59 years, 11 females, Appendix 2—table 1) during rest and while they watched various video clips. Four out of 22 individual patients underwent two implantations and recordings at different times, resulting in a total of 26 recording sessions with a total of 5093 recording channels. The video clips included animations with speech (‘Despicable Me’, two different clips, 10 min each, in English and Hungarian), an animated short film with a mostly visual narrative and music, shown twice (‘The Present’, 4.3 min), and three clips of documentaries of macaques (‘Monkey’, 5 min each, without sound) (Nentwich et al., 2023). In addition to the clips from the previous analysis, we included a movie clip of abstract animations (‘Inscapes’, 10 min) (Vanderwal et al., 2015), and an eyes-open resting state with maintained fixation (‘Resting state’, 5 min), and eyes-closed resting state (‘Eyes Closed Rest’, 5 min). In total, we recorded up to 64.7 min of data for each patient (Appendix 2—table 1).
 

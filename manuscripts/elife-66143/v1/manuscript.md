@@ -22,7 +22,7 @@
 
 ## Abstract
 
-The transcription factor Snai1, a well-known regulator of epithelial-to-mesenchymal transition, has been implicated in early cardiac morphogenesis as well as in cardiac valve formation. However, a role for Snai1 in regulating other aspects of cardiac morphogenesis has not been reported. Using genetic, transcriptomic, and chimeric analyses in zebrafish, we find that Snai1b is required in cardiomyocytes for myocardial wall integrity. Loss of snai1b increases the frequency of cardiomyocyte extrusion away from the cardiac lumen. Extruding cardiomyocytes exhibit increased actomyosin contractility basally as revealed by enrichment of p-myosin and α-catenin epitope α-18, as well as disrupted intercellular junctions. Transcriptomic analysis of wild-type and snai1b mutant hearts revealed the dysregulation of intermediate filament genes, including desmin b ( desmb ) upregulation. Cardiomyocyte-specific desmb overexpression caused increased cardiomyocyte extrusion, recapitulating the snai1b mutant phenotype. Altogether, these results indicate that Snai1 maintains the integrity of the myocardial epithelium, at least in part by repressing desmb expression.
+The transcription factor Snai1, a well-known regulator of epithelial-to-mesenchymal transition, has been implicated in early cardiac morphogenesis as well as in cardiac valve formation. However, a role for Snai1 in regulating other aspects of cardiac morphogenesis has not been reported. Using genetic, transcriptomic, and chimeric analyses in zebrafish, we find that Snai1b is required in cardiomyocytes for myocardial wall integrity. Loss of snai1b increases the frequency of cardiomyocyte extrusion away from the cardiac lumen. Extruding cardiomyocytes exhibit increased actomyosin contractility basally as revealed by enrichment of p-myosin and α-catenin epitope α-18, as well as disrupted intercellular junctions. Transcriptomic analysis of wild-type and snai1b mutant hearts revealed the dysregulation of intermediate filament genes, including desmin b (desmb) upregulation. Cardiomyocyte-specific desmb overexpression caused increased cardiomyocyte extrusion, recapitulating the snai1b mutant phenotype. Altogether, these results indicate that Snai1 maintains the integrity of the myocardial epithelium, at least in part by repressing desmb expression.
 
 ## Introduction
 
@@ -30,9 +30,33 @@ As the contractile units of the heart, cardiomyocytes (CMs) need to maintain a c
 
 ## Results
 
-## The transcription factor Snai1b maintains myocardial wall integrity
+### The transcription factor Snai1b maintains myocardial wall integrity
 
 We focused our attention on one of the zebrafish snai1 paralogues (Blanco et al., 2007), snai1b, the knockdown of which has been reported to cause embryonic cardiac defects (Qiao et al., 2014). To analyse snai1b function, we generated a promoter-less snai1b allele (Figure 1—figure supplement 1A), which displays almost undetectable levels of snai1b mRNA and no transcriptional upregulation of its paralogue (El-Brolosy et al., 2019; Figure 1—figure supplement 1B). Approximately half of the mutant embryos exhibit cardiac looping defects (Figure 1—figure supplement 1C–D’), as reported for snai1b morphants (Qiao et al., 2014). Upon close examination of the snai1b mutant hearts, we observed a new and surprising phenotype leading to a disruption in myocardial wall integrity: CMs extrude away from the cardiac lumen (Figure 1A–D’). We found that both heterozygous and homozygous snai1b mutant embryos, including ones that display cardiac looping defects, exhibit a significant increase in the number of extruding CMs compared with their wild-type siblings (Figure 1A–E, Figure 1—figure supplement 1E). The frequency of this CM extrusion is higher in the atrioventricular canal (AVC) (Figure 1—figure supplement 1F), where the cells are exposed to stronger mechanical forces from the blood flow and from looping morphogenesis (Auman et al., 2007; Dietrich et al., 2014; Bornhorst et al., 2019). CM extrusion can be observed as early as 48 hours post fertilization (hpf), as well as during larval stages including at 78 (Figure 1—figure supplement 2A–C) and 100 (Figure 1—figure supplement 2D–F) hpf. By imaging beating hearts over a >18 hours period starting at 52 hpf, we observed that a few extruding CMs in snai1b mutants appear to detach from the myocardium and remain in the pericardial cavity for several hours (Figure 1—figure supplement 1I–K, Figure 1—video 1B); in contrast, we did not observe CMs in the pericardial cavity in wild types (Figure 1—video 1A). These results uncover a previously uncharacterized role for Snai1b in maintaining myocardial wall integrity.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig1-v1.jpg)
+
+**Figure 1.:** (A–B”) Single-plane images of Tg(myl7:BFP-CAAX) snai1b+/+ (A) and snai1b-/- (B) hearts at 50 hpf. Close-up of boxed areas (A’, B’) and schematic (A”, B”). (C–D’) 3D surface rendering of the myocardium of Tg(myl7:BFP-CAAX) snai1b+/+ (C, C’) and snai1b-/- (D, D’) embryos at 50 hpf. CM extrusions are clearly observed in snai1b-/- embryos (magenta arrowheads in B, B’, B”, D, D’). (E) More CMs are extruding in Tg(myl7:BFP-CAAX) snai1b-/- embryos compared with snai1b+/+ and snai1b+/- siblings at 50 hpf (snai1b+/+, n = 20; snai1b+/-, n = 23; snai1b-/-, n = 24). (F–H) Blocking cardiac contractions with tnnt2a MO leads to a reduced number of extruding CMs in snai1b-/- embryos, comparable with uninjected snai1b+/+ embryos. (F–G’) 3D surface rendering of the myocardium of snai1b+/+ (F) and snai1b-/- (G) uninjected embryos and snai1b-/- embryos injected with tnnt2a MO (G’). (H) Fewer CMs are extruding (magenta arrowheads in G) in snai1b-/- embryos injected with tnnt2a MO (n = 14) compared with uninjected snai1b-/- (n = 6) and snai1b+/+ (n = 9) embryos at 50 hpf. (I–L) 3D surface rendering of the myocardium showing snai1b+/+ donor-derived CMs in a snai1b+/+ (I) or snai1b-/- (J) heart, and snai1b-/- donor-derived CMs in a snai1b+/+ heart (K). (L) The percentage of donor-derived CMs that extrude is higher when snai1b-/- donor-derived CMs are in snai1b+/+ hearts (n = 8) than when snai1b+/+ donor-derived CMs are in snai1b+/+ (n = 5) or snai1b-/- (n = 14) hearts. (M–P) Overexpression of snai1b specifically in CMs partially rescues the CM extrusion phenotype in snai1b-/- embryos. 3D surface rendering of the myocardium of a snai1b-/- embryo (M), and snai1b-/- embryo overexpressing snai1b under a myl7 (N) or a fli1a (O) promoter. (P) Fewer CMs are extruding (magenta arrowheads) in snai1b-/- embryos (n = 19) overexpressing snai1b in CMs (N, P) compared with snai1b-/- embryos (M, P, n = 38), and this number is comparable to that in snai1+/+ embryos (n = 24). The number of extruding CMs does not change in snai1b-/- embryos (n = 16) when snai1b is overexpressed in endothelial cells (fli1a) (O, P). Plot values represent means ± S.D.; p-values determined by one-way ANOVA followed by multiple comparisons with Dunn test (E, H, L, P). Scale bars: 20 µm. V: ventricle; A: atrium; ap: apical; ba: basal; n: number of embryos.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the promoter-less snai1b allele. Two gRNAs (red lines) were used to generate a snai1b mutant allele lacking 1300 bp upstream of the start codon. (B) Relative mRNA levels of snai1b are significantly reduced in snai1b-/- hearts at 48 hpf, whereas snai1a expression levels appear unchanged, indicating lack of transcriptional adaptation by the paralogue; n = 4 biological replicates, 30 embryos each. (C–D’) Single-plane images of 50 hpf snai1b+/+ (C) and snai1b-/- (D–D’) hearts, with 50% of snai1b-/- hearts exhibiting cardiac looping defects (D’). (E) Unlooped and looped snai1b-/- hearts display a similar number of extruding CMs (snai1b+/+, n = 14; looped snai1b-/-, n = 14; unlooped snai1b-/-, n = 14). (F) A higher proportion of the extruding CMs in snai1b-/- hearts are located in the atrioventricular canal compared with the ventricle and atrium (snai1b+/+, n = 20; snai1b-/-, n = 24). (G, H) Single–plane images of 50 hpf snai1b-/- hearts overexpressing snai1b under a myl7 (G) or fli1a (H) promoter. (I, J) Frames from time-lapse imaging of the beating heart of a snai1b-/- embryo to visualize extruding cardiomyocytes (CMs) at 52 (I), 58 (J), and 70 (K) hpf; extruded CMs are found in the pericardial cavity (arrowheads in J and K). Plot values represent means ± S.D.; p-values determined by Student’s t-test (B) or by one-way ANOVA followed by multiple comparisons with Dunn test (E, F). Scale bars: 20 µm (C–D’, G–K). BRE: transcription factor IIB response element; V: ventricle; A: atrium; n: number of embryos; FC: fold change. All Ct values are listed in Supplementary file 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–F) 3D surface rendering of the heart at 78 and 100 hpf. snai1b-/- larvae (B, E) exhibit more extruding CMs (arrowheads) compared with snai1b+/+ larvae (A, D); quantification (C, F) (C, snai1b+/+, n = 6; snai1b-/-, n = 10; F, snai1b+/+, n = 12; snai1b-/-, n = 10). Plot values represent means ± S.D.; p-values determined by Student’s t-test. Scale bars: 20 µm. V: ventricle; A: atrium; n: number of embryos.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–A”’) TUNEL assay analysis indicates that extruding CMs in snai1b-/- embryos are not apoptotic. Maximum intensity projection of Tg(myl7:BFP-CAAX) snai1b+/+ (A) and snai1b-/- (A’–A”) hearts at 50 hpf. Close-up of extruding CM (arrowhead) labelled with DAPI, but not with TUNEL (A”). (B, B’) Maximum intensity projections of Tg(myl7:H2B-GFP) snai1b+/+ (B) and snai1b-/- (B’) hearts at 52 hpf. (C) The total number of CMs does not change significantly in snai1b-/- hearts (n = 12) compared with snai1b+/+ hearts (n = 12). Plot values represent means ± S.D.; p-value determined by Student’s t-test. Scale bars: 20 µm (A–A’, B–B’); 10 µm (A’’). V: ventricle; A: atrium; n: number of embryos.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A–C’) Single-plane images and inner 3D surface rendering of trabecular cardiomyocytes (CMs) (asterisks in A) in 100 hpf snai1-/- (C, C’) and snai1b+/+ (A, A’) larvae. (B–D) Fewer delaminating (B) and trabecular (D) CMs are observed in snai1b-/- larvae compared with snai1b+/+ larvae at 78 (snai1b+/+, n = 6; snai1b-/-, n = 8) and 100 (snai1b+/+, n = 6; snai1b-/-, n = 9) hpf. Plot values represent means ± S.D.; p-values determined by Student’s t-test. Scale bars: 20 µm. V: ventricle; A: atrium; n: number of embryos.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A, B, F, G) Maximum intensity projection of Tg(myl7:HRAS-EGFP) snai1b+/+ (A, F) and snai1b-/- (B, G) hearts at 52 (A, B) and 74 (F, G) hpf. At both timepoints, snai1b-/- embryos exhibit reduced CM apical cell surface (C, H), increased CM aspect ratio (D, I), and reduced ventricular volume (E, J) compared with snai1b+/+ embryos. (C, H) snai1b+/+, N = 190 at 52 hpf, N = 173 at 74 hpf; snai1b-/-, N = 195 at 52 hpf, N = 178 at 74 hpf. (D, I) snai1b+/+, N = 183 at 52 hpf, N = 162 at 74 hpf; snai1b-/-, N = 188, N = 170 at 74 hpf. (E, J) snai1b+/+, n = 32 at 52 hpf, n = 28 at 74 hpf; snai1b-/-, n = 27 at 52 hpf, n = 26 at 74 hpf. (K–P) snai1b mutants exhibit no differences in heart rate (K), ventricular ejection fraction (L), or ventricular fractional shortening (M) compared with snai1b+/+ embryos at 52 hpf (K, snai1b+/+, n = 28; snai1b-/-, n = 29; L, snai1b+/+, n = 33; snai1b-/-, n = 35; M, snai1b+/+, n = 28; snai1b-/-, n = 35), but exhibit reduced heart rate (N), ventricular ejection fraction (P), and ventricular fractional shortening (O) compared with snai1b+/+ larvae at 74 hpf (N, snai1b+/+, n = 26; snai1b-/-, n = 28; P, snai1b+/+, n = 27; snai1b-/-, n = 24; O, snai1b+/+, n = 24; snai1b-/-, n = 20). Plot values represent means ± S.D.; p-values determined by Mann–Whitney U test. Scale bars: 20 µm. V: ventricle; A: atrium; n: number of embryos; N: number of CMs.
 
 For all further analyses, we decided to focus on the snai1b mutants displaying apparently unaffected cardiac looping. We first investigated whether the extruding CMs in snai1b mutants were apoptotic as dying epithelial cells are frequently removed by extrusion (Rosenblatt et al., 2001). However, we did not observe a significant difference in the rate of dying cells, as assessed by terminal deoxynucleotidyl transferase dUTP nick end labelling (TUNEL), between snai1b+/+ (Figure 1—figure supplement 3A) and snai1b-/- (Figure 1—figure supplement 3A’, A”) hearts, indicating that CM extrusion in snai1b mutants is not due to cell death.
 
@@ -42,23 +66,55 @@ A role for contractility-induced mechanical forces on myocardial wall integrity 
 
 To test whether Snai1b plays a cell-autonomous role in promoting myocardial wall integrity, we generated mosaic hearts by cell transplantation (Figure 1I–L). We observed that donor-derived snai1b+/+ CMs remained integrated in the snai1b-/- myocardial wall (Figure 1J), whereas donor-derived snai1b-/- CMs in a snai1b+/+ heart were significantly more prone to extrude than their wild-type neighbours (Figure 1K, L). Together, these data indicate that snai1b is required in a CM-autonomous manner to maintain myocardial wall integrity. Furthermore, we found that CM-specific, but not endothelial-specific, snai1b overexpression rescued the snai1b-/- CM extrusion phenotype (Figure 1M–P, Figure 1—figure supplement 1G, H), further indicating that Snai1b is required in CMs to suppress their extrusion away from the lumen.
 
-## Snai1b limits cardiomyocyte extrusion by regulating the actomyosin machinery
+### Snai1b limits cardiomyocyte extrusion by regulating the actomyosin machinery
 
 During the process of cardiac trabeculation, some CMs undergo an EMT-like process, lose their apicobasal polarity, and delaminate towards the cardiac lumen (Staudt et al., 2014; Jiménez-Amilburu et al., 2016). We wanted to determine whether the extruding CMs in snai1b mutants also lose their apicobasal polarity. Notably, we observed that the polarity marker Podocalyxin remained on the apical side of the extruding CMs in snai1b mutants (Figure 2—figure supplement 1A–B’’), suggesting that apicobasal polarity is maintained.
 
 Studies in Drosophila embryos and in mammalian cells in culture have revealed the importance of cell extrusion in limiting tissue overcrowding and eliminating dying cells to maintain tissue homeostasis and/or determine cell fate (Kocgozlu et al., 2016; Wee et al., 2020). Other experiments have shown that a contractile actomyosin ring around the cell cortex is necessary for their extrusion (Rosenblatt et al., 2001; Eisenhoffer et al., 2012; Kocgozlu et al., 2016). Using a monoclonal antibody against the α-catenin epitope α-18 (Yonemura et al., 2010), which recognizes the activated conformation of α-catenin, a mechanosensitive protein, and polyclonal antibodies against phosphorylated/activated myosin light chain (p-myosin), we assessed cellular contractility in extruding CMs in snai1b+/+ and snai1b-/- embryos (Figure 2A–B”, E–F”). Increased α-catenin epitope α-18 and p-myosin immunofluorescence intensity was observed in the basal side of extruding CMs in snai1b-/- (Figure 2B–C’, F–G’) and snai1b+/+ (Figure 2C–C’, G–G’) embryos. As cellular extrusions also involve the rearrangement of cell-cell junctions (Grieve and Rabouille, 2014; Lubkov and Bar-Sagi, 2014; Teng et al., 2017), we assessed the localization of the major CM adhesion molecule, N-cadherin (Bagatto et al., 2006; Cherian et al., 2016). We observed an overall reduction in N-cadherin levels in the junctions between CMs in snai1b mutants compared with those in wild-type siblings (Figure 2A–B”, D–D’), suggesting that Snai1 regulates N-cadherin localization to stabilize actomyosin tension at the junctions, thereby sustaining adhesion between CMs.
 
-## Intermediate filament gene expression is dysregulated in snai1b-/- hearts
+![Figure 2.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig2-v1.jpg)
+
+**Figure 2.:** (A–B”) Orthogonal projections in the YZ plane of a 52 hpf snai1b+/+ heart (A) immunostained for α-catenin epitope α-18, N-cadherin, and GFP compared with a snai1b-/- sibling heart (B). Close-up of boxed areas of snai1b+/+ (A’) and snai1b-/- (B’) CMs. Schematics illustrate the localization of activated α-catenin (magenta) in the basal domain of extruding CMs in snai1b-/- embryos and defects in N-cadherin (yellow) localization in the junctional domain of snai1b-/- CMs (A”–B”). (C–D’) Fluorescence intensity profile (FIP) (C–D) and mean fluorescence intensity (mFI) (C’–D’) of α-catenin epitope α-18 and N-cadherin immunostaining in 52 hpf snai1b+/+ and snai1b-/- CMs, and in snai1b+/+ and snai1b-/- extruding CMs. The α-catenin epitope α-18 is observed in the basal domain (white arrowhead in B’) of extruding CMs (white asterisks in B’) in snai1b-/- embryos, and a reduction in junctional N-cadherin (red arrowhead in B’) is observed in snai1b-/- CMs. (FIP α-catenin epitope α-18: snai1b+/+ CMs, N = 179; snai1b+/+ extruding CMs, N = 60; snai1b-/- CMs, N = 140; snai1b-/- extruding CMs, N = 54; mFI α-catenin epitope α-18: snai1b+/+ CMs, N = 90; snai1b+/+ extruding CMs, N = 24; snai1b-/- CMs, N = 88; snai1b-/- extruding CMs, N = 44. FIP N-cadherin: snai1b+/+ CMs, N = 90; snai1b+/+ extruding CMs, N = 12; snai1b-/- CMs, N = 98; snai1b-/- extruding CMs, N = 49; mFI N-cadherin: snai1b+/+ CMs, N = 90; snai1b+/+ extruding CMs, N = 25; snai1b-/- CMs, N = 92; snai1b-/- extruding CMs, N = 70.) (E–F”) Representative images of a 52 hpf snai1b-/- heart (F) immunostained for p-myosin and GFP compared with a snai1b+/+ sibling heart (E). Schematics illustrate the basal enrichment of p-myosin (magenta) in extruding CMs in snai1b-/- embryos (E”–F”). (G–G’) FIP (G) and mFI (G’) of p-myosin immunostaining in snai1b+/+ and snai1b-/- CMs, and in snai1b+/+ and snai1b-/- extruding CMs. p-myosin is enriched basally (orange arrowheads in F’) in snai1b-/- extruding CMs in (white asterisks in F’). (FIP p-myosin: snai1b+/+ CMs, N = 204; snai1b+/+ extruding CMs, N = 60; snai1b-/- CMs, N = 140; snai1b-/- extruding CMs, N = 49; mFI p-myosin: snai1b+/+ CMs, N = 100; snai1b+/+ extruding CMs, N = 29; snai1b-/- CMs, N = 153; snai1b-/- extruding CMs, N = 48). Plot values represent means ± S.E.M. (C, D, G). In the violin plots (C’, D’, G’), solid black lines indicate median. p-values determined by Kruskal–Wallis test (C’, D’, G’). Scale bars: 20 µm (A, B, E, F); 2 µm (A’, B’, E’, F’). ap: apical; ba: basal; N: number of CMs. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B’’) Single-plane images of Tg(myl7:BFP-CAAX); Tg(−0.2myl7:EGFP-podocalyxin) snai1b+/+ (A–A’) and snai1b-/- (B–B’) hearts at 50 hpf. Close-up of boxed areas (A’’, B’’). No changes in the localization of the apical marker Podocalyxin are observed in extruding CMs (arrowheads in B–B’’). Scale bars: 20 µm (A–A’, B–B’), 2 µm (A’’, B’’). V: ventricle; A: atrium.
+
+### Intermediate filament gene expression is dysregulated in snai1b-/- hearts
 
 To further understand how the transcription factor Snai1b is required to maintain myocardial wall integrity, we compared the snai1b+/+ and snai1b-/- cardiac transcriptomes at 48 hpf, a time when CM extrusion is starting to be observed (Figure 3A). Since Snai1 primarily acts as a transcriptional repressor (Baulida et al., 2019), we focused on the genes upregulated in snai1b-/- hearts compared with wild type. In the 339 upregulated genes, gene ontology analysis revealed an enrichment of genes related to the cytoskeleton (Figure 3—figure supplement 1A), particularly an upregulation of intermediate filament (IF) genes (Figure 3B). Mutations that modify posttranslational modification sites in IF proteins have been associated with cardiomyopathy (Rainer et al., 2018), but how IF genes are regulated at the transcriptional level remains poorly understood. Interestingly, the muscle-specific IF gene desmin b (desmb) was upregulated in snai1b-/- hearts (Figure 3C), further suggesting that Snai1 modulates CM development cell-autonomously. Desmin is localized to Z-discs and desmosomes within intercalated discs in muscle cells, and an imbalance in Desmin levels is a major cause of cardiomyopathies (Capetanaki et al., 2015).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig3-v1.jpg)
+
+**Figure 3.:** (A) RNA extracted from 48 hpf snai1b+/+ and snai1b-/- hearts was used for transcriptomic analysis. (B) GO analysis of cellular processes shows enrichment of intermediate filament components in snai1b-/- hearts. (C) Heatmap of a list of upregulated cytoskeletal genes, including desmb. (D) Relative mRNA levels of desmb are significantly increased in snai1b-/- hearts at 48 hpf; n = 4 biological replicates, 30 hearts each. (E) Schematic of snai1b overexpression under a myl7 promoter; snai1b and desmb mRNA levels analysed at 48 hpf. (F) Relative mRNA levels of desmb are significantly reduced in snai1b cardiomyocyte (CM)-specific overexpressing hearts at 48 hpf; n = 4 biological replicates, 30 hearts each. (G–H”) Orthogonal projections in the YZ plane of a 52 hpf snai1b-/- heart (H) immunostained for Desmin and membrane GFP compared with a snai1b+/+ heart (G). Close-up of boxed areas of snai1b+/+ (G’) and snai1b-/- (H’) CMs. Schematics (Desmin in magenta) illustrate the basal enrichment of Desmin in extruding CMs in snai1b-/- embryos (G”–H”). (I–I’) Fluorescence intensity profile (FIP) (I) and mean fluorescence intensity (mFI) (I’) of Desmin in snai1b+/+ and snai1b-/- CMs, and in snai1b+/+ and snai1b-/- extruding CMs. Desmin immunostaining is observed throughout the snai1b-/- myocardium, with an enrichment in the basal domain (white arrowheads in H’–G’) in extruding CMs (white asterisks in H’). (FIP: snai1b+/+ CMs, N = 49; snai1b+/+ extruding CMs, N = 41; snai1b-/- CMs, N = 45; snai1b-/- extruding CMs, N = 41; mFI: snai1b+/+ CMs, N = 56; snai1b+/+ extruding CMs, N = 30; snai1b-/- CMs, N = 65; snai1b-/- extruding CMs, N = 46). Plot values represent means ± S.D. (D, F) or mean ± S.E.M. (I). In the violin plot (I’), solid black lines indicate median. p-Values determined by Student’s t-test (D, F) or Kruskal–Wallis test (I’). Scale bars: 20 µm (G, H); 2 µm (G’, H’). ap: apical; ba: basal; n: number of embryos; N: number of CMs; FC: fold change. All Ct values are listed in Supplementary file 2. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) GO analysis of biological processes shows enrichment of cytoskeletal related genes (in red) in snai1b-/- hearts compared with snai1b+/+ hearts. (B, C) Schematic of gfp and snai1b mRNA injections into one-cell stage embryos. snai1b and desmb mRNA levels were analysed in injected embryos at 4.5 hpf. Relative mRNA levels of snai1b are significantly increased, whereas desmb mRNA levels are decreased at 4.5 hpf. n = 4 biological replicates, 30 embryos each. (D) In vitro luciferase assay in HEK293T cells after co-transfection of pGL4.14-luciferase and pGL4.14–800 bp desmb-luciferase with pTol2-CMV-snai1b or alone. Reduced luciferase activity was detected when pTol2-CMW-snai1b was co-transfected with pGL4.14–800 bp desmb-luciferase. Plot values represent means ± S.D.; p-values determined by Student’s t-test (C) or one-way ANOVA followed by multiple comparisons with Dunn test (D). FC: fold change. All Ct values are listed in Supplementary file 2.
 
 Using quantitative PCR and immunostaining to analyse desmin at the mRNA and protein levels, respectively, we first examined the upregulation of desmb/Desmin in snai1b-/- hearts compared with wild type (Figure 3D, G–I’). Notably, extruding snai1b-/- CMs exhibit an enrichment of Desmin in their basal domain and a correlative loss of Desmin at intercellular junctions (Figure 3I–I’), indicating abnormal Desmin localization. As IFs are known to regulate actomyosin contractility in keratinocytes and astrocytes (van Bodegraven and Etienne-Manneville, 2020), these data suggest that basal enrichment of Desmin promotes CM extrusion in snai1b-/- hearts.
 
 To further test whether Snai1 represses desmb expression, we analysed desmb transcript levels upon snai1b overexpression. qPCR analysis 4.5 hours after mRNA injection confirmed downregulation of desmb transcript levels when snai1b was overexpressed (Figure 3—figure supplement 1B, C), compared with gfp mRNA injected controls. Similarly, qPCR analysis of hearts overexpressing snai1b specifically in their CMs showed a reduction of desmb transcript levels by 40% (Figure 3E, F). ChIP-seq experiments using mouse skeletal myoblasts have shown that murine Snai1 binds to the proximal promoter of Desmin (Soleimani et al., 2012). Additionally, in silico analysis of zebrafish desmin has uncovered potential Snai1b binding sites in the promoter of desmb, but not desma (Kayman Kürekçi et al., 2021). To test whether zebrafish Snai1b can repress the promoter activity of desmb, we performed luciferase assays in HEK293T cells. We cloned 800 bp of the proximal promoter of desmb upstream of the Firefly luciferase gene, and the open reading frame of snai1b under a constitutively active promoter. The desmb promoter region alone induced transcriptional activation of Luciferase compared with control. However, co-expression of Snai1b led to a significant reduction of the Luciferase signal (Figure 3—figure supplement 1D), suggesting that Snai1b can repress the promoter activity of desmb. Taken together, these data suggest that Snai1b regulates desmb transcription.
 
-## desmb overexpression in cardiomyocytes promotes their extrusion
+### desmb overexpression in cardiomyocytes promotes their extrusion
 
 Both loss (Taylor et al., 2007; Ramspacher et al., 2015) and gain (Chen et al., 2018) of Desmin expression have been associated with cardiac defects. Thus, we asked whether an imbalance in desmb expression could lead to CM extrusion by overexpressing desmb mosaically in CMs. We observed that desmb overexpressing CMs were more prone to extrude compared with gfp overexpressing CMs (Figure 4A–C), suggesting that IFs are needed at their endogenous levels to maintain myocardial wall integrity. We hypothesized that increased Desmin levels induce CM extrusion by disrupting desmosome organization leading to compromised cell-cell adhesion and/or by increasing cell contractility basally. We first used electron microscopy to analyse desmosomes at the ultrastructural level, but observed no obvious defects in snai1b-/- CMs compared with wild type (Figure 4—figure supplement 1A–D). This result is consistent with a previous study that shows intact desmosomes in extruding epithelial cells (Thomas et al., 2020). To test whether overexpression of Desmin in CMs was associated with increased cell contractility, we performed immunostaining on desmb overexpressing hearts using α-catenin epitope α-18, p-myosin, and Desmin antibodies. desmb overexpressing CMs exhibited a basal enrichment of Desmin (Figure 4H–I’), as well as of the activated actomyosin factors α-catenin epitope α-18 and p-myosin (Figure 4D–G’). As we observed in snai1b-/- CMs, desmb overexpressing CMs also exhibited reduction of N-cadherin at the junctions compared with control (Figure 4—figure supplement 2A–B’). Taken together, these data show that increasing desmb expression in CMs compromises their adhesion (reduced N-cadherin) and increases their basal actomyosin contractility (increased α-catenin epitope α-18 and p-myosin), recapitulating snai1b mutant phenotypes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Single-plane images of snai1b+/+ embryos injected with myl7:GFP (A) or with myl7:desmb-p2a-GFP (B) at 50 hpf. (C) A higher percentage of CMs extrude when overexpressing desmb (n = 23) compared with control (n = 15) (magenta arrowheads in B, B’). (D–D’, F–F’, H–H’) Orthogonal projections in the YZ plane of hearts from 52 hpf embryos injected with myl7:desmb-p2a-GFP and immunostained for α-catenin epitope α-18, GFP, and BFP (D–D’), p-myosin, GFP, and Alcama (F–F’), or Desmin, GFP, and Alcama (H–H’). Close-up of boxed areas of desmb-overexpressing and adjacent wild-type CMs (D’, F’, H’). (E–E’, G–G’, I–I’) Fluorescence intensity profile (FIP) (E, G, I) and mean fluorescence intensity (mFI) (E’, G’, I’) of α-catenin epitope α-18 (E–E’), p-myosin (G–G’), and Desmin (I–I’) in CMs that overexpress desmb (magenta arrowheads) and CMs that do not overexpress desmb (white arrowheads). α-catenin epitope α-18, p-myosin, and Desmin immunostaining signals are enriched in the basal domain in desmb overexpressing CMs. FIP: desmb OE CMs, (E) N = 132, (G) N = 120, (I) N = 88; desmb OE extruding CMs, (E) N = 47, (G) N = 54, (I) N = 49; control CMs, (E) N = 153, (G) N = 133, (I) N = 86. mFI: desmb OE CMs, (E’) N = 49, (G’) N = 65, (I’) N = 63; desmb OE extruding CMs, (E’) N = 33, (G’) N = 60, (I’) N = 59; control CMs, (E’) N = 55, (G’) N = 62, (I’) N = 64. Plot values represent means ± S.D. (C) or means ± S.E.M. (E, G, I). In the violin plots (E’, G’, I’), solid black lines indicate median. p-values determined by Mann–Whitney U (C) or Kruskal–Wallis (E’, G’, I’) test. Scale bars: 20 µm (A–B’, D, F, H); 2 µm (D’, F’, H’). V: ventricle; A: atrium; ap: apical; ba: basal; n: number of embryos; N: number of CMs. See also Figure 4—figure supplements 1–3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Transmission electron microscopy (TEM) images showing the ultrastructure of fascia adherens (white arrowheads in A, B) and desmosomes (white arrowheads in C, D) in 60 hpf snai1b+/+ and snai1b-/- cardiomyocytes. Scale bars: 200 nm (A, B); 500 nm (C, D).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A, A’) Orthogonal projection in the YZ plane of the heart of an embryo injected with myl7:desmb-p2a-GFP and immunostained for N-cadherin, GFP, and Alcama at 52 hpf. Close-up of boxed area of desmb-overexpressing and adjacent control CMs (A’). (B, B’) Fluorescence intensity profile (FIP) (B) and mean fluorescence intensity (mFI) (B’) of N-cadherin in CMs that overexpress desmb (magenta arrowheads) and CMs that do not overexpress desmb (white arrowheads) CMs. N-cadherin immunostaining is reduced in the junctional domains in desmb overexpressing CMs. (FIP: desmb OE CMs, N = 118; desmb OE extruding CMs, N = 44; control CMs, N = 95; mFI: desmb OE CMs, N = 57; desmb OE extruding CMs, N = 30; control CMs, N = 61). Plot values represent means ± S.E.M. In the violin plot, solid black lines indicate median. p-Values determined by Kruskal–Wallis test. Scale bars: 20 µm (A); 2 µm (A’). ap: apical; ba: basal; N: number of CMs.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66143/elife-66143-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Loss of snai1b leads to basal enrichment of Desmin and the actomyosin machinery, and causes an increased incidence of cardiomyocyte extrusion away from the lumen.
 
 ## Discussion
 
@@ -72,88 +128,532 @@ In conclusion, our findings uncover molecular mechanisms that suppress cell extr
 
 ## Materials and methods
 
-## Zebrafish husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tRFP (rabbit polyclonal)</td>
+      <td>Evrogen</td>
+      <td>RRID:AB_2571743</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>AvesLab</td>
+      <td>RRID:AB_10000240</td>
+      <td>IF(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-N-cadherin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_444317</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-myosin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_303094</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Desmin (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_476910</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-catenin epitope α-18 (rat monoclonal)</td>
+      <td>Gift from Prof. Akira Nagafuchi</td>
+      <td></td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Alcama (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_531904</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Goat anti Chicken IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_142924</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Goat anti Rabbit IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_141663</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Goat anti Rat IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_141778</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 Goat anti Rabbit IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2534123</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 Goat anti Rat IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2534121</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose, low gelling temperature</td>
+      <td>Sigma</td>
+      <td>Cat# A9414-25g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin</td>
+      <td>Sigma</td>
+      <td>Cat# A-9418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroform</td>
+      <td>Merck</td>
+      <td>Cat# 102445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>Cat# D954</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma</td>
+      <td>Cat# D8418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM(1X)+Glutamax</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 31966-021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DyNAmo ColorFlash SYBR Green qPCR Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# F416S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol, undenatured, absolute</td>
+      <td>Serva</td>
+      <td>Cat# 11093.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS superior</td>
+      <td>Biochrom</td>
+      <td>Cat# S0615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Sigma</td>
+      <td>Cat# 50046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Propanol</td>
+      <td>Roth</td>
+      <td>Cat# 6752.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L3000001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methanol</td>
+      <td>Roth</td>
+      <td>Cat# 4627.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Goat Serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 16210072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma</td>
+      <td>Cat# P6148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate buffered saline (PBS)</td>
+      <td>Sigma</td>
+      <td>Cat# P4417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT3TS-nCas9n (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat# 46757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2z vector (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat# 62214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-Tol2 (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat# 31823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGl4.14-luc; SV40:hRLuc (plasmid)</td>
+      <td>Bensimon-Brito et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium citrate monobasic</td>
+      <td>Sigma</td>
+      <td>Cat# 71497-1KG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat# X-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 20</td>
+      <td>Sigma</td>
+      <td>Cat# P1379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase Reporter Assay System</td>
+      <td>Promega</td>
+      <td>Cat# E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit, Fluorescein</td>
+      <td>Roche</td>
+      <td>11684795910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Maxima First Strand cDNA kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# K1641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MegaShortScript T7 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM1354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MegaScript T3 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM1348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T3 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM1348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat# R1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216</td>
+      <td>RRID:CVCL_0063</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(myl7:BFP- CAAX)bns193</td>
+      <td>Guerra et al., 2018</td>
+      <td>ZFIN:bns193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(myl7:H2B-EGFP)zf521Tg</td>
+      <td>Mickoleit et al., 2014</td>
+      <td>ZFIN:zf521Tg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(myl7:mVenus-gmnn)ncv43Tg</td>
+      <td>Jiménez-Amilburu et al., 2016</td>
+      <td>ZFIN:ncv43Tg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(−0.2myl7:snai1b-p2a-GFP) bns555</td>
+      <td>This paper</td>
+      <td>ZFIN:bns555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(−0.2myl7:EGFP-podocalyxin) bns10</td>
+      <td>Jiménez-Amilburu et al., 2016</td>
+      <td>ZFIN:bns10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli1a:Gal4)ubs4</td>
+      <td>Zygmunt et al., 2011</td>
+      <td>ZFIN:ubs4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(UAS:snai1b-p2a-GFP) bns442</td>
+      <td>This paper</td>
+      <td>ZFIN:bns442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(myl7:EGFP-Hsa.HRAS)s883Tg</td>
+      <td>D'Amico et al., 2007</td>
+      <td>ZFIN:s883Tg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>snai1bbn351 mutant</td>
+      <td>This paper</td>
+      <td>ZFIN:bns351</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR</td>
+      <td>This paper</td>
+      <td>Table S1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping</td>
+      <td>This paper</td>
+      <td>Table S1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR</td>
+      <td>This paper</td>
+      <td>Table S1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FiJi ImageJ 1.53 c</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris, version 8.4.0</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Digital Imaging</td>
+      <td>Carl Zeiss Microscopy</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry
 
 Zebrafish husbandry was performed in accordance with institutional (MPG) and national (German) ethical and animal welfare regulation. Larvae were raised under standard conditions. Adult zebrafish were maintained in 3.5 L tanks at a stock density of 10 zebrafish/L with the following parameters: water temperature: 27–27.5°C; light:dark cycle: 14:10; pH: 7.0–7.5; conductivity: 750–800 µS/cm. Zebrafish were fed 3–5 times a day, depending on age, with granular and live food (Artemia salina). Health monitoring was performed at least once a year. All embryos used in this study were raised at 28°C and staged at 75% epiboly for synchronization.
 
 All procedures performed on animals conform to the guidelines from Directive 2010/63/EU of the European Parliament on the protection of animals used for scientific purposes and were approved by the Animal Protection Committee (Tierschutzkommission) of the Regierungspräsidium Darmstadt (reference: B2/1218).
 
-## Zebrafish lines
+### Zebrafish lines
 
 The following lines were used in this study: Tg(myl7:BFP-CAAX)bns193 (Guerra et al., 2018); Tg(myl7:H2B-EGFP)zf521 (Mickoleit et al., 2014); Tg(myl7:mVenus-gmnn)ncv43 (Jiménez-Amilburu et al., 2016); Tg(−0.2myl7:EGFP-podocalyxin)bns10 (Jiménez-Amilburu et al., 2016); Tg(fli1a:Gal4)ubs4 (Zygmunt et al., 2011); Tg(myl7:EGFP-Hsa.HRAS)s883 (D'Amico et al., 2007); Tg(UAS:snai1b-p2a-GFP)bns442 (this study); Tg(−0.2myl7:snai1b-p2a-GFP)bns555 (this study); and snai1bbns351 (this study).
 
-## Generation of transgenic lines
+### Generation of transgenic lines
 
 To generate the snai1b overexpression lines, the full coding sequence was amplified by PCR using the following primers: forward – 5′-ATGCCACGCTCATTTCTTGT-3′ and reverse – 5′-GAGCGCCGGACAGCAGCC-3′. The 765 bp amplicon was cloned into pT2-UAS and into an iSce-I plasmid downstream of a −0.2myl7 promoter and upstream of a P2A linker and GFP. All cloning experiments were performed using ColdFusion Cloning (System Biosciences). The plasmids were then injected into AB embryos at the one-cell stage (25 pg/embryo) together with Tol2 mRNA (25 pg/embryo) to generate Tg(UAS:snai1b-p2a-GFP) and Tg(−0.2myl7:snai1b-p2a-GFP), respectively.
 
-## Generation of the snai1bbns351 allele
+### Generation of the snai1bbns351 allele
 
 The snai1b mutant allele was generated using the CRISPR/Cas9 technology. Guide RNA (gRNA) sequences were designed using the CRISPOR program (http://crispor.tefor.net/). To generate a promoter-less allele, two gRNAs were designed: one targeting the proximal promoter (5′-GTCTATAAGTGGCGCAG-3′) and another targeting exon 1, immediately after the sequence encoding the SNAG domain (5′-GTAGTTTGGCTTCTTGT-3′), resulting in a deletion of 1300 bp. The gRNAs were transcribed using a MegaShortScript T7 Transcription Kit (Thermo Fisher Scientific). cas9 mRNA was transcribed using an mMESSAGE mMACHINE T3 Transcription Kit (Thermo Fisher Scientific) using pT3TS-nCas9n as a template. The RNAs were purified with an RNA Clean and Concentrator Kit (Zymo Research). gRNAs (~12.5 pg/embryo for each gRNA) and cas9 mRNA (~300 pg/embryo) were co-injected at the one-cell stage. High-resolution melt analysis (HRMA) was used to determine the efficiency of the gRNAs. For genotyping, a reverse primer (5′-AATTTCACTCTCACCAGTCTGA-3′) was combined with a forward primer in the promoter region (5′-ACCTTCTTGTTGTGAGGCGA-3′) to detect the mutant allele, and with a forward primer in exon 1 (5′-ATGCCACGCTCATTTCTTGTCAA-3′) to detect the wild-type allele.
 
-## Overexpression of snai1b
+### Overexpression of snai1b
 
 A full-length snai1b cDNA was cloned from 48 hpf cDNA into the pCS2+ vector (Addgene). In vitro transcription using a mMESSAGE mMACHINE T7 Transcription Kit (Thermo Fisher Scientific) generated snai1b mRNA. Wild-type embryos were injected at the one-cell stage with 25 pg of snai1b or gfp mRNA. RNA from 40 4.5 hpf embryos was extracted using a standard phenol/chloroform protocol.
 
-## Overexpression of desmb
+### Overexpression of desmb
 
 To generate the desmb overexpression plasmid, the full coding sequence was amplified by PCR using the following primers: forward – 5′-ATGAGCCACTCTTATGCCAC-3′ and reverse – 5′-CATGAGGTCCTGCTGGTG-3′. The 1419 bp amplicon was cloned into a iSce-I plasmid downstream of a −0.2myl7 promoter and upstream of a P2A linker and GFP. All cloning experiments were performed using ColdFusion Cloning (System Biosciences). The plasmid was then injected into Tg(myl7:BFP-CAAX) embryos at the one-cell stage (25 pg/embryo) together with Tol2 mRNA (25 pg/embryo) to obtain mosaic expression.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Embryos were collected, treated with 1-phenyl-2-thiourea (PTU) at 24 hpf to prevent pigmentation, and fixed in 4% PFA for 2 hours at room temperature, after stopping the heart with 0.4% Tricaine to prevent it from collapsing during fixation. After exchanging the fixative with PBS/0.1% Tween washes, yolks were removed using forceps, incubated in 0.1 M glycine for 10 min, and then washed with PBS/1% BSA/1% DMSO/0.5% Triton-X (PBDT), and blocked with PBDT/10% goat serum before incubating in primary antibody at 4°C overnight. The embryos were washed in PBDT and incubated in secondary antibody for 2 hours at room temperature, then incubated with DAPI (2 µg/mL) for 10 min and washed with PBS/0.1% Tween.
 
 Primary antibodies used were GFP (Abcam, 1:800 dilution); N-cadherin (Abcam, 1:250 dilution); p-myosin (Abcam, 1:200); tRFP (Evrogen, 1:200 dilution); Desmin (Sigma, 1:100); and Alcama (DSHB ZN-8, 1:50). α-catenin epitope α-18 (1:300) antibody was a generous gift from Prof. Akira Nagafuchi. Secondary antibodies (1:500 dilution) used were Alexa Fluor 568, Alexa Fluor 488, and Alexa Fluor 647 (Thermo Fisher Scientific).
 
-## Imaging
+### Imaging
 
 Confocal microscopes were used to image stopped hearts. Embryos were mounted in 1% low-melting agarose with 0.2% Tricaine, and the stopped hearts were imaged using a Zeiss LSM700 or LSM880 confocal microscope with a 20× or 40× dipping lens. Fixed embryos were mounted in 1% low-melting agarose and were imaged using a Zeiss LSM700 or LSM880 confocal microscope with a 20× or 40× dipping lens, and genotyped afterwards.
 
-## Heart rate, ventricular ejection fraction, and ventricular fractional shortening quantification
+### Heart rate, ventricular ejection fraction, and ventricular fractional shortening quantification
 
 Live imaging of beating hearts was performed using a Zeiss Spinning Disk confocal microscope. Zebrafish at 48, 78, and 100 hpf were mounted in 2% low-melting agarose without Tricaine. 20–30 s movies were recorded with 5 ms exposure. Light intensity and duration were kept to a minimum to avoid light-induced twitching. Kymographs were generated using ImageJ, and ventricular ejection fraction and ventricular fractional shortening were quantified with ImageJ.
 
-## TUNEL assay
+### TUNEL assay
 
 Embryos at 50 hpf were fixed in 4% PFA for 2 hours at room temperature, washed in PBS/0.1% Tween, and manually deyolked with insulin needles. Samples were dehydrated and stored in 100% MeOH at −20°C overnight. After rehydration, embryos were processed for antibody staining (Evrogen, tRFP 1:200) . Subsequently, samples were permeabilized with 0.1% sodium citrate in PBS for 2 min on ice. After washes in PBS/0.3% Triton-X, embryos for the positive control were incubated for 15 min at 37°C with DNAaseI. All the embryos were incubated for 1 hour at 37°C in the TUNEL solution (In Situ Cell Death Detection Kit Fluorescein, Roche). After washes, embryos were mounted for imaging.
 
-## Quantitative PCR analysis
+### Quantitative PCR analysis
 
 Dissected hearts were homogenized in TRIzol (Thermo Fisher Scientific) using a NextAdvance Bullet Blender Homogenizer, followed by standard phenol/chloroform extraction. At least 500 ng of total RNA was used for reverse transcription using a Maxima First Strand cDNA synthesis kit (Thermo Fisher Scientific). For all experiments, DyNAmo ColorFlash SYBR Green qPCR Mix (Thermo Fisher Scientific) was used on a CFX connect Real-time System (Bio-Rad) with the following program: pre-amplification 95°C for 7 min, amplification 95°C for 10 s and 60°C for 30 s (39 cycles), melting curve 60–92°C with increment of 1°C each 5 s. Each point in the dot plots represents a biological replicate from three technical replicates. Gene expression values were normalized using the housekeeping gene rpl13a and fold changes were calculated using the 2−ΔΔCt method; all Ct values are listed in Supplementary file 2. Primer sequences can be found in Table S1.
 
-## Blastomere transplantations and morpholino injections
+### Blastomere transplantations and morpholino injections
 
 Cells obtained from mid-blastula stage donor embryos were transplanted along the blastoderm margin of age-matched host embryos. A tnnt2a ATG-MO was injected into the yolk at the one-cell stage at 0.3 ng per embryo. The embryos were then imaged at 52 hpf.
 
-## Image analysis
+### Image analysis
 
 All immunostainings were analysed in the YZ orthogonal plane to better visualize CM extrusion. The line scan function of Fiji was used to quantify fluorescence intensity at the junctional and basal domains. To visualize the fluorescence profile of N-cadherin immunostaining, a line of uniform thickness was drawn from junction to junction in adjacent CMs. To analyse the localization of α-catenin epitope α-18, p-myosin, and Desmin, a line of uniform thickness was drawn from the basal to the apical domain of CMs. Asymmetry in fluorescence intensity appears due to variable CM length. To assess fluorescence intensity, the mean grey values were used, drawing a line of uniform thickness at the junctional (N-cadherin) or basal (α-catenin epitope α-18, p-myosin, and Desmin) domain of CMs. Images were processed and analysed with Fiji. A background subtraction of rolling ball radius 20 was applied, followed by a mean filter of radius 1. Brightness and contrast were adjusted to remove any background fluorescence. Apical cell surface and aspect ratio were quantified using the line function of ImageJ.
 
 The total number of CMs was counted using the Spots function, and 3D cardiac surface rendering and ventricular volume quantification were obtained with the Surfaces function of the Imaris Bitplane Software.
 
-## Luciferase assay and plasmids
+### Luciferase assay and plasmids
 
 To generate the plasmid with a zebrafish desmb promoter driving Firefly Luciferase expression (pGl4.14-luc; SV40:hRLuc) (Bensimon-Brito et al., 2020), we cloned 800 bp of the promoter region of desmb using the following primers: forward – 5′-GAAAGCATAGTCTGCTTTCTCG-3′ and reverse – 5′-GAGCGCCGGACAGCAGCC-3′.
 
 The zebrafish snai1b coding sequence was inserted downstream of the CMV promoter in the pCMV-Tol2 plasmid (Addgene). The full-length snai1b coding sequence was amplified using the following primers: forward – 5′-ATGCCACGCTCATTTCTTGT-3′ and reverse – 5′-GAGCGCCGGACAGCAGCCGGAC3′. Per well in a 24-well plate, HEK-293T cells were transfected with 200 ng of the luciferase plasmid and 200 ng of pCMV-snai1b or the empty plasmid as control, as well as 1.5 μL Lipofectamine 3000 Transfection Reagent (Thermo Fisher Scientific). The cells were incubated with the transfection mix for 5–6 hours in DMEM + Glutamax (Thermo Fisher Scientific)/10% FBS Superior (Biochrom) without antibiotics. The cells were then incubated in DMEM + Glutamax/10% FBS/1% penicillin-streptomycin (PenStrep, Sigma) overnight. After 24 hours, they were rinsed in PBS and lysed with PLB buffer for Luciferase Assay (Promega). The supernatants were used to perform the luciferase assay, using the Dual-Luciferase Reporter Assay System (Promega), following the manufacturer’s instructions. Each experiment was carried out in triplicates (three wells per condition) in four independent experiments.
 
-## Cell line
+### Cell line
 
 We used human Embryonic Kidney cells (HEK293T, ATCC Cat# CRL-3216), which were certified by STR profiling by ATCC, and tested negative for mycoplasma contamination.
 
-## RNA-seq
+### RNA-seq
 
 48 hpf Tg(myl7:BFP-CAAX) snai1b+/+ and snai1b-/- hearts were manually dissected using forceps. Approximately 20 hearts per replicate were pooled, and total RNA was isolated using the miRNeasy micro kit, combined with on-column DNase digestion. Total RNA and library integrity were verified with LabChip Gx Touch 24 (Perkin Elmer). Approximately 10 ng of total RNA was used as input for SMART-Seq v4 Ultra Low Input RNA Kit (Takara Clontech) for cDNA pre-amplification. Obtained full-length cDNA was checked on LabChip GX Touch 24 and fragmented by Ultrasonication by E220 machine (Covaris). Final Library Preparation was performed by Low Input Library Prep Kit v2 (Takara Clontech). Sequencing was performed on a NextSeq500 instrument (Illumina) using v2 chemistry, resulting in an average of 30M reads per library with 1 × 75 bp single-end setup. The resulting raw reads were assessed for quality, adapter content, and duplication rates with FastQC (available online at http://www.bioinformatics.babraham.ac.uk/projects/fastqc). Trimmomatic version 0.39 was used to trim reads with a quality drop below a mean of Q20 in a window of 10 nucleotides (Bolger et al., Trimmomatic: a flexible trimmer for Illumina sequence data). Only reads between 30 and 150 nucleotides were used in subsequent analyses. Trimmed and filtered reads were aligned versus the Ensembl Zebrafish genome version DanRer11 (GRCz11.92) using STAR 2.6.1d with the parameter ‘outFilterMismatchNoverLmax 0.1’ to increase the maximum ratio of mismatches to mapped length to 10% (Dobin et al., 2013). The number of reads aligning to genes was counted with feature Counts 1.6.5 tool from the Subread package (Liao et al., 2014). Only reads mapping at least partially inside exons were admitted and aggregated per gene, while reads overlapping multiple genes or aligning to multiple regions were excluded from further analyses. Differentially expressed genes were identified using DESeq2 version 1.18.1 (Love et al., 2014). The Ensembl annotation was enriched with UniProt data (release 06.06.2014) based on Ensembl gene identifiers (Activities at the Universal Protein Resource (UniProt)).
 
 For the gene ontology analysis, all genes with a p-value≤0.05 were used as a query list. Genes with >5 normalized reads in at least one sample were used as a background list. The analysis was performed with the Gitools 2.3.1 (http://www.gitools.org) software. Z-scores were calculated using the default settings, and multiple test correction with Benjamini–Hochberg FDR was performed.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 Larvae were collected at 60 hpf from a wild-type or mutant incross. The embryos were immediately fixed in ice-cold 1% PFA, 2% glutaraldehyde in 0.1 M sodium cacodylate buffer (pH 7.4) for 30 min on ice, and then stored at 4°C overnight. Samples were washed in 0.1 M sodium cacodylate buffer and postfixed in 2% (w/v) OsO4, followed by en bloc staining with 2% uranyl acetate. Samples were dehydrated with a graded series of washes in acetone, transferred to acetone/Epon solutions, and eventually embedded in Epon. Ultra-thin sections (approximately 70 nm thick) obtained with a Reichert-Jung Ultracut E microtome were collected on copper slot grids. Sections were post-stained with 2% uranyl acetate for 20 min and 1% lead citrate for 2 min. Sections were examined with a Jeol JEM-1400 Plus transmission electron microscope (Jeol, Japan), operated at an accelerating voltage of 120 kV. Digital images were recorded with an EM-14800 Ruby Digital CCD camera unit (3296px × 2472px).
 
-## Randomization and blinding procedures
+### Randomization and blinding procedures
 
 All experiments using snai1b mutants were randomized as follows: animals from heterozygous crosses were collected, imaged, and analysed, and subsequently genotyped. For all immunostainings, the genotyping was performed after the analysis. The only exceptions were for the RNAseq, TEM, and tnnt2a MO experiments, for which the mutants were obtained from maternal zygotic incrosses using snai1b zygotic mutants (approximately 70% of them reach adulthood). All experiments shown in Figure 1—figure supplement 4 were performed with first generation cousin animals. Transgenic animals were selected by fluorescence before imaging, and therefore could not be randomized. The investigators were blinded to allocation during experiments and outcome assessment whenever possible.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed in GraphPad Prism (version 6.07). A Gaussian distribution was tested for every sample group using the D’Agostino–Pearson omnibus normality test. For the experiments that passed the normality test, all samples were further analysed using the following parametric tests: the Student’s t-test for comparison of two samples or the one-way ANOVA test followed by correction for multiple comparisons with Dunn's test for three or more samples. For all the experiments that did not pass the normality test, all samples were further analysed using non-parametric tests: p-values were determined using the Mann–Whitney test for comparison of two samples or the Kruskal–Wallis test followed by correction for multiple comparisons with Dunn's test for three or more samples.

@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.41140.001 Assembly of bacterial ring-shaped hexameric replicative helicases on single-stranded (ss) DNA requires specialized loading factors. However, mechanisms implemented by these factors during opening and closing of the helicase, which enable and restrict access to an internal chamber, are not known. Here, we investigate these mechanisms in the Escherichia coli DnaB helicase•bacteriophage λ helicase loader (λP) complex. We show that five copies of λP bind at DnaB subunit interfaces and reconfigure the helicase into an open spiral conformation that is intermediate to previously observed closed ring and closed spiral forms; reconfiguration also produces openings large enough to admit ssDNA into the inner chamber. The helicase is also observed in a restrained inactive configuration that poises it to close on activating signal, and transition to the translocation state. Our findings provide insights into helicase opening, delivery to the origin and ssDNA entry, and closing in preparation for translocation.
+Assembly of bacterial ring-shaped hexameric replicative helicases on single-stranded (ss) DNA requires specialized loading factors. However, mechanisms implemented by these factors during opening and closing of the helicase, which enable and restrict access to an internal chamber, are not known. Here, we investigate these mechanisms in the Escherichia coli DnaB helicase•bacteriophage λ helicase loader (λP) complex. We show that five copies of λP bind at DnaB subunit interfaces and reconfigure the helicase into an open spiral conformation that is intermediate to previously observed closed ring and closed spiral forms; reconfiguration also produces openings large enough to admit ssDNA into the inner chamber. The helicase is also observed in a restrained inactive configuration that poises it to close on activating signal, and transition to the translocation state. Our findings provide insights into helicase opening, delivery to the origin and ssDNA entry, and closing in preparation for translocation.
 
 ## Introduction
 
@@ -50,17 +50,452 @@ Below, we address molecular mechanisms that accompany capture of the helicase by
 
 ## Results
 
-## Architecture and stoichiometry of the DnaB helicase • λP helicase loader complex
+### Architecture and stoichiometry of the DnaB helicase • λP helicase loader complex
 
 The structure of the BP complex was determined using cryo electron microscopy (EM) and tomography to a resolution of 4.1 Å (Figure 2; Figure 2—figure supplements 1, 2, 3, 4, 5 and 6, Table 1, and Appendix). Six DnaB protomers were unambiguously positioned in the EM map that we obtained. Although the EM sample contained ATP, the density maps showed that only five of six nucleotide-binding sites on CTD domains were populated, and with ADP (below and Figure 2—figure supplement 6B). Five copies of the λP helicase loader were also visible in the density maps. Cross-linking mass spectrometry (CX-MS), along with binding studies (Figure 3A and B, Figure 3—figure supplement 1, Table 2 and Appendix), was used to unambiguously assign the N to C chain polarity for λP and develop a tentative assignment of the amino acid sequence to the structure.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental EM density map of the E. coli DnaB helicase•bacteriophage λP complex contoured at five sigma in PyMOL (see also Supplemental Figure 2—figure supplement 3). (B) Same as panel A except that the map has been rotated by 90°. (C) The E. coli DnaB helicase•bacteriophage λP complex is shown depicting the ruptured interface between DnaB subunits A and B and the deep canyon that runs through the complex. The complex has been sub-divided into three tiers: λP loader (individual chains are colored in shades of orange), the DnaB CTD (colored in alternating blue and cyan), and the DnaB NTD tiers (colored in alternating dark and light gray). The DnaB CTD-NTD linker helix (residues 182–202) is colored yellow and the DnaB CTD helix (residues 291–302),which is involved in λP-binding interactions, is colored green. (D) Same as panel C except that the model has been rotated by 90°. The five λP molecules in the complex are labeled λP1 (chain Z), λP2 (chain Y), λP3 (chain X), λP4 (chain W), and λP5 (chain V).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Linear representation of the amino acid sequences of the E. coli DnaB helicase and (B) bacteriophage λ P helicase loader. The location of component domains is indicated. (C) SDS gel-electrophoretic analysis of the purity of co-expressed E. coli DnaB (52.4 kDa) and λP (26.5 kDa) complex (Lane 1). (D) SDS gel-electrophoretic analysis of NiNTA chromatography of the interaction between E. coli DnaB and a deletion construct of λP, which encompasses the carboxy-terminal 131 residues (λPΔ102-6xCHis (15.5 kDa). Co-expressed E. coli DnaB and λP- Δ102-6xCHis in 10 mM imidazole (L) was incubated with Ni-NTA beads; the beads were thrice washed with 20 mM imidazole (W1, W2, W3); purified DnaB • λP- Δ102-6xCHis after elution from the beads with 250 mM imidazole (E1, E2). Robust interaction between untagged DnaB and hexahistidine-tagged λP- Δ102 is clearly seen 1) from their co-elution in the presence of 250 mM imidazole and 2) failure of untagged DnaB to be retained on the NiNTA beads. Control expressions with an amino terminal construct of λP, encompassing residues 1–110, failed to express (not shown). Also, a control experiment to measure non-specific binding of the untagged E. coli DnaB • λP complex failed to show any interaction with the NiNTA beads (not shown).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Workflow associated with processing of single particle cryoEM (boxed in gray and yellow) and cryoET (boxed in blue) data, which resulted in the 4.1 Å map described above. Software used at each step in the workflow is indicated. The model that emerged from the cryoET procedure was used in two ways: 1) to generate projections for templates used to identify particles from EM images, and 2) as an initial model in the subsequent analysis of the identified particles. Details of this procedure and rationale can be found in the Appendix. (B) Cryo-electron tomography of the BP complex produced a low-resolution model with oblong dimensions and a prominent crack or canyon that extended throughout the length of the particle. (C) Projections using EMAN2 of the cryoET model in panel B provided low resolution two-dimensional templates for particle-picking. (D) The templates from panel C were used for template-based particle picking using Gautomatch. This procedure identified particles in our micrographs that manual and Gaussian-based efforts had been unable to distinguish from noise. The green circles on the top half of this micrograph represent particle coordinates identified by Gautomatch; the bottom portion of the same micrograph shows particle contrast. The white bar in the image signifies that although the underlying images arise from the same micrograph, the top and bottom halves of the image were generated independently (albeit with the same display values and contrast). (E) 2D class averages of a set of BP particles picked using Gaussian-based picking methods (left) and template-based picking methods (right). The Gaussian 2D class averages show high signal to noise ratios, however, subsequent calculation of a 3D structure was unsuccessful owing to the limited number of particle poses. 2D classification of a subset (~26,500) of the particles picked using the cryo-ET derived templates. These class averages showed high a signal to noise ratio and more diverse poses. In addition, high resolution details are now clearly visible. (F) Angular coverage of the BP map depicted in a 2D plot generated by Cryosparc.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Fourier shell correlation of two independently refined half data sets indicates a global resolution of 4.1 Å, where the resolution is defined at the 0.143 gold standard (indicated by the black horizontal dotted line and labeled). (B) Fourier shell correlation (FSC) of the 4.1 Å BP map and the BP model. The FSC between our map and model was generated in Mtriage within Phenix. The resolution of the map to the model is also 4.1 Å as defined by the 0.143 gold standard (labeled and indicated with a black horizontal dotted line). (C) Local resolution estimates generated by ResMap and plotted onto the BP map in Chimera. The resolution of the entire particle falls within the 3.5–4.5 Å range. Lower resolutions are observed in the NTD of chain A and in the regions of weaker density above the λP1 helicase loader molecule (panels E and F). The local resolution estimates agree with the global resolution estimate as described and shown in panel A. Regions of density corresponding to DnaB and λP are indicated. The scale used to color the BP map is shown. (D) A sliced view of the map from Panel C shows local resolution estimates in the interior of particle. The sliced view of the particle is colored as in panel C. (E) The BP EM density map (gray mesh) shows additional, weaker, density adjacent to λP1 (chain Z). This map is contoured at a level of 4 sigma (PyMol). The NTD and CTD layers of DnaB are shown as ribbons and are colored red and blue, respectively. The λP tier is depicted in a ribbon view and colored in orange. (F) Model of the E. coli DnaB helicase • bacteriophage λP complex, which includes a 75 amino acid segment built into the less-well resolved regions of the density map. We tentatively assign this segment to the amino-terminal region of λP molecule λP1 (chain Z). We note that this segment appears to contact one of the DnaB subunits that lines the breached interface, and which is located at the top of the DnaB spiral. Strong density for DnaB chain B (teal) allows for visualization at a contour of 5 sigma and a carve setting of 2.0 Å. Visualization of the map at a lower contour of 3 sigma and a carve setting of 2.0 Å reveals weaker density for the NTD of protomer λP1 (orange). Density maps were visualized in PyMol.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) 3D classification in Relion was used to sort all 267,000 particles into eight classes using the cryoET model as an initial model; this procedure served to clean the particle stack selected by means of template-based picking methods. Four of the classes (Boxed: Class 2, Class 3, Class 6 and Class 7) contained ~75% of particles and feature volumes of expected dimensions given our native MS measurements; these were autorefined to the indicated resolutions. The particles in class 2 were used to calculate the final 4.1 Å density map. The remaining four classes (Class 1, Class 4, Class 5 and Class 8) which accounted for ~25% of all particles contained particles of inappropriate dimensions to represent the BP complex; these were not used any further.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Heterogeneous refinement (K = 6, Cryosparc) of all the particles used to calculate the 4.1 Å map was performed to determine if other BP stoichiometric or conformational states were present in our EM sample. This calculation produced a single class (colored in pale green and indicated with a red square) that could be attributed to the BP complex. The structure in this class corresponds to the DnaB6-λP5.entity; no other states were found. The volumes in Classes 1, 2 and 6 appear to be an open, planar form of DnaB. Classes 4 and 5 appear to be a distorted, open, non-planar DnaB, with no λP present. The percentage of particles in each class are indicated below the volumes. (B) Homogenous refinement (K = 6, Cryosparc) of all the particles used to calculate the 4.1 Å map. As with the heterogeneous refinement, only a single class with a volume corresponding to the BP complex was obtained (Class 3, shown in bright orange and indicated with a red square). This volume represents density corresponding to the DnaB6-λP5 species. The volumes produced by particles in Classes 4 and 5 show a DnaB architecture reminiscent of the BP complex, but they lacked density for λP. Classes 1, 2 and 6 yielded volumes that feature a distorted DnaB. (C) 2D classification (Cryosparc) of the particles used to calculate the 4.1 Å map. A small percentage (<1.4%) of these particles appeared to correspond to uncomplexed DnaB. Removal of these particles from our data set, followed by another round of refinement (Cryosparc), did not appreciably improve our EM map. The gold standard FSC curve (right) shows half-sets that converge at 4.1 Å. (D) Heterogenous refinement (using a single ab initio starting model) of all template-picked BP particles (~267,000) in Cryosparc yielded two classes of interest, both of which corresponded to DnaB6-λP5. One class, comprised of 29,734 particles, produced a map with a resolution of 8.02 Å, and a second class, with 84,647 particles, produced a map with a resolution of 7.25 Å. Although of lower resolution, these maps display comparable features as our 4.1 Å EM map.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) EM density corresponding to the β-strands of the RecA fold of the C-Terminal domain of the DnaB helicase (residues shown: 226:232, 255:260, 309:313, 338:344, 378:384, 413:417 and 438:440). Density is shown at a sigma level of 6 (PyMol) and a carve of 2.0 for DnaB chains A (dark blue), B (bright blue), C (blue), D (marine), E (periwinkle) and F (light blue). Residues in the BP model are shown in ball and stick representation. (B) Superposition of each of the nucleotide-binding sites from the open spiral DnaB helicase (this work, E. coli) and the closed spiral ssDNA DnaB complex (PDB = 4ESV, G. st), as described in Figure 6B. The open spiral complex is depicted in gray ribbon for each. The nucleotide-binding site in the open spiral between chains A and F is depicted in red (panel 1); between chains F and E is depicted in orange (panel 2); between chains E and D is depicted in green (panel 3); between chains D and E is depicted in blue (panel 4); and between chains C and B depicted in purple (panel 5). Density is shown for residues 229:249, 257:276, 340:350 and 436:449 of the BP complex. Panels 1, 2, 3 and 5 include density at a sigma level of 8.0 and a carve of 2.0 Å in PyMol. The density in panel four is shown at a sigma level of 7.0 and a carve of 2.0 Å. Black arrows indicate the backbone shifts of two nucleotide-binding residues: K440 and R442. The GDP and aluminum fluoride from the closed ssDNA complex are depicted in ball and stick representation, with transparent spheres. Ball and stick representation is also used in the open spiral forms to depict residues implicated in nucleotide hydrolysis. All other components are shown in ribbon representation. The inset in each panel shows density in the BP map that we have modeled as ADP; the density corresponds to the chain being depicted. These density regions are shown in gray at a sigma level of 7 and a carve of 2.5 Å in PyMOL. The modeled nucleotide is shown in ball and stick representation and colored as the parent nucleotide site. (C) A top view of the DnaB helicase- λP helicase loader complex showing the position of the five DnaB N-terminal to C-terminal domain linkers (DnaB residues 168:202). Linkers are shown in stick representation with density displayed at a sigma level of 2 and a carve of 2.0 Å in PyMOL (chain B in red, chain C in orange, chain D in yellow, chain E in green and chain F in blue). Each DnaB CTD is labeled by chain. The rest of the BP complex is depicted in ribbon set within a surface representation and is colored gray. (D) Closeup representations of the quality of the density in the five NTD-CTD linkers of DnaB protomer chains B, C, D, E and F (residues 168:202) that we observed; density was not observed for the chain A linker. Density is shown at a sigma level of 2 and a carve of 2.0 Å in PyMOL and chains are colored as in panel C.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig3-v2.jpg)
+
+**Figure 3.:** (A) Linear representations of the amino acid sequences of E.coli DnaB and λP colored in purple and yellow, respectively, to indicate the portions of each protein that are visible in our EM density maps. Architectural landmarks of each protein are indicated. The black vertical lines represent lysine residues. The black lines between DnaB and λP represent intermolecular crosslinks provided by the CX-MS procedure. Analysis of the BP complex using CX-MS appears in the Appendix section, in Figure 3—figure supplement 1 and in Table 2. (B) The CX-MS derived intermolecular crosslinks are plotted onto DnaB chain C, λP4 chain W, and λP5 chain V of the BP model. All lysine residues are depicted as orange spheres. Lysine residues reported by CX-MS to have been crosslinked are numbered. Lysine residues connected by a line are those which were detected by the CX-MS procedure (Table 2). Colored in red is the sole lysine pair whose distance exceeds 30 Å; the other lines capture distances below 30 Å and are colored in green. The various chains of DnaB and λP are outlined. (C) Native MS analysis of the E. coli DnaB helicase•bacteriophage λP complex. The most intense peak series corresponds to the B6P5 assembly, with lower relative intensity peaks indicating presence of subpopulations of B6P4 and B6P6. Notably, the mass estimates indicated that no nucleotide was present in any of the three populations of the BP complex, which is distinct from that seen in the native MS of Aquifex aeolicus DnaB-DnaC in which five nucleotides were observed (Figure 8—figure supplement 1). (D) Incubation of the DnaB•λP sample from panel C with a lambda replication origin-derived 13.1 kDa 43-mer ssDNA yielded a single peak series with a mass corresponding to the B6P5 assembly with one bound origin-derived ssDNA molecule. As with the samples without ssDNA (panel 3C), the mass estimates indicated that no nucleotide was present in the ssDNA complex. The inset depicts the oriλ replication origin and shows the location of the 43-mer DUE-derived ssDNA (Learn et al., 1997) used in this experiment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) SDS-PAGE gel electrophoretic analysis of crosslinking of the BP complex by the DSS crosslinking agent. The boxed region (red), containing cross-linked BP, was excised from the gel, digested with trypsin, and analyzed by MS as described in the Materials and methods. (B) DnaB and λP cross-links detected by CX-MS are plotted onto a linear representation of the amino acid sequence of E. coli DnaB and λP. Component domains and the linker segment are indicated. The purple and yellow colors represent portions of DnaB and λP, respectively, that are visible in our density maps; colored in gray are regions that are not visible. The black vertical lines represent lysine residues in the sequence. The curved black lines represent pairs of lysine residues reported to be crosslinked by the CX-MS procedure. We note that CX-MS is silent on whether these crosslinks arise from intra or intramolecular interactions, thus, for simplicity we represent them here as intramolecular crosslinks. (C) Intermolecular and intramolecular DnaB crosslinks plotted onto DnaB Chain C (purple) and DnaB Chain D (blue) of our model. The alpha carbons of lysine residues involved in cross-links are shown in spheres, and cross-links are shown as green lines between lysine residues. Distances captured by the green lines are less than 30 Å, and, thus, are consistent with the CX-MS data. Additional details appear in Table 2. (D) λP crosslinks plotted onto λP2 (chain Y), rendered in the same fashion as panel C. Additional details of our CX-MS study appear in Table 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Native MS spectra of isolated BP are shown before and after incubation with a series of thymidylate homopolymers of varying nucleotide lengths (e.g. 25, 35 and 45). The measured masses reveal that none of the homopolymers were bound by the BP complex. By contrast, mass measurements of BP complex in the presence of origin-specific ssDNA (see also Figure 3D) provide evidence for a complex between BP and oriλ derived ssDNA.
+
+**Table 1.**
+ Data collection and model refinement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope/Camera</td>
+      <td>Titan Krios 300kV/Gatan K2 Summit</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.0 to −3.0</td>
+    </tr>
+    <tr>
+      <td>Cell Dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>273.92, 273.92, 273.92</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (degrees °)</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Reconstruction</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Particles</td>
+      <td>90,883</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td>Model Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Program</td>
+      <td>Phenix (real_space_refine)</td>
+    </tr>
+    <tr>
+      <td>Resolution Limit (Å)</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td>Number of chains</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Number of residues</td>
+      <td>3280</td>
+    </tr>
+    <tr>
+      <td>RMS bond length (Å)</td>
+      <td>0.008 Å</td>
+    </tr>
+    <tr>
+      <td>RMS bond angle (degrees º)</td>
+      <td>1.099</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Preferred (%)</td>
+      <td>84.56</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>15.26</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>MolProbity</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>9.87</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.58</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Crosslinked peptides provided by the CX-MS procedure and their interpretation in terms of the EM model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide</th>
+      <th>Protein 1</th>
+      <th>Residue 1</th>
+      <th>Protein 2</th>
+      <th>Residue 2</th>
+      <th>Consistency with BP EM model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ALAKELNVPVVALSQLNR(4)-ANKDEGPK(3):0</td>
+      <td>EcDnaB</td>
+      <td>373</td>
+      <td>EcDnaB</td>
+      <td>175</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>VFKIAESR(3)-ANKDEGPK(3):0</td>
+      <td>EcDnaB</td>
+      <td>167</td>
+      <td>EcDnaB</td>
+      <td>175</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>KTAGLQPSDLIIVAAR(1)-VDQTKIR(5):0</td>
+      <td>EcDnaB</td>
+      <td>217</td>
+      <td>EcDnaB</td>
+      <td>283</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ISGTMGILLEKR(11)-VDQTKIR(5):0</td>
+      <td>EcDnaB</td>
+      <td>307</td>
+      <td>EcDnaB</td>
+      <td>283</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ALAKELNVPVVALSQLNR(4)-VFKIAESR(3):0</td>
+      <td>EcDnaB</td>
+      <td>373</td>
+      <td>EcDnaB</td>
+      <td>167</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ALAKELNVPVVALSQLNR(4)-AGNKPFNK(1):0</td>
+      <td>EcDnaB</td>
+      <td>373</td>
+      <td>EcDnaB</td>
+      <td>2</td>
+      <td>DnaB residue two is not observed in our map</td>
+    </tr>
+    <tr>
+      <td>ANKDEGPKNIADVLDATVAR(8)-VFKIAESR(3):0</td>
+      <td>EcDnaB</td>
+      <td>180</td>
+      <td>EcDnaB</td>
+      <td>167</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ANKDEGPKNIADVLDATVAR(8)-ALAKELNVPVVALSQLNR(4):0</td>
+      <td>EcDnaB</td>
+      <td>180</td>
+      <td>EcDnaB</td>
+      <td>373</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>KAADELVHMTAR(1)-ADKRPVNSDLR(3):0</td>
+      <td>lambdaP</td>
+      <td>177</td>
+      <td>EcDnaB</td>
+      <td>395</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>GEAIPEPVKQLPVMGGR(9)-VDQTKIR(5):0</td>
+      <td>lambdaP</td>
+      <td>200</td>
+      <td>EcDnaB</td>
+      <td>283</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>INRGEAIPEPVKQLPVMGGR(12)-KTAGLQPSDLIIVAAR(1):0</td>
+      <td>lambdaP</td>
+      <td>200</td>
+      <td>EcDnaB</td>
+      <td>217</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ANKDEGPK(3)-FGLKGASV(4):0</td>
+      <td>EcDnaB</td>
+      <td>175</td>
+      <td>lambdaP</td>
+      <td>229</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AGNKPFNK(1)-FGLKGASV(4):0</td>
+      <td>EcDnaB</td>
+      <td>2</td>
+      <td>lambdaP</td>
+      <td>229</td>
+      <td>DnaB residue two is not observed in our map</td>
+    </tr>
+    <tr>
+      <td>VFKIAESR(3)-FGLKGASV(4):0</td>
+      <td>EcDnaB</td>
+      <td>167</td>
+      <td>lambdaP</td>
+      <td>229</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ALAKELNVPVVALSQLNR(4)-GEAIPEPVKQLPVMGGR(9):0</td>
+      <td>EcDnaB</td>
+      <td>373</td>
+      <td>lambdaP</td>
+      <td>200</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>ALAKELNVPVVALSQLNR(4)-FGLKGASV(4):0</td>
+      <td>EcDnaB</td>
+      <td>373</td>
+      <td>lambdaP</td>
+      <td>229</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AQALAKIAEIK(6)-AKFGLK(2):0</td>
+      <td>lambdaP</td>
+      <td>218</td>
+      <td>lambdaP</td>
+      <td>225</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>FGLKGASV(4)-IAEIKAK(5):0</td>
+      <td>lambdaP</td>
+      <td>229</td>
+      <td>lambdaP</td>
+      <td>223</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>GEAIPEPVKQLPVMGGR(9)-KAADELVHMTAR(1):0</td>
+      <td>lambdaP</td>
+      <td>200</td>
+      <td>lambdaP</td>
+      <td>177</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>IANNMPEQYDEKPQVQQVAQIINGVFSQLLATFPASLANR(12)-MKNIAAQMVNFDR(2):0</td>
+      <td>lambdaP</td>
+      <td>30</td>
+      <td>lambdaP</td>
+      <td>2</td>
+      <td>Lambda P residues 2 and 30 are not observed in our map</td>
+    </tr>
+  </tbody>
+</table>
+
 The unanticipated B6P5 stoichiometry predicted by the density map was verified using native mass spectrometry (MS) (Figure 3C, Table 3 and Appendix). Our measurements revealed a predominant species with a mass of 446.3 kDa corresponding to a B6P5 entity; additional species with masses of 472.8 kDa (B6P6) and 419.7 kDa (B6P4) were observed at lower intensities. However, compositional heterogeneity was eliminated when ssDNA derived from the Oriλ phage replication origin was included. Native MS of the BP•origin ssDNA complex revealed a single entity with a mass of 459.5 kDa; this mass corresponds to the B6P5 complex bound to origin-derived 43-mer ssDNA (Figure 3D, Figure 3—figure supplement 2, Table 3 and Appendix). Surprisingly, although ATP was included in both the ssDNA and ssDNA-free samples, native MS measurements showed no evidence that either complex included nucleotide. Nevertheless, orthogonal cryo-EM and MS analyses point to a physiological stoichiometry for the BP complex of B6P5.
+
+**Table 3.**
+ Mass measurements from the native MS analysis of DnaB and λP assemblies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample condition</th>
+      <th colspan="3">Measured Mass ± SD (Da)*</th>
+      <th>Assemblies</th>
+      <th>Expected mass (Da)†</th>
+      <th>∆ mass (Da)</th>
+      <th>% Mass Error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">BP sample in 450 mM ammonium acetate, pH 7.5, 0.5 mM magnesium acetate, 0.01% Tween-20</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4,46,500</td>
+      <td>±</td>
+      <td>60</td>
+      <td>B6P5</td>
+      <td>4,46,145</td>
+      <td>355</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4,73,100</td>
+      <td>±</td>
+      <td>50</td>
+      <td>B6P6</td>
+      <td>4,72,663</td>
+      <td>437</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4,19,950</td>
+      <td>±</td>
+      <td>50</td>
+      <td>B6P4</td>
+      <td>4,19,627</td>
+      <td>324</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td colspan="5">BP sample + oriλP ssDNA in 450 mM ammonium acetate, pH 7.5, 0.5 mM magnesium acetate, 0.01% Tween-20</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4,59,480</td>
+      <td>±</td>
+      <td>15</td>
+      <td>B6P5 + one oriλP ssDNA</td>
+      <td>4,59,285</td>
+      <td>195</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td colspan="5">BP sample in 500 mM ammonium acetate, 0.01% Tween-20‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4,46,270</td>
+      <td>±</td>
+      <td>20</td>
+      <td>B6P5</td>
+      <td>4,46,145</td>
+      <td>125</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4,72,840</td>
+      <td>±</td>
+      <td>20</td>
+      <td>B6P6</td>
+      <td>4,72,663</td>
+      <td>177</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4,19,750</td>
+      <td>±</td>
+      <td>15</td>
+      <td>B6P4</td>
+      <td>4,19,627</td>
+      <td>124</td>
+      <td>0.03</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Calculated from the average and corresponding standard deviation of all the measured masses across the charge-state distribution (n ≥ 4). Only the peak series with signals above 10% relative intensity were processed and deconvoluted.† The expected masses include DnaB (N-terminal Met loss), 52,259 Da; λP, 26,518 Da; Oriλ-derived ssDNA (5' and 3'-OH), 13,141 Da.‡Better mass accuracies were observed for protein samples in ammonium acetate without magnesium acetate due to the absence of magnesium adduction._
 
 The BP complex presents as a three-layered ensemble with approximate dimensions of 135 Å x 150 Å x 120 Å (Figure 2). Two of these layers correspond to the six NTD and CTD components of the DnaB-helicase, and the third layer represents the λP helicase loader. The NTD and CTD layers of the BP complex exhibit a right-handed open spiral configuration, which is distinct from all previously described structures of the DnaB-helicase (Bailey et al., 2007a; Wang et al., 2008; Lo et al., 2009; Itsathitphaisarn et al., 2012; Arias-Palomo et al., 2013; Liu et al., 2013; Strycharska et al., 2013; Bazin et al., 2015), but is reminiscent of the configuration of DnaB in the 25 Å EM map of E. coli DnaB bound to the DnaC helicase (BC) loader (Arias-Palomo et al., 2013); a more complete comparison of the two helicase loader complexes must await higher resolution analysis of the BC entity.
 
 The third layer of the BP complex comprises the λP helicase loader (Figure 2, Figure 3—figure supplement 1D, Figure 4). Presence of the λP loader, in combination with the breached interfaces in the NTD and CTD layers, re-sculpts the central chamber of DnaB into a deep canyon that runs for ~90–100 Å along the entire length of the BP complex; this canyon is essentially open to solvent. The dimensions of the canyon suggest that up to ~30 bp of DNA could be accommodated within; this estimate compares well with measurements on the analogous DnaB•DnaC complex (Fang et al., 1999), an entity of similar size to the BP complex.
 
-## The λP helicase loader binds to subunit interfaces of the DnaB-helicase
+### The λP helicase loader binds to subunit interfaces of the DnaB-helicase
 
 In the BP complex, five copies of the λP helicase loader bind to five consecutive DnaB subunit interfaces. Each λP protomer is comprised of a helical domain that binds in a deep gulley formed by an interface between two adjacent DnaB CTDs (Figure 4). The five λP protomers are deployed in a right handed spiral arrangement and exhibit an average rise per subunit of ~3.1 Å and a pitch of ~10 Å (Below, Materials and methods, Appendix and (Lu and Olson, 2003)). Further, each λP protomer sends out a lasso-like segment that runs along the edge of the CTD and positions a λP helix against a site formed by the CTD and the linker helix (residues 183–194) of an adjacent DnaB subunit (Figure 2C and D). In addition, owing to intrinsic asymmetry in the DnaB-helicase hexamer (below), disposition of two λP protomers (λP2 and λP4) enables contacts to a nearby NTD (DnaB residues 77–78; λP2 to chain E and λP4 to chain C, Figure 4B); this feature gives rise to two types of λP – DnaB interfaces (Appendix) that differ on contacts to the NTD.
 
@@ -70,9 +505,25 @@ In the BP complex, five copies of the λP helicase loader bind to five consecuti
 
 Our analysis implies that the BP complex is organized around five sub-structures that each contain a heterotrimer comprised of a single λP and two DnaB chains. The two types of λP•(DnaB)2 interfaces described above each bury a substantial amount of accessible surface area (~2200 Å and ~2600 Å; these values are lower limits owing to our incomplete λP model, which accounts for ~50% of the λP sequence, Appendix). This feature is consistent with the observed high affinity between DnaB and λP (Mallory et al., 1990). The finding that λP forms an extensive interface with two flanking DnaB subunits, which comprises a form of molecular handcuffing, leads to the overall conclusion that inhibition of translocation activity could arise through prevention of essential conformational changes by individual CTDs.
 
-## The λP helicase loader directly remodels the CTDs of the DnaB-helicase into an open pseudo-helical configuration
+### The λP helicase loader directly remodels the CTDs of the DnaB-helicase into an open pseudo-helical configuration
 
 In the BP structure, the CTD layer is found in an open right-handed spiral staircase configuration (Figure 5A and B and Videos 1 and 2). As oriented in Figure 5, chains A and B are at the ‘bottom’ and ‘top’ of the staircase, respectively. To gain insights into the transition of DnaB from a closed planar ring (Stage I) to an open right handed pseudo-helical configuration (Stage II) to an closed spiral (Stage IV), we employ the language of helical parameters (Appendix, Materials and methods, and (Lu and Olson, 2003)). Our analysis takes note that the configuration of the NTD and CTD tiers of all DnaB structures populate two broad classes of configurations, termed dilated and constricted (Bailey et al., 2007a; Strycharska et al., 2013). Principally, these forms differ on the width of the internal chamber (constricted:~15 Å, dilated:~50 Å), which reflects distinct organization of the NTD and CTD layers. As well, nucleotide drives transitions between these forms (Strycharska et al., 2013). Isolated DnaB (Stage I) is found in two closed planar ring configurations where the NTD and CTD tiers populate either the dilated ((Bailey et al., 2007a; Wang et al., 2008), PDB: 2R6A) or constricted configuration ((Strycharska et al., 2013), PDB: 4NMN). However, the ssDNA bound complex (Stage IV) displays a hybrid arrangement with a constricted CTD layer and a dilated NTD tier ((Itsathitphaisarn et al., 2012), PDB: 4ESV). Structural comparisons of various orthologs of DnaB from E. coli (Stage II/III) to those from A. aeolicus (Stage I (Strycharska et al., 2013)) and G. stearothermophilus (Stage IV (Itsathitphaisarn et al., 2012)) are justified by a high degree of structural and sequence conservation ((Leipe et al., 2000), Figure 5—figure supplement 1 and Appendix).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig5-v2.jpg)
+
+**Figure 5.:** (A) The CTD layer in the DnaB helicase in the BP complex adopts a right handed pseudo-helical configuration after the transition from the closed planar (PDB = 4NMN) to the open spiral form of the BP complex. The CTD layer exhibits a pitch of ~16 Å. DnaB from the complex is depicted in a ribbon representation, colored by subunit and labeled by chain. The inset shows colored spheres drawn at the center of mass of each CTD using the same color as the associated subunit. The gray spheres in the inset represent centers of mass for CTDs from the closed planar constricted form of DnaB (PDB = 4NMN). The pseudo-helical axis is aligned with the vertical axis, which is shown in gray. (B) Same as panel A except that the CTD layer from the DnaB helicase in the ssDNA complex (PDB = 4ESV) is shown. The 4ESV CTD layer adopts a pitch of ~27 Å. DnaB from the ssDNA complex is depicted in a ribbon representation, colored by subunit and labeled by chain. As in panel A, the inset shows colored and gray spheres drawn at the centers of mass of each CTD from DnaB in the ssDNA complex and the closed planar constricted form (PDB = 4NMN), respectively. (C) Closing of the CTD tier is inferred from comparison of the open spiral in the BP complex to the closed spiral form of the ssDNA complex (PDB = 4ESV). The DnaB helicase from the BP complex and the ssDNA complex are superimposed on subunit A (both colored pink). Subunit B, which lines the ruptured interface in the BP complex is colored orange. The beta sheets of the RecA style fold are shown in a cartoon representation. The corresponding subunit in the closed spiral ssDNA complex is colored cyan. The remaining DnaB subunits are colored gray. (D) Inclination of individual subunits of DnaB towards the helical axis during opening and closing of the helicase. The open spiral BP complex (orange), the closed spiral ssDNA complex (blue, PDB = 4ESV), and the closed planar dilated form (green, PDB = 2R6A) are superimposed on subunit A of the DnaB helicase (pink). Changes in the relative orientation of subunits were calculated by measuring the degree of rotation of the next subunit (chain F) in the helicase. One structurally conserved CTD helix (residues 293–305 of BP, residues 272–284 of the closed spiral ssDNA complex and residues 271–285 of the closed planar dilated form) is indicated by a cylinder. Other subunits in the closed planar dilated form (PDB = 2R6A) structure are colored white.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Sequence similarity of the TIGR00665 conserved protein domain family is plotted against the amino acid sequence of E. coli DnaB helicase, one member of this family. The domain architecture of DnaB is superimposed on the plot. (B) The sequence similarity data in panel A is projected onto the surface of the DnaB portion of the BP complex. The surface is colored from white (identity of 0–39%) to a gradient of yellow (identity of 40%) to dark green (similarity of 100%). (C) Eleven instances of the CTD of the DnaB helicase (colored in gray) are superimposed on the CTD (residues 204:468) of DnaB in the BP model (colored in red). For reference, a single ADP molecule marks the site of the nucleotide-binding site. The high structural conservation is indicated by the low RMSD values in the inset table. (D) Eleven instances of the NTD of the DnaB helicase are superimposed on the NTD (residues 1:173) of DnaB in the BP model. As with the CTD, structural conservation of the NTD is high. This figure is colored as in panel C. (E) NTD dimers from nine structures superimposed onto a monomer of an NTD dimer from the BP complex (residues 1:173). Global alignment indicates structural conservation of the NTD dimer. The various structures used in the above calculations are indicated by PDB entry. In panel E, the chain identifiers of the respective NTD dimers are indicated in the adjacent table. This figure is colored as in panel C.
+
+![Video 1.](https://cdn.elifesciences.org/articles/41140/elife-41140-video1.mp4.jpg)
+
+**Video 1.:** This movie depicts the transition of the CTD layer of the DnaB helicase from the closed planar constricted form (Stage I, PDB = 4NMN) to the right handed open spiral form (Stage II, this work). The CTDs are depicted in a ribbon representation (left) and as spheres drawn around the respective centers of mass (right). The ribbon and sphere representations are colored as in Figure 5A. The pseudo-helical axis is aligned with the vertical. In Videos 1 and 3, only the end states arise from experimentally determined coordinates; the intermediate structures were calculated by the morph algorithm (PyMOL), and, as such, may be incomplete or contain errors.
+
+![Video 2.](https://cdn.elifesciences.org/articles/41140/elife-41140-video2.mp4.jpg)
+
+**Video 2.:** This video depicts the transition of the CTD and NTD layers from the DnaB helicase from the closed planar form (Stage I, PDB = 4NMN) to the right-handed open spiral form (Stage II, this work) to the right- handed closed spiral form of Stage IV (PDB = 4ESV). The DnaB protomers are depicted in a ribbon representation (left) and as spheres drawn around the respective centers of mass of each CTD and cylinders/spheres drawn around the around the respective centers of mass of the globe domain and helical hairpin of each NTD (right). Five molecules of the λP helicase loader (depicted in a ribbon representation and colored in gray) bind to the DnaB helicase and mediate the transitions depicted in the video. ssDNA (depicted in a sticks representation and colored in red) is depicted as binding to the helicase•loader complex prior to transition to the Stage IV conformer. The DnaB protomers are colored as in Figure 5A. For Video 2, only the end and mid states arise from experimentally determined coordinates; the intermediate structures were calculated by the morph algorithm (PyMOL), and, as such, may be incomplete or contain errors.
 
 In comparison to the constricted closed planar ring form (PDB: 4NMN), the CTDs in the BP complex exhibit a right-handed pseudo-helical configuration characterized by an average helical rise per subunit value of ~4.1 Å, and a helical pitch of ~16 Å. Furthermore, we find that the CTDs exhibit an average helical twist of ~56.4° along the pseudo-helical axis. By contrast, the CTDs in the ssDNA bound form (Stage IV) exhibit an average helical rise per subunit of ~7.4 Å, a helical pitch of ~27 Å, and an average helical twist of ~60°.
 
@@ -82,7 +533,7 @@ Changes to the pitch, twist, and inclination of the CTDs during the transition f
 
 The λP helicase loader reconfigures the CTD layer in the BP complex into a conformation that differs substantially from previously described DnaB structures. Reconfiguration arises from three broad types of changes: (1) displacements of the CTDs along the pseudo-helical axis to form the open right-handed configuration; the average pitch of the resulting entity is ~40% shorter than the ensemble in the ssDNA bound complex, (2) changes to the helical twist of individual CTDs along the helical axis; the CTDs in the BP complex are underwound by ~3.6° with respect to those in the closed planar ring and closed spiral forms, and (3) inclination of the CTDs toward the helical axis; this change yields nucleotide-binding sites with configurations that are nearly optimal for catalysis (below). Collectively, these changes cause the rupture of one of the six CTD interfaces, between subunits A and B, and produce a ~ 15 Å gap between the two CTDs that span the breached interface; this gap is large enough to permit entry of ssDNA into the central chamber of the helicase. These findings have significant implications for opening and closing of the DnaB helicase during recruitment to origin DNA.
 
-## The DNA and ATP-binding sites are disrupted in the DnaB• λP complex
+### The DNA and ATP-binding sites are disrupted in the DnaB• λP complex
 
 Prior studies have established that, within the BP complex, ssDNA binding is altered with λP making most, if not all, of the contacts (Learn et al., 1997). In addition, ATPase, and concomitantly, the helicase activities of the DnaB-helicase are suppressed by λP (Mallory et al., 1990). However, the λP-binding site is more than 10 Å from both the ATP and DNA-binding sites. Suppression of DNA binding and ATP hydrolytic activities must, therefore, arise indirectly, as a consequence of the structural changes described above. We find that alterations in the helical pitch, twist, and inclination of the CTD pseudo-helix in the BP complex combine to critically distort positions of six DNA-binding loops and the disposition of the subunits that form the composite ATP-binding sites. By example, in the ssDNA complex, side chains from the DNA-binding loops (G.st: R381, E382, G384; E. coli: R403, E404, G406) of each DnaB protomer contact two phosphate groups per subunit along the helical path of the CTDs (Itsathitphaisarn et al., 2012). However, in the BP complex, distortions in the disposition of the CTDs significantly shifts the corresponding side chains by distances ranging from ~3 to ~ 18 Å (Figure 6A).
 
@@ -94,13 +545,17 @@ The DnaB-helicase specifies six recA style nucleotide-binding sites, each of whi
 
 Taken together, our findings indicate that the λP helicase loader induces a conformation of the DnaB helicase that is neither optimal for DNA binding nor ATP hydrolysis. Observation of a distorted ssDNA-binding site implies that the DnaB-helicase, while complexed to λP, may not bind ssDNA as in the Stage IV translocating complex. This result is consistent with suppression of a crosslink between DnaB and ssDNA derived from the Oriλ replication origin when the λP loader is present (Learn et al., 1997). The λP-enforced misalignment of the composite ATP-binding sites may also explain lack of ATPase activity in the BP complex.
 
-## The λP helicase loader allosterically cracks an interface in the NTD layer
+### The λP helicase loader allosterically cracks an interface in the NTD layer
 
 The λP helicase loader makes few contacts to the NTD tier of DnaB in the BP complex, nevertheless, this tier is also reconfigured (Figure 7 and Videos 2 and 3). The likely driver of rearrangement is the λP-enforced remodeling of the CTD tier, which provides a reconfigured surface against which the NTD layer must pack; contacts by the λP2 and λP4 protomers to the NTD tier may also contribute, but to a small extent (Figure 4B). In comparison to the Stage I closed planar ring, the NTD layer in the BP complex exhibits an open spiral arrangement. As with every other DnaB structure, the six N-terminal domains of the NTD layer feature a trimer of dimers configuration that displays pseudo-three-fold symmetry. The dimers that comprise the NTD layer in the BP complex are closely related to those in other DnaB structures (RMSD: 1.3 Å, Figure 5—figure supplement 1D,E and Appendix). However, the arrangement of dimers in the complete NTD layer exhibits a conformation that is distinct from that of other DnaB structures (Figure 7), though it is reminiscent to that seen in the DnaB segment of the low-resolution EM map of the E. coli DnaB•DnaC helicase loader complex (Figure 8—figure supplement 1B and Appendix).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig7-v2.jpg)
 
 **Figure 7.:** The NTD layers from the various stages of the helicase assembly pathway are compared. Three types of contacts between the NTDs of DnaB monomers have been described among the various forms of DnaB: tail-to-tail (colored in magenta), head-to-tail (colored in blue), and head-to-head (colored in orange). Residues within 4 Å across a particular interface are colored. Head refers to the globular domain in the NTD (A. aeolicus: 8–109, E. coli: 32–123, G. stearothermophilus: 1–112) and tail refers to a pair of helices that comprise a helical hairpin in the NTD (A. aeolicus: 110–149, E. coli: 124–173, G. stearothermophilus: 113–151). The top set of images is rotated by 90° relative to the bottom images. (A)The NTD layer (PDB = 4NMN) from the constricted closed planar configuration in Stage I of the helicase assembly pathway. (B)The NTD layer from the BP complex. Binding of the λP helicase loader to DnaB reconfigures the NTD layer into an open spiral; reconfiguration breaches one of the head-to-head interfaces to create a ~ 20 Å opening. The NTD layer from the BP complex adopts the constricted configuration as defined by the width of the central chamber. (C)The NTD layer from the ssDNA bound form of DnaB (PDB = 4ESV). This NTD layer adopts an open spiral configuration wherein one head-to-head interface is disrupted. Unlike the BP the complex, however, the central chamber in the ssDNA complex is topologically closed through interactions between the NTD and CTD tiers (not shown). The NTD layer is found in the dilated configuration.
+
+![Video 3.](https://cdn.elifesciences.org/articles/41140/elife-41140-video3.mp4.jpg)
+
+**Video 3.:** This movie depicts transition of the NTD layer of the DnaB helicase from the closed planar constricted form (Stage I, PDB = 4NMN) to the right-handed open spiral form (Stage II, this work). The NTDs are depicted in a ribbon representation (left) and as cylinders/spheres drawn around the respective centers of mass of the globe domain and the helical hairpin of each NTD (right). The ribbon and cylinder/sphere representations are colored as in Figure 5A.
 
 The NTD layer from the BP complex features a central chamber in the constricted state, surrounded by component domains in an open spiral configuration. The diameter of the BP NTD layer (~20–25 Å) is similar to that seen in the closed constricted planar form, and differs markedly from the ~50 Å diameter of the corresponding structure in the ssDNA complex, which adopts the dilated conformation. Comparison of the helical parameters of the NTD tier from the BP complex (Materials and methods) to those of the constricted closed ring form revealed an average helical rise per subunit of ~2.6 Å, a helical pitch of ~7 Å, and helical twist values per subunit that ranged from ~40° to ~70° along the pseudo-helical axis. Direct comparison between the open NTD spirals in the BP and ssDNA complex is complicated by their distinct configurations, constricted and dilated. Nevertheless, we find that the ssDNA complex shows similar pseudo-helical parameters: helical rise per subunit value of ~2.6 Å, a helical pitch of ~7.6 Å, and helical twist values per subunit that ranged from ~45 to 71° (comparison of PDB entries: 4ESV and 2R6A). Reconfiguration of the NTD layer in the BP complex into an open spiral creates a ~ 20 Å gap between the disrupted subunit interface. As with the opening in the CTD layer, the breach in the NTD layer is sufficiently large to provide access to the central chamber of DnaB to ssDNA.
 
@@ -112,7 +567,19 @@ We find that even in the absence of an extensive interface with the NTD layer, t
 
 Assembly of the replicative helicase at the appropriate time and place on the genome is an important decision taken by all cells on the path to cell division. In bacteria, the replicative helicase is a closed protein ring, which requires loading factors for assembly and activation on ssDNA (Bell and Kaguni, 2013; Bleichert et al., 2017). In archaea and eukaryotes, the replicative helicase appears to exist in open and closed states, and the mechanisms of opening and closing are more complex (Abid Ali and Costa, 2016; Parker et al., 2017; Zhai and Tye, 2017; Li and O'Donnell, 2018). The present work, in combination with structural and biochemical analyses of other stages of the helicase assembly pathway, provides unprecedented insights into mechanisms of opening, entry of ssDNA into the internal chamber, and closing of the hexameric DnaB-helicase (Figure 8 – and Figure 8—figure supplement 2, Appendix and Videos 1, 2 and 3).
 
-## Mechanism of opening the DnaB-helicase
+![Figure 8.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig8-v2.jpg)
+
+**Figure 8.:** The overall structure and conformational state of DnaB in the four stages of the assembly pathway are schematically depicted to include insights from this work. The structure of DnaB is depicted in cartoon form with spheres drawn in place of each CTD and a sphere/cylinder in place of each NTD globe/helical hairpin tail. Each subunit is colored gray, except for the Stages I, II, and III chains A and F, which are shown in blue and orange, respectively. In the Stage IV model, chains A and B are colored orange and blue, respectively. The five copies of the λP helicase loader are depicted as yellow ribbons. A two dimensional representation of the configuration of each tier in the various stages is drawn below each cartoon, colored in the same way. In Stage I of the assembly pathway, DnaB is found in equilibrium between two conformers, termed dilated and constricted. This distinction applies to both the NTD and CTD layers. Addition of the λP helicase loader results in a conformational change in DnaB in which the CTD and NTD tiers are ruptured (Stage II); in this stage, both the CTD and NTD tiers adopt the constricted configuration (this work). In Stage III, the helicase•helicase loader complex engages ssDNA and the initiator protein (not shown) at the oriλ replication origin (produced by prior action of the initiator protein, not shown). Little is known about the path of ssDNA through the complex, as such, it is modeled as a simple cartoon. It is anticipated that both the NTD and CTD tiers in Stage III will retain the constricted configuration of Stage II. Expulsion of the loader protein accompanies transition to Stage IV of the pathway. The CTD layer closes and remains in the constricted conformation. The NTD layer is also sealed, however, its configuration assumes the dilated conformer.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Native MS analysis of the DnaB-DnaC complex from A. aeolicus. A single peak series at high m/z range was observed. The mass calculated from this peak is 485,290 ± 30 Da and corresponds to a B6C6 assembly and five nucleotides. We note that the peaks within the series are broad indicating adduction and/or heterogeneity. The measured mass is within 0.3% of the expected mass of B6C6. (B) The structures of various bacterial helicase•helicase loader complexes are shown. E.coli DnaB•λP (left), 25 Å EM map of the E. coli DnaB6•DnaC6 complex (center), and G.stearothermophilus DnaB6•G.subtilis DnaI6•DnaG6 (right). Comparable helicase protomers for each complex are colored using the same color. The λP helicase loader is colored orange, the region corresponding to DnaC is colored in peach and DnaI is colored in dark green.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/41140/elife-41140-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Comparison of the BP complex (Stage II) with the ssDNA complex (Stage IV) implies two schemes for closing of the DnaB helicase once the λP loader has been expelled from the complex. These schemes depend on how subunits in the DnaB spirals seen in Stages II/III and IV are mapped onto each other; two mapping schemes are described in the discussion and below. To visualize the two closing models, the subunits that comprise the two DnaB spirals are laid out in linear space. The CTD and NTD of DnaB and their relationships in the hexamer are depicted with simple shapes. The ‘bottom’ and ‘top’ of each spiral is indicated. Labels also indicate a chain identifier for each subunit, the nucleotide bound at subunit interfaces, and the type of DnaB isomer. Cis and trans isomers of DnaB are colored in blue and light yellow, respectively. For clarity, the λP helicase loader is not shown. (A)In closing scheme I, the CTDs of each subunit are mapped such that the positions of the ‘top’ and ‘bottom’ of each spiral correspond. The CTDs are mapped as follows: BP: chain A (cis) → ssDNA complex: chain A (trans); BP: chain B (trans)→ ssDNA complex: chain B (cis); BP: chain C (cis) → ssDNA complex: chain C (trans); BP: chain D (trans) → ssDNA complex: chain D (cis); BP: chain E (cis) → ssDNA complex: chain E (trans); BP: chain F (trans)→ ssDNA complex: chain F (cis). Since the pattern of DnaB isomers differs in the two spirals, the mapping associated with closing scheme I implies that transition from the BP (Stage II/III) to the ssDNA complex (Stage IV) will be accompanied by a cis-to-trans isomerization of DnaB subunits. Isomerization involves disruption of the dimers in the NTD tier, rotation of the dissociated NTD, followed by reformation of the dimers, but with a distinct DnaB subunit. For example, in the Stage II complex, the NTD of subunit A is bound to subunit F. However, transition to Stage IV requires swapping of dimer partners such that chain A pairs with chain B, etc. (B)Closing scheme II involves an alternate mapping of CTDs in the two DnaB spirals as follows: BP: chain A (cis) → ssDNA complex: chain B (cis); BP: chain B (trans) → ssDNA complex: chain C (trans); BP: chain C (cis) → ssDNA complex: chain D (cis); BP: chain D (trans) → ssDNA complex: chain E (trans); BP: chain E (cis) → ssDNA complex: chain F (cis); BP: chain F (trans) → ssDNA complex: chain A (trans). In this alternate mapping, closing of the DnaB helicase involves dissociation of the CTD from chain A, followed by translocation from its original position in the BP complex at the ‘bottom’ of the spiral to its new position at the ‘top’ of the spiral as indicated. Closing of the NTD tier, then, involves rotations of component NTD dimers en masse. The match between the pattern of DnaB isomers in the BP complex after translocation of the chain A CTD with that seen in the ssDNA complex implies that disruption and reformation of NTD dimers is not required. (We note that only the pattern of isomers has been matched, not the chain identifiers.) The pattern of nucleotide occupancy shown here is speculative as little is known about the nature of exchange and filling of sites during closing of the helicase. It is also clear that the same match of DnaB isomers during the transition from Stage II/III to IV could be achieved by allowing translocation of a CTD from the ‘top’ to the ‘bottom’ of the spiral; we consider this scheme to be a variant of closing scheme II.
+
+### Mechanism of opening the DnaB-helicase
 
 The isolated E. coli DnaB helicase (Stage I) is known to be in equilibrium between two forms: dilated and constricted, with the dilated form representing the ground state; notably, nucleotide shifts the equilibrium towards the constricted state (Strycharska et al., 2013). However, binding of the λP helicase loader is not compatible with the dilated form; indeed, the NTD and CTD tiers of the BP complex, by virtue of arrangement and size of internal chamber, are found in the constricted form. As such, we envision that, during transition to Stage II of the assembly pathway, the ring-breaking λP helicase loader opens the closed DnaB-helicase by binding to the constricted form and forcing the CTD layer into an open right-handed pseudo-helical configuration (Figures 5 and 8, and Videos 1 and 2). Opening is accompanied by changes in the inclination and twist of individual CTDs with respect to the pseudo-helical axis. As well, reconfiguration leads to breach of one DnaB interface and a ~ 15 Å opening in the CTD layer. Changes to the CTD layer alter the relative disposition of the NTD and CTD layers, and specify remodeling of the NTD layer into an open spiral. As with the CTD layer, one interface in the NTD tier is ruptured to produce a ~ 20 Å opening in this layer (Figures 7 and 8, and Videos 2 and 3). Thus, binding of the λP helicase loader produces openings in the DnaB-helicase that are of sufficient size to permit access of ssDNA to the inner chamber.
 
@@ -124,7 +591,7 @@ We observe that opening the DnaB-helicase requires five λP helicase loaders, wh
 
 The distance between λP protomers does not suggest an extensive interface. Thus, we speculate that binding of individual loaders to DnaB could take place stochastically, with each binding event remodeling an interface until five have bound. In the case where the sixth interface is of the weaker head-to-tail type, the helicase ring would be opened as in the present structure. We note that nothing prevents assembly of an alternate B6P5 complex in which the NTD tier interface to be disrupted would be of the tail-to-tail type; we speculate that such a complex may not open, and, thus, be non-productive for loading onto DNA.
 
-## Mechanism of closing of the DnaB-helicase
+### Mechanism of closing of the DnaB-helicase
 
 Activation of the DnaB-helicase for translocation on ssDNA requires eviction of the ring-breaking helicase loader and concomitant sealing of the breaches in the NTD and CTD layers (Figure 8—figure supplement 2 and Video 2). An extensive body of insightful work has documented engagement of the bacterial DnaK/DnaJ/GrpE chaperone apparatus at the lambda origin to partially dissolve the λP helicase loader from the BP complex (LeBowitz et al., 1985; Mensa-Wilmot et al., 1989; Wyman et al., 1993; Polissi et al., 1995). Comparisons to the ssDNA-DnaB complex (Stage IV) allow us to infer closing mechanisms that will accompany eviction of the λP loader during transition of the helicase to the active entity. In the first instance, eviction of the loader from DnaB allows the helical CTD tier to relax into the configuration of the ssDNA complex by deploying to its full helical pitch (~27 Å). Second, departure of the loader permits the CTDs to adopt a relaxed ~60° helical twist relationship around the pseudo-helical axis. Third, the DNA binding and the ATPase sites, freed of constraints enforced by λP, assume productive conformations. Origin-derived ssDNA enters the inner chamber with expulsion of the loader. One might speculate that ssDNA in the inner chamber could drive closure of the CTD layer forward in the assembly pathway to the spiral form of the ssDNA complex, rather than backwards to the planar form. Such a mechanism could also ensure quality control in that non-productive BP complexes without ssDNA do not mature into the active DnaB conformation. We speculate that expulsion of λP enables exchange of ADP in the BP complex for ATP, which must take place for DnaB to assume the translocation competent form (Figure 8—figure supplement 2). As well, the unfilled nucleotide site at the breached interface will bind ATP, and this will also further promote closing of the CTD tier. Lastly, the CTD tier, freed of restraining interactions imposed by the λP loader, can undergo conformational changes expected during translocation (Itsathitphaisarn et al., 2012).
 
@@ -136,9 +603,369 @@ As well as sealing the breaches in DnaB, the NTD layer undergoes an additional c
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
 
-## E. coli DnaB helicase • phage λP loader
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropyl-β-D-thiogalactoside (IPTG)</td>
+      <td>Sigma-Aldrich</td>
+      <td>367-93-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris(hydroxymethyl)aminomethane (Tris)</td>
+      <td>Sigma-Aldrich</td>
+      <td>77-86-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>Fisher</td>
+      <td>56-81-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,4-Dithiothreitol (DTT)</td>
+      <td>Sigma-Aldrich</td>
+      <td>3843-12-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chloride</td>
+      <td>Fisher</td>
+      <td>7647-14-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5′-triphosphate (ATP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>34369-07-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>7786-30-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich</td>
+      <td>75277-39-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium phosphate dibasic</td>
+      <td>Sigma-Aldrich</td>
+      <td>7778-77-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium phosphate monobasic</td>
+      <td>Sigma-Aldrich</td>
+      <td>7758-11-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium chloride</td>
+      <td>Fisher</td>
+      <td>7747-40-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Morpholineethanesulfonic acid (MES)</td>
+      <td>Sigma-Aldrich</td>
+      <td>1266615-59-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSS (disuccinimidyl suberate)</td>
+      <td>Fisher</td>
+      <td>A39267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylenediaminetetraacetic acid (EDTA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>60-00-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiTrap Q Fast Flow</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>17-1153-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiTrap Heparin Fast Flow</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>17-0406-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Methyl Hydrophobic Interaction Chromatography</td>
+      <td>BioRad</td>
+      <td>156–0080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superdex 200</td>
+      <td>GE</td>
+      <td>17-1043-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zeba microspin desalting columns</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen</td>
+      <td>69450–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta</td>
+      <td>Novagen</td>
+      <td>70954–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a-Ecoli-DnaB</td>
+      <td>Bacterial expression vector for the E. coli DnaB helicase</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDF-LP</td>
+      <td>Bacterial expression vector for the LP helicase loader from bacteriophage lambda</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a-AA-DnaB</td>
+      <td>Bacterial expression vector for the Aquifex aeoliucs DnaB helicase</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a-AA-DnaC</td>
+      <td>Bacterial expression vector for the Aquifex aeoliucs DnaC helicase loader</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Appion</td>
+      <td>(Voss et al., 2010)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Appion-Protomo</td>
+      <td>(Noble and Stagg, 2015)</td>
+      <td>http://appion.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4</td>
+      <td>(Winn et al., 2011)</td>
+      <td>http://www.ccp4.ac.uk</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>(Emsley et al., 2010)</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/ personal/pemsley/coot/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFind4</td>
+      <td>(Rohou and Grigorieff, 2015)</td>
+      <td>http://grigoriefflab.janelia.org/ctffind4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cryosparc</td>
+      <td>(Punjani et al., 2017)</td>
+      <td>https://cryosparc.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dali Server</td>
+      <td>(Holm and Rosenström, 2010)</td>
+      <td>http://ekhidna.biocenter.helsinki.fi/dali_server</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dynamo</td>
+      <td>(Castaño-Díez et al., 2012)</td>
+      <td>https://wiki.dynamo.biozentrum.unibas.ch/w/index.php/Main_Page</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EMAN2</td>
+      <td>(Tang et al., 2007)</td>
+      <td>http://blake.bcm.tmc.edu/EMAN2/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gAutomatch</td>
+      <td></td>
+      <td>http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gCTF</td>
+      <td>(Zhang, 2016)</td>
+      <td>http://www.mrc-lmb.cam.ac.uk/kzhang/Gctf/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LEGINON</td>
+      <td>(Suloway et al., 2005)</td>
+      <td>http://emg.nysbc.org/redmine/projects/leginon/wiki/Leginon_Homepage</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LSQMan</td>
+      <td>(Kleywegt, 2007; Kleywegt and Jones, 1997)</td>
+      <td>http://xray.bmc.uu.se/usf/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MOLREP</td>
+      <td>(Vagin and Teplyakov, 2010)</td>
+      <td>http://www.ccp4.ac.uk/html/molrep.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>(Li et al., 2013)</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PDBeFold Server</td>
+      <td>(Krissinel and Henrick, 2004)</td>
+      <td>http://www.ebi.ac.uk/msd-srv/ssm/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>(Adams et al., 2010)</td>
+      <td>http://www.phenix-online.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>(Schrodinger LLC, 2017)</td>
+      <td>http://www.pymol.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>(Scheres, 2012)</td>
+      <td>https://www2.mrc- lmb.cam.ac.uk/ relion/index.php/Main_Page</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ResMap</td>
+      <td>(Kucukelbir et al., 2014)</td>
+      <td>http://resmap.sourceforge.net/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SFCHECK</td>
+      <td>(Vaguine et al., 1999)</td>
+      <td>http://www.ccp4.ac.uk/html/sfcheck.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Swiss-Model</td>
+      <td>(Biasini et al., 2014)</td>
+      <td>https://swissmodel.expasy.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TOMO3D</td>
+      <td>(Agulleiro and Fernandez, 2015)</td>
+      <td>https://sites.google.com/site/3demimageprocessing/tomo3d</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>(Pettersen et al., 2004)</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
+
+#### E. coli DnaB helicase • phage λP loader
 
 Bacterial expression of the isolated bacteriophage λP helicase loader under a variety of conditions yielded insoluble or poorly soluble material. As such, full length and truncated variants of the E. coli DnaB helicase • bacteriophage λP helicase loader complex were co-expressed in E. coli BL21(DE3) cells. Plasmids (E. coli DnaB: pET24-DnaB-EC, full length phage λP: pCDFDuet-λP, truncated λP containing residues 103–233: pCDFDuet-LPΔ102-NHis) were co-transformed into BL21(DE3). Standard methods were used to prepare starter cultures (Sørensen and Mortensen, 2005; Terpe, 2006; Tolia and Joshua-Tor, 2006), which were applied to a 10 L fermenter filled with superbroth media (24 gm l−1 yeast extract, 12 gm l−1 tryptone, 2.3 g l−1 KH2PO4, 12.5 g l−1 K2HPO4, 3.2% glycerol, 1 mM MgCl2, and 0.1 mM CaCl2) media supplemented with 20 μg ml−1 kanamycin and 10 μg ml−1 streptomycin. Fermentation was allowed proceed at 37° C to an OD600 = 3 at a stir rate of 450 RPM and oxygen flow of 0.5 L min−1. At the three-hour point, protein expression was induced by bringing the culture to 0.5 mM isopropyl-thio-galactipyranoside (IPTG); induction was allowed to proceed for 5 hr at 37°C. This procedure typically yielded 200–300 g of cells. Harvested cells were resuspended in 50 mM Tris-HCl pH 7.6, 10% (w/v) sucrose, 500 mM NaCl, 2 mM DTT, 10 mM MgCl2 at a ratio of 5 ml per 1 g cells. The resuspended cells were flash frozen in liquid nitrogen and stored at −80°C until use.
 
@@ -148,7 +975,68 @@ To prepare BP complexes with truncated λP (residues 103–233), pCDFDuet-λPΔ1
 
 All protein chromatographic steps were performed using standard techniques (Dunn et al., 2003). Unless otherwise indicated all chromatographic steps were carried out at 4°C. The sequences of all genetic constructs used in this study were verified by DNA sequencing (not shown). Mass spectrometric analyses of bands from SDS-PAGE gels corresponding to the E. coli DnaB and the λP proteins confirmed the identity of both proteins (data not shown). All purification buffer components are listed in Table 4.
 
-## A. aeolicus DnaB helicase • DnaC loader
+**Table 4.**
+ Protein purification buffers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Purification step</th>
+      <th>Buffer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BP</td>
+      <td>Cell Lysis</td>
+      <td>50 mM Tris-HCl pH 7.6, 10% (w/v) sucrose, 500 mM NaCl, 2 mM DTT, 10 mM MgCl2</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>Q-sepharose Chromatography</td>
+      <td>Q-0: 20 mM Tris pH 7.6, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP Q-A: 20 mM Tris pH 7.6, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP, 50 mM NaCl Q-B: 20 mM Tris pH 7.6, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP, 1 M NaCl</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>Heparin Chromatography</td>
+      <td>H-0: 10 mM HEPES pH 7.0, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP H-A: 10 mM HEPES pH 7.0, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP, 50 mM NaCl H-B: 10 mM HEPES pH 7.0, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP, 1 M NaCl</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>Methyl Chromatography</td>
+      <td>M-A: 20 mM Tris-HCl pH 8.2, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP, 1 M (NH4)2SO4 M-B: 20 mM Tris-HCl pH 8.2, 5% glycerol, 1 mM DTT, 5 mM MgCl2, 0.1 mM ATP</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>Dialysis</td>
+      <td>20 mM Na-HEPES pH 7.5, 450 mM NaCl, 5% glycerol, 2 mM DTT, 0.5 mM MgCl2, 0.5 mM ATP</td>
+    </tr>
+    <tr>
+      <td>BC</td>
+      <td>Cell Lysis</td>
+      <td>50 mM potassium phosphate pH 7.6, 500 mM KCl, 10% glycerol, 10 mM β-mercaptoethanol</td>
+    </tr>
+    <tr>
+      <td>BC</td>
+      <td>Heparin Sepharose Chromatography</td>
+      <td>H-0: 20 mM MES pH 6.0, 5% glycerol, 1 mM DTT H-A: 20 mM MES pH 6.0, 50 mM KCl, 5% glycerol, 1 mM DTT H-B: 20 mM MES pH 6.0, 1 M KCl, 5% glycerol, 1 mM DTT</td>
+    </tr>
+    <tr>
+      <td>BC</td>
+      <td>Q-sepharose Chromatography</td>
+      <td>Q-0: 20 mM Tris pH 8.7, 10% glycerol, 10 mM MgCl2 Q-A: 20 mM Tris pH 8.7, 10 mM KCl, 10% glycerol 10 mM MgCl2 Q-B: 20 mM Tris pH 8.7, 1 M KCl, 10% glycerol, 10 mM MgCl2</td>
+    </tr>
+    <tr>
+      <td>BC</td>
+      <td>Size Exclusion Chromatography</td>
+      <td>20 mM MES pH 6.0, 500 mM KCl, 10% glycerol, 1 mM DTT, 0.1 mM EDTA</td>
+    </tr>
+  </tbody>
+</table>
+
+#### A. aeolicus DnaB helicase • DnaC loader
 
 To prepare complexes for analyses, A. aeolicus (AA) DnaB or A. aeolicus DnaC were expressed in E. coli Rosetta cells (Novagen) cultured at 37°C in Luria-Bertani (LB) broth supplemented with 50 μg ml−1 kanamycin and 34 μg ml−1 chloramphenicol.
 
@@ -156,27 +1044,27 @@ Cells that expressed AA DnaB were harvested and resuspended in 50 mM potassium p
 
 Cells in which AA DnaB and AA DnaC had been separately expressed were co-lysed at a ratio of 1 g DnaB: 2 g DnaC. The co-lysis approach was adopted because, although over-produced in E. coli in soluble form, instability of AA DnaC precluded efforts to work with the isolated protein, however, the AA BC complex could be readily purified. Inclusion of an excess of DnaC maximized the amount of the AA DnaB•DnaC (BC) complex in our preparation. Cells were lysed by sonication (total time: 4.5 min, with pulses of 0.66 s on/0.33 s off at 60% amplitude with Sonic Dismembrator sonicator (Fisher Scientific). The soluble fraction from this procedure was incubated at 65°C for 30 min; the AA BC complex remained in solution after removal of the precipitated material by centrifugation. The AA BC complex was further purified by a combination of affinity (Heparin sepharose Fast Flow, GE Healthcare), cation exchange (Q-sepharose Fast Flow, GE Healthcare), and size exclusion (Superdex-200, GE Healthcare). Purified AA BC complex was exchanged into 20 mM MES pH 6.0, 500 mM KCl, 10% glycerol, 1 mM dithiothreitol (DTT), 0.1 mM ethylenediaminetetraacetic acid (EDTA), flash frozen in liquid nitrogen, and stored at −80°C until use. Unless otherwise indicated all chromatographic steps were carried out at 4°C. All purification buffer components are listed in Table 4.
 
-## Grid preparation for Cryo-EM and Cryo-ET
+### Grid preparation for Cryo-EM and Cryo-ET
 
 400 mesh carbon grids with holey carbon (0.6/1.0, Quantifoil, Großlöbichau, Germany) were coated with ~50 nm of gold by evaporating 30 cm of 0.2 mm Au wire (EMS) onto 50 grids using an Edwards Auto306 evaporator and the carbon layer subsequently removed by plasma cleaning for 5 min in a Gatan Solarus plasma cleaner (Gatan, Pleasanton, CA). Prior to sample adhesion, grids were plasma cleaned at 70% power, with a gas flow of 30% (75 parts argon, 25 parts oxygen) for 60 s using a NanoClean model 1070 (Fischione Instruments).
 
 BP complex was freshly thawed on ice and diluted to a concentration of 1.5 µM in 20 mM Na-HEPES pH 7.5, 450 mM NaCl, 2 mM DTT, 0.5 mM MgCl2, 0.5 mM ATP. 3.0 µL of the resulting solution was pipetted onto a fresh plasma cleaned grid; the sample was allowed to adsorb for 30 s at 100% humidity and 4°C, blotted for 3 s with a blot force of 4 and plunge frozen in liquid nitrogen-cooled liquid ethane. Sample adsorption and blotting were performed using a Vitrobot Mark IV (FEI, Hillsboro, Oregon). All grids were stored in liquid nitrogen until data acquisition.
 
-## Single-particle cryo-EM and cryo-ET image acquisition
+### Single-particle cryo-EM and cryo-ET image acquisition
 
 Grids were loaded into a Titan Krios (FEI, Hillsboro, Oregon), fitted with a Gatan K2 Summit (Gatan, Pleasanton, California) direct electron detector, operating at an acceleration voltage of 300 kV. Single particle movies were recorded at a pixel size of 1.07 Å with automatic hole targeting using LEGINON software suite (Suloway et al., 2005). Images were recorded for 10 s at a frame rate of 0.2 s in counting mode with a dose rate of 8.0 e-/Å2 s−1, an accumulated sample dose of 65 e-/Å2, and a defocus range of −1.0 to −3.0 μm. Three 24 hr sessions produced 2426 micrograph movies. (Additional details may be found in the Appendix section).
 
 In addition, five tilt series were collected from the same grids as used for the single particle collection. To minimize sample variation, tomography data were collected during a session that immediately following the single particle data collection described above. Tilted images were collected bi-directionally over a tilt range of −45° to +45° in 3° increments with a dose of 2.57 to 3.3 e-/Å2 per tilt increment (subdivided over seven to nine frames) and a total accumulated sample dose of 90 e-/Å2. Data were collected with a pixel size of 1.76 Å and at defocus values of −2.8 μm, −6.1 μm, and −9.3 μm.
 
-## CryoET image analysis and reconstruction
+### CryoET image analysis and reconstruction
 
 The tilt series of images was aligned using a fiducial-less algorithm as implemented in Appion-Protomo (Winkler and Taylor, 2006; Noble and Stagg, 2015). Tomo3D (Agulleiro and Fernandez, 2011; Agulleiro and Fernandez, 2015) was used to reconstruct tomograms from the aligned images. ~ 1000 particles were picked from the resulting tomograms (4 × 4 binned) and aligned in Dynamo (Castaño-Díez et al., 2012; Castaño-Díez, 2017; Castaño-Díez et al., 2017) to produce a sub-tomogram average of the BP complex. This sub-tomogram average was then used as an initial model for single-particle analysis (Castaño-Díez et al., 2012; Castaño-Díez, 2017; Castaño-Díez et al., 2017) and as a template for automatic particle picking. EMAN2 (Tang et al., 2007; Bell et al., 2016; Ludtke, 2016) was used to generate 2D projections of the BP complex sub-tomogram average in 30 evenly spaced viewing directions. These 2D projections were then used as templates for template-based picking of the micrographs using Gautomatch (version 0.50, http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/). Additional details of our cryoET study are available here: (Noble et al., 2018).
 
-## CryoEM image analysis and reconstruction
+### CryoEM image analysis and reconstruction
 
 The frames of the 2426 micrograph movies were frame aligned for whole-frame motion correction with MotionCorr (Li et al., 2013) in Appion (Voss et al., 2010). Following frame alignment, the contrast transfer functions were estimated by CTFFind4 (Rohou and Grigorieff, 2015) and gCTF (Zhang, 2016). In order to retain the highest quality set of particles, gCTF-corrected micrographs that showed a CTF estimate of <10 Å at a confidence cutoff of 0.8 (Zhang, 2016) were included in the procedure described below. ~267,000 particles were picked with Gautomatch, using 2D templates derived from the cryo-ET model (see above and Appendix). Accuracy of particle picking procedures was assessed via two-dimensional classification by random sampling of a subset of 26,500 particles in Relion (Scheres, 2012; Kimanius et al., 2016; Fernandez-Leiro and Scheres, 2017) (Figure 2—figure supplement 2). The entire particle stack was further classified in three dimensions into eight classes using Relion with C1 symmetry for assessing particle quality (Figure 2—figure supplement 4). The majority of the particles were found in 4 of 8 classes. The remaining 25.7% of the particles were found in 3D classes and did not appear to contain intact particles. Alignment parameters of class 2 (33.2% of particles), class 3 (11.5% of particles), class 6 (16.9% of particles) and class 7 (12.6% of particles) were further assessed by 2D classification, and subsequently refined in Cryosparc (Punjani et al., 2017). Notably, only the particles in class two produced a final volume with a resolution beyond 8 Å; all other classes resulted in deformed volumes. Class 2, which contained 91,728 particles, was then subjected to another round of 2D classification resulting in a cleaner set containing 90,883 particles, which were subsequently refined in Relion and produced a map with a global resolution of 4.1 Å. Map resolution was assessed by Fourier shell correlation (FSC) of independently refined half sets using the gold standard 0.143 value as the cut-off criteria (Henderson et al., 2012; Rosenthal and Rubinstein, 2015). The final map was generated after post-processing in Relion with a mask set at a threshold of 0.008; the threshold was determined by inspection of the EM volume in UCSF-CHIMERA (Pettersen et al., 2004). Our goal in determining the threshold for the mask was to ensure that domains of the complex were included and that noise was omitted. Local resolution was estimated using RESMAP (Kucukelbir et al., 2014), and showed a higher overall resolution for parts of the map that correspond to DnaB (~80% of the volume) and slightly lower resolution for portions of the map (~20%) that correspond to λP (Figure 2—figure supplement 3C,D). In the Appendix, we detail additional efforts to identify whether BP conformers others than the one described above were found in our data set.
 
-## Model building
+### Model building
 
 UCSF-CHIMERA (Pettersen et al., 2004) and SFCHECK (Vaguine et al., 1999) in the CCP4 program suite (Winn et al., 2011) were used to establish the chirality of the EM-derived density map (EMDB: EMD-7076). Since no atomic model of E. coli DnaB was available, we used the Swiss-Model web-hosted software (Biasini et al., 2014), https://swissmodel.expasy.org) to calculate a homology model. To facilitate eventual refinement of our model against EM density maps, the homology model was constructed out of the highest resolution structures available for the DnaB NTD (PDB: 2R5U, (Biswas and Tsodikov, 2008)) and CTD (PDB: 3BH0, (Wang et al., 2008)). Six instances of the homology models for the NTD and the CTD sub-structures of E. coli DnaB were unambiguously placed into our map by MOLREP (Vagin and Teplyakov, 2000; Vagin and Teplyakov, 2010). In addition, the map enabled us to model five of six NTD-CTD linker segments (Figure 2—figure supplement 6C,D). As a result, we could unambiguously connect each NTD to its cognate CTD in the complete model of DnaB in the BP complex. Understanding relationships between each NTD and CTD enabled informative comparisons to be made with the closed planar (PDB = 4NMN) and closed spiral forms (PDB = 4ESV) of DnaB. Clear density was observed for five ADP molecules at the expected sites on DnaB; the nucleotide site formed by the CTDs that line the ruptured interface is vacant (Figure 2—figure supplement 6B). Protein chains in the DnaB portion of the model were named following the example of the ssDNA complex (Itsathitphaisarn et al., 2012) in which Chain A is at the ‘bottom’ of the spiral, and chain B is at the ‘top’ of the spiral. As noted main text, ‘top’ and ‘bottom’ of the DnaB spiral are separately defined in the BP and ssDNA complexes by consideration of the position of the CTDs alone. Also, the terms ‘top’ and ‘bottom’, as we use them here, are inverted from that in reference (Itsathitphaisarn et al., 2012).
 
@@ -186,20 +1074,20 @@ Inspection of our EM maps at lower contour (four sigma in PyMOL (Schrodinger LLC
 
 Model building and visualization was performed in COOT (Emsley et al., 2010).
 
-## Model refinement
+### Model refinement
 
 The BP model was refined using the real_space_refine routine in PHENIX (Afonine et al., 2018b). The refinement converged at a correlation coefficient of 0.739. The final model (PDB: 6BBM) contains residues (chain A: 27–166 and 204–468, chain B: 18–464, chain C: 19–471, chain D: 17–471, chain E: 18–471, chain F: 21–468, chain V: 109–233, chain W: 109–233, chain X: 113–233, chain Y: 110–233 and chain Z: 111–233) with five ADP molecules. Notably, the extended λP1 segment described above was omitted from the final model owing to its weak occupancy. Analysis of the final model using the Ramachandran plot, as implemented in Phenix, revealed that our model exhibited 84.5% of the residues in the favored region, 15.3% in the allowed region, and 0.2% in the in the outlier region. Data collection and refinement statistics can be found in Table 1. A map to model FSC was generated using the Mtriage option of the Phenix suite and agreed with global resolution estimates (Figure 2—figure supplement 3B).
 
-## Model analysis
+### Model analysis
 
 Structural analysis and visualization were carried out using the CCP4 software package (Winn et al., 2011), the Uppsala software suite (Kleywegt et al., 2001; Sierk and Kleywegt, 2004; Kleywegt, 2007), UCSF-CHIMERA (Pettersen et al., 2004), Phenix (Adams et al., 2010; Afonine et al., 2018a), and PyMOL (Schrodinger LLC, 2017).
 
 Analysis of the angular relationship between the NTD and CTD tiers of the various forms of DnaB was performed by fitting a plane to six points corresponding to the centers of gravity of the six CTD domains (Moleman2, Uppsala software suite (Kleywegt and Jones, 1997; Kleywegt, 2007)). The plane fitting procedure was repeated for the centers gravity of the six NTD globe domains (residues: A. aeolicus: 14–96; E. coli: 31–113; G.st: 14–96). The angle between the resulting planes from the NTD and CTD layers of DnaB was calculated as the arc-cosine of the quotient of the dot product and the cross product of the normal vectors of these planes.
 
-## Native mass spectrometry
+### Native mass spectrometry
 
 Native mass spectrometry (MS) of all samples (apo-BP, ssDNA-BP, A. aeolicus DnaB-DnaC) was carried out at a protein concentration of 5 µM. ssDNA (Genewiz, LLC) in our experiments were of two types: (1) a 43-mer sequence (5’ TGACGAATAATCTTTTCTTTTTTCTTTTGTAATAGTGTCTTTT 3’) derived from DNA unwinding element (DUE) of Oriλ (Learn et al., 1997) and (2) a series of thymidylate homopolymers of varying nucleotide length (T 25 nt, T 35 nt or T 45 nt). Protein samples were buffer-exchanged into native MS solution using Zeba microspin desalting columns (Thermo Scientific) with a 40 kDa molecular weight cut-off (MWCO). The MS buffer contained 450 mM ammonium acetate, pH 7.5, 0.5 mM magnesium acetate, 0.01% Tween-20, and was selected to mimic the ionic strength of that in the cryo-EM samples. For samples containing ssDNA, the buffer-exchanged BP complex was incubated with nucleic acid at a molar ratio of 1:1.2 for 30 min on ice prior to native MS experiments. A 2–3 µL aliquot of the buffer-exchanged sample was loaded into an in house fabricated gold-coated quartz capillary. The sample was then sprayed into an Exactive Plus EMR instrument (Thermo Fisher Scientific) using a static nanospray source. The MS parameters used are spray voltage, 1.0–1.4 kV; capillary temperature, 100°C; in-source dissociation, 10 V; S-lens RF level, 200; resolving power, 8750 at m/z of 200; AGC target, 0.5–3 × 106; number of microscans, 5; maximum injection time, 200 ms; injection flatapole, 8 V; interflatapole, 4 V; bent flatapole, 4 V; high energy collision dissociation (HCD), 200 V; ultrahigh vacuum pressure, 8–9 × 10−10 mbar; total number of scans, 100. The EMR instrument was mass calibrated using cesium iodide. The native MS spectra were visualized using the Thermo Xcalibur Qual Browser (version 3.0.63). Deconvolution was performed manually. For samples buffer-exchanged into native MS solution containing magnesium acetate, the deviations from expected mass ranged from 0.04% to 0.09% due to peak broadening from nonspecific magnesium adduction (see Table 3 for comparisons with mass measurements taken with protein samples without magnesium acetate). All mass spectrometric data were measured in the laboratory of Professor Brian Chait of The Rockefeller University.
 
-## Crosslinking mass spectrometry
+### Crosslinking mass spectrometry
 
 EcDnaB-λP-Oriλ derived ssDNA (0.2 mg ml−1, with a protein to DNA ratio of 1:1.2) was cross-linked with 2 mM disuccinimidyl suberate (DSS) overnight at 4°C; the crosslinking reaction was quenched with 50 mM ammonium bicarbonate. Isolated λP was not analyzed since it could not be produced in soluble form. We observed that crosslinking was more efficient when ssDNA was included in the crosslinking reaction. This factor, in combination with the finding that preparations of the BP•ssDNA complex contained a single entity (Figure 3), led us to analyze the ssDNA containing crosslinked sample; we reasoned that resulting MS data would arise from a more homogeneous preparation. Cross-linked samples were reduced with 25 mM DTT for 10 min at 70°C, alkylated with 100 mM 2-chloroacetamide at room temperature in the dark for 30 min, then separated by SDS-PAGE with a 3–8% Tris-Acetate gel (NuPAGE, Thermo Fisher Scientific), and stained with Coomassie-blue for visualization. The region containing proteins between 170 kDa and 460 kDa was excised, crushed, treated with trypsin overnight to generate cross-linked peptides as previously described (Shi et al., 2014; Shi et al., 2015). Peptides were desalted and concentrated on C18 solid phase extraction material (Empore), loaded onto an EASY-Spray column (Thermo Fisher Scientific ES800: 15 cm ×75 μm ID, PepMap C18, 3 μm) via an EASY-nLC 1200 and gradient-eluted for online ESI–MS and MS/MS analyses with a Q Exactive Plus mass spectrometer (Thermo Fisher Scientific). MS/MS analyses of the top eight precursors in each full scan used the following parameters: resolution: 17,500 (at 200 Th); AGC target: 2 × 105; maximum injection time: 800 ms; isolation width: 1.4 m/z; normalized collision energy: 24%; charge: 3–7; intensity threshold: 2.5 × 103; peptide match: off; dynamic exclusion tolerance: 1500 mmu. Cross-linked peptides were identified from mass spectra by pLink, and peptide-spectrum matches were manually verified as previously established (Shi et al., 2014; Shi et al., 2015). The crosslinked lysine pairs provided by the above procedure were used to evaluate the BP model as described in the Appendix.

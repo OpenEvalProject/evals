@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05gxnyn08 Biology department, School of Science, Indiana University Purdue University Indianapolis Indianapolis United States
+1. Biology department, School of Science, Indiana University Purdue University Indianapolis Indianapolis United States ([ROR:05gxnyn08](https://ror.org/05gxnyn08))
 2. Icagen LLC, 4222 Emperor Blvd #350 Durham United States
-3. https://ror.org/01kg8sb98 Program in Medical Neuroscience, Paul and Carole Stark Neurosciences Research Institute, Indiana University School of Medicine Indianapolis United States
+3. Program in Medical Neuroscience, Paul and Carole Stark Neurosciences Research Institute, Indiana University School of Medicine Indianapolis United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
 
 † Corresponding author
 
 ## Abstract
 
-Resurgent currents ( I NaR ) produced by voltage-gated sodium channels are required for many neurons to maintain high-frequency firing and contribute to neuronal hyperexcitability and disease pathophysiology. Here, we show, for the first time, that I NaR can be reconstituted in a heterologous system by coexpression of sodium channel α-subunits and A-type fibroblast growth factor homologous factors (FHFs). Specifically, A-type FHFs induces I NaR from Nav1.8, Nav1.9 tetrodotoxin (TTX)-resistant neuronal channels, and, to a lesser extent, neuronal Nav1.7 and cardiac Nav1.5 channels. Moreover, we identified the N-terminus of FHF as the critical molecule responsible for A-type FHFs-mediated I NaR . Among the FHFs, FHF4A is the most important isoform for mediating Nav1.8 and Nav1.9 I NaR . In nociceptive sensory neurons, FHF4A knockdown significantly reduces I NaR amplitude and the percentage of neurons that generate I NaR , substantially suppressing excitability. Thus, our work reveals a novel molecular mechanism underlying TTX-resistant I NaR generation and provides important potential targets for pain treatment.
+Resurgent currents (INaR) produced by voltage-gated sodium channels are required for many neurons to maintain high-frequency firing and contribute to neuronal hyperexcitability and disease pathophysiology. Here, we show, for the first time, that INaR can be reconstituted in a heterologous system by coexpression of sodium channel α-subunits and A-type fibroblast growth factor homologous factors (FHFs). Specifically, A-type FHFs induces INaR from Nav1.8, Nav1.9 tetrodotoxin (TTX)-resistant neuronal channels, and, to a lesser extent, neuronal Nav1.7 and cardiac Nav1.5 channels. Moreover, we identified the N-terminus of FHF as the critical molecule responsible for A-type FHFs-mediated INaR. Among the FHFs, FHF4A is the most important isoform for mediating Nav1.8 and Nav1.9 INaR. In nociceptive sensory neurons, FHF4A knockdown significantly reduces INaR amplitude and the percentage of neurons that generate INaR, substantially suppressing excitability. Thus, our work reveals a novel molecular mechanism underlying TTX-resistant INaR generation and provides important potential targets for pain treatment.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ In this study, we report that A-type FHFs directly mediate resurgent sodium curr
 
 ## Results
 
-## A-type FHFs mediate INaR in heterologously expressed Nav1.8 and Nav1.9
+### A-type FHFs mediate INaR in heterologously expressed Nav1.8 and Nav1.9
 
 A-type FHFs can modulate TTX-sensitive VGSC inactivation and INaR (White et al., 2019; Barbosa et al., 2017; Yan et al., 2014); however, it is unknown if A-type FHFs impact the functional properties of the TTX-resistant sodium channels Nav1.8 and Nav1.9. Therefore, we first asked whether FHF2A and FHF4A, which are widely expressed in DRG neurons, modulate sodium currents in cells expressing recombinant Nav1.8 and Nav1.9. As previously shown in ND7/23 and HEK293 heterologous cell expression systems (Xiao et al., 2019; Lin et al., 2016), Nav1.8 generated a slow-inactivating TTX-resistant current, while Nav1.9 produced an ultra-slow-inactivating TTX-resistant current that activated at hyperpolarized potentials (Figure 1a and d). Although ND7/23 are from a rat DRG/mouse N18Tg2 neuroblastoma hybridoma cell line, they do not express endogenous Nav1.8 currents (John et al., 2004; Lee et al., 2019) and are used here as they typically express recombinant Nav1.8 currents at higher levels than HEK293 cells. Here, we show that FHF2A, FHF2B, and FHF4A, when coexpressed with Nav1.8, shifted the voltage dependence of activation by >7 mV in the negative direction and shifted the voltage dependence of steady-state inactivation by >15 mV in the positive direction (Figure 1b, Table 1). FHF2A, FHF2B, and FHF4A also accelerated recovery rate from inactivation of Nav1.8 (Figure 1c). When coexpressed with Nav1.9, FHF2A and FHF4A, but not FHF2B, positively shifted the voltage dependence of steady-state inactivation by ~10 mV. Distinct from Nav1.8, none of the three FHF isoforms altered the voltage dependence of activation or rate for recovery from inactivation of Nav1.9 (Figure 1e and f, Table 1), suggesting that FHFs differentially regulate TTX-resistant VGSCs.
 
@@ -41,31 +41,127 @@ A-type FHFs can modulate TTX-sensitive VGSC inactivation and INaR (White et al.,
 
 **Figure 1.:** (a) Family of classical currents recorded from ND7/23 cells expressing recombinant Nav1.8. Currents were elicited by 50 ms depolarizing voltage steps from +25 mV to −55 mV in –10 mV increments from a holding potential of –100 mV (inset). (b) Effects of FHF2B, FHF2A, and FHF4A on steady-state activation (p<0.0001, 0.0035, 0.0077 vs. control, respectively) and inactivation (p=0.0002, <0.0001, <0.0001 vs. control, respectively) of Nav1.8. (c) FHF2B, FHF2A, and FHF4A accelerated the recovery rate from Nav1.8 inactivation. The time constants estimated from single-exponential fits were 29.71 ± 2.54 ms (control), 5.81 ± 1.03 ms (FHF2B, p<0.0001 vs. control), 4.45 ± 0.43 ms (FHF2A, p<0.0001 vs. control), and 5.46 ± 0.40 ms (FHF4A, p<0.0001 vs. control). (d) Family of classical currents recorded from HEK293 cells expressing recombinant Nav1.9. Currents were elicited by 50 ms depolarizing voltage steps from +20 mV to −100 mV in –20 mV increments from a holding potential of –120 mV (inset). (e) Effects of FHF2B, FHF2A, and FHF4A on steady-state activation (p=0.1832, 0.0171, 0.3215 vs. control, respectively) and inactivation (p=0.175, 0.5978, 0.636 vs. control, respectively) of Nav1.9. (f), FHF2B, FHF2A, and FHF4A did not affect the recovery rate from Nav1.9 inactivation. The time constants estimated from single-exponential fits were 38.46 ± 4.64 ms (control), 48.99 ± 6.93 ms (FHF2B, p=0.2041 vs. control), 49.72 ± 6.81 ms (FHF2A, p=0.1745 vs. control), and 31.95 ± 2.84 ms (FHF4A, p=0.4786 vs. control). In (a–c), cells were pretreated with 500 nM TTX. In (c, f), recovery from inactivation was assayed by the protocol that the cells were prepulsed to 0 mV for 50 ms to inactivate sodium channels and then brought back to –100 mV for increasing recovery durations before the test pulse to 0 mV. Filled circles, open circles, open diamond, and open squares represent control, FHF2B, FHF2A, and FHF4A, respectively. The number of separate cells tested is indicated in parentheses. Data points are shown as mean ± SE. The V1/2 values for activation and inactivation are summarized in Table 1.
 
+**Table 1.**
+ Gating properties of Nav1.8 and Nav1.9 in the presence of fibroblast growth factor homologous factors (FHFs).Midpoint voltages of the steady-state activation and inactivation curves in Figure 1 were determined with a standard Boltzmann distribution fit. *p<0.05 and @p<0.001 vs. respective control condition. The number of separate cells tested is indicated in parentheses. Note that the liquid junction potential for these solutions was <8 mV; data were not corrected to account for this offset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>V1/2 (mV)</th>
+      <th>Control</th>
+      <th>FHF2A</th>
+      <th>FHF2B</th>
+      <th>FHF4A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nav1.8</td>
+      <td>Activation</td>
+      <td>–2.4 ± 1.5 (9)</td>
+      <td>–12.4 ± 2.7@ (8)</td>
+      <td>–18.5 ± 2.7@ (7)</td>
+      <td>–9.0 ± 1.9* (12)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inactivation</td>
+      <td>–59.6 ± 1.8 (9)</td>
+      <td>–37.9 ± 1.9@ (8)</td>
+      <td>–44.3 ± 2.3@ (7)</td>
+      <td>–39.0 ± 2.2@ (12)</td>
+    </tr>
+    <tr>
+      <td>Nav1.9</td>
+      <td>Activation</td>
+      <td>–47.8 ± 2.5 (10)</td>
+      <td>–46.0 ± 1.2 (8)</td>
+      <td>–50.9 ± 2.0 (11)</td>
+      <td>–50.5 ± 4.8 (6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inactivation</td>
+      <td>–55.2 ± 2.3 (10)</td>
+      <td>–45.9 ± 2.5* (8)</td>
+      <td>–53.2 ± 4.2 (11)</td>
+      <td>–45.2 ± 4.3 (6)</td>
+    </tr>
+  </tbody>
+</table>
+
 We next examined the effects of FHFs on INaR generation. FHF2A and FHF4A induced robust INaR from Nav1.8 and Nav1.9 (Figure 2a–h). However, under control conditions and with coexpression of FHF2B, the repolarization pulses only elicited classic tail currents, which arise nearly instantaneously and decay rapidly, in Nav1.8 and Nav1.9 (Figure 2a (left), b, e (left), and f). This is the first demonstration of INaR generation in a heterologous expression system without inclusion of an exogenous peptide in the intracellular solution. The FHF-mediated Nav1.8 INaR peaked at –20 to –10 mV and could be observed at repolarization pulses ranging from +5 to –80 mV, while the FHF-mediated Nav1.9 INaR displayed a more hyperpolarized voltage dependence, peaking at –85 mV and observed at repolarizing potentials ranging from –55 to –100 mV (Figure 2e and g). Moreover, the Nav1.8 INaR induced by FHF4A were fourfold larger than those by FHF2A (Figure 2C, relative amplitudes of the peak transient current: FHF2A: 1.5% ± 0.2%; FHF4A: 5.9% ± 0.4%), and the Nav1.9 INaR mediated by FHF4A was twofold larger than those induced by FHF2A (FHF2A: 14.8% ± 3.9%; FHF4A: 32.6% ± 3.0%). The kinetics of Nav1.8 INaR mediated by A-type FHF are slow, with a slow onset and slow decay. The time to peak and the decay time constant for the FHF4A-mediated INaR elicited at –20 mV were 9.63 ± 0.61 ms and 85.97 ± 5.29 ms, respectively (Figure 2d), similar to the TTX-resistant INaR previously recorded from DRG neurons (Dib-Hajj et al., 2015). In contrast, FHF-mediated Nav1.9 INaR exhibit fast onset and decay kinetics. At –70 mV, near the physiological resting membrane potential of DRG neurons, the time to peak and the decay time constant for FHF4A-mediated Nav1.9 INaR were 1.92 ± 0.12 ms and 8.09 ± 1.31 ms, respectively (Figure 2h). It is noteworthy that Nav1.9 produced a nondecaying inward current following the INaR (control, Figure 2e–f). This nondecaying current activated extremely slowly during 100 ms voltage pulses, occurred in the absence and presence of FHFs, and persisted even when the repolarization pulse was extended to 1000 ms (Figure 2—figure supplement 1a). Importantly, the current-voltage curve almost completely overlapped that of a predicted ‘window current’ formed by superimposition of steady-state activation and inactivation curves (Figure 2—figure supplement 1b–d). Since ‘window current’ typically results in persistent current (Attwell et al., 1979), we suggest that these nondecaying currents result from a slow recovery from inactivation of Nav1.9 currents. Regardless, these data indicate for the first time that Nav1.9 channels can generate a novel INaR distinct from those generated by Nav1.8 and TTX-sensitive VGSCs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig2-v2.jpg)
+
+**Figure 2.:** (a, e) Family of representative current traces recorded from cells expressing Nav1.8 or Nav1.9 that generated INaR in the presence of FHF4A (right) and that did not in the absence of any fibroblast growth factor homologous factors (FHFs) (control, left). Currents were elicited by a standard resurgent current protocol shown in the inset. (b, f) Overlay of single-current traces of Nav1.8–Nav1.9 elicited by the protocol (inset) in the absence (control, black) or presence of FHF2B (red), FHF1A (yellow), FHF2A (blue), FHF3A (purple), and FHF4A (green). (c, g) Voltage dependence of the relative Nav1.8 and Nav1.9 INaR mediated by FHF1A–FHF4A. Nav1.8 and Nav1.9 INaR are normalized to the peak transient currents elicited at 0 mV and –30 mV, respectively. (d, h) The rise time (time to peak) and time constants of the decay kinetics of FHF-mediated INaR in Nav1.8 and Nav1.9. While cells expressing Nav1.8 were held at –100 mV, cells expressing Nav1.9 were at –120 mV. The number of separate cells tested is indicated in parentheses. Data points are shown as mean ± SE.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Typical current traces elicited by a modified standard INaR protocol, in which repolarizing phase was extended to be 1000 ms (inset). (b) Normalization of the nondecay currents to the peak transient current with maximum amplitude. The nondecay currents were measured after 990 ms into the depolarizing pulse. (c) Normalized steady-state activation and inactivation. (d) Overlay of the curves for normalized nondecay currents (filled circles), steady-state activation, and inactivation (dash lines). The number of separate cells tested is indicated in parentheses.
 
 In addition to FHF2A and FHF4A, FHF1A and FHF3A are also A-type FHFs and are predominantly expressed in the CNS (Liu et al., 2001; Goetz et al., 2009). Because ectopic Nav1.8 expression has been observed in CNS neurons in multiple sclerosis (Black et al., 2000), we examined whether FHF1A and FHF3A might induce INaR in Nav1.8 and Nav1.9 as well. In addition to FHF2A and FHF4A, FHF1A and FHF3A both induced INaR in Nav1.8 (FHF1A, 2.8% ± 0.2%; FHF3A, 1.9% ± 0.3%) and Nav1.9 (FHF1A, 9.0% ± 2.3%; FHF3A, 5.8% ± 1.1%). These INaR displayed a voltage dependence of activation similar to those observed with FHF2A and FHF4A (Figure 1b–f). Based on the relative amplitudes of the generated INaR, the rank order of the ability of the four A-type FHFs to mediate Nav1.8 INaR is FHF4A > FHF1A > FHF3A ≈ FHF2A, while the rank order for Nav1.9 INaR generation is FHF4A > FHF2A > FHF1A > FHF3A.
 
-## F2A/F4A peptides fully reconstituted InaR
+### F2A/F4A peptides fully reconstituted InaR
 
 FHF2A, but not FHF2B, induces robust INaR from Nav1.8 and Nav1.9 (Figure 2b and f). Intriguingly, FHF2A and FHF2B differ only in their N-terminus due to the alternative splicing of exon 1 (Figure 3a). Moreover, a peptide derived from amino acids 2–21 of the FHF2A N-terminus has been shown to induce long-term inactivation of Nav1.6 channels (Dover et al., 2010). We hypothesized that the same region of the N-terminal tail is the critical molecular component necessary for INaR induction by A-type FHFs. To test this hypothesis, we intracellularly applied a 20-residue peptide (F2A or F4A), derived from the N-terminal residues 2–21 of FHF2A or FHF4A. We asked whether these peptides could reconstitute A-type FHF-mediated INaR observed with coexpression of full-length FHF2A/FHF4A (Figure 3a). In the presence of 1 mM F2A or F4A, both Nav1.8 and Nav1.9 generated INaR. The relative amplitudes were 1.5% ± 0.1% and 2.5% ± 0.4% of peak transient current in Nav1.8 at –15 mV (Figure 3b and c), and 18.0% ± 3.1% and 10.3% ± 1.4% in Nav1.9 at –85 mV, respectively (Figure 3f and g). The INaR retained the kinetics and voltage dependence of activation as observed with full-length FHF2A and FHF4A (Figure 2c and g). On the other hand, both F2A and F4A significantly decreased the inactivation time constant of the transient currents of Nav1.8 and Nav1.9 evoked by a 20 ms pre-pulse to +30 mV (Figure 3d and g), suggesting that both F2A and F4A serve as open channel blockers of Nav1.8 and Nav1.9. This is consistent with the previous reports that F2A induces open-channel block in Nav1.5 and Nav1.6 (Venkatesan et al., 2014; Dover et al., 2010).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig3-v2.jpg)
 
-**Figure 3.:** INaR in Nav1.8 and Nav1.9 in heterologous systems.(a) Schematic diagram of A- and B-type fibroblast growth factor homologous factors (FHFs) (left). The amino acid sequences of short peptides located at N terminus of FHF2A and FHF4A are shown (right). Five positively charged residues of interest are highlighted in bold. 5Q is a mutant of F2A, in which five positive residues are replaced by Gln (Q). The residues conserved in F2A are indicated as dots. (b) Overlay of representative Nav1.8 INaR traces in the absence (control, black) and presence of F2A (blue), 5Q (red), or F4A (green). (c) Voltage dependence of the relative F2A- and F4A-induced Nav1.8 INaR. Nav1.8 INaR are normalized to the peak transient current elicited at 0 mV. (d) Decay time constants (τ, right) of transient Nav1.8 currents (left) at +30 mV. The time constants (τfast, τslow) were well fitted by a double exponential function. τfast: control, 2.35 ± 0.40 ms; F2A, 0.92 ± 0.09 ms (p=0.0037 vs. control); 5Q, 1.26 ± 0.07 ms (p=0.0339 vs. F2A); F4A, 0.83 ± 0.04 ms (p=0.0071 vs. control). τslow: control, 12.65 ± 1.95 ms; F2A, 7.07 ± 0.60 ms (p=0.0161 vs. control); 5Q, 11.67 ± 1.52 ms (p=0.0065 vs. F2A); F4A, 3.72 ± 0.28 ms (p=0.0021 vs. control). (e) Overlay of Nav1.9 INaR traces in the absence (control, black) and presence of F2A (blue), 5Q (red), or F4A (green). (f) Voltage dependence of the relative F2A- and F4A-induced Nav1.9 INaR. (g) Decay time constants (τ, right) of transient Nav1.9 currents (left) at +30 mV. The time constants were fitted well by a single-exponential function. Cells expressing Nav1.8 or Nav1.9 were held at –100 mV or –120 mV, respectively. All INaR of Nav1.8 or Nav1.9 were normalized to the peak transient current at –40 mV or at 0 mV, respectively. The concentrations of F2A, 5Q, and F4A all are 1 mM. Filled and open circles represent FHF2A and FHF4A, respectively. The number of separate cells tested is indicated in parentheses. *p<0.05; **p<0.01.
+**Figure 3.:** (a) Schematic diagram of A- and B-type fibroblast growth factor homologous factors (FHFs) (left). The amino acid sequences of short peptides located at N terminus of FHF2A and FHF4A are shown (right). Five positively charged residues of interest are highlighted in bold. 5Q is a mutant of F2A, in which five positive residues are replaced by Gln (Q). The residues conserved in F2A are indicated as dots. (b) Overlay of representative Nav1.8 INaR traces in the absence (control, black) and presence of F2A (blue), 5Q (red), or F4A (green). (c) Voltage dependence of the relative F2A- and F4A-induced Nav1.8 INaR. Nav1.8 INaR are normalized to the peak transient current elicited at 0 mV. (d) Decay time constants (τ, right) of transient Nav1.8 currents (left) at +30 mV. The time constants (τfast, τslow) were well fitted by a double exponential function. τfast: control, 2.35 ± 0.40 ms; F2A, 0.92 ± 0.09 ms (p=0.0037 vs. control); 5Q, 1.26 ± 0.07 ms (p=0.0339 vs. F2A); F4A, 0.83 ± 0.04 ms (p=0.0071 vs. control). τslow: control, 12.65 ± 1.95 ms; F2A, 7.07 ± 0.60 ms (p=0.0161 vs. control); 5Q, 11.67 ± 1.52 ms (p=0.0065 vs. F2A); F4A, 3.72 ± 0.28 ms (p=0.0021 vs. control). (e) Overlay of Nav1.9 INaR traces in the absence (control, black) and presence of F2A (blue), 5Q (red), or F4A (green). (f) Voltage dependence of the relative F2A- and F4A-induced Nav1.9 INaR. (g) Decay time constants (τ, right) of transient Nav1.9 currents (left) at +30 mV. The time constants were fitted well by a single-exponential function. Cells expressing Nav1.8 or Nav1.9 were held at –100 mV or –120 mV, respectively. All INaR of Nav1.8 or Nav1.9 were normalized to the peak transient current at –40 mV or at 0 mV, respectively. The concentrations of F2A, 5Q, and F4A all are 1 mM. Filled and open circles represent FHF2A and FHF4A, respectively. The number of separate cells tested is indicated in parentheses. *p<0.05; **p<0.01.
 
 To further investigate the roles of these peptides in INaR generation, we employed an F2A mutant (Dover et al., 2010) in which five positively charged residues (K1/R2/R3/R4/K5) are substituted with the neutral residue glutamine (5Q, Figure 3a). In Figure 3b and e, the mutant 5Q peptide failed to induce INaR in Nav1.8 or Nav1.9: the currents elicited during the repolarization pulse almost overlapped in the absence (control) and presence of 1 mM 5Q. Consistent with this finding, the transient current inactivated more slowly at +30 mV with 5Q than with F2A (Figure 3d and g). Interestingly, the transient current still inactivated faster than under control conditions, suggesting that 5Q may still bind to VGSCs, but with lower affinity compared to F2A. These results suggest that the five positively charged residues in A-type FHFs are critical components for inducing INaR.
 
-## FHF4A-mediated Nav1.8 INaR in sensory neurons
+### FHF4A-mediated Nav1.8 INaR in sensory neurons
 
 DRG neurons show expression of FHF4A along with Nav1.8 and Nav1.9. Our results in heterologous systems showed that FHF4A was most capable among the A-type FHF isoforms at inducing INaR with Nav1.8 and Nav1.9. Therefore, we next asked if FHF4A mediates INaR in primary neurons. We are able to isolate Nav1.9 INaR in DRG neurons (Figure 4). However, while these unique INaR are strikingly similar to those recorded when A-type FHFs are coexpressed with Nav1.9 in HEK293 cells, the endogenous Nav1.9 INaR are only evident in a small subset of DRG neurons. On the other hand, in our previous work Nav1.8 type INaR could be recorded from the majority of DRG neurons expressing endogenous Nav1.8 currents and almost all DRG neurons expressing recombinant Nav1.8 (Xiao et al., 2019). We therefore next focused on interrogating the role of Nav1.8 INaR in DRG neurons.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig4-v2.jpg)
 
-**Figure 4.:** INaR generated from Nav1.8 knockdown dorsal root ganglion (DRG) neurons.(a), Typical Nav1.9 current traces induced by the protocol (inset), in which cells were subjected to 50 ms depolarization of potentials ranging from –120 to +40 mV with a 10 mV increment from a holding potential of –120 mV. (b, c) Representative current traces recorded from DRG neurons that did (b) and that did not (c) generate INaR. Currents were elicited by a standard INaR protocol (inset), where cells were initially depolarized to +30 mV for 20 ms, then followed by a 100 ms hyperpolarizing potential ranging from +10 to –100 mV. (d), Voltage dependence of Nav1.9 INaR shown in (b). All INaR were normalized to peak transient current. (e), Steady-state activation and inactivation measured on DRG neurons with or without INaR.
+**Figure 4.:** (a), Typical Nav1.9 current traces induced by the protocol (inset), in which cells were subjected to 50 ms depolarization of potentials ranging from –120 to +40 mV with a 10 mV increment from a holding potential of –120 mV. (b, c) Representative current traces recorded from DRG neurons that did (b) and that did not (c) generate INaR. Currents were elicited by a standard INaR protocol (inset), where cells were initially depolarized to +30 mV for 20 ms, then followed by a 100 ms hyperpolarizing potential ranging from +10 to –100 mV. (d), Voltage dependence of Nav1.9 INaR shown in (b). All INaR were normalized to peak transient current. (e), Steady-state activation and inactivation measured on DRG neurons with or without INaR.
 
 Consistent with our previous observation (Xiao et al., 2019), 13/14 small-diameter DRG neurons transfected with a scrambled FHF4A shRNA were found to generate Nav1.8 INaR. The largest INaR was attained at –15 mV, with an average relative amplitude of 2.1% ± 0.3% of the peak transient TTX-resistant sodium current. The time to peak and the decay time constant for the current elicited at –15 mV were 45.0 ± 4.4 ms and 546.3 ± 43.2 ms, respectively. These results were identical to those seen in DRG neurons, without scrambled shRNA, in our previous work (Xiao et al., 2019), suggesting that the scrambled shRNA did not alter Nav1.8 INaR. The efficiency of FHF4shRNA-mediated knockdown was determined using a monoclonal antibody specific to FHF4, which has been validated in heterologous systems in our laboratory. In Figure 5a and b, FHF4shRNA reduced FHF4 expression by 73.1% (p<0.0001). FHF4 knockdown did not significantly alter current density, voltage dependence of activation or recovery rate from inactivation of Nav1.8 currents in DRG neurons, but caused a hyperpolarizing shift of 12 mV in the voltage dependence of steady-state inactivation (p<0.0001; Figure 5c–e, Table 2). FHF4 knockdown considerably decreased the proportion of DRG neurons producing INaR (9/18 cells vs. 13/14 scramble cells; p=0.0095, χ2 test; Figure 5g). Furthermore, in those DRG neurons with INaR, FHF4 knockdown did not modify the voltage dependence of activation of Nav1.8 INaR, but reduced the relative amplitude by about 42% (FHF4shRNA, 1.2% ± 0.2%; p<0.05; Figure 5h). Although our previous work showed that Navβ4 can contribute to generation of Nav1.8 INaR in DRG neurons (Xiao et al., 2019), the reduction here was Navβ4 independent because FHF4 knockdown did not significantly change Navβ4 expression level in our immunostaining experiments (Figure 5—figure supplement 1). Therefore, our data indicate that FHF4A is a major producer of Nav1.8 INaR in small-diameter DRG neurons. The remaining INaR after FHF4 knockdown are possibly mediated by residual FHF4A, endogenous FHF2A, or endogenous Navβ4.
 
-## FHF4A-mediated Nav1.8 INaR regulated sensory neuron excitability
+![Figure 5.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig5-v2.jpg)
+
+**Figure 5.:** (a) Immunofluorescent reactions showed expression levels of FHF4 in DRG neurons. Dashed lines show the shape of transfected DRG neurons. Scale bars, 50 µm; ab, antibody. (b) Summary of fluorescence in DRG neurons transfected with the scrambled shRNA or FHF4shRNA (p<0.0001). (c) FHF4 knockdown did not significantly alter Nav1.8 current density (p=0.9116). (d) FHF4 knockdown shifted voltage dependence of steady-state inactivation to more negative potentials (p<0.0001), but did not affect activation (p=0.9116). (e) FHF4 knockdown did not significantly impair the recovery rate from inactivation The time constants estimated from single-exponential fits were 2.92 ± 0.53 ms (scramble) and 4.00 ± 1.01 ms (FHF4shRNA, p=0.3905),. (f) INaR traces recorded from small-diameter DRG neurons transfected with scramble or FHF4shRNA. (g) FHF4 knockdown decreased the percentage of DRG neurons to generate Nav1.8 INaR (p<0.0001). (h) Voltage dependence of the relative Nav1.8 INaR in DRG neurons treated with scramble and FHF4shRNA. Filled and open circles represent scramble and FHF4shRNA, respectively. The number of separate cells tested is indicated in parentheses. N.S., not significant; *p<0.05; ***p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The number of separate cells tested is indicated in parentheses. N.S., not significant.
+
+**Table 2.**
+ Gating properties of Nav1.8 in dorsal root ganglion (DRG) neurons.Midpoint voltages of the steady-state activation and inactivation curves in Figures 5 and 6 were determined with a standard Boltzmann distribution fit. @p<0.001 vs. respective control condition. The number of separate cells tested is indicated in parentheses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>V1/2 (mV)</th>
+      <th>Control</th>
+      <th>FHF4shRNA</th>
+      <th>+F4A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Activation</td>
+      <td>–11.1 ± 1.1 (14)</td>
+      <td>–10.7 ± 2.9 (18)</td>
+      <td>–9.3 ± 3.5 (10)</td>
+    </tr>
+    <tr>
+      <td>Inactivation</td>
+      <td>–28.5 ± 1.0 (14)</td>
+      <td>–40.4 ± 2.0@ (18)</td>
+      <td>–35.9 ± 1.2@ (10)</td>
+    </tr>
+  </tbody>
+</table>
+
+### FHF4A-mediated Nav1.8 INaR regulated sensory neuron excitability
 
 We next explored the impact of FHF4A-mediated INaR on neuronal excitability. Previous studies have shown that FHFs profoundly modulate the activities of TTX-sensitive VGSCs in DRG neuron (Barbosa et al., 2017; Venkatesan et al., 2014; Dover et al., 2010); therefore, we measured excitability of small-diameter DRG neurons in the presence of 500 nM TTX, which blocks all TTX-sensitive VGSCs and removes this confounding variable. FHF4 knockdown did not change resting membrane potential, input resistance, or rheobase of action potential firing (scramble, –54.9 ± 1.1 mV, 463.3 ± 38.5 MΩ, 1.26 ± 0.21 nA; FHF4shRNA, –57.2 ± 1.6 mV, 548.7 ± 66.9 MΩ, 1.22 ± 0.14 nA; p>0.05; Figure 6a–c), but narrowed single-evoked action potentials. The average action potential durations measured under scramble and FHF4shRNA were 17.94 ± 2.63 ms and 10.54 ± 1.19 ms (p=0.0153; Figure 6d), respectively. With 2 s injected currents greater than 300 pA, the FHF4-knockdown DRG neurons displayed significantly fewer action potentials than the scramble-treated neurons (Figure 6e and f).
 
@@ -75,31 +171,71 @@ We next explored the impact of FHF4A-mediated INaR on neuronal excitability. Pre
 
 We then tested whether F4A peptide could reverse the FHF4A knockdown-mediated effects on INaR and neuronal excitability. Intracellular application of 1 mM F4A did not significantly alter current density, voltage dependence of activation, steady-state inactivation, or recovery rate from inactivation of Nav1.8 currents in FHF4shRNA-treated DRG neurons (Figure 6g–i, Table 2). Although F4A peptide did not reverse the negative shift in the voltage dependence of steady-state inactivation caused by FHF4 knockdown (shown in Figure 5d), F4A peptide did rescue the FHF4-knockdown-mediated decrease in INaR: 10/10 DRG neurons tested yielded Nav1.8 INaR (p=0.0066; χ2 test; Figure 6j). The average relative amplitude measured at –15 mV increased from 1.2% ± 0.2% (FHF4shRNA) to 2.7% ± 0.4% (F4A; p=0.0027; Figure 6k), similar to the amplitude yielded under the scramble condition. F4A peptide did not change the resting membrane potential, input resistance, or rheobase in FHF4shRNA-treated DRG neurons (+F4A, –54.8 ± 2.3 mV, 502.8 ± 92.9 MΩ, 1.19 ± 0.15 nA; p>0.05 vs. scramble and FHF4shRNA; Figure 6b and c), but significantly broadened action potentials (average duration of 14.76 ± 1.22 ms; p=0.0233; Figure 6d). F4A peptide increased the number of action potentials elicited by 2 s injected currents of 400 pA (Figure 6e). Finally, the FHF4shRNA-transfected DRG neurons treated with F4A peptide could fire action potentials at almost the same frequency as the scramble-transfected neurons (Figure 6f), demonstrating that the loss of sensory neuron excitability by FHF4 knockdown can be rescued by F4A. Therefore, our data clearly illustrate that A-type FHF is a critical molecule in small-diameter DRG neurons and that A-type FHF determines neuronal excitability via INaR generation.
 
-## Navβ4 does not elicit Nav1.9 InaR
+### Navβ4 does not elicit Nav1.9 InaR
 
 The Nav1.9 INaR identified in HEK293 cells cotransfected with Nav1.9 and A-type FHFs is distinct from the INaR observed with other VGSCs. As Navβ4 has been shown to induce INaR in all of the other VGSC isoforms (Nav1.1–Nav1.8), we asked if Navβ4 also induces INaR with Nav1.9. Multiple studies have failed to reconstitute INaR in heterologous systems by coexpressing full-length Navβ4 with VGSC α-subunits (Catterall et al., 2005, Lin et al., 2016, Liu et al., 2001). However, a short peptide (KKLITFILKKTREK) derived from the Navβ4 C-terminus can induce INaR generation in heterologous expression systems and also in primary neurons (Grieco et al., 2005; Barbosa et al., 2015). Here, we intracellularly applied Navβ4 peptide (200 µM) to investigate if Nav1.9 expressed in HEK293 cells could utilize the C-terminus of Navβ4 to generate INaR. Surprisingly, Navβ4 peptide did not induce Nav1.9 INaR. Only classic tail currents were observed with the Navβ4 peptide (p>0.05; Figure 7a and b), indicating that Navβ4 is not capable of mediating INaR in Nav1.9.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig7-v2.jpg)
 
-**Figure 7.:** INaR in HEK293 cells.(a) Overlay of normalized current traces elicited by a resurgent protocol (inset) in the absence (control, gray) and presence of 200 µM Navβ4 peptide (black). (b) Voltage dependence of the relative currents. Filled and open circles represent control and Navβ4 peptide, respectively.
+**Figure 7.:** (a) Overlay of normalized current traces elicited by a resurgent protocol (inset) in the absence (control, gray) and presence of 200 µM Navβ4 peptide (black). (b) Voltage dependence of the relative currents. Filled and open circles represent control and Navβ4 peptide, respectively.
 
-## An inner pore residue impairs Navβ4, but not A-type FHFs, InaR
+### An inner pore residue impairs Navβ4, but not A-type FHFs, InaR
 
 Nav1.9 exhibits low (42–53%) sequence similarity to other mammalian VGSC subtypes. We hypothesized that nonconserved pore residues, especially positive residues, might prevent the positively charged Navβ4 peptide from binding to the Nav1.9 inner pore. Sequence analysis identified K799, residing in the II-S6 segment of Nav1.9, as a promising candidate for such prevention (Figure 8a). The corresponding residue in all other VGSC isoforms is an asparagine. As described previously (Lin et al., 2016), the K799N mutation does not significantly alter Nav1.9 gating properties (Figure 8b, Table 3). Interestingly, the K799N mutation greatly enhanced the ability of Navβ4 peptide (200 µM) to mediate Nav1.9 INaR in response to a depolarizing voltage of +100 mV. Figure 8c shows that Navβ4 peptide mediated INaR in K799N channels with a fast onset/decay kinetics and a hyperpolarized voltage dependence of activation similar to A-type FHF-mediated Nav1.9 INaR. The relative amplitude is 6.6% ± 0.5% at –85 mV (Figure 8d). Intriguingly, the K799N mutation did not alter F2A-mediated INaR (Nav1.9, 17.0% ± 2.5%; K799N, 18.1% ± 3.5%; p>0.05; Figure 8e and f).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig8-v2.jpg)
+
+**Figure 8.:** (a) Sequence alignment of domain II S6 segments of Nav1.5–Nav1.9. The position of the residues of interest is indicated in bold and designated with a number. (b) The K799N mutation and the reversal mutation N927K did not significantly alter steady-state activation or inactivation of Nav1.9 (circles, right) and Nav1.5 (squares, left), respectively. (c) The Nav1.9 mutant K799N generated INaR in the presence of 200 µM Navβ4 peptide (black). Control, gray. (d) Voltage dependence of the relative INaR in the Nav1.9 mutant K799N (filled circles). (e) Typical INaR traces recorded from Nav1.9 (black) and the mutant K799N (gray) in the presence of 1 mM F2A. (f) Comparison of the relative F2A-induced INaR. Filled and open circles represent Nav1.9 and the mutant K799N, respectively. (g) Typical INaR traces recorded from Nav1.5 (black) and the mutant N927K (gray) in the presence of 200 µM Navβ4 peptide. (h) Voltage dependence of the relative INaR in Nav1.5 (filled squares) and the mutant N927K (open squares). (i) Typical INaR traces recorded from Nav1.5 (black) and the mutant N927K (gray) in the presence of FHF2A. (j) Comparison of the relative FHF2A-induced INaR in Nav1.5 (filled squares) and the mutant N927K (open squares). In (c, e, g, i), INaR were elicited by the protocols shown in the inset. In (b, c, d, g, h), 500 µM GTP-γ-S was added for Nav1.9 and K799N cells in the pipette solution. F2A and Navβ4 peptide were applied in peptide solution. The number of separate cells tested is indicated in parentheses. ***p<0.005.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Typical INaR traces in the presence of 200 µM Navβ4 peptide were elicited by the protocol shown in inset. Nav1.7, black; N945K, gray.
+
+**Table 3.**
+ Gating properties of wild-type Nav1.5, the mutant N927K, wild-type Nav1.9, and the mutant K799N.Midpoint voltages of the steady-state activation and inactivation curves in Figure 8 were determined with a standard Boltzmann distribution fit. All changes are not statistically significant vs. respective wild-type condition. The number of separate cells tested is indicated in parentheses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>V1/2 (mV)</th>
+      <th>Nav1.5wt</th>
+      <th>N927K</th>
+      <th>Nav1.9wt</th>
+      <th>K799N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Activation</td>
+      <td>–44.6 ± 4.4 (5)</td>
+      <td>–44.0 ± 2.9 (5)</td>
+      <td>–37.1 ± 3.3 (5)</td>
+      <td>–37.5 ± 4.1 (5)</td>
+    </tr>
+    <tr>
+      <td>Inactivation</td>
+      <td>–88.5 ± 6.4 (5)</td>
+      <td>–89.7 ± 0.9 (5)</td>
+      <td>–45.7 ± 1.9 (7)</td>
+      <td>–44.0 ± 1.5 (5)</td>
+    </tr>
+  </tbody>
+</table>
+
 To further confirm the role of this residue in modulating VGSCs INaR, we constructed reverse mutations at corresponding positions in Nav1.5 and Nav1.7 (Figure 8a). The reverse mutation N927K did not influence gating properties of Nav1.5 (Figure 8b, Table 3), but reduced Nav1.5 INaR induced by the presence of 200 µM Navβ4 peptide by 92% (Nav1.5, 17.2% ± 2.1%; N927K, 1.3% ± 0.1%; p<0.0001; Figure 8g and h). A substantial reduction (~85%) was also observed for the N945K mutation in Nav1.7 (Figure 8—figure supplement 1). In contrast, the N927K mutation did not impair the ability of Nav1.5 to generate INaR mediated by full-length FHF2A (Nav1.5, 0.24% ± 0.03%; N927K, 0.23% ± 0.03%; p>0.05; Figure 8i and j). Collectively, these results indicate that the residue at position 799 in Nav1.9 is involved in VGSC interaction with Navβ4. Although K799 in Nav1.9 is a major determinant of Nav1.9 resistance to the Navβ4 peptide, it may not be the only factor involved in Nav1.9 resistance. Furthermore, because changes at this position did not alter A-type FHF mediated INaR, we propose that A-type FHFs and Navβ4 do not share identical binding determinants in the pore of VGSCs.
 
-## FHF2A-mediated Nav1.5 and Nav1.7, but not Nav1.6, INaR in heterologous system
+### FHF2A-mediated Nav1.5 and Nav1.7, but not Nav1.6, INaR in heterologous system
 
 Finally, we asked if other VGSC isoforms share the FHF mechanism of INaR generation. We studied Nav1.5, Nav1.6, and Nav1.7 because they are coexpressed with FHF2A or FHF4A in cardiac myocytes and neurons (Li et al., 2002; Wang et al., 2011a; Yan et al., 2014; Barbosa et al., 2017; White et al., 2019). Coexpression of FHF2A with Nav1.5 or Nav1.7 induced INaR (Figure 9a–f), with a voltage dependence of activation more negative than Nav1.8 but more positive than Nav1.9 INaR (Figure 1c and f). Maximal INaR were attained at near –40 mV. The average relative amplitudes were at least sixfold smaller (Nav1.5, 0.22% ± 0.02%; Nav1.7, 0.27% ± 0.02%) than Nav1.8 and Nav1.9 INaR. The time to peak and the decay time constant for the FHF2A-mediated Nav1.5 INaR were 10.2 ± 1.3 ms and 120.8 ± 19.6 ms at –40 mV, respectively (Figure 9i). FHF2A-mediated Nav1.7 INaR displayed a similar rise and decay kinetics to Nav1.5 INaR (Figure 9i). However, neither FHF2B nor FHF4A generated INaR in Nav1.5 and Nav1.7 (Figure 9b and e). Neither FHF2A nor FHF4A induced generation of INaR with Nav1.6 (Figure 8g and h). However, coexpression of FHF4A with Nav1.6 elicited long-term inactivation of Nav1.6 in ND7/23 cells (Figure 10), similar to that previously shown for coexpression of FHF2A with Nav1.6 in HEK293 cells (Rush et al., 2006). Furthermore, intracellular application of the F4A peptide did not induce INaR, only long-term inactivation similar to that induced by full-length FHF4A (Figure 10).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig9-v2.jpg)
 
-**Figure 9.:** INaR were produced by recombinant Nav1.5 and Nav1.7 coexpressed with FHF2A in heterologous systems.(a, d, e) Family of representative current traces recorded from cells expressing Nav1.5, Nav1.7, or Nav1.6 in the presence of FHF2A (below) and that did not in the absence of any fibroblast growth factor homologous factors (FHFs) (control, upper). Currents were elicited by a standard INaR protocol shown in the inset. (b, e, h) Overlay of single-current traces of Nav1.5–Nav1.7 elicited by the protocol (inset) in the absence (control, black) or presence of FHF2B (red), FHF2A (blue), and FHF4A (green). (c, f) Voltage dependence of the relative Nav1.5 and Nav1.7 INaR mediated by FHF2A. (i) The rise time and time constants of the decay kinetics of FHF2A-mediated INaR in Nav1.5 and Nav1.7. In (c, f), all INaR were normalized to the peak transient current. In (i), time constants were obtained by fitting a single exponential function. Cells were held at –120 mV. The number of separate cells tested is indicated in parentheses. Data points are shown as mean ± SE.
+**Figure 9.:** (a, d, e) Family of representative current traces recorded from cells expressing Nav1.5, Nav1.7, or Nav1.6 in the presence of FHF2A (below) and that did not in the absence of any fibroblast growth factor homologous factors (FHFs) (control, upper). Currents were elicited by a standard INaR protocol shown in the inset. (b, e, h) Overlay of single-current traces of Nav1.5–Nav1.7 elicited by the protocol (inset) in the absence (control, black) or presence of FHF2B (red), FHF2A (blue), and FHF4A (green). (c, f) Voltage dependence of the relative Nav1.5 and Nav1.7 INaR mediated by FHF2A. (i) The rise time and time constants of the decay kinetics of FHF2A-mediated INaR in Nav1.5 and Nav1.7. In (c, f), all INaR were normalized to the peak transient current. In (i), time constants were obtained by fitting a single exponential function. Cells were held at –120 mV. The number of separate cells tested is indicated in parentheses. Data points are shown as mean ± SE.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/77558/elife-77558-fig10-v2.jpg)
 
-**Figure 10.:** INaR, in Nav1.6 channels.HEK293 cells stably expressing human Nav1.6 were recorded under control conditions, after FHF4A transfection and with F4A peptide (1 mM) in the pipette solution. (a) Both the full-length FHF4A and the F4A peptide induced a substantial increase in long-term inactivation in response to a train of six –20 mV depolarizations at ~50 Hz. (b) Neither full-length FHF4A nor F4A peptide induced detectable INaR in HEK293 cells expressing Nav1.6 channels. For comparison, data for Nav1.6 INaR with Navβ4 peptide (200 mM) is shown with the dashed curve, adapted from Pan and Cummins, 2020.
+**Figure 10.:** HEK293 cells stably expressing human Nav1.6 were recorded under control conditions, after FHF4A transfection and with F4A peptide (1 mM) in the pipette solution. (a) Both the full-length FHF4A and the F4A peptide induced a substantial increase in long-term inactivation in response to a train of six –20 mV depolarizations at ~50 Hz. (b) Neither full-length FHF4A nor F4A peptide induced detectable INaR in HEK293 cells expressing Nav1.6 channels. For comparison, data for Nav1.6 INaR with Navβ4 peptide (200 mM) is shown with the dashed curve, adapted from Pan and Cummins, 2020.
 
 ## Discussion
 
@@ -121,11 +257,308 @@ Overall, our work substantially increases understanding of the role of A-type FH
 
 ## Materials and methods
 
-## Plasmids, sodium channel constructs, and mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (rat and male)</td>
+      <td>Sprague–Dawley</td>
+      <td>Envigo</td>
+      <td></td>
+      <td>7 weeks/~200 g</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse × rat hybridoma nerve)</td>
+      <td>ND7/23 cells</td>
+      <td>MilliporeSigma</td>
+      <td>CAT# 92090903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hek293 cells</td>
+      <td>ATCC</td>
+      <td>CAT# CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Nav1.7 cells</td>
+      <td>Icagen LLC.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Nav1.7_N945K cells</td>
+      <td>Icagen LLC.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Nav1.9/β1/β2 cells</td>
+      <td>Icagen LLC (Lin et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Nav1.9_K799N/β1/β2 cells</td>
+      <td>Icagen LLC (Lin et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rat)</td>
+      <td>Nav1.8 shRNA</td>
+      <td>Jarecki et al., 2010</td>
+      <td></td>
+      <td>pIRES-EGFP construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rat)</td>
+      <td>Nav1.8 shRNA</td>
+      <td>Jarecki et al., 2010</td>
+      <td></td>
+      <td>pIRES2-DsRed construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rat)</td>
+      <td>FHF4 shRNA</td>
+      <td>Wang et al., 2011a</td>
+      <td></td>
+      <td>Lentiviral construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rat)</td>
+      <td>Scrambled shRNA</td>
+      <td>Wang et al., 2011a</td>
+      <td></td>
+      <td>pAdTrack construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FHF4 antibody (mouse monoclonal)</td>
+      <td>UC Davis/NIH NeuroMab Facility</td>
+      <td>Cat# N56/21</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SCN4B antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab80539</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Alexa Fluor Plus 555 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A32727</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-mouse Nav1.8 (plasmid)</td>
+      <td>GenScript (Xiao et al., 2019)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-human Nav1.8 (plasmid)</td>
+      <td>GenScript (Xiao et al., 2019)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FHF1A</td>
+      <td>Origene</td>
+      <td>CAT# RG215868</td>
+      <td>Human tagged ORF clone: inserted into pCMV6-AC-GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FHF2A</td>
+      <td>GenScript (Barbosa et al., 2015)</td>
+      <td></td>
+      <td>Inserted into pmTurquoise2-N1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FHF2B</td>
+      <td>GenScript (Barbosa et al., 2015)</td>
+      <td></td>
+      <td>Inserted into pmTurquoise2-N1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FHF3A</td>
+      <td>Origene</td>
+      <td>CAT# RG207584</td>
+      <td>Human tagged ORF clone: inserted into pCMV6-AC-GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FHF4A</td>
+      <td>Origene</td>
+      <td>CAT# RG219847</td>
+      <td>Human tagged ORF clone: inserted into pCMV6-AC-GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Nav1.5</td>
+      <td>Xiao et al., 2019</td>
+      <td></td>
+      <td>Human ORF clone: inserted into pcDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Nav1.6</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>Human ORF clone: inserted into pcDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Nav1.7</td>
+      <td>Xiao et al., 2019</td>
+      <td></td>
+      <td>Human ORF clone: inserted into pcDNA3.1-mod</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nav1.5 N927K_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTCATTGGCAAGCTTGTGGTCCTGAATCTCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nav1.5 N927K_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGAAGAGATTCAGGACCACAAGCTTGCCAATGACC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>F2A</td>
+      <td>Dover et al., 2010</td>
+      <td>Amino acid sequence</td>
+      <td>AAAIASSLIRQKRQAREREK</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>5Q</td>
+      <td>Dover et al., 2010</td>
+      <td>Amino acid sequence</td>
+      <td>AAAIASSLIRQQQQAQEQEQ</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>F4A</td>
+      <td>This paper</td>
+      <td>Amino acid sequence</td>
+      <td>AAAIASGLIRQKRQAREQHW</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Navβ4 peptide</td>
+      <td>Grieco et al., 2005</td>
+      <td>Amino acid sequence</td>
+      <td>KKLITFILKKTREK</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Site-directed mutagenesis</td>
+      <td>Stratagene</td>
+      <td>Cat# 200516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluoro-2-deoxyuridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 856657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# U3750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (TTX)</td>
+      <td>Alomone Labs</td>
+      <td>Cat# T-550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type 1</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat# LS004194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neutral protease</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat# LS02104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PulseFit</td>
+      <td>HEKA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PCLAMP</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 5.0</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids, sodium channel constructs, and mutagenesis
 
 Human FHF2A and FHF2B sequences were subcloned into pmTurquoise2-N1 vector as described by Barbosa et al., 2017. The pCMV6-AC-GFP plasmid encoding human FHF1A, FHF3A, or FHF4A was purchased from Origene USA Technologies, Inc (Rockville, MD). The cDNA construct encoding the human Nav1.5, mouse Nav1.8, and human Nav1.8 were subcloned into a pcDNA3.1 expression vector, respectively. The mutation N927K in Nav1.5 was constructed using the QuikChange XL (Stratagene) mutagenesis kit following the manufacturer’s instructions (Stratagene). Mutations were confirmed by sequencing. The scrambled shRNA and FHF4shRNA constructs were generously provided by Dr. Geoffrey S Pitt (Duke University). The scrambled shRNA and FHF4shRNA were subcloned into pAdTrack and pLVTHM vectors, respectively.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Rat DRG neurons were acutely dissociated and cultured according to the procedure described previously (Xiao et al., 2019). Briefly, young adult (8 weeks) Sprague–Dawley rats of either sex, in adherence to animal procedures approved by the Indiana University School of Medicine Institutional Animal Care and Use Committee, were killed by decapitation without anesthetization. All DRGs were removed quickly from the spinal cord and then incubated in Dulbecco’s modified Eagle’s medium (DMEM) containing collagenase (1 mg/ml) and protease (1 mg/ml). After the ganglia were triturated in DMEM supplemented with 10% fetal bovine serum (FBS), cells were seeded on glass coverslips coated with poly-d-lysine and laminin. Cultures were maintained at 37°C in a 5% CO2 incubator. In order to be consistent with our previous studies (Dib-Hajj et al., 2015), the Helios Gene Gun (Bio-Rad Laboratories) was used to transiently cotransfect rat DRG neurons. Cells were cotransfected with an internal ribosome entry site–EGFP (IRES-EGFP) vector plasmid (or an IRES-DsRed vector plasmid) containing a Nav1.8 shRNA targeting the rat Nav1.8 but not the codon-optimized mouse Nav1.8 sequences. After transfection, DRG neurons were incubated in 10% FBS DMEM medium supplemented with mitotic inhibitors, 5-fluoro-2-deoxyuridine (50 µM, Sigma-Aldrich), and uridine (150 µM, Sigma-Aldrich), to prevent overgrowth of the supporting cells. DRG recordings were obtained from cells 2–5 days after transfection. Transfected cells were selected for recordings based on their ability to express EGFP. Under control conditions, the endogenous Nav1.8-type currents have an average current density of 947 ± 72 pA/pF (n = 70) and the Nav1.8 shRNA reduces endogenous Nav1.8-type current amplitudes in DRG neurons by 98% (Xiao et al., 2019).
 
@@ -133,34 +566,34 @@ Human Nav1.9, Nav1.9 K799N, Nav1.7, and Nav1.7 N945K channel cDNAs were stably e
 
 HEK293 cells and ND7/23 cells were grown under standard tissue culture conditions (5% CO2 and 37°C) in DMEM supplemented with 10% FBS. Using the Invitrogen Lipofectamine 2000, human Nav1.5 and the mutant construct (N927K) were transiently co-transfected with FHF2B, FHF2A, or FHF4A into HEK293 cells. The construct human Nav1.8 was transiently transfected into ND7/23 cells. The lipofectamine-DNA mixture was added to the cell culture medium and left for 3 hr after which the cells were washed with fresh medium. Cells with green fluorescent protein fluorescence were selected for whole-cell patch-clamp recordings 36–72 hr after transfection. ND7/23 cells do not express endogenous Nav1.8 currents but TTX-sensitive sodium currents (John et al., 2004; Lee et al., 2019). Transfected ND7/23 cells were pretreated with 500 nM TTX to isolate Nav1.8 currents. No authentication of cell lines was performed. Mycoplasma infection was not detected when tested for.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Whole-cell voltage-clamp recordings were performed at room temperature (~21°C) using an EPC-10 amplifier and the Pulse program (HEKA Electronics). Recordings for hNav1.7 and hNav1.7 N945K were conducted at Icagen Inc under similar conditions but with an Axopatch 200B amplifier and PCLAMP software (Molecular Devices).
 
 For voltage-clamp recordings, fire-polished electrodes (1.0–2.0 MΩ) were fabricated from 1.7 mm capillary glass using a P-97 puller (Sutter Instruments), and the tips were coated with sticky wax (KerrLab) to reduce electrode capacitance and enable increased series resistance compensation. The pipette solution contained (in mM) 140 CsF, 1.1 EGTA, 10 NaCl, and 10 HEPES, pH 7.3. The bathing solution was (in mM) 130 mM NaCl, 30 mM TEA chloride, 1 mM MgCl2, 3 mM KCl, 1 mM CaCl2, 0.05 mM CdCl2, 10 mM HEPES, and 10 mM d-glucose, pH 7.3 (adjusted with NaOH). TTX (500 nM) was added to the bath solution in order to block endogenous TTX-sensitive currents in DRG neurons, Nav1.9 and K799N stable cells, and cells expressing Nav1.8, Nav1.5, and the mutant N927K. The liquid junction potential for these solutions was <8 mV; data were not corrected to account for this offset. The offset potential was zeroed before contacting the cell. After establishing the whole-cell recording configuration, the resting potential was held at –120 mV or –100 mV for 5 min to allow adequate equilibration between the micropipette solution and the cell interior. Linear leak subtraction, based on resistance estimates from 4 to 5 hyperpolarizing pulses applied before the depolarizing test potential, was used for all voltage-clamp recordings. Membrane currents were usually filtered at 5 kHz and sampled at 20 kHz. Voltage errors were minimized using 70–90% series resistance compensation, and the capacitance artifact was canceled using the computer-controlled circuitry of the patch-clamp amplifier.
 
-## Steady-state activation
+### Steady-state activation
 
 Families of sodium currents were induced by 50 ms depolarizing steps to various potentials ranging from –120 to +40 mV in 5 mV (or 10 mV) increments. The conductance was calculated using the equation G(Nav) = I/(V - Vrev) in which I, V, and Vrev represent inward current value, membrane potential, and reversal potential, respectively.
 
-## Steady-state inactivation
+### Steady-state inactivation
 
 The voltage dependence of steady-state inactivation was estimated using a standard double-pulse protocol in which sodium currents were induced by a 50 ms depolarizing potential of 0 mV following a 500 ms prepulse at potentials that ranged from –130 to +10 mV with a 10 mV increment. Currents were plotted as a fraction of the maximum peak current. To obtain the midpoint voltages (V1/2) and slope factor (k), the curves of both steady-state activation and inactivation were fitted to a Boltzmann function.
 
-## Recovery from inactivation
+### Recovery from inactivation
 
 Recovery from inactivation was assayed by the protocol that the cells were prepulsed to 0 mV for 50 ms to inactivate sodium channels and then brought back to –100 mV for increasing recovery durations before the test pulse to 0 mV.
 
-## Resurgent currents
+### Resurgent currents
 
 INaR were elicited by repolarizing voltage steps from +10 mV to −100 for 100 ms (200 ms, or 1000 ms as indicated in Figures 2—9 [inset]) in –5 mV increments, following a 20 ms depolarizing potential of +30 mV (or +100 mV). To avoid contamination from tail currents, Navβ4-induced Nav1.5 INaR were measured after 3.0 ms into the repolarization pulse, FHF-induced Nav1.5, Nav1.7, and Nav1.9 INaR were measured after 4.0 ms into the repolarization pulse, and FHF-induced Nav1.8 INaR were measured after 20 ms into the repolarization pulse. The relative INaR in Nav1.5, Nav1.7, and Nav1.8 were calculated by normalizing to the peak transient current elicited at 0 mV, but the relative Nav1.9 resurgent currents were calculated by normalizing to the peak transient current at –30 mV.
 
 For current-clamp recordings, fire-polished electrodes (4.0–5.0 MΩ) were fabricated from 1.2 mm capillary glass using a P-97 (Sutter Instruments). The pipette solution contained the following (in mM): 140 KCl, 5 MgCl2, 5 EGTA, 2.5 CaCl2, 4 ATP, 0.3 GTP, and 10 HEPES, pH 7.3 (adjusted with KOH). The bathing solution contained the following (in mM): 140 NaCl, 1 MgCl2, 5 KCl, 2 CaCl2, 10 HEPES, and 10 glucose, pH 7.3 (adjusted with NaOH). Neurons were allowed to stabilize for 3 min in the current-clamp mode before initiating current injections to measure action potential activity.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Immunocytochemistry was performed according to the procedure as described previously (Liu et al., 2001). Briefly, the Helios Gene Gun (Bio-Rad Laboratories) was used to transiently transfect the scrambled shRNA, or FHF4shRNA in cultured DRG neurons. Three days after transfection, DRG neurons were fixed with 4% PFA (0.1 M phosphate buffer, pH 7.4) for 20 min and washed in PBS. Cells were then permeabilized in 1% Triton X-100 in PBS for 20 min at room temperature (~21°C), washed in PBS, blocked for 2 hr (10% normal goat serum, 0.1% Triton X-100 in PBS) at room temperature, and washed with PBS. Cells were then incubated with monoclonal FHF4 antibody (1:200, N56/21, UC Davis/NIH NeuroMab Facility) or polyclonal anti-Navβ4 antibody (1:500, #Ab80539, Abcam) diluted in blocking solution overnight at 4°C. After additional PBS washes, cells were incubated with secondary antibody Alexa Fluor Plus 555 Goat Anti-Mouse IgG (Invitrogen) in blocking solution at 1:1000 concentration for 2 hr at room temperature. Coverslips were mounted in Prolong Gold Antifade (Invitrogen) and DRG neurons imaged using Leica Microscope system with a ×20 objective (Biocompare). Images were analyzed with Leica software, and corrected mean cell fluorescence was calculated in Excel (Microsoft) by applying measurements obtained from image analysis using the equations: CMCF = (mean fluorescence intensity of selected cell) – (mean fluorescence of background).
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 The acquisition of control and experimental data was randomized. Data were analyzed using the software programs PulseFit (HEKA) and GraphPad Prism 5.0 (GraphPad Software, Inc, San Diego, CA). All data are shown as mean ± SE. The number of separate experimental cells is presented as n. Statistical analysis was performed by Student’s t-test, one-way ANOVA and χ2 analysis, and p<0.05 indicates a significant difference.

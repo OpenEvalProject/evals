@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Center of Functionally Integrative Neuroscience, Aarhus University and Aarhus University Hospital, Universitetsbyen Aarhus Denmark
-2. https://ror.org/05bpbnx46 Neurobiology Research Unit, Copenhagen University Hospital Rigshospitalet Copenhagen Denmark
+1. Center of Functionally Integrative Neuroscience, Aarhus University and Aarhus University Hospital, Universitetsbyen Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. Neurobiology Research Unit, Copenhagen University Hospital Rigshospitalet Copenhagen Denmark ([ROR:05bpbnx46](https://ror.org/05bpbnx46))
 3. Department of Neurology, Palle Juul-Jensens Boulevard Aarhus Denmark
 
 † Corresponding author
@@ -25,7 +25,7 @@ A key worry of Fahrenfort and colleagues is that ratings of “no experience” 
 
 ## Discussion
 
-## Assumptions of subjective measures
+### Assumptions of subjective measures
 
 The PAS is a participant-generated awareness rating scale with four steps ranging from “no experience” (called PAS0 and [0] by Fahrenfort and colleagues) to “clear experience” (PAS3) (Ramsøy and Overgaard, 2004). In relation to the PAS, Fahrenfort and colleagues report in the Results section that the underlying assumption is “that selecting [0] will only occur if trials are ‘truly’ unseen, so that unconscious processing is not overestimated, as may happen in dichotomous or other types of scales (Overgaard et al., 2006; Overgaard and Sandberg, 2021; Sandberg et al., 2010). The PAS was developed to be able to resolve the inability to externally calibrate subjective content, and as such its ultimate goal seems to be to be impervious to non-perceptual criterion shifts”. No such claims were made, however, in the central referenced articles or elsewhere – and working with and developing the PAS, we are in fact often careful to highlight the opposite.
 
@@ -35,13 +35,13 @@ The first assumption of Fahrenfort et al. is thus that researchers believe that 
 
 Relatedly, Fahrenfort et al. appear to assume that awareness ratings are only useful if they reflect experience perfectly at all times (otherwise, why would their validity be threatened if we find this not to be the case?). It is trivially true that a non-perfect psychological measure could be clinically relevant for diagnostics and that one with, e.g., a specificity and sensitivity of 0.9 is better than one with 0.8. So, why would we not attempt to identify an optimal subjective measure even if we know it is not perfect? The key issue appears to be to acknowledge the limitation of the measures used.
 
-## Similarity of findings – different conclusions
+### Similarity of findings – different conclusions
 
 In one article (Sandberg et al., 2022), we specifically discuss the limitations of subjective reports and draw attention to how one may study effects below the (reported) subjective threshold without making assumptions of whether it is truly unconscious processing. Using modelling very similar to that of Fahrenfort and colleagues, we demonstrate that the estimated capacity of subthreshold processing varies as a function of the criterion for reporting awareness, with conservative criteria resulting in larger effects – exactly as Fahrenfort and colleagues find (see, e.g., Sandberg et al., 2022, Figure 5B). Nevertheless, we also find that task accuracy above chance is expected to be found for any non-zero criterion and in situations that are unaffected by criterion shifts and regression to the mean effects.
 
 The other main finding of Fahrenfort and colleagues – that report criteria depend on experimental context – has also been established previously. In one article (Skewes et al., 2021), we demonstrated this using a false feedback paradigm. When participants received false feedback on accuracy whenever they reported seeing “a weak glimpse” of the stimulus, they changed their response pattern. A similar, yet different, pattern was observed for false confidence ratings feedback, leading us to conclude that awareness and confidence ratings rely on at least partially different processes. That different measures of consciousness lead to different findings, has been reported in several studies (Lohse and Overgaard, 2019; Mazzi et al., 2016; Overgaard and Mogensen, 2015; Overgaard and Sandberg, 2021; Rausch et al., 2015; Szczepanowski et al., 2013). Considering this, it may seem surprising that Fahrenfort and colleagues administered the PAS with multiple adaptations as we explain below.
 
-## Assumptions of instructions
+### Assumptions of instructions
 
 Fahrenfort and colleagues made changes to the PAS – in terms of instructions and administration of punishment of particular reports – which they themselves consider to be so substantial that it may be argued that they did not in fact use the PAS at all (see their Discussion). Participants were informed: “Only press 0 if you are 100% convinced that no square appeared and only press 3 if you are 100% convinced that a square appeared.” As this encourage participants to report based on confidence, it is not clear what the reports actually represent. For this reason, we have previously attempted to explain how to help participants understand what it involves reporting on experiences avoiding terminology related to confidence (Sandberg and Overgaard, 2015).
 
@@ -49,7 +49,7 @@ Fahrenfort and colleagues argue that the changes are unproblematic because there
 
 While participants were encouraged to report honestly using the PAS, they received a secondary set of implicit instructions to avoid certain outcomes reinforced through two types of punishment. The final assumption of Fahrenfort et al. is thus that psychological test responses should be immune to punishment, yet punishment can be used to disrupt the result of essentially any psychological test. Imagine, for example, one group of participants being punished whenever they indicate extraversion in a personality test, and another group being punished for introversion. If punishment is severe enough, the groups would appear to differ greatly on introversion/extraversion. In neuroscientific memory or perception paradigms, we could make the neural correlates increase, decrease or change location if we are creative enough with respect to which responses are punished. But we would not have proven anything other than the effectiveness of punishment.
 
-## Conclusion
+### Conclusion
 
 Our concern is that the study of Fahrenfort and colleagues primarily adds detail to what was already known about the limitations of subjective measures. While some researchers have perhaps previously concluded too strongly based on subjective measures, we believe that Fahrenfort and colleagues do the same, but in the opposite direction. The study does not attempt to evaluate how large the criterion effects are in natural settings when the PAS is used with recommended instructions and without punishment. The study mainly reestablishes that punishment alters behaviour.
 

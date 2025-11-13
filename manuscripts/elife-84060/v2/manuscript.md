@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01jmxt844 Department of Anatomy, School of Biomedical Sciences, University of Otago Dunedin New Zealand
-2. https://ror.org/00jmfr291 Department of Pathology and Geriatrics Center, University of Michigan Ann Arbor United States
-3. https://ror.org/01jdpyv68 Center for Integrative Physiology and Molecular Medicine, Saarland University Homburg Germany
-4. https://ror.org/00jmfr291 Department of Molecular and Integrative Physiology, University of Michigan Ann Arbor United States
+1. Department of Anatomy, School of Biomedical Sciences, University of Otago Dunedin New Zealand ([ROR:01jmxt844](https://ror.org/01jmxt844))
+2. Department of Pathology and Geriatrics Center, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+3. Center for Integrative Physiology and Molecular Medicine, Saarland University Homburg Germany ([ROR:01jdpyv68](https://ror.org/01jdpyv68))
+4. Department of Molecular and Integrative Physiology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -35,23 +35,163 @@ With these precedents in mind, we tested the idea that olfactory signals, presen
 
 ## Results
 
-## Survival
+### Survival
 
 Our principal hypothesis was that early-life exposure to sex-specific olfactory cues indicative of social environment would influence lifespan of mice. A secondary hypothesis was that the response to those cues would depend on function of Gαo-expressing neurons in the vomeronasal organ, since these have been shown to mediate early-life priming responses to opposite-sex urine, at least in female mice (Oboti et al., 2014). Mice were exposed either to same-sex or to opposite-sex odors starting from 3 days of age, with daily exposure through day 60 of life. They were housed in same-sex cages from the age of weaning, that is from 19 or 20 days. Figure 1 shows survival curves for female and for male mice subjected either to odors from adult males (‘MU’) or from adult females (‘FU’), or exposed to water as a control (ZU, for zero urine). Data from male and female mice were evaluated separately. Table 1 shows median age, and age at 90th percentile, for each combination of sex and treatment, pooling across genotypes. In female mice, FU led to an 8% increase in median lifespan, compared to the ZU control group, and a 9% increase in the age at 90th percentile. The log-rank test, comparing all three treatment groups, showed that treatment led to significant differences among the groups (p=0.04), and a follow-up test showed that for females the FU mice were longer-lived than the ZU controls (p=0.01 by log-rank test). Male odors did not produce a lifespan change in female mice compared to controls (p=0.6). Treatment did not modify lifespan in the male mice; log-rank p=0.8 for all treatment groups taken together.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/84060/elife-84060-fig1-v2.jpg)
 
-**Figure 1.:** Top row: pooled across genotypes. Middle row: wild-type (WT) mice. Bottom row: mutant mice. Cox regression analysis (see Table 2) shows no significant interaction between genotype and odor treatment in either sex. See the Supplementary data for age at death of each mouse and its genotype, sex, and treatment group.Figure 1—source data 1.
+**Figure 1.:** Top row: pooled across genotypes. Middle row: wild-type (WT) mice. Bottom row: mutant mice. Cox regression analysis (see Table 2) shows no significant interaction between genotype and odor treatment in either sex. See the Supplementary data for age at death of each mouse and its genotype, sex, and treatment group.
+
+**Table 1.**
+ Median and 90th percentile survival statistics for mice treated with same-sex or opposite-sex odors from 3 to 60 days of age.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Female mice, pooled across genotype</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Treatment</td>
+      <td>Count</td>
+      <td>Median</td>
+      <td>% Change</td>
+      <td>p(90)</td>
+      <td>% Change</td>
+    </tr>
+    <tr>
+      <td>Female odor (FU)</td>
+      <td>59 (30 WT)</td>
+      <td>621</td>
+      <td>8</td>
+      <td>823</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Male odor (MU)</td>
+      <td>58 (30 WT)</td>
+      <td>585</td>
+      <td>2</td>
+      <td>792</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>No odor (ZU)</td>
+      <td>57 (27 WT)</td>
+      <td>576</td>
+      <td>(NA)</td>
+      <td>754</td>
+      <td>(NA)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Male mice, pooled across genotype</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>Count</td>
+      <td>Median</td>
+      <td>% Change</td>
+      <td>p(90)</td>
+      <td>% Change</td>
+    </tr>
+    <tr>
+      <td>Female odor (FU)</td>
+      <td>60 (30 WT)</td>
+      <td>737</td>
+      <td>−1</td>
+      <td>932</td>
+      <td>−1</td>
+    </tr>
+    <tr>
+      <td>Male odor (MU)</td>
+      <td>59 (29 WT)</td>
+      <td>772</td>
+      <td>4</td>
+      <td>879</td>
+      <td>−7</td>
+    </tr>
+    <tr>
+      <td>No odor (ZU)</td>
+      <td>59 (29 WT)</td>
+      <td>741</td>
+      <td>(NA)</td>
+      <td>944</td>
+      <td>(NA)</td>
+    </tr>
+  </tbody>
+</table>
 
 To see if the effect of odor was dependent on Gαo expression in the vomeronasal organ, survival data were analyzed by Cox regression, with two factors: treatment (MU, FU, or ZU) and genotype (WT for wild-type [Gnao1fx/fx, Omp+/+] and mutant for Ompcre positive mice [Gnao1fx/fx, Ompcre/+]), with a [treatment × genotype] interaction term. A significant interaction would indicate that the two genotypes of mice have responded differently to the odor treatment. Table 2 shows the significance levels for each of the three terms, calculated separately for female and for male mice. The interaction term did not achieve significance in either sex, implying that the odor effect did not depend on genotype. In addition, there was no independent effect of genotype on survival. Only the odor treatment had a significant effect on survival, and only in female mice (p=0.04), consistent with the results of the log-rank tests. The Cox regression calculation also confirmed the inference that FU females lived longer than ZU females (p=0.015 without adjustment for multiple comparisons, and p=0.045 with Sidak adjustment), and that no other pairwise comparison between treatment groups had a significant effect in either sex. Within each genotype and sex individual comparison (e.g. WT females, mutant females, WT males, mutant males), there was no significant difference in survival between odor treatment groups using a log-rank test. This further emphasizes the lack of any strong genotype-specific effect and that the effects of the odor treatment are more clearly apparent when both genotypes are included within an analysis due to the increased sample size.
 
+**Table 2.**
+ Significance tests for predictors in Cox regression, calculated separately for each sex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sex of mouse</th>
+      <th>Treatment</th>
+      <th>Genotype</th>
+      <th>Interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Female</td>
+      <td>Χ2 = 6.5p=0.039</td>
+      <td>Χ2 = 0.4p=0.5</td>
+      <td>Χ2 = 0.12p=0.9</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>Χ2 = 0.52p=0.8</td>
+      <td>Χ2 = 0.23p=0.6</td>
+      <td>Χ2 = 0.31p=0.5</td>
+    </tr>
+  </tbody>
+</table>
+
 To evaluate the effects of early-life odor exposure on survival to unusually high ages, we used the method of Wang and Allison (Wang et al., 2004), which calculates a Fisher’s exact test statistic on the proportion of mice in each treatment that remain alive at the 90th percentile of their joint survival distribution, the method also employed by the mouse Intervention Testing Program consortium (Macchiarini, 2021). In females, the comparison of FU to control ZU mice produced a significance value of p=0.004, showing that FU-treated females were more likely to reach old age than ZU-treated females. None of the other paired comparisons reached significance in female mice, and none did so in male mice.
 
-## Functional testing
+### Functional testing
 
 Each mouse surviving to 22 months of age was evaluated using a series of tests for age-sensitive physiological function. The data were analyzed separately for each sex, using a two-factor ANOVA (treatment, genotype, interaction). Because there was no significant interaction between odor treatment and genotype for any measured trait, the data were pooled across genotypes for analysis of odor effects. Figure 2 (top row) shows core body temperature at 22 months. For female mice, exposure to female odors leads to a significantly higher body temperature compared to the ZU control group (p=0.007). There are no significant differences between the MU group and FU mice or ZU controls, and there are no significant differences among any of the groups for male mice. Figure 2 also shows (bottom row) levels of non-fasting glucose measured at 12 months of age. There were no effects of treatment in female mice, but glucose levels were significantly lower in male ZU mice than in the FU or MU mice (Figure 2c; p=0.004 for ANOVA, and p=0.01 for each pairwise comparison to ZU male mice). There were no treatment effects, or significant interaction terms, for mean forepaw grip strength or for rotarod performance (mean of three trials) in either sex (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84060/elife-84060-fig2-v2.jpg)
+
+**Figure 2.:** Each symbol represents one mouse, with color indicating genotype. The black line indicates the mean of each group. ZU = control mice, FU = those exposed to female odors, MU those that were exposed to male odors. Full data matched to each genotype and treatment group is available in the Supplementary data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84060/elife-84060-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each dot represents a value for an individual mouse. The black line indicates the mean of each group.
+
 Figure 3 shows weight trajectories for each of the odor treatment groups separately in both sexes. There were no significant differences at any age, except that in female mice, ZU females were marginally heavier than mice in the MU or ZU control groups at 6 months of age; p=0.03, and p=0.04 if an MU mouse weighing 16 g is considered an outlier. Because these significance tests were not adjusted for multiple comparisons and because there were no large or significant effects in odor at any other age, we suspect that this difference at 6 months is a chance effect. Body weight changes with odor treatment were also uninfluenced by genotype, and the genotypes of mice had similar body weights across the experiment (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84060/elife-84060-fig3-v2.jpg)
+
+**Figure 3.:** The genotypes are pooled in the figure with separate figures provided in Figure 3—figure supplement 1. N=60 in each group through month 3, and then diminished to 32–39 mice (females) or to 48–49 mice (males) by month 18. Standard error of the mean (SEM) values are plotted, but are in most cases too small to see; SEM was <0.3 g at younger ages and typically 0.7–1.3 g at 18 months.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84060/elife-84060-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The top panels show wild-type (WT) mice, the bottom panels are mutant mice. Standard error of the mean (SEM) values are plotted, but are in most cases too small to see. The full dataset showing weights for each individual mouse is provided as a supplementary dataset.
 
 ## Discussion
 
@@ -71,7 +211,7 @@ As far as we know, this is the first observation that lifespan can be increased,
 
 ## Methods
 
-## Mice
+### Mice
 
 We conducted an initial preliminary experiment on changes in sexual maturity with urine and bedding exposure using UM-HET3 mice. The mothers of the UM-HET3 mice used in the preliminary experiment were CByB6F1/J, JAX stock #100009, whose female parents are BALB/cByJ and whose male parents are C57BL/6J. The fathers of the test mice were C3D2F1/J, JAX stock #100004, whose mothers are C3H/HeJ, and whose fathers are DBA/2J.
 
@@ -79,17 +219,17 @@ All mice used in the main lifespan experiment were on a mixed background of the 
 
 A breeding stock of Gnaol flox/flox/OMPcre mice were shipped to the University of Michigan (USA) from Saarland University. On arrival mice were genotyped for both Ompcre and the floxed Gnao1 gene as outlined below. Breeding animals were established with parents that were both homozygous for the floxed Gnao1 gene, with one parent in each pair (either the mother or the father) also containing one copy of the transgene for Cre recombinase. This mating system led to the production of Cre heterozyous mice (Gnao1fx/fx, Ompcre/+, with deletion of Gαo in VSNs) and Cre negative (Gnao1fx/fx, Omp+/+, control) mice in equal proportions, with these litters used in the subsequent lifespan experiment. Progeny from this breeding population have also been used in other experiments that show reduced metabolic responses to females and their odors in cGαo-/- male mice (Garratt et al., 2022).
 
-## Genotyping
+### Genotyping
 
 A small tail tip sample was taken from each mouse at weaning, and animals were genotyped for Omp and Cre recombinase with the following primers, Omp -F: TGGCAACAGCTGTAGCACTT; Omp-R: ACAGAGGCCTTTAGGTTGGC; CRE-F: CATTTGGGCCAGCTAAACAT; CRE-R: CCCGGCAAAACAGGTAGTTA. A PCR was conducted with Phire Green Hot Start II PCR Master Mix (Thermo Fisher, Waltham, MA,USA), using the following cycling program (Step 1: 2 min 95°; Step 2: 45 s 94°; Step 3: 30 s 58°; Step 4: 45 s 72°; repeat steps 2–4 x38; Step 5: 10 s 72°; Step 6: ∞ 4°). Amplified samples were run on a 1.5% Agar gel with Omp producing a 500 bp amplicon and Cre producing a 453 bp amplicon.
 
 Animals were genotyped for the floxed Gnao1 gene with the following primers, Gnao1 F: AAGAATAGAACCTAGGACTGGAGG; Gnao1 R: GCAGACAAGTGAACAAGTGAA ACCC. A PCR was conducted with Phire Green Hot Start II PCR Master Mix (Thermo Fisher, Waltham, MA,USA) using the following cycling program (Step 1: 15 min 95°; Step 2: 40 s 94°; Step 3: 30 s 58°; Step 4: 90 s 68°; repeat steps 2–4 x35; Step 5: 420 s 72°; Step 6: ∞. 4°). Amplified samples were run on a 1.4% Agar gel with the WT allele producing a 1868 bp amplicon and the floxed allele producing a 2142 bp amplicon.
 
-## Lifespan experiment design
+### Lifespan experiment design
 
 The proposed lifespan experiment was approved by the University of Michigan Animal Care and Use Program, Protocol PRO00007884. All experiments strictly adhered to this approved protocol. Mice in each individual litter were randomly assigned to a specific treatment arm (male odor, female odor, or no odor, see below) at age 3 days, and were weaned to same-sex cages at four mice per cage at 19 or 20 days of age. Litters of size 7 or lower were not used, and litters with more than 8 pups were trimmed to 8 pups as soon as discovered. A tail snip biopsy was taken for genotyping at age 10–19 days. Each cage of weanlings contained four mice, two WT and two mutant, and each mouse in a cage was in the same odor-exposure treatment group. Cages were labeled with details of mouse sex, genotype, and treatment group and so were not blinded, although the technician team that assessed mice on a daily basis were largely unaware of the principal hypotheses of the proposed experiment. Thirty mice were allocated per sex, genotype, and odor treatment combination with each mouse assumed to be an independent biological replicate. This sample size was selected because it provides sufficient power to detect a change in median lifespan of approximately 10–15% within one sex and genotype. We originally hypothesized that some effects would be consistent across sexes allowing sexes to be pooled for analysis, further increasing statistical power. All mice received Purina 5LG6 food and water without restriction. Animal housing rooms were maintained on a 12:12 hr light:dark cycle, with relative humidity of 30–70%, and temperature of 21–23°C. Animals were maintained in Specific Pathogen Free Conditions, with sentinel mice included within the colony checked quarterly for infectious agents such as pinworm. All tests were negative through the study period.
 
-## Odor exposure preliminary experiment
+### Odor exposure preliminary experiment
 
 The experimental protocol for odor exposure was based on previous studies that had manipulated age at sexual maturity with male and female odors. We used an odor exposure protocol that began before weaning because this had previously been shown to have greater effects on female body weight. We also combined a urine exposure protocol prior to weaning with further exposure to soiled bedding after weaning until mice were 60 days of age, in an effort to maximize the chance of inducing a long-lasting effect.
 
@@ -99,26 +239,26 @@ Litters of UM-HET3 mice were exposed to either control, male or female odors (6 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84060/elife-84060-fig4-v2.jpg)
 
-**Figure 4.:** Each symbol represents the age at vaginal patency in an individual mouse. p Values are from a Sidak post hoc comparison test. Error bars shown the mean ± standard error of the mean (SEM). ZU = control mice, FU = those exposed to female odors, MU those that were exposed to male odors.Figure 4—source data 1.
+**Figure 4.:** Each symbol represents the age at vaginal patency in an individual mouse. p Values are from a Sidak post hoc comparison test. Error bars shown the mean ± standard error of the mean (SEM). ZU = control mice, FU = those exposed to female odors, MU those that were exposed to male odors.
 
-## Odor exposure experimental protocol
+### Odor exposure experimental protocol
 
 Urine was collected from virgin group-housed (three males or four females per cage) young adult (6 months of age) male or female UM-HET3 mice (Miller et al., 1999), and stored in aliquots at –20°C until use. Aliquots were then thawed when needed and discarded within 24 hr of thawing; no aliquot was used on more than a single day. Newborn mice had their noses moistened, using a cotton swab, with female urine (FU), male urine (MU), or autoclaved water (ZU, control) 6 days each week, starting at day 3 of life, where day 1 is the date on which pups were first noted in the breeding cage. Urine was applied in the light period between 8 am and noon each day. The mother was placed in a clean cage just prior to odor exposure of her pups, and then returned to the nursing cage immediately thereafter.
 
 After weaning, mice were exposed to same-sex, opposite-sex, or control soiled bedding instead of urine. Spent bedding was obtained from cages housing four adult female or three adult male UM-HET3 mice, aged 4–12 months, after the cage had been occupied for 7 days. Bedding from each donor cage was thoroughly mixed by hand, and then 10% of bedding from a donor cage was placed in each recipient cage, with an equal proportion of the bedding from the recipient’s cage removed. Spent bedding was added once each day for 6 days per week until mice were 60 days of age. For control cages, no bedding was added but the bedding in the cage was re-arranged to simulate the MU and FU intervention. After 60 days of age there was no further odor exposure for mice in any of the treatment groups.
 
-## Lifespan data
+### Lifespan data
 
 Lifespan analysis and criteria for inclusion in final survival statistics followed the established protocols of the Interventions Testing Program (Macchiarini, 2021). Each mouse was inspected daily and the date of natural death recorded. Mice were euthanized to comply with humane-use protocols if they appeared unlikely to survive more than another 7 days using a symptom checklist. Animals were excluded from analysis and censored if they were injured due to fighting, showed malocclusion, or had dermatitis covering greater than 20% of their body. Six females and two males were removed from the study as a consequence of these exclusion factors, leaving the final sample sizes for survival analysis presented in Table 1.
 
-## Assessment of temperature, grip strength, and rotarod performance
+### Assessment of temperature, grip strength, and rotarod performance
 
 Mice were evaluated at 22 months of age. Cages of mice were transferred to the testing room between 8 am and 10 am, and immediately evaluated for core body temperature using a rectal thermometer (Braintree RET3). Mice in the cage were then individually weighed. The mice were then allowed to acclimate in their home cage for 1 hr prior to further testing, after which grip strength was evaluated. Mice were held by the base of the tail and lowered toward a wire grid connected to a strain gauge (Bioseb Research Instruments). Once both forepaws grasped the grid, they were firmly but gently pulled horizontally until they released their grip. Strain gauge measurements were recorded for each of three trials for each mouse (‘forepaw grip’). Three additional trials were then conducted, allowing all four paws to simultaneously grasp the grid (‘allpaws grip’). The cage was then returned to its original housing room. On the next day, cages were again moved to the testing room and mice allowed to acclimate for an hour, after which a RotaRod test device (Ugo Basile) was used to measure motor coordination on an accelerating, rotating rod, for three trials. Mice were placed on the RotaRod at an initial speed of 5 RPM. The RotaRod accelerated to a maximum of 40 RPM over 300 s. The trial ended when the mouse fell from the RotaRod, and the latency to fall was recorded. Each mouse was tested three times, with a 1 min interval between trials to allow the apparatus to be cleaned. The mean forepaw grip strength and rotarod performance for each mouse was used for the analysis of genotype and odor effects as previously reported (Herrera et al., 2020; Garratt et al., 2019).
 
-## Assessment of non-fasting blood glucose and weight
+### Assessment of non-fasting blood glucose and weight
 
 Blood samples (approximately 50 µm) were taken by tail venipuncture from restrained, non-anesthetized 12-month-old mice into 300 µm tubes containing EDTA, and tested using a Bayer Contour Next EZ Glucometer. Body weight was periodically assessed between 9 am and noon.
 
-## Statistical analysis
+### Statistical analysis
 
 We tested for survival differences among treatment groups, for each sex, using the log-rank test, with the two genotypes pooled. When the overall log-rank test, with all three odor groups, failed to confirm the null hypothesis, we then proceeded to consider all pairs of odor groups using the log-rank test. To determine if genotype modulated the response to odors, we used Cox regression with two factors, genotype and odor group, including the interaction term, and did so for each sex separately. The significance of the interaction term was used as the indicator of whether response to odor was or was not genotype-dependent within each sex. As a surrogate for ‘maximum’ lifespan, we used the Wang/Allison test (Wang et al., 2004), comparing odor groups for the proportion of mice still alive at the 90th percentile of the joint survival distribution. Calculations of median and 90th percentile age were performed on the number of mice shown in Table 1, that is, excluding mice that had died because of fighting or other accident. All non-longevity data were analyzed using an ANOVA. Where an overall treatment group effect was detected we used the Sidak post hoc multiple comparison test to determine whether specific odor treatment groups differed compared to controls. All analyses were conducted using STATA version 17.

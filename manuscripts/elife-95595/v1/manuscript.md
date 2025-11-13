@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Cell Biology, Harvard Medical School Boston United States
-2. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
+1. Department of Cell Biology, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -34,15 +34,39 @@ Owing to improved scalability, PISA results in an eightfold theoretical improvem
 
 ## Results
 
-## Establishing a workflow for large-scale chemical perturbation screening
+### Establishing a workflow for large-scale chemical perturbation screening
 
 To enable large-scale chemical perturbation screening, we first sought to establish a robust workflow for assessing protein thermal stability changes in living cells. We chose K562 cells, which grow in suspension, because they have been frequently used in similar studies and can easily be transferred from a culture flask to PCR tubes for thermal melting (Savitski et al., 2014; Jarzab et al., 2020). In a PISA experiment, a change in melting temperature or a thermal shift is approximated as a significant deviation in soluble protein abundance following thermal melting and high-speed centrifugation. Throughout this manuscript, we will interpret these observed alterations in solubility as changes in protein thermal stability. Most commonly this is manifested as a log2 fold change comparing the soluble protein abundance of a compound-treated sample to a vehicle-treated control (Figure 1—figure supplement 1A). The ranges of temperatures used in a PISA experiment can impact the magnitude of the fold-change measurements, with narrower temperature ranges often resulting in larger fold changes (Li et al., 2020). After testing a number of ranges experimentally, we ultimately settled on a temperature range of 48–58°C, which encompasses the back half of most protein melting curves in K562 cells (Figure 1—figure supplement 1B; Jarzab et al., 2020). Importantly, similar temperature ranges have been utilized in other studies that employ PISA for target deconvolution (Sabatier et al., 2022).
 
 To highlight the advantage of this window, K562 cells were treated with each of the clinically available CDK4/6 inhibitors—ribociclib, abemaciclib, and palbociclib—or DMSO (10 µM, 30 min; Figure 1—source data 1). Notably, all three compounds and a DMSO control were able to be assayed with four biological replicates in a single TMTPro 16plex experiment, requiring just 24 hr of instrument time. The cells were either heated across a range of 37–62°C (to approximate a full melting curve) or 48–58°C (thermal window) and any changes in protein thermal stability (based on a deviation in soluble protein abundance after thermal denaturation) were assessed using PISA. In cells heated across the full melting curve, CDK4 and CDK6 experienced minimal log2 fold changes, whereas utilizing the narrower range yielded a statistically significant change in CDK4 and CDK6 abundance following thermal denaturation and centrifugation, which, in a PISA experiment, is consistent with a ligand-induced thermal shift or, more specifically, a thermal stabilization (Figure 1—figure supplement 1C). In addition to CDK4/6, several other kinases experienced a significant change in solubility (thermal stability) in response to treatment with each compound (Figure 1—figure supplement 1D–G). In fact, each of the three CDK4/6 inhibitors appear to engage a unique set of kinases, which might contribute to their disparate clinical and molecular phenotypes (Figure 1—figure supplement 1G; Hafner et al., 2019). Finally, we observed a consistent inhibitor-induced negative log2 fold change in soluble protein abundance for RB1, a well-established phosphorylation target of CDK4/6, which is consistent with a thermal destabilization (Figure 1—figure supplement 1C–F; Narasimha et al., 2014). The simplest explanation of this change is that inhibition of CDK4/6 prevents phosphorylation of RB1 thereby inducing a change in its thermal stability.
 
-## A large-scale chemical perturbation screen in K562 cells
+### A large-scale chemical perturbation screen in K562 cells
 
 We next sought to execute a large-scale chemical screen in live K562 cells. Specifically, we hoped to test the ability of PISA to provide meaningful insights into compound mechanism of action when performed at scale in the context of a chemical library screen. To that end, we curated a custom chemical library comprised of 96 commonly used cancer drugs and tool compounds. Each compound selected for the library had at least one well-annotated target and a known mechanism of action (Supplementary file 1). Of these 96 compounds, 70 targeted protein kinases, while the remaining 26 compounds targeted other classes of proteins including histone deacetylases (HDACs), lysine demethylases, poly (ADP-ribose) polymerases (PARPs), and others (Figure 1A). The library also contained multiple compounds targeting certain proteins—eight HDAC inhibitors, four aurora kinase inhibitors, six BRAF inhibitors, etc. To initiate the screen, K562 cells were treated with 10 µM of each compound for 30 min in biological duplicate, which is consistent with previous thermal proteome profiling work (Figure 1A; Savitski et al., 2018; Herneisen and Lourido, 2021; Johnson et al., 2023). The live cells were heated across a thermal gradient (48–58°C) and any changes in protein thermal stability were approximated using PISA (Figure 1—figure supplement 2). This resulted in a total of 256 samples, which were arranged into 16 TMTpro 16-plex experiments and required a minimum of 384 hr of instrument time (Figure 1—figure supplement 3A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the cell-based PISA workflow utilized in the large-scale chemical perturbation screen. (B) Histogram plotting the log2 fold change values for all solubility (thermal stability) measurements (main panel). Box plot depicting the %CV of curated targets vs. all other proteins (inset). (C) Plots highlighting the significant changes in protein solubility following treatment with OTS167 (top) or GSK-LSD1 (bottom). The mean log2 fold change of duplicate measurements is plotted on the x-axis and the mean nSD is plotted on the y-axis. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature). Orange points represent the known target of each compound. (D) The total number of significant solubility changes quantified upon treatment with each compound. The number of stabilizing events (increase in solubility) is plotted on the y-axis and destabilizing events (decrease in solubility) are plotted on the x-axis. (E) Plot comparing the log2 fold changes measurements for each protein in BI 2536 (y-axis)- and volasertib (x-axis)-treated K562 cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic depicting how thermal shifts are measured in a PISA experiment. An increase in melting temperature (thermal stabilization) will result in an increase in the AUC and a positive log2 fold change in soluble protein abundance. A decrease in melting temperature (thermal destabilization) will result in a decrease in the AUC and a negative log2 fold change in soluble protein abundance. (B) PISA schematic depicting a thermal window vs. a full melting curve. (C-G) K562 cells (N=4) were treated with 10 µM palbociclib (D), ribociclib (E), or abemaciclib (F) for 15 min and assayed using PISA. (C) The log2 fold changes for specific proteins are plotted for each treatment using a full melting curve (left) or thermal window (48–58°C; right). (D–F). Data is presented as a volcano plot to highlight significant changes in abundance utilizing the thermal window (48–58°C). Significant changes were determined using a permutation-based FDR (FDR – 0.05, S0 – 0.1, N=4). (G). Log2 fold change values for selected proteins following treatment with each compound in D-F.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** K562 cells were treated with each of the 96 compounds at 10 µM for 30 min. Three compounds and a DMSO control were assayed in duplicate (batch). All 96 compounds and 64 DMSO controls were assayed using thirty-two treatment batches. Following treatment, an equal number of cells were transferred to 10 PCR tubes. The cells were placed in a thermal cycler and heated across a thermal gradient from 48°C to 58°C for 3 min. The cells were allowed to cool to room temperature for 5 min. An equal volume from each PCR tube was pooled and spun at 300 x g for 3 min to pellet cells. Cells were washed one with PBS and lysed in a buffer containing 0.5% NP-40, which will dissolve membranes without disrupting heat-induced protein aggregates. The lysates were centrifuged for 90 min at 21,000 x g to separate soluble protein from aggregates. An equal volume of each soluble fraction (~20 µg) was prepared for LC-MS/MS analysis. Two treatment batches were combined for each TMTpro 16-plex. Each soluble fraction was reduced and alkylated. Each sample was precipitated onto SP3 carboxylate-coated beads to facilitate a buffer exchange. Proteomes were eluted off the SP3 beads into digestion buffer and digested with a combination of Lys-C and trypsin. Peptides from each sample were labeled with a unique TMTpro reagent. TMT-labelled peptides were pooled into a single sample, which was desalted using a sep-pak. Dried peptides were resuspended in HPLC buffer A and fractionated by basic reverse-phase HPLC. Twelve to 24 fractions were stage-tipped and analyzed on an Orbitrap Eclipse with a FAIMS device enabled (Thermo Fisher). Changes in thermal stability were determined by comparing soluble protein abundance in a compound-treated samples to vehicle-treated controls.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Minimal instrument time (assuming 12 fractions per plex) required to assay 96 compounds and 32 DMSO controls in duplicate using CETSA (left) or PISA (right). (B) Total proteins quantified per TMTpro 16-plex. (C) Schematic depiction of the filtering scheme used to define significant changes. (D) Histogram depicting the log2 fold change measurements that were greater than 3.5 standard deviations from the mean. (E,F) Total number of proteins passing each filter. (G) Pie charts depicting the fraction of all measurements that pass each filter. (H) Table highlighting proteins that pass the log2 fold change filter, but not the nSD filter and vice versa.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A-B) K562 cells (N=2) were treated with MK-2206 (top) or CCT128930 (bottom) at 10 µM for 30 min and assayed using PISA. The mean log2 fold change of duplicate measurements is plotted on the x-axis and the mean nSD is plotted on the y-axis. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature). Orange points represent the known target of each compound. (B) The plot displays the log2 fold change values for selected proteins following treatment with each compound in A. (C) Plot comparing the log2 fold changes measurements for each protein in JQ-1 (x-axis)- and volasertib (y-axis)-treated K562 cells. Orange points represent the known targets of the compounds.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Plot highlighting the significant changes in protein thermal stability following treatment with PF-3758309. The mean log2 fold change of duplicate measurements is plotted on the x-axis and the mean nSD is plotted on the y-axis. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature). The blue point represents the known target.
 
 In total, we quantified approximately 6,800 proteins per treatment for a total of 871,120 drug-protein thermal stability measurements (Figure 1B, Figure 1—figure supplement 3B, Supplementary file 3, and Figure 1—source data 2). Compared to the full dataset, annotated targets of the library compounds had significantly different solubility (thermal stability) compared to non-targets (Wilcoxon rank sum test, p=3.56 × 10–17). To define high-confidence thermal stability changes, we developed an empirically derived framework (see Methods; Figure 1—figure supplement 3C). Briefly, we determined the log2 fold change of each compound treatment in reference to the vehicle-treated control and then quantified the trimmed standard deviation of all solubility measurements for a given protein across all treatments. In order to be considered a hit, the log2 fold change needed to be 3.5 standard deviations from the mean and have an absolute value greater than or equal to 0.2 (|log2Cmpd/DMSO|>0.2, |nSD|>3.5; Figure 1—figure supplement 3C–G). The fold change filtering removed background proteins while the per protein standard deviation filtering removed proteins that were observed to engage in large numbers of non-specific interactions, such as the kinase GAK (Figure 1—source data 2). While, we believe this strategy is capable of identifying meaningful compound-dependent changes, there are examples of compound-target pairs that surpass the standard deviation cutoff, but not the log2 fold change cutoff and vice versa. This suggests that this filtering strategy might be overly conservative (Figure 1—figure supplement 3F–H). Nonetheless, from the 871,120 total protein solubility measurements, filtering the data resulted in 3156 putative hits (|log2Cmpd/DMSO|>0.2, |nSD|>3.5; Figure 1B), each of which point to a compound-dependent change in protein thermal stability.
 
@@ -54,13 +78,21 @@ Our screening library contained two dual PLK1/BRD4 inhibitors—volasertib and B
 
 Finally, we wanted to determine if the set of high-confidence solubility (thermal stability) alterations could provide insights related to compound mechanism of action. PF-3758309 is designated as a PAK4 inhibitor. Including PAK4, treatment with this inhibitor caused a total of 102 proteins to undergo a significant change in solubility (Figure 1D). Expectedly, this list included a number of protein kinases including MELK, TBK1, WEE1, and others (Figure 1—figure supplement 5A). Unexpectedly, there was also a significant enrichment of spliceosome subunits among these proteins (Figure 1—figure supplement 5A). These changes could stem from upstream inhibition of a kinase that regulates splicing and that the mechanism of action of this compound might, at least, in part, works through an alteration of this process. This result is consistent with a recent study that identified PF-3758309 as a potent modulator of pre-mRNA splicing (Shi et al., 2020). Overall, these data provide further evidence that PF-3758309 might be capable of impacting the assembly and/or activity of the spliceosome.
 
-## A protein-centric view of compound-dependent changes in thermal stability
+### A protein-centric view of compound-dependent changes in thermal stability
 
 Having established criteria for identifying significant compound-dependent changes in protein thermal stability, we focused on the known targets of the library compounds in order to identify key factors affecting the interpretation of our screening data. In total, we quantified at least one known target for 79 of the 96 compounds assayed in the primary screen (84%) and found that 56 (71%) of these compounds induced a change in the solubility (thermal stability) of an annotated target (Figure 2A). While compound treatment more commonly resulted in an increase in the solubility (thermal stabilization) of known targets, we also observed a number of examples in which inhibitor binding stimulated a decrease in solubility (thermal destabilization). A consistent increase in solubility was observed for proteins including BRD4, HDAC1, and AURKA. Conversely, compound engagement by PLK1 resulted in a consistent decrease in solubility (Figure 2A). Therefore, both positive and negative log2 fold changes represent evidence of target engagement and specific proteins are consistently impacted by inhibitor binding. This result is consistent with previous studies and serves to corroborate the quality of our screening data (Sabatier et al., 2022).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig2-v1.jpg)
+
+**Figure 2.:** (A) A plot of the mean log2 fold change (x-axis) and mean nSD (y-axis) of each known compound-target pair that were quantified in the screen. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature). (B and C) Plots depicting the mean log2 fold change of p38α (B) and PIK3CB (C) in response to each of the compound and DMSO treatments. Orange points indicate compounds known to target each protein. Blue points indicate other compounds that induce a significant change in thermal stability for each protein. Green dashed lines mark a SD of 3.5 for each protein. (D) A protein-centric view of PLK1 solubility (thermal stability) in response to all treatments. Log2 fold change is plotted on the y-axis. The points represent each of the 256 treatments that were performed. Orange points indicate compounds known to target PLK1. Blue points indicate other compounds that result in a significant decrease in solubility of PLK1. Green dashed lines mark a SD of 3.5 cutoff for PLK1. (E and F) K562 cells were treated with the indicated concentrations of palbociclib or BI 2536 for 15 minutes. Changes in protein thermal stability are represented as a log2 fold change in soluble protein abundance for each treatment in reference to a DMSO-treated control. (E) PLK1 activity was determined using a western blot for p-TCTP (S46) and total TCTP (F). (G) Chemical structures of BI 2536, palbociclib and NVP-TAE-226. Common structural features with BI 2536 are highlighted in blue for Palbociclib and NVP-TAE-226. (H) Co-crystal structure of CDK6 bound to palbociclib (blue) with BI 2536 (gray) modeled into the active site. (I) Co-crystal structure of PLK1 bound to BI 2536 (gray) with palbociclib (blue) modeled into the active site.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A-B) A protein-centric view of p38α (A) and PIK3CB (B) solubility (thermal stability) in response to all treatments. Log2 fold change is plotted on the y-axis. The points represent each of the 256 treatments that were performed. Orange points indicate compounds known to target each respective protein. Blue points indicate other compounds that result in a significant thermal stabilization. Green dashed lines mark a SD of 3.5 cutoff for each treatment. (C-D) K562 cells were treated with the indicated concentrations of NVP-TAE-226 or BI 2536 for 15 min. Changes in protein thermal stability are represented as a log2 fold change in soluble protein abundance for each treatment in reference to a DMSO-treated control (C). PLK1 activity was determined using a western blot for p-TCTP (S46) and total TCTP (D).
+
 Next, we characterized the magnitude of solubility (thermal stability) changes that we measured for known targets. Having treated cells with each compound at 10 µM (a concentration commonly used in similar studies; Savitski et al., 2014; Gaetani et al., 2019; Mitchell et al., 2023), we assumed that each target was fully saturated with a given compound. Therefore, the measurements likely reflect the maximal ligand-induced solubility (thermal stability) changes for each target. We observed a large range of solubility measurements for known compound-target pairs, from a four-fold reduction in protein solubility after thermal denaturation to a four-fold increase in protein solubility upon compound engagement (Figure 2A). We also observed many proteins with small (15%) but consistent solubility changes following compound treatment. p38α-targeting compounds ralimetinib and doramapimod caused a large apparent increase in p38α solubility (thermal stability; log2Cmpd/DMSO = 1.52 and 1.94, respectively), while compounds targeting PI3K (pictilisib, duvesilib, and IC-87114), on the other hand, caused smaller solubility (thermal stability) changes (log2Cmpd/DMSO = 0.258, 0.319, and 0.213, respectively; Figure 2B and C and Figure 2—figure supplement 1A and B). In all cases, each of these measurements surpassed the nSD cutoff of 3.5 for each particular target. Taken at face value, one might conclude that the greater log2 fold change in solubility that doramapimod exerts on p38α is more meaningful than the much smaller change that pictilisib exerts on PIK3CB, however, this is not necessarily true as both compounds can engage their targets at nanomolar concentrations. Instead, our data appears to be consistent with the previous observation that the maximum ligand-induced change in thermal stability is target-specific (Savitski et al., 2014; Becher et al., 2016). Therefore, a small log2 fold change for one protein (PIK3CB, log2Cmpd/DMSO ≥ 0.2), can be just as meaningful as a large log2 fold change for another (p38α, log2Cmpd/DMSO ≥ 2).
 
-## Using the cell-based screening data to identify off-target compound engagement
+### Using the cell-based screening data to identify off-target compound engagement
 
 Having defined a set of high-confidence solubility (thermal stability) changes for each compound, we next looked for potential examples of off-target engagement. In addition to volasertib and BI 2536 (PLK1/BRD inhibitors), several other compounds from the screen also impacted the solubility of PLK1 to a similar extent (Figure 2D). These included two promiscuous kinase inhibitors—OTS167 and PF-3758309. In addition to these compounds, two other ATP-competitive kinase inhibitors also impacted the solubility of PLK1—NVP-TAE-226, a FAK inhibitor and palbociclib, one of the CDK4/6 inhibitors used to establish our workflow. Because these two compounds induced a change in solubility to a similar magnitude as BI 2536 and volasertib, we hypothesized that these molecules might bind the active site and inhibit PLK1.
 
@@ -68,9 +100,21 @@ To further explore the impact of NVP-TAE-226 and palbociclib on PLK1 thermal sta
 
 The PISA data suggests that palbociclib was able to engage both CDK4/6 and PLK1, while BI 2536 was only able to engage PLK1 (Figure 2E). This is despite the fact that both compounds have a similar chemical structure (Figure 2G). In order to further interrogate this disparity, we modeled palbociclib and BI 2536 into co-crystal structures of PLK1 (PDB: 2rku) and CDK6 (PDB: 5l2i) with their ‘specific’ inhibitors (Figure 2H1; Chen et al., 2016; Kothe et al., 2007). When we overlaid BI 2536 in the active site of CDK6, we observed three points of steric clashing with the protein density of the CDK6 active site. These findings were consistent with the lack of CDK4/6 solubility changes in cells that were treated with BI 2536. From overlaid projections of palbociclib and BI 2536 in PLK1, we did not observe steric interference in binding suggesting that both of these inhibitors could readily bind to the active site of PLK1. These data are again consistent with our observed decrease in solubility of PLK1 in cells that were treated with either BI 2536 or palbociclib.
 
-## PISA screening in crude cell extracts
+### PISA screening in crude cell extracts
 
 Thus far we have focused exclusively on living cells, but PISA can also be used to screen for changes in cell lysates or crude extracts (Molina et al., 2013; Savitski et al., 2014; Franken et al., 2015; Becher et al., 2016; Sridharan et al., 2019b; Liang et al., 2022). Having already assembled one of the largest drug-based thermal denaturation studies in cells, we wanted to further profile a subset of these compounds in native extracts. We selected 70 compounds from the cell-based screen for further interrogation in native cell lysates. For this screen, we prepared crude extracts by dounce homogenizing K562 cells in PBS (Sridharan et al., 2019b). The crude extracts were treated with each of the 70 compounds in biological duplicate at 10 µM for 30 min and any changes in thermal stability were approximated using PISA. In total, the 70 compounds and DMSO controls generated a total of 160 samples, which were arrayed across 10 TMT 16-plex experiments and quantified using approximately 240 hr of instrument time (Figure 3A and Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of the lysate-based PISA workflow utilized in the large-scale chemical perturbation screen. (B) Histogram plotting the log2 fold change values for all solubility measurements in lysate-based screen. (C) Plots highlighting the significant changes in protein solubility (thermal stability) following treatment with MK-2206 (top) or GSK-LSD1 (bottom). The mean log2 fold change of duplicate measurements is plotted on the x-axis and the mean nSD is plotted on the y-axis. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature). Orange points represent the known target of each compound. (D) Plot depicting the total solubility changes quantified upon treatment with each compound. The number of stabilizing events (increase in solubility) is plotted on the x-axis and destabilizing events (decrease in solubility) are plotted on the y-axis. (E) Plot depicting the number of compounds for which a target was quantified in both cell- and lysate-based experiments (light gray), the number of compounds that caused a significant change in a known target in cell-based experiments (orange), the number of compounds that caused a significant change in a known target in lysate-based experiments (blue), and the number of compounds that caused a significant change in a known target in cell- or lysate-based experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Minimal instrument time required to assay 70 compounds and 10 DMSO controls in duplicate using TPP (left) or PISA (right). (B) Total number of proteins quantified in each plex in the lysate-based screen. (C) A plot of the mean log2 fold change (x-axis) and mean nSD (y-axis) of each known compound-target pair that were quantified in the lysate-based screen. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature). (D-G) Protein-centric view of HDAC1 (D), p38α (E), CDK2 (F), and CDK7 (G) solubility (thermal stability) in response to all treatments. Orange points indicate compounds known to target each respective protein. Blue points indicate other compounds that result in a significant thermal destabilization of each respective protein. Green dashed lines mark a SD of 3.5 cutoff for each compound.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) A venn diagram depicting the total number of compounds that cause a change in a known target in cell- and lysate-based PISA. (B, C) Log2 fold change measurements for the indicated drug-target pair (GSK429286A_ROCK1 [A] and AZ 628_BRAF [B]) in cell- and lysate-based PISA.
 
 We quantified an average of 7840 proteins per treatment (Figure 3B and Figure 3—figure supplement 1B), which resulted in a total of 627,176 solubility (thermal stability) measurements from all K562 lysate-based experiments (Figure 3B, Supplementary file 4, and Figure 1—source data 2). After applying the same filters used in the cell-based screen, our dataset consisted of 2176 protein solubility (thermal stability) changes (Figure 3B and Figure 3—figure supplement 1C). Similar to the cell-based studies, the known targets of library compounds frequently experienced a significant change in thermal stability (Figure 3—figure supplement 1C–G). For example, treatment of K562 lysates with MK-2206 and GSK-LSD1 increased the solubility (thermally stabilized) AKT1/2 and KDM1A, respectively (Figure 3C). In addition to AKT1/2, MK-2206 also increased the solubility of additional kinases, including subunits of RPS6K and PI3K, which highlights the ability of this approach to find putative examples of off-target engagement (Figure 3C). Finally, we observed a GSK-LSD1-dependent changes in the solubility of several KDM1 binding partners, which echoes the similar observation made in cell-based experiments (Figure 3C).
 
@@ -78,13 +122,21 @@ Since changes in thermal stability in lysate-based experiments stem almost exclu
 
 In order to directly compare the ability of each approach to identify an on-target hit, we focused on the 60 compounds for which a known target was quantified in both cell- and lysate-based experiments. Of these 60 compounds, both approaches identified a change in a known target of 43 compounds (~72%; Figure 3E). Importantly, these were not the same 43 compounds (Figure 3—figure supplement 2A). For example, an alisertib-dependent change in AURKA solubility occurred in cells, but not lysates, while an AZ 628-dependent change in BRAF solubility was observed in lysates, but not cells (Figure 3—figure supplement 2A and B). Consideration of each dataset in isolation results in an on-target hit rate of ~72%. Combing the datasets, on the other hand, results in an on-target hit rate of ~82% (49/60; Figure 3E and Figure 3—figure supplement 2A). Therefore, combining the two approaches increases the chances of finding the target of a compound of interest.
 
-## Cell- and lysate-based PISA are complimentary approaches to determine compound engagement
+### Cell- and lysate-based PISA are complimentary approaches to determine compound engagement
 
 Having re-screened dozens of compounds in lysate-based experiments, we wanted to assess the complementarity of these approaches. We focused on the known compound targets quantified in both cell- and lysate-based experiments and compared the solubility (thermal stability) changes measured using each approach (Figure 4A). Encouragingly, we observed compounds that impacted their known targets in both cell- and lysate-based approaches. These include GSK-1070916 and MK-2206, which increased the solubility of AURKA and AKT1, respectively, in both cell- and lysate-based experiments (Figure 4A and B). Conversely, we observed compounds that failed to impact the solubility of their target proteins in either the cell-based or lysate-based experiments (Figure 4A and Figure 4—figure supplement 1A). These include compounds such as IRAK4-Inhibitor-1 and entospletinib which are known to target IRAK4 and SYK kinase, respectively. We note that the magnitudes of the solubility changes varied between the cell- and lysate-based approaches. Yet, compounds that increased the solubility of their annotated protein targets in cells also tended to increase the solubility their targets in lysates with one notable exception. Sotrastaurin induces an increase in the solubility (thermal stabilization) of its target, PRKCA, in lysates (log2Cmpd/DMSO = 0.924), but a decrease in the solubility (thermal destabilization) in cells (log2Cmpd/DMSO = -0.502; Figure 4A and B). These data suggest that the decrease in solubility observed in cell-based experiments might stem from a complex biophysical rearrangement.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig4-v1.jpg)
+
+**Figure 4.:** (A) A plot depicting the mean log2 fold change for all compound-target pairs quantified in cell- (x-axis) and lysate-based (y-axis) PISA. Dashed lines indicate a log2 fold change of +/-0.2. (B) The log2 fold change of a selected number of compound-target pair in cell- and lysate-based PISA. (C-E) Plots depicting the log2 fold change values for BRD4 (C), BRAF (D), and RIPK1 (E) in response to treatment with all compounds assayed using cell- and lysate-based PISA. Dashed lines indicate a log2 fold change of +/-0.2. (F) HCT116 cell lysates (N=3) were treated with each compound or DMSO for 15 min and assay using PISA. The plot indicates the log2 fold change of several proteins in response to treatment with each compound. (G) HCT116 cells were treated with the indicated concentration of each compound for 1 hr following the initiation of necroptosis using TSZ treatment. RIPK1 autophosphorylation was assayed by western blot using antibodies targeting p-RIPK1 (S116) or total RIPK1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Changes in protein solubility (thermal stability) for the indicated proteins in cell- and lysate-based PISA are represented as a log2 fold change in protein abundance for each treatment in reference to a DMSO-treated control. Dashed lines indicate a log2 fold change of +/-0.2. (B) A protein-centric view of RIPK1 solubility (thermal stability) in response to all treatments. Log2 fold change is plotted on the y-axis. The points represent each of the 256 treatments that were performed. Blue points highlight compounds that result in a significant increase in solubility (thermal stabilization). Green dashed lines mark a SD of 3.5 cutoff for RIPK1. C-F. HCT116 lysates were treated with necrostatin-2 (C), GSK2606414 (D), AZD-5438 (E), or tozasertib (F) (N=3) or DMSO (N=4) for 15 min and any changes in thermal stability were determined using PISA. Data is presented as a volcano plot to highlight significant changes in abundance. Significant changes were determined using a permutation-based FDR (FDR – 0.05, S0 – 0.1).
+
 While many compounds significantly altered their known targets using both approaches, there were some compounds that preferentially altered the solubility (thermal stability) of known targets in one experimental setting but not the other (Figure 4A). For example, there were four compounds known to target BRD4 (JQ-1, CPI-203, BI 2536, and volasertib) that were assayed in both cell- and lysate-based experiments. Treatment of cells with any of these four inhibitors resulted in a log2Cmpd/DMSO ~ 2, while the lysate-based assays resulted in smaller changes (Figure 4C and Figure 4—figure supplement 1A). Conversely, multiple inhibitors caused a significant change in BRAF solubility in lysates (AZ 628, PLX-4720, L-779450) but did not impact BRAF in cell-based assays (Figure 4D and Figure 4—figure supplement 1A). Thus, certain protein targets were more prone to solubility (thermal stability) changes in one experimental setting compared to the other (Huber et al., 2015).
 
-## Combining cell- and lysate-based data to discover off-target engagement
+### Combining cell- and lysate-based data to discover off-target engagement
 
 Having demonstrated the complementarity of the cell- and lysate-based approaches, we sought to explore the corroborative value of integrating these data. We reasoned that any unexpected ligand-induced changes in solubility (thermal stability) that were shared between the two approaches would provide strong evidence of compound engagement. Despite an absence in the library of compounds designated as RIPK1 kinase inhibitors, there were four compounds that significantly increased the solubility of RIPK1 in cells and lysates (Figure 4E and Figure 4—figure supplement 1B). Although three of the compounds—GSK-2656167, GSK-2606414, and tozasertib—had previously been shown to be off-target inhibitors of RIPK1, AZD-5438, a cyclin-dependent kinase (CDK) inhibitor, had never been attributed such activity (Byth et al., 2009; Martens et al., 2018; Rojas-Rivera et al., 2017). Nonetheless, this compound was capable of increasing RIPK1 solubility to a similar extent as the other three known RIPK1 off-target inhibitors (Figure 4E and Figure 4—figure supplement 1B).
 
@@ -92,13 +144,33 @@ In order to gain a sense of the potency of AZD-5438 (and the other molecules), w
 
 In addition to compound potency, the combined cell and lysate data provided valuable information regarding compound specificity. While it is difficult to separate necrostatin-2 and GSK-2606414 based on potency, necrostatin-2 had a greater apparent specificity with respect to RIPK1 engagement. Indeed, necrostatin-2 only impacted the solubility of RIPK1 in the lysate-based experiments (Figure 4—figure supplement 1C). GSK-2606414, on the other hand, engaged other kinases including CSK, LIMK1, and TBK1 (Figure 4—figure supplement 1D). Finally, AZD-5438 and tozasertib were less potent and less specific for RIPK1 than necrostatin-2 (Figure 4—figure supplement 1E and F).
 
-## Disparities in cell- and lysate-based data pinpoint secondary changes in protein thermal stability
+### Disparities in cell- and lysate-based data pinpoint secondary changes in protein thermal stability
 
 In comparison to lysate-based approaches, cell-based experiments have added potential to identify secondary changes in protein thermal stability that occur independent of direct ligand binding (Savitski et al., 2014; Almqvist et al., 2016; Becher et al., 2016; Sridharan et al., 2019b; Liang et al., 2022; Becher et al., 2018; Dai et al., 2018). These changes could occur as a result of changes in interactions with other proteins, ligands, nucleic acids, or the effects of PTMs. Importantly, all these factors can help to define compound mechanism of action. This type of change was previously highlighted in the context of the CDK4/6 inhibitors. Indeed, treatment of cells with CDK4/6 inhibitors induced a decrease in the solubility (thermal destabilization) of RB1, which we attributed to a change in phosphorylation due to upstream target inhibition (Figure 1—figure supplement 1C). Other CDK inhibitors (AZD-5438 and flavopiridol) also had a similar effect on RB1. In lysates, on the other hand, when cellular signaling networks are disrupted, RB1 was unaffected by these compounds (Figure 5A). This concept is also apparent when comparing the PF-3758309-dependent PISA profiles in each experimental setting (Figure 5—figure supplement 1A). Indeed, there is a striking difference in the number of significant changes in cells (102) vs. lysates (21). This disparity is driven by splicesome subunits, which are significantly impacted in cell-based experiments but unaffected in lysates. This supports the interpretation that the apparent thermal destabilization of the spliceosome in cells is the result of secondary changes rather than direct ligand binding.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig5-v1.jpg)
+
+**Figure 5.:** (A and B) Plots depicting the mean log2 fold change values for RB1 (A) and CRKL (B) in response to treatment with all compounds assayed using cell (x)- and lysate (y)-based PISA. Dashed lines indicate a log2 fold change of +/-0.2. C. K562 cells were treated with each indicated compound at 10 µM for 15 min. Western blots were used to assess levels of p-CRKL (Y207) and total CRKL. D. A plot of the log2 fold change of CRKL in response to each indicated compound. (E) Plots highlighting the significant changes in protein solubility (thermal stability) following treatment with AZD-7762. The mean log2 fold change of duplicate measurements is plotted on the x-axis and the mean nSD is plotted on the y-axis. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature). Orange points represent the known target of AZD-7762 and the blue points represents tyrosine kinases that experience a significant change in soluble protein abundance (thermal stability). (F) K562 lysates were treated with the indicated concentrations of AZD-7762 for 15 min and assayed using PISA. Changes in protein thermal stability are represented as a log2 fold change in soluble protein abundance for each treatment in reference to a DMSO-treated control. (G) K562 cells were treated with the indicated concentration of bafetinib or AZD-7762 for 15 min and assayed using phosphoproteomic profiling. Plots depict the relative abundance of several phosphorylation sites following treatment with the indicated compounds. * indicate significant changes, which were determined using a permutation-based FDR (FDR – 0.05, S0 – 0.1, N=4). Error bars represent the stabdard deviation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Plot highlighting the significant changes in protein solubility (thermal stability) following treatment with PF-3758309 in cells (no fill) and lysates (black points). The mean log2 fold change of duplicate measurements is plotted on the x-axis and the mean nSD is plotted on the y-axis. Blue boxes contain proteins that exhibit an increase in solubility (increase in melting temperature) and orange boxes contain proteins that exhibit a decrease in solubility (decrease in melting temperature).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A and B) A protein-centric view of CRKL solubility (thermal stability) in K562 cells (A) and lysates (B) in response to all treatments. Log2 fold change is plotted on the y-axis. The points represent each treatment that was performed in each screen. Green dashed lines mark a SD of 3.5 cutoff for each treatment. (C) Plots depicting the log2 fold change values for CRK in response to treatment with all compounds assayed using cell- and lysate-based PISA. (D) Changes in protein solubility (thermal stability) for the indicated proteins in cell- and lysate-based PISA are represented as a log2 fold change in soluble protein abundance for each treatment in reference to a DMSO-treated control.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A-C) K562 lysates were treated with the indicated concentrations of AZD-7762 for 15 min and assayed using PISA. Changes in protein thermal stability are represented as a log2 fold change in protein soluble abundance for each treatment in reference to a DMSO-treated control. Significant changes were determined using a permutation-based FDR (FDR – 0.05, S0 – 0.1).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A-F) K562 cells were treated with the indicated concentration of bafetinib or AZD-7762 for 15 min and assayed using phosphoproteomic profiling. (A-D) Data is displayed as a volcano plot. Significant changes were determined using a permutation-based FDR (FDR – 0.05, S0 – 0.1). (E) PCA plot of phosphoproteomic data. (F) Total number of significant changes that result from each treatment (left) or significant changes with a log2 fold change >1 or < –1 (right).
+
 Exploiting the disparities between cell- and lysate-based data can be a powerful tool in determining compound mechanism of action in the absence of reliable evidence of target engagement. These studies were performed in K562 cells/lysates, a chronic myelogenous leukemia cell line that expresses the BCR-ABL fusion. Consistent with previous reports, treatment of K562 cells with BCR-ABL-targeted compounds did not induce any apparent change in the solubility (thermal stability) of their primary target (Savitski et al., 2014). We were, however, able to detect a change in solubility (thermal stability) for well-known BCR-ABL substrates—most notably CRKL and CRK (Figure 5B and Figure 5—figure supplement 2A–D). Importantly, the change in CRKL solubility only occurred in cell-based experiments and not in lysates (Figure 5—figure supplement 2A and B; Savitski et al., 2014). These data are consistent with a distal effector of thermal stability. A number of other compounds that largely target tyrosine kinases also caused a significant decrease in the solubility (thermal destabilization) of CRKL in K562 cells but not lysates (Figure 5B). We treated K562 cells with a small panel of these inhibitors and found that compounds that induce a decrease in the solubility of CRKL also inhibit phosphorylation at Y207 (Figure 5C). Therefore, the change in CRKL solubility correlates with a change in phosphorylation and is likely dependent on the inhibition of a primary compound target—such as BCR-ABL—that then inhibits CRKL phosphorylation. These data highlight that protein thermal stability measurements can reveal critical insights into primary and secondary effectors of compound mechanism of action, including kinase-substrate relationships (Franken et al., 2015).
 
-## Using secondary changes to identify putative off-target effects
+### Using secondary changes to identify putative off-target effects
 
 Previously, we demonstrated that the combined cell and lysate data could identify off-target inhibition through direct target engagement. Next, we wanted to determine if secondary effects could be used to determine putative off-target engagement in our screening data. In addition to tyrosine kinase inhibitors, we also observed a strong decrease in the solubility (thermal destabilization) of CRKL in response to treatment with the CHEK1 inhibitor AZD-7762 (Figure 5B and C and Figure 5—figure supplement 2A). Importantly, our screen contained two additional inhibitors known to engage CHEK1 (CCT241533 and BML-227), neither of which had any impact on CRKL solubility (Figure 5D). Therefore, the AZD-7762-dependent decrease in CRKL solubility is unlikely to be related to on-target inhibition of CHEK1 and, instead, likely stems from off-target engagement of other kinases. Consistent with our hypothesis, the lysate-based screening data revealed that AZD-7762 induced a change in the solubility of many tyrosine kinases including FER, LYN, CSK, and YES1 (Figure 5E and F). These putative interactors were not limited to tyrosine kinases but also included dozens of serine/threonine kinases.
 
@@ -106,9 +178,17 @@ In order to further corroborate the ability of AZD-7762 to engage and inhibit ty
 
 Previously, we showed that treatment of K562 cells with AZD-7762 prevented the phosphorylation of CRKL Y207 (Figure 5C). In order to further implicate the ability of AZD-7762 to inhibit tyrosine kinases in vivo, we treated K562 cells with 1 µM or 10 µM of AZD-772 or bafetinib (a known tyrosine kinase inhibitor employed in the primary screen) and performed phosphoproteomic profiling to quantify compound-dependent changes in phosphopeptide abundance (Figure 5—figure supplement 4A–D and Figure 5—source data 4 and 5). In addition to CRKL Y207, both bafetinib and AZD-7762 also caused a significant decrease in the abundance of other pY residues including SHIP2 Y1135 and Y1162 and SHC1 Y428 (Figure 5G). In addition to these specific pY sites, we also noticed that AZD-7762 caused considerably more total changes than bafetinib, which is consistent with AZD-7762 PISA profile and suggests that this compound is a highly promiscuous kinase inhibitor (Figure 5—figure supplement 4A–F).
 
-## Library-scale assays connect consistent thermal stability changes
+### Library-scale assays connect consistent thermal stability changes
 
 Binary comparisons of compounds with shared targets such as volasertib and BI 2536 (Figure 1E) revealed consistent thermal stability responses for known targets PLK1 and bromodomain proteins. Next, we set out to determine if small but consistent effects on the proteome due to drug treatment could reveal new information concerning compound engagement of proteins, protein classes, or protein complexes. To address this, we implemented a network-based approach using the correlation of solubility changes for each protein. To this end, we mapped the all-by-all correlation of proteins in the cell-based dataset. We filtered the 70,392,100 binary comparisons to include only the correlations in the top ~5% of absolute magnitude (rspearman >0.35). Because 70 of the 96 compounds used were kinase inhibitors, we further focused on correlated solubility changes within the 396 human kinases we quantified in our dataset (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig6-v1.jpg)
+
+**Figure 6.:** (A) Correlation network graph for all observed kinases in the cell-based PISA assays. Human kinases (nodes) are connected based on correlation coefficients (RSpearman >0.35). Nodes are colored based on kinase families. (B) Example of significant correlation between RPS6KA1, RPS6KA2, and RPS6KA3 with consistent but sometimes small changes in solubility (thermal stability). (C) Sub-graph of the network in A showing CMGC-family p38α/MAPK14 (isoforms 1 and 2) correlation with CAMK-family member kinases MAPKAPK2 and MAPKAPK3. Edges are colored based on RSpearman. (D) Correlation plots for the subnetwork proteins in C. (E) Protein interaction network derived from the BioPlex interactome highlighting that MAPKAPK proteins directly interact with p38α/MAPK14 in multiple cell lines. (F) Sub-graph of the network in A highlighting the AGC protein kinases. Edges are colored based on RSpearman. (G) AGC kinases AKT1 and AKT2 have a significant correlation driven in part by thermal stability effects of MK-2206. (H) Structural comparison of the CMGC kinases GSK3A (Alphafold) and CDK16 complexed with the TKI rebastinib (PDB: 5g6v). Alignment generated an RMSD of 0.89 Å. (I) Plot of the significant correlation between CDK16 and GSK3A derived from the network in A.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95595/elife-95595-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Subgraph from Figure 6A highlighting the correlation between PRKC kinases. Edges are colored based on RSpearman. (B) Correlation of PRKCB and either PRKCA or PRKCQ. These correlations are driven by consistent but relatively small changes in thermal stability. (C) Non-protein kinases of the correlation network graph. Library compounds did not specifically target any non-protein kinases, although these compounds elicited consistent solubility (thermal stability) changes in these kinases. Comparison of compound engagement for PIP4K2 non-protein kinases (D) PIP4K2A and PIP4K2B as well as (E) PIP4K2B and PIP4K2C. Compound engagement generates statistically significant correlations in both cells and lysates, with a larger solubility (thermal stability) effect size in cell-based assays. (F-G) Significant correlation with small solubility (thermal stability) fold changes for the non-protein kinases SRPK1, SRPK2, and RIOK2.
 
 We first sought to determine if the network-based approach could reveal consistent thermal stability responses for kinases with conserved sequences or general kinase families (Eid et al., 2017). Strikingly, for the highly conserved 90 kDa ribosomal S6 kinases, we observed highly correlated solubility profiles for the three members, RPS6KA1, RPS6KA2, and RPS6KA3 (Figure 6B). We reasoned that this may be a function of the sequence conservation between these proteins or direct binding interactions (Huttlin et al., 2021; Huttlin et al., 2017). To this end we compared the cell and lysate data. In cells, RPS6KA1, RPS6KA2, and RPS6KA3 generally experienced a decrease in solubility following compound treatment. However, in lysates, these proteins generally experienced an increase in solubility, even by the same compound that decreased the solubility of proteins in cells, such as NVP-TAE-226. These data were in line with what we observed for sotrastaurin engagement of PRKCA (Figure 4B). Interestingly, within our thermal stability network, we observed that PRKCA solubility changes were significantly correlated with PRKCB and PRKCQ (Figure 6—figure supplement 1A and B).
 
@@ -136,62 +216,947 @@ In the end, this study highlights the immense power of thermal stability assays 
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CRKL (rabbit monoclonal antibody)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>38710</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-CRKL Y207 (rabbit monoclonal antibody)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>3490</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RIPK1 (rabbit monoclonal antibody)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>3493</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-RIPK1 S166 (rabbit monoclonal antibody)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>65746</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCTP (rabbit monoclonal antibody)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>5128</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-TCTP (rabbit monoclonal antibody)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>5251</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG-HRP secondary antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2004</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>CLL-243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCT116</td>
+      <td>ATCC</td>
+      <td>CLL-247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AZD1152</td>
+      <td>MedChemExpress</td>
+      <td>HY-10127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Rosiglitazone</td>
+      <td>MedChemExpress</td>
+      <td>HY-17386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Bafetinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AS-605240</td>
+      <td>MedChemExpress</td>
+      <td>HY-10109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>MP7</td>
+      <td>MedChemExpress</td>
+      <td>HY-14440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ibrutinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10997</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Gefitinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AZD-5438</td>
+      <td>MedChemExpress</td>
+      <td>HY-10012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nilotinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK429286A</td>
+      <td>MedChemExpress</td>
+      <td>HY-11000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PF-3758309</td>
+      <td>MedChemExpress</td>
+      <td>HY-13007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK126</td>
+      <td>MedChemExpress</td>
+      <td>HY-13470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>OSI-027</td>
+      <td>MedChemExpress</td>
+      <td>HY-10423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Mubritinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-13501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alisertib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10971</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>MK-2206 (dihydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-10358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Silmitasertib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK343</td>
+      <td>MedChemExpress</td>
+      <td>HY-13500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>NVP-TAE 226</td>
+      <td>MedChemExpress</td>
+      <td>HY-13203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BS-181</td>
+      <td>MedChemExpress</td>
+      <td>HY-13266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Erlotinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BML-277</td>
+      <td>MedChemExpress</td>
+      <td>HY-13946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BMS-911543</td>
+      <td>MedChemExpress</td>
+      <td>HY-15270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Givinostat</td>
+      <td>Cayman</td>
+      <td>11045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>LY2090314</td>
+      <td>MedChemExpress</td>
+      <td>HY-16294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SD-208</td>
+      <td>MedChemExpress</td>
+      <td>HY-13227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AZ20</td>
+      <td>MedChemExpress</td>
+      <td>HY-15557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Epoxomicin</td>
+      <td>MedChemExpress</td>
+      <td>HY-13821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nexturastat A</td>
+      <td>MedChemExpress</td>
+      <td>HY-16699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TAK-285</td>
+      <td>MedChemExpress</td>
+      <td>HY-15196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Sotrastaurin</td>
+      <td>MedChemExpress</td>
+      <td>HY-10343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AZ 628</td>
+      <td>MedChemExpress</td>
+      <td>HY-11004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>VE-821</td>
+      <td>MedChemExpress</td>
+      <td>HY-14731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Entinostat</td>
+      <td>MedChemExpress</td>
+      <td>HY-12163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Filanesib</td>
+      <td>MedChemExpress</td>
+      <td>HY-15187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AZD-7762</td>
+      <td>MedChemExpress</td>
+      <td>HY-10992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Crizotinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PCI-34051</td>
+      <td>MedChemExpress</td>
+      <td>HY-15224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Pinometostat</td>
+      <td>MedChemExpress</td>
+      <td>HY-15593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SB 525334</td>
+      <td>MedChemExpress</td>
+      <td>HY-12043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>IRAK-1–4 Inhibitor I</td>
+      <td>MedChemExpress</td>
+      <td>HY-13329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Doramapimod</td>
+      <td>MedChemExpress</td>
+      <td>HY-10320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>JNJ-38877605</td>
+      <td>MedChemExpress</td>
+      <td>HY-50683</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ZM 336372</td>
+      <td>MedChemExpress</td>
+      <td>HY-13343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ispinesib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50759</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>MG-132</td>
+      <td>MedChemExpress</td>
+      <td>HY-13259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-779450</td>
+      <td>MedChemExpress</td>
+      <td>HY-12787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ralimetinib</td>
+      <td>Cayman</td>
+      <td>23259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Pictilisib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK2656157</td>
+      <td>MedChemExpress</td>
+      <td>HY-13820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK-1070916</td>
+      <td>MedChemExpress</td>
+      <td>HY-70044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SGI-1776</td>
+      <td>MedChemExpress</td>
+      <td>HY-13287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Gandotinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-13034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Vorinostat</td>
+      <td>MedChemExpress</td>
+      <td>HY-10221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK2606414</td>
+      <td>MedChemExpress</td>
+      <td>HY-18072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Y-33075 (dihydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-10069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CPI-203</td>
+      <td>MedChemExpress</td>
+      <td>HY-15846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Zotarolimus</td>
+      <td>MedChemExpress</td>
+      <td>HY-12424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK-LSD1 (dihydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-100546A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Flavopiridol</td>
+      <td>MedChemExpress</td>
+      <td>HY-10005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Duvelisib</td>
+      <td>MedChemExpress</td>
+      <td>HY-17044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TEPP-46</td>
+      <td>MedChemExpress</td>
+      <td>HY-18657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Saracatinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Dasatinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GW 501516</td>
+      <td>MedChemExpress</td>
+      <td>HY-10838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK2334470</td>
+      <td>MedChemExpress</td>
+      <td>HY-14981</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CCT128930</td>
+      <td>MedChemExpress</td>
+      <td>HY-13260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tozasertib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BX-912</td>
+      <td>MedChemExpress</td>
+      <td>HY-11005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>(+)-JQ-1</td>
+      <td>MedChemExpress</td>
+      <td>HY-13030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tubastatin A</td>
+      <td>MedChemExpress</td>
+      <td>HY-13271A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ER-27319 maleate</td>
+      <td>Tocris</td>
+      <td>2471</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BI 2536</td>
+      <td>MedChemExpress</td>
+      <td>HY-50698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CC-401 (hydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-13022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Encorafenib</td>
+      <td>MedChemExpress</td>
+      <td>HY-15605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Entospletinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-15968</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Rucaparib (Camsylate)</td>
+      <td>MedChemExpress</td>
+      <td>HY-102003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Citarinostat</td>
+      <td>Cayman</td>
+      <td>26173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>IC-87114</td>
+      <td>MedChemExpress</td>
+      <td>HY-10110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Vemurafenib</td>
+      <td>MedChemExpress</td>
+      <td>HY-12057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>OSU-03012</td>
+      <td>MedChemExpress</td>
+      <td>HY-10547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Defactinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-12289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PJ34 (hydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-13688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>FTI-277 (hydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-15872A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Idasanutlin</td>
+      <td>MedChemExpress</td>
+      <td>HY-15676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SP600125</td>
+      <td>MedChemExpress</td>
+      <td>HY-12041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PRT062607 (Hydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-15323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ro-3306</td>
+      <td>MedChemExpress</td>
+      <td>HY-12529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>OTSSP167 (hydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-15512A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SP2509</td>
+      <td>MedChemExpress</td>
+      <td>HY-12635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Lapatinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-50898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PLX-4720</td>
+      <td>MedChemExpress</td>
+      <td>HY-51424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CCT241533 (hydrochloride)</td>
+      <td>MedChemExpress</td>
+      <td>HY-14715B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Volasertib</td>
+      <td>MedChemExpress</td>
+      <td>HY-12137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tipifarnib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>A205804</td>
+      <td>Cayman</td>
+      <td>21252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Quisinostat</td>
+      <td>MedChemExpress</td>
+      <td>HY-15433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Palbociclib</td>
+      <td>Cayman</td>
+      <td>12673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Abemaciclib</td>
+      <td>Cayman</td>
+      <td>21560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ribociclib</td>
+      <td>Cayman</td>
+      <td>17666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BI 2536</td>
+      <td>Cayman</td>
+      <td>17385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>NVP-TAE 226</td>
+      <td>Cayman</td>
+      <td>17684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Necrostatin-2</td>
+      <td>Cayman</td>
+      <td>11657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GSK2606414</td>
+      <td>Cayman</td>
+      <td>17367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AZD-5438</td>
+      <td>Cayman</td>
+      <td>21598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tozaserib</td>
+      <td>SYNKinase</td>
+      <td>SYN-1092-M001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Bafetinib</td>
+      <td>Cayman</td>
+      <td>19169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AZD7762</td>
+      <td>Cayman</td>
+      <td>11491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nocodazole</td>
+      <td>Cayman</td>
+      <td>13857</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Z-VAD(Ome)-FMK</td>
+      <td>Cayman</td>
+      <td>14463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Birinapant</td>
+      <td>Cayman</td>
+      <td>19699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Human recombinant TNF-ɑ</td>
+      <td>Cayman</td>
+      <td>32020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>10.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Perseus</td>
+      <td>maxquant.net/perseus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 K562 cells were cultured in RPMI-1640 medium supplemented with 10% fetal bovine serum. For cell-based PISA experiments, cells were grown to approximately 1x106 cells/mL and immediately used for the assay. For lysate-based experiments, cells were grown to approximately 1x106 cells/mL, washed with phosphate-buffered saline, and flash frozen in liquid nitrogen. Cell pellets were stored at –80 °C until ready for use.
 
 HCT116 cell were cultured in Dulbecco’s Modified Eagle’s Medium supplemented with 10% fetal bovine serum and 1 X penicillin-streptomycin. Cells were grown until ~80% confluency, harvested by scraping, washed with phosphate-buffered saline, and flash frozen in liquid nitrogen. Cell pellets were stored at –80 °C until ready for use.
 
-## SDS-PAGE and western blotting
+### SDS-PAGE and western blotting
 
 K562 and HCT116 cell lysates were combined with Laemmli buffer and resolved on Novex WedgeWell 4–20% Tris-Glycine gels (Invitrogen). Gels were transferred to an Immuno-Blot PVDF membrane (Bio-Rad). Membranes were immunoblotted with antibodies against CRKL (Cell Signaling Technologies (CST), 38710), p-CRKL Y207 (CST, 3490), RIPK1 (CST, 3493), p-RIPK1 S116 (CST, 65746), TCTP (CST, 5128), and p-TCTP S46 (CST, 5251). Following primary antibody, membranes were incubated in goat anti-rabbit IgG-HRP secondary antibody (Santa Cruz Biotechnology, sc-2004).
 
-## Cell cycle synchronization
+### Cell cycle synchronization
 
 HCT116 cells were grown to approximately 50% confluency. The media was removed and replaced with media containing 100 ng/mL nocodazole (Cayman, 13857). The cells were allowed to incubate for 20 hr. After 20 hor, each compound was added at the desired concentration. The cells were allowed to further incubate for 1 hr. After 1 hr, the cells were washed three times with PBS and lysed in RIPA buffer. 20 µg of each lysate was separated by SDS-PAGE and analyzed with immunoblot.
 
-## Initiation of necroptosis
+### Initiation of necroptosis
 
 HCT116 cells were grown to approximately 50% confluency. The media was removed and replaced with media containing 20 μM Z-VAD(Ome)-FMK (Cayman, 14463), 100 nM Birinapant (Cayman, 19699), and 10 ng/mL soluble recombinant human TNF-α (Cayman, 32020) (Laurien et al., 2020). Cells were incubated for 6 hr in the presence of various inhibitors or vehicle (DMSO). In the end, cells were washed three times with PBS and lysed in RIPA buffer. 20 µg of each lysate was separated by SDS-PAGE and analyzed with immunoblot.
 
-## Cell-based PISA
+### Cell-based PISA
 
 K562 cells were grown to a concentration of 1x106 cells/mL. The cells were pelleted and resuspended on a 1:1 mixture of conditioned media and fresh media for a final concentration of 6x106 cells/mL. Each compound was added to fresh media at a 3 X concentration (30 μM). In order to initiate the experiment, 500 μL of cell suspension was mixed with 1 mL of 3 X treatment media and plated in a 24-well untreated tissue culture plate to achieve a final cell concentration of 2x106 cells/mL and a compound concentration of 10 μM. The cells were allowed to incubate for 30 min. After incubation, an equal volume of each culture was transferred to 10 PCR tubes. The PCR tubes were heated across a thermal gradient ranging from 48°C to 58°C (or 37–62°C) for 3 min to induce thermal denaturation. The samples were allowed to cool to room temperature and then an equal volume from each PCR tube was pooled. The cells in each pooled sample were washed once with PBS and then an equal volume of extraction buffer (1 X PBS pH 7.4, 0.5% NP-40, protease inhibitors) was added to added to each pellet. Samples were incubated for 10 min at 4 °C on a roller. Extracted samples were spun at 21,000x g for 90 min to separate insoluble aggregates from soluble protein. An equal volume from each soluble fraction was collected and prepared for LC-MS/MS analysis.
 
-## Crude extract PISA (ysate-based PISA)
+### Crude extract PISA (ysate-based PISA)
 
 Frozen K562 or HCT116 pellets were thawed on ice and resuspended in lysis buffer (1 X PBS pH 7.4, 1 mM MgCl2, protease inhibitor). The proteomes were extracted using a dounce homogenizer (20 strokes). The extracts were spun at 300 x g for 3 min to remove any unbroken cells. The resulting crude extract was diluted to 2 mg/mL in lysis buffer. Each compound was added to lysis buffer at a 2 X concentration (usually 20 μM). In order to initiate the experiment, an equal volume of crude extract and treatment buffer were combined, to achieve a final protein concentration of 1 mg/mL and compound concentration of 10 μM, and incubated for 30 min. After incubation, an equal volume of each sample was transferred to 10 PCR tubes. The PCR tubes were heated across a thermal gradient ranging from 48°C to 58°C for 3 min to induce thermal denaturation. An equal volume from each PCR tube was pooled. An equal volume of extraction buffer (1 X PBS pH 7.4, 1% NP-40, protease inhibitors) was added to added to each pooled sample to achieve a final NP-40 concentration of 0.5%. Samples were incubated for 10 min at 4 °C on a roller. Extracted samples were spun at 21,000 x g for 90 min to separate insoluble aggregates from soluble protein. An equal volume from each soluble fraction was collected and prepared for LC-MS/MS analysis.
 
-## LC-MS sample preparation
+### LC-MS sample preparation
 
 Samples (20 µg protein) were diluted in prep buffer (400 mM EPPS pH 8.5, 1% SDS, 10 mM tris(2-carboxyethyl)phosphine hydrochloride) and incubated at room temperature for 10 min. Iodoacetimide was added to a final concentration of 10 mM to each sample and incubated for 25 min in the dark. Finally, DTT was added to each sample to a final concentration of 10 mM. A buffer exchange was carried out using a modified SP3 protocol (Hughes et al., 2019; Hughes et al., 2014). Briefly, ~250 µg of Cytiva SpeedBead Magnetic Carboxylate Modified Particles (65152105050250 and 4515210505250), mixed at a 1:1 ratio, were added to each sample. 100% ethanol was added to each sample to achieve a final ethanol concentration of at least 50%. Samples were incubated with gentle shaking for 15 min. Samples were washed three times with 80% ethanol. Protein was eluted from SP3 beads using 200 mM EPPS pH 8.5 containing trypsin (Thermo Fisher Scientific, 90305R20) and Lys-C (Wako, 129–02541). Samples were digested overnight at 37 °C with vigorous shaking. Acetonitrile was added to each sample to achieve a final concentration of ~33%. Each sample was labelled, in the presence of SP3 beads, with ~60 µg of TMTPro 16plex reagents (Thermo Fisher Scientific). Following confirmation of satisfactory labelling (>97%), excess TMT was quenched by addition of hydroxylamine to a final concentration of 0.3%. The full volume from each sample was pooled and acetonitrile was removed by vacuum centrifugation for 1 hr. The pooled sample was acidified using formic acid and peptides were de-salted using a Sep-Pak 50 mg tC18 cartridge (Waters). Peptides were eluted in 70% acetonitrile, 1% formic acid and dried by vacuum centrifugation. The peptides were resuspended in 10 mM ammonium bicarbonate pH 8, 5% acetonitrile and fractionated by basic pH reverse phase HPLC. In total 24 fractions were collected. The fractions were dried in a vacuum centrifuge, resuspended in 5% acetonitrile, 1% formic acid and desalted by stage-tip. Finally, peptides were eluted in, 70% acetonitrile, 1% formic acid, dried, resuspended in 5% actetonitrile, 5% formic acid, and analyzed by LC-MS/MS.
 
 For analysis of phosphopeptides, samples (100 µg protein) were prepared and digested as described above. Following digestion, acetonitrile was added to each sample to achieve a final concentration of ~33%. Each sample was labelled, in the presence of SP3 beads, with ~300 µg of TMTPro 16plex reagents (Thermo Fisher Scientific). Following confirmation of satisfactory labelling (>97%), excess TMT was quenched by addition of hydroxylamine to a final concentration of 0.3%. The full volume from each sample was pooled and acetonitrile was removed by vacuum centrifugation for 1 hr. The pooled sample was acidified using trifluoroacetic acid (TFA) and peptides were de-salted using a Sep-Pak 200 mg tC18 cartridge (Waters). Peptides were eluted in 70% acetonitrile, 1% formic acid and dried by vacuum centrifugation. Phosphopeptides were enriched using a High Select Phosphopeptide Enrichment Kit (Thermo Fisher Scientific, A32992). Following elution, phosphopeptides were acidified with formic acid and dried by vacuum centrifugation. The flow through from the phosphopeptide enrichment columns, which was retained for total proteome analysis, was fractionated as described previously. The dried phosphopeptides were solubilized in 5% acetonitrile, 0.1% TFA, desalted by stage-tip, and analyzed by LC-MS/MS.
 
-## Offline basic reversed phase fractionation
+### Offline basic reversed phase fractionation
 
 TMT labeled peptides were solubilized in 5% acetonitrile/10 mM ammonium bicarbonate, pH 8.0 and ~300 µg of TMT labeled peptides were separated by an Agilent 300 Extend C18 column (3.5 μm particles, 4.6 mm ID and 250 mm in length). An Agilent 1260 binary pump coupled with a photodiode array (PDA) detector (Thermo Fisher Scientific) was used to separate the peptides. A 45-min linear gradient from 10% to 40% acetonitrile in 10 mM ammonium bicarbonate pH 8.0 (flow rate of 0.25 mL/min) separated the peptide mixtures into a total of 96 fractions (36 s). A total of 96 Fractions were consolidated into 24 samples in a checkerboard fashion and vacuum dried to completion.
 
-## Mass spectrometry data acquisition
+### Mass spectrometry data acquisition
 
 Total proteome data were collected on Orbitrap Eclipse mass spectrometer (ThermoFisher Scientific) coupled to a Proxeon EASY-nLC 1000 (or 1200) LC pump (ThermoFisher Scientific). Peptides were separated using a 90–120 minute gradient at 500–550 nL/min on a 30 cm column (i.d. 100 μm, Accucore, 2.6 μm, 150 Å) packed inhouse. High-field asymmetric-waveform ion mobility spectroscopy (FAIMS) was enabled during data acquisition with compensation voltages (CVs) set as −40 V, −60 V, and −80 V (Schweppe et al., 2019). MS1 data were collected using the Orbitrap (Resolution – 60,000; Scan range – 400–1600 Th; Automatic gain control (AGC) - 4×105; Normalized AGC target – 100%; maximum ion injection time – 50ms). Determined charge states between 2 and 6 were required for sequencing, and a 90 s dynamic exclusion window was used. Data dependent mode was set as cycle time (1 s). MS2 scans were collected in the orbitrap after high-energy collision dissociation (HCD) fragmentation (Resolution – 50,000; AGC target – 1×105; Normalized AGC target – 200%; Normalized collision energy – 36; Isolation window – 0.5 Th; Maximum ion injection time – 86ms).
 
 Phosphorylation data were collected on Orbitrap Eclipse mass spectrometer (ThermoFisher Scientific) coupled to a Proxeon EASY-nLC 1000 (or 1200) LC pump (ThermoFisher Scientific). Peptides were separated using a 90–120 minute gradient at 500–550 nL/min on a 30 cm column (i.d. 100 μm, Accucore, 2.6 μm, 150 Å) packed inhouse. High-field asymmetric-waveform ion mobility spectroscopy (FAIMS) was enabled during data acquisition with compensation voltages (CVs) set as −40 V, −60 V, and −80 V for the first shot and –45 V and –75 V for the second shot. MS1 data were collected using the Orbitrap (resolution – 120,000; maximum injection time – 50ms; AGC target – 4×105). Determined charge states between 2 and 5 were required for sequencing, and a 120 second dynamic exclusion window was used. Data dependent mode was set as cycle time (1 second). MS2 scans were performed in the Orbitrap after HCD fragmentation (resolution – 50,000; isolation window – 0.5 Da; collision energy – 36%; maximum injection time – 250ms; AGC – 1.5×105; Normalized AGC target – 300%).
 
-## Mass spectrometry data analysis
+#### Mass spectrometry data analysis
 
 Raw files were first converted to mzXML, and monoisotopic peaks were assigned using Monocle (Rad et al., 2021). Database searching included all human entries from Uniprot (downloaded on February 25th, 2020). The database was concatenated with one composed of all protein sequences in the reversed order (Elias and Gygi, 2007). Sequences of common contaminant proteins (e.g., trypsin, keratins, etc.) were appended as well. Searches were performed with Comet (Eng et al., 2013) using a 50 ppm precursor ion tolerance and 0.02 Da product ion tolerance. TMT on lysine residues and peptide N termini (+304.207 Da) and carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications, while oxidation of methionine residues (+15.9949 Da) was set as a variable modification. For phosphorylation searches, a variable modification of 79.9663 was set for serine, thereonine, and tyrosine residues. Phosphorylation site localization was determined using AScorePro (Gassaway et al., 2022). Peptide-spectrum matches (PSMs) were adjusted to a 1% false discovery rate (FDR; Elias and Gygi, 2007) PSM filtering was performed using linear discriminant analysis (LDA) as described previously (Huttlin et al., 2010) while considering the following parameters: XCorr, ΔCn, missed cleavages, peptide length, charge state, and precursor mass accuracy. Each run was filtered separately. Protein-level FDR was subsequently estimated at a data set level. For each protein across all samples, the posterior probabilities reported by the LDA model for each peptide were multiplied to give a protein-level probability estimate. Using the Picked FDR method (Savitski et al., 2015) proteins were filtered to the target 1% FDR level. TMT reporter ion intensities were measured using a 0.003 Da window around the theoretical m/z of each reporter ion. Proteins were quantified by summing reporter ion counts across all matching PSMs. Reporter ion intensities were adjusted to correct for the isotopic impurities of the different TMT reagents according to manufacturer specifications. Peptides were filtered to exclude those with a summed signal-to-noise (SN) <160 across all TMT channels. To control for different total protein loading within a TMT experiment, the summed protein quantities of each channel were adjusted to be equal within the experiment. For phosphorylation experiments, the normalization factors that were applied to the associated proteome we also applied the phosphoproteome.
 
-## Protein engagement hit calling
+### Protein engagement hit calling
 
 Compound engagement was determined based on relative thermal stability to DMSO controls. Owing to the fact that the duplicate analyses used in the initial screen would result in common statistical tests (Welch’s t-test) being underpowered, we used a combination of fold changes compared to DMSO and individual protein variance to call hits. First, relative thermal stability to the DMSO controls was determined. Second, for each protein across all cells or lysate assays, the number of standard deviations (nSD) away from the mean thermal stability measurement (z-score) for a given protein was quantified. Cutoffs for fold change and z-score were determined to limit the number of hits derived from DMSO-treated samples. We maintained the same cutoffs across both datasets. We considered proteins to engage a compound if both replicates of the compound treatments resulted when the thermal stability fold change compared to DMSO greater than an absolute value of log20.2 and an absolute z-score greater than 3.5. This resulted in a false hit rate (nDMSO-Hits) of 1% across all lysate-based assays and 3% for all cell-based assays.
 
-## Statistical analyses
+### Statistical analyses
 
 Follow-up PISA data were analyzed using Perseus (Tyanova et al., 2016). Significant changes were determined using a permutation-based FDR with the following settings – FDR – 0.05, S0 – 0.1, and number of randomizations – 250. Individual fold change values were calculated in reference to the mean of the vehicle-treated samples.
 
 Correlation analyses were run in R version 4.3.1 using rank-based Spearman’s rho (rspearman) to minimize the effects of thermal stability-based outliers. The list of binary comparisons was filtered to include the top 5% of highly correlated and anticorrelate protein pairs. Significant pairwise correlations for individual comparisons were determined using the psych package.
 
-## Structural modeling
+### Structural modeling
 
 Protein structures and associated ligands were modeled and aligned using the ICMBrowser v3.9 (Molsoft) and displayed either using the either Pymol v2.5.1 (Figure 2H–2I) or ICMBrowser (Figure 6H). PDB files were downloaded from RSCB PDB for the following identifiers: 2rku, 5l2i, 5g6v.

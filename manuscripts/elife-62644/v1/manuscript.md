@@ -41,13 +41,37 @@ An outstanding question is the impact of the tumor microenvironment on UDP-GlcNA
 
 ## Results
 
-## Tetra-antennary N-glycans and O-GlcNAcylation are minimally impacted by nutrient limitation in pancreatic cancer cells
+### Tetra-antennary N-glycans and O-GlcNAcylation are minimally impacted by nutrient limitation in pancreatic cancer cells
 
 To examine the effects of nutrient deprivation on glycosylation, we cultured cells under glucose or glutamine limitation and examined O-GlcNAc levels and cell surface phytohemagglutinin-L (L-PHA) binding, a readout of N-acetylglucosaminyltransferase 5 (MGAT5)-mediated cell surface N-glycans (Figure 1—figure supplement 1A,B), which are highly sensitive to UDP-GlcNAc availability (Lau et al., 2007). We focused on glucose and glutamine because of their requirement to initiate the HBP (Figure 1A). First, as a positive control, we examined HCT-116 and SW480 colon cancer cells, previously documented to have glucose-responsive O-GlcNAcylation (Park et al., 2010; Steenackers et al., 2016), which we also confirmed in HCT-116 cells (Figure 1B). Indeed, L-PHA binding was suppressed by glucose restriction in SW480 cells and by glutamine restriction in both colon cancer cell lines (Figure 1C). Next, to test whether glycans were sensitive to nutrient restriction in PDA cells, we examined L-PHA binding and O-GlcNAc levels under nutrient deprivation conditions in a panel of human PDA cell lines, including PANC-1, MIA PaCa-2, AsPC-1, and HPAC. Across these cell lines, no consistent changes in L-PHA binding were observed under glucose or glutamine limitation (Figure 1D,E, Figure 1—figure supplement 1C). We also examined L-PHA binding in PDA cells under oxygen- or serum-deprived conditions and observed minimal changes (Figure 1—figure supplement 1D,E). O-GlcNAcylation was minimally altered by culture in low glutamine and exhibited variable changes in response to glucose limitation (Figure 1F), consistent with stress-induced regulation of this modification (Taylor et al., 2008). Since glycosylation may be maintained through either sustained ability to add the modifications or through changes in turnover, we assayed active O-GlcNAcylation by inhibiting O-GlcNAcase with Thiamet G (TMG). TMG treatment resulted in equivalently elevated O-GlcNAcylation levels in high and low glutamine conditions (Figure 1G; Figure 1—figure supplement 1F), indicating that glutamine restriction does not limit the capacity of cells to add the O-GlcNAc modification. Mia-PaCa-2 cells exhibited some cell death in low glutamine, though this was not exacerbated by TMG treatment (Figure 1—figure supplement 1F). Thus, under a variety of nutrient stress conditions, neither L-PHA binding nor O-GlcNAcylation were consistently suppressed in pancreatic cancer cell lines. Glutamine restriction in particular had remarkably little impact on O-GlcNAcylation and L-PHA binding, raising the question of how UDP-GlcNAc is generated during nutrient limitation.
 
-## De novo UDP-GlcNAc synthesis is suppressed upon glutamine limitation
+![Figure 1.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the hexosamine biosynthesis pathway (HBP). (B) O-GlcNAc levels in HCT-116 cells in high and low nutrients; cells were incubated in indicated concentrations of glucose and glutamine for 48 hr. (C) Phytohemagglutinin-L (L-PHA) binding in colon cancer cells. Cells were incubated in the indicated concentrations of glucose (left) or glutamine (right) for 48 hr and then analyzed by flow cytometry. Graph shows mean fluorescence intensity (MFI) relative to control condition. Statistical significance was calculated by unpaired t-test. (D, E) L-PHA binding in pancreatic ductal adenocarcinoma (PDA) cells in low nutrients. Cells were incubated in the indicated concentrations of glucose (D) or glutamine (E) for 48 hr and then analyzed by flow cytometry. Statistical significance was calculated by one-way ANOVA. (F) O-GlcNAc levels in PDA cells in high and low nutrients. Cells were incubated in the indicated concentrations of glutamine for 48 hr. (G) Western blot for O-GlcNAc in PANC-1 cells cultured in the indicated concentrations of glutamine with or without Thiamet-G (TMG) treatment for the indicated time. For all bar graphs, mean ± standard error of the mean (SEM) of three biological replicates is represented. Panels (B–G) are representative of at least two independent experimental replicates. *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Diagram of L-PHA binding. L-PHA recognizes specifically the β1–6 linkage established by MGAT5. (B) L-PHA binding on MGAT5 knockout cells isolated from a KPCY tumor (Li et al., 2018), representative flow plot and quantification. Graph shows MFI relative to control cells. Statistical significance was calculated by unpaired t-test. (C) Representative flow plots for L-PHA binding graphed in Figure 1D,E on PANC-1 cells in low glucose and low glutamine. (D–E) L-PHA binding in PDA cells in low nutrients. Cells were incubated in the indicated concentrations of serum (D) or oxygen (E) for 48 hr and then analyzed by flow cytometry. Graph shows MFI relative to control condition. (F) Western blot for O-GlcNAc and PARP in MIA PaCa-2 cells cultured in the indicated concentrations of glutamine with or without TMG for the indicated time. Statistical significance was calculated by one-way ANOVA (D) and unpaired t-test (E). Panels (B–E) are representative of at least two independent experimental replicates. *p≤0.05; **p≤0.01; ***p≤0.001.
+
+### De novo UDP-GlcNAc synthesis is suppressed upon glutamine limitation
 
 We therefore next asked whether the abundance of HBP metabolites is impacted by nutrient limitation. We measured HBP metabolites after glucose or glutamine restriction using HPLC-MS (Guo et al., 2016b). In low glutamine conditions, GlcN-6-P levels were potently decreased relative to glutamine-replete conditions in PANC-1 cells, while UDP-GlcNAc abundance was maintained (Figure 2A). In MIA PaCa-2 cells, UDP-GlcNAc abundance actually increased upon glutamine restriction (Figure 2—figure supplement 1A). These data indicate that UDP-GlcNAc might be generated through mechanisms other than de novo synthesis. Glycolytic intermediates were minimally impacted by low glutamine conditions, and TCA cycle intermediates such as α-KG and malate decreased as expected (Figure 2A, Figure 2—figure supplement 1A). In contrast to that in glutamine restriction, UDP-GlcNAc abundance declined in 5 mM or 0.1 mM relative to 10 mM glucose conditions (Figure 2—figure supplement 1B), suggesting that glutamine limitation specifically may trigger an adaptive response to sustain UDP-GlcNAc pools.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig2-v1.jpg)
+
+**Figure 2.:** (A) Metabolite measurements in PANC-1 cells after culture for 48 hr in 0.05 mM glutamine. Quantification is normalized to 4 mM glutamine condition. Statistical significance was calculated by unpaired t-test. Mean ± SEM of five biological replicates is represented. (B) Overview of the GlcNAc salvage pathway feeding into the HBP. GlcNAc scavenged from O-GlcNAc removal or lysosomal breakdown of glycans can be phosphorylated by NAGK and used to regenerate UDP-GlcNAc. (C) Overview of the incorporation of 13C glucose into UDP-GlcNAc. Different parts of the molecule can be labeled from glucose-derived subunits; thus, isotopologs up to M+16 can be derived from glucose. (D) 13C glucose tracing into F-6-P, GlcNAc-P, and UDP-GlcNAc in indicated glutamine concentrations. % labeled GlcN indicates sum of M+6 and M+8 isotopologs for GlcNAc-P and sum of M+6, M+8, M+11, and M+13 for UDP-GlcNAc. % labeled Ribose indicates sum of M+5, M+7, M+11, and M+13 for UDP-GlcNAc. All isotopologs are graphed in Figure 2—figure supplement 1A. Statistical significance was calculated by unpaired t-test. Mean ± SEM of three biological replicates is represented. *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Metabolite measurements in MIA PaCa-2 cells after culture for 48 hr in 0.05 mM glutamine. Quantification is normalized to 4 mM glutamine condition. Statistical significance was calculated by unpaired t-test. Mean ± SEM of four biological replicates is represented. (B) Measurement of HBP metabolites in PANC-1 cells after culture for 48 hr in 5 mM or 0.1 mM glucose. Mean ± SEM of four (5 mM) or five (0.1 mM) biological replicates is represented. Statistical significance was calculated by unpaired t-test comparing each low glucose condition to the 10 mM glucose control in each experiment. (C) Measurement of 13C glucose incorporation into UDP-GlcNAc in high and low glutamine. Mean ± SEM of three biological replicates is represented. (D) Measurement of 13C glucose incorporation into GlcNAc-P in high and low glutamine. Mean ± SEM of three biological replicates is represented. For (C, D), components of molecule labeled in each isotopolog are indicated, with dots representing the number of carbons; highlighted panels identify glucosamine ring labeling. (E) Measurement of 13C glucose into fructose-6-phosphate in high and low glutamine. Mean ± SEM of three biological replicates is represented. *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Measurement of incorporation of 13C glucose into uridine triphosphate (UTP) in high and low glutamine. Mean ± SEM of three biological replicates is represented. (B) Measurement of metabolites in PANC-1 cells after transfection with the indicated siRNAs and incubation in 4 mM (+) or 0.05 mM (−) glutamine for 48 hr. Mean ± SEM of four biological replicates is represented. (C) Gene expression of the indicated genes in PANC-1 cells after transfection with the indicated siRNAs and incubation in 4 mM (+) or 0.05 mM (−) glutamine for 48 hr. Mean ± SEM of four biological replicates is represented. (D) Measurement of incorporation of 13C glucose into UDP-GlcNAc in PANC-1 cells transfected with the indicated siRNAs and incubated in 4 mM or 0.05 mM glutamine for 48 hr. Mean ± SEM of three biological replicates is represented. (E) Gene expression of the indicated genes in PANC-1 cells after transfection with the indicated siRNAs and incubation in 4 mM (+) or 0.05 nM (−) glutamine for 48 hr. Mean ± SEM of three biological replicates is represented. *p≤0.05; **p≤0.01; ***p≤0.001.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Gene expression of the indicated genes in PDA cell lines after incubation in 4 mM or 0.05 mM glutamine for 48 hr. Mean ± SEM of three biological replicates is represented. Statistical significance was determined by unpaired t-test. (B) Gene expression of the indicated genes in PDA cell lines after incubation in 10 mM or 0.1 mM glucose for 48 hr. Mean ± SEM of three biological replicates is represented. Statistical significance was determined by unpaired t-test. (C) Western blot for NAGK in low nutrient conditions. PANC-1 and MIA PaCa-2 cells were cultured in the indicated concentrations of glucose and glutamine for 48 hr. (D) Western blot for NAGK in low nutrient conditions, using large electrophoresis system. PANC-1 cells were cultured in the indicated glutamine concentrations and lysates were prepared with or without phosphatase inhibitors. A band shift is observed for NAGK in lysates with Na3VO4. *p≤0.05; **p≤0.01; ***p≤0.01.
 
 We sought to understand how UDP-GlcNAc pools are sustained during glutamine restriction. In addition to de novo synthesis of UDP-GlcNAc via the HBP, free GlcNAc in the cell can also be phosphorylated via N-acetylglucosamine kinase (NAGK) to produce GlcNAc-P and then regenerate UDP-GlcNAc (Figure 2B). However, NAGK’s roles in physiology and cancer biology have been minimally studied. To investigate the possibility that UDP-GlcNAc is generated through mechanisms other than its synthesis from glucose, we first designed a stable isotope labeling strategy to quantify the fraction of the glucosamine ring that is synthesized de novo in glutamine-replete versus -restricted conditions. Since multiple components of UDP-GlcNAc [glucosamine ring, acetyl group, uridine (both the uracil nucleobase and the ribose ring)] can be synthesized from glucose, UDP-GlcNAc isotopologs up to M+16 can be generated from glucose (Moseley et al., 2011; Figure 2C). In order to measure the glucose carbon incorporated into GlcNAc-P and UDP-GlcNAc via the HBP, all isotopologs containing a fully labeled glucosamine ring are added together (% labeled GlcN indicates sum of M+6, M+8, M+11, and M+13 for UDP-GlcNAc and sum of M+6 and M+8 for GlcNAc-P) (Figure 2C).
 
@@ -55,9 +79,21 @@ After 48 hr of glutamine restriction, cells were incubated with fresh low glutam
 
 We noted that GlcNAc-P and UDP-GlcNAc pools labeled from glucose with similar but not identical kinetics. While this is potentially due to limitations in detection since GlcNAc-P is much less abundant than UDP-GlcNAc, we considered whether GlcNAc-P-independent pathways may also have minor contributions to glucose-dependent UDP-GlcNAc labeling. Although pathways through which glucose can feed into UDP-GlcNAc’s glucosamine ring independent of the HBP have not been described in mammalian cells to our knowledge, we nevertheless tested the two major metabolic branch points diverging from UDP-GlcNAc, which mediate UDP-GalNAc and sialic acid synthesis. UDP-galactose-4-epimerase (GALE) interconverts UDP-GlcNAc and UDP-GalNAc, and UDP-GlcNAc-2-epimerase/ManAc kinase (GNE) initiates sialic acid biosynthesis. Silencing of neither GALE nor GNE reduced UDP-GlcNAc labeling from glucose, however, indicating that these enzymes are unlikely to facilitate a bypass pathway (Figure 2—figure supplement 2D,E). Although a minor contribution from another unknown pathway cannot be ruled out, the slight apparent differences in timing of GlcNAc-P and UDP-GlcNAc labeling most likely reflect technical limitations. Regardless, the data clearly indicate that UDP-GlcNAc abundance is maintained despite reduced de novo hexosamine synthesis from glucose (Figure 2D).
 
-## GlcNAc salvage feeds UDP-GlcNAc pools in pancreatic cancer cells
+### GlcNAc salvage feeds UDP-GlcNAc pools in pancreatic cancer cells
 
 As mentioned, UDP-GlcNAc can be generated via phosphorylation of free GlcNAc by NAGK-generating GlcNAc-6-P (Figure 2B). When supplemented, GlcNAc is salvaged into the UDP-GlcNAc pool (Ryczko et al., 2016; Wellen et al., 2010). Endogenous sources of GlcNAc may include removal of O-GlcNAc protein modifications or breakdown of glycoconjugates and extracellular matrix components. Notably, intracellular levels of GlcNAc increase upon glutamine restriction (Figure 3A). Yet, the significance of GlcNAc salvage to maintenance of UDP-GlcNAc pools has been little studied, and the proportion of UDP-GlcNAc generated via the NAGK-dependent salvage pathway is unknown.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig3-v1.jpg)
+
+**Figure 3.:** (A) Measurement of GlcNAc in PANC-1 and MIA PaCa-2 cells after incubation in the indicated concentrations of glutamine for 24 and 48 hr. Mean ± SEM of four biological replicates is represented. Statistical significance was calculated by unpaired t-test. (B) Measurement of 13C GlcNAc labeled on the acetyl group into GlcNAc-P and UDP-GlcNAc in NAGK knockout cells. Cells were incubated with 10 mM 13C GlcNAc for 6 hr. Mean ± SEM of three biological replicates is represented. Statistical significance was calculated by unpaired t-test comparing the mean incorporation of the two CRISPR clones and the empty vector (EV) control. (C) Labeling of F-6-P and GlcNAc-P from 13C glucose in PANC-1 (left) and MIA PaCa-2 (right) NAGK knockout cells. Statistical significance was calculated by unpaired t-test comparing the mean incorporation of the four CRISPR clones and the EV control. Mean ± SEM of three biological replicates is represented. (D) Percent of combined UDP-GlcNAc isotopologs containing a labeled glucosamine ring or a labeled ribose from UTP, calculated from S3.1 (E). Statistical significance was calculated by unpaired t-test comparing the mean incorporation of the four CRISPR clones and the EV control. Mean ± SEM of three biological replicates is represented. (E) Measurement of HBP metabolites in PANC-1 NAGK knockout cells cultured in the indicated concentrations of glutamine. Statistical significance was calculated by unpaired t-test comparing the mean incorporation of the four CRISPR clones and the EV control. Mean ± SEM of four biological replicates is represented. *p≤0.05; **p≤0.01; ***p≤0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Gene expression of NAGK in PANC-1 NAGK knockout cells. Mean ± SEM of three biological replicates is represented. Statistical significance was determined by one-way ANOVA. (B) Western blot for NAGK and HSP60 in PANC-1 (left) and MIA PaCa-2 (right) NAGK knockout cells. (C) Measurement of incorporation of 13C GlcNAc labeled on the acetyl group into UDP-GlcNAc in PANC-1 NAGK knockout cells. Cells were incubated with 10 mM 13C GlcNAc for 3 hr. Mean ± SEM of three biological replicates is represented. Statistical significance was determined by unpaired t-test comparing siCon and siGALK2 for each clone. (D) Measurement of incorporation of 13C glucose into GlcNAc-P in NAGK knockout cells. Mean ± SEM of three biological replicates is represented. (E) Measurement of incorporation of 13C glucose into UDP-GlcNAc in NAGK knock (D–E), components of molecule labeled in each isotopolog are indicated, with dots representing the number of carbons; highlighted panels identify glucosamine ring labeling. *p≤0.05; **p≤0.01; ***p≤0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Gene expression of NAGK in PANC-1 cells transfected with shRNA against NAGK. One biological sample is represented. (B) Incorporation of 13C glucose into the glucosamine ring of UDP-GlcNAc in PANC-1 cells transfected with the indicated shRNAs targeting NAGK. Mean ± SEM of three biological replicates is represented. (C) Measurement of HBP metabolites in MIA PaCa-2 NAGK knockout cells cultured in 4 mM glutamine. Mean ± SEM of four biological replicates is represented. Statistical significance was calculated by unpaired t-test comparing the mean of the three CRISPR clones and the empty vector control. (D) Measurement of UDP-GlcNAc in PANC-1 NAGK knockout cells. Mean ± SEM of four biological replicates is represented. Statistical significance was calculated by one-way ANOVA comparing each knockout to the EV control. *p≤0.05; **p≤0.01; ***p≤0.001.
 
 NAGK mRNA expression increased in PDA cell lines in low glutamine conditions and in some cell lines also in low glucose (Figure 2—figure supplement 3A,B). GFPT1 expression was also induced in both low glucose conditions, consistent with a prior report (Moloughney et al., 2016), and in low glutamine conditions (Figure 2—figure supplement 3A), even though de novo synthesis is suppressed when glutamine is limited. Protein levels of NAGK did not increase in concordance with mRNA at these time points, however, although a mobility shift potentially indicative of post-translational modification was apparent when protein lysates were run on a gel using a large electrophoresis system (see Materials and methods; Figure 2—figure supplement 3C,D). Removal of the phosphatase inhibitor Na3VO4 from the sample buffer prevented the mobility shift, suggesting that NAGK may be phosphorylated on one or more residues in low glutamine conditions (Figure 2—figure supplement 3D). Taken together, these data indicate that under low glutamine conditions, GlcNAc availability for salvage increases and the salvage enzyme NAGK is subject to regulation.
 
@@ -67,9 +103,17 @@ We hypothesized that knockout cells would conversely conduct increased de novo U
 
 We next assessed changes in the levels of hexosamine intermediates in control and NAGK KO cell lines. In PANC-1 KO cells in 4 mM glutamine, GlcN-P increased significantly, consistent with increased de novo synthesis in the absence of NAGK (Figure 3E). GlcNAc-P was modestly reduced in KO cells, though UDP-GlcNAc levels were maintained (Figure 3E). In MIA PaCa-2 cells, GlcNAc-P was markedly suppressed in the absence of NAGK, though UDP-GlcNAc was not (Figure 3—figure supplement 2C). We also measured HBP metabolites under glutamine restriction, where we expected NAGK would play a more significant role in UDP-GlcNAc generation. We were only able to measure metabolites accurately in PANC-1 KO cells because MIA PaCa-2 NAGK KO cells began to die quickly in low glutamine, which will be discussed further in the next section. GlcN-P decreased in control and KO cells, consistent with reduced de novo hexosamine synthesis (Figure 3E). GlcNAc-P levels decreased in low glutamine in control cells and decreased further in cells lacking NAGK, consistent with contributions from both de novo synthesis and salvage (Figure 3E). Reciprocally, GlcNAc abundance was elevated upon glutamine limitation in both control and NAGK KO cells (Figure 3E). UDP-GlcNAc abundance was modestly reduced in NAGK KO cells relative to controls under glutamine restriction, though levels were still comparable to that in high glutamine (Figure 3E), possibly reflecting changes in utilization. GALK2 silencing did not further suppress UDP-GlcNAc in NAGK KO cells (Figure 3—figure supplement 2D), suggesting that GALK2 may not have a major role in physiological GlcNAc salvage. Cumulatively, the data demonstrate that GlcNAc is salvaged into UDP-GlcNAc pools in PDA cells in a manner dependent at least in part on NAGK.
 
-## NAGK knockout limits tumor growth in vivo
+### NAGK knockout limits tumor growth in vivo
 
 To test the role of NAGK in cell proliferation, we first monitored growth of NAGK KO cells compared to controls in 2D and 3D culture in 4 mM glutamine, finding minimal differences (Figure 4A, Figure 4—figure supplement 1). We hypothesized that NAGK KO cell proliferation would be impaired in 0.05 mM glutamine, where de novo UDP-GlcNAc synthesis is suppressed. Indeed, MIA PaCa-2 KO cells died more quickly in 0.05 mM glutamine than did control cells (Figure 4A). PANC-1 KO cells did not show this effect (Figure 4A), but we hypothesized that NAGK loss might have a stronger effect in vivo where tumor growth can be constrained by nutrient availability.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig4-v1.jpg)
+
+**Figure 4.:** (A) 2D proliferation assay by cell count in PANC-1 and MIA PaCa-2 NAGK knockout cells. Mean ± SEM of three technical replicates is represented. Statistical significance was calculated using one-way ANOVA at each time point. (B) Gene expression data for NAGK, GFPT1, PGM3, and UAP1 in human PDA tumors compared with matched normal tissue. Statistical analysis was conducted by one-way ANOVA, and level of significance was defined as p≤0.01. (C) Final tumor volume and (D) final tumor weight of subcutaneous tumors generated from PANC-1 NAGK knockout cells in vivo. Cells were injected into the right flank of NCr nude mice, and tumor volume was calculated from caliper measurements. Statistical significance was calculated by one-way ANOVA comparing each mean to the EV control mean. Mean ± SEM of biological replicates is represented (n = 8 each group). *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62644/elife-62644-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Soft agar colony formation in NAGK knockout and control cells. Mean ± SEM of three biological replicates is represented. (B) Gene expression data plotted using GEPIA2 comparing TCGA pancreatic cancer samples with TCGA normal pancreas samples and GTEx data. Differential analysis between tumor and normal tissues was analyzed by one-way ANOVA. *p<0.05. (C) Tumor volume of NAGK knockout tumors at earlier time points in the experiment. Initial growth of NAGK knockout cells in vivo was comparable to control cells, but over time NAGK knockout tumors either stopped growing or regressed. (D) Western blots for NAGK and α-SMA, and blot probed for L-PHA binding, in whole tumor lysate samples. Blot for HSP60 as loading control.
 
 To gain initial insight into whether NAGK is likely to play a functional role in PDA progression in vivo, we queried publicly available datasets. From analysis of publicly available microarray data (Pei et al., 2009) and gene expression data from the Cancer Genome Atlas (TCGA), we indeed found NAGK expression to be increased in tumor tissue relative to adjacent normal regions of the pancreas or to pancreas GTEx data (Figure 4B, Figure 4—figure supplement 1B). GFPT1 expression was also increased in tumor tissue (Figure 4B, Figure 4—figure supplement 1B), consistent with its regulation by mutant KRAS (Ying et al., 2012). Two other HBP genes, PGM3 and UAP1, did not show significantly increased expression in PDA tumors in these datasets (Figure 4B, Figure 4—figure supplement 1B). We then studied the role of NAGK in tumor growth in vivo by injecting NAGK CRISPR KO cells into the flank of NCr nude mice. Final tumor volume and weight were markedly reduced in the absence of NAGK (Figure 4C–D). Of note, initial tumor growth was comparable between control and KO cells, but the NAGK knockout tumors either stopped growing or shrank while control tumors continued to grow larger (Figure 4—figure supplement 1C). Interestingly, KO tumor samples showed increased L-PHA signal (Figure 4—figure supplement 1D), indicating that NAGK deficiency results in altered glycosylation within tumors. This could possibly reflect either elevated de novo synthesis in the small tumors that form or differences in cellular composition. For example, activated fibroblast marker α-smooth muscle actin (α-SMA) was more abundant in the NAGK KO tumors (Figure 4—figure supplement 1D). Residual NAGK signal in whole tumors also presumably reflects expression in other cell types (Figure 4—figure supplement 1D), since NAGK was undetectable in the clonal cell lines used for injections (Figure 3—figure supplement 1B). Taken together, these data are consistent with the notion that NAGK is dispensable when nutrients are abundant but becomes more important as the tumors outgrow their original nutrient supply and become more dependent on scavenging and recycling and indicate that NAGK-mediated hexosamine salvage supports tumor growth in vivo.
 
@@ -87,27 +131,310 @@ In sum, we report a key role for NAGK in feeding UDP-GlcNAc pools in PDA cells a
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MIA PaCa-2</td>
+      <td>ATCC</td>
+      <td>CRL-1420 (RRID:CVCL_0428)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>PANC-1</td>
+      <td>ATCC</td>
+      <td>CRL-1469 (RRID:CVCL_0480)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HPAC</td>
+      <td>ATCC</td>
+      <td>CRL-2119 (RRID:CVCL_3517)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>AsPC-1</td>
+      <td>ATCC</td>
+      <td>CRL-1682 (RRID:CVCL_0152)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BxPC-3</td>
+      <td>ATCC</td>
+      <td>CRL-1687 (RRID:CVCL_0186)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT 116</td>
+      <td>ATCC</td>
+      <td>CCL-247 (RRID:CVCL_0291)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SW480</td>
+      <td>ATCC</td>
+      <td>CCL-228 (RRID:CVCL_0546)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>lentiCRISPRv2</td>
+      <td>Addgene</td>
+      <td>98290 (RRID:Addgene_98290)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>O-GlcNAc CTD1106, mouse monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>9875S (RRID:AB_10950973)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tubulin, mouse monoclonal</td>
+      <td>Sigma</td>
+      <td>T6199 (RRID:AB_477583)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP60, rabbit monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>12165S (RRID:AB_2636980)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NAGK, rabbit polyclonal</td>
+      <td>Atlas Antibodies</td>
+      <td>HPA035207 (RRID:AB_10602031)</td>
+      <td>WB (0.4 ug/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NAGK, rabbit polyclonal</td>
+      <td>Proteintech</td>
+      <td>15051–1-AP (RRID:AB_2152368)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AKT phosphoS473, rabbit monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>4060 (RRID:AB_2315049)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Viniculin, mouse monoclonal</td>
+      <td>Sigma</td>
+      <td>V9264 (RRID:AB_10603627)</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>[U-13C]-glucose</td>
+      <td>Cambridge Isotopes</td>
+      <td>CLM-1396–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>13C GlcNAc</td>
+      <td>Omicron Biochemicals</td>
+      <td>GLC-006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>NCr nude mice</td>
+      <td>Taconic</td>
+      <td>CrTac:NCr-Foxn1nu (RRID:IMSR_TAC:ncrnu)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFPT1 forward</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>CTCTGGCTTTGGTGGATAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFPT1 reverse</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>GCAACCACTTGCTGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NAGK forward</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>GTGCTCATATCTGGAACAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NAGK reverse</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>ACCCTCATCACCCATCATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HPRT forward</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>ATTATGCCGAGGATTTGGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HPRT reverse</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>CCCATCTCCTTCATGACATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPL19 forward</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>CAAGAAGGAGGAGATCATCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPL19 reverse</td>
+      <td>This paper</td>
+      <td>RT-qPCR primers</td>
+      <td>ATCACAGAGGCCAGTATGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgMGAT5 mouse forward</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>CACCGGCTGTCATGACACCAGCGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgMGAT5 mouse reverse</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>AAACTACGCTGGTGTCATGACAGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgNAGK#1 forward</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>CACCGTTGACGTAGCCGATATCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgNAGK#1 reverse</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>AAACCATGATATCGGCTACGTCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgNAGK#2 forward</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>CACCGTGCTTGGTGTGCGATCCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgNAGK#2 reverse</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>AAACACTGGATCGCACACCAAGCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgNAGK#3 forward</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>CACCGCTCTACACCCCCATAGATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgNAGK#3 reverse</td>
+      <td>Doench et al., 2016</td>
+      <td>CRISPR deletion primers</td>
+      <td>AAACCGATCTATGGGGGTGTAGAGC</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA non-targeting control</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC-37007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siGALE</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC-78950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siGNE</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC-60693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siGALK2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC-90002</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Cells were cultured in DMEM high glucose (Gibco, 11965084) with 10% calf serum (Gemini GemCell U.S. Origin Super Calf Serum, 100–510), unless otherwise noted. Glucose- or glutamine-restricted media was prepared using glucose, glutamine, and phenol red-free DMEM (Gibco, A1443001) supplemented with glucose (Sigma-Aldrich, G8769), glutamine (Gibco, 25030081), and dialyzed fetal bovine serum (Gemini, 100–108). For all glutamine restriction experiments except S2.3 D, cells were plated 2–3× more densely for the nutrient-restricted condition samples to achieve similar confluency at the experiment endpoint. One percent oxygen levels were achieved by culturing cells in a Whitley H35 Hypoxystation (Don Whitley Scientific). ATCC names and numbers for the cell lines used in this study are as follows: MIA PaCa-2 (ATCC# CRL-1420), PANC-1 (ATCC# CRL-1469), HPAC (ATCC# CRL-2119), AsPC-1 (ATCC# CRL-1682), BxPC-3 (ATCC# CRL-1687), HCT 116 (ATCC# CCL-247), and SW480 (ATCC# CCL-228). All cells were routinely tested for mycoplasma and authenticated by short tandem repeat (STR) profiling using the GenePrint 10 System (Promega, B9510).
 
 Generation of CRISPR cell lines sgRNA sequences targeting NAGK or Mgat5 from the Brunello and Brie libraries (Doench et al., 2016) was cloned into the lentiCRISPRv2 vector (Sanjana et al., 2014). Lentivirus was produced in 293 T cells according to standard protocol. Cells were then infected with the CRISPR lentivirus and selected with puromycin. Cells were plated at very low density into 96-well plates to establish colonies generated from single-cell clones. Mgat5 gene disruption was validated by qPCR and L-PHA binding. NAGK gene disruption was validated by qPCR, western blot, and 13C-GlcNAc tracing. Seven NAGK knockout clonal cell lines established from three different sgRNAs, four in PANC-1 cells and three in MIA PaCa-2 cells, were chosen for use in the study. Please see table at end of methods for primer sequences of guides used.
 
-## Western blotting
+### Western blotting
 
 For protein extraction from cells, cells were kept on ice and washed three times with PBS, then scraped into PBS and spun down at 200 g for 5 min. The cell pellet was resuspended in 50–100 µL RIPA buffer (1% NP-40, 0.5% deoxycholate, 0.1% SDS, 150 mM NaCl, 50 mM Tris plus protease inhibitor cocktail [Sigma-Aldrich, P8340] and phosSTOP [Sigma-Aldrich, 04906845001]), and lysis was allowed to continue on ice for 10 min. Cells were sonicated with a Fisherbrand Model 120 Sonic Dismembrator (Fisher Scientific, FB120A110) for three pulses of 20 s each at 20% amplitude. Cell lysate was spun down at 15,000 g for 10 min at 4°C, and supernatant was transferred to a new tube. For protein extraction from tissue, the sample was resuspended in 500 µL RIPA buffer and homogenized using a TissueLyser (Qiagen, 85210) twice for 30 s at 20 Hz. Following incubation on ice for 10 min, the same procedure was followed as for cells. For both cells and tissue, lysate samples were stored at −80°C until analysis by immunoblot. All blots were developed using a LI-COR Odyssey CLx system. Antibodies used in this study were as follows: O-GlcNAc CTD110.6 (Cell Signaling 9875S), tubulin (Sigma T6199), HSP60 (Cell Signaling 12165S), NAGK (Atlas Antibodies, HPA035207), and PARP (Cell Signaling 9532).
 
 For blots showing the mobility shift for NAGK in low glutamine, samples were prepared in lysis buffer containing 50 mM Tris pH 8.0, 150 mM NaCl, 0.5% IGEPAL CA-630 (Sigma, I3021), 1 mM PMSF, 1.5 µM aprotinin, 84 µM leupeptin, 1 µM pepstatin A, ±10 mM NaF, and 20 mM Na3VO4 as indicated. To visualize the NAGK mobility shift in response to low glutamine, 20 µg total protein per sample was separated across 12.5 cm of 11% SDS-PAGE resolving space under reducing conditions using the large electrophoresis systems available from C.B.S. Scientific until approximately 3 cm of separation was obtained between the 25 and 37 kDa protein standards (Bio-Rad; 1610375). Using electrophoresis, proteins were transferred (30 V, 4°C, overnight) to 0.45 µM pore size nitrocellulose membrane (Amersham, 10600002). The primary antibodies used were NAGK (Proteintech, 15051–1-AP), AKT phosphoS473 (Cell Signaling Technology, 4060), and Vinculin (Sigma, V9264). Membranes were developed using the LI-COR Odyssey CLx system.
 
-## RT-qPCR
+### RT-qPCR
 
 For RNA extraction from cells, cells were put on ice, washed with PBS, and scraped into PBS. Samples were then spun down at 200 g for 5 min and resuspended in 100 µL Trizol (Life Technologies). For RNA extraction from tissue, samples were resuspended in 500 μL Trizol and homogenized using a TissueLyser twice for 30 s at 20 Hz. For both cells and tissue, RNA was extracted following the Trizol manufacturer protocol. cDNA was prepared using high-capacity RNA-to-cDNA master mix (Applied Biosystems, 4368814) according to kit instructions. cDNA was diluted 1:20 and amplified with PowerUp SYBR Green Master Mix (Applied Biosystems, A25778) using a ViiA-7 Real-Time PCR system. Fold change in expression was calculated by the ΔΔCt method using HPRT as a control. Please see table at end of chapter for primer sequences.
 
-## Lectin binding assay
+### Lectin binding assay
 
 Cells were put on ice, washed with PBS, and then scraped into PBS. Samples were then spun down at 200 g for 5 min and resuspended in 3% BSA with fluorophore-conjugated lectin added 1:1000 (Vector Labs FL-1111–2). Samples were covered and incubated on ice for 30 min at room temperature, then spun down, and resuspended in PBS before analysis with an Attune NxT Flow Cytometer (Thermo Fisher Scientific). Data was further analyzed using FlowJo 8.7.
 
-## Metabolite quantitation and labeling
+### Metabolite quantitation and labeling
 
 For all metabolite quantitation experiments, each sample was collected from a 10 cm sub-confluent plate of cells. To achieve similar confluency and protein content at the experiment end point, cells were initially plated more densely for the nutrient-deprived samples than for the nutrient-replete samples. For low glutamine experiments, PANC-1 cells were plated 3 × 105 for 4 mM glutamine samples and 5.5 × 105 for 0.05 mM samples. MIA PaCa-2 cells were plated 3 × 105 for 4 mM samples and 1.2 × 106 for 0.05 mM samples.
 
@@ -115,18 +442,18 @@ Samples were prepared according to Guo et al., 2016b. Briefly, cells were put on
 
 For glucose labeling experiments, cells were cultured in DMEM without glucose, glutamine, or phenol red supplemented with 10 mM [U-13C]-glucose (Cambridge Isotopes, CLM-1396–1), 4 mM glutamine, and 10% dialyzed fetal bovine serum. Cells were incubated for the indicated time, and samples were prepared as above. For GlcNAc labeling experiments, cells were cultured in DMEM without glucose, glutamine, or phenol red supplemented with 10 mM N-[1,2–13 C2]acetyl-d-glucosamine (13C GlcNAc) (Omicron Biochemicals, GLC-006), 4 mM glutamine, 10 mM glucose, and 10% dialyzed fetal bovine serum. Cells were incubated for the indicated time, and samples were prepared as above.
 
-## Soft agar colony formation assay
+### Soft agar colony formation assay
 
 Cells were trypsinized and counted using a Bright-Line hemacytometer (Sigma, Z359629). The bottom agar layer was prepared by adding Bacto Agar (BD Bioscience, 214050) to cell culture media for a final concentration of 0.6%. Two milliliter bottom agar was added to each well of a six-well tissue culture plate. Once bottom agar solidified, top layer agar was prepared by combining trypsinized cells with the bottom agar mix for a final concentration of 0.3% Bacto Agar. One milliliter top layer agar was added to each well with a bottom layer of agar. Cells were plated 2.5 × 104 per well. 0.5 mL DMEM high glucose with 10% calf serum was added to cells every 7 days. Images were taken after 3 weeks. Images were blinded, and colonies per image were counted using ImageJ (Schneider et al., 2012).
 
-## 2D proliferation assay
+### 2D proliferation assay
 
 Cells were plated 3.5 × 104 per well of a six-well plate. For each day that counts were recorded, three wells were trypsinized and cells were counted twice using a hemocytometer (Sigma, Z359629). The average of the two counts was recorded for each well, and the average count of the three wells was used to graph the data. For proliferation assays in 0.05 mM glutamine, trypan blue was used during cell counts.
 
-## Bioinformatics data analysis
+### Bioinformatics data analysis
 
 The PDAC expression profiling dataset (GEO accession GSE16515, Pei et al., 2009) from NCBI GEO Profile database (Edgar et al., 2002) was used to compare the expression level between human normal and PDAC tumor samples. The dataset consists of 52 samples, in which 16 samples are matched tumor and normal tissues, and 20 samples are only tumor tissues. The statistical analysis was conducted by one-way ANOVA; the level of significance was evaluated by p<0.01 and plotted in box-and-whisker diagram. Comparison of HBP gene expression between tumor (TCGA PAAD dataset) and normal tissue (GTEx) was also conducted using GEPIA2 (Tang et al., 2019).
 
-## Tumor growth in vivo
+### Tumor growth in vivo
 
 3 × 106 PANC-1 NAGK CRISPR cells were injected with 1:1 Matrigel (Corning, CB354248) into the flanks of NCr nude mice and measured with calipers once per week for 22 weeks. At the experiment end point (22 weeks or when tumor reached 20 mm in length), mice were euthanized with CO2 and cervical dislocation. Tumors were removed, weighed, cut into pieces for analysis, and frozen. All animal experiments were approved by the University of Pennsylvania and the Institutional Animal Care and Use Committee (IACUC).

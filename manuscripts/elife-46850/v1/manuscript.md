@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.46850.001 Protein synthesis ends when a ribosome reaches an mRNA stop codon. Release factors (RFs) decode the stop codon, hydrolyze peptidyl-tRNA to release the nascent protein, and then dissociate to allow ribosome recycling. To visualize termination by RF2, we resolved a cryo-EM ensemble of E. coli 70S•RF2 structures at up to 3.3 Å in a single sample. Five structures suggest a highly dynamic termination pathway. Upon peptidyl-tRNA hydrolysis, the CCA end of deacyl-tRNA departs from the peptidyl transferase center. The catalytic GGQ loop of RF2 is rearranged into a long β-hairpin that plugs the peptide tunnel, biasing a nascent protein toward the ribosome exit. Ribosomal intersubunit rotation destabilizes the catalytic RF2 domain on the 50S subunit and disassembles the central intersubunit bridge B2a, resulting in RF2 departure. Our structures visualize how local rearrangements and spontaneous inter-subunit rotation poise the newly-made protein and RF2 to dissociate in preparation for ribosome recycling.
+Protein synthesis ends when a ribosome reaches an mRNA stop codon. Release factors (RFs) decode the stop codon, hydrolyze peptidyl-tRNA to release the nascent protein, and then dissociate to allow ribosome recycling. To visualize termination by RF2, we resolved a cryo-EM ensemble of E. coli 70S•RF2 structures at up to 3.3 Å in a single sample. Five structures suggest a highly dynamic termination pathway. Upon peptidyl-tRNA hydrolysis, the CCA end of deacyl-tRNA departs from the peptidyl transferase center. The catalytic GGQ loop of RF2 is rearranged into a long β-hairpin that plugs the peptide tunnel, biasing a nascent protein toward the ribosome exit. Ribosomal intersubunit rotation destabilizes the catalytic RF2 domain on the 50S subunit and disassembles the central intersubunit bridge B2a, resulting in RF2 departure. Our structures visualize how local rearrangements and spontaneous inter-subunit rotation poise the newly-made protein and RF2 to dissociate in preparation for ribosome recycling.
 
 ## Introduction
 
@@ -29,9 +29,288 @@ Ribosome and RF dynamics are implicated in post-hydrolysis steps. In E. coli, RF
 
 In this work, we used ensemble cryo-EM, as described earlier (Abeyrathne et al., 2016; Loveland et al., 2017), employing 3D maximum likelihood classification/sorting of particle images (Lyumkis et al., 2013; Scheres, 2010; Scheres et al., 2007) to visualize the structural dynamics of RF2 on the 70S ribosome (Figure 1, Figure 1—figure supplement 1, Figure 1—figure supplement 2 and Figure 1—figure supplement 3). The structures capture RF2 and tRNA in distinct 70S conformational states (Table 1). They reveal an unexpected rearrangement of the catalytic GGQ loop, which suggests that RF2 helps direct nascent protein out of the ribosome. Our findings reconcile biophysical observations and, together with other structural studies, allow a reconstruction of the termination course by RF2, from initial binding to dissociation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig1-v1.jpg)
+
+**Figure 1.:** Panels A-E show for each structure: upper row: a schematic of the conformations of the 70S ribosome, tRNA and RF2, with ribosomal subunits (50S and 30S) and A, P and E sites labeled; middle row: structures with RF2 shown in red, tRNAfMet in orange, 30S subunit in yellow, 50S subunit in cyan and mRNA in purple; lower row: cryo-EM density for mRNA, tRNA and RF2, colored as in the middle row. Domains of RF2 are labeled in panel B, illustrating the codon-recognition superdomain (domains 2 and 4) and catalytic domain (3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Cyan classes were used for further classifications, green classes were used for obtaining the final maps. The views show the 50S (top) and 30S (bottom) subunits and the positions of spherical masks.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Left column: Fourier shell correlation (FSC) between even- and odd-particle half maps (black) show that map resolutions range from 3.3 to 4.4 Å for Structures I-V (at FSC = 0.143, green line); FSC between final models and final maps (magenta), self (blue) and cross-validation half-maps (red) masked FSC are also shown. Middle column: Examples of local map resolution for rRNA and protein in the vicinity of the peptidyl transferase center are shown for each structure (23S rRNA and protein L4 are labeled for reference). Right column: Local resolutions in cryo-EM densities for Structures I-V, calculated using Blocres. Slab views show the ribosome interior in the vicinity of the long helix α7 of domain 3 of RF2 (the helix is visible at the centers of Structures II and III).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The time course shows RF2-catalyzed [35S]-fMet release from 70S•[35S]-fMet-tRNAfMet•mRNA(UGA) (black curve and data points), in contrast to slow spontaneous release in the absence of RF2 (red). The reactions were performed using buffer conditions and concentrations identical to those used for cryo-EM grids preparation (see Materials and methods); N = 2 for all data points.
+
+**Table 1.**
+ Cryo-EM structures obtained from a single sample of the 70S•RF2 complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>I</th>
+      <th>II</th>
+      <th>III</th>
+      <th>IV</th>
+      <th>V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tRNA and RF2 occupancy</td>
+      <td>P-tRNA</td>
+      <td>P-tRNA, RF2</td>
+      <td>P-like (L5) tRNA, RF2</td>
+      <td>P/E-like (L1) tRNA, RF2</td>
+      <td>P/E tRNA</td>
+    </tr>
+    <tr>
+      <td>30S (body) rotation</td>
+      <td>1.6°</td>
+      <td>1.6°</td>
+      <td>4.9°</td>
+      <td>7.4°</td>
+      <td>6.8°</td>
+    </tr>
+    <tr>
+      <td>30S head rotation (swivel)</td>
+      <td>2.0°</td>
+      <td>1.4°</td>
+      <td>1.7°</td>
+      <td>2.8°</td>
+      <td>6.0°</td>
+    </tr>
+    <tr>
+      <td>Resolution (FSC = 0.143)</td>
+      <td>3.3 Å</td>
+      <td>3.3 Å</td>
+      <td>3.7 Å</td>
+      <td>4.4 Å</td>
+      <td>3.4 Å</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results and discussion
 
 We formed a termination complex using E. coli 70S ribosomes and RF2 to catalyze the hydrolysis of substrate N-formyl-methionyl-tRNAfMet (fMet-tRNAfMet) bound to mRNA carrying an AUG codon in the P site and a UGA stop codon in the A site. Although the stop codon is placed immediately after the start codon, unlike in cellular mRNAs, such model termination complexes have been successfully used in numerous structural, biochemical and biophysical studies (Adio et al., 2018; Casy et al., 2018; Koutmou et al., 2014; Kuhlenkoetter et al., 2011; Laurberg et al., 2008; Pallesen et al., 2013; Pierson et al., 2016; Shi and Joseph, 2016; Sternberg et al., 2009). Indeed, under the conditions used for cryo-EM sample preparation in this work, RF2 supports hydrolysis of fMet-tRNAfMet and release of fMet (Figure 1—figure supplement 4), demonstrating activity of the ribosome and RF2 in our sample. Maximum-likelihood classification of cryo-EM data in FREALIGN (Lyumkis et al., 2013) yielded five structures at average resolutions of 3.3 Å to 4.4 Å (Table 2; Figure 1). The structures differ by the degrees of intersubunit rotation and 30S head rotation (swivel), and are consistent with the following termination stages: pre-termination (i.e., no RF2; Structure I); peptidyl-tRNA hydrolysis by RF2 (Structure II); tRNA exit from the PTC (Structure III); destabilization of the catalytic domain of RF2 (Structure IV); and post-termination (i.e., after RF2 dissociates; Structure V).
+
+**Table 2.**
+ Data collection and refinement statistics for cryo-EM Structures I-V.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>STRUCTURE</th>
+      <th>I</th>
+      <th>II</th>
+      <th>III</th>
+      <th>IV</th>
+      <th>V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB ID EMD code</td>
+      <td>6OFX 20048</td>
+      <td>6OG7 20052</td>
+      <td>6OGF 20056</td>
+      <td>6OGG 20057</td>
+      <td>6OGI 20058</td>
+    </tr>
+    <tr>
+      <td colspan="6">Data collection</td>
+    </tr>
+    <tr>
+      <td>EM equipment</td>
+      <td colspan="5">FEI Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="5">300</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td colspan="5">K2 summit</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td colspan="5">1.33</td>
+    </tr>
+    <tr>
+      <td>Electron dose (e-/Å2)</td>
+      <td colspan="5">29.4</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="5">– 0.5 – 1.8</td>
+    </tr>
+    <tr>
+      <td colspan="6">Reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td colspan="5">Frealign v9.11</td>
+    </tr>
+    <tr>
+      <td>Number of particles in final map</td>
+      <td>102,723</td>
+      <td>62,029</td>
+      <td>28,549</td>
+      <td>5,881</td>
+      <td>63,383</td>
+    </tr>
+    <tr>
+      <td>Final resolution (Å)</td>
+      <td>3.3</td>
+      <td>3.3</td>
+      <td>3.7</td>
+      <td>4.4</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Average sharpening B factor (Å2)</td>
+      <td>-30</td>
+      <td>-26</td>
+      <td>-17</td>
+      <td>-4</td>
+      <td>-30</td>
+    </tr>
+    <tr>
+      <td colspan="6">Structure Refinement</td>
+    </tr>
+    <tr>
+      <td>Model Fitting</td>
+      <td colspan="5">Chimera/Pymol</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td colspan="5"></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td colspan="5">RSRef/Phenix</td>
+    </tr>
+    <tr>
+      <td>Correlation Coefficient,cc_mask *</td>
+      <td>0.83</td>
+      <td>0.84</td>
+      <td>0.84</td>
+      <td>0.76</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Real-space R-factor †</td>
+      <td>0.25</td>
+      <td>0.23</td>
+      <td>0.22</td>
+      <td>0.25</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td colspan="6">Validation (proteins)</td>
+    </tr>
+    <tr>
+      <td>MolProbity Score ‡</td>
+      <td>2.22</td>
+      <td>2.34</td>
+      <td>2.42</td>
+      <td>2.26</td>
+      <td>2.24</td>
+    </tr>
+    <tr>
+      <td>Clash score, all atoms ‡</td>
+      <td>17.4</td>
+      <td>17.4</td>
+      <td>16.5</td>
+      <td>15.1</td>
+      <td>16.3</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%) ‡</td>
+      <td>0.4</td>
+      <td>0.7</td>
+      <td>0.7</td>
+      <td>0.6</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Favored/allowed rotamers (%) ‡</td>
+      <td>99.6</td>
+      <td>99.3</td>
+      <td>99.3</td>
+      <td>99.4</td>
+      <td>99.5</td>
+    </tr>
+    <tr>
+      <td colspan="6">Ramachandran-plot statistics</td>
+    </tr>
+    <tr>
+      <td>Outlier (%) ‡</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.8</td>
+      <td>0.0</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Favored (%) ‡</td>
+      <td>92.2</td>
+      <td>88.1</td>
+      <td>82.3</td>
+      <td>89.0</td>
+      <td>90.7</td>
+    </tr>
+    <tr>
+      <td colspan="6">R.m.s. deviations †,§</td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.008</td>
+      <td>0.006</td>
+      <td>0.006</td>
+      <td>0.006</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Bond angle (°)</td>
+      <td>1.064</td>
+      <td>0.892</td>
+      <td>0.922</td>
+      <td>0.848</td>
+      <td>1.113</td>
+    </tr>
+    <tr>
+      <td colspan="6">Validation (RNA)</td>
+    </tr>
+    <tr>
+      <td>Good sugar puckers (%) ‡</td>
+      <td>99.7</td>
+      <td>99.8</td>
+      <td>99.8</td>
+      <td>99.8</td>
+      <td>99.8</td>
+    </tr>
+    <tr>
+      <td>Good backbone conformation (%) ‡</td>
+      <td>82.9</td>
+      <td>84.6</td>
+      <td>85.0</td>
+      <td>85.0</td>
+      <td>82.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*from Phenix†from RSRef§root-mean-square deviations# RNA backbone suites that fall into recognized rotamer conformations defined by MolProbity_
 
 Pre-termination-like Structure I contains tRNA in the P site with its 3′-CCA end positioned in the peptidyl transferase center (Figure 1A). Although the tRNA is likely partially or completely deacylated due to the action of RF2, the tRNA and ribosome conformations closely resemble those in pre-termination aminoacyl- and peptidyl-tRNA complexes (Adio et al., 2018; Cornish et al., 2008; Jin et al., 2010; Polikanov et al., 2014). The 30S subunit adopts a conformation similar to crystal structures of non-rotated ribosomes with or without RFs (Jin et al., 2010; Korostelev et al., 2008; Korostelev et al., 2006; Korostelev et al., 2010; Laurberg et al., 2008; Selmer et al., 2006; Weixlbaumer et al., 2008), and exhibits a slight ~1.5° rotation relative to the 70S•RF2 crystal structure formed with the UGA stop codon (Weixlbaumer et al., 2008).
 
@@ -41,19 +320,39 @@ The most well-resolved 3.3 Å resolution Structure II (Figure 1B) accounts for t
 
 Structure II features RF2 with a dramatically rearranged catalytic loop, coinciding with the lack of density for the CCA end of the P tRNA. In previous pre- and post-hydrolysis-like structures, the P-tRNA CCA end binds the PTC, and RF2 forms a compact catalytic loop (residues 245–258). In these previous structures, the catalytic 250GGQ252 motif resides at the tip of a short α-helix, adjacent to the terminal tRNA nucleotide A76 (Figure 2A, light shades; (Jin et al., 2010; Korostelev et al., 2008; Laurberg et al., 2008; Weixlbaumer et al., 2008). The α-helical region is held in place by A2602 of 23S ribosomal RNA (rRNA), which is critical for termination efficiency (Amort et al., 2007; Polacek et al., 2003). In Structure II, however, the catalytic loop adopts an extended β-hairpin conformation that reaches ~10 Å deeper into the peptide tunnel (Figure 2A–B). To accommodate the extended β-hairpin, nucleotides G2505 and U2506 of 23S rRNA are shifted to widen the PTC (Figure 2—figure supplement 1A). The center of the β-hairpin occupies the position normally held by A76 of P tRNA (Figure 2A). The lack of density for the CCA moiety thus suggests that the 3′ end of P tRNA is at least partially released from the PTC. Indeed, formation of the β-hairpin and release of the CCA moiety is accompanied by a slight shift in the P-tRNA acceptor arm away from the PTC and by ~160° rotation of nucleotide A2602 to form a Hoogsteen base pair with C1965 at helix 71 of 23S rRNA (Figure 2A and Figure 2Figure 2—figure supplement 1B). The cryo-EM map shows strong density for the extended β strands (Figure 2C), but weaker density for the GGQ residues at the tip of the hairpin, consistent with conformational heterogeneity of the flexible glycine backbone (Figure 2—figure supplement 2). Nevertheless, the tip of the β-hairpin plugs the narrowest region of the peptide tunnel at A2062 of 23S rRNA (Figure 2B). Thus, Structure II appears to represent a previously unseen post-peptide-release state with deacyl-tRNA dissociating from the PTC.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig2-v1.jpg)
+
+**Figure 2.:** (A) Rearrangements of RF2 in Structure II (RF2 in red, P-tRNA in orange and 23S in cyan) in comparison with the canonical 70S•RF2 conformation (X-ray structure: Korostelev et al., 2008; RF2 in pink, P-tRNA in light orange, 23S in gray). Arrows show rearrangements for RF2 (red), tRNA acceptor arm and 23S nucleotide A2602 (black). The superposition was achieved by structural alignment of 23S rRNA. (B) The GGQ region of RF2 forms a long β-hairpin that reaches into the constriction of the peptide tunnel (at A2062) and thus plugs the tunnel. Nucleotides of 23S rRNA and the GGQ motif are labeled. (C) Cryo-EM density for the β-hairpin formed by the GGQ region. Residues of RF2 and 23S rRNA (also shown in panel B for reference) are labeled.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Nucleotides in the crystal structure with an α-helical conformation of the GGQ motif of RF2 (not shown; see Figure 2A) are shown in gray (Korostelev et al., 2008). (A) Cryo-EM density (gray mesh, shown at σ = 3.0) for G2505 and U2506 (shown as sticks). (B) Cryo-EM density (gray mesh, shown at σ = 2.5) for A2602 (shown as sticks).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig2-figsupp2-v1.jpg)
+
 In Structure III (Figure 1C), a 5° rotation of the 30S subunit shifts the tRNA elbow by ~10 Å along protein L5 toward the E site. As a result, the P-tRNA acceptor arm pulls further out of the 50S P site, and the end of the acceptor arm helix points at helix α7 of RF2 near positively charged Lys 282 and Lys 289. The CCA moiety remains unresolved. The 5° intersubunit rotation also causes a slight 2° rotation of RF2 domain 3 relative to domain 2, but the overall conformation of RF2 remains similar to that in Structure II, with the tip of the extended β-hairpin plugging the peptide exit tunnel.
 
 In Structure IV, the 30S subunit is rotated 7.5° and the P-tRNA elbow is bound to the L1 stalk, an interaction normally observed with the P/E or E tRNA (Dunkle et al., 2011; Korostelev et al., 2006; Selmer et al., 2006). Unlike P/E tRNA, however, the acceptor arm is oriented between the 50S P and E sites (Figure 1D), suggesting that the tRNA adopts a transient state on its way toward the hybrid P/E conformation. This transition coincides with an ~3° rotation (swivel) of the 30S head, characteristic of intermediate stages of tRNA and mRNA translocation (Abeyrathne et al., 2016; Ratje et al., 2010). The codon-recognition superdomain of RF2 in its canonical conformation moves with the 30S subunit, causing the catalytic domain to shift by ~5 Å from its position in Structure II (Figure 3A). Indeed, reduced density for the catalytic domain and domain 1, which bridges the 30S and 50S subunits at the A site periphery (Figure 1B), suggests that intersubunit rotation has destabilized RF2. In Structure IV, therefore, RF2 appears to be poised for dissociation and collapsing toward the compact conformation adopted by free RFs (Figure 3A) (JCSG, 2005; Shin et al., 2004; Vestergaard et al., 2001; Zoldák et al., 2007).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig3-v1.jpg)
+
+**Figure 3.:** (A) RF2 in Structures II (red) and IV (blue) in comparison with the crystal structure of isolated (free) RF2 (green, PDB 1GQE [Vestergaard et al., 2001]). The arrow shows the direction of domain three repositioning from Structure II to IV to free RF2. Structures were aligned by superposition of domain 2. (B) Interactions of H69 (teal) with the switch loop (pink surface) of RF2 in Structure II (RF2 in red, P-tRNA in orange, 50S in cyan and 30S in yellow). Domains 2 and 3 of RF2, head and body domains of the 30S subunit and nucleotides A1913 (at H69) and C1054 (head) are labeled. (C) In Structure V, dissociation of H69 from the decoding center and packing on H71 next to A2602 disassembles intersubunit bridge B2a. The structure is colored as in panel B. View in panels B and C is rotated by ~180° relative to panel A.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Structures II and V were superimposed via 16S rRNA. Codon-recognition domain 2 of compact RF2 was superimposed with domain 2 of RF2 in Structure II.
 
 Structure V is incompatible with RF2 binding and provides further insights into RF2 dissociation. The rotated 70S•tRNA structure resembles hybrid P/E states, with the acceptor arm of tRNA directed toward the E site of 50S (Figure 1E). However, the central intersubunit bridge B2a—formed by helix 69 (H69, nt. 1906–1924) of 23S rRNA—is disassembled (Figure 3B–C). In RF-bound structures (including Structures I to IV, above), the tip of H69 (at nt 1913) locks into the decoding center in a termination-specific arrangement (Korostelev et al., 2008; Korostelev et al., 2010; Laurberg et al., 2008; Weixlbaumer et al., 2008). H69 interacts with the switch loop of RFs, where the codon-recognition superdomain connects to catalytic domain 3 (e.g., Structure II, Figure 3B). This interaction directs the catalytic domain toward the PTC (Korostelev et al., 2010; Laurberg et al., 2008) and thus defines the efficiency and accuracy of release factors (Svidritskiy and Korostelev, 2018a). In Structure V, however, H69 is disengaged from the decoding center and moved ~15 Å toward the large subunit to pack against H71 near A2602 (nt 1945–1961; Figure 3C). The new position of H69 would clash with extended or compact conformations of RF2 (Figure 3—figure supplement 1), if the release factor had remained bound to the decoding center.
 
 Release of RF2 also appears to be coupled to rotation (swivel) of the 30S head domain. In RF2-bound structures, the conserved codon-recognition 205SPF207 motif (serine-proline-phenylalanine of domain 2) of RF2 interacts with the stop codon and the 30S head near bulged nucleotide C1054 of 16S rRNA. In Structure V, a 6° rotation of the 30S head shifts the position of C1054 by 5 Å from its position in RF2-bound Structure IV, consistent with disassembly of RF2 contacts. The disruption of decoding-center interactions due to repositioning of H69 and head swivel therefore explain the absence of RF2 in Structure V.
 
-## Mechanism of translation termination by RF2
+### Mechanism of translation termination by RF2
 
 Our termination structures allow us to reconstruct a dynamic pathway for termination (Figure 4 and Animation 1) and reconcile biophysical and biochemical findings (Adio et al., 2018; Casy et al., 2018; Prabhakar et al., 2017; Sternberg et al., 2009). Recent structural studies revealed compact RF conformations on non-rotated 70S ribosomes (Fu et al., 2018; Svidritskiy and Korostelev, 2018a) that suggest how RFs open at early stages of codon recognition (He and Green, 2010; Hetrick et al., 2009; Trappl and Joseph, 2016). The short-lived transition from compact to open conformation(s) lasts tens of milliseconds (Fu et al., 2018), and compact RF2 conformations were not captured in our sample. Compact RF2 was also visualized by cryo-EM on the 70S ribosome in the presence of truncated mRNA and alternative rescue factor A (ArfA) (Demo et al., 2017; James et al., 2016), suggesting a conserved pathway for initial binding of RFs to non-rotated ribosomes. Together with these recent studies, our work provides an expanded structural view of the termination reaction – from initial codon recognition to peptide release to RF2 dissociation (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46850/elife-46850-fig4-v1.jpg)
+
+![Animation 1.](https://cdn.elifesciences.org/articles/46850/elife-46850-video1.gif.jpg)
 
 Termination begins when release factor recognizes a stop codon in the A site of a non-rotated (or slightly rotated) 70S ribosome carrying peptidyl-tRNA (Figure 4A). A compact release factor recognizes the stop codon, while its catalytic domain is kept 60 to 70 Å away from the PTC (Fu et al., 2018). Separation of the codon-recognition and catalytic functions during initial binding of RF underlies high accuracy of termination (He and Green, 2010; Laurberg et al., 2008; Svidritskiy and Korostelev, 2018a; Trappl and Joseph, 2016). Upon binding the decoding center, steric hindrance with P-tRNA forces the RF catalytic domain to undock from domain two and sample the intersubnit space (Figure 4B) (discussed in Svidritskiy and Korostelev, 2018a). The ribosome remains non-rotated because peptidyl-tRNA bridges the P sites of 30S and 50S subunits. Interactions between the switch loop of RF and the decoding center and H69 direct the catalytic domain into the PTC. The GGQ catalytic loop is placed next to the scissile ester bond of peptidyl-tRNA and stabilized by A2602 (Jin et al., 2010; Laurberg et al., 2008), so that the Gln backbone amide of the GGQ motif can catalyze peptidyl-tRNA hydrolysis (Figure 4C) (Korostelev et al., 2008; Santos et al., 2013). These ribosome and RF2 rearrangements complete the first stage of termination leading to peptidyl-tRNA hydrolysis—an irreversible step that separates the newly made protein from P-site tRNA and prevents further elongation.
 
@@ -63,7 +362,178 @@ Remarkably similar extents of intersubunit rotation and head rotation were obser
 
 ## Materials and methods
 
-## Preparation of the 70S termination complex with RF2
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MRE600</td>
+      <td>(Cammack and Wade, 1965)</td>
+      <td>ATCC 29417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli BLR (DE3)</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>C-terminally His-tagged K-12 E. coli RF2</td>
+      <td>(Demo et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>E. coli RF2 plasmid (vector pET24b)</td>
+      <td>(Demo et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>E. coli tRNAfMet</td>
+      <td>Chemical Block</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[35S]-methionine</td>
+      <td>Perkin Elmer</td>
+      <td>NEG709A500UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biodegradable Scintillation Cocktail</td>
+      <td>Econo-Safe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNA GGCAAGGAGGUAAAAAUGUGAAAAAAA</td>
+      <td>IDT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>(Adams et al., 2002)</td>
+      <td>https://www.phenix-online.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CNS</td>
+      <td>(Brunger, 2007)</td>
+      <td>http://cns-online.org/v1.2/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>(DeLano, 2002)</td>
+      <td>https://pymol.org/2/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>(Pettersen et al., 2004)</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bsoft</td>
+      <td>(Heymann and Belnap, 2007)</td>
+      <td>https://lsbr.niams.nih.gov/bsoft/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Frealign</td>
+      <td>(Lyumkis et al., 2013)</td>
+      <td>http://grigoriefflab. janelia.org/frealign</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cisTEM</td>
+      <td>(Grant et al., 2018)</td>
+      <td>https://cistem.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>(Chen et al., 2010)</td>
+      <td>http://molprobity.biochem.duke.edu/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSRef</td>
+      <td>(Chapman, 1995; Korostelev et al., 2002)</td>
+      <td>http://www.sb.fsu.edu/~rsref/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>(Mastronarde, 2005)</td>
+      <td>http://bio3d.colorado.edu/SerialEM/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Holey-carbon grids QUANTIFOIL R 2/1, Cu 200</td>
+      <td>Quantifoil Micro Tools</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vitrobot MK4</td>
+      <td>FEI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Titan Krios microscope</td>
+      <td>FEI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>K2 Summit camera</td>
+      <td>Gatan</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of the 70S termination complex with RF2
 
 N-terminally His6-tagged release factor 2 (RF2) from E. coli K12 strain was overexpressed in E. Coli BLR (DE3) (Novagen) and purified as described for RF1 (Svidritskiy and Korostelev, 2018a). Due to overexpression, RF2 is likely incompletely methylated (or unmethylated) at Q252 of the catalytic GGQ motif (Dinçbas-Renqvist et al., 2000), which together with the K12-specific T246 residue, renders RF2 catalytically slower (Dinçbas-Renqvist et al., 2000), yet functionally and structurally similar to the post-translationally modified release factors (Korostelev et al., 2008; Pierson et al., 2016; Weixlbaumer et al., 2008; Zeng and Jin, 2018). E. coli tRNAfMet (Chemical Block) was aminoacylated as described (Lancaster and Noller, 2005). 70S ribosomes were prepared from E. coli (MRE600) as described (Svidritskiy and Korostelev, 2018a). Ribosomes were stored in the ribosome-storage buffer (20 mM Tris-HCl, pH 7.0; 100 mM NH4Cl; 12.5 mM MgCl2; 0.5 mM EDTA; 6 mM β-mercaptoethanol) at –80°C. A model mRNA fragment, containing the Shine-Dalgarno sequence and a spacer to position the AUG codon in the P site and the UGA stop codon in the A site (GGC AAG GAG GUA AAA AUG UGA AAAAAA), was synthesized by IDT.
 
@@ -71,7 +541,7 @@ The 70S•mRNA•fMet-tRNAfMet complex with RF2 was assembled in vitro by mixing
 
 The activity of E. coli RF2 was tested in an in vitro assay that measures the release of formyl-methionine from the 70S ribosome bound with [35S]-fMet-tRNAfMet in the P site, as described (Svidritskiy and Korostelev, 2018a). Pre-termination complex was prepared using 0.2 µM E. coli 70S ribosomes (all concentrations are for the final reaction mixture upon initiation of the release reaction), 6 µM mRNA and 0.3 µM [35S]-fMet-tRNAfMet ([35S]-methionine from Perkin Elmer). An aliquot (4.5 μl) of the pre-termination complex was quenched in 30 μl of 0.1 M HCl to represent the zero-time point. Pre-termination complex was split into two tubes. 5 µl of 20 µM RF2 was added to 45 μl of the pre-termination complex in one tube, yielding 2 µM RF2 in the reaction. Buffer without RF2 was added to the second tube to test spontaneous (RF2-independent) hydrolysis of [35S]-fMet-tRNAfMet. After 6, 15, 90 s, and 6, 15, 30, 60 and 150 min, 5 μl aliquots were quenched in 30 μl of 0.1 M HCl. Samples were extracted with ethylacetate, and the amount of released [35S]-labeled N-formyl-methionine was measured using a scintillation counter (Beckman Coulter, Inc) in 3.5 ml of Econo-Safe scintillation cocktail (RPI). All measurements were performed twice (Figure 1—figure supplement 4) and time progress data were analyzed and visualized using GraphPad Prizm 7.01.
 
-## Cryo-EM and image processing
+### Cryo-EM and image processing
 
 Holey-carbon grids (QUANTIFOIL R 2/1, Cu 200, Quantifoil Micro Tools) were coated with carbon and glow discharged with 20 mA with negative polarity for 60 s in a PELCO easiGlow glow discharge unit. 2.8 μl of the 70S•mRNA•fMet-tRNAfMet•RF2 complex was applied to the grids. Grids were blotted at blotting force 10 for 4 s at room temperature, 100% humidity, and plunged into liquid ethane using a Vitrobot MK4 (FEI). Grids were stored in liquid nitrogen.
 
@@ -83,7 +553,7 @@ Data classification was performed using a spherical focused mask with a 45 Å ra
 
 The resulting reconstructions varied from 3.3 Å (Structure II) to 4.4 (Structure IV) Å average resolution (Fourier Shell Correlation (FSC) = 0.143). Cryo-EM reconstructions were B-factor sharpened in bfactor.exe (part of Frealign distribution) using different B-factor values (suggested by bfactor.exe) and then used for model building and structure refinements. B-factor from −50 to −100 Å2 was also used for initial refinements and to visualize higher-resolution details. FSC curves were calculated by FrealignX for even and odd particle half-sets (Figure 1—figure supplement 2). FSC between the final models and maps, self and cross-validation FSC (Figure 1—figure supplement 2) calculated using Phenix (Adams et al., 2010) demonstrate good overall agreement between the structural models and maps, similarly to those in previous work (Brown et al., 2017). Blocres (part of Bsoft package v1.9.1; Heymann and Belnap, 2007) was used to calculate local-resolution maps (Figure 1—figure supplement 2).
 
-## Model building and refinement
+### Model building and refinement
 
 Cryo-EM structures of E. coli 70S•ArfA•RF2 complex (Demo et al., 2017) excluding ArfA, and the 70S•fMet-tRNAfmet complex with EF-Tu ternary complex (Loveland et al., 2017) and improved structure of S2 (Loveland and Korostelev, 2018), excluding the ternary complex, were used to create initial models for structure refinement. Chimera (Pettersen et al., 2004) was used for fitting the 50S subunit, 30S head, 30S body, mRNA, tRNA, and RF2 domains. Local model fitting was performed in PyMOL (DeLano, 2002).
 

@@ -35,21 +35,57 @@ Motivated by these functional studies, we examined in mice the reciprocal connec
 
 ## Results
 
-## Driving the MD has a distinct impact on PL compared to MGB’s impact on A1
+### Driving the MD has a distinct impact on PL compared to MGB’s impact on A1
 
 To compare the functional impact of MD activation on the PL with that of the MGB on A1, we combined multi-site multielectrode recordings across these two thalamocortical loops with causal manipulations (Figure 1A,B; see Materials and methods). We sought to uniformly enhance excitability in either the MD or MGB, akin to a step current injection. Therefore, in two groups of animals (N = 5 animals per condition), we transduced either the MD (Figure 1A) or MGB (Figure 1B) with stabilized step function opsins (SSFO, hChR2(C128S/D156A)), an optical actuator known to precisely accomplish this goal (Yizhar et al., 2011). Using stereotactic injections (see Materials and methods), we preferentially targeted the lateral MD and the ventral portion of the MGB, because these areas are known to primarily target the PL (Groenewegen, 1988) and A1 (Winer et al., 2005), respectively.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left: Experimental schematic of combined MD and PL recordings with optical activation of MD using Stabilized Step Function Opsins (SSFO). Right: Anatomical expression of AAV-SSFO-GFP in MD. Scale bar = 200 µm (B) Same as in (A) except for MGB→A1 loop. (C) Example raster and PSTH of single units recorded from MD (left) and MGB (right) during SSFO-induced activation of respective regions SSFO was activated by 100 ms pulse of blue laser (473 nm, blue bar) and terminated with a 50 ms pulse of red laser (633 nm, red bar). (D) MD (blue) and MGB (orange) neurons demonstrate comparably strong increases in spike rates with SSFO stimulation (n = 298 neurons, N = 4 mice for MD, n = 597 neurons, N = 5 mice for MGB, +++p<0.001, compared to baseline rate, Wilcoxon signed rank test; n.s., compared to each other, Mann-Whitney U test). (E) Example raster and PSTH of RS neurons in the PL during SSFO-induced activation of MD (left, blue), and in A1 during SSFO-induced activation of MGB (right, orange). (F) SSFO-induced activation of the MD results in a decrease in spike rate in PFC-RS neurons, while that of the MGB leads to an increase in spike rate in A1-RS neurons (n = 441 PFC-RS neurons, +++p<0.001 compared to baseline, Wilcoxon signed rank test; n = 724 A1-RS neurons, +++p<0.001 compared to baseline, Wilcoxon signed rank test; ***p < 0.001 compared to each other, Mann-Whitney U test; N = 5 mice for each condition). (G) Example raster and PSTH of FS neurons in the PL during SSFO induced activation of the MD (left, blue), and in A1 during SSFO induced activation of the MGB (right, orange). (H) SSFO induced activation of the MD results in an increase in spike rate in PFC-FS neurons, while that of the MGB does not significantly alter the spike rate in A1-FS neurons (n = 265 PFC-FS neurons; +++p<0.001 compared to baseline, Wilcoxon signed rank test, N = 5 mice; n = 194 A1-FS neurons; p=0.6531 compared to baseline, Wilcoxon signed rank test, N = 4 mice, ***p < 0.001 compared to each other, Mann-Whitney U test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Recorded units were separated into regular spiking (n = 1372, green) and fast spiking (n = 678, red) cells, via k-means clustering on three feature dimensions: half trough time, peak to trough time, and mode of the inter-spike interval (ISI). Each dot corresponds to a putative single unit. Data is pooled from recordings in the PL and A1. (B) Left: Superimposed waveforms of an example FS unit (red) with peak to trough time and half trough times demarcated. The median waveform is shown in black. Right: Histogram of inter-spike intervals (ISI) of the same FS unit. (C) Left: Superimposed waveforms of an example RS unit (green), where the median waveform is shown in black. Right: Histogram of inter-spike intervals (ISI) of the same RS unit.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Proportional change in spike rate of RS neurons recorded in the PL or A1 produced by SSFO activation of the MD (blue) or MGB (orange) separated by animals. Across animals, a decrease in spike rate was observed in the PL (M1: n = 85 RS neurons, ***p<0.001; M2: n = 73 RS neurons, p=0.286; M3: n = 30 RS neurons, *p=0.0181; M4: n = 93 RS neurons, ***p<0.001; M5: n = 160 RS neurons, ***p<0.001; compared to baseline, Wilcoxon signed rank test), and an increase was observed in A1 (M1: n = 253 RS neurons, ***p<0.001; M2: n = 59 RS neurons, ***p<0.001; M3: n = 65 RS neurons, ***p<0.001; M4: n = 84 RS neurons, ***p<0.001; M5: n = 263 RS neurons, ***p<0.001; compared to baseline, Wilcoxon signed rank test) (B) Proportional change in spike rate of FS neurons recorded in the PL or A1 produced by SSFO activation of MD (blue) or MGB (orange) separated by animals. Across animals, an increase in spike rate was consistently observed in the PL (M1: n = 47 FS neurons, ***p<0.001; M2: n = 53 FS neurons, **p<0.01; M3: n = 22 FS neurons, **p<0.01; M4: n = 73 FS neurons, ***p<0.001; M5: n = 70 FS neurons, ***p<0.001; compared to baseline, Wilcoxon signed rank test), while no consistent change in spike rate was observed in A1 (M1: n = 81 FS neurons, +++p=0.001; M2: n = 38 FS neurons, p=1.000; M3: n = 52 FS neurons, p=0.280; M5: n = 20 FS neurons, p=0.253; compared to baseline, Wilcoxon signed rank test).
+
 Across each animal, we ensured that optical stimulation resulted in comparable increase in thalamic spiking (spiking enhancement: MD = 66.18 +/- 1.89% (mean +/- SEM; n = 298 neurons), MGB = 67.06 +/- 3.83% (mean +/- SEM; n = 597 neurons); Figure 1D; Figure 1—source data 1). Despite the comparable thalamic effect, the impact on target cortical areas was dramatically distinct, which we assessed separately for putative excitatory neurons (regular spiking, RS) and putative inhibitory ones (fast spiking, FS; see Materials and methods for unit label identification and Figure 1—figure supplement 1 for clustering and waveform examples). Specifically, in the PL, MD activation suppressed the spike rate of RS neurons and predominantly enhanced FS neural spiking (n = 441 RS, 265 FS neurons; group averages: Figure 1E–H, Figure 1—source data 1; individual animals: Figure 1—figure supplement 2, Figure 1—figure supplement 2—source data 1). In contrast, MGB activation robustly drove A1 RS neurons with variable effects on FS neurons (i.e. both excitatory and inhibitory effects were observed with similar proportions, n = 724 RS, 191 FS neurons; Figure 1E–H, Figure 1—source data 1; Figure 1—figure supplement 2, Figure 1—figure supplement 2—source data 1). These findings suggested that, at least with this type of broad and sustained manipulation, the MD impacts its PL targets in a manner distinct from those observed across sensory thalamocortical loops, consistent with previous findings (Schmitt et al., 2017).
 
-## MD→PL projections utilize smaller synaptic terminals than MGB→A1 projections
+### MD→PL projections utilize smaller synaptic terminals than MGB→A1 projections
 
 To begin identifying whether the functional divergence observed across the MD→PL and MGB→A1 pathways may be partly explained by gross structural features (Casas-Torremocha et al., 2019; Rodriguez-Moreno et al., 2020), we anterogradely labeled small populations of axons originating from the lateral MD or the ventral division of the MGB. To this end, we iontophoretically delivered biotinylated dextran amine (BDA) into these areas (Figure 2A,D; Figure 2—figure supplement 1; see Materials and methods for details).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram of the iontophoretic injection protocol (left) and images of the center of a representative BDA deposit in the lateral MD (right) Scale bar = 500 µm. (B) Low magnification coronal section of the PL showing areal (left) and laminar (right) distribution of BDA-labeled MD→PL axons. (C) High-magnification images show smaller, more frequent MD→PL boutons in layer 3 of PL. Scale bar = 5 µm. (D) Schematics of iontophoretic injection protocol (left) and representative image of BDA deposit in the ventral MGB (right) Scale bar = 500 µm. (E) Low magnification coronal section of A1 showing areal (left) and laminar (right) distribution of BDA-labeled MGB→A1 axons. (F) High-magnification images show larger, less frequent MGB→A1 boutons in layer 4 of A1. Scale bar = 5 µm. (G) Distribution of thalamocortical axonal bouton sizes (maximal projection area, in µm²) in layers 1, 3 and 5 of PL (left chart) can be compared to that of bouton sizes in layers 1, 3, 4 and 5 of A1 (right chart). (H) Comparison of mean maximal projection areas (µm²) among MD→PL boutons (layers 1, 3 and 5) and MGB→A1 boutons (layers 1, 3, 4 and 5). (***p<0.001; Kruskal Wallis test with Dunn’s corrected multiple comparison; See Figure 2—source data 2). Data are plotted from BDA labeling experiments in N = 3 mice for each nucleus where 350 varicosities were measured per cortical layer (2450 varicosities in total).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Counterstained with Cytochrome oxidase or thionin (case MDL #3). Scale bar = 500 µm.
+
 BDA-labeled axonal varicosities (putative synaptic boutons) were Golgi-like labeled in PL (Figure 2B,C) or A1 (Figure 2E,F). To estimate the size of axonal varicosities (putative synaptic sites), maximal projection areas were measured from live images and a subset of these values were randomly picked from the two cortical areas across all layers (Casas-Torremocha et al., 2019). This procedure revealed a significant difference in thalamocortical bouton sizes across the MD→PL and MGB→A1 pathways, with the latter showing a significantly higher proportion of larger boutons in layer 4 (mean bouton projection areas: A1 (L4) = 1.28 ± 0.54 µm² vs. PL (L3) = 0.77 ± 0.42 µm²; p < 0.001, Kruksal Wallis test with Dunn’s post hoc test, Figure 2—source data 2; p < 0.001, Kolmogorov-Smirnov test Figure 2G,H; Figure 2—source data 2). We however noted that MD boutons in all layers of PL and in MGB boutons in layers 1, 3, and 5 of A1 are significantly smaller, than MGB boutons in layer 4 of A1. This substantial difference in bouton size is consistent with the notion that the MGB→A1 is a driver pathway (Casas-Torremocha et al., 2017; Viaene et al., 2011), whereas the MD→PL pathway may be better described as a modulatory one. The MGB findings are also consistent with previous studies using a comparable approach (Viaene et al., 2011).
 
-## MD→PL projections contact a larger proportion of PV+ inhibitory neurons compared to MGB→A1 projections
+### MD→PL projections contact a larger proportion of PV+ inhibitory neurons compared to MGB→A1 projections
 
 To examine additional structural sources of functional divergence across the MD→PL and MGB→A1 pathways, we took advantage of the recently characterized trans-synaptic anterograde adeno-associated virus (AAV) as a labeling tool (Zingg et al., 2017). Specifically, we used this tool to label, respectively postsynaptic targets of MD and MGB (thalamic injection sites, Figure 3—figure supplement 1) within the PL and A1 with cre-recombinase, followed by the injection of a second AAV harboring a pan-neuronal promoter driving cre-dependent expression of a fluorescent protein, mCherry (Figure 3A). In that manner, all neural postsynaptic targets were labeled across those two cortical areas of interest (Figure 3B, cortical injection site of AAV-FLEX-mCherry).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematics of trans-synaptic anterograde labeling strategies for output targets of mediodorsal (top) and geniculate (bottom) thalamocortical cells. (B) Representative image of PL (top) and A1 (bottom) showing specificity of cortical injection site and trans-synaptic labeling. Scale bars = 500 µm. (C) Representative confocal images of PL neurons trans-synaptically labeled by the MD show labeling of output neurons across layers 2 to 5. Scale bar = 100 µm. (D) A1 neurons trans-synaptically labeled by the MGB primarily reside in layer 4. Scale bar = 100 µm. (E) Laminar distribution of trans-synaptically labeled cells in PL (left, blue) versus A1 (right, orange) quantitatively confirm the MD’s projections to PL are uniformly expressed across layers 2, 3, and 5, while the MGB’s projections to A1 mainly target layer 4. (***p<0.0001, Kruskal-Wallis test with Dunn’s corrected multiple comparison; p values for the significant differences are (from top to bottom) *p=0.0129, *p=0.0159, *p=0.0206) (F) Representative high-magnification images of immunohistochemically labeled parvalbumin neurons in PL (top panel, left), and their overlap with mCherry+ MD output neurons (top panel, right). Representative high magnification images of immunohistochemically labeled parvalbumin neurons in A1 (left) and their overlap with mCherry+ MGB output neurons (right) are shown in the bottom panel. Yellow arrowheads indicate co-labeled neurons. Scale bars = 50 µm. (G) Quantification of percentage of anterogradely labeled neurons which co express PV reveal significantly higher MD innervation of PV interneurons in the PL (blue) than MGB innervation to PV interneurons in A1 (orange) (***p=0.0004, Mann Whitney U test). Data is plotted from n = 3 sections per mouse and N = 4 mice for each condition.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of anterograde tracing protocol of MD output neurons to PL. (B) Injection site of anterograde AAV1 expressing cre in MD marked by Hoescht333342. Scale bar = 200 µm. (C) Schematic of spread of Hoescht33342 in the MD of the four experimental animals used. (D) Schematic of anterograde-tracing protocol of MGB output neurons to A1. (E) Injection site of anterograde AAV1 expressing cre in MGB marked by Hoescht333342. Scale bar = 200 µm. (F) Schematic of spread of Hoescht33342 in the MGB of the four experimental animals used.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Distribution of the number of mCherry+ neurons per section labeled by the anterograde AAV1-cre shows no significant difference between PL neurons labeled by the MD (blue) and A1 neurons labeled by the MGB (orange). (n.s., Mann Whitney U test). Data is plotted from N = 4 mice for each condition. Each solid black dot corresponds to one data point i.e. one section.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Distribution of immunohistochemically labeled parvalbumin positive neurons in the PL (blue) versus A1 (orange) reveal no significant difference between the two cortices. (n.s., Mann Whitney U test). Data is plotted from N = 4 mice for each condition. Each solid black dot corresponds to one data point i.e. one section.
 
 We performed this experiment across four mice for each system (MD→PL and MGB→A1). Although both experiments (MD→PL and MGB→A1) labeled comparable putative postsynaptic neurons across animals (Figure 3—figure supplement 2, Figure 3—figure supplement 2—source data 1), there were important differences in the spatial localization of these neurons. More specifically, while MGB targeted A1 neurons were most densely localized to L4, MD targeted PL neurons were more spatially diffuse (Figure 3C–E; n = 2 to 3 sections, N = 4 mice per condition, Figure 3—source data 1). This is consistent with previous literature showing broad differences of axonal termination across these two systems (Kuramoto et al., 2017; Llano and Sherman, 2008).
 
@@ -57,7 +93,7 @@ To take further advantage of this experiment, we asked whether there was a diffe
 
 Staining for PV followed by post-hoc analysis of the fraction of anterogradely labeled trans-synaptic neurons that co express PV (co-labeled/mCherry+ neurons), showed that the MD→PL targets approximately twice as many PV+ interneurons as the MGB→A1 pathway does (Figure 3F,G; n = 2 to 3 sections per animal; N = 4 mice per condition) while the density of PV+ neurons in the PL and A1 remain comparable (Figure 3—figure supplement 3, Figure 3—figure supplement 2—source data 1). Our results are in line with previous results indicating substantial inhibitory innervation of A1 PV neurons by MGB afferents, (de la Rocha et al., 2008), but additionally indicate that the proportional innervation of these inhibitory neurons in the PL by thalamic afferents is even larger.
 
-## MGB→A1 neurons innervate excitatory cortical neurons with larger synaptic terminals compared to MD→PL neurons
+### MGB→A1 neurons innervate excitatory cortical neurons with larger synaptic terminals compared to MD→PL neurons
 
 At this point, our anterograde experiments pointed to two major differences in cortical innervation across the MD→PL and MGB→A1 pathways: terminal sizes (Figure 2) and E/I innervation (Figure 3). Are these structural variations related to one another in some manner? Meaning, are there differences in terminal sizes that also relate to the identity of the cortical postsynaptic target? This question is of particular relevance given that previous literature suggested the existence of high efficacy thalamocortical transmission across sensory pathways in the form of significant short-latency cross-correlations across functionally aligned LGN V1 neural pairs (Alonso et al., 1996; Alonso et al., 2001).
 
@@ -65,19 +101,51 @@ To address this question, we implemented the mammalian GFP reconstitution across
 
 To label MD→PL and MGB→A1 axosomatic synapses with mGRASP, we transduced MD or MGB with an AAV harboring pre mGRASP:mCerulean and their postsynaptic targets in the PL and A1 (Figure 4A), respectively, with an AAV harboring a cre-dependent post-mGRASP:TdTomato construct. These experiments were performed across both excitatory (CamKII+, n = 40 individual neurons, N = 4 mice for each condition) and inhibitory (PV+, n = 40 individual neurons, N = 4 mice for each condition) neurons to separately evaluate synaptic terminals onto the two components of E/I balance (Figure 4B,C). Consistent with previous results in rodent cortex (Smith and Populin, 2001), the predominant layer four thalamorecepient excitatory cell type is pyramidal (Barbour and Callaway, 2008; Sakata and Harris, 2009). PV+ postsynaptic neurons were targeted using a transgenic mouse line expressing cre recombinase under the control of the PV promoter. Postsynaptic CamKII+ neurons, on the other hand, were targeted using an AAV expressing cre recombinase from a CamKII promoter co-injected along with the cre-dependent AAV harboring post-mGRASP:TdTomato (Figure 4B,C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of synaptic labeling mechanism using PV-Cre driver lines or CamKII-Cre virus to label inhibitory or excitatory synapses, respectively. (B) High magnification confocal image of a post-mGRASP labeled PV+ neuron (magenta) in the PL (top) and A1 (bottom) merged with synaptic labeling by mGRASP (white). Arrowheads indicate putative synapses. Scale bars = 3 µm. (C) High magnification confocal images of a post-mGRASP labeled CamKII+ neuron (magenta) in the PL (top) and A1 (bottom) merged with synaptic expression from mGRASP (white). Scale bars = 3 µm. (D) Quantification of thalamocortical synaptic frequency in PV+ inhibitory neurons (left), and CamKII+ excitatory neurons (right), shows the PL (blue) receives significantly higher frequency of thalamocortical synapses than A1 (orange). (***p<0.0001 for PV neurons, ***p<0.0001 for Pyramidal neurons, Mann Whitney U test). (E) Left: Cumulative frequency distribution of synapses by volume in PV+ inhibitory neurons show no significant difference of volume between the thalamocortical synapses in the PL (blue) and A1 (orange) (n.s., p=0.1703, Kolmogorov-Smirnov test). Right: Cumulative frequency distribution of synapses by volume in CamKII+ excitatory neurons show a significant difference in synaptic volume between thalamocortical synapses in PL (blue), and A1 (orange), with larger synapses on A1 excitatory neurons from MGB. (***p=0.0007, Kolmogorov-Smirnov test). Data is plotted from n = 40 individual PV+ and CamKII+ neurons each from N = 4 mice for each condition.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative image of a post-mGRASP labeled pyramidal neuron (magenta) in the PL with, MD→PL synapses labeled by mGRASP in yellow (left), immunohistochemical labelling of Vglut2+ synapses of thalamocortical origin in cyan (middle) and merged image of Vglut2 signal, and mGRASP signal (right; 27.23 ± 3.04% mean overlap). Arrowheads indicate putative VGlut2+ synapses labeled by mGRASP. Scale bar = 5 µm. Inset shows a zoomed in view of a co-labeled synapse. Scale bar = 1 µm. (B) Representative image of a post-mGRASP labeled pyramidal neuron (magenta) in the A1 with, MGB→A1 synapses labeled by mGRASP in yellow (left), immunohistochemical labelling of Vglut2+ synapses of thalamocortical origin in cyan (middle) and merged image of Vglut2 and mGRASP signal (right; 38.28 ± 5.99% mean overlap). Arrowheads indicate putative VGlut2+ synapses labeled by mGRASP. Scale bar = 5 µm Inset shows a zoomed in view of a co-labeled synapse. Scale bar = 1 µm. (C) Representative image of a post-mGRASP labeled pyramidal neuron (magenta) in the PL with, MD→PL synapses labeled by mGRASP in yellow (left), immunohistochemical labeling of Vglut1+ synapses of corticocortical origin in cyan (middle) and merged image of Vglut1 signal, and mGRASP signal (right; 4.04 ± 1.39% mean overlap). Arrowheads indicate putative VGlut1+ synapses labeled by mGRASP. Scale bar = 5 µm. Inset shows a zoomed in view of a co-labeled synapse. Scale bar = 1 µm. (D) Representative image of a post-mGRASP labeled pyramidal neuron (magenta) in the A1 with, MGB→A1 synapses labeled by mGRASP in yellow (left), immunohistochemical labeling of Vglut1+ synapses of corticocortical origin in cyan (middle) and merged image of Vglut1 signal, and mGRASP signal (right; 3.86 ± 1.99% mean overlap). Arrowheads indicate putative VGlut1+ synapses labeled by mGRASP. Scale bar = 5 µm. Inset shows a zoomed in view of a co-labeled synapse. Scale bar = 1 µm. Data is plotted from n = 5 neurons per animal from N = 2 mice for each condition.
+
 We found that although the MD→PL made more mGRASP labeled synapses across the two neuronal types (Excitatory and Inhibitory; Figure 4D, Figure 4—source data 1), the terminal sizes were strikingly different for those impinging on cortical excitatory (CamKII+) neurons, compared to the MGB→A1 pathway. More specifically, MGB neurons innervated excitatory A1 neurons with significantly larger synaptic terminals, an effect that was specific to this neural population because we did not detect any differences in the sizes of thalamocortical terminals onto PV+ inhibitory neurons across the two systems (Figure 4E, Figure 4—source data 1). As a further validation, we used immunohistochemistry to verify the thalamocortical origins of the synapses labeled by mGRASP. Specifically, we verified the preferential colocalization of the mGRASP signal with a thalamocortical synaptic marker, VGluT2 over VGluT1 (Nahmani and Erisir, 2005), which labels synapses of non-thalamic origin (Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 1). Overall, these results provide a structural basis for the notion that the MGB→A1 is a driver thalamocortical pathway at a single-cell resolution.
 
-## MD→PL neurons receive a diverse set of monosynaptic cortical inputs
+### MD→PL neurons receive a diverse set of monosynaptic cortical inputs
 
 To further characterize the structural differences across the two thalamocortical loops, we sought to map the inputs of the MD→PL and MGB→A1 microcircuits with higher specificity. As such, and to precisely identify the set of monosynaptic inputs innervating MD→PL neurons, we used a two-step labeling approach. First, we rendered MD→PL neurons susceptible to monosynaptic rabies tracing by injecting a retrograde adeno-associated virus (AAVrg) harboring cre-recombinase (Tervo et al., 2016) into the PL and two helper AAV viruses, one of which is cre-dependent to achieve pathway specificity, directly into the MD. Second, and following 2 weeks of incubation, we injected G-deleted pseudorabies into the MD (Figure 5—figure supplement 1; see Materials and methods) (Chatterjee et al., 2018). Consistent with known connectivity patterns between the MD and PL, we found that the majority of cre expressing MD→PL neurons were in the lateral MD subdivision. This also ensured that starter neurons within this subpopulation were predominantly localized to that subdivision (Figure 5—figure supplement 2, Figure 5—figure supplement 2—source data 1). We compared the results from this experiment with those obtained from a similar approach to the MGB→A1 pathway (Figure 5—figure supplements 1 and 2).
 
 Figure 5 (AP 2.60 to −0.80 mm from Bregma) and 6 (AP −2.00 to – 5.00 mm from Bregma) show coronal sections throughout the rostro-caudal axis of the brain, spanning both the forebrain and midbrain. Visual inspection of these representative sections showed that the MD→PL population receives substantial projections from frontal cortical areas including the prelimbic, cingulate and secondary motor cortices (Figure 5A–C). In contrast, MGB→A1 neurons receive comparatively little cortical input, compared to their known driving inputs from inferior colliculus (Figure 6E), which we also find through this method of monosynaptic rabies tracing. Beyond these major differences, the MD→PL neurons, compared to MGB→A1 neurons, receive stronger inputs from motor related subcortical structures such as the deep layers of the superior colliculus, substantia nigra pars reticulata, lateral hypothalamus, zona incerta, ventral pallidum, lateral preoptic area, and anterior olfactory area (Figure 6).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) Representative confocal images of monosynaptic inputs MD→PL neurons (left) and MGB→A1 neurons (right) across the rostro-caudal axis illustrate distinct input patterns in each microcircuit. Distance from bregma appears between each pair of images. N = 5 mice for each condition. Scale bars = 1 mm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of monosynaptic input tracing protocol of MD→PL neurons. (B) Top-left: Injection site of retrograde AAV expressing cre in PL marked by Hoescht333342. Top-right: Helper virus expression (shown in green). Bottom-left: Rabies virus expression (shown in red) in the MD. Bottom-right: Starter neurons in MD co-expressing GFP and mCherry. White arrowheads indicate co-labeled neurons. (C) Schematic of monosynaptic input-tracing protocol of A1 projecting MGB neurons. (D) Top-left: Injection site of retrograde AAV expressing cre in A1 marked by Hoescht 333342. Top-right: Helper virus expression (shown in green). Bottom-left: Rabies virus expression (shown in red) in the MGB. Bottom-right: Starter neurons in MGB co-expressing GFP and mCherry. White arrowheads indicate co-labeled neurons.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Schematic of starter population distribution across individual animals in the MD (B) Fraction of starter neurons in the thalamus show predominant expression in the lateral MD compared to the central or medial division (**p=0.001, Kruksal-Wallis test). Each solid black dot corresponds to one data point that is one section. (C) Schematic of starter population distribution across individual animals in the MGB. (D) Fraction of starter neurons in the MGB show significantly biased expression in the ventral division of the MGB, compared to the dorsal or medial divisions (***p=0.0009, Kruksal-Wallis test). Each solid black dot corresponds to one data point that is one animal. Scale bars = 200 µm (left and middle), 50 µm (right). Data is plotted from N = 5 mice for each condition.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A, B) Significant inputs (>0.5% total input) to MD→PL (A) and MGB→A1 (B) thalamic neurons measured from different brain regions. (c, d) Sagittal schematic of inputs to MD→PL (C) and MGB→A1 (D). Shading in red corresponds to contribution towardsproportion of total input. Each solid black dot corresponds to one data point that is one animal. Data is plotted from N = 5 mice for each condition.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig6-v2.jpg)
 
 **Figure 6.:** (A–E) Representative confocal images of monosynaptic inputs to inputs MD→PL neurons (left) and MGB→A1 neurons (right) across the rostro-caudal axis illustrate distinct input patterns in each microcircuit. Distance from bregma appears beneath the corresponding unified anatomical atlas (Chon et al., 2019) section shown (middle). Regions showed are depicted as numbered (A–C) red boxes on each corresponding atlas section for reference. N = 5 mice for each condition. Scale bars = 500 µm.
 
 Quantitative analysis across several mice (N = 5 mice per condition) confirmed these representative data (Figure 5—figure supplement 3, Figure 5—figure supplement 3—source data 1). That is, the largest source of extrathalamic inputs to MD→PL was cortical (Figure 5—figure supplement 3A), while that to the MGB→A1 was from the midbrain (Figure 5—figure supplement 3B). Importantly, we were able to make quantitative comparisons between these circuits on a single-cell basis, by normalizing these inputs to the number of starter cells seen in the MD or MGB of individual animals. This analysis suggests that when compared on a single neuron basis MD→PL neurons receive five times as many cortical inputs relative to individual MGB→A1 neurons (Figure 7A,B, Figure 7—source data 1), while the opposite pattern holds for midbrain inputs (Figure 7—figure supplement 1). Furthermore, we also found that the cortical inputs to MD→PL showed unique layer-wise distributions where inputs from orbitofrontal cortex (OC) and PL were predominantly from layer 5 (Figure 7C) while inputs from secondary motor cortex (M2) and cingulate cortex (Cg) were from layer 6 (Figure 7C). In contrast cortical inputs to MGB→A1 were by and large restricted to layer 6 (Figure 7D) with sparse input neurons present in layer 5 (Figure 7C). We also found that projections within the thalamus to these two thalamic populations were limited to the thalamic reticular nucleus (TRN) as is known from previous studies (Pinault, 2004). Importantly, these projections were from distinct TRN subnetworks as would be predicted from more recent anatomical and functional studies (Figure 7—figure supplement 1; Clemente-Perez et al., 2017; Crabtree, 2018; Halassa et al., 2014; Krol et al., 2018). Observation of these distinct TRN inputs also served to confirm the specificity of monosynaptic tracing strategy to map brain wide inputs to MD→PL and MGB→A1 thalamocortical neurons.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative images of major cortical inputs to MD→PL loop (left) versus MGB→A1 (right). Scale bars = 200 µm. (B) Quantification of input to starter ratios for each major cortical input region to MD→PL neurons (left, blue) versus MGB→A1 neurons (right, orange) reveal significantly denser cortical inputs per thalamic neuron in the MD→PL loop compared to the MGB→A1 loop (**p=0.0079; Mann Whitney U test with all cortical inputs to MD→PL neurons treated as one group and compared to all cortical inputs to MGB→A1neurons). Each solid black dot corresponds to one data point that is one animal (C) Contribution of layer five neurons to the net cortical input from each major cortical region to MD→PL neurons (left, blue) versus MGB→A1 neurons (right, orange) reveal significantly higher layer five inputs from the OC and PL than those from M2 and Cg to the MD→PL neurons (**p<0.0001; Mann Whitney U test with all layer 5 cortical inputs to MD→PL neurons arising from M2 and Cg treated as one group and compared to all cortical to MD→PL neurons arising from OC and PL). Layer 5 inputs to MGB→A1 neurons constitute only a minor fraction of their cortical inputs. Each solid black dot corresponds to one data point i.e. one animal. (D) Contribution of layer 6 neurons to the net cortical input from each major cortical region to MD→PL neurons (left, blue) versus MGB→A1 neurons (right, orange) reveal a predominant layer 6 input from all major cortical input regions to the MGB→A1 loop. Of all major cortical inputs to MD→PL neurons, the M2 and Cg provide significantly higher layer six input than the OC and PL (***p=0.0004; Mann Whitney U test with all layer five cortical inputs to MD→PL neurons arising from M2 and Cg treated as one group and compared to all cortical to MD→PL neurons arising from OC and PL). Each solid black dot corresponds to one data point that is one animal. Data is plotted from N = 5 mice for each condition.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62554/elife-62554-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Left: Representative confocal image of the major midbrain input to MD→PL neurons (top), and MGB→A1 neurons (bottom). Right: Quantification of input to starter ratio reveals higher number of midbrain inputs per starter in MGB→A1 neurons (orange) than in MD→PL neurons (blue). (**p=0.0079, Mann Whitney U test). Each solid black dot corresponds to one data point i.e. one animal (B) Left: Representative confocal image of anterior TRN inputs MD→PL neurons (top) versus MGB→A1 neurons (bottom). Middle: Representative confocal image of posterior TRN inputs to MD→PL neurons (top) versus MGB→A1 neurons (bottom). Right: Quantification of the fraction of total TRN input to the MD→PL neurons (blue) show no significant difference from total TRN input to MGB→A1 neurons (orange) (n.s., p=0.4206, Mann Whitney U test). Each solid black dot corresponds to one data point that is one animal. Data is plotted from N = 5 mice for each condition. Scale bars = 200 µm.
 
 ## Discussion
 
@@ -97,27 +165,170 @@ In summary, our study supports the notion that, unlike sensory thalamic loops li
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP antibody (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>GFP1010 RRID:AB_2307313</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-chicken IgG (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A32931 RRID:AB_2762843</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-PV (rabbit polyclonal)</td>
+      <td>Swant</td>
+      <td>PV-27 RRID:AB_2631173</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BDA (10 KDa)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1956</td>
+      <td>3% solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>H3570</td>
+      <td>1:1000 solution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Oxford Instruments</td>
+      <td></td>
+      <td>Version 9.3.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td>Version 8.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EnvA-RVdG-mCherry</td>
+      <td>Gift; Dr. Ian Wickersham, MIT Chatterjee et al., 2018</td>
+      <td></td>
+      <td>Rabies virus expressing mCherry</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-TREtight-B19G</td>
+      <td>Gift; Dr. Ian Wickersham, MIT Chatterjee et al., 2018</td>
+      <td></td>
+      <td>AAV expressing B19 variant of G protein</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-syn-FLEX-TA-TVA-GFP</td>
+      <td>Gift; Dr. Ian Wickersham, MIT Chatterjee et al., 2018</td>
+      <td></td>
+      <td>AAV expressing cre dependent TVA, tTA, and GFP</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV2/8-CAG-pre-mGRASP-mCerulean</td>
+      <td>Gift; Dr. Michael Baratta, Univ. of Colorado</td>
+      <td>N.A.</td>
+      <td>AAV expressing pre-mGRASP and mCerulean</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV2/8.CAG.Jx-rev.post-mGRASP-2A-dTomato</td>
+      <td>Gift; Dr. Michael Baratta, Univ. of Colorado</td>
+      <td>N.A.</td>
+      <td>AAV expressing cre dependent post-mGRASP and tdTomato</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAVrg-hSyn-Cre-WPRE-hGH (retrograde)</td>
+      <td>Addgene Vector Core</td>
+      <td>Lot#: 105553-AAVrg</td>
+      <td>AAV expressing cre recombinase</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-hSyn-Cre-WPRE-hGH</td>
+      <td>Addgene Vector Core</td>
+      <td>Lot#: 105553-AAV1</td>
+      <td>AAV expressing cre recombinase</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-pCAG-FLEX-tdTomato-WPRE</td>
+      <td>Addgene Vector Core</td>
+      <td>Lot# 51503</td>
+      <td>AAV expressing cre dependent tdTomato</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-CamKIIa-SSFO-GFP</td>
+      <td>UNC vector core</td>
+      <td>N.A.</td>
+      <td>AAV expressing SSFO and GFP under CamKII promoter</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pENN-AAV-CamKII-0.4.-Cre-SV40</td>
+      <td>Addgene Vector Core</td>
+      <td>Lot#: 105540</td>
+      <td>AAV expressing cre under CamKII promoter</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 A total of 43 mice were used in this study. Adult C57Bl/6 (WT) mice aged 8–12 weeks old were purchased from Taconic Biosciences. PV-Cre mice were obtained from the Jackson laboratories. Cre mice were backcrossed to C57Bl/6 mice for at least six generations. All mice were kept on a 12 hr light-dark cycle, and were group housed with ad libitum access to food and water. All animal experiments were performed according to the guidelines of the US National Institutes of Health and the Institutional Animal Care and Use Committee at the Massachusetts Institute of Technology. Experimental procedures for bouton analysis as shown in Figure 2 were approved by the Autonoma de Madrid University ethics committee and the corresponding Madrid Regional Government agency (PROEX175/16), in accordance with the European Community Council Directive 2010/63/UE. Animals were assigned to either the MD→PL or MGB→A1 group arbitrarily and no distinction was made with respect to gender of the animals.
 
-## Viruses used
+### Viruses used
 
 For retrograde monosynaptic tracing, EnvA-RVdG expressing mCherry (Titer: 1.9 × 1011 vp/mL) was produced as previously described (Chatterjee et al., 2018) and generously provided by Dr. Ian Wickersham, MIT. Helper viruses AAV1-syn-FLEX-TA-TVA-GFP and AAV1-TREtight-B19G for monosynaptic tracing were also were also provided by the Wickersham lab (Titer: 1.0 × 1013 vp/mL). Retrograde AAV expressing Cre (AAVrg-hSyn-Cre-WPRE-hGH) was sourced from Addgene vector core (Addgene Lot#: 105553, Titer: 7.0 × 1012 vp/mL). For trans-synaptic anterograde tracing, AAV1-hSyn-Cre-WPRE-hGH (Addgene Lot# 105553, Titer: 1.0 × 1013 vp/mL), and AAV1-pCAG-FLEX-tdtomato-WPRE (Addgene Lot# 51503, Titer: 1.0 × 1013 vp/mL) were also sourced from Penn vector core. For SSFO experiments an AAV1-CamKIIa-SSFO-GFP was sourced from UNC vector core (Titer: 1.0 × 1013 vp/mL). mGRASP labeling studies were performed using viruses (AAV2/8-CAG-pre-mGRASP-mCerulean, Titer: 2.0 × 1013 vp/mL; AAV2/8.CAG.Jx-rev.post-mGRASP-2A-dTomato, Titer: 1.0 × 1013 vp/mL) which were a kind gift from Dr. Michael Baratta, University of Colorado. For Cre expression in cortical excitatory neurons, an AAV expressing Cre under the CamKIIa promoter was sourced from Addgene vector core (pENN-AAV-CamKII-0.4. Cre-SV40, Titer: 1.0 × 1013 vp/mL).
 
-## Surgeries for anatomical tracing studies
+### Surgeries for anatomical tracing studies
 
 Mice were first anesthetized in an induction chamber receiving a continuous supply of oxygen and 5% isoflurane and then placed on a heating pad within a stereotaxic frame (Kopf Instruments, Tujunga, California). Throughout the surgery, anesthesia was maintained through continuous delivery of 1–2% isoflurane via a nose cone at a rate of 1 L/min and analgesia was provided by dual subcutaneous injections of slow release Buprenorphine (0.5 mg/mL) and Meloxicam (5 mg/mL). The midline of the scalp was sectioned and retracted, and a small craniotomy was made over the target region. After leveling the head, a small burr hole was made over each target region using coordinates based on the mouse brain atlas of Paxinos and Franklin (2008). The coordinates are as followed (in mm from Bregma): PL: AP 2.6, ML ±0.3, DV −1.9; MD: AP −1.1, ML ±0.6, DV −3.0; A1: AP −2.92, ML ±4, DV −2.6; MGB, AP −3.0, ML ±2.05, DV −2.9 (from brain surface). For monosynaptic retrograde-tracing experiments 300 nL of a retrograde AAVrg-hSyn-Cre-WPRE-hGH was injected into the cortex (A1 or PL) to render and 200 nL of helper AAV (1:1 mix of 5 ul AAV1-syn-FLEX-TA-TVA-GFP and AAV1-TREtight-B19G) was injected into the thalamus (MGB or MD). Three weeks later, 100 nL of RVdG-mCh(envA) was injected into the thalamus. Five days later mice were perfused, and their brains extracted for visualization. For trans-synaptic anterograde tracing of MD and MGB outputs to their respective cortices, 90 nL of AAV1-hSyn-Cre-WPRE-hGH was injected to the thalamic region of interest, and 400 nL of AAV1-pCAG-FLEX-tdtomato-WPRE was injected to the respective cortical region. Three to four weeks later, mice were perfused, and their brains were extracted for visualization. To label thalamocortical synapses onto cortical parvalbumin expressing interneurons, 75 nL of AAV-pre-mGRASP-mCerulean was injected into the MD or MGB, and 200 nL of AAV-FLEX-post-mGRASP-TdTomato was injected into the PL or A1, respectively of PV-Cre mice. To label excitatory synapses of thalamocortical innervations, 75 nL of AAV-CAG-pre-mGRASP-mCerulean was injected into the MD or MGB, and 200 nL of pENN-AAV-CamKII-0.4.-Cre-SV40 mixed (1:2) with AAV-FLEX-post-mGRASP-TdTomato was injected into the PL or A1, respectively. In both cases, mice were given 2 weeks for cells to fluoresce before perfusing animals as described in the Histology and IHC section.
 
 Viruses were injected through a glass micropipette (Drummond Scientific) using a quintessential stereotactic injector (QSI, Stoelting, Wood Dale, Illinois). Virus was injected at a flow rate of 50 nL/min and given 10 min to spread post-injection. After the injection micropipettes were slowly retracted followed by closure of the incision. To anterogradely label thalamocortical axons from small populations of neurons located in MD or MGB, borosilicate glass micropipettes with internal glass filament (1 mm outer diameter, 4–5 μm of inner tip diameter; WPI, Sarasota, FL, USA) were backfilled with a 3% solution of lysine-fixable biotinylated dextran amine (BDA) of 10 KDa (Thermo Fisher, D1956) in PB 0.01M, pH7.4 and stereotaxically positioned over the MD or MGB. BDA was delivered by iontophoresis (positive current of 200 nA, 1 s on/off cycles) for 40 min, using a Dual Current 260 source (WPI). The micropipette was then left in place for 10 min before removal and wound closure. After a survival period of 7 days animals were sacrificed for visualization of cortical boutons.
 
-## Histology and IHC
+### Histology and IHC
 
 After viral injections were given time to express, mice were trans-cardially perfused with 30 ml of phosphate buffered saline (PBS) followed by 20 ml of 4% paraformaldehyde (PFA) in PBS. Brains were allowed to post-fix overnight at 4°C, then cryoprotected in PB 0.1M containing 30% sucrose for 24 hr. Serial 50 µm thick coronal sections were prepared using a Thermo HM550 cryotome. To enhance the GFP signal of the TVA helper construct, immunohistochemistry was performed. Briefly, sections were first permeabilized by washing in PBS-0.3% Triton X-100. Next, sections were blocked in 10% bovine serum albumin (Sigma Millipore) in PBS-0.3% Triton X-100 for 1 hr. Then, sections were moved to 3% normal goat serum in PBS-0.1% Triton X-100 and incubated with primary chicken anti-GFP antibody (1:1000, Aves Labs, GFP1010) overnight at 4°C. After another wash, sections were incubated in the secondary Alexa Fluor 488 goat anti-chicken antibody (1:500, Thermofisher, A32931) for 2 hr at room temperature. Sections were then washed in PBS-0.1% Triton X-100 and mounted for imaging. To stain for PV expressing neurons in the cortex, brains were permeabilized and blocked as stated previously. After blocking, sections were moved to 3% bovine serum albumin in PBS-0.1% Triton X-100 and incubated with primary rabbit anti-PV (1:1000, Swant, PV-27) overnight at 4°C. After another wash, sections were incubated in the secondary Alexa Fluor 488 goat anti-Rabbit antibody (1:500, Thermo Fisher, A32731) for 2 hr at room temperature. To stain for VGluT1 and VGluT2 the same procedure was used as described for anti-PV staining using anti rabbit antibodies (VGluT1: 1:500, Synaptic Systems, 135303 and VGluT2: 1:500, Synaptic Systems, 135403). Post staining all sections were washed in PBS-0.1% Triton X-100 and mounted on glass slides and coverslipped with anti-fade mounting media (Prolong Gold, Thermo, P36930) for imaging. For all viral injections specificity of injection sites were verified using virally expressed fluorescent proteins (GFP, TdTomato, etc). For viruses where, fluorescent probes were not present in the virus itself, namely AAVrg-hSyn-Cre-WPRE-hGH and pENN-AAV-CamKII-0.4.-Cre-SV40, we co-injected a fluorescent dye which is actively taken up by cells (Hoechst 33342, Thermo Fischer, H3570), to mark the injection sites (Figure 3—figure supplement 1, and Figure 5—figure supplements 1 and 2). Animals where injection sites missed the target location were discarded and only those animals where injection sites were specific were included for further analysis and are reported as Ns for animal numbers.
 
 To visualize BDA, sections were processed using avidin-biotine-peroxidase kit (1:100; Vectastain Elite, Vector Laboratories, Burlingame, CA, USA) and diaminodiaminobenzidine–glucose oxidase with nickel enhancement (Veenman et al., 1992). For a precise cytoarchitectonic delineation of thalamic nuclei and cortical layers, one series of sections was lightly counterstained with thionin, and the adjacent series was counterstained with cytochrome oxidase histochemistry (CyO) (Wong-Riley, 1989). Both series of sections were mounted on glass slides, dehydrated in ethanol, cleared in xylene and coverslipped with DePex (Serva, Heidelberg, Germany).
 
-## Image analysis
+### Image analysis
 
 All images for monosynaptic input tracing experiments were generated using a confocal microscope (LSM 710, Zeiss) with 10x/0.45 numerical aperture, 20x/0.80 numerical aperture, or 63x/1.40 numerical aperture objectives (Zeiss). Images were adjusted for contrast in ImageJ and then manually overlaid with vectorized slides from a modified version of the Reference atlas from the Allen Brain Atlas (Unified anatomical atlas) (Chon et al., 2019). Overlays were resized and positioned using anatomical landmarks. Input cells, within each brain area, expressing mCherry were then manually counted, using ImageJ’s (NIH) cell counting plugin.
 
@@ -129,26 +340,26 @@ For analysis of synapses labeled by mGRASP, PL or A1 containing sections were im
 
 To determine the location of BDA deposits in the thalamus and the labeled axons in the cortex, sections were systematically examined under bright-field optics using a Nikon Eclipse 600 microscope (Nikon, Tokyo, Japan). BDA-labeled axonal varicosities (putative synaptic boutons) were clearly seen in prefrontal or primary auditory cortices as ovoid axonal enlargements. To estimate the size of varicosities, maximal projection areas were measured from live images using a Nikon DMX1200 camera attached to the microscope and the NIS-Elements software tools (v3.2; Nikon) (see details in Casas-Torremocha et al., 2019). For each cortical area and layer, 350 varicosities were randomly selected and measured (total of 2450 varicosities). Axonal enlargements were considered as varicosities when their diameters were at least twice the adjacent axonal segment. Varicosities with maximal projection areas below the microscope resolution limit (0.2 μm2) were not included.
 
-## Multi-electrode array construction and implantation
+### Multi-electrode array construction and implantation
 
 Custom multi-electrode array scaffolds (drive bodies) were designed using 3D CAD software (SolidWorks) and printed in Accura 55 plastic (American Precision Prototyping) as described in previous studies (Schmitt et al., 2017; Wimmer et al., 2015). Prior to implantation, each array scaffold was loaded with 16–24 independently movable micro-drives carrying 12.5 μm nichrome (California Fine Wire Company) tetrodes. Electrodes were pinned to custom-designed, 96- or 128-channel electrode interface boards (EIB, Sunstone Circuits) along with a common reference wire (A-M systems). For combined optogenetic manipulations and electrophysiological recordings, optic fibers (Doric lenses, Quebec, Canada) were embedded above or adjacent (for fibers equipped with a 45-degree mirror tip) to the electrodes. For analgesia, mice were injected with slow-release Buprenorphine (0.1 mg/kg) prior to surgery. Then animals were deeply anaesthetized with 1% isofluorane and mounted on a stereotactic frame. The animals head was shaved, and remaining hair removed with Nair. Body temperature was measured through a rectal probe and maintained using an electrical heating pad. An incision in the skin allowed access to the skull. A ~ 1.2×1.6 mm craniotomy was drilled centered at (in mm from Bregma) AP 2.0 mm, ML 0.6 mm for PFC, at AP −1.0 mm, ML 0.5 mm for MD, at AP −2.8 mm, ML 4.0 mm for A1 and at AP −3.0 mm, ML 2.0 mm, DL 3.3 mm for MGB recordings. The dura was carefully removed, and the drive implant was lowered into the craniotomy using a stereotactic arm until the shortest tetrodes touched the cortical surface. Surgilube (Savage Laboratories) was applied around electrodes to guard against fixation through dental cement. Stainless-steel screws were implanted into the skull to provide electrical and mechanical stability and the entire array was secured to the skull using dental cement. The skin was subsequently closed with Vetbond and the animal was allowed to recover on a heating blanket.
 
-## Head fixation recordings
+### Head fixation recordings
 
 Simultaneous recordings from MD and PL or MGB and A1 were conducted in a custom-built setup. The head-fixation system consisted of a pair of custom 3D printed plastic fixation clamps (MakerBot Replicator, Brooklyn, NY) used to lock the implanted plastic crown at the base of the implant into place during recordings. These were fixed to an acrylic plastic frame which also supported a platform on which the animal stood. The platform was composed of low-friction acrylic and was adjusted based on the height of the animal and spring-loaded to minimize torque on the implant.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Signals from tetrodes (thalamic recordings) were acquired using a Neuralynx multiplexing digital recording system (Neuralynx, Bozeman MT) via a combination of 32- and 64-channel digital multiplexing head stages plugged to the 32–96 channel EIB of the implant. Signals from each electrode were amplified, filtered between 0.1 Hz and 9 kHz and digitized at 30 kHz. For thalamic recordings, tetrodes were lowered from the cortex into MD −2.8 to −3.2 mm DV and into the MGB −2.8 to −3.2 mm DV. For PFC recordings, adjustments accounted for the change of depth of PL across the anterior-posterior axis. Thus, in anterior regions, unit recordings were obtained between-1.2 and −1.7 mm DV whereas for more posterior recordings electrodes were lowered −2 to −2.4 mm DV. For A1 unit recordings were obtained between −2.5 and −3.0 mm DV. Following acquisition, spike sorting was performed offline based on relative spike amplitude and energy within electrode pairs using the MClust toolbox (http://redishlab.neuroscience.umn.edu/mclust/MClust.html).
 
-## Identification of FS and RS cells
+### Identification of FS and RS cells
 
 After initial clustering, PL and A1 units were divided into fast spiking (FS) and regular spiking (RS) based on waveform characteristics and properties of the distributions of inter-spike interval (ISI) as described previously (Halassa et al., 2014). Features of spike waveforms such as the peak to trough time were measured for each unit across all spike waveforms. We also incorporated a measure of spike timing that has previously been used to identify FS neurons (mode of the ISI). Recorded neurons were then separated using a clustering method for three feature dimensions: 1. Half trough time 2. Peak to trough time and 3. Mode of the inter spike interval (English et al., 2017; Figure 1—figure supplement 1). Clustering across these dimensions were assessed using k-means clustering as described previously (Nakajima et al., 2019b).
 
-## Firing rate analysis
+### Firing rate analysis
 
 For all thalamic and cortical neurons, changes in firing rate were assessed using peri-stimulus time histograms (PSTHs). PSTHs were computed using a 1 ms bin width for individual neurons in each recording session. Proportional firing rate change was calculated relative to a 500 ms long baseline where there was no optogenetic activation of the SSFO.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with GraphPad Prism software (version 8.0, Prism, San Diego, California, USA). Due to the limited size of sampled data sets we assumed non-normality throughout our statistical analysis and hence performed non-parametric testing. For each statement of statistical difference included in the manuscript, a corresponding statistical comparison was performed, as mentioned in the figure legends. Briefly, we used Mann Whitney U test for all comparisons between two groups comprised of independent samples and Wilcoxon signed rank test when the samples were dependent. For comparison of cumulative distributions, the Kolmogorov-Smirnov test was used. For comparing more than two groups against each other we used the Kruskal Wallis test followed by Dunn’s corrected multiple comparison. All p values are listed in the figure legends. Values are expressed as medians +/- 95% range in box-whisker plots and mean +/- SEM for bar graphs.

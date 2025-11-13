@@ -36,9 +36,7 @@ The dataset reproduced above from the paper by Oh et al. suggests that tiling of
 
 However, as evidenced by the original tiled CARS image below of their specimen (A), even after basic correction, image boundaries are still visible. Their method seems to give very good image merging and registration on a large scale (e.g. across the ~6mm of the image) as shown in (C), but no zoom of a small region is presented so it is unclear how accurately fine detail can be registered. We also note that the overall signal level in (C) is decreased by around 25% from that obtained in (A) when applying their method, which may prove limiting when using weakly fluorescent specimens.
 
-Aside from their own algorithm, the work of Legesse et al. also presents a side-by-side comparison of commonly available algorithms for stitching and tiling of the same dataset. Image (D) presents the image after using the ImageJ Grid/Collection stitching plugin, (E) shows the results from using the MosaicJ plugin, and (F) shows the outcome from applying Microscoft ICE. In all instances, image registration is poor and inhomogeneities are clearly visible.10.7554/eLife.18659.017Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.18659.017
-
-DOI: http://dx.doi.org/10.7554/eLife.18659.017
+Aside from their own algorithm, the work of Legesse et al. also presents a side-by-side comparison of commonly available algorithms for stitching and tiling of the same dataset. Image (D) presents the image after using the ImageJ Grid/Collection stitching plugin, (E) shows the results from using the MosaicJ plugin, and (F) shows the outcome from applying Microscoft ICE. In all instances, image registration is poor and inhomogeneities are clearly visible.10.7554/eLife.18659.017Author response image 1.
 
 We conclude that image merging and registration of tiled datasets may offer some advantage over uncorrected data, but that continuous scanning of a single spot over the same field eliminates this uncertainty altogether. We have amended the Introduction:
 

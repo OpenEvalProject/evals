@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02zhqgq86 WHO Collaborating Center for Infectious Disease Epidemiology and Control, School of Public Health, LKS Faculty of Medicine, The University of Hong Kong, Hong Kong Special Administrative Region Hong Kong China
-2. https://ror.org/02mbz1h25 Laboratory of Data Discovery for Health Limited Hong Kong China
-3. https://ror.org/013meh722 Department of Genetics, University of Cambridge Cambridge United Kingdom
-4. https://ror.org/03v76x132 Center for Infectious Disease Modeling and Analysis, Yale School of Public Health New Haven United States
-5. https://ror.org/00hj54h04 Department of Molecular Biosciences, John Ring LaMontagne Center for Infectious Disease Institute for Cellular and Molecular Biology, University of Texas at Austin Austin United States
-6. https://ror.org/00hj54h04 Department of Integrative Biology, University of Texas at Austin Austin United States
-7. https://ror.org/01arysc35 Santa Fe Institute Santa Fe United States
+1. WHO Collaborating Center for Infectious Disease Epidemiology and Control, School of Public Health, LKS Faculty of Medicine, The University of Hong Kong, Hong Kong Special Administrative Region Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
+2. Laboratory of Data Discovery for Health Limited Hong Kong China ([ROR:02mbz1h25](https://ror.org/02mbz1h25))
+3. Department of Genetics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. Center for Infectious Disease Modeling and Analysis, Yale School of Public Health New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+5. Department of Molecular Biosciences, John Ring LaMontagne Center for Infectious Disease Institute for Cellular and Molecular Biology, University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+6. Department of Integrative Biology, University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+7. Santa Fe Institute Santa Fe United States ([ROR:01arysc35](https://ror.org/01arysc35))
 
 † Corresponding author
 
@@ -44,6 +44,14 @@ We analyzed HKHA electronic health records (EHR) for 208 SARS-CoV-2 positive pat
 
 By fitting a mathematical model of SARS-CoV-2 kinetics within a single patient to the viral load measurements, we estimate the rates at which viral particles infect susceptible host cells (β), infected cells are cleared (δ), and infected cells release viral particles (π), as well as the maximum efficacy of Paxlovid for reducing the replication rate of SARS-CoV-2 viruses (0.91) (National Library of Medicine (U.S.), 2023; Hammond et al., 2022; Supplementary file 1, Supplementary file 2). The fitted model simulates viral load trajectories that mirror the observed data in the treated and untreated cohorts (Figure 1A and B, Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89801/elife-89801-fig1-v2.jpg)
+
+**Figure 1.:** Observed and model estimated viral load kinetics for each day post onset of symptoms (DPOS) for hospitalized COVID-19 patients who (A) received Paxlovid treatment (N=104) or (B) did not receive antiviral treatment (N=104) between 6 January and 1 May 2022 in Hong Kong. Blue points correspond to actual individual patients; red squares and error bars indicate medians and 95% interpercentile ranges across simulated patients. Day zero corresponds to the first day of symptoms. (C) Distribution of treatment initiation times for the 104 patients who received Paxlovid (Supplementary file 4). (D) Estimated patient viral loads for three different Paxlovid treatment initiation times. Points and shading represent the estimated medians and 95% interpercentile ranges across 1000 simulations. (E) Chance of a post-treatment rebound (gray line, right y-axis) and expected reduction in infectiousness across all patients (blue bars, left y-axis) and patients who do not experience a rebound (black bars, left y-axis), depending on the timing of treatment initiation. Rebound probabilities are estimated by the fraction out of 1000 simulations in which the viral titer reached higher values after treatment than before treatment. Reduced infectiousness is estimated by comparing the areas under the estimated infectiousness curves for untreated versus treated patients. Bars and whiskers indicate medians and 95% interpercentile ranges across 1000 pairwise comparisons.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89801/elife-89801-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each graph corresponds to measurements for hospitalized COVID-19 patients who either (A) received Paxlovid treatment (N=104) or (B) did not receive any antiviral drug (N=104) between 6 January and 1 May 2022 in Hong Kong (blue points). Red lines show estimates from the fitted model for each individual. Day zero indicates the first day of infection.
+
 Of the 104 patients who received Paxlovid, 63% initiated treatment within five days post the onset of symptoms (DPOS) (Figure 1C). As we vary the treatment initiation time from one to nine DPOS, the model projects precipitous drops in viral load within the first 24 hr of receiving Paxlovid (Figure 1D). If treatment is initiated the day after symptoms appear, we estimate a 74% chance that viral growth will rebound substantially post treatment (Figure 1E, Supplementary file 3), peaking around 10 DPOS. For more delayed treatment schedules, the probability and magnitude of rebounds are lower. Patients who initiate treatment three or five DPOS have an estimated 17% or 1% chance of a rebound, respectively. The estimated overall reduction in infectiousness for patients who do not experience rebounds declines from 12% (95% CI: 0%, 16%) for patients who start treatment three DPOS to 0% (95% CI: 0%, 9%) for patients starting treatment 10 DPOS (Figure 1E, Supplementary file 3).
 
 ## Discussion
@@ -60,7 +68,7 @@ In conclusion, fast-acting antiviral drugs like Paxlovid have the potential to r
 
 ## Materials and methods
 
-## Data
+### Data
 
 We analyzed electronic health records of hospitalized Hong Kong Hospital Authority patients between 8 and 103 years of age who were COVID-19 positive but did not receive oxygen therapy, between January 6, 2022 and May 1, 2022 (Figure 2). COVID-19 status was determined by a transcription-polymerase chain reaction (RT-qPCR) test or a rapid antigen test. Each patient record includes demographic information, drug administration data, symptoms, laboratory test results, and daily viral titer measurements (i.e. RT-qPCR cycle threshold (Ct) values) between 8 and 15 days post symptom onset. We convert Ct values to viral load as given by log10(Viral load [copies/mL])=–0.32 Ct+14.11 (Jeong et al., 2021; Peiris et al., 2003).
 
@@ -70,30 +78,80 @@ We analyzed electronic health records of hospitalized Hong Kong Hospital Authori
 
 To select cohorts of patients with mild-to-moderate illness, we classify patients according to their daily reported clinical conditions as follows: (1) critical: in intensive care unit, intubated, in shock, or require extracorporeal membrane oxygenation; (2) serious: require oxygen supplement of 3 L or more per minute; (3) stable: mild influenza-like illness symptoms; (4) satisfactory: progressing well and likely to be discharged soon. We select only patients who maintain stable or satisfactory levels throughout their hospital stay.
 
-## Cohort selection
+### Cohort selection
 
 After identifying 104 patients who received Paxlovid but not oxygen therapy in the data set, we used propensity score matching to create a cohort of 104 other patients who received neither an antiviral drug (Paxlovid or molnupiravir) nor oxygen therapy. We matched based on age group (5~17, 18~50, 51~65, >65), gender, and vaccination status (i.e. fully vaccinated or not).
 
-## Within-host model of SARS-CoV-2 viral kinetics and antiviral treatment
+### Within-host model of SARS-CoV-2 viral kinetics and antiviral treatment
 
-Within a given host i, susceptible cells (Ui) can be infected by active viruses Vi at a rate β and thereby transition to cells in the eclipse phase (Ei) and infected cells (Ii), according to the following system of equations by including a prototypical innate response (e.g. type-I interferon) (Ke et al., 2021) that makes cells refractory to viral infection (Ri):dUidt=−βUiVi−ϕIiUi+ρRidRidt=ϕIiUi−ρRidEidt=βUiVi−kEidIidt=kEi−δIidVidt=(1−ϵt)πIi−cVi
+Within a given host i, susceptible cells (Ui) can be infected by active viruses Vi at a rate $\beta$ and thereby transition to cells in the eclipse phase (Ei) and infected cells (Ii), according to the following system of equations by including a prototypical innate response (e.g. type-I interferon) (Ke et al., 2021) that makes cells refractory to viral infection (Ri):
 
-where the death rate and the replication rates of infected cells are δ and π, respectively, and the viral death rate is c. The interferon-induced conversion of target cells to refractory cells has the rate Φ. And the rate at which refractory cells become target cells again is ρ. The antiviral efficacy is ϵ, which is the rate at which the drug inhibits the replication of infected cells. The initial number of infected cells (E0),the initial number of target cells (U0), the virus clearance rate c, and the rate of the eclipse phase are fixed as 1 cell, 8×107 cells, 10 per day, and 4 per day, respectively (Ke et al., 2021). We incorporate a gradual decline in Paxlovid efficacy following a five-day course of treatment, using a pharmacokinetic model introduced in a recent study of Paxlovid rebound dynamics. Our model assumes that Paxlovid efficacy (ϵt) is 0 prior to the first dose and then given by:ϵt=ϵmaxCtCt+EC50Ct=C^kake−kae−kete−kaId−1[1−e(ke−ka)t(1−eNd,tkaId)+(ekeId−ekaId)(e(Nt−1)keId−1ekeId−1)−e((Nd,t−1)ke+ka)Id]
+$$
+\frac{dU_{i}}{dt}=−\betaU_{i}V_{i}−ϕI_{i}U_{i}+ρR_{i}
+$$
 
-where t is the time elapsed since receiving the first dose and ϵmax is the maximum antiviral effectiveness, which we estimate by fitting the model to clinical trial data. EC50 is the concentration at which the drug effectiveness is half-maximal (62 nM) (US Food and Drug Administration, 2021); C^ is the product of the bioavailability of the drug and the mass of the drug administered in a dose per volume (6.25×103 nM) (US Food and Drug Administration, 2021; National Center for Biotechnology Information, 2024); Nd,t is the number of doses administered in the period up to time t; ke is the elimination rate (2.8 /day) (US Food and Drug Administration, 2021); ka is the absorption rate (17.5 /day) (Dixit and Perelson, 2004; Perelson et al., 2023); Id is the dosing interval (1/2 day) (Dixit and Perelson, 2004; Perelson et al., 2023).
+
+
+$$
+\frac{dR_{i}}{dt}=ϕI_{i}U_{i}−ρR_{i}
+$$
+
+
+
+$$
+\frac{dE_{i}}{dt}=\betaU_{i}V_{i}−kE_{i}
+$$
+
+
+
+$$
+\frac{dI_{i}}{dt}=kE_{i}−\deltaI_{i}
+$$
+
+
+
+$$
+\frac{dV_{i}}{dt}=(1−ϵ_{t})\piI_{i}−cV_{i}
+$$
+
+where the death rate and the replication rates of infected cells are $\delta$ and $\pi$, respectively, and the viral death rate is c. The interferon-induced conversion of target cells to refractory cells has the rate Φ. And the rate at which refractory cells become target cells again is ρ. The antiviral efficacy is $ϵ$, which is the rate at which the drug inhibits the replication of infected cells. The initial number of infected cells (E0),the initial number of target cells (U0), the virus clearance rate c, and the rate of the eclipse phase are fixed as 1 cell, 8×107 cells, 10 per day, and 4 per day, respectively (Ke et al., 2021). We incorporate a gradual decline in Paxlovid efficacy following a five-day course of treatment, using a pharmacokinetic model introduced in a recent study of Paxlovid rebound dynamics. Our model assumes that Paxlovid efficacy ($ϵ_{t}$) is 0 prior to the first dose and then given by:
+
+$$
+ϵ_{t}=ϵ_{max}\frac{C_{t}}{C_{t}+EC50}
+$$
+
+
+
+$$
+C_{t}=C^\frac{k_{a}}{k_{e}−k_{a}}\frac{e^{−k_{e}t}}{e^{−k_{a}I_{d}}−1}[1−e^{(k_{e}−k_{a})t}(1−e^{N_{d,t}k_{a}I_{d}})+(e^{k_{e}I_{d}}−e^{k_{a}I_{d}})(\frac{e^{(N_{t}−1)k_{e}I_{d}}−1}{e^{k_{e}I_{d}}−1})−e^{((N_{d,t}−1)k_{e}+k_{a})I_{d}}]
+$$
+
+where $t$ is the time elapsed since receiving the first dose and $ϵ_{max}$ is the maximum antiviral effectiveness, which we estimate by fitting the model to clinical trial data. EC50 is the concentration at which the drug effectiveness is half-maximal (62 nM) (US Food and Drug Administration, 2021); $C^$ is the product of the bioavailability of the drug and the mass of the drug administered in a dose per volume (6.25×103 nM) (US Food and Drug Administration, 2021; National Center for Biotechnology Information, 2024); $N_{d,t}$ is the number of doses administered in the period up to time $t$; $k_{e}$ is the elimination rate (2.8 /day) (US Food and Drug Administration, 2021); $k_{a}$ is the absorption rate (17.5 /day) (Dixit and Perelson, 2004; Perelson et al., 2023); $I_{d}$ is the dosing interval (1/2 day) (Dixit and Perelson, 2004; Perelson et al., 2023).
 
 The incubation period of the SARS-CoV-2 Omicron variant is estimated to be 3.6 days (Du et al., 2022). We calibrate parameters in the model using a nonlinear mixed-effect model with both the fixed effect (population scale) and random effect (individual scale) in software MONOLIX 2021R1 (Traynard et al., 2020). Fixed effects are population parameters that govern all patients and random effects are variable across individuals. To estimate the six model parameters governing the viral load dynamics, we fitted the within-host model to the observed SARS-Cov-2 RNA titer (log10 copies/mL) measured across 208 patients adults treated with or without Paxlovid between January 6, 2022 and May 1, 2022. We used the Stochastic Approximation Expectation-Maximization (SAEM) algorithm to estimate these parameters (Miao et al., 2011; Traynard et al., 2020) assuming fixed values for the initial numbers of infecting virions and susceptible target cells following Ke et al., 2021 and confirmed the convergence of the estimates via trace plots. The SAEM algorithm is an established method in population pharmacology modeling with clear convergence indicators (Delyon et al., 1999; Population parameter using SAEM algorithm, 2016).
 
-## Incorporating uncertainty into viral load projections
+### Incorporating uncertainty into viral load projections
 
 We use the within-host model to simulate the viral load trajectories of patients under various treatment scenarios. For each simulation, we randomly select parameter values from triangular distributions with modes and ranges set to the medians and 95% CI estimated from the clinical data (Supplementary file 1).
 
-To estimate the impact of treatment time on viral load dynamics (Figure 1D) and infectiousness (Figure 1E), we compare pairs of model simulations (with versus without Paxlovid treatment). Each pair shares the same randomly-generated parameter values, including an incubation period randomly selected from a previously-estimated distribution (Triangular(2.3,3.6,4.9) days) (Du et al., 2022).
+To estimate the impact of treatment time on viral load dynamics (Figure 1D) and infectiousness (Figure 1E), we compare pairs of model simulations (with versus without Paxlovid treatment). Each pair shares the same randomly-generated parameter values, including an incubation period randomly selected from a previously-estimated distribution ($Triangular(2.3,3.6,4.9)$ days) (Du et al., 2022).
 
-In order to translate differences in the simulated viral titers into differences in infectiousness, we used the following published model relating household transmission risk to viral load (Marc et al., 2021).logit(Pi(t))={αiflog10(Vi(t))≤6α+β(log10(Vi(t))−6)iflog10(Vi(t))>6
+In order to translate differences in the simulated viral titers into differences in infectiousness, we used the following published model relating household transmission risk to viral load (Marc et al., 2021).
 
-where Pi(t) denotes the probability that individual i infects a susceptible household member at time, t,α =–2.94, which corresponds to a baseline probability of transmission of 5% (Marc et al., 2021), and β = 0.49 (Marc et al., 2021). We assume that the relative infectiousness of a patient throughout their infection can be approximated by the area under the household infectivity curve from the time of infection (tr) until 15 days post the onset of symptoms (tΓ), as given byΩi=∫tγtΓPi(t)dt.
+$$
+logit(P_{i}(t))={\alphaiflog_{10}(V_{i}(t))\leq6\alpha+\beta(log_{10}(V_{i}(t))−6)iflog_{10}(V_{i}(t))>6
+$$
 
-For a given pair of simulations (i), we then compare the projected infectiousness of the treated patient ip to that of the untreated patient iu, as given byΔi=1−ΩipΩiu.
+where $P_{i}(t)$ denotes the probability that individual i infects a susceptible household member at time, $t,\alpha$ =–2.94, which corresponds to a baseline probability of transmission of 5% (Marc et al., 2021), and β = 0.49 (Marc et al., 2021). We assume that the relative infectiousness of a patient throughout their infection can be approximated by the area under the household infectivity curve from the time of infection ($t_{r}$) until 15 days post the onset of symptoms ($t_{Γ}$), as given by
+
+$$
+Ω_{i}=\int_{t\gamma}^{tΓ}P_{i}(t)dt.
+$$
+
+For a given pair of simulations (i), we then compare the projected infectiousness of the treated patient $i_{p}$ to that of the untreated patient $i_{u}$, as given by
+
+$$
+Δ_{i}=1−\frac{Ω_{i_{p}}}{Ω_{i_{u}}}.
+$$
 
 For each treatment initiation time considered, we report the median and 95% confidence intervals of the reduction in infectiousness (Δ) based on 1000 pairs of simulations.

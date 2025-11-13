@@ -18,12 +18,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00yx5cw48 EMBL Australia Node in Single Molecule Science, School of Biomedical Sciences, UNSW Sydney Australia
-2. https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology Cambridge United Kingdom
-3. https://ror.org/01ej9dk98 Department of Biochemistry and Pharmacology, Bio21 Molecular Science and Biotechnology Institute, University of Melbourne Melbourne Australia
-4. https://ror.org/02k3cxs74 Structural Biology Unit, St. Vincent’s Institute of Medical Research Fitzroy Australia
-5. https://ror.org/03r8z3t63 The Kirby Institute, UNSW Sydney Australia
-6. https://ror.org/001mm6w73 Division of Infection and Immunity, University College London London United Kingdom
+1. EMBL Australia Node in Single Molecule Science, School of Biomedical Sciences, UNSW Sydney Australia ([ROR:00yx5cw48](https://ror.org/00yx5cw48))
+2. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
+3. Department of Biochemistry and Pharmacology, Bio21 Molecular Science and Biotechnology Institute, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+4. Structural Biology Unit, St. Vincent’s Institute of Medical Research Fitzroy Australia ([ROR:02k3cxs74](https://ror.org/02k3cxs74))
+5. The Kirby Institute, UNSW Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+6. Division of Infection and Immunity, University College London London United Kingdom ([ROR:001mm6w73](https://ror.org/001mm6w73))
 
 † Corresponding author
 
@@ -55,41 +55,89 @@ Here, we have used single-molecule fluorescence imaging to show that LEN breaks 
 
 ## Results
 
-## Single-virion analysis of intrinsic capsid stability and uncoating
+### Single-virion analysis of intrinsic capsid stability and uncoating
 
 We used a single-molecule fluorescence imaging assay to measure the intrinsic capsid stability and uncoating kinetics at the level of individual viral particles (Márquez et al., 2018) and then measured the effect of LEN treatment on these processes. As shown schematically in Figure 2A, we used pore-forming proteins to permeabilise GFP-loaded HIV particles immobilised at the bottom surface of a microfluidic channel device. Using TIRF microscopy, we then detected the stepwise loss of the GFP signal for each virion appearing as a bright diffraction-limited spot in the field of view. Upon membrane permeabilisation, virions with a ‘leaky’ capsid lost their entire GFP signal in a single step (Figure 2B). In contrast, virions containing an intact capsid retained the pool of GFP inside the capsid. This residual (low intensity) GFP signal was lost in a second step upon spontaneous loss of capsid integrity (Figure 2B, ‘opening’), whereby the lifetime of each opening capsid was given by the time difference between the two GFP release steps. A subset of GFP-containing capsids remained at the end of the experiment (Figure 2B, ‘closed’), because the 30-min imaging period was not long enough to observe opening of all capsids. Finally, virus preparations also contained a subset of immature particles that remain at the initial high intensity level throughout the imaging period because the GFP remains bound to the viral membrane as part of the immature Gag lattice (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic diagram of a viral particle at different stages of uncoating detected in the assay. HIV particles were produced using a proviral construct with internal GFP that is released from the viral Gag protein during maturation and packaged as a solution phase marker inside the two compartments bound by the viral membrane and the capsid, respectively. These GFP-loaded HIV particles are immobilised on the coverslip surface and permeabilised in the presence of AF568-labelled CypA while recording fluorescence traces at the locations of individual HIV particles by TIRF microscopy. Permeabilisation of the viral membrane (step a) with a pore-forming protein leads to loss of ~80–90% of the GFP signal corresponding to the pool of GFP outside the capsid. AF568-CypA molecules diffuse through the membrane pores and bind to the capsid to reach a level that is proportional to the number of CA subunits in the capsid. Capsid opening (step b) leads to loss of the residual GFP that is inside the capsid. CA lattice disassembly (step c) is apparent from the rapid loss of the CypA paint signal. (B, C) Example GFP release (blue-green) and CypA paint (magenta) traces for particles with capsids that are already leaky (i.e. contain defects and release all GFP in one step), undergo opening at various times after permeabilisation or remain closed throughout the observation period. In the absence of drug (B), the CypA paint intensity decays rapidly when the capsid is no longer closed (complete loss of GFP signal). In the presence of 500 nM LEN (C), the CypA paint signal remains constant even when the GFP signal is completely lost showing that the drug stabilises the ruptured capsid. (D) Analysis of the capsid lifetimes from all single-molecule GFP release traces in the field of view to yield capsid survival curves (including ‘opening’ and ‘closed’, excluding ‘leaky’). The faster decay in the presence of 500 nM LEN compared to no drug control shows that LEN induces rupture of the capsid. Data from a representative experiment (total number of traces): no drug (615); 500 nM LEN (281). (E, F) Analysis of all single-molecule CypA paint traces to yield heatmaps (magenta) and median traces (black line) of the CypA intensity measured at particles with leaky (left) or opening (right) capsids in the absence (E) or presence of 500 nM LEN (F). LEN prevents dissociation of CA from the lattice of capsids that are no longer closed cones. The number of HIV particles (N) for each condition is specified in the top left corner of the corresponding heatmap.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Bar chart showing the fraction of immature particles determined by TIRF imaging in the absence or presence of LEN or IP6. As expected, the fraction of immature particles does not depend on addition of LEN or IP6 during the uncoating experiment. The bars show the mean and the error bars show the standard deviation determined from the following number of experiments: 10 (0 nM LEN), 4 (5 nM LEN), 4 (50 nM LEN), 4 (500 nM LEN) and 3 (100 µM IP6). (B) Representative single-molecule fluorescence traces characteristic of an immature Gag lattice. Unlike particles that have undergone proteolysis, immature particles release little or no GFP because it remains part of the Gag polyprotein anchored to the inside of the viral membrane. CypA binding to these particles is negligible or slow because the CypA loops are poorly accessible in the context of the immature Gag lattice. Particles identified as immature on the basis of these criteria are excluded from analysis since they do not contain a mature capsid.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cartoon showing the different uncoating phenotypes observed in the dual colour (iGFP release and CypA paint) TIRF uncoating assay. Two broad stability types can be distinguished: (1) Unstable/non-functional capsids. ‘Leaky’ (total GFP release upon virion permeabilisation) and ‘opening–short-lived’ capsids (half-life of 1–2 min) are intrinsically unstable and cannot be rescued by IP6. These capsids are presumably incompletely or improperly assembled and non-functional. (2) Stable/functional capsids. The subpopulation of ‘opening–long-lived’ capsids (half-life of 8–16 min) can be stabilised by IP6, which keeps the closed cone intact by preventing loss of the first subunit(s), greatly increasing the half-life. Capsids that remain closed at the end of the experiment are presumed to have the same uncoating behaviour (i.e. are structurally and functionally the same) as ‘opening–long-lived’ capsids, whereby the imaging period was simply not long enough to observe the opening of all capsids in the field of view. Limitations of the TIRF uncoating assay: As with all imaging methodologies, the particle detection limit depends on factors that influence the signal-to-noise ratio (e.g. laser power, exposure time, penetration depth, imaging frequency, photophysical properties of the fluorophore). Known artefacts of iGFP: (1) Particles produced with iGFP have a broad distribution of GFP intensities, and dim particles with closed capsids that contain too little GFP can fall below the detection limit and thus appear as GFP-negative/CypA paint-positive spots. (2) A small proportion of GFP-positive spots persists throughout the experiment and remains negative for CypA paint. We attribute this background of false positives (typically <5% of the preparation) to particles containing residual uncleaved Gag-iGFP. Known artefacts of CypA paint: The efficiency of using CypA paint analysis to detect leaky capsids depends on the imaging frequency. This is because the CypA paint signal of leaky capsids is too short-lived (often appearing in only one frame or missed entirely when imaged at a low frequency) to be detected in a noisy baseline. For example, only ~20% of leaky capsids that are detected by GFP release are also detected by CypA paint at an imaging frequency of 1 frame every 6 s. (B) Idealised capsid survival curves in the absence (top) and presence (bottom) of IP6. Leaky particles are excluded from survival analysis. The survival curve (yellow line) is a convolution of the decay curves corresponding to the short- (dashed black line) and long-lived (dash-dotted black line) subpopulations. Only the long-lived subpopulation responds to IP6. The survival curve decays to a background level above zero (dotted grey line) that is presumably due to false positive signals. Parameter values used for calculating the traces: Fractions of short-lived/long-lived/background particles are 20%/74%/6%, respectively. The half-lifes for the curves in the absence of IP6 are  $t_{1/2}^{short}=1.5$ min and $t_{1/2}^{long}=15$ min. The half-lifes for the curves in the presence of IP6 are  $t_{1/2}^{short}=3$ min and $t_{1/2}^{long}=10$ h.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** GFP-loaded HIV particles produced with Gag-iGFP were captured onto the surface of a glass coverslip and imaged by TIRF microscopy while flowing a solution containing the pore-forming protein SLO (to permeabilise the viral membrane) and IP6 (to prevent uncoating of stable capsids). The fractions of particles with IP6-stabilised capsids (retaining a low intensity signal corresponding to encapsidated GFP), particles with unstable capsids (complete loss of GFP intensity) and immature particles (high intensity signal due to unprocessed Gag-iGFP) was independent of the SLO concentration between 11.25 and 180 nM.
 
 We used step-fitting to classify the typically 300–1,000 virions per field of view according to the GFP release profiles defined above. Immature virions (6.9 ± 3.1% of all particles) were excluded from further analysis. Most of the mature virions showed leaky release profiles (56 ± 5%), which we attribute to incompletely assembled capsids that are also seen in cryoelectron tomography reconstructions of mature HIV (Mattei et al., 2016). Capsids with opening and closed intensity profiles (33.7 ± 5.0% and 10.4 ± 3.5%, respectively) were further analysed to quantify the kinetics of capsid opening. We obtained a capsid survival curve (lifetime distribution) by plotting the fraction of capsids that remain intact (GFP-positive) as a function of time. The survival curve for untreated virions (Figure 2D, no drug) showed a biphasic decay profile with ~30% short-lived (half-life of 1.0±0.5 min) and ~70% long-lived (half-life of 15±3 min) capsids, consistent with previous observations (Mallery et al., 2021; Márquez et al., 2018; Renner et al., 2023). Long-lived capsids can be stabilised by the host cofactor IP6 (see below) and are considered functionally relevant (see Figure 2—figure supplement 2 for a detailed discussion of the capsid stability types observed in this assay). Control experiments showed that the fraction of IP6-stabilised capsids was independent of the concentration of the pore-forming protein used to permeabilise the viral membrane, confirming that it does not affect capsid stability (Figure 2—figure supplement 3).
 
 As a complementary measurement, we used AF568-labelled CypA as a ‘paint’ that binds transiently to the outside of the capsid, rapidly reaching a dynamic equilibrium, whereby the AF568-CypA intensity is proportional to the number of CA subunits in the lattice. Importantly, AF568-CypA was used at concentrations (0.5–1 μM) where fewer than 4% of the available cyclophilin loops are occupied, and we have previously shown that uncoating kinetics are not affected under these conditions (Márquez et al., 2018). Single-molecule analysis showed that the AF568-CypA signal remained constant while the capsid was intact (Figure 2B, ‘closed’) but decayed to background levels after the capsid opened (Figure 2B, ‘leaky’ and ‘opening’). Analysis of all leaky and opening traces aligned to the time of capsid opening showed that the median CypA signal decayed with a half-life of less than 1 min (Figure 2E). This rapid decay is consistent with a failure cascade that propagates across the whole capsid resulting in complete lattice disassembly. Taken together, our single-molecule analysis shows that GFP release pinpoints the time the first defect appears in the capsid while the CypA paint signal provides an indirect read-out for the disassembly kinetics of the CA lattice thereafter.
 
-## LEN induces capsid opening but prevents loss of CA from the lattice of open capsids
+### LEN induces capsid opening but prevents loss of CA from the lattice of open capsids
 
 In the next set of experiments, we focused on the effect of LEN on the intrinsic capsid stability without capsid-binding cofactors; the interplay between IP6, which is essential for maintaining capsid stability in cells, and LEN is described in later sections. To measure the maximum effect of LEN on capsid uncoating, we added the drug at a concentration (500 nM) that leads to rapid binding to essentially all FG binding sites. Uncoating traces of single virions in the presence of 500 nM LEN (Figure 2C) revealed two fundamental differences to the single-molecule profiles described above. First, LEN treatment caused earlier release of the encapsidated GFP (Figure 2C, ‘opening’), resulting in a faster decaying survival curve (Figure 2D, light green line) and a concomitant threefold decrease in the fraction of closed capsids at the end of the experiment. Second, the AF568-CypA signal of capsids that were defective to begin with (Figure 2C, ‘leaky’) or started to uncoat (Figure 2C, ‘opening’) remained constant. This striking stabilisation effect was also clear in the heatmaps of all leaky and opening capsids (Figure 2F and 500 nM LEN). Since the CypA paint traces of leaky and opening capsids showed the same characteristics, we combined these classes in subsequent analyses to assess the extent to which LEN could stabilise the lattice of open capsids. Taken together, the GFP release and CypA paint analysis in the presence of 500 nM LEN suggest that binding of LEN induces rupture of capsids (leading to early GFP release) but prevents the loss of CA subunits from defective or ruptured capsids (stable CypA paint signal).
 
 To further quantify these apparently opposing effects on capsid integrity and CA lattice stability, we measured GFP release and CypA paint traces in the presence of LEN at concentrations ranging from 5 to 500 nM (Figure 3). The survival curves (Figure 3A) showed a pronounced concentration-dependent acceleration of capsid opening kinetics with an intermediate effect at 5 nM and the maximal effect at ≥50 nM LEN, leading to a two- to fourfold (5 nM and ≥50 nM LEN, respectively) decrease in the fraction of capsids that remained closed after 15 min (Figure 3C). Similarly, we observed a concentration-dependent increase in the fraction of particles with leaky capsids from 56 ± 5% (no drug) to 65 ± 7% (500 nM LEN) (Figure 3—figure supplement 3), which we attribute to rapid drug-induced capsid rupture that occurred before membrane permeabilisation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig3-v1.jpg)
+
+**Figure 3.:** Single-molecule analysis of the effect of 0–500 nM LEN −/+100 µM IP6 on capsid uncoating via GFP release and CypA paint. (A) Capsid survival curves showing that the drug induces rupture of the capsid. Pooled data from multiple experiments (total number of traces/number of experiments): 0 nM (4325/10); 0.5 nM (1242/4); 5 nM (1585/4); 50 nM (1520/5); 500 nM (1048/4). (B) Capsid survival curves showing that IP6 inhibits capsid opening in the absence of LEN and partially counteracts the drug-induced rupture of the capsid at low but not high concentrations of LEN. Pooled data from multiple experiments (total number of traces/number of experiments): 0 nM LEN +IP6 (836/3); 5 nM LEN +IP6 (589/2); 50 nM LEN +IP6 (321/1); 500 nM LEN +IP6 (238/1). (C) Fraction of closed (GFP-positive) capsids at t=15 minutes of the uncoating experiments shown in A and B. (D) Heatmaps (magenta) and median traces (black line) of the CypA intensity measured at particles with leaky or opening capsids in the presence of 0–500 nM LEN showing that LEN stabilises the CA lattice of ruptured capsids above an occupancy (θ) threshold of ~30–66%. The occupancy at the time of membrane permeabilisation was calculated as described in Figure 4—figure supplement 1. (E) Heatmap (magenta) and median trace (black line) of the CypA intensity of particles (leaky/opening) showing that 500 nM LEN prevents CA loss from the ruptured capsid for at least 5 hr. The number of HIV particles (N) for each condition in D and E is specified above the corresponding heatmap.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The number of HIV particles (N) for each condition is specified in the top left corner of the corresponding heatmap.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) 5 nM LEN in the absence (A) or presence (B) of 100 μM IP6. The presence of IP6 slows capsid disassembly in the presence of 5 nM LEN but does not prevent it. (C, D) 50 nM LEN in the absence (C) or presence (D) of 100 μM IP6. 50 nM LEN stabilises the CypA paint signal, regardless of whether IP6 is present. The number of HIV particles (N) for each condition is specified in the top left corner of the corresponding heatmap.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Single-step GFP release traces in the absence of LEN are attributed to ‘leaky’ capsids that cannot retain GFP upon membrane permeabilisation. This leaky fraction is 56 ± 5% for virions analysed in Figures 2 and 3. Addition of LEN during the uncoating experiment causes a concentration-dependent increase in the fraction of single-step GFP release traces (reaching 65 ± 5% at 500 nM LEN), whereby we attribute the increase to rapid LEN-induced rupture of intact capsids (too fast to be resolved as a separate step in the uncoating traces recorded with a frame rate of 1 frame every 6 s). As expected, IP6 does not affect the ‘leaky’ fraction because IP6 stabilises closed cones but is unable to prevent disassembly of CA lattices with open edges. Bar charts show the mean and error bars show the standard deviation from the following number of experiments: 10 (0 nM LEN), 4 (5 nM LEN), 5 (50 nM LEN), 3 (500 nM LEN) and 3 (100 µM IP6). Statistical comparisons using one-way ANOVA with Dunnett’s multiple comparison test. The p values of the comparison between control (0 nM LEN) and different LEN concentrations are given above the corresponding bars.
+
 Next, we analysed the CypA paint signal to determine the effect of LEN on the lattice after capsid integrity loss. LEN concentrations of ≥50 nM prevented disassembly of leaky and opening capsids, as evidenced by the stable CypA paint signal (Figure 3D), which persisted for at least 5 h (Figure 3E). Under the conditions used in the single-molecule uncoating assay, the capsid is exposed to the membrane-permeable drug for ~2 min before the pore forming protein permeabilises the viral membrane. Thus, we first calculated the occupancy at this time point to estimate the threshold required to prevent disassembly of defective capsids (see Materials and methods). Unsurprisingly, the low occupancy at 5 nM LEN (calculated to be <10%) was insufficient for lattice stabilisation. In contrast, 32–66% occupancy at 50 nM LEN was sufficient to prevent CA lattice disassembly. Based on these considerations, we estimate that 2–4 LEN molecules per hexamer are sufficient to prevent the release of CA subunits from a CA lattice with open edges.
 
 In summary, LEN dose-dependently increased the proportion of open capsids but increased the stability of their lattices. The dose-dependence observed here differs from previous in vitro uncoating measurements showing (partial) capsid lattice stabilisation down to 0.05 nM LEN; in those experiments 50–65% of cores stained with the irreversibly bound tetrameric probe CypA-dsRed remained detectable after 30 min of incubation (Bester et al., 2020). Nevertheless, our observation of capsids that do not lose CA despite having openings is consistent with the LEN dose-dependent increase in the number of CA-positive spots detected in the cytoplasm of infected cells (Bester et al., 2020; Selyutina et al., 2022).
 
-## IP6 counteracts but does not prevent LEN-induced capsid rupture
+### IP6 counteracts but does not prevent LEN-induced capsid rupture
 
 We have previously shown that the cellular cofactor IP6 stabilises capsids and delays capsid opening in vitro (Mallery et al., 2018). Since IP6 is present in cells (typically 40–50 μM; Bunce et al., 1993; Letcher et al., 2008) and therefore expected to impact the effects of LEN in vivo, we asked if IP6 could prevent LEN-induced rupture of the capsid. As before, IP6 (100 μM) strongly stabilised capsids in permeabilised virions, leading to reduced capsid opening kinetics (Figure 3B) and a ~twofold increase in the fraction of closed capsids at 15 min compared to the control without IP6 (Figure 3C). IP6 partially counteracted the capsid-breaking effect at 5 nM LEN (compare Figure 3A and B), but even at this concentration the drug increased capsid opening kinetics relative to IP6 only (Figure 3B). At high LEN concentrations (≥50 nM), the survival curves measured in the presence and absence of IP6 were essentially the same, showing that IP6 was no longer able to slow the premature rupture of the capsid induced by the drug (Figure 3B). This acceleration in capsid opening led to an eightfold reduction in the fraction of closed capsids at 15 min compared to the control with IP6 only (Figure 3B). We conclude that IP6 partially protects capsids from LEN-induced structural damage, but only at low drug concentrations. The higher susceptibility to structural damage in the absence of IP6 is consistent with the observation that LEN more potently inhibits reverse transcription in vitro and in cells when IP6 levels are low (Sowd et al., 2021).
 
 Finally, we asked if IP6 could act in conjunction with LEN to stabilise the CA lattice after capsid opening. As observed for other polyanions binding at the R18 ring at the centre of the CA hexamer (Márquez et al., 2018), IP6 by itself slows but does not prevent the catastrophic collapse of CA lattices with open edges (Figure 3—figure supplement 1). CA lattice dissociation of leaky and opening capsids is further slowed when IP6 is added to 5 nM LEN (<10% occupancy of FG sites at the time of membrane permeabilisation) (Figure 3—figure supplement 2A and B). At 50 nM LEN (>30% occupancy of FG sites), the CypA paint signal remains constant in the presence and absence of IP6 (Figure 3—figure supplement 2C and D), such that differences in stability during the time frame of the experiment are difficult to ascertain. Overall, these data suggest that IP6 further stabilises LEN-stabilised CA lattices but not to the extent where it can prevent CA release from lattices at low LEN occupancy.
 
-## Slow LEN binding kinetics delay the structural drug effects at low concentrations
+### Slow LEN binding kinetics delay the structural drug effects at low concentrations
 
 Next, we considered the kinetics of LEN binding to explain the observed differences in drug-induced capsid rupture between 5 nM and higher concentrations (50 and 500 nM). The LEN binding curves calculated using published association and dissociation rate constants (Figure 4—figure supplement 1A) predict that LEN occupancies ≥95% are reached within <2 min at 500 nM and ~15 min at 50 nM but reaching this level requires almost 3 hr at 5 nM LEN. Thus, we postulated that the intermediate capsid breakage kinetics observed at 5 nM LEN are due to slow binding kinetics such that occupancy levels required for fast capsid breakage are not reached quickly enough within the imaging period. To test this, we preincubated virions with 5 nM LEN for 4 hr, during which 95% of sites are occupied. Analysis of GFP release traces showed that preincubation with 5 nM LEN increased the extent of drug-induced capture rupture to that observed at 500 nM without preincubation (Figure 4—figure supplement 1B). Notably, >50% of the capsids had apparently already been ruptured inside the viral membrane, leading to an increase in ‘leaky’ traces relative to control (Figure 4—figure supplement 1B). This suggests that drug-induced capsid rupture manifests over time and that rupture, or build-up of the strain required for rupture, can already occur before release of the capsid from the virion. Finally, CypA paint analysis showed that CA lattice disassembly was inhibited with, but not without, preincubation (Figure 4—figure supplement 1C). Taken together, these observations suggest that the full extent of the capsid-altering effects is observed after binding occupancy reaches the requisite level.
 
-## Indirect fluorescence imaging of LEN binding kinetics to HIV capsids via displacement of a ‘paint’ probe for the FG pocket
+### Indirect fluorescence imaging of LEN binding kinetics to HIV capsids via displacement of a ‘paint’ probe for the FG pocket
 
 To corroborate the LEN binding kinetics, we developed a new imaging assay to measure LEN binding to authentic capsids in real time by displacement of a fluorescent peptide derived from CPSF6 as a ‘paint’ probe that binds dynamically to the FG binding pocket, whereby the binding level is proportional to the fraction of sites that remain unoccupied with the tightly binding drug molecule. The requirement for a paint probe in this assay is that it has fast binding and dissociation kinetics such that it rapidly reaches a dynamic binding equilibrium to probe free sites without blocking them for drug binding. A CPSF6 peptide (CPSF6p, residues 313–327) with a C-terminal cysteine labelled with a fluorescent dye fulfilled these criteria, binding with a half-life of 11 s to the capsids of permeabilised virions on the TIRF microscope coverslip (Figure 4—figure supplement 2). Using single-molecule photobleaching for calibration of the fluorescence intensity, we determined the number of labelled CPSF6p bound at equilibrium per capsid at a range of concentrations (Figure 4—figure supplement 2D). At the CPSF6p paint probe concentration (200 nM) used in the LEN binding assay, ~40 labelled CPSF6p are bound at equilibrium per capsid, occupying <3% of FG binding pockets.
 
 The design of the LEN binding assay is shown in Figure 4A. GFP-loaded HIV on the coverslip surface were permeabilised using a pore-forming protein and incubated for 2 hr in the presence of IP6 (30 µM) and labelled CPSF6p. During this period all capsids that cannot be stabilised by IP6 (leaky and short-lived) decayed away such that only long-lived IP6-stabilised capsids remained. These were identified as spots positive for GFP (as a capsid integrity marker) and CPSF6. We then added LEN to the flow channel and tracked the GFP and CPSF6p signals at the locations of individual virions over time. LEN led to a concentration-dependent decay of the CPSF6p intensity (Figure 4B) as LEN increasingly (and irreversibly on the time scale of this experiment) occupies FG binding pockets on the lattice. (We note that photobleaching does not contribute to the signal decay because the bound paint probes continually exchange with fresh molecules from solution). Thus, the decrease in CPSF6p intensity is an indirect read-out for LEN binding, and we converted this data into kinetic curves of LEN binding to authentic HIV capsids (Figure 4C). An independent repeat of this set of experiments is shown in Figure 4—figure supplement 3A and B. The association rate constant determined from the pooled data of both experiments (kon = 1.84 ± 0.78×105 M–1 s–1, Figure 4D) was within a factor of three of the published value (kon = 6.5 ± 0.3×104 M–1 s–1), while the KD of 0.51±0.58 nM was about two times the published value (KD = 0.24 ± 0.09 nM; Link et al., 2020). These differences are within experimental error of our method but could also reflect a difference in binding to an authentic capsid versus binding to a cross-linked CA hexamer used in the published work.
 
-## LEN-induced capsid rupture kinetics depend on the occupancy of FG binding pockets
+![Figure 4.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic diagram of the TIRF microscopy competition binding and capsid opening assay. GFP-loaded HIV attached to the glass coverslip are permeabilised using SLO and incubated in a solution 30 µM IP6. During this period, unstable capsids that do not respond to IP6 fall apart. Labelled CPSF6p (0.2 nM) functions as a paint probe (occupying ~2% of free FG binding pockets at equilibrium). LEN displaces labelled CPSF6p on the capsid over time, leading to a decrease of the labelled CPSF6p intensity. Rupture of the capsid is detected by GFP release. (B–E) Analysis of CPSF6p-AF568 signal disappearance to extract LEN binding kinetics and affinity. (B) Mean CPSF6p-AF568 displacement curves measured at all IP6-stabilised capsids in the field of views in the presence of 0–20 nM LEN. (C) LEN binding curves calculated from the CPSF6p-AF568 displacement curves in B. (D) Observed LEN binding rates (obtained from an exponential fit of the binding curves) as a function of LEN concentration. The slope of the linear fit to data from two experiments provides a LEN binding rate of kon = 1.84 ± 0.78×105 M–1 s–1. (E) Equilibrium binding curve for LEN on IP6-stabilised capsids. The ﬁt (grey line) of an equilibrium binding model to the combined combined data from two experiments provided the dissociation constant of KD = 0.51 ± 0.58 nM. (F–G) Analysis of GFP release to determine the effect of LEN on capsid integrity. (F) Survival curves of IP6-stabilised capsids in the presence of 0–20 nM LEN. (G) Half life of the intact capsid as a function of LEN concentration determined from survival curves as the time point where half of the capsids had released GFP. (H) Combined analysis of the GFP release and labelled CPSF6p displacement. Mean LEN occupancy levels at the time of capsid rupture as a function of LEN concentration. Orange and blue circles in D, E, G and H correspond to two sets of experiments conducted with different viral preparations, different fluorophores, and different preincubation condition. Experiments shown as orange circles used CPSF6p-AF568, which was added to the capsid at the same time as LEN. Experiments shown as blue circles used CPSF6p-ATTO643, which was preincubated with HIV prior to LEN exposure. The CPSF6p displacement and capsid opening curves for the data set for the blue circles are shown in Figure 4—figure supplement 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Predicted occupancy of binding pockets on the CA lattice with LEN as a function of time (θ(t)) for different LEN concentrations.The occupancy is defined as the fraction of FG binding pockets on the capsid that are occupied with a LEN molecule and was calculated using the following equation: θ(t) = θeq(1-exp(-(kon ×cLEN + koff)×t)), where θeq is the occupancy at equilibrium, cLEN is the LEN concentration, kon is the association rate constant and koff is the dissociation rate constant. The curves were calculated using published values of kon = 6.5E4 M–1s–1 and koff = 1.4E-5 s–1 determined by surface plasmon resonance spectroscopy (Link et al., 2020). (B, C) Single-molecule analysis of capsid uncoating in the presence of 5 nM LEN added to the viral particles at the start (0 hr preincubation) or 4 hr before the start (4 hr preincubation) of the TIRF assay. (B) Capsid survival curves show that preincubation with drug increases capsid rupture. Pooled data from multiple experiments (total number of traces/number of experiments): 5 nM LEN with 4 hr preincubation (1159/3). Traces without preincubation (0/5/500 nM) are replotted from Figure 3A for comparison. (C) CypA paint heatmaps and median CypA paint intensity traces of leaky and opening capsids show that preincubation is required to stabilise the CA lattice after capsid rupture. The occupancy at the time of permeabilisation (2 min) was calculated as above using the published rate constants determined by surface plasmon resonance spectroscopy or TIRF microscopy (this work). The number of HIV particles (N) for each condition is specified above the corresponding heatmap.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic of the binding assay. (B) Mean binding traces recorded at the indicated concentrations of labelled CPSF6p. Binding traces were recorded at the locations of viral particles with closed capsid, whereby t=0 corresponds to the time of viral membrane permeabilisation. (C) Mean CPSF6p intensity measured at closed capsids after wash-out of labelled CPSF6p from the flow channel at t=0. The black line represents a fit of the data with a single exponential decay function. (D) Mean number of labelled CPSF6p bound per capsid determined from binding experiments (see panel B for an example). Each symbol represents an independent binding experiment, black bars indicate mean and standard deviation.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Mean CPSF6p-Atto643 displacement curves measured at all IP6-stabilised capsids in the field of views in the presence of 0–15 nM LEN. The Atto643 label resulted in a higher background than observed for the AF568 label in Figure 4. (B) LEN binding curves calculated from the CPSF6p-Atto643 displacement curves in A. (C) Survival curves of IP6-stabilised capsids in the presence of 0–15 nM LEN. (D) Fraction of IP6-stabilised capsids that open in the presence of 0.2–50 nM LEN. The LEN-induced caspsid rupture efficiency drops to below 65% at concentration ≤0.4 nM LEN.
+
+### LEN-induced capsid rupture kinetics depend on the occupancy of FG binding pockets
 
 Next, we analysed the GFP release traces collected in the LEN-binding TIRF experiments described above (Figure 4A) to extract the capsid opening kinetics (Figure 4F and G). Importantly, the new assay design allows the functionally irrelevant subset of defective/IP6-insensitive capsids to disassemble before measuring the effect of LEN exclusively on the functionally relevant subset of IP6-stabilised capsids. This avoids the complexity of convolving intrinsic instability with drug-induced breakage. Remarkably, the stability of the IP6-responsive capsids in the absence of drug exceeded the level of IP6-mediated stabilisation we have previously observed, and we observed little or no loss of capsids over the 90-min imaging period (Figure 4F, 0 nM LEN). The same observation held when imaging was extended to 8 hr, and we estimate the half-life of IP6-stabilised capsids in this assay design to be on the order of day(s).
 
@@ -99,9 +147,17 @@ The power of using our combined CPSF6p paint and GFP release TIRF assay is that 
 
 In summary, we conclude that efficient and rapid capsid breakage depends on reaching a sufficient occupancy of FG binding pockets, which itself depends on binding kinetics if drugs are added at the beginning of the experiment. At the lowest concentrations tested here (0.2 nM) LEN can break capsids, but slowly and only for a subset of capsids. In contrast, structural damage is induced on time scales that are relevant for infection in the range from high pM (>0.4 nM) to nM concentrations.
 
-## Infection is inhibited at the stage of reverse transcription in the same concentration range that is required for efficient capsid rupture in vitro
+### Infection is inhibited at the stage of reverse transcription in the same concentration range that is required for efficient capsid rupture in vitro
 
 Next, we tested whether preincubation of virions with LEN (to allow binding to the capsid to equilibrate prior to cell entry) would result in higher potency of the drug in Jurkat cells infected with VSV-G pseudotyped HIV encoding GFP as a reporter. Similar to the capsid-targeting drug PF74 (Price et al., 2014; Saito et al., 2016), the dose-response curves of LEN showed a biphasic inhibition profile, whereby the first phase (~0.1 nM) reduced infection to about 10% before a second inhibitory mechanism operating in the low nM range reduced infection levels to less than 1% (Figure 5A). Preincubation had little effect on inhibition during the first phase (1.3-fold reduction in IC50, Figure 5—figure supplement 1A), consistent with a block at a late stage (e.g. integration) such that the drug had sufficient time to reach the requisite occupancy irrespective of preincubation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig5-v1.jpg)
+
+**Figure 5.:** (A) Dose-response curves of Jurkat cells infected with VSV-G-pseudotyped GFP-encoding virus that was preincubated for 0 hr or 48 hr with the corresponding concentration of LEN. The number of infected cells was determined by flow cytometry 48 hr post infection. Data points represent percent infectivity relative to the vehicle control. The graph shows data from four (0 hr preincubation) or three (48 hr preincubation) independent experiments. The symbols represent the mean and the error bars the standard deviation. The vertical dashed lines indicate the IC50 values determined from least squares fits of the curves and the vertical dotted lines indicate the IC95 values determined as the concentration where the relative level of infection reaches 5% (0 hr preincubation: 1.024 nM [5.3% infection]; 48 hr preincubation: 0.512 nM [5.1% infection]). (B) Quantification using qPCR of total viral DNA from Jurkat cells collected 24 hr after infection with VSV-G-pseudotyped GFP-encoding virus as in panel D (with 0 hr or 48 hr preincubation with LEN). Normalised copy numbers (mean ± SD) from two independent experiments with two technical repeats each. Least squares fit (solid line) providing IC50 values of ~1080 pM without preincubation and ~590 pM with 48 hr preincubation. (C) Relative infection after 48 hr preincubation of HIV with varying LEN concentrations (same data as in A) plotted as a function of occupancy (θ) of the FG binding pockets on the capsid. (D) Bar charts of occupancy at the IC50 and IC95 for infection and at the IC50 for vDNA synthesis. The occupancy in C and D was calculated for each LEN concentration assuming a dissociation constant (KD) of 0.51 nM using the equation θeq = cLEN / (cLEN +KD), where θeq is the occupancy at equilibrium and cLEN is the LEN concentration.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Effect on IC50 of preincubating VSV-G-pseudotyped GFP-encoding HIV with LEN. Relative IC50 values determined from least squares fits of the data in Figure 5A giving values of 125±13 pM without preincubation and 93±8 pM with 48 hr preincubation. Each symbol represents an independent experiment and the black line represents the mean. Statistical analysis using an unpaired two-tailed t-test. (B, C) Same plots as in Figure 5C and D but assuming the dissociation constant (KD) of 0.24 nM determined by surface plasmon resonance spectroscopy (Link et al., 2020). (B) Relative infection after 48 hr preincubation of HIV with varying LEN concentrations plotted as a function of occupancy (θ) of the FG binding pockets on the capsid. (C) Bar charts of occupancy at the IC50 and IC95 for infection and at the IC50 for vDNA synthesis.
 
 In contrast to the modest effect at low LEN concentrations, preincubation reduced infection by two- to threefold at concentrations ≥0.256 nM (i.e. during the second inhibitory phase), whereby the IC95 was 0.5 nM and 1 nM with and without preincubation, respectively (Figure 5A). The increased potency in this range after preincubation is consistent with a mechanism that depends on structural effects on the capsid, that are slow to manifest at sub-nM concentrations as shown above (Figure 4H).
 
@@ -109,25 +165,49 @@ Next, we determined the dose-dependent effect of LEN on reverse transcription us
 
 Finally, the preincubation data allowed us to relate the early- and late-stage inhibition of infection and the inhibition of DNA synthesis to the occupancy of binding sites on the capsid since drug binding equilibrates during the preincubation period before the capsid is exposed to host cofactors. We used the KD value of the LEN-capsid interaction (0.51 nM, determined above by TIRF imaging) to replot the infection data as a function of occupancy (Figure 5C) and calculate the occupancy at IC50/IC95 for infection and at IC50 for DNA synthesis (Figure 5D). The corresponding plots calculated using the published KD for the LEN-CA hexamer interaction (0.24 nM) are shown in Figure 5—figure supplement 1B and C . From this analysis we conclude that LEN inhibits a late post-entry step when binding to 15% (KD = 0.51 nM) or 30% (KD = 0.24 nM) of sites, but this block is insufficient to reduce infection below a level of ~10%. At 50% (KD = 0.51 nM) or 70% (KD = 0.24 nM) occupancy of sites on the CA lattice, LEN additionally blocks infection by inhibiting reverse transcription, ultimately reducing infection to levels below 1%.
 
-## LEN and IP6 synergise to promote CA assembly but compete to bias the assembly pathway towards tube (LEN) versus cone (IP6) formation
+### LEN and IP6 synergise to promote CA assembly but compete to bias the assembly pathway towards tube (LEN) versus cone (IP6) formation
 
 Since both IP6 (Dick et al., 2018; Renner et al., 2021) and LEN (Bester et al., 2020; Link et al., 2020) promote CA assembly in vitro, we tested how the combination of these molecules affects CA assembly in low salt conditions. We monitored the assembly kinetics of recombinant CA by measuring the absorbance at 350 nm and collected samples at the end of each experiment for analysis by negative stain electron microscopy (Figure 6). First, we varied the concentration of IP6 and observed that CA (75 μM) assembled with similar kinetics in the presence of 100 μM or 150 μM IP6 but did not assemble at lower IP6 concentrations (Figure 6A, left). As expected, negative stain EM images of assembly products formed with only IP6 showed primarily conical shapes with dimensions similar to those observed for native HIV capsids (Figure 6A, right). When we repeated this titration in the presence of 50 μM LEN (substochiometric relative to CA), we observed CA assembly across the entire concentration range (10–150 μM IP6), with IP6 accelerating assembly kinetics and yields in a concentration-dependent manner (Figure 6B, left). Strikingly, LEN in the presence of low IP6 promoted formation of CA tubes (often closed at their ends) with lengths of >500 nm, while increasing IP6 concentrations biased assembly increasingly towards shorter tubes and conical shapes (Figure 6B, right). Next, we varied the concentration of LEN in the presence of 200 μM IP6. Addition of 1–50 μM LEN increased CA assembly efficiency in a concentration-dependent manner above the level observed for IP6 only (Figure 6C, left). Notably, the highest LEN concentration (50 μM) did not promote CA (75 μM) assembly without IP6 in low salt conditions (Figure 6B, left). Negative stain EM images confirmed cone formation in the presence 200 μM IP6 and showed that addition of drug led to the formation of aberrant and broken structures in a concentration-dependent manner (Figure 6C, right). We conclude that LEN is insufficient to promote CA assembly by itself in low salt conditions but synergises with IP6 to increase assembly kinetics and yields. Importantly, IP6 promotes cone assembly, whereas LEN biases assembly toward tube formation such that closed tubes form in the presence of high drug and sufficiently low IP6. When both molecules are present at high concentrations, where neither molecule can dominate the assembly pathway, assembly proceeds in an aberrant fashion yielding heterogeneous structures. Taken together these observations show that IP6 and LEN synergise to promote assembly but preferentially stabilise different CA lattice structures.
 
-## LEN promotes CA overassembly inside mature virions
+![Figure 6.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig6-v1.jpg)
+
+**Figure 6.:** In vitro assembly reactions of CA (75 μM) were carried out in 50 mM MES (pH 6.0) containing 1 mM DTT and monitored in real time by absorbance measurements at 350 nm. The assembly products obtained at the end of the reaction were imaged by negative staining electron microscopy. (A, B) Assembly kinetics (left) and products (right) formed at 10–150 μM IP6 in the absence (A) or the presence (B) of 50 μM LEN. (C) Assembly kinetics (left) and products (right) formed at 0–50 μM LEN in the presence of 200 μM IP6.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) CryoET analysis of untreated HIV and HIV incubated with 700 nM LEN for 30 min. A total of 139 untreated and 96 drug-treated viral particles were analysed, and the frequency of each phenotype is plotted as a percentage in the bar plots. Slices through representative tomograms of each phenotype are shown. Scale bars, 100 nm. (A) Virions were classified as either immature, mature/immature, ambiguous, mature (irregular) or mature (conical/tubular). (B) The mature (conical/tubular) particles from C were further divided into subclasses reflecting the number of CA assemblies per virion and the absence or presence of assemblies with two CA layers. (C) CypA paint intensity analysis to estimate the level of CA lattice assembly (‘lattice size’) in HIV particles preincubated with 500 nM LEN for 2 or 30 min before permeabilisation relative to the lattice size of closed capsids in untreated HIV particles. Comparison of lattice size in untreated control (three experiments) and HIV preincubated with 500 nM LEN for 2 min (three experiments) or 30 min (five experiments) showing that drug induces an increase in lattice size. The bold black lines represent the mean and the error bars represent the standard deviation. Example CypA paint heatmaps are shown panels D and E. (D, E) CypA paint intensity analysis to estimate the level of CA lattice assembly (‘lattice size’) in HIV particles preincubated with 500 nM LEN for 30 min before permeabilisation relative to the lattice size of closed capsids in untreated HIV particles. Example CypA paint heatmaps (magenta) and median traces (black) of closed capsids in untreated HIV (D) and all capsids in HIV preincubated with drug (E). The number of HIV particles (N) for each condition is specified above the corresponding heatmap.
+
+### LEN promotes CA overassembly inside mature virions
 
 As the single-molecule TIRF analysis suggested that LEN alters capsid properties inside the intact virion, we used cryo-electron tomography (cryoET) and carried out 3-dimensional reconstructions on untreated and drug-treated (700 nM) virions, which showed the expected distribution of maturation states and capsid shapes (Figure 6—figure supplement 1A) as observed before (Fontana et al., 2016; Mallery et al., 2021; Mattei et al., 2014; Renner et al., 2021). The tomograms of LEN-treated virions did not reveal obvious capsid defects (such as large holes), and we were not able to assign small apparent discontinuities as defined holes in the capsid at the resolution of our tomograms. In contrast to untreated virions which contained mostly single capsids comprised of a single CA layer (74%), almost all LEN-treated virions (96%) contained additional CA structures next to the main capsid (61%) and/or appeared with a double layered capsid (45%) (Figure 6—figure supplement 1B). These observations suggest that LEN induces assembly of the pool of free CA that is otherwise not incorporated into the capsid. CypA paint analysis of virions pre-treated with 500 nM LEN corroborated this overassembly phenotype, showing an average 1.7–1.8-fold increase of the CypA paint signal (Figure 6—figure supplement 1C–E), consistent with the presence of a larger overall CA lattice surface area. Since IP6 is enriched in HIV particles (reaching concentrations of ~500 μM; Mallery et al., 2018), the drug-cofactor synergy driving aberrant assembly inside virions recapitulates the in vitro assembly data described above. This overassembly defect is likely to also play out during capsid assembly in virions that undergo maturation in the presence of drug, consistent with the observation that virions produced in the presence of LEN (Link et al., 2020) or the closely related compound GS-CA1 (Yant et al., 2019) contain improperly shaped capsids.
 
-## PF74 but not BI-2 slows CA lattice disassembly after capsid rupture
+### PF74 but not BI-2 slows CA lattice disassembly after capsid rupture
 
 We have shown before using single-molecule TIRF uncoating assays that PF74, an HIV inhibitor that binds to the same site as LEN, strongly accelerates capsid opening and stabilises the lattice of the capsid thereafter (Márquez et al., 2018). The concentration (10 μM) used in those experiments is 40–80-fold above the KD determined for the interaction with CA hexamers (between 0.12 μM Price et al., 2014 to 0.26 μM Bhattacharya et al., 2014), such that 97–99% of binding sites of the capsid are predicted to be occupied with a drug molecule. PF74 is an important tool to study HIV capsid-associated processes but has been described to either promote capsid uncoating (Da Silva Santos et al., 2016; Selyutina et al., 2022; Shi et al., 2011) or to stabilise capsids (Rankovic et al., 2018) or to have no effect on capsid integrity (Hulme et al., 2015). To resolve this ambiguity and further characterise the ability of PF74 to stabilise (broken) CA lattices, we carried out CypA paint experiments in the presence of 0.1–10 μM PF74 (Figure 7A). In this concentration range, binding quickly reaches equilibrium and occurs before membrane permeabilisation in our assay. PF74 slowed the loss of CA from leaky and opening capsids in a concentration-dependent manner. Maximum stabilisation required essentially all sites to be drug-bound (97–99% at 10 μM), but even at this occupancy we observed ~70% signal loss after 80 min (Figure 7B). Thus, PF74 was unable to prevent CA lattice disassembly to the same extent as LEN (Figure 3E). PF74 also required near saturating occupancy to accelerate capsid opening, and at a concentration of 1 μM (79–89% occupancy), the drug showed only partial capsid-breaking activity (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Heatmaps (magenta) and median traces (black line) of the CypA intensity measured at particles with leaky or opening capsids in the presence of 0–10 μM PF74 showing that PF74 stabilises the CA lattice in a concentration-dependent manner. (A) PF74 titration in 8 min experiments. (B) 10 μM PF74 in an 80 min experiment showing that capsid lattices disassemble over this time period. The inset shows the first 8 min of the trace. (C) Dose-response curve of Jurkat cells infected with VSV-G-pseudotyped GFP-encoding virus in the presence of the indicated concentrations of PF74. The number of infected cells was determined by flow cytometry 48 hr post infection. Data points represent percent infectivity relative to the vehicle control. The dashed line indicates the IC50 determined from least squares fits of the curve (~0.6 μM, corresponding to ~5×KD). The dotted line indicates the IC95 (4–5 μM, corresponding to 30–40×KD). (D) Relative infection (same data as in C) plotted as a function of occupancy (θ) of the FG binding pockets on the capsid calculated for each PF74 concentration assuming a KD of 120 nM. (E) Heatmap (magenta) and median trace (black line) of the CypA intensity at particles with leaky or opening capsids in the presence of 50 μM BI-2 showing that BI-2 does not prevent CA lattice disassembly.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Capsid survival curves were determined from GFP release traces. The control curve (no binder) and the curves determined in the presence of 10 µM PF74 and 50 µM BI-2 are reproduced from Márquez et al., 2018.
 
 The FG pocket-binding drug BI-2 also has potent capsid-breaking activity (Márquez et al., 2018) when used at a concentration (50 μM) that is ~40-fold above the KD (1.2 μM) of the interaction with CA hexamers (Price et al., 2014). We predicted that BI-2 would be unable to stabilise CA lattices after capsid opening since the compound contacts only one of the two CA subunits forming the FG binding pocket (Figure 1A). As expected, CypA paint analysis showed that 50 μM BI-2 only marginally slowed the release of CA subunits from the lattice (Figure 7E). These observations together with those described above suggest that PF74 exerts the same structural effects on the capsid as LEN but less potently, while BI-2 breaks the capsid but is unable to slow subsequent disassembly.
 
 To relate the degree of the capsid-altering effects of PF74 to its effects on HIV infection, we measured the dose-response curve for inhibiting infection of Jurkat cells with VSV-G pseudotyped HIV encoding GFP as a reporter (Figure 7C). The curve showed the characteristic biphasic profile with the first phase levelling off at ~10% infection at ~1 µM followed by a second drop in infection above 4 µM. To facilitate comparison to the corresponding biphasic LEN data, we replotted the infection data as a function of occupancy (Figure 7D). Compared to LEN, the PF74 curve was shifted to higher occupancies, whereby late phase inhibition with PF74 required >95% occupancy, i.e. the same as required for stabilisation of open CA lattices (Figure 7A). In comparison, LEN required between 35–70% occupancy for late phase inhibition (Figure 5C and Figure 5—figure supplement 1B), again corresponding to the level required for CA lattice stabilisation (Figure 3E). Taken together, our CypA paint and infection data show that LEN can elicit the detrimental capsid structural changes characteristic of the second phase at lower occupancy than PF74.
 
-## CPSF6 peptide stabilises the CA lattice at low occupancy
+### CPSF6 peptide stabilises the CA lattice at low occupancy
 
 Given that different compounds can influence uncoating mechanisms in different ways, it is conceivable that the virus uses endogenous ligands to tune capsid stability. We therefore sought to compare the effect of the above drugs with CPSF6, a host cell protein which also binds the FG-pocket, and bridges the gap between monomers (Price et al., 2012). CPSF6 colocalises with the capsids at the nuclear pore complex and inside the nucleus where it plays a role in facilitating nuclear entry and dictating integration site position (Bejarano et al., 2019; Schaller et al., 2011; Sowd et al., 2016; Zila et al., 2021). To investigate the effect of CPSF6 on capsid stability, we performed single-molecule TIRF uncoating experiments in the presence of the minimal CPSF6 peptide (CPSF6p) that binds to the FG pocket (Figure 1D). At 100 μM (twofold above the KD of 50 μM for binding to CA hexamers), CPSF6p promoted capsid opening, but with slower kinetics than the FG pocket-binding drugs (Figure 8—figure supplement 1). CypA paint analysis showed that 100 μM CPSF6p strongly inhibited CA release (Figure 8A) as evident from slow decay in the CypA paint signal over 80 min (Figure 8C). Further, 1 μM CPSF6p (6% occupancy, Figure 8B) was insufficient to stabilise the lattice but 5 μM (18.5% occupancy, Figure 8B) partially and 10 μM (<50% occupancy) strongly inhibited CA lattice dissociation. Thus, CPSF6p was similarly stabilising relative to occupancy to LEN and more potent than PF74 and BI-2, providing partial stabilisation when fewer than 20% of binding sites are occupied.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig8-v1.jpg)
+
+**Figure 8.:** (A) Heatmaps (magenta) and median traces (black line) of the CypA intensity measured at particles with leaky capsids in the presence of 1–100 μM CPSF6p showing that the peptide stabilises the CA lattice at concentrations below the KD of the peptide-CA hexamer interaction. The occupancy (θ) at 1 µM and 5 µM was determined experimentally (see B) while θ was estimated for higher concentratrions assuming a KD of 50 µM. (B) Mean number of CPSF6p bound per capsid determined from CPSF6p-AF568 binding experiments. Each symbol represents an independent binding experiment, black bars indicate mean and standard deviation. (C) Heatmap (magenta) and median trace (black line) of the CypA intensity at particles with leaky or opening capsids in the presence of 100 μM CPSF6p monitored over 80 min, showing long-term stabilisation of the CA lattice.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/83605/elife-83605-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Capsid survival curves were determined from GFP release traces. The control curve (no binder) is reproduced from Márquez et al., 2018.
 
 ## Discussion
 
@@ -151,86 +231,250 @@ For decades, the concept that the HIV capsid must release its contents to comple
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>ATTC:CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Jurkat, Clone E6-1</td>
+      <td>ATCC</td>
+      <td>ATTC:TIB-152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNL4.3-iGFP-ΔEnv</td>
+      <td>DOI: 10.1371/journal.ppat.1002762</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>NIH AIDS Reagent Program:#11348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCRV1-GagPol</td>
+      <td>DOI: 10.1128/jvi.78.21.12058–12061.2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCSGW</td>
+      <td>DOI: 10.1126/science.272.5259.263</td>
+      <td></td>
+      <td>Transfer vector encoding GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene (Trono lab)</td>
+      <td>Addgene:#12259</td>
+      <td>Encodes VSV-G envelope protein</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCSG7-DLY</td>
+      <td>DOI: 10.1128/iai.00927–12</td>
+      <td></td>
+      <td>Plasmid for bacterial expression of recombinant desulfolysin from Desulfobulbus propionicus</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2-LTR junction fwd</td>
+      <td>Integrated DNA Technologies</td>
+      <td></td>
+      <td>PCR primer for quantification of 2-LTR circles, 5’-GCTAACTAGGGAACCCACTGCTTAAG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2-LTR junction rev</td>
+      <td>Integrated DNA Technologies</td>
+      <td></td>
+      <td>PCR primer for quantification of 2-LTR circles, 5’-ACTGGTACTAGCTTGTAGCACCATCCA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mf374 probe</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>6-FAM-ACA [C]A[C]A[A]G[G][C]T-BHQ-1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBrun692F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>PCR primer for quantification of viral DNA, 5’-CAGGACTCGGCTTGCTGAAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KBrun797R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>PCR primer for quantification of viral DNA, 5’-GCACCCATCTCTCTCCTTCTAGC-3’</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CPSF6p</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>custom synthesised peptide, sequence: PVLFPGQPFGQPPLG</td>
+    </tr>
+    <tr>
+      <td>Peptide,- recombinant protein</td>
+      <td>CPSF6p-Cys</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>custom synthesised peptide, sequence: PVLFPGQPFGQPPLGC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GS-6207</td>
+      <td>MedChemExpress</td>
+      <td>MedChemExpress:HY-111964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PF74</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:SML0835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BI-2</td>
+      <td>Enamine</td>
+      <td>Enamine:Z1982491200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link Sulfo-NHS-LC-LC-Biotin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:21338</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JIM Immobilized Microscopy analysis package</td>
+      <td>Walsh, 2021</td>
+      <td></td>
+      <td>https://github.com/lilbutsa/JIM-Immobilized-Microscopy-Suite</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SLO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:S5265-25KU</td>
+      <td>Streptolysin O from Streptococcus pyogenes</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HEK-293T cells and Jurkat cells were obtained from ATCC. Identity testing was carried out by PCR. Cell lines tested negative for mycoplasma.
 
-## Production of GFP-loaded HIV particles for TIRF uncoating experiments
+### Production of GFP-loaded HIV particles for TIRF uncoating experiments
 
 HIV particles lacking envelope protein were produced, biotinylated and purified as described (Márquez et al., 2019). Briefly, HEK-293T cells were transfected using PEI with a mixture of the plasmids pNL4.3-iGFP-ΔEnv and psPAX2 (1.4:1, mol/mol) to produce GFP-loaded HIV particles or with a mixture of pCRV1-GagPol and pCSGW (1:1.7, mol/mol) to produce dark HIV particles. The medium was exchanged 18 hr post transfection and the virus-containing medium was collected 72 hr post transfection and centrifuged (2100 x g, 20 min, 4 °C) to remove cells. The viral particles were then biotinylated using EZ-Link Sulfo-NHS-LC-LC-Biotin and purified by size exclusion chromatography.
 
-## Expression and purification of DLY
+### Expression and purification of DLY
 
 The gene encoding the pore-forming protein desulfolysin (DLY) was subcloned by ligation independent cloning into the pMCSG7 vector from the pET22b construct described in Hotze et al., 2013 to introduce an N-terminal His-tag. DLY was expressed in E. coli BL21(DE3) pREP4 cells in TB media with Ampicillin (100 mg/mL) by induction with 0.2 mM IPTG at 37 °C with shaking for 4 hours. Cells were harvested by centrifugation and lysed in 20 mM Tris pH 7.2 300 mM NaCl buffer with 10% glycerol, protease inhibitor, 0.1% Triton-X100, DNAse and lysozyme for 1 hr at room temperature. The lysate was clarified by centrifugation and passed over a HisTrap HP column (Cytiva Life Sciences) equilibrated in 20 mM Tris pH 7.2, 300 mM NaCl and 5% glycerol. DLY was elutded over a linear gradient of 0–500 mM imidazole. The eluted protein was further purified by size exclusion chromatography on a HiLoad 16/60 Superdex 200 pg column (Cytiva Life Sciences) preequilibrated with 20 mM Tris pH 7.2, 300 mM NaCl, 5% glycerol, 0.5 mM DTT.
 
-## Expression and purification of CypA
+### Expression and purification of CypA
 
 Human CypA was expressed in BL21(DE3) E. coli for 3 hr after IPTG induction in LB medium at 37 °C with shaking. Cells were harvested by centrifugation and lysed by sonication on ice in a buffer containing 25 mM HEPES, pH 7.6, 1 mM DTT, 0.02% NaN3, ‘Complete’ protease inhibitor and 1 mg mL–1 lysozyme. The lysate was clarified by centrifugation. CypA was purified by subtractive anion exchange chromatography using a 10 mL HiTrap Q HP column (GE Healthcare Life Science) equilibrated with 25 mM HEPES, pH 7.6, 1 mM DTT, 0.02% NaN3. CypA fractions eluting in the flow-through were adjusted to pH 5.8 with 1% v/v acetic acid, centrifuged and applied to a cation exchange chromatography column (5 mL HiTrap SP HP, GE Healthcare Life Science) equilibrated with 25 mM sodium phosphate, pH 5.8, 1 mM DTT, 0.02% NaN3. CypA was eluted with a linear gradient from 0 to 1 M NaCl over 20 column volumes. CypA was dialyzed against storage buffer (25 mM MOPS, pH 6.6, 1 mM DTT, 0.02% NaN3), concentrated using an Amicon-15 Ultra centrifugal filtration device (10 k MWCO, Merck) and frozen in liquid nitrogen for storage at –80 °C.
 
-## Labelling of CypA
+### Labelling of CypA
 
 CypA was dialysed against PBS (pH 7.4, 0.1 mM TCEP) and labelled by reaction with a fourfold molar excess of Alexa-Fluor 568-C5-maleimide (Thermo Fisher Scientific, A10254) for 10 min at room temperature. The reaction was quenched by addition of DTT. Labelled CypA was separated from unconjugated dye using Zeba desalting spin columns (Thermo Fisher Scientific) equilibrated with 50 mM Tris, pH 7.9, 20% v/v glycerol, 1 mM DTT. Under these conditions, CypA is quantitatively labelled at residue C51. Labelled CypA was frozen in liquid nitrogen and stored at –40 °C.
 
-## CPSF6 peptides
+### CPSF6 peptides
 
 The peptides CPSF6313–327 (CPSF6p) and CPSF6313–327 with an extra cysteine at the C-terminus (CPSF6p-Cys) were synthetised by GenScript. Peptides were dissolved in water at a concentration of 2.5 mM and stored in aliquots at –40 °C.
 
-## Labelling of CPSF6 peptide
+### Labelling of CPSF6 peptide
 
 CPSF6p-Cys was labelled with Alexa-Fluor 568-C5-maleimide (Thermo Fisher Scientific) added at an equimolar ratio in HEPES buffer pH 8. Labelling was verified by thin layer chromatography (TLC). No unconjugated dye was observed on TLC. CPSF6p-AF568 solution stored in aliquots at –40 °C.
 
-## Single-molecule TIRF uncoating assay
+### Single-molecule TIRF uncoating assay
 
 Single-molecule imaging of viral particles was carried out using TIRF microscopy with microfluidic sample delivery according to our previously published methods (Márquez et al., 2019). Briefly, biotinylated viral particles were captured onto coverslips attached to PDMS microfluidic flow cells and imaged using a custom-built TIRF microscope with an ASI-RAMM frame (Applied Scientific Instrumentation), a Nikon 100×CFI Apochromat TIRF (1.49 NA) oil immersion objective and NicoLase laser system (Nicovich et al., 2017). Immobilised virions were treated with imaging buffer containing 200 nM pore forming protein (DLY or SLO) to permeabilise viral membrane and AF568-labelled CypA (0.8 µM) to paint the capsid. Drugs (LEN, PF74, BI-2) were added to the imaging buffer as stock solutions in DMSO (final concentration not exceeding 0.5%). Images were acquired at a rate of 1 frame per 6 s for 30 min unless specified otherwise.
 
-## TIRF image analysis
+### TIRF image analysis
 
 Single-virion fluorescence traces were extracted from the TIRF image stacks using the JIM Immobilized Microscopy analysis package (Walsh, 2021, freely available on GitHub) and further analysed in MATLAB (The MathWorks Inc).
 
-## Capsid opening via GFP release
+#### Capsid opening via GFP release
 
 Change-point analysis of GFP intensity traces using an algorithm (Taylor, 2000) implemented in C++ was used to identify the presence and time of steps corresponding to membrane permeabilisation and capsid opening. Step probabilities were calculated non-parametrically using 10,000 bootstrap iterations. Step times were calculated using least squares fitting. Traces were automatically sorted into four classes based on the following criteria: (1) loss of entire GFP signal in one step; (2) loss of GFP intensity in one large step (permeabilisation) and one small step (capsid opening, identified with ≥75% step probability and ≥75% signal loss); (3) loss of the majority of the GFP signal in one step with residual GFP signal persisting for the rest of the experiment; (4) no or insufficient GFP signal drop or traces with more than two steps (excluded from analysis). Capsid opening times were calculated for traces in class two as the time difference between permeabilisation and capsid opening. Survival curves were constructed from the pooled opening times acquired in independent uncoating experiments.
 
-## Analysis of CA lattice stability via CypA paint
+#### Analysis of CA lattice stability via CypA paint
 
 Heatmaps and median traces of leaky or closed particles were generated after aligning at traces in the corresponding category at the time of membrane permeabilisation. Traces of opening particles were aligned at the time of membrane permeabilisation (shown in the first panel) and aligned at the time of capsid opening (shown in the second panel).
 
-## Quantification of bound molecules
+#### Quantification of bound molecules
 
 The number of bound AF568-labelled CPSF6p molecules was determined by dividing the CPSF6p-AF568 fluorescence intensity associated with each capsid by the fluorescence intensity of a single CPSF6p-AF568 molecule. The fluorescence intensity of the single fluorophore was determined from the quantal photobleaching step in photobleaching traces of CPSF6p-AF568 molecules adsorbed sparsely to the coverslip surface and imaged continuously.
 
-## Calculation of occupancy
+### Calculation of occupancy
 
 The occupancy at equilibrium (θeq) of FG binding pockets on the capsid with LEN was calculated using the equation θeq = cLEN / (cLEN +KD), where cLEN is the LEN concentration and KD is the dissociation constant of the LEN-capsid interaction. The occupancy as a function of time (θ(t)) was calculated using the following equation: θ(t) = θeq 1-exp(-(kon ×cLEN + koff)×t), where θeq is the occupancy at equilibrium, cLEN is the LEN concentration, kon is the association rate constant and koff is the dissociation rate constant. Estimates for KD, kon and koff were obtained from TIRF imaging in this work (KD = 0.51 nM, kon = 1.84E5 M–1s–1 and koff = 1.84E-4 s–1) or from published values obtained by surface plasmon resonance spectroscopy (KD = 0.24 nM, kon = 6.5E4 M–1s–1 and koff = 1.4E-5 s–1) (Link et al., 2020).
 
-## Production of pseudotyped-virus particles for cell-based assays
+### Production of pseudotyped-virus particles for cell-based assays
 
 VSV-G pseudotyped GFP-encoding virus particles were generated by co-transfecting HEK293T cells with pCRV1-GagPol, pCSGW and pMD2.G (1:1.1:1.3 mol/mol) using PEI 25 K. The culture medium was removed 16 hr post-transfection and replenished with a fresh medium containing 10 mM MgCl2, 0.5 mM CaCl2 and 100 U of DNase. Virus-containing medium was harvested 72 hr post-transfection, centrifuged (2100 x g, 20 min, 4 °C) to remove cell debris, divided into aliquots and stored at –80 °C.
 
-## Infection assays
+### Infection assays
 
 Infection assays were performed in 96 well plates using 0.75x105 Jurkat cells per well pre-treated with the indicated drug (LEN, PF74) concentrations for 30 min at 37 °C. The cells were then infected in triplicate with VSV-G-pseudotyped GFP-encoding virus in the presence of polybrene (10 µg/ml; Sigma) at room temperature for 20 min, followed by spinoculation at 800 x g for 1 hr at room temperature. The culture media were removed and replenished with fresh media containing drugs at the indicated concentrations. At 48 hours post infection, the cells were fixed in 2% paraformaldehyde (Electron Microscopy Sciences) for 1 hr at room temperature and analyzsd by flow cytometry using a LSRFortessa cell analyzer (BD Biosciences) and FlowJo software. For experiments involving preincubation with drugs, the virus was incubated with LEN at the indicated concentrations for 48 hr at room temperature and then used to infect cells as above. We chose 48 hr because this time is sufficient for binding at concentrations ≥50 pM to reach ≥95% of the respective equilibrium level (Figure 4—figure supplement 1A). For quantitative PCR (qPCR) analysis, virus was treated with DNase for 30 min at 37 °C and then used to infect 1x105 Jurkat cells in duplicate as described above. Cells were harvested 24 hours post infection and processed for qPCR.
 
-## Quantitative PCR analysis
+### Quantitative PCR analysis
 
 Genomic DNA was isolated from pelleted cells using a DNeasy blood and tissue kit (Qiagen). The concentration of purified DNA was determined using a Nanodrop spectrophotometer. To quantify total viral DNA, quantitative PCR was performed using sequence-specific primers and SsoAdvanced Universal SYBR Green Supermix (Bio-Rad). PCR conditions for vDNA amplification: Initial denaturation, 95 °C, 3 min; Denaturation, 95 °C, 10 s; Annealing/Extension, 60 °C, 30 s; 45 cycles.
 
-## Expression and purification of CA for in vitro assembly experiments
+### Expression and purification of CA for in vitro assembly experiments
 
 E. coli C41 cells expressing CA were lysed and cell debris was removed by centrifugation. CA was precipitated by addition of 25% ammonium sulphate to the supernatant, collected by centrifugation, resuspended, and dialysed against 50 mM MES (pH 6.0), 20 mM NaCl, 1 mM DTT. The CA protein was further purified on a cation exchange column with a gradient from 20 mM to 1 M NaCl followed by size exclusion chromatography with Tris pH 8.0, 20 mM NaCl, 1 mM DTT and finally snap frozen.
 
-## Turbidity assay to measure CA assembly kinetics
+### Turbidity assay to measure CA assembly kinetics
 
 CA proteins were dialysed against 50 mM MES (pH 6.0), 1 mM DTT. CA proteins were assembled at a final concentration of 75 µM in the presence of 2% DMSO. LEN titration: LEN (final concentration between 0.5–50 µM) was added to the CA solution and assembly was initiated by adding IP6 (final concentration of 200 µM). IP6 titration: IP6 (final concentration between 50 and 150 µM) ±LEN (final concentration 50 µM) was added to the CA solution to induce assembly. The increase in Abs350 was measured with a PHERAstar FSX Plate reader (BMG Labtech) in 384-well plate every 22 s with shaking after each measurement.
 
-## Negative staining EM of self-assembled CA structures
+### Negative staining EM of self-assembled CA structures
 
 The samples from the turbidity assay were allowed to sediment overnight. Then 5 µL of each sample was applied to a carbon coated grid (Cu, 400 mesh, Electron Microscopy Services) previously cleaned by glow discharge. The grids were then washed, and samples stained with 2% uranyl-acetate. Micrographs were taken at room temperature on a Tecnai Spirit (FEI) operated at an accelerated voltage of 120 keV and recorded with a Gatan 2k × 2k CCD camera. Images were collected with a total dose of ~30 e-/2 and a defocus of 1–3 µm.
 
-## HIV particle production for cryo-electron tomography
+### HIV particle production for cryo-electron tomography
 
 Replication deficient VSV-G pseudotyped HIV-1 virions were produced in HEK293T cells using pCRV1-GagPol, pCSGW and pMD2.G as described previously (Price et al., 2014). At 24–48 hr post transfection, the supernatants were harvested and passed through 0.22 μm nitrocellulose filter. The virions were concentrated by ultracentrifugation through a 20% (w/v) sucrose cushion (2 hr at 28,000 rpm in a SW32 rotor [Beckman Coulter Life Sciences]). The pellet was resuspended in PBS, snap-frozen and stored at –80 °C. LEN-treated virions were incubated in presence of 700 nM LEN for 1.5 hr at room temperature prior to plunge-freezing for cryo-ET.
 
-## Cryo-electron tomography of LEN-treated HIV particles
+### Cryo-electron tomography of LEN-treated HIV particles
 
 Colloidal gold beads (10 nm diameter) were added to the purified HIV particles and 6 µl of this suspension was applied to a C-Flat 2/2 3 C grid cleaned by glow discharge (20 mA, 40 s). The grids were blotted and plunge-frozen in liquid ethane using an FEI Vitrobot Mark II at 16 °C and 100% humidity. Tomographic tilt series between −40° and +40° with increments of 3°, defoci between –3 µm and –6 µm at a magnification of ×50,000 were acquired using Serial-EM (Mastronarde, 2005) on a TF2 Tecnai F20 transmission electron microscope under low-dose conditions at 200 kV and images recorded with a Falcon III direct electron detector. The Imod package (IMOD Version 4.9.0) was used to generate tomograms (Kremer et al., 1996). The alignment of 2D projection images of the tilt series was done using gold particles as fiducial markers. A 3D reconstruction was generated using back projection of the tilt-series. All the morphological classes, including the double-layered capsids, were classified by visual inspection.

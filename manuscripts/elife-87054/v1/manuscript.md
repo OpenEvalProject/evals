@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/050gn5214 Paris Brain Institute (ICM), Sorbonne Université, INSERM U1127, UMR CNRS 7225 Paris France
+1. Paris Brain Institute (ICM), Sorbonne Université, INSERM U1127, UMR CNRS 7225 Paris France ([ROR:050gn5214](https://ror.org/050gn5214))
 
 † Corresponding author
 

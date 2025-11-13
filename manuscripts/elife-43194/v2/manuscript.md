@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.43194.001 Complex motor skills take considerable time and practice to learn. Without continued practice the level of skill performance quickly degrades, posing a problem for the timely utilization of skilled motor behaviors. Here we quantified the recurring development of vocal motor skills and the accompanying changes in synaptic connectivity in the brain of a songbird, while manipulating skill performance by consecutively administrating and withdrawing testosterone. We demonstrate that a songbird with prior singing experience can significantly accelerate the re-acquisition of vocal performance. We further demonstrate that an increase in vocal performance is accompanied by a pronounced synaptic pruning in the forebrain vocal motor area HVC, a reduction that is not reversed when birds stop singing. These results provide evidence that lasting synaptic changes in the motor circuitry are associated with the savings of motor skills, enabling a rapid recovery of motor performance under environmental time constraints.
+Complex motor skills take considerable time and practice to learn. Without continued practice the level of skill performance quickly degrades, posing a problem for the timely utilization of skilled motor behaviors. Here we quantified the recurring development of vocal motor skills and the accompanying changes in synaptic connectivity in the brain of a songbird, while manipulating skill performance by consecutively administrating and withdrawing testosterone. We demonstrate that a songbird with prior singing experience can significantly accelerate the re-acquisition of vocal performance. We further demonstrate that an increase in vocal performance is accompanied by a pronounced synaptic pruning in the forebrain vocal motor area HVC, a reduction that is not reversed when birds stop singing. These results provide evidence that lasting synaptic changes in the motor circuitry are associated with the savings of motor skills, enabling a rapid recovery of motor performance under environmental time constraints.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Here we demonstrate that during a protracted testosterone treatment, adult femal
 
 ## Results
 
-## Testosterone-induced song development in female canaries
+### Testosterone-induced song development in female canaries
 
 To study the development of vocal skills in adult female canaries we recorded and analyzed the entire song ontogeny in acoustically separated animals (5.6 ± 0.6 million song syllables per bird), while manipulating song output by consecutively implanting, removing, and re-implanting birds with testosterone implants.
 
@@ -48,11 +48,23 @@ Whereas no songs were observed prior to treatment, the systemic application of t
 
 **Figure 1.:** (A) Schematic of natural song development in juvenile males. (B) Example spectral derivative spectrograms illustrating the different song developmental stages of a male canary. Subsong was recorded at 45 days of age, plastic song at 120 days of age and stable song at 1 year old. (C) Schematic of song development in adult female canaries during a first testosterone treatment (T1+), after removal of testosterone (T1-), and during a second testosterone treatment (T2+). (D) Example spectral derivative spectrograms from an adult female canary illustrating subsong after 3 days of testosterone treatment, plastic song after 30 days of treatment, and stable song after 200 days of treatment. Lowercase letters indicate different phrases of repeated syllables.
 
-## Re-application of testosterone triggers an accelerated re-acquisition of song performance
+### Re-application of testosterone triggers an accelerated re-acquisition of song performance
 
 To investigate the birds’ abilities to re-acquire song performance after a period without vocal practice we withdrew testosterone (T1-) from the animals, completely abolishing singing behavior in approximately three days (3.14 ± 0.63 days). After 2½ months of no song production birds were treated for a second time with testosterone (T2+), inducing song output after three days (3.14 ± 0.74 days). No subsongs were observed after the second testosterone treatment, and all birds were able to produce plastic songs from the first day of singing.
 
 We first compared the development of temporal song features during the first and second testosterone treatments (Figure 2, Figure 2—figure supplement 1, Figure 2—figure supplement 2). Particularly the speed at which subsequent syllables are repeated, the syllable repetition rate (SR), has been strongly associated with individual performance (Podos, 1997; Podos, 1996) and has been shown to increase the attractiveness of the song to conspecifics (Vallet et al., 1998; Vallet and Kreutzer, 1995). We observed that during the first two weeks of testosterone-induced female song development, all syllables were typically produced at a similar rate (SR: 10.3 ± 1.3 Hz). While practicing the song, different syllables were gradually sung at different rates, becoming more distinct towards song crystallization (Figure 2A). Once crystallized, syllables could be distinguished as fast syllables (SR: 21.7 ± 1.0 Hz), medium-speed syllables (SR: 11.9 ± 1.1 Hz), and slow syllables (SR: 4.9 ± 0.7 Hz). A similar distribution of syllable rates redeveloped during a 2nd testosterone treatment. The observed range of syllable rates was similar to what has previously been reported for wild-living male canaries (Leitner et al., 2001).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig2-v2.jpg)
+
+**Figure 2.:** (A) Syllable rate histogram from a female canary during two subsequent testosterone treatments. Color scales indicate the number of daily syllables produced for each discrete syllable rate. Curves were fitted through the most occurring syllable rates and are shown in red. (B) The correlation coefficient (CC) between the stabilized distribution of syllable rates at the end of the 1st testosterone treatment and each other day during the development and re-development of song in the same bird as shown in A. (C) The mean syllable rate correlation plot for all animals. Grey bars indicate the SEM. (D) Group statistics of all studied birds demonstrating that stable syllable rates were achieved more quickly during a 2nd testosterone treatment (red bars) than during the 1st treatment (blue bars). (E) The peak day-to-day increase in the syllable rate CC (dmax) was higher during a 2nd testosterone treatment than during the 1st treatment. (F) Example spectral derivative spectrograms from one bird and corresponding bar graphs illustrating syllable rates at 15, 70, and 200 days after a 1st testosterone treatment and 30 days after a 2nd treatment. Columns in D-E represent the mean ± SEM and open circles indicate individual data points (*p<0.05, ***p≤0.001, paired t-test, n = 6 animals). Columns in F represent the mean ± SEM (a,b,c: p≤0.001, ANOVA; n = 100 syllables). Source data for temporal song features are available in the Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mean syllable duration correlation plot for all animals showing a gradual development during a 1st testosterone treatment (T1+), followed by an immediate recovery of syllable duration during a 2nd treatment (T2+). (B) Group statistics demonstrating that stable syllable durations were achieved more quickly during a 2nd testosterone treatment (red bars) than during the 1st treatment (blue bars). (C) The peak day-to-day increase in the syllable duration CC (dmax) for T1+. Dmax could not be calculated for T2+, as we observed no developmental increase of this song feature during the 2nd testosterone treatment. (D) Mean correlation plot for the pause duration between subsequent song syllables. Pause durations stabilized relatively fast during a 1st testosterone treatment (T1+), and required a phase of re-development during a 2nd treatment (T2+). (E) Group statistics demonstrating that stable pause durations were achieved more quickly during a 2nd testosterone treatment (red bars) than during the 1st treatment (blue bars). (F) The peak day-to-day increase in the pause duration CC (dmax) was significantly higher for T2+ than for T1+. Grey bars in A and D indicate the SEM. Columns in B,C,E,F represent the mean ± SEM and open circles indicate individual data points (*p<0.05, **p<0.01, ***p≤0.001, paired t-test, n = 6 animals).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Example song feature histograms from one individual illustrating the gradual acquisition during a 1st testosterone treatment (T1+) and the rapid recurrence during a 2nd treatment (T2+) for (A) syllable duration, and (B) pause duration. (C,D) Example spectral derivative spectrograms from two different birds illustrating a slower syllable rate with longer pause durations at the onset of song production during the 2nd (T2+ 3) testosterone treatment compared to stable songs during the 1st (T1+ 200) and 2nd (T2+ 30) treatment.
 
 To determine how fast this syllable rate pattern emerged during subsequent testosterone treatments we took crystallized song from the last week of the first testosterone treatment as a reference pattern, and calculated the correlation coefficient (CC) between this reference and each day of song development and re-development (Figure 2B & C). While syllable repetition rates gradually developed and stabilized over the course of 160 ± 8 days during the first testosterone treatment, stable rates were obtained more than seven times faster, within 22 ± 2 days, during the second treatment (Figure 2D; paired t-test: p<0.001). In addition the maximum daily increase in similarity (dmax) was also significantly higher during song re-development than during initial song development (Figure 2E; dmax: 0.021 ± 0.005 for T1+, and 0.078 ± 0.012 for T2+; paired t-test: p<0.05), indicating a much accelerated development of song performance in birds with previous singing experience.
 
@@ -60,7 +72,19 @@ Since syllable rate is a compound feature that is determined by both syllable du
 
 To determine the bird’s ability to recover spectral song patterns we analyzed the recurring patterns of frequency modulation (FM), amplitude modulation (AM), bandwidth (BW), mean frequency (MF) and Wiener entropy (E) during song acquisition and re-acquisition. Similar to temporal song features, spectral features were more quickly established during song re-acquisition (T2+) than during the initial song development (T1+) (Figure 3, Figure 3—figure supplement 1, Figure 3—figure supplement 2). All spectral features developed gradually over more than 110 days before reaching stable values. After a period in which the birds did not produce any song, testosterone-induced song re-acquisition led to a rapid stabilization of spectral patterns within 16 days (Figure 3, Figure 3—figure supplement 1; paired t test: p<0.01). Thus both temporal and spectral song features were acquired significantly faster by experienced birds that had developed singing skills once before.
 
-## The absence of song practice causes selective deterioration of song features
+![Figure 3.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig3-v2.jpg)
+
+**Figure 3.:** (A) Mean correlation plot for all animals illustrating the development of the frequency modulation (FM) distribution in the song during the development (T1+) and re-development (T2+) of song. The correlation plot illustrates a gradual FM development during T1+, followed by a short phase of FM re-development during T2+. (B) Group statistics demonstrating that the stabilization of the FM distribution in the song took less time during a 2nd testosterone treatment (red bars) than during the 1st treatment (blue bars). (C) The peak day-to-day increase in the FM CC (dmax) was significantly higher during a 2nd testosterone treatment than during the 1st treatment. (D) Mean correlation plot for the syllable bandwidth showing a gradual development during a 1st testosterone treatment (T1+), followed by an immediate recovery of syllable bandwidth during a 2nd treatment (T2+). (E) Group statistics demonstrating that stable syllable bandwidths were achieved more quickly during a 2nd testosterone treatment (red bars) than during the 1st treatment (blue bars). (F) The peak day-to-day increase in the syllable bandwidth CC (dmax) for T1+. Dmax could not be calculated for T2+, as we observed no developmental increase of this song feature during the 2nd testosterone treatment. (G) Deterioration in the distribution patterns of all analyzed song features during absence of song production (T1-), and (H) subsequent recovery of song features during testosterone-induced re-development of song (T2+). Grey bars in A and D indicate the SEM. Columns in B,C and E-H represent the mean ± SEM and open circles indicate individual data points (*p<0.05, **p<0.01, ***p≤0.001, paired t-test (B,C,E,F) and one-sample t-test (G,H), n = 6 animals). Source data for acoustic features are available in the Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean amplitude modulation (AM) correlation plot for all animals. The AM distribution demonstrated a gradual consolidation during the 1st testosterone treatment (T1+), and displayed a short phase of re-development during a 2nd testosterone treatment (T2+) (B,C). Both mean frequency (D–F) and wiener entropy (G–I) demonstrated a gradual development during the 1st testosterone treatment (T1+) followed by an immediate recovery during a 2nd treatment (T2+). Dmax could not be calculated for T2+ in F,I, as we observed no developmental increase of these song features during the 2nd testosterone treatment. Grey bars in A, D and G indicate the SEM. Columns in B,C, E,F, and H,I represent the mean ± SEM and open circles indicate individual data points (**p<0.01, ***p≤0.001, paired t-test, n = 6 animal).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Example song feature histograms illustrating the gradual acquisition during a 1st testosterone treatment (T1+) and the rapid recurrence during a 2nd treatment (T2+) for (A) frequency modulation, (B) amplitude modulation, (C) bandwidth, (D) mean frequency, and (E) Wiener entropy. (F,G) Example spectral derivative spectrograms from stable songs at 200 days after a 1st testosterone treatment (T1+ 200), plastic songs at 3 days after a 2nd testosterone treatment (T2+ 3), and stable songs 30 days after a 2nd treatment (T2+ 30).
+
+### The absence of song practice causes selective deterioration of song features
 
 Whereas song re-acquisition in female canaries resulted in a rapid recurrence of stable temporal and spectral patterns, not all song features re-developed in the same way. Most notably, some song features demonstrated a clear deterioration in the absence of vocal practice, while other song features remained stable despite the absence of vocal practice (Figure 3G & H).
 
@@ -68,9 +92,21 @@ Of the studied temporal song parameters, syllable durations did not show any det
 
 Of the spectral syllable features that were studied, the FM and AM patterns deteriorated when birds stopped singing (T1-), but were re-acquired during a short developmental phase after a 2nd testosterone treatment (T2+) (Figure 3A–C, Figure 3—figure supplement 1A–C, Figure 3—figure supplement 2A & B). BW, MF, and E did not need to be re-acquired, but maintained strong similarities with the initial acoustic patterns despite the absence of song production in the intermittent period (T1-) (Figure 3D–F, Figure 3—figure supplement 1D–I, Figure 3—figure supplement 2C–E). Thus song re-acquisition can be characterized by recalling a combination of sound features that immediately can be reproduced and sound features that require a short phase of redevelopment.
 
-## Song similarity during subsequent testosterone treatments
+### Song similarity during subsequent testosterone treatments
 
 The songs that reappeared during the second testosterone treatment were strikingly similar to those that developed after the first treatment (Figure 4). Visual inspection of the song spectrograms revealed no differences in syllable repertoire when comparing crystallized songs during the first and second testosterone treatment (Figure 4A & B; 6.2 ± 1.1 syllable types for both treatments). In addition both temporal and spectral song features demonstrated a strong similarity in their distribution patterns between subsequent testosterone treatments (T1xT2), with correlation coefficients above 0.82 for all studied song features (Figure 4C). These values were not significantly different from the correlation coefficients obtained by cross-correlating distribution patterns from consecutive days during the first treatment period (T1xT1) for any of the measured song features (Figure 4C), indicating that the song patterns that developed during the first and second testosterone treatment are similar in structure.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig4-v2.jpg)
+
+**Figure 4.:** (A,B) Example spectral derivative spectrograms of stable song from two animals during the 1st (T1+) and 2nd (T2+) testosterone treatment illustrating a strong similarity in song structure. (C) Similarity analyses between stable song patterns from the 1st and 2nd testosterone treatment periods (T1xT2, red bars) demonstrated a high level of correlation of more than 80% for all analyzed song features. Correlation coefficients between songs from T1+ and T2+ were not significantly different from the CCs obtained when cross-correlating song patterns within the T1+ period (T1xT1, blue bars). Columns in C represent the mean ± SEM and open circles indicate individual data points (NS, paired t-test, n = 6 animals). Source data for similarity calculations are available in the Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Euclidean distances are shown between syllables of the same type during a 1st testosterone treatment (T1xT1, blue bars), between syllables of the same type between the 1st and 2nd testosterone treatment (T1xT2, red bars), and between syllables of different types between the 1st and 2nd testosterone treatment (T1xT2ext, green bars). (A,B) Euclidean distances between individual song syllables and their means within and between testosterone treatments for the two birds shown in Figure 4. Lowercase letters correspond to the song phrases indicated in Figure 4A and B. (C) Group statistics demonstrating a strong similarity between syllables of the same type, but not between syllables of different types when comparing song syllables between the two testosterone treatments. Columns in A-C represent the mean ± SEM and open circles in C indicate individual data points (a,b: p<0.001, ANOVA, n = 6 animals).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A,B) Example probability distributions of song phrase transitions from two animals during the 1st (T1+, blue bars) and 2nd (T2+, red bars) testosterone treatment illustrating the strong similarity in phrase transitions between the two treatment periods. (C–E) Group statistics demonstrating stable consistency (C), linearity (D) and entropy (E) of phrase transitions during the two developmental phases. Columns in C-E represent the mean ± SEM and open circles indicate individual data points (NS, paired t-test, n = 6 animals).
 
 To determine the similarity of syllables produced during the 1st and 2nd testosterone treatments we calculated for each bird the Euclidean distance across all eight analyzed temporal and spectral features within and between syllable types (Figure 4—figure supplement 1). The Euclidean distance between two syllables provides a measure of similarity where a syllable is represented as a point with coordinates that correspond to the eight analyzed sound features. The distance between syllables with similar sound features and thus similar coordinates is low, while the distance between syllables with differing sound features is high. The mean Euclidean distances between syllables of the same type across the 1st and 2nd testosterone treatment (T1xT2) were not different from the Euclidean distances between syllables from subsequent days during the 1st testosterone treatment (T1xT1: d = 0.73 ± 0.04, T1xT2: d = 0.76 ± 0.06; Tukey’s HSD: p=0.99). The mean Euclidean distances between syllables of different types across the two treatment periods were significantly larger than those between syllables of the same type (T1xT2ext: d = 2.12 ± 0.23; Tukey’s HSD: p<0.001). These results indicate that for a given syllable the sound features that redeveloped after the 2nd testosterone treatment fell within the range of variation observed during the 1st testosterone treatment for that same syllable type, but were clearly distinguishable from the sound features of other syllable types.
 
@@ -78,13 +114,13 @@ To investigate if the sequential structure of the song was different between the
 
 Together these data strongly suggest that testosterone-induced song re-acquisition in canaries is driven towards the previously acquired song pattern.
 
-## Singing-related pruning of neuronal dendritic spines
+### Singing-related pruning of neuronal dendritic spines
 
 The finding that the re-acquisition of song performance progresses considerably faster than the initial acquisition and leads to the production of highly similar song patterns suggests that singing skills are retained during intermittent silent periods. Motor learning and memory are generally considered to rely on the maturation and consolidation of the synaptic connections within the neural circuitry that drives the behavior in question (Changeux and Danchin, 1976; Yu and Zuo, 2011; Hoshiba et al., 2017). To investigate changes in synaptic connectivity during vocal motor development we quantified the number of neuronal dendritic spines in the forebrain motor nucleus HVC and the robust motor nucleus of the arcopallium (RA) before, during, and after the acquisition of vocal motor skills (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43194/elife-43194-fig5-v2.jpg)
 
-**Figure 5.:** (A) Photomicrographs of dendrite segments from non-singing control animals (C), singing female canaries sacrificed after five months of testosterone treatment (T1+), and non-singing individuals sacrificed 2.5 months after testosterone withdrawal (T1-). (B) Compared to naive control birds (C), spine densities were significantly reduced in testosterone-treated, singing birds (T1+), and remained significantly reduced up to 2.5 months after birds stopped singing by withdrawing testosterone (T1-). (C) No significant differences in spine densities were observed in RA between the experimental periods. (D–F) The probability distribution of dendrites with different spine densities in HVC demonstrated a shift towards more dendrites with fewer spines in testosterone treated (T1+), singing birds and testosterone removed (T1-), non-singing birds compared to non-singing control birds. Columns in B-F represent the mean ± SEM and open circles indicate individual data points (a,b: p<0.01, ANOVA, n = 6 animals). Scale bar = 100 µm. Source data for spine quantifications are available in the Figure 5—source data 1.  10.7554/eLife.43194.017Figure 5—source data 1.
+**Figure 5.:** (A) Photomicrographs of dendrite segments from non-singing control animals (C), singing female canaries sacrificed after five months of testosterone treatment (T1+), and non-singing individuals sacrificed 2.5 months after testosterone withdrawal (T1-). (B) Compared to naive control birds (C), spine densities were significantly reduced in testosterone-treated, singing birds (T1+), and remained significantly reduced up to 2.5 months after birds stopped singing by withdrawing testosterone (T1-). (C) No significant differences in spine densities were observed in RA between the experimental periods. (D–F) The probability distribution of dendrites with different spine densities in HVC demonstrated a shift towards more dendrites with fewer spines in testosterone treated (T1+), singing birds and testosterone removed (T1-), non-singing birds compared to non-singing control birds. Columns in B-F represent the mean ± SEM and open circles indicate individual data points (a,b: p<0.01, ANOVA, n = 6 animals). Scale bar = 100 µm. Source data for spine quantifications are available in the Figure 5—source data 1.
 
 Excitatory projection neurons in the HVC of testosterone-treated, singing female canaries displayed a more than 30% reduction in dendritic spine density compared to untreated, non-singing control birds (C: 0.95 µm−1, T1+: 0.64 µm−1; Dunnett’s test: p<0.01), indicating a significant synaptic pruning during the first acquisition of singing skills (Figure 5B). Compared to non-singing control birds, spine densities remained significantly lower in birds that stopped singing for 2.5 months after testosterone removal (C: 0.95 µm−1, T1-: 0.69 µm−1; Dunnett’s test: p<0.01). Thus, the synaptic pruning in HVC associated with testosterone-induced song acquisition is not reversed when birds stop singing, but instead the pruned state is maintained in periods in which the birds do not sing (Figure 5B). In contrast, we did not observe any changes in dendritic spine densities in RA across the different experimental periods (Figure 5C; ANOVA: p=0.857).
 
@@ -118,15 +154,15 @@ Sex hormones can be regulated by both environmental and social factors (Goymann 
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 For this study adult domesticated canaries (Serinus canaria) were either purchased from a local breeder in Antwerp or taken from the breeding colony of the Max Planck Institute for Ornithology, Seewiesen. All animals were raised and kept under local natural daylight conditions, until the day length reached 11 hr in early March. Birds were subsequently housed individually in sound attenuating chambers for song recordings. Experimental procedures were conducted according to the guidelines of the Federation of European Animal Science Associations (FELASA) and approved by the Ethical Committee on animal experiments of the University of Antwerp.
 
-## Hormone treatment
+### Hormone treatment
 
 To stimulate song production in naive female canaries, birds were subcutaneously implanted (T1+) with 8 mm silastic tubes (Dow Corning, Midland, MI; ID: 1.47 mm) filled with crystalline testosterone (Sigma-Aldrich Co., St. Louis, MO). During the hormone treatments a light cycle of 11 hr light, and 13 hr darkness was maintained to exclude photoperiodic effects on song production. This light cycle was chosen because under natural conditions it corresponds to a phase of testosterone up-regulation and physiological sensitivity to hormone fluctuations in canaries (Nottebohm et al., 1987). After consolidation of song we removed the hormone implants (T1-) to end song production, and changed the daylight conditions to 8 hr light and 16 hr dark, inducing a molting phase of approximately 1.5 months. Once the molt was finished, the day length was gradually returned to 11 hr over the following month. Subsequently, the song-experienced birds received a second testosterone treatment (T2+), and were sacrificed 5 weeks after implantation.
 
-## Hormone analysis
+### Hormone analysis
 
 Blood samples were collected from the birds’ right wing veins using heparinized haematocrit capillaries (Brand, Wertheim, Germany). Directly after blood collection, samples were centrifuged at 3000 RPM for 10 min to separate cells from plasma, and stored at −80°C for later analysis.
 
@@ -136,31 +172,81 @@ Briefly, plasma samples were extracted with dichloromethane (DCM) after overnigh
 
 Testosterone concentrations in the plasma samples were measured in one assay. The lower detection limit of the RIA was 0.33 pg/tube, and all measured plasma levels were above the lower detection limit. The intra-assay variation of a chicken plasma pool as control sample at the beginning and end of the assay was 6.7%. Pooled plasma levels of testosterone for all birds during the different consecutive hormone treatments are shown in Table 1. Mean detected hormone levels were within range of physiological plasma levels in nest-building male canaries (range: 360–7970 pg/ml; n = 6) and previously reported values for other small passerines (Wingfield and Hahn, 1994; Kempenaers et al., 2008; Apfelbeck and Goymann, 2011).
 
-## Song recording
+**Table 1.**
+ Plasma levels of testosterone (T) during different hormone treatments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th>T levels (pg/ml)</th>
+      <th>Significance*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>control</td>
+      <td>238 ± 65</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T1+</td>
+      <td>6486 ± 488</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>T1-</td>
+      <td>138 ± 30</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>T2+</td>
+      <td>7279 ± 1249</td>
+      <td>p&lt;0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_* P-values of comparisons between different hormone treatments against control values (ANOVA with Dunnett’s t correction for multiple comparisons against one control)._
+
+### Song recording
 
 To monitor the entire song ontogeny during consecutive testosterone treatments randomly selected, naive female canaries (n = 6) were kept individually in sound attenuating chambers during testosterone treatment (T1+), testosterone removal (T1-) and testosterone re-treatment (T2+), while song output was continuously recorded. This approach resulted in a song database of 5.6 ± 0.6 million song syllables per bird, recorded over the course of approximately 1 year.
 
 The vocal activity of each bird was recorded using Sound Analysis Pro 2.0 (Tchernichovski et al., 2000). Omnidirectional condenser microphones (TC-20; Earthworks, Milford, NH) connected to a multi-channel microphone preamplifier (UA-1000; Roland, Los Angeles, CA) were used to acquire and digitize all sounds produced within the sound attenuating boxes with a sampling frequency of 44.1 kHz. The incoming signal was filtered online using an amplitude and Wiener entropy threshold to exclude background noises, and saved in 60 s waveform audio files (16-bit PCM format).
 
-## Song analysis
+### Song analysis
 
 Vocalizations were segmented into individual syllables with the fully automated Feature Batch module in Sound Analysis Pro by applying an amplitude threshold to the sound wave. Because the distance from perch to microphone ranged between 10 and 20 cm only, little variation in recorded amplitude levels can be expected. The amplitude threshold was selected once manually to assure reliable segmentation, and was kept constant during the analyses of all sound phrases within birds.
 
 To filter out non-song vocalizations, syllables were only included when produced within a song bout of at least 750 ms. A song bout was defined as a sequence of sounds traversing the amplitude threshold with an interval of no more than 100 ms. We used Sound Analysis Pro to measure duration (d), pause duration (i), syllable rate (SR), frequency modulation (FM), amplitude modulation (AM), syllable bandwidth (BW), mean frequency (MF) and Wiener entropy (E) for each syllable and stored these syllable features in MySQL 5.1 tables (Oracle, Redwood Shores, CA). Bandwidth was calculated for each syllable by subtracting the minimum peak frequency from the maximum peak frequency. The syllable rate was defined for each syllable as: SRa = (da +ia)−1, where da is the duration of syllable ‘a’, and ia is the interval between the end of syllable ‘a’ and the beginning of the consecutive syllable within the same song bout, irrespective of syllable type. For a detailed computational description of how Sound Analysis Pro calculates the different sound features we refer to the accompanying publication (Tchernichovski et al., 2000) and the online manual (http://soundanalysispro.com).
 
-To investigate the dynamic change of song features over the course of the experiment, daily histograms were obtained from the entire dataset by rounding individual values to the nearest integer, and plotting the number of times those integers occurred each day. To determine the SRs that were most commonly used at the onset and crystallization of song development a non-linear exponential curve (1) was fitted through the peak values of each SR histogram.(1)Fx=a+b1+e⁡c-xd
+To investigate the dynamic change of song features over the course of the experiment, daily histograms were obtained from the entire dataset by rounding individual values to the nearest integer, and plotting the number of times those integers occurred each day. To determine the SRs that were most commonly used at the onset and crystallization of song development a non-linear exponential curve (1) was fitted through the peak values of each SR histogram.
+
+$$
+Fx=a+\frac{b}{1+e⁡\frac{c-x}{d}}
+$$
 
 Further developmental correlation plots for all temporal and spectral song features were produced by calculating the Pearson product-moment correlation coefficient (CC) between a 7 day average of the histogram pattern at the time of song stabilization and all other recorded days. This calculation resulted in a value between −1 and 1 for each recorded day, and was used as a measure of similarity where one describes an absolute copy of the stable song pattern, and −1 describes the absolute inverse of the stable song pattern. A non-linear exponential curve (1) was fitted through the CC values and song parameters were considered stable as soon as the daily increase in similarity dropped below 0.001. For each song feature we used the fit curve to determine the duration between testosterone implantation and feature stabilization, and to determine the maximum daily increase in similarity (dmax). Dmax could only be calculated for birds and song features that demonstrated a developmental increase in similarity, and was only used for statistical purposes if three or more birds demonstrated such an increase. Mean CC plots combining all analyzed birds were calculated by averaging the raw (non-fitted) CC values that were calculated for each bird and for each day. We aligned song development in the different birds based on the first day where we detected song.
 
-Spectrograms of the original sound files were visually inspected on syllable-like sound structures to determine the syllable repertoire of each bird and the first occurrence of song after testosterone treatments. To assess syllable similarity during consecutive testosterone treatments we calculated the Euclidean distance between each of 100 randomly selected syllables for each syllable type from stable songs during both the T1+ and T2+ periods. The Euclidean distance between two syllables ‘a’ and ‘b’ with coordinates c = SR, d, i, FM, AM, BW, MF, E was defined as:da,b=∑c=1n(b1-a1)2
+Spectrograms of the original sound files were visually inspected on syllable-like sound structures to determine the syllable repertoire of each bird and the first occurrence of song after testosterone treatments. To assess syllable similarity during consecutive testosterone treatments we calculated the Euclidean distance between each of 100 randomly selected syllables for each syllable type from stable songs during both the T1+ and T2+ periods. The Euclidean distance between two syllables ‘a’ and ‘b’ with coordinates c = SR, d, i, FM, AM, BW, MF, E was defined as:
+
+$$
+da,b=\sqrt{\sum_{c=1}^{n}(b_{1}-a_{1})^{2}}
+$$
 
 To give all analyzed temporal and spectral features equal weight in the analysis, each feature was normalized by dividing its value by its global median value from all syllables produced by all birds recorded in this study.
 
 First, for each syllable type the mean Euclidean distance between 100 syllables of the same type during T1+ (T1xT1) was calculated to determine how much baseline variation existed between syllables of the same type. Lower values indicate a higher similarity between syllables. Secondly, we calculated the mean Euclidean distance between 100 syllables of the same type from the T1+ and T2+ (T1xT2) periods to determine if syllables produced during the 2nd testosterone treatment were similar to those produced during the 1st testosterone treatment. Finally, we calculated the mean Euclidean distance between 100 syllables of the same type from the T1 +period with each of 100 syllables from all other types of syllables that a bird produced (T1xT2ext) to provide a measure of dissimilarity between syllables of different types. All observed syllable types were included in this analysis with the exception of single transitional syllables connecting two song phrases.
 
-To assess similarity of song syntax between subsequent testosterone treatments we determined the probability of song phrase transitions during the T1+ and T2+ periods for each bird. On average 794.3 phrase transitions per bird were used for the analysis. From the resulting transition probability distributions we calculated the sequence linearity, consistency and entropy as previously described (Scharff and Nottebohm, 1991; Daou et al., 2012). In short, sequence linearity is expressed as the number of syllable types divided by the number of transition types and addresses the way phrases are ordered in a song. Sequence consistency is expressed as the sum of common phrase transitions divided by the sum of total transitions and addresses how often the same sequences are produced. Common phrase transitions were defined as transitions that make up at least 5% of all phrase transitions. The entropy (S) of the transition probability distribution with transition type Ti is a measure of the spread of that distribution and was calculated as:S=-∑i=1nTi log2⁡(Ti)
+To assess similarity of song syntax between subsequent testosterone treatments we determined the probability of song phrase transitions during the T1+ and T2+ periods for each bird. On average 794.3 phrase transitions per bird were used for the analysis. From the resulting transition probability distributions we calculated the sequence linearity, consistency and entropy as previously described (Scharff and Nottebohm, 1991; Daou et al., 2012). In short, sequence linearity is expressed as the number of syllable types divided by the number of transition types and addresses the way phrases are ordered in a song. Sequence consistency is expressed as the sum of common phrase transitions divided by the sum of total transitions and addresses how often the same sequences are produced. Common phrase transitions were defined as transitions that make up at least 5% of all phrase transitions. The entropy (S) of the transition probability distribution with transition type Ti is a measure of the spread of that distribution and was calculated as:
 
-## Specimen preparation
+$$
+S=-\sum_{i=1}^{n}T_{i}log_{2}⁡(T_{i})
+$$
+
+### Specimen preparation
 
 To estimate spine densities and dendrite densities in motor nucleus HVC and RA, brains were collected from a control group of adult female canaries that did not receive any testosterone treatment (C: n = 6), a group of birds that was sacrificed five months after testosterone treatment (T1+: n = 8), and a group of birds that was sacrificed at least 2.5 months after testosterone withdrawal (T1-: n = 6). All experimental birds were raised and kept in group aviaries together with other male and female canaries throughout the experiment to assure similar social and auditory conditions. Birds were transferred to sound attenuating chambers for two weeks after testosterone treatment to assure that birds were singing, and prior to sacrifice. Individuals were randomly allocated to the different treatment groups. All birds were maintained on a light cycle of 11 hr light, and 13 hr darkness and were between 2.5 and 3 years old at the time of sacrifice. Brains were processed for Golgi-Cox staining using the FD Rapid GolgiStain kit (FD NeuroTechnologies, Columbia, MD).
 
@@ -170,7 +256,7 @@ Brain hemispheres were separated with a razor blade and left hemispheres were im
 
 Sections with a regular interval of 180 µm were mounted on SuperFrost glass slides (Menzel GmbH, Brauschweig, Germany), developed in a solution of two parts distilled water, one part FD solutions D, and one part FD solution E for ten minutes, and rinsed in distilled water before embedding in CC/Mount tissue mounting medium (Sigma-Aldrich). Slides were incubated at 70°C until the mounting medium had hardened, cleared in xylene, and further embedded in Roti-Histokitt II (Carl Roth, Karlsruhe, Germany) before coverslipping.
 
-## Spine and Dendrite quantification
+### Spine and Dendrite quantification
 
 For each bird, z-stacks were obtained from three brain sections of nucleus HVC and two sections of nucleus RA with a Nikon Eclipse Ti microscope (Nikon, Tokyo, Japan), equipped with a 60x oil immersion lens (CFI Plan Apo VC 60x Oil). The outline of HVC and RA in each section was delineated in ImageJ (http://rsb.info.nih.gov/ij/), and 100 µm2 non-overlapping regions of interests (ROIs) were randomly placed within the boundaries of the target nucleus prior to the quantifications. Considering the relatively uniform distribution of X-projecting HVC neurons and RA-projecting HVC neurons (Fortune and Margoliash, 1995), this approach should result in a homogenous sampling across treatment groups.
 
@@ -182,6 +268,6 @@ To obtain a density measure of aspinous neurites in HVC, the number of visible s
 
 All quantifications were conducted by an experimenter that was blind to the experimental condition of the animals.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed in SAS 9.3 (SAS Institute, Cary, NC). No sample sizes were calculated prior to the experiments. A technical replication was defined as a repeated measurement of the same individual, and biological replications constitute the number of sampled individuals (n). Differences in spine and dendrite densities between treatment groups were tested with a one-way analysis of variance (ANOVA) with Dunnett’s correction for multiple comparisons against one control value (untreated birds). Changes in hormone levels were determined using a repeated one-way ANOVA with Dunnett’s correction. Differences in syllable similarity and syllable rates of individual syllable types were tested with one-way ANOVAs, and when significant, Tukey's HSD test was used to analyze differences between time points. Song pattern similarities between the 1st and 2nd hormone treatment were established by comparing the average CC from seven consecutive days of stable song during the 1st treatment with the average CC from seven consecutive days of stable song production during the 2nd treatment. Paired-samples t-tests were used to compare CC’s, sequence parameters, and developmental time parameters between subsequent hormone treatments. To determine song feature deterioration we calculated the difference between the average CC from the last 7 days of stable song production during the 1st testosterone treatment and the average CC from the first 2 days of song production during the 2nd treatment. Feature recovery was determined by subtracting the average CC from the first 2 days of song production from the average CC from the last 7 days of stable song production during the 2nd testosterone treatment. One-sample t-tests were used to determine if feature deterioration and recovery significantly exceeded zero. Measurement values in the text are given as means ± SEM, unless stated otherwise. No outliers or data were excluded from analysis.

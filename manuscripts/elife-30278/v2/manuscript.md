@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.30278.001 The Hippo pathway controls tissue growth and homeostasis through a central MST-LATS kinase cascade. The scaffold protein SAV1 promotes the activation of this kinase cascade, but the molecular mechanisms remain unknown. Here, we discover SAV1-mediated inhibition of the PP2A complex STRIPAK SLMAP as a key mechanism of MST1/2 activation. SLMAP binding to autophosphorylated MST2 linker recruits STRIPAK and promotes PP2A-mediated dephosphorylation of MST2 at the activation loop. Our structural and biochemical studies reveal that SAV1 and MST2 heterodimerize through their SARAH domains. Two SAV1–MST2 heterodimers further dimerize through SAV1 WW domains to form a heterotetramer, in which MST2 undergoes trans-autophosphorylation. SAV1 directly binds to STRIPAK and inhibits its phosphatase activity, protecting MST2 activation-loop phosphorylation. Genetic ablation of SLMAP in human cells leads to spontaneous activation of the Hippo pathway and alleviates the need for SAV1 in Hippo signaling. Thus, SAV1 promotes Hippo activation through counteracting the STRIPAK SLMAP PP2A phosphatase complex.
+The Hippo pathway controls tissue growth and homeostasis through a central MST-LATS kinase cascade. The scaffold protein SAV1 promotes the activation of this kinase cascade, but the molecular mechanisms remain unknown. Here, we discover SAV1-mediated inhibition of the PP2A complex STRIPAKSLMAP as a key mechanism of MST1/2 activation. SLMAP binding to autophosphorylated MST2 linker recruits STRIPAK and promotes PP2A-mediated dephosphorylation of MST2 at the activation loop. Our structural and biochemical studies reveal that SAV1 and MST2 heterodimerize through their SARAH domains. Two SAV1–MST2 heterodimers further dimerize through SAV1 WW domains to form a heterotetramer, in which MST2 undergoes trans-autophosphorylation. SAV1 directly binds to STRIPAK and inhibits its phosphatase activity, protecting MST2 activation-loop phosphorylation. Genetic ablation of SLMAP in human cells leads to spontaneous activation of the Hippo pathway and alleviates the need for SAV1 in Hippo signaling. Thus, SAV1 promotes Hippo activation through counteracting the STRIPAKSLMAP PP2A phosphatase complex.
 
 ## Introduction
 
@@ -35,31 +35,257 @@ In this study, using a combination of biochemical, structural, and cell biologic
 
 ## Results
 
-## Feedback inhibition of MST2 activation by autophosphorylated MST2 linker
+### Feedback inhibition of MST2 activation by autophosphorylated MST2 linker
 
 MST2 undergoes autophosphorylation at multiple threonine-methionine (TM) motifs in its linker (Figure 1A) (Ni et al., 2015). One such motif, pT378M, acts as the primary docking site for MOB1. Binding of MST2 converts MOB1 to the open conformation, allowing MOB1 to bind and recruit LATS1 to MST2 for phosphorylation. Therefore, phosphorylation of the MST2 linker is critical for activation of the Hippo pathway. Surprisingly, we found that mutation of 7 TMs to AMs (7TA) in MST2 not only abolished MOB1 binding to MST2, but also dramatically increased MST2 T180 phosphorylation in human cells (Figure 1B), suggesting that linker phosphorylation could inhibit MST1/2 kinase activation in a feedback mechanism. This result is consistent with earlier findings that truncation of the MST1/2 linker increases MST1/2 kinase activity (Creasy et al., 1996). Therefore, autophosphorylation of the MST2 linker has dual, opposing functions in Hippo signaling: recruitment and activation of MOB1 for downstream signaling and feedback inhibition of MST2 activation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain organization of human MST2 and seven phospho-TM sites in the linker region. (B) Identification of the TM motifs in the MST2 linker critical for inhibition of MST2 T180 phosphorylation. Anti-FLAG and anti-pMST2 (T180) blots of lysates of 293FT cells transfected with the indicated FLAG-MST2 plasmids. Anti-FLAG blot was used to evaluate protein expression levels. (C) Anti-FLAG, anti-pMST2 (T180), anti-pMST2 (T336), and anti-pMST2 (T378) blots of lysates of 293FT cells transfected with the indicated FLAG-MST2 plasmids. (D) Anti-Myc and anti-SLMAP blots of cell lysates (input) and anti-FLAG immunoprecipitates (IP) of 293FT cells transfected with the indicated plasmids. WT, wild type; ΔFHA, mutant with FHA deleted. (E) Immunoblots of cell lysates (input) and anti-FLAG IP of 293FT cells transfected with the indicated plasmids. Endogenous SLAMP was detected by the anti-SLMAP blot. Asterisk designates a non-specific band. (F) Immunoblots of cell lysates (input) and anti-FLAG IP of 293FT cells transfected with the indicated plasmids. Asterisk designates a non-specific band. (G) ITC thermogram (top) and isotherm (middle) of the binding between purified recombinant human SLMAP FHA and the pT378-MST2373-382 (pMST2) peptide with the binding affinity (Kd) indicated. DP, differential power. (H) Superposition of the crystal structures of human SLMAP FHA (cyan) and SLMAP FHA in complex with the pMST2 peptide (wheat). pMST2 is colored yellow and shown as sticks. The pMST2 residues are labeled in magenta. All structure figures are generated by PyMOL (Schrödinger, LLC; http://www.pymol.org). (I) Surface drawing of the pT-binding site of SLMAP FHA. The surface is colored according to the electrostatic potential, with blue, red, and white representing positive, negative, and neutral charges, respectively. pMST2 is shown as yellow sticks with residues labeled.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Anti-FLAG and anti-pMST2 (T180) blots of lysates of 293FT cells transfected with the indicated FLAG-MST2 plasmids. (C) Anti-FLAG, anti-pMST2 (T336), and anti-pMST2 (T378) blots of lysates of 293FT cells transfected with the indicated FLAG-MST2 plasmids. (D) In vitro kinase assay of MST2 kinase domain using GST-MST2 D146N as the substrate. Immunoblots of the kinase reaction mixtures were shown. Anti-GST blot was used to evaluate protein levels. (E) The in vitro kinase assays of MST2-FL and MST2-∆L using myelin basic protein (MBP) as substrate. The reaction mixtures were separated on SDS-PAGE and analyzed by a phosphoimager (top) and Coomassie blue staining (middle). FL, full-length; ΔL, linker deletion. The kinetic profiles of MBP phosphorylation by activated MST2 FL and ∆L as monitored by 32P incorporation (bottom). The relative 32P-MBP signal intensities, normalized to those of MST2 FL and ∆L at 60 min (100%), respectively, are plotted against time. Means ± range for two independent experiments are plotted. (F) Coomassie-stained gel of the indicated MST2 proteins bound to GST-SLMAP FHA (residues 1–140) beads. FL, full-length; KD, kinase domain; ΔL, linker deletion.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cartoon drawing of the crystal structure of human SLMAP FHA. SLMAP FHA is colored cyan. (B) Cartoon drawing of the crystal structure of human SLMAP FHA in complex with the pMST2 peptide. SLMAP FHA is colored wheat. pMST2 is colored yellow and shown as sticks. The pMST2 residues are labeled. (C) Zoomed-in view of the pT-binding site in the SLMAP FHA-pMST2 complex. The backbones and side chains of SLMAP FHA interface residues are shown as sticks and are labeled. (D) Anti-Myc and anti-SLMAP blots of lysates (input) and anti-FLAG IP of 293FT cells transfected with the indicated plasmids.
+
 To identify which TM motif mediated feedback inhibition of MST2 activation, we mutated each TM to AM, and found that none of the single TA mutant had highly elevated T180 phosphorylation, suggesting that more than one pTM site were involved in MST2 inactivation in human cells (Figure 1—figure supplement 1A). Restoration of T325, T336, and T378 individually to the 7TA mutant reduced T180 phosphorylation to various levels, indicating that phosphorylation of these three TM sites is critical for MST2 inactivation (Figure 1B). The MST2 3TA mutation with these three threonine residues mutated to alanine was as efficient as 7TA in activating MST2 (Figure 1—figure supplement 1B). We previously raised a phospho-specific antibody against the pT378 site (Ni et al., 2015). To confirm that T336 was phosphorylated in full-length MST2, we then raised a phospho-specific antibody against the pT336 site. We showed that both T336 and T378 sites were indeed phosphorylated in wild type (WT) MST2, but not in 3TA (Figure 1C and Figure 1—figure supplement 1C). Moreover, phosphorylation at T336 and T378 and the enhanced phosphorylation of T180 in 3TA were abolished in the kinase-inactive MST2 mutants (T180A and D146N) in human cells (Figure 1C). Active MST2 kinase domain efficiently phosphorylated T180, T336, and T378 of kinase-dead MST2 D146N in vitro (Figure 1—figure supplement 1D). These results indicate that the inhibitory phosphorylation at the MST2 linker occurs through autophosphorylation.
 
-## SLMAP binds to phosphorylated MST2 linker
+### SLMAP binds to phosphorylated MST2 linker
 
 Because deletion of the MST2 linker does not enhance either the activation or kinase activity of recombinant purified MST2 in vitro (Figure 1—figure supplement 1E) (Ni et al., 2013), we hypothesized that the inhibitory pTM motifs recruited a phosphatase to dephosphorylate pT180 and inactivate MST2. A proteomic study has shown that MST1/2 interact with a specific PP2A complex called STRIPAK through the N-terminal forkhead associated (FHA) domain of the adaptor protein SLMAP (Couzens et al., 2013). Consistent with this previous report, we showed that MST2 interacted with SLMAP WT, but not SLMAP ∆FHA, in human cells (Figure 1D). SLMAP interacted with MST2 WT, but not 3TA and T180A mutants (Figure 1E). Moreover, SLMAP bound to MST2 mutants with a single pTM site restored at pT325, pT336, or pT378 to varying degrees in human cells (Figure 1F). Thus, the inhibitory phosphorylation at these three sites in the MST2 linker is required for the SLMAP-MST2 interaction. Recombinant GST-SLMAP FHA interacted with the full-length (FL) MST2, but not the MST2 kinase domain (KD) or MST2 with the linker deleted (∆L), suggesting that SLMAP FHA binds directly to the MST2 linker in vitro (Figure 1—figure supplement 1F). As measured by isothermal titration calorimetry (ITC), the binding affinities between SLMAP FHA and phospho-MST2 peptides containing pT325, pT336, or pT378 were 0.39 µM, 1.1 µM, and 0.16 µM, respectively (Figure 1G and Table 1). Collectively, our data suggest that SLMAP binding to the phospho-MST2 linker recruits STRIPAK to MST2 and promotes PP2A-mediated dephosphorylation of pT180. Interestingly, MOB1 and SLMAP bind to the pT378M site (the pT378-MST2371-401 peptide) with similar affinities (Table 1), suggesting that MOB1 may contribute to MST1/2 activation through competing with SLMAP for MST1/2 binding.
 
-## Structural basis of phospho-MST2 binding by SLMAP
+**Table 1.**
+ Summary of the ITC results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>pMST2 peptide</th>
+      <th>Kd (µM)</th>
+      <th>ΔH (kcal/mol)</th>
+      <th>ΔS (cal/mol·K)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">MOB133-216</td>
+      <td>pT378-MST2373-382</td>
+      <td>9.95</td>
+      <td>−4.0</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td>pT378-MST2371-401</td>
+      <td>0.296</td>
+      <td>−13.5</td>
+      <td>−16.1</td>
+    </tr>
+    <tr>
+      <td rowspan="4">SLMAP FHA</td>
+      <td>pT325-MST2320-329</td>
+      <td>0.392</td>
+      <td>−10.3</td>
+      <td>−5.8</td>
+    </tr>
+    <tr>
+      <td>pT336-MST2331-340</td>
+      <td>1.14</td>
+      <td>−8.2</td>
+      <td>−0.7</td>
+    </tr>
+    <tr>
+      <td>pT378-MST2373-382</td>
+      <td>0.160</td>
+      <td>−9.0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>pT378-MST2371-401</td>
+      <td>0.393</td>
+      <td>−9.5</td>
+      <td>−3.2</td>
+    </tr>
+    <tr>
+      <td>SLMAP FHA/R32A</td>
+      <td>pT378-MST2373-382</td>
+      <td>18.8</td>
+      <td>−6.7</td>
+      <td>−1.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Structural basis of phospho-MST2 binding by SLMAP
 
 FHA domains are specific phospho-threonine (pT) binding modules (Mahajan et al., 2008). We obtained crystals of free human SLMAP FHA domain that diffracted to 1.08 Å resolution and determined the structure with molecular replacement using the FHA of the centrosomal protein CEP170 as the search model (PDB ID: 4JON) (Figure 1—figure supplement 2A and Table 2). Like other FHA domains, SLMAP FHA adopts a typical β sandwich fold that consists of two large β sheets. One sheet contains six antiparallel strands: β2, β1, β11, β10, β7, and β8, while the other sheet contains five mixed parallel/antiparallel strands: β4, β3, β5, β6, and β9. The major structural differences between SLMAP FHA and other FHAs with known structures reside in the loops connecting the β strands, especially the long loop between β10 and β11, which forms a short β1’/β2’ hairpin and protrudes away from the FHA core.
+
+**Table 2.**
+ Data collection and refinement statistics for apo-SLMAP FHA and the SLMAP FHA–pMST2 complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crystal</td>
+      <td>Apo</td>
+      <td>Complex</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P212121</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.97918</td>
+      <td>0.97918</td>
+    </tr>
+    <tr>
+      <td>Unit cell</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>42.90, 51.22, 56.42</td>
+      <td>38.76, 70.53, 91.02</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>50–1.08 (1.10–1.08)*</td>
+      <td>38.24–1.55 (1.59–1.55)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>53,830 (2,647)</td>
+      <td>36,933 (2,719)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>8.6 (4.5)</td>
+      <td>12.5 (10.3)</td>
+    </tr>
+    <tr>
+      <td>Data completeness (%)</td>
+      <td>99.7 (98.5)</td>
+      <td>99.8 (97.3)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)†</td>
+      <td>5.8 (53.9)</td>
+      <td>10.2 (107.2)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)‡</td>
+      <td>2.0 (23.6)</td>
+      <td>2.9 (31.8)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>43.9 (2.3)</td>
+      <td>39.4 (1.4)</td>
+    </tr>
+    <tr>
+      <td>CC1/2§</td>
+      <td>0.847</td>
+      <td>0.784</td>
+    </tr>
+    <tr>
+      <td>Wilson B-value (Å2)</td>
+      <td>9.92</td>
+      <td>22.70</td>
+    </tr>
+    <tr>
+      <td>Refinement statistics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>20.49–1.08 (1.11–1.08)</td>
+      <td>38.24–1.55 (1.59–1.55)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections Rwork/Rfree</td>
+      <td>53,761/2,000 (3,571/139)</td>
+      <td>35,078/1,846 (2,583/136)</td>
+    </tr>
+    <tr>
+      <td>Data completeness (%)</td>
+      <td>99.6 (97.0)</td>
+      <td>99.7 (97.3)</td>
+    </tr>
+    <tr>
+      <td>Atoms (non-H protein/solvent/peptide)</td>
+      <td>1,325/235/0</td>
+      <td>2,210/203/102</td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>16.4 (26.6)</td>
+      <td>16.1 (27.5)</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>17.9 (27.7)</td>
+      <td>18.8 (30.3)</td>
+    </tr>
+    <tr>
+      <td>R.m.s.d. bond length (Å)</td>
+      <td>0.007</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>R.m.s.d. bond angle (°)</td>
+      <td>0.935</td>
+      <td>1.005</td>
+    </tr>
+    <tr>
+      <td>Mean B-value (Å2) (protein/solvent/peptide)</td>
+      <td>12.83/25.96/-</td>
+      <td>35.93/39.37/48.18</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%) (favored/additional/disallowed)#</td>
+      <td>97.1/2.9/0.0</td>
+      <td>97.4/2.6/0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data for the highest-resolution shell are shown in parentheses.†Rmerge = 100 ΣhΣi|Ih,i— ⟨Ih⟩|/ΣhΣi⟨Ih,i⟩, where the outer sum (h) is over the unique reflections and the inner sum (i) is over the set of independent observations of each unique reflection.‡Rpim = 100 ΣhΣi [1/(nh - 1)]1/2|Ih,i— ⟨Ih⟩|/ΣhΣi⟨Ih,i⟩, where nh is the number of observations of reflections h.§CC1/2 values shown are for the highest resolution shell.#As defined by the validation suite MolProbity._
 
 To understand how SLAMP FHA recognized phospho-MST2, we obtained crystals of SLMAP FHA bound to the pT378-MST2371-401 peptide (pMST2 hereafter for simplicity) that diffracted to 1.55 Å resolution. We determined the structure of SLMAP FHA–pMST2 by molecular replacement using apo-SLMAP FHA as the search model (Figure 1—figure supplement 2B and Table 2). In the SLMAP FHA–pMST2 structure, the FHA domain adopts a conformation virtually identical to that of free SLMAP FHA with an RMSD of 0.33 Å for all atoms (Figure 1H), indicating that binding of pMST2 does not appreciably alter the conformation of the FHA domain. Only six residues of pMST2 (D376GpTMKR381) have clear electron density, and bind to a surface formed by residues from the β3-β4, β4-β5, β6-β7, and β10-β11 loops of SLMAP FHA (Figure 1H and Figure 1—figure supplement 2C). The pT378 residue binds at a highly positively charged pocket, with the phosphate group making favorable electrostatic interactions with side chain or main chain atoms from R32, S52, R53 and S75 of SLMAP (Figure 1I and Figure 1—figure supplement 2C). M379 inserts into an adjacent hydrophobic pocket on SLMAP. R381 makes hydrophobic and electrostatic interactions with side chains from V107 and V109, and main chain from D108 of SLMAP, respectively, indicating that a positively charged residue is preferred at this position. D376 forms two hydrogen bonds with R53 of SLMAP. G377 forms a 90˚ turn to allow D376 to make favorite contacts with R53 of SLMAP. Our structure thus suggests that SLMAP FHA prefers binding to a phospho-threonine peptide with a consensus sequence of E/D-G-pT-M-x-R/K. Consistent with this prediction, the pT325-MST2320-329 and pT336-MST2331-340 peptides that do not fully conform to this consensus bind to SLMAP FHA with lower affinities (Table 1).
 
 Despite the differences of the loops at the pT binding site among various FHA domains, the pT-binding residues, R32, S52 and H55, can be structurally overlaid with the corresponding residues from other FHAs, suggesting that the mode of pT recognition is highly conserved among FHA domains. Indeed, the binding affinity between SLMAP FHA/R32A mutant and pMST2 was reduced by ~120 fold (Table 1). Mutations of these three conserved residues in the context of full-length SLMAP disrupted binding to MST2 in human cells (Figure 1—figure supplement 2D), validating the importance of the pT-binding site of SLMAP in MST2 binding.
 
-## STRIPAKSLMAP inhibits Hippo signaling in human cells
+### STRIPAKSLMAP inhibits Hippo signaling in human cells
 
 To determine the functional significance of the MST–SLMAP interaction in vivo, we depleted SLMAP in 293FT cells by RNA interference (RNAi). SLMAP depletion increased pT180 of MST2 WT (Figure 2A). SLMAP-binding-deficient MST2 3TA mutant had a pT180 level similar to that of MST2 WT in SLMAP RNAi cells. Depletion of SLMAP did not further increase pT180 of MST2 3TA. Depletion of STRIP1, a core component of the STRIPAK complex (Goudreault et al., 2009), similarly increased T180 phosphorylation of MST2, and this increase was blocked by the ectopic expression of RNAi-resistant FLAG-STRIP1 (Figure 2—figure supplement 1A). These results suggest that STRIPAKSLMAP is involved in suppressing MST2 activation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig2-v2.jpg)
+
+**Figure 2.:** (A) 293FT cells were co-transfected with siSLMAP and the indicated FLAG-MST2 plasmids. The total cell lysates were blotted with the indicated antibodies. Anti-GAPDH blot was used as the loading control. (B) Immunoblots with the indicated antibodies of lysates of 293FT and MCF10A cells with SLMAP deleted. KO, knockout; HM, hydrophobic motif. (C) Quantification of the ratios of pMST/MST, pMOB1/MOB1, pLATS/LATS, and pYAP/YAP signals in (B). The total and phosphorylated protein levels were individually normalized to GAPDH levels. Normalized values were used to calculate the ratios. Data are plotted as mean ± SEM of three biological replicates (*p<0.05; **p<0.01; ***p<0.001). (D) Immunofluorescence staining of YAP localization in control and SLMAP KO MCF10A cells. Cells were fixed, permeabilized, and stained with anti-YAP (red) and DAPI (blue). Scale bars, 10 μm. (E) Quantification of immunofluorescence signal intensities in (D). Approximately 50 cells were counted from 7 random fields. N < C (blue), N = C (grey), and N > C (red) categories indicate YAP localization in cytoplasm, both cytoplasm and nucleus, and nucleus, respectively. Data are plotted as mean ± SEM of three biological replicates. (F) Relative expression of YAP target genes CTGF and CYR61 in control and SLMAP KO MCF10A cells. Data are plotted as mean ± SEM of three biological replicates (****p<0.0001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 293FT cells were transfected with siSTRIP1 with or without FLAG-STRIP1. The total cell lysates were blotted with the indicated antibodies. (B) Immunoblots with the indicated antibodies of lysates of control MCF10A cells, SLMAP KO cells, and SLMAP KO cells stably expressing GFP-SLMAP WT or ΔFHA. (C) Relative expression of YAP target genes CTGF and CYR61 in control MCF10A cells, SLMAP KO cells, and SLMAP KO cells stably expressing GFP-SLMAP WT or ΔFHA. YAP target gene expression was analyzed by quantitative real-time RT-PCR and normalized to GAPDH. Data are plotted as mean ± SEM of three independent experiments (**p<0.01).
+
 We next deleted SLMAP from 293FT and MCF10A cells with the CRISPR (Clustered regularly interspaced short palindromic repeats)/Cas9 system. Compared to control cells, SLMAP knockout (KO) cells at low densities showed increased T-loop phosphorylation of MST1/2 and elevated MOB1 phosphorylation at T35 (Figure 2B and C). Moreover, phosphorylation of LATS1/2 hydrophobic motif (HM) and YAP was also increased in these cells without contact inhibition. Consistent with the spontaneous activation of the Hippo pathway, a higher percentage of SLMAP KO cells exhibited cytoplasmic localization of YAP (Figure 2D and E). As determined by real-time quantitative PCR (qPCR), expression of two well-established Hippo target genes, Connective Tissue Growth Factor (CTGF) and Cysteine Rich Angiogenic Inducer 61 (CYR61) (Zhao et al., 2008a), was reduced in SLMAP KO cells (Figure 2F). Furthermore, expression of SLMAP WT, but not ∆FHA, rescued the phenotypes of SLMAP KO cells (Figure 2—figure supplement 1B,C). These results establish STRIPAKSLMAP as a key negative regulator of Hippo signaling in human cells. Inactivation of STRIPAKSLMAP leads to spontaneous activation of the Hippo pathway without contact inhibition or other upstream signals.
 
-## SAV1 is required for Hippo pathway activation in human cells
+### SAV1 is required for Hippo pathway activation in human cells
 
 To validate the role of SAV1 in the Hippo pathway, we generated SAV1 knockout (KO) MCF10A cells with CRISPR/Cas9. Latrunculin B (LatB) treatment is a well-established condition that activates the Hippo pathway through actin depolymerization. However, the involvement of MST1/2 in regulation of LATS1/2 and YAP by cytoskeleton reorganization has been suggested to be dependent on cell types (Zhao et al., 2012). We show that addition of LatB to MCF10A cells induced MST1/2 T-loop phosphorylation and MOB1 T35 phosphorylation, as well as downstream phosphorylation of LATS1/2 and YAP (Figure 3A), indicating that MST1/2 activation can turn on Hippo signaling through disruption of the actin cytoskeleton in human cells. In addition, the levels of all these phosphorylation events were reduced in SAV1 KO cells with or without LatB treatment (Figure 3B). Consistent with the defective MST-LATS kinase activation, the relative mRNA levels of Hippo target genes, CTGF and CYR61, in SAV1 KO cells were significantly higher than those in control cells, with or without LatB treatment (Figure 3C). These data indicate that SAV1 is required for efficient MST1/2 activation during Hippo signaling in human cells.
 
@@ -69,21 +295,162 @@ To validate the role of SAV1 in the Hippo pathway, we generated SAV1 knockout (K
 
 SAV1 and MST1/2 interact through their SARAH domains. We have shown previously that the recombinant MST2-SAV1 complex forms a heterotetramer in vitro (Ni et al., 2013). One possibility is that two SAV1 SARAH domains bind to one MST2 SARAH homodimer to further stabilize the MST2 homodimer, thereby enhancing the trans-autophosphorylation at the T-loop of MST2 and increasing its kinase activity. Unexpectedly, a recombinant SAV1 fragment containing the SARAH domain did not stimulate the MST2 kinase activity toward MOB1 in vitro (Figure 3D). Thus, SAV1 binding to MST2 does not directly stimulate its kinase activity. Instead, SAV1 promotes MST1/2 activation in human cells likely through an indirect mechanism.
 
-## Crystal structure of the MST2–SAV1 complex
+### Crystal structure of the MST2–SAV1 complex
 
 SAV1 contains an N-terminal flexible region, two WW domains, and a SARAH domain (Figure 4A). To understand how SAV1 activates MST2, we determined the crystal structure of MST2 ∆L/D146N bound to the SARAH domain of SAV1 (residues 291–383) (Figure 4B and Table 3). Surprisingly, MST2–SAV1 does not form an expected heterotetramer through a four-helix bundle formed by their SARAH domains. Instead, SAV1 SARAH and MST2 SARAH form a heterodimer, similar to that formed by the SARAH domains of MST2 and one of the RASSF family of tumor suppressors, RASSF5 (Figure 4C and D) (Ni et al., 2013). The active site of MST2 in MST2–SAV1 is well-defined. The Mg2+ ion and AMP-PNP are clearly visible in the electron-density map. The MST2 kinase domain in MST2–SAV1 is structurally very similar to the MST2 kinase alone, except that the T-loop helix observed in the MST2 kinase structure is not visible in the MST2–SAV1 structure. The K56-E70 salt bridge between strand β3 and helix αC is not formed in MST2–SAV1, consistent with MST2 adopting the inactive conformation. The SARAH domains of MST2 and SAV1 form a long antiparallel coiled coil and do not directly contact the kinase domain. The N-terminal extension of SAV1 SARAH forms two short helices, H0 and H1, which interact with the main coiled coil through several hydrophobic interactions. The Drosophila RASSF ortholog (dRASSF) has previously been shown to restrict Hippo (The Drosophila MST1/2 ortholog) activity by competing with SAV for binding to Hippo, and dRASSF-associated Hippo is inactive whereas SAV-associated Hippo is active (Polesello et al., 2006). Consistently, RASSF5 and RASSF1 (the founding member of the RASSF family) can suppress MST1 activation both in vitro and in mammalian cells (Praskova et al., 2004). Therefore, RASSF and SAV regulate Hippo/MST activation by forming different SARAH-domain-dependent complexes. Interestingly, the MST2-binding interface residues are conserved between SAV1 SARAH and RASSF5 SARAH (Figure 4E). Furthermore, the SAV1- and RASSF5-binding surfaces of MST2 SARAH are virtually identical (Figure 4C and D), readily explaining mutually exclusive binding of SAV1 and RASSF5 to MST2. Thus, our data support the notion that RASSFs antagonize SAV function in Hippo/MST activation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic drawing of domains and motifs of human SAV1. (B) Cartoon drawing of the crystal structure of the MST2-SAV1 complex. MST2 is colored green, and SAV1 is colored blue. Side chains of K56 and E70, and AMP-PNP are shown as sticks. Mg2+ is shown as a magenta sphere. The disordered T-loop is drawn as a green dashed line. (C) Cartoon drawing of the crystal structure of the MST2 SARAH-RASSF5 SARAH heterodimer (PDB ID: 4LGD). MST2 and RASSF5 are colored in light green and orange, respectively. The interface residues are shown as sticks. (D) Cartoon drawing of the crystal structure of the MST2 SARAH-SAV1 SARAH heterodimer (this study). MST2 and SAV1 are colored in green and blue, respectively. The interface residues are shown as sticks. SAV1 residues whose mutations cause defective MST2 binding are labeled in magenta. (E) Sequence alignment of SARAH domains of human SAV1 and RASSF5. The highly conserved interface residues are shaded in yellow. Seven interface residues whose mutations cause defective MST2 binding are marked by asterisks. The secondary structural elements of SAV1 SARAH are shown above the sequences and colored blue. The secondary structural elements of RASSF5 SARAH are shown below the sequences and colored orange. (F) Quantification of the relative binding intensity between MST2 SARAH domain (residue 431–491) and SAV1 SARAH domain (residue 321–383) and its mutants, derived from the pull-down experiments. Relative MST2 binding of the indicated SAV1 mutant is normalized against SAV1 wild type (WT; 100%). SAV1 mutants that lost or retained MST2 binding are colored red and gray, respectively. (G) Sedimentation velocity analytical ultracentrifugation analysis of MST2-FL (black), MST2-FL/SAV1-ΔN198 (red), and MST2-FL/SAV1-ΔN290 (blue). ‘s20,w’, sedimentation coefficient corrected to standard conditions; S, Svedberg units (10−13 seconds). (H) Schematic model of the MST2-SAV1 heterotetramer.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Binding between GST-MST2-SARAH and in vitro translated SAV1 SARAH proteins. SAV1 mutants that are defective in MST2-binding are labeled red. (B) UV traces of molecular weight standards (dashed line), MST2-FL (black line), MST2-FL/SAV1-ΔN320 (purple line), MST2-FL/SAV1-ΔN290 (blue line), and MST2-FL/SAV1-ΔN198 (red line) fractionated on a Superdex 200 gel filtration column. (C) Cartoon drawing of the solution structure of the mouse SAV1 WW2 homodimer (PDB ID: 2DWV) (Ohnishi et al., 2007). Monomer A is colored cyan and monomer B is colored blue. (D) UV traces of human SAV1 WW1 (blue line), and WW2 (red line) fractionated on a Superdex 75 gel filtration column. The molecular weight standard is indicated. (E) Anti-HA and anti-FLAG blots of cell lysates (input) and anti-FLAG IP of 293FT cells co-transfected with HA-SAV1 ∆SARAH and the indicated FLAG-SAV1 plasmids.
+
+**Table 3.**
+ Data collection and refinement statistics for the MST2–SAV1 complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crystal</td>
+      <td>Native</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>R32</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.97918</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>223.68, 223.68, 79.65</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (˚)</td>
+      <td>90.00, 90.00, 120.00</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>42.27–2.95 (3.00–2.95)*</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>15,976 (763)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>19.0 (12.0)</td>
+    </tr>
+    <tr>
+      <td>Data completeness (%)</td>
+      <td>99.9 (98.5)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)†</td>
+      <td>12.4 (171.5)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)‡</td>
+      <td>2.9 (48.3)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>28.3 (1.0)</td>
+    </tr>
+    <tr>
+      <td>CC1/2§</td>
+      <td>0.841</td>
+    </tr>
+    <tr>
+      <td>Wilson B-value (Å2)</td>
+      <td>48.5</td>
+    </tr>
+    <tr>
+      <td>Refinement Statistics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>42.27–2.95 (3.18–2.95)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections Rwork/Rfree</td>
+      <td>13,199/650 (1,027/52)</td>
+    </tr>
+    <tr>
+      <td>Data completeness (%)</td>
+      <td>82.3 (34.0)</td>
+    </tr>
+    <tr>
+      <td>Atoms (non-H protein/solvent/metal)</td>
+      <td>3,340/31/1</td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>23.5 (32.2)</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>25.2 (27.9)</td>
+    </tr>
+    <tr>
+      <td>R.m.s.d. bond length (Å)</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>R.m.s.d. bond angle (°)</td>
+      <td>0.600</td>
+    </tr>
+    <tr>
+      <td>Mean B-value (Å2) (protein/solvent/ions)</td>
+      <td>55.4/43.4/33.7</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%) (favored/additional/disallowed)#</td>
+      <td>94.2/4.5/1.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data for the highest-resolution shell are shown in parentheses.†Rmerge = 100 ΣhΣi|Ih,i— ⟨Ih⟩|/ΣhΣi⟨Ih,i⟩, where the outer sum (h) is over the unique reflections and the inner sum (i) is over the set of independent observations of each unique reflection.‡Rpim = 100 ΣhΣi [1/(nh - 1)]1/2|Ih,i— ⟨Ih⟩|/ΣhΣi⟨Ih,i⟩, where nh is the number of observations of reflections h.§CC1/2 values shown are for the highest resolution shell.#As defined by the validation suite MolProbity._
+
 To validate the interface between the MST2 and SAV1 SARAH domains observed in our structure, we systematically mutated the interface residues in the SARAH domain of SAV1 and tested the effects of these mutations in an in vitro binding assay (Figure 4F and Figure 4—figure supplement 1A). GST-MST2 SARAH efficiently pulled down 35S-labeled Myc-SAV1 SARAH obtained through in vitro translation. Among the 14 mutants, SAV1 E346A, I350A, Y357A, R358A, L361A, L365A, and R368A completely lost the binding to MST2. Several other mutants also exhibited weaker binding to MST2. Thus, the MST2–SAV1 interface revealed by our crystal structure is critical for mediating the MST2–SAV1 interaction.
 
-## SAV1 WW domains mediate the formation of the MST2-SAV1 heterotetramer
+### SAV1 WW domains mediate the formation of the MST2-SAV1 heterotetramer
 
 The SARAH domains of MST2 and SAV1 can only form a heterodimer, but not a heterotetramer. Yet, MST2 and larger fragments of SAV1 can form a heterotetramer based on gel filtration chromatography, suggesting that other regions of SAV1 could self-associate. Consistent with this notion, a deletion mutant of SAV1 without the intact SARAH domain has been reported to form a homodimer (Callus et al., 2006). Both analytical ultracentrifugation (AUC) and gel-filtration experiments confirmed that a SAV1 fragment containing both WW domains and the SARAH domain associated with MST2 in a complex consistent with a heterotetramer (Figure 4G and Figure 4—figure supplement 1B). A shorter fragment of SAV1 lacking the WW domains formed a simple heterodimer with MST2. Thus, SAV1 WW domains mediate heterotetramerization of MST2–SAV1 (Figure 4H).
 
 WW2 of mouse SAV1 has been shown to form a homodimer in solution (Figure 4—figure supplement 1C) (Ohnishi et al., 2007). Human SAV1 WW2 shares 97% sequence identity with mouse SAV1 WW2, and can presumably form a similar homodimer. Indeed, recombinant WW2, but not WW1, of human SAV1 eluted as a dimer on the gel filtration column (Figure 4—figure supplement 1D). In addition, HA-SAV1 ∆SARAH interacted more strongly with FLAG-SAV1 WT than FLAG-SAV1 ∆WW1/2 and ∆WW2, from human cell lysates, confirming WW2-dependent self-association of SAV1 in vivo (Figure 4—figure supplement 1E). WW domains recognize proline-rich peptides through solvent-exposed hydrophobic residues (Aragón et al., 2012). SAV1 WW domains can bind to PPxY motifs of LATS1/2 (Ni et al., 2015; Tapon et al., 2002). However, the ligand-binding site of SAV1 WW2 is buried in the dimer, suggesting that LATS1/2 binding and dimer formation are competing events.
 
-## All discernable domains of SAV1 are required for MST2 activation
+### All discernable domains of SAV1 are required for MST2 activation
 
 Next, we further explored the mechanism by which SAV1 promoted MST2 activation in human cells. Overexpression of SAV1, but not RASSF1A (a RASSF1 isoform), enhanced MST2 T180 phosphorylation in un-stimulated cells (Figure 5A), indicating that SARAH domain-mediated MST2 binding alone is not sufficient to activate MST2. The MST2 3TA mutant had much higher pT180 signals, because it could not be inhibited by STRIPAKSLMAP (Figure 5B). SAV1 strongly elevated the pT180 signal of MST2 WT, but did not further enhance T180 phosphorylation of MST2 3TA, suggesting that SAV1 stimulated MST2 activation through antagonizing STRIPAKSLMAP in human cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig5-v2.jpg)
+
+**Figure 5.:** (A) Immunoblots of lysates of 293FT cells co-transfected with the indicated Myc-MST2 and HA-SAV1 or HA-RASSF1A plasmids. (B) Immunoblots of lysates of 293FT cells co-transfected with Myc-SAV1 and the indicated FLAG-MST2 plasmids. (C) Immunoblots of lysates of 293FT cells co-transfected with Myc-MST2 and the indicated FLAG-SAV1 plasmids. (D) Immunoblots of cell lysates of 293FT cells co-transfected with FLAG-MST2 and the indicated Myc-SAV1 plasmids. (E) Total MST2 and pT180 blots of the auto-kinase reactions by the indicated MST2-SAV1 complexes at the indicated time points (left panel). The kinetic profiles of T180 autophosphorylation of MST2-FL/SAV1-∆N198 (red line) and MST2-FL/SAV1-∆N268 (black line) are shown on the right. The relative anti-pT180 intensities were normalized against MST2-FL without PP2A phosphatase treatment (100%). Data are representative of at least two independent experiments. (F) Immunoblots of lysates of 293FT cells co-transfected with FLAG-MST2 and the indicated N-terminal truncation of Myc-SAV1 constructs. (G) 293FT cells were co-transfected with FLAG-MST2 and Myc-SAV1 plasmids. The total cell lysates were blotted with the indicated antibodies. (H) 293FT cells were co-transfected with the indicated plasmids encoding FLAG-SLMAP, HA-MST2 and Myc-SAV1. Anti-FLAG IP and the total cell lysates (input) were blotted with the indicated antibodies.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Immunoblots of cell lysates of 293FT cells co-transfected with FLAG-MST2 and the indicated N-terminal truncation of Myc-SAV1 constructs. FBM, FERM-binding motif.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** FLAG-MST2 and Myc-SAV1 were co-transfected into 293FT cells. Cells were collected after 24 hr and subjected to cytosol-membrane fractionation using the membrane protein extraction kit (Thermo Scientific). The cytosol and membrane fractions were blotted with the indicated antibodies. Tubulin, NF2 and Pan Cadherin were used as markers for cytosolic, peripheral membrane, and integral membrane proteins, respectively.
 
 We next examined which region of SAV1 contributed to MST2 activation. SAV1 ∆SARAH lost its ability to activate MST2 (Figure 5C). Mutations in SAV1 SARAH that disrupted its binding to MST2 (E346A/R358A and E346A/R368A) also diminished SAV1 stimulation of MST2 activation. Thus, SARAH-mediated binding of SAV1 to MST2 is required for SAV1-induced MST2 activation. Furthermore, deletion of the WW domains also decreased MST2 activation, with the deletion of WW2 having a larger effect, suggesting that WW2-mediated dimerization of SAV1 might be important for MST activation (Figure 5D). We have previously shown that SARAH-mediated MST2 homodimerization is critical for its activation (Ni et al., 2013). SAV1 SARAH disrupts this homodimerization of MST2 SARAH, and is expected to block MST2 activation. Indeed, SAV1 SARAH alone (SAV1 ∆N268) blocked MST2 activation in vitro (Figure 5E). Interestingly, the SAV1 ∆N198 mutant, which contains WW1/2 and SARAH domains, could support MST2 auto-activation in the same assay. These results suggest that SAV1 WW2 promotes the self-association of MST2–SAV1 heterodimers and enables trans-autophosphorylation and activation of the MST2 kinase domain in the context of the MST2–SAV1 heterotetramer (Figure 4H).
 
@@ -93,17 +460,33 @@ Overexpression of SAV1 not only promoted MST2 T180 phosphorylation, but also inc
 
 One possibility is that SAV1 may target MST2 to the plasma membrane, thus spatially separating MST2 from STRIPAKSLMAP, whose SLMAP subunit has been reported to localize to the endoplasmic reticulum (Guzzo et al., 2004; Hwang and Pallas, 2014; Nader et al., 2012; Wigle et al., 1997). To test this possibility, we examined the localization of MST2 and SAV1 in 293FT cells by subcellular fractionation (Figure 5—figure supplement 2). Tubulin, NF2 and Pan Cadherin were used as markers for the cytosolic, peripheral and integral membrane fractions, respectively. The membrane fraction contained both peripheral and integral membrane proteins. Although a minor fraction of SAV1 and MST2 resided in the membrane fraction, major pools of SAV1 and MST2 were present in the cytosol. More importantly, both cytosolic and membrane fractions of MST2 were proportionally activated, as indicated by phosphorylation at T180. Thus, membrane targeting cannot fully explain SAV1-dependent activation of MST2. SAV1 may directly antagonize STRIPAK-mediated inhibition of MST2. Because Hippo/MST binding can induce SAV phosphorylation and prevent its degradation, leading to increased levels of SAV in cells (Aerne et al., 2015; Callus et al., 2006; Pantalacci et al., 2003; Wu and Wu, 2013; Wu et al., 2003), SAV may also function in a positive feedback mechanism in Hippo/MST activation (Aerne et al., 2015).
 
-## The N-terminal region of SAV1 directly inhibits PP2A
+### The N-terminal region of SAV1 directly inhibits PP2A
 
 The N-terminal residues of SAV1 are required for MST2 activation in human cells, but are not expected to contact MST2. We hypothesized that this region of SAV1 might directly interact with PP2A A-C core and inhibit its phosphatase activity. The SAV1 1–198 fragment, which was incapable of binding to MST2, interacted with both PP2A A and C subunits in human cell lysates (Figure 6A). Consistent with the MST2 activation assay, deletion of the N-terminal 90 residues from this fragment abolished this interaction whereas deletion of the N-terminal 30 residues greatly weakened the interaction. Furthermore, the SAV1 1–90 fragment, which did not associate with MST1/2 or SLMAP (Figure 6B and Figure 6—figure supplement 1), also bound to PP2A A subunit in human cell lysates. Expectedly, SAV1 ∆N90 interacted with MST2 through the SARAH domain. Its interaction with PP2A A subunit was likely bridged through MST2, SLMAP, and other components of STRIPAK. These results suggest that the N-terminal 90 residues of SAV1 might possess certain affinity for the catalytic core of PP2A, independent of MST2 and SLMAP.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig6-v2.jpg)
+
+**Figure 6.:** (A and B) Association of PP2A A-C with the N terminal region of SAV1. 293FT cells were mock transfected or transfected with the indicated FLAG-SAV1 plasmids. The total cell lysates (input) and anti-FLAG IP were blotted with the indicated antibodies. Asterisk designates IgG. (C) UV traces of the PP2A A and SAV11-90 complex (blue line), PP2A A alone (magenta line), SAV11-90 alone (green line), and molecular weight standard (dashed line, corresponding molecular weight indicated in kDa) fractionated on a Superdex 200 gel filtration column, respectively. The underlined fractions were separated on SDS-PAGE and stained with Coomassie. (D) The N-terminal region of SAV1 directly inhibits dephosphorylation of MST2 pT180 by PP2A. Quantitative MST2 pT180 and total MST2 immunoblotting of phosphatase reactions containing human MST2 and SAV11-90 at the indicated concentrations. The relative anti-pT180 intensities were normalized against MST2 without PP2A phosphatase treatment (100%). Data are representative of at least two independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Control and SLMAP KO 293FT cells were transfected with the indicated FLAG-SAV1 plasmids. Anti-FLAG IP and cell lysates (input) were blotted with the indicated antibodies. Asterisk designates non-specific bands.
+
 Recombinant SAV1 1–90 co-fractionated with recombinant PP2A A subunit on a gel filtration column (Figure 6C), consistent with the formation of a SAV1–PP2A complex. More importantly, SAV1 1–90 blocked the dephosphorylation of MST2 pT180 by PP2A A-C in vitro (Figure 6D). Therefore, the N-terminal region of SAV1 can directly inhibit the phosphatase activity of PP2A.
 
-## SAV1 stimulates MST1/2 activation through antagonizing STRIPAK
+### SAV1 stimulates MST1/2 activation through antagonizing STRIPAK
 
 Our results so far strongly suggest that SAV1 activates MST1/2 by directly counteracting STRIPAKSLMAP-mediated suppression of MST1/2 activation. Very high and non-physiological concentrations of SAV1 1–90 (100 µM) are needed for PP2A A-C inhibition, indicating that SAV1 cannot inhibit all forms of PP2A. Instead, it likely inhibits the PP2A A-C core in the context of the SAV1–MST2–STRIPAKSLMAP complex. Other SAV1 elements, such as the SARAH and WW domains, may position the N-terminal region of SAV1 for optimal inhibition of PP2A.
 
 To test this possibility, we examined whether SAV1, when bound to MST2, could interact with STRIPAK. When co-expressed with MST2 WT in 293FT cells, SAV1 bound to SLMAP and several core components of STRIPAK, including PP2A A-C, SIKE1, and STRIP1 (Figure 7A), suggesting that MST2–SAV1 could form a complex with STRIPAKSLMAP. Consistent with a requirement for the phospho-MST2 linker in the assembly of the specific SAV1–MST2–STRIPAKSLMAP complex, MST2 7TA, which was deficient in SLMAP binding, did not support the binding of SAV1 to SLMAP, SIKE, or STRIP1. When co-expressed with MST2 7TA, SAV1 still interacted with PP2A A-C, albeit more weakly, consistent with a direct, transient interaction between the N-terminal region of SAV1 and the PP2A A-C catalytic core.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig7-v2.jpg)
+
+**Figure 7.:** (A) SAV1-MST2 forms a complex with STRIPAKSLMAP. 293FT cells were co-transfected with FLAG-SAV1 and the indicated Myc-MST2 plasmids. The total cell lysates (input) and anti-FLAG IP were blotted with the indicated antibodies. (B) Immunoblots with the indicated antibodies of lysates of control MCF10A cells and MCF10A cells with SLMAP, SAV1, or both deleted. Asterisk denotes a non-specific band. (C) Relative expression of YAP target genes CTGF and CYR61 in control, SLMAP KO, SAV1 KO, and SLMAP/SAV1 DKO MCF10A cells. The gene expression was measured by quantitative real-time RT-PCR and normalized to GAPDH. Data are plotted as mean ± SEM of three biological replicates (*p<0.05; **p<0.01; and ***p<0.001). (D) Model for SAV1-dependent MST2 activation during Hippo signaling.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/30278/elife-30278-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A and B) Intact genomic sequences of SLMAP and SAV1 are shown in the top panels. The indel mutations in SLMAP KO or SAV1 KO cells are shown in the bottom panels.
 
 If a major mechanism by which SAV1 promotes MST2 activation is through inhibiting STRIPAKSLMAP-mediated dephosphorylation of MST2 pT180, then deletion of SLMAP is expected to bypass the requirement for SAV1 in MST2 activation in vivo. We thus created 293FT cells with both SAV1 and SLMAP deleted (DKO), and examined the phosphorylation level of Hippo pathway components and the expression of Hippo target genes in un-stimulated cells (Figure 7B and C, and Figure 7—figure supplement 1). As shown in previous sections, SLMAP KO and SAV1 KO cells had opposite effects on the phosphorylation level of Hippo pathway components and the expression of Hippo target genes, CTGF and CYR61, respectively, consistent with their opposing roles in the Hippo pathway. Strikingly, SLMAP/SAV1 DKO cells exhibited a very similar phenotype as that of SLMAP KO cells. Thus, deletion of SLMAP bypasses the function of SAV1 in Hippo signaling at least in un-stimulated cells. These results strongly suggest that a major function of SAV1 in the Hippo pathway is to counteract the suppression of MST activation by STRIPAKSLMAP.
 
@@ -125,13 +508,13 @@ A major unresolved question is how the Hippo kinases are activated by upstream s
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 The coding regions of human SLMAP FHA (residues 1–140), the C-terminal fragments of SAV1, and PP2A A subunit were cloned into a modified pGEX-6P vector (GE Healthcare) that included a tobacco etch virus (TEV) protease cleavage site at the N terminus, respectively. The coding regions of human MST2 and the N-terminal fragment of SAV1 (residues 1–90) were cloned into a modified pET29 vector (EMD Millipore) that included an N-terminal His6 tag, respectively. Mutations were generated using QuickChange II XL site-directed mutagenesis kit (Agilent Technologies), and constructs were verified by DNA sequencing. All plasmids were transformed into the bacterial strain BL21 (DE3)-T1R cells (Sigma) for protein expression. SLMAP FHA wild-type (WT) and corresponding mutants were purified with glutathione-Sepharose beads (GE Healthcare) and cleaved with TEV overnight at 4°C to remove the GST moiety. The cleaved SLMAP FHA proteins were further purified with a Superdex 75 size exclusion column (GE Healthcare) in a buffer containing 20 mM Tris (pH 8.0), 100 mM NaCl and 1 mM TCEP. Co-expressed MST2 and the C-terminal fragments of SAV1 were purified with glutathione-Sepharose beads and cleaved with TEV overnight at 4°C to remove the GST moiety. The MST2-SAV1 complex was further purified by a Superdex 200 size-exclusion column (GE Healthcare) equilibrated with a buffer containing 20 mM Tris (pH 8.0), 200 mM NaCl, 5 mM MgCl2, and 1 mM TCEP. PP2A A subunit was purified with glutathione-Sepharose beads, cleaved with TEV overnight at 4°C to remove the GST moiety, and further purified by a Superdex 200 column with a buffer containing 20 mM Tris (pH 8.0), 100 mM NaCl, and 1 mM TCEP.
 
 The N-terminal fragment of SAV11-90 was purified by denaturation method using 8 M urea according to the manufacturer’s instructions (Qiagen). SAV11-90 was refolded overnight at 4°C in a buffer containing 50 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2, and 1 mM DTT. To obtain the PP2A A and SAV11-90 complex, PP2A A was mixed with refolded SAV11-90 at a 1:6 molar ratio and further purified by a Superdex 200 column equilibrated with a buffer containing 20 mM Tris (pH 8.0), 50 mM NaCl, and 1 mM TCEP. For comparison, PP2A A and SAV11-90 alone was run under the same condition, respectively.
 
-## Crystallization, data collection, and structure determination
+### Crystallization, data collection, and structure determination
 
 SLMAP FHA (residue 1–140) was concentrated to 12 mg/ml and crystallized at 20°C using the sitting-drop vapor diffusion method with a reservoir solution containing 100 mM Bis-Tris (pH 6.5), 200 mM Li2SO4, and 25% (w/v) PEG 3350. The crystals were cryoprotected with the reservoir solution supplemented with 25% (v/v) glycerol and then flash-cooled in liquid nitrogen. Crystals of apo SLMAP FHA diffracted to a resolution of 1.08 Å and contained one molecule per asymmetric unit. SLMAP FHA was concentrated to 23.7 mg/ml and mixed with the pMST2 peptide (EEEDGpTMKRN) to a 1:2 molar ratio. SLMAP FHA-pMST2 was crystallized at 20°C using the hanging drop vapor diffusion method with a reservoir solution containing 200 mM KSCN and 20% (w/v) PEG3350. The crystals were cryoprotected with the reservoir solution supplemented with 30% (v/v) glycerol. Crystals of SLMAP FHA–pMST2 diffracted to a resolution of 1.55 Å and contained two SLMAP FHA–pMST2 molecules per asymmetric unit. The MST2 ∆L/D146N–SAV1 SARAH complex was concentrated to 8 mg/ml and crystallized at 20 ˚C using the hanging-drop vapor-diffusion method with a reservoir solution containing 0.1 M HEPES (pH 7.5), 0.19 mM CYMAL-7, and 40% (v/v) PEG 400. The crystals were then flash-cooled in liquid nitrogen. Native crystals diffracted to a minimum Bragg spacing (dmin) of 2.95 Å and exhibited the symmetry of space group R32 with cell dimensions of a = 223.7 Å, c = 79.7 Å and contained one MST2-SAV1 complex per asymmetric unit.
 
@@ -139,54 +522,54 @@ All diffraction data were collected at beamline 19-ID (SBC-CAT) at the Advanced 
 
 MST2 ∆L/D146N–SAV1 SARAH data were processed in the program HKL-3000 with applied corrections for effects resulting from absorption in a crystal and for radiation damage (Borek et al., 2003; Otwinowski et al., 2003), the calculation of an optimal error model, and corrections to compensate the phasing signal for a radiation-induced increase of non-isomorphism within the crystal (Borek et al., 2010; Borek et al., 2013). These corrections were crucial for successful phasing. Crystals of MST2 ∆L/D146N–SAV1 SARAH displayed anisotropic diffraction and while 100% complete to 3.2 Å resolution, rapidly fell off in intensity to the high-resolution limit of 2.95 Å resolution. To maximize completeness for the final data set, data from three isomorphous crystals were merged for the equivalence of a sweep of 325°. Phases for MST2 ∆L/D146N–SAV1 SARAH were obtained by molecular replacement in the program Phaser. The crystal structure of human MST2 ∆L/D146N–RASSF5 SARAH (PDB ID: 4LGD) (Ni et al., 2013) was modified for use as a search model by converting the RASSF5 SARAH polypeptide to a poly-alanine chain that was truncated to the minimal 37 residues of the SARAH helix (residues 376–413). Density modification in the program Parrot (Cowtan, 2010) and model building in the program Buccaneer (Cowtan, 2006) yielded a model for the SAV1 SARAH with 73 residues (78%) built and primary sequence assigned; confirmation of the sequence of SAV1 SARAH was determined by packing interactions with the MST2 ∆L/D146N SARAH domain and omit maps calculated after rounds of model refinement in the program Phenix. Completion of this model was performed by manual rebuilding in the program Coot. Refinement was performed in the program Phenix with reference model restraints for the MST2 kinase domain supplied from monomer A of the high resolution MST2 KD/D146N domain, truncated at the C-terminus to residue 299 (PDB ID: 4LG4) (Ni et al., 2013). The final model for MST2 ∆L/D146N–SAV1 SARAH (Rwork = 22.9%, Rfree = 25.4%) contained 424 residues and one molecule of Mg2+-AMP-PNP. Five residues are outliers in a Ramachandran plot as defined in the program MolProbity (Chen et al., 2010); all are located in MST2 ∆L/D146N, in surface loops with poor electron density. Data collection and structure refinement statistics are summarized in Table 3.
 
-## In vitro binding assays
+### In vitro binding assays
 
 To assay the interactions between SLMAP FHA and MST2, GST-SLMAP FHA fusion protein was bound to glutathione-Sepharose beads as bait and incubated with purified MST2-FL, MST2-KD, and MST2-ΔL in TBS (50 mM Tris, pH 7.5, 150 mM NaCl) containing 0.05% (v/v) Tween for two hours. The beads were washed three times with TBS. The proteins retained on the beads were analyzed by SDS-PAGE.
 
 To assay the heterodimerization of SARAH domains between MST2 and SAV1, Myc-tagged SAV1 SARAH (residues 321–383) and the corresponding mutants were in vitro translated in reticulocyte lysate in the presence of 35S-methionine according to the manufacturer’s protocol (Pierce). Purified GST-MST2 SARAH (residues 430–491) fusion protein was bound to glutathione-Sepharose beads and incubated with 35S-labeled SAV1 SARAH WT and mutants. The beads were washed three times with TBS containing 0.05% (v/v) Tween. The proteins retained on the beads were analyzed by SDS-PAGE followed by autoradiography.
 
-## Isothermal titration calorimetry (ITC)
+### Isothermal titration calorimetry (ITC)
 
 The binding affinities between purified recombinant human SLMAP-FHA (residues 1–140) and the phospho-MST2 peptides were measured using a MicroCal iTC200 calorimeter (GE Healthcare) at 20 ˚C. The binding affinities between recombinant MOB133-216 and pT378-MST2 peptides were measured as controls. Ratio of protein to peptide concentration was 1:10 for each experiment. A 50 µM SLMAP-FHA or MOB133-216 sample in the buffer containing 20 mM Tris, pH 8.0, 50 mM NaCl was titrated with 500 µM of phospho-MST2 peptide in the same buffer. All phospho-MST2 peptides were synthesized with the following sequences: pT325-MST2320-329, ELDSHpTMVKT; pT336-MST2331-340, VESVGpTMRAT; pT378-MST2373-382, EEEDGpTMKRN; and pT378-MST2371-401, DEEEEDGpTMKRNATSPQVQRPSFMDYFDKQD. Due to low solubility of pT325-MST2320-329, 5% (v/v) DMSO was added to both protein and peptide buffers. Peptide concentration was measured using the spectrophotometer at wavelength λ = 205 nm. In all cases, thermograms were integrated using NITPIC method (Keller et al., 2012), imported to the SEDPHAT software (Zhao et al., 2015), and binding-model fits (A + B < ->AB) were made by fixing the protein concentration adjustment coefficients and allowing the software to adjust peptide concentration by a correction coefficient, as it is not 100% accurate due to the nature of the concentration measurements. All ITC figures were rendered in GUSSI (Brautigam, 2015). Data are summarized in Table 1.
 
-## Analytical ultracentrifugation (AUC)
+### Analytical ultracentrifugation (AUC)
 
 All analytical ultracentrifugation was carried out at 4°C in an Optima XL-I centrifuge (Beckman-Coulter, Indianapolis, IN). The centrifugation cells comprised dual-sectored, charcoal-filled Epon centerpieces sandwiched between sapphire windows in standard aluminum housings. Approximately 390 μL of AUC Buffer (20 mM Tris pH 8.0, 200 mM NaCl, 5 mM MgCl2) was placed into the reference sector, and the same volume of MST2 or MST2-SAV1 mixture was introduced into the sample sector. The cells were inserted into an An50Ti rotor and allowed to equilibrate in the centrifuge overnight under vacuum. Centrifugation was then initiated at 50,000 rpm. Concentration profiles were collected using the absorbance optics tuned to 280 nm. The data were analyzed using the c(s) model in SEDFIT (Schuck, 2000) using a regularization level of 0.68 and an s resolution of 150; time-invariant noise was subtracted from the data (Schuck and Demeler, 1999). Values for partial-specific volume, buffer density, and buffer viscosity were calculated using SEDNTERP (Laue et al., 1992). AUC figures were rendered in GUSSI (Brautigam, 2015).
 
-## In vitro kinase assays and autophosphorylation
+### In vitro kinase assays and autophosphorylation
 
 For in vitro kinase assays, 0.4 μM MST2-FL or MST2-ΔL was incubated in the kinase reaction buffer containing 50 mM Tris (pH 7.5), 150 mM NaCl, 10 mM MgCl2, 1 mM ATP, 1 mM DTT, and 0.1 μCi/μl γ-32P-ATP with 40 μM myelin basic protein (MBP). At different time intervals, an aliquot of reaction mixture was added with equal volume of 2X SDS sample buffer and followed by boiling for 5 min in 100 ˚C water bath. All samples were separated by SDS-PAGE and analyzed by autoradiography. For in vitro kinase assays using MOB1 as substrate, 0.5 nM MST2 was incubated with 0.4 µM recombinant purified MOB1 in the kinase reaction buffer. The phosphorylated MOB1 was analyzed by quantitative Western blotting using a specific antibody against pT35 of MOB1 (Cell Signaling). The signals were quantified with the Odyssey LI-COR imaging system. For in vitro kinase assays using GST-MST2 D146N as substrate, the kinase reaction was performed with MST2 KD for 30 min at room temperature.
 
 For assaying MST2-SAV1 autophosphorylation, 2.5 µM MST2-SAV1-ΔN198 or MST2-SAV1-ΔN268 was dephosphorylated by 0.5 µM PP2A A-C core complex for 30 min at room temperature. Okadaic acid was then added to a final concentration of 5 µM and the reaction mixture was incubated on ice for another 30 min. The reaction mixture was diluted by a ratio of 1:5 at room temperature with a kinase reaction buffer containing 50 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2, 2 mM ATP, and 1 mM DTT. At different time intervals, autophosphorylation was terminated by adding 2X SDS loading buffer and boiling for 5 min in 100 ˚C water bath. All samples were separated by SDS-PAGE and blotted by a specific antibody against pT180 of MST2.
 
-## In vitro PP2A inhibition assay
+### In vitro PP2A inhibition assay
 
 For PP2A A-C phosphatase inhibition assays, 0.1 µM PP2A A-C was mixed with the indicated concentrations of SAV11-90 and incubated at room temperature for 15 min. MST2 kinase domain (KD) was then added to the final concentration of 1 µM in a buffer containing 20 mM Tris (pH 8.0) and 100 mM NaCl. After 30 min incubation, 15 µl reaction mixture was quenched by the addition of the same volume of 2X SDS sample buffer and boiled for 5 min. The remaining pT180 of MST2 was analyzed by quantitative Western blot using a specific antibody against pT180 of MST2.
 
-## Mammalian cell culture, transfection, and RNA interference
+### Mammalian cell culture, transfection, and RNA interference
 
 293FT cells (Thermo Scientific, catalogue #R70007; not independently authenticated) were cultured in DMEM supplemented with 10% fetal bovine serum, 2 mM L-glutamine and 1% penicillin/streptomycin. MCF10A cells (ATCC, catalogue #CRL-10317; not independently authenticated) were cultured in DMEM/F12 containing 5% horse serum, 20 ng/ml EGF, 0.5 μg/ml hydrocortisone, 100 ng/ml cholera toxin, 10 μg/ml insulin and 1% penicillin/streptomycin. All cells were incubated at 37°C in a humidified 5% CO2 atmosphere. All cell lines were checked by 4’,6-diamidino-2-phenylindole (DAPI) staining to ascertain that they were free of mycoplasma contamination. Transient transfection of 293FT cells was performed with Lipojet (Signagen). Cells were collected for further experiments after 24 hr. siRNA transfection was performed with Lipofectamine RNAiMAX (Invitrogen, Waltham, MA) according to manufacturer’s instructions. The following siRNAs were synthesized by Dharmacon and used in this study: siSLMAP #1, GAAAGCAGCGUCUGAAUAUdTdT; siSLMAP #2, GAUCGAAGCCCAGGAGCUAdTdT; siSTRIP1, GCAGCAAAUUUAUAGGUUAdTdT.
 
-## Generation of knockout cell lines
+### Generation of knockout cell lines
 
 Gene-specific single-guide RNAs (sgRNAs) were designed using the design tool at https://benchling.com. The sgRNAs (SLMAP, CTGTCACGTCTACTCCAAAC; SAV1, GGAGGTGGTTGATCATACCG) were cloned into plentiCRISPR v2 (Addgene). The plentiCRISPR v2-sgRNA, pMD2.G and psPax2 plasmids were co-transfected into 293FT cells with the Lipofectamine 2000 reagent (Invitrogen). Two or three days after transfection, the lentiviral supernatants were harvested and concentrated with Lenti X-concentrator (Clontech). MCF10A cells were infected with the lentiviruses and 4 μg/ml polybrene. Two days after infection, cells were selected with 1 μg/ml puromycin. After two days of selection, single cells were sorted into individual wells of 96-well plates. Single clones were tested by immunoblotting and DNA sequencing.
 
-## Antibodies, immunoblotting, and immunoprecipitation
+### Antibodies, immunoblotting, and immunoprecipitation
 
 Rabbit polyclonal MST2 phospho-T336 antibody was raised against the MST2 phospho-peptide with the sequence of ESVGpTMRATC at an on-campus facility. Generation of the MST2 phospho-T378 antibody was described previously (Ni et al., 2015). The following antibodies were purchased from the indicated sources: anti-pan Cadherin (C1821, Sigma); anti-STRIP1 (A304-644A) and anti-SLMAP (A304-505A, Bethyl Laboratories Inc.); anti-Tubulin (ab4074), anti-SIKE1 (ab121860) and anti-SLMAP (ab56328, Abcam); anti-MYC (Roche); anti-FLAG (F1804, Sigma); anti-HA (sc-805), anti-PP2A A (sc-6112) and anti-YAP (sc-101199, Santa Cruz Biotechnology); anti-pMST1/2 (T183/T180; 3681), anti-MST1 (3682), anti-GAPDH (2118), anti-MOB1 (13730), anti-pMOB1 (T35;8699), anti-LATS1 (3477), anti-pLATS1/2 (HM; 8654), anti-pYAP (4911), anti-NF2 (12888), anti-PP2A C (2259), anti-rabbit immunoglobulin G (IgG) (H + L) (Dylight 800 or 680 conjugates), anti-mouse IgG (H + L) (Dylight 800 or 680 conjugates) and anti-SAV1 (13301, Cell Signaling). For immunoblotting, cell lysates and immunoprecipitates were analyzed by standard immunoblotting. The membranes were scanned and band intensities were quantified by the Odyssey Infrared Imaging System (LI-COR). We re-blotted the rabbit polyclonal antibody-attached membranes with different mouse monoclonal antibodies, including total YAP, SAV1 and SLMAP antibodies. We also included the GAPDH loading control for each gel, but only showed one representative GAPDH blot for each experiment. We quantified phospho- and total protein bands in a set of three independent experiments. Each band intensity was normalized to the intensity of GAPDH from the same gel. The ratios of normalized phospho-proteins versus normalized total proteins were calculated and plotted. For immunoprecipitation, cells were harvested and lysed with the lysis buffer (20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 0.2% Triton X-100) supplemented with protease inhibitors (Roche) and PhosSTOP (Roche) on ice for 30 min. After incubation, cell lysates were separated by centrifugation. Cleared cell lysates were incubated with anti-FLAG M2 resin (Sigma) for 2 hr at 4°C. After incubation, resins were washed by the washing buffer (20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 0.1 mM EDTA, and 1% Triton X-100) and eluted by SDS sampling buffer. Proteins bound to resins were dissolved in SDS sample buffer, separated by SDS-PAGE, and blotted with the appropriate antibodies.
 
-## Immunofluorescence and subcellular fractionation
+### Immunofluorescence and subcellular fractionation
 
 Cells on a Lab-Tek II chamber slide were fixed with 4% paraformaldehyde for 20 min, permeabilized with PBS containing 0.2% Triton X-100 (PBS-T) for 20 min, and incubated with PBS-T containing 3% BSA for 30 min. Cells were incubated with the primary antibody in PBS-T containing 3% BSA for 1 hr. Cells were then washed with PBS-T and incubated with fluorescent secondary antibodies. Cells were washed with PBS-T again and mounted in ProLong Gold Antifade reagent with DAPI (Invitrogen). Cells were visualized with a DeltaVision microscope system (Applied Precision). Subcellular fractionation was performed using Mem-PER plus membrane protein extraction kit (Thermo Scientific) according to the manufacturer’s instructions.
 
-## RNA isolation and real-time RT-PCR
+### RNA isolation and real-time RT-PCR
 
 Total RNA was isolated from cells using the Trizol reagent (Invitrogen). cDNA was obtained by reverse transcription reactions using the Reverse transcription kit (Applied Biosystems). Real-time PCR was performed using qPCR Super Mix-UDG (Invitrogen) and the 7900HT Fast Real-Time PCR System (Applied Biosystems). Relative abundance of mRNA was normalized to GAPDH.
 
-## Statistical analysis
+### Statistical analysis
 
 Values are presented as mean ± SEM from at least three biological replicates. Results were evaluated by two-tailed unpaired t tests. The graphs and statistical calculations were performed using Prism (GraphPad).
 
-## Accession codes
+### Accession codes
 
 Structures and crystallographic data have been deposited at the wwPDB: 6AR0 (apo-SLMAP FHA), 6AR2 (the SLMAP FHA–pMST2 complex), and 6AO5 (the MST2–SAV1 complex).

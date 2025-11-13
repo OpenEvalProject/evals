@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Trans -species small regulatory RNAs (sRNAs) are delivered to host plants from diverse pathogens and parasites and can target host mRNAs. How trans -species sRNAs can be effective on diverse hosts has been unclear. Multiple species of the parasitic plant Cuscuta produce trans -species sRNAs that collectively target many host mRNAs. Confirmed target sites are nearly always in highly conserved, protein-coding regions of host mRNAs. Cuscuta trans -species sRNAs can be grouped into superfamilies that have variation in a three-nucleotide period. These variants compensate for synonymous-site variation in host mRNAs. By targeting host mRNAs at highly conserved protein-coding sites, and simultaneously expressing multiple variants to cover synonymous-site variation, Cuscuta trans -species sRNAs may be able to successfully target multiple homologous mRNAs from diverse hosts.
+Trans-species small regulatory RNAs (sRNAs) are delivered to host plants from diverse pathogens and parasites and can target host mRNAs. How trans-species sRNAs can be effective on diverse hosts has been unclear. Multiple species of the parasitic plant Cuscuta produce trans-species sRNAs that collectively target many host mRNAs. Confirmed target sites are nearly always in highly conserved, protein-coding regions of host mRNAs. Cuscuta trans-species sRNAs can be grouped into superfamilies that have variation in a three-nucleotide period. These variants compensate for synonymous-site variation in host mRNAs. By targeting host mRNAs at highly conserved protein-coding sites, and simultaneously expressing multiple variants to cover synonymous-site variation, Cuscuta trans-species sRNAs may be able to successfully target multiple homologous mRNAs from diverse hosts.
 
 ## Introduction
 
@@ -27,13 +27,45 @@ Trans-species silencing is expected to benefit the source organism while being d
 
 We analyzed sRNA expression from four Cuscuta species (Figure 1A). Specimens from two or three distinct populations of C. pentagona and C. gronovii, respectively, were included, making a total of seven separate sRNA expression studies (identified with acronyms for brevity; Figure 1A–B, Supplementary files 1–2). All four Cuscuta species are generalists with documented hosts spanning multiple plant families (Figure 1—figure supplement 1). RNA samples (three biological replicates each) from host-parasite interfaces and parasite stems growing on the host Arabidopsis thaliana were obtained and used for sRNA sequencing (Figure 1B). Libraries were condensed to highly expressed sRNA variants and filtered to remove any sRNAs that came from the host (Figure 1—figure supplement 2). Differential expression analysis revealed several hundred Cuscuta sRNAs in each experiment that were significantly up-regulated in the interface tissue relative to parasite stems (FDR < 0.1) (Supplementary file 3); we dubbed these haustorially-induced (HI) sRNAs (Figure 1A; Supplementary file 4). HI-sRNAs are mostly 21 or 22 nucleotides long (Figure 1A), sizes consistent with either miRNAs or short interfering RNAs (siRNAs). Distinguishing miRNAs from siRNAs requires a genome assembly (Axtell and Meyers, 2018), a criterion met so far for only one of the four species (C. campestris) included in this study (Shahid et al., 2018; Vogel et al., 2018). Approximately half of the C. campestris HI-sRNAs (208/408) come from MIRNA hairpins (Supplementary file 5). C. campestris-derived HI-sRNAs were recovered from 40 of the 42 novel MIRNA loci described by Shahid et al. (2018), including representatives from all five miRNA families previously demonstrated to target host mRNAs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig1-v1.jpg)
+
+**Figure 1.:** (A) Phylogeny of select Cuscuta species. Size distribution of HI-sRNAs for each sequenced isolate and acronyms are shown. (B) Sampling and sequencing schematic to discern HI-sRNAs. (C) HI-sRNA family counts and membership for each isolate, showing only the top 15 groups. Families were grouped strictly using a maximum edit distance of one nucleotide. Yellow indicates families present in a single isolate.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Pipeline for processing herbaria data from the mid-atlantic herbaria consortium (MAHC; http://midatlanticherbaria.org) on interactions with each Cuscuta species of interest. (B) Ranked list of most identified host families for each species. Top 15 are shown for each species, with the top 10 overall identified with consistent colors (all others in black). (C) Geographical listings within the United States for each sample, where latitude and longitude or a searchable county are found.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Discovery of HI-sRNAs in Cuscuta isolates. Three major steps include condensing reads to representative sRNAs in a genome-free manner, filtering reads which could have originated from A. thaliana, and performing differential expression with DEseq2 to find reads up-regulated in the interface tissue (FDR < 0.1, null hypothesis: sRNA not differentially expressed). (B) Example of a C. campestris sRNA discovered by this method, with the top 25 constituent sRNA sequences ranked by expression. Highest expressed read is deemed as the representative sRNA sequence and is shown with black box. Green boxes show variations from representative sequences with total distance shown to left. (C) Same as B but with a known miRNA, showing similar variation to the novel sRNA in B. (D) Comparing the proportion of reads present in annotated miRNAs, using both genome-alignment (ShortStack) and genome-free based approaches. Reads are ranked by size, with the canonical miRNA (blue) and the variants (grey) showing the proportion of reads they make up in the sRNA. Reads grouped in the locus by the genome-free method that are absent in the alignment approach are shown in green.
+
 We next examined conservation of HI-sRNA accumulation between isolates and species. Some canonical plant miRNAs are highly conserved, with several ubiquitous families found in multiple plant orders, or even broadly in all land plants (Cuperus et al., 2011; Chávez Montes et al., 2014). Surprisingly, when using a strict cutoff (maximum edit distance of 1) we found that the majority of HI-sRNAs were not observed in more than one species (Figure 1C). In many cases HI-sRNAs were unique to single isolates of a single species (Figure 1C). This result implies that HI-sRNAs could be rapidly differentiating in expression, sequence, or both within these Cuscuta species.
 
 Our previous work showed that C. campestris HI-sRNAs can target host mRNAs in several hosts (Shahid et al., 2018). We thus looked for evidence of interactions between our broader sets of HI-sRNAs with host (A. thaliana) mRNAs using two complementary methods: secondary siRNA accumulation (Shahid et al., 2018) and degradome analysis (Addo-Quaye et al., 2008). Secondary siRNAs can accumulate from mRNAs as a result of an initial miRNA- or siRNA-directed targeting event, especially when the initiating sRNA is 22 nucleotides long (Cuperus et al., 2010). A large portion of HI-sRNAs are 22-nt or are clustered from some sRNAs which are 22-nt in length (Figure 1—figure supplement 2), allowing us to detect their targeting with this approach. Degradome analysis made use of the NanoPARE method (Schon et al., 2018), which recovers 5’ ends of both capped and uncapped mRNAs. NanoPARE libraries were made from just one isolate from each of the four Cuscuta species, and comprised three biological replicates from the host portion of the interface (Supplementary file 2). A. thaliana xrn4 mutants were used as hosts for these experiments because they over-accumulate 5’ remnants of sRNA-mediated mRNA cleavage (Rymarquis et al., 2011; Schon et al., 2018). The CRCK2 mRNA is an example with both degradome and secondary siRNA evidence of targeting by a C. pentagona HI-sRNA (Figure 2A–E). Altogether these two analyses yielded a set of 61 target sites over 54 A. thaliana mRNAs targeted by Cuscuta HI-sRNAs confirmed by a single method and seven more confirmed by both (Figure 2F, Figure 2—figure supplement 1A, Supplementary file 6). Based on RNA-seq analysis, accumulation of confirmed target mRNAs is generally down-regulated in parasitized host stems (Figure 3). This greatly expands on the set of six mRNAs previously identified as host targets of C. campestris miRNAs (Shahid et al., 2018), and demonstrates that trans-species sRNAs are used by multiple Cuscuta species. Target predictions show that C. campestris homologs of targeted A. thaliana mRNAs invariably have lower complementarity to HI-sRNAs (Figure 4). Repeating the analysis pipeline to examine possible self-targeting of C. campestris mRNAs by HI-sRNAs found only four confirmed targeting interactions, an indication that HI-sRNAs may largely function in trans in the host (Figure 4—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig2-v1.jpg)
+
+**Figure 2.:** (A) Modeled sRNA-target interaction for A. thaliana CRCK2. (B) Secondary siRNA accumulation from CRCK2. (C) Phasing analysis of secondary siRNAs from CRCK2. Expected phase for cut-site shown in red. (D) Size distribution of CRCK2 secondary siRNAs. (E) Frequency of 5’ ends from the CRCK2 mRNA, with the predicted HI-sRNA cut site shown in red. (F) Host mRNAs with confirmed targeting by a Cuscuta HI-sRNA. Full details in Figure 2—figure supplement 1 and Supplementary file 6.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Complete list of target interactions between sRNAs and host genes. Confirmation status diagram indicates in what species the interaction is confirmed. Target gene information includes the number of homologs found in 36 eudicot transcriptomes. sRNA counts in superfamilies and the presence of a confirmed miRNA in the family is shown (NoAl: ccm sRNA failed to align to ccm genome). Target interaction columns indicate the conservation at the translated target site in an alignment of found homologs (5’/3’ UTR: not considered for conservation analysis). Correlation coefficient and P-value for variation in positions in target and sRNA superfamily shown. (B) Breakdown of superfamilies with confirmed targeting by the presence of a confirmed miRNA, where possible. (C) Correlation of positional variation in target-sites and their sRNAs, indicating the interactions with a significant correlation.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) GO terms for molecular function with a nodescore ≥5.0, demonstrating the species for which the interaction is confirmed with colored bars. Locations where bars overlap indicate genes where both species have confirmed targeting. (B) Same as with A, but for biological processes.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig3-v1.jpg)
 
 **Figure 3.:** Cumulative density plots of interface/control stem ratios for host mRNAs expressed in Cuscuta-host interfaces, assessed by RNA-seq. All mRNAs shown with black line. Colored lines and dots indicate mRNAs which are confirmed targets of HI-sRNAs in the indicated Cuscuta isolates.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig4-v1.jpg)
+
+**Figure 4.:** Target prediction scores for confirmed A. thaliana mRNA targets (black) and best-blast-hit homologs in C. campestris (red). All sRNAs with predicted targeting are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Pipeline for confirmation by the presence of secondary siRNAs. (B) Pipeline for confirmation by the 5’ transcript sequencing (NanoPARE). (C) List of all mRNAs with strong evidence for self-targeting.
 
 Some mRNAs were confirmed to be targeted by HI-sRNAs from multiple species, with the most frequent interaction being with SEOR1 (Figure 2F, Figure 2—figure supplement 1A). SEOR1 encodes a phloem protein that acts to reduce sap loss after wounding (Knoblauch et al., 2014). C. campestris growth is enhanced when A. thaliana seor1 mutants are used as hosts (Shahid et al., 2018). However, the majority of mRNAs confirmed as targets are unique to a single Cuscuta species or isolate (Figure 2F, Figure 2—figure supplement 1A). A possible explanation could be that Cuscuta trans-species sRNAs function to regulate similar host processes, while not necessarily the same target mRNAs. Additionally, our current analysis is likely to have missed many targets, both due to lack of sensitivity of our methods (secondary siRNA accumulation and/or degradome analysis both can miss true targets), and because A. thaliana is unlikely to be a major host of Cuscuta in nature.
 
@@ -41,13 +73,25 @@ Numerous target mRNAs are known to be involved in the same processes, both on a 
 
 Plant miRNAs that initially seem unrelated based on divergent sequences can sometimes be grouped into superfamilies (Xia et al., 2013). To discover potential superfamilies among Cuscuta HI-sRNAs, we clustered them with a cutoff of five substitutions and barring indels (Figure 5—figure supplement 1). This clustering strategy gives low rates of grouping by random chance (Figure 5—figure supplement 2). Many superfamilies of Cuscuta HI-sRNAs were found, with a substantial portion of them shared between species and isolates (Figure 5A). 19 superfamilies were shared between all isolates except C. indecora, and another 14 superfamilies were present in at least one isolate each of C. campestris, C. pentagona, and C. gronovii. Leveraging the prior C. campestris miRNA annotations, we can extrapolate that 158 out of 332 superfamilies which contain C. campestris HI-sRNAs are likely miRNAs. Furthermore, we extrapolate that of the superfamilies present in C. campestris with proven target relationships, 22 out of 23 are likely to be miRNAs (Figure 2—figure supplement 1B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig5-v1.jpg)
+
+**Figure 5.:** (A) sRNA superfamily count and membership for each Cuscuta isolate. Colors indicate general groupings of superfamilies. (B) An example HI-sRNA superfamily aligned to target sites from homologs in 36 eudicot genomes. Nucleotide and amino acid Shannon entropy from the alignments are shown as bits. Vertical red lines indicate the frame. Dots indicate the number of possible synonymous nucleotides at each codon. 17 additional examples in supplementary file 7. (C) Average conservation of target sites from homologs. Confirmed target site shown (red point), with all other possible sites shown by 25–75% quartiles (black line) and median (black point).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Example demonstrating implementation of the ‘modified hamming distance’ (mHD) when comparing strings. Levenshtein edit distance is tolerant of insertions and deletions, yet the mHD does not allow these operations, making a high penalty to strings which contain insertional errors while shift errors are penalized the same. (B) Example of clustering seven HI-sRNAs into three superfamilies using mHD. Species are indicated by color; clustering is independent of species. Edges close enough to form a cluster (solid line, red distance number) and inadequate edges (dashed line, black distance number) connect HI-sRNA nodes. Cutoff for clustering is an mHD distance of five or less and it is not required that all nodes in a cluster must meet this threshold (must have one adequate edge to join a cluster).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Experimental pipeline for testing cutoff. sRNA libraries are shuffled using UShuffle maintaining dinucleotide composition. (B) Number of superfamilies formed for real HI-sRNAs and shuffled libraries by maximum distance allowed for cluster formation. Smaller count of superfamilies means that more HI-sRNAs are successfully clustering with each other. (C) The same analysis as in B, except demonstrating the cumulative density of superfamilies by the number of sRNAs grouped in them. Larger cutoffs yield larger superfamilies, with shuffled libraries remaining unable to form clusters larger than one or two.
+
 HI-sRNAs within a superfamily vary at several positions both between and within species (Figure 5B). In many cases variation within superfamilies occurred in a visible three-nucleotide period (e.g. SupFam_24, SupFam_37; Figure 5B, Supplementary file 7). This pattern led us to investigate nucleotide variation in corresponding target sites among possible hosts. All four Cuscuta species in this study are generalists that parasitize eudicot hosts, so we aligned homologous target mRNAs from 36 eudicot species (Supplementary file 8). Analysis of translated target site conservation shows that HI-sRNAs target highly-conserved protein-coding positions (Figure 5C). Positional variations in HI-sRNA superfamilies precisely correspond to variable positions in homologous target sequences (Figure 5B). This variation is frequently apparent at synonymous sites, accounting for the three-nucleotide periodicity of superfamily variation. Modeling correlation of positional variation between HI-sRNA superfamilies and eudicot target sites found 18 significant (p-value<0.05, Pearson correlation) examples of this type of co-variation (Supplementary file 7, Figure 2—figure supplement 1C). Importantly, HI-sRNA superfamily variation occurs within single Cuscuta species (Figure 5B, Supplementary file 7), such that multiple HI-sRNA variants are commonly deployed by a given parasite during infestation. By targeting conserved sites, and making several HI-sRNA variants that collectively cover many/most possible synonymous target variants, Cuscuta may ensure successful targeting across a wide range of hosts.
 
 Using sRNA-seq libraries made from C. campestris attachments on Nicotiana benthamiana (Shahid et al., 2018), we found evidence of targeting in transcripts homologous to known A. thaliana targets (Supplementary file 9). Additionally, N. benthamiana target mRNAs were generally down-regulated in interface tissues (Figure 6A, Supplementary file 10. Comparing targeting of TIR1 in A. thaliana and N. benthamiana homologs by SupFam_27 sRNAs illustrates differential complementarity of superfamily members to different mRNAs . The N. benthamiana TIR1 target sites encode identical amino acids, but vary at synonymous positions. Some SupFam_27 variants are more complementary than others from each of the different homologs (Figure 6B). This provides a direct example where variation in a Cuscuta sRNA superfamily accommodates synonymous-site variation in confirmed target mRNAs from different plant species.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49750/elife-49750-fig6-v1.jpg)
 
-**Figure 6.:** N.benthamiana target homologs.(A) Accumulation of N. benthamiana target mRNAs. Interface (IN, red) and control stem (CS, black) are shown relative to average CS expression. Points represent biological replicates (N = 5 to 6). P values comparing IN to CS are displayed above the x axis; Wilcoxon rank-sum tests, unpaired, one-tailed. Accumulation was normalized to NbTIP41-L (Niben101Scf03385g06003) and NbPP2A (Niben101Scf09716g01002). (B) sRNA-target alignments of SupFam_27 sRNAs with TIR1 family members from N. benthamiana and A. thaliana. Complementarity scores (Allen et al., 2005) are shown in the heatplot. The strongest predicted interactions are shown on the right; highlighted nucleotides are synonymous variants relative to AtTIR1.
+**Figure 6.:** (A) Accumulation of N. benthamiana target mRNAs. Interface (IN, red) and control stem (CS, black) are shown relative to average CS expression. Points represent biological replicates (N = 5 to 6). P values comparing IN to CS are displayed above the x axis; Wilcoxon rank-sum tests, unpaired, one-tailed. Accumulation was normalized to NbTIP41-L (Niben101Scf03385g06003) and NbPP2A (Niben101Scf09716g01002). (B) sRNA-target alignments of SupFam_27 sRNAs with TIR1 family members from N. benthamiana and A. thaliana. Complementarity scores (Allen et al., 2005) are shown in the heatplot. The strongest predicted interactions are shown on the right; highlighted nucleotides are synonymous variants relative to AtTIR1.
 
 HI-sRNA superfamily diversity could also enable repression of multiple mRNAs with homologous target-sites within a single host. We examined target predictions within A. thaliana and found ten examples of gene family-specific motifs potentially targeted by Cuscuta HI-sRNA superfamilies (Supplementary file 11). These include a HI-sRNA superfamily predicted to target the mRNA region encoding the eponymous WRKY motifs within the well-known family of defense-related transcription factors (Pandey and Somssich, 2009). Several of the targets have been experimentally confirmed by secondary siRNA accumulation or degradome analysis but most remain predictions, including the WRKY family. However, false negatives are common with these methods of confirmation. The striking patterns of sequence covariation between the HI-sRNA superfamilies and their possible target mRNA families make a strong case for the reality of these interactions.
 
@@ -57,37 +101,159 @@ We conclude that multiple Cuscuta species use trans-species HI-sRNAs to target a
 
 ## Materials and methods
 
-## Seed sources
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>xrn4</td>
+      <td>Rymarquis et al., 2011</td>
+      <td>xrn4-5; CS68822; SAIL_681_E01</td>
+      <td>T-DNA insertion mutation in Col-0 background</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNAflex kit</td>
+      <td>Illumina</td>
+      <td>Product: 20018704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB primers set 1</td>
+      <td>New England Biolabs</td>
+      <td>Product: E7335S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB primers set 2</td>
+      <td>New England Biolabs</td>
+      <td>Product: E7500S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB primers set 3</td>
+      <td>New England Biolabs</td>
+      <td>Product: E7710S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB primers set 4</td>
+      <td>New England Biolabs</td>
+      <td>Product: E7730S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ShortStack</td>
+      <td>(Johnson et al., 2016)</td>
+      <td>v3.8.5</td>
+      <td>https://github.com/MikeAxtell/ShortStack</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>(Love et al., 2014)</td>
+      <td>v1.24.0</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. campestris)</td>
+      <td>ccm</td>
+      <td>Shahid et al., 2018; Jim Westwood, Virginia Tech</td>
+      <td>‘doddi’</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. pentagona)</td>
+      <td>cpe-2017</td>
+      <td>Ebay, seller: eden_wilds</td>
+      <td>2017 collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. pentagona)</td>
+      <td>cpe-2015</td>
+      <td>Ebay, seller: eden_wilds</td>
+      <td>2015 collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. gronovii)</td>
+      <td>cgr-dp</td>
+      <td>Claude dePamphilis, Penn State</td>
+      <td></td>
+      <td>Provenance unknown</td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. gronovii)</td>
+      <td>cgr-mass</td>
+      <td>Jim Westwood, Virginia Tech</td>
+      <td>massachusetts isolate</td>
+      <td>Origin: A Massachusetts cranberry bog</td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. gronovii)</td>
+      <td>cgr-pm</td>
+      <td>Wild collection</td>
+      <td>purdue mountain isolate</td>
+      <td>Origin: Roadside near State College, PA (Coordinates: 40.866 N, 77.888 W)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. indecora)</td>
+      <td>cin</td>
+      <td>www.ars-grin.gov</td>
+      <td>PI 675068</td>
+      <td>Origin: Texas</td>
+    </tr>
+  </tbody>
+</table>
+
+### Seed sources
 
 Cuscuta campestris (isolate ‘doddi’) was originally acquired from a tomato field in California, followed by several generations of selfing in the Westwood laboratory and provided to us as a gift. C. gronovii (isolate ‘DP’) was a gift C. dePamphilis, from an unknown source. C. gronovii (isolate ‘mass’) was collected in Massachusetts and provided as a gift by J. Westwood. C. gronovii (isolate ‘PM’) was collected from a road-side near State College, PA by M. Axtell in October 2017 (Coordinates: 40.866 N, 77.888 W). C. pentagona (isolates ‘eden-2015’ and ‘eden-2017’) were purchased from ebay seller eden_wilds in 2018, both collected from locations in upstate New York. C. indecora (isolate cin/GRIN) was acquired from the U.S. national plant germplasm system (www.ars-grin.gov) under the accession: PI 675068.
 
-## Genotyping Cuscuta
+### Genotyping Cuscuta
 
 Cuscuta seed were scarified by nicking with a razor blade under dissecting microscope and germinated on wet paper towel under growth lighting at ~28°C, harvesting seedlings after 3–5 days of growth for DNA extraction. DNA was extracted using Edwards method (Kasajima et al., 2004). 2 uL of template was used in a 20 uL PCR reaction using Taq polymerase using 0.5 uM final concentration of each primer (Primers 'c' and 'f', Supplementary file 12) (Taberlet et al., 1991). PCR was performed for 30 cycles and enzymatically cleaned-up using 0.5 uL of Exo1 (NEB) and 1 uL of Antarctic Phosphatase (NEB) with 5 uL PCR product, followed by incubation (15 min at 37°C) and inactivation (15 min at 80°C). Sanger sequencing was performed by the Penn State genomics core using primer 'c' (Taberlet et al., 1991). Sequences were trimmed of low quality bases and aligned using MUSCLE (Edgar, 2004) to published TrnL-F sequences (Stefanovic et al., 2007; Costea et al., 2015). Nucleotide phylogeny was constructed using MEGA7 (Kumar et al., 2016) with a maximum likelihood method and 500 bootstrap replicates (Supplementary file 13).
 
-## Growth conditions
+### Growth conditions
 
 Host A. thaliana (Col-0 and xrn4) was sown on wet potting medium, followed by with 3 days of stratification at 4°C. Plants were placed into long day (16 day/8 night) growth conditions at ~23°C under cool-white-fluorescent lamps. Hosts were allowed to grow to maturity (4–5 weeks old), ready for attachment when first inflorescences were longer than 5 cm.
 
 Cuscuta seeds were scarified and germinated as above. Seedlings were ready for attachment once completely emerged from their seed husk and roughly ~2 cm in length, 3–5 days depending on the species. Seedlings were placed in soil next to the primary bolts of host plants. House-built far-red supplementary LED lighting was used to induce attachment under fluorescent lights, allowing 4–5 days for attachment of the parasite. Once attached, parasitized hosts were removed from far-red lighting to prevent secondary attachment. For C. indecora, experimental attachments came from tendrils from a previously established C. indecora colony. 5 cm tendril tips were cut off of the colony and affixed to primary bolts of host plants with scotch tape. Plants were allowed to grow for 10 days after attachment followed by tissue harvest.
 
-## Tissue collection and RNA extraction
+### Tissue collection and RNA extraction
 
 All tissues were collected by the following methods and immediately submerged in liquid nitrogen to preserve RNA stability. Guide to tissues gathered is found in Supplementary file 2. Interface (IN) tissue was collected by taking both the host and parasite portions of the interface, trimming away any stems above and below the connection. Parasite stem (PS) was harvested ~4 cm above the interface, approximately 4 cm long each. In NanoPARE experiment using xrn4 as a host, we collected only host interface (HIN); similar method to interface collection, except removing any parasite tissue which can be pulled away. Control stem (CS) tissues were harvested from non-parasitized A. thaliana, collecting stems from the same region where Cuscuta would have been attached. 1–3 tissues were pooled for each biological replicate. RNA was extracted by grinding tissue in a liquid nitrogen cooled mortar, with Tri-reagent (Sigma) added while still cold. Tri-reagent extraction was performed as per the manufacturer's suggestions with a second sodium-acetate–ethanol precipitation and wash step.
 
-## Sequencing library preparation
+### Sequencing library preparation
 
 All small-RNA-seq libraries were prepared using a protocol based on the NEBnext small-RNA library kit (NEB), described as follows. (Step 1) 3’ SR Adaptor (NJ410) was pre-adenylated using 5’ adenylation kit (NEB) as per manufacturer’s instructions. (Step 2) 500 ng of total RNA, 1 μL adenylated adapter (5 μM) and water to 5.25 μL were denatured for 2 min at 70°C and immediately moved to ice. Entire reaction was combined with premixed 100 u RNA Ligase 2, truncated KQ (NEB), 1 μL 10x T4 RNA reaction buffer, 10 u RNAse inhibitor and 3 μL 50% PEG8000, to a total volume of 10 μL and incubated 1 hr at 25°C. (Step 3) Primer hybridization was performed adding 0.5 μL SR RT primer (NJ391, 10 μM) and 2.25 μL water to the prior reaction and incubated as follows: 5 min at 75°C, 15 min at 37°C, 15 min at 25°C, and holding at 4°C. (Step 4) 5’ SR RNA adaptor (NJ411) was diluted to 10 μM and denatured for 2 min at 70°C, moved to ice and used immediately for ligation. Ligation was performed combining the prior reaction with 0.5 μL denatured adapter (NJ411), 5 u RNA Ligase 1 (NEB), 0.25 μL 10x RNA ligase buffer, 10 u RNAse inhibitor, 0.5 μL ATP (10 mM), and water to 15 uL and incubated for 1 hr at 25°C. (Step 5) Reverse transcription was performed immediately following ligation, combining the prior reaction with 100 u Protoscript II reverse transcriptase (NEB), 4.5 μL 5x first strand synthesis buffer, 1 μL dNTPs (10 uM), 1.5 μL DTT (0.1 M), and 10 u RNAse inhibitor equaling 23 μL in total volume and incubated for 1 hr at 50°C followed by heat-killing for 15 min at 70°C. (Step 6) Library amplification was performed, combining 5 μL of cDNA with 25 μL LongAmp Taq 2x master mix (NEB), 1.25 μL SR primer (NJ412, 10 μM), 1.25 μL barcode primer (‘NEB’ primers, 10 μM), and water to 50 μL total volume. Reaction was performed as follows: 30 s initial denature at 94°C, 15 cycles of 15 s at 94°C, 30 s at 62°C, and 15 s at 70°C, followed by final extension of 5 min at 70°C. Reactions were purified and size selected for sRNAs 15–40 nt in length by PAGE. Extracted bands were quantified by qPCR and quality-controlled by high-sensitivity DNA chip (Agilent). Sequencing was performed on a NextSeq550 (Illumina) with the high-output kit (75 nt, single-end, single barcode) by the Penn State genomics core. Sequencing libraries were de-multiplexed and adaptor trimmed using cutadapt (Martin, 2011) (cutadapt -a AGATCGGAAGA -m 15 j 8 -o output.fq input.fq).
 
 NanoPARE and mRNA-seq libraries were prepared using the protocol described in Schon et al. (2018), with the following details: NanoPARE and mRNA-seq were performed on interfaces (IN) of four isolates (ccm, cpe-2015, cgr-dp, and cin) and control stems (CS), grown on Col-0 A. thaliana. NanoPare was also performed on host interfaces (HIN) of the same isolates and control stem grown on xrn4 mutant Col-0 A. thaliana. The Nextera DNA flex kit (Illumina) was used for tagmentation of 110 ng pre-amplified PCR product. Libraries were amplified using different barcoded i7 and i5 primer sets, described in Supplementary file 12), allowing for either amplification of 5’ ends (NanoPARE) or all tagged entities (mRNA-seq). The sequencing of NanoPARE data made use of custom read one sequencing and i5 index sequencing primers (NJ395 and NJ416, reverse complements of each other), which sequence out from the template switching oligo adapter. Sequencing was performed on a NextSeq550 (Illumina) with the high-output kit (75 nt, single-end, double barcoded) by the Penn State genomics core. Sequencing libraries were de-multiplexed and NanoPARE libraries were trimmed using an in-house script to remove any residual untemplated 5’ nucleotides caused by reverse transcription of the template-switching oligo.
 
-## Genome-free sRNA discovery
+### Genome-free sRNA discovery
 
 Genome-free sRNA discovery was performed using a set of in-house scripts, corresponding to the following pipeline (Figure 1—figure supplement 2). Reads were filtered by size, retaining lengths of 20 to 24 nt, and condensed to unique sequences with a count of abundances for each tissue. For each Cuscuta species, unique reads were further condensed by sequence similarity to their most abundant variants. This process found similar variants for sRNAs in rank order of abundance, clustering sRNAs with a Levenshtein edit distance of 2 or less. Reads which do not cluster to a variant with abundance of 0.5 reads per million (RPM) or higher are discarded. Most abundant sRNA variants of each cluster are reported, with the abundance as the combined abundance of all clustered reads. Host sRNAs were then filtered, removing an sRNA if it met one of the following criteria: (1) it is closely similar to an annotated miRNA; (2) it aligns perfectly to the A. thaliana genome or transcriptome (Cheng et al., 2017); (3) it is present in non-parasitized A. thaliana control libraries at an RPM greater than 1/100 its expression in parasite libraries. Differential expression analysis was then performed with DEseq2 (Love et al., 2014) to identify sRNAs up-regulated in the interface tissue relative to the parasite stem, using the command the ‘results’ command with a false-discovery rate of 0.1 (Benjamini–Hochberg correction). This pipeline resulted in our list of HI-sRNAs.
 
 Superfamilies were constructed using an in-house script that corresponds to the following pipeline. All by all comparisons of HI-sRNA sequences were performed, measuring modified hamming distance (Figure 5—figure supplement 1), and sequences with a distance of 5 or less were clustered together, ordered by overall size of the superfamily. To test this distance cutoff, HI-sRNA sequences were shuffled using Ushuffle (Jiang et al., 2008), set to retain di-nucleotide structure (10 random replicates) (Figure 5—figure supplement 2).
 
-## Target confirmation
+### Target confirmation
 
 Target prediction of HI-sRNAs was performed using the script GSTAr.pl (https://github.com/MikeAxtell/GSTAr; Axtell, 2014; copy archived at https://github.com/elifesciences-publications/GSTAr) under default settings, using HI-sRNA from a given isolate as the query and A. thaliana ARAPORT11 transcriptome (Cheng et al., 2017) as the subject.
 
@@ -97,32 +263,32 @@ To confirm targeting of A. thaliana genes using degradome data, host stem of int
 
 Confirmation of targeting in C. campestris genes (Figure 4—figure supplement 1) was performed using the similar methods as above, with the following changes. Secondary siRNAs were annotated with ShortStack (Johnson et al., 2016) to the C. campestris genome (Vogel et al., 2018), using gene annotations as the basis for loci. Different NanoPARE libraries were used, coming from mixed host-parasite interface (IN), and were aligned to the C. campestris transcriptome (Vogel et al., 2018). No direct control was present to compare peak expression, so the few confirmed examples could not be subjected to this filter.
 
-## mRNA-seq analysis
+### mRNA-seq analysis
 
 mRNA-seq libraries were aligned to the A. thaliana genome (Arabidopsis Genome Initiative, 200) using HISAT2 (Kim et al., 2015) (hisat2 -p 2 –max-intronlen 5000 -x genome.fa -U library.fq.gz). Gene expression was quantified by minBamCov (Barnett et al., 2011) (multiBamCov -bams alignment.bam -bed annotation.gff) using the ARAPORT11 annotation (Cheng et al., 2017). Deseq2 (Love et al., 2014) was used to accurately estimate log fold change of mRNAs for each condition, using the ‘lfcShrink’ command (type = apeglm).
 
-## Identification of C. campestris miRNAs
+### Identification of C. campestris miRNAs
 
 To identify sRNAs that were derived from miRNA hairpins, de novo annotation of sRNA loci in the C. campestris genome (Vogel et al., 2018) was performed using ShortStack (Johnson et al., 2016). Next, loci containing a HI-sRNA from C. campestris were extracted and screened by eye to find miRNAs with the criteria that they have a clear concise hairpin with two matching regions of expression which have a clear two nt offset (factors consistent with miRNA processing). Superfamilies were annotated to identify which contained confirmed miRNAs.
 
-## Discovery of target homologs in eudicots
+### Discovery of target homologs in eudicots
 
 cDNA and CDS libraries of 36 eudicot species (Supplementary file 8) available in Phytozome v12.1.6 (Goodstein et al., 2012) were downloaded for local analysis. Nucleotide queries of A. thaliana target transcripts were searched against translated CDS libraries from eudicots using blastx (Camacho et al., 2009) (blastx -query target.fa -db eudicot.db -outfmt 6 -num_threads 6 -evalue 0.001 -task blastx-fast), extracting the best hit for each species based on bit score. Conservation of target site and coding sequence of homologs was calculated by aligning their translated coding sequences using MUSCLE (Edgar, 2004) and measuring the average conservation (Shannon entropy) of every eight amino acid window, flagging the window which corresponds to the target site. RNA superfamilies and transcripts of best-hit homologs of target were each aligned using MUSCLE (Edgar, 2004) and oriented to each other using in-house scripts. Positional nucleotide conservation for target site in homologs and superfamily sRNAs were calculated and used to construct a linear regression model in R (lm function and resulting p-values). For each comparison, n equals the number of correlating nucleotide positions in the interaction (n = 20–24).
 
-## Discovery of conserved motifs in A. thaliana targets
+### Discovery of conserved motifs in A. thaliana targets
 
 Conserved motifs targeted by sRNA superfamilies in A. thaliana were found by first extracting all targets of a superfamily with very strong predicted targeting (complementarity score [Allen et al., 2005] three or less). Using an in-house script, sequences of target sites were translated for the correct frame and clustered using a greedy algorithm with a maximum edit distance in a cluster of three or less. Conservation of target sites and surrounding nucleotide sequences were then calculated and oriented adjacent to multiple sequence alignments of the targeting superfamily, highlighting confirmed interactions.
 
-## Target analysis in N. benthamiana
+### Target analysis in N. benthamiana
 
 sRNA sequencing libraries of C. campestris parasitizing N. benthamiana were retrieved from SRA bioproject: PRJNA408115 (Supplementary file 2) (Shahid et al., 2018). Parasite stem and interface libraries were used as input in the genome-free sRNA discovery pipeline explained above. Secondary siRNA producing loci were identified using the pipeline explained above with the N. benthamiana Genome v1.0.1 (Bombarely et al., 2012). Transcripts that were identified as containing HI-sRNA induced secondary siRNA loci were then compared to C. campestris HI-sRNA targets in A. thaliana, identifying possible homologs of these targets (Supplementary file 10).
 
 For the quantification of target mRNA expression, C. campestris was attached to 2–3 week old N. benthamiana plants, and allowed to grow for 11–15 days. Total RNA was extracted from the interface of parasitized (IN) and the stem of unparasitized plants (CS), using Tri-reagent (Sigma) and the double-precipitation method explained above. cDNA was synthesized from 1 μg of total RNA using the ProtoScript II (NEB) reverse transcriptase with random primers, as per manufacturer instructions. qRT-PCR primers (Supplementary file 12) were designed for these transcripts, sometimes targeting several homologous mRNAs in N. benthamiana equally well. The amplicons were designed to bridge the best predicted cut sites among causative sRNAs. Best-blast-hit homologs of housekeeping genes PP2A (AT1G13320) and TIP41-L (AT4G34270) in N. benthamiana were used for normalization of PCR accumulation between cDNAs, averaging expression relative to control stem. qPCR resulted in expression from 5 to 6 biological replicates in IN and CS samples.
 
-## Code availability
+### Code availability
 
 ShortStack (Johnson et al., 2016) and StrucVis are both freely available at https://github.com/MikeAxtell/strucVis (Axtell, 2018; copy archived at https://github.com/elifesciences-publications/strucVis). GSTAr.pl is freely available at https://sites.psu.edu/axtell/software/misc-tools/. Muscle (Edgar, 2004) is freely available at https://www.drive5.com/muscle/. MEGA7 (Kumar et al., 2016) is freely available at https://www.megasoftware.net/. Blast-suite (Camacho et al., 2009) is freely available at https://blast.ncbi.nlm.nih.gov. Cutadapt (Martin, 2011) is freely available at https://cutadapt.readthedocs.io/en/stable/. Bamtools (Barnett et al., 2011) is freely available at https://bedtools.readthedocs.io/en/latest/index.html#. The R package DEseq2 (Love et al., 2014) is freely available at https://bioconductor.org/packages/release/bioc/html/DESeq2.html. HISAT2 (Kim et al., 2015) and bowtie (Langmead et al., 2009) are both freely available at https://ccb.jhu.edu/software. Ushuffle (Jiang et al., 2008) is freely available at https://github.com/guma44/ushuffle. Blast2go (Götz et al., 2008) is available with a limited free version at https://www.blast2go.com/.
 
-## Data availability
+### Data availability
 
 sRNA-seq data from this work are available at the NCBI SRA under BioProject PRJNA543296.

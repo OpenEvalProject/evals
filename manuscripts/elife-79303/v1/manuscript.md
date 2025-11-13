@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02704qw51 Wellcome Centre for Human Neuroimaging, Department of Imaging Neuroscience, UCL Queen Square Institute of Neurology, University College London London United Kingdom
-2. https://ror.org/01zgy1s35 Institute of Systems Neuroscience, University Medical Centre Hamburg-Eppendorf Hamburg Germany
+1. Wellcome Centre for Human Neuroimaging, Department of Imaging Neuroscience, UCL Queen Square Institute of Neurology, University College London London United Kingdom ([ROR:02704qw51](https://ror.org/02704qw51))
+2. Institute of Systems Neuroscience, University Medical Centre Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Echoing these findings from non-humans, estimates of conduction velocity in huma
 
 The conduction velocity of an axon is dependent upon the axon diameter, the presence and thickness of a myelin sheath, the distance between the nodes of Ranvier (periodic gaps in the myelin that facilitate action potential propagation), inter-nodal spacing, and electrical properties of the axonal and myelin membranes (Arancibia-Cárcamo et al., 2017; Drakesmith et al., 2019; Gasser and Grundfest, 1939; Hursh, 1939; Huxley and Stampfli, 1949; Rushton, 1951). A number of these features are not yet measurable in humans in vivo. However, seminal electrophysiological work has derived a relationship between axon morphology and conduction velocity using only axon diameter and myelin sheath thickness (Rushton, 1951). These two metrics are particularly key because a larger axon diameter results in less resistance to the action potential ion flow, resulting in faster conduction velocity. The presence of a myelin sheath around an axon is beneficial in two ways. First, the myelin sheath acts like an electrical insulating layer, reducing ion loss and preserving the action potential. Second, the presence of unmyelinated gaps in the myelin sheath (the nodes of Ranvier) enables a process called saltatory propagation to take place. As the majority of the axon is wrapped in myelin, the nodes of Ranvier are the only locations where action potentials can occur. This increases the strength of electrical signals because all the ions gather at these nodes instead of being dispersed along the length of the axon. Stronger action potentials are therefore sent along the myelinated portion of the axon at higher speeds, with this signal being boosted on arrival at the next node of Ranvier by another action potential, which helps to maintain a fast conduction velocity.
 
-The conduction velocity of an axon is, therefore, not determined only by the axon diameter, but also by the relationship between the axon diameter and the thickness of the surrounding myelin sheath, a measure known as the g-ratio (Chomiak and Hu, 2009; Rushton, 1951; Schmidt and Knösche, 2019). Specifically, Rushton, 1951 derived an equation: conduction velocity ∝d-ln(g) where d is the inner axon diameter, g is the g-ratio=d/D, and D is the outer fibre (axon plus myelin sheath) diameter. In other words, the g-ratio is computed as the ratio of the inner axon diameter relative to that of the axon plus the myelin sheath that encases it (Figure 1).
+The conduction velocity of an axon is, therefore, not determined only by the axon diameter, but also by the relationship between the axon diameter and the thickness of the surrounding myelin sheath, a measure known as the g-ratio (Chomiak and Hu, 2009; Rushton, 1951; Schmidt and Knösche, 2019). Specifically, Rushton, 1951 derived an equation: $conduction velocity ∝d\sqrt{-ln(g)}$ where d is the inner axon diameter, g is the g-ratio=d/D, and D is the outer fibre (axon plus myelin sheath) diameter. In other words, the g-ratio is computed as the ratio of the inner axon diameter relative to that of the axon plus the myelin sheath that encases it (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/79303/elife-79303-fig1-v1.jpg)
 
@@ -72,19 +72,19 @@ Finally, given that a previous functional MRI meta-analysis identified different
 
 ## Results
 
-## Autobiographical memory recall scores
+### Autobiographical memory recall scores
 
 We employed the widely-used Autobiographical Interview (Levine et al., 2002) to score autobiographical memory recall (see Materials and methods for full details). The main measure of autobiographical memory recall ability was the mean number of ‘internal’ details from the freely recalled autobiographical memories. Internal details are those that describe the specific past event in question, and are considered to reflect episodic information. Across the participants, the mean number of internal details provided per memory was 23.95 (SD = 7.25; range = 4.60–44.60).
 
 As a control measure, the mean number of “external” details was also calculated from the autobiographical memory descriptions. External details pertain to semantic information about the past event, and other non-event information. Across the participants, the mean number of external details provided per memory was 5.35 (SD = 3.20; range = 0.8–17.40).
 
-## Laboratory-based memory test performance
+### Laboratory-based memory test performance
 
 While our main interest was in autobiographical memory recall, eight commonly used laboratory-based memory tasks were also administered. Their inclusion allowed us to establish whether any associations identified with the main microstructure measure, MR g-ratio, were specific or not to the recollection of real-life autobiographical memories.
 
 The ability to recall a short narrative was examined using the immediate and delayed recall tests of the Logical Memory subtest of the Wechsler Memory Scale IV (Wechsler, 2009). Across participants, the mean immediate recall scaled score was 12.95 (SD = 2.09, range = 6–18) and the mean delayed recall scaled score was 12.58 (SD = 2.62, range = 6–19). Verbal list recall ability was assessed using the immediate and delayed recall of the Rey Auditory Verbal Learning Test (see Strauss et al., 2006). The mean immediate recall (aggregate) score was 58.82 (SD = 7.42, range = 33–73) and the mean delayed recall score was 12.92 (SD = 2.17, range = 6–15). Visuospatial recall ability was examined using the delayed recall of the Rey–Osterrieth Complex Figure (Rey, 1941), with a mean delayed recall score of 22.28 (SD = 5.71, range = 8.5–35). Recognition memory ability was tested using the Warrington Recognition Memory Tests for Words and Faces (Warrington, 1984). The mean recognition memory scaled score for words was 12.75 (SD = 2.06, range = 3–15) and for faces was 11.00 (SD = 3.33, range = 3–18). Finally, participants also completed the ‘Dead or Alive’ task which probes general knowledge about whether famous people have died or are still alive, providing a measure of semantic memory (Kapur et al., 1989). The mean accuracy performance on this test was 81.32% (SD = 8.44, range = 57.14%–97.26%).
 
-## No relationships between memory measures and fornix or uncinate fasciculus microstructure
+### No relationships between memory measures and fornix or uncinate fasciculus microstructure
 
 We first investigated the fornix and uncinate fasciculus. None of the biophysical measures from either tract were significantly associated with autobiographical memory recall ability. This was the case when using a corrected p<0.017 (see Materials and methods) or an uncorrected p<0.05 threshold. Full details of these results are provided in Appendix 1 (Appendix 1—figures 1 and 2; Appendix 1—tables 1–4), with the source data available in Supplementary file 1.
 
@@ -94,7 +94,7 @@ There were no significant associations between fornix or uncinate fasciculus MR 
 
 Of note, and for completeness, we also performed exploratory analyses in six additional white matter tracts: the anterior thalamic radiation, the dorsal cingulum bundle, the forceps minor, the inferior longitudinal fasciculus, the inferior occipitofrontal fasciculus and the superior longitudinal fasciculus. However, as with the fornix and the uncinate fasciculus, none of the metrics from any of these tracts were associated with autobiographical memory recall ability, even when using an uncorrected p<0.05 threshold (see Appendix 1—figures 3–8 and Appendix 1—tables 7–18 for full details).
 
-## The parahippocampal cingulum bundle
+### The parahippocampal cingulum bundle
 
 We found that variations in autobiographical memory recall ability were uniquely related to the microstructure of the parahippocampal cingulum bundle. This tract connects the hippocampus with the entorhinal, parahippocampal, retrosplenial and parietal cortices, and the anterior thalamus (Figure 4). Moreover, via other subdivisions of the cingulum bundle, it is indirectly connected with prefrontal regions including the medial prefrontal cortex. The parahippocampal cingulum bundle is, therefore, well positioned for information transfer between the key regions involved in autobiographical memory recall (Andrews-Hanna et al., 2014; Maguire, 2001; Spreng et al., 2009; Svoboda et al., 2006).
 
@@ -104,35 +104,83 @@ We found that variations in autobiographical memory recall ability were uniquely
 
 As with the other tracts (see Materials and methods), the parahippocampal cingulum bundle region of interest (ROI) was defined bilaterally using the Johns Hopkins probabilistic white matter tractography atlas (Hua et al., 2008). To reduce partial volume effects, we used a conservative minimum probability of 25%, and the tract ROI was refined for each participant to ensure the mask was limited to each person’s white matter. The mean number of voxels in the parahippocampal cingulum bundle ROI was 129.11 (SD = 25.68), and the variance in number of voxels across individuals was accounted for in our analyses. As before, a corrected statistical threshold of p<0.017 was applied (see Materials and methods). Table 1 shows the summary statistics for the microstructure measures, with the source data for the parahippocampal cingulum bundle available in Supplementary file 2.
 
-## Variation in MR g-ratio of the parahippocampal cingulum bundle was associated with autobiographical memory recall ability
+**Table 1.**
+ Means and standard deviations for the microstructure measures from the parahippocampal cingulum bundle.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Microstructure measure</th>
+      <th>Mean</th>
+      <th>Standard deviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR g-ratio</td>
+      <td>0.647</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>Magnetisation transfer saturation</td>
+      <td>0.959</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Neurite dispersion (ODI)</td>
+      <td>0.189</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>Neurite density</td>
+      <td>0.480</td>
+      <td>0.051</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. ODI = Orientation Dispersion Index._
+
+### Variation in MR g-ratio of the parahippocampal cingulum bundle was associated with autobiographical memory recall ability
 
 We first investigated whether the MR g-ratio of the parahippocampal cingulum bundle was associated with autobiographical memory recall ability, performing partial correlation analyses with age, gender, scanner and the number of voxels in the ROI included as covariates. A significant positive association was observed between the parahippocampal cingulum bundle MR g-ratio and the number of internal details (Figure 5A; r(211) = 0.18, p=0.008, 95% CI=0.05, 0.29). This relationship was specific to internal details, with no association evident for the external details control measure (Figure 5B; r(211) = –0.09, p=0.17, 95% CI=−0.21, 0.019). Direct comparison of the correlations confirmed there was a significantly larger correlation between the MR g-ratio and internal details than for external details (Figure 5C; mean r difference = 0.28 (95% CI=0.11, 0.45), z=3.21, p=0.0013). This suggests that variations in the conduction velocity of the parahippocampal cingulum bundle are associated with individual differences in autobiographical memory recall ability. The positive nature of the correlation highlights the potential relevance of inner axon diameter rather than myelin thickness in the context of g-ratio and conduction velocity (Figure 2A orange arrow, and Figure 2D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/79303/elife-79303-fig5-v1.jpg)
 
-**Figure 5.:** The relationship between parahippocampal cingulum bundle MR g-ratio and autobiographical memory recall ability (internal details), and the control measure (external details) are shown. (A) There was a significant positive correlation between the MR g-ratio and internal details (dashed lines indicate the confidence intervals). (B) There was no significant relationship between the MR g-ratio and external details. (C) Bar chart showing the partial correlation coefficients (with standard errors) between the MR g-ratio and internal and external details. There was a significant difference between the correlations when they were directly compared; ***p<0.001. Data points for this figure are provided in Figure 5—source data 1, n = 217 for all analyses.Figure 5—source data 1.Figure 5.
+**Figure 5.:** The relationship between parahippocampal cingulum bundle MR g-ratio and autobiographical memory recall ability (internal details), and the control measure (external details) are shown. (A) There was a significant positive correlation between the MR g-ratio and internal details (dashed lines indicate the confidence intervals). (B) There was no significant relationship between the MR g-ratio and external details. (C) Bar chart showing the partial correlation coefficients (with standard errors) between the MR g-ratio and internal and external details. There was a significant difference between the correlations when they were directly compared; ***p<0.001. Data points for this figure are provided in Figure 5—source data 1, n = 217 for all analyses.
 
 To further aid the interpretation of the relationship with MR g-ratio in terms of the underlying axonal microstructure, we also investigated whether the magnetisation transfer saturation values (assessing myelination) of the parahippocampal cingulum bundle were associated with autobiographical memory recall ability. We performed partial correlation analyses with the same covariates as before. Magnetisation transfer saturation values were not significantly related to either internal (r(211) = 0.00, p=1.0, 95% CI=−0.12, 0.12), or external (r(211) = 0.14, p=0.048, 95% CI=−0.06, 0.30) details.
 
 Overall, therefore, under the assumption that the significant relationship between the MR g-ratio and autobiographical memory recall ability is associated with faster conduction velocity, Rushton’s model of conduction velocity would indicate that better autobiographical memory recall is more likely to be related to parahippocampal cingulum bundle axons having larger inner axon diameters rather than thicker myelin sheaths (see Figure 2A orange arrow, and Figure 2D).
 
-## Variation in neurite dispersion within the parahippocampal cingulum bundle was associated with autobiographical memory recall
+### Variation in neurite dispersion within the parahippocampal cingulum bundle was associated with autobiographical memory recall
 
 In addition to the MR g-ratio, we also examined the relationship between autobiographical memory recall ability and two complementary biophysical measures, the neurite orientation dispersion index and neurite density maps estimated using the NODDI biophysical model (Zhang et al., 2012). Partial correlations revealed a significant negative correlation between the neurite orientation dispersion index (a small orientation dispersion index value indicates low dispersion) and internal details (Figure 6A; r(211) = –0.19, p=0.005, 95% CI=−0.32,–0.06). This was again specific to internal details with no significant relationship between the neurite orientation dispersion index and external details (Figure 6B; r(211) = 0.07, p=0.28, 95% CI=−0.05, 0.20). Direct comparison of the correlations revealed a significantly larger correlation between the neurite orientation dispersion index and internal details than for external details (Figure 6C; mean r difference = 0.27 (95% CI=0.44, 0.10), z=3.13, p=0.0017). Neurite density was not significantly related to either internal (r(211) = 0.04, p=0.60, 95% CI=−0.09, 0.16), or external (r(211) = 0.01, p=0.93, 95% CI=−0.12, 0.13) details. Therefore, in addition to a higher MR g-ratio, when neurites in the parahippocampal cingulum bundle were less dispersed and thus more coherently organised, this was associated with better autobiographical memory recall.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/79303/elife-79303-fig6-v1.jpg)
 
-**Figure 6.:** The relationship between parahippocampal cingulum bundle neurite dispersion (orientation dispersion index) and autobiographical memory recall ability (internal details), and the control measure (external details) are shown. (A) There was a significant negative correlation between neurite dispersion and internal details (dashed lines indicate the confidence intervals). (B) There was no significant relationship between neurite dispersion and external details. (C) Bar chart showing the partial correlation coefficients (with standard errors) between neurite dispersion and internal and external details. There was a significant difference between the correlations when they were directly compared; **p<0.01. Data points for this figure are provided in the Figure 6—source data 1, n = 217 for all analyses.Figure 6—source data 1.Figure 6.
+**Figure 6.:** The relationship between parahippocampal cingulum bundle neurite dispersion (orientation dispersion index) and autobiographical memory recall ability (internal details), and the control measure (external details) are shown. (A) There was a significant negative correlation between neurite dispersion and internal details (dashed lines indicate the confidence intervals). (B) There was no significant relationship between neurite dispersion and external details. (C) Bar chart showing the partial correlation coefficients (with standard errors) between neurite dispersion and internal and external details. There was a significant difference between the correlations when they were directly compared; **p<0.01. Data points for this figure are provided in the Figure 6—source data 1, n = 217 for all analyses.
 
 For completeness, we also examined a third measure from the NODDI biophysical model, the isotropic volume fraction. This models the space occupied by cerebrospinal fluid in a voxel, and therefore no relationship with autobiographical memory recall ability was expected, and none was found. Partial correlations showed that the isotropic volume fraction of the parahippocampal cingulum bundle (mean = 0.04, SD = 0.03) was not significantly related to either internal (r(211) = –0.03, p=0.71, 95% CI=−0.14, 0.10), or external (r(211) = 0.02, p=0.77, 95% CI=−0.11, 0.15) details. This confirms that it is the combination of these measures, in the form of the MR g-ratio, that is meaningful, rather than any single measure alone.
 
-## Standard DTI parameters of the parahippocampal cingulum bundle and autobiographical memory recall ability
+### Standard DTI parameters of the parahippocampal cingulum bundle and autobiographical memory recall ability
 
 Partial correlations using the same covariates as the previous analyses were also performed using the standard DTI parameters. As these metrics lack biological specificity (Jensen and Helpern, 2010; Jones et al., 2013a), and could not speak to our research questions, the results are summarised here, with full details in Appendix 1—table 19, Appendix 1—table 20 and Appendix 1—figure 9, Appendix 1—figure 10 and the source data are available in Supplementary file 2.
 
 Two significant relationships were identified between the standard DTI parameters and autobiographical memory recall ability. First, there was a positive correlation between fractional anisotropy and the number of internal details (Appendix 1—figure 9A; r(211) = 0.20, p=0.003, 95% CI=0.07, 0.32). Second, a positive correlation was evident between diffusivities parallel and the number of internal details (Appendix 1—figure 10A; r(211) = 0.19, p=0.005, 95% CI=0.06, 0.32). As with the microstructure metrics, these relationships were specific to internal details with no relationships identified with external details for either fractional anisotropy (r(211) = –0.06, p=0.39, 95% CI=−0.19, 0.07) or diffusivities parallel (r(211) = –0.048, p=0.49, 95% CI=−0.19, 0.10). No significant relationships were found between mean diffusivity, mean kurtosis or diffusivities perpendicular and either internal or external details.
 
-## No relationship between microstructure measures of the parahippocampal cingulum bundle and scores on laboratory-based memory tests
+### No relationship between microstructure measures of the parahippocampal cingulum bundle and scores on laboratory-based memory tests
 
 Finally, we tested for associations between the key microstructure measures and performance on the eight laboratory-based memory tasks. No relationships with the MR g-ratio or magnetisation transfer saturation values were evident for any task, even when using an uncorrected p < 0.05 threshold (Appendix 1—table 21, source data are available in Supplementary file 2). This suggests that the parahippocampal cingulum bundle MR g-ratio, and by inference conduction velocity, was specifically associated with recall of autobiographical memories from real life rather than performance on the more constrained laboratory-based memory tests.
 
@@ -170,17 +218,17 @@ In conclusion, white matter microstructure measures related to conduction veloci
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Two hundred and seventeen healthy people took part in the study, including 109 females and 108 males. The age range was restricted to 20–41 years old to limit the possible effects of aging (mean age = 29.0 years, SD = 5.60). Participants had English as their first language and reported no history of psychological, psychiatric or neurological conditions. Our aim was to assess people from the general population who would not be classed as having extreme expertise on classic hippocampal tasks, as this could affect hippocampal structure (Maguire et al., 2000; Woollett and Maguire, 2011). Consequently, people with vocations such as taxi driving (or those training to be taxi drivers), ship navigators, aeroplane pilots, or those with regular hobbies including orienteering, or taking part in memory sports and competitions, were excluded. Of the approximately 2000 people who contacted us, 23 were explicitly excluded on this basis. Participants were reimbursed £10 per hour for taking part which was paid at study completion. All participants gave written informed consent and the study was approved by the University College London Research Ethics Committee (project ID: 6743/001).
 
 A sample size of 217 was determined during study design to be robust to employing different statistical approaches when answering multiple questions of interest. Specifically, the sample allowed for sufficient power to identify medium effect sizes when conducting correlation analyses at alpha levels of 0.01 and when comparing correlations at alpha levels of 0.05 (Cohen, 1992). Samples of over 200 participants have also been suggested as sufficient for correlational neuroimaging research similar to that performed here (Cecchetti and Handjaras, 2022; DeYoung et al., 2022).
 
-## Procedure
+### Procedure
 
 Participants completed the study over multiple visits. Diffusion imaging and magnetisation transfer saturation scans were acquired on two separate days, and the Autobiographical Interview was conducted during a third visit. All participants completed all parts of the study.
 
-## The autobiographical interview
+### The autobiographical interview
 
 This widely-used test (Levine et al., 2002) was employed to measure autobiographical memory recall ability. Participants are asked to provide autobiographical memories from a specific time and place over four time periods – early childhood (up to age 11), teenage years (aged from 11 to 17), adulthood (from age 18 years to 12 months prior to the interview; two memories are requested), and the last year (a memory from the last 12 months); therefore, five memories in total are harvested. Recordings of the memory descriptions are transcribed for later scoring.
 
@@ -188,45 +236,49 @@ The main outcome measure of the Autobiographical Interview is the mean number of
 
 Double scoring was performed on 20% of the data. Inter-class correlation coefficients, with a two-way random effects model looking for absolute agreement were calculated for both internal and external details. This was performed both for individual memories and as an average of all five memories across each participant. For internal details the coefficients were 0.94 and 0.97, respectively, and for external details they were 0.84 and 0.87 respectively. For reference, a score of 0.8 or above is considered excellent agreement beyond chance.
 
-## Laboratory-based memory tests
+### Laboratory-based memory tests
 
 Eight laboratory-based memory tasks were also administered to participants. These are standard memory tests that are often used in neuropsychological settings. Tasks were performed and scored in line with their standardised and published protocols.
 
 The ability to recall a short narrative was examined using the immediate and delayed recall tests of the Logical Memory subtest of the Wechsler Memory Scale IV (Wechsler, 2009). Verbal list recall was assessed using the immediate and delayed recall tests of the Rey Auditory Verbal Learning Test (see Strauss et al., 2006). Visuospatial recall was examined using the delayed recall of the Rey–Osterrieth Complex Figure (Rey, 1941). Recognition memory was investigated using the Warrington Recognition Memory Tests for Words and Faces (Warrington, 1984). Finally, participants also underwent the ‘Dead or Alive’ task which probes general knowledge about whether famous individuals have died or are still alive, providing a measure of semantic memory (Kapur et al., 1989).
 
-## Diffusion MRI data acquisition
+### Diffusion MRI data acquisition
 
 Three MRI scanners were used to collect the neuroimaging data. All scanners were Siemens Magnetom TIM Trio systems with 32 channel head coils and were located at the same neuroimaging centre, running the same software. The sequences were loaded identically onto the individual scanners. Participant set-up and positioning followed the same protocol for each scanner.
 
 Diffusion-weighted images were collected using the multiband accelerated EPI pulse sequence developed by the Centre for Magnetic Resonance Research at the University of Minnesota (R012a-c, R013a on VB17, https://www.cmrr.umn.edu/multiband/; Feinberg et al., 2010; Xu et al., 2013). Acquisition parameters were: resolution = 1.7 mm isotropic; FOV = 220 mm × 220 mm × 138 mm; 60 directions with 6 interleaved b0 images, echo time (TE)=112ms, repetition time (TR)=4.84 s, with a multiband acceleration factor of 3. The sequence was performed 4 times – twice with b-values of 1000 and twice with b-values of 2500. The first acquisition of each set of b-values was performed with phase-encoding in the anterior to posterior direction (blip-up), the second in the posterior to anterior direction (blip-down). The total acquisition time was 22 min.
 
-## Magnetisation transfer saturation data acquisition
+### Magnetisation transfer saturation data acquisition
 
 The specific scanner used to collect a participant’s diffusion-weighted images was also used to obtain their magnetisation transfer saturation map.
 
 Whole brain structural maps of magnetisation transfer saturation, at an isotropic resolution of 800 μm, were derived from a multi-parameter mapping quantitative imaging protocol (Callaghan et al., 2015; Callaghan et al., 2019; Weiskopf et al., 2013). This protocol consisted of the acquisition of three multi-echo gradient-echo acquisitions with either proton density, T1 or magnetisation transfer weighting. Each acquisition had a TR of 25ms. Proton density weighting was achieved with an excitation flip angle of 60, which was increased to 210 to achieve T1 weighting. Magnetisation transfer weighting was achieved through the application of a Gaussian RF pulse 2 kHz off resonance with 4ms duration and a nominal flip angle of 2200. This acquisition had an excitation flip angle of 60. The field of view was 256 mm head-foot, 224 mm anterior-posterior, and 179 mm right-left. The multiple gradient echoes per contrast were acquired with alternating readout gradient polarity at eight equidistant echo times ranging from 2.34 to 18.44ms in steps of 2.30ms using a readout bandwidth of 488 Hz/pixel. Only six echoes were acquired for the magnetisation transfer weighted volume to facilitate the off-resonance pre-saturation pulse and subsequent spoiling gradient within the TR. To accelerate the data acquisition, partially parallel imaging using the GRAPPA algorithm was employed in each phase-encoded direction (anterior-posterior and right-left) with forty integrated reference lines and a speed up factor of two. Calibration data were also acquired at the outset of each session to correct for inhomogeneities in the RF transmit field (Lutti et al., 2010). The total acquisition time was 27 min.
 
-## Diffusion MRI pre-processing
+### Diffusion MRI pre-processing
 
 The diffusion MRI data were processed using the ACID toolbox (https://www.diffusiontools.com) within SPM12 (https://www.fil.ion.ucl.ac.uk/spm). The weighted average consecutive HySCO pipeline described in Clark et al., 2021b was followed, with the addition of multi-shell Position-Orientation Adaptive Smoothing (msPOAS; Becker et al., 2012) and Rician bias correction (Andrews-Hanna et al., 2014). In brief, the blip-up and blip-down data were first separately corrected for motion and eddy current artefacts. Next, msPOAS was performed, followed by correction for susceptibility-related distortion artefacts using the HySCO2 module (Macdonald and Ruthotto, 2018; Ruthotto et al., 2012). Tensor fitting (Mohammadi et al., 2013) was then implemented separately on each of the distortion corrected blip-up and blip-down datasets to estimate FA maps. HySCO2 was then repeated using the distortion corrected and brain-masked FA maps as input instead of b0 images; the second HySCO2 field map being consecutively applied to the ‘pre-corrected’ diffusion MRI data. Finally, Rician bias noise correction was employed on the distortion corrected data (André et al., 2014), before the data were combined using a weighted average to minimise information loss due to susceptibility distortion blurring induced by local spatial compression.
 
-## Magnetisation transfer saturation pre-processing
+### Magnetisation transfer saturation pre-processing
 
 The magnetisation transfer saturation data were processed for each participant using the hMRI toolbox (Tabelow et al., 2019) within SPM12. The default toolbox configuration settings were used, with the exception that correction for imperfect spoiling was additionally enabled (Corbin and Callaghan, 2021). The output magnetisation transfer saturation map quantified the degree of saturation of the steady state signal induced by the application of the off-resonance pre-pulse, having accounted for spatially varying T1 times and RF field inhomogeneity (Weiskopf et al., 2013).
 
 Each participant’s magnetisation transfer saturation map was segmented into white matter probability maps using the unified segmentation approach (Ashburner and Friston, 2005), but with no bias field correction (since the magnetisation transfer saturation map does not suffer from any bias field modulation) and using the tissue probability maps developed by Lorio et al., 2016.
 
-## Diffusion model fitting
+### Diffusion model fitting
 
-The MR g-ratio was calculated according to Ellerbrock and Mohammadi, 2018:gMR=1-MVFMRMVFMR+AVFMR
+The MR g-ratio was calculated according to Ellerbrock and Mohammadi, 2018:
 
-with MVFMR being the myelin-volume fraction estimated from the magnetisation transfer saturation map and AVFMR being the axonal-volume fraction. The AVFMR was estimated as AVFMR=1-MVFMR AWF according to Stikov et al., 2015, where AWF was obtained by combining the intra-cellular fraction (νicvf) and isotropic fraction (νiso) maps from NODDI (Zhang et al., 2012) as AWF=1- νiso νicvf . The magnetisation transfer saturation map was obtained from the hMRI toolbox as described above. For calibration of the magnetisation transfer saturation map to a myelin-volume fraction map (MVFMR= α MTsat), we used the g-ratio based calibration method as reported in Ellerbrock and Mohammadi, 2018 and Mohammadi and Callaghan, 2021, with α=0.1683.
+$$
+g_{MR}=\sqrt{1-\frac{MVF_{MR}}{MVF_{MR}+AVF_{MR}}}
+$$
+
+with $MVF_{MR}$ being the myelin-volume fraction estimated from the magnetisation transfer saturation map and $AVF_{MR}$ being the axonal-volume fraction. The $AVF_{MR}$ was estimated as $AVF_{MR}=1-MVF_{MR} AWF$ according to Stikov et al., 2015, where AWF was obtained by combining the intra-cellular fraction ($ν_{icvf}$) and isotropic fraction ($ν_{iso}$) maps from NODDI (Zhang et al., 2012) as $AWF=1- ν_{iso} ν_{icvf}$ . The magnetisation transfer saturation map was obtained from the hMRI toolbox as described above. For calibration of the magnetisation transfer saturation map to a myelin-volume fraction map $(MVF_{MR}= \alpha MT_{sat})$, we used the g-ratio based calibration method as reported in Ellerbrock and Mohammadi, 2018 and Mohammadi and Callaghan, 2021, with α=0.1683.
 
 The NODDI biophysical model (Zhang et al., 2012) was also used to obtain maps of the neurite orientation dispersion index and neurite density using the NODDI toolbox (http://mig.cs.ucl.ac.uk/index.php?n=Tutorial.NODDImatlab).
 
 Finally, for completeness, Axial-Symmetric DKI (Oeschger et al., 2021) was performed on the pre-processed diffusion data using the ACID toolbox to generate maps of the more commonly reported physical parameters of fractional anisotropy, mean diffusivity, mean kurtosis, diffusivities parallel and diffusivities perpendicular.
 
-## Microstructure data extraction
+### Microstructure data extraction
 
 Microstructure data extraction was performed in Montreal Neurological Institute (MNI) space. The diffusion and magnetisation transfer saturation maps were transformed from native to MNI space using the hMRI toolbox (Tabelow et al., 2019). This involved performing inter-subject registration using DARTEL (Ashburner, 2007) on the segmented magnetisation transfer saturation grey and white matter probability maps, with the resulting DARTEL template and deformations then used to normalize the diffusion and magnetisation transfer saturation maps to MNI space at 1.5 x 1.5 x 1.5mm.
 
@@ -234,7 +286,7 @@ Bilateral tract ROIs were defined using the Johns Hopkins probabilistic white ma
 
 We used the well-established ROI approach (e.g. Ellerbrock and Mohammadi, 2018; Memel et al., 2020) rather than, for example, a tract-based pipeline, in order to reduce the influence of seed and target region selection. This is because small changes to these selections can result in different tracts being identified. We also wanted to avoid the inclusion of excess grey matter in the tracts themselves, because it is not possible to estimate the MR g-ratio in grey matter tissue. In addition, an ROI approach reduced the potential for false positives in comparison to performing tract-based voxel-wise analyses.
 
-## Statistical analyses
+### Statistical analyses
 
 Analyses were performed in SPSS v27 unless otherwise stated. Data were summarised using means and standard deviations. There were no missing data, and no data needed to be removed from any analysis.
 

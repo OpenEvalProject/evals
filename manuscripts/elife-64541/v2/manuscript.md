@@ -31,7 +31,7 @@ Global assessments of intertidal biodiversity have been hindered by data scarcit
 
 ## Results
 
-## Latitudinal α-diversity gradients
+### Latitudinal α-diversity gradients
 
 We extracted data from 433 intertidal sites between 74.8°S and 80.5°N (Figure 1). ﻿Only 11 sites were located at latitudes above 70°, south and north combined (Supplementary file 1). A generalized additive mixed effect model (GAMM) indicated a non-linear relationship among α-diversity and latitude in the northern hemisphere where α-diversity peaked at mid-latitudes between 30 and 55°N (﻿GAMM, edf = 2.005, p=0.023). While no latitudinal scale environmental driver was significant (Table 1), α-diversity was similar in the tropical and Arctic regions (Figure 2). In the southern hemisphere, a generalized linear mixed effect model (GLMM) indicated that α-diversity was not related to any latitudinal scale environmental drivers (Table 1), and displayed a linear latitudinal pattern with a non-significant slight decline at the highest latitude (﻿Table 1; Figure 2).
 
@@ -43,17 +43,222 @@ We extracted data from 433 intertidal sites between 74.8°S and 80.5°N (Figure 
 
 **Figure 2.:** Data are split into southern and northern hemispheres. A linear regression line (southern hemisphere) and a best-fit locally weighted scatterplot smoother (northern hemisphere) was added with 95% confidence intervals to aid visual interpretation.
 
+**Table 1.**
+ Results of the mixed effect models for rocky intertidal α-diversity.The estimate, standard error (SE), z-value, and p-value are presented for each variable. The estimated degree of freedom (ed), and p-value are presented for the smoother in the northern hemisphere*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimates</th>
+      <th>SE</th>
+      <th>z-Value</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Northern hemisphere</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>3.086</td>
+      <td>0.283</td>
+      <td>10.92</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Chlorophyll a</td>
+      <td>−0.004</td>
+      <td>0.088</td>
+      <td>0.05</td>
+      <td>0.959</td>
+    </tr>
+    <tr>
+      <td>Phosphate</td>
+      <td>−0.163</td>
+      <td>0.288</td>
+      <td>−0.56</td>
+      <td>0.573</td>
+    </tr>
+    <tr>
+      <td>Sea temperature</td>
+      <td>0.024</td>
+      <td>0.015</td>
+      <td>1.64</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td colspan="5">Southern hemisphere</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>3.199</td>
+      <td>0.443</td>
+      <td>7.225</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Latitude</td>
+      <td>0.006</td>
+      <td>0.007</td>
+      <td>0.899</td>
+      <td>0.369</td>
+    </tr>
+    <tr>
+      <td>Chlorophyll a</td>
+      <td>−0.006</td>
+      <td>0.007</td>
+      <td>−0.829</td>
+      <td>0.407</td>
+    </tr>
+    <tr>
+      <td>Phosphate</td>
+      <td>−0.240</td>
+      <td>0.234</td>
+      <td>−1.029</td>
+      <td>0.303</td>
+    </tr>
+    <tr>
+      <td>Sea temperature</td>
+      <td>−0.010</td>
+      <td>0.016</td>
+      <td>−0.653</td>
+      <td>0.514</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Approximate significance of cubic spline regression smoother: Estimated df = 2.005, p-value=0.023._
+
 Local-scale models revealed significant relationships between α-diversity and the four local-scale variates ice scour, macroalgal canopy cover, salinity, and wave exposure (Table 2). We focused exclusively on canopy-forming algae because canopies provide living space and protection from predation and extreme temperatures, thereby increasing α-diversity and coverage of understory organisms. A positive relationship was identified between α-diversity and salinity and macroalgal cover (Figure 3a,c), with salinity having the strongest effect (R2 = 0.19, 95% CI = 4.82–8.52, Figure 4). Wave exposure and ice scour had negative effects on α-diversity (Figure 3b,d). The non-linear relationship between wave exposure and α-diversity showed that high levels of wave exposure were necessary to affect levels of α-diversity (Figure 3b). Fewer species inhabited ice-scoured shores compared to ice-free shores (95% CI = −0.57 – −0.23, Table 2), although the model only explained around 5% (R2 = 0.05) of the variation due to large differences in the number of species on both ice-scoured and ice-free shores (Figure 3c).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64541/elife-64541-fig3-v2.jpg)
 
-**Figure 3.:** a) salinity, (b) wave exposure, (c) ice scour, and (d) macroalgal canopy cover on α-diversity.﻿A best-fit locally weighted scatterplot smoother (LOESS) and 95% confidence intervals (panel b) and boxplots (panels c,d) has been added to aid visual interpretation.
+**Figure 3.:** ﻿A best-fit locally weighted scatterplot smoother (LOESS) and 95% confidence intervals (panel b) and boxplots (panels c,d) has been added to aid visual interpretation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64541/elife-64541-fig4-v2.jpg)
 
 **Figure 4.:** Significance of regression parameters is identified as bootstrapped 95% confidence intervals (error bars) not crossing zero (* indicates significance).
 
-## Latitudinal gradients in functional groups
+**Table 2.**
+ Local-scale model summaries with individual models indicated for each model.Estimated parameters, standard error (SE), bootstrapped 95% confidence intervals (95% CI), z-values, and p-values are reported for the relationship between α-diversity and environmental covariates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Salinity R2 = 0.19 (GLM)</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Estimates</th>
+      <th>SE</th>
+      <th>95% CI</th>
+      <th>z-Value</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>−3.201</td>
+      <td>0.891</td>
+      <td>−4.94; −1.47</td>
+      <td>−3.6</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Salinity</td>
+      <td>6.676</td>
+      <td>0.946</td>
+      <td>4.82; 8.52</td>
+      <td>7.06</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td colspan="6">Wave exposure (GAM) R2 = 0.12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimates</td>
+      <td>SE</td>
+      <td></td>
+      <td>z-Value</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>(Intercept)*</td>
+      <td>2.435</td>
+      <td>0.029</td>
+      <td></td>
+      <td>82.4</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ice scour (GLM) R2 = 0.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimates</td>
+      <td>SE</td>
+      <td>95% CI</td>
+      <td>z-Value</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>2.353</td>
+      <td>0.055</td>
+      <td>2.24; 2.46</td>
+      <td>42.7</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Ice scour</td>
+      <td>−0.401</td>
+      <td>0.087</td>
+      <td>−0.57; −0.23</td>
+      <td>−4.59</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td colspan="5">Macroalgal cover (GLM) R2 = 0.14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimates</td>
+      <td>SE</td>
+      <td>95% CI</td>
+      <td>z-Value</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>6.133</td>
+      <td>0.386</td>
+      <td>5.37; 6.89</td>
+      <td>15.9</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Cover</td>
+      <td>−2.35</td>
+      <td>0.547</td>
+      <td>−3.42; −1.28</td>
+      <td>−4.3</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Approximate significance of locally weighted scatterplot wave exposure smoother: Estimated df = 8.40, p-value<0.0001._
+
+### Latitudinal gradients in functional groups
 
 Four studied functional groups (algae, grazers, predators, and suspension feeders) displayed different latitudinal patterns (Figure 5). Predators, grazers, and suspension feeders declined with latitude in both hemispheres, coinciding with an increase in algal ﻿richness (Figure 5). In general, the relative distribution of the functional groups changed faster across latitudes in the southern hemisphere where rapid changes were observed around 20°S, while northern hemisphere communities were more consistent from 25 to 60°N (Figure 5). We were unable to describe functional groups at latitudes 15–25°N as no data were available (indicated as white bars in Figure 5).
 
@@ -65,7 +270,7 @@ In the southern hemisphere, the proportion of predators and grazers declined bey
 
 ## Discussion
 
-## Latitudinal α-diversity gradients
+### Latitudinal α-diversity gradients
 
 Latitudinal diversity gradients have been recognized for centuries, and the generality of this phenomenon has been investigated ever since. Recent state-of-the-art meta-analyses have provided support for latitudinal gradients in various marine and terrestrial ecosystems (Hillebrand, 2004; Kinlock et al., 2018), and latitudinal gradients in assemblage composition and biological interactions have also been identified (Qian and Ricklefs, 2007; Schemske et al., 2009; Harper and Peck, 2016). ﻿Although latitudinal diversity gradients are widely quoted as one of the basic laws in ecology (Lomolino, 2004), studies investigating these patterns on a global scale have largely overlooked intertidal ecosystems, despite their global range and importance as unique environments. An intertidal study in the north eastern Pacific Ocean has reported no latitudinal gradients in species richness (Blanchette et al., 2008). It has been suggested that the latitudinal diversity gradient is biogeographically structured (Roy et al., 1994), and since the above investigations were conducted in a temperate biogeographic region, diversity gradients might not occur. For example, while gastropod richness is relatively stable in the temperate region, a steep rise in richness occurs in the tropical region (Fenberg and Rivadeneira, 2019). However, the few published global-scale intertidal studies have revealed contradictory latitudinal patterns with richness of macroalgae (Konar et al., 2010) and small echinoderms peaking at higher latitudes, while large echinoderms peaking at low latitudes (Iken et al., 2010). Consequently, no latitudinal ﻿trend in intertidal diversity was demonstrated across 13 marine regions, as overall assemblage richness was similar everywhere despite strong species-specific patterns (Cruz-Motta et al., 2010). While the studies above benefited from analyzing data collected using a standardized protocol across latitudes, they were limited by only including a smaller number of sampling sites (~70 sites), which ﻿may have restricted their capacity to demonstrate large-scale trends, or to separate these from locally entrained patterns. Compared to these studies, we expanded the spatial resolution sixfold and present α-diversity data from 433 rocky shore sites across 155° of latitude, yet there was still no support for the latitudinal α-diversity gradient hypothesis. Latitudinal patterns were, however, markedly different between hemispheres, with a mid-latitude peak in the north and a non-significant unimodal trend in the south. We also demonstrated that different functional groups had different patterns (see later discussion).
 
@@ -73,7 +278,7 @@ Northern hemisphere α-diversity displayed a distinct mid-latitude peak, a patte
 
 Latitudinal diversity gradients have been identified in subtidal habitats (e.g., Roy et al., 2000; Edgar et al., 2017), and the contrasting patterns in biodiversity gradients between intertidal and subtidal ecosystems may originate from differences in the factors controlling α-diversity. ﻿Subtidal benthic habitats experience relatively homogenous environmental conditions across small-to-moderate spatial scales, and large-scale latitudinal diversity gradients are therefore less impacted by local factors and reflect larger-scale changes in environmental conditions. For instance, decreasing water temperatures profoundly affect physiological performance of marine ectotherms (e.g., growth, reproduction and activity, muscle performance) and special adaptations are required to live in cold waters (Peck, 2016; Peck, 2018). Latitudinal biodiversity gradients in ectotherms have, therefore, been attributed to changes in water temperatures in subtidal habitats (Roy et al., 2000; Edgar et al., 2017). Our data run contrary to this and indicate that organisms inhabiting the intertidal do not conform to classic LDG patterns, or any of the correlated environmental drivers (e.g., water temperature). Instead, we demonstrate significant effects of local-scale variation in salinity, wave exposure, ice scour, and biogenic habitats (i.e., macroalgal canopy cover), indicating that α-diversity is determined by small-scale processes through biological interactions and overlapping environmental gradients. Indeed, the importance of microhabitats; biological interactions; and local physical parameters on intertidal community assemblage, density, and diversity has been studied extensively on rocky intertidal shores (Paine, 1974; Archambault and Bourget, 1996; Coleman et al., 2006; Scrosati and Heaven, 2007; Piazzi et al., 2018; Sejr et al., 2021), and high spatial variable in intertidal community coverage and structure between closely adjacent areas are well known (Underwood and Chapman, 1996; Benedetti-Cecchi and Cinelli, 1997; Sejr et al., 2021). For example, algal canopies provide food, predation refugium, and a moist understory environment where species sensitive to desiccation stress can survive during low tides (Dayton, 1975), thus the understory community may be rich and distinct from the surrounding open shoreline (Benedetti-Cecchi et al., 2001; Bulleri et al., 2002; Watt and Scrosati, 2013). Canopies and surface topography also shelter organisms from extreme air temperatures, thereby increasing local coverage and diversity, and facilitating recolonization of the substrate by secondary species (Blanchard and Bourget, 1999; Watt and Scrosati, 2013; Ørberg et al., 2018). Moreover, wave exposure decreases diversity, especially at high latitude where floating ice is pushed on the shore by waves, amplifying the impacts of ice scour on exposed coastlines (Scrosati and Heaven, 2007). Even wave splashing and low water timing (i.e., low tides occurring in the tropics during the hottest time of the day are more harmful than low tides in the middle of the night [Helmuth et al., 2002]) have been shown to be important. All these factors interact and change in non-latitudinally related patterns, creating highly localized unique environmental conditions that, in combination, functionally override latitudinal stress or energy gradients. Thus, although the strength and direction of environmental stressors change across latitudes (i.e., from ice scour and extreme sub-zero temperature in polar regions to desiccation and acute heat stress in the tropics), the combined stress experienced by resident populations may roughly balance out across most latitudes and produce no clear gradient. In a recent study in South America, α-diversity generally did not conform to latitudinal diversity gradient predictions for either the Atlantic or Pacific coast (Cruz‐Motta et al., 2020), and we demonstrate similar patterns on a global scale. A conclusion from this research is that instead of focusing on large-scale drivers that implicitly assumed patterns and mechanisms are scale invariant, focus should be on how scales relevant to the organisms affect distribution patterns, as these factors outweigh latitudinal drivers of biodiversity. Notably, intertidal γ-diversity, which may in addition be controlled by regional drivers (e.g., upwelling, ocean currents) may display different latitudinal patterns than described here (Cruz‐Motta et al., 2020), but global γ-diversity patterns remain to be explored in depth. In polar regions where glaciers or a persistent ice foot covers the intertidal, no communities are present (Dayton, 1990; Peck, 2018), and where the intertidal is characterized by a seasonal ice-foot formation, colonization is only possible during spring and summer (Barnes, 1999), although in these areas it is possible that a few species might persist in highly saline brine pools in winter (Clarke and Beaumont, 2020). Any future reduction of glaciers, ice shelves, and ice foots in these regions will therefore permit organisms to colonize the intertidal zone (Węsławski et al., 2011; Kennicutt et al., 2014; Kennicutt et al., 2015; Kennicutt et al., 2019). This will result in increased biomass and α-diversity as is evident from the high Arctic (Weslawski et al., 2010; Kortsch et al., 2012; Thyrring et al., 2021). Given that most studies fail to consider the aspects discussed above, and that data available from tropical and polar regions are sparse or absent, the relative impacts of multiple stressors ranging from local scale to large scale cannot be explored in depth for coastal biodiversity. However, our data show that latitudinal patterns in intertidal biodiversity differ significantly from subtidal studies. They also highlight the need for re-evaluating conservation efforts and climate change predictions for this unique global ecosystem.
 
-## Latitudinal gradients in functional groups
+### Latitudinal gradients in functional groups
 
 In contrast to overall α-diversity, we identified strong latitudinal patterns in assemblage composition. The relative dominance of the four functional groups changed with latitude, with predators displaying the strongest gradient. In the northern hemisphere, the number of predators decline at latitudes above 60°N, supporting local-scale studies showing that although intertidal predators, such as crabs and starfish, live on mid-latitude intertidal shores (Paine, 1974; Jenkins et al., 2008), they are missing or rare on exposed Arctic shorelines (Thorson, 1934; Weslawski et al., 2010; Høgslund et al., 2014). A latitudinal reduction in the number of predators is consistent with the hypothesis of a general reduced level of predation in the polar regions (Aronson et al., 2007; Schemske et al., 2009; Peck, 2018), and similar latitudinal predation clines are found in subtidal benthic habitats (Taylor and Taylor, 1977; Harper and Peck, 2016). Several explanations have been proposed for this latitudinal decline, including the lack of durophagous predators in Antarctica, which has been attributed to the increased solubility of calcium carbonate (CaCO3) with latitude, increasing the cost of shell production (Vermeij, 1987; Watson et al., 2017). The power muscles generation is also strongly affected by temperature and has been proposed as another reason why durophages are absent in high polar regions (Aronson et al., 2007; Peck, 2018), but there is still no full consensus on the processes behind these patterns, and the mechanisms explaining predation gradients remain debated. Predators are important for organizing food webs and community composition. For example, the habitat-forming mussel Mytilus californianus expanded and excluded more than 25 species after removal of its main predator, the starfish Pisaster, in Western North America (Paine, 1974), and in the absence of predators, a tropical seagrass community can support 10 times more species than with predators present (Freestone et al., 2011). Thus, the low proportion of predators at high latitudes indicates that the importance of top-down biological interactions in assemblages decreases with latitude in marine ecosystems, and that species composition in polar regions may primarily be controlled by the physical environment (Barnes, 2002; Schemske et al., 2009; Høgslund et al., 2014; Peck, 2018). However, it should be noted that we only studied benthic intertidal predators collected during low tides. Therefore, we cannot estimate impacts of mobile predators (e.g., fish and birds) or the predation pressure from epibenthic species during submersion of the shoreline, which can be significant (Bertness et al., 1981; Ellis et al., 2007).
 
@@ -83,7 +288,7 @@ In this study, grazers occurred across all latitudes. Grazing can have powerful 
 
 ## Materials and methods
 
-## Data collection
+### Data collection
 
 In 2019 we searched the literature using Web of Science, Google Scholar, and Scopus for publications devoted to rocky intertidal local species richness, community composition, assemblage composition or α-diversity across all latitudes from the Antarctic to Arctic. Reports were considered valid when authors presented assemblage-wide data on ‘α-diversity’, ‘richness’, or ‘number of species’ in terms of species lists, tables, or graphs. Specifically, we excluded studies that focused exclusively on algae (e.g. Konar et al., 2010; Gbedemah, 2017), invertebrates (e.g. Hartnoll, 1976; Mille-Pagaza et al., 2002), or individual taxonomic groups. Full species lists were extracted whenever possible, and WebPlotDigitizer was used to extract graphic data (Drevon et al., 2017). Additional data were obtained from the Multi-Agency Rocky Intertidal Network (pacificrockyintertidal.org), the Alaska Ocean Observing System (aoos.org), and the South American Research Group on Coastal Ecosystems (SARCE) via the Ocean Biogeographic Information System (obis.org) website. The supplementary Appendix 1 – data sources provides a complete literature list and is available from the Zenodo repository (Thyrring and Peck, 2021).
 
@@ -91,7 +296,7 @@ In any of the sources used in this study to abstract data, the fraction of speci
 
 We validated taxonomic status by checking all the names in the World Register of Marine Species (WoRMS; http://www.marinespecies.org). Whenever species lists were available, we allocated species to functional groups (Figure 1). Species were allocated to one of four functional groups based on food acquisition; algae (all primary producers), grazers (including scrapers), predators (including scavengers), and suspension feeders. Finally, distribution of algae, grazers, predators, and suspension feeders were analyzed and presented as the relative percentage .
 
-## Statistical analysis
+### Statistical analysis
 
 The full dataset included latitude, longitude, country, and five latitudinal-scale oceanographic drivers (chlorophyll a, nitrate, phosphate, sea surface temperature, and silicate) available from NASA Earth Observations (NEO; https://neo.sci.gsfc.nasa.gov) and US National Ocean and Atmospheric Administration (NOAA) World Ocean Atlas (https://www.nodc.noaa.gov) as 1° latitudinal × 1° longitudinal cells. For each of the 433 α-diversity sites, we extracted values of chlorophyll a, nitrate, phosphate, sea surface temperature, and silicate from the 1° cell (latitudinal × longitude) in which the site was found. If data was unavailable from the specific cell, we used the value from the nearest available cell within the same latitudinal band (data was unavailable from the specific 1° cell for 5% of the sites).
 

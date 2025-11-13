@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Restoring damaged β-cells in diabetic patients by harnessing the plasticity of other pancreatic cells raises the questions of the efficiency of the process and of the functionality of the new Insulin -expressing cells. To overcome the weak regenerative capacity of mammals, we used regeneration-prone zebrafish to study β-cells arising following destruction. We show that most new in s ulin cells differ from the original β-cells as they coexpress Somatostatin and Insulin. These bihormonal cells are abundant, functional and able to normalize glycemia. Their formation in response to β-cell destruction is fast, efficient, and age-independent. Bihormonal cells are transcriptionally close to a subset of δ-cells that we identified in control islets and that are characterized by the expression of somatostatin 1.1 ( sst1.1 ) and by genes essential for glucose-induced Insulin secretion in β-cells such as pdx1 , s lc2a2 and gck . We observed in vivo the conversion of monohormonal sst1.1- expressing cells to sst1.1+ ins + bihormonal cells following β-cell destruction. Our findings support the conclusion that sst1.1 δ-cells possess a pro-β identity enabling them to contribute to the neogenesis of Insulin-producing cells during regeneration. This work unveils that abundant and functional bihormonal cells benefit to diabetes recovery in zebrafish.
+Restoring damaged β-cells in diabetic patients by harnessing the plasticity of other pancreatic cells raises the questions of the efficiency of the process and of the functionality of the new Insulin-expressing cells. To overcome the weak regenerative capacity of mammals, we used regeneration-prone zebrafish to study β-cells arising following destruction. We show that most new insulin cells differ from the original β-cells as they coexpress Somatostatin and Insulin. These bihormonal cells are abundant, functional and able to normalize glycemia. Their formation in response to β-cell destruction is fast, efficient, and age-independent. Bihormonal cells are transcriptionally close to a subset of δ-cells that we identified in control islets and that are characterized by the expression of somatostatin 1.1 (sst1.1) and by genes essential for glucose-induced Insulin secretion in β-cells such as pdx1, slc2a2 and gck. We observed in vivo the conversion of monohormonal sst1.1-expressing cells to sst1.1+ ins + bihormonal cells following β-cell destruction. Our findings support the conclusion that sst1.1 δ-cells possess a pro-β identity enabling them to contribute to the neogenesis of Insulin-producing cells during regeneration. This work unveils that abundant and functional bihormonal cells benefit to diabetes recovery in zebrafish.
 
 ## Introduction
 
@@ -42,29 +42,57 @@ Using the larval and adult zebrafish as regeneration models, we investigated the
 
 ## Results
 
-## Most regenerated β-cells in adult zebrafish coexpress Ins and Sst
+### Most regenerated β-cells in adult zebrafish coexpress Ins and Sst
 
 To characterize the new β-cells after regeneration, we used 6- to 10-month-old Tg(ins:NTR-P2A-mCherry) (Bergemann et al., 2018) adult fish to first ablate β-cells. Basal blood glucose was monitored to evaluate ablation (3 days post treatment, dpt) and regeneration (20 dpt). As expected, fasting basal blood glucose dramatically raised at three dpt compared to CTL fish which reflected efficient ablation (Figure 1A and Figure 1—source data 1). After 20 days, glycemia was impressively improved though still slightly above control values. A preliminary RNAseq experiment on mCherry+ cells isolated from the main islet of Tg(ins:NTR-P2A-mCherry) adult fish 2 months after ablation revealed strong expression of the sst1.1 gene in regenerated β-cells just below ins (Figure 1—source data 3), thereby suggesting that regenerated β-cells are bihormonal. As blood glucose is nearly normalized after 20 days, we characterized these cells at this time point. Immunofluorescence on regenerated 20 dpt islets showed many Ins + cells that also displayed Sst immunolabeling (Figure 1B). In contrast, control islets showed robust staining of the endogenous Ins and Sst hormones without appreciable overlap, thus demarcating monohormonal β- and δ-cells (Figure 1B). We next created a Tg(sst1.1:eGFP) reporter line driving GFP in sst1.1-expressing cells. This transgene was not active in β-cells of control islets (Figure 1—figure supplement 1). Similar to what was observed with the endogenous Sst and Ins proteins, regenerated 20 dpt islets of Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) fish contained many cells coexpressing GFP with mCherry, while GFP and mCherry-labeled distinct cells in control islets (Figure 1C). Strikingly, double positive cells could already be detected 3 days after ablation, although they displayed low levels of mCherry.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig1-v2.jpg)
+
+**Figure 1.:** (A) Blood glucose level (mg/ml) of adult Tg(ins:NTR-P2A-mCherry) control fish (CTL, 66 ± 15 mg/dl), 3 days (510 ± 126 mg/dl) and 20 days post treatment (dpt) (117 ± 29 mg/dl) with the NFP prodrug to trigger β-cell ablation. The huge rise of glycemia at three dpt confirms the efficiency of ablation. One-way ANOVA Kruskal-Wallis test (with Dunn’s multiple comparisons); Mean ± SD; **p < 0.005, ****p < 0.0001. (See Figure 1—source data 1). (B) Immunolabeling of β- and δ-cells with anti-INS (red) and anti-SST (green), respectively, on paraffin sections through the main islet of Tg(ins:NTR-P2A-mCherry) adult fish in control condition (CTL) and at 20 dpt. In CTL islet, no appreciable overlap between the two markers can be detected while broad colabeling is observed at 20 dpt and represented by many yellow cells (arrowheads). (C) Whole mount immunodetection of β- and sst1.1+ cells in the main islet of adult Tg(sst1.1:GFP);Tg(ins:NTR-P2A-mCherry) fish by labeling with anti-GFP marking sst1.1-expressing cells and anti-mCherry for β-cells. Both cell types show no or very few overlapping in CTL fish. At 3 and 20 dpt, many double GFP+ mCherry + cells are observed (yellow cells, arrowheads). Bright mCherry+ β-cell debris are detectable at 3 dpt (white asterisk). (D–G) Quantification of the GFP+, mCherry+ (β-cells) and double GFP+ mCherry + cells detected by FACS in the main islets of Tg(sst1.1:GFP);Tg(ins:NTR-P2A-mCherry) CTL fish and following β-cell ablation (3 and 20 dpt), based on fluorescence analysis shown in Figure 1—figure supplement 2. (D) Total islet cell number in CTL, 3 dpt, and 20 dpt islets. (E) CTL islets contain 3277 ± 1220 mCherry+ (GFP-) β-cells. At 3 dpt, ablated β-cells represent 105 ± 70 cells and were even more scarce at 20 dpt (14 cells). (F) Double GFP+ mCherry + bihormonal cells represent 135 ± 45 cells in CTL islets, 1411 ± 421 cells at 3 dpt and 1409 ± 655 cells at 20 dpt. (G) GFP+ (mCherry-) cells represent 2833 ± 615 cells in CTL islets. One-way ANOVA Kruskal-Wallis test (with Dunn’s multiple comparison); ns, not significant, *p < 0.05, **p < 0.005, ***p < 0.0005, ****p < 0.0001; Mean ± SD (See Figure 1—source data 2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Whole mount in situ hybridization on three dpf Tg(sst1.1:GFP) embryo using a sst1.1 antisense RNA probe (red) combined with immunodetection of the GFP protein (green) revealing co-localization between endogenous sst1.1 transcripts and GFP cells. (B) Whole mount immunofluorescence in the main islet of adult non-ablated (CTL) Tg(sst1.1:GFP); Tg(ins:NTR-P2A-mCherry) fish showing co-localization between GFP (green) and the endogenous Sst protein (red) and not with mCherry (gray).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** FACS plot showing GFP and mCherry fluorescence analysis by flow cytometry of dissociated main islets (3–4 pooled islets) isolated from Tg(sst1.1:GFP);Tg(ins:NTR-P2A-mCherry) control (CTL), 3 dpt and 20 dpt adult fish. Representative plots showing fluorescent cells along GFP and mCherry axes. The populations of interest are delimited with dashed lines.
 
 We next quantified ins+ β-cells, sst1.1+ cells and double ins + sst1.1+ cells by measuring the number of mCherry+, GFP+, and GFP+ mCherry + cells, respectively, in Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult fish. The main islet was obtained by dissection and the different cell populations were analyzed by FACS (Figure 1D–G, Figure 1—figure supplement 2 and Figure 1—source data 2). At 3 and 20 dpt, we observed a drastic loss of mCherry+ (GFP-) β-cells with a drop to 3.2% of the initial β-cell mass at 3 dpt (Figure 1E). In contrast, a large population of double GFP+ mCherry + cells appeared that represented 43% of the initial β-cell mass (Figure 1F). These cells still persisted at 20 dpt and they made up at this stage 98% of the ins-expressing cells. At 20 dpt, mCherry+ GFP- β-cells still constituted a very minor population. (Figure 1E). After ablation, the amount of GFP+ mCherry cells also decreased (Figure 1G).
 
 In conclusion, these results indicate that ins + sst1.1+ bihormonal cells rapidly appear in the main islet after β-cell ablation in adult fish and persist steadily for at least 20 days. They constitute the vast majority of the new ins-expressing cells following ablation.
 
-## Genesis of bihormonal cells also occurs during regeneration in larval stages and is independent of the ablation model
+### Genesis of bihormonal cells also occurs during regeneration in larval stages and is independent of the ablation model
 
 As in mouse the process of bihormonal cells (in that case Gcg+ Ins + ) formation after β-cell ablation is specific to adult stages (Thorel et al., 2010; Chera et al., 2014), we next asked whether Sst1.1+ Ins + bihormonal cells also appear in zebrafish larvae. We therefore performed the ablation in Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) at 3 days post fertilization (dpf) and assessed the expression of ins:mCherry and sst1.1:GFP. Like in adults, bihormonal cells were detected 3 days after ablation (3 dpt, 6 dpf) (Figure 2A–B). We confirmed by in situ hybridization detecting the endogenous mRNAs that these bihormonal cells express sst1.1 together with ins (Figure 2C). This experiment also revealed that they do not coexpress sst2 (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig2-v2.jpg)
+
+**Figure 2.:** (A) Whole mount immunodetection in six dpf Tg(sst1.1:GFP); Tg(ins:NTR-P2A-mCherry) larvae showing β-cells (mCherry, red), sst1.1-expressing cells (GFP, green) and double positive bihormonal cells (asterisks) in the main islet in control (CTL) and 3 days after NFP-mediated ablation (3 dpt). Representative confocal images (single optical planes). dpf: days post-fertilization. (B) Quantification of bihormonal cells co-labeled by mCherry and GFP based on confocal images of 6 dpf larvae. Unpaired two-tailed t-test (with Welch correction); ***p < 0.001; Mean ± SD. (C) Whole mount fluorescent in situ hybridization performed on 6 dpf Tg(ins:NTR-P2A-mCherry) larvae with an ins antisense RNA probe (green) combined with either a sst1.1 or a sst2 probe (red). NFP-mediated ablation was performed from 3 to 4 dpf. Representative confocal images of the main islet (single optical planes). (D–G) β-cell tracing with Tg(ins:CRE-ERT2); Tg(ubb:loxP-CFP-loxP-zsYellow); Tg(sst1.1:GFP); Tg(ins:NTR-P2A-mCherry) larvae. (D) Experimental design: CRE recombination was performed by treatment with 4-OHT treatment at six dpf to induce the expression of the lineage tracer zsYellow (gray) in β-cells (INS, red). β-cell ablation (NFP) was then performed at seven dpf and the lineage tracer was analysed in the main islet at 14 dpf (7 dpt). (E-E’) Confocal images showing immunodetection of GFP (green), zsYellow (gray), and INS (red) antibodies. After ablation, traced β-cells are evidenced by double zsYellow+ Ins + staining (gray arrowheads) and bihormonal cells by double Ins + GFP + staining (white asterisks). (E’) Close-up showing two bihormonal cells, one zsYellow+ (derived from a pre-existing β-cell) (yellow arrowhead) and one zsYellow- (asterisk). (F–H) Quantification (CTL, n = 6; NFP, n = 8) based on the confocal images. (F) In CTL non-ablated islets, ZsYellow marked efficiently the Ins+ β-cells (84 ± 19 zsYellow+ Ins + cells out of 89 ± 20 total Ins+ β-cells, representing 94% of the total β-cells). ZsYellow was not detected in sst1.1:GFP+ cells, showing a good specificity. (G) 7 days after ablation (NFP), 47.3 ± 8 Ins + cells were detected and 5.8 ± 4 of them (12%) expressed zsYellow. (H) 42 ± 7.5 Ins + cells are also GFP+ bihormonal and 10% of them (4 ± 3 cells) are labeled with zsYellow. Mean ± SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** β-cell ablation performed using the cytotoxic Diphteria Toxin chain A (DTA) inducible system in Tg(ins:loxP-mCherry-loxP-DTA); Tg(ins:CRE-ERT2). Seven dpf larvae were treated with 4-OHT to trigger the recombination of the loxP-mCherry-loxP cassette and allow DTA expression and β-cells death, and then analyzed 9 days after by immunofluorescence. Like in the NTR/prodrug system, DTA induces the formation of Ins + Sst + bihormonal cells.
 
 Then we questioned if the bihormonal cells can also be induced using another system of β-cell destruction. We chose the Diphteria Toxin chain alpha (DTA) suicide transgene which has previously been used to efficiently ablate β-cells (Ninov et al., 2013). Ablation was achieved in Tg(ins:lox-mCherry-lox-DTA); Tg(ins:CRE-ERT2) larvae by performing a 4-OHT treatment at 7 dpf and the larvae were then analyzed at 16 dpf (Figure 2—figure supplement 1). Similar to our observations with the NTR system, Ins and Sst immunofluorescence revealed many coexpressing cells.
 
 In conclusion, these data demonstrate that there is no specific competent stage for the formation of Ins + Sst1.1+ bihormonal cells in zebrafish. In addition, this process does not depend on the method of ablation.
 
-## Most bihormonal cells do not derive from pre-existing β-cells
+### Most bihormonal cells do not derive from pre-existing β-cells
 
 To explore the possibility that bihormonal cells derive from pre-existing β-cells spared by the ablation, β-cells were traced before ablation using Tg(ins:CRE-ERT2); Tg(ubb:loxP-CFP-loxP-zsYellow); Tg(sst1.1:GFP); Tg(ins:NTR-P2A-mCherry) fish. As bihormonal cells were also observed at six dpf, we used larvae to tackle their origin by CRE-mediated recombination (Hans et al., 2009; Mosimann et al., 2011). We treated the larvae with 4-OHT at six dpf to label the β-cells and performed the ablation the next day (Figure 2D). We found that, 7 days after ablation, only 10% of the bihormonal cells were positive for the zsYellow lineage tracer (Figure 2E–E’ , and H). To ensure that this low level was not due to an inefficient tracing, we checked non-ablated larvae and found that 94% of the β-cells were labeled with zsYellow (Figure 2F–G). In addition, the sst1.1:GFP+ cells were not labeled (Figure 2F). These data demonstrate good efficiency and specificity of the tracing. Based on these observations, we can conclude that some bihormonal cells originate from pre-existing β-cells but the majority arises from non-β origin(s).
 
-## ins+ sst1.1+ bihormonal cells share similarities with β- and δ-cells, and possess the basic machinery for glucose responsiveness
+### ins+ sst1.1+ bihormonal cells share similarities with β- and δ-cells, and possess the basic machinery for glucose responsiveness
 
 In order to characterize the ins + sst1.1+ bihormonal cells after regeneration, we analyzed their transcriptomic profile. To this end, double GFP+ mCherry + cells were isolated by FACS from the main islet of Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult fish at 20 dpt. Control β-cells (mCherry+ GFP-) were obtained from age-matched, non-ablated, transgenic fish. We compared their RNAseq profiles and identified 887 DE genes with a higher expression in bihormonal cells and 705 DE genes higher in β-cells (Padj <0.05 and above twofold differential expression) (Figure 3A–B and Figure 3—source data 1). In accordance with the weak mCherry fluorescence harbored by GFP+ mCherry + cells as compared to native β-cells, the expression of ins in bihormonal cells was fivefold below its typical level in β-cells (Figure 3C). Also, as expected, the δ-cell hormone sst1.1 was sharply overexpressed in bihormonal cells (209-fold) compared to its basal level in β-cells, and was even the top hormone just above ins (Figure 3C). The other pancreatic hormones known in zebrafish, sst1.2, sst2, gcga, gcgb, and ghrl, were detected at much weaker levels in both ins + populations (Figure 3C). Accordingly, Gcg protein was undetectable in bihormonal cells by immunofluorescence (Figure 3—figure supplement 1). Collectively, these data confirm that bihormonal cells coexpress high levels of two main hormones, ins and sst1.1, at both the mRNA and protein levels.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig3-v2.jpg)
+
+**Figure 3.:** (A) Heatmap representation of the transcriptomes of 20 dpt bihormonal (six replicates) and β-cells (seven replicates) (significant DE genes). (B) Volcano plot showing the distribution of genes in β-cells without ablation and bihormonal cells. The x-axis represents the log2 of fold change (FC) and the y-axis the log10 of adjusted P value (Padj) provided by DESeq. The red dots highlight the significantly DE genes (Padj <0.05). A full list of significant DE genes is provided in Figure 3—source data 1. (C) Expression values (mean normalized reads) as provided by DESeq of the main hormones and endocrine genes in β-cell and bihormonal cell transcriptomes. sst1.1 and ins are the two highest expressed hormones. Padj are calculated by DESeq. ns: no significant DE between the two conditions, 0.05< P* < 0.005, 0.005< P** < 0.0005, P***** < 0.000005. (D) Heatmap plot showing the direction and amplitude of changes in expression of the β-cell markers between normal β-cells and bihormonal cells (significant DEG only). The 62 β-cell markers are provided in Figure 3—source data 2. (E) Expression values (mean normalized reads) as provided by DESeq of selected β-cell markers and genes important for β-cell function in β-cells and bihormonal cells. Padj are calculated by DESeq. ns: no significant DE between the two conditions, 0.05<* < 0.005, 0.005<** < 0.0005, 0.00005<**** < 0.000005, ***** < 0.000005. (F) Enriched Gene Ontology (GO) terms. Top 10 or Padj (FDR) < 0.25 Biological Processes (BP) and KEGG pathways are shown. The plots represent the enrichment ratio of Biological Processes and KEGG pathways identified with WebGestalt (Liao et al., 2019) using the genes over- and underexpressed in bihormonal cells compared to β-cells obtained with a twofold differential expression and Padj <0.05. All overrepresented Biological Processes and Pathways (< FDR 0.25) are listed in Figure 3—source data 3 (bihormonal cells) and Figure 3—source data 4 (β-cells). (G) Over- and underexpression of selected significantly DE genes from the BP and KEGG pathways identified in β-cells and bihormonal cells (Fold Change, log2 scale).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Whole mount immunodetection of GFP (green), mCherry (red), and GCG (gray) adult Tg(sst1.1:GFP); Tg(ins:NTR-P2A-mCherry) main islets in CTL and 20 dpt conditions showing bihormonal (GFP+ mCherry + ) cells at 20 dpt and non-overlapping GCG staining (white arrowheads).
 
 To further characterize these bihormonal cells, we assessed the expression of transcription factors important for β-cell development and identity in zebrafish and mouse/human (see list in Figure 3—source data 5). We first checked the expression of the pan-endocrine genes neurod1, pax6b and isl1 and found similar expression (Figure 3C). We also examined the expression of pdx1, a transcription factor essential for ins expression in β-cells. pdx1 was equally expressed in both native β-cells and post-regeneration GFP+ mCherry + cells. We next evaluated the β-cell identity of bihormonal cells by interrogating the expression of zebrafish β-cell markers. We defined these markers as genes enriched in β-cells ( > 4 fold) versus the other main pancreatic cell types (α-, sst2 δ-cells, acinar and ductal cells) based on previous RNAseq data (Tarifeño-Saldivia et al., 2017; Figure 3—source data 2). This list of β-cell genes includes nkx6.2, a previously identified β-cell marker in zebrafish (Binot et al., 2010; Tarifeño-Saldivia et al., 2017) which is the equivalent of Nkx6.1 in mouse/human β-cells (Figure 3—source data 5). More than half of the 62 ‘β-cell genes’ were expressed at similar levels in both bona fide β-cells and post-regeneration bihormonal cells. In contrast, 27 β-cell genes showed either over- or underexpression (Figure 3D). In particular, 18 β-cell genes were underexpressed in bihormonal cells like, for example, nkx6.2 which was not expressed at all (Figure 3E). We also looked at markers of dedifferentiation and found that the zebrafish pancreatic progenitor markers nkx6.1, sox9b, and ascl1b, were barely expressed in bihormonal cells, like in control β-cells.
 
@@ -74,19 +102,27 @@ Gene Ontology (GO) analysis of the genes overexpressed in bihormonal cells compa
 
 Altogether, these data indicate that bihormonal cells possess the molecular bases of functional mature β-cells such as a glucose-responsiveness and hormone secretion machinery. However, although many β-cell genes are similarly expressed between bihormonal and β-cells, bihormonal cells display a divergent identity such as lack of the zebrafish β-cell marker nkx6.2 and strong expression of sst1.1.
 
-## Bihormonal cells constitute the main source of insulin in regenerated zebrafish and restore blood glucose homeostasis
+### Bihormonal cells constitute the main source of insulin in regenerated zebrafish and restore blood glucose homeostasis
 
 The basal glycemia of regenerated fish is nearly normalized after 20 days, strongly suggesting that bihormonal cells – that represent 98% of the Ins-producing cells – contribute to blood glucose control. To exclude the possibility that glycemia is regulated by a population of genuine monohormonal β-cells regenerated outside the main islet, we analyzed the pancreatic tail. Indeed, zebrafish possess smaller secondary islets scattered in the pancreatic tail in addition to the large main islet located in the head. Similar to the main islets, regenerated 20 dpt secondary islets harbored many bihormonal cells and very scarce monohormonal β-cells (Figure 4A–B and Figure 4—source data 1). Thus, bihormonal cells constitute the predominant source of Ins throughout the whole pancreas.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig4-v2.jpg)
 
-**Figure 4.:** (A) Whole mount immunofluorescence (GFP and mCherry) on the pancreas of Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult zebrafish showing secondary islets in the pancreatic tail. One representative CTL and two independent 20 dpt samples are shown. Coexpressing cells appear in yellow due to overlapping GFP and mCherry staining. Confocal optical section (Z-planes) and 3D projections (stacks) are shown. (B) Quantification of monohormonal mCherry+ β-cells and GFP+ mCherry + bihormonal cells detected by FACS in the tail of CTL fish and after 20 days regeneration (20 dpt). Mann-Whitney test. p** = 0.0079 in both graphs. Mean ± SD. (See also Figure 4—source data 1). (C) Intraperitoneal glucose tolerance test performed in adult zebrafish. Blood glucose was measured over time in control (non-ablated, DMSO) and NFP-treated (ablated) fish after intraperitoneal injection of 0.5 mg/µl of D-Glucose. 4≤ N ≤ 9 per time point for CTL and NFP. Two-way ANOVA test with Sidak’s multiple comparison test. Mean ± SEM; ns: not significant.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Whole mount immunofluorescence (GFP and mCherry) on the pancreas of Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult zebrafish showing secondary islets in the pancreatic tail. One representative CTL and two independent 20 dpt samples are shown. Coexpressing cells appear in yellow due to overlapping GFP and mCherry staining. Confocal optical section (Z-planes) and 3D projections (stacks) are shown. (B) Quantification of monohormonal mCherry+ β-cells and GFP+ mCherry + bihormonal cells detected by FACS in the tail of CTL fish and after 20 days regeneration (20 dpt). Mann-Whitney test. p** = 0.0079 in both graphs. Mean ± SD. (See also Figure 4—source data 1). (C) Intraperitoneal glucose tolerance test performed in adult zebrafish. Blood glucose was measured over time in control (non-ablated, DMSO) and NFP-treated (ablated) fish after intraperitoneal injection of 0.5 mg/µl of D-Glucose. 4≤ N ≤ 9 per time point for CTL and NFP. Two-way ANOVA test with Sidak’s multiple comparison test. Mean ± SEM; ns: not significant.
 
 To assess the functionality of adult bihormonal cells, we performed a glucose tolerance test and blood glucose levels were followed after an intraperitoneal injection of D-Glucose. Regenerated fish 20 days after β-cell ablation displayed completely normal glucose tolerance (Figure 4C and Figure 4—source data 2). Together, all these data support the conclusion that the bihormonal cells are responsible for the normalization of glycemia and glucose tolerance in regenerated zebrafish.
 
-## sst1.1 δ-cells are distinct from sst2 δ-cells and display similarities with β-cells
+### sst1.1 δ-cells are distinct from sst2 δ-cells and display similarities with β-cells
 
 Given the expression of sst1.1 in bihormonal cells, we sought to characterize the sst1.1-expressing cells in normal islets without ablation. Previous transcriptomic studies of pancreatic cells detected three Sst genes in normal adult pancreatic islets, sst1.1, sst1.2, and sst2 (Spanjaard et al., 2018; Tarifeño-Saldivia et al., 2017). However, so far, only the sst2 δ-cells, which also express sst1.2, have been fully characterized (Tarifeño-Saldivia et al., 2017). We thus isolated the sst1.1-expressing GFP+ cells from control non-ablated islets of Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult fish to determine their transcriptome. Close examination of these sst1.1:GFP+ cells by flow cytometry actually distinguished two subpopulations recognised by different levels of GFP fluorescence, GFPlow and GFPhigh (Figure 5—figure supplement 1A). The GFPhigh population represented 35% of all GFP cells. The presence of cells with high and low GFP were also observed in situ by immunofluorescence on fixed whole pancreas (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig5-v2.jpg)
+
+**Figure 5.:** (A) Whole mount immunodetection on t Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) main islets of GFP (green), mCherry (red) and Sst (gray) revealing two levels of GFP expression (green light and dark arrowheads) that parallel the expression level of Sst. These cells are mCherry negative. (B) PCA plot showing the separation between sst1.1:GFPhigh (n = 3), sst1.1:GFPlow (n = 3), bihormonal (n = 6) and β-cells (n = 7) based on their transcriptomic profile. 49% of the variance is explained in PC1. PCA analysis failed to separate bihormonal and sst1.1:GFPhigh cells while separated well β-cells from the sst1.1:GFPlow cells. The sst1.1:GFPhigh/bihormonal cluster located between β-cells and sst1.1:GFPlow cells shows that β-cells are more similar to sst1.1:GFPhigh/bihormonal cells. (C) Heatmap plot showing the clustering of the sst1.1:GFPhigh and sst1.1:GFPlow populations, the bihormonal cells, the β-cells of the present study and the previously published data for β-, α-, and sst2 δ-cells (n = 3) (Tarifeño-Saldivia et al., 2017). In addition to revealing the expected clustering between both RNAseq data from β-cells (Tarifeño-Saldivia et al., 2017) and this study, this plot also shows the clustering of the GFPlow cells together with sst2 δ-cells. (D) Volcano plot showing the distribution of genes expressed in GFPhigh and GFPlow populations. The x-axis represents the log2 of fold change (FC) and the y-axis the log10 of adjusted p value (Padj) provided by DESeq. The list of all DE genes is provided in Figure 5—source data 1. (E) Expression of the main pancreatic hormones in GFPhigh and GFPlow populations (mean normalized reads). Expression is expressed as normalized counts and Padj are calculated by DESeq. ns: no significant DE between the two conditions, 0.05<* < 0.005, 0.0005<*** < 0.00005. (F) Venn diagram showing the overlap between genes overexpressed in GFPlow cells (versus GFPhigh) and sst2 δ-cell markers previously identified, and between genes overexpressed in GFPhigh cells (versus GFPlow cells) and β-cell genes (Figure 5—source data 2). Representation factor and p value calculated by Fisher’s exact test. (G) Expression of selected β- and sst2 δ-cell genes in each replicate of GFPhigh and GFPlow cells. GFPhigh cells distinctly express high levels of sst1.1 and will be referred to as GFPhigh/sst1.1 δ-cells, and GFPlow to GFPlow/sst2 δ-cells. 0.05<* < 0.005, 0.005<** < 0.0005, 0.0005<*** < 0.00005, **** < 0.00001 (H) Confocal images showing immunodetection of Pdx1 (anti-Pdx1, red) and Sst (anti-SST, gray) on paraffin section through the main islet of a non-ablated adult fish showing double Pdx1+ Sst + cells (white arrowheads) and Pdx1- Sst+ cells (yellow arrowheads). Red asterisks highlight Pdx1 single positive cells β-cells. (I) Confocal images showing whole mount immunodetection of Ucn3 (red), GFP (green) and Ins (gray) in CTL and three dpt main islets from Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult fish. In CTL islets, strong Ucn3 labeling is detected in β-cells as well as in some sst1.1:GFP cells (white arrowheads). After β-cell ablation, Ucn3 is principally expressed in GFP+ cells that also harbor faint Ins staining. (J) Biological Processes (BP) and KEGG pathways overrepresented in GFPhigh/sst1.1 δ-cells (UP) compared to GFPlow cells (DOWN) (Padj<0.25). Gene Ontology (GO) terms were identified by WebGestalt (Liao et al., 2019) using the list of DE genes between GFPhigh/sst1.1 δ-cells and GFPlow/sst2 δ-cells obtained with at least twofold differential expression and Padj <0.05 provided by DESeq. The list of all BP and KEGG pathways below FDR 0.25 is given in Figure 5—source data 4, Figure 5—source data 5.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Fluorescence analysis by flow cytometry of GFP+ mCherry cells from Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) islets. Two populations, namely GFPhigh and GFPlow, can be identified based on their GFP intensity. (B) Heatmap representation of the transcriptomes of GFPhigh and GFPlow cells (three replicates each) (significant DE genes). (C) Whole mount in situ hybridization on three dpf Tg(sst1.1:GFP) embryo using a sst2 antisense RNA probe (red) combined with immunodetection of the GFP protein (green) revealing co-localization between endogenous sst2 transcripts (red) and GFPlow + (green) cells (red arrows). In contrast, GFPhigh cells do not present detectable transcripts of sst2.
 
 The transcriptomic profile of the two GFP populations was obtained (Figure 5—figure supplement 1B). Principal Component Analysis (PCA) unveiled that GFPhigh cells are very similar to bihormonal cells (Figure 5B). In addition, they are also more similar to β-cells than GFPlow cells. Clustering analysis of the two GFP populations, the bihormonal cells and the other endocrine cells (a, b, and sst2 δ-cells Tarifeño-Saldivia et al., 2017) also showed that the GFPhigh cells cluster together with bihormonal cells and apart from the GFPlow cells (Figure 5C). Indeed, GFPlow cells were closer to sst2 δ-cells than to the other endocrine subtypes. Comparison of the two GFP populations identified 975 and 1206 DE genes overexpressed in GFPhigh and GFPlow, respectively (FC >2, Padj <0.05) (Figure 5D and Figure 5—source data 1). sst1.1 was by far the predominant Sst gene expressed in GFPhigh cells (Figure 5E). On the opposite, sst2 was predominant in GFPlow cells though these cells also expressed sst1.2 and sst1.1 at lower levels. In addition, while both populations expressed the universal δ-cell marker hhex, other previously identified markers of zebrafish sst2 δ-cells such as cdx4, tbx2b, and map3k15 (Tarifeño-Saldivia et al., 2017) were specific to GFPlow cells (Figure 5F–G). Indeed, more than 75% of the sst2 δ-cell genes (enriched >4 fold based on previous data Tarifeño-Saldivia et al., 2017) were also enriched in GFPlow cells (Figure 5F and Figure 5—source data 2). Ectopic activity of the sst1.1:GFP transgene in the sst2 δ-cells was confirmed by ISH showing sst2 probe signal exclusively in the weakest GFP+ cells (Figure 5—figure supplement 1C). These data show that the GFPlow population contains sst2 δ-cells, while the GFPhigh population consists of a pure and distinct δ-cell population characterized by strong sst1.1 expression. These δ-cells will be named sst1.1 δ-cells hereafter.
 
@@ -96,11 +132,23 @@ Top GO terms overrepresented in GFPlow/sst2 δ-cells (Figure 5J and Figure 5—s
 
 Overall, these data unveil that sst1.1 δ-cells represent a distinct δ-cell population possessing basic features of β-cells and sensors to integrate Ins signaling, glucose metabolism and carry hormone secretory activity.
 
-## Monohormonal sst1.1-expressing cells transcriptionally activate the ins gene following β-cell ablation
+### Monohormonal sst1.1-expressing cells transcriptionally activate the ins gene following β-cell ablation
 
 The transcriptomic profile of sst1.1 δ-cells suggests that they represent a promising candidate as cellular origin of bihormonal cells. In line with a conversion of sst1.1 δ-cells to bihormonal cells, the number of monohormonal GFPhigh cells was reduced after ablation in adult fish compared to CTL (from 979 cells to 315 at 20 dpt) (Figure 6A, Figure 6—source data 1). To test the hypothesis of a direct conversion of sst1.1 δ-cells, we followed the appearance of bihormonal cells by in vivo time lapse imaging of the main islet in Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) larvae after ablation from 3 to 4 dpf. Figure 6B–B’ show mCherry fluorescence progressively appearing in monohormonal sst1.1:GFP+ cells presenting strong GFP fluorescence, most likely sst1.1 δ-cells. These results indicate the activation of the ins promoter of the ins:mCherry transgene in sst1.1:eGFP cells and suggest that at least some sst1.1 δ-cells directly convert into bihormonal cells immediately after ablation.
 
-## Bihormonal cells have a transcriptomic profile very similar to sst1.1 δ−cells but with distinct cell cycle signatures
+![Figure 6.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig6-v2.jpg)
+
+**Figure 6.:** (A) Quantification by flow cytometry of GFPhigh/sst1.1 δ-cells before ablation (CTL) and at 3 and 20 dpt showing depletion of sst1.1 δ-cells during regeneration. Cells were isolated from dissected main islets of adult Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry). Mean ± SD; Kruskal-Wallis test; ns: not significant, **p < 0.005 (see also Figure 6—source data 1). (B) In vivo time lapse of the main islet of a four dpf Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) larva following β-cell ablation from 3 to 4 dpf. 3D representation (B) and one z-plane (B’) of the same islet are shown. The arrowheads point at two GFP+ cells (green) that start to express ins:mCherry (red) fluorescence between t0 and t1 (visible in the same z-plane). The white arrowhead points to a strongly fluorescent sst1.1:GFPhigh cell. Images were acquired every 30 min starting from four dpf (96 hpf). (C) Volcano plot showing the significant DE genes over- or underexpressed in 20 dpt bihormonal cells versus CTL GFPhigh/sst1.1 δ-cells (FC >2 < , Padj <0.05). The full list of significant DE genes calculated by DESeq is provided in Figure 6—source data 2. (D) Expression in normalized counts of the sst1.1 and ins genes in CTL GFPhigh/sst1.1 δ-cells and bihormonal cells (bi). Padj are calculated by DESeq. ns: no significant DE between the two conditions, ***** < 0.000005. (E) Top significant KEGG pathways identified among the genes upregulated (in orange) and downregulated (in green) in bihormonal cells compared to CTL GFPhigh/sst1.1 δ-cells. The list of GO terms below FDR 0.25 is given in Figure 6—source data 3, Figure 6—source data 4. (F) Immunofluorescence of PCNA and mCherry on paraffin sections through the main islet of Tg(ins:NTR-P2A-mCherry) adult zebrafish, CTL and regenerated (20 dpt after NFP-mediated ablation), showing PCNA+ nuclei in mCherry+ cells in regenerated islets (confocal images, white arrowheads). (G) Expression of p53 target genes mdm2 and ccng1 mRNA (green) revealed by whole mount in situ hybridization on 6 dpf CTL and ablated Tg(ins:NTR-P2A-mCherry); Tg(sst1.1:GFP) larvae (main islet). Ablation was performed at 3 dpf. Immunodetection of GFP (in red) was revealed following in situ hybridization. White arrowheads point to sst1.1:GFP+ cells expressing mdm2 and ccng1 after ablation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunofluorescence of PCNA and Pdx1 on paraffin sections through the main islet of Tg(ins:NTR-P2A-mCherry) adult zebrafish in CTL, 3 dpt and 20 dpt conditions. Double positive PCNA+ Pdx1+ cells are indicated by white arrows (confocal images). Pdx1+ cells comprise β, sst1.1 δ and bihormonal cells. Left graph: Quantification of Pdx1+ cells per islet surface measured on several sections from four to five different islets. Note the decrease of the density of Pdx1+ nuclei at 3 and 20 dpt consistent with the loss of β-cells. p **** < 0.0001; Mean ± SD; One-way ANOVA Kruskal-Wallis test with Dunn’s multiple comparisons test. Right graph: Percentage of Pdx1+ PCNA + cells versus the total number of Pdx1 cells. CTL, 0.9% ± 0.7%; 3 dpt: 18.5% ± 6.8%; 20 dpt, 16.6% ± 9.5%. p *** < 0.001, **** < 0.0001; Mean ± SD; One-way ANOVA Kruskal-Wallis test with Dunn’s multiple comparisons test. (B) EdU incorporation in Tg(ins:NTR-P2A-mCherry); Tg(sst1.1:GFP) larvae. After ablation from 3 to 4 dpf, EdU was administered from 4 until 6 dpf (3 dpt). Monohormonal GFP+ cells and mCherry+ β-cells show basal EdU incorporation at this stage (CTL). After ablation (NFP), most monohormonal mCherry+ β-cells are EdU negative compared to CTL, leading to a reduced ratio of EdU + mCherry + cells versus total mCherry+ cells (20% in CTL to 7% in NFP). Like in adults, monohormonal GFP+ cells decreased in NFP-treated samples. They show variable EdU positivity among larvae (1–6 cells in CTL and 0–5 cells in NFP) and the average ratio of EdU + GFP + versus total GFP+ cells at CTL (16%) and NFP (23%) is not significantly different. Bihormonal cells are detected in the NFP condition (8.23 ± 1.8 cells) and the number of EdU + bihormonal cells ranges from 0 to 4 cells between larvae with an average proportion of 19%. Mean ± SD; ns: not significant; p** < 0.01, *** < 0.001; Mann-Whitney tests.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Bihormonal cell quantification in Tg(ins:NTR-P2A-mCherry); Tg(sst1.1:GFP) larvae exposed for 3 days to 3% D-glucose or mannitol as control, to 10 mM H2O2, or to a combination. mCherry+ GFP + were quantified. (B) β-cell ablation was performed in Tg(ins:NTR-P2A-mCherry); Tg(sst1.1:GFP) larvae from 3 to 4 dpf then the Insulin/PI3K signaling was inhibited by treatment with the PI3K inhibitor LY294002 from 4 to 6 dpf. mCherry+ GFP + were quantified. Mean ± SD; ns: not significant, p**** < 0.0001. Two-way ANOVA test with Tukey’s multiple comparison test.
+
+### Bihormonal cells have a transcriptomic profile very similar to sst1.1 δ−cells but with distinct cell cycle signatures
 
 As the PCA and clustering analyses shown Figure 5B–C revealed that bihormonal and monohormonal GFPhigh/sst1.1 δ-cells are transcriptionally similar, we next directly performed a pairwise comparison of their transcriptome. This analysis revealed a few DE genes, with 293 over- and 180 underexpressed genes in bihormonal cells versus sst1.1 δ-cells (FC twofold, Padj <0.05) (Figure 6C and Figure 6—source data 2), indicating that the identity of bihormonal cells is very close to sst1.1 δ-cells. The ins gene was the top overexpressed gene in bihormonal cells (54-fold) (Figure 6D). Among the 293 overexpressed genes in bihormonal cells, 9 were β-cell markers such as ins and fstl1a and, among the 180 underexpressed genes, 8 were sst1.1 δ-cell markers. Both sst1.1 and hhex were equally expressed, further underscoring that bihormonal cells and sst1.1 δ-cells have a close identity.
 
@@ -112,11 +160,19 @@ Given the activation of the p53 pathway following β-cell ablation, and as p53 i
 
 Together, these results demonstrate that bihormonal cells in regenerating islets express genes involved in cell cycle progression and checkpoints. In line with these findings, our data also show that bihormonal cells and possibly sst1.1 δ-cells engage in proliferation in response to the ablation of β-cells.
 
-## Bihormonal cells also arise from pancreatic ducts
+### Bihormonal cells also arise from pancreatic ducts
 
 In zebrafish, the secondary islets originate from pancreatic duct-associated progenitors in a process initiated during normal larval development (Parsons et al., 2009; Wang et al., 2011). Ducts also contribute to β-cell regeneration in the adult zebrafish, providing new β-cells to the main and secondary islets (Delaspre et al., 2015; Ghaye et al., 2015). The striking observation that the vast majority of new ins-expressing cells are bihormonal in the entire pancreas raises the hypothesis that duct-derived Ins + cells also express Sst1.1. To explore this possibility, we used larvae, a well-established model to study β-cell regeneration from the ducts (Ninov et al., 2013). In this model, destruction of β-cells not only induces their regeneration in the main islet but also activates duct-associated progenitors to produce more β-cells. We first determined the time course of duct-derived β and sst1.1 δ-cell formation during normal development and established that they start to differentiate between 7 and 10 dpf (Figure 7—figure supplement 1). Next, we used the Tg(nkx6.1:eGFP); Tg(ins:NTR-P2A-mCherry) line, where nkx6.1 is a marker of pancreatic ducts and of duct-associated progenitors (Ghaye et al., 2015), to perform the ablation of β-cells at 3 dpf, that is before the normal differentiation of β and sst1.1 δ-cells in the tail. Thus, potential Ins + Sst1.1+ bihormonal cells appearing in the tail after ablation are expected to originate from the ducts and not from secondary β or sst1.1 δ-cells. At 17 dpf, mCherry and Sst immunodetection was analyzed (Figure 7A–B). Double positive bihormonal cells were found in the ductal nkx6.1:GFP+ domain in the tail of regenerating larvae while they were almost absent in CTL ducts (Figure 7B–B’–C and Figure 7—source data 1). These findings support that duct cells give rise to bihormonal cells during regeneration and that they contribute to the overall bihormonal cell mass.
 
-## Bihormonal cells persist long after β-cell ablation
+![Figure 7.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig7-v2.jpg)
+
+**Figure 7.:** (A–B) Whole mount immunodetection of GFP that highlights the ducts (green), mCherry (red) for β-cells and Sst (gray) on the entire pancreas of Tg(nkx6.1:eGFP); Tg(ins:NTR-P2A-mCherry) larvae at 17 dpf. (A) CTL larvae showing the main islet in the head and a few monohormonal endocrine cells (mCherry+ or Sst+) in the ductal GFP+ domain in the tail. The pancreatic tail is delineated by white dashed lines. (B) After treatment with NFP from 3 to 4 dpf, regenerating larvae display scattered bihormonal cells (red and gray) in the tail along the ducts. Stacks represent 3D projections of confocal images of the whole pancreas. (B’) Close-ups of two individual bihormonal cells in the tail (z-planes showing one unique optical section). (C) Quantification of Sst + mCherry + bihormonal cells based on confocal images. Mann-Whitney test, ****p < 0.0001. (See also Figure 7—source data 1).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67576/elife-67576-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Illustrative whole mount immunodetection on the whole pancreas of non-ablated (CTL) Tgnkx6.1:eGFP; Tg(ins:NTR-P2A-mCherry) larvae labeled with GFP to identify the pancreatic ductal domain (dotted lines), mCherry (red) and Sst (gray). Monohormonal mCherry+ and Sst + cells in the ducts were quantified from 7 to 17 dpf based on the confocal images.
+
+### Bihormonal cells persist long after β-cell ablation
 
 Finally, we questioned the persistence of bihormonal cells long after ablation and analyzed the main islet from Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult fish 4 months after ablation. Surprisingly, most Ins + cells still coexpressed GFP as well as high levels of Ucn3 at this stage (Figure 8A), similarly to 20 dpt bihormonal cells. Bihormonal cells still constituted the vast majority of ins-expressing cells in the main islet compared to monohormonal β-cells (Figure 8B–D). This also suggests that they do not represent a transient intermediary population that would ultimately resolve into ins-only β-cells.
 
@@ -138,64 +194,368 @@ Normal glycemia is nearly recovered after 20 days and regenerated animals displa
 
 ## Materials and methods
 
-## Zebrafish husbandry and generation of the Tg(sst1.1:eGFP)ulg054 zebrafish line
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>TgBAC(nkx6.1:eGFP)ulg004</td>
+      <td>PMID:26329351</td>
+      <td>ZFIN: ZDB-ALT-160205–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(ins:NTR-P2A-mCherry)ulg034</td>
+      <td>PMID:29663654</td>
+      <td>ZFIN: ZDB-ALT-171122–9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(sst1.1:eGFP)ulg054</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Zebrafish husbandry and generation of the Tg(sst1.1:eGFP)ulg054 zebrafish line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>GFP-1020</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Insulin (guinea pig polyclonal)</td>
+      <td>Dako</td>
+      <td>A0564</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mCherry/dsRed (Living Colors Polyclonal)</td>
+      <td>Clontech</td>
+      <td>632,496</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pan-RCFP (Living Colors Polyclonal)</td>
+      <td>Clontech</td>
+      <td>632,475</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Somatostatin (rat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>MA5-16987</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Somatostatin (rabbit polyclonal)</td>
+      <td>Dako</td>
+      <td>A0566</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Glucagon (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>G2654</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Urocortin 3 (rabbit polyclonal)</td>
+      <td>Phoenix Pharmaceuticals</td>
+      <td>H-019–29</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pdx1 (guinea pig polyclonal)</td>
+      <td>From Chris Wright</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PCNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8825</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rat IgG (H + L) Cross-Adsorbed, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A11006</td>
+      <td>(1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Chicken IgY (H + L), Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A-11039</td>
+      <td>(1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Chicken IgY (H + L), Alexa Fluor 568</td>
+      <td>Invitrogen</td>
+      <td>A-11041</td>
+      <td>(1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A-11001</td>
+      <td>(1:750)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3E-CREERT2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p5E-MCS</td>
+      <td>Tol2kit</td>
+      <td>228</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3E-eGFP</td>
+      <td>Tol2kit</td>
+      <td>366</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDestTol2p2A</td>
+      <td>Tol2kit</td>
+      <td>394</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONRP2R-P3</td>
+      <td></td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>O99</td>
+      <td>This article</td>
+      <td>PCR primer</td>
+      <td>GGGGACAGCTTTCTTGTACAAAGTGG CTGCTAACCATGTTCATGCCTTC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Tg(ubb:loxP-CFP-loxP-zsYellow)</td>
+      <td>PMID:21623370</td>
+      <td>ZDB-TGCONSTRCT-111115–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>O100</td>
+      <td>This article</td>
+      <td>PCR primer</td>
+      <td>GGGGACAACTTTGTATAATAAAGTTGTCAAGCTGTGGCAGGGAAACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM217</td>
+      <td>This article</td>
+      <td>PCR primer</td>
+      <td>ttttattaaagtgtttatttggtctcagag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IM256</td>
+      <td>This article</td>
+      <td>PCR primer</td>
+      <td>AAGAGCACTTCAGATGTCTTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>O097</td>
+      <td>This article</td>
+      <td>PCR primer</td>
+      <td>GTATCTATAGTTGAACATGAAAGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>O098</td>
+      <td>This article</td>
+      <td>PCR primer</td>
+      <td>GGTCACACTGACACAAACAC ACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pCR8/GW/TOPO</td>
+      <td>Invitrogen</td>
+      <td>K250020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase II Enzyme mix</td>
+      <td>Invitrogen</td>
+      <td>11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway BP Clonase II Enzyme mix</td>
+      <td>Invitrogen</td>
+      <td>11789020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Library kit</td>
+      <td>Illumina</td>
+      <td>FC-131–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 647 dye</td>
+      <td>Invitrogen</td>
+      <td>C10340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>H7904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nifurpirinol</td>
+      <td>Sigma-Aldrich</td>
+      <td>32,439</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowing Software 2</td>
+      <td>https://bioscience.fi/services/cell-imaging/flowing-software/</td>
+      <td>RRID:SCR_015781</td>
+      <td>Version 2.5.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane(http://www.bitplane.com/imaris/imaris)</td>
+      <td>RRID:SCR_007370</td>
+      <td>Version 9.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>DESeq2(https://bioconductor.org/packages/release/bioc/html/DESeq2.html)</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WebGestalt</td>
+      <td>WebGestalt(http://www.webgestalt.org/)</td>
+      <td>RRID:SCR_006786</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry and generation of the Tg(sst1.1:eGFP)ulg054 zebrafish line
 
 Zebrafish wild-type AB were used in all the experiments. TgBAC(nkx6.1:eGFP)ulg004 (Ghaye et al., 2015) and Tg(ins:NTR-P2A-mCherry)ulg034 (Bergemann et al., 2018) were used. Zebrafish were raised in standard conditions at 28 °C. All experiments were carried out in compliance with the European Union and Belgian law and with the approval of the ULiège Ethical Committee for experiments with laboratory animals (approval numbers 14–1662, 16–1872; 19–2083, 21–2353).
 
 To generate the Tg(sst1.1:eGFP)ulg054 zebrafish line, the sst1.1:eGFP transgene has been generated by cloning a 770 pb PCR fragment containing the sst1.1 regulatory regions just upstream the ATG of the sst1.1 ORF (ENSDARG00000040799.4) amplified with primers IM217 and IM256 into the Gateway vector pCR8/GW/TOPO. The promoter was assembled by LR recombination with p5E-MCS and p3E-eGFP into pDestTol2p2A from the Tol2kit (Kwan et al., 2007). Tg(sst1.1:eGFP)ulg054 fish have been generated using the Tol2 mediated transgenesis (Kawakami, 2007). Adult Tg(sst1.1:eGFP)ulg054 fish (abbreviated Tg(sst1.1:eGFP)) were crossed with Tg(ins:NTR-P2A-mCherry)ulg034 to generate a double transgenic line. The insbglob:loxP-mCherry-nls-loxP-DTA construct was created by cloning a loxP-mCherry-nls loxP cassette downstream of the ins promoter beta-globin intron (Ninov et al., 2013). Subsequently, a DTA gene was cloned downstream of the last loxP site via ligation independent cloning (InFusion, Clontech). The Tg(ins.bglob:loxP-NLS-mCherry-loxP-DTA)bns525 line (abbreviated Tg(ins:lox-mCherry-lox-DTA)) was generated using the Tol2 system (Kawakami, 2007). The Tg(ins:CRE-ERT2) has been generated by LR recombination combining p5E-MCS (Kwan et al., 2007), pME-ins and p3E-CREERT2 vectors into pDestTol2p2A from the Tol2kit. pME-ins was obtained by cloning into the pCR8/GW/TOPO a PCR fragment of 897 pb using the primers O097 et O098 and which contains 744 bp of the insulin promoter, the exon 1 (47 bp), the intron 1 (99 bp) and the 7 bp of exon two just upstream of the ATG. p3E-CREERT2 was obtained by BP cloning into the pDONRP2R-P3 the 2200 bp PCR fragment using the primers O99 and O100 and as template the pCREERT2 kindly received from P. Chambon (Feil et al., 1997).
 
-## β-Cell ablation
+### β-Cell ablation
 
 Nifurpirinol (NFP) (32439, Sigma-Aldrich) stock solution was dissolved at 2.5 mM in DMSO. 4-Hydroxytamoxifen (4-OHT, H7904, Sigma-Aldrich) was dissolved in DMSO as a concentrated solution of 10 mM and kept as single-use aliquots at –80 °C. β-cell ablation in Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) larvae was induced by treatment with 4 µM NFP in E3 egg water. Adult fish were treated in fish water with 2.5 µM NFP. Control treatments consisted of E3 containing 0.16% DMSO. Larvae and adults were treated for 18 hr in the dark.
 
 To induce β-cell ablation with Tg(ins:lox-mCherry-lox-DTA); Tg(ins:CRE-ERT2) line, larvae were treated at 7 dpf with 5 µM 4-OHT at in the dark during 2 × 2 hr with replacement with fresh 4-OHT. Larvae were then washed several times with E3 egg water to eliminate 4-OHT and allowed to regenerate.
 
-## β-Cell tracing in larvae
+### β-Cell tracing in larvae
 
 β-cell labeling was performed in Tg(ins:CRE-ERT2); Tg(ubb:loxP-CFP-loxP-zsYellow); Tg(sst1.1:GFP); Tg(ins:NTR-P2A-mCherry) larvae at 6 dpf by 2 × 2 hr 5 µM 4-OHT before several washes in E3 egg water. At 7 dpf, β-cells were ablated with NFP and larvae were allowed to regenerate until 14 dpf before fixation.
 
-## Intraperitoneal glucose tolerance test and blood glucose measurements
+### Intraperitoneal glucose tolerance test and blood glucose measurements
 
 Adult fish were fasted for 24 hr then euthanized with tricaine and the glycemia was immediately measured using the Accu-Chek Aviva glucometer (Roche Diagnostics) with blood collected at the tail.
 
 D-Glucose was dissolved in PBS at 0.5 mg/µl. After anesthesia, adult fish were injected intraperitoneally at 1 mg/g fish weight with tricaïne as described in Eames et al., 2010.
 
-## 5‐Ethynyl‐2′‐deoxyuridine (EdU) incorporation assay
+### 5‐Ethynyl‐2′‐deoxyuridine (EdU) incorporation assay
 
 Zebrafish larvae were incubated in 4 mM EdU dissolved in fish E3 water for 2 days, with replacement of the solution after 24 hr, the were euthanized in tricaine and fixed in 4% PFA. EdU was detected according to the protocol of Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 647 (ThermoFisher C10340) and processed for whole mount immunodetection.
 
-## Immunodetection of paraffin Sections
+### Immunodetection of paraffin Sections
 
 Samples were fixed and processed for immunofluorescence as previously described (Ghaye et al., 2015).
 
-## Whole-mount immunodetection
+### Whole-mount immunodetection
 
 Larvae were euthanized in tricaine and fixed in 4% PFA at 4 °C for 24 hr before IHC. After depigmentation with 3% H2O2/1% KOH during 15 min, larvae were permeabilized 30 min in PBS/0.5% Triton X-100 and incubated for 2 hr in blocking buffer (4% goat serum/1% BSA/PBS/0.1% Triton X-100). Primary and secondary antibodies were incubated at 4 °C overnight. Adult fish (6–10 months) were euthanized and fixed for 48 hr. Digestive tracts were dissected, dehydrated and stored in 100% methanol at –20 °C. Before IHC, the samples were permeabilized in methanol at room temperature for 30 min, placed 1 hr at –80 °C then back at room temperature. After rehydration in PBS/0.05% Triton X-100, depigmentation was performed for 15 min followed by incubation in blocking buffer containing 4% goat serum /1% BSA/PBS/0.01% Triton X-100. The primary antibodies were incubated for 48 hr on adult samples and overnight on larvae, followed by overnight incubation with the secondary antibodies overnight at 4 °C. Primary antibodies: Anti-Insulin (guinea pig, 1:500, Dako A0564), Living Colors Polyclonal anti-mCherry/dsRed (rabbit, 1:500, Clontech 632496), Living Colors Polyclonal anti-Pan-RCFP (rabbit, 1:500, Clontech 632475), anti-GFP (chicken, 1:1000, Aves lab GFP-1020), anti-Somatostatin (rat, 1:300, Invitrogen MA5-16987), anti-Somatostatin (rabbit, 1:300, Dako, A0566), anti-Glucagon (mouse, 1:300, Sigma G2654), anti-Urocortin 3 (rabbit, 1:300, Phoenix Pharmaceuticals H-019–29), anti-Pdx1 (guinea pig, 1:200, kind gift from Chris Wright, Vanderbilt University), anti-PCNA (clone PC10 Sigma P8825). Secondary antibodies: Alexa Fluor-488,–568, –633 (goat, 1:750, Molecular Probes).
 
-## Whole-mount in situ hybridization on embryos
+### Whole-mount in situ hybridization on embryos
 
 The sst1.1 and sst2 probes were described in Devos et al., 2002. The ins probe has been described in Milewski et al., 1998. Fluorescent in situ hybridization were performed as described in Tarifeño-Saldivia et al., 2017 on 3 or 6 days post fertilization embryos (dpf). The antisense RNA probes were revealed using tyramide-Cy3 followed by immunodetection of GFP.
 
 Images of immunodetection and in situ hybridization were acquired with a Leica SP5 or a Zeiss LSM880 confocal microscope, and processed with Imaris 9.5 (Bitplane) for visualization.
 
-## In vivo imaging
+### In vivo imaging
 
 In vivo imaging was performed with a Lightsheet Zeiss Z1 microscope using a 20 x water immersion objective and 488 nm and 561 nm lasers. Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) larvae were treated from 1 dpf with 1-phenyl 2-thiourea (0.003% (w:v)) to inhibit pigment synthesis. After ablation with NFP from 3 to 4 dpf, larvae were anesthetized, embedded in 0.25% low melting agarose containing and mounted into FEP capillaries. Images were acquired every 30 min and were maintained during the whole experiment at 28° and with 100 ml/L tricaine. Images were converted with Imaris 9.5 (Bitplane) for visualization.
 
-## Flow cytometry and FACS
+### Flow cytometry and FACS
 
 The zebrafish pancreas contains one main big islet in the head and several smaller secondary islets in the tail. The main islets from 2 to 4 pancreata of Tg(sst1.1:eGFP); Tg(ins:NTR-P2A-mCherry) adult fish (6–10 months old, males and females) were dissected under epifluorescence to eliminate a maximum of non-fluorescent surrounding exocrine tissue, collected and washed in HBSS without Ca2+/Mg2+. Live cell dissociation was performed in Tryple Select 1 x solution (GIBCO) supplemented with 100 U/mL collagenase IV (Life Technologies 17104–019) and 40 µg/mL proteinase K (Invitrogen, 25530031) for 10 min at 28 °C, and stopped with 15% FBS. The GFP+ cells, mCherry+ cell and double GFP+ mCherry + cells were selected according to gates as shown in Figure 1—figure supplement 1 (dashed lines) on FACS Aria III and sorted under purity mode and after exclusion of the doublets. The purity of the sorted cells was confirmed by epifluorescence microscopy (~95 %). Cells (about 1000–5000/fish depending on the cell type) were immediately lysed with 0.5% Triton X-100 containing 2 U/µl RNAse inhibitor and stored at –80 °C. Similar strategy was followed for cell quantification in secondary islets present in the pancreatic tail. The pancreas was dissected excluding the anterior most part containing the main islet and whole posterior tissues were dissociated and analyzed.
 
-## Cell quantification in adults by flow cytometry
+### Cell quantification in adults by flow cytometry
 
 The percentage of mCherry+, GFP+ and double mCherry+ GFP + fluorescent cells in the dissociated islets was inferred from flow cytometry experiments in each quadrant delimiting negative and positive fluorescence. FACS plots were generated by FlowJo 10.6.2 and quantifications were performed using Flowing Software 2.5.1.
 
-## mRNA sequencing of FACSed cells and bioinformatic analyses
+### mRNA sequencing of FACSed cells and bioinformatic analyses
 
 cDNAs were prepared from lysed cells according to SMART-Seq2.0 (Picelli et al., 2014) for low input RNA sequencing and libraries were prepared with Nextera DNA Library kit (Illumina). Independent biological replicates of each cell type sequenced using Illumina HiSeq2500 and obtained ~20 million 75 bp single-end reads (seven replicates for β-cells, 6 for 20 dpt bihormonal cells, 3 for sst1.1GFPhigh, 3 for sst1.1GFPlow). Reads were mapped and aligned to the zebrafish genome GRCz11 from Ensembl gene annotation version 92 using STAR (Dobin et al., 2013). Gene expression levels were calculated with featureCounts (http://bioinf.wehi.edu.au/featureCounts/) and differential expression determined with DESeq2 (Love et al., 2014). Expression values are given as normalized read counts. Poorly expressed genes with mean normalized expression counts <10 were excluded from the subsequent analyses. DESeq2 uses Wald test for significance with posterior adjustment of P values (Padj) using Benjamini and Hochberg multiple testing. The differentially expressed (DE) genes identified with a Padj cutoff of 0.05 and fold change above two were submitted for GO analysis using WebGestalt tool (Liao et al., 2019).
 
 The genes enriched in β-cells and sst2δ-cells above fourfold were identified using sequences obtained previously (Tarifeño-Saldivia et al., 2017) with prior mapping on the more recent GRCz11 v92 assembly of the zebrafish genome; they thus slightly differ from the gene list previously published (provided in Figure 3—source data 2). Then, new enrichment was updated to take into account the new transcriptomic data obtained for sst1.1δ-cells from Tg(sst1.1:eGFP) and the new β-cells from Tg(ins:NTR-P2A-mCherry) (presented in Figure 3—source data 3).
 
-## Statistical Analyses
+### Statistical Analyses
 
 Graphs and statistical analyses were performed using GraphPad Prism 8. Data are represented as Mean ± SD except in Figure 4C where Mean ± SEM are shown. The statistical tests are described in the legend of the Figures.

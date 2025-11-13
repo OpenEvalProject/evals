@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0245cg223 Center for Integrative Biological Signalling Studies (CIBSS), University of Freiburg Freiburg Germany
-2. https://ror.org/0245cg223 Institute of Biology II, Division of Molecular Plant Physiology (MoPP), University of Freiburg Freiburg Germany
+1. Center for Integrative Biological Signalling Studies (CIBSS), University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+2. Institute of Biology II, Division of Molecular Plant Physiology (MoPP), University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
 
 † Corresponding author
 

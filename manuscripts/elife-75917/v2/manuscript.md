@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04qw24q55 Laboratory of Genetics, Wageningen University Wageningen Netherlands
+1. Laboratory of Genetics, Wageningen University Wageningen Netherlands ([ROR:04qw24q55](https://ror.org/04qw24q55))
 2. ELKH Centre for Ecological Research, Institue of Evolution Budapest Hungary
 3. MTA-ELTE Theoretical Biology and Evolutionary Ecology Research Group Budapest Hungary
 
@@ -34,77 +34,97 @@ Here we explore the consequences of di-mon matings in the dikaryotic life cycle 
 
 ## Materials and methods
 
-## The model
+### The model
 
-## The arena
+#### The arena
 
 The ‘substrate’ on which the simulated mycelia live is two-dimensional, represented by a square lattice each site supporting a single mycelium, or section thereof. The lattice takes a toroidal topology with the first and the last site of each row/column being neighbors, so that the lattice has no edges. At time 0, the lattice is inoculated with a random initial pattern of spores from a pool of m different mating types. Each inoculated site contains the monokaryotic mycelium sprouted from a single spore.
 
-## Nuclear fitness
+#### Nuclear fitness
 
 The nuclear fitness of each spore (and the corresponding monokaryon and dikaryon) consists of three heritable (genetically encoded) components:
 
 These three fitness components are traded off so that any one of them can increase only at the expense of the other two in a linear fashion: wv + wr + wm = 1.0. (Grafen, 2014).
 
-## Nonlinear fitness
+#### Nonlinear fitness
 
 We also explored the effects of nonlinear trade-offs on possible combinations of wv, wr, and wm such that any actual combination remains below the trade-off surface defined by 1 = (wvβ + wrβ + wmβ). Results of the nonlinear fitness are shown in Figure 4—figure supplement 1. Unless otherwise stated, in our modeling β = 1.
 
-## Dikaryotic fitness
+#### Dikaryotic fitness
 
-The vegetative and the reproductive fitness components (wv and wr) of dikaryons depend on the nuclear fitness components (wv and wr) of the two nuclei it harbors and on the dominance interaction, Θ. For example, dikaryotic mycelia grow into neighboring sites at a rate Wv=g[wv,max⋅Q+wv,min⋅(1−Q)] , where g is the basic mycelial growth rate, wv,max is the vegetative fitness of the fitter nucleus, and Θ specifies its phenotypic dominance over the less fit nucleus (of nuclear vegetative fitness wv,min). Θ = 1.0 is the absolute dominance, Θ = 0.0 means absolute recessivity. Reproductive fitness (i.e. the spore production rate) of the dikaryon is calculated similarly.
+The vegetative and the reproductive fitness components (wv and wr) of dikaryons depend on the nuclear fitness components (wv and wr) of the two nuclei it harbors and on the dominance interaction, Θ. For example, dikaryotic mycelia grow into neighboring sites at a rate $W_{v}=g[w_{v,max}⋅Q+w_{v,min}⋅(1−Q)]$ , where g is the basic mycelial growth rate, $w_{v,max}$ is the vegetative fitness of the fitter nucleus, and Θ specifies its phenotypic dominance over the less fit nucleus (of nuclear vegetative fitness $w_{v,min}$). Θ = 1.0 is the absolute dominance, Θ = 0.0 means absolute recessivity. Reproductive fitness (i.e. the spore production rate) of the dikaryon is calculated similarly.
 
-## Mating
+#### Mating
 
 In all scenarios, monokaryotic mycelia of different mating types coming into spatial contact (i.e. those on neighboring sites) will sexually fuse and produce dikaryons if they are of different mating types. In case of more possible mates, the focal (‘female’) monokaryon chooses one of the compatible nuclei from the neighboring mycelia, with the chance that a given ‘male’ nucleus is chosen depending on its mating fitness wm. The three mating scenarios (diploid: mon-mon only; standard dikaryon: mon-mon and di-mon; open dikaryon: mon-mon, di-mon, and di-di) differ in the number of nuclei competing for becoming one of the two actual nuclei taking over the fused mycelia. In mon-mon matings only the nuclei from monokaryons surrounding a focal receiving monokaryon; in di-mon matings the two nuclei of each dikaryon compete as well as surrounding monokaryons, and in the di-di scenario two of the four nuclei win, with the chances depending on wm. The winning pair of nuclei spreads all over the spatially connected parts of the affected male and female mycelia, transforming them into the same dikaryon.
 
-## Mutation
+#### Mutation
 
 Spore production occurs with the sexual fusion of the two nuclei of the dikaryon, preceded by mutations during the dikaryotic state, and followed by meiosis. Mutations affect the nuclear fitness components (wv, wr , and wm), such that mutant fitness (wv, wr , and wm) is drawn from Gaussian ditributions with standard deviation σ centered on the parental values and scaled back to satisfy wv + wr + wm = 1.0. The mutation step is shown in Figure 1A as a set of open circles denoting the starting fitness as a position on the ternary diagram, and the arrow showing the mutational step to the new fitness values.
 
-## Number of fitness related loci
+![Figure 1.](https://cdn.elifesciences.org/articles/75917/elife-75917-fig1-v2.jpg)
+
+**Figure 1.:** (A) Life cycle of dikaryon showing the three different mating possibilities (mon-mon, di-mon, and di-di), as well as the separation between mating and karyogamy. (B) Shows some rules of the algorithm and three types of mating, and which matings are found with each of the three life cycles. (C) Example of the actions taken during one generation of the simulation. Note that in this diagram matings are shown as deterministic based on mating fitness, but in the simulations the outcome of competition is probabilistic.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75917/elife-75917-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Note that in the polygenic diploid scenario, the nuclei do not cluster near the middle but instead optimize spore production similar to the monogenic scenario.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75917/elife-75917-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Note that this increased growth rate allows the open dikaryon to survive and increases the vegetative growth fitness of both diploid and standard dikaryon scenarios.
+
+#### Number of fitness related loci
 
 To partially (implicitly) simulate the genetics underlying the phenotypes of this model, we implemented a parameter, λ, affecting the inheritance of fitness phenotypes, ranging between 0 and 1. λ = 0 corresponds to multiple loci throughout the genome, where recombination between the parents leads to offspring with the average phenotype of two parental nuclei. Alternatively, λ = 1 indicates that fitness variance is located inside a single Mendelian locus, and offspring resemble either one parent or the other.
 
-## Updating algorithm
+#### Updating algorithm
 
 One generation of the simulations consists of N elementary updating steps; N is the number of sites in the lattice. An updating step starts with choosing a random site, which if occupied dies with probability d. If the site is instead empty, the mycelia on the neighboring eight sites compete to occupy it, chances to win depending on their vegetative fitness. If the focal site is occupied and survives, it may engage in mating in the ‘female’ role, provided that it is capable of mating with at least one of its neighbors. Mating type, mating scenario compatibility, and mating success wm of the potential ‘male’ partners determine the actual outcome of mating, resulting in a dikaryon in accordance with the rules detailed in the Mating section above. If the focal site contains a dikaryotic mycelium, it may produce spores which are locally dispersed onto sites within the dispersal radius R of the parental dikaryon, which germinate to monokaryotic mycelia in the next generation. One spore per site may survive on each empty site that has received spores; the survivor is chosen at random. Identical nucleotypes instantly fuse somatically upon spatial contact.
 
 The rules and the algorithm of the simulations are summarized in Figure 1. Pseudocode for the simulation can be found in Source Code File 1. Animations of sample runs for the Diploid, Standard, and Open Dikaryon can be found in Animation 1–3Animation 1–3Animation 1 and 3Animation 1, Animation 2, and Animation 3, respectively.
 
-## Competitions
+![Animation 1.](https://cdn.elifesciences.org/articles/75917/elife-75917-animation1-v2.mp4.jpg)
+
+**Animation 1.:** Dots indicate individual nuclei. Bars indicate population size, and ‘% maters’ which is the proportion of nuclei with >66% of fitness allocated to mating fitness, as in Figure 2.
+
+![Animation 2.](https://cdn.elifesciences.org/articles/75917/elife-75917-animation2-v2.mp4.jpg)
+
+![Animation 3.](https://cdn.elifesciences.org/articles/75917/elife-75917-animation3-v2.mp4.jpg)
+
+##### Competitions
 
 To compare the competitive advantage of dikaryotic male function (DMF) (the standard dikaryon scenario), the simulation was modified to represent an allele conferring dikaryotic male function linked to the mating locus, having 15 mating types with this allele, and 15 without. Homokaryons of either type were reproductively compatible, and the case of heterozygotes was evalued for the DMF allele being recessive, dominant, or co-dominant where only the nucleus with the DMF allele could participate in di-mon matings. Due to algorithmic complexity, we did not attempt a similar competition for dikaryotic female function (the open dikaryon scenario).
 
-## Parameter settings
+##### Parameter settings
 
 Due to the number of parameters, we could not assess all possible combinations. Preliminary results showed that simulations with grid sizes of less than 150 squares had stochastic outcomes (data not shown). To combat this, results shown here were performed with a grid size of 300 × 300, except data from Figures 5 and 6 where due to computational resources, smaller grid sizes of 200 × 200 were used instead. Except where otherwise specified the base parameters were: g = 0.1; r = 1; d = 0.3; σ = 0.01; grid sizes of 300 × 300 and simulations were run for 1000 iterations.
 
 ## Results
 
-## Genetic assumptions have a strong influence on equilibrium fitness distributions
+### Genetic assumptions have a strong influence on equilibrium fitness distributions
 
 Initial simulations run under different scenarios (one locus/many loci, recessive/co-dominant/dominant) showed a strong influence of these parameters on the resulting nuclear fitness (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75917/elife-75917-fig2-v2.jpg)
 
-**Figure 2.:** A) high spore production (r = 5) or (B) low spore production (r = 1).Simulations were initialized with 60,000 homokaryotic individuals with initial fitness values drawn from a normal distribution, as shown in the leftmost triangle. Points in resulting triangles represent individual nuclei remaining on the 300 × 300 grid at end of simulation. Note that there is significant overlap of points, thus the amount of black is not proportional to population size. Shading of pie charts shows percentage of nuclei with >66% mating fitness (wm; region covered by bar). Shaded square indicates proportion of cells occupied at end of simulation. Simulations with no surviving population have no dots, and associated pie charts have a red cross.
+**Figure 2.:** Simulations were initialized with 60,000 homokaryotic individuals with initial fitness values drawn from a normal distribution, as shown in the leftmost triangle. Points in resulting triangles represent individual nuclei remaining on the 300 × 300 grid at end of simulation. Note that there is significant overlap of points, thus the amount of black is not proportional to population size. Shading of pie charts shows percentage of nuclei with >66% mating fitness (wm; region covered by bar). Shaded square indicates proportion of cells occupied at end of simulation. Simulations with no surviving population have no dots, and associated pie charts have a red cross.
 
-## Diploid
+### Diploid
 
 The diploid life cycle, where matings only occur between monokaryons, resulted in stable populations over the entire tested parameter space. When fitness is polygenic, the resulting nuclei cluster near the middle of the fitness space, without maximizing any specific trait. If instead fitness is monogenic the nuclei form a cluster with maximum spore production. When the mycelium-level phenotypes (wv and wr) are fully dominant (Θ = 1.0) with monogenic fitness traits (rightmost column) the simulations result in one set of nuclei optimizing spore production and a much smaller cluster balancing vegetative growth and mating fitness, particularly with high growth rates. There is no obvious difference between the diploid simulations under the high spore (Figure 2A) or low spore (Figure 2B) state.
 
-## Standard dikaryon
+### Standard dikaryon
 
 When DMF is allowed through di-mon matings, the standard dikaryotic state found in nature, there is a strong drive for mating fitness. With polygenic fitness, the nuclei exclusively optimize mating fitness. However, if fitness variance is monogenic a clear polymorphism emerges with one set of nuclei strongly optimizing mating fitness, and the other optimizing spore production. Changing the dominance coefficient of the vegetative growth and spore production phenotypes had quantitative effects on the proportion of the nuclei optimizing mating fitness (Figure 2 pie charts).
 
-## Open dikaryon
+### Open dikaryon
 
 When di-di matings are allowed, the hypothetical open dikaryon situation, the increased selection for mating fitness caused populations to collapse in most scenarios. In scenarios with low spore production (Figure 2B), the open dikaryon population crashes, regardless of dominance or genetics of fitness variance. When spore production is increased (Figure 2A), the populations survive as less spore production fitness is required, but all nuclei optimize mating fitness. When phenotypes are recessive and fitness is monogenic, even this increased level of spore production is not sufficient to maintain the population.
 
 To assess the stability of these results, we performed similar simulations with two further modifications to the global parameters, either increased basal growth rate, g of 0.5 or increased mutational width, σ of 0.05. Increased basal growth rate allowed the open dikaryon to maintain stable populations (Figure 1—figure supplement 2). Increased mutational width allowed the open dikaryon to persist under a wider set of parameters (Figure 1—figure supplement 1). For the diploid polygenic scenario, increased mutation width resulted in optimization of fitness around high spore production instead of a balance between the fitness components.
 
-## Limited fitness loci partition mating fitness in the standard dikaryon
+### Limited fitness loci partition mating fitness in the standard dikaryon
 
 As the initial simulation showed clear differences between the monogenic and polygenic states, we more thoroughly investigated this influence. The population size dynamics are shown in Figure 3A, and average population fitness proportions are shown in Figure 3B. As population size results from the balance of dispersal/growth and the random death process, this size is an outcome of average fitness at the level of the mycelium (Gilchrist et al., 2006). Therefore, Figure 3A shows an element of average mycelial fitness, while Figure 3B shows the fitness components of the individual nuclei.
 
@@ -116,11 +136,19 @@ In the diploid situation, the monogenic scenario had an increased population siz
 
 In the standard dikaryon, the polygenic situation leads to a continuous decline in population, as mating fitness increases in all nuclei (Figure 3A). The increased mating fitness is seen in both the male and female nuclei of the dikaryons in the population (Figure 3B). However, the monogenic situation allows for a polymorphism in the population between the fitness of the nuclei that were the original monokaryon (the female role) versus those of the fertilizing nucleus (the male role). The male role is then still performed by nuclei specialized for mating fitness, while the female role is performed by nuclei that retain a significant amount of spore production fitness. Interestingly, in the standard dikaryon the monogenic situation shows an initial increase in mating fitness in the female role as well, but this is purged after approximately 75 generations.
 
-## Dikaryotic male function increases in frequency in direct competition
+### Dikaryotic male function increases in frequency in direct competition
 
 Although our simulations aimed to assess the balance between the levels of selection in the different life cycles, and not to study the transitions between them, it was important to assess whether the dikaryotic state was competitive under the imposed fitness trade-off. To this end, we competed mixtures with varying starting proportions of nuclei with and without DMF. We simulated DMF as a dominant, co-dominant (each nucleus acting independently), or recessive trait with the fitness trade-off as either a mono- or polygenic trait. As seen in Figure 4, in most cases when DMF is allowed, it increases in frequency (rows 1 and 3), but with different outcomes between the two nuclear positions. With a polygenic fitness trade-off, the DMF allele frequency increases, particularly in the male nucleus. When the fitness trade-off is monogenic, the DMF allele still increases in the male nucleus, except when DMF is recessive, but the population size remains large. Interestingly, in this monogenic scenario, the initial increase in population size is delayed due to increasing mating fitness, in the female role to the detriment of reproductive or vegetative fitness components, in effect becoming parasitic nuclei. These nuclei are purged with the first 250 generations regardless of the starting proportion. This purging of high mating fitness genotypes in the female role is less effective in the recessive case, as deleterious alleles are hidden from selection at low frequencies. As the decreased population size with increased mating fitness is based on an assumed fitness trade-off, we tested the effects of a nonlinear trade-off (Figure 4—figure supplement 1). Regardless of the shape of trade-off surface, the DMF allele increased in frequency, and the effect of the nonlinearity only affected the rate of increase and the resulting population size.
 
-## Effect of environmental pressures
+![Figure 4.](https://cdn.elifesciences.org/articles/75917/elife-75917-fig4-v2.jpg)
+
+**Figure 4.:** Different initial proportions of DMF and non-DMF nuclei are shown with different line styles. Initial DMF and non-DMF nuclei fitness parameters were drawn from the same distribution, with the same trade-off imposed. Proportion of DMF nuclei and proportion of parasitic nuclei (those with >66% mating fitness) are shown for the female nucleus (nucleus 1) in the top two rows, while the male nucleus (nucleus 2) is shown below. Note that since the population begins as completely homokaryotic, the nucleus 2 position is empty for generations 0. The bottom row shows the total population size.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75917/elife-75917-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Here is the figure for the nonlinear fitness. It shows that in the co-dominant state, where dikaryotic male function (DMF) spreads fastest, the DMF allele spreads through the population regardless of trade-off shape. The beta value has some effect on the strength of selection, so with beta of 2 (the long dash line) in the polygenic scenario the population size is smallest since fitness costs are highest. So, when polygenic selection against the allele slows the spread of nuclei maximizing mating fitness, but not of the DMF allele itself, and it takes longest for the nuclei maximizing the mating fitness to spread in the female role (nucleus 1).
+
+### Effect of environmental pressures
 
 To test the effect of environmental stability on the resulting populations, we varied the parameters of basal growth rate and the death rate, g and d, respectively. When these two rates are equal a given space has the same probability of dying as it does of being grown into again. When the death rate is higher than growth rate, then a larger proportion of cells will be available to be colonized by spores. As can be seen in Figure 5A, the populations were smaller with increasing death rate (y-axis) in all three types of life cycle, and low growth rate combined with high death rate led to population collapses (white squares in Figure 5A). The open dikaryon was susceptible to population crashes across a larger range of parameter values. In general, the diploid had the largest population size, the standard dikaryon intermediate, and the open dikaryon the smallest. Looking at the mating success, the proportion dikaryotic, in almost all scenarios the open dikaryon is 100% dikaryotic, while the diploid has a much higher percentage of monokaryons (Figure 5B). As it is difficult to visually compare the three scenarios based on color intensity, the overall averages of surviving populations are plotted in Figure 5C. This shows that indeed the open dikaryon has the highest proportion of dikaryons, but the lowest population size, and the opposite for the diploid. The standard dikaryon is intermediate between the other two scenarios. Notably, there seems to be a negative correlation between population size and proportion dikaryon across the three scenarios.
 
@@ -128,7 +156,7 @@ To test the effect of environmental stability on the resulting populations, we v
 
 **Figure 5.:** (A) Population size after 500 generations across a range of death and growth rates. Intensity of black is proportional to population size. (B) Mating success of simulations from panel (A), but intensity of black refers to proportion of occupied cells that are dikaryotic. Orange values indicate simulations had no surviving cells. (C) Grand mean of values used in (A) and (B), grouped by scenario to highlight the relative differences in mating success and population size between the three scenarios.
 
-## Factors that reduce spread of genotypes detrimental to the dikaryon
+### Factors that reduce spread of genotypes detrimental to the dikaryon
 
 We investigated potential factors that in the standard dikaryon may influence the proportion of nuclei maximizing their mating fitness, which is detrimental to the dikaryon due to the imposed fitness trade-off. We varied four factors: the number of mating types, total potential spore production, the basal growth rate, and the phenotypic dominance (Figure 6). As the number of loci affecting this fitness trade-off is apparently an important factor for the levels of mating fitness, we simulated across a range of λ values, from λ = 1 the monogenic situation, to the polygenic scenario of λ = 0. The results showed little difference below λ values of 0.75 (Figure 6A). With increasing λ, the phenotypes are more unevenly distributed among nuclei. The results in Figure 6A are resemble those from Figure 3B, except that Figure 6A shows different categories of percentage mating fitness per nucleus, while population averages for the three fitness components are shown in Figure 3B. From these linkage values, we selected λ = 0.95 which showed almost all nuclei having >90% mating fitness, λ = 0.99 which showed nuclei with a range of mating fitness, and λ = 1.00 where a smaller proportion of nuclei optimized mating fitness over 90% (Figure 6B). These scenarios resemble the single locus scenarios, but with offspring phenotypes that include a small amount of mixing between the parental phenotypes.
 
@@ -164,10 +192,10 @@ The open dikaryon of our model corresponds to the ‘unit mycelium‘ concept fo
 
 This persistent dikaryotic state has been retained for over 400 million years (Chang et al., 2015), yet few extant Basidiomycete species are diploid (Anderson and Kohn, 2007). The retention of the dikaryotic state in the vast majority of Basidomycetes leaves open the potential for mycelium-level fitness costs of nuclear selection due to di-mon matings. While there is little data on the prevalence of di-mon matings in the field, they may be more common than is generally assumed (Nieuwenhuis et al., 2013). Given the potential for strong selection for mating fitness within a dikaryon, it is crucial to determine the relationship between nuclear competitiveness and mycelium-level fitness.
 
-## Conclusion
+### Conclusion
 
 Potential benefits of a dikaryon stage have been a subject of discussion for some time. The presence of the dikaryotic state emphasizes the level of selection on the individual nuclei, something that is often overlooked in evolutionary discussions of fungi. The persistent association between unrelated haploid nuclei will invariably select for mating success, potentially to the detriment of the individual. Our results show the potential costs of selection at the level of nuclei for mating for mycelium-level fitness components, and how those can be reduced. First, restricting fertilization by dikaryons to monokaryons reduces the level of nuclear mating fitness and maintains a higher mycelium-level fitness, compared to completely free exchange between dikaryons. Second, if the variance in mating fitness and its associated trade-off is restricted to a single locus, the costs to mycelial level fitness are reduced. Most importantly, establishing the relationship between the different fitness components is crucial to understand the potential consequences of nuclear competition in the dikaryotic life cycle. We also hypothesize that recent examples of dikaryon nuclear exchange are due to monokaryotic intermediates or result from extremely rare events. Our results show that the consequences of competition between the unrelated haploid nuclei in a dikaryon can be severe, and there must exist mechanisms to police it.
 
-## Data availability
+### Data availability
 
 Source to run simulations, as well as scripts to produce figures and analysis are found at https://github.com/BenAuxier/Basid.Sex.Sim (Auxier, 2021a).

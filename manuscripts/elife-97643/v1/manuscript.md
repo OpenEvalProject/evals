@@ -14,19 +14,19 @@
 
 ### Affiliations
 
-1. https://ror.org/017zqws13 Division of Environmental Health Sciences, School of Public Health, University of Minnesota Minneapolis United States
-2. https://ror.org/03pz1p187 Alberta Precision Laboratories, Alberta Public Health, Walter Mackenzie Health Sciences Centre Edmonton Canada
-3. https://ror.org/0160cpw27 Department of Laboratory Medicine and Pathology, University of Alberta Edmonton Canada
-4. https://ror.org/044j76961 Department of Biological Sciences, University of Lethbridge Lethbridge Canada
-5. https://ror.org/03sgjjk97 Agriculture and Agri-Food Canada, Lethbridge Research and Development Centre Lethbridge Canada
-6. https://ror.org/00gmyvv50 Sections of Pediatric Emergency Medicine and Gastroenterology, Department of Pediatrics, Alberta Children’s Hospital and Alberta Children’s Hospital Research Institute, Cumming School of Medicine, University of Calgary Calgary Canada
-7. https://ror.org/00qxr8t08 National Center for Animal Diseases Lethbridge Laboratory, Canadian Food Inspection Agency Lethbridge County Canada
+1. Division of Environmental Health Sciences, School of Public Health, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+2. Alberta Precision Laboratories, Alberta Public Health, Walter Mackenzie Health Sciences Centre Edmonton Canada ([ROR:03pz1p187](https://ror.org/03pz1p187))
+3. Department of Laboratory Medicine and Pathology, University of Alberta Edmonton Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))
+4. Department of Biological Sciences, University of Lethbridge Lethbridge Canada ([ROR:044j76961](https://ror.org/044j76961))
+5. Agriculture and Agri-Food Canada, Lethbridge Research and Development Centre Lethbridge Canada ([ROR:03sgjjk97](https://ror.org/03sgjjk97))
+6. Sections of Pediatric Emergency Medicine and Gastroenterology, Department of Pediatrics, Alberta Children’s Hospital and Alberta Children’s Hospital Research Institute, Cumming School of Medicine, University of Calgary Calgary Canada ([ROR:00gmyvv50](https://ror.org/00gmyvv50))
+7. National Center for Animal Diseases Lethbridge Laboratory, Canadian Food Inspection Agency Lethbridge County Canada ([ROR:00qxr8t08](https://ror.org/00qxr8t08))
 
 † Corresponding author
 
 ## Abstract
 
-Several areas of the world suffer a notably high incidence of Shiga toxin-producing Escherichia coli . To assess the impact of persistent cross-species transmission systems on the epidemiology of E. coli O157:H7 in Alberta, Canada, we sequenced and assembled E. coli O157:H7 isolates originating from collocated cattle and human populations, 2007–2015. We constructed a timed phylogeny using BEAST2 using a structured coalescent model. We then extended the tree with human isolates through 2019 to assess the long-term disease impact of locally persistent lineages. During 2007–2015, we estimated that 88.5% of human lineages arose from cattle lineages. We identified 11 persistent lineages local to Alberta, which were associated with 38.0% (95% CI 29.3%, 47.3%) of human isolates. During the later period, six locally persistent lineages continued to be associated with human illness, including 74.7% (95% CI 68.3%, 80.3%) of reported cases in 2018 and 2019. Our study identified multiple locally evolving lineages transmitted between cattle and humans persistently associated with E. coli O157:H7 illnesses for up to 13 y. Locally persistent lineages may be a principal cause of the high incidence of E. coli O157:H7 in locations such as Alberta and provide opportunities for focused control efforts.
+Several areas of the world suffer a notably high incidence of Shiga toxin-producing Escherichia coli. To assess the impact of persistent cross-species transmission systems on the epidemiology of E. coli O157:H7 in Alberta, Canada, we sequenced and assembled E. coli O157:H7 isolates originating from collocated cattle and human populations, 2007–2015. We constructed a timed phylogeny using BEAST2 using a structured coalescent model. We then extended the tree with human isolates through 2019 to assess the long-term disease impact of locally persistent lineages. During 2007–2015, we estimated that 88.5% of human lineages arose from cattle lineages. We identified 11 persistent lineages local to Alberta, which were associated with 38.0% (95% CI 29.3%, 47.3%) of human isolates. During the later period, six locally persistent lineages continued to be associated with human illness, including 74.7% (95% CI 68.3%, 80.3%) of reported cases in 2018 and 2019. Our study identified multiple locally evolving lineages transmitted between cattle and humans persistently associated with E. coli O157:H7 illnesses for up to 13 y. Locally persistent lineages may be a principal cause of the high incidence of E. coli O157:H7 in locations such as Alberta and provide opportunities for focused control efforts.
 
 ## Introduction
 
@@ -38,25 +38,326 @@ The mix of STEC infection sources in a region directly influences public health 
 
 ## Results
 
-## Description of isolates
+### Description of isolates
 
 Across the 1215 isolates included in the analyses, we identified 12,273 core genome SNPs. Clade G(vi) constituted 73.6% (n=894) of all isolates (Figure 1a). Clade A, which is the most distinct of the E. coli O157:H7 clades, included non-Alberta isolates, two human isolates from Alberta, and no Alberta cattle isolates. The majority of all Alberta isolates belonged to the G(vi) clade (582 of 659; 88.3%), compared to 281 of the 1560 (18.0%) randomly sampled U.S. PulseNet isolates that were successfully assembled and QCed. Among the 62 non-randomly sampled global isolates, only 2 (3.2%) were clade G(vi) (Figure 1b). There were 682 (76.3%) clade G(vi) isolates with the stx1a/stx2a profile and 210 (23.5%) with the stx2a-only profile, compared to 2 (0.6%) and 58 (18.1%), respectively, among the 321 isolates outside the G(vi) clade (Table 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig1-v1.jpg)
 
-**Figure 1.:** E. coli O157:H7 isolates referenced in the study.This includes 659 isolates from Alberta, Canada, from 2007 through 2019, 494 isolates from the U.S. from 1996 through 2019, and 62 isolates from elsewhere around the globe from 2007–2016. The tree was rooted at clade A. (A) Shows all clades, with tips colored according to clade, geographic origin shown on the inner ring, and species of origin on the outer ring. (B) shows clade G(vi), which constituted 73.6% of all isolates and 88.3% of Alberta isolates. Tips are colored by geographic origin, and the ring indicates species of origin.
+**Figure 1.:** This includes 659 isolates from Alberta, Canada, from 2007 through 2019, 494 isolates from the U.S. from 1996 through 2019, and 62 isolates from elsewhere around the globe from 2007–2016. The tree was rooted at clade A. (A) Shows all clades, with tips colored according to clade, geographic origin shown on the inner ring, and species of origin on the outer ring. (B) shows clade G(vi), which constituted 73.6% of all isolates and 88.3% of Alberta isolates. Tips are colored by geographic origin, and the ring indicates species of origin.
 
-## The majority of clinical cases evolved from local cattle lineages
+**Table 1.**
+ Distribution of study isolates by geographic source, clade, and Shiga toxin gene (stx) profile.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clade</th>
+      <th>Source</th>
+      <th>stx1a</th>
+      <th>stx1a/stx2a</th>
+      <th>stx1a/stx2c</th>
+      <th>stx1a/stx2a/stx2c</th>
+      <th>stx2a</th>
+      <th>stx2c</th>
+      <th>stx2a/stx2c</th>
+      <th>stx2a/stx2c/stx2d</th>
+      <th>stx2a/stx2d</th>
+      <th>None detected</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G(vi)</td>
+      <td></td>
+      <td>2</td>
+      <td>682</td>
+      <td>0</td>
+      <td>0</td>
+      <td>210</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>894</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Alberta</td>
+      <td>0</td>
+      <td>443</td>
+      <td>0</td>
+      <td>0</td>
+      <td>139</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>582</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>The U.S.</td>
+      <td>2</td>
+      <td>237</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>310</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Global</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Other G</td>
+      <td></td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>33</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Alberta The</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>U.S.</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>19</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Global</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53</td>
+      <td>23</td>
+      <td>75</td>
+      <td>5</td>
+      <td>1</td>
+      <td>7</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Alberta The</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td>9</td>
+      <td>12</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>U.S.</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33</td>
+      <td>11</td>
+      <td>61</td>
+      <td>5</td>
+      <td>0</td>
+      <td>6</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Global</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Other (A-E)</td>
+      <td></td>
+      <td>2</td>
+      <td>1</td>
+      <td>41</td>
+      <td>0</td>
+      <td>1</td>
+      <td>50</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Alberta The</td>
+      <td>1</td>
+      <td>0</td>
+      <td>15</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>U.S.</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>1</td>
+      <td>24</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Global</td>
+      <td>1</td>
+      <td>1</td>
+      <td>16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td>7</td>
+      <td>684</td>
+      <td>45</td>
+      <td>2</td>
+      <td>268</td>
+      <td>106</td>
+      <td>83</td>
+      <td>5</td>
+      <td>1</td>
+      <td>14</td>
+      <td>1215</td>
+    </tr>
+  </tbody>
+</table>
+
+### The majority of clinical cases evolved from local cattle lineages
 
 In our primary sample of 121 human and 108 cattle isolates from Alberta from 2007 to 2015, SNP distances were comparable between species (Figure 2). Among sampled human cases, 19 (15.7%; 95% CI 9.7%, 23.4%) were within five SNPs of a sampled cattle strain. The median SNP distance between cattle sequences was 45 (IQR 36–56), compared to 54 (IQR 43–229) SNPs between human sequences from cases in Alberta during the same years.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig2-v1.jpg)
 
-**Figure 2.:** E. coli O157:H7 strains and their nearest relative, by species, Alberta, Canada, 2007–2015.Distances for isolates from 121 reported human cases and 108 beef cattle are shown. Cattle isolates were highly related with 56.5% of cattle isolates within five SNPs of another cattle isolate and 94.4% within 25 SNPs. Human isolates showed a bimodal distribution in their relationship to cattle isolates, with 86.0% within 50 SNPs of a cattle isolate and the remainder 185–396 SNPs apart. Nineteen human isolates (15.7%) were within five SNPs of a cattle isolate.
+**Figure 2.:** Distances for isolates from 121 reported human cases and 108 beef cattle are shown. Cattle isolates were highly related with 56.5% of cattle isolates within five SNPs of another cattle isolate and 94.4% within 25 SNPs. Human isolates showed a bimodal distribution in their relationship to cattle isolates, with 86.0% within 50 SNPs of a cattle isolate and the remainder 185–396 SNPs apart. Nineteen human isolates (15.7%) were within five SNPs of a cattle isolate.
 
 The phylogeny generated by our primary structured coalescent analysis indicated cattle were the primary reservoir, with a high probability that the hosts at nodes along the backbone of the tree were cattle (Figure 3). The root was estimated at 1802 (95% HPD 1731, 1861). The most recent common ancestor (MRCA) of clade G(vi) strains in Alberta was inferred to be a cattle strain, dated to 1969 (95% HPD 1959, 1979). With our assumption of a relaxed molecular clock, the mean clock rate for the core genome was estimated at 9.65×10–5 (95% HPD 8.13×10–5, 1.13×10–4) substitutions/site/year. The effective population size, Ne, of the human E. coli O157:H7 population, was estimated as 1060 (95% HPD 698, 1477), and for cattle as 73 (95% HPD 50, 98). We estimated 108 (95% HPD 104, 112) human lineages arose from cattle lineages, and 14 (95% HPD 5, 23) arose from other human lineages (Figure 3). In other words, 88.5% of human lineages seen in Alberta from 2007 to 2015 arose from cattle lineages. We observed minimal influence of our choice of priors (Figure 3—figure supplement 1). Our sensitivity analysis of equal numbers of isolates from cattle and humans was largely consistent with our primary results, estimating that 94.3% of human lineages arose from cattle lineages (Figure 3—figure supplement 2).
 
-## Locally persistent lineages account for the majority of ongoing human disease
+![Figure 3.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig3-v1.jpg)
+
+**Figure 3.:** Isolates were down-sampled prior to phylodynamic analysis to remove isolates that were highly similar. The structured coalescent analysis estimated migration and state transitions between humans and cattle. The MCC tree was colored by inferred host, cattle (blue) or human (orange). The minimum SNP distance between all isolates in the LPL, and the number of human and cattle isolates after down-sampling are shown for each LPL. The majority of ancestral nodes inferred as cattle suggest cattle as the primary reservoir. The root was estimated at 1802 (95% HPD 1731, 1861). Eleven locally persistent lineages (LPLs) were identified, all in the G(vi) clade and labeled LPL 1 through 11. For each LPL, the minimum number of SNPs all isolates are within (30 was set as the maximum) and the number of human and cattle isolates within the LPL, not including down-sampled isolates, are shown. With down-sampled isolates reincorporated, LPLs accounted for 46 human (38.0%) and 71 cattle (65.7%) isolates. The structured coalescent model estimated 108 cattle-to-human state transitions between branches, compared to only 14 human-to-human transitions, inferring cattle as the origin of 88.5% of human lineages.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The posterior distributions of the four chains for the tree height, clock rate, kappa, cattle effective population size, human effective population size, and backward migration rate all differed substantially from the prior distribution, shown on the far right in green for each graph.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** LPLs are labeled as in the primary analysis (Figure 3). From an initial 121 human and 108 cattle isolates, our primary analysis contained 115 human and 84 cattle isolates after down-sampling. In this sensitivity analysis, we repeated our primary analysis with a subsample of 84 randomly selected isolates from humans and the 84 cattle isolates remaining after down-sampling. As in the primary analysis, cattle were inferred as the host of the majority of ancestral nodes. The root was estimated at 1796 (95% HPD 1722, 1859), very close to the root at 1802 estimated in the primary analysis. The most recent common ancestor (MRCA) of clade G(vi) strains in Alberta was inferred to be a cattle strain, dated to 1968 (95% HPD 1956, 1979), compared to 1969 in the primary analysis. We estimated 82 (95% HPD 79, 84) human lineages arose from cattle lineages, and 5 (95% HPD 0, 11) arose from other human lineages, meaning we inferred that 94.3% of human lineages arose from cattle lineages, compared to 88.5% in the primary analysis. The LPLs identified in this sensitivity analysis were mostly identical to those identified in the primary analysis. Differences in the sensitivity analysis were that G(vi)-AB LPL 8 expanded to a larger set of isolates; G(vi)-AB LPL 9, which included only five isolates in the primary analysis, was no longer identified as an LPL, as it no longer met the five-isolate criterion; and there were minor topological changes.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Across the four chains, 1,070,460,000 trees were sampled. Depicted here are 963,414,000 post-burn-in trees, with panels A-D each showing the trees from one chain. Lineages inferred with cattle ancestry are shown in blue, lineages inferred with human ancestry are shown in green. Reflecting the strong support for the lineages identified as locally persistent lineages (LPLs), the tree topology is well resolved.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** LPL 50.1 includes G(vi)-AB LPLs 1, 2, and 3 from the primary analysis using a SNP threshold of 30. LPLs 50.2 and 50.3 correspond to G(vi)-AB LPLs 4 and 5, respectively. LPL 50.4 includes G(vi)-AB LPLs 6, 7, and 8. LPL 75.1 includes all of the above locally persistent lineages (LPLs) at the lower thresholds. All 50- and 75- threshold LPLs in this section of the tree include isolates not included at the lower SNP threshold(s). No part of LPLs 50.5 or 50.6 was identified as an LPL using a threshold of 30, but LPLs 50.7 and 50.8 correspond exactly to G(vi)-AB LPLs 9 and 10. LPL 75.2 includes LPLs 50.5–50.8 and G(vi)-AB LPLs 9 and 10. G(vi)-AB LPL 11, LPL 50.9, and LPL 75.3 are all identical. At the 75-SNP threshold, two additional LPLs are identified with no corresponding LPLs at the 30- or 50-SNP thresholds. One of these is outside the G(vi) clade.
+
+### Locally persistent lineages account for the majority of ongoing human disease
 
 In our primary analysis, we identified 11 locally persistent lineages (LPLs) (Figure 3). After reincorporating down-sampled isolates, LPLs included a range of 5 (G(vi)-AB LPL 9)–26 isolates (G(vi)-AB LPL 1), with an average of 10. LPL assignment was based on the MCC tree of the combination of four independent chains. LPLs persisted for 5–9 y, with the average LPL spanning 8 y. By definition, MRCAs of each LPL were required to have a posterior probability ≥95% on the MCC tree, and in practice, all had posterior probabilities of 99.7–100%. Additionally, examining all trees sampled from the four chains supported the same major lineages (Figure 3—figure supplement 3). Our sensitivity analysis of equal numbers of isolates from cattle and humans identified 10 of the same 11 LPLs (Figure 3—figure supplement 2). G(vi)-AB LPL 9 was no longer identified as an LPL, because it fell below the five-isolate threshold after subsampling. Additionally, G(vi)-AB LPL 8 expanded to include a neighboring branch.
 
@@ -68,21 +369,84 @@ To understand long-term persistence, we expanded the phylogeny with additional A
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig4-v1.jpg)
 
-**Figure 4.:** E. coli O157:H7 analysis to include 229 randomly selected study isolates and 430 additional public health isolates available from 2009–2019.The maximum clade credibility (MCC) tree was constructed from a coalescent analysis with constant population size after down-sampling. Six locally persistent lineages (LPLs) in clade G(vi) continued to be associated with the disease after the initial study period. LPLs are colored and labeled as in Figure 3. After re-incorporating the down-sampled isolates, 74.7% of reported cases in 2018 and 2019 were associated with an LPL.
+**Figure 4.:** The maximum clade credibility (MCC) tree was constructed from a coalescent analysis with constant population size after down-sampling. Six locally persistent lineages (LPLs) in clade G(vi) continued to be associated with the disease after the initial study period. LPLs are colored and labeled as in Figure 3. After re-incorporating the down-sampled isolates, 74.7% of reported cases in 2018 and 2019 were associated with an LPL.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig5-v1.jpg)
 
-**Figure 5.:** stx) profile by locally persistent lineage (LPL) status of extended analysis of Alberta, Canada E. coli O157:H7 isolated from cattle and humans, 2007–2019.The stx profile across all clades shifted from the initial study period (2007–2015) to the later study period (2016–2019), with more of the virulent stx2a-only profile observed in 2018 and 2019 than in previous years. In 2018 and 2019, 51.2% of LPL isolates carried only stx2a, compared to 10.9% of non-LPL isolates. The peak in sequences in 2014 is due to two outbreaks; routine sequencing began in 2018 and 2019, accounting for the rise in sequenced cases during those years.
+**Figure 5.:** The stx profile across all clades shifted from the initial study period (2007–2015) to the later study period (2016–2019), with more of the virulent stx2a-only profile observed in 2018 and 2019 than in previous years. In 2018 and 2019, 51.2% of LPL isolates carried only stx2a, compared to 10.9% of non-LPL isolates. The peak in sequences in 2014 is due to two outbreaks; routine sequencing began in 2018 and 2019, accounting for the rise in sequenced cases during those years.
 
 All five large (≥10 cases) sequenced outbreaks in Alberta during the study period were within clade G(vi). G(vi)-AB LPLs 2 and 7 gave rise to three large outbreaks, accounting for 117 cases (both sequenced and unsequenced), including 83 from an extended outbreak by a single strain in 2018 and 2019, defined as isolates within five SNPs of one another. The two large outbreaks that did not arise from LPLs both occurred in 2014 and were responsible for 164 cases.
 
-## Locally persistent lineages were not imported
+### Locally persistent lineages were not imported
 
 Of the 494 U.S. isolates analyzed, nine (1.8%; 95% CI 0.8%, 3.4%) occurred within Alberta LPLs after re-incorporating down-sampled isolates (Figure 6). None of the 62 global isolates were associated with Alberta LPLs. The 9 U.S. isolates were part of G(vi)-AB LPLs 2 (n=3), 4 (n=4), 7 (n=1), and 11 (n=1), all of which had Alberta isolates that spanned 9–13 y and predated the U.S. isolates. There was no evidence of U.S. or global ancestors of LPLs. Based on migration events calculated from the structured tree, we estimated that 11.0% of combined human and cattle Alberta lineages were imported (Table 2). Alberta sequences were separated from U.S. and global sequences by a median of 63 (IQR 45–236) and 225 (IQR 209–249) SNPs, respectively.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig6-v1.jpg)
 
-**Figure 6.:** E. coli O157:H7 isolates.Tips are colored based on isolate origin, and locally persistent lineages (LPLs) from Figure 3 are highlighted. A total of nine U.S. isolates arose from Alberta LPLs 2, 4, 7, and 11, all of which had Alberta isolates predating the U.S. isolates. No global isolates were associated with Alberta LPLs. Clade A was excluded from the analysis due to its high level of divergence from the rest of the E. coli O157:H7 population.
+**Figure 6.:** Tips are colored based on isolate origin, and locally persistent lineages (LPLs) from Figure 3 are highlighted. A total of nine U.S. isolates arose from Alberta LPLs 2, 4, 7, and 11, all of which had Alberta isolates predating the U.S. isolates. No global isolates were associated with Alberta LPLs. Clade A was excluded from the analysis due to its high level of divergence from the rest of the E. coli O157:H7 population.
+
+**Table 2.**
+ Estimated migrations from structured coalescent analysis of Alberta, U.S., and global isolates, excluding clade A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Migration direction</th>
+      <th>Mean</th>
+      <th>95% HPD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alberta to Alberta</td>
+      <td>589</td>
+      <td>570, 609</td>
+    </tr>
+    <tr>
+      <td>Alberta to Global</td>
+      <td>8</td>
+      <td>4, 11</td>
+    </tr>
+    <tr>
+      <td>Alberta to U.S.</td>
+      <td>12</td>
+      <td>6, 16</td>
+    </tr>
+    <tr>
+      <td>Global to Alberta</td>
+      <td>68</td>
+      <td>57, 78</td>
+    </tr>
+    <tr>
+      <td>Global to Global</td>
+      <td>442</td>
+      <td>363, 511</td>
+    </tr>
+    <tr>
+      <td>Global to U.S.</td>
+      <td>296</td>
+      <td>267, 335</td>
+    </tr>
+    <tr>
+      <td>U.S. to Alberta</td>
+      <td>5</td>
+      <td>0, 14</td>
+    </tr>
+    <tr>
+      <td>U.S. to Global</td>
+      <td>13</td>
+      <td>0, 35</td>
+    </tr>
+    <tr>
+      <td>U.S. to U.S.</td>
+      <td>104</td>
+      <td>10, 184</td>
+    </tr>
+  </tbody>
+</table>
+
+_HPD, highest posterior density interval._
 
 Including U.S. and global isolates in the phylogeny did not change which LPLs we identified (Figure 6). The minimum SNPs that LPL isolates differed by was lower than in the Alberta-only analyses, because the core genome shared by all Alberta, U.S., and global isolates was smaller than that of only the Alberta isolates. Alberta sequences included in some LPLs changed slightly. G(vi)-AB LPL 4 lost three Alberta isolates from clinical cases, and G(vi)-AB LPLs 6 and 11 both lost one cattle and one human isolate from Alberta. In these LPLs, the isolates no longer included were the most outlying isolates in the LPLs defined using only Alberta isolates (Figure 4). Of the 217 Alberta human isolates from 2018 and 2019, 160 (73.7%) were still associated with LPLs after the addition of U.S. and global isolates, demonstrating the stability of the extended analysis results.
 
@@ -114,15 +478,23 @@ E. coli O157:H7 infections are a pressing public health problem in many high-inc
 
 ## Materials and methods
 
-## Study design and population
+### Study design and population
 
 We conducted a multi-host genomic epidemiology study in Alberta, Canada. Our primary analysis focused on 2007–2015 due to the availability of isolates from intensive provincial cattle studies (Stephens et al., 2009; Stanford et al., 2014; Stanford et al., 2013; Stanford et al., 2016). These studies rectally sampled feces from individual animals, hide swabs, fecal pats from the floors of pens of commercial feedlot cattle, or feces from the floors of transport trailers. In studies of pens of cattle, samples were collected from the same cattle at least twice over a 4 to 6 mo period. A one-time composite sample was collected from cattle in transport trailers, which originated from feedlots or auction markets in Alberta. To select both cattle and human isolates, we block randomized by year to ensure representation across the period. We define isolates as single bacterial species obtained from culture. We sampled 123 E. coli O157 cattle isolates from 4660 available. Selected cattle isolates represented 7 of 12 cattle study sites and 56 of 89 sampling occasions from the source studies (Stephens et al., 2009; Stanford et al., 2014; Stanford et al., 2013; Stanford et al., 2016). We sampled 123 of 1148 E. coli O157 isolates collected from cases reported to the provincial health authority (Alberta Health) during the corresponding time period (Appendix 1).
 
 In addition to the 246 isolates for the primary analysis, we contextualized our findings with two additional sets of E. coli O157:H7 isolates (Figure 7): 445 from Alberta Health from 2009 to 2019 and already sequenced as part of other public health activities and 1970 from the U.S. and elsewhere around the world between 1999 and 2019. The additional Alberta Health isolates were sequenced by the National Microbiology Laboratory (NML)-Public Health Agency of Canada (Winnipeg, Manitoba, Canada) as part of PulseNet Canada activities. Isolates sequenced by the NML for 2018 and 2019 constituted the majority of reported E. coli O157:H7 cases for those years (217 of 247; 87.9%). U.S. and global isolates from both cattle and humans were identified from previous literature (n=104) Franz et al., 2019 and BV-BRC (n=193). As both processed beef and live cattle are frequently imported into Alberta from the U.S., we selected additional E. coli O157:H7 sequences available through the U.S. CDC’s PulseNet BioProject PRJNA218110. From 2010–2019, 6,791 O157:H7 whole genome sequences were available from the U.S. PulseNet project, 1673 (25%) of which we randomly selected for assembly and clade typing.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig7-v1.jpg)
+
+**Figure 7.:** Three sets of isolates, all originating from cattle or humans, were included in the study.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97643/elife-97643-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** From the 246 isolates selected for sequencing for the study and 445 additional Alberta Health isolates included for contextualization, one isolate was removed prior to clustering analysis, because it was identified through metadata review as an environmental (non-human, non-cattle) isolate. Cluster 1 included the Sakai and EDL933 reference strains. Clusters 826 and 827 were novel clusters. Isolates outside of Cluster 1 were excluded from all subsequent analyses.
+
 This study was approved by the University of Calgary Conjoint Health Research Ethics Board, #REB19-0510. A waiver of consent was granted, and all case data were deidentified.
 
-## Whole genome sequencing, assembly, and initial phylogeny
+### Whole genome sequencing, assembly, and initial phylogeny
 
 The 246 isolates for the primary analysis were sequenced using Illumina NovaSeq 6000 and assembled into contigs using the Unicycler v04.9 pipeline, as described previously (BioProject PRJNA870153) (Bumunang et al., 2022). Raw read FASTQ files were obtained from Alberta Health for the additional 445 isolates sequenced by the NML and from NCBI for the 152 U.S. and 54 global sequences. We used the SRA Toolkit v3.0.0 to download sequences for U.S. and global isolates using their BioSample (i.e. SAMN) numbers. The corresponding FASTQ files could not be obtained for the six U.S. and seven global isolates we had selected (Figure 7).
 
@@ -132,13 +504,66 @@ Bactopia’s Snippy workflow, which incorporates Snippy v4.6.0, Gubbins v3.3.0, 
 
 After processing, we had 229 isolates (121 human, 108 cattle) in our primary sample and 430 additional Alberta Health isolates (Figure 7). We had 178 U.S. or global isolates from previous literature (n=88; U.S. n=41, global n=47) and BV-BRC (n=90; U.S. n=75, global n=15). Of the 1673 isolates randomly sampled from the U.S. PulseNet project, 1560 were successfully assembled and passed QC. These included 309 clade G isolates, all of which we included in the analysis; we also randomly sampled and included 69 non-clade G isolates from this sample.
 
-## Phylodynamic and statistical analyses
+### Phylodynamic and statistical analyses
 
 For our primary analysis, we created a timed phylogeny, a phylogenetic tree on the scale of time, in BEAST2 v2.6.7 using the structured coalescent model in the Mascot v3.0.0 package with demes for cattle and humans (Table 3). Sequences were down-sampled prior to analysis if within 0–2 SNPs and <3 m from another sequence from the same host type, leaving 115 human and 84 cattle isolates in the primary analysis (Table 3). The analysis was run using four different seeds to confirm that all converged to the same solution, and tree files were combined before generating a maximum clade credibility (MCC) tree. State transitions between cattle and human isolates over the entirety of the tree, with their 95% highest posterior density (HPD) intervals, were also calculated from the combined tree files. We determined the influence of the prior assumptions on the analysis (Table 3) with a run that sampled from the prior distribution (Appendix 1). We conducted a sensitivity analysis in which we randomly subsampled 84 of the human isolates so that both species had the same number of isolates in the analysis.
 
+**Table 3.**
+ Analyses conducted and model priors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Isolates included</th>
+      <th>Isolates remaining after down-sampling</th>
+      <th>Tree model</th>
+      <th>Substitution model</th>
+      <th>Clock model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primary analysis*</td>
+      <td>Alberta 2007–2015 (n=229)</td>
+      <td>115 human84 cattle</td>
+      <td>Structured coalescent with two demes (1 per species); Ne initial value 10 and Weibull distribution (shape = 1, scale = 100); migration initial value 1.0 and Exponential distribution (mean = 1)</td>
+      <td>HKY with empirical frequencies and discrete Gamma site model with four categories</td>
+      <td>Relaxed log-normal with initial value 1.5×10–5 and Log-Normal distribution (M=1.5×10–5, S=1.5, with mean in real space)</td>
+    </tr>
+    <tr>
+      <td>Alberta long-term persistence†</td>
+      <td>Alberta 2007–2019 (n=657)</td>
+      <td>274 human84 cattle</td>
+      <td>Coalescent constant population with Ne initial value 10 and Weibull distribution (shape = 1, scale = 100)</td>
+      <td>HKY with empirical frequencies and discrete Gamma site model with four categories</td>
+      <td>Relaxed log-normal with initial value 1.5×10–4 and Log-Normal distribution (M=1.5×10–4, S=1.5, with mean in real space)</td>
+    </tr>
+    <tr>
+      <td>Global circulation (unstructured)†</td>
+      <td>Alberta 2007–2019 (n=657) TheU.S.1999–2019 (n=492)Global 2007–2016 (n=61)</td>
+      <td>Alberta: 274 humans, 84 cattleU.S.: 312 humans, 38 cattleGlobal: 39 humans, 22 cattle</td>
+      <td>Coalescent constant population with Ne initial value 10 and Weibull distribution (shape = 1, scale = 100)</td>
+      <td>HKY with empirical frequencies and discrete Gamma site model with four categories</td>
+      <td>Relaxed log-normal with initial value 1.5×10–4 and Log-Normal distribution (M=1.5×10–4, S=1.5, with mean in real space)</td>
+    </tr>
+    <tr>
+      <td>Global circulation (structured)†</td>
+      <td>Alberta 2007–2019 (n=657) TheU.S.1999–2019 (n=492)Global 2007–2016 (n=61)</td>
+      <td>Alberta: 274 humans, 84 cattleU.S.: 312 humans, 38 cattleGlobal: 39 humans, 22 cattle</td>
+      <td>Structured coalescent with three demes (1 per geography); Ne initial value 10 and Weibull distribution (shape = 1, scale = 100); migration initial value 1.0 and Exponential distribution (mean = 1)</td>
+      <td>HKY with empirical frequencies and discrete Gamma site model with four categories</td>
+      <td>Relaxed log-normal with initial value 1.5×10–4 and Log-Normal distribution (M=1.5×10–4, S=1.5, with mean in real space)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*A primary analysis was run using four different random seeds to confirm that all converged to the same solution. The four runs were combined to produce the final maximum clade credibility tree and state transition estimates. Model priors from this analysis were also used in an analysis in which draws were taken from the prior distribution, as opposed to the posterior distribution, to confirm that the final results were not overly influenced by the choice of priors.†Clade A isolates were excluded from these analyses given the very small number available from any locale and clade A’s divergence from the rest of the clades._
+
 LPLs were identified based on following criteria: (1) a single lineage of the MCC tree with a most recent common ancestor (MRCA) with ≥95% posterior probability; (2) all isolates ≤30 core SNPs from one another; (3) contained at least 1 cattle isolate; (4) contained ≥5 isolates; and (5) the isolates were collected at sampling events (for cattle) or reported (for humans) over a period of at least 1 y. We counted the number of isolates associated with LPLs, including those down-sampled prior to the phylodynamic analysis. We conducted sensitivity analyses examining different SNP thresholds for the LPL definition.
 
-From non-LPL isolates, we estimated the number of local transient isolates vs. imported isolates. For the 121 human E. coli O157:H7 isolates in the primary sample prior to down-sampling, we determined what portion belonged to locally persistent lineages and what portion was likely to be from local transient E. coli O157:H7 populations vs. imported. Human isolates within the LPLs were enumerated (n=46). The 75 human isolates outside LPLs included 56 clade G(vi) isolates and 19 non-G(vi) isolates. Based on the MCC tree from the primary analysis, none of the non-G(vi) human isolates were likely to have been closely related to an isolate from the Alberta cattle population, suggesting that all 19 were imported. As a proportion of all non-LPL human isolates, these 19 constituted 25.3%. While it may be possible that all clade G(vi) isolates were part of a local evolving lineage, it is also possible that the exchange of both cattle and food from other locations was causing the regular importation of clade G(vi) strains and infections. Thus, we used the proportion of non-LPL human isolates outside the G(vi) clade to estimate the proportion of non-LPL human isolates within the G(vi) clade that were imported; i.e., 56×25.3%=14. We then conducted a similar exercise for cattle isolates.
+From non-LPL isolates, we estimated the number of local transient isolates vs. imported isolates. For the 121 human E. coli O157:H7 isolates in the primary sample prior to down-sampling, we determined what portion belonged to locally persistent lineages and what portion was likely to be from local transient E. coli O157:H7 populations vs. imported. Human isolates within the LPLs were enumerated (n=46). The 75 human isolates outside LPLs included 56 clade G(vi) isolates and 19 non-G(vi) isolates. Based on the MCC tree from the primary analysis, none of the non-G(vi) human isolates were likely to have been closely related to an isolate from the Alberta cattle population, suggesting that all 19 were imported. As a proportion of all non-LPL human isolates, these 19 constituted 25.3%. While it may be possible that all clade G(vi) isolates were part of a local evolving lineage, it is also possible that the exchange of both cattle and food from other locations was causing the regular importation of clade G(vi) strains and infections. Thus, we used the proportion of non-LPL human isolates outside the G(vi) clade to estimate the proportion of non-LPL human isolates within the G(vi) clade that were imported; i.e., $56\times25.3%=14$. We then conducted a similar exercise for cattle isolates.
 
 To contextualize our results in terms of the ongoing human disease burden, we created a timed phylogeny using a constant, unstructured coalescent model of the 199 Alberta isolates from the primary analysis and the additional Alberta Health isolates (Figure 7). The two sets of sequences were combined and down-sampled, leaving 272 human and 84 cattle isolates (Table 3). We identified LPLs as above, and leveraged the near-complete sequencing of isolates from 2018 and 2019 to calculate the proportion of reported human cases associated with LPLs.
 

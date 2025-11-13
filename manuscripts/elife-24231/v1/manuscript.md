@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.24231.001 New ages for flowstone, sediments and fossil bones from the Dinaledi Chamber are presented. We combined optically stimulated luminescence dating of sediments with U-Th and palaeomagnetic analyses of flowstones to establish that all sediments containing Homo naledi fossils can be allocated to a single stratigraphic entity (sub-unit 3b), interpreted to be deposited between 236 ka and 414 ka. This result has been confirmed independently by dating three H. naledi teeth with combined U-series and electron spin resonance (US-ESR) dating. Two dating scenarios for the fossils were tested by varying the assumed levels of 222 Rn loss in the encasing sediments: a maximum age scenario provides an average age for the two least altered fossil teeth of 253 +82/–70 ka, whilst a minimum age scenario yields an average age of 200 +70/–61 ka. We consider the maximum age scenario to more closely reflect conditions in the cave, and therefore, the true age of the fossils. By combining the US-ESR maximum age estimate obtained from the teeth, with the U-Th age for the oldest flowstone overlying Homo naledi fossils, we have constrained the depositional age of Homo naledi to a period between 236 ka and 335 ka. These age results demonstrate that a morphologically primitive hominin, Homo naledi, survived into the later parts of the Pleistocene in Africa, and indicate a much younger age for the Homo naledi fossils than have previously been hypothesized based on their morphology. DOI: http://dx.doi.org/10.7554/eLife.24231.001
+New ages for flowstone, sediments and fossil bones from the Dinaledi Chamber are presented. We combined optically stimulated luminescence dating of sediments with U-Th and palaeomagnetic analyses of flowstones to establish that all sediments containing Homo naledi fossils can be allocated to a single stratigraphic entity (sub-unit 3b), interpreted to be deposited between 236 ka and 414 ka. This result has been confirmed independently by dating three H. naledi teeth with combined U-series and electron spin resonance (US-ESR) dating. Two dating scenarios for the fossils were tested by varying the assumed levels of 222Rn loss in the encasing sediments: a maximum age scenario provides an average age for the two least altered fossil teeth of 253 +82/–70 ka, whilst a minimum age scenario yields an average age of 200 +70/–61 ka. We consider the maximum age scenario to more closely reflect conditions in the cave, and therefore, the true age of the fossils. By combining the US-ESR maximum age estimate obtained from the teeth, with the U-Th age for the oldest flowstone overlying Homo naledi fossils, we have constrained the depositional age of Homo naledi to a period between 236 ka and 335 ka. These age results demonstrate that a morphologically primitive hominin, Homo naledi, survived into the later parts of the Pleistocene in Africa, and indicate a much younger age for the Homo naledi fossils than have previously been hypothesized based on their morphology.
 
 ## Introduction
 
@@ -52,23 +52,23 @@ In this paper we present results of uranium-thorium (U-Th) disequilibrium, elect
 
 The age of the hominins in the Dinaledi Chamber has implications for our understanding of the mode and tempo of the morphological evolution of hominins (Hawks and Berger, 2016), raising questions about evolutionary stasis and the role of refugia. The results challenge our ability to associate given hominin species to specific cultures and behaviours in the past. These issues are discussed in greater detail in an accompanying paper (Berger et al., 2017).
 
-## Geological setting
+### Geological setting
 
 The caves in the Cradle of Humankind (CoH), South Africa have yielded rich fossil assemblages of late Pliocene to early Pleistocene age, which include a range of hominin species (A. africanus, A. prometheus, A. sediba, P. robustus, H. ergaster, H. naledi and early Homo) and associated mammals, reptiles, and birds (e.g., Vrba, 1975, 1995; Brain, 1993; Tobias, 2000; Berger et al., 2010, 2015). For the past 3 million years, hominin-bearing deposits in caves formed in broadly similar settings, involving debris cone accumulations near cave openings (Partridge, 1973; Wilkinson, 1985; Brain, 1993; Pickering et al., 2007; de Ruiter et al., 2009; Dirks and Berger, 2013; Herries and Adams, 2013; Dirks et al., 2010, 2016b; Bruxelles et al., 2014; Stratford et al., 2014), with deposits cemented by carbonate-rich waters dripping from cave ceilings (e.g., Wilkinson, 1985; Pickering et al., 2011b). In contrast to all other hominin deposits in the CoH, the deposits that host H. naledi in Rising Star Cave are composed of largely unconsolidated, mud-clast breccia in a mud matrix with no evidence of coarse clastic sediment being carried in by water flow. This suggests a different depositional regime and timing for the sediments and the fossils (Dirks et al., 2015, Dirks et al., 2016a).
 
-Rising Star Cave is situated in the Bloubank River valley, 2.2 km W of Sterkfontein Cave. The cave system comprises several kilometres of mapped passageways (
+Rising Star Cave is situated in the Bloubank River valley, 2.2 km W of Sterkfontein Cave. The cave system comprises several kilometres of mapped passageways (Figure 1a) that are stratigraphically bound to a 20–30 m-thick, chert-poor dolomite horizon capped by a 1–1.3 m-thick chert unit that forms the roof to the cave system (Dirks et al., 2015). Geological mapping and laser-theodolite surveys indicate that this roof is intact and not penetrated by significant shafts that open to surface (Dirks et al., 2015; Kruger et al., 2016). The broader geological setting of the cave is discussed in Dirks et al. (2015), (Dirks et al., 2016a).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig1-v1.jpg)
 
-**Figure 1.:** (a) Simplified geological map showing the position of the Rising Star Cave (in grey); (b) close-up map of the Dinaledi Chamber showing the distribution of the dating samples, including: U-Th flowstone samples (yellow dots, black text); ESR samples (purple dots, orange text); and OSL samples (red dots, blue text). Age estimates for the different samples are shown, with cross reference to Tables 1, 7 and 8.DOI: http://dx.doi.org/10.7554/eLife.24231.003
+**Figure 1.:** (a) Simplified geological map showing the position of the Rising Star Cave (in grey); (b) close-up map of the Dinaledi Chamber showing the distribution of the dating samples, including: U-Th flowstone samples (yellow dots, black text); ESR samples (purple dots, orange text); and OSL samples (red dots, blue text). Age estimates for the different samples are shown, with cross reference to Tables 1, 7 and 8.
 
-The Dinaledi Chamber, which contains most of the fossils of
+The Dinaledi Chamber, which contains most of the fossils of H. naledi, is ~30 m below surface and ~80 m in a straight line from the nearest present-day opening to the surface (Figure 1a). The main cavity forming the Dinaledi Chamber is ~15 m long with variable widths not exceeding 2.5 meters (Figure 1b), and expands near the intersection with a crosscutting passage, which is the location of the main excavation site to date (Figure 1b). There is no evidence that the present entrance into the Dinaledi Chamber has significantly changed since the deposition of the fossil hominins, with sediment accumulating mostly near the current access point (Dirks et al., 2015, Dirks et al., 2016a; Figure 2). Samples for dating were collected from the various flowstone horizons and stratigraphic units exposed in the Dinaledi Chamber (Figures 1b, 2, 3, 4 and 5) as well as from fossil material itself (Figures 4, 6 and 7).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig2-v1.jpg)
 
-**Figure 2.:** The positions of the section lines are shown in (a); a face map of the entry zone of the Dinaledi Chamber (looking NE) is shown in (b); geological cross-sections through the central part of the Dinaledi Chamber near the excavation pit are shown in (c) and (d).DOI: http://dx.doi.org/10.7554/eLife.24231.004
+**Figure 2.:** The positions of the section lines are shown in (a); a face map of the entry zone of the Dinaledi Chamber (looking NE) is shown in (b); geological cross-sections through the central part of the Dinaledi Chamber near the excavation pit are shown in (c) and (d).
 
-## Lithologic and stratigraphic context for dating
+### Lithologic and stratigraphic context for dating
 
 The Dinaledi Chamber contains deposits of fine-grained, muddy sediments intercalated with flowstone drapes. The sediments include various types of orange, laminated mudstone and mud clast breccia distributed across three broad lithostratigraphic units (Units 1, 2 and 3; Dirks et al., 2015) that filled parts of the chamber over time. Based on variations in sediment composition, fossil content and/or stratigraphic position of each unit, we have divided Unit 1 into sub-units 1a, 1b and 1c, and Unit 3 into sub-units 3a and 3b, to more precisely define the stratigraphic packages targeted for dating (Figure 2). The units are separated by erosional unconformities or flowstone intercalations, but do not all necessarily occur in direct contact with one another due to the complex nature of caves as depositional systems (e.g., Brain, 1993; Martini et al., 2003). In addition, apart from sediments accumulating along the floor of the cave chamber, sediment in the form of orange mud deposits also accumulated inside fractures and along ledges higher up in the Dinaledi Chamber (Figure 2b), where it formed as a result of the combined effect of in situ weathering and deposition from water flowing down fractures and side walls. All units and sub-units are time-transgressive, meaning that they are lithostratigraphic units and not chronostratigraphic units that occur in strict temporal order. Periods of sedimentation alternated with periods of erosion, during which sediments were either redeposited or removed from the chamber via floor drains, resulting in erosional remnants of all units occurring in a variety of stratigraphic positions (Dirks et al., 2015).
 
@@ -88,7 +88,7 @@ Unit 3 is composed of largely unlithified, clast-supported, mud clast breccia (F
 
 Unit 3 has been divided into a lower and an upper sub-unit, termed sub-unit 3a and 3b (Figure 2), based on the respective absence or presence of hominin fossils. Sediments belonging to sub-unit 3a are not directly exposed in the chamber, but their presence has been confirmed in the deepest part of the excavation area (Figure 2d). In contrast sub-unit 3b is exposed within the talus cone near the entry shaft and along the cave floor, and contains all of the known H. naledi fossils in the chamber (Figure 2c and d). The thickness of sub-unit 3b is thought to be no more than 20–30 cm (see below).
 
-## The distribution of fossils, units, and flowstones
+#### The distribution of fossils, units, and flowstones
 
 All hominin bones identified in the Dinaledi Chamber are contained in deposits of sub-unit 3b. Bones attributed to H. naledi have been recovered as: (a) isolated elements that weathered out from erosion remnants of sub-unit 3b below Flowstones 1b-e; (b) as fragmented remains scattered across the cave floor; and (c) as partly articulated remains from a single excavation pit down to a depth of ~20 cm below the current floor level (Dirks et al., 2015).
 
@@ -104,7 +104,7 @@ Flowstone Group 2 covers erosion remnants of Flowstones 1a-e as coatings and sta
 
 In summary, the stratigraphic context indicates that the H. naledi fossils entered the cave during deposition (and possibly during partial reworking) of sub-unit 3b, after deposition of the older sediments of Unit 1 (sub-unit 1a) and Unit 2. Several isolated, non-hominin bone fragments in hanging erosion remnants of Unit 2 and a single baboon tooth in floor sediments in sub-unit 3a were deposited prior to the entry of the hominin remains. The accumulation of Unit 3 along the cave floor involved a dynamic interplay between the accumulation of mud clast breccia below sediment entry points or in situ sediment sources (Unit 1 and Unit 2) in the chamber, and erosion through floor drains resulting in contrasting stratigraphic relationships across the chamber (Figures 2 and 8).
 
-## Dating the H. naledi fossils
+### Dating the H. naledi fossils
 
 Most fossil deposits in the Cradle of Humankind that have been dated are between 0.5 and 3.7 Ma old and consist of bone material encased in well-cemented hard clastic rocks commonly referred to as cave breccia (e.g., Wilkinson, 1985; O'Regan and Reynolds, 2009; Herries et al., 2009; Pickering et al., 2011b; Granger et al., 2015). In the absence of volcanic deposits, it is generally difficult to obtain accurate ages for the fossils, not just because reliable techniques are few, but mostly because the stratigraphic sequences in the caves are complex, discontinuous and frequently reworked (e.g., Brain, 1993; Pickering et al., 2011a; Bruxelles et al., 2014; Stratford et al., 2014). Workers have relied on a combination of biochronology of faunal remains, palaeomagnetic work and a range of radiometric methods, including U-Pb, U-Th and ESR dating targeting flowstones and fossil teeth (e.g., Vrba, 1975; Partridge et al., 1999; Berger et al., 2002; Walker et al., 2006; Herries et al., 2006, 2013, 2014; Herries and Shaw, 2011; Dirks et al., 2010; Pickering and Kramers, 2010; Pickering et al., 2011a; Herries and Adams, 2013), as well as limited cosmogenic (10Be, 16Al) dating (e.g., Partridge et al., 2003; Granger et al., 2015; Dirks et al., 2016b). Whilst some of these techniques are well established, others such as the application of cosmogenic isochrons (e.g., Granger et al., 2015) are relatively new and not without significant analytical (and interpretative) challenges (Kramers and Dirks, 2017), and all efforts are strongly dependent on the stratigraphic interpretation of the fossils or units that are being dated.
 
@@ -126,13 +126,709 @@ Once results were obtained for ESR and U-Th dating, it became apparent that OSL 
 
 ## Results
 
-## U-Th dating of flowstones
+### U-Th dating of flowstones
 
-U-Th dating of 17 flowstone samples (
+U-Th dating of 17 flowstone samples (Figure 3) has yielded minimum depositional age estimates for the sedimentary units they overlie, and has provided insights into the timing of flowstone formation events (Tables 1, 2 and 3). Three separate checks were built into the U-Th dating strategy to ensure robust results would be obtained. Independent dates for the same samples were obtained by laboratories at JCU and at the University of Melbourne (UoM), with results displaying a high degree of concordance. In instances where samples were obtained from the same flowstone layer, but at different stratigraphic levels (e.g., sample pairs RS13 and RS18, RS22 and RS23, RS16 and RS17, and RS11 and RS21) all ages are consistent with stratigraphic order, and blind duplicates of the same sample (RS1 and RS15) returned identical results within error, indicating that results are both accurate and precise. Double blind U-Th results from JCU and UoM are shown in Tables 2 and 3, respectively. The distribution of flowstone ages across the Dinaledi Chamber is shown in Figures 1b and 2.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig3-v1.jpg)
 
-**Figure 3.:** The flowstone groups (i.e., Flowstone Groups 1, 2 or 3), sample numbers, and ages (2σ uncertainty), as listed in Table 1, are shown below each sample. Ages reported here are from JCU, unless otherwise stated.DOI: http://dx.doi.org/10.7554/eLife.24231.005
+**Figure 3.:** The flowstone groups (i.e., Flowstone Groups 1, 2 or 3), sample numbers, and ages (2σ uncertainty), as listed in Table 1, are shown below each sample. Ages reported here are from JCU, unless otherwise stated.
+
+**Table 1.**
+ Summary table of U-Th disequilibrium ages obtained for samples from the Dinaledi Chamber by James Cook University (JCU - 1) and the University of Melbourne (UoM - 2). The detailed analytical results are shown in Tables 2 and 3. Sample locations are shown in Figure 1b. The data are ranked by increasing age of the oldest flowstone horizon within the sample, based on the JCU ages. The grey shading highlights the different age groupings observed within the flowstones: 24–32 ka, ~50 ka, 88–105 ka, ~242 ka, ~290 ka and >440 ka. Ages are reported relative to 1950.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample ID</th>
+      <th>Flowstone group</th>
+      <th>Underlying unit</th>
+      <th>Age1 (ka)</th>
+      <th>2σ1 (ka)</th>
+      <th>Age2 (ka)</th>
+      <th>2σ2 (ka)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RS19</td>
+      <td>FS2</td>
+      <td>sub-unit 3b</td>
+      <td>24.7</td>
+      <td>0.2</td>
+      <td>24.53</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>RS11</td>
+      <td>FS3 (top to RS21)</td>
+      <td>FS2</td>
+      <td>9.05</td>
+      <td>0.06</td>
+      <td>9.946</td>
+      <td>0.063</td>
+    </tr>
+    <tr>
+      <td>RS21</td>
+      <td>FS2 (base to RS11)</td>
+      <td>sub-unit 3b</td>
+      <td>28.4</td>
+      <td>0.4</td>
+      <td>28.62</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>RS10</td>
+      <td>FS2</td>
+      <td>sub-unit 3b (and bone)</td>
+      <td>30.1</td>
+      <td>0.3</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>RS20</td>
+      <td>FS2</td>
+      <td>sub-unit 1a (Facies 1a; OSL5)</td>
+      <td>30.4</td>
+      <td>0.2</td>
+      <td>32.12</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>RS6</td>
+      <td>FS2</td>
+      <td>sub-unit 1a, sub-unit 3b</td>
+      <td>49.8</td>
+      <td>0.3</td>
+      <td>50.82</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>RS15</td>
+      <td>FS2 (blind duplicate of RS1)</td>
+      <td>sub-unit 3b</td>
+      <td>92.6</td>
+      <td>1.0</td>
+      <td>91.40</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>RS1</td>
+      <td>FS2 (blind duplicate of RS15)</td>
+      <td>sub-unit 3b</td>
+      <td>–</td>
+      <td>–</td>
+      <td>91.04</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>RS8</td>
+      <td>FS2 (below FS1a-e)</td>
+      <td>sub-unit 3b</td>
+      <td>95.0</td>
+      <td>1.0</td>
+      <td>96.29</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>RS14</td>
+      <td>FS2</td>
+      <td>in drain, along dolostone wall</td>
+      <td>100.1</td>
+      <td>1.2</td>
+      <td>96.20</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>RS17</td>
+      <td>FS2 (top to RS16)</td>
+      <td>in drain, along dolostone wall</td>
+      <td>102.6</td>
+      <td>0.8</td>
+      <td>98.6</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>RS16</td>
+      <td>FS2 (base to RS17)</td>
+      <td>in drain, along dolostone wall</td>
+      <td>104.0</td>
+      <td>1.9</td>
+      <td>99.1</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>RS13</td>
+      <td>FS2 (rim to RS18)</td>
+      <td>sub-unit 3b</td>
+      <td>–</td>
+      <td>–</td>
+      <td>88.46</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>RS18</td>
+      <td>FS1c (core to RS13)</td>
+      <td>sub-unit 3b</td>
+      <td>242</td>
+      <td>5</td>
+      <td>242.9</td>
+      <td>6.6</td>
+    </tr>
+    <tr>
+      <td>RS5</td>
+      <td>FS1</td>
+      <td>sub-unit 1b (Facies 1b; OSL4)</td>
+      <td>290</td>
+      <td>6</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>RS22</td>
+      <td>FS1a (top to RS23)</td>
+      <td>Unit 2</td>
+      <td>equilibrium</td>
+      <td>–</td>
+      <td>478</td>
+      <td>+107/−41</td>
+    </tr>
+    <tr>
+      <td>RS23</td>
+      <td>FS1a (base to RS22)</td>
+      <td>Unit 2</td>
+      <td>equilibrium</td>
+      <td>–</td>
+      <td>502</td>
+      <td>+181/−53</td>
+    </tr>
+    <tr>
+      <td>RS9</td>
+      <td>n/a (surface outcrop)</td>
+      <td>n/a</td>
+      <td>equilibrium</td>
+      <td>–</td>
+      <td>equilibrium</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_1James Cook University (JCU), Advanced Analytical Centre. 2University of Melbourne (UoM), paleochronology laboratory._
+
+**Table 2.**
+ U-Th data table for James Cook University. Uncertainties include: analytical error, decay constant uncertainty, and uncertainty on initial 230Th/232Th. Ages are reported relative to 1950 and assume an initial 230Th/232Th activity of 0.83 ± 0.5, and the equation given in Placzek et al. (2006). Decay constants for 234U and 230Th are from Cheng et al. (2013).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample ID</th>
+      <th>U (ppm)</th>
+      <th>234U/238U</th>
+      <th>2σ</th>
+      <th>230Th/238U</th>
+      <th>2σ</th>
+      <th>232Th/238U</th>
+      <th>2σ</th>
+      <th>Age (ka BP)</th>
+      <th>2σ (ka)</th>
+      <th>234U/238Uinitial</th>
+      <th>2σ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(activity)</td>
+      <td></td>
+      <td>(activity)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(corrected)</td>
+      <td></td>
+      <td>(activity)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS11</td>
+      <td>2.314</td>
+      <td>1.772</td>
+      <td>0.050</td>
+      <td>0.144</td>
+      <td>0.001</td>
+      <td>0.0001088</td>
+      <td>0.0000005</td>
+      <td>9.05</td>
+      <td>0.06</td>
+      <td>1.8184</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>RS19</td>
+      <td>0.652</td>
+      <td>1.855</td>
+      <td>0.001</td>
+      <td>0.387</td>
+      <td>0.002</td>
+      <td>0.002176</td>
+      <td>0.000008</td>
+      <td>24.7</td>
+      <td>0.2</td>
+      <td>1.989</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>RS21</td>
+      <td>0.421</td>
+      <td>1.946</td>
+      <td>0.001</td>
+      <td>0.460</td>
+      <td>0.004</td>
+      <td>0.001920</td>
+      <td>0.000015</td>
+      <td>28.4</td>
+      <td>0.4</td>
+      <td>2.109</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>RS10</td>
+      <td>0.846</td>
+      <td>1.885</td>
+      <td>0.001</td>
+      <td>0.466</td>
+      <td>0.003</td>
+      <td>0.000792</td>
+      <td>0.000003</td>
+      <td>30.1</td>
+      <td>0.3</td>
+      <td>2.053</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>RS20</td>
+      <td>0.795</td>
+      <td>1.855</td>
+      <td>0.001</td>
+      <td>0.463</td>
+      <td>0.003</td>
+      <td>0.001363</td>
+      <td>0.000005</td>
+      <td>30.4</td>
+      <td>0.2</td>
+      <td>2.022</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>RS6</td>
+      <td>0.560</td>
+      <td>1.966</td>
+      <td>0.001</td>
+      <td>0.747</td>
+      <td>0.003</td>
+      <td>0.000974</td>
+      <td>0.000002</td>
+      <td>49.8</td>
+      <td>0.3</td>
+      <td>2.263</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>RS15</td>
+      <td>0.400</td>
+      <td>1.912</td>
+      <td>0.001</td>
+      <td>1.164</td>
+      <td>0.008</td>
+      <td>0.00472</td>
+      <td>0.00001</td>
+      <td>92.6</td>
+      <td>1.0</td>
+      <td>2.484</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>RS8</td>
+      <td>0.328</td>
+      <td>1.813</td>
+      <td>0.003</td>
+      <td>1.120</td>
+      <td>0.008</td>
+      <td>0.00316</td>
+      <td>0.00002</td>
+      <td>95.0</td>
+      <td>1.0</td>
+      <td>2.373</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>RS14</td>
+      <td>0.734</td>
+      <td>1.639</td>
+      <td>0.095</td>
+      <td>1.039</td>
+      <td>0.008</td>
+      <td>0.00298</td>
+      <td>0.00002</td>
+      <td>100.1</td>
+      <td>1.2</td>
+      <td>2.175</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>RS17</td>
+      <td>0.680</td>
+      <td>1.609</td>
+      <td>0.001</td>
+      <td>1.032</td>
+      <td>0.005</td>
+      <td>0.000679</td>
+      <td>0.000001</td>
+      <td>102.6</td>
+      <td>0.8</td>
+      <td>2.150</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>RS16</td>
+      <td>0.973</td>
+      <td>1.583</td>
+      <td>0.000</td>
+      <td>1.024</td>
+      <td>0.011</td>
+      <td>0.000403</td>
+      <td>0.000006</td>
+      <td>104.0</td>
+      <td>1.9</td>
+      <td>2.12</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>RS18</td>
+      <td>0.152</td>
+      <td>1.848</td>
+      <td>0.001</td>
+      <td>1.856</td>
+      <td>0.013</td>
+      <td>0.01175</td>
+      <td>0.00005</td>
+      <td>242</td>
+      <td>5</td>
+      <td>3.66</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>RS5</td>
+      <td>0.090</td>
+      <td>1.728</td>
+      <td>0.001</td>
+      <td>1.818</td>
+      <td>0.009</td>
+      <td>0.01732</td>
+      <td>0.00005</td>
+      <td>290</td>
+      <td>6</td>
+      <td>3.92</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>RS23</td>
+      <td>0.314</td>
+      <td>1.187</td>
+      <td>0.002</td>
+      <td>1.315</td>
+      <td>0.011</td>
+      <td>0.00346</td>
+      <td>0.00002</td>
+      <td>&gt;400</td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS22</td>
+      <td>0.367</td>
+      <td>1.209</td>
+      <td>0.001</td>
+      <td>1.322</td>
+      <td>0.008</td>
+      <td>0.000125</td>
+      <td>0.000001</td>
+      <td>&gt;400</td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS9</td>
+      <td>0.737</td>
+      <td>1.007</td>
+      <td>0.002</td>
+      <td>1.029</td>
+      <td>0.004</td>
+      <td>0.000462</td>
+      <td>0.000001</td>
+      <td>&gt;400</td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ U-Th data table for the University of Melbourne. Activity ratios are determined after Hellstrom (2003) and Drysdale et al. (2012). Ages are corrected for initial 230Th using Equation 1 of Hellstrom (2006), the decay constants of Cheng et al. (2013), and an initial 230Th/232Th activity of 1.5 ± 1.5. The initial 234U/238U ratios are calculated using corrected ages, which are reported relative to 1950.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample ID</th>
+      <th>U (ppm)</th>
+      <th>234U/238U</th>
+      <th>2σ</th>
+      <th>230Th/238U</th>
+      <th>2σ</th>
+      <th>232Th/238U</th>
+      <th>2σ</th>
+      <th>Age (ka BP)</th>
+      <th>2σ (ka)</th>
+      <th>234U/238Uinitial</th>
+      <th>2σ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(activity)</td>
+      <td></td>
+      <td>(activity)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(corrected)</td>
+      <td></td>
+      <td>(activity)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS11</td>
+      <td>1.518</td>
+      <td>1.808</td>
+      <td>0.003</td>
+      <td>0.1597</td>
+      <td>0.0009</td>
+      <td>0.0000875</td>
+      <td>0.0000004</td>
+      <td>9.946</td>
+      <td>0.063</td>
+      <td>1.831</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>RS19</td>
+      <td>0.501</td>
+      <td>1.884</td>
+      <td>0.011</td>
+      <td>0.3916</td>
+      <td>0.0026</td>
+      <td>0.004322</td>
+      <td>0.000010</td>
+      <td>24.53</td>
+      <td>0.43</td>
+      <td>1.947</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>RS21</td>
+      <td>0.361</td>
+      <td>1.968</td>
+      <td>0.011</td>
+      <td>0.4654</td>
+      <td>0.0030</td>
+      <td>0.0011342</td>
+      <td>0.0000019</td>
+      <td>28.62</td>
+      <td>0.29</td>
+      <td>2.049</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>RS20</td>
+      <td>0.626</td>
+      <td>1.878</td>
+      <td>0.011</td>
+      <td>0.4925</td>
+      <td>0.0032</td>
+      <td>0.0023837</td>
+      <td>0.0000040</td>
+      <td>32.12</td>
+      <td>0.38</td>
+      <td>1.961</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>RS6</td>
+      <td>0.276</td>
+      <td>2.023</td>
+      <td>0.004</td>
+      <td>0.7856</td>
+      <td>0.0021</td>
+      <td>0.00496</td>
+      <td>0.00010</td>
+      <td>50.82</td>
+      <td>0.43</td>
+      <td>2.181</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>RS13</td>
+      <td>0.076</td>
+      <td>2.006</td>
+      <td>0.004</td>
+      <td>1.1837</td>
+      <td>0.0047</td>
+      <td>0.004786</td>
+      <td>0.000058</td>
+      <td>88.46</td>
+      <td>0.67</td>
+      <td>2.291</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>RS15</td>
+      <td>0.381</td>
+      <td>1.934</td>
+      <td>0.004</td>
+      <td>1.1661</td>
+      <td>0.0029</td>
+      <td>0.00639</td>
+      <td>0.00012</td>
+      <td>91.37</td>
+      <td>0.65</td>
+      <td>2.209</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>RS14</td>
+      <td>0.665</td>
+      <td>1.626</td>
+      <td>0.003</td>
+      <td>1.0010</td>
+      <td>0.0015</td>
+      <td>0.001262</td>
+      <td>0.000014</td>
+      <td>96.24</td>
+      <td>0.36</td>
+      <td>1.822</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>RS8</td>
+      <td>0.257</td>
+      <td>1.831</td>
+      <td>0.004</td>
+      <td>1.1397</td>
+      <td>0.0034</td>
+      <td>0.005746</td>
+      <td>0.000060</td>
+      <td>96.29</td>
+      <td>0.69</td>
+      <td>2.091</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>RS17</td>
+      <td>0.517</td>
+      <td>1.637</td>
+      <td>0.009</td>
+      <td>1.0248</td>
+      <td>0.0066</td>
+      <td>0.0023963</td>
+      <td>0.0000037</td>
+      <td>98.6</td>
+      <td>1.4</td>
+      <td>1.841</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>RS16</td>
+      <td>0.905</td>
+      <td>1.590</td>
+      <td>0.010</td>
+      <td>0.9963</td>
+      <td>0.0067</td>
+      <td>0.0017099</td>
+      <td>0.0000037</td>
+      <td>99.1</td>
+      <td>1.4</td>
+      <td>1.780</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>RS18</td>
+      <td>0.104</td>
+      <td>2.001</td>
+      <td>0.011</td>
+      <td>2.0320</td>
+      <td>0.0140</td>
+      <td>0.020557</td>
+      <td>0.000041</td>
+      <td>242.9</td>
+      <td>6.6</td>
+      <td>2.987</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>RS22</td>
+      <td>0.324</td>
+      <td>1.228</td>
+      <td>0.007</td>
+      <td>1.3017</td>
+      <td>0.0083</td>
+      <td>0.0001201</td>
+      <td>0.0000008</td>
+      <td>478</td>
+      <td>+107/–41</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>RS23</td>
+      <td>0.206</td>
+      <td>1.225</td>
+      <td>0.007</td>
+      <td>1.3016</td>
+      <td>0.0093</td>
+      <td>0.007818</td>
+      <td>0.000016</td>
+      <td>502</td>
+      <td>+181/–53</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>RS9</td>
+      <td>0.896</td>
+      <td>1.010</td>
+      <td>0.002</td>
+      <td>1.0204</td>
+      <td>0.0018</td>
+      <td>0.000916</td>
+      <td>0.000012</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
 
 The oldest dated flowstone in the assemblage is Flowstone 1a overlying Unit 2, which yields age estimates of 502 +181/–53 ka (RS 23) and 478 +107/–41 ka (RS 22) (Table 1). The next oldest age comes from a flowstone interpreted as Flowstone Group 1 overlying sediment of sub-unit 1b to the W of the excavation pit (Figure 1b) with an age of 290 ± 6 ka (RS5; Table 1). This age is younger than the OSL age derived from sub-unit 1a (OSL5), but is slightly older than OSL ages derived from sub-unit 1b in this location (OSL4; Figure 2c). This suggests that sub-unit 1a was deposited prior to precipitation of this flowstone and that sub-unit 1b formed out of stratigraphic order due to erosion and redeposition of the top of sub-unit 1a beneath this flowstone. However, the U-Th date for RS5 should be interpreted with caution as the flowstone has a porous texture (Figure 3a), which probably indicates some degree of dissolution and/or recrystallization of the primary calcite, and may have affected the U-Th systematics (see Discussion).
 
@@ -142,23 +838,1690 @@ An actively forming (i.e., dripping) stalagmite of Flowstone Group 3 (RS11) on t
 
 The spatial distribution of the flowstones belonging to the different age groups (Figure 1b) indicates that the oldest flowstones (Flowstone Group 1) occur near the entry zone into the chamber and as an erosional remnant (RS 5) near the back of a WNW-trending fracture W of the excavation pit. The 88–106 ka flowstones formed in three separate parts of the chamber (Figure 1b): (a) on top of older flowstones near the entry; (b) as wall drapes above a drain 6 m SW of the entry; and (c) deep within a N-trending fracture, 8 m N of the excavation pit. The ~ 50 ka flowstones originate from a W-trending fracture, 6 m W of the entry shaft where it overlies sub-unit 1a and sub-unit 3b sediments. The 24–32 ka flowstones all originate from around the area where the excavation pit is located at the intersection point of three fracture sets (Figure 1b). The youngest flowstone sample comes from below an active drip point, 1.5 m E of the excavation pit, and similar actively forming flowstones can be seen in other parts of the chamber. The flowstone age groupings indicate that episodic wet periods in the Dinaledi Chamber alternated with periods during which no flowstone was deposited.
 
-## U-Th analyses on teeth
+### U-Th analyses on teeth
 
-U-Th disequilibrium analyses of four tooth samples were conducted to constrain U uptake models into dental tissues used in ESR dating. The analyses were also used to provide apparent U-Th age estimates (Tables 4 and 5). Analyses of all four teeth (samples 1767, 1788 and1810 from H. naledi, and sample 1841 from Papio sp.) were performed at the University of Wollongong (UoW), in collaboration with Southern Cross University (SCU). Duplicate analyses of two of the tooth samples (samples 1788 and 1810) were conducted at Griffith University (GU) in collaboration with the Australian National University (ANU).10.7554/eLife.24231.009Table 4.Summary table of U-Th disequilibrium ages obtained for the three H. naledi teeth (samples 1767, 1788 and 1810) and the baboon tooth (sample 1841) from the Dinaledi Chamber obtained by SCU-UoW. No age calculations were carried out for U concentrations of ≤0.5 ppm or U/Th ≤250 (indicated in red and underlined). Mean values in this table only incorporate values from which meaningful ages could be calculated (indicated in black), however all values (i.e., red and black) were averaged to obtain the relevant mean values reported in Table 4. All uncertainties are given as 2σ.DOI: http://dx.doi.org/10.7554/eLife.24231.009Sample1767U (ppm)U/Th230Th/238U2σ234U/238U2σAge (ka)2s (ka)(234U/238U)i2σ1767-1 D7.226852.1670.0246.2590.00943.51.16.9490.0261767-2 D7.759962.2610.0236.2820.01045.51.17.0090.0301767-3 D8.031962.2250.8256.2760.012––––1767-4 D8.559512.2090.0316.3010.00944.11.47.0070.0301767-5* E3.6912382.2590.0316.1970.05546.21.86.9240.1261767-6* E1.761082.2391.1336.1650.038––––1767-7* E2.151092.3370.9476.2310.024––––1767-8* E2.465182.2760.0216.2530.01946.11.16.9860.048Mean:1767 D7.848772.2120.0266.2810.00944.51.26.9880.0291767 E3.088782.2680.0266.2250.03746.21.46.9550.087Sample1788U (ppm)U/Th230Th/238U2σ234U/238U2σAge (ka)2s (ka)(234U/238U)i2σ1788-1 D6.673902.9670.0266.4230.01161.41.57.4530.0541788-2 D7.081763.3700.8336.4410.010––––1788-3 D7.17603.2063.1266.3940.049––––1788-4 D7.4513913.3130.0236.4450.01070.31.47.6450.0561788-5 D5.5244233.2690.0236.3490.01070.41.47.5310.0521788-6 D5.0740903.4160.0146.3780.01474.11.17.6340.0541788-7 D5.3947293.3850.0206.4000.01472.91.47.6400.0541788-8 D5.9332093.4270.0156.3930.01374.21.17.6540.0541788-9 D5.2443293.4490.0146.4130.01474.51.07.6850.0521788-10 D4.8931613.3900.0106.4030.01173.00.97.6450.0521788-11 D4.825563.3940.0146.4160.01472.91.07.6590.0521788-12 D5.4816063.3560.0176.3840.01472.31.17.6090.0521788-13 D5.048383.3170.0256.4200.01470.71.57.6230.0581788-14 D5.69933.2812.4266.4080.013––––1788-15 D5.03723.3153.7316.4270.014––––1788-16 E0.1331.78618.1493.8340.267––––1788-17 E0.68250.7529.1496.2480.273––––1788-18 E0.4160.80113.0536.2360.050––––1788-19 E0.0831.78336.2314.3010.288––––1788-20 E1.023062.9900.1175.5410.15475.19.36.6170.3941788-21* E0.33502.04127.1355.7930.141––––1788-22* E0.12301.51324.8015.9750.098––––1788-23* E0.25341.36817.0715.9880.079––––1788-24* E0.36901.23713.5556.1670.055––––1788-25* E0.411071.0848.6726.2060.033––––1788-26* E0.481021.30211.3336.3840.081––––1788-27* E0.491650.6867.7336.3670.037––––1788-28* E0.311671.6156.9755.6020.246––––1788-29* E0.4462.31111.8985.5760.306––––1788-30 E0.44620.9885.3106.0890.075––––1788-31 E0.2981.06619.2566.1510.056––––1788-32 E0.23950.99417.4516.3520.064––––1788-33 E0.4161.10321.6516.3440.049––––1788-34 E0.28511.34011.4506.3820.061––––1788-35 E0.3541.28621.0886.3210.062––––1788-36 E0.41151.21612.8966.3720.041––––1788-37 E0.3611.10617.0596.3130.073––––1788-38 E0.542792.8100.2376.3000.06458.912.27.2620.270Mean:1788 D5.5927933.3350.0186.4020.01371.51.27.6160.0541788 E0.782932.9000.1775.9200.10967.010.86.9360.332Sample1810U (ppm)U/Th230Th/238U2σ234U/238U2σAge (ka)2s (ka)(234U/238U)i2σ1810-1 D7.073483.2310.0215.8140.01777.91.67.0030.0561810-2 D8.294113.1120.0305.8630.01073.42.16.9860.0621810-3 D8.889793.1060.0275.9290.01072.11.87.0460.0601810-4 D9.198333.0490.0445.9930.01169.42.67.0790.0661810-5 D9.175082.9370.0475.9900.00766.22.87.0200.0661810-6 D9.12553.1436.9195.9810.012––––1810-7 D7.954323.0990.0185.9770.01371.11.37.0890.0541810-8 D8.844892.9860.0746.0350.060674.17.0880.0841810-9 D9.39159053.1220.0135.8700.00673.61.16.9990.0521810-10 D9.7878393.1650.0175.8730.01174.81.37.0240.0541810-11 D9.0372423.1740.0305.8880.01574.82.07.0430.0581810-12 D9.5396263.1570.0195.8890.00974.31.47.0360.0541810-13 D10.19102403.0940.0185.9040.00872.21.37.0160.0521810-14 D10.64144633.1550.0305.9580.01073.11.97.0990.0581810-15 E0.0051−0.384146.0361.9650.186––––1810-16 E0.0022−1.06048.1681.0140.108––––1810-17 E0.00415.40317.5732.3570.194––––1810-18 E0.24553.1959.1094.0540.062––––1810-19 E0.544264.0090.1865.0540.109130.821.86.8720.4661810-20 E0.853283.6250.1194.2870.137146.822.75.9840.5241810-21 E0.41485.0094.4744.4940.186––––1810-22 E0.1577.6908.2254.3490.351––––1810-23 E0.0329.9121.8435.1530.599––––1810-24 E0.0100.661166.0561.8770.144––––1810-25 E0.0227.4089.3864.9640.557––––1810-26* E0.7333.7624.1004.7350.100––––1810-27* E0.1435.2714.5104.2550.112––––1810-28* E0.1853.5418.0794.5620.081––––1810-29* E0.2593.5117.0954.5620.058––––1810-30* E0.2134.0275.2914.0730.149––––1810-31* E0.0913.87539.1364.0290.072––––1810-32* E0.0522.4699.0994.1870.072––––1810-33* E0.0612.60224.1694.4260.141––––1810-34* E0.9120103.1310.0684.5610.032105.27.05.7980.1281810-35 E1.0134.29115.5144.0850.025––––1810-36 E0.04996.2978.8904.0600.242––––1810-37 E0.145285.7533.9324.3850.234––––1810-38 E0.02555.68728.4904.2110.437––––1810-39 E0.01174.20331.0484.4740.314––––1810-40 E2.0915863.9930.0494.9930.037132.56.26.8140.146Mean:1810 D9.0753323.1070.0305.9220.014572.31.97.0400.0601810 E1.1010883.6900.1054.7240.0788128.814.46.5950.316Sample1841U (ppm)U/Th230Th/238U2σ234U/238U2σAge (ka)2s (ka)(234U/238U)i2σ1841-1 E2.51784.4153.2525.8510.035––––1841-2 E1.96514.2687.6315.8420.044––––1841-3 E2.372184.3190.0415.8710.021115.53.57.7580.0901841-4 E1.883504.2610.0465.8910.016112.63.67.7300.0821841-5 E2.52144.3780.0455.8460.032118.74.37.7840.1241841-6 E2.5124.4282.7445.8810.044––––1841-7 E2.4634.4841.7445.9460.044––––1841-8 E2.14474.4992.4675.9620.037––––Mean:1841 E2.252614.3190.0445.8690.023115.63.87.7570.09910.7554/eLife.24231.010Table 5.Summary table of U-Th disequilibrium ages obtained for two H. naledi teeth (samples 1788 and 1810) from the Dinaledi Chamber obtained by GU-ANU. No age calculations were carried out for U concentrations of ≤0.5 ppm or U/Th ≤250 (indicated in red and underlined). Negative U/Th values are due to the Th background being higher than the measured values. Mean values in this table only incorporate values from which meaningful ages could be calculated (indicated in black). All uncertainties are given as 2σ. CS = Closed System; Diff = diffusion (i.e., calculated ages are based on the assumption of continuous diffusion after Sambridge et al. (2012).DOI: http://dx.doi.org/10.7554/eLife.24231.010Sample 1810aU (ppm)U/Th230Th/238U2σ234U/238U2σAge – CS (ka)2σ (ka)Age – Diff (ka)2σ (ka)(234U/238U)i*2σ 1 E0.03−273.71131.25084.43020.8881n/a––––– 2 E0.02−193.16480.93904.20830.4703n/a––––– 3 E0.04−333.02571.05315.12200.4988n/a––––– 4 E0.05−353.63521.38974.92240.4912n/a––––– 5 E0.19−2583.45040.19654.81060.1376n/a––––– 6 D6.07−29723.29090.06665.98010.055977.22.387.32.77.190.11 7 D6.10−53543.26180.08245.97680.031276.32.686.23.37.170.08 8 D6.39114363.31690.08005.98270.051477.92.688.33.37.210.11 9 D6.4761933.33180.08995.94700.087379.03.289.73.87.180.17 10 D6.65−50553.49850.10486.04620.040382.53.494.44.57.370.11 11 D6.9551493.54650.09106.05310.040683.83.096.34.07.400.11 12 D7.1532443.52380.09976.05010.042383.23.395.44.37.390.11Mean:1–5 E0.07 ± 0.063.43210.30034.79620.1504112.015.7137.125.5––6–12 D6.54 ± 0.313.40180.07496.00700.042880.12.591.13.27.270.11Sample 1810bU (ppm)U/Th230Th/238U2σ234U/238U2σAge – CS (ka)2σ (ka)Age – Diff (ka)2σ (ka)(234U/238U)i*2σ 1 E0.01176.844214.04350.02285.5626n/a––––– 2 E0.0039.233016.2333−2.28384.6085n/a––––– 3 E0.00–216.168827.6564−0.10337.6336n/a––––– 4 E0.00–314.9980967.0421−0.7695259.2590n/a––––– 5 E0.02−1827.1338296.11363.625048.0742n/a––––– 6 E0.86−24934.51760.17864.65880.0795189.116.7381.3137.97.240.44 7 E0.98−6034.87970.14164.87370.0681201.414.00.00.07.840.40 8 D4.49204233.57780.06705.93270.077387.12.7100.83.17.310.15 9 D5.35−101283.30460.06595.91420.067778.72.489.22.87.140.13 10 D5.67−41973.40770.07775.94800.045981.32.692.83.37.230.10Mean:1–5 E0.01 ± 0.018.7750204.69881.654793.9630n/a-----6–7 E0.92 ± 0.124.71010.14654.77300.0602195.713.8471.0269.47.540.428–10 D5.17 ± 0.703.42140.07905.93190.052382.12.793.73.67.230.13Sample 1788aU (ppm)U/Th230th/238U2σ234U/238U2σAge – CS (ka)2σ (ka)Age – Diff (ka)2σ (ka)(234U/238U)i*2σ 1E0.0348772.10953.30583.57401.6107n/a––––– 2E0.01−213.78455.52711.35252.7713n/a––––– 3E0.00–110.503027.8940−2.490910.1171n/a––––– 4E0.00–19.0249113.8912−0.712032.3636n/a––––– 5E0.00–26.679566.27500.776918.7506n/a––––– 6E0.01–63.02310.98442.19040.4875n/a––––– 7E0.24−1052.81390.20766.37910.1624n/a––––– 8E0.24−2041.64951.58116.01230.2961n/a––––– 9E0.195792.40754.26206.33411.3187n/a––––– 10E0.481893.17172.28626.10060.1341n/a––––– 11E1.34138333.87920.28646.35210.102488.59.2102.912.67.870.32 12E2.577554.17700.06096.32750.097298.63.0117.73.18.040.19Mean:1–6 E0.01 ± 0.013.51884.45312.34717.1463n/a---––7–10 E0.29 ± 0.132.64840.24696.18240.097856.26.561.07.7––11–12 E1.96 ± 1.234.07460.09416.33610.048295.13.2112.34.77.960.26Sample 1788bU (ppm)U/Th230Th/238U2σ234U/238U2σAge – CS (ka)2σ (ka)Age – Diff (ka)2σ (ka)(234U/238U)i*2σ 1E0.0242.39451.87743.50401.4368n/a––––– 2E0.02141.96561.32993.30990.9022n/a––––– 3E0.01–82.81562.10342.53590.8082n/a––––– 4E0.021602.102458.18543.23427.4009n/a––––– 5E0.03−312.38591.40844.12851.5222n/a––––– 6E0.03−202.895111.29114.10463.9747n/a––––– 7E0.02−102.84863.53834.93622.3343n/a––––– 8E0.03−182.83251.61135.70520.7139n/a–––––Mean:1–8 E0.02 ± 0.012.55976.76184.13081.2209n/a–––––Sample 1788cU (ppm)U/Th230th/238U2σ234U/238U2σAge – CS (ka)2σ (ka)Age – Diff (ka)2σ (ka)(234U/238U)i*2σ 1D5.44215783.92810.07076.42600.074088.62.6103.03.17.970.15 2D5.391550373.89080.05656.44160.052487.22.0101.02.47.960.11 3D4.9517083.89010.08286.40850.079287.83.0102.03.67.930.16 4D3.8716533.80330.08596.37860.106885.83.399.03.67.850.20 5D4.2511683.95690.08006.40510.095790.03.1105.03.67.970.19 6D5.1214933.94330.05796.49510.096187.82.5102.02.58.040.17 7D5.3426593.80200.05816.47130.058184.02.096.72.47.940.11 8D5.0610933.99480.06726.44790.063090.32.4105.53.08.030.13 9D4.7810184.04810.07186.44680.058692.02.5108.03.38.060.13 10D5.228173.90110.05826.51870.081386.12.399.62.48.040.15 11D5.254253.88720.08506.44150.062487.12.8101.03.67.960.14 12D5.463453.95610.05846.46580.073388.82.3103.32.58.030.14Mean:1–12 D5.01 ± 0.283.91750.07966.44790.046187.92.6102.03.67.980.06
+U-Th disequilibrium analyses of four tooth samples were conducted to constrain U uptake models into dental tissues used in ESR dating. The analyses were also used to provide apparent U-Th age estimates (Tables 4 and 5). Analyses of all four teeth (samples 1767, 1788 and1810 from H. naledi, and sample 1841 from Papio sp.) were performed at the University of Wollongong (UoW), in collaboration with Southern Cross University (SCU). Duplicate analyses of two of the tooth samples (samples 1788 and 1810) were conducted at Griffith University (GU) in collaboration with the Australian National University (ANU).
 
-Summaries of the U-Th analytical data and ages are reported in
+**Table 4.**
+ Summary table of U-Th disequilibrium ages obtained for the three H. naledi teeth (samples 1767, 1788 and 1810) and the baboon tooth (sample 1841) from the Dinaledi Chamber obtained by SCU-UoW. No age calculations were carried out for U concentrations of ≤0.5 ppm or U/Th ≤250 (indicated in red and underlined). Mean values in this table only incorporate values from which meaningful ages could be calculated (indicated in black), however all values (i.e., red and black) were averaged to obtain the relevant mean values reported in Table 4. All uncertainties are given as 2σ.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample1767</th>
+      <th>U (ppm)</th>
+      <th>U/Th</th>
+      <th>230Th/238U</th>
+      <th>2σ</th>
+      <th>234U/238U</th>
+      <th>2σ</th>
+      <th>Age (ka)</th>
+      <th>2s (ka)</th>
+      <th>(234U/238U)i</th>
+      <th>2σ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1767-1 D</td>
+      <td>7.22</td>
+      <td>685</td>
+      <td>2.167</td>
+      <td>0.024</td>
+      <td>6.259</td>
+      <td>0.009</td>
+      <td>43.5</td>
+      <td>1.1</td>
+      <td>6.949</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>1767-2 D</td>
+      <td>7.75</td>
+      <td>996</td>
+      <td>2.261</td>
+      <td>0.023</td>
+      <td>6.282</td>
+      <td>0.010</td>
+      <td>45.5</td>
+      <td>1.1</td>
+      <td>7.009</td>
+      <td>0.030</td>
+    </tr>
+    <tr>
+      <td>1767-3 D</td>
+      <td>8.03</td>
+      <td>196</td>
+      <td>2.225</td>
+      <td>0.825</td>
+      <td>6.276</td>
+      <td>0.012</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1767-4 D</td>
+      <td>8.55</td>
+      <td>951</td>
+      <td>2.209</td>
+      <td>0.031</td>
+      <td>6.301</td>
+      <td>0.009</td>
+      <td>44.1</td>
+      <td>1.4</td>
+      <td>7.007</td>
+      <td>0.030</td>
+    </tr>
+    <tr>
+      <td>1767-5* E</td>
+      <td>3.69</td>
+      <td>1238</td>
+      <td>2.259</td>
+      <td>0.031</td>
+      <td>6.197</td>
+      <td>0.055</td>
+      <td>46.2</td>
+      <td>1.8</td>
+      <td>6.924</td>
+      <td>0.126</td>
+    </tr>
+    <tr>
+      <td>1767-6* E</td>
+      <td>1.76</td>
+      <td>108</td>
+      <td>2.239</td>
+      <td>1.133</td>
+      <td>6.165</td>
+      <td>0.038</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1767-7* E</td>
+      <td>2.15</td>
+      <td>109</td>
+      <td>2.337</td>
+      <td>0.947</td>
+      <td>6.231</td>
+      <td>0.024</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1767-8* E</td>
+      <td>2.46</td>
+      <td>518</td>
+      <td>2.276</td>
+      <td>0.021</td>
+      <td>6.253</td>
+      <td>0.019</td>
+      <td>46.1</td>
+      <td>1.1</td>
+      <td>6.986</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>Mean:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1767 D</td>
+      <td>7.84</td>
+      <td>877</td>
+      <td>2.212</td>
+      <td>0.026</td>
+      <td>6.281</td>
+      <td>0.009</td>
+      <td>44.5</td>
+      <td>1.2</td>
+      <td>6.988</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>1767 E</td>
+      <td>3.08</td>
+      <td>878</td>
+      <td>2.268</td>
+      <td>0.026</td>
+      <td>6.225</td>
+      <td>0.037</td>
+      <td>46.2</td>
+      <td>1.4</td>
+      <td>6.955</td>
+      <td>0.087</td>
+    </tr>
+    <tr>
+      <td>Sample1788</td>
+      <td>U (ppm)</td>
+      <td>U/Th</td>
+      <td>230Th/238U</td>
+      <td>2σ</td>
+      <td>234U/238U</td>
+      <td>2σ</td>
+      <td>Age (ka)</td>
+      <td>2s (ka)</td>
+      <td>(234U/238U)i</td>
+      <td>2σ</td>
+    </tr>
+    <tr>
+      <td>1788-1 D</td>
+      <td>6.67</td>
+      <td>390</td>
+      <td>2.967</td>
+      <td>0.026</td>
+      <td>6.423</td>
+      <td>0.011</td>
+      <td>61.4</td>
+      <td>1.5</td>
+      <td>7.453</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1788-2 D</td>
+      <td>7.08</td>
+      <td>176</td>
+      <td>3.370</td>
+      <td>0.833</td>
+      <td>6.441</td>
+      <td>0.010</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-3 D</td>
+      <td>7.17</td>
+      <td>60</td>
+      <td>3.206</td>
+      <td>3.126</td>
+      <td>6.394</td>
+      <td>0.049</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-4 D</td>
+      <td>7.45</td>
+      <td>1391</td>
+      <td>3.313</td>
+      <td>0.023</td>
+      <td>6.445</td>
+      <td>0.010</td>
+      <td>70.3</td>
+      <td>1.4</td>
+      <td>7.645</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <td>1788-5 D</td>
+      <td>5.52</td>
+      <td>4423</td>
+      <td>3.269</td>
+      <td>0.023</td>
+      <td>6.349</td>
+      <td>0.010</td>
+      <td>70.4</td>
+      <td>1.4</td>
+      <td>7.531</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>1788-6 D</td>
+      <td>5.07</td>
+      <td>4090</td>
+      <td>3.416</td>
+      <td>0.014</td>
+      <td>6.378</td>
+      <td>0.014</td>
+      <td>74.1</td>
+      <td>1.1</td>
+      <td>7.634</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1788-7 D</td>
+      <td>5.39</td>
+      <td>4729</td>
+      <td>3.385</td>
+      <td>0.020</td>
+      <td>6.400</td>
+      <td>0.014</td>
+      <td>72.9</td>
+      <td>1.4</td>
+      <td>7.640</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1788-8 D</td>
+      <td>5.93</td>
+      <td>3209</td>
+      <td>3.427</td>
+      <td>0.015</td>
+      <td>6.393</td>
+      <td>0.013</td>
+      <td>74.2</td>
+      <td>1.1</td>
+      <td>7.654</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1788-9 D</td>
+      <td>5.24</td>
+      <td>4329</td>
+      <td>3.449</td>
+      <td>0.014</td>
+      <td>6.413</td>
+      <td>0.014</td>
+      <td>74.5</td>
+      <td>1.0</td>
+      <td>7.685</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>1788-10 D</td>
+      <td>4.89</td>
+      <td>3161</td>
+      <td>3.390</td>
+      <td>0.010</td>
+      <td>6.403</td>
+      <td>0.011</td>
+      <td>73.0</td>
+      <td>0.9</td>
+      <td>7.645</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>1788-11 D</td>
+      <td>4.8</td>
+      <td>2556</td>
+      <td>3.394</td>
+      <td>0.014</td>
+      <td>6.416</td>
+      <td>0.014</td>
+      <td>72.9</td>
+      <td>1.0</td>
+      <td>7.659</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>1788-12 D</td>
+      <td>5.48</td>
+      <td>1606</td>
+      <td>3.356</td>
+      <td>0.017</td>
+      <td>6.384</td>
+      <td>0.014</td>
+      <td>72.3</td>
+      <td>1.1</td>
+      <td>7.609</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>1788-13 D</td>
+      <td>5.04</td>
+      <td>838</td>
+      <td>3.317</td>
+      <td>0.025</td>
+      <td>6.420</td>
+      <td>0.014</td>
+      <td>70.7</td>
+      <td>1.5</td>
+      <td>7.623</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>1788-14 D</td>
+      <td>5.69</td>
+      <td>93</td>
+      <td>3.281</td>
+      <td>2.426</td>
+      <td>6.408</td>
+      <td>0.013</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-15 D</td>
+      <td>5.03</td>
+      <td>72</td>
+      <td>3.315</td>
+      <td>3.731</td>
+      <td>6.427</td>
+      <td>0.014</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-16 E</td>
+      <td>0.13</td>
+      <td>3</td>
+      <td>1.786</td>
+      <td>18.149</td>
+      <td>3.834</td>
+      <td>0.267</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-17 E</td>
+      <td>0.68</td>
+      <td>25</td>
+      <td>0.752</td>
+      <td>9.149</td>
+      <td>6.248</td>
+      <td>0.273</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-18 E</td>
+      <td>0.4</td>
+      <td>16</td>
+      <td>0.801</td>
+      <td>13.053</td>
+      <td>6.236</td>
+      <td>0.050</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-19 E</td>
+      <td>0.08</td>
+      <td>3</td>
+      <td>1.783</td>
+      <td>36.231</td>
+      <td>4.301</td>
+      <td>0.288</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-20 E</td>
+      <td>1.02</td>
+      <td>306</td>
+      <td>2.990</td>
+      <td>0.117</td>
+      <td>5.541</td>
+      <td>0.154</td>
+      <td>75.1</td>
+      <td>9.3</td>
+      <td>6.617</td>
+      <td>0.394</td>
+    </tr>
+    <tr>
+      <td>1788-21* E</td>
+      <td>0.33</td>
+      <td>50</td>
+      <td>2.041</td>
+      <td>27.135</td>
+      <td>5.793</td>
+      <td>0.141</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-22* E</td>
+      <td>0.12</td>
+      <td>30</td>
+      <td>1.513</td>
+      <td>24.801</td>
+      <td>5.975</td>
+      <td>0.098</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-23* E</td>
+      <td>0.25</td>
+      <td>34</td>
+      <td>1.368</td>
+      <td>17.071</td>
+      <td>5.988</td>
+      <td>0.079</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-24* E</td>
+      <td>0.36</td>
+      <td>90</td>
+      <td>1.237</td>
+      <td>13.555</td>
+      <td>6.167</td>
+      <td>0.055</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-25* E</td>
+      <td>0.41</td>
+      <td>107</td>
+      <td>1.084</td>
+      <td>8.672</td>
+      <td>6.206</td>
+      <td>0.033</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-26* E</td>
+      <td>0.48</td>
+      <td>102</td>
+      <td>1.302</td>
+      <td>11.333</td>
+      <td>6.384</td>
+      <td>0.081</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-27* E</td>
+      <td>0.49</td>
+      <td>165</td>
+      <td>0.686</td>
+      <td>7.733</td>
+      <td>6.367</td>
+      <td>0.037</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-28* E</td>
+      <td>0.31</td>
+      <td>167</td>
+      <td>1.615</td>
+      <td>6.975</td>
+      <td>5.602</td>
+      <td>0.246</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-29* E</td>
+      <td>0.44</td>
+      <td>6</td>
+      <td>2.311</td>
+      <td>11.898</td>
+      <td>5.576</td>
+      <td>0.306</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-30 E</td>
+      <td>0.44</td>
+      <td>62</td>
+      <td>0.988</td>
+      <td>5.310</td>
+      <td>6.089</td>
+      <td>0.075</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-31 E</td>
+      <td>0.29</td>
+      <td>8</td>
+      <td>1.066</td>
+      <td>19.256</td>
+      <td>6.151</td>
+      <td>0.056</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-32 E</td>
+      <td>0.23</td>
+      <td>95</td>
+      <td>0.994</td>
+      <td>17.451</td>
+      <td>6.352</td>
+      <td>0.064</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-33 E</td>
+      <td>0.41</td>
+      <td>6</td>
+      <td>1.103</td>
+      <td>21.651</td>
+      <td>6.344</td>
+      <td>0.049</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-34 E</td>
+      <td>0.28</td>
+      <td>51</td>
+      <td>1.340</td>
+      <td>11.450</td>
+      <td>6.382</td>
+      <td>0.061</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-35 E</td>
+      <td>0.35</td>
+      <td>4</td>
+      <td>1.286</td>
+      <td>21.088</td>
+      <td>6.321</td>
+      <td>0.062</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-36 E</td>
+      <td>0.4</td>
+      <td>115</td>
+      <td>1.216</td>
+      <td>12.896</td>
+      <td>6.372</td>
+      <td>0.041</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-37 E</td>
+      <td>0.3</td>
+      <td>61</td>
+      <td>1.106</td>
+      <td>17.059</td>
+      <td>6.313</td>
+      <td>0.073</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788-38 E</td>
+      <td>0.54</td>
+      <td>279</td>
+      <td>2.810</td>
+      <td>0.237</td>
+      <td>6.300</td>
+      <td>0.064</td>
+      <td>58.9</td>
+      <td>12.2</td>
+      <td>7.262</td>
+      <td>0.270</td>
+    </tr>
+    <tr>
+      <td>Mean:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1788 D</td>
+      <td>5.59</td>
+      <td>2793</td>
+      <td>3.335</td>
+      <td>0.018</td>
+      <td>6.402</td>
+      <td>0.013</td>
+      <td>71.5</td>
+      <td>1.2</td>
+      <td>7.616</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1788 E</td>
+      <td>0.78</td>
+      <td>293</td>
+      <td>2.900</td>
+      <td>0.177</td>
+      <td>5.920</td>
+      <td>0.109</td>
+      <td>67.0</td>
+      <td>10.8</td>
+      <td>6.936</td>
+      <td>0.332</td>
+    </tr>
+    <tr>
+      <td>Sample1810</td>
+      <td>U (ppm)</td>
+      <td>U/Th</td>
+      <td>230Th/238U</td>
+      <td>2σ</td>
+      <td>234U/238U</td>
+      <td>2σ</td>
+      <td>Age (ka)</td>
+      <td>2s (ka)</td>
+      <td>(234U/238U)i</td>
+      <td>2σ</td>
+    </tr>
+    <tr>
+      <td>1810-1 D</td>
+      <td>7.07</td>
+      <td>348</td>
+      <td>3.231</td>
+      <td>0.021</td>
+      <td>5.814</td>
+      <td>0.017</td>
+      <td>77.9</td>
+      <td>1.6</td>
+      <td>7.003</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <td>1810-2 D</td>
+      <td>8.29</td>
+      <td>411</td>
+      <td>3.112</td>
+      <td>0.030</td>
+      <td>5.863</td>
+      <td>0.010</td>
+      <td>73.4</td>
+      <td>2.1</td>
+      <td>6.986</td>
+      <td>0.062</td>
+    </tr>
+    <tr>
+      <td>1810-3 D</td>
+      <td>8.88</td>
+      <td>979</td>
+      <td>3.106</td>
+      <td>0.027</td>
+      <td>5.929</td>
+      <td>0.010</td>
+      <td>72.1</td>
+      <td>1.8</td>
+      <td>7.046</td>
+      <td>0.060</td>
+    </tr>
+    <tr>
+      <td>1810-4 D</td>
+      <td>9.19</td>
+      <td>833</td>
+      <td>3.049</td>
+      <td>0.044</td>
+      <td>5.993</td>
+      <td>0.011</td>
+      <td>69.4</td>
+      <td>2.6</td>
+      <td>7.079</td>
+      <td>0.066</td>
+    </tr>
+    <tr>
+      <td>1810-5 D</td>
+      <td>9.17</td>
+      <td>508</td>
+      <td>2.937</td>
+      <td>0.047</td>
+      <td>5.990</td>
+      <td>0.007</td>
+      <td>66.2</td>
+      <td>2.8</td>
+      <td>7.020</td>
+      <td>0.066</td>
+    </tr>
+    <tr>
+      <td>1810-6 D</td>
+      <td>9.12</td>
+      <td>55</td>
+      <td>3.143</td>
+      <td>6.919</td>
+      <td>5.981</td>
+      <td>0.012</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-7 D</td>
+      <td>7.95</td>
+      <td>432</td>
+      <td>3.099</td>
+      <td>0.018</td>
+      <td>5.977</td>
+      <td>0.013</td>
+      <td>71.1</td>
+      <td>1.3</td>
+      <td>7.089</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1810-8 D</td>
+      <td>8.84</td>
+      <td>489</td>
+      <td>2.986</td>
+      <td>0.074</td>
+      <td>6.035</td>
+      <td>0.060</td>
+      <td>67</td>
+      <td>4.1</td>
+      <td>7.088</td>
+      <td>0.084</td>
+    </tr>
+    <tr>
+      <td>1810-9 D</td>
+      <td>9.39</td>
+      <td>15905</td>
+      <td>3.122</td>
+      <td>0.013</td>
+      <td>5.870</td>
+      <td>0.006</td>
+      <td>73.6</td>
+      <td>1.1</td>
+      <td>6.999</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>1810-10 D</td>
+      <td>9.78</td>
+      <td>7839</td>
+      <td>3.165</td>
+      <td>0.017</td>
+      <td>5.873</td>
+      <td>0.011</td>
+      <td>74.8</td>
+      <td>1.3</td>
+      <td>7.024</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1810-11 D</td>
+      <td>9.03</td>
+      <td>7242</td>
+      <td>3.174</td>
+      <td>0.030</td>
+      <td>5.888</td>
+      <td>0.015</td>
+      <td>74.8</td>
+      <td>2.0</td>
+      <td>7.043</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>1810-12 D</td>
+      <td>9.53</td>
+      <td>9626</td>
+      <td>3.157</td>
+      <td>0.019</td>
+      <td>5.889</td>
+      <td>0.009</td>
+      <td>74.3</td>
+      <td>1.4</td>
+      <td>7.036</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>1810-13 D</td>
+      <td>10.19</td>
+      <td>10240</td>
+      <td>3.094</td>
+      <td>0.018</td>
+      <td>5.904</td>
+      <td>0.008</td>
+      <td>72.2</td>
+      <td>1.3</td>
+      <td>7.016</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>1810-14 D</td>
+      <td>10.64</td>
+      <td>14463</td>
+      <td>3.155</td>
+      <td>0.030</td>
+      <td>5.958</td>
+      <td>0.010</td>
+      <td>73.1</td>
+      <td>1.9</td>
+      <td>7.099</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>1810-15 E</td>
+      <td>0.005</td>
+      <td>1</td>
+      <td>−0.384</td>
+      <td>146.036</td>
+      <td>1.965</td>
+      <td>0.186</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-16 E</td>
+      <td>0.002</td>
+      <td>2</td>
+      <td>−1.060</td>
+      <td>48.168</td>
+      <td>1.014</td>
+      <td>0.108</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-17 E</td>
+      <td>0.004</td>
+      <td>1</td>
+      <td>5.403</td>
+      <td>17.573</td>
+      <td>2.357</td>
+      <td>0.194</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-18 E</td>
+      <td>0.24</td>
+      <td>55</td>
+      <td>3.195</td>
+      <td>9.109</td>
+      <td>4.054</td>
+      <td>0.062</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-19 E</td>
+      <td>0.54</td>
+      <td>426</td>
+      <td>4.009</td>
+      <td>0.186</td>
+      <td>5.054</td>
+      <td>0.109</td>
+      <td>130.8</td>
+      <td>21.8</td>
+      <td>6.872</td>
+      <td>0.466</td>
+    </tr>
+    <tr>
+      <td>1810-20 E</td>
+      <td>0.85</td>
+      <td>328</td>
+      <td>3.625</td>
+      <td>0.119</td>
+      <td>4.287</td>
+      <td>0.137</td>
+      <td>146.8</td>
+      <td>22.7</td>
+      <td>5.984</td>
+      <td>0.524</td>
+    </tr>
+    <tr>
+      <td>1810-21 E</td>
+      <td>0.41</td>
+      <td>48</td>
+      <td>5.009</td>
+      <td>4.474</td>
+      <td>4.494</td>
+      <td>0.186</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-22 E</td>
+      <td>0.15</td>
+      <td>7</td>
+      <td>7.690</td>
+      <td>8.225</td>
+      <td>4.349</td>
+      <td>0.351</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-23 E</td>
+      <td>0.03</td>
+      <td>2</td>
+      <td>9.912</td>
+      <td>1.843</td>
+      <td>5.153</td>
+      <td>0.599</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-24 E</td>
+      <td>0.01</td>
+      <td>0</td>
+      <td>0.661</td>
+      <td>166.056</td>
+      <td>1.877</td>
+      <td>0.144</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-25 E</td>
+      <td>0.02</td>
+      <td>2</td>
+      <td>7.408</td>
+      <td>9.386</td>
+      <td>4.964</td>
+      <td>0.557</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-26* E</td>
+      <td>0.73</td>
+      <td>3</td>
+      <td>3.762</td>
+      <td>4.100</td>
+      <td>4.735</td>
+      <td>0.100</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-27* E</td>
+      <td>0.14</td>
+      <td>3</td>
+      <td>5.271</td>
+      <td>4.510</td>
+      <td>4.255</td>
+      <td>0.112</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-28* E</td>
+      <td>0.18</td>
+      <td>5</td>
+      <td>3.541</td>
+      <td>8.079</td>
+      <td>4.562</td>
+      <td>0.081</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-29* E</td>
+      <td>0.25</td>
+      <td>9</td>
+      <td>3.511</td>
+      <td>7.095</td>
+      <td>4.562</td>
+      <td>0.058</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-30* E</td>
+      <td>0.21</td>
+      <td>3</td>
+      <td>4.027</td>
+      <td>5.291</td>
+      <td>4.073</td>
+      <td>0.149</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-31* E</td>
+      <td>0.09</td>
+      <td>1</td>
+      <td>3.875</td>
+      <td>39.136</td>
+      <td>4.029</td>
+      <td>0.072</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-32* E</td>
+      <td>0.05</td>
+      <td>2</td>
+      <td>2.469</td>
+      <td>9.099</td>
+      <td>4.187</td>
+      <td>0.072</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-33* E</td>
+      <td>0.06</td>
+      <td>1</td>
+      <td>2.602</td>
+      <td>24.169</td>
+      <td>4.426</td>
+      <td>0.141</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-34* E</td>
+      <td>0.91</td>
+      <td>2010</td>
+      <td>3.131</td>
+      <td>0.068</td>
+      <td>4.561</td>
+      <td>0.032</td>
+      <td>105.2</td>
+      <td>7.0</td>
+      <td>5.798</td>
+      <td>0.128</td>
+    </tr>
+    <tr>
+      <td>1810-35 E</td>
+      <td>1.01</td>
+      <td>3</td>
+      <td>4.291</td>
+      <td>15.514</td>
+      <td>4.085</td>
+      <td>0.025</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-36 E</td>
+      <td>0.04</td>
+      <td>99</td>
+      <td>6.297</td>
+      <td>8.890</td>
+      <td>4.060</td>
+      <td>0.242</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-37 E</td>
+      <td>0.14</td>
+      <td>528</td>
+      <td>5.753</td>
+      <td>3.932</td>
+      <td>4.385</td>
+      <td>0.234</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-38 E</td>
+      <td>0.02</td>
+      <td>55</td>
+      <td>5.687</td>
+      <td>28.490</td>
+      <td>4.211</td>
+      <td>0.437</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-39 E</td>
+      <td>0.01</td>
+      <td>17</td>
+      <td>4.203</td>
+      <td>31.048</td>
+      <td>4.474</td>
+      <td>0.314</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1810-40 E</td>
+      <td>2.09</td>
+      <td>1586</td>
+      <td>3.993</td>
+      <td>0.049</td>
+      <td>4.993</td>
+      <td>0.037</td>
+      <td>132.5</td>
+      <td>6.2</td>
+      <td>6.814</td>
+      <td>0.146</td>
+    </tr>
+    <tr>
+      <td>Mean:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1810 D</td>
+      <td>9.07</td>
+      <td>5332</td>
+      <td>3.107</td>
+      <td>0.030</td>
+      <td>5.922</td>
+      <td>0.0145</td>
+      <td>72.3</td>
+      <td>1.9</td>
+      <td>7.040</td>
+      <td>0.060</td>
+    </tr>
+    <tr>
+      <td>1810 E</td>
+      <td>1.10</td>
+      <td>1088</td>
+      <td>3.690</td>
+      <td>0.105</td>
+      <td>4.724</td>
+      <td>0.0788</td>
+      <td>128.8</td>
+      <td>14.4</td>
+      <td>6.595</td>
+      <td>0.316</td>
+    </tr>
+    <tr>
+      <td>Sample1841</td>
+      <td>U (ppm)</td>
+      <td>U/Th</td>
+      <td>230Th/238U</td>
+      <td>2σ</td>
+      <td>234U/238U</td>
+      <td>2σ</td>
+      <td>Age (ka)</td>
+      <td>2s (ka)</td>
+      <td>(234U/238U)i</td>
+      <td>2σ</td>
+    </tr>
+    <tr>
+      <td>1841-1 E</td>
+      <td>2.51</td>
+      <td>78</td>
+      <td>4.415</td>
+      <td>3.252</td>
+      <td>5.851</td>
+      <td>0.035</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1841-2 E</td>
+      <td>1.96</td>
+      <td>51</td>
+      <td>4.268</td>
+      <td>7.631</td>
+      <td>5.842</td>
+      <td>0.044</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1841-3 E</td>
+      <td>2.37</td>
+      <td>218</td>
+      <td>4.319</td>
+      <td>0.041</td>
+      <td>5.871</td>
+      <td>0.021</td>
+      <td>115.5</td>
+      <td>3.5</td>
+      <td>7.758</td>
+      <td>0.090</td>
+    </tr>
+    <tr>
+      <td>1841-4 E</td>
+      <td>1.88</td>
+      <td>350</td>
+      <td>4.261</td>
+      <td>0.046</td>
+      <td>5.891</td>
+      <td>0.016</td>
+      <td>112.6</td>
+      <td>3.6</td>
+      <td>7.730</td>
+      <td>0.082</td>
+    </tr>
+    <tr>
+      <td>1841-5 E</td>
+      <td>2.5</td>
+      <td>214</td>
+      <td>4.378</td>
+      <td>0.045</td>
+      <td>5.846</td>
+      <td>0.032</td>
+      <td>118.7</td>
+      <td>4.3</td>
+      <td>7.784</td>
+      <td>0.124</td>
+    </tr>
+    <tr>
+      <td>1841-6 E</td>
+      <td>2.5</td>
+      <td>12</td>
+      <td>4.428</td>
+      <td>2.744</td>
+      <td>5.881</td>
+      <td>0.044</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1841-7 E</td>
+      <td>2.4</td>
+      <td>63</td>
+      <td>4.484</td>
+      <td>1.744</td>
+      <td>5.946</td>
+      <td>0.044</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1841-8 E</td>
+      <td>2.14</td>
+      <td>47</td>
+      <td>4.499</td>
+      <td>2.467</td>
+      <td>5.962</td>
+      <td>0.037</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Mean:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1841 E</td>
+      <td>2.25</td>
+      <td>261</td>
+      <td>4.319</td>
+      <td>0.044</td>
+      <td>5.869</td>
+      <td>0.023</td>
+      <td>115.6</td>
+      <td>3.8</td>
+      <td>7.757</td>
+      <td>0.099</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Summary table of U-Th disequilibrium ages obtained for two H. naledi teeth (samples 1788 and 1810) from the Dinaledi Chamber obtained by GU-ANU. No age calculations were carried out for U concentrations of ≤0.5 ppm or U/Th ≤250 (indicated in red and underlined). Negative U/Th values are due to the Th background being higher than the measured values. Mean values in this table only incorporate values from which meaningful ages could be calculated (indicated in black). All uncertainties are given as 2σ. CS = Closed System; Diff = diffusion (i.e., calculated ages are based on the assumption of continuous diffusion after Sambridge et al. (2012).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample 1810a</th>
+      <th>U (ppm)</th>
+      <th>U/Th</th>
+      <th>230Th/238U</th>
+      <th>2σ</th>
+      <th>234U/238U</th>
+      <th>2σ</th>
+      <th>Age – CS (ka)</th>
+      <th>2σ (ka)</th>
+      <th>Age – Diff (ka)</th>
+      <th>2σ (ka)</th>
+      <th>(234U/238U)i*</th>
+      <th>2σ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 E</td>
+      <td>0.03</td>
+      <td>−27</td>
+      <td>3.7113</td>
+      <td>1.2508</td>
+      <td>4.4302</td>
+      <td>0.8881</td>
+      <td>n/a</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>2 E</td>
+      <td>0.02</td>
+      <td>−19</td>
+      <td>3.1648</td>
+      <td>0.9390</td>
+      <td>4.2083</td>
+      <td>0.4703</td>
+      <td>n/a</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>3 E</td>
+      <td>0.04</td>
+      <td>−33</td>
+      <td>3.0257</td>
+      <td>1.0531</td>
+      <td>5.1220</td>
+      <td>0.4988</td>
+      <td>n/a</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>4 E</td>
+      <td>0.05</td>
+      <td>−35</td>
+      <td>3.6352</td>
+      <td>1.3897</td>
+      <td>4.9224</td>
+      <td>0.4912</td>
+      <td>n/a</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>5 E</td>
+      <td>0.19</td>
+      <td>−258</td>
+      <td>3.4504</td>
+      <td>0.1965</td>
+      <td>4.8106</td>
+      <td>0.1376</td>
+      <td>n/a</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>6 D</td>
+      <td>6.07</td>
+      <td>−2972</td>
+      <td>3.2909</td>
+      <td>0.0666</td>
+      <td>5.9801</td>
+      <td>0.0559</td>
+      <td>77.2</td>
+      <td>2.3</td>
+      <td>87.3</td>
+      <td>2.7</td>
+      <td>7.19</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>7 D</td>
+      <td>6.10</td>
+      <td>−5354</td>
+      <td>3.2618</td>
+      <td>0.0824</td>
+      <td>5.9768</td>
+      <td>0.0312</td>
+      <td>76.3</td>
+      <td>2.6</td>
+      <td>86.2</td>
+      <td>3.3</td>
+      <td>7.17</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>8 D</td>
+      <td>6.39</td>
+      <td>11436</td>
+      <td>3.3169</td>
+      <td>0.0800</td>
+      <td>5.9827</td>
+      <td>0.0514</td>
+      <td>77.9</td>
+      <td>2.6</td>
+      <td>88.3</td>
+      <td>3.3</td>
+      <td>7.21</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>9 D</td>
+      <td>6.47</td>
+      <td>6193</td>
+      <td>3.3318</td>
+      <td>0.0899</td>
+      <td>5.9470</td>
+      <td>0.0873</td>
+      <td>79.0</td>
+      <td>3.2</td>
+      <td>89.7</td>
+      <td>3.8</td>
+      <td>7.18</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>10 D</td>
+      <td>6.65</td>
+      <td>−5055</td>
+      <td>3.4985</td>
+      <td>0.1048</td>
+      <td>6.0462</td>
+      <td>0.0403</td>
+      <td>82.5</td>
+      <td>3.4</td>
+      <td>94.4</td>
+      <td>4.5</td>
+      <td>7.37</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>11 D</td>
+      <td>6.95</td>
+      <td>5149</td>
+      <td>3.5465</td>
+      <td>0.0910</td>
+      <td>6.0531</td>
+      <td>0.0406</td>
+      <td>83.8</td>
+      <td>3.0</td>
+      <td>96.3</td>
+      <td>4.0</td>
+      <td>7.40</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>12 D</td>
+      <td>7.15</td>
+      <td>3244</td>
+      <td>3.5238</td>
+      <td>0.0997</td>
+      <td>6.0501</td>
+      <td>0.0423</td>
+      <td>83.2</td>
+      <td>3.3</td>
+      <td>95.4</td>
+      <td>4.3</td>
+      <td>7.39</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td colspan="13">Mean:</td>
+    </tr>
+    <tr>
+      <td>1–5 E</td>
+      <td>0.07 ± 0.06</td>
+      <td></td>
+      <td>3.4321</td>
+      <td>0.3003</td>
+      <td>4.7962</td>
+      <td>0.1504</td>
+      <td>112.0</td>
+      <td>15.7</td>
+      <td>137.1</td>
+      <td>25.5</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>6–12 D</td>
+      <td>6.54 ± 0.31</td>
+      <td></td>
+      <td>3.4018</td>
+      <td>0.0749</td>
+      <td>6.0070</td>
+      <td>0.0428</td>
+      <td>80.1</td>
+      <td>2.5</td>
+      <td>91.1</td>
+      <td>3.2</td>
+      <td>7.27</td>
+      <td>0.11</td>
+    </tr>
+  </tbody>
+</table>
+
+Summaries of the U-Th analytical data and ages are reported in Table 4 (SCU-UoW) and Table 5 (GU-ANU). In Table 4 only closed system dates are reported, while Table 5 also lists dates based on the continuous diffusion model of Sambridge et al. (2012). In both datasets, the U content in enamel is much lower than in dentine. Note that apparent U-Th ages for the teeth are likely to provide apparent age estimates, which will approach the age for U uptake events that affected the teeth during wet periods in the chamber, typically after deposition. These ages should, therefore, be regarded as minimum age estimates for the teeth, and do not represent depositional ages for the fossils.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig4-v1.jpg)
 
-**Figure 4.:** H. naledi tooth samples (samples 1767, 1788 and 1810) and one baboon (cf. Papio) tooth sample (sample 1841) used for combined U-series and ESR dating.(a) Map of the Dinaledi Chamber showing the position of the excavation pit and the position of figures (b) and (c); (b) close-up of the SE corner of the excavation pit showing the sample site for sample 1810 and the 50 cm deep sondage from which sample 1841 was recovered; (c) the area to the W of the excavation pit from which samples 1767 and 1788 were collected.DOI: http://dx.doi.org/10.7554/eLife.24231.011
+**Figure 4.:** (a) Map of the Dinaledi Chamber showing the position of the excavation pit and the position of figures (b) and (c); (b) close-up of the SE corner of the excavation pit showing the sample site for sample 1810 and the 50 cm deep sondage from which sample 1841 was recovered; (c) the area to the W of the excavation pit from which samples 1767 and 1788 were collected.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig5-v1.jpg)
 
-**Figure 5.:** (a) sample OSL3 with an estimated MAM age of 231 ± 41 ka taken from sub-unit 1b; (b) sample OSL4 with an estimated MAM age of 241 ± 37 ka, taken from sub-unit 1b and covered by a flowstone sheet dated at 290 ± 6 ka (RS5); (c) sample OSL5 with an estimated MAM age of 353 ± 61 ka, taken from sub-unit 1a and covered by a flowstone sheet dated at 32.1 ± 0.4 ka (RS20). The scale bar in each of the photographs is 10 cm.DOI: http://dx.doi.org/10.7554/eLife.24231.012
+**Figure 5.:** (a) sample OSL3 with an estimated MAM age of 231 ± 41 ka taken from sub-unit 1b; (b) sample OSL4 with an estimated MAM age of 241 ± 37 ka, taken from sub-unit 1b and covered by a flowstone sheet dated at 290 ± 6 ka (RS5); (c) sample OSL5 with an estimated MAM age of 353 ± 61 ka, taken from sub-unit 1a and covered by a flowstone sheet dated at 32.1 ± 0.4 ka (RS20). The scale bar in each of the photographs is 10 cm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig6-v1.jpg)
 
-**Figure 6.:** H. naledi teeth used for ESR dating.(a) U.W.101–1767; (b) U.W.101–1788; (c) U.W.101–1810. The order of images for each panel is: buccal, distal, lingual, mesial, and occlusal views. The scale bar in each panel is 1 cm.DOI: http://dx.doi.org/10.7554/eLife.24231.013
+**Figure 6.:** (a) U.W.101–1767; (b) U.W.101–1788; (c) U.W.101–1810. The order of images for each panel is: buccal, distal, lingual, mesial, and occlusal views. The scale bar in each panel is 1 cm.
 
 Sample 1767: This extremely worn upper premolar crown (Figure 6a) is heavily weathered, and only a small fragment of enamel was left attached to the dentine. It could, therefore, only be dated once (at SCU-UoW). Both dentine and enamel yield consistent results with apparent U-Th ages of 44.5 ± 0.6 ka for dentine and 46.1 ± 0.7 ka for enamel, and initial 234U/238U activity ratios at 6.99 ± 0.01 and 6.99 ± 0.04 respectively. These results suggest that a single uptake event is dated. The tooth is characterised by an extremely high U content in the enamel when compared to the other teeth (Table 4). Uranium concentration gradients show the effects of diffusion into the enamel from all external surfaces, with enrichment at the Enamel Dentine Junction (EDJ).
 
@@ -166,19 +2529,450 @@ Sample 1788: This lower right second molar was covered by a thin layer of sedime
 
 Sample 1810: This lower left molar or premolar from the excavation pit (Figures 4 and 6c), is near complete and only moderately weathered. Uranium diffusion patterns show U accumulating at the EDJ with slow diffusion into the enamel tissue. The U concentrations in most of the enamel are too low to calculate a meaningful age. Areas of enamel with higher U concentrations return older ages (Tables 4 and 5). SCU-UoW provide a mean age for high-U spots in enamel of 128.8 ± 7.2 ka and an associated initial 234U/238U activity ratio of 7.60 ± 0.16. GU-ANU report a mean apparent U-Th age of 195.7 ± 13.8 ka, which is much higher than the adjacent dentine spots (at 81.1 ± 2.7 ka), but is coupled with realistic initial 234U/238U activity ratios of 7.24 and 7.84 with overlapping error limits. This indicates that a secondary overprint of the dentine took place for which the U source had a similar 234U/238U composition as the source of the initial U uptake event. Dentine measurements are consistent along the measured sections with small regions affected by leaching and enrichment near cracks and the pulp cavity. The dentine analyses done by SCU-UoW (Table 4) yield similar ages with consistent initial 234U/238U activity ratios of around 7.04 ± 0.03, and a mean apparent age of 72.3 ± 1.0 ka. The combined analytical data for dentine from GU-ANU in samples 1810A and 1810B yield apparent U-Th ages of 80.1 ± 2.5 ka and 82.1 ± 2.7 ka respectively, coupled with consistent initial 234U/238U activity ratios (Table 5).
 
+Sample 1841 The baboon tooth consists of an enamel crown that is structurally intact, but the enamel is friable and weathered (Figure 7). The U distribution within the enamel appears homogenous, however, Th concentrations are low and the resolution of the elemental distribution is poor, which impairs the quality of the U-Th age estimates. A recent U uptake event may have occurred affecting enamel in contact with sediment, resulting in a mean apparent U-Th age estimate of 115.6 ± 1.9 ka with a mean initial 234U/238U activity ratio of 7.76 ± 0.05 (Table 4).
+
 ![Figure 7.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig7-v1.jpg)
 
-**Figure 7.:** Papio) tooth (sample 1841), recovered from the sondage in the excavation pit, and used for ESR dating.Views are: (a) buccal, (b) occlusal, (c) lingual, and (d) internal.DOI: http://dx.doi.org/10.7554/eLife.24231.014
+**Figure 7.:** Views are: (a) buccal, (b) occlusal, (c) lingual, and (d) internal.
 
 GU-ANU also provide age estimates in which the continuous diffusion assumptions of Sambridge et al. (2012) have been applied. The results obtained for samples 1788 and 1810 are about 20% older than the closed system ages (Table 5), but show much less consistency and are not further considered.
 
 Collectively, the results show that the teeth are older than 70 ka, and considering sample 1810 with a minimum age of around 200 ka, that the H. naledi fossils are probably older than 200 ka (see Discussion).
 
-## US-ESR dating
+### US-ESR dating
 
-Combined U-series and ESR dating (US-ESR; Grün et al., 1988) of three hominin teeth (samples 1767, 1788 and 1810) and a baboon tooth (sample 1841) was performed at SCU. Blind duplicate analyses of two of the hominin samples (samples 1788 and 1810) were performed at the ‘Centro Nacional de Investigación sobre la Evolución Humana’ (CENIEH), Spain in collaboration with GU (CENIEH-GU). In obtaining the ages, each laboratory carried out independent sample preparation, and ESR and U-series analyses of the fossil teeth. Estimates for the environmental dose rates used in the age calculations were standardized for both laboratories (Table 6) in order to produce comparable results (see discussion and methodology sections for details).10.7554/eLife.24231.015Table 6.Summary table of model parameters used in ESR dating separated by sample number and laboratory. See text for detailed discussion.DOI: http://dx.doi.org/10.7554/eLife.24231.015Sample:1767178818101841Laboratory:SCUSCUCenieh-guSCUCenieh-guSCUEnamel:De (Gy)194 ± 4231 ± 8159 ± 10296 ± 14232 ± 301676 ± 127U (ppm)2.52 ± 0.530.38 ± 0.170.07 ± 0.070.32 ± 0.120.16 ± 0.162.28 ± 0.48234U/238U6.21 ± 0.035.95 ± 0.326.258 ± 0.3494.04 ± 0.184.773 ± 0.0605.87 ± 0.03230Th/234U0.37 ± 0.050.55 ± 0.520.598 ± 0.0380.92 ± 0.050.950 ± 0.0340.785 ± 0.038Alpha efficiency*0.13 ± 0.020.13 ± 0.020.13 ± 0.020.13 ± 0.020.13 ± 0.020.13 ± 0.02Initial thickness (μm)1027 ± 2101049 ± 2771486 ± 2481150 ± 2501527 ± 257650 ± 145Water (%)000000Dentine:U (ppm)7.88 ± 0.665.76 ± 0.864.71 ± 0.279.08 ± 0.445.81 ± 0.37–234U/238U6.28 ± 0.096.40 ± 0.036.448 ± 0.0465.93 ± 0.035.969 ± 0.035–230Th/234U0.35 ± 0.110.62 ± 0.020.608 ± 0.0120.52 ± 0.090.572 ± 0.010–Water (%)10 ± 510 ± 510 ± 510 ± 510 ± 5–Sediment:U (ppm)3.0 ± 0.32.9 ± 0.12.9 ± 0.13.2 ± 0.33.2 ± 0.30.64 ± 0.06†Th (ppm)7.9 ± 0.48.3 ± 0.68.3 ± 0.68.6 ± 0.48.6 ± 0.44.72 ± 0.47†K (%)1.17 ± 0.141.21 ± 0.141.21 ± 0.141.23 ± 0.141.23 ± 0.141.47 ± 0.15†Water (%)25 ± 1025 ± 1025 ± 1025 ± 1025 ± 1025 ± 10Depth below ground surface (cm)0225555Gamma Dose rate (μGy a−1) 25 ± 10% Water, 80% Rn degassing  25 ± 10% Water, no Rn degassing534 ± 69 724 ± 116534 ± 69 724 ± 116534 ± 69 724 ± 116534 ± 69 724 ± 116534 ± 69 724 ± 116534 ± 69 724 ± 116Cosmic dose rate (μGy a−1)15 ± 115 ± 115 ± 115 ± 115 ± 115 ± 1*After Woodroffe et al. (1991);†A relative error of ± 10% was assumed.
+Combined U-series and ESR dating (US-ESR; Grün et al., 1988) of three hominin teeth (samples 1767, 1788 and 1810) and a baboon tooth (sample 1841) was performed at SCU. Blind duplicate analyses of two of the hominin samples (samples 1788 and 1810) were performed at the ‘Centro Nacional de Investigación sobre la Evolución Humana’ (CENIEH), Spain in collaboration with GU (CENIEH-GU). In obtaining the ages, each laboratory carried out independent sample preparation, and ESR and U-series analyses of the fossil teeth. Estimates for the environmental dose rates used in the age calculations were standardized for both laboratories (Table 6) in order to produce comparable results (see discussion and methodology sections for details).
 
-Analyses and results from both labs are presented in Table 7 and Figures 10, 11 and 12. Results are presented for two scenarios: scenario 1 in which the teeth are fully covered in sediment that contains 25 ± 10% water and experienced 80% Rn loss; and scenario 2 in which the teeth are fully covered in sediment that contains 25 ± 10% water and experienced no Rn loss. Scenario 1 reflects the measured present-day situation and is interpreted as a maximum age estimate. Scenario 2 provides a minimum age estimate (Table 7). Together these scenarios provide our best estimate for the age range of the fossil teeth.10.7554/eLife.24231.016Table 7.Summary of ESR dating results (2σ uncertainties) for two end-member scenarios: (i) complete burial of the samples, 80% Rn loss in the sediment and post Th-230 equilibrium in dental tissue (i.e., maximum age scenario); (ii) complete burial of the samples and post-Rn equilibrium in sediment (i.e., minimum age scenario). See text for detailed discussion.DOI: http://dx.doi.org/10.7554/eLife.24231.016Sample:1767178818101841Laboratory:SCUSCUCenieh-guSCUCenieh-guSCU Scenario 1: 25 ± 10% Water, complete burial and 80% 222Rn degassing (maximum age scenario)internal dose rate (μGy a−1)1142 ± 515190 ± 12947 ± 47323 ± 175176 ± 1761411 ± 596alpha (μGy a−1)*008 ± 208 ± 20†beta dose rate, dentine (μGy a−1)73 ± 3391 ± 6264 ± 1675 ± 4151 ± 14–‡beta dose rate, sediment (μGy a−1)101 ± 24105 ± 3186 ± 1795 ± 2486 ± 18358 ± 74gamma and cosmic (μGy a−1)549 ± 69549 ± 69549 ± 69549 ± 69549 ± 69549 ± 69total dose rate (μGy a−1)1865 ± 521935 ± 162754 ± 871042 ± 194870 ± 1902318 ± 606p enamel−0.030.49−0.02−0.70−0.770.91p dentine0.080.13−0.061.020.54–Age (ka)104 ± 29247 ± 42211 ± 28284 ± 51267 ± 68723 ± 181Combined SCU/CENIEH-GU age (ka)229 + 60/–46276 + 59/–77Average age for 1788 & 1810 (ka)253 + 82/–70 Scenario 2: 25 ± 10% Water, complete burial and no 222Rn degassing (minimum age scenario)internal dose rate (μGy a−1)1277 ± 552216 ± 16551 ± 51335 ± 193184 ± 1841520 ± 630alpha (μGy a−1)*008 ± 208 ± 20beta dose rate, dentine (μGy a−1)82 ± 35102 ± 7869 ± 1887 ± 5059 ± 16--beta dose rate, sediment (μGy a−1)132 ± 26134 ± 33111 ± 19126 ± 26112 ± 19380 ± 81gamma and cosmic (μGy a−1)739 ± 116739 ± 116739 ± 116739 ± 116739 ± 116739 ± 116total dose rate (μGy a−1)2230 ± 5861191 ± 219978 ± 1291287 ± 2321102 ± 2192639 ± 647p enamel−0.310.06−0.37−0.83−0.910.67p dentine−0.22−0.22−0.400.540.10–Age (ka)87 ± 22194 ± 34163 ± 24230 ± 40210 ± 50635 ± 148Combined SCU/CENIEH-GU age (ka)179 + 49/–40220 + 50/–60Average age for 1788 & 1810 (ka)200 + 70/–61*using alpha attenuation values of Grün (1987).†considered as negligible given the low radioelement concentrations in the sediment and the high total dose rate value.‡for 1841, the beta dose rate on both sides of the enamel layer is derived from the sediment.
+**Table 6.**
+ Summary table of model parameters used in ESR dating separated by sample number and laboratory. See text for detailed discussion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample:</th>
+      <th>1767</th>
+      <th colspan="2">1788</th>
+      <th colspan="2">1810</th>
+      <th>1841</th>
+    </tr>
+    <tr>
+      <th>Laboratory:</th>
+      <th>SCU</th>
+      <th>SCU</th>
+      <th>Cenieh-gu</th>
+      <th>SCU</th>
+      <th>Cenieh-gu</th>
+      <th>SCU</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="6">Enamel:</td>
+    </tr>
+    <tr>
+      <td>De (Gy)</td>
+      <td>194 ± 4</td>
+      <td>231 ± 8</td>
+      <td>159 ± 10</td>
+      <td>296 ± 14</td>
+      <td>232 ± 30</td>
+      <td>1676 ± 127</td>
+    </tr>
+    <tr>
+      <td>U (ppm)</td>
+      <td>2.52 ± 0.53</td>
+      <td>0.38 ± 0.17</td>
+      <td>0.07 ± 0.07</td>
+      <td>0.32 ± 0.12</td>
+      <td>0.16 ± 0.16</td>
+      <td>2.28 ± 0.48</td>
+    </tr>
+    <tr>
+      <td>234U/238U</td>
+      <td>6.21 ± 0.03</td>
+      <td>5.95 ± 0.32</td>
+      <td>6.258 ± 0.349</td>
+      <td>4.04 ± 0.18</td>
+      <td>4.773 ± 0.060</td>
+      <td>5.87 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>230Th/234U</td>
+      <td>0.37 ± 0.05</td>
+      <td>0.55 ± 0.52</td>
+      <td>0.598 ± 0.038</td>
+      <td>0.92 ± 0.05</td>
+      <td>0.950 ± 0.034</td>
+      <td>0.785 ± 0.038</td>
+    </tr>
+    <tr>
+      <td>Alpha efficiency*</td>
+      <td>0.13 ± 0.02</td>
+      <td>0.13 ± 0.02</td>
+      <td>0.13 ± 0.02</td>
+      <td>0.13 ± 0.02</td>
+      <td>0.13 ± 0.02</td>
+      <td>0.13 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Initial thickness (μm)</td>
+      <td>1027 ± 210</td>
+      <td>1049 ± 277</td>
+      <td>1486 ± 248</td>
+      <td>1150 ± 250</td>
+      <td>1527 ± 257</td>
+      <td>650 ± 145</td>
+    </tr>
+    <tr>
+      <td>Water (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="6">Dentine:</td>
+    </tr>
+    <tr>
+      <td>U (ppm)</td>
+      <td>7.88 ± 0.66</td>
+      <td>5.76 ± 0.86</td>
+      <td>4.71 ± 0.27</td>
+      <td>9.08 ± 0.44</td>
+      <td>5.81 ± 0.37</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>234U/238U</td>
+      <td>6.28 ± 0.09</td>
+      <td>6.40 ± 0.03</td>
+      <td>6.448 ± 0.046</td>
+      <td>5.93 ± 0.03</td>
+      <td>5.969 ± 0.035</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>230Th/234U</td>
+      <td>0.35 ± 0.11</td>
+      <td>0.62 ± 0.02</td>
+      <td>0.608 ± 0.012</td>
+      <td>0.52 ± 0.09</td>
+      <td>0.572 ± 0.010</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Water (%)</td>
+      <td>10 ± 5</td>
+      <td>10 ± 5</td>
+      <td>10 ± 5</td>
+      <td>10 ± 5</td>
+      <td>10 ± 5</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="6">Sediment:</td>
+    </tr>
+    <tr>
+      <td>U (ppm)</td>
+      <td>3.0 ± 0.3</td>
+      <td>2.9 ± 0.1</td>
+      <td>2.9 ± 0.1</td>
+      <td>3.2 ± 0.3</td>
+      <td>3.2 ± 0.3</td>
+      <td>0.64 ± 0.06†</td>
+    </tr>
+    <tr>
+      <td>Th (ppm)</td>
+      <td>7.9 ± 0.4</td>
+      <td>8.3 ± 0.6</td>
+      <td>8.3 ± 0.6</td>
+      <td>8.6 ± 0.4</td>
+      <td>8.6 ± 0.4</td>
+      <td>4.72 ± 0.47†</td>
+    </tr>
+    <tr>
+      <td>K (%)</td>
+      <td>1.17 ± 0.14</td>
+      <td>1.21 ± 0.14</td>
+      <td>1.21 ± 0.14</td>
+      <td>1.23 ± 0.14</td>
+      <td>1.23 ± 0.14</td>
+      <td>1.47 ± 0.15†</td>
+    </tr>
+    <tr>
+      <td>Water (%)</td>
+      <td>25 ± 10</td>
+      <td>25 ± 10</td>
+      <td>25 ± 10</td>
+      <td>25 ± 10</td>
+      <td>25 ± 10</td>
+      <td>25 ± 10</td>
+    </tr>
+    <tr>
+      <td>Depth below ground surface (cm)</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td colspan="7">Gamma Dose rate (μGy a−1)</td>
+    </tr>
+    <tr>
+      <td>25 ± 10% Water, 80% Rn degassing  25 ± 10% Water, no Rn degassing</td>
+      <td>534 ± 69 724 ± 116</td>
+      <td>534 ± 69 724 ± 116</td>
+      <td>534 ± 69 724 ± 116</td>
+      <td>534 ± 69 724 ± 116</td>
+      <td>534 ± 69 724 ± 116</td>
+      <td>534 ± 69 724 ± 116</td>
+    </tr>
+    <tr>
+      <td>Cosmic dose rate (μGy a−1)</td>
+      <td>15 ± 1</td>
+      <td>15 ± 1</td>
+      <td>15 ± 1</td>
+      <td>15 ± 1</td>
+      <td>15 ± 1</td>
+      <td>15 ± 1</td>
+    </tr>
+  </tbody>
+</table>
+
+_*After Woodroffe et al. (1991);†A relative error of ± 10% was assumed._
+
+Analyses and results from both labs are presented in Table 7 and Figures 10, 11 and 12. Results are presented for two scenarios: scenario 1 in which the teeth are fully covered in sediment that contains 25 ± 10% water and experienced 80% Rn loss; and scenario 2 in which the teeth are fully covered in sediment that contains 25 ± 10% water and experienced no Rn loss. Scenario 1 reflects the measured present-day situation and is interpreted as a maximum age estimate. Scenario 2 provides a minimum age estimate (Table 7). Together these scenarios provide our best estimate for the age range of the fossil teeth.
+
+**Table 7.**
+ Summary of ESR dating results (2σ uncertainties) for two end-member scenarios: (i) complete burial of the samples, 80% Rn loss in the sediment and post Th-230 equilibrium in dental tissue (i.e., maximum age scenario); (ii) complete burial of the samples and post-Rn equilibrium in sediment (i.e., minimum age scenario). See text for detailed discussion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample:</th>
+      <th>1767</th>
+      <th colspan="2">1788</th>
+      <th colspan="2">1810</th>
+      <th>1841</th>
+    </tr>
+    <tr>
+      <th>Laboratory:</th>
+      <th>SCU</th>
+      <th>SCU</th>
+      <th>Cenieh-gu</th>
+      <th>SCU</th>
+      <th>Cenieh-gu</th>
+      <th>SCU</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">Scenario 1: 25 ± 10% Water, complete burial and 80% 222Rn degassing (maximum age scenario)</td>
+    </tr>
+    <tr>
+      <td>internal dose rate (μGy a−1)</td>
+      <td>1142 ± 515</td>
+      <td>190 ± 129</td>
+      <td>47 ± 47</td>
+      <td>323 ± 175</td>
+      <td>176 ± 176</td>
+      <td>1411 ± 596</td>
+    </tr>
+    <tr>
+      <td>alpha (μGy a−1)*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8 ± 2</td>
+      <td>0</td>
+      <td>8 ± 2</td>
+      <td>0†</td>
+    </tr>
+    <tr>
+      <td>beta dose rate, dentine (μGy a−1)</td>
+      <td>73 ± 33</td>
+      <td>91 ± 62</td>
+      <td>64 ± 16</td>
+      <td>75 ± 41</td>
+      <td>51 ± 14</td>
+      <td>–‡</td>
+    </tr>
+    <tr>
+      <td>beta dose rate, sediment (μGy a−1)</td>
+      <td>101 ± 24</td>
+      <td>105 ± 31</td>
+      <td>86 ± 17</td>
+      <td>95 ± 24</td>
+      <td>86 ± 18</td>
+      <td>358 ± 74</td>
+    </tr>
+    <tr>
+      <td>gamma and cosmic (μGy a−1)</td>
+      <td>549 ± 69</td>
+      <td>549 ± 69</td>
+      <td>549 ± 69</td>
+      <td>549 ± 69</td>
+      <td>549 ± 69</td>
+      <td>549 ± 69</td>
+    </tr>
+    <tr>
+      <td>total dose rate (μGy a−1)</td>
+      <td>1865 ± 521</td>
+      <td>935 ± 162</td>
+      <td>754 ± 87</td>
+      <td>1042 ± 194</td>
+      <td>870 ± 190</td>
+      <td>2318 ± 606</td>
+    </tr>
+    <tr>
+      <td>p enamel</td>
+      <td>−0.03</td>
+      <td>0.49</td>
+      <td>−0.02</td>
+      <td>−0.70</td>
+      <td>−0.77</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>p dentine</td>
+      <td>0.08</td>
+      <td>0.13</td>
+      <td>−0.06</td>
+      <td>1.02</td>
+      <td>0.54</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Age (ka)</td>
+      <td>104 ± 29</td>
+      <td>247 ± 42</td>
+      <td>211 ± 28</td>
+      <td>284 ± 51</td>
+      <td>267 ± 68</td>
+      <td>723 ± 181</td>
+    </tr>
+    <tr>
+      <td>Combined SCU/CENIEH-GU age (ka)</td>
+      <td></td>
+      <td colspan="2">229 + 60/–46</td>
+      <td colspan="2">276 + 59/–77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average age for 1788 &amp; 1810 (ka)</td>
+      <td></td>
+      <td colspan="4">253 + 82/–70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7">Scenario 2: 25 ± 10% Water, complete burial and no 222Rn degassing (minimum age scenario)</td>
+    </tr>
+    <tr>
+      <td>internal dose rate (μGy a−1)</td>
+      <td>1277 ± 552</td>
+      <td>216 ± 165</td>
+      <td>51 ± 51</td>
+      <td>335 ± 193</td>
+      <td>184 ± 184</td>
+      <td>1520 ± 630</td>
+    </tr>
+    <tr>
+      <td>alpha (μGy a−1)*</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8 ± 2</td>
+      <td>0</td>
+      <td>8 ± 2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>beta dose rate, dentine (μGy a−1)</td>
+      <td>82 ± 35</td>
+      <td>102 ± 78</td>
+      <td>69 ± 18</td>
+      <td>87 ± 50</td>
+      <td>59 ± 16</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>beta dose rate, sediment (μGy a−1)</td>
+      <td>132 ± 26</td>
+      <td>134 ± 33</td>
+      <td>111 ± 19</td>
+      <td>126 ± 26</td>
+      <td>112 ± 19</td>
+      <td>380 ± 81</td>
+    </tr>
+    <tr>
+      <td>gamma and cosmic (μGy a−1)</td>
+      <td>739 ± 116</td>
+      <td>739 ± 116</td>
+      <td>739 ± 116</td>
+      <td>739 ± 116</td>
+      <td>739 ± 116</td>
+      <td>739 ± 116</td>
+    </tr>
+    <tr>
+      <td>total dose rate (μGy a−1)</td>
+      <td>2230 ± 586</td>
+      <td>1191 ± 219</td>
+      <td>978 ± 129</td>
+      <td>1287 ± 232</td>
+      <td>1102 ± 219</td>
+      <td>2639 ± 647</td>
+    </tr>
+    <tr>
+      <td>p enamel</td>
+      <td>−0.31</td>
+      <td>0.06</td>
+      <td>−0.37</td>
+      <td>−0.83</td>
+      <td>−0.91</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>p dentine</td>
+      <td>−0.22</td>
+      <td>−0.22</td>
+      <td>−0.40</td>
+      <td>0.54</td>
+      <td>0.10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Age (ka)</td>
+      <td>87 ± 22</td>
+      <td>194 ± 34</td>
+      <td>163 ± 24</td>
+      <td>230 ± 40</td>
+      <td>210 ± 50</td>
+      <td>635 ± 148</td>
+    </tr>
+    <tr>
+      <td>Combined SCU/CENIEH-GU age (ka)</td>
+      <td></td>
+      <td colspan="2">179 + 49/–40</td>
+      <td colspan="2">220 + 50/–60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average age for 1788 &amp; 1810 (ka)</td>
+      <td></td>
+      <td colspan="4">200 + 70/–61</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*using alpha attenuation values of Grün (1987).†considered as negligible given the low radioelement concentrations in the sediment and the high total dose rate value.‡for 1841, the beta dose rate on both sides of the enamel layer is derived from the sediment._
 
 Combined US-ESR ages determined by SCU for samples 1810, 1788 and 1767 under scenario 1 conditions (i.e., the maximum age scenario) are 284 ± 51 ka, 247 ± 41 ka and 104 ± 29 ka (2σ uncertainty), respectively (Table 7). Combined US-ESR ages determined by CENIEH-GU for samples 1810 and 1788 under scenario 1 conditions are 267 ± 68 ka and 211 ± 28 ka (2σ uncertainty), respectively (Table 7).
 
@@ -190,21 +2984,155 @@ The observed difference in age estimates obtained by SCU and CENIEH-GU for sampl
 
 Combined US-ESR ages for the baboon tooth (sample 1841) determined by SCU using scenario 1 and 2 conditions are 723 ± 181 ka and 635 ± 148 ka respectively. The tooth contained no inner dentine (Figure 7), and was filled with sediment. In calculating the age it was, therefore, assumed that sediment occurred on both sides of the enamel layer. Sample 1841 was recovered from sub-unit 3a directly below the occurrence of articulated H. naledi remains in the excavation pit (Dirks et al., 2015). The age results provide an upper age limit for the deposition of the H. naledi bearing layer, and mark an earlier stage of deposition of mud clast breccia in the cave assigned to sub-unit 3a, which predates the entry of H. naledi fossils into the cave.
 
-## OSL dating
+### OSL dating
 
-Optically stimulated luminescence (OSL) dating of three samples of sediment from Unit 1 in the Dinaledi Chamber (samples OSL3 and OSL4 from sub-unit 1b, and sample OSL5 from sub-unit 1a; Figure 5) was performed at the University of the Witwatersrand (Wits). The measurements were carried out on small aliquots containing ~30 grains. Summaries of the OSL analytical data and ages are reported in Table 8.10.7554/eLife.24231.017Table 8.Summary of OSL results obtained by the University of the Witwatersrand for samples of Unit 1 from the Dinaledi Chamber (samples OSL3, 4 and 5). The ages were calculated using effective U concentration values (taking disequilibrium into account; see text for details). CAM = Central Age Model; MAM = Minimum Age Model.DOI: http://dx.doi.org/10.7554/eLife.24231.017Sample IDH2O (%)Th (ppm)U (ppm) pre-RnU (ppm) post-RnK (%)Total dr (Gy/ka)2σTotal de (Gy) CAM2σTotal de (Gy) MAM2σCAM Age (ka)CAM 2σMAM age (ka)MAM 2σOver dispersion (%)OSL318.9 ± 53.71 ± 1.600.75 ± 0.1770.193 ± 0.0440.45 ± 0.120.760.07428.5968.92176.427.75601032314163OSL425.8 ± 53.38 ± 1.600.485 ± 0.1770.097 ± 0.0440.47 ± 0.120.700.06379.8943.58168.020.7546792413755OSL522.7 ± 55.11 ± 1.600.692 ± 0.1770.138 ± 0.0440.56 ± 0.120.900.07759.54102.33315.6748.688491323536168
+Optically stimulated luminescence (OSL) dating of three samples of sediment from Unit 1 in the Dinaledi Chamber (samples OSL3 and OSL4 from sub-unit 1b, and sample OSL5 from sub-unit 1a; Figure 5) was performed at the University of the Witwatersrand (Wits). The measurements were carried out on small aliquots containing ~30 grains. Summaries of the OSL analytical data and ages are reported in Table 8.
+
+**Table 8.**
+ Summary of OSL results obtained by the University of the Witwatersrand for samples of Unit 1 from the Dinaledi Chamber (samples OSL3, 4 and 5). The ages were calculated using effective U concentration values (taking disequilibrium into account; see text for details). CAM = Central Age Model; MAM = Minimum Age Model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample ID</th>
+      <th>H2O (%)</th>
+      <th>Th (ppm)</th>
+      <th>U (ppm) pre-Rn</th>
+      <th>U (ppm) post-Rn</th>
+      <th>K (%)</th>
+      <th>Total dr (Gy/ka)</th>
+      <th>2σ</th>
+      <th>Total de (Gy) CAM</th>
+      <th>2σ</th>
+      <th>Total de (Gy) MAM</th>
+      <th>2σ</th>
+      <th>CAM Age (ka)</th>
+      <th>CAM 2σ</th>
+      <th>MAM age (ka)</th>
+      <th>MAM 2σ</th>
+      <th>Over dispersion (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OSL3</td>
+      <td>18.9 ± 5</td>
+      <td>3.71 ± 1.60</td>
+      <td>0.75 ± 0.177</td>
+      <td>0.193 ± 0.044</td>
+      <td>0.45 ± 0.12</td>
+      <td>0.76</td>
+      <td>0.07</td>
+      <td>428.59</td>
+      <td>68.92</td>
+      <td>176.4</td>
+      <td>27.7</td>
+      <td>560</td>
+      <td>103</td>
+      <td>231</td>
+      <td>41</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>OSL4</td>
+      <td>25.8 ± 5</td>
+      <td>3.38 ± 1.60</td>
+      <td>0.485 ± 0.177</td>
+      <td>0.097 ± 0.044</td>
+      <td>0.47 ± 0.12</td>
+      <td>0.70</td>
+      <td>0.06</td>
+      <td>379.89</td>
+      <td>43.58</td>
+      <td>168.0</td>
+      <td>20.7</td>
+      <td>546</td>
+      <td>79</td>
+      <td>241</td>
+      <td>37</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>OSL5</td>
+      <td>22.7 ± 5</td>
+      <td>5.11 ± 1.60</td>
+      <td>0.692 ± 0.177</td>
+      <td>0.138 ± 0.044</td>
+      <td>0.56 ± 0.12</td>
+      <td>0.90</td>
+      <td>0.07</td>
+      <td>759.54</td>
+      <td>102.33</td>
+      <td>315.67</td>
+      <td>48.68</td>
+      <td>849</td>
+      <td>132</td>
+      <td>353</td>
+      <td>61</td>
+      <td>68</td>
+    </tr>
+  </tbody>
+</table>
 
 The reported dose rates for the samples range from 0.7 to 0.9 Gy ka−1 (Table 8), with significant within-sample scatter, resulting in uncertainties on age estimates of 15–18%. Overdispersion in De ranges from 50–70%, which is much higher than would be expected for a well-bleached sample, and indicates that it is most appropriate to apply a Minimum Age Model (MAM) to the dataset, in which the MAM age is likely to represent a maximum estimate for the age of the sediments (see Discussion). As with ESR, significant Rn loss was detected in the samples of Unit 1, and corrections to the measured U concentrations were applied (Table 8). The MAM calculations for the three samples yield maximum age estimates for the sediments of 231 ± 41 ka (OSL3), 241 ± 37 ka (OSL4), and 353 ± 61 ka (OSL5). The MAM apparent ages for OSL3 and OSL4 were obtained from the sandy facies of sub-unit 1b sediments and yield ages that are younger than the age of a Flowstone 1 sheet (sample RS5 at 290 ± 4 ka; Table 1) that covers the outcrop of sub-unit 1a from which sample OSL4 was taken (Figure 2c). This discrepancy can be attributed to inverted stratigraphy associated with erosion of the top of the older sub-unit 1a after the deposition of Flowstone 1 (RS5) by running water and subsequent deposition of sub-unit 1b between sub-unit 1a and the flowstone (Figure 2c). Sample OSL5 was obtained from muddy sediment of sub-unit 1a, and yields an older age than the covering flowstones (RS5 and RS20). Note that if a Central Age Model (CAM) is applied to the OSL data, results are significantly older at 560 ± 102 ka (OSL3), 546 ± 79 ka (OSL4), and 849 ± 132 ka (OSL5), however, this model is considered unrealistic within a cave environment (Galbraith et al., 1999).
 
-## Palaeomagnetic analysis of flowstone
+### Palaeomagnetic analysis of flowstone
 
-Palaeomagnetic analysis of one composite sample of Flowstone 1a (Figure 13), covering erosional remnants of Unit 2 near the entry shaft into the Dinaledi Chamber, was performed at La trobe University, Melbourne (LTU). The palaeomagnetic results for Flowstone 1a are presented in Figure 13 and Table 9. The palaeomagnetic sample from Flowstone 1a comprises three distinct phases of flowstone formation (from base to top: A, B and C; Figure 13a,b) that have been analysed for their palaeomagnetic orientation (Figure 13c). Note that the palaeomagnetic sample of Flowstone 1a was taken up-dip from the position where the U-Th sample of Flowstone 1a was taken (i.e., RS22 and RS23). The basal, phase A flowstone observed in the palaeomagnetic sample tapers out down-dip (Figure 13a) and is not present in the U-Th sample; thus, RS23 at the base of the U-Th sample corresponds to phase B carbonate in the palaeomagnetic sample, and RS22 to phase C carbonate (Figure 2b).10.7554/eLife.24231.018Table 9.Final mean palaeomagnetic data for all subsamples analysed from each phase of Flowstone 1a as shown in Figure 13. MAD = mean maximum angular deviation for individual samples; K = precision/sample dispersal parameter; Plat = palaeolatitude).DOI: http://dx.doi.org/10.7554/eLife.24231.018Flowstone 1aDeclination (O)Inclination (O)MADKPlat.Polarity Phase C15.5−39.7370.875.4N Phase B26−28.17.4156.263.3N Phase A156.415.95.730.2−60.0R
+Palaeomagnetic analysis of one composite sample of Flowstone 1a (Figure 13), covering erosional remnants of Unit 2 near the entry shaft into the Dinaledi Chamber, was performed at La trobe University, Melbourne (LTU). The palaeomagnetic results for Flowstone 1a are presented in Figure 13 and Table 9. The palaeomagnetic sample from Flowstone 1a comprises three distinct phases of flowstone formation (from base to top: A, B and C; Figure 13a,b) that have been analysed for their palaeomagnetic orientation (Figure 13c). Note that the palaeomagnetic sample of Flowstone 1a was taken up-dip from the position where the U-Th sample of Flowstone 1a was taken (i.e., RS22 and RS23). The basal, phase A flowstone observed in the palaeomagnetic sample tapers out down-dip (Figure 13a) and is not present in the U-Th sample; thus, RS23 at the base of the U-Th sample corresponds to phase B carbonate in the palaeomagnetic sample, and RS22 to phase C carbonate (Figure 2b).
+
+**Table 9.**
+ Final mean palaeomagnetic data for all subsamples analysed from each phase of Flowstone 1a as shown in Figure 13. MAD = mean maximum angular deviation for individual samples; K = precision/sample dispersal parameter; Plat = palaeolatitude).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Flowstone 1a</th>
+      <th>Declination (O)</th>
+      <th>Inclination (O)</th>
+      <th>MAD</th>
+      <th>K</th>
+      <th>Plat.</th>
+      <th>Polarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phase C</td>
+      <td>15.5</td>
+      <td>−39.7</td>
+      <td>3</td>
+      <td>70.8</td>
+      <td>75.4</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Phase B</td>
+      <td>26</td>
+      <td>−28.1</td>
+      <td>7.4</td>
+      <td>156.2</td>
+      <td>63.3</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Phase A</td>
+      <td>156.4</td>
+      <td>15.9</td>
+      <td>5.7</td>
+      <td>30.2</td>
+      <td>−60.0</td>
+      <td>R</td>
+    </tr>
+  </tbody>
+</table>
 
 Phase A flowstone at the base of the sample records a consistent reversed magnetic polarity, with a clear overprint that is anti-parallel to the characteristic, reversed polarity remanence (ChRM) and is removed by ~10 mT. The reversed polarity ChRM is then stable between 10 and 40 mT, although within this range there are two reversed polarity components that can be identified in some samples (between 10 and 19 mT and then between 20 and 40 mT; Figure 13c). Both components have almost identical declination values, but the lower field component has a shallower inclination. This is not uncommon within speleothems (Herries and Shaw, 2011) because a single subsample of 2.5 cm depth is measuring the remanence recorded in multiple layers of speleothem as well as multiple layers of detrital contamination. Phase B flowstone records a weak, normal polarity ChRM that is consistently isolated between 7 and 36mT (Figure 13c). The results from this phase have the highest mean maximum angular deviation (MAD) values (Table 9) due to the small and oddly shaped nature of the samples that provide less consistent measurements between each spin in the magnetometer. Phase C flowstone also records a normal ChRM that is similar to that seen within phase B (Figure 13c), although with slightly steeper inclinations (Figure 13c, Stereo Plot).
 
 The samples do not have strong secondary overprints as seen in many Plio-Pleistocene palaeo-cave deposits from the region (Dirks et al., 2010), which may indicate that they are younger or have a different sediment source and, thus, mineralogy holding the remanence. The coercivity of phase B and C flowstones is similar, and distinct from phase A flowstone, although all the demagnetisation spectra suggest the dominant mineral holding the remanence is ferrimagnetic (magnetite/maghaemite) as at many other CoH sites (Herries et al., 2006; Herries and Shaw, 2011; Herries et al., 2014).
 
-## Radiocarbon dating
+### Radiocarbon dating
 
 Three weathered bone fragments of H. naledi were analysed via radiocarbon dating at Beta Analytic Inc. (Florida, USA). Analyses indicated that no collagen was present in any of the samples and that the bone appeared possibly cremated. This was investigated with a bone carbonate extraction technique. Tests did not support cremation and indicated that extensive secondary CaCO3 replacement had occurred, providing ages of 33.0 ± 0.2 ka and 35.50 ± 0.16 ka for two of the fragments. We interpret these ages to relate to late calcite precipitation in the bones that may reflect a wet period in the cave.
 
@@ -212,11 +3140,11 @@ Three weathered bone fragments of H. naledi were analysed via radiocarbon dating
 
 The strategy in dating the fossils has been built on three components: (i) construct a detailed stratigraphic model for the cave sediments in the Dinaledi Chamber in which the position of the hominin-bearing deposits can be securely placed; (ii) date the sedimentary units that potentially bracket the hominin-bearing deposits; and (iii) date the H. naledi fossils directly. We will start this discussion by commenting on the reliability of the various dating techniques, and how they should be viewed relative to each other. We will then discuss the outcomes of each of the three strategic components, and their implications for the age of the H. naledi material. The broader implications of the age for the morphological evolution of hominins in southern Africa is discussed in detail in Berger et al., 2017, and will be briefly summarized at the end of this discussion.
 
-## Reliability of the age estimates
+### Reliability of the age estimates
 
 The dating techniques applied in this study do not all work in the same way, and hence the results must be viewed differently. U-series analysis on carbonates, 14C analysis of bone and palaeomagnetic analyses of flowstones (e.g., Herries and Shaw, 2011; Taylor and Bar-Yosef, 2014; Hellstrom and Pickering, 2015) are well established dating techniques requiring few, if any, à priori assumptions. In contrast, ESR and OSL results are strongly dependent on model assumptions for the environmental conditions that affected the locations from which the samples were taken.
 
-## U-Th results
+#### U-Th results
 
 Sample preparation and analytical procedures for U-Th disequilibrium dating are well established (see methodology section), and are likely to return highly reproducible (i.e., high precision) results. This is certainly the case here, where samples analysed in duplicate in independent laboratories (JCU and UoM) returned identical results within analytical uncertainties (Tables 1, 2 and 3). The only exception is that UoM was able to provide ages for older flowstones that date close to the detection limit for the technique, whereas JCU did not provide ages over 400 ka.
 
@@ -224,7 +3152,7 @@ Although these results demonstrate high levels of precision, further evaluation 
 
 As with flowstone, analytical procedures for U-Th disequilibrium dating of teeth are well established (e.g., Grün et al., 2014). However, in this study there are significant differences in the U-Th disequilibrium ages of teeth reported by the two laboratories (Tables 4 and 5). This difference in measured ages is most likely due to the fact that the different laboratories dated different fragments of the teeth. The U-Th analyses show that the U distribution within the teeth, and especially within enamel, is highly variable, as reflected in the wide range of U-Th ages (Tables 4 and 5). Where a tooth displays consistent ages and initial 234U/238U ratios over a large domain, or where we have observed close coincidence in U-Th ages and initial 234U/238U ratios for dentine and adjacent enamel samples, we interpret the results to suggest that a U uptake event has been dated. Considering the variable distribution of U within the tooth samples, it is possible that the same tooth records more than one U uptake event in different domains within the tooth (most notably when comparing enamel vs dentine domains; Grün et al., 2014). Since Th is immobile, each U uptake event that affects the tooth will shift pre-existing U-Th systematics to portray a younger age (Grün et al., 2014). The variable U-Th disequilibrium ages are a clear indication that U uptake events took place, and provide a minimum age estimate for the true age of the teeth. Where apparent ages are consistent across much of the tooth (e.g., sample 1767) they may approach the true age of the U uptake events. The results presented in this study show that the hominin teeth are clearly older than 70 ka, as evidenced from the consistent results on the dentine of samples 1788 and 1810. An important result from this method is the older closed system age (ca. 200 ka) from enamel obtained for sample 1810B by GU-ANU (Table 5). This result indicates that there was an early phase of U uptake in the tooth that was later overprinted in the associated dentine. In this case, sample 1810 has a minimum age of around 200 ka, suggesting that the H. naledi fossils are older than 200 ka.
 
-## US-ESR and OSL results
+#### US-ESR and OSL results
 
 ESR and OSL dating techniques are dosimetric dating techniques (Adamiec and Aitken, 1998; Murray and Wintle, 2000), and deliver results that are generally much more variable than U-series dating due to the relative lack of control of the conditions under which the samples accumulated radiation damage. In addition, analytical protocols between labs may vary significantly (e.g., SCU used an X-ray gun whilst CENIEH-GU used gamma-rays as their irradiation source), and final results are heavily dependent on a range of à priori model assumptions (such as water content, Rn loss or burial history through time). For OSL, similar à priori model assumptions must be made, and the interpretation of results is further hindered by the use of composite samples in which individual grains may have experienced different burial histories (Galbraith et al., 1999, 2005). Single grain analyses are possible (Duller, 2008), but far more labour intensive and, for the purpose of this study, were not required. Moreover, this is the first time that OSL has been applied to cave deposits in the CoH, and there is no comparative data available for this area. However, the results are consistent with the interpreted stratigraphy and other dating in the chamber, and highlight the potential for additional work.
 
@@ -236,7 +3164,7 @@ The age estimates from the maximum and minimum age scenarios as calculated here 
 
 The OSL results are more difficult to interpret than the US-ESR results, not only because we have to assume model parameters to estimate the environmental dose rate, but also because we have few constraints on the origin and provenance of the quartz grains that were sampled. OSL analyses were carried out for aliquots of ~30 grains and each analysis, therefore, is an average of the signals contained in the grains. There is significant within-sample scatter in measured total dose (De) values between different aliquots, meaning that age estimates are imprecise (uncertainties of 15–18%). Overdispersion in De ranges from 50–70%, which is much higher than would be expected for a well-bleached sample (Galbraith et al., 1999), and is a reflection of the cave environment from which the samples were taken (Duller, 2008). We interpret this to mean that the quartz grains in each aliquot consist of a mixture of grains with some derived from outside the cave (and carried into the cave over a period of time), and others derived from quartz veins and chert beds within the cave that have only been partly bleached or have never been bleached at surface at all. Add to this the natural signal variability that can occur due to crystallographic orientation and lattice defects (Olley et al., 2004; Galbraith et al., 1999, 2005) and a large overdispersion results. The Minimum Age Model (MAM) was chosen as the preferred statistical model to calculate age estimates for the sediments. This is a statistical averaging technique for aliquots that display a high degree of within-sample scatter (Olley et al., 2004; Galbraith et al., 2005), but still combines some grains that are well-bleached with others that are only partly bleached. Thus, the MAM age is likely to provide a maximum age estimate for the Unit 1 sediments, and must be viewed with caution. A more comprehensive sampling campaign will be required in future to fully establish the range of ages for Unit 1 across the chamber. Nevertheless, the preliminary results are consistent with the range of ages suggested for Unit 3 by ESR and U-Th analyses on capping flowstones (Figure 14).
 
-## An updated stratigraphy for the Dinaledi Chamber
+### An updated stratigraphy for the Dinaledi Chamber
 
 The importance of a deep understanding of the stratigraphic position of the fossils and the geological processes that led to their deposition cannot be overstated considering the extremely complex nature of sedimentary cave fill in many cave systems (e.g., Wilkinson, 1985; Brain, 1993; Sasowsky, 1998; Stock et al., 2005; Stratford et al., 2014; Sutikna et al., 2016) involving repeated cycles of deposition, erosion and reworking, leading to complex and sometimes contradictory age results (e.g., Granger et al., 2015; Kramers and Dirks, 2017). This problem is well illustrated with the on-going debate on the age of Stw 573 (‘little foot’) in the nearby Sterkfontein Cave, where after 20 years of dating efforts no definitive age is yet established (see Partridge et al., 1999, 2003; Berger et al., 2002; Walker et al., 2006; Herries and Shaw, 2011; Pickering and Kramers, 2010; Granger et al., 2015; Kramers and Dirks, 2017). Another good example illustrating the difficulties of linking cave stratigraphy to a definitive age for the hominin fossils they contain is presented by the H. floresiensis remains in the Liang Bua cave, Indonesia (Morwood et al., 2004; Roberts et al., 2009; Sutikna et al., 2016).
 
@@ -244,11 +3172,11 @@ The stratigraphy within the Dinaledi Chamber has been previously described by Di
 
 The oldest ages returned from the Dinaledi Chamber are from the baboon tooth that is embedded in sediment attributed to sub-unit 3a, followed by U-Th ages for Flowstone 1a, which directly covers erosional remnants of Unit 2 (Figure 14). Flowstone 1a consists of at least three generations of flowstone growth, named, from oldest to youngest, phase A, B and C (Figures 2b, 13a,b and 14). We dated phases B and C via U-Th, at 502 ka (RS23; Table 1) and 478 ka (RS22; Table 1) respectively, but the uncertainties are large because the ages are close to the upper dating limit of the U-Th technique. The oldest, phase A layer at the base of Flowstone 1a records reversed magnetic polarity indicating that it formed before 780 ka (Singer, 2014). The three age estimates are consistent with the stratigraphic position of the three phases in Flowstone 1a, and they indicate that the erosion remnant of Unit 2 encrusted by Flowstone 1a is also older than 780 ka. The fact that the erosion remnants of Flowstone 1a dip into the chamber suggests that at the time of formation of all three phases of Flowstone 1a, the debris cone of Unit 2 sediment was still in place; that is, erosion of Unit 2 sediment from below Flowstone 1a would have occurred sometime after 585 ka (i.e., the older age limit for phase C in Flowstone 1a) and possibly as late as 437 ka (i.e., the younger age limit of phase C in Flowstone 1a). Unit 2 contains rare fossils of macrofauna, including a long bone in the erosion remnant, which must be older than 780 ka as well. We interpret the floor sediments of sub-unit 3a that contain the baboon tooth (sample 1841) to represent, at last in part, the reworked remains of the debris cone that once existed below Flowstone 1a (Figure 8) as material was removed from the chamber via floor drains, thereby undercutting the debris cone, which responded by slowly slumping into the chamber – a process ongoing today. The baboon tooth could be part of the original, Unit 2 debris cone and, therefore, older than 780 ka, although the US-ESR age indicates that it could also be younger (with a mid point age of ~ 679 ka between a maximum age of 723 ± 181 ka and the minimum age of 635 ± 148 ka, with a possible age range of 487 ka to 904 ka). If the tooth is younger than 780 ka, it would suggest that it was derived from different sedimentary deposits not tested in this study, or that it may have entered the chamber separately during erosion of the Unit 2 debris cone, and its presence may reflect more direct entry points from surface into the chamber now sealed by flowstone. This possibility was tested with sample RS9, a flowstone sample filling a thin (<14 cm wide) fracture in the dolomite on the surface that occurs above the Dinaledi Chamber. This flowstone yielded equilibrium U-Th results meaning that it formed before ~ 600 ka (Table 1), which is consistent with the interpretation that the Dinaledi Chamber was closed to direct entry of coarser-grained sediment from the surface prior to the entry of H. naledi into the cave system and remained closed until the present (Dirks et al., 2016a).
 
-Below Flowstone 1a are five other flowstones (Flowstones 1b-e and Flowstone Group 2;
+Below Flowstone 1a are five other flowstones (Flowstones 1b-e and Flowstone Group 2; Figure 2b), which each cover erosional remnants of sediments that we originally grouped as Unit 2 (Dirks et al., 2015). The geochronology results presented here (Table 1) now permit a better evaluation of the flowstone stratigraphy in the chamber, and it is evident that Unit 2 represents a significantly older stratigraphic unit that is restricted to deposits directly below Flowstone 1a, but not to the sediment deposits below Flowstones 1b-e. Flowstone 1c returns an age of ~243 ka (Table 1), suggesting that the sediments below Flowstones 1b-e are significantly younger than Unit 2 sediments below Flowstone 1a (Figure 14). It was noted before that the sediments below Flowstones 1b-e are less indurated and less weathered than the sediments below Flowstone 1a, and that they contain H. naledi material (Dirks et al., 2015). Their distinct appearance and fossil content is now confirmed with the dating. Therefore, we reinterpret the H. naledi-bearing sediments below Flowstones 1b-e as part of Unit 3 (sub-unit 3b), which means that all H. naledi-bearing sediments in the chamber are now part of sub-unit 3b (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig8-v1.jpg)
 
-**Figure 8.:** Note that all hominin fossils are contained in sub-unit 3b, but that this sub-unit has been repeatedly reworked after its initial deposition. Fossil entry occurred during the initial stages of deposition of Unit 3 below the entry shaft and predated deposition of Flowstone 1c. H. naledi fossils may have continued to enter the Dinaledi Chamber as older parts of Unit 3 were eroded from below Flowstone 1c, and as remnants of all older units were reworked to be incorporated into Unit 3 sediments that accumulated along the floor of the Dinaledi Chamber.DOI: http://dx.doi.org/10.7554/eLife.24231.019
+**Figure 8.:** Note that all hominin fossils are contained in sub-unit 3b, but that this sub-unit has been repeatedly reworked after its initial deposition. Fossil entry occurred during the initial stages of deposition of Unit 3 below the entry shaft and predated deposition of Flowstone 1c. H. naledi fossils may have continued to enter the Dinaledi Chamber as older parts of Unit 3 were eroded from below Flowstone 1c, and as remnants of all older units were reworked to be incorporated into Unit 3 sediments that accumulated along the floor of the Dinaledi Chamber.
 
 Apart from the poorly consolidated erosional remnants below Flowstones 1b-e, hominin-bearing Unit 3 sediments also cover most of the floor of the Dinaledi Chamber. The layer of sub-unit 3b sediment has been interpreted as a relatively thin sheet (~20 cm) of rubbly mud clast breccia material mixed with H. naledi fossils based on outcrops in the excavation pit and preliminary ground penetrating radar results (Naidoo, 2016; Figures 2 and 8). Age brackets for sub-unit 3b were obtained by dating underlying outcrops of sub-units 1a and 1b via OSL, and by dating overlying flowstone units. In this context sample OSL5 is the most relevant for obtaining a maximum age estimate for sub-unit 3b, because it was taken from an outcrop of Unit 1 that is overlain by Unit 3. Here, a maximum age limit of 414 ka (the upper error limit of OSL5) can be assigned to sub-unit 3b if the OSL ages are taken at face value. Note however, that the maximum age limits for sub-unit 1b as determined from samples OSL3 and OSL4 are significantly less at 272 ka and 278 ka (upper error limits), respectively (Table 8), which supports the interpretation that sub-unit 1b formed due to erosion and redeposition on top of sub-unit 1a. The minimum age limit of sub-unit 3b can be more confidently constrained as it is overlain by flowstones with age ranges between 97 ka and 24 ka (Table 1). More importantly, a hanging remnant of sub-unit 3b with hominin material is covered by Flowstone 1c with a lower age limit of 236 ka obtained from the core of a stalactite overlying the rim of the flowstone remnant. This age provides the best minimum age estimate for sub-unit 3b, and by extension a minimum age for the H. naledi fossils.
 
@@ -260,7 +3188,7 @@ The U-Th ages from flowstones and teeth place constraints on the changing physic
 
 The periods of time during which flowstones formed in the cave, by and large, do not overlap with the periods of time during which U-uptake appears to have occurred in the teeth, although both types of events were probably associated with wet periods in the chamber. The systematic difference in the initial 234U/238U ratios obtained from flowstones, as compared to teeth, indicates that an isotopically distinct water source led to U-uptake in the teeth, such as groundwater in the dolomitic aquifer of the Malmani Group with reported anomalously high initial 234U/238U ratios (e.g., Kronfeld et al., 1994). Working on the assumption that the high initial 234U/238U ratios are derived from the groundwater reservoir, the observed age groupings suggest that U uptake events in teeth represent (partial) inundation events of the Dinaledi Chamber, whilst the flowstone formation events reflect periods during which the groundwater table had dropped below floor level, but extensive drip still occurred within the Dinaledi Chamber caused by water derived from the surface with generally lower 234U excess. The age groupings also indicate that episodic wet periods in the Dinaledi Chamber alternated with periods during which no flowstone was deposited.
 
-## Age estimates for H. naledi and implications for hominin evolution
+### Age estimates for H. naledi and implications for hominin evolution
 
 Figures 1b and 14 summarize the results of all dating methods applied to the Dinaledi Chamber during the course of this study. It is clear from these results that the H. naledi assemblage in Unit 3 is of mid- to late-Middle Pleistocene age. The best age estimates for the H. naledi fossils come from the averaged US-ESR ages for samples 1788 and 1810: 229 +60/–46 ka (maximum) and 179 +49/–40 ka (minimum) for sample 1788, and 276 +59/–77 ka (maximum) and 220 +50/–60 ka (minimum) for sample 1810, with an age range of 139 ka to 335 ka. The maximum age scenario provides an average age for both teeth of 253 +82/–70 ka, and the minimum age scenario provides an average age of 200 +70/–61 ka. Considering the observed Rn loss in the cave sediments, the maximum age estimate is considered to be closer to the true age.
 
@@ -278,7 +3206,7 @@ It is generally assumed that all African fossil hominins producing Middle Stone 
 
 ## Material and methods
 
-## Flowstone samples for U-Th dating
+### Flowstone samples for U-Th dating
 
 A total of seventeen flowstone samples (RS1, RS5-6, RS8, RS10-11, and RS 13–23) from the Dinaledi Chamber were dated via U-Th geochronology, including one set of blind duplicates (RS1 and RS15; Table 1, Figures 1b and 3). In addition, one flowstone sample (RS9) was taken on the surface (WGS84 571240–7121866) from a shallow pit about 11 m SW of the projected surface position of the excavation pit in the Dinaledi Chamber (Figure 3d). For each sample a powder was prepared and then split, with one half being dated at JCU and the other half being dated at UoM; that is, for each sample both JCU and UoM dated the same material.
 
@@ -312,17 +3240,17 @@ RS20 was sampled from a thin sheet of Flowstone Group 2 in a WNW-trending fractu
 
 RS22 and RS23 are two samples from an eroded rim of Flowstone 1a near the entry shaft into the Dinaledi Chamber (Figure 1b). This flowstone overlies erosional remnants of well-indurated mud clast breccia assigned to Unit 2 (Figure 3l), and mostly consists of coarsely recrystallized white carbonate. The flowstone sample from which RS22 and RS23 were taken occurs down dip from the palaeo-magnetic sample taken from Flowstone 1a as described below (Figures 2b and 13). The flowstone layer is ~25 mm thick and comprises a 6 mm thick, basal unit of grey to brown calcite that is recrystallized into fine (sub-mm scale), equigranular grains of calcite overgrowing an older acicular texture. The basal layer corresponds to phase B carbonate described for the palaeo-magnetic sample, and is overlain by a clean white calcite unit (i.e., phase C in the palaeo-magnetic sample) that is coarsely recrystallized with 2–4 mm equidimensional calcite grains overgrowing (and partly destroying) an older texture formed by acicular grains. Small voids occur in the interstitial spaces between the coarse calcite grains. RS23 was taken from the grey basal unit (i.e., phase B) of the flowstone layer and RS22 was sampled from the central part of the upper white recrystallized unit (i.e., phase C, Figures 3l and 13b). In this sample, flowstone belonging to the older phase A carbonate is no longer present, as this layer pinches out along dip between the point where the palaeomagnetic sample was taken and the point where the U-Pb sample was taken as can be seen in Figures 2b and 13.
 
-## Tooth samples for ESR dating
+### Tooth samples for ESR dating
 
 Three H. naledi teeth (samples 1810, 1767 and 1788) and one baboon tooth (sample 1841) were collected from Unit 3, in the Dinaledi Chamber (Figures 1b, 4, 6 and 7) for ESR dating and U-Th analysis. Sample 1767 (full catalogue number U.W.101–1767) is an extremely worn upper premolar crown (Figure 6a) obtained from approximately 1 m SW of the excavation pit (Figure 4), and occurred on surface surrounded by mud clast fragments of Unit 3. This tooth is deeply weathered, and preserved only a small rim of enamel on the buccal margin with a maximum height of 4.5 mm. Otherwise the crown is a concave dentine surface worn to the cervix, with bright white, highly bleached dentine. The tooth is brittle and appears strongly affected by water action. Sample 1788 (full catalogue number U.W.101–1788) is a lower right second molar (Figure 6b) obtained from approximately 2 m WSW of the excavation pit (Figure 4), embedded within loosely packed, mud clast breccia of Unit 3, ~ 2 cm below the ground surface level. This tooth is partly broken at the root, but has an otherwise well preserved crown with thick, light-grey enamel. The distal root of the tooth is present and complete, but the lingual root is broken off just below the cervix. The tooth is morphologically consistent as an antimere of U.W.101–284. The dentine is highly bleached and brittle and appears affected by water action. Sample 1810 (full catalogue number U.W.101–1810) is a lower left third premolar or possibly lower left fourth premolar (Figure 6c) obtained from the SE corner of the excavation pit (Figure 4), embedded within sediments of Unit 3, ~5 cm below the original ground surface level. This tooth is well-preserved with thick, light-blue-grey enamel, and shows little evidence of bleaching or weathering, with only a very slight polishing wear on the distal crest of the protoconid. The morphology of the crown is similar to other lower third premolars in the collection, however, it is slightly shorter than many of those. Sample 1841 (full catalogue number U.W.101–1841) is a well-preserved tooth crown, morphologically consistent with a lower left second molar of Papio sp. This is a complete enamel crown of an unerupted tooth with no wear facets or interproximal facets in evidence, and the roots had not formed (Figure 7). The specimen was recovered from a sediment sample taken at a depth of 55–60 cm below the original ground surface of the cave floor near the base of the sondage dug in the centre of the excavation pit (Figures 1b, 2d and 4). This tooth occurs in sub-unit 3a, ~40 cm below the stratigraphically lowest occurrence of partly articulated remains of H. naledi, and represents the only non-hominin macrofossil recovered from Unit 3.
 
-## Sediment samples for OSL dating
+### Sediment samples for OSL dating
 
 Three OSL samples (OSL3, OSL4 and OSL5) were collected in the Dinaledi Chamber from erosion remnants of sub-unit 1a, in which sandy, laminated mudstones are exposed (Figures 1b and 5). These sandy intercalations were targeted because they contain fine-grained quartz and feldspar grains that can be extracted for analysis. For each sample a 30 cm length of aluminium piping with a diameter of 5 cm was hammered into the sediments in a horizontal direction or parallel to sedimentary laminations visible within the units. A core sample within the pipe was extracted for OSL analyses together with a sediment sample from the same unit to determine background radiation from measured values of U, Th and K.
 
 Sample OSL3 comes from an erosion remnant of sediments of sub-unit 1b collected near the intersection point of two fractures trending N and E respectively, ~6 m N of the excavation pit (Figure 1b). Samples OSL4 and OSL5 come from an erosion remnant of Unit 1 sediment along an ENE-trending fracture, ~3 m W of the excavation pit. Sample OSL4 is obtained from sub-unit 1b directly below a thin, partly resorbed flowstone sheet attributed to Flowstone Group 1 (Figure 3a). Sample OSL5 occurs as an erosional remnant of sub-unit 1a, 1 m E, and stratigraphically 10–20 cm below sample OSL4. The Unit 1 sediments in this location are partly covered by Unit 3 sediments and a cascade of Flowstone Group 2 (Figure 3k).
 
-## Flowstone sample for palaeomagnetic analysis
+### Flowstone sample for palaeomagnetic analysis
 
 The speleothem sampled for palaeomagnetic analysis comes from Flowstone 1a near the entry zone into the Dinaledi Chamber (Figure 2b). The sample is layered and comprises three distinct phases (from base to top: A-C) separated by thin clastic horizons that mark disconformities (Figure 13a,b).
 
@@ -330,21 +3258,21 @@ The lower phase (phase A) is interstratified with visible clastic laminations. T
 
 Phase B and phase C flowstone correlate with samples RS23 and RS22 respectively, that were collected for U-Th dating. The top of the sample was oriented in the cave to magnetic N (−18.2o degrees from true N at this location with a −62.9o inclination). The inclination was accounted for by marking the sample on a completely flat surface of the block.
 
-## Bone samples for radiocarbon dating
+### Bone samples for radiocarbon dating
 
 Three weathered bone fragments of H. naledi were collected for radiocarbon dating including: (i) a tibia shaft fragment, 53 mm in length (U.W. 101–567); (ii) a femur shaft fragment comprising the whole circumference of the shaft, 79 mm in length (U.W. 101–857), and; (iii) a metatarsal or metacarpal shaft with no articular morphology, 48 mm in length (U.W. 101–065). All samples were collected from the surface of Unit 3 as isolated fragments near the excavation pit.
 
-## Analytical and computational dating methods
+### Analytical and computational dating methods
 
-## U-Th dating
+#### U-Th dating
 
-## Background to U-Th dating
+##### Background to U-Th dating
 
 Cave carbonates are proven archives of sediment chronology and terrestrial climate variation (e.g., Pickering and Kramers, 2010; Pickering et al., 2010). Cave carbonates less than ~ 600 ka in age can be precisely dated using the U-Th disequilibrium dating method (e.g., Hellstrom and Pickering, 2015). The disequilibrium technique differs from other radiogenic techniques like U-Pb or Rb-Sr in which the daughter product is stable and accumulates indefinitely. In the 238U decay chain, 234U (half-life of 245.5 ka) decays to 230Th (half-life of 75.4 ka), which itself decays to 226Ra. This means that rather than accumulating indefinitely with time, the concentration of 230Th in a sample gradually moves to a point where the number of decays of 230Th atoms equals the number of 230Th atoms produced via the decay of 234U (‘secular equilibrium’). Because Th is nearly insoluble in surface waters, flowstone does not usually contain initial 230Th, in contrast to U, which is soluble in oxidizing waters and is incorporated into flowstone at low concentrations (generally <5 ppm; e.g., Pickering et al., 2010). In U-Th dating, the accumulation of 230Th towards secular equilibrium and the decay of its immediate parent (234U) yields the age. In calculating a U-Th age, the ratio of 234U to its parent 238U must also be determined, as this ratio is generally elevated above secular equilibrium in natural waters. The assumption that initial 230Th concentrations in flowstone are close to zero may be violated by varying amounts of ‘detrital matter’, carrying initial 230Th. However, many cave carbonates form with essentially no initial Th. Where corrections for initial Th are small, potential variability in the isotopic composition of this Th is generally incorporated in the age error. The U-Th dating technique has an upper age limit of ~600 ka, determined by the half-life of 230Th, and by the precision with which the various isotopes can be measured in the laboratory (Cheng et al., 2013).
 
 After initial tests for U-Th disequilibrium dating at JCU proved successful, a suite of flowstone samples was collected from the Dinaledi Chamber and prepared as duplicate samples for double blind dating analyses at James Cook University (JCU) and at the University of Melbourne (UoM).
 
-## Methodology: James Cook University (JCU)
+##### Methodology: James Cook University (JCU)
 
 Sample preparation – For each sample a 100–200 mg flowstone fragment was removed with a hand-held Dremel tool. The purest flowstone layers were targeted for sampling, and dark layers containing detrital material were avoided. Samples were taken parallel to layering, typically across a 3 mm thick zone and any attached sediment or impurities were removed.
 
@@ -356,27 +3284,31 @@ Uranium and Th isotope measurements were performed with a ThermoScientific Neptu
 
 We represent age uncertainties that include propagated 2σ envelopes on isotope ratios and decay constants, as well as an error envelope on the assumed initial 230Th/232Th. The assumed value for initial 230Th/232Th is 0.83 ± 0.50 (2σ). These are the main sources of uncertainty for the age estimates, and we treat them as three sources of uncorrelated uncertainty. Uncertainty on measured isotope ratios reflects counting errors and variability within a mass spectrometric analysis. Decay constant uncertainty envelopes are after Cheng et al. (2013), and we propagate uncertainty on tracer (spike) isotope concentrations. Uncertainties are represented as symmetric in both the older and younger direction and are expressed in ka.
 
-## Methodology: The University of Melbourne (UoM)
+##### Methodology: The University of Melbourne (UoM)
 
 Sample preparation – Samples were prepared at JCU as described above, and sent to UoM for analysis.
 
 Dating protocol – Analyses at UoM were done by multi-collector inductively coupled plasma mass spectrometry (MC-ICP-MS), using the analytical methods of Hellstrom (2003). An assumed value for the initial 230Th/232Th activity ratio of 1.5 ± 1.5 (2σ) was used to calculate corrected ages in conjunction with the decay constants of Cheng et al. (2013). All ages are expressed in ka and corrected for initial 230Th using Equation 1 of Hellstrom (2006). 234U/238U activity ratios were determined after Hellstrom (2003) and Drysdale et al. (2012). All uncertainties are presented as 2σ.
 
-## ESR dating
+#### ESR dating
 
-## Background to ESR dating
+##### Background to ESR dating
 
 Electron spin resonance (ESR) dating in combination with U-series data offer a largely non-destructive approach for direct dating of human fossil remains (e.g., Grün, 1989, 1997, 2009; Joannes-Boyau et al., 2010; Joannes-Boyau and Grün, 2011; Joannes-Boyau, 2013). The basic principles of ESR dating can be found in Grün (1989), (1997), and are briefly summarized here with reference to hominin teeth.
 
 When the highly crystalline material (hydroxyl-apatite) that forms tooth enamel is exposed to ionizing radiation, resulting from the radioactive decay of naturally occurring radiogenic isotopes (mainly U, Th and K) and cosmogenic rays, unpaired electrons in the crystal lattice can be moved from their normal valence band to a higher energy level or excitation state. Some of these excited electrons become trapped in charge deficit sites within the crystal structure to form paramagnetic centres that can be measured with ESR spectroscopy. The number of trapped electrons builds up over time as a function of the strength of the gamma ray intensity (or dose rate) in the surrounding environment. For teeth buried in cave sediment deep underground, radiation is mainly derived from radioisotopes contained in the surrounding sediments and the tooth itself. Thus, a tooth acts as a natural dosimeter in which the total accumulated dose and dose rate can provide an age estimate (Grün, 1989, 1997). The ESR signal contained within a tooth and the dose rate can be measured directly. However, the dose rate can vary over time as U can be highly mobile in wet cave environments (e.g., Grün, 2009), and can move in and out of teeth (Grün et al., 2008a). The environmental dose rate can be measured using in situ gamma ray spectrometry, or can be determined from measured values of natural isotopes (mainly U, Th and K) and calculations of the cosmic ray contributions following models. The internal dose rate (inside the tooth) can be determined by measuring the present day 230Th/234U-ratios from which an uptake history for the tooth can be modelled (as opposed to applying assumed uptake models).
 
-Using the combined results of U-Th analyses and ESR measurements, more accurate age estimates can be obtained than would be possible with ESR dating alone. To overcome the problem of not accurately knowing the complex U uptake history of a tooth, the U-Th data is used to establish the relationship between the ESR equivalent dose and apparent U-Th age as defined by the equation:(1)U(t)=Um(t/T)p+1
+Using the combined results of U-Th analyses and ESR measurements, more accurate age estimates can be obtained than would be possible with ESR dating alone. To overcome the problem of not accurately knowing the complex U uptake history of a tooth, the U-Th data is used to establish the relationship between the ESR equivalent dose and apparent U-Th age as defined by the equation:
+
+$$
+U(t)=U_{m}(t/T)^{p+1}
+$$
 
 In which U(t) is the U concentration at t, Um is the measured U concentration, T is the age of the sample and p the uptake parameter linked to the uptake model determined from U-Th measurements in the tooth (closed system or early uptake: p= −1; linear uptake: p=0, late uptake: p>0 (Grün, 2009).
 
 The methodologies used to obtain U uptake models and ESR dates are explained separately for each of the laboratories. For all reported ages, decay constants for 234U and 230Th are from Cheng et al. (2000).
 
-## Methodology for combined U-series and ESR dating: Southern Cross University (SCU)
+##### Methodology for combined U-series and ESR dating: Southern Cross University (SCU)
 
 Sample preparation – Small fragments of enamel were removed from each of the four teeth with the help of a hand-held diamond saw following protocols in Grün et al. (2008b) and Joannes-Boyau, 2013. Any dentine attached to the enamel fragment was removed (1841 had no observable dentine), after which a layer of 100 μm was removed from the outer surface of each fragment with a rotary tool. For each tooth, the enamel fragments and a section of dentine directly underlying each enamel fragment were analysed for U and Th concentrations. U-series analyses were also performed on enamel and dentine from the remaining tooth in the immediate vicinity of the fragment to assess variations in U/Th isotopic ratios and calculate ESR ages.
 
@@ -386,9 +3318,11 @@ Each enamel fragment was mounted into a para-film mould within a Teflon sample h
 
 Fitting procedures were carried out with MCDOSE 2.0 software using a Markov Chain Monte Carlo (MCMC) approach based on the Metropolis-Hastings algorithm. The program uses a Bayesian framework, where the solution is presented as a full probability distribution of the equivalent dose (Metropolis et al., 1953). DE values were obtained by fitting a Single Saturating Exponential (SSE) at the appropriate maximum irradiation dose (Dmax) following Duval and Grün (2016) (using 1767 Dmax = 1264 Gy, 1788 Dmax = 2465 Gy, 1810 Dmax = 2735 Gy and 1841 Dmax = 3526 Gy).
 
+Dating protocols: U series analysis – The U and Th concentrations in each of the enamel fragments and surrounding dentine were measured by laser ablation, using an ESI NW193 ArF Excimer laser coupled to a MC-ICPMS Neptune Plus at the UoW. Sections of enamel and dentine were mapped using small rasters to document compositional variability in the teeth and constrain diffusion processes (Figure 9a).
+
 ![Figure 9.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig9-v1.jpg)
 
-**Figure 9.:** Tables 4 and 5.(a) Comparison of sampling grids across the enamel-dentine boundary measured by SCU-UoW (red lines) vs. GU-ANU (blue circles). SCU-UoW (red lines) measured a series of parallel, shallow (<5 μm) pits along grid lines across the teeth and averaged U concentrations across each grid. GU-ANU (blue circles) measured the average composition of the tooth in single spots that were laser-bored along profiles across the teeth, and report results for each spot. (b, c) Locations of LA-ICP-MS spot analyses for teeth samples 1788 (b) and 1810 (c) conducted by GU-ANU. The detailed transects are shown in panels (d) to (h).DOI: http://dx.doi.org/10.7554/eLife.24231.020
+**Figure 9.:** (a) Comparison of sampling grids across the enamel-dentine boundary measured by SCU-UoW (red lines) vs. GU-ANU (blue circles). SCU-UoW (red lines) measured a series of parallel, shallow (<5 μm) pits along grid lines across the teeth and averaged U concentrations across each grid. GU-ANU (blue circles) measured the average composition of the tooth in single spots that were laser-bored along profiles across the teeth, and report results for each spot. (b, c) Locations of LA-ICP-MS spot analyses for teeth samples 1788 (b) and 1810 (c) conducted by GU-ANU. The detailed transects are shown in panels (d) to (h).
 
 A total of 86 separate U-series analytical runs were performed across the dentine and enamel surface for the three H. naledi teeth. Each individual run consists of an average value obtained across a raster or ablation track measuring 200 μm x 700 μm in size; that is, a succession of short measurements was taken along a raster and then averaged into one value. Measurements were performed at an ablation rate of 20 Hz and a translation speed of 50 μm/s.
 
@@ -396,7 +3330,7 @@ The rasters were positioned in a series of transects following the growth axis o
 
 Baseline and drift were corrected using analysis of the NIST 612 glass standard, while two coral standards (the MIS7 Faviid and MIS5 Porites corals from the Southern Cook Islands; Woodroffe et al., 1991) were used to correct 234U/238U and 230U/238U ratios and assess the accuracy of measurements. Each coral standard was analysed by solution MC-ICPMS at UoW and used for reference. To account for potential matrix effects, a bovid tooth fragment from South Africa with known isotope concentrations (U-series at equilibrium) was used to verify measurements. To account for tailing effects, measurements were carried out at half-masses of 229.5 and 230.5 for 230Th and 233.5 and 234.5 for 234U.
 
-## Methodologies for combined U-series and ESR dating: CENIEH, Griffith University and Australian National University
+##### Methodologies for combined U-series and ESR dating: CENIEH, Griffith University and Australian National University
 
 Sample preparation – One enamel fragment was extracted from each of the two H. naledi teeth 1788 and 1810, and analyzed.
 
@@ -414,17 +3348,17 @@ The analytical data of the enamel and dentine sections (Table 5) were combined t
 
 Apparent U-Th ages were calculated with Isoplot 3.75 (Ludwig, 2012), and uncertainties are reported as 2σ. No age calculations were done for areas of the tooth where the U concentrations were below 0.5 ppm or where the U/Th ratio was below 250 (marked in red in Table 5). Ages were calculated assuming closed system behaviour (CS), and compared with age results assuming continuous diffusion models (after Sambridge et al., 2012).
 
-## Determining the environmental dose rate
+##### Determining the environmental dose rate
 
 Apart from radiation derived from U and Th contained within the dental tissue of the teeth, age calculations must take the environmental dose rate into account. The environmental dose rate mainly results from gamma and beta radiation derived from the immediate surroundings of the teeth with an additional component from cosmic radiation, which in a deep cave environment is usually very small. In calculating the ages we have used a cosmic dose rate of 15 ± 1 μGy a−1 for all samples assuming that the fossils were overlain by a 20 m thick roof of dolomite with a density of 2.80 ± 0.05 g/cm3 (Barbouti and Rastin, 1983).
 
 Gamma and beta radiation from the immediate surroundings of the teeth comes from U, Th and K in the sediments in which the teeth are embedded, and is partly attenuated by the water content of the sediments. Thus, the U, Th, K and water content of the sediments needs to be measured (Table 6). The measured water content in sediment surrounding sample 1841 is 27.7%. This value is expected to vary over time, but not by much given that the Dinaledi Chamber occurs deep inside the cave, close to the water table, where sediments are expected to have always been close to water saturated. Therefore, in calculating the ages we have assumed the water content to be 25 ± 10%. Uranium, Th, K concentrations were measured by ICP-MS at SCU and at the UoW using both leaching (in a 1:3 mixture of nitric and hydrochloric acid) and total dissolution (in a 1:3 mixture of nitric and hydrochloric acid with additional HF using an Agilent 7700 solution and a Thermo Icap) methods. Leaching results gave lower U concentrations reflecting incomplete dissolution of all U-bearing phases. Only the total dissolution results (Table 6) have been used to calculate the environmental dose rate.
 
-If the teeth were not fully covered by sediment up to a depth of about 30 cm (which is the average attenuation length of gamma-rays in material with a density of ~2.5 g/cm
+If the teeth were not fully covered by sediment up to a depth of about 30 cm (which is the average attenuation length of gamma-rays in material with a density of ~2.5 g/cm3) an estimate has to be made for the burial history of the teeth as well as the more general background radiation in the cave. The environmental dose rate in the Dinaledi Chamber was measured in situ with a portable gamma ray spectrometer on the surface of Unit 3, next to the places where samples 1767, 1788 and 1810 were collected. We measured dose rates for Th and K, that were equal to or somewhat higher than those derived from the chemical analysis of the sediments, which suggests that the background gamma radiation in the cave may be a little higher than in the sediments. However, the in situ gamma measurements varied considerably from one place to the next, whereas the measured concentrations of U, Th and K in sub-units 3a and 3b are consistent (Table 6). Samples 1767, 1788 and 1810 were collected from near surface where they may have resided for a long time, and, therefore, may have received between 25% and 50% of their gamma dose rate from the wider cave environment. However, the resulting gamma dose rates for this scenario are not significantly different from a situation in which the teeth are fully buried when considering the spectrometer readings. Given the uncertainties with the in situ gamma ray spectrometer measurements (see below), we are confident that the analytical data of the sediment provide more robust constraints for calculating the environmental dose rates. Therefore, the teeth have been modelled as if fully encased in sediment assuming infinite matrix dose rates for sediment and using the measured values of U, Th and K listed in Table 6.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig10-v1.jpg)
 
-**Figure 10.:** The data show little variation in dose rate with depth (see text for explanation).DOI: http://dx.doi.org/10.7554/eLife.24231.021
+**Figure 10.:** The data show little variation in dose rate with depth (see text for explanation).
 
 The gamma dose rates calculated for sediment collected from the immediate vicinity of the sampled teeth (Figure 10) were compared with gamma dose rates calculated from U, Th and K concentrations for sediment samples collected at regular intervals along a 53 cm deep, vertical profile in the sondage at the center of the excavation pit (Figure 10). For this profile samples 1 to 4 were collected from a 13 cm thick layer of hominin-bearing sediment belonging to sub-unit 3b, and samples 5–8 were collected from underlying sediments belonging to sub-unit 3a, to a total depth of 53 cm. The variation in the gamma dose rate shows no clear trend with depth (Figure 10), and the samples along the vertical profile were used to obtain an average gamma dose rate. Sample 2 from the top 3 cm of Unit 3 was excluded because of anomalously high Th concentrations (this sample also contains many small bone fragments).
 
@@ -432,7 +3366,7 @@ An additional problem in estimating the gamma radiation for the sediments may ar
 
 It is difficult to estimate whether Rn degassing occurred during the entire burial history of the teeth. Therefore, age calculations were performed for two different scenarios: (i) a situation where it is assumed that the present day situation of 80% Rn loss persisted during the entire burial history, and (ii) a situation in which no Rn loss occurred (Table 7). Assuming water content of 25 ± 10%, the average gamma dose rate for the sediments has been calculated at 724 ± 116 μGy.a−1 assuming no radon loss, and 534 ± 69 μGy.a−1 assuming 80% Rn loss (Figure 10).
 
-## Combined US-ESR age calculations
+##### Combined US-ESR age calculations
 
 All age calculations are provided with 2σ uncertainties, and were carried out using the US-ESR program of Shao et al. (2014), which utilizes the dose rate conversion factors of Guérin et al. (2011). In doing the calculations, the input parameters and criteria listed in Table 6 were used, and age results are given in Table 7. In all calculations we have made the following assumptions: (i) post-230Th daughter elements are in equilibrium in dental tissues, which is the standard assumption in ESR dating; and (ii) complete (effective) burial of the samples occurred (i.e., infinite matrix assumption for the gamma dose rate measured in sediment).
 
@@ -440,25 +3374,86 @@ Results have been calculated for the two scenarios (Table 7): (1) 80% Rn loss in
 
 Additional modelling was carried out to assess the effects of early U uptake on the ESR age, in a closed system setting (CSUS-ESR, Grün, 2000b). This showed that the differences in US-ESR and CSUS-ESR model ages are less than 4%, thats is, which is well within the uncertainty ranges of the listed US-ESR ages (Table 7). Therefore, CSUS-ESR ages are not further considered.
 
-## ESR dose evaluation: inter-laboratory comparison
+##### ESR dose evaluation: inter-laboratory comparison
 
-Each laboratory (SCU and CENIEH) independently measured the DE values following the methods outlined above. To ensure reliable DE values, the maximum irradiation dose (Dmax) was selected in accordance with the recommendations made by Duval and Grün (2016), in order to avoid DE overestimation (i.e., for DE values between 100–500 Gy, the Dmax/DE ratio has to be kept between 5–10; for De values between 1000–2000 Gy the Dmax/DE ratio has to be kept between 1–2; Table 10). Normalised dose response curves (DRC’s) are shown in Figure 11.10.7554/eLife.24231.022Table 10.ESR fitting results obtained by SCU and CENIEH-GU. Both laboratories employed a Single Saturating Exponential (SSE) fitting function. Dmax was selected in accordance with Duval and Grün (2016) to avoid DE overestimation. SCU results in brackets show DE values that were obtained by SCU using the CENIEH-GU procedure (see text for details).DOI: http://dx.doi.org/10.7554/eLife.24231.022SCUCenieh-guSampleDE (Gy)Dmax (Gy)Dmax/DEDE (Gy)Dmax (Gy)Dmax/DE1767194 ± 4 (193 ± 6)12647–––1788232 ± 8 (232 ± 22)12045159 ± 111649101810296 ± 14 (281 ± 34)27359232 ± 291649718411676 ± 127 (1648 ± 500)35262–––
+Each laboratory (SCU and CENIEH) independently measured the DE values following the methods outlined above. To ensure reliable DE values, the maximum irradiation dose (Dmax) was selected in accordance with the recommendations made by Duval and Grün (2016), in order to avoid DE overestimation (i.e., for DE values between 100–500 Gy, the Dmax/DE ratio has to be kept between 5–10; for De values between 1000–2000 Gy the Dmax/DE ratio has to be kept between 1–2; Table 10). Normalised dose response curves (DRC’s) are shown in Figure 11.
 
-Samples 1767, 1788 and 1810 have D
+**Table 10.**
+ ESR fitting results obtained by SCU and CENIEH-GU. Both laboratories employed a Single Saturating Exponential (SSE) fitting function. Dmax was selected in accordance with Duval and Grün (2016) to avoid DE overestimation. SCU results in brackets show DE values that were obtained by SCU using the CENIEH-GU procedure (see text for details).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">SCU</th>
+      <th colspan="3">Cenieh-gu</th>
+    </tr>
+    <tr>
+      <th>Sample</th>
+      <th>DE (Gy)</th>
+      <th>Dmax (Gy)</th>
+      <th>Dmax/DE</th>
+      <th>DE (Gy)</th>
+      <th>Dmax (Gy)</th>
+      <th>Dmax/DE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1767</td>
+      <td>194 ± 4 (193 ± 6)</td>
+      <td>1264</td>
+      <td>7</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1788</td>
+      <td>232 ± 8 (232 ± 22)</td>
+      <td>1204</td>
+      <td>5</td>
+      <td>159 ± 11</td>
+      <td>1649</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>1810</td>
+      <td>296 ± 14 (281 ± 34)</td>
+      <td>2735</td>
+      <td>9</td>
+      <td>232 ± 29</td>
+      <td>1649</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1841</td>
+      <td>1676 ± 127 (1648 ± 500)</td>
+      <td>3526</td>
+      <td>2</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+Samples 1767, 1788 and 1810 have DE values that vary within a narrow range between 200 and 300 Gy, while the DE value of sample 1841 is significantly higher (>1500 Gy). For the two samples that were measured by both laboratories, the SCU procedure systematically provides higher DE results. These differences partly result from different fitting procedures: when plotting the SCU experimental data points using the CENIEH-GU fitting procedure, the calculated DE values shift by < 2% for samples 1767, 1788 and 1841, and −6% for sample 1810 (Table 10). Both laboratories also used different irradiation sources (gamma-rays at CENIEH, and X-rays at SCU), which may have had some influence on results. A third factor that may have most fundamentally influenced the difference in measured DE values is the radiation sensitivity observed for each fragment (Figure 11); for sample 1810, the DRC’s from CENIEH and SCU are similar, but for sample 1788 they are different, indicating that the response of the two fragments from sample 1788 to the radiation source was distinctly different. Each laboratory had sampled its own fragment from different domains of the tooth, with different radical concentrations and crystallinity, and the U-concentrations in the fragment used by SCU were somewhat higher than those used by GU-CENIEH (Tables 4 and 5). However, in spite of these differences, the ages agree within error (Table 7).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig11-v1.jpg)
 
-**Figure 11.:** To facilitate comparison, all DRC’s have been normalised to the intensity of the natural point (=1).DOI: http://dx.doi.org/10.7554/eLife.24231.023
+**Figure 11.:** To facilitate comparison, all DRC’s have been normalised to the intensity of the natural point (=1).
 
-The use of enamel fragments in measuring the dose allows us to differentiate between the relative contributions of non-oriented CO
+The use of enamel fragments in measuring the dose allows us to differentiate between the relative contributions of non-oriented CO2- radicals (NOCOR’s) versus anisotropic radicals (AICOR’s) (e.g., Grün et al., 2008b). Joannes-Boyau and Grün (2011) recently showed that gamma irradiation in the laboratory may produce additional unstable NOCOR’s when compared to gamma irradiation in a natural environment, which could lead to an overestimation of the measured dose if this contribution is not removed. To evaluate this possible bias, we followed Method 3 described in Joannes-Boyau (2013) for the extraction of the NOCOR’s from the main radiation-induced ESR signal (Figure 12). When a fragment is rotated over 360°, the ESR intensity varies. The ratio of the maximum (Imax) and minimum (Imin) intensities (Imax/Imin) is used as a proxy to quantify the increased anisotropy potentially induced by either gamma or X-ray irradiations. The evolution of this ratio with the irradiation dose is shown in Figure 12. When comparing the results from the two laboratories it is clear that both obtain similar results. For measurements conducted at CENIEH the Imax/Imin ratios for samples 1788 and 1810 remain near-constant (between 1.22–1.24) as the gamma dose varies. For measurements conducted at SCU the Imax/Imin ratios remain near-constant as well (and vary within uncertainty, between 1.6–2.0 for samples 1767, 1788 and 1810, and remain around 1.34 for sample 1841; Figure 12) as the X-ray dose varies. The differences in the Imax/Imin ratios for each tooth calculated by the two laboratories results from the orientation chosen, the spatial variations of the ESR signal within the enamel layer, and the different crystal orientation and fragment position during ESR measurements. The fact that the results from both laboratories show constant ratios indicates that no additional NOCOR’s have been created by both gamma and X-ray irradiations. Consequently, no corrections had to be applied to the measured DE values.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig12-v1.jpg)
 
-**Figure 12.:** max/Imin ratio vs the irradiation dose for the four tooth samples.(see text for explanation).DOI: http://dx.doi.org/10.7554/eLife.24231.024
+**Figure 12.:** (see text for explanation).
 
-## OSL dating
+#### OSL dating
 
-## Background to OSL dating
+##### Background to OSL dating
 
 Optically stimulated luminescence (OSL) dating is a widely used method for estimating the last time that sediments were exposed to sunlight within the past 300–500 ka (e.g., Aitken, 1985; Murray and Wintle, 2000). Sand-sized grains of quartz and K-feldspar (two commonly occurring minerals) are preferred for OSL dating. These grains may be measured collectively in a single composite sample (an aliquot), which provides an average signal, or as individual grains, which provides greater insights into the depositional history of the sediments.
 
@@ -466,7 +3461,7 @@ OSL dating is a radiation dosimetric dating technique based on the time-dependen
 
 The latent luminescence signal that has built up in a sediment sample can be released and recorded in the laboratory using light (the OSL technique). This luminescence signal is related to the environmental radiation dose the mineral has received since the last exposure to sunlight. If the environmental dose rate is determined together with the equivalent dose contained in the sample, it is possible to determine an age for the sediment, or rather a depositional age which measures the last time the sediment was exposed to sunlight or heat.
 
-## Methodology for OSL dating: University of the Witwatersrand (Wits)
+##### Methodology for OSL dating: University of the Witwatersrand (Wits)
 
 Sample preparation – For samples OSL3, 4 and 5, sediment was removed from the sample tubes under controlled, safe-light laboratory conditions. Material located within 2 cm of the ends of the tubes was removed to isolate any quartz grains potentially exposed to light during sampling. This material was used to measure water content, and to determine the dosimetry of the sample. The remaining sediment was treated with 33% hydrochloric acid and 20% hydrogen peroxide to remove carbonate and organic components. Quartz grains were isolated from denser minerals and feldspars by using solutions of sodium poly-tungstate with specific gravities of 2.70 g/cm3 and 2.62 g/cm3, respectively. After rinsing, drying and sieving, the fine sand (180–212 µm) fraction was etched for 40 min in 40% hydrofluoric acid to remove the outer layer (~10–15 µm-wide) affected by alpha radiation and any remaining feldspars. Subsequently, 33% hydrochloric acid was added to remove acid soluble fluorides. Each sample was dried and re-sieved in preparation for equivalent dose determination.
 
@@ -484,21 +3479,23 @@ Dose rate calculations (after Aitken, 1985) incorporated beta-attenuation factor
 
 Luminescence age determinations – The luminescence age was obtained by dividing the palaeo-dose with the total dose rate. The error on the luminescence age estimates represents the combined systematic and experimental error associated with both the De and dose rate values. There is no datum for luminescence dates, therefore the age reported is taken from date of sampling (i.e., AD 2015).
 
-## Palaeomagnetic dating
+#### Palaeomagnetic dating
 
-## Methodology for palaeomagnetic dating: La Trobe University (LTU)
+##### Methodology for palaeomagnetic dating: La Trobe University (LTU)
 
 The procedures for palaeomagnetic analysis of the speleothem sample from Rising Star Cave follow those outlined in Herries and Shaw (2011) and a comprehensive review of speleothem magnetism can be found in Lascu and Feinberg (2011).
 
+Sample preparation – The sample was drilled vertically, across the layering, using a non-magnetic rock drill to produce three 2.5 cm by ~5–6 cm cores from the upper, purer part of the flowstone. Care was taken to remove recent contamination. The surface of the flowstone has a calcified covering of fine clastic dust that is likely to be much younger. Therefore, the upper ends of the cores were removed to make sure that only primary flowstone was measured. The cores were then cut in half at their midpoint where more recent contamination has seemingly occurred within the sample (at the interface between different growth phases; Figure 13). This was done using an ASC Scientific non-magnetic saw with bronze saw blades to produce a total of six 2.5 by 2.5 cm subsample cores from the upper part of the flowstone; 3 from the uppermost 2.5 cm (phase C flowstone) and 3 from the lower 2.5 cm (phase B flowstone). Thinner samples could not be produced as the samples were weak. Only a small part of the lowest, clastic rich layer (phase A flowstone) was preserved on the base of the block sample (Figure 13a) and this layer was cut into two 2 × 2 cm cubes for analysis.
+
 ![Figure 13.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig13-v1.jpg)
 
-**Figure 13.:** (a) Outcrop photo of hanging erosion remnant of Flowstone 1a from which the palaeomagnetic sample was taken. The three flowstone phases separated by detrital horizons are clearly visible, and their magnetic polarity has been marked (N = normal; R = reverse). The stratigraphic top is towards the top of the photo; (b) close-up of a hand sample taken for palaeomagnetic analysis from Flowstone 1a in the Dinaledi Chamber. The sample is layered and comprises three distinct phases (from base to top: A-C marked in yellow) separated by thin clastic horizons that mark disconformities indicated with red dashed lines. The larger-scale extent of the three phases can be seen in (a); (c) intensity spectra, Zijderveld plots, and stereo plots for samples from phases A to C taken from (b). Phases B and C show normal polarity and phase A shows reversed and intermediate polarity directions.DOI: http://dx.doi.org/10.7554/eLife.24231.025
+**Figure 13.:** (a) Outcrop photo of hanging erosion remnant of Flowstone 1a from which the palaeomagnetic sample was taken. The three flowstone phases separated by detrital horizons are clearly visible, and their magnetic polarity has been marked (N = normal; R = reverse). The stratigraphic top is towards the top of the photo; (b) close-up of a hand sample taken for palaeomagnetic analysis from Flowstone 1a in the Dinaledi Chamber. The sample is layered and comprises three distinct phases (from base to top: A-C marked in yellow) separated by thin clastic horizons that mark disconformities indicated with red dashed lines. The larger-scale extent of the three phases can be seen in (a); (c) intensity spectra, Zijderveld plots, and stereo plots for samples from phases A to C taken from (b). Phases B and C show normal polarity and phase A shows reversed and intermediate polarity directions.
 
 Palaeomagnetic field determinations – Because the samples all consist of flowstone speleothem, alternating field (AF) demagnetisation was the sole method of magnetic cleaning that was used on the samples. AF has been shown to be effective for recovering the primary palaeomagnetic signal formed within South African speleothems for both detrital inclusions deposited during phases of flooding or within the water forming the speleothem itself (detrital remanent magnetisation; DRM), and for chemical precipitation (Chemical Remanent Magnetisation; CRM) of iron phases within dripwater (Herries and Shaw, 2011; Pickering et al., 2013). Samples were demagnetised using an AGICO LDA5 AF demagnetiser and measured using an AGICO JR6 spinner magnetometer on the high speed setting. Samples were analysed using the program Plotcore to establish the primary remanence direction using principle component analysis of Zijderveld plots. Multiple samples were taken from each layer within the flowstone speleothem and analysed using Fisher statistics and the Program FISH2 to establish the Palaeolatitude (Plat.) for each layer. This was then used to assign the polarity of each layer, with Plat. Values > + 60o/−60o are considered to represent normal or reversed polarity.
 
-## Radiocarbon dating
+#### Radiocarbon dating
 
-## Methodology for radiocarbon dating
+##### Methodology for radiocarbon dating
 
 Radiocarbon dating is a commonly used method for dating materials that contain carbon, by using the decay of the radioactive carbon isotope 14C with a half-life of ~5730 years. Because of the relatively short half-life of 14C, this technique generally only returns reliable results for ages less than 50 ka, and it is widely used in Archaeological applications (e.g., Taylor and Bar-Yosef, 2014).
 
@@ -506,6 +3503,8 @@ Sample preparation – Two bone fragments collected along the floor of the Dinal
 
 The pre-treated bone powder was acidified in 85% phosphoric acid at 70°C in a closed chemistry line that had been purged of any CO2 (to <10−15 atoms). CO2 produced from the sample was introduced into a reaction vessel containing an aliquot of cobalt metal catalyst. Hydrogen was introduced and the cocktail heated to 500°C, to crack CO2 and form carbon (graphite). The graphite was pressed into a pellet for analysis.
 
+Analyses and data processing – Analyses for radiocarbon dating were performed using accelerator mass spectrometry (AMS). Analyses were calibrated with graphite produced from the NIST-4990C modern reference standard. Reported δ13C was measured relative to the PDB-1 on the sample itself. Total fractionation using the AMS δ13C correction was done to derive at a ‘conventional radiocarbon age:’ Ages are calculated using BetaCal 3.17 provided by Beta Analytic following procedures outlined in Bronk Ramsey (2009) and using the SHCAL13 database (Hogg et al., 2013). Dates are reported as radiocarbon years before present (‘BP’ with ‘present’ taken as AD 1950).
+
 ![Figure 14.](https://cdn.elifesciences.org/articles/24231/elife-24231-fig14-v1.jpg)
 
-**Figure 14.:** H.naledi fossils in the Dinaledi Chamber. Following the preferred US-ESR maximum age model and associated uncertainties for ESR samples 1788 and 1810, a maximum depositional age of 335 Ma was determined, while the minimum depositional age of 236 ka was constrained by Flowstone 1c (sample RS18), which covers H. naledi material in the entry zone.DOI: http://dx.doi.org/10.7554/eLife.24231.026
+**Figure 14.:** naledi fossils in the Dinaledi Chamber. Following the preferred US-ESR maximum age model and associated uncertainties for ESR samples 1788 and 1810, a maximum depositional age of 335 Ma was determined, while the minimum depositional age of 236 ka was constrained by Flowstone 1c (sample RS18), which covers H. naledi material in the entry zone.

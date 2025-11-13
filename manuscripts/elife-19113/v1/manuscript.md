@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.19113.001 We use psychophysics and MEG to test how sensitivity to input statistics facilitates auditory-scene-analysis (ASA). Human subjects listened to ‘scenes’ comprised of concurrent tone-pip streams (sources). On occasional trials a new source appeared partway. Listeners were more accurate and quicker to detect source appearance in scenes comprised of temporally-regular (REG), rather than random (RAND), sources. MEG in passive listeners and those actively detecting appearance events revealed increased sustained activity in auditory and parietal cortex in REG relative to RAND scenes, emerging ~400 ms of scene-onset. Over and above this, appearance in REG scenes was associated with increased responses relative to RAND scenes. The effect of temporal structure on appearance-evoked responses was delayed when listeners were focused on the scenes relative to when listening passively, consistent with the notion that attention reduces ‘surprise’. Overall, the results implicate a mechanism that tracks predictability of multiple concurrent sources to facilitate active and passive ASA. DOI: http://dx.doi.org/10.7554/eLife.19113.001
+We use psychophysics and MEG to test how sensitivity to input statistics facilitates auditory-scene-analysis (ASA). Human subjects listened to ‘scenes’ comprised of concurrent tone-pip streams (sources). On occasional trials a new source appeared partway. Listeners were more accurate and quicker to detect source appearance in scenes comprised of temporally-regular (REG), rather than random (RAND), sources. MEG in passive listeners and those actively detecting appearance events revealed increased sustained activity in auditory and parietal cortex in REG relative to RAND scenes, emerging ~400 ms of scene-onset. Over and above this, appearance in REG scenes was associated with increased responses relative to RAND scenes. The effect of temporal structure on appearance-evoked responses was delayed when listeners were focused on the scenes relative to when listening passively, consistent with the notion that attention reduces ‘surprise’. Overall, the results implicate a mechanism that tracks predictability of multiple concurrent sources to facilitate active and passive ASA.
 
 ## Introduction
 
@@ -21,11 +21,11 @@ Natural scenes are highly structured, containing statistical regularities in bot
 
 The current state of understanding is limited by at least two factors: (1) most studies of sensory predictability and its effects on behavior have used slow presentation rates thus enabling conscious reflection of stimulus expectancy. As a consequence, relatively little is known about the neural underpinning of predictability processing on the rapid time scales relevant to perception of natural objects. (2) In most cases, predictability has been studied when participants attend to a single object (Murray et al., 2002; Arnal et al., 2011; Kok et al., 2012; Chennu et al., 2013; Bendixen, 2014) – a far cry from the complex scenes in which we normally operate. We therefore do not understand whether/how statistical structure is extracted from complex, crowded scenes. The present work addresses both of these issues in the context of an auditory scene.
 
-To understand how statistical structure facilitates perceptual analysis of acoustic scenes, we use an ecologically relevant paradigm (change detection) that captures the challenges of natural listening in crowded environments (
+To understand how statistical structure facilitates perceptual analysis of acoustic scenes, we use an ecologically relevant paradigm (change detection) that captures the challenges of natural listening in crowded environments (Cervantes Constantino et al., 2012; Sohoglu and Chait, 2016). In this paradigm, listeners are presented with multiple concurrent acoustic sources and on occasional trials, a new source appears partway into the ongoing scene (see Figure 1A). By varying the temporal patterning of scene sources, we can create conditions in which the scenes are characterized by statistically regular or random structure and measure the effect of this manipulation on listeners’ ability to detect the appearance of new sources within the unfolding soundscape.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19113/elife-19113-fig1-v1.jpg)
 
-**Figure 1.:** (A) Examples of REG and RAND scenes. The plots represent ‘auditory’ spectrograms, equally spaced on a scale of ERB-rate (Moore and Glasberg, 1983). Channels are smoothed to obtain a temporal resolution similar to the Equivalent Rectangular Duration (Plack and Moore, 1990). Black arrows indicate appearing sources. In these examples, the appearing source is temporally regular. The stimulus set also included scenes in which the appearing source was temporally random (see Materials and methods). (B) Behavioral results (d’ and detection time) as a function of scene temporal structure (REG versus RAND). These are shown for each type of scene change (when the appearing source was temporally regular or when random). Error bars represent within-subject standard error of the mean (SEM; Loftus and Masson, 1994).DOI: http://dx.doi.org/10.7554/eLife.19113.003
+**Figure 1.:** (A) Examples of REG and RAND scenes. The plots represent ‘auditory’ spectrograms, equally spaced on a scale of ERB-rate (Moore and Glasberg, 1983). Channels are smoothed to obtain a temporal resolution similar to the Equivalent Rectangular Duration (Plack and Moore, 1990). Black arrows indicate appearing sources. In these examples, the appearing source is temporally regular. The stimulus set also included scenes in which the appearing source was temporally random (see Materials and methods). (B) Behavioral results (d’ and detection time) as a function of scene temporal structure (REG versus RAND). These are shown for each type of scene change (when the appearing source was temporally regular or when random). Error bars represent within-subject standard error of the mean (SEM; Loftus and Masson, 1994).
 
 The behavioral response pattern reveals that perceptual analysis of such scenes is enhanced by the presence of regular statistical structure, as assessed by listeners’ ability to detect source appearance. One possible explanation for this effect is that neural responses to regularly repeating scene components adapt (decrease over time) more than to random components. Indeed, perceptual influences of statistical structure have often been attributed to neural adaptation (e.g. 'stimulus specific adaptation'; May et al., 1999; Jääskeläinen et al., 2004; Haenschel et al., 2005; Costa-Faidella et al., 2011; ; Khouri and Nelken, 2015). Accordingly, the relative change in neural response to a new spectral component (that is, the appearing source) will be larger and thus more detectable in regular versus random scenes (Summerfield et al., 1987; Hartmann and Goupell, 2006; Erviti et al., 2011). By this account, statistical structure does not modulate the magnitude of neural response to a new event per se. Rather, improved detection is attributed exclusively to decreased neural responses occurring before the appearance of the new source. Indeed, in a mismatch negativity paradigm, Costa-Faidella (2011) demonstrated that neural responses to repeating (‘standard’) tones adapt more in temporally regular than random sequences without accompanying changes in response to new (‘deviant’) tones (see also Schwartze et al., 2011, 2013; Tavano et al., 2014).
 
@@ -35,37 +35,37 @@ In the current study we adjudicate between adaptation and precision accounts usi
 
 ## Results
 
-## Behavioral data
+### Behavioral data
 
 Listeners’ source appearance detection performance in the Active group is shown in Figure 1B. Listeners were more accurate and quicker to detect source apperance when the scene structure was temporally regular (REG) versus random (RAND; d’ F(1,12) = 100.7, p<0.001; detection times F(1,12) = 17.61, p<0.01). This effect occurred independently of the temporal structure of the appearing component (d’ F(1,12) = 0.075, p=0.789; detection times F(1,12) = 4.23, p=0.062). Additionally, listeners were quicker (by ~27 ms) to detect source appearance when it was temporally regular (detection times F(1,12) = 5.70, p<0.050), although this effect did not extend to d’ (F(1,12) = 2.29, p=0.156). Thus temporally regular scenes are associated with enhanced detection performance and in a manner independent of the temporal structure of the appearing source. Overall, the mean hit rate was high (mean = 76.1%, ranging from 57 to 97% across listeners) and mean false alarm rate low (mean = 6.25%, ranging from 0 to 18.8%).
 
-## MEG data
+### MEG data
 
-## Scene-evoked response
+#### Scene-evoked response
 
 The neural response evoked by scene onset (i.e. prior to any scene change) is characterized by a series of deflections at around 80, 110 and 200 ms, with topographies corresponding to the commonly observed M50, M100 and M200 onset-response components (Eggermont and Ponton, 2002). From around 300 ms post onset, the response settles to a sustained amplitude.
 
-We searched for differences between responses to the onset of REG and RAND scenes using cluster-based permutation statistics (shown in
+We searched for differences between responses to the onset of REG and RAND scenes using cluster-based permutation statistics (shown in Figure 2). Scene temporal structure had a significant effect on the evoked response from 436 ms in the Passive group and from 476 ms in the Active group, involving an increase in the sustained response for REG versus RAND conditions (temporal clusters with FWE corrected significance are indicated as thick horizontal green bars in Figure 2; uncorrected clusters are shown as thin light-green bars). The topographical patterns for REG and RAND conditions (averaged over the 500–800 ms period of the sustained response) were qualitatively similar in both Passive and Active groups (also shown in Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19113/elife-19113-fig2-v1.jpg)
 
-**Figure 2.:** Thick horizontal green lines indicate time points for which there were significant differences between REG and RAND conditions (p<0.05 FWE corrected at the cluster level; Thin light-green lines show uncorrected clusters). Purple lines indicate (jackknife-estimated) latencies of the onset of the REG versus RAND effect (horizontal and vertical portions indicate mean and jackknife-corrected standard error, respectively). Also shown are topographical patterns at the time of the sustained response (500–800 ms post scene onset), which are characterized by a dipole-like pattern over the temporal region in each hemisphere indicating downward flowing current in auditory cortex (red = source; blue = sink).DOI: http://dx.doi.org/10.7554/eLife.19113.004
+**Figure 2.:** Thick horizontal green lines indicate time points for which there were significant differences between REG and RAND conditions (p<0.05 FWE corrected at the cluster level; Thin light-green lines show uncorrected clusters). Purple lines indicate (jackknife-estimated) latencies of the onset of the REG versus RAND effect (horizontal and vertical portions indicate mean and jackknife-corrected standard error, respectively). Also shown are topographical patterns at the time of the sustained response (500–800 ms post scene onset), which are characterized by a dipole-like pattern over the temporal region in each hemisphere indicating downward flowing current in auditory cortex (red = source; blue = sink).
 
 To test whether the onset latency of the scene structure effect was significantly different between groups, we used a jackknife resampling procedure previously shown to be highly sensitive to latency effects (Miller et al., 1998; Ulrich and Miller, 2001). This involved repeatedly resampling the grand averaged RMS time-course and for each subsample, computing the earliest latency at which the REG versus RAND difference was larger than variability in the baseline period (see Materials and methods). Mean onset latencies for each group are shown as vertical purple lines in Figure 2 (289 ms for Passive; 412 ms for Active). Although the scene structure effect emerged on average, 123 ms earlier in the Passive versus Active groups, there was no significant difference in onset latency between groups (jackknife adjusted two-sample t(25) = −1.35, p=0.188). Neither was there a main effect of group (p=0.48) or scene structure by group interaction (p=0.31) when conducting ANOVA on the magnitude of the sustained response (averaged from 500–800 ms). This was also the case for earlier time-windows during the M50, M100 and M200 components (all p’s >0.19).
 
 In summary, when MEG responses are timelocked to scene onset, regular scene structure results in an increased MEG response from around 400 ms post scene onset. Furthermore, the scene-evoked response shows no evidence of attentional modulation, either in terms of an overall difference between Passive and Active groups or the interaction between scene structure and group.
 
-## Appearance-evoked response
+### Appearance-evoked response
 
-The appearance-evoked response is shown in
+The appearance-evoked response is shown in Figure 3. Note that these data have been baseline corrected relative to the 200 ms period prior to the appearance event. Thus, effects reported in this section are specific to the appearance-evoked response and not merely a reflection of the pre-existing REG versus RAND effect observed for the scene-evoked response.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19113/elife-19113-fig3-v1.jpg)
 
-**Figure 3.:** (A) RMS time-course of the appearance-evoked response showing the main effect of scene temporal structure (REG versus RAND). Thick horizontal green lines indicate time points for which there were significant differences in RMS between REG and RAND conditions (p<0.05 FWE corrected at the cluster level; Thin light-green lines show uncorrected clusters). Purple lines indicate (jackknife-estimated) latencies of the onset of the REG versus RAND effect (horizontal and vertical portions indicate mean and jackknife-corrected standard error, respectively). Also shown are topographical patterns at the time of the appearance-evoked M50 (72–112 ms), M100 (144–188 ms) and M200 (232–360 ms) components. (B) Mean RMS over the appearance-evoked M50 period (712–112 ms). Asterisk indicates the significant (p<0.05) interaction ([REG>RAND]>[Passive>Active]). Error bars represent within-subject standard error of the mean (computed separately for Passive and Active groups. (C) Same as panel A but showing main effect of appearing source structure (temporally regular versus random). See also Figure 3—figure supplement 1 for the MEG time-course averaged over selected sensors responsive to the appearance-evoked M50 component.DOI: http://dx.doi.org/10.7554/eLife.19113.005
+**Figure 3.:** (A) RMS time-course of the appearance-evoked response showing the main effect of scene temporal structure (REG versus RAND). Thick horizontal green lines indicate time points for which there were significant differences in RMS between REG and RAND conditions (p<0.05 FWE corrected at the cluster level; Thin light-green lines show uncorrected clusters). Purple lines indicate (jackknife-estimated) latencies of the onset of the REG versus RAND effect (horizontal and vertical portions indicate mean and jackknife-corrected standard error, respectively). Also shown are topographical patterns at the time of the appearance-evoked M50 (72–112 ms), M100 (144–188 ms) and M200 (232–360 ms) components. (B) Mean RMS over the appearance-evoked M50 period (712–112 ms). Asterisk indicates the significant (p<0.05) interaction ([REG>RAND]>[Passive>Active]). Error bars represent within-subject standard error of the mean (computed separately for Passive and Active groups. (C) Same as panel A but showing main effect of appearing source structure (temporally regular versus random). See also Figure 3—figure supplement 1 for the MEG time-course averaged over selected sensors responsive to the appearance-evoked M50 component.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19113/elife-19113-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) MEG from sensors showing positive signal at the time of the appearance-evoked M50 component. Thick horizontal green lines indicate time points for which there were significant differences in MEG amplitude between REG and RAND conditions (p<0.05 FWE corrected at the cluster level; Thin light-green lines show uncorrected clusters). (B) MEG from sensors showing negative signal at the time of the appearance-evoked M50 component.DOI: http://dx.doi.org/10.7554/eLife.19113.006
+**Figure 3—figure supplement 1.:** (A) MEG from sensors showing positive signal at the time of the appearance-evoked M50 component. Thick horizontal green lines indicate time points for which there were significant differences in MEG amplitude between REG and RAND conditions (p<0.05 FWE corrected at the cluster level; Thin light-green lines show uncorrected clusters). (B) MEG from sensors showing negative signal at the time of the appearance-evoked M50 component.
 
 In the Active group, the appearance-evoked response is characterized by a typical pattern of M50/M100/M200 deflections frequently observed at sound onset (as seen above) and following changes within an ongoing sound sequence (Martin and Boothroyd, 2000; Gutschalk et al., 2004; Chait et al., 2008; Sohoglu and Chait, 2016). Although the responses here are characterized by later latencies (around 90, 150 and 300 ms, respectively) than those typically observed in other studies that report similar deflections. This may be due to the higher complexity of the present stimuli, which is known to lead to delayed responses (see e.g. Chait et al., 2008; Sohoglu and Chait, 2016). M50 and M200 deflections are also observed in the Passive group but we note with interest the absence of a prominent M100 component, consistent with previous reports of this component being particularly sensitive to attention and/or task-related demands (Ahveninen et al., 2011; Ding and Simon, 2012; Königs and Gutschalk, 2012; Sohoglu and Chait, 2016).
 
@@ -79,13 +79,222 @@ An alternative explanation of the interaction between group and scene structure 
 
 The appearance-evoked response as a function of the temporal structure of the appearing source was also analyzed and is shown in Figure 3C. Despite listeners’ detection times being somewhat quicker when the appearing source was temporally regular versus random (by ~27 ms on average across the group; shown earlier in Figure 1B), no significant differences in MEG response were observed in Passive or Active groups. Neither was there a significant interaction between scene and appearing source structure. However, we cannot rule out modulation of more temporally variable neural processes not captured by the evoked analysis employed here. Since the behavioral effects were only observed in detection times, it is also possible that the relevant brain activity is masked by motor response-related processes.
 
-## Source reconstruction
+### Source reconstruction
 
-Finally, we localized the neural generators of the scene structure effect. As shown in
+Finally, we localized the neural generators of the scene structure effect. As shown in Figure 4A, the scene-evoked response (averaged from 500 to 800 ms) showed greater source power for REG versus RAND scenes in both hemispheres of the superior temporal lobe, including primary auditory cortex, planum temporale and the superior temporal gyrus (peak voxel locations are reported in Table 1). An additional distinct cluster of activation is observed in left post central gyrus of the superior parietal lobe.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19113/elife-19113-fig4-v1.jpg)
 
-**Figure 4.:** (A) Main effect of scene temporal structure at the time of the sustained portion of the scene-evoked response (500–800 ms post scene onset). Statistical map is overlaid onto an MNI space template brain, viewed over the left and right hemispheres. Color-bar indicates statistical threshold. (B) [REG>RAND]>[Passive>Active] interaction at the time of the appearance-evoked M50 component (72–112 ms post appearance).DOI: http://dx.doi.org/10.7554/eLife.19113.007
+**Figure 4.:** (A) Main effect of scene temporal structure at the time of the sustained portion of the scene-evoked response (500–800 ms post scene onset). Statistical map is overlaid onto an MNI space template brain, viewed over the left and right hemispheres. Color-bar indicates statistical threshold. (B) [REG>RAND]>[Passive>Active] interaction at the time of the appearance-evoked M50 component (72–112 ms post appearance).
+
+**Table 1.**
+ Peak voxel locations (in MNI space) and summary statistics from source reconstruction. Activations for the scene-evoked analysis are for the REG>RAND contrast (500–800 ms post scene onset) while those for the appearance-evoked analysis are for the [REG>RAND]>[Passive>Active] interaction contrast (72–112 ms post appearance). Activations have been thresholded using the same parameters as for Figure 4 (p<0.001 for scene-evoked; p<0.01 for appearance-evoked) but with an additional cluster extent threshold of n > 15 voxels (for display purposes).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">MNI Coordinates</th>
+    </tr>
+    <tr>
+      <th>Analysis</th>
+      <th>Region</th>
+      <th>Side</th>
+      <th>Extent</th>
+      <th>t-value</th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scene-evoked</td>
+      <td>Planum Temporale/Parietal Operculum</td>
+      <td>Left</td>
+      <td>1418</td>
+      <td>5.2779</td>
+      <td>−48</td>
+      <td>−28</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>(500-800 ms post scene onset)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4.364</td>
+      <td>−62</td>
+      <td>−50</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3.9777</td>
+      <td>−52</td>
+      <td>−30</td>
+      <td>-4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Postcentral Gyrus</td>
+      <td>Left</td>
+      <td>204</td>
+      <td>4.8082</td>
+      <td>−32</td>
+      <td>−36</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Supramarginal Gyrus</td>
+      <td>Right</td>
+      <td>704</td>
+      <td>4.2469</td>
+      <td>64</td>
+      <td>−24</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3.7176</td>
+      <td>44</td>
+      <td>−6</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Planum Temporale</td>
+      <td>Right</td>
+      <td>582</td>
+      <td>3.9459</td>
+      <td>64</td>
+      <td>−16</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3.9252</td>
+      <td>46</td>
+      <td>−26</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precentral Gyrus</td>
+      <td>Right</td>
+      <td>19</td>
+      <td>3.6051</td>
+      <td>60</td>
+      <td>6</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Appearance-evoked</td>
+      <td>Precentral Gyrus</td>
+      <td>Left</td>
+      <td>190</td>
+      <td>3.2219</td>
+      <td>−50</td>
+      <td>−6</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>(72-112 ms post appearance)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.9902</td>
+      <td>−34</td>
+      <td>6</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precentral Gyrus/Central Operculum</td>
+      <td>Right</td>
+      <td>711</td>
+      <td>3.1966</td>
+      <td>56</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3.0153</td>
+      <td>56</td>
+      <td>4</td>
+      <td>−10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.9101</td>
+      <td>36</td>
+      <td>−8</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle Temporal Gyrus</td>
+      <td>Right</td>
+      <td>157</td>
+      <td>2.9859</td>
+      <td>58</td>
+      <td>−2</td>
+      <td>−24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle Temporal Gyrus</td>
+      <td>Right</td>
+      <td>55</td>
+      <td>2.6951</td>
+      <td>52</td>
+      <td>−54</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precentral Gyrus</td>
+      <td>Right</td>
+      <td>21</td>
+      <td>2.6444</td>
+      <td>54</td>
+      <td>−4</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Postcentral Gyrus</td>
+      <td>Left</td>
+      <td>16</td>
+      <td>2.5982</td>
+      <td>-30</td>
+      <td>−34</td>
+      <td>68</td>
+    </tr>
+  </tbody>
+</table>
 
 For the appearance-evoked response, we focused on the scene structure by group interaction ([REG>RAND] > [Passive>Active]) that emerged during the early M50 component. As shown in Figure 4B, this effect localized to similar regions as for the scene-evoked response: superior/middle temporal lobe (albeit in the right hemisphere only) and post central gyrus. Additional activation is observed more anteriorly in the pre central gyrus, extending into the middle frontal gyrus.
 
@@ -93,7 +302,7 @@ For the appearance-evoked response, we focused on the scene structure by group i
 
 The present study used psychophysics and MEG recordings of brain activity to understand how regular temporal structure facilitates auditory scene analysis. We demonstrate that listeners’ ability to detect the appearance of a new source was enhanced in temporally regular scenes. These behavioral benefits of statistical structure on scene analysis are associated with increased neural responses occurring before as well as after source appearance.
 
-## Adaptation versus precision
+### Adaptation versus precision
 
 Around 400 ms following scene onset, we observed an increase in the sustained MEG response for scenes consisting of regularly structured, relative to randomly fluctuating sources. This finding is opposite to what would be expected based on adaptation i.e. decreased neural responses for temporally regular events, which has previously been observed for isolated tone sequences (Costa-Faidella et al., 2011; Schwartze et al., 2013; Tavano et al., 2014). It is however consistent with a mechanism that infers the precision (predictability) of sensory input and uses this information to up-regulate neural processing towards more reliable sensory signals (Feldman and Friston, 2010; Zhao et al., 2013; Auksztulewicz and Friston, 2015; Barascud et al., 2016). Indeed, it has recently been demonstrated that the magnitude of sustained MEG activity (from naïve distracted listeners) tracks the predictability of rapid tone sequences (Barascud et al., 2016). In that study, regularity was characterized by a spectral pattern repeating over time within a single ongoing tone sequence. Although distinct to the temporal regularity studied here, the ensuing effect on MEG response is strikingly similar to the sustained effect we observe. Importantly, the current findings demonstrate mechanisms that automatically (irrespective of directed attention) and rapidly (within 400 ms of scene onset) encode regularities distributed over many concurrent sources, typical of natural listening environments.
 
@@ -101,13 +310,13 @@ If the auditory system can form precise models about the content of ongoing scen
 
 Overall, the results demonstrate that the enhanced detection performance observed in behavior is not solely the result of changes in neural responses occurring prior to source appearance (cf. adaptation accounts; May et al., 1999; Jääskeläinen et al., 2004) but also due to enhanced neural responses to novel events themselves. This is again what would be expected based on precision accounts and is also consistent with animal physiology work showing that the magnitude of responses in single neurons of auditory cortex to new (‘deviant’) tones is larger than expected based on simple adaptation to previously repeated (‘standard’) tones alone (Khouri and Nelken, 2015).
 
-## Neural sources
+### Neural sources
 
 Source reconstruction suggests that neural responses in a network of brain regions are modulated by scene temporal structure, including early auditory regions in the superior temporal lobe but also left parietal cortex (post central gyrus). This is consistent with evidence from neuroimaging (Rao et al., 2001; Coull and Nobre, 2008; Andreou et al., 2015), electrophysiology (Leon et al., 2003; Janssen and Shadlen, 2005) and lesion studies (Harrington et al., 1998; Battelli et al., 2008) implicating a specific role for left parietal cortex in temporal processing. Parietal cortex has also been associated with figure-ground processing when the figure is defined by temporally repeatable spectral components in an otherwise randomly structured background (Teki et al., 2011; Teki et al., 2016). Thus, together the current study and previous findings suggest parietal cortex may be part of a wider network (along with auditory cortical regions) that codes the temporal structure of acoustic scenes. Alternatively, the parietal activity changes we observe may reflect a more domain-general increase in bottom-up saliency attributable to regularity (Corbetta and Shulman, 2002; Zhao et al., 2013).
 
 We note however that although Barascud et al. (2016) report effects of statistical structure in early auditory regions (like the current findings), they did not observe changes in MEG and fMRI responses in parietal cortex. Instead, spectral regularity modulated activity in the inferior frontal gyrus. This is may suggest a degree of neural specialization for the particular type of regularity encoded e.g. temporal-based involving parietal cortex versus spectral-based involving inferior frontal regions. Future work is required however to determine whether temporal and spectral regularities are encoded by distinct neural substrates (e.g. by contrasting neural effects of temporal and spectral regularities in the same experiment).
 
-## Role of attention
+### Role of attention
 
 Following scene onset (prior to new source appearance), the neural influence of regularity showed no evidence of attentional modulation (the strength of the scene-evoked response to regularly and randomly structured scenes was statistically indistinguishable in passive compared with active listening subjects). This suggests that the brain automatically encodes scene regularities, irrespective of directed attention. After the appearance of a new source, however, regularity and attention had an interactive influence on the evoked response; whereas the first cortical deflection of the appearance-evoked response (M50) increased in regular scenes during passive listening, this effect was confined to later deflections (M100 and M200) when listeners actively detected source appearance.
 
@@ -121,11 +330,11 @@ While the proposal that attention acts to reduce surprise may appear at odds wit
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Two groups of participants were tested after being informed of the study’s procedure, which was approved by the research ethics committee of University College London. The two groups differed in whether participants’ attention was directed away (‘Passive’ group) or towards (‘Active’ group) auditory stimulation (see Procedure section below). The Passive group comprised 14 (6 female) participants aged between 19 and 34 years (mean = 23.6, SD = 4.68). All but one of these participants was right-handed. The Active group comprised 13 (7 female), different, right-handed participants aged between 18 and 33 years (mean = 24.3, SD = 4.91). All reported normal hearing, normal or corrected-to-normal vision, and had no history of neurological disorders. There were no significant differences between groups in terms of gender (two-tailed χ(1) =. 326, p=0.568) or age (two-tailed t(25) = 0.35, p= 0.73).
 
-## Stimuli
+#### Stimuli
 
 Stimuli were 2500–3500 ms duration artificial acoustic ‘scenes’ populated by seven to eight streams of pure-tones designed to model auditory sources (shown in Figure 1A). Each of these sources had a unique carrier frequency (drawn from a pool of fixed values spaced at 2*ERB between 200 and 2800 Hz; Moore and Glasberg, 1983) and temporal structure (see below). Previous experiments have demonstrated that these scenes are perceived as composite ‘sound-scapes’ in which individual sources can be perceptually segregated and selectively attended to, and are therefore good models for listening in natural acoustic scenes (Cervantes Constantino et al., 2012). The large spectral separation between neighboring sources (at least two ERBs) was chosen to minimize energetic masking at the peripheral stages of auditory processing (Moore, 1987). Signals were synthesized with a sampling rate of 44,100 Hz and shaped with a 30 ms raised cosine onset and offset ramp. They were delivered diotically to the subjects' ears with tubephones (EARTONE 3A 10 Ω, Etymotic Research, Inc) and adjusted to a comfortable listening level.
 
@@ -133,15 +342,15 @@ As shown in Figure 1A, a scene change involving the appearance of a new source,
 
 The duration of the tone-pips comprising each source (varying uniformly between 22 and 167 ms) and the silent interval between tone-pips (varying uniformly between 1 and 167 ms) were chosen independently. In ‘Regular’ (REG) scenes, these tone/silence intervals were fixed so that the temporal structure was regular. This pattern mimics the regularly modulated temporal properties of many natural sounds. In ‘Random’ (RAND) scenes, tone duration was also fixed but the silent intervals between successive tones varied randomly (with the same distribution as REG scenes i.e. 1–167 ms) resulting in an irregular pattern. Importantly, the above manipulation of scene temporal structure was applied independently of the regularity of the appearing source: Appearing sources could be regular or random (equal proportion), independently of the regularity of the rest of the scene (REG or RAND; equal proportion). Stimuli were randomly ordered during each of eight presentation blocks of 96 trials. The inter-stimulus interval varied randomly between 900 and 1100 ms.
 
-## Procedure
+#### Procedure
 
 Stimulus delivery was controlled with Cogent software (http://www.vislab.ucl.ac.uk/cogent.php). In the Passive group, participants were naïve to the sounds and engaged in an incidental visual task while looking at a central fixation cross. Participants in this group were instructed to press a button (with their right hand) each time a brief (100 ms duration) image of a pre-defined (target) object appeared on the display at fixation. The target was different on each block and was presented rarely (20%) amongst a stream of non-target images. The inter-image interval ranged from around 500 to 4000 ms and was randomly timed with respect to auditory stimulation. Hit rates ranged from 81 to 95% with false alarm rates below 1%, confirming engagement with the task. In the Active group, participants were instructed to listen carefully to the sounds while looking at a central fixation cross and press a button (with their right hand) as soon as they detected a change in each acoustic scene. Before the experiment, participants in both groups completed a brief (~2.5 min) practice session to familiarize themselves with the task.
 
-## Behavioral statistical analysis
+### Behavioral statistical analysis
 
 d’ scores were obtained for the Active group by first computing for each subject and condition, the hit rate (proportion of source appearances correctly detected) and false alarm rate (proportion of ‘No Change’ trials for which responses were made). Following this, each d’ score was computed as the difference in the z-transformed hit rate and false alarm rate. Detection time was measured between the time of new source appearance and the subject’s key press.
 
-## MEG data acquisition and pre-processing
+### MEG data acquisition and pre-processing
 
 Magnetic fields were recorded with a CTF-275 MEG system, with 274 functioning axial gradiometers arranged in a helmet shaped array. Electrical coils were attached to three anatomical fiducial points (nasion and left and right pre-auricular), in order to continuously monitor the position of each participant’s head with respect to the MEG sensors.
 
@@ -151,7 +360,7 @@ Subsequent preprocessing differed depending on whether the analysis was conducte
 
 Note that although images were presented only in the Passive group, auditory and visual events were temporally uncorrelated. Thus, in both Passive and Active groups, our MEG measures are expected to reflect primarily auditory (and not visual) evoked activity.
 
-## MEG statistical analysis
+### MEG statistical analysis
 
 MEG data across the sensor array were summarized as the root mean square (RMS) across sensors for each time sample within the epoch period, reflecting the instantaneous magnitude of neuronal responses. Group-level paired t-tests were performed for each time sample while controlling the family-wise error (FWE) rate using a non-parametric (cluster-based) permutation procedure based on 5000 iterations (Maris and Oostenveld, 2007). Reported effects were obtained by using a cluster defining height threshold of p<0.05 with a cluster size threshold of p<0.05 (FWE corrected), unless otherwise stated.
 

@@ -41,41 +41,196 @@ Here, we used two purified group II ECF transporters from Lactobacillus delbrue
 
 The Gram-positive bacterium L. delbrueckii contains eight different S-components that make use of the same ECF module (Rodionov et al., 2009; Swier et al., 2016; Overbeek et al., 2005). To study the association with and dissociation from the ECF module we selected two S-components, namely FolT2, which is specific for folate and PanT, which is predicted to bind pantothenate. We overproduced and purified the complete complexes ECF-FolT2 and ECF-PanT each containing four subunits. In addition, we were able to purify large amounts of the solitary S-component FolT2 (in the absence of the ECF module) in a stable state (Swier et al., 2016). Solitary PanT was marginally stable in detergent solution in all tested conditions, and only small quantities of purified protein could be produced. Therefore, we designed our experiments in such a way that PanT was always purified in complex with the ECF module, but was allowed to dissociate from ECF module once reconstituted in the liposomes (see below). Only for a few crucial control experiments we used purified, solitary PanT.
 
-## PanT and FolT2 form a functional transport complex with the same ECF module
+### PanT and FolT2 form a functional transport complex with the same ECF module
 
 The purified ECF-transporter complexes ECF-FolT2 and ECF-PanT were both active when reconstituted into proteoliposomes (Figure 1), and mediated ATP-dependent uptake of folate and pantothenate, respectively. The accumulation of radiolabelled substrate in the proteoliposomes’ lumen was strictly dependent on the presence of lumenal Mg2+-ATP (Figure 1). Transport of folate and pantothenate was possible only in the presence of a dedicated S-component. We could not detect transport of pantothenate by ECF-FolT2 or folate transport by ECF-PanT (Figure 1), confirming that the substrate specificity of the ECF transporters is determined entirely by the specific S-components (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig1-v1.jpg)
 
-**Figure 1.:** 3H]pantothenate and [3H]folate into proteoliposomes.(A) Yellow and white circles: Pantothenate uptake by ECF-PanT into proteoliposomes containing 10 mM Mg2+-ATP or Mg2+-ADP in the lumen, respectively; Yellow squares: Pantothenate uptake by ECF-FolT2 into proteoliposomes containing 10 mM Mg-ATP in the lumen. (B) Green and white squares: Folate uptake by ECF-FolT2 into proteoliposomes containing 10 mM Mg2+-ATP or Mg2+-ADP in the lumen, respectively; Green circles: Folate uptake by ECF-PanT into proteoliposomes containing 10 mM Mg2+-ATP in the lumen. Error bars indicate standard deviation of triplicate measurements. The insets show schematic representations of the reconstituted systems used. FolT2 and PanT are coloured in green and yellow, respectively. The shared ECF module is shown in grey. The membrane boundaries are indicated by the two black lines. In Figures 3–5 we use similar cartoons, and yellow and green symbols indicating pantotenate and folate uptake, respectively, with circles and squares indicating that the uptake was mediated by ECF-PanT and ECF-FolT2, respectively.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1—source data 4.
+**Figure 1.:** (A) Yellow and white circles: Pantothenate uptake by ECF-PanT into proteoliposomes containing 10 mM Mg2+-ATP or Mg2+-ADP in the lumen, respectively; Yellow squares: Pantothenate uptake by ECF-FolT2 into proteoliposomes containing 10 mM Mg-ATP in the lumen. (B) Green and white squares: Folate uptake by ECF-FolT2 into proteoliposomes containing 10 mM Mg2+-ATP or Mg2+-ADP in the lumen, respectively; Green circles: Folate uptake by ECF-PanT into proteoliposomes containing 10 mM Mg2+-ATP in the lumen. Error bars indicate standard deviation of triplicate measurements. The insets show schematic representations of the reconstituted systems used. FolT2 and PanT are coloured in green and yellow, respectively. The shared ECF module is shown in grey. The membrane boundaries are indicated by the two black lines. In Figures 3–5 we use similar cartoons, and yellow and green symbols indicating pantotenate and folate uptake, respectively, with circles and squares indicating that the uptake was mediated by ECF-PanT and ECF-FolT2, respectively.
 
 We determined the apparent Km for substrate transport by measuring initial rates of uptake of the vitamin substrate into proteoliposomes, at a fixed ATP concentration. The apparent Km values for pantothenate and folate transport were in the nanomolar range (Figure 2ab), consistent with the notion that ECF transporters are high-affinity scavengers of micronutrients (Rodionov et al., 2009; Rempel et al., 2019; Duurkens et al., 2007; Erkens and Slotboom, 2010). The dependence of the transport rates on the vitamin concentrations were hyperbolic, both for pantothenate and folate transport, indicating that there was no cooperativity, consistent with a single binding site in the S-component (Erkens et al., 2011; Zhang et al., 2010; Swier et al., 2016; Zhao et al., 2015). We also determined the dependence of the transport rates on the concentration of ATP, and found Km values in the mM range (Figure 2cd), in line with Km values reported for other ABC transporters. The dependence of the transport rates on the ATP concentration was sigmoidal, showing that there is cooperativity between the ATP binding sites. It is noteworthy that previous assays for ATPase instead of transport activity revealed hyperbolic relations between the ATP concentration and the hydrolysis rate (Karpowich et al., 2015). This observation underlines that care needs to be taken when using ATPase assays to obtain insight in the transport mechanism. While Km values and Hill coefficients were very similar for folate and pantothenate transport, the apparent maximal rates of transport differed somewhat for the two substrates, which may suggest intrinsic differences between transport mediated by FolT2 and PanT, but it must be noted that unequal activity losses during purification and reconstitution could also account for these differences. Moreover, both protein complexes can orient either in the right-side-out or inside-out orientation in the liposomal membrane (Swier et al., 2016). Therefore, the apparent Vmax values are likely underestimations. In contrast, a mixed orientation does not affect the Km because the use of different chemical compositions in the lumenal and external solutions (ATP, transported substrate) allowed us to probe the uptake activity of proteins in the right-side-out orientation, with the proteins in the other orientation remaining ‘invisible’.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig2-v1.jpg)
 
-**Figure 2.:** m and Vmax values for pantothenate and folate transport.(A,C) Initial rates of pantothenate transport by ECF-PanT into proteoliposomes as function of the pantothenate concentration (panel A, Mg2+-ATP concentration 5 mM) or the ATP concentration (panel C, pantothenate concentration 100 nM). The apparent Km and Vmax values in the pantothenate-dependent measurements are 46 ± 11 nM and 2.2 ± 0.12 nmol/mg/min, respectively. For the ATP-dependent measurements 5.6 ± 1.0 mM and 4.4 ± 0.5 nmol/mg/min, respectively. (B,D) Initial rates of folate transport by ECF-FolT2 into proteoliposomes as function of the folate concentration (panel B, Mg2+-ATP concentration 10 mM) or the ATP concentration (panel D, folate concentration 100 nM). The apparent Km and Vmax values in the folate-dependent measurements are 82 ± 20 nM and 0.93 ± 0.1 nmol/mg/min, respectively. For the ATP- dependent measurements 5.6 ± 1.7 mM and 0.5 ± 0.1 nmol/mg/min, respectively. Error bars indicate standard deviation of triplicate measurements.Figure 2—source data 1.
+**Figure 2.:** (A,C) Initial rates of pantothenate transport by ECF-PanT into proteoliposomes as function of the pantothenate concentration (panel A, Mg2+-ATP concentration 5 mM) or the ATP concentration (panel C, pantothenate concentration 100 nM). The apparent Km and Vmax values in the pantothenate-dependent measurements are 46 ± 11 nM and 2.2 ± 0.12 nmol/mg/min, respectively. For the ATP-dependent measurements 5.6 ± 1.0 mM and 4.4 ± 0.5 nmol/mg/min, respectively. (B,D) Initial rates of folate transport by ECF-FolT2 into proteoliposomes as function of the folate concentration (panel B, Mg2+-ATP concentration 10 mM) or the ATP concentration (panel D, folate concentration 100 nM). The apparent Km and Vmax values in the folate-dependent measurements are 82 ± 20 nM and 0.93 ± 0.1 nmol/mg/min, respectively. For the ATP- dependent measurements 5.6 ± 1.7 mM and 0.5 ± 0.1 nmol/mg/min, respectively. Error bars indicate standard deviation of triplicate measurements.
 
-## Exchange of S-components
+### Exchange of S-components
 
 We performed two types of experiments to show that the subunit composition of ECF transporters in liposomal membranes is dynamic. First, we co-reconstituted in proteoliposomes the whole complex ECF-PanT together with separately purified solitary FolT2. On average, one full ECF-PanT transporter was present per liposome together with 26 molecules of FolT2 (see below for calculation). The proteoliposomes with co-reconstituted ECF-PanT and solitary FolT2 showed transport activity for both folate and pantothenate (Figure 3a). Because solitary FolT2 cannot transport folate alone (Figure 3a) the observed uptake of radiolabelled folate in the liposomes shows that FolT2 had associated with the ECF module from the ECF-PanT complex.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig3-v1.jpg)
+
+**Figure 3.:** (A) Folate uptake into proteoliposomes reconstituted with FolT2 alone (green circles), or FolT2 in combination with ECF-PanT (green squares, molar ratio 26:1). (B) Pantothenate uptake into proteoliposomes reconstituted with PanT alone (yellow inverted triangles), or PanT in combination with ECF-FolT2 (Yellow circles). Since PanT was not very stable in detergent solution, the exact molar ratio in the combined reconstitution is unknown but likely to be much lower than in the experiment presented in panel A. The low amount of PanT could explain the reduced uptake rate. In all cases, 10 mM Mg2+-ATP was present in the lumen. Error bars indicate standard deviation of triplicate measurements, apart from panel B, where the experiment was done in duplicate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig3-figsupp1-v1.jpg)
 
 We could also show that exchange happened in an experiment where ECF-FolT2 was reconstituted as a full complex together with solitary PanT, even though the yield and stability of the solitary PanT protein were low. These proteoliposomes were able to take up pantothenate (Figure 3b). The uptake of pantothenate was observed only when ECF-FolT2 was co-reconstituted, and not observed when the same amount of solitary PanT was reconstituted alone (Figure 3b).
 
 In the second approach to demonstrate exchange of S-components in liposomes, we used a liposome system with two co-reconstituted full complexes: the wild type transporter complex for one substrate, and a complex with inactivated ATPase subunits for the other substrate. To inactivate the ATPases, we created a double mutant, in which the conserved catalytic glutamate residues in the Walker B motifs of both ATPase subunits (EcfA and EcfA’) were changed into glutamine (E169Q in EcfA and E171Q in EcfA’). The glutamates are necessary to coordinate a water molecule for a nucleophilic attack on the bond between the γ- and ß-phosphate of ATP (Oldham et al., 2007; Hanekop et al., 2006). Therefore, glutamate-to-glutamine substitutions (EQ) are expected to be able to bind, but not hydrolyse ATP (Oldham et al., 2007; Hanekop et al., 2006). Folate and pantothenate transport activities of the double mutants were indeed at the level of background (Figure 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig4-v1.jpg)
+
+**Figure 4.:** In the cartoon insets, red crosses indicate the mutated ECF modules. (A) Folate uptake into proteoliposomes co-reconstituted with ECF-PanT and ECF(E-to-Q)-FolT2, containing 10 mM Mg2+-ATP (green squares) or Mg2+-ADP in the lumen (white squares), respectively; Green inverted triangles: Folate uptake into proteoliposomes reconstituted with only ECF(E-to-Q)-FolT2, containing 10 mM Mg2+-ATP in the lumen, respectively;. (B) Pantothenate uptake into proteoliposomes co-reconstituted with ECF-FolT2 and ECF(E-to-Q)-PanT, containing 10 mM Mg2+-ATP (yellow circles) or Mg2+-ADP (white circles) in the lumen, respectively; Yellow inverted triangles: Pantothenate uptake by into proteoliposomes reconstituted with only ECF(E-to-Q)-PanT, containing 10 mM Mg2+-ATP in the lumen. Error bars indicate standard deviation of triplicate measurements.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Pantothonate uptake into proteoliposomes co-reconstituted with ECF-PanT and ECF(E-to-Q)-FolT2, containing 10 mM Mg2+-ATP (yellow circles) or Mg2+-ADP in the lumen (white circles), respectively. (B) Folate uptake by into proteoliposomes co-reconstituted with ECF-FolT2 and ECF(E-to-Q)-PanT, containing 10 mM Mg2+-ATP (green squares) or Mg2+-ADP (white circles) in the lumen, respectively. Error bars indicate standard deviation of triplicate measurements.
+
 To test for S-component exchange, wild type and mutant ECF modules in complex with different S-components (FolT2 or PanT) were separately expressed and purified, and subsequently co-reconstituted into liposomes. Co-reconstitution of the active ECF-PanT complex with the mutated and inactive ECF-FolT2 complex resulted in transport of both substrates. The same result was obtained when active ECF-FolT2 was co-reconstituted with mutated ECF-PanT. These results show that S-component exchange had happened (Figure 4 and Figure 4—figure supplement 1).
 
-## Competition for a shared ECF module
+### Competition for a shared ECF module
 
 In order to assay for competition of the two different S-components for association with the ECF module, we used the proteoliposomes with co-reconstituted ECF-PanT and solitary FolT2, as described above. To study competition of the S-components PanT and FolT2 for the same ECF module, the amount of the latter had to be limiting in the transport assays (thus mimicking the in vivo situation Henderson et al., 1979a), and therefore we reconstituted an excess of S-components relative to the ECF module in the liposomes. For a full ECF-transporter complex (Mw ~120 kDa), reconstitution using a protein-to-lipid ratio of 1:1000 (w/w) was expected to yield on average a single protein complex in each liposome of 400 nm diameter. Reconstitution of the solitary S-component FolT2 (Mw ~21 kDa) at a protein:lipid ratio of 1:250 (w/w), was expected to yield 26 protein molecules in each liposome. As discussed above, the proteins may orient either in the right-side-out or inside-out orientation in the liposomal membrane, but only transport by the right-side-out orientated proteins was assayed for, because we included ATP in the lumen, and added the transported substrates on the outside.
 
 Radiolabelled pantothenate was taken up readily into the proteoliposomes containing ECF-PanT co-reconstituted with FolT2 (Figure 5a, see also Figure 3—figure supplement 1). Addition of 5 µM unlabelled folate revealed a reduction of [3H]pantothenate uptake (Figure 5a). It therefore appears that the substrate-loaded S-component FolT2 competes more effectively for association with the ECF module than the apo-protein, in line with previous in vivo experiments (Henderson et al., 1979a; Majsnerowska et al., 2015). As a control, we also tested the effect of folate on the transport of pantothenate when only ECF-PanT had been reconstituted (Figure 5—figure supplement 1). As expected, in the absence of FolT2, folate did not affect pantothenate uptake by ECF-PanT.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Uptake of radiolabelled pantothenate (A) and folate (B) into proteoliposomes co-reconstituted with ECF-PanT in protein-to-lipid ratio 1:1000 (w:w) and solitary FolT2 in ratio 1:250 (w:w), and loaded with 10 mM Mg2+-ATP (coloured symbols) or Mg2+-ADP (white symbols). Triangles: same as the conditions used for the black circles, but in the presence of 5 µM unlabelled folate (panel A) or pantothenate (panel B) as competing substrate. (C, D) same as panels A,B, but with reduced amount of FolT2 reconstituted (protein-to-lipid ratio 1:1000 (w:w) for both solitary FolT2 and ECF-PanT). The competing substrates were added at three different concentrations: 50 µM (white triangles), 5 µM (grey triangles) and 0.5 µM (black triangles). Error bars indicate standard deviation of triplicate measurements.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Yellow and white circles: Pantothenate uptake by ECF-PanT into proteoliposomes containing 10 mM Mg2+-ATP or Mg2+-ADP in the lumen (as in Figure 1), respectively; yellow and white triangles: same in the presence of unlabelled folate.
+
 Using the same preparation of proteoliposomes containing co-reconstituted ECF-PanT and solitary FolT2, we also followed the transport of radiolabelled folate. Folate transport (Figure 5b) was inhibited only slightly upon addition of unlabelled pantothenate (Figure 5b). The difference in sensitivity for the competing substrate in the panthothenate and folate transport assays could be a reflection of the considerable excess of FolT2 over PanT in the liposomes, as in each liposome on average one PanT molecule, and 26 molecules of FolT2 were present. To test whether the FolT2 excess could indeed explain the decreased sensitivity for added pantothenate, we reduced the amount of co-reconstituted FolT2 by fourfold to approximately seven FolT2 molecules per liposome. With the reduced amount of FolT2 in the liposomes, the inhibitory effect of pantothenate on folate uptake was indeed more pronounced (Figure 5d), showing that not only folate but also pantothenate enhances competition for the shared ECF module. However, there was a prominent difference in the dose-dependence of the effect of the competing substrate. The transport rate of radiolabelled pantothenate (Figure 5c) was inhibited by folate with strong dependence on the concentration in the range of 0.5 to 50 µM folate. In contrast, in the same concentration range there was no significant dose-dependence of the inhibitory effect of pantothenate on folate transport (Figure 5d).
 
-## Crystal structure of ECF-PanT
+### Crystal structure of ECF-PanT
 
 The differences in dose-dependence of transport inhibition by folate and pantothenate (Figure 5cd) are remarkable, because ECF-FolT2 and ECF-PanT make use of identical ECF modules, and only differ in the S-components. Comparison of the structures of the two transporter complexes might provide insight in the structural basis of the kinetic differences. While crystal structures of ECF-FolT2 from L. delbrueckii were determined previously (Swier et al., 2016), structural information on ECF-PanT from the same organism is lacking. A structure of ECF-PanT form L. brevis is known (Zhang et al., 2014), but the PanT protein from this organism shares only 36% sequence identity with the one from L. delbrueckii, and thus may not be a suitable model. Therefore, we set out to determine a crystal structure of ECF-PanT from L. delbrueckii, but despite extensive trials, suitable crystals were not found. To overcome this problem, we generated nanobodies against ECF-PanT that could be used as a crystallisation chaperone (Pardon et al., 2014). One of the selected nanobodies (Nb81) bound with high affinity to the ECF module, and the ECF-PanT-Nb81 complex formed well-diffracting crystals. We solved a crystal structure of the complex at a resolution of 2.8 Å, the highest resolution for any ECF-transporter structure to date (Figure 6a, and Table 1). In the crystals, the asymmetric unit contains two copies of the ECF-PanT-Nb81 complex. The nanobodies are positioned centrally in the asymmetric unit, making extensive contacts with both copies of ECF-PanT in the unit, but do not participate in crystal contacts with proteins in neighbouring asymmetric units (Figure 6a and Figure 6—figure supplement 1). Consistently, the nanobodies cause dimerisation of the ECF-PanT complex in detergent solution (Figure 6, Figure 6—figure supplement 2). An elaborate network of hydrogen bonds, electrostatic interactions, cation-π and π-π interactions between the nanobody and EcfA and EcfA’ seems to stabilise the protein in a single conformation, which may have aided crystal formation. Overall, the structure of ECF-PanT from L. delbrueckii is very similar to previously solved structures of ECF-FolT2 from the same organism (Figure 6—figure supplement 3), and also to ECF-PanT from and L. brevis (Zhang et al., 2014), despite only 36% of sequence identity between the PanT subunits of the two organisms. In all these protein complexes, the two ATPase subunits (EcfA and EcfA’) are separated from each other, adopting an open conformation, which has been interpreted as a post-hydrolysis state (Figure 6—figure supplement 4). The residues in ECF-PanT that interact directly with the nanobody adopt virtually identical conformations as those of ECF-FolT2, which was crystallised without a nanobody chaperone, indicating that the nanobody did not induce an artificial conformation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig6-v1.jpg)
+
+**Figure 6.:** (A) Overall structure with two ECF-PanT complexes (in surface representation) bridged by the nanobody (in secondary structure cartoon representation). EcfA in orange, EcfA’ in light pink, EcfT in cyan, PanT in yellow, nanobody 81 in green. (B) Comparison of the conformations of the membrane domains of EcfT in the structures of ECF-PanT (same colours as in panel A), and ECF-FolT2 (in grey, PDB 5JSZ). The structures were aligned on the ATPase domains which are not shown for clarity, see Figure 6—figure supplements 3 and 4. EcfT proteins are shown in secondary structure cartoon representation, the S-components in surface representation. (C and D) Comparison of the conformations of the S-components in the structures of ECF-PanT (PanT in rainbow from blue at the N-terminus to red at the C-terminus), and ECF-FolT2 (FolT2 in grey). EcfT from the ECF-PanT structure is shown in ribbon representation. The approximate positions of the membrane boundaries are indicated. Membrane helices are numbered, the ones from FolT2 with an added prime. The differences in membrane orientation of helix 3 (panel C) and helix 5 (panel D) are indicated by the dashed lines.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The nanobody is represented in green secondary structure cartoon representation, and the two ECF-PanT complexes in the centre in colourful surface representation with EcfA (orange), EcfA’ (light pink), EcfT (cyan), and PanT (yellow). The surrounding ECF-PanT molecules are in grey surface. It is highlighted that the nanobodies play a role in forming contacts within the asymmetric unit instead of forming crystal contacts. The crystal contacts are mediated by EcfA’ and EcfT interactions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig6-figsupp2-v1.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Colours: EcfA (orange), EcfA’ (light pink), EcfT (cyan), and PanT (yellow), nanobody (green), ECF-FolT2 (grey).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The ATPases are in an open conformation, as discussed in previous work (Swier et al., 2016).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/64389/elife-64389-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** Colours: EcfA (orange), EcfA’ (light pink), EcfT (cyan), and PanT (yellow), nanobody (green), ECF-FolT2 (grey). Coupling helices in secondary structure cartoon representation, rest of the structures in transparent surface representation.
+
+**Table 1.**
+ Data collection, phasing and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>97.290 110.470 110.500</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (o)</td>
+      <td>89.00 102.27 102.24</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.80–2.80</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.997 (0.195)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>4.7 (0.77)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>96.7 (95.3)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>1.76 (1.52)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.80–2.80</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>104284</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>24.3/27.6</td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>17885</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>338</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>108.6</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>130.2</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Bond angles (o)</td>
+      <td>1.286</td>
+    </tr>
+  </tbody>
+</table>
 
 Not only the ATPase subunits, but also the coupling helices of EcfT, which mediate the interaction with the NBDs, have almost identical conformations in the structures of ECF-PanT and ECF-FolT2, again indicating that the same functional state was captured (Figure 6b and Figure 6—figure supplement 5). Within the identical ECF modules of ECF-PanT and ECF-FolT2 from L. delbrueckii, the most prominent difference is the relative positioning of the transmembrane-domain of EcfT compared to the coupling helices. In ECF-FolT2 the transmembrane domain is rotated further away from the centre of the complex than in ECF-PanT (Figure 6b). Hinging between the two domains has been observed before (Swier et al., 2016; Santos et al., 2018; Zhang et al., 2014) and is likely needed to accommodate structurally different S-components in the complexes (Santos et al., 2018).
 
@@ -107,13 +262,132 @@ In conclusion, the relatively simple reconstituted systems that we have used her
 
 ## Materials and methods
 
-## Mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Lactobacillus delbrueckii subsp. bulgaricus)</td>
+      <td>panT</td>
+      <td>GenBank: CP002341.1</td>
+      <td>LDBND_0406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MC1061</td>
+      <td>Casadaban and Cohen, 1980</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>WK6</td>
+      <td>ATCC 47078</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (L. delbrueckii)</td>
+      <td>L. delbrueckii subsp. bulgaricus genomic DNA</td>
+      <td>DSMZ</td>
+      <td>DSM 20081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD24_PanT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression plasmids for PanT in E. coli. Plasmid can be provided upon reasonable request.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p2BAD_ECF_panT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression plasmid for ECF-PanT in E. coli. Plasmid can be provided upon reasonable request.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMESy4</td>
+      <td>GenBank KF415192</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>TG1</td>
+      <td>https://ecoliwiki.org/colipedia/index.php/Category:Strain:TG1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>pantothenic acid, D-[2,3-3H] sodium salt</td>
+      <td>American Radiolabelled Chemicals</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>folic acid [3,5,7,9 -3H] sodium salt</td>
+      <td>American Radiolabelled Chemicals</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ECF-PanT coordinate file and structure factors</td>
+      <td>this paper</td>
+      <td>accession number PDB ID code 6ZG3</td>
+      <td>Crystal structure of ECF-PanT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mutagenesis
 
 Mutations in EcfA and EcfA’ of ECF-FolT2 and ECF-PanT were introduced by two consecutive rounds of QuikChange mutagenesis with primers listed below.
 
-Primer name (mutation)Primer sequence (5'→3')Fw EcfA E177Q Ldb (E169Q in wild type)CATCATCCTGGATCAGTCGACCTCCATGRev EcfA E177Q Ldb (E169Q in wild type)CATGGAGGTCGACTGATCCAGGATGATGFw EcfA' E171Q LdbTGTTTAGATCAGCCGGCAGCTGGRev EcfA' E171Q LdbCCAGCTGCCGGCTGATCTAAACA
+<table>
+  <thead>
+    <tr>
+      <th>Primer name (mutation)</th>
+      <th>Primer sequence (5'→3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fw EcfA E177Q Ldb (E169Q in wild type)</td>
+      <td>CATCATCCTGGATCAGTCGACCTCCATG</td>
+    </tr>
+    <tr>
+      <td>Rev EcfA E177Q Ldb (E169Q in wild type)</td>
+      <td>CATGGAGGTCGACTGATCCAGGATGATG</td>
+    </tr>
+    <tr>
+      <td>Fw EcfA' E171Q Ldb</td>
+      <td>TGTTTAGATCAGCCGGCAGCTGG</td>
+    </tr>
+    <tr>
+      <td>Rev EcfA' E171Q Ldb</td>
+      <td>CCAGCTGCCGGCTGATCTAAACA</td>
+    </tr>
+  </tbody>
+</table>
 
-## Expression and membrane vesicles preparation
+### Expression and membrane vesicles preparation
 
 The genes encoding ECF-PanT and ECF-FolT2 from L. delbrueckii subsp. bulgaricus (LDB_RS01805, ecfA; LDB_RS01810, ecfA’; LDB_RS01815, ecfT; LDB_RS01970, panT; LDB_RS07030, folT2) were cloned in p2BAD vectors and transformed into Ca2+-competent cells of the Escherichia coli strain MC1061 as described before (Swier et al., 2016; Birkner et al., 2012). The ECF module operon (10xHis-TEV-ecfAA’T) was cloned downstream the first arabinose promoter and the gene encoding PanT or FolT2 (panT-Strep or folT2-Strep, respectively) downstream of the second arabinose promoter. The expression from p2BAD plasmids was performed in 2 L of LB Miller Broth containing 0.1 mg/mL ampicillin in a 5 L flask. The E. coli culture was grown at 37°C with continuous shaking at 200 rpm. At OD600 between 0.6 and 0.8, the expression from p2BAD plasmids was induced with 0.1 mg/mL of L-arabinose and the temperature was reduced to 25°C for three hours. Cells were harvested by centrifugation for 15 min at 6268 x g, 4°C.
 
@@ -121,7 +395,7 @@ Solitary S-components from L. delbrueckii were engineered with N-terminal His10 
 
 Membrane vesicles were prepared as described previously (ter Beek et al., 2011). Briefly, harvested cells were diluted to an OD600 of around 100 with potassium phosphate buffer pH 7.5 and supplemented with 1 mM MgSO4 and DNase (~50 μg/mL). The cells were broken in a Constant cell Disruption System (Constant Systems Ltd) in the presence of 1 mM PMSF and 5 mM EDTA. For E. coli cells one passage at 25 kPsi and for L.lactis cells two passages at 39 kPsi were performed. Unbroken cell debris was separated by low-speed centrifugation (15 min, 27352 × g at 4°C). Subsequently, the membranes were concentrated by ultracentrifugation (120 min, 193,727 × g at 4°C), homogenised in 50 mM potassium phosphate buffer pH 7.5, flash-frozen and stored at −80°C.
 
-## Protein purification and reconstitution into proteoliposomes
+### Protein purification and reconstitution into proteoliposomes
 
 For the whole complex ECF-transporter purification, membrane vesicles were thawed and incubated for 1 hr with 1% (w/v) n-dodecyl-β-D-maltopyranoside (DDM, Anatrace) in buffer containing 50 mM potassium phosphate pH 7.5, 300 mM NaCl, and 10% (v/v) glycerol. Non-solubilised membrane fragments were removed by centrifugation (35 min, 286286 × g at 4°C). The solubilised protein solution was mixed with nickel-Sepharose resin equilibrated with solubilisation buffer and incubated for 1 hr with gentle rocking at 4°C. Proteins not bound to the resin were drained and subsequently washed away with 20 column volumes of 50 mM potassium phosphate buffer pH 7.5 supplemented with 300 mM NaCl, 50 mM imidazole pH 7.5% and 0.05% (w/v) DDM. The protein was eluted from the Ni-Sepharose column in three steps (fraction volumes 350 μL, 750 μL and 700 μL, respectively) in 50 mM potassium phosphate buffer pH 7.5 supplemented with 300 mM NaCl, 500 mM imidazole pH 7.5% and 0.05% (w/v) DDM. The second fraction, the one with the highest protein content, was supplemented with 1 mM Na-EDTA and further purified by size-exclusion chromatography on a Sephadex200 10/300 column (GE Healthcare) using 50 mM potassium phosphate buffer pH 7.5 supplemented with 150 mM NaCl and 0.05% (w/v) DDM as eluent. Peak protein fractions after the size-exclusion chromatography were used for the protein reconstitution into liposomes according to a previously described method (Swier et al., 2016; ter Beek et al., 2011; Geertsma et al., 2008). Liposomes were composed of E. coli polar lipids supplemented with 1/3 (w/w) egg phosphatidylcholine with final protein-to-lipid ratio in liposomes 1:1000 (w/w).
 
@@ -129,24 +403,24 @@ Solitary FolT2 was purified using the same approach as for the complete ECF tra
 
 The co-reconstitution of multiple proteins was performed in the same manner as for individual reconstitution, always maintaining each protein-to-lipid ratio separately.
 
-## Transport assays
+### Transport assays
 
 Transport assays using radiolabelled substrates were performed as described previously with some modifications (Swier et al., 2016). Briefly, inclusion of 10 mM (unless otherwise indicated) Mg2+-ATP or Mg2+-ADP into proteoliposomes was achieved by three consecutive cycles of flash-freezing in liquid nitrogen and thawing at room temperature, followed by 11 passages of extrusion through a polycarbonate filter (Avestin) with the pore size 400 nm. The remaining external nucleotides were removed by ~15-fold dilution of the proteoliposomes in 50 mM potassium buffer (final volume of 7 mL) followed by centrifugation (45 min, 286286 × g at 4°C). Subsequently, the proteoliposomes were resuspended in 50 mM potassium phosphate pH 7.5 to a protein concentration of 1.25–2.5 µg/mL. Substrate uptake assays were performed at 30°C with stirring and initiated by adding the transported substrate (mixture of 5 nM radiolabelled and 95 nM non-radiolabelled substrate). For folate transport assays folic acid [3,5,7,9 -3H] sodium salt (American Radiolabelled Chemicals) and for pantothenate transport assays pantothenic acid, D-[2,3-3H] sodium salt (American Radiolabelled Chemicals) were used. At given time intervals, 200 µL of the reaction mixture was withdrawn and diluted in ice cold 50 mM potassium phosphate pH 7.5, followed by immediate collection of the proteoliposomes by filtration over pre-wetted cellulose nitrate filters. Subsequently, filters were washed with 2 mL of 50 mM potassium buffer, dried for at least 1 hr at 80°C and dissolved in 5 mL of Filter Count scintillation liquid (Perkin Elmer). The radioactivity trapped inside the proteoliposomes was determined with a Perkin Elmer Tri-carb 2800TR Scintillation counter.
 
-## Expression and purification of nanobodies
+### Expression and purification of nanobodies
 
 For nanobody generation, a llama (Lama glama) was immunised as in reference (Pardon et al., 2014) with 800 µg ECF-PanT which had been reconstituted in liposomes consisting of an E. coli polar lipids-phosphatidylcholine (3:1 w/w ratio) mixture as descibed above, using a protein-to-lipid ratio of 1:125 (w/w). A phage display library of nanobodies modified by introducing a C-terminal His6 and EPEA tags via PCR was prepared from peripheral blood lymphocytes, and the open reading frames of the nanobodies were cloned as SapI digested fragments in a Golden Gate variant of pMESy4 (GenBank KF415192) and subsequently transformed to E. coli TG1 to establish a library of 7E9 independent Nb clones. The phage display selections were performed using either solid-phase immobilised ECF-PanT proteoliposomes or was captured on anti-Strep-tag mAbs coated Maxisorp plates. 21 nanobody families were identified that specifically had bound the ECF-PanT protein, one of which included the nanobody selected for crystallisation and structure determination (nanobody CA14381 or Nb81).
 
 The nanobodies were expressed in the periplasm of E. coli strain WK6 (su-), following methods described previously (Pardon et al., 2014). Briefly, 1 L cultures in Terrific Broth were grown to an OD600 of 1.0–1.2 and induced with 1 mM isopropyl-b-D-thiogalactoside (IPTG). Cells were harvested after overnight growth at 25°C, and periplasmic extract prepared using TES (Tris EDTA Sucrose) buffer. Nanobodies were purified from the periplasmic extract by Ni-Sepharose column. The nanobody was eluted from the Ni-Sepharose column using an elution buffer containing 50 mM potassium phosphate pH 7.5, 150 mM NaCl and 300 mM imidazole. Subsequently, the imidazole in the nanobody fraction was removed by using desalting column (GE Healthcare).
 
-## Co-Purification of ECF-PanT with the nanobody
+### Co-Purification of ECF-PanT with the nanobody
 
 The purified nanobody was mixed with ECF-PanT that had been purified by Ni-Sepharose chromatography as described above, and the mixture was applied to a gel filtration column (Superdex 200 10/300, GE Healthcare), using a buffer containing 50 mM Tris HCl pH 7.5, 150 mM NaCl and 0.05% (w/v) DDM, as described above. The fractions containing the purified complex were directly concentrated to 5-6 mg/mL by the use a concentrating device (Vivaspin 500, Sartorius, molecular weight cut off 100 kDa) and used for crystallisation.
 
-## Crystallisation
+### Crystallisation
 
 Initial crystallisation conditions were screened using 5 mg/mL of ECF-PanT-Nanobody 81 complex mixed with 5 mM MgATPɣS, at 5°C using the MemGold and MemGold2 HT-96 solutions (Molecular Dimensions, UK) in a sitting-drop setup with a Mosquito robot (TTP Labtech, UK) with drop ratios of 100 nL protein and 100 nL precipitating solution. The crystals were found in the G9 condition (70 mM sodium citrate, pH 4.5 and 22% (v/v) PEG300) of the MemGold2 screen. Using this condition, the crystallisation was set up in a bigger volume (2 μL protein and 2 μL precipitating solution) in 24-well hanging drop vapor diffusion plates combined with a streak seeding technique. Crystallisation plates were incubated at 5°C and rod-shaped crystals appeared within 2 weeks. Crystals were harvested from the drops, cryo-protected with a solution containing 70 mM sodium citrate, pH 4.5 and 40% (v/v) PEG300, followed by flash-freezing in liquid nitrogen.
 
-## Data collection and structure determination
+### Data collection and structure determination
 
 Diffraction data for the Ecf PanT-Nanobody crystals were collected at 100 K at Diamond Light Source beamline I24 with the highest diffraction limit of 2.8 Å resolution. The crystal belongs to space group P1 (unit cell parameters: a = 97.290 Å, b = 110.470 Å, c = 110.500 Å, α=89.00o, β=102.27o, ɣ=102.24o). Data sets were indexed, integrated and scaled using the programs XDS (Kabsch, 2010) and molecular replacement was carried out with PHASER MR (Kabsch, 2010). Data collection and refinement statistics are summarised in Table 1. The apo ECF-FolT2 structure of L. delbruckii (PDB code 5JSZ) (Swier et al., 2016) was used as a search model for the EcfA, EcfA’ and EcfT subunits. However, attempts to use the published PanT structure of L. brevis (PDB code 4RFS) (Zhang et al., 2014) to find the position of the PanT subunit failed. To overcome this problem and to reduce possible bias, Rosetta-based MR was used (DiMaio et al., 2011). The refinement was performed with Phenix refine (Adams et al., 2010), with the model building done with COOT (Emsley et al., 2010).

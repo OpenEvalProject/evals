@@ -60,6 +60,104 @@ Many studies have demonstrated that lncRNAs are involved in several physiologica
 
 In this review, attention is focused on the role of lncRNAs in adipogenesis and the regulation of adipose tissue function (Table 1). Further information on the lncRNA role in adipocyte biology and metabolism can be found in other recent review articles (Chen et al., 2018; Sun and Lin, 2019).
 
+**Table 1.**
+ Size and accession number of cited lncRNAs involved in adipogenesis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Homo sapiens</th>
+      <th>Mus musculus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blnc1</td>
+      <td>759 nt URS0000DBDC4C_9606</td>
+      <td>965 nt URS0000D77FA2_10090</td>
+    </tr>
+    <tr>
+      <td>Lnc-BATE1</td>
+      <td></td>
+      <td>894 nt URS000075C5E3_10090</td>
+    </tr>
+    <tr>
+      <td>AK079912</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>LncBATE10</td>
+      <td></td>
+      <td>1808 nt URS000075F077_10090</td>
+    </tr>
+    <tr>
+      <td>MIAT</td>
+      <td>10,194 nt URS00007E4AF8_9606</td>
+      <td>9163 nt URS0000760956_10090</td>
+    </tr>
+    <tr>
+      <td>LINC01119*</td>
+      <td>1210 nt URS000075CEA4_9606</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LINC02202 *</td>
+      <td>2863 nt URS000075A437_9606</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NONMMUG024827</td>
+      <td>N.D</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>H19*</td>
+      <td>2.362 nt URS0000812128_960</td>
+      <td>2286 nt URS0000767B73_10090</td>
+    </tr>
+    <tr>
+      <td>ASMER-1</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>ASMER-2</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>Plnc1</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>SRA</td>
+      <td>875 nt URS00001A8152_9606</td>
+      <td>829 nt URS00003EA2D2_10090</td>
+    </tr>
+    <tr>
+      <td>ADINR</td>
+      <td>2252 nt URS0000CCE086_9606</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HOTAIR*</td>
+      <td>2364 nt URS000075C808_9606</td>
+      <td>2222 nt URS000075BAE8_10090</td>
+    </tr>
+    <tr>
+      <td>PVT1*</td>
+      <td>1957 nt URS00008E3A67_9606</td>
+      <td>3319 nt URS000077AEFF_10090</td>
+    </tr>
+  </tbody>
+</table>
+
+_*These lncRNAs have alternative transcripts.N.D. Not Detected in RNA database (https://rnacentral.org)._
+
 ## Chromatin modification and remodeling
 
 During the transcription phase, chromatin remodeling plays a crucial role in generating an open status (euchromatin), which is accessible to polymerases and transcriptional factors. Chromatin status can be modified by chromatin remodeling enzymes, which fall into two classes: ATP-dependent chromatin remodeling complexes and covalent histone modifiers (Figure 2 Panel A).

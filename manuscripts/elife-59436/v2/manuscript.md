@@ -46,37 +46,792 @@ We expected that the social condition would elicit greater response as compared 
 
 ## Results
 
-## Preliminary analysis: demonstrating high mother-infant synchrony during the ‘social’ condition and increase in salivary oxytocin levels following administration
+### Preliminary analysis: demonstrating high mother-infant synchrony during the ‘social’ condition and increase in salivary oxytocin levels following administration
 
 To validate our procedure, we first examined whether synchrony levels (see Materials and methods for synchrony coding) were indeed higher in the social compared to the unavailable and unresponsive conditions, to ascertain that this condition exposed mothers to high levels of synchrony. As expected, a repeated measures ANOVA [F(1.16,25.56)=49.16, p<0.001] revealed that stimuli in the Social condition included significantly more synchrony (Mean = 0.298, SD = 0.194, 95% CI [0.219, 0.377]) compared to the Unavailable (Mean = 0.015, SD = 0.063, 95% CI [−0.011, 0.041]) and Unresponsive (Mean = 0.00, SD = 0.00) conditions (Figure 1), validating our paradigm. This effect for the social condition was supported by extremely strong evidence from a Bayesian repeated measures ANOVA conducted for social synchrony in the three maternal conditions (BFincl = 5.547e+11).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig1-v2.jpg)
+
+**Figure 1.:** Mother-infant synchrony occurred more during face-to-face interaction in the social maternal condition compared to the unavailable and unresponsive maternal conditions. All effects were Greenhouse-Geisser corrected. Error bars represent standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** 2 × 3 Repeated measures ANOVA revealed a significant PBO-OT × Time interaction effect, PBO-OT main effect and Time main effect, showing marked increase in OT level following OT administration. In the placebo condition, no such increase was observed. All effects were Greenhouse-Geisser corrected. Error bars represent standard error of the mean.
+
 Next, to validate the OT manipulation, we tested whether peripherally-measured OT levels were indeed higher after OT administration. A 2 × 3 (PBO-OT × Time) repeated measures ANOVA on mother salivary oxytocin levels (pg/mL) showed a significant PBO-OT × Time interaction effect [F(1.1,24.09)=10.01, p<0.01], PBO-OT main effect [F(1,22)=10.46, p<0.01] and Time main effect [F(1.09,23.86)=11.03, p<0.01]. As expected, following OT administration mothers showed a marked increase in OT levels (Mean = 826.75, SD = 1135.25, 95% CI [362.795, 1290.705]) compared to the baseline (Mean = 21.49, SD = 13.61, 95% CI [15.928, 27.052]) and to the recovery samples (Mean = 193.86, SD = 303.56, 95% CI [69.801, 317.919]). Similarly, Bayesian analysis showed extreme evidence for PBO-OT*Time interaction effect (BF = 197.08), as well as very strong evidence for PBO-OT (BF = 62.62) and Time (BF = 169.17) main effects (Figure 1—figure supplement 1—source data 1). In contrast, no significant increase in peripheral OT was observed following PBO administration (Figure 1—figure supplement 1).
 
-## fMRI whole brain analysis
+### fMRI whole brain analysis
 
 To examine brain regions associated with our conditions, a whole-brain three factorial ANOVA (Maternal Condition × Self-Other × PBO-OT) was calculated within BrainVoyager software. The analysis revealed a significant, FDR corrected, Maternal Condition main effect. A 200 voxels cluster size was used to extract volumes of interest (VOIs) from all regions that demonstrated significantly differential activity. The ANOVA revealed a widespread network of activations across the insula, superior-frontal and temporal areas in the cortex. Regions showing differential activations across the three maternal conditions included the cingulate gyrus, bilateral insula, bilateral frontal lobe areas, bilateral STG to TP, bilateral parahippocampal gyrus, bilateral anterior cerebellum, bilateral basal ganglia-putamen, occipital lobe areas and right cuneus (see Table 1, Figure 2, Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig2-v2.jpg)
+
+**Figure 2.:** Figures representing activations from 3-factorial ANOVA 'maternal condition' main effect (FDR corrected, Cluster threshold 200 voxels) including the cingulate gyrus, bilateral insula, bilateral frontal lobe areas, bilateral STG to TP, bilateral parahippocampal gyrus, bilateral anterior cerebellum, bilateral basal ganglia- putamen, occipital lobe areas and right cuneus. STG, superior temporal gyrus; TP, temporal pole.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Four views of the Maternal condition main effect whole brain map, presented on 3D T1 image. Figures representing activations from 3-factorial ANOVA 'maternal condition' main effect (FDR corrected, Cluster threshold 200 voxels). These are identical to Figure 2 and added for additional localization information.
+
+**Table 1.**
+ Coordinates of activation peaks (whole brain ANOVA results).Whole brain Coordinates are in MNI space. p<0.05 false discovery rate (FDR). L, left; R, right; BA, Brodmann’s area; STG, superior temporal gyrus; TP, temporal pole.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Anatomical area</th>
+      <th rowspan="2">BA</th>
+      <th rowspan="2">F (2,44)</th>
+      <th rowspan="2">p</th>
+      <th rowspan="2">Cluster size</th>
+      <th colspan="3">Cluster peak voxel</th>
+    </tr>
+    <tr>
+      <th>x</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>'Maternal Condition' main effect</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cingulate gyrus</td>
+      <td>31</td>
+      <td>8.47</td>
+      <td>&lt;0.001</td>
+      <td>389</td>
+      <td>12</td>
+      <td>−22</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>R TP-STG-insula</td>
+      <td>41</td>
+      <td>94.49</td>
+      <td>&lt;0.00001</td>
+      <td>84971</td>
+      <td>54</td>
+      <td>−25</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>L TP-STG-insula</td>
+      <td>41</td>
+      <td>88.30</td>
+      <td>&lt;0.00001</td>
+      <td>85828</td>
+      <td>−54</td>
+      <td>−22</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>R superior frontal gyrus</td>
+      <td>6</td>
+      <td>25.15</td>
+      <td>&lt;0.00001</td>
+      <td>8150</td>
+      <td>58</td>
+      <td>-1</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>L superior frontal gyrus</td>
+      <td>6</td>
+      <td>23.99</td>
+      <td>&lt;0.00001</td>
+      <td>9609</td>
+      <td>−27</td>
+      <td>-7</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>Bilateral supplementary motor cortex</td>
+      <td>6</td>
+      <td>23.74</td>
+      <td>&lt;0.00001</td>
+      <td>10983</td>
+      <td>9</td>
+      <td>5</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>R orbitofrontal</td>
+      <td>11</td>
+      <td>9.82</td>
+      <td>&lt;0.0005</td>
+      <td>955</td>
+      <td>21</td>
+      <td>38</td>
+      <td>−11</td>
+    </tr>
+    <tr>
+      <td>L dorsolateral/prefrontal cortex</td>
+      <td>9</td>
+      <td>8.31</td>
+      <td>&lt;0.001</td>
+      <td>318</td>
+      <td>−33</td>
+      <td>41</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>R occipital cortex</td>
+      <td>18</td>
+      <td>12.24</td>
+      <td>&lt;0.0001</td>
+      <td>1304</td>
+      <td>12</td>
+      <td>−79</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>L occipital cortex</td>
+      <td>18</td>
+      <td>8.27</td>
+      <td>&lt;0.001</td>
+      <td>572</td>
+      <td>−21</td>
+      <td>−94</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>R cuneus</td>
+      <td>19</td>
+      <td>16.18</td>
+      <td>&lt;0.00001</td>
+      <td>3038</td>
+      <td>24</td>
+      <td>−82</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>L fusiform</td>
+      <td>37</td>
+      <td>8.96</td>
+      <td>&lt;0.001</td>
+      <td>689</td>
+      <td>−36</td>
+      <td>−64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>R parietal lobule</td>
+      <td>5</td>
+      <td>21.85</td>
+      <td>&lt;0.00001</td>
+      <td>9305</td>
+      <td>27</td>
+      <td>−43</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>L parietal lobule</td>
+      <td>5</td>
+      <td>18.17</td>
+      <td>&lt;0.00001</td>
+      <td>9723</td>
+      <td>−30</td>
+      <td>−40</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>R basal ganglia- putamen</td>
+      <td></td>
+      <td>15.60</td>
+      <td>&lt;0.00001</td>
+      <td>4316</td>
+      <td>18</td>
+      <td>11</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>L basal ganglia- putamen</td>
+      <td></td>
+      <td>17.28</td>
+      <td>&lt;0.00001</td>
+      <td>3046</td>
+      <td>−21</td>
+      <td>-4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>R paraippocampal gyrus</td>
+      <td></td>
+      <td>14.15</td>
+      <td>= 0.00001</td>
+      <td>1575</td>
+      <td>36</td>
+      <td>−40</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>L parahippocampal gyrus</td>
+      <td></td>
+      <td>12.38</td>
+      <td>&lt;0.0001</td>
+      <td>2712</td>
+      <td>−33</td>
+      <td>−40</td>
+      <td>−14</td>
+    </tr>
+    <tr>
+      <td>R cerebellum</td>
+      <td></td>
+      <td>15.32</td>
+      <td>&lt;0.00001</td>
+      <td>1603</td>
+      <td>30</td>
+      <td>−64</td>
+      <td>−26</td>
+    </tr>
+    <tr>
+      <td>L cerebellum</td>
+      <td></td>
+      <td>14.32</td>
+      <td>= 0.00001</td>
+      <td>2686</td>
+      <td>−30</td>
+      <td>−61</td>
+      <td>−26</td>
+    </tr>
+    <tr>
+      <td>Social&gt;Unavailable</td>
+      <td></td>
+      <td>T (22)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R TP-STG-insula</td>
+      <td>41</td>
+      <td>12.07</td>
+      <td>&lt;0.00001</td>
+      <td>66205</td>
+      <td>63</td>
+      <td>−22</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>L STG-insula</td>
+      <td>41</td>
+      <td>11.18</td>
+      <td>&lt;0.00001</td>
+      <td>69734</td>
+      <td>−54</td>
+      <td>−22</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>R superior frontal gyrus</td>
+      <td>6</td>
+      <td>7.41</td>
+      <td>&lt;0.00001</td>
+      <td>4134</td>
+      <td>60</td>
+      <td>5</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>L superior frontal gyrus</td>
+      <td>6</td>
+      <td>7.79</td>
+      <td>&lt;0.00001</td>
+      <td>6967</td>
+      <td>−42</td>
+      <td>2</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Bilateral supplementary motor cortex</td>
+      <td>6</td>
+      <td>5.64</td>
+      <td>= 0.00001</td>
+      <td>7116</td>
+      <td>-3</td>
+      <td>-1</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>R occipital cortex areas</td>
+      <td>18</td>
+      <td>4.67</td>
+      <td>= 0.0001</td>
+      <td>2281</td>
+      <td>12</td>
+      <td>−79</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>R parietal lobule</td>
+      <td>40</td>
+      <td>5.16</td>
+      <td>&lt;.00005</td>
+      <td>4024</td>
+      <td>48</td>
+      <td>−28</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>L parietal lobule</td>
+      <td>40</td>
+      <td>4.69</td>
+      <td>= 0.0001</td>
+      <td>3031</td>
+      <td>−42</td>
+      <td>−40</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>R basal ganglia- putamen</td>
+      <td></td>
+      <td>5.39</td>
+      <td>&lt;0.00005</td>
+      <td>4028</td>
+      <td>15</td>
+      <td>8</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>L basal ganglia- putamen</td>
+      <td></td>
+      <td>5.51</td>
+      <td>= 0.00001</td>
+      <td>3673</td>
+      <td>−21</td>
+      <td>-1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>R cerebellum</td>
+      <td></td>
+      <td>4.80</td>
+      <td>&lt;0.0001</td>
+      <td>1283</td>
+      <td>30</td>
+      <td>−64</td>
+      <td>−26</td>
+    </tr>
+    <tr>
+      <td>L cerebellum</td>
+      <td></td>
+      <td>4.29</td>
+      <td>&lt;0.0005</td>
+      <td>1349</td>
+      <td>−30</td>
+      <td>−61</td>
+      <td>−26</td>
+    </tr>
+    <tr>
+      <td>Social&gt;Unresponsive</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R TP-STG-insula</td>
+      <td>41</td>
+      <td>10.36</td>
+      <td>&lt;0.00001</td>
+      <td>63180</td>
+      <td>60</td>
+      <td>2</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>L TP-STG-insula</td>
+      <td>41</td>
+      <td>9.65</td>
+      <td>&lt;0.00001</td>
+      <td>70134</td>
+      <td>−54</td>
+      <td>−22</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>R superior frontal gyrus</td>
+      <td>6</td>
+      <td>6.05</td>
+      <td>&lt;0.00001</td>
+      <td>7539</td>
+      <td>45</td>
+      <td>2</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>L superior frontal gyrus</td>
+      <td>6</td>
+      <td>6.40</td>
+      <td>&lt;0.00001</td>
+      <td>12392</td>
+      <td>−42</td>
+      <td>-1</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Bilateral supplementary motor cortex</td>
+      <td>6</td>
+      <td>6.97</td>
+      <td>&lt;0.00001</td>
+      <td>13949</td>
+      <td>-6</td>
+      <td>8</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>L dorsolateral prefrontal cortex</td>
+      <td>9</td>
+      <td>4.15</td>
+      <td>&lt;0.0005</td>
+      <td>495</td>
+      <td>−33</td>
+      <td>41</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>R occipital cortex areas</td>
+      <td>18</td>
+      <td>4.77</td>
+      <td>&lt;0.0005</td>
+      <td>2042</td>
+      <td>−12</td>
+      <td>−55</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>R parietal lobule</td>
+      <td>5</td>
+      <td>6.44</td>
+      <td>&lt;0.00001</td>
+      <td>8766</td>
+      <td>27</td>
+      <td>−43</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>L parietal lobule</td>
+      <td>40</td>
+      <td>5.87</td>
+      <td>&lt;0.00001</td>
+      <td>10104</td>
+      <td>−33</td>
+      <td>−37</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>R basal ganglia- putamen</td>
+      <td></td>
+      <td>4.39</td>
+      <td>&lt;0.0005</td>
+      <td>2136</td>
+      <td>21</td>
+      <td>2</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>L basal ganglia- putamen</td>
+      <td></td>
+      <td>5.00</td>
+      <td>= 0.00005</td>
+      <td>1539</td>
+      <td>−21</td>
+      <td>-4</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>R cerebellum</td>
+      <td></td>
+      <td>4.31</td>
+      <td>&lt;0.0005</td>
+      <td>956</td>
+      <td>30</td>
+      <td>−61</td>
+      <td>−26</td>
+    </tr>
+    <tr>
+      <td>L cerebellum</td>
+      <td></td>
+      <td>4.83</td>
+      <td>&lt;0.0001</td>
+      <td>1875</td>
+      <td>−30</td>
+      <td>−61</td>
+      <td>−23</td>
+    </tr>
+    <tr>
+      <td>Unresponsive&gt; Unavailable</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R STG</td>
+      <td>41</td>
+      <td>7.482</td>
+      <td>&lt;0.00001</td>
+      <td>3127</td>
+      <td>54</td>
+      <td>−10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>L STG</td>
+      <td>41</td>
+      <td>6.528</td>
+      <td>&lt;0.00001</td>
+      <td>413</td>
+      <td>−45</td>
+      <td>−19</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
 To examine the origin of the maternal condition main effect, three planned contrasts were used: Social (Self+Other+OT+PBO) > Unavailable (Self+Other+ OT+PBO) (Figure 3A, Figure 3—figure supplement 1) and Social (Self+Other+OT+PBO)> Unresponsive (Self+Other+OT+PBO) (Figure 3B, Figure 3—figure supplement 2). As seen in Figure 3, both contrasts elicited activations in the temporal and frontal cortices including the STG to TP, the insula, and the superior frontal gyrus, in addition to activations in subcortical structures in the basal ganglia (the putamen and the globus pallidus) and in the cerebellum, which were significantly higher in the Social compared to the other conditions, supporting our first hypothesis. The contrast of Unresponsive (Self+Other+OT+PBO) > Unavailable (Self+Other+ OT+PBO) was examined as well.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Figures represent regions within post hoc contrasts (Social>Unavailable; Social>Unresponsive, respectively) conducted to further examine the significant maternal condition main effect found in the whole brain three factorial ANOVA. Note that similar areas were elicited in both contrasts. This highlights the extensive activity along regions ranging from the insula, STG to TP and areas in the frontal cortex under the social condition. Subcortical structures in the basal ganglia and the cerebellum were also activated in both contrasts. Results are FDR corrected with Cluster threshold of 200. Brain regions are defined in Table 1. ACC, anterior cingulate; STG, superior temporal gyrus.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Four views of the Social>Unavailable contrast whole brain maps, presented on 3D T1 image, (FDR corrected, Cluster threshold 200 voxels). This is identical to Figure 3A and added for additional localization information.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Views of the Social>Unavailable contrast whole brain maps, presented on 3D T1 image, (FDR corrected, Cluster threshold 200 voxels). This is identical to Figure 3A and added for additional localization information.
 
 No significant, FDR corrected, results were found for Self-Other or PBO-OT main effects. All activations for all contrasts can be seen in Table 1.
 
-## Oxytocin effects on ROIs activation
+### Oxytocin effects on ROIs activation
 
 In order to examine the seven preregistered regions of interest within the maternal caregiving network, a factorial repeated measures ANOVA (ROI × Maternal Condition × Self-Other × PBO-OT) was performed on the beta values extracted from each of the ROIs. A significant main effect of ROI was found (Table 2). Importantly, no main effect of PBO-OT was found, indicating that the network was not significantly globally modified by OT administration. Bayesian analysis indicated strong evidence against system level effects of OT (BF = 0.052). Similarly, no significant main effect of Self-Other was found with moderate (BF = 0.131) evidence for an absence of an effect (Table 2—source data 1). No significant effect of Maternal Condition was found. Similarly, no ROI× PBO-OT interaction effect was found. No four-way interaction was found. All analysis results are presented in Table 2.
+
+**Table 2.**
+ Results of 4 factors repeated measures ANOVA (ROI × Maternal Condition × Self-Other × PBO- OT) including seven preregistered ROIs defined as the maternal caregiving network.Table 2—source data 1.Results of analysis of effects within a 4 factors Bayesian repeated measures (ANOVA ROI× Maternal Condition× Self-Other× PBO-OT).BFincl is calculated using the Baws factor approach across all matched models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>df</th>
+      <th>F score</th>
+      <th>P</th>
+      <th>Eta2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ROI main effect***</td>
+      <td>3.65, 80.24</td>
+      <td>20.63</td>
+      <td>&lt;0.001</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Self-Other main effect</td>
+      <td>1, 22</td>
+      <td>0.54</td>
+      <td>0.471</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Maternal Condition main effect</td>
+      <td>1.76, 38.63</td>
+      <td>2.35</td>
+      <td>0.12</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>PBO-OT main effect</td>
+      <td>1,22</td>
+      <td>0.01</td>
+      <td>0.945</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>ROI × PBO-OT interaction</td>
+      <td>3.19, 70.14</td>
+      <td>0.24</td>
+      <td>0.881</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>ROI × Maternal Condition interaction *</td>
+      <td>5.36, 117.85</td>
+      <td>2.7</td>
+      <td>0.021</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>ROI × Self-Other interaction ***</td>
+      <td>3.45, 75.87</td>
+      <td>18.73</td>
+      <td>&lt;0.001</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>PBO-OT × Maternal Condition interaction**</td>
+      <td>2, 43.89</td>
+      <td>6.92</td>
+      <td>0.002</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>PBO-OT × Self-Other interaction</td>
+      <td>1, 22</td>
+      <td>0.69</td>
+      <td>0.415</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Maternal Condition × Self-Other interaction</td>
+      <td>1.67, 36.82</td>
+      <td>0.31</td>
+      <td>0.697</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>ROI × PBO-OT × Maternal Condition interaction</td>
+      <td>5.13, 112.93</td>
+      <td>0.95</td>
+      <td>0.452</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>ROI × PBO-OT × Self-Other interaction</td>
+      <td>2.79, 61.45</td>
+      <td>0.27</td>
+      <td>0.832</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>ROI × Maternal Condition × Self-Other interaction</td>
+      <td>5.71, 125.81</td>
+      <td>1.40</td>
+      <td>0.222</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>PBO-OT × Maternal Condition × Self-Other interaction</td>
+      <td>1.72, 37.94</td>
+      <td>0.4</td>
+      <td>0.644</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>ROI × PBO-OT × Maternal Condition × Self-Other interaction</td>
+      <td>5.53, 121.74</td>
+      <td>0.63</td>
+      <td>0.697</td>
+      <td>0.03</td>
+    </tr>
+  </tbody>
+</table>
+
+_Bayesian analysis of ROI effects. Four factor Bayesian repeated measures ANOVA (ROI × Maternal Condition × Self- Other × PBO- OT). In the table are results of 4 factors repeated measures ANOVA (ROI× Maternal Condition× Self-Other× PBO-OT). All results are Greenhouse-Geisser corrected. OT, oxytocin; PBO, placebo; *, p<0.05; **, p<0.01; ***, p<0.001._
 
 Contrary to our hypothesis, we did not find a Self-Other main effect. A significant Self-Other × ROI interaction effect was found (Table 2), indicating differential responsivity to Self-Other conditions across the network. Indeed, almost all (6/7) of the maternal caregiving network ROIs showed a differential response to self vs. other- stimuli. Sensitivity to Self-Other distinction was also found in the DMN (See Appendix 1; Appendix 1—figures 1, 2; Appendix 1—tables 1, 2 for full self-other analysis details).
 
 Interaction effect for Maternal condition × ROI was found (Table 2). Post hoc repeated measures ANOVA conducted in each of the ROIs (Table 3) revealed significant maternal condition main effect in the insula that is driven by high responses to social (Mean = 0.05, SD = 0.19, 95% CI [−0.028, 0.128]) compared to unavailable (Mean = −0.05, SD = 0.18, 95% CI [−0.123, 0.024]) and to unresponsive conditions (Mean = −0.08, SD = 0.17). In the parahippocampal gyrus this main effect was driven by a high response to unavailable (Mean = 0.10, SD = 0.15, 95% CI [0.039, 0.161]) and unresponsive (Mean = −0.01, SD = 0.16, 95% CI [−0.055, 0.075]) compared to social (Mean = −0.04, SD = 0.22, 95% CI [−0.129, 0.049]).
 
+**Table 3.**
+ Results of significant ROI × Maternal Condition interaction effect within a repeated measures ANOVA (ROI × Maternal Condition × Self-Other × PBO- OT) separately for each of the preregistered ROIs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">Maternal caregiving network</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Insula</th>
+      <th>ACC</th>
+      <th>TP</th>
+      <th>Amygdala</th>
+      <th>VTA</th>
+      <th>PHG</th>
+      <th>NAcc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">Maternal Condition main effect, df (2,44)</td>
+    </tr>
+    <tr>
+      <td>F score</td>
+      <td>6.31</td>
+      <td>1.82</td>
+      <td>2.63</td>
+      <td>0.99</td>
+      <td>1.92</td>
+      <td>7.32</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>0.006ψ</td>
+      <td>0.176</td>
+      <td>0.089</td>
+      <td>0.376</td>
+      <td>0.167</td>
+      <td>0.002ψ</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Eta2</td>
+      <td>0.22</td>
+      <td>0.08</td>
+      <td>0.11</td>
+      <td>0.04</td>
+      <td>0.00</td>
+      <td>0.25</td>
+      <td>0.06</td>
+    </tr>
+  </tbody>
+</table>
+
+_In the table post hoc analysis of significant interaction done separately for each of the preregistered ROIs. All results are Greenhouse-Geisser corrected. OT, oxytocin; PBO, placebo; ACC, anterior cingulate cortex; NAcc, nucleus accumbans; PHG, parahippocampal gyrus; TP, temporal pole; VTA, ventral tegmental area. *, p<.05; ψ, Bonferroni correction for multiple comparisons._
+
 Critically, our main finding was defined by an interaction effect of Maternal Condition× PBO-OT in the maternal caregiving network (Table 2, Figure 4A). This was validated with a Bayesian Analysis indicating that the addition of ROI to the model (ROI × Maternal Condition × PBO-OT) had a BF = 0.0009 indicating very strong evidence for a lack of interaction with ROI (Table 2—source data 1). Post hoc tests revealed significant attenuation of brain response to the social condition after OT administration (t = 2.28, p=0.033), while such differences were not found in brain response to the Unavailable (t = −1.48, p>0.05) or to the Unresponsive conditions (t = −0.48, p>0.05). Maternal Condition× PBO-OT interactions for each of the maternal caregiving network ROIs are presented in Figure 4B–F for demonstration purposes. Parallel analyses of 3 factors repeated measures ANOVA Maternal Condition × Self-Other × PBO- OT was performed on both the DMN and visual system used to test the specificity of this response to the maternal caregiving network. In both the DMN and the visual system, no significant effect of Maternal Condition × PBO-OT interaction was found (see Appendix 1, Appendix 1—figure 3, and Appendix 1—tables 3, 4). This reinforces the evidence for the specificity of the OT and social condition interaction in the maternal caregiving network.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig4-v2.jpg)
 
-**Figure 4.:** Maternal Condition × PBO-OT.(A) A significant interaction effect of Maternal Condition× PBO-OT was found for the maternal network. This was driven by attenuation in brain response to the social condition after oxytocin administration. Brain response to the Unavailable and Unresponsive Maternal conditions did not differ between the two scans. (B-F) Interaction effects of Maternal Condition × PBO-OT in seven preregistered ROIs of the maternal brain shown for demonstration purposes only. Bars depict Standard error of the mean. OT, Oxytocin; PBO, placebo; PHG, parahippocmpal gyrus; ACC, Anterior cingulate; TP, Temporal pole; VTA, ventral tegmental area.
+**Figure 4.:** (A) A significant interaction effect of Maternal Condition× PBO-OT was found for the maternal network. This was driven by attenuation in brain response to the social condition after oxytocin administration. Brain response to the Unavailable and Unresponsive Maternal conditions did not differ between the two scans. (B-F) Interaction effects of Maternal Condition × PBO-OT in seven preregistered ROIs of the maternal brain shown for demonstration purposes only. Bars depict Standard error of the mean. OT, Oxytocin; PBO, placebo; PHG, parahippocmpal gyrus; ACC, Anterior cingulate; TP, Temporal pole; VTA, ventral tegmental area.
 
-## Within subject correlation (WSC)
+### Within subject correlation (WSC)
 
 Finally, we wished to explore the temporal consistency of activation patterns in the maternal network ROIs across the two scans for the three maternal conditions. For this, we used a Within Subject Correlation (WSC) approach for each participant between the oxytocin and placebo scans for each of the three maternal conditions. A three factorial repeated measures ANOVA (ROI × Maternal Condition × Self-Other) revealed a significant main effect of ROI [F (4.35, 95.59)=3.85, p=0.005], and Maternal Condition [F (1.96, 43.18)=5.33, p=0.009]. Post hoc comparisons revealed significantly stronger WSC under the Social condition (Mean = 0.13, SD = 0.11, 95% CI [0.085, 0.175]) compared to the Unresponsive condition (Mean = 0.02, SD = 0.10, 95% CI [−0.021, 0.061]) (t = 3.07, pbonf = 0.017) (Figure 5A,B, Figure 5—figure supplement 1). No other main effects or interactions were significant. Furthermore, we computed a Bayesian repeated measures ANOVA (ROI × Maternal Condition × Self-Other) and found strong evidence against inclusion of the Self-Other factor (BF = 0.005) (Figure 5—source data 1). Since no significant self-other main effects, nor self-other × maternal condition interactions were found, we averaged the ‘self’ and ‘other’ variables within each condition and ROI. In the DMN, no significant effect of maternal condition or Self-Other or interaction between them was found (see Appendix 1, Appendix 1—figure 4.).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig5-v2.jpg)
+
+**Figure 5.:** It was calculated for each subject by Pearson’s correlation for the BOLD time course of each condition between the OT and PBO runs. (A) 7 × 3 repeated measures ANOVA (maternal caregiving network ROIs × Maternal Condition) revealed a significant main effect of ROI and Maternal Condition but no interaction. Bayesian analysis indicated strong evidence for the absence of ROI × Condition interaction. Under the social maternal condition, the WSC was higher compared to the unresponsive maternal condition. (B) WSC under the social, unavailable and unresponsive conditions for each of the ROIS are presented for demonstration purposes only. Bars depict Standard error of the mean. ACC, Anterior cingulate; NAcc, Nucleus accumbens; PHG, parahippocmpal gyrus; TP, temporal pole; VTA, Ventral tegmental area. comparisons between ISC under the social and unresponsive conditions for each of the ROIS are presented for demonstration purposes only. Bars depict Standard error of the mean. OT, oxytocin; PBO, placebo; ACC, Anterior cingulate; NAcc, Nucleus accumbens; PHG, parahippocmpal gyrus; TP, temporal pole; VTA, Ventral tegmental area.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59436/elife-59436-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Bars depict Standard error of the mean.
 
 Finally, an exploratory, post-hoc analysis was conducted to test brain-behavior coupling between mother-infant synchrony and child social engagement measured during a separate observation in the home ecology and neural activations in the social condition. We specifically looked for correlations with the ‘social’ condition that mirrors the mother-infant social interaction patterns in their natural habitat. Pearson’s correlations showed significant associations between activations in the VTA, ACC, and insula and mother-child behavioral patterns (see Appendix 1, Appendix 1—figure 5, Appendix 1—table 5). However, these findings should be treated with caution due to the low number of participants.
 
@@ -114,13 +869,13 @@ Future work could rigorously test the cross-generational transmission of human s
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 The initial sample included thirty-five postpartum mothers who were recruited through advertisements in various parenting online forums. Following recruitment, mothers underwent a brief phone screening for MRI scanning and postpartum depression using the Edinburgh Postnatal Depression Scale (Cox et al., 1987). Cutoff for joining the study was EPDS score of 8 and below (score above nine indicates minor depression). Next, mothers were invited to a psychiatric clinic to be tested by a psychiatrist prior to OT administration. During this visit, mothers were interviewed using the Structured Clinical Interview for the DSM-IV (SCID) to assess current and past psychiatric disorders. None of participants met criteria for a major or minor depressive episode during the perinatal period, 97% did not meet criteria for any diagnosable psychopathology, and 86% did not meet criteria for any diagnosable psychopathology disorder during their lifetime. All participants in the study were married, cohabitated with the infant's father, were of middle-or upper-class socioeconomic status, and completed at least some college.
 
 Of the 35 participants, three did not complete a single scan (one due to medical problems and two due to claustrophobia). After examining the quality of the data six mothers were excluded due to excessive head movement artifacts (movements ≥ 3 mm). In additional three participants, we identified unexplained noise in the signal, found by contrasting the visual conditions vs rest. All nine subjects were removed before analysis of the experimental effects. The final sample included twenty-three mothers (mean age = 28.8 years, SD = 4.7; EPDS mean score = 2.48, SD = 2.66) of 4–8 month-old infants (mean age = 5.78 months, SD = 1.25) who underwent scanning twice (46 scans). The study was approved by the Bar-Ilan University's IRB and by the Helsinki committee of the Sourasky medical center, Tel Aviv (Ethical approval no. 0161–14-TLV). All participants signed an informed consent. Subjects received a gift certificate of 700 NIS (~200 USD) for their participation in all four phases of the study (diagnosis, home visit, and two imaging sessions).
 
-## Procedure
+### Procedure
 
 Following psychiatric diagnosis, the study included three sessions. In the first, families were visited at home, several episodes of mother–infant interactions were videotaped, and mothers completed self-report measures.
 
@@ -132,46 +887,46 @@ In the second and the third sessions, mothers participated in brain scanning at 
 
 **Figure 6.:** (A) Experimental procedure. Mothers and infants were recruited 4-7 months post-partum and videotaped during a home-visit in the first session. Video vignettes of interactions were used as fMRI stimuli. During the second and third sessions mothers administered oxytocin or placebo before participating in brain scanning, in a randomized, placebo-controlled, double-blind, two-period crossover design. On average two weeks elapsed between scans. (B) Experimental paradigm. Mothers were presented with six video vignettes of self and other (fixed control stimuli) mother-infant interactions depicting three maternal conditions: Unresponsive- no interaction with the baby, mother does not respond to the baby (shown in red), Unavailable- minimal interaction, mother is busy, but respond to the baby when he/she signals (shown in yellow) and Social-mother and infant are engage in a peek-a-boo face-to-face social interaction (shown in green). Clips lasted 1 min each and were previewed by rest with fixation period of 1 min. A rest with fixation periods of alternately 15-18 seconds was presented between clips. Order of self-other and maternal conditions were counterbalanced between the two scans (PBO/OT).
 
-## Oxytocin administration and salivary oxytocin collection and measurement
+### Oxytocin administration and salivary oxytocin collection and measurement
 
 Mothers were asked to self-administer 24 IU of either oxytocin (Syntocinon Nasalspray, Novartis, Basel, Switzerland; three puffs per nostril, each containing 4 IU) or placebo. The placebo was custom-designed by a commercial compounding pharmacy to match drug solution without the active ingredient. The same type of standard pump-actuated nasal spray was used for both treatments. Three saliva samples were collected by passive drooling into a tube prior to inhaling oxytocin or placebo (baseline); 10–15 min after administration (post administration); and at the end of fMRI session (recovery). All samples were kept chilled and stored at −20°C. The concentration of OT was determined by Cayman-OT ELISA kit (Cayman Chemicals, Ann Arbor, Michigan, USA). Consistent with prior research we used ELISA (enzyme-linked immunosorbent assay), a method commonly used for analyzing hormones in saliva (Gordon et al., 2013; Rassovsky et al., 2019). In order to prepare the sample for measurement, samples underwent the following: 1. Freeze-thaw three cycles: freeze at −80°C and thaw at 4°C to precipitate the mucus; 2. Centrifugations at 1500 g (4000 rpm) for 30 min; and 3. The supernatant was transferred into clean tube, and stored at −20°C until assayed. Concentration of OT in these samples was determined according to the manufacturer's kit instructions. The inter-assay coefficients of samples and controls were less than 18.7%, in the rage reported by the manufacture.
 
-## MRI scans
+### MRI scans
 
-## Data acquisition
+#### Data acquisition
 
 Magnetic Resonance Imaging (MRI) data was collected using a 3T scanner (SIEMENS MAGNETOM Prisma syngo MR D13D, Erlangen, Germany) located at the Tel Aviv Sourasky Medical Center. Scanning was conducted with a 20-channel head coil for parallel imaging. Head motion was minimized by padding the head with cushions, and participants were asked to lie still during the scan. High-resolution anatomical T1 images were acquired using magnetization prepared rapid gradient echo (MPRAGE) sequence: TR = 1860 ms, TE = 2.74 ms, FoV = 256 mm, Voxel size = 1×1 × 1 mm, flip angle = 8 degrees. Following, functional images were acquired using EPI gradient echo sequence. TR = 3000 ms, TE = 35 ms, 44 slices, slice thickness = 3 mm, FOV = 220 mm, Voxel size = 2.3×2.3 × 3 mm, flip angle = 90 degrees. In total 170 volumes were acquired over the course of the ‘maternal condition’ paradigm. Visual stimuli were displayed to subjects inside the scanner, using a projector (Epson PowerLite 74C, resolution = 1024 × 768), and were back-projected onto a screen mounted above subjects’ heads, and seen by the subjects via an angled mirror. The stimuli were delivered using ‘Presentation’ software (http://www.neurobs.com).
 
-## fMRI task
+#### fMRI task
 
 The three maternal conditions paradigm and fMRI sequence began about 50 min after intranasal Oxytocin/Placebo administration. During scanning, participants observed six naturalistic videos of 60 s each depicting themselves interacting with their babies (‘self’ condition) and similar videos of an unfamiliar standard mother interacting with her baby (‘other’ condition). Between videos a fixation of a black cross over a gray background was presented. Fixation duration was alternated between 15 and 18 s. The order of conditions was counterbalanced across subjects and scans. While in the scanner mothers were asked to watch the movies attentively. Video clips were played using VLC media-player (version 2.2 for windows, VideoLAN, France).
 
-## fMRI analysis
+### fMRI analysis
 
-## Data preprocessing
+#### Data preprocessing
 
 Data preprocessing and data analysis were conducted using BrainVoyager QX software package 20.6 (Brain Innovation, Maastricht, The Netherlands, RRID: SCR_013057) (Goebel et al., 2006). The first three functional volumes, before signal stabilization, were automatically discarded by the scanner to allow for T1 equilibrium. Preprocessing of functional scans included 3D motion correction, slice scan time correction, spatial smoothing by a full width at half maximum (FWHM) 6 mm Gaussian kernel, and temporal high-pass filtering. The functional images were then manually aligned and co-registered with 2D anatomical images and incorporated into the 3D datasets through trilinear interpolation. The complete dataset was normalized into MNI (Montreal Neurological Institute) space (Evans et al., 1994).
 
-## Whole brain analysis
+#### Whole brain analysis
 
 Multi-subject general linear models (GLM) were computed with random effects, with separate subject predictors, in which the various blocks (videos or fixation) were defined as predictors and convoluted with a standard hemodynamic response predictor. Following, a whole brain, three factors (Maternal Condition × Self-Other × PBO-OT) repeated measures ANOVA was performed. Whole brain maps were created and corrected for false discovery rate (FDR) of q < 0.050 (Benjamini et al., 1995). For visualization of results, the group contrasts were overlaid on a MNI transformed anatomical brain scan.
 
 In order to examine the origin of the significant ‘maternal condition’ factor main effect, we computed group FDR corrected whole brain maps of the contrasts: social ≥ unavailable; social ≥ unresponsive; unavailable ≥ unresponsive. Effects in areas that were not included in our a priori Regions of Interest were reported for descriptive purposes only.
 
-## Regions-of-interest preregistration and analysis
+#### Regions-of-interest preregistration and analysis
 
 Region-of-interest (ROI) analysis was conducted on eight preregistered bilateral defined ROIs (https://osf.io/mszqj/?view_only=0daf10c02c984ead8929452edf44e550) including the amygdala, anterior cingulate (ACC), anterior insula, hippocampus/ parahippocampal gyrus, Temporal pole, VTA, NAcc (all together defined as the ‘maternal caregiving network’) and the DMN. ROI selection was a priori based on theory and literary meta-reviews (Abraham et al., 2016; Lindquist et al., 2016), and on pilot study of 4 subjects that completed similar paradigm and were not included in the current study. ROIs were defined functionally and anatomically, verified and validated by human brain database platforms: Talairach Daemon (Lancaster et al., 2000) and Neurosynth (Yarkoni et al., 2011), registered at the Open Science Framework prior to data analysis (OSF, 2020) and transformed into MNI space (Appendix 1—figure 6.). In addition, visual network was defined based on the Glasser atlas and analyzed as ‘task positive’ control to the maternal caregiving network (see Appendix 1 for details).
 
 Beta weights were extracted from ROIs and analyzed with a 7 × 3 × 2 × 2 (Maternal caregiving network ROIs × Maternal Condition × Self-Other × PBO-OT) repeated measures ANOVA using JASP (Version 0.9 for windows, JASP Team, 2018, RRID: SCR_015823). Thus, allowing to investigate main effects of oxytocin administration, and stimulus type and their interactions. In order to further examine the origin of main effects and interactions, simple effect analyses, Scheffé and Bonferroni post hoc tests were conducted. Null effects were analyzed using Bayesian methods (JASP) using default prior (Keysers et al., 2020). BFincl is calculated for repeated measures ANOVA’s using the Baws factor approach across all matched models.
 
-## Within subject correlation (WSC)
+#### Within subject correlation (WSC)
 
 In order to test the consistency of temporal patterns during different conditions, between oxytocin and placebo, we calculated a within-subject correlation (WSC) for each subject in each condition in each ROI. The WSC is the Pearson’s correlation for the BOLD time course of each condition (e.g. ‘Self-Social’) in a specific ROI, between the OT and PBO runs. Thus for each participant the correlation indicated how similar was the dynamics of the response in a specific ROI while watching an identical movie clip under the OT or the PBO conditions. To test differences between the temporal activation consistencies of the preregistered ROIs in the three conditions, a 7 × 3 × 2 (maternal caregiving ROI × Maternal Condition × Self-other) repeated measures ANOVA and post hoc tests were conducted. The same analysis was performed for the DMN. Next, we conducted Bayesian methods for the analyses of null effects.
 
-## Behavioral coding
+### Behavioral coding
 
 Mirco-level synchrony of the three conditions. To verify that the Social condition indeed was characterized by greater synchrony all video vignettes mothers observed in the scanner were micro-coded by trained coders on a computerized system (Mangold- Interact, Arnstorf, Germany, RRID: SCR_019254) in 3 s frames. Consistent with much prior research in our lab (Feldman and Eidelman, 2007; Feldman and Eidelman, 2003), four non-verbal categories of infant behavior were coded and each category included a set of mutually exclusive codes (an ‘uncodable’ code was added to each category): Affect (excitement, positive, neutral, medium-fussing, negative, relief after pressure), Gaze (joint attention, to mother's face, to object or body part, scanning, gaze aversion), Vocalization (no vocalization, positive, neutral, regulatory, negative), and Movement (no movement, hand waving, leg kicking). Mother behavior was coded for Affect and Gaze. Synchrony was defined, consistent with our prior research, by conditional probabilities (infant in state A given mother in state A), indicating episodes when mother and infant were both in social gaze and shared positive affect (Feldman and Eidelman, 2007; Granat et al., 2017). In addition, mother-infant synchrony during a free interaction in the home environment was coded using the Coding Interactive Behavior (CIB) Manual (Feldman, 1998), a global rating system (see Appendix 1).
 
-## Statistical analysis
+### Statistical analysis
 
 For statistical analysis JASP (Version 0.9 for windows, JASP Team, 2018, RRID: SCR_015823), SPSS (SPSS statistics Version 25.0, IBM Corp. Armonk, NY) and R software (Version 3.5.3, R Core Team, 2017, Vienna, Austria, RRID: SCR_019096) were used.

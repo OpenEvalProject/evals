@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Cellular ATP that is consumed to perform energetically expensive tasks must be replenished by new ATP through the activation of metabolism. Neuronal stimulation, an energetically demanding process, transiently activates aerobic glycolysis, but the precise mechanism underlying this glycolysis activation has not been determined. We previously showed that neuronal glycolysis is correlated with Ca 2+ influx, but is not activated by feedforward Ca 2+ signaling (Díaz-García et al., 2021a). Since ATP-powered Na + and Ca 2+ pumping activities are increased following stimulation to restore ion gradients and are estimated to consume most neuronal ATP, we aimed to determine if they are coupled to neuronal glycolysis activation. By using two-photon imaging of fluorescent biosensors and dyes in dentate granule cell somas of acute mouse hippocampal slices, we observed that production of cytoplasmic NADH, a byproduct of glycolysis, is strongly coupled to changes in intracellular Na + , while intracellular Ca 2+ could only increase NADH production if both forward Na + /Ca 2+ exchange and Na + /K + pump activity were intact. Additionally, antidromic stimulation-induced intracellular [Na + ] increases were reduced >50% by blocking Ca 2+ entry. These results indicate that neuronal glycolysis activation is predominantly a response to an increase in activity of the Na + /K + pump, which is strongly potentiated by Na + influx through the Na + /Ca 2+ exchanger during extrusion of Ca 2+ following stimulation.
+Cellular ATP that is consumed to perform energetically expensive tasks must be replenished by new ATP through the activation of metabolism. Neuronal stimulation, an energetically demanding process, transiently activates aerobic glycolysis, but the precise mechanism underlying this glycolysis activation has not been determined. We previously showed that neuronal glycolysis is correlated with Ca2+ influx, but is not activated by feedforward Ca2+ signaling (Díaz-García et al., 2021a). Since ATP-powered Na+ and Ca2+ pumping activities are increased following stimulation to restore ion gradients and are estimated to consume most neuronal ATP, we aimed to determine if they are coupled to neuronal glycolysis activation. By using two-photon imaging of fluorescent biosensors and dyes in dentate granule cell somas of acute mouse hippocampal slices, we observed that production of cytoplasmic NADH, a byproduct of glycolysis, is strongly coupled to changes in intracellular Na+, while intracellular Ca2+ could only increase NADH production if both forward Na+/Ca2+ exchange and Na+/K+ pump activity were intact. Additionally, antidromic stimulation-induced intracellular [Na+] increases were reduced >50% by blocking Ca2+ entry. These results indicate that neuronal glycolysis activation is predominantly a response to an increase in activity of the Na+/K+ pump, which is strongly potentiated by Na+ influx through the Na+/Ca2+ exchanger during extrusion of Ca2+ following stimulation.
 
 ## Introduction
 
@@ -26,6 +26,22 @@ It seems highly plausible that glycolysis activation in neurons could be driven 
 
 There are several ion-ATPases (also called ion pumps) that regulate neuronal Na+ and Ca2+ changes (Figure 1A). Na+ is handled exclusively by the Na+/K+-ATPase (or Na+/K+ pump), which uses 1 ATP molecule to export 3 Na+ and import 2 K+ across the plasma membrane. Ca2+ is handled by a diverse set of active transporters, including the plasma membrane Ca2+-ATPase (PMCA), which exports 1 Ca2+ across the plasma membrane per ATP (Niggli et al., 1982; Thomas, 2009), and the sarco-/endo-plasmic reticulum Ca2+-ATPase (SERCA), which pumps 2 Ca2+ into the endoplasmic reticulum lumen per ATP (Tran et al., 2009). Aside from ATPases, Ca2+ is also regulated by the Na+/Ca2+-exchanger (NCX) (Lee et al., 2009), a secondary active transporter that uses the electrochemical energy stored in the plasma membrane Na+ gradient (built by the Na+/K+ pump) to actively export 1 Ca2+ by importing 3 Na+. Any increase to neuronal Na+ or Ca2+ will increase the activity of their respective ion transporters.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon showing the NCX transport modes activated by different external [Na+] and [Ca2+] conditions and their expected effects on the activities of ion pumps and the production of NADHCYT from glycolysis activation. Reverse NCX transport (left schematic) increases intracellular [Ca2+], which increases the activities Ca2+ pumps and Ca2+ transport into mitochondria (magenta arrows). Forward NCX transport (right schematic) increases intracellular [Na+], which increases the activity of the Na+/K+ pump (orange arrows). The bracket below each schematic indicates the NCX transport mode activated by the external solution changes in (C). Transport stoichiometries are not indicated. Abbreviations: Na+/Ca2+-exchanger (NCX), Na+/K+-ATPase (NKA), plasma membrane Ca2+-ATPase (PMCA), sarco-/endo-plasmic reticulum Ca2+-ATPase (SERCA), mitochondrial Ca2+ uniporter (MCU), mitochondrial Na+/Ca2+-exchanger (mNCX), endoplasmic reticulum (ER). (B) Representative fluorescence lifetime (LT) traces of Peredox (top trace) and RCaMP (bottom trace) from a DGC bathed in ACSF. Antidromic stimulation was delivered at the time point indicated by the arrow along the RCaMP trace, which transiently increases both NADHCYT and Ca2+CYT. (C) Fluorescence LT traces of Peredox (top) and RCaMP (bottom) from a DGC showing how external Na+ and Ca2+ changes affect NADHCYT and Ca2+CYT. The bars above the Peredox trace indicate the external [Na+] and [Ca2+]. NADHCYT was decreased by switching the bath solution from ACSF (147 mM Na+ and 2 mM Ca2+) to a solution with nominally 0 Na+ and 0 Ca2+ (cyan shading). Ca2+CYT was elevated by applying 0.5 mM Ca2+ with 0 Na+ to activate reverse NCX transport (magenta shading), and NADHCYT decreased further. NADHCYT was strongly increased after activating forward NCX transport by the subsequent removal of external Ca2+ and application of 147 mM Na+ (orange shading). (D) Box plots of the fluorescence LTs of Peredox (top) and RCaMP (bottom) showing the effects of the external Na+ and Ca2+ changes performed in panel C across many DGCs (n=53). The external bath conditions for each box plot are listed at the bottom of the RCaMP plot in chronological order from left to right. The colors of each box plot correspond to the colors indicated in (C). The mean Peredox LT values in each condition were: 1.63±0.06 ns in ACSF, 1.52±0.05 ns in 0 Na+ and 0 Ca2+, 1.46±0.09 ns in 0 Na and 0.5 mM Ca2+, and 1.72±0.06 ns in 147 mM Na+ and 0 Ca2+. The mean RCaMP LT values in each condition were: 0.88±0.05 ns in ACSF, 0.88±0.05 ns in 0 Na+ and 0 Ca2+, 1.52±0.15 ns in 0 Na+ and 0.5 mM Ca2+, and 0.93±0.07 ns in 147 mM Na+ and 0 Ca2+. (E) Changes to the Peredox LT relative to the 0 Na+ and 0 Ca2+ condition, after either a Ca2+CYT elevation from reverse NCX transport (Ca, black box, magenta filled diamonds), an influx of Na+ due to forward NCX transport (Na after Ca, black box, orange filled diamonds), or application of Na+ without forward NCX (Na no Ca, gray box, orange open diamonds). The mean Peredox LT changes were: –0.07±0.08 ns (n=53) for Ca2+CYT elevation, 0.20±0.05 ns (n=53) for Na+ influx via forward NCX, and 0.07364±0.04565 ns (n=19) for Na+ application without forward NCX. Statistical significance between ‘Ca’ and ‘Na after Ca’ is indicated by a paired Wilcoxon test and between ‘Na after Ca’ and ‘Na no Ca’ by a Mann-Whitney test. (F) Effect of external Na+ on the return of Ca2+CYT to baseline following a reverse NCX transport-mediated Ca2+ influx. The mean decay of the RCaMP LT following the Ca2+CYT increase (normalized to the peak RCaMP LT value) is shown when the external solution contained either 147 mM Na+ (solid line, orange SD shading, n=53) or 0 Na+ (dashed line, green SD shading, n=49). Decay data in 147 mM Na+ were from the same DGCs as in (D) and (E), while data in 0 Na+ were from the same DGCs as Figure 1—figure supplement 1B; a representative trace of this experiment is shown in Figure 1—figure supplement 1A.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative traces showing the effects of external [Na+] and [Ca2+] changes on Peredox (top) and RCaMP (bottom) lifetimes (LTs). The bars above the Peredox trace indicate the external [Na+] and [Ca2+]. After removing external Na+ and Ca2+ (cyan shading), Ca2+CYT was increased by applying 0.5 mM Ca2+ in 0 Na+ to stimulate reverse NCX transport (magenta shading). Following the Ca2+CYT increase, external Ca2+ was removed without re-addition of external Na+ (green shading) to follow the NADHCYT and Ca2+CYT levels without stimulating forward NCX transport. (B) Box plots of the fluorescence LTs of Peredox (top) and RCaMP (bottom) summarizing the effects of the external [Na+] and [Ca2+] changes performed in (A) across many DGCs. These experiments were performed either in the absence (black boxes, filled symbols, n=49) or presence of thapsigargin (blue boxes, open symbols, n=24). The external solution conditions for each box plot are listed at the bottom of the RCaMP plot in chronological order from left to right. The coloring of the data corresponds to the shading in (A). The mean Peredox and RCaMP LTs in each external condition are shown in Figure 1—figure supplement 1—source data 1. (C) Representative fluorescence LT traces of Peredox (top) and RCaMP (bottom) from a DGC showing the effect of external Na+ removal for 20 min (cyan shading) and re-addition (orange shading) in the absence of a Ca2+CYT increase on NADHCYT. The external [Na+] and [Ca2+] are indicated by bars above the Peredox trace.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative fluorescence lifetime (LT) traces of Peredox (top) and RCaMP (bottom) from a DGC bathed in ACSF showing transient increases to NADHCYT and Ca2+CYT induced by antidromic stimulation before and after application of 1 μM thapsigargin. Antidromic stimulation events are indicated by arrows below the RCaMP trace. (B) Scatterplot of the antidromic stimulation-induced transient changes in Peredox LT (∆Peredox) and RCaMP LT (∆RCaMP) before (ACSF, gray circles) or in the presence of 1 μM thapsigargin (TG, magenta squares) across many DGCs (n=52). (C) Box plots showing the effect of thapsigargin (TG) on the ratio of ∆Peredox to ∆RCaMP from the same DGCs as (B). The mean ∆Peredox/∆RCaMP was: 0.22±0.05 in ACSF and 0.25±0.06 with 1 μM TG. Statistical significance of a paired sample t-test is indicated.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative fluorescence lifetime (LT) trace of mito-RCaMP from a DGC showing how Ca2+MITO is affected by changes to the external [Na+] or [Ca2+] (indicated by the bars above the trace). Following the removal of external Na+ and Ca2+ (cyan shading), addition of 0.5 mM Ca2+ in the absence of Na+ (magenta shading) to stimulate reverse NCX transport increased Ca2+MITO. The mito-RCaMP LT partially returned to baseline from the subsequent removal of external Ca2+ to turn off reverse NCX transport (green shading) but did not return completely to baseline until external Na+ was applied (orange shading). (B) Box plots showing the changes in mito-RCaMP LT induced by the external [Na+] or [Ca2+] changes performed in (A), across many DGCs (n=37). The external [Na+] and [Ca2+] conditions for each box plot are listed along the bottom in chronological order from left to right. The coloring of the data corresponds to the shading in (A). The LT values for the ‘0 Na, 0 Ca (20 min)’ condition (green symbols) were taken 20 min after removing 0.5 mM external Ca2+ in the absence of external Na+ (i.e., at the end of the green shading in A). The mean mito-RCaMP LT values in each condition are listed in Figure 1—figure supplement 3—source data 1.
+
 Transient increases to neuronal cytoplasmic Ca2+ (Ca2+CYT) induced by excitation are positively correlated with transient increases in subsequent NADHCYT production (Díaz-García et al., 2017; Díaz-García et al., 2021a); in other words, stronger stimulations evoke larger increases to both Ca2+CYT and NADHCYT. At first glance, this positive correlation could be (mis)interpreted as glycolysis being driven primarily by an increase in the activities of Ca2+ pumps (PMCA and SERCA) as Ca2+ is pumped from the cytoplasm. However, this readout of neuronal NADHCYT and Ca2+CYT lacks information about stimulation-induced increases to intracellular Na+, which also likely covary with stimulation strength, so a contribution of increased Na+/K+ pump activity to glycolysis activation cannot be excluded.
 
 The Na+/K+ pump is primed to be the predominant driving force underlying neuronal glycolysis activation. Many reports estimate that the Na+/K+ pump consumes ~50% of total brain energy (Ames, 2000; Astrup et al., 1981; Engl and Attwell, 2015; Milligan and McBride, 1985; Whittam, 1962) and uses substantially more ATP than Ca2+ pumps both during neurotransmission and at rest (Attwell and Laughlin, 2001; Harris et al., 2012; Rolfe and Brown, 1997). Furthermore, since Ca2+CYT regulation in some neurons depends strongly on the NCX (Lee et al., 2009), a transient Ca2+CYT increase could indirectly elevate intracellular [Na+], which would potentiate any increase in Na+/K+ pump activity due to channel-mediated Na+ entry.
@@ -34,7 +50,7 @@ To shed light on the mechanism of neuronal glycolysis activation, we investigate
 
 ## Results
 
-## Cytoplasmic NADH production is strongly influenced by Na+, but not Ca2+
+### Cytoplasmic NADH production is strongly influenced by Na+, but not Ca2+
 
 We simultaneously monitored changes in neuronal metabolism and ion fluxes in DGC somas by expressing Peredox and RCaMP, two genetically encoded fluorescent biosensors that report NADH:NAD+ (NADHCYT) and free [Ca2+], respectively (Akerboom et al., 2013; Hung et al., 2011; Mongeon et al., 2016). Analyte binding to Peredox (NADH in competition with NAD+) or RCaMP (Ca2+) alters each sensor’s fluorescence lifetime (LT), the average time that the fluorophore spends in the excited state prior to its return to the ground state (Lakowicz, 2006). The fluorescence LTs of Peredox and RCaMP are increased (i.e., extended in average duration) by NADHCYT or Ca2+CYT increases, respectively.
 
@@ -56,23 +72,35 @@ We have previously shown that electrical stimulation increases DGC mitochondrial
 
 In summary, these ion substitution experiments show that neuronal NADHCYT production is closely coupled to the flux of Na+, and that a Ca2+CYT elevation is not sufficient to elevate NADHCYT regardless of whether it is pumped by SERCA, pumped by PMCA, or taken up into mitochondria via MCU. They also show that NADHCYT production is activated more strongly by conditions that favor forward NCX transport that exchanges Ca2+CYT for Na+, and that regulation of both DGC Ca2+CYT and Ca2+MITO depends on Na+. These observations suggest that neuronal glycolysis is both strongly coupled to the activity of the Na+/K+ pump and sensitive to Na+ import via forward NCX transport, which would become activated following an excitatory event where Ca2+CYT must be removed.
 
-## Malate-aspartate shuttle activity does not mask a Ca2+-induced increase to NADHCYT
+### Malate-aspartate shuttle activity does not mask a Ca2+-induced increase to NADHCYT
 
 The malate-aspartate shuttle (MAS) is a major pathway that recycles NADHCYT by transferring reducing equivalents from NADHCYT to mitochondria (McKenna et al., 2006; Satrústegui and Bak, 2015). MAS activity is activated by Ca2+CYT elevations but is reduced by Ca2+MITO elevations (Contreras and Satrústegui, 2009; Satrústegui and Bak, 2015), which likely means that neuronal excitation would cause a brief MAS activation followed by a longer inhibition, mirroring the Ca2+CYT and Ca2+MITO transient time courses (Contreras and Satrústegui, 2009). But the state of MAS activity in our ion substitution experiments was uncertain since reverse NCX transport produced prolonged increases to both Ca2+CYT and Ca2+MITO (Figure 1 and Figure 1—figure supplement 3), so it remained a possibility that Ca2+CYT activation of MAS could increase NADHCYT recycling and conceal any small increase to NADHCYT production due to increased activity of Ca2+ pumps. Therefore, we tested if a Ca2+CYT elevation could increase NADHCYT after MAS inhibition (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig2-v2.jpg)
 
-**Figure 2.:** CYT increase produced by elevated Ca2+CYT.(A) Representative fluorescence lifetime (LT) traces of Peredox (top) and RCaMP (bottom) from a DGC. External solution changes are indicated by the bars above the Peredox trace. The recording begins in ACSF (147 mM Na+ and 2 mM Ca2+), where the addition of 10 mM AOA strongly increases the Peredox LT. Addition of 1.5 mM pyruvate reverted the Peredox LT approximately back to baseline. Following this, external Na+ and Ca2+ were removed (cyan shading), which slightly decreased the Peredox LT. The addition of 0.5 mM Ca2+ in 0 Na+ to stimulate reverse NCX transport increased the RCaMP LT and further decreased the Peredox LT (magenta shading). Subsequently, the removal of external Ca2+ and re-addition of external Na+ to stimulate forward NCX transport (orange shading) increased the Peredox LT and brought the RCaMP LT back to baseline. (B) Box plots of the Peredox (top) and RCaMP (bottom) fluorescence LTs in the different external solution conditions performed in (A), across many DGCs (n=29). The external [Na+] and [Ca2+] condition after applying AOA and pyruvate is listed across the bottom in chronological order from left to right. The coloring of the data corresponds to the shading in A. The mean Peredox and RCaMP LTs in each external condition were (in ns): 1.50±0.04 in 0 Na+ and 0 Ca2+, 1.45±0.05 in 0 Na+ and 0.5 mM Ca2+, and 1.61±0.09 in 147 Na+ and 0 Ca2+. The mean RCaMP LTs were (in ns): 0.90±0.06 in 0 Na+ and 0 Ca2+, 1.49±0.20 in 0 Na+ and 0.5 mM Ca2+, and 0.91±0.07 in 147 Na+ and 0 Ca2+. (C) Relative change to the Peredox fluorescence LT induced by the addition of 0.5 mM Ca2+ in the absence of external Na+ to stimulate reverse NCX transport (Ca) or 147 mM Na+ in the absence of external Ca2+ to stimulate forward NCX transport (Na). The data are from the same DGCs as in (B). The mean ∆Peredox values were: –0.05±0.04 ns for ‘Ca’ and 0.11±0.07 ns for ‘Na’. Statistical significance from a paired Wilcoxon test is indicated.
+**Figure 2.:** (A) Representative fluorescence lifetime (LT) traces of Peredox (top) and RCaMP (bottom) from a DGC. External solution changes are indicated by the bars above the Peredox trace. The recording begins in ACSF (147 mM Na+ and 2 mM Ca2+), where the addition of 10 mM AOA strongly increases the Peredox LT. Addition of 1.5 mM pyruvate reverted the Peredox LT approximately back to baseline. Following this, external Na+ and Ca2+ were removed (cyan shading), which slightly decreased the Peredox LT. The addition of 0.5 mM Ca2+ in 0 Na+ to stimulate reverse NCX transport increased the RCaMP LT and further decreased the Peredox LT (magenta shading). Subsequently, the removal of external Ca2+ and re-addition of external Na+ to stimulate forward NCX transport (orange shading) increased the Peredox LT and brought the RCaMP LT back to baseline. (B) Box plots of the Peredox (top) and RCaMP (bottom) fluorescence LTs in the different external solution conditions performed in (A), across many DGCs (n=29). The external [Na+] and [Ca2+] condition after applying AOA and pyruvate is listed across the bottom in chronological order from left to right. The coloring of the data corresponds to the shading in A. The mean Peredox and RCaMP LTs in each external condition were (in ns): 1.50±0.04 in 0 Na+ and 0 Ca2+, 1.45±0.05 in 0 Na+ and 0.5 mM Ca2+, and 1.61±0.09 in 147 Na+ and 0 Ca2+. The mean RCaMP LTs were (in ns): 0.90±0.06 in 0 Na+ and 0 Ca2+, 1.49±0.20 in 0 Na+ and 0.5 mM Ca2+, and 0.91±0.07 in 147 Na+ and 0 Ca2+. (C) Relative change to the Peredox fluorescence LT induced by the addition of 0.5 mM Ca2+ in the absence of external Na+ to stimulate reverse NCX transport (Ca) or 147 mM Na+ in the absence of external Ca2+ to stimulate forward NCX transport (Na). The data are from the same DGCs as in (B). The mean ∆Peredox values were: –0.05±0.04 ns for ‘Ca’ and 0.11±0.07 ns for ‘Na’. Statistical significance from a paired Wilcoxon test is indicated.
 
 Representative fluorescence LT traces from a DGC show that Peredox LT was substantially increased by the application of AOA to block the shuttle’s aspartate aminotransferase enzyme (Figure 2A), as previously described, Díaz-García et al., 2017, which is consistent with an inhibition of NADHCYT recycling and consequent elevation of the cytoplasmic NADH:NAD+. This strong increase to Peredox LT, which approaches the upper end of its dynamic range, precludes the ability to measure further NADHCYT increases, so we applied exogenous pyruvate (1.5 mM) to promote the oxidation of NADH to NAD+ via lactate dehydrogenase and restore the Peredox LT approximately back to its baseline LT in ACSF. We then removed external Na+ and Ca2+, which decreased the Peredox LT from the AOA and pyruvate condition (Figure 2A); and then increased Ca2+CYT by applying 0.5 mM external Ca2+ in zero external Na+ to drive reverse NCX transport. We confirmed the Ca2+CYT increase from the increase to RCaMP LT, but the Ca2+CYT elevation still did not coincide with an increase to NADHCYT. Rather, NADHCYT decreased relative to the 0 Na+ 0 Ca2+ baseline (Figure 2B and C). This demonstrates that an increase to Ca2+CYT still fails to observably stimulate NADHCYT production even when NADHCYT recycling by the MAS is attenuated. Following the Ca2+CYT increase, we removed 0.5 mM external Ca2+ and re-applied external Na+ to activate forward NCX transport (Figure 2A), which increased the Peredox LT (Figure 2B and C). This shows again that NADHCYT production is coupled to the flux of Na+.
 
 Overall, these experiments argue against a concealment of Ca2+CYT-induced NADHCYT production by a Ca2+CYT activation of NADHCYT recycling via the MAS and indicates, once again, that an increase to Na+/K+ pump activity is the major driver of glycolysis.
 
-## Activation of glycolysis by Ca2+ is mediated by coupling between the Na+/Ca2+-exchanger and the Na+/K+ pump
+### Activation of glycolysis by Ca2+ is mediated by coupling between the Na+/Ca2+-exchanger and the Na+/K+ pump
 
 The increase to NADHCYT production by an influx of Na+ (Figure 1 and Figure 2) suggests that glycolysis activation in DGCs is strongly tied to an increase in the activity of the Na+/K+ pump. Also, the NADHCYT increase induced by external Na+ application was stronger if Ca2+CYT was elevated compared to when Ca2+CYT was not elevated (Figure 1E), meaning that forward NCX transport, which trades Ca2+CYT for Na+, can potentiate glycolysis activation. By considering these observations together with the apparent insensitivity of glycolysis to increases in Ca2+ pump activity, it seemed logical that a transient Ca2+CYT elevation would activate glycolysis predominantly by stimulating Na+ influx through forward NCX transport, which would then increase the activity of the Na+/K+ pump.
 
 We sought for a way to directly test how NADHCYT is affected by inhibition of the Na+/K+ pump or inhibition of forward NCX transport (Figure 3). Na+/K+ pumps are specifically inhibited by ouabain, although the rodent Na+/K+ pump α1-isozymes have relatively low sensitivity and require millimolar inhibitor concentrations for complete inhibition under physiological conditions (Blanco and Mercer, 1998; Marks and Seeds, 1978). Application of 2 mM ouabain to DGCs bathed in ACSF quickly led to Ca2+ overload and cell rupture (Figure 3—figure supplement 1), which made it impossible to measure how electrical stimulation-induced NADHCYT transients are affected by complete Na+/K+ pump inhibition. Clearly, the activity of the Na+/K+ pump must be substantial, even at rest, but achieving complete Na+/K+ pump inhibition under physiological neuronal conditions is challenging. DGCs bathed in ACSF were more tolerant to application of low-dose (5 μM) ouabain, which inhibits only the rodent Na+/K+ pump α2- and α3-isozymes that have higher inhibitor sensitivities (Blanco and Mercer, 1998), but the stimulation-induced NADHCYT transient was not eliminated (Figure 3—figure supplement 2). This result argues that in these cells, the α1 subunit is adequate to support the activation of glycolysis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cartoon depicting the expected effect of a local external Ca2+ puff on ion transport by the NCX and subsequent activation of the Na+/K+ pump. (Left) A pipette containing Ca2+ is placed near the soma of a DGC within a slice that is bathed in solution containing 40 mM Na+ and 0 Ca2+ solution. A brief pulse of positive pressure is applied to the pipette to transiently increase the local external [Ca2+] and stimulate reverse NCX transport (magenta arrows), leading to Ca2+ import and an increase to Ca2+CYT. (Right) In the aftermath of the puff, the local external [Ca2+] decreases as the small volume of puffed Ca2+ mixes with large volume of the 40 mM Na+ 0 Ca2+ bath solution, which leads to forward NCX transport that stimulates Na+ extrusion and an increase to Na+/K+ pump activity (orange arrows). Abbreviations: Na+/Ca2+-exchanger (NCX), Na+/K+-ATPase (NKA). (B–D) Representative fluorescence lifetime (LT) traces of Peredox (top traces) and RCaMP (bottom traces) from a DGC bathed in either 40 mM Na+ and 0 Ca2+ solution (B, Control), 0 Na+ and 0 Ca2+ to block forward NCX transport (C, 0 Na+), or in 40 mM Na+ and 0 Ca2+ with 5 mM ouabain to block the Na+/K+ pump (D, Ouabain). Puffs of Ca2+ were delivered at the timepoint indicated along the bottom of the RCaMP LT traces (magenta arrows). (E) Scatterplot of the Ca2+-puff-induced transient changes to the Peredox and RCaMP LTs of DGCs in 40 mM Na+ and 0 Ca2+ (Control, black circles, n=172), in 0 Na+ and 0 Ca2+ (0 Na+, white triangles, n=102), or in 40 mM Na+ and 0 Ca2+ with 5 mM ouabain (Ouabain, gray squares, n=114). The dashed line indicates where ∆Peredox=0. Analysis was restricted to recordings with transient RCaMP LT half-decay times <35 s. (F) Ratio of ∆Peredox to ∆RCaMP for the same Ca2+-puff-induced LT transients as in panel E, except excluding those recordings where the ∆RCaMP LT was <0.2 ns to avoid noisy ratio calculations due to small ∆RCaMP values. The dashed line indicates where ∆Peredox/∆RCaMP=0. The mean ∆Peredox/∆RCaMP in each condition was: 0.12±0.07 in 40 mM Na+ and 0 Ca2+ (Control, n=147), 0.01±0.02 in 0 Na+ and 0 Ca2+ (0 Na+, n=96), and 0.00±0.02 in 40 mM Na+ and 0 Ca2+ with 5 mM ouabain (Ouabain, n=99). Statistical significance from Mann-Whitney tests is indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative fluorescence lifetime traces of Peredox (top) and RCaMP (bottom) from a DGC bathed in ACSF. Synaptic stimulation of the afferent fibers in the absence of synaptic blockers (stim, indicated by the arrow at the bottom of the RCaMP trace) transiently increased Ca2+CYT and NADHCYT. Application of 2 mM ouabain irreversibly increased Ca2+CYT and ruptured the DGCs (cell rupture, arrow in the RCaMP trace).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Effect of low dose ouabain on synaptic stimulation-induced transients in the absence of synaptic blockers. (A) Representative fluorescence LT traces of Peredox (top) and RCaMP (bottom) from a DGC bathed in ACSF. The DGC was stimulated synaptically with an electrode placed in the afferent fibers at the timepoints indicated by the arrows along the bottom of the RCaMP LT trace. Application of 5 μM ouabain is indicated by the bar above the Peredox trace. Repetitive synaptic stimulations in ouabain often ruptured the DGCs (cell rupture, arrow in the RCaMP trace). (B) Scatterplot of the transient Peredox and RCaMP LT increases (n=34) induced by synaptic stimulation in ACSF (ACSF, gray circles) and in 5 μM ouabain (Ouab, orange squares). (C) The ∆Peredox/∆RCaMP ratio from synaptic stimulations in ACSF and with 5 μM ouabain, calculated from the same DGCs as in (B). The mean ∆Peredox/∆RCaMP in each condition was: 0.20±0.07 in ACSF and 0.19±0.04 in ouabain. Statistical significance from a paired Wilcoxon test is indicated. (D–F) Effect of low dose ouabain on antidromic stimulation-induced transients. (D) Representative fluorescence LT traces of Peredox (top) and RCaMP (bottom) from a DGC bathed in ACSF with synaptic blockers. The DGC was stimulated antidromically at the timepoints indicated by the arrows along the bottom of the RCaMP trace. Application of 5 μM ouabain is indicated by the bar above the Peredox trace. (E) Scatterplot of the transient Peredox and RCaMP LT increases (n=16) induced by antidromic stimulation in ACSF with synaptic blockers (ACSF, gray circles) and with 5 μM ouabain (Ouab, orange squares). (F) The ∆Peredox/∆RCaMP ratio from antidromic stimulations in ACSF and in 5 μM ouabain, calculated from the same DGCs as in (E). The mean ∆Peredox/∆RCaMP in each condition was: 0.18±0.07 in ACSF with synaptic blockers and 0.16±0.04 in ouabain. Statistical significance from a paired sample t-test is indicated.
 
 We successfully established a condition amenable to millimolar ouabain application by reducing the external [Na+] to 40 mM and removing external Ca2+ to prevent unintended reverse NCX transport. Stimulation-induced Ca2+CYT transients using an electrode were not possible for DGCs bathed in this condition, but we evoked similar Ca2+CYT transients by applying puffs of extracellular Ca2+ to transiently produce reverse-NCX transport (Figure 3A). A brief puff of Ca2+ to a DGC within a slice bathed in 40 mM Na+ and 0 Ca2+ (Figure 3B) induced a fast transient increase to the RCaMP LT, reflecting a fast increase to Ca2+CYT, followed by a transient increase to the Peredox LT, reflecting an increase to NADHCYT. This shows that a transient Ca2+CYT elevation can, indeed, activate glycolysis under these ionic conditions. But for a DGC within a slice that was instead bathed in zero external Na+ to prevent the NCX-mediated influx of Na+ in exchange for the elevated Ca2+CYT, a Ca2+ puff still evoked a fast Ca2+CYT transient but did not increase NADHCYT (Figure 3C). Similarly, the NADHCYT increase that would normally follow the Ca2+ puff was prevented for a DGC within a slice bathed with 5 mM ouabain to block Na+/K+ pumps (Figure 3D).
 
@@ -80,9 +108,17 @@ A scatter plot of the transient Peredox LT and RCaMP LT changes that were evoked
 
 These data demonstrate that Ca2+CYT can activate glycolysis in the DGC soma if it is traded for Na+ through forward NCX transport, which increases the activity of the Na+/K+ pump. The lack of Ca2+-puff-induced NADHCYT responses when either forward NCX transport or the Na+/K+ pump was blocked further substantiates that any increase in the activity of Ca2+ pumps has a negligible effect on glycolysis activation.
 
-## Antidromic stimulation-induced Na+ transients depend on Ca2+
+### Antidromic stimulation-induced Na+ transients depend on Ca2+
 
 The stimulation of NADHCYT production by Ca2+CYT through coupling between forward NCX transport and the Na+/K+ pump (Figure 3) indicates that Na+ influx during forward NCX transport can activate glycolysis. But how does the amount of Na+ imported by the NCX to extrude Ca2+CYT compare to the total Na+ influx induced by neuronal excitation? We investigated this by measuring intracellular [Na+] changes during electrical stimulation with and without Ca2+ entry (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cartoon depicting antidromic stimulation-induced Na+ and Ca2+ fluxes. Left, Control: Stimulation in ACSF triggers Na+ and Ca2+ influx through their respective voltage-gated Na+ and Ca2+ channels. Following the Ca2+CYT elevation, the NCX will import Na+ to drive Ca2+ extrusion. Both the Na+ influx through NaV and through the NCX contribute to the total intracellular [Na+] increase (blue arrows). Right, After CaV Block: Inhibiting Ca2+ influx through CaV (indicated by the red X) prevents Ca2+CYT elevation, which strongly reduces Na+ influx through the NCX. Abbreviations: voltage-gated Na+ channel (NaV), voltage-gated Ca2+ channel (CaV), Na+/Ca2+-exchanger (NCX). (B) Representative fluorescence traces showing antidromic stimulation-induced transient changes to SBFI ∆F/F (top) and RCaMP lifetime (LT) (bottom) from a DGC bathed in ACSF with synaptic blockers. The stimulation was delivered at the timepoint indicated by the arrow at the bottom of the RCaMP trace. The SBFI ∆F/F axis is inverted to illustrate an increase to [Na+] as an upward deflection. (C) Antidromic stimulation-induced transient changes to SBFI ∆F/F and RCaMP LT in the presence of 3 μM isradipine and 20 μM CdCl2 for the same DGC as in (B). The stimulation was delivered at the timepoint indicated by the arrow below the RCaMP trace. (D) Average, interpolated, antidromic stimulation-induced SBFI ∆F/F and RCaMP LT transients (n=13) before (ACSF, black trace and shading) and after CaV block (Israd+Cd2+, magenta trace and shading). The means are indicated by the solid line, SEM is indicated by the darker shading, and SD is indicated by the lighter shading. (E) Paired box plots showing the antidromic stimulation-induced peak transient SBFI ∆F/F amplitudes before (ACSF, black box) and after CaV block (Israd+Cd2+, magenta box) for the same DGCs as in (D). The mean peak SBFI ∆F/F values were: –0.29±0.07 in ACSF and –0.15±0.04 with Israd+Cd2+. Statistical significance from a paired sample t-test is indicated. (F) Paired box plots showing the ∆RCaMP LT before (ACSF, black box) after CaV block (Israd+Cd2+, magenta box) for the same DGCs as in (D) and (E). The mean ∆RCaMP LTs were: 0.30±0.13 ns in ACSF and 0.04±0.03 ns with Israd+Cd2+. Statistical significance from a paired sample t-test is indicated. (G) Scatterplot of antidromic stimulation-induced transient changes to SBFI ∆F/F against ∆RCaMP LT before (ACSF, gray circles) and after CaV block (Israd +Cd2+, magenta squares). Data are from the same DGCs as in (D–F).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81645/elife-81645-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative fluorescence traces of SBFI ∆F/F (top) and RCaMP lifetime (LT; bottom) from a DGC when stimulated synaptically in the absence of synaptic blockers (indicated by the arrow along the bottom of the RCaMP trace). The SBFI ∆F/F axis is inverted to illustrate an increase to intracellular [Na+] as an upward deflection. (B–C) Average, interpolated, transient changes to SBFI ∆F/F (top) and RCaMP LT (bottom) triggered by synaptic ((B), n=24) or antidromic ((C), n=48) stimulation. The stimulation was delivered at the time indicated by the arrow at the bottom of the RCaMP trace. The mean is shown as the solid line, SEM is the dark gray shading, and SD is the light gray shading. (D) Scatterplot of the peak transient SBFI ∆F/F against the transient ∆RCaMP LT in response to either synaptic stimulation (Synaptic, open squares) or antidromic stimulation (Antidromic, filled circles) from the same set of DGCs as in (B) and (C).
 
 We recorded stimulation-induced changes in intracellular [Na+] and Ca2+CYT simultaneously by loading SBFI (Harootunian et al., 1989), a Na+-sensitive fluorescence dye, into RCaMP-expressing DGCs via single-cell electroporation. Representative traces of the SBFI relative fluorescence intensity (∆F/F) and RCaMP LT from a DGC bathed in ACSF show that antidromic stimulation evoked a transient decrease to SBFI ∆F/F (note the inverted y-axis), reflecting an increase to [Na+], and a transient increase to RCaMP LT, reflecting an increase to Ca2+CYT (Figure 4B). SBFI ∆F/F transients were longer in duration than the RCaMP LT transient, regardless of whether they were evoked by antidromic stimulation or synaptic stimulation in the absence of synaptic blockers (Figure 4 and Figure 4—figure supplement 1), indicating that stimulation-induced intracellular [Na+] elevation outlasts Ca2+CYT elevation. A scatterplot of the transient changes to SBFI ∆F/F and RCaMP LT shows that intracellular [Na+] and Ca2+CYT changes are positively correlated when evoked by either stimulation paradigm (Figure 4—figure supplement 1D); while this is consistent with a positive dependence of intracellular [Na+] on Ca2+CYT, a positive correlation between [Na+] and Ca2+CYT increases would also be observed if neuronal stimulation evokes proportional yet independent changes to both ions.
 
@@ -94,7 +130,7 @@ A scatterplot of the antidromic stimulation-induced transient changes to SBFI �
 
 Glycolysis in neurons is transiently increased following stimulation (Díaz-García et al., 2017; Fox et al., 1988; Fox and Raichle, 1986). To understand the mechanism that drives this increase to glycolysis following neuronal electrical activity, we tested the responsiveness of NADHCYT to changes in intracellular Na+ and Ca2+CYT, which affect energy consumption by ion-ATPases. We have shown in hippocampal DGC somas that NADHCYT is strongly influenced by changes in intracellular Na+ and that activation of NADHCYT increases by Ca2+CYT is nearly completely dependent on ion transport coupling between the NCX and the Na+/K+ pump. This means that nearly all of the transient glycolysis increase following a stimulation is a response to an activation of the Na+/K+ pump to extrude the Na+ that enters either through Na+ channels or through the NCX to power active Ca2+ transport.
 
-## Neuronal glycolysis is strongly influenced by the Na+/K+ pump, but not by Ca2+ pumps
+### Neuronal glycolysis is strongly influenced by the Na+/K+ pump, but not by Ca2+ pumps
 
 Coupling between glycolysis and Na+/K+ pump activity has been reported across many tissues and cell types (Andersen and Marmarou, 1992; Balaban and Bader, 1984; Hasin and Barry, 1984; Hellstrand et al., 1984; James et al., 1996; James et al., 1999; Knull, 1978; Lipton and Robacker, 1983; Lynch and Balaban, 1987; Mercer and Dunham, 1981; Minakami et al., 1964; Paul et al., 1979; Paul, 1983; Proverbio and Hoffman, 1977; Weiss and Hiltbrand, 1985; Whittam et al., 1964; Whittam and Ager, 1965). Our lab previously reported a link between the activity of the Na+/K+ pump α3-isozyme and glycolysis activation in DGCs of acute mouse hippocampal slices: the potentiation to antidromic stimulation-induced NADHCYT production after increasing channel-mediated influx of Na+ with α-pompilidotoxin in the absence of external Ca2+ (i.e., when both Na+ influx through the NCX and Ca2+ influx through channels are blocked) could be reversed by strophanthidin at low micromolar concentrations (Díaz-García et al., 2021a). We have shown here in DGCs that NADHCYT production decreases with depletion of Na+ and increases with repletion of Na+ (Figure 1), which strongly suggests that the rate of neuronal glycolysis mirrors changes in intracellular [Na+] and in the activity of the Na+/K+ pump. Moreover, DGCs could not withstand complete Na+/K+ pump inhibition when bathed in ACSF (Figure 3—figure supplement 1), meaning that Na+/K+ pump activity is essential to counteract Na+ leak and/or influx through Na+-coupled transporters even when neurons are at rest.
 
@@ -104,7 +140,7 @@ The sensitivity of glycolysis to Ca2+ pump activity is less clear. The small inc
 
 Ca2+ pumps have an apparent K0.5 for Ca2+ activation of ~0.1 μM and relatively slow maximal turnover rates of ~100 s–1 (characteristic of ion pumps; Glitsch, 2001; Meyer et al., 2017), meaning that they are well suited for tuning the resting Ca2+CYT but not for regulating large dynamic Ca2+CYT increases (Caroni and Carafoli, 1981). It is likely that Ca2+ pump transport capacity would saturate quickly in response to the 0.3–1 μM increases in Ca2+ during some stimulations. If an increase to Ca2+ pump activity was the predominant driver of NADHCYT production, the saturation of their Ca2+ transport during larger Ca2+CYT increases would likely cause a ‘rounding off’ of the Peredox LT change for stimulations where RCaMP LT changes are >0.5 ns; but the near linearity of the ∆Peredox-∆RCaMP relationship for RCaMP LT changes of 0.05–1 ns (Díaz-García et al., 2017) argues against such a scenario.
 
-## The Ca2+CYT-dependence of aerobic glycolysis activation arises from ion transport coupling between the Na+/Ca2+-exchanger and the Na+/K+ pump
+### The Ca2+CYT-dependence of aerobic glycolysis activation arises from ion transport coupling between the Na+/Ca2+-exchanger and the Na+/K+ pump
 
 Our observations here that glycolysis activation in DGCs is strongly coupled to the activity of the Na+/K+ pump but not Ca2+ pumps was seemingly at odds with the ~70% reduction to antidromic stimulation-induced NADHCYT production by blocking Ca2+CYT elevation (Díaz-García et al., 2021a). However, the reduction to NADHCYT production is fully explained by the involvement of forward NCX transport in DGC Ca2+CYT regulation (Figure 1F; Lee et al., 2012) and by the close coupling between the ion transport of the NCX and the Na+/K+ pump.
 
@@ -120,13 +156,13 @@ Glycolysis does not appear to be influenced by intracellular [Na+] per se, but r
 
 We think that the absence of strong NADHCYT responses to Ca2+CYT increases when Na+ is unavailable for exchange via NCX (Figure 1 and Figure 3) is quite informative on how both ions influence glycolysis activation, even though it is true that the rapid ionic changes that occur through channels during neuronal activity following electrical stimulation might obey somewhat different rules than the slower ionic changes we are able to make by driving ion fluxes through a secondary ion transporter. Since we have determined that NADHCYT production is strongly increased by an influx of Na+ but not increased by large increases in Ca2+CYT (Figures 1—3) it is logical to infer that a transient increase to NADHCYT production following electrical stimulation is primarily coupled to the energy consumed to directly pump Na+ rather than to directly pump Ca2+. The amplitudes of RCaMP LT increases that we achieve with both the ion substitution experiments (Figure 1) and the Ca2+ puff experiments (Figure 3) are also similar to the typical amplitude of RCaMP LT increase when evoked by electrical stimulation (Figure 4 and Díaz-García et al., 2017; Díaz-García et al., 2021a), meaning that Ca2+CYT is increased to similar levels by all experimental paradigms regardless of their site of entry (i.e., channels or NCX).
 
-## Na+ entry via the Na+/Ca2+-exchanger contributes substantially to total Na+ entry in the soma
+### Na+ entry via the Na+/Ca2+-exchanger contributes substantially to total Na+ entry in the soma
 
 It seemed that stimulation-induced Na+ influx via the NCX could be substantial given that a transient Ca2+CYT increase could only activate glycolysis if both forward NCX transport and the Na+/K+ pump were active (Figure 3) and that blocking Ca2+CYT strongly reduces the NADHCYT response (Díaz-García et al., 2021a). The ~50% reduction to the stimulation-induced SBFI ∆F/F peak amplitudes after blocking Ca2+ entry confirmed that Na+ influx via forward NCX transport contributes greatly to the total Na+ influx in the soma (Figure 4). We think it is unlikely that the reduction to the [Na+] transient after blocking Ca2+ entry resulted from less Na+ entering through voltage-gated Ca2+ channels, since Na+ permeation through these channels is blocked by external Ca2+ with a Kd of ~1 µM (Almers and McCleskey, 1984; Tsien et al., 1987).
 
 It is interesting to note that the positive relationship between the amplitudes of stimulation-induced transient increases to NADHCYT and Ca2+CYT appears to intercept the origin (cf. Figure 2; Díaz-García et al., 2017) while the relationship between the amplitudes of transient intracellular [Na+] and Ca2+CYT increases does not (Figure 4—figure supplement 1). Perhaps weaker stimulations that evoke small increases to intracellular [Na+] without a measurable increase to Ca2+CYT have only very weak effects on glycolysis: it could be that smaller [Na+] increases have proportionally more clearance by diffusion through the cytoplasm (Hodgkin and Keynes, 1956; Pusch and Neher, 1988) or that the energy needed to regulate smaller [Na+] increases (without sustained Na+ influx through forward NCX transport) is mostly derived from ATP buffering systems known to compartmentalize near sites of high ATP turnover (Kültz and Somero, 1995; Lange et al., 2002; Ovádi and Saks, 2004; Wallimann et al., 1992), which could subsequently replenish their energy storage pools without large steady-state changes to glycolytic flux. Directly evaluating the role of these ATP buffering enzymes, that is, creatine kinase and adenylate kinase, in shaping the stimulation-induced transient glycolysis activation in neurons will be a key area for future exploration.
 
-## Estimation of neuronal stimulation-induced changes to intracellular [Na+] and Na+/K+ pump activity
+### Estimation of neuronal stimulation-induced changes to intracellular [Na+] and Na+/K+ pump activity
 
 SBFI calibration curves in rodent hippocampal neurons (Baeza-Lehnert et al., 2019; Diarra et al., 2001; Gerkau et al., 2019; Meier et al., 2006; Rose et al., 1999) reported apparent Na+ Kd values of 18–42 mM Na+. However, most were performed with ouabain concentrations of only 50–100 μM, well below the millimolar concentrations needed to fully inhibit the rodent Na+/K+ pump α1 isozyme under physiological conditions; the relatively high ouabain-resistance of rodent α1 pumps would also be strongly increased in calibration solutions that substitute external Na+ with high concentrations of K+ since external K+ competes with binding of the inhibitor to the pump’s externally accessible E2 conformation (Hansen and Skou, 1973; Kanai et al., 2021).
 
@@ -140,7 +176,7 @@ It must be noted that the proportional influence of NCX-mediated Na+ entry on gl
 
 NCX involvement in glycolysis activation could also vary in different neuronal compartments. Reported SBFI transient measurements indicate that antidromic stimulation-induced [Na+] changes in the soma are typically smaller than transients in the dendrites (Fleidervish et al., 2010; Kole et al., 2008). Measuring the ion and metabolite dynamics in dendrites will be an important step for understanding whether the mechanism of glycolysis activation in dendrites is similar to or different than the mechanism in somas.
 
-## On the mechanism of neuronal stimulation-induced aerobic glycolysis activation in somas
+### On the mechanism of neuronal stimulation-induced aerobic glycolysis activation in somas
 
 Based on our observations here and previously (Díaz-García et al., 2017; Díaz-García et al., 2021a) regarding neuronal stimulation-induced [Na+], Ca2+CYT, and NADHCYT dynamics in the soma, we can begin to compile a more comprehensive understanding of the mechanism underlying transient aerobic glycolysis activation in response to neuronal excitation.
 
@@ -152,23 +188,159 @@ Given the close coupling of the Na+/K+ pump to neuronal glycolysis, it will be e
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, M and F)</td>
+      <td>C57BL/6NCrl</td>
+      <td>Charles River</td>
+      <td>RRID:IMSR_CRL:27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.CAG.Peredox.WPRE.SV40</td>
+      <td>Mongeon et al., 2016</td>
+      <td></td>
+      <td>Addgene #73807</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.hSyn.RCaMP1h.WPRE.SV40</td>
+      <td>Akerboom et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV.hSyn.mito-RCaMP1h.WPRE.SV40</td>
+      <td>Díaz-García et al., 2021a</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isradipine</td>
+      <td>Abcam</td>
+      <td>Cat: ab120142, CAS: 75695-93-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX (6-Nitro-7- sulfamoylbenzo[f]quinoxaline-2,3-dione, Disodium Salt)</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Cat: N550005,CAS: 479347-86-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5 (D-(-)–2-Amino-5-phosphonopentanoic acid)</td>
+      <td>Abcam</td>
+      <td>Cat: ab120003,CAS: 79055-68-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: P1675CAS: 124-87-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CdCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: 202908,CAS: 10108-64-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-lysine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: P4832</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aminooxyacetate (O-(carboxymethyl)hydroxylamine hemihydrate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: C13408CAS: 2921-14-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyruvic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: 107360,CAS: 127-17-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat: sc-24017A,CAS: 67526-95-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ouabain</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: O3125,CAS: 11018-89-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SBFI K+ salt (fluorescent dye)</td>
+      <td>Ion Biosciences</td>
+      <td>Cat: 2022B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass capillaries, Borosilicate, standard wall, no filament, 4 in., O.D. 1.5 mm</td>
+      <td>WPI</td>
+      <td>Cat: 1B150-4</td>
+      <td>For microelectrodes and pipettes</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass coverslips, 12 mm circle No.1</td>
+      <td>VWR</td>
+      <td>Cat: 48366–251</td>
+      <td>For brain slice handling</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Experiments were performed using male and female wild-type mice (C57BL/6NCrl, Charles River Laboratories), which were housed in a barrier facility in individually ventilated cages with ad libitum access to standard chow (PicoLab 5053). All experiments followed approved IACUC protocols and the NIH Guide for the Care and Use of Laboratory Animals and Animal Welfare Act. All procedures were approved by the Harvard Medical Area Standing Committee on Animals.
 
-## Viral vectors
+### Viral vectors
 
 DNA constructs encoding Peredox, RCaMP, or mito-RCaMP biosensors were packaged into adeno-associated virus (AAV) vectors using either the Penn Vector Core at University of Pennsylvania or the Viral Core Facility at Children’s Hospital in Boston, MA. AAV vectors encoding RCaMP were also produced in our laboratory, as previously described (Kimura et al., 2019). The AAV8 serotype was used for Peredox and AAV9 for RCaMP and mito-RCaMP. AAVs were aliquoted and stored at –80°C.
 
-## Intracranial injections
+### Intracranial injections
 
 Postnatal day 1 or 2, mice were injected intracranially with AAV to express biosensors in the hippocampus (Díaz-García et al., 2021b). Mice were cryoanesthetized and injected with 150 nL AAV using an UltraMicroPump III (WPI, Sarasota, FL) microinjector in two locations of each hemisphere at the following coordinates relative to lambda: (1) 0 mm anterior-posterior; ±1.9 mm medial-lateral; –2.0 mm dorsal-ventral; and (2) 0 mm anterior-posterior; ±2.0 mm medial-lateral; –2.3 mm dorsal-ventral. Injected pups were placed on a heating pad and allowed to recover before being returned to their cages and were administered daily ketoprofen (10 mg/kg) subcutaneously for up to 3 days.
 
-## Hippocampal slice preparation
+### Hippocampal slice preparation
 
 Injected mice between 14 and 24 days old were anesthetized with isoflurane, decapitated, and the brain was removed into ice-cold slicing solution containing (in mM) 87 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 75 sucrose, 25 D-glucose, 0.5 CaCl2, and 7 MgCl2 (~335 mOsm/kg) and bubbled with 95% O2 and 5% CO2. The brain was glued by the dorsal side, embedded into 2% agarose in phosphate-buffered saline, and submerged in a chamber with ice-cold slicing solution. Horizontal 275 μm brain slices were cut using a compresstome (VF-310-0Z, Precisionary) and immediately transferred to a chamber with ACSF containing (in mM) 120 NaCl, 2.5 KCl, 1 NaH2PO4, 26 NaHCO3, 10 D-glucose, 2 CaCl2, and 1 MgCl2 (~290 mOsm/kg) that was warmed to 36°C and bubbled with 95% O2 and 5% CO2. The slices rested on a mesh bottom to adequately perfuse both sides of the tissue. After 35 min, the chamber was cooled to room temperature and the brain slices therein were used for the next 4 hr.
 
-## Recording solutions and pharmacology
+### Recording solutions and pharmacology
 
 The brain slices were adhered to glass coverslips coated with poly-L-lysine (P4832, Sigma-Aldrich), placed in a bath chamber mounted to the microscope, and superfused with solutions maintained at 33–34°C and bubbled with 95% O2 and 5% CO2 at a rate of 5 mL/min. All solutions were ~290 mOsm/kg and contained 25 μM D-AP5, 5 μM NBQX, and 100 μM picrotoxin (unless otherwise specified) to block synaptic transmission. Ca2+-free solution contained (in mM) 120 NaCl, 2.5 KCl, 1 NaH2PO4, 26 NaHCO3, 10 D-glucose, and 4.1 MgCl2. Na+- and Ca2+-free solution contained (in mM) 120 Choline-Cl, 1.5 KCl, 1 KH2PO4, 26 Choline-HCO3, 10 D-glucose, and 4.1 MgCl2. 1 mM EGTA was added to the Ca2+-free solutions from a 0.5 M stock.
 
@@ -176,15 +348,15 @@ For Ca2+-puff experiments, the 40 mM Na+ and Ca2+-free solution was obtained by 
 
 Thapsigargin (1 μM) was added from a 10 mM stock in DMSO. Aminooxyacetate (AOA, 10 mM) was added from a 2 M stock in water. Pyruvate (1.5 mM) was added from a 1 M aqueous stock, pH 7.3 with N-methyl-D-glucamine. Ouabain was either directly dissolved (for 2–5 mM) prior to recording or added from a 5 mM stock in water (for 5 μM). Isradipine (3 μM) was added from a 50 mM DMSO stock. CdCl2 (20 μM) was added from a 100 mM stock in water.
 
-## Electrical stimulation
+### Electrical stimulation
 
 Stimulation trains (of 100 μs pulse width) were delivered as previously described (Díaz-García et al., 2017; Díaz-García et al., 2021a) using a concentric bipolar electrode (FHC, Bowdoin, ME) mounted on a motorized micromanipulator (Burleigh PCS-6000, ThorLabs, Sterling, VA) and connected to an A360 stimulus isolation unit (WPI, Sarasota, FL). DGCs were stimulated antidromically (100 pulses, 50 Hz, 750–1500 μA) by placing the electrode in the hippocampal hilus, or synaptically (60 pulses, 20 Hz, 100–500 μA) by placing the electrode in the molecular layer.
 
-## Ca2+ puffs
+### Ca2+ puffs
 
 Borosilicate glass pipettes (with a tip diameter of 5 μm and resistance of 1 MΩ when filled with ACSF) were fabricated on a micropipette puller (P-97 Flaming/Brown, Sutter Instruments), backfilled with 100–250 mM CaCl2 and placed into a pipette holder mounted on a motorized micromanipulator with a closed pressure system connected to a 1 mL syringe. The pipette tip was placed adjacent to groups of DGCs expressing Peredox and RCaMP biosensors. Pressure delivery was controlled by a solenoid valve (NResearch) in series with the syringe line that was triggered by a digital/analog actuator (NTE Electronics). Positive pressure was applied using the syringe, and Ca2+ puffs were delivered by opening the solenoid for 0.5–5 s beginning 300 ms after the start of image acquisition.
 
-## Single-cell electroporation of SBFI
+### Single-cell electroporation of SBFI
 
 Sodium-binding benzofuran isophthalate (SBFI) is a fluorescent Na+-indicator (Harootunian et al., 1989). We loaded the SBFI K+ salt (Ion Biosciences, San Marcos, TX) version into DGCs using single-cell electroporation methods derived from Nevian and Helmchen, 2007; we chose this method rather than loading by patch pipette to avoid diluting cytoplasmic metabolites and soluble expressed biosensor, and also to avoid potentially toxic effects on the slice from applying Pluronic-F127 and DMSO to load the membrane-permeant SBFI-acetoxymethyl ester version.
 
@@ -192,13 +364,13 @@ Borosilicate glass pipettes were fabricated (with a tip diameter of 1 μm and re
 
 The intracellular [dye] from electroporation is estimated to be ~20% of the pipette concentration (Nevian and Helmchen, 2007). Thus, the intracellular [Na+] will not be substantially buffered by the ~0.5–1 mM [SBFI] in our recordings (Fleidervish et al., 2010; Mondragão et al., 2016), meaning that intracellular [Na+] is set by cellular mechanisms and SBFI merely responds to changes in [Na+]. Also, the complexation of Na+ with crown ether molecules (the Na+-sensitive moiety of SBFI) is nearly diffusion-controlled, with very rapid rates of formation and dissociation (Adamic et al., 1986; Liesegang et al., 1977). This means that the response time of SBFI fluorescence changes should be fast compared to almost all neuronal processes.
 
-## Two-photon fluorescence imaging
+### Two-photon fluorescence imaging
 
 Fluorescence imaging data were acquired using a Thorlabs Bergamo II microscope (Thorlabs Imaging Systems, Sterling, VA) equipped with an Olympus LUMPLFLN 60×/W (NA 1.0) objective lens, hybrid photodetectors R11322U-40 (Hamamatsu Photonics, Shizuoka, Japan), and a Chameleon Vision-S tunable Ti-Sapphire mode-locked laser (80 MHz,~75 fs pulses; Coherent, Santa Clara, CA). The excitation wavelength was 790 nm. Fluorescence emission light from the Peredox and RCaMP biosensors was split with an FF562-Di03 dichroic mirror and bandpass filtered for green (FF01-525/50) and red (FF01-641/75) light; a red 670/50 bandpass filter was used for experiments where SBFI and RCaMP were multiplexed. The photodetector and laser sync signals were preamplified and then digitized at 1.25 GHz using a field-programmable gate array board (PC720 with FMC125 and FMC122 modules, 4DSP, Austin, TX). A modified version of the ScanImage software written in Matlab (Pologruto et al., 2003) (provided by B. Sabatini and modified by G.Y.) controlled the laser, microscope, and image acquisition (128×128 pixels, scanning rate of 2 ms per line).
 
 Time-correlated single-photon counting was performed using laboratory-built firmware and software to determine the arrival time of each photon relative to the laser pulse. The fluorescence LT was determined from a nonlinear least-squares fit to the photon arrival histograms in Matlab (Mathworks, Natick, MA) convolved with a Gaussian for the impulse response function (Yasuda et al., 2006). Fluorescence intensity was determined from the total photon counts.
 
-## Data analysis
+#### Data analysis
 
 Fluorescence images were analyzed offline using Matlab R2014b software. Regions of interest (ROIs) were defined around individual DGC somas and photon statistics were calculated for all pixels within the ROI. LT values were calculated by fitting the photon arrival histograms with a biexponential decay function (convolved with a Gaussian for the impulse response function [Yasuda et al., 2006] up to 8 ns after the peak photon arrival time). The time constant of this fit is denoted as the ‘tau8‘ value (Díaz-García et al., 2019); using tau8 values minimizes both the fit variability (by restricting the averaging to the approximate time window of the actual data) and the variability between the LTs recorded on different experimental setups with different data acquisition windows.
 
@@ -210,6 +382,6 @@ Statistical analysis was performed using Origin 8.1 software. Data sets were tes
 
 Figures were created using Origin 8.1 and PowerPoint (Microsoft, Redmond, WA).
 
-## Reagents
+### Reagents
 
 All chemical reagents used to make the brain slicing and artificial cerebrospinal fluid (ACSF) solutions were obtained from Sigma-Aldrich (St. Louis, MO).

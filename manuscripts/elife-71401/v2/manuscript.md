@@ -30,21 +30,33 @@ Primate research has identified internal and external factors mediating the rela
 
 ## Results
 
-## Social hierarchy characterization in male and female mice
+### Social hierarchy characterization in male and female mice
 
 To assess social hierarchy rank and dynamics over time, we tested same sex tetrads in a round robin of pair-wise tube tests following 3.5 weeks of group housing to allow for initial hierarchy formation. We determined the rank position of each mouse for each day across 18 days of testing using the total win number in that day’s tube tests and represented that position over time (Figure 1A). Male and female social hierarchies had no significant differences in the number of non-linear days, days in which tube tests results were not fully transitive, (Figure 1B) or total stable, four consecutive identical tube test results, or unstable social hierarchies assessed on the final four tube test trials (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71401/elife-71401-fig1-v2.jpg)
 
-**Figure 1.:** (A) Representative hierarchies of male (top) and female (bottom) mice over 18 days of hierarchy testing. Each line represents a single animal and its rank position based on summed tube test wins. Non-linear days, days in which tube test results were not fully transitive, are not displayed. (B) Proportion of male (teal) and female (orange) cages demonstrating unstable (striped) or stable (solid) hierarchies, defined as four consecutive identical tube test results on the final 8 days of hierarchy testing. X2 (1, N = 2602) = 0.23, p = 0.7429. (C) Proportion of days that male (teal) and female (orange) cages showed non-linear (striped) or linear (solid) hierarchy results across all days of tube tests. X2 (1, N = 173) = 0.01, p = 0.3170. (D) Distribution of David’s scores (DS) from male (teal) and female (orange) mice calculated across the final 4 days of tube test results. Subordinate (SUB) = bottom 25% (DS < –3). Dominant (DOM) = top 25% (DS >3) Intermediate (INT) = central 50% (-3< DS < 3). (E) Male rank from tube test plotted against time spent in warm corner (mean ± SEM). Pearson r(26) = 0.25, 95% CI [57.33, 171.9], p < 0.0001 (n = 14–18/group) (F) Female rank from tube test plotted against average time spent in warm corner (mean ± SEM). Pearson r(26) = 0.24, 95% CI [12.97, 76.23], p = 0.0075. (n = 7–11/group) (G) Time spent in warm spot by rank in males. One-way ANOVA F(2, 44) = 8.60, p = 0.0007. Tukey’s Multiple Comparisons. SUB vs INT 95% CI [–176.0, 79.95] p = 0.6369 SUB vs DOM 95% CI [-345.9,–82.15] p = 0.0008, INT vs DOM 95% CI [–294, –38] p = 0.0082 (n = 14–18/group) (H) Time spent in warm spot by rank in females. One-way ANOVA F(2, 23) = 4.25, p = 0.0268. Tukey’s Multiple Comparisons. SUB vs INT 95% CI [–82.15, 58.59] p = 0.9081 SUB vs DOM 95% CI [-151.5,–6.449] p = 0.0311, INT vs DOM 95% CI [–139.7, 5.329] p = 0.0729 (n = 7–11/group).Figure 1—source data 1.
+**Figure 1.:** (A) Representative hierarchies of male (top) and female (bottom) mice over 18 days of hierarchy testing. Each line represents a single animal and its rank position based on summed tube test wins. Non-linear days, days in which tube test results were not fully transitive, are not displayed. (B) Proportion of male (teal) and female (orange) cages demonstrating unstable (striped) or stable (solid) hierarchies, defined as four consecutive identical tube test results on the final 8 days of hierarchy testing. X2 (1, N = 2602) = 0.23, p = 0.7429. (C) Proportion of days that male (teal) and female (orange) cages showed non-linear (striped) or linear (solid) hierarchy results across all days of tube tests. X2 (1, N = 173) = 0.01, p = 0.3170. (D) Distribution of David’s scores (DS) from male (teal) and female (orange) mice calculated across the final 4 days of tube test results. Subordinate (SUB) = bottom 25% (DS < –3). Dominant (DOM) = top 25% (DS >3) Intermediate (INT) = central 50% (-3< DS < 3). (E) Male rank from tube test plotted against time spent in warm corner (mean ± SEM). Pearson r(26) = 0.25, 95% CI [57.33, 171.9], p < 0.0001 (n = 14–18/group) (F) Female rank from tube test plotted against average time spent in warm corner (mean ± SEM). Pearson r(26) = 0.24, 95% CI [12.97, 76.23], p = 0.0075. (n = 7–11/group) (G) Time spent in warm spot by rank in males. One-way ANOVA F(2, 44) = 8.60, p = 0.0007. Tukey’s Multiple Comparisons. SUB vs INT 95% CI [–176.0, 79.95] p = 0.6369 SUB vs DOM 95% CI [-345.9,–82.15] p = 0.0008, INT vs DOM 95% CI [–294, –38] p = 0.0082 (n = 14–18/group) (H) Time spent in warm spot by rank in females. One-way ANOVA F(2, 23) = 4.25, p = 0.0268. Tukey’s Multiple Comparisons. SUB vs INT 95% CI [–82.15, 58.59] p = 0.9081 SUB vs DOM 95% CI [-151.5,–6.449] p = 0.0311, INT vs DOM 95% CI [–139.7, 5.329] p = 0.0729 (n = 7–11/group).
 
 As we included mice from both stable and unstable social hierarchies, we calculated rank via David’s Score (DS) across the final four tube test results, conducted over one week. DS ranges from –6 to 6 with a higher DS associated with greater dominance. DS weights wins from individual pairings relative to the hierarchy position of the opponent, with wins over more dominant animals weighted more than over subordinate animals. Groups were created by dividing the range of DS into three parts. Mice that had a DS within the top 25% (DS >3) were considered dominant (DOM), mice that were in the bottom 25% were considered subordinate (SUB) (DS < –3), and mice with a DS within the central 50% of DS (–3< DS < 3) were considered intermediate (INT) (Figure 1D and E).
 
 We validated ranks calculated from tube testing with the warm corner test, which has been used previously to assess social rank (Zhou et al., 2017). The warm corner test models ethological competition for a valuable resource, in this case a warm corner of a cage with an otherwise ice-cold floor. Both male (Figure 1E) and female (Figure 1F) mice show significant positive correlations between dominance and time spent in the warm spot. Dominant males spent significantly more time in the warm corner than both intermediate and subordinate mice (Figure 1G). Dominant female mice spent significantly more time in the warm corner than subordinates (Figure 1H).
 
-## Social hierarchy rank as a predictor of social stress outcomes in male and female Mice
+### Social hierarchy rank as a predictor of social stress outcomes in male and female Mice
 
 To determine the predictive role of rank on stress susceptibility, we subjected ranked male and female mice to 10 days of chronic social defeat stress (CSDS). Susceptibility was assayed via a social interaction (SI) test where SI ratio was derived from time spent investigating a novel aggressor, normalized to time spent investigating the empty cage prior to aggressor introduction. Under unstressed conditions, mice spend more time interacting with a novel aggressor than an empty but novel enclosure (SI ratio >1). For male mice, we used the established CSDS model (Figure 2A); for females, we used two models of female social defeat: one employing male transgenic Esr1-Cre aggressor mice, expressing AAV-Gq-DREADD in the ventromedial hypothalamus (Figure 2B), and another using territorial female Swiss Webster aggressor mice (Figure 2C). Twenty-four hours after the final day of stress, mice underwent the social interaction (SI) test.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71401/elife-71401-fig2-v2.jpg)
+
+**Figure 2.:** (A) Timeline of chronic social defeat stress (CSDS) in male mice. (B) Timeline of CSDS in female mice using male DREADD aggressors. (C) Timeline of CSDS in female mice using female aggressors. (D) Social interaction (SI) ratio between group-housed unstressed control (CTRL) and stressed (STRESS) male mice (mean ± SEM). Two-way ANOVA Stress F(1, 166) = 20.93, p < 0.0001. Sidak’s multiple comparisons of STRESS versus CTRL within groups SUB 95% CI[0.21, 0.85] p = 0.003 INT 95% CI [0.12, 0.61] p = 0.0014 DOM 95% CI[–0.24,.43] p = 0.863 (n = 19–45/group). (E) Correlation between David’s score (DS) and SI ratio. Pearson r(89) = 0.14, 95% CI [0.0086, 0.061] p = 0.0097 (n = 91). (F) SI ratio between CTRL and STRESS female mice (mean ± SEM). Two-way ANOVA Stress F(1, 101) = 29.62, p < 0.0001. Sidak’s multiple comparisons of STRESS versus CTRL within groups SUB 95% CI [0.16, 0.80] p = 0.0015 INT 95% CI [0.12, 0.70], p = 0.0027 DOM 95% CI [0.01, 0.71] p = 0.0392 (n = 16–30/group). (G) Correlation between DS and SI Ratio. Pearson r(56) = 0.00002, 95% CI [–0.02, 0.02] p = 0.402 (H) Vigilance (seconds) between CTRL and STRESS female mice (mean ± SEM). Two-way ANOVA Stress F(1, 43) = 3.441, p = 0.0704, SUB 95% CI [-11.71,–0.83] p = 0.0193 INT 95% CI [–5.35, 5.55] p > 0.9999 DOM 95% CI [–6.10, 4.48] p = 0.9747 (n = 8–9/group). (I) Correlation between DS and vigilance. Pearson r(13) = 0.26, 95% CI [–0.80, 0.20] p = 0.23 (n = 15). (J) Coping score from stressed males on day 1 and day 10 of CSDS (mean ± SEM). Two-way ANOVA interaction F(1, 22) = 7.29, 95% CI [-2.67,–0.35] p = 0.0193. Sidak’s multiple comparisons of DOM versus SUB within groups Day 1 95% CI [–0.78, 1.29] p = 0.8088 Day 10 95% CI [–2.1, 0.4] p = 0.0036 (n = 5–10/group). (K) Correlation between Coping Score and SI Ratio of stressed males. Pearson r(21) = 0.24, 95% CI [0.053, 0.49], p = 0.00174 (n = 23). (L) Coping score from stressed females on day 1 and day 10 of CSDS (mean ± SEM). Two-way ANOVA interaction F(1, 25) = .4870, p = 0.3285, (n = 5–10/ group). (M) Correlation between Coping Score and SI Ratio of stressed females. Pearson r(13) = 0.26, 95% CI [–0.0016, 0.37] p = 0.052 (n = 15). (N) Coping score from stressed animals on day 1 and day 10 of inter-female CSDS (mean ± SEM). Two-way ANOVA interaction F(1, 27) = .99, p = 0.3285 (n = 8–10/group). (O) Correlation between Coping Score and SI Ratio. Pearson r(11) = 0.07, 95% CI [–0.21, 0.53], p = 0.3736 (n = 13). For all graphs *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71401/elife-71401-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Correlation between Coping Score and Vigilance. Pearson r(12) = 0.004, 95% CI [–5.61, 4.51], p = 0.8232 (n = 14) (B) Body weight of male mice before stress. One-way ANOVA F(2, 147) = 2.63, p = 0.0752 (n = 35–76/group). (C) Body weight of female mice before stress. One-way ANOVA F(2, 58) = 0.68, p = 0.5091 (n = 20–21/group). (D) Total number of aggressive bouts experienced by DOM and SUB male mice during days 1, 5, and 10 of social defeat. Repeated measures ANOVA Rank F(1, 27) = 0.18, p = 0.6752 (n = 6–16/group). (E) Total number of aggressive bouts experienced by DOM and SUB female mice during days 1, 5, and 10 of social defeat. Repeated measures ANOVA Rank F(1, 30) = 0.17, p = 0.6031 (n = 6–9 group). (F) Total number of aggressive bouts experienced by DOM and SUB female mice during days 1, 5, and 10 of inter-female social defeat. Repeated measures ANOVA Rank F(1, 15) = 0.14, 95% CI [–6.61, 9.42], p = 0.7144 (n = 5–10/group). (G) Wound score of male mice following CSDS. One-way ANOVA F(2, 117) = 0.18, p = 0.1817 (n = 29–60/group). (H) Wound score of female mice following CSDS. One-way ANOVA F(2, 36) = 0.22, p = 0.2187 (n = 12–14/group). (I) Wound score of female mice following inter-female CSDS. One-way ANOVA F(2, 27) = 0.14, p = 0.8731 (n = 8–10/group).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71401/elife-71401-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Distance traveled during a 2.5 min period by male mice following chronic social defeat stress (CSDS) in the social interaction (SI) test when social target was absent (mean ± SEM). Two-way ANOVA interaction F(2, 109) = 0.13, p = 0.7090 (n = 19–45/group). (B) Distance traveled during a 2.5 min period by female mice following CSDS in the SI test when target was absent. Mean ± SEM. Two-way ANOVA interaction F(2, 71) = 0.40, 95% CI [–118.8, 120.3], p = 0.6713 (n = 16–30/group). (C) Distance traveled during 2.5 min period by female mice following inter-female CSDS in the SI test when target was absent (mean ± SEM). Two-way ANOVA interaction F(2, 45) = 0.78, p = 0.8805 (n = 8–9/group). (D) SI ratio of female mice following inter-female CSDS (mean ± SEM). Two-way ANOVA interaction F(2, 43) = 1.89, p = 0.1637 (n = 8–9/group).
 
 Both subordinate and intermediate male mice had a significantly lower SI ratio than unstressed controls following CSDS whereas dominant mice did not (Figure 2D). We observed a moderate positive correlation between DS and SI Ratio in stressed male mice (Figure 2E). In females socially defeated by male mice, however, all ranks show significantly lower SI ratios than unstressed controls (Figure 2F), and no significant correlation was seen between DS and SI ratio (Figure 2G). To further probe the relationship between rank and stress susceptibility in females, we employed a second model of female social defeat, inter-female CSDS. Following 10 days of inter-female CSDS, a significant effect of stress is seen with only subordinate females showing significantly higher vigilance behaviors than unstressed controls (Figure 2H). However, no correlation between vigilance and DS was observed (Figure 2I).
 
@@ -52,15 +64,23 @@ To assess the relationship between individual behavioral responses to aggression
 
 Additional assessment of behavioral or physiological differences revealed no significant effects across rank. No pre-existing differences were observed in body weight between all ranks of mice before stress in males (Figure 2—figure supplement 1B) or females (Figure 2—figure supplement 1C). Importantly, in all models of social stress, there were no significant differences in bouts of aggression received by dominant or subordinate mice over the course of the defeat (scored on days 1, 5, and 10 of defeat) in both male (Figure 2—figure supplement 1D) and female mice (Figure 2—figure supplement 1E and Figure 2—figure supplement 1F). Wound score, an indirect measure of aggression taken 48 hr after defeat, revealed no significant differences between dominant and subordinate males (Figure 2—figure supplement 1G) or females (Figure 2—figure supplement 1H and Figure 2—figure supplement 1I). There were also no significant differences in distance moved when the target was absent during SI testing in males (Figure 2—figure supplement 2A) or females following CSDS or inter-female CSDS (Figure 2—figure supplement 2B and Figure 2—figure supplement 2C). Lastly, as previously reported (Newman et al., 2019), inter-female CSDS caused no changes in SI ratio between stressed or unstressed controls, and no observable differences across ranks (Figure 2—figure supplement 2D).
 
-## Interactions between rank and susceptibility versus resilience to non-social stress
+### Interactions between rank and susceptibility versus resilience to non-social stress
 
 We next investigated whether rank was predictive of stress responses to a chronic non-social stressor. To do this we subjected ranked male and female mice to 21 days of chronic variable stress (CVS) (Figure 3A). As male and female mice remain group-housed during CVS we were able to examine the effects of stress on social hierarchy dynamics as well as determine the predictive role of pre-stress rank – DS calculated from the week prior to CVS – versus emergent rank – DS calculated from the final week of CVS.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71401/elife-71401-fig3-v2.jpg)
+
+**Figure 3.:** (A) Timeline of chronic variable stress (CVS) experiment. (B) Average win number of animals across all days of hierarchy evaluation using David’s score (DS) calculated on rank from the 4 days preceding CVS start. (C) Male hierarchy steepness calculated from ordered normalized DS across 7 days preceding or following stress initiation. Paired t-test t(10) = 0.3914, p = 0.7037 (n = 11). (D) Female hierarchy steepness calculated from ordered normalized DS across 7 days preceding or following stress initiation. Paired t-test t(10) = 0.49, 95% CI [–0.10, 0.16], p = 0.6315 (n = 11). (E) Social interaction (SI) ratio between unstressed (CTRL) and stressed (STRESS) male mice (mean ± SEM) with rank derived the week preceding CVS. Two-way ANOVA Stress F(1, 116) = 0.75, p = 0.0996 (n = 22–45/group). (F) SI ratio between CTRL and STRESS female mice (mean ± SEM) with rank derived the week preceding CVS. Two-way ANOVA Stress F(1, 67) = 0.10, p = 0.7979 (n = 9–25/group) (G) Correlation between DS calculated in the week preceding CVS and SI Ratio in males. Pearson r(25) = 0.16, 95% CI [.0032, 0.12], p = 0.0393 (n = 27). (H) Correlation between DS calculated in the week preceding CVS and SI Ratio in females. Pearson r(25) = 0.20, 95% CI [–0.027, 0.069], p = 0.3823 (n = 27). (I) SI ratio between CTRL and STRESS male mice (mean ± SEM) with rank derived from the final week of stress. Two-way ANOVA interaction of stress and rank F(2, 1150) = 3.89, p = 0.0233. Sidak’s multiple comparisons of STRESS versus CTRL within ranks, SUB 95% CI [0.049, 0.98] p = 0.0250 INT 95% CI [–0.48, 0.35] p = 0.9752 DOM 95% CI [–0.70, 0.29] p = 0.6835 (n = 22–46/group). (J) SI ratio between CTRL and STRESS female mice (mean ± SEM) with rank derived from the final week of stress. Two-way ANOVA interaction of stress and rank F(2, 66) = 5.27, p = 0.0075. Sidak’s multiple comparisons of STRESS versus CTRL within ranks, SUB 95% CI [0.049, 1.11], p = 0.0277 INT 95% CI [–0.31, 0.43] p = 0.9731 DOM 95% CI [–0.99, 0.11] p = 0.1654 (n = 9–24 / group). (K) Correlation between DS calculated across final week of CVS and SI Ratio in males. Pearson r(25) = 0.03, 95% CI [0.012, 0.12] p = 0.0195 (n = 27). (L) Correlation between DS calculated across final week of CVS and SI Ratio in females. Pearson r(25) = 0.15, 95% CI [0.00096, 0.090] p = 0.0456 (n = 27). For all graphs *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71401/elife-71401-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sankey plot showing percentage of total population in each rank, and change from pre- and post-time periods for control (grey) and stressed (red) female mice. (B) Sankey plot showing percentage of total population in each rank, and change from pre- and post-time periods for control (grey) and stressed (red) male mice.
 
 Qualitatively, unstressed and stressed hierarchy dynamics were similar over time (Figure 3B). In both male and female mice, dominant animals’ average wins remained stable over time, while the average wins of the lower ranks converged over time. This convergence was due to movement in ranks among the lower ranked animals within a cage, unlike dominant animals who remained on top. Steepness, a measure of the slope of ordered normalized DS of mice within a cage, showed no significant differences before or after CVS in both males (Figure 3C) and females (Figure 3D). Examination of the percentage of animals changing rank position pre- and post-stress revealed similar patterns of rank movement in control and stressed females (Figure 3—figure supplement 1A), while control male cages appeared to have more animals changing rank over the time course of the stress period compared to stressed male cages (Figure 3—figure supplement 1B).
 
 Dividing mice into pre-stress ranks revealed no significant differences in SI ratio between unstressed and stressed animals across ranks in both males (Figure 3E) and females (Figure 3G). We observed a positive correlation between DS and SI ratio in males (Figure 3F), but not in females (Figure 3H). However, separating animals by rank determined at the end of CVS revealed significantly lower SI ratios in subordinates alone when comparing stressed versus unstressed controls in males (Figure 3I) and females (Figure 3J). This emergent DS correlated with SI ratio in both males (Figure 3K) and females (Figure 3L).
 
-## Effects of rank change on stress susceptibility versus resilience
+### Effects of rank change on stress susceptibility versus resilience
 
 To determine whether rank is causally associated with stress susceptibility or resilience, we recombined previously dominant or subordinate animals forcing one to assume an alternate position (Figure 4A). In other words, two previously dominant animals from separate cages were regrouped together and dominance was subsequently tested over a 1-week period. Subordinate animals were tested in a parallel manner. Following this recombination and a week of newly established social hierarchies, we subjected the animals to either CSDS or CVS (Figure 4B and C). After CSDS, dominant animals that remained dominant following recombination (DOM - DOM) had a significantly higher SI ratio than dominants that became subordinate (DOM - SUB) (Figure 4D). However, there was no significant difference in SI ratio between subordinates who become dominant (SUB - DOM) versus those that remained subordinate after CSDS (SUB - SUB) (Figure 4E). In males, we see a similar pattern of effect of CVS on SI ratio, with DOM - DOM mice having a significantly higher SI ratio than DOM – SUB mice, and no significant differences between SUB - DOM and SUB - SUB animals (Figure 4F and G). In females, neither manipulation had an effect on SI ratio following CVS with no significant differences between DOM - DOM and DOM - SUB (Figure 3H) or SUB - DOM and SUB - SUB animals (Figure 3I).
 
@@ -68,7 +88,7 @@ To determine whether rank is causally associated with stress susceptibility or r
 
 **Figure 4.:** (A) Diagram of dyadic recombination. (B) Timeline of chronic social defeat stress (CSDS) dominance manipulation experiment. (C) Timeline of chronic variable stress (CVS) dominance manipulation experiment. (D) Social interaction (SI) ratio of initially dominant male mice following CSDS. t-test t(12) = 2.37, 95% CI [-0.78,–0.033], p = 0.0356 (n = 7/group). (E) SI ratio of initially subordinate male mice following CSDS. t-test t(14) = 0.36, 95% CI [–0.36, 0.51], p = 0.7239 (n = 7/group). (F) SI ratio of initially dominant male mice following CVS. t-test t(11) = 0.43, 95% CI [–0.75, 0.50], p = 0.6735 (n = 6/group). (G) SI ratio of initially subordinate male mice following CVS. t-test t(12) = 0.65, 95% CI [–0.74,.40], p = 0.5331 (n = 7/group). (H) SI ratio of initially dominant female mice following CVS. t-test t(14) = 0.88, 95% CI [–0.80, 0.33], p = 0.3937 (n = 8/group). (I) SI ratio of initially subordinate female mice following CVS. t-test t(14) = 0.12, 95% CI [–0.74, 0.83], p = 0.9042 (n = 8/group). (J) Representative traces of rank of mice with low mobility (left) versus high mobility (right). Low mobility <1 change in rank across hierarchy testing, high mobility >2 greater changes in rank across hierarchy testing. (K) Proportion of male (teal) and female (orange) mice demonstrating low mobility (striped) or high mobility (solid) hierarchies. X2 (1, N = 159) = 1.7, p = 0.1408. (L) Social interaction (SI) ratio between low mobility (LOW) and high mobility (HIGH) male mice (mean ± SEM). Two-way ANOVA main Rank F(2, 104) = 7.65, p = 0.0008. Sidak’s multiple comparisons of LOW versus HIGH within groups, SUB 95% CI [–0.36, 0.59] p = 0.9147 INT 95% CI [–0.52, 0.38] p = 0.9755 DOM 95% CI [-1.13,–0.02] p = 0.0387 (n = 9–16/group). (M) Social interaction (SI) ratio between LOW and HIGH female mice (mean ± SEM). Two-way ANOVA Rank F(2, 54) = 0.183, p = 0.6687 (n = 7–11/group). For all graphs *p < 0.05, **p < 0.01, ***p < 0.001.
 
-## Effects of rank mobility on stress susceptibility and resilience
+### Effects of rank mobility on stress susceptibility and resilience
 
 To retrospectively assess the role of individual history of rank in stress susceptibility, we examined rank mobility of male and female mice preceding CSDS. Mice were separated into two groups, those that experienced high mobility, with two or greater changes in rank across all hierarchy testing days preceding stress, and those with low mobility, one or fewer changes in rank across hierarchy testing days preceding stress (Figure 4J). Male and female mice displayed similar rates of high and low mobility across testing days (Figure 4K). High mobility dominant male mice had a significantly higher SI ratio following stress than low mobility dominant mice, while no significant differences were seen between low and high mobility at any other ranks (Figure 4L). No differences between low and high mobility animals across ranks were observed in females following CSDS (Figure 4M).
 
@@ -104,72 +124,124 @@ In this study, we have demonstrated a significant role for social rank as a pred
 
 ## Materials and methods
 
-## Animal housing and care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57 Mouse (Male and Female)</td>
+      <td>The Jackson Laboratory</td>
+      <td>C57BL/6 J</td>
+      <td>RRID:IMSR_JAX:000664</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD-1 (Male)</td>
+      <td>Charles River</td>
+      <td>Crl:CD1(ICR)</td>
+      <td>RRID:IMSR_CRL:022</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Esr1-cre (Male)</td>
+      <td>The Jackson Laboratory</td>
+      <td>C57BL/6-Esr1tm2.1(cre)And/J</td>
+      <td>RRID:IMSR_JAX:017913</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Swiss Webster (Female)</td>
+      <td>Charles River</td>
+      <td>Crl:CFW(SW)</td>
+      <td>RRID:IMSR_CRL:024</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision</td>
+      <td>Noldus Information Technology</td>
+      <td></td>
+      <td>Version 11.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal housing and care
 
 All animal procedures were approved by the Icahn School of Medicine at Mount Sinai Institutional Animal Care and Use Committee (Protocol #: LA10-00266 to S.J.R.) All mice were provided ad libitum access to food and water and maintained on a 12 hour light/dark cycle. All behavioral testing was performed during the light cycle.
 
-## Experimental
+#### Experimental
 
 Seven-week-old male and female C57BL/6 J RRID:IMSR_JAX:000664 mice were randomly combined into tetrads (4/cage) of same sex mates and allowed to cohabitate for 3 weeks prior to initiation of hierarchy testing.
 
-## Male aggressors for male CSDS
+#### Male aggressors for male CSDS
 
 Retired male CD-1 breeders RRID:IMSR_CRL:022 between 3 and 6 months old were acquired and maintained in single housing following 3 days of screening for sufficient levels of inter-male aggressive behavior, as previously described (Golden et al., 2011).
 
-## Male aggressors for female CSDS
+#### Male aggressors for female CSDS
 
 Male heterozygous Esr1-Cre mice derived from RRID:IMSR_JAX:017913 were injected bilaterally with Cre-dependent AAV-DIO-Gq-DREADD into the ventrolateral subdivision of the ventromedial hypothalamus (VMHvl) and subsequently screened for sufficient CNO-triggered aggressive behavior towards female mice as previously described, and maintained in single housing (Takahashi et al., 2017).
 
-## Female aggressors for female CSDS
+#### Female aggressors for female CSDS
 
 12 week or older female Swiss Webster RRID:IMSR_CRL:024 mice were housed with castrated male mice and screened for inter-female aggressive behavior as previously described (Newman et al., 2019).
 
-## Hierarchy testing
+### Hierarchy testing
 
-## Tube test
+#### Tube test
 
 This protocol was adapted from Fan et al., 2019; Lindzey et al., 1961. At 10 weeks of age, 3 days prior to hierarchy evaluation, mice were habituated to handling for 5 min per mouse. On the second day of habituation, cages of mice were allowed to explore the testing arena, a rat cage (26.7 cm width ×48.3 cm depth ×15.2 cm height, Allentown Inc) with a plexiglass tube (3 cm internal diameter x 30 cm length) taped to the bottom. On the final day of training, mice were trained to pass through the tube for a minimum of 5 times in each direction, followed by 20 s of arena investigation. Mice were not permitted to escape backwards out of the tube. The tube was cleaned and dried in between trials. Starting at 10 weeks every other day for 18 days mice were pitted against cagemates in a round robin design randomly ordered. For each trial, two mice were guided simultaneously to opposing ends of the tube and permitted to meet in the middle. The trial ended when one mouse backed up out of the tube ending with all four paws on the outside cage floor; this mouse was considered the trial ‘loser’ and the mouse remaining in the tube was the ‘winner’. The winning mouse was left to leave the tube forwards and not permitted to back out of the tube. If both mice attempted to leave the tube backwards the trial was ended, both mice placed back into the home cage before initiating the trial again. For stressors where mice remained group housed (CVS and female CSDS), hierarchy evaluation was continued every other day for the duration of the stressor until mice were single housed prior to behavioral testing.
 
-## Warm spot test
+#### Warm spot test
 
 The warm spot test was adapted from the protocol as previously described (Zhou et al., 2017). The test was completed at 12 weeks of age. In brief, an empty housing cage (26.7 cm width ×48.3 cm depth) was cooled on ice until the floor reached 3℃. Under one corner of the cage, a waterproof heating pad was placed to locally heat the floor to 30℃. For male mice, a small plastic hut sufficient to hold a single male mouse was placed over the warm corner. For female mice, no hut was employed. Thirty min prior to trial initiation, mice were transferred from their home cage to an empty cage maintained on ice to cool down. For each trial, mice were placed in the test cage, and behavior was tracked for 20 min for males and 10 min for females by video-tape. For male mice occupation time of the hut was measured, for female mice, primary occupation of the warm corner was measured.
 
-## Calculating dominance
+#### Calculating dominance
 
 Dominance was evaluated via David’s Score (DS) as previously described (David, 1987; Gammell et al., 2003). DS is a weighted measure based on results from paired competitions. DS was calculated from the four tube test results preceding stress start, a period spanning 8 days. This approach was chosen because all mice were included in future behavioral testing regardless of original cage hierarchy stability (defined as four consecutive days of identical tube test results.) Dominants were the top 25% of DS (DS >3), subordinates were the bottom 25% (DS < –3), and intermediates were the central 50% (-3< DS < 3). High and low mobility were defined as upwards or downwards change in hierarchy position based on position from every days’ linear tube test results. Low mobility animals were those with one or fewer changes in rank, whereas high mobility animals were those with two or greater changes in rank. Rank change was calculated over all days preceding stress initiation. Steepness was calculated over seven tube test results (spanning 2 weeks) before or after stress initiation. Steepness is the slope of the linear regression line between ordered normalized DSs. Cages of mice were randomly assigned to stress or control groups for future manipulations.
 
-## Hierarchy manipulation in dyads
+#### Hierarchy manipulation in dyads
 
 Male or Female C57BL/6 J mice were recombined into weight-matched dyads ( ± 0.5 grams) with an unfamiliar partner at 9 weeks of age. Following 2 weeks of hierarchy formation and 1 week of hierarchy testing (via tube test), dominant or subordinate mice were recombined with a weight-matched unfamiliar mouse that was of matching hierarchy position. These new dyads were then tested for hierarchy for 1 week before being placed into stress. Animals that were initially dominant and then remained dominant following recombination were called ‘DOM-DOM’, those that started dominant and become subordinate were called ‘DOM-SUB’. Mice that were initially subordinate and remained subordinate were termed ‘SUB-SUB’, and those that were initially subordinate but become dominant were termed ‘SUB-DOM’.
 
-## Male CSDS
+#### Male CSDS
 
 Male chronic social defeat stress (CSDS) was performed as previously described at 13 weeks of age (Golden et al., 2011). At least 48 hr prior to the start of social defeat, male aggressors were rehoused into the social defeat cage (26.7 cm width ×48.3 cm depth ×15.2 cm height, Allentown Inc) divided in half by a clear perforated divider (0.6 cm × 45.7 cm × 15.2 cm, Nationwide Plastics). Experimental animals were subjected to agonistic encounters from a novel aggressor for 10 minutes every day for 10 consecutive days. Following this encounter, experimental mice were placed across the plastic divider from the aggressor for 24 hr of sensory exposure. Experimental animals were single housed following the final bout of defeat on the 10th day prior to social interaction testing, and the social interaction test was completed 24 hr later.
 
-## Female CSDS
+#### Female CSDS
 
 Female chronic social defeat stress was performed as previously described at 13 weeks of age (Takahashi et al., 2017). DREADD aggressors received an intraperitoneal injection of 1.0  mg/kg clozapine-N-oxide (CNO) 30 minutes prior to the start of the defeat. Individual experimental animals were introduced into a novel aggressor’s cage for 5 min from the start of the first agonistic encounter for 10 consecutive days before being returned to their original cage. Control and stressed animals remained group housed during the defeat and were single housed following the final bout of defeat on the 10th day prior to the social interaction test, which was completed 24 hr later.
 
-## Interfemale CSDS
+#### Interfemale CSDS
 
 Interfemale CSDS was completed as previously described at 13 weeks of age (Newman et al., 2019). 48 hours before social defeat, aggressive females housed with castrated males were rehoused into the social defeat cages (26.7 cm width ×48.3 cm depth ×15.2 cm height, Allentown Inc) divided in half by a clear perforated divider (0.6 cm × 45.7 cm × 15.2 cm, Nationwide Plastics). Male mates were temporarily removed and experimental female mice were introduced to the novel aggressive female’s cage for 5 min each day for 10 consecutive days. Following physical defeat, experimental females were moved across the clear plastic divider for 24 hr of sensory exposure. Every other day fresh bedding was introduced into the cage, and on the 5th day of defeat, all defeat cages were changed to maintain female aggressor levels. Control animals were single housed across from cage mates and were rotated every other day to a new cage mate. Animals were single housed following the final bout of defeat on the 10th day prior to social interaction testing, which was completed 24 hr later. Vigilance was scored as the time an animal spent directed towards the aggressor outside of the interaction zone.
 
-## Male and female CVS
+#### Male and female CVS
 
 CVS was administered as previously described at 13 weeks of age (Labonté et al., 2017). Stressed animals were exposed to 21 days of daily 1 hr stressors consisting of either 100 random mild foot shocks at 0.45 mA (administered to a single cage of mice at a time), tail suspension or restraint stress in a 50 mL falcon tube. Stressed and unstressed controls were group housed for the duration of the stress and were single housed before the initiation of the behavioral testing.
 
-## Social interaction test
+#### Social interaction test
 
 Social interaction testing was completed as previously described at ~14.5 weeks of age (Golden et al., 2011). The social interaction test comprises two trials: a 2.5 min target absent trial where experimental animals explore an open field arena with an empty wire and plexiglass chamber, followed by a 2.5 min target present trial where novel aggressors are introduced to the chamber. Animals’ movement including time spent in the interaction zone was tracked via Ethovision (Version 11.0 Noldus Information Technology Inc, Leesburg, VA) RRID:SCR_000441. Social interaction ratio (SI ratio) was calculated as the time spent in the interaction zone when target was present divided by when target was absent. The arena and chamber were cleaned and dried between mice. Novel target mice were as listed: male CSDS: male CD1 aggressors, female CSDS: DREADD Aggressors without CNO injection, inter-female CSDS: female Swiss Webster aggressors, CVS: male CD1 aggressor.
 
-## CSDS behavioral coping scoring
+#### CSDS behavioral coping scoring
 
 Behaviors exhibited by the experimental mice during defeat were scored during post hoc video analysis by a blinded experimenter on days 1 and 10 of defeat. Active behaviors were defined as running to the opposing end of the cage after attack initiation by the aggressor, and biting, boxing or lunging at the aggressor. Passive behavior was defined as immobility in response to attack initiation. An attack bout was defined as a discrete aggressive encounter in which the aggressor was in constant contact or immediately chased after the experimental animal. The active coping score was calculated from the total number of active behaviors displayed, minus the total number of passive behaviors normalized to the total number of aggressive bouts the experimental animal was exposed to (Escape+ Fighting back – Passive / # Attacks).
 
-## Wound score
+#### Wound score
 
 Wounding following social defeat was calculated 48 hr following the final day of defeat. Wound score is a summed number from a three point system across 4 areas of the body (lower back, upper back, tail, and abdominal) with 0 points in all categories equivalent to no wounds. Lower back points are assigned by wound area (0.01–1 cm2 = 1 point, 1–2 cm2 = two points, and greater than 2 cm2 = 3 points). All other areas are counted as total number of discrete wounds (1–5 = 1 point, 5–10 = 2 points, 10+ = 3 points).
 
-## Statistics
+#### Statistics
 
 All statistical tests were performed in Prism (Version 9.1.1; Graphpad) RRID:SCR_002798. Outliers, defined as two standard deviations from the mean within each rank and stress condition, were removed. Data were tested for normality by Lavene’s test for homogeneity of variance. All results are reported as means ± SEM. Power Analyses for CVS + Manipulation experiments were completed with the ‘pwr’ package in R (Version 3.5.1) RRID:SCR_001905 utilizing error variance and mean differences in stressed condition in the social defeat experiments.

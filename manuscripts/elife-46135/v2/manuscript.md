@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.46135.001 Previously we used gene-editing to label endogenous EGF receptor (EGFR) with GFP and demonstrate that picomolar concentrations of EGFR ligand drive signaling and endocytosis of EGFR in tumors in vivo (Pinilla-Macua et al., 2017). We now use gene-editing to insert a fluorogen activating protein (FAP) in the EGFR extracellular domain. Binding of the tandem dye pair MG-Bis-SA to FAP-EGFR provides a ratiometric pH-sensitive model with dual fluorescence excitation and a single far-red emission. The excitation ratio of fluorescence intensities was demonstrated to faithfully report the fraction of FAP-EGFR located in acidic endosomal/lysosomal compartments. Coupling native FAP-EGFR expression with the high method sensitivity has allowed development of a high-throughput assay to measure the rates of clathrin-mediated FAP-EGFR endocytosis stimulated with physiological EGF concentrations. The assay was utilized to screen a phosphatase siRNA library. These studies highlight the utility of endogenous pH-sensitive FAP-receptor chimeras in high-throughput analysis of endocytosis.
+Previously we used gene-editing to label endogenous EGF receptor (EGFR) with GFP and demonstrate that picomolar concentrations of EGFR ligand drive signaling and endocytosis of EGFR in tumors in vivo (Pinilla-Macua et al., 2017). We now use gene-editing to insert a fluorogen activating protein (FAP) in the EGFR extracellular domain. Binding of the tandem dye pair MG-Bis-SA to FAP-EGFR provides a ratiometric pH-sensitive model with dual fluorescence excitation and a single far-red emission. The excitation ratio of fluorescence intensities was demonstrated to faithfully report the fraction of FAP-EGFR located in acidic endosomal/lysosomal compartments. Coupling native FAP-EGFR expression with the high method sensitivity has allowed development of a high-throughput assay to measure the rates of clathrin-mediated FAP-EGFR endocytosis stimulated with physiological EGF concentrations. The assay was utilized to screen a phosphatase siRNA library. These studies highlight the utility of endogenous pH-sensitive FAP-receptor chimeras in high-throughput analysis of endocytosis.
 
 ## Introduction
 
@@ -61,7 +61,7 @@ To test the applicability of the experimental model of FAP-EGFR expressing EE7 c
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46135/elife-46135-fig4-v2.jpg)
 
-**Figure 4.:** (A) Each 96-well plate contained 80 siRNA pools targeting different phosphatases as well as eight negative control wells with non-targeted siRNA and four positive control wells each with siRNA targeting either clathrin heavy chain (CHC) or dynamin-2. Three plates covered the entire siRNA library of 240 phosphatases. (B) An example of the typical data resulting from this screen. EE7 cells were labeled with MG-Bis-SA and incubated with 1 ng/ml EGF for 15 min at 37°C followed by ratiometric imaging as described in ‘Materials and methods’. In the top panel, green is the signal from 561 nm excitation (FRET) and red is the signal from 640 nm excitation (MG) and as expected, a clear difference is seen between negative control wells and wells with knockdown of clathrin heavy chain or dynamin-2. The heatmap (bottom image) shows the calculated 561/640 ratio. (C) Summarized results from siRNA screening presented as a dual-flashlight plot. For each well, the average log2 fold change in the 561/640 emission ratio from the median of the negative controls of three independent screen repeats is plotted versus the strictly-standardized mean of the difference (SSMD). See Figure 4—source data 1 for all values of the 561/640 ratio and SSMD obtained in three rounds of screening.  10.7554/eLife.46135.006Figure 4—source data 1.The data are sorted by the extent of the inhibition of FAP-EGFR endocytosis (expressed as average value of the difference from median of controls (non-targeting siRNA); n = 3) from the lowest to highest values.
+**Figure 4.:** (A) Each 96-well plate contained 80 siRNA pools targeting different phosphatases as well as eight negative control wells with non-targeted siRNA and four positive control wells each with siRNA targeting either clathrin heavy chain (CHC) or dynamin-2. Three plates covered the entire siRNA library of 240 phosphatases. (B) An example of the typical data resulting from this screen. EE7 cells were labeled with MG-Bis-SA and incubated with 1 ng/ml EGF for 15 min at 37°C followed by ratiometric imaging as described in ‘Materials and methods’. In the top panel, green is the signal from 561 nm excitation (FRET) and red is the signal from 640 nm excitation (MG) and as expected, a clear difference is seen between negative control wells and wells with knockdown of clathrin heavy chain or dynamin-2. The heatmap (bottom image) shows the calculated 561/640 ratio. (C) Summarized results from siRNA screening presented as a dual-flashlight plot. For each well, the average log2 fold change in the 561/640 emission ratio from the median of the negative controls of three independent screen repeats is plotted versus the strictly-standardized mean of the difference (SSMD). See Figure 4—source data 1 for all values of the 561/640 ratio and SSMD obtained in three rounds of screening.
 
 The data presented in Figure 4 highlight the effectiveness of the FAP-EGFR-based assay as a high-throughput screen for proteins important in the CME of EGFR. EGFR endocytosis has been previously analyzed using high-throughput screens of targeted and whole-genome siRNA libraries (Collinet et al., 2010; Pelkmans et al., 2005). These studies used labeled EGF to follow endocytosis of EGFR and a complexed multi-parameter single-cell image analysis to score for the effects of siRNAs. These screens were instrumental in identifying several new regulatory processes and proteins, although findings did not advance our understanding of the molecular mechanisms of EGFR endocytosis. Importantly, the downstream analysis in those screens required high concentrations of labeled EGF. By contrast, the screening approach using a combination of receptor tagging by gene-editing and ratiometric measurements described here is based on monitoring the localization of the endogenous receptor itself. Therefore, the FAP-based method allows exquisitely sensitive screening for regulators of the constitutive EGFR endocytosis, and EGFR endocytosis induced by other EGFR ligands, that are technically difficult to label. Also, as we are directly and selectively labeling surface EGFR, it can be used to study ligand-independent endocytosis, such as endocytosis induced by activated p38 MAP kinase (Frey et al., 2006; Vergarajauregui et al., 2006; Zwang and Yarden, 2006).
 
@@ -73,44 +73,228 @@ In conclusion, as more examples of the application of FAP-based pH sensors to me
 
 ## Materials and methods
 
-## Reagents and antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>EGFR</td>
+      <td>NA</td>
+      <td>Q504U8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PX459 V2.0</td>
+      <td>Addgene</td>
+      <td>#62988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC18</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>SD0051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (human)</td>
+      <td>Dharmacon siGENOME SMARTpool siRNA Library – Human Phosphatase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>G-003705, Lot 10161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EGFR (mouse monoclonal)</td>
+      <td>Millipore (Transduction Laboratories)</td>
+      <td>05–104</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- pTyr1068 EGFR (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2236</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-actinin (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3134</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pERK1/2 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9101</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye-800 (goat anti mouse)</td>
+      <td>LI-COR</td>
+      <td>926–32210</td>
+      <td>(1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye-680 (goat anti mouse)</td>
+      <td>LI-COR</td>
+      <td>926–32220</td>
+      <td>(1:20000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG-B-Tau</td>
+      <td>Bruchez laboratory</td>
+      <td>Yan et al., 2015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG-Bis-SA</td>
+      <td>Bruchez laboratory</td>
+      <td>Perkins et al., 2018b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD158780</td>
+      <td>Millipore (Calbiochem)</td>
+      <td>513035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>human recombinant EGF</td>
+      <td>BD Bioscience</td>
+      <td>354052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mouse receptor-grade EGF</td>
+      <td>Corning</td>
+      <td>354010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>125-iodine, carrier free</td>
+      <td>PerkinElmer</td>
+      <td>NEZ033A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGF-Rhodamine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>E3481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (human)</td>
+      <td>siRNA to Dynamin 2 (SMARTpool)</td>
+      <td>Dharmacon/Thermo Fisher Scientific</td>
+      <td>Huang et al., 2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to Clathrin heavy chain (SMARTpool)</td>
+      <td>Dharmacon/Thermo Fisher Scientific</td>
+      <td>Huang et al., 2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sofware</td>
+      <td>SlideBook6</td>
+      <td>Intelligent-imaging Innovations, Inc</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sofware</td>
+      <td>Image Studio Lite</td>
+      <td>Li-COR, Inc</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>NIS Elements</td>
+      <td>Nikon</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents and antibodies
 
 Human recombinant EGF was from BD Bioscience. EGF-Rh was from Invitrogen. Monoclonal antibody to EGFR phosphotyrosine 1068 (pY1068), polyclonal antibody to α-actinin, polyclonal antibody to ERK1/2 and monoclonal antibody to phosphorylated ERK1/2 were from Cell Signaling Technology (Beverly, MA). EGFR monoclonal antibody 04–105 were from Transduction Laboratories. PD158780 was from Calbiochem. MG-B-Tau and MG-Bis-SA were synthesized by the Bruchez lab (Perkins et al., 2018b; Yan et al., 2015). All chemicals were from ThermoFisher unless stated otherwise.
 
-## Cell culture
+### Cell culture
 
 HeLa cells were grown in Dulbecco's Modified Eagle Medium (DMEM) containing 10% fetal bovine serum (Gibco, Life Bioscience), 10,000 U/ml Penicillin G and 10 mg/ml streptomycin. The identity of HeLa cells was confirmed by CTR genotyping.
 
-## CRISPR/Cas9-mediated gene editing
+### CRISPR/Cas9-mediated gene editing
 
 To generate EGFR tagged with the fluorogen-activating protein dL5 (Szent-Gyorgyi et al., 2013) (FAP), FAP dL5 sequence was inserted in the coding region of the EGFR gene after the signal peptide by CRISPR/Cas9-mediated gene-editing. A gRNA target site was identified by using online software from ATUM bio, CHOPCHOP, the Broad Institute sgRNA design tool, and the MIT CRISPR Design tool. The gRNA sequence AAGGTAAGGGCGTGTCTCGC[CGG] (PAM site in brackets) was identified by all above-mentioned software and consequently selected. The gRNA sequence was inserted into the PX459 V2.0 plasmid digested with BbsI using annealed oligos gRNA-1 plus and gRNA-1 minus. The donor template was constructed in a pUC18 vector background. We used 300 bp homology arms with flanking gRNA target sites, which has been shown to facilitate a high HDR efficiency (Zhang et al., 2017). Small flexible linkers were inserted between dL5 and the EGFR on both the 5’- and 3’-terminal ends to minimize any potential interference of dL5 on EGFR function. The 5’ and 3’ homology arms were amplified from genomic DNA using primer pairs gRNA-1 5'_HA_fwd/5’-HA-rev and 3'_HA_fwd/gRNA-1 3'_HA_rev, respectively. dL5 was amplified from a plasmid template using the primer pair FAP_fwd/FAP_rev. The resulting PCR products were gel purified and assembled in combination with SphI/SacI digested pUC18 vector by a Gibson assembly reaction. The central PAM sequence in the assembled donor template was changed from CGG to CGT by site-directed mutagenesis using primer pair gRNA-1 mut F/gRNA-1 mut R to prevent Cas9 cleavage of gene-edited alleles. Oligo sequences:
 
 HeLa cells were plated in a six-well plate and transfected the next day with equal amounts of PX459 with gRNA and donor template using Transit-2020 transfection reagent, following the manufacturer’s recommendations. The transfected cells were maintained, detached using a citric saline buffer and subjected to fluorescence-activated cell sorting (FACS) for dL5/MG fluorescence (640 nM excitation, 680 nM emission) after the addition of MG-B-Tau. The sorted cells were propagated, and FACS was used as above to transfer single cells with high dL5/MG fluorescence to 96-well plates to create clonal lines expressing FAP-EGFR.
 
-## EGF receptor internalization 96-well assay
+### EGF receptor internalization 96-well assay
 
 Gene-edited HeLa cells (EE7 clone) were plated into optical 96-well plates (Greiner bio-one µCLEAR) at 30% confluency. The bottom of the 96-well plates was pretreated with rainx to facilitate the use of a high NA water immersion objective. The next day, cells were washed twice with PBS and incubated in serum-free DMEM containing 0.1% BSA for 16–24 hr to diminish baseline EGFR activation. The following day, the media was aspirated, and the cells incubated for 1 min in DMEM containing 100 nM MG-Bis-SA pH to label surface-resident FAP-EGFR. Next, the cells were washed with PBS and incubated in prewarmed DMEM/0.1% BSA containing the indicated concentration of EGF in the tissue culture incubator for 15 min to allow for FAP-EGFR internalization. To stop the internalization, the media was aspirated and ice-cold HEPES-buffered solution (in mM, 140 NaCl, 5 KCl, 1 MgCl2, 0.1 CaCl2, 25 HEPES, pH 8) added to the cells to stop trafficking and magnify the difference between endosomal and surface-exposed receptors. The cells were kept on ice and microscopy commenced shortly thereafter. We used a Nikon ECLIPSE Ti-E microscopy system with an A1 resonant scanner and a 1.15 NA 40x water immersion objective to capture and stitch four image fields of every well using dual 561 nm/640 nm laser excitation and single emission (700/75 nm filter). The Nikon NIS Elements HCA JOBS module automatically calculated the average intensities of the emission from 561 nm/640 nm excitation for each stitched image. Parental HeLa cells were used for background signal correction.
 
 In experiments with PD158780, the cells were pretreated with the compound for 30 min before starting the assay, and PD158780 was present in all solutions during EGF treatment. For the EGF time course experiment, all cells were labeled with MG-Bis-SA at the same time and kept in DMEM/0.1% BSA until the addition of EGF at different time points. At the end of the experiment, all cells had their media aspirated and were incubated with ice-cold HEPES-buffered solution at the same time, followed by microscopy. For the MG-Bis-SA calibration curve, cells were plated, serum-starved and labeled with MG-Bis-SA as described above. Following the wash with PBS, buffer with incremental increase in pH value from pH 5 to pH 8 was added to each row of a 96-well plate and microscopy commenced as above (ion concentrations in buffer in mM, 140 NaCl, 5 KCl, 1 MgCl2, 1 CaCl2, 50 mM MES for pH <6.8 or 50 mM HEPES for pH >6.8).
 
-## siRNA-mediated knockdown
+### siRNA-mediated knockdown
 
 We used plates 1–3 of a Dharmacon siGENOME SMARTpool siRNA Library – Human Phosphatase (G-003705, Lot 10161) to test the effect of the knockdown of 240 different phosphatases with the assay. Cells were reverse transfected in 96-well plates, using 20 nM final siRNA concentration and 0.2 μl Dharmafect one per well, following the manufacturers recommendations. 48 hr later, media was aspirated, the cells washed with PBS and incubated in serum-free DMEM containing 0.1% BSA for 16–24 hr to diminish baseline EGFR activation. 1 ng/mL EGF was used to stimulate and measure EGFR internalization as described above. Duplex pools for CHC and dynamin-2 were from Dharmacon and characterized previously (Huang et al., 2004). Non-targeting siRNA was from Dharmacon.
 
-## Single-cell fluorescence microscopy
+### Single-cell fluorescence microscopy
 
 For live-cell imaging, glass coverslips with EE7 cells were mounted into the microscope chamber in 1 ml DMEM/0.1% BSA medium, placed onto the microscope stage adaptor, and z-stacks of confocal images were acquired using a spinning disk confocal imaging system based on a Zeiss Axio Observer Z1 inverted fluorescence microscope (with 63x Plan Apo PH NA 1.4), equipped with a computer-controlled Spherical Aberration Correction unit, Yokogawa CSU-X1, Photometrics Evolve 16-bit EMCCD camera, environmental chamber and piezo stage controller and lasers (405, 445, 488, 515, 561, and 640 nm), all controlled by SlideBook6 software (Intelligent Imaging Innovation, Denver, CO). 15 (unless indicated otherwise) serial two-dimensional confocal images at 400 nm intervals were acquired by exciting at 561 nm and 640 nm with the emission at 680 (70) nm for MG-Bis-SA and using a 561 nm channel for Rhodamine in the environmental chamber ensuring a constant temperature (37°C), humidity and 5% CO2 atmosphere throughout the duration of imaging. EGF-Rh or unlabeled EGF was injected into the stage chamber in large volume (0.2 ml), thus ensuring rapid distribution of the ligand. Z-plane change time was ~3 ms. All image acquisition settings were identical for experimental variants in each experiment.
 
 The 561/640 ratio images are presented in a quantitative pseudocolor mode. The value of the ratio is displayed stretched between the low and high values, according to a temperature-based lookup table with blue (cold) indicating low values and red (hot) indicating high values. To eliminate the distracting data from regions outside of cells, the 640 nm channel was used as a saturation channel, and the 561/640 ratio images are displayed as 640 nm-channel intensity modulated images. In these images, ratio data with 640 nm values greater than the high threshold of the fluorescence intensity are displayed at full saturation, whereas data values below the low threshold are displayed with no saturation (i.e. black).
 
-## Western blotting
+### Western blotting
 
 To probe for EGFR, and phosphorylated EGFR and ERK1/2, cells in 12-well plates were serum-starved overnight, treated with EGF at 37°C for 5 min, lysed in Triton X-100/Glycerol/Hepes buffer in the presence of orthovanadate and sodium fluoride as described (Pinilla-Macua et al., 2017). The lysates were resolved by 6% or 10% SDS-PAGE followed by transfer to the nitrocellulose membrane. Western blotting was performed with appropriate primary and secondary antibodies conjugated to far-red fluorescent dyes (IRDye-680 and −800) followed by detection using an Odyssey LI-COR system. Quantifications were performed using LI-COR software.
 
-## 125I-EGF binding and internalization
+### 125I-EGF binding and internalization
 
 Mouse receptor-grade EGF (Collaborative Research Inc, Bedford, MA) was iodinated using a modified Chloramine T method as described previously (Sorkin and Duex, 2010). Binding and internalization rates of 125I-EGF at 37°C were measured and analyzed as described (Sorkin and Duex, 2010). Quantifications of the ligand-bound EGFRs per cell were performed as described (Sorkin and Duex, 2010).
 
-## Statistical analysis
+### Statistical analysis
 
-Statistical significance (p value) was calculated using unpaired two-tailed Student’s t tests (GraphPad). The Z`-factor (Zhang et al., 1999) is a commonly accepted measure of the suitability and quality of an assay for HTS. It is defined by:1−((3σc++3σc−)/(|μc+−μc−|))where σc+ and σc- denote the standard deviation of the positive and negative controls, respectively, and µc+ and µc- denote the averages of the positive and negative controls, respectively. An assay with a Z`-factor between 0.5 and 1 is considered excellent for HTS (Zhang et al., 1999). The data for the dual-flashlight plot was calculated as described (Zhang, 2011).
+Statistical significance (p value) was calculated using unpaired two-tailed Student’s t tests (GraphPad). The Z`-factor (Zhang et al., 1999) is a commonly accepted measure of the suitability and quality of an assay for HTS. It is defined by:
+
+$$
+1−((3\sigma_{c+}+3\sigma_{c−})/(|\mu_{c+}−\mu_{c−}|))
+$$
+
+where σc+ and σc- denote the standard deviation of the positive and negative controls, respectively, and µc+ and µc- denote the averages of the positive and negative controls, respectively. An assay with a Z`-factor between 0.5 and 1 is considered excellent for HTS (Zhang et al., 1999). The data for the dual-flashlight plot was calculated as described (Zhang, 2011).

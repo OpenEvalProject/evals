@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.11285.001 Recently, a prototype dengue early warning system was developed to produce probabilistic forecasts of dengue risk three months ahead of the 2014 World Cup in Brazil. Here, we evaluate the categorical dengue forecasts across all microregions in Brazil, using dengue cases reported in June 2014 to validate the model. We also compare the forecast model framework to a null model, based on seasonal averages of previously observed dengue incidence. When considering the ability of the two models to predict high dengue risk across Brazil, the forecast model produced more hits and fewer missed events than the null model, with a hit rate of 57% for the forecast model compared to 33% for the null model. This early warning model framework may be useful to public health services, not only ahead of mass gatherings, but also before the peak dengue season each year, to control potentially explosive dengue epidemics. DOI: http://dx.doi.org/10.7554/eLife.11285.001
+Recently, a prototype dengue early warning system was developed to produce probabilistic forecasts of dengue risk three months ahead of the 2014 World Cup in Brazil. Here, we evaluate the categorical dengue forecasts across all microregions in Brazil, using dengue cases reported in June 2014 to validate the model. We also compare the forecast model framework to a null model, based on seasonal averages of previously observed dengue incidence. When considering the ability of the two models to predict high dengue risk across Brazil, the forecast model produced more hits and fewer missed events than the null model, with a hit rate of 57% for the forecast model compared to 33% for the null model. This early warning model framework may be useful to public health services, not only ahead of mass gatherings, but also before the peak dengue season each year, to control potentially explosive dengue epidemics.
 
 ## Introduction
 
@@ -40,39 +40,196 @@ From 12 June to 13 July 2014, Brazil hosted the 2014 Fédération Internationale
 
 ## Results
 
-## Comparison of probability forecast and observed dengue risk categories
+### Comparison of probability forecast and observed dengue risk categories
+
+Table 1 shows the dengue forecasts for June 2014 for the microregions where stadiums were located, issued three months before the World Cup, and published before the event (Lowe et al., 2014). For comparison, the observed DIR values are included in the table, along with the observed risk categories, determined using the medium and high dengue risk thresholds. Note that the dengue risk thresholds used by the National Dengue Control Programme are based on yearly dengue incidence rates (Ministério da Saúde, 2008). Therefore, we converted the monthly incidence to yearly equivalent incidence to make use of the medium and high dengue risk thresholds at a monthly time scale (see Materials and methods). Figure 1 shows the corresponding predictive distributions, the posterior predicted mean DIR and upper 95% prediction interval (dashed and dotted lines) and observed DIR (marked with an arrow). The comparison of the second and last columns of Table 1 reveals that the model correctly predicted dengue risk categories (highlighted in blue) for Fortaleza and Natal (high), Belo Horizonte, Manaus and Salvador (medium) and Curitiba and Porto Alegre (low). In Recife, the predicted category was high, but the observed category was medium. However, for Recife, the mean predicted DIR was almost equal to the observed DIR and the point estimate fell within the medium category (see Table 1, Figure 1). The definition of the alarm trigger threshold placed this microregion in the high category. This result highlights the difficulties of translating probabilistic information into simpler warnings, based on predefined probability trigger thresholds. The model 'missed' the unprecedented high incidence that was observed in Brasília and São Paulo in June 2014. However, the model predicted a 7% forecast probability of observing high risk in Brasília.
+
+**Table 1.**
+ Dengue risk forecast warnings and corresponding observations for June, 2014 for host microregions. Dengue risk forecast warnings and observed category for June 2014, for the microregions hosting the World Cup tournament. Low risk was defined as fewer than 100 cases per 100,000 inhabitants, medium risk as between 100 and 300 cases per 100,000 inhabitants, and high risk as greater than 300 cases per 100,000 inhabitants. If the probability of low risk was less than 68%, a medium risk forecast warning was issued. If the probability of high risk was concurrently greater than 18%, the forecast warning was upgraded to high risk. The observed DIR value is included. Microregions where the observed DIR fell into the same category as forecast (e.g. the forecast warning category was high and the observed DIR category was high), are shaded.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Microregion</th>
+      <th>Forecast warning</th>
+      <th>Probability (pL, pM, pH)</th>
+      <th>Observed DIR</th>
+      <th>Observed category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Belo Horizonte</td>
+      <td>Medium</td>
+      <td>p(65%, 24%, 11%)</td>
+      <td>126</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Brasília</td>
+      <td>Low</td>
+      <td>p(73%, 20%, 7%)</td>
+      <td>725</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Cuiabá</td>
+      <td>Low</td>
+      <td>p(71%, 22%, 7%)</td>
+      <td>168</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Curitiba</td>
+      <td>Low</td>
+      <td>p(100%, 0%, 0%)</td>
+      <td>4</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Fortaleza</td>
+      <td>High</td>
+      <td>p(34%, 20%, 46%)</td>
+      <td>507</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Manaus</td>
+      <td>Medium</td>
+      <td>p(63%, 25%, 12%)</td>
+      <td>110</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Natal</td>
+      <td>High</td>
+      <td>p(32%, 20%, 48%)</td>
+      <td>780</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Porto Alegre</td>
+      <td>Low</td>
+      <td>p(100%, 0%, 0%)</td>
+      <td>1</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Recife</td>
+      <td>High</td>
+      <td>p(57%, 24%, 19%)</td>
+      <td>161</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Salvador</td>
+      <td>Medium</td>
+      <td>p(56%, 27%, 17%)</td>
+      <td>149</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>São Paulo</td>
+      <td>Low</td>
+      <td>p(99%, 1%, 0%)</td>
+      <td>161</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Rio de Janeiro</td>
+      <td>Medium</td>
+      <td>p(62%, 25%, 13%)</td>
+      <td>32</td>
+      <td>Low</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11285/elife-11285-fig1-v1.jpg)
 
-**Figure 1.:** Posterior predictive distributions of dengue incidence rates (DIR) (base-10 logarithmic scale) for June 2014 showing the probability of low risk (blue), medium risk (orange) and high risk (pink) for June 2014, in the microregions hosting the World Cup tournament: (a) Belo Horizonte, (b) Brasília, (c) Cuiabá, (d) Curitiba, (e) Fortaleza, (f) Manaus, (g) Natal, (h) Porto Alegre, (i) Recife, (j) Salvador, (k) São Paulo and (l) Rio de Janeiro. Observed DIR indicated by black arrow. Posterior predictive mean and upper 95% prediction (credible) interval of the distribution indicated by a dashed and dotted line, respectively.DOI: http://dx.doi.org/10.7554/eLife.11285.004
+**Figure 1.:** Posterior predictive distributions of dengue incidence rates (DIR) (base-10 logarithmic scale) for June 2014 showing the probability of low risk (blue), medium risk (orange) and high risk (pink) for June 2014, in the microregions hosting the World Cup tournament: (a) Belo Horizonte, (b) Brasília, (c) Cuiabá, (d) Curitiba, (e) Fortaleza, (f) Manaus, (g) Natal, (h) Porto Alegre, (i) Recife, (j) Salvador, (k) São Paulo and (l) Rio de Janeiro. Observed DIR indicated by black arrow. Posterior predictive mean and upper 95% prediction (credible) interval of the distribution indicated by a dashed and dotted line, respectively.
 
-Probabilistic forecasts were generated not only for the twelve host microregions, but for all 553 microregions of Brazil. This gives an idea of how the model framework might contribute towards a nationwide dengue early warning system in the future.
+Probabilistic forecasts were generated not only for the twelve host microregions, but for all 553 microregions of Brazil. This gives an idea of how the model framework might contribute towards a nationwide dengue early warning system in the future. Figure 2 shows a ternary probabilistic forecast map (Jupp et al., 2012; Lowe et al., 2014) and the corresponding observed dengue incidence rate categories (low, medium and high). The model correctly predicted, with high certainty (the greater the colour saturation, the greater the certainty), low dengue risk in South Brazil and large areas of the Amazon. Areas with a higher chance of observing high risk were correctly detected for areas in North East Brazil. Actual dengue incidence rates were higher than expected in Brasília, although the likelihood of observing higher dengue incidence for the surrounding region was relatively greater than observing lower incidence. For some microregions in the state of São Paulo, the model was uncertain of the most likely category (indicated by pale colours). Some of these areas experienced high dengue incidence rates in June 2014.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11285/elife-11285-fig2-v1.jpg)
 
-**Figure 2.:** (a) Probabilistic dengue forecast for June 2014. The continuous colour palette (ternary phase diagram) conveys the probabilities assigned to low-risk, medium-risk, and high-risk dengue categories. Category boundaries defined as 100 cases per 100,000 inhabitants and 300 cases per 100,000 inhabitants. The greater the colour saturation, the more certain is the forecast of a particular outcome. Strong red shows a higher probability of high dengue risk. Strong blue indicates a higher probability of low dengue risk. Colours close to white indicate a forecast similar to the benchmark (long-term average distribution of dengue incidence in Brazil, June, 2000–2013: pL=68%, pM=16%, pH=16%), marked by a cross. (b) Observed dengue incidence rate (DIR) categories for June, 2014.DOI: http://dx.doi.org/10.7554/eLife.11285.005
+**Figure 2.:** (a) Probabilistic dengue forecast for June 2014. The continuous colour palette (ternary phase diagram) conveys the probabilities assigned to low-risk, medium-risk, and high-risk dengue categories. Category boundaries defined as 100 cases per 100,000 inhabitants and 300 cases per 100,000 inhabitants. The greater the colour saturation, the more certain is the forecast of a particular outcome. Strong red shows a higher probability of high dengue risk. Strong blue indicates a higher probability of low dengue risk. Colours close to white indicate a forecast similar to the benchmark (long-term average distribution of dengue incidence in Brazil, June, 2000–2013: pL=68%, pM=16%, pH=16%), marked by a cross. (b) Observed dengue incidence rate (DIR) categories for June, 2014.
+
+Figure 3 shows the probability of DIR falling in the category that was actually observed. The deeper the colour shading, the greater the probability of observing the correct category. This gives an indication of the certainty of the model in predicting correct outcomes. In general, a high degree of certainty in the forecast is found in the south region, parts of the Amazon and many densely populated cities along the eastern coastline. However, as the historical distribution of DIR is not symmetrical, with a greater proportion of the distribution in the low category, compared to the high category (as epidemics can be considered as 'extreme events'), it is interesting to consider each category individually. Figure 4a–c show conditional maps of the forecast probability given that low, medium and high DIR was observed, respectively. The grey areas indicate areas where the observed DIR fell in the other two categories and are therefore not considered in each individual map. The probability trigger thresholds defined in Lowe et al., (2014) are taken into account to weight the graduated colour bars, ranging from 0% to 100% chance of the observed category. Using the forecasting model, if the probability of low risk were greater than 68%, a low risk warning would have been assigned. If the probability of low risk were less than or equal to 68%, a medium risk warning would have been assigned (giving a medium trigger threshold of 32%). If simultaneously, high risk were greater than 18%, a high risk warning would have been assigned. Therefore, lower probabilities are assigned more weight (represented by colour darkness) in the high category plot than the low category plot. Given that low risk was observed, the model framework would have correctly assigned a low risk warning for 67% of the microregions. Given that high risk was observed, the model framework would have correctly assigned a high risk warning for 57% of the microregions. High risk was correctly forecast with considerable certainty in microregions in the north east of Brazil near Fortaleza (see Figure 4c). Although the model 'missed' the high risk observed in Brasília, it was able to correctly detect, with a relatively high degree of certainty high risk in surrounding microregions.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11285/elife-11285-fig3-v1.jpg)
 
-**Figure 3.:** Probability of observing the correct DIR category (low, medium and high). The graduated colour bar represents the probability of observing any given category (ranging from 0%, pale colours, to 100%, deep colours).DOI: http://dx.doi.org/10.7554/eLife.11285.006
+**Figure 3.:** Probability of observing the correct DIR category (low, medium and high). The graduated colour bar represents the probability of observing any given category (ranging from 0%, pale colours, to 100%, deep colours).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11285/elife-11285-fig4-v1.jpg)
 
-**Figure 4.:** Forecast probability given that (a) low, (b) medium and (c) high DIR was observed. Grey areas indicate that other DIR categories were observed and are therefore not considered. The graduated colour bar represents the probability of observing the given category (ranging from 0%, pale colours, to 100%, deep colours). Note, the alarm trigger thresholds are marked with a star (*). For (a) low risk warnings, pL > 68%, for (b) medium risk warnings, pM > 32% and for (c) high risk warnings, pH > 18%. Colour bars are weighted, with increased saturation beyond the alarm trigger threshold to reflect the correct assignation of warnings.DOI: http://dx.doi.org/10.7554/eLife.11285.007
+**Figure 4.:** Forecast probability given that (a) low, (b) medium and (c) high DIR was observed. Grey areas indicate that other DIR categories were observed and are therefore not considered. The graduated colour bar represents the probability of observing the given category (ranging from 0%, pale colours, to 100%, deep colours). Note, the alarm trigger thresholds are marked with a star (*). For (a) low risk warnings, pL > 68%, for (b) medium risk warnings, pM > 32% and for (c) high risk warnings, pH > 18%. Colour bars are weighted, with increased saturation beyond the alarm trigger threshold to reflect the correct assignation of warnings.
 
-## Comparison of forecast model framework to a null model
+### Comparison of forecast model framework to a null model
 
-Useful predictions from a forecasting system are likely to be those that recommend changes from the activities that would otherwise have taken place anyway, which are typically based on the 'normal' dengue season. Beyond that, predictions that forecast higher than expected incidence are critical, as they could advocate increased interventions. To assess the performance of the forecast model framework beyond a simple seasonal profile, we defined a null model as the average DIR in each microregion for June 2000–2013. We consider the ability of both the forecast model and the null model to predict 'high risk' dengue across Brazil.
+Useful predictions from a forecasting system are likely to be those that recommend changes from the activities that would otherwise have taken place anyway, which are typically based on the 'normal' dengue season. Beyond that, predictions that forecast higher than expected incidence are critical, as they could advocate increased interventions. To assess the performance of the forecast model framework beyond a simple seasonal profile, we defined a null model as the average DIR in each microregion for June 2000–2013. We consider the ability of both the forecast model and the null model to predict 'high risk' dengue across Brazil. Table 2 shows a summary of contingency table results for observed DIR exceeding the high risk epidemic threshold (300 cases per 100,000 inhabitants) using the probabilistic category forecast model and the null model for June 2014. Results show that for the June 2014 event, the forecast model predicted a greater number of true positives (hits) and fewer false negatives (misses) than the null model (see Table 2, Materials and methods). This gave a hit rate of 57% (miss rate of 43%) when using the forecast model and a hit rate of 33% (miss rate of 67%) when using the null model. However, the forecast model also tended to produce more false positives (or false alarms) than the null model (see Table 2). The two types of error (false alarms and missed events) have very different consequences for public health. For example, failing to predict an epidemic that then occurs (type II error – a miss) is much more damaging than predicting an epidemic that does not materialise (type I error – a false alarm) (Stephenson, 2000). Figure 5 shows hit rates and false alarm rates for both the forecast and null model, calculated in 'leave one year out' cross-validation mode from 2000–2013, i.e. by excluding the year for which the prediction is valid when estimating model parameters (see Materials and methods). Results for the 2014 event are also included. The hit rate for the forecast model exceeds that of the null model for all years, expect 2004, when dengue incidence was at its lowest across the whole of Brazil.
+
+**Table 2.**
+ Summary of contingency table results for observed DIR exceeding the epidemic risk threshold. Summary of contingency table results for observed DIR exceeding the high risk epidemic threshold (300 cases per 100,000 inhabitants) using the probabilistic category forecast model and the null model (mean DIR, June 2000–2013) for June 2014.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Performance measures</th>
+      <th>Forecast model probabilistic</th>
+      <th>Null model seasonal mean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hit</td>
+      <td>81</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>False alarm (type I error)</td>
+      <td>94</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Miss (type II error)</td>
+      <td>60</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>Correct rejection</td>
+      <td>318</td>
+      <td>357</td>
+    </tr>
+    <tr>
+      <td>Hit rate</td>
+      <td>57%</td>
+      <td>33%</td>
+    </tr>
+    <tr>
+      <td>False alarm rate</td>
+      <td>23%</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>Miss rate</td>
+      <td>43%</td>
+      <td>67%</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11285/elife-11285-fig5-v1.jpg)
 
-**Figure 5.:** Comparison of (a) hit rates and (b) false alarm rates for the event of observed DIR exceeding the high risk epidemic threshold (300 cases per 100,000 inhabitants) using the probabilistic category forecast model (blue circles) and the null model (orange triangles) for June 2000–2014. The vertical bars around each point represent the 95% confidence intervals. The vertical dotted line separates the leave-one-out cross validation results (2000–2013) from the true predicted results for 2014.DOI: http://dx.doi.org/10.7554/eLife.11285.009
+**Figure 5.:** Comparison of (a) hit rates and (b) false alarm rates for the event of observed DIR exceeding the high risk epidemic threshold (300 cases per 100,000 inhabitants) using the probabilistic category forecast model (blue circles) and the null model (orange triangles) for June 2000–2014. The vertical bars around each point represent the 95% confidence intervals. The vertical dotted line separates the leave-one-out cross validation results (2000–2013) from the true predicted results for 2014.
 
-To assess the additional value of the forecasting system beyond that of the seasonal profile, it is useful to consider the full posterior predictive distributions from the model, compared to the null model and associated prediction intervals.
+To assess the additional value of the forecasting system beyond that of the seasonal profile, it is useful to consider the full posterior predictive distributions from the model, compared to the null model and associated prediction intervals. Figure 6 shows time series of observed and predicted dengue incidence rates for June 2000–2014 for the 12 host microregions. The posterior predictive mean and upper 95% prediction (credible) interval from the forecast model, and the sample mean and upper 95% prediction interval from the null model are also included. The forecast and null model predictions are calculated in 'leave one year out' cross-validation mode from 2000–2013, i.e., by excluding the year for which the prediction is valid when estimating model parameters (see Materials and methods). Note, the predictions for 2014 are the only 'true' forecasts (i.e., no information is included beyond the forecast issue date). When considering the posterior predictive mean of the forecast model, some of the inter-annual variations in the observations are captured by the model, for example in Belo Horizonte, Manaus and Salvador. However, in some other places, the mean prediction from the forecast and the null model are either very similar or, in some years, the null model mean is closer to the observed value, for example, in Cuiabá in 2009. During years with relatively low DIR, the predictions from the forecast model tend to be more precise than the null model, with narrower prediction (credible) intervals. Further, when DIR is exceptionally high, the forecast model is able to account for this increased possibility of an outbreak in most cases, compared to the null model. This is evident for the dengue epidemics that occurred in Belo Horizonte in 2010 and 2013 (Figure 6a), Salvador in 2010 (Figure 6j) and Manaus in 2011 (Figure 6f). Although the forecast model is far from perfect, in general, it is better able to detect extreme dengue incidence rates than the null model.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11285/elife-11285-fig6-v1.jpg)
 
-**Figure 6.:** Observed DIR (pink squares), posterior mean DIR (blue circles) and upper 95% prediction (credible) interval from forecast model (blue dashed line) and mean DIR (orange triangles) and upper 95% prediction interval (orange dashed line) from null model, June 2000–2014 in the host microregions (a) Belo Horizonte, (b) Brasília, (c) Cuiabá, (d) Curitiba, (e) Fortaleza, (f) Manaus, (g) Natal, (h) Porto Alegre, (i) Recife, (j) Salvador, (k) São Paulo and (l) Rio de Janeiro. The vertical dotted line separates the leave-one-out cross validation results (2000–2013) from the true predicted results for 2014.DOI: http://dx.doi.org/10.7554/eLife.11285.010
+**Figure 6.:** Observed DIR (pink squares), posterior mean DIR (blue circles) and upper 95% prediction (credible) interval from forecast model (blue dashed line) and mean DIR (orange triangles) and upper 95% prediction interval (orange dashed line) from null model, June 2000–2014 in the host microregions (a) Belo Horizonte, (b) Brasília, (c) Cuiabá, (d) Curitiba, (e) Fortaleza, (f) Manaus, (g) Natal, (h) Porto Alegre, (i) Recife, (j) Salvador, (k) São Paulo and (l) Rio de Janeiro. The vertical dotted line separates the leave-one-out cross validation results (2000–2013) from the true predicted results for 2014.
 
 ## Discussion
 
@@ -100,19 +257,19 @@ The model framework could also be downscaled and refined to account for within c
 
 Several research groups developed dengue risk maps and forecasts ahead of the World Cup (Barcellos and Lowe, 2014a; Hay, 2013; Lowe et al., 2014; Massad et al., 2014; van Panhuis et al., 2014). While results varied between studies, all agreed that the northeast cities of Fortaleza and Natal would be at greater risk of dengue transmission and that the risk for the southern cities of Porto Alegre and Curitiba would be very low. Massad et al. (2014) also forecast a greater risk to tourists in the city of Rio de Janeiro. Only one study corrected predicted elevated dengue risk for teams and tourists in Brasília, using an Empirical Bayes model and weekly dengue incidence data up to May 2014 (i.e., one month lead time) (van Panhuis et al., 2014). Given the different research questions, methods, data and underlying populations that were used for each study, the direct comparison of these model results is not feasible in the absence of a consensus to translate results into equivalent quantities (Lowe et al., 2015). For example, the system evaluated here generated probabilistic distributions of yearly equivalent dengue incidence rates in the Brazilian population, at the monthly time scale and microregion spatial scale with 3–4 months lead-time, while other studies estimated the number of visitors at risk of dengue infection in specific cities. This emphasises the importance of dengue model inter-comparison projects, such as the 'Epidemic Prediction Initiative' launched by the White House Office of Science and Technology Policy (http://dengueforecasting.noaa.gov/). The comparison of different models, forecasting common targets, will identify strengths and weakness in model formulation and gaps in data and methods.
 
-## Conclusion
+### Conclusion
 
 Several studies have developed models for dengue fever, using climate and other risk factors, and tested predictive performance in retrospective mode. However, none of these studies have incorporated real-time seasonal climate forecasts and epidemiological data to predict future dengue risk. Therefore, to our knowledge, this work constitutes the first evaluation of a nationwide dengue early warning, issued before a global mass gathering. The dengue early warnings were disseminated to the Ministry of Health, the general public and visitors travelling to Brazil, prior to the World Cup. The predictions were incorporated into the European Centre for Disease Control (ECDC) health risk assessment (ECDC, 2014) and reported by more than 18 international press outlets. As a result, the forecast by Lowe et al. (2014), along with others (Hay, 2013; Massad et al., 2014), further contributed by raising general awareness about dengue fever and the risk of contracting the disease when travelling to endemic regions. This dengue early warning framework may be useful, not only ahead of mass gatherings, but also before the peak dengue season each year, to control or contain potentially explosive dengue epidemics. The use of real-time seasonal climate forecasts and early epidemiological reports in routine dengue early warnings is now a priority for the Brazilian Climate and Health Observatory (www.climasaude.icict.fiocruz.br), in collaboration with the Brazilian Institute for Space Research. We hope this prototype will serve as a demonstration for scientists, health surveillance teams and decision makers of the data and tools required to produce, communicate and evaluate timely predictions of climate-sensitive disease risk.
 
 ## Materials and methods
 
-## Data
+### Data
 
 We obtained dengue data for June 2014 from the Notifiable Diseases Information System (SINAN), organised by the Brazilian Ministry of Health. We then aggregated the cases for the 5570 municipalities, 42% of which have less then 10,000 inhabitants, to the microregion level. A microregion is defined as an aggregate of neighbouring municipalities, with common economic interests and frequent population exchanges. This helps to alleviate problems of low population numbers and misreporting, due to variations in availability of health services/epidemiological facilities at the municipality level. This data includes confirmed cases of dengue fever, including mild infections, dengue haemorrhagic fever, and shock syndrome. Dengue cases can be confirmed by laboratory exams or clinical and epidemiological evidence. In the second case, a patient must present at least two of the following symptoms: high fever, severe headache, severe eye pain, joint and muscle pain, mild bleeding manifestation or low white cell count. In addition to these symptoms, the patient must have been in areas where dengue is being transmitted or where there has been an infestation of Ae. aegypti in the past 15 days (Ministério da Saúde, 2005). Dengue notification records are considered a priority in the epidemiological surveillance system in Brazil. Data flow is accelerated in relation to other diseases. About 50% of cases are reported within 3 days after the first symptoms, and 90% of cases are digitised within 7 days of notification (Barbosa et al., 2015). During outbreaks, this flow tends to be speeded up, adopting optimisation measures, for example, using 'clinical and epidemiological evidence' to confirm cases that could not be submitted for laboratory confirmation. These criteria allow accelerated case reporting, prioritising sensitivity and opportunity rather than specificity of information (Duarte and França, 2006). In fact, during high incidence periods, the proportion of cases confirmed by laboratory criteria is lower than during low incidence periods and 'clinical and epidemiological evidence' is a common procedure for case confirmation. On the other hand, about 50% of suspect cases are subsequently confirmed after laboratory tests in epidemic periods, while in periods of low transmission intensity, approximately 30% of cases are confirmed, revealing good predictive value of suspected cases (Barbosa et al., 2015). Therefore, after post-processing, some cases are discarded because they have negative serology. However, beyond these 30% of cases, identification of serotype is not carried out by laboratory tests, which hinders the understanding of transmission dynamics and population susceptibility level. Since recent data are still subject to confirmation of cases and elimination of duplicate registers, the initial figures of dengue cases may be modified in the following months and will most likely be official by the end of 2015. These data will then be made publicly available via the Health Information Department (DATASUS, http://dtr2004.saude.gov.br/sinanweb/).
 
 We used 2014 population estimates obtained from the Brazilian Institute for Geography and Statistics (IBGE, 2014) to convert the case data into dengue incidence rates (DIR), per 100,000 inhabitants. Other estimates of population for inter census years are produced by national institutions and may present discrepancies, mainly for small populations and newly created municipalities. According to the methodology used by the Ministry of Health, the DIR is calculated for a geographical space in a given year (PAHO, 2008). As the dengue risk thresholds used by the National Dengue Control Programme are based on yearly dengue incidence rates (Ministério da Saúde, 2008), it is necessary to use a proportion (1/12) of yearly population estimate as the denominator in the dengue incidence rate calculation, to make use of this at a monthly time scale. Therefore, we converted the monthly incidence to yearly equivalent incidence to make use of the risk thresholds of 100 and 300 cases per 100,000 per year. This is consistent with the metrics published in the Epidemiological Bulletins of the Ministry of Health. Our goal was to provide measures that can be easily interpreted by the Dengue Control Programme and translated into well understood risk levels (low, medium, high).
 
-## Dengue forecast formulation and translation
+### Dengue forecast formulation and translation
 
 A spatio-temporal Bayesian hierarchical model (Lowe et al., 2011, 2013, 2014) was formulated, using monthly dengue cases, from 2000 to 2013, for 553 Brazilian microregions as the response variable. Based on findings from previous studies (Lowe et al., 2013), the climate variables used to formulate the model were three-month average temperature (Fan and Van den Dool, 2008) and precipitation (Adler et al., 2003) anomalies (departures from the long-term average), over the three months preceding the dengue month of interest. This is equivalent to a two month lag when considering the mid-point of the three month average. Lags of 1–3 months are typically used when modelling dengue (Lowe et al., 2015b), to try and capture the impact of rainfall on mosquito breeding sites and the effect of temperature on the mosquito life cycle, although these relationships are still not well understood. Other explanatory variables included population density, altitude, and dengue relative risk (ratio of observed to expected cases) lagged by four months. Zone-specific seasonality was accounted for using autocorrelated annual cycles (i.e. by allowing each calendar month to depend on the previous month) for different Brazilian ecological zones (e.g. Amazon, Caatinga, Cerrado, Atlantic Pampa, Pantanal). Unknown confounding factors (e.g. health care and vector control disparities between microregions) and dependency structures (i.e., human mobility between neighbouring areas) were allowed for using area-specific unstructured and structured random effects (see Lowe et al. (2014) for further details).
 
@@ -120,10 +277,52 @@ To produce the forecast for June 2014, the model was driven by (1) real-time sea
 
 Posterior predictive distributions were simulated for every microregion to determine the probability of dengue incidence rates exceeding predefined risk thresholds (see Figure 1). Probability forecasts (pL, pM, pH) were issued for low (fewer than 100 dengue cases per 100,000 inhabitants), medium (between 100 and 300 dengue cases per 100,000 inhabitants) and high (more than 300 dengue cases per 100,000 inhabitants) risk. These results were presented using a visualisation technique (Jupp et al., 2012), where the forecast for each microregion was expressed as a colour determined by a combination of three probabilities, with colour saturation used to indicate certainty for a particular category (see Figure 2a). We then used a receiver operating characteristic (ROC) analysis of past forecasts and observations from 2000–2013 to define optimal probability thresholds for warnings. If the probability of low risk was less than 68%, a medium risk forecast warning was issued. If the probability of high risk was concurrently greater than 18%, the forecast warning was upgraded to high risk (see Table 1).
 
-## Dengue forecast evaluation
+### Dengue forecast evaluation
 
-After the event, we compared the published probabilistic predictions with observed DIR data for June 2014. We defined a null model as the seasonal average of past dengue incidence (i.e., mean DIR for June 2000–2013). We assessed the ability of the forecast model and the null model to determine the binary event of DIR exceeding 300 cases per 100,000 inhabitants (i.e. the high risk threshold) for n=553 microregions in Brazil (Table 2). Table 3 shows the two ways for the forecast to be correct (either a hit or a correct rejection) and two ways for the forecast to be incorrect (either a false alarm or a miss). Cell count a is the number of events correctly forecast to occur, i.e. the number of hits; cell count b is the number of events incorrectly forecast to occur, i.e., the number of false alarms; cell count c is the number events incorrectly forecast not to occur, i.e., the number of misses; and cell count d is the number of event correctly forecast not to occur, i.e., the number of correct rejections (Jolliffe and Stephenson, 2012). We calculated performance measures, such as the hit rate; the proportion of events (i.e., epidemics) that were correctly predicted (a/(a+c), also know as true positive rate or sensitivity) and the false alarm rate; the proportion of events that were predicted but did not occur (b/(b+d), also know as false positive rate or 1-specificity). The false alarm rate can be interpreted as the rate of making a 'type I error', whereas the 'miss rate,' equal to one minus the hit rate, measures the rate of making a 'type II error' (Stephenson, 2000).10.7554/eLife.11285.011Table 3.The four possible outcomes for categorical forecasts of a binary event.DOI: http://dx.doi.org/10.7554/eLife.11285.011Event observed YesNoTotalForecast warning issued YesHit (a)False alarm (b)a+bNoMiss (c)Correct rejection (d)c+dTotala+cb+da+b+c+d=n
+After the event, we compared the published probabilistic predictions with observed DIR data for June 2014. We defined a null model as the seasonal average of past dengue incidence (i.e., mean DIR for June 2000–2013). We assessed the ability of the forecast model and the null model to determine the binary event of DIR exceeding 300 cases per 100,000 inhabitants (i.e. the high risk threshold) for n=553 microregions in Brazil (Table 2). Table 3 shows the two ways for the forecast to be correct (either a hit or a correct rejection) and two ways for the forecast to be incorrect (either a false alarm or a miss). Cell count a is the number of events correctly forecast to occur, i.e. the number of hits; cell count b is the number of events incorrectly forecast to occur, i.e., the number of false alarms; cell count c is the number events incorrectly forecast not to occur, i.e., the number of misses; and cell count d is the number of event correctly forecast not to occur, i.e., the number of correct rejections (Jolliffe and Stephenson, 2012). We calculated performance measures, such as the hit rate; the proportion of events (i.e., epidemics) that were correctly predicted (a/(a+c), also know as true positive rate or sensitivity) and the false alarm rate; the proportion of events that were predicted but did not occur (b/(b+d), also know as false positive rate or 1-specificity). The false alarm rate can be interpreted as the rate of making a 'type I error', whereas the 'miss rate,' equal to one minus the hit rate, measures the rate of making a 'type II error' (Stephenson, 2000).
+
+**Table 3.**
+ The four possible outcomes for categorical forecasts of a binary event.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th colspan="2">Event observed</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Total</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Forecast warning issued</td>
+      <td>Yes</td>
+      <td>Hit (a)</td>
+      <td>False alarm (b)</td>
+      <td>a+b</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>Miss (c)</td>
+      <td>Correct rejection (d)</td>
+      <td>c+d</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>a+c</td>
+      <td>b+d</td>
+      <td>a+b+c+d=n</td>
+    </tr>
+  </tbody>
+</table>
 
 We compared time series of observed and predicted DIR from the forecast and null model for June 2000–2014 in the twelve host microregions. The mean of the posterior predictive distribution from the forecast model and the 95% prediction (credible) interval, obtained from the 2.5% and 97.5% percentiles of the distribution were calculated for June 2014, using the forecast model fitted to data from 2000–2013 (note, the lower 95% prediction interval from the forecast model was nearly always equal to zero and is therefore not shown in the figures). For the years 2000–2013, the model was fitted 14 times, excluding one year at a time when estimating model parameters, to produce 'cross validated' predictions to test against 'out-of-sample' data (i.e. the year for which the predictions are valid).
 
-For the null model, the 95% prediction intervals for the sample mean was calculated as y¯±tn−1,α/2s1+1n, where y¯ is the sample mean, tn−1,α/2 is the 100(1-α/2)th percentile of T Distribution, with n−1 degrees of freedom, and s is the standard error. For the 2014 null model prediction, the mean, standard error and 95% prediction intervals were calculated using past data for June 2000–2013 (n=14). For 2000–2013, the null model mean, standard error and 95% prediction intervals were calculated in cross-validated mode, by excluding one year at a time (n=13) (note, the lower 95% prediction interval for the null model was nearly always less than zero and is therefore not shown in the figures).
+For the null model, the 95% prediction intervals for the sample mean was calculated as $y¯\pmt_{n−1,\alpha/2}s\sqrt{1+\frac{1}{n}}$, where $y¯$ is the sample mean, $t_{n−1,\alpha/2}$ is the 100(1-α/2)th percentile of T Distribution, with n−1 degrees of freedom, and s is the standard error. For the 2014 null model prediction, the mean, standard error and 95% prediction intervals were calculated using past data for June 2000–2013 (n=14). For 2000–2013, the null model mean, standard error and 95% prediction intervals were calculated in cross-validated mode, by excluding one year at a time (n=13) (note, the lower 95% prediction interval for the null model was nearly always less than zero and is therefore not shown in the figures).

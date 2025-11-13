@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Interdisciplinary Biological Sciences, Northwestern University Evanston United States
-2. https://ror.org/000e0be47 Department of Chemical and Biological Engineering, Northwestern University Evanston United States
-3. https://ror.org/000e0be47 Northwestern Institute on Complex Systems, Northwestern University Evanston United States
-4. https://ror.org/000e0be47 Department of Molecular Biosciences, Northwestern University Evanston United States
-5. https://ror.org/000e0be47 Department of Physics and Astronomy, Northwestern University Evanston United States
-6. https://ror.org/000e0be47 The Potocsnak Longevity Institute, Northwestern University Chicago United States
-7. https://ror.org/000e0be47 Simpson Querrey Lung Institute for Translational Science, Northwestern University Chicago United States
+1. Interdisciplinary Biological Sciences, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+2. Department of Chemical and Biological Engineering, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+3. Northwestern Institute on Complex Systems, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+4. Department of Molecular Biosciences, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+5. Department of Physics and Astronomy, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+6. The Potocsnak Longevity Institute, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+7. Simpson Querrey Lung Institute for Translational Science, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ Research into human genes concentrates on a subset of genes that were already fr
 
 Although -omics technologies can provide insights on numerous genes across the genome at a time and thus offer the promise to counter historically acquired research patterns (Collins et al., 2003; Shendure et al., 2019; Lloyd et al., 2020; Kustatscher et al., 2022), this discrepancy has persisted (Haynes et al., 2018; Rodriguez-Esteban and Jiang, 2017; Oprea et al., 2018; Sinha et al., 2018; Wood et al., 2019; Donohue and Love, 2024) even as the popularity of -omics technologies has risen (Stoeger and Nunes Amaral, 2022; Peña-Castillo and Hughes, 2007; Ellens et al., 2017). We therefore sought to use bibliometric data to delineate where and why understudied human protein-coding genes are abandoned as research targets following -omics experiments. In the absence of any prior quantitative testing of existing hypotheses, it remains unclear whether policies to promote the exploration of a greater set of disease-related genes should focus on how experiments are conducted, how results are reported, or how these results are subsequently received by other scientists.
 
-## Data
+### Data
 
 We considered 450 genome-wide association studies (GWAS, from studies indexed by the NHGRI-EBI GWAS catalog [Buniello et al., 2019]), 296 studies using affinity purification–mass spectrometry (AP-MS, indexed by BioGRID [Oughtred et al., 2021]), 148 transcriptomic studies (indexed by the EBI Gene Expression Atlas, EBI-GXA [Papatheodorou et al., 2018]), and 15 genome-wide screens using CRISPR (indexed by BioGRID Open Repository of CRISPR Screens, BioGRID ORCS [Oughtred et al., 2021]) (see PRISMA diagrams in Figure 1—figure supplement 1, Figure 1—figure supplement 2, Figure 1—figure supplement 3, and Figure 1—figure supplement 4). We denote genes that are found to have statistically significant changes in expression or associations with a phenotype as ‘hit’ genes.
 
@@ -37,9 +37,33 @@ As a surrogate for a given gene having been investigated closer, we consider whe
 
 ## Results
 
-## Understudied genes are abandoned at synthesis/writing stage
+### Understudied genes are abandoned at synthesis/writing stage
 
 We sought to identify at which point in the scientific process understudied genes are ignored as research targets in investigations using -omics experiments (Figure 1A). To receive scholarly attention, a gene must travel through a pipeline from biological reality to experimental results to write-up of those results. These results must be extended by subsequent research by other scholars. Understudied genes do not progress all the way through the pipeline, but it is unclear where this leak primarily occurs. The first possibility is that some genes are less studied because they are rarely identified as hits in experiments. Prior studies have, however, shown that understudied genes are frequent hits in high-throughput experiments (Riba et al., 2016; Haynes et al., 2018; Stoeger and Nunes Amaral, 2020), suggesting that this is not the case. The second possibility is that understudied genes are frequently found as hits in high-throughput experiments but are not investigated further by the authors. The final possibility is that subsequent studies do not continue work on understudied genes revealed by the initial study.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-v1.jpg)
+
+**Figure 1.:** (a) Conceptual diagram depicting possible points of abandonment for understudied genes in studies using high-throughput -omics experiments. (b) We identified articles reporting on genome-wide CRISPR screens (CRISPR, 15 focus articles and 18 citing articles), transcriptomics (T-omics, 148 focus articles and 1,678 citing articles), affinity purification–mass spectrometry (AP-MS, 296 focus articles and 1,320 citing articles), and GWAS (450 focus articles and 3,524 citing articles). Focusing only on protein-coding genes, we retrieved data uploaded to repositories describing which genes came up as ‘hits’ in each experiment. We then retrieved the hits mentioned in the titles and abstracts of those articles and hits mentioned in the titles and abstracts of articles citing those articles. Unique hit genes are only counted once. Bibliometric data reveals that understudied genes are frequently hits in -omics experiments but are not typically highlighted in the title/abstract of reporting articles, nor in the title/abstract or articles citing reporting articles. For example, the results for CRISPR were obtained from 15 focus studies (original research) and 18 subsequent studies (papers citing focus articles). Those 15 studies identified 9268 genes where loss-of-function changed phenotypes but, in their titles and abstracts, mentioned only 18 of those 9268 genes. While the 9268 hit genes have received similar research attention to the entirety of protein-coding genes, the 18 hit genes mentioned in the title or abstract are significantly better studied (p=0.0033 by two-side Mann-Whitney U test). The articles citing the focus articles also only mentioned in their titles and abstracts 19 highly-studied hit genes. ** denotes p<0.01 and *** denotes p<0.001 by two-sided Mann-Whitney U test, comparing genes highlighted in title/abstract to genes present in hit lists.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** GWAS p-value threshold for significance was set to 1e-10 and transcriptomics FDR threshold for significance was set to 0.0001. Alternative thresholding was not available for AP-MS or CRISPR because significance calling was complex and varied across experiments in both categories. *** denotes p<0.001 by two-sided Mann-Whitney U test.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** *** denotes p<0.001 by two-sided Mann-Whitney U test.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** * denotes p<0.05 and *** denotes p<0.001 by two-sided Mann-Whitney U test.
 
 To evaluate these three possibilities, we gathered high-throughput experimental results and the titles and abstracts of articles reporting on these results, as well as the titles and abstracts of articles citing these reporting articles (focus studies). We then quantified the attention that ‘hit’ genes from these experiments had received by counting their occurrences in titles of abstracts within the entire biomedical literature excluding these high-throughput experiments. For example, the results for transcriptomics were obtained from 148 focus studies (original research) and 1678 subsequent studies (articles citing focus articles; green boxes Figure 1B). Those 148 studies identified 18,295 genes to be differentially expressed in at least one experiment but, in their titles and abstracts, mentioned only 161 of those 18,295 genes (Figure 1B). While the 18,295 genes have received similar research attention as the entirety of protein-coding genes (white box in Figure 1B), the 161 unique hit genes mentioned in the title or abstract are significantly better studied (p=1.4e-61 by two-side Mann-Whitney U test). The articles citing the focus articles also only mentioned in their titles and abstracts 692 unique genes that were differentially expressed in the cited focus study (irrespective of whether they were reported in title or abstract of the respective cited transcriptomic study). These 692 unique genes were similarly highly studied as those reported in the title and abstract of transcriptomic focus studies.
 
@@ -51,11 +75,27 @@ Understudied genes are least frequently highlighted in the title/abstract in tra
 
 Evaluating the final possibility, we found that the reception of -omics studies in later scientific literature either reproduced authors’ initial selection of highly studied genes or slightly mitigated it. Jointly, the above findings reinforce that understudied genes become abandoned between the completion of -omics experiments and the reporting of results, rather than being abandoned by later research.
 
-## Subsequent reception by other scientists does not penalize studies on understudied genes
+### Subsequent reception by other scientists does not penalize studies on understudied genes
 
 The abandonment of understudied genes could be driven by the valid concern of biomedical researchers that focusing on less-investigated genes will yield articles with lower impact (Kustatscher et al., 2022), as observed around the turn of the millenium (Pfeiffer and Hoffmann, 2007). If this were the case, preemptively avoiding understudied hits would be the rational decision for authors of -omics studies.
 
 We thus decided to complement our preceding analysis by an analysis explicitly focused on citation impact. Notably, we found that the concern of publications on understudied genes receiving fewer citations does not hold for present-day research on human genes; in biomedical literature at-large, articles focusing on less-investigated genes typically accumulate more citations, an effect that has held consistently since 2001 (Figure 2). Further, since 1990, articles about the least popular genes have at times been three to four times more likely to be among the most cited articles than articles on the most popular genes whereas articles on the most popular genes have been slightly less to be highly cited than lowly cited (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig2-v1.jpg)
+
+**Figure 2.:** (a) Density plot shows correlation between articles per gene before 2015 and median citations to articles published in 2015. Contours correspond to deciles in density. Solid red line shows locally weighted scatterplot smoothing (LOWESS) regression. ρ is Spearman rank correlation and p the significance values of the Spearman rank correlation as described by Kendall and Stuart, 1973. We forgo depicting more recent years than 2015 to allow for citations to accumulate over multiple years, providing a more sensitive and robust readout of long-term impact. (b) Spearman correlation of previous gene popularity (i.e. number of articles) to median citations per year since 1990. Solid blue line indicates nominal Spearman correlation, shaded region indicates bootstrapped 95% confidence interval (n=1000). Only articles with a single gene in the title/abstract are considered, excluding the 30.4% of gene-focused studies which feature more than one gene in the title/abstract. For more recent years, where articles have had less time to accumulate citations, insufficient signal may cause correlation to converge toward zero.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Only articles with a single gene in the title/abstract are considered. Shaded regions show ±1 standard error of the proportion.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Only articles with a single gene in the title/abstract are included. (a) volcano plot of Spearman correlations, where size of dot corresponds to number of articles meeting criteria for each MeSH term. (b–g) Plots for several MeSH terms, corresponding to letters highlighted in (a). Solid red lines show LOWESS regression. Only MeSH terms under the ‘Diseases’ heading (tree number starting with ‘C’) with 30 articles or more were considered (602 MeSH terms).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Only articles with a single gene in the title/abstract are included. (a) volcano plot of Spearman correlations, where size of dot corresponds to number of articles meeting criteria for each MeSH term. (b–g) Plots for several MeSH terms, corresponding to letters highlighted in (a). Solid red lines show LOWESS regression. Only MeSH terms under the ‘Investigative Techniques’ heading (tree number starting with ‘E05’) with 30 articles or more were considered (264 MeSH terms).
 
 To rule out that these macroscopic observations stem from us having aggregated over different diseases, we separately analyzed 602 disease-related MeSH terms (Figure 2—figure supplement 2). We found 29 MeSH terms with a statistically significant Spearman correlation using Benjamini-Hochberg FDR <0.01 (Supplementary file 1), of which 27 showed a negative association and only 2 showed a positive association. This result again opposes the hypothesis that less-investigated genes will yield articles with lower impact.
 
@@ -63,7 +103,7 @@ Returning to our observation that understudied hits from high-throughput assays 
 
 To summarize, our investigations are reminiscent of the previously described separation between ‘large-scale’ and ‘small-scale’ biological research (Knorr Cetina, 1999; Alberts, 1985; Richardson and Stevens, 2015). Authors of high-throughput studies do not highlight understudied genes in the title or abstract of their publications, the sections of the publication most accessible to other scientists. While, overall, understudied genes (and high-throughput assays themselves [Stoeger and Nunes Amaral, 2022]) correlate with increased citation impact, for high-throughput studies any potential gain in citations is either absent or too small to be significant. Thus, there may not be any incentive for authors of high-throughput studies to highlight understudied genes.
 
-## Identification of biological and experimental factors associated with selection of highlighted genes
+### Identification of biological and experimental factors associated with selection of highlighted genes
 
 To illuminate why understudied genes are abandoned between experimental results and the write-up of results, we performed a literature review to identify factors that have been proposed to limit studies of understudied genes (Supplementary file 3). These factors range from evolutionary factors (e.g. whether a gene only has homologs in primates), to chemical factors (e.g. gene length or hydrophobicity of protein product), to historical factors (e.g. whether a gene’s sequence has previously been patented) to materialistic factors affecting experimental design (e.g. whether designed antibodies are robust for immunohistochemistry).
 
@@ -71,9 +111,21 @@ As any of these factors could plausibly affect gene selection within individual 
 
 We identified 45 factors that relate to genes and found 33 (12 out of 23 binary factors and 21 out of 22 continuous factors) associated with selection in at least one assay type at Benjamini-Hochberg FDR <0.001 (Figure 3, Supplementary file 4 and Supplementary file 5). Across the four assay types, the most informative binary factor describes whether there is a plasmid available for a gene in the AddGene plasmid catalog. We cautiously hypothesize that this might reflect on many different research groups producing reagents surrounding the genes that they actively study. The most informative continuous factor is the number of research articles about a gene (Figure 1B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig3-v1.jpg)
+
+**Figure 3.:** (a) Association between factors with binary (True/False) identities and highlighting hits in title/abstract of reporting articles. Values represent the odds ratio between hits in the collected articles and hits mentioned in the title or abstract of collected articles (e.g. hits with a compound known to affect gene activity are 4.262 times as likely to be mentioned in the title/abstract in an article using transcriptomics, corresponding to an odds ratio of 4.331). Collected articles are described in Figure 1B and Figure 1—figure supplement 5, Figure 1—figure supplement 6 and Figure 1—figure supplement 7. 95% confidence interval of odds ratio is shown in parentheses. *=Benjamini-Hochberg FDR <0.05, **=FDR < 0.01, and ***=FDR < 0.001 by two-sided Fisher exact test. Results are shown numerically in Supplementary file 4. For consistency between studies, hits were restricted to protein-coding genes. Thus, status as a protein-coding gene could not be tested. †No genes without a defined HUGO symbol were found as hits in GWAS or transcriptomics studies. (b) Association with factors with continuous identities and highlighting hits in title/abstract of reporting articles. Values represent F, the common-language effect size (equivalent to AUROC, where ~0.5 indicates little effect,>0.5 indicates positive effect and <0.5 indicates negative effect) of being mentioned in the titles/abstracts of the collected articles described in Figure 1B and Figure 1—figure supplement 5, Figure 1—figure supplement 6 and Figure 1—figure supplement 7. *=Benjamini-Hochberg FDR <0.05, **=FDR < 0.01, and ***=FDR < 0.001 by two-sided Mann-Whitney U test. Results are shown numerically in Supplementary file 5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Factors are shown along the x axis, with genes along the y axis. Binary factors are coded to 0 (white) and 1 (purple), while continuous factors are ranked from 0 to 1 with ties resolved to minimum rank. Clustering was performed with Ward’s method for hierarchical clustering (Ward, 1963). Bold indicates FMUG ‘s default factors, which we selected based on this clustering and based on their strength of association with gene selection (Figure 3, Supplementary file 4, and Supplementary file 5).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93429/elife-93429-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Correlations involving binary factors should not be interpreted as statistical fact, as Spearman’s ρ does not account for non-ordinal data. Clustering was performed with Ward’s method for hierarchical clustering (Ward, 1963).
+
 To better understand how all 45 factors are related, we performed a cluster analysis of the collected factors (Figure 3—figure supplement 1 and Figure 3—figure supplement 2). This clustering suggests that many factors influencing the abandonment of understudied genes are not independent. For instance, we find that the number of articles about a gene is heavily correlated with the number of annotations for that gene in all surveyed databases. In another case, gene length is heavily correlated with the number of GWAS annotations for a gene, as described before in terms of transcript length and single-nucleotide polymoprhisms (Lopes et al., 2021).
 
-## Data-driven design of a tool to promote the investigation of understudied genes
+### Data-driven design of a tool to promote the investigation of understudied genes
 
 To promote the investigation of understudied genes, we combined all the above insights to create a tool we denoted find my understudied genes (FMUG). Our literature review revealed several tools and resources aiming to promote research of understudied genes by publicizing understudied genes (Duek et al., 2018; Crow et al., 2019; Perdigão and Rosa, 2019; Essegian et al., 2020; Sheils et al., 2021; Higgins et al., 2022; Wainberg et al., 2021; Rocha et al., 2023 or by providing information about hit genes Stoeger et al., 2018; Rebhan et al., 1998; Tan et al., 2017; Kustatscher et al., 2019; Wu et al., 2021; Jiang et al., 2022). However, we noted the absence of tools enabling scientists to actively engage with factors that align with gene selection. Although such factors are largely correlated when considering all genes (Figure 3—figure supplement 1 and Figure 3—figure supplement 2), some factors cluster together and the influence of specific factors could vary across laboratories. For instance, scientists could vary in their ability to perform proteomics, or ability to explore orthologous genes in C. elegans, or ability to leverage human population data, or perform standardized mouse assays.
 
@@ -89,9 +141,11 @@ To provide real-time feedback, users are, in parallel, presented the number of a
 
 **Figure 4.:** (a) Diagram describing use of FMUG. (b) An early prototype of FMUG led us to the hypothesis that transcript length negatively correlates with up-regulation during aging. First, we identified genes that strongly associate with age-dependent transcriptional change across multiple cohorts. We then performed a literature review for each of these genes to identify the most direct way the genes (or evolutionally closely related genes or functionally closely related partner proteins) had been studied in aging. Sixty-four percent had been functionally investigated in aging, 15% shown to change a measure of gene expression, 3% functionally investigated in a biological domain close to aging (such as senescence), and 5% shown to change a measure of gene expression in a biological domain close to aging. For genes reported by others to change expression with age, we identified tissues in which transcripts of the genes change during aging. We computed ‘feasibility scores’ scientific strategies (GEM: G: strong genetic support, E: and experimental potential, M: homolog in invertebrate model organism) as described by Stoeger et al., 2018 and total number of publications in MEDLINE. Splicing factor, proline- and glutamine-rich (Sfpq) had previously been demonstrated by Takeuchi et al. to be required for the transcriptional elongation of long genes (Takeuchi et al., 2018). When performing a data-driven analysis of factors that could possibly explain age-dependent changes of the entire transcriptome, we thus included gene and transcript lengths, and subsequently found them to be more informative than transcription factors or microRNAs (Stoeger et al., 2022).
 
+![Video 1.](https://cdn.elifesciences.org/articles/93429/elife-93429-video1.mp4.jpg)
+
 To determine the practical usefulness of FMUG to scientists, we used an early prototype of FMUG to identify understudied genes associated with aging. One of these genes was Splicing factor, proline- and glutamine-rich (Sfpq), which had not yet been investigated toward its role in biological aging. We found Sfpq to be transcriptionally downregulated during murine aging. Others had shown Sfpq to be required for the transcriptional elongation of long genes (Takeuchi et al., 2018). This led us to hypothesize that during vertebrate aging, the transcripts of long genes become downregulated in most tissues (Figure 4B). We found this hypothesis to be supported through a multi-species analysis which we published in December 2022 in Nature Aging (Stoeger et al., 2022), with another group publishing so in January 2023 in Nature Genetics (Gyenis et al., 2023), and a third group in iScience in March 2023 (Ibañez-Solé et al., 2023).
 
-## Study limitations
+### Study limitations
 
 Our study has several limitations. First, all analysis is subject to annotation errors in the various databases we employ. While these should be rare and not affect our overall findings, they may affect users who are interested in genes with discordant annotations. Second, we focus only on human genes. Different patterns of selection may exist for research on genes in other organisms. Third, we take a gene being mentioned in the title or abstract of an article as a proxy for a gene receiving attention by the article’s authors. The title and abstract are space-limited and thus cannot accommodate discussion of large numbers of genes.
 
@@ -107,49 +161,80 @@ We believe that enabling scientists to consciously engage with bias in research 
 
 ## Materials and methods
 
-## Genes information
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python programming language</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Find My Understudied Genes</td>
+      <td>This paper</td>
+      <td>RRID:SCR_025047</td>
+      <td>Available at fmug.amaral.northwestern.edu</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genes information
 
 Homo sapiens gene information was downloaded from NCBI Gene on Aug 16, 2022 [https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/All_Data.gene_info.gz]. Only genes with an unambiguous mapping of Entrez ID to Ensembl ID were used (n=36,035). Number of gene synonyms, protein-coding status, and official gene symbol were derived from this dataset. A gene symbol was considered undefined if the gene’s entry for HGNC gene symbol was ‘-’.
 
-## Genes in title/abstract of primary research articles
+### Genes in title/abstract of primary research articles
 
 Homo sapiens gene information was downloaded from NCBI Gene on Aug 16, 2022 [https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz]. gene2pubmed was downloaded from NCBI Gene on August 16, 2022 [https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz] (Maglott et al., 2007). PubTator gene annotations were downloaded from NIH-NLM on July 12, 2022 [https://ftp.ncbi.nlm.nih.gov/pub/lu/PubTatorCentral/] (Maglott et al., 2007; Wei et al., 2019). PubMed was downloaded on December 17, 2021 [https://ftp.ncbi.nlm.nih.gov/pubmed/baseline/].
 
 Only using PMIDs annotated as primary research articles, a human gene was considered as mentioned in the title/abstract of the publication if gene was annotated as being in the title/abstract by PubTator and the article appeared in gene2pubmed.
 
-## CRISPR articles
+### CRISPR articles
 
 BioGRID ORCS (Oughtred et al., 2021) v1.1.6 was downloaded on April 25, 2022 [https://downloads.thebiogrid.org/BioGRID-ORCS/Release-Archive/BIOGRID-ORCS-1.1.6/]. Any genome-wide CRISPR knockout screens in human with an associated PubMed ID in which hit genes were mentioned in the title or abstract was considered (n=15). A total of 9268 unique genes were found as hits. Of these, 18 (0.19%) were highlighted in titles/abstracts in the reporting articles and 19 (0.21%) were highlighted in titles/abstracts in citing articles. A full list of PubMed IDs is available in Supplementary file 6.
 
-## Transcriptomics articles
+### Transcriptomics articles
 
 EBI-GXA (Papatheodorou et al., 2018) release 36 was downloaded on September 15, 2020 [https://web.archive.org/web/20201022184159/https://www.ebi.ac.uk/gxa/download]. This is the most recent release of EBI-GXA available as a bulk download. Any transcriptomics comparisons with an associated PubMed ID in which hit genes were mentioned in the title or abstract was considered (n=148). Analysis was restricted to protein-coding genes (some screens featured non-protein-coding genes, but this was not common to all analyses). DE was called at Benjamini-Hochberg FDR q<0.05. A total of 18,295 unique genes were found as hits. Of these, 161 (0.88%) were highlighted in titles/abstracts in the reporting articles and 692 (3.78%) were highlighted in titles/abstracts in citing articles. A full list of PubMed IDs is available in Supplementary file 6.
 
-## Affinity purification–mass spectrometry articles
+### Affinity purification–mass spectrometry articles
 
 BioGRID (Oughtred et al., 2021) v3.5.186 was downloaded on April 25, 2022 [https://downloads.thebiogrid.org/BioGRID/Release-Archive/BIOGRID-3.5.186/]. Any interactions involving a human gene as the prey protein with an experimental evidence code of ‘Affinity Capture-MS’ labeled as ‘High-Throughput’ that had an associated PubMed ID in which hit genes were mentioned in the title or abstract was considered (n=296). Prey proteins in these interactions were considered hits. A total of 7919 unique genes were found as hits. Of these, 311 (3.93%) were highlighted in titles/abstracts in reporting articles and 407 (5.14%) were highlighted in titles/abstracts in citing articles. A full list of PubMed IDs is available in Supplementary file 6.
 
-## GWAS articles
+### GWAS articles
 
 The NHGRI-EBI GWAS catalog (Buniello et al., 2019) (associations and studies) was download on August 17, 2022 [https://www.ebi.ac.uk/gwas/docs/file-downloads]. Any GWAS screens with an associated PubMed ID in which hit genes were mentioned in the title or abstract was considered (n=450). Only SNPs occurring within a gene were considered hits. A total of 1043 unique genes were found as hits. Of these, 413 (39.6%) were highlighted in titles/abstracts in reporting articles and 319 (30.6%) were highlighted in titles/abstracts in citing articles. A full list of PubMed IDs is available in Supplementary file 6.
 
-## Citing articles
+### Citing articles
 
 NIH iCite v32 was downloaded on August 25, 2022 (Hutchins and Santangelo, 2019) [https://nih.figshare.com/collections/iCite_Database_Snapshots_NIH_Open_Citation_Collection_/4586573/32].
 
-## Functional annotations
+### Functional annotations
 
 Mapping of genes to Gene Ontology / Protein Interaction Database / WikiPathways / Reactome / Kyoto Encyclopedia of Genes and Genomes / Human Phenotype Ontology / BioCarta categories was derived from MSigDB v7.5 Entrez ID.gmt files, downloaded on April 12, 2022 [http://www.gsea-msigdb.org/gsea/downloads_archive.jsp].
 
-## Between-species homology
+### Between-species homology
 
 Homologene Build 68 was used to determine interspecies homology [https://ftp.ncbi.nih.gov/pub/HomoloGene/build68/]. Human = taxid:9606, mouse = taxid:10090, rat = taxid:10116, c. elegans = taxid:6239, d. melanogaster = taxid:7227, yeast = taxid:559292, zebrafish = taxid:7955.
 
-## Primate specificity
+### Primate specificity
 
 Human genes were considered primate-specific if the only other members of their homology group belonged to primate genomes. Primate taxonomy ids were downloaded from NCBI Taxonomy on September 20, 2022 [https://www.ncbi.nlm.nih.gov/taxonomy/?term=txid9443[Subtree]].
 
-## Number of publications in model organisms
+### Number of publications in model organisms
 
 Gene information was downloaded from NCBI Gene on August 16, 2022 [https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/All_Data.gene_info.gz].
 
@@ -157,62 +242,62 @@ Only using PMIDs annotated as primary research articles, genes was considered as
 
 Genes in model organisms were mapped to human genes and the number of articles on those mapping to human genes were counted. If a model organism’s gene had homology to human but no associated publications, the number of publications was resolved to zero. Otherwise, counts were listed as NA.
 
-## Mouse phenotype hits
+### Mouse phenotype hits
 
 International Mouse Phenotyping Consortium data release 17.0 was downloaded on August 18, 2022 [https://www.mousephenotype.org/data/releasehttps://www.mousephenotype.org/data/release]. Mouse genes were matched to human genes with Homologene.
 
-## Gene expression atlas (EBI-GXA)
+### Gene expression atlas (EBI-GXA)
 
 EBI-GXA release 36 was downloaded on September 15, 2020 [https://web.archive.org/web/20201022184159/https://www.ebi.ac.uk/gxa/download]. This is the most recent release of EBI-GXA available as a bulk download. For probability of DE, only RNA-seq comparisons were considered and DE was called at Benjamini-Hochberg q<0.05.
 
-## Global RNA expression
+### Global RNA expression
 
 RNA consensus tissue gene data from HPA release 21.1 was downloaded on September 20, 2022 [https://www.proteinatlas.org/about/download]. Global RNA expression was estimated by taking the median expression (nTPM) across tissues for each gene and the proportion of tissues with detectable (≥1 nTPM) expression for each gene.
 
-## Expression in HeLa cells
+### Expression in HeLa cells
 
 RNA cell line gene data from HPA release 21.1 was downloaded on September 20, 2022 [https://www.proteinatlas.org/about/download]. Expression is in nTPM.
 
-## Previous patent activity
+### Previous patent activity
 
 Genes with patent activity were defined from Table S1 of Rosenfeld and Mason, 2013. Genes were mapped with their HGNC symbol. This analysis aligned sequences in patents to the human genome to estimate patent coverage of human coding sequences. Although this does not necessarily reflect whether the mapped genes were claimed directly by the patent holder, as noted by others (Tu et al., 2014), this analysis remains the most comprehensive available for determining patent coverage of the human genome.
 
-## Druggability
+### Druggability
 
 Druggable genes were identified from Table S1 of Finan et al., 2017. Genes were mapped with their Ensembl identifier.
 
-## Gene length
+### Gene length
 
 GenBank was downloaded in spring 2017 (genome version GRCh38.p10). Gene length is defined here as the span of the longest transcript on the chromosome. This aligns with the model of gene length used in Stoeger et al., 2018.
 
-## Solubility
+### Solubility
 
 SwissProt protein sequences and mapping tables to Entrez GeneIDs were downloaded from Uniprot in spring 2017. Protein GRAVY score (ignoring Pyrrolysine and Selenocysteine) was estimated with BioPython (Cock et al., 2009).
 
-## Loss-of-function intolerance
+### Loss-of-function intolerance
 
 Data was obtained from Karczewski et al., 2020. pLI scores >0.9 on main transcripts, as flagged by authors, were considered as highly loss-of-function intolerant as described by Lek et al., 2016.
 
-## Number of GWAS hits
+### Number of GWAS hits
 
 EBI GWAS catalog (Buniello et al., 2019; associations and studies) was download on August 17, 2022 [https://www.ebi.ac.uk/gwas/docs/file-downloads]. Loci were mapped to the nearest gene.
 
-## Status as understudied protein
+### Status as understudied protein
 
 The Illuminating the Druggable Genome understudied protein list was downloaded on September 20, 2022 [https://github.com/druggablegenome/IDGTargets/blob/master/IDG_TargetList_CurrentVersion.json].
 
-## Human protein atlas
+### Human protein atlas
 
 HPA release 21.1 was downloaded on September 20, 2022 [https://www.proteinatlas.org/search]. Evidence for a protein’s existence, as determined by NeXtProt, HPA, or UniProt was resolved as True if the respective evidence entry was annotated as ‘Evidence at protein level’. Status as a membrane protein was determined by whether the ‘Protein class’ column contained the string ‘membrane protein’. Antibodies were considered available for each protein if the protein’s entry in the ‘Antibody’ column was not null.
 
-## Availability of plasmids
+### Availability of plasmids
 
 The AddGene plasmid catalog was downloaded on August 12, 2022 [https://www.addgene.org/browse/gene/gene-list-data/?_=1666368044314].
 
-## Availability of compounds
+### Availability of compounds
 
 The catalog of gene targets was downloaded from ChEMBL on September 20, 2022 [https://www.ebi.ac.uk/chembl/g/#browse/targets]. UniProt IDs were converted to Entrez IDs to identify which human genes were affected by any compound.
 
-## Mendelian inheritance
+### Mendelian inheritance
 
 Autosomal dominant [https://hpo.jax.org/app/browse/term/HP:0000006] and autosomal recessive [https://hpo.jax.org/app/browse/term/HP:0000007] inherited disease-gene associations were downloaded from the Human Phenotype Ontology on September 20, 2022. Genes were considered to have evidence of Mendelian inheritance if they appeared in these lists of associations.

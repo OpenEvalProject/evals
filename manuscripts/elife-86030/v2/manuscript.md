@@ -15,14 +15,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Center for Quantitative Cell Imaging, University of Wisconsin-Madison Madison United States
-2. https://ror.org/01y2jtd41 Department of Botany, University of Wisconsin-Madison Madison United States
-3. https://ror.org/01yc7t268 Department of Biology, Washington University in St. Louis Saint Louis United States
-4. https://ror.org/01a1mq059 ARC Centre of Excellence in Plant Energy Biology, School of Molecular Sciences, The University of Western Australia Perth Australia
-5. https://ror.org/030bbe882 Department of Plant Biology,School of Agronomy, Universidad de la República Montevideo Uruguay
-6. https://ror.org/01y2jtd41 Department of Medical Physics, University of Wisconsin-Madison Madison United States
-7. https://ror.org/01y2jtd41 Department of Biomedical Engineering, University of Wisconsin-Madison Madison United States
-8. https://ror.org/05cb4rb43 Morgridge Institute for Research Madison United States
+1. Center for Quantitative Cell Imaging, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Department of Botany, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+3. Department of Biology, Washington University in St. Louis Saint Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+4. ARC Centre of Excellence in Plant Energy Biology, School of Molecular Sciences, The University of Western Australia Perth Australia ([ROR:01a1mq059](https://ror.org/01a1mq059))
+5. Department of Plant Biology,School of Agronomy, Universidad de la República Montevideo Uruguay ([ROR:030bbe882](https://ror.org/030bbe882))
+6. Department of Medical Physics, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+7. Department of Biomedical Engineering, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+8. Morgridge Institute for Research Madison United States ([ROR:05cb4rb43](https://ror.org/05cb4rb43))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ Here, we show that NBR1 associates with photodamaged chloroplasts via its ubiqui
 
 ## Results
 
-## NBR1 associate with chloroplasts upon exposure to high light
+### NBR1 associate with chloroplasts upon exposure to high light
 
 To determine whether the autophagy receptor NBR1 is involved in chloroplast turnover upon photoradiation damage, we imaged by confocal microscopy the NBR1-GFP fusion protein expressed under the control of the NBR1 promoter [ProNBR1:NBR1-GFP; (Hafrén et al., 2017; Thirumalaikumar et al., 2021)] in seedlings grown under low light (LL; 40 μmol m−2 s−1) at 22 °C and then exposed to high light (HL; 1500 μmol m−2 s−1) at 12 °C for 2 h, with a focus on the sub-adaxial epidermal mesophyll layer (mesophyll cells under the cotyledon adaxial epidermis) exposed to HL. Under LL, NBR1 was typically found in cytosolic puncta within cotyledons that likely represent aggresome condensates (Svenning et al., 2011; Jung et al., 2020) and did not colocalize with chloroplasts seen by chlorophyll autofluorescence (Figure 1). After exposing seedlings to HL and allowing them to recover under LL for 24 hr, 2% of the chloroplasts in HL-exposed mesophyll cells became heavily decorated with NBR1-GFP (Figure 1A and B). NBR1-GFP either coated the surface of these chloroplasts or, in a few cases, localized inside (Figure 1A). Some NBR1-GFP signal in hypocotyl cells was also associated with stromules (Figure 1A).
 
@@ -58,13 +58,19 @@ Previous studies showed that the recruitment of ATG8 to chloroplasts after HL ex
 
 To confirm that NBR1 was indeed internalized into chloroplasts, we examined the ultrastructural features of chloroplasts under HL conditions by transmission electron microscopy and localized NBR1 with anti-NBR1 antibodies. First, we analyzed the structural alterations of chloroplasts after 24 hr exposure to HL in wild-type, atg7, and nbr1 cotyledons processed by high-pressure frozen/freeze substitution. Based on the degree of structural integrity, we found three morphologically distinct chloroplast types often in the same cell although with different frequencies. Type-1 chloroplasts had normal thylakoids and electron-dense stroma; Type-2 chloroplasts had dilated and lighter stroma with thylakoid membranes partially disorganized and often displaced to one side of the chloroplast; and Type-3 chloroplasts contained highly disorganized thylakoids, light stroma, and clear signs of chloroplast envelope rupture (Figure 2A–C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86030/elife-86030-fig2-v2.jpg)
+
+**Figure 2.:** (A) Transmission electron micrograph of a high-pressure frozen/freeze-substituted atg7 cotyledon mesophyll cell from 8-day-old seedlings exposed to HL and left to recover for 24 hr. Three different types of chloroplasts based on their structural integrity are seen. Type-1 chloroplasts with electron dense stroma and tightly appressed thylakoids, Type-2 chloroplasts with lighter stroma and partially disorganized thylakoids, and Type-3 chloroplasts with ruptured envelopes, disorganized thylakoid membranes and a stroma region with similar electron density and appearance to the cytoplasm. (B, C) Representative Type-2 (B) and Type-3 (C) chloroplasts in an atg7 mesophyll cells. Note in (C) that the outer and inner envelopes (arrowheads) are disrupted in several sites (asterisks) exposing the interior of the chloroplast, including thylakoid membranes to the cytosol. (D) Box and whisker plots showing the percentage of Type-1,–2, and –3 chloroplasts per mesophyll cell section in wild-type Col-0 (WT), nbr1, and atg7 cotyledons. Different letters on the graph indicate significant difference (p<0.05) calculated by one-way ANOVA followed by Tukey’s test. Between 7 and 10 cells from two cotyledons of each genotype were used for this analysis. (E) Immunogold labeling with anti NBR1 antibodies on chloroplasts of WT, nbr1, and atg7 mutant mesophyll cells exposed to HL followed by 24 hr recovery. Red arrowheads indicate gold particles on chloroplasts. (F) Quantification of anti-NBR1 gold labeling on Type-1, –2, and –3 chloroplasts and cytoplasm from WT, atg7, and nbr1 mutant mesophyll cells exposed to HL. A t-test was used to compare values between mutant and WT samples; * and ** indicate p<0.05 and p<0.01, respectively. Between 5 and 11 chloroplasts or cytoplasmic regions from 2 cotyledons of each genotype were used for quantification. (G) Immunoblot detection of NBR1, TIC40 (chloroplast inner envelope protein), LHCIIb (thylakoid protein), and cFBP (cytosolic protein) in total protein extracts (T) and chloroplast protein fraction (C) from 4-week-old WT and atg7 plants grown under LL or exposed to HL and let recover for 24 hr. The numbers below indicate the ratios cFBP/TIC40 and NBR1/cFBPase based on the quantification of the western blots. The figure shows a representative set of western blots. The experiment was repeated twice. Box and whisker plots in D and F show the variation in data through quartiles; the middle line indicates the median and whiskers show the upper and lower fences. S, starch; St, stroma; Thy, thylakoids. Scale bars: 1 μm in A, B, C; 500 nm in E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86030/elife-86030-fig2-figsupp1-v2.jpg)
+
 Type-3 chloroplasts were significantly more abundant in the atg7 cotyledons, whereas their frequency in nbr1 cotyledons was indistinguishable from that in wild-type cotyledons (Figure 2D). Using anti-NBR1 antibodies (Figure 2—figure supplement 1), we performed immunogold labeling to detect the native NBR1 protein in the three types of chloroplasts from wild-type and atg7 cotyledons exposed to HL, in this case using nbr1 seedlings grown under similar conditions as a negative control (Figure 2E and F). Whereas we did not detect labeling of NBR1 in the cytosol, all chloroplasts in wild-type and atg7 seedlings exposed to HL showed significantly higher labeling than those seen in the nbr1 cotyledons (Figure 2E and F).
 
 Corroborating the NBR1-GFP and mCherry-NBR1 confocal imaging results, endogenous NBR1 was detected on the surface and inside wild-type and atg7 chloroplasts (Figure 2E). Among the three types of chloroplasts, Type-3 chloroplasts, which were most abundant in atg7 cotyledons (Figure 2D), showed the heaviest internal labeling, both on thylakoids and on the stroma (Figure 2F). As Type-3 chloroplasts showed disorganized thylakoids, this labeling is consistent with the preferential recruitment of NBR1-GFP to damaged chloroplasts as judged by their decreased levels of chlorophyll autofluorescence (Figure 1C).
 
 To further validate the association of NBR1 with photodamaged chloroplasts, we isolated chloroplasts from 4-week-old wild-type and atg7 mutant plants kept under LL or exposed to HL conditions and allowed to recover for 24 hr (Figure 2G). We assessed the purity of our chloroplast fraction by testing the enrichment of chloroplast proteins such as TIC40 (inner envelope) and anti-LHCIIb (thylakoid), and the depletion of the cytosolic fructose bisphosphatase (FBPase). NBR1 was barely detected in either the total extract or the chloroplast fraction from wild-type plants kept under LL (Figure 2G). However, after HL exposure, NBR1 became much more abundant in the chloroplast fraction. The association of NBR1 with chloroplasts under both LL and HL was also apparent in atg7 seedlings (Figure 2G), further confirming that ATG7 is not required for recruiting NBR1 to photodamaged chloroplasts.
 
-## ATG8 and NBR1 are recruited to different populations of damaged chloroplasts
+### ATG8 and NBR1 are recruited to different populations of damaged chloroplasts
 
 ATG8 was previously reported to coat photodamaged chloroplasts in Arabidopsis (Nakamura et al., 2018). Since NBR1 interacts with ATG8, we tested whether NBR1 and ATG8 were recruited to the same chloroplast population. We used seedlings expressing both mCherry-NBR1 and GFP-ATG8, exposed them to HL, and then imaged them during a 24 hr recovery window (Figure 3A and B). As expected, neither mCherry-NBR1 or GFP-ATG8 associated with chloroplasts under LL conditions. However, after the HL treatment, the chloroplast association of both proteins became evident at 6 hr during recovery. By 12 hr after HL exposure, approximately 4% and 5% of the total mesophyll chloroplasts were decorated by either mCherry-NBR1 or GFP-ATG8, respectively, but remarkably only 1% of chloroplasts were decorated with both (Figure 3A and B). A similar trend was observed 24 hr after HL exposure; approximately 7% of the chloroplasts were labeled with GFP-ATG8, 5.5% were labeled with mCherry-NBR1 but only 2% of the chloroplasts were associated with both (Figure 3A and B). This dichotomy suggests that NBR1 and ATG8 associate with unique populations of chloroplasts, consistent with their distinct dependence on the ATG machinery for chloroplast recruitment.
 
@@ -74,7 +80,7 @@ ATG8 was previously reported to coat photodamaged chloroplasts in Arabidopsis (N
 
 To further assess a functional disconnection between ATG8 and NBR1 in the degradation of photodamaged chloroplasts, we imaged GFP-ATG8A in nbr1, atg7, and wild-type seedlings exposed to HL (Figure 3C and D). As previously reported (Nakamura et al., 2018), GFP-ATG8 failed to label photodamaged chloroplasts in atg7 cotyledons. Compared to wild type, we detected a significant decrease in the proportion of chloroplasts decorated by GFP-ATG8A in the nbr1 mutant at 6 hr during recovery from HL exposure; however, by 24 hr, similar proportions of both wild type and nbr1 chloroplasts were coated by GFP-ATG8A (Figure 3C and D). Taken together, these results showed that NBR1 and ATG8A are recruited to different populations of photodamaged chloroplasts and that NBR1 is only partially required for the early association of GFP-ATG8A with these organelles.
 
-## NBR1-decorated chloroplasts are delivered to vacuoles in an ATG7-independent manner
+### NBR1-decorated chloroplasts are delivered to vacuoles in an ATG7-independent manner
 
 Previous studies have shown that ATG8-associated chloroplasts are delivered to vacuoles through a microautophagic process that relies on the canonical ATG machinery (Izumi et al., 2017; Nakamura et al., 2018). To determine whether this is also true for NBR1-decorated chloroplasts, we co-expressed mCherry-NBR1 with the tonoplast marker YFP-VAMP711 (Geldner et al., 2009) in nbr1 seedlings. After HL exposure, mCherry-NBR1-positive chloroplasts associated with deep tonoplast invaginations (Figure 4A), which led to their vacuolar internalization by microautophagy, in a process topologically analogous to that previously described for ATG8-decorated chloroplasts (Izumi et al., 2017). Similarly, we were able to detect NBR1-positive chloroplasts inside vacuoles of the mCherry-NBR1 seedlings stained with the vacuolar dye BCECF (Scheuring et al., 2015) 24 hr after HL exposure (Figure 4B and C). Surprisingly, NBR1-decorated chloroplasts were also seen inside vacuoles of atg7 seedlings (Figure 4B and C).
 
@@ -84,7 +90,7 @@ Previous studies have shown that ATG8-associated chloroplasts are delivered to v
 
 Collectively, these results are consistent with NBR1 associating with chloroplasts targeted for vacuolar degradation through ATG7-independent microautophagy. In addition, the higher number of NBR1-positive photodamaged chloroplasts in atg7 seedlings (Figure 2) did not seem to arise from a failure to deliver these chloroplasts to the vacuole but more likely to the higher accumulation of photodamaged chloroplasts in the atg7 mutant.
 
-## Impaired remodeling of chloroplasts in atg7 and nbr1 mutants
+### Impaired remodeling of chloroplasts in atg7 and nbr1 mutants
 
 If NBR1 is critical for targeting photodamaged chloroplasts to the vacuole, we reasoned that nbr1 mutations would reduce the loss of chloroplasts after HL, as it has been shown for the atg5 and atg7 mutants (Izumi et al., 2017). To test this scenario, we expressed RECA-GFP, a stromal marker bearing the transit peptide of Arabidopsis RECA fused to GFP (Köhler et al., 1997; Spitzer et al., 2015), and imaged the cotyledon sub-adaxial epidermal mesophyll layer from 8-day-old seedlings by confocal microscopy. We found that, under LL conditions atg7 but not nbr1 mutant seedlings had a higher density of chloroplasts compared to wild type (Figure 5A and B). Twenty four hours after HL, there was a reduction in chloroplast density in all three genotypes but the decrease was less pronounced in atg7 and nbr1 (17% and 16% reduction, respectively) compared to the wild-type control (25% reduction; Figure 5A and B), consistent with impaired turnover of chloroplasts in both atg7 and nbr1 mutants.
 
@@ -96,9 +102,21 @@ To examine whether chloroplast size also changed upon HL exposure, we measured t
 
 These unique chloroplast dynamics in nbr1, atg7, and wild-type plants suggested that although ATG7 and NBR1 are both important for chloroplast turnover, they control different aspects of chloroplast remodeling/turnover after HL radiation. To further understand how chloroplasts are differentially affected, we used multiphoton imaging to excite and measure chlorophyll mean intensities under LL and 24 hr after HL exposure in nbr1 and atg7 seedlings, together with a previously characterized nbr1-2 atg7-2 double mutant (Jung et al., 2020). Compared to controls, mean chlorophyll fluorescence intensity in all three mutants was weaker than wild type under LL conditions. This intensity decreased approximately 27–28% in wild type and the atg7 mutant after HL (based on ratio of chlorophyll mean intensities between HL and LL values), but only 16% in the nbr1 mutant (Figure 5E). Unexpectedly, the mean chlorophyll intensity values from nbr1 atg7 mutant under LL and after HL treatment were intermediates between those from the single nbr1 and atg7 mutant seedlings. These results showed that mutations in both NBR1 and ATG7 affect either chlorophyll abundance and/or chlorophyll photochemical properties even under LL conditions.
 
-## Proteome profiling supports NBR1- and ATG7-dependent pathways for clearing photodamaged chloroplasts
+### Proteome profiling supports NBR1- and ATG7-dependent pathways for clearing photodamaged chloroplasts
 
 To further understand the function of NBR1 and ATG7 in chloroplast remodeling and turnover, we analyzed by tandem mass spectrometry (MS/MS) the total proteome of 1-week-old atg7, nbr1, nbr1 atg7 double mutant, and wild-type seedlings grown under LL and at 24 hr after HL treatment (Figure 6, Figure 6—figure supplements 1 and 2, Supplementary file 1a-n).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86030/elife-86030-fig6-v2.jpg)
+
+**Figure 6.:** (A) Volcano plots showing the changes in the relative abundance of chloroplast proteins under LL or HL, in wild type (WT) and mutants. The number on the top of each plot indicates the total number of detected proteins assigned by GO to chloroplasts. Several representative proteins are labeled in each plot. The lighter blue points identify proteins with insignificant changes, while the darker blue points identify those that meet a significance threshold of FC > 1.5 or –1.5 and p-value < 0.05. The numbers at the left and right corners of each plot indicate the less or more abundant proteins, respectively. (B) Volcano plots as in (A) showing the changes in the relative abundance of chloroplast proteins in mutants relative to WT, either under LL or HL. (C) Venn diagrams depicting the overlap among chloroplast proteins changing abundance between HL and LL conditions in mutants and WT plants.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86030/elife-86030-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Volcano plots showing the relative abundance changes of total proteins detected in wild type (Col-0), nbr1, atg7, and nbr1 atg7 seedlings grown either under LL or exposed to HL and let recover for 24 hr. Proteins were identified by LC-MS/MS and their average abundances were quantified from the MS1 precursor ion intensities. Only proteins with at least two peptide spectral matches were considered in the analysis. Each protein is plotted based on its Log2 FC in abundance (HL/LL) and its -log10 p-value in significance based on the three biological replicates each analyzed twice. The gray points identify proteins with insignificant changes, while the black points identify those that also meet a significance threshold of FC >1.5 or –1.5 and p-value < 0.05. (B) Principal component analysis (PCA) of proteomic analysis samples. The plot depicts each biological replicate used for the proteomic analysis from WT Col-0, atg7, nbr1, and nbr1 atg7 plants either under LL or after HL exposure. (C) Correlation analysis. Scatter plots comparing log2 fold changes (FCs) in protein levels in several genotypes from HL versus LL conditions. The total number of proteins analyzed in each panel is indicated, along with Pearson’s correlation coefficients (Corr) and fit (R2) values. The dashed lines show a Corr = 1. Proteins were selected based on FC >1.5 or<1.5 and p-values <0.05 in the two compared genotypes. (D) GO terms analysis of proteins with significant abundance changes under HL conditions in the WT, nbr1, atg7, and nbr1 atg7 mutant plants.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/86030/elife-86030-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Volcano plots showing the relative abundance changes of chloroplast proteins grouped by subcompartments (envelopes, stroma, and thylakoids) in wild-type (Col-0), nbr1, atg7, and nbr1 atg7 seedlings grown either under LL or exposed to HL and let recover for 24 hr. Proteins were identified by LC-MS/MS, and their average abundances were quantified from the MS1 precursor ion intensities. Only proteins with at least two peptide spectral matches were considered in the analysis. Each protein is plotted based on its Log2 FC in abundance (HL/LL) and its -log10 p-value in significance based on the from three biological replicates each analyzed twice. Proteins were assigned to the various chloroplast compartments by GO; n, total number assigned. The lighter colored points identify detected proteins assigned to that compartment with insignificant changes, while the darker colored points identify those that also meet a significance threshold of FC > 1.5 or –1.5 and p-value < 0.05. Specific proteins with significant changes are labelled.
 
 In total, 4,975 proteins were identified in the 48 datasets (three biologicals replicates of the four genotypes exposed to the two different light treatments, each analyzed as two technical replicates), of which 3806 proteins were selected after filtration of our criteria for further analysis (Supplementary file 1; Figure 6—figure supplement 1A). Principal component analyses (PCA) of the datasets showed that samples clustered by genotype under both LL and HL (Figure 6—figure supplement 1B). The proteomic profiles from the nbr1 atg7 double mutant, either under LL or HL, was place by PCA close to those of atg7 mutant plants, suggesting that the atg7 mutation has a dominant effect on the proteome of the nbr1atg7 double mutant.
 
@@ -110,11 +128,19 @@ The better understand the changes in the chloroplast proteome, we analyzed separ
 
 We then compared the overlap of more and less abundant proteins in the four genotypes in response to HL. We found that 66% (25 of 38) of the chloroplast proteins significantly enriched in nbr1 were also more abundant in atg7, whereas only 22% (25 of 115) of the more abundant chloroplast proteins in atg7 were also enriched in nbr1 (Figure 6C). Of the 24 enriched proteins in the nbr1 atg7 double mutant, 16 proteins (67%) were shared with either atg7, nbr1, or both. For chloroplast proteins with decreased abundance upon HL exposure, the overlap between the single mutants was 38% (17 of 44 proteins) for atg7 and 46% (17 of 37 proteins) for nbr1 (Figure 6C). Of the 41 proteins decreasing in abundance in nbr1 atg7 plants, 21 proteins (51%) also showed reduced abundance in one or both single mutants. These results suggest that both NBR1 and ATG7 controls the degradation and overall homeostasis of chloroplasts after HL damage, but their functions are only partially overlapping.
 
-## Contributions of NBR1 domains to chloroplast recruitment
+### Contributions of NBR1 domains to chloroplast recruitment
 
 To identify the NBR1 domains that help NBR1 associate with photodamaged chloroplasts, we expressed in the nbr1-1 background several mutant versions of YFP-NBR1 missing key domain functions, such as NBR1-mPB1 with a point mutation (K11A) in the PB1 domain (Figure 7A and B) that disrupts NBR1 oligomerization (Hafrén et al., 2017), NBR1-mAIM with two point mutations in the AIM domain (W661A, I664A) that block interaction with ATG8 (Svenning et al., 2011; Hafrén et al., 2017), and NBR1-ΔUBA2 missing the UBA2 domain (Figure 7A and B) and therefore, unable to bind ubiquitin (Svenning et al., 2011; Hafrén et al., 2018). All fluorescent NBR1 fusion proteins remained cytosolic under LL condition (Figure 7B and C). After HL exposure, YFP-NBR1 associated with photodamaged chloroplasts as expected, either forming coats (average ~3% of chloroplasts; n=28 fields) or localizing inside a small fraction of chloroplasts (average ~0.5% of chloroplasts; n=28 fields) (Figure 7B and C). YFP-NBR1mPB also localized to photodamaged chloroplasts but almost exclusively to their interior (Figure 7B and C). Thus, although the total percentages of chloroplasts labeled by YFP-NBR1 and YFP-NBR1mPB were similar (Figure 7C), YFP-NBR1 mainly coated the chloroplast surface whereas most of YFP-NBR1mPB was located to the chloroplast lumen. Just like YFP-NBR1, YFP-NBR1mAIM was mostly detected as chloroplast coats (Figure 7B and C). Interestingly, YFP-NBR1ΔUBA2 failed to associate with chloroplasts after HL exposure (Figure 7B and C). The expression of the same set of NBR1 mutated proteins resulted in a similar pattern of chloroplast association in the atg7 nbr1 seedlings exposed to HL (Figure 7—figure supplement 1). Thus, these results suggest the UBA2 domain is required for NBR1 to associate with chloroplasts, whereas the PB1 domain negatively regulates NBR1 intra-chloroplast localization and/or promotes degradation of NBR1-filled chloroplasts.
 
-## The E3 ligases PUB4 and SP1 are not required for NBR1 association with photodamaged chloroplasts
+![Figure 7.](https://cdn.elifesciences.org/articles/86030/elife-86030-fig7-v2.jpg)
+
+**Figure 7.:** (A) Diagram of the Arabidopsis NBR1 protein and its domains. FW, Four-Tryptophan domain; PB1, Phox and Bem1p domain; ZZ, ZZ-type zinc finger domain; UBA1 and UBA2, ubiquitin-associated domains; AIM, ATG8-interacting motif. (B) Confocal imaging of NBR1 mutated proteins fused to YFP expressed in 8-day-old nbr1 seedlings grown under LL (top) or at 24 hr after HL exposure (bottom). Hollow arrowheads and filled arrowheads indicate YFP-NBR1 coating chloroplasts and inside chloroplasts, respectively. (C) Box and whisker plots show the percentages of chloroplast associated with the YFP-labeled mutated NBR1 proteins, localized to either coats (orange) or inside chloroplasts (green). Boxes show the variation in data through quartiles; the middle line indicates the median and whiskers show the upper and lower fences. Different letters denote significant differences from each other based on two-way ANOVA followed by Tukey’s test (p<0.05). Between 2 and 26 regions containing 20–30 chloroplasts from at least two seedlings for each treatment and NBR1 construct were used for this analysis. Scale bars: 10 μm in B.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/86030/elife-86030-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Confocal imaging of NBR1 mutated proteins fused to YFP expressed in 8-day-old nbr1 atg7 seedlings grown under LL (top) or 24 hr after HL exposure (bottom). Hollow arrowheads and filled arrowheads indicate YFP-NBR1 coating chloroplasts and inside chloroplasts, respectively. (C) Box and whisker plots show the percentage of chloroplast associated with the YFP-labeled mutated NBR1 proteins, localized to either coats (orange) or inside chloroplasts (green). Boxes show the variation in data through quartiles; the middle line indicates the median and whiskers show the upper and lower fences. Between 4 and 14 regions containing 20–30 chloroplasts from at least two seedlings of each treatment and genotype were used for this analysis. Scale bars: 10 μm in A.
+
+### The E3 ligases PUB4 and SP1 are not required for NBR1 association with photodamaged chloroplasts
 
 Because the UBA2 ubiquitin-binding domain of NBR1 is critical for chloroplast binding upon HL treatment, we expressed NBR1-GFP in mutants lacking the E3 ligases PUB4 and SP1, which have been shown to ubiquitylate chloroplast envelope proteins after HL stress as part of the CHLORAD pathway (Ling et al., 2012; Woodson et al., 2015). NBR1-GFP localized to photodamaged chloroplasts in pub4-2 and sp1-2 single and double mutants during recovery after HL (Figure 8), suggesting that at least these two E3 ligases are not critical for NBR1 association with photodamaged chloroplasts.
 
@@ -122,7 +148,7 @@ Because the UBA2 ubiquitin-binding domain of NBR1 is critical for chloroplast bi
 
 **Figure 8.:** (A) Confocal imaging of NBR1-GFP in 8-day-old wild type (Col-0), sp1, pub4, and sp1 pub4 seedlings under LL and 24 hr after HL exposure. Arrowheads indicate chloroplasts decorated with NBR1-GFP. (B) Box and whisker plots show the percentage of chloroplast associated with NBR1-GFP under LL and 24 hr after HL treatment. Boxes show the variation in data through quartiles; the middle line indicates the median and whiskers show the upper and lower fences. Different letters denote significant differences from each other based on two-way ANOVA followed by Tukey’s test (p<0.05). Between 4 and 34 regions containing 20–30 chloroplasts from at least two seedlings of each treatment and genotype were used for this analysis. Scale bar: 10 μm in A.
 
-## Fully functional TIC-TOC complexes are not required for NBR1 internalization into chloroplasts
+### Fully functional TIC-TOC complexes are not required for NBR1 internalization into chloroplasts
 
 To test whether NBR1 is translocated into the chloroplast stroma via the TIC-TOC complexes, we expressed NBR1-GFP in the transcript-null toc132-2 mutant, which is defective in the import of a subset of chloroplast proteins (Kubis et al., 2004). The toc132-2 mutation did not affect the association of NBR1-GFP with chloroplasts or its localization into the chloroplast lumen (Figure 9A and B).
 
@@ -136,7 +162,7 @@ As the toc132-2 mutation affects the translocation of only some but not all chlo
 
 Here, we present evidence that the selective autophagy receptor NBR1 is recruited to photodamaged chloroplasts, mediating their clearance by a microautophagy-like mechanism that is independent of the canonical ATG machinery (Figures 1—4). Upon photoradiation damage, NBR1 first becomes associated with the chloroplast surface to be later internalized into the chloroplast stroma (Figure 1E). The association of NBR1 with chloroplasts requires its ubiquitin-binding UBA2 domain whereas NBR1 internalization into the chloroplast stroma is negatively regulated by its self-polymerization PB1 domain (Figure 7). The relocation of NBR1 into the chloroplast stroma does not rely on a functional TIC-TOC complex (Figure 9). We propose that the rupture of the outer and inner envelopes in photodamaged chloroplasts (Figure 2C) allows for the diffusion of the ubiquitylation machinery and NBR1 from the cytosol into the chloroplast lumen, promoting ubiquitylation of both stroma and thylakoid proteins and their subsequent binding to NBR1 for vacuolar degradation via microautophagy (Figure 9E).
 
-## NBR1 as a ubiquitin-binding chlorophagy receptor
+### NBR1 as a ubiquitin-binding chlorophagy receptor
 
 NBR1 is a well-known aggrephagy receptor that recognizes and sorts ubiquitylated cargo for vacuolar clearance (Rasmussen et al., 2022). In plants, the formation of ubiquitylated cargo aggregates by NBR1 depends on it self-oligomerizing PB1 domain and its ubiquitin-binding capacity through the UBA2 domain (Svenning et al., 2011; Zientara-Rytter and Sirko, 2014). The AIM domain of NBR1 mediates its interaction with ATG8 and its sequestration into autophagosomes for vacuolar degradation (Svenning et al., 2011). Our studies found that, upon high photoradiation exposure, NBR1 associates with a population of photodamaged chloroplasts via a process dependent on its UBA2 domain, which then enables the association of NBR1 with both the surface of the chloroplast and its lumen (stroma and thylakoids).
 
@@ -150,7 +176,7 @@ Autophagy defective maize (atg12) and Arabidopsis (atg2, atg5, atg7, and atg9) m
 
 The role of NBR1 in organelle turnover and remodeling does not seem to be general for all organelles as peroxisomal protein abundance was not altered in nbr1 backgrounds but significantly elevated in the atg7 mutant (Figure 6—figure supplement 2). This also confirms previous reports that, different from animals (Deosaran et al., 2013), plants do not seem to employ NBR1 for autophagic removal of peroxisomes (pexophagy) (Young et al., 2019; Jung et al., 2020).
 
-## The many pathways promoting chloroplast remodeling and degradation
+### The many pathways promoting chloroplast remodeling and degradation
 
 Chloroplast proteostasis is critical for plant survival, which is constantly challenged by daily exposure to damaging reactive oxygen species generated unavoidably by the photosynthetic machinery (Foyer, 2018) and by a hypersensitivity of chloroplasts to biotic and abiotic stresses (Nishimura et al., 2017; Song et al., 2021; Wang et al., 2023). A failure to control chloroplast protein turnover is often very deleterious to plants (Rowland et al., 2022). Not surprisingly considering the complexity of the organelle and its functions, chloroplast remodeling and turnover are intricate processes that integrates multiple likely redundant or partially redundant pathways. Besides chloroplast proteases that can locally degrade proteins inside chloroplasts (Nishimura et al., 2017; Rowland et al., 2022), several autophagy and non-autophagic pathways mediate vacuolar clearance of chloroplast components (Otegui, 2018; Kikuchi et al., 2020; Rowland et al., 2022). At least three flavors of ATG8-dependent piecemeal autophagy of chloroplasts have been characterized: Rubisco-containing bodies (Chiba et al., 2003; Ishida et al., 2008; Spitzer et al., 2015), ATG8-INTERACTING PROTEIN 1 bodies (Michaeli et al., 2014), and small starch-like granule bodies (Wang et al., 2013). In addition, microautophagy of whole damaged chloroplasts occurs through at least two pathways, one dependent and the other independent of canonical autophagy (Izumi et al., 2017; Lemke et al., 2021). For the latter pathway, we provide evidence for a novel microautophagic route that requires NBR1 but not ATG8 lipidation.
 
@@ -160,7 +186,248 @@ We had anticipated that an nbr1 atg7 double mutant exposed to HL would show more
 
 ## Materials and methods
 
-## Plant materials and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>NBR1</td>
+      <td></td>
+      <td>AT4G24690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>ATG7</td>
+      <td></td>
+      <td>AT5G45900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>SP1</td>
+      <td></td>
+      <td>AT1G63900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>PUB4</td>
+      <td></td>
+      <td>AT2G23140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>TOC132</td>
+      <td></td>
+      <td>AT2G16640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>TIC40</td>
+      <td></td>
+      <td>AT5G16620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Arabidopsis thaliana)</td>
+      <td>Col-0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Agrobacterium tumefaciens)</td>
+      <td>GV3101</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>atg7-2</td>
+      <td>PMID:20136727</td>
+      <td>AT5G45900</td>
+      <td>GABI_655B06</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>nbr1-1</td>
+      <td>PMID:23341779</td>
+      <td>AT4G24690</td>
+      <td>SALK_135513</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>nbr1-2</td>
+      <td>PMID:23341779</td>
+      <td>AT4G24690</td>
+      <td>GABI_246 H08</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>toc132-2</td>
+      <td>PMID:15273297</td>
+      <td>AT2G16640</td>
+      <td>SAIL_667_04</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>tic40-4</td>
+      <td>PMID:15659100</td>
+      <td>AT5G16620</td>
+      <td>SAIL_192_C10</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>sp1-2</td>
+      <td>PMID:23118188</td>
+      <td>AT1G63900</td>
+      <td>SALK_063571</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>pub4-2</td>
+      <td>PMID:26494759</td>
+      <td>AT2G23140</td>
+      <td>SALK_054373</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>Pro35S:mCherry-NBR1</td>
+      <td>PMID:21606687</td>
+      <td>AT4G24690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ProUBQ10:mCherry-NBR1</td>
+      <td>PMID:21606687</td>
+      <td>AT4G24690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ProNBR1:NBR1-GFP</td>
+      <td>PMID:28223514, 32967551</td>
+      <td>AT4G24690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>Pro35S:RECA-GFP</td>
+      <td>PMID:9197266, 25649438</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ProUBQ10:YFP-NBR1</td>
+      <td>This study</td>
+      <td>AT4G24690</td>
+      <td>See Methods and Materials Section 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ProUBQ10:YFP-NBR1mPB</td>
+      <td>This study</td>
+      <td>AT4G24690</td>
+      <td>See Methods and Materials Section 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ProUBQ10:YFP-mAIM</td>
+      <td>This study</td>
+      <td>AT4G24690</td>
+      <td>See Methods and Materials Section 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ProUBQ10:YFP-NBR1DUBA2</td>
+      <td>This study</td>
+      <td>AT4G24690</td>
+      <td>See Methods and Materials Section 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NBR1 (Rabbit polyclonal)</td>
+      <td>PMID:31494674</td>
+      <td></td>
+      <td>EM IL (1:10) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TIC40 (Rabbit polyclonal)</td>
+      <td>Agrisera</td>
+      <td>Cat#: AS10709</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PsbA/D1 (Rabbit polyclonal)</td>
+      <td>Agrisera</td>
+      <td>Cat#: AS05084</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LHCIIb (Rabbit polyclonal)</td>
+      <td>Agrisera</td>
+      <td>Cat#: AS01004</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ProUBQ10:YFP-NBR</td>
+      <td>This study</td>
+      <td>AT4G24690</td>
+      <td>See Materials and methods Section 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ProUBQ10:YFP-NBR1mPB</td>
+      <td>This study</td>
+      <td>AT4G24690</td>
+      <td>See Materials and methods Section 1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLC main work bench 7</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>Cloning</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Software</td>
+      <td>Carl Zeiss</td>
+      <td></td>
+      <td>Microscopy</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J (Fiji)</td>
+      <td>NIH</td>
+      <td></td>
+      <td>Image Quantification</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant materials and growth conditions
 
 Arabidopsis thaliana seeds of atg7-2 (GABI_655B06) (Chung et al., 2010), nbr1-1 (SALK_135513) (Zhou et al., 2013), nbr1-2 (GABI_246H08) (Zhou et al., 2013), atg7-2 nbr1-2 (Jung et al., 2020), toc132-2 (SAIL_667_04) (Kubis et al., 2004), tic40-4 (SAIL_192_C10) (Kovacheva et al., 2005), Pro35S:mCherry-NBR1 (Svenning et al., 2011), ProUBQ10:mCherry-NBR1 (Jung et al., 2020), ProNBR1:NBR1-GFP (Hafrén et al., 2017; Thirumalaikumar et al., 2021), Pro35S:RECA-GFP (Köhler et al., 1997; Spitzer et al., 2015) were previously characterized. The sp1-2 (SALK_063571) (Ling et al., 2012) and pub4-2 (SALK_054373) (Woodson et al., 2015) mutant lines were acquired from Arabidopsis Biological Resource Center (https://abrc.osu.edu/) and sp1-2 pub4-2 ProNBR1:NBR1-GFP was generated by crossing. Primers used for genotyping the lines above are listed in Supplementary file 1n.
 
@@ -168,13 +435,13 @@ To fuse YFP to NBR1 mutant variants, NBR1, NBR1mPB, NBR1mAIM, and NBR1ΔUBA2 wer
 
 Seeds were surface-sterilized in 10% (v/v) bleach and 1% (v/v) Triton X-100 solution for 30 min and washed in distilled water at least five times. Seeds were sown on solid media containing 0.5 x Murashige & Skoog salts (MS), 1% (w/v) sucrose and 0.6% Phytagel and stratified at 4°C for 2–5 days before germination. Plants were grown in growth chambers at 22 °C under 16 hr of light (40 μmol m−2 s−1) and 8 hr of dark cycle (LL). For high-light treatment (HL), 8-d-old seedlings were exposed to 2000 W LED lights (1500 μmol m−2 s−1) at 12 °C for 2 hr followed by recovery for the indicated time.
 
-## Transient expression in Arabidopsis leaf protoplasts
+### Transient expression in Arabidopsis leaf protoplasts
 
 Isolation and transformation of Arabidopsis leaf protoplasts were performed as previously described (Yoo et al., 2007) with some modifications. Briefly, rosette leaves from 3-week-old Arabidopsis wild type (Col-0) and tic40-4 (Kovacheva et al., 2005) plants were used for protoplast isolation. Protoplasts were released in enzyme solution (20 mM MES pH 5.7, 1.5% [w/v] cellulase R10, 0.4% [w/v] macerozyme R10, 0.4 M mannitol and 20 mM KCl, 10 mM CaCl2, and 0.1% BSA) for 1 hr and collected by centrifugation at 100 g for 5 min. Protoplasts were washed twice with W5 buffer (2 mM MES [pH 5.7] containing 154 mM NaCl, 125 mM CaCl2 and 5 mM KCl). Then, 7 μg of the pUBN-YFP-NBR1mPB vector was used for each transformation with polyethylene glycol. After transformation, the protoplasts were incubated at 22 °C under dark for 2 hr. For HL treatment, the transformed protoplasts were exposed to 1500 μmol m−2 s−1 at 12 °C for 2 hr followed by recovery in the dark at 22 °C. Control protoplasts were kept under dark conditions at 22 °C until imaging.
 
 For confocal imaging, protoplasts were loaded onto an 18 Well Flat m-Slide (Ibidi). Images were captured on a Zeiss LSM 780 confocal microscope with a ×63 water immersion objective. YFP was excited with a 488 nm laser and detected using a 493–527 nm band-pass filter; chlorophyll was excited with a 633 nm laser and detected using a 642–695 nm band-pass filter. Between 9 and 10 protoplasts were used for quantification of each condition and phenotype.
 
-## Light microscopy and image analysis
+### Light microscopy and image analysis
 
 Confocal images were obtained in a Zeiss LSM 710 with a ×40 objective (LD C-Apochromat NA = 1.2 water immersion, Carl Zeiss). GFP, YFP, and chlorophyll were excited using a 488 nm laser and emission was collected from 450 to 560 nm for GFP/YFP and from 650 to 710 nm for chlorophyll. mCherry was excited using a 561 nm laser and emission collected from 570 to 640 nm. Quantification of confocal images was done with FIJI (Schindelin et al., 2012). To verify the specificity of the fluorescence signals, the emission spectra resulting from 488 nm excitation were collected between 420 and 720 nm using the lambda scan mode.
 
@@ -182,15 +449,15 @@ Multiphoton images were collected using a Nikon ×40 water-immersion objective l
 
 The fluorescence images were made to 2D, using a maximum intensity projection and then 2D segmentation methods were applied to identify single chloroplasts. Cellpose 2.0.5 (Nucleus-model) with GPU acceleration (NVIDIA GeForce RTX 2080 Ti) generated robust chloroplast masks, which were then processed using Python (v3.9.12, Python Software Foundation) to calculate single chloroplast intensity and other morphological traits (Stringer et al., 2021).
 
-## Protein preparation for western blots
+### Protein preparation for western blots
 
 Whole 8-day-old Arabidopsis seedlings were frozen with liquid nitrogen and homogenized in protein extraction buffer (150 mM Tris-HCl (pH7.5), 150 mM NaCl, 10 mM MgCl2, 10% [v/v] glycerol, 2% [w/v] polyvinylpyrrolidone, 3 mM dithiothreitol, 2 mM phenylmethylsulfonyl fluoride, 0.1% [v/v] Triton X-100, 1 x protease inhibitor cocktail), and centrifuged at 25,000 g for 10 min at 4 °C. The supernatants were mixed with 0.25 volumes of 5 x SDS-PAGE sample buffer containing 10% [v/v] 2-mercaptoethanol and boiled before subjecting them to SDS-PAGE gel followed by immunoblotting with the indicated antibodies.
 
-## Protein preparation for mass spectrometry (MS) analysis
+### Protein preparation for mass spectrometry (MS) analysis
 
 Seven-day-old wild type (Col-0), nbr1-2, atg7-2, and nbr1-2 atg7-2 Arabidopsis seedlings were either grown under LL or left to recover for 24 hr after HL exposure as explained above. Whole seedlings were frozen in liquid nitrogen and grinded; protein extraction buffer (50 mM HEPES pH7.5, 5 mM Na2 EDTA, 2 mM DTT, 1 x protease inhibitor cocktail) was added to the samples. After mixing, samples were left on ice for 15 min, and transferred to a homogenizer for gentle homogenization. The homogenate was left on ice for 15 min and centrifuged at 14,000 g for 1 min at 4 °C; 150 μL of the supernatant was transferred to clean 1.5 mL plastic tubes, mixed well by vortexing with 600 μL methanol and 150 μL chloroform. Then, 450 μL milliQ water was added to the sample and mixed by vortexing, followed by centrifugation at 14,000 g for 2 min. The top aqueous layer was removed and the proteins in the interphase collected with a pipette and transferred to a clean plastic tube followed by addition of 400 μL methanol, vortexing, and centrifugation at 14,000 g for 3 min. Methanol was removed from the tube without disturbing the pellet, which was left to dry in a vacuum concentrator.
 
-## Liquid chromatography-tandem MS (LC-MS/MS)
+### Liquid chromatography-tandem MS (LC-MS/MS)
 
 Protein pellets were resuspended in 100 µL of 8 M urea. Then, 100 µg protein of each sample was reduced for 1 h at room temperate with 10 mM dithiothreitol, followed by alkylation with 20 mM iodoacetamide (IAA) for 1 hr. The reaction was quenched with 20 mM dithiothreitol (DTT) and diluted with 900 µL 25 mM ammonium bicarbonate to reduce the urea concentration below 1 M, digested overnight at 37 °C in the presence of 1.5 µg of sequencing grade modified trypsin (Promega). The resulting peptides were vacuum-dried in a vacuum concentrator to approximately 200 µL, acidified with 10% trifluoroacetic acid (TFA) (pH <3), desalted and concentrated on a 100 µL Bond Elut OMIX C18 pipette tip (Agilent Technologies A57003100) according to the manufacturer’s instructions. Peptides were eluted in 50 µL of 75% acetonitrile, and 0.1% acetic acid, vacuum-dried, and resuspended in 15 µL 5% acetonitrile and 0.1% formic acid.
 
@@ -200,26 +467,26 @@ The resulting MS/MS spectra were analyzed using Proteome Discoverer software (ve
 
 Using the Perseus platform (Tyanova et al., 2016), intensity values from mass spectrometry were log2 imputed and missing values were replaced with random numbers from a Gaussian distribution with a width of 0.3 and a downshift of 1.8. Statistical significance was determined using t-tests. Only proteins with at least two peptide spectral matches (one is the unique peptide) were selected for further analysis.
 
-## Electron microscopy and immunogold labeling
+### Electron microscopy and immunogold labeling
 
 Wild type (Col-0), atg7-2, and nbr1-2 seedlings were germinated in liquid media containing 0.5 x MS and 1% sucrose. Eight-day-old cotyledons either grown under LL or at 24 hr after HL exposure were cut into small pieces and frozen in a high-pressure freezer (Leica EM Ice). To analyze the ultrastructure of chloroplasts, the samples were freeze-substituted in 2% (w/v) osmium tetroxide in acetone on dry ice overnight; samples were adjusted to room temperature on a rocker. After several rinses with acetone, the samples were infiltrated with Epon resin (Electron Microscopy Sciences) with increasing the concentration of Epon 10% (v/v), 25%, 50%, 75% in acetone, followed by three exchanges with 100% Epon. The samples were embedded and polymerized at 60 °C for 24 hr. For immunogold labeling, the high-pressure-frozen samples were freeze-substituted in 0.2% glutaraldehyde with 0.2% uranyl acetate in acetone at –90 °C in an automated freeze-substitution device (Leica AFS). After 3 days, the temperature was raised at 5 °C/hr to –60 °C and the samples were rinsed with precooled acetone three times and infiltrated with 30, 60, and 100% HM20 (Electron Microscopy Sciences) in acetone and polymerized under UV light at –50 °C. Sections were blocked with 5% (w/v) solution of nonfat milk in PBS (phosphate buffered saline) containing 0.1% Tween-20 (blocking solution) for 20 min, incubated with anti-NBR1 antibodies in the blocking solution (1:10) for 1 hr, rinsed three times with PBS containing 0.5% Tween-20, and incubated with anti-rabbit secondary antibody conjugated to gold particles (Electron Microscopy Sciences) in the blocking solution for 1 hr. After three rinses with the PBS containing 0.5% Tween-20 and another rinse with water, the samples were imaged with a transmission electron microscope (Thermo Fisher Scientific Talos).
 
-## Chloroplast isolation
+### Chloroplast isolation
 
 Intact chloroplasts were isolated as previously described with some modifications (Kley et al., 2010; Lung et al., 2015). Four-week-old leaves were punched repeatedly with a 1 ml pipette tip in buffer (0.3 M sorbitol, 50 mM HEPES/KOH [pH 7.5], 5 mM ethylenediaminetetraacetic acid [EDTA], 5 mM ethyleneglycoltetraacetic acid [EGTA], 1 mM MgCl2, 10 mM NaHCO3, and 0.5 mM dithiothreitol) and filtered through cheesecloth. The filtrate was carefully loaded onto a two-step Percoll gradient that was prepared by overlaying 40% Percoll buffer on top of 85% Percoll and centrifuged for 20 min at 2,000 g in a swing out rotor, brakes set off. The upper layer of the 40% Percoll containing broken chloroplasts was discarded, and the intact chloroplasts at the interface of the Percoll layers was collected and washed ive times by adding buffer and centrifuged for 5 min at 1000 g. Isolated chloroplasts were resuspended in buffer. We then added 0.25 volumes of 5 x SDS-PAGE sample buffer containing 10% (v/v) 2-mercaptoethanol to the samples. Protein extracts were subjected to SDS-PAGE followed by immunoblotting with the indicated antibodies.
 
-## Antibodies
+### Antibodies
 
 Antibodies against GFP (Chromotek), anti-LHCIIb (Agrisera), anti-cFBPase (Agrisera AS04043), anti-TIC40 (Agrisera), and anti-NBR1 (Jung et al., 2020) were obtained from the indicated sources.
 
-## Statistical analyses
+### Statistical analyses
 
 T-tests were performed in Microsoft Excel. ANOVA tests followed by post-hoc Tukey were performed using the calculator at https://astatsa.com/OneWay_Anova_with_TukeyHSD/. Data was visualized using GraphPad Prism 9 and Excel. The Venn diagram shown in Figure 6 were created using http://bioinformatics.psb.ugent.be/webtools/Venn/.
 
-## Accession numbers
+### Accession numbers
 
 NBR1 (At4g24690), ATG7 (At5g45900), SP1 (At1g63900), PUB4 (At2g23140), TOC132 (At2g16640), TIC40 (AT5G16620).
 
-## Materials availability
+### Materials availability
 
 Newly generated transgenic lines are available upon request.

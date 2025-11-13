@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.19594.001 The target of rapamycin (TOR) protein kinase forms multi-subunit TOR complex 1 (TORC1) and TOR complex 2 (TORC2), which exhibit distinct substrate specificities. Sin1 is one of the TORC2-specific subunit essential for phosphorylation and activation of certain AGC-family kinases. Here, we show that Sin1 is dispensable for the catalytic activity of TORC2, but its conserved region in the middle (Sin1CRIM) forms a discrete domain that specifically binds the TORC2 substrate kinases. Sin1CRIM fused to a different TORC2 subunit can recruit the TORC2 substrate Gad8 for phosphorylation even in the sin1 null mutant of fission yeast. The solution structure of Sin1CRIM shows a ubiquitin-like fold with a characteristic acidic loop, which is essential for interaction with the TORC2 substrates. The specific substrate-recognition function is conserved in human Sin1CRIM, which may represent a potential target for novel anticancer drugs that prevent activation of the mTORC2 substrates such as AKT. DOI: http://dx.doi.org/10.7554/eLife.19594.001
+The target of rapamycin (TOR) protein kinase forms multi-subunit TOR complex 1 (TORC1) and TOR complex 2 (TORC2), which exhibit distinct substrate specificities. Sin1 is one of the TORC2-specific subunit essential for phosphorylation and activation of certain AGC-family kinases. Here, we show that Sin1 is dispensable for the catalytic activity of TORC2, but its conserved region in the middle (Sin1CRIM) forms a discrete domain that specifically binds the TORC2 substrate kinases. Sin1CRIM fused to a different TORC2 subunit can recruit the TORC2 substrate Gad8 for phosphorylation even in the sin1 null mutant of fission yeast. The solution structure of Sin1CRIM shows a ubiquitin-like fold with a characteristic acidic loop, which is essential for interaction with the TORC2 substrates. The specific substrate-recognition function is conserved in human Sin1CRIM, which may represent a potential target for novel anticancer drugs that prevent activation of the mTORC2 substrates such as AKT.
 
 ## Introduction
 
@@ -38,123 +38,252 @@ In this report, we present a set of evidence that the Sin1 subunit of fission ye
 
 ## Results
 
-## Sin1 is not required for the integrity of TORC2 in fission yeast
+### Sin1 is not required for the integrity of TORC2 in fission yeast
 
-In mTORC2, it has been proposed that the SIN1 subunit is required for the interaction between mTOR and the RICTOR subunit, as their association was not detectable in the
+In mTORC2, it has been proposed that the SIN1 subunit is required for the interaction between mTOR and the RICTOR subunit, as their association was not detectable in the SIN1 knockout cell line (Jacinto et al., 2006). Although this observation might be due to the reduced level of RICTOR in the absence of SIN1 (Frias et al., 2006), we tested whether absence of Sin1 affects the TORC2 integrity in the fission yeast S. pombe, in which TORC2 is not essential for cell viability. Immunoprecipitation of the FLAG epitope-tagged Tor1 detected its association with the RICTOR ortholog Ste20 in wild-type, ∆sin1, ∆wat1 and ∆bit61 cell lysate, indicating that Tor1 interacts with Ste20 in the absence of Sin1 or other TORC2 subunits (Figure 1A). Reciprocal experiments also confirmed this conclusion (Figure 1B). Similarly, the mLST8 ortholog Wat1 co-precipitated with Tor1 from the lysate of strains lacking other TORC2 subunits, including Sin1 (Figure 1—figure supplement 1A and B). It has also been found that Sin1 is not required for the association of Bit61, a fission yeast ortholog of PROTOR/PRR5 (Hayashi et al., 2007), with TORC2 (Tatebe and Shiozaki, 2010). Together, these results indicate that the Sin1 subunit is not crucial for the integrity of S. pombe TORC2 and, even in the absence of Sin1, the other TORC2 subunits assemble into a complex.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig1-v1.jpg)
 
-**Figure 1.:** (A, B) The RICTOR ortholog Ste20 associates with Tor1 in the absence of Sin1. (A) Co-purification of Ste20-myc with FLAG-Tor1 was tested by anti-FLAG (‘α-FLAG’) affinity beads in wild-type (CA7087), ∆sin1 (CA7143), ∆bit61 (CA7150) and ∆wat1 (CA7151) cell lysate. A ste20:myc strain expressing untagged Tor1 (CA6435) was used as a negative control (tor1+). (B) Co-purification of FLAG-Tor1 with Ste20-myc was tested by anti-myc (‘α-myc’) affinity beads as in (A). A FLAG:tor1 strain expressing untagged Ste20 (CA6530) was used as a negative control (ste20+). (C) The CRIM, but not the RBD and C-terminal PH domain, of Sin1 is required for TORC2 to phosphorylate Gad8. TORC2-dependent phosphorylation of Gad8-S546 and total Gad8 were detected by immunoblotting (Tatebe et al., 2010) in cell lysate from a ∆sin1 strain (CA5126) carrying plasmids to express full-length (1–665 aa) or various Sin1 fragments fused to the myc epitope. (D) Expression of the mutant Sin1 lacking the C-terminus rescues the ∆sin1 phenotype. Their stress sensitivity was evaluated by growth on solid YES medium containing either 1 M KCl or 0.1 M CaCl2 for 2 days at 30°C. CRIM, Conserved region in the middle; PH, Pleckstrin homology; RBD, Ras-binding domain. DOI: http://dx.doi.org/10.7554/eLife.19594.003
+**Figure 1.:** (A, B) The RICTOR ortholog Ste20 associates with Tor1 in the absence of Sin1. (A) Co-purification of Ste20-myc with FLAG-Tor1 was tested by anti-FLAG (‘α-FLAG’) affinity beads in wild-type (CA7087), ∆sin1 (CA7143), ∆bit61 (CA7150) and ∆wat1 (CA7151) cell lysate. A ste20:myc strain expressing untagged Tor1 (CA6435) was used as a negative control (tor1+). (B) Co-purification of FLAG-Tor1 with Ste20-myc was tested by anti-myc (‘α-myc’) affinity beads as in (A). A FLAG:tor1 strain expressing untagged Ste20 (CA6530) was used as a negative control (ste20+). (C) The CRIM, but not the RBD and C-terminal PH domain, of Sin1 is required for TORC2 to phosphorylate Gad8. TORC2-dependent phosphorylation of Gad8-S546 and total Gad8 were detected by immunoblotting (Tatebe et al., 2010) in cell lysate from a ∆sin1 strain (CA5126) carrying plasmids to express full-length (1–665 aa) or various Sin1 fragments fused to the myc epitope. (D) Expression of the mutant Sin1 lacking the C-terminus rescues the ∆sin1 phenotype. Their stress sensitivity was evaluated by growth on solid YES medium containing either 1 M KCl or 0.1 M CaCl2 for 2 days at 30°C. CRIM, Conserved region in the middle; PH, Pleckstrin homology; RBD, Ras-binding domain.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Five fission yeast strains (CA7183, CA7213, CA7286, CA7317, CA7329) were grown to mid log phase, and the cell lysate was subjected to immunoprecipitation with anti-FLAG-affinity gel, followed by immunoblotting with anti-myc and anti-FLAG antibodies. (B) Five fission yeast strains (CA6530, CA7213, CA7286, CA7317 and CA7329) were tested as in (A) with anti-myc-affinity gel.DOI: http://dx.doi.org/10.7554/eLife.19594.004
+**Figure 1—figure supplement 1.:** (A) Five fission yeast strains (CA7183, CA7213, CA7286, CA7317, CA7329) were grown to mid log phase, and the cell lysate was subjected to immunoprecipitation with anti-FLAG-affinity gel, followed by immunoblotting with anti-myc and anti-FLAG antibodies. (B) Five fission yeast strains (CA6530, CA7213, CA7286, CA7317 and CA7329) were tested as in (A) with anti-myc-affinity gel.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** ∆sin1 strains expressing FLAG-tagged Tor1 (CA6870) or Ste20 (CA6275) were transformed with an empty vector, or a plasmid that expresses the myc epitope-tagged full-length Sin1 (1–665 aa) or Sin1 fragments lacking CRIM (∆291–390 aa, 1–290 aa; Figure 1C). Sin1-myc was precipitated with anti-myc-affinity beads and co-purification of FLAG-Tor1 and Ste20-FLAG was examined by anti-FLAG immunoblotting. CRIM, Conserved region in the middle.DOI: http://dx.doi.org/10.7554/eLife.19594.005
+**Figure 1—figure supplement 2.:** ∆sin1 strains expressing FLAG-tagged Tor1 (CA6870) or Ste20 (CA6275) were transformed with an empty vector, or a plasmid that expresses the myc epitope-tagged full-length Sin1 (1–665 aa) or Sin1 fragments lacking CRIM (∆291–390 aa, 1–290 aa; Figure 1C). Sin1-myc was precipitated with anti-myc-affinity beads and co-purification of FLAG-Tor1 and Ste20-FLAG was examined by anti-FLAG immunoblotting. CRIM, Conserved region in the middle.
 
-## The CRIM domain, but not the RBD and PH domain, is essential for the Sin1 function
+### The CRIM domain, but not the RBD and PH domain, is essential for the Sin1 function
 
 Sin1 orthologs from yeast to humans have a Ras-binding domain (RBD) and a pleckstrin homology (PH) domain at their C terminus (Figure 1C) (Schroder et al., 2007; Pan and Matsuura, 2012). It was previously reported that the C-terminal 164 amino acid residues of S. pombe Sin1, including the PH domain and a part of the RBD, are essential for Sin1 function in vivo (Wilkinson et al., 1999). Unexpectedly, however, our immunoblotting experiments with the antibodies against Gad8 phosphorylated at S546 within the hydrophobic motif (Tatebe et al., 2010) found that the TORC2-dependent phosphorylation of Gad8 was not compromised in S. pombe cells expressing Sin1 lacking the RBD and PH domain (1–530 aa and 1–390 aa, Figure 1C). Consistently, the stress-sensitive phenotypes of the ∆sin1 mutant (Matsuo et al., 2007; Ikeda et al., 2008) was complemented by expressing those truncated Sin1 proteins (Figure 1D), confirming that the C-terminal region of Sin1 including its PH domain is dispensable for the Sin1 function in fission yeast. On the other hand, further C-terminal truncation (1–290 aa) or internal deletion (∆291–390 aa), which removes the CRIM (Schroder et al., 2004), completely abolished the Sin1 function (Figure 1C and D), although those Sin1 mutant proteins were still capable of forming a complex with the other TORC2 subunits (Figure 1—figure supplement 2). These results strongly suggest an essential role of the Sin1 CRIM in the TORC2 function.
 
-## Sin1 CRIM domain binds the AGC kinases that are phosphorylated by TORC2
+### Sin1 CRIM domain binds the AGC kinases that are phosphorylated by TORC2
 
-During a yeast two-hybrid screen to identify fission yeast proteins that interact with the Gad8 kinase (Materials and methods), we isolated cDNA clones encoding Sin1. Immunoprecipitation of FLAG epitope-tagged Gad8 from fission yeast cell lysate co-purified a small amount of Sin1 (
+During a yeast two-hybrid screen to identify fission yeast proteins that interact with the Gad8 kinase (Materials and methods), we isolated cDNA clones encoding Sin1. Immunoprecipitation of FLAG epitope-tagged Gad8 from fission yeast cell lysate co-purified a small amount of Sin1 (Figure 2A), confirming weak but detectable interaction between the two proteins in fission yeast. Yeast two-hybrid assays using a series of truncated Sin1 fragments indicated that Gad8 binds to the amino acid residues 281–400 of Sin1 (Figure 2—figure supplement 1A), which mostly overlap with the CRIM domain and are thus referred to as SpSin1CRIM hereafter. When SpSin1CRIM fused to GST was expressed in S. pombe, Gad8 was co-purified with this GST fusion (Figure 2B), confirming that this 120-residue region of Sin1 is sufficient for the interaction with Gad8. Moreover, induced overexpression of the GST-SpSin1CRIM fusion significantly reduced the Gad8-S546 phosphorylation (Figure 2C); one likely possibility is that the expressed SpSin1CRIM fragment can compete with TORC2 for Gad8.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig2-v1.jpg)
 
-**Figure 2.:** (A) Sin1 interacts with the TORC2 substrate Gad8 in S. pombe. Co-purification of Sin1-myc with Gad8-FLAG (‘FL’) precipitated by anti-FLAG beads was tested in a sin1:myc gad8:FLAG strain (lane 2; CA6993). sin1:myc gad8+ (lane 1; CA6984) and gad8:FLAG sin1+ (lane 3; CA6281) strains were used as negative controls. (B) SpSin1CRIM can bind Gad8 in S. pombe. SpSin1CRIM fused to GST was expressed in a gad8:FLAG strain (CA6281), and proteins collected on glutathione (GSH)-beads and the cell lysate were analyzed by Coomassie blue staining and anti-FLAG immunoblotting. (C) Overexpressed SpSin1CRIM inhibits Gad8 phosphorylation by TORC2. GST or GST- SpSin1CRIM (247–400) were induced (‘On’) from the thiamine-repressible nmt1 promoter and the crude cell lysate was analyzed by immunoblotting. (D) Human Sin1CRIM binds mTORC2 substrates, but not the mTORC1 substrate S6K1. FLAG-tagged AKT, PKCα, Sgk1 and S6K1 were expressed in HEK-293T and the cell lysate was incubated with bacterially produced MBP- or GST-fused HsSin1CRIM, which were immobilized onto amylose- and GSH-beads, respectively. Proteins bound to the beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining. (E) SpSin1CRIM does not interact with Psk1, a S. pombe TORC1 substrate. Bacterially produced GST-SpSin1CRIM bound to GSH-beads was incubated with cell lysate from gad8:FLAG (CA6281) and psk1:FLAG (CA8070) strains of S. pombe. Proteins bound to the GSH-beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining.DOI: http://dx.doi.org/10.7554/eLife.19594.006
+**Figure 2.:** (A) Sin1 interacts with the TORC2 substrate Gad8 in S. pombe. Co-purification of Sin1-myc with Gad8-FLAG (‘FL’) precipitated by anti-FLAG beads was tested in a sin1:myc gad8:FLAG strain (lane 2; CA6993). sin1:myc gad8+ (lane 1; CA6984) and gad8:FLAG sin1+ (lane 3; CA6281) strains were used as negative controls. (B) SpSin1CRIM can bind Gad8 in S. pombe. SpSin1CRIM fused to GST was expressed in a gad8:FLAG strain (CA6281), and proteins collected on glutathione (GSH)-beads and the cell lysate were analyzed by Coomassie blue staining and anti-FLAG immunoblotting. (C) Overexpressed SpSin1CRIM inhibits Gad8 phosphorylation by TORC2. GST or GST- SpSin1CRIM (247–400) were induced (‘On’) from the thiamine-repressible nmt1 promoter and the crude cell lysate was analyzed by immunoblotting. (D) Human Sin1CRIM binds mTORC2 substrates, but not the mTORC1 substrate S6K1. FLAG-tagged AKT, PKCα, Sgk1 and S6K1 were expressed in HEK-293T and the cell lysate was incubated with bacterially produced MBP- or GST-fused HsSin1CRIM, which were immobilized onto amylose- and GSH-beads, respectively. Proteins bound to the beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining. (E) SpSin1CRIM does not interact with Psk1, a S. pombe TORC1 substrate. Bacterially produced GST-SpSin1CRIM bound to GSH-beads was incubated with cell lysate from gad8:FLAG (CA6281) and psk1:FLAG (CA8070) strains of S. pombe. Proteins bound to the GSH-beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Interaction between various fission yeast Sin1 fragments and Gad8 in yeast two-hybrid assays. Abbreviation: CRIM, Conserved Region In the Middle; RBD, Raf-like Ras-binding domain; PH, pleckstrin homology. CRIM spans the amino acid residues 253–383 of fission yeast Sin1 (Schroder et al., 2004); RBD and PH do the residues 438–514 and 560–658, respectively (Schroder et al., 2007). Interaction was assessed by histidine auxotrophy: ‘+’, interaction; '–', no interaction. (B) Interaction of Gad8 fragments with Sin1 in yeast two-hybrid assays. Abbreviations: C2, C2 domain; Pkinase, protein kinase domain; T, protein kinase C-terminal domain. Domain prediction is based on the motifs PF00069, PF00433, and PF00168 in the Pfam database. (C) Interaction between various human Sin1 central fragments and human AKT2 in yeast two-hybrid assays. CRIM spans the amino acid residues 137–267 of human Sin1i2 (Schroder et al., 2004), while PH does the amino acid residues 348–450 (Schroder et al., 2007). Note that the Sin1i2 isoform does not contain the intact RBD. (D) Interaction of human AKT2 fragments with human SIN1 in yeast two-hybrid assays. Abbreviations: PH, PH domain; Pkinase, protein kinase domain; T, protein kinase C terminal domain. Domain prediction is based on PF00069, PF00433, and PF00169 in the Pfam database.DOI: http://dx.doi.org/10.7554/eLife.19594.007
+**Figure 2—figure supplement 1.:** (A) Interaction between various fission yeast Sin1 fragments and Gad8 in yeast two-hybrid assays. Abbreviation: CRIM, Conserved Region In the Middle; RBD, Raf-like Ras-binding domain; PH, pleckstrin homology. CRIM spans the amino acid residues 253–383 of fission yeast Sin1 (Schroder et al., 2004); RBD and PH do the residues 438–514 and 560–658, respectively (Schroder et al., 2007). Interaction was assessed by histidine auxotrophy: ‘+’, interaction; '–', no interaction. (B) Interaction of Gad8 fragments with Sin1 in yeast two-hybrid assays. Abbreviations: C2, C2 domain; Pkinase, protein kinase domain; T, protein kinase C-terminal domain. Domain prediction is based on the motifs PF00069, PF00433, and PF00168 in the Pfam database. (C) Interaction between various human Sin1 central fragments and human AKT2 in yeast two-hybrid assays. CRIM spans the amino acid residues 137–267 of human Sin1i2 (Schroder et al., 2004), while PH does the amino acid residues 348–450 (Schroder et al., 2007). Note that the Sin1i2 isoform does not contain the intact RBD. (D) Interaction of human AKT2 fragments with human SIN1 in yeast two-hybrid assays. Abbreviations: PH, PH domain; Pkinase, protein kinase domain; T, protein kinase C terminal domain. Domain prediction is based on PF00069, PF00433, and PF00169 in the Pfam database.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** Interaction was examined by HIS3 reporter gene expression in the histidine auxotrophic HF7c budding yeast strain.DOI: http://dx.doi.org/10.7554/eLife.19594.008
+**Figure 2—figure supplement 2.:** Interaction was examined by HIS3 reporter gene expression in the histidine auxotrophic HF7c budding yeast strain.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** Interaction was examined by HIS3 reporter gene expression in the histidine auxotrophic HF7c budding yeast strain. The Sck2 and Pka1 baits exhibited auto-activation in HIS3 reporter gene expression independently of the SpSin1CRIM prey (labeled by asterisks).DOI: http://dx.doi.org/10.7554/eLife.19594.009
+**Figure 2—figure supplement 3.:** Interaction was examined by HIS3 reporter gene expression in the histidine auxotrophic HF7c budding yeast strain. The Sck2 and Pka1 baits exhibited auto-activation in HIS3 reporter gene expression independently of the SpSin1CRIM prey (labeled by asterisks).
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig2-figsupp4-v1.jpg)
 
-**Figure 2—figure supplement 4.:** Interaction was examined by HIS3 reporter gene expression in the histidine auxotrophic HF7c budding yeast strain.DOI: http://dx.doi.org/10.7554/eLife.19594.010
+**Figure 2—figure supplement 4.:** Interaction was examined by HIS3 reporter gene expression in the histidine auxotrophic HF7c budding yeast strain.
 
 Because of the evolutionary conservation of the CRIM domain among Sin1 orthologs (Schroder et al., 2004), we examined whether human SIN1 CRIM binds to the mTORC2 substrates, such as AKT, PKCα and SGK1 (Sarbassov et al., 2005; Jacinto et al., 2006; García-Martínez and Alessi, 2008; Cameron et al., 2011). Although the physical interaction between human SIN1 and AKT has been controversial (Jacinto et al., 2006; Cameron et al., 2011; Lu et al., 2011), our yeast two-hybrid assays found that the residues 122–314 of human SIN1, referred to as HsSin1CRIM hereafter, interacted with AKT as well as PKCα (Figure 2—figure supplements 1C,D and 2). Furthermore, in an in vitro binding assay, AKT, PKCα as well as SGK1 were co-precipitated with bacterially produced HsSin1CRIM (Figure 2D). Although the interaction between SIN1 and SGK1 has been reported (Lu et al., 2011), our experiments showed for the first time that the CRIM domain of SIN1 is sufficient for the interaction with SGK1. Another mTORC2 substrate, PKCε, is known to interact with SIN1 fragments that include the CRIM domain (Cameron et al., 2011). Together, these results strongly suggest that the ability of the CRIM domain to bind the TORC2 substrate kinases is conserved between S. pombe and humans.
 
 Despite the structural similarity among the AGC kinase family members, TORC2 phosphorylates only a subset of them; human S6K1 and its fission yeast ortholog Psk1 are AGC kinases whose hydrophobic motif is phosphorylated by TORC1 rather than TORC2 (Magnuson et al., 2012; Nakashima et al., 2012). Consistently, human S6K1 and S. pombe Psk1 showed no detectable binding to HsSin1CRIM and SpSin1CRIM, respectively (Figure 2D and E). Psk1 and other S. pombe AGC kinases that are not regulated by TORC2, including Sck1, Sck2, Pck1 and Pck2 (Nakashima et al., 2012; Madrid et al., 2015), also failed to interact with SpSin1CRIM in yeast two-hybrid assays (Figure 2—figure supplement 3). Thus, it appears that, in both fission yeast and humans, the CRIM domain of Sin1 can selectively bind the TORC2 substrates among the members of the AGC kinase family. It should be noted, however, that the CRIM domain does not seem to recognize the TORC2 phosphorylation sites per se, because CRIM can interact with Gad8 and AKT lacking their C-terminal hydrophobic motif (Figure 2—figure supplement 1B and D).
 
-## Sin1 CRIM has a protruding acidic loop involved in the recruitment of TORC2 substrates
+### Sin1 CRIM has a protruding acidic loop involved in the recruitment of TORC2 substrates
 
-For better understanding of the molecular mechanism by which the CRIM domain recognizes the TORC2 substrates, we sought amino acid residues essential for the SpSin1CRIM function. Random mutagenesis followed by yeast two-hybrid screens isolated several SpSin1CRIM missense mutations that abolish the interaction with Gad8 (
+For better understanding of the molecular mechanism by which the CRIM domain recognizes the TORC2 substrates, we sought amino acid residues essential for the SpSin1CRIM function. Random mutagenesis followed by yeast two-hybrid screens isolated several SpSin1CRIM missense mutations that abolish the interaction with Gad8 (Figure 3A). Each of the isolated mutations was introduced into GST-SpSin1CRIM, and all the successfully expressed mutant proteins showed significantly compromised interaction with Gad8 in fission yeast cells (Figure 3B; data not shown). Those confirmed mutations were then introduced to the full-length Sin1 protein tagged with the myc epitope and expressed in the ∆sin1 strain for further analyses. Complementation of the ∆sin1 defects in Gad8 phosphorylation (Figure 3C) and cellular stress resistance (Figure 3D) was not observed even with the mutant Sin1 proteins whose expression was comparable to that of the wild-type protein. On the other hand, with the exception of the marginal effect of L348S, those amino acid substitutions within CRIM had no apparent impact on the ability of Sin1 to interact with Tor1 (Figure 3E). Thus, these Sin1 mutant proteins were incorporated into TORC2, but the mutations to the CRIM domain compromised the interaction with Gad8, leading to the inability of TORC2 to phosphorylate Gad8.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig3-v1.jpg)
 
-**Figure 3.:** (A) Yeast two-hybrid screens isolated SpSin1CRIM mutations that abrogate the interaction with Gad8 (red). Pairwise alignment of the fission yeast and human CRIM sequences was performed using the SSEARCH program (Pearson, 1991). (B) Defective interaction of the mutant SpSin1CRIM with Gad8. The Sin1CRIM (residues 247–400 or 281–400) fragments and those with the indicated mutations were expressed as GST-fusion in a gad8:FLAG strain of S. pombe (CA6281), and proteins collected on GSH-beads and the cell lysate were detected by Coomassie blue staining and anti-FLAG immunoblotting. (C) TORC2 with the Sin1CRIM mutations fails to phosphorylate Gad8-S546. A ∆sin1 strain (CA5126) was transformed with a plasmid to express myc-tagged wild-type or mutant Sin1 carrying one of the CRIM mutations, and the cell lysate was analyzed by immunoblotting. (D) Stress sensitivity of the Sin1 mutants in (C) was examined by growth on YES agar medium containing either 1 M KCl or 0.1 M CaCl2. (E) CRIM mutations do not compromise the incorporation of Sin1 into TORC2. A ∆sin1 FLAG:tor1 strain (CA6870) was transformed with the plasmids used in (C), and co-purification of the wild-type and mutant Sin1-myc with FLAG-Tor1 precipitated by anti-FLAG beads was tested. A ∆sin1 strain expressing untagged Tor1 (CA5126) was used as a negative control (tor1+). (F) A ribbon representation of the lowest energy structure of SpSin1CRIM (272–397). The protruding acidic loop region is marked by a dashed oval.DOI: http://dx.doi.org/10.7554/eLife.19594.011
+**Figure 3.:** (A) Yeast two-hybrid screens isolated SpSin1CRIM mutations that abrogate the interaction with Gad8 (red). Pairwise alignment of the fission yeast and human CRIM sequences was performed using the SSEARCH program (Pearson, 1991). (B) Defective interaction of the mutant SpSin1CRIM with Gad8. The Sin1CRIM (residues 247–400 or 281–400) fragments and those with the indicated mutations were expressed as GST-fusion in a gad8:FLAG strain of S. pombe (CA6281), and proteins collected on GSH-beads and the cell lysate were detected by Coomassie blue staining and anti-FLAG immunoblotting. (C) TORC2 with the Sin1CRIM mutations fails to phosphorylate Gad8-S546. A ∆sin1 strain (CA5126) was transformed with a plasmid to express myc-tagged wild-type or mutant Sin1 carrying one of the CRIM mutations, and the cell lysate was analyzed by immunoblotting. (D) Stress sensitivity of the Sin1 mutants in (C) was examined by growth on YES agar medium containing either 1 M KCl or 0.1 M CaCl2. (E) CRIM mutations do not compromise the incorporation of Sin1 into TORC2. A ∆sin1 FLAG:tor1 strain (CA6870) was transformed with the plasmids used in (C), and co-purification of the wild-type and mutant Sin1-myc with FLAG-Tor1 precipitated by anti-FLAG beads was tested. A ∆sin1 strain expressing untagged Tor1 (CA5126) was used as a negative control (tor1+). (F) A ribbon representation of the lowest energy structure of SpSin1CRIM (272–397). The protruding acidic loop region is marked by a dashed oval.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** The Sin1 residues whose mutation abrogates the interaction with Gad8 (Figure 3A) are shown as ball-and-stick models in the NMR structure of the CRIM domain.DOI: http://dx.doi.org/10.7554/eLife.19594.012
+**Figure 3—figure supplement 1.:** The Sin1 residues whose mutation abrogates the interaction with Gad8 (Figure 3A) are shown as ball-and-stick models in the NMR structure of the CRIM domain.
 
-The experiment above demonstrated that the CRIM domain of Sin1 is essential for TORC2 to bind and phosphorylate the substrate Gad8. However, the isolated mutations are scattered throughout the SpSin1CRIM (Figure 3A), providing little mechanistic insight into the substrate recognition. NMR chemical shifts and 1H-15N heteronuclear NOE values (Kataoka et al., 2014; Furuita et al., 2014) indicated that SpSin1CRIM is a highly loop-rich but structurally ordered. In general, loop-rich proteins are difficult targets to determine the structures by X-ray and NMR. Therefore, a newly developed method that allows determination of loop-rich protein structures by paramagnetic relaxation enhancement NMR techniques (Furuita et al., 2014) was applied to SpSin1CRIM, with additional structure refinement by the XPLOR-NIH software. The solution structure of SpSin1CRIM has three α helices and four β strands, which are arranged around the longest helix α2 (Figure 3F and Table 1; the atomic coordinates of the refined structure have been submitted to the Protein Data Bank). The overall structure of SpSin1CRIM belongs to the ubiquitin superfold family (Kiel and Serrano, 2006), but more than half of the structured region consists of loops.10.7554/eLife.19594.013Table 1.Structural statistics for SpSin1CRIM. RDC correlation coefficient was caluculated using the program PALES (Zweckstetter and Bax, 2000). Ramachandran analysis was performed using PROCHECK 3.5.4 (Laskowski et al., 1996). Deviations from ideal geometry was caluculated using PDB Validation Server.DOI: http://dx.doi.org/10.7554/eLife.19594.013NOE upper distance restraintsShort-range (|i−j|<=1)636Medium-range (1<|i−j|<5)132Long-range (5<=|i−j|)199Total967PRE distance restraints748Dihedral angle restraintsφ99ψ110χ112Hydrogen-bond restraints0RMS Deviations (272–397) (Å)backbone0.89 ± 0.11 heavy1.36 ± 0.12 RDC correlation coefficient0.94 ± 0.02 ViolationsNOE (>0.5 Å)0PRE (>0.5 Å)0Dihedral (>5°)0Maximum violationNOE (Å)0.49PRE (Å)0.15Dihedral (°)3.1Ramachandran analysis (272–397) (%)Most favored regions91.3Additional allowed regions7.7Generously allowed regions0.5Disallowed regions0.6Deviations from ideal geometryBond lingths (Å)0.011Bond angles (°)0.14
+The experiment above demonstrated that the CRIM domain of Sin1 is essential for TORC2 to bind and phosphorylate the substrate Gad8. However, the isolated mutations are scattered throughout the SpSin1CRIM (Figure 3A), providing little mechanistic insight into the substrate recognition. NMR chemical shifts and 1H-15N heteronuclear NOE values (Kataoka et al., 2014; Furuita et al., 2014) indicated that SpSin1CRIM is a highly loop-rich but structurally ordered. In general, loop-rich proteins are difficult targets to determine the structures by X-ray and NMR. Therefore, a newly developed method that allows determination of loop-rich protein structures by paramagnetic relaxation enhancement NMR techniques (Furuita et al., 2014) was applied to SpSin1CRIM, with additional structure refinement by the XPLOR-NIH software. The solution structure of SpSin1CRIM has three α helices and four β strands, which are arranged around the longest helix α2 (Figure 3F and Table 1; the atomic coordinates of the refined structure have been submitted to the Protein Data Bank). The overall structure of SpSin1CRIM belongs to the ubiquitin superfold family (Kiel and Serrano, 2006), but more than half of the structured region consists of loops.
 
-The majority of the mutations that abrogate the Gad8 binding (
+**Table 1.**
+ Structural statistics for SpSin1CRIM. RDC correlation coefficient was caluculated using the program PALES (Zweckstetter and Bax, 2000). Ramachandran analysis was performed using PROCHECK 3.5.4 (Laskowski et al., 1996). Deviations from ideal geometry was caluculated using PDB Validation Server.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NOE upper distance restraints</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Short-range (|i−j|&lt;=1)</td>
+      <td>636</td>
+    </tr>
+    <tr>
+      <td>Medium-range (1&lt;|i−j|&lt;5)</td>
+      <td>132</td>
+    </tr>
+    <tr>
+      <td>Long-range (5&lt;=|i−j|)</td>
+      <td>199</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>967</td>
+    </tr>
+    <tr>
+      <td>PRE distance restraints</td>
+      <td>748</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dihedral angle restraints</td>
+    </tr>
+    <tr>
+      <td>φ</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>ψ</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>χ1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Hydrogen-bond restraints</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2">RMS Deviations (272–397) (Å)</td>
+    </tr>
+    <tr>
+      <td>backbone</td>
+      <td>0.89 ± 0.11</td>
+    </tr>
+    <tr>
+      <td>heavy</td>
+      <td>1.36 ± 0.12</td>
+    </tr>
+    <tr>
+      <td>RDC correlation coefficient</td>
+      <td>0.94 ± 0.02</td>
+    </tr>
+    <tr>
+      <td colspan="2">Violations</td>
+    </tr>
+    <tr>
+      <td>NOE (&gt;0.5 Å)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PRE (&gt;0.5 Å)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Dihedral (&gt;5°)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Maximum violation</td>
+    </tr>
+    <tr>
+      <td>NOE (Å)</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>PRE (Å)</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Dihedral (°)</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran analysis (272–397) (%)</td>
+    </tr>
+    <tr>
+      <td>Most favored regions</td>
+      <td>91.3</td>
+    </tr>
+    <tr>
+      <td>Additional allowed regions</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>Generously allowed regions</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Disallowed regions</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td colspan="2">Deviations from ideal geometry</td>
+    </tr>
+    <tr>
+      <td>Bond lingths (Å)</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.14</td>
+    </tr>
+  </tbody>
+</table>
+
+The majority of the mutations that abrogate the Gad8 binding (Figure 3A) are mapped to the buried residues in the structure of SpSin1CRIM (Figure 3—figure supplement 1) and are likely to significantly perturb the overall folding of the domain, thus disrupting the functional TORC2-Gad8 interaction (Figure 3C). A distinctive characteristic of SpSin1CRIM is its protruding loop structure formed around residues 352–361 (Figures 3F and 4A), which are rich in acidic amino acid residues with solvent-exposed side chains (Figure 4—figure supplement 1). In addition, the primary sequence of this loop region is highly conserved among Sin1 orthologs (Figure 4B and Figure 4—figure supplement 2). Substitutions of the seven acidic residues in this loop region with asparagine and glutamine (‘poly NQ’, Figure 4B) completely eliminated the affinity of SpSin1CRIM for Gad8 (Figure 4C) without significantly disturbing the overall folding (Figure 4—figure supplement 3), suggesting that the negative charge of the protruding loop is essential. Further analysis of individual substitution mutants suggested that the acidic residues located in the second half of the loop (D358, E359 and D360) play more important roles (Figure 4—figure supplement 4). Two conserved hydrophobic residues within this loop region, L357 and F361, also appear to contribute to the interaction with Gad8; alanine substitution of each of these residues partially compromised the Gad8 binding (Figure 4—figure supplement 5), and the L357A/F361A double mutant (‘AA’, Figure 4B) showed very little interaction with Gad8 (Figure 4C). Consistently, the TORC2-dependent phosphorylation of Gad8-S546 was dramatically impaired in strains expressing Sin1 with those amino-acid substitutions (Figure 4D), which did not affect the association between Sin1 and the Tor1 kinase within the TORC2 complex (Figure 4E). These results indicate that the protruding acidic loop of SpSin1CRIM is essential for TORC2 to recruit and phosphorylate its substrate, Gad8.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-v1.jpg)
 
-**Figure 4.:** (A) The molecular surface of SpSin1CRIM colored according to the electrostatic potential ranging from positive (blue) to negative (red) charge. The protruding acidic loop is marked by a dashed oval. (B) Alignment of the fission yeast and human Sin1CRIM sequences that correspond to the acidic protrusion. The ‘poly NQ’ and ‘AA’ show the amino acid substitutions used in (C) ~ (G). (C) The acidic and hydrophobic residues in the protruding loop of SpSin1CRIM are essential for Gad8 binding in vitro. The recombinant wild-type and mutant GST-SpSin1CRIM on GSH-beads were incubated with cell lysate from a gad8:FLAG strain (CA6281). Proteins bound to the beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining. (D) TORC2 with the mutations to the acidic loop of Sin1CRIM fails to phosphorylate Gad8. A ∆sin1 strain (CA5126) was transformed with a plasmid to express myc-tagged wild-type or mutant Sin1 carrying the poly-NQ and AA mutations, and the cell lysate was analyzed by immunoblotting. (E) The acidic loop mutations do not compromise the incorporation of Sin1 into TORC2. A ∆sin1 FLAG:tor1 strain (CA6870) was transformed with the plasmids used in (D), and co-purification of the wild-type and mutant Sin1-myc with FLAG-Tor1 precipitated by anti-FLAG beads was tested. A ∆sin1 strain expressing untagged Tor1 (CA5126) was used as a negative control (tor1+). (F) The acidic and hydrophobic residues in the conserved loop region of HsSin1CRIM are important to bind AKT. FLAG-tagged AKT was expressed in HEK-293T, and the cell lysate was incubated with the recombinant wild-type and mutant MBP-HsSin1CRIM on amylose-beads. Proteins bound to the beads and the cell lysate were analyzed as in (C). (G) The conserved acidic loop region of HsSin1CRIM is important for mTORC2-dependent phosphorylation of AKT-S473. The wild-type and mutant SIN1 lacking the entire CRIM (‘∆CRIM’) or acidic region ('∆acidic’) as well as the poly NQ SIN1mutant were expressed with the myc tag in the SIN1-deficient MCF-7 cells. Insulin-stimulated phosphorylation of AKT-S473 was analyzed by immunoblotting.DOI: http://dx.doi.org/10.7554/eLife.19594.014
+**Figure 4.:** (A) The molecular surface of SpSin1CRIM colored according to the electrostatic potential ranging from positive (blue) to negative (red) charge. The protruding acidic loop is marked by a dashed oval. (B) Alignment of the fission yeast and human Sin1CRIM sequences that correspond to the acidic protrusion. The ‘poly NQ’ and ‘AA’ show the amino acid substitutions used in (C) ~ (G). (C) The acidic and hydrophobic residues in the protruding loop of SpSin1CRIM are essential for Gad8 binding in vitro. The recombinant wild-type and mutant GST-SpSin1CRIM on GSH-beads were incubated with cell lysate from a gad8:FLAG strain (CA6281). Proteins bound to the beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining. (D) TORC2 with the mutations to the acidic loop of Sin1CRIM fails to phosphorylate Gad8. A ∆sin1 strain (CA5126) was transformed with a plasmid to express myc-tagged wild-type or mutant Sin1 carrying the poly-NQ and AA mutations, and the cell lysate was analyzed by immunoblotting. (E) The acidic loop mutations do not compromise the incorporation of Sin1 into TORC2. A ∆sin1 FLAG:tor1 strain (CA6870) was transformed with the plasmids used in (D), and co-purification of the wild-type and mutant Sin1-myc with FLAG-Tor1 precipitated by anti-FLAG beads was tested. A ∆sin1 strain expressing untagged Tor1 (CA5126) was used as a negative control (tor1+). (F) The acidic and hydrophobic residues in the conserved loop region of HsSin1CRIM are important to bind AKT. FLAG-tagged AKT was expressed in HEK-293T, and the cell lysate was incubated with the recombinant wild-type and mutant MBP-HsSin1CRIM on amylose-beads. Proteins bound to the beads and the cell lysate were analyzed as in (C). (G) The conserved acidic loop region of HsSin1CRIM is important for mTORC2-dependent phosphorylation of AKT-S473. The wild-type and mutant SIN1 lacking the entire CRIM (‘∆CRIM’) or acidic region ('∆acidic’) as well as the poly NQ SIN1mutant were expressed with the myc tag in the SIN1-deficient MCF-7 cells. Insulin-stimulated phosphorylation of AKT-S473 was analyzed by immunoblotting.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** The NMR structure of the acidic loop in SpSin1CRIM (residues 352–361; Figure 4B) is shown as a stick model. The side chains of the most residues within the acidic loop region face outward and do not interact with other residues of the CRIM domain. The Ligplot+ (Laskowski and Swindells, 2011) and WHAT IF (Vriend, 1990) programs identified neither hydrogen bond nor salt bridge between the loop region and the rest of the CRIM domain. Arg349 and Ile350 are predicted by LIGPLOT software to have hydrophobic interaction with the loop region and are shown by a surface model.DOI: http://dx.doi.org/10.7554/eLife.19594.015
+**Figure 4—figure supplement 1.:** The NMR structure of the acidic loop in SpSin1CRIM (residues 352–361; Figure 4B) is shown as a stick model. The side chains of the most residues within the acidic loop region face outward and do not interact with other residues of the CRIM domain. The Ligplot+ (Laskowski and Swindells, 2011) and WHAT IF (Vriend, 1990) programs identified neither hydrogen bond nor salt bridge between the loop region and the rest of the CRIM domain. Arg349 and Ile350 are predicted by LIGPLOT software to have hydrophobic interaction with the loop region and are shown by a surface model.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** Multiple alignment was performed by MSAprobWS (Liu et al., 2010) via Jalview (Waterhouse et al., 2009). Sequences included in the alignment are YOL078W (S. cerevisiae), ANID_06304 (A. nidulans), SPAPYUG7.02c (S. pombe), gi52453 (T. adhaerens), NP_077022.1 (H. sapiens) and XP_002649140.1 (D. discoidum). The secondary structure elements of SpSin1CRIM determined by DSSP (Kabsch and Sander, 1983; Touw et al., 2015) are shown above with cylinders and arrows as α-helices and β-sheets, respectively.DOI: http://dx.doi.org/10.7554/eLife.19594.016
+**Figure 4—figure supplement 2.:** Multiple alignment was performed by MSAprobWS (Liu et al., 2010) via Jalview (Waterhouse et al., 2009). Sequences included in the alignment are YOL078W (S. cerevisiae), ANID_06304 (A. nidulans), SPAPYUG7.02c (S. pombe), gi52453 (T. adhaerens), NP_077022.1 (H. sapiens) and XP_002649140.1 (D. discoidum). The secondary structure elements of SpSin1CRIM determined by DSSP (Kabsch and Sander, 1983; Touw et al., 2015) are shown above with cylinders and arrows as α-helices and β-sheets, respectively.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** 1H-15N HSQC spectra of the wild-type (blue) and ‘poly NQ’ mutant (red) of SpSin1CRIM.The NMR spectrum of the ‘poly NQ’ mutant resembles that of the wild-type protein, suggesting that the mutation does not significantly disturb the overall folding of the CRIM domain.DOI: http://dx.doi.org/10.7554/eLife.19594.017
+**Figure 4—figure supplement 3.:** The NMR spectrum of the ‘poly NQ’ mutant resembles that of the wild-type protein, suggesting that the mutation does not significantly disturb the overall folding of the CRIM domain.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp4-v1.jpg)
 
-**Figure 4—figure supplement 4.:** The recombinant wild-type and mutant GST-SpSin1CRIM on GSH-beads were incubated with cell lysate from a gad8:FLAG strain (CA6281). Proteins bound to the beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining. Unfused GST and the Sin1 RBD and PH domains (residues 401–665) fused to GST were used as negative controls.DOI: http://dx.doi.org/10.7554/eLife.19594.018
+**Figure 4—figure supplement 4.:** The recombinant wild-type and mutant GST-SpSin1CRIM on GSH-beads were incubated with cell lysate from a gad8:FLAG strain (CA6281). Proteins bound to the beads and the cell lysate were analyzed by anti-FLAG immunoblotting and Coomassie blue staining. Unfused GST and the Sin1 RBD and PH domains (residues 401–665) fused to GST were used as negative controls.
 
 ![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp5-v1.jpg)
 
-**Figure 4—figure supplement 5.:** The recombinant wild-type and mutant GST-SpSin1CRIM on GSH-beads were incubated with the cell lysate from a gad8:FLAG (CA6281) strain. Gad8 bound to the beads were analyzed by anti-FLAG immunoblotting, followed by densitometric quantification.DOI: http://dx.doi.org/10.7554/eLife.19594.019
+**Figure 4—figure supplement 5.:** The recombinant wild-type and mutant GST-SpSin1CRIM on GSH-beads were incubated with the cell lysate from a gad8:FLAG (CA6281) strain. Gad8 bound to the beads were analyzed by anti-FLAG immunoblotting, followed by densitometric quantification.
 
 ![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp6-v1.jpg)
 
-**Figure 4—figure supplement 6.:** SIN1 by CRISPR/Cas9-mediated genome editing was confirmed by immunoblotting and genomic sequencing.(A) Expression of the SIN1 protein is abolished in several clones of the MCF-7 human culture cells that are transfected with a SIN1-targeting CRISPR/Cas9 construct. In clones #1, 3, and 9, SIN1 (indicated by arrowheads) was not detected at all by immunoblotting in either crude cell lysate or anti-RICTOR immunoprecipitate. Accordingly, AKT phosphorylation at the hydrophobic motif was completely lost in those clones. Clone #3 was used in the subsequent experiment shown in Figure 4G. (B) Genomic sequencing of SIN1-deficient clone #3 detected a small insertion and small deletions in Exon 6 of human SIN1 that resulted in frameshift mutations or an internal deletion.DOI: http://dx.doi.org/10.7554/eLife.19594.020
+**Figure 4—figure supplement 6.:** (A) Expression of the SIN1 protein is abolished in several clones of the MCF-7 human culture cells that are transfected with a SIN1-targeting CRISPR/Cas9 construct. In clones #1, 3, and 9, SIN1 (indicated by arrowheads) was not detected at all by immunoblotting in either crude cell lysate or anti-RICTOR immunoprecipitate. Accordingly, AKT phosphorylation at the hydrophobic motif was completely lost in those clones. Clone #3 was used in the subsequent experiment shown in Figure 4G. (B) Genomic sequencing of SIN1-deficient clone #3 detected a small insertion and small deletions in Exon 6 of human SIN1 that resulted in frameshift mutations or an internal deletion.
 
 ![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp7-v1.jpg)
 
-**Figure 4—figure supplement 7.:** (A) The truncated SIN1 fragments and the SIN1 mutant proteins lacking the conserved acidic loop (∆236–245) or the CRIM domain (∆156–314). (B) The wild-type and mutant SIN1 proteins shown in (A) were expressed with the myc epitope tag in the SIN1-deficient MCF-7 cells. Co-purification of SIN1-myc with mTOR and Rictor was tested by anti-myc immunoprecipitation (IP).DOI: http://dx.doi.org/10.7554/eLife.19594.021
+**Figure 4—figure supplement 7.:** (A) The truncated SIN1 fragments and the SIN1 mutant proteins lacking the conserved acidic loop (∆236–245) or the CRIM domain (∆156–314). (B) The wild-type and mutant SIN1 proteins shown in (A) were expressed with the myc epitope tag in the SIN1-deficient MCF-7 cells. Co-purification of SIN1-myc with mTOR and Rictor was tested by anti-myc immunoprecipitation (IP).
 
 ![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig4-figsupp8-v1.jpg)
 
-**Figure 4—figure supplement 8.:** (A) FLAG epitope-tagged AKT was co-expressed with the indicated SIN1 mutants (see Figure 4—figure supplement 7A) in the SIN1-deficient MCF-7 cells. AKT was collected onto anti-FLAG-affinity beads, and immunoblotting was carried out to detect phosphorylation of Ser-473 and Thr-450 in its hydrophobic and turn motifs, respectively. (B) FLAG-tagged PKCα was co-expressed with the indicated SIN1 mutants in the SIN1-deficient MCF-7 cells. PKCα was collected onto anti-FLAG-affinity beads and analyzed by immunoblotting. mTORC2-dependent phosphorylation of PKCα is known to increase its stability (Ikenoue et al., 2008).DOI: http://dx.doi.org/10.7554/eLife.19594.022
+**Figure 4—figure supplement 8.:** (A) FLAG epitope-tagged AKT was co-expressed with the indicated SIN1 mutants (see Figure 4—figure supplement 7A) in the SIN1-deficient MCF-7 cells. AKT was collected onto anti-FLAG-affinity beads, and immunoblotting was carried out to detect phosphorylation of Ser-473 and Thr-450 in its hydrophobic and turn motifs, respectively. (B) FLAG-tagged PKCα was co-expressed with the indicated SIN1 mutants in the SIN1-deficient MCF-7 cells. PKCα was collected onto anti-FLAG-affinity beads and analyzed by immunoblotting. mTORC2-dependent phosphorylation of PKCα is known to increase its stability (Ikenoue et al., 2008).
 
 The corresponding ‘poly NQ’ and ‘AA’ substitutions in the HsSin1CRIM (Figure 4B) partially compromised its affinity for AKT (Figure 4F). The importance of the conserved acidic residues was further tested by expressing the ‘poly NQ’ SIN1 mutant protein in a human cell line where the SIN1 gene was inactivated by CRISPR/Cas9-mediated genome editing (Cong et al., 2013; Mali et al., 2013) (Figure 4—figure supplement 6). As reported previously (Frias et al., 2006; Jacinto et al., 2006; Yang et al., 2006), absence of functional SIN1 resulted in the loss of mTORC2-dependent phosphorylation of AKT-S473 in the hydrophobic motif, a defect rescued by expressing wild-type SIN1 (Figure 4G). The AKT phosphorylation was hardly detectable when re-introduced SIN1 lacks the entire CRIM domain (‘∆CRIM’) or its acidic loop region of residues 236–245 (‘∆acidic’) (Figure 4G), although these mutant SIN1 proteins can interact with mTOR and RICTOR (Figure 4—figure supplement 7). Only a low level of the AKT-S473 phosphorylation was observed when the ‘poly NQ’ mutant was expressed (Figure 4G), and similar results were obtained for the mTORC2-dependent phosphorylation of AKT-T450 in the turn motif and PKCα-S657 in the hydrophobic motif (Figure 4—figure supplement 8). Together, these observations strongly suggest that the conserved acidic residues within the CRIM domain are important for the SIN1 function as mTORC2 subunit.
 
-## CRIM-dependent substrate recruitment determines the specificity of TORC2
+### CRIM-dependent substrate recruitment determines the specificity of TORC2
 
-Although SpSin1CRIM alone cannot replace the Sin1 function in vivo (
+Although SpSin1CRIM alone cannot replace the Sin1 function in vivo (Figure 5—figure supplement 1), we found that it complemented the stress-sensitive phenotypes of the ∆sin1 mutant when fused to Ste20, the RICTOR equivalent in S. pombe TORC2 (Figure 5A). Consistently, expression of the Ste20-SpSin1CRIM fusion was found to induce phosphorylation of Gad8-S546 in the ∆sin1 strain (Figure 5B). With the L348S or L364S substitutions that prevent SpSin1CRIM from binding Gad8 (Figure 3B), the Ste20-SpSin1CRIM failed to bring about the Gad8 phosphorylation (Figure 5B). As expected, these substitutions as well as the ‘poly NQ’ and ‘AA’ mutations to the acidic loop (Figure 4) abrogated the ability of Ste20-SpSin1CRIM to complement the ∆ste20 ∆sin1 phenotype (Figure 5—figure supplement 2). Therefore, the hybrid subunit enables phosphorylation and activation of Gad8 in the absence of Sin1 most likely by recruiting Gad8 to TORC2. Thus, the CRIM domain alone appears to be sufficient for the substrate-recruiting function of the Sin1 subunit.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig5-v1.jpg)
 
-**Figure 5.:** (A and B) SpSin1CRIM fused to the Ste20 subunit can substitute for the Sin1 function in TORC2. In (A), a ∆sin1 strain (CA5126) was transformed with an empty vector, or a plasmid to express the ste20+, sin1 or +ste20:sin1CRIM genes. Growth of the transformants was tested at 30°C on YES plates with and without 0.1 M CaCl2 or 0.6 M KCl. In (B), phosphorylation of Gad8-S546 was examined by immunoblotting in a ∆sin1 strain (CA5126) carrying a plasmid to express FLAG-tagged Ste20 fused to SpSin1CRIM with and without L348S/L364S mutations. (C) TORC2 without Sin1 can phosphorylate Gad8 fused to the Ste20 subunit. ∆sin1 strains with tor1 (CA7471) and +tor1-D2137A (CA7395) alleles were transformed with a plasmid to express Ste20 fused to Gad8. Expression and phosphorylation of the Ste20-Gad8 fusion were detected by antibodies against Gad8 and phosphorylated Gad8-S546, respectively. (D) Gad8 fused to the Mip1 subunit of TORC1 is phosphorylated when TORC1 is active. A ∆sin1 strain (CA5126) carrying a plasmid to express Gad8 fused to Mip1, the Raptor ortholog in fission yeast, was grown to mid-log phase, followed by nitrogen starvation (-N) to inactivate TORC1. Expression and phosphorylation of the Mip1-Gad8 fusion were analyzed as in (C). (E) The Mip1-Gad8 fusion is incorporated into TORC1. Mip1-Gad8 was expressed in FLAG:tor1 (CA6530) and FLAG:tor2 (CA6904) strains, from which TORC2 and TORC1 were collected onto anti-FLAG beads, respectively, and co-purification of Mip1-Gad8 was examined by anti-Gad8 immunoblotting. Alanine substitutions of Mip1 residues 316–318 (‘DLF’) or 366–369 (‘NWIF’) prevented the fusion protein from being incorporated into TORC1. (F) Phosphorylation of Gad8-S546 in the Mip1-Gad8 fusion protein incorporated into TORC1. A ∆sin1 strain (CA5126) was transformed with an empty vector (−) or plasmids to express Mip1-Gad8 with or without the mutations that abrogate its incorporation into TORC1 as shown in (E). Expression and phosphorylation of the Mip1-Gad8 proteins were analyzed as in (D). The endogenous Gad8 was monitored as a loading control (bottom).DOI: http://dx.doi.org/10.7554/eLife.19594.023
+**Figure 5.:** (A and B) SpSin1CRIM fused to the Ste20 subunit can substitute for the Sin1 function in TORC2. In (A), a ∆sin1 strain (CA5126) was transformed with an empty vector, or a plasmid to express the ste20+, sin1+ or ste20:sin1CRIM genes. Growth of the transformants was tested at 30°C on YES plates with and without 0.1 M CaCl2 or 0.6 M KCl. In (B), phosphorylation of Gad8-S546 was examined by immunoblotting in a ∆sin1 strain (CA5126) carrying a plasmid to express FLAG-tagged Ste20 fused to SpSin1CRIM with and without L348S/L364S mutations. (C) TORC2 without Sin1 can phosphorylate Gad8 fused to the Ste20 subunit. ∆sin1 strains with tor1+ (CA7471) and tor1-D2137A (CA7395) alleles were transformed with a plasmid to express Ste20 fused to Gad8. Expression and phosphorylation of the Ste20-Gad8 fusion were detected by antibodies against Gad8 and phosphorylated Gad8-S546, respectively. (D) Gad8 fused to the Mip1 subunit of TORC1 is phosphorylated when TORC1 is active. A ∆sin1 strain (CA5126) carrying a plasmid to express Gad8 fused to Mip1, the Raptor ortholog in fission yeast, was grown to mid-log phase, followed by nitrogen starvation (-N) to inactivate TORC1. Expression and phosphorylation of the Mip1-Gad8 fusion were analyzed as in (C). (E) The Mip1-Gad8 fusion is incorporated into TORC1. Mip1-Gad8 was expressed in FLAG:tor1 (CA6530) and FLAG:tor2 (CA6904) strains, from which TORC2 and TORC1 were collected onto anti-FLAG beads, respectively, and co-purification of Mip1-Gad8 was examined by anti-Gad8 immunoblotting. Alanine substitutions of Mip1 residues 316–318 (‘DLF’) or 366–369 (‘NWIF’) prevented the fusion protein from being incorporated into TORC1. (F) Phosphorylation of Gad8-S546 in the Mip1-Gad8 fusion protein incorporated into TORC1. A ∆sin1 strain (CA5126) was transformed with an empty vector (−) or plasmids to express Mip1-Gad8 with or without the mutations that abrogate its incorporation into TORC1 as shown in (E). Expression and phosphorylation of the Mip1-Gad8 proteins were analyzed as in (D). The endogenous Gad8 was monitored as a loading control (bottom).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** A ∆sin1 strain (CA5126) was transformed with an empty vector, a plasmid to express the full-length Sin1 (‘Sin1 WT’), or that to express SpSin1CRIM. Growth was tested at 30°C with and without high osmolarity stress of 1 M KCl.DOI: http://dx.doi.org/10.7554/eLife.19594.024
+**Figure 5—figure supplement 1.:** A ∆sin1 strain (CA5126) was transformed with an empty vector, a plasmid to express the full-length Sin1 (‘Sin1 WT’), or that to express SpSin1CRIM. Growth was tested at 30°C with and without high osmolarity stress of 1 M KCl.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/19594/elife-19594-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** A ∆ste20 ∆sin1 (CA7471) strain was transformed with an empty vector, a plasmid expressing the ste20 gene, or a plasmid that expresses either wild-type or mutant SpSin1CRIM fused to the Ste20 subunit. Transformants were incubated at 30°C in the absence (‘no stress’) or in the presence of 1 M KCl.+DOI: http://dx.doi.org/10.7554/eLife.19594.025
+**Figure 5—figure supplement 2.:** A ∆ste20 ∆sin1 (CA7471) strain was transformed with an empty vector, a plasmid expressing the ste20+ gene, or a plasmid that expresses either wild-type or mutant SpSin1CRIM fused to the Ste20 subunit. Transformants were incubated at 30°C in the absence (‘no stress’) or in the presence of 1 M KCl.
 
 To further confirm that Sin1 is not essential for the catalytic activity of TORC2 per se, we expressed Gad8 as a fusion to the Ste20 subunit, so that Gad8 physically associates with TORC2 even in the absence of Sin1. As shown in Figure 5C, the Gad8 phosphorylation was detectable within the Ste20-Gad8 fusion protein in ∆sin1 cells that express the wild-type Tor1 kinase, but hardly in those expressing Tor1-D2137A with compromised catalytic activity (Tatebe et al., 2010). Thus, TORC2 lacking Sin1 can phosphorylate the hydrophobic motif of Gad8 recruited to TORC2, indicating that Sin1 is not essential for the catalytic activity of TORC2.
 
@@ -176,29 +305,255 @@ We show that Gad8, a TORC2 substrate, can be phosphorylated by TORC1 when recrui
 
 ## Materials and methods
 
-## General techniques with fission yeast
+### General techniques with fission yeast
 
-S. pombe strains used in this study are listed in Table 2. Growth media and basic techniques for S. pombe have been described previously (Alfa et al., 1993). Stress sensitivity of S. pombe strains was assessed by streaking or spotting on YES agar plates at 37°C or those containing 2 M sorbitol, 1 M KCl or 0.1 M CaCl2 at 30°C (Wang et al., 2005). Gene disruption and gene tagging with the epitope sequences have been described previously (Bähler et al., 1998; Shiozaki and Russell, 1997). QuikChange kit (Stratagene) and PrimeSTAR Mutagenesis Basal Kit (Takara Bio Inc) were used for site-directed mutagenesis.10.7554/eLife.19594.026Table 2.S. pombe strains used in this study.DOI: http://dx.doi.org/10.7554/eLife.19594.026Strain ID Genotype Source, Reference CA101h− leu1–32 Lab stockCA4593h− leu1–32 ura4-D18 ∆tor1::ura4+ (Kawai et al., 2001)CA4767h− leu1–32 ura4-D18 ∆tor1::ura4+ ∆sin1::kanMX6 (Ikeda et al., 2008)CA4855h− leu1–32 ura4-D18 ∆tor1::ura4+ ste20:5FLAG(kanR) This studyCA5021h− leu1–32 ∆ste20::kanMX6 (Ikeda et al., 2008)CA5126h− leu1–32 ∆sin1::kanMX6 (Ikeda et al., 2008)CA5142h− leu1–32 ura4-D18 ∆gad8::ura4+ (Matsuo et al., 2003)CA5827h- leu1–32 ura4-D18 ∆tor1::ura4+ ∆gad8::ura4+ This studyCA6275h− leu1–32 ste20:5FLAG(kanR) ∆sin1::kanMX6 This studyCA6281h− leu1–32 gad8:5FLAG(kanR) (Tatebe et al., 2010)CA6323h− leu1–32 tor1D2137A This studyCA6435h− leu1–32 ste20:13myc(kanR) (Tatebe et al., 2010)CA6530h− leu1–32 FLAG:tor1(hph) (Hayashi et al., 2007)CA6855h− leu1–32 FLAG:tor1(hph) bit61:13myc(kanMX6) (Tatebe and Shiozaki, 2010)CA6859h− leu1–32 bit61:13myc(kanMX6) (Tatebe and Shiozaki, 2010)CA6870h− leu1–32 FLAG:tor1(hph) ∆sin1::kanMX6 This studyCA6904h− leu1–32 FLAG:tor2(kanR) (Hayashi et al., 2007)CA6984h− leu1–32 sin1:13myc(kanMX6) (Tatebe et al., 2010)CA6993h− leu1–32 sin1:13myc(kanMX6) gad8:5FLAG(kanMX6) (Tatebe et al., 2010)CA7087h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6) (Hatano et al., 2015)CA7092h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6) (Hatano et al., 2015)CA7143h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆sin1::kanMX6 This studyCA7147h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6) ∆gad8::ura4+ This studyCA7150h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6) ∆bit61::ura4+ This studyCA7151h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆wat1::kanMX6 This studyCA7155h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆bit61::ura4+ This studyCA7172h− leu1–32 FLAG:tor1(hph) ∆sin1::kanMX6 bit61:13myc(kanMX6) This studyCA7183h− leu1–32 wat1:13myc(kanMX6) This studyCA7189h− leu1–32 ura4-D18 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆gad8::ura4+ This studyCA7200h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6) ∆wat1::kanMX6 This studyCA7213h− leu1–32 FLAG:tor1(hph) wat1:13myc(kanMX6) (Hatano et al., 2015)CA7217h− leu1–32 FLAG:tor1(hph) ∆ste20::kanMX6 bit61:13myc(kanMX6) This studyCA7222h+ leu1–32 ura4-D18 his7–366 FLAG:tor1(hph) ∆ste20::kanMX6 sin1:13myc(kanMX6) This studyCA7286h− leu1–32 FLAG:tor1(hph) ∆sin1::kanMX6 wat1:13myc(kanMX6) This studyCA7307h− leu1–32 ura4-D18 FLAG:tor1(hph) bit61:13myc(kanMX6) ∆gad8::ura4+ This studyCA7317h− leu1–32 ura4-D18 FLAG:tor1(hph) wat1:13myc(kanMX6) ∆bit61::ura4+ This studyCA7318h− leu1–32 ura4-D18 FLAG:tor1(hph) wat1:13myc(kanMX6) ∆gad8::ura4+ This studyCA7319h− leu1–32 FLAG:tor1(hph) ∆wat1::kanMX6 bit61:13myc(kanMX6) This studyCA7329h− leu1–32 ura4-D18 FLAG:tor1(hph) ∆ste20::kanMX6 wat1:13myc(kanMX6) This studyCA7395h− leu1–32 (hph)FLAG:tor1D2137A(kanMX6) ∆sin1::kanMX6 This studyCA7471h− leu1–32 ∆ste20::kanMX6 ∆sin1::kanMX6 This studyCA8070h− leu1–32 psk1:5FLAG(kanMX6) This study
+S. pombe strains used in this study are listed in Table 2. Growth media and basic techniques for S. pombe have been described previously (Alfa et al., 1993). Stress sensitivity of S. pombe strains was assessed by streaking or spotting on YES agar plates at 37°C or those containing 2 M sorbitol, 1 M KCl or 0.1 M CaCl2 at 30°C (Wang et al., 2005). Gene disruption and gene tagging with the epitope sequences have been described previously (Bähler et al., 1998; Shiozaki and Russell, 1997). QuikChange kit (Stratagene) and PrimeSTAR Mutagenesis Basal Kit (Takara Bio Inc) were used for site-directed mutagenesis.
 
-## Yeast two-hybrid assay and screen
+**Table 2.**
+ S. pombe strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain ID</th>
+      <th>Genotype</th>
+      <th>Source, Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CA101</td>
+      <td>h− leu1–32</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>CA4593</td>
+      <td>h− leu1–32 ura4-D18 ∆tor1::ura4+</td>
+      <td>(Kawai et al., 2001)</td>
+    </tr>
+    <tr>
+      <td>CA4767</td>
+      <td>h− leu1–32 ura4-D18 ∆tor1::ura4+ ∆sin1::kanMX6</td>
+      <td>(Ikeda et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>CA4855</td>
+      <td>h− leu1–32 ura4-D18 ∆tor1::ura4+ ste20:5FLAG(kanR)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA5021</td>
+      <td>h− leu1–32 ∆ste20::kanMX6</td>
+      <td>(Ikeda et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>CA5126</td>
+      <td>h− leu1–32 ∆sin1::kanMX6</td>
+      <td>(Ikeda et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>CA5142</td>
+      <td>h− leu1–32 ura4-D18 ∆gad8::ura4+</td>
+      <td>(Matsuo et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>CA5827</td>
+      <td>h- leu1–32 ura4-D18 ∆tor1::ura4+ ∆gad8::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA6275</td>
+      <td>h− leu1–32 ste20:5FLAG(kanR) ∆sin1::kanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA6281</td>
+      <td>h− leu1–32 gad8:5FLAG(kanR)</td>
+      <td>(Tatebe et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>CA6323</td>
+      <td>h− leu1–32 tor1D2137A</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA6435</td>
+      <td>h− leu1–32 ste20:13myc(kanR)</td>
+      <td>(Tatebe et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>CA6530</td>
+      <td>h− leu1–32 FLAG:tor1(hph)</td>
+      <td>(Hayashi et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>CA6855</td>
+      <td>h− leu1–32 FLAG:tor1(hph) bit61:13myc(kanMX6)</td>
+      <td>(Tatebe and Shiozaki, 2010)</td>
+    </tr>
+    <tr>
+      <td>CA6859</td>
+      <td>h− leu1–32 bit61:13myc(kanMX6)</td>
+      <td>(Tatebe and Shiozaki, 2010)</td>
+    </tr>
+    <tr>
+      <td>CA6870</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ∆sin1::kanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA6904</td>
+      <td>h− leu1–32 FLAG:tor2(kanR)</td>
+      <td>(Hayashi et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>CA6984</td>
+      <td>h− leu1–32 sin1:13myc(kanMX6)</td>
+      <td>(Tatebe et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>CA6993</td>
+      <td>h− leu1–32 sin1:13myc(kanMX6) gad8:5FLAG(kanMX6)</td>
+      <td>(Tatebe et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>CA7087</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6)</td>
+      <td>(Hatano et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>CA7092</td>
+      <td>h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6)</td>
+      <td>(Hatano et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>CA7143</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆sin1::kanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7147</td>
+      <td>h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6) ∆gad8::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7150</td>
+      <td>h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6) ∆bit61::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7151</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆wat1::kanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7155</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆bit61::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7172</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ∆sin1::kanMX6 bit61:13myc(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7183</td>
+      <td>h− leu1–32 wat1:13myc(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7189</td>
+      <td>h− leu1–32 ura4-D18 FLAG:tor1(hph) ste20:13myc(kanMX6) ∆gad8::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7200</td>
+      <td>h− leu1–32 FLAG:tor1(hph) sin1:13myc(kanMX6) ∆wat1::kanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7213</td>
+      <td>h− leu1–32 FLAG:tor1(hph) wat1:13myc(kanMX6)</td>
+      <td>(Hatano et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>CA7217</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ∆ste20::kanMX6 bit61:13myc(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7222</td>
+      <td>h+ leu1–32 ura4-D18 his7–366 FLAG:tor1(hph) ∆ste20::kanMX6 sin1:13myc(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7286</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ∆sin1::kanMX6 wat1:13myc(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7307</td>
+      <td>h− leu1–32 ura4-D18 FLAG:tor1(hph) bit61:13myc(kanMX6) ∆gad8::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7317</td>
+      <td>h− leu1–32 ura4-D18 FLAG:tor1(hph) wat1:13myc(kanMX6) ∆bit61::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7318</td>
+      <td>h− leu1–32 ura4-D18 FLAG:tor1(hph) wat1:13myc(kanMX6) ∆gad8::ura4+</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7319</td>
+      <td>h− leu1–32 FLAG:tor1(hph) ∆wat1::kanMX6 bit61:13myc(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7329</td>
+      <td>h− leu1–32 ura4-D18 FLAG:tor1(hph) ∆ste20::kanMX6 wat1:13myc(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7395</td>
+      <td>h− leu1–32 (hph)FLAG:tor1D2137A(kanMX6) ∆sin1::kanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA7471</td>
+      <td>h− leu1–32 ∆ste20::kanMX6 ∆sin1::kanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CA8070</td>
+      <td>h− leu1–32 psk1:5FLAG(kanMX6)</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast two-hybrid assay and screen
 
 To isolate Gad8-interacting proteins by yeast two-hybrid assays, the entire open reading frame of gad8+ was cloned in the pGBT9 vector (Clontech) to express the GAL4 DNA-binding domain fused with Gad8. A fission yeast cDNA library constructed in the pGAD GH vector (Clontech) and the budding yeast HF7c strain were used (Tatebe et al., 2008). Yeast transformants were screened by histidine auxotrophy and β-galactosidase assay.
 
 Yeast two-hybrid screens to isolate Sin1CRIM mutants defective in the interaction with Gad8 was conducted as follows. Randomly mutagenized DNA fragments encoding the fission yeast Sin1CRIM were prepared by standard PCR using premix Ex Taq (Takara Bio Inc.). pGAD GH was linearized by restriction enzyme digestion at two sites in the multi cloning site. The budding yeast HF7c strain carrying pGBT9-gad8+ was transformed with both mutagenized SpSin1CRIM DNA fragments and linearized pGAD GH. Resultant transformants were screened by histidine auxotrophy. GAL4 transcriptional activation domain-SpSin1CRIM fusion in each candidate transformant was examined in immunoblotting with antibodies against GAL4 transcriptional activation domain (RRID:AB_669111) to eliminate all the nonsense mutations. Deficiency in the interaction was verified by recovery and re-transformation of pGAD GH-mutant SpSin1CRIM. Mutation sites were determined by DNA sequencing.
 
-## Preparation of recombinant protein expressed in E. coli
+### Preparation of recombinant protein expressed in E. coli
 
 pGEX-KG or pMAL-c2x expression plasmids carrying various Sin1 fragments were transformed into BL21 E. coli strain. Exponentially growing BL21 cultures were transferred from 37°C to 16°C, followed by IPTG addition at the final concentration of 0.1 mM. Cultures were incubated overnight at 16°C for maximum production of recombinant protein. Cells were harvested by centrifugation and stored at −80°C until use. Frozen cells were thawed in ice-cold TBS (20 mM Tris-HCl [pH 7.5], 150 mM NaCl) and disrupted by sonication. After adding Triton X-100 at the final concentration of 1%, lysate was cleared by 15-min centrifugation at 20,800 x g. Supernatant was incubated with glutathione sepharose (GE Healthcare) or amylose resin (New England Biolabs) for 1 hr, followed by extensive wash with ice-cold TBS containing 1% Triton X-100. Cell breakage and all the following purification steps were performed at 4°C.
 
-## Human cell culture
+### Human cell culture
 
 Human HEK-293T (RRID:CVCL_0063) and MCF-7 (RRID:CVCL_0031) cells were cultured in DMEM (Wako) supplemented with 10% (v/v) FBS. HEK-293T (RCB2202) and MCF-7 (RCB1904) were obtained from RCB (Riken Cell Bank, Japan), neither of which we further authenticated. Mycoplasma contamination was examined by DAPI staining and fluorescence microscopy. Transfection was performed with Lipofectamine 2000 (Life Technologies Japan Ltd.) or polyethylenimine. FLAG-tagged AKT2, PKC, SGK1, and S6K1 are transiently expressed under the control of the CMV promoter of p3xFLAG-CMV-7.1 (Sigma-Aldrich).
 
-## Generation of SIN1-deficient human culture cells by the CRISPR/Cas9 system
+### Generation of SIN1-deficient human culture cells by the CRISPR/Cas9 system
 
 The guide sequence ‘GGACACCGATTTCCCCCCGC’ targeting Exon 6 of the human SIN1 gene was cloned into pX330 (Addgene #42230) (Cong et al., 2013). pCAG-EGxxFP was used to examine efficiency of the target DNA cleavage by the guide sequence and Cas9 (Mashiko et al., 2013). The resultant plasmid DNA was co-transfected with the puromycin-resistant marker DNA into MCF-7 human culture cells. Forty-eight hours after co-transfection, cells were re-plated in growth media containing 0.4 µg/ml puromycin, followed by isolation of drug-resistant colonies. Expression of full length SIN1 protein in each isolated clone was tested by immunoblotting with anti-SIN1 antibodies (RRID:AB_661901) (Figure 4—figure supplement 6A). Genomic DNA flanking the guide and PAM sequence in SIN1 was amplified by PCR and cloned for DNA sequencing (Figure 4—figure supplement 6B).
 
-## Protein-protein interactions
+### Protein-protein interactions
 
 Protein-protein interactions were tested by co-precipitation experiments followed by immunoblot detection. Luminescent Image Analyzer LAS-4000 (Fujifilm) was used for quantification in immunoblot.
 
@@ -206,12 +561,12 @@ Fission yeast cell lysate was prepared in lysis buffer (20 mM HEPES-KOH [pH 7.5]
 
 For interaction of human AGC kinases with HsSin1CRIM, human cell lysate was prepared in lysis buffer (20 mM HEPES-KOH [pH 7.5], 150 mM sodium glutamate, 10% glycerol, 0.25% tween-20, PMSF, and the protease inhibitor cocktail for use in purification of Histidine-tagged proteins [Sigma P8849]). Bacterially expressed GST-HsSin1CRIM and MBP-HsSin1CRIM were purified onto glutathione sepharose (GE Healthcare) and amylose resin (New England Biolabs), respectively, followed by incubation with human cell lysate.
 
-## NMR study
+### NMR study
 
 The experimental procedure for structure determination of SpSin1CRIM with MTSL spin labels has been reported previously (Furuita et al., 2014; Kataoka et al., 2014). In brief, the cDNA encoding SpSin1CRIM was inserted into pCold-GST vector (Hayashi and Kojima, 2008). Nine single cysteine mutants were generated using the QuikChange site-directed mutagenesis method (Stratagene). The wild-type and mutant proteins were overexpressed in Escherichia coli RosettaTM (DE3) (Novagen). Following purification, the spin-labeled reagent MTSL [(1-oxyl-2,2,5,5-tetramethyl-∆3-pyrroline-3-methyl) methanethiosulfonate] was attached to the thiol moiety of the introduced cysteine residues of the mutant proteins. Chemical shift assignments were performed using a conventional method. Dihedral angles were estimated using the program TALOS+ (Shen et al., 2009) and three bond JC' Cγ and JNCγ coupling constants (Hu and Bax, 1997). In order to obtain NOE distance restraints, 15N- and 13C-edited NOESY spectra of the wild-type protein were recorded. PRE distance restraints were calculated using intensity ratios of 1H-15N HSQC spectra of MTSL-conjugated mutant proteins in the paramagnetic and diamagnetic states (Battiste and Wagner, 2000). The structure calculations and automated NOE assignments were performed by CYANA 3.95 (Güntert et al., 1997), in which PRE distance restraints were used in combination. The obtained structures were refined using Xplor-NIH 2.31 (Schwieters et al., 2006, 2003) with a single MTSL nitroxide label at each mutated position.
 
 The 10 MTSL-conjugated structures (PDB ID: 2RUJ) were further refined using Xplor-NIH 2.31. First, MTSL-conjugated cysteines in each structure were mutated back to wild-type residues, and each structure was subjected to energy minimization. Then, using these structures as initial models, structure refinements were performed with NOE distance, PRE distance and dihedral angle restraints. The PRE distance restraints were introduced between Cβ of mutated residues and amide protons with the error of ±7 Å. A total of 100 structures (10 structures per initial model) were calculated, and the 10 lowest energy structures were selected and analyzed. The structural restraints and statistics are summarized in Table 1.
 
-## Data availability
+### Data availability
 
 The atomic coordinates of the refined SpSin1CRIM structure have been deposited in the Protein Data Bank with accession code 2RVK.

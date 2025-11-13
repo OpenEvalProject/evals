@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.15528.001 The internal N 6 -methyladenosine (m 6 A) methylation of eukaryotic nuclear RNA controls post-transcriptional gene expression, which is regulated by methyltransferases (writers), demethylases (erasers), and m 6 A-binding proteins (readers) in cells. The YTH domain family proteins (YTHDF1–3) bind to m 6 A-modified cellular RNAs and affect RNA metabolism and processing. Here, we show that YTHDF1–3 proteins recognize m 6 A-modified HIV-1 RNA and inhibit HIV-1 infection in cell lines and primary CD4 + T-cells. We further mapped the YTHDF1–3 binding sites in HIV-1 RNA from infected cells. We found that the overexpression of YTHDF proteins in cells inhibited HIV-1 infection mainly by decreasing HIV-1 reverse transcription, while knockdown of YTHDF1–3 in cells had the opposite effects. Moreover, silencing the m 6 A writers decreased HIV-1 Gag protein expression in virus-producing cells, while silencing the m 6 A erasers increased Gag expression. Our findings suggest an important role of m 6 A modification of HIV-1 RNA in viral infection and HIV-1 protein synthesis. DOI: http://dx.doi.org/10.7554/eLife.15528.001
+The internal N6-methyladenosine (m6A) methylation of eukaryotic nuclear RNA controls post-transcriptional gene expression, which is regulated by methyltransferases (writers), demethylases (erasers), and m6A-binding proteins (readers) in cells. The YTH domain family proteins (YTHDF1–3) bind to m6A-modified cellular RNAs and affect RNA metabolism and processing. Here, we show that YTHDF1–3 proteins recognize m6A-modified HIV-1 RNA and inhibit HIV-1 infection in cell lines and primary CD4+ T-cells. We further mapped the YTHDF1–3 binding sites in HIV-1 RNA from infected cells. We found that the overexpression of YTHDF proteins in cells inhibited HIV-1 infection mainly by decreasing HIV-1 reverse transcription, while knockdown of YTHDF1–3 in cells had the opposite effects. Moreover, silencing the m6A writers decreased HIV-1 Gag protein expression in virus-producing cells, while silencing the m6A erasers increased Gag expression. Our findings suggest an important role of m6A modification of HIV-1 RNA in viral infection and HIV-1 protein synthesis.
 
 ## Introduction
 
@@ -38,95 +38,95 @@ Here we show that HIV-1 RNA contains multiple m6A modifications enriched in the 
 
 ## Results
 
-## HIV-1 RNA genome contains m6A modifications
+### HIV-1 RNA genome contains m6A modifications
 
-To investigate the presence of m
+To investigate the presence of m6A in HIV-1 RNA and to map the m6A modification within HIV-1 RNA, we isolated RNA samples from CD4+ Jurkat T-cells or primary CD4+ T-cells infected with replication-competent HIV-1NL4-3, and performed immunoprecipitation (IP) with poly(A)-enriched RNA using m6A-specific antibodies, followed by high-throughput RNA sequencing (m6A-seq) (Dominissini et al., 2012). We identified similar profiles of m6A peaks in HIV-1 RNA from these two cell types, which are mainly enriched in the 5' and 3' UTRs as well as the rev and gag genes of the HIV-1 genome (Figure 1A,B). To confirm the m6A modification of HIV-1 RNA from virus-producing cells, we transfected HEK293T cells with a plasmid containing full-length HIV-1 proviral DNA (pNL4-3) and extracted total RNA from the transfected cells. Using the same m6A-seq approach, we identified multiple m6A peaks in HIV-1 RNA, which are enriched in the 5' and 3' UTRs and within overlapped HIV-1 coding genes, such as tat, rev, env, and nef (Figure 1—figure supplement 1). These results confirm the m6A modification of HIV-1 RNA despite some differences in m6A distributions in HIV-1 infected CD4+ T-cells compared to transfected HEK293T cells.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig1-v4.jpg)
 
-**Figure 1.:** 6A modifications and YTHDF1–3 proteins bind to m6A-modified HIV-1 RNA.(A–B) The distribution of m6A reads from m6A-seq mapped to HIV-1 genome (red line) in HIV-1 infected Jurkat cells (A) or primary CD4+ T-cells (B). Baseline signal from the RNA-seq of input samples is shown as a black line. A schematic diagram of HIV-1NL4-3 genome is shown above. TAR, transacting response element; RRE, Rev response element. Jurkat cells (A) or primary CD4+ T-cells (B) were infected with HIV-1NL4-3 and total RNA was extracted for m6A-seq at 72 or 96 hr post-infection (hpi), respectively. (C) YTHDF1-3 proteins bind to the HIV-1 gRNA. HeLa/CD4 cells overexpressing FLAG-tagged YTHDF1-3 proteins were infected with HIV-1NL4-3 (MOI= 5) for 72 hr and used in CLIP-seq assay to identify their binding sites on HIV-1 gRNA. The distribution of mapped reads (>16 nt) with corresponding nucleotide positions are shown, forming peaks as putative binding positions. Asterisks mark the peak clusters overlapping with identified m6A peaks, indicating high-confident YTHDFs binding sites. Read density was normalized to the total number of mapped reads in each sample (YTHDF1: 28438; YTHDF2: 232568; YHTDF3: 124915). The data presented are representative of results from two independent experiments (n=2).DOI: http://dx.doi.org/10.7554/eLife.15528.003
+**Figure 1.:** (A–B) The distribution of m6A reads from m6A-seq mapped to HIV-1 genome (red line) in HIV-1 infected Jurkat cells (A) or primary CD4+ T-cells (B). Baseline signal from the RNA-seq of input samples is shown as a black line. A schematic diagram of HIV-1NL4-3 genome is shown above. TAR, transacting response element; RRE, Rev response element. Jurkat cells (A) or primary CD4+ T-cells (B) were infected with HIV-1NL4-3 and total RNA was extracted for m6A-seq at 72 or 96 hr post-infection (hpi), respectively. (C) YTHDF1-3 proteins bind to the HIV-1 gRNA. HeLa/CD4 cells overexpressing FLAG-tagged YTHDF1-3 proteins were infected with HIV-1NL4-3 (MOI= 5) for 72 hr and used in CLIP-seq assay to identify their binding sites on HIV-1 gRNA. The distribution of mapped reads (>16 nt) with corresponding nucleotide positions are shown, forming peaks as putative binding positions. Asterisks mark the peak clusters overlapping with identified m6A peaks, indicating high-confident YTHDFs binding sites. Read density was normalized to the total number of mapped reads in each sample (YTHDF1: 28438; YTHDF2: 232568; YHTDF3: 124915). The data presented are representative of results from two independent experiments (n=2).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig1-figsupp1-v4.jpg)
 
-**Figure 1—figure supplement 1.:** 6A modifications.HEK293 T cells were transfected with a proviral DNA-containing plasmid (pNL4-3). Total RNA was extracted at 48 hr post-transfection and immunoprecipitated with an m6A-specific antibody. Enriched RNA was subjected to next generation sequencing. Peaks show the relative abundance of m6A sites on the HIV-1 genome. The distribution of m6A reads from m6A-seq mapped to HIV-1 genome (red line). Baseline signal from the RNA-seq of input samples is shown as a black line. A schematic diagram of HIV-1NL4-3 genome features is shown above. TAR, transacting response element; RRE, Rev response element. The data presented are representative of two independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.004
+**Figure 1—figure supplement 1.:** HEK293 T cells were transfected with a proviral DNA-containing plasmid (pNL4-3). Total RNA was extracted at 48 hr post-transfection and immunoprecipitated with an m6A-specific antibody. Enriched RNA was subjected to next generation sequencing. Peaks show the relative abundance of m6A sites on the HIV-1 genome. The distribution of m6A reads from m6A-seq mapped to HIV-1 genome (red line). Baseline signal from the RNA-seq of input samples is shown as a black line. A schematic diagram of HIV-1NL4-3 genome features is shown above. TAR, transacting response element; RRE, Rev response element. The data presented are representative of two independent experiments.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig1-figsupp2-v4.jpg)
 
-**Figure 1—figure supplement 2.:** 6A level using liquid chromatography-mass spectrometry.HIV-1 RNA (250 ng) was isolated from highly purified HIV-1MN virions (total 600 μg of p24 capsid) and subjected to quantitative analysis of the m6A level using LC-MS/MS (n=3 of each sample). The results are presented are from representative of two independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.005
+**Figure 1—figure supplement 2.:** HIV-1 RNA (250 ng) was isolated from highly purified HIV-1MN virions (total 600 μg of p24 capsid) and subjected to quantitative analysis of the m6A level using LC-MS/MS (n=3 of each sample). The results are presented are from representative of two independent experiments.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig1-figsupp3-v4.jpg)
 
-**Figure 1—figure supplement 3.:** 6A in cellular RNAs and the frequency of m6A motifs in HIV-1-infected cells.(A–B) Pie charts show the distribution of m6A peaks in the 5′ UTR, coding DNA sequence (CDS), 3′ UTR, and noncoding regions of transcripts from uninfected and HIV-1-infected Jurkat T-cells (A) or primary CD4+ T-cells (B). The m6A peak distribution in HIV-1-specific RNAs is also shown. (C–D) Frequency of the RRACH motif (C) and the GGACU motif (D) within the m6A peaks in cellular RNAs from the uninfected control and HIV-1-infected cells. Data presented are the average results of duplicated samples (n=2).DOI: http://dx.doi.org/10.7554/eLife.15528.006
+**Figure 1—figure supplement 3.:** (A–B) Pie charts show the distribution of m6A peaks in the 5′ UTR, coding DNA sequence (CDS), 3′ UTR, and noncoding regions of transcripts from uninfected and HIV-1-infected Jurkat T-cells (A) or primary CD4+ T-cells (B). The m6A peak distribution in HIV-1-specific RNAs is also shown. (C–D) Frequency of the RRACH motif (C) and the GGACU motif (D) within the m6A peaks in cellular RNAs from the uninfected control and HIV-1-infected cells. Data presented are the average results of duplicated samples (n=2).
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig1-figsupp4-v4.jpg)
 
-**Figure 1—figure supplement 4.:** 6A-modified cellular genes in HIV-1 infected cells.(A and B) GO terms specific to virus related pathways and corresponding p values, clustered from methylated genes detected in Jurkat cells (A) or primary CD4+ T cells (B) infected with HIV-1. (C and D) GO graphs showing functional clusters from genes with unique m6A peaks identified in HIV-1-infected Jurkat cells (C) or primary CD4+ T-cells (D) when compared to uninfected cells. Data presented are the average results of duplicated samples (n=2).DOI: http://dx.doi.org/10.7554/eLife.15528.007
+**Figure 1—figure supplement 4.:** (A and B) GO terms specific to virus related pathways and corresponding p values, clustered from methylated genes detected in Jurkat cells (A) or primary CD4+ T cells (B) infected with HIV-1. (C and D) GO graphs showing functional clusters from genes with unique m6A peaks identified in HIV-1-infected Jurkat cells (C) or primary CD4+ T-cells (D) when compared to uninfected cells. Data presented are the average results of duplicated samples (n=2).
 
 To investigate whether HIV-1 virion RNA contains m6A, we isolated HIV-1 RNA from highly purified HIV-1 virions derived from infected CD4+ T-cells (Rossio et al., 1998; Wang et al., 2008), and then performed a quantitative analysis of m6A level using liquid chromatography-mass spectrometry (Jia et al., 2011). Our data showed that m6A in HIV-1 RNA was approximately 0.1% of total adenosines (Figure 1—figure supplement 2). Considering 35.8% of HIV-1 genomic RNA (gRNA) (9173 nucleotides) are adenosines (van Hemert et al., 2014), our data suggest approximately 3–4 sites of the m6A modification in each copy of HIV-1 gRNA, which match the numbers of m6A peaks identified by m6A-seq (Figure 1A,B and Figure 1—figure supplement 1). Together, these results confirm that HIV-1 RNA contains m6A modifications at multiple sites within the viral genome.
 
-## Distribution of m6A in the cellular RNAs and gene ontology (GO) analysis of m6A-modified cellular genes
+### Distribution of m6A in the cellular RNAs and gene ontology (GO) analysis of m6A-modified cellular genes
 
 To examine the effect of HIV-1 infection on m6A modifications of cellular RNAs, we compared the distribution of m6A peaks in cellular RNAs from HIV-1 infected and uninfected T-cells. In Jurkat and primary CD4+ T-cells, HIV-1 infection did not significantly affect the percentages of total m6A peaks mapped to the human genome in the 5′ UTR, coding DNA sequence (CDS), 3′ UTR and noncoding regions (Figure 1—figure supplement 3A,B). The biological effects of the slightly altered m6A topology (<1%) remain to be investigated. To determine whether the preferential m6A motif usage in the host cells was altered by HIV-1 infection, we performed consensus sequence analyses within the m6A peaks to determine the preferred motifs in cellular RNAs. HIV-1 infection of Jurkat cells or primary CD4+ T cells slightly increased the frequency of the RRACH motif within the m6A peaks by 0.2–0.8%, but slightly decreased the GGACU motif frequency by 0.2–0.4% (Figure 1—figure supplement 3C,D). These data suggest that the preferential usage of the RRACH motifs in m6A modification of cellular RNAs could be altered during HIV-1 infection.
 
 We also performed the GO analysis of m6A-modified cellular genes in HIV-1 infected Jurkat cells and primary CD4+ T cells and found numerous genes with known functions in viral infection-related pathways. We defined these genes as viral-specific genes and performed a separate analysis of the distribution and motif of methylation peaks on these genes (Figure 1—figure supplement 4A,B). We have also performed an individual GO analysis of genes with unique methylation peaks in infected samples, the results showed that these genes enrich in functional clusters, such as metabolism, immune system process, multicellular organismal process, and development (Figure 1—figure supplement 4C,D), indicating widespread impacts on host biological systems induced by HIV-1 infection.
 
-## YTHDF1–3 proteins bind to HIV-1 gRNA in infected cells
+### YTHDF1–3 proteins bind to HIV-1 gRNA in infected cells
 
-YTHDF1–3 proteins are reader proteins that specifically bind to m
+YTHDF1–3 proteins are reader proteins that specifically bind to m6A-methylated cellular RNAs (Wang et al., 2014, 2015). We utilized the crosslinking and immunoprecipitation (CLIP) assay combined with RNA-seq (Hafner et al., 2010; Liu et al., 2015) to map the binding sites of YTHDF1–3 proteins in the HIV-1 genome in infected HeLa/CD4 cells that overexpressed individual FLAG-tagged YTHDF1–3 proteins. We identified multiple CLIP peaks of YTHDF1–3 protein-bound HIV-1 RNA, including the transactivation response element (TAR) in the 5’ UTR leader sequence, the env gene, the rev gene, and the 3’ UTR. Some YTHDF-binding sites (e.g. at the 3’ and 5’ UTR and the gag gene) in HIV-1NL4-3 infected HeLa/CD4 cells partially overlap with the identified m6A-containing regions in the HIV-1 genome in HIV-1NL4-3 infected CD4+ Jurkat T-cells or primary CD4+ T-cells (marked by asterisks), indicating high-confident YTHDF1-3 binding sites. Different cell types used in these experiments might contribute to the difference of the m6A sites and YTHDFs-bound sites in HIV-1 RNA genome. Overall, these data demonstrate that YTHDF1-3 proteins bind to m6A-modified HIV-1 genomic RNA during viral infection.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig2-v4.jpg)
 
-**Figure 2.:** (A–B) Overexpression of YTHDF1–3 proteins in HeLa cells significantly inhibits HIV-1 infection compared to vector control cells. (A) Overexpression of YTHDF1–3 proteins in HeLa cells was confirmed by immunoblotting. (B) HeLa cells overexpressing YTHDF1–3 proteins were infected with HIV-1 Luc/VSV-G at an MOI of 0.5 and viral infection was measured by luciferase activity at 24 hpi. (C) Overexpression of YTHDF1–3 proteins inhibits HIV-1 Gag protein synthesis in infected cells. HeLa cells overexpressing individual YTHDF1–3 proteins or the vector control cells were infected by HIV-1-Luc/VSV-G at an MOI of 0.5. At 24 hpi, the expression of HIV-1 Gag and YTHDF1–3 proteins (FLAG-tagged) was determined using immunoblotting. GAPDH was used as a loading control and mock-infected vector control cells were used as a negative control. (D and E) Individual knockdown of endogenous YTHDF1–3 proteins in HeLa cells significantly increases HIV-1 infection compared to vector control cells. HIV-1 infection assays were performed as described for panel B. *p<0.05, **p<0.005, and ***p<0.0005, compared to vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.008
+**Figure 2.:** (A–B) Overexpression of YTHDF1–3 proteins in HeLa cells significantly inhibits HIV-1 infection compared to vector control cells. (A) Overexpression of YTHDF1–3 proteins in HeLa cells was confirmed by immunoblotting. (B) HeLa cells overexpressing YTHDF1–3 proteins were infected with HIV-1 Luc/VSV-G at an MOI of 0.5 and viral infection was measured by luciferase activity at 24 hpi. (C) Overexpression of YTHDF1–3 proteins inhibits HIV-1 Gag protein synthesis in infected cells. HeLa cells overexpressing individual YTHDF1–3 proteins or the vector control cells were infected by HIV-1-Luc/VSV-G at an MOI of 0.5. At 24 hpi, the expression of HIV-1 Gag and YTHDF1–3 proteins (FLAG-tagged) was determined using immunoblotting. GAPDH was used as a loading control and mock-infected vector control cells were used as a negative control. (D and E) Individual knockdown of endogenous YTHDF1–3 proteins in HeLa cells significantly increases HIV-1 infection compared to vector control cells. HIV-1 infection assays were performed as described for panel B. *p<0.05, **p<0.005, and ***p<0.0005, compared to vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.
 
-## YTHDF1–3 proteins negatively regulate HIV-1 post-entry infection
+### YTHDF1–3 proteins negatively regulate HIV-1 post-entry infection
 
 Because HIV-1 RNAs are present in the cytoplasm and the nucleus of infected cells at different stages of viral lifecycle (Goff, 2007), we hypothesized that YTHDF1–3 proteins may directly interact with methylated HIV-1 RNAs, thereby affecting the metabolism and/or processing of the viral RNA. To examine the roles of YTHDF1–3 proteins in post-entry HIV-1 infection, we either overexpressed or knocked down the individual YTHDF proteins in human cell lines, and examined the effect on HIV-1 infection using a single-cycle, luciferase reporter HIV-1 pseudotyped with vesicular stomatitis virus G protein (VSV-G) to overcome the requirement of HIV-1 receptors during viral entry (Wang et al., 2007). Compared to vector control cells, at 24 hr post-infection (hpi), overexpression of individual FLAG-tagged YTHDF1–3 proteins in HeLa cells (Figure 2A) significantly inhibited HIV-1 infection by approximately 10-fold (Figure 2B, p<0.0005) and drastically reduced the synthesis of full-length viral Gag protein (Pr55) (Figure 2C). In contrast, stable knockdown of individual, endogenous YTHDF1–3 proteins in HeLa cells (Figure 2D) significantly increased HIV-1 infection by four- to 14-fold (p<0.05) relative to control cells (Figure 2E). Overexpression or knockdown of YTHDF1–3 proteins in HeLa cells did not affect cell proliferation (data not shown).
 
-To confirm these observations in CD4
+To confirm these observations in CD4+ T-cells, we generated Jurkat cell lines with knockdown of individual, endogenous YTHDF1–3 proteins (Figure 3A) and did not observe a significant change in proliferation of the knockdown cells relative to parental or vector-control Jurkat cells (Figure 3B). The partial knockdown of YTHDF1 or YTHDF3 in Jurkat cells increased HIV-1 infection by three- to four-fold (p<0.005), while YTHDF2 knockdown slightly increased viral infection (Figure 3A and C) at 24 hpi. Furthermore, knockdown of individual, endogenous YTHDF1–3 proteins in activated primary CD4+ T-cells from healthy donors enhanced HIV-1 infection by approximately two-fold (p<0.005) (Figure 3D and E), confirming the effects observed in cell lines despite a lesser extent. The treatment of cells with the HIV-1 reverse transcriptase inhibitor azidothymidine (AZT) was used as a negative control to show the expected HIV-1 inhibition (Figures 2B,E, 3C and E). Overall, these data suggest that overexpression of YTHDF1–3 proteins significantly inhibits HIV-1 infection, while knockdown of these proteins efficiently promotes HIV-1 gene expression. Thus, endogenous YTHDF1–3 proteins in CD4+ T-cells act as negative regulators to inhibit post-entry HIV-1 infection.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig3-v4.jpg)
 
-**Figure 3.:** + T-cells.(A) Individual knockdown of endogenous YTHDF1–3 proteins in Jurkat CD4+ T cells was confirmed by immunoblotting. (B) Knockdown of YTHDF1–3 proteins does not affect proliferation of Jurkat cells. Jurkat cells (2 × 104) were seeded and cultured for 3 days. At the times indicated, cell proliferation was measured using the MTS assay. (C) Knockdown of YTHDF1–3 proteins significantly increases HIV-1 infection compared to vector control cells. (D) Individual knockdown of YTHDF1–3 proteins in activated primary CD4+ T-cells from a healthy donor. (E) Knockdown of YTHDF1–3 proteins significantly increases HIV-1 infection compared to vector control cells. (A and D) GAPDH was used as a loading control. (C and E) The vector controls without AZT were set as 100%. The reverse transcriptase inhibitor AZT treated cells were used as positive control for productive HIV-1 infection. *p<0.05, **p<0.005, and ***p<0.0005, compared to vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.009
+**Figure 3.:** (A) Individual knockdown of endogenous YTHDF1–3 proteins in Jurkat CD4+ T cells was confirmed by immunoblotting. (B) Knockdown of YTHDF1–3 proteins does not affect proliferation of Jurkat cells. Jurkat cells (2 × 104) were seeded and cultured for 3 days. At the times indicated, cell proliferation was measured using the MTS assay. (C) Knockdown of YTHDF1–3 proteins significantly increases HIV-1 infection compared to vector control cells. (D) Individual knockdown of YTHDF1–3 proteins in activated primary CD4+ T-cells from a healthy donor. (E) Knockdown of YTHDF1–3 proteins significantly increases HIV-1 infection compared to vector control cells. (A and D) GAPDH was used as a loading control. (C and E) The vector controls without AZT were set as 100%. The reverse transcriptase inhibitor AZT treated cells were used as positive control for productive HIV-1 infection. *p<0.05, **p<0.005, and ***p<0.0005, compared to vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.
 
-## YTHDF1–3 proteins inhibit HIV-1 infection by blocking viral reverse transcription
+### YTHDF1–3 proteins inhibit HIV-1 infection by blocking viral reverse transcription
 
-To investigate the mechanisms of HIV-1 inhibition by YTHDF1–3 proteins, we assessed the stage of HIV-1 life cycle affected by the YTHDF1–3 proteins. We first measured levels of HIV-1 late reverse transcription (RT) products in infected cells, which represent the levels of the full-length viral cDNA (
+To investigate the mechanisms of HIV-1 inhibition by YTHDF1–3 proteins, we assessed the stage of HIV-1 life cycle affected by the YTHDF1–3 proteins. We first measured levels of HIV-1 late reverse transcription (RT) products in infected cells, which represent the levels of the full-length viral cDNA (St Gelais et al., 2015). Overexpression of each of the YTHDF1–3 proteins in HeLa cells significantly reduced the level of HIV-1 late RT products by four- to ten-fold (p<0.005) compared to the vector control cells at 24 hpi (Figure 4A), suggesting that the inhibition of viral reverse transcription contributes to the impairment of post-entry HIV-1 infection. In contrast, the knockdown of individual YTHDF1–3 proteins in HeLa cells elevated the levels of HIV-1 late RT products by two- to three-fold compared to vector control cells (Figure 4B). Furthermore, the level of HIV-1 2-LTR circles in infected HeLa cells, a surrogate marker of nuclear import of viral cDNA (Dong et al., 2007), was also significantly reduced over 10-fold (p<0.05) by overexpression of YTHDF1–3 proteins (Figure 4C), corresponding to the reduced late RT products observed in this experiment. Using our established Jurkat cell lines with stable knockdown of individual YTHDF1–3 proteins (Figure 3A), we found that the levels of HIV-1 late RT products were significantly increased in YTHDF1 down-regulated cells by 2.7-fold (p<0.05) compared to control cells, while the knockdown of YTHDF2 or YTHDF3 only increased late RT products by 20–30% (Figure 4D). As a negative control, AZT-treated cells showed inhibition of HIV-1 post-entry infection as expected (Figure 4A–D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig4-v4.jpg)
 
-**Figure 4.:** HeLa cells over-expressing or knocking-down (shRNA) individual YTHDF1–3 proteins were infected with HIV-1-Luc/VSV-G at an MOI of 0.5. (A, B and D) Genomic DNA was isolated from the cells 24 hr post-infection and HIV-1 late reverse transcription (RT) products were quantified by qPCR. (C) YTHDF family proteins reduce the formation of HIV-1 2-LTR circles in infected HeLa cells. At 24 hr post-infection, DNA was isolated from the cells and the 2-LTR circles were analyzed by qPCR and normalized to GAPDH levels. AZT treated vector control cells were used as a negative control for HIV-1 inhibition. *p<0.05 compared to the vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.010
+**Figure 4.:** HeLa cells over-expressing or knocking-down (shRNA) individual YTHDF1–3 proteins were infected with HIV-1-Luc/VSV-G at an MOI of 0.5. (A, B and D) Genomic DNA was isolated from the cells 24 hr post-infection and HIV-1 late reverse transcription (RT) products were quantified by qPCR. (C) YTHDF family proteins reduce the formation of HIV-1 2-LTR circles in infected HeLa cells. At 24 hr post-infection, DNA was isolated from the cells and the 2-LTR circles were analyzed by qPCR and normalized to GAPDH levels. AZT treated vector control cells were used as a negative control for HIV-1 inhibition. *p<0.05 compared to the vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig4-figsupp1-v4.jpg)
 
-**Figure 4—figure supplement 1.:** gag mRNA expression.Specific shRNAs or scrambled shRNA vector-treated cells were infected with HIV-1 Luc/VSV-G at an MOI of 0.5. Total RNA was isolated from the cells 24 hr post-infection and HIV-1 gag mRNA levels were quantified using qRT-PCR. (A and B) HIV-1 gag mRNA levels in the infected HeLa cells with overexpression (A) or knockdown (B, shRNA) of YTHDF1–3 proteins. (C) HIV-1 gag mRNA levels in the HIV-1 infected Jurkat cells after knockdown of YTHDF1–3 proteins. AZT treated vector control cells were used as a negative control of HIV-1 infection (A–C). The vector controls without AZT were set as 100%. *p<0.05, **p<0.005, and ***p<0.0005, compared to vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.011
+**Figure 4—figure supplement 1.:** Specific shRNAs or scrambled shRNA vector-treated cells were infected with HIV-1 Luc/VSV-G at an MOI of 0.5. Total RNA was isolated from the cells 24 hr post-infection and HIV-1 gag mRNA levels were quantified using qRT-PCR. (A and B) HIV-1 gag mRNA levels in the infected HeLa cells with overexpression (A) or knockdown (B, shRNA) of YTHDF1–3 proteins. (C) HIV-1 gag mRNA levels in the HIV-1 infected Jurkat cells after knockdown of YTHDF1–3 proteins. AZT treated vector control cells were used as a negative control of HIV-1 infection (A–C). The vector controls without AZT were set as 100%. *p<0.05, **p<0.005, and ***p<0.0005, compared to vector control without AZT treatment. All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.
 
 The effects on HIV-1 late reverse transcription mediated by YTHDF1–3 would lead to altered viral gene expression. To examine the impacts of the YTHDF proteins on viral gene expression, we quantified HIV-1 gag mRNA in infected cells at 24 hpi. The HIV-1 gag mRNA level in HeLa cells with overexpression of individual YTHDF1–3 showed a four-fold reduction (p<0.0005) compared to vector control cells (Figure 4—figure supplement 1A). In contrast, the knockdown of individual YTHDF1–3 in HeLa cells increased the level of gag mRNA by eight- to 12-fold (p<0.05) compared to vector control cells (Figure 4—figure supplement 1B). The knockdown of YTHDF3 in Jurkat cells significantly increased the level of HIV-1 gag mRNA by two-fold (p<0.05) compared to control cells, while the knockdown of YTHDF1 or YTHDF2 did not have a significant effect (Figure 4—figure supplement 1C). The different effects of YTHDF1–3 silencing on gag mRNA expression in HeLa and Jurkat cells might result from the difference in the knockdown efficiency in these cells (Figures 2D and 3A). These data suggest that YTHDF1–3 proteins could negatively regulate HIV-1 mRNA transcription, in addition to inhibiting viral reverse transcription in HIV-1 infected cells.
 
-## YTHDF1–3 proteins are associated with HIV-1 gRNA and lead to degradation of viral RNA
+### YTHDF1–3 proteins are associated with HIV-1 gRNA and lead to degradation of viral RNA
 
-We hypothesize that YTHDF1–3 proteins could inhibit the reverse transcription of HIV-1 gRNA through directly binding to the gRNA. To test this hypothesis, we used a single-cycle, VSV-G-pseudotyped HIV-1 to infect HeLa cells overexpressing individual YTHDF1–3 proteins or vector control cells, immunoprecipitated YTHDF proteins from the infected cells at 3 hpi, and then measured HIV-1 gRNA levels in the IP samples. The presence of YTHDF proteins was confirmed in the input and IP samples (
+We hypothesize that YTHDF1–3 proteins could inhibit the reverse transcription of HIV-1 gRNA through directly binding to the gRNA. To test this hypothesis, we used a single-cycle, VSV-G-pseudotyped HIV-1 to infect HeLa cells overexpressing individual YTHDF1–3 proteins or vector control cells, immunoprecipitated YTHDF proteins from the infected cells at 3 hpi, and then measured HIV-1 gRNA levels in the IP samples. The presence of YTHDF proteins was confirmed in the input and IP samples (Figure 5A). The quantification of the HIV-1 gRNA by qRT-PCR revealed a strong and specific association (p<0.005) of HIV-1 gRNA with YTHDF proteins in HIV-1-infected YTHDF1–3-expressing cells compared to control cells (Figure 5B). To examine the impact of YTHDF1–3 on HIV-1 gag RNA kinetics, we quantified HIV-1 gag RNA levels in YTHDF1–3-expressing HeLa cells and vector control cells over a time course of 6–24 hpi. The relative levels of gag RNA in HIV-1 infected cells were normalized to that of the vector control cells at 6 hpi. In the control cells, compared to 6 hpi (set as 100%), the level of gag RNA was reduced to 40% at 12 hpi and then increased to 80% at 24 hpi (Figure 5C), suggesting degradation of HIV-1 gRNA at 12 hpi during the reverse transcription and then increased gag mRNA at 24 hpi during viral gene transcription. In contrast, the levels of gag RNA in YTHDF1–3-expressing cells were reduced to 40% at 12 hpi and to 13–25% at 24 hpi (p<0.0005) compared to that of the vector control cells at 6 hpi (Figure 5C). These data suggest that YTHDF1–3 proteins can degrade HIV-1 gag RNA in infected cells, thereby leading to inhibition of HIV-1 reverse transcription.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig5-v4.jpg)
 
-**Figure 5.:** (A) Immunoblotting of YTHDF1–3 proteins in the input and immunoprecipitation (IP) samples from HIV-1-Luc/VSV-G infected HeLa cells. FLAG antibodies were used to immunoprecipitate FLAG-tagged YTHDF1–3 proteins overexpressed in HeLa cells after HIV-1 infection. A short and long exposure of the immunoblot is shown. (B) HIV-1 gRNA is bound by YTHDF1–3 proteins expressed in HeLa cells. HeLa cells stably overexpressing FLAG-tagged YTHDF1–3 proteins or empty vector control cells (Ctrl) were infected with HIV-1-Luc/VSV-G at an MOI of 5 for 3 hr. Cell lysates were immunoprecipitated with anti-FLAG, RNA was extracted and HIV-1 gag RNA levels were measured. **p<0.005 compared to the vector control cells. (C) YTHDF1–3 affect HIV-1 gag RNA kinetics. HIV-1 gag RNA levels in YTHDF1–3-expressing HeLa cells were quantified by qRT-PCR. The relative levels of gag RNA in infected cells were normalized to that of the vector control cells at 6 hr post-infection (hpi). ***p<0.0005, compared to the control cells at 6 hpi (set as 100%). All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.012
+**Figure 5.:** (A) Immunoblotting of YTHDF1–3 proteins in the input and immunoprecipitation (IP) samples from HIV-1-Luc/VSV-G infected HeLa cells. FLAG antibodies were used to immunoprecipitate FLAG-tagged YTHDF1–3 proteins overexpressed in HeLa cells after HIV-1 infection. A short and long exposure of the immunoblot is shown. (B) HIV-1 gRNA is bound by YTHDF1–3 proteins expressed in HeLa cells. HeLa cells stably overexpressing FLAG-tagged YTHDF1–3 proteins or empty vector control cells (Ctrl) were infected with HIV-1-Luc/VSV-G at an MOI of 5 for 3 hr. Cell lysates were immunoprecipitated with anti-FLAG, RNA was extracted and HIV-1 gag RNA levels were measured. **p<0.005 compared to the vector control cells. (C) YTHDF1–3 affect HIV-1 gag RNA kinetics. HIV-1 gag RNA levels in YTHDF1–3-expressing HeLa cells were quantified by qRT-PCR. The relative levels of gag RNA in infected cells were normalized to that of the vector control cells at 6 hr post-infection (hpi). ***p<0.0005, compared to the control cells at 6 hpi (set as 100%). All results are shown as mean ± SD (n=3) and data presented are representative of at least three independent experiments.
 
-## The m6A writers and erasers affect HIV-1 Gag expression in virus- producing cells
+### The m6A writers and erasers affect HIV-1 Gag expression in virus- producing cells
 
-We examined the role of the m
+We examined the role of the m6A writers in HIV-1 protein expression and viral release in virus-producing cells. We knocked down endogenous METTL3, METTL14, or both, in HEK293T cells using siRNA, and then transfected the cells with an HIV-1 proviral DNA plasmid (pNL4-3). We determined the levels of HIV-1 Gag protein expression in the cells and the capsid p24 protein released in the supernatants. Interestingly, we found that partial knockdown of METTL3, METTL14, or both, inhibited HIV-1 Gag expression in the cells by 60–70% (Figure 6A), and reduced the levels of HIV-1 p24 release by 30–50% compared to control cells (Figure 6B). These results suggest that the m6A writers are required for efficient HIV-1 protein synthesis, and that m6A modification of HIV-1 RNA could facilitate translation of viral proteins.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig6-v4.jpg)
 
-**Figure 6.:** 6A writers and erasers affect HIV-1 Gag expression in virus-producing cells.(A and B) Individual or combined knockdown of endogenous METTL3 and METTL14 inhibits HIV-1 Gag protein expression. HEK293T cells were transfected with indicated siRNA, and then with an HIV-1 proviral DNA plasmid (pNL4-3). Cells and supernatants were collected for analyses at 36 hr post-transfection. (A) Expression of METTL3, METTL14 and HIV-1 Gag proteins in the transfected HEK293T cells was detected by immunoblotting. (C and D) Knockdown of endogenous AlkBH5, FTO, or both promotes HIV-1 Gag protein expression. HEK293T cells were transfected with indicated siRNA, and then with pNL4-3. Cells and supernatants were collected at 36 hr post-transfection. (C) Expression of AlkBH5, FTO and HIV-1 Gag proteins in the cells was detected by immunoblotting. (A and C) GAPDH was used as a loading control. Relative levels of Gag expression were normalized to GAPDH levels. (B and D) HIV-1 capsid p24 levels in supernatants were measured by ELISA. The relative levels (%) are also shown. *p<0.05 compared to the siRNA control. The results are shown as mean ± SD (n=3) and data presented are representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.15528.013
+**Figure 6.:** (A and B) Individual or combined knockdown of endogenous METTL3 and METTL14 inhibits HIV-1 Gag protein expression. HEK293T cells were transfected with indicated siRNA, and then with an HIV-1 proviral DNA plasmid (pNL4-3). Cells and supernatants were collected for analyses at 36 hr post-transfection. (A) Expression of METTL3, METTL14 and HIV-1 Gag proteins in the transfected HEK293T cells was detected by immunoblotting. (C and D) Knockdown of endogenous AlkBH5, FTO, or both promotes HIV-1 Gag protein expression. HEK293T cells were transfected with indicated siRNA, and then with pNL4-3. Cells and supernatants were collected at 36 hr post-transfection. (C) Expression of AlkBH5, FTO and HIV-1 Gag proteins in the cells was detected by immunoblotting. (A and C) GAPDH was used as a loading control. Relative levels of Gag expression were normalized to GAPDH levels. (B and D) HIV-1 capsid p24 levels in supernatants were measured by ELISA. The relative levels (%) are also shown. *p<0.05 compared to the siRNA control. The results are shown as mean ± SD (n=3) and data presented are representative of three independent experiments.
 
 We next examined the role of the m6A erasers in HIV-1 protein expression and viral release in virus-producing cells. We knocked down endogenous AlkBH5, FTO, or both, in HEK293T cells using siRNA, and then transfected the cells with the pNL4-3 plasmid. We determined the levels of HIV-1 Gag protein expression in the cells and the capsid p24 protein released in the supernatants. Interestingly, we found that partial knockdown of FTO significantly promoted HIV-1 Gag synthesis in the cells by 2.5- to 6.5-fold (Figure 6C), and increased the levels of HIV-1 p24 release by two- to three-fold compared to control cells (Figure 6D). Thus, the m6A modification of HIV-1 RNA can enhance HIV-1 protein synthesis. Our results are in agreement with a recent report (Lichinchi et al., 2016) showing that silencing of the m6A writers (METTL3 and METTL14) or the eraser AlkBH5 decreases or increases HIV-1 p24 expression in the infected MT4 cells, respectively.
 
 ## Discussion
 
-The m
+The m6A modification of cellular mRNAs is coordinately regulated by the writers, erasers, and readers to control the metabolism and processing of methylated RNA (Fu et al., 2014). We found that HIV-1 RNA is m6A-methylated in infected cells, and that binding of YTHDF1–3 proteins to m6A-methylated HIV-1 RNA inhibits viral reverse transcription and gene expression. In contrast, partial knockdown of the m6A writers decreased HIV-1 Gag synthesis and viral release, while partial knockdown of FTO had the opposite effects, suggesting that m6A modification of HIV-1 RNA could enhance HIV-1 protein synthesis and viral release. Based on our results, we propose a working model suggesting that YTHDF proteins inhibit post-entry HIV-1 infection by blocking viral reverse transcription and mRNA expression, while the m6A modification of HIV-1 RNA can promote viral protein translation (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15528/elife-15528-fig7-v4.jpg)
 
-**Figure 7.:** 6A modification of HIV-1 RNA in regulating viral infection in cells.In the nucleus, the m6A writers (METTL3 and METTL14) add the m6A marker to HIV-1 genomic RNA (gRNA) or mRNA, and the m6A erasers (FTO and AlkBH5) remove the m6A modifications of HIV-1 RNA. The m6A modification of HIV-1 RNA can promote viral protein translation in cells. In contrast, cytoplasmic m6A readers (YTHDF1–3) bind to m6A-modified HIV-1 gRNA, which can result in inhibition of HIV-1 reverse transcription (RT), viral mRNA expression, and thereby HIV-1 infection in cells.DOI: http://dx.doi.org/10.7554/eLife.15528.014
+**Figure 7.:** In the nucleus, the m6A writers (METTL3 and METTL14) add the m6A marker to HIV-1 genomic RNA (gRNA) or mRNA, and the m6A erasers (FTO and AlkBH5) remove the m6A modifications of HIV-1 RNA. The m6A modification of HIV-1 RNA can promote viral protein translation in cells. In contrast, cytoplasmic m6A readers (YTHDF1–3) bind to m6A-modified HIV-1 gRNA, which can result in inhibition of HIV-1 reverse transcription (RT), viral mRNA expression, and thereby HIV-1 infection in cells.
 
 It is possible that YTHDF protein-mediated inhibition of HIV-1 infection can result from indirect effects on cellular RNA stability or gene expression, rather than direct inhibition of HIV-1 replication. We noticed a differential level of the effect on HIV-1 infection in different cell types by manipulating the individual YTHDF1–3 proteins. It is possible that the different effects are due to distinct cellular functions and mechanisms of YTHDF proteins (Fu et al., 2014). Recent studies indicated that YTHDF1 is responsible for translation promotion, and that YTHDF2 is responsible for mRNA decay, while the function YTHDF3 is unclear, but likely to aid in the temporal-spatial transport and delivery of mRNA (Wang and He, 2014; Wang et al., 2014, 2015). Indeed, we observed a unique high peak within the rev gene of HIV-1 RNA bound by YTHDF1 (Figure 1C), while YTHDF1 and YTHDF2 appear to have similar inhibitory effects on HIV-1 infection. It is possible that YTHDF1 and YTHDF2 may interact with different host proteins that directly or indirectly affect HIV-1 replication and lead to similar effects on viral inhibition. Furthermore, these three YTHDF proteins may have functional redundancy, and individual knockdown of one YTHDF protein may result in a modest effect because the other two could compensate the function. A recent study suggests that the dynamic m6A modification of cellular mRNA is a result of stress-induced nuclear localization and upregulation of YTHDF2 (Zhou et al., 2015). It is conceivable that HIV-1 infection of cells may induce the changes of cellular localization and expression levels of YTHDF proteins, thereby affecting HIV-1 RNA replication and viral infection.
 
@@ -138,60 +138,193 @@ Chemical modifications of viral RNAs such as m6A may protect viral genomes or mR
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Human healthy primary CD4+ T-cells were isolated from healthy blood donors’ buffy coats (purchased from American Red Cross Blood Service, Columbus, OH) using anti-human CD4-coated magnetic particles according to the manufacturer’s instructions (BD Biosciences, San Jose, CA) as described (St Gelais et al., 2014, 2015). Isolated CD4+ T cells were maintained in complete RPMI media containing interleukin-2 (20 U/ml, PeproTech, Rocky Hill, NJ) and activated with phytohemagglutinin A (PHA, Sigma-Aldrich, St. Louis, MO) as described (St Gelais et al., 2014). HEK293T cells, Jurkat cells, and the HIV-1 indicator cell line GHOST/X4/R5 were cultured as described (St Gelais et al., 2014, 2015). HeLa cells overexpressing the empty vector (pPB-CAG), YTHDF1, YTHDF2, or YTHDF3 were maintained in complete DMEM containing 2 µg/ml of puromycin. All parental cell lines were obtained from the American Type Culture Collection (ATCC, Manassas, VA) and the identity of the cell lines has been authenticated using short tandem repeat profiling or genotyping methods as described (Wu et al., 2004). All the cell lines were tested negative for mycoplasma contamination using a PCR-based universal mycoplasma detection kit (ATCC).
 
-## Cell proliferation assay
+### Cell proliferation assay
 
 Cell proliferation of HeLa cells or Jurkat cells with YTHDF1–3 overexpression or knockdown respectively were determined by the MTS assay (Promega, Madison, WI) as described (St Gelais et al., 2015). Cells (2 × 104) were plated in triplicate in a 96-well plate and cultured for 3 days and the absorbance was read at 490 nm at the indicated times.
 
-## Plasmids and shRNA- and siRNA-mediated gene silencing
+### Plasmids and shRNA- and siRNA-mediated gene silencing
 
-HIV-1 proviral DNA vector pNL4-3, pNL-Luc-E−R+ containing a firefly luciferase reporter gene and the empty vector control were described (de Silva et al., 2012). The pPB-CAG plasmid vector was used to overexpress the YTHDF1–3 proteins in HeLa cells. pLenti vectors carrying specific YTHDF1–3 shRNAs (Table 1) were used to knockdown of YTHDF1–3 proteins in different cell types as described (St Gelais et al., 2015). Jurkat cells transduced with lentivirus containing shRNAs specific for YTHDF1, YTHDF2, and YTHDF3 were maintained in puromycin (3 µg/ml) containing complete RPMI media. AlkBH5, FTO, METTL3 and METTL14 gene expression in HEK293T cells was silenced by two rounds of siRNA transfection using specific siRNA (Qiagen, Valencia, CA, sequences listed in Table 2) transfected with the Lipofectamin RNAiMax reagent (Invitrogen, Waltham, MA) according to the manufacturer protocol (reversible siRNA transfection method). Briefly, HEK293T cells (1.5 × 105) were transfected with specific siRNA or a non-specific control (80 nM). At 24 hr post-transfection, media were replaced and the second round of siRNA transfection was performed using the same siRNA concentration (80 nM). The pNL4-3 construct (0.5 μg) was transfected into the cells (1.5 × 105) 6 hr after of the second round transfection and cells were harvested for immunoblotting 36 hr after the proviral DNA transfection.10.7554/eLife.15528.015Table 1.The shRNA sequences used in this study.DOI: http://dx.doi.org/10.7554/eLife.15528.015shRNASequences (5’-3’)Non-specific (vector) controlCCGGCAACAAGATGAAGAGCACCAACTCGAGTTGGTGCTCTTCATCTTGTTGTTTTTYTHDF1CCGGCCCGAAAGAGTTTGAGTGGAACTCGAGTTCCACTCAAACTCTTTCGGGTTTTTGYTHDF2CCGGCGGTCCATTAATAACTATAACCTCGAGGTTATAGTTATTAATGGACCGTTTTTGYTHDF3CCGGGATAAGTGGAAGGGCAAATTTCTCGAGAAATTTGCCCTTCCACTTATCTTTTTG10.7554/eLife.15528.016Table 2.The siRNA sequences used in this study.DOI: http://dx.doi.org/10.7554/eLife.15528.016siRNASequences (5’-3’)METTL35’-CTGCAAGTATGTTCACTATGA-3’ 5’-AGGAGCCAGCCAAGAAATCAA-3’METTL145’-TGGTGCCGTGTTAAATAGCAA-3’ 5’-AAGGATGAGTTAATAGCTAAA-3’FTO5’-AAATAGCCGCTGCTTGTGAGA-3’AlkBH55’-AAACAAGTACTTCTTCGGCGA-3’
+HIV-1 proviral DNA vector pNL4-3, pNL-Luc-E−R+ containing a firefly luciferase reporter gene and the empty vector control were described (de Silva et al., 2012). The pPB-CAG plasmid vector was used to overexpress the YTHDF1–3 proteins in HeLa cells. pLenti vectors carrying specific YTHDF1–3 shRNAs (Table 1) were used to knockdown of YTHDF1–3 proteins in different cell types as described (St Gelais et al., 2015). Jurkat cells transduced with lentivirus containing shRNAs specific for YTHDF1, YTHDF2, and YTHDF3 were maintained in puromycin (3 µg/ml) containing complete RPMI media. AlkBH5, FTO, METTL3 and METTL14 gene expression in HEK293T cells was silenced by two rounds of siRNA transfection using specific siRNA (Qiagen, Valencia, CA, sequences listed in Table 2) transfected with the Lipofectamin RNAiMax reagent (Invitrogen, Waltham, MA) according to the manufacturer protocol (reversible siRNA transfection method). Briefly, HEK293T cells (1.5 × 105) were transfected with specific siRNA or a non-specific control (80 nM). At 24 hr post-transfection, media were replaced and the second round of siRNA transfection was performed using the same siRNA concentration (80 nM). The pNL4-3 construct (0.5 μg) was transfected into the cells (1.5 × 105) 6 hr after of the second round transfection and cells were harvested for immunoblotting 36 hr after the proviral DNA transfection.
 
-## HIV-1 infection assays
+**Table 1.**
+ The shRNA sequences used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>shRNA</th>
+      <th>Sequences (5’-3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Non-specific (vector) control</td>
+      <td>CCGGCAACAAGATGAAGAGCACCAACTCGAGTTGGTGCTCTTCATCTTGTTGTTTTT</td>
+    </tr>
+    <tr>
+      <td>YTHDF1</td>
+      <td>CCGGCCCGAAAGAGTTTGAGTGGAACTCGAGTTCCACTCAAACTCTTTCGGGTTTTTG</td>
+    </tr>
+    <tr>
+      <td>YTHDF2</td>
+      <td>CCGGCGGTCCATTAATAACTATAACCTCGAGGTTATAGTTATTAATGGACCGTTTTTG</td>
+    </tr>
+    <tr>
+      <td>YTHDF3</td>
+      <td>CCGGGATAAGTGGAAGGGCAAATTTCTCGAGAAATTTGCCCTTCCACTTATCTTTTTG</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ The siRNA sequences used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>siRNA</th>
+      <th>Sequences (5’-3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>METTL3</td>
+      <td>5’-CTGCAAGTATGTTCACTATGA-3’ 5’-AGGAGCCAGCCAAGAAATCAA-3’</td>
+    </tr>
+    <tr>
+      <td>METTL14</td>
+      <td>5’-TGGTGCCGTGTTAAATAGCAA-3’ 5’-AAGGATGAGTTAATAGCTAAA-3’</td>
+    </tr>
+    <tr>
+      <td>FTO</td>
+      <td>5’-AAATAGCCGCTGCTTGTGAGA-3’</td>
+    </tr>
+    <tr>
+      <td>AlkBH5</td>
+      <td>5’-AAACAAGTACTTCTTCGGCGA-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### HIV-1 infection assays
 
 Single-cycle, luciferase reporter HIV-1 stock (HIV-Luc/VSV-G) was generated by calcium phosphate co-transfection of HEK 293T cells with the pNL-Luc-E–R+ and pVSV-G as described (St Gelais et al., 2014). The infectious units of virus stocks were evaluated by limiting dilution on GHOST/X4/R5 cells as described (Wang et al., 2007). HIV-1 infection assays using luciferase reporter viruses were performed using a multiplicity of infection (MOI) of 0.5 as described (de Silva et al., 2012). Cell lysates were obtained 24 hpi and analyzed for luciferase activity using a commercially available kit (Promega) according to the manufacturer’s instructions. Total cell protein was quantified using a bicinchoninic acid assay (BCA; Pierce, Waltham, MA) and all luciferase results were normalized to total protein amounts. HIV-1 capsid p24 levels in supernatants were measured by an enzyme-linked immunosorbent assay (ELISA) using anti-p24-coated plates (AIDS and Cancer Virus Program, NCI-Frederick, MD) as described (Wang et al., 2007). Jurkat cells were infected with replication-competent HIV-1NL4-3 at an MOI of 0.5 as described (Wang et al., 2007). At 72 hpi, cells were washed 3 times and harvested for total RNA extraction using RNAeasy kit (Qiagen). PHA-activated primary CD4+ T cells were infected with HIV-1NL4-3 (40 ng p24 equivalent HIV-1 per 106 cells) and cells were harvested at 96 hpi for total RNA extraction using RNAeasy kit (Qiagen).
 
-## m6A-seq
+### m6A-seq
 
 High-throughput sequencing of HIV-1 methylome was carried out using m6A-seq (Dominissini et al., 2012) and followed the protocol published previously (Dominissini et al., 2012). In brief, total RNA containing HIV-1 RNA was extracted from the cells and purified by poly (dT) beads. Purified polyadenylated RNA was mixed with 2.5 μg of affinity purified anti-m6A polyclonal antibody (202003; Synaptic Systems, Goettingen, Germany) in IPP buffer (150 mM NaCl, 0.1% NP-40, 10 mM Tris-HCl, pH 7.4) and incubated for 2 hr at 4°C. RNA was used for library generation with the small RNA sequencing kit (NEB, Ipswich, MA). Sequencing was carried out on Illumina HiSeq 2000 according to the manufacturer’s instructions.
 
-## Quantification of HIV-1 RNA m6A level using liquid chromatography-mass spectrometry (LC-MS/MS)
+### Quantification of HIV-1 RNA m6A level using liquid chromatography-mass spectrometry (LC-MS/MS)
 
 HIV-1 gRNA (250 μg) was isolated from highly purified HIV-1MN virions (total p24 capsid 600 μg) (Rossio et al., 1998; Wang et al., 2008) using an RNeasy Mini kit (Invitrogen), and subjected to quantitative analysis of m6A level using LC-MS/MS as described (Jia et al., 2011).
 
-## Quantitative PCR and RT-PCR
+### Quantitative PCR and RT-PCR
 
-Quantitative PCR (qPCR) was performed to assess the relative levels of HIV-1 late reverse transcription (RT) products and 2-LTR circles as described (de Silva et al., 2012; Dong et al., 2007). Reverse transcription PCR (RT-PCR) was used to measure HIV-1 gag mRNA as described (Dong et al., 2007). To amplify HIV-1 late RT products in cells transduced with pLenti vectors, a different set of primers (LW59 and LW60) were used as described (St Gelais et al., 2015). Sequences of PCR primers and probes are listed in Table 3. All HIV-1 stocks used for PCR assays were treated with DNaseI (40 U/ml; Ambion, Waltham, MA) prior to infections to avoid plasmid DNA contamination.10.7554/eLife.15528.017Table 3.Sequences of PCR primers and probes used in this study.DOI: http://dx.doi.org/10.7554/eLife.15528.017PrimersSequences (5’-3’)HIV-1 gag forwardCTAGAACGATTCGCAGTTAATCCTHIV-1 gag reverseCTATCCTTTGATGCACACAATAGAGUnspliced GAPDH forwardGGGAAGCTCAAGGGAGATAAAATTCUnspliced GAPDH reverseGTAGTTGAGGTCAATGAAGGGGTCSpliced GAPDH forwardGGAAGGTGAAGGTCGGAGTCAACGGSpliced GAPDH reverseCTGTTGTCATACTTCTCATGGTTCACMH531 forward (for HIV-1 late reverse transcription (RT) products)TGTGTGCCCGTCTGTTGTGTBB reverse (for late RT products)GGATTAACTGCGAATCGTTCHIV-1 late RT product probeTCGACGCAGGACTCGGCTTGCT2-LTR probeAAGTAGTGTGTGCCCGTCTGTTGTGTGACTC2-LTR forwardGCCTGGGAGCTCTCTGGCTAA2-LTR reverseGCCTTGTGTGTGGTAGATCCALW59 (forward, alternative for late RT detection in shRNA vector-transduced cells)GACATAGCAGGAACTACTAGTACCCLW60 (reverse, alternative for late RT detection in shRNA vector-transduced cells)GGTCCTTGTCTTATGTCCAGAATGC
+Quantitative PCR (qPCR) was performed to assess the relative levels of HIV-1 late reverse transcription (RT) products and 2-LTR circles as described (de Silva et al., 2012; Dong et al., 2007). Reverse transcription PCR (RT-PCR) was used to measure HIV-1 gag mRNA as described (Dong et al., 2007). To amplify HIV-1 late RT products in cells transduced with pLenti vectors, a different set of primers (LW59 and LW60) were used as described (St Gelais et al., 2015). Sequences of PCR primers and probes are listed in Table 3. All HIV-1 stocks used for PCR assays were treated with DNaseI (40 U/ml; Ambion, Waltham, MA) prior to infections to avoid plasmid DNA contamination.
 
-## Antibodies and immunoblotting
+**Table 3.**
+ Sequences of PCR primers and probes used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primers</th>
+      <th>Sequences (5’-3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HIV-1 gag forward</td>
+      <td>CTAGAACGATTCGCAGTTAATCCT</td>
+    </tr>
+    <tr>
+      <td>HIV-1 gag reverse</td>
+      <td>CTATCCTTTGATGCACACAATAGAG</td>
+    </tr>
+    <tr>
+      <td>Unspliced GAPDH forward</td>
+      <td>GGGAAGCTCAAGGGAGATAAAATTC</td>
+    </tr>
+    <tr>
+      <td>Unspliced GAPDH reverse</td>
+      <td>GTAGTTGAGGTCAATGAAGGGGTC</td>
+    </tr>
+    <tr>
+      <td>Spliced GAPDH forward</td>
+      <td>GGAAGGTGAAGGTCGGAGTCAACGG</td>
+    </tr>
+    <tr>
+      <td>Spliced GAPDH reverse</td>
+      <td>CTGTTGTCATACTTCTCATGGTTCAC</td>
+    </tr>
+    <tr>
+      <td>MH531 forward (for HIV-1 late reverse transcription (RT) products)</td>
+      <td>TGTGTGCCCGTCTGTTGTGT</td>
+    </tr>
+    <tr>
+      <td>BB reverse (for late RT products)</td>
+      <td>GGATTAACTGCGAATCGTTC</td>
+    </tr>
+    <tr>
+      <td>HIV-1 late RT product probe</td>
+      <td>TCGACGCAGGACTCGGCTTGCT</td>
+    </tr>
+    <tr>
+      <td>2-LTR probe</td>
+      <td>AAGTAGTGTGTGCCCGTCTGTTGTGTGACTC</td>
+    </tr>
+    <tr>
+      <td>2-LTR forward</td>
+      <td>GCCTGGGAGCTCTCTGGCTAA</td>
+    </tr>
+    <tr>
+      <td>2-LTR reverse</td>
+      <td>GCCTTGTGTGTGGTAGATCCA</td>
+    </tr>
+    <tr>
+      <td>LW59 (forward, alternative for late RT detection in shRNA vector-transduced cells)</td>
+      <td>GACATAGCAGGAACTACTAGTACCC</td>
+    </tr>
+    <tr>
+      <td>LW60 (reverse, alternative for late RT detection in shRNA vector-transduced cells)</td>
+      <td>GGTCCTTGTCTTATGTCCAGAATGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies and immunoblotting
 
 The antibodies used in this study were: anti-GAPDH (clone 4G5, AbD serotec, Atlanta, GA), anti-FLAG (F-3165, Sigma-Aldrich), anti-FTO (ab124892, Abcam, Cambridge, MA), anti- AlkBH5 (HPA007196, Sigma-Aldrich), anti-METTL3 (15073-1-AP, Proteintech Group, Rosemont, IL), anti-METTL14 (HPA038002, Sigma-Aldrich), anti-YTHDF1 (ab99080; Abcam), anti-YTHDF2 (ABE542, EMD Millipore, Billerica, MA), anti-YTHDF3 (ab103328; Abcam), and anti-HIV-1 Gag (clone #24–2, the NIH AIDS Reagent Program). Cells were harvested and lysed in cell lysis buffer (Cell Signalling, Beverly, MA) supplemented with protease inhibitor cocktails (Sigma-Aldrich). Immunoblotting was performed as described (St Gelais et al., 2015). Detection of GAPDH (glyceraldehyde-3-phosphate dehydrogenase) expression was used as a loading control.
 
-## Immunoprecipitation and RNA isolation
+### Immunoprecipitation and RNA isolation
 
 HeLa cells expressing pPB-CAG vector or YTHDF1–3 (2.5 × 106 cells) were seeded in a 60 mm-diameter culture plate. Cells were infected with HIV-Luc/VSV-G at an MOI of 5 for 3 hr. Cells were UV-cross-linked, lysed in cell lysis buffer (Sigma-Aldrich). The cells were incubated in lysis buffer for 10 min on ice with frequent mixing and were sonicated to ensure maximum lysis. The lysed cell suspension was centrifuged for 5 min at 9,300 ×g at 4°C. The supernatant was transferred to fresh tubes and equal amount of cell lysates were mixed with anti-FLAG-conjugated protein G beads and rotated for 2 hr at 4°C. After the incubation, beads were washed 3 times with cell lysis buffer. Co-immunoprecipitated RNA was isolated from the immunoprecipitates using Trizol (Invitrogen), and RNeasy columns (Qiagen) with an on-column DNase I treatment (Qiagen) and eluted with RNase-free water. Equal volumes of RNA were used as a template for first-strand cDNA synthesis, according to the manufacturer’s instructions.
 
-## CLIP-seq
+### CLIP-seq
 
 We followed a previously reported protocol of the PAR (photoactivatable ribonucleoside-enhanced)-CLIP assay (Hafner et al., 2010) with the following modifications. As HIV-1 infection was inhibited by the addition of 4-thiouridine (data not shown), we omitted that step and performed crosslinking directly. Briefly, HeLa/CD4 cells stably expressing individual YTHDF1-3 proteins were seeded in thirty 15-cm diameter plates one day before HIV-1NL4-3 infection. At day 2, the cells were infected with HIV-1NL4-3 at a multiplicity of infection (MOI) of 5 and cells were washed to remove cell-free viruses. At 72 hr post-infection, the cells were washed once with 10 mL ice-cold PBS. Uncovered cell plates were placed on a tray with ice and irradiated with 0.15 J/cm2 of 254 nm UV light three times in a Stratalinker 2400 (Stratagene, Santa Clara, CA). Cells were scraped off in PBS and transferred to centrifugation tubes and collected by centrifugation at 500 × g for 5 min at 4°C. The cell pellets were lysed in 3 volumes of 1% NP40 lysis buffer and incubated on ice for 10 min. The cell lysates were cleared by centrifugation at 13,000 × g for 15 min at 4°C. Cleared cell lysates were incubated with RNase T1 to a final concentration of 0.2 U/μl, at 22°C for 15 min, and immediately put on ice for 5 min to quench. Samples were then centrifuged at 13,000 × g for 10 min at 4°C and the supernatant was taken. Anti-FLAG M2 magnetic beads (Sigma M8823, 20 μl slurry/15-cm diameter plate) were washed in IP buffer (50 mM HEPES (pH 7.5), 0.3 M KCl, 0.05% NP40) for 5 times and resuspended in cleared cell lysates and incubated at 4°C overhead rotator for 2 hr. After 2 hr, beads were washed with 1 mL IP buffer for 3 times and beads were changed into a new tube for the final wash and resuspended into 100 μl IP buffer. RNAse T1 was added to the beads at a final concentration of 10 U/μl, incubated at 22°C for 6 min, immediately put on ice for 5 min to quench. Beads were washed with 1 mL high salt buffer (50 mM Tris (pH 7.5), 500 mM KCl, 0.05% NP40) five times, then with 1 mL T4 polynucleotide kinase (PNK) buffer containing 50 mM Tris (pH 7.5), 10 mM MgCl2, 50 mM NaCl (without DTT) two times, finally resuspended into 100 μl PNK reaction mix (95 μl commercial PNK buffer and 5 μl T4 PNK (Promega) and incubated at 37°C for 15 min. Then 10 μl PNK and 1.1 μl 10 mM ATP (to a final concentration of 100 μM) were added to the mixture and kept at 37°C for another 20 min, followed by washing with 1 mL PNK buffer (without DTT) five times and with 1 mL high salt buffer five times. The bound RNA fragments were eluted from the beads by proteinase K digestion twice at 55 °C for 20 and 10 min, respectively. The eluate was further purified using RNA Clean and Concentrator kit (Zymo Research). RNA was used for library generation with NEBNext Small RNA Library Prep kit (NEB). Sequencing was carried out on Illumina HiSeq 4000 according to the manufacturer’s instructions.
 
 For bioinformatics analysis, after removing the adapter sequence, only reads that are longer than 16 bp were kept. The reads were mapped to the reference genomes (both human hg38 and HIV-1NL4-3 (GenBank: M19921.2) using Bowtie2. Reads uniquely mapped to HIV-1 genome (not to human genome) were used in the subsequent analysis.
 
-## Measurement of the kinetics of HIV-1 RNA in infected cells
+### Measurement of the kinetics of HIV-1 RNA in infected cells
 
 HeLa cells over-expressing individual YTHDF1–3 proteins or the pPB-CAG vector were infected with HIV-1-Luc/VSV-G (MOI of 0.5). Cells were collected at 6, 12 and 24 hpi. Total RNA was isolated from the cells using RNeasy columns (Qiagen) with on-column DNase I treatment (Qiagen) and eluted with RNase-free water. Quantitative RT-PCR was used to measure HIV-1 gag RNA levels as described (Dong et al., 2007). Sequences of PCR primers are listed in Table 3. All HIV-1 stocks used for infection were treated with DNaseI (40 U/ml; Ambion) prior to infections to avoid plasmid DNA contamination.
 
-## GO analysis
+### GO analysis
 
 GO analysis was performed using the GO Enrichment Analysis tool from the Gene Ontology Consortium (Gene Ontology, 2015). GO graphs were plotted using the Web server REVIGO (Supek et al., 2011).
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed using Mann-Whitney’s U test or one-way ANOVA test with Prism software and statistical significance was defined as p<0.05.
 
-## Data deposition and access
+### Data deposition and access
 
 Data accession: all the raw data and processed files have been deposited in the Gene Expression Omnibus (http://www.ncbi.nlm.nih.gov/geo) and accessible under GSE85724.

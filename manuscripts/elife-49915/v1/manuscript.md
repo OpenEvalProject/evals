@@ -17,7 +17,7 @@
 
 ## Abstract
 
-In area CA1 of the hippocampus, the selection of place cells to represent a new environment is biased towards neurons with higher excitability. However, different environments are represented by orthogonal cell ensembles, suggesting that regulatory mechanisms exist. Activity-dependent plasticity of intrinsic excitability, as observed in vitro, is an attractive candidate. Here, using whole-cell patch-clamp recordings of CA1 pyramidal neurons in anesthetized rats, we have examined how inducing theta-bursts of action potentials affects their intrinsic excitability over time. We observed a long-lasting, homeostatic depression of intrinsic excitability which commenced within minutes, and, in contrast to in vitro observations, was not mediated by dendritic I h . Instead, it was attenuated by the Kv1.1 channel blocker dendrotoxin K, suggesting an axonal origin. Analysis of place cells’ out-of-field firing in mice navigating in virtual reality further revealed an experience-dependent reduction consistent with decreased excitability. We propose that this mechanism could reduce memory interference.
+In area CA1 of the hippocampus, the selection of place cells to represent a new environment is biased towards neurons with higher excitability. However, different environments are represented by orthogonal cell ensembles, suggesting that regulatory mechanisms exist. Activity-dependent plasticity of intrinsic excitability, as observed in vitro, is an attractive candidate. Here, using whole-cell patch-clamp recordings of CA1 pyramidal neurons in anesthetized rats, we have examined how inducing theta-bursts of action potentials affects their intrinsic excitability over time. We observed a long-lasting, homeostatic depression of intrinsic excitability which commenced within minutes, and, in contrast to in vitro observations, was not mediated by dendritic Ih. Instead, it was attenuated by the Kv1.1 channel blocker dendrotoxin K, suggesting an axonal origin. Analysis of place cells’ out-of-field firing in mice navigating in virtual reality further revealed an experience-dependent reduction consistent with decreased excitability. We propose that this mechanism could reduce memory interference.
 
 ## Introduction
 
@@ -31,61 +31,89 @@ To date, only a few studies have described intrinsic plasticity in vivo (Mahon a
 
 ## Results
 
-## Theta burst firing induces a homeostatic decrease in intrinsic excitability of CA1 pyramidal neurons in vivo
+### Theta burst firing induces a homeostatic decrease in intrinsic excitability of CA1 pyramidal neurons in vivo
 
 We obtained whole-cell patch-clamp recordings from CA1 pyramidal neurons (n = 56) in anesthetized rats using the blind technique (Lee et al., 2009; Margrie et al., 2002). To determine if the burst (100 Hz) firing of CA1 pyramidal cells at theta (5 Hz) frequency, as observed during place field traversals (Epsztein et al., 2011; Harvey et al., 2009), could induce long-term changes in intrinsic excitability we applied a theta-burst stimulation (TBS) protocol directly through the patch pipette (Figure 1A; see methods). We used an EPSP-like waveform for the current pulses as this reliably entrained the cells to fire at 100 Hz, and where failures occurred they were at the beginnings and ends of the bursts. The identity of the cell was verified in 45 out of 56 cases by biocytin staining (Figure 1B). Neuronal excitability was assessed by measuring the firing rate of CA1 pyramidal cells in response to a series of depolarizing current steps from a holding potential of −60 mV (with liquid junction potential correction this corresponds to a membrane potential of around −75 mV). The TBS was applied immediately after the first testing protocol, and the testing protocol was then repeated every 10 min.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left In vivo whole-cell recordings were made from CA1 pyramidal neurons. The TBS was applied through the patch pipette. Right An example of TBS. EPSP-like waveforms were applied in bursts of 10 (at 100Hz, inset), these bursts were repeated 10 times at theta frequency (5Hz) and the process was repeated three times with an interval of 15 seconds. (B) Morphology of a recorded cell. SR stratum radiatum, SP stratum pyramidale, SO stratum oriens. (C-D) Examples of a TBS and a control cell. The plots show the response to each of the maximum current injections at different times during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. The traces shown in (D) are marked by dark grey borders at their respective timepoints. (E) Left Mean number of spikes evoked in response to the maximal current injection prior to and 20 minutes post-TBS for each cell. Right Distribution of changes in spike count (F) Comparison of change in firing rate at 20 minutes between TBS and control groups. (G) Correlation between the number of spikes evoked during TBS and the change in firing rate. (H) Firing rate vs injected current for the populations of TBS and control cells. The current range is normalized to correct for differences in the range of current amplitudes used. In the TBS group there was a significant reduction (p < 0.05) in the intercept at 10 min (green) and 20 min (red) post-TBS but no change in the gain of the fits. Error bars show mean ± SEM. TBS n = 16 (30 min n = 14), Control n = 11 (30 min n = 6).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Correlation with the input resistance prior to TBS. (B) Correlation with membrane potential immediately after breaking in. (C) Correlation with initial AP threshold. (D) Correlation with burstiness. n = 16
+
 Following TBS we saw a long-lasting reduction in intrinsic excitability that began within minutes of the stimulation (Figure 1C,D). Average firing rates were significantly reduced 20 min post-TBS (Change in firing rate: TBS −29.2 ± 7.1%, p=7.3×10−4, n = 16, Figure 1E), which was not seen in control cells (−5.3 ± 4.8%, p=0.20, n = 11, Figure 1F). The magnitude of the reduction correlated with the number of spikes evoked during the TBS (R2 = 0.40, p=0.0083; Figure 1G) in line with a homeostatic mechanism. To see if the gain of the input-output relationship was altered by the change in excitability we first corrected for variations between cells by normalizing the current-firing responses of each cell and then fitted the population with linear regression. We found that the reduction in firing rate after TBS was uniform across all current step amplitudes, resulting in a rightward shift in the input/output curve with no change in the slope of the fits (Slope: Pre vs 10 min p=0.78, 20 min p=0.34 and 30 min p=0.43, Figure 1H). As a result the current threshold was significantly increased by the TBS protocol (Intercept: Pre vs 10 min p=0.044, n = 16, 20 min p=0.024, n = 16, 30 min p=0.28 n=14). No effect on slope or intercept was seen in control cells (Pre vs 10 min p=0.26, n = 11, 20 min p=0.49, n = 11, 30 min p=0.27, n = 6, Figure 1H). The effect of TBS did not appear to relate to the initial excitability state of the cell, as the change in firing rate did not show any relationship with the initial input resistance (R2 = 0.11, p=0.21, F Figure 1—figure supplement 1A), membrane potential (R2 = 0.015, p=0.66, Figure 1—figure supplement 1B), action potential threshold (R2 = 0.0045, p=0.80, Figure 1—figure supplement 1C) or burstiness (R2 = 0.02, p=0.60, Figure 1—figure supplement 1D). Our results therefore show that a short episode of theta-burst firing is sufficient to induce a fast and long-lasting decrease in intrinsic excitability of CA1 pyramidal cells in vivo.
 
-## Plasticity of intrinsic excitability is associated with changes in Rin and first spike latency
+### Plasticity of intrinsic excitability is associated with changes in Rin and first spike latency
 
 We next looked for changes in cellular properties that could indicate what mechanisms might explain the reduction in excitability. We found a reduction in the input resistance following TBS that correlated well with the reduction in excitability (pre vs 20 min p=0.0087, n = 16; R2 = 0.38, p=0.012, Figure 2A–C), and that was significant compared to control cells (Change in Rin: TBS −9.7 ± 2.6%, n = 16, Control −1.8 ± 2.5%, n = 11, p=0.043, Figure 2D). We similarly found an increase in the latency to first spike that correlated with the change in excitability (pre vs 20 min p=0.005, n = 16; R2 = 0.69, p=1.6×10−4, Figure 2E–G), and that was significant compared to control (Change in latency: TBS 103.4 ± 29.5%, n = 16, Control 19.6 ± 12.8%, n = 11, p=0.034, Figure 2H). These observations suggest that sub-threshold conductances might be modified by the TBS protocol.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig2-v1.jpg)
+
+**Figure 2.:** (A) Example traces showing a reduction in input resistance. Each trace is the mean of 10 traces. Rin was calculated on hyperpolarizing steps only and the voltage was taken as the minimum within the first 150ms. (B) Input resistance prior to and 20 minutes post-TBS. (C) Correlation between the change in input resistance and the change in firing rate. (D) Comparison of change in input resistance at 20 minutes between TBS and control groups. (E) Example trace showing increase in latency after TBS. (F) Latency to first spike prior to and 20 minutes post-TBS. (G) Correlation between the change in latency and the change in firing rate. (H) Comparison of change in latency at 20 minutes between TBS and control groups. Error bars show mean ± SEM. TBS n = 16, Control n = 11.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Examples of synaptic activity prior to testing excitability before and 20 minutes post-TBS. (B) Membrane potential variance prior to and 20 minutes post-TBS. (C) Scatter plot showing no correlation between the change in membrane potential variance and the change in firing rate. (D) Comparison of change in variance of the membrane potential at 20 minutes between TBS and control groups.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Action potential threshold prior to and 20 minutes post-TBS. (B) Comparison of change in threshold between TBS and control cells. (C) AHP amplitude prior to and 20 minutes post-TBS. (D) Comparison of change in AHP between TBS and control cells. Error bars show mean ± SEM. TBS n = 16, Control n = 11.
 
 To verify that the synaptic drive on to the recorded neurons remained constant for the duration of the recording we compared Vm variance and amplitude before and after application of the TBS protocol. There was no difference in variance before versus 20 min post-TBS (pre vs 20 min p=0.84, n = 16, Figure 2—figure supplement 1A–B), no correlation with the change in excitability (R2 = 0.03 p=0.53, Figure 2—figure supplement 1C) or difference compared to control cells (∆Variance: TBS −0.03 ± 0.16 mV2 n=16, Control 0.39 ± 0.22 mV2, n = 11, p=0.12, Figure 2—figure supplement 1D).
 
 We also looked for changes in the action potential threshold and spike afterhyperpolarization (AHP), properties which have been associated with changes in excitability in vivo and ex vivo, respectively (Mahon and Charpier, 2012; Oh et al., 2003). Although after TBS there was an increase in the action potential threshold (pre vs 20 min p<0.019, n = 16, Figure 2—figure supplement 2A) the difference between control and TBS cells was not significant (∆Threshold: TBS 1.16 ± 0.44 mV, n = 16, Control 0.44 ± 0.54 mV, n = 10, p=0.32, Figure 2—figure supplement 2B). We did not find any effect on the AHP (pre vs 20 min p=0.92, ∆AHP: TBS 0.4 ± 0.48 mV, n = 16, Control −0.48 ± 0.37 mV, p=0.19, n = 11, Figure 2—figure supplement 2C,D). These observations indicate that changes in supra-threshold conductances are unlikely to explain the decrease in excitability we observed.
 
-## Plasticity induction depends on rise in intracellular calcium but is independent of NMDARs
+### Plasticity induction depends on rise in intracellular calcium but is independent of NMDARs
 
 If the plasticity we observed indeed depends on action potential firing, we would expect it to be dependent on increases in intracellular calcium. To verify that this was the case we repeated the experiments with the addition of the calcium chelator BAPTA (0.5 mM) to the intracellular solution. As expected, in the presence of BAPTA the depression of intrinsic excitability was prevented (BAPTA n = 7, change in firing rate: 23.0 ± 13.7%, p=0.0012 vs TBS; change in Rin: 2.4% ± 5.16, p=0.029 vs TBS; change in latency: 8.7 ± 7.4%, p=0.05 vs TBS, Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig3-v1.jpg)
 
-**Figure 3.:** () Example cell showing that the decrease in excitability is blocked with 0.5mM BAPTA inside the patch pipette. Scatter plots show the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (A-BB). (C-E) Comparisons of changes in firing rate (C), input resistance (D) and latency (E) between TBS alone (n = 16) and TBS with BAPTA (n = 7). Error bars show mean ± SEM.Figure 3—source data 1.
+**Figure 3.:** (A-B) Example cell showing that the decrease in excitability is blocked with 0.5mM BAPTA inside the patch pipette. Scatter plots show the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (B). (C-E) Comparisons of changes in firing rate (C), input resistance (D) and latency (E) between TBS alone (n = 16) and TBS with BAPTA (n = 7). Error bars show mean ± SEM.
 
 We next blocked calcium influx through NMDARs, as this has been described to block various mechanisms for changes in intrinsic excitability in vitro (Fan et al., 2005; Wang et al., 2003; Frick et al., 2004; Losonczy et al., 2008), even in the absence of synaptic stimulation (Fan et al., 2005). In the latter case it is assumed that there is either background NMDAR activity or that the backpropagating action potentials depolarize the dendrite sufficiently to remove the Mg2+ block for ongoing activity to activate NMDARs. We found, however, that blocking NMDARs by adding 1 mM MK-801 to intracellular solution did not affect the TBS-induced reduction in excitability (MK-801 n = 7, change in firing rate: −42.1 ± 12.2%, p=0.35 vs TBS; change in Rin: −13.2 ± 2.5%, p=0.43 vs TBS; change in latency: 156.4 ± 70.3%, p=0.42 vs TBS, Figure 4). This is perhaps unsurprising given the lack of potentiating synaptic stimulation, and we can infer that influx through voltage-gated calcium channels is the major, or at least initial, source of calcium for the induction of the plasticity we observed.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig4-v1.jpg)
 
-**Figure 4.:** () Example cell showing that 1mM MK-801 inside the pipette does not prevent the decrease in excitability. Scatter plot shows the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (A-BB). (C-E) Comparisons of changes in firing rate (C), input resistance (D) and latency (E) between TBS alone (n = 16) and TBS with MK-801 (n = 7). Error bars show mean ± SEM.Figure 4—source data 1.
+**Figure 4.:** (A-B) Example cell showing that 1mM MK-801 inside the pipette does not prevent the decrease in excitability. Scatter plot shows the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (B). (C-E) Comparisons of changes in firing rate (C), input resistance (D) and latency (E) between TBS alone (n = 16) and TBS with MK-801 (n = 7). Error bars show mean ± SEM.
 
-## Decreased excitability cannot be explained by an increase in Ih
+### Decreased excitability cannot be explained by an increase in Ih
 
 Our observations to this point are consistent with the Ih-mediated reduction in intrinsic excitability seen in vitro (Fan et al., 2005; Campanac et al., 2008). To see if Ih could similarly explain the reduction in excitability, we looked to see if TBS affected the sag ratio (a measure of the voltage change resulting from Ih activation, Figure 5A). However, we found that the sag ratio actually increased following TBS (pre vs 20 min p=0.0088, n = 16, Figure 5B), which indicates a decrease in Ih that would be expected to make the cells more excitable. This decrease was not detected in the presence of BAPTA and MK-801 (BAPTA p=0.39, n = 7, MK-801 p=0.97, n = 7, Figure 5C), conditions which blocked the in vitro effects of TBS on Ih (Fan et al., 2005). The change in sag ratio was inversely correlated with the strength of stimulation (R2 = 0.42, p=0.0065, Figure 5D), which is consistent with previous observations following weak LTP induction (Campanac et al., 2008), but did not significantly correlate with the overall change in excitability (R2 = 0.08, p=0.29, Figure 5E). To more directly assess the role of Ih in the plasticity we observed, we repeated the experiments with the addition of 100 µM ZD7288 (a potent and specific blocker of Ih channel with an intracellular site of action) to the intracellular solution. Under this condition the membrane sag was abolished and Rin was increased (Pre-TBS Rin: TBS 48.7 ± 2.5 MΩ, ZD 68.6 ± 5.9 MΩ), indicating Ih was blocked (Figure 6A–B). However, intracellular ZD7288 did not prevent TBS-induced decrease in firing rate (ZD n = 6, change in firing rate: −22.9 ± 8.6%, p=0.63 vs TBS, Figure 6C–E), decrease in input resistance (ZD change in Rin: −14.3 ± 3.8%, p=0.36 vs TBS, Figure 6F) and increase in first spike latency (ZD change in latency: 78.7 ± 13.1%, p=0.62 vs TBS, Figure 6G).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig5-v1.jpg)
 
-**Figure 5.:** h do not account for decrease in excitability.(A) Example traces showing the voltage sag caused by Ih pre and 20 min post-TBS. Each trace is the mean of 10 trials. (B) Sag ratio prior to and 20 minutes post-TBS (n = 16). (C) Sag ratio prior to and 20 minutes post-TBS with 0.5mM BAPTA (n = 7) or 1mM MK-801 (n = 7) in the patch pipette. (D) Correlation between the change in sag ratio and the number of spikes evoked during TBS. (E) Scatter plot showing that there was no strong relationship between the change in sag ratio and the decrease in firing rate.Figure 5—source data 1.
+**Figure 5.:** (A) Example traces showing the voltage sag caused by Ih pre and 20 min post-TBS. Each trace is the mean of 10 trials. (B) Sag ratio prior to and 20 minutes post-TBS (n = 16). (C) Sag ratio prior to and 20 minutes post-TBS with 0.5mM BAPTA (n = 7) or 1mM MK-801 (n = 7) in the patch pipette. (D) Correlation between the change in sag ratio and the number of spikes evoked during TBS. (E) Scatter plot showing that there was no strong relationship between the change in sag ratio and the decrease in firing rate.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig6-v1.jpg)
 
-**Figure 6.:** h does not prevent reduction in excitability.(A-B) Inclusion of ZD7288 in the patch pipette blocked Ih, abolishing the voltage sag. Each trace shown is the mean of 10 responses. (C-D) Example cell showing the effect of TBS in the presence of ZD7288 inside the patch pipette. Scatter plot shows the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (D). (E-F) Comparisons of changes in firing rate (E), input resistance (F) and latency (G) between TBS alone (n = 16) and TBS with ZD7288 (n = 6). Error bars show mean ± SEM.Figure 6—source data 1.
+**Figure 6.:** (A-B) Inclusion of ZD7288 in the patch pipette blocked Ih, abolishing the voltage sag. Each trace shown is the mean of 10 responses. (C-D) Example cell showing the effect of TBS in the presence of ZD7288 inside the patch pipette. Scatter plot shows the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (D). (E-F) Comparisons of changes in firing rate (E), input resistance (F) and latency (G) between TBS alone (n = 16) and TBS with ZD7288 (n = 6). Error bars show mean ± SEM.
 
 These results indicate that while plasticity of Ih might have been induced by our stimulation protocol, it would tend to increase rather than decrease intrinsic excitability. Therefore plasticity in another, opposing, mechanism determined the overall change in excitability.
 
-## ID contributes to the decrease in intrinsic excitability
+### ID contributes to the decrease in intrinsic excitability
 
 Failing a role for Ih, one possible source for the decreased excitability would be potassium conductances. The large increases in first spike latency are suggestive of ID, a slowly inactivating potassium current activated at subthreshold membrane potentials (Storm, 1988), which in CA1 pyramidal neurons is carried by Kv1.1 channels expressed at the AIS (Kirizs et al., 2014). To determine if ID contributed to the reduction in excitability we applied dendrotoxin K, a Kv1.1 specific channel blocker (Robertson et al., 1996). Prior to patching, we pressure injected 200 nM DTX-K for 5 min approximately 100 µm above the pyramidal cell layer, into the region containing the AIS. We then patched cells with an additional 10 nM DTX-K in the pipette solution. In the presence of DTX-K the effect of TBS on excitability appeared to be reduced (Figure 7A–B). The TBS protocol induced more spikes in the presence of DTX-K (>250 spikes in 2/3 of the cells in DTX-K but only 1/3 of the cells in control condition). As the effect on excitability depended on the number of spikes induced during TBS (see Figure 1G), we focused on those cells where TBS evoked at least 250 spikes in both control and DTX-K conditions. We found that the reduction in firing rate was significantly smaller with DTX-K (change in firing rate: TBS −51.8 ± 8.7%, n = 6, DTX-K −25.5 ± 5.3%, n = 6, p=0.037, Figure 7C), the reduction in input resistance was mostly abolished (change in Rin: TBS −17.4 ± 1.7%, n = 6, DTX-K −5.5 ± 1.7%, n = 6, p=9.7×10−4, Figure 7D), as was the increase in latency (change in latency: TBS 192.0 ± 54.2%, n = 6, DTX-K 51.0 ± 10.8%, n = 6, p=0.04, Figure 7E). These results suggest that the reduction in excitability following TBS is mediated, at least in part, by an increase in ID.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig7-v1.jpg)
 
-**Figure 7.:** (A-B) Example cell recorded after the application of DTX-K. Scatter plot shows the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (B). (C-E) Comparisons of changes in firing rate (C), input resistance (D) and latency (E) between TBS alone (n = 6) and with DTX-K (n = 6) for cells where TBS evoked at least 250 spikes. Error bars show mean ± SEM.Figure 7—source data 1.
+**Figure 7.:** (A-B) Example cell recorded after the application of DTX-K. Scatter plot shows the response to each of the maximum current injections during the testing protocol (grey circles). The red circles mark the mean response at each timepoint. Dark grey borders mark the current steps depicted in (B). (C-E) Comparisons of changes in firing rate (C), input resistance (D) and latency (E) between TBS alone (n = 6) and with DTX-K (n = 6) for cells where TBS evoked at least 250 spikes. Error bars show mean ± SEM.
 
-## Bias towards reduced excitability of place cells during virtual spatial navigation
+### Bias towards reduced excitability of place cells during virtual spatial navigation
 
 Our results demonstrate that action potential firing can induce a decrease in the intrinsic excitability of CA1 pyramidal neurons, but the question remains as to whether this plasticity affects coding in awake animals. To look for evidence of its expression we reanalyzed data from a previous study, where we made extracellular recordings from CA1 in mice while they navigated virtual reality tracks in both novel and familiar conditions (Bourboulou et al., 2019). The novel and familiar conditions differed by the availability of local visual cues (virtual 3D objects) and population analysis showed that place cell identity and firing locations between the two were uncorrelated, indicating there was a global remapping. To examine how firing rate changed during the session we used two complementary measures: the firing rate during the start, middle and end time periods of the session (which shows the size of the effect), and the lap-by-lap correlation of firing rate over the entire session (which shows the consistency of the effect). We hypothesized that a change in intrinsic excitability should be visible in the out-of-field firing rate, as unlike in-field firing it should not be affected by synaptic plasticity.
 
 We found that in the novel condition the out-of-field firing rate decreased over time (Start 1.58 ± 0.11 Hz, Middle 1.47 ± 0.1 Hz, End 1.37 ± 0.1 Hz, n = 171, F = 5.17 p=0.0065, Figure 8A–C), and that the distribution of the lap-by-lap correlation was shifted towards a decrease in activity (n = 171, p=0.0093, Figure 8D). This effect is compatible with decreased intrinsic excitability. The in-field firing rate, in contrast, increased across the session (Start 3.63 ± 0.19 Hz, Middle: 3.92 ± 0.21 Hz, End 4.19 ± 0.22 Hz, n = 171, F = 5.02, p=0.0071, Figure 8E) and there was a positive shift in the correlation distribution (p=0.048, n = 171, Figure 8F). These observations are consistent with synaptic potentiation within the place field (Bittner et al., 2015; Diamantaki et al., 2018; Mehta et al., 1997; Cohen et al., 2017). In the familiar condition we did not detect any change in the out-of-field firing rate (Start 1.71 ± 0.1 Hz, Middle: 1.62 ± 0.1 Hz, End 1.74 ± 0.11 Hz, n = 268, F = 1.53, p=0.22, Figure 8—figure supplement 1A), though there was a negative shift in the center of the correlation (p=0.012, n = 268, Figure 8—figure supplement 1B). The in-field firing rate also did not change over time (Start 5.3 ± 0.23 Hz, Middle: 5.34 ± 0.22 Hz, End 5.15 ± 0.22 Hz, n = 268, F = 0.87, p=0.42, Figure 8—figure supplement 1C) and there was no change in the firing rate correlation distribution (p=0.25, n = 268, Figure 8—figure supplement 1D). Overall, these results are consistent with the presence of an activity-dependent reduction in intrinsic excitability during exploration of a novel environment.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig8-v1.jpg)
+
+**Figure 8.:** (A) Firing rate map of one cell. Lighter colors indicate higher rate. (B) In-field and out-of-field firing rate by lap for the example cell. (C) Mean firing rates outside the place field across the session. (D) Distribution of the out-of-field firing rate correlations. (E) Mean in-field firing rates across the session. (F) Distribution of the in-field firing rate correlations. Box and whisker plots show median, 25-75th and 5-95th percentiles, n = 171
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/49915/elife-49915-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Mean firing rates outside the place field across the session. (B) Distribution of the out-of-field firing rate correlations. (C) Mean in-field firing rates across the session. (D) Distribution of the in-field firing rate correlations. Box and whisker plots show median, 25-75th and 5-95th percentiles, n = 268.
 
 ## Discussion
 
@@ -105,15 +133,53 @@ Fast, sensitive homeostatic plasticity of intrinsic excitability could potential
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD7288</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. No. 1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dendrotoxin K</td>
+      <td>Sigma Aldrich</td>
+      <td>D4183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-801</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. No. 0924</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 All experiments were approved by the Institut National de la Santé. et de la Recherche Médicale (INSERM) animal care and use committee and authorized by the Ministère de l’Education Nationale de l’Enseignement Superieur et de la Recherche (agreement number 692 02048.02), in accordance with the European community council directives (2010/63/UE).
 
-## Surgery and anesthesia
+### Surgery and anesthesia
 
 Male Wistar rats (P25-P35, Charles River) were anesthetized with a combination of fentanyl (7.5 µg/Kg), medetomidine (225 µg/Kg), midazolam (6 mg/Kg). Maintenance doses of one third the initial dose were given every 45 min. The surface of the skull was cleaned and covered with a thin layer of cyanoacrylate glue, and a headplate attached with dental cement. The craniotomies were drilled at −3.5 mm dorsoventral and 2.5 mm lateral from bregma, and were approximately 0.5 mm in diameter. To allow access with the patch pipettes, the dura was dried and a small incision was made using a 26G needle. The ground electrode was placed underneath the skin at the back of the neck and sealed with Kwik-Cast (World Precision Instruments).
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
 Whole-cell patch-clamp recordings were obtained from CA1 pyramidal cells. Before patching we located CA1 using a low-resistance glass electrode filled with ringer solution (consisting of, in mM: 135 NaCl, 5.4 KCl, 1 MgCl2, 1.8 CaCl2 and 5 HEPES, pH 7.3 with NaOH). This was lowered through the cortex until ripples and bursting activity characteristic of CA1 could be detected in the LFP. Typically this was around 2100 µm deep. Patch electrodes (5-10MOhm) were pulled from borosilicate glass (Harvard Apparatus) and backfilled with an intracellular solution consisting of (in mM): 135 K-Gluconate, 4 KCl, 10 HEPES, 2 Mg-ATP, 0.4 GTP, plus 0.2% biocytin. The pH was adjusted to 7.2 with KOH. To prevent the pipette from clogging high pressure (around 800mbar) was applied while it was slowly lowered to the target depth, about 50 µm above the pyramidal cell layer. Once there the pressure was immediately lowered to between 25 and 35mbar. Before searching for cells the craniotomy was filled with 2% agar solution and the pipette capacitance was compensated. After breaking in we allowed 10 min for the cells to stabilize before starting the protocol.
 
@@ -123,15 +189,15 @@ Each TBS series consisted of 10 EPSC-like waveforms delivered at 100 Hz, repeate
 
 Data were acquired using a NPI ELC-3XS amplifier (NPI Electronics) and digitized with an LIH-1600 (HEKA Electronik). Acquisition protocols were implemented in Patch Master software (HEKA Electronik). Output signals were passed through a digidata 1440A (Molecular Devices) and recorded with axoscope (Molecular Devices). The current signal was filtered with a 50 Hz notch filter (Quest Scientific).
 
-## Histology
+### Histology
 
 After recording the rats were transcardially perfused with 4% PFA. The brains were then left in 4% PFA overnight at 4°C, before washing and storing at 4°C in PBS. To stain for biocytin 50–100 µm thick slices were incubated in PBS containing 1:1000 streptavidin-alexa 594 (Invitrogen) or streptavidin-cyanine 3 (Jackson Immunoresearch), 0.3% triton X-100% and 2% normal goat serum for 48–72 hr at 4°C, and agitated throughout. Slices were then washed in PBS three times for 10 min each at 4°C and under agitation. Images were acquired under a confocal microscope (SP5X, Leica) with a 40x objective and cells were reconstructed in Neurolucida (MBF Bioscience). In total we recovered 45/56 cells (TBS: 12/16, Control: 4/11, ZD: 6/6, MK: 7/7, BAPTA: 7/7, DTX-K: 9/9).
 
-## Reagents and drugs
+### Reagents and drugs
 
 All reagents and DTX-K were obtained from Sigma-Aldrich. The drugs ZD7288 and MK-801 were obtained from Tocris Biosciences. Fentanyl (Fentadon, Dechra) and medetomidine (Domitor, Orion Pharma) were obtained from Centravet, and midazolam was obtained from Accord Healthcare France.
 
-## Data analysis
+### Data analysis
 
 Data were analyzed using clampfit (Molecular devices), Matlab (Mathworks), Statistica (Tibco) and Excel (Microsoft). Only cells with an initial Vm < −55 mV, Rs <100 MOhms and spike amplitude >40 mV, and which were stable up to completion of the 20 min post-TBS test protocol were included in the analysis.
 

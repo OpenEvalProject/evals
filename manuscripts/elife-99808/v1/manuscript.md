@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01an3r305 Department of Mathematics, University of Pittsburgh Pittsburgh United States
-2. https://ror.org/024mw5h28 Department of Neurobiology, University of Chicago Chicago United States
-3. https://ror.org/024mw5h28 Grossman Center for Quantitative Biology and Human Behavior, University of Chicago Chicago United States
-4. https://ror.org/01an3r305 Department of Neuroscience, University of Pittsburgh Pittsburgh United States
-5. https://ror.org/024mw5h28 Department of Statistics, University of Chicago Chicago United States
+1. Department of Mathematics, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+2. Department of Neurobiology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+3. Grossman Center for Quantitative Biology and Human Behavior, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+4. Department of Neuroscience, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+5. Department of Statistics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -35,99 +35,127 @@ We use previously developed multi-interneuron cortical circuit models (Litwin-Ku
 
 ## Results
 
-## The inhibitory and disinhibitory pathways of the E – PV – SOM circuit
+### The inhibitory and disinhibitory pathways of the E – PV – SOM circuit
 
 There is strong in vivo evidence that SOM interneurons play a critical role in the modulation of cortical response (Urban-Ciecko and Barth, 2016; Yavorska and Wehr, 2016). However, the complex wiring between excitatory and inhibitory neurons (Tremblay et al., 2016; Pfeffer et al., 2013; Jiang et al., 2015; Campagnola et al., 2022) presents a challenge when trying to expose the specific mechanisms by which SOM neurons modulate cortical response. Two distinct inhibitory circuit pathways are often considered when disentangling the impact of SOM inhibition on excitatory neuron (E) response: an inhibitory SOM → E pathway or a disinhibitory SOM → PV → E pathway.
 
 Experimental studies find different, at first glance contradicting, effects of SOM neurons on E. In one line of study, SOM neuron activity seems to directly inhibit E neurons. Increased SOM activity resulted in decreased activity in E neurons in studies of layer 2/3 mouse visual cortex (Adesnik et al., 2012; Adesnik, 2017). Similarly, decreased SOM activity resulted in increased E neuron activity in the piriform cortex (Canto-Bustos et al., 2022), and other studies (Wang and Yang, 2018). In another line of study, changes in E activity following SOM perturbation seems to follow from disinhibitory pathways. For example, silencing layer 4 SOM neurons in mouse somatosensory cortex resulted in decreased activity of E neurons (Xu et al., 2013). Taken together, these two lines of studies seem in opposition to one another, with SOM neuron activity either suppressing or increasing E activity. This response dichotomy prompted us to consider what physiological and circuit properties of the E – PV – SOM circuit are critical determinants of whether an increase in SOM neuron activity results in an increase or a decrease in E neuron response.
 
-An answer to this question requires consideration of the full recurrent connectivity within the E – PV – SOM neuron circuit, as opposed to analysis restricted to just the SOM → E and SOM → PV → E sub motifs within the circuit. We set up a recurrent network where we model the firing rates of E, PV, and SOM neurons (Figure 1A; see Methods), as has been done by similar studies of the E – PV – SOM cortical circuit (Litwin-Kumar et al., 2016; Kuchibhotla et al., 2017; Garcia del Molino et al., 2017; Mahrach et al., 2020; Veit et al., 2023; Palmigiano et al., 2023; Waitzmann et al., 2024; Kumar et al., 2023). The key factors differentiating PV and SOM neurons in our model are that PV neurons inhibit other PV neurons, while SOM neurons do not, and that PV neurons receive external (sensory) input while SOM neurons receive modulatory input. Using our model we ask how a modulation of the SOM neuron activity (via δISmod) results in a modulation of E neuron activity (δrEmod). Examples of such modulation includes suppressed vasoactive intestinal-peptide (VIP) inhibition onto SOM neurons (Pi et al., 2013), activation of pyramidal cells located outside the circuit yet preferentially projecting to SOM neurons (Adesnik et al., 2012), and direct cholinergic modulation of SOM neurons (Kuchibhotla et al., 2017; Urban-Ciecko and Barth, 2016).
+An answer to this question requires consideration of the full recurrent connectivity within the E – PV – SOM neuron circuit, as opposed to analysis restricted to just the SOM → E and SOM → PV → E sub motifs within the circuit. We set up a recurrent network where we model the firing rates of E, PV, and SOM neurons (Figure 1A; see Methods), as has been done by similar studies of the E – PV – SOM cortical circuit (Litwin-Kumar et al., 2016; Kuchibhotla et al., 2017; Garcia del Molino et al., 2017; Mahrach et al., 2020; Veit et al., 2023; Palmigiano et al., 2023; Waitzmann et al., 2024; Kumar et al., 2023). The key factors differentiating PV and SOM neurons in our model are that PV neurons inhibit other PV neurons, while SOM neurons do not, and that PV neurons receive external (sensory) input while SOM neurons receive modulatory input. Using our model we ask how a modulation of the SOM neuron activity (via $\deltaI_{S}^{mod}$) results in a modulation of E neuron activity ($\deltar_{E}^{mod}$). Examples of such modulation includes suppressed vasoactive intestinal-peptide (VIP) inhibition onto SOM neurons (Pi et al., 2013), activation of pyramidal cells located outside the circuit yet preferentially projecting to SOM neurons (Adesnik et al., 2012), and direct cholinergic modulation of SOM neurons (Kuchibhotla et al., 2017; Urban-Ciecko and Barth, 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig1-v1.jpg)
 
-**Figure 1.:** (A) Sketch of the full E – PV – SOM network model. A positive or negative modulatory input is applied to the SOM neurons. (B) Transfer function (top) and population gain  (bottom) for neuron population bX (see X={E,P,S}Equation 4). (C) Top: Relation between modulation of input to the SOM population  and changes in E rates δISmod when summing over all possible paths (see δrEmodEquation 10). Bottom: After summing over all paths. Sketches visualize the tradeoff between the inhibitory and disinhibitory pathways (see Equation 15). (D) Positive SOM modulation at 0.05 s (gray dashed line) decrease (left, ) or increase (right, δrEmod<0) the E rate δrEmod>0 (red line). Case 1: Add connection of SOM → E or SOM → PV population. Case 2: Change strength of self-inhibition of PV population. Case 3: Change the rate of PV neurons.rE
+**Figure 1.:** (A) Sketch of the full E – PV – SOM network model. A positive or negative modulatory input is applied to the SOM neurons. (B) Transfer function (top) and population gain $b_{X}$ (bottom) for neuron population $X={E,P,S}$ (see Equation 4). (C) Top: Relation between modulation of input to the SOM population $\deltaI_{S}^{mod}$ and changes in E rates $\deltar_{E}^{mod}$ when summing over all possible paths (see Equation 10). Bottom: After summing over all paths. Sketches visualize the tradeoff between the inhibitory and disinhibitory pathways (see Equation 15). (D) Positive SOM modulation at 0.05 s (gray dashed line) decrease (left, $\deltar_{E}^{mod}<0$) or increase (right, $\deltar_{E}^{mod}>0$) the E rate $r_{E}$ (red line). Case 1: Add connection of SOM → E or SOM → PV population. Case 2: Change strength of self-inhibition of PV population. Case 3: Change the rate of PV neurons.
 
-The model response is nonlinear, with neurons in each population having an expansive nonlinear transfer function (Figure 1B; top, see Equation 4), consistent with many experimental reports (Priebe and Ferster, 2008; Romero-Sosa et al., 2021). To understand which circuit parameters can influence the sign of E rate changes, we apply a widely used concept: if the modulation of SOM inputs (δISmod) is sufficiently small we can linearize around a given dynamical state of the model. At the neuronal level, this linearization defines a cellular gain bX(X∈{E ,P ,S}) from the transfer function (Figure 1B; bottom). At the network level the linearization involves the entire circuit (Garcia del Molino et al., 2017; Litwin-Kumar et al., 2016; Palmigiano et al., 2023) and yields:(1)δrEmod=LESδISmod,
+The model response is nonlinear, with neurons in each population having an expansive nonlinear transfer function (Figure 1B; top, see Equation 4), consistent with many experimental reports (Priebe and Ferster, 2008; Romero-Sosa et al., 2021). To understand which circuit parameters can influence the sign of E rate changes, we apply a widely used concept: if the modulation of SOM inputs ($\deltaI_{S}^{mod}$) is sufficiently small we can linearize around a given dynamical state of the model. At the neuronal level, this linearization defines a cellular gain $b_{X}(X\in{E ,P ,S})$ from the transfer function (Figure 1B; bottom). At the network level the linearization involves the entire circuit (Garcia del Molino et al., 2017; Litwin-Kumar et al., 2016; Palmigiano et al., 2023) and yields:
 
-where LE,S  is the transfer coefficient between SOM and E neuron modulations. In principle, LE,S depends on the synaptic weight matrix W in which each element wX,Y  defines the coupling between neuron classes (with X,Y={E,P,S}), as well as the cellular gain bX  of all neuron classes (see Methods). In principle, LE,S depends on twelve parameters: the nine synaptic couplings within the E – PV – SOM circuit and the three cellular gains. This large parameter space convolutes any analysis of modulations; our study provides a framework to navigate this complexity.
+$$
+\deltar_{E}^{mod}=L_{ES}\deltaI_{S}^{mod},
+$$
 
-To begin, it is instructive to express the effect of SOM on E based on all possible synaptic pathways. Intuitively, the effect of SOM modulation on E rates can be understood by an infinite sum of synaptic pathways with increasing order of synaptic connections (Figure 1C; top). Hence, the changes in SOM rate affect E rates via the monosynaptic pathway SOM → E, disynaptic pathways SOM → PV and PV → E or SOM → E and E → E, trisynaptic pathways, etc. Fortunately, the sum can be simplified so that just two network motifs determine the sign of changes in E rates (Figure 1C; bottom, see Equation 15). These motifs reflect both the disinhibitory component of the network (the SOM → PV → E and PV → PV connections) and the inhibitory component (SOM → E connections). Whether the full motif is biased towards the inhibitory or disinhibitory pathway depends on the connection strengths wEP, wPS, wES, and wPP. Furthermore, since the PV gain depends on the operating point of the network, the tradeoff between the two pathways can be controlled by changes in PV rates. In particular, since PV gain increases with PV rates (Figure 1B), then LES can transition from effectively inhibitory for low PV activity (small bP) to effectively disinhibitory for higher PV activity (large bP). We remark that other connections and the activity of the E and SOM neurons only contribute to the amplitude but not the sign of the effective pathway. This is because these other components are part of the prefactor ψES, which is always positive in the case of a stable circuit (see Methods, Equation 15).
+where $L_{E,S}$  is the transfer coefficient between SOM and E neuron modulations. In principle, $L_{E,S}$ depends on the synaptic weight matrix $W$ in which each element $w_{X,Y}$  defines the coupling between neuron classes (with $X,Y={E,P,S}$), as well as the cellular gain $b_{X}$  of all neuron classes (see Methods). In principle, $L_{E,S}$ depends on twelve parameters: the nine synaptic couplings within the E – PV – SOM circuit and the three cellular gains. This large parameter space convolutes any analysis of modulations; our study provides a framework to navigate this complexity.
 
-Therefore, for a certain choice of connectivity and input parameters, SOM modulation yields a decrease in E rates (δrEmod<0), as reported from neuronal recordings in layers 2 and 3 of visual cortex of mice (Adesnik et al., 2012; Adesnik, 2017; Figure 1D; left). A different choice of parameters yields an increase in E rates (δrEmod>0), consistent with recordings from layer 4 neurons from the somatosensory cortex of mice (Xu et al., 2013; Figure 1D; right). Our analysis of how synaptic pathways determine the sign of δrEmod (Figure 1C) provides a framework to discuss the possible mechanistic reasons for this discrepancy. Specifically, this change in E rate for the same SOM modulation can in principle follow from differences in: direct inhibition of E via SOM versus disinhibition of E via SOM (Figure 1D; Case 1), strong versus weak self-inhibition of PV (Figure 1D; Case 2), or low versus high firing rates of PV (Figure 1D; Case 3). Hence, differential modulations in E rate response might follow from any of those circuit or cellular factors.
+To begin, it is instructive to express the effect of SOM on E based on all possible synaptic pathways. Intuitively, the effect of SOM modulation on E rates can be understood by an infinite sum of synaptic pathways with increasing order of synaptic connections (Figure 1C; top). Hence, the changes in SOM rate affect E rates via the monosynaptic pathway SOM → E, disynaptic pathways SOM → PV and PV → E or SOM → E and E → E, trisynaptic pathways, etc. Fortunately, the sum can be simplified so that just two network motifs determine the sign of changes in E rates (Figure 1C; bottom, see Equation 15). These motifs reflect both the disinhibitory component of the network (the SOM → PV → E and PV → PV connections) and the inhibitory component (SOM → E connections). Whether the full motif is biased towards the inhibitory or disinhibitory pathway depends on the connection strengths $w_{EP}$, $w_{PS}$, $w_{ES}$, and $w_{PP}$. Furthermore, since the PV gain depends on the operating point of the network, the tradeoff between the two pathways can be controlled by changes in PV rates. In particular, since PV gain increases with PV rates (Figure 1B), then $L_{ES}$ can transition from effectively inhibitory for low PV activity (small $b_{P}$) to effectively disinhibitory for higher PV activity (large $b_{P}$). We remark that other connections and the activity of the E and SOM neurons only contribute to the amplitude but not the sign of the effective pathway. This is because these other components are part of the prefactor $ψ_{ES}$, which is always positive in the case of a stable circuit (see Methods, Equation 15).
+
+Therefore, for a certain choice of connectivity and input parameters, SOM modulation yields a decrease in E rates ($\deltar_{E}^{mod}<0$), as reported from neuronal recordings in layers 2 and 3 of visual cortex of mice (Adesnik et al., 2012; Adesnik, 2017; Figure 1D; left). A different choice of parameters yields an increase in E rates ($\deltar_{E}^{mod}>0$), consistent with recordings from layer 4 neurons from the somatosensory cortex of mice (Xu et al., 2013; Figure 1D; right). Our analysis of how synaptic pathways determine the sign of $\deltar_{E}^{mod}$ (Figure 1C) provides a framework to discuss the possible mechanistic reasons for this discrepancy. Specifically, this change in E rate for the same SOM modulation can in principle follow from differences in: direct inhibition of E via SOM versus disinhibition of E via SOM (Figure 1D; Case 1), strong versus weak self-inhibition of PV (Figure 1D; Case 2), or low versus high firing rates of PV (Figure 1D; Case 3). Hence, differential modulations in E rate response might follow from any of those circuit or cellular factors.
 
 In sum, while the full E – PV – SOM recurrent circuit invokes a multitude of polysynaptic pathways, a tradeoff between the inhibitory and disinhibitory pathway does indeed determine the modulatory influence of SOM neurons upon E neuron activity. Having now identified the central role of these two pathways, in the following sections we investigate how they control network stability and the stimulus – response gain of E neurons.
 
-## Gain modulation and stability measures
+### Gain modulation and stability measures
 
 In the following, we ask how SOM modulation can affect stimulus representation. In most primary sensory cortices, sensory stimulus information arrives at E and PV neurons via feedforward connections (Tremblay et al., 2016). Therefore, we model stimulus as a feedforward input onto E and PV populations (Figure 2A; left). An important feature of cortical computation is gain modulation, which refers to changes in the sensitivity of neuron activity to changes in a driving input (Silver, 2010; Ferguson and Cardin, 2020; Williford and Maunsell, 2006). Many experimental studies suggest that inhibitory neurons play an important role in gain modulation (Ferguson and Cardin, 2020; Isaacson and Scanziani, 2011). In the following, we analyze how a modulation via SOM neurons can affect the stimulus – response gain of the E population.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig2-v1.jpg)
 
-**Figure 2.:** (A) Left: Sketch of a disinhibitory network with stimulus input onto E and PV populations and positive SOM modulation. Right: Numerical E (red), PV (blue), and SOM (green) rate dynamics of the case with positive SOM modulation at 0.05 s (solid line), and the case without modulation (dashed line). Stimulus presentation at 0.35 s. Symbols indicate calculated values based on Equation 1 and Equation 2. (B) Measures to quantify the effect of SOM modulation: (i) Effect of modulation on E () and PV rates, (δrEmodii) calculation of network gain with () and without (gEmod) SOM modulation, gE, (Δg=gEmod−gE=0.12iii) calculation of stability measure with () and without (λmaxmod) SOM modulation, λmax. (Δλ=λmax−λmaxmod=−0.03C) Same as A for a negative SOM modulation in a disinhibitory circuit with feedback PV → SOM. (D) Same as B for a negative SOM modulation with (ii) , and (Δg=0.35iii)  (only maximum eigenvalues shown).Δλ=0.04
+**Figure 2.:** (A) Left: Sketch of a disinhibitory network with stimulus input onto E and PV populations and positive SOM modulation. Right: Numerical E (red), PV (blue), and SOM (green) rate dynamics of the case with positive SOM modulation at 0.05 s (solid line), and the case without modulation (dashed line). Stimulus presentation at 0.35 s. Symbols indicate calculated values based on Equation 1 and Equation 2. (B) Measures to quantify the effect of SOM modulation: (i) Effect of modulation on E ($\deltar_{E}^{mod}$) and PV rates, (ii) calculation of network gain with ($g_{E}^{mod}$) and without ($g_{E}$) SOM modulation, $Δg=g_{E}^{mod}−g_{E}=0.12$, (iii) calculation of stability measure with ($\lambda_{max}^{mod}$) and without ($\lambda_{max}$) SOM modulation, $Δ\lambda=\lambda_{max}−\lambda_{max}^{mod}=−0.03$. (C) Same as A for a negative SOM modulation in a disinhibitory circuit with feedback PV → SOM. (D) Same as B for a negative SOM modulation with (ii) $Δg=0.35$, and (iii) $Δ\lambda=0.04$ (only maximum eigenvalues shown).
 
-To motivate our analysis we compare the influence of a stimulus with and without SOM modulation in a disinhibitory pathway (Figure 2A). Since the linearization framework outlined above allows us to calculate the effect of a SOM modulation on E rates (Figure 2Bi; δrEmod), we can further ask how a SOM modulation affects the gain of the network. We define the network gain as the rate change of the E population in response to a change in the stimulus (δIstim), assuming that stimuli target E and PV populations.(2)gE=LEEδIEstim+LEPδIPstim=ψg(((bP−1+wPP)−bSwPSwSP)δIEstim−(wEP−bSwESwSP)δIPstim).
+To motivate our analysis we compare the influence of a stimulus with and without SOM modulation in a disinhibitory pathway (Figure 2A). Since the linearization framework outlined above allows us to calculate the effect of a SOM modulation on E rates (Figure 2Bi; $\deltar_{E}^{mod}$), we can further ask how a SOM modulation affects the gain of the network. We define the network gain as the rate change of the E population in response to a change in the stimulus ($\deltaI^{stim}$), assuming that stimuli target E and PV populations.
 
-Here, network gain measures the sensitivity of E rates owing to the activity of the full recurrent circuit in response to a change in input. This is opposed to the cellular gain bE which measures the sensitivity of E rates to a change in the input current to E neurons (Figure 1B; top). The expression in Equation 2 allows us to calculate the difference in network gain Δg=gEmod−gE with and without SOM modulation when a stimulus is presented (Figure 2A and Bii). Since the cellular gains bE and bP depend upon the operating point about which the circuit dynamics are linearized, the tradeoff between amplification and cancellation can be controlled through an external modulation (e.g. via SOM) that shifts this point.
+$$
+g_{E}=L_{EE}\deltaI_{E}^{stim}+L_{EP}\deltaI_{P}^{stim}=ψ_{g}(((b_{P}^{−1}+w_{PP})−b_{S}w_{PS}w_{SP})\deltaI_{E}^{stim}−(w_{EP}−b_{S}w_{ES}w_{SP})\deltaI_{P}^{stim}).
+$$
 
-In addition to network gain, we will also measure how SOM modulation affects the stability of the network. Unstable firing rate dynamics are typified by runaway activity when recurrent excitation is not stabilized by recurrent inhibition (Ozeki et al., 2009; van Vreeswijk and Sompolinsky, 1996; Wilson and Cowan, 1972; Griffith, 1963). Stability in a dynamical system is quantified by the real parts of the eigenvalues of the Jacobian matrix. If the real parts of all eigenvalues are less than zero, the system is stable. To quantify stability, we measure the distance of the largest real eigenvalue (i.e. least negative) to zero (Figure 2Biii; Methods). To compare stability for the modulated versus the unmodulated case, we subtract the largest real eigenvalues Δλ=λmax−λmaxmod. Therefore, if Δλ>0 stability increases via SOM modulation, and if Δλ<0 stability decreases. In the example of purely disinhibitory influence of SOM modulation, network gain is increased (Figure 2Bii; Δg=0.12) and stability slightly decreases (Figure 2Biii; Δλ=−0.03). Hence, in this network example increase in network gain is accompanied by decreases in network stability. By contrast, in a network with feedback PV → SOM neurons (Figure 2C), a negative modulation of SOM neurons leads to decreases in E and PV rates (Figure 2Di) while increasing both, network gain (Figure 2Dii; Δg=0.35) and stability (Figure 2Diii; Δλ=0.04).
+Here, network gain measures the sensitivity of E rates owing to the activity of the full recurrent circuit in response to a change in input. This is opposed to the cellular gain $b_{E}$ which measures the sensitivity of E rates to a change in the input current to E neurons (Figure 1B; top). The expression in Equation 2 allows us to calculate the difference in network gain $Δg=g_{E}^{mod}−g_{E}$ with and without SOM modulation when a stimulus is presented (Figure 2A and Bii). Since the cellular gains $b_{E}$ and $b_{P}$ depend upon the operating point about which the circuit dynamics are linearized, the tradeoff between amplification and cancellation can be controlled through an external modulation (e.g. via SOM) that shifts this point.
+
+In addition to network gain, we will also measure how SOM modulation affects the stability of the network. Unstable firing rate dynamics are typified by runaway activity when recurrent excitation is not stabilized by recurrent inhibition (Ozeki et al., 2009; van Vreeswijk and Sompolinsky, 1996; Wilson and Cowan, 1972; Griffith, 1963). Stability in a dynamical system is quantified by the real parts of the eigenvalues of the Jacobian matrix. If the real parts of all eigenvalues are less than zero, the system is stable. To quantify stability, we measure the distance of the largest real eigenvalue (i.e. least negative) to zero (Figure 2Biii; Methods). To compare stability for the modulated versus the unmodulated case, we subtract the largest real eigenvalues $Δ\lambda=\lambda_{max}−\lambda_{max}^{mod}$. Therefore, if $Δ\lambda>0$ stability increases via SOM modulation, and if $Δ\lambda<0$ stability decreases. In the example of purely disinhibitory influence of SOM modulation, network gain is increased (Figure 2Bii; $Δg=0.12$) and stability slightly decreases (Figure 2Biii; $Δ\lambda=−0.03$). Hence, in this network example increase in network gain is accompanied by decreases in network stability. By contrast, in a network with feedback PV → SOM neurons (Figure 2C), a negative modulation of SOM neurons leads to decreases in E and PV rates (Figure 2Di) while increasing both, network gain (Figure 2Dii; $Δg=0.35$) and stability (Figure 2Diii; $Δ\lambda=0.04$).
 
 Therefore, the direction and magnitude of gain and stability changes depend on the connectivity details of the inhibitory circuit. In the following sections, we dissect how firing rates and synaptic weights within the E – PV – SOM circuit contribute to modulations of network gain and stability.
 
-## Gain and stability controlled by feedforward SOM inhibition
+### Gain and stability controlled by feedforward SOM inhibition
 
-We start by considering a network without connections between the E – PV network and the SOM population (Figure 3i). To compare network gain across different network states we consider a grid of possible firing rates (rE,rP). A given network state is found by determining the external input required to position the network at that rate (see Methods). For each E – PV rate pair, we linearize the network dynamics (i.e. determine the cellular gains bX) and compute the network gain via Equation 2 (Figure 3ii). It is immediately apparent that network gain is largest for high E rates and low PV rates. Gain modulation is most effective when it connects two network states that are orthogonal to a line of constant gain (Figure 3ii; gray lines). Thus, for most network states the highest gain increase occurs for modulations that increase E neuron rates while simultaneously decreasing PV neuron rates. In a similar fashion, we consider how stability depends on network activity (rE,rP) (Figure 3iii). Network dynamics are most stable for large PV and low E neuron rates. Discontinuities in the lines of constant stability follow from discontinuities in the dependence of eigenvalues on PV rate (Figure 3iv; see Methods). In total, we have an inverse relationship between these two network features, where high gain is accompanied by low stability and vice-versa (compare heatmaps Figure 3ii and iii). This ‘tangling’ of gain and stability places a constraint on network modulations, ultimately limiting the possibility of high gain responses.
+We start by considering a network without connections between the E – PV network and the SOM population (Figure 3i). To compare network gain across different network states we consider a grid of possible firing rates $(r_{E},r_{P})$. A given network state is found by determining the external input required to position the network at that rate (see Methods). For each E – PV rate pair, we linearize the network dynamics (i.e. determine the cellular gains $b_{X}$) and compute the network gain via Equation 2 (Figure 3ii). It is immediately apparent that network gain is largest for high E rates and low PV rates. Gain modulation is most effective when it connects two network states that are orthogonal to a line of constant gain (Figure 3ii; gray lines). Thus, for most network states the highest gain increase occurs for modulations that increase E neuron rates while simultaneously decreasing PV neuron rates. In a similar fashion, we consider how stability depends on network activity $(r_{E},r_{P})$ (Figure 3iii). Network dynamics are most stable for large PV and low E neuron rates. Discontinuities in the lines of constant stability follow from discontinuities in the dependence of eigenvalues on PV rate (Figure 3iv; see Methods). In total, we have an inverse relationship between these two network features, where high gain is accompanied by low stability and vice-versa (compare heatmaps Figure 3ii and iii). This ‘tangling’ of gain and stability places a constraint on network modulations, ultimately limiting the possibility of high gain responses.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig3-v1.jpg)
 
-**Figure 3.:** Network sketch (i), firing rate grid () in the form of a heatmap for normalized network gain rE,rP (gEii) and normalized stability   (λmaxiii), and the eigenvalues for changing PV rates  (rPiv) for a network without connections between the E – PV network and somatostatin (SOM). Every value in the heatmap is a fixed point of the population rate dynamics. The color denotes normalized network gain (Equation 2) or normalized stability (Figure 2Biii). Lines of constant network gain and stability are shown in gray (from dark to light gray in steps of 0.2). The black line marks where the rate dynamics become unstable. The black dashed line separates inhibition stabilized network (ISN) from non-ISN regime. Blue line in iii indicates the parameters for which the eigenvalues are shown in (iv).
+**Figure 3.:** Network sketch (i), firing rate grid ($r_{E},r_{P}$) in the form of a heatmap for normalized network gain $g_{E}$ (ii) and normalized stability $\lambda_{max}$  (iii), and the eigenvalues for changing PV rates $r_{P}$ (iv) for a network without connections between the E – PV network and somatostatin (SOM). Every value in the heatmap is a fixed point of the population rate dynamics. The color denotes normalized network gain (Equation 2) or normalized stability (Figure 2Biii). Lines of constant network gain and stability are shown in gray (from dark to light gray in steps of 0.2). The black line marks where the rate dynamics become unstable. The black dashed line separates inhibition stabilized network (ISN) from non-ISN regime. Blue line in iii indicates the parameters for which the eigenvalues are shown in (iv).
 
-We next expand our network and include SOM neurons in order to consider how their modulation can affect network gain and stability. For now, we neglect feedback from E or PV populations onto SOM. Consequently, SOM neuron modulation can only affect the stability and gain of E neurons by changing the dynamic state of the E – PV subcircuit. Positive or negative input modulations to SOM neurons increase or decrease their steady-state firing rate, which in turn affects the steady-state rates of the E and PV neurons. To build intuition we first consider only the SOM → E connection and set the SOM → PV connection to zero, thereby isolating the inhibitory pathway (Figure 4Ai). A specific modulation can be visualized as a vector (ΔrE,ΔrP) in the firing rate grid (Figure 4Aii). The direction of the vector indicates where the E – PV network state would move to if SOM neurons are weakly positively modulated. We remark that the modulation (ΔrE,ΔrP) not only depends on the feedforward SOM projections to E and PV neurons, but also on the dynamical regime (i.e. linearization) of the unmodulated state (rE,rP). Applying a positive modulation to SOM neurons causes the E and PV rates to decrease (Figure 4Aii; arrows). We quantify the effect of all the possible modulations in the (rE,rP) grid on network gain and stability by calculating the difference in network gain (Δg) and stability (Δλ) before and after SOM modulation. For almost all cases, network gain and stability have an inverse relationship to each other. For a positive SOM modulation, network gain decreases while stability increases (Figure 4Aiii; black dots in the Δλ>0 and Δg<0 quadrant). Similarly, for a negative SOM modulation, network gain mostly increases while stability decreases (Figure 4Aiii; gray dots in the Δλ<0 and Δg>0 quadrant).
+We next expand our network and include SOM neurons in order to consider how their modulation can affect network gain and stability. For now, we neglect feedback from E or PV populations onto SOM. Consequently, SOM neuron modulation can only affect the stability and gain of E neurons by changing the dynamic state of the E – PV subcircuit. Positive or negative input modulations to SOM neurons increase or decrease their steady-state firing rate, which in turn affects the steady-state rates of the E and PV neurons. To build intuition we first consider only the SOM → E connection and set the SOM → PV connection to zero, thereby isolating the inhibitory pathway (Figure 4Ai). A specific modulation can be visualized as a vector $(Δr_{E},Δr_{P})$ in the firing rate grid (Figure 4Aii). The direction of the vector indicates where the E – PV network state would move to if SOM neurons are weakly positively modulated. We remark that the modulation $(Δr_{E},Δr_{P})$ not only depends on the feedforward SOM projections to E and PV neurons, but also on the dynamical regime (i.e. linearization) of the unmodulated state $(r_{E},r_{P})$. Applying a positive modulation to SOM neurons causes the E and PV rates to decrease (Figure 4Aii; arrows). We quantify the effect of all the possible modulations in the $(r_{E},r_{P})$ grid on network gain and stability by calculating the difference in network gain ($Δg$) and stability ($Δ\lambda$) before and after SOM modulation. For almost all cases, network gain and stability have an inverse relationship to each other. For a positive SOM modulation, network gain decreases while stability increases (Figure 4Aiii; black dots in the $Δ\lambda>0$ and $Δg<0$ quadrant). Similarly, for a negative SOM modulation, network gain mostly increases while stability decreases (Figure 4Aiii; gray dots in the $Δ\lambda<0$ and $Δg>0$ quadrant).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig4-v1.jpg)
 
-**Figure 4.:** (A) Network sketch (i), firing rate grid () in the form of a heatmap for normalized network gain and stability (rE,rPii), and modulation measures  Gain (Δ) and Δg Stability (Δ) (iii), for a network with SOM → E connection (inhibitory pathway). The arrows indicate in which direction a fixed point of the rate dynamics is changed by a positive SOM modulation. All arrow lengths are set to the same value. The modulation measure quantifies the change in stability and gain from an initial condition in the (Δλ) grid for a positive (black dots) and negative (gray dots) SOM modulation. Q1-Q4 indicates the percent of data points in the respective quadrant (only rE,rP and |Δg|>0.1 are considered). (|Δλ|>0.01B) Same as A for a network with SOM → PV connection (disinhibitory pathway). The purple dot in Biii is the case of Figure 2A. (C) Same as A for a network with SOM → E and SOM → PV connections. SOM rate  Hz in all panels.rS=2
+**Figure 4.:** (A) Network sketch (i), firing rate grid ($r_{E},r_{P}$) in the form of a heatmap for normalized network gain and stability (ii), and modulation measures $Δ$ Gain ($Δg$) and $Δ$ Stability ($Δ\lambda$) (iii), for a network with SOM → E connection (inhibitory pathway). The arrows indicate in which direction a fixed point of the rate dynamics is changed by a positive SOM modulation. All arrow lengths are set to the same value. The modulation measure quantifies the change in stability and gain from an initial condition in the ($r_{E},r_{P}$) grid for a positive (black dots) and negative (gray dots) SOM modulation. Q1-Q4 indicates the percent of data points in the respective quadrant (only $|Δg|>0.1$ and $|Δ\lambda|>0.01$ are considered). (B) Same as A for a network with SOM → PV connection (disinhibitory pathway). The purple dot in Biii is the case of Figure 2A. (C) Same as A for a network with SOM → E and SOM → PV connections. SOM rate $r_{S}=2$ Hz in all panels.
 
-We next consider only the SOM → PV connection and set SOM → E to zero, isolating the disinhibitory pathway (Figure 4Bi). If the unmodulated network state has low E rates then the modulation vector field shows a transition from decreases in PV rates to increases in PV rates. A network response where PV rates increase with a decrease in the inputs to PV population is often labeled a paradoxical effect (Ozeki et al., 2009; Tsodyks et al., 1998; Litwin-Kumar et al., 2016). Therefore, with a disinhibitory pathway we can get changes from non-paradoxical to paradoxical responses when switching from non-inhibition stabilized network (non-ISN) to an inhibition stabilized network (ISN) (Litwin-Kumar et al., 2016; Ozeki et al., 2009; Tsodyks et al., 1997), indicated by ΔrP<0 for low rE yet shifting to ΔrP>0 for larger rE (Figure 4Bii). Similar to the inhibitory pathway, network gain and stability are inversely related (Figure 4Biii). If we extend our analysis by including weak SOM → E connectivity (Figure 4Ci), the SOM → PV connection continues to dominate and maintains a mostly disinhibitory effect on E neurons for high rates (Figure 4Cii). The vector field changes so that the modulation now strongly increases gain but also shifts the circuit more directly into the unstable region while keeping the inverse relationship between gain and stability changes (Figure 4Ciii).
+We next consider only the SOM → PV connection and set SOM → E to zero, isolating the disinhibitory pathway (Figure 4Bi). If the unmodulated network state has low E rates then the modulation vector field shows a transition from decreases in PV rates to increases in PV rates. A network response where PV rates increase with a decrease in the inputs to PV population is often labeled a paradoxical effect (Ozeki et al., 2009; Tsodyks et al., 1998; Litwin-Kumar et al., 2016). Therefore, with a disinhibitory pathway we can get changes from non-paradoxical to paradoxical responses when switching from non-inhibition stabilized network (non-ISN) to an inhibition stabilized network (ISN) (Litwin-Kumar et al., 2016; Ozeki et al., 2009; Tsodyks et al., 1997), indicated by $Δr_{P}<0$ for low $r_{E}$ yet shifting to $Δr_{P}>0$ for larger $r_{E}$ (Figure 4Bii). Similar to the inhibitory pathway, network gain and stability are inversely related (Figure 4Biii). If we extend our analysis by including weak SOM → E connectivity (Figure 4Ci), the SOM → PV connection continues to dominate and maintains a mostly disinhibitory effect on E neurons for high rates (Figure 4Cii). The vector field changes so that the modulation now strongly increases gain but also shifts the circuit more directly into the unstable region while keeping the inverse relationship between gain and stability changes (Figure 4Ciii).
 
-In sum, our analysis shows that modulation of the E – PV circuit via feedforward SOM modulation results in an inverse relationship between network gain and stability. Hence, an increase in gain is accompanied by a decrease in stability and vice versa. Intuitively, the reason why the inverse relationship follows for inhibitory and disinhibitory pathways (and their mixture) is that the firing rate grid (rE,rP heatmap) does not depend on how the SOM neurons inhibit the E – PV circuit. Different SOM inputs only modify the direction of rate changes following SOM modulation (arrows). Since the underlying firing rate grid already has an inverse relationship, then any modulation of SOM neurons will in turn have an inverse relationship between network gain and stability. These results prompt the question: can a cortical circuit be modulated through inhibition to a higher gain regime without compromising network stability? In the next section, as indicated by the motivating example (Figure 2C), we show how feedback to SOM neurons can shift the E – PV – SOM circuit from a low to a high gain state while maintaining stability.
+In sum, our analysis shows that modulation of the E – PV circuit via feedforward SOM modulation results in an inverse relationship between network gain and stability. Hence, an increase in gain is accompanied by a decrease in stability and vice versa. Intuitively, the reason why the inverse relationship follows for inhibitory and disinhibitory pathways (and their mixture) is that the firing rate grid ($r_{E},r_{P}$ heatmap) does not depend on how the SOM neurons inhibit the E – PV circuit. Different SOM inputs only modify the direction of rate changes following SOM modulation (arrows). Since the underlying firing rate grid already has an inverse relationship, then any modulation of SOM neurons will in turn have an inverse relationship between network gain and stability. These results prompt the question: can a cortical circuit be modulated through inhibition to a higher gain regime without compromising network stability? In the next section, as indicated by the motivating example (Figure 2C), we show how feedback to SOM neurons can shift the E – PV – SOM circuit from a low to a high gain state while maintaining stability.
 
-## Recurrent inputs to SOM neurons allow modulations to increase both gain and stability
+### Recurrent inputs to SOM neurons allow modulations to increase both gain and stability
 
 Neglecting feedback connections to SOM in the E – PV – SOM circuit makes SOM activity simply an intermediate step in a feedforward modulation of the E – PV subcircuit. In this section, we consider how the E → SOM and PV → SOM interactions determine how an external modulation to SOM neurons affects E network gain and stability.
 
-We first remark that by adding feedback E connections onto SOM neurons, changes in SOM rates can now affect the underlying heatmaps in the (rE,rP) grid, meaning that high or low regions of network gain and stability in the space of E and PV rates depend on SOM connectivity and rates. This is because Equation 2 has a dependency on the SOM rates (rS) through the cellular gain (bS). In the case of an inhibitory pathway with feedback from E → SOM, SOM modulations can change gain and stability in the same direction (Figure 5). Dependent on the initial rates in the (rE,rP) grid, a positive SOM modulation can lead to an increase in both, network gain and stability (Figure 5Aiii,Biii,Ciii). The higher the SOM rates, the more likely it becomes for a positive modulation to result in a gain and stability increase. However, we note that the network gain changes with the highest amplitude are accompanied by decreases in stability. Similarly, in the example of a disinhibitory pathway with feedback from PV → SOM, SOM modulation can lead to changes of network gain and stability in the same direction (Figure 5—figure supplement 1). Here a negative SOM modulation can lead to increases in both, network gain and stability. Furthermore, we confirm that for both E to SOM feedback and PV to SOM feedback these results are robust for a large range of SOM firing rates (Figure 5—figure supplement 2).
+We first remark that by adding feedback E connections onto SOM neurons, changes in SOM rates can now affect the underlying heatmaps in the $(r_{E},r_{P})$ grid, meaning that high or low regions of network gain and stability in the space of E and PV rates depend on SOM connectivity and rates. This is because Equation 2 has a dependency on the SOM rates ($r_{S}$) through the cellular gain ($b_{S}$). In the case of an inhibitory pathway with feedback from E → SOM, SOM modulations can change gain and stability in the same direction (Figure 5). Dependent on the initial rates in the $(r_{E},r_{P})$ grid, a positive SOM modulation can lead to an increase in both, network gain and stability (Figure 5Aiii,Biii,Ciii). The higher the SOM rates, the more likely it becomes for a positive modulation to result in a gain and stability increase. However, we note that the network gain changes with the highest amplitude are accompanied by decreases in stability. Similarly, in the example of a disinhibitory pathway with feedback from PV → SOM, SOM modulation can lead to changes of network gain and stability in the same direction (Figure 5—figure supplement 1). Here a negative SOM modulation can lead to increases in both, network gain and stability. Furthermore, we confirm that for both E to SOM feedback and PV to SOM feedback these results are robust for a large range of SOM firing rates (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig5-v1.jpg)
+
+**Figure 5.:** Heatmaps and modulation measures as defined in Figures 3 and 4 for a network with an inhibitory pathway and E → SOM feedback. Left to right: Network sketch (i), normalized network gain ($g_{E}$) and stability ($\lambda_{max}$) (ii), and modulation measures $Δ$ Gain ($Δg$) and $Δ$ Stability ($Δ\lambda$) (iii). Top to bottom: increase of the SOM firing rate from $r_{S}=1$ Hz (A), to $r_{S}=2$ Hz (B), $r_{S}=3$ Hz (C). The arrows indicate in which direction a fixed point of the rate dynamics is changed by a positive SOM modulation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Same as Figure 5 for a network with a disinhibitory pathway and PV → SOM feedback ($w_{SP}$). Left to right: Network sketch (i), Network gain ($g_{E}$) and stability (λmax) (ii), and modulation measures Δ Gain (Δg) and Δ Stability (Δλ) (iii). Top to bottom: increase of the SOM firing rate from $r_{S}=1$ Hz (A), to $r_{S}=2$ Hz (B), $r_{S}=3$ Hz (C). The purple dot corresponds to the case in Figure 2C.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Percentage of data points in Q1 (black), Q2 (orange), Q3 (green), Q4 (blue) when changing the SOM firing rate $r_{S}$ for the case of excitatory neurons (E) to SOM feedback (compare to Figure 5). (B) Same as A, for the case of parvalbumin (PV) to SOM feedback (compare to Figure 5—figure supplement 1).
 
 In summary, adding a recurrent connection onto SOM neurons from the E (Figure 5) or PV (Figure 5—figure supplement 1) neurons allows network gain and stability to change in the same direction for a SOM modulation. This follows since recurrent connections affect the underlying rate grid (heatmaps). Here, a SOM modulation can shift the network state across the lines of constant network gain and stability in a way that increases both, network gain and stability. This ‘disentangling’ of the inverse relation between gain and stability allows SOM-mediated modulations to sample a broader range of responses.
 
-## Gain and stability in stochastically forced E – PV – SOM circuits
+### Gain and stability in stochastically forced E – PV – SOM circuits
 
-To confirm that our results do not depend on our approach of a linearization around a fixed point, we numerically simulate similar networks as shown above (Figure 2) in which the E and PV population receive slow varying, large amplitude noise (Figure 6A). This leads to noisy rate dynamics sampling a large subspace of the full firing rate grid (rE,rP) and thus any linearization would fail to describe the network response. In this stochastically forced network we explore how adding an SOM modulation or a stimulus affects this subspace (Figure 6B). To quantify stability without linearization, we assume that a network is more stable the lower the mean and variance of E rates. This is because very stable networks can better quench input fluctuations (Kanashiro et al., 2017; Hennequin et al., 2018). To quantify gain, we calculate the change in E rates when adding the stimulus, yet having identical noise realizations for stimulated and non-stimulated networks (Methods).
+To confirm that our results do not depend on our approach of a linearization around a fixed point, we numerically simulate similar networks as shown above (Figure 2) in which the E and PV population receive slow varying, large amplitude noise (Figure 6A). This leads to noisy rate dynamics sampling a large subspace of the full firing rate grid $(r_{E},r_{P})$ and thus any linearization would fail to describe the network response. In this stochastically forced network we explore how adding an SOM modulation or a stimulus affects this subspace (Figure 6B). To quantify stability without linearization, we assume that a network is more stable the lower the mean and variance of E rates. This is because very stable networks can better quench input fluctuations (Kanashiro et al., 2017; Hennequin et al., 2018). To quantify gain, we calculate the change in E rates when adding the stimulus, yet having identical noise realizations for stimulated and non-stimulated networks (Methods).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig6-v1.jpg)
 
-**Figure 6.:** (A) Left: Sketch of a disinhibitory network with stimulus plus noise input onto E and PV populations and positive SOM modulation. Right: Numerical E (red), PV (blue), and SOM (green) rate dynamics. (B) Distribution of E and PV rates for a positive SOM modulation without (i) and with a stimulus (ii) (C) Changes in the distribution of E rates  (i, left), E population gain rE (i, right) and network gain bE  (ii) with vs without SOM modulation. Variance of E rates for no SOM modulation is 0.7 and with SOM modulation 1.3. (gD) Same as A for a negative SOM modulation in a disinhibitory circuit with feedback PV → SOM. (E) Same as B for negative SOM modulation. Variance of E rates for no SOM modulation is 1.1 and with SOM modulation 0.8. (F) Same as C for negative SOM modulation.
+**Figure 6.:** (A) Left: Sketch of a disinhibitory network with stimulus plus noise input onto E and PV populations and positive SOM modulation. Right: Numerical E (red), PV (blue), and SOM (green) rate dynamics. (B) Distribution of E and PV rates for a positive SOM modulation without (i) and with a stimulus (ii) (C) Changes in the distribution of E rates $r_{E}$ (i, left), E population gain $b_{E}$ (i, right) and network gain $g$  (ii) with vs without SOM modulation. Variance of E rates for no SOM modulation is 0.7 and with SOM modulation 1.3. (D) Same as A for a negative SOM modulation in a disinhibitory circuit with feedback PV → SOM. (E) Same as B for negative SOM modulation. Variance of E rates for no SOM modulation is 1.1 and with SOM modulation 0.8. (F) Same as C for negative SOM modulation.
 
 For the disinhibitory network without feedback a positive SOM modulation decreases stability due to increases in the mean and variance of E rates (Figure 6Ci) while the network gain increases (Figure 6Cii). As seen before (Figure 2A and B), stability and gain change in opposite directions in a disinhibitory circuit without feedback. Adding feedback PV → SOM and applying a negative SOM modulation increases both, stability and gain and, therefore, disentangles the inverse relation also in a noisy circuit (Figure 6D–F). This gives numerical support that our results do not depend on the assumption of linearization.
 
-## Influence of weight strength on network gain versus stability
+### Influence of weight strength on network gain versus stability
 
-In the previous sections, we have studied how the population firing rates influence network gain and stability in various network configurations through changes in the cellular gain and inhibitory versus disinhibitory pathways with and without feedback to SOM. However, following from our motivating example, the decrease or increase of E rates to SOM modulation can depend on the exact strength of certain synaptic weights (Figure 1D; Case 2). In this section, we show in detail how changes in synaptic weight strength can affect network gain and stability. We consider four cases: a network with a biased inhibitory pathway (wES>wPS) (Figure 7Ai-Aiv), or a biased disinhibitory pathway (wES<wPS) (Figure 7Bi-Biv,) and we distinguish between the network being in the non-ISN regime where the E → E connection (wEE) is weak (Figure 7) and the ISN regime with strong wEE (Figure 7—figure supplement 1). We note that throughout we keep the rates of all populations fixed (see Methods).
+In the previous sections, we have studied how the population firing rates influence network gain and stability in various network configurations through changes in the cellular gain and inhibitory versus disinhibitory pathways with and without feedback to SOM. However, following from our motivating example, the decrease or increase of E rates to SOM modulation can depend on the exact strength of certain synaptic weights (Figure 1D; Case 2). In this section, we show in detail how changes in synaptic weight strength can affect network gain and stability. We consider four cases: a network with a biased inhibitory pathway ($w_{ES}>w_{PS}$) (Figure 7Ai-Aiv), or a biased disinhibitory pathway ($w_{ES}<w_{PS}$) (Figure 7Bi-Biv,) and we distinguish between the network being in the non-ISN regime where the E → E connection ($w_{EE}$) is weak (Figure 7) and the ISN regime with strong $w_{EE}$ (Figure 7—figure supplement 1). We note that throughout we keep the rates of all populations fixed (see Methods).
 
-For weakening either the connection from PV → E (wEP) or E → PV (wPE) the network gain drastically increases and is mostly accompanied by decrease in stability (Figure 7Ai, Bi). However, if the influence of SOM on E is biased to be inhibitory, increases in network gain can lead to slight increases in stability (Figure 7Ai; strong wEP or wPE). This follows from the discontinuity of the stability measure, as we have already pointed out in a previous section (Figure 3iv; see Methods). The influence of the feedback connection E → SOM (wSE) depends on the bias of SOM connectivity. For inhibitory biased networks, increasing the strength of wSE reduces gain (Figure 7Aii), while for disinhibitory biased networks it leads to an increase of gain (Figure 7Bii). The connection SOM → E (wES) moderately increases both, stability and gain (Figure 7Aii, Bii). Similarly, the influence of the feedback connection PV → SOM (wSP) is opposed for the inhibitory biased versus disinhibitory biased case and the SOM → PV connection (wPS) changes gain and stability in the same direction (Figure 7Aiii, Biii).
+![Figure 7.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig7-v1.jpg)
 
-An important distinction between PV and SOM neurons is that PV neurons are strongly connected to other PV neurons, while SOM → SOM (wSS) coupling has not been found in the mouse sensory neocortex (Pfeffer et al., 2013; Tremblay et al., 2016; Urban-Ciecko and Barth, 2016; Campagnola et al., 2022). The PV self coupling strength can have a large effect on both network gain and stability (Figure 7Aiv,Biv). An interesting aspect of PV → PV (wPP) coupling is that it appears that there is an optimal weight strength for maximal stability. On the other hand, SOM self coupling has only minimal effect on gain and stability.
+**Figure 7.:** (A) Effect of synaptic weight change on network gain ($g_{E}$) and stability ($\lambda_{max}$) in a network biased to inhibitory somatostatin (SOM) influence ($w_{ES}>w_{PS}$). We change the strength of one weight at a time, either $w_{EP}$ or $w_{PE}$ (i), $w_{ES}$ or $w_{SE}$ (ii), $w_{PS}$ or $w_{SP}$ (iii), or $w_{PP}$ or $w_{SS}$ (iv). Colorbar indicates the weight strength, red corresponds to weights onto excitatory neurons (E) blue onto parvalbumin (PV), and green onto SOM. (B) Same as A but in a network biased to disinhibitory SOM influence ($w_{ES}<w_{PS}$). The networks are in the non-inhibition stabilized network (ISN) regime ($w_{EE}$ is weak) and all the rates are fixed $r_{E}=3$, $r_{P}=5$, $r_{S}=0.5$. Dashed rectangles represent zoom-in.
 
-In summary, changing synaptic weights have often non-intuitive effects on network gain and stability. Network gain always either decreases or increases when changing the strength of a single weight, but the direction in which network gain changes depends on inhibitory biased versus disinhibitory biased, e.g., as shown for changing wSE (Figure 7Aii, Bii). This can be understood from Equation 2, which directly shows how the direction (sign) of network gain changes depends on the respective weight parameter. For stability, discontinuities appear making the direction of change for stability dependent on the absolute weight strengths of the respective weight, e.g., increasing PV self connection strength first increases stability while when further increasing the weight strength leads to a decrease of stability (Figure 7Aiv, Biv). In contrast to network gain, it is difficult to gain intuition about the dependence of stability on the weights because the eigenvalues have a complex relationship to all the weights and the maximum eigenvalue might show nonlinear dynamics (as shown in Figure 3iv).
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig7-figsupp1-v1.jpg)
 
-## Modulation of SOM neurons can have diverse effects on tuning curves
+**Figure 7—figure supplement 1.:** (A) Effect of synaptic weight change on network gain ($g_{E}$) and stability ($\lambda_{max}$) in a network biased to inhibitory somatostatin (SOM) influence ($w_{ES}>w_{PS}$). We change the strength of one weight at a time, either $w_{EP}$ or $w_{PE}$ (i), $w_{ES}$ or $w_{SE}$ (ii), $w_{PS}$ or $w_{SP}$ (iii), or $w_{PP}$ or $w_{SS}$ (iv). Colorbar indicates the weight strength, red corresponds to weights onto excitatory neurons (E), blue onto parvalbumin (PV), and green onto SOM. (B) Same as A but in a network biased to disinhibitory SOM influence ($w_{ES}<w_{PS}$). The networks are in the ISN regime ($w_{EE}$ is strong) and all the rates are fixed,$r_{E}=3$,$r_{P}=5$.$r_{S}=0.5$.
 
-In the previous sections, we measured network gain as the increase of E neuron activity in response to a small increase in stimulus intensity. We now extend our analysis to E – PV – SOM circuits with distributed responses, whereby individual neurons are tuned to a particular value of a stimulus (i.e. the preferred orientation of a bar in a visual scene or the frequency of an acoustic tone). In what follows the stimulus θ is parametrized with an angle ranging from 0°–180°.
+For weakening either the connection from PV → E ($w_{EP}$) or E → PV ($w_{PE}$) the network gain drastically increases and is mostly accompanied by decrease in stability (Figure 7Ai, Bi). However, if the influence of SOM on E is biased to be inhibitory, increases in network gain can lead to slight increases in stability (Figure 7Ai; strong $w_{EP}$ or $w_{PE}$). This follows from the discontinuity of the stability measure, as we have already pointed out in a previous section (Figure 3iv; see Methods). The influence of the feedback connection E → SOM ($w_{SE}$) depends on the bias of SOM connectivity. For inhibitory biased networks, increasing the strength of $w_{SE}$ reduces gain (Figure 7Aii), while for disinhibitory biased networks it leads to an increase of gain (Figure 7Bii). The connection SOM → E ($w_{ES}$) moderately increases both, stability and gain (Figure 7Aii, Bii). Similarly, the influence of the feedback connection PV → SOM ($w_{SP}$) is opposed for the inhibitory biased versus disinhibitory biased case and the SOM → PV connection ($w_{PS}$) changes gain and stability in the same direction (Figure 7Aiii, Biii).
 
-We begin by giving the E and PV populations feedforward input which is tuned to θ=90∘ with a Gaussian profile (see Equation 19). Providing tuned input leads to a tuned response at E, PV and SOM populations (Figure 8A; top, solid lines). Even though the SOM population does not receive tuned external input, the tuning of SOM is expected since they receive input from tuned E. A small negative modulation of the SOM population can modify the tuning properties of all populations (Figure 8A; top, dashed lines). In experimental studies that optogenetically activate or inactivate inhibitory populations, changes in tuning curves are often characterized as a linear transformation containing shifting (additive or subtractive) and scaling (multiplicative or divisive) components (Phillips and Hasenstaub, 2016; Arandia-Romero et al., 2016). By fitting a line to the rates before versus after SOM modulation we can quantify the respective components (Figure 8A; bottom). The slope of the fitted line corresponds to the magnitude of the multiplicative (slope >1) or divisive (slope <1) component while the intercept with the y-axis reveals the additive (intersect >0) or subtractive (intersect <0) component of tuning curve changes. In the example of a network with connections from SOM → E and SOM → PV and a feedback connection from E → SOM (as shown in Figure 8A), modulation of SOM leads to subtractive and divisive changes at SOM and additive and multiplicative changes at E and PV populations (Figure 8B; diamond).
+An important distinction between PV and SOM neurons is that PV neurons are strongly connected to other PV neurons, while SOM → SOM ($w_{SS}$) coupling has not been found in the mouse sensory neocortex (Pfeffer et al., 2013; Tremblay et al., 2016; Urban-Ciecko and Barth, 2016; Campagnola et al., 2022). The PV self coupling strength can have a large effect on both network gain and stability (Figure 7Aiv,Biv). An interesting aspect of PV → PV ($w_{PP}$) coupling is that it appears that there is an optimal weight strength for maximal stability. On the other hand, SOM self coupling has only minimal effect on gain and stability.
+
+In summary, changing synaptic weights have often non-intuitive effects on network gain and stability. Network gain always either decreases or increases when changing the strength of a single weight, but the direction in which network gain changes depends on inhibitory biased versus disinhibitory biased, e.g., as shown for changing $w_{SE}$ (Figure 7Aii, Bii). This can be understood from Equation 2, which directly shows how the direction (sign) of network gain changes depends on the respective weight parameter. For stability, discontinuities appear making the direction of change for stability dependent on the absolute weight strengths of the respective weight, e.g., increasing PV self connection strength first increases stability while when further increasing the weight strength leads to a decrease of stability (Figure 7Aiv, Biv). In contrast to network gain, it is difficult to gain intuition about the dependence of stability on the weights because the eigenvalues have a complex relationship to all the weights and the maximum eigenvalue might show nonlinear dynamics (as shown in Figure 3iv).
+
+### Modulation of SOM neurons can have diverse effects on tuning curves
+
+In the previous sections, we measured network gain as the increase of E neuron activity in response to a small increase in stimulus intensity. We now extend our analysis to E – PV – SOM circuits with distributed responses, whereby individual neurons are tuned to a particular value of a stimulus (i.e. the preferred orientation of a bar in a visual scene or the frequency of an acoustic tone). In what follows the stimulus $\theta$ is parametrized with an angle ranging from 0°–180°.
+
+We begin by giving the E and PV populations feedforward input which is tuned to $\theta=90^{∘}$ with a Gaussian profile (see Equation 19). Providing tuned input leads to a tuned response at E, PV and SOM populations (Figure 8A; top, solid lines). Even though the SOM population does not receive tuned external input, the tuning of SOM is expected since they receive input from tuned E. A small negative modulation of the SOM population can modify the tuning properties of all populations (Figure 8A; top, dashed lines). In experimental studies that optogenetically activate or inactivate inhibitory populations, changes in tuning curves are often characterized as a linear transformation containing shifting (additive or subtractive) and scaling (multiplicative or divisive) components (Phillips and Hasenstaub, 2016; Arandia-Romero et al., 2016). By fitting a line to the rates before versus after SOM modulation we can quantify the respective components (Figure 8A; bottom). The slope of the fitted line corresponds to the magnitude of the multiplicative (slope >1) or divisive (slope <1) component while the intercept with the y-axis reveals the additive (intersect >0) or subtractive (intersect <0) component of tuning curve changes. In the example of a network with connections from SOM → E and SOM → PV and a feedback connection from E → SOM (as shown in Figure 8A), modulation of SOM leads to subtractive and divisive changes at SOM and additive and multiplicative changes at E and PV populations (Figure 8B; diamond).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/99808/elife-99808-fig8-v1.jpg)
 
-**Figure 8.:** (A) Top: Tuning curves of excitatory (E) (red), parvalbumin (PV) (blue), and SOM (green) populations in a network with connections SOM → E and SOM → PV and a feedback connection E → SOM (). Solid lines represent the tuning curve before modulation and dashed lines after a negative SOM modulation. Bottom: Linear regression of unmodulated versus modulated rates (black dots: unmodulated versus modulated rate pairs, gray solid line: fit, gray dashed line: unity line). (wES,wPS,wSE≠0B) Multiplicative/divisive component versus additive/subtractive component for different network connectivities. Add/sub component is normalized to the maximum rate response. Diamond case is shown in panel A.
+**Figure 8.:** (A) Top: Tuning curves of excitatory (E) (red), parvalbumin (PV) (blue), and SOM (green) populations in a network with connections SOM → E and SOM → PV and a feedback connection E → SOM ($w_{ES},w_{PS},w_{SE}\neq0$). Solid lines represent the tuning curve before modulation and dashed lines after a negative SOM modulation. Bottom: Linear regression of unmodulated versus modulated rates (black dots: unmodulated versus modulated rate pairs, gray solid line: fit, gray dashed line: unity line). (B) Multiplicative/divisive component versus additive/subtractive component for different network connectivities. Add/sub component is normalized to the maximum rate response. Diamond case is shown in panel A.
 
 For other network configurations, changes in tuning following a negative SOM modulation can be based on different components. For example, in a network with SOM → E, SOM → PV connections and PV → SOM feedback all populations have an additive and divisive component (Figure 8B; filled circles).
 
@@ -139,7 +167,7 @@ Cortical inhibition is quite diverse, with molecularly distinguished cell classe
 
 In our study, we provide a general theoretical framework that dissects the full E – PV – SOM circuit into interacting sub-circuits. We then identify how specific inhibitory connections support both network stability and E neuron gain control; two ubiquitous functions often associated with inhibition (Ozeki et al., 2009; Haider et al., 2013; Ferguson and Cardin, 2020; Isaacson and Scanziani, 2011). In this way, our approach gives an expanded view of the mechanics of cortical function when compared to more classical results that focus only on how circuit structure supports a single feature of cortical dynamics. The theoretical framework we develop can be adopted to investigate other structure-function relationships in complicated multi-class cortical circuits, like thalamocortical loops, cortical layer-specific connectivities, or circuits including also VIP neurons.
 
-## Division of labor between PV and SOM interneurons
+### Division of labor between PV and SOM interneurons
 
 Compelling theories for both network stability (Ozeki et al., 2009; van Vreeswijk and Sompolinsky, 1996; Griffith, 1963) and gain control Sutherland et al., 2009; Stern et al., 2018 have been developed using simple cortical models having only one inhibitory neuron class. Thus, network stability and gain control do not necessarily require cortical circuits with diverse inhibition. What our study points out is that SOM neurons are ideal for modulating firing rate changes, network gains, and stability.
 
@@ -153,7 +181,7 @@ There are circuit and cellular distinctions between PV and SOM neurons that were
 
 The E – PV – SOM cortical circuit is best characterized in superficial layers of sensory neocortex (Pfeffer et al., 2013; Tremblay et al., 2016; Urban-Ciecko and Barth, 2016). However, cell densities and connectivity patterns of interneuron populations change across the brain (Kim et al., 2017) and across cortical layers (Tremblay et al., 2016; Jiang et al., 2015). Our circuit-based division of labor thus predicts that any differences in inhibitory connectivity compared to the one we studied will be reflected in changes of the roles that interneurons play in distinct cortical functions.
 
-## Influence of synaptic strength in the E – PV – SOM circuit
+### Influence of synaptic strength in the E – PV – SOM circuit
 
 In most of our studies, the distinction between different circuits is based on the existence or non-existence of a synaptic connection. For example, the distinction between inhibitory and disinhibitory circuits can be made by setting the other connection to zero (Figure 4A and B). However, the exact synaptic strength of a connection relative to the strength of all other connection strengths in the circuit is an important determinant of circuit response. Small changes can switch the sign of how SOM modulation affects rates (Figure 1C and D) or change the stability and network gain of the circuit (Figure 7). Hence, our analysis suggests that including short- or long-term plasticity dynamics of synaptic weight strength can have profound impacts on the circuit.
 
@@ -161,13 +189,13 @@ Short-term synaptic dynamics in cortical circuits often show net depression (Zuc
 
 Recent experimental work also finds subtype-specific long-term plasticity dynamics (Lagzi et al., 2021; Udakis et al., 2020; Wu et al., 2022). A prominent role of inhibition, and specifically SOM neurons, is the gating of synaptic plasticity at excitatory neurons (Canto-Bustos et al., 2022; Miehl and Gjorgjieva, 2022). Our work suggests that there are weight strengths for which the stability of the circuit becomes maximal (Figure 7), therefore, a potential goal of long-term synaptic plasticity might be to keep the synaptic weight strength of inhibitory connections at an optimal value.
 
-## Impact of SOM neuron modulation on tuning curves
+### Impact of SOM neuron modulation on tuning curves
 
 Neuronal gain control has a long history of investigation (Salinas and Thier, 2000; Ferguson and Cardin, 2020; Williford and Maunsell, 2006), with mechanisms that are both bottom-up (Schwartz and Simoncelli, 2001) and top-down (Reynolds and Heeger, 2009; Ruff et al., 2018) mediated. A vast majority of early studies focused on single neuron mechanisms; examples include the role of spike frequency adaptation (Ermentrout, 1998), interactions between fluctuating synaptic conductances and spike generation mechanics (Chance et al., 2002; Ly and Doiron, 2009), and dendritic-dependent burst responses (Larkum et al., 2004; Mehaffey et al., 2005). These studies often dichotomized gain modulations into a simple arithmetic where they are classified as either additive (subtractive) or multiplicative (divisive) (Silver, 2010; Williford and Maunsell, 2006). More recently, this arithmetic has been used to dissect the modulations imposed by SOM and PV neuron activity onto E neuron tuning (Lee et al., 2014; Atallah et al., 2012; Wilson et al., 2012). Initially, the studies framed a debate about how subtractive and divisive gain control should be assigned to PV and SOM neuron activation. However, a pair of studies in the auditory cortex gave a sobering account whereby activation and inactivation of PV and SOM neurons had both additive/subtractive and multiplicative/divisive effects on tuning curves (Phillips and Hasenstaub, 2016; Seybold et al., 2015), challenging the tidy assignment of modulation arithmetic into interneuron class. Specifically, optogenetically decreasing SOM activity leads to mostly additive and multiplicative tuning curve changes in the mouse primary auditory cortex (Phillips and Hasenstaub, 2016), which in our model follows from strong E to SOM feedback.
 
 Past modeling efforts have specifically considered how tuned or untuned SOM and PV projections combine with nonlinear E neuron spike responses to produce subtractive or divisive gain changes (Seybold et al., 2015; Litwin-Kumar et al., 2016). However, the insights in these studies were primarily restricted to feedforward SOM and PV projections to E neurons, and ignored E neuron recurrence within the circuit. We show that additive/subtractive and multiplicative/divisive changes in tuning properties can strongly depend on the underlying circuit connectivity, in line with large heterogeneity of subtractive and divisive gain control reported in various studies (Seybold et al., 2015; Wilson et al., 2012; Lee et al., 2014; Atallah et al., 2012; Natan et al., 2017).
 
-## Limitations and future directions
+### Limitations and future directions
 
 Our study is based on a linearization approach, which only allows us to investigate the circuit dynamics close to a stable network state. While this makes our results mathematically tractable and more intuitive and we confirm that our results hold in the case with noisy inputs (Figure 6), an interesting future direction is to test if the results hold also in oscillatory or chaotic dynamical regimes.
 
@@ -179,72 +207,280 @@ Furthermore, we study changes in tuning curves by assuming that the E and PV pop
 
 ## Methods
 
-## Population model
+### Population model
 
-The population rate dynamics (rX) of E, PV, and SOM neurons are described by a firing rate model (Wilson and Cowan, 1972)(3)τXdrXdt=−rX+fX(qX).
+The population rate dynamics ($r_{X}$) of E, PV, and SOM neurons are described by a firing rate model (Wilson and Cowan, 1972)
 
-with τX being the rate time constant (τX=10ms for all populations). The input to the circuit component X is the linearly rectified sum over all presynaptic components Y of synaptic weights wXY multiplied by the respective rate dynamics rY plus external input IX:qX=[∑Y(−1)qwXYrY+IX]+. Here X,Y either represent the excitatory (E), PV (P), or SOM (S) population with the exponent  q=1 (q=2) if population Y is inhibitory (excitatory). The nonlinear transfer functions are described by a power law.(4)fX(qX)=αqXβ.
+$$
+\tau_{X}\frac{dr_{X}}{dt}=−r_{X}+f_{X}(q_{X}).
+$$
 
-To simplify our analysis we chose the same parameters α=1/4  and β=2  for all populations (Figure 1B). We note that by choosing a linear transfer function (β=1) the corresponding population gain term is constant for all inputs bX=α , and therefore there is no dependence of the gain and stability on the neuron firing rates.
+with $\tau_{X}$ being the rate time constant ($\tau_{X}=10ms$ for all populations). The input to the circuit component $X$ is the linearly rectified sum over all presynaptic components $Y$ of synaptic weights $w_{XY}$ multiplied by the respective rate dynamics $r_{Y}$ plus external input $I_{X}:q_{X}=[\sumY(−1)^{q}w_{XY}r_{Y}+I_{X}]_{+}$. Here $X,Y$ either represent the excitatory (E), PV (P), or SOM (S) population with the exponent  q=1 (q=2) if population $Y$ is inhibitory (excitatory). The nonlinear transfer functions are described by a power law.
 
-In vector notation, Equation 3 can be written as,(5)Tdrdt=−r+f(q)=−r+f(Wr+I).
+$$
+f_{X}(q_{X})=\alphaq_{X}^{\beta}.
+$$
 
-with T being a diagonal matrix of rate time constants τX, r the vector of firing rates rX, I the vector of external inputs IX, and W the synaptic connectivity matrix.(6)W=(wEE−wEP−wESwPE−wPP−wPSwSE−wSP−wSS).
+To simplify our analysis we chose the same parameters $\alpha=1/4$  and $\beta=2$  for all populations (Figure 1B). We note that by choosing a linear transfer function ($\beta=1$) the corresponding population gain term is constant for all inputs $b_{X}=\alpha$ , and therefore there is no dependence of the gain and stability on the neuron firing rates.
 
-Note that in this notation we dropped the linear rectifier and assume only positive q.
+In vector notation, Equation 3 can be written as,
 
-We summarize the weight parameters for each Figure in Table 1. Self-connection of SOM cells (wSS) is always zero, besides in Figure 7Aiv, Biv. In Figure 7, we keep the strength of each weight at wXY=0.5 while changing the strength of only one weight (for the inhibitory case in Figure 7A we set wPS=0.1 and for the disinhibitory case we set wES=0.1). In Figure 7—figure supplement 1 we use the same parameters, besides the E → E weights are higher (wEE=0.8).
+$$
+T\frac{dr}{dt}=−r+f(q)=−r+f(Wr+I).
+$$
 
-To generate the panels containing the grid of possible firing rates (rE,rP) we choose the external inputs to each population IX accordingly. The numerical results in Figures 1D, 2A and C, Figures 6 and 8 are obtained via Euler integration with a timestep of 0.01.
+with $T$ being a diagonal matrix of rate time constants $\tau_{X}$, $r$ the vector of firing rates $r_{X}$, $I$ the vector of external inputs $I_{X}$, and $W$ the synaptic connectivity matrix.
 
-## Calculation of modulation and gain
+$$
+W=(w_{EE}−w_{EP}−w_{ES}w_{PE}−w_{PP}−w_{PS}w_{SE}−w_{SP}−w_{SS}).
+$$
 
-In the steady-state, the population rates are given by the self-consistent equation.(7)r=f(Wr+I).
+Note that in this notation we dropped the linear rectifier and assume only positive $q$.
 
-Changes in the steady-state rates induced by small changes in the external rate I are given by Litwin-Kumar et al., 2016; Garcia del Molino et al., 2017.(8)δr=drdIδI.
+We summarize the weight parameters for each Figure in Table 1. Self-connection of SOM cells ($w_{SS}$) is always zero, besides in Figure 7Aiv, Biv. In Figure 7, we keep the strength of each weight at $w_{XY}=0.5$ while changing the strength of only one weight (for the inhibitory case in Figure 7A we set $w_{PS}=0.1$ and for the disinhibitory case we set $w_{ES}=0.1$). In Figure 7—figure supplement 1 we use the same parameters, besides the E → E weights are higher ($w_{EE}=0.8$).
 
-The matrix L=drdI has been termed a response matrix and can be written as (Garcia del Molino et al., 2017),(9)L=(B−1−W)−1=(1−BW)−1B.
+**Table 1.**
+ Weight parameters.
 
-Here 1 denotes the identity matrix, and B is defined as the diagonal matrix of cellular gains at the linearization points bX=dfXdqX(qXss) with qXss being the steady state input to the circuit component X. If all eigenvalues of BW are smaller than 1 the response matrix can be written as,(10)L=∑i=0∞(BW)iB.
 
-The response of the E population δrEmod to modulations of SOM δISmod following Equation 10 can be expressed as,(11)δrEmod=drEdISmodδISmod= bS∑i=0∞(BW)13iδISmod(12)= bS(bEwES−bE2wEEwES+bEbPwEPwPS(13)+(bPwEPwPE+bSwESwSE−bEwEE2)bE2wES(14)+(bEwEEwEP−bPwEPwPP)bEbPwPS+...)δISmod
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>wEE</th>
+      <th>wEP</th>
+      <th>wPE</th>
+      <th>wPP</th>
+      <th>wES</th>
+      <th>wPS</th>
+      <th>wSE</th>
+      <th>wSP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1C, Case 1 (left)</td>
+      <td rowspan="21">0.8</td>
+      <td rowspan="2">0.5</td>
+      <td rowspan="21">1</td>
+      <td rowspan="2">0.6</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td rowspan="11">0</td>
+      <td rowspan="6">0</td>
+    </tr>
+    <tr>
+      <td>Figure 1C, Case 1 (right)</td>
+      <td>0</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Figure 1C, Case 2 (left)</td>
+      <td rowspan="3">1</td>
+      <td>1</td>
+      <td rowspan="3">0.5</td>
+      <td rowspan="3">0.6</td>
+    </tr>
+    <tr>
+      <td>Figure 1C, Case 2 (right)</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Figure 1C, Case 3</td>
+      <td rowspan="17">0.6</td>
+    </tr>
+    <tr>
+      <td>Figure 2A and B</td>
+      <td rowspan="16">0.5</td>
+      <td rowspan="3">0</td>
+      <td rowspan="2">0.8</td>
+    </tr>
+    <tr>
+      <td>Figure 2C and D</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td rowspan="2">0</td>
+      <td rowspan="5">0</td>
+    </tr>
+    <tr>
+      <td>Figure 4A</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>0</td>
+      <td rowspan="2">0.8</td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Figure 5, Figure 5—figure supplement 2A</td>
+      <td>0.8</td>
+      <td>0</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1</td>
+      <td rowspan="4">0</td>
+      <td rowspan="5">0.8</td>
+      <td rowspan="4">0</td>
+      <td rowspan="2">0.2</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 2B</td>
+    </tr>
+    <tr>
+      <td>Figure 6A–C</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Figure 6D–F</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Figure 8A and B,◊</td>
+      <td>0.5</td>
+      <td rowspan="2">0.5</td>
+      <td rowspan="2">0</td>
+    </tr>
+    <tr>
+      <td>Figure 8B,◻</td>
+      <td>0.8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Figure 8B,+</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td rowspan="2">0</td>
+      <td rowspan="3">0.5</td>
+    </tr>
+    <tr>
+      <td>Figure 8B,∘</td>
+      <td>0.8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Figure 8B,∙</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
 
-Here (BW)13i denotes the element in the first row and third column of the matrix. Our expression shows that the response matrix describes the summed effect of all possible pathways through the network whereby an externally applied signal could influence population E rates, as shown in Figure 1D (top).
+To generate the panels containing the grid of possible firing rates ($r_{E},r_{P}$) we choose the external inputs to each population $I_{X}$ accordingly. The numerical results in Figures 1D, 2A and C, Figures 6 and 8 are obtained via Euler integration with a timestep of 0.01.
 
-Similarly, assuming that modulation only targets SOM neurons δI=(0,0,δISmod), the rate change of excitatory neurons induced by modulation following Equation 9 is given by(15)δrEmod=LESδISmod=bE−1(bP−1+wPP)det(B−1−W)(wEPwPSbP−1+wPP−wES)δISmod.
+### Calculation of modulation and gain
 
-With ψES=bE−1(bP−1+wPP)/det(B−1−W) being the prefactor in Figure 1D. If the system is stable, ψES is positive.
+In the steady-state, the population rates are given by the self-consistent equation.
 
-Network gain is defined as the rate change of neurons in response to a stimulus, assuming that stimuli target E and PV neurons δIstim=(δIEstim,δIPstim,0). The E neuron network gain is given by(16)gE=drEdIstimδIstim=LEEδIEstim+LEPδIPstim=ψg(((bP−1+wPP)−bSwPSwSP)δIEstim−(wEP−bSwESwSP)δIPstim).
+$$
+r=f(Wr+I).
+$$
 
-This is the expression in Equation 2 with prefactor ψg=bS−1/det(B−1−W). Again, for a stable system ψg>0.
+Changes in the steady-state rates induced by small changes in the external rate $I$ are given by Litwin-Kumar et al., 2016; Garcia del Molino et al., 2017.
 
-## Paradoxical responses and gain maximum
+$$
+\deltar=\frac{dr}{dI}\deltaI.
+$$
 
-The response of PV to SOM modulation is given by(17)LPS=(wEE−bE−1)wPS−wESwPEdet(B−1−W).
+The matrix $L=\frac{dr}{dI}$ has been termed a response matrix and can be written as (Garcia del Molino et al., 2017),
 
-When SOM neurons only project to PV but not E neurons (wES=0), the rate of PV neurons decreases for positive SOM modulation if the E – PV circuit is in the non-ISN regime (wEE<bE−1) and increases otherwise (Figure 4Bii). The latter case has been termed paradoxical response (Tsodyks et al., 1997). If SOM neurons also project to E neurons, PV neurons get additional negative drive from the lack of E feedback yielding decreased PV rates even in the ISN regime (Figure 4Aii, Cii). Hence we only expect paradoxical responses if the product of connection strength wESwPE is small. Thus the observation of paradoxical responses of PV neurons in response to suppression via SOM neurons cannot disclose whether the E neurons operate in the ISN or non-ISN regime if SOM neurons also suppress the activity of E neurons. Rather, one should observe a paradoxical response of the total inhibitory current (from PV and SOM) onto E neurons to establish that the network is in the ISN regime (Litwin-Kumar et al., 2016).
+$$
+L=(B^{−1}−W)^{−1}=(1−BW)^{−1}B.
+$$
 
-## Quantifying network stability
+Here 1 denotes the identity matrix, and $B$ is defined as the diagonal matrix of cellular gains at the linearization points $b_{X}=\frac{df_{X}}{dq_{X}}(q_{X}^{ss})$ with $q_{X}^{ss}$ being the steady state input to the circuit component $X$. If all eigenvalues of $BW$ are smaller than 1 the response matrix can be written as,
 
-The Jacobian matrix of the system is given by(18)J=W−B−1
+$$
+L=\sumi=0∞(BW)^{i}B.
+$$
 
-which can be linked to the response matrix since L=(B−1−W)−1=(−J)−1(Palmigiano et al., 2023). The system is stable if the real parts of all three Eigenvalues of the Jacobian are negative. The eigenvalue closest to zero dominates the long term behavior of the system. We quantify stability by measuring the distance of the Eigenvalue with the largest real part λmax  to zero (see Figure 2Biii,Diii). This stability measure ignores the oscillatory behavior of the system (i.e. the imaginary part of the eigenvalues).
+The response of the E population $\deltar_{E}^{mod}$ to modulations of SOM $\deltaI_{S}^{mod}$ following Equation 10 can be expressed as,
+
+$$
+\deltar_{E}^{mod}=\frac{dr_{E}}{dI_{S}^{mod}}\deltaI_{S}^{mod}= b_{S}\sumi=0∞(BW)_{13}^{i}\deltaI_{S}^{mod}
+$$
+
+
+
+$$
+= b_{S}(b_{E}w_{ES}−b_{E}^{2}w_{EE}w_{ES}+b_{E}b_{P}w_{EP}w_{PS}
+$$
+
+
+
+$$
++(b_{P}w_{EP}w_{PE}+b_{S}w_{ES}w_{SE}−b_{E}w_{EE}^{2})b_{E}^{2}w_{ES}
+$$
+
+
+
+$$
++(b_{E}w_{EE}w_{EP}−b_{P}w_{EP}w_{PP})b_{E}b_{P}w_{PS}+...)\deltaI_{S}^{mod}
+$$
+
+Here $(BW)_{13}^{i}$ denotes the element in the first row and third column of the matrix. Our expression shows that the response matrix describes the summed effect of all possible pathways through the network whereby an externally applied signal could influence population E rates, as shown in Figure 1D (top).
+
+Similarly, assuming that modulation only targets SOM neurons $\deltaI=(0,0,\deltaI_{S}^{mod})$, the rate change of excitatory neurons induced by modulation following Equation 9 is given by
+
+$$
+\deltar_{E}^{mod}=L_{ES}\deltaI_{S}^{mod}=\frac{b_{E}^{−1}(b_{P}^{−1}+w_{PP})}{det(B^{−1}−W)}(\frac{w_{EP}w_{PS}}{b_{P}^{−1}+w_{PP}}−w_{ES})\deltaI_{S}^{mod}.
+$$
+
+With $ψ_{ES}=b_{E}^{−1}(b_{P}^{−1}+w_{PP})/det(B^{−1}−W)$ being the prefactor in Figure 1D. If the system is stable, $ψ_{ES}$ is positive.
+
+Network gain is defined as the rate change of neurons in response to a stimulus, assuming that stimuli target E and PV neurons $\deltaI^{stim}=(\deltaI_{E}^{stim},\deltaI_{P}^{stim},0)$. The E neuron network gain is given by
+
+$$
+g_{E}=\frac{dr_{E}}{dI^{stim}}\deltaI^{stim}=L_{EE}\deltaI_{E}^{stim}+L_{EP}\deltaI_{P}^{stim}=ψ_{g}(((b_{P}^{−1}+w_{PP})−b_{S}w_{PS}w_{SP})\deltaI_{E}^{stim}−(w_{EP}−b_{S}w_{ES}w_{SP})\deltaI_{P}^{stim}).
+$$
+
+This is the expression in Equation 2 with prefactor $ψ_{g}=b_{S}^{−1}/det(B^{−1}−W)$. Again, for a stable system $ψ_{g}>0$.
+
+### Paradoxical responses and gain maximum
+
+The response of PV to SOM modulation is given by
+
+$$
+L_{PS}=\frac{(w_{EE}−b_{E}^{−1})w_{PS}−w_{ES}w_{PE}}{det(B^{−1}−W)}.
+$$
+
+When SOM neurons only project to PV but not E neurons ($w_{ES}=0$), the rate of PV neurons decreases for positive SOM modulation if the E – PV circuit is in the non-ISN regime ($w_{EE}<b_{E}^{−1}$) and increases otherwise (Figure 4Bii). The latter case has been termed paradoxical response (Tsodyks et al., 1997). If SOM neurons also project to E neurons, PV neurons get additional negative drive from the lack of E feedback yielding decreased PV rates even in the ISN regime (Figure 4Aii, Cii). Hence we only expect paradoxical responses if the product of connection strength $w_{ES}w_{PE}$ is small. Thus the observation of paradoxical responses of PV neurons in response to suppression via SOM neurons cannot disclose whether the E neurons operate in the ISN or non-ISN regime if SOM neurons also suppress the activity of E neurons. Rather, one should observe a paradoxical response of the total inhibitory current (from PV and SOM) onto E neurons to establish that the network is in the ISN regime (Litwin-Kumar et al., 2016).
+
+### Quantifying network stability
+
+The Jacobian matrix of the system is given by
+
+$$
+J=W−B^{−1}
+$$
+
+which can be linked to the response matrix since $L=(B^{−1}−W)^{−1}=(−J)^{−1}$(Palmigiano et al., 2023). The system is stable if the real parts of all three Eigenvalues of the Jacobian are negative. The eigenvalue closest to zero dominates the long term behavior of the system. We quantify stability by measuring the distance of the Eigenvalue with the largest real part $\lambda_{max}$  to zero (see Figure 2Biii,Diii). This stability measure ignores the oscillatory behavior of the system (i.e. the imaginary part of the eigenvalues).
 
 As mentioned in the results section the stability measure can show discontinuities when changing either the rate (Figure 3iii) of a population or a synaptic weight (Figure 7). This discontinuity follows from either switches of the leading Eigenvalue or changes from non-oscillatory to oscillatory dynamics (Figure 3iv).
 
-## Noisy input and numerical measurement of stability and gain
+### Noisy input and numerical measurement of stability and gain
 
-We consider a temporally smoothed input process ξX with white noise ζ (zero mean, standard deviation one): τξdξXdt=−ξX+IX+σXζ for populations X∈{E,P} with timescale τξ=50ms, σX=6 and fixed mean input IX. To quantify the stability of the network without linearization, we assume that a network is more stable if the mean and variance of excitatory rates are low. To quantify network gain, we freeze the white noise process ζ for the case of with and without stimulus presentation and calculate the difference of E rates at each time point, leading to a distribution of network gains (Figure 6Cii,Fii). Total simulation time is 1000 s.
+We consider a temporally smoothed input process $ξ_{X}$ with white noise ζ (zero mean, standard deviation one): $\tau_{ξ}\frac{dξ_{X}}{dt}=−ξ_{X}+I_{X}+\sigma_{X}ζ$ for populations $X\in{E,P}$ with timescale $\tau_{ξ}=50ms$, $\sigma_{X}=6$ and fixed mean input $I_{X}$. To quantify the stability of the network without linearization, we assume that a network is more stable if the mean and variance of excitatory rates are low. To quantify network gain, we freeze the white noise process ζ for the case of with and without stimulus presentation and calculate the difference of E rates at each time point, leading to a distribution of network gains (Figure 6Cii,Fii). Total simulation time is 1000 s.
 
-## Modulation of tuned populations
+### Modulation of tuned populations
 
-We separate the input to each population into two components, a background and a tuned input I=Iback+Istim. We assume that the feedforward stimulus input is tuned with a Gaussian profile and that it only targets E and PV neurons:(19)Istim(θ)=wffe−(θ−θp)2/σθ2(110),
+We separate the input to each population into two components, a background and a tuned input $I=I^{back}+I^{stim}$. We assume that the feedforward stimulus input is tuned with a Gaussian profile and that it only targets E and PV neurons:
 
-with wff=2, the preferred angle θp=90∘ and σθ=20. For simplicity, we assume that E and PV receive the exact same input tuning. The background input is Iback=(1,1,1.5)T. In Figure 8 we compare five different circuits, where the E–PV weight strength is fixed and we change the connections to and from SOM.
+$$
+I^{stim}(\theta)=w^{ff}e^{−(\theta−\theta^{p})^{2}/\sigma_{\theta}^{2}}(110),
+$$
+
+with $w^{ff}=2$, the preferred angle $\theta^{p}=90^{∘}$ and $\sigma_{\theta}=20$. For simplicity, we assume that E and PV receive the exact same input tuning. The background input is $I^{back}=(1,1,1.5)^{T}$. In Figure 8 we compare five different circuits, where the E–PV weight strength is fixed and we change the connections to and from SOM.
 
 To quantify if changes in tuning curves are additive/subtractive or mulitplicative/divisive, we use the same measure as in experimental studies (Phillips and Hasenstaub, 2016; Arandia-Romero et al., 2016). We fit a line to the rates before versus after SOM modulation. The tuning curve undergoes a multiplicative change if the slope is >1, and a divisive change if the slope is <1. If the intersect with the y-axis is >0, the tuning curve change has an additive component and if the intersect is <0 the change has a subtractive component (Figure 8A; bottom).
 
-## Code
+### Code
 
 Code to replicate simulation and theory results is freely available at https://github.com/brain-math/stability-gain-with-multiple-INs (copy archived at Doiron lab, 2025).

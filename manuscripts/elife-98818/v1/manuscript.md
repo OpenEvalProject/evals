@@ -19,19 +19,19 @@
 
 ### Affiliations
 
-1. https://ror.org/026stee22 Department of Migration, Max Planck Institute of Animal Behavior Radolfzell Germany
-2. https://ror.org/0546hnb39 Department of Biology, University of Konstanz Konstanz Germany
-3. https://ror.org/04zmssz18 Section Géographie, École normale supérieure de Lyon Lyon France
-4. https://ror.org/00pjcpb77 ERSAF-Direzione Parco Nazionale dello Stelvio Bormio Italy
-5. https://ror.org/03mcsbr76 Swiss Ornithological Institute Sempach Switzerland
-6. https://ror.org/05a28rw58 Landscape Ecology Institute of Terrestrial Ecosystems , ETH Zürich Zürich Switzerland
-7. https://ror.org/03prydq77 Konrad Lorenz Research Center (KLF), Core Facility for Behavior and Cognition, Department of Behavioral and Cognitive Biology, University of Vienna Grünau/Almtal Austria
+1. Department of Migration, Max Planck Institute of Animal Behavior Radolfzell Germany ([ROR:026stee22](https://ror.org/026stee22))
+2. Department of Biology, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+3. Section Géographie, École normale supérieure de Lyon Lyon France ([ROR:04zmssz18](https://ror.org/04zmssz18))
+4. ERSAF-Direzione Parco Nazionale dello Stelvio Bormio Italy ([ROR:00pjcpb77](https://ror.org/00pjcpb77))
+5. Swiss Ornithological Institute Sempach Switzerland ([ROR:03mcsbr76](https://ror.org/03mcsbr76))
+6. Landscape Ecology Institute of Terrestrial Ecosystems , ETH Zürich Zürich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+7. Konrad Lorenz Research Center (KLF), Core Facility for Behavior and Cognition, Department of Behavioral and Cognitive Biology, University of Vienna Grünau/Almtal Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 
 ## Abstract
 
-The heterogeneity of the physical environment determines the cost of transport for animals, shaping their energy landscape. Animals respond to this energy landscape by adjusting their distribution and movement to maximize gains and reduce costs. Much of our knowledge about energy landscape dynamics focuses on factors external to the animal, particularly the spatio-temporal variations of the environment. However, an animal’s internal state can significantly impact its ability to perceive and utilize available energy, creating a distinction between the ‘fundamental’ and the ‘realized’ energy landscapes. Here, we show that the realized energy landscape varies along the ontogenetic axis. Locomotor and cognitive capabilities of individuals change over time, especially during the early life stages. We investigate the development of the realized energy landscape in the Central European Alpine population of the golden eagle Aquila chrysaetos , a large predator that requires negotiating the atmospheric environment to achieve energy-efficient soaring flight. We quantified weekly energy landscapes using environmental features for 55 juvenile golden eagles, demonstrating that energetic costs of traversing the landscape decreased with age. Consequently, the potentially flyable area within the Alpine region increased 2170-fold during their first three years of independence. Our work contributes to a predictive understanding of animal movement by presenting ontogeny as a mechanism shaping the realized energy landscape.
+The heterogeneity of the physical environment determines the cost of transport for animals, shaping their energy landscape. Animals respond to this energy landscape by adjusting their distribution and movement to maximize gains and reduce costs. Much of our knowledge about energy landscape dynamics focuses on factors external to the animal, particularly the spatio-temporal variations of the environment. However, an animal’s internal state can significantly impact its ability to perceive and utilize available energy, creating a distinction between the ‘fundamental’ and the ‘realized’ energy landscapes. Here, we show that the realized energy landscape varies along the ontogenetic axis. Locomotor and cognitive capabilities of individuals change over time, especially during the early life stages. We investigate the development of the realized energy landscape in the Central European Alpine population of the golden eagle Aquila chrysaetos, a large predator that requires negotiating the atmospheric environment to achieve energy-efficient soaring flight. We quantified weekly energy landscapes using environmental features for 55 juvenile golden eagles, demonstrating that energetic costs of traversing the landscape decreased with age. Consequently, the potentially flyable area within the Alpine region increased 2170-fold during their first three years of independence. Our work contributes to a predictive understanding of animal movement by presenting ontogeny as a mechanism shaping the realized energy landscape.
 
 ## Introduction
 
@@ -53,6 +53,14 @@ We analyzed 46,000 hr of flight data collected from bio-logging devices attached
 
 We explored the movement decisions of 55 juvenile golden eagles in the Central European Alps during their post-emigration commuting flights (i.e., nonstop flight bouts lasting at least 1 hr) from the first week until 3 years after emigration. Following a step-selection approach (Avgar et al., 2016), at each movement step, we compared the observed step to 50 alternative steps that were available to each bird in space and time. These steps were compared with respect to the topography of the terrain, specifically Topographic Ruggedness Index (TRI) and distance to ridge lines, both useful proxies for occurrence of uplifts (Scacco et al., 2019; Murgatroyd et al., 2018). The resulting step-selection model distinguishes between the used and available conditions with a good predictive performance based on the normalized root mean squared error (RMSE = 0.14). Overall, the birds preferred to fly over areas with high potential for uplift formation, characterized by high values of TRI and lower distance to ridge lines (Figure 1). The birds also preferred to fly with long step lengths, a trend that increased with age. As the birds grew older, they were less likely to avoid areas with lower TRI and higher distance to ridge lines (Figure 2). We found individual variation in the coefficients for TRI and distance to ridge line (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98818/elife-98818-fig1-v1.jpg)
+
+**Figure 1.:** All variables were z-transformed prior to modeling. The error bars show 95% confidence intervals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98818/elife-98818-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The error bars show 95% confidence intervals. The difference between each individual’s estimate from the fixed effect estimate (Figure 1) is shown. Individuals are ordered based on their distance to ridge line estimates.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/98818/elife-98818-fig2-v1.jpg)
 
 **Figure 2.:** The interactions between Topographic Ruggedness Index (TRI) and distance to ridge lines with week are among the set of criteria that young eagles used for selecting where to fly during their commuting flights.
@@ -62,6 +70,18 @@ We used the step-selection model to predict the flyability of the Alpine region 
 ![Figure 3.](https://cdn.elifesciences.org/articles/98818/elife-98818-fig3-v1.jpg)
 
 **Figure 3.:** Flyable areas were defined as cells within a 100 * 100 m grid with predicted flyability above 0.7 based on our step-selection model. The maps show the 2D kernel density estimation of flyable areas for golden eagles at different timestamps since dispersal: week 1, week 4 (1 month), week 24 (6 months), and week 52 (1 year). The raw prediction maps for every week since dispersal are shown in Video 1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98818/elife-98818-fig4-v1.jpg)
+
+**Figure 4.:** Flyable area was defined as the total number of cells within a 100 * 100 m grid with predicted flyability larger than 0.7 based on the step-selection model. The positive trend shows that juvenile golden eagles can fly over a larger portion of the Alpine region as they age.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98818/elife-98818-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Used areas were calculated by extracting the commuting flights for each week, converting these to line objects, overlapping the lines with a raster of 100 * 100 km cell size, counting the number of overlapping cells and calculating the area that they covered. The predicted flyable area for juvenile golden eagles in the Alpine region for the same period of time is shown in Figure 4.
+
+![Video 1.](https://cdn.elifesciences.org/articles/98818/elife-98818-video1.mp4.jpg)
+
+**Video 1.:** We used a step-selection approach to determine how juvenile golden eagles responded to topographic conditions during their commuting flights. Topography is a predictor of uplift potential and can be used as a proxy for energy availability for soaring birds. We used a step-selection model to predict flyability across the Alpine region from 1 week to 3 years after emigration. The fundamental energy landscape, defined as the total amount of energy available in the landscape, is constant, but the realized energy landscape, here estimated as flyability, changes. This is because the birds’ ability to perceive and exploit the energy within the landscape improves as they age, making the landscape cheaper to traverse. Flyability quantifies the suitability of a location for efficient flight, with higher values indicating areas where the bird is more likely to benefit from favorable uplifts. It represents the realized energy landscape that a bird can exploit based on the given topographic conditions and its own cognitive and locomotor abilities.
 
 ## Discussion
 
@@ -77,25 +97,25 @@ The energy landscapes maps showed the amount of energy potentially available to 
 
 We argue that the realized energy landscape does not represent the realized ecological niche nor the distribution range of animals, but rather the subset of the fundamental energy landscape that is available to the individual based on its ability to perceive and exploit the energy in the landscape. In our study, the realized movement patterns of the golden eagles within the Alpine region covered a small portion of the area predicted as flyable. This is because the birds’ movement (and thus their realized individual and age-specific movement niches) will be defined not only by the energy landscape, but also by the interplay of philopatry, developmental requirements, the social landscape, and anthropogenic features. As golden eagles age, other crucial behaviors such as transitioning from predominantly scavenging to active hunting are also happening (Nygård et al., 2016). A transition that in itself also might depend on advanced flying skills. Thus, the choice of where to fly will not solely follow an energy-minimizing strategy while moving, but naturally also increasingly accommodate resource use opportunities. Additionally, older transient golden eagles are more susceptible to potentially deadly conflicts with territorial adult birds, influencing their movement decisions as they avoid established territories (Poessel et al., 2016) affecting their landscape of fear and thus their decision landscape overall (Laundré et al., 2001; Gallagher et al., 2017; Williams and Safi, 2021). The distribution of anthropogenic features could also impact the eagles’ decision-making on where to fly (Tack et al., 2020). The strong individual variation that we observed in the birds’ response to distance to ridge lines (Figure 1—figure supplement 1) could indicate variable landscape utilization strategies among the juvenile golden eagles in response to these factors and their interaction.
 
-## Conclusion
+### Conclusion
 
 Spatial maps serve as valuable tools in informing conservation and management strategies by showing the general distribution and movement patterns of animals. These tools are crucial for understanding how animals interact with their environment, including human-made structures. Within this context, energy landscapes play an important role in identifying potential areas of conflict between animals and anthropogenic infrastructures such as wind farms. The predictability of environmental factors that shape the energy landscape has facilitated the development of these conservation tools, which have been extrapolated to animals belonging to the same ecological guild traversing similar environments. However, with recent development of concepts of species-specific (Scacco et al., 2023) and individual-specific energy landscapes (Halsey, 2016), the realistic prediction of animals’ energy landscapes appears a multifaceted challenge. By identifying the distinct dimensions along which individual energy landscapes can vary, particularly along the demographic axis, we enhance our capacity to understand and predict these landscapes. Our research contributes to this broader understanding by revealing the stark influence of ontogeny in defining the aging of the realized energy landscape. By taking inspiration from the ecological niche definitions to conceptualize the energy landscape, we hope to improve further development of this concept, aiding the interpretation of variations in the energy landscape across many axes, both external and internal to the moving animal.
 
 ## Materials and methods
 
-## Bio-logging dataset
+### Bio-logging dataset
 
 We used Global Positioning System tracking data from a long-term study of juvenile golden eagles in the resident population of the Central European Alps. We used data collected for a total of 55 juveniles tracked over 2017–2023 (Supplementary file 1) with a regular sampling schedule of one GPS fix every 20 min during day time (see Zimmermann, 2021 for details on fieldwork procedure and data sampling schedules). Nestlings were fitted with solar-powered loggers manufactured by e-obs GmbH (Munich, Germany) using a leg-loop harness. The weight of the harness and logger (in total maximum 60 g) was below the recommended maximum 3% of the birds’ body mass. We subset the data to correspond to the transient phase of natal dispersal up to 3 years after emigration. We identified emigration timing using recursions to the natal territory (Bracis et al., 2018). If an animal spent more than 14 consecutive days without recursions to a 7 km radius around its nest, we classified it as dispersed. These thresholds were chosen based on expert knowledge of golden eagle behavior in the region. For two animals that had exceptionally large natal territories to start with, we increased the radii to 30 km to compensate for this potential bias.
 
-## Track segmentation
+### Track segmentation
 
 We focused on commuting flights for investigating the energy landscape for the golden eagles. To extract commuting flights, we segmented the tracking data based on ground speed and flight altitude using Expectation-Maximization binary Clustering (Garriga et al., 2016) applied at the population level (i.e., to all individuals). To calculate flight altitude above ground for each tracking point, we first calculated altitude above mean sea level as the difference between altitude above ellipsoid recorded by the bio-logging devices and the Global Geoid Model EGM96 (WGS 84). We then subtracted the ground elevation (Copernicus Digital Elevation Model; 25 m resolution; https://land.coper-nicus.eu/) from altitude above mean sea level as an estimate of flight altitude. We labeled segments with high flight altitude and high speed as commuting flights and used these for further analysis. We sub-sampled the tracking data to hourly intervals to focus on commuting flights that were longer than 1 hr.
 
-## Topographic variables
+### Topographic variables
 
 We used two topographic variables as proxies for uplift availability: TRI and distance to ridge lines. The former describes the topographic heterogeneity of the terrain by calculating the mean of the absolute elevation difference between a cell and its adjacent cells (Riley et al., 1999) and the latter represents a proxy for orographic updrafts generated by deflection of the air current by a physical barrier (Murgatroyd et al., 2018; Bohrer et al., 2012). To extract the ridge lines and TRI values, we used the Copernicus Digital Elevation Model. We identified the ridge lines based on the Weisss landforms classification using TPI, a scale-dependent index which compares the elevation of each cell to the neighboring cells within a given radius (Weiss, 2001). As the landform categories depend on the size of the radius, several TPI classifications at different scales were obtained using different radii (Das et al., 2015; Ilia et al., 2016). We selected a classification using a 10 m inner radius and 200 m outer radius on the basis of the narrow size of the identified ridge lines. Then, we calculated the distance from each pixel to the ridge line pixel using the function proximity raster from SAGA (Conrad et al., 2015) to obtain a distance map to the ridge line. For both TRI and distance to ridge lines, we averaged neighboring cell values to achieve a 100 m cell size.
 
-## Modeling the energy landscape
+### Modeling the energy landscape
 
 We used a step-selection approach (Avgar et al., 2016) to summarize the environmental conditions in which the birds chose to commute. Each pair of consecutive points in the tracking dataset was considered as one step. For each step, we generated 50 random steps that originated at the observed steps’ start point, but had alternative end points to represent alternative movement decisions that the bird could have taken. The location of the alternative end points was selected by drawing from a gamma distribution fitted to the step lengths and a von Mises distribution fitted to the turning angles of all the empirical tracking data. The result was a stratified dataset with one used and 50 alternative points in each stratum.
 
@@ -105,7 +125,7 @@ To test the predictive performance of the model, we computed the normalized RMSE
 
 To better interpret the interaction terms between the topographic variables and week since emigration, we made predictions using the model for different combinations of TRI and week as well as distance to ridge line and week. In the new datasets that we generated to make these predictions, we set the variables that were not represented in the interaction term to their average values and set the grouping factor that represented the stratum as missing data. We made the predictions on the scale of the link function and converted them to values between 0 and 1 using the inverse logit function (Bolker et al., 2022). These predicted values estimated the probability of use of an area based on the model. We interpreted these predicted values as the flyability index, representing the potential energy available in the landscape to support flight, based on the uplift proxies (TRI and distance to ridge line) and the movement capacity (step length) of the birds included in the model.
 
-## Energy landscape maps
+### Energy landscape maps
 
 To investigate the changes in the energy landscape across the ontogenetic axis, we used our model to create prediction maps for weekly increments during the first 3 years after emigration. We made our prediction maps for the entire extent of the Alpine region (‘Perimeter of the Alpine Convention’ layer available via Permanent Secretariat of the Alpine Convention). For each week since emigration, we created a new dataset to make predictions for each 100 m × 100 m cell. We assigned the mean step length value for each given week in the new datasets.
 

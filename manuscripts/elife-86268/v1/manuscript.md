@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00mkhxb43 Department of Biological Sciences, University of Notre Dame Notre Dame United States
+1. Department of Biological Sciences, University of Notre Dame Notre Dame United States ([ROR:00mkhxb43](https://ror.org/00mkhxb43))
 
 † Corresponding author
 

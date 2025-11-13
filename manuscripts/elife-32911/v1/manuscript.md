@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.32911.001 Chromosome replication and transcription occur within a complex nuclear milieu whose functional subdomains are beginning to be mapped out. Here we delineate distinct domains of the fission yeast nuclear envelope (NE), focusing on regions enriched for the inner NE protein, Bqt4, or the lamin interacting domain protein, Lem2. Bqt4 is relatively mobile around the NE and acts in two capacities. First, Bqt4 tethers chromosome termini and the mat locus to the NE specifically while these regions are replicating. This positioning is required for accurate heterochromatin replication. Second, Bqt4 mobilizes a subset of Lem2 molecules around the NE to promote pericentric heterochromatin maintenance. Opposing Bqt4-dependent Lem2 mobility are factors that stabilize Lem2 beneath the centrosome, where Lem2 plays a crucial role in kinetochore maintenance. Our data prompt a model in which Bqt4-rich nuclear subdomains are ‘safe zones’ in which collisions between transcription and replication are averted and heterochromatin is reassembled faithfully.
+Chromosome replication and transcription occur within a complex nuclear milieu whose functional subdomains are beginning to be mapped out. Here we delineate distinct domains of the fission yeast nuclear envelope (NE), focusing on regions enriched for the inner NE protein, Bqt4, or the lamin interacting domain protein, Lem2. Bqt4 is relatively mobile around the NE and acts in two capacities. First, Bqt4 tethers chromosome termini and the mat locus to the NE specifically while these regions are replicating. This positioning is required for accurate heterochromatin replication. Second, Bqt4 mobilizes a subset of Lem2 molecules around the NE to promote pericentric heterochromatin maintenance. Opposing Bqt4-dependent Lem2 mobility are factors that stabilize Lem2 beneath the centrosome, where Lem2 plays a crucial role in kinetochore maintenance. Our data prompt a model in which Bqt4-rich nuclear subdomains are ‘safe zones’ in which collisions between transcription and replication are averted and heterochromatin is reassembled faithfully.
 
 ## Introduction
 
@@ -35,13 +35,25 @@ Notwithstanding the tendencies of specific chromatin regions to associate with t
 
 ## Results
 
-## NE proteins organize into distinct domains
+### NE proteins organize into distinct domains
 
 To chart the organization of key proteins at the NE, we used super-resolution fluorescence imaging (the OMX system) (Dobbie et al., 2011) to view endogenously tagged Bqt4, Man1 and Lem2 (see Materials and methods). Consistent with previously described electron microscopy images (Chikashige et al., 2009), we observe that Bqt4 does not uniformly distribute around the NE but rather appears in puncta, indicating spatial heterogeneity in NE composition (Figure 1A). To address the composition of regions that lack detectable Bqt4 (dark areas in Figure 1A), we simultaneously imaged Bqt4 and Man1 (Figure 1B) or Bqt4 and Lem2 (Figure 1C). Bqt4 and Man1 signals occasionally overlap but more often, they do not (Figure 1C, Figure 1—figure supplement 1A). Domain partitioning is also seen when simultaneously viewing Bqt4 and Lem2 (Figure 1C, Figure 1—figure supplement 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative super-resolution microscopy (structured illumination, SIM) image of a live cell harboring Bqt4-GFP. Lateral resolution is 120–150 nm. Arrows indicate regions with relatively low abundance of detectable fluorophore. Scale bars represent 2 µm in all images. (B) SIM images of representative fixed cells expressing Man1-GFP and Bqt4-mCherry, and (C) Lem2-GFP and Bqt4-mCherry. Colocalization quantitations and procedures are described in Figure 1—figure supplement 1A. (D) DeltaVision deconvolution fluorescence imaging of live cells harboring Lem2-GFP and Man1-tdTomato. Quantitation is shown in Figure 1—figure supplement 1C. (E) A representative single z-plane image of a live wt cell expressing Lem2-GFP and histone H3-mCherry. Lem2-GFP is detectable around the NE with an intense dot beneath the SPB. (F) In the absence of Bqt4, Lem2 fails to encircle the NE but remains beneath the SPB. Lateral resolution for (E–F) ~300 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Pearson correlation coefficients derived from SIM imaging of fixed cells. Values indicate levels of overlap between Man1-GFP and Bqt4-mCherry or Lem2-GFP and Bqt4-mCherry were measured using Applied Precision softWorX software. Horizontal black lines indicate mean (Man1 Lem2: 0.143, n = 38; Lem2 Bqt4: 0.37, n = 22) and SD. (B) Additional examples of simultaneous live imaging of Man1-tdtomato and Lem2-GFP as in Figure 1. (C) Colocalization of the indicated protein pairs as assessed by live microscopy is quantified as in (A).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Bqt4 is required for the localization of Lem2 around the NE. Snapshots of WT and bqt4Δ cells expressing Lem2-GFP and Pcp1-RFP. The visible Lem2-GFP dot in bqt4Δ cells colocalizes with the SPB (marked by Pcp1-RFP). The images are maximal intensity projections of imaged cross-sections through the entire nucleus. (B) Deletion of Bqt4 does not affect localization of Man1-GFP, Nup107-GFP and Cut11-GFP. Live cell imaging was performed in cells expressing the indicated tagged membrane proteins in wt and bqt4Δ cells.
+
 The most intense Lem2 pool appears just beneath the SPB, while a less prominent subset of Lem2 molecules localizes to a ring around NE (Figure 1E). Remarkably, the ring of Lem2 is diminished to near-invisibility in cells lacking Bqt4, while a single Lem2 focus remains (Figure 1E and Figure 1—figure supplement 2A), colocalizing with the SPB component Pcp1 (Figure 1—figure supplement 2A) (Gonzalez et al., 2012). In contrast, the localization patterns of the NPC protein Nup107 (Baï et al., 2004), the NE component Cut11 (West et al., 1998), and Man1 are all independent of Bqt4 (Figure 1—figure supplement 2B). Hence, Bqt4 is specifically required for distribution of Lem2 around the NE.
 
-## Bqt4 is highly mobile within the NE
+### Bqt4 is highly mobile within the NE
 
 The distinct localization patterns for Bqt4, Man1 and Lem2, along with the observation that Bqt4 controls the mobility of Lem2 around the NE, suggest that protein dynamics differ among these NE components and in different NE regions. Indeed, variable levels of dynamicity have previously been reported for NE proteins (Ellenberg et al., 1997; Rabut et al., 2004). To explore this, we used fluorescence recovery after photobleaching (FRAP) to assess turnover rates. Figure 2A shows a representative nucleus harboring Bqt4-GFP. After capturing a reference ‘pre-bleach’ image, we photobleached a region of interest (ROI) encompassing a segment of the NE (Figure 2A). Bqt4-GFP signal inside the photobleached window recovers within ~12 s (Figure 2B; half-life 5.029 s). Moreover, the reappearance of Bqt4-GFP signal within the ROI consistently shows a distinct recovery pattern; rather than uniformly recovering throughout the bleached NE segment, the signal appears progressively from the flanking NE edges to the center of the bleached region (Figure 2A), suggesting that dissociated Bqt4-GFP is replenished by movement around the NE. While Bqt4 in the unbleached portion of the NE may be continually replenished from nucleoplasmic pools, the described recovery pattern cannot be explained by exchange with a non-membrane bound pool of Bqt4.
 
@@ -51,17 +63,124 @@ The distinct localization patterns for Bqt4, Man1 and Lem2, along with the obser
 
 The substantial reduction in Lem2-GFP levels encircling the NE in bqt4Δ cells prevents the robust use of FRAP for measuring Lem2 turnover around the NE in this setting. However, we were able to measure the turnover rate of Lem2-GFP localized beneath the SPB in both wt and bqt4∆ cells. At this site, the half life of Lem2 residency remains unaffected upon Bqt4 loss (Figure 2C; Half life, wt: 23.11 s, bqt4∆: 23.99 s). Hence, the two distinct pools of Lem2, beneath the SPB and around the NE, are controlled by different mechanisms, with Bqt4 controlling the pool of Lem2 that is distributed away from the SPB region around the NE.
 
-## Lem2 localization beneath the SPB is regulated by the LINC-interacting protein Csi1
+### Lem2 localization beneath the SPB is regulated by the LINC-interacting protein Csi1
 
 As Lem2 concentrates beneath the SPB, we conjectured that the LINC complex controls Lem2 accumulation at this site. Csi1 (chromosome segregation impaired protein 1) associates with Sad1 and promotes the robust association of centromeres with the LINC complex (Hou et al., 2012), making Csi1 a candidate regulator of Lem2 localization to this region. While the intense Lem2 focus colocalizes with the SPB component Sid4 in wt cells (Chang and Gould, 2000), this colocalization is abolished in 85% of csi1∆ cells as evinced by the absence of a Lem2-GFP dot beneath the SPB (Figure 3A). Notably, however, the ring of Lem2-GFP around the NE remains in csi1∆ cells. Therefore, Csi1 either recruits or stabilizes Lem2 beneath the SPB.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig3-v1.jpg)
+
+**Figure 3.:** (A) High-resolution images (~300 nm lateral resolution) show that Lem2 localization beneath the SPB requires Csi1. Lem2-GFP and Sid4-mRFP overlap in all WT cells, but fail to overlap in 85% of csi1Δ cells. Scale bars represent two microns in all images. (B) Deletion of bqt4+ restores detectable Lem2-GFP dot at the SPB in csi1Δ cells. (C) FRAP of the visible Lem2-GFP dot as described in Figure 2C. Non-linear fit of the fluorescence recoveries for the indicated strains show curtailed half-life for Lem2-GFP at the SPB in the bqt4Δ csi1Δ double deletion strains. Half-lives: WT 23.11 s, n = 12; bqt4Δ half-life 23.99 s, n = 10; bqt4Δ csi1Δ half-life 11.24 s, n = 18. Mobile fraction (plateau) for WT: 72%, bqt4∆: 91%, bqt4∆csi1∆: 100%. Goodness of fit (R2) for WT: 0.961, bqt4∆: 0.974, bqt4∆csi1∆: 0.956. FRAP could not be performed in the csi1Δ background due to lack of visible Lem2 at the SPB. (D) SIM (120–150 nm lateral resolution) images of representative fixed cells expressing Bqt4-GFP and Taz1-mCherry, (E) Man1-GFP and Taz1-mCherry, and (F) Lem2-GFP and Taz1-mCherry. Insets show magnifications of boxed regions. (G) Co-localization between Taz1 and the indicated proteins was quantified as Pearson correlation coefficients, using the Applied Biosystems softWorX software.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Lem2 and Taz1 signals tend not to overlap. Quantitation is shown in Figure 3G.
+
 As Bqt4 promotes the distribution of Lem2 around NE while Csi1 concentrates Lem2 beneath the SPB, we wondered where Lem2 would localize when both these factors are missing. In cells lacking both Bqt4 and Csi1, Lem2-GFP is greatly diminished from the ring around the NE but still strongly detectable beneath the SPB (Figure 3B). However, FRAP analysis reveals that the Lem2 turnover rate is substantially increased in csi1∆ bqt4∆ cells relative to wt or bqt4∆ cells (Figure 3C). Hence, while the initial Lem2 recruitment to the LINC region beneath the SPB is controlled independently of Bqt4 and Csi1, Csi1 is required to stabilize Lem2 at this region; this stabilization is required to counterbalance the Bqt4-dependent mobilization of Lem2 away from the LINC region.
 
-## Bqt4 tethers telomeres and the mat locus specifically while they are replicating
+### Bqt4 tethers telomeres and the mat locus specifically while they are replicating
 
 Bqt4 has been implicated in the interphase positioning of telomeres, which form two to three clusters at the NE (Funabiki et al., 1993; Chikashige et al., 2009). To assess whether telomeres localize specifically to Bqt4-containing regions, we visualized telomeres in cells harboring the various tagged NE proteins (Figure 3D–F). Consistent with previous observations (Dehé et al., 2012; Funabiki et al., 1993), we observe two to three Taz1 foci in each nucleus. Figure 3D shows a single focal plane that contains a single Taz1 focus; this telomeric focus colocalizes with Bqt4-GFP (Figure 3D). In contrast, telomeres show markedly lower degrees of colocalization with Man1 or Lem2 (Figure 3E–G, Figure 3—figure supplement 1). Therefore, telomeres have a higher propensity to localize to Bqt4-rich than Man1- or Lem2-rich NE domains.
 
 Centromeres localize to the NE during interphase, forming a cluster beneath the SPB (Funabiki et al., 1993). The intense focus of Lem2 detectable in this region (Figure 4A) is consistent with ChIP experiments showing an interaction between Lem2 and centromeres (Barrales et al., 2016; Tange et al., 2016). To investigate the exclusivity of centromere-Lem2 colocalization, we visualized endogenously mCherry-tagged Mis6, an inner kinetochore component (Takahashi et al., 2000). Consistent with previous observations (Hiraoka et al., 2011), Mis6 sequesters within a Lem2-enriched domain beneath the SPB (Figure 4A, Figure 4—figure supplement 1). In contrast, Mis6 does not colocalize with Man1 (Figure 4B, quantified in Figure 4—figure supplement 1B). To observe the centromeric DNA sequences immediately surrounding the kinetochore region, we imaged cells that contain mCherry-tagged tet repressor (tetR-mCherry) and an array of tetracycline operators (tetO) inserted within the imr of centromere I. The marked imr and the SPB (Sid4-GFP) colocalize in 100% of cells (Figure 4—figure supplement 1C). We also imaged cells that contain LacI-CFP and an array of Lac operators (LacO) integrated ~10 Kb away from the otr of centromere III (Ding et al., 2004). In contrast to the central imr, this distal otr region colocalizes with the SPB in only 12% of cells (Figure 4—figure supplement 1C); in the majority of cells, otr appears adjacent to, rather than superimposed upon, the SPB. Hence, the central core region and imr localize exclusively to the SPB region, while the pericentric otr sequences associate with NE regions away from the SPB. Collectively, these observations reveal a NE with distinct microdomains that are exclusively enriched with Man1, Lem2 or Bqt4, and interact with distinct chromosomal regions.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig4-v1.jpg)
+
+**Figure 4.:** (A) SIM images of representative fixed cells expressing Lem2-GFP and Mis6-mCherry, and (B) Man1-GFP and Mis6-mCherry. Inset in (B) shows magnification of the boxed region. (C) Bqt4 regulates telomere positioning while Lem2 does not. Snapshots of live cells harboring Tel1L-lacO/I-GFP and Cut3-mCherry (to mark the NE) were captured, the distance between the telomere and NE measured, and distances categorized based on the nuclear zoning assay (see Materials and methods) in which the outer third of the nuclear volume is considered the periphery. Dashed red line indicates the level of peripheral zoning expected for random localization within the nucleus (33%). The Y-axis indicates percent of imaged cells in which telomere-NE distance is categorized as Zone I (the most peripheral zone with a maximum distance of ~0.22 µm from the NE). Table 1 shows statistics for the data here and in (D–F). Error bars indicate SD. **** indicates p≤0.0001 as determined by a Student’s t-test. (D) Imaging, quantitation and plotting as in C. The mat locus and cut3 gene were visualized via lacO/I arrays inserted <40 kb away; telomere clusters were visualized via Taz1-mCherry. (E–F) Imaging and quantitation as described in A (n > 80). (G) Colocalization of Taz1-mCherry and Pol α-GFP in the indicated strains was assessed using automated image-analysis on 800–1000 cells, utilizing a MATLAB script that uses a constant threshold level for detecting dots and assigning colocalization, and measures distance to the edge of the nucleus. Arrowhead indicates a site of Polα/telomere colocalization. (H) Data from G were plotted as described in C.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative SIM image of a cell harboring Lem2-GFP and Mis6. White arrow indicates colocalization. (B) All cells expressing Lem2-GFP and Mis6-mCherry show colocalization of the two fluorescent signals, whereas only 10.5% of cells expressing Man1-GFP and Mis6-mCherry show colocalization. SIM images were captured as described in Figure 1. (C) Cells with marked SPB (Sid4-GFP) and tagged centromere I (lacO/I-RFP inserted at left end of the central core sequence) were imaged using time-lapse microscopy and the distance between the centromere and the SPB was measured. Plot shows percent cells in which distance between SPB and centromere I was 0 µm (red bar, 100%). Cells harboring lacO/I-CFP inserted more distally, 10 Kb from the pericentromeric repeats of centromere III, were also imaged, and distances between this pericentromere site and the SPB (Sid4-mRFP) plotted (blue bars). (D) Heterochromatin is not required for telomere tethering to the NE. wt and clr4Δ cells with tagged Tel1L were imaged as described in Figure 4C. Tel1L remains at the periphery in clr4Δ cells at similar levels to wt cells. Imaging, quantitation and plotting was carried out as described in Figure 4.
+
+**Table 1.**
+ Statistical significance of chromosomal localization data in Figure 4.n1 and n2 denote total number of scored loci in cells from two biological replicates (independent strains). P values, from two-tailed Student’s t-tests, indicate the significance of the difference between the observed number of loci in Zone one and the expected random distribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Locus genotype</th>
+      <th>Early/Mid-s</th>
+      <th>Late S/G</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tel 1L WT</td>
+      <td>n1 = 112,, n2 = 93 p&lt;0.000001</td>
+      <td>n1 = 151, n2 = 180 p&lt;0.000001</td>
+    </tr>
+    <tr>
+      <td>Tel 1L bqt4Δ</td>
+      <td>n1 = 110, n2 = 103 p&lt;0.000001</td>
+      <td>n1 = 143, n2 = 112 p=0.00986</td>
+    </tr>
+    <tr>
+      <td>Tel 1L lem2 Δ</td>
+      <td>n1 = 110, n2 = 86 p&lt;0.000001</td>
+      <td>n1 = 96, n2 = 160 p&lt;0.000001</td>
+    </tr>
+    <tr>
+      <td>mat WT</td>
+      <td>n1 = 55, n2 = 49 p=5.0 × 10−5</td>
+      <td>n1 = 85, n2 = 95 p=1.0 × 10−5</td>
+    </tr>
+    <tr>
+      <td>mat bqt4Δ</td>
+      <td>n1 = 70, n2 = 52 p=0.79551</td>
+      <td>n1 = 91, n2 = 90 p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>cut3 WT</td>
+      <td>n1 = 86, n2 = 73 p=0.0459</td>
+      <td>n1 = 57, n2 = 113 p=0.97412</td>
+    </tr>
+    <tr>
+      <td>cut3 bqt4Δ</td>
+      <td>n1 = 94, n2 = 90 p=0.99545</td>
+      <td>n1 = 78, n2 = 125 p=0.99801</td>
+    </tr>
+    <tr>
+      <td>Taz1 WT</td>
+      <td>n1 = 51, n2 = 74 p&lt;0.000001</td>
+      <td>n1 = 85, n2 = 87 p&lt;0.000001</td>
+    </tr>
+    <tr>
+      <td>Taz1 bqt4Δ</td>
+      <td>n1 = 67, n2 = 93 p&lt;0.000001</td>
+      <td>n1 = 88, n2 = 86 p=5.0 × 10−5</td>
+    </tr>
+    <tr>
+      <td>Pot1 WT</td>
+      <td>n1 = 79, n2 = 65 p&lt;0.000001</td>
+      <td>n1 = 54, n2 = 68 p&lt;0.000001</td>
+    </tr>
+    <tr>
+      <td>Pot1 bqt4Δ</td>
+      <td>n1 = 64, n2 = 96 p&lt;0.000001</td>
+      <td>n1 = 59, n2 = 81 p=0.0293</td>
+    </tr>
+    <tr>
+      <td>Pot1 taz1Δ</td>
+      <td>n1 = 60, n2 = 63 p&lt;0.000001</td>
+      <td>n1 = 88, n2 = 96 p&lt;0.000001</td>
+    </tr>
+    <tr>
+      <td>Pot1 taz1Δ bqt4Δ</td>
+      <td>n1 = 65, n2 = 100 p=0.00025</td>
+      <td>n1 = 64, n2 = 149 p=2.0 × 10−5</td>
+    </tr>
+    <tr>
+      <td>mat swi6Δ</td>
+      <td>n1 = 72, n2 = 60 p=1.0 × 10−5</td>
+      <td>n1 = 103, n2 = 120 p=2.0 × 10−5</td>
+    </tr>
+    <tr>
+      <td>mat swi6Δ bqt4Δ</td>
+      <td>n1 = 77, n2 = 75 p=0.0002</td>
+      <td>n1 = 100, n2 = 59 p=0.0459</td>
+    </tr>
+  </tbody>
+</table>
 
 The specificity of Bqt4-mediated NE localization for telomeres might be envisioned to stem from their heterochromatic nature (Cooper et al., 1997). However, H3K9me-containing heterochromatin is dispensable for telomeric tethering to the NE, as Tel1L is not dislodged from the NE in clr4Δ cells (Figure 4—figure supplement 1D). Hence, although clr4+ deletion was reported to delocalize the mat locus (Alfredsson-Timmins et al., 2007), telomeres are tethered to the NE in a H3K9me-independent manner. This is consistent with the observation that taz1Δ telomeres, in which silencing and H3K9 methylation are vastly reduced, nonetheless retain NE localization (Zaaijer et al., 2016).
 
@@ -77,15 +196,35 @@ Swi6 binds heterochromatic DNA at the mat locus, and causes early replication by
 
 The subnuclear positioning of replicating DNA has been visualized via tagged replication factors, such as the catalytic subunit of DNA polymerase α (Polα) (Meister et al., 2007; Natsume et al., 2008), which localizes to foci proposed to be the sites of active DNA replication. One or two such replication foci are observed at the NE during late S/G2 (Meister et al., 2007; Natsume et al., 2008). To examine whether telomeres colocalize with these late replication foci, we used cells expressing both Taz1-mCherry and Polα-GFP. Figure 4G shows a representative nucleus in late S/G2. Three Taz1 foci of similar intensity are visible in the shown z-plane; a fourth Taz1 focus is less intense as it represents an out-of-focus telomere in a different z-plane. Using the fluorescence background in the nucleus to approximate its boundary, we scored the position of the colocalized dots relative to the nuclear periphery (Figure 4H). Consistent with published data (Meister et al., 2007), we observe significant colocalization between telomeres and replication foci at the NE in wt cells. In contrast, while Taz1 and Polα show colocalization in the absence of Bqt4, this colocalization does not occur at the NE (Figure 4H), again indicating that the tendency of telomeres to replicate at the periphery requires Bqt4-mediated tethering.
 
-## Bqt4 is required for resistance to DNA damaging agents during S-phase
+### Bqt4 is required for resistance to DNA damaging agents during S-phase
 
 The role of Bqt4 in localizing replicating telomeres and mat to the NE raises the question of whether such localization is important for their replication. To address this, we examined the effects of bqt4+ deletion on DNA replication-related processes. Bqt4 is required for cellular resistance to agents that induce DNA damage during S-phase, as bqt4Δ cells are hypersensitive to both hydroxyurea (HU) and methyl methanesulfonate (MMS; Figure 5A); in contrast, Bqt4 is dispensible for resistance to bleomycin, which induces DNA damage independently of DNA replication (Manolis et al., 2001), and to the microtubule destabilizing agent thiabendazole (Figure 5B, Figure 5—figure supplement 1A). These results demonstrate a requirement for either Bqt4 per se and/or Bqt4-mediated NE tethering for robust DNA replication. To delineate these possibilities, we utilized strains harboring a deletion of the transmembrane domain of Bqt4 (Bqt4-∆TM); Bqt4ΔTM has been shown to delocalize from the NE and diffuse throughout the nuclear interior (Chikashige et al., 2009). GFP-Bqt4-ΔTM confers similar MMS hypersensitivity to that of bqt4+ deletion while GFP-Bqt4 alone does not (Figure 5—figure supplement 1B), indicating that the NE localization of Bqt4 is required for resistance to MMS.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Five-fold serial dilutions of log-phase cultures of the indicated strains were stamped onto media containing HU, MMS, or Bleomycin (see Materials and methods). To control for the effectiveness of Bleomycin, we used telomerase-deficient survivals that have circular chromosomes, previously shown to be bleomycin hypersensitive (Jain et al., 2010).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The transmembrane domain of Bqt4 (in the context of full length Bqt4) is required for resistance to MMS. Addition of GFP-Bqt4, but not GFP-Bqt4ΔTM, rescues the MMS sensitivity of bqt4Δ cells. Repeated rows indicate independent isolates of identical genotype. (B) bqt4Δ cells are not hypersensitive to the microtubule-destabilizing drug thiabendazole (TBZ). bqt4 deletion, however, does cause synthetic TBZ sensitivity with dcr1Δ. As expected (Reddy et al., 2011; Reyes-Turcu et al., 2011; Trewick et al., 2007), epe1 deletion rescues the growth defects and TBZ-hypersensitivity of dcr1Δ cells as well as dcr1Δbqt4Δ cells.
+
 We wondered if the DNA damage sensitivity of bqt4Δ cells stems from the heterochromatic nature of Bqt4-tethered regions, in which case the abolition of H3K9 methylation conferred by clr4+ deletion would suppress the damage sensitivity. However, clr4Δ confers synthetic lethality with bqt4Δ on MMS (Figure 5C). Therefore, Bqt4 and Clr4 play separate, redundant roles in controlling MMS resistance. This suggests a scenario in which localization becomes particularly crucial when Bqt4-interacting chromosome regions are transcriptionally derepressed; enhanced transcription at these difficult-to-replicate regions may lead to excessive transcription/replication conflicts, causing severe MMS hypersensitivity.
 
-## Bqt4 and Lem2 microenvironments regulate telomeric and centromeric heterochromatin
+### Bqt4 and Lem2 microenvironments regulate telomeric and centromeric heterochromatin
 
 The hypersensitivity of bqt4Δ cells to agents that challenge DNA replication, along with the heterochromatic nature of the Bqt4-tethered chromosome regions, raised the question of whether heterochromatin is altered by Bqt4 loss. To assess this, we created strains in which chromatin was induced to position away from both the Lem2 and Bqt4 microdomains. Given our observation that Lem2 concentrates beneath the SPB while Man1 and Bqt4 occupy distinct and largely non-overlapping positions around the NE, we sought to move replicating chromatin to Man1-enriched regions. An ectopic tethering system was achieved by fusing the C-terminus of Man1 with the GFP-binding protein (GBP) (Dodgson et al., 2013), which was in turn fused to mCherry. Man1-GBP-mCherry localizes around the NE (Figure 6A), as does unmodified Man1. To tether replicating DNA to Man1-GBP-mCherry, we utilized Polα-GFP (Damagnez et al., 1991), which fully complements wt Pol α function (Meister et al., 2007) (Figure 6—figure supplement 1). In cells lacking GBP, Polα-GFP shows diffuse localization throughout the nucleus during early S-phase (Figure 6B). In contrast, Polα-GFP accumulates around the NE in S-phase cells harboring Man1-GBP (Figure 6A). To examine the location of active DNA replication, we visualized the single-strand DNA binding RPA (replication protein A) component Rad11, which localizes to replication forks (as well as DNA damage sites). In cells lacking GBP, multiple Rad11 foci are visible throughout the nucleus during S phase while Rad11 signal is diffuse in nonreplicating cells (Figure 6—figure supplement 2A) (Zaaijer et al., 2016). By contrast, in nearly all Man1-GBP/Pol α-GFP cells, the Rad11 foci colocalize with peripherally localized Polα-GFP (Figure 6—figure supplement 2B), suggesting that the bulk of DNA replication takes place at the Man1 microdomains; Taz1-Man1 colocalization can also be seen to increase in a Man1-GBP background when Polα-GFP is introduced (Figure 6—figure supplement 2C–E), suggesting the telomere replication is moved from Bqt4 microdomains to Man1-domains. Hence, this approach enabled us investigate the effect of inducing the bulk of DNA replication to occur at the periphery at sites distinct from those rich in Lem2 and Bqt4.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of system designed to move replication forks to the NE. Coexpression of Polα-GFP and Man1-GBP recruits Polα-associated (replicating) chromatin to Man1-rich subdomains of the NE. Images below schematic show remobilization of Pol α-GFP to colocalize with Man1-GBP-mCherry encircling the nucleus. (B) In cells lacking Man1-GBP, Polα-GFP shows diffuse localization within the nuclear interior. (C) ChIP-seq experiments were performed as described in text and Methods, using H3K9Me2 antibody (ab1220, Abcam). (D) Ribbon line-plot of enrichment of H3K9Me over the ade6+ locus in three independent WT isolates. The solid blue line indicates median; width of the ribbon indicates range of enrichment levels among the three isolates. (E–F) Ribbon line-plot of enrichment of H3K9Me2 at centromere of Chr III. The central core region is indicated by the yellow box. The sharp peaks flanking the core region (F) align to small repetitive regions (~25 bp) present in multiple regions across the genome; it is therefore not possible to determine their source.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Five-fold serial dilutions of the indicated strains are shown. While wt cells expressing ura4+ grow on media lacking uracil and fail to grow in the presence of FOA, ura4-D18 cells fail to grow on -URA but grow on FOA. Cells harboring ura4+ at the centromeric imr1R locus grow on FOA due to silencing at imr1R; these cells also show a partial loss of viability on -URA due also to imr1R silencing. This silencing is intact in cells carrying Polα/Swi7-GFP.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Three representative wt cells showing Rad11-mCherry visible throughout the nucleus (single Z-plane images of live cells). (B) Each row shows a representative live cell expressing Pol α-GFP Man1-GBP and Rad11-mCherry (single Z-plane images of the nuclei). Pol α-GFP remobilizes to the NE, forming a fluorescent ring. Rad11 also appears to remobilize to the NE, with cells having lower detectable Rad11-mCherry signal in the nuclear interior compared to wt cells (compare with A). (C) Taz1 tends to localize to Man1-poor regions (quantified in (E)) in a wt setting. Imaging performed on DeltaVision microscope. (D–E) In cells harboring the Man1-GBP/Polα-GFP tethering system, the frequency of Taz1/Man1 overlap increases. (D) Imaging as in (C). (E) Pearson correlations coefficients defining degree of colocalization between Taz1-mTurquoise and Man1-GBP-mCherry were determined using Applied Precision softWorX software. While Taz1 rarely colocalizes with Man1 in a wt scenario, GBP- mediated recruitment of Polα-GFP pulls replicating telomeres to Man1 sites.
 
 To detect changes in heterochromatin enriched with H3K9me2, we used a modified ChIP-Seq protocol that entails spiking every sample with chromatin from a strain in which the endogenous ade6+ gene has been deleted and ectopically inserted within the pericentric heterochromatin of centromere I. As all the experimental strains used contain only the single endogenous copy of ade6+, which lies in a euchromatic region (Cam et al., 2005), the signal emanating from ectopic ade6+ serves as a constant reference. This approach for normalization of H3K9me2 enrichment levels is similar to the previously described ChIP-Rx method (Orlando et al., 2014). We mixed a liquid culture of the reference (spike) strain at 1:4 ratio with each sample of the experimental cultures (Figure 6C). The resulting spiked samples were then cross-linked and processed for ChIP. Figure 6D shows the enrichment of H3K9me2 over the ade6 open reading frame, confirming our ability to detect the spike reads at the indicated spike ratio. To validate this normalization approach, we compared three independent wt strains with three independent dcr1Δ strains known to have vastly reduced levels of pericentric H3K9me2 (Hall et al., 2002; Volpe et al., 2002). After normalizing to the reads obtained at the ade6 locus (no normalization to input), the number of reads covering the heterochromatic pericentromeres showed no significant variation among the wt strains (Figure 6E). In contrast, the strains lacking Dicer (Hall et al., 2002; Volpe et al., 2002) are similar to each other but show substantially reduced read coverage relative to wt at the pericentromeric regions (Figure 6E). Hence, normalization to the spike is sufficient to eliminate technical variations introduced across multiple samples.
 
@@ -93,13 +232,25 @@ Cells harboring Man1-GBP and Polα-GFP were subjected to ChIP-Seq as described a
 
 To assess the effect of NE-proximal replication on subtelomeric heterochromatin, we performed ChIP-Seq on three independent bqt4Δ isolates. In a wt background, the 35 Kb region near the left end of Chr I is enriched with H3K9me2 (Figure 7A). In the absence of Bqt4, H3K9me2 levels are increased over this subtelomeric region (Figure 7A); subtelomere 2L also shows increased H3K9me2 enrichment in the bqt4∆ setting (Figure 7B). Moreover, while a sharp decrease in H3K9me2 enrichment is noticeable at the boundary between telomeric heterochromatin and the euchromatic chromosome arm in wt cells, this distinct H3K9me2 transition zone is not observed in bqt4Δ cells, in which additional H3K9me2 peaks extend into adjacent, normally euchromatic, regions. Telomere proximal regions at other chromosome ends also display defective H3K9me2 organization (Figure 7—figure supplement 1A). However, non-telomeric heterochromatic regions, such as that surrounding the mei4 gene (1.4 Mb from Tel2L) (Zofall et al., 2012), show normal H3K9me2 profiles in the absence of Bqt4 (Figure 7—figure supplement 1B). In contrast to subtelomeres, pericentric H3K9me2 enrichment is slightly reduced by bqt4+ deletion (Figure 7—figure supplement 1A) and H3K9me2 enrichment at the mat locus is substantially reduced (Figure 7—figure supplement 2A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig7-v1.jpg)
+
+**Figure 7.:** (A–B) ChIP-seq experiments (H3K9Me2) with three independent isolates of each genotype. Plot annotation as described in Figure 6D. (C) Five-fold dilutions of cells harboring the indicated genotypes and ura4+ gene inserted~7 kb from the right end of chromosome II. The two bqt4Δ rows contain cultures of two independent isolates. (D) Experiment performed as described in C, with five independent bqt4Δ isolates. (E–F) ChIP-Seq data covering the left end of Chr II is plotted as described in Figure 6D. (G) ChIP-seq data for centromeric region of Chr III.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Plots of ChIP-Seq data comparing H3K9Me2 enrichment between WT (blue) and bqt4Δ (red) cells at (A) the right end of chromosome II, (B) the mei4 heterochromatin island, and (C) centromere of Chr III.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/32911/elife-32911-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Bqt4 regulates H3K9Me2 levels at the mat locus. ChIP-seq coverage of the mat locus comparing H3K9Me2 enrichment between WT (blue) and bqt4Δ (red) cells. The cenH region (purple box) is homologous to the cenH sequences within the pericentromeric regions; therefore, it is not possible to assign coverage here to the mat locus; this region has been masked to allow clear view of the remainder of the region (Pickrell et al., 2011). H3K9Me2 enrichment is higher at the centromere relative to the mat locus (compare the y-axis with Figure 7—figure supplement 1). (B) Consistent with published data (Chikashige et al., 2009), deletion of bqt4 does not affect silencing of genes placed at ~500 bp away from the telomeres. Top diagram illustrates the genotype of the strain used, with his + and ura4+ genes inserted at the ends of Chr I and II, respectively. Overnight cultures grown at 32°C were counted and diluted before placing 100 cells on the indicated media in triplicate. The grown colonies were counted and expressed here as percent of plated cells that formed a colony. Error bars indicate variation between the triplicate plates. wt cells fail to form colonies on media lacking uracil or histidine as the ectopic ura4+ and his3+ genes are silenced. clr4Δ cells form colonies on media lacking uracil or histidine (green and yellow bars) due to loss of silencing. bqt4Δ cells, similar to wt cells, are unable to form colonies on -URA or -HIS, indicating repression of ura4+ and his3+.
+
 To probe our ChIP-seq observations with a physiological assay, we utilized a strain harboring a ura4 reporter gene inserted 7 Kb from the chromosome end (Figure 7C). This ectopic ura4 gene is known to be transcriptionally repressed and bound by Swi6 in wt cells (Kanoh et al., 2005), conferring poor growth on media lacking uracil (-ura). The same wt strain shows robust growth on media containing uracil and 5-Fluoroorotic acid (FOA), which is toxic to cells expressing ura4. This is largely true in a bqt4Δ setting as well, while cells lacking Swi6 show the expected derepression of ura4. However, a subtle but noticeable difference emerges when comparing the growth of wt and bqt4∆ strains on -ura; the bqt4∆ strains grow more poorly, indicating stronger repression of ura4 expression. In a similar experiment using cells with ura4 inserted 11 Kb from the chromosome end (Figure 7D), we found ura4 repression, consistent with previous observations (Kanoh et al., 2005). However, substantial growth variability emerged among five bqt4∆ isolates, with one showing similar growth to wt (poor on -ura and robust on FOA) and three bqt4∆ isolates (Figure 7D, rows 4–6) showing robust growth on both -ura and FOA, indicating enhanced variegation. Hence, the more centromere-proximal ura4 reporter is repressed in the absence of Bqt4, but can be derepressed under selection for ura4 prototrophy. Therefore, Bqt4 is dispensable for subtelomeric silencing, but the extent and robustness of subtelomeric silencing are both limited by the presence of Bqt4. In contrast to the subtelomeres, Bqt4 does not appear to regulate silencing at the telomeric regions (~500 bp from chromosome end; Figure 7—figure supplement 2B).
 
 To determine whether the effect of Bqt4 on telomeric heterochromatin is mediated by tethering to the Bqt4-adjacent microenvironment, we examined H3K9me2 enrichment at telomeres in the induced tethering strains harboring Man1-GBP and Polα-GFP. In these strains, Bqt4 is present but DNA replication is induced to take place away from the Bqt4 microdomain. At Tel2L, the amplitudes of H3K9me2 peaks are elevated in the’ induced tethering’ background relative to wt (Figure 7E); this held true for other subtelomeres as well. Furthermore, the boundary regions appear to be affected in a manner resembling that of the bqt4Δ setting. Therefore, telomere replication in Man1-adjacent, rather than Bqt4-adjacent, microdomains leads to mis-regulated H3K9me2 maintenance.
 
 As induced replication near Man1 affects both subtelomeric and centromeric H3K9me2, we sought to address the possibility that decreased levels of centromeric H3K9me2 result from the increase at subtelomeres. To tether telomeric regions to Man1 without altering pericentric localization, we performed ChIP-seq in cells expressing Rap1-GFP and Man1-GBP; in this scenario, the Rap1-bound telomeres will localize to Man1 domains while centromere replication is unaffected. In Man1-GBP/Rap1-GFP cells, subtelomeric H3K9me2 increases in Man1-GBP/Rap1-GFP cells to an extent similar to that seen in Man1-GBP/Polα-GFP cells (Figure 7F). Centromeric H3K9me2 peak amplitudes are modestly reduced in this scenario, but this reduction is minor compared with the reduction seen in Man1-GBP/Polα-GFP scenarios (compare Figure 6F with Figure 7G). Hence, we suspect that while titration effects due to increased subtelomeric H3K9me2 levels contribute modestly to the pericentric effect of inducing replication near Man1, the Bqt4-microdomain that is at least partially vacated in the Man1-GBP/Polα-GFP scenario regulates pericentric replication directly.
 
-## Lem2 and Bqt4 become crucial for viability in the absence of Dcr1
+### Lem2 and Bqt4 become crucial for viability in the absence of Dcr1
 
 The foregoing results outline heterochromatin replication and assembly functions of Lem2- and Bqt4-adjacent microdomains, but also demonstrate that Bqt4 regulates Lem2 itself. To gain insight into the mechanisms underlying Lem2- and Bqt4-mediated chromatin regulation, we examined a series of genetic interactions by constructing doubly and triply mutated strains.
 
@@ -133,26 +284,855 @@ While our work has revealed roles of a specific pair of microdomains in regulati
 
 ## Materials and methods
 
-## Yeast strains and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Thiabenzadole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#T8904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Methyl methanesulfonate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#66-27-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>5-Fluoroorotic Acid</td>
+      <td>US Biological</td>
+      <td>Cat#207291-8-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>nourseothricin dihydrogen sulfate</td>
+      <td>US Biological</td>
+      <td>Cat#N5374-74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>G418 sulfate (Geneticin)</td>
+      <td>Invitrogen</td>
+      <td>Cat#11811031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Hygromycin B</td>
+      <td>Invitrogen</td>
+      <td>Cat#10687010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#H8627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for microscopy</td>
+      <td>glass-bottom dish</td>
+      <td>MatTek</td>
+      <td>Cat#P35G-1.5–14 C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for microscopy</td>
+      <td>GFP booster_ATTO488</td>
+      <td>Chromotek</td>
+      <td>Cat#gba488-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for microscopy</td>
+      <td>RFP booster_ATTO594</td>
+      <td>Chromotek</td>
+      <td>Cat#rba594-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for microscopy</td>
+      <td>Vectashield</td>
+      <td>Vector Labs</td>
+      <td>Cat#H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for microscopy</td>
+      <td>16% Paraformaldehyde aqueous</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for microscopy</td>
+      <td>8% glutaraldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#16019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for microscopy</td>
+      <td>Zymolyase-100T</td>
+      <td>MP Biomedicals</td>
+      <td>Cat#320932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>anti-H3K9Me2 ChIP Grade</td>
+      <td>Abcam</td>
+      <td>Cat#mAbcam1220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>Complete, EDTA-free Protease inhibitor cocktail (Roche)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>Phenylmethylsulfonyl fluoride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P7626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>Zirconium beads, 0.7 mm diameter</td>
+      <td>BioSpec Products</td>
+      <td>Cat#11079107zx</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>Dynabeads Protein G</td>
+      <td>Invitrogen</td>
+      <td>Cat#10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>ChIP Elute Kit</td>
+      <td>Clontech</td>
+      <td>Cat#634887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>milliTUBE 1 ml AFA Fiber</td>
+      <td>Covaris</td>
+      <td>Cat#520130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>DNA SMART ChIP-Seq Kit</td>
+      <td>Clontech</td>
+      <td>Cat#634865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>Agencourt AMPure XP</td>
+      <td>Beckman Coulter</td>
+      <td>Cat#A63880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent for ChIP</td>
+      <td>NEBNext Library Quant Kit</td>
+      <td>New England BioLabs</td>
+      <td>Cat#E7630S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ ade6 M216 his3-D1 leu1-32 ura4-D18</td>
+      <td>Lab stock</td>
+      <td>JCF109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- ade6-M210 leu1-32 ura4-D18 lys1+::GFP-bqt4</td>
+      <td>This study</td>
+      <td>JCF11923</td>
+      <td>Plasmid pCSS18 (Chikashige et al., 2009) was integrated at lys1 locus.</td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h90 man1-GFP-kanMX6 aur1R-mCherry-bqt4 bqt4Δ: :natMX6 leu1-32 ura4-D18</td>
+      <td>This study</td>
+      <td>JCF1266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h90 lem2-GFP-kanMX6 aur1R-mCherry-bqt4 bqt4Δ: :natMX6 ura4-D18</td>
+      <td>This study</td>
+      <td>JCF1268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-kanMX6 man1-tdTomato-hygMX6 leu1-32 ura4-D18</td>
+      <td>This study</td>
+      <td>JCF18885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-kanMX6 hht1-mRFP-hygMX6</td>
+      <td>This study</td>
+      <td>JCF12191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-kanMX6 hht1-mRFP-hygMX6 bqt4::natMX6</td>
+      <td>This study</td>
+      <td>JCF12201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>ura4-D18 lem2-GFP-KanMX6</td>
+      <td>This study</td>
+      <td>JCF12148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>ura4-D18 lem2-GFP-KanMX6 bqt4::nat</td>
+      <td>This study</td>
+      <td>JCF12157</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-kanMX6 sid4-mCherry-natMX6 aur1R-Pnda3-mCherry-atb2</td>
+      <td>This study</td>
+      <td>JCF14537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-kanMX6 sid4-mCherry-natMX6 aur1R-Pnda3-mCherry-atb2 csi1::his3+</td>
+      <td>This study</td>
+      <td>JCF14540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-kanMX6 bqt4::natMX6 csi1::ura4+</td>
+      <td>This study</td>
+      <td>JCF14573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-kanMX6 taz1-mCherry-natMX6 csi1::his3+</td>
+      <td>This study</td>
+      <td>JCF14535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- taz1-mCherry-natMX6 lys1+::GFP-bqt4</td>
+      <td>This study</td>
+      <td>JCF14578</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- taz1-mCherry-natMX6 man1-GFP-KanMX6</td>
+      <td>This study</td>
+      <td>JCF14565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ taz1-mCherry-natMX6 lem2-GFP-KanMX6</td>
+      <td>This study</td>
+      <td>JCF14532</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ mis6-mCherry-hygMX6 lem2-GFP-KanMX6</td>
+      <td>This study</td>
+      <td>JCF14543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ mis6-mCherry-hygMX6 man1-GFP-KanMX6</td>
+      <td>This study</td>
+      <td>JCF14533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>ade6-210 leu1-32 lys1-131 ura4-D18 sod2::kanr-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hygMX6</td>
+      <td>This study</td>
+      <td>JCF10756</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>ade6-210 leu1-32 lys1 + ura4- D18 sod2::kanr-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hyg bqt4::nat</td>
+      <td>This study</td>
+      <td>JCF10771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>ade6-210 leu1-32 lys1-131 ura4-D18 sod2::kanr-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hyg lem2::nat</td>
+      <td>This study</td>
+      <td>JCF12202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>his2::kanMX6-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hygMX6</td>
+      <td>This study</td>
+      <td>JCF10732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>his2::kanMX6-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hygMX6 bqt4::natMX6</td>
+      <td>This study</td>
+      <td>JCF10740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>cut3+::lacOp his7+::lacI-GFP cut11-RFP-hygMX6</td>
+      <td>This study</td>
+      <td>JCF10755</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>cut3+::lacOp his7+::lacI-GFP cut11-RFP-hygMX6 bqt4::nat</td>
+      <td>This study</td>
+      <td>JCF11930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>taz1-mCherry-nat pLT1-2 (nmt1:Ish1-GFP-LEU2)</td>
+      <td>This study</td>
+      <td>JCF10701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>taz1-mCherry-nat bqt4::hygMX6 pLT1-2 (nmt1:Ish1-GFP-LEU2)</td>
+      <td>This study</td>
+      <td>JCF10723</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>pot1-mRFP:kanMX6 cut11-3xPK-GFP:ura4 + leu1-32 ura4-D18 (WT)</td>
+      <td>Lab stock</td>
+      <td>JCF3649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>cut11-RFP-hyg tpz1-GFP-Kan taz1::ura4+</td>
+      <td>This study</td>
+      <td>JCF12293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>cut11-RFP-hyg tpz1-GFP-Kan bqt4::nat</td>
+      <td>This study</td>
+      <td>JCF12291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>cut11-RFP-hygMX6 tpz1-GFP:kanMX6 bqt4::nat taz1::ura4+</td>
+      <td>This study</td>
+      <td>JCF12290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>his2::kanMX6-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hyg bqt4::nat swi6::leu2+</td>
+      <td>This study</td>
+      <td>JCF10807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>his2::kanMX6-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hyg swi6::leu2+</td>
+      <td>This study</td>
+      <td>JCF 12279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- swi7-GFP::kanMX6 taz1-mCherry-natMX6</td>
+      <td>This study</td>
+      <td>JCF11905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>swi7-GFP::kanMX6 taz1-mCherry-nat bqt4::hygMX6</td>
+      <td>This study</td>
+      <td>JCF14504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- bqt4::nat ade6-M210 his3-D1 leu1-32 ura4-D18</td>
+      <td>This study</td>
+      <td>JCF11933</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ ade6 M216 trt1::hygMX6</td>
+      <td>Jain et al. (2010)</td>
+      <td>JCF6858</td>
+      <td>Circular survivor</td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ ade6 M210 clr4::kanMX6</td>
+      <td>Lab stock</td>
+      <td>JCF3113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- clr4::kanMX6 bqt4::hygMX6</td>
+      <td>This study</td>
+      <td>JCF10795</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ swi7-GFP-kanMX6 man1-GBP-mCherry-hph</td>
+      <td>This study</td>
+      <td>JCF11950</td>
+      <td>GBP plasmids were gifts from Masamitsu Sato, University of Tokyo</td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- swi7-GFP-kanMX6</td>
+      <td>Natsume et al. (2008)</td>
+      <td>JCF10835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ swi7-GFP-kanMX6 man1-GBP-mCherry-hph bqt4::naMX6</td>
+      <td>This study</td>
+      <td>JCF14517</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h90 otr1R::ade6 tel1L::his3 tel2L::ura4 ade6-210 his3-D1 leu1-32 ura4-D18</td>
+      <td>Nimmo et al., 1998</td>
+      <td>JCF6712</td>
+      <td>Spike strain in ChIP-seq experiments. Used for telomere silencing assay</td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- dcr1::ura4+</td>
+      <td>This study</td>
+      <td>JCF12179</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ ade6 M216 his3-D1 leu1-32 ura4-D18 bqt4::natMX6</td>
+      <td>This study</td>
+      <td>JCF14512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- leu1-32 ura4-D18 T2R1-4137::ura4+</td>
+      <td>Kanoh et al. (2005)</td>
+      <td>JCF10833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- swi6::LEU2 leu1-32 ura4-D18 T2R1-4137::ura4+</td>
+      <td>Kanoh et al. (2005)</td>
+      <td>JCF10830</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- leu1-32 ura4-D18 T2R1-4137::ura4 + bqt4::natMX6</td>
+      <td>This study</td>
+      <td>JCF10833, 10834</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- swi6::LEU2 leu1-32 ura4-D18 T2R1-7921::ura4+</td>
+      <td>Kanoh et al. (2005)</td>
+      <td>JCF10829</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- leu1-32 ura4-D18 T2R1-7921::ura4 + bqt4::natMX6</td>
+      <td>This study</td>
+      <td>JCF11998-12002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- leu1-32 ura4-D18 T2R1-7921::ura4+</td>
+      <td>Kanoh et al. (2005)</td>
+      <td>JCF10832</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ lem2::kanMX6</td>
+      <td>This study</td>
+      <td>JCF12178</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h90 epe1::natMX6</td>
+      <td>This study</td>
+      <td>JCF10787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>epe1::natMX6 lem2::kanMX6</td>
+      <td>This study</td>
+      <td>JCF12204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ lem2::kanMX6 dcr1::ura4</td>
+      <td>This study</td>
+      <td>JCF12182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- epe1::naMX6t dcr1::ura4</td>
+      <td>This study</td>
+      <td>JCF12209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>epe1::natMX6 dcr1::ura4 lem2::kanMX6</td>
+      <td>This study</td>
+      <td>JCF12211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ cnp1-1 leu1 Rep41-ams2+[leu1+]</td>
+      <td>NBPR</td>
+      <td>JCF14580</td>
+      <td>Yeast Genetic Resource Center (YGRC), Graduate School of Science, Osaka City University</td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2::natMX6 cnp1-1 leu1 Rep41-ams2+[leu1+]</td>
+      <td>This study</td>
+      <td>JCF14588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ cnp1-1::ura4 + ura4-D18</td>
+      <td>NBPR</td>
+      <td>JCF10266</td>
+      <td>Yeast Genetic Resource Center (YGRC), Graduate School of Science, Osaka City University</td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- bqt4::nat leu1-32 ura4-D18 his3-D1 ade6-M210</td>
+      <td>This study</td>
+      <td>JCF11933, 11934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>epe1::natMX6 dcr1::ura4 +  bqt4::hygMX6</td>
+      <td>This study</td>
+      <td>JCF12240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- bqt4::hygMX6 epe1::natMX6</td>
+      <td>This study</td>
+      <td>JCF10811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ bqt4::hygMX6 dcr1::ura4+</td>
+      <td>This study</td>
+      <td>JCF12180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- ade6-M210 leu1-32 ura4-D18 his3-D1 sid4-GFP-kanMX6 dh1L-tetO-ura+tetR-mCherry-nat</td>
+      <td>This study</td>
+      <td>JCF14534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- his7+::adh13pr-lacI-CFP C12::kanR-ura4+-lacOp sid4-mRFP-natR ade6-210 leu1-32 ura4-D18 lys1-131</td>
+      <td>This study</td>
+      <td>JCF18924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>ade6-210 leu1-32 lys1-131 ura4-D18 sod2::kanr-ura4+-lacOp his7+::lacI-GFP cut11-RFP-hyg clr4::nat</td>
+      <td>This study</td>
+      <td>JCF11961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-Kan bqt4::nat pcp1-RFP-hph</td>
+      <td>This study</td>
+      <td>JCF12189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lem2-GFP-Kan pcp1-RFP-hph</td>
+      <td>This study</td>
+      <td>JCF12190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>man1-GFP-kan ura4-D18</td>
+      <td>This study</td>
+      <td>JCF12153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ man1 GFP-kan bqt4::nat ura4-D18</td>
+      <td>This study</td>
+      <td>JCF12163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- ade6-M210 his3-D1 leu1-32 ura4-D18 nup107-GFP:ura4+</td>
+      <td>This study</td>
+      <td>JCF11770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>nup107-GFP:ura4 + bqt4::nat</td>
+      <td>This study</td>
+      <td>JCF12177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>cut11-3xPK-GFP:ura4 + leu1-32 ura4-D18</td>
+      <td>Lab stock (from Nurse lab)</td>
+      <td>JCF2924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ cut11 GFP-kan bqt4::nat ura4-D18</td>
+      <td>This study</td>
+      <td>JCF12176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- bqt4::nat leu1-32 ura4-D18 his3-D1 ade6-M210 aur1R-GFP-bqt4ΔTM</td>
+      <td>This study</td>
+      <td>JCF12048, 12049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>lys1+-GFP-bqt4 bqt4::nat ura4-D18 ade6-M210</td>
+      <td>This study</td>
+      <td>JCF11958</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>imr1R(Nco1)::ura4 + swi7 GFP-kanR ura4-D18 leu1-32 ade6-M216</td>
+      <td>This study</td>
+      <td>JCF18888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>imr1R(Nco1)::ura4 + swi7 GFP-kanR ura4-D18 leu1-32</td>
+      <td>This study</td>
+      <td>JCF18890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>imr1R(Nco1)::ura4 + ura4-D18 leu1-32 ade6-M216</td>
+      <td>This study</td>
+      <td>JCF18892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>imr1R(Nco1)::ura4 + ura4-D18 leu1-32</td>
+      <td>This study</td>
+      <td>JCF18893</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h+ his3D1leu1-32 ade6</td>
+      <td>Lab stock</td>
+      <td>JCF901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h- rad11-mCherry-kanR leu1-32 ura4-D18 ade6</td>
+      <td>Lab stock</td>
+      <td>JCF1234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>swi7-GFP::kanMX6 man1-GBP-mCherry-hph rad11-mCherry-Kan</td>
+      <td>This study</td>
+      <td>JCF14598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>taz1-mTurquoise2-natR man1-GBP-mCh-hphR ura4-D18 his3-D1 ade6</td>
+      <td>This study</td>
+      <td>JCF18936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>taz1-mTurquoise2-natR swi7-GFP-kanR man1-GBP-mCh-hphR ura4-D18 his3-D1 ade6</td>
+      <td>This study</td>
+      <td>JCF18939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h90 otr1R::ade6 + tel1L::his3 + tel2L::ura4 + ade6-210 his3-D1 leu1-32 ura4-D18</td>
+      <td>Lab stock</td>
+      <td>JCF6712</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h90 otr1R::ade6 + tel1L::his3 + tel2L::ura4 + clr4::kanMX ade6-210 his3-D1 leu1-32 ura4-D18</td>
+      <td>Lab stock</td>
+      <td>JCF6715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Schizosaccharomyces pombe)</td>
+      <td>h90 otr1R::ade6 + tel1L::his + 3 tel2L::ura + 4 bqt4::nat ade6-210 his3-D1 leu1-32 ura4-D18</td>
+      <td>This study</td>
+      <td>JCF10763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>YES225</td>
+      <td>Sunrise Science Products</td>
+      <td>Cat#2011–500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PMG</td>
+      <td>Sunrise Science Products</td>
+      <td>Cat#2060–500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EMM</td>
+      <td>Sunrise Science Products</td>
+      <td>Cat#2005–500</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and media
 
 Strains used in this study are described in the Key Resources Table. All media used were previously established (Moreno et al., 1991). Gene deletions and fluorophore-tag insertions were performed by the one-step gene replacement method, using appropriate plasmid templates (pFA6a-kanMX6, -hygMX6, and -NatMX6 selection cassettes) as described previously (Klutstein et al., 2015). Functionality was tested for each tagged protein: Bqt4 function was checked by monitoring meiosis and telomere-NE localization, which were unaltered; however, GFP-Bqt4 containing cells show mild HU sensitivity (data not shown), suggesting that GFP-Bqt4 is a partial hypomorph. Lem2 functionality was tested by rescue of the thiabendazole sensitivity of lem2Δ cells (Banday et al., 2016), and Man1 by localization to the NE. Strain mating and random sporulation were used to combine multiple genetic mutations. Viability assays were performed by adding HU, MMS, and bleomycin at indicated concentrations to molten agar-containing rich yeast-extract media (YE5S; Sunrise Science Products, San Diego, CA) pre-cooled to 55°C. Overnight mid-log phase cell cultures (OD600 ~0.5) were serially diluted 5-fold, and stamped onto the plates containing media with the DNA damaging agents. Gene silencing assays were performed by stamping serially diluted cultures onto plates containing minimal medium (PMG, Sunrise Science Products) supplemented with appropriate amino acids and lacking the indicated nutrients.
 
-## Live microscopy
+### Live microscopy
 
 Strain cultures were grown overnight at 32°C in 50 ml rich media to mid-log phase. After washing with EMM, cultures were diluted to original volume and the pellet from 1 ml of sample was resuspended in 20 µl of the imaging medium (1:2 YE5S-EMM). The resuspended cells (3 µl) were mounted on an agarose pad formed on a glass slide as described previously (Hiraga et al., 2006). Cells were imaged on a wide-field inverted DeltaVision (GE Healthcare) microscope with a 100X oil immersion objective (NA 1.42) and a Xenon lamp excitation source. Imaging was performed at 22–25°C. Images were captured and analyzed using SoftWoRx (GE Healthcare). Cells were imaged by capturing single time-point Z-stacks consisting of 25 images, with 0.25 μm between each Z-plane. The approach for analyzing positioning of the lacO/I dot within the nuclear zones was described previously (Hediger et al., 2002). To capture time-lapse images, cells were adhered to the bottom of a 35 mm glass bottom culture dishes (MatTek) as described previously (Klutstein et al., 2015), except that imaging was performed at 22–25°C and time-lapse intervals are indicated in the appropriate figure legends. The FRAP experiments were performed using a Zeiss LSM 710 Confocal system (Carl Zeiss Inc, Thornwood, NY) with a Zeiss Axiovert microscope, a 25 mW Argon 488 nm laser, and a 100x Plan-Neofluar 1.3 NA oil immersion objective. Digital images were 512 × 512 pixels and 12 bit. For FRAP, three laser lines of the Argon laser (458, 488, 514 nm) were used to bleach areas of the cell at 100% transmission and 10 iterations. The bleach was started after one acquisition scan and images were acquired at the indicated intervals.
 
-## Super-resolution microscopy
+### Super-resolution microscopy
 
 SIM images were obtained with an Applied Precision OMX (GE Healthcare) using a 60 × 1.42 NA Olympus Plan Apo oil objective, and front illuminated sCMOS cameras (6.45 um pixel size). All SIM microscopy was performed at 22–23°C. Excitation sources consisted of a 488 nm laser (for GFP) or a 561 nm laser (for mCherry), and images were captured by alternating excitation using standard filters (FITC/AF488 and AF568/Texas Red). SIM reconstruction was done with SoftWorX, with a Wiener filter of 0.003. SIM images shown are single Z slices, digitally zoomed with bilinear interpolation using Fiji ImageJ (National Institutes of Health). To prepare cells for imaging, overnight cell cultures were grown (10 mL at OD595 ~ 0.5) and treated with 3.2% formaldehyde for 1 min before adding 0.1% Glutaraldehyde and incubating for 12 min at 25°C. The fixed cells were washed and treated with 0.6 mg/mL Zymolyase 100T at 36°C for 45 min, before treating with 1% Triton X-100 for 5 min at room temperature. Cells were washed and resuspended in 1 ml wash buffer (100 mM PIPES, 1 mM EGTA, 1 mM MgSO4 pH 6.9). To minimize photo-bleaching and amplify fluorescent signals, GFP and RFP boosters (ChromoTek, Germany) were added to 200 µl of the cells resuspended in wash buffer with added 1% BSA and 100 mM lysine hydrochloride. After incubation for 1 hr at room temperature, cells were washed and resuspended in 10 µl Vectashield (Vector Labs, Burlingame, CA). The cells (1 µl) were placed on a glass slide, covered with an acid washed coverslip, and sealed by nail polish before imaging.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Cultures were grown overnight in 120 ml YE5S medium to mid-log phase and treated with formaldehyde (1% final conc.) for 10 min at room temperature with occasional swirling. As described in Figure 6C, 37.5 ml of the spike culture was mixed with 112.5 ml of each sample before treating with formaldehyde. Treated cells were washed with 50 mL refrigerated Milli-Q (Millipore) water. Cells were centrifuged at 2000 rpm for 2 min, resuspended in 1 ml water and centrifuged before adding 1 ml Zirconium beads to the pellet. The pellet and beads mixture was flash frozen in liquid nitrogen and stored at −80°C in 2 ml screw-cap shatter proof tubes. The frozen pellet was resuspended in 500 µl lysis buffer: 50 mM Hepes pH 7.4, 140 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% Sodium Deoxycholate, 1% PMSF and EDTA-free protease inhibitor cocktail (Roch) and lysed using FastPrep (MP Biomedical; setting: 5 × 30 s cycles at 4.5 m/s). Each lysate was recovered in a 5 ml snap-cap tube by centrifugation at 1500 rpm for 3 min and sonicated using the Covaris E210 instrument. Sonication settings used were: 20%, 8 intensity, 200 cycles per burst for 12 min. The sonicated lysates were clarified by centrifugation at 14000 rpm for 10 min. For input DNA, 20 µl of the clarified lysate was set aside. The lysates were incubated with 5 µg H3K9me2 (abcam #1220) antibody overnight at 4°C. Magnetic protein-G beads (Invitrogen, Waltham, MA) were added to the lysate/antibody mixture and incubated for 4 hr before washing and eluting the immunoprecipitate from the beads. Elution by boiling and reverse cross-linking was performed using the ChIP Elute Kit (Clontech) to obtain ssDNA templates for Next-Gen library preparation.
 
-## Next-Generation sequencing
+### Next-Generation sequencing
 
 The ssDNA samples prepared above were quantified using the Quibit ssDNA Assay Kit (molecular probes, life technologies), and 5–10 ng of each sample was used for library preparation. Libraries were prepared using DNA SMART ChIP-Seq Kit (Clontech) and Illumina indexed oligomers. Following PCR amplifications (15 cycles), libraries were size selected and purified using Agencourt AMPure XP beads (200–400 bp range). Each library was validated using Quibit 2.0 Fluorometer for concentration, Agilent 2100 Bioanalyzer for fragment size, and NEBNext Library Quant Kit (New England BioLabs) for adaptor presence. Typical library yield was 10–40 ng with average size of 400 bp. Finally, libraries from 12 samples were pooled in equimolar ratio (10 nM) and submitted for sequencing using Illumina HiSeq2500 Rapid Run mode (GENEWIZ, South Plainfield, NJ). A total of ~140 million 50 bp reads were obtained per pooled sample. The reads for each sample in the pool were separated per the corresponding Illumina indexes (% of >= Q30 bases: 97.85; mean quality score: 38.63), before subjecting to bioinformatics analysis.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 As required by the library construction procedure, three bases at the 5’ ends of the reads were trimmed. The 47 bp post-trimmed reads were aligned to the reference genome using bowtie2, allowing for 50 alignments per repetitive region. The original reference sequence for Chr II contains a partially deleted sequence of the mat locus; therefore, we customized the reference genome by replacing the deleted mat region with a contig of the h90 configuration of the mat2P-mat3M region (as described on ‘http://www.pombase.org/status/mating-type-region’; accessed July.2017). Before normalization, the resulting aligned SAM files were converted to sorted and indexed BAM files. Normalization was performed using a Python script that sequentially executed: 1- Get the number of total aligned reads, reads covering ade6 locus (chr III: 1316291–1318035), and reads covering a euchromatin region adjacent to ade6 locus (chr III: 1304000,1380000); 2- Calculate a normalization scale factor: 10 / (median of reads covering each base within the ade6 locus – median of reads covering each base in the neighboring euchromatic region); 3- Apply the scale factor to the aligned genomic reads (BAM files) using the genomecov function of the BEDTools suit to produce a bedgraph file. To generate the ribbon-line coverage plots shown in the above figures, an R script was created that imports the bedgraph files and, using a 250 bp sliding window, calculates the median, maximum and minimum of reads from strains with identical genotypes. The scripts used for this study have been deposited at ‘https://www.elucidaid.com/repository/ebrahimih17'.

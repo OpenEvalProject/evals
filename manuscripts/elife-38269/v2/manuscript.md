@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.38269.001 Interleukin 25 (IL-25) is a major 'alarmin' cytokine, capable of initiating and amplifying the type immune response to helminth parasites. However, its role in the later effector phase of clearing chronic infection remains unclear. The helminth Heligmosomoides polygyrus establishes long-term infections in susceptible C57BL/6 mice, but is slowly expelled in BALB/c mice from day 14 onwards. We noted that IL-25R ( Il17rb )-deficient BALB/c mice were unable to expel parasites despite type 2 immune activation comparable to the wild-type. We then established that in C57BL/6 mice, IL-25 adminstered late in infection (days 14–17) drove immunity. Moreover, when IL-25 and IL-4 were delivered to Rag1 -deficient mice, the combination resulted in near complete expulsion of the parasite, even following administration of an anti-CD90 antibody to deplete innate lymphoid cells (ILCs). Hence, effective anti-helminth immunity during chronic infection requires an innate effector cell population that is synergistically activated by the combination of IL-4Rα and IL-25R signaling.
+Interleukin 25 (IL-25) is a major 'alarmin' cytokine, capable of initiating and amplifying the type immune response to helminth parasites. However, its role in the later effector phase of clearing chronic infection remains unclear. The helminth Heligmosomoides polygyrus establishes long-term infections in susceptible C57BL/6 mice, but is slowly expelled in BALB/c mice from day 14 onwards. We noted that IL-25R (Il17rb)-deficient BALB/c mice were unable to expel parasites despite type 2 immune activation comparable to the wild-type. We then established that in C57BL/6 mice, IL-25 adminstered late in infection (days 14–17) drove immunity. Moreover, when IL-25 and IL-4 were delivered to Rag1-deficient mice, the combination resulted in near complete expulsion of the parasite, even following administration of an anti-CD90 antibody to deplete innate lymphoid cells (ILCs). Hence, effective anti-helminth immunity during chronic infection requires an innate effector cell population that is synergistically activated by the combination of IL-4Rα and IL-25R signaling.
 
 ## Introduction
 
@@ -38,17 +38,17 @@ Due to the rapid nature of expulsion of N. brasiliensis, it is difficult to sepa
 
 ## Results
 
-## IL-25R is redundant for generation of adaptive type-2 responses following chronic helminth infection
+### IL-25R is redundant for generation of adaptive type-2 responses following chronic helminth infection
 
 To investigate the role of IL-25R in generation of innate and adaptive type-2 responses following chronic parasite infection, we used mice deficient in the IL-25-specific receptor subunit Il17rb (Neill et al., 2010). We evaluated the outcome of H. polygyrus infection in mice of the BALB/c genetic background, which are partially resistant and able to expel most adult worms by day 28 following infection (Filbey et al., 2014; Reynolds et al., 2014). At day 14 post-infection, shortly after adult worms have matured, Il17rb-/- mice exhibited significantly increased egg production (Figure 1A) but equivalent adult worm burdens (Figure 1B) to the IL-25-sufficient wild-type BALB/c. By day 28, the Il17rb–/– genotype was unable to reduce adult worm or egg burdens (Figure 1C,D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/38269/elife-38269-fig1-v2.jpg)
 
-**Figure 1.:** H.polygyrus from BALB/c mice. H. polygyrus-infected BALB/c or Il17rb-deficient (IL25R–/–) BALB/c mice were analyzed at day 14 post-infection for fecal egg counts (A) and intestinal adult worm burden (B) or day 28 post-infection for fecal egg counts (C) and intestinal adult worm burden (D). MLN cells underwent intracellular cytokine staining (ICCS) to compare the number of Lin-ICOS+innate lymphoid cells (ILCs) (E) and IL-13+ ILC2s (F) by flow cytometry in the different naïve and day 14 infected genotypes. Peritoneal lavage cells (PL) were stained with Siglec-F, CD11b and Ly6G/C to compare the number of Siglec-F-CD11b+Ly6G/C+ monocytes (G) in the different naïve and day 14 infected genotypes. Percentages of eosinophils (H) and RELMα+ alternatively-activated macrophages (Ι) were also determined over a 4 week infection timecourse. ELISA of supernatants from MLN cells incubated with media or 1 μg HES for 72 hr was performed to compare IL-4 (J), IL-5 (K) and IL-13 (L) production in the different naïve and day 14 infected genotypes. ICCS of MLN allowed a comparison of the proportion of IL-4+, IL-5+ and IL-13+ CD4+ T cells by flow cytometry in the different naïve and day 14 infected genotypes (M–O). Results shown are one representative of three experiments with n ≥ 4 mice/group (A–D), pooled data from two experiments with n ≥ 4 mice/group (C–F, M–O) or one representative of two experiments with n ≥ 4 mice/group (G–L). Data were analysed by unpaired t test or one way ANOVA, where *=p≤0.05,**=p≤0.01,***=p≤0.001 and ns = not significant. Error bars represent Standard Error of the Mean.
+**Figure 1.:** polygyrus from BALB/c mice. H. polygyrus-infected BALB/c or Il17rb-deficient (IL25R–/–) BALB/c mice were analyzed at day 14 post-infection for fecal egg counts (A) and intestinal adult worm burden (B) or day 28 post-infection for fecal egg counts (C) and intestinal adult worm burden (D). MLN cells underwent intracellular cytokine staining (ICCS) to compare the number of Lin-ICOS+innate lymphoid cells (ILCs) (E) and IL-13+ ILC2s (F) by flow cytometry in the different naïve and day 14 infected genotypes. Peritoneal lavage cells (PL) were stained with Siglec-F, CD11b and Ly6G/C to compare the number of Siglec-F-CD11b+Ly6G/C+ monocytes (G) in the different naïve and day 14 infected genotypes. Percentages of eosinophils (H) and RELMα+ alternatively-activated macrophages (Ι) were also determined over a 4 week infection timecourse. ELISA of supernatants from MLN cells incubated with media or 1 μg HES for 72 hr was performed to compare IL-4 (J), IL-5 (K) and IL-13 (L) production in the different naïve and day 14 infected genotypes. ICCS of MLN allowed a comparison of the proportion of IL-4+, IL-5+ and IL-13+ CD4+ T cells by flow cytometry in the different naïve and day 14 infected genotypes (M–O). Results shown are one representative of three experiments with n ≥ 4 mice/group (A–D), pooled data from two experiments with n ≥ 4 mice/group (C–F, M–O) or one representative of two experiments with n ≥ 4 mice/group (G–L). Data were analysed by unpaired t test or one way ANOVA, where *=p≤0.05,**=p≤0.01,***=p≤0.001 and ns = not significant. Error bars represent Standard Error of the Mean.
 
 A number of cell types have been shown to express IL-25R and contribute to type-2 inflammation, including ILCs and multi-potent progenitor type-2 cells (Huang et al., 2015; Saenz et al., 2013), myeloid cells (Dolgachev et al., 2009; Petersen et al., 2012), NKT cells (Stock et al., 2009; Terashima et al., 2008) and eosinophils (Kim et al., 2002). We first took the approach of analysing individual cell types within BALB/c and Il17rb–/– mice and found equivalent increases in total and IL-13-expressing ILCs in the mesenteric lymph node (MLN, Figure 1E,F) in both strains at day 14 post-infection, and similar increases in the number of Siglec-F-CD11b+Ly6C/G+ myeloid cells in the peritoneal lavage (PL) (Figure 1G). However, we noted significantly reduced proportions of Siglec-F+ eosinophils and resistin-like molecule (RELM)-α+ macrophages in the PL of Il17rb–/– mice at steady-state and during the acute phase of infection (day 7). From day 14 when parasites are in the intestinal lumen and infection enters chronicity, proportions of both cell types increased closer to levels found in wild-type mice (Figure 1H,I). We also evaluated typical type 2 cytokine production (IL-4, IL-5 and IL-13) in response to restimulation with parasite antigen (HES); this was found to be equivalent in H.polygyrus-infected BALB/c and Il17rb–/– mice (Figure 1J–L). Intracellular cytokine staining of MLN CD4+ T cell populations showed no significant difference in expression of IL-4 (Figure 1M), IL-5 (Figure 1N) or IL-13 (Figure 1O) between H.polygyrus-infected BALB/c and Il17rb–/– mice.
 
-## Effective clearance of adult worms requires IL-25R within the hematopoietic immune compartment
+### Effective clearance of adult worms requires IL-25R within the hematopoietic immune compartment
 
 During inflammation, expression of IL-25R has also been reported on antigen presenting cells (Gratchev et al., 2004), memory T cells (Wang et al., 2007), eosinophils (Tang et al., 2014) and human vascular endothelial cells (Wang et al., 2012) as well as human fibroblasts (Gregory et al., 2013). In addition, intestinal smooth muscle hypercontractility is compromised in IL-25-deficient helminth-infected mice (Pei et al., 2016). Thus, non-hematopoietic or hematopoietic cell expression of IL-25R might contribute to parasite expulsion in BALB/c mice. To assess this possibility, bone marrow chimeras were generated, infected with H. polygyrus and analysed 28 days later for egg and worm burden. Control chimeras reflected the phenotypes of intact mice as Il17rb–/– reconstituted with Il17rb–/– bone-marrow had significantly higher worm burdens than BALB/c reconstituted with BALB/c bone-marrow (Figure 2A). Efficient adult worm expulsion and decreased egg burden were evident in mice lacking IL-25R on the non-hematopoietic compartment (Il17rb–/– reconstituted with BALB/c bone-marrow), however, delayed worm expulsion and increased egg burden occurred in mice lacking IL-25R within the hematopoietic immune compartment (Figure 2A,B).
 
@@ -56,17 +56,17 @@ During inflammation, expression of IL-25R has also been reported on antigen pres
 
 **Figure 2.:** Bone marrow chimeras generated from BALB/c (WT) or Il17rb-deficient (KO) donor and BALB/c (WT) or Il17rb-deficient (KO) recipient mice were infected with H. polygyrus and intestinal adult worm burden (A) and fecal egg burden (B) performed at day 28 post-infection. Results shown are pooled data from two experiments performed with n ≥ 3 mice/group, and data from all individual mice are presented. Data were analysed by unpaired t test, where *=p≤0.05,**=p≤0.01,***=p≤0.001 and ns = not significant. Error bars represent Standard Error of the Mean.
 
-## Effective clearance of adult worms in immune-deficient mice requires IL-25R and IL-4Rα signaling through the innate immune compartment
+### Effective clearance of adult worms in immune-deficient mice requires IL-25R and IL-4Rα signaling through the innate immune compartment
 
 To test whether stimulation of IL-25R within the innate immune compartment mediates adult worm expulsion and whether this is enhanced following IL-4Rα signaling, immune-deficient Rag1-/- mice were infected with H. polygyrus and injected with recombinant IL-25 late in infection (d14-17) and/or a complex of rIL-4:anti-IL-4 (IL-4C) on days 13, 16 and 19 post-infection (Figure 3A). IL-4C exerted significant but modest reductions in egg counts (44%) and adult worm burden (34%) in Rag1-/- mice but did not completely expel adult worms or eliminate egg production (Figure 3B,C). Administration of IL-25 alone to Rag1-/- mice elicited a downward trend in adult worm numbers, which did not attain statistical significance in two experimental repeats. However when both cytokines were combined, egg production was reduced by 95% and the adult worm burden also greatly reduced (by 87%).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38269/elife-38269-fig3-v2.jpg)
 
-**Figure 3.:** H. polygyrus-infected Rag1 mice (RAG-/-) were given 0.4 µg recombinant IL-25 i.p. days 14–17 (late) post-infection with or without a complex of 5 μg rIL-4 and 25 μg anti-IL-4 (IL-4C) on days 13, 16 and 19 post-infection, according the schedule shown in (-/-A). Mice were analyzed at 28 days post-infection for fecal egg burden (B) and intestinal adult worm burden (C). H. polygyrus-infected Rag1 mice were given IL-25 and IL-4C according to the same schedule, as well as 200 µg of anti-CD90.2/Th1.2 antibody or rat IgG2b control (days 12, 15, 18 and 21). The peritoneal lavage was analyzed at 28 days post-infection for CD45-/-+lin- (CD3, CD5, CD8α, CD11c, CD19, DX5, F4/80, GR-1, TCRβ, CD11b), ICOS and ST2 staining by flow cytometry as shown (D) and the number of CD45+lin– (E), CD45+lin–ST2– (F) and CD45+lin–ST2+ (G) ILCs was determined. Mice were analysed at 28 days post-infection for fecal egg burden (H) and intestinal adult worm burden (I). Results shown are one representative of two experiments with n = 4 mice/group (D–G), or pooled data from two experiments with n ≥ 3 mice/group (B,C,H,I). Data were analysed by unpaired t test, where *=p≤0.05,**=p≤0.01,***=p≤0.001 and ns = not significant. Error bars represent Standard Error of the Mean.
+**Figure 3.:** H. polygyrus-infected Rag1-/- mice (RAG-/-) were given 0.4 µg recombinant IL-25 i.p. days 14–17 (late) post-infection with or without a complex of 5 μg rIL-4 and 25 μg anti-IL-4 (IL-4C) on days 13, 16 and 19 post-infection, according the schedule shown in (A). Mice were analyzed at 28 days post-infection for fecal egg burden (B) and intestinal adult worm burden (C). H. polygyrus-infected Rag1-/- mice were given IL-25 and IL-4C according to the same schedule, as well as 200 µg of anti-CD90.2/Th1.2 antibody or rat IgG2b control (days 12, 15, 18 and 21). The peritoneal lavage was analyzed at 28 days post-infection for CD45+lin- (CD3, CD5, CD8α, CD11c, CD19, DX5, F4/80, GR-1, TCRβ, CD11b), ICOS and ST2 staining by flow cytometry as shown (D) and the number of CD45+lin– (E), CD45+lin–ST2– (F) and CD45+lin–ST2+ (G) ILCs was determined. Mice were analysed at 28 days post-infection for fecal egg burden (H) and intestinal adult worm burden (I). Results shown are one representative of two experiments with n = 4 mice/group (D–G), or pooled data from two experiments with n ≥ 3 mice/group (B,C,H,I). Data were analysed by unpaired t test, where *=p≤0.05,**=p≤0.01,***=p≤0.001 and ns = not significant. Error bars represent Standard Error of the Mean.
 
 ILC2s may have a role in promoting acquired type-2 immune responses by activation of CD4+ T cell responses through expression of OX40L, MHC class II and PD-L1 (Drake et al., 2014; Mirchandani et al., 2014; Oliphant et al., 2014; Schwartz et al., 2017) or by promoting dendritic cell migration to draining lymph nodes following IL-13 production (Halim et al., 2014). Sustained activation of ILCs drives immunity to N. brasiliensis infection (Bouchery et al., 2015), however in H. polygyrus infection the transfer of activated ILC2s had only a limited effect on worm establishment (Pelly et al., 2017). In addition, IL-25 is able to induce type 2 inflammation and goblet cell hyperplasia in the small intestine, independently of ILCs (Saenz et al., 2013). To test whether ILCs contribute to efficient worm expulsion in immune-compromised mice following co-administration of IL-25 and IL-4C, we treated H. polygyrus infected Rag1-/- mice with both cytokines and isotype or anti-CD90.2 (Thy1.2) antibodies. Administration of anti-CD90.2 antibody significantly reduced the number of CD45+Lin- ILCs (Figure 3D,E) as well as the number of CD45+Lin-ST2- and CD45+Lin-ST2+ ILCs (Figure 3F,G) in the PL of H. polygyrus-infected Rag1-/- mice treated with IL-25 and IL-4C. However, immunity was fully intact in recipients of this antibody, with significantly decreased parasite egg and worm burden in ILC-depleted mice (Figure 3H,I).
 
-## Stimulation of IL-25R induces adult worm clearance late, but not early, in infection
+### Stimulation of IL-25R induces adult worm clearance late, but not early, in infection
 
 The late manifestation of the Il17rb–/– phenotype in H. polygyrus infection could reflect a requirement either for initial IL-25 to generate an effector response that is only active after day 14, or for a later IL-25R-driven pathway that is invoked once the Th2 response is generated. To evaluate the relative importance of IL-25R engagement during different phases of infection, we made use of the more susceptible C57BL/6 strain and delivered exogenous rIL-25 early (day 1–4) and late (day 14–17) post-infection (Figure 4A). Egg counts were equivalent at day 14 post-infection before delivery of IL-25 late (Figure 4B) and were significantly reduced in recipients of IL-25 early (66%; p=0.0013) or late (64%; p=0.0071) compared to PBS controls by day 28 post-infection (Figure 4C). Although early IL-25 administration also induced a modest reduction in adult worm burdens, this did not reach significance in two repeated experiments. In contrast, adult worm burden was significantly reduced in recipients of IL-25 late (66%; p=0.0016) at day 28 post-infection (Figure 4D). Both CD4+ T cell IL-4 and IL-13 responses (Figure 4E–F), and the total number of ILCs (Figure 4G) were not significantly altered by late IL-25 injection. The number of IL-13+ILCs (ILC2s) was not significantly increased in the MLN at day 18 hr. polygyrus infection but was significantly increased in infected mice following the administration of IL-25 (Figure 4H), however, these remained a small proportion of the total ILCs within the MLN
 
@@ -74,7 +74,7 @@ The late manifestation of the Il17rb–/– phenotype in H. polygyrus infection 
 
 **Figure 4.:** H. polygyrus-infected C57BL/6 mice were given 0.4 μg recombinant IL-25 i.p. at day 1–4 (early) or day 14–17 (late) post-infection according to the schedule shown in (A). Before administration of IL-25, intestinal egg burden was analysed in two groups at day 14 post-infection (B). Mice were then analysed at day 28 post-infection for fecal egg counts (C) and intestinal adult worm burden (D) following administration of IL-25 early or late. H. polygyrus-infected C57BL/6 mice were given 0.4 μg recombinant IL-25 i.p. at day 14–17 (late) post-infection. Day 18 post-infection, MLN cells underwent ICCS to compare the proportion of IL-4+CD4+ (E) and IL-13+CD4+ (F) T cells, as well as the number of ILCs (G) and Lin-IL-13 + ILC2 s (H) by flow cytometry. Results shown are data pooled from three experiments with n ≥ 3 mice/group (B–D), or are representative of two experiments with n = 4 mice/group (E,F) or pooled from two experiments with n = 4 mice/group (G, H). Data were analysed by unpaired t test, where *=p≤0.05,**=p≤0.01,***=p≤0.001 and ns = not significant. Error bars represent Standard Error of the Mean.
 
-## Monocytes and eosinophils require IL-25R and IL-4Rα signaling for a maximal type-2 response
+### Monocytes and eosinophils require IL-25R and IL-4Rα signaling for a maximal type-2 response
 
 Monocytes are important regulators of wound repair following Th2 inflammation and are activated to proliferate within the tissue site in response to IL-4Rα signaling, as confirmed in H. polygyrus-infected mice (Jenkins et al., 2013). These cells also respond to the alarmins IL-25 and IL-33 to promote type-2 cytokine production and alternative activation, where adoptive transfer of IL-33-activated macrophages has been reported to induce worm expulsion in mice with chronic H. polygyrus infection (Yang et al., 2013). Eosinophils also respond to IL-25 and are thought to play a role in limiting Th2 responses following H. polygyrus infection (Strandmark et al., 2017).
 
@@ -84,7 +84,7 @@ Analysis of the peritoneal lavage revealed striking changes within macrophage an
 
 **Figure 5.:** H. polygyrus-infected C57BL/6 mice were given 0.4 μg recombinant IL-25 i.p. at day 14–17 (late) post-infection. At day 18 post-infection, PL cells were taken and stimulated with 10 μg Brefeldin A to determine the expression intensity (geomean) of IL-13 (A) or were unstimulated to determine the expression intensity (geomean) of RELM-α (B, C) within Siglec-F–CD11b+F4/80+ monocytes by flow cytometry, as shown by the example flow cytometry plots in B and compared to fluorescence minus one (FMO) samples stained from the Hp:IL-25 group. Total Siglec-F+CD11b+ eosinophil (D) numbers were calculated from populations shown in the example flow cytometry plots (E), numbers of Siglec-F–CD11b+ (F) monocytes. Bone marrow-derived macrophages from C57BL/6 mice were generated in vitro and stimulated with 10 ng/ml IL-4, 200 ng/ml IL-25 or a combination of both for 16 hr before analysis of the percentage of RELM-α expression (G, H) and the mean fluorescence intensity (geometric mean) of Arginase-1 expression (I, J) within CD11b+F4/80+ cells by flow cytometry. Results shown are one representative of 2 experiments with n = 4 mice/group (A–F, I, J) or pooled from two experiments with n = 4 replicates/group (G, H). Data were analysed by unpaired t test, where *=p≤0.05,**=p≤0.01,***=p≤0.001 and ns = not significant. Error bars represent Standard Error of the Mean.
 
-## IL-25R co-operates with IL-4Rα signaling to prime innate immunity for effective clearance of H. polygyrus
+### IL-25R co-operates with IL-4Rα signaling to prime innate immunity for effective clearance of H. polygyrus
 
 It has long been known that IL-4Rα-mediated signaling is the pivotal component of the protective immune response to helminth infection, being required to generate the appropriate innate and adaptive type two cellular responses. To test whether IL-25-mediated promotion of immunity to primary H. polygyrus infection was entirely dependent upon IL-4Rα, or could mediate an IL-4Rα-independent mode of protection, we administered exogenous IL-25 from days 14–17 of infection to Il4ra-deficient mice (Figure 6A). Although late IL-25 injection was previously demonstrated to induce adult worm expulsion in C57BL/6 mice (Figure 4D), the worm burden of Il4ra-/- mice was unaffected by administration of IL-25 at this time-point (Figure 6B). In a similar manner to C57BL/6 mice (Figure 5C and D) IL-25 injection significantly increased the percentage of eosinophils in the PL of H. polygyrus infected BALB/c mice by day 18 (Figure 6C). Within the BALB/c strain, 100% of macrophages within the PL expressed RELM-α+ by day 18 in H. polygyrus infected mice following administration of IL-25 or PBS control, compared to an average of 28% in naïve mice (Figure 6D). However, these responses were completely lacking in infected Il4ra–/– mice treated with IL-25 (Figure 6C,D), confirming that the IL-25 induced response is itself wholly dependent on IL-4Rα signaling.
 
@@ -110,38 +110,174 @@ In summary, we demonstrate that the IL-25R is not required for generation of a s
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mus musculus, BALB/c</td>
+      <td>Il17rb-/- (IL-25R-/-)</td>
+      <td>Neill et al. (2010) Nuocytes represent a new innate effector leukocyte that mediates type-2 immunity. Nature 464:1367–1370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus, C57BL/6</td>
+      <td>Rag1-/-</td>
+      <td>Mombaerts,P., Iacomini,J., Johnson, R.S., Herrup, K., Tonegawa,S., and Papaioannou, V. E. 1992. Cell. Vol 68: 869–877. PMID: 1547488</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus, C57BL/6</td>
+      <td>Il4ra-/-</td>
+      <td>Noben-Trauth N, Shultz LD, Brombacher F, Urban JF, Jr., Gu H, Paul WE. 1997. An interleukin 4 (IL-4)-independent pathway for CD4 + T cell IL-4 production is revealed in IL-4 receptor-deficient mice. Proc Natl Acad Sci USA 94:10838–10843.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Parasite</td>
+      <td>Heligmosomoides  polygyrus bakeri</td>
+      <td>Johnston et al., 2015. Cultivation of Heligmosomoides polygyrus: an immunomodulatory nematode parasite and its secreted products. Journal of Visualized Experiments 98:e52412.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-4</td>
+      <td>BioXCell</td>
+      <td>Clone 11B11</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-13</td>
+      <td>BioLegend</td>
+      <td>JES10-5A2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD90.2</td>
+      <td>BioXCell</td>
+      <td>30H12</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SiglecF</td>
+      <td>BD Pharmingen</td>
+      <td>E50-2440</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b</td>
+      <td>BioLegend</td>
+      <td>M1/70</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80</td>
+      <td>BioLegend</td>
+      <td>BM8</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly6G</td>
+      <td>BioLegend</td>
+      <td>1A8</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly6C</td>
+      <td>BioLegend</td>
+      <td>AL-21</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RELMα</td>
+      <td>R and D Systems</td>
+      <td>22603</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Arginase-1 (Polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>IC5868P</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lineage</td>
+      <td>BioLegend</td>
+      <td>17A2,RB6-8C5,RA3-6B2,Ter-119,M1/70</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-4</td>
+      <td>Peprotech</td>
+      <td>214–14</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-25</td>
+      <td>BioLegend</td>
+      <td>587302</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Foxp3 Staining Kit</td>
+      <td>eBioScience</td>
+      <td>88–8118</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Control IgG2b immunoglobulin</td>
+      <td>BioXcell</td>
+      <td>LTF-2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-CD90.2 Microbeads</td>
+      <td>Miltenyi</td>
+      <td>130-049-101</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 BALB/c, IL-25R–/– (Il17rb–/–) (Neill et al., 2010), C57BL/6, Rag1-/- mice and Il4ra-/- mice were bred at the University of Edinburgh. All animal protocols adhered to the guidelines of the UK home office, complied with the Animals (Scientific Procedures) Act 1986, were approved by the Ethical Review Committees of the University of Edinburgh and the University of Glasgow, and were performed under the authority of the UK Home Office Project numbers 60/4105 and 70/8384.
 
-## Construction of bone marrow chimeras
+### Construction of bone marrow chimeras
 
 BALB/c or Il17rb–/– mice were exposed to 11.5 Gy γ radiation administered in two doses before intravenous reconstitution with 2 million bone marrow cells from BALB/c or Il17rb–/– mice, which had been depleted of CD90+ cells using CD90.2 microbeads (Miltenyi). Eight weeks post-transfer, recipients were infected with 200 H. polygyrus by gavage.
 
-## Parasites and antigens
+### Parasites and antigens
 
 H. polygyrus bakeri was maintained and adult H. polygyrus E/S (HES) was prepared as described elsewhere (Grainger et al., 2010; Johnston et al., 2015). Egg counts from individual mice were assessed by weighing the feces before dissolving in 2 ml saturated sodium chloride solution; egg counts were performed using a McMaster chamber and the average number of eggs/g feces calculated per sample. Mice were infected with 200 L3 stage H. polygyrus by gavage.
 
-## Preparation and administration of IL-4/anti-IL-4 complexes
+### Preparation and administration of IL-4/anti-IL-4 complexes
 
 A pre-prepared complex of 5 μg rIL-4 (Peprotech) and 25 μg anti-IL-4 (clone 11B11; BioXcell, NH) was administered to mice i.p. (Urban et al., 1995).
 
-## Depletion of ILCs
+### Depletion of ILCs
 
 Rag1-/- mice received 200 μg anti-CD90.2/Thy1.2 (clone 30H12; BioXcell) or a rat IgG2b control (clone LTF-2; BioXcell) i.p. on days 12, 15, 18 and 21 post-infection.
 
-## In vitro Ag-specific restimulation
+### In vitro Ag-specific restimulation
 
 A single cell suspension was made of MLN before plating cells at 5 × 105/well in the presence of 2 μg/ml HES and media alone for 72 hr at 37°C/5% CO2. Supernatants were then harvested and analysed for IL-4, IL-5, IL-13 by commercially available ELISA (BD Pharmingen).
 
-## Generation of bone marrow-derived macrophages
+### Generation of bone marrow-derived macrophages
 
 Bone marrow was extracted from tibia and femurs of C57BL/6 mice. A single cell suspension was formed in 10 ml of PBS by passing through a 23 g needle, then filtered through a 100 µm nylon cell strainer. Cells were plated at a density of 6 × 106 cells/ plate on 90 cm Petri dishes in 10 ml cDMEM with 20% L929 media as a source of M-CSF and incubated at 37°C incubator with 5% CO2. A further 5 ml of cDMEM with 20% L929 was added on day 3. Differentiated macrophages were harvested on day 7 using 3 mM EDTA/10 mM glucose in PBS. Cells were washed in PBS, resuspended in cDMEM, plated at 2 × 105 cells/ well in 96 well plates and stimulated with 10 ng/ml IL-4, 200 ng/ml IL-25 or a combination of both for 16 hr before analysis of the cells by flow cytometry.
 
-## Flow cytometry
+### Flow cytometry
 
 All flow cytometry was performed using Becton-Dickinson Canto or LSR-II flow cytometers. For innate cell surface phenotyping, PL or MLN were stained with a combination of antibodies to Siglec-F (E50-2440), CD11b (M1/70), F4/80 (BM8), Ly6G (1A8) and Ly6C (AL-21 or HK1.4). Following fixation and permeabilisation with the Foxp3 staining kit (eBioscience) cells underwent intracellular staining with RELM-α (RnD Systems) followed by zenon anti-rabbit A647 (Invitrogen) and FITC-conjugated anti-human Ki67 (BD Biosciences). For intracellular cytokine staining of monocytes, 0.5−1 × 106 PL cells were incubated with 10 μg/ml Brefeldin A for 4 hr. Following cell surface staining as above, and fixation and permeabilization with Fix/Perm buffer (BD Pharmingen), cells underwent intracellular staining with anti-IL-13 (JES10-5A2). For intracellular staining of lymphocytes, MLNCs were incubated with 0.5 μg/ml PMA and 1 μg/ml ionomycin for 1 hr before the addition of 10 μg/ml Brefeldin A for a further 3 hr. Staining was performed by re-suspending cells in a combination of Abs to CD4 (GK1.5), ICOS (DX29), and the following combination to define Lin–: CD3 (17A2), CD5 (53–7.3), CD8α (RPA-T8), CD49b (DX5), CD11c (HL3), F4/80 (BM8), CD19 (eBio1D3), Gr-1 (RB6-8C5), TCRβ (H57-597) and CD11b (M1/70).
 
-## Statistical analysis
+### Statistical analysis
 
 Data were assessed for normality and equal variance and were log transformed if required; all data passed these criteria and an unpaired t test was used or, where more that three groups were tested, a parametric one-way ANOVA followed by Tukey’s multiple comparison test was used.

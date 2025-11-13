@@ -32,13 +32,13 @@ Though self-motivation is the rule, it can of course be steered both by explicit
 
 In designing the new building, we sought to retain and enhance the most important features of the old LMB, including workshop facilities and a rooftop restaurant, while increasing the space available for specialist equipment and making it easier to maintain and remodel the building without disrupting the researchers working in it.
 
-We started with the benches and worked outwards—which was undoubtedly the best way to ensure that the building serves the needs of the scientists. To fit the LMB's hands-on style, there are write-up spaces close to the benches, and offices of group leaders are intermingled with the write-up spaces (
+We started with the benches and worked outwards—which was undoubtedly the best way to ensure that the building serves the needs of the scientists. To fit the LMB's hands-on style, there are write-up spaces close to the benches, and offices of group leaders are intermingled with the write-up spaces (Figure 2). The labs are partially divided, making it easy to move between them, to share equipment and to have groups that fluctuate in size. Equipment rooms are across a corridor from the labs and benches, making them accessible to all and creating a space for people to bump into each other: indeed, we took a conscious decision to make the density of scientists on each corridor the same as that in the first LMB building.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00856/elife-00856-fig2-v1.jpg)
 
 **Figure 2.:** A corridor in the new LMB building, with labs on the right and write-up spaces and offices on the left. The building is designed to encourage interactions between researchers in the corridors and elsewhere; such interactions were a defining characteristic of the original LMB building.
 
-We also wanted a building that was easy to navigate, and in which it was easy to find people. Windows into labs and equipment rooms, a central atrium that acts as a ‘street’ (
+We also wanted a building that was easy to navigate, and in which it was easy to find people. Windows into labs and equipment rooms, a central atrium that acts as a ‘street’ (Figure 3), and breakout areas that are quiet (but visible) have enabled us to achieve this. The end result is a building carefully adapted to the culture of the LMB, with a particular emphasis on interaction and communal sharing. And although the new building is twice as large as the previous one, it feels more coherent.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00856/elife-00856-fig3-v1.jpg)
 

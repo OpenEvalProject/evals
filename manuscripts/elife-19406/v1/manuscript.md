@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.19406.001 A large number of drugs can induce prolongation of cardiac repolarization and life-threatening cardiac arrhythmias. The prediction of this side effect is however challenging as it usually develops in some genetically predisposed individuals with normal cardiac repolarization at baseline. Here, we describe a platform based on a genetically diverse panel of induced pluripotent stem cells (iPSCs) that reproduces susceptibility to develop a cardiotoxic drug response. We generated iPSC-derived cardiomyocytes from patients presenting in vivo with extremely low or high changes in cardiac repolarization in response to a pharmacological challenge with sotalol. In vitro, the responses to sotalol were highly variable but strongly correlated to the inter-individual differences observed in vivo. Transcriptomic profiling identified dysregulation of genes ( DLG2, KCNE4, PTRF, HTR2C , CAMKV ) involved in downstream regulation of cardiac repolarization machinery as underlying high sensitivity to sotalol. Our findings offer novel insights for the development of iPSC-based screening assays for testing individual drug reactions. DOI: http://dx.doi.org/10.7554/eLife.19406.001
+A large number of drugs can induce prolongation of cardiac repolarization and life-threatening cardiac arrhythmias. The prediction of this side effect is however challenging as it usually develops in some genetically predisposed individuals with normal cardiac repolarization at baseline. Here, we describe a platform based on a genetically diverse panel of induced pluripotent stem cells (iPSCs) that reproduces susceptibility to develop a cardiotoxic drug response. We generated iPSC-derived cardiomyocytes from patients presenting in vivo with extremely low or high changes in cardiac repolarization in response to a pharmacological challenge with sotalol. In vitro, the responses to sotalol were highly variable but strongly correlated to the inter-individual differences observed in vivo. Transcriptomic profiling identified dysregulation of genes (DLG2, KCNE4, PTRF, HTR2C, CAMKV) involved in downstream regulation of cardiac repolarization machinery as underlying high sensitivity to sotalol. Our findings offer novel insights for the development of iPSC-based screening assays for testing individual drug reactions.
 
 ## Introduction
 
@@ -47,81 +47,682 @@ To expand upon these observations, our goal was to determine whether iPSC-CMs fr
 
 ## Results
 
-## Identification of subjects susceptible to develop drug-induced long QT
+### Identification of subjects susceptible to develop drug-induced long QT
 
-We first performed a clinical study (clinicaltrials.gov NCT01338441) where we prospectively evaluated cardiac repolarization of healthy subjects in response to a pharmacological challenge with a single 80 mg oral dose of sotalol. Sotalol is a non-selective competitive β-adrenergic receptor blocker with additional Class III antiarrhythmic properties by its inhibition of potassium channels (
+We first performed a clinical study (clinicaltrials.gov NCT01338441) where we prospectively evaluated cardiac repolarization of healthy subjects in response to a pharmacological challenge with a single 80 mg oral dose of sotalol. Sotalol is a non-selective competitive β-adrenergic receptor blocker with additional Class III antiarrhythmic properties by its inhibition of potassium channels (Zanetti, 1993). Sotalol is widely recognized as a classical QT-prolonging drug (Soyka et al., 1990). A total of ninety-two subjects were enrolled in the study (Figure 1A). All subjects gave their written informed consent to participate the study. Included subjects were aged from 18 to 40 years (30.1 ± 6.2 years), had a body mass index (BMI) between 19 and 29 kg/m² (23.9 ± 2.3 kg/m²), were from Caucasian origin and had no known significant disease or long-term treatment. Forty-four percent (n = 40) were male. Cardiac repolarization parameters were analyzed through standardized measurements of digital high-resolution ECG (sampling rate 1000 Hz). All subjects had a normal sinus rhythm and no significant conduction or repolarization abnormalities. Basal QT interval ranged from 340 to 458 ms (393.4 ± 26.3 ms), with a corresponding heart rate ranging from 47 to 88 bpm (63.3 ± 8.7 bpm). QT interval was corrected according to Fridericia's formula (QTcf=QT/[RR]1/3) providing corrected QTcf in the physiological range from 350 to 447 ms (399.0 ± 18.6 ms). Three hours after sotalol intake, QTcf had increased by 23.4 ± 2.4 ms. A large inter-individual variability was however noticed with a change in QTcf ranging from −9 ms to +81 ms and a resulting post-sotalol QTcf ranging from 351 to 489 ms (412.6 ± 43.0 ms) (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig1-v1.jpg)
 
-**Figure 1.:** (A) Flow chart of the clinical study. (B) Distribution of QTcf duration before (blue) and 3 hr after sotalol intake (red). (C) Distribution of delta change in QTcf showing the wide inter-individual variability in response to the same pharmacological stimulation. Subjects with the most extreme responses were selected as low sensitive (low-S) or high- sensitive (high-S) as indicated in green and red respectively. (D) Average delta change in QTcf in the two groups of selected subjects. ***p<0.001. (E) Typical ECG recordings before and after sotalol intake in a high-S subject (upper panels) and in a low-S subject (lower panels). There is one figure supplement.DOI: http://dx.doi.org/10.7554/eLife.19406.003
+**Figure 1.:** (A) Flow chart of the clinical study. (B) Distribution of QTcf duration before (blue) and 3 hr after sotalol intake (red). (C) Distribution of delta change in QTcf showing the wide inter-individual variability in response to the same pharmacological stimulation. Subjects with the most extreme responses were selected as low sensitive (low-S) or high- sensitive (high-S) as indicated in green and red respectively. (D) Average delta change in QTcf in the two groups of selected subjects. ***p<0.001. (E) Typical ECG recordings before and after sotalol intake in a high-S subject (upper panels) and in a low-S subject (lower panels). There is one figure supplement.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** This translational study started with a prospective clinical study performed in a clinical investigation center near Paris, France. The objective was to identify healthy subjects with extreme responses to Sotalol 80 mg. Skin punch biopsies were performed in a total of twenty subjects, 10 with low-sensitivity and 10 with high-sensitivity to Sotalol. The fresh skin biopsies were then transferred at the Ectycell company (Romainville, France) in close vicinity of the clinical investigation center. The objective was to culture and bank human dermal fibroblasts and to derive and characterize hiPSC. iPSC clones were then anonymized before any further cardiac experiments were performed. This procedure was agreed by all partners to avoid potential biases in interpreting the recording at the cellular level. iPSCs clones were successfully generated for 17 subjects using retroviral infection and were investigated in this study. For the remaining three subjects (Patients 4, 14 and 20), iPSCs clones were secondarily generated using episomal plasmids and were thus not investigated. The 17 iPSCs clones were then transferred to the Cardiovascular Research Center at Icahn School of Medicine, New York, USA. The objective was to differentiate iPSCs into cardiac myocytes and to perform MEA recordings and drug testing. All required authorizations were obtained.DOI: http://dx.doi.org/10.7554/eLife.19406.004
+**Figure 1—figure supplement 1.:** This translational study started with a prospective clinical study performed in a clinical investigation center near Paris, France. The objective was to identify healthy subjects with extreme responses to Sotalol 80 mg. Skin punch biopsies were performed in a total of twenty subjects, 10 with low-sensitivity and 10 with high-sensitivity to Sotalol. The fresh skin biopsies were then transferred at the Ectycell company (Romainville, France) in close vicinity of the clinical investigation center. The objective was to culture and bank human dermal fibroblasts and to derive and characterize hiPSC. iPSC clones were then anonymized before any further cardiac experiments were performed. This procedure was agreed by all partners to avoid potential biases in interpreting the recording at the cellular level. iPSCs clones were successfully generated for 17 subjects using retroviral infection and were investigated in this study. For the remaining three subjects (Patients 4, 14 and 20), iPSCs clones were secondarily generated using episomal plasmids and were thus not investigated. The 17 iPSCs clones were then transferred to the Cardiovascular Research Center at Icahn School of Medicine, New York, USA. The objective was to differentiate iPSCs into cardiac myocytes and to perform MEA recordings and drug testing. All required authorizations were obtained.
 
-Twenty subjects with the most extreme responses to sotalol (i.e., 10 subjects with high-sensitivity (high-S) and 10 subjects with low-sensitivity (low-S)) underwent skin biopsy (Figure 1A and C). These subjects displayed highly contrasted responses to the same pharmacological stimulation (average change in QTcf: 48.5 ± 7.1 ms in high-S subjects vs. 0.2 ± 4.8 ms in low-S subjects; p<0.0002; Figure 1C–E) while having no significant differences in their basal ECG characteristics (Table 1). Demographic characteristics were well balanced between groups with the exception of gender, subjects with high-S being mostly female (90%, n = 9) whereas subjects with low-S were mostly males (80%, n = 8) (Table 1). Sotalol plasma level was measured 3 hr after sotalol intake and was not significantly different in subjects with high-S as compared to the other participating subjects (753.1 ± 210.9 vs. 620.7 ± 195.3 μg/ml, p=0.10).10.7554/eLife.19406.005Table 1.Related to Figure 1. Demographic, clinical and electrocardiographic baseline characteristics of subjects with low- vs. high- sensitivity to Sotalol.DOI: http://dx.doi.org/10.7554/eLife.19406.005Low-sensitivity, n = 10 High- sensitivity, n = 10 p-value Age29.9 ± 5.9 28.3 ± 5.9 0.53Gender, Male (%)8 (80.0%) 1 (10%) 0.006Body Mass Index (kg/m²)23.6 ± 0.9 22.9 ± 2.7 0.40SBP (mmHg)116.0 ± 8.6 113.7 ± 8.3 0.50DBP (mmHg)72.2 ± 4.8 68.0 ± 4.2 0.07Resting heart Rate (bpm)59.6 ± 5.9 63.2 ± 8.4 0.37PR interval (ms)166.7 ± 24.7 143.5 ± 18.1 0.09QRS (ms)88.3 ± 5.9 85.6 ± 7.7 0.08QTcf (ms)384.7 ± 26.4 402.6 ± 20.8 0.13
+Twenty subjects with the most extreme responses to sotalol (i.e., 10 subjects with high-sensitivity (high-S) and 10 subjects with low-sensitivity (low-S)) underwent skin biopsy (Figure 1A and C). These subjects displayed highly contrasted responses to the same pharmacological stimulation (average change in QTcf: 48.5 ± 7.1 ms in high-S subjects vs. 0.2 ± 4.8 ms in low-S subjects; p<0.0002; Figure 1C–E) while having no significant differences in their basal ECG characteristics (Table 1). Demographic characteristics were well balanced between groups with the exception of gender, subjects with high-S being mostly female (90%, n = 9) whereas subjects with low-S were mostly males (80%, n = 8) (Table 1). Sotalol plasma level was measured 3 hr after sotalol intake and was not significantly different in subjects with high-S as compared to the other participating subjects (753.1 ± 210.9 vs. 620.7 ± 195.3 μg/ml, p=0.10).
 
-## Derivation and differentiation of iPSCs into cardiomyocytes
+**Table 1.**
+ Related to Figure 1. Demographic, clinical and electrocardiographic baseline characteristics of subjects with low- vs. high- sensitivity to Sotalol.
 
-Dermal fibroblasts were collected from the twenty subjects with high or low-sensitivity to sotalol stimulation. Human iPSCs were derived through retroviral infection of dermal fibroblasts with the reprogramming factors OCT4, SOX2, c-MYC and KLF4 with a successful generation for 17 out of the 20 subjects (Figure 1—figure supplement 1). All iPSC clones expressed the characteristic human embryonic stem cell (ESC) pluripotency markers TRA-1–60, NANOG, OCT3/4 and SSEA-4 (Figure 2—source data 1), had positive alkaline phosphatase staining. Sixteen iPSC clones had a normal karyotype (Table 2). One clone presented a significant translocation that was observed in originating fibroblasts. All clones showed silencing of the exogenous retroviral transgenes and reactivation of the endogenous pluripotency genes OCT3/4, NANOG and SOX2 (Figure 2—figure supplement 1).10.7554/eLife.19406.006Table 2.Related to Figure 2. Fibroblasts and iPS quality control parameters.DOI: http://dx.doi.org/10.7554/eLife.19406.006ID Mycoplasma* HIV*, HBV*, HCV*, HTLV1 and 2* Phosphatase alkaline staining Karyotyping P11007~5924~iPSpolyRoksmANegativeNegativePositive46,XYP11008~5444~iPSpolyRoksmBNegativeNegativePositive46, XXP11009~6426~iPSpolyRoksmCNegativeNegativePositive46, XYP11013~5744~iPSpolyRoksmDNegativeNegativePositive46, XXP11014-5864-iPSpolyRoksmCNegativeNegativePositive46, XXP11015~6345~iPSpolyRoksmENegativeNegativePositive46, XXP11018~5644~iPSpolyRoksmBNegativeNegativePositive46, XXP11019-6444-iPSpolyRoksmBNegativeNegativePositive46, XYP11020 ~ 7125 ~ iPSpolyRoksmDNegativeNegativePositive46, XYP11021 ~ 6544 ~ iPSpolyRoksmCNegativeNegativePositive46, XXP11023~5525~iPSpolyRoksmANegativeNegativePositive46, XXP11024~5844~iPSpolyRoksmANegativeNegativePositive46, XXP11026~6504~iPSpolyRoksmDNegativeNegativePositive46, XYP11028~6904~iPSpolyRoksmJNegativeNegativePositive46, XYP11029-6284-iPSpolyRoksmBNegativeNegativePositive46, XXP11030~5684~iPSpolyRoksmANegativeNegativePositive46, XX,t(1;16)†P11031~5204~iPSpolyRoksmCNegativeNegativePositive46, XY*Tested in originating fibroblast cell lines.†As found in originating fibroblasts.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Low-sensitivity, n = 10</th>
+      <th>High- sensitivity, n = 10</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td>29.9 ± 5.9</td>
+      <td>28.3 ± 5.9</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>Gender, Male (%)</td>
+      <td>8 (80.0%)</td>
+      <td>1 (10%)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Body Mass Index (kg/m²)</td>
+      <td>23.6 ± 0.9</td>
+      <td>22.9 ± 2.7</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>SBP (mmHg)</td>
+      <td>116.0 ± 8.6</td>
+      <td>113.7 ± 8.3</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>DBP (mmHg)</td>
+      <td>72.2 ± 4.8</td>
+      <td>68.0 ± 4.2</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Resting heart Rate (bpm)</td>
+      <td>59.6 ± 5.9</td>
+      <td>63.2 ± 8.4</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>PR interval (ms)</td>
+      <td>166.7 ± 24.7</td>
+      <td>143.5 ± 18.1</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>QRS (ms)</td>
+      <td>88.3 ± 5.9</td>
+      <td>85.6 ± 7.7</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>QTcf (ms)</td>
+      <td>384.7 ± 26.4</td>
+      <td>402.6 ± 20.8</td>
+      <td>0.13</td>
+    </tr>
+  </tbody>
+</table>
+
+### Derivation and differentiation of iPSCs into cardiomyocytes
+
+Dermal fibroblasts were collected from the twenty subjects with high or low-sensitivity to sotalol stimulation. Human iPSCs were derived through retroviral infection of dermal fibroblasts with the reprogramming factors OCT4, SOX2, c-MYC and KLF4 with a successful generation for 17 out of the 20 subjects (Figure 1—figure supplement 1). All iPSC clones expressed the characteristic human embryonic stem cell (ESC) pluripotency markers TRA-1–60, NANOG, OCT3/4 and SSEA-4 (Figure 2—source data 1), had positive alkaline phosphatase staining. Sixteen iPSC clones had a normal karyotype (Table 2). One clone presented a significant translocation that was observed in originating fibroblasts. All clones showed silencing of the exogenous retroviral transgenes and reactivation of the endogenous pluripotency genes OCT3/4, NANOG and SOX2 (Figure 2—figure supplement 1).
+
+**Table 2.**
+ Related to Figure 2. Fibroblasts and iPS quality control parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Mycoplasma*</th>
+      <th>HIV*, HBV*, HCV*, HTLV1 and 2*</th>
+      <th>Phosphatase alkaline staining</th>
+      <th>Karyotyping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P11007~5924~iPSpolyRoksmA</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46,XY</td>
+    </tr>
+    <tr>
+      <td>P11008~5444~iPSpolyRoksmB</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11009~6426~iPSpolyRoksmC</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XY</td>
+    </tr>
+    <tr>
+      <td>P11013~5744~iPSpolyRoksmD</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11014-5864-iPSpolyRoksmC</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11015~6345~iPSpolyRoksmE</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11018~5644~iPSpolyRoksmB</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11019-6444-iPSpolyRoksmB</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XY</td>
+    </tr>
+    <tr>
+      <td>P11020 ~ 7125 ~ iPSpolyRoksmD</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XY</td>
+    </tr>
+    <tr>
+      <td>P11021 ~ 6544 ~ iPSpolyRoksmC</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11023~5525~iPSpolyRoksmA</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11024~5844~iPSpolyRoksmA</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11026~6504~iPSpolyRoksmD</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XY</td>
+    </tr>
+    <tr>
+      <td>P11028~6904~iPSpolyRoksmJ</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XY</td>
+    </tr>
+    <tr>
+      <td>P11029-6284-iPSpolyRoksmB</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX</td>
+    </tr>
+    <tr>
+      <td>P11030~5684~iPSpolyRoksmA</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XX,t(1;16)†</td>
+    </tr>
+    <tr>
+      <td>P11031~5204~iPSpolyRoksmC</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Positive</td>
+      <td>46, XY</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Tested in originating fibroblast cell lines.†As found in originating fibroblasts._
 
 The generated iPSCs lines were then encoded to ensure that all further biological experiments were performed in a blinded fashion without knowledge of the associated clinical phenotype (Figure 1—figure supplement 1). The code was kept securely by a blinded third party and was only disclosed once all characterizations and electrophysiological measurements with microelectrode array (MEA) mapping system were finalized. All classifications of lines according to the observed response to sotalol were therefore performed before the unblinding process.
 
-Subject-specific iPSCs were differentiated using a small molecule-mediated directed differentiation protocol that involves sequential modulation of the canonical Wnt pathway and yields a high proportion of ventricular-like cardiomyocytes as previously described (
+Subject-specific iPSCs were differentiated using a small molecule-mediated directed differentiation protocol that involves sequential modulation of the canonical Wnt pathway and yields a high proportion of ventricular-like cardiomyocytes as previously described (Karakikes et al., 2014). As early as seven days following initiation of cardiac differentiation, spontaneously beating embryoid bodies (EBs) appeared. To test for iPSC-derived cardiomyocytes quality and purity we first performed immunocytostaining studies showing positive staining for the sarcomeric proteins troponin T (cTnT), and alpha-actinin and for the gap-junction protein connexin 43 (Cx43) (Figure 2A). Cardiac troponin T staining of iPSC-CMs showed a typical striated pattern (Figure 2A, upper panels). We also determined the cardiomyocytes differentiation efficiency by flow cytometry and found an average of 47.8 ± 19.9% cTNT positive cells. Importantly, after unblinding the study, we did not observe any differences between iPSC lines from the high-S vs. low-S groups (49.2 ± 24.4% vs. 46.7 ± 17.3% respectively, p=0.42). Finally, in line with previous reports (Liang et al., 2013), quantitative PCR demonstrated the presence of major cardiac ion channel genes found in adult left ventricular tissue, including of the relevant KCNH2 gene (Figure 2B and Figure 2—source data 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig2-v1.jpg)
 
-**Figure 2.:** (A) Confocal microscopy imaging of Troponin T (top), alpha-actinin and connexin 43 (bottom) in single generated iPSC-CMs (from line P11015). Nuclei are stained with DAPI (Blue). (B) Gene expression of cardiac ion channel KCNH2 (encoding hERG) by quantitative PCR; Adult LV tissue is used as a positive control and the level of expression in human ESC-derived cardiomyocytes as a comparator. (C) Example of monolayer of iPSC-CMs seeded and attached on a 6-well MEA chip, each well containing nine microelectrodes (black). See also Video 1. (D) Representative field potential duration (FPD) recorded before and after application of the hERG blocker E4031 (from line P11007). There are five figure supplements.DOI: http://dx.doi.org/10.7554/eLife.19406.00710.7554/eLife.19406.008Figure 2—source data 1.Representative immunostaining for a panel of pluripotent stem cell markers, including Nanog, OCT4, SSEA4 and TRA1-60. Results are reported for each cell line. Typical staining in hESC is reported as a positive control. Scale bar 50 μM.DOI: http://dx.doi.org/10.7554/eLife.19406.00810.7554/eLife.19406.009Figure 2—source data 2.Quantitative PCR results for the expression of 10 major cardiac ion channels including SCN5A, CACNA1, KCNQ1, KCNE1, KCNJ2, KCNJ11, KChIP2, HCN1, HCN2, HCN4. KCND3 was not detected. Adult LV tissue is used as a positive control and the level of expression in human embryonic stem cells-derived cardiomyocytes as a comparator.DOI: http://dx.doi.org/10.7554/eLife.19406.009
+**Figure 2.:** (A) Confocal microscopy imaging of Troponin T (top), alpha-actinin and connexin 43 (bottom) in single generated iPSC-CMs (from line P11015). Nuclei are stained with DAPI (Blue). (B) Gene expression of cardiac ion channel KCNH2 (encoding hERG) by quantitative PCR; Adult LV tissue is used as a positive control and the level of expression in human ESC-derived cardiomyocytes as a comparator. (C) Example of monolayer of iPSC-CMs seeded and attached on a 6-well MEA chip, each well containing nine microelectrodes (black). See also Video 1. (D) Representative field potential duration (FPD) recorded before and after application of the hERG blocker E4031 (from line P11007). There are five figure supplements.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Representative gel showing silencing of the four exogenous reprogramming transgenes (OCT3/4; KLF4; SOX2 ; c-MYC) and quantitative PCR results for endogenous pluripotent stem cell genes (OCT3/4; NANOG; SOX2) in the generated hiPSCs.DOI: http://dx.doi.org/10.7554/eLife.19406.010
+**Figure 2—figure supplement 1.:** Representative gel showing silencing of the four exogenous reprogramming transgenes (OCT3/4; KLF4; SOX2 ; c-MYC) and quantitative PCR results for endogenous pluripotent stem cell genes (OCT3/4; NANOG; SOX2) in the generated hiPSCs.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Picture of a 6-well MEA array as used in the study. Each well contains nine micro-electrodes and a limited volume capacity allowing easier contact between cells and micro-electrodes after re-seeding and rapid response to drugs after application in a limited volume of medium. (B) Typical micro-electrodes map of the six well array. (C) Dose-curve responses to the hERG blocker E4031. Increasing concentrations of E4031 were applied as described in Materials and methods section. Individual data were plotted and a hill equation was fitted allowing estimates of EC50 for each cell lines. Results were obtained in 15 cell lines as two cell lines display no changes in FPD in response to E4031, suggesting expression of a non-functional hERG in these iPSC-CMs. For graphical purposes, cell lines from the low-S group are shown in green and from the high-S group in red.DOI: http://dx.doi.org/10.7554/eLife.19406.011
+**Figure 2—figure supplement 2.:** (A) Picture of a 6-well MEA array as used in the study. Each well contains nine micro-electrodes and a limited volume capacity allowing easier contact between cells and micro-electrodes after re-seeding and rapid response to drugs after application in a limited volume of medium. (B) Typical micro-electrodes map of the six well array. (C) Dose-curve responses to the hERG blocker E4031. Increasing concentrations of E4031 were applied as described in Materials and methods section. Individual data were plotted and a hill equation was fitted allowing estimates of EC50 for each cell lines. Results were obtained in 15 cell lines as two cell lines display no changes in FPD in response to E4031, suggesting expression of a non-functional hERG in these iPSC-CMs. For graphical purposes, cell lines from the low-S group are shown in green and from the high-S group in red.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** (A) Plot of adjusted FPD using the Bazett’s formula against the individual inter-beat interval. This plot shows the miss-correction achieved using the Bazett’s formula with a significant dependence of FPD to beating rate even after adjustment. (B) Plot of adjusted FPD against the individual inter-beat interval after re-estimation of the correction factor to the data set. The plot shows perfect correction with linear regression indicating the lack of influence of the beating rate on the adjusted FPD.DOI: http://dx.doi.org/10.7554/eLife.19406.012
+**Figure 2—figure supplement 3.:** (A) Plot of adjusted FPD using the Bazett’s formula against the individual inter-beat interval. This plot shows the miss-correction achieved using the Bazett’s formula with a significant dependence of FPD to beating rate even after adjustment. (B) Plot of adjusted FPD against the individual inter-beat interval after re-estimation of the correction factor to the data set. The plot shows perfect correction with linear regression indicating the lack of influence of the beating rate on the adjusted FPD.
 
-## Genetic profiling of cell lines
+### Genetic profiling of cell lines
 
-We then screened for common single nucleotide polymorphisms (SNPs, total of 4130) in the 15 genes associated with congenital long QT (AKAP9, ANK2, CACNA1C, CALM1, CALM2, CAV3, KCNH2, KCNE1, KCNE2, KCNJ2, KCNJ5, KCNQ1, SCN4B, SCN5A, SNTA1) using a high-density chip (Human Omni 2.5 genotyping array). We found 25 SNPs in ANK2, SCN5A, KCNQ1, CACNA1C, CALM1, KCNE2, KCNH2 and KCNJ5 as being significantly imbalanced between low-S vs. high-S groups (Table 3). This suggests the presence of an allelic series comprising multiple variants of unknown significance that can create a particular predisposing genetic background. Of note, the CALM1 c.*1952C (rs3814843) mutated allele was recently associated with increased risk of sudden cardiac death in patients with heart failure (Liu et al., 2015). The allele is rare in Europeans (anticipated allelic frequency of 1.8%) but displayed a 22.2% allelic frequency in the high-S group. In addition, the rare C allele of KCNH2:c.307 + 1932G>C polymorphism (rs3778873) was significantly more frequent in high-S as compared to low-S (minor allelic frequency: 44.4% vs. 6.2% respectively, p=0.02). KCNH2 encodes for the hERG potassium channel that is targeted by sotalol and this variant was identified in a large genome-wide association study on the physiological regulation of QT interval (Pfeufer et al., 2009).10.7554/eLife.19406.013Table 3.Related to Figure 2. Single nucleotide polymorphisms in ANK2, SCN5A, KCNQ1, CACNA1C, CALM1, KCNE2, KCNH2 and KCNJ5 as being significantly imbalanced (p<0.05) between low-S vs. high-S groups. Anticipated minor allelic frequency (MAF) was defined using the HapMap-CEU European data. The MAF in cells from the high-S vs. low-S groups was determined once the study was unblinded. Fisher’s exact test was used to compare observed MAFs in high-S vs. low-S groups.DOI: http://dx.doi.org/10.7554/eLife.19406.013Gene Rs number Anticipated MAF Observed MAF Low-S Observed MAF High-S p value ANK2 rs170459356.8% 0% 22.2% 0.03rs6231490140% 56.25% 27.8% 0.037rs1767625610.2% 12.5% 38.9% 0.03rs96709938.1% 25% 44.4% 0.027rs483432146.9% 37.5% 55.6% 0.02rs3530837048.3% 25% 66.7% 0.025rs93183842.5% 31.25% 66.7% 0.048SCN5A rs737512319.2% 43.75% 11.2% 0.007rs124919877.6% 0% 22.2% 0.03rs987138534.1% 6.25% 33.3% 0.02rs981814819.2% 56.25% 16.7% 0.049KCNQ1 rs425552015.5% 18.75% 0% 0.043rs15128832.7% 0% 22.2% 0.031rs718579rs1102299639.8% 41.2% 12.5% 27.8% 0.034rs15121240.8% 50% 33.3% 0.05CACNA1C rs379429912.4% 18.75% 0% 0.043rs4765661rs223801815.8% 17.3% 31.25% 5.6% 0.027CALM1 rs38148431.8% 0% 22.2% 0.031rs23005027.5% 6.25% 33.3% 0.023KCNE2 rs2840936830.8% 18.75% 38.9% 0.0239KCNH2 rs207241137.5% 18.75% 44.4% 0.027rs377887315.8% 6.2% 44.4% 0.02KCNJ5 rs792441624.6% 0% 27.8% 0.013
+We then screened for common single nucleotide polymorphisms (SNPs, total of 4130) in the 15 genes associated with congenital long QT (AKAP9, ANK2, CACNA1C, CALM1, CALM2, CAV3, KCNH2, KCNE1, KCNE2, KCNJ2, KCNJ5, KCNQ1, SCN4B, SCN5A, SNTA1) using a high-density chip (Human Omni 2.5 genotyping array). We found 25 SNPs in ANK2, SCN5A, KCNQ1, CACNA1C, CALM1, KCNE2, KCNH2 and KCNJ5 as being significantly imbalanced between low-S vs. high-S groups (Table 3). This suggests the presence of an allelic series comprising multiple variants of unknown significance that can create a particular predisposing genetic background. Of note, the CALM1 c.*1952C (rs3814843) mutated allele was recently associated with increased risk of sudden cardiac death in patients with heart failure (Liu et al., 2015). The allele is rare in Europeans (anticipated allelic frequency of 1.8%) but displayed a 22.2% allelic frequency in the high-S group. In addition, the rare C allele of KCNH2:c.307 + 1932G>C polymorphism (rs3778873) was significantly more frequent in high-S as compared to low-S (minor allelic frequency: 44.4% vs. 6.2% respectively, p=0.02). KCNH2 encodes for the hERG potassium channel that is targeted by sotalol and this variant was identified in a large genome-wide association study on the physiological regulation of QT interval (Pfeufer et al., 2009).
 
-## The library of iPSC-CMs reproduces susceptibility to develop cardiotoxic drug response
+**Table 3.**
+ Related to Figure 2. Single nucleotide polymorphisms in ANK2, SCN5A, KCNQ1, CACNA1C, CALM1, KCNE2, KCNH2 and KCNJ5 as being significantly imbalanced (p<0.05) between low-S vs. high-S groups. Anticipated minor allelic frequency (MAF) was defined using the HapMap-CEU European data. The MAF in cells from the high-S vs. low-S groups was determined once the study was unblinded. Fisher’s exact test was used to compare observed MAFs in high-S vs. low-S groups.
 
-To evaluate the electrophysiological properties of iPSC-CMs, we used a microelectrode array (MEA) mapping system (Figure 2—figure supplement 2). iPSC-CMs were seeded onto a 6-well MEA chamber in order to form a monolayer in contact with the electrodes. Few days after seeding iPSC-CMs regain spontaneous beating activity thus allowing recordings of field potential duration (FPD) (Figure 2C–D and Video 1). FPD is analogous to the QT interval in the electrocardiogram (ECG) and was previously shown to correlate with action potential duration (APD) and can be used to test drug effects on repolarization (Navarrete et al., 2013). IPSC-CMs were first tested for their responses to E4031, a specific and potent experimental hERG blocker. E4031 resulted in a dose-dependent increase in FPD with typical flattening of the waveform in all but two cell lines (Figure 2D and Figure 2—figure supplements 2 and 3). There was moderate inter-line variability, except for line P11019 which demonstrated higher sensitivity to E-4031 and was found to belong to the high-S group after unblinding. There was however no significant differences in sensitivity to E4031 between groups as assessed by computations of half maximal effective concentration EC50 (2.4 ± 0.7 × 10−8 vs 6.6 ± 3.0 × 10−8 M in high-S and low-S groups respectively, p=0.59) or of maximal effect Emax (49 ± 20% vs 30 ± 2% in high-S and low-S groups respectively, p=0.76). Two lines displayed no responses to E4031 and were found as having the lowest expression of hERG (P11021 and P11023, Figure 2B). Because of the lack of response to a pure hERG blocker and of appropriate recordings to detect effects of QT prolonging drugs with the MEA system, sotalol response was not further tested on these two lines.10.7554/eLife.19406.014Video 1.Spontaneous beating activity of monolayer iPSC-CMs seeded onto one well of a 6-well MEA chamber.DOI: http://dx.doi.org/10.7554/eLife.19406.014
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Rs number</th>
+      <th>Anticipated MAF</th>
+      <th>Observed MAF Low-S</th>
+      <th>Observed MAF High-S</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ANK2</td>
+      <td>rs17045935</td>
+      <td>6.8%</td>
+      <td>0%</td>
+      <td>22.2%</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs62314901</td>
+      <td>40%</td>
+      <td>56.25%</td>
+      <td>27.8%</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs17676256</td>
+      <td>10.2%</td>
+      <td>12.5%</td>
+      <td>38.9%</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs967099</td>
+      <td>38.1%</td>
+      <td>25%</td>
+      <td>44.4%</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs4834321</td>
+      <td>46.9%</td>
+      <td>37.5%</td>
+      <td>55.6%</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs35308370</td>
+      <td>48.3%</td>
+      <td>25%</td>
+      <td>66.7%</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs931838</td>
+      <td>42.5%</td>
+      <td>31.25%</td>
+      <td>66.7%</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SCN5A</td>
+      <td>rs7375123</td>
+      <td>19.2%</td>
+      <td>43.75%</td>
+      <td>11.2%</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs12491987</td>
+      <td>7.6%</td>
+      <td>0%</td>
+      <td>22.2%</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs9871385</td>
+      <td>34.1%</td>
+      <td>6.25%</td>
+      <td>33.3%</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs9818148</td>
+      <td>19.2%</td>
+      <td>56.25%</td>
+      <td>16.7%</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KCNQ1</td>
+      <td>rs4255520</td>
+      <td>15.5%</td>
+      <td>18.75%</td>
+      <td>0%</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs151288</td>
+      <td>32.7%</td>
+      <td>0%</td>
+      <td>22.2%</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs718579rs11022996</td>
+      <td>39.8% 41.2%</td>
+      <td>12.5%</td>
+      <td>27.8%</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs151212</td>
+      <td>40.8%</td>
+      <td>50%</td>
+      <td>33.3%</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CACNA1C</td>
+      <td>rs3794299</td>
+      <td>12.4%</td>
+      <td>18.75%</td>
+      <td>0%</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs4765661rs2238018</td>
+      <td>15.8% 17.3%</td>
+      <td>31.25%</td>
+      <td>5.6%</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CALM1</td>
+      <td>rs3814843</td>
+      <td>1.8%</td>
+      <td>0%</td>
+      <td>22.2%</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs2300502</td>
+      <td>7.5%</td>
+      <td>6.25%</td>
+      <td>33.3%</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KCNE2</td>
+      <td>rs28409368</td>
+      <td>30.8%</td>
+      <td>18.75%</td>
+      <td>38.9%</td>
+      <td>0.0239</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KCNH2</td>
+      <td>rs2072411</td>
+      <td>37.5%</td>
+      <td>18.75%</td>
+      <td>44.4%</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rs3778873</td>
+      <td>15.8%</td>
+      <td>6.2%</td>
+      <td>44.4%</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KCNJ5</td>
+      <td>rs7924416</td>
+      <td>24.6%</td>
+      <td>0%</td>
+      <td>27.8%</td>
+      <td>0.013</td>
+    </tr>
+  </tbody>
+</table>
+
+### The library of iPSC-CMs reproduces susceptibility to develop cardiotoxic drug response
+
+To evaluate the electrophysiological properties of iPSC-CMs, we used a microelectrode array (MEA) mapping system (Figure 2—figure supplement 2). iPSC-CMs were seeded onto a 6-well MEA chamber in order to form a monolayer in contact with the electrodes. Few days after seeding iPSC-CMs regain spontaneous beating activity thus allowing recordings of field potential duration (FPD) (Figure 2C–D and Video 1). FPD is analogous to the QT interval in the electrocardiogram (ECG) and was previously shown to correlate with action potential duration (APD) and can be used to test drug effects on repolarization (Navarrete et al., 2013). IPSC-CMs were first tested for their responses to E4031, a specific and potent experimental hERG blocker. E4031 resulted in a dose-dependent increase in FPD with typical flattening of the waveform in all but two cell lines (Figure 2D and Figure 2—figure supplements 2 and 3). There was moderate inter-line variability, except for line P11019 which demonstrated higher sensitivity to E-4031 and was found to belong to the high-S group after unblinding. There was however no significant differences in sensitivity to E4031 between groups as assessed by computations of half maximal effective concentration EC50 (2.4 ± 0.7 × 10−8 vs 6.6 ± 3.0 × 10−8 M in high-S and low-S groups respectively, p=0.59) or of maximal effect Emax (49 ± 20% vs 30 ± 2% in high-S and low-S groups respectively, p=0.76). Two lines displayed no responses to E4031 and were found as having the lowest expression of hERG (P11021 and P11023, Figure 2B). Because of the lack of response to a pure hERG blocker and of appropriate recordings to detect effects of QT prolonging drugs with the MEA system, sotalol response was not further tested on these two lines.
+
+![Video 1.](https://cdn.elifesciences.org/articles/19406/elife-19406-media1.mp4.jpg)
 
 The response to the clinically relevant drug sotalol was then tested in a blinded fashion in the remaining lines. For quality purposes, results from the iPSC line presenting a significant translocation were excluded from further analyses. However, the inclusion of the results obtained with this iPSC line did not change the statistical significance of the results. Final analyses were thus performed on a total of 14 lines (7 vs. 7 lines in low-S and high-S groups respectively).
 
-After unblinding, we found that the different recordings showed a significantly higher response to sotalol in the CMs generated from iPSCs derived from high-S subjects as compared to low-S subjects (
+After unblinding, we found that the different recordings showed a significantly higher response to sotalol in the CMs generated from iPSCs derived from high-S subjects as compared to low-S subjects (Figure 3A–D). Increasing sotalol concentrations was associated with a significant prolongation in FPDs in all iPSC-CMs, an effect that was however significantly enhanced in lines from the high-S group (Figure 3A). There was a dose-dependent sotalol-induced FPD prolongation that typically appears for sotalol concentrations above 30 μmol/L (Figure 3A), as seen in other reports (Navarrete et al., 2013). Of note, the application of low sotalol concentration (10 μmol/L), a concentration this is closer to typical sotalol plasma levels, was already associated with a significant increase in FPD in lines from the high-S group as compared to low-S (p=0.03). The maximal FPD prolongation observed in response to sotalol was also significantly higher in the high-S as compared to low-S iPSC-CMs (52 ± 6% vs. 27 ± 6%, p=0.02, Figure 3B). Sotalol is known to induce arrhythmic events including ectopic beats and short-long-short rhythm. We found that 5 of the seven lines derived from the high-S group displayed arrhythmias in response to sotalol stimulation as they showed development of irregular spontaneous beating rate. On the other hand, arrhythmias only occurred in one of the eight lines from the low-S group (Figure 3C). We plotted the relative change in FPD in response to sotalol 30 μM against the observed change in QTcf in donors (Figure 3D). With the exception of one cell line in each group, the remaining six low-S and six high-S cell lines were correctly discriminated according to the clinical phenotype. These data indicate that the contrasted responses to sotalol in iPSC-derived CMs are strongly related to the inter-individual differences in response to sotalol as recorded during clinical investigations.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig3-v1.jpg)
 
-**Figure 3.:** (A) Adjusted FPD (aFPD) measured in iPSC-CMs derived from subjects with low-sensitivity (green) vs. high-sensitivity (red) in response to increasing concentrations of sotalol. aFPD are normalized to baseline values to account for inter-lines variability in aFPD values. Two-way analysis of variance demonstrates a significant influence of sotalol concentrations (p<0.0005) and of the sensitivity group (p<0.02). *p<0.05 for post-hoc comparison between groups; high-S vs. low-S. N = 2–5 recordings per cell lines per concentrations. (B) Maximal change in aFPD observed during sotalol stimulation. (C) Proportion of observed arrhythmias after sotalol application. (D) Data plot graph showing the correlation between aFPD observed in iPSC-CMs and the DeltaQTcf observed in donors. The aFPD data are reported for sotalol 30 μM concentration. Data points are clustered in two distinct groups. Except for two lines (one line in each group), a threshold a 25% in aFPD change (dashed line) correctly discriminates cells from both groups.DOI: http://dx.doi.org/10.7554/eLife.19406.015
+**Figure 3.:** (A) Adjusted FPD (aFPD) measured in iPSC-CMs derived from subjects with low-sensitivity (green) vs. high-sensitivity (red) in response to increasing concentrations of sotalol. aFPD are normalized to baseline values to account for inter-lines variability in aFPD values. Two-way analysis of variance demonstrates a significant influence of sotalol concentrations (p<0.0005) and of the sensitivity group (p<0.02). *p<0.05 for post-hoc comparison between groups; high-S vs. low-S. N = 2–5 recordings per cell lines per concentrations. (B) Maximal change in aFPD observed during sotalol stimulation. (C) Proportion of observed arrhythmias after sotalol application. (D) Data plot graph showing the correlation between aFPD observed in iPSC-CMs and the DeltaQTcf observed in donors. The aFPD data are reported for sotalol 30 μM concentration. Data points are clustered in two distinct groups. Except for two lines (one line in each group), a threshold a 25% in aFPD change (dashed line) correctly discriminates cells from both groups.
 
-We also evaluated the effect of sotalol on action potential duration (APD) measured in a representative iPSC-CMs line from each group (P11009 as low-S and P11029 as high-S). Experimenter for APD measurement was however kept blinded of the observed drug sensitivity of selected iPS lines. Sotalol (100 and 300 µM) significantly prolonged the action potential, the duration of 90% repolarization (APD
+We also evaluated the effect of sotalol on action potential duration (APD) measured in a representative iPSC-CMs line from each group (P11009 as low-S and P11029 as high-S). Experimenter for APD measurement was however kept blinded of the observed drug sensitivity of selected iPS lines. Sotalol (100 and 300 µM) significantly prolonged the action potential, the duration of 90% repolarization (APD90) of high-S (P11029) iPSC-CMs (289 ± 22 in drug-free vs. 492 ± 66 and 435 ± 92 after 100 and 300 µM sotalol, respectively n = 5) but not that of the low-S line (P11009) even at high dose (339 ± 63 vs. 450 ± 77 ms after 300 µM sotalol, n = 5) (Figure 4A–B and Table 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig4-v1.jpg)
 
-**Figure 4.:** (A) Representative AP tracings of the iPSC-CMs generated from the low-S (P11009) and high-S (P11029) lines in control and sotalol-treated conditions. (B) bar chart summarizing the APD90 in control and sotalol-treated conditions for the hiPSC-CMs generated from both low-S (P11009) and high-S (P11029) hiPSC cell lines (n = 5 for each condition). *p<0.05; **p<0.01, ANOVA, followed by Tukey's, sotalol-treated versus respective control without sotalol application.DOI: http://dx.doi.org/10.7554/eLife.19406.016
+**Figure 4.:** (A) Representative AP tracings of the iPSC-CMs generated from the low-S (P11009) and high-S (P11029) lines in control and sotalol-treated conditions. (B) bar chart summarizing the APD90 in control and sotalol-treated conditions for the hiPSC-CMs generated from both low-S (P11009) and high-S (P11029) hiPSC cell lines (n = 5 for each condition). *p<0.05; **p<0.01, ANOVA, followed by Tukey's, sotalol-treated versus respective control without sotalol application.
 
-## Dysregulation of downstream regulators of cardiac ion channels
+**Table 4.**
+ Related to Figure 4. AP parameters of low-S and high-S iPSC-derived cardiomyocytes at baseline control condition. AP data are mean ± SE. APD50/APD90, AP duration measured at 50% or 90% repolarization; MDP, maximum diastolic potential. None of the baseline AP parameters was significantly different between the two cell lines.
 
-To gain insight into molecular mechanisms leading to differential susceptibility to developing diLQT, we performed a transcriptomic profiling of iPSC-CMs from high-S vs. low-S groups using RNA-sequencing. We looked for differentially expressed genes (DEGs) between the two groups (all cell lines included) and used a prior knowledge based approach to identify potential risk markers that could be mechanistically connected to QT prolongation development. By analyzing the LQTS neighborhood in the human interactome we recently demonstrated that graph theoretical models allow the prediction of new gene variants and drug targets that are involved in disease pathogenesis (
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Low-S (11009) (n=7)</th>
+      <th>High-S (11029) (n=5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Firing Frequency (mV)</td>
+      <td>1.26 ± 0.29</td>
+      <td>1.03 ± 0.28</td>
+    </tr>
+    <tr>
+      <td>Amplitude (mV)</td>
+      <td>88.3 ± 3.6</td>
+      <td>85.1 ± 4.7</td>
+    </tr>
+    <tr>
+      <td>Upstroke velocity (mV/ms)</td>
+      <td>11.7 ± 1.0</td>
+      <td>14.0 ± 2.0</td>
+    </tr>
+    <tr>
+      <td>Decay velocity (mV/ms)</td>
+      <td>−7.2 ± 1.4</td>
+      <td>−11.1 ± 3.5</td>
+    </tr>
+    <tr>
+      <td>APD50 (ms)</td>
+      <td>306.4 ± 57.9</td>
+      <td>299.4 ± 22.0</td>
+    </tr>
+    <tr>
+      <td>APD90 (ms)</td>
+      <td>341.8 ± 58.6</td>
+      <td>338.4 ± 21.4</td>
+    </tr>
+    <tr>
+      <td>MDP (mV)</td>
+      <td>−69.4 ± 3.2</td>
+      <td>−68.0 ± 1.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Dysregulation of downstream regulators of cardiac ion channels
+
+To gain insight into molecular mechanisms leading to differential susceptibility to developing diLQT, we performed a transcriptomic profiling of iPSC-CMs from high-S vs. low-S groups using RNA-sequencing. We looked for differentially expressed genes (DEGs) between the two groups (all cell lines included) and used a prior knowledge based approach to identify potential risk markers that could be mechanistically connected to QT prolongation development. By analyzing the LQTS neighborhood in the human interactome we recently demonstrated that graph theoretical models allow the prediction of new gene variants and drug targets that are involved in disease pathogenesis (Berger et al., 2010). Here, we used a similar approach and searched for differentially expressed direct neighbors of the known congenital LQTS genes in the human interactome (Figure 5A). Of note, expression of these LQTS genes was similar between high-S and low-S groups. We identified four up-regulated (DLG2, KCNE4, PTRF, and HTR2C) and one down-regulated direct neighbors (CAMKV) (Figure 5A–B). Among these newly identified candidates, DLG2 (a member of the family of anchoring proteins called MAGUK), KCNE4 (a regulatory sub-unit of potassium channel), CAMKV (a kinase-like protein that, in the presence of calcium, interacts with calmodulin (CALM1), and PTRF (Polymerase I and transcript release factor, or cavin-1) were relevant candidates as downstream regulators of cardiac ion channels.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig5-v1.jpg)
 
-**Figure 5.:** (A) Known LQTS genes were used as seed nodes (green squares) in the human interactome and five differentially expressed direct neighbors were identified (circles) (path length 1). Up-regulated genes are colored orange, down-regulated genes are in blue. (B) Relative expression of identified genes in each group. Males are represented in blue and females in red. Individual samples are represented by the same symbols in all diagrams. (C) Comparison of the log2-fold changes between the high-S and the low-S groups with the normalized counts of how often a gene (blue or orange dots) was found to be up- or down-regulated between the male and female groups. As there are more females in the high-S group and more males in the low-S groups, report of genes in the lower left or upper right quadrants indicate a gender-specific effect while the lower right and upper left quadrants argue for the lack of gender-specific effect. Except for HTR2C, dysregulation of all other candidate genes was suspected to occur independently of gender. There is one figure supplement.DOI: http://dx.doi.org/10.7554/eLife.19406.018
+**Figure 5.:** (A) Known LQTS genes were used as seed nodes (green squares) in the human interactome and five differentially expressed direct neighbors were identified (circles) (path length 1). Up-regulated genes are colored orange, down-regulated genes are in blue. (B) Relative expression of identified genes in each group. Males are represented in blue and females in red. Individual samples are represented by the same symbols in all diagrams. (C) Comparison of the log2-fold changes between the high-S and the low-S groups with the normalized counts of how often a gene (blue or orange dots) was found to be up- or down-regulated between the male and female groups. As there are more females in the high-S group and more males in the low-S groups, report of genes in the lower left or upper right quadrants indicate a gender-specific effect while the lower right and upper left quadrants argue for the lack of gender-specific effect. Except for HTR2C, dysregulation of all other candidate genes was suspected to occur independently of gender. There is one figure supplement.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/19406/elife-19406-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Predicted regulatory transcription factors of the identified DEGs (DLG2, KCNE4, CAMKV, PTRF, HTR2C) based on two transcription factor target databases (Chea background and Transfac) and ranked by significance. The sex-hormone related transcription factors (in orange) were ranked 16 (AR), 20 (ESR1) and 24 (ESR2) or 27 (PGR) and 180 (ESR1) while the top 10 candidates were independent of sex hormones influence (in blue).DOI: http://dx.doi.org/10.7554/eLife.19406.019
+**Figure 5—figure supplement 1.:** Predicted regulatory transcription factors of the identified DEGs (DLG2, KCNE4, CAMKV, PTRF, HTR2C) based on two transcription factor target databases (Chea background and Transfac) and ranked by significance. The sex-hormone related transcription factors (in orange) were ranked 16 (AR), 20 (ESR1) and 24 (ESR2) or 27 (PGR) and 180 (ESR1) while the top 10 candidates were independent of sex hormones influence (in blue).
 
 The expression levels of the genes between the low-S and the high-S groups show that the risk specific expression (i.e. low expression for CAMKV and high expression for the other direct neighbors) does not accumulate on a few high-S subjects but is more or less equally distributed over all high-S subjects (Figure 5B). Each subject has a risk-associated expression of at least one direct neighbor, arguing for multiple ways to disturb the LQTS genes and therefore confer different susceptibility to develop diLQT.
 
-Since most of the high-sensitivity subjects were females, while most of the low sensitivity subjects were males, we then estimated whether gender could impact our results. To neutralize gender-specific effects on gene expression, we generated new groups consisting of one high-S and one low-S subject of the same gender (16 female groups, six male groups, Table 5). DEGs were identified between all possible combinations of one female versus one male group (16 × 6 = 96 sets of DEGs). We counted for each gene how many sets of DEGs identified the gene as significantly up-regulated or down-regulated. Down-regulated counts were subtracted from up-regulated counts and resulting netto counts were normalized to the number of total comparisons (i.e. divided by 96). Using this approach, a gene that is up-regulated in the high-S group because of gender specific expression, should be identified as significantly up-regulated in most of the female versus male groups sets of DEGs. The same accounts for down-regulated genes. As shown in Figure 5B and C, this trend was not observed for most of the genes, arguing against gender differences being the reason for differential gene expression between the high-S and low-S group.10.7554/eLife.19406.020Table 5.Related to Figure 5. Generation of new groups associating one high-S and one low-S line of the same gender (six groups for males and 16 groups for females) in order to neutralize gender-specific effects on gene expression. These groups were then used to determine DEGs between the high-S and low-S groups independent of gender.DOI: http://dx.doi.org/10.7554/eLife.19406.020Male groups Female groups P11019 (high) + P11028 (low)P11008 (high) + P11030 (low)P11019 (high) + P11026 (low)P11015 (high) + P11030 (low)P11019 (high) + P11020 (low)P11013 (high) + P11030 (low)P11019 (high) + P11009 (low)P11029 (high) + P11030 (low)P11019 (high) + P11031 (low)P11018 (high) + P11030 (low)P11019 (high) + P11007 (low)P11024 (high) + P11030 (low)P11023 (high) + P11030 (low)P11021 (high) + P11030 (low)P11008 (high) + P11014 (low)P11015 (high) + P11014 (low)P11013 (high) + P11014 (low)P11029 (high) + P11014 (low)P11018 (high) + P11014 (low)P11024 (high) + P11014 (low)P11023 (high) + P11014 (low)P11021 (high) + P11014 (low)
+Since most of the high-sensitivity subjects were females, while most of the low sensitivity subjects were males, we then estimated whether gender could impact our results. To neutralize gender-specific effects on gene expression, we generated new groups consisting of one high-S and one low-S subject of the same gender (16 female groups, six male groups, Table 5). DEGs were identified between all possible combinations of one female versus one male group (16 × 6 = 96 sets of DEGs). We counted for each gene how many sets of DEGs identified the gene as significantly up-regulated or down-regulated. Down-regulated counts were subtracted from up-regulated counts and resulting netto counts were normalized to the number of total comparisons (i.e. divided by 96). Using this approach, a gene that is up-regulated in the high-S group because of gender specific expression, should be identified as significantly up-regulated in most of the female versus male groups sets of DEGs. The same accounts for down-regulated genes. As shown in Figure 5B and C, this trend was not observed for most of the genes, arguing against gender differences being the reason for differential gene expression between the high-S and low-S group.
+
+**Table 5.**
+ Related to Figure 5. Generation of new groups associating one high-S and one low-S line of the same gender (six groups for males and 16 groups for females) in order to neutralize gender-specific effects on gene expression. These groups were then used to determine DEGs between the high-S and low-S groups independent of gender.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Male groups</th>
+      <th>Female groups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P11019 (high) + P11028 (low)</td>
+      <td>P11008 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td>P11019 (high) + P11026 (low)</td>
+      <td>P11015 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td>P11019 (high) + P11020 (low)</td>
+      <td>P11013 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td>P11019 (high) + P11009 (low)</td>
+      <td>P11029 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td>P11019 (high) + P11031 (low)</td>
+      <td>P11018 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td>P11019 (high) + P11007 (low)</td>
+      <td>P11024 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11023 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11021 (high) + P11030 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11008 (high) + P11014 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11015 (high) + P11014 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11013 (high) + P11014 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11029 (high) + P11014 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11018 (high) + P11014 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11024 (high) + P11014 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11023 (high) + P11014 (low)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P11021 (high) + P11014 (low)</td>
+    </tr>
+  </tbody>
+</table>
 
 Finally, to further investigate if the DEGs are the consequence of sex specific gene expression, we predicted regulatory transcription factors of the DEGs based on two transcription factor target databases and ranked them by significance (Figure 5—figure supplement 1). The sex-hormone related transcription factors were ranked 16 (AR), 20 (ESR1) and 24 (ESR2) or 27 (PGR) and 180 (ESR1), and no sex hormone related transcription factor was among the top 10 candidates. These data suggest that the observed differences in expression patterns between high-S and low-S iPS-CMs are mostly indicative of a signature associated with drug sensitivity rather than a gender effect.
 
@@ -143,7 +744,7 @@ In conclusion, this study underscores the power of developing a panel of iPSCs t
 
 ## Material and methods
 
-## Subjects and clinical investigations
+### Subjects and clinical investigations
 
 To participate to the study, male or female volunteers had to fulfill the following inclusion criteria: aged 18 to 40 years, body mass index from 19 to 29 kg/m2, no previous history of cardiac disease, no major disorders, no medications known to affect cardiac repolarization (as defined by https://www.crediblemeds.org/everyone/composite-list-all-qtdrugs). All volunteers had normal laboratory evaluations and a normal clinical examination with a resting heart rate ≥50 beats min−1 and a systolic blood pressure ≥100 mmHg. Cardiac conduction and repolarization was assessed on a 12-lead resting electrocardiogram and participants were excluded in case of atrio-ventricular conduction disorder (PR interval >200 ms), QRS >100 ms and in case of prolonged QTcF >450 ms. Other exclusion criteria were familial or personal history of sudden death or unexplained syncope, concomitant use of illicit drugs, asthma.
 
@@ -153,11 +754,11 @@ All investigations were performed prospectively at a single clinical center (Bio
 
 In a second phase (7 to 35 days after phase 1), 20 subjects with the most extreme responses to sotalol (10 with smallest QTcF changes and 10 with the largest QTcF changes from baseline in response to sotalol) were asked to come to the clinical investigation center and had a skin biopsy under local anesthesia using a sterile 3 mm skin punch.
 
-## ECG recording and analysis
+### ECG recording and analysis
 
 Before and 3 hr following sotalol administration, 30 s digital 12-lead electrocardiograms were recorded using a Cardioplug device (Cardionics Inc, Brussels, Belgium) connected to a personal computer. All electrocardiogram recordings were then read by the same investigator, blindly of drug administration. The same chest lead with the largest T-wave amplitude was selected for QT interval measurements in a given subject. QT interval was measured manually directly on the computer screen by changing position of cursors indicating the start and the end of the cardiac interval: RR (interval between two successive R waves) and QT (tangent method). Baseline QTc was assessed as the mean of three electrocardiographic recordings obtained within 5 min before drug administration. QT was corrected by the Fridericia cubic root formula (QTcf), which minimizes the errors due to the square root Bazett formula. The clinical phenotype was defined by modifications in QTcf duration (ms) 3 hr after sotalol intake.
 
-## Human iPSCs derivation
+### Human iPSCs derivation
 
 Fibroblast derivation was performed immediately after biopsy arrival at Ectycell / Cellectis Stem Cell Company (Evry, France). Skin biopsy of a 3 mm diameter punch was cut into about 20 small explants with scalpels and placed in 6-well plates and cultured with fibroblast growth medium containing DMEM medium (Gibco), 10% of FBS (PAA Laboratories), 10 ng/ml FGF-2 (Invitrogen, Carlsbad, CA) and 1% penicillin-streptomycin (Gibco). Cells were fed every 2–3 days. In this culture, fibroblasts appeared and became confluent on average 33 days after plating. The fibroblasts were then subcultured using 0.25% trypsin (Invitrogen) then re-suspended and cultured into T75 flasks using fibroblast growth medium without antibiotics. An average of 62 million fibroblasts per biopsy was obtained in 4–7 weeks at passage 1. The fibroblasts were tested for mycoplasma contamination and no contamination was detected (MycoAlert TM Mycoplasma Detection kit, Lonza France).
 
@@ -165,27 +766,27 @@ Reprogramming of fibroblasts derived from patient’s skin biopsies into iPSCs w
 
 Colonies fulfilling established ‘stemness’ criteria were selected and sent to the Cardiovascular Research Center at Mount Sinai School of Medicine, New York, USA for differentiation toward the cardiomyocyte lineage and pharmacological characterization.
 
-## Differentiation of iPSCs into cardiomyocytes
+### Differentiation of iPSCs into cardiomyocytes
 
 The iPSCs were differentiated into cardiomyocytes using a directed differentiation method. Cardiomyocytes differentiation was initiated in suspension cultures on ultra-low attachment dishes (Corning, France) in mTESR1 medium supplemented with BMP4 10 ng ml-1) and Blebbistatin (5 μM) for 24 hr. The medium was then replaced with the basal differentiation medium (StemPro34, 50 μg ml-1 ascorbic acid, 2 mM GlutaMAX-I) supplemented with BMP4 (10 ng ml-1) and Activin-A (25 ng ml-1) for 48 hr (days 1–3) and then switched to basal differentiation medium for another 36 hr (days 3–4.5). Finally, the cells were differentiated in basal differentiation medium supplemented with IWR-1 (2.5 μM) for 96 hr (Day 4.5–8.5). The differentiated cardiomyocytes were maintained in basal differentiation media for up to four weeks. All cytokines were purchased from R and D. The small molecules were purchased from Sigma. All differentiation cultures were maintained in 5% CO2/air environment.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 iPSCs were cultured on matrigel-coated coverslips, fixed in paraformaldehyde and permeabilized in blocking/permeabilization buffer (2% BSA/2% FBS/0.05% NP-40 in PBS) for 45 min and incubated with primary antibodies overnight at 4°C. Then the cells were washed in PBS and incubated with Alexa-conjugated secondary antibodies (Invitrogen) diluted in blocking/permeabilization buffer (1:750). Finally, after washing in PBS the cells were counterstained with DAPI. Immunofluorescence images were acquired using an Olympus X41 microscope. The following antibodies were used: mouse monoclonal anti-OCT4 (Santa Cruz biotechnology, Germany), goat polyclonal anti-NANOG (R and D systems), mouse monoclonal anti-SOX2 (R and D systems), mouse monoclonal anti-SSEA-4 (R and D systems, Minneapolis, MN), mouse monoclonal anti-TRA-1–60 (R and D systems). Similarly, iPSC-derived cardiomyocytes were dissociated and cultured on matrigel-coated coverslips for 4–5 days, fixed in paraformaldehyde and permeabilized in blocking/permeabilization buffer for 45 min. The following primary antibodies were used: mouse monoclonal anti-cardiac troponin T (Thermo Fisher Scientific, France), mouse monoclonal anti-connexin 43, and mouse monoclonal anti-α-actinin. Confocal imaging was performed using a Leica SP5 confocal system.
 
-## Flow cytometry
+### Flow cytometry
 
 Single-cell suspensions were obtained by dissociating EBs with 0.025% trypsin for 15 min at 37°C. The cells were then fixed with 4% paraformaldehyde for 15 min and washed twice with phosphate buffered saline (PBS). The fixed cells were first permeabilized in permeabilization buffer (0.2% Triton X-100 in PBS) for 30 min and then blocked with 10% goat serum for 25 min. Cells were then incubated with the primary antibody (anti-cardiac troponin T; Thermo Fisher Scientific). After 1 hr, the cells were washed in PBS, incubated with Goat anti-mouse IgG1 - Alexa 488 secondary antibody for 45 min, and finally washed twice with PBS. All procedures were performed at 4°C. Fluorescence-activated cell sorting analysis was carried out using a BD LSR analyzer (BD Biosciences).
 
-## Quantitative PCR
+### Quantitative PCR
 
 Relative gene expression was determined using a two-steps quantitative real-time PCR method. Total RNA was isolated with the RNeasy Isolation kit with on-column DNase I treatment (Qiagen, Germany) and reverse-transcribed using the cDNA Synthesis Kit (Biorad, Hercules, CA). Quantitative RT-PCR was performed with the Quanta SYBR Green Supermix (Quanta biosciences, Beverly, MA) on the ABI Prism 7500 Real Time PCR System (Applied Biosystems, Foster City, CA). Fold changes in gene expression were determined using the comparative CT method (△△Ct) with normalization to the housekeeping gene B2M.
 
-## SNPs genotyping array
+### SNPs genotyping array
 
 Single nucleotide polymorphism (SNP) genotyping analysis was performed using the Illumina HumanOmni2.5–8 beadchip genotyping array, which comprise a comprehensive set of around 2.6 million SNPs (with MAF >2.5%) across the genome. The list of mapped SNPs can be found at http://support.illumina.com/downloads/infinium-omni2-5-8-v1-3-support-files.html. All genomic DNA was isolated from iPSC clones using Quick-gDNA Mini Prep kit (Zymo Research, Irvine, CA). Input genomic DNA (200 ng) was processed, hybridized to the array and scanned on an Illumina HiScan at the Mount Sinai Genomic Core Facility. Based on chromosome coordinates, we extracted SNPs in AKAP9, ANK2, CACNA1C, CALM1, CALM2, CAV3, KCNH2, KCNE1, KCNE2, KCNJ2, KCNJ5, KCNQ1, SCN4B, SCN5A, SNTA1 using Genome Studio (Illumina, San Diego, CA). Genotypes were estimated and compared between low-S and high-S groups. We used HapMap-CEU data to estimate the anticipated minor allelic frequency in European population.
 
-## RNA-Sequencing
+### RNA-Sequencing
 
 Total RNA was extracted using Zymo columns and 2 µg were used to generate a RNA-seq sequencing library. Poly-A selection and mRNA-SEQ library preparation were performed at the Mount Sinai Genomics Core Facility. Sequencing (50 bases, paired ends) was performed using an Illumina HiSeq2500. Annotated reads were obtained using STAR and HTSeq and normalized to full library size.
 
@@ -197,25 +798,25 @@ We determined differentially expressed genes between the high-S (P11008, P11013,
 
 To analyze, if differentially expressed genes between the high-S and low-S group are caused by gender differences between the two groups, we generated all possible combinations of one high-S female and one low-S female (16 groups) and one high-S male and one low-S male (six groups). We determined differentially expressed genes between all possible combinations of one female group versus one male group (16 × 6 sets of DEGs). For each gene we counted in how many sets of DEGs it was detected as significantly up-regulated or down-regulated, subtracted the counts for down-regulated detections from the counts for up-regulated detections and divided the resulting number by the counts for sets of DEGs (i.e. by 96).
 
-## Network analysis and direct neighbors identification
+### Network analysis and direct neighbors identification
 
 To search for differentially expressed direct neighbors of LQTS disease genes, we generate a human interactome by merging all protein-protein interaction databases of the Expression2 kinases suite (Chen et al., 2012), except the 'Predicted PPI' database, and a recently published protein-protein interaction network (Rolland et al., 2014). Small letter symbols of the merged interactome were replaced by their human homologues, using the Mouse Genome Informatics mouse-human orthology database and the NCBI mouse-human homologene database. Finally, we removed all network nodes that were not official human gene symbols as reported in the NCBI geneInfo database. Differentially expressed genes in the direct neighborhood of LQTS disease genes ('AKAP9', 'ANK2', 'CACNA1C', 'CALM1', 'CALM2', 'CAV3', 'KCNE1', 'KCNE2', 'KCNH2', 'KCNJ2', 'KCNJ5', 'KCNQ1', 'SCN4B', 'SCN5A', 'SNTA1') were identified (path length = 1).
 
-## Prediction of upstream regulatory transcription factors
+### Prediction of upstream regulatory transcription factors
 
 All differentially expressed genes were subjected to transcription factor target enrichment analysis using the Chea-background and Transfac database (downloaded from EnrichR [Chen et al., 2013]), as described previously (Karakikes et al., 2014).
 
-## Extracellular field potential recordings (MEA assay)
+### Extracellular field potential recordings (MEA assay)
 
 For MEA recordings, we used 6well-MEA arrays, which contain six independent culture chambers, separated by a macrolon ring (60–6 well MEA 200/30 iR-Ti-rcr, Multichannel Systems, Germany). Inside each well, there is a field of nine electrodes with an internal reference electrode (Figure 2—figure supplement 2). The 6well-MEA arrays were prepared by pipetting 5 μl fibronectin solution (100 μg/mL, BD Biosciences) and incubated at 37°C for at least 1 hr. iPSC-CMs were dissociated using 0.025% trypsin for 5 min at 37°C and seeded onto prepared MEA plates using 5 μl of cell suspension in StemPro34 medium and then incubated at 37°C/5% CO2. The day after the cells were covered with 200 µL of StemPro34 media. MEA recordings were performed once the cells started to beat again (5–7 days). Field potentials of spontaneously beating cardiomyocytes were recorded using a high-resolution Micro Electrode Array (MEA) recording system (MEA60 system, Multi Channel Systems, Reutlingen, Germany, http://www.multichannelsystems.com) at 37°C. The baseline steady state was achieved following an equilibration period of about 15 min in vehicle medium (StemPro34 media). The tested drugs (E4031 and Sotalol, Sigma) were then added directly to each well. Dose-response experiments were performed with the following sequence: drugs were diluted in 200 μL of StemPro34 media; increasing concentrations of drug were added to a well of the MEA array in a cumulative manner; the FPD recordings were started 3 min after application of a given concentration of a drug, a timing that was found optimal to achieve steady-state changes; FPD recordings were then performed for two additional minutes. Each drug was tested in at least three different wells. Raw MEA data were acquired using QT-Screen Lite and MC-Rack softwares (Multi Channel Systems, Reutlingen, Germany). The data were then exported on QT-Analyzer Software to analyze the field potential duration and the inter-beat interval (Multi Channel Systems, Reutlingen, Germany). Parameters were averaged on the 2 min recordings. Inter-beat interval (in ms) was used to calculate the instantaneous beat rate. To account for the dependency between repolarization rate and the beating rate, FPD was firstly adjusted using the popular Bazett’s formula (adjustedFPD = rawFPD / RR1/2). We however found that, as expected, this formula was associated with an important over-correction thus supporting the need for an alternative adjustment formula according to Funck-Brentano et al. (Funck-Brentano and Jaillon, 1993) (Figure 2—figure supplement 3, panel A). We thus plotted the FPD / inter-beat-interval pairs recorded at various beating rates under baseline conditions. The following equation with the same dimension as a Bazett’s formula: adjustedFPD = rawFPD / RRα, where alpha is a regression parameter, was applied to raw data in order to have a new estimate of the correction factor and results in appropriate corrections of FPD (Figure 2—figure supplement 3, panel B).
 
 Cells were considered as developing arrhythmias in response to sotalol as they presented ectopic beats or spontaneous beating rates became irregular.
 
-## Patch clamp recordings
+### Patch clamp recordings
 
 hiPSC-derived embryoid bodies were enzymatically dissociated into single cardiomyocytes and plated on matrigel-coated glass coverslips. The action potential of cardiomyocytes was assessed in the current-clamp mode using whole-cell patch-clamp technique with a HEKA EPC10 amplifier and Pulse/PulseFit software (HEKA, Germany). Pipette solution consisted of: 110 mM potassium aspartate, 20 mM KCl, 10 mM HEPES, 1 mM MgCl2, 0.1 mM ATP (disodium salt), 5 mM ATP (magnesium salt), 5 mM phosphocreatine (disodium salt) and 1 mM EGTA (pH 7.2). The external bath solution contained 140 mM NaCl, 5 mM KCl, 1 mM MgCl2, 10 mM D-glucose, 1 mM CaCl2 and 10 mM HEPES (pH 7.4). hiPSC-CMs were perfused with either control or sotalol-containing Tyrode's solution for 5 min. The whole-cell condition was then reached. A hyperpolarization current (−30 pA) was applied to silence the spontaneous automaticity. The AP recording was then performed with a train of current pulse injection (1000 pA, 5 ms) at 0.5 Hz steady pacing. The assay was performed at 37°C and finished within 30 min upon the drug perfusion.
 
-## Statistical analysis
+### Statistical analysis
 
 All analyses were performed using Prism 6.0 (GraphPad, La Jolla, CA). Continuous data are presented as Mean ± SEM. A p-value≤0.05 was considered significant. Continuous variables were compared using non-parametric Mann-Whitney test and binary variables were tested using Chi-square or exact Fisher’s test as appropriate. For the in vivo investigations, we planned to identify 20 extreme responders to sotalol (i.e., 10 with high response defined by a deltaQTcf >35 ms and 10 with low response defined by a deltaQTcf <5 ms, therefore defining a minimal difference of 30 ms between groups). We then anticipated that this in vivo difference will be reproduced in vitro with a reduction by 33%. We thus determined that this sample size will give 80% power to demonstrate a difference of 20 ms between groups, with a standard error of 15 ms and an alpha-error risk of 0.05 (nQuery Advisor version 4.0).
 

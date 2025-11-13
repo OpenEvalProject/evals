@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/036c27j91 Division of Immunobiology, Department of Pathology and Immunology, Washington University School of Medicine St Louis United States
-2. https://ror.org/036c27j91 The Andrew M. and Jane M. Bursky Center for Human Immunology and Immunotherapy Programs, Washington University School of Medicine St Louis United States
+1. Division of Immunobiology, Department of Pathology and Immunology, Washington University School of Medicine St Louis United States ([ROR:036c27j91](https://ror.org/036c27j91))
+2. The Andrew M. and Jane M. Bursky Center for Human Immunology and Immunotherapy Programs, Washington University School of Medicine St Louis United States ([ROR:036c27j91](https://ror.org/036c27j91))
 
 † Corresponding author
 

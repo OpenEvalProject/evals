@@ -16,22 +16,22 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Department of Pharmaceutical and Biological Chemistry, School of Pharmacy, University College London London United Kingdom
-2. https://ror.org/051fd9666 Department of Molecular Biology and Microbiology, Case Western Reserve University School of Medicine Cleveland United States
-3. https://ror.org/01vrybr67 Louis Stokes Cleveland Department of Veterans Affairs Medical Center Cleveland United States
-4. https://ror.org/051fd9666 CWRU-Cleveland VAMC Center for Antimicrobial Resistance and Epidemiology (Case VA CARES) Cleveland United States
-5. https://ror.org/01zkghx44 College of Computing, Georgia Institute of Technology Atlanta United States
-6. https://ror.org/01qz5mb56 Computer Science and Engineering Division, Oak Ridge National Laboratories Oak Ridge United States
-7. https://ror.org/02tphfq59 Laboratorio de Metaloproteínas, Instituto de Biología Molecular y Celular de Rosario (IBR, CONICET-UNR) Rosario Argentina
-8. https://ror.org/02tphfq59 Area Biofísica, Facultad de Ciencias Bioquímicas y Farmacéuticas, Universidad Nacional de Rosario Rosario Argentina
-9. https://ror.org/051fd9666 Departments of Medicine, Biochemistry, Pharmacology, and Proteomics and Bioinformatics, Case Western Reserve University School of Medicine Cleveland United States
-10. https://ror.org/02jx3x895 UCL Centre for Advanced Research Computing, University College London London United Kingdom
+1. Department of Pharmaceutical and Biological Chemistry, School of Pharmacy, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. Department of Molecular Biology and Microbiology, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+3. Louis Stokes Cleveland Department of Veterans Affairs Medical Center Cleveland United States ([ROR:01vrybr67](https://ror.org/01vrybr67))
+4. CWRU-Cleveland VAMC Center for Antimicrobial Resistance and Epidemiology (Case VA CARES) Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+5. College of Computing, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))
+6. Computer Science and Engineering Division, Oak Ridge National Laboratories Oak Ridge United States ([ROR:01qz5mb56](https://ror.org/01qz5mb56))
+7. Laboratorio de Metaloproteínas, Instituto de Biología Molecular y Celular de Rosario (IBR, CONICET-UNR) Rosario Argentina ([ROR:02tphfq59](https://ror.org/02tphfq59))
+8. Area Biofísica, Facultad de Ciencias Bioquímicas y Farmacéuticas, Universidad Nacional de Rosario Rosario Argentina ([ROR:02tphfq59](https://ror.org/02tphfq59))
+9. Departments of Medicine, Biochemistry, Pharmacology, and Proteomics and Bioinformatics, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+10. UCL Centre for Advanced Research Computing, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
 ## Abstract
 
-β-Lactam antibiotics are the most important and widely used antibacterial agents across the world. However, the widespread dissemination of β-lactamases among pathogenic bacteria limits the efficacy of β-lactam antibiotics. This has created a major public health crisis. The use of β-lactamase inhibitors has proven useful in restoring the activity of β-lactam antibiotics, yet, effective clinically approved inhibitors against class B metallo-β-lactamases are not available. L1, a class B3 enzyme expressed by Stenotrophomonas maltophilia , is a significant contributor to the β-lactam resistance displayed by this opportunistic pathogen. Structurally, L1 is a tetramer with two elongated loops, α3-β7 and β12-α5, present around the active site of each monomer. Residues in these two loops influence substrate/inhibitor binding. To study how the conformational changes of the elongated loops affect the active site in each monomer, enhanced sampling molecular dynamics simulations were performed, Markov State Models were built, and convolutional variational autoencoder-based deep learning was applied. The key identified residues (D150a, H151, P225, Y227, and R236) were mutated and the activity of the generated L1 variants was evaluated in cell-based experiments. The results demonstrate that there are extremely significant gating interactions between α3-β7 and β12-α5 loops. Taken together, the gating interactions with the conformational changes of the key residues play an important role in the structural remodeling of the active site. These observations offer insights into the potential for novel drug development exploiting these gating interactions.
+β-Lactam antibiotics are the most important and widely used antibacterial agents across the world. However, the widespread dissemination of β-lactamases among pathogenic bacteria limits the efficacy of β-lactam antibiotics. This has created a major public health crisis. The use of β-lactamase inhibitors has proven useful in restoring the activity of β-lactam antibiotics, yet, effective clinically approved inhibitors against class B metallo-β-lactamases are not available. L1, a class B3 enzyme expressed by Stenotrophomonas maltophilia, is a significant contributor to the β-lactam resistance displayed by this opportunistic pathogen. Structurally, L1 is a tetramer with two elongated loops, α3-β7 and β12-α5, present around the active site of each monomer. Residues in these two loops influence substrate/inhibitor binding. To study how the conformational changes of the elongated loops affect the active site in each monomer, enhanced sampling molecular dynamics simulations were performed, Markov State Models were built, and convolutional variational autoencoder-based deep learning was applied. The key identified residues (D150a, H151, P225, Y227, and R236) were mutated and the activity of the generated L1 variants was evaluated in cell-based experiments. The results demonstrate that there are extremely significant gating interactions between α3-β7 and β12-α5 loops. Taken together, the gating interactions with the conformational changes of the key residues play an important role in the structural remodeling of the active site. These observations offer insights into the potential for novel drug development exploiting these gating interactions.
 
 ## Introduction
 
@@ -47,9 +47,38 @@ Stenotrophomonas maltophilia is a non-fermenting, Gram-negative bacillus that ha
 
 L1 MBL is unique among all known β-lactamases as it is the only known β-lactamase that functions as a tetramer (Figure 1A). In each subunit, there are two zinc ions bound at the active site (Figure 1B, Ullah et al., 1998). The first Zinc (Zn1) is in a tetrahedral coordination with a water molecule and three histidine residues. The second Zinc (Zn2) is coordinated by two histidine, one aspartic acid and a water molecule in a trigonal bipyramidal geometry. Another water molecule, which acts like a nucleophile for the catalytic reaction bridges the two zinc ions (Figure 1—figure supplement 1). Studies have revealed that both zinc ions are relevant for hydrolysis and protein folding in L1 (Crisp et al., 2007; Hu et al., 2008; Ullah et al., 1998).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig1-v1.jpg)
+
+**Figure 1.:** (A) The homo-tetrameric conformation of L1 MBL (PDB entry 1SML). Three monomers are illustrated in surface representation; the fourth monomer is shown in green cartoon. (B) A close up of the zinc-binding site and the elongated α3-β7 and β12-α5 loops (red). Two zinc ions are present at the binding site. Zn1 coordinates with residues H116, H118, H196, and a water molecule forming a tetrahedral geometry. Zn2 is trigonal bipyramidal and coordinates with residues D120, H121, and H263. Zn1 and Zn2 are bridged by a water molecule. The position of D150c, H151, P225, Y227, and R236 are shown as yellow sticks. (C) L1 monomer illustrated as cartoon (green); the position of the two elongated loops (red) that forms a part of the active site in each monomer are highlighted in red.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Proposed mechanism of β-lactam hydrolysis by S. maltophilia L1 MBL.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Conserved secondary structure elements for the three subclasses are indicated above the sequences: α-helix, β-sheets, and L-loop. Amino acid insertions in the newly sequences enzymes are represented by lowercase letters. The zinc ligands in at least one subclass are shaded in cyan. L(α3-β7) and L(β12-5) sequences are highlighted in red represent largely variable regions. The 14 sequence fragments off structurally conserved position, which cover the entirety of all sequences, are shown in boldface. (B) The variable numbering around L(β12-α5). Figure 1—figure supplement 2 is adapted from Figure 1 of Garau et al., 2004.
+
 The L1 MBL tetramer is held tightly by three discrete sets of hydrophobic interactions, which allows each monomer to make contacts with the other three subunits (Crisp et al., 2007; Sevaille et al., 2017; Ullah et al., 1998). All these interactions are primarily hydrophobic and lead to each monomer burying 1300 Å2 of non-polar side-chain surface area on the formation of the tetramer. A two-fold inverted symmetry of the subunit arrangement positions some important residues and interactions at the subunit interfaces in close proximity (Figure 1A). The key interactions made by the side chain of M175 penetrating a shallow pocket formed by E141, L150d, P198, and Y236 (Figure 1—figure supplement 2; after the standard BBL numbering Garau et al., 2004) on the surface of the adjacent subunit, has been shown to be essential for stabilizing the tetramer (Simm et al., 2002). A substitution of this M175 results in failure of tetramerization and a reduced activity against most β-lactams of ca. two orders of magnitude (Simm et al., 2002). How does the formation of a tetramer benefits L1 MBL to confer resistance remains unknown.
 
 One distinct feature of L1 MBL is the presence of two elongated loops (α3-β7 and β12-α5 loops; Table 1) surrounding the metal center (Figure 1B, C). The α3-β7 loop at the N-terminal extension has 20 residues (G149-D171) and extends over the active site (Garrity et al., 2004). These residues are considered to be involved in determining the spectrum of the enzyme by forming hydrophobic interactions with large hydrophobic motifs at C2 or C6 of β-lactam substrates (Sevaille et al., 2017; Spencer et al., 2005; Spencer et al., 2001; Ullah et al., 1998). Two novel substitutions were identified in vitro, on the α3-β7 loop: G159A and (G/E)161D. The role of G159 in substrate binding and catalysis has been determined by the substitution of G159A. This substitution disrupts the positioning of F156, another significant residue involved in the function of L1, by decreasing the flexibility of the loop. Similarly, the G161D substitution can also affect the efficiency of the enzyme catalytic activity (Carenbauer et al., 2002; Nauton et al., 2008; Spencer et al., 2005; Ullah et al., 1998).
+
+**Table 1.**
+ Elongated loops.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>α3-β7</td>
+      <td>GGSDDLHFGDGITYPPANAD Residues 149–171</td>
+    </tr>
+    <tr>
+      <td>β12-α5</td>
+      <td>ADSLSAPGYQLQGNPRYPH Residues 219–239</td>
+    </tr>
+  </tbody>
+</table>
 
 The β12-α5 loop consists of 19 residues (A219-H239) and lies adjacent to the active site. S221 in this loop makes indirect interaction with Zn2, while S223 serves as a second-shell residue of H196 (Crisp et al., 2007; Mojica et al., 2019; Ullah et al., 1998). S221 coordinates a Zn2-bound apical water, whereas S223 directly interacts with the substrate C4 carboxylate group (Spencer et al., 2005). In a recent crystal structure, S221 and S223 have been found to directly interact with substrates (Twidale et al., 2021). Besides, novel substitutions have been identified in the loop, namely Q230R, (K/Q)232R, G233D, and (P/A)235V (Mojica et al., 2019). Although none of these residues seems to directly interact with the substrate, it is likely that these substitutions will affect the catalytic activity either by strengthening or weakening the H-bonding network that maintains the loop in place or by changing its electrostatic characteristics (Tooke et al., 2019). The apical points of α3-β7 and β12-α5 loops are positioned at the interface between monomers, and direct interaction with residues that affects the catalytic activity of the L1 MBL has been confirmed (Ullah et al., 1998).
 
@@ -59,13 +88,49 @@ To sample the conformational landscape explored by L1 MBL, we performed adaptive
 
 ## Results and discussion
 
-## Markov state models
+### Markov state models
 
 A converged MSM with seven metastable states was successfully built using the backbone torsions and the Cα-RMSD of the α3-β7 and β12-α5 loops, at a lag time of 5 ns (Figure 2A). The selected features resolved the Markovian model and enabled the analysis of the representative conformational changes that occur when transitioning between different states (Figure 2—figure supplement 1). Furthermore, the chosen features permitted us to make valid links between the free energy (FE) landscape and the dynamics of the α3-β7 and β12-α5 loops. From the MSM results, significant structural differences can be observed by comparing the conformations obtained from different metastable states.
 
-## The α3-β7 and β12-α5 loops exist in open, intermediate, and closed states
+![Figure 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig2-v1.jpg)
+
+**Figure 2.:** (A) Implied timescales (ITS) plot. The ITS plot describes the convergence behavior of the implied timescales associated with the processes at the lag time of 5 ns. (B) Net flux pathways plot highlights the transition pathways in the relevant directions, between the highest energy state 1, and all other states. The thickness of the arrows between states suggests the possibility of each transition. The thicker the arrow, the greater the possibility. (C) Mean first passage times between metastable states. (D) Free energy landscape. The sampled free energy projected onto the first two time-lagged independent components (ICs) at lag time τ = 5.0 ns. (E) The distribution of cluster centers highlighting the presence of the metastable states. Macrostate distributions of conformations projected onto the first two ICs identified seven macrostates. The population of each state (π) and its free energy estimation is listed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The CK test plot, along with the ITS plot (Figure 2A) was used to assess the Markovian behavior of the constructed model.
+
+### The α3-β7 and β12-α5 loops exist in open, intermediate, and closed states
 
 The dynamics of the two loops (α3-β7 and β12-α5) can be described by closed, intermediate, and open conformations (Figure 3—figure supplement 1). The ‘closed’ conformations of the loop is defined by the collective formation of a salt bridge between D150c-R236 (α3-β7 and β12-α5), H151-Y227 π–π stacking interaction and P225 adopting an ‘in’ conformation (Figure 3A; Figure 3—figure supplements 2–4). The ‘in’ conformation is defined as when the Cγ atom of P225 is oriented toward the zinc atoms in the active site. The distance between the Cγ atom and the centroid of the two zinc atoms is calculated to be 6.5 Å in the 1SML crystal structure (Ullah et al., 1998). There is an additional interaction between the side chain of Q310 (α6 helix) and the backbone of A224 (β12-α5). This interaction tethers the terminal α6 helix to the rest of subunit and stabilizes the β12-α5 loop (Figure 3—figure supplement 5). The loops are collapsed on the active site resulting in an occluded 420.4 ± 94.8 Å3 cavity (Figure 3A). The structure of the active site is analogous to the crystalline conformation, thereby highlighting it as a relevant functional state. State 7 defines the closed conformation of L1 MBL, with the Cα-RMSD comparison with the apo state crystal structure (PDB id 1SML) to be 0.79 Å and with inhibitor complex (PDB id 5DPX) is 0.77 Å (Figure 3—figure supplement 6). State 7 is the most populated, with 80% of all conformations falling within this cluster. State 7 is also the lowest energy state. These observations allow us to conclude that the closed state dominates the dynamics and also explains why this conformation is always resolved in crystallographic experiments. States 3, 5, and 6 are sub-states of the closed conformation. In addition to the slight differences in the conformations of α3-β7 and β12-α5 loops, minor changes are also observed in the conformations of the adjacent loops, at the distal end of the active site.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-v1.jpg)
+
+**Figure 3.:** Structures exist in the closed, intermediate, and open states defined by a salt bridge between D150c-R236, π–π stacking interaction between H151-Y227 and the conformation of the cyclic side chain of P225. (A) In the closed state, the salt bridge and the π–π stacking interaction is formed and P225 adopts the ‘in’ conformation. The β12-α5 loop is collapsed occluding the active site (purple). (B) In the intermediate open state, the interactions are lost and P225 adopts the ‘out’ conformation. However, the β12-α5 loop is not completely in the open conformation. A small cavity between α6 helix and β12-α5 is formed that merges with the active site (pink). (C) In the fully open state, the salt bridge and the π–π stacking interaction is lost. P225 adopt ‘the out’ conformation. The β12-α5 loop moves outwards, opening a large cavity that merges with the active site (teal). (D) The calculated volume of the active site in different states.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The distances between the D150c-R236 salt bridge (blue), H151-Y227 π–π stacking (orange), A224-Q310 (red), and P225-Zn (green) have been illustrated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Violin plots highlighting the calculated D150c-R236 salt bridge interaction in each of the four subunits in different metastable states.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Violin plots highlighting the calculated H151-Y227 π–π stacking interaction in each of the four subunits in different metastable states.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Violin plots highlighting the calculated P225-Zn distance in each of the four subunits in different metastable states.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Violin plots highlighting the calculated A224(bb)-Q310(sc) distance in each of the four subunits in different metastable states.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** A Cα-RMSD superimposition of state 7 (green) with a monomer from apo state crystal structure (PDB id 1SML; orange; 0.79 Å) and with inhibitor complex (PDB id 5DPX; purple; 0.77 Å) structure of L1 β-lactamase. The black balls represent the position of zinc ions.
 
 State 2 is an intermediate closed state where the H151-Y227 π–π stacking interaction is formed and P225 adopts an ‘in’ conformation. However, the D150c-R236 salt bridge is not fully formed. State 4 is an intermediate open conformation (Figure 3B), where two or more interactions including the D150c-R236 salt bridge, H151-Y227 π–π stacking, are lost and P225 adopts the ‘out’ conformation. The outward movement of the β12-α5 loop results in the interaction between the side chain of Q310 (α6 helix) and the backbone carbonyl oxygen of A224 (β12-α5) to break, causing the α6 helix to tilt away from the binding site. This generates a small cavity between α6 helix and the β12-α5 loop, which merges with the active site. The average volume calculated in the intermediate state is 608.3 ± 137.25 Å3.
 
@@ -75,7 +140,7 @@ The net flux pathways between states and the probabilities of each pathway have 
 
 Based on the results, the conformational changes that occurred between state 1, 4, and 7 supports the best explanation to the dynamics of the L1 MBL, as over 89% of the conformations transit from state 1 to state 7 via state 4 (Figure 2B), and any important conformational changes occurring around the active site could be related to the conformations of the two loops (α3-β7 and β12-α5 loops) identified in these states.
 
-## Deep learning analysis of α3-β7 and β12-α5 interactions
+### Deep learning analysis of α3-β7 and β12-α5 interactions
 
 L1 MBL, like all other β-lactamases, comprises of a hydrophobic core, that is stabilized by packing interactions that prevent long distance motions during simulations (Galdadas et al., 2021; Galdadas et al., 2018; Olehnovics et al., 2021). This indicates that thermal vibrations at fast timescales may significantly obscure potentially important slow dynamics. Furthermore, differentiating important interactions and correlations with classified sub-states in a 1064 residue homotetrameric L1 MBL proved non-trivial. This was additionally compounded by >1 million data points representing sampled conformations.
 
@@ -89,9 +154,21 @@ The reconstruction loss was calculated and the final latent dimension of 14, rep
 
 The overall dynamics representing various conformations sampled by each monomer can be identified using the tSNE visualization of the CVAE latent space. These conformations are resolved based on the dynamics generated by the distance matrix of the α3-β7 and β12-α5 loops. While all subunits sample similar motions, the conformations are clustered based on comparable dynamics. Subunits A and C share similar dynamics, while subunits B and D are clustered in the same tSNE space (Figure 4A). The salt bridge, π–π stacking interactions and P225 ‘in/out’ conformations are all observed, although the closed and intermediate conformations dominate the states. Subunit B displays low flexibility, with most conformations unable to form a complete salt bridge interaction. In spite of this, a complete π–π stacking interaction and the P225 ‘in’ conformation is observed in a low population of B-subunits. The most flexible subunit is D, where all three, ‘open–intermediate–closed’ states are observed.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig4-v1.jpg)
+
+**Figure 4.:** CVAE-learned features of high-dimensional data represented in 2D following t-distributed stochastic neighbor embedding (tSNE) treatment. (A) The results show that A and C subunits show similar dynamics, while B and D subunits cluster together. The (B) salt bridge interactions between D150c-R236, (C) H151-Y227 π–π stacking interaction, and (D) distance between P225 and the centroid of Zn atoms have been plotted. The red box highlights a region where closed confromations are found, while the green box highlights a region of open conformation. The other conformations are open intermediate (two or more features are lost) or closed intermediate (two or more features are present).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The training and validation loss plotted as assessed simultaneously over consecutive epochs at various reduced dimensions. Dimension 14 was selected for further analysis as it displayed the lowest loss. (B) The validation loss during CVAE implementation is plotted at different latent dimension for determining optimum values of the low dimension. The loss was calculated over 100 epochs from dimensions 3 to 30. (C) The convergence of training and validation loss from dimension 14, as assessed over 100 epochs. (D) Comparison between original input data and reconstructed data (decoded) are illustrated to ensure no loss of essential information during the compression and reconstruction process.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83928/elife-83928-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Individual subunits are plotted on the tSNE space after clustering of states 1–7. A comparison with Figure 4 highlights the open (state 1), intermediate open (state 4), intermediate closed (state 2), and closed conformations (state 7). Subunits A and C display similar dynamics while subunits B and D cluster together. The open state is best represented by subunit D of state 1, where D150c-R236 salt bridge is broken, H151-Y227 π–π stacking is lost and P225 adopts an out conformation. The closed state is best represented by subunit C in state 7. Subunit A in state 4 represents the intermediate open conformation, while subunit B in state 2 best describes the intermediate closed conformation.
+
 To confirm that the states indeed describe the ‘open’ and ‘closed’ conformations of the α3-β7 and β12-α5 loops, three features were measured – the D150c-R236 salt bridge interaction (Figure 4B); H151-Y227 π–π stacking interaction (Figure 4C) and the distance between P225 and the centroid of Zn atoms (Figure 4D). The features were then compared by projecting 1000 conformations extracted from MSM-derived metastable states, on to the tSNE space (Figure 4—figure supplement 2). This permitted visualization of exemplar conformations that best represented open–intermediate–closed states. The conformations sampled in metastable states 1 and 4 are similar. While the dynamics can be described by more than one representation, subunit D in state 1 describes the open state, subunit A in state 4 represents the intermediate open conformation, subunit B in state 2 describes intermediate closed conformation, and subunit C in state 7 was chosen to represent the closed conformation of L1 MBL.
 
-## The conformational dynamics of the α3-β7 and β12-α5 loops
+### The conformational dynamics of the α3-β7 and β12-α5 loops
 
 The salt bridge formation between D150c-R236 (α3-β7 and β12-α5) is crucial for the function of L1 MBL (Simm et al., 2002). This salt bridge acts as a gate, and the formation/loss of the salt bridge regulates the highly mobile β12-α5 loop to adopt an open/closed conformation. This configuration of the loop is driven by the conformation of the R236 side chain in the β12-α5 loop as it changes considerably while that of α3-β7, where D150c is positioned, remains rigid (Figure 3). Previous experiments on TEM-1, a class A β-lactamase, offered evidence for the significance of salt bridge formation between important loops (Vakulenko et al., 1995). Disruption of the salt bridge between R164 and D179 would in turn alter the structure of the substrate-binding site by restructuring the conformation of the Ω-loop, decreasing the antibiotic resistance (Vakulenko et al., 1995). Therefore, similarly for L1 MBL, it can be inferred that the formation of the salt bridge observed in the ‘closed’ conformation of the loops is critical in stabilizing the topology of the active site and enhancing the antibiotic resistance.
 
@@ -107,11 +184,90 @@ The side chain of F156 also plays an important role in the ligand-binding proces
 
 Several major conformational changes, including the formation and loss of the salt bridge (D150c-R236) and π–π stacking (H151-Y227) interactions, the ‘in’ and ‘out’ conformations of P225 existing in trans configuration, the side-chain rotation of F156, have been identified that explain the dynamics of the α3-β7 and β12-α5 loops. These conformational changes of the loops would have significant impact on the topology of the active site, which may further affect the catalytic activity of the L1 MBL. Our findings suggest a plausible two state conformation where β12-α5 loop acts like a lid on the active site. In the open state, the D150c-R236 salt bridge is broken and the π–π stacking interaction between H151 and Y227 is lost. This allows P225 to adopt an ‘out’ conformation resulting in the loop to move away from the active site. The rearrangement of the residues in the loops increases the volume, which permits the access of the substrate into the active site. Since this is a high energy conformation, the loop is drawn back to a more stable closed conformation, where P225 adopts the ‘in’ conformation, the π–π stacking and the salt bridge interaction is reformed. The closed conformation is an extremely stable state that is observed in all crystallized conformations of L1 MBL including those with inhibitors (Crisp et al., 2007; Sevaille et al., 2017; Spencer et al., 2005; Ullah et al., 1998). These findings in L1 MBL are further supported by experimental studies on two active site loops in NDM-1, IMP-1, and VIM-2 MBLs, which identified the loops to behave like mobile flaps and a direct link exists between the conformation of the loops and the changes in the substrate recognition profile (Oelschlaeger and Pleiss, 2007; Palacios et al., 2019). Moreover, the flexibility of the loops may also lead to a better positioning of the zinc ion, resulting in an enhanced catalytic profile of the enzyme (Tomatis et al., 2008).
 
-## Experimental validation by L1 MBL engineered variants
+### Experimental validation by L1 MBL engineered variants
 
 To study the role of each of the key residues identified in the coordinated dynamics of loops α3-β7 and β12-α5, we engineered the H151V, D150cV, P225A, R236A, and Y227A variants in L1 for susceptibility determinations. The susceptibility of the variants expressed in an isogenic Escherichia coli DH10B background was tested against a panel of representative cephalosporins and carbapenems (Table 2). We also included a well-studied experimental L1 inhibitor to test the effect of these substitutions in inhibitor binding, L-CS319 (Hinchliffe et al., 2016). The H151V substitution had the biggest detrimental effect on the catalytic activity of L1 of all substrates tested, decreasing the minimal inhibitory concentration (MIC) in >6 doubling dilutions. In the case of the P225A and Y227A variants, the effect on the MICs depended upon the substrate. Compared to L1, the MICs for ceftazidime of these variants decreased two-fold dilutions, in contrast to the six-fold dilutions observed for the MIC for imipenem. Lastly, the D150cV and R236A substitution had a minimal effect on the hydrolytic activity of L1, as their MICs values for all substrates were comparable. Addition of the MBL inhibitor L-CS319 further decreased the MIC values, indicating that this compound is able to bind the active site, a fact that is consistent with its small size and the lack of substituents such as those present in the β-lactam antibiotics. The effect of the inhibitor also supports that the enzyme is active in the bacterial periplasm, and that these mutations are not disrupting the protein fold.
 
-## Conclusions
+**Table 2.**
+ Susceptibility results of various β-lactams against L1 variants expressed in the pBC SK (+) vector in E. coli DH10B cells.The reported values are the mode of at least three biological replicates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Strain</th>
+      <th colspan="6">MIC value (mg/l)*</th>
+    </tr>
+    <tr>
+      <th>CAZ</th>
+      <th>FEP</th>
+      <th>IMI</th>
+      <th>MER</th>
+      <th>TEB</th>
+      <th>TEB + CS319†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DH10B pBC SK blaL1a</td>
+      <td>256</td>
+      <td>2</td>
+      <td>16</td>
+      <td>16</td>
+      <td>32</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DH10B pBC SK blaL1a_H151V</td>
+      <td>2</td>
+      <td>0.03</td>
+      <td>0.125</td>
+      <td>0.03</td>
+      <td>≤0.03</td>
+      <td>≤0.03</td>
+    </tr>
+    <tr>
+      <td>DH10B pBC SK blaL1a_D150cV</td>
+      <td>256</td>
+      <td>1</td>
+      <td>8</td>
+      <td>8</td>
+      <td>4</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>DH10B pBC SK blaL1a_P225A</td>
+      <td>64</td>
+      <td>0.125</td>
+      <td>0.25</td>
+      <td>2</td>
+      <td>0.125</td>
+      <td>≤0.03</td>
+    </tr>
+    <tr>
+      <td>DH10B pBC SK blaL1a_R236A</td>
+      <td>256</td>
+      <td>2</td>
+      <td>8</td>
+      <td>8</td>
+      <td>4</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>DH10B pBC SK blaL1a_Y227A</td>
+      <td>64</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>≤0.03</td>
+    </tr>
+  </tbody>
+</table>
+
+_*CAZ, ceftazidime; FEP, cefepime; IMI, imipenem; MER, meropenem; TEB, tebipenem.†CS319 was added to a final concentration of 100 mg/l._
+
+### Conclusions
 
 In this report, we have performed enhanced sampling molecular dynamics simulations and built MSM to analyze and understand the dynamics of two flexible loops (α3-β7 and β12-α5 loops) in the L1 enzyme. The deep learning analysis of the MSM cluster centers further resolved the role of individual subunits in the global dynamics of the L1 MBL.
 
@@ -119,19 +275,19 @@ The main focus of this work is to understand the relationship between the loop d
 
 ## Materials and methods
 
-## System preparation
+### System preparation
 
 The biological functional unit of L1 MBL is a tetramer. The coordinates of the L1 MBL deposited as the PDB entry 1SML are monomeric. The symmetry operators required to generate the tetrameric twofold inverted symmetry are present in the PDB headers. The protein quaternary server (Henrick and Thornton, 1998) uses these operators to generate the multimeric biological functional unit of the enzyme, that is a tetramer. The overall structure is shown in (Figure 1A), each subunit is in different colors. The PDB file was then protonated at pH 7.0 using proteinprepare module implemented in playmolecule (Martínez-Rosell et al., 2017). Since L1 MBL contains zinc ions, the protonated PDB file was adapted to the Zinc Amber force field (ZAFF) format (Peters et al., 2010). The system was hydrated using TIP3P water in a cubic waterbox, whose dimension extended to 12 Å from the closest protein atom.
 
-## Adaptive simulations
+### Adaptive simulations
 
 The ZAFF was used to parameterize the system with electrostatic interactions distances set to 9 Å. Long-range electrostatic interactions were computed using the particle mesh Ewald summation method (Cerutti et al., 2009). The system was energy minimized for 1000 iterations of steepest descent and then equilibrated for 5 ns at 1 atmospheric pressure using Berendsen barostat (Feenstra et al., 1999). Initial velocities within each simulation were sampled from Boltzmann distribution at temperature of 300 K. Isothermic–isobaric NVT ensemble using a Langevin thermostat with a damping of 0.1 ps−1 and hydrogen mass repartitioning scheme to achieve time steps of 4 fs. Multiple short MSM-based adaptively sampled simulations were run using the ACEMD molecular dynamics engine (Doerr et al., 2016; Harvey et al., 2009). The standard adaptive sampling algorithm performs several rounds of short parallel simulations. To avoid any redundant sampling, the algorithm generates an MSM discretized conformational space and uses the stationary distribution of each state to obtain an estimate of their free energy. It then selects any sampled conformation from a low free energy stable state and respawns a new round of simulations. In this context, the MetricSelfDistance function was set to consider the number of native Cα contacts formed for all residues, which were then used to build the MSMs. The exploration value was 0.01 and goal-scoring function was set to 0.3. For each round, 4 simulations of 50 ns were run in parallel until the cumulative time exceeded 100 μs. The trajectory frames were saved every 0.1 ns. 2090 trajectories were collected with each trajectory counting 500 frames.
 
-## Markov state modeling
+### Markov state modeling
 
 PyEMMA v2.5.7 was used to build the MSM (Scherer et al., 2015) and carry out kinetic modeling of the tetramer. All 2090 trajectories were loaded into the software. The RMSD and backbone torsions of all residues in α3-β7 (G149-D171) and β12-α5 (A219-H239) loops from all four subunits were selected the input features. Next, the featurized trajectories were read in with a stride of 5 and were projected onto three independent components (ICs) using TICA. The produced projections can show the maximal autocorrelation for a given lag time (5 ns). The chosen ICs were then clustered into 200 clusters using k-means. In this way, each IC was assigned to the nearest cluster center. A lag time of 5 ns was chosen to build an MSM with seven metastable states according to the implied timescales (ITS) plot (Figure 2A). After passing the Chapman–Kolmogorov test within confidence intervals (Figure 2—figure supplement 1), the MSM was defined as good. This indicates the model highly agrees with the input data, and it is statistically significant for use. Bayesian MSM was used to build the final model in the system. The net flux pathways between macrostates, starting from state 1, were calculated using Transition Path Theory (TPT) function. These pathways all originate from state 1, as it shows the lowest stationary probability (the highest free energy) in the system. This is why state 1 is a reasonable starting point to illustrate all the relevant kinetic transitions through the full FE landscape. The structural results were selected from each PCCA distribution.
 
-## CVAE-based deep learning
+### CVAE-based deep learning
 
 A CVAE-based unsupervised deep learning was implemented to resolve the dynamics of the individual subunits L1 MBL. The CVAE model has been previously used successfully to study many multiple cases including protein folding (Bhowmik et al., 2018), enzyme dynamics (Akere et al., 2020; Romero et al., 2019), COVID-19-related molecular mechanisms (Cho et al., 2021), and more specifically β-lactamases (Olehnovics et al., 2021). The CVAE can identify subtle differences in conformations of 3D structures influenced by various local and global dynamics and is able to cluster them in different microstates (Yoginath et al., 2019). The main objective of the CVAE-based deep learning was to cluster the conformations of the α3-β7 and β12-α5 loops sampled in all four subunits independently.
 
@@ -139,10 +295,10 @@ A typical CVAE architecture is a specific deep learning algorithm, built on top 
 
 The distance maps for each monomer were built separately to deconstruct the dynamics of individual subunits. The pairwise distance maps were built for each Cα atom in the α3-β7 and β12-α5 loops with a cutoff <8 Å. The distance matrices (39 × 39) were stacked in a 3D array. Prior to the training step, the four arrays were concatenated followed by a randomized reordering of the frames. A validation split of 80:20 was defined. A batch size of 300 was used, and the data were reshuffled after each completed epoch. The training was performed for 100 epochs and was assessed by a converged gradient descent. The embeddings were labeled based on P225-Zn distance (6.5 Å), H151-Y227 π–π stacking interaction (4 Å) and D150c-R236 salt bridge interaction (4.5 Å). Identical procedure was followed for all four subunits. The python code for the model implemented in the current study was adopted from Bhowmik et al., 2018.
 
-## Structural analysis
+### Structural analysis
 
 All trajectories were aligned to their crystal structure conformation using Moleculekit implemented in HTMD tools (Doerr et al., 2016). To visualize the structures representing each state, the structures collected from the PCCA distributions were loaded and superimposed in Pymol-mdanalysis (https://github.com/bieniekmateusz/pymol-mdanalysis; Bieniek, 2022). The structural analysis was performed using mdtraj (McGibbon et al., 2015) and MDAnalysis (Michaud-Agrawal et al., 2011). Figures capturing major conformational changes were generated using the Protein Imager (Tomasello et al., 2020). All plots were made using the matplotlib libraries (Hunter, 2007).
 
-## Susceptibility testing
+### Susceptibility testing
 
 Variant genes were synthesized into the pBC SK (+) vector by GenScript USA Inc (Piscataway, NJ, USA). Mueller-Hinton (MH) broth microdilution MIC measurements were performed against isogenic transformants producing L1a and five variants of L1a in pBC SK (+) according to the Clinical and Laboratory Standards Institute (CLSI) protocol (Wayne, 2020). L-CS319 was tested at a constant 100 µg/ml in combination with various concentrations of tebipenem. The MICs are reported as the concentrations at which bacterial growth was no longer observed. All MIC measurements were performed at least three times and the mode value has been reported.

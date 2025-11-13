@@ -13,20 +13,28 @@
 
 ### Affiliations
 
-1. https://ror.org/01sbq1a82 Department of Chemistry & Biochemistry, University of Delaware Newark United States
-2. https://ror.org/0190ak572 Department of Chemistry, New York University New York United States
-3. https://ror.org/059sz6q14 CIRI (Centre International de Recherche en Infectiologie), Univ Lyon, Inserm, U1111, Université Claude Bernard Lyon 1, CNRS, UMR5308, ENS de Lyon Lyon France
-4. https://ror.org/0190ak572 Simons Center for Computational Physical Chemistry at New York University New York United States
+1. Department of Chemistry & Biochemistry, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
+2. Department of Chemistry, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. CIRI (Centre International de Recherche en Infectiologie), Univ Lyon, Inserm, U1111, Université Claude Bernard Lyon 1, CNRS, UMR5308, ENS de Lyon Lyon France ([ROR:059sz6q14](https://ror.org/059sz6q14))
+4. Simons Center for Computational Physical Chemistry at New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
 ## Abstract
 
-The SARS-CoV-2 main protease (M pro or Nsp5) is critical for production of viral proteins during infection and, like many viral proteases, also targets host proteins to subvert their cellular functions. Here, we show that the human tRNA methyltransferase TRMT1 is recognized and cleaved by SARS-CoV-2 M pro . TRMT1 installs the N 2 , N 2 -dimethylguanosine (m2,2G) modification on mammalian tRNAs, which promotes cellular protein synthesis and redox homeostasis. We find that M pro can cleave endogenous TRMT1 in human cell lysate, resulting in removal of the TRMT1 zinc finger domain. Evolutionary analysis shows the TRMT1 cleavage site is highly conserved in mammals, except in Muroidea, where TRMT1 is likely resistant to cleavage. TRMT1 proteolysis results in reduced tRNA binding and elimination of tRNA methyltransferase activity. We also determined the structure of an M pro -TRMT1 peptide complex that shows how TRMT1 engages the M pro active site in an uncommon substrate binding conformation. Finally, enzymology and molecular dynamics simulations indicate that kinetic discrimination occurs during a later step of M pro -mediated proteolysis following substrate binding. Together, these data provide new insights into substrate recognition by SARS-CoV-2 M pro that could help guide future antiviral therapeutic development and show how proteolysis of TRMT1 during SARS-CoV-2 infection impairs both TRMT1 tRNA binding and tRNA modification activity to disrupt host translation and potentially impact COVID-19 pathogenesis or phenotypes.
+The SARS-CoV-2 main protease (Mpro or Nsp5) is critical for production of viral proteins during infection and, like many viral proteases, also targets host proteins to subvert their cellular functions. Here, we show that the human tRNA methyltransferase TRMT1 is recognized and cleaved by SARS-CoV-2 Mpro. TRMT1 installs the N2,N2-dimethylguanosine (m2,2G) modification on mammalian tRNAs, which promotes cellular protein synthesis and redox homeostasis. We find that Mpro can cleave endogenous TRMT1 in human cell lysate, resulting in removal of the TRMT1 zinc finger domain. Evolutionary analysis shows the TRMT1 cleavage site is highly conserved in mammals, except in Muroidea, where TRMT1 is likely resistant to cleavage. TRMT1 proteolysis results in reduced tRNA binding and elimination of tRNA methyltransferase activity. We also determined the structure of an Mpro-TRMT1 peptide complex that shows how TRMT1 engages the Mpro active site in an uncommon substrate binding conformation. Finally, enzymology and molecular dynamics simulations indicate that kinetic discrimination occurs during a later step of Mpro-mediated proteolysis following substrate binding. Together, these data provide new insights into substrate recognition by SARS-CoV-2 Mpro that could help guide future antiviral therapeutic development and show how proteolysis of TRMT1 during SARS-CoV-2 infection impairs both TRMT1 tRNA binding and tRNA modification activity to disrupt host translation and potentially impact COVID-19 pathogenesis or phenotypes.
 
 ## Introduction
 
 SARS-CoV-2 has resulted in over 6 million deaths worldwide since the start of the COVID-19 pandemic in early 2020 (G. W. H. Organization, 2023; C. for S. Science, E, 2023). The development of mRNA and other vaccines has played a large and critical role in reducing mortality since their introduction in 2021 (Suthar et al., 2022; Rahmani et al., 2022; Watson et al., 2022; Mohammed et al., 2022), but a fundamental understanding of coronavirus host protein interactions and biology continues to be an important goal to inform ongoing and future therapeutic design. The SARS-CoV-2 main protease (Mpro or Nsp5) is a well-studied antiviral drug target because its activity is essential for viral replication. More than 600 Mpro crystal structures – the majority with bound small molecule inhibitors – are currently available in the protein databank (Burley et al., 2021). Mpro is necessary for the proteolysis of 11 different cleavage sites in the two SARS-CoV-2 extended viral polypeptides, which results in the liberation of mature non-structural proteins that are essential for host infection and viral propagation (Wilamowski et al., 2021; Yan et al., 2020; Shin et al., 2020; Zheng et al., 2021; Thoms et al., 2020; Yuan et al., 2020). Approximately 20 structures of Mpro in complex with different viral cleavage sequences have been determined (MacDonald et al., 2021; Zhao et al., 2022; Shaqra et al., 2022), in which the Mpro homodimer has a peptide substrate bound to its active site (Figure 1A). However, a detailed understanding of SARS-CoV-2 Mpro substrate selectivity and cleavage efficiency remains poorly defined, and the structural characterization of interactions between the viral protease and human host protein targets remains underexplored (Hameedi et al., 2022).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the structure of the SARS-CoV-2 Mpro homodimer (PDB 7BB2) with substrate peptide residues (P4-P3-P2-P1-P1′-P2′-P3′-P4′) illustrated in the Mpro active site (inset); proteolytic cleavage takes place between substrate residues P1 and P1′ (dotted line). (B) The TRMT1(527–534) sequence found in a linker region between the TRMT1 SAM methyltransferase (MTase) and zinc finger (ZF) domains is consistent with the SARS-CoV-2 Mpro cleavage consensus sequence.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) TRMT1 structural model colored by AlphaFold prediction confidence (dark blue = very high confidence, cyan = confident, yellow = low confidence, orange = very low confidence). (B) TRMT1 structural model colored by domain (SAM-dependent methyltransferase, MTase = teal; zinc finger, ZF = cyan; linker and unstructured regions = gray) with the TRMT1 (527–534) cleavage sequence highlighted in magenta. Inset shows closeup of the surface-exposed TRMT1 (527–534) cleavage sequence (magenta) and the AlphaFold-predicted contacts between the residues in the cleavage sequence and the surface of the MTase domain.
 
 Early in the COVID-19 pandemic, Gordon et al. expressed tagged SARS-CoV-2 proteins in human embryonic kidney cells (HEK293T/17) and employed affinity purification mass spectrometry (AP-MS) to map proteome-wide virus-host protein interactions, in which a putative interaction between catalytically inactive SARS-CoV-2 Mpro (Cys145Ala) and the human tRNA methyltransferase TRMT1 was identified (Gordon et al., 2020b). Analogous AP-MS experiments with wild-type (WT) Mpro found no stable interaction with TRMT1, and subsequent mapping with SARS-CoV-1 proteins also found a TRMT1 interaction exclusively with Cys145Ala Mpro, suggesting that coronavirus Mpro may recognize and actively cleave human TRMT1 in cells (Gordon et al., 2020b; Gordon et al., 2020a). TRMT1 is a tRNA-modifying enzyme responsible for installing N2,N2-dimethylguanosine (m2,2G), an abundant tRNA modification found at the G26 position of human tRNAs (Chou et al., 2017). Human HEK293T cells lacking TRMT1, and therefore the m2,2G26 modification, have significantly decreased global protein synthesis and reduced proliferation (Dewe et al., 2017). Human neural stem cells with TRMT1 knockdowns were found to have hypersensitivity to redox stress, implicating TRMT1 and the m2,2G26 modification in the regulation of redox homeostasis (Dewe et al., 2017). TRMT1 contains a peptide sequence (527–534) consistent with the cleavage consensus for Mpro, located in an AlphaFold2-predicted (Varadi et al., 2022; Jumper et al., 2021) surface-exposed region (Figure 1—figure supplement 1) linking the TRMT1 N-terminal SAM-dependent methyltransferase domain and the C-terminal zinc finger domain (Figure 1B). SARS-CoV-2 Mpro-directed cleavage of TRMT1, and subsequent downregulation of tRNA m2,2G26 modification during infection, could therefore have direct impacts on both host and viral protein synthesis, as well as phenotypes linked to redox stress.
 
@@ -34,37 +42,85 @@ Here, we show that SARS-CoV-2 Mpro proteolyzes endogenous human TRMT1 in human c
 
 ## Results
 
-## Full-length TRMT1 is cleaved by SARS-CoV-2 Mpro in vitro
+### Full-length TRMT1 is cleaved by SARS-CoV-2 Mpro in vitro
 
 SARS-CoV-1 and SARS-CoV-2 proteome-wide virus-host protein interaction maps identified a putative interaction between catalytically inactive Mpro (Cys145Ala) and human TRMT1, but no such stable interaction was found using WT protease, suggesting Mpro may target and cleave TRMT1 in cells (Gordon et al., 2020b; Gordon et al., 2020a). A peptide sequence (527–534) located between the methyltransferase domain and zinc finger domain of human TRMT1 fits the cleavage consensus sequence of SARS-CoV-2 Mpro (Figure 1B). To determine if full-length (FL) TRMT1 is susceptible to cleavage by Mpro, we first measured proteolysis of human TRMT1 expressed and purified from E. coli by recombinant purified SARS-CoV-2 Mpro (Figure 2A). TRMT1 was incubated with either catalytically inactive Mpro Cys145Ala or active WT Mpro, and TRMT1 cleavage was monitored by western blot using two TRMT1-specific polyclonal antibodies: a dual-domain recognizing antibody specific for portions of both the methyltransferase and zinc finger domain (anti-TRMT1 460–659), and a single-domain recognizing antibody specific for only the zinc finger domain (anti-TRMT1 609–659). As expected, FL TRMT1 (~75 kDa) was stable during a 2 hr incubation with inactive Cys145Ala Mpro. However, when incubated with WT Mpro, the intensity of the band corresponding to FL TRMT1, as measured by both TRMT1 antibodies, was reduced by >90% after 2 hr. In western blots with cleaved TRMT1, the dual domain-recognizing anti-TRMT1(460–659) antibody showed the appearance of two new lower molecular weight bands, corresponding to the anticipated molecular weights of the Mpro-mediated TRMT1 cleavage products (~61 kDa TRMT1 methyltransferase domain and ~14 kDa TRMT1 zinc finger domain). After demonstrating that recombinant FL TRMT1 isolated from E. coli could be cleaved by SARS-CoV-2 Mpro, we next asked whether endogenous TRMT1 from human cells could be similarly cleaved by the viral protease. HEK293T cell lysate was incubated with either Cys145Ala or WT Mpro, and endogenous TRMT1 levels were monitored over time by western blot (Figure 2B). Incubation with Cys145Ala Mpro resulted in no change to the FL TRMT1 band over the course of 2 hr, while incubation with WT Mpro resulted in time-dependent proteolysis of FL TRMT1. Unlike in cleavage assays with recombinant TRMT1, no build-up of cleavage products was observed during Mpro-mediated proteolysis of endogenous TRMT1, suggesting instability and rapid degradation of cleaved TRMT1 fragments in human cell lysate. Together, these experiments demonstrate that both recombinant FL TRMT1 and endogenous FL TRMT1 in human cell lysate are viable substrates for cleavage by SARS-CoV-2 Mpro.
 
-## Cleavage of TRMT1 results in complete loss of tRNA m2,2G modification activity and reduced tRNA binding in vitro
+![Figure 2.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig2-v1.jpg)
+
+**Figure 2.:** (A) Western blots of recombinantly purified FL TRMT1 incubated with 10 µM catalytically inactive (Cys145Ala) or active (wild-type [WT]) SARS-CoV-2 Mpro at 37°C. Incubation with WT Mpro results in proteolysis of FL TRMT1 and the appearance of cleavage products corresponding the zinc finger (ZF) domain (observed with both anti-TRMT1 (609–659) and anti-TRMT1 (460–659) antibodies) and the methyltransferase (MTase) domain (observed with only anti-TRMT1 (460–659) antibody). (B) Western blots of endogenous human TRMT1 in HEK293T cell lysate incubated with 10 µM of either catalytically inactive (Cys145Ala) or active (WT) Mpro at 37°C. Endogenous FL TRMT1 is stable in human cell lysate over the course of a 2 hr incubation with C145A Mpro (left) and is rapidly proteolyzed upon incubation with WT Mpro (right). GAPDH was stained in conjunction with TRMT1 antibodies and used as a loading control. (C) Recombinant, FL TRMT1 cleaved for 18 hr with WT Mpro (complete cleavage confirmed by western blot using anti-TRMT1 (460–659), top panel), has no observable methyltransferase activity on a human FL tRNAphe substrate (bottom panel, pink squares); in contrast, robust tRNA methylation activity is still seen with TRMT1 incubated for 18 hr with Mpro Cys145Ala or no protease (bottom panel, gray circles and blue triangles, respectively). TRMT1 tRNA methyltransferase activity was measured by monitoring radiolabel incorporation into tRNA substrate in reactions with cofactor 14C-SAM. (D) Recombinant, FL TRMT1 cleaved for 18 hr with WT Mpro (complete cleavage confirmed by western blot using anti-TRMT1 (460–659), top panel), has reduced binding affinity (~6-fold change) for human tRNAPhe (bottom panel, pink squares) compared to uncleaved TRMT1 that had been incubated for 18 hr with either Mpro Cys145Ala or no protease (bottom panel, gray circles and blue triangles, respectively). TRMT1-tRNA binding was measured by electrophoretic mobility shift assay (EMSA), where bound and unbound tRNA species at different TRMT1 concentrations were separated, visualized by SYBR Gold staining, and quantified using ImageJ to obtain fraction bound values. Methyltransferase and binding assays in (C, D) were carried out in triplicate and errors are shown as SEM; fitted kinetic and binding parameters are shown in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Representative EMSA gels are shown for tRNA binding experiments where TRMT1 was preincubated overnight with Mpro wild-type (WT) (A), Mpro C145A (B), or no protease (C); after overnight treatment with protease (or no protease), binding was measured by EMSA to 300 nM tRNAphe, with a TRMT1 dilution series from 7.8 → 0.1 μM. For an unbound tRNA migration reference, the first lane of each gel contained tRNAphe without TRMT1. The cleaved TRMT1 generated by Mpro WT (A) had diminished affinity for tRNA, whereas TRMT1 incubated with Mpro C145A (B) had comparable tRNA binding affinity to TRMT1 incubated with no protease (C). KDs for the TRMT1-tRNA interactions under each of these conditions are listed in Figure 2—source data 1 and were determined by quantifying fraction bound from the free tRNA and TRMT1-tRNA bands shown above, plotting this against [TRMT1], and fitting these plots (shown in Figure 2D) to a standard single-site ligand binding equation. We note that the cleaved TRMT1-tRNA complexes in (A) migrate at significantly higher apparent molecular weights, and are retained in the wells, as compared to uncleaved TRMT1-tRNA complexes. Based on our complementary kinetic experiments shown in Figure 2C, although cleaved TRMT1 apparently retains some binding affinity for tRNA, these are non-functional complexes or oligomers.
+
+### Cleavage of TRMT1 results in complete loss of tRNA m2,2G modification activity and reduced tRNA binding in vitro
 
 Next, we explored the consequences of Mpro-mediated cleavage of TRMT1 on both tRNA m2,2G modification and tRNA binding. TRMT1 was incubated overnight alone, with WT Mpro (to generate a fully cleaved TRMT1 product), or with Mpro Cys145Ala (no cleavage control). The Mpro cleavage reaction was monitored by western blot using anti-TRMT1 (460–659) antibody to confirm the depletion of FL TRMT1 by Mpro WT (Figure 2C and D, top). We then measured the impact of TRMT1 cleavage on its tRNA modifying activity by radiolabel-based methyltransferase assays with S-[methyl-14C]-adenosyl methionine (14C-SAM; Figure 2C, bottom) and its tRNA binding affinity by electrophoretic mobility shift assays (EMSAs) with FL human tRNAphe (Figure 2D, bottom). Cleaved TRMT1 generated by incubation with Mpro WT exhibits a total loss of measurable tRNA methyltransferase activity, compared to TRMT1 incubated with Mpro Cys145Ala, which retains full activity comparable to TRMT1 alone (Figure 2C, Figure 2—source data 1). Similarly, we found that Mpro-cleaved TRMT1 also had reduced affinity for tRNA, whereas TRMT1 incubated with Mpro Cys145Ala had comparable tRNA binding affinity to TRMT1 alone (Figure 2D, Figure 2—source data 1). While cleaved TRMT1 still retained some affinity for tRNA, we observed in EMSA experiments that cleaved TRMT1-tRNA complexes migrate at significantly higher apparent molecular weights as compared to uncleaved TRMT1-tRNA complexes (Figure 2—figure supplement 1). This suggests that the TRMT1 cleavage products in vitro may form oligomers that have reduced affinity for tRNA, but based on the methyltransferase activity assays above, these oligomeric TRMT1-tRNA complexes cannot efficiently methylate bound tRNA. These observations are consistent with other studies that have shown truncated TRMT1 constructs lacking the zinc finger domain have reduced tRNA modification activity in cells (Dewe et al., 2017) or in vitro (Lu and Zhou, 2023). Together, our in vitro tRNA binding and modification assays directly show that Mpro-mediated cleavage of TRMT1 reduces its substrate tRNA binding affinity and completely incapacitates its tRNA m2,2G modification catalysis.
 
-## Structure of TRMT1 peptide bound to the Mpro active site
+### Structure of TRMT1 peptide bound to the Mpro active site
 
 To visualize how TRMT1 is recognized and cleaved by the viral protease active site, we determined the co-crystal structure of catalytically inactive Cys145Ala mutant Mpro in complex with the TRMT1 peptide sequence corresponding to the expected cleavage site, human TRMT1 residues 526–536 (Figure 3, Figure 3—source data 1). The 1.9 Å resolution structure shows clear density for the TRMT1 peptide bound to the active site in one protomer of the Mpro dimer (Figure 3A, Figure 3—figure supplement 1A). As expected based on alignment with the Mpro consensus cleavage sequence, TRMT1 Gln530 occupies the critical S1 subsite pocket in the Mpro active site (Figure 3A), positioning the Gln530-Ala531 peptide bond directly adjacent to the His41/Cys145 catalytic dyad for proteolytic cleavage (Figure 3B). TRMT1 Leu529 corresponds to substrate position P2 and occupies the hydrophobic Mpro S2 pocket (Figure 3A), packing against Mpro residues His41, Met49, Met165, and Gln189 (Figure 3—figure supplement 1B). P3′ substrate residue TRMT1 Phe533 occupies the Mpro S3′ pocket (Figure 3A), which is composed by Mpro residues His41, Cys44, Met49, and the backbone of Thr45 (Figure 3—figure supplement 1C). TRMT1 peptide binding to Mpro is also mediated by numerous key sidechain and mainchain hydrogen bonding contacts (Figure 3C and D). The TRMT1 P1 Gln530 sidechain is specifically recognized by hydrogen bonding interactions with Mpro residues Phe140 (Figure 3C) and His163 (Figure 3D), consistent with previous structures of Mpro bound to viral peptide substrates (Shaqra et al., 2022). Additionally, the TRMT1 P2′ Asn532 sidechain interacts with Mpro Asn142 (Figure 3C). A number of TRMT1 peptide backbone atoms (from TRMT1 residues Arg528, Leu529, Gln530, Asn532, and Thr534) make hydrogen bond contacts with Mpro surface residues (Mpro Gly143, Glu166, and Gln189 contacts shown in Figure 3C; Mpro Thr24, Thr26, Cys145Ala, and His164 contacts shown in Figure 3D). The identified Mpro-targeted residues in human TRMT1 are conserved in the human population (i.e. no missense polymorphisms), showing that human TRMT1 can be recognized and cleaved by SARS-CoV-2 Mpro.
 
-## TRMT1 engages the Mpro active site in a distinct binding conformation
+![Figure 3.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig3-v1.jpg)
+
+**Figure 3.:** (A) TRMT1 peptide (blue) bound in Mpro active site (gray) showing substrate binding pockets S1, S2, S4, and S3′. Fo-Fc omit electron density map of TRMT1 peptide bound to Mpro is shown contoured at 1σ. TRMT1 Gln P1, an ultra-conserved residue in the Mpro cleavage consensus which is critical for Mpro-mediated proteolysis, is nestled in the S1 pocket of the Mpro active site. The scissile P1 – P1′ amide linkage of TRMT1 is colored orange. (B) The TRMT1 P1 Gln amide is positioned for cleavage near Mpro catalytic dyad residues His41 and Cys145Ala in the protease active site. (C, D) Direct hydrogen bond contacts formed between Mpro residues (white) and the bound TRMT1 peptide (light blue) are illustrated as yellow dashed lines; (C and D) are views rotated by 90°, highlighting different TRMT1-Mpro hydrogen bonding interactions. Mpro Phe140 and His163 recognize the TRMT1 P1 Gln530 sidechain; TRMT1 Asn532 and Mpro Asn142 engage in sidechain-sidechain interaction; additional backbone hydrogen bond contacts include Mpro Thr24-TRMT1 Thr534, Mpro Thr26-TRMT1 Asn532, Mpro Asn142-TRMT1 Asn532, Mpro Glu166-TRMT1 Arg528, and Mpro Gln189-TRMT1 Leu529; many of these interactions are consistent with canonical Mpro-peptide substrate contacts in the active site.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Structure of human TRMT1 (526–536) peptide in complex with the SARS-CoV-2 Mpro dimer. Only one protomer of the Mpro dimer has TRMT1 bound in the active site. Fo-Fc omit electron density map of TRMT1 peptide bound to Mpro contoured at 1σ. (B) TRMT1 (526–536) P2 residue Leu529 packs against Mpro residues His41, Met49, Gln189, and Met165 in the Mpro S2 substrate binding pocket. (C) TRMT1 (526–536) P3′ residue Phe533 sits in the S3′ pocket, composed of Mpro residues His41, Cys44, Thr45 (backbone), and Met49.
+
+### TRMT1 engages the Mpro active site in a distinct binding conformation
 
 Mpro has more than 10 native viral polypeptide substrates with relatively high sequence variability outside the conserved P1 Gln and the adjacent P2 and P1′ residues. We compared our human TRMT1-bound Mpro structure with available SARS-CoV-2 Mpro structures bound to known viral polypeptide cleavage sequences (Figure 4A; nsp4/5, nsp5/6, nsp6/7, nsp8/9, nsp9/10, nsp10/11, and nsp15/16). The overall structures of Mpro are very similar for all peptide-bound structures, with Mpro backbone RMSD values all below 1.6 (Figure 4—figure supplement 1). Analysis of aligned peptide substrates in the Mpro active site shows that both TRMT1 and viral peptide backbones have nearly identical conformations for the N-terminal P4 → P1′ residues. In contrast, backbone geometries of C-terminal peptide residues (P2′ → P4′) diverge more significantly and fall into two distinct binding modes distinguished primarily by the P2′ Ψ dihedral angle (Figure 4B and C). The majority of viral peptide substrates adopt a binding conformation with P2′ Ψ≥157 ° in which the P3′ sidechain is positioned away from the Mpro surface (Figure 4D), which we have designated as the ‘P3′-out’ conformation. In contrast, TRMT1 and a single viral peptide substrate, nsp6/7, bind in a distinct conformation with P2′ Ψ≤116 ° (Figure 4C) in which the P3′ sidechain (Phe in TRMT1, Met in nsp6/7) is positioned toward the Mpro surface where it displaces Mpro Met49 to open and occupy pocket S3′ (Figure 4D). We have designated this uncommon binding mode as the ‘P3′-in’ conformation.
 
-## Mpro cleaves TRMT1 peptide with comparable kinetics to known viral polypeptide cleavage sites
+![Figure 4.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig4-v1.jpg)
+
+**Figure 4.:** (A) Comparison of known Mpro substrate cleavage sequences and the P2′ Ψ backbone dihedral angles measured in the corresponding C145A Mpro-peptide structures for each substrate. We included all known C145A Mpro-viral peptide structures in this analysis, except those that were missing the P3′ residue or had poorly defined electron density for the C-terminal portion of the peptide; structures used in this analysis are PDB IDs: 7MGS, 7T8M, 7DVW, 7T9Y, 7TA4, 7TA7, 7TC4, and 9DW6. Additionally, since a C145A Mpro-nsp6/7 structure was not available, we used an H41A Mpro-nsp6/7 structure (PDB 7VDX) for this analysis. (B) Section of an Mpro-bound peptide substrate showing residues P1′, P2′, and P3′, with the key P2′ Ψ dihedral angle illustrated with a curved arrow; the four backbone atoms that define the P2′ Ψ dihedral angle are labeled and highlighted with blue circles (P2′N–P2′Cα–P2′C–P3′N). (C) Alignment of peptide substrate backbones in the Mpro active site reveals two distinct binding modes at the C-terminal end of the bound peptides characterized by P2′ Ψ dihedral angles ≥157° (nsp4/5, nsp5/6, nsp8/9, nsp9/10, nsp10/11, nsp15/16) or ≤116° (TRMT1, nsp6/7). Peptide overlays were generated by aligning SARS-CoV-2 Mpro-peptide substrate structures in PyMOL. The location of the P2′ Ψ dihedral angle in the substrate peptide backbone is denoted with a star. (D) Alignment of nsp4/5- and TRMT1-bound Mpro structures showing divergent C-terminal peptide substrate binding modes in the Mpro active site. The backbone geometry of nsp4/5 (P2′ Ψ=168°) positions the P3′ Phe sidechain away from the Mpro surface (‘P3′-out’ conformation), while the TRMT1 backbone geometry (P2′ Ψ=115°) positions the P3′ Phe sidechain toward the Mpro active (‘P3′-in’ conformation) site where it displaces Mpro Met49 to open and occupy the S3′ pocket.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Calculated all-atom RMSDs are derived from each structure alignment to Mpro Cys145Ala bound to nsp4/5 (7MGS) (bottom). The overall structure of the Mpro backbone is highly similar regardless of the bound peptide substrate.
+
+### Mpro cleaves TRMT1 peptide with comparable kinetics to known viral polypeptide cleavage sites
 
 To further examine whether TRMT1 is a viable substrate for SARS-CoV-2 Mpro, we compared kinetic parameters for proteolysis of the TRMT1 (526–536) peptide with the nsp4/5 and nsp8/9 viral polypeptide cleavage sequences, using fluorogenic peptide cleavage assays. The TRMT1 peptide is cleaved noticeably slower than the nsp4/5 N-terminal auto-processing sequence (Figure 5A, Figure 5—source data 1), with an approximately 200-fold decrease in kcat, 4-fold decrease in KM, and 50-fold decrease in catalytic efficiency (kcat/KM) compared to Mpro-mediated cleavage of the nsp4/5 peptide (Figure 5B, Figure 5—source data 1). However, TRMT1 is cleaved with very comparable kinetics to the viral nsp8/9 cleavage sequence, with kcat, KM, and kcat/KM values all within ~3-fold for TRMT1 vs nsp8/9 peptide cleavage. These kinetic experiments show that, while the TRMT1 Mpro target sequence is cleaved less efficiently than the canonical nsp4/5 auto-processing site, the TRMT1 sequence is cleaved with kinetics very similar to the known nsp8/9 Mpro cleavage site in the viral polypeptide. This suggests that TRMT1 (526–536) is a viable substrate for Mpro-targeted proteolysis.
 
-## Residues involved in Mpro-TRMT1 recognition have only small effects on cleavage efficiency
+![Figure 5.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig5-v1.jpg)
+
+**Figure 5.:** (A) Kinetics of nsp4/5, nsp8/9, and TRMT1 peptide cleavage by Mpro. To initiate the reaction, 50 nM enzyme was added to 100–0.097 µM peptide. Each fluorogenic peptide was conjugated with a quenching moiety, and upon peptide cleavage, the fluorescence of the cleavage product was measured to determine initial rates of the reaction. Nsp4/5 cleavage rates were faster than those observed for the nsp8/9 or TRMT1 peptides, but nsp8/9 and TRMT1 sequences exhibit similar Mpro-mediated cleavage rates. (B) The catalytic efficiency (kcat/KM) of TRMT1 peptide cleavage by Mpro is similar to that for nsp8/9 peptide cleavage; both of these substrates are cleaved significantly slower than the nsp4/5 sequence. This suggests that TRMT1 is a feasible substrate for Mpro. (C) Illustration of changes in Mpro Met49, Asn142, and Gln189 residue positioning in TRMT1-bound (white) vs nsp4/5-bound (orange) structures. The TRMT1 peptide is shown in blue; nsp4/5 peptide is not shown. (D) No major changes in catalytic efficiency are observed for nsp4/5 and TRMT1 peptide cleavage upon mutagenesis of key Mpro residues involved in TRMT1 binding and recognition. All kinetic assays were carried out in triplicate and errors are shown as SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** TRMT1 (A531S) contains a Ser at position P1′, which conforms to the Mpro cleavage consensus (Figure 1B) but is predicted to disfavor the P3′-in binding conformation observed for TRMT1 in the Mpro active site. (A) Molecular dynamics simulated structure of Mpro in complex with TRMT1 A531S (gray peptide) predicts this peptide remains in the P3′-in conformation, as observed with TRMT1 wild-type (WT) (blue peptide). (B) No major difference is measured for cleavage of the WT vs A531S TRMT1 peptide by Mpro kinetic data comparing kcat for cleavage of the TRMT1 (526–536) peptide with either the WT TRMT1 sequence or an Ala531 to Ser mutation.
+
+### Residues involved in Mpro-TRMT1 recognition have only small effects on cleavage efficiency
 
 We next compared the Mpro-peptide interactions observed in TRMT1-, nsp4/5-, and nsp8/9-bound structures and identified several Mpro residues involved in direct substrate contacts that differ between the TRMT1- and nsp4/5- or nsp8/9-bound structures (Figure 5C). In the TRMT1-bound structure, Mpro Met49 is shifted to accommodate TRMT1 P3′ substrate residue Phe533 binding in the S3′ pocket, and the Mpro Asn142 and Gln189 sidechains are repositioned to form hydrogen bonds with the TRMT1 peptide backbone. To test how these Mpro active site residues affect TRMT1 recognition and catalysis, we generated single alanine point mutations at each of these three sites and measured kinetic parameters for Mpro-mediated proteolysis of nsp4/5 and TRMT1 peptides. Additionally, we mutated the P1′ TRMT1 Ala531 to Ser, the P1′ residue found in nsp4/5 and nearly all of the other Mpro-targeted viral cleavage sequences, to test the effects of mutating a key position in the substrate peptide. Surprisingly, we saw no substantial changes in proteolysis kinetics for cleavage of either nsp4/5 or TRMT1 substrates with any of the tested Mpro mutants (Met49Ala, Asn142Ala, Gln189Ala) or the TRMT1 Ala531Ser mutant peptide (Figure 5D, Figure 5—source data 1, Figure 5—figure supplement 1), suggesting none of these residues alone play a significant role in determining differential cleavage rates for TRMT1 vs nsp4/5.
 
-## Evolutionary insights into TRMT1’s conserved Mpro cleavage site reveals Mpro proteolytic resistance in rodents
+### Evolutionary insights into TRMT1’s conserved Mpro cleavage site reveals Mpro proteolytic resistance in rodents
 
 To determine whether the TRMT1 sequence at the Mpro cleavage site is unique to human TRMT1 and whether TRMT1 bears signatures of molecular arms-races with pathogens during mammalian evolution, we performed phylogenetic and positive selection analyses (Tenthorey et al., 2022; Sironi et al., 2015). Through an evolutionary screen, Cariou et al., 2022, previously identified some signatures of rapid evolution in primate TRMT1, potentially driven by adaptation to ancient viral pathogens, including coronaviruses. Through comprehensive analyses, we identified rapidly evolving sites at the N- and C-termini of primate TRMT1, but we did not find any evidence of sites under positive selection at the Mpro-mediated TRMT1 (526–536) cleavage sequence (Figure 6—figure supplement 1A, Figure 6—source data 1). In fact, this sequence is highly conserved in primates (Figure 6A). A TRMT1 sequence analysis at the mammalian level further showed that the Mpro cleavage site of TRMT1 (residues 526–536) is highly conserved in most mammals, including in bats that are the reservoir of SARS-CoVs (Figure 6B). However, one exception is in rodents, where there has been a Q to K substitution fixed in all Muroidea (mouse, rat, hamster, etc.) (Figure 6C, Figure 6—figure supplement 1B). To test the impact of this substitution on Mpro-mediated cleavage, we generated a TRMT1 Gln530Lys mutant and incubated it with Mpro WT for a period of 2 hr (Figure 6D). We found that TRMT1 Gln530Lys was resistant to Mpro cleavage and did not observe the formation of cleavage products (e.g. TRMT1 MT domain) compared to cleavage of TRMT1 WT under the same proteolytic conditions. This is consistent with a more recent report showing that mouse or hamster TRMT1 is not cleaved by Mpro when these enzymes are co-expressed in cells (Lu and Zhou, 2023). Our results confirm that the TRMT1 Gln530Lys substitution at the invariant P1 glutamine residue is sufficient to completely prevent TRMT1 proteolysis in vitro, strongly suggesting this mutation would prevent SARS-CoV Mpro-directed TRMT1 cleavage during Muroidea infection.
 
-## MD simulations suggest kinetic discrimination happens during later steps of Mpro-catalyzed substrate cleavage
+![Figure 6.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) The Mpro-targeted TRMT1 cleavage site sequence (human TRMT1 residues 526–536) is highly conserved in primates (A) and most mammals (B), with the notable exception of rodents (C), where the glutamine Q530 residue most critical for Mpro-directed cleavage is substituted to a lysine in Muroidea. Sequence logo plots of the cleavage site in TRMT1 (526–536) were produced with WebLogo3. The human reference sequence is in black and orange residues show the differences. (D) Wild-type (WT) human TRMT1 is cleaved over the course of a 2 hr incubation with Mpro (left western blot panel), whereas human TRMT1(Q530K), which has the Q to K mutation found in Muroidea, is entirely resistant to cleavage during a 2 hr incubation with Mpro (right western blot panel).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The Mpro binding/cleavage site in TRMT1 is highly conserved in primates, while there has been rapid evolution at N- and C-termini. Codon alignment of the primate TRMT1 sequences with the human as a reference. The numbering is according to the nucleotide position in the alignment (top) and in the reference sequence (human). Non-synonymous differences to the reference are highlighted in black, from Geneious R9. The sites under positive selection identified by MEME or FUBAR are shown above the alignment with black triangles. Major domains and the cleavage sites are also represented: M for mitochondrial signal, MTase for methyltransferase, C for cleavage by Mpro, ZF for zinc finger. (B) Same as (A) for rodents, with mouse as the reference.
+
+### MD simulations suggest kinetic discrimination happens during later steps of Mpro-catalyzed substrate cleavage
 
 To further support the structural and biochemical data described above and attempt to understand how peptide substrate binding geometry may or may not be linked to Mpro-catalyzed cleavage efficiency, we carried out MD simulations using nsp4/5-, nsp8/9-, and TRMT1-bound Mpro complexes. MD simulations show TRMT1 is stably bound to the Mpro active site and primarily adopts the P3′-in conformation observed in the crystal structure, where TRMT1 Phe533 occupies the S3′ pocket with a probability of ~65% over the course of the 100 ns simulation (Figure 7A). In contrast, simulations of the nsp4/5-Mpro complex show the nsp4/5 peptide primarily adopts the P3′-out conformation, where nsp4/5 Phe531 is oriented away from the Mpro surface with ~70% probability, consistent with the observed nsp4/5 binding mode in the crystal structure. This computational analysis shows that while P3′-in and -out conformations can interconvert, the dominant binding modes for TRMT1 and nsp4/5 peptide substrates (P3′-in vs -out, respectively) are consistent across the crystal structures and MD simulations. Furthermore, because these conformations differ primarily at the C-terminal end of the peptide but have very similar geometries at the scissile amide bond, we find that the computationally and experimentally determined substrate binding poses fail to explain the large differences in cleavage kinetics observed for TRMT1 vs nsp4/5.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig7-v1.jpg)
+
+**Figure 7.:** (A) Distribution of the sum of the minimum distance for P3′ Phe residue in nsp4/5 or TRMT1 from three residues (Thr25, Met49, Cys44) which form the S3′ subsite; P3′-in and P3′-out conformations are illustrated above the distribution plot. The much larger proportion of TRMT1 at smaller distances reflects the peptide’s preference for binding in the P3′-in conformation where TRMT1 P3′ Phe occupies the S3′ pocket during the majority of the MD simulation. (B) Distribution of the attack angle of the nucleophilic Mpro Cys145 sulfur atom and the substrate carbonyl carbon atom in the to-be-cleaved amide bond (S–C=O angle θ, top illustration) during the course of the MD simulation. Although nsp4/5 has a higher proportion of attack angles observed closer to the optimal 90° compared to TRMT1, consistent with faster nsp4/5 cleavage kinetics, this small preference is insufficient to explain the 200-fold faster cleavage kinetics of nsp4/5 observed in experimental proteolysis assays.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91168/elife-91168-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) One possible explanation for faster cleavage kinetics of nsp4/5 relative to nsp8/9 or TRMT1 (data in Figure 4) could be better positioning of the scissile peptide bond and electrophilic P1 amide carbonyl closer to the nucleophilic Mpro Cys145 residue. However, the measured C145A-P1(CO) distances are nearly identical for nsp4/5-, nsp8/9-, and TRMT1-bound Mpro crystal structures, suggesting this is not the case. (B) Another possible explanation for faster cleavage kinetics of nsp4/5 are deviations in the dihedral angle of the scissile amide (P1(CA)-P1(C)-P1′(N)-P1′(CA)) bond away from 180°, which could indicate ground state destabilization that would result in accelerated peptide bond cleavage. However, the most rapidly cleaved substrate, nsp4/5, has a scissile amide bond dihedral angle closest to 180°, indicating that amide bond planarity of the bound substrate does not play an important role in determining peptide cleavage rates.
 
 Previous structural and geometric analysis of diverse serine protease substrate-inhibitor complexes has shown that the consensus nucleophilic attack angle of the catalytic residue in the reactive Michaelis complex is approximately 90° (Radisky, 2002). We next asked whether differences in nucleophilic attack angle for the catalytic Mpro Cys145 measured over the course of the MD simulation might be able to explain changes in Mpro-mediated cleavage kinetics. The distribution of the S–C=O nucleophilic attack angle shows that the Mpro-nsp4/5 complex has only ~9% increased probability to fall within 89±7°, as compared with the Mpro-TRMT1 complex over the course of the simulation (Figure 7B). Thus, while the nsp4/5 peptide shows slightly more favorable positioning of Cys145 for nucleophilic attack in the Michaelis complex during the first step of cleavage, this is not nearly sufficient to explain the large difference (~200-fold in kcat) in experimentally observed cleavage kinetics between nsp4/5 and TRMT1. Taken together with our TRMT1-Mpro structure and kinetic analysis of Mpro and TRMT1 mutants, these results strongly suggest that kinetic discrimination between peptide cleavage rates is likely to occur during a later step in the Mpro-catalyzed cleavage reaction that follows substrate binding, Michaelis complex formation, and initial nucleophilic attack, similar to some serine proteases (Radisky, 2002).
 
@@ -84,7 +140,220 @@ Overall, our work defines the structural basis for understanding recognition and
 
 ## Materials and methods
 
-## Cloning, protein expression, and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLVX-EF1alpha-SARS-CoV-2-nsp5-2xStrep-IRES-Puro</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_141370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLVX-EF1alpha-SARS-CoV-2-nsp5-C145A-2xStrep-IRES-Puro</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_141371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pETARA-Mpro-WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mugridge Lab plasmid, E. coli expression vector for wild-type Mpro with a GST tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pETARA-Mpro-C145A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mugridge Lab plasmid, E. coli expression vector for Mpro C145A variant with a GST tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pETARA-Mpro-M49A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mugridge Lab plasmid, E. coli expression vector for Mpro M49A variant with a GST tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pETARA-Mpro-N142A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mugridge Lab plasmid, E. coli expression vector for Mpro N142A variant with a GST tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pETARA-Mpro-Q189A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mugridge Lab plasmid, E. coli expression vector for Mpro Q189A variant with a GST tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>TRMT1-pET22b(+)–18del-WT</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>E. coli expression plasmid to generate recombinant human TRMT1 WT</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>TRMT1(526–536) unlabeled Peptide</td>
+      <td>Peptide 2.0</td>
+      <td></td>
+      <td>EPRLQANFTIR</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>TRMT1(526–536) labeled Peptide</td>
+      <td>Peptide 2.0</td>
+      <td></td>
+      <td>MCA-EPRLQANFTIR-K(Dnp)K</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>nsp4/5 labeled Peptide</td>
+      <td>Peptide 2.0</td>
+      <td></td>
+      <td>MCA-SAVLQSGFRKM-K(Dnp)K</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>nsp8/9 labeled Peptide</td>
+      <td>Peptide 2.0</td>
+      <td></td>
+      <td>MCA-AVKLQNNELSP- K(Dnp)K</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin software</td>
+      <td>OriginLab Corporation</td>
+      <td>RRID:SCR_014212;Versions 2021 and 2023b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798;Version 10.0.03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRMT1 460–659</td>
+      <td>Invitrogen</td>
+      <td>PA5-96585</td>
+      <td>Western blot primary (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRMT1 609–659 (Rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A304-205A</td>
+      <td>Western blot primary (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>PA-1987</td>
+      <td>Western blot primary (1:100,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L) Secondary Antibody, HRP</td>
+      <td>Invitrogen</td>
+      <td>A16096</td>
+      <td>Western blot secondary (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Clarity Western ECL Substrate</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>1705060</td>
+      <td>HRP substrate for western blot</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>tRNA PheGAA, sequence with T7 promoter (Homo sapiens)</td>
+      <td>IDT</td>
+      <td></td>
+      <td>TAATACGACTCACTATAGCCGAAATAGCTCAGTTGGGAGAGCGTTAGACTGAAGATCTAAAGGTCCCTGGTTCGATCCCGGGTTTCGGCA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean &amp; Concentrator kits</td>
+      <td>Zymo Research</td>
+      <td>R1016</td>
+      <td>For purification of tRNA product</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>Schneider et al., 2012</td>
+      <td>Version 1.54d</td>
+      <td>For image analysis of EMSA gels</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Spark microplate reader</td>
+      <td>Tecan</td>
+      <td></td>
+      <td>For plate-based activity assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FluorChem R imager</td>
+      <td>Protein Simple</td>
+      <td></td>
+      <td>For imaging western blots</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantulus Scintillation Counter</td>
+      <td>Revvity</td>
+      <td></td>
+      <td>For measuring 14C CPM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot software</td>
+      <td>Emsley et al., 2010</td>
+      <td>Version 0.8.9.1</td>
+      <td>Structure building</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX software</td>
+      <td>Liebschner et al., 2019</td>
+      <td>Version v.1.17.1–3600</td>
+      <td>Structure refinement</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning, protein expression, and purification
 
 Mpro constructs used for biochemical and kinetic studies were subcloned into a pETARA expression vector containing N-terminal GST and C-terminal His-tags using Gibson assembly. Human codon optimized WT Mpro was obtained from Addgene (catalog #141370). Mpro single-point mutants (M49A, N142A, Q189A) were introduced using site-directed mutagenesis by whole plasmid PCR. Each construct contained the Mpro autocleavage sequence (AVLQ) after the N-terminal GST tag to allow for self-cleavage and a native Mpro N-terminus. Constructs were transformed into E. coli Rosetta(DE3)pLysS cells and plated on LB agar plates with 50 µg/mL ampicillin. Overnight seed cultures were grown from single colonies in LB media with 50 µg/mL ampicillin, at 37°C with shaking at 200 rpm. A 1:100 dilution of seed culture to 1 L LB media was prepared and grown at 37°C with shaking at 200 rpm. After an OD600 of 0.6 was reached, cells were induced with 1 mM IPTG and incubated overnight at 18°C with shaking. Cultures were centrifuged at 7500 × g and the supernatant was discarded. Harvested cells were sonicated in lysis buffer (25 mM Tris, 300 mM NaCl, 10 mM imidazole pH 8.0), centrifuged at 14,500 × g for 45 min, and recovered, clarified lysate was loaded onto 1.5 mL (bed volume) equilibrated Thermo Scientific HisPur Ni-NTA Resin for 30 min with gentle mixing. Resin was added to a standard gravity column and washed with two 25 mL washes of lysis buffer and two 25 mL washes with lysis buffer+25 mM imidazole, and eluted with 10 mL lysis buffer+250 mM imidazole. Eluate was concentrated to ~2 mL using a using 10 kDa MWCO centrifugal concentrator and applied to a Cytiva HiLoad 16/600 Superdex 200 pg column for size exclusion chromatography. Mpro-containing fractions were concentrated to between 10 and 25 mg/mL, flash-frozen with liquid nitrogen, and stored at –70°C in 50 mM Tris, 1 mM EDTA, 2 mM DTT, pH 7.3.
 
@@ -92,45 +361,45 @@ Catalytically inactive Mpro C145A mutants used for protein crystallography exper
 
 The human TRMT1 gene sequence (NM_001136035.4) with a 1–18 amino acid N-terminal deletion (to remove the mitochondrial targeting peptide) was synthesized and subcloned by GenScript into pET22b(+) with an N-terminal pelB leader sequence and a C-terminal His-tag. The TRMT1 construct was transformed into E. coli Rosetta(DE3)pLysS cells as described above, and induced using 0.2 mM IPTG. Harvested cells were sonicated in lysis buffer (20 mM Tris-HCl, pH 8.5, 500 mM NaCl, 5 mM imidazole, 10% glycerol, 5 mM BME, cOmplete EDTA-free Protease Inhibitor Cocktail), clarified at 14,500 × g, and recovered lysate was loaded onto a pre-equilibrated Cytiva 5 mL HisTrap column. The loaded HisTrap column washed with lysis buffer+20 mM imidazole, and protein was eluted using a gradient elution with lysis buffer+250 mM imidazole. Fractions containing TRMT1 were pooled, concentrated, and loaded onto a Cytiva HiLoad 16/600 Superdex 200 pg size exclusion chromatography column and eluted with an isocratic gradient using 20 mM Tris pH 8.5, 500 mM NaCl, 2 mM DTT. The protein-containing fractions were concentrated to approximately 30 mg/mL, flash-frozen in liquid nitrogen, and stored at –70°C.
 
-## Crystallography and structure determination
+### Crystallography and structure determination
 
 Purified Mpro C145A was incubated at room temperature for 1 hr with TRMT1 (526–536) peptide (EPRLQANFTIR, synthetic peptide obtained from Peptide 2.0) in 25 mM Tris, 25 mM NaCl, pH 7.4 at a 1:3 molar ratio with the final concentrations of 7 mg/mL Mpro C145A and 619 µM TRMT1 (526–536). The Mpro and TRMT1 solution was mixed 1:1 with well solutions consisting of 20–21.5% PEG 3350 and 100 mM NaCl in 24-well hanging drop VDX plates with a final drop volume of 1 µL. Initial crystals were harvested, crushed, and seeded into new hanging drops, with components as listed above, using cat whiskers. Single crystals were harvested and flash-frozen in liquid nitrogen with 20% glycerol in well solution as a cryoprotectant. Diffraction data were collected at the National Synchrotron Light Source II (NSLS II) Highly Automated Macromolecular Crystallography (AMX) (Schneider et al., 2022) beamline 17-ID-1 at the Brookhaven National Laboratory on an Eiger 9M Pixel detector at 100 K and a wavelength of 0.920219 Å. Diffraction data were indexed, integrated, and scaled using XDS. The Mpro-TRMT1 structure was solved in space group P212121 using the Phaser package in the CCP4 suite and a modified PDB 7MGS as search model. After initial rounds of refinement in PHENIX to model Mpro residues, the TRMT1 peptide residues 526–534 were manually built into the Fo-Fc map using COOT. Subsequent rounds of automated refinement and water placement using PHENIX and manual adjustments including modeling sodium ions and glycerol molecules in COOT were used to obtain the final structure.
 
-## Peptide cleavage kinetic assays
+### Peptide cleavage kinetic assays
 
 Fluorogenic assays measuring kinetic parameters for cleavage of peptide substrates were carried out in triplicate in Corning Low Volume 384-well Black Flat Bottom Polystyrene NBS Microplates following a similar procedure as Lee et al., 2020. Peptide cleavage reactions were carried out at 50 nM Mpro enzyme in 50 mM Tris pH 7.3, 1 mM EDTA, 2 mM DTT, and 20% DMSO, with quenched fluorescent peptide substrates ranging in concentration from 0.097 to 100 µM. Synthetic peptide substrates were obtained from Peptide 2.0: TRMT1 (MCA-EPRLQANFTIR-K(Dnp)K), nsp4/5 (MCA-SAVLQSGFRKM-K(Dnp)K), and nsp8/9 (MCA-AVKLQNNELSP- K(Dnp)K) where MCA = 7-methoxycoumarin-4-acetic acid and Dnp = dinitrophenyl. Using a Tecan Spark microplate reader, the fluorescence intensity was monitored every 10 s over a 3 min time course, with excitation at 320 nm and emission at 405 nm. A calibration curve of MCA-AVLQ product fluorescence intensities from 12 to 0.006 µM was measured and used to generate an RFU to µM conversion factor. A correction for the inner filter effect (IFEcorr) was determined using the formula IFEcorr = [fluorescenceMCA_product+peptide – fluorescencepeptide]/fluorescenceMCA where fluorescenceMCA_product+peptide = the fluorescence of MCA-AVLQ mixed with quenched peptide substrate, fluorescencepeptide = the fluorescence of the peptide alone, fluorescenceMCA = fluorescence of MCA-AVLQ product alone (Figure 5—source data 2; Liu et al., 1999). Plots of initial rate (µM/min) vs peptide substrate concentration were fit to the Michaelis-Menten equation to determine Vmax and KM kinetic parameters for Mpro-mediated peptide cleavage using Origin 2021 software.
 
-## Cell lines
+### Cell lines
 
 HEK293T cells used in this study were obtained from ATCC with confirmed identity by STR profiling and no detection of mycoplasma, bacterial, or fungal contamination.
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 Freshly passaged HEK293T cells were incubated at 37°C with 5% CO2 in growth media (DMEM media with 10% FBS and penicillin [100 U/mL]/streptomycin (100 µg/mL)). Growth media was replaced every 3 days, and cells were trypsinized and passaged approximately every 7 days, when cells reached 80–90% confluency. To passage, growth media was aspirated, and cells were gently washed with prewarmed PBS. PBS was then aspirated and a 1:2.5 mixture of 0.25% Trypsin in HBSS with 0.2 g/L EDTA to PBS was added to adherent cells and incubated at 37°C for 2 min to disaggregate. A 3× dilution with growth media was used to inactivate trypsin. The cells were gently mixed to attain a homogenous suspension and diluted 1:20 with growth media and added into a new cell culture plate. For lysis, cells were trypsinized as described above, and the resulting cell suspension was spun down at 1250 rpm for 3 min. Cell pellets were washed in ice-cold PBS three times, and spun at 1250 rpm for 3 min, aspirating PBS in between each wash. Lysis was performed on a PBS suspension of cells by performing 3 consecutive freeze/thaw cycles by flash-freezing in liquid nitrogen and thawing at 37°C. Lysate was collected after centrifugation at 13,000 rpm for 10 min and stored at –70°C.
 
-## Proteolysis assay
+### Proteolysis assay
 
 TRMT1 proteolysis reactions with recombinant TRMT1 isolated from E. coli were performed with 10 µM WT or C145A Mpro in 20 mM HEPES, 105 mM NaCl, 20% glycerol, pH 7.0. Recombinant FL TRMT1 from E. coli was diluted sevenfold. Reaction was incubated at 37°C and timepoints were quenched by adding to SDS-PAGE sample buffer (50 mM Tris, pH 6.8, 1.0% [wt/vol] SDS, 10% [vol/vol] glycerol, 0.1% [wt/vol] bromophenol blue, 0.1 M DTT) and boiled for 5 min. TRMT1 levels and fragment sizes at different reaction timepoints were assessed by western blot.
 
 TRMT1 proteolysis assays using endogenous human TRMT1 from HEK293T lysate were carried out using cell lysate preincubated with 1 mM phenylmethylsulfonyl fluoride prior to reaction to prevent proteolysis by mammalian-specific proteases. Mpro proteolysis reactions were performed with 10 µM WT or C145A Mpro in 25 mM Tris, 25 mM NaCl, 20% glycerol, pH 7.5. Reaction was incubated at 37°C and timepoints were quenched by adding to SDS-PAGE sample buffer (50 mM Tris, pH 6.8, 1.0% [wt/vol] SDS, 10% [vol/vol] glycerol, 0.1% [wt/vol] bromophenol blue, 0.1 M DTT) and boiled for 5 min. TRMT1 levels and fragment sizes at different reaction timepoints were assessed by western blot.
 
-## Western blot
+### Western blot
 
 Quenched samples from the proteolysis assays were loaded (10 µL) onto Bio-Rad TGX 4–15% polyacrylamide gels and run for 30 min at 180 V. Gels were blotted onto PVDF membranes using a Bio-Rad Trans blot Turbo for 7 min at 2.5 A. The blot was incubated in blocking solution (5% non-fat milk in 1× Tris-Buffer Saline with 0.1% Tween) at room temperature for 1 hr. All antibodies were diluted in blocking solution. TRMT1-specific antibodies corresponding to amino acid regions 460–659 (Invitrogen Rabbit Anti-TRMT1 [ref: PA5-96585]) and 609–659 (Bethyl Laboratories Rabbit Anti-TRMT1 [ref: A304-205A]) and housekeeping protein GAPDH (Invitrogen Rabbit Anti-GAPDH [ref: PA-1987]) were utilized for primary antibody staining at 1:2,000 dilution for TRMT1 antibodies and 1:100,000 for GAPDH antibodies, and were stained by overnight incubation at 4°C. Extensive washing of blot with 1× Tris-buffered saline with 0.1% Tween were performed after primary antibody staining. Invitrogen Goat anti-Rabbit IgG (H+L) Secondary Antibody, HRP (ref: A16096) was used for secondary staining at a dilution of 1:10,000 for 1 hr at room temperature. Extensive washing of blot with 1× Tris-buffered saline with 0.1% Tween were performed after secondary antibody staining. Clarity Western ECL Substrate (ref: 1705060) was added to blot and incubated at room temperature for 5 min. Western blots were visualized on a Protein Simple FluorChem R imager.
 
-## In vitro transcription of tRNA substrate
+### In vitro transcription of tRNA substrate
 
 A double-stranded template of tRNAphe (Homo sapiens Phe-GAA, sequence with T7 promoter: TAATACGACTCACTATAGCCGAAATAGCTCAGTTGGGAGAGCGTTAGACTGAAGATCTAAAGGtCCCTGGTTCGATCCCGGGTTTCGGCA) was used at a concentration of 150 nM in the transcription mixture of 0.05% Triton X-100, 5 mM DTT, 5 mM rNTPs, 0.1 mg/mL RNA polymerase, 2 U/mL TIPP, 40 mM Tris-HCl, pH 7.5, 50 mM MgCl2, and 2 mM spermidine. The reaction was incubated at 37°C for 3 hr, then treated with DNase RQ1 and incubated at 37°C for 1 hr. The reaction was quenched with 50 mM EDTA and 50% formamide and heated for 5 min at 95°C. The quenched material was loaded onto a large-scale 8% gel PAGE denaturing UREA gel and run at 50 mA for ~2.5 hr. Using a handheld UV lamp and a silica plate, the tRNA band was excised, shred, and nutated overnight at room temperature in 0.6 M NaOAc, pH 6.0, 1 mM EDTA, and 0.01% SDS. The solution was filtered and extracted using phenol:chloroform:IAA, 25:24:1, pH 6.6, centrifuging for 5 min at 1500 × g and collecting the aqueous phase, then precipitating with 80% ethanol overnight at –20°C. The tRNA pellet was air-dried at room temperature and brought up in molecular grade water. tRNA was then re-folded by heating at 80°C for 2 min, 60°C for 2 min, and then adding 10 mM MgCl2 and cooling on ice for 30 min. The final material was flash-frozen at ~150 μM and stored at –80°C.
 
-## 14C radiolabel-based methyltransferase activity assays
+### 14C radiolabel-based methyltransferase activity assays
 
 Overnight Mpro cleavage reactions were prepared with 0.5 μM TRMT1 in 50 mM Tris pH 8.0, 50 mM MgCl2, 100 µg/µL BSA, 2 mM DTT and added to 20 μM Mpro WT, 20 μM Mpro C145A, or no protease. Timepoints at 0 and 18 hr were taken for each protease condition and assessed for reaction completion by western blot. The completed Mpro WT, Mpro C154A, or no protease (mock) cleavage reactions were used directly in methyltransferase activity assays with 0.1 μM final concentration of TRMT1, 5 μM tRNAphe, and 30 μM 14C SAM (4.2 mCi/mmol) in 50 mM Tris pH 8.0, 50 mM MgCl2, 100 µg/µL BSA, 2 mM DTT. Reactions were incubated at 37°C and 5 μL timepoints were taken at 0, 0.5, 2, and 4 hr and processed using Zymo RNA Clean & Concentrator kits to isolate tRNA from the reaction mixture. tRNA was eluted in 15 μL water and added to 10 mL of Ultima Gold Scintillation Fluid (ref: 6013329). Counts per minute (CPM) were measured using Quantulus Scintillation Counter CH3 channel (lower level 0, upper level 156, 1 min count time). A standard curve using known concentrations and specific activity of 14C-SAM was produced to convert CPM to concentration of labeled product. Graphs were generated using Origin2023b and fit using a Michaelis-Menten equation.
 
-## EMSA for detecting tRNA binding
+### EMSA for detecting tRNA binding
 
 Overnight Mpro cleavage reactions were prepared with 14 μM TRMT1 in 20 mM Tris-HCl, pH 8.5, 300 mM NaCl, 2 mM DTT, 20% glycerol and added to 140 μM Mpro WT, 140 μM Mpro C145A, or no protease. Timepoints at 0 and 18 hr were taken for each protease condition and assessed for reaction completion by western blot. The completed Mpro WT, Mpro C154A, or no protease (mock) cleavage reactions were used directly to generate a dilution series of TRMT1 and each dilution was mixed with tRNAphe (final TRMT1 concentrations ranged from 7.78 to 0.13 μM; final tRNAPhe concentration was 0.2 μM). The TRMT1-tRNA binding reactions were incubated for 1 hr at room temperature, 8 μL of each reaction was loaded onto a 5% TBE non-denaturing gel, and run at 50–60 V for approximately 2.5 hr at 4°C. Each gel was stained with 1× SYBR Gold in 0.5× TBE for 30 min at room temperature and then imaged using a Protein Simple FluorChemQ imager. Band intensities for bound and unbound tRNA were quantified using ImageJ software (Schneider et al., 2012) and used to calculate fraction bound values at each TRMT1 concentration. Graphs were generated using Origin2023b and fit using a Hill plot.
 
-## MD simulation
+### MD simulation
 
 Extensive MD simulations in explicit water have been carried out to investigate Mpro-nsp4/5 and Mpro-TRMT1 complexes starting from their corresponding crystal structures (PDB id: 7MGS [MacDonald et al., 2021] and 8D35), respectively. In original crystal structures, the catalytic Cys145 has been mutated to Ala, Mpro-nsp4/5 is in the monomer form, while the Mpro-TRMT1 complex is in the dimer form. Since the active form of Mpro should be dimer (Zhang et al., 2020b), the structure of the Mpro-nsp4/5 (PDB id: 7MGS) was superimposed to the Mpro-TRMT1 (PDB id: 8D35) to model the dimer form of Mpro-nsp4/5, and the catalytic Cys145 in both complexes has been modeled using ‘swapaa’ command in ChimeraX (Pettersen et al., 2021). The original crystal water molecules and ions within 5 Å of the protein-substrate complex are kept. PDB2PQR (Jurrus et al., 2018) was employed to add hydrogen atoms to both complexes at pH 7. Subsequently, the His41 was manually changed to Hip41 (positively charged) by adding an additional hydrogen atom to the imidazole ring in ChimeraX, and Cys145 was manually changed to Cym (negatively charged) by removing the hydrogen atom on the thiol group in ChimeraX. Each system was neutralized by adding counterions for Na+ and Cl-, and solvated in a rectangular water box of TIP3P water molecules with 12 Å buffer.
 
@@ -138,7 +407,7 @@ For each prepared simulation system, 3000 steps of steepest descent plus 2000 st
 
 All MD simulations were conducted with Amber 20 (Case, 2020) package using Amber FF 14SB force field (Maier et al., 2015). AmberTools (Case, 2020) was utilized for preparing topology and coordinate files for the simulated systems cutoff of 10 Å was set for calculating van der Waals interactions, and the particle mesh Ewald (Darden et al., 1993) method with a cutoff of 10 Å was employed to treat electrostatic interactions. The SHAKE algorithm (Andersen, 1983) was used to constrain covalent bonds to allow the integration time step of 2 fs.
 
-## Evolutionary analysis of mammalian TRMT1 orthologs
+### Evolutionary analysis of mammalian TRMT1 orthologs
 
 For the mammalian-wide sequence analyses, the TRMT1 amino acid alignment was retrieved with OrthoMaM (Orthologous Mammalian Markers) v10c (Scornavacca et al., 2019), using human TRMT1 (ENSG00000104907) as query. The cleavage site was located and the sequence logo of the 526–536 region was generated using WebLogo3 (https://weblogo.threeplusone.com/).
 
@@ -148,6 +417,6 @@ For the rodent phylogenetic analyses, the rodentia orthologous protein and mRNA 
 
 To identify missense polymorphisms or variants in TRMT1 at minor allele frequency above 0.005 in human population, we mined the dbSNP database https://www.ncbi.nlm.nih.gov/snp/.
 
-## Materials availability
+### Materials availability
 
 All materials, including plasmids generated in this study, are available from the authors upon request.

@@ -15,7 +15,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Developmental Biology & Cancer, UCL Great Ormond Street Institute of Child Health London United Kingdom
+1. Developmental Biology & Cancer, UCL Great Ormond Street Institute of Child Health London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -41,27 +41,203 @@ In the present study, we examined caudal development in 108 human embryos, at Ca
 
 The study involved 108 human embryos (Table 1), obtained from the Medical Research Council (MRC)/Wellcome Human Developmental Biology Resource (https://www.hdbr.org/), with UK ethics committee approval. Embryos were donated by women undergoing termination of pregnancy for ‘social’ reasons, in most cases by mifepristone/misoprostol-induced (medical) delivery, with a few intact embryos obtained by ultrasound-guided vacuum aspiration (surgical). All embryos in the study were chromosomally and morphologically normal, and were assigned to CS, as described (O’Rahilly and Muller, 1987; Bullen and Wilson, 1997). Comparisons to mouse were with random-bred CD1 embryos, staged by embryonic (E) day, where E0.5 is the day following overnight mating.
 
-## Morphology of human PNP closure
+**Table 1.**
+ Number of human embryos in the study, with breakdown by analysis type, sex, and method of pregnancy termination*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis type</th>
+      <th>Figures in paper</th>
+      <th>Total no.</th>
+      <th>No. females</th>
+      <th>No. males</th>
+      <th>No. sex unknown</th>
+      <th>No. medical</th>
+      <th>No. surgical</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PNP morphology</td>
+      <td>1A–H</td>
+      <td>2**</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PNP closure timing</td>
+      <td>1I, J</td>
+      <td>40</td>
+      <td>24</td>
+      <td>16</td>
+      <td>0</td>
+      <td>40</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tail morphology, histology, cell death</td>
+      <td>2, 3</td>
+      <td>37**</td>
+      <td>14</td>
+      <td>21</td>
+      <td>2</td>
+      <td>36</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Serial section analysis, cell death</td>
+      <td>4, 6</td>
+      <td>11</td>
+      <td>5</td>
+      <td>6</td>
+      <td>0</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FGF8, WNT3A expression</td>
+      <td>5</td>
+      <td>18</td>
+      <td>9</td>
+      <td>9</td>
+      <td>0</td>
+      <td>18</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Totals</td>
+      <td></td>
+      <td>108</td>
+      <td>52</td>
+      <td>54</td>
+      <td>2</td>
+      <td>106</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Medical: mifepristone- and misoprostol-induced delivery; Surgical: ultrasound-guided vacuum aspiration.**Embryos that are included in Table 2._
+
+### Morphology of human PNP closure
 
 Relatively few human embryos with an open posterior neuropore (PNP) have been reported in the literature (Müller and O’Rahilly, 1987; O’Rahilly and Müller, 2002), probably owing to the early stage at which primary neurulation is completed (end of week 4, post-conception). In two intact CS12 embryos (Figure 1A and B; crown-rump length: 3 mm; 22–23 somites), we identified an open PNP by microscopic inspection at collection (Figure 1C and D). Transverse histological sections confirmed an open neural tube in the caudal region, with minimal tissue damage evident, indicating that primary neurulation was not yet complete. The neural plate is relatively flat in the most caudally located sections, although incipient dorsolateral hinge points (DLHPs) are visible (Figure 1E and F). The notochord underlies the neural plate midline, and the caudal end of the hindgut is visible beneath the notochord in one embryo (Figure 1E), but not the other (Figure 1F). In more rostral sections, close to the ‘zippering’ point of PNP closure, elevated neural folds flank a marked ventral midline bend in the neural plate, the median hinge point (MHP), which precisely overlies the notochord (Figure 1G and H). DLHPs are also clearly present, unilaterally in one embryo (Figure 1G) and bilaterally in the other (Figure 1H). As in the mouse (McShane et al., 2015), the DLHPs are situated where the neural plate changes from basal contact with surface ectoderm to basal contact with paraxial mesoderm. We conclude that MHP and DLHPs characterise PNP closure in human embryos at CS12, marking a direct equivalence to Mode 2 spinal neurulation in the mouse embryo (Shum and Copp, 1996).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88584/elife-88584-fig1-v1.jpg)
 
-**Figure 1.:** (A,B) Two CS12 embryos viewed from right side, each with 22–23 somites (s), and a looped heart (h). Neural tube closure is complete along most of the body axis, including the forebrain (fb), whereas the PNP remains open caudally. (C,D) Magnified oblique views from upper right side of the caudal region; the open PNP is outlined with dashed lines. (E–H) Haematoxylin and eosin (H&E)-stained transverse sections, through the PNP, with section planes as indicated by dashed lines in A,B. The most caudally located sections (E,F) show a relatively flat neural plate (np), although incipient dorsolateral hinge points (DLHPs; arrows) are visible. Note the midline notochord (no) underlying the neural plate, and hindgut (hg) beneath the notochord (in E only). More rostral sections (G,H) show elevated neural folds with DLHPs clearly visible (arrows: unilateral in G, bilateral in H), located where basal contact of the neural plate changes from surface ectoderm (se), to paraxial mesoderm (pm). A median hinge point (MHP; asterisks in G,H) overlies the notochord. (I) PNP length (double headed arrow in C), normalised to somite (s) length (bracketed in C), determined from photographic images of 40 human embryos (24 females; 16 males) at CS10 (n=4), CS11 (n=8), CS12 (n=16), and CS13 (n=12). Symbol colours indicate the Carnegie stages assigned at the time of collection. The PNP shows gradual closure, with completion around the 30 somite stage. (J) Somite number of the 40 embryos in I, plotted against days post-conception, as reported for each Carnegie stage by O’Rahilly and Muller, 1987. The linear regression equation is shown, with R2=0.82 and p<0.001. Scale bars: 1 mm in A,B; 0.4 mm in C,D; 0.1 mm in E–H.Figure 1—source data 1.
+**Figure 1.:** (A,B) Two CS12 embryos viewed from right side, each with 22–23 somites (s), and a looped heart (h). Neural tube closure is complete along most of the body axis, including the forebrain (fb), whereas the PNP remains open caudally. (C,D) Magnified oblique views from upper right side of the caudal region; the open PNP is outlined with dashed lines. (E–H) Haematoxylin and eosin (H&E)-stained transverse sections, through the PNP, with section planes as indicated by dashed lines in A,B. The most caudally located sections (E,F) show a relatively flat neural plate (np), although incipient dorsolateral hinge points (DLHPs; arrows) are visible. Note the midline notochord (no) underlying the neural plate, and hindgut (hg) beneath the notochord (in E only). More rostral sections (G,H) show elevated neural folds with DLHPs clearly visible (arrows: unilateral in G, bilateral in H), located where basal contact of the neural plate changes from surface ectoderm (se), to paraxial mesoderm (pm). A median hinge point (MHP; asterisks in G,H) overlies the notochord. (I) PNP length (double headed arrow in C), normalised to somite (s) length (bracketed in C), determined from photographic images of 40 human embryos (24 females; 16 males) at CS10 (n=4), CS11 (n=8), CS12 (n=16), and CS13 (n=12). Symbol colours indicate the Carnegie stages assigned at the time of collection. The PNP shows gradual closure, with completion around the 30 somite stage. (J) Somite number of the 40 embryos in I, plotted against days post-conception, as reported for each Carnegie stage by O’Rahilly and Muller, 1987. The linear regression equation is shown, with R2=0.82 and p<0.001. Scale bars: 1 mm in A,B; 0.4 mm in C,D; 0.1 mm in E–H.
 
-## Timing of human PNP closure
+### Timing of human PNP closure
 
 PNP length data were obtained from photographic images of CS10–13 embryos (n=40). To allow for differences in overall embryonic size, PNP measurements were normalised to the length of a recently formed somite in the same embryo (Figure 1C). The plot of PNP length/somite length against somite number shows a steady decline in the length of open neural folds in the caudal region, until 6/12 embryos at CS13 have completely closed, while most of the others show a very small PNP (Figure 1I). There were no obvious differences in closure rate or timing between female (n=24) and male (n=16) embryos. Hence, closure of the PNP is completed in human embryos around the 30-somite stage, as also reported for outbred mouse strains (Copp et al., 1982).
 
-## Development and regression of the human embryonic tail
+### Development and regression of the human embryonic tail
 
 Overall caudal development was studied in 37 human embryos (CS13–18), which covered the period 28–45 days post-conception (Table 2; Figure 2A, B, I). Crown-rump length increased 2.5-fold during this period, from a mean value of 6.4 mm at CS13 to 15.4 mm at CS18 (Table 2; Figure 2J). Observations on the intact embryos showed that the PNP is closed in most embryos by CS13, and a developing tailbud is present which exhibits mild ventral curvature and a thick rounded tip (Figure 2C). Somites are visible proximal to the tailbud (arrowheads in Figure 2C), with an intervening region of presomitic mesoderm at CS13 (yellow bracket in Figure 2C). By CS16, however, the somites extend almost to the tail tip (yellow arrow in Figure 2F). As development progresses, striking changes occur in the tail which continues to lengthen (Table 2) but simultaneously narrows, particularly at the tip, to yield a sharply pointed structure by CS16 (Figure 2D–F). At the same time, the tail straightens and even becomes dorsally bent (Figure 2F). Subsequent to CS16, the tail shortens (Figure 2G; Table 2), and its distal portion becomes increasingly translucent in appearance. By CS18, only a short, curved stump remains (Figure 2H), and the tail is lost completely thereafter. Additional embryonic tails in the CS13–18 range are shown in Figure 2—figure supplement 1.
 
-## Somite formation
+![Figure 2.](https://cdn.elifesciences.org/articles/88584/elife-88584-fig2-v1.jpg)
+
+**Figure 2.:** (A,B) Whole embryos at CS13 (A) and CS18 (B), showing the range of stages studied (4–6.5 weeks post-conception). The tailbud (arrow) is well formed at CS13 following completion of posterior neuropore (PNP) closure at CS12, whereas, by CS18, tail development and regression are largely complete and only a small tail remnant remains (arrow). (C–H) Higher magnification views of the caudal region at CS13–18. At CS13, the tailbud is relatively massive, tapering gradually and with a rounded end (arrow in C). Somites are visible rostral to the tailbud (arrowheads) with an intervening region of presomitic mesoderm (yellow bracket). At CS14 and CS15 the tail narrows progressively, with distal tapering (arrows in D–E). By CS16, this has yielded a slender structure with a narrow pointed end (white arrow in F) in which somites extend almost to the tail tip (yellow arrow in F). Thereafter, the tail shortens progressively (arrows in G,H), develops a marked flexion (asterisk in H), and becomes increasingly translucent (G, H). (I–K) Analysis of embryos in the range CS13–16 (Table 2), plotting CS against: (I) days post-conception (p.c., see Materials and methods), (J) crown-rump (C–R) length in mm, and (K) somite no. One-way analysis of variance (ANOVA) on ranks shows all three parameters vary significantly with CS (p-values on graphs). Somite no. reduces significantly between CS16 and CS17/18 (*p<0.05). Abbreviations: ba, branchial arches; fb, forebrain; fl, forelimb; h, heart; hl, hindlimb; s, somites. Scale bars: 1 mm in A,B; 0.5 mm in C–H.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88584/elife-88584-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Note the broad tailbud at CS13 with rounded tip (yellow bracket in A), which gradually narrows and becomes increasingly pointed, through CS14, CS15, and CS16 (arrows in B,C,D). At CS16, the tail tip has a markedly translucent appearance (bracket in D). By CS17–18, the tail has shortened and is dorsally curved at its tip (asterisk in E). Scale bars: 0.5 mm.
+
+**Table 2.**
+ Measurements of human embryos, CS12–18*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Carnegie stage (CS)</th>
+      <th>Age range (days post-fertilisation)</th>
+      <th>Number of embryos</th>
+      <th>Somite number †</th>
+      <th>Crown-rump length ‡</th>
+      <th>Tail length (total) ‡</th>
+      <th>Tail length distal to somites ‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>25–27</td>
+      <td>2</td>
+      <td>22, 22</td>
+      <td>3.0, 3.0</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>28–30</td>
+      <td>7</td>
+      <td>35.4±2.3</td>
+      <td>6.4±1.3</td>
+      <td>1.06±0.44</td>
+      <td>0.49±0.16</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>31–32</td>
+      <td>5</td>
+      <td>35.0±2.0</td>
+      <td>8.4±2.2</td>
+      <td>0.99±0.21</td>
+      <td>0.56±0.06</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>33–35</td>
+      <td>7</td>
+      <td>35.9±1.8</td>
+      <td>8.9±0.8</td>
+      <td>1.18±0.55</td>
+      <td>0.67±0.15</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>37–39</td>
+      <td>8</td>
+      <td>36.6±2.6</td>
+      <td>11.7±1.2</td>
+      <td>1.29±0.48</td>
+      <td>0.46±0.13</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>40–43</td>
+      <td>4</td>
+      <td>32.3±2.1</td>
+      <td>12.2±1.2</td>
+      <td>1.18±0.20</td>
+      <td>0.34±0.01</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>44–45</td>
+      <td>6</td>
+      <td>32.6±1.1</td>
+      <td>15.4±2.2</td>
+      <td>1.14±0.48</td>
+      <td>N/D</td>
+    </tr>
+  </tbody>
+</table>
+
+_N/A: not applicable; N/D: not determined.*Somite numbers: mean ± SD (except CS12, where actual somite numbers are shown). Somite number was available for all embryos except n=5 at CS18.†Summary of embryos that underpin Figure 1A–H (CS12) and Figures 2 and 3 (CS13–18). For full data set, see Supplementary file 2.‡Lengths (mm): mean ± SD (except CS12, where actual lengths are shown). Length measuements were available only for a subset of embryos. See Supplementary file 2 for full details._
+
+### Somite formation
 
 Between CS10 and CS13, during PNP closure, somite number increases approximately linearly with days of gestation (Figure 1K): mean (± SD) somite numbers were: 8.0±1.4 at CS10, 18.4±2.6 at CS11, 23.5±3.4 at CS12, and 30.0±2.8 at CS13. The linear regression equation of this relationship (Figure 1K) gives an increase of 20.3 somites over a 6-day period, equating to the formation of 3.4 somites per gestational day, or a new somite every 7.1 hr (95% confidence intervals: 4.8, 10.4). This compares with formation of a new somite every 2 hr in rat and mouse embryos (Brown and Fabro, 1981; Tam, 1981), and a 5 hr periodicity observed for the human ‘in vitro segmentation clock’ in stem cell-derived presomitic mesoderm-like cells (Diaz-Cuadros et al., 2020; Matsuda et al., 2020). Following PNP closure at CS13, the largest somite number was at CS16 (36.6±1.2; Table 2), although there was no statistically significant increase between CS13 and CS16 (Figure 2K). By CS17 and 18, we could identify only 31–34 somites, a significant reduction in number (Figure 2K). Hence, somite formation in humans occurs at a rate that is 3.5 times slower than in rodent embryos, and ceases after CS16. Subsequent somite number reduction suggests that shortening of the tail during regression involves loss of somites (Table 2).
 
-## Mode of cell death during tail regression
+### Mode of cell death during tail regression
 
 In an initial study, transverse histological sections through human and mouse embryonic tails were processed for immuno-peroxidase staining using anti-activated caspase 3. Positive cells were readily identified in the tails of both species (Figure 3A–N), arguing for a role of caspase-dependent apoptosis during tail regression in human and mouse. Principal sites of apoptotic cell death include the regressing tailgut (Figure 3D and F) and, most abundantly, the ventral mesoderm overlying the epithelial ventral ectodermal ridge (Figure 3C and E). We also detected terminal deoxynucleotidyl transferase dUTP nick end labelling (TUNEL)-positive cells in both mouse and human tail sections (data not shown), further confirming the presence of apoptotic cells during tail development/regression.
 
@@ -69,19 +245,19 @@ In an initial study, transverse histological sections through human and mouse em
 
 **Figure 3.:** (A,B) Mouse E11.5 (A) and human CS16 (B) embryos to illustrate the level of transverse sections through the proximal tail (pt) and tailbud (tb) regions of mouse (C,D,I–K) and human (E–H,L–N) embryos at the stages indicated on the panels. Immunohistochemistry was performed on paraffin wax sections for activated caspase 3 (brown stain), with counterstaining by methyl green. (C–F) In the proximal tail region, intense programmed cell death is observed in the ventral midline mesoderm overlying the ventral ectodermal ridge (ver) of both mouse (arrows in C) and human (arrows in E) embryos. Cell death can also be detected in the tailgut (tg) of both mouse (arrow in D) and human embryos (arrow in F). (C,D) are sections from a single E11.5 mouse embryo; (E,F) are sections from a single CS15 human embryo. (G,H) Multiple neural tube profiles in two human embryonic tails at CS15: four lumens are visible in one embryo (arrowheads in G) and two lumens in a second (arrowheads in H). (I–K) In mouse, the tailbud displays a stage-dependent burst of apoptotic cell death at E13.5 (arrows in J), with absence of caspase 3-positive cells 12 hr earlier, at E13.0 (I), and only occasional dying cells 12 hr later, at E14.0 (arrow in K). Note the absence of a neural tube at the mouse tailbud tip, and the sparse nature of the tailbud mesenchyme at E14.0. (L–N) Human embryonic tailbuds show a similar developmental sequence to the mouse, with absence of cell death at CS13 (L), abundant dying cells at CS15 (arrows in M) and cessation of cell death by CS18 (N). Unlike the mouse, the secondary neural tube extends to the tailbud tip (red arrows in L–N), and this terminal neural tube portion has a single lumen in all three embryos. Scale bars in A,B, 1 mm; bar in C represents: 70 µm (C,D), 50 µm (E–K,N), and 30 µm (L,M).
 
-## A burst of apoptosis at cessation of tail elongation
+### A burst of apoptosis at cessation of tail elongation
 
 We observed enhanced apoptosis in the mouse tailbud at E13.5 (Figure 3J), compared with E13.0 and E14.0 when relatively few dying cells were present (Figure 3I and K). Similarly, in sections through the caudal-most region of human embryos, apoptosis was not observed at CS13 (Figure 3L), became intense at CS15 (Figure 3M), and diminished in intensity by CS18 (Figure 3N). Hence, in both mouse and human tails, there appears to be a ‘burst’ of apoptosis at the stage when tail growth ceases, and just before regression of internal structures gets underway.
 
-## Evidence for regression of the tailgut from rostral to caudal
+### Evidence for regression of the tailgut from rostral to caudal
 
 While the human embryonic tail appears to regress from caudal to rostral (Figure 2), the proximal (rostral) part of the tailgut is reported to degenerate before the more distal (caudal) part in both rat (Butcher, 1929; Qi et al., 2000) and mouse (Nievelstein et al., 1993). To examine this question in human embryos, we performed immunofluorescence for anti-activated caspase 3, which confirmed the presence of apoptosis in both tailgut and ventral mesoderm (Figure 4A’ and B’). Using DAPI (4′,6-diamidino-2-phenylindole)-stained sections along the secondary body axis (Figure 4A and B), we determined the cross-sectional area of neural tube, notochord, and tailgut in two CS14 and one CS15 embryos. Total tail area served as a measure of axial position. The neural tube showed a progressive increase in area towards the proximal (rostral) end of the tail, while the notochord showed no change in area along the body axis (Figure 4C). Strikingly, the tailgut showed the reverse trend, with a marked caudal-to-rostral reduction in cross-sectional area (Figure 4A, B, and D). Tailgut nuclear number also diminished from caudal to rostral (Figure 4E). Hence, although the rostral tailgut has not disappeared by CS15, it appears to be diminishing in size proximally, at the same time as it is being formed, as a prominent tail structure, caudally. We conclude that rostral-to-caudal loss of the tailgut may be a general phenomenon among mammalian embryos.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88584/elife-88584-fig4-v1.jpg)
 
-**Figure 4.:** (A,A’,B,B’) Transverse sections at distal (left), middle (centre), and proximal (right) levels of the tail. Panels show DAPI (4′,6-diamidino-2-phenylindole) (A,B) and anti-cleaved caspase 3 immunostaining (A’,B’) of the same sections at CS14 (A,A’) and CS15 (B,B’). Yellow dotted lines outline the tailgut. Apoptotic cell death occurs mainly in tailgut (tg, yellow arrows) and ventral mesoderm (blue arrows). Note the diminishing diameter of the tailgut from distal to proximal. (C) Change in transverse sectional areas of neural tube (nt, diamonds) and notochord (not, squares) along the body axis in CS14 (x2; green and yellow symbols) and CS15 (red symbols) embryos. Embryos CS14-1 and CS15 are shown in (A,B). Tissue-specific areas (y-axis) are plotted against total tail area (x-axis), which increases from left (distal sections) to right (proximal sections). In all embryos, neural tube area increases in a proximal direction, whereas notochord area is relatively constant along the axis. Arrows: sections in which neural tube shows multiple lumens (see Figure 6). (D,E) Similar analysis for tailgut area (D) and tailgut nuclear number (E). Both show a dramatic reduction in a distal-to-proximal direction, in contrast to neural tube and notochord. Scale bars: 50 μm.Figure 4—source data 1.
+**Figure 4.:** (A,A’,B,B’) Transverse sections at distal (left), middle (centre), and proximal (right) levels of the tail. Panels show DAPI (4′,6-diamidino-2-phenylindole) (A,B) and anti-cleaved caspase 3 immunostaining (A’,B’) of the same sections at CS14 (A,A’) and CS15 (B,B’). Yellow dotted lines outline the tailgut. Apoptotic cell death occurs mainly in tailgut (tg, yellow arrows) and ventral mesoderm (blue arrows). Note the diminishing diameter of the tailgut from distal to proximal. (C) Change in transverse sectional areas of neural tube (nt, diamonds) and notochord (not, squares) along the body axis in CS14 (x2; green and yellow symbols) and CS15 (red symbols) embryos. Embryos CS14-1 and CS15 are shown in (A,B). Tissue-specific areas (y-axis) are plotted against total tail area (x-axis), which increases from left (distal sections) to right (proximal sections). In all embryos, neural tube area increases in a proximal direction, whereas notochord area is relatively constant along the axis. Arrows: sections in which neural tube shows multiple lumens (see Figure 6). (D,E) Similar analysis for tailgut area (D) and tailgut nuclear number (E). Both show a dramatic reduction in a distal-to-proximal direction, in contrast to neural tube and notochord. Scale bars: 50 μm.
 
-## Expression of FGF8 and WNT3A during human tailbud elongation
+### Expression of FGF8 and WNT3A during human tailbud elongation
 
 To begin an assessment of the mechanisms that may regulate elongation of the human embryonic tail, and its cessation, we performed whole-mount in situ hybridisation for FGF8 and WNT3A (n=2 embryos minimum for each gene at each stage). These genes are developmentally regulated during axial elongation in chick and mouse embryos, with strong expression in the tailbud during elongation, and down-regulation before axial growth ceases. Direct inactivation or indirect down-regulation of the genes leads to premature axial truncation (Wilson et al., 2009).
 
@@ -89,9 +265,9 @@ In accordance with these findings, we observed strong expression of FGF8 in the 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88584/elife-88584-fig5-v1.jpg)
 
-**Figure 5.:** FGF8 and WNT3A expression in the elongating caudal region of human embryos.Whole-mount in situ hybridisation (A–D,I–L) and sagittal vibratome sections through the caudal region (E–H,M–P) for FGF8 (A–H) and WNT3A (I–P) in embryos at CS12 (A,E,I,M), CS13 (B,F,J,N), CS14 (C,G,K,O), and CS15 (D,H,L,P). Both genes show prominent expression domains in the tailbud at CS12 (arrows in E,M) when axial elongation is underway and the posterior neuropore (PNP) is closing (arrowheads in A,I). At CS13, following PNP closure, expression of FGF8 and WNT3A remains prominent although less intense and more localised to the terminal tailbud than at CS12 (arrows in F,N). By CS14, both genes exhibit much smaller, highly localised expression domains that each appears as a ‘dot’ within the tailbud region (arrows in G,O). By CS15, axial elongation has ceased, the tail tip has narrowed and is increasingly transparent. At this stage, expression of neither gene can be detected (asterisks in H,P). Whole embryos shown in B,J,K; isolated trunk/caudal regions shown in A,C,D,I,L. No. embryos analysed: FGF8, n=2 for each stage; WNT3A, n=2 for each stage except n=3 for CS13. Scale bars: A–D, I–L, 1 mm; E–H, M–P, 100 μm.
+**Figure 5.:** Whole-mount in situ hybridisation (A–D,I–L) and sagittal vibratome sections through the caudal region (E–H,M–P) for FGF8 (A–H) and WNT3A (I–P) in embryos at CS12 (A,E,I,M), CS13 (B,F,J,N), CS14 (C,G,K,O), and CS15 (D,H,L,P). Both genes show prominent expression domains in the tailbud at CS12 (arrows in E,M) when axial elongation is underway and the posterior neuropore (PNP) is closing (arrowheads in A,I). At CS13, following PNP closure, expression of FGF8 and WNT3A remains prominent although less intense and more localised to the terminal tailbud than at CS12 (arrows in F,N). By CS14, both genes exhibit much smaller, highly localised expression domains that each appears as a ‘dot’ within the tailbud region (arrows in G,O). By CS15, axial elongation has ceased, the tail tip has narrowed and is increasingly transparent. At this stage, expression of neither gene can be detected (asterisks in H,P). Whole embryos shown in B,J,K; isolated trunk/caudal regions shown in A,C,D,I,L. No. embryos analysed: FGF8, n=2 for each stage; WNT3A, n=2 for each stage except n=3 for CS13. Scale bars: A–D, I–L, 1 mm; E–H, M–P, 100 μm.
 
-## Mode of secondary neural tube formation in human embryos
+### Mode of secondary neural tube formation in human embryos
 
 In our initial study of tail morphology, 9 out of 15 human embryonic tails showed multiple lumens in some transverse sections (Figure 3G and H), whereas the other 6 exhibited only a single neural tube lumen. In a second group of serially sectioned tails (Figures 4 and 6), 6 out of 10 tails had regions of duplicated neural tube. Hence, we find a 60% (15/25) frequency of neural tube duplication, confirming previous findings of multiple neural tube lumens in many human embryonic tails (Bolli, 1966; Lemire, 1969; Saitsu et al., 2004). We most often identified two neural tube profiles in a single transverse section, but in some cases more were observed (e.g. at CS15; Figure 3G).
 
@@ -109,17 +285,17 @@ The development and later disappearance of the human tail has been of interest t
 
 Several aspects of caudal development are addressed by the studies in Supplementary file 1. These include: completion of primary neurulation with PNP closure, the transition into secondary neurulation, the mode of formation and regression of the secondary neural tube, the observation of multiple neural tube lumens, the formation and regression of somites, notochord and gut in the tail region, the role of programmed cell death in tail regression, and initial studies of gene expression in human embryos. Taken together with the findings of the present study, this accumulated literature provides a strong morphological evidence base for in vivo human caudal development, against which in vitro studies can be judged in the emerging field of stem cell-derived organoid differentiation. The latter is producing multicellular structures that may ultimately provide experimentally tractable models for some aspects of human axial development (Denham et al., 2015; Fedorova et al., 2019; Moris et al., 2020; Rifes et al., 2020; Karzbrun et al., 2021; Libby et al., 2021; Amadei et al., 2022).
 
-## Concept of a human ‘tail’
+### Concept of a human ‘tail’
 
 The human tail develops and then regresses during weeks 4–7 post-conception and is composed of a secondary neural tube, notochord, somites, and tailgut, with undifferentiated mesenchyme at its tip (the tailbud or ‘caudal eminence’), all within a surface ectoderm covering. Since it never becomes vertebrated, in contrast to the tails of most other mammals, some authors consider the human caudal appendage does not qualify as a ‘tail’ (Müller and O’Rahilly, 2004). On the other hand, the presence of caudal somites with vertebra-forming potential are considered by other authors to endow the human caudal appendage with all the hallmarks of a mammalian tail (Kunitomo, 1918). In keeping with common usage, we have referred to the transient human caudal appendage as a tail in this paper. Moreover, we note that the recent claim of ‘tail-loss’ during human evolution, due to a genetic change in the TBXT gene (Xia et al., 2024), ignores the fact that tail development persists in humans, albeit during a specific stage of embryonic development.
 
-## Transition from primary to secondary neurulation
+### Transition from primary to secondary neurulation
 
 Primary neurulation ends with completion of PNP closure, which we detect at the 30-somite stage in humans, similar to mice (Straaten et al., 1992). In mouse embryos, three sequential ‘modes’ of spinal neurulation occur (Shum and Copp, 1996): in Mode 1, the upper spinal neural plate bends only at the midline (the MHP); in Mode 2, at intermediate spinal levels, bending is at both MHP and paired DLHPs; in Mode 3, immediately before final PNP closure, the MHP is lost and bending occurs only at DLHPs. We found that PNP closure is complete in most CS13 human embryos, and that two CS12 embryos exhibit both MHP and DLHPs in their PNPs. This raises the possibility that ‘Mode 2’ neural plate bending is typical of the late stages of human spinal neurulation, and that ‘Mode 3’ is mouse-specific and not seen in humans. Alternatively, our CS12 embryos may have been developmentally too early to show Mode 3 closure. Analysis of further human embryos with open PNPs should resolve this question.
 
 Our sectioning analysis along the body axis of CS14–15 human embryos revealed continuity of the neural tube from proximal (primary neurulation) to distal (secondary neurulation) levels. Indeed, it was not possible to locate with any certainty where the transition from primary to secondary neural tube had occurred. This closely resembles the mouse (Shum and Copp, 1996), but contrasts with the chick where a ‘transition zone’ occurs between primary and secondary neurulation. The chick primary (dorsal) and secondary (ventral) neural tubes overlap for a short length of the spinal axis (Dryden, 1980) and cells ingressing at the node-streak border participate in a distinct ‘junctional neurulation’ process with essential function of the Prickle-1 gene (Dady et al., 2014). Human ‘junctional neurulation’ has also been invoked as an explanation for an unusual form of spinal dysraphism where primary and secondary neural tubes are physically and functionally separated from each other, with no intervening neural tissue (Eibach et al., 2017). However, the lack of any evidence for ‘junctional neurulation’ in the present study of human embryos casts doubt on the proposed developmental origin of this rare dysraphic defect.
 
-## Mode of development of the human secondary neural tube
+### Mode of development of the human secondary neural tube
 
 Secondary neurulation in mouse and rat involves formation of a single ‘rosette’ structure caudally, in which cells aggregate (‘condense’) from the dorsal tailbud mesenchyme, with subsequent (more rostral) organisation of the cells around a single lumen. This process is driven by apical junction formation, not by cell death (Butcher, 1929; Schoenwolf, 1984; Kostović-Knezević et al., 1991; Nievelstein et al., 1993). In chick, by contrast, a caudal-to-rostral sequence of events occurs in which several independent lumens arise in the dorsal tailbud mesenchyme and, at more rostral levels, these coalesce to form the single lumen of the secondary neural tube (Criley, 1969; Schoenwolf and Delongo, 1980; Yang et al., 2003). Coalescence is a cell intercalation process driven by TGFβ/SMAD3 signalling (Gonzalez-Gobartt et al., 2021).
 
@@ -127,7 +303,7 @@ The mode of formation of the human secondary neural tube is controversial. Multi
 
 A limitation of previous studies is the paucity of information on the morphology of the secondary neural tube at specific rostro-caudal axial levels. To shed light on this question, we examined human embryonic tails with the aim of determining the axial sequence of secondary neurulation events. Our findings show that multiple lumens, if present, feature at relatively rostral (mature) levels of the secondary neural tube and are absent from the most caudal (immature) levels, close to the tailbud. This applies to embryos throughout the secondary neurulation process (CS13–17), and argues strongly against coalescence of chick-like multiple lumens as a feature of normal human secondary neurulation. A recent review has drawn the same conclusion (Catala, 2021). Hence, ‘splitting’ of the human secondary neural tube appears a common but not obligatory phenomenon, perhaps reflecting changes related to tail regression.
 
-## Tailgut: origin and mode of regression
+### Tailgut: origin and mode of regression
 
 The tailgut is an extension of the hindgut, beginning caudal to the level of the cloacal plate (future anus), which is located ventral to somite 29 in the mouse (Nievelstein et al., 1993). The tailgut forms and then regresses in both tailed (mouse, rat) and non-tailed (chick, human) animals. Interestingly, human tailgut loss has been described as involving rostral-to-caudal degeneration rather than a more intuitive caudal-to-rostral loss (Kunitomo, 1918; Fallon and Simandl, 1978). Consistent with this, the tailgut lumen persists longest at the tail tip in rat (Butcher, 1929; Qi et al., 2000) and mouse (Nievelstein et al., 1993). Our finding of a rostral-to-caudal diminution in tailgut size and cell number is consistent with tailgut loss at rostral before caudal levels also in human embryos.
 
@@ -135,56 +311,136 @@ In contrast to the consensus on tailgut regression, there is disagreement over t
 
 The question of tailgut origin can also be considered in light of the identification of NMPs: the stem cell population for tissues of the caudal embryonic region (Wilson et al., 2009; Wymeersch et al., 2021). A retrospective clonal analysis found gut endoderm only as part of rostrally derived clones, unlike neural tube and paraxial mesoderm that were represented in clones extending into the tailbud at E10.5 (Tzouanacou et al., 2009). This led to the idea that NMPs are bipotential, forming neural and paraxial mesodermal derivatives, whereas the endodermal lineage is set aside separately, early in gastrulation. These findings are consistent with results of DiI-based lineage tracing and tissue grafting experiments (Cambray and Wilson, 2002; Cambray and Wilson, 2007) which show that the NMP population at the chordoneural hinge region of the tailbud is fated to form neural and mesodermal derivatives, but not tailgut. Further support for this concept comes from the finding of a proliferative zone at the hindgut tip, which is required to generate the colon by caudally directed gut extension (Garriock et al., 2020). It will be interesting to determine whether a similar mechanism underlies tailgut development.
 
-## Mechanism of cessation of tail elongation
+### Mechanism of cessation of tail elongation
 
 Termination of axial elongation is highly species-specific, occurring in embryos with fewer than 40 somites in human (Table 2), at ~52-somite stage in chick, and in embryos with 65 somites in rat and mouse (Olivera-Martinez et al., 2012). One question is whether the underlying molecular and cellular mechanisms are shared, despite these variations in timing, or are fundamentally different between species. Our findings with human embryos support a shared mechanism, as we find that expression of FGF8 and WNT3A are developmentally regulated in close relationship to the time-course of axial elongation, similar to that in rodent embryos. Moreover, cessation of tail growth in the mouse has been linked to a burst of apoptosis in the tailbud around E13.5 (Wilson et al., 2009), and we detected an analogous burst of apoptosis in the CS15 human tailbud. Hence, a similar mechanism may underlie growth termination of the much shorter human embryonic tail.
 
-## Type and timing of cell death during tail regression
+### Type and timing of cell death during tail regression
 
 While programmed cell death is recognised to participate in tail regression, the precise mode of cell death has been debated. In immunohistochemistry studies, it was concluded that apoptosis occurs only in the human cranial embryonic region, and non-apoptotic (‘necrotic-like’) death of tail structures was identified in the regressing human tail (Sapunar et al., 2001; Vilović et al., 2006). In contrast, cell death during chick tail regression was shown to involve caspase-dependent apoptosis (Miller and Briglin, 1996). Using anti-caspase 3 and TUNEL methods, we identified apoptosis in the human tail, with patterns of cell death occurring in a closely similar way between human and mouse embryos. We conclude that caspase-dependent apoptosis is the predominant mode of cell loss during tissue regression in the tails of both mouse and human.
 
-## Conclusions
+### Conclusions
 
 The findings of this study show a close parallel between human and rodent embryos in several features of low spinal development: completion of primary neurulation, transition to secondary neurulation, cellular mechanism of secondary neural tube formation, and molecular basis of cessation of tail elongation. In contrast, some aspects of chick low spinal development – often cited as an accurate model for human – are not represented in the human embryos, indicating the need for caution in extrapolating findings from birds and lower vertebrates to humans. The main differences between human and mouse/rat tail development relate to timing with, for example, formation of a new somite every 7 hr in humans, compared with 2 hr in mouse/rat, and termination of tail elongation at the 36- to 37-somite stage in human, compared with the 65-somite stage in tailed rodents. While tail regression occurs completely in human embryos, it is noteworthy that the tail of mouse/rat embryos also regresses partially, with loss of secondary neural tube and tailgut, despite maintenance of an overall tail structure. An intriguing observation is the presence of secondary neural tube splitting in apparently normal human embryos, whereas this is seen only under pathological conditions in rodents. Future work in human embryos and organoids may shed light on the mechanisms(s) of this phenomenon.
 
 ## Materials and methods
 
-## Human embryos
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>CD1</td>
+      <td>Charles River UK</td>
+      <td>Strain Code 022</td>
+      <td>https://emodels.criver.com/en/page/species</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human embryos)</td>
+      <td>Human embryos</td>
+      <td>MRC/Wellcome Human Developmental Biology Resource</td>
+      <td>NA</td>
+      <td>https://www.hdbr.org/</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-cleaved caspase-3 (Asp 175) antibody</td>
+      <td>Cell Signalling</td>
+      <td>Cat. No. 9661</td>
+      <td>Used at 1/1000 (wax sections) and 1/250 (cryosections)https://www.cellsignal.com/browse?categories=Primary%20Antibodies</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. No. A-31573</td>
+      <td>Used at 1/250 https://www.thermofisher.com/antibody/product/Donkey-anti-Rabbit-IgG-H-L-Highly-Cross-Adsorbed-Secondary-Antibody-Polyclonal/A-31573</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human FGF8 DNA sequence</td>
+      <td>NIH National Library of Medicine</td>
+      <td>NM_033165.5</td>
+      <td>https://www.ncbi.nlm.nih.gov/nuccore/NM_033165</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human WNT3A DNA sequence</td>
+      <td>NIH National Library of Medicine</td>
+      <td>NM_033131.4</td>
+      <td>https://www.ncbi.nlm.nih.gov/nuccore/NM_033131.4</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ApopTag Peroxidase In Situ Apoptosis Detection Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. S7100</td>
+      <td>https://www.merckmillipore.com/GB/en/product/ApopTag-Peroxidase-In-Situ-Apoptosis-Detection-Kit,MM_NF-S7100</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji software</td>
+      <td>ImageJ</td>
+      <td>Free downloads</td>
+      <td>https://imagej.net/software/fiji/downloads</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AxioVision v4.8.2 software</td>
+      <td>Carl Zeiss</td>
+      <td>410130-0600-000</td>
+      <td>https://www.fishersci.pt/shop/products/axiovision-rel-4-8-2-software/11875113</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human embryos
 
 All embryos were obtained from the MRC/Wellcome Human Developmental Biology Resource (HDBR; https://www.hdbr.org/) with UK ethics committee approval and written consent of donors. Embryos were collected on ice in L-15 medium, rinsed in phosphate-buffered saline (PBS), and fixed overnight at 4°C in 4% paraformaldehyde (PFA) in PBS. Embryos were assigned to CS using morphological criteria (O’Rahilly and Muller, 1987; Bullen and Wilson, 1997) and to 2-day post-conception intervals for regression analysis based on timings in Table 0-1 of O’Rahilly and Muller, 1987. Only embryos that had normal external morphology and a normal karyotype were included in the study. Screening for aneuploidy was performed on all embryos, either by conventional karyotyping or by quantitative fluorescent polymerase chain reaction (Badenas et al., 2010).
 
-## Mouse embryos
+### Mouse embryos
 
 Mouse studies were conducted under auspices of the UK Animals (Scientific Procedures) Act 1986 and the National Centre for the 3Rs’ Responsibility in the Use of Animals for Medical Research (2019). Random-bred CD1 embryos were collected from pregnant females between E10.5 and 14.5 (E0.5 is the day of finding a copulation plug). Embryos were dissected in Dulbecco’s modified Eagle’s medium, rinsed in PBS, and fixed in 4% PFA overnight.
 
-## Embryo measurements
+### Embryo measurements
 
 Measurements on human embryos were made post-fixation using an eyepiece graticule on a Zeiss SV6 stereomicroscope. Crown-rump length was measured as the maximum distance from the top of the head to the base of the spine. Tail length was measured along the ventral surface, from the tail tip to the point where the tail joined the trunk. The distance from the tail tip to the caudal edge of the caudal-most somite was also measured. Somites were counted in total or, where indistinct more rostrally, the total number was estimated by considering the somite immediately rostral to the hindlimb bud as somite 24. Analysis of PNP closure by somite stage (Figure 1I and J) was performed using archival embryo images, with PNP length measurements normalised to caudal somite length in the same embryo (both measured in pixels on photomicrographs).
 
-## H&E histology
+### H&E histology
 
 PFA-fixed caudal embryonic regions were dissected away from the remainder of the embryo and dehydrated through an ascending alcohol series to Histoclear (National Diagnostics), embedded in 56°C paraffin wax, and sectioned transversely at 7 µm thickness on a rotary microtome. For haematoxylin and eosin (H&E) staining, slides were dewaxed in Histoclear, and rehydrated through a descending alcohol series from 100% ethanol to water, then placed sequentially in: filtered Harris’s haematoxylin (3 min); running tap water (1 min); Scott’s Tap Water substitute (20 g sodium hydrogen carbonate+3.5 g magnesium sulphate in 1 l distilled water; ~3 s); running tap water (1 min); 95% ethanol (1 min); eosin (3 min); running tap water (1 min); 95% ethanol (1 min); 100% ethanol (2×1 min); Histoclear (2×5 min). Slides were mounted with DPX.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Initial studies used wax sections (Figure 3), and subsequently cryosections were used (Figure 4). For the latter, PFA-fixed tissue was dehydrated to 30% sucrose in PBS and stored at 4°C. Tissues were incubated for ~6 hr in 30% sucrose+7.5% gelatine in PBS at 56°C, positioned in the gelatine mix at room temperature and allowed to set, and stored at –80°C. Gelatine-embedded samples were sectioned on a cryostat at 15 µm thickness with a sample temperature of –23°C and an ambient temperature of –25°C. For staining, wax sections were rehydrated as for H&E, then blocked and incubated with antibodies as below. Cryosections were incubated in PBS at 37°C to melt the gelatine, and antigen retrieval was performed using a decloaking chamber. Slides were incubated at 110°C for 2 min in 10 mM sodium citrate+0.05% Tween 20 in water (pH 6), and then returned to room temperature. Slides were rinsed in PBS+0.1% Triton (PBST) and blocked for 1 hr in PBST+0.15% glycine+10% sheep serum. Blocking solution was removed, followed by incubation overnight at 4°C in primary antibody solution: rabbit polyclonal anti-cleaved caspase-3 (Asp175; Cell Signalling, Cat. No. 9661) diluted in PBST+1% sheep serum at 1:1000 for wax sections or 1:250 for cryosections. The next day, slides were washed 3× for 5 min each in PBST, then incubated in a humidity chamber for 1 hr in secondary antibody solution: 1:250 Alexa Fluor donkey anti-rabbit 647 (Thermo Fisher Scientific, Cat. No. A-31573). Slides were washed 3× for 5 min in PBST, counterstained for 5 min in 1:5000 DAPI, washed a final 2×5 min in PBS, and mounted using ProLong Gold Mountant (Thermo Fisher Scientific, Cat. No. P36930).
 
-## TUNEL staining
+### TUNEL staining
 
 TUNEL (Apoptag; Sigma-Aldrich) was performed according to the manufacturer’s instructions. Sections were counterstained with methyl green (Vector Labs, H-3402).
 
-## Morphometric analysis of embryo sections
+### Morphometric analysis of embryo sections
 
 All image analysis was carried out using Fiji Is Just ImageJ (FIJI) software (Schindelin et al., 2012). Area was calculated using the polygon tool. Nuclei were counted using the multi-point tool. Neural tube, notochord, and tailgut areas, and tailgut nuclear number, were plotted against total area of the tail section, as a measure of position along the rostro-caudal axis.
 
-## Whole-mount in situ hybridisation
+### Whole-mount in situ hybridisation
 
 Digoxigenin (DIG)-labelled mRNA probes for human FGF8 (reference sequence NM_033165.5) and WNT3A (reference sequence NM_033131.4) were designed for in situ hybridisation. Human embryos or isolated caudal regions were fixed in 10% formalin, washed in PBS with 0.1% Tween (PBT), and processed for whole-mount in situ hybridisation. Samples were bleached in 6% hydrogen peroxide, digested in a 5 µg/ml proteinase K-PBT solution, followed by a wash in 2 mg/ml glycine, and subsequently fixed in 0.2% glutaraldehyde made up in 4% PFA. Samples were then incubated in pre-hybridisation mix (50% formamide, 1% sodium dodecyl sulfate [SDS], 5× saline sodium citrate [SSC], 50 µg/ml yeast tRNA, and 50 µg/ml heparin), and hybridised with the corresponding DIG-labelled mRNA probes overnight at 70°C. Hybridised probes were fixed using fixative wash solutions (solution 1: 50% formamide, 5× SSC, and 1% SDS at 70°C; and solution 2: 50% formamide, 2× SSC, and 1% SDS at 65°C). The samples were then blocked in 10% heat inactivated sheep serum, and incubated with anti-DIG-alkaline phosphatase antibody (Roche) solution. Development of the colour signal was carried out in nitrotetrazolium blue and 5-bromo-4-chloro-3-indole solution. Whole-mount images were taken using a DFC490 camera (Leica) connected to a Stemi SV11 stereomicroscope (Zeiss), and then embedded in gelatin-albumin for vibratome sectioning at a thickness of 40 µm. Sections were imaged using AxioVision v4.8.2 software on an Axioplan 2 microscope (Zeiss).
 
-## Statistical analysis
+### Statistical analysis
 
 Linear regression analysis (Figure 1) and one-way analysis of variance on ranks (Figure 2) were performed using Sigmaplot v14.5.
 
-## Systematic literature review (Supplementary file 1)
+### Systematic literature review (Supplementary file 1)
 
 PubMed (https://pubmed.ncbi.nlm.nih.gov/) was searched for a variety of term combinations that included: human, embryo, embryonic development, neuropore, primary neurulation, secondary neurulation, neural tube, organogenesis, tail, transcrptomics, gene expression. Retrieved papers were scanned for relevance sequentially using the title, abstract, and full text, with non-qualifying papers dismissed at each stage. Additional relevant papers were identified from the bibliographies of the retrieved papers. Qualifying papers (n=28) were those that presented original data on human low spinal/tail development, using embryo samples not described in other studies.

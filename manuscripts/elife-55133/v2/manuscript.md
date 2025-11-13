@@ -31,11 +31,94 @@ To explore the extent and severity of this problem, we examined 240 original res
 
 Articles about developmental biology and cell biology contained the highest proportion on images, whereas articles about immunology had the lowest (Table 1). While the number of figures in an article is a coarse metric that does not address how critical the information provided in a figure is for the conclusions reported in the article, it is an objective and quantifiable metric. It is also important to note that many of the articles contained supplemental videos, further stressing the importance of imaging in biomedical research.
 
-## Methods for imaging experiments are described briefly, if at all
+**Table 1.**
+ Evaluation of the reporting of imaging methods in biomedical journals.The first column lists journal name, number of articles with images, number of articles evaluated, and the percentage of articles with images. The second column lists the percentage of figures (main and supplemental) that contain original images or quantification of imaging data. The third column lists the percentage of text in the materials and methods sections devoted to imaging (for the 185 articles that contained images). The fourth column lists the percentage of the articles containing images that pass the methods quality test (see Materials and methods for details of this test). Total developmental biology includes three journals (Dev. Biol., Development, and Dev. Cell); total immunology includes two journals (Nature Immunology and J. Immunology). * Five articles containing MRI and X-ray images were not included in the quality evaluation, so the sample for this analysis is 180 papers. Supplementary file 1 contains a list of all the articles analyzed and details for each article.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Journal (articles with imaging/total articles, percentage)</th>
+      <th>Imaging figures (%)</th>
+      <th>Imaging methods (%)</th>
+      <th>Pass methods quality (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Developmental Biology (29/30, 99%)</td>
+      <td>79</td>
+      <td>4.2</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Development (28/28, 100%)</td>
+      <td>75</td>
+      <td>7.0</td>
+      <td>14.3</td>
+    </tr>
+    <tr>
+      <td>Developmental Cell (32/32, 100%)</td>
+      <td>69</td>
+      <td>4.8</td>
+      <td>9.4</td>
+    </tr>
+    <tr>
+      <td>J Cell Biology (29/30, 97%)</td>
+      <td>72</td>
+      <td>10.1</td>
+      <td>37.9</td>
+    </tr>
+    <tr>
+      <td>Nature Immunology (18/29, 62%)</td>
+      <td>22</td>
+      <td>5.5</td>
+      <td>11.1</td>
+    </tr>
+    <tr>
+      <td>J Immunology (17/31, 55%)</td>
+      <td>21</td>
+      <td>2.3</td>
+      <td>5.9</td>
+    </tr>
+    <tr>
+      <td>J Neuroscience (18/30, 60%)</td>
+      <td>37</td>
+      <td>7.8</td>
+      <td>7.1</td>
+    </tr>
+    <tr>
+      <td>Biophysical Journal (14/30, 47%)</td>
+      <td>28</td>
+      <td>10.2</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <td>Total developmental biology (89/90, 99%)</td>
+      <td>74</td>
+      <td>5.2</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>Total immunolgy (35/60, 58%)</td>
+      <td>21</td>
+      <td>4.6</td>
+      <td>8.6</td>
+    </tr>
+    <tr>
+      <td>Total (185/240)</td>
+      <td>52</td>
+      <td>6.7</td>
+      <td>16.7(*)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Methods for imaging experiments are described briefly, if at all
 
 Table 1 also shows the fraction of the materials and methods section that was devoted to imaging in the 185 articles that contained images. On average just 138 words (7% of the total text in the materials and methods section) was used to describe the details of image acquisition, which seems low given the extent of the imaging results reported, and the fraction for the three developmental biology journals was even lower (5%), despite the high numbers of images in these journals. Moreover, the fractions of text devoted to imaging are over estimates as it was sometimes necessary to include the description of sample preparation in the word count for image acquisition. And somewhat alarmingly, 11 articles (with a total of 56 figures with images) contained no information whatsoever on image acquisition. Setting this group aside, it is possible that an imaging technique can be adequately described in fewer words than, say, a technique in biochemistry, genetics or molecular biology. However, regardless of the word count, it was apparent that many of the articles in our sample did not contain enough information about imaging experiments to allow these experiments to be repeated.
 
-## Few articles contain the information required to replicate the imaging experiments
+### Few articles contain the information required to replicate the imaging experiments
 
 We also assessed the reporting of three crucial aspects of image acquisition: i) the characteristics of the objective lens used for imaging, a critical determinant of magnification and optical resolution; ii) the digitization parameters that determine image resolution (image voxel size); iii) the spectral settings for fluorescence imaging that allow efficient signal acquisition and channel discrimination. A combined pass/fail score was then assigned (see 'Imaging materials and methods quality evaluation' in Materials and methods). Table 1 shows that the overall quality of the information provided is very poor, with less than one in five articles (16.7%) passing the test: the pass rate varied from 3% (for Developmental Biology) to 50% (for the Biophysical Journal).
 
@@ -43,13 +126,13 @@ It must be stressed that our quality test was of very low stringency. The inform
 
 It is worth noting that all the examined journals state in their instructions to authors that enough information must be provided to allow critical evaluation and replication of the results. Assessment of the suitability of other segments of the materials and methods section in these publications is beyond the scope of our study. However, spot-checks suggest a much more careful approach to the reporting of molecular biology experiments, with extensive tables of oligonucleotides and antibodies and detailed experimental conditions.
 
-## Reporting of sample preparation methods has improved, but more work is needed
+### Reporting of sample preparation methods has improved, but more work is needed
 
 One noticeable improvement brought about by the implementation of the new reporting requirements by some journals is the detailed description of antibodies and their sources. This is a critical aspect of sample preparation and reproducibility in immunofluorescence studies, but by no means the only one. Tissue harvesting and fixation and permeabilization conditions affect sample integrity (Schnell et al., 2012). Probing and washing steps and the nature of the mounting/imaging medium critically influence the quality of the images obtained (Boothe et al., 2017; Fouquet et al., 2015). Quantifying the extent to which these parameters are reported goes beyond the scope of the present study, but we did look at sample preparation for electron microscopy (EM) images because minor differences in sample processing can result in major differences in tissue ultrastructure that are harder to notice by optical methods. We found that only 4 of the 14 papers with EM images included sufficient detail to allow sample preparation to be replicated. The issues ranged from not giving any details, to pointing to inappropriate references or lacking important method details such as durations, concentrations, pH and so on. The complete reporting of sample preparation methods in optical microscopy is equally critical, particularly as optical 'super resolution' techniques begin to bridge the gap between optical and electron microscopy (Gwosch et al., 2020; Pereira et al., 2019).
 
 While reporting of sample preparation details has improved, the adoption of STAR methods by Developmental Cell in 2017 has not resulted in adequate reporting of image acquisition details. In our dataset only 9% of the Dev. Cell articles provided enough experimental information to attempt replication of the imaging experiment. Similarly, despite Nature Immunology using the Nature Research Life Sciences Reporting Summary, only 11% of the articles passed the test (Table 1). It appears these new reporting requirements do not cover imaging appropriately.
 
-## Image processing and analysis are rarely described in detail
+### Image processing and analysis are rarely described in detail
 
 A final observation is that many articles contained little or no information about the procedures used for image processing, analysis, or quantification. We have not performed a quantitative analysis of this area because of the difficulty in creating a scoring matrix for a widely variable set of analysis procedures. The critical issue is that identical images can be processed in multiple ways, and many different algorithms can be used for segmentation, so the resulting quantification can be different (Botvinik-Nezer et al., 2020). Without knowing the processing steps the image went through between acquisition and quantification, it is not possible to replicate the quantitative analysis. Proper reporting of image analysis requires a detailed description of the ways the image has been processed and the parameters used, followed by details of segmentation and quantification. It is imperative that researchers keep track of the steps and report them fully and accurately in their publications: see Hofbauer et al., 2018 for a good example of how to report these details. Unfortunately, most image-analysis programs do not record these processing steps in the metadata of images. An exception to this is OMERO (Allan et al., 2012), a free, open-access image repository that allows image processing and analysis while keeping track of the image manipulations.
 
@@ -79,19 +162,19 @@ Ultimately, the enforcement of standards will have to fall on publishers and fun
 
 ## Materials and methods
 
-## Article selection
+### Article selection
 
 Issues from late 2018 and early 2019 of Development, Developmental Biology, Developmental Cell (developmental biology journals), Journal of Immunology, Nature Immunology (immunology journals), Journal of Cell Biology, Biophysical Journal, and Journal of Neuroscience were randomly selected. All original research articles in an issue were selected up to 30 articles per publication. If there were less than ~30 articles per issue, consecutive issues were used until reaching that number. Reviews, commentaries and editorials were not used in this analysis. We analyzed a total of 240 articles.
 
-## Figure classification
+### Figure classification
 
 All content of the articles was included in the analysis, including supplementary text and figures. For the purposes of this study, we considered all optical and electron microscopy images and all preclinical animal imaging when assessing the extent of imaging used. Images of western blots, polyacrylamide gels, phosphorimagers and the like were not included. The number of figures in the main text and supplemental information were assigned as imaging figures if any of the panels in the figure contained an original image (not a cartoon or line diagram, schematics etc.). Figures that contained quantification of imaging data were also considered imaging figures, even if no images were displayed. Conversely, plots, graphs, and figures rendering data derived form other primary techniques, such as modeling, flow cytometry or western blots, were not considered imaging figures. To control for over estimation of the imaging content of an article, the main figures in 12 articles of an issue of Development were quantified on a panel-by-panel basis. Each panel in a figure (A, B, etc.) was assigned to imaging or not as above. The 12 articles thus analyzed contained 94 primary figures and 641 panels. 85 of the figures (90%) and 558 of the panels (87%) were classified as imaging. As we did not find a pronounced difference in the extent of imaging usage between the two methods of evaluation (whole figure and panel classifications), we stuck to the simpler whole figure classification for our analysis. All articles in a journal were used to determine the ratio of imaging to total figures, including those that did not contain any imaging data.
 
-## Imaging materials and methods quantification
+### Imaging materials and methods quantification
 
 The whole materials and methods section of the main text and supplementary materials were considered. The STAR Methods section (excluding the key resources table) was included for Developmental Cell. The Life Sciences Reporting Summary in Nature Immunology was not included because it contains a lot of boilerplate text that is not relevant in all articles. All the text was put together and subject to word counting in Word (Microsoft). All the portions of the materials and methods section that contained information on image acquisition were extracted and separately counted. Text devoted to sample preparation prior to image acquisition (for example, antibodies used, or immunofluorescence protocols) or to image analysis was not counted unless inextricably interwoven with the image acquisition description. Similarly, text about western blots etc. was not counted (as western blots etc. were not considered as images for the purposes of our study). To quantify the ratio of text about imaging to total materials and methods text, only articles that contained imaging were considered (185 out of the initial 240 articles).
 
-## Imaging materials and methods quality evaluation
+### Imaging materials and methods quality evaluation
 
 Knowing the imaging word count in Materials and methods turned out not to be very informative, as some texts were devoid of usable information (see below). To address this issue, the imaging information was evaluated qualitatively in three separate aspects.
 

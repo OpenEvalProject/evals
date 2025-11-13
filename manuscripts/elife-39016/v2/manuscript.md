@@ -37,7 +37,7 @@
 
 ## Abstract
 
-10.7554/eLife.39016.001 Retrogradely-transported neurotrophin signaling plays an important role in regulating neural circuit specificity. Here we investigated whether targeted delivery of neurotrophin-3 (NT-3) to lumbar motoneurons (MNs) caudal to a thoracic (T10) contusive spinal cord injury (SCI) could modulate dendritic patterning and synapse formation of the lumbar MNs. In vitro , Adeno-associated virus serotype two overexpressing NT-3 (AAV-NT-3) induced NT-3 expression and neurite outgrowth in cultured spinal cord neurons. In vivo , targeted delivery of AAV-NT-3 into transiently demyelinated adult mouse sciatic nerves led to the retrograde transportation of NT-3 to the lumbar MNs, significantly attenuating SCI-induced lumbar MN dendritic atrophy. NT-3 enhanced sprouting and synaptic formation of descending serotonergic, dopaminergic, and propriospinal axons on lumbar MNs, parallel to improved behavioral recovery. Thus, retrogradely transported NT-3 stimulated remodeling of lumbar neural circuitry and synaptic connectivity remote to a thoracic SCI, supporting a role for retrograde transport of NT-3 as a potential therapeutic strategy for SCI.
+Retrogradely-transported neurotrophin signaling plays an important role in regulating neural circuit specificity. Here we investigated whether targeted delivery of neurotrophin-3 (NT-3) to lumbar motoneurons (MNs) caudal to a thoracic (T10) contusive spinal cord injury (SCI) could modulate dendritic patterning and synapse formation of the lumbar MNs. In vitro, Adeno-associated virus serotype two overexpressing NT-3 (AAV-NT-3) induced NT-3 expression and neurite outgrowth in cultured spinal cord neurons. In vivo, targeted delivery of AAV-NT-3 into transiently demyelinated adult mouse sciatic nerves led to the retrograde transportation of NT-3 to the lumbar MNs, significantly attenuating SCI-induced lumbar MN dendritic atrophy. NT-3 enhanced sprouting and synaptic formation of descending serotonergic, dopaminergic, and propriospinal axons on lumbar MNs, parallel to improved behavioral recovery. Thus, retrogradely transported NT-3 stimulated remodeling of lumbar neural circuitry and synaptic connectivity remote to a thoracic SCI, supporting a role for retrograde transport of NT-3 as a potential therapeutic strategy for SCI.
 
 ## Introduction
 
@@ -53,25 +53,57 @@ Here, we examined whether focal injections of adeno-associated virus serotype tw
 
 ## Results
 
-## AAV-NT-3 gene transfer enhanced NT-3 expression and neurite outgrowth of spinal cord neurons in vitro
+### AAV-NT-3 gene transfer enhanced NT-3 expression and neurite outgrowth of spinal cord neurons in vitro
 
 We first determined the efficiency of AAV infection in spinal cord neurons in vitro (Figure 1A). We found that AAV-GFP infection in spinal cord neurons was highly efficient (infection rate: 87.4 ± 6.34%; Figure 1A and B). Next, we determined the expression of NT-3 in the AAV-NT-3 transfected spinal cord neurons using immunofluorescence staining and an enzyme-linked immunosorbent (ELISA) assay. In AAV overexpressing green fluorescent protein (AAV-GFP)-infected control cells, low-level NT-3 expression and baseline neurite outgrowth profiles (stained with βIII-tubulin) were observed (Figure 1C, arrows). In contrast, NT-3 expression and neurite outgrowth in AAV-NT-3-treated cultures were markedly increased (Figure 1D, arrows). AAV-NT-3 infection significantly enhanced NT-3 expression (Figure 1E, t = 9.967, df = 15, p<0.0001) and neurite length of spinal cord neurons (Figure 1F, t = 4.273, df = 73, p<0.0001), as compared to the AAV-GFP controls. At both 5 and 9 days in vitro, conditioned medium from the control spinal cord neurons treated with the phosphate buffered saline (PBS) or AAV-GFP had almost no detectable levels of NT-3, as assessed by ELISA (Figure 1G). However, cells receiving AAV-NT-3 demonstrated a significant increase in NT-3 protein expression as compared to the PBS and AAV-GFP groups at 5 days and 9 days in culture (Fig. 1G, F2, 6 = 104.4, F2, 6 = 42.17, p<0.001).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig1-v2.jpg)
+
+**Figure 1.:** (A) AAV-GFP infected spinal cord neurons (green) counterstained with DAPI (blue) in vitro. (B) AAV-GFP infection in spinal cord neurons was highly efficient (infection rate: 87.4 ± 6.34%). (C and D) Representative immunofluorescent staining shows triple labeling of NT-3 (red, arrows), βIII-Tubulin (green, for neuronal cell bodies and dendrites, arrows), and DAPI (blue, a nuclear dye) in spinal cord neurons in the AAV-GFP group (C) and AAV-NT-3 group (D) (n = 8 wells/group). (E and F) Quantitative analyses of NT-3 expression (E) and dendrite length (F) in spinal cord neurons based on immunofluorescent staining shown in C and D. (G) NT-3 concentration measured by ELISA in spinal cord neurons at 5 and 9 days in culture after addition of PBS, AAV-GFP and AAV-NT-3 (n = 3 mice/group). Error bars show mean ± SD. *** p < 0.001, Student’s t tests, One-way ANOVA, Tukey’s post hoc test. Scale bars: A, 100 μm; C and D, 50 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); DAPI, 4’,6-diamidino-2-phenylindole; ELISA, enzyme-linked immunosorbent assay; GFP, green fluorescent protein; NT-3, neurotrophin-3; PBS, phosphate buffered saline; SD, standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Representative time-lapse imaging of neurite outgrowth of spinal cord neurons in AAV-GFP (A) and AAV-NT-3 (B) groups. (C–F) Timestamp indicates time in days. Data represent neurite length (C), neurite branch points (D), neurite length/cell body (E), and neurite branch/cell body (F) (n = 8 wells/group). Scale bar, 100 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); GFP, green fluorescent protein.
+
 To test the effect of AAV-NT-3 on neurite outgrowth of spinal cord neurons in real time, we captured time-lapsed images of spinal cord neurons using an IncuCyte ZOOM Kinetic Imaging System. We measured the morphological parameters based on the contrast images of the spinal cord neurons treated with AAV-GFP (Figure 1—figure supplement 1A) and AAV-NT-3 (Figure 1—figure supplement 1B) acquired every 4 hr for 5 days. AAV-NT-3 dramatically promoted increases in neurite length (Figure 1—figure supplement 1C), neurite branch points (Figure 1—figure supplement 1D), neurite length/cell body (Figure 1—figure supplement 1E), and neurite branch/cell body of spinal cord neurons (Figure 1—figure supplement 1F). These results demonstrate that AAV-NT-3 transfection promoted NT-3 expression in spinal cord neurons resulting in robust neurite outgrowth of these neurons as compared to the controls transfected with AAV-GFP in vitro.
 
-## Lysolecithin induced transient demyelination of the sciatic nerve facilitating AAV-NT-3 infection efficiency without causing prolonged neurological deficits
+### Lysolecithin induced transient demyelination of the sciatic nerve facilitating AAV-NT-3 infection efficiency without causing prolonged neurological deficits
 
 We previously demonstrated that lysolecithin-induced transient demyelination facilitated the infection of motoneurons and dorsal root ganglion (DRG) neurons following adenovirus injections into the sciatic nerve (Zhang et al., 2010). We tested whether the same strategy could enhance AAV-NT-3 infection in the sciatic nerve. We injected a mixture of AAV-GFP and AAV-NT-3 (ratio = 1:1) into the same site of sciatic nerves at 5 days after the lysolecithin injection (Figure 2C). Three days after the viral vector injection, mice were sacrificed and longitudinal-sections of the sciatic nerve were examined. P0 (a marker for peripheral myelin) staining showed that demyelination extended approximately 8.42 ± 2.22 mm proximodistally centered at the injection site (Figure 2—figure supplement 1A). Compared to the non-treated control group, the lysolecithin treatment significantly increased GFP expression (five-fold, t = 5.826, df = 8, p<0.0001; Figure 2—figure supplement 1D) and decreased P0 expression (6-fold, t = 6.324, df = 8, p<0.0001, Figure 2—figure supplement 1E). However, axons, identified by neurofilament 200 (NF200) immunoreactivity (IR), remained intact and were not affected by lysolecithin-induced demyelination (t = 1.065, df = 8, ns, compared to the PBS-injected control, Figure 2—figure supplement 1A,I). Five weeks after viral vector injection, no significant differences in P0 expression were found between lysolecithin injected and non-injected groups (t = 0.711, df = 8, ns, Figure 2—figure supplement 1F,J). However, in the lysolecithin-injected group that received an AAV-NT-3 infection, a significant increase in NT-3 expression in the sciatic nerve was found as compared to the PBS injected group (t = 5.282, df = 8, p<0.001, Figure 2—figure supplement 1K). Notably, Basso Mouse Scale (BMS) locomotor test showed transient locomotor deficit at 1 day post lysolecithin injection (t = 3.841, df = 8, p<0.01), but was quickly returned to control levels at 7 and 14 days post-injection (7d: t = 2.86, df = 8, ns; 14d: t = 1.342, df = 8, ns; Figure 2—figure supplement 1L). These results collectively indicate that lysolecithin injection induced transient demyelination which effectively eliminated the infection barrier formed by the myelin sheath and facilitated AAV-NT-3 entry into the sciatic nerve axons. It is also important to note that the lysolecithin injection did not damage passing axons and no animals sustained any prolonged neurological deficits.
 
-## AAV-NT-3 was retrogradely transported to lumbar motoneurons, expressed, and released by transduced motoneurons after the sciatic nerve transfection
+![Figure 2.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental timeline. (B) Schematic drawing shows the experimental design. A spinal cord contusion injury was made at T10. AAV-NT-3 was injected into the sciatic nerve to allow retrograde transport of NT-3 to lumbar MNs. Retrograde tracers CTB or HRP were injected into the Tibialis Anterior muscle. Descending serotonergic (5-HT+), dopaminergic (TH+), and propriospinal (dPST) axons were examined in their sprouting and synaptogenesis on lumbar MNs. (C) Photograph of the sciatic nerve injection. The exposed nerve was loosely held with arch-tipped forceps to prevent lateral nerve movement. Intraneural injection was performed using a 32-gauge needle attached to a Hamilton syringe. Abbreviations: 5-HT, 5-hydroxytryptamine; AAV, adeno-associated virus (serotype 2); BDA, biotinylated dextran amine; BMS, Basso Mouse Scale; CTB, cholera toxin B; d, day; HRP, horseradish peroxidase; L, lumbar; LMN, lumbar motoneurons; NT-3, neurotrophin-3; SCI, spinal cord injury; SN, Sciatic nerve; tcMMEP, transcranial magnetic motor-evoked potentials; TH, tyrosine hydroxylase.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative immunofluorescent staining for GFP (AAV infection, green), P0 (myelin, red), NF200 (axon, pink) and merge (with DAPI, blue) in a sciatic nerve longitudinal section at 3 days after lysolecithin injection. (A1) High magnifications of boxed areas shown in A. Scale bar in A, 2 mm; in A1, 50 μm. (B and C) Representative immunofluorescent staining for GFP (green), P0 (blue), NF200 (red) and merge in sciatic nerve cross sections in lysolecithin injected and control groups. Scale bar, 2 mm. (D and E) Compared with the control group, lysolecithin treatment significantly increased GFP expression (D), and decreased myelination (E). (n = 3 mice/group, bilateral sciatic nerve per mice). However, the lysolecithin injection did not affect axons (NF200, red A-C). (F) GFP (green), P0 (red), and merged (with DAPI, blue) images demonstrate long-term expression of GFP (indicative of effective AAV infection), and remyelination of sciatic nerve axons at 5 weeks after lysolecithin injection. Scale bar, 50 μm. (G–H) GFP (green), NT-3 (red), and merged (with DAPI, blue) images demonstrate the presence or absence of lysolecithin injection and corresponding NT-3 expression after AAV-NT-3 administration at 5 weeks after lysolecithin injection. Scale bars, 2 mm. (I and K) Five weeks after lysolecithin injection, there was no difference between the control and lysolecithin injected group in axon density (I, NF200) and myelination (J, P0). However, transient demyelination in the presence of AAV-NT-3 virus injection increased NT-3 expressed in sciatic nerves (K) (n = 3 mice/group, bilateral sciatic nerves per mice). Error bars show mean ±SD. *p < 0.05, **p < 0.01, Student’s t tests. (L) Transient BMS functional deficit was observed only at 1 day after lysolecithin injection, but such deficit was quickly recovered at 7 and 14 days post-injection. **p < 0.01 versus control. (n = 6 mice/group). Abbreviations: AAV, adeno-associated virus (serotype 2); DAPI, DAPI dihydrochloride; GFP, green fluorescent protein; NS, no significance; NT-3, neurotrophin-3; P0, P0 protein.
+
+### AAV-NT-3 was retrogradely transported to lumbar motoneurons, expressed, and released by transduced motoneurons after the sciatic nerve transfection
 
 To verify the retrograde transport of AAV from the site of sciatic nerve injection to the lumbar spinal cord MNs and their NT-3 expression, AAV-GFP and AAV-NT-3 were mixed (1:1 ratio) and injected into the transiently demyelinated sciatic nerves as described above. Five weeks later, immunostaining of transverse sections of the lumbar spinal cord ventral horn revealed AAV-GFP-labeled MNs (Figure 3A) as well as DRG axons innervating the dorsal gray matter (Figure 3A and Figure 3—figure supplement 1A). Within the L2-L5 DRGs, GFP expression was detected in the neuronal somata (Figure 3—figure supplement 1B), confirming the specificity of AAV-GFP expression in MNs, DRG neurons, and sensory axons (Zhang et al., 2010).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig3-v2.jpg)
+
+**Figure 3.:** (A) A photomicrographic image of a lumbar spinal cord (L2-5) cross section shows AAV-GFP labeled ventral horn motoneurons (also seen in the insert) and dorsal horn afferent sensory axons. (B and C) Immunofluorescent triple staining of NT-3 (red, arrows), GFP (green, arrows) and DAPI (blue) in the AAV-GFP (B) and AAV-NT-3 (C) groups. (D and E) Comparison in NT-3 relative density (D) and expression (E) between the AAV-NT-3 and AAV-GFP groups (n = 3 mice/group). Error bars show mean ± SD. ***p < 0.001, Student’s t tests. Scale bars: A, 200 μm; B, C, 50 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); DAPI, 4’,6-diamidino-2-phenylindole; ELISA, enzyme-linked immunosorbent assay; GFP, green fluorescent protein; NT-3, neurotrophin-3; SD, standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunofluorescent staining of a cross section of the lumbar spinal cord dorsal horn revealed expression of GFP in dorsal root sensory axons (green), counterstained with NeuN in dorsal horn neurons (red). (B) A cross section of the DRG shows DRG neurons (NeuN, red) co-localize with GFP (green), indicating that these neurons were transfected with AAV. (C) A cross section of the spinal cord shows retrogradely transported CTB (red) co-labeled with ChAT (a marker for MNs, green) in the lumbar spinal cord. (D–F) High magnification of boxed area in C. (G) High magnification of boxed area in F. Scale bars: A, 50 μm; B, 100 μm; C, 50 μm; insert in C, 20 μm. Abbreviations: ChAT, choline acetyltransferase; CTB, cholera toxin B subunit; DAPI, DAPI dihydrochloride; DRG, dorsal root ganglion; GFP, green fluorescent protein; MN, motoneurons.
+
 As anticipated, GFP expression was present in motoneurons in both the AAV-GFP and AAV-GFP/AAV-NT-3 mixed injection groups between the L2-L5 spinal cord segments (Figure 3B and C), indicating that the GFP and NT-3 molecules were retrogradely transported from the site of sciatic nerve injection to these lumbar motoneurons. NT-3 immunofluorescent density further revealed that the expression of NT-3 in the AAV-NT-3 injection group was significantly higher than that the AAV-GFP injection group (t = 6.695, df = 10, p<0.001, Figure 3D). Increased NT-3 in the L2-L5 lumbar spinal cord after the AAV-NT-3 transfection was also confirmed by the ELISA assay. The concentration of NT-3 in the lumbar spinal cord after sciatic nerve infection of AAV-NT-3 showed an 8-fold increase in the amount of NT-3 as compared to the AAV-GFP infection (t = 27.79, df = 4, p<0.001, Figure 3E). Thus, our data indicate that biologically active NT-3 can be retrogradely transported to lumbar motoneurons, and can be expressed and released by transduced motoneurons in the lumbar spinal cord after their retrograde transport. Our results were in agreement with a previous report using a similar approach (Zhang et al., 2010).
 
-## AAV-NT-3 infection facilitated behavioral and electrophysiological recoveries after a moderate contusive SCI in adult mice
+### AAV-NT-3 infection facilitated behavioral and electrophysiological recoveries after a moderate contusive SCI in adult mice
 
 A standardized 0.5 mm displacement contusion at 10th thoracic vertebral level (T10) induced a consistent moderate SCI in mice. No significant differences in the force, velocity, or injury time were observed among the control and treatment groups (Figure 4—figure supplement 1). Using this model and combined behavioral (BMS, rotarod, TreadScan) and electrophysiological (tcMMEP) assessments, we determined whether AAV-NT-3 treatment resulted in improved functional recoveries as compared to the AAV-GFP control (timeline, Figure 2). We found that AAV-NT-3 treatment resulted in a significant and progressive recovery of locomotion as compared to the AAV-GFP control group (Figure 4A). Repeated measures analysis of variance (ANOVA) revealed that the BMS scores at 4 and 5 weeks post-SCI in the AAV-NT-3 treated group were significantly higher than the AAV-GFP group (two-way ANOVA, time: F6, 162 = 245.2, p<0.001; column factor: F2, 27 = 298.3, p<0.001; Figure 4A and B). Significant effect of AAV-NT-3 treatment was found on the rotarod run time at 5 weeks post-SCI as compared to the control group receiving AAV-GFP (F2, 27 = 28.16, p<0.001; Figure 4C and D). TreadScan analysis (Figure 4E–H) demonstrated that administration of AAV-NT-3 significantly decreased footprint angle (F2, 27 = 9.19, p<0.001, Figure 4F) and improved footprint length (F2, 27 = 15.67, p<0.001, Figure 4G) and toe spread (F2, 27 = 9.45, p<0.001, Figure 4H) at 5 weeks post-SCI.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) AAV-NT-3 significantly improved Basso Mouse Scale (BMS) for locomotion at 4 and 5 weeks post-SCI. (C and D) AAV-NT-3 significantly increased rotarod run times at 5 weeks post-injury as compared to AAV-GFP. (E – H) TreadScan analyses show captured footprint images (E), and quantifications of footprint angle (F), footprint length (G), and toe spread (H). n = 10 mice/group, error bar = mean ± SD. **p < 0.01, ***p < 0.001, repeated measures two-way ANOVA, Tukey’s post-hoc test (BMS), One-way ANOVA, Kruskal–Wallis post-hoc test (rotarod and TreadScan). Abbreviations: AAV, adeno-associated virus (serotype 20; GFP, green fluorescent protein; NS, no significance; NT-3, neurotrophin-3; SCI, spinal cord injury; SD, standard error of the mean.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Examples of the force and impact velocity in a SCI + AAV GFP (A) and a SCI + AAV-NT-3 treated animals (B). (C–E) No statistical significant differences were found in the force (C), velocity (D), and injury time (E) between the two groups. n = 17 mice/group, two-tailed Student’s t-test.
 
 Electrophysiologically, transcranial magnetic motor evoked potentials (tcMMEP) recordings revealed three responses: (1) no response (NR, Figure 5D), early response (ER, Figure 5E), and late response (LR, Figure 5F); AAV-NT-3 treatment increased the number of ER as compared to the AAV-GFP control (χ2=0.833, p<0.001, Figure 5B). In both groups, the amplitudes of tcMMEP were significantly reduced, as compared to the sham group (Figure 5C). However, compared to the AAV-GFP group, the AAV-NT-3 group demonstrated significantly increased amplitude (ER: F2, 15 = 15.67, p<0.001; LR: t = 7.630, df = 10, p<0.001, Figure 5G) and decreased latency (ER: F2, 15 = 16.55, p<0.001; LR: t = 3.993, df = 10, p<0.01, Figure 5H) in early and late responses as compared to the AAV-GFP group after SCI. Thus, both behavioral and electrophysiological results indicate the positive influence of NT-3 on recovery of motor function after SCI.
 
@@ -79,37 +111,69 @@ Electrophysiologically, transcranial magnetic motor evoked potentials (tcMMEP) r
 
 **Figure 5.:** (A) tcMMEP set up. (B) Compared to the sham group, three types of tcMMEP responses, i.e. early response (ER), late response (LR), and no response (NR) were observed. AAV-NT-3 markedly increased the percent of early response. (C) Examples of normal response waveforms in the sham group. (D–F) Examples of no response (D), early response (E), and late response (F) waveforms in the AAV-GFP and AAV-NT-3 treatment groups at 5 weeks after SCI. (G and H) Compared to the control groups, AAV-NT-3 significantly increased the amplitude (G) and decreased the latency (H). n = 10 mice/group. *p < 0.05, **p < 0.01, ***p < 0.001, χ2 test (early response), One-way ANOVA, Kruskal–Wallis post-hoc; Student’s t tests (late response).
 
-## AAV-NT-3 infection had no effect on lumbar motoneuron number and somal size
+### AAV-NT-3 infection had no effect on lumbar motoneuron number and somal size
 
 To determine whether AAV-NT-3 infection affected MN number and somal size, we injected horseradish peroxidase conjugated to the cholera toxin B subunit (BHRP) into the anterior tibialis (TA) muscle and showed successful BHRP labeling in motoneurons in all groups. BHRP-labeled MNs were located in the lateral motor column of the L2-L5 spinal segments and their dendritic arbors were strictly unilateral with extensive ramification along the ventrolateral edges of the gray matter, the lateral funiculus, and throughout the ventral horn (Figure 6A). The number of MNs per animal labeled with BHRP (F2, 21 = 0.517, ns, Figure 6—figure supplement 1C) or stained with Thionin (F2, 15 = 0.541, ns, Figure 6—figure supplement 1B) did not differ across groups (Figure 6A, Figure 6—figure supplement 1A). The area of MN somata also did not differ across treatment groups (F2, 21 = 1.647, ns, Figure 6—figure supplement 1D). These results indicate that a thoracic contusive SCI did not cause lumbar MN loss and that AAV-NT-3 infection did no affect MN somal size.
 
-## AAV-NT-3 infection attenuated motoneuron dendritic atrophy
+![Figure 6.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig6-v2.jpg)
+
+**Figure 6.:** (A) Dark-field micrographs and matching computer-generated composites of transverse hemisections through the lumbar spinal cords of sham, SCI + AAV GFP, and SCI + AAV-NT-3 groups after BHRP injection into the tibialis anterior (TA) muscle. Computer-generated composites of BHRP-labeled somata and processes were drawn at 480 μm intervals through the entire rostrocaudal extent of the TA motor pool. Polar histogram of BHRP-labeled TA motoneuron dendrites was measured. (B) Length per radial bin of TA dendrites displayed a non-uniform distribution, with the majority of the arbor located between 300 ◦ and 120 ◦. Following SCI, dendritic lengths of these radial bins in the SCI + AAV GFP group reduced significantly. Treatment with AAV2-NT-3 attenuated these reductions. (C) The dendritic length per TA motoneuron was significantly reduced in the AAV-GFP group and treatment with AAV-NT-3 significantly attenuated this dendritic atrophy. (D and E) Strong correlation between dendrite length per cell and BMS (D) and rotarod (E) scores for sham, SCI + AAV GFP and SCI + AAV-NT-3 groups (n = 4/group). Error bars show mean ±SD. *p < 0.05, ***p < 0.001, One-way ANOVA, Kruskal–Wallis post-hoc (B, C); Pearson’s correlation coefficient (r value, (D, E). n = 4 mice/group. Scale bar in A, 200 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative sections show Thionin-stained motoneurons in the lumbar ventral horn among different treatment groups. (B–D) Quantitative analysis of the number of Thionin-labeled motoneurons (B), the number of BHRP-labeled motoneurons (C) and the area of BHRP-labeled motoneurons (E) (n = 6 mice/group). Error bars = mean ± SD. One-way ANOVA, Kruskal–Wallis post-hoc. Scale bars, 200 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); BHRP, cholera toxin B subunit; NS, no significance; NT-3, neurotrophin-3; SCI, spinal cord injury; SD, standard error of the mean.
+
+### AAV-NT-3 infection attenuated motoneuron dendritic atrophy
 
 To determine whether AAV-NT-3 had any effect on dendritic morphology, the BHRP-labeled dendritic arbors of TA MNs were measured by computer-generated composites and polar histograms (Figure 6A). Following the T10 contusive SCI which did not affect lumbar MNs directly, the dendritic length per lumbar TA MNs was significantly decreased. However, treatment with AAV-NT-3 significantly attenuated SCI-induced MN dendritic atrophy (F2, 15 = 47.96, p<0.001, Figure 6C).
 
 In the sham control, length per radial bin of TA MN dendrites displayed a non-uniform distribution, between 300 ° and 120 °. SCI induced a decrease in MN dendritic length in specific radial bins (Figure 6A and B). Treatment with AAV-NT-3 significantly attenuated SCI-induced reduction in MN dendritic length in specific radial bins (0 – 60 °, F2, 15 = 61.07, p<0.001; 60 – 120 °, F2, 15 = 11.59, p<0.001; 300 – 360 °, F2, 15 = 13.48, p<0.001, Figure 6B). Notably, there were strong correlations between the MN dendrite length per cell and both the BMS (r = 0.87, p<0.001, Figure 6D) and rotarod (r = 0.71, p<0.001, Figure 6E) of behavioral assessments, indicating that motor functional improvements were likely influenced by increased MN dendritic arbors.
 
-## AAV-NT-3 infection enhanced descending serotonergic, dopaminergic and propriospinal innervations of the lumbar MN pool
+### AAV-NT-3 infection enhanced descending serotonergic, dopaminergic and propriospinal innervations of the lumbar MN pool
 
 The mesencephalic dopaminergic neurons represent a vital neuromodulatory component essential for vertebrate motor control (Ryczko et al., 2016). Descending dopaminergic neurons are located in the A8, A9 and A10 groups of the mesencephalon and express the transmitter synthesizing enzyme tyrosine hydroxylase (TH) (Zaborszky and Vadasz, 2001). NT-3 has a wide range of effects on survival, biosynthetic activities and neuroprotective roles of dopaminergic neurons, likely via autocrine or paracrine mechanisms (Hyman et al., 1994; Seroogy et al., 1994). In the spinal cord neuropil, TH-IR axons are of supraspinal origin and project to and beyond the lumbar spinal cord. We found a significant reduction of TH-IR dopaminergic axons innervating the lumbar ventral horn neuropil after a contusive SCI at T10 (Figure 7A). Importantly, AAV-NT-3 infection resulted in a significant increase in the TH-IR axon density in the lumbar neuropil as compared to the AAV-GFP (F2, 15 = 7.59, p<0.001, Figure 7A and D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig7-v2.jpg)
+
+**Figure 7.:** (A–C) Representative images for TH+ dopaminergic axons (A, green), 5-HT+ serotonergic axons (B, green) and BDA+ dPST axons (C, green) in the lumbar motoneuron (MN) pool of different treatment groups at 5 weeks post-SCI. The lumbar MNs were retrogradely labeled with CTB (red) and counterstained with DAPI (a nuclear dye, blue). Inserts are high magnifications of boxed areas show synaptic-like structures established between TH-, 5-HT-, and dPST-labeled axons and CTB-labeled MNs (A-C, arrows). (D–F) Quantitative analyses of the TH+ relative integrated optical density (IOD)/mm2 (D), 5-HT+ IOD (E), and BDA+ IOD (F). n = 6 mice/group. Error bars, mean ± SD. *p<0.05, **p<0.01, One-way ANOVA, Kruskal–Wallis post-hoc. Scale bars, 50 μm; Box scale bars, 20 μm. Abbreviations: 5-HT, 5-hydroxytryptamine or serotonin; AAV, adeno-associated virus (serotype 2); BDA, biotinylated dextran amine; CTB, cholera toxin B subunit; DAPI, DAPI dihydrochloride; GFP, green fluorescent protein; NS, no significance; NT-3, neurotrophin-3; SCI, spinal cord injury; SD, standard error of the mean.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) BDA anterogradely-labeled dPST axons (green) innervating the lumbar MN pool (ChAT+, red) in both the SCI + AAV GFP and SCI + AAV-NT-3 groups. Inserts at high magnifications clearly show synaptic-like contacts between BDA+ dPST axons (green) and ChAT+ MNs (red) in merged images. (B) Terminals of BDA anterogradely-labeled dPST axons (green) express SYP (red), a presynaptic marker, indicating their formation of synaptic contacts on lumbar MNs in both the SCI + AAV GFP and SCI + AAV-NT-3 groups. Inserts at high magnification confirmed that BDA+ dPST axon terminals (green) co-localized with the presynaptic marker SYP (red). (C) After a T10 contusive SCI, spared dPST axons (BDA+, red) were found surrounding the lesion cavity (n = 6 mice/group). Scale bars: A and B, 50 μm; Box scale bars, 20 μm; C and D, 200 μm; Box scale bars, 50 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); BDA, biotinylated dextran amine; ChAT, choline acetyltransferase; dPST, descending propriospinal tract; GFP, green fluorescent protein; MN, motoneuron; NT-3, neurotrophin-3; SCI, spinal cord injury; SYP, synaptophysin.
 
 The descending serotonergic pathway plays an important role in mediating descending influences on locomotion (Bowker et al., 1983). Axons of this pathway originate mainly from the nucleus raphe obscurus, the nucleus raphe pallidus, and the nucleus raphe magnus of the caudal brainstem, express the transmitter serotonin (5-HT), and project to and beyond the lumbar spinal cord. After a contusive SCI at T10, descending serotonergic projections were partially damaged at the lesion site, but spared axons projected to the lumbar spinal cord and beyond. Indeed, we found a significant reduction of 5-HT-IR axon terminals in the lumbar ventral horn MN area (Figure 7B). Notably, AAV-NT-3 infection resulted in an about 1.5-fold increase in the 5-HT-IR axon density in the lumbar neuropil as compared to the AAV-GFP control group (F2, 15 = 8.50, p<0.01, Figure 7B and E).
 
 The descending propriospinal tract (dPST) axons also play an essential role in mediating motor function. Following SCI, the dPST may serve as a functional relay conveying supraspinal motor command down to the distal spinal cord (Courtine et al., 2008; Deng et al., 2013). To trace the course of dPST axons around the lesion and down to the lumbar motoneuron pool, we injected an anterograde tracer biotinylated dextran amine (BDA) into the intermediate gray matter of the T7-T8 cord segment rostral to a T10 contusion. We found that spared BDA-labeled dPST axons extended around the lesion through spared white matter (Figure 7—figure supplement 1C). At the lumbar spinal cord level, many BDA-labeled dPST axons were found in the ventral horn MN pool. Numerous dPST axon terminals formed contacts (Figure 7C) or synapse-like contacts (Figure 7—figure supplement 1A,B) on MNs at L2-L5 spinal cord levels. The number of dPST axons co-labeled with MNs/dendrites (Figure 7—figure supplement 1A) and synapse-like contacts (Figure 7—figure supplement 1B) were increased in the AAV-NT-3 treated animals relative to the non-treated controls (statistical data not shown). Consistent with 5-HT-IR and TH-IR axons, AAV-NT-3 treatment significantly increased the density of dPST axons in the lumbar MN pool as compared to the non-treated control group (F2, 15 = 8.89, p<0.01, Figure 7C and F). These results collectively indicate that AAV-NT-3 treatment enhanced synaptic inputs of descending supraspinal (serotonergic, dopaminergic) and propriospinal (dPST) axons to lumbar MNs that remained intact but underwent atrophy and synaptic stripping after a thoracic contusive SCI.
 
-## AAV-NT-3 infection enhanced synaptic contacts on lumbar MNs and their dendrites
+### AAV-NT-3 infection enhanced synaptic contacts on lumbar MNs and their dendrites
 
 To quantify the degree of synaptic stripping and reconnection, cholera toxin B subunit (CTB) was injected into the sciatic nerves to retrogradely label lumbar MNs at 28 days post AAV-NT-3 or AAV-GFP gene transfer. As anticipated, CTB was co-labeled with choline acetyltransferase (ChAT) in the lumbar ventral horn MNs and the CTB-labeled MN dendrites was more robust than the ChAT labeling (Figure 3—figure supplement 1C–G).
 
 Next, we used an automatic detection method to determine the density of synaptophysin (SYP, a major synaptic marker) in a perimeter of 5 μm-wide area surrounding the MN soma (Figure 8—figure supplement 1A, Figure 8A). We found that the SYP density around ChAT-labeled MNs in the SCI + AAV-NT-3 group was significantly higher than that of the SCI + AAV GFP group (t = 2.63, p<0.05, Figure 8—figure supplement 1B–C). In cross sections of the lumbar spinal cord, SYPs surrounding the MNs were decreased in the SCI + AAV GFP group as compared to the sham control group. AAV-NT-3 treatment prevented this decrease in SYP relative density (F2, 21 = 12.46, p<0.001, Figure 8A–B), increased the SYP density per MN soma per section (F2, 33 = 20.83, p<0.001, Figure 8C) as well as SYP density per dendritic segment per section (F2, 21 = 7.65, p<0.01, Figure 8D). Taken together, these results suggest that SCI induced reduction of synaptic contacts on motoneurons and their dendrites, and that NT-3 overexpression by MNs and their dendrites may enhance the synaptic formation or attenuated the loss of synapses on MNs and their dendrites.
 
-## AAV-NT-3 infection significantly reduced tibialis anterior muscle atrophy but had no effect on motor endplate density
+![Figure 8.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig8-v2.jpg)
+
+**Figure 8.:** (A) Confocal images show triple staining of CTB-labeled MNs (red), synaptophysin (SYP, a presynaptic marker, green), and DAPI (a nuclear dye, blue) in the lumbar MN pool of 3 treatment groups at 5 weeks post-SCI. High magnifications of boxed areas depict co-localization between SYP+ presynaptic terminals and lumbar MNs (white box, arrows) and their dendrites (yellow box, arrows), indicating of synaptic contacts. (B–D) Quantitative analyses of the SYP relative density (B), the number of SYP+ terminals per motor neuron per section (C), and the number of SYP+ terminals per dendrite per section (D). n = 6 mice/group. Error bars: mean ± SD. *p<0.05, **p<0.01, ***p<0.001, One-way ANOVA, Kruskal–Wallis post-hoc. Scale bars, 50 μm; Box scale bars, 20 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); CTB, cholera toxin B subunit; DAPI, DAPI dihydrochloride; GFP, green fluorescent protein; NS, no significance; NT-3, neurotrophin-3; SCI, spinal cord injury; SD, standard error of the mean; SYP, synaptophysin.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A). Automatic selection of the soma of CTB-labeled MNs. A fixed threshold was used for the detection of the immunostaining and determination of a circular perimeter surrounding the soma. (B and C) Representative immunofluorescence staining for ChAT+ MNs (red), SYP+ presynaptic terminals (green) and DAPI+ nuclear staining (blue) in the lumbar MN pool in both the SCI + AAV GFP (B) and SCI + AAV-NT-3 groups (C). Inserts in B and C show co-localization of SYP+ terminals (red) with ChAT+ lumbar MNs (D) n = 6 mice/group, two-tailed Student’s t-test. *p<0.05. Scale bars: B, C, 50 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); ChAT, choline acetyltransferase; DAPI, DAPI dihydrochloride; GFP, green fluorescent protein; NT-3, neurotrophin-3; SCI, spinal cord injury; SYP, synaptophysin.
+
+### AAV-NT-3 infection significantly reduced tibialis anterior muscle atrophy but had no effect on motor endplate density
 
 To assess whether AAV-NT-3 infection affect TA muscle atrophy, we scaled the TA muscle weight. Following SCI in the AAV-GFP group, TA muscle weight decreased by 33.4% as compared to the sham group, indicating that SCI induced TA muscle atrophy. However, the TA muscle weight in the AAV-NT-3 infected group increased 22.5% as compared to the AAV-GFP treated group after SCI (F2, 15 = 29.96, p<0.001, Figure 9C). TA muscle fiber diameter in the SCI + AAV GFP group was also significantly reduced as compared to the sham group (Figure 9A and D). Notably, AAV-NT-3 treatment significantly increased fiber diameter as compared to the AAV-GFP group following SCI (F2, 15 = 35.15, p<0.001, Figure 9D).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig9-v2.jpg)
+
+**Figure 9.:** (A and B) Cresyl Violet–Eosin (A) and acetylcholinesterase (B) staining in Sham, SCI + AAV GFP and SCI + AAV-NT-3 groups. (C – E) Quantitative analyses of TA muscle weight (C), fiber diameter (D) and endplate per fiber (E) (n = 6 mice/group). Error bars, mean ± SD. *p<0.05, **p<0.01, One-way ANOVA, Kruskal–Wallis post-hoc. Abbreviations: AAV, adeno-associated virus (serotype 2); GFP, green fluorescent protein; NS, no significance; NT-3, neurotrophin-3; SCI, spinal cord injury; SD, standard error of the mean; TA, tibialis anterior.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/39016/elife-39016-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A and B) Cresyl Violet–Eosin (A1-3) and Luxol fast blue stained (B1-3) cross sections through the injury epicenter show SCI-induced tissue damage and myelin loss. (C–E) Quantitative analyses show no statistically significant difference in the lesion area (C), lesion volume (D) and myelin sparing (E) between the two treatment groups (n = 6 mice/group). Error bars = mean ± SD. Student’s t tests, Scale bars, 300 μm. Abbreviations: AAV, adeno-associated virus (serotype 2); GFP, green fluorescent protein; NS, no significance; NT-3, neurotrophin-3; SCI, spinal cord injury; SD, standard error of the mean. Dataset 1. Statistical Report Summary.
+
 We also examined the density of motor endplates and found that they were unaffected by the contusive SCI in different treatment groups (F2, 21 = 0.465, ns, Figure 9B and E). Collectively, these results indicate that AAV-NT-3 infection significantly reduced TA muscle atrophy as compared to the AAV-GFP following SCI, with increased TA muscle weights and fiber diameters compared to the untreated controls.
 
-## AAV-NT-3 infection had no effect on the lesion size and myelin sparing at the site of a T10 contusive SCI
+### AAV-NT-3 infection had no effect on the lesion size and myelin sparing at the site of a T10 contusive SCI
 
 To assess whether AAV-NT-3 infection of lumbar motoneurons had any effect on lesion volume and tissue sparing at the site of contusion injury, we measured the percentage of lesion area in sections stained with Cresyl Violet and Eosin. Results showed that AAV-NT-3 treatment had no effect on the percentages of lesion area (t = 0.689, df = 10, ns, Figure 9—figure supplement 1A,C) and lesion volume (t = 0.073, df = 10, ns, Figure 9—figure supplement 1D) at the lesion site as compared to the AAV-GFP group. Similarly, Luxol Fast Blue staining showed no difference in the percent of myelin sparing area between the two groups (t = 0.255, df = 10, ns, Figure 9—figure supplement 1B,E) indicating that local infection of lumbar MNs had no effect on the lesion size and myelin sparing rostral to the lumbar neuropil.
 
@@ -117,19 +181,19 @@ To assess whether AAV-NT-3 infection of lumbar motoneurons had any effect on les
 
 The goal of this study was to determine whether targeted delivery of NT-3 to lumbar MNs caudal to a T10 contusive SCI could modulate lumbar neural circuitry, leading to functional recovery. In vitro studies demonstrated that AAV-NT-3 infection enhanced NT-3 expression on cultured spinal cord neurons and promoted dendrite outgrowth. In vivo, we showed that AAV-NT-3, after targeted delivery into transiently demyelinated sciatic nerves, was retrogradely transported to and released from lumbar MNs, contributing to the remodeling of lumbar motoneuron circuits and attenuation of SCI-induced lumbar MN dendritic atrophy and muscle atrophy. Moreover, NT-3 enhanced innervation and synaptogenesis of several descending axonal pathways on lumbar MNs. These morphological changes correlate well with behavioral and electrophysiological improvements after targeted delivery of NT-3. Thus, the work described herein is, to the best of our knowledge, the first demonstration of NT-3 as an effective regulator of lumbar spinal circuit caudal to an SCI, supporting a role for retrograde transport of NT-3 as a potential therapeutic strategy for SCI.
 
-## AAV-NT-3 effectively infected spinal neurons and promoted NT-3 expression in vitro
+### AAV-NT-3 effectively infected spinal neurons and promoted NT-3 expression in vitro
 
 For clinical relevance, we used an AAV-mediated gene transfer technique to deliver NT-3. The AAV-mediated gene delivery has been reported as the most promising therapeutic transgene delivery system for prolonged, safe, and effective neurotrophin delivery (Fortun et al., 2009; Petruska et al., 2010; Peng et al., 2011). Earlier investigators showed an effect of NT-3 on dendrite morphogenesis in brain slice cultures and in proprioceptive axon patterning (Ernfors et al., 1994; McAllister et al., 1995; Patel et al., 2003). Here we confirmed that the AAV serotype two virus could infect cultured spinal cord neurons effectively and promoted NT-3 expression in these neurons. The time-lapse study revealed that AAV-NT-3 promoted dendrite outgrowth and branching in these neurons, which is in accord with a previous report (Joo et al., 2014).
 
-## Retrogradely transported AAV-NT-3 enhanced NT-3 expression in transduced lumbar MNs
+### Retrogradely transported AAV-NT-3 enhanced NT-3 expression in transduced lumbar MNs
 
 We and others have reported that myelin provides a protective barrier to the nervous system that limits AAV viral infection (Zhou et al., 2003; Zhang et al., 2010; Hollis and Tuszynski, 2011). Notably, lysolecithin-induced transient demyelination significantly increases the transduction efficiency of AAV. Compared with direct injection of AAV-NT-3 into the lumbar MN region, which may cause direct damage and inflammation at the injection site, the sciatic nerve injection eliminates such damage and allows transducing a gene to specific populations of neurons. In the present study, AAV-NT-3 was injected into demyelinated sciatic nerves 5 days after SCI, a clinically-feasible timeframe. Our results clearly demonstrated that lysolecithin-induced transient demyelination could effectively reduce the myelin sheath barrier and facilitate AAV-NT-3 entry, simultaneously avoiding excessive inflammation, secondary cell death, vascular disruption, infection of other cell types (e.g., glial cells), and the release of inhibitory molecules in the lumbar spinal cord (Hollis and Tuszynski, 2011). After the transient demyelination, axons at the injection site remained intact. BMS results showed minor impairment immediately after lysolecithin injection, which was rapidly normalized by 7 days post-injection. Immunofluorescence staining confirmed the specificity of GFP expression in lumbar MNs as well as in DRG neurons and sensory axons after transient demyelination and AAV-GFP infection, agreeing with a previous report (Zhang et al., 2010). ELISA analysis showed increases in NT-3 in the lumbar cord in the group receiving AAV-NT-3 compared to the AAV-GFP at 5 weeks after SCI. These results support the notion that biologically active NT-3 can be expressed and released by transduced MNs in the lumbar spinal cord, indicating an effective transfection and retrograde transport of AAV-NT-3 after transient demyelination of the sciatic nerves.
 
-## Retrogradely transported AAV-NT-3 promoted behavioral and electrophysiological recoveries
+### Retrogradely transported AAV-NT-3 promoted behavioral and electrophysiological recoveries
 
 Our results showed a beneficial effect of retrogradely transported AAV-NT-3 on functional recovery after SCI. AAV-NT-3 treatment significantly promoted BMS locomotor recovery at 4 and 5 weeks post-SCI. The rotarod data suggest that AAV-NT-3 significantly improved coordination or fatigue resistance. The TreadScan results suggest that AAV-NT-3 significantly restored pre-SCI gait. In addition to the behavioral improvements, tcMMEP recordings show that AAV-NT-3 treatment resulted in an increase in the number of early responses, an increase in amplitudes, and a decrease in latencies in early and late responses at 5 weeks post-injury. These functional improvements correlated well with the improvement of several histological parameters of MNs, and attenuation of muscle atrophy.
 
-## Retrogradely transported AAV-NT-3 prevented dendritic atrophy
+### Retrogradely transported AAV-NT-3 prevented dendritic atrophy
 
 After SCI, surviving MNs caudal to the lesion responded to injury with marked dendritic retraction (Byers et al., 2012). Changes in dendritic morphological patterns have drawn a lot of interest, particularly because dendritic morphology is a critical determinant of neuronal function. We confirmed that spinal MNs caudal to the lesion site underwent marked reduction in their dendritic arbor, especially in the dorsomedial portion of the ventral horn where both reticulospinal and propriospinal projections terminate (Jones and Yang, 1985; Martin et al., 1985), and disruption of which resulted in hindlimb motor deficits (Loy et al., 2002). Therefore, the dendritic atrophy of MNs caudal to a SCI we observed may reflect deafferentation resulting from the loss of descending motor and propriospinal tracts. A significant finding of this study is that the dendritic atrophy correlates well with behavioral deficits, suggesting that dendritic atrophy is an important contributor to movement deficits.
 
@@ -137,7 +201,7 @@ A previous study reported that growing dendrites analogously require anterograde
 
 Motoneuron counts and somal size of TA MNs were not significantly affected by SCI, confirming that TA motoneurons caudal to the injury site remain morphologically intact and are not directly traumatized by the injury. Moreover, histological analysis showed no change in lesion area, volume, or myelin sparing in response to AAV-NT-3 treatment. A possible explanation of the lack of histological changes at the lesion site is that the T10 contusion level is rostral to the lumbar MNs and the retrogradely transported NT-3 did not reach the site of injury.
 
-## Retrogradely transported AAV-NT-3 enhanced descending axonal projection to and synaptic connection with lumbar motoneurons
+### Retrogradely transported AAV-NT-3 enhanced descending axonal projection to and synaptic connection with lumbar motoneurons
 
 We have previously reported that contusive SCI results in the concomitant loss of descending pathways (Liu et al., 2011). Following SCI, CST axons fail to regenerate through and beyond the lesion site (Sivasankaran et al., 2004; Liu et al., 2008). The CST function, however, could be mediated by its projection to other brainstem and spinal pathways that spared beyond the lesion site, which could provide a relay transmission for supraspinal motor commands. We found that after T10 contusion, the disrupted dPST axons extended around the contusion cavity through spared ventrolateral white matter. Furthermore, the overexpression of NT-3 in lumbar MNs enhanced projection of dPST axons to these neurons. These data indicate that NT-3 is capable of promoting dPST axons to make new synaptic connections with lumbar MNs or ameliorate the SCI-induced loss of motor neuron inputs. To dissect between the two possibilities, a time course study showing the loss and recovery of descending inputs or synaptic boutons would be required.
 
@@ -149,7 +213,7 @@ It is possible that NT-3 displayed direct growth-stimulating and chemo-attractiv
 
 A possible key step towards functional restoration in SCI is that AAV-NT-3 is ameliorating the SCI-induced loss of motor neuron inputs. One previous report demonstrated that AAV-NT-3 induced the strengthening of connections of ventral MNs and establishing novel functional synaptic connections from descending axons to the dorsomedial interneurons after thoracic contusion (Hunanyan et al., 2013). In our case, we found that AAV-NT-3 increased synaptic-like contacts on lumbar MNs and dendrites, suggesting that overexpression of NT-3 on MNs enhances synaptic input on lumbar MNs, potentially contributing to improved functional outcomes.
 
-## AAV-NT-3 treatment prevented atrophy of hindlimb muscles
+### AAV-NT-3 treatment prevented atrophy of hindlimb muscles
 
 In the present study, AAV-NT-3 treatment also increased TA muscle fiber diameter and prevented muscle atrophy. Motor endplate densities, however, appeared unaffected. The protection of muscle fibers could be a result of enhanced motoneuron activity, which could be caused by multiple actions of the NT-3 including the prevention of dendritic retraction, and enhanced neural circuitry on MNs. Alternatively, NT-3 could be anterogradely transported to the terminals of MNs innervating the TA muscle to exert its protective effect directly on the muscle. Preventing muscle atrophy is an important component to preserve functional limb use after SCI.
 
@@ -159,35 +223,162 @@ In conclusion, we have demonstrated that retrogradely transported AAV-NT-3 preve
 
 All procedures were approved by the Institutional Animal Care and Use Committee of Indiana University School of Medicine (IACUC # 11011) and Institutional Biosafety Committee (IBC #1556), and were strictly following the National Institutes of Health (NIH) Guide on humane care and the use of laboratory animals.
 
-## Viral vector preparation
+### Viral vector preparation
 
 An AAV-GFP virus containing both AAV serotype 2 Capsid and expressing GFP was prepared. GFP expression under the control of cytomegalovirus immediate-early promoter (CMV) (AAV-GFP, 1.0 × 1013 viral particles/ml; Vector Biolabs, Philadelphia, USA) was used as a control. Human NT-3 subcloned into an AAV vector cassette under the control of the CMV and containing a polyadenylation signal from human B-globin gene was prepared by the Smith Lab (Temple University, Philadelphia, USA; 1.0 × 1012 viral particles/ml).
 
-## Primary spinal cord neuronal culture
+### Primary spinal cord neuronal culture
 
 Primary spinal cord neurons were obtained from Sprague-Dawley (SD) rat embryonic day 15 (E15) pups according to a previously established protocol (Jiang et al., 2006). In brief, E15 rat spinal cords were isolated and placed in L15 medium (Wu et al., 2017). Meninges were carefully removed and spinal cords were cut into small pieces, dissociated by incubation in 0.05% trypsin/EDTA 15 min at 37°C and triturated every 5 min. The dissociated cells were washed with and triturated in 10% heat-inactivated fetal bovine serum (FBS), 5% heat-inactivate horse serum (HS), 2 mM glutamine-DMEM (all from Gibco, Grand Island, NY) and cultured in 10 cm plates for 30 min at 37°C to eliminate glial cells and fibroblasts. Neurons were plated on poly-L-lysine coated 48 well plates and incubated in a humidified atmosphere containing 5% CO2 at 37°C with 10% FBS +5% HS+2 mM glutamine DMEM (all from Gibco). After 16 hr, medium was replaced with serum free neurobasal medium with 2% B27 (Gibco), 1% N2 (Gibco) and 2 mM glutamine (Gibco). On day 3, 5 µM cytosine-β-D-arabinofuranoside (Sigma-Aldrich, Saint Louis, MO) was added for 24 hr to inhibit glia cell proliferation. Using this culture protocol, a purity of >89% spinal cord neurons was obtained by 7 days in vitro (DIV). All experiments were performed between 7 – 10 DIV.
 
-## AAV virus infection
+### AAV virus infection
 
 The amount of transducing units of the vector stocks was determined by infecting spinal cord neuron cells (Abdellatif et al., 2006). The number of cells that were transduced with AAV-GFP was determined under UV radiation using a Zeiss microscope co-culture over 2 days. Five microscopic fields were randomly chosen, and positive cells were counted and multiplied by the dilution factor and 3769 (the number of microscopic fields needed to cover the 6 cm dish when using a 20 × objective). Titers were all in the range of 1 × 1010 GM/ml.
 
-## Dynamic neurite outgrowth assay
+### Dynamic neurite outgrowth assay
 
 Spinal cord neurons were seeded at 2 × 105 per well in 48-well plates infected with AAV-GFP and AAV-NT-3 for 5 days. The dynamic outgrowth of neurites was recorded by an IncuCyte ZOOM Kinetic Imaging System (Essen BioScience, Ann Arbor, MI) every 4 hr for 5 days after virus treatment. Three views from each well were recorded and data were analyzed by an IncuCyte ZOOM software (Stewart et al., 2015) (n = 24 wells/group).
 
-## NT-3 enzyme-linked immunosorbent assay (ELISA) in vitro
+### NT-3 enzyme-linked immunosorbent assay (ELISA) in vitro
 
 To determine the amount of NT-3 produced by AAV vector-transduced cells, spinal cord neurons were seeded into 48-well plates (1.25 × 105 cells/well) for 5 days. On the 5th and 9th day, cells were infected with recombinant AAV-GFP (final concentration 6.7 × 108 viral particle/ml) and AAV-NT-3 (1.3 × 109 viral particle/ml) at a multiplicity of infection (150 μl/well). The supernatant from AAV–GFP or -NT-3 virus treated cells was collected and quickly frozen in a dry ice/ethanol bath and kept at −80°C. The amount of secreted NT-3 protein was determined by ELISA (Human NT-3 DuoSet, R and D Systems, Inc., Minneapolis, MN) according to the manufacturer’s protocol. The above experiments were repeated 3 times.
 
-## Animals
+### Animals
 
 A total of 66 adult, 18 – 22 g C57BL/6 mice (12 weeks, male n = 33 and female n = 33) were purchased from Jackson Laboratories (Bar Harbor, ME). All surgical interventions, treatments and postoperative animal care were performed in accordance with the Guide for the Care and Use of Laboratory Animals (National Research Council) and the Guidelines set forth by the Institutional Animal Care and Use Committee of the Indiana University School of Medicine.
 
 In the first set of experiments, mice were randomly divided into three groups. Group 1: Sham (n = 14); Group 2: contusive SCI + AAV GFP (n = 17); Group 3: contusive SCI + AAV-NT-3 (n = 17) (Figure 1A; Table 1).
 
+**Table 1.**
+ Summary of experimental design and animal groups
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th colspan="2">Treatments</th>
+      <th colspan="4">Assessments</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>T10 contusion</th>
+      <th>Sciatic nerve</th>
+      <th>HRP</th>
+      <th>BDA</th>
+      <th>CTB</th>
+      <th>Behavior</th>
+      <th>Total</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sham</td>
+      <td>-</td>
+      <td>PBS</td>
+      <td>n = 4</td>
+      <td>(n = 4)</td>
+      <td>n = 10</td>
+      <td>(n = 10)</td>
+      <td>n = 14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SCI + AAV-GFP</td>
+      <td>+</td>
+      <td>Demyelination +AAV-GFP</td>
+      <td>n = 4</td>
+      <td>(n = 4)</td>
+      <td>n = 13</td>
+      <td>(n = 10)</td>
+      <td>n = 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SCI + AAV-NT-3</td>
+      <td>+</td>
+      <td>Demyelination +AAV-NT-3</td>
+      <td>n = 4</td>
+      <td>(n = 4)</td>
+      <td>n = 13</td>
+      <td>(n = 10)</td>
+      <td>n = 17</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: HRP and BDA groups share the same animals. CTB and Behavior groups share the same animals. Abbreviations: AAV, adeno-associated virus, serotype 2; CTB, cholera toxin B; HRP, horseradish peroxidase; BDA, biotinylated dextran amine._
+
 In the second set of experiments, animals were used to test the method of AAV-NT-3 retrograde transport after its injection into focal transiently demyelinated sciatic nerves. In this study, 18 adult mice randomly divided into two groups. Group 1: transient demyelination followed by AAV-GFP vector injection (n = 9); Group 2: transient demyelination followed by AAV-NT-3 vector (AAV-GFP and AAV-NT-3 were mixed, 1:1 ratio) injection (n = 9) (Table 2).
 
-## Contusive SCI, transient focal demyelination, and viral injection
+**Table 2.**
+ Transient demyelination animal groups
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Groups</th>
+      <th colspan="2">Treatments</th>
+      <th colspan="4">Assessments (time after demyelination)</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th colspan="2"></th>
+      <th>Virus</th>
+      <th>Sciatic nerve</th>
+      <th>3 days IF</th>
+      <th>5 weeks IF</th>
+      <th>5 weeks ELISA</th>
+      <th>Behavior</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>AAV-GFP</td>
+      <td>AAV-GFP</td>
+      <td>Transient demyelination</td>
+      <td>n = 3</td>
+      <td>n = 3</td>
+      <td>n = 3</td>
+      <td>(n = 6)</td>
+      <td>n = 9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AAV-NT-3</td>
+      <td>AAV-GFP + AAV-NT-3(1:1)</td>
+      <td>Transient demyelination</td>
+      <td>n = 3</td>
+      <td>n = 3</td>
+      <td>n = 3</td>
+      <td>(n = 6)</td>
+      <td>n = 9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Behavior assessments used the same animals of the 5 week groups (IF and ELISA). Abbreviations: AAV, adeno-associated virus, serotype 2; ELISA, enzyme-linked immunosorbent assay; GFP, green fluorescent protein; IF, immunofluorescence; NT-3, neurotrophin-3._
+
+### Contusive SCI, transient focal demyelination, and viral injection
 
 For contusive SCI, mice were anesthetized with a xylazine (10 mg/kg) and ketamine (100 mg/kg) mixture by intraperitoneal injection. A contusive SCI was then performed at the T10 vertebral level using the Louisville Injury System Apparatus (LISA) (Louisville, KY). The LISA impactor utilizes a laser sensor to measure the velocity and displacement of an injury obtained via a pneumatically driven impactor (Zhang et al., 2008). Mice in the SCI + AAV GFP and SCI + AAV-NT-3 groups received a 0.5 mm displacement contusion at a velocity of 1.0 m/s. Sham animals received laminectomy only. The overlying musculature was closed using suture and the skin was closed using wound clips. The animals were treated with Marcaine (Henry Schein, Melville, NY) at the incision site. A force/displacement graph was used to monitor impact consistency.
 
@@ -195,59 +386,59 @@ For transient demyelination, mice were immobilized in the prone position immedia
 
 Viral injections were performed at 5 days after demyelination. In this procedure, both sciatic nerves were re-exposed and injected with 1 μl of either AAV-GFP or AAV-NT-3 (1.0 × 1012 pfu/μl) using a 10 μl Hamilton syringe (Cole-Parmer, Vernon Hills, IL). We injected a small volume of high concentrations of viruses into the sciatic nerve because small volumes cause almost no damage to the injected nerves (Zhang et al., 2010). All injections were performed at a rate of 1 μl/min and the needle was held in place for an additional 2 min following the injection.
 
-## Behavioral assessments
+### Behavioral assessments
 
-## Basso Mouse Scale
+#### Basso Mouse Scale
 
 Basso Mouse Scale (BMS) locomotor test was performed weekly up to 5 weeks post-SCI (Figure 1A) by two observers lacking knowledge of the experimental groups according to a method published previously (Basso et al., 2006; Liu et al., 2014b). Briefly, mice were placed in an open field (diameter: 42 inch) and observed for 4 min by two trained observers. The scores were on a scale of 0–9 (0, complete hind limb paralysis; 9, normal locomotion), which is based on hind limb movements made in an open field including hind limb joint movement, weight support, plantar stepping, coordination, paw position, and trunk and tail control.
 
-## Rotarod
+#### Rotarod
 
 The rotarod performance test is a performance test based on a rotating rod with forced motor activity being applied. In this study, the rotarod test was performed on the 3rd and 5th week post-SCI (Figure 1) to assess balance and ability to coordinate stepping. Animals were placed on a single-lane rotarod according to our existing protocol (Liu et al., 2013) for a total of three trials per session. The rotarod was set for constant acceleration from 3 to 30 rpm over 300 s and animals were scored on seconds to fall. Each trial was scored individually and averaged for a final score per session.
 
-## TreadScan analysis
+#### TreadScan analysis
 
 TreadScan (CleverSys Inc., Reston, VA) is an unbiased device used for gait analysis of animals. All mice were allowed to walk on the motor-driven treadmill belt at a speed of 11 cm/s for a period of 20 s as described previously (Beare et al., 2009). The digital data (footprints and body movement) were analyzed by a TreadScan software (CleverSys Inc., Reston, VA), and each of the parameters was compared between ipsilateral and contralateral sides and between the treatment and control groups.
 
-## Transcranial magnetic motor-evoked potentials
+### Transcranial magnetic motor-evoked potentials
 
 Nerve conduction was assessed by transcranial magnetic motor-evoked potentials (tcMMEP), an in vivo electrophysiological measure of motor pathway function which was previously described (Liu et al., 2007). The tcMMEP responses were elicited by the activation of subcortical structures with an electromagnetic coil placed over the cranium. Action potentials descend in the ventral spinal cord and synapse onto motoneuron pools which can be detected and recorded as output signals from both gastrocnemius muscles.
 
-## Anterograde and retrograde tracings
+### Anterograde and retrograde tracings
 
-## Anterograde tracing with biotinylated-dextran amine
+#### Anterograde tracing with biotinylated-dextran amine
 
 On the 28th day after SCI, bilateral and stereotaxical injections of biotinylated-dextran amine (BDA; MW 10,000, 10%, 1 μl/site; Molecular Probes, Eugene, OR) were made into the intermediate gray matter of the T7-8 cord segments at distances of 3 – 6 mm rostral to the contusion site (for BDA, one injection/site/mm longitudinal distances) according to previously published work (Deng et al., 2013).
 
 BDA staining was performed according to earlier reports (Fouad et al., 2001). Slides were dried in an incubator at 38°C for 1 hr and washed twice for 10 min in 50 mM Tris-buffered saline (TBS), pH 7.4, followed by two 45 min washes with TBS containing 0.5% Triton X-100. Afterwards, the slides were incubated overnight with an avidin–biotin–peroxidase complex in TBS with Triton (ABC Elite, Vector Laboratories, Burlingame, CA) according to the manufacturer’s protocol. Subsequently, a DAB reaction was performed using the Vector DAB kit (SK4100, Vector Laboratories). The reaction was monitored and stopped by extensive washing in water.
 
-## Retrograde tracing with cholera toxin B: injection into the sciatic nerve
+#### Retrograde tracing with cholera toxin B: injection into the sciatic nerve
 
 For CTB retrograde tracing, a 2% solution of Alexa Fluor-labeled (594) cholera toxin B (CTB) (Invitrogen, Carlsbad, CA) in PBS was injected bilaterally into the sciatic nerves of the animals at 28 days following SCI. First, a small incision was made in the skin along the posterior thigh to expose the gluteus muscle. The muscle was separated to expose the sciatic nerve which was subsequently injected with 2 – 3 μl of 2% CTB using a Hamilton syringe with a 30 gauge needle according to an existing protocol (Hirakawa and Kawata, 1992). For this injection, the sciatic nerve was not crushed. Mice were monitored for 7 days following injection of the neural tracer.
 
-## Retrograde tracing with cholera toxin B: injection into the tibialis anterior
+#### Retrograde tracing with cholera toxin B: injection into the tibialis anterior
 
 Horseradish peroxidase conjugated to the cholera toxin B subunit (BHRP) was also used for the retrograde tracing. On the 33rd day after SCI, animals were re-anesthetized and the tibialis anterior (TA) muscle was exposed and injected with BHRP (0.5 μl, 0.2%; List Biological Laboratories, Inc., Campbell, CA). BHRP labeling permits population-level quantitative analysis of motoneuron somal and dendritic morphologies. Twenty-eight hours after the BHRP injection, a period that ensures optimal labeling of motoneurons, animals were euthanized and perfused intracardially with saline followed by cold fixative (1% paraformaldehyde/1.25% glutaraldehyde) (Byers et al., 2012). The number of animals that received anterograde or retrograde tracings is summarized in Table 1.
 
-## Dendritic morphology
+### Dendritic morphology
 
-## Dendritic length measurement
+#### Dendritic length measurement
 
 For each animal, dendritic lengths taken in a single representative set of alternate sections were measured under dark field illumination according to our existing protocol (Liu et al., 2014a). Beginning with the first section in which BHRP-labeled fibers were present, labeling through the entire rostrocaudal extent of the TA motoneuron dendritic field was assessed in every third section (480 μm apart) using a three dimensional, computer-based morphometry system (Neurolucida; MBF Bioscience, Williston, VT) at a final magnification of 250×. Average dendritic length per labeled motoneuron was estimated by summing the measured dendritic lengths of the series of sections, multiplying by three to correct for sampling, then dividing by the total number of labeled motoneurons in that series. This method does not attempt to assess the actual total dendritic length of labeled motoneurons but has been shown to be a sensitive and reliable indicator of changes in dendritic morphology during normal development, after changes in dendritic interactions and afferent input, and after injury (Byers et al., 2012).
 
-## Dendritic distribution measurement
+#### Dendritic distribution measurement
 
 To assess potential dendritic redistributions across groups, for each animal the composite dendritic arbor created by the length analysis was divided using a set of axes oriented radially around the center of the collectively labeled somata. These axes divided the spinal cord into 12 bins of 30° each. The portion of each animal’s dendritic arbor per labeled MN contained within each bin was then determined. This method provided a sensitive measure of dendritic redistribution in response to changes in dendritic interactions and afferent input (Goldstein et al., 1993; Byers et al., 2012; Liu et al., 2014a; Wang et al., 2015).
 
-## NT-3 ELISA in vivo
+### NT-3 ELISA in vivo
 
 The lumbar spinal cords collected from each group were dissected and quickly frozen in a dry ice/ethanol bath and kept at −80°C. The amount of secreted NT-3 protein was determined by an ELISA (Human NT-3 DuoSet, R and D Systems, Inc, Minneapolis, MN) according to our existing protocol (Abdellatif et al., 2006). The experiment was repeated >3 times.
 
-## Histological assessments
+### Histological assessments
 
 Animals were perfused, and the cord segments containing the injury epicenter were dissected out, embedded, and sectioned at 20 μm according to our previous protocols (Liu et al., 2011). A set of serial spinal cord cross sections were stained for myelin with Luxol fast blue and counterstained with Cresyl Violet–Eosin. Lesioned areas were outlined and quantified using an Olympus BX60 microscope equipped with a Neurolucida system (MBF Bioscience, Williston, VT). Areas of the lesion at the injury epicenter were quantified using NIH imaging software (NIH) and serial sections centered at the lesion epicenter were traced in ImageJ (NIH) for volume calculation, according to a previous publication (Liu et al., 2014b).
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 The biological activity of the AAV-NT-3 was determined using a spinal cord dendrite outgrowth assay. The cultured spinal cord neurons were grown for 9 days at 37°C, 5% CO2 followed by fixation in 4% paraformaldehyde for 10 min. Dendrite outgrowth and NT-3 expression in these cultures was evaluated by staining with an anti-β-tubulin antibody (1:200, Sigma, St. Louis, MO) and an NT-3 antibody (1:10,000. Santa Cruz Biotec., Santa Cruz, CA).
 
@@ -255,13 +446,224 @@ For in vivo immunofluorescence staining, animals were transcardially perfused wi
 
 Immunofluorescent staining method was performed according to our existing protocol (Liu et al., 2006; Liu et al., 2014b). Briefly, slides were warmed for 15 min on a slide warmer at 37°C and then rinsed three times in 0.01 M PBS for a duration of 10 min each. All sections were first blocked with 2% normal bovine serum for 1 hr, followed by overnight incubation at 4°C with combinations of primary antibodies (listed in Table 3). After several washes, immunoreactive sites were revealed by using species-specific secondary antibodies (listed in Table 3). After staining, the sections were rinsed three times in PBS and cover slipped with antifading aqueous mounting medium (Biomeda Corp., Foster City, CA) and viewed with a confocal microscope (Zeiss, Germany). Pixel intensity was measured on images taken on a standard fluorescent microscope (Zeiss, Germany) with a uniform exposure setting and analyzed using ImageJ (NIH).
 
+**Table 3.**
+ Primary and secondary antibodies used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Host type</th>
+      <th>Working dilution</th>
+      <th>Manufacturer</th>
+      <th>Catalog#</th>
+      <th>Research resource identifiers (RRIDs)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Glial fibrillary acidic protein (GFAP)</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:1000</td>
+      <td>Invitrogen</td>
+      <td>G9269</td>
+      <td>AB_477035</td>
+    </tr>
+    <tr>
+      <td>β−3-Tubulin</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>T5293</td>
+      <td>AB_477580</td>
+    </tr>
+    <tr>
+      <td>Choline acetyltransferase (ChAT)</td>
+      <td>Goat Monoclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>ABIN350213</td>
+      <td>AB_10781260</td>
+    </tr>
+    <tr>
+      <td>CS-56 (CSPG)</td>
+      <td>Mouse Monoclonal lgM</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>C8035</td>
+      <td>AB_476879</td>
+    </tr>
+    <tr>
+      <td>ED-1 (CD-68)</td>
+      <td>Rabbit Monoclonal lgG</td>
+      <td>1:200</td>
+      <td>AbD Serotec, USA</td>
+      <td>MCA341R</td>
+      <td>AB_2291300</td>
+    </tr>
+    <tr>
+      <td>Green fluorescent protein (GFP)</td>
+      <td>Chicken Monoclonal lgG</td>
+      <td>1:1000</td>
+      <td>Chemicon, USA</td>
+      <td>AB16901</td>
+      <td>AB_11212200</td>
+    </tr>
+    <tr>
+      <td>5-Hydroxytryptamine (5-HT)</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:200</td>
+      <td>Abcam, USA</td>
+      <td>ab85615</td>
+      <td>AB_10696528</td>
+    </tr>
+    <tr>
+      <td>NeuN</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:200</td>
+      <td>Chemicon, USA</td>
+      <td>MAB377</td>
+      <td>AB_2298772</td>
+    </tr>
+    <tr>
+      <td>Neurofilament 200 (NF)</td>
+      <td>Rabbit Monoclonal lgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>N4142</td>
+      <td>AB_477272</td>
+    </tr>
+    <tr>
+      <td>Synaptophysin (SYP)</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:1000</td>
+      <td>Millipore/Life Technologies, USA</td>
+      <td>MAB5258</td>
+      <td>AB_2313839</td>
+    </tr>
+    <tr>
+      <td>SMI-31</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:200</td>
+      <td>Covance, USA</td>
+      <td>SMI-31R-100</td>
+      <td>AB_10122491</td>
+    </tr>
+    <tr>
+      <td>S-100</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>HPA015768</td>
+      <td>AB_1856538</td>
+    </tr>
+    <tr>
+      <td>Tyrosine Hydroxylase (TH)</td>
+      <td>Mouse Monoclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>T9573</td>
+      <td>AB_261823</td>
+    </tr>
+    <tr>
+      <td>Neurotrophin-3 (NT-3)</td>
+      <td>Rabbit Polyclonal IgG</td>
+      <td>1:1000</td>
+      <td>Santa Cruz Biotechnology, Santa Cruz, USA</td>
+      <td>sc-80250</td>
+      <td>AB_1126615</td>
+    </tr>
+    <tr>
+      <td>SecondaryAntibodies</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alexa Fluor 488 (green)</td>
+      <td>Goat anti Chicken</td>
+      <td>1:1000</td>
+      <td>Invitrogen, USA</td>
+      <td>A11039</td>
+      <td>AB_142924</td>
+    </tr>
+    <tr>
+      <td>ExtrAvidin−FITC buffered aqueous solution</td>
+      <td></td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>E2761</td>
+      <td>AB_2492295</td>
+    </tr>
+    <tr>
+      <td>ExtrAvidin−TRITC buffered aqueous solution</td>
+      <td></td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>E3011</td>
+      <td>AB_2492295</td>
+    </tr>
+    <tr>
+      <td>FITC conjungated anti rabbit secondary antibody</td>
+      <td>Goat Polyclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>F0382</td>
+      <td>AB_259384</td>
+    </tr>
+    <tr>
+      <td>FITC conjungated anti mouse secondary antibody</td>
+      <td>Goat Polyclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>F5262</td>
+      <td>AB_259638</td>
+    </tr>
+    <tr>
+      <td>TRITC conjungated anti rabbit secondary antibody</td>
+      <td>Goat Polyclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>T6778</td>
+      <td>AB_261740</td>
+    </tr>
+    <tr>
+      <td>TRITC conjungated anti mouse secondary antibody</td>
+      <td>Goat Polyclonal IgG</td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>T2402</td>
+      <td>AB_261618</td>
+    </tr>
+    <tr>
+      <td>CY5 conjungated anti mouse secondary antibody</td>
+      <td>Goat Polyclonal IgG</td>
+      <td>1:200</td>
+      <td>Invitrogen, USA</td>
+      <td>A10524</td>
+      <td>AB_2534033</td>
+    </tr>
+    <tr>
+      <td>Hoechst 33342</td>
+      <td></td>
+      <td>1:200</td>
+      <td>Sigma, St. Louis, USA</td>
+      <td>4082S</td>
+      <td>AB_10626776</td>
+    </tr>
+  </tbody>
+</table>
+
 To analyze the synaptic surroundings of the motoneurons, the motoneurons were automatically selected and a constant threshold was used to segment and obtain an estimated average density for each labeling. Immunoreactivity was evaluated in a perimeter of 5 μm width surrounding the soma. This 5 μm-width perimeter covered the synaptic area surrounding the motoneurons and dendrites, limiting the overlapping with synapses of neighboring motoneurons (Arbat-Plana et al., 2015). For each animal, 10 to 15 motoneurons from each pool and each side were analyzed.
 
-## Muscle fiber and motor endplate density
+### Muscle fiber and motor endplate density
 
 The TA muscles were removed immediately after perfusion and weighed. Muscles were then postfixed overnight and transferred to sucrose phosphate buffer (10% w/v, pH 7.4). Muscles were then rinsed in distilled water, blocked into proximal and distal segments, and flash-frozen in 2-methylbutane. Muscle segments were sectioned longitudinally on a cryostat at −20°C and thaw-mounted onto glass slides. Muscle fiber diameters were assessed after staining with Cresyl Violet–Eosin stain (Liu et al., 2014a). Motor endplate densities were assessed after staining for acetylcholinesterase using the Roots-Karnovsky method (Byers et al., 2012). Muscle fiber diameters and motor endplate densities were measured under a bright-field illumination using Stereo Investigator (MBF Bioscience, Williston, VT). The number of motor endplates per muscle fiber was estimated by counting the number of muscle fibers and endplates in a grid (1 mm ×1 mm) randomly placed on the muscle section (one sample field per section, five muscle sections per animal). Fiber and endplate areas within each animal were then averaged for statistical analysis.
 
-## Data acquisition and statistical analysis
+### Data acquisition and statistical analysis
 
 To blind researchers to the treatment groups during behavioral assessments, surgeries, and electrophysiological recordings, we established a standard practice of coding all animals with numbers that were randomized and not reflective of treatment groups. Treatment information was separated from the coded numbers immediately following treatment assignment and was not present during these procedures. One animal in the SCI + AAV GFP group and one animal in the SCI + AAV-NT-3 group were removed from the study and euthanized due to bladder infection and complication.
 

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Eukaryotes generally display a circadian rhythm as an adaption to the reoccurring day/night cycle. This is particularly true for visual physiology that is directly affected by changing light conditions. Here we investigate the influence of the circadian rhythm on the expression and function of visual transduction cascade regulators in diurnal zebrafish and nocturnal mice. We focused on regulators of shut-off kinetics such as Recoverins , Arrestins , Opsin kinases , and Regulator of G-protein signaling that have direct effects on temporal vision. Transcript as well as protein levels of most analyzed genes show a robust circadian rhythm-dependent regulation, which correlates with changes in photoresponse kinetics. Electroretinography demonstrates that photoresponse recovery in zebrafish is delayed in the evening and accelerated in the morning. Functional rhythmicity persists in continuous darkness, and it is reversed by an inverted light cycle and disrupted by constant light. This is in line with our finding that orthologous gene transcripts from diurnal zebrafish and nocturnal mice are often expressed in an anti-phasic daily rhythm.
+Eukaryotes generally display a circadian rhythm as an adaption to the reoccurring day/night cycle. This is particularly true for visual physiology that is directly affected by changing light conditions. Here we investigate the influence of the circadian rhythm on the expression and function of visual transduction cascade regulators in diurnal zebrafish and nocturnal mice. We focused on regulators of shut-off kinetics such as Recoverins, Arrestins, Opsin kinases, and Regulator of G-protein signaling that have direct effects on temporal vision. Transcript as well as protein levels of most analyzed genes show a robust circadian rhythm-dependent regulation, which correlates with changes in photoresponse kinetics. Electroretinography demonstrates that photoresponse recovery in zebrafish is delayed in the evening and accelerated in the morning. Functional rhythmicity persists in continuous darkness, and it is reversed by an inverted light cycle and disrupted by constant light. This is in line with our finding that orthologous gene transcripts from diurnal zebrafish and nocturnal mice are often expressed in an anti-phasic daily rhythm.
 
 ## Introduction
 
@@ -34,15 +34,35 @@ We now show that the expression levels of these important regulators of cone vis
 
 ## Results
 
-## Expression levels of key genes involved in shaping visual transduction decay are regulated by the circadian clock
+### Expression levels of key genes involved in shaping visual transduction decay are regulated by the circadian clock
 
 To determine the influence of the circadian clock on visual behavior, we analyzed gene expression levels of key visual transduction regulators over a 24 hr period using quantitative real-time polymerase chain reacion (qRT-PCR). Eyes from larval (5 days post fertilization [dpf]) and adult zebrafish that were kept under a normal light cycle (LD 14:10, light on at 8 o’clock in the morning), as well as eyes from 5 dpf larvae kept in continuous darkness (DD), were collected every 3 hr over a period of 24 hr and subsequently analyzed. Apart from rcv2a, which seems to have no or weak fluctuating transcript levels in larvae (Figure 1G), expression levels of the other recoverins (rcv1a, rcv1b, which is absent from larval retina, and rcv2b), G-protein receptor kinases (grk7a and grk7b), arrestins (arr3a and arr3b), and regulator of G-protein signaling 9 (rgs9a) were clearly oscillating (statistical information in Supplementary file 1). In many cases, transcripts were most abundant at ZT1 or ZT4 (grk7a, grk7b, rcv2b, arr3a, and arr3b), subsequently declined throughout the day, and recovered during the night. For instance, in adult zebrafish eyes, grk7a expression levels decreased by around 98% from the peak to the lowest expression level (Figure 1A). In the case of adult rgs9a, transcripts reached the highest level at ZT22, with the value very close to ZT1. In situ hybridization (ISH) analysis using digoxigenin-labeled RNA probes validated our qRT-PCR results (Figure 1—figure supplement 2 and Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig1-v2.jpg)
+
+**Figure 1.:** mRNA levels of visual transduction decay genes in the eye of adult and larval zebrafish were measured by qRT-PCR over a 24-hour-period. (A-I). Eye tissues from larval fish either raised under a normal light/dark cycle (LD / gray squares) or in continuous darkness (DD / black squares) and from adult LD zebrafish (gray circles) were collected at eight different time points throughout the day. The name of the analyzed gene transcripts is given on top of each graph. The time point of collection is indicated along the x-axis with ZT01 being the time point one hour after the light was turned on. Dark periods are indicated by the moon symbol and highlighted in gray, whereas the periods under regular light conditions are indicated by the sun symbol and shown in white. For better orientation the different conditions are summarized at the bottom of the figure. Data represents the mean ± standard error of the mean (s.e.m). Statistical analysis was performed by “RAIN” as previously described (Thaben and Westermark, 2014). Statistics information and the numbers of independent repeats are provided in Supplementary file 1. Metadata can be downloaded from DRYAD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Scale bar (=50 µm) applies to all panels.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bar (=50 μm) applies to all panels.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Arrow denotes ultraviolet (UV) cones. Scale bar = 20 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Arrows denote regions enriched with rods. Arrowheads denote habenulae. Star denotes ultraviolet (UV) cone layer. GCL, ganglion cell layer; INL, inner nuclear layer; IPL, inner plexiform layer; ONL, outer nuclear layer; OPL, outer plexiform layer. Scale bar (=20 µm) applies to corresponding panels.
 
 Interestingly, two genes, namely rcv1a and rcv2a, displayed different expression profiles in larval and adult eyes (Figure 1E&G). While larval rcv1a mRNA transcript levels peaked around ZT19, larval rcv2a transcript expression was weak/non-cyclic. However, this is in contrast to adult retinas where rcv1a and rcv2a transcripts were highest at ZT7 (Figure 1G). An anti-phasic expression profile between larval and adult stages can also be observed for rod arrestins (arras) (Figure 1—figure supplement 4).
 
 In order to establish that the daily expression changes of these transcripts are indeed regulated by the intrinsic circadian clock, we repeated our experiments in larvae kept in complete darkness (DD), eliminating light as an external factor. Under normal LD, as well as DD conditions, we obtained largely comparable results (Figure 1). Exceptions were arr3a and arr3b, showing a 3-hr phase shift, and rcv1a, showing an almost anti-phase relationship (see ‘Discussion’ section).
 
-## Corresponding retinal genes in nocturnal mice display an anti-phasic expression pattern
+### Corresponding retinal genes in nocturnal mice display an anti-phasic expression pattern
 
 As zebrafish are diurnal animals having a cone-dominant retina, we wondered if the observed circadian regulation of visual transduction gene transcripts is also seen in the rod-dominant retina of nocturnal mice. We selected mouse Grk1, the only visual grk gene in mice (Chen et al., 1999; Wada et al., 2006), the sole recoverin (Chen et al., 2012) and Rgs9 (Krispel et al., 2006) genes, and the two arrestins Arrb1 and Arrb3, as the counterparts for the above-mentioned zebrafish genes for our analysis.
 
@@ -50,19 +70,31 @@ Expression of all five regulators fluctuated in a 24 hr period (Figure 2), being
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig2-v2.jpg)
 
-**Figure 2.:** Transcript levels of indicated mouse genes (A-E) were measured using qRT-PCR on retinal tissue of 12-week-old wildtype mice. were measured using qRT-PCR on retinal tissue of 12-week-old wildtype mice. The time point of collection is indicated along the x-axis with ZT01 being the time point one hour after the light was turned on. Dark periods are indicated by the moon symbol and highlighted in gray, whereas the periods under regular light conditions are indicated by the sun symbol and shown in white. Data represents the mean ± s.e.m. Statistical analysis was performed by “RAIN” as previously described (Thaben and Westermark, 2014). Statistics information and the numbers of independent repeats are provided in Supplementary file 2. Metadata can be downloaded from DRYAD.Figure 2—source data 1.
+**Figure 2.:** Transcript levels of indicated mouse genes (A-E) were measured using qRT-PCR on retinal tissue of 12-week-old wildtype mice. were measured using qRT-PCR on retinal tissue of 12-week-old wildtype mice. The time point of collection is indicated along the x-axis with ZT01 being the time point one hour after the light was turned on. Dark periods are indicated by the moon symbol and highlighted in gray, whereas the periods under regular light conditions are indicated by the sun symbol and shown in white. Data represents the mean ± s.e.m. Statistical analysis was performed by “RAIN” as previously described (Thaben and Westermark, 2014). Statistics information and the numbers of independent repeats are provided in Supplementary file 2. Metadata can be downloaded from DRYAD.
 
-## Levels of key visual transduction regulator proteins fluctuate in the zebrafish retina
+### Levels of key visual transduction regulator proteins fluctuate in the zebrafish retina
 
 While mRNA half-life is typically in the range of minutes, protein turnover rates can range from minutes to days, explaining why fluctuation of mRNA levels is not always reflected in time-shifted oscillations at the protein level (Cunningham and Gonzalez-Fernandez, 2000; Stenkamp et al., 2005). However, as regulatory proteins often have turnover rates of only a few hours, we were examining whether RNA oscillations are mirrored by corresponding protein level fluctuations. In order to assess protein levels, we generated paralog-specific antibodies against GRK7a and ARR3a. Quantitative western blot analysis indicated periodic changes in protein levels for both proteins. Peak expression was shifted 6 - 12 hr between RNA and protein level (Figure 3A&B). ARR3a reached its highest and lowest levels at ZT7 and ZT22, respectively, whereas GRK7a maintained relatively high levels throughout the day, having the lowest concentrations around midnight. Hence, mRNA circadian oscillations in the zebrafish retina are largely conserved at the protein level with a time shift.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig3-v2.jpg)
 
-**Figure 3.:** GRK7a (A) and ARR3a (B) protein levels were quantified using Western blot analysis. β-Actin was used as a loading control. While mRNA transcript levels (gray circles / RNA structure) were lowest in the evening (ZT10 and ZT13, respectively), lowest protein expression levels (green circles / protein structure) were tailing RNA expression levels by around 6 to 12 hours, reaching lowest levels in the middle of the night at around ZT19. The time point of collection is indicated along the x-axis with ZT01 being the time point one hour after the light was turned on. Dark periods are indicated by the moon symbol and highlighted in gray, whereas the periods under regular light conditions are indicated by the sun symbol and shown in white. Data represents the mean ± s.e.m. Statistical analysis was performed by “RAIN” as previously described (Thaben and Westermark, 2014). Statistics information and the numbers of independent repeats are provided in Supplementary file 3. Metadata can be downloaded from DRYAD.Figure 3—source data 1.
+**Figure 3.:** GRK7a (A) and ARR3a (B) protein levels were quantified using Western blot analysis. β-Actin was used as a loading control. While mRNA transcript levels (gray circles / RNA structure) were lowest in the evening (ZT10 and ZT13, respectively), lowest protein expression levels (green circles / protein structure) were tailing RNA expression levels by around 6 to 12 hours, reaching lowest levels in the middle of the night at around ZT19. The time point of collection is indicated along the x-axis with ZT01 being the time point one hour after the light was turned on. Dark periods are indicated by the moon symbol and highlighted in gray, whereas the periods under regular light conditions are indicated by the sun symbol and shown in white. Data represents the mean ± s.e.m. Statistical analysis was performed by “RAIN” as previously described (Thaben and Westermark, 2014). Statistics information and the numbers of independent repeats are provided in Supplementary file 3. Metadata can be downloaded from DRYAD.
 
-## Larval cone response recovery is delayed in the evening
+### Larval cone response recovery is delayed in the evening
 
 We next asked whether the observed protein and RNA level fluctuations have an impact on functional aspects of visual transduction. Photoresponses at larval zebrafish stages are dominated by cone photoreceptors (Bilotta et al., 2001). In the electroretinogram (ERG), the a-wave directly represents photoreceptor responses. Since in the zebrafish ERG, it is largely masked by the larger b-wave, reflecting the depolarization of ON-bipolar cells, we used the b-wave amplitude as an indirect measure of the cone photoresponse (Figure 4A1). The protein products of the genes analyzed in our study are known to affect photoresponse recovery in zebrafish (Renninger et al., 2011; Rinner et al., 2005; Zang et al., 2015). Therefore, we assessed their function by using the ERG double-flash paradigm. In this experimental setup, the retina receives a conditioning flash, followed by a probing flash of the same light intensity (Figure 4A1). The b-wave amplitude ratio of probing to conditioning response in relation to the interstimulus interval is a normalized read-out for the visual transduction recovery time (Figure 4A2; full example in Figure 4—figure supplement 1). Photoreceptor recovery is complete when the two flashes evoke responses of equal amplitudes. ERG responses are predicted to be contributed by all cone subtypes, given the light source spectrum.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig4-v2.jpg)
+
+**Figure 4.:** (A1) Examples of normal light/dark (LD) larval electroretinogram (ERG) b-wave recordings. A conditioning flash (black line) was followed by a probing flash (yellow and red lines), which were separated by 1000 ms. While the yellow triangle and curve mark the probe response in the morning, the red triangle and curve represent the probe response recorded in the evening. Note that the probe response in the evening is clearly diminished. (A2) b-wave recovery as a function of the interstimulus interval (isi). At 500 ms up to 3000 ms isi, b-wave recovery in the morning (yellow bars) is significantly enhanced when compared to corresponding recordings in the evening (red bars). Note that below 500 ms isi, no b-wave recovery can be observed and that at an interval of 5 s complete recovery can also be found in the evening. Data are presented as mean ± sem (n = 18 in the morning; n = 14 in the evening) of three independent experiments. t-tests and nonparametric tests were performed by GraphPad Prism version 8. p = 0.0149 at 300 ms isi; p = 0.0151 at 500 ms isi; p = 0.0405 at 1000 ms isi; p = 0.0069 at 2000 ms isi. *p<0.05; **p<0.01. (B1) Examples of LD larval ERG a-wave recordings under DL-threo-beta-benzyloxyaspartate (DL-TBOA) and L-2-amino-4-phosphonobutyric acid (L-AP4) inhibition. Under b-wave blocking conditions, a conditioning flash (black line) was followed by a probing flash (yellow and red lines), which were separated by 500 ms. The yellow triangle and curve mark the probe response in the morning, whereas the red triangle and curve represent the probe response recorded in the evening. Note that also the a-wave response recovery is significantly reduced in the evening. (B2) a-wave recovery as a function of isi. At 300 ms up to 1500 ms isi, a-wave recovery in the morning (yellow bars) is significantly enhanced when compared to corresponding recordings in the evening (red bars). Data are presented as mean ± sem (n = 11 in the morning; n = 5 in the evening) of three independent experiments. t-tests and nonparametric tests were performed by GraphPad Prism version 8. Plots with individual data points were provided in metadata from DRYAD. p = 0.0029 at 500 ms isi; p = 0.0003 at 1000 ms isi; p = 0.0375 at 1500 ms isi. *p<0.05; **p<0.01; ***p≤0.001. (C1) Examples of ERG b-wave recordings from a larva kept under constant darkness (DD). A conditioning flash (black line) was followed by a probing flash (light and dark blue lines), which were separated by 1000 ms. The light blue triangle and curve mark the probe response in the morning, whereas the dark blue triangle and curve represent the probe response recorded in the evening. (C2) b-wave recovery as a function of the isi is shown for larvae raised in continuous darkness (DD). Even under continuous darkness, visual function remains under circadian control as at 500 ms up to 3000 ms isi, and the b-wave recovery in the morning (light blue bars) is significantly enhanced when compared to corresponding recordings in the evening (dark blue bars). Data are presented as mean ± sem (n = 17 in the morning; n = 12 in the evening) of three independent experiments. t-tests and nonparametric tests were performed by GraphPad Prism version 8. p = 0.0007 at 1000 ms isi; p = 0.0016 at 2000 ms isi; p = 0.0004 at 3000 ms isi; p = 0.0006 at 5000 ms isi. *p<0.05; **p<0.01; ***p≤0.001. Metadata can be downloaded from DRYAD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The interval between the conditioning flash and probe flash is indicated in each panel. (B) b-wave recovery is defined as the ratio of probe response amplitude to conditioning response amplitude, which then is plotted against the corresponding interval.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The spectrum of a-wave electroretinogram (ERG) light source is shown in black and flicker ERG light source is shown in red.
 
 Response recovery was significantly delayed in the evening in comparison to the morning (Figure 4A2). However, as the ERG b-wave is only an indirect measure of the photoreceptor response, we also measured the photoreceptor-induced a-wave by blocking the masking ERG b-wave (Figure 4B1). This was achieved by administering a pharmacological cocktail containing the excitatory amino acid transporter inhibitor DL-threo-beta-benzyloxyaspartate (DL-TBOA) and metabotropic glutamate receptor inhibitor L-2-amino-4-phosphonobutyric acid (L-AP4) (Wong et al., 2004). Consistently, the double-flash paradigm demonstrated that the a-wave response recovery in the evening was delayed (Figure 4B2). According to the light spectrum (Figure 4—figure supplement 2), the a-wave was contributed by all cone subtypes.
 
@@ -72,25 +104,37 @@ As photoresponse recovery is affected by the circadian rhythm, we hypothesized t
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig5-v2.jpg)
 
-**Figure 5.:** Examples show the flicker electroretinogram (ERG) responses to 5 Hz stimulus (A1) and to 12 Hz stimulus (A2). Example fast Fourier transform (FFT) power plots generated by MATLAB for responses (A1) and (A2) are shown in (B1) and (B4). These four example power plot results are highlighted in the corresponding summarized normalized power results in (B1) and (B2). The power of given frequency was normalized against the power at 50 Hz (line noise). The rest of the summarized plots of normalized power are shown in B2, B3, and B5. t-tests and nonparametric tests were performed by GraphPad Prism version 8. p = 0.0016 at 5 Hz (B1); p = 0.0005 at 8 Hz (B2); p = 0.0001 at 10 Hz (B3); p = 0.0001 at 12 Hz (B4); p<0.0001 at 15 Hz (B5). **p<0.01; ***p≤0.001; ****p≤0.0001. Metadata can be downloaded from DRYAD.Figure 5—source data 1.
+**Figure 5.:** Examples show the flicker electroretinogram (ERG) responses to 5 Hz stimulus (A1) and to 12 Hz stimulus (A2). Example fast Fourier transform (FFT) power plots generated by MATLAB for responses (A1) and (A2) are shown in (B1) and (B4). These four example power plot results are highlighted in the corresponding summarized normalized power results in (B1) and (B2). The power of given frequency was normalized against the power at 50 Hz (line noise). The rest of the summarized plots of normalized power are shown in B2, B3, and B5. t-tests and nonparametric tests were performed by GraphPad Prism version 8. p = 0.0016 at 5 Hz (B1); p = 0.0005 at 8 Hz (B2); p = 0.0001 at 10 Hz (B3); p = 0.0001 at 12 Hz (B4); p<0.0001 at 15 Hz (B5). **p<0.01; ***p≤0.001; ****p≤0.0001. Metadata can be downloaded from DRYAD.
 
-## Manipulation of gene expression by light is mirrored by functional changes
+### Manipulation of gene expression by light is mirrored by functional changes
 
 Next we measured larvae reared in a reversed light cycle (DL) where the night turns into a day. Under this condition, gene expression levels stayed in the fish’s time. ISH for the genes of interest (Figure 6A) reflected this, with a stronger staining intensity in LD fish at 9 o’clock in the morning compared to DL fish at the same time. Consequently, when both groups were recorded at 120 hr post fertilization, a prolonged response recovery time was obtained in the fish maintained in reversed light cycle, reflecting the situation in fish kept in the normal light and recorded in the evening (Figure 6D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig6-v2.jpg)
 
-**Figure 6.:** (A and C) In situ hybridization images using arr3a, arr3b, and grk7a as probes. Tissues were collected from either reverse light cycle (DL) (A, left panel), normal light cycle (LD) (A, right panel) or light/light cycle (LL) (C) zebrafish larva (5 days post fertilization [dpf]) at the indicated time points. A reversal in the light cycle from LD to DL is reflected in the reversal of the in situ hybridization signal, with low expression levels observed at 9 o’clock (A). The ratio of gene expression levels between evening (ZT13) and morning (ZT1) for fish raised under a normal LD cycle or under LL is shown in (B). In contrast to the observed circadian regulation under LD conditions, under LL conditions, expression levels remain continuously elevated not displaying any circadian fluctuation (B, C). (D) A reversal of the light cycle is reflected in a corresponding reversal of b-wave recovery. The comparison of b-wave recovery of LD and DL larvae recorded at the same time in the morning clearly indicates that immediately before darkness, b-wave recovery rates are reduced. Data are presented as mean ± sem (n = 16 larvae raised in LD; n = 9 larvae raised in DL) of three independent experiments. t-tests and nonparametric tests were performed by GraphPad Prism version 8. Plots with individual data points were provided in metadata from DRYAD. p = 0.001 at 500 ms interstimulus interval (isi); p = 0.0019 at 1000 ms isi; p = 0.0221 at 2000 ms isi; p = 0.0009 at 3000 ms isi; p = 0.0022 at 5000 ms isi. *p<0.05; **p<0.01; ***p≤0.001. (E) No changes in b-wave recovery between morning and evening can be observed under constant light conditions (LL). Data are presented as mean ± sem (n = 15 in the morning; n = 12 in the evening) of three independent experiments. t-tests and nonparametric tests were performed by GraphPad Prism version 8. p = 0.0107 at 500 ms isi; *p<0.05. Metadata can be downloaded from DRYAD.Figure 6—source data 1.
+**Figure 6.:** (A and C) In situ hybridization images using arr3a, arr3b, and grk7a as probes. Tissues were collected from either reverse light cycle (DL) (A, left panel), normal light cycle (LD) (A, right panel) or light/light cycle (LL) (C) zebrafish larva (5 days post fertilization [dpf]) at the indicated time points. A reversal in the light cycle from LD to DL is reflected in the reversal of the in situ hybridization signal, with low expression levels observed at 9 o’clock (A). The ratio of gene expression levels between evening (ZT13) and morning (ZT1) for fish raised under a normal LD cycle or under LL is shown in (B). In contrast to the observed circadian regulation under LD conditions, under LL conditions, expression levels remain continuously elevated not displaying any circadian fluctuation (B, C). (D) A reversal of the light cycle is reflected in a corresponding reversal of b-wave recovery. The comparison of b-wave recovery of LD and DL larvae recorded at the same time in the morning clearly indicates that immediately before darkness, b-wave recovery rates are reduced. Data are presented as mean ± sem (n = 16 larvae raised in LD; n = 9 larvae raised in DL) of three independent experiments. t-tests and nonparametric tests were performed by GraphPad Prism version 8. Plots with individual data points were provided in metadata from DRYAD. p = 0.001 at 500 ms interstimulus interval (isi); p = 0.0019 at 1000 ms isi; p = 0.0221 at 2000 ms isi; p = 0.0009 at 3000 ms isi; p = 0.0022 at 5000 ms isi. *p<0.05; **p<0.01; ***p≤0.001. (E) No changes in b-wave recovery between morning and evening can be observed under constant light conditions (LL). Data are presented as mean ± sem (n = 15 in the morning; n = 12 in the evening) of three independent experiments. t-tests and nonparametric tests were performed by GraphPad Prism version 8. p = 0.0107 at 500 ms isi; *p<0.05. Metadata can be downloaded from DRYAD.
 
 While the intrinsic circadian clock is maintained in the absence of light, continuous light exposure has been shown to disrupt this intrinsic rhythm (Laranjeiro and Whitmore, 2014). We therefore evaluated if the circadian regulation of mRNA expression persists in larvae kept under constant light (LL). Strikingly, the gene expression differences between morning and evening detected under LD conditions were completely lost in LL larvae (Figure 6B&C). This was also reflected on a functional level with no delay of photoresponse recovery in the evening, as measured by ERG.
 
 Taken together, these results demonstrate that changes in the light cycle are reflected in changes of transcript levels of phototransduction regulators that subsequently lead to altered visual performance at different times during the day.
 
-## Circadian clock-dependent expressions of key regulator genes tune the single-cone photoresponse kinetics
+### Circadian clock-dependent expressions of key regulator genes tune the single-cone photoresponse kinetics
 
 We applied a computational model of visual transduction to predict how the relative gene expression changes between morning and evening influence the single-cone photoresponse (Invergo et al., 2013; Invergo et al., 2014). The default model was set as morning value (ZT1). We then put the measured gene expression ratio data (arr3a, grk7a, rcv2b and rgs9) between ZT1 and ZT13 into the model for evening simulation. These four genes have been selected due to their pan-cone expression (grk7a, rcv2b and rgs9) and double-cone expression (arr3a), respectively. Running the model with the relative value of arr3b (blue and ultraviolet [UV] cones) produced comparable results to arr3a (data not shown). Detailed parameters are listed in Supplementary file 4. The computed morning and evening values were then compared.
 
 As predicted by our experimental results, the decay of photoresponse to different light intensities in the model was largely prolonged in the evening (Figure 7A–E). The unsaturating response amplitude was slightly elevated in the evening, which may indicate the prolonged lifetime of the visual pigment (Figure 7F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig7-v2.jpg)
+
+**Figure 7.:** Simulations of single cone photoresponse in the morning (default) (A) and in the evening (B). 500 ms flash stimuli were delivered at time = 0 s. The flash intensities are 1.7, 4.8, 15.2, 39.4, 125, 444, 1406 and 4630 photons µm-2 (Invergo et al., 2014). (C) & (D) depict response curves normalized to the amplitudes at each light intensity. The dotted line represents 25% recovery of the photoresponse. Response duration for 25% recovery (E) and photoresponse amplitude (F) are plotted as a function of logarithmically increasing stimulus intensities.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Eye velocity as a function of stimuli contrast recorded at noon and in the evening (repeated measures analysis of variance [ANOVA] by SPSS [IBM, version 26.0]; p = 0.001). ‘Noon’ denotes recording time around ZT5, n = 14. ‘Evening’ denotes recording time around ZT13, n = 21. Data are presented as mean ± standard deviation (SD) of three independent experiments. (B) Eye velocity as a function of stimuli contrast recorded in the morning and in the evening (repeated measures ANOVA by SPSS [IBM, version 26.0]; p = 0.671). ‘am’ denotes recording time around ZT1, n = 12. ‘Evening’ denotes recording time around ZT13, n = 10. Data are presented as mean ± SD of three independent experiments.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/68903/elife-68903-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Background movement and movement induced to sudden changes in illumination were recorded in the morning (yellow curve) and evening (red curve). Data are shown as an average of traces for fish recorded in the morning (n = 190; yellow curve) and recorded in the evening (n = 187; red curve) during a 15 min period. Visual motor response (VMR) around the time of illumination changes (black dotted boxes) is enlarged. Baseline activity was quantified as the average movement in 60 s before the induced light change (light yellow and light red bars). Student’s t-test was used to compare the response in the morning and in the evening. Before the light on and light off, both the baseline activities were significantly higher in the morning than in the evening; p<0.001. The amplitude of the VMR to light on and light off is given by the dark yellow and dark red bars. While the light-on response from fish recorded in the morning and evening had a comparable amplitude, p = 0.02, the amplitude of the light-off response in fish recorded in the evening was significantly reduced, p<0.001. ‘Morning’ denotes recording time around ZT1. ‘Evening’ denotes recording time around ZT13.
 
 ## Discussion
 
@@ -114,35 +158,158 @@ In conclusion, we have shown that key regulators of cone visual transduction at 
 
 ## Materials and methods
 
-## Zebrafish care
+### Zebrafish care
 
 Zebrafish (Danio rerio) were maintained at a standard 14 hr light:10 hr dark cycle (LD) with light on at 8 am and light off at 10 pm. Water temperatures were kept between 26 and 28°C (Amores et al., 1998). Fish from the WIK wildtype strain were used in our study. Embryos were raised in E3 medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, and 0.33 mM MgSO4) containing either 0.01% methylene blue to suppress fungal growth and/or 0.2 mM 1-phenyl-2-thiourea (PTU; Sigma-Aldrich) to prevent pigment development. Embryos were collected directly after laying. LD condition embryos were then transferred to the incubation room with normal light cycle (14:10). DD-conditioned embryos were placed in a black box before being transferred to the incubation room. Hence, all larvae (LD and DD) grew in the same environment with a stable temperature at 28°C. LL-conditioned fish were raised under constant light. DL condition was light on at 8 pm and light off at 10 am.
 
 Adult zebrafish were sacrificed using ice water following decapitation. All animal experiments were carried out in line with the ARVO Statement for the Use of Animals in Ophthalmic and Vision Research and were approved by the Veterinary Authorities of Kanton Zurich, Switzerland (TV4206).
 
-## Zebrafish quantitative real-time PCR
+### Zebrafish quantitative real-time PCR
 
 Around thirty 5 dpf larvae or five eyeballs from adult zebrafish were collected per time point (ZT1, 4, 7, 10, 13, 16, 19 and 22) and the tissue stored in RNAlater (Sigma) at 4°C. Dark adapted tissue was collected under dim red light. Only eyeballs were used for RNA extraction using the NucleoSpin RNA kit (Macherey-Nagel). Complementary DNA (cDNA) was produced using 110 ng total RNA as template for reverse transcription with SuperScript III (Invitrogen, Life Technologies; Zug, Switzerland). The samples collected from different time points were masked during RNA extraction and cDNA generation. qRT-PCR (Applied Biosystems Prism SDS 7900HT; Life Technologies) was performed using the MESA Green qPCR Mastermix Plus for SYBR Assay (Eurogentec, Seraing, Belgium) on a liquid handling robot platform (Tecan Genesis). Three technical replicates were conducted. Primers (Sigma-Aldrich) for qRT-PCR were intron-spanning to avoid amplification of non-digested genomic DNA fragments and were designed by online Universal ProbeLibrary Assay Design Center (Roche). Standard housekeeping genes (elongation factor 1, ef1; β-actin 2, actb2 and ribosomal protein L 13, rpl13) were used as reference (Tang et al., 2007). Primer pairs used are listed in Table 1.Expression levels were normalized to 1. Statistical analysis was performed in R 4.1.0 with ‘rain’ package (Thaben and Westermark, 2014).
 
-## Mouse care and gene expression analysis
+**Table 1.**
+ Sequences of primers used for qRT-PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>rcv1a S TGAGAACACGCCAGAAAAGC as CATTCAGGGTGTCATGGAGAAC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rcv1b s GCCTTCGCACTCTATGATGTG as CTCGTCGTCAGGAAGGTTTTTC</td>
+    </tr>
+    <tr>
+      <td>rcv2a s CTTGGTCCTCTTTGGGAATCAG as AGTGGGCCTTCTCACTCTTC</td>
+    </tr>
+    <tr>
+      <td>rcv2b s TGATGTGGACAAGAACGGTTAC as GGGAAGACTTGTCTGCTTGTC</td>
+    </tr>
+    <tr>
+      <td>arr3a s GCCATCCCTTCACTTTCAATA as GCTTTTCCTTTGTCGTCTGG</td>
+    </tr>
+    <tr>
+      <td>arr3b s ACTCCCCCTTGTTCTGATGTC as TTGCTCCTCACTGGCTGTAG</td>
+    </tr>
+    <tr>
+      <td>grk7a s TGAACGTCTTGGCTGCAA as CCCAGGGTGGATCGATTAG</td>
+    </tr>
+    <tr>
+      <td>grk7b s ACATTGAGGACCGCCTTG as CCCATGGAGGTGGAATGA</td>
+    </tr>
+    <tr>
+      <td>rgs9a s CAACATTATAGGCCACGGATGAC as GATCCCTTCACACCAGTTGATG</td>
+    </tr>
+    <tr>
+      <td>ef1 s CTGGAGGCCAGCTCAAACAT as ATCAAGAAGAGTAGTACCGCTAGCATTAC (Lin et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>actb2 s CCAGCTGTCTTCCCATCCA as TCACCACGTAGCTGTCTTTCTG (Lin et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>rpl13 s TCTGGAGGACTGTAAGAGGTATGC as AGACGCACAATCTTGAGAGCAG (Lin et al., 2009)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse care and gene expression analysis
 
 Mice were maintained at the Laboratory Animal Services Center (LASC) of the University of Zurich in a 12 hr light:12 hr dark cycle with lights on at 7 am. All animal experiments were performed according to the ARVO Statement for the Use of Animals in Ophthalmic and Vision Research and the regulations of Veterinary Authorities of Kanton Zurich, Switzerland.
 
 Ten 12-week-old wildtype mice (129S6; Taconic, Ejby, Denmark) were used in our experiments. Dark-phase mice were killed under red light and retinas were processed further under normal light conditions. Three mice at each time point (ZT1, 5, 9, 13, 17 and 21) were sacrificed and RNA was extracted (Macherey-Nagel, Oensingen, Switzerland) according to the manufacturer’s instructions. cDNA synthesized using oligo-dT was done as previously described (Storti et al., 2019). The samples collected from different time points were masked during RNA extraction and cDNA generation. qRT-PCR was performed by ABI QuantStudio3 machine (Thermo Fisher Scientific) with the PowerUp Sybr Green master mix (Thermo Fisher Scientific). Two technical replicates were conducted. Primer pairs used are listed in Table 2 for each gene of interest. Beta-actin (Actb) was used as a housekeeping gene to normalize gene expression with the comparative threshold cycle method (DDCt) using the Relative Quantification software (Thermo Fisher Scientific). The highest expression level was normalized to 1. Statistical analysis was performed in R 4.1.0 with ‘rain’ package (Thaben and Westermark, 2014).
 
-## In situ hybridization
+**Table 2.**
+ Mouse primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Arrb1 S GCTCTGTGCGGTTACTGATCC as TGTCGGTGTTGTTGGTCACG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arrb3 s GCTAACCTGCCCTGTTCAGT as GCTAACCTGCCCTGTTCAGT</td>
+    </tr>
+    <tr>
+      <td>Grk1 s TGAAGGCGACTGGCAAGATG as AGGTCCGTCTTGGTCTCGAA</td>
+    </tr>
+    <tr>
+      <td>Rgs9 s TTCGCTCCCATTCGTGTTGT as ATGTCCTTCACCAGGGCTTC</td>
+    </tr>
+    <tr>
+      <td>Recvrn1 s AGTGGGCCTTCTCGCTCTA as ATCATCTGGGAGGAGTTTCACA</td>
+    </tr>
+    <tr>
+      <td>Actb s CAACGGCTCCGGCATGTGC as CTCTTGCTCTGGGCCTCG</td>
+    </tr>
+  </tbody>
+</table>
+
+### In situ hybridization
 
 Primers used to generate in situ probes are listed in Table 3. Probes were digoxigenin‐labeled using the DIG RNA Labeling Mix purchased from Roche.
+
+**Table 3.**
+ Primer sequences for in situ probe preparation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>rcv1a s GGACCAGAGTACAATTTAAG as GAAGCTCTAATCAGTCATAG (Zang et al., 2015)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rcv1b s CAGACCAGCACCACATAC as TCTTGCACTTTCTGTGGTT (Zang et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>rcv2a s CAACATCTTTCTGAGCCC as ATAGCGTCTTCATTCTCC (Zang et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>rcv2b s CACTCAGACAGAAGTCAT as GTAGACCATCATCGCTTG (Zang et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>grk7a s GCATCTTCTAGTCTGATAGCAC as ACAGCTTCAATCATGTTAGTGA (Rinner et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>grk7b s CCCAGAGCGTCATATAGTG as AGTCACAGGAATAAGCTATGAA (Rinner et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>rgs9a s TTCCGGAATACAAAATGACAA as GCCTCGTGGGTCATTGAG</td>
+    </tr>
+    <tr>
+      <td>rgs9b s GAAGCGAATATGACCATAAGG as ATCAGCCCTTCCTCGTTG</td>
+    </tr>
+    <tr>
+      <td>arr3a s ATGGCTGACAAAGTTTACAAG as GCCCTGTGGAATCTGATATG (Renninger et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>arr3b s CATGACAAAGGTTTACAAGAAG as TGCTCCTCACTGGCTGTAG (Renninger et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>arrSa s CAATGAGTCCAAAAAATGTCG as TAACCGAGAAGTGCTCTTTC (Renninger et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>arrSb s ATGAGTCCCAAGCACATCATC as CAGCCAGCTCAAAACACG (Renninger et al., 2011)</td>
+    </tr>
+  </tbody>
+</table>
 
 For whole-mount ISH, embryos were treated with E3 containing 0.2 mM PTU (Sigma-Aldrich) to avoid pigmentation. 5 dpf larvae were fixed in 4% paraformaldehyde (PFA; Sigma) in phosphate-buffered saline (PBS) overnight at 4°C. Time points with maximal differences were chosen according to qRT-PCR results. Embryos were washed three times in PBS containing 1% Tween (PBST), dehydrated step wise (25, 50, and 70% methyl alcohol (MeOH) in PBST), and stored in 100% MeOH at –20°C. When comparing two groups of samples fixed at different time points, the tails of the group that may produce weaker staining were cut and mixed with the other group during staining.
 
 For slide ISH, eyeballs were removed from adult zebrafish at different time points and fixed overnight at 4°C using 4% PFA. Detailed ISH processes have been previously described (Haug et al., 2015). When comparing two groups of samples fixed at different time points, both samples were placed on the same slide.
 
-## Infrared western blotting
+### Infrared western blotting
 
 Five to six eyeballs from adult zebrafish were homogenized in ice-cold 150 ml RIPA buffer (150 mM NaCl, 1% Triton-X, 0.5% sodiumdeoxycholate, 50 mM Tris (pH 8), 1 mM ethylenediaminetetraacetic acid [EDTA], 0.1% sodium dodecyl sulfate [SDS]) containing cOmplete Protease Inhibitor Cocktail ([Roche]). After 2 hr of incubation on a 4°C shaker, lysates were centrifuged for 30 min at 4°C. During this procedure, all the samples were masked. Supernatants were stored at –80°C. Nitrocellulose membranes with 0.45 µm pore size were used. Primary antibodies were diluted to the following concentrations: rabbit anti-Arr3a: 1:4000; rabbit anti-Grk7a: 1:3000; mouse anti-β-actin: 1:6000 (Renninger et al., 2011; Rinner et al., 2005). Anti-arr3a and anti-β-actin antibodies or anti-Grk7a and anti-β-actin antibodies were applied simultaneously. Secondary antibodies IRDye 800CW Goat anti-Rabbit IgG and IRDye 680RD Goat anti-Mouse IgG (LI-COR) were diluted in 1:20,000 ratio in blocking buffer (1% bovine serum albumin [BSA] in PBST). Signal was detected by the Odyssey CLx Imaging System (LI-COR) and data were normalized to the internal loading control β-actin by IMAGEJ (Schindelin et al., 2012).
 
-## Electroretinography
+### Electroretinography
 
 ERG was recorded as previously described (Zang et al., 2015). Light intensity (light source: Zeiss XBO 75 W) was measured using a spectrometer (Ocean Optics, USB2000b; software Spectra Suite, Ocean Optics) with a spectral range described previously (Supplemental Material 2A in Zang et al., 2015). Pairs of two light flashes with equal intensity and duration (500 ms) were applied (Rinner et al., 2005). Intervals between two flashes were either 100, 200, 300, 500, 1000, 2000, 3000, or 5000 ms. The interval between two pairs was 20 s. b-wave recovery is defined as the ratio of the second b-wave amplitude to the first one in the same pair.
 
@@ -150,14 +317,14 @@ To measure ERG a-wave, 5 dpf larval eyeballs were treated with 400 µM L-AP4 and
 
 Flicker-fusion ERGs were measured with a white light emitting diode (LED) light source (Ocean Optics; LSM serie) controlled by LDC-1 controller (Ocean Optics). The spectrum of this light source was was measured by a spectrometer (Ocean Optics, USB2000b; software Spectra Suite, Ocean Optics; Figure 4—figure supplement 2). Except for the light source, flicker ERG was performed in the same setup as a-wave ERG. The flicker frequencies of 5 Hz, 8 Hz, 10 Hz, 12 HZ, and 15 Hz at 50% duty cycle were used. Flicker-fusion ERG data were analyzed by MATLAB (R2020b).
 
-## Phototransduction modeling
+### Phototransduction modeling
 
 The computational model of vertebrate phototransduction was introduced and verified previously (Invergo et al., 2014; Invergo et al., 2013). We simulated the photoresponse to different light intensities of 1.7, 4.8, 15.2, 39.4, 125, 444, 1406, and 4630 photons µm–2 with a flash duration of 500 ms. Default parameters in the model were kept for morning (ZT1) simulation. For evening (ZT13) simulation, the relative gene expression change between ZT1 and ZT13 of larvae LD conditions was applied. Parameters for each gene are listed in Supplementary file 4. The simulation was performed in COPASI (Hoops et al., 2006).
 
-## Visual motor response
+### Visual motor response
 
 The VMR was measured using a Zebrabox (ViewPoint Life Science, Lyon, France). 5 dpf larvae were placed in a 96-well plate, subjected to dark adaptation for 10 min inside the Zebrabox, and the larval movement recorded with light off, on, and off for 5 min each. The distance that a single larva moved was measured every 2 s. Baseline activity was calculated as the average movement 1 min before light on or off.
 
-## Optokinetic response
+### Optokinetic response
 
 The OKR was recorded as previously described (Rinner et al., 2005). Briefly, 5 dpf larvae were tested with sinusoidal gratings at different time points (ZT1, 4, 7, 10 and 13). To determine the contrast sensitivity, a spatial frequency of 20 cycles/360° and an angular velocity of 7.5°/s were used with different contrast settings (5, 10, 20, 40, 70, and 100%). To explore the spatial sensitivity, an angular velocity of 7.5°/s and 70% of maximum contrast were applied with a varying spatial frequency (7, 14, 21, 28, 42, and 56 cycles/360°). Figures were prepared by SPSS (version 23.0; Armonk, NY: IBM Corp).

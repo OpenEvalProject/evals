@@ -47,43 +47,272 @@ Here, we investigate the role of TRPM4 in pressure overload LVH induced by TAC i
 
 ## Results
 
-## Development of LV hypertrophy in response to pressure overload at 14 days after TAC in WT mice
+### Development of LV hypertrophy in response to pressure overload at 14 days after TAC in WT mice
 
 As documented in our previous study (Yu et al., 2021), TAC-induced cardiac hypertrophy is a response to LV pressure overload. As expected, LV systolic pressure increased by ~65 mmHg (p<0.001) 14 days after TAC (Table 1), whereas heart rate (Table 1), dP/dtmax, and dP/dtmin (Table 1) remained unaltered. Consistent with 14 days of TAC resulting in a compensated LVH model, body weight (BW) and lung weight (LW) (Table 1) remained unchanged in TAC mice compared to sham-operated mice. These results indicate that our TAC model at 14 days remains an excellent model of compensated LVH rather than heart failure.
+
+**Table 1.**
+ Haemodynamic parameters were measured in wild-type (WT) mice 14 days after subjected to TAC versus sham-operated controls (n = 7–11/group).Post-mortem analysis of mice 2 days or 14 days after sham or TAC; LVH developed 14 days after TAC, indicated by the ratios of HW/BW, LVW/BW, and LVW/TL in WT mice subjected to TAC versus sham-operated controls. Cardiac fibrosis was evaluated by Masson’s trichrome staining of LV tissue from WT mice subjected to 2 days or 14 days of TAC versus sham-operated controls; cardiac fibrosis areas were graded (n = 5–6/group). Relative Collagen III (Col3a1) mRNA expression was normalised by GAPDH and calculated as fold change relative to sham in 2 days and 14 days groups, respectively (n = 4/group). LVSP: left ventricular systolic pressure; HR: heart rate; dP/dt: first derivative of pressure with respect to time. BW: body weight; HW: heart weight; LVW: left ventricular weight; LW: lung weight; TL: tibia length; HW/BW: heart weight to body weight ratio; LVW/BW: LV weight to body weight ratio; LVW/TL: LV weight to tibia length ratio; LW/BW: lung weight to body weight ratio. Results are presented as means ± SEM. **p<0.01, ***p<0.001, compared between sham- and TAC-operated groups.Table 1—source data 1.Haemodynamic and anatomical parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">2 days</th>
+      <th colspan="2">14 days</th>
+    </tr>
+    <tr>
+      <th>Sham</th>
+      <th>TAC</th>
+      <th>Sham</th>
+      <th>TAC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Haemodynamic parameter</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td rowspan="7" colspan="2"></td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>HR (bpm)</td>
+      <td>506 ± 4</td>
+      <td>506 ± 3</td>
+    </tr>
+    <tr>
+      <td>Aortic systolic pressure (mmHg)</td>
+      <td>103 ± 1</td>
+      <td>164 ± 2***</td>
+    </tr>
+    <tr>
+      <td>Aortic diastolic pressure (mmHg)</td>
+      <td>76 ± 1</td>
+      <td>74 ± 1</td>
+    </tr>
+    <tr>
+      <td>LV systolic Pressure (mmHg)</td>
+      <td>105 ± 3</td>
+      <td>164 ± 8***</td>
+    </tr>
+    <tr>
+      <td>dP/dtmax (mmHg/s)</td>
+      <td>9438 ± 367</td>
+      <td>9838 ± 259</td>
+    </tr>
+    <tr>
+      <td>dP/dtmin (mmHg/s)</td>
+      <td>−9666 ± 377</td>
+      <td>−10108 ± 364</td>
+    </tr>
+    <tr>
+      <td>Anatomical parameter</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>8</td>
+      <td>8</td>
+      <td>11</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>BW (g)</td>
+      <td>28.5 ± 0.3</td>
+      <td>27.7 ± 0.5</td>
+      <td>28.6 ± 0.3</td>
+      <td>27.2 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>HW (mg)</td>
+      <td>136.7 ± 2.2</td>
+      <td>132.8 ± 1.3</td>
+      <td>133.1 ± 1.9</td>
+      <td>176.1 ± 3.6 ***</td>
+    </tr>
+    <tr>
+      <td>LVW (mg)</td>
+      <td>98.0 ± 2.0</td>
+      <td>97.7 ± 1.4</td>
+      <td>96.4 ± 1.8</td>
+      <td>136.1 ± 1.4 ***</td>
+    </tr>
+    <tr>
+      <td>LW (mg)</td>
+      <td>141.9 ± 0.9</td>
+      <td>143.6 ± 1.5</td>
+      <td>146.9 ± 1.8</td>
+      <td>147.0 ± 1.9</td>
+    </tr>
+    <tr>
+      <td>TL (mm)</td>
+      <td>17.4 ± 0.1</td>
+      <td>17.5 ± 0.2</td>
+      <td>17.5 ± 0.2</td>
+      <td>17.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>HW/BW (mg/g)</td>
+      <td>4.8 ± 0.1</td>
+      <td>4.8 ± 0.1</td>
+      <td>4.6 ± 0.1</td>
+      <td>6.6 ± 0.1 ***</td>
+    </tr>
+    <tr>
+      <td>LVW/BW (mg/g)</td>
+      <td>3.4 ± 0.1</td>
+      <td>3.5 ± 0.1</td>
+      <td>3.4 ± 0.1</td>
+      <td>5.1 ± 0.1 ***</td>
+    </tr>
+    <tr>
+      <td>LVW/TL (mg/mm)</td>
+      <td>5.6 ± 0.1</td>
+      <td>5.6 ± 0.1</td>
+      <td>5.3 ± 0.1</td>
+      <td>7.9 ± 0.1 ***</td>
+    </tr>
+    <tr>
+      <td>LW/BW (mg/g)</td>
+      <td>5.0 ± 0.1</td>
+      <td>5.2 ± 0.1</td>
+      <td>5.2 ± 0.1</td>
+      <td>5.4 ± 0.1</td>
+    </tr>
+    <tr>
+      <td colspan="5">Assessment of cardiac fibrosis</td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>5</td>
+      <td>5</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Fibrosis areas (%)</td>
+      <td>4.0 ± 0.2</td>
+      <td>3.6 ± 0.2</td>
+      <td>4.4 ± 0.1</td>
+      <td>12.4 ± 0.5***</td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Collagen III mRNA expression (fold change)</td>
+      <td>1.0 ± 0.1</td>
+      <td>5.7 ± 0.8**</td>
+      <td>1.0 ± 0.1</td>
+      <td>5.1 ± 0.7**</td>
+    </tr>
+  </tbody>
+</table>
 
 Representative photos illustrate the size differences of WT mouse hearts after 2 days and 14 days of sham or TAC (Figure 1—figure supplement 1A). LVH was not detected 2 days after TAC (Table 1, Figure 1—figure supplement 1A), whereas we observed significant LVH in WT mice 14 days after TAC, as evidenced by increases in heart weight (HW, p<0.001), left ventricular weight (LVW, p<0.001), and the ratios of heart weight/body weight (HW/BW, p<0.001), left ventricle weight/body weight (LVW/BW, p<0.001), and left ventricle weight/tibial length (LVW/TL, p<0.001), without changes in BW or TL, when compared with the sham-operated animals (Table 1). Consistent with the development of pathological hypertrophy, TAC was associated with an increase in cardiac fibrosis (p<0.001, Table 1, Figure 1—figure supplement 1B) and enhanced collagen III (Col3a1) expression (p<0.001, Table 1).
 
 Haemodynamic parameters were measured in wild-type (WT) mice 14 days after being subjected to TAC versus sham-operated controls (n = 7–11/group). Post-mortem analysis of mice 2 days or 14 days after sham or TAC; LVH developed 14 days after TAC, indicated by the ratios of HW/BW, LVW/BW, and LVW/TL in WT mice subjected to TAC versus sham-operated controls. Cardiac fibrosis was evaluated by Masson’s trichrome staining of LV tissue from WT mice subjected to 2 days or 14 days of TAC versus sham-operated controls; cardiac fibrosis areas were graded (n = 5–6/group). Relative Collagen III (Col3a1) mRNA expression was normalised by GAPDH and calculated as fold change relative to sham in 2 days and 14 days groups, respectively (n = 4/group). LVSP: left ventricular systolic pressure; HR: heart rate; dP/dt: first derivative of pressure with respect to time; BW: body weight; HW: heart weight; LVW: left ventricular weight; LW: lung weight; TL: tibia length; HW/BW: heart weight to body weight ratio; LVW/BW: LV weight to body weight ratio; LVW/TL: LV weight to tibia length ratio; LW/BW: lung weight to body weight ratio. Results are presented as means ± SEM. **p<0.01, ***p<0.001, compared between sham- and TAC-operated groups.
 
-## Early gene markers of induction of pathological hypertrophy in WT mice
+### Early gene markers of induction of pathological hypertrophy in WT mice
 
 Although there was no significant LVH 2 days after TAC (Table 1, Figure 1—figure supplement 1A), induction of hypertrophy-associated genes (atrial natriuretic peptide [ANP, Nppa; 9.9-fold, p<0.01], brain natriuretic peptide [BNP, Nppb; 8.1-fold, p<0.01], and α-skeletal actin [α-SA, Acta1; 4.5-fold, p<0.01]) was already evident at this time (Table 2), and expression of these genes remained high at 14 days (ANP, Nppa; p<0.001, BNP, Nppb; p<0.001, and α-SA, Acta1; p<0.001,Table 2).
 
-## TRPM4 expression was downregulated in response to LV pressure overload in WT mice
+**Table 2.**
+ Early markers of LVH induction in response to left ventricular pressure overload in WT mice.Relative mRNA expression of ANP (Nppa), BNP (Nppb), and a-SA (Acta1) after 2 days or 14 days of TAC compared to sham (n = 4–5/group). The relative mRNA expression was normalised by GAPDH and calculated as fold change relative to sham in 2 days and 14 days groups, respectively.Results are presented as means ± SEM. **p<0.01, ***p<0.001, compared between sham- and TAC-operated groups.Table 2—source data 1.Early gene markers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">2 days</th>
+      <th colspan="2">14 days</th>
+    </tr>
+    <tr>
+      <th>Sham</th>
+      <th>TAC</th>
+      <th>Sham</th>
+      <th>TAC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LVH markers (fold change)</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>ANP</td>
+      <td>1.0 ± 0.1</td>
+      <td>9.9 ± 1.1**</td>
+      <td>1.0 ± 0.1</td>
+      <td>9.6 ± 0.7***</td>
+    </tr>
+    <tr>
+      <td>BNP</td>
+      <td>1.0 ± 0.1</td>
+      <td>8.1 ± 0.8**</td>
+      <td>1.0 ± 0.2</td>
+      <td>7.5 ± 0.4***</td>
+    </tr>
+    <tr>
+      <td>α-SA</td>
+      <td>1.0 ± 0.1</td>
+      <td>4.5 ± 0.5**</td>
+      <td>1.0 ± 0.1</td>
+      <td>4.2 ± 0.4***</td>
+    </tr>
+  </tbody>
+</table>
+
+### TRPM4 expression was downregulated in response to LV pressure overload in WT mice
 
 To examine whether the TRPM4 ion channel is involved in TAC-induced LVH, we conducted real-time quantitative PCR (RT-PCR) on LV tissues or isolated LV cardiomyocytes from TAC- or sham-operated hearts. Trpm4 mRNA expression in LV tissue (Figure 1A) and isolated cardiomyocytes (Figure 1B) fell by 50% (p<0.001) and 57% (p<0.001), respectively, in response to 2 days of TAC, and expression continued to be reduced by 30% (p<0.05, Figure 1A) and 40% (p<0.001, Figure 1B), respectively, at 14 days. Consistent with the mRNA changes, TRPM4 protein expression in LV tissue and isolated cardiomyocytes also fell significantly, particularly in cardiomyocytes, after 14 days of TAC (p<0.001) (Figure 1C–E).
 
-## TRPM4 deficiency decreases the hypertrophic response to TAC-induced pressure overload
+![Figure 1.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig1-v1.jpg)
+
+**Figure 1.:** (A) Relative mRNA expression of Trpm4 in LV tissue and (B) in LV cardiomyocytes (CMs) after 2 days and 14 days of sham and TAC. (C) Representative western blots of TRPM4 protein expression in LV tissue (left panel) and in LV cardiomyocytes (right panel). (D) Western blots from LV tissue and (E) LV cardiomyocytes after 2 days and 14 days of TAC were quantified for TRPM4 protein expression. Relative TRPM4 mRNA and protein expression in the LV tissue and cardiomyocytes were normalised by GAPDH and calculated as fold change relative to sham in 2 days and 14 days groups, respectively. Results are presented as means ± SEM. *p<0.05, ***p<0.001 vs. sham-operated groups.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative photos of hearts from WT mice 2 days or 14 days after sham or TAC. (B) Representative photos of cardiac fibrosis, evaluated by Masson’s trichrome staining of LV tissue from WT mice subjected to TAC versus sham-operated controls. Scale bar = 100 µm.
+
+### TRPM4 deficiency decreases the hypertrophic response to TAC-induced pressure overload
 
 To further investigate the role of TRPM4 channels in pressure overload-induced LVH, we performed TAC or sham surgery in mice with cardiomyocyte-specific, conditional deletion of Trpm4 (Trpm4 cKO) using Cre expression driven by the Myl7 promoter (Kecskés et al., 2015). Results obtained in these Trpm4 cKO mice were compared with those in WT (Trpm4+/+) mice. Haemodynamic and anatomical parameters obtained after 2 days and 14 days of sham/TAC in WT and Trpm4 cKO mice are shown in Supplementary file 1. TAC produced a similar degree of LV pressure overload in both WT (p<0.001) and Trpm4 cKO (p<0.001) mice when compared with sham-operated groups (Figure 2A) but did not alter heart rate (Figure 2B), cardiac contractility (Figure 2C,D), LW (Figure 2E), or BW (Figure 2G). Figure 2F illustrates representative images of WT and Trpm4 cKO mouse hearts after 14 days of sham or TAC. No LVH was detected 2 days after TAC in either Trpm4 cKO mice or WT mice when compared with sham-operated groups (Figure 2H–J). After 14 days, TAC induced a 32, 42, and 44% increase (all p<0.001) in HW/BW ratio, LVW/BW ratio, and LVW/TL ratio, respectively, in WT mice when compared with sham-operated controls (Figure 2H–J). However, this hypertrophic response to 14 days of TAC was attenuated in Trpm4 cKO mice, as evident by only a 17, 20, and 23% increase (all p<0.001) in HW/BW ratio, LVW/BW ratio, and LVW/TL ratio, respectively (Figure 2H–J). These findings demonstrate that when compared with WT mice, Trpm4 cKO mice developed approximately 50% less LVH (p<0.001) in response to TAC.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig2-v1.jpg)
 
-**Figure 2.:** Trpm4 cKO mice to TAC-induced LV pressure overload.(A) Systolic pressure, (B) heart rate, (C, D) dP/dt after 14 days of sham or TAC in WT and Trpm4 cKO mice. (n = 6–7/group). (E) Lung weight after 14 days of sham or TAC in WT and Trpm4 cKO mice. (n = 7–9/group). (F) Representative photos indicate heart size differences after 14 days of sham or TAC in WT and Trpm4 cKO mice. (G) Body weight, (H) Heart weight, and (I, J) LV weight normalised to body weight and tibia length, in WT and Trpm4 cKO mice after 2 days and 14 days of sham or TAC. (n = 7–9/group). (K) Representative micrographs and (L) quantitation of Masson’s trichrome staining of LV tissue from WT mice and Trpm4 cKO mice after 14 days of sham or TAC (n = 3/group), scale bar = 200 µm in (K). (M) Relative collagen III (Col3a1) mRNA expression after 14 days of sham or TAC. (n = 6/group). The mRNA relative expression was normalised by comparison to GAPDH and calculated as fold change relative to sham in WT and Trpm4 cKO groups, respectively. Results are presented as means ± SEM. *p<0.05, ***p<0.001.Figure 2—source data 1.Figure 2A,B,C,D,E,G,H,I,J,L, and M.
+**Figure 2.:** (A) Systolic pressure, (B) heart rate, (C, D) dP/dt after 14 days of sham or TAC in WT and Trpm4 cKO mice. (n = 6–7/group). (E) Lung weight after 14 days of sham or TAC in WT and Trpm4 cKO mice. (n = 7–9/group). (F) Representative photos indicate heart size differences after 14 days of sham or TAC in WT and Trpm4 cKO mice. (G) Body weight, (H) Heart weight, and (I, J) LV weight normalised to body weight and tibia length, in WT and Trpm4 cKO mice after 2 days and 14 days of sham or TAC. (n = 7–9/group). (K) Representative micrographs and (L) quantitation of Masson’s trichrome staining of LV tissue from WT mice and Trpm4 cKO mice after 14 days of sham or TAC (n = 3/group), scale bar = 200 µm in (K). (M) Relative collagen III (Col3a1) mRNA expression after 14 days of sham or TAC. (n = 6/group). The mRNA relative expression was normalised by comparison to GAPDH and calculated as fold change relative to sham in WT and Trpm4 cKO groups, respectively. Results are presented as means ± SEM. *p<0.05, ***p<0.001.
 
-## Reduced fibrosis in Trpm4 cKO hearts after TAC
+### Reduced fibrosis in Trpm4 cKO hearts after TAC
 
 We evaluated cardiac fibrosis in response to pressure overload in Trpm4 cKO hearts and WT hearts by Masson’s trichrome staining (Figure 2K). When compared with an average 3.17-fold increase (p<0.001) in cardiac fibrosis in WT TAC hearts, the increase in Trpm4 cKO TAC hearts was only 1.75-fold (p<0.05) (Figure 2L). In addition, we found a significant increase in collagen III (Col3a1) mRNA expression in WT TAC hearts when compared with WT sham hearts (p<0.001). However, there was no significant increase in collagen III (Col3a1) mRNA expression in Trpm4 cKO TAC hearts when compared with sham hearts (Figure 2M). Thus, Trpm4 inactivation attenuated the fibrotic response to TAC.
 
-## TRPM4 deficiency reduced the expression of hypertrophy markers in response to TAC-induced pressure overload
+### TRPM4 deficiency reduced the expression of hypertrophy markers in response to TAC-induced pressure overload
 
 Consistent with the development of pathological hypertrophy, both 2 and 14 days of TAC in WT mice significantly enhanced expression of the hypertrophy-associated genes, ANP (Nppa), BNP (Nppb), and α-SA (Acta1) (Figure 3A,B). However, these gene markers remained unchanged with TAC in Trpm4 cKO mice (Figure 3A,B), except for ANP (Nppa) at 14 days. These data indicate that loss of TRPM4 attenuates the activation of hypertrophic marker genes in response to TAC.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig3-v1.jpg)
 
-**Figure 3.:** Trpm4 cKO mice.(A) Relative mRNA expression of ANP (Nppa), BNP (Nppb), and α-SA (Acta1) after 2 days of TAC compared to sham-operated mice. (n = 6/group). (B) Relative mRNA expression of ANP (Nppa), BNP (Nppb), and α-SA (Acta1) after 14 days of sham and TAC. (n = 6/group). The mRNA relative expression was normalised by GAPDH and calculated as fold change relative to WT sham in 2 days and 14 days groups, respectively. Results are presented as means ± SEM, *p<0.05, **p<0.01, ***p<0.001.Figure 3—source data 1.Figure 3A,B.
+**Figure 3.:** (A) Relative mRNA expression of ANP (Nppa), BNP (Nppb), and α-SA (Acta1) after 2 days of TAC compared to sham-operated mice. (n = 6/group). (B) Relative mRNA expression of ANP (Nppa), BNP (Nppb), and α-SA (Acta1) after 14 days of sham and TAC. (n = 6/group). The mRNA relative expression was normalised by GAPDH and calculated as fold change relative to WT sham in 2 days and 14 days groups, respectively. Results are presented as means ± SEM, *p<0.05, **p<0.01, ***p<0.001.
 
-## CaMKII-HDAC4-MEF2 hypertrophic signalling pathway in WT and Trpm4 cKO mouse hearts
+### CaMKII-HDAC4-MEF2 hypertrophic signalling pathway in WT and Trpm4 cKO mouse hearts
 
 We next examined the molecular signalling pathways mediating LVH in both WT and Trpm4 cKO hearts after 2 days of TAC, a time at which molecular signalling is already activated in response to the increased haemodynamic load induced by TAC (Yu et al., 2021), but before measurable LVH has developed.
 
@@ -91,13 +320,33 @@ The cytoplasmic and the nuclear fractions of LV tissue were separated as describ
 
 Representative images of key cytoplasmic and nuclear proteins detected by western blot analysis are shown in Figure 4A. Quantitative data for cytoplasmic and nuclear proteins, normalised by GAPDH and Histone H2B, respectively, are shown in Figure 4B. We first investigated whether CaMKIIδ activity is increased in response to pressure overload by measuring both total CaMKIIδ expression and auto-phosphorylated CaMKII (p-CaMKII) at threonine 287 (Thr287), a marker of CaMKII activation (Lai et al., 1987; Luczak et al., 2020). We found that in WT hearts, 2 days of TAC resulted in a significant increase in the total CaMKIIδ protein level in cytoplasmic (p<0.01) and nuclear fractions (p<0.01), accompanied by increased p-CaMKII protein levels in both the cytoplasm (p<0.05) and nucleus (p<0.01). Associated with this increase, there was a rise in total cytoplasmic HDAC4 (p<0.01) and phosphorylated HDAC4 (p-HDAC4) levels (p<0.001), but no change in nuclear HDAC4. This 2.11-fold increase in the cytoplasmic/nuclear ratio of HDAC4 (p<0.01) in WT hearts indicates that TAC-induced pressure overload leads to the nuclear export of HDAC4 in WT TAC hearts. This increase was accompanied by a 1.76-fold increase of MEF2A levels in the nucleus (p<0.05), which together with the de-repression of MEF2A activity would account for the induction of LVH.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative western blots showing the expression of key proteins in the CaMKII-HDAC4-MEF2 signalling pathway in the cytoplasm (left) and nucleus (right). (B) Cytoplasmic (left) and nuclear (right) quantitative data were normalised by GAPDH and Histone H2B, respectively. Fold changes and cytoplasmic/nuclear ratios were calculated relative to sham groups, in each genotype. Results are presented as means ± SEM, n = 6/group, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The purity of the fractions extracted from the LV tissue was assessed by western blot using specific marker proteins: GAPDH for cytoplasmic fraction and histone H2B for nuclear fraction. Each fraction (n = 6/group) was run side-by-side on the same blot and then probed separately against each of two primary antibodies: anti-GAPDH and anti-Histone H2B to validate purity of fraction.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Cytoplasmic/nuclear ratios are shown as fold changes relative to sham groups, in each genotype. Results are presented as means ± SEM, n = 6/group, *p<0.05, ***p<0.001.
+
 In contrast to the effects of TAC in WT hearts, in Trpm4 cKO hearts, TAC produced a decrease in cytoplasmic CaMKIIδ levels (0.66-fold of that observed in sham hearts; p<0.001). Consistent with this, the cytoplasmic p-CaMKII levels in TAC hearts also decreased (0.63-fold of that observed in sham hearts; p<0.01). Although the increase in nuclear CaMKIIδ was similar (p<0.05) to that observed with TAC in WT hearts, the nuclear p-CaMKII levels showed no significant difference between sham and TAC in Trpm4 cKO hearts, which indicates less nuclear CaMKIIδ activation by TAC in Trpm4 cKO hearts. We found that p-HDAC4 increased in Trpm4 cKO TAC hearts in both the cytoplasm (p<0.05) and the nucleus (p<0.05), but there was no change in total HDAC4. Thus, the cytoplasmic/nuclear ratio of HDAC4 remained the same in Trpm4 cKO TAC hearts as in sham hearts, indicating inhibition of nuclear HDAC4 export in TAC-treated Trpm4 cKO hearts. In addition, consistent with MEF2A activation driving hypertrophy development, reduced LVH in Trpm4 cKO TAC hearts was associated with a smaller (1.26-fold) increase in MEF2A levels in the nucleus (p<0.05) when compared with WT TAC hearts. For completeness, the cytoplasmic/nuclear ratios of other relevant proteins in this signalling pathway are shown in Figure 4—figure supplement 2.
 
 Taken together, these data implicate the CaMKII-HDAC4-MEF2 hypertrophic signalling pathway in mediating TAC-induced LVH, but the extent of the hypertrophic response is regulated by TRPM4 channels.
 
-## Calcineurin-NFAT hypertrophic signalling pathway in WT and Trpm4 cKO mouse hearts
+### Calcineurin-NFAT hypertrophic signalling pathway in WT and Trpm4 cKO mouse hearts
 
 Next, we examined the expression of proteins involved in the calcineurin-NFAT hypertrophic signalling pathway. Representative images of key cytoplasmic and nuclear proteins detected by western blot analysis are shown in Figure 5A. Quantitative data for cytoplasmic and nuclear proteins, normalised by GAPDH and Histone H2B, respectively, are shown in Figure 5B. In WT hearts, there was no significant difference in cytoplasmic or nuclear NFATc4 protein expression in sham and TAC hearts after 2 days. Consistent with these findings, total GSK3β, serine-9 phosphorylated GSK3β and GATA4 levels were also unchanged in response to TAC. These findings indicate that TAC did not result in increased nuclear translocation of NFATc4, the most reliable indicator of calcineurin activation (Molkentin, 2013), and confirm our previous finding (Yu et al., 2021) that the calcineurin-NFAT pathway is not activated by TAC.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative western blots showing the expression of key proteins in the calcineurin-NFAT signalling pathway in cytoplasm (left) and nucleus (right). (B) Cytoplasmic (left) and nuclear (right) quantitative data were normalised by GAPDH and Histone H2B, respectively. Fold changes and cytoplasmic/nuclear ratios were calculated relative to sham groups, in each genotype. Results are presented as means ± SEM, n = 5–6/group, *p<0.05, **p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66582/elife-66582-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Cytoplasmic/nuclear ratios are shown as fold changes relative to sham groups, in each genotype. Results are presented as means ± SEM, n = 6/group.
 
 In contrast to WT hearts, a 1.28-fold increase in nuclear NFATc4 (p<0.05) was observed in Trpm4 cKO hearts after TAC, which led to a 0.31-fold decrease in the cytoplasmic/nuclear ratio compared to sham-operated hearts (p<0.01). This indicated lower nuclear export of NFATc4 in the Trpm4 cKO TAC hearts when compared to sham hearts. Accordingly, we found a 1.20-fold increase in nuclear p-GSK3β (serine 9, Ser9) (p<0.05) in Trpm4 cKO TAC hearts. As phosphorylation at the serine 9 residue indicates inactivation of GSK3β, these findings suggest that the GSK3β-mediated export of NFATc4 from the nucleus was partially inhibited, which is consistent with the increased level of NFATc4 in the nucleus. Furthermore, accompanied by the increase in nuclear NFATc4, a 1.18-fold increase in GATA4 expression (p<0.05) in the nucleus was observed in Trpm4 cKO TAC hearts. All these observations are consistent with a reduction in the tonic inhibition of calcineurin by CaMKII (De Koninck and Schulman, 1998; Kreusser et al., 2014; MacDonnell et al., 2009) in Trpm4 cKO hearts after TAC. For completeness, the cytoplasmic/nuclear ratios of other relevant proteins in this signalling pathway are shown in Figure 5—figure supplement 1.
 
@@ -131,34 +380,219 @@ In summary, our study provides compelling evidence that TRPM4 plays an important
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRPM4 (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat# ACC-044, RRID:AB_2040250</td>
+      <td>Western blot (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CaMKII delta (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab181052, RRID:AB_2891241</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-CaMKII (Thr287) (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA5-37833, RRID:AB_2554441</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HDAC4 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 7628 RRID:AB_10860255</td>
+      <td>Western blot (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-HDAC4 (Ser246) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3443 RRID:AB_2118723</td>
+      <td>Western blot (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MEF2A (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9736 RRID:AB_10691852</td>
+      <td>Western blot (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NFATc4 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab99431, RRID:AB_10675673</td>
+      <td>Western blot (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GSK3β (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9315, RRID:AB_490890</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-GSK3β (Ser9) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9336, RRID:AB_331405</td>
+      <td>Western blot (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GATA4 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-25310, RRID:AB_627667</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2118, RRID:AB_561053</td>
+      <td>Western blot (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H2B (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1790, RRID:AB_302612</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6721, RRID:AB_955447</td>
+      <td>Western blot (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-mouse IgG (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6728, RRID:AB_955440</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ANP (Nppa)_F</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>TGATAGATGAAGGCAGGAAGCCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ANP(Nppa)_R</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>AGGATTGGAGCCCAGAGTGGACTAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BNP (Nppb)_F</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>TCTCCAGAGCAATTCAAGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BNP (Nppb)_R</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>AACAACTTCAGTGCGTTACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>α-SA (Acta1)_F</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>GTGAGATTGTGCGCGACATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>α-SA (Acta1)_R</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>GGCAACGGAAACGCTCATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Collagen III (Col3A1)_F</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>GACAGATTCTGGTGCAGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Collagen III (Col3A1)_R</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>CATCAACGACATCTTCAGGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Trpm4_F</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>GAGAAGCCCACAGATGCCTATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Trpm4_R</td>
+      <td>Sigma-Aldrich</td>
+      <td>PCR primers</td>
+      <td>AGCACCGACACCACCAAGTTTG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 In the first part of the study, we performed experiments on 11–13 week old male C57BL/6J WT mice at the Victor Chang Cardiac Research Institute, Australia. In the second part of this study, we performed surgery on C57BL/6N WT and age- and sex-matched cardiac-specific Trpm4 cKO mice in Katholieke Universiteit Leuven, Belgium. Trpm4flox mice were crossbred with Myl7-Cre mice to generate the Trpm4 cKO mice (Kecskés et al., 2015). All animals were entered into the study in a randomised order, and the investigators were blinded to genotype. All experimental procedures were approved by the Animal Ethics Committee of Garvan/St Vincent’s (Australia) or Katholieke Universiteit Leuven (Belgium), respectively, in accordance with the guidelines of both the Australian code for the care and use of animals for scientific purposes (8th edition, National Health and Medical Research Council, AU, 2013) and the Guide for the Care and Use of Laboratory Animals (8th edition, National Research Council, USA, 2011).
 
-## Induction of LVH
+### Induction of LVH
 
 WT and Trpm4 cKO mice were subjected to TAC to induce pressure overload. Mice were anesthetised with 5% isoflurane and ventilated at 120 breaths/min (Harvard Apparatus Rodent Ventilator). The transverse aortic arch was accessed via an incision in the second intercostal space and constricted with a ligature tied around a 25-gauge needle, which was then removed. The TAC procedure was modified from a published paper (Rockman et al., 1994). Sham mice underwent the same procedure but the ligature was not tied. Simultaneous direct pressure recordings (1.4 F pressure catheter, AD Instruments, P/L) from both the right carotid artery and the aorta distal to the ligature (n = 20 mice) indicated a TAC pressure gradient of 60 ± 8 mmHg with this technique. Animals were sacrificed after 2 days or 14 days.
 
-## Invasive haemodynamic measurements
+### Invasive haemodynamic measurements
 
 After 14 days of sham or TAC, mice were anesthetised by inhalation of isoflurane (1.5%) and a 1.4 F micro-tip pressure catheter (Millar Instruments Inc, Houston, TX) was inserted into the left ventricle via the right carotid artery. The heart rate, systolic aortic pressure, LV systolic pressure, +dP/dt, and –dP/dt were recorded (LabChart 6 Reader, AD Instruments, P/L). Animals were sacrificed, and the heart weight (HW) and left ventricle weight (LVW) normalised to BW and to tibia length (TL) were measured as indicators of LVH.
 
-## Mouse LV cardiomyocytes isolation and purification
+### Mouse LV cardiomyocytes isolation and purification
 
 WT mice were heparinised and euthanised according to the Animal Research Act 1985 No 123 (New South Wales, Australia). Hearts were dissected and perfused through the aorta and the coronary arteries by 10 ml pH 7.2 perfusion buffer containing 135 mM NaCl, 4 mM KCl, 1 mM MgCl2, 0.33 mM NaH2PO2, 10 mM HEPES, 10 mM glucose, 10 mM 2,3-butanedione 2-monoxime (BDM), and 5 mM taurine, with a Langendorff apparatus at 37°C for 5 min. Next, 30 ml digestion buffer composed of the above solution and Collagenase B, D (dose by BW: 0.4 mg/g, Roche) and Protease Enzyme Type XIV (dose by BW: 0.07 mg/g, Sigma-Aldrich) was used to perfuse the hearts for 15 min. After the perfusion, the heart was removed from the setup and placed into a pH 7.4 transfer buffer containing 135 mM NaCl, 4 mM KCl, 1 mM MgCl2, 0.33 mM NaH2PO2, 10 mM HEPES, 5.5 mM glucose, 10 mM BDM, and 5 mg/ml BSA. Both atria and the right ventricle were discarded, and the LV muscle was torn into small pieces and gently dispensed into the transfer buffer repeatedly with a pipette to isolate cardiomyocytes. The suspension was then filtered through a 200 micro filcon cup filter (BD) and centrifuged at 20 g for 2 min. After that, the cardiomyocytes were purified by a method described in a separate paper (Nicks et al., 2020). We confirmed that rod-shaped cardiomyocytes accounted for more than 85% of the total purified cardiomyocytes. The isolated cardiomyocytes were frozen immediately in liquid nitrogen and stored at −80°C for following experiments.
 
-## Quantitative real-time polymerase chain reaction
+### Quantitative real-time polymerase chain reaction
 
 Gene expression was determined by quantitative RT-PCR. Total RNA was extracted and purified from LV tissue and isolated cardiomyocytes with the RNeasy Fibrous Tissue Mini Kit (QIAGEN), following the manufacturer’s protocol. RNA (500 ng) was reverse transcribed into cDNA using the SuperScript III First-Strand Synthesis SuperMix kit (Invitrogen). cDNA was subjected to PCR amplification to detect ANP (Nppa), BNP (Nppb), α-SA (Acta1), collagen III (Col3a1), and Trpm4 gene expression, performed with the CFX384 Touch Real-Time PCR Detection System (Bio-Rad), PCR master mix LightCycler 480 SYBR Green I Master (Invitrogen). Samples were run in technical triplicate, and the mRNA expression levels were normalised to those of GAPDH to calculate relative gene expression using delta-delta Ct method. The mouse RT-PCR primers (Sigma-Aldrich) used are shown in (Key resources table).
 
-## Western blotting
+### Western blotting
 
 For total protein extraction, LV tissue and isolated cardiomyocytes were lysed in a pH 7.4 lysis buffer containing 150 mM NaCl, 50 mM Tris–HCL, 1% Triton X-100, 1 mM sodium orthovanadate, 1 mM beta-glycerophosphate, 5 mM dithiothreitol, and MiniComplete protease inhibitors (Roche); for cytoplasmic and nuclear protein extraction, LV tissue was lysed using NE-PER nuclear and cytoplasmic extraction reagents (Pierce Biotechnology) and Protesase Inhibitor Cocktail Kit and Halt Phosphatase Inhibitor Cocktail (Pierce Biotechnology), both with a homogeniser (PRO Scientific). Protein (40 μg for each sample) was loaded on 4–20% Mini-PROTEAN TGX Gels (Bio-Rad) and separated by electrophoresis. Samples were transferred to PVDF membranes (Bio-Rad), blocked with 5% bovine serum albumin (BSA), and then labelled overnight with primary antibodies (Key resources table): anti-TRPM4 (1:200, Alomone Labs), anti-CaMKIIδ (1:1000; Abcam), anti-p-CaMKII (Thr287, 1:5000; Thermo Scientific), anti-HDAC4 (1:1500; Cell Signaling Technology), anti-p-HDAC4 (Ser246, 1:1500; Cell Signalling Technology), anti-MEF2A (1:3000; Cell Signalling Technology), anti-NFATc4 (1:1500; Abcam), anti-GSK3β (1:500; Cell Signaling Technology), anti-p-GSK3β (Ser9, 1:1500; Cell Signaling Technology), and anti-GATA4 (1:1000; Santa Cruz Biotechnology). Anti-GAPDH (1:10000; Cell Signaling Technology) and anti-Histone H2B (1:5000; Abcam) were used to standardise for loading. Horseradish peroxidase-conjugated goat anti-rabbit (1:10,000) or rabbit anti-mouse (1:5000) secondary antibodies (Abcam) (Key resources table) were used at room temperature for 1 h. Immunologic detection was accomplished using Amersham ECL Western blotting detection reagents (GE Healthcare). Protein levels were quantified by densitometry using ImageJ (NIH) software. Protein levels were normalised to relative changes in Histone H2B for the nuclear fraction and GAPDH for the cytoplasmic fraction and expressed as fold changes relative to those of control animals.
 
-## Histology
+### Histology
 
 Masson’s trichrome stain was used to quantify fibrosis in the LV (collagen fibres stain blue). The hearts were excised from isoflurane-euthanised mice and washed with phosphate-buffered saline. Then the hearts were longitudinally cut at the frontal plane, embedded into optimal cutting temperature compound (Sakura Finetek), gradually frozen in liquid nitrogen via isopentane to avoid tissue damage. Serial sections with a thickness of 6 microns were sliced with a cryostat (Leica). The slides were then stained with a Masson’s trichrome staining kit (Sigma-Aldrich) following the manufacturer’s instructions. Images of the LV were obtained with 4–6 fields per section (McMullen et al., 2004) using a brightfield microscope (Leica). Blue-stained fibrosis areas within sections were determined using colour-based thresholding (Abràmoff et al., 2004) and measured with ImageJ software (NIH; http://rsbweb.nih.gov/ij/). The percentage of total fibrosis area was calculated by taking the sum of the blue-stained areas divided by the total LV area.
 
-## Statistics
+### Statistics
 
 All experiments and analyses were blinded. Averaged data are presented as means ± standard error of the mean (SEM). The statistical analysis was performed using GraphPad Prism software, version 7.04 (GraphPad). For comparisons between two sets of data, unpaired t-test was used to determine the statistical significance. For comparisons among multiple sets of data with one factor or two factors, one-way or two-way ANOVA was used accordingly, followed by Tukey’s post-hoc test. p<0.05 was considered statistically significant.

@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/013xs5b60 Xuanwu Hospital, Capital Medical University Beijing China
+1. Xuanwu Hospital, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))
 2. National Clinical Research Center for Geriatric Diseases Beijing China
-3. https://ror.org/00f1zfq44 Central South University Changsha China
-4. https://ror.org/045x93337 Department of Genetics, Pediatrics, and Medicine (Cardiology), Albert Einstein College of Medicine of Yeshiva University New York United States
-5. https://ror.org/034t30j35 Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences Shanghai China
+3. Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))
+4. Department of Genetics, Pediatrics, and Medicine (Cardiology), Albert Einstein College of Medicine of Yeshiva University New York United States ([ROR:045x93337](https://ror.org/045x93337))
+5. Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences Shanghai China ([ROR:034t30j35](https://ror.org/034t30j35))
 
 † Corresponding author
 
@@ -38,37 +38,73 @@ In this study, we unexpectedly found that NFATc1 constantly labels articular car
 
 ## Results
 
-## Articular cartilage is derived from NFATc1-expressing progenitors
+### Articular cartilage is derived from NFATc1-expressing progenitors
 
 Following our previous discovery that NFATc1 identifies entheseal progenitors at the site of ligaments inserted onto the bone Ge et al., 2016, we unexpectedly found that in Nfatc1Cre;Rosa26mTmG/+ dual-fluorescence reporter mice, the majority of articular chondrocytes expressed green fluorescence protein (GFP) at 8 weeks of age [Figure 1(A and B), 90.55 ± 6.38%, n=5 mice]. As in this genetic reporter mouse line, both Nfatc1-expressing cells and their progenies express GFP, this finding suggests that articular chondrocytes were either expressing Nfatc1 or derived from Nfatc1-expressing progenitors. To clarify the expression pattern of NFATc1 during articular cartilage development, we mapped GFP+ cells in Nfatc1Cre;Rosa26mTmG/+ mice at the early stage of knee joint morphogenesis (E13.5), postnatal day 0 (P0), and 2 weeks of age [Figure 1(A)]. At E13.5, GFP+ cells were mainly localized to the flanking region of the joint interzone with only sporadic distribution in the interzone site. We further examined the expression of NFATc1 at this stage by crossing the tamoxifen-induced Nfatc1CreERT2 mouse line with Rosa26mTmG/+ mice to generate Nfatc1CreERT2;Rosa26mTmG/+ reporter mice, in which the real-time expression of NFATc1 could be reflected by GFP shortly after tamoxifen pulse. The localization of Nfatc1-expressing cells surrounding the joint interzone was verified after administering tamoxifen to Nfatc1CreERT2;Rosa26mTmG/+ mice at E11.5 and sampling at E13.5 [Figure 1—figure supplement 1A].
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal microscopy images showing the distribution of GFP+ cells during articular cartilage development at the knee of Nfatc1Cre;Rosa26mTmG/+ mice (n=5 animals for each age, two knee joints per animal). Arrow indicating the main location of GFP+ cells at the knee at embryonic day 13.5 (E13.5). P0, postnatal day 0. (B) Quantification of GFP+ cells in the articular cartilage of Nfatc1Cre;Rosa26mTmG/+ mouse knee at 8 weeks of age (n=5 animals, one knee joint per animal). AC, articular cartilage. (C) Representative confocal images demonstrating the distribution of RFP+ cells in the articular cartilage at 2 weeks and 8 weeks of age in Nfatc1CreERT2;Rosa26RFP/+ mice 48 hrs after tamoxifen pulse for 5 consecutive days (n=3 mice for each age, two knee joints per animal). (D) Quantification of RFP+ cells in the articular cartilage of Nfatc1CreERT2;Rosa26RFP/+ mouse knee at 2 weeks and 8 weeks of age (n=3 mice for each age, one knee joint per animal). (E) Immunohistochemistry detecting the expression of NFATc1 during mouse articular cartilage development (n=3 mice for each age, two knee joints per animal). Data are mean ± SD of results from five or three animals; scale bars, 200 μm except for the right three images in (E), 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative confocal image showing the distribution of GFP+ cells at the prospective joint site of Nfatc1CreERT2;Rosa26mTmG/+ mice at E13.5 (n=5 mouse embryos). Tamoxifen was administrated to pregnant dams at E11.5 and mouse limbs were sampled at E13.5. Arrows indicating locations of GFP+ cells. (B) Histological images displaying immunostaining of IgG isotype control at different ages of mouse knee development (n=3 mice each age, two knee joints per animal, related to Figure 1E) (C) Representative confocal images showing the distribution of GFP+ or RFP+ cells in articular cartilage of Nfatc1Cre;Rosa26mTmG/+ (n=5, two knee joints for each) or Nfatc1CreERT2;Rosa26RFP/+ (n=3, two knee joints for each) mice respectively at 8 weeks of age. (D) Confocal images showing the absence of GFP+ cells in articular cartilage of Rosa26mTmG/+ control mice and Nfatc1CreERT2;Rosa26mTmG/+ mice without tamoxifen induction (n=3 animals for each). Scale bars, 200 μm except for the right three images in (B), 50 μm.
 
 In neonatal Nfatc1Cre;Rosa26mTmG/+ mice (P0), GFP+ cells consisted of a portion of cells in the presumptive articular cartilage site [Figure 1A]. Strikingly, at 2 weeks of age, most articular chondrocytes turned out to be GFP+, similar to that at 8 weeks of age [Figure 1(A)]. To clarify the real-time expression of NFATc1 in articular cartilage at 2 weeks and 8 weeks of age, we used Nfatc1CreERT2;Rosa26RFP/+ reporter mice, in which the expression of NFATc1 is reflected by red fluorescence protein (RFP) shortly after tamoxifen administration. Of interest, with tamoxifen pulse, RFP+ cells were found scattered in the articular cartilage at 2 weeks of age accounting for about 22.75 ± 2.18% (n=3 mice) of all cells of articular cartilage, while most RFP+ cells were confined to the superficial layers of articular cartilage at 8 weeks of age (10.94 ± 1.26%, n=3) [Figure 1(C and D)]. Furthermore, the expression pattern of NFATc1 in mouse articular cartilage was verified by immunohistochemistry at E13.5, P0, 2 weeks, and 8 weeks of age [Figure 1(E) and Figure 1—figure supplement 1B]. Therefore, by mapping GFP and RFP expression in articular cartilage of Nfatc1Cre;Rosa26mTmG/+ and Nfatc1CreERT2;Rosa26RFP/+ mice respectively [Figure 1—figure supplement 1C], many GFP+ articular chondrocytes in Nfatc1Cre;Rosa26mTmG/+ mice at 2 weeks and 8 weeks of age should be derived from Nfatc1-expressing progenitors and had lost the expression of NFATc1 with development.
 
 Notably, there were no GFP+ chondrocytes in the primordium of growth-plate cartilage at E13.5 in both Nfatc1Cre;Rosa26mTmG/+ and tamoxifen-induced Nfatc1CreERT2;Rosa26mTmG/+ mice [Figure 1(A) and Figure 1—figure supplement 1A], suggesting that NFATc1-expressing cells do not generate the cartilaginous primordium of growth-plate. We did not detect GFP+ cells in articular cartilage in Rosa26mTmG/+ control mice and Nfatc1CreERT2;Rosa26mTmG/+ mice without tamoxifen induction [Figure 1—figure supplement 1D], suggesting that there was no Cre leakage in the articular cartilage in these two reporter mouse lines. Together, these results reveal that articular chondrocytes are derived from NFATc1-expressing progenitors and NFATc1 expression is diminished with articular cartilage development.
 
-## Colony formation and multipotent differentiation of NFATc1-expressing progenitors
+### Colony formation and multipotent differentiation of NFATc1-expressing progenitors
 
 The lineage tracing data in Nfatc1Cre and Nfatc1CreERT2 reporter mice suggest that NFATc1 characterizes articular cartilage progenitors. In this context, the fluorescence-labeled cells after tamoxifen-induced recombination in Nfatc1CreERT2 reporter mice should be able to form in vivo cell clones in or next to the articular cartilage with development. To verify this assumption, we exploited the Nfatc1CreERT2;Rosa26mTmG/+ double-fluorescence reporter mouse line and administered two dosages of tamoxifen to dams at P0 and P1, respectively. One week following the tamoxifen pulse, GFP+ cells were detected at the presumptive articular cartilage site at the mouse knee [Figure 2(A)]. Local GFP+ cell clusters with 3–6 cells each could be observed in articular cartilage by 2 weeks and 8 weeks of age [Figure 2(A and B)]. Notably, GFP+ cell clusters were also found in the meniscus, synovial lining, and ligament [Figure 2(A and B)], suggesting that NFATc1 also marks progenitor cells for joint tissues other than articular cartilage. Indeed, in Nfatc1Cre;Rosa26mTmG/+ mice, GFP+ cells also formed the meniscus, synovial lining, ligament, and primordium of the patella at the knee [Figure 1(A) and Figure 2(C)].
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig2-v2.jpg)
 
-**Figure 2.:** (A) Confocal microscopy images showing the distribution of GFP+ cells in the articular cartilage of Nfatc1 mouse knee at 1 week and 8 weeks after administering tamoxifen to dams at P0 and P1. The most left image showing GFPCreERT2;Rosa26mTmG/++ cells in articular tissues after 1 week of tamoxifen administration. The right three images demonstrating GFP+ cell clusters in the articular cartilage (arrows), meniscus (arrowheads), and ligament. (B) Representative confocal images displaying GFP+ cells or cell clusters (arrows) in the meniscus and articular synovium at 1 week or 2 weeks after tamoxifen administration to dams at P0 and P1. (C) Confocal microscopy images demonstrating that GFP+ cells contribute to the formation of the ligament, synovial lining (left image, arrowheads, 2 weeks of age), and the patella of the knee (right image, arrow, P0) in Nfatc1 mice. All images are representative of five mice at each time point or age, two knee joints per animal. Scale bars, 200 μm.Cre;Rosa26mTmG/+
+**Figure 2.:** (A) Confocal microscopy images showing the distribution of GFP+ cells in the articular cartilage of Nfatc1CreERT2;Rosa26mTmG/+ mouse knee at 1 week and 8 weeks after administering tamoxifen to dams at P0 and P1. The most left image showing GFP+ cells in articular tissues after 1 week of tamoxifen administration. The right three images demonstrating GFP+ cell clusters in the articular cartilage (arrows), meniscus (arrowheads), and ligament. (B) Representative confocal images displaying GFP+ cells or cell clusters (arrows) in the meniscus and articular synovium at 1 week or 2 weeks after tamoxifen administration to dams at P0 and P1. (C) Confocal microscopy images demonstrating that GFP+ cells contribute to the formation of the ligament, synovial lining (left image, arrowheads, 2 weeks of age), and the patella of the knee (right image, arrow, P0) in Nfatc1Cre;Rosa26mTmG/+ mice. All images are representative of five mice at each time point or age, two knee joints per animal. Scale bars, 200 μm.
 
 To further characterize the colony formation capacity of NFATc1-expressing articular cartilage progenitors, we cultured and sorted GFP+ cells and their counterparts (GFP- cells) from the knee of neonatal Nfatc1Cre;Rosa26mTmG/+ mice [Figure 3(A)]. The ex vivo colony formation assay showed that GFP+ cells formed remarkably more numerous and larger cell clones in comparison with GFP- cells when plated at the same cell densities and cultured for the same time period [Figure 3(B)]. A similar outcome could be observed even after five consecutive cell passages [Figure 3—figure supplement 1A]. Thus, NFATc1-expressing articular cartilage progenitors display a rigorous capacity for colony formation both in vivo and ex vivo.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic diagram showing culturing and sorting GFP+ and GFP- cells from the knee of neonatal Nfatc1Cre;Rosa26mTmG/+ mice. (B) Colony formation assay of GFP+ and GFP- cells with 50 or 100 cells plated in 6-well-plates and cultured for 2 weeks. n=6 with cells from three animals, two replicates for each, nonparametric Mann-Whitney test, experiment repeated twice. (C) Alcian blue staining and immunohistochemistry of COL2A1 showing the chondrogenic potential of GFP+ and GFP- cell pellets after being cultured in the chondrogenic differentiation medium for 3 weeks. Isotype as a negative control for COL2A1 antibody. The maximum diameter of cell pellets reflecting the proliferative capacity of GFP+ and GFP- cells. n=9 with cells from three animals, three replicates for each. (D) Alizarin red staining and gene expression analysis of Ibsp and Sp7 demonstrating the osteogenic potential of GFP+ and GFP- cells after being cultured in the osteogenic differentiation medium for 4 weeks. n=6 with cells from three animals, two replicates for each, nonparametric Mann-Whitney test for colony counting data, two-way ANOVA followed by Sidak’s tests for gene expression data, experiments repeated twice. (E) Oil red O staining and gene expression analysis of Fabp4 and Lpl displaying adipogenesis in GFP+ and GFP- cells after being cultured in the adipogenic differentiation medium for 10 days. n=6 with cells from three animals, two replicates for each, nonparametric Mann-Whitney test for colony counting data, two-way ANOVA followed by Sidak’s tests for gene expression data, experiments repeated twice. (F) Schematic illustration and histology respectively showing transplantation of GFP+ cells along with Matrigel matrix underneath the dorsal skin of severe combined immune-deficient mice and the formation of chondrocytes, chondrocyte clusters, and hypertrophic cartilage-like structure (arrows) 4 weeks later. Images are representative of six animals, with GFP- cells as the control (results shown in Figure 3—figure supplement 1B). All data are mean ± SD. Scale bars, 400 μm (C), 500 μm (D), 200 μm (E, F).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Colony formation assay of GFP+ and GFP- cells at P5 with 100 cells plated in 6-well-plates and cultured for 2 weeks (n=6 with cells from 3 mice, two replicates for each, nonparametric Mann-Whitney test). (B) Representative histology images demonstrating H&E staining of transplants of GFP- cells with Matrigel matrix underneath the dorsal skin of severe combined immune-deficient mice for 4 weeks. n=6 animals; scale bars, 200 μm.
 
 To study the differentiation potentials of NFATc1-expressing articular cartilage progenitors, we put GFP+ and GFP- cells under chondrogenic, osteogenic, and adipogenic differentiation conditions, respectively. Notably, GFP+ cells displayed a much higher potential to differentiate toward chondrocytes, osteoblasts, and adipocytes compared to GFP- cells [Figure 3(C–E)]. A more striking difference was noticed under the context of chondrocyte differentiation: in the 3D cell-pellet culture model, GFP+ cells always grew into larger pellets as shown by the diameter of cell pellets and displayed a robust capacity of chondrocyte differentiation as shown by alcian blue staining and COL2A1 protein expression, while GFP- cells formed relatively small pellets and only displayed faint cartilage formation at the margin of cell pellets [Figure 3(C)], indicating that GFP+ cells have a more prominent capacity for proliferation and chondrogenesis compared to GFP- cells. Furthermore, when transplanted alongside with Matrigel matrix underneath the dorsal skin of SCID mice, these GFP+ cells differentiated and formed typical chondrocytes as well as chondrocyte clusters within 4 weeks, while the formation of chondrocytes was rarely observed when transplanting GFP- cells [Figure 3(F) and Figure 3—figure supplement 1B]. Notably, many chondrocyte clusters from GFP+ cells had formed hypertrophic cartilage-like tissue with a certain hardness, similar to the physiological process of articular cartilage development [Figure 3(F)].
 
 Taken together, these results demonstrate the intrinsic capacities of colony formation and multipotent differentiation of NFATc1-expressing articular cartilage progenitors.
 
-## Transcriptional profile of NFATc1-enriched articular cartilage progenitors
+### Transcriptional profile of NFATc1-enriched articular cartilage progenitors
 
 Next, we sought to dissect the molecular signature of NFATc1-enriched articular cartilage progenitors. In order to minimize the influence of differentiated cells in GFP+ and GFP- cell populations, single-clone cells were sorted at the first passage (P1), amplified for one more passage, and subjected to transcriptome analysis at P2 [Figure 4(A)]. Bioinformatics analysis identified 117 high- and 168 low-expressing genes in GFP+ vs. GFP- cells [Figure 4—figure supplement 1A]. High-expressing genes in GFP+ cells were mainly related to skeletal system development, cartilage development, or extracellular matrix component and organization [Figure 4(B) and Figure 4—figure supplement 1B]. Of note, these high-expressing genes in GFP+ cells included several previously reported articular cartilage progenitor cell markers Decker, 2017; Bian et al., 2020, such as Osr2, Prg4, Postn, Col3a1, Gdf6, and Tgfbr2 [Figure 4(C)]. In contrast, enriched genes in GFP- cells were mainly relevant to muscle cell development and differentiation [Figure 4—figure supplement 1C], suggesting that GFP- single-clone cells could be skeletal muscle progenitors. Importantly, the characteristic molecular signature and enriched biological pathways in GFP+ cells were verified by the second transcriptome analysis using bulk primary GFP+ cells [Figure 4—figure supplement 1D-F].
 
+![Figure 4.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic diagram showing the process of sorting single-clone cells for RNA-sequencing. (B) Cluster heatmap displaying 20 high-expressing genes associated with articular cartilage development in GFP+ vs. GFP- cells. Color descending from red to blue indicates log10(FPKM +1) from large to small. n=3 with cells from three animals in each group. (C) Transcriptome analysis revealing the enrichment of previously reported articular cartilage progenitor marker genes Osr2, Prg4, Postn, Col3a1, and Tgfbr2 in GFP+ relative to GFP- cells. (D) Transcriptome analysis identifying high expression of Cd105, Cd10, and Cd13 and low expression of Cd146, Cd29, and Cd151 in GFP+ vs. GFP- cells. (E) Flow cytometry verifying the expression of CD105 in GFP+ relative to GFP- cells. (F) Flow cytometry showing the expression of cell surface molecules CD9, SCA1, CD166, and CD200 in GFP+ and GFP- cells. Representative results of cells from three mice, experiment repeated twice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Volcano diagram from transcriptome analysis of single clone-derived cells showing the distribution of differential expression genes in GFP+ vs. GFP- cells. The threshold of differential expression genes is padj <0.05. (B) Histogram demonstrating top 20 significantly enriched pathways of high-expressing genes in GFP+ relative to GFP- cells by GO enrichment analysis. Green and red hearts referring to pathways related to extracellular matrix biology and skeletal system development, respectively. (C) Histogram demonstrating top 20 significantly enriched pathways of enriched genes in GFP- vs. GFP+ cells by GO enrichment analysis. Yellow arrows indicating pathways related to skeletal muscle development. (D) Volcano diagram from transcriptome analysis of bulk primary GFP+ cells showing the distribution of differential expression genes in GFP+ vs. GFP- cells. padj <0.05 as the threshold of differential expression genes. (E) Cluster heatmap of RNA-sequencing results from bulk primary GFP+ cells verifying the 20 high-expressing genes associated with skeletal and cartilage development in GFP+ vs. GFP- cells. Color descending from red to blue indicates log10(FPKM +1) from large to small. (F) Histogram demonstrating top 20 significantly enriched pathways of high-expressing genes in bulk primary GFP+ cells relative to GFP- cells by GO enrichment analysis. Green and red hearts as indicated in (B). n=3 with cells from three different animals in each group. The n-numbers in (B), (C), and (F) indicating the number of differentially expressed genes concerning the GO term.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Expression of CD11B, CD45, and CD31 in GFP+ and GFP- cells from neonatal Nfatc1Cre;Rosa26mTmG/+ mouse knee, IgG isotype as the negative control. Representative results of cells from three animals, experiment repeated twice. (B) A representative gating strategy for flow cytometry.
+
 Cell surface markers are important in identifying and sorting progenitor or stem cells. Transcriptome analyses showed that both GFP+ and GFP- progenitors expressed several surface markers of cells of mesenchymal origin, including Cd9, Sca1, Thy1, Cd73, Cd166, Cd200, and Cd51, but not hematopoietic or endothelial markers Cd11b, Cd45, or Cd31 (Supplementary file 1). When compared with GFP- cells, GFP+ cells displayed higher expression of Cd105, Cd10, and Cd13 and lower expression of Cd146, Cd29, and Cd151 [Figure 4(D)]. The expression of CD105, CD9, SCA1, CD166, CD200, CD11B, CD45, and CD31 were further verified by flow cytometry in GFP+ and GFP- cells [Figure 4(E and F) and Figure 4—figure supplement 2]. Combined, these data identify a set of genes preferentially expressed in NFATc1-expressing articular cartilage progenitors and provide a perspective to understand the transcriptional signature of these progenitors.
 
-## NFATc1 negatively regulates articular chondrocyte differentiation
+### NFATc1 negatively regulates articular chondrocyte differentiation
 
 The function of NFATc1 in articular cartilage progenitors remains unclear. As aforementioned, the lineage tracing of Nfatc1-expressing cells showed that most articular chondrocytes were GFP+ in Nfatc1Cre;Rosa26mTmG/+ mice at 8 weeks of age, but the real-time expression of NFATc1 was confined to the superficial layers of articular cartilage as shown by RFP expression after tamoxifen pulse in Nfatc1CreERT2;Rosa26RFP/+ mice [Figure 1—figure supplement 1C]. These results indicate that NFATc1 expression was diminished with articular chondrocyte differentiation. Consistently, the diminishment of Nfatc1 expression was also detected in ex vivo chondrogenesis in Nfatc1-expressing articular cartilage progenitors [Figure 5(A)].
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig5-v2.jpg)
+
+**Figure 5.:** (A) Gene expression analysis displaying the change of Nfatc1 expression in GFP+ cell-micromass cultured in the chondrogenic medium for 10 days. n=3, experiment repeated three times with cells from three mice. (B) Alcian blue staining and gene expression analysis of Acan, Col2a1, and Col10a1 after deleting Nfatc1 by CRISPR/CAS9 technique in ex vivo micromass culture of GFP+ cells from neonatal Nfatc1Cre;Rosa26mTmG/+ mice (day 7, without chondrogenic induction, n=3). Experiment repeated three times with cells from three animals. (C) Quantification of alcian blue staining and gene expression analysis of Col2a1 and Col10a1 showing decreased chondrogenesis after overexpressing NFATc1 in GFP+ cells by infecting a caNFATc1 retrovirus structure. For alcian blue staining, n=6 with cells from three animals, two replicates for each; for gene expression analysis, n=3, experiment repeated twice with cells from two animals. (D) Safranin O staining demonstrating enhanced articular cartilage staining in the hip of Prrx1Cre;Nfatc1fl/fl vs. Prrx1Cre;Nfatc1fl/+ mice at 12 weeks of age. Representative images from five animals in each group were displayed. (E) Representative images of alcian blue staining and polarized light on H&E staining manifesting increased staining (arrows) and thickness of articular cartilage (double arrows) in the knee of Prrx1Cre;Nfatc1fl/fl relative to Prrx1Cre;Nfatc1fl/+ mice at 16 weeks of age. n=5 animals for each group. (F) Quantitative PCR determining the expression of Acan, Col2a1, and Col10a1 genes in articular cartilage of Prrx1Cre;Nfatc1fl/fl relative to Prrx1Cre;Nfatc1fl/+ mice at 8 weeks of age. n=6 animals for each group. (G) Computational screening of NFAT binding sites on mouse Col2a1 promoter and intron 1 sequences by PROMO software recognizing 38 putative NFAT binding sites across –6 k bp of the promoter and intron 1. The transcriptional starting site is counted as +1. Location is given in bp relative to the transcriptional starting site. (H) Cleavage under targets and release using nuclease (CUT&RUN)-qPCR showing the binding of NFATc1 to the promoter region of mouse Col2a1 (chr15: 98004609–98004620, mm10). (I) Luciferase assay of transcriptional activity of Col2a1 after deleting or overexpressing NFATc1 in ATDC5 cells. n=3, experiment repeated three times. All data shown as mean ± SD, two-tailed Student’s t-test performed. Scale bar, 200 μm (D), 100 μm (E).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81569/elife-81569-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot determining the deletion or overexpression of NFATc1 by lentiviral CRISPR/CAS9 or retroviral caNFATc1, respectively. The empty vector without a gRNA sequence was used as a control for CRISPR/CAS9 lentivirus production and infection. The pMSCV-GFP vector (Retro-GFP) was utilized as a control for caNFATc1 retrovirus production and infection. (B) FIMO output visualized in the UCSC Genome Browser showing one of the 20 NFATc1 motif occurrences localized in the Col2a1 promoter region (marked with red rectangles). The lower image with the red rectangle is a zoom-in of the upper one.
 
 Next, we wondered whether suppressing NFATc1 expression in articular cartilage progenitors is sufficient to induce chondrocyte differentiation. To address this, we deleted NFATc1 expression in GFP+ articular cartilage progenitors by CRISPR/CAS9 technique [Figure 5—figure supplement 1A]. Strikingly, the deletion of NFATc1 expression was enough to induce chondrocyte differentiation without adding the chondrogenic medium as shown by alcian blue staining and induced expression of Acan, Col2a1, and Col10a1 [Figure 5(B)]. In the meantime, overexpression of NFATc1 in GFP+ progenitor cells inhibited chondrocyte differentiation [Figure 5(C) and Figure 5—figure supplement 1A].
 
@@ -92,87 +128,363 @@ The mechanism of regulating NFATc1 expression during articular cartilage develop
 
 In summary, we have unveiled that NFATc1-expressing progenitors generate articular but not growth-plate chondrocytes during development and identified NFATc1 as a critical negative transcriptional regulator of articular chondrocyte differentiation. Given the importance of NFATc1 in articular chondrogenesis, modulating NFAT signaling in skeletal progenitors may represent a novel, precise strategy for articular cartilage regeneration and treating cartilaginous diseases.
 
-## Limitations of the study
+### Limitations of the study
 
 There are some important limitations to our present study. Firstly, the GFP+ cells we used in this study might contain some cells not expressing NFATc1 but derived from NFATc1-expressing precursors. Given the prominent progenitor cell properties of the GFP+ cell population, if these derived cells also display characteristics of progenitor cells, their precursors (NFATc1-expressing cells) will represent a higher hierarchy of progenitors or stem cells, which yet support our conclusions. In fact, NFATc1 is positively expressed in the incipient articular cartilage of neonatal mice [Fig. 1(E)] and these NFATc1-expressing cells can form local cell clusters with articular cartilage development [Fig. 2(A)], indicating that NFATc1 also marks articular cartilage progenitors in neonatal mice. Secondly, these GFP+ cells might include cells from other articular tissues (e.g. meniscus, articular synovium, and ligament). Since all articular tissues are derived from progenitor cells sharing the same molecular markers Koyama et al., 2008; Shwartz et al., 2016 and currently there are no specific markers to distinguish progenitors for these different articular tissues, it was challenging to explicitly isolate articular cartilage progenitor cells at the early stages of development. Future studies will be necessary to dissect the developmental hierarchy of NFATc1-expressing articular cartilage progenitor cells and elucidate the mechanisms determining their differentiation to meniscal, synovial, or ligament cells versus articular chondrocytes. Thirdly, the detailed molecular mechanism of NFATc1 regulating articular chondrocyte differentiation needs further exploration. Future studies combining techniques like ChIP, CUT&RUN, or CUT&Tag with high-throughput DNA sequencing will be able to unveil the transcriptional landscape of NFATc1-regulated articular chondrocyte differentiation. Lastly, the origin of NFATc1+ articular cartilage progenitors should be further explored, which will be critical to better understand the basic mechanism of articular cartilage development and leverage it for articular cartilage regeneration.
 
 ## Materials and methods
 
-## Mouse lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Nfatc1tm1.1(cre)Bz; Nfatc1Cre</td>
+      <td>PMID:23178125</td>
+      <td>RRID:MGI:5471107</td>
+      <td>Dr. Bin Zhou(Albert Einstein College of Medicine)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Nfatc1tm1.1(cre/ERT2)Bzsh; Nfatc1CreERT2</td>
+      <td>PMID:24994653</td>
+      <td>RRID:MGI:5637438</td>
+      <td>Dr. Bin Zhou (Shanghai Institutes for Biological Sciences)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6(Cg)-Nfatc1tm3Glm/AoaJ; Nfatc1fl</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:022786RRID:IMSR_JAX:022786</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(Prrx1-cre)1Cjt/J; Prrx1Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:005584RRID:IMSR_JAX:005584</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129(Cg)-Gt(ROSA)26 Sortm4(ACTB-tdTomato,-EGFP)Luo; Rosa26mTmG; mTmG</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:007676RRID:IMSR_JAX:007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze; Rosa26RFP; Ai9</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:007909RRID:IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>CB17.Cg-PrkdcscidLystbg-J/Crl; SCID/Beige mice</td>
+      <td>Beijing Vital River Laboratory Animal Technology Co., Ltd</td>
+      <td>Strain #:405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Collagen Type II (mouse monoclonal)</td>
+      <td>Merck (Millipore)</td>
+      <td>Cat#:MAB8887RRID:AB_2260779</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NFATc1 antibody (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#:sc-7294RRID:AB_2152503</td>
+      <td>IHC (1:200); Western blotting (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Allophycocyanin (APC) anti-mouse CD45 (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:MCD4505RRID:AB_10376146</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD166 (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:17-1661-82 RRID:AB_2573170</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD31(rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:102410RRID:AB_312905</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD200 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:123810RRID:AB_10900447</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse SCA1(rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:122511RRID:AB_756196</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD105 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:120414RRID:AB_2277914</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Rat IgG2a, κ isotype control antibody (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:400512RRID:AB_2814702</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Rat IgG2b, κ isotype control antibody (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:400612RRID:AB_326556</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Rat IgG1, κ isotype control (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:400412RRID:AB_326518</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 anti-mouse CD9 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:124810RRID:AB_2076037</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Rat IgG2a, κ isotype control antibody (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:400526RRID:AB_2864284</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Go-ChIP-Grade purified anti-NFATc1 antibody (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:649608RRID:AB_2721596</td>
+      <td>(10 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified mouse IgG1, κ isotype ctrl antibody (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#:400102RRID:AB_2891079</td>
+      <td>CUT&amp;RUN (10 μg/ml); IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:2118RRID:AB_561053</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:T5648</td>
+      <td>Adult mice (1 mg/10 g); 2-week-old or dam mice (0.5 mg/10 g)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>ATDC5 cells (mouse 129 teratocarcinoma-derived osteochondral progenitors)</td>
+      <td>Merck (Sigma-Aldrich)</td>
+      <td>Cat#:99072806RRID:CVCL_3894</td>
+      <td>Authenticated by chondrogenic differentiation; tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA targeting mouse Nfatc1 exon 3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TACGAGCTTCGGATCGAGGT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMSCV-caNFATc1; pMSCV-GFP</td>
+      <td>PMID:18243104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL2B-COL2-6.5E309</td>
+      <td>Other</td>
+      <td></td>
+      <td>Dr. Mary Goldring</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mammalian)</td>
+      <td>gag/pol</td>
+      <td>Addgene</td>
+      <td>Cat#:14887RRID:Addgene_14887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mammalian)</td>
+      <td>VSV.G</td>
+      <td>Addgene</td>
+      <td>Cat#:14888RRID:Addgene_14888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mammalian)</td>
+      <td>pCMV-dR8.2 dvpr</td>
+      <td>Addgene</td>
+      <td>Cat#:8455RRID:Addgene_8455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mammalian)</td>
+      <td>pCMV-VSV-G</td>
+      <td>Addgene</td>
+      <td>Cat#:8454RRID:Addgene_8454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>M.O.M. Immunodetection Kit</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#:BMK-2202RRID:AB_2336833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CUT&amp;RUN Assay Kit</td>
+      <td>Vazyme</td>
+      <td>Cat#:S702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase Reporter Assay System</td>
+      <td>Promega</td>
+      <td>Cat#:E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>FlowJo</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td>Version 10.8.1</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 9.2.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse lines
 
 The Nfatc1tm1.1(cre)Bz (Nfatc1Cre) Wu et al., 2012 strain and Nfatc1tm1.1(cre/ERT2)Bzsh (Nfatc1CreERT2) Tian et al., 2014 strain were generous gifts from Dr. Bin Zhou (Albert Einstein College of Medicine) and Dr. Bin Zhou (Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences), respectively. The B6(Cg)-Nfatc1tm3Glm/AoaJ (Nfatc1fl) Aliprantis et al., 2008, B6.Cg-Tg(Prrx1Cre)1Cjt/J (Prrx1Cre) Logan et al., 2002, Gt(ROSA)26 Sortm4(ACTB-tdTomato,-EGFP)Luo (Rosa26mTmG) Muzumdar et al., 2007, and Gt(ROSA)26Sortm9(CAG-tdTomato)Hze (Rosa26RFP) Madisen et al., 2010 mice were obtained from the Jackson Laboratory. Severe combined immune deficient (SCID) beige mice were acquired from Beijing Vital River Laboratory Animal Technology Co., Ltd. All mice were housed under the standard barrier facility on a 12 hr light/dark cycle with ad libitum access to water and regular chow. All animal studies followed the recommendations in the Guide for the Care and Use of Laboratory Animals of the U.S. National Institutes of Health and were approved by Institutional Animal Care and Use Committee at Capital Medical University (protocol #: AEEI-2022–036). Animals were randomly assigned numbers and evaluated blindly to experimental conditions.
 
 Tamoxifen (T5648, Sigma-Aldrich) was administered by intraperitoneal injection at 1 mg/10 g body weight for adult mice and 0.5 mg/10 g body weight for 2-week-old or dam mice. To induce Cre recombination in Nfatc1CreERT2;Rosa26RFP/+ mice at 2 weeks and 8 weeks of age, tamoxifen was injected for 5 consecutive days, which procedure was confirmed to induce a high recombination efficiency of CreERT2 in mouse articular cartilage Ge et al., 2016.
 
-## Histology and confocal microscopy imaging
+### Histology and confocal microscopy imaging
 
 Limb samples at different ages (n=3–5 mice for each age, two knee joints per animal) were fixed in 4% paraformaldehyde and processed for serial frozen sections at 8–10 μm thickness. The expression of GFP or RFP was observed using a Leica SP8 confocal microscope.
 
 For quantifying GFP or RFP positive cells in articular cartilage, the KEYENCE BZ-X710 fluorescence microscope and software were used under the 40 x objective and cell count module. Slides were selected every 100 μm, and five slides were used for each sample (n=5 Nfatc1Cre;Rosa26mTmG/+ mice, three Nfatc1CreERT2;Rosa26RFP/+ mice). The total number of cells in each tissue was counted by combining the DAPI stain with cell morphology under phase contrast. The number of GFP+ or RFP+ cells was counted by combining the green or red fluorescence with DAPI. The percentage of GFP+ or RFP+ cells for each articular tissue was calculated by dividing the number of GFP+ or RFP+ cells by the total number of cells. The average of five slices from each sample was considered as the percentage of GFP+ or RFP+ cells in the sample.
 
-## Cell culture and sorting
+### Cell culture and sorting
 
 Cells were isolated from the knee of neonatal Nfatc1Cre;Rosa26mTmG/+ mice. Briefly, after removing the skin and most surrounding muscle tissue, the mouse knee was minced into small fragments and digested with 3 mg/ml collagenase type I (Worthington) and 4 mg/ml dispase (Roche) in complete culture media for 15 min at 37°C. After digestion, cells were passed through a 70 μm strainer and cultured for 7 days. GFP+ and GFP- cells were sorted using a FACSAria fusion or FACSAria II cell sorter (BD Biosciences).
 
-## Ex vivo assays of cell colony formation
+### Ex vivo assays of cell colony formation
 
 For cell colony formation assay, single-cell suspensions of GFP+ and GFP- cells (n=6 with cells from three mice, two replicates for each) were plated in 6-well-plates at indicated densities and cultured for 2 weeks. Cells were fixed in 10% neutral formalin for 15 min and stained in 1% crystal violet for 5 min. Clone numbers (>50 cells) were counted and scored blindly under the microscope.
 
-## Ex vivo assays of osteogenic and adipogenic differentiation
+### Ex vivo assays of osteogenic and adipogenic differentiation
 
 The same number of cells were plated in 6-well-plates and cultured for 2 weeks in complete growth media for colony formation. Differentiation media were added to induce osteogenesis (αMEM supplemented with 10% FBS, 10 nM dexamethasone, 50 μg/ml L-ascorbic acid, and 10 mM β-glycerophosphate) for 4 weeks or adipogenesis (αMEM supplemented with 10% FBS, 100 nM dexamethasone, 50 μM indomethacin, and 5 ug/ml insulin) for 10 days. Calcium nodules and fat were visualized by staining with alizarin red and Oil Red O, respectively. Total cell clones with positive staining were blindly counted under the microscope. The expression of osteogenic or adipogenic marker genes was examined by quantitative PCR.
 
-## Ex vivo assay of chondrogenic differentiation
+### Ex vivo assay of chondrogenic differentiation
 
 The cell pellet 3-dimension (3D) culture system for ex vivo chondrogenesis was as previously described Embree et al., 2016. Briefly, cells (1x106) were pelleted in 15 ml polypropylene tubes by centrifugation and cultured in chondrogenic media [DMEM high glucose supplemented with 2% FBS, 100 nM dexamethasone, 50 μg/ml L- ascorbic acid, 1% insulin, transferrin, selenium (ITS), 1 mM sodium pyruvate, 40 μg/ml L-proline, and 10 ng/ml TGF-β1] for 3 weeks. The pellets were fixed in 10% formalin and processed for paraffin embedding. Chondrogenesis was displayed by alcian blue staining and COL2A1 immunohistochemistry.
 
 For micromass culture, 2x106 cells in 20 ul media were dropped in the center of a well in the 24-well-plate. After incubating for 2 hrs, complete culture media was added and cultured overnight. Chondrogenic media was added the next day to start the induction of chondrogenesis. Chondrogenic differentiation was evaluated by alcian blue staining and the expression of chondrocyte-associated genes.
 
-## In vivo cell transplantation
+### In vivo cell transplantation
 
 GFP+ or GFP- cells (2.0×106) mixed with Matrigel (200  μl, BD Biosciences) were injected into the dorsal skin of SCID beige mice (n=6 animals per group). Transplants were harvested after 4 weeks and fixed in 10% formalin for histological analyses. The formation of hypertrophic cartilage-like tissue in GFP+ cells was determined by two experienced pathologists based on the hematoxylin stain and the hardness of the tissue when making sections.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Paraffin-embedded sections (n=3 mice, two knee joints per animal for NFATc1 expression analysis or 6 cell pellets for COL2A1 expression analysis, 3–5 serial slides per sample) were digested with pepsin for 15 min at 37°C. Primary anti-Collagen Type II monoclonal antibody (Millipore Cat# MAB8887, RRID:AB_2260779), anti-NFATc1 antibody (Santa Cruz Biotechnology Cat# sc-7294, RRID:AB_2152503), or the isotype control mouse IgG1 (BioLegend Cat# 400102, RRID:AB_2891079) was incubated using a M.O.M. kit (Vector Laboratories). Sections were counterstained using Hematoxylin.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Total RNA was isolated using the QIAzol lysis reagent. RNA samples were treated with an RNase-Free DNase Set (QIAGEN), and equal amounts (1 μg) were used for reverse transcriptase reaction using random primers (AffinityScript QPCR cDNA Synthesis Kit). PCR primer sequences are listed in Supplementary file 2. All gene expression was normalized to housekeeping genes Gapdh and presented by 2-△Ct or 2-△△Ct (Schmittgen and Livak, 2008).
 
-## RNA preparation for transcriptome analysis
+### RNA preparation for transcriptome analysis
 
 Total RNA was isolated from single-cell clones or bulk GFP+ and GFP- cells (n=3 with cells from three different mice in each group) using QIAzol lysis reagent (Qiagen). DNA was removed using the RNase-Free DNase Set (QIAGEN). RNA was quantified with Nanodrop 2000. The integrity of RNA was evaluated using an Agilent Bioanalyzer 2100 (Agilent Technologies) and agarose gel electrophoresis.
 
-## Library preparation and RNA-sequencing (RNA-seq)
+### Library preparation and RNA-sequencing (RNA-seq)
 
 One mg of total RNA from each sample was subjected to cDNA library construction using a NEBNext Ultra non-directional RNA Library Prep Kit for Illumina (New England Biolabs). Briefly, mRNA was enriched using oligo(dT) beads followed by two rounds of purification and fragmented randomly by adding the fragmentation buffer. The first-strand cDNA was synthesized using random hexamers primer, after which a custom second-strand synthesis buffer (Illumina), dNTPs, RNase H, and DNA polymerase I were added to generate the second-strand (ds cDNA). After a series of terminal repairs, polyadenylation, and sequencing adaptor ligation, the double-stranded cDNA library was completed following size selection and PCR enrichment.
 
 The resulting 250–350 bp insert libraries were quantified using a Qubit 2.0 fluorometer (Thermo Fisher Scientific) and quantitative PCR. The size distribution was analyzed using the Agilent Bioanalyzer 2100. An equal amount of each RNA-Seq library was sequenced on an Illumina HiSeq 4000 Platform (Illumina) using a paired-end 150 run (2x150 bases).
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Paired-end clean reads were aligned to mouse genome GRCm38/mm10 using STAR (v2.5) Dobin et al., 2013. HTSeq v0.6.1 was used to count the read numbers mapped to each gene. And then FPKM of each gene was calculated based on the length of the gene and read counts mapped to this gene Trapnell et al., 2010. Differential expression analysis between two groups was performed using the DESeq2 R package (2_1.6.3) Anders and Huber, 2010, which provides statistical routines for determining differential expression in digital gene expression data using a model based on the negative binomial distribution. The resulting P-values were adjusted using Benjamini and Hochberg’s approach for controlling the False Discovery Rate (FDR). Genes with an adjusted P-value less than 0.05 found by DESeq2 were assigned as differentially expressed. Gene Ontology (GO) enrichment analysis of differentially expressed genes was implemented by the clusterProfiler R package Yu et al., 2012, in which gene length bias was corrected. GO terms with an adjusted P value less than 0.05 were considered to be significant.
 
-## Flow cytometry
+### Flow cytometry
 
 The following antibodies of cell surface molecules were used: Allophycocyanin (APC) anti-mouse CD45 (Thermo Fisher Scientific Cat# MCD4505, RRID:AB_10376146), anti-mouse CD31 (BioLegend Cat# 102410, RRID:AB_312905), anti-mouse CD166 (Thermo Fisher Scientific Cat# 17-1661-82, RRID:AB_2573170), anti-mouse CD200 (BioLegend Cat# 123810, RRID:AB_10900447), anti-mouse SCA1 (BioLegend Cat# 122511, RRID:AB_756196), anti-mouse CD105 (BioLegend Cat# 120414, RRID:AB_2277914); APC Rat IgG2a, κ isotype control antibody (BioLegend Cat# 400512, RRID:AB_2814702), APC Rat IgG2b, κ isotype control antibody (BioLegend Cat# 400612, RRID:AB_326556), APC Rat IgG1, κ isotype control (BioLegend Cat# 400412, RRID:AB_326518); Alexa Fluor 647 anti-mouse CD9 (BioLegend Cat# 124810, RRID:AB_2076037), Alexa Fluor 647 Rat IgG2a, κ isotype control antibody (BioLegend Cat# 400526, RRID:AB_2864284).
 
 Cells (n=3 with cells from three different mice) were stained with antibodies or IgG isotype controls for 30  min at room temperature. Stained cells were analyzed on a FACSCalibur or BD LSR II flow cytometer (BD Biosciences). Positive cells were gated based on both unstained and isotype-matched IgG-stained cells. Data analysis was performed using FlowJo software (BD Biosciences).
 
-## CRISPR/Cas9 lentivirus production
+### CRISPR/Cas9 lentivirus production
 
 Pairs of CRISPR guide RNA oligos (Nfatc1 single guide RNA [sgRNA] targeting TACGAGCTTCGGATCGAGGT on exon 3) were annealed and cloned into the BsmBI sites of lentiCRISPR V2-blasticidin vector (a gift from Dr. Lizhi He at Harvard Medical School). CRISPR lentiviral plasmid and lentiviral packaging plasmids (pCMV-dR8.2 dvpr and pCMV-VSV-G; Addgene) were transfected into 293T cells. Supernatants were harvested and filtered through a 0.45 μm filter 2.5 days after transfection. GFP+ cells were infected with Nfatc1-CRISPR lentivirus. The lentivirus infected cells were selected using 5 μg/ml blasticidin for 5 days before further analyses.
 
-## caNFATc1 retrovirus production
+### caNFATc1 retrovirus production
 
 The retroviral expression vectors pMSCV-GFP and pMSCV-caNFATc1 have been previously described Horsley et al., 2008. Recombinant retroviruses were produced by co-transfecting either the pMSCV-GFP or pMSCV-caNFATc1 vectors together with retroviral packing plasmids gag/pol and pVSV-G (Addgene) into Phoenix cells using Effectene Transfection Reagent (QIAGEN). Supernatants were harvested and filtered through a 0.45 μm filter 48 hr after transfection. GFP+ cells were infected by adding retroviral supernatant with 4 μg/ml polybrene for 72 hr before further analyses.
 
-## Western blotting
+### Western blotting
 
 Western blotting was performed using 4–20% Mini-PROTEAN TGX precast protein gels with the following antibodies anti-NFATc1 (1:1000, Santa Cruz Biotechnology Cat# sc-7294, RRID:AB_2152503) and anti-GAPDH (1:2000, Cell Signaling Technology Cat# 2118, RRID:AB_561053). Fifty μg of protein were loaded for each sample.
 
-## Searching for NFATc1 binding sites in the Col2a1 gene
+### Searching for NFATc1 binding sites in the Col2a1 gene
 
 FIMO Grant et al., 2011 was used to search the mouse genomic sequence of chr15: 97970080–98038617 (coordinates are based on the reference genome mm10), which contains the mouse Col2a1 gene and the upstream and downstream intergenic regions, for the NFATc1 motif occurrence (JASPAR motif ID MA0624.2: https://jaspar.genereg.net/matrix/MA0624.2/) with the following command:
 
@@ -180,14 +492,14 @@ fimo –oc . --verbosity 1 --thresh 1.0E-4 NFATc1_MA0624.2.meme sequences.fa.
 
 As a result, 20 NFATc1 motifs (P-value <0.0001) were detected in this region. The FIMO output (.gff file) was visualized in the UCSC Genome Browser using the mouse reference genome mm10, together with the ENCODE Registry of candidate cis-Regulatory Elements (cCRE) and the regulatory elements from the ORegAnno, a community-driven resource for curated regulatory annotation (ENCODE cCRE and ORegAnno data are built-in annotations available in the UCSC Genome Browser). One of the 20 NFATc1 motif occurrences that overlap with the Col2a1 promoter region is highlighted in Figure 5—figure supplement 1B.
 
-## CUT&RUN-qPCR
+### CUT&RUN-qPCR
 
 Sorted GFP+ Cells (1x105 cells/reaction, n=3 with cells from three different mice) were incubated and combined with magnetic beads precoated with concanavalin A (Vazyme). Cells were permeabilized in antibody buffer containing 0.05% digitonin and incubated with Go-ChIP-Grade purified anti-NFATc1 antibody (10 μg/ml, BioLegend) or purified mouse IgG1, κ isotype ctrl antibody (10 μg/ml, BioLegend) overnight at 4℃. After washing in chilled digitonin buffer, cells were incubated with protein G fused Micrococcal Nuclease (pG-MNase, Vazyme) on ice for 1 hr. Subsequently, 100 mM CaCl2 solution was added to activate MNase and cleave chromatin. After stopping buffer was added, DNA fragments in the supernatant were extracted using a Qiagen MinElute PCR purification kit. The following primer sequences were used to amplify the fragment of the Col2a1 gene that contains the potential NFATc1 binding site: forward, 5’-TTTGGAGCGACCGGGAGCATAT-3’; reverse, 5’-GGGTCTCTACCGCTCCCTCA TG-3’. The signals obtained from each immunoprecipitation are expressed as a percent of the total input chromatin and normalized with the Sample Normalization Primer Set for Spike-In DNA (Vazyme).
 
-## Luciferase assay
+### Luciferase assay
 
 The transcription activity of Col2a1 was determined by co-transfecting ATDC5 cells (Sigma-Aldrich RRID:CVCL_3894), which had been infected with Nfatc1-CRISPR lentivirus or caNFATc1 retrovirus, with 1 g of the reporter plasmid (pGL2B-COL2-6.5E309, a gift from Dr. Mary Goldring) and 10 ng of pRL Renilla luciferase plasmid using the Effectene transfection reagent (Qiagen). Cells were transfected for 8 hrs and then cultured for 24 hrs. The activity of the Firefly luciferase was measured and normalized to Renilla luciferase activity using the Dual-Luciferase Reporter Assay System (Promega).
 
-## Statistical analyses
+### Statistical analyses
 
 All data are presented as mean ± SD. The normality and the equal variance of data sets were tested using the Shapiro-Wilk test and F test, respectively. Data were determined to be normally distributed and have equal variance unless specified otherwise. Differences between the two groups were evaluated by the two-tailed Student’s t-test. For counting data of cell colonies, comparisons were performed using the nonparametric Mann-Whitney test. Analyses of multiple groups were performed using two-way ANOVA followed by Sidak’s test for between-group comparisons. All analyses were performed using Prism 9.2.1 (GraphPad).

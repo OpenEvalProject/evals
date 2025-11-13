@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/039bjqg32 Department of Biomedical Physics, Faculty of Physics, University of Warsaw Warsaw Poland
-2. https://ror.org/05rbx8m02 Epilepsy Unit, Istituto Neurologico Carlo Besta Milan Italy
-3. https://ror.org/01xnwqx93 Department of Epileptology, University Hospital Bonn Bonn Germany
+1. Department of Biomedical Physics, Faculty of Physics, University of Warsaw Warsaw Poland ([ROR:039bjqg32](https://ror.org/039bjqg32))
+2. Epilepsy Unit, Istituto Neurologico Carlo Besta Milan Italy ([ROR:05rbx8m02](https://ror.org/05rbx8m02))
+3. Department of Epileptology, University Hospital Bonn Bonn Germany ([ROR:01xnwqx93](https://ror.org/01xnwqx93))
 
 † Corresponding author
 
 ## Abstract
 
-Human and animal EEG data demonstrate that focal seizures start with low-voltage fast activity, evolve into rhythmic burst discharges and are followed by a period of suppressed background activity. This suggests that processes with dynamics in the range of tens of seconds govern focal seizure evolution. We investigate the processes associated with seizure dynamics by complementing the Hodgkin-Huxley mathematical model with the physical laws that dictate ion movement and maintain ionic gradients. Our biophysically realistic computational model closely replicates the electrographic pattern of a typical human focal seizure characterized by low voltage fast activity onset, tonic phase, clonic phase and postictal suppression. Our study demonstrates, for the first time in silico, the potential mechanism of seizure initiation by inhibitory interneurons via the initial build-up of extracellular K + due to intense interneuronal spiking. The model also identifies ionic mechanisms that may underlie a key feature in seizure dynamics, that is, progressive slowing down of ictal discharges towards the end of seizure. Our model prediction of specific scaling of inter-burst intervals is confirmed by seizure data recorded in the whole guinea pig brain in vitro and in humans, suggesting that the observed termination pattern may hold across different species. Our results emphasize ionic dynamics as elementary processes behind seizure generation and indicate targets for new therapeutic strategies.
+Human and animal EEG data demonstrate that focal seizures start with low-voltage fast activity, evolve into rhythmic burst discharges and are followed by a period of suppressed background activity. This suggests that processes with dynamics in the range of tens of seconds govern focal seizure evolution. We investigate the processes associated with seizure dynamics by complementing the Hodgkin-Huxley mathematical model with the physical laws that dictate ion movement and maintain ionic gradients. Our biophysically realistic computational model closely replicates the electrographic pattern of a typical human focal seizure characterized by low voltage fast activity onset, tonic phase, clonic phase and postictal suppression. Our study demonstrates, for the first time in silico, the potential mechanism of seizure initiation by inhibitory interneurons via the initial build-up of extracellular K+ due to intense interneuronal spiking. The model also identifies ionic mechanisms that may underlie a key feature in seizure dynamics, that is, progressive slowing down of ictal discharges towards the end of seizure. Our model prediction of specific scaling of inter-burst intervals is confirmed by seizure data recorded in the whole guinea pig brain in vitro and in humans, suggesting that the observed termination pattern may hold across different species. Our results emphasize ionic dynamics as elementary processes behind seizure generation and indicate targets for new therapeutic strategies.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ The model consisted of five cells, four pyramidal neurons (PY) and a fast-spikin
 
 **Figure 1.:** The model consisted of four pyramidal cells (orange) and an interneuron (green) linked by excitatory (AMPA) and inhibitory (GABAa) synaptic connections. Each cellular compartment was surrounded by an interstitial compartment. The interstitial space was enclosed in a common bath (blue) which represented the surrounding tissue and vasculature not included in the model. The model included variable intracellular and extracellular ion concentrations computed according to ionic currents flowing across neuronal membranes, longitudinal diffusion between the dendritic and somatic compartments, radial diffusion between neighboring interstitial compartments and diffusion to/from the bath. Additionally, the model included ionic regulation mechanisms: a Na+/K+-pump, a KCC2 cotransporter and K+ buffering by astrocytes.
 
-## Three phases of an LVF onset SLE
+### Three phases of an LVF onset SLE
 
 Brief perfusion (3 min) of 50 microM bicuculline in the isolated guinea pig brain transiently reduces GABAergic inhibition to 60–70% and leads to strong interneuron bursting in the absence of principal cells activity (Gnatkovsky et al., 2008; Uva et al., 2015). Therefore, to initiate a SLE in the model we choose to selectively and transiently enhance discharge of the inhibitory interneuron. In this way, we made our model more general and applicable to other experimental data in which paradoxical increase in GABAergic cell firing is observed at seizure onset.
 
@@ -41,17 +41,17 @@ A simulated seizure emerging from normal background activity is shown in Figure 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68541/elife-68541-fig2-v2.jpg)
 
-**Figure 2.:** (A) Local field potential (LFP) signal. (B) Pyramidal cell (PY) membrane potential. (C) Interneuron (IN) membrane potential. (D) Extracellular potassium concentration. (E) Intracellular sodium concentration. (F) Intracellular chloride concentration. In the interictal phase (0–60 s), the model generated irregular background firing and the ion concentrations were at their resting values (A–F). The current injected into the interneuron at second 60 (C) yellow triggered fast IN spiking (C), black which also manifested as low voltage fast (LVF) activity in the LFP signal (A) Approximately 10 s after the initiation of the SLE, PY cells initiated tonic firing that subsequently shifted to bursting (B) The behavior of the PY cells was reflected in the LFP trace which showed irregular activity and synchronized bursting (A) The SLE terminated at approximately second 120 and was followed by postictal EEG suppression (PES) (A–C). The cellular activity was accompanied by significant ion concentration shifts. Extracellular potassium in the somatic compartment increased sharply and remained elevated throughout the SLE (D) dark blue. The [K+]o increase in the dendritic compartment was slower and less pronounced (D) violet. The intracellular sodium increased gradually toward a plateau (E) The intracellular chloride accumulated steadily throughout the SLE (F).Figure 2—source data 1.
+**Figure 2.:** (A) Local field potential (LFP) signal. (B) Pyramidal cell (PY) membrane potential. (C) Interneuron (IN) membrane potential. (D) Extracellular potassium concentration. (E) Intracellular sodium concentration. (F) Intracellular chloride concentration. In the interictal phase (0–60 s), the model generated irregular background firing and the ion concentrations were at their resting values (A–F). The current injected into the interneuron at second 60 (C) yellow triggered fast IN spiking (C), black which also manifested as low voltage fast (LVF) activity in the LFP signal (A) Approximately 10 s after the initiation of the SLE, PY cells initiated tonic firing that subsequently shifted to bursting (B) The behavior of the PY cells was reflected in the LFP trace which showed irregular activity and synchronized bursting (A) The SLE terminated at approximately second 120 and was followed by postictal EEG suppression (PES) (A–C). The cellular activity was accompanied by significant ion concentration shifts. Extracellular potassium in the somatic compartment increased sharply and remained elevated throughout the SLE (D) dark blue. The [K+]o increase in the dendritic compartment was slower and less pronounced (D) violet. The intracellular sodium increased gradually toward a plateau (E) The intracellular chloride accumulated steadily throughout the SLE (F).
 
 A comparison of the simulation results with the available experimental data is shown in Figure 3. In the isolated guinea pig brain, the SLE activity with an LVF onset pattern (Figure 3A, top trace) was induced by 3 min arterial application of bicuculine. The transition from preictal to ictal state which occurred at approximately second 10 was associated with a strong discharge of fast-spiking interneurons (Figure 3A, third trace) and transient silencing of the PY cells (Figure 3A, second trace). Within a few seconds from the initiation of the sustained interneuron discharge, the principal PY cells were recruited first into tonic firing and subsequently into bursting discharges which were visible in the PY membrane potential and LFP signals. [K+]o sharply increased at the onset of the SLE and remained elevated afterward (Figure 3A, bottom trace). The in silico results (shown for comparison in the same timescale in Figure 3B) replicated the experimental data in many respects including LFP signal characteristics, cellular firing pattern and [K+]o time course.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68541/elife-68541-fig3-v2.jpg)
 
-**Figure 3.:** (A) Experimental recordings of a seizure-like event (SLE) in the in vitro isolated whole guinea pig brain preparation (de Curtis et al., 2006; Gnatkovsky et al., 2008; Uva et al., 2015). From top to bottom: LFP signal, intracellular recording of pyramidal cell (PY) and interneuron (IN), extracellular potassium. The onset of the SLE was associated with increased IN firing, silencing PY and low-voltage fast (LVF) activity in the LFP signal. Approximately 10 s after the onset of the SLE, the PY exhibited a tonic and then burst firing behavior. The extracellular potassium increased up to approximately 10 mM at the onset of the SLE and remained elevated afterward. (B) The activity patterns in the LFP signal, pyramidal cells, interneuron and [K+]o were reproduced accurately by the model. Signals presented in (A) were recorded in different experiments. LFP and interneuron data have been published previously (Gentiletti et al., 2017; Gnatkovsky et al., 2008) while pyramidal cell and [K+]o data have never been published before.Figure 3—source data 1.This zip archive contains experimental data shown in Figure 3. Seizure-like events were induced by 3 min arterial perfusion of 50 microM bicuculline and were recorded in the entorhinal cortex of the in vitro isolated whole guinea pig brain. The data are in the Matlab format (.mat). Matlab script (.m) loads the data from the file and creates the plot.
+**Figure 3.:** (A) Experimental recordings of a seizure-like event (SLE) in the in vitro isolated whole guinea pig brain preparation (de Curtis et al., 2006; Gnatkovsky et al., 2008; Uva et al., 2015). From top to bottom: LFP signal, intracellular recording of pyramidal cell (PY) and interneuron (IN), extracellular potassium. The onset of the SLE was associated with increased IN firing, silencing PY and low-voltage fast (LVF) activity in the LFP signal. Approximately 10 s after the onset of the SLE, the PY exhibited a tonic and then burst firing behavior. The extracellular potassium increased up to approximately 10 mM at the onset of the SLE and remained elevated afterward. (B) The activity patterns in the LFP signal, pyramidal cells, interneuron and [K+]o were reproduced accurately by the model. Signals presented in (A) were recorded in different experiments. LFP and interneuron data have been published previously (Gentiletti et al., 2017; Gnatkovsky et al., 2008) while pyramidal cell and [K+]o data have never been published before.
 
 In the simulations, the excitatory and inhibitory synaptic conductances were ‘clamped’ throughout the entire simulation period, hence, they could not contribute to the progression from one phase to another. Conversely, variations in ion concentrations were expected to affect neuronal excitability. For example, an increase in [K+]o reduces the driving force of K+ currents responsible for hyperpolarized resting membrane potential and spike repolarization. [Cl-]i accumulation causes depolarizing shift in EGABAa reducing the efficacy of GABAa inhibition. [Na+]i and [K+]o affect the rate of the Na+/K+-pump that transports three Na+ ions out of the cell for every two K+ ions pumped into the cell, thus producing an outward current. Accumulation of [K+]o and [Na+]i increases the pump rate and enhances the hyperpolarizing pump current. Hence, to determine the intrinsic mechanism that modulates excitability, we first investigated the behavior of the model in response to variations in extracellular potassium and intracellular sodium concentrations and next we considered the role of chloride dynamics.
 
-## The effects of [K+]o and [Na+]i on the network model
+### The effects of [K+]o and [Na+]i on the network model
 
 Activity-dependent changes in ion concentrations are slow compared to neuronal dynamics, which are relatively fast. To analyze such a system, with slow and fast timescales, it is possible to decouple the fast variables (e.g. membrane potential) from the slow variables (e.g. ionic concentrations). Accordingly, to analyze the role of [K+]o and [Na+]i in shaping single-cell and network dynamics, we disabled all mechanisms controlling ionic concentrations and analyzed the behavior of the model for different values of [K+]o and [Na+]i. The values of these variables were modified externally and treated as control parameters. To obtain improved affinity with the reference simulation (Figure 2), the chloride concentration in the somatic and dendritic compartments of the PY cells was set to 7 mM, which corresponded to its mean value during the SLE (Figure 2F). In the single-cell analysis, all synaptic connections were removed. In the network analysis, all synaptic connections were intact except afferent excitatory input, which was removed from PY cells to eliminate the stochastic component from the analysis; depolarizing current injection was removed from the interneuron. The behavior of a single PY cell was analyzed for different values of extracellular potassium concentration in the dendritic ([K+]o,dend) and somatic compartments ([K+]o,soma). During the analysis, for each fixed value of [K+]o,dend, we performed simulations when sweeping the [K+]o,soma value from 3 mM to 12 mM (in steps of 0.25 mM) in the forward and backward direction. The initial conditions for each [K+]o,soma value corresponded to the final states in the previous step. For each [K+]o,soma step, we simulated 5 s of activity. After a full sweep with all [K+]o,soma steps in both directions, the [K+]o,dend was increased and the analysis was repeated. The analysis was performed for the [K+]o,dend values in the range of 3–6 mM, in steps of 0.5 mM (or 0.25 mM and 0.125 mM if a better resolution was required). We found that the behavior of the single cell and network models was the same for increasing and decreasing steps of [K+]o,soma with small domains of bistability not larger than one step (0.25 mM) between the activity phases. Analysis of the dynamics of a single isolated cell for a reference value of [Na+]i at 10 mM can be found in Appendix 1—figure 1. In the network analysis, a full sweep with all [K+]o,soma and [K+]o,dend steps (as described above) was performed for three different values of [Na+]i,soma namely, 10 mM, 11 mM and 12 mM. Following Figure 2E we assumed, that corresponding values of [Na+]i,dend were lower and were 10 mM, 10.5 mM and 11 mM, respectively. The analysis results are shown in Figure 4A, in which the various activity patterns, i.e., rest, tonic firing and bursting are color-coded (as shown on the right). A comparison of the network activities for different values of [Na+]i in the three graphs in Figure 4A demonstrates that the main effect of an increase in [Na+]i was a shrinking of the tonic and bursting domains and an expansion of the resting domain due to upregulation of the hyperpolarizing effect of increased [Na+]i on the pump current.
 
@@ -59,39 +59,47 @@ Activity-dependent changes in ion concentrations are slow compared to neuronal d
 
 **Figure 4.:** In the bifurcation analysis extracellular potassium and intracellular sodium concentrations in the PY and IN cells were control parameters. Concentrations of all other ions were fixed at their reference values (except chloride: [Cl-]i,soma, [Cl-]i,dend equal to 7 mM), all ion accumulation mechanisms were blocked and background input was removed. (A) Bifurcation diagrams showing the dependence of the behavior of the model on [K+]o,dend and [K+]o,soma for varying values of [Na+]i,soma, [Na+]i,dend. The diagram colors correspond to types of activity shown on the right: rest (yellow), tonic firing (violet) and bursting (dark blue). An increase in [Na+]i progressively decreased the domains of tonic firing and bursting and increased the resting domain indicating a general decrease in network excitability. The black and gray arrows correspond to the evolution of [K+]o,soma, [K+]o,dend during different phases of the SLE, shown in part B. (B) A simulation of the model with [K+]o,soma, [K+]o,dend and [Na+]i,soma, [Na+]i,dend as the external control parameters, that illustrated the occurrence of transitions between different types of activity during the SLE. The top two panels show the time course of [K+]o,soma, [K+]o,dend and [Na+]i,soma, [Na+]i,dend and approximate their evolution during the SLE (Figure 2). The third panel shows the resulting PY cell behavior. The parameter evolution is divided into four phases indicated by the arrows denoted as I–IV in part (A) and (B). Phase I corresponds to a sharp increase in [K+]o,soma which led to a transition from rest to tonic firing (marked as a black arrow ‘I’ in the first panel in A). Phase II corresponds to a slow increase in [K+]o,dend which led to a transition from tonic firing to bursting (marked as a black arrow ‘II’ in the first and second panels in A). Phase III represents a period of increased [Na+]i,soma, [Na+]i,dend and decreasing [K+]o,soma and [K+]o,dend which led to the termination of the SLE represented by a black arrow ‘III’ with its tip in the yellow domain in the third panel in (A). Phase IV corresponds to the postictal period with elevated [Na+]i and a return of [K+]o,soma, [K+]o,dend to their baseline values marked as a black arrow ‘IV’ in the third panel in (A).
 
-## The evolution of the SLE mediated by [K+]o and [Na+]i
+### The evolution of the SLE mediated by [K+]o and [Na+]i
 
 In the previous section, the influence of [K+]o and [Na]i on network behavior was examined without accounting for the time factor. Here, we present a fast-slow system analysis approach that considers the time evolution of ionic concentrations, as shown in Figure 2. Hence, we assessed the dependence of the evolution of an SLE on externally manipulated changes in [K+]o and [Na]i with fixed concentrations of all other ions. As in Figure 4A, the chloride concentration in the somatic and dendritic compartments of the PY cells was set to 7 mM. To schematically describe the extracellular potassium concentration time course from preictal to postictal state (as shown in Figure 2D), we identified four distinct stages (as shown in Figure 4B top panel): (I) a sharp increase in [K+]o,soma, (II) elevated [K+]o,soma, a slow increase in [K+]o,dend, (III) a slow decrease in [K+]o,soma and [K+]o,dend, (IV) a decrease in [K+]o,soma and [K+]o,dend back to their resting values. Variations in potassium concentrations were accompanied by changes in [Na+]i (Figure 2E). In the preictal period and during the SLE tonic firing phase, [Na+]i in the soma and dendrite was stable, while it increased during the burst firing phase and reached a plateau toward the end of the episode. In the postictal period, [Na+]i in both compartments slowly returned to the initial value. The time course of [Na+]i approximating intracellular somatic and dendritic sodium evolution is shown in Figure 4B (middle panel). The corresponding representative PY cell activity is shown in Figure 4B (bottom trace). To distinguish different SLE phases, the PY cell activity pattern was marked using a color-code, as in Figure 4A. As [K+]o and [Na+]i followed their predefined time course, PY cells exhibited transition from rest to tonic firing, progressed into bursting with a slowing-down pattern and eventually returned to the resting state. In the postictal period (after stage IV), the [Na+]i remained elevated for more than 40 s (Figure 4B middle panel) giving rise to an enhanced hyperpolarizing Na+/K+-pump current that reduced the excitability of the network and contributed to postictal depression, as described in the last paragraph. To further observe the time evolution of the SLE in the [K+]o,soma, [K+]o,dend parameter space, we superimposed potassium changes on the bifurcation diagrams in Figure 4A. The distinct stages of the potassium time course are marked by arrows. The crossing of a color border by an arrow corresponds to a transition between different firing regimes. The initial increase of somatic [K+]o (stage I) led to a transition from the resting state to tonic firing (Figure 4A, first panel), while a subsequent increase in dendritic [K+]o (stage II) led to a transition from tonic firing to bursting (Figure 4A, middle panel). A subsequent decrease in somatic and dendritic [K+]o (stage III) led to the termination of the SLE, as the cell activity reentered the resting state region (Figure 4A, last panel). After termination of the SLE, [K+]o,soma and [K+]o,dend returned to their resting values (stage IV in Figure 4A, last panel).
 
-## The role of [Cl-]i
+### The role of [Cl-]i
 
 Chloride accumulation depends on Cl- influx through chloride leak and GABAa receptor channels, but it is also affected by variations in potassium concentrations mediated via KCC2 cotransport. Hence, chloride and potassium could not be considered as independent control parameters in the fast-slow system analysis approach. Furthermore, visualization of the results with five control parameters ([K+]o,soma, [K+]o,dend, [Na+]i,soma, [Na+]i,dend and [Cl-]i) is challenging. Therefore, to evaluate the role of chloride accumulation, we compared the reference model with the model in which chloride dynamics was excluded (Figure 5). When considering the role of chloride homeostasis mediated via KCC2, the direction of K–Cl cotransport depends on the ECl vs EK or the ratio [K+]i[Cl-]i/[K+]o[Cl-]o (Payne et al., 2003). If the ratio is greater than 1, KCC2 extrudes Cl- and K+. If EK is greater than ECl, the KCC2 flow is reversed and Cl- and K+ ions are transported into the cell. When chloride accumulation was removed (Figure 5A), the reversal potentials of the Cl- and GABAa currents (ECl and EGABAa) were fixed (blue and light blue lines in Figure 5A, second panel). Under such conditions, the firing of the interneuron (Figure 5A, third panel) exerted a steady inhibitory influence on the PY cells. Additionally, it increased [K+]o above fixed [Cl-]i level (Figure 5A, fourth panel). As a result, EK exceeded ECl and the KCC2 transported K+ and Cl- into the cells (Figure 5A, fifth panel) and reduced the external K+ concentration. All these effects transiently increased the PY cells tonic firing but the bursting SLE phase was not manifested (Figure 5A, first and second panel). Conversely, activation of the IN in the reference model, with chloride dynamics intact, led to a typical SLE (Figure 5B, top panel). The [Cl-]i accumulation was dominated by Cl- influx through GABAa receptors and to lesser degree by KCC2 cotransport (Figure 5B, fifth and bottom panel). It led to enhanced excitability in two ways: (i) by increasing the chloride reversal potential (blue line in Figure 5B, second panel) toward the PY membrane potential, reducing the hyperpolarizing chloride leak current; (ii) by increasing the GABAa reversal potential (Figure 5B, second panel, light blue) that approached the PY cell membrane potential, reducing the postsynaptic inhibitory current. These changes led to the stronger tonic firing of the PY cells, which contributed to enhanced [K+]o accumulation (Figure 5B, third panel) leading to the transition into the SLE bursting phase.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68541/elife-68541-fig5-v2.jpg)
 
-**Figure 5.:** The six panels in each column show respectively (from top to bottom): the LFP signal, the PY cell membrane potential, the IN membrane potential, the extracellular potassium concentration and intracellular chloride concentration, the chloride and potassium KCC2 currents in the somatic compartments and the GABAa synaptic currents (Cl- and HCO3-) together with the leak chloride current. Additionally, the equilibrium potential of chloride and GABAa are shown in the second panel from the top. (A) When the [Cl-]i accumulation mechanism was blocked, the chloride concentration was fixed at the reference value (fourth panel, blue). Without chloride accumulation, the PY cell (second panel) fired tonic train of spikes due to transient rise in [K+]o (fourth panel, red) mediated by the IN discharge triggered by the current injection (yellow, third panel). Elevated [K+]o and fixed [Cl-]i promoted K+ influx via KCC2 (fifth panel, red), thus lowering [K+]o and further preventing the generation of the full SLE. (B) With chloride accumulation, the IN discharge led to an increase in E and ClE (second panel, blue and light blue) which reduced the hyperpolarizing GABAaI and Cl,leakI currents and enhanced excitability. The increase in firing rate of the PY cells led to prolonged [KGABAa+]o accumulation (fourth panel, red) leading to the full SLE.
+**Figure 5.:** The six panels in each column show respectively (from top to bottom): the LFP signal, the PY cell membrane potential, the IN membrane potential, the extracellular potassium concentration and intracellular chloride concentration, the chloride and potassium KCC2 currents in the somatic compartments and the GABAa synaptic currents (Cl- and HCO3-) together with the leak chloride current. Additionally, the equilibrium potential of chloride and GABAa are shown in the second panel from the top. (A) When the [Cl-]i accumulation mechanism was blocked, the chloride concentration was fixed at the reference value (fourth panel, blue). Without chloride accumulation, the PY cell (second panel) fired tonic train of spikes due to transient rise in [K+]o (fourth panel, red) mediated by the IN discharge triggered by the current injection (yellow, third panel). Elevated [K+]o and fixed [Cl-]i promoted K+ influx via KCC2 (fifth panel, red), thus lowering [K+]o and further preventing the generation of the full SLE. (B) With chloride accumulation, the IN discharge led to an increase in ECl and EGABAa (second panel, blue and light blue) which reduced the hyperpolarizing ICl,leak and IGABAa currents and enhanced excitability. The increase in firing rate of the PY cells led to prolonged [K+]o accumulation (fourth panel, red) leading to the full SLE.
 
-## Model predictions
+### Model predictions
 
 The computer model generated predictions about features that were not explicitly implemented but were consequences of the elementary neurobiological mechanisms used to create the model. These phenomena are described below. The experimental confirmation of features predicted by a model is an essential step in model validation.
 
-## The evolution of the inter-burst interval duration
+### The evolution of the inter-burst interval duration
 
 It is well known that muscle jerking during the clonic phase of a tonic-clonic seizure slows down before ceasing when seizure ends (Bromfield et al., 2006). Frequency slowing has also been observed in video sequences (Kalitzin et al., 2016) and electrographic counterparts of a seizure revealed by either EEG (Franaszczuk et al., 1998; Schiff et al., 2000) or EMG (Conradsen et al., 2013). In the model, a gradual increase in the interval between ictal bursts (IBI) was visible (Figures 2A and 3B). To observe the evolution of the IBI more precisely and identify the scaling pattern, the background noise was removed from the simulation. The absence of excitatory dendritic synaptic input was compensated with a steady depolarizing DC current of 1.85 pA injected into the dendrites of all PY cells. Current intensity was adjusted to preserve the original duration of the SLE as observed in the model with the background noise present. A simulated SLE trace and the detected ictal bursts (short bars) are shown in Figure 6A (top panel). The evolution of the IBI is shown below with either a linear (Figure 6A, middle panel) or a logarithmic (Figure 6A, bottom panel) y-axis. The IBI on the semi-log graph laid on a straight line suggesting an exponential relationship. The evolution of the IBI during an SLE in a whole-brain in vitro preparation (Figure 6B) and a human TLE seizure (Figure 6C) exhibited the same characteristics. Based on literature, we considered four different scenarios of IBI evolution: linear, exponential, square root, and logarithmic. The fits were evaluated by the root mean square error (RMSE). Exact RMSE values depended on the duration of the analyzed IBI sequence. In the model, RMSE values for logarithmic and exponential fits were often comparable. In the experimental data the exponential fit always had the lowest RMSE. Next, we used the fast-slow system analysis approach, as in Figure 4, to demonstrate how separate variations in [K+]o, [Na+]i and [Cl-]i affect IBI slowing towards the end of an SLE. Linear decrease in [K+]o led to exponential IBI evolution, while linear increase in [Na+]i or decrease in [Cl-]i led to SLE termination with logarithmic scaling of IBI as determined by RMSE (Figure 6—figure supplement 1). Note, that in this figure we simulated a decrease in [Cl-]i unlike increasing trend in [Cl-]i seen in Figure 2F. We observed that a linear increase in [Cl-]i didn’t lead to IBI slowing and SLE termination, when simulated for up to 20 min (not shown). These results suggest that in the model, slowing of inter-burst interval towards the end of an SLE is mediated by simultaneous changes in [K+]o and [Na+]i.
 
-## The postictal period
+![Figure 6.](https://cdn.elifesciences.org/articles/68541/elife-68541-fig6-v2.jpg)
+
+**Figure 6.:** (A) In the simulation, the background input was removed and compensated with a small depolarizing current injected into the PY cells to preserve the duration of the SLE. A decreasing rate of bursting is visible in the LPF signal and in the detected bursts marked above the trace (top panel). The evolution of the IBI is shown with the y-axis on a linear scale (middle panel) and a log scale (bottom). On a linear y-axis plot, the data appear curved while on a semi-log plot they lay on a straight line, suggesting exponential scaling of the IBI with time. The red line in each plot represents the best fit for the detected IBI; linear function (middle panel) and exponential function providing a linear relationship on a semi-log plot (bottom panel). The root mean square error (RMSE) between the data points and fitted function is shown in each window. The exponential function fit yielded a smaller RMSE compared to the linear, logarithmic or square root fits (see Materials and methods), providing quantitative confirmation that at the end of the simulated SLE, the IBI duration increased exponentially with time. (B) The evolution of the IBI during the SLE induced by application of bicuculline in the whole-brain in vitro preparation (Boido et al., 2014; Gnatkovsky et al., 2008). (C) IBI evolution during a seizure recorded with intracerebral electrodes positioned in the temporal lobe in a patient submitted to presurgical evaluation (courtesy of Laura Tassi, Epilepsy Surgery Center, Niguarda Hospital, Milano, Italy). In (B) and (C), the detected IBI lay on a straight line on the semi-log plot and the exponential fit resulted in a smaller RMSE compared to the linear, logarithmic or square root fits, validating the model prediction of an exponential increase in the IBI at the end of a seizure. Only linear and exponential fits are shown. The results for all considered fits are provided in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68541/elife-68541-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The SLE was simulated by variations in K+, Na+, and Cl- concentrations. For the first 50 s ion concentrations varied as in Figure 4B. Afterwards, the concentration of only one ion type was varied, while concentrations of all other ions were held constant. (A) In the bursting phase, discharges of PY cells were synchronous and the network dynamics was well captured by the membrane potential of a single PY cell, shown in the top panel. After second 50, a linear decrease in [K+]o (second panel) and constant [Na+]i and [Cl-]i (third and fourth panel, respectively) led to IBI slowing and SLE termination. The detected bursts are marked above the trace. Blue bars mark analyzed IBI epoch. Four bottom panels show evolution of IBI (black points) fitted with linear, exponential, square root and logarithmic functions (red lines, see Materials and methods), as marked on the left of the figure. The root mean square error (RMSE) between the data points and fitted function is shown in each window. Among all four fits, exponential fit marked by blue rectangle, provided the lowest RMSE. (B) Linear increase in [Na+]i or (C) linear decrease in [Cl-]i led to logarithmic IBI scaling (blue rectangle).
+
+### The postictal period
 
 An additional model prediction concerned the postictal period which is characterized by reduced excitability and firing. As shown in Figure 2A–C, after the termination of an SLE there was an approximate 90-s period during which firing was either absent or reduced with respect to the interictal period. The exact duration of the postictal period was difficult to assess, as the gap in firing after the SLE was dependent on background fluctuations. To directly investigate the network excitability, we analyzed the responsiveness of the model to external periodic stimulation (see Boido et al., 2014). The background noise was removed and was compensated with a steady depolarizing current, as in Figure 6. Stimulation was delivered by activating the excitatory synapses every 5 s at each PY soma (arrows in Figure 7B). The amplitude of the excitatory postsynaptic current was set at just above the threshold for triggering the spike in the interictal period (before the timestamp at 60 s). The external stimulation triggered a burst and two single spike responses after the SLE termination (Figure 7, vertical broken line) and failed to trigger a suprathreshold response for approximately 90 s afterwards. In line with the PY response pattern, no response to the simulated stimulation was observed in the LFP signal during the postictal suppression period (Figure 7A). The high excitability immediately after termination of the SLE (timestamps between seconds 110 and 125) was correlated with elevated [K+]o which was present shortly after the SLE (Figure 7C). The subsequent postictal reduction of excitability was associated with decay of [K+]o and an increased hyperpolarizing Na+/K+-pump current in somatic and dendritic compartments. The pump current decayed with a slower time constant associated with a gradual clearance of [Na+]i by the pump (Figure 7DE).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/68541/elife-68541-fig7-v2.jpg)
 
-**Figure 7.:** In this figure, the background input was removed from the simulation and compensated with a small depolarizing current injected into the PY cells, as in Figure 6. (A) The LFP signal. (B) The PY cell membrane potential with external periodic stimulation delivered every 5 s, marked by the arrows (violet, stim.). The amplitude of the stimulation was set at just above the threshold for triggering a spike in the interictal period. (C) The extracellular potassium in the somatic and dendritic compartments. (D and E) The net Na+/K+-pump current in the somatic and dendritic compartment, respectively. The vertical broken line (blue) in all panels marks the SLE offset time without periodic stimulation. Immediately after termination of the SLE, the network was still excitable due to increased [K+]o. Shortly afterward, the excitability decreased due to an increased Na+/K+-pump current that outlasted the increase in [K+]o. Increased I and decreased [Kpump+]o which occurred shortly after the termination of the SLE, led to a postictal period during which the network did not respond to external stimulation for approximately 90 s.
+**Figure 7.:** In this figure, the background input was removed from the simulation and compensated with a small depolarizing current injected into the PY cells, as in Figure 6. (A) The LFP signal. (B) The PY cell membrane potential with external periodic stimulation delivered every 5 s, marked by the arrows (violet, stim.). The amplitude of the stimulation was set at just above the threshold for triggering a spike in the interictal period. (C) The extracellular potassium in the somatic and dendritic compartments. (D and E) The net Na+/K+-pump current in the somatic and dendritic compartment, respectively. The vertical broken line (blue) in all panels marks the SLE offset time without periodic stimulation. Immediately after termination of the SLE, the network was still excitable due to increased [K+]o. Shortly afterward, the excitability decreased due to an increased Na+/K+-pump current that outlasted the increase in [K+]o. Increased Ipump and decreased [K+]o which occurred shortly after the termination of the SLE, led to a postictal period during which the network did not respond to external stimulation for approximately 90 s.
 
 ## Discussion
 
 The present study aimed to better define the mechanisms underlying focal seizures. The ictal pattern most frequently observed in human and experimental TLE, that is, the LVF onset pattern, exhibits a stereotypical sequence of fast activity, irregular spiking and periodic bursting (as shown in Figure 3A, first panel) (Avoli et al., 2016; de Curtis and Avoli, 2016; Devinsky et al., 2018; Velascol et al., 2000). We successfully reproduced this pattern in the computer model by transiently increasing the firing of the IN. After this trigger, the simulated SLE phases evolved autonomously. Our study suggests that the various seizure phases and transitions from one phase to another are mediated by feedback mechanisms between neuronal activities, ion concentration changes and ion homeostasis processes. The distinct mechanisms that shape the activities at various seizure stages are discussed below.
 
-## Seizure initiation
+### Seizure initiation
 
 There is increasing evidence showing that seizures with LVF onset are initiated by discharges of fast-spiking GABAergic interneurons (de Curtis and Avoli, 2016; de Curtis and Gnatkovsky, 2009; Devinsky et al., 2018). Increased interneuron discharges and decreased PY activity around the time of seizure onset were first evidenced in in vitro and in vivo animal models (Gnatkovsky et al., 2008; Grasse et al., 2013; Lévesque et al., 2016; Lopantsev and Avoli, 1998; Miri et al., 2018; Toyoda et al., 2015; Ziburkus et al., 2006). A similar scenario was observed with single-unit recordings performed during intracerebral presurgical monitoring in neocortical and temporal lobe epilepsy patients (Elahian et al., 2018; Truccolo et al., 2011). Causal relationship between increased interneuron firing and ictogenesis may include intracellular chloride accumulation resulting in a shift in EGABAa and/or the elevation of [K+]o, which leads to subsequent depolarization of PY cells and seizure development (Magloire et al., 2019b). The hypothesis suggested by Jensen and Yaari, 1997 that seizure initiation is related to an elevation in [K+]o caused by a strong initial discharge has been tested in computational models with ion concentration changes. In these simulations, seizure-like activity has been induced by DC stimulation of the PY cells alone (Bazhenov et al., 2004; Buchin et al., 2016; Kager et al., 2002), by a brief increase in [K+]o (Fröhlich et al., 2006), by stimulation of the IN and PY cells (Y Ho and Truccolo, 2016) or by varying the extracellular concentration of K+ and O2 (Wei et al., 2014b). However, as mentioned above, transitions to spontaneous seizures that begin with LFV pattern were not associated with increased excitatory activity, but with increased firing of inhibitory interneurons. Pyramidal cell – interneuron interplay during SLE was first investigated in the computational model of Wei et al., 2014a which mimicked 4-aminopyridine (4-AP) and decreased magnesium in vitro conditions (Ziburkus et al., 2006). They showed that when potassium diffusion rate around the IN was lower than around the PY cell, the IN depolarized and increased its activity and eventually entered depolarization block giving way to the strong firing of the PY cell during an SLE. The following in silico tests on seizure initiation by selective involvement of fast-spiking interneurons were conducted by us (Gentiletti et al., 2017) and others (González et al., 2018). We demonstrated that an increase in interneuron firing triggered a transition to a self-sustained SLE during which both IN and PY cells were active simultaneously. González et al., 2018 showed that interneuron stimulation by current pulses led to the development of an SLE via a gradual increase in [K+]o mediated by the KCC2 cotransporter. Activation of the KCC2 pump was [Cl-]i dependent, while [K+]o influenced cotransporter time constant.
 
@@ -103,19 +111,19 @@ Although in our model chloride accumulation increased EGABAa and lowered synapti
 
 The observation that the development of seizures may be related to an increase in [K+]o beyond the physiological values suggests that the modulation of [K+]o by the use of K+ chelators is a potential strategy for the control of seizures. In our previous work, we demonstrated that an artificial potassium buffer, which mimicked the function of astrocytes by balancing neuronal K+ release, could reduce neuronal excitability and prevent an SLE (Suffczynski et al., 2017).
 
-## The mechanisms of [K+]o accumulation
+### The mechanisms of [K+]o accumulation
 
 A question arises: what causes [K+]o accumulation? The buildup of Cl- inside the PY neurons during interneuron-induced GABA release results in the activation of the KCC2 cotransporter, which extrudes Cl- and K+ into the extracellular space. This hypothesis is supported by in vitro experiments which showed that activation of GABAa receptors led to an increase in [K+]o and cell depolarization, which were eliminated by the KCC2 inhibitor, furosemide (Viitanen et al., 2010). The above-mentioned hypothesis is also consistent with the findings that the application of the KCC2 blockers VU0240551 and bumetanide prevented SLEs during 4-AP application in rat brain slices (Hamidi and Avoli, 2015). However, it is not clear whether the ictal activity is consistently based on K+ efflux through KCC2. In the pilocarpine model, the enhancement of KCC2 in principal cortical neurons is associated with a reduction in seizure duration (Magloire et al., 2019a). Based on these results, the authors suggested that KCC2 activity does not affect seizure initiation, but influences seizure maintenance during a prolonged period of Cl- accumulation. The antiepileptic role of enhanced KCC2 activity has also been suggested by Moore et al., 2018, who showed that KCC2 potentiation delayed the onset of an SLE after 4-AP application in vitro and reduced the severity of kainate-induced seizures in vivo. When considering the role of KCC2 in [K+]o and [Cl-]i accumulation, it is necessary to note that the direction and magnitude of KCC2 transport depend on the concentration gradients of Cl- and K+ (Kaila et al., 2014). Under normal conditions, when [K+]o is sufficiently controlled by homeostatic mechanisms, GABAergic activity leads to the extrusion of Cl- and K+ by KCC2. However, an increase in [K+]o may reverse the K+–Cl- cotransport, thus contributing to [K+]o buffering rather than accumulation (Payne, 1997; Thompson and Gahwiler, 1989) The activation of IN in our model led to a rapid increase in [K+]o in the narrow extracellular interstitial compartments, while intracellular Cl- accumulation was more gradual (Figure 2). This generated an influx of K+ and Cl- via KCC2 (Figure 5B), which led to [K+]o buffering and [Cl-]i accumulation. The exclusion of KCC2 involvement in the increase in [K+]o suggests that the primary mechanism of [K+]o accumulation in our model was due to other processes, such as the outward K+ current that repolarizes action potentials in activated IN and PY cells. This observation is consistent with in vivo experimental evidence that showed a significant local [K+]o rise due to increased spiking activity following electrical stimulation of the cat cerebral cortex (Heinemann and Lux, 1975).
 
 It is worth noting that in our model KCC2 resumes extruding Cl- shortly after SLE termination (Figure 5B). Accordingly, [Cl-]i build up is observed over the whole SLE. Intracellular chloride imaging during SLE induced in vitro by Mg2+-free solution showed that [Cl-]i started to decline before the end of SLE (Raimondo et al., 2013), while during SLE induced in vivo by 4-AP [Cl-]i recovery begun instantly after SLE offset (Sulis Sato et al., 2017). These dissimilar observations might be related to distinct firing patterns of inhibitory and excitatory neurons in 4-AP and low Mg2+ seizure models (Codadu et al., 2019), which in turn could lead to different Cl- and K+ and accumulation patterns.
 
-## The tonic-to-bursting transition
+### The tonic-to-bursting transition
 
 Potassium ions released by interneuron discharges initially diffused to the somatic extracellular compartments of the PY cells and contributed to PY soma depolarization and tonic firing, as described above. The initial fast rise of [K+]o in the somatic compartment and slower rise in dendritic segment (Figure 2D) was related to the localisation of inhibitory neuron near the PY soma. Subsequently, K+ diffusion from the somatic to dendritic compartments promoted regenerative dendritic spikes in PY cells. In the model, the dendritic conductance of voltage-gated K+ currents associated with spiking was about 10% of the somatic conductance (Fransen et al., 2002) hence release of K+ ions into the dendritic interstitial space was smaller than in the somatic compartment. On the other hand, radial diffusion and glial buffering processes had the same efficiency in both compartments maintaining lower dendritic [K+]o. This model prediction appears to agree with experimental data of simultaneous recordings of [K+]o in somatic and dendritic layers during hippocampal seizures in anesthetized rats. During paroxysmal firing induced by electrical stimulation, [K+]o in dentate gyrus reached significantly higher levels in cell body layers than in the layers containing dendrites (Somjen and Giacchino, 1985). High [K+]o in the soma and moderately increased [K+]o in dendrites favored burst firing (Figure 4A and Appendix 1—figure 1) through the reduction of repolarizing K+ currents, the activation of a Na+ persistent current, and a shift from spike after-hyperpolarization toward depolarizing after-potentials. Prolonged depolarization led to the activation of slow M-type K+ conductance (Appendix 1—figure 2), which hyperpolarized the PY cells after a series of fast spikes. The bursting mechanism in our model originated from currents used in the original entorhinal cortex cells model (Fransen et al., 2002) and was similar to the mechanism in CA1 neurons (Golomb et al., 2006).
 
 We note that in our model a transition from resting to tonic and then to bursting activity in PY cells was not critically dependent on perisomatic inhibition and would be also observed if we simulated dendrite-targeting, SST interneurons. As shown by the bifurcation diagram in Figure 4A (first panel) an increase in either somatic or dendritic [K+]o may lead to a transition from rest to tonic spiking and then bursting. This observation is in agreement with the study showing that optogenetic activation of either PV or SST inhibitory interneurons can trigger SLE (Yekhlef et al., 2015).
 
-## Seizure termination
+### Seizure termination
 
 Various mechanisms underlying seizure termination have been suggested (Lado and Moshé, 2008; Zubler et al., 2014), however, researchers have not yet reached a consensus regarding which one plays a dominant role. In our model, the SLE terminated spontaneously. Following the fast-slow analysis approach (Fröhlich et al., 2006), we created a simplified model in which [K+]o,soma, [K+]o,dend together with [Na+]i, soma and [Na+]i, dend were treated as control parameters. Hence, the influence of neuronal activity on ionic variations was removed and the dependence of network activity on K+ and Na+ concentrations was analyzed (Figure 4A). When the time course of the concentration changes of these two ions were tuned to reproduce the decrease in [K+]o and maintained increased level of [Na+]i observed in the late SLE phase, the ictal activity spontaneously terminated (Figure 4B). This indicates that SLE cessation in the model can be explained by two coincident factors, namely the decrease in [K+]o during stable levels of increased [Na+]i. An increase in [Na+]i led to an increased hyperpolarizing Na+/K+-pump current, which increased the firing threshold in the neurons. The increased pump activity also contributed to a progressive decrease in [K+]o. Potassium repolarization currents increased after each burst and eventually prevented the initiation of a new cycle of the oscillation. The idea that negative feedback between [Na+]i accumulation and neuronal firing is responsible for seizure termination was first formulated by Jensen and Yaari, 1997. Even though it has not been tested experimentally, this hypothesis is consistent with the observation that the inhibition of Na+/K+-pump activity occurring during hypoxia prolongs SLE discharges and shortens post-SLE period in hippocampal slices with blocked synaptic transmission (Haas and Jefferys, 1984). It was also observed that a decrease in Na+ channel conductance via the antiepileptic drug phenytoin, increased the seizure threshold but prolonged the afterdischarges and seizure durations in the rat kindling model of epilepsy (Ebert et al., 1997). In the computational model developed by the Bazhenov team (Krishnan et al., 2015; Krishnan and Bazhenov, 2011) and Chizhov et al., 2018, a progressive increase in [Na+]i and activation of the electrogenic Na+/K+-pump were identified as the primary factor of SLE termination. The seizure termination mechanism in the above-mentioned studies is similar to the mechanism observed in the present study, even though different specifications of neuronal mechanisms, network characteristics and seizure morphologies were used.
 
@@ -123,160 +131,611 @@ It should be also noted that activation of the Na+/K+-pump by [Na+]i is not the 
 
 The abrupt termination of a seizure across the entire brain (Salami et al., 2022) requires long-range communication which may involve thalamocortical interactions (Aracri et al., 2018; Evangelista et al., 2015), travelling waves (Martinet et al., 2017; Proix et al., 2018) and ephaptic interactions (Jefferys, 1995; Shivacharan et al., 2019). Multiple neuromodulatory, ionic, synaptic and neuronal components likely cooperate to terminate a seizure. Further insight into these mechanisms may be obtained by their selective blockage (Uva and de Curtis, 2020), the tracking of EEG signal changes as seizure offset approaches (Boido et al., 2014; Saggio et al., 2020) and from analysis of the duration of postictal suppression (Payne et al., 2018).
 
-## Frequency Slowing
+### Frequency Slowing
 
 The approach of seizure termination is often (but not always) accompanied by an increase in the intervals between successive bursts that form the late seizure phase. Saggio et al., 2020 analyzed frequency slowing in human focal onset seizures and estimated that approximately 40% exhibited unequivocal discharge slowing down toward the end. Burst frequency slowing was confirmed in a study on the entorhinal cortex of the isolated brain preparation during bicuculline- and 4AP-induced SLE (Boido et al., 2014). Our model prediction of the exponential increase in the IBI toward the SLE offset (Figure 6A) was confirmed with experimental data (Figure 6BC). These findings are also consistent with those of Bauer et al., 2017, which demonstrated that inter-burst intervals in focal epilepsy patients were predominantly described by the exponential scaling law. Conversely, it has been suggested that depending on the bifurcation which leads to seizure termination, the burst oscillation frequency can be constant or decrease according to the logarithmic or square root relationship (Izhikevich, 2000; Jirsa et al., 2014). This theory has not been confirmed by our model and experimental seizure data (Figure 6). On the other hand, when specific ion types were varied linearly and led to linearly decreasing membrane current (not shown), logarithmic increase in IBI was observed (Figure 6—figure supplement 1B,C). It shows that when the assumption of slow linear membrane current dynamics was satisfied, the IBI evolved according to the bifurcation theory. However, when various processes influenced seizure termination and the current changed non linearly, the IBI slowing deviated from the predicted scaling laws.
 
 In our model, progressive decrease in neuronal excitability related to simultaneous decrease in [K+]o and increase in [Na+]i, was responsible for the IBI slowing toward an SLE end. Alternative explanations for the increasing inter-burst intervals have been proposed. Bauer et al., 2017 included a plasticity parameter that progressively decoupled spatially distributed neural mass units based on the synchrony level. This mechanism accounted for seizure termination, exponential IBI increase and the presence of a transient postictal state. In the model of Liou et al., 2020 the IBI was constant during seizure expansion and only when the spatial propagation of ictal discharge ceased, the seizure entered the pre-termination stage with a slowing-down trend. An increase in the IBI in this phase was related to the recovery of inhibition and restoration of the Cl- concentration gradient. These studies indicate that spatial properties related to seizure propagation and synchrony are other factors that may affect the evolution of the IBI.
 
-## The postictal period
+### The postictal period
 
 Seizures are followed by the suppression of physiological rhythms known as postictal EEG suppression (PES) that lasts for seconds or minutes (Pottkämper et al., 2020). Using the stimulation protocol, we investigated the duration of PES in the model. Our results showed that shortly after termination of the SLE, burst responses were still triggered, however, after few seconds, the excitability decreased and remained reduced for approximately 90 s (Figure 7B). The PES duration in our model is consistent with a typical ‘seconds to minutes’ timescale although available estimates depend on the PES duration assessment method. In single-unit recordings in epileptic patients with neocortical seizures neuronal spiking was fully suppressed for 5–30 s after seizure termination (Truccolo et al., 2011). Average duration of postictal suppression based on EEG features in focal seizure patients was estimated at 17 s (Grigorovsky et al., 2020; Table 1), 120 s (Payne et al., 2018; Table 1) and around 50–100 s (Bauer et al., 2017; Figure 5). Our in silico-derived prediction that postictal ‘silence’ depends on the increased rate of hyperpolarizing Na+/K+-pump has been previously suggested (Fisher and Schachter, 2000) and simulated (Krishnan et al., 2015; Krishnan and Bazhenov, 2011). In these models, postictal state was generated via both, reduced [K+]o to below baseline level and increased [Na+]i after termination of an SLE. [K+]o decrease below baseline resulted in a negative shift in EK and membrane hyperpolarization, while elevated [Na+]i increased Na+/K+-pump hyperpolarizing current. A below-reference value of [K+]o was indeed observed after seizure termination (Heinemann et al., 1977). On the other hand, in other studies, [K+]o decayed to baseline level after an SLE offset (Fisher et al., 1976; Futamachi et al., 1974) and couldn’t contribute to the postictal state. Also in our model [K+]o undershoot was not observed (Figure 7C), suggesting that the main cause of postictal reduction in excitability was hyperpolarizing effect of the Na+/K+-pump current, which remained elevated above baseline for about 100 s after SLE termination (Figure 7DE). The findings generated by our computational model suggest that ion homeostatic processes activated and sustained by the excessive seizure discharges provide a negative feedback mechanism, eventually leading to the cessation of the seizure itself and to the restoration of the normal state after a transitional period of postictal silence.
 
+**Table 1.**
+ Gating variables of the ionic currents in pyramidal cell model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Current</th>
+      <th colspan="2">Kinetics/time constant (ms)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">INa,soma</td>
+      <td>αm=0.8-V-39.8exp-V-39.84-1</td>
+      <td>βm=0.7V+14.8expV+14.85-1</td>
+    </tr>
+    <tr>
+      <td>αh=0.32exp-V-1518</td>
+      <td>βh=10exp-V-155+1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">INa,dendrite</td>
+      <td>αm=0.32-V-48.9exp-V-48.94-1</td>
+      <td>βm=0.28V+21.9expV+21.95-1</td>
+    </tr>
+    <tr>
+      <td>αh=0.128exp-V-4418</td>
+      <td>βh=4exp-V-215</td>
+    </tr>
+    <tr>
+      <td rowspan="2">INaP</td>
+      <td>m∞=11+exp-48.7-V4.4</td>
+      <td>τm=10.091V+381-exp⁡-V-385-0.062V+381-exp⁡V+385</td>
+    </tr>
+    <tr>
+      <td>h∞=11+exp48.8+V9.98</td>
+      <td>if Vm≤-60:τh=3700+20000.091(V+60)1−exp(−V−605)−0.062(V+60)1−exp(V+605)if Vm&gt;−60:τh=1200+80000.091(V+74)1−exp(−V−745)−0.062(V+74)1−exp(V+745)</td>
+    </tr>
+    <tr>
+      <td>IKdr,soma</td>
+      <td>n∞=11+exp(−22.8−V13.6)</td>
+      <td>τm=1.6C+expV5Dexp-V40C+expV5+0.016expV564.9+VC=-0.00000230599;D=0.0338338</td>
+    </tr>
+    <tr>
+      <td>IKdr,dend</td>
+      <td>n∞=11+exp(−14.8−V13.6)</td>
+      <td>τm=1.6C+expV5Dexp-V40C+expV5+0.016expV564.9+VC=-0.00000230599;D=0.0338338</td>
+    </tr>
+    <tr>
+      <td>ICaL</td>
+      <td>αm=1.61+exp-0.072V-5</td>
+      <td>βm=0.02V+8.9expV+8.95-1</td>
+    </tr>
+    <tr>
+      <td>IKAHP</td>
+      <td>αm=2000Cai-Cai,rest</td>
+      <td>βm=0.01</td>
+    </tr>
+    <tr>
+      <td>IKC, if  Vm≤-10</td>
+      <td>αm=expV+5011-V+53.52718.975</td>
+      <td>βm=2exp(−V−53.527)</td>
+    </tr>
+    <tr>
+      <td>IKC, if Vm&gt;−10</td>
+      <td>αm=2exp(−V−53.527)</td>
+      <td>βm=0</td>
+    </tr>
+    <tr>
+      <td>IKM</td>
+      <td>m∞=11+exp(−V+335)</td>
+      <td>τm=10003.3[exp(V+3540)]+[exp(−V−3520)]</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Materials and methods
 
-## Geometry
+### Geometry
 
 The cell morphology was based on entorhinal cortex PY cells and an interneuron model (Fransen et al., 2002), further reduced to equivalent cylinder models. The PY cell consisted of two compartments: a soma with a length of 20 μm and a diameter of 15 μm, and a dendrite with a length of 450 μm and a diameter of 6.88 μm. The interneuron only had a somatic compartment with a length of 20 μm and a diameter of 15 μm. Each compartment was surrounded by its own extracellular space (ECS). The extracellular compartments were embedded in a common bathing medium which represented the surrounding neural tissue and vasculature. The size of the ECS was estimated by the extracellular volume fraction, α defined as the ratio volume of extracellular space/volume of tissue. We used α=0.131 which corresponded to the CA1 st. pyramidale and a K+ concentration of 3.5 mM (McBain et al., 1990).
 
-## Biophysics
+### Biophysics
 
 The active membrane currents in the PY cell were the fast Na+ and K+ currents (INa and IKdr, respectively) in both compartments and were responsible for action potential generation; a persistent Na+ current, INaP in the soma; a high-threshold Ca2+ current, ICaL in both compartments; a calcium-dependent after-hyperpolarization K+ current, IKAHP in both compartments; a fast calcium- and voltage-dependent K+ current, IKC in both compartments; and a noninactivating muscarinic K+ current, IKM in the soma. The IN included only the INa and IKdr currents responsible for spike generation. All the equations for the active currents were initially based on those described by Fransen et al., 2002, however, an additional modification of the parameters described below was required to account for ionic regulation mechanisms. Simulations were performed using the NEURON simulator with a fixed integration step of 0.05ms.
 
-## Passive properties
+### Passive properties
 
-The reversal potentials were obtained via the Nernst equation:EX=2.3RTzFlogXoXi
+The reversal potentials were obtained via the Nernst equation:
 
-where [X]i and [X]o are intra- and extracellular concentrations, respectively, of the ions. X = {Na+, K+, Ca2+, Cl-, HCO3-}, F is the Faraday constant, R is the gas constant, z is the valence of the ions and T=273,16 + 32 is the absolute temperature (Gnatkovsky et al., 2008). A leak current, Ileak, was present in all compartments of both cells and was a sum of the leak currents of Na+, K+, and Cl-, modeled as:Ii,leak=gi,leakV-Ei
+$$
+E_{X}=2.3\frac{RT}{zF}log\frac{X_{o}}{X_{i}}
+$$
+
+where [X]i and [X]o are intra- and extracellular concentrations, respectively, of the ions. X = {Na+, K+, Ca2+, Cl-, HCO3-}, F is the Faraday constant, R is the gas constant, z is the valence of the ions and T=273,16 + 32 is the absolute temperature (Gnatkovsky et al., 2008). A leak current, Ileak, was present in all compartments of both cells and was a sum of the leak currents of Na+, K+, and Cl-, modeled as:
+
+$$
+I_{i,leak}=g_{i,leak}V-E_{i}
+$$
 
 where gi,leak is the leak current conductance of the ion of interest i = {Na+, K+, Cl-}. The resting membrane potential was –61 mV in the pyramidal cell and in the interneuron. The specific axial resistance in both cells was set to Ra = 100 Ohm*cm and the specific membrane capacitance was set to Cm = 1 μF/cm2, as in Fransen et al., 2002. Based on the Ra and PY cell geometry, the somato-dendritic coupling conductance, gc, was calculated as 1.5 mS.
 
-## Active currents
+### Active currents
 
-The original equations used time constant units in seconds (s) and voltage units in volts (V), with 0 V corresponding to the resting membrane potential. All equations were modified to account for the millivolt (mV) and millisecond (ms) units used in our model and the voltage was shifted by –60 mV to correspond to the membrane potential relative to the extracellular space, which was assumed to be 0 mV. Additional modifications of the parameters were required to account for the ionic regulation mechanisms that were not present in the original model. INaP: the activation gate exponent was 2 and the inactivation gate time constant, τh, was estimated by fitting the activation function form described by Fransen et al., 2002 to the experimental data (Magistretti and Alonso, 1999). IKdr: the steady-state activation function, ninf, and the activation gate time constant, τn, were estimated by empirical fit to the experimental data (Sah et al., 1988). To increase the firing threshold, the activation curve was shifted toward positive potentials by 18 mV in the soma and 10 mV in the dendrites. The model generated spontaneous fast spiking otherwise. IKAHP, IKC: these Ca2+-dependent currents were modelled according to the model described by Traub et al., 2003 and were implemented in ModelDB (https://senselab.med.yale.edu/ModelDB/), accession number 20,756. Due to the arbitrary units for Ca2+ concentration in Traub’s model, we modified the current formula to correspond to mM units and resting level of [Ca2+]i used in our model. In pyramidal cells, the soma and dendrite membrane potentials, Vs and Vd, respectively, were governed by the following Hodgkin-Huxley equations:CdVsdt=−INa,soma−INaP−IKdr,soma−ICaL−IKAHP−IKC−IKM−Ileak−INaKpump−ICaPump−gc(Vs−Vd)−IsynCdVddt=-INa,dend-IKdr,dend-ICaL-IKAHP-IKC-INaKpump-ICaPump-gcVd-Vs-Isyn
+The original equations used time constant units in seconds (s) and voltage units in volts (V), with 0 V corresponding to the resting membrane potential. All equations were modified to account for the millivolt (mV) and millisecond (ms) units used in our model and the voltage was shifted by –60 mV to correspond to the membrane potential relative to the extracellular space, which was assumed to be 0 mV. Additional modifications of the parameters were required to account for the ionic regulation mechanisms that were not present in the original model. INaP: the activation gate exponent was 2 and the inactivation gate time constant, τh, was estimated by fitting the activation function form described by Fransen et al., 2002 to the experimental data (Magistretti and Alonso, 1999). IKdr: the steady-state activation function, ninf, and the activation gate time constant, τn, were estimated by empirical fit to the experimental data (Sah et al., 1988). To increase the firing threshold, the activation curve was shifted toward positive potentials by 18 mV in the soma and 10 mV in the dendrites. The model generated spontaneous fast spiking otherwise. IKAHP, IKC: these Ca2+-dependent currents were modelled according to the model described by Traub et al., 2003 and were implemented in ModelDB (https://senselab.med.yale.edu/ModelDB/), accession number 20,756. Due to the arbitrary units for Ca2+ concentration in Traub’s model, we modified the current formula to correspond to mM units and resting level of [Ca2+]i used in our model. In pyramidal cells, the soma and dendrite membrane potentials, Vs and Vd, respectively, were governed by the following Hodgkin-Huxley equations:
 
-Transient sodium currentINa,soma=gNa,PYsomam3hV-ENaINa,dend=gNa,PYdendm2hV-ENa
+$$
+C\frac{dV_{s}}{dt}=−I_{Na,soma}−I_{NaP}−I_{Kdr,soma}−I_{CaL}−I_{KAHP}−I_{KC}−I_{KM}−I_{leak}−I_{NaKpump}−I_{CaPump}−g_{c}(V_{s}−V_{d})−I_{syn}
+$$
 
-Persistent sodium current:INaP=gNaPm2hV-ENa
 
-Delayed rectifier:IKdr,soma=gKdr,PYsoman4V-EKIKdr,dend=gKdr,PYdendn2V-EK
 
-High-threshold Ca2+ current:ICaL=gCaLm2V-ECa
+$$
+C\frac{dV_{d}}{dt}=-I_{Na,dend}-I_{Kdr,dend}-I_{CaL}-I_{KAHP}-I_{KC}-I_{NaKpump}-I_{CaPump}-g_{c}V_{d}-V_{s}-I_{syn}
+$$
 
-Ca2+-dependent K+ (afterhyperpolarization) current:IKAHP=gKAHPmV-EK
+Transient sodium current
 
-Fast Ca2+- and voltage-dependent K+ current:IKC=gKCmin([Ca2+]i/250,1)m(V−EK)
+$$
+I_{Na,soma}=g_{Na,PYsoma}m^{3}hV-E_{Na}
+$$
 
-Muscarinic current:IKM=gKMmV-EK
+
+
+$$
+I_{Na,dend}=g_{Na,PYdend}m^{2}hV-E_{Na}
+$$
+
+Persistent sodium current:
+
+$$
+I_{NaP}=g_{NaP}m^{2}hV-E_{Na}
+$$
+
+Delayed rectifier:
+
+$$
+I_{Kdr,soma}=g_{Kdr,PYsoma}n^{4}V-E_{K}
+$$
+
+
+
+$$
+I_{Kdr,dend}=g_{Kdr,PYdend}n^{2}V-E_{K}
+$$
+
+High-threshold Ca2+ current:
+
+$$
+I_{CaL}=g_{CaL}m^{2}V-E_{Ca}
+$$
+
+Ca2+-dependent K+ (afterhyperpolarization) current:
+
+$$
+I_{KAHP}=g_{KAHP}mV-E_{K}
+$$
+
+Fast Ca2+- and voltage-dependent K+ current:
+
+$$
+I_{KC}=g_{KC}min([Ca^{2+}]_{i}/250,1)m(V−E_{K})
+$$
+
+Muscarinic current:
+
+$$
+I_{KM}=g_{KM}mV-E_{K}
+$$
 
 Equations of gating variables are given in Table 1. Conductance values are given in Table 2.
 
-Membrane potential of the interneuron was governed by the following Hodgkin-Huxley equations:CdVdt=-INa-IKdr-Ileak-INaKpump-Isyn-Istim
+**Table 2.**
+ Conductances used in the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Current conductance</th>
+      <th>Description</th>
+      <th>Values (S/cm2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gNa,leak,PYsoma</td>
+      <td>INa,leak conductance in PY soma</td>
+      <td>1.5*10–5</td>
+    </tr>
+    <tr>
+      <td>gNa,leak,PYdend</td>
+      <td>INa,leak conductance in PY dendrite</td>
+      <td>1.1*10–5</td>
+    </tr>
+    <tr>
+      <td>gK,leak,PY</td>
+      <td>IK,leak conductance in PY soma and dendrite</td>
+      <td>3*10–5</td>
+    </tr>
+    <tr>
+      <td>gCl,leak,PY</td>
+      <td>ICl,leak conductance in PY soma and dendrite</td>
+      <td>1*10–5</td>
+    </tr>
+    <tr>
+      <td>gNa,PYsoma</td>
+      <td>INa conductance in PY soma</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>gNa,PYdend</td>
+      <td>INa conductance in PY dendrite</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>gKdr,PYsoma</td>
+      <td>IKdr conductance in PY soma</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>gKdr,PYdend</td>
+      <td>IKdr conductance in PY dendrite</td>
+      <td>0.0032</td>
+    </tr>
+    <tr>
+      <td>gNaP</td>
+      <td>INaP conductance in PY soma</td>
+      <td>60*10–5</td>
+    </tr>
+    <tr>
+      <td>gCaL</td>
+      <td>ICaL conductance in PY soma and dendrite</td>
+      <td>15*10–5</td>
+    </tr>
+    <tr>
+      <td>gKAHP</td>
+      <td>IKAHP conductance in PY soma and dendrite</td>
+      <td>5*10–5</td>
+    </tr>
+    <tr>
+      <td>gKC</td>
+      <td>IKC conductance in PY soma and dendrite</td>
+      <td>0.196*1e3</td>
+    </tr>
+    <tr>
+      <td>gKM</td>
+      <td>IKM conductance in PY soma</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>gNa,leak,IN</td>
+      <td>INa,leak conductance in IN</td>
+      <td>2.9*10–5</td>
+    </tr>
+    <tr>
+      <td>gK,leak,IN</td>
+      <td>IK,leak conductance in IN</td>
+      <td>6*10–5</td>
+    </tr>
+    <tr>
+      <td>gCl,leak,IN</td>
+      <td>ICl,leak conductance in IN</td>
+      <td>1*10–5</td>
+    </tr>
+    <tr>
+      <td>gNa,IN</td>
+      <td>INa conductance in IN</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>gKdr,IN</td>
+      <td>IKdr conductance in IN</td>
+      <td>0.027</td>
+    </tr>
+  </tbody>
+</table>
+
+Membrane potential of the interneuron was governed by the following Hodgkin-Huxley equations:
+
+$$
+C\frac{dV}{dt}=-I_{Na}-I_{Kdr}-I_{leak}-I_{NaKpump}-I_{syn}-I_{stim}
+$$
 
 Current equations, kinetics and time constants of these currents were the same as in pyramidal cell soma. To prevent depolarization block of the IN during current stimulation, activation curve of INa was shifted 3 mV toward more negative potential values, while activation curve of IKdr was shifted by 19 mV toward more negative potential values.
 
-## Ionic dynamics
+### Ionic dynamics
 
-The model included six types of ions (K+, Na+, Cl-, Ca2+, A-, and HCO3-) with variable intra- and extracellular concentrations, except for HCO3-, for which equilibrium is rapidly attained (Theparambil et al., 2020). The evolution of the ion concentrations was based on the following equations:d[K+]idt=JKi+JK,longitudinali+JK,KCC2i+JK,Pumpi+JK,volid[K+]odt=JKo+JK,radial+JK,longitudinalo+JK,bath+JK,KCC2o+JK,Pumpo+Jglia+JK,volod[Na+]idt=JNai+JNa,longitudinali+JNa,Pumpi+Jvolid[Na+]odt=JNao+JNa,radial+JNa,longitudinalo+JNa,bath+JNa,Pumpi+JNa,volod[Cl−]idt=JCli+JCl,GABAai+JCl,longitudinali+JCl,KCC2i+JCl,volid[Cl−]odt=JClo+JCl,GABAao+JCl,longitudinalo+JCl,bath+JCl,KCC2o+JCl,volod[Ca2+]i,totdt=JCai+JCa,longitudinali+JCaPumpi+JCa,volid[Ca+]odt=JCao+JCa,longitudinalo+JCaPumpo+JCa,volod[A−]idt=JA,voli
+The model included six types of ions (K+, Na+, Cl-, Ca2+, A-, and HCO3-) with variable intra- and extracellular concentrations, except for HCO3-, for which equilibrium is rapidly attained (Theparambil et al., 2020). The evolution of the ion concentrations was based on the following equations:
+
+$$
+\frac{d[K^{+}]_{i}}{dt}=J_{K}^{i}+J_{K,longitudinal}^{i}+J_{K,KCC2}^{i}+J_{K,Pump}^{i}+J_{K,vol}^{i}
+$$
+
+
+
+$$
+\frac{d[K^{+}]_{o}}{dt}=J_{K}^{o}+J_{K,radial}+J_{K,longitudinal}^{o}+J_{K,bath}+J_{K,KCC2}^{o}+J_{K,Pump}^{o}+J_{glia}+J_{K,vol}^{o}
+$$
+
+
+
+$$
+\frac{d[Na^{+}]_{i}}{dt}=J_{Na}^{i}+J_{Na,longitudinal}^{i}+J_{Na,Pump}^{i}+J_{vol}^{i}
+$$
+
+
+
+$$
+\frac{d[Na^{+}]_{o}}{dt}=J_{Na}^{o}+J_{Na,radial}+J_{Na,longitudinal}^{o}+J_{Na,bath}+J_{Na,Pump}^{i}+J_{Na,vol}^{o}
+$$
+
+
+
+$$
+\frac{d[Cl^{−}]_{i}}{dt}=J_{Cl}^{i}+J_{Cl,GABAa}^{i}+J_{Cl,longitudinal}^{i}+J_{Cl,KCC2}^{i}+J_{Cl,vol}^{i}
+$$
+
+
+
+$$
+\frac{d[Cl^{−}]_{o}}{dt}=J_{Cl}^{o}+J_{Cl,GABAa}^{o}+J_{Cl,longitudinal}^{o}+J_{Cl,bath}+J_{Cl,KCC2}^{o}+J_{Cl,vol}^{o}
+$$
+
+
+
+$$
+\frac{d[Ca^{2+}]_{i,tot}}{dt}=J_{Ca}^{i}+J_{Ca,longitudinal}^{i}+J_{CaPump}^{i}+J_{Ca,vol}^{i}
+$$
+
+
+
+$$
+\frac{d[Ca^{+}]_{o}}{dt}=J_{Ca}^{o}+J_{Ca,longitudinal}^{o}+J_{CaPump}^{o}+J_{Ca,vol}^{o}
+$$
+
+
+
+$$
+\frac{d[A^{−}]_{i}}{dt}=J_{A,vol}^{i}
+$$
 
 where [Ca2+]i,tot is the total intracellular calcium concentration (see calcium buffer below). All fluxes (mM/ms) are specified below.
 
-## Membrane currents
+### Membrane currents
 
-The contribution of transmembrane currents to variations in intra- and extracellular ion concentrations was obtained via the following equations:JXi=-∑IXSzFViJXo=∑IXSzFVo
+The contribution of transmembrane currents to variations in intra- and extracellular ion concentrations was obtained via the following equations:
+
+$$
+J_{X}^{i}=\frac{-\sumI_{X}S}{zFV_{i}}
+$$
+
+
+
+$$
+J_{X}^{o}=\frac{\sumI_{X}S}{zFV_{o}}
+$$
 
 where the sum of IX is a net membrane current carrying ion X, S is the surface area of the compartment, z is the valence of the ions, F is the Faraday constant and Vi and Vo are the volumes of the intra- and extracellular compartments.
 
-## Longitudinal diffusion
+### Longitudinal diffusion
 
-Longitudinal diffusion of K+, Na+, Ca2+ and Cl− was implemented between the somatic and dendritic compartments in the intracellular and extracellular space of the same cell. It was described by Fick’s first law:JX,longitudinalio=DxXio,a-XioSLVio
+Longitudinal diffusion of K+, Na+, Ca2+ and Cl− was implemented between the somatic and dendritic compartments in the intracellular and extracellular space of the same cell. It was described by Fick’s first law:
+
+$$
+J_{X,longitudinal}^{io}=D_{x}\frac{X_{io,a}-X_{io}S}{LV_{io}}
+$$
 
 where Dx is the diffusion coefficient for the ion X, [X]io is the ion concentration in a given intra- or extracellular compartment, [X]oi,a is the ion concentration in the adjacent compartment, S is the cross-sectional area between the compartments, Vio is the compartment volume, L is the distance between the centers of the compartments. The diffusion coefficients were (in um2/ms): DNa = 1.33, DK = 1.96, DCa = 0.6, DCl = 2.03 (as in Somjen et al., 2008).
 
-## Radial diffusion
+### Radial diffusion
 
-Na+ and K+ ions diffused radially between adjacent extracellular compartments modeled as concentric shells around the neurons. The radial exchange of ions between adjacent shells was described by Fick’s first law:JX,radial=Dx∑Xo,a-XoSdrV
+Na+ and K+ ions diffused radially between adjacent extracellular compartments modeled as concentric shells around the neurons. The radial exchange of ions between adjacent shells was described by Fick’s first law:
+
+$$
+J_{X,radial}=D_{x}\frac{\sumX_{o,a}-X_{o}S}{drV}
+$$
 
 where [X]o is the ion concentration in a given shell and the sum goes over all adjacent shells having concentrations [X]o,a, V is a given shell volume, dr is the distance between the centers of the shells and S is the surface contact area between the shells calculated at 16% of the total outer shell surface. The electrostatic drift of ions was neglected as the ion movement due to the electrical potential gradient in the extracellular space was small compared to the diffusion.
 
-## Diffusion to/from the bath
+### Diffusion to/from the bath
 
-Radial diffusion of K+, Na+ and Cl− between the ECS and the bath was described by Fick’s first law:JX,bath=1sDxXbath-XoSdrV
+Radial diffusion of K+, Na+ and Cl− between the ECS and the bath was described by Fick’s first law:
+
+$$
+J_{X,bath}=\frac{1}{s}D_{x}\frac{X_{bath}-X_{o}S}{drV}
+$$
 
 where Dx is the diffusion coefficient for the ion X, s is the scaling constant, S is the outer surface of the shell, [X]bath is the bath concentration of the ion X, [X]o is the ion concentration in a given shell, V is the shell volume, dr is the distance between the extracellular space and the bath (assumed to be half of the shell thickness). Flux Jbath represents various processes such as diffusion to more distant areas of the brain and cerebrospinal fluid, active transport of potassium into capillaries and potassium spatial buffering by astrocytes. The effective time constant of these joint processes is likely to be much slower than that of radial and longitudinal diffusion and is described by the scaling constant s=4.4*104.
 
-## The Na+/K+ pump
+### The Na+/K+ pump
 
-The Na+/K+ pump was modeled as the sodium and potassium transmembrane currents (Kager et al., 2000):INa,Pump=3Imaxflux([Na+]i,[K+]o)IK,Pump=−2Imaxflux([Na+]i,[K+]o)flux([Na+]i,[K+]o)=(1+KmK[K+]o)−2(1+KmNa[Na+]i)−3
+The Na+/K+ pump was modeled as the sodium and potassium transmembrane currents (Kager et al., 2000):
+
+$$
+I_{Na,Pump}=3I_{max}flux([Na^{+}]_{i},[K^{+}]_{o})
+$$
+
+
+
+$$
+I_{K,Pump}=−2I_{max}flux([Na^{+}]_{i},[K^{+}]_{o})
+$$
+
+
+
+$$
+flux([Na^{+}]_{i},[K^{+}]_{o})=(1+\frac{Km_{K}}{[K^{+}]_{o}})^{−2}(1+\frac{Km_{Na}}{[Na^{+}]_{i}})^{−3}
+$$
 
 with KmK = 2 mM and KmNa = 10 mM. Imax values were computed for each cell and compartment to balance Na+ and K+ membrane currents at rest and were as follows (in mA/cm2): 0.014 (PY soma), 0.009 (PY dendrite), 0.025 (IN).
 
-## KCC2 cotransport
+### KCC2 cotransport
 
-The KCC2 cotransporter currents were modeled according to Wei et al., 2014a:IK,KCC2=UKCC2 log([K+]i[Cl−]i[K+]o[Cl−]o)ICl,KCC2=−IK,KCC2
+The KCC2 cotransporter currents were modeled according to Wei et al., 2014a:
+
+$$
+I_{K,KCC2}=U_{KCC2} log(\frac{[K^{+}]_{i}[Cl^{−}]_{i}}{[K^{+}]_{o}[Cl^{−}]_{o}})
+$$
+
+
+
+$$
+I_{Cl,KCC2}=−I_{K,KCC2}
+$$
 
 with cotransporter strength adjusted to balance chloride leak current at rest, UKCC2=0.002 mA/cm2.
 
-## Glial uptake
+### Glial uptake
 
-Potassium uptake by the glia was modeled as a set of differential equations (Kager et al., 2000):Jglia=−k2[K+]o[B]+k1[KB]d[B]dt=−k2[K+]o[B]+k1[KB]d[KB]dt=k2[K+]o[B]−k1[KB]
+Potassium uptake by the glia was modeled as a set of differential equations (Kager et al., 2000):
 
-where [B] is the free buffer, [KB] is the bound buffer (= [B]max–[B]), Bmax = 1100 mM. k1=0.0008 ms–1 and k2=k11+expKo-16-1.25 are backward and forward rate constants, respectively.
+$$
+J_{glia}=−k_{2}[K^{+}]_{o}[B]+k_{1}[KB]
+$$
 
-## The calcium pump and buffer
 
-The calcium pump and buffer which altered the intracellular Ca2+ were modeled according to the model implementation of Somjen et al., 2008 in ModelDB, accession number 113,446. The calcium pump which extruded Ca2+ from the cells was modeled as a Ca2+ transmembrane current:ICaPump=Imax1+Kpump[Ca2+]i
 
-with Imax = 2.55 mA/cm2 and Kpump = 0.0069 mM. Intracellular Ca2+ was buffered by first-order chemical Ca2+ buffer with a total concentration of [B]i and an equilibrium constant of Kd. Calcium buffering was fast and under the assumption of equilibrium conditions, the relationship between the total and free intracellular calcium concentrations, [Ca2+]i,tot and [Ca2+]i, was given by Borgdorff, 2002, pg. 27:[Ca2+]i,tot=[Ca2+]i[B]i+Kd+[Ca2+]iKd+[Ca2+]i
+$$
+\frac{d[B]}{dt}=−k_{2}[K^{+}]_{o}[B]+k_{1}[KB]
+$$
+
+
+
+$$
+\frac{d[KB]}{dt}=k_{2}[K^{+}]_{o}[B]−k_{1}[KB]
+$$
+
+where [B] is the free buffer, [KB] is the bound buffer (= [B]max–[B]), Bmax = 1100 mM. k1=0.0008 ms–1 and $k_{2}=\frac{k_{1}}{1+exp\frac{K_{o}-16}{-1.25}}$ are backward and forward rate constants, respectively.
+
+#### The calcium pump and buffer
+
+The calcium pump and buffer which altered the intracellular Ca2+ were modeled according to the model implementation of Somjen et al., 2008 in ModelDB, accession number 113,446. The calcium pump which extruded Ca2+ from the cells was modeled as a Ca2+ transmembrane current:
+
+$$
+I_{CaPump}=\frac{I_{max}}{1+\frac{K_{pump}}{[Ca^{2+}]_{i}}}
+$$
+
+with Imax = 2.55 mA/cm2 and Kpump = 0.0069 mM. Intracellular Ca2+ was buffered by first-order chemical Ca2+ buffer with a total concentration of [B]i and an equilibrium constant of Kd. Calcium buffering was fast and under the assumption of equilibrium conditions, the relationship between the total and free intracellular calcium concentrations, [Ca2+]i,tot and [Ca2+]i, was given by Borgdorff, 2002, pg. 27:
+
+$$
+[Ca^{2+}]_{i,tot}=[Ca^{2+}]_{i}\frac{[B]_{i}+K_{d}+[Ca^{2+}]_{i}}{K_{d}+[Ca^{2+}]_{i}}
+$$
 
 where [B]i = 1.562 mM*(Vi0/Vi), Vi is the intracellular compartment volume, Vi0 is the intracellular compartment volume at rest and Kd = 0.008 mM.
 
-## Volume changes
+### Volume changes
 
-Volume changes were modeled according to Somjen et al., 2008. The rates of intra- and extracellular volume changes were proportional to the difference in osmotic pressure between the intra- and extracellular compartments and fulfilled the conservation of total volume.dVidt=ΔdVodt=-Δ
+Volume changes were modeled according to Somjen et al., 2008. The rates of intra- and extracellular volume changes were proportional to the difference in osmotic pressure between the intra- and extracellular compartments and fulfilled the conservation of total volume.
 
-whereΔ=cπi-πoτπi=[Na+]i+[K+]i+[Cl−]i+[Ca2+]i+[HCO3−]i+[A−]iπo=[Na+]o+[K+]o+[Cl−]o+[Ca2+]o+[HCO3−]o+[A−]o
+$$
+\frac{dV_{i}}{dt}=Δ
+$$
+
+
+
+$$
+\frac{dV_{o}}{dt}=-Δ
+$$
+
+where
+
+$$
+Δ=\frac{c\pi_{i}-\pi_{o}}{\tau}
+$$
+
+
+
+$$
+\pi_{i}=[Na^{+}]_{i}+[K^{+}]_{i}+[Cl^{−}]_{i}+[Ca^{2+}]_{i}+[HCO_{3}^{−}]_{i}+[A^{−}]_{i}
+$$
+
+
+
+$$
+\pi_{o}=[Na^{+}]_{o}+[K^{+}]_{o}+[Cl^{−}]_{o}+[Ca^{2+}]_{o}+[HCO_{3}^{−}]_{o}+[A^{−}]_{o}
+$$
 
 Vi and Vo are the volumes of the intra- and extracellular compartments and τ=250ms. The constant c is introduced for unit conversion and is equal to 1 µm3/mM, hence units of Δ are µm3/ms. The extracellular volume was initially 15% of the cellular volume and was allowed to shrink maximally down to 4%. Volume changes affected concentrations but not the total mass of each ion within a compartment. The conservation of mass required additional fluxes:
 
-IntracellularJX,voli=-ΔViXi
+Intracellular
 
-ExtracellularJX,volo=ΔVoXo
+$$
+J_{X,vol}^{i}=\frac{-Δ}{V_{i}}X_{i}
+$$
+
+Extracellular
+
+$$
+J_{X,vol}^{o}=\frac{Δ}{V_{o}}X_{o}
+$$
 
 Extracellular space (ES) volume shrinks maximally by about 27%, comparable to average reduction of 30% during self-sustained epileptiform discharges (Dietzel et al., 1980). Intracellular space (IS) volume expands about 4%, being a consequence of constant total volume (ES +IS = const). Volume changes and resulting shifts in representative ion concentrations are shown in Appendix 1—figure 4. We note that volume changes in our model didn’t have big impact on the observed model dynamics. Shifts in ionic gradients contributed by slow volume changes were efficiently compensated by other homeostatic mechanisms, which acted on a faster time scale. In the real tissue astrocyte swelling may be significant and may reduce flow of ions and oxygen (affecting Na+/K+-pump activity) contributing to seizures and spreading depression (Hübel and Ullah, 2016). In our model, glial cell swelling was not included and its effects on diffusion and the Na+/K+-pump were not simulated which is one of the model limitations.
 
-## Initial ion concentrations
+### Initial ion concentrations
 
 The initial concentrations were based on existing literature: [Na+]i, [Ca2+]i, [Na+]o, [K+]o, [Ca2+]o and [A-]o (Somjen et al., 2008); [Cl-]i, [HCO3-]i, [HCO3-]o (Doyon et al., 2011); [K+]i [Cl-]o (Payne et al., 2003). In setting chloride and potassium concentrations, we additionally aimed to fulfill EK <ECl and EGABAa ~ –70 mV (Andersen et al., 1980). The [A-]i concentration was set to fulfill osmotic equilibrium condition. Hence, the initial concentrations were as follows (in mM): [Na+]i = 10, [Na+]o = 140, [K+]i = 87, [K+]o = 3.5, [Cl-]o = 135, [Cl-]i = 6, [Ca2+]i = 5e-5, [Ca2+]o = 2, [A-]i = 187.5, [A-]o = 0, [HCO3-]i = 15, [HCO3-]o = 25. These values gave the following Nernst potentials (in mV): ENa = 69.4, EK = –84.5, ECl = –81.8, ECa = 139.3, EHCO3 = –13.4, EGABAa = –69.5.
 
-## Resting state
+### Resting state
 
-Steady-state conditions at rest were characterized by no net flux of the ions at the resting potential (–61 mV). These conditions were determined separately for each cell and compartment. For chloride, KCC2 cotransport strength UKCC2 was adjusted to balance Cl- leak current at rest, that is:ICl,leak=-ICl,KCC2
+Steady-state conditions at rest were characterized by no net flux of the ions at the resting potential (–61 mV). These conditions were determined separately for each cell and compartment. For chloride, KCC2 cotransport strength UKCC2 was adjusted to balance Cl- leak current at rest, that is:
 
-For sodium and potassium, first, Na+ leak current conductance gNa,leak was adjusted to ensure that at rest all passive and voltage-gated membrane currents INa and IK are in the ratio –3/2, that is,:INa=-32IK
+$$
+I_{Cl,leak}=-I_{Cl,KCC2}
+$$
 
-Next, the Na+/K+-pump strength Imax was adjusted such that INa and IK currents were balanced by equal and opposite pump currents:-INa=INa,pump-IK=IK,Pump
+For sodium and potassium, first, Na+ leak current conductance gNa,leak was adjusted to ensure that at rest all passive and voltage-gated membrane currents INa and IK are in the ratio –3/2, that is,:
 
-## Synaptic connections and model inputs
+$$
+I_{Na}=\frac{-3}{2}I_{K}
+$$
 
-The pyramidal cells created excitatory AMPA synaptic connections with the interneuron and all other pyramidal cells. The interneuron created an inhibitory GABAa synaptic connection with each pyramidal cell. Excitatory synapses were placed in the middle of the PY dendrite and the middle of the IN soma. Inhibitory synapses were placed in the middle of the PY soma. The time course of synaptic conductance was modeled with a built-in NEURON mechanism Exp2Syn, implementing a dual exponential function:g=gmaxexp-tτ2-exp-tτ1
+Next, the Na+/K+-pump strength Imax was adjusted such that INa and IK currents were balanced by equal and opposite pump currents:
+
+$$
+-I_{Na}=I_{Na,pump}
+$$
+
+
+
+$$
+-I_{K}=I_{K,Pump}
+$$
+
+### Synaptic connections and model inputs
+
+The pyramidal cells created excitatory AMPA synaptic connections with the interneuron and all other pyramidal cells. The interneuron created an inhibitory GABAa synaptic connection with each pyramidal cell. Excitatory synapses were placed in the middle of the PY dendrite and the middle of the IN soma. Inhibitory synapses were placed in the middle of the PY soma. The time course of synaptic conductance was modeled with a built-in NEURON mechanism Exp2Syn, implementing a dual exponential function:
+
+$$
+g=g_{max}exp\frac{-t}{\tau_{2}}-exp\frac{-t}{\tau_{1}}
+$$
 
 where the rise and decay time constants, τ1 and τ2, were 2ms and 6ms, respectively, for all synapses. gmax = weight*factor, where the factor was defined so that the normalized peak was 1. The weights for the synapses between the PY and from the PY to the IN were wee = 0.0002 μS and wei = 0.0017 μS, respectively. The inhibitory synaptic weight, wie, was 0.0005 μS. All pyramidal cells received background input modeled as a Poisson spike train, which was different in each cell, activated an excitatory synapse at a rate of 5 Hz and had a synaptic weight winput = 0.0004 μS. To initiate the SLE, a depolarizing ramp current, Iinj, was injected into the interneuron, with the initial amplitude of 0.35 nA linearly decreasing toward 0 over 40 s.
 
-The inhibitory GABAa postsynaptic currents were carried by Cl− and HCO3− ions (Jedlicka et al., 2010):IGABAa=IClGABAa+IHCO3GABAaIClGABAa=1-PgV-EClIHCO3GABAa=PgV-EHCO3EGABAa=1-PECl+PEHCO3
+The inhibitory GABAa postsynaptic currents were carried by Cl− and HCO3− ions (Jedlicka et al., 2010):
+
+$$
+I_{GABAa}=I_{ClGABAa}+I_{HCO3GABAa}
+$$
+
+
+
+$$
+I_{ClGABAa}=1-PgV-E_{Cl}
+$$
+
+
+
+$$
+I_{HCO3GABAa}=PgV-E_{HCO3}
+$$
+
+
+
+$$
+E_{GABAa}=1-PE_{Cl}+PE_{HCO3}
+$$
 
 where relative permeability P was 0.18.
 
-## Calculation of the LFP
+### Calculation of the LFP
 
-The local field potentials were calculated based on all transmembrane currents in all cells using the following equation (Nunez and Srinivasan, 2006):ϕr,t=14πσ∑n=1NIntr-rn
+The local field potentials were calculated based on all transmembrane currents in all cells using the following equation (Nunez and Srinivasan, 2006):
+
+$$
+ϕr,t=\frac{1}{4\pi\sigma}\sum_{n=1}^{N}\frac{I_{n}t}{r-r_{n}}
+$$
 
 where In is a point current source at position rn (taken as the position of a mid-point of a compartment) and r is the position of the electrode. σ=0.3 S/m is the extracellular conductivity (Lindén et al., 2014). The electrode was located in the middle of the somatic layer of the PY and IN cells, approximately 16 µm from the centers of the somas of two neighbouring PY cells. The currents from the interneuron were taken with a weight of 0.2 to decrease their contribution. Also, the influence of the injected current on the LFP was removed. The amplitude of the simulated LFP signal was an order of magnitude smaller than the experimental data. This was due to current point-source approximation and the small number of cells in the modeled network.
 
-## Inter-burst interval fitting
+### Inter-burst interval fitting
 
 Inter-burst intervals were fitted in Matlab with linear, exponential, logarithmic and square root relationships. The linear function, IBI(t)=A + Bt, was fitted using the polyfit procedure. The exponential function, IBI(t)=A + Bexp(Ct), was fitted using the fminsearch procedure. The logarithmic and square root fits were based on the bifurcation theory, which suggests that close to bifurcation, the oscillation frequency may be constant or decay as square root or inverse of a logarithm of the distance to the bifurcation (Izhikevich, 2000). Accordingly, we fitted IBI (i.e. inverse of frequency) with logarithmic and inverse square root functions IBI(λ)=A + Blog(λ), where log() denotes the natural logarithm function, and IBI(λ)=A + B/sqrt(λ), where sqrt() denotes the square root function. Both functions were fitted using the polyfit procedure with log(λ) and 1/sqrt(λ) treated as a predictor variable. The distance to the bifurcation point was computed as λ=tend – t+1, where tend denotes bifurcation point, that is, time of an SLE end while t is time since the beginning of an SLE. One second offset in λ was necessary to avoid infinity in the predictor variables when t=tend. The goodness of fit was evaluated by Root Mean Square Error (RMSE).
 
-## Software accessibility
+### Software accessibility
 
 The model is publicly available in the ModelDB (http://modeldb.yale.edu/267499).

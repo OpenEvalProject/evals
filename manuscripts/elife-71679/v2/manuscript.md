@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Neural circuits carry out complex computations that allow animals to evaluate food, select mates, move toward attractive stimuli, and move away from threats. In insects, the subesophageal zone (SEZ) is a brain region that receives gustatory, pheromonal, and mechanosensory inputs and contributes to the control of diverse behaviors, including feeding, grooming, and locomotion. Despite its importance in sensorimotor transformations, the study of SEZ circuits has been hindered by limited knowledge of the underlying diversity of SEZ neurons. Here, we generate a collection of split-GAL4 lines that provides precise genetic targeting of 138 different SEZ cell types in adult Drosophila melanogaster , comprising approximately one third of all SEZ neurons. We characterize the single-cell anatomy of these neurons and find that they cluster by morphology into six supergroups that organize the SEZ into discrete anatomical domains. We find that the majority of local SEZ interneurons are not classically polarized, suggesting rich local processing, whereas SEZ projection neurons tend to be classically polarized, conveying information to a limited number of higher brain regions. This study provides insight into the anatomical organization of the SEZ and generates resources that will facilitate further study of SEZ neurons and their contributions to sensory processing and behavior.
+Neural circuits carry out complex computations that allow animals to evaluate food, select mates, move toward attractive stimuli, and move away from threats. In insects, the subesophageal zone (SEZ) is a brain region that receives gustatory, pheromonal, and mechanosensory inputs and contributes to the control of diverse behaviors, including feeding, grooming, and locomotion. Despite its importance in sensorimotor transformations, the study of SEZ circuits has been hindered by limited knowledge of the underlying diversity of SEZ neurons. Here, we generate a collection of split-GAL4 lines that provides precise genetic targeting of 138 different SEZ cell types in adult Drosophila melanogaster, comprising approximately one third of all SEZ neurons. We characterize the single-cell anatomy of these neurons and find that they cluster by morphology into six supergroups that organize the SEZ into discrete anatomical domains. We find that the majority of local SEZ interneurons are not classically polarized, suggesting rich local processing, whereas SEZ projection neurons tend to be classically polarized, conveying information to a limited number of higher brain regions. This study provides insight into the anatomical organization of the SEZ and generates resources that will facilitate further study of SEZ neurons and their contributions to sensory processing and behavior.
 
 ## Introduction
 
@@ -31,15 +31,23 @@ Here, we report the creation of 277 split-GAL4 lines that we collectively term t
 
 ## Results
 
-## The SEZ contains about 1700 neurons
+### The SEZ contains about 1700 neurons
 
 We set out to determine the number of neuronal cell bodies in the adult SEZ to inform the generation and assessment of split-GAL4 lines. The SEZ contains four neuropil subregions: the gnathal ganglia (GNG), saddle (SAD), prow (PRW), and antennal mechanosensory and motor center (AMMC; Figure 1A and B; Ito et al., 2014). These SEZ subregions are composed of cells from the tritocerebral, mandibular, maxillary, and labial neuromeres, which are genetically defined by the expression of known homeobox-containing, neuromere-specific genes. In order to estimate the number of neurons in the SEZ, we assessed the number of neuronal cell bodies labeled by these neuromere-specific markers. We used a single-cell transcriptome atlas of the D. melanogaster brain (Davie et al., 2018) to determine the relative proportions of neurons expressing SEZ neuromere-specific markers. We also directly counted cell bodies labeled by available SEZ neuromere-specific drivers (Simpson, 2016) in individual D. melanogaster brains. We estimated total SEZ neuron number by converting proportions derived from the single-cell transcriptome atlas into neuron number estimates based on the direct counts.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Anterior (A) and medial (B) views of the central brain of the Drosophila melanogaster adult showing the location of the gnathal ganglia (GNG, green), saddle (SAD, fuchsia), antennal mechanosensory and motor center (AMMC, cyan), and prow (royal blue) in relation to the JRC 2018 unisex brain template (grey). Together, the GNG, SAD, AMMC, and PRW compose the SEZ. (C) Venn diagram of single cells with detectable Dfd (red), Scr (green), and/or lab (blue) as assessed with a single-cell transcriptome atlas. (D, E) Example overview images of the samples used to count the number of cells expressing Dfd-LexA or Scr-LexA. LexAop-nls-GCAMP6s (green) driven by Dfd-LexA (D) or Scr-LexA (E) in the adult central brain. All nuclei are labeled with His2Av-mRFP (red) and neuropil is labeled with nc82 (blue). Asterisks denote the location of the esophageal foramen. Scale bars, 50 μm. (F) Box plots displaying counts of cell bodies labeled by both His2Av-RFP and LexAop-nls-GCaMP6s when driven with Dfd-LexA (n = 7) or Scr-LexA (n = 6). Whiskers denote spread of samples within 1.5 interquartile range from the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Labial-GAL4 driving UAS-nls-GCaMP6s (green) and UAS-His2Av-mRFP (fuchsia) in an adult female brain. Neuropil is labeled with nc82 (blue). Asterisk denotes the location of the esophageal foramen. Note that cell bodies throughout the central brain are labeled. Scale bar 50 μm.
 
 We first examined the relative number of cells and neurons in each of the subesophageal neuromeres. We filtered single-cell RNA-sequencing data from the transcriptome atlas (Davie et al., 2018) to include only cells with detectable levels of any of three homeobox-containing transcription factors that are specifically expressed in the SEZ neuromeres: Deformed (Dfd) (mandibular and maxillary neuromeres), Sex combs reduced (Scr) (labial neuromere), or labial (lab) (tritocerebral neuromere) (Hirth et al., 1998; Kumar et al., 2015). Of the 56,902 high-quality cells represented in the atlas, 390 are Dfd-positive, 691 are Scr-positive, 134 are lab-positive, and 15 express both Dfd and lab (Figure 1C). Together, 1230 cells in the atlas express these neuromere-specific markers, with 1182/1230 (96.1%) assigned to neuronal clusters based upon expression of neuronal genes. Although these results provide insight into relative numbers of cells in each subesophageal neuromere, they do not estimate neuron number in an individual brain because the single-cell RNA-sequencing atlas was constructed from multiple dissociated D. melanogaster brains.
 
 To translate the proportions derived from single-cell RNA-sequencing data into an estimate of SEZ cell number, we directly counted cell nuclei in SEZ neuromeres in individual brains. Two knock-in LexA lines, Dfd-LexA and Scr-LexA (Simpson, 2016), were used to label cells in three of the four SEZ neuromeres: the mandibular and maxillary neuromeres and the labial neuromere, respectively (Figure 1D and E). We found that lab-GAL4, which is not a knock-in line, did not selectively label the tritocerebral neuromere, precluding cell counts of the fourth SEZ neuromere (Figure 1—figure supplement 1). Adult female brains expressing nuclear localized GCaMP6s driven by either Dfd-LexA or Scr-LexA (neuromere-specific) and histone tagged with red fluorescent protein (RFP) under the control of the tubulin promoter (all cells) were used for visualization and machine-learning-assisted quantification. Dfd-LexA labeled an average of 551 ± 54 cells (n = 7) while Scr-LexA labeled an average of 1115 ± 94 cells (n = 6) in the central brain (Figure 1F), generally consistent with the proportions seen in the transcriptome atlas. Using the direct counts of Dfd-LexA cells to estimate total SEZ cell number based on the proportions derived from single-cell RNA-sequencing, we would expect ~1500–1850 cells in subesophageal neuromeres, ~1450–1750 (96.1%) of which are likely to be neurons. Using our Scr-LexA counts to estimate total SEZ number, we would expect ~1800–2100 cells, ~1700–2000 of which are likely to be neurons. These estimates are roughly consistent with previous estimates of secondary SEZ neuron number based on neuroblasts, which predicted ~2000 SEZ neurons (Kuert et al., 2014). We averaged the estimates based on Dfd and Scr counts to establish a final SEZ cell number estimate of ~1800 cells, of which ~ 1700 are neurons.
 
-## The SEZ Split-GAL4 Collection provides genetic access to one third of all SEZ neurons
+### The SEZ Split-GAL4 Collection provides genetic access to one third of all SEZ neurons
 
 To characterize the morphology of individual SEZ cell types and to create a library of genetic reagents to provide specific access to these same cell types, we employed the split-GAL4 strategy (Luan et al., 2006). Since there is no consensus about how to define neuronal cell types, we relied on the stereotyped morphology of Drosophila neurons to identify similar neurons across multiple samples. Cell types were defined as a pair or group of neurons with minimally variant morphology such that they were readily identifiable across multiple samples and driver lines by an expert. We used several strategies to identify novel SEZ cell types: (1) visual search through publicly available GAL4 collections (Jenett et al., 2012; Pfeiffer et al., 2008; Tirian and Dickson, 2017); (2) LexA-based MultiColor FlpOut (MCFO) single-cell labeling of Scr-LexA and Dfd-LexA; (3) MCFO screening of subsets of the Rubin and Vienna Tile (VT) GAL4 collections with dense SEZ expression (Meissner et al., 2020; Nern et al., 2015); and (4) re-registration of images of individual SEZ cell types from mosaic analysis of broad GAL4 drivers, available on FlyCircuit (Chiang et al., 2011). Ascending neurons (cell types with cell bodies in the VNC and outputs in the SEZ) were not included. In addition, AMMC neurons were not included as cell types in the AMMC have been analyzed extensively (Matsuo et al., 2016). Each novel cell type was given a unique (but not necessarily formulaic) name. Following cell type identification, we used the color depth maximum intensity projection (CDM) mask search tool (Otsuna et al., 2018) to select available split-halves that potentially labeled each cell type. After gathering a list of available split-halves likely to label a given cell type, we crossed all possible combinations of candidate ADs and DBDs and screened for split-GAL4 lines that specifically labeled the cell type of interest. The process of generating split-GAL4 lines acted as a built-in test of whether each cell type was properly defined. If a given cell type could not be reliably identified based on its stereotyped morphology, the chosen hemidrivers would be unlikely to intersect and the resulting lines would fail to label the targeted cell type. Only split-GAL4 lines that labeled targeted cell types are included in this collection.
 
@@ -51,11 +59,87 @@ We screened ~3400 split-GAL4 combinations using this strategy, which yielded 277
 
 To evaluate the completeness of coverage achieved by the SEZ Split-GAL4 Collection, we compared the total number of neuronal cell bodies covered by the split-GAL4 lines with our SEZ neuron number estimates. SEZ cell types fall into either unique or population classifications, where unique neurons encompass a single pair of cell bodies while population neurons are small groups of cell bodies with nearly identical arbors (Namiki et al., 2018). Therefore, one cell type may contribute one or multiple cell bodies per hemisphere. Taking this into consideration, the collection labels 510 neurons out of 1700 estimated, arguing that the SEZ Split-GAL4 Collection provides approximately 30% coverage of all SEZ neurons. In addition, 17 split-GAL4 lines specifically target SEZ motor neurons of the proboscis, totaling 36 cell bodies (McKellar et al., 2020). Moreover, the descending interneuron (DN) Split-GAL4 Collection contains 41 DN cell types that comprise 242 additional cell bodies in the SEZ (out of 360 total DN cell bodies in the SEZ; Namiki et al., 2018). Together, the SEZ Split-GAL4 Collection, the proboscis motor neuron split-GAL4s, and the DN Collection provide precise access to 46% of SEZ neurons (788/1700). In summary, the SEZ Split-GAL4 Collection greatly improves genetic access to SEZ cell types, especially non-DN SEZ cell types. These split-GAL4 lines represent a substantial expansion of the knowledge of SEZ cell types and enable precise manipulation of the targeted cell types for behavioral, functional imaging, and morphological analyses. Confocal images of each line and instructions for requesting lines from the SEZ Split-GAL4 Collection can be found at https://splitgal4.janelia.org/.
 
-## Clustering of SEZ cell types reveals six cellular domains
+### Clustering of SEZ cell types reveals six cellular domains
 
 To investigate SEZ organization at a cellular level, we used the NBLAST algorithm to perform automated clustering of SEZ cell types to define cell type supergroups (Costa et al., 2016). NBLAST computes a pairwise neuronal similarity score by considering the position and local geometry of a query and target neuron. By comparing SEZ neurons with NBLAST in an all-by-all matrix, we clustered them into morphologically similar groups to reveal SEZ substructure. To prepare neuron imagery for the NBLAST algorithm, a single, unilateral example of each cell type was imaged at high resolution using MCFO and registered to a common unbiased template (Bogovic et al., 2020; Nern et al., 2015). Each cell type example was then segmented, skeletonized, and presented on the right side of the brain. In total, 121 of the 138 SEZ cell types targeted by the collection are represented in this dataset. The remaining cell types were excluded from NBLAST analysis because MCFO images were not available. The expression pattern of the best split-GAL4 line targeting each cell type excluded from NBLAST analysis is shown in Figure 3—figure supplement 1. After preprocessing, we computed an all-by-all similarity matrix for the represented cell types with NBLAST and hierarchically clustered the resulting NBLAST scores using Ward’s method (Costa et al., 2016; Figure 3B). Ward’s method is an agglomerative hierarchical clustering method that groups items into clusters that minimize within-cluster variance. Ward’s joining cost, which is based on the variance of the data within a cluster, should increase significantly when distinct groups within the data are forced to join (Braun et al., 2010). Since the expected number of groups was not known beforehand, we analyzed Ward’s joining cost and the differential of Ward’s joining cost to quantitatively determine group number. We chose six groups due to the low joining cost and the increase in the differential of Ward’s joining cost when moving from six to five groups (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig3-v2.jpg)
+
+**Figure 3.:** (A) Clustering of SEZ neuron types with NBLAST reveals six distinct morphological groups: group 1: red; group 2: yellow; group 3: green; group 4: cyan; group 5: fuchsia; group 6: royal blue. Group number is indicated by the black number above each cluster. The vertical axis represents the distance or dissimilarity between the clusters. (B) Morphology of all neuron types in each cluster plotted according to the color code in (A). Central brain neuropil (gray) is plotted for reference. Anterior (left), lateral (middle), and superior (right) views are shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Neuropil morphology is shown with nc82 in blue. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining to indicate location of synaptic outputs is shown in fuchsia where available. The cell type covered is indicated in the top right of each panel, while the unique line identifier is indicated in the bottom left of each panel. Filled arrowheads indicate targeted cell type somas. See https://splitgal4.janelia.org/ for image data.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Ward’s joining cost for clustering into 0–40 groups (fuchsia). Ward’s joining cost declines sharply when clustering with six groups as compared to clustering with fewer than six groups. (B) Differential of Ward’s joining cost for clustering into 0–40 groups (green). The differential is high when clustering into five groups or fewer but does not decline notably after six groups is reached.
+
 The resulting supergroups share anatomical similarities and coordinates that reveal that the SEZ is organized into layered and stacked domains. Five of the six supergroups are layered from anterior to posterior: 1 and 2 most anterior, followed by 3, 5, and finally 6 most posterior. Groups 1 and 2 are in a similar anterior plane but group 1 is positioned superior to group 2. Group 4 sits below these domains, wrapping the inferior surface of the SEZ. A lateral view illustrates that group 5 appears to form a ‘roll’ shape and is surrounded by group 3 anterior, group 4 inferior, and group 6 posterior. For each group, we show the morphology of an individual, segmented neuron for each cell type (Figures 4—9) as well as the pattern of the best split-GAL4 line for that cell type (Figures 4—9, Figure 9—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig4-v2.jpg)
+
+**Figure 4.:** Segmented example images for each neuron type in group 1. The top row shows the morphology of all neuron types in group 1 (red) overlaid in the JRC 2018 unisex coordinate space (gray) in anterior, lateral, and superior views. Below, the morphology of individual group members is shown separately. Individual neuron morphology is shown in black while the outline of the JRC 2018 unisex template is shown in gray. In Figures 3—8, the segmented neurons were imaged with a 63× objective and registered to the full-size JRC 2018 unisex template. The optic lobes have been partially cropped out of each panel.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available. The cell type covered is indicated in the top right of each panel, while the unique line identifier is indicated in the bottom left of each panel. See https://splitgal4.janelia.org/ for image data.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig5-v2.jpg)
+
+**Figure 5.:** The top row shows the morphology of all neuron types in group 2 (yellow), with the morphology of individual group members shown below.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available. The cell type covered is indicated in the top right of each panel, while the unique line identifier is indicated in the bottom left of each panel. See https://splitgal4.janelia.org/ for image data.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) View from the lateral side of the proboscis labellum showing the expression pattern of SS40945. The dendrites of diatom project toward the dorsal surface of the labellum from the cell bodies (arrowhead). Scale bar is 20 μm. (B) Expression pattern of SS40945 in the CNS. Scale bar is 50 μm. The axons of diatom arborize in the subesophageal zone (SEZ). The location of the esophageal foramen is indicated with an asterisk. (C) View from the dorsal side of a whole-mount proboscis showing the expression pattern of SS40945. The labellum (left) contains the cell bodies of diatom (arrowheads). The axons project through the labellar nerve into the SEZ. The locations of the labellum (L) and the maxillary palps (MP) are annotated. Scale bar is 50 μm. All images show nc82 in blue, while the expression of the UAS-CsChrimson reporter is shown in green. Nc82 staining in (A) and (C) reveals presynaptic sites impinging on proboscis musculature.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Single Fdg neuron morphology (green) as seen with MultiColor FlpOut (MCFO) of the 81E10-GAL4 line, which was previously identified as labeling Fdg (Pool et al., 2014). Characteristic features of Fdg, including the main dendritic trunk (labeled), midline-crossing largely dendritic region, the lateral and inferior more axonal region (labeled ‘Ax’), and the lateral cell body (filled arrowhead) can be readily appreciated (Flood et al., 2013). Midline is denoted with a dashed line. (B–F) Like 81E10-GAL4, 81E10-LexA (red) is expressed in a limited number of types in the subesophageal zone (SEZ), including Fdg (filled arrowheads). Fdg can be recognized in the overall pattern by the lateral and superior location of its cell body, as well as its distinctive main dendritic trunk. A second SEZ cell type is occasionally present (F, outlined arrowhead) but can be distinguished by its more inferior cell body. 81E10-LexA expression in sensory axons in the inferior and medial SEZ can also be appreciated, but only slightly obscures Fdg morphology in maximum projection images, as displayed here. (B) Coexpression of 81E10-LexA (red) and NP883-GAL4 (green) in the cell body of Fdg (filled arrowhead). Fdg was originally identified in the NP883-GAL4 line (Flood et al., 2013). (C) Coexpression of 81E10-LexA (red) and NP5137-GAL4 (green) in the cell body of Fdg (filled arrowhead). NP5137-GAL4 was also used to access Fdg by Flood et al., 2013. (D) Coexpression of 81E10-LexA (red) and the SS31345 split-GAL4 line (green) in the cell bodies of Fdg (filled arrowheads). (E) Coexpression of 81E10-LexA (red) and the SS46913 split-GAL4 line (green) in the cell bodies of Fdg (filled arrowheads). (F) Coexpression of 81E10-LexA (red) and the SS46914 split-GAL4 line (green) in the cell bodies of Fdg (filled arrowheads). Neuropil morphology is shown with nc82 in blue throughout. Location of the esophageal foramen is denoted with an asterisk. Scale bars 20 μm.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig6-v2.jpg)
+
+**Figure 6.:** The top row shows the morphology of all neuron types in group 3 (green), with the morphology of individual group members shown below.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available. The cell type covered is indicated in the top right of each panel, while the unique line identifier is indicated in the bottom left of each panel. See https://splitgal4.janelia.org/ for image data.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig7-v2.jpg)
+
+**Figure 7.:** The first three panels show the morphology of all neuron types in group 4 (cyan), with the morphology of individual group members shown below.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available. The cell type covered is indicated in the top right of each panel, while the unique line identifier is indicated in the bottom left of each panel. See https://splitgal4.janelia.org/ for image data.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Bobber axonal projections in the pattern of SS29032. (B) Genie axonal projections in the pattern of SS30373. (C) Sink axonal projections in the pattern of SS31372. (D) Snail cell type in the pattern of SS31328. (E) Mesa axonal projections in the pattern of SS31369. (F) Bract axonal projections in the pattern of SS31386. Some non-specific background can be seen in the inferior ventral nerve cord (VNC). Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available (A, C, but note non-specific background throughout the VNC). White arrowheads denote the axons of the cell type of interest where other cell types are present. All images are unregistered VNCs. Scale bar is 100 μm.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig8-v2.jpg)
+
+**Figure 8.:** The top row shows the morphology of all neuron types in group 5 (fuchsia), with the morphology of individual group members shown below.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available. The cell type covered is indicated in the top right of each panel, while the unique line identifier is indicated in the bottom left of each panel. See https://splitgal4.janelia.org/ for image data.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Gumdrop axonal projections in the pattern of SS46373. (B) Mute axonal projections in the pattern of SS47305. (C) Nagini axonal projections in the pattern of SS47322. (D) aDN1 axonal projections in the pattern of SS43907. (E) Oval axonal projections in the pattern of SS39916. (F) Web axonal projections in the pattern of SS41446. (G) Snake axonal projections in the pattern of SS31714. Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available (B, D, F, but note non-specific background throughout the ventral nerve cord [VNC]). White arrowheads denote the axons of the cell type of interest where other cell types are present. All images are unregistered VNCs. Scale bar is 100 μm.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig9-v2.jpg)
+
+**Figure 9.:** The top row shows the morphology of all neuron types in group 6 (royal blue), with the morphology of individual group members shown below.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Neuropil morphology is shown with nc82 in blue throughout. Expression pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs in fuchsia where available. The cell type covered is indicated in the top right of each panel, while the unique line identifier is indicated in the bottom left of each panel. See https://splitgal4.janelia.org/ for image data.
 
 Group 1 is composed of neurons that arborize in the prow and flange (Figure 4 and Figure 4—figure supplement 1), the superior, anterior, and medial regions of the SEZ. Based on their anatomical position, the 19 cell types that make up group 1 may originate from the tritocerebral neuromere. Group 1 is neatly split into interneurons (peep, doublescoop, hyacinth, tulip, horseshoe2, clubround, horseshoe, aster, and oink) and projection neurons (gallinule, kelp, pSG1, amulet, eiffel, aDT6, aSG7, cowboy, hydrangea, and trogon). Notably, all projection neurons in group 1 send arbors to the superior medial protocerebrum (SMP). This group includes three previously morphologically described fruitless positive (Fru+) neuronal cell types: pSG1, aSG7, and aDT6 (Liu, 2012; Jai et al., 2010).
 
@@ -69,9 +153,17 @@ Group 5 contains 27 interneurons, projection neurons, and DNs that arborize just
 
 Group 6 contains neurons in the posterior of the brain, spanning the GNG, inferior posterior slope, and superior posterior slope (Figure 9 and Figure 9—figure supplement 1) and is the most posterior group in the SEZ. This small group contains only nine members, and group 6 cell types do not project to higher neuropils. One member, dubbed knees, is a DN that innervates neck neuropil and wing neuropil. No members of this morphological group have been previously reported.
 
-## SEZ interneurons tend to have mixed polarity
+### SEZ interneurons tend to have mixed polarity
 
 To shed light on the structure of information flow both within the SEZ and out of the SEZ to the higher brain and VNC, we undertook polarity analysis of the 121 SEZ cell types that were segmented for NBLAST clustering analysis. These 121 cell types include 81 interneuron cell types, 26 projection neuron cell types, 13 DN cell types, and 1 sensory neuron cell type. We used both polarity staining with pre-synaptically localized HA-tagged Synaptotagmin and the smooth versus varicose appearance of neurites to score the presence of pre- and postsynaptic processes in each brain region in the central brain and VNC (Court et al., 2020; Ito et al., 2014; Namiki et al., 2018). Upon examination of many cell types, we found that SEZ cell types frequently lack a defined axon and dendrite. Instead, inputs and outputs are mixed on the same processes. We designated these cell types as possessing mixed polarity. Other cell types have mostly mixed polarity but still retain a distinct arbor region where synaptic outputs are concentrated. We termed this category of cell types to have biased polarity. A third category is polarized with clearly separated processes dedicated to either synaptic inputs or synaptic outputs. To supplement our annotation of the presence of axons, dendrites, or both in each neuropil compartment and polarization strategy, we also indicated whether each cell type is an interneuron, projection neuron, DN, or sensory neuron (Figure 10, left).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig10-v2.jpg)
+
+**Figure 10.:** (Leftmost column) Cell types are members of one of four cell type classes: interneuron (light blue), projection neuron (yellow), descending interneuron (light pink), or sensory neuron (orange). Interneurons are confined within the SEZ, while projection neurons project from the SEZ to higher neuropils in the central brain. Descending interneurons project their axons from the SEZ through the neck connective to the ventral nerve cord (VNC). Sensory neurons project their axons from elsewhere in the body into the SEZ. Class is indicated for each neuron type by the filled pixel to the right of each neuron type name. (Second-to-leftmost column) Neuron types are polarized in a biased (light brown), mixed (red-orange), or polarized (dark blue) manner. The polarity class for each neuron type is indicated. (Center) The innervation profile for each neuron type is indicated by the filled pixels in its corresponding row. Brain region abbreviations follow the definitions and naming conventions of Ito et al., 2014 for the central brain and Court et al., 2020 for the VNC. The locations of smooth processes (dendrites, green), varicose processes (axons, dark pink), or both smooth and varicose processes (axons and dendrites, gray) are indicated by defined neuropil region. VNC neuropil regions are grouped on the right of the figure. Innervation of the VNC was varicose in all cases. (Far right) Cell group as defined by NBLAST clustering is indicated for each cell type. Group 1: red; group 2: yellow; group 3: green; group 4: cyan; group 5: fuchsia; group 6: royal blue.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/71679/elife-71679-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (A–F) Neuropil morphology is shown with nc82 in blue throughout, and the pattern of the UAS reporter is shown in green. UAS-Synaptotagmin staining indicates the location of synaptic outputs (fuchsia). Scale bar is 20 μm. (A, B) Examples of neuronal cell types in the mixed class. TH-VUM (A, previously described) and puddle (B, described here) have synaptic outputs distributed uniformly throughout their arborizations. Dedicated dendritic or axonal regions are not distinguishable. (C, D) Examples of neuronal cell types in the biased class. Previously described Fdg (C) and G2N-1 (D) cell types have synaptically mixed (‘m’) regions of their arbors but still retain a distinct arbor region where synaptic outputs are concentrated (labeled with ‘a’). (E, F) Examples of neuronal cell types in the polarized class. Novel cell types diatom (E) and sundrop (F) have clearly separated dendritic (‘d’) and axonal (‘a’) regions of their arbors as indicated by the clear separation of varicose processes studded with synaptotagmin puncta (fuchsia) and smooth processes lacking synaptotagmin staining. Note that the dendrites of diatom are located in the proboscis labellum as shown in Figure 5—figure supplement 2. (A), (D), and (E) were segmented to remove background staining and clearly separated off-target cell types.
 
 Among the SEZ interneuron cell types we analyzed, 39/81 (48%) have mixed polarity, 22/81 (27%) have biased polarity, and 20/81 (25%) are classically polarized. Interneuron types are distributed throughout the six cell type supergroups with most groups containing interneurons of all polarity classes. However, all group 2 interneurons (making up 17/18 cell types in group 2) have either biased or mixed polarity. This suggests that the interneurons of group 2 may participate in reciprocally connected circuits. Among interneuron cell types that are clearly polarized, there were some cases in which no axon was evident in the brain (including peep, shark, bridle, aSG1, and aSG4). In these cases, the presence of severed processes suggests that these cell types may not be interneurons and may instead send projections out of the central nervous system.
 
@@ -99,15 +191,249 @@ Overall, the SEZ Split-GAL4 Collection represents a valuable resource that will 
 
 ## Materials and methods
 
-## Drosophila husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Polarity reporter, w; +; 3xUAS-Syt:: smGFP-HA(su(Hw)attP1),5xUAS-IVS- myr::smGFP-FLAG(VK5)</td>
+      <td>Aso et al., 2014b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>csChrimsonReporter/Optogenetic effector,20xUAS- csChrimson::mVenus in attP18</td>
+      <td>Klapoetke et al., 2014</td>
+      <td>BDSC:55134; FLYB:FBst0055134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent D. melanogaster</td>
+      <td>UAS-Syt-HA;;</td>
+      <td>Robinson et al., 2002</td>
+      <td></td>
+      <td>Recombined with 20XUAS-CsChrimson-mVenus trafficked in attP18 when used for polarity analysis experiments</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pBPhsFLP2:PEST in attP3; 13xLexAop2-&gt; dSTOP&gt;-myr::smGFP-OLLAS in su(Hw)attP5, 13xLexAop2-&gt; dSTOP&gt;-myr::smGFP-V5 in attP40/CyO; 13xLexAop2-&gt; dSTOP&gt;-myr::smGFP-FLAG in attP2/TM2</td>
+      <td>This work</td>
+      <td></td>
+      <td>LexA-based MCFO line with heat shock flippase</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R57C10-Flp2::PEST in su(Hw)attP8;; pJFRC201-10XUAS-FRT&gt;STOP&gt;FRT-myr::smGFP-HA in VK00005,pJFRC240-10XUAS-FRT&gt;STOP &gt;FRT-myr::smGFP-V5-THS-10XUAS-FRT&gt;STOP&gt;FRT-myr::smGFP-FLAG in su(Hw)attP1/TM2</td>
+      <td>Nern et al., 2015</td>
+      <td>BDSC:64089; FLYB:FBst0064089</td>
+      <td>Short name: MCFO-3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pBPhsFlp2::PEST in attP3;; pJFRC210-10XUAS-FRT&gt;STOP &gt;FRT-myr::smGFP-OLLAS in attP2, pJFRC201-10XUAS-FRT&gt;STOP&gt;FRT-myr::smGFP-HA in VK0005, pJFRC240-10XUAS-FRT&gt;STOP &gt;FRT-myr::smGFP-V5-THS-10XUAS-FRT&gt;STOP&gt;FRT-myr::smGFP-FLAG in su(Hw)attP1/ TM2</td>
+      <td>Nern et al., 2015</td>
+      <td>BDSC:64086; FLYB:FBst0064086</td>
+      <td>Short name: MCFO-2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>;;Dfd-LexA</td>
+      <td>Simpson, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>;;Scr-LexA</td>
+      <td>Simpson, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Labial-GAL4</td>
+      <td>Hirth et al., 2001</td>
+      <td>BDSC:43652;FLYB:FBst0043652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>;LexAop-nls-GCaMP6s in VIE-260b;</td>
+      <td>This work</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>;;His2Av-mRFP</td>
+      <td>Pandey et al., 2005</td>
+      <td>BDSC:23650;FLYB:FBst0023650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>; UAS-Syn21-nlsGCaMP6s-p10 in VIE-260b;</td>
+      <td>This work</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>;;UAS-His::mRFP</td>
+      <td>Emery et al., 2005</td>
+      <td>FLYB:FBtp0022240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>;81E10-LexAp65 in JK22C;</td>
+      <td>This work</td>
+      <td></td>
+      <td>Approach and promoter have been previously described (Jenett et al., 2012; Pfeiffer and Homberg, 2014)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NP883-GAL4</td>
+      <td>Yoshihara and Ito, 2000</td>
+      <td>Kyoto:103803;FLYB:FBst0302671</td>
+      <td>Line in which Fdg was originally identified (Flood et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NP5137-GAL4</td>
+      <td>Yoshihara and Ito, 2000</td>
+      <td>Kyoto:113602;FLYB:FBst0316329</td>
+      <td>Line which also labels Fdg (Flood et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13XLexAop2-CsChrimson-tdT (attP18), 20XUAS-IVS-Syn21-opGCaMP6f p10 (Su(Hw)attp8);;</td>
+      <td>Morimoto et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Brp (mouse monoclonal)</td>
+      <td>DSHB, University of Iowa, USA</td>
+      <td>DSHB Cat# nc82, RRID:AB_2314866</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A10262, RRID:AB_2534023</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRed (rabbit polyclonal)</td>
+      <td>Takara</td>
+      <td>Takara Bio Cat# 632496, RRID:AB_10013483</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A-11039, RRID:AB_2534096</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 568 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A-11036, RRID:AB_10563566</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa Fluor 647 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A-21236, RRID:AB_2535805</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VVDviewer</td>
+      <td>Otsuna et al., 2018</td>
+      <td>RRID:SCR_021708</td>
+      <td>https://github.com/JaneliaSciComp/VVDViewer</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>http://fiji.sc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Computational Morphometry Toolkit</td>
+      <td>Rohlfing and Maurer, 2003</td>
+      <td>RRID:SCR_002234</td>
+      <td>https://www.nitrc.org/projects/cmtk/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>R Development Core Team, 2018</td>
+      <td>RRID:SCR_001905</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroAnatomy Toolbox</td>
+      <td>Jefferis and Manton, 2014</td>
+      <td>10.5281/zenodo.1136106,RRID:SCR_017248</td>
+      <td>http://jefferis.github.io/nat/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ilastik</td>
+      <td>Berg et al., 2019</td>
+      <td>RRID:SCR_015246</td>
+      <td>https://www.ilastik.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaMuT Plugin</td>
+      <td>Wolff et al., 2018</td>
+      <td></td>
+      <td>https://imagej.net/MaMuT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Janelia WorkStation</td>
+      <td>Rokicki et al., 2019</td>
+      <td>RRID:SCR_014302</td>
+      <td>https://doi.org/10.25378/janelia.8182256.v1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila husbandry
 
 All experiments and screening were carried out with adult D. melanogaster females raised at 25°C on standard Drosophila food. Adult females were mated and dissected within 1 week of eclosion. Construction of stable split-GAL4 lines was performed as previously described (Dionne et al., 2018).
 
-## Anatomical directional terms and neuropil nomenclature
+### Anatomical directional terms and neuropil nomenclature
 
 Throughout this resource, we refer to anatomical directional terms according to the body axis as previously defined (Court et al., 2020; Ito et al., 2014). The central brain and SEZ are shown in all figures as seen from the anterior side of the brain with the superior up, unless otherwise indicated. Figures 3—9 show views of the central brain from the anterior with the superior side up (labeled ‘anterior’), views from the (fly’s) right lateral side with the superior side up (labeled ‘lateral’), and views from the superior side with the ventral side up (labeled ‘superior’) to show the three-dimensional morphology of the six supergroups. The VNC is always displayed from the inferior view with the anterior side up. Directional terms for the proboscis are also indicated according to the body axis in Figure 5—figure supplement 2. We also refer to neuropil regions and their corresponding abbreviations according to established and published nomenclature (Court et al., 2020; Ito et al., 2014).
 
-## Counting SEZ neurons
+### Counting SEZ neurons
 
 Either Dfd-LexA or Scr-LexA was crossed to a reporter line with LexAop-nls-GCaMP6s (this work) and His2Av-mRFP (Pandey et al., 2005). Labial-GAL4 was crossed to a reporter line with UAS-nls-GCaMP6s (this work) and UAS-His2Av-mRFP (Emery et al., 2005). Brains dissected as described (https://www.janelia.org/project-team/flylight/protocols, ‘Dissection and Fixation 1.2% PFA’).
 
@@ -119,7 +445,7 @@ Immunohistochemistry was carried out as described (https://www.janelia.org/proje
 
 SEZ cell number was quantified with Ilastik using the ‘Pixel Classification’ and ‘Object Classification’ workflows (Berg et al., 2019). The pixel classifier was trained to segment only cell bodies expressing both LexAop-nls-GCaMP6s and His2Av-mRFP, which improved pixel and object classification accuracy when compared to using LexAop-nls-GCaMP6s without His2Av-mRFP (data not shown). Then, to verify counts derived from automated Ilastik quantification, manual ground truth counts of example image regions (four subregions each for Dfd-LexA and Scr-LexA) were compared to counts of the same regions derived from Ilastik. Ground truth counts were carried out in three dimensions with the MaMuT plugin in Fiji (Wolff et al., 2018). Error was calculated at 0.5% for Dfd-LexA images and –1.4% for Scr-LexA images.
 
-## Split-GAL4 intersections
+### Split-GAL4 intersections
 
 Novel SEZ cell types were identified using the following strategies:
 
@@ -127,14 +453,14 @@ Following identification of cell types, we created representative CDM masks and 
 
 After stabilization (Dionne et al., 2018), select split-GAL4 lines were further characterized. We selected at least one split-GAL4 line per cell type for detailed documentation, including polarity staining (to assess expression pattern in multiple central nervous systems and to determine the location of synaptic outputs), MCFO characterization, and 63× imaging. Polarity staining was carried out by crossing stabilized split-GAL4 lines to either w; +; 3xUAS-Syt::smGFP-HA(su(Hw)attP1), 5xUAS-IVS-myr::smGFP-FLAG (VK5) or UAS-Syt-HA, 20XUAS-CsChrimson-mVenus (attP18);;. When crossed to w; +; 3xUAS-Syt::smGFP-HA(su(Hw)attP1), 5xUAS-IVS-myr::smGFP-FLAG (VK5) dissection and staining were carried out by FlyLight according to the FlyLight ‘IHC-Polarity Sequential’ protocol (https://www.janelia.org/project-team/flylight/protocols). When crossed to 20XUAS-CsChrimson-mVenus (attP18);; dissection and staining were carried out by FlyLight according to the FlyLight ‘IHC-Polarity Sequential Case 5’ protocol (https://www.janelia.org/project-team/flylight/protocols). MCFO characterization of stable split-GAL4 lines was accomplished by crossing stable lines to MCFO-2 or MCFO-3 (see Key resources table for full genotypes). If crossed to MCFO-2, adult flies were heat shocked at 37° C for either 30 or 60 min 1 day after eclosion. Dissection and staining of MCFO samples were carried out by FlyLight according to the FlyLight MCFO staining protocol (https://www.janelia.org/project-team/flylight/protocols, ‘IHC-MCFO’). Samples stained for polarity and MCFO analysis were first imaged on an a LSM710 confocal microscope (Zeiss) with a Plan-Apochromat 20×/0.8 M27 objective. Then, sample images were viewed using the Janelia Workstation (Rokicki et al., 2019) and several samples per line were chosen for higher-resolution imaging. Higher-resolution imaging of select samples was carried out on a LSM710 confocal microscope (Zeiss) with a Plan-Apochromat 63×/1.40 oil immersion objective. If multiple tiles were required to cover the region of interest, tiles were stitched together (Yu and Peng, 2011).
 
-## Co-labeling experiments with Fdg lines
+### Co-labeling experiments with Fdg lines
 
 To label with Fdg with a binary expression system that is independent of GAL4/UAS, we created a LexA line from the 81E10 promoter region (Jenett et al., 2012; Pfeiffer and Homberg, 2014) inserted into the JK22C attP site (Knapp et al., 2015). The JK22C site was chosen to mitigate the possibility of transvection between transgenes inserted in identical attP sites on homologous chromosomes (Mellert and Truman, 2012). We created a stock carrying 13XLexAop2-CsChrimson-tdtomato in attP18 and 20XUAS-IVS-Syn21-opGCaMP6f p10 in su(Hw)attP8 recombined on the X chromosome (Morimoto et al., 2020) and 81E10-LexA in JK22C. To perform co-labeling experiments, we crossed this stock to either NP883, NP5137 (Flood et al., 2013; Yoshihara and Ito, 2000), SS31345, SS46913, or SS46914. Dissection, staining, and mounting were carried out as described in the ‘Counting SEZ neurons’ section above. Images were acquired with a Zeiss LSM 880 NLO AxioExaminer at the Berkeley Molecular Imaging Center. A Plan-Apochromat 63×/1.4 Oil DIC M27 objective was used at zoom 0.7. Acquired images had a voxel size of 0.188 μm × 0.188 μm × 1.000 μm.
 
-## Morphological clustering with NBLAST
+### Morphological clustering with NBLAST
 
 63× MCFO images were registered to the full-size JRC 2018 unisex template (Bogovic et al., 2020) using CMTK (https://www.nitrc.org/projects/cmtk). A single example of each cell type targeted by the collection was selected for segmentation in VVDviewer (https://github.com/takashi310/VVD_Viewer; Otsuna et al., 2018). The following 17 cell types covered by the SEZ Split-GAL4 Collection were excluded because suitable MCFO images were not available: bay, bower, braces, bubbA, bump, clownfish, handup, linea, mothership, oinkU, pampa, portal, seagull, slink, spirit, stand, and willow. The expression pattern of the best split-GAL4 line for each excluded cell type is shown in Figure 3—figure supplement 1. The remaining 121 cell types covered by the collection were included in NBLAST analysis. Registration quality was assessed by viewing the overlap between the template brain and the registered nc82 reference channel to ensure that selected images were well registered. Further, selected images were only used if the morphology of the cell type of interest was clearly visible and not intermingled with other cells or neuronal processes that might lead to false merges or truncations due to neighboring cell types. Images were manually segmented in VVDviewer to remove non-specific background and other, clearly distinct cells. Following segmentation, images were thresholded using the ‘Huang’ method (Huang and Wang, 1995), flipped to the right hemisphere of the brain, and scaled to a final voxel size of (x) 0.3766 × (y) 0.3766 × (z) 0.3794. Scaled images were then skeletonized with the ‘Skeletonize 2d/3d’ Fiji plugin (Lee et al., 1994). Skeletonized, scaled images were hierarchically clustered using NBLAST and Ward’s method (Costa et al., 2016). This was carried out with the natverse toolkit in R (Bates et al., 2020). Group number was chosen by assessing Ward’s joining cost and the differential of Ward’s joining cost after Braun et al., 2010. Images of the resulting morphological clusters were further visualized in R, again using natverse (Figure 3). Catalog figures were assembled using full-sized segmented imagery in VVDviewer (Figures 3—8).
 
-## Polarity analysis
+### Polarity analysis
 
 Full-size registered, segmented example neuron images (prior to scaling or skeletonizing) created as described above were compared against established neuropil regions (Court et al., 2020; Ito et al., 2014) in VVDviewer. The presence of smooth versus varicose processes was scored after Namiki et al., 2018. Images from polarity staining were referenced where available.

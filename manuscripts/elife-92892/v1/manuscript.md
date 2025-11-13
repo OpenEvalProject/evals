@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01r4q9n85 Centre for Cognitive and Brain Sciences and Department of Psychology, University of Macau Macau China
-2. https://ror.org/049tv2d57 Department of Biomedical Engineering, Southern University of Science and Technology Shenzhen China
+1. Centre for Cognitive and Brain Sciences and Department of Psychology, University of Macau Macau China ([ROR:01r4q9n85](https://ror.org/01r4q9n85))
+2. Department of Biomedical Engineering, Southern University of Science and Technology Shenzhen China ([ROR:049tv2d57](https://ror.org/049tv2d57))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ Our study aims to utilize the active inference framework to investigate how the 
 
 ## Results
 
-## Contextual two-armed bandit task
+### Contextual two-armed bandit task
 
 In this study, we developed a “contextual two-armed bandit task” (Figure 2), which was based on the conventional multi-armed bandit task (Lu et al., 2010; Schwartenbeck et al., 2019). Participants were instructed to explore two paths that offer rewards with the aim of maximizing cumulative rewards. One path provided constant rewards in each trial, labeled the “Safe", while the other, referred to as the “Risky”, probabilistically offered varying amounts of rewards. The risky path had two different contexts, “Context 1” and “Context 2”, each corresponding to different reward distributions. The risky path would give more rewards in “Context 1” and give fewer rewards in “Context 2”. The context of the risky path changed randomly in each trial, and agents could only know the specific context of the current trial’s risky path by accessing the “Cue” option, although this comes with a cost. The actual reward distribution of the risky path in “Context 1” was [+12 (55%), +9 (25%), +6 (10%), + 3(5%), + 0(5%)] and the actual reward distribution of the risky path in “Context 2” was [+12 (5%), +9 (5%), +6 (10%) + 3(25%) + 0 (55%)]. For a comprehensive overview of the specific settings, refer to Figure 2.
 
@@ -42,13 +42,13 @@ In this study, we developed a “contextual two-armed bandit task” (Figure 2),
 
 **Figure 2.:** (a) In this task, agents need to make two choices in each trial. The first choice is “Stay” and “Cue”. The “Stay” option gives you nothing while the “Cue” option gives you a –1 reward and the context information about the “Risky” option in the current trial. The second choice is “Safe” and “Risky”. The “Safe” option always gives you a +6 reward and the “Risky” option gives you a reward probabilistically, ranging from 0 to +12 depending on the current context (context 1 or context 2). (b) The four policies in this task are “Cue” and “Safe”, “Stay” and “Safe”, “Cue” and “Risky”, and “Stay” and “Risky”. (c) The likelihood matrix maps from 8 hidden states (columns) to 7 observations (rows).
 
-We ran some simulation experiments to demonstrate how active inference agents performed the “contextual two-armed bandit task” (Figure 3, Appendix 1—figures 1 and 2). Active inference agents with different parameter configurations could exhibit different decision-making policies, as demonstrated in the simulation experiment. By adjusting parameters such as AL, AI, EX (Equation 9), prior (Equation 10), and α (Equation 11), agents could operate under different policies. Agents with a low learning rate would initially incur a cost to access the cue, enabling them to thoroughly explore and understand the reward distributions of different contexts. Once sufficient environmental information was obtained, the agent would evaluate the actual values of various policies and select the optimal policy for exploitation. In the experimental setup, the optimal policy required selecting the risky path in a high-reward context and the safe path in a low-reward context after accessing the cue. However, in particularly difficult circumstances, an agent with a high learning rate might become trapped in a local optimum and consistently opt for the safe path, especially if the initial high-reward scenarios encountered yield minimal rewards.
+We ran some simulation experiments to demonstrate how active inference agents performed the “contextual two-armed bandit task” (Figure 3, Appendix 1—figures 1 and 2). Active inference agents with different parameter configurations could exhibit different decision-making policies, as demonstrated in the simulation experiment. By adjusting parameters such as $AL$, $AI$, $EX$ (Equation 9), $prior$ (Equation 10), and α (Equation 11), agents could operate under different policies. Agents with a low learning rate would initially incur a cost to access the cue, enabling them to thoroughly explore and understand the reward distributions of different contexts. Once sufficient environmental information was obtained, the agent would evaluate the actual values of various policies and select the optimal policy for exploitation. In the experimental setup, the optimal policy required selecting the risky path in a high-reward context and the safe path in a low-reward context after accessing the cue. However, in particularly difficult circumstances, an agent with a high learning rate might become trapped in a local optimum and consistently opt for the safe path, especially if the initial high-reward scenarios encountered yield minimal rewards.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92892/elife-92892-fig3-v1.jpg)
 
 **Figure 3.:** This figure demonstrates how an agent selects actions and updates beliefs over 60 trials in the active inference framework. The first two panels (a, b) display the agent’s policy and depict how the policy probabilities are updated (choosing between the stay or cue option in the first choice, and selecting between the safe or risky option in the second choice). The scatter plot indicates the agent’s actions, with green representing the cue option when the context of the risky path is “Context 1” (high-reward context), orange representing the cue option when the context of the risky path is “Context 2” (low-reward context), purple representing the stay option when the agent is uncertain about the context of the risky path, and blue indicating the safe-risky choice. The shaded region represents the agent’s confidence, with darker shaded regions indicating greater confidence. The third panel (c) displays the rewards obtained by the agent in each trial. The fourth panel (d) shows the prediction error of the agent in each trial, which decreases over time. Finally, the fifth panel (e) illustrates the expected rewards of the ‘Risky Path’ in the two contexts of the agent.
 
-Figure 3 shows how an active inference agent with AI=AL=EX=1 performs our task. We can see the active inference agent exhibits human-like policies and efficiency in completing tasks. In the early stages of the simulation, the agent tended to prefer the “Cue” option, as it provided more information, reducing novelty and reducing variability. Similarly, in the second choice, the agent favored the “Risky” option, even though initially the expected rewards for the “Safe” and “Risky” options were the same, but the “Risky” option offered greater informational value and reduced novelty. In the latter half of the experiment, the agent again preferred the “Cue” option due to its higher expected reward. For the second choice, the agent made decisions based on specific contexts, opting for the “Risky” option in “Context 1” for a higher expected reward, and the “Safe” option in “Context 2” where the informational value of the “Risky” option was outweighed by the difference in expected rewards between the “Safe” option and the “Risky” option in “Context 2”.
+Figure 3 shows how an active inference agent with $AI=AL=EX=1$ performs our task. We can see the active inference agent exhibits human-like policies and efficiency in completing tasks. In the early stages of the simulation, the agent tended to prefer the “Cue” option, as it provided more information, reducing novelty and reducing variability. Similarly, in the second choice, the agent favored the “Risky” option, even though initially the expected rewards for the “Safe” and “Risky” options were the same, but the “Risky” option offered greater informational value and reduced novelty. In the latter half of the experiment, the agent again preferred the “Cue” option due to its higher expected reward. For the second choice, the agent made decisions based on specific contexts, opting for the “Risky” option in “Context 1” for a higher expected reward, and the “Safe” option in “Context 2” where the informational value of the “Risky” option was outweighed by the difference in expected rewards between the “Safe” option and the “Risky” option in “Context 2”.
 
 In the behavioral experiment, in order to enrich the behavioral data of participants, a “you can ask” stage was added at the beginning of each trial. When the participants see “you can ask”, they know that they can choose whether to ask for cue information in the next stage; when the participants see “you can’t ask”, they know that they can’t choose whether to ask and it defaults that participants choose the “Stay” option. Additionally, to make the experiment more realistic, we added a background story of “finding apples” to the experiment. Specifically, participants were presented with the following instructions: “You are on a quest for apples in a forest, beginning with 5 apples. You encounter two paths: (1) The left path offers a fixed yield of 6 apples per excursion. (2) The right path offers a probabilistic reward of 0/3/6/9/12 apples, and it has two distinct contexts, labeled ‘Context 1’ and ‘Context 2,’ each with a different reward distribution. Note that the context associated with the right path will randomly change in each trial. Before selecting a path, a ranger will provide information about the context of the right path (‘Context 1’ or ‘Context 2’) in exchange for an apple. The more apples you collect, the greater your monetary reward will be."
 
@@ -60,9 +60,9 @@ The participants were provided with the task instructions (i.e., prior beliefs) 
 
 Each stage was separated by a jitter ranging from 0.6 to 1.0 seconds. The entire experiment consisted of a single block with a total of 120 trials. The participants were required to use any two fingers of one hand to press the buttons (left arrow and right arrow on the keyboard).
 
-## Behavioral results
+### Behavioral results
 
-To assess the evidence for active inference over reinforcement learning, we fitted active inference (Equation 9), model-free reinforcement learning, and model-based reinforcement learning models to the behavioral data of each participant. This involved optimizing the free parameters of active inference and reinforcement learning models. The resulting likelihood was used to calculate the Bayesian information criterion (BIC) (Vrieze, 2012) as the evidence for each model. The free parameters for the active inference model [AL, AI, EX, prior (Equation 10) and α Equation 11] scaled the contribution of the three terms that constituted the expected free energy in Equation 9. These coefficients could be regarded as precisions that characterized each participant’s prior beliefs about contingencies and rewards. For example, increasing α meant participants would update their beliefs about reward contingencies more quickly, increasing AL meant participants would like to reduce novelty more, and increasing AI meant participants would like to learn the hidden state of the environment and reduce variability more. The free parameters for the model-free reinforcement learning model were the learning rate α and the temperature parameter γ, and the free parameters for the model-based were the learning rate α, the temperature parameter γ and prior (the details for the model-free reinforcement learning model can be found in Equations 12–22, and the details for the model-based reinforcement learning model can be found in Equations 23–34 in the supplementary method). The parameter fitting for these three models was conducted using the ’BayesianOptimization’ package (Frazier, 2018) in Python, first randomly sampling 1000 times and then iterating for an additional 1000 times.
+To assess the evidence for active inference over reinforcement learning, we fitted active inference (Equation 9), model-free reinforcement learning, and model-based reinforcement learning models to the behavioral data of each participant. This involved optimizing the free parameters of active inference and reinforcement learning models. The resulting likelihood was used to calculate the Bayesian information criterion (BIC) (Vrieze, 2012) as the evidence for each model. The free parameters for the active inference model [$AL$, $AI$, $EX$, $prior$ (Equation 10) and α Equation 11] scaled the contribution of the three terms that constituted the expected free energy in Equation 9. These coefficients could be regarded as precisions that characterized each participant’s prior beliefs about contingencies and rewards. For example, increasing α meant participants would update their beliefs about reward contingencies more quickly, increasing $AL$ meant participants would like to reduce novelty more, and increasing $AI$ meant participants would like to learn the hidden state of the environment and reduce variability more. The free parameters for the model-free reinforcement learning model were the learning rate α and the temperature parameter γ, and the free parameters for the model-based were the learning rate α, the temperature parameter γ and prior (the details for the model-free reinforcement learning model can be found in Equations 12–22, and the details for the model-based reinforcement learning model can be found in Equations 23–34 in the supplementary method). The parameter fitting for these three models was conducted using the ’BayesianOptimization’ package (Frazier, 2018) in Python, first randomly sampling 1000 times and then iterating for an additional 1000 times.
 
 The model comparison results demonstrated that active inference provided a better performance to fit participants’ behavioral data compared to the basic model-free reinforcement learning and model-based reinforcement learning (Figure 4c). Notably, the active inference could better capture the participants’ exploratory inclinations (Sutton and Barto, 2018; Friston et al., 2015). This was evident in our experimental observations (Figure 4b) where participants significantly favored asking the ranger over opting to stay. Asking the ranger, which provided environmental information, emerged as a more beneficial policy within the context of this task.
 
@@ -72,9 +72,9 @@ Figure 5 shows the comparison between the active inference model and the behavio
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92892/elife-92892-fig5-v1.jpg)
 
-**Figure 5.:** a) the “First choice” stage, and the “Second choice” stage; (b) context unknown, (c) “Context 1”, and (d) “Context 2”.The bar graphs show participants’ behavior data in each trial, and the height shows the proportion of participants who chose a certain option in each trial. The scatter plots show the model’s fitting results for the two choices of the participants. The closer the point is to the bar graph on both sides, the higher the fitting accuracy. The line graphs show the trend of the model fitting accuracies with the trials.
+**Figure 5.:** The bar graphs show participants’ behavior data in each trial, and the height shows the proportion of participants who chose a certain option in each trial. The scatter plots show the model’s fitting results for the two choices of the participants. The closer the point is to the bar graph on both sides, the higher the fitting accuracy. The line graphs show the trend of the model fitting accuracies with the trials.
 
-## EEG results at sensor level
+### EEG results at sensor level
 
 As depicted in Figure 6a, we divided electrodes into five clusters: left frontal, right frontal, central, left parietal, and right parietal. Within the “Second choice” stage, participants were required to make decisions under varying degrees of uncertainty (the uncertainty about the hidden states and the uncertainty about the model parameters). Thus, we investigated whether distinct brain regions exhibited different responses under such uncertainty.
 
@@ -86,45 +86,45 @@ In the first half of the experimental trials, participants would have greater un
 
 To investigate whether distinct brain regions exhibited differential responses under the uncertainty about the hidden states, we divided all trials into two groups: the “asked” trials and the “not-asked” trials based on whether participants chose to ask in the “First choice” stage. In the not-asked (Figure 6c), participants had greater uncertainty about the hidden states of the environment compared to the asked trials. We identified statistically significant differences in the signal amplitude of the left frontal region (p<0.01), the right frontal region (p<0.05), and the central region (p<0.001), suggesting a role for these areas in encoding the hidden states of the environment. It might suggest that when participants knew the hidden states, they could effectively integrate the information with the environmental statistical structure to make more precise or confident decisions and exhibit greater neural response. The right panel of Figure 6c revealed a higher signal in the theta band during not-asked trials, suggesting a correlation between theta band signal and uncertainty about the hidden states (Harper et al., 2017).
 
-## EEG results at source level
+### EEG results at source level
 
-In the final analysis of the neural correlates of the decision-making process, as quantified by the epistemic and intrinsic values of expected free energy, we presented a series of linear regressions in source space. These analyses tested for correlations over trials between constituent terms in expected free energy (the value of reducing variability, the value of reducing novelty, extrinsic value, and expected free energy itself) and neural responses in source space. Additionally, we also investigated the neural correlate of (the degree of) variability, (the degree of) novelty, and prediction error. Because we were dealing with a 2-second time series, we were able to identify the periods of time during decision-making when the correlates were expressed. The linear regression was run by the “mne.stats.linear regression” function in the MNE package (Activity∼Regressor+Intercept). Activity is the activity amplitude of the EEG signal in the source space and regressor is one of the regressors that we mentioned (e.g., expected free energy, the value of reducing novelty, etc.).
+In the final analysis of the neural correlates of the decision-making process, as quantified by the epistemic and intrinsic values of expected free energy, we presented a series of linear regressions in source space. These analyses tested for correlations over trials between constituent terms in expected free energy (the value of reducing variability, the value of reducing novelty, extrinsic value, and expected free energy itself) and neural responses in source space. Additionally, we also investigated the neural correlate of (the degree of) variability, (the degree of) novelty, and prediction error. Because we were dealing with a 2-second time series, we were able to identify the periods of time during decision-making when the correlates were expressed. The linear regression was run by the “mne.stats.linear regression” function in the MNE package ($Activity∼Regressor+Intercept$). Activity is the activity amplitude of the EEG signal in the source space and $regressor$ is one of the regressors that we mentioned (e.g., expected free energy, the value of reducing novelty, etc.).
 
 In these analyses, we focused on the induced power of neural activity at each time point, in the brain source space. To illustrate the functional specialization of these neural correlates, we presented whole-brain maps of correlation coefficients and picked out the brain region with the most significant correlation for reporting fluctuations in selected correlations over 2-second periods. These analyses were presented in a descriptive fashion to highlight the nature and variety of the neural correlates, which we unpacked in relation to the existing EEG literature in the discussion. The significant results after false discovery rate (FDR) (Benjamini and Hochberg, 1995; Gershman et al., 2014) correction are shown in shaded regions. Additional regression results can be found in supplementary materials.
 
-## “First choice” stage: Action selection
+#### “First choice” stage: Action selection
 
-During the “First choice” stage, participants were presented with the choice of either choosing to stay or ask the ranger to get information regarding the present context of the risky path, the latter choice coming at a cost. Here, we examined “expected free energy” (G(π,τ), Equation 9), “value of reducing variability” (AI⋅EQ~[ln⁡Q(sτ|π)−ln⁡Q(sτ|oτ,π)]), and “extrinsic value” (EX⋅EQ~[ln⁡P(oτ)]).
+During the “First choice” stage, participants were presented with the choice of either choosing to stay or ask the ranger to get information regarding the present context of the risky path, the latter choice coming at a cost. Here, we examined “expected free energy” ($G(\pi,\tau)$, Equation 9), “value of reducing variability” ($AI⋅E_{Q~}[ln⁡Q(s_{\tau}|\pi)−ln⁡Q(s_{\tau}|o_{\tau},\pi)]$), and “extrinsic value” $(EX⋅E_{Q~}[ln⁡P(o_{\tau})])$.
 
 We found a robust correlation (p<0.05) between the “expected free energy” regressor and the frontal pole (Figure 7a). In addition, the superior temporal gyrus also displayed strong correlations with expected free energy. With respect to the “value of reducing variability” regressor, we identified a strong correlation (p<0.05) with the medial orbitofrontal cortex (Figure 7b). In addition, the postcentral gyrus and precentral gyrus also displayed strong correlations with the value of reducing variability. For the “extrinsic value” regressor, we observed a strong correlation (p<0.05) with the middle temporal gyrus (see Appendix 1—figure 4a). In addition, the inferior temporal gyrus, and superior temporal gyrus also exhibited strong correlations with extrinsic value. Interestingly, we observed that during the “First choice” stage, expected free energy and extrinsic value regressors were both strongly correlated. However, expected free energy correlations appeared later than those of extrinsic value at the beginning, suggesting that the brain initially encoded reward values before integrating these values with information values for decision-making.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92892/elife-92892-fig7-v1.jpg)
 
-**Figure 7.:** (a) The regression intensity () of expected free energy. The right panel indicates the regression intensity between the frontal pole (1, right half) and the expected free energy. The green-shaded regions indicate p<0.05 after false discovery rate (FDR) correction (the average βt-value during these significant periods equals −3.228). (b) The regression intensity () of the value of reducing variability. The right panel indicates the regression intensity between the medial orbitofrontal cortex (5, left half) and the value of reducing variability. The green-shaded regions indicate p<0.05 after FDR correction (the average βt-value during these significant periods equals −3.081). The black lines indicate the average intensities, and the gray-shaded regions indicate the ranges of variations (the 95% confidence interval). The gray lines indicate p<0.05 before FDR.
+**Figure 7.:** (a) The regression intensity ($\beta$) of expected free energy. The right panel indicates the regression intensity between the frontal pole (1, right half) and the expected free energy. The green-shaded regions indicate p<0.05 after false discovery rate (FDR) correction (the average t-value during these significant periods equals −3.228). (b) The regression intensity ($\beta$) of the value of reducing variability. The right panel indicates the regression intensity between the medial orbitofrontal cortex (5, left half) and the value of reducing variability. The green-shaded regions indicate p<0.05 after FDR correction (the average t-value during these significant periods equals −3.081). The black lines indicate the average intensities, and the gray-shaded regions indicate the ranges of variations (the 95% confidence interval). The gray lines indicate p<0.05 before FDR.
 
-## “First result” stage: Belief update
+#### “First result” stage: Belief update
 
-During the “First result” stage, participants were presented with the outcome of their first choice, which informed them of the current context: either “Context 1” or “Context 2” for the risky path, or no additional information if they opted not to ask. This process correlated with the “reducing variability” regressor, as it corresponded to resolving uncertainties about hidden states. We assumed that the brain learning hidden states (reducing variability) corresponded to the value of reducing variability. Thus, the “reducing variability” regressor could be AI⋅(ln⁡Q(st|π)−ln⁡Q(st|ot,π)).
+During the “First result” stage, participants were presented with the outcome of their first choice, which informed them of the current context: either “Context 1” or “Context 2” for the risky path, or no additional information if they opted not to ask. This process correlated with the “reducing variability” regressor, as it corresponded to resolving uncertainties about hidden states. We assumed that the brain learning hidden states (reducing variability) corresponded to the value of reducing variability. Thus, the “reducing variability” regressor could be $AI⋅(ln⁡Q(s_{t}|\pi)−ln⁡Q(s_{t}|o_{t},\pi))$.
 
 For “reducing variability”, we observed a robust correlation (p<0.05) within the medial orbitofrontal cortex (Figure 8a). In addition, the rostral middle frontal gyrus, the lateral orbitofrontal cortex, and the superior temporal gyrus also displayed strong correlations with reducing variability.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/92892/elife-92892-fig8-v1.jpg)
 
-**Figure 8.:** (a) The regression intensity (β) of reducing variability in the “First result” stage. The right panel indicates the regression intensity between the medial orbitofrontal cortex (5, left half) and reducing variability. The green-shaded regions indicate p<0.05 after false discovery rate (FDR) correction (the average t-value during these significant periods equals −3.001). (b) The regression intensity () of reducing novelty in the “Second result” stage. The right panel indicates the regression intensity between the precentral gyrus (15, right half) and reducing novelty. The green-shaded regions indicate p<0.05 after FDR correction (the average βt-value during these significant periods equals ). The black lines indicate the average intensities, and the gray-shaded regions indicate the ranges of variations (the 95% confidence interval). The gray lines indicate p<0.05 before FDR.−3.278
+**Figure 8.:** (a) The regression intensity (β) of reducing variability in the “First result” stage. The right panel indicates the regression intensity between the medial orbitofrontal cortex (5, left half) and reducing variability. The green-shaded regions indicate p<0.05 after false discovery rate (FDR) correction (the average t-value during these significant periods equals −3.001). (b) The regression intensity ($\beta$) of reducing novelty in the “Second result” stage. The right panel indicates the regression intensity between the precentral gyrus (15, right half) and reducing novelty. The green-shaded regions indicate p<0.05 after FDR correction (the average t-value during these significant periods equals $−3.278$). The black lines indicate the average intensities, and the gray-shaded regions indicate the ranges of variations (the 95% confidence interval). The gray lines indicate p<0.05 before FDR.
 
-## “Second choice” stage: Action selection
+#### “Second choice” stage: Action selection
 
-During the “Second choice” stage, participants chose between the risky path and the safe path based on the current information, with the aim of maximizing rewards. This required a balance between exploration and exploitation. Here, we examined “expected free energy” (G(π,τ), Equation 9), “value of reducing novelty” (AL⋅EQ~[ln⁡Q(A)−ln⁡P(A|sτ,oτ,π)]), “extrinsic value” (EX⋅EQ~[ln⁡P(oτ)]), and “novelty” (EQ~[ln⁡Q(A)−ln⁡P(A|sτ,oτ,π)]).
+During the “Second choice” stage, participants chose between the risky path and the safe path based on the current information, with the aim of maximizing rewards. This required a balance between exploration and exploitation. Here, we examined “expected free energy” ($G(\pi,\tau)$, Equation 9), “value of reducing novelty” ($AL⋅E_{Q~}[ln⁡Q(A)−ln⁡P(A|s_{\tau},o_{\tau},\pi)]$), “extrinsic value” ($EX⋅E_{Q~}[ln⁡P(o_{\tau})]$), and “novelty” ($E_{Q~}[ln⁡Q(A)−ln⁡P(A|s_{\tau},o_{\tau},\pi)]$).
 
 For “expected free energy” (Figure 9a), we identified strong correlations (p<0.001) in the rostral middle frontal gyrus. In addition, the caudal middle frontal gyrus, middle temporal gyrus, pars triangularis, and superior temporal gyrus also displayed strong correlations with expected free energy. Regarding the “value of reducing novelty”, we found that the rostral middle frontal gyrus showed strong correlations (p<0.05). In addition, the superior frontal gyrus, insula, and lateral orbitofrontal cortex also displayed strong correlations with the value of reducing novelty. For “extrinsic value”, strong correlations (p<0.001) were evident in the rostral middle frontal gyrus (see Appendix 1—figure 4b). In addition, the middle temporal gyrus, pars opercularis, and precentral gyrus also displayed strong correlations with extrinsic values. In the “Second choice” stage, participants made choices under different degrees of novelty. For “the degree of novelty”, we found no significant correlations after FDR correction (see Appendix 1—figure 6). Generally, the correlations between regressors and brain signals were more pronounced in the “Second choice” stage compared to the “First choice” stage.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/92892/elife-92892-fig9-v1.jpg)
 
-**Figure 9.:** (a) The regression intensity () of expected free energy. The right panel indicates the regression intensity between the rostral middle frontal gyrus (1, left half) and expected free energy, the black line indicates the average intensity of this region, and the gray-shaded region indicates the range of variation. The yellow-shaded regions indicate p<0.001 after false discovery rate (FDR) (the average βt-value during these significant periods equals −4.819) and the gray lines indicate p<0.001 before FDR. (b) The regression intensity (β) of the value of reducing novelty. The right panel indicates the regression intensity between the rostral middle frontal gyrus (6, left half) and the value of reducing novelty, the black line indicates the average intensity of this region, and the gray-shaded region indicates the range of variation (the 95% confidence interval). The green-shaded regions indicate p<0.05 after FDR (the average t-value during these significant periods equals −3.067) and the gray lines indicate p<0.05 before FDR.
+**Figure 9.:** (a) The regression intensity ($\beta$) of expected free energy. The right panel indicates the regression intensity between the rostral middle frontal gyrus (1, left half) and expected free energy, the black line indicates the average intensity of this region, and the gray-shaded region indicates the range of variation. The yellow-shaded regions indicate p<0.001 after false discovery rate (FDR) (the average t-value during these significant periods equals −4.819) and the gray lines indicate p<0.001 before FDR. (b) The regression intensity (β) of the value of reducing novelty. The right panel indicates the regression intensity between the rostral middle frontal gyrus (6, left half) and the value of reducing novelty, the black line indicates the average intensity of this region, and the gray-shaded region indicates the range of variation (the 95% confidence interval). The green-shaded regions indicate p<0.05 after FDR (the average t-value during these significant periods equals −3.067) and the gray lines indicate p<0.05 before FDR.
 
-## “Second result” stage: Belief update
+#### “Second result” stage: Belief update
 
-During the “Second result” stage, participants obtained specific rewards based on their second choice: selecting the safe path yields a fixed reward, whereas choosing the risky path results in variable rewards, contingent upon the context. Here we examined “extrinsic value” (rt), “prediction error” (rt−EQ~[ln⁡P(oτ)]), and “reducing novelty” (ln⁡Q(A)−ln⁡P(A|st,ot,π)). Here, we also assumed that learning model parameters (reducing novelty) corresponded to the value of reducing novelty.
+During the “Second result” stage, participants obtained specific rewards based on their second choice: selecting the safe path yields a fixed reward, whereas choosing the risky path results in variable rewards, contingent upon the context. Here we examined “extrinsic value” ($r_{t}$), “prediction error” ($r_{t}−E_{Q~}[ln⁡P(o_{\tau})]$), and “reducing novelty” ($ln⁡Q(A)−ln⁡P(A|s_{t},o_{t},\pi)$). Here, we also assumed that learning model parameters (reducing novelty) corresponded to the value of reducing novelty.
 
 For “extrinsic value”, we observed strong correlations (p<0.05) in the lateral occipital gyrus, inferior parietal gyrus, and superior parietal gyrus (see Appendix 1—figure 5a). For “prediction error”, we observed strong correlations (p<0.05) in the bank of the superior temporal sulcus, inferior temporal gyrus, and lateral occipital gyrus (see Appendix 1—figure 5b). For “reducing novelty”, we observed strong correlations (p<0.05) in the precentral gyrus (see Figure 8).
 
@@ -132,13 +132,13 @@ For “extrinsic value”, we observed strong correlations (p<0.05) in the later
 
 In this study, we utilized active inference to explore the neural correlates involved in the human decision-making process under novelty and variability. By employing a contextual two-bandit task, we demonstrated that the active inference framework effectively describes real-world decision-making. Our findings indicate that active inference not only provides explanations for decision-making under different kinds of uncertainty but also reveals the common and unique neural correlates associated with different types of uncertainties and decision-making policies. This was supported by evidence from both sensor-level and source-level EEG.
 
-## The varieties of human exploration strategies in active inference
+### The varieties of human exploration strategies in active inference
 
 In the diverse realm of human behavior, it has been observed that human exploration strategies vary significantly depending on the current situation. Such strategies can be viewed as a blend of directed exploration, where actions with higher levels of uncertainty are favored, and random exploration, where actions are chosen at random (Gershman, 2018). In the framework of active inference, the randomness in exploration is derived from the precision parameter employed during policy selection. As the precision parameter increases, the randomness in agents’ actions also increases. On the other hand, the directed exploration stems from the computation of expected free energy. Policies that lead to the exploration of more disambiguating options, hence yielding higher information gain, are assigned increased expected free energy by the model (Friston et al., 2016; Friston et al., 2017; Gershman, 2019).
 
 Our model-fitting results indicate that people show high variance in their exploration strategies (Figure 4b). Exploration strategies, from a model-based perspective, incorporate a fusion of model-free learning and model-based learning. Intriguingly, these two learning ways exhibit both competition and cooperation within the human brain (Gläscher et al., 2010; Daw et al., 2005). The simplicity and effectiveness of model-free learning contrast with its inflexibility and data inefficiency. Conversely, model-based learning, although flexible and capable of forward planning, demands substantial cognitive resources. The active inference model tends to lean more toward model-based learning as this model incorporates a cognitive model of the environment to guide the agent’s actions. Our simulation results showed these model-based behaviors in which the agent constructs an environment model and uses the model to maximize rewards (Figure 3). Active inference can integrate model-free learning through adding a habitual term (Friston et al., 2016). This allows the active inference agent to exploit the cognitive model (model-based) for planning in the initial task stages and utilize habits for increased accuracy and efficiency in later stages.
 
-## The strength of the active inference framework in decision-making
+### The strength of the active inference framework in decision-making
 
 Active inference is a comprehensive framework elucidating neurocognitive processes (Figure 1). It unifies perception, decision-making, and learning within a single framework centered around the minimization of free energy. One of the primary strengths of the active inference model lies in its robust statistical (Crooks, 1998) and neuroscientific underpinnings (Lehmann et al., 2022), allowing for a lucid understanding of an agent’s interaction within its environment.
 
@@ -146,7 +146,7 @@ Active inference offers a superior exploration mechanism compared with basic mod
 
 Despite these strengths, the active inference framework also has its limitations (Raja et al., 2021). One notable limitation pertains to its computational complexity (Figure 2c), resulting from its model-based architecture, restricting the traditional active inference model’s application within continuous state-action spaces. Additionally, the model heavily relies on the selection of priors, meaning that poorly chosen priors could adversely affect decision-making, learning, and other processes (Schwartenbeck et al., 2019). However, sometimes it is just the opposite. As illustrated in the model comparison, priors can be a strength of Bayesian approaches. Under the complete class theorem (Wald, 1947; Brown, 1981), any pair of behavioral data and reward functions can be described in terms of ideal Bayesian decision-making with particular priors. In other words, there always exists a description of behavioral data in terms of some priors. This means that one can, in principle, characterize any given behavioral data in terms of the priors that explain that behavior. In our example, these were effectively priors over the precision of various preferences or beliefs about contingencies that underwrite expected free energy.
 
-## Representing uncertainties at the sensor level
+### Representing uncertainties at the sensor level
 
 The employment of EEG signals in decision-making processes under uncertainty has largely concentrated on event-related potential (ERP) and spectral features at the sensor level (Wang et al., 2015; Lin et al., 2019; Bland and Schaefer, 2011; Botelho et al., 2023). In our study, the sensor-level results reveal greater neural responses in multiple brain regions during the second half trials compared to the first half, and similarly, during not-asked trials as opposed to asked trials (Figure 6).
 
@@ -154,7 +154,7 @@ In our setting, after the first half of the trials, participants had learned som
 
 Novelty and variability, two pivotal factors in decision-making, are often misinterpreted and can vary in meaning depending on the context. Regarding the sensor level results, we find an overall greater neural response for the second half of the trials than the first half of the trials (Figure 6b). It may indicate a generally greater neural response for the lower novelty trials, which may contrast with previous studies showing greater neural response for higher novelty trials in previous studies (Sun et al., 2017; Botelho et al., 2023). For example, a late positive potential (LPP) was identified in their work, which differentiated levels of novelty, with the amplitude of the LPP serving as an index for perceptual novelty levels. However, the novelty in their task was defined as the perceptual difficulty of distinguishing, while our definition of novelty corresponds to the information gained from certain policies. Furthermore, Zheng et al., 2020 used a wheel-of-fortune task to examine the ERP and oscillatory correlations of neural feedback processing under conditions of variability and novelty. Their findings suggest that risky gambling enhanced cognitive control signals, as evidenced by theta oscillation. In contrast, ambiguous gambling heightened affective and motivational salience during feedback processing, as indicated by positive activity and delta oscillation. Future work may focus on this oscillation level analysis and reveal more evidence on it.
 
-## Representation of decision-making process in human brain
+### Representation of decision-making process in human brain
 
 In our experiment, each stage corresponded to distinct phases of the decision-making process. Participants made decisions to optimize cumulative rewards based on current information about the environment during the two choice stages while acquiring information about the environment during the two result stages.
 
@@ -170,61 +170,160 @@ In the two “choice” stages, we observed stronger correlations for the expect
 
 It should be acknowledged that only a subset of the regions identified without correction exhibit model parameter correlations that are robust enough to remain significant after correction for multiple comparisons. In future work, we should collect more precise neural data to make the results more robust, for example, collecting a head model for each subject instead of using an average model.
 
-## Conclusion
+### Conclusion
 
 In the current study, we introduce the active inference framework to investigate the neural mechanisms underlying an exploration and exploitation decision-making task. Compared to model-free reinforcement learning, active inference provides a superior exploration bonus and offers a better fit to the participants’ behavioral data. Given that the behavioral task in our study only involved variables from a limited number of states and rewards, future research should strive to apply the active inference framework to more complex tasks. Specific brain regions may play key roles in balancing exploration and exploitation. The frontal pole and middle frontal gyrus were primarily involved in action selection (expected free energy). The precentral gyrus was mainly engaged in evaluating the value of reducing variability, and the rostral middle frontal cortex was also engaged in evaluating the value of reducing novelty. Furthermore, the medial orbitofrontal cortex participated in learning the hidden states of the environment (reducing variability) and the precentral gyrus participated in learning the model parameters of the environment (reducing novelty). In essence, our findings suggest that active inference is capable of investigating human behaviors in decision-making under uncertainty. Overall, this research presents evidence from both behavioral and neural perspectives that support the concept of active inference in decision-making processes. We also offer insights into the neural mechanisms involved in human decision-making under various forms of uncertainty.
 
 ## Materials and methods
 
-## The free energy principle and active inference
+### The free energy principle and active inference
 
 The free energy principle (Friston, 2010) is a theoretical framework that proposes that both biological and non-biological systems tend to minimize their (variational) free energy to maintain a non-equilibrium steady state. In the context of the brain, the free energy principle suggests that the brain functions as an “inference machine” that aims to minimize the difference between its internal cognitive model about the environment and the true causes (hidden states) of perceived sensory inputs. This minimization is achieved through active inference.
 
 Active inference can be regarded as a form of planning as inference, in which an agent samples the environment to maximize the evidence for its internal cognitive model of how sensory samples are generated. This is sometimes known as self-evidencing (Friston et al., 2016). Under the active inference framework, variational free energy can be viewed as the objective function that underwrites belief updating; namely, inference and learning. By minimizing the free energy expected following an action (i.e., expected free energy), we can optimize decisions and resolve uncertainty.
 
-Mathematically, the minimization of free energy is formally related to variational Bayesian methods (Galdo et al., 2020). Variational inference is used to estimate both hidden states of the environment and the parameters of the cognitive model. This process can be viewed as an optimization problem that seeks to find the best model parameters and action policy to maximize the sensory evidence. By minimizing variational free energy and expected free energy, optimal model parameters can be estimated and better decisions can be made (Friston, 2013). Active inference bridges the sensory input, cognitive processes, and action output, enabling us to quantitatively describe the neural processes of learning about the environment. The brain receives sensory input o from the environment, and the cognitive model encoded by the brain q(s) makes an inference on the cause of sensory input p(s|o) (a.k.a., the hidden state of the environment). In the free energy principle, minimizing free energy refers to minimizing the difference (e.g., KL divergence) between the cognitive model encoded by the brain and the causes of the sensory input. Thus, free energy is an information-theoretic quantity that bounds the evidence for the data model. Free energy can be minimized by the following two means (Buckley et al., 2017):
+Mathematically, the minimization of free energy is formally related to variational Bayesian methods (Galdo et al., 2020). Variational inference is used to estimate both hidden states of the environment and the parameters of the cognitive model. This process can be viewed as an optimization problem that seeks to find the best model parameters and action policy to maximize the sensory evidence. By minimizing variational free energy and expected free energy, optimal model parameters can be estimated and better decisions can be made (Friston, 2013). Active inference bridges the sensory input, cognitive processes, and action output, enabling us to quantitatively describe the neural processes of learning about the environment. The brain receives sensory input $o$ from the environment, and the cognitive model encoded by the brain $q(s)$ makes an inference on the cause of sensory input $p(s|o)$ (a.k.a., the hidden state of the environment). In the free energy principle, minimizing free energy refers to minimizing the difference (e.g., KL divergence) between the cognitive model encoded by the brain and the causes of the sensory input. Thus, free energy is an information-theoretic quantity that bounds the evidence for the data model. Free energy can be minimized by the following two means (Buckley et al., 2017):
 
 Active inference formulates the necessary cognitive processing as a process of belief updating, where choices depend on agents’ expected free energy. Expected free energy serves as a universal objective function, guiding both perception and action. In brief, expected free energy can be seen as the expected surprise following some policies. The expected surprise can be reduced by resolving uncertainty, and one can select policies with lower expected free energy that can encourage information-seeking and resolve uncertainty. Additionally, one can minimize expected surprise by avoiding surprising or aversive outcomes (Oudeyer and Kaplan, 2007; Schmidhuber, 2010). This leads to goal-seeking behavior, where goals can be viewed as prior preferences or rewarding outcomes.
 
 Technically, expected free energy can be expressed as risk plus ambiguity or in terms of expected information gain and expected value, where the value corresponds to (log) prior preferences. We will refer to both formulations in what follows. Resolving ambiguity (and maximizing information gain) has epistemic value, while avoiding risk (and maximizing expected value) has pragmatic or instrumental value. These two types of values can be referred to in terms of intrinsic and extrinsic value, respectively (Barto et al., 2013; Schwartenbeck et al., 2019).
 
-## The generative model
+#### The generative model
 
 Active inference builds on partially observable Markov decision processes: (O, S, U, T, R, P, Q) (see Table 1).
 
-In this model, the generative model P is parameterized as follows and the model parameters are η=a,c,d,β(Friston et al., 2016):(1)P(o~,s~,π,η)=P(π)P(η)∏t=1TP(ot|st)P(st|st−1,π),P(ot|st)=Cat(A),P(st+1|st,π)=Cat(B(π(t))),P(s0)=d,P(π|γ)=σ(−γ⋅G(π)),P(A)=Dir(a),P(γ)=Γ(1,β),
+**Table 1.**
+ Ingredients for computational modeling of active inference.
 
-where o is observations or sensory inputs (o~ is the history of observations), s is the hidden states of the environment (s~ is the history of hidden states), π is agent’s policies, A is the likelihood matrix mapping from hidden states to observations, B is the transition function for hidden states under the policy in time t, d is the prior expectation of each state at the beginning of each trial, γ is the inverse temperature of beliefs about policies, β is the prior expectation of policies’ temperature parameters, a is the concentration parameters of the likelihood matrix, σ is the softmax function, Cat() is the categorical distribution, Dir() is the Dirichlet distribution, and Γ() is the Gamma distribution.
 
-The posterior probability of the corresponding hidden states and parameters (x=s~,π,A,B,β) is as Equation 2:(2)Q(x)=Q(s1|π)...Q(sT|π)Q(π)Q(A)Q(B)Q(γ)=arg⁡minQ(x)⁡F≈P(x|o~)
+<table>
+  <thead>
+    <tr>
+      <th>Notations</th>
+      <th>Definition</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>O</td>
+      <td>A finite set of observations (outcomes)</td>
+      <td>Sensory input that brains receive.</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>A finite set of hidden states</td>
+      <td>The true hidden states of the environment that generate sensory inputs to brains.</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>A finite set of actions</td>
+      <td>Agent performs actions that change the environment.</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>A finite set of time-sensitive policies</td>
+      <td>A policy is an action sequence over time.</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>A generative processR(o~,s~,u~)</td>
+      <td>The generative process generates observations and next states (state transitions of the environment) based on current states and actions.</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>A generative modelP(o~,s~,π,η)</td>
+      <td>The generative model describes what the agent believes about the environment (how observations are generated).</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>An approximate posterior</td>
+      <td>The Bayesian beliefs under the generative model that is optimized to minimize variational free energy. By definition, these beliefs correspond to approximate posteriors.</td>
+    </tr>
+  </tbody>
+</table>
+
+In this model, the generative model $P$ is parameterized as follows and the model parameters are $η=a,c,d,\beta$(Friston et al., 2016):
+
+$$
+P(o~,s~,\pi,η)=P(\pi)P(η)\prodt=1TP(o_{t}|s_{t})P(s_{t}|s_{t−1},\pi),P(o_{t}|s_{t})=Cat(A),P(s_{t+1}|s_{t},\pi)=Cat(B(\pi(t))),P(s_{0})=d,P(\pi|\gamma)=\sigma(−\gamma⋅G(\pi)),P(A)=Dir(a),P(\gamma)=Γ(1,\beta),
+$$
+
+where $o$ is observations or sensory inputs ($o~$ is the history of observations), $s$ is the hidden states of the environment ($s~$ is the history of hidden states), $\pi$ is agent’s policies, $A$ is the likelihood matrix mapping from hidden states to observations, $B$ is the transition function for hidden states under the policy in time $t$, $d$ is the prior expectation of each state at the beginning of each trial, $\gamma$ is the inverse temperature of beliefs about policies, $\beta$ is the prior expectation of policies’ temperature parameters, $a$ is the concentration parameters of the likelihood matrix, $\sigma$ is the softmax function, $Cat()$ is the categorical distribution, $Dir()$ is the Dirichlet distribution, and $Γ()$ is the Gamma distribution.
+
+The posterior probability of the corresponding hidden states and parameters ($x=s~,\pi,A,B,\beta$) is as Equation 2:
+
+$$
+Q(x)=Q(s_{1}|\pi)...Q(s_{T}|\pi)Q(\pi)Q(A)Q(B)Q(\gamma)=arg⁡minQ(x)⁡F≈P(x|o~)
+$$
 
 The generative model is a conceptual representation of how agents understand their environment. This model fundamentally posits that agents’ observations are contingent upon states, and the transitions of these states inherently depend on both the state itself and the chosen policy. It is crucial to note that within this model the policy is considered a stochastic variable requiring inference, thus considering planning as a form of inference. This inference process involves deducing the optimal policy from the agents’ observations. All the conditional abilities rest on likelihood and state transition models that are parameterized using a Dirichlet distribution (FitzGerald et al., 2015). The Dirichlet distribution’s sufficient statistic is its concentration parameter, which is equivalently interpreted as the cumulative frequency of previous occurrences. In essence, this means that the agents incorporate the frequency of past combinations of states and observations into the generative model. Therefore, the generative model plays a pivotal role in inferring the probabilities and uncertainties related to the hidden states and observations.
 
-## Variational free energy and expected free energy
+#### Variational free energy and expected free energy
 
-Perception, decision-making, and learning in active inference are all achieved by minimizing the variational and expected free energy with respect to the model parameters and hidden states. The variational free energy can be expressed in various forms with respect to the reduced posterior as Equation 3:(3)F=EQ(x)[ln⁡Q(x)−ln⁡P(x,o~)]=EQ(x)[ln⁡Q(x)−ln⁡P(x|o~)−ln⁡P(o~)]=EQ(x)[ln⁡Q(x)−ln⁡P(o~|x)−ln⁡P(x)]=DKL[Q(x)||P(x)]−EQ(x)[ln⁡P(o~)]
+Perception, decision-making, and learning in active inference are all achieved by minimizing the variational and expected free energy with respect to the model parameters and hidden states. The variational free energy can be expressed in various forms with respect to the reduced posterior as Equation 3:
 
-Here, x=s~,π,A,B,β, including the hidden states and parameters. These forms of free energy are consistent with the variational inference in statistics. Minimizing free energy is equal to maximizing model evidence, that is, minimizing surprise. In addition, free energy can also be written in other forms as Equation 4:(4)F=DKL[Q(x)||P(x)]⏟complexity−EQ(x)[ln⁡P(o~|x)]⏟accuracy
+$$
+F=E_{Q(x)}[ln⁡Q(x)−ln⁡P(x,o~)]=E_{Q(x)}[ln⁡Q(x)−ln⁡P(x|o~)−ln⁡P(o~)]=E_{Q(x)}[ln⁡Q(x)−ln⁡P(o~|x)−ln⁡P(x)]=D_{KL}[Q(x)||P(x)]−E_{Q(x)}[ln⁡P(o~)]
+$$
 
-The initial term, denoted as DKL[Q(x)||P(x)], is conventionally referred to as “complexity”. This term, reflecting the divergence between Q(x) and P(x), quantifies the volume of information intended to be encoded within Q(x) that is not inherent in P(x). The subsequent term, EQ[ln⁡P(o~|s)], designated as “accuracy”, represents the likelihood of an observation expected under approximate posterior (Bayesian) beliefs about hidden states.
+Here, $x=s~,\pi,A,B,\beta$, including the hidden states and parameters. These forms of free energy are consistent with the variational inference in statistics. Minimizing free energy is equal to maximizing model evidence, that is, minimizing surprise. In addition, free energy can also be written in other forms as Equation 4:
 
-The minimization of variational free energy facilitates a progressive alignment between the approximate posterior distribution of hidden states, as encoded by the brain’s cognitive function, and the actual posterior distribution of the environment. However, it is noteworthy that our policy beliefs are future-oriented. We want policies that possess the potential to effectively guide us toward achieving the future state that we desire. It follows that these policies should aim to minimize the free energy in the future, or in other words, expected free energy. Thus, expected free energy depends on future time points τ and policies π, and x can be replaced by the possible hidden state sτ and the likelihood matrix A. The relationship between policy selection and expected free energy is inversely proportional: a lower expected free energy under a given policy heightens the probability of that policy’s selection. Hence, expected free energy emerges as a crucial ccice.(5)P(π)=σ(−γ⋅G(π))G(π)=∑tG(π,τ)
+$$
+F=D_{KL}[Q(x)||P(x)]⏟complexity−E_{Q(x)}[ln⁡P(o~|x)]⏟accuracy
+$$
 
-Next, we can derive the expected free energy in the same way as the variational free energy:(6)G(π,τ)=EQ~[ln⁡Q(sτ,A|π)−ln⁡P(oτ,sτ,A|π)](7)G(π,τ)=EQ~[ln⁡Q(sτ,A|π)−ln⁡P(oτ,sτ,A|π)]=EQ~[ln⁡Q(A)+ln⁡Q(sτ|π)−ln⁡P(A|sτ,oτ,π)−ln⁡P(sτ|oτ,π)−ln⁡P(oτ)]≈EQ~[ln⁡Q(A)+ln⁡Q(sτ|π)−ln⁡P(A|sτ,oτ,π)−ln⁡Q(sτ|oτ,π)−ln⁡P(oτ)]
+The initial term, denoted as $D_{KL}[Q(x)||P(x)]$, is conventionally referred to as “complexity”. This term, reflecting the divergence between $Q(x)$ and $P(x)$, quantifies the volume of information intended to be encoded within $Q(x)$ that is not inherent in $P(x)$. The subsequent term, $E_{Q}[ln⁡P(o~|s)]$, designated as “accuracy”, represents the likelihood of an observation expected under approximate posterior (Bayesian) beliefs about hidden states.
 
-In Equation 7, it is important to note that we anticipate observations that have not yet occurred. Consequently, we designate Q~=Q(oτ,sτ,A|π). If we establish a relationship between ln⁡P(oτ) and the prior preference, it enables us to express expected free energy in terms of epistemic value and extrinsic value. The implications of such a relationship offer a new lens to understand the interplay between cognitive processes and their environmental consequences, thereby enriching our understanding of decision-making under the active inference framework.(8)G(π,τ)=EQ~[ln⁡Q(A)−ln⁡P(A|sτ,oτ,π)novelty+ln⁡Q(sτ|π)−ln⁡Q(sτ|oτ,π)salience]⏟Epistemic value−EQ~[ln⁡P(oτ)]⏟Extrinsic value
+The minimization of variational free energy facilitates a progressive alignment between the approximate posterior distribution of hidden states, as encoded by the brain’s cognitive function, and the actual posterior distribution of the environment. However, it is noteworthy that our policy beliefs are future-oriented. We want policies that possess the potential to effectively guide us toward achieving the future state that we desire. It follows that these policies should aim to minimize the free energy in the future, or in other words, expected free energy. Thus, expected free energy depends on future time points $\tau$ and policies $\pi$, and $x$ can be replaced by the possible hidden state $s_{\tau}$ and the likelihood matrix A. The relationship between policy selection and expected free energy is inversely proportional: a lower expected free energy under a given policy heightens the probability of that policy’s selection. Hence, expected free energy emerges as a crucial ccice.
 
-In this context, extrinsic value aligns with the concept of expected utility. On the other hand, epistemic value corresponds to the anticipated information gain or the value of reducing uncertainty, encapsulating the exploration of both model parameters (novelty) and the hidden states (salience), which are to be illuminated by future observations. We can add coefficients (AL, AI, and EX) before these three terms of Equation 8 to better simulate the diverse exploration strategies of agents:(9)G(π,τ)=AL⋅EQ~[ln⁡Q(A)−ln⁡P(A|sτ,oτ,π)]⏟Value of reducing novelty+AI⋅EQ~[ln⁡Q(sτ|π)−ln⁡Q(sτ|oτ,π)]⏟Value of reducing variability−EX⋅EQ~[ln⁡P(oτ)]⏟Extrinsic value
+$$
+P(\pi)=\sigma(−\gamma⋅G(\pi))G(\pi)=\sumtG(\pi,\tau)
+$$
+
+Next, we can derive the expected free energy in the same way as the variational free energy:
+
+$$
+G(\pi,\tau)=E_{Q~}[ln⁡Q(s_{\tau},A|\pi)−ln⁡P(o_{\tau},s_{\tau},A|\pi)]
+$$
+
+
+
+$$
+G(\pi,\tau)=E_{Q~}[ln⁡Q(s_{\tau},A|\pi)−ln⁡P(o_{\tau},s_{\tau},A|\pi)]=E_{Q~}[ln⁡Q(A)+ln⁡Q(s_{\tau}|\pi)−ln⁡P(A|s_{\tau},o_{\tau},\pi)−ln⁡P(s_{\tau}|o_{\tau},\pi)−ln⁡P(o_{\tau})]≈E_{Q~}[ln⁡Q(A)+ln⁡Q(s_{\tau}|\pi)−ln⁡P(A|s_{\tau},o_{\tau},\pi)−ln⁡Q(s_{\tau}|o_{\tau},\pi)−ln⁡P(o_{\tau})]
+$$
+
+In Equation 7, it is important to note that we anticipate observations that have not yet occurred. Consequently, we designate $Q~=Q(o_{\tau},s_{\tau},A|\pi)$. If we establish a relationship between $ln⁡P(o_{\tau})$ and the prior preference, it enables us to express expected free energy in terms of epistemic value and extrinsic value. The implications of such a relationship offer a new lens to understand the interplay between cognitive processes and their environmental consequences, thereby enriching our understanding of decision-making under the active inference framework.
+
+$$
+G(\pi,\tau)=E_{Q~}[ln⁡Q(A)−ln⁡P(A|s_{\tau},o_{\tau},\pi)novelty+ln⁡Q(s_{\tau}|\pi)−ln⁡Q(s_{\tau}|o_{\tau},\pi)salience]⏟Epistemic value−E_{Q~}[ln⁡P(o_{\tau})]⏟Extrinsic value
+$$
+
+In this context, extrinsic value aligns with the concept of expected utility. On the other hand, epistemic value corresponds to the anticipated information gain or the value of reducing uncertainty, encapsulating the exploration of both model parameters (novelty) and the hidden states (salience), which are to be illuminated by future observations. We can add coefficients ($AL$, $AI$, and $EX$) before these three terms of Equation 8 to better simulate the diverse exploration strategies of agents:
+
+$$
+G(\pi,\tau)=AL⋅E_{Q~}[ln⁡Q(A)−ln⁡P(A|s_{\tau},o_{\tau},\pi)]⏟Value of reducing novelty+AI⋅E_{Q~}[ln⁡Q(s_{\tau}|\pi)−ln⁡Q(s_{\tau}|o_{\tau},\pi)]⏟Value of reducing variability−EX⋅E_{Q~}[ln⁡P(o_{\tau})]⏟Extrinsic value
+$$
 
 To align with different types of uncertainties and avoid conflicts with active inference terminology, the first two terms in Equation 9 are referred to as the value of reducing novelty and variability, respectively, while the corresponding terms in Equation 8 are termed novelty and variability.
 
-Belief updates play a dual role by facilitating both inference and learning processes. The inference is here understood as the optimization of expectations about the hidden states. Learning, on the other hand, involves the optimization of model parameters. This optimization necessitates the finding of sufficient statistics of the approximate posterior that minimize the variational free energy. Active inference employs the technique of gradient descent to identify the optimal update method (Friston et al., 2016). In the present work, our focus is primarily centered on the updated methodology related to the likelihood mapping A and the concentration parameter a (rows correspond to observations, and columns correspond to hidden states):(10)a0=[11priorprior000000priorprior000000priorprior000000priorprior000000priorprior0000000011000000001000000001],(11)A=Cat(a),at+1=a1+α(ot⊗st)
+Belief updates play a dual role by facilitating both inference and learning processes. The inference is here understood as the optimization of expectations about the hidden states. Learning, on the other hand, involves the optimization of model parameters. This optimization necessitates the finding of sufficient statistics of the approximate posterior that minimize the variational free energy. Active inference employs the technique of gradient descent to identify the optimal update method (Friston et al., 2016). In the present work, our focus is primarily centered on the updated methodology related to the likelihood mapping $A$ and the concentration parameter $a$ (rows correspond to observations, and columns correspond to hidden states):
 
-## Participants
+$$
+a_{0}=[11priorprior000000priorprior000000priorprior000000priorprior000000priorprior0000000011000000001000000001],
+$$
+
+
+
+$$
+A=Cat(a),a_{t+1}=a_{1}+\alpha(o_{t}⊗s_{t})
+$$
+
+### Participants
 
 Participants were recruited via an online recruitment advertisement. We recruited 25 participants (male: 14, female: 11, mean age: 20.82 ± 2.12 years old), concurrently collecting EEG and behavioral data. All participants signed an informed consent form before the experiments. This study was approved by the local ethics committee of the University of Macau (BSERE22-APP006-ICI).
 
-## EEG processing
+### EEG processing
 
 The processing of EEG signals was conducted using the EEGLAB toolbox (Martínez-Cancino et al., 2021) in the MATLAB and the MNE package (Esch et al., 2019). The preprocessing of EEG data involved multiple steps, including data selection, downsampling, high- and low-pass filtering, and independent component analysis (ICA) decomposition. Two-second data segments were selected at various stages during each trial in Figure 4a. Subsequently, the data was downsampled to a frequency of 250 Hz and subjected to high- and low filtering within the 1–30 Hz frequency range. In instances where channels exhibited abnormal data, these were resolved using interpolation and average values. Following this, ICA was applied to identify and discard components flagged as noise.
 

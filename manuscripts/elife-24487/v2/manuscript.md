@@ -16,57 +16,57 @@
 
 ## Abstract
 
-10.7554/eLife.24487.001 Many important cellular membrane fission reactions are driven by ESCRT pathways, which culminate in disassembly of ESCRT-III polymers by the AAA ATPase Vps4. We report a 4.3 Å resolution cryo-EM structure of the active Vps4 hexamer with its cofactor Vta1, ADP·BeF x , and an ESCRT-III substrate peptide. Four Vps4 subunits form a helix whose interfaces are consistent with ATP binding, is stabilized by Vta1, and binds the substrate peptide. The fifth subunit approximately continues this helix but appears to be dissociating. The final Vps4 subunit completes a notched-washer configuration as if transitioning between the ends of the helix. We propose that ATP binding propagates growth at one end of the helix while hydrolysis promotes disassembly at the other end, so that Vps4 ‘walks’ along ESCRT-III until it encounters the ordered N-terminal domain to destabilize the ESCRT-III lattice. This model may be generally applicable to other protein-translocating AAA ATPases. DOI: http://dx.doi.org/10.7554/eLife.24487.001
+Many important cellular membrane fission reactions are driven by ESCRT pathways, which culminate in disassembly of ESCRT-III polymers by the AAA ATPase Vps4. We report a 4.3 Å resolution cryo-EM structure of the active Vps4 hexamer with its cofactor Vta1, ADP·BeFx, and an ESCRT-III substrate peptide. Four Vps4 subunits form a helix whose interfaces are consistent with ATP binding, is stabilized by Vta1, and binds the substrate peptide. The fifth subunit approximately continues this helix but appears to be dissociating. The final Vps4 subunit completes a notched-washer configuration as if transitioning between the ends of the helix. We propose that ATP binding propagates growth at one end of the helix while hydrolysis promotes disassembly at the other end, so that Vps4 ‘walks’ along ESCRT-III until it encounters the ordered N-terminal domain to destabilize the ESCRT-III lattice. This model may be generally applicable to other protein-translocating AAA ATPases.
 
 ## Introduction
 
 The AAA ATPase Vps4 drives the ESCRT (Endosomal Sorting Complexes Required for Transport) pathways that mediate membrane deformation and fission in a wide range of cellular processes (Monroe and Hill, 2016). These include membrane severing during cytokinetic abscission, the formation of multivesicular bodies and exosomes, shedding of microvesicles and viruses, repair of lesions in the plasma membrane, pruning of neurons, removal of defective nuclear pore complex assembly intermediates, and nuclear envelope closure at mitotic exit (Campsteijn et al., 2016; Hurley, 2015; McCullough et al., 2013; Olmos and Carlton, 2016). The ESCRT pathways converge on the recruitment of ESCRT-III subunits, of which seven family members are recognized in yeast and 12 in human. The leading model is that the upstream factors recruit ESCRT-III subunits, which polymerize through their N-terminal domains to induce an inherently unstable membrane configuration that resolves by fission following Vps4-mediated disassembly or remodeling of the ESCRT-III polymer (Henne et al., 2013; McCullough et al., 2013; Schöneberg et al., 2017).
 
-Multiple structures have been reported for domains of Vps4 (
+Multiple structures have been reported for domains of Vps4 (Monroe and Hill, 2016). The N-terminal MIT domain of Vps4 (Scott et al., 2005b) binds ~20 residue MIT interacting motifs (MIMs) that are found at the C-termini of many ESCRT-III subunits (Kieffer et al., 2008; Obita et al., 2007; Stuchell-Brereton et al., 2007). The MIT domain is followed by a flexible ~40 residue linker and an ~320 residue AAA ATPase cassette that comprises a large AAA ATPase domain and a small AAA ATPase domain (Figures 1A and 2A), which contains an insertion known as the β domain that binds the dimeric C-terminal VSL domain of the Vta1 cofactor (LIP5 in human) in an interaction that promotes Vps4 assembly and ATPase activity (Azmi et al., 2006; Lottridge et al., 2006; Scott et al., 2005a).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig1-v2.jpg)
 
-**Figure 1.:** 101-437-Hcp1 is an active hexamer.(A) Vps4 constructs and peptide-binding affinities assayed by fluorescence polarization. Peptide ‘20’ is a Vps2-derived 20-residue peptide C identified earlier (Han et al., 2015). Peptide ‘8’ is an 8-residue fragment (DEIVNKVL) of peptide ‘20’ that retains essentially full binding affinity. The relatively weak binding of full-length Vps4 reflects autoinhibition mediated by the MIT domains (Han et al., 2015). (B) Fluorescence polarization isotherms corresponding to values in panel A. Means and standard deviations are from four independent experiments. (C) Gel filtration of Vps4101-437-Hcp1 on a Superdex 200 column in 25 mM Tris/HCl pH 7.4, 100 mM NaCl and 1 mM DTT. The protein elutes as a symmetric peak with an apparent molecular mass of 290 kDa, in good agreement with the calculated molecular mass of a hexamer (330 kDa). (D) ATPase activities for Vps4 constructs: 1, Vps4 full-length; 2, Vps481-437; 3, Vps4101-437; 4, Vps4101-437-Hcp1. Vps4 subunit concentrations are indicated. Means and standard deviations from at least three independent measurements.DOI: http://dx.doi.org/10.7554/eLife.24487.00310.7554/eLife.24487.004Figure 1—source data 1.Figure 1B.DOI: http://dx.doi.org/10.7554/eLife.24487.00410.7554/eLife.24487.005Figure 1—source data 2.Figure 1D.DOI: http://dx.doi.org/10.7554/eLife.24487.005
+**Figure 1.:** (A) Vps4 constructs and peptide-binding affinities assayed by fluorescence polarization. Peptide ‘20’ is a Vps2-derived 20-residue peptide C identified earlier (Han et al., 2015). Peptide ‘8’ is an 8-residue fragment (DEIVNKVL) of peptide ‘20’ that retains essentially full binding affinity. The relatively weak binding of full-length Vps4 reflects autoinhibition mediated by the MIT domains (Han et al., 2015). (B) Fluorescence polarization isotherms corresponding to values in panel A. Means and standard deviations are from four independent experiments. (C) Gel filtration of Vps4101-437-Hcp1 on a Superdex 200 column in 25 mM Tris/HCl pH 7.4, 100 mM NaCl and 1 mM DTT. The protein elutes as a symmetric peak with an apparent molecular mass of 290 kDa, in good agreement with the calculated molecular mass of a hexamer (330 kDa). (D) ATPase activities for Vps4 constructs: 1, Vps4 full-length; 2, Vps481-437; 3, Vps4101-437; 4, Vps4101-437-Hcp1. Vps4 subunit concentrations are indicated. Means and standard deviations from at least three independent measurements.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** 101-437-Hcp1 is a hexamer.Equilibrium sedimentation of Vps4101-437-Hcp1. Absorbance is shown as a function of distance from the axis of rotation for three loading concentrations (open circles, 10 µM; open squares, 5 µM; open diamonds, 2.5 µM Vps4 subunits). The data were fit to a single species model where the molecular weight was allowed to float or held constant as indicated (black line), and residuals for each concentration are shown below. The molecular weight was fit to 329,402 Da in good agreement with the expected molecular weight for a hexamer of 334,223 Da. When the molecular weight was held constant, the data agree well with a hexamer model, whereas the residuals are clearly biased (and in opposite directions) when the molecular weight is set to a heptamer or pentamer.DOI: http://dx.doi.org/10.7554/eLife.24487.006
+**Figure 1—figure supplement 1.:** Equilibrium sedimentation of Vps4101-437-Hcp1. Absorbance is shown as a function of distance from the axis of rotation for three loading concentrations (open circles, 10 µM; open squares, 5 µM; open diamonds, 2.5 µM Vps4 subunits). The data were fit to a single species model where the molecular weight was allowed to float or held constant as indicated (black line), and residuals for each concentration are shown below. The molecular weight was fit to 329,402 Da in good agreement with the expected molecular weight for a hexamer of 334,223 Da. When the molecular weight was held constant, the data agree well with a hexamer model, whereas the residuals are clearly biased (and in opposite directions) when the molecular weight is set to a heptamer or pentamer.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-v2.jpg)
 
-**Figure 2.:** 101-437:Vta1VSL:ESCRT-IIIpeptide:ADP·BeFx.(A) Structure of the complex. The Vps4 and Vta1 constructs used for cryo-EM structure determination are shown in color on the left, with excluded segments colored white. MIT, large AAA ATPase (L), small AAA ATPase (S) and β domains of Vps4 are labeled, as are the t-MIT and VSL domains of the Vta1 dimer. L151, a residue critical for hexamerization, is shown in gray spheres. (B) 4.3 Å map with the Vps4 model. (C) Side view of Vps4 hexamer, oriented with the subunit A-D helix axis vertical (black line). (D) Same as panel D but with subunits E and F removed. The inset shows the position of pore loops 1 (L1, residues 203–210, cyan) and pore loops 2 (L2, 240–248, dark blue) relative to the ESCRT-III peptide (dark green).DOI: http://dx.doi.org/10.7554/eLife.24487.007
+**Figure 2.:** (A) Structure of the complex. The Vps4 and Vta1 constructs used for cryo-EM structure determination are shown in color on the left, with excluded segments colored white. MIT, large AAA ATPase (L), small AAA ATPase (S) and β domains of Vps4 are labeled, as are the t-MIT and VSL domains of the Vta1 dimer. L151, a residue critical for hexamerization, is shown in gray spheres. (B) 4.3 Å map with the Vps4 model. (C) Side view of Vps4 hexamer, oriented with the subunit A-D helix axis vertical (black line). (D) Same as panel D but with subunits E and F removed. The inset shows the position of pore loops 1 (L1, residues 203–210, cyan) and pore loops 2 (L2, 240–248, dark blue) relative to the ESCRT-III peptide (dark green).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Representative cryo-EM image of Vps4101-437-Hcp1 particles. (B) Representative 2D class averages of Vps4101-437-Hcp1 particles. Red asterisks indicate classes with disordered Vps4 in which only the Hcp1 template is apparent. (C) ‘Gold standard’ FSC curves generated by RELION before (blue) and after (orange) Hcp1 signal subtraction. The FSC curve of the refined model (comprising the large and small AAA ATPase domains of subunits A-E and substrate peptide) against the final Hcp1-subtracted Vps4 map is shown in purple. (D) Cross-validation of the refined model. The refined model (comprising large and small AAA ATPase domains of subunits A-E and the substrate peptide) was randomly displaced by applying 0.5 Å shifts to all atoms and refined against one of the half maps generated by RELION. FSC curves are shown between the re-refined model against the half map used for re-refinement (FSCwork, black) and between the re-refined model and the other half map (FSCtest, red). The agreement between the two FSC curves is an indicator that the model has not been overfit. (E) Local resolution estimates determined by ResMap. (F) The composite model indicating the refined portions of Vps4 (colored ribbons) and other regions limited to rigid body fitting (Vps4 β domains, subunit F, and Vta1VSL, gray ribbons). Same orientation as panel (E). Note that Vta1 densities are weak prior to 3D classification (see Figure 2—figure supplement 6).DOI: http://dx.doi.org/10.7554/eLife.24487.008
+**Figure 2—figure supplement 1.:** (A) Representative cryo-EM image of Vps4101-437-Hcp1 particles. (B) Representative 2D class averages of Vps4101-437-Hcp1 particles. Red asterisks indicate classes with disordered Vps4 in which only the Hcp1 template is apparent. (C) ‘Gold standard’ FSC curves generated by RELION before (blue) and after (orange) Hcp1 signal subtraction. The FSC curve of the refined model (comprising the large and small AAA ATPase domains of subunits A-E and substrate peptide) against the final Hcp1-subtracted Vps4 map is shown in purple. (D) Cross-validation of the refined model. The refined model (comprising large and small AAA ATPase domains of subunits A-E and the substrate peptide) was randomly displaced by applying 0.5 Å shifts to all atoms and refined against one of the half maps generated by RELION. FSC curves are shown between the re-refined model against the half map used for re-refinement (FSCwork, black) and between the re-refined model and the other half map (FSCtest, red). The agreement between the two FSC curves is an indicator that the model has not been overfit. (E) Local resolution estimates determined by ResMap. (F) The composite model indicating the refined portions of Vps4 (colored ribbons) and other regions limited to rigid body fitting (Vps4 β domains, subunit F, and Vta1VSL, gray ribbons). Same orientation as panel (E). Note that Vta1 densities are weak prior to 3D classification (see Figure 2—figure supplement 6).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Flow chart depicting classification and refinement of Vps4 particles. An initial model was generated from a gallery of non-CTF corrected 2D class averages, which was then used as a starting point for 3D classification. Particles from two classes showed ordered Vps4 features, which were then used to compute a 6.7 Å resolution consensus structure. Hcp1 densities were subtracted from raw images, followed by an additional round of RELION 3D classification and auto-refinement, which produced the final 4.3 Å resolution reconstruction.DOI: http://dx.doi.org/10.7554/eLife.24487.009
+**Figure 2—figure supplement 2.:** Flow chart depicting classification and refinement of Vps4 particles. An initial model was generated from a gallery of non-CTF corrected 2D class averages, which was then used as a starting point for 3D classification. Particles from two classes showed ordered Vps4 features, which were then used to compute a 6.7 Å resolution consensus structure. Hcp1 densities were subtracted from raw images, followed by an additional round of RELION 3D classification and auto-refinement, which produced the final 4.3 Å resolution reconstruction.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** (A) Angular distribution plot based on RELION assignments and visualized in UCSF Chimera. (B) Comparison between reference-free 2D class averages and re-projections of the 3D reconstructions of the Vps4101-437-Hcp1 particle and Hcp1-subtracted Vps4 particle.DOI: http://dx.doi.org/10.7554/eLife.24487.010
+**Figure 2—figure supplement 3.:** (A) Angular distribution plot based on RELION assignments and visualized in UCSF Chimera. (B) Comparison between reference-free 2D class averages and re-projections of the 3D reconstructions of the Vps4101-437-Hcp1 particle and Hcp1-subtracted Vps4 particle.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** (A) Reference-free 2D class averages of non-crosslinked Vps4101-437-Hcp1 particles. Note that the Vps4 features are weaker and smeared out (yellow arrows) relative to the Hcp1 template and relative to the crosslinked sample (Figure 2—figure supplement 1). (B) 3D reconstruction of non-crosslinked Vps4101-437-Hcp1 particles reveals the Vps4 hexamer only at very low thresholds. (C) Comparison between non-crosslinked (cyan) versus crosslinked particles (yellow) reveal consistent features.DOI: http://dx.doi.org/10.7554/eLife.24487.011
+**Figure 2—figure supplement 4.:** (A) Reference-free 2D class averages of non-crosslinked Vps4101-437-Hcp1 particles. Note that the Vps4 features are weaker and smeared out (yellow arrows) relative to the Hcp1 template and relative to the crosslinked sample (Figure 2—figure supplement 1). (B) 3D reconstruction of non-crosslinked Vps4101-437-Hcp1 particles reveals the Vps4 hexamer only at very low thresholds. (C) Comparison between non-crosslinked (cyan) versus crosslinked particles (yellow) reveal consistent features.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp5-v2.jpg)
 
-**Figure 2—figure supplement 5.:** (A) Central β-sheet of subunit B with density. (B) Helices of subunit B. (C) Nucleotide density with ADP·BeFx and magnesium ion bound to subunit B.DOI: http://dx.doi.org/10.7554/eLife.24487.012
+**Figure 2—figure supplement 5.:** (A) Central β-sheet of subunit B with density. (B) Helices of subunit B. (C) Nucleotide density with ADP·BeFx and magnesium ion bound to subunit B.
 
 ![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp6-v2.jpg)
 
-**Figure 2—figure supplement 6.:** (A) Vta1VSL densities are visible at low threshold levels in an overall Hcp1-subtracted map. This observation prompted us to perform focused 3D classification with a mask over the expected Vta1 binding site. (B) Flow chart depicting 3D classification of the consensus structure with a focused mask (yellow) at the interface of subunits A and B. Classification revealed one distinct class with robust Vta1 features and the particles were isolated and subjected to an additional round of RELION auto-refinement (light red). The same strategy was employed for each interface. (C) ‘Gold standard’ FSC plots of each of the six Vta1VSL datasets derived from focused 3D classification.DOI: http://dx.doi.org/10.7554/eLife.24487.013
+**Figure 2—figure supplement 6.:** (A) Vta1VSL densities are visible at low threshold levels in an overall Hcp1-subtracted map. This observation prompted us to perform focused 3D classification with a mask over the expected Vta1 binding site. (B) Flow chart depicting 3D classification of the consensus structure with a focused mask (yellow) at the interface of subunits A and B. Classification revealed one distinct class with robust Vta1 features and the particles were isolated and subjected to an additional round of RELION auto-refinement (light red). The same strategy was employed for each interface. (C) ‘Gold standard’ FSC plots of each of the six Vta1VSL datasets derived from focused 3D classification.
 
 ![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp7-v2.jpg)
 
-**Figure 2—figure supplement 7.:** (A) Subunit F is poorly resolved but visible at low threshold levels in an overall Hcp1-subtracted map. This prompted us to perform focused 3D classification with a mask over subunit F. (B) Flow chart depicting 3D classification of the consensus structure with a focused mask (yellow) over subunit F. Classification revealed three distinct classes that could accommodate a rigid-body fit of the Vps4 crystal structure. See Figure 2—figure supplement 6 and Methods for details. (C) ‘Gold standard’ FSC plots of the three subunit F datasets derived from focused 3D classification. (D) Cut-away view depicting the local resolution of the F1 map determined by ResMap. Note that despite the overall ~7 Å resolution of the map, subunit F itself is less well resolved. (E) Fitting of Vps4 coordinates into the F1 structure confirms that our map resolves individual helices for Vps4 subunits A-E (arrows), despite the lower resolution density for subunit F (blue).DOI: http://dx.doi.org/10.7554/eLife.24487.014
+**Figure 2—figure supplement 7.:** (A) Subunit F is poorly resolved but visible at low threshold levels in an overall Hcp1-subtracted map. This prompted us to perform focused 3D classification with a mask over subunit F. (B) Flow chart depicting 3D classification of the consensus structure with a focused mask (yellow) over subunit F. Classification revealed three distinct classes that could accommodate a rigid-body fit of the Vps4 crystal structure. See Figure 2—figure supplement 6 and Methods for details. (C) ‘Gold standard’ FSC plots of the three subunit F datasets derived from focused 3D classification. (D) Cut-away view depicting the local resolution of the F1 map determined by ResMap. Note that despite the overall ~7 Å resolution of the map, subunit F itself is less well resolved. (E) Fitting of Vps4 coordinates into the F1 structure confirms that our map resolves individual helices for Vps4 subunits A-E (arrows), despite the lower resolution density for subunit F (blue).
 
 ![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig2-figsupp8-v2.jpg)
 
-**Figure 2—figure supplement 8.:** Rigid-body fitting of Vps4 subunit F (colored ribbon) into three different density maps from focused 3D classification. The three models are related by pivoting of up to 16° about a point near the contact with Vta1VSL, close to the small AAA ATPase and β domains.DOI: http://dx.doi.org/10.7554/eLife.24487.015
+**Figure 2—figure supplement 8.:** Rigid-body fitting of Vps4 subunit F (colored ribbon) into three different density maps from focused 3D classification. The three models are related by pivoting of up to 16° about a point near the contact with Vta1VSL, close to the small AAA ATPase and β domains.
 
 Vps4 is monomeric or dimeric in the cytosol, and assembles to form an active hexamer upon concentration at the membrane/ESCRT-III surface (Monroe et al., 2014). The central pore of this hexamer is thought to be lined by pore loop 1 and pore loop 2 (residues 203–210 and 240–248, respectively), which are highly conserved in AAA ATPases that act on protein substrates and play a critical role in substrate translocation (Gonciarz et al., 2008; Han et al., 2015; Kieffer et al., 2008; Monroe and Hill, 2016; Scott et al., 2005a). Importantly, nucleotide-induced asymmetry is required for binding of a peptide from an ESCRT-III subunit to the central pore of the Vps4 hexamer, and the 1:1 stoichiometry of this interaction (1 peptide to 1 hexamer) further confirms the asymmetric nature of the functional Vps4 complex (Han et al., 2015). Although considerable effort has been devoted to visualizing this active state, several structures of Vps4 assembled in various configurations (Caillat et al., 2015; Hartmann et al., 2008; Landsberg et al., 2009; Yu et al., 2008) have not provided a mechanistic model because they were determined for an inactive mutant, in the apo state, or in the presence of an inappropriate nucleotide.
 
@@ -74,81 +74,200 @@ Guided by the insights that Vps4 is active as a hexamer (Monroe et al., 2014) th
 
 ## Results and discussion
 
-## Formation of a stable Vps4 hexamer complex
+### Formation of a stable Vps4 hexamer complex
 
 The yeast Vps4 construct used in these studies (residues 101–437) spans the AAA ATPase cassette. The active hexameric assembly was stabilized by expressing Vps4101-437 with a C-terminal 18-residue linker followed by the hexameric Pseudomonas aeruginosa Hcp1 protein (Mougous et al., 2006). The active Vps4 conformation in the Hcp1 fusion protein was further stabilized by binding with ADP·BeFx, an ESCRT-III peptide, and the Vta1VSL domain. Importantly, this fusion protein binds an ESCRT-III substrate peptide with the same affinity as the Vps4 AAA ATPase cassette alone (Figure 1AB). The 8-residue ESCRT-III peptide used in these studies was derived from the ESCRT-III subunit Vps2 (residues 165–172), and binds Vps4 with essentially the same ~200 nM KD as the 20-residue parent peptide that we characterized in an earlier study (Han et al., 2015). As further controls, the fusion protein was found to elute from a size exclusion column as a single, symmetric peak (Figure 1C), to form a stable hexamer as shown by equilibrium sedimentation (Figure 1—figure supplement 1), and to be a highly active ATPase (Figure 1D). As shown below, other factors that indicate that Vps4 is not distorted by the Hcp1 fusion include the observation that Hcp1 has not imposed its 6-fold symmetry on the asymmetric Vps4 structure, the lack of contacts between Vps4 and Hcp1 in the overall consensus structure, and the short distance between Vps4 C-termini and Hcp1 N-termini (21–31 Å) compared to the 60 Å that could be accommodated by the fully extended 18-residue linker sequence.
 
-## Structure determination
+### Structure determination
 
-The Vps4 complex structure was determined by cryo-EM at 4.3 Å overall resolution to reveal a highly asymmetric hexameric ring of Vps4 subunits that bind the ESCRT-III peptide in the central pore and six Vta1VSL dimers around the periphery (Figure 2, Table 1, Figure 2—figure supplements 1–6). The local resolution varies from 4.0 to 5.0 Å over much of the AAA ATPase cassettes of Vps4 subunits A-E, and to 7 Å or lower resolution at the β domains (Figure 2—figure supplement 1), Vta1VSL domains (Figure 2—figure supplement 6), and subunit F, which is distributed over at least three similar but distinct positions (Figure 2—figure supplements 7–8). The six Vps4 subunits adopt closely similar conformations but differ in the way that they contact each other. Although the limited resolution precludes detailed fitting of ADP·BeFx, the structure implies that the distinct Vps4 interfaces are coupled to binding of ATP, hydrolysis to ADP·Pi, and nucleotide exchange. Importantly, the ATP and ADP·Pi states can both be mimicked by ADP·BeFx. We propose that the distinct nucleotide states progress sequentially around the hexameric ring (clockwise in Figure 2A), and that their step-wise conversion drives translocation of the ESCRT-III peptide, as discussed below.10.7554/eLife.24487.016Table 1.Reconstruction, refinement, and model statistics of Vps4.DOI: http://dx.doi.org/10.7554/eLife.24487.016Vps4101-437-Hcp1, whole particleHcp1-subtracted Vps4ReconstructionParticle images58,15539,417Resolution (unmasked, Å)6.75.7Resolution (masked, Å)5.24.3Map sharpening B-factor (Å2)-−208EM Databank Accession NumberEMD-8551EMD-8550Refinement and validation of Vps4 subunits A-EResolution used for refinement (Å)-4.3Number of atoms-10604R.M.S deviationBond length (Å)-0.01Bond angles (°)-0.92RamachandranFavored (%)-91.13Allowed (%)-8.87Outlier (%)-0.00Molprobity score / percentile (%)-1.94/100thClashscore / percentile (%)-7.75/97thPDB-5UIE
+The Vps4 complex structure was determined by cryo-EM at 4.3 Å overall resolution to reveal a highly asymmetric hexameric ring of Vps4 subunits that bind the ESCRT-III peptide in the central pore and six Vta1VSL dimers around the periphery (Figure 2, Table 1, Figure 2—figure supplements 1–6). The local resolution varies from 4.0 to 5.0 Å over much of the AAA ATPase cassettes of Vps4 subunits A-E, and to 7 Å or lower resolution at the β domains (Figure 2—figure supplement 1), Vta1VSL domains (Figure 2—figure supplement 6), and subunit F, which is distributed over at least three similar but distinct positions (Figure 2—figure supplements 7–8). The six Vps4 subunits adopt closely similar conformations but differ in the way that they contact each other. Although the limited resolution precludes detailed fitting of ADP·BeFx, the structure implies that the distinct Vps4 interfaces are coupled to binding of ATP, hydrolysis to ADP·Pi, and nucleotide exchange. Importantly, the ATP and ADP·Pi states can both be mimicked by ADP·BeFx. We propose that the distinct nucleotide states progress sequentially around the hexameric ring (clockwise in Figure 2A), and that their step-wise conversion drives translocation of the ESCRT-III peptide, as discussed below.
 
-## Overall structure
+**Table 1.**
+ Reconstruction, refinement, and model statistics of Vps4.
 
-Vps4 subunits A-D form a right-handed helix that is created by the three very similar interfaces formed by the A-B, B-C, and C-D subunit pairs (
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Vps4101-437-Hcp1, whole particle</th>
+      <th>Hcp1-subtracted Vps4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reconstruction</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Particle images</td>
+      <td>58,155</td>
+      <td>39,417</td>
+    </tr>
+    <tr>
+      <td>Resolution (unmasked, Å)</td>
+      <td>6.7</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked, Å)</td>
+      <td>5.2</td>
+      <td>4.3</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>-</td>
+      <td>−208</td>
+    </tr>
+    <tr>
+      <td>EM Databank Accession Number</td>
+      <td>EMD-8551</td>
+      <td>EMD-8550</td>
+    </tr>
+    <tr>
+      <td>Refinement and validation of Vps4 subunits A-E</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Resolution used for refinement (Å)</td>
+      <td>-</td>
+      <td>4.3</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td>-</td>
+      <td>10604</td>
+    </tr>
+    <tr>
+      <td>R.M.S deviation</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>-</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>-</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Ramachandran</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>-</td>
+      <td>91.13</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>-</td>
+      <td>8.87</td>
+    </tr>
+    <tr>
+      <td>Outlier (%)</td>
+      <td>-</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Molprobity score / percentile (%)</td>
+      <td>-</td>
+      <td>1.94/100th</td>
+    </tr>
+    <tr>
+      <td>Clashscore / percentile (%)</td>
+      <td>-</td>
+      <td>7.75/97th</td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>-</td>
+      <td>5UIE</td>
+    </tr>
+  </tbody>
+</table>
+
+### Overall structure
+
+Vps4 subunits A-D form a right-handed helix that is created by the three very similar interfaces formed by the A-B, B-C, and C-D subunit pairs (Figure 2). These interfaces each bury ~2000 Å2 of surface area and appear fashioned to coordinate ATP (Wendler et al., 2012), with R288 and R289 from the neighboring Vps4 subunit positioned to coordinate the ATP phosphates (Figure 3). The D-E interface (~1700 Å2) is similar to the A-B, B-C, and C-D interfaces at the central pore region of the hexamer but deviates at the nucleotide-binding site, where the large AAA ATPase domain of subunit E is rotated by ~15° so that R288 and R289 are displaced by ~2 Å and are no longer able to coordinate see the nucleotide phosphates. We have modeled the nucleotide at this site as ADP, but are open to the possibilities that it may represent either ADP or ADP·Pi. The displacement of subunit E increases toward the hexamer periphery, and is further exaggerated by an ~10° increase in the hinge angle between the large and small AAA ATPase domains that allows the small AAA ATPase domain of subunit E to maintain contact with subunit F. In contrast, the E-F and F-A interfaces, which bury only 500 and 900 Å2, respectively, maintain contacts primarily near the hexamer periphery and appear open to allow nucleotide exchange.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig3-v2.jpg)
 
-**Figure 3.:** Vps4 subunit pairs superimposed on the large AAA ATPase domain of the first subunit, as indicated. A-B, B-C and C-D interfaces are equivalent. The nucleotide-binding site is slightly expanded at the D-E interface due to a 15° relative rotation of subunit E. The E-F and F-A sites are open for nucleotide exchange. Inset (black rectangle), Close-up on the nucleotide binding site showing the nucleotide and coordinating P-loop for the first subunit, with the R288/R289-containing helix of the second subunits in color. These arginine finger Cα atoms shift by 2 Å at the D-E interface relative to the A-B, B-C, and C-D subunits. The E-F and F-A interfaces are shifted by 8 Å and 16 Å, respectively.DOI: http://dx.doi.org/10.7554/eLife.24487.017
+**Figure 3.:** Vps4 subunit pairs superimposed on the large AAA ATPase domain of the first subunit, as indicated. A-B, B-C and C-D interfaces are equivalent. The nucleotide-binding site is slightly expanded at the D-E interface due to a 15° relative rotation of subunit E. The E-F and F-A sites are open for nucleotide exchange. Inset (black rectangle), Close-up on the nucleotide binding site showing the nucleotide and coordinating P-loop for the first subunit, with the R288/R289-containing helix of the second subunits in color. These arginine finger Cα atoms shift by 2 Å at the D-E interface relative to the A-B, B-C, and C-D subunits. The E-F and F-A interfaces are shifted by 8 Å and 16 Å, respectively.
 
-## Vta1 dimers bind two adjacent Vps4 subunits
+### Vta1 dimers bind two adjacent Vps4 subunits
 
-The Vta1
+The Vta1VSL dimers, which are pairs of helical hairpins that form a 4-helix bundle, stabilize the ring by forming struts between adjacent Vps4 subunits (Figure 4A). Their density is clearly visible only after focused 3D classification (Figure 2—figure supplement 6), which reveals distinct density for all four helices of the Vta1VSL dimers adjacent to the β domains of Vps4 subunits A and B, while density for individual helices is less clearly defined but still apparent for Vta1VSL at subunits C and F (Figure 4—figure supplement 1). Subunits D and E do not show distinct VSL helices, but do show some overall density for the VSL bundle. This variation in the quality of Vta1VSL densities among the six interfaces likely reflects differences in occupancy and binding modes at each site, as discussed below.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig4-v2.jpg)
 
-**Figure 4.:** VSL contacts with Vps4.(A) Density for the most clearly defined Vta1VSL (bound to the Vps4 subunit A β domain). The Vta1VSL subunits are colored tan and teal. (B) Vta1VSL interaction with the first Vps4 subunit. This interface is modeled identically to a crystal structure of Vta1VSL in complex with a truncated Vps4 construct (Yang and Hurley, 2010). Additional N-terminal residues in the longer Vta1 construct used in this study are shown in white and their interaction with the small AAA ATPase domain of Vps4 is indicated with an asterisk. (C) Vta1VSL interaction with the second Vps4 subunit. Y303’ and Y310’ are labeled. (D) Overlap of subunit pairs on the small AAA ATPase domain of the first Vps4 (residues 301–349 and 403–411). Consequent RMSD values are shown for residues 300–311 and 320–331 of the second Vps4 subunit at the second Vta1 interface (asterisk).DOI: http://dx.doi.org/10.7554/eLife.24487.018
+**Figure 4.:** (A) Density for the most clearly defined Vta1VSL (bound to the Vps4 subunit A β domain). The Vta1VSL subunits are colored tan and teal. (B) Vta1VSL interaction with the first Vps4 subunit. This interface is modeled identically to a crystal structure of Vta1VSL in complex with a truncated Vps4 construct (Yang and Hurley, 2010). Additional N-terminal residues in the longer Vta1 construct used in this study are shown in white and their interaction with the small AAA ATPase domain of Vps4 is indicated with an asterisk. (C) Vta1VSL interaction with the second Vps4 subunit. Y303’ and Y310’ are labeled. (D) Overlap of subunit pairs on the small AAA ATPase domain of the first Vps4 (residues 301–349 and 403–411). Consequent RMSD values are shown for residues 300–311 and 320–331 of the second Vps4 subunit at the second Vta1 interface (asterisk).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** VSL complexes into each density map.(A) The A-B, B-C, C-D, and F-A Vta1VSL dimers show density for distinct helices. Density for D-E and E-F Vta1VSL dimers is poor and only S and β domain coordinates were used for rigid body fitting at these two interfaces. (B) Side view of the fitting at the A-B interface as in panel (A) showing distinct density for each of the four Vta1VSL helices. (C) Low threshold view of the A-B map reveals extensions of the Vta1VSL density that can accommodate the additional N-terminal residues included in our Vta1 construct (black ribbon).DOI: http://dx.doi.org/10.7554/eLife.24487.019
+**Figure 4—figure supplement 1.:** (A) The A-B, B-C, C-D, and F-A Vta1VSL dimers show density for distinct helices. Density for D-E and E-F Vta1VSL dimers is poor and only S and β domain coordinates were used for rigid body fitting at these two interfaces. (B) Side view of the fitting at the A-B interface as in panel (A) showing distinct density for each of the four Vta1VSL helices. (C) Low threshold view of the A-B map reveals extensions of the Vta1VSL density that can accommodate the additional N-terminal residues included in our Vta1 construct (black ribbon).
 
 In all cases, the Vta1VSL dimer contacts the β domain of one Vps4 subunit in an interface that we have modeled according to a previously reported crystal structure (Yang and Hurley, 2010) in which Y303 and Y310 of the first Vta1 subunit contact two loops of the β domain (residues 356–359 and 375–385) (Figure 4B). Compared to the earlier crystal structure, the Vta1VSL construct in our structure is extended by 10 residues at the N-terminus, including residues of the ‘Vps4 stimulatory element’ (Norgan et al., 2013). Some density for these residues is visible for the second subunit of the best-defined Vta1VSL dimers, where they make a small 70 Å2 contact with α7 and α9 in the small AAA ATPase domain of the same Vps4 subunit, as suggested previously (Davies et al., 2014) (Figure 4B, Figure 4—figure supplement 1C). Consistent with their more clearly defined density, the Vta1VSL dimers bound to the β domains of subunits A, B, C, and F also contact the small AAA ATPase domain of the following Vps4 subunit (Figure 4C), with Y310’ and surrounding residues at the hairpin end of the second Vta1 subunit contacting α6 and α7 (residues 300–330) of the small AAA ATPase domain of the second Vps4. This novel interaction shows an unusual use of the two-fold symmetry-related VSL dimer residues, Y310 and Y310’, to contact different surfaces on neighboring Vps4 subunits, which is consistent with our biochemical finding that Vta1 stabilizes formation of the hexamer (Monroe et al., 2014; Scott et al., 2005a) rather than higher-order assemblies (Xiao et al., 2008; Yang and Hurley, 2010).
 
 Vta1VSL dimers can bind in the same manner to the Vps4 subunit pairs F-A, A-B, B-C, C-D, but interactions at the D-E and E-F subunit pairs appear to be suboptimal. Superposition performed on the helices of the small AAA ATPase domains of the first Vps4 in the subunit pairs (Figure 4D), which are relatively well defined, shows that Vta1 can make superimposable interactions with both the β domain of the first Vps4 subunit and with the small AAA ATPase domain of the second Vps4 subunit for the A-B, B-C, and C-D subunit pairs, and that F-A is quite similar. In contrast, the D-E and E-F interfaces are incompatible with Vta1 forming the same contacts between neighboring Vps4 subunits as seen at the A-B, B-C, C-D, and F-A interfaces (Figure 4D). Instead, our preferred interpretation of the density is that Vta1VSL at the D-E and E-F interfaces remains bound to the β domain of the first Vps4 subunit but cannot form optimal contacts with its adjacent subunit.
 
-To test the importance of the interface seen between Vta1 and the small AAA ATPase domain of the second subunit, we quantified binding of Vta1
+To test the importance of the interface seen between Vta1 and the small AAA ATPase domain of the second subunit, we quantified binding of Vta1VSL to the Vps4101-437-Hcp1 hexamer and to the Vps4101-437 L151D mutant, which is predominantly monomeric in the absence of Vta1VSL (Gonciarz et al., 2008). The Vps4101-437-Hcp1 hexamer showed an ~30 fold tighter apparent KD than Vps4101-437 L151D (Figure 5), which supports our observation that Vta1VSL binds to two neighboring Vps4 subunits in the hexamer and is consistent with a role for Vta1 in stabilizing assembly of the active Vta1 hexamer (Azmi et al., 2006; Scott et al., 2005a). Residues K321, E322 and R325 of the small AAA ATPase domain of the second Vps4 subunit are located in the vicinity of residue Y310’ of the VSL domain (Figure 5A). Consistent with their proximity to a region of the Vta1 surface that has negative electrostatic potential, mutating the lysine and arginine residues to alanine and aspartate, respectively, decreases binding to the Vps4 hexamer, whereas mutation of the glutamate to alanine increases binding affinity (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig5-v2.jpg)
 
-**Figure 5.:** (A) K321, E322 and R325 of the Vps4 small AAA ATPase domain (orange, labels in italic font) contact Y310’ of Vta1VSL (surface representation colored by electrostatic potential, kT/e) in the interaction shown in Figure 4C. (B) Binding of fluorescently labeled Vta1VSL to the Vps4101-437-Hcp1 hexamer (pink circles) is ~24x tighter than binding to a monomeric Vps4 construct, Vps4101-437 L151D (gold diamonds). Consistent with the Vta1 surface electrostatic potential, point mutations K321A and R325D weaken Vta1VSL binding 2-fold and 3-fold, respectively, while E322A strengthens binding 2-fold. Means and standard deviations are from at least three biological replicates.DOI: http://dx.doi.org/10.7554/eLife.24487.02010.7554/eLife.24487.021Figure 5—source data 1.VSL to Vps4, related to Figure 5B.DOI: http://dx.doi.org/10.7554/eLife.24487.021
+**Figure 5.:** (A) K321, E322 and R325 of the Vps4 small AAA ATPase domain (orange, labels in italic font) contact Y310’ of Vta1VSL (surface representation colored by electrostatic potential, kT/e) in the interaction shown in Figure 4C. (B) Binding of fluorescently labeled Vta1VSL to the Vps4101-437-Hcp1 hexamer (pink circles) is ~24x tighter than binding to a monomeric Vps4 construct, Vps4101-437 L151D (gold diamonds). Consistent with the Vta1 surface electrostatic potential, point mutations K321A and R325D weaken Vta1VSL binding 2-fold and 3-fold, respectively, while E322A strengthens binding 2-fold. Means and standard deviations are from at least three biological replicates.
 
-## ESCRT-III substrate peptide binds close to the helix axis of the central pore
+### ESCRT-III substrate peptide binds close to the helix axis of the central pore
 
-Density accommodates the 8-residue ESCRT-III peptide in an extended conformation. This density extends weakly at both ends and is not sufficiently clear to reliably build a model with side chains, consistent with the possibility that binding may occur in several overlapping positions (
+Density accommodates the 8-residue ESCRT-III peptide in an extended conformation. This density extends weakly at both ends and is not sufficiently clear to reliably build a model with side chains, consistent with the possibility that binding may occur in several overlapping positions (Figure 6). The primary contacts are with pore loop 1 (residues 203–209) of the A, B, C, and D Vps4 subunits, whose closest Cα atoms are ~7.5 Å from the helix axis that is defined by these loops. There is also a contact with pore loop 1 of subunit E, although the loop density in that subunit is relatively weak. The peptide lies approximately along the helix axis, with Cα atoms modeled 1.0–2.7 Å (average 1.6 Å) from the axis, which is consistent with the model that substrates are translocated along or close to the helix axis, with some variation allowed to accommodate distinct amino acid sequences. The helical symmetry of pore loop 1 of Vps4 A-D is approximately continued by subunit E and has successive loops separated by a translation of 6.3 Å along the helix axis and a rotation of 60° (Figure 7A). This matches the translation and rotation seen every two residues along a canonical β-strand, such that successive dipeptides of a β-strand that lies approximately along the helical axis could make equivalent interactions with pore loop 1 residues of successive Vps4 subunits. Hence, these four loops present a curved peptide-binding surface that extends into the hexamer pore. Pore loop 1 of subunit F is displaced ~14 Å from the helix axis and is therefore completely disengaged from the substrate (Figure 7A). Although we do not observe a contact between the peptide density and residues of Vps4 pore loop 2 (residues 241–251) and the density of pore loop 2 is generally quite poor, we note that these loops of the Vps4 A-D subunits are arrayed contiguously with the pore loop 1 residues through the hexamer pore and follow the same helical symmetry, which is consistent with the possibility that they continue the substrate binding surface used by Vps4 to translocate ESCRT-III subunits.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig6-v2.jpg)
 
-**Figure 6.:** Stereo view of the peptide and pore loop 1 (residues 203–210) of subunits A-D with density.DOI: http://dx.doi.org/10.7554/eLife.24487.022
+**Figure 6.:** Stereo view of the peptide and pore loop 1 (residues 203–210) of subunits A-D with density.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig7-v2.jpg)
 
-**Figure 7.:** (A) The pore loop 1 residues of subunits A-D form a helix (axis, black line) that matches the symmetry of a canonical twisted β-strand, which rotates 60° and translates 6.3 Å every two residues. In white are the positions that subunits E and F would adopt if they continued this helix. The three positions seen for subunit F (Figure 2—figure supplements 7–8) appear to be snapshots along the return path from the end of the helix at subunit E to the start of the helix at subunit A. (B) Steps along the translocation cycle inferred from the cryo-EM structure. The peptide shown is modeled as a β-strand along the helix axis of subunits A-D. Vps4 maintains a constant interaction with the peptide through steps 1 to 4 before dissociating at step 5 and rebinding 12 residues further up the peptide at step 7, which is equivalent to step 1. Nucleotides suggested by density and coordination geometry are labeled. Pore loop 1 contacts with the substrate peptide in steps 1–4 are indicated with an asterisk. The two subunits closest to the view direction are included with 50% transparency. The two horizontal lines are separated by 37.8 Å (12 residues) and indicate points of substrate contact with pore loop 1 of the highlighted subunit.DOI: http://dx.doi.org/10.7554/eLife.24487.023
+**Figure 7.:** (A) The pore loop 1 residues of subunits A-D form a helix (axis, black line) that matches the symmetry of a canonical twisted β-strand, which rotates 60° and translates 6.3 Å every two residues. In white are the positions that subunits E and F would adopt if they continued this helix. The three positions seen for subunit F (Figure 2—figure supplements 7–8) appear to be snapshots along the return path from the end of the helix at subunit E to the start of the helix at subunit A. (B) Steps along the translocation cycle inferred from the cryo-EM structure. The peptide shown is modeled as a β-strand along the helix axis of subunits A-D. Vps4 maintains a constant interaction with the peptide through steps 1 to 4 before dissociating at step 5 and rebinding 12 residues further up the peptide at step 7, which is equivalent to step 1. Nucleotides suggested by density and coordination geometry are labeled. Pore loop 1 contacts with the substrate peptide in steps 1–4 are indicated with an asterisk. The two subunits closest to the view direction are included with 50% transparency. The two horizontal lines are separated by 37.8 Å (12 residues) and indicate points of substrate contact with pore loop 1 of the highlighted subunit.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** (A) Superposition of secondary structure elements reveals a similar overall structure between Vps4 and the ATPase subunits of the 26S proteasome (PDB 5GJQ, gray). (B) Top view and side view of the Vps4 pore loop 1 of Vps4 subunits (rainbow) and the proteasome (gray) shows close similarity about the helix axis (black).DOI: http://dx.doi.org/10.7554/eLife.24487.024
+**Figure 7—figure supplement 1.:** (A) Superposition of secondary structure elements reveals a similar overall structure between Vps4 and the ATPase subunits of the 26S proteasome (PDB 5GJQ, gray). (B) Top view and side view of the Vps4 pore loop 1 of Vps4 subunits (rainbow) and the proteasome (gray) shows close similarity about the helix axis (black).
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig7-figsupp2-v2.jpg)
 
-**Figure 7—figure supplement 2.:** (A) Superposition of secondary structure elements reveals a similar overall structure between Vps4 and the D1 ring of NSF (PDB 3J94, residues 215–489, gray). (B) Top view and side view of the Vps4 (rainbow) and NSF D1 (gray) subunit pore loop one elements shows close similarity about the helix axis (black).DOI: http://dx.doi.org/10.7554/eLife.24487.025
+**Figure 7—figure supplement 2.:** (A) Superposition of secondary structure elements reveals a similar overall structure between Vps4 and the D1 ring of NSF (PDB 3J94, residues 215–489, gray). (B) Top view and side view of the Vps4 (rainbow) and NSF D1 (gray) subunit pore loop one elements shows close similarity about the helix axis (black).
 
-## Helix propagation mechanism of substrate translocation
+### Helix propagation mechanism of substrate translocation
 
-We propose that Vps4 translocates its ESCRT-III substrates through the hexamer pore by a helix propagation mechanism in which binding of ATP and Vta1 promotes growth at the A-end of the Vps4 helix while ATP hydrolysis and release promotes dissociation at the D/E-end of the helix (
+We propose that Vps4 translocates its ESCRT-III substrates through the hexamer pore by a helix propagation mechanism in which binding of ATP and Vta1 promotes growth at the A-end of the Vps4 helix while ATP hydrolysis and release promotes dissociation at the D/E-end of the helix (Figure 7B, Figure 8, Videos 1 and 2). In repeated cycles, the propagating 4-subunit Vps4 helix will ‘walk’ along the substrate while binding it in an extended β-strand conformation and conveying it through the hexamer pore. Some variation in strand conformation may be tolerated but the overall effect is expected to be unfolding of ESCRT-III structure as the Vps4 helix advances. The structure indicates that Vta1 will promote this process by binding adjacent Vps4 subunits in the helical conformation. Moreover, as seen in the structure, Vta1VSL forms the same helix-promoting interaction between subunits F and A, as if pulling subunit F into an ATP-binding position at the leading end of the helix. At the other end of the helix, ATP hydrolysis correlates with expansion of the D-E nucleotide site to trigger disassembly of the helix, disengagement from the substrate by subunit F, opening of the interface to allow nucleotide exchange, and subsequent rebinding at the leading end of the propagating helix. An attractive feature of this model is that the symmetry match between a β-strand ESCRT-III substrate and the pore loop 1 residues of the Vps4 helix means that each of the Vps4 subunits can make identical interactions with consecutive ESCRT-III dipeptides, and that these interactions do not need to change during the translocation process.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/24487/elife-24487-fig8-v2.jpg)
 
-**Figure 8.:** Left, Subunits A-D form a helical surface of pore loop 1 residues that binds substrate in a β conformation along or close to the helix axis. The helix is stabilized by Vta1VSL binding to adjacent subunits and by ATP binding at subunit interfaces. Right, next step in the cycle where subunit F has bound ATP and assembled on the growing end of the Vps4 helix, ATP has been hydrolysed at the C-D interface, and the nucleotide-binding site of subunit E has been opened to allow ADP·Pi release and rebinding of ATP.DOI: http://dx.doi.org/10.7554/eLife.24487.026
+**Figure 8.:** Left, Subunits A-D form a helical surface of pore loop 1 residues that binds substrate in a β conformation along or close to the helix axis. The helix is stabilized by Vta1VSL binding to adjacent subunits and by ATP binding at subunit interfaces. Right, next step in the cycle where subunit F has bound ATP and assembled on the growing end of the Vps4 helix, ATP has been hydrolysed at the C-D interface, and the nucleotide-binding site of subunit E has been opened to allow ADP·Pi release and rebinding of ATP.
 
-## A role for avidity and hexamer formation in Vps4 function
+![Video 1.](https://cdn.elifesciences.org/articles/24487/elife-24487-media1.mp4.jpg)
 
-The inherently weak hexamerization of Vps4 (Monroe et al., 2014) likely contributes to substrate specificity by coupling Vps4 recruitment to assembly of the active hexamer. As illustrated in Video 3, we envision that Vps4 concentrates at ESCRT-III polymers by binding of its MIT domain with MIMs at the ESCRT-III C-termini. Vta1 possesses an N-terminal tandem MIT domain (t-MIT) (Xiao et al., 2008) that can also bind MIM sequences and is connected to the VSL domain by a flexible ~100 residue linker. Because Vps4 and Vta1 also bind to each other, the concentrating effect at ESCRT-III polymers will be synergistic, and will promote Vps4 binding to ATP and hexamerization around the 30–170 flexible residues that lie between the MIM and the folded N-terminal domain of various ESCRT-III subunits (Han et al., 2015). The Vps4 complex can subsequently hydrolyze ATP to translocate along the polypeptide until the ESCRT-III N-terminal domain is destabilized and removed from the polymer. If the polymer remains intact after removal of one subunit, Vps4 and Vta1 would remain at high concentration due to the continuing MIM-MIT interactions and so could reassemble around another available ESCRT-III C-terminal sequence to repeat the process for as long as the ESCRT-III polymer persists to present an array of MIMs.10.7554/eLife.24487.029Video 3.Model of Vps4 assembly and ESCRT-III disassembly.Vps4 (purple) is recruited to the ESCRT-III lattice (green) through binding of its N-terminal MIT domain to MIT Interacting Motifs (MIMs) (Kieffer et al., 2008; Obita et al., 2007; Stuchell-Brereton et al., 2007), which are sequences at the ends of the long, flexible C-terminal tails of ESCRT-III subunits. The avidity effect of the ESCRT-III polymer promotes Vps4 hexamerization around flexible ESCRT-III sequences. The hexamer is further stabilized by the dimeric Vta1 protein (tan), which also concentrates at the ESCRT-III polymer through its N-terminal t-MIT domain (not shown) (Guo and Xu, 2015; Skalicky et al., 2012; Vild et al., 2015). The Vps4 hexamer hydrolyzes ATP and translocates the substrate through the central pore, thereby destabilizing the ESCRT-III structure and removing the subunit from the lattice. We speculate that Vps4 and Vta1 remain bound to the ESCRT-III lattice via their MIT domains such that they are in position to process additional ESCRT-III subunits until the polymer is disassembled. This animation was created using Autodesk Maya (Autodesk, Inc.) from protein structural models exported from UCSF Chimera (Pettersen et al., 2004).DOI: http://dx.doi.org/10.7554/eLife.24487.029
+**Video 1.:** Vps4 reaction cycle modeled by linear interpolation between the six different states represented in the cryo-EM structure. The ESCRT-III substrate is modeled as a β-strand lying along the axis of the helix defined by Vps4 subunits A-D. Nucleotides are shown in pink (ATP) and gray (ADP).
 
-## Unresolved mechanistic questions
+![Video 2.](https://cdn.elifesciences.org/articles/24487/elife-24487-media2.mp4.jpg)
+
+**Video 2.:** As for Video 1.
+
+### A role for avidity and hexamer formation in Vps4 function
+
+The inherently weak hexamerization of Vps4 (Monroe et al., 2014) likely contributes to substrate specificity by coupling Vps4 recruitment to assembly of the active hexamer. As illustrated in Video 3, we envision that Vps4 concentrates at ESCRT-III polymers by binding of its MIT domain with MIMs at the ESCRT-III C-termini. Vta1 possesses an N-terminal tandem MIT domain (t-MIT) (Xiao et al., 2008) that can also bind MIM sequences and is connected to the VSL domain by a flexible ~100 residue linker. Because Vps4 and Vta1 also bind to each other, the concentrating effect at ESCRT-III polymers will be synergistic, and will promote Vps4 binding to ATP and hexamerization around the 30–170 flexible residues that lie between the MIM and the folded N-terminal domain of various ESCRT-III subunits (Han et al., 2015). The Vps4 complex can subsequently hydrolyze ATP to translocate along the polypeptide until the ESCRT-III N-terminal domain is destabilized and removed from the polymer. If the polymer remains intact after removal of one subunit, Vps4 and Vta1 would remain at high concentration due to the continuing MIM-MIT interactions and so could reassemble around another available ESCRT-III C-terminal sequence to repeat the process for as long as the ESCRT-III polymer persists to present an array of MIMs.
+
+![Video 3.](https://cdn.elifesciences.org/articles/24487/elife-24487-media3.mp4.jpg)
+
+**Video 3.:** Vps4 (purple) is recruited to the ESCRT-III lattice (green) through binding of its N-terminal MIT domain to MIT Interacting Motifs (MIMs) (Kieffer et al., 2008; Obita et al., 2007; Stuchell-Brereton et al., 2007), which are sequences at the ends of the long, flexible C-terminal tails of ESCRT-III subunits. The avidity effect of the ESCRT-III polymer promotes Vps4 hexamerization around flexible ESCRT-III sequences. The hexamer is further stabilized by the dimeric Vta1 protein (tan), which also concentrates at the ESCRT-III polymer through its N-terminal t-MIT domain (not shown) (Guo and Xu, 2015; Skalicky et al., 2012; Vild et al., 2015). The Vps4 hexamer hydrolyzes ATP and translocates the substrate through the central pore, thereby destabilizing the ESCRT-III structure and removing the subunit from the lattice. We speculate that Vps4 and Vta1 remain bound to the ESCRT-III lattice via their MIT domains such that they are in position to process additional ESCRT-III subunits until the polymer is disassembled. This animation was created using Autodesk Maya (Autodesk, Inc.) from protein structural models exported from UCSF Chimera (Pettersen et al., 2004).
+
+### Unresolved mechanistic questions
 
 The model that Vps4 translocates toward the N-terminal domain of ESCRT-III implies that substrate binds to the hexamer pore in a defined direction, which is a level of detail that is not resolved in our current structure. Also unresolved is the biological role of the 8-residue binding peptide that we identified from Vps2, which based upon structural information available for other ESCRT-III proteins likely corresponds to a short helix that packs against the folded core in an isolated ESCRT-III subunit (Bajorek et al., 2009; Xiao et al., 2009) and in an ESCRT-III polymer (McCullough et al., 2015). These structures suggest that the peptide sequence disengages from the folded ESCRT-III core to bind Vps4 and raise the possibility that Vps4 destabilizes ESCRT-III structure simply by binding to this sequence, although our preferred model is that Vps4 initially hexamerizes around a more C-terminal segment and subsequently translocates beyond the site of the 8-residue peptide such that the entire ESCRT-III subunit is destabilized (Yang et al., 2015).
 
-## Comparison with other AAA ATPases
+### Comparison with other AAA ATPases
 
 Structures of the substrate-bound DNA helicase E1 (Enemark and Joshua-Tor, 2006) and RNA translocase Rho (Thomsen and Berger, 2009; Thomsen et al., 2016) suggested sequential mechanisms of polynucleotide translocation that are conceptually analogous to our proposal for polypeptide translocation by Vps4. Thus, the structures indicate that Vps4 and the hexameric nucleic acid translocases function by forming a helical arrangement of subunits that matches the symmetry of their translocating substrate, with one or two transitioning subunits that are disengaged from the substrate, and with translocation achieved by sequential propagation of the ATPase helix.
 
@@ -156,39 +275,39 @@ The structure of Vps4 superimposes with other hexameric AAA ATPases, including t
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 Vps4 and Vta1 proteins were expressed in E. coli BL21(DE3)RIL (Agilent Technologies, Santa Clara, CA) from a pET151-based vector with a cleavable N-terminal 6xHis tag. Proteins and expression vectors used in this study are listed in Supplementary file 1. Expression cultures were grown in ZY autoinduction media (Studier, 2005) at 37°C for 6 hr and at 19°C for 16 hr. Cells were harvested by centrifugation and stored at −80°C. The same purification strategy was used for all Vps4 and Vta1 constructs. Cell pellets were thawed and resuspended in lysis buffer (50 mM Tris/HCl pH 8.0, 300 mM NaCl, 5% (v/v) glycerol, 10 mM imidazole) supplemented with protease inhibitors, 1 mg of DNAseI and 100 mg of lysozyme. After incubation on ice for 30 min, cells were lysed by sonication. Lysate was clarified by centrifugation and batch-bound to 10 ml of Ni-NTA agarose equilibrated in lysis buffer. Following a wash with 150 ml of lysis buffer, His-tagged protein was eluted with lysis buffer made up with 75 mM imidazole (500 mM for Vps4101-437-Hcp1 fusions). His tags were cleaved by incubation with 1 mg of TEV protease during dialysis against 25 mM Tris/HCl pH 8.0, 150 mM NaCl, 1 mM EDTA, 1 mM DTT overnight at 4°C. Samples were then dialyzed into 25 mM Tris/HCl pH 8.0, 100 mM NaCl for 4 hr with two buffer changes and incubated with 10 ml of Ni-NTA agarose equilibrated with dialysis buffer to remove the cleaved His tags and the His-tagged TEV protease. The sample was subsequently bound to a 5 ml HiTrap Q FF ion exchange column (GE Healthcare) equilibrated with Q buffer A (25 mM Tris/HCl pH 8.0, 100 mM NaCl, 1 mM DTT), and eluted with a gradient of 0–50% Q buffer B (25 mM Tris/HCl pH 8.0, 1 M NaCl, 1 mM DTT) over 30 column volumes. Fractions containing the protein of interest were pooled, concentrated to ~5 ml and further purified by gel filtration into 25 mM Tris/HCl pH 7.4, 100 mM NaCl, 1 mM DTT or 20 mM HEPES/NaOH pH 7.4, 100 mM NaCl, 1 mM DTT using a 120 ml Superdex 200 column (GE Healthcare, Chicago, IL). The yield per liter of expression culture was typically 20–30 mg for Vps4 proteins and 40–50 mg for Vta1VSL.
 
-## Peptide synthesis
+### Peptide synthesis
 
 Peptides DEIVNKVL (Vps2 residues 165–172) and DEIVNKVLDEIGVDLNSQLQ (Vps2 residues 165–184) were prepared by solid-phase synthesis on a Prelude X peptide synthesizer (Protein Technologies, Inc., Tucson, AZ) using standard procedures and Fmoc chemistry (Chan and White, 2000). Unlabeled peptides were N-terminally acetylated and C-termini were produced as carboxyamides. For peptides used in fluorescence polarization assays, 5 (6)-carboxyfluorescein (Acros Organics, Geel, Belgium) was coupled to the N-terminal α-amine by standard coupling conditions. Following cleavage from resin by TFA, the peptides were precipitated with ice-cold ether, washed thoroughly with ether, and dried overnight under vacuum. Peptides were then HPLC purified on a Phenomenex 5 µm-C4 Jupiter column (10 × 250 mm, 300 Å) at 5 ml/min over a 15 min gradient (20–80% ACN,0.1% TFA). Peptide quality was verified by LC-MS using a FortisBIO 5 µm C4 column (4.6 × 150 mm, 300 Å) coupled to an Agilent 6100 Series Single Quadrupole mass spectrometer.
 
-## Fluorescence polarization assay for ESCRT-III peptide binding
+### Fluorescence polarization assay for ESCRT-III peptide binding
 
 Binding of fluorescently labeled peptides to Vps4 was quantified in the presence of a 2:1 ratio of Vta1VSL:Vps4 subunits and 1 mM ADP·BeFx, as described previously (Han et al., 2015). Briefly, peptides (1 nM) were incubated at room temperature with Vps4:Vta1 complexes (0–180 µM Vps4 subunits) in binding buffer (20 mM HEPES/NaOH, pH 7.4, 100 mM NaCl, 1 mM ADP·BeFx, 10 mM magnesium chloride, 1 mM DTT) in a total volume of 60 µl. When equilibrium was reached, parallel and perpendicular fluorescence intensities were measured on a Biotek Synergy Neo HTS microplate reader using an excitation wavelength of 485 nm and an emission wavelength of 528 nm. Because Vps4 binds a single peptide per hexamer (Han et al., 2015), fluorescence polarization was plotted against the Vps4 hexamer concentration and dissociation constants were estimated by global fitting of the equation FP = [Vps4 hexamer]/(KD + [Vps4 hexamer]) to data points from four independent experiment, where FP is the normalized fluorescence polarization or ‘fraction bound’ and independent experiments are defined as using different protein preparations, using GraphPad Prism 6 (GraphPad Software, Inc., La Jolla, CA).
 
-## Fluorescence polarization assay for Vta1VSLbinding
+### Fluorescence polarization assay for Vta1VSLbinding
 
 For binding studies, Vta1VSL S278 was replaced by cysteine. Fluorescent modification of the single cysteine was performed by incubating 8 μM Vta1VSL S278C with 200 μM fluorescein-5-maleimide (Fisher Scientific) in 25 mM Tris/HCl pH 7.4, 100 mM NaCl, 5 mM EDTA overnight at 4°C. Excess label was removed using a PD-10 desalting column equilibrated in binding buffer (20 mM HEPES/NaOH pH 7.5, 100 mM NaCl, 1 mM DTT). Vps4 constructs at monomer concentrations ranging from 0–60 µM were incubated with 3 nM of fluorescently labeled Vta1VSL in a total volume of 60 µl. Fluorescence polarization was read at equilibrium and apparent dissociation constants were estimated as described for the peptide binding studies (above), except that in this case Vps4 subunit concentrations were used for both graphing and fitting because each subunit contains a potential binding site for the VSL dimer. The binding model does not account for potential differences in affinity to different binding sites in the context of the asymmetric Vps4 hexamer, and KD values are therefore referred to as apparent dissociation constants.
 
-## ATPase assay
+### ATPase assay
 
 The rate of ATP hydrolysis was determined using an end-point method modified from Merrill and Hanson (Merrill and Hanson, 2010). Vps4 at the indicated subunit concentration was incubated with 1 mM ATP at 37°C in 20 mM HEPES/NaOH pH 7.4, 100 mM NaCl, 10 mM MgCl2, 1 mM DTT in a total volume of 10 µl. The hydrolysis reaction was stopped after 5 min by the addition of 100 µl of malachite green color reagent (14 mM ammonium molybdate, 1.3 M HCl, 1.5 mM malachite green) and 50 µl of 21% (w/v) citric acid. Absorbance at 650 nm was read using a Biotek Neo Synergy microplate reader and the amount of inorganic phosphate released by the reaction was determined using a sodium phosphate standard curve. Means and standard deviations reported in Figure 1D are from at least three independent experiments using different protein preparations with three or more technical replicates each.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 To confirm that Vps4101-437-Hcp1 is hexameric in solution, we performed equilibrium sedimentation analyses at 4°C using an XLI analytical ultracentrifuge (Beckman Coulter, Indianapolis, IN) with absorbance optics. Sample cells with 6-channel centerpieces were filled with 120 µl of Vps4101-437-Hcp1 in 25 mM Tris/HCl pH 7.4, 100 mM NaCl at the indicated concentrations in the sample sectors and with 125 µl of buffer in the reference sectors. Absorbance scans at 280 nm were taken at equilibrium after centrifugation at 3000 rpm and 5000 rpm, respectively. Equilibrium sedimentation data were fit to a single species model in Heteroanalysis (Cole, 2004) using a theoretical molecular mass of 55,703.8 Da per subunit, a partial specific volume of 0.732662 mL/g, and a buffer density of 1.0049 g/mL, as calculated in SEDNTERP (Hayes et al., 1995).
 
-## Glutaraldehyde crosslinking
+### Glutaraldehyde crosslinking
 
 For crosslinking with glutaraldehyde, proteins were buffer-exchanged by extensive dialysis in 20 mM HEPES/NaOH pH 7.4, 100 mM NaCl. Vps4101-437-Hcp1 (final subunit concentration 18 µM), Vta1VSL (final subunit concentration 36 µM) and the 8-residue peptide (from a 1 mM stock solution in water, final concentration 10 µM) were combined in the presence of 1 mM ADP·BeFx and 5 mM magnesium chloride in a total volume of 4.8 ml, and incubated on ice for 30 min before equilibration to room temperature over 5 min. Crosslinking was initiated by addition of 50 µl of 2% glutaraldehyde solution (diluted in dialysis buffer from an 8% stock, Fluka 49627, final concentration 0.02%), and quenched after 30 min by adding 5 ml of 1 M glycine containing 1 mM ADP·BeFx and 5 mM MgCl2. Following concentration to 0.5 ml, glutaraldehyde and glycine were removed by gel filtration into 25 mM Tris/HCl pH 7.4, 100 mM NaCl, 1 mM ADP·BeFx, 5 mM MgCl2, and 1 mM DTT using a Superdex-200 column with a bed volume of 24 ml. The extent of crosslinking was assessed by SDS PAGE analysis of the peak fraction. The elution volume was as expected for a hexameric complex based on protein standards.
 
-## Electron microscopy
+### Electron microscopy
 
 3.5 µl of sample was applied to glow-discharged (25 mA, 25 s) Quantifoil 1.2/1.3 holey carbon 400 mesh copper grids, which were plunge frozen in liquid ethane using a Vitrobot Mark III (FEI, Hillsboro, OR) set to 4°C, 80% relative humidity, 30 s wait time, −2 mm offset, and 8 s blotting time. Grids were stored in liquid nitrogen prior to data collection using SerialEM (Mastronarde, 2005) on a Tecnai TF20 (FEI) operating at 200 kV using a Gatan 626 side entry cryo-holder. Movies were recorded using a K2 Summit direct detector (Gatan, Pleasanton, CA) in counting mode at a corrected magnification of 70,952×, corresponding to a physical pixel size of 0.7047 Å, and at a dose rate of ~5 e-/pixel/sec. Each movie was recorded as a stack of 40 subframes, each of which was accumulated for 0.2 s, totaling ~80 electrons per Å2. Defocus values ranged between 0.8 to 2.0 µm.
 
-## Image processing and 3D reconstruction
+### Image processing and 3D reconstruction
 
 Movie frames were aligned, exposure filtered, and summed into a single micrograph using Unblur (Grant and Grigorieff, 2015) (Figure 2—figure supplement 1). CTF parameters were determined using the program CTFFIND4 (Rohou and Grigorieff, 2015). Micrographs with poor CTF cross correlation scores were excluded from downstream analyses.
 
@@ -198,15 +317,112 @@ In order to optimize alignment on the Vps4 complex, we performed signal subtract
 
 To exclude the possibility that crosslinking with 0.02% glutaraldehyde might stabilize an artificial conformation of the Vps4 hexamer, we collected and processed a data set of non-crosslinked Vps4101-437-Hcp1 in complex with Vta1VSL, ESCRT-III peptide and ADP·BeFx. Samples were deposited on Quantifoil Graphene Oxide 2/4 200 mesh copper grids (SPI Supplies) glow-discharged for 25 s using a 10 mA current. Vitrification and data collection were performed as described above. 161,645 particles were extracted from 821 micrographs. After multiple rounds of 2D and 3D classification, particles were used for RELION auto-refinement, which yielded an ~13 Å resolution structure of the Vps4101-437-Hcp1 particle. Both 2D and 3D classes showed Vps4 features similar to those seen with the glutaraldehyde-crosslinked sample (Figure 2—figure supplement 4). However, Vps4 features are much better defined when the structure is stabilized by crosslinking.
 
-## Vta1 3D classification
+### Vta1 3D classification
 
-Some weak density was observed at the expected site for Vta1VSL at the Vps4 β domains (Figure 2—figure supplement 6A). We therefore performed focused 3D classification using the Hcp1-subtracted dataset to identify particles that contain the Vta1 density (Figure 2—figure supplement 6B). This was performed separately around each Vps4 subunit β domain, without particle re-alignment and by applying a generous soft-edged mask at the inter-subunit interface. The resulting classifications revealed Vta1 densities at each Vps4 subunit, and the corresponding particles were subjected to RELION auto-refinement. This strategy led to maps ranging between 5.3–7.2 Å resolution for the six sites (Figure 2—figure supplement 6C, Figure 4—figure supplement 1 and Table 2). Focused 3D classification that encompassed multiple Vta1 regions failed to enrich for a single class containing multiple Vta1 densities, presumably because the occupancy of Vta1 sites is low in the vitrified sample.10.7554/eLife.24487.030Table 2.Reconstruction statistics of Vps4-Vta1 classes.DOI: http://dx.doi.org/10.7554/eLife.24487.030Vps4 Vta1VSL (A-B)Vps4 Vta1VSL (B-C)Vps4 Vta1VSL (C-D)Vps4 Vta1VSL (D-E)Vps4 Vta1VSL (E-F)Vps4 Vta1VSL (F-A)Particle images26,24313,06610,70011,68414,27426,964Resolution (unmasked, Å)6.97.87.87.87.56.9Resolution (masked, Å)5.46.77.26.96.55.3EMDB IDEMD-8552EMD-8553EMD-8554EMD-8555EMD-8556EMD-8557
+Some weak density was observed at the expected site for Vta1VSL at the Vps4 β domains (Figure 2—figure supplement 6A). We therefore performed focused 3D classification using the Hcp1-subtracted dataset to identify particles that contain the Vta1 density (Figure 2—figure supplement 6B). This was performed separately around each Vps4 subunit β domain, without particle re-alignment and by applying a generous soft-edged mask at the inter-subunit interface. The resulting classifications revealed Vta1 densities at each Vps4 subunit, and the corresponding particles were subjected to RELION auto-refinement. This strategy led to maps ranging between 5.3–7.2 Å resolution for the six sites (Figure 2—figure supplement 6C, Figure 4—figure supplement 1 and Table 2). Focused 3D classification that encompassed multiple Vta1 regions failed to enrich for a single class containing multiple Vta1 densities, presumably because the occupancy of Vta1 sites is low in the vitrified sample.
 
-## Vps4 subunit F 3D classification
+**Table 2.**
+ Reconstruction statistics of Vps4-Vta1 classes.
 
-The unsharpened Vps4 density map revealed reasonable density for subunit F at low contour levels (Figure 2—figure supplement 7A). We therefore performed focused 3D classification with a custom mask over subunit F to identify particles that contain ordered subunit F density (Figure 2—figure supplement 7B). The classification was performed without particle re-alignment (i.e., using the –skip_align flag in RELION) and revealed three distinct classes with ordered subunit F density. A fourth class containing 47% of particles showed poor subunit F density. Particles from the three classes with ordered density were used for separate RELION auto-refinement calculations, which led to maps ranging between 6.9–7.2 Å resolution (Figure 2—figure supplement 7C-E, Table 3). The maps were used for rigid body fitting of Vps4 coordinates into each subunit F position (Figure 2—figure supplement 8).10.7554/eLife.24487.031Table 3.Reconstruction statistics of Vps4-Subunit F classes.DOI: http://dx.doi.org/10.7554/eLife.24487.031Vps4 F1Vps4 F2Vps4 F3Particle images690867947093Resolution (unmasked, Å)7.88.17.8Resolution (masked, Å)6.97.26.9EMDB IDEMD-8572EMD-8571EMD-8570
 
-## Model building and refinement
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Vps4 Vta1VSL (A-B)</th>
+      <th>Vps4 Vta1VSL (B-C)</th>
+      <th>Vps4 Vta1VSL (C-D)</th>
+      <th>Vps4 Vta1VSL (D-E)</th>
+      <th>Vps4 Vta1VSL (E-F)</th>
+      <th>Vps4 Vta1VSL (F-A)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Particle images</td>
+      <td>26,243</td>
+      <td>13,066</td>
+      <td>10,700</td>
+      <td>11,684</td>
+      <td>14,274</td>
+      <td>26,964</td>
+    </tr>
+    <tr>
+      <td>Resolution (unmasked, Å)</td>
+      <td>6.9</td>
+      <td>7.8</td>
+      <td>7.8</td>
+      <td>7.8</td>
+      <td>7.5</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked, Å)</td>
+      <td>5.4</td>
+      <td>6.7</td>
+      <td>7.2</td>
+      <td>6.9</td>
+      <td>6.5</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <td>EMDB ID</td>
+      <td>EMD-8552</td>
+      <td>EMD-8553</td>
+      <td>EMD-8554</td>
+      <td>EMD-8555</td>
+      <td>EMD-8556</td>
+      <td>EMD-8557</td>
+    </tr>
+  </tbody>
+</table>
+
+### Vps4 subunit F 3D classification
+
+The unsharpened Vps4 density map revealed reasonable density for subunit F at low contour levels (Figure 2—figure supplement 7A). We therefore performed focused 3D classification with a custom mask over subunit F to identify particles that contain ordered subunit F density (Figure 2—figure supplement 7B). The classification was performed without particle re-alignment (i.e., using the –skip_align flag in RELION) and revealed three distinct classes with ordered subunit F density. A fourth class containing 47% of particles showed poor subunit F density. Particles from the three classes with ordered density were used for separate RELION auto-refinement calculations, which led to maps ranging between 6.9–7.2 Å resolution (Figure 2—figure supplement 7C-E, Table 3). The maps were used for rigid body fitting of Vps4 coordinates into each subunit F position (Figure 2—figure supplement 8).
+
+**Table 3.**
+ Reconstruction statistics of Vps4-Subunit F classes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Vps4 F1</th>
+      <th>Vps4 F2</th>
+      <th>Vps4 F3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Particle images</td>
+      <td>6908</td>
+      <td>6794</td>
+      <td>7093</td>
+    </tr>
+    <tr>
+      <td>Resolution (unmasked, Å)</td>
+      <td>7.8</td>
+      <td>8.1</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked, Å)</td>
+      <td>6.9</td>
+      <td>7.2</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>EMDB ID</td>
+      <td>EMD-8572</td>
+      <td>EMD-8571</td>
+      <td>EMD-8570</td>
+    </tr>
+  </tbody>
+</table>
+
+### Model building and refinement
 
 Model building was facilitated by the availability of a Vps4 AAA ATPase cassette crystal structure (PDB 3EIE, [Gonciarz et al., 2008]). The AAA ATPase cassettes for subunits A-E were fit to the 4.3 Å map as rigid bodies and subjected to real-space refinement using Phenix (RRID:SCR_014224) (Adams et al., 2010) (Figure 2—figure supplement 1F). Secondary structure restraints were applied during refinement. Guided by visual inspection of map similarity, NCS restraints were applied to Vps4 subunits A-E with the exception of residues 240–247 and 260–267 of subunit A and residues 204–207 (pore loop 1) of subunit E. For Vps4 subunits A-E, residues 174–180 (P-loop) were restrained to a high resolution reference model (PDB 5BQ5, [Arias-Palomo and Berger, 2015]). For subunits A, B, and C, the distance between Be and the O3B of ADP was restrained to 1.6 Å, and the distance between Mg and F1 of BeF3 was restrained to 2.0 Å. For subunits D and E the nucleotide was refined as ADP, while the subunit F nucleotide site was empty. Residues 204–207 (pore loop 1), 240–247 (pore loop 2) and 261–266 were absent in the previously reported structures and were built manually in Coot (RRID:SCR_014222) (Emsley et al., 2010). Because the 8-residue ESCRT-III peptide bound in the structure appears to occupy multiple sites, we did not attempt to build a detailed model but represented it as 8 Cα atoms in a low-energy extended conformation (Figure 6).
 
@@ -216,6 +432,6 @@ Models for Vta1VSL dimers and associated β domains were built by rigid body doc
 
 Figures of models and density maps were prepared using Chimera (RRID:SCR_004097) (Pettersen et al., 2004). Electrostatic potential was calculated using the Adaptive Poisson Boltzmann Solver (APBS, RRID:SCR_008387) (Baker et al., 2001) implemented in Chimera.
 
-## Structure deposition
+### Structure deposition
 
 The complete model, including all 6 subunits of Vps4 AAA ATPase cassettes, 12 Vta1VSL domains, and the peptide, has been deposited into the PDB (RRID:SCR_012820) together with the unsharpened Hcp-masked map. The unmasked map (including both Hcp and Vps4), sharpened Hcp-masked map, and the 6 maps for the Vta1VSL domain were deposited at the EMDB (RRID:SCR_003207).

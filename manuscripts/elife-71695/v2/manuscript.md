@@ -30,19 +30,19 @@ In a previous study, we examined the neuronal representations in ACCd in an econ
 
 ## Results
 
-## Experimental design and choice patterns
+### Experimental design and choice patterns
 
 We designed a task in which animals chose between two juices offered in variable amounts (Figure 1A). We dissociated the spatial location of the offers from the saccades necessary to obtain them and we introduced a delay between the presentation of the offers and the saccade targets. Moreover, offers were associated with radial eye movements in different directions, and different saccade amplitudes imposed variable action costs. We reasoned that if the initial fixation point is straight ahead of the subject, the action cost associated with an eye movement is essentially independent of the saccade direction (isotropic) and only depends on the saccade amplitude. Each offer provided information about all the attributes of value – juice type indicated by symbol color, quantity indicated by symbol number, and action cost indicated by symbol shape, while the animal was unable to plan the saccade necessary to obtain the offer. For any given trial, one ‘offer’ was defined by a juice type, its quantity, and its action cost. An ‘offer type’ was defined by two offers (e.g., [1A+:3B−]), in which ‘−’ indicates high action cost (long saccade) and ‘+’ indicates low action cost (short saccade). A ‘trial type’ was defined by two offers and a choice (e.g., [1A+:3B−, A]). Thus, a ‘trial type’ encompasses task-related factors in goods space.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71695/elife-71695-fig1-v2.jpg)
 
-**Figure 1.:** (A) At the beginning of the trial, the monkey fixated a center point on the monitor. After 1.5 s, two offers appeared to the left and right of the fixation point. The offers were represented by sets of color symbols, with the color indicating the juice type, the number of symbols indicating juice amount and the shape of the symbols indicating the action cost associated with the offer (crosses, low cost; diamonds high cost). The offers remained on the monitor for 1 s, then they disappeared. The monkey continued fixating the center point for another 1 s. At the end of this delay, two saccade targets (two color dots) appeared. The two saccade targets were located on two (invisible) concentric rings centered on the fixation point. The animal maintained fixation for a randomly variable delay (0.6–1.2 s) before the center fixation point was extinguished (‘go’ signal), at which point the monkey indicated its choice with a saccade. (B) Choice patterns, one session. The percentage of B choices is plotted against the ratio qB:qA, where qA and qB are quantities of juice A and juice B, respectively. Trials were separated in two groups depending on the level of action cost for juice A. The choice pattern obtained when juice A had a high cost (black) was displaced to the left (lower indifference point) compared to the choice pattern obtained when juice A had a low cost (gray). The regression lines were obtained with a simplified version of Equation (1) in which terms a3 to a6 were removed. The action cost can be measured as ξ = a2/a0 (Equation 1). (C) Histogram of action costs across 56 sessions for monkey B (median(ξ) = 0.27, p < 10–9, Wilcoxon signed-rank test) and 85 sessions for monkey L (median(ξ) = 0.18, p < 10–11, Wilcoxon signed-rank test). Orange triangles indicate median values.Figure 1—source data 1.Figure 1c.
+**Figure 1.:** (A) At the beginning of the trial, the monkey fixated a center point on the monitor. After 1.5 s, two offers appeared to the left and right of the fixation point. The offers were represented by sets of color symbols, with the color indicating the juice type, the number of symbols indicating juice amount and the shape of the symbols indicating the action cost associated with the offer (crosses, low cost; diamonds high cost). The offers remained on the monitor for 1 s, then they disappeared. The monkey continued fixating the center point for another 1 s. At the end of this delay, two saccade targets (two color dots) appeared. The two saccade targets were located on two (invisible) concentric rings centered on the fixation point. The animal maintained fixation for a randomly variable delay (0.6–1.2 s) before the center fixation point was extinguished (‘go’ signal), at which point the monkey indicated its choice with a saccade. (B) Choice patterns, one session. The percentage of B choices is plotted against the ratio qB:qA, where qA and qB are quantities of juice A and juice B, respectively. Trials were separated in two groups depending on the level of action cost for juice A. The choice pattern obtained when juice A had a high cost (black) was displaced to the left (lower indifference point) compared to the choice pattern obtained when juice A had a low cost (gray). The regression lines were obtained with a simplified version of Equation (1) in which terms a3 to a6 were removed. The action cost can be measured as ξ = a2/a0 (Equation 1). (C) Histogram of action costs across 56 sessions for monkey B (median(ξ) = 0.27, p < 10–9, Wilcoxon signed-rank test) and 85 sessions for monkey L (median(ξ) = 0.18, p < 10–11, Wilcoxon signed-rank test). Orange triangles indicate median values.
 
 Behavioral evidence indicated that the experimental manipulation was effective in producing an action cost. Figure 1B illustrates the choice pattern recorded in one representative session. Trials were divided into two groups depending on whether juice A was offered at low cost or at high cost. The gray sigmoid is displaced to the right, indicating that the relative value of juice A was higher when juice A was offered at low cost. This effect was consistent across sessions for both monkeys. Our data set included 141 behavioral sessions from both animals. For a quantitative analysis of choice patterns, we constructed a logistic model that provided measures for the relative value of the two juices (ρ), the difference in action cost (ξ), the choice hysteresis related to the chosen juice (η) and to the chosen cost (φ), and the spatial biases related to the offer position (δ) and to the target position (ε) (see Materials and methods, Equation 1). We first examined the distribution of ξ across sessions. The difference in saccade amplitude had a significant effect on choices in both animals (Figure 1C, monkey B, median(ξ) = 0.27, p < 10–9; monkey L, median(ξ) = 0.18, p < 10–11; Wilcoxon signed-rank test).
 
 In addition to action cost, we also examined other factors that may influence the animal’s choice. These factors include the monkey’s tendency to choose on any given trial the same juice chosen and received in the previous trial (choice hysteresis; Padoa-Schioppa, 2013). This effect was quantified by the normalized coefficient η (Equation 1, median(η) = 0.16, p < 10–19; Wilcoxon signed-rank test). We also tested whether the animal’s choices were affected by the cost associated with the offer chosen in previous trial (cost hysteresis). This effect, quantified by the normalized coefficient φ (Equation 1), was not significant across sessions (median(φ) = –0.008, p = 0.58; Wilcoxon signed-rank test). The normalized coefficient δ quantified offer-based spatial biases. Across sessions, this effect was statistically significant but rather small (median(δ) = –0.03, p = 0.04; Wilcoxon signed-rank test). Finally, the normalized coefficient ε quantified target-based spatial biases. Similar to offer-based spatial biases, this effect was statistically significant but very small in amplitude (median(δ) = 0.017, p = 0.027; Wilcoxon signed-rank test).
 
-## Encoding of choice outcome in multiple reference frames
+### Encoding of choice outcome in multiple reference frames
 
 We recorded and analyzed the activity of 688 neurons from the ACCd of two monkeys (B, 318 cells; L, 370 cells). Firing rates were analyzed in nine time windows aligned with different behavioral events (see Materials and methods). A ‘neuronal response’ was defined as the activity of one neuron in one time window as a function of the trial type. Inspection of individual responses (see Materials and methods) indicated that many neurons in ACCd were modulated by the trial type and encoded variables related to the choice outcome. More specifically, ACCd neurons appeared to encode decision variables in the frames of reference defined by the juice type and/or the action cost. Figure 2 illustrates a few examples. The response in Figure 2A, recorded in the late-delay time window, varied as a linear function of the value of chosen offer (variable chosen value). Conversely, the response in Figure 2B, recorded in the post-juice time window, was low when the animal chose juice A and high when the animal chose juice B (variable chosen juice). Meanwhile, the response in Figure 2C, recorded in the pre-go time window, was modulated by both chosen cost (low when the animal chooses the low-cost offer and high when the animal chooses the high-cost offer) and the location of chosen target (low when the chosen target is in the ipsilateral hemifield and high when the chosen target is in the contralateral hemifield).
 
@@ -58,13 +58,273 @@ Further inspection revealed that many neurons in the ACCd also encode the spatia
 
 For a population level statistical analysis, we proceeded in steps. First, we submitted each neuronal response to two 3-way analysis of variances (ANOVAs) (factors [trial type × offer A location × target A location]; factors [trial type × chosen offer location × chosen target location]; see Materials and methods). We imposed a significance threshold p < 0.001. Responses that passed this criterion for at least one factor in one of the two ANOVAs were identified as ‘task related’ and included in subsequent analyses. As detailed in Table 1, out of the total 688 neurons, many neurons were modulated by the trial type (172 cells = 25%) and/or the chosen target location (108 cells = 15.7%), while few cells were modulated by the spatial configuration of the offers (5 cells = 0.7%), the spatial configuration of the targets (25 cells = 3.6%), or the location of the chosen offer (38 cells = 5.5%). Overall, 249 cells (36.2%) were modulated by at least one factor. Subsequent analyses were restricted to this population.
 
+**Table 1.**
+ A total of 688 cells were recorded from dorsal anterior cingulate cortex (ACCd) and included in this analysis.Table 1—source data 1.Source data for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Trial type</th>
+      <th>Offer A location</th>
+      <th>Target A location</th>
+      <th>Chosen offer location</th>
+      <th>Chosen target location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-offer</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Post-offer</td>
+      <td>37</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Late-delay</td>
+      <td>55</td>
+      <td>0</td>
+      <td>1</td>
+      <td>17</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mem-delay</td>
+      <td>38</td>
+      <td>1</td>
+      <td>0</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Pre-target</td>
+      <td>34</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Post-target</td>
+      <td>42</td>
+      <td>0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Pre-go</td>
+      <td>35</td>
+      <td>1</td>
+      <td>6</td>
+      <td>1</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>Pre-juice</td>
+      <td>39</td>
+      <td>0</td>
+      <td>8</td>
+      <td>2</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>Post-juice</td>
+      <td>29</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>At least 1</td>
+      <td>172</td>
+      <td>5</td>
+      <td>25</td>
+      <td>38</td>
+      <td>108</td>
+    </tr>
+  </tbody>
+</table>
+
 In a previous study that did not dissociate the spatial location of the offer from that of the saccade target, we found that neuronal responses in ACCd often reflected the chosen side (Cai and Padoa-Schioppa, 2012). Here, we examined neuronal responses with a series of analysis of covariances (ANCOVAs), continuous variables were those defined in Table 2. As a covariate, we used the side of the chosen offer for early time windows (from post-offer to pre-target time windows), and the side of the chosen target for late time windows (from post-target to post-juice time windows; see Materials and methods).
+
+**Table 2.**
+ Defined variables.In any given trial, qA and qB were, respectively, the quantities of juice A and juice B offered to the animal, ρ was the relative value of the two juices, and ξ was the action cost. Parameters ρ and ξ were obtained from the logistic regression (Equation 1). The variable spatial congruence was set = 1 ( = 0) if the offer and the saccade target associated with a given juice (same color) were presented in the same (opposite) hemifield. Variables chosen offer loc only and chosen target loc only provided the best explanation (highest R2) only if it provided the sole explanation (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Collapsed variable</th>
+      <th>Variable</th>
+      <th>Definition</th>
+      <th>Reference frame</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td rowspan="2">Offer value (juice)</td>
+      <td>Offer value A</td>
+      <td>ρ qA + ξ δjuice A,+</td>
+      <td>Juice</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Offer value B</td>
+      <td>qB + ξ δjuice B,+</td>
+      <td>Juice</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td>Chosen juice</td>
+      <td>1 if juice B is chosen, 0 if juice A is chosen</td>
+      <td>Juice</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td rowspan="2">Offer value (cost)</td>
+      <td>Offer value −</td>
+      <td>Offer value A if A is high cost, offer value B if B is high cost</td>
+      <td>Cost</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Offer value +</td>
+      <td>Offer value A if A is low cost, offer value B if B is low cost</td>
+      <td>Cost</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td></td>
+      <td>Chosen cost</td>
+      <td>1 if low-cost offer is chosen, 0 if high-cost offer is chosen</td>
+      <td>Cost</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td rowspan="2">Offer value (location)</td>
+      <td>Offer value L</td>
+      <td>Value of the juice offered on the left</td>
+      <td>Visual</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Offer value R</td>
+      <td>Value of the juice offered on the right</td>
+      <td>Visual</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td rowspan="2">Offer value (target)</td>
+      <td>Offer value target L</td>
+      <td>Value of the juice associated with target in the left hemifield</td>
+      <td>Action</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Offer value target R</td>
+      <td>Value of the juice associated with target in the right hemifield</td>
+      <td>Action</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td></td>
+      <td>Cost of A</td>
+      <td>1 if offer A is low cost, 0 if offer A is high cost</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td></td>
+      <td>Offer A location</td>
+      <td>1 if juice A is offered on left, 0 if juice A is offered on right</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td></td>
+      <td>Target A location</td>
+      <td>1 if target A is in left hemifield, 0 if target A is in right hemifield</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td></td>
+      <td>Offer+ location</td>
+      <td>1 if low-cost offer is on the left, 0 if low cost offer is on the right</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td></td>
+      <td>Target+ location</td>
+      <td>1 if low-cost target is in the left hemifield, 0 otherwise</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td></td>
+      <td>Spatial congruence</td>
+      <td>1 if offers and targets are spatially congruent, 0 otherwise</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td></td>
+      <td>Chosen value</td>
+      <td>Offer value A if juice A chosen, offer value B if juice B chosen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td></td>
+      <td>Value ratio</td>
+      <td>Other/chosen value</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td></td>
+      <td>Cost/benefit conflict</td>
+      <td>Cost of A × sign(offer value A – offer value B). 1 if there is conflict, 0 otherwise</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td></td>
+      <td>Chosen offer loc only</td>
+      <td>1 if the chosen offer is on the left, 0 otherwise</td>
+      <td>Visual</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td></td>
+      <td>Chosen target loc only</td>
+      <td>1 if the chosen target is in the left hemifield, 0 otherwise</td>
+      <td>Action</td>
+    </tr>
+  </tbody>
+</table>
 
 Figure 4 illustrates the results obtained for the population. Figure 4A indicates the number of responses explained by each variable in each time window. Notably, each response could be explained by more than one variable and thus could contribute to multiple bins in this panel. Figure 4B illustrates a complementary account. Here, each response was assigned to the variable that provided the best fit. In early time windows, the dominant variables were chosen value and chosen location only. In late time windows, after target presentation and upon juice delivery, the dominant variables were chosen value, chosen target location only, chosen cost, and chosen juice. Two procedures – stepwise and best-subset – were used to identify the variables that best explained the neuronal data set (see Materials and methods). Variables were selected across all time windows. Both procedures selected variables chosen value, chosen cost, chosen juice, chosen offer location only, and chosen target location only. Figure 5 illustrates the percentage of neurons encoding each of the selected variables across different time windows.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/71695/elife-71695-fig4-v2.jpg)
 
-**Figure 4.:** (A) Explained responses. Row and columns represent, respectively, time windows and variables. In each location, the number indicates the number of responses explained by the corresponding variable in that time window. For example, chosen value (juice) explained 34 responses in the post-offer time window. The same numbers are also represented in gray scale. Note that each response could be explained by more than one variable and thus could contribute to multiple bins in this panel. (B) Best fit. In each location, the number indicates the number of responses for which the corresponding variable provided the best fit (highest R2) in that time window. For example, chosen value (juice) provided the best fit for 41 responses in the late-delay time window. The numerical values are also represented in gray scale. In this plot, each response contributes to at most one bin.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Explained responses. Row and columns represent, respectively, time windows and variables. In each location, the number indicates the number of responses explained by the corresponding variable in that time window. For example, chosen value (juice) explained 34 responses in the post-offer time window. The same numbers are also represented in gray scale. Note that each response could be explained by more than one variable and thus could contribute to multiple bins in this panel. (B) Best fit. In each location, the number indicates the number of responses for which the corresponding variable provided the best fit (highest R2) in that time window. For example, chosen value (juice) provided the best fit for 41 responses in the late-delay time window. The numerical values are also represented in gray scale. In this plot, each response contributes to at most one bin.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71695/elife-71695-fig5-v2.jpg)
 
@@ -72,7 +332,7 @@ Figure 4 illustrates the results obtained for the population. Figure 4A indicate
 
 To summarize, confirming previous results, neurons in ACCd encoded task-relevant variables associated with only the choice outcome. Remarkably, choice outcomes were encoded in all relevant reference frames – juice-, cost-, spatial-, and action-based. In contrast, we did not find any offer value signal in any of these reference frames. Moreover, few neurons in ACCd encode variables value ratio and cost/benefit conflict, which essentially capture the decision difficulty. Overall, this result demonstrates a prevailing coding of post-decision variables in ACCd.
 
-## Dimensional integration in chosen value cells
+### Dimensional integration in chosen value cells
 
 Previous studies showed that the activity of chosen value cells in the OFC depended on the juice type, juice quantity, and action costs. Here, we assessed whether chosen value cells in the ACCd also reflected the action cost. To do so, we defined two variants of the variable chosen value (juice) – one cost-affected and one cost-independent. We assessed which variant better fit neuronal responses. For each response, we considered the two R2 and we computed the difference ΔR2 = R2 cost-affected−R2cost-independent and we examined the distribution for ΔR2 across the population. We did not want to bias the results in favor of either variant. Thus, for this analysis we identified neuronal responses encoding the chosen value (juice) as follows. For each response, we considered the two R2 obtained from the two variants of chosen value variable both ‘explaining’ the response (p < 0.05), and we assigned the maximum R2 to the response. We then assigned each response to one of the selected variables accordingly. As any neuron could be tuned in multiple time windows, we aggregated the chosen value (juice) coding responses in the time windows after offer presentation but before target presentation (including post-offer, late-delay, mem-delay, and pre-target windows) and those in the time windows after target presentation (including post-target, pre-go, pre-juice, and post-juice windows) and analyzed them separately.
 
@@ -80,9 +340,9 @@ We discovered that in the post-offer time windows, the distribution of ΔR2 was 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/71695/elife-71695-fig6-v2.jpg)
 
-**Figure 6.:** The x-axis represents the difference ΔR2. In this case, we examined separately early time windows (post-offer to pre-target windows, top, N = 148 responses) and late time windows (post-target to post-juice windows, bottom, N = 65 responses). In the early time windows, mean(ΔR2) = –0.013 (p < 10–8, Wilcoxon signed-rank test). In the late time windows, mean(ΔR2) = –0.0034 (p = 0.25, Wilcoxon signed-rank test). The difference between the two measures was marginally significant (p = 0.052, Wilcoxon rank-sum test).Figure 6—source data 1.Figure 6.
+**Figure 6.:** The x-axis represents the difference ΔR2. In this case, we examined separately early time windows (post-offer to pre-target windows, top, N = 148 responses) and late time windows (post-target to post-juice windows, bottom, N = 65 responses). In the early time windows, mean(ΔR2) = –0.013 (p < 10–8, Wilcoxon signed-rank test). In the late time windows, mean(ΔR2) = –0.0034 (p = 0.25, Wilcoxon signed-rank test). The difference between the two measures was marginally significant (p = 0.052, Wilcoxon rank-sum test).
 
-## Contrasting neuronal encoding in OFC and ACCd
+### Contrasting neuronal encoding in OFC and ACCd
 
 Since our previous study on the OFC used the same choice task and animals used here, we had the opportunity to contrast the neuronal representations in OFC and ACCd, to probe the differential contributions of these two areas to economic choice under variable action costs. First, we noted that neurons in the OFC and ACCd do not encode the same set of variables. In particular, pre-decision variables such as offer value (juice) and offer value (cost) are encoded in the OFC but not the ACCd (Figure 5). On the other hand, choice outcome in spatial (chosen offer location) and action-based (chosen target location) reference frames were represented in ACCd but not in OFC (Figure 5). We thus compared the strength and pattern of the variables that are commonly encoded in these two brain regions, including chosen value, chosen cost, and chosen juice.
 
@@ -112,7 +372,7 @@ To conclude, our findings demonstrate that choice outcome coding dominates the n
 
 ## Materials and methods
 
-## Choice task
+### Choice task
 
 All experimental procedures conformed to the NIH Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee (IACUC) at Washington University.
 
@@ -120,23 +380,27 @@ The experimental procedures were as described in a previous study (Cai and Padoa
 
 Figure 1 illustrates the choice task. In each session, an animal chose between two juices offered in variable amounts and at different action cost. The offers were represented by sets of color symbols, with the color indicating the juice type, the number of symbols indicating juice amount, and the shape of the symbols indicating the action cost (cross for low cost; diamond for high cost). The trial started with the animal fixating the center fixation point. After 1.5 s, two offers appeared on the two sides of the fixation point. The offers remained on the monitor for 1 s. The monkey continued fixating for another 1 s, after which two saccade targets appeared. The two saccade targets, represented by two dots with matching color to that of the two offers, were located on two concentric rings centered on the fixation point. The radius for low-cost targets was 3.5–4°; the radius for high-cost targets was 10–16°. In each trial, one of the saccade targets was placed on the low-cost (small radius) ring while the other saccade target was placed on high-cost (large radius) ring. The two targets were always placed on opposite sides of the center fixation point. The angle defining their position was selected on every trial among four possible values, corresponding to 22.5°, 157.5°, 202.5°, and 337.5° from azimuth. Thus, for each juice, there were eight possible saccade target positions (2 distances × 4 angles). The monkey maintained center fixation for a randomly variable delay (0.6–1.2 s), at the end of which the fixation point was extinguished (go signal). At that point, the animal was allowed to indicate its choice with a saccade. The animal had to maintain peripheral fixation for an additional 0.75 s, at the end of which the chosen juice was delivered. In each session, the two juice quantities varied pseudo-randomly from trial to trial. The spatial positions of the offers, the action costs, and the angle of the saccade targets varied pseudo-randomly and were counter-balanced across trials. Different pairs of juices were used across sessions.
 
-## Neuronal recordings
+### Neuronal recordings
 
 Procedures for surgery, neuronal recordings, and spike sorting were similar to those described previously (Cai and Padoa-Schioppa, 2014). In brief, the recording chamber (main axes, 50 mm × 30 mm) was centered on stereotaxic coordinates (A30, L0), with the longer axis parallel to the coronal plane. Neuronal recordings were guided by structural MRI obtained for each animal before and after the implant. In monkey B, we recorded from both hemispheres and recording locations ranged A28-A38 in the anterior-posterior direction (with the corpus callosum extending anteriorly to A36). In monkey L, we recorded from the left hemisphere and recording locations ranged A25-A34 in the anterior-posterior direction (with the corpus callosum extending anteriorly to A31). Tungsten electrodes (125 µm diameter, FHC) were advanced using custom-built motorized micro-drives, with a 2.5 µm resolution. We typically used four electrodes in each session. Electrical signals were amplified and band-passed filtered (high pass: 300 Hz, low pass: 6 kHz; Lynx 8, Neuralynx, Inc). Action potentials were detected on-line and waveforms were saved to disk (25 kHz sampling rate; Power 1401, Spike 2; Cambridge Electronic Design). Spike sorting was conducted off-line (Spike 2; Cambridge Electronic Design) and only cells that appeared well isolated and stable throughout the session were included in the analysis.
 
-## Analysis of choice patterns
+### Analysis of choice patterns
 
 All analyses were conducted in Matlab (MathWorks). On any given trial, one ‘offer’ was defined by a juice type, its quantity, and its action cost (e.g., 3B−). An ‘offer type’ was defined by two offers (e.g., [1A+:3B−]). In this notation, ‘−’ indicates high action cost (long saccade) and ‘+’ indicates low action cost (short saccade). A ‘trial type’ was defined by two offers and a choice (e.g., [1A+:3B−, A]). Of note, the position of each saccade target was defined by a distance (two possible values) and an angle (four possible values). For the purpose of all the analyses, we turned the angle into a binary variable corresponding to whether the target associated to juice A or the chosen target was placed in the contralateral or ipsilateral hemifield.
 
-In the behavioral analysis, we examined several factors that could affect choices, including the juice quantity, the action cost, the outcome of the previous trial (choice hysteresis), a term capturing a visual side bias, and a term capturing a saccade side bias. We thus constructed the following logistic model:(1)choiceB=1/(1+e−x)X=a0qB−a1qA+a2(δjuiceB,+−δjuiceA,+)+a3(δn−1,B−δn−1,A)++a4(δcostofB,costn−1−δcostofA,costn−1)+a5(δofferB,left−δofferA,left)++a6(δtargetB,left−δtargetA,left)
+In the behavioral analysis, we examined several factors that could affect choices, including the juice quantity, the action cost, the outcome of the previous trial (choice hysteresis), a term capturing a visual side bias, and a term capturing a saccade side bias. We thus constructed the following logistic model:
+
+$$
+choiceB=1/(1+e^{−x})X=a_{0}q_{B}−a_{1}q_{A}+a_{2}(\delta_{juiceB,+}−\delta_{juiceA,+})+a_{3}(\delta_{n−1,B}−\delta_{n−1,A})++a_{4}(\delta_{costofB,costn−1}−\delta_{costofA,costn−1})+a_{5}(\delta_{offerB,left}−\delta_{offerA,left})++a_{6}(\delta_{targetB,left}−\delta_{targetA,left})
+$$
 
 where choice B = 1 if the animal chose juice B and 0 otherwise; qJ was the quantity of juice J offered (with J = A, B); δjuice J, + = 1 if juice J was offered at low cost and 0 otherwise; δn−1, J = 1 if in the previous trial the animal had chosen and received juice J and 0 otherwise; δcost of J, cost n−1 = 1 if the cost of J is the same as that chosen in the previous trial and 0 otherwise; δoffer J, left = 1 if the offer of juice J was placed to the left of the center fixation and 0 otherwise; and δtarget J, left = 1 if the saccade target associated with juice J was placed in the left hemifield and 0 otherwise. For each session, the logistic regression provided a measure for the relative value of the two juices (ρ = a1/a0), for the difference in action cost (ξ = a2/a0), for the choice hysteresis related to the chosen juice (η = a3/a0) and to the chosen cost (φ = a4/a0), and for the spatial biases related to the offer position (δ = a5/a0) and to the target position (ε = a6/a0). In this formulation, each factor (action cost, hysteresis, spatial biases) is quantified as a value term, and all values are expressed in units of juice B. The relative value (ρ) is essentially the quantity ratio qB/qA that makes the animal indifferent between the two juices. The factor a1 can be thought of as an inverse temperature capturing the steepness of the sigmoid once all the effects included in the logistic regression are accounted for.
 
-## Task-related responses
+### Task-related responses
 
 Each cell was analyzed in relation to the choice pattern recorded in the same session. In each trial, the neuronal activity was analyzed in nine time windows aligned with different behavioral events: pre-offer (0.5 s before the offer), post-offer (0.5 s after offer on), late-delay (0.5–1.0 s after offer on), mem-delay (0–0.5 s after offer off), pre-target (0.5 s before target on), post-target (0.5 s after target on), pre-go (0.5 s before the ‘go’), pre-juice (0.5 s before juice delivery), and post-juice (0.5 s after juice delivery). To identify task-related responses, each neuronal response was submitted to two 3-way ANOVAs (factors [trial type × offer A location × target A location]; factors [trial type × chosen offer location × chosen target location]). We imposed a significance threshold p < 0.001. Responses that passed this criterion for at least one factor in either ANOVA were identified as ‘task related’ and included in subsequent analyses.
 
-## Variable selection analysis
+### Variable selection analysis
 
 Our goal was to identify the variables encoded in ACCd during economic choices under variable action cost. Our strategy was to define a large number of variables neurons in this area might conceivably encode, and to use procedures for variable selection to identify a small subset of variables that would best explain the population. Our analysis combined the approach previously adopted to analyze ACCd activity during standard choices (Cai and Padoa-Schioppa, 2012) with that adopted for OFC activity recorded using the present task (Cai and Padoa-Schioppa, 2019). The variables defined Table 2 and included in the analysis are essentially the same defined for OFC activity in this task (Cai and Padoa-Schioppa, 2019). Concurrently, earlier work found that many neurons in ACCd encoded the movement direction, alone or convolved with other decision variables (Cai and Padoa-Schioppa, 2012). Importantly, the present task dissociated the spatial location of the chosen offer from the movement direction. Thus, neuronal responses were analyzed with an ANCOVA using the variables defined in Table 2 as regressors and grouping data by whether the chosen offer or chosen target was on the ipsilateral or on the contralateral hemifield (binary variable). For early time windows (before target presentation), the categorical variable included in the ANCOVA was chosen offer location; for late time windows (after target presentation), the categorical variable was chosen target location.
 
@@ -144,6 +408,6 @@ In preliminary analyses, we tested different models of the ANCOVA and observed t
 
 The detailed procedures used in the variable selection analysis were described in previous reports (Cai and Padoa-Schioppa, 2012; Cai and Padoa-Schioppa, 2019) and we performed the analysis based on the neuronal activity across all nine time windows. Two procedures – stepwise and best-subset – identified a small number of variables that best explained the neuronal data set. The ‘explanatory power’ of any subset of variables was defined as the total number of responses collectively explained by those variables. In the stepwise procedure, we selected at each step the variable that provided the highest number of best fits within any time window. We then removed from the data set all the responses explained by this variable and we repeated the procedure on the residual data. The procedure was repeated until when the marginal explanatory power of any additional variable fell <2%. In the best-subset procedure, we identified the subset of n variables that collectively provided the highest explanatory power. Importantly, the best-subset procedure warrants optimality and the two procedures applied to our data set provided identical results.
 
-## Dimensional integration in chosen value signals
+### Dimensional integration in chosen value signals
 
 We examined the integration of multiple determinants into single value signals for chosen value (juice) responses. To do so, we defined two variants of the variable chosen value (juice) – one cost-affected and one cost-independent. We sought to assess which variant better fit neuronal responses. For each response, we considered the two R2 and we computed the difference ΔR2 = R2cost-affected – R2cost-independent and we examined the distribution for ΔR2 across the population. We did not want to bias the results in favor of either variant. Thus, for this analysis we identified neuronal responses encoding the chosen value (juice) as follows. For each response and each value variable, we considered the two R2 obtained from the two variants, and we assigned the maximum R2 to the response. We then assigned each response to one of the selected variables accordingly.

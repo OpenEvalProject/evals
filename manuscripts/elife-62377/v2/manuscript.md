@@ -31,21 +31,45 @@ Given that both Lkb1 signaling and autophagy play indispensable roles in maintai
 
 ## Results
 
-## Acute systemic Stk11 deletion upregulates autophagy in adult mouse
+### Acute systemic Stk11 deletion upregulates autophagy in adult mouse
 
 Tissue-specific Stk11 knockout studies demonstrate that Lkb1 plays an important role in supporting tissue and organ homeostasis (Ollila and Mäkelä, 2011). However, how Lkb1 regulates adult mouse homeostasis is unknown. Autophagy is required to maintain tissue homeostasis and mouse survival in starvation (Komatsu et al., 2005; Karsli-Uzunbas et al., 2014). Whether and how Lkb1 and Atg7 interact to maintain tissue homeostasis for adult mouse survival remains an open question. To address this, we generated genetically engineered mouse models, in which Atg7 and Stk11 were surrounded by flox alleles, whereas the expression of a TAM-regulated Cre-recombinase was manipulated through the ubiquitously expressed ubiquitin C (Ubc) promoter (Ruzankina et al., 2007). Four mouse strains were generated: Ubc-CreERT2/+, Ubc-CreERT2/+;Atg7flox/flox, Ubc-CreERT2/+;Stk11flox/flox, and Ubc-CreERT2/+;Atg7flox/flox;Stk11flox/flox. Following TAM injections in 8–10 week-old mice, Cre is activated, leading to the deletion of Atg7 or Stk11, and producing a near complete and sustained loss of Atg7 protein (Atg7-/- mice), Lkb1 protein (Stk11-/- mice), or dual deletions of Atg7 and Lkb1 proteins (Atg7-/-;Stk11-/- mice) in all tissues (Figure 1a). The deletions of Lkb1 and Atg7 throughout the mouse tissues were confirmed by western blot (Figure 1b). In addition, accumulation of autophagy substrate p62 was observed in all tissues of the mice with Atg7 ablation (Atg7-/- mice and Atg7-/-;Stk11-/- mice) (Figure 1c), indicating autophagy blockade.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig1-v2.jpg)
+
+**Figure 1.:** (a) Experimental design for generation of Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice. (b) Western blotting for Atg7 and Lkb1 of the indicated tissues from WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice. β-actin serves as a protein loading control. (c) Representative IHC for p62 of different tissues from WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice. (d) Western blotting for pACC (S79), total ACC, pS6 (S235/236), total S6, and Atg5-Atg12 from different tissues of WT control and Stk11-/- mice. β-actin serves as a protein loading control. Numbers indicate the quantification of phospho-protein levels normalized to total levels of protein, β-actin and WT control. (e) Representative IHC for pAMPK (Th172), pACC (S79), pS6 (S235/236), and pULK1 (S555 and S757) in different tissues of WT control and Stk11-/- adult mice. (f) Western blotting for p62, LC3I and LC3II in different tissues of WT control and Stk11-/- mice with or without HCQ treatment. β-actin serves as a protein loading control. Numbers indicate the quantification of protein levels normalized to β-actin and WT control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative IHC for pAMPK (T172), pACC (S79), pS6 (S235/236), and pULK1 (S555 and S757) in the tissues of WT control and Stk11-/- mice. (b) Representative IHC for pS6 (S235/236) at lower magnification in the tissues of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice.
+
 Given that AMPK is required for autophagy activation, Lkb1 deficiency leads to the loss of AMPK activity and suppression of autophagy (Lage et al., 2008). Consequently, studying the role of autophagy in the mice with systemic loss of Lkb1 may be considered counterintuitive. However, studies from us and other groups have shown that AMPK is activated in the mouse Kras-driven lung tumors with Lkb1 loss (Bhatt et al., 2019; Eichner et al., 2019). Indeed, we also observed that autophagy is required for Kras-mutant Stk11-deficient lung tumorigenesis (Bhatt et al., 2019). Instead of Lkb1, AMPK can be activated by calmodulin-dependent kinase kinase (CaMKK) and transforming growth factor beta-activated kinase1 (TAK1) (Hardie, 2011; Sanders et al., 2007), further leading to autophagy activation. We therefore examined AMPK-mTOR-autophagy axis by assessing the status of phospho (p)-AMPK, phosphorylation of AMPK downstream targets acetyl-CoA carboxylase (ACC) and ULK1, phosphorylation of S6 by mTOC1 substrate S6 Kinase 1, Atg5-Atg12 conjugation and p62 levels (Alessi et al., 2006; Zoncu et al., 2011). As expected, pAMPK (T172) was observed in the tissues of Stk11-/- mice. Consistent with AMPK activation, phosphorylation of ULK1 (S555) and ACC (S79) was also detected in the tissues of Stk11-/- mice. Most interestingly, although pAMPK was not further increased in the tissues of Stk11-/- mice, pS6 which indicates the activation of mTORC1 signaling was significantly reduced in the tissues of Stk11-/- mice compared with WT mice. With the decrease of pS6, the level of pULK1(S757), a phosphorylation site by mTORC1 (Egan et al., 2011; Kim et al., 2011), was reduced in the tissues of Stk11-/- mice compared with WT mice (Figure 1d and e, and Figure 1—figure supplement 1a and b). Moreover, Atg5-Atg12 conjugation was observed in the most tissues of Stk11-/- mice (Figure 1d). We further examined the autophagic flux in Stk11-/- mice by administering the mice with hydroxychloroquine (HCQ) that blocks the fusion of autophagosomes with lysosomes (Yang et al., 2013). Accumulation of autophagy substrates including both microtubule-associated protein 1A/1B- light chain3 (LC3) I and II along with p62 was observed in most tissues of mice after 5 hr of HCQ treatment. Moreover, HCQ treatment led to a higher accumulation of LC3-II and p62 in Stk11-deficient mice compared with WT control mice (Figure 1f). Taken together, we demonstrated that autophagy is activated and upregulated in the mice with acute loss of Lkb1.
 
-## Interaction of Lkb1 and autophagy is required for adult mouse survival
+### Interaction of Lkb1 and autophagy is required for adult mouse survival
 
 It has previously been shown that mice with systemic autophagy ablation have a life span of 2–3 months and the mortality is due to initial Streptococcus infection and eventual neurodegeneration (Karsli-Uzunbas et al., 2014), whereas, adult mice with whole-body Stk11 deletion survive for up to 6 weeks (Shan et al., 2016). Given that both Lkb1 signaling and autophagy pathway regulate cellular homeostasis (Guo et al., 2013; Karsli-Uzunbas et al., 2014; Lage et al., 2008; Gao et al., 2020), we hypothesize that upregulation of autophagy in Stk11-deficient mice might compensate for the acute Lkb1 loss to maintain energy homeostasis for mouse survival. Therefore, we evaluated the overall survival of adult mice with acute deletion of Atg7 and Stk11 respectively or in combination. Our data reproduced the survival rate for Atg7-deficient mice when Atg7 was acutely deleted in adult mice (Figure 2a; Karsli-Uzunbas et al., 2014). The life span of Stk11-deficient mice was limited to 3.5 weeks post-TAM administration. Co-deletion of Atg7 and Stk11 led to a significant decrease in the survival of Atg7-/-;Stk11-/- mice compared with Stk11-/- or Atg7-/- mice, resulting 2 weeks of survival (Figure 2a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig2-v2.jpg)
+
+**Figure 2.:** (a) Kaplan-Meier survival curve of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice. ***p<0.001, and ****p<0.0001 (log-rank Mantel-Cox test). (b) Left: Body weight was obtained at 10 days post-TAM administration. For the actual weight, 8–10 weeks old mice with original weight range between 20 and 25 g were used. Right: For relative mice weight, each final weight was normalized to its original weight before TAM administration, subsequently normalized to the WT control. Data are mean ± s.e.m. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Quantification of red blood cells, white blood cells, and platelets of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice. Data are mean ± s.e.m. *p<0.05, ns: non-significant.
+
 At 10 days post-TAM injection, compared with WT control mice, there was a loss of body weight in Stk11-/- mice, which was significantly deteriorated by the loss of Atg7 (Figure 2b). Hematopoietic-specific Stk11-deficient mice died from pancytopenia (Gan et al., 2010). We did not observe any differences of red and white blood cell and platelet count among WT control, Atg7-/-, and Stk11-/- mice; however, the platelet count in Atg7-/-;Stk11-/- mice was significantly higher than that in WT control mice (Figure 2—figure supplement 1).
 
-## Acute autophagy ablation aggravates Lkb1-deficiency-induced loss of secretory cell structure in small intestine
+### Acute autophagy ablation aggravates Lkb1-deficiency-induced loss of secretory cell structure in small intestine
 
 To elucidate the underlying mechanism by which Atg7 and Stk11 ablation alone or in concurrent impacts the mouse survival, we examined the histology of different tissues. After short-period (10 days) of protein deletion, which is before the death of Atg7-/-;Stk11-/- mice, the damage of tissues was not observed in Atg7-deficient mice (Figure 3—figure supplement 1a). Moreover, except for the intestine (Figure 3a), most of the tissues in both Stk11-/- and Atg7-/-;Stk11-/- mice were not visibly affected as examined by hematoxylin and eosin (H&E) staining (Figure 3—figure supplement 1a). Same as tissue-specific Stk11 deletion in intestinal-epithelium cells (Shorning et al., 2009), enlarged undifferentiated goblet-Paneth cells in the crypt of intestine, including duodenum, jejunum, and ileum, were observed in Stk11-/- mice, which was further exacerbated by the concurrent ablation of Atg7 in Atg7-/-;Stk11-/- mice (Figure 3a). This observation was further confirmed by Alcian blue staining for goblet cells (Figure 3b) and immunohistochemistry (IHC) for lysozyme staining to detect Paneth cells (Figure 3c). The decreased intensity of lysozyme staining indicates less frequent and undifferentiated Paneth cells in Atg7-/-;Stk11-/- mice (Figure 3c). In addition to western blot (Figure 1b), the deletion of Lkb1 and Atg7 specifically in intestine was also confirmed by IHC (Figure 3—figure supplement 1b). In consistent with the induction of autophagy in Stk11-deficient mice, LC3-II puncta were observed in the intestine of Stk11-/- mice (Figure 3—figure supplement 1c).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig3-v2.jpg)
+
+**Figure 3.:** (a) Representative H&E staining of duodenum, jejunum, and ileum for WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice. (b) Left: Representative alcian blue staining of adult mouse intestine shows the enlargement of mucin-secreting cells in Stk11-/- and Atg7-/-;Stk11-/- mice. Right: Quantification of alcian blue positive cells in duodenum, jejunum, and ileum. Data are mean ± s.e.m. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. (c) Left: Representative IHC for intestinal lysozyme shows decrease of Paneth cell population in Stk11-/- and Atg7-/-;Stk11-/- crypts. Right: Quantification of lysozyme-positive cells in duodenum, jejunum, and ileum. Data are mean ± s.e.m. **p<0.01, ***p<0.001, ****p<0.0001, and ns means non-significant. (d) Left: Representative IHC for OLFM4 of intestine shows the decrease of stem cells with greater extent in Atg7-/-;Stk11-/- crypts compared with WT control and Stk11-/- mice. Right: Quantification of OLFM4-positive cells in duodenum, jejunum, and ileum. Data are mean ± s.e.m. *p<0.05, **p<0.01, and ns means non-significant. (e) Left: Representative IHC for cleaved caspase-3 of intestine delineates increase of cell death in intestine villi and tips of villi in Atg7-/-;Stk11-/- compared with WT control and Stk11-/- mice. Right: Quantification of cleaved caspase-3. Data are mean ± s.e.m. *p<0.05. (f) Left: Representative TUNEL assay in intestine sections shows increase of cell death in intestine villi and tips of villi in Atg7-/-;Stk11-/- mice compared with WT control, Atg7-/- and Stk11-/- mice. Quantification of TUNEL-positive cells in intestine. Data are mean ± s.e.m. ***p<0.001. (g) Representative relative FITC-dextran levels in sera of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice at 4 hr post-oral gavage of FITC-dextran. Data are mean ± s.e.m. *p<0.05, **p<0.01, ***p<0.001. (h) The level of serum D-lyxose in WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice measured by LC-MS shows an increase of D-lyxose in Atg7-/-;Stk11-/- sera compared with WT control mice. Data are mean ± s.e.m. *p<0.05, **p<0.01. (i) Kaplan-Meier survival curve of Stk11-/-, and Atg7-/-;Stk11-/- mice treated with or without broad-spectrum antibiotics (log-rank Mantel-Cox test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Representative brain, heart, kidney, liver, lung, muscle, pancreas, and spleen histology (H&E staining) of WT control, Atg7-/-, Stk11-/-, and Atg7-/-; Stk11-/- adult mice. (b) Representative IHC for Atg7 and Lkb1 from intestine of WT control, Atg7-/-, Stk11-/- , and Atg7-/-;Stk11-/- adult mice. (c) Representative IHC for LC3 from intestine of WT control, Atg7-/-, Stk11-/-, and Atg7-/-; Stk11-/- adult mice shows accumulation of LC3II puncta (arrows) in Stk11-deficient mice. (d) Representative IHC for Ki67 from intestine of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice shows no significant difference in the rate of proliferation within the groups. (e) Representative lower magnification of TUNEL assay in intestine sections shows increase of cell death in intestine villi and tips of villi in Atg7-/-;Stk11-/- mice compared with WT control, Atg7-/-, and Stk11-/-.
 
 To evaluate the role of Lkb1 and autophagy in other components of the small intestinal crypt, we examined the status of stem cells that reside at the bottom of the crypt for regenerating almost all the epithelium cells, including Paneth and goblet cells, enterocytes and tuft cells (Birchenough et al., 2015; Clevers, 2013). IHC for olfactomedin4 (OLFM4) (an intestine stem cell marker) shows the lower intensity and frequency of the cells expressing OLFM4 in Stk11-/- and Atg7-/-;Stk11-/- mice compared with WT control or Atg7-/- mice (Figure 3d). However, short-term deletion of Atg7 alone only impaired Paneth cell formation (Figure 3c; Wittkopf et al., 2012).
 
@@ -53,19 +77,35 @@ The structure of the small intestine was extremely damaged by Lkb1 deletion alon
 
 Taken together, we show that Lkb1 is necessary for maintaining the structural integrity of the intestine and that autophagy activation partly compensates for the severe intestinal phenotype induced by the loss of Lkb1.
 
-## Autophagy activation in Stk11-deficient mice protects the intestinal epithelium-barrier function
+### Autophagy activation in Stk11-deficient mice protects the intestinal epithelium-barrier function
 
 Intestinal epithelium cell-specific deletion of Stk11 results in an increased susceptibility to dextran sodium sulfate-induced colitis and a definitive shift in the composition of the microbial population in the mouse intestine (Liu et al., 2018), suggesting that Lkb1 plays an important role in maintaining the immune barrier function of the intestinal epithelium. Moreover, it has recently been reported that autophagy is essential for the maintenance of Lgr5+ stem cells and regeneration of epithelium barrier during cytotoxic stress (Trentesaux et al., 2020). We therefore examined the integrity of intestinal epithelium-barrier in mice with systemic deletion of Atg7 or Stk11 alone, or their co-deletion by measuring the Fluorescein Isothiocyanate (FITC)-dextran in-fluxed from the gastrointestinal tract to peripheral circulation. We observed significantly increased levels of serum FITC-dextran in Stk11-deficient mice compared with WT control mice, which was further increased by the co-deletion with Atg7 in Atg7-/-;Stk11-/- mice (Figure 3g). However, short-term systemic ablation of Atg7 alone did not impair intestinal epithelium-barrier (Figure 3g). This observation suggests that upregulated autophagy by acute Stk11 deletion is required for the maintenance of intestinal epithelium-barrier.
 
 Loss of intestinal epithelium-barrier causes mice to be susceptible to bacterial infection (Liu et al., 2018). We found that the levels of D-lyxose, an aldopentose sugar and a component of the bacterial glycolipids (Cho et al., 2007), was significantly increased in Atg7-/-;Stk11-/- mice compared with WT control mice (Figure 3h), indicating defective bacterial defense. We therefore hypothesized that increased bacterial infection by loss of intestinal epithelium barrier could contribute to the mouse death caused by co-deletions of Stk11 and Atg7. Hence, we treated the Stk11-/- and Atg7-/-;Stk11-/- mice with broad-spectrum antibiotics and assessed the mouse survival rate in comparison with untreated ones. Broad-spectrum antibiotics administration significantly extended the survival of Atg7-/-;Stk11-/- mice, whereas, did not affect the lifespan of Stk11-/- mice. Moreover, antibiotics treatment led to no significant difference of mouse survival between treated Atg7-/-;Stk11-/- mice and un-treated Stk11-/- mice (Figure 3i). Thus, one of the potential mechanisms of autophagy activation in response to acute systemic Lkb1 deficiency could be to maintain the survival of mice by preventing bacterial invasion.
 
-## Autophagy activation in Stk11-deficient mice prevents p53 activation to maintain mouse survival
+### Autophagy activation in Stk11-deficient mice prevents p53 activation to maintain mouse survival
 
 Given that autophagy drives an inhibitory role toward p53 activation (Guo et al., 2013; White, 2016; Yang et al., 2020), we expected to observe an increased p53 activation in autophagy-deficient mouse tissues. Indeed, IHC staining for p53 showed that the frequency of nuclear p53 was significantly higher in most tissues of Atg7-/-;Stk11-/- mice compared with Stk11-/- mice or WT control mice after short-term deletion of the genes (Figure 4a and Figure 4—figure supplement 1). This is also accompanied by the significantly increased mRNA levels of p53-targted downstream genes such as p21 and phosphatase and tensin homolog (PTEN) in Atg7-/-;Stk11-/- mice compared with Stk11-/- mice or WT control mice (Figure 4b). Accordingly, we tested the hypothesis that activation of autophagy by acute Stk11 ablation could prevent mouse death by inhibiting p53 activation. To address this, two new cohorts of mice were generated: Ubc-CreERT2/+;Stk11flox/flox;Trp53flox/flox, and Ubc-CreERT2/+;Atg7flox/flox;Stk11flox/flox;Trp53flox/flox. TAM administration can cause concurrent deletion of Stk11 and Trp53 (Stk11-/-;Trp53-/- mice) or Atg7, Stk11, and Trp53 (Atg7-/-;Stk11-/-;Trp53-/- mice) throughout the whole body. We evaluated the role of Trp53 deletion in mouse survival by comparing with Stk11-/- mice and Atg7-/-;Stk11-/- mice that have intact Trp53. Systemic Trp53 ablation had no effect on the survival of Stk11-deficient mice. However, whole-body ablation of Trp53 significantly extended the life span of Atg7-/-;Stk11-/- mice (Figure 4c). Moreover, the apoptotic cell death in intestine was abolished when p53 was deleted (Figure 4d and e). Thus, when Stk11 is acutely ablated throughout the adult mice, autophagy inhibits p53 activation to temporarily extend the mouse life span.
 
-## Lkb1 and Atg7 are required to maintain adult mice homeostasis
+![Figure 4.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig4-v2.jpg)
+
+**Figure 4.:** (a) Left: Representative IHC for p53 in different tissues of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice shows an increase of nuclear p53 in Atg7-ablated tissues. Right: Bar graphs represent the quantification of nuclear p53 in different tissues. Data are mean ± s.e.m. *p<0.05, **p<0.01, and ***p<0.001. (b) Quantitative real-time PCR of Cdkn1a (p21) and PTEN for intestine tissues of WT control, Atg7-/-, Stk11-/- and Atg7-/-;Stk11-/- adult mice. Data are mean ± s.e.m. *p<0.05, ***p<0.001, and ****p<0.0001. (c) Kaplan-Meier survival curve of Stk11-/-, Atg7-/-;Stk11-/-, Stk11-/-;Trp53-/-, and Atg7-/-;Stk11-/-;Trp53-/- adult mice. ***p<0.001, ****p<0.0001 and ns: non-significant (log-rank Mantel-Cox test). (d) Representative IHC for cleaved caspase-3 of intestine from Atg7-/-;Stk11-/-, Atg7+/+;Stk11-/-;Trp53-/-, and Atg7-/-;Stk11-/-;Trp53-/- adult mice. (e) Representative TUNEL assay of intestine from Atg7-/-;Stk11-/-, Atg7+/+;Stk11-/-;Trp53-/- and Atg7-/-;Stk11-/-;Trp53-/- adult mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative IHC of p53 with lower magnification in brain, heart, intestine, kidney, liver, muscle, and spleen of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice shows the increase of nuclear p53 in Atg7-ablated tissues.
+
+### Lkb1 and Atg7 are required to maintain adult mice homeostasis
 
 To further elucidate the underlying mechanism of Lkb1 and Atg7 in supporting adult mice survival, we performed serum metabolomics in fasting state after short-term deletion of the genes. Of the 90 metabolites we examined, we found that acute deletion of Atg7 or Stk11 alone significantly decreased the levels of most essential and non-essential amino acids and some metabolites involved in urea cycle and glycolysis (Figure 5a–d). Interestingly, we found that the reduced levels of TCA cycle intermediates were only observed in the absence of Atg7 (Atg7-/- mice and Atg7-/-;Stk11-/- mice), but not in Stk11-deficient mice (Figure 5b). We further found that in both fasted state (Figure 5d) and fed state (Figure 5e), blood glucose level was significantly lower in Stk11-/- and Atg7-/-;Stk11-/- mice compared with WT control mice. Following that, we evaluated the serum insulin levels in all four groups of mice. The insulin levels in Stk11-/- and Atg7-/-;Stk11-/- mice were decreased with the same trend as glucose compared with WT control mice (Figure 5f). We also performed a metabolomics profiling analysis of the intestinal tissue (ileum) which showed significantly impaired histology and function in both Stk11-/- and Atg7-/-;Stk11-/- mice (Figure 3). The alteration of metabolic pathways in the intestine metabolomics profiling due to Atg7 and Stk11 ablation was consistent with the change in the serum metabolomics profiling; that is, the loss of Stk11 alone or together with Atg7 ablation resulted in the decreased levels of certain intermediates involved in the amino acid metabolism, TCA cycle, urea cycle, and glycolysis (Figure 5—figure supplement 1). Thus, autophagy synergizes with Lkb1 to maintain host homeostasis in the adult mice.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig5-v2.jpg)
+
+**Figure 5.:** (a) Left: Representative heat map of all the amino acids in sera of WT control, Atg7-/-, Stk11-/-, and Atg7-/-;Stk11-/- adult mice compared with WT control mice at fasting state. Right: Bar graphs show the levels of amino acids that are significantly decreased in Stk11-/- and Atg7-/-;Stk11-/- mice sera compared with WT control mice. Data are mean ± s.e.m. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. (b-d). Metabolites that are significantly decreased in the sera of Stk11-/- and Atg7-/-;Stk11-/- mice compared with WT control mice at fasting state. Data are mean ± s.e.m. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. (e) Relative blood glucose levels of WT control, Atg7-/-, Stk11-/- and Atg7-/-;Stk11-/- adult mice normalized to WT control mice at fed state for the indicated time course after first TAM injection. Data are mean ± s.e.m. *p<0.05. (f) Quantification of serum insulin levels of WT control, Atg7-/-, Stk11-/- and Atg7-/-;Stk11-/- adult mice at fasted state at 10 days post-deletion. Data are mean ± s.e.m. *p<0.05, **p<0.01, ns: non-significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62377/elife-62377-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a–d) Metabolites that are significantly decreased in the intestine of Stk11-/- and Atg7-/-;Stk11-/- mice compared with WT control mice. Data are mean ± s.e.m. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 ## Discussion
 
@@ -87,7 +127,199 @@ Autophagy upregulation extended the lifespan of Stk11-/- mice. However, it faile
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Atg7 (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# A2856</td>
+      <td>IHC: (1:400) WB: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Lkb1 (mouse monoclonal)</td>
+      <td>Sant Cruz Biotechnology</td>
+      <td>Cat# sc-32245</td>
+      <td>IHC: (1:50) WB: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P62 (Guinea pig)/ (Rabbit polyclonal)</td>
+      <td>Enzo Life Sciences/ American Research Products</td>
+      <td>Cat# PW9860-0100/ 03-GP62-C</td>
+      <td>IHC: (1:1000) WB: (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-AMPKTh172(Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2535S</td>
+      <td>IHC: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-ACCS79(Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 3661</td>
+      <td>IHC: (1:800) WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ACC (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 3676</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-S6S235/236(Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 4858</td>
+      <td>IHC: (1:300) WB: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S6 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2217</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-ULK1S555(Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 5869</td>
+      <td>IHC: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-ULK1S757(Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 14202</td>
+      <td>IHC: (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LC3 (Rabbit polyclonal)</td>
+      <td>Nano Tolls</td>
+      <td>Cat. #: LC3-5F10</td>
+      <td>IHC: (1:100) WB: (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki67 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab-15580</td>
+      <td>IHC: (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cleaved Caspase3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9661S</td>
+      <td>IHC: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OLFM4 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #:39141</td>
+      <td>IHC: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Lysozyme (Rabbit polyclonal)</td>
+      <td>Aligent</td>
+      <td>Cat. #: A0099</td>
+      <td>IHC: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P53 (mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat. #: NB200-103SS</td>
+      <td>IHC: (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Atg5 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab108327</td>
+      <td>WB: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-actin (mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: A1978</td>
+      <td>WB: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TUNEL assay</td>
+      <td>Abcam</td>
+      <td>ab206386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism GraphPad</td>
+      <td>Prism 8</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>CC2020</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse genotype</td>
+      <td>Ubc-CreERT2</td>
+      <td>Jackson Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse genotype</td>
+      <td>Stk11flox/flox</td>
+      <td>Jackson Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse genotype</td>
+      <td>Trp53flox/flox</td>
+      <td>Jackson Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse genotype</td>
+      <td>Atg7flox/flox</td>
+      <td>Komatsu et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal experiments were performed in compliance with Rutgers Animal Care and Use Committee (IACUC) guidelines. Ubc-CreERT2 mice (Ruzankina et al., 2007) (Jackson Laboratory) were cross-bred with Atg7flox/flox mice (Komatsu et al., 2005), Stk11flox/flox mice (Jackson Laboratory) and Trp53flox/flox mice (Jackson Laboratory) to generate UbcCreERT2/+;Atg7flox/flox mice, UbcCreERT2/+;Stk11flox/flox mice, UbcCreERT2/+;Atg7flox/flox;Stk11flox/flox mice, UbcCreERT2/+;Stk11flox/flox;Trp53flox/flox mice and UbcCreERT2/+;Atg7flox/flox;Stk11flox/flox;Trp53flox/flox mice.
 
@@ -99,30 +331,30 @@ To examine the effect of broad-spectrum antibiotics on the survival of Stk11-/- 
 
 Body weight was obtained at 10 days post-TAM administration. For relative mice weight, each final weight was normalized to its original weight before TAM administration, subsequently normalized to the WT control.
 
-## Serum assays
+### Serum assays
 
 Blood glucose was measured using a True2Go glucose meter (Nipro Diagnostics), and liquid chromatography–mass spectrometry (LC-MS) metabolomics analysis (mentioned below). Serum insulin levels were assessed with an ultra-sensitive mouse insulin (Crystal Chem Inc, 90080) kit.
 
-## Metabolomics analysis by LC-MS
+### Metabolomics analysis by LC-MS
 
 Tissue or serum metabolites extracted using methanol:acetonitrile:water (40:40:20) (with 0.5% formic acid solution for tissue metabolite extraction and without formic acid for serum metabolite extraction) followed by neutralization with 15% ammonium bicarbonate were used for LC-MS, as described previously (Guo et al., 2016). Samples were subjected to reversed-phase ion-pairing chromatography coupled by negative mode electrospray ionization to a stand-alone orbitrap mass spectrometer (Thermo Fisher Scientific).
 
-## Intestinal permeability analysis
+### Intestinal permeability analysis
 
 In vivo intestinal permeability was measured by FITC-dextran (Sigma Aldrich) gavage experiment. Mice were deprived from water overnight before oral gavaging with FITC-dextran at 44 mg/100 g body weight. Subsequently, water was provided after gavage and blood samples were collected by cardiac puncture at 4 hr post-gavage. Sera were collected after centrifuging blood at 10,000 rpm for 10 min using 1.5 mL heparin-lithium coat tubes. Fluorescence intensity of the serum was measured, and the concentration of FITC-dextran was assessed according to the standard curve generated by the serial dilution of FITC-dextran (Liu et al., 2018).
 
-## Histology, immunohistochemistry, and TUNEL assay
+### Histology, immunohistochemistry, and TUNEL assay
 
 Paraffin-embedded tissue sections were prepared as described previously (Guo et al., 2013) for H and E, and IHC staining. Antibodies utilized for IHC were Atg7 (Sigma Aldrich, A2856, RRID:AB_1078239), Lkb1 (Santa Cruz Biotechnology, sc-32245, RRID:AB_627890), p62 (Enzo Life Sciences, PW9860-0100, RRID:AB_2877676), p-AMPKTh172 (Cell Signaling, 2535S, RRID:AB_331250), p-ACCS79 (Cell Signaling, 3661, RRID:AB_330337), p-S6S235/236 (Cell Signaling, 4858, RRID:AB_916156), p-ULK1S555 (Cell Signaling, 5869, RRID:AB_10707365), p-ULK1S757 (Cell Signaling, 14202, RRID:AB_2665508), LC3 (Nano Tools, LC3-5F10, RRID:AB_2722733), Ki67 (Abcam, ab-15580, RRID:AB_443209), cleaved caspase-3 (Cell Signaling, 9661S), OLFM4 (Cell Signaling, 39141, RRID:AB_2650511), lysozyme (Agilent, A0099, RRID:AB_2341230), and p53 (Novus Biologicals, NB200-103SS, RRID:AB_2877680). Paraffin embedded tissue sections were used for the TUNEL assay by means of the HRP-DAB TUNEL staining kit (ab206386) and the slides were counterstained by methyl blue following the protocol provided by the TUNEL staining kit. For the quantification of IHC and TUNEL assay, tissues were analyzed by quantifying at least 10 images at 20x magnification. A minimum of 200 cells were scored for each image.
 
-## Western blotting
+### Western blotting
 
 Tissues were snap-frozen in liquid nitrogen, ground using Cryomill in liquid nitrogen at 25 Hz for 2 min, and then lysed in Tris lysis buffer (1M Tris-HCl, 1M NaCl, 0.1M EDTA, 10% NP40). Protein concentrations were measured using the Bio-Rad BCA reagent. Samples were probed with antibodies against Atg7 (Sigma Aldrich, A2856, RRID:AB_1078239), Lkb1 (Santa Cruz Biotechnology, sc-32245, RRID:AB_627890), LC3 (Novus Biologicals, NB600-1384, RRID:AB_669581), p62 (American Research Products, 03-GP62-C, RRID:AB_1542690), p-ACCS79 (Cell Signaling, 3661, RRID:AB_330337), ACC (Cell Signaling, 3676, RRID:AB_2219397), Atg5 (Abcam, ab108327, RRID:AB_2650499), p-S6S235/236 (Cell Signaling, 4858, RRID:AB_916156), S6 (Cell Signaling, 2217, RRID:AB_331355), and β-actin (Sigma Aldrich, A1978, RRID:AB_476692). Western blots were quantified with Image J (National Institutes of Health). The intensities of bands were used to calculate relative ratios of the indicated protein over loading control (β-Actin), which were then normalized based on the corresponding ratio in the wild type control sample.
 
-## Real-time PCR
+### Real-time PCR
 
 Total RNA was isolated from the tissues using Trizol (Invitrogen). cDNA was then reverse-transcribed from the total RNA using MultiScribe RT kit (Thermo Fisher). Real-time PCR was performed on Applied Biosystems StepOne Plus machine. Cdkn1a (p21), PTEN and actin genes were detected using predesigned commercial TaqMan primers for each gene accordingly (Cdkn1a: Mm00432448-m1, PTEN: mm00477210-m1, and Actin: Mm00607939-s1). Results were calculated using the ΔΔCT method and then normalized to actin.
 
-## Statistics
+### Statistics
 
 Data were expressed as the mean ± SEM. Statistical analyses were carried out with GraphPad Prism version 8.0 or Microsoft Excel. Significance in the Kaplan-Meier analyses to determine and compare the progression-free survival was calculated using the log-rank test. The mass spectra were analyzed by MAVEN software and the peak area of each detected metabolite was obtained. Statistical significance of metabolites was determined by a paired two-tailed Student’s t-test, and five mice from each genotype were used. p-Value of <0.05 was considered statistically significant. The heatmap of amino acids was generated by using R 3.6.1. program, and all values are processed by the mean normalization. Pearson algorithm was used for the hierarchical clustering of the rows.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.39595.001 Genome-wide association studies (GWAS) are a powerful approach for connecting genotype to phenotype. Most GWAS hits are located in cis-regulatory regions, but the underlying causal variants and their molecular mechanisms remain unknown. To better understand human cis -regulatory variation, we mapped quantitative trait loci for chromatin accessibility (caQTLs)—a key step in cis-regulation—in 1000 individuals from 10 diverse populations. Most caQTLs were shared across populations, allowing us to leverage the genetic diversity to fine-map candidate causal regulatory variants, several thousand of which have been previously implicated in GWAS. In addition, many caQTLs that affect the expression of distal genes also alter the landscape of long-range chromosomal interactions, suggesting a mechanism for long-range expression QTLs. In sum, our results show that molecular QTL mapping integrated across diverse populations provides a high-resolution view of how worldwide human genetic variation affects chromatin accessibility, gene expression, and phenotype. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that minor issues remain unresolved ( see decision letter ).
+Genome-wide association studies (GWAS) are a powerful approach for connecting genotype to phenotype. Most GWAS hits are located in cis-regulatory regions, but the underlying causal variants and their molecular mechanisms remain unknown. To better understand human cis-regulatory variation, we mapped quantitative trait loci for chromatin accessibility (caQTLs)—a key step in cis-regulation—in 1000 individuals from 10 diverse populations. Most caQTLs were shared across populations, allowing us to leverage the genetic diversity to fine-map candidate causal regulatory variants, several thousand of which have been previously implicated in GWAS. In addition, many caQTLs that affect the expression of distal genes also alter the landscape of long-range chromosomal interactions, suggesting a mechanism for long-range expression QTLs. In sum, our results show that molecular QTL mapping integrated across diverse populations provides a high-resolution view of how worldwide human genetic variation affects chromatin accessibility, gene expression, and phenotype.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that minor issues remain unresolved (see decision letter).
 
 ## Introduction
 
@@ -33,13 +33,35 @@ We recently developed an efficient approach for mapping molecular QTLs in which 
 
 ## Results
 
-## Pooled QTL mapping of variants affecting chromatin accessibility
+### Pooled QTL mapping of variants affecting chromatin accessibility
 
 We applied pooled QTL mapping (Kaplow et al., 2015; Tehranchi et al., 2016) to chromatin accessibility (CA), a reliable indicator of local cis-regulatory activity, as measured by the Assay for Transposase-Accessible Chromatin (ATAC-seq) (Buenrostro et al., 2015). In this approach, many samples are combined into a single pool, in which ATAC-seq (or another assay of interest) is performed only once. Genetic variants that affect CA in cis will cause the more accessible allele to increase in frequency after ATAC compared to before, whereas variants with no effect on accessibility will have no significant change in frequency (Figure 1A). For each SNP, we estimated the post-ATAC allele frequency from read counts of each allele present in the ATAC-seq reads and used a regression-based approach to estimate pre-ATAC allele frequency; the significance of the difference between these two frequencies is our caQTL p-value (Tehranchi et al., 2016).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig1-v1.jpg)
+
+**Figure 1.:** (A) Performing ATAC-seq in a pool of individuals selects DNA molecules with higher CA, thus enriching for more accessible alleles. In this example (ASW population), the G allele has a low pre-ATAC frequency but a high post-ATAC frequency, due to its increased CA. The ten population abbreviations refer to: CEU, Utah residents with North European ancestry; FIN, Finnish; TSI, Tuscan; IBS, Iberian; ASW, African-American from Southwest US; YRI, Yoruban; ESN, Esan; LWK, Luhya; GWD, Gambian; and CHB, Han Chinese. (B) The number of caQTLs (top), and the percent of all tested SNPs called as caQTLs (bottom). (C) Enrichment of caQTLs among dsQTLs (Degner et al., 2012), at a range of caQTL p-value cutoffs. (D) Quantitative effect sizes of caQTLs and dsQTLs are highly correlated (scales of each axis are not comparable, and do not affect the correlation coefficient).( E–F) The degree of allelic concordance between our caQTLs and: (E) dsQTLs (Degner et al., 2012). (F) bQTLs aggregated for five TFs (Tehranchi et al., 2016). Full results available in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** All replicates have 0.94 < r < 0.96.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Most SNPs fall close to the diagonal, as expected if most SNPs are not caQTLs. All populations have 0.90 < r < 0.94.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Bottom row: median –log10(p-value) as a function of IDR, plotted using a moving window of IDR values (window width = 0.01). Dashed red lines indicate the p-value cutoff of 5 × 10−4, corresponding to IDR ≈ 0.01.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** All populations show a similar excess of significant p-values.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig1-figsupp5-v1.jpg)
+
 We selected a total of 1000 lymphoblastoid cell lines (LCLs) with full genome sequences (Auton et al., 2015) from 10 diverse populations: four European, four African, one African-American, and one Han Chinese (Figure 1A, Figure 1—source data 1). We combined 66–112 unrelated individuals from each population into one pool per population, and performed ATAC-seq with two biological replicates per population (Figure 1—figure supplement 1), resulting in a total of ~808 million informative autosomal reads from 20 pools. All populations showed a high correlation between pre-ATAC and post-ATAC allele frequencies (average Pearson r = 0.92; Figure 1A, Figure 1—figure supplement 2), as expected if most SNPs do not affect CA and thus have similar pre- and post-ATAC frequencies (Tehranchi et al., 2016). At a nominal p<5×10−4—corresponding to an irreproducible discovery rate (IDR, analogous to a false discovery rate; Figure 1—figure supplement 3) of ~1%—we mapped 13,657 to 26,182 independent caQTLs per population. This comprised 1.5–3.0% of all testable SNPs, defined as those with >2% minor allele frequency (MAF) and covered by at least 20 reads (Figure 1B, Figure 1—figure supplement 4). A total of 126,773 caQTLs were significant in at least one population (Supplementary file 1).
 
-## Accuracy and efficiency of pooled QTL mapping
+### Accuracy and efficiency of pooled QTL mapping
 
 To gauge the accuracy of our caQTLs, we compared them with previously mapped QTLs. DNase-seq is another method used to assay chromatin accessibility, and SNPs affecting DNase read density—known as dsQTLs—have been mapped using 70 individual (non-pooled) Yoruban LCLs (Degner et al., 2012). We compared our caQTLs to dsQTLs in three ways. First, testing the overlap between these two sets, we found a 33- to 76-fold enrichment of dsQTLs among caQTLs, with highest enrichment in the five African/African-American populations (Figure 1C; enrichments for other QTLs in Figure 1—figure supplement 5). Second, we compared the quantitative effect sizes of caQTLs and dsQTLs, and found excellent agreement (Pearson r = 0.85; Figure 1D). Third, we tested how the directionality agreement (whether caQTLs and dsQTLs call the same allele as more accessible) changes with the caQTL p-value, and found that agreement increased with more stringent cutoffs, reaching 96.7–98.1% agreement at caQTL p<5×10−4 (Figure 1E). These three tests show that our caQTLs are consistent with dsQTLs mapped with unpooled samples.
 
@@ -47,17 +69,37 @@ Because accessible chromatin is more often bound by TFs, we also tested the dire
 
 To assess the efficiency of our pooling approach, we compared our results with caQTLs mapped with RASQUAL—a computational QTL mapping approach that accounts for many possible confounding variables—in non-pooled European LCLs (Kumasaka et al., 2016). At a matched cutoff in our CEU population, we mapped 2.8-fold more caQTLs with 15-fold fewer reads and 12-fold fewer ATAC-seq libraries—a ~ 40 fold improvement in cost per caQTL (see Supplemental Note). Overall, our comparisons with previously mapped QTLs (Figure 1C–F, Figure 1—figure supplement 5) suggest that pooling is an efficient strategy that agrees well with unpooled QTL mapping.
 
-## caQTLs shared across populations
+### caQTLs shared across populations
 
 We next assessed the extent of caQTL sharing across populations. A caQTL might not be shared due to biological causes, such as dependence of a variant’s effect on the genetic background (epistasis), or due to trivial causes such as not meeting our 20 read cutoff in one population. To exclude trivial cases we focused on 142,049 variants that were testable in all ten populations. Among these, we observed a clear trend for increased sharing within continents: the mean fraction of shared caQTLs was 59.9% within Africans and 59.8% within Europeans, compared to 48.4% between these two groups (Figure 2A). The Han Chinese (CHB) caQTLs were shared moderately with Europeans (52.4%) and less well with Africans (47.7%), reflecting their closer relatedness to Europeans. In addition, African-American (ASW) caQTLs showed greater sharing with all five European/Han populations than any of the four African populations did, consistent with their admixed ancestry. Restricting the analysis to caQTLs with similar allele frequencies across populations led to a similar pattern (Figure 2—figure supplement 1). The concordance between caQTL sharing and known phylogenetic relationships suggests that some caQTLs may have population-specific effects, as has also been observed for other types of molecular QTLs (Stranger et al., 2012; Fraser et al., 2012), though the biological mechanisms underlying this divergence will require further study.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig2-v1.jpg)
+
+**Figure 2.:** (A) Heatmap showing the overlap in caQTLs for every pair of populations (only for variants that were testable in all ten). To avoid issues related to arbitrary p-value cutoffs, we used the shift in p-value distribution, known as π1 (Storey et al., 2004), to assess overlap. (B) Mapping a trait in multiple populations differing in LD structure allows fine-mapping of causal variants, which will show the most consistent associations. (C) caQTLs shared across many populations (at p<5×10−4) are more highly enriched for experimentally-determined causal eQTL variants (Tewhey et al., 2016). Full results available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** One possible explanation for the increase sharing of caQTLs between closely related population (Figure 2A) is that since the allele frequency can affect power to detect QTLs, more similar allele frequencies could lead to greater levels of sharing. To test this possibility, for each SNP, we calculated the sharing as in Figure 2A after excluding any population that had a pre-ATAC allele frequency >5% away from the mean frequency across all 10 populations. Although this excluded 75% of pairwise comparisons, we still observed a similar pattern of sharing, suggesting that patterns of sharing are unlikely to be driven solely by allele frequency differences.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** In this case, CHB had the greatest power to detect an effect since it had a pre-ATAC allele frequency of 0.68 for the open allele, whereas the other seven all had frequencies > 0.95 and thus very little range for the open allele to increase in frequency post-ATAC.
 
 A fundamental limitation of human GWAS is their inability to pinpoint most causal variants, due to linkage disequilibrium (LD) that often results in many variants with equally strong associations (van de Bunt et al., 2015). However, causal variants can be fine-mapped by combining association data across populations, especially with African populations due to their low LD (Asimit et al., 2016). Causal variants should be consistently associated with a trait across populations, while tag SNPs—those associated only because of their LD with a causal variant—may only be associated in a subset of populations, due to differing LD structures (Figure 2B).
 
 We performed fine-mapping by searching for caQTLs present in multiple populations. To test whether this was indeed enriching for causal variants, we intersected our caQTLs with a collection of experimentally verified causal eQTL variants (Tewhey et al., 2016). We found increasing enrichment for known causal variants with increasing number of significant caQTL populations (Figure 2C), suggesting that combining the diverse LD patterns improved our mapping resolution substantially. In order to account for both the number of significant populations as well as the caQTL strength within each population (Figure 2—figure supplement 2), we calculated Fisher’s combined p-value for each caQTL across all ten populations; at a combined p<5×10−6, we identified 45,243 SNPs, which we refer to as ‘shared caQTLs’ (Supplementary file 2). Nearly all (99.8%) of these were significant across multiple populations, and 98.6% showed concordance of the more accessible allele across populations.
 
-## Characterizing fine-mapped caQTLs
+### Characterizing fine-mapped caQTLs
 
 Leveraging the high resolution of our fine-mapped shared caQTLs, we first investigated their genomic locations. We found that they were most highly enriched near active enhancers and transcription start sites (TSSs) (Ernst and Kellis, 2012), accounting for 54% of shared caQTLs in just 3.1% of the genome (Figure 3A, purple and dark green). However, these enrichments were primarily driven by ATAC-seq read density, reflecting greater chromatin accessibility in these regions; after controlling for read density, we found the strongest enrichments in weak enhancers (2.3-fold) and quiescent regions (3.6-fold), and 8.7-fold depletion near TSSs. We hypothesize that mutations affecting accessibility near TSSs are more likely to be deleterious, and thus selected against, resulting in the observed depletion. This 8.7-fold depletion near TSSs is greater than the analogous depletion of nonsynonymous changes in exons; in fact, we estimated that that these caQTLs are ~81% more likely to be deleterious, and removed by selection, than nonsynonymous mutations (see Supplemental Note). Consistent with this, we also found that caQTLs near active TSSs have lower minor allele frequencies than elsewhere in the genome (median MAF = 0.17 for active TSS regions and 0.18 for flanking active TSS regions, compared to 0.21 for caQTLs elsewhere; Wilcoxon p=1.5×10−28 and 8 × 10−6 respectively).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig3-v1.jpg)
+
+**Figure 3.:** (A) The fraction of the genome (left) and of shared caQTLs (right) in each of four classes, annotated based on chromatin signatures (Ernst and Kellis, 2012). TSS includes TSS flanking regions; full results in Supplementary file 2. (B) Searching for motifs enriched specifically among open alleles (using closed alleles from the same caQTLs as the background comparison set), we found 80 motifs enriched among open alleles (points below the diagonal). Repeating the analysis for closed alleles, we found no motifs enriched (above diagonal). Note that many motifs are partially overlapping, and thus not independent. Inset: fold-enrichment in open/closed alleles for five selected TFs. Full results in Figure 3—source data 1. (C) The number of caQTLs overlapping each position within the CTCF motif strongly mirrors the information content (i.e. the importance for binding) of that position, as expected if these caQTLs are causal variants affecting CA via CTCF binding. Full results available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** P-values are Bonferroni-corrected for four tests. See Materials and methods for details.
 
 Disruption of TF binding motifs can lead to caQTLs (Degner et al., 2012; Kumasaka et al., 2016). To investigate the effects of caQTL variants on TF binding motifs we searched for motifs enriched specifically in the more accessible caQTL alleles (by using the less accessible alleles as the background set), or in the less accessible alleles (see Materials and methods). We found 80 known TF motifs enriched in the open allele sequences (FDR ≤ 0.1% for each; Figure 3B), but none enriched in the closed alleles from the same caQTL loci. This striking asymmetry supports the idea that a major mechanism leading to caQTLs is disruption of TF binding, where caQTL variants matching the consensus motif—and thus promoting TF binding—result in more accessible chromatin. The most highly enriched motifs included TFs specific to immune cells like BATF, as well as more ubiquitous factors like CTCF (Figure 3B inset).
 
@@ -67,15 +109,33 @@ Since the shape of the DNA double helix is sequence-dependent, and can affect in
 
 In sum, our analyses of the fine-mapped caQTLs support the idea that these are highly enriched for causal variants, since non-causal SNPs in LD with causal variants would not be expected to disrupt known motifs (Figure 3B) or critical motif positions (Figure 3C).
 
-## Chromatin accessibility impacts long-range chromosomal interactions
+### Chromatin accessibility impacts long-range chromosomal interactions
 
 CTCF has a well-established role in mediating long-range interactions between chromosomal loci, an essential component of transcriptional regulation (Guo et al., 2015; Sanborn et al., 2015; Rao et al., 2014). Consistent with this role, we previously reported that bQTL alleles increasing CTCF binding also increase these long-range interactions (Tehranchi et al., 2016). To test if caQTLs also affect long-range interactions, we measured how often the more accessible allele had significantly more long-range interactions (with loci > 20 kb away) (Rao et al., 2014) than the less accessible allele, and vice versa; we found a 2.5-fold enrichment of the more accessible allele having more interactions (Figure 4A; binomial p<10−36), similar to the 2.2-fold bias of CTCF bQTLs (Tehranchi et al., 2016). The allelic ratio increased slightly (to 2.7-fold) when restricted to interactions > 100 kb apart. This enrichment was not observed for inter-chromosomal interactions (Figure 4—figure supplement 1), suggesting it is unlikely to be due to a nonspecific bias in the Hi-C assay. These results establish a role for CA in polymorphic long-range chromosomal interactions of a similar magnitude as CTCF.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig4-v1.jpg)
+
+**Figure 4.:** (A) Using allele-specific 3D chromosomal interaction (Hi-C) data from an LCL (Rao et al., 2014), we found that open alleles of caQTLs tend to have more long-range interactions than do the closed alleles, establishing a role for CA in polymorphic chromosomal interactions.(B) Splitting bQTLs into two groups (Figure 4—figure supplement 2), we found that bQTLs were strongly associated with the extent of long-range interactions only when they also affect CA (left panel; ** indicates Bonferroni-corrected binomial p<0.008 for all six TFs); for bQTLs that do not affect CA, no allelic bias was observed (right panel; Bonferroni-corrected binomial p>0.08 for all six TFs). (C) caQTLs are strongly enriched for both local and distal eQTLs; however among those that do not affect long-range chromosomal interactions, only local eQTLs are enriched. (D) Model summary: our results suggest that bQTLs generally cannot affect long-range chromosomal interactions without an effect on CA, and caQTLs generally cannot affect distal transcription without an effect on long-range interactions. The model shown represents a plausible interpretation, but is not the only possible causal scenario. Full results available in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** To test the possibility that our result in Figure 4A could be due to a nonspecific bias in the Hi-C method—such as open chromatin alleles having higher efficiency of shearing, ligation, or some other step—we reasoned that any such bias should also be reflected in the pattern of allele-specific inter-chromosomal interactions (such inter-chromosomal interactions are typically considered to be ‘noise’, but should still be affected by any nonspecific biases in the method, making them an ideal control). Using the same Hi-C data (Rao et al., 2014), we found only three caQTLs with significant allelic bias in inter-chromosomal reads (two favoring open alleles and one favoring the closed allele at Bonferroni-corrected p<0.05). Moreover, plotting all shared caQTLs with allele-specific Hi-C data from GM12878 (Rao et al., 2014), shown in this figure, we observed no significant difference (4041 caQTLs favoring open alleles vs 3990 favoring closed alleles; binomial p=0.58).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** A third example for multiple sclerosis could not be plotted because only SNPs with probabilities > 2.75% were reported.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/39595/elife-39595-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** See Supplemental Note for details.
 
 Our previous work showed that in addition to CTCF bQTLs, bQTLs for five other TFs also affect long-range chromosomal interactions, suggesting a possible role for many TFs in chromosomal architecture (Tehranchi et al., 2016); however, the underlying mechanism and causality has not been investigated. We hypothesized that we could isolate the effects of TF binding and CA by separating bQTLs into two groups: those that affect TF binding and CA, and those that affect TF binding but not CA (Figure 4—figure supplement 2). Comparing the effects of these two groups on long-range interactions could then shed light on whether TFs can shape chromosomal interactions independent of CA, or if instead CA effects are essential for TFs to impact these interactions.
 
 We found a strong and consistent effect on long-range interactions for bQTLs that affect accessibility, in which the allele with increased TF binding is biased towards having more interactions (Figure 4B left; binomial p<0.008 for each). In contrast, we found no significant effect for the bQTLs that do not affect accessibility, for all six TFs (Figure 4B right; binomial p>0.08 for each). This suggests that TF binding alone has no detectable association with long-range interactions; even for CTCF, an effect on CA is also necessary. Together with additional evidence (See Supplemental Note), we propose that CA is a key intermediary between TF binding and chromosomal interactions (Figure 4D).
 
-## caQTLs that regulate distal genes alter the landscape of long-range interactions
+### caQTLs that regulate distal genes alter the landscape of long-range interactions
 
 We then asked whether these polymorphic chromosomal interactions are involved in the regulation of transcription by distal caQTLs (defined as a caQTL that is also an eQTL for a gene whose TSS is >100 kb away). Enhancers can act through physical interactions with promoters, and genetic variants can impact chromatin and transcription at distal loci with which they physically interact (Waszak et al., 2015, Grubert et al., 2015, Tehranchi et al., 2016). However, whether these long-range effects of SNPs depend on changes in the patterns of chromosomal interactions—as opposed to being mediated by static interactions—has not been investigated.
 
@@ -83,7 +143,7 @@ To address this question, we controlled for the effect of changes in long-range 
 
 As expected, we found that overall caQTLs were strongly enriched for local eQTLs (TSS <10 kb from the caQTL); restricting the analysis to caQTLs with no effect on interactions reduced the magnitude of this enrichment, but it was still highly significant in both cases (Figure 4C left; Fisher’s exact p<10−300 for each enrichment), suggesting that changes in long-range interactions are not necessary for caQTLs to affect transcription of nearby genes. caQTLs were also enriched for distal eQTLs (p<10−70), but this enrichment was entirely lost when restricting the analysis to caQTLs with no change in long-range interactions (Figure 4C right; p=0.20). This suggests that alterations in the patterns of long-range chromosomal interactions are necessary for caQTLs to affect distal gene expression (Figure 4D), and therefore that these polymorphic interactions may be an important mechanism by which eQTLs can act over vast genomic distances.
 
-## Fine-mapping GWAS associations with caQTLs
+### Fine-mapping GWAS associations with caQTLs
 
 In addition to revealing insights into transcriptional regulation, caQTLs also provide a means to explore genotype/phenotype associations by identifying likely causal variants and their molecular mechanisms of action. To compare our fine-mapping approach with standard GWAS fine-mapping, we asked whether our shared caQTLs were more likely to be assigned a high probability of being causal for disease risk (Farh et al., 2015). We found that for several autoimmune diseases—the class of disease most directly relevant to LCLs—shared caQTLs were highly enriched for likely causal variants (e.g. for Crohn’s disease, mean causal probability for shared caQTLs was 2.4-fold higher than for non-caQTLs, p=0.002; for ankylosing spondylitis, mean causal probability for shared caQTLs was 2.6-fold higher, p=0.001). However for most diseases, the number of overlaps between these two data sets was too small to conduct a meaningful test. Together with other evidence of the efficacy of our fine-mapping approach (Figure 2C), this suggests that our shared caQTLs are an effective means of resolving likely causal cis-regulatory variants.
 
@@ -94,6 +154,116 @@ In other cases, multiple SNPs in LD have conflicting evidence of causality. For 
 The third and most frequent case is where many SNPs are in strong LD, and thus have almost equally strong associations with a disease. For example, a large LD block of 62 variants on chromosome three is associated with multiple sclerosis, all of which have <5% probability of being causal based on GWAS signal alone (Farh et al., 2015). However one of these, rs485789, is a caQTL shared across 8/10 populations (p<2×10−5 in each). Interestingly, this was also predicted as a causal variant by a sequence-based predictor of regulatory variants (Lee et al., 2015), and is an eQTL for IL12A (Lappalainen et al., 2013), a cytokine implicated in several autoimmune diseases (Guo et al., 2016). Therefore, rs485789 is a likely causal variant for multiple sclerosis that acts on IL12A via its effect on CA.
 
 More broadly, we found 5598 caQTLs that were also associated with disease risk or other complex traits (GWAS p<5×10−8; Supplementary file 3). Although most GWAS loci include dozens of potential causal variants in LD, there are only ~2.2 caQTLs per GWAS locus, providing a far smaller credible set for targeted follow-up studies. Among these, 115 caQTLs were shared across all ten populations, suggesting that many of these are likely to be causal for disease risk; we highlight ten examples in Table 1. We note that although our caQTLs were measured in LCLs, the traits they are associated with are related to a wide range of tissues. Consistent with this, we found that the regulatory effects of caQTLs are typically shared across most tissues, suggesting that their effects on CA are broadly shared as well (Supplemental Note, Figure 4—figure supplement 4). Therefore, it should not be surprising that these caQTLs can contribute to risk for diseases that have no clear connection to LCLs.
+
+**Table 1.**
+ Ten candidate causal variants, shared as caQTLs across all 10 populations.GWAS information is from the GRASP database (Eicher et al., 2015). See Supplementary file 3 for all caQTL/GWAS overlaps.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chr</th>
+      <th>caQTL position</th>
+      <th>caQTL rsID</th>
+      <th>GWAS rsID</th>
+      <th>GWAS p-value</th>
+      <th>GWAS trait</th>
+      <th>Candidate gene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15</td>
+      <td>86018746</td>
+      <td>rs7161880</td>
+      <td>rs4281668</td>
+      <td>9.90E-09</td>
+      <td>Aggressive prostate cancer</td>
+      <td>AKAP13</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>5097544</td>
+      <td>rs3780372</td>
+      <td>rs10974944</td>
+      <td>5.10E-32</td>
+      <td>Myeloproliferative neoplasms</td>
+      <td>JAK2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>111351439</td>
+      <td>rs11065769</td>
+      <td>rs10849917</td>
+      <td>3.21E-08</td>
+      <td>Coronary artery disease</td>
+      <td>MYL2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>68598955</td>
+      <td>rs17035378</td>
+      <td>rs17035378</td>
+      <td>8.00E-09</td>
+      <td>Celiac disease</td>
+      <td>PLEK</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>167433948</td>
+      <td>rs6904946</td>
+      <td>rs2301436</td>
+      <td>1.00E-12</td>
+      <td>Crohn's disease</td>
+      <td>RNASET2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>69273905</td>
+      <td>rs194749</td>
+      <td>rs194749</td>
+      <td>2.70E-10</td>
+      <td>Inflammatory bowel disease</td>
+      <td>ZFP36L1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>154359411</td>
+      <td>rs9651053</td>
+      <td>rs11265608</td>
+      <td>2.75E-08</td>
+      <td>Juvenile idiopathic arthritis</td>
+      <td>IL6R</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1731653</td>
+      <td>rs798764</td>
+      <td>rs798766</td>
+      <td>3.90E-13</td>
+      <td>Urinary bladder cancer</td>
+      <td>FGFR3</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>40334852</td>
+      <td>rs9603612</td>
+      <td>rs9532434</td>
+      <td>4.52E-08</td>
+      <td>Juvenile idiopathic arthritis</td>
+      <td>COG6</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>118560857</td>
+      <td>rs73001406</td>
+      <td>rs11216930</td>
+      <td>1.40E-09</td>
+      <td>Glioma</td>
+      <td>PHLDB1</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -109,23 +279,23 @@ Looking ahead, we expect that combining GWAS with pooled QTLs mapped in diverse 
 
 ## Materials and methods
 
-## Cell culture conditions
+### Cell culture conditions
 
 Lymphoblastoid cell lines (LCLs) from unrelated individuals were obtained from the Coriell Institute (http://www.coriell.org). No authentication of cell line identity or mycoplasma contamination was performed. The LCLs were grown in RPMI-GlutaMAX-HEPES media (Life Technologies, 72400) with 15% FBS, 100 I.U./mL penicillin, and 100 μg/mL streptomycin at 37°C, 5% CO2.
 
-## ATAC-seq
+### ATAC-seq
 
 We used a modified version of the ATAC-seq protocol (Buenrostro et al., 2015). Each individual cell line was grown to a density of 6−8 × 105 cells/mL and 2 × 103 cells were collected and pooled by population such that each individual was approximately equally represented in the pool. Subpools were frozen in liquid nitrogen at −180°C. After all 1000 individuals were collected, subpools were combined by population and fresh media was added up to 15 ml, centrifuged at 1500 rpm for 10 min, and supernatant removed. The pellet was resuspended in 0.75 ml media with 200 units/mL DNase and incubated in a ThermoMixer for 30 min at 37°C at 300 rpm. 0.8 mL of Ficoll-paque Plus (GE Cat #17-1440-03) was added to a 2 mL tube and the 0.75 mL cell suspension was carefully layered on top. Samples were centrifuged at 500x g for 20 min at room temperature with no brake. The thin cloud of live cells in the middle layer were pipetted to a new tube, washed in 1 ml 1x PBS buffer, and split into two tubes with 105 cells for replicates. Tubes were centrifuged at 500 × g for 5 min at 4°C and supernatant was removed.
 
 ATAC-seq was performed simultaneously on all 20 replicates. To each cell pellet, 100 ul of transposition mix was added (50 uL 2x TD Buffer (Illumina Cat #FC-121–1030), 5.0 uL Tn5 Transposase (Illumina Cat #FC-121–1030), 42 uL nuclease-free water, 1 uL 10% Tween-20, 3 uL 1% Digitonin). Samples were incubated in a ThermoMixer at 37°C for 30 min @ 750 rpm, then purified using Qiagen MinElute Kit with DNA eluted in 11 uL 10 mM Tris buffer, pH 8. Transposed DNA fragments were amplified using PCR where total cycles were calculated using qPCR as described in (Buenrostro et al., 2015). Amplified libraries were purified using Qiagen PCR Cleanup Kit and eluted in 21 uL 10 mM Tris pH 8. An additional purification step was performed using a 1:1.2 ratio of DNA:AMPure XP beads. Libraries were sequenced on an Illumina HiSeq 4000 (150 bp, paired-end reads).
 
-## Mapping ATAC-seq reads
+### Mapping ATAC-seq reads
 
 To remove adapters, reads were trimmed using cutadapt (Martin, 2011) with the following command: cutadapt -e 0.20 -a CTGTCTCTTATACACATCT -A CTGTCTCTTATACACATCT -m 5 -o fastq1out -p fastq2out fastq1 fastq2
 
 Trimmed reads were mapped using a modified version of the WASP pipeline for controlling mapping bias (van de Geijn et al., 2015) with scripts find_intersecting_snps_2.py and filter_remapped_reads_2.py that can be found at: https://github.com/TheFraserLab/WASP/tree/atac-seq-analysis/mapping. Briefly, for each read overlapping a SNP, we remapped hypothetical reads with the other allele, and discarded any reads that do not map uniquely, to the same location, for both alleles. Duplicate reads were filtered out for each replicate using https://github.com/eilon-s/bioinfo_scripts/blob/master/rmdup.py.
 
-## Mapping and analyzing caQTLs
+### Mapping and analyzing caQTLs
 
 Pre- and post-ATAC allele frequencies, and the resulting p-values, were calculated using our published pipeline (Tehranchi et al., 2016). This uses post-ATAC allele frequencies together with individual sample genotypes to infer pre-ATAC allele frequencies.
 
@@ -133,81 +303,123 @@ To estimate pre-ATAC allele frequencies, the pre-ATAC pool could be sequenced; h
 
 Therefore, we previously developed an alternative which does not require any additional sequencing, and does account for genome-wide differences between samples. Our regression-based approach (Tehranchi et al., 2016) uses the post-ATAC frequencies together with genotypes of each sample to infer the proportion of each sample in the pool. These proportions will be weighted by any genome-wide differences, since these will be naturally incorporated into the post-ATAC frequencies used as input to the regression. In this way, our pre-ATAC allele frequencies already account for some types of trans-acting variation, increasing our power for mapping cis-acting differences.
 
-In the regression, our goal is to estimate the pooling weights (i.e. fraction of each individual in the pool, accounting for global trans-acting differences between samples). Using pi to denote the proportion of the minor allele of SNP i in the pool:pi=∑j=1nwjGijwhere wj is the pooling weight of the j'th individual, and Gij is the genotype of the j'th individual at the i'th SNP, coded as minor allele dosages (0, 0.5 or 1).
+In the regression, our goal is to estimate the pooling weights (i.e. fraction of each individual in the pool, accounting for global trans-acting differences between samples). Using $p_{i}$ to denote the proportion of the minor allele of SNP $i$ in the pool:
 
-## Estimation of weights
+$$
+p_{i}=\sumj=1nw_{j}G_{ij}
+$$
 
-Assuming that most SNPs are not caQTLs, our post-ATAC frequencies can be considered as unbiased estimates pi^ of pi for many SNPs (with the exception of any bias due to trans-acting variation that we seek to eliminate, as explained above). Our goal is to estimate the weights. From the equation above, one strategy to estimate the weights is to use linear regression, and regress the estimates onto the genotypes to obtain estimates of the weights w1,…,wn. We used weighted linear regression with weights proportional to the inverse square-root of the read depth, since allele frequencies estimated from SNPs with more reads are likely to have less sampling error (however the results are similar if non-weighted regression or logistic regression is used instead).
+where $w_{j}$ is the pooling weight of the j'th individual, and $G_{ij}$ is the genotype of the j'th individual at the i'th SNP, coded as minor allele dosages (0, 0.5 or 1).
 
-Note that this approach ignores the set of constraints on the pooling weights, namely: 0≤wj≤1 for all j and ∑wj=1. The former constraint is effectively not an issue, since in practice all of the estimates are in the legitimate range. To handle the second constraint, we replace wn by 1-∑j=1n-1wj. Rearranging we get:E[pi^−Gin]=∑j=1n−1wj(Gij−Gin)
+### Estimation of weights
 
-So we can still use linear regression to estimate w1,…,wn-1. This is done by regressing pi^−Gin onto Gi1-Gin,…,Gi,n-1-Gin. The estimate of the missing weight is given by wn^=1−∑j=1n−1wj^.
+Assuming that most SNPs are not caQTLs, our post-ATAC frequencies can be considered as unbiased estimates $p_{i}^$ of $p_{i}$ for many SNPs (with the exception of any bias due to trans-acting variation that we seek to eliminate, as explained above). Our goal is to estimate the weights. From the equation above, one strategy to estimate the weights is to use linear regression, and regress the estimates onto the genotypes to obtain estimates of the weights $w_{1},…,w_{n}$. We used weighted linear regression with weights proportional to the inverse square-root of the read depth, since allele frequencies estimated from SNPs with more reads are likely to have less sampling error (however the results are similar if non-weighted regression or logistic regression is used instead).
 
-## Inference of pre-ATAC allele frequencies
+Note that this approach ignores the set of constraints on the pooling weights, namely: $0\leqw_{j}\leq1$ for all j and $\sumw_{j}=1$. The former constraint is effectively not an issue, since in practice all of the estimates are in the legitimate range. To handle the second constraint, we replace $w_{n}$ by $1-\sumj=1n-1w_{j}$. Rearranging we get:
+
+$$
+E[p_{i}^−G_{in}]=\sumj=1n−1w_{j}(G_{ij}−G_{in})
+$$
+
+So we can still use linear regression to estimate $w_{1},…,w_{n-1}$. This is done by regressing $p_{i}^−G_{in}$ onto $G_{i1}-G_{in},…,G_{i,n-1}-G_{in}$. The estimate of the missing weight is given by $w_{n}^=1−\sumj=1n−1w_{j}^$.
+
+### Inference of pre-ATAC allele frequencies
 
 Given that the estimated weights are not too close to 0 or 1, the joint distribution of the estimates of the weights follows approximately:
 
-w^−n∼MVN(w−n,Σ),
+$w^_{−n}∼MVN(w_{−n},Σ)$,
 
-where Σ is the covariance matrix (which is given by the regression) and w-n is the vector of weights without the n’th coordinate. We estimate the pre-ATAC proportions asp^ipre=∑j=1nw^jGij,and the variance of the estimate is given byV(p^ipre)=V(∑j=1nw^jGij)=V(∑j=1n−1w^jGij+(1−∑j=1n−1w^j)Gin)=∑j,k=1n-1GijGikΣjk+∑j,k=1n-1Gin2Σjk-2∑j,k=1n-1GijGinΣjk.
+where $Σ$ is the covariance matrix (which is given by the regression) and $w_{-n}$ is the vector of weights without the n’th coordinate. We estimate the pre-ATAC proportions as
+
+$$
+p^_{i}^{pre}=\sumj=1nw^_{j}G_{ij},
+$$
+
+and the variance of the estimate is given by
+
+$$
+V(p^_{i}^{pre})=V(\sumj=1nw^_{j}G_{ij})=V(\sumj=1n−1w^_{j}G_{ij}+(1−\sumj=1n−1w^_{j})G_{in})=
+$$
+
+
+
+$$
+\sum_{j,k=1}^{n-1}G_{ij}G_{ik}Σ_{jk}+\sum_{j,k=1}^{n-1}G_{in}^{2}Σ_{jk}-2\sum_{j,k=1}^{n-1}G_{ij}G_{in}Σ_{jk}.
+$$
 
 As a sanity check, note that in the hypothetical case when all the genotypes are identical, the variance of the pre-ATAC proportion is 0, and indeed when all the genotypes are the same, the pre-ATAC proportion would be the same for any set of weights, so no uncertainty is introduced by not knowing the weights.
 
-## Testing for difference between pre-ATAC and post-ATAC proportions
+### Testing for difference between pre-ATAC and post-ATAC proportions
 
 Having estimated the pre-ATAC and post-ATAC allele frequencies, our next goal is to identify significant differences while accounting for uncertainty in the pre-ATAC estimates. The binomial distribution is a natural choice for this, if its assumptions are met. To test whether the binomial distribution is appropriate, we fit a negative binomial regression and observed that the estimated dispersion parameter was very close to 1, hence the depth (after duplicate removal) follows a Poisson distribution, and the binomial distribution is appropriate (Golan and Rosset, 2013).
 
-Conditional on the number of reads covering each SNP ni, we model the number of minor allele reads mi as following a binomial distribution Bin(pi,ni). Under the null hypothesis of no change between the pre-ATAC and post-ATAC pools we have pi=pipre.
+Conditional on the number of reads covering each SNP $n_{i}$, we model the number of minor allele reads $m_{i}$ as following a binomial distribution $Bin(p_{i},n_{i})$. Under the null hypothesis of no change between the pre-ATAC and post-ATAC pools we have $p_{i}=p_{i}^{pre}$.
 
-One possibility is to standardize the pre- and post-ATAC proportion estimates and to apply a Z-test. However, we found that this test results in an inflated rate of type-1 errors, since the normal approximation is not always adequate for the post-ATAC reads, especially when ni or pipre are small. Instead, we compute the p-value directly using numerical integration. First, imagine that pipre were known. In that case, the p-value is given by:
+One possibility is to standardize the pre- and post-ATAC proportion estimates and to apply a Z-test. However, we found that this test results in an inflated rate of type-1 errors, since the normal approximation is not always adequate for the post-ATAC reads, especially when $n_{i}$ or $p_{i}^{pre}$ are small. Instead, we compute the p-value directly using numerical integration. First, imagine that $p_{i}^{pre}$ were known. In that case, the p-value is given by:
 
-pv(pipre)=∑j=0ni(nij)(pipre)j(1−pipre)ni−jl{|mini−jni|≥|pipre−mini|}.
+$pv(p_{i}^{pre})=\sumj=0n_{i}(n_{i}j)(p_{i}^{pre})^{j}(1−p_{i}^{pre})^{n_{i}−j}l{|\frac{m_{i}}{n_{i}}−\frac{j}{n_{i}}|\geq|p_{i}^{pre}−\frac{m_{i}}{n_{i}}|}$.
 
-In other words, we sum the binomial probabilities for any possible number of reads that is as far or further from the expected proportion under the null hypothesis. To make this more concrete, consider the following toy example: the pre-ATAC proportion is 0.5, the read depth is 10, and we observe 3 reads with the minor allele. The p-value is defined as the probability of observing a value that is as likely or less likely than the actual observed value, under the null hypothesis. Here we expect to see 5 reads with the minor allele. Since the alternative hypothesis is two-sided (we do not know which allele will increase post-ATAC), being less likely means being further away from 5. Hence, the p-value is calculated as the probability of observing 0, 1, 2, 3, 7, 8, 9 or 10 reads with the minor allele, under the null hypothesis that the number of minor allele reads follows a Bin(n=10,p=0.5) distribution. However, pipre is not known. One option is to plug in the estimate p^ipre, but this practice ignores the variance of the estimate, and will result in optimistic p-values. Instead, we integrate over all possible values of pvpipre to get the actual p-value, thus factoring in the variance of the estimate:pv=1C∫0112πvie−12vi(p−p^ipre)pv(p)dp,where:C=∫0112πvie−12vi(p−p^ipre)dpis a normalizing constant, meant to deal with cases where the tails of the normal distribution that fall outside of the [0,1] are non-negligible (which could result in optimistic p-values), and vi=V(p^ipre).
+In other words, we sum the binomial probabilities for any possible number of reads that is as far or further from the expected proportion under the null hypothesis. To make this more concrete, consider the following toy example: the pre-ATAC proportion is 0.5, the read depth is 10, and we observe 3 reads with the minor allele. The p-value is defined as the probability of observing a value that is as likely or less likely than the actual observed value, under the null hypothesis. Here we expect to see 5 reads with the minor allele. Since the alternative hypothesis is two-sided (we do not know which allele will increase post-ATAC), being less likely means being further away from 5. Hence, the p-value is calculated as the probability of observing 0, 1, 2, 3, 7, 8, 9 or 10 reads with the minor allele, under the null hypothesis that the number of minor allele reads follows a $Bin(n=10,p=0.5)$ distribution. However, $p_{i}^{pre}$ is not known. One option is to plug in the estimate $p^_{i}^{pre}$, but this practice ignores the variance of the estimate, and will result in optimistic p-values. Instead, we integrate over all possible values of $pvp_{i}^{pre}$ to get the actual p-value, thus factoring in the variance of the estimate:
+
+$$
+pv=\frac{1}{C}\int_{0}^{1}\frac{1}{\sqrt{2\piv_{i}}}e^{−\frac{1}{2v_{i}}(p−p^_{i}^{pre})}pv(p)dp,
+$$
+
+where:
+
+$$
+C=\int_{0}^{1}\frac{1}{\sqrt{2\piv_{i}}}e^{−\frac{1}{2v_{i}}(p−p^_{i}^{pre})}dp
+$$
+
+is a normalizing constant, meant to deal with cases where the tails of the normal distribution that fall outside of the [0,1] are non-negligible (which could result in optimistic p-values), and $v_{i}=V(p^_{i}^{pre})$.
 
 SNPs were considered testable in a population if they were covered by at least 20 ATAC-seq reads and had minor allele frequency >0.01 in that population. No peak calling was performed; each SNP was tested for allelic bias using only the reads overlapping it, since these reads are the only ones that give information about its allelic bias (Tehranchi et al., 2016). Genotypes were downloaded from the 1000 Genomes Project. Scripts and documentation can be found at: https://github.com/tehranchi/public.
 
 Directionality and enrichment tests were performed as described in Tehranchi et al., 2016. Numbers underlying specific analyses are reported in source data files provided for all figures.
 
-## Fisher’s combined probability test
+### Fisher’s combined probability test
 
-Shared caQTLs were calculated using Fisher’s combined probability test, where pi is the caQTL p-value for population i. Any SNP not tested in population i was assigned pi = 1.X2k2=-2 ∑i=1kln⁡(pi)
+Shared caQTLs were calculated using Fisher’s combined probability test, where pi is the caQTL p-value for population i. Any SNP not tested in population i was assigned pi = 1.
 
-## Motif analysis
+$$
+X_{2k}^{2}=-2\sumi=1kln⁡(p_{i})
+$$
+
+### Motif analysis
 
 We used HOMER (Heinz et al., 2010) to search for motifs that were differentially enriched among the high-CA alleles compared to the low-CA alleles in our shared caQTLs. The caQTL plus 15 bp on each side (31 bp total) was used as input to HOMER, with the less accessible alleles of the same caQTLs used as the background comparison set. Therefore all significant enrichments are due to caQTL variants within the motifs themselves (since any motifs flanking the caQTLs would be present in both comparison sets). We ran the findMotifs.pl script from the HOMER package where the targetSequences.fa file contained the high-CA alleles and the background.fa file contained the low-CA alleles, and then repeated the analysis with the two files swapped: findMotifs.pl <targetSequences.fa> fasta < output directory> -fasta <background.fa>
 
-## Long-range interaction analysis
+### Long-range interaction analysis
 
 To obtain Figure 4A–B, we restricted the analysis to shared caQTLs (Fisher’s combined p<5×10−6) with consistent directionality in a majority of the populations tested, and counted the number of Hi-C reads connecting each caQTL allele with any distal locus (>20 kb or >100 kb away). In order to use only allele-specific Hi-C reads, we restricted the analysis to read pairs where at least one read overlaps a heterozygous variant in the GM12878 cell line (as described in Rao et al., 2014). We then determined the number of caQTLs where the more accessible allele had significantly more Hi-C contacts (using a binomial test of allele-specific read counts), compared to the number where the less accessible allele was more interactive. See Figure 4—source data 1 for detailed results.
 
 For Figure 4C we first obtained two subsets of eQTLs (Lappalainen et al., 2013): those that are proximal to their target TSSs (<10 kb) and those that are distal (>100 kb). Next, we calculated the enrichments of these proximal and distal subsets among shared caQTLs. To obtain the p-values in Figure 4C, we used Fisher’s exact test to compare the significance of these enrichments with the respective enrichments of proximal and distal eQTLs among non-caQTLs (Fisher’s combined p>0.5). We repeated this analysis on the subsets of caQTLs and non-caQTLs in regions without significant allelic bias (binomial p>0.5) in the number of reads supporting long range (>100 kb) interactions, requiring each SNP to have at least 100 reads supporting long-range interactions in order to be confident in the lack of strong allelic bias. The non-significant (p=0.20) enrichment in Figure 4C is based on a relatively large number of SNPs (1680 caQTLs with no effect on interactions, and 5719 non-caQTLs with no effect on interactions)—the same background set as used for the significant (p<10−70) enrichment in the same figure—suggesting that a small sample size is not driving the lack of significant enrichment. See Figure 4—source data 1 for further details of this analysis.
 
-## GWAS overlaps
+### GWAS overlaps
 
 We used all reported GWAS associations at p<5×10−8 from the GRASP database (28), excluding those for gene expression levels (eQTLs). In order to include cases where the reported SNP is not the causal variant, we expanded the GWAS list to include any variants in strong LD with GWAS hits (r2 >0.8 in the CEU population; CEU is similar to the European cohorts in which nearly all of the GWAS were conducted). We then intersected this LD-expanded list with our caQTLs (Supplementary file 3). Because most GWAS hits are in strong LD with other variants, many of the caQTLs that overlap GWAS hits may not be causal SNPs for the GWAS trait; we cannot apply published co-localization methods to quantify this, since these require association data across an entire locus or LD block for comparison, and our pooled approach is limited to SNPs covered by the ATAC-seq reads.
 
-## IDR analysis
+### IDR analysis
 
 For IDR calculation, we used parameters similar to the ENCODE project (mu = 0.1, sigma = 1.0, rho = 0.2, p=0.5, eps = 10−6, max.ite = 3000). Since IDR does not allow tied p-values, we broke ties by adding a small random number (normally distributed with zero mean and standard deviation 10−17).
 
-## Controlling for ATAC-seq read density
+### Controlling for ATAC-seq read density
 
 In Figure 3A we present the chromatin states of caQTLs compared to the genome as a whole. Much of the difference is driven by ATAC-seq read density; that is we would see strong enrichments for TSS and enhancers in any ATAC-seq experiment. To ask the more specific question of where caQTLs are enriched or depleted after controlling for read density, we selected non-caQTL variants matched for the number of reads to each shared caQTL, and then quantified the difference in chromatin state enrichments for shared caQTLs vs read-matched non-caQTLs. Details of read-matching are given in the 'Effects of caQTLs on DNA shape' section below.
 
-## Effects of caQTLs on DNA shape
+### Effects of caQTLs on DNA shape
 
 Since the shape of the DNA double helix is sequence-dependent, and can affect interactions with TFs (Chiu et al., 2016), we tested whether shared caQTL variants tend to cause larger changes in DNA shape than non-caQTLs. To compare caQTLs vs non-caQTLs, we defined a non-caQTL as a variant with caQTL p=1 and at least 20 ATAC-seq reads. We first computed the total read depth for each shared caQTL and non-caQTL across all populations. We then created a read-matched set of shared caQTLs and non-caQTLs in the following way: For each shared caQTL, we identified a unique non-caQTL where | log2(shared caQTL reads) - log2(non-caQTL reads) |<0.5. If no such non-caQTL existed, we eliminated the shared caQTL. We were able to find unique read-matched non-caQTLs for 11,416 of the shared caQTLs.
 
 After identifying read-matched shared caQTLs and non-caQTLs, we used BEDTools version 2.26.0 (Quinlan and Hall, 2010) to extract the genome sequence at each variant ±5 bp. For each shared caQTL, we created four sequences – one with the open allele ±5 bp, one with the closed allele ±5 bp, one with the read-matched non-caQTL reference allele ±5 bp, and one with the read-matched non-caQTL alternate allele ±5 bp. We then used DNAshapeR version 1.0.2 (Chiu et al., 2016) to estimate the minor groove width (MGW), propeller twist (ProT), Roll, and helix twist (HelT) for each of the sequences for each shared caQTL. We computed the difference in each shape parameter between the sequences for the open and closed caQTL alleles as well as between alleles for the read-matched non-caQTLs, where the ‘open’ and ‘closed’ alleles were randomly selected. To compute whether the shared caQTLs have a stronger association with DNA shape than the read-matched non-caQTLs, we used the Wilcoxon rank-sum test to compare the two difference distributions at the position of the variant. Since Roll and HelT shapes are computed in groups of two nucleotides, we concatenated the difference distributions for the two windows of 2 bp that overlap the variant. We multiplied each p-value by four as a Bonferroni correction.
 
-## Supplementary Text
+### Supplementary Text
 
-## Assessing caQTL reproducibility with IDR
+#### Assessing caQTL reproducibility with IDR
 
 A standard approach for estimating an FDR in association studies is to randomize the data, for example randomly pairing one sample’s genotypes with another sample’s ATAC-seq data, and then recalculate the associations to gauge the extent of false positives. Since our approach does not have separate data for each individual, such randomization is not possible, and thus we cannot estimate an FDR for our caQTLs using standard approaches. However, we can apply a related method known as the irreproducible discovery rate (IDR), developed as part of the ENCODE project (Li et al., 2011; ENCODE Project Consortium, 2012) to assess the statistical reproducibility of our caQTL p-values. To measure this, we calculated caQTL p-values separately for each biological replicate of two populations, ASW and CEU. The IDR estimates the fraction of data points that are not reproducible at any given p-value cutoff. For a range of potential cutoffs, we observed a similar trend in both populations: at p=5×10−3 we observed IDR ≈ 0.03, and p=5×10−4 corresponds to IDR ≈ 0.01 (dashed red line in Figure 1—figure supplement 3). These numbers are consistent with other results suggesting a low FDR among our caQTLs, such as their ~ 97–99% agreement with dsQTL and bQTL directionality (Figure 1E–F).
 
-## Comparison to non-pooled chromatin accessibility studies
+#### Comparison to non-pooled chromatin accessibility studies
 
 In our comparison with RASQUAL caQTLs (Kumasaka et al., 2016), we first sought to identify a matched significance cutoff. Among their 2707 caQTLs (FDR = 10%), 3.5% were previously identified as dsQTLs (Degner et al., 2012) (the most closely matched type of QTL available for comparison). This 3.5% overlap between two previous studies of chromatin accessibility QTLs may seem low, but likely results from differences in experimental methods (ATAC-seq vs DNase-seq), analysis methods, and populations, as well as incomplete power. In CEU, our population most closely matched to the British (GBR) population used for RASQUAL, we found that our top 7587 caQTLs (p<3×10−6) yielded the same overlap of 3.5% dsQTLs. Our approach does not involve calling CA peaks, but in a separate analysis we estimated that <20% of our caQTLs fall into the same peak as another caQTL, so removing these would not have a major effect on the results.
 
@@ -215,11 +427,11 @@ In addition to the RASQUAL comparison, we also compared our caQTLs to variants a
 
 We note that dsQTLs are not the only possible benchmark we could use to select caQTL lists of equal quality across studies. When using CTCF bQTLs (Ding et al., 2014) instead, our estimated improvement in cost per QTL was even greater than when using dsQTLs, due to the high enrichment of CTCF bQTLs in our data (~190 fold in our CEU caQTLs [Figure 1—figure supplement 5], compared to ~7 fold in RASQUAL caQTLs (Kumasaka et al., 2016) and 4.5-fold in the imbalanced DNase-seq SNPs (Maurano et al., 2015).
 
-## Comparing selection against caQTLs and nonsynonymous variants
+#### Comparing selection against caQTLs and nonsynonymous variants
 
 If this depletion of caQTLs near TSSs (Figure 3A) is due to selection against deleterious effects of these caQTLs, then we can compare this with human Ka/Ks ratios, which reflect the depletion of nonsynonymous changes in protein-coding regions. Across all human genes, Ka/Ks since divergence with chimpanzee was estimated as 0.208 (Chimpanzee Sequencing and Analysis Consortium, 2005), implying ~4.8 fold depletion for nonsynonymous changes. Therefore we observed 8.7/4.8 = 1.81 fold (i.e. 81%) greater depletion for the caQTLs. This comparison is only an approximation, since it ignores effects of positive selection, as well as the possibility that caQTLs are depleted near TSSs for reasons other than selection (e.g. CA having greater robustness to mutations near TSSs). We also note that if there is any negative selection against TSS-proximal SNPs that are not caQTLs then the 1.81-fold difference will be an underestimate.
 
-## Causality of joint bQTLs/caQTLs affecting long-range chromosomal interactions
+#### Causality of joint bQTLs/caQTLs affecting long-range chromosomal interactions
 
 In addition to CTCF, we previously reported an association between long-range chromosomal interactions and binding of five additional TFs in LCLs (Tehranchi et al., 2016). However, in that work we did not explore the mechanism by which this occurs or the direction of causality: it could be that TF binding impacts long-range interactions, though other causal scenarios are also possible. For example, joint bQTLs/caQTLs could be cases where a variant first affects TF binding and then CA as a result; or the variant’s direct effect could be on CA, which then changes the local landscape of TF binding; or there may be independent effects on TF binding and CA that are not causally linked (either via two distinct causal variants in linkage disequilibrium, or one variant with independent effects on TF binding and CA). In general, the strong enrichment for overlap between caQTLs and bQTLs suggests that causal independence is rare at these joint QTLs, since under such a model one would not expect to see either strong enrichment for overlap, or the nearly perfect concordance in directionality that we observed (~98–99%). In most cases we cannot distinguish between the first two scenarios, that is whether the TF binding or CA effect ‘comes first’; however in cases where a joint bQTL/caQTL disrupts a known TF binding motif, then we can infer that its primary effect is likely to be on TF binding to DNA, and thus any other effects—on CA or other traits—are likely to be downstream consequences of this.
 
@@ -227,13 +439,13 @@ We used this logic to ask whether TF binding affects long-range chromosomal inte
 
 We could not test the possibility that some other variants may have a primary effect on CA and secondary effects on TF binding, since we cannot determine which caQTLs are not bQTLs for any TF, given the limited amount of bQTL information available (Figure 4—figure supplement 2).
 
-## Regulatory effects of caQTLs across tissues
+#### Regulatory effects of caQTLs across tissues
 
 To explore the effects of caQTLs on gene expression across tissues, we intersected our caQTLs with eQTLs mapped in a meta-analysis across 44 tissues/cell types (Battle et al., 2017). Each eQTL was assigned a posterior probability of being active in each tissue, and following the GTEx authors, we required p>0.9 (i.e. 90% probability) to call an eQTL as likely active in a given tissue. Overall, the median number of tissues per eQTL was 19 out of 44. In contrast, among 2833 caQTLs that were also eQTLs, the median number of active tissues was 25/44 (Wilcoxon p=4×10−21). This implies that the underlying caQTL effects are probably shared across most tissues as well, with 25/44 being a likely underestimate of the extent of tissue sharing, since caQTLs present in a tissue do not necessarily act as eQTLs (as we have seen for LCLs).
 
 We then asked in what tissues/cell types were our caQTLs most likely to affect gene expression. To measure this, we calculated the ratio of [fraction of joint eQTL and caQTL with posterior p>0.9 in tissue X] / [fraction of all eQTLs with posterior p>0.9 in tissue X]; values greater than one indicate that the joint eQTL and caQTLs are more likely to affect expression in tissue X than are eQTLs overall (this accounts for differences in numbers of eQTLs per tissue, which is largely driven by sample sizes). All 44 tissues had values > 1.06, with two clear outliers, LCLs and whole blood, having the highest chance of caQTLs affecting expression (Figure 4—figure supplement 4); this is not surprising because LCLs were used in our study and whole blood is the most similar tissue to LCLs in this dataset. At the other extreme, the ten sampled brain regions and testes had the 11 lowest ratios, indicating that caQTLs active in LCLs are slightly less likely to affect gene expression in these tissues.
 
-## caQTLs in one cell type can underlie eQTLs specific to other cell types/conditions
+#### caQTLs in one cell type can underlie eQTLs specific to other cell types/conditions
 
 Our multi-tissue analysis above (Figure 4—figure supplement 4) suggested that caQTLs from LCLs can be informative about transcriptional regulation in other cell types. We hypothesized that even in cases where a caQTL is not an eQTL in LCLs, if the effect on CA is preserved across other cell types or conditions, then a change in the expression of a trans-acting factor could cause a constitutive caQTL to be a condition-specific eQTL. Indeed, in our multi-tissue analysis, we observed 200 caQTLs that had a posterior p<0.1 of being an eQTL in LCLs, but nevertheless were called as likely eQTLs (p>0.9) in an average of 11.4 other tissues. We have also come across several examples of this outside of the GTEx data, and highlight two of these below.
 

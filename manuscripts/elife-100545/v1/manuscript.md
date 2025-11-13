@@ -15,19 +15,27 @@
 
 ### Affiliations
 
-1. https://ror.org/01rxvg760 State Key Laboratory of Coordination Chemistry, Chemistry and Biomedicine Innovation Center (ChemBIC), School of Chemistry and Chemical Engineering, Nanjing University Nanjing China
-2. https://ror.org/04xfsbk97 Institute for Hepatology, National Clinical Research Center for Infectious Disease, Shenzhen Third People’s Hospital Shenzhen China
-3. https://ror.org/01rxvg760 Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, Nanjing University Nanjing China
+1. State Key Laboratory of Coordination Chemistry, Chemistry and Biomedicine Innovation Center (ChemBIC), School of Chemistry and Chemical Engineering, Nanjing University Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))
+2. Institute for Hepatology, National Clinical Research Center for Infectious Disease, Shenzhen Third People’s Hospital Shenzhen China ([ROR:04xfsbk97](https://ror.org/04xfsbk97))
+3. Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, Nanjing University Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))
 
 † Corresponding author
 
 ## Abstract
 
-Viral adhesion to host cells is a critical step in infection for many viruses, including monkeypox virus (MPXV). In MPXV, the H3 protein mediates viral adhesion through its interaction with heparan sulfate (HS), yet the structural details of this interaction have remained elusive. Using AI-based structural prediction tools and molecular dynamics (MD) simulations, we identified a novel, positively charged α-helical domain in H3 that is essential for HS binding. This conserved domain, found across orthopoxviruses , was experimentally validated and shown to be critical for viral adhesion, making it an ideal target for antiviral drug development. Targeting this domain, we designed a protein inhibitor, which disrupted the H3-HS interaction, inhibited viral infection in vitro and viral replication in vivo, offering a promising antiviral candidate. Our findings reveal a novel therapeutic target of MPXV, demonstrating the potential of combination of AI-driven methods and MD simulations to accelerate antiviral drug discovery.
+Viral adhesion to host cells is a critical step in infection for many viruses, including monkeypox virus (MPXV). In MPXV, the H3 protein mediates viral adhesion through its interaction with heparan sulfate (HS), yet the structural details of this interaction have remained elusive. Using AI-based structural prediction tools and molecular dynamics (MD) simulations, we identified a novel, positively charged α-helical domain in H3 that is essential for HS binding. This conserved domain, found across orthopoxviruses, was experimentally validated and shown to be critical for viral adhesion, making it an ideal target for antiviral drug development. Targeting this domain, we designed a protein inhibitor, which disrupted the H3-HS interaction, inhibited viral infection in vitro and viral replication in vivo, offering a promising antiviral candidate. Our findings reveal a novel therapeutic target of MPXV, demonstrating the potential of combination of AI-driven methods and MD simulations to accelerate antiviral drug discovery.
 
 ## Introduction
 
 The mpox virus (also known as monkeypox virus), a zoonotic pathogen within the Orthopoxvirus genus, has emerged as a global health concern. This genus also includes the variola virus (VARV), the causative agent of smallpox, and vaccinia virus (VACV), which has been used as a live vaccine against smallpox (Lum et al., 2022; The Lancet Infectious, 2022; Figure 1A). Historically endemic to Central and West Africa, MPXV gained international attention during the global outbreaks in 2022 (clade IIb) and 2024 (clade Ib), leading the World Health Organization (WHO) to declare it a public health emergency of international concern twice within 3 years (O’Toole et al., 2023; Kirby, 2023; Vakaniaki et al., 2024). Although MPXV has a lower fatality rate than smallpox (2–10% versus 30%), the absence of specific antiviral treatments continues to pose significant health risks (Li et al., 2023; Liu et al., 2022; Zahmatyar et al., 2023; Zaeck et al., 2023; Yu et al., 2023; Peng et al., 2023).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig1-v1.jpg)
+
+**Figure 1.:** (A) Phylogenetic tree depicts the evolutionary relationships of H3 within the Poxviridae family, highlighting MPXV (blue circle), variola virus (VARV) (red circle), and vaccinia virus (VACV) (green circle). (B) Schematic of MPXV adhesion to the cell surface. Viral particles bind to cell surface via specific interaction such as between adhesion protein H3 and heparan sulfate (HS), followed by membrane fusion mediated by the fusion complex, allowing entry into the host cell. (C) The amino acid sequence of MPXV H3 shows the newly discovered helical structure (240–282, highlight in yellow), the Mg(II) (green) binding site, and other potential HS binding motifs (blue underlines). (D) AlphaFold2 (AF2) prediction of MPXV H3 structure. The left and right panels show different orientations of the H3 structure (rotated 180°). The blue region corresponds to H3(1–239), which has a homologous crystal structure (VACV H3, PDB code: 5EJ0). The yellow region represents the AF2-predicted structure of H3(240–282), which remains unresolved in the crystal structure of the homologous protein. All potential glycosaminoglycans (GAGs) binding motifs are highlighted with a yellow background. (E) Molecular dynamics (MD) simulation snapshot of H3 on a DPPC (dipalmitoylphosphatidylcholine) membrane. H3 is anchored to the membrane through its transmembrane region (residues 283–306, in gray).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) In the protein cartoon diagram, the colors represent the pLDDT scores output by AlphaFold2 (AF2), ESMFold, and RoseTTAFold2 respectively, with blue indicating a higher prediction confidence. For the AF2 result, the helical domain is displayed in blue, indicating a region where the pLDDT score is greater than 80, signifying a high confidence in structural prediction. (D) Modeling of H3 with DPPC (dipalmitoylphosphatidylcholine) membrane. The blue represents H3(1–239), the yellow represents H3(240–282), the black corresponds to the transmembrane region H3(283–306), and the gray molecules represent DPPC. (E) The minimal distance between helical domain and DPPC membrane during the 500 ns molecular dynamics (MD) simulations.
 
 Viral adhesion to host cells is a critical initial step in the infection process for many viruses. Proteins that mediate these interactions have been identified as essential therapeutic targets, offering promising opportunities for antiviral therapies. In orthopoxviruses such as MPXV, the H3 protein plays a pivotal role in facilitating viral adhesion by binding to cell-surface heparan sulfate (HS) (Moss, 2020; Gray et al., 2019; da Fonseca et al., 2000a), a glycosaminoglycan (GAG) essential for viral entry. H3-specific neutralizing monoclonal antibodies have shown to protective effects for rabbits and immunodeficient mice against lethal poxvirus infections (Crickard et al., 2012). And H3 is a key component in recent mpox vaccines (Zuiani et al., 2024; Gulati et al., 2022). Despite the central role of H3 in MPXV infection and protection, the structural details of its specific interaction with HS remain elusive.
 
@@ -39,7 +47,7 @@ To address these challenges, we employed advanced AI-based protein structural pr
 
 ## Results
 
-## Identification of a novel helical domain for HS binding in H3
+### Identification of a novel helical domain for HS binding in H3
 
 The H3 protein of MPXV is a 324 amino acid transmembrane protein conserved across all 12 identified orthopoxviruses. Previous studies have shown that its extracellular domain (residues 1–282) binds to cell-surface HS (Singh et al., 2016; da Fonseca et al., 2000b), facilitating viral entry in conjunction with other adhesion proteins and the fusion protein system (Figure 1B; Lin et al., 2000). Inhibiting the HS binding to H3, therefore, represents a promising strategy for developing broad-spectrum antiviral therapies against orthopoxviruses. While most structure of the extracellular region of VACV H3 (residues 1–240; PDB code: 5EJ0) has been solved, the dynamic and heterogeneous nature of HS as a biopolymer complicates the identification of precise binding sites.
 
@@ -48,6 +56,30 @@ To identify HS binding sites on the H3 protein, we first performed a comprehensi
 Interestingly, we also identified a cluster of seven additional positively charged residues (R242, H247, R248, K253, R259, K266, R267) in the protein C-terminal region. This region had not been previously structurally characterized due to its self-cleavage during sample preparation for X-ray diffraction studies, but was retained in all other biochemical and viral assays (Watson et al., 2023; Singh et al., 2016; da Fonseca et al., 2000b). AF2 predicted these residues to form a three-helical domain with high confidence (pLDDT score: 82.9 for overall structural; 80.6 for the helical domain, 100 for the maximum score), suggesting it may serve as an HS binding site as a structured domain (Figure 1D). We also tested other models, such as ESMFold (pLDDT:70.6; 50.7) and RoseTTAFold2 (pLDDT: 70.2; 50.7) (Figure 1—figure supplement 1B and C; Lin et al., 2023; Baek et al., 2024). They all predict a helical structure. But their results are different in detail and had lower confidence scores. Thus, we used AF2 for further studies. Another concern is that the helical domain near the virus surface. Thus, we modeled the complete structure of H3 in virus using a model DPPC (dipalmitoylphosphatidylcholine) membrane. It showed a dynamic movement between the helical domain and the membrane, with a maximum distance exceeding 1 nm (Figure 1E, Figure 1—figure supplement 1D and E, Figure 1—video 1). Thus, enough space be present for possible HS binding.
 
 Flexible molecular docking and MD simulations identified the exact HS binding sites in the H3 protein (Eberhardt et al., 2021; Lee et al., 2016). We used a 20-repeat HS unit with a specific composition for detailed analysis ([IdoA2S-GlcNS6S-IdoA-GlcNS(3,6S)]5) (Figure 2—figure supplement 1). A 500 ns MD simulation established the equilibrium conformation of H3, and subsequent docking with AutoDock Vina identified four high-scoring conformations for each motif (Figure 2A, Figure 2—figure supplement 2). The docking score calculated by the software reflects the total energy of interactions between molecules. Lower scores (more negative values) indicate more stable binding between the molecules. To address the dynamic nature of HS, we extended our simulations to three times additional 1000 ns MD simulations for each conformation. RMSD (root mean square deviation) analysis demonstrated notably stable binding for HS to both Motif 1 and the newly identified helical domain (Figure 2—video 1), with RMSD values consistently below 4 nm, indicating minimal structural fluctuations during interaction (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Cartoons show docking results of HS with Motifs 1, 2, 3, and the helical domain, respectively. (B) Panels show RMSD (root mean square deviation) values from 1 µs MD simulations, color-coded to match the configurations in (A). (C) Schematics illustrate the reaction coordinate in umbrella sampling, highlighting HS dissociation from H3 with a green force curve. (D) Histogram shows the binding free energies for HS-H3 interactions in Motifs 1, 2, 3, and the helical domain. (E) A free energy landscape map from a 1000 ns REMD (replica exchange molecular dynamics) simulation shows HS binding configurations to the helical and Mg(II) regions. (F) Panel provides salt bridge formation statistics between HS and H3’s basic amino acids, with a bar chart of average formations. (G) A surface plot shows the frequency of salt bridge formations within H3, with areas of frequent formations in blue. (H) Detailed views of HS-H3 interactions, with the left image showing salt bridges and the right image displaying electrostatic interactions with Mg(II). This panel illustrates the impact on HS binding stability to H3 following the removal of Mg(II) during the simulation. (J) The effects of mutating all basic amino acids in the helical domain on the binding stability of HS are shown. (K) The ‘palm-binding’ model is depicted where HS is secured by the helical ‘fingers’ and interacts with the Mg(II)-bound ‘palm’.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The composition of HS used in the main text consists of -[IdoA2S-GlcNS6S-IdoA-GlcNS(3,6S)]5-, containing a total of 20 repeating monosaccharide units.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The docking area of HS was confined near different motifs by setting the docking box. The figure displays the docking results for four motifs, with the top four docking outcomes in each motif area selected based on the best scores (kcal/mol) from AutoDock Vina for subsequent molecular dynamics (MD) simulations.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The conformation of heparan sulfate (HS) binding simultaneously to the helical domain and Mg2+, obtained from replica exchange simulations, was further subjected to umbrella sampling to calculate the binding free energy. The stretching process is illustrated in (A), with the distribution of the reaction coordinate shown in (B). (C) presents the PMF (potential of mean force) profile obtained after calculations using the weighted histogram analysis method (WHAM).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** This represents the variation in the number of salt bridges formed between HS and all basic amino acid side chain of H3 as the simulation progresses. The lighter areas indicate the formation of a greater number of salt bridges.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** The left panel shows the pLDDT scores derived from the AF2 prediction. In the right panel, the blue region corresponds to H3(1–239), and the yellow region represents H3(240–282). All basic amino acids in H3(240–282) have been mutated to serine.
 
 Moreover, we quantitatively analyzed the binding free energy between H3 and HS in different conformational states using umbrella sampling techniques. A harmonic potential was applied to HS and gradually pulled away from H3, generating a series of reaction coordinates (Figure 2C, Figure 2—figure supplement 3, Figure 2—video 2). The green force-extension curve represents the force during this stretching process. This curve, along with the corresponding PMF (potential of mean force) variation shown in Figure 2—figure supplement 3, demonstrated the free energy changes throughout the umbrella sampling process, revealing that the helical domain possesses the highest binding affinity with a ΔG of –45 kcal/mol (Figure 2D).
 
@@ -63,9 +95,25 @@ Our interaction model revealed that the α-helical domain of H3 functions like a
 
 Bioinformatic analysis of the H3 protein across the Poxviridae family highlights its evolutionary conservation and its significance in HS binding. Given the crucial role of electrostatic interactions in the H3-HS binding process, we analyzed the charge distribution within the helical domain. To date, H3 proteins have been discovered in 66 of 118 known Poxviridae species. Using NCBI’s BLAST, we retrieved sequences of these 66 H3 proteins and performed multiple sequence alignment (Altschul et al., 1997). A heatmap detailing the side-chain charge distribution at a physiological pH of 6.5—mimicking the microenvironment of H3-HS interaction—revealed a significant concentration of positive charges at the helical domain (Figure 3A). Furthermore, structural predictions using AF2 showed that all these 66 sequences generally share a similar architecture to MPXV H3, particularly in the presence of the α-helical domain (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig3-v1.jpg)
+
+**Figure 3.:** (A) The heatmap shows the amino acid charge distribution in the H3 protein across 66 Poxviridae viruses, following multiple sequence alignment. Blue indicates areas with more positive charges, and red indicates more negative charges. The accompanying curve shows the average charge of all amino acids in Poxviridae H3. (B) Logo plot of the amino acid sequence of the helical region, highlighting the conservation of basic amino acids at specific positions. (C) The surface charge analysis of H3 from the monkeypox virus (MPXV), vaccinia virus (VACV), variola virus (VARV), and cowpox viruses (CPXV) with the helical domain showing a significantly positive charge. (D) Schematic of the single-molecule force spectroscopy unfolding experiment on H3, illustrating the unfolding process of the helical domain (yellow) followed by the main body (blue). (E) Representative curves of H3 unfolding, color-coded to show the helical region (yellow), main body (blue), and full-length (purple) unfolding. (F) Histograms depict the force spectroscopy signals for helical domain (n=139), main body (n=294), and full-length unfolding (n=289), with ΔLc statistics provided. The inset shows a Gaussian fit of unfolding forces.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The yellow portion represents the helical domain, while the blue portion signifies the main body of H3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The logo plot illustrates the probability of amino acid occurrence within the H3 sequences, where larger font sizes indicate a higher occurrence probability, denoting greater conservation. Acidic amino acids, basic amino acids, polar amino acids, and non-polar amino acids are represented in red, blue, green, and black, respectively.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Peptide GL-ELP20-Cys is modified on a glass substrate (or AFM tip) that has been functionalized with maleimide through a Michael addition reaction. The N-terminus GL can undergo an enzymatic ligation reaction with the C-terminus NGL of the target protein in the presence of ligase OaAEP1, thereby immobilizing the target protein, such as Coh-GB1-GB1-H3-NGL and GL-GB1-Doc, on the substrate or AFM tip.
+
 Notably, this domain consistently exhibited an accumulation of basic amino acids such as lysine, arginine, and histidine, which are essential for binding the negatively charged HS. These amino acids, including residues identified as 358, 361, 367, 373, 379, 386, and 387 in Poxviridae H3 (global position in alignment), corresponding to residues H239, R242, R248, K253, R259, K266, R267 in MPXV H3, show high conservation (Figure 3B, Figure 3—figure supplement 2). Surface charge analysis of H3 proteins from four orthopoxviruses, including MPXV, VACV, VARV, and CPXV, confirmed the predominance of strong positive charges in their α-helical domains (Figure 3C), crucial for effective binding to HS. This consistent feature across different viruses underscores the evolutionary importance of the helical domain, suggesting a universal mechanism in orthopoxviral adhesion that could be targeted in antiviral strategy.
 
-## Experimental confirmation of the structure and function of α-helical domain
+### Experimental confirmation of the structure and function of α-helical domain
 
 To validate the computational predictions, we first conducted experiments using atomic force microscopy-based single-molecule force spectroscopy (AFM-SMFS). This technique, widely used for studying protein (un)folding, allowed us to directly assess the structure and stability of the α-helical domain within the H3 protein (Yu et al., 2017; Dietz and Rief, 2004; Goktas et al., 2018). We engineered the H3 construct with two GB1 domains, each 18 nm in length upon unfolding, and one Cohesin module for precise measurement (Figure 3D; Cao et al., 2006; Stahl et al., 2012; Zheng et al., 2023). These proteins are immobilized on the surface by click chemistry and enzymatic ligations (Figure 3—figure supplement 3; Shi et al., 2022; Deng et al., 2019). During the experiment, the coated AFM tip with GB1 and Dockerin initiated a Coh-Doc interaction, producing a characteristic sawtooth-like force-extension curve as it was stretched (Figure 3D and E). Notably, two peaks corresponding to the unfolding of the α-helical domain were observed. The first peak showed a contour length increment (ΔLc) of 13 nm, closely matching the theoretical unfolding length for the 42 amino acid-long α-helical domain of H3 (residues 240–282, 42aa*0.36 nm/aa-2.6 nm) (Carrion-Vazquez et al., 1999). The measured unfolding force was 67.4±2.1 pN (mean ± SEM, n=139), while the second peak indicated the unfolding of the remaining structure of H3, with a ΔLc of 84 nm (Figure 3F). The total unfolding, represented by a cumulative ΔLc of 97 nm, confirmed the structured and stable nature of the α-helical domain within H3.
 
@@ -73,15 +121,59 @@ We further explored the functional role of the α-helical domain in mediating H3
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig4-v1.jpg)
 
-**Figure 4.:** (A) Schematic of the cell force spectroscopy experiment setup shows three scenarios: wild-type H3 on an atomic force microscopy (AFM) tip interacting with HS on Chinese hamster ovary K1 (CHO-K1) cells, mutation of all basic amino acids in the H3 helical region to serine, and cells treated with HS hydrolase to remove surface HS before testing. (B) Force-extension curves depict interactions for the wild-type (WT), mutant, and control groups, marked with blue and red asterisks for dissociation events. An inset shows the optical microscope positioning the AFM probe. (C) Histograms of dissociation signals comparing the WT, mutant, and control groups, with an inset detailing the surface distribution of dissociation forces. (D) Statistical graph showing binding probabilities for different groups (WT n=18, Uncharged n=17, Control n=12), highlighting significant differences determined by Student’s t-tests (p<1e-5). (E) Flow cytometry (FCM) results illustrate interactions of WT and uncharged H3 fused with eGFP with CHO-K1 cells, alongside GFP control (green) and cell-only control (blank, gray). (F) Statistical analysis of FCM data (n=10), showing significant differences between groups as determined by Student’s t-test. *****, P<1e-5. Error bars indicate SD.Figure 4—source data 1.Figure 4C.Figure 4—source data 2.Figure 4D.Figure 4—source data 3.Figure 4F.
+**Figure 4.:** (A) Schematic of the cell force spectroscopy experiment setup shows three scenarios: wild-type H3 on an atomic force microscopy (AFM) tip interacting with HS on Chinese hamster ovary K1 (CHO-K1) cells, mutation of all basic amino acids in the H3 helical region to serine, and cells treated with HS hydrolase to remove surface HS before testing. (B) Force-extension curves depict interactions for the wild-type (WT), mutant, and control groups, marked with blue and red asterisks for dissociation events. An inset shows the optical microscope positioning the AFM probe. (C) Histograms of dissociation signals comparing the WT, mutant, and control groups, with an inset detailing the surface distribution of dissociation forces. (D) Statistical graph showing binding probabilities for different groups (WT n=18, Uncharged n=17, Control n=12), highlighting significant differences determined by Student’s t-tests (p<1e-5). (E) Flow cytometry (FCM) results illustrate interactions of WT and uncharged H3 fused with eGFP with CHO-K1 cells, alongside GFP control (green) and cell-only control (blank, gray). (F) Statistical analysis of FCM data (n=10), showing significant differences between groups as determined by Student’s t-test. *****, P<1e-5. Error bars indicate SD.
 
 Moreover, we performed mutagenesis studies on the α-helical domain by replacing all positively charged residues with serine. AFM experiments on this variant H3(uncharged) showed a detectable force peak with a lower unbinding force of 28.8±0.2 pN, compared to 33.7±0.3 pN for the wild-type—representing a 14% reduction (ΔForce>2*SEM, 95% CI)—and a significant decreased HS binding probability from 43% to 25% (Figure 4C and D). These results suggest that the basic amino acids in the helical domain are crucial for HS binding. To confirm the specificity of the interaction, CHO-K1 cells were treated with heparinase II, an enzyme that degrades HS. This treatment further reduced the dissociation force to 23.0 pN and the binding probability to 12.6%, confirming that the observed interactions were specific to the HS-H3 complex.
 
 Further validation was carried out using flow cytometry (FCM). We fused eGFP, a fluorescent reporter protein, to the C-terminus of both the H3(WT) and the H3(uncharged). Following incubation of these fusion proteins with cells, FCM analysis showed a significant reduction in mean fluorescence intensity in cells treated with H3(uncharged) compared to H3(WT) (Figure 4E). Statistical analysis of multiple experiments highlighted a significant difference between the two (Figure 4F). These findings, along with the results from MD simulations and AFM force spectroscopy, underscore the importance of the positively charged amino acids in the α-helical domain of H3 for efficient HS binding.
 
-## The helical domain serves as a target for H3 infection inhibition
+### The helical domain serves as a target for H3 infection inhibition
 
 Targeting the α-helical domain of H3 as H3 binding sites, we de novo designed a series of inhibitors. Using deep-learning model RFdiffusion, we designed a series of inhibitors for the H3-HS interaction and named it AI-PoxBlock (Figure 5A). Sequence recovery for each series was performed on 1000 backbones using ProteinMPNN, generating 10 sequences per backbone. These designs were further validated through complex structure predictions using AF2-multimer, and candidates were selected based on PAE (predicted aligned error) values below 7 and iPTM (interface predicted template modeling) scores above 0.9. The predicted structures of these candidates also exhibited RMSD values of less than 2 nm when compared to the RFdiffusion-generated structures (Figure 5—figure supplement 1). To assess the binding capabilities of these inhibitors, we conducted 500 ns MD simulations, analyzing RMSD trajectories. Five inhibitors—AI-PoxBlock302, 602, 614, 723, and 761—demonstrated stable RMSD values under 0.4 nm, confirming their potential for stable binding to the helical domain of H3 (Figure 5—figure supplements 2 and 3, Figure 5—video 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-v1.jpg)
+
+**Figure 5.:** (A) Diagrams depict protein inhibitors designed to target the H3 helical region, created using RFdiffusion. Sequences capable of folding into the target scaffold structures were generated using ProteinMPNN, and were validated through AlphaFold2 (AF2), followed by 500 ns molecular dynamics (MD) simulations for structural stability and interaction scoring. (B) Flow cytometry (FCM) analysis demonstrates the inhibitory effect of AI-Poxblock723 at various concentrations (0, 10, 50, and 100 μM, x-axis, n=5). The control group consisted of 2 μM H3-eGFP without the inhibitor, with the relative fluorescence intensity normalized to 1. (C) Biolayer interferometry (BLI) confirms direct interaction between AI-Poxblock723 and the H3 helical domain. (D) Graphs display the inhibitory effect of the indicated AI-Poxblocks on monkeypox virus (MPXV) infection of Vero E6 cells, with quantitative analysis of virus-infected foci provided on the right. (E–F) BALB/c mice were infected intranasally with 4×105 FFU (focus-forming unit) MPXV and treated with single dose of AI-PoxBlock723 (10 mg/kg) or phosphate buffer solution (PBS) immediately after challenge (n=5). Infectious MPXV particles and MPXV viral loads in mice lungs at 4 days post-infection (dpi) were determined by focus-forming assay (E) and quantitative polymerase chain reaction (qPCR) (F). Error bars indicate SEM and statistical significance was evaluated using Student’s t-test (B, E). *P < 0.05, ***P < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The gray structure represents the protein backbone structure designed by RFdiffusion, while the purple structure is the sequence generated by ProteinMPNN based on that backbone, followed by complex prediction from AlphaFold2 (AF2). The two structures align well, with an RMSD (root mean square deviation) less than 1.5 nm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** From left to right are AI-Poxblock302, AI-Poxblock602, AI-Poxblock614, AI-Poxblock723, and AI-Poxblock761. All inhibitors are depicted in purple, and the helical domain of H3 are marked in yellow.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The H3 and inhibitor complex underwent a 500 ns MD simulation, resulting in the variation of RMSD (root mean square deviation) (nm) over time (ns).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** The graph shows relative fluorescence intensity, indicating that in the presence of 10 μM AI-Poxblock723, the binding of H3(1–282)-eGFP to Chinese hamster ovary K1 (CHO-K1) cells is reduced compared to the control group (gray).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** BLI curves of three concentrations of H3(1–239) (20,000 nM, 10,000 nM, and 2500 nM) with AI-Poxblock723 loaded on the sensor. The curves could not be fitted to obtain the KD value.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** CD spectroscopy verifies the designed inhibitor with an α-helical structure.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** Basic amino acid residues are highlighted in blue, and aa differences relative to the MPXV sequence are shaded in yellow.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp8-v1.jpg)
+
+**Figure 5—figure supplement 8.:** Virus-infected foci and counts were shown as inset.
+
+![Figure 5—figure supplement 9.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp9-v1.jpg)
+
+**Figure 5—figure supplement 9.:** Virus-infected foci and counts were shown as inset.
+
+![Figure 5—figure supplement 10.](https://cdn.elifesciences.org/articles/100545/elife-100545-fig5-figsupp10-v1.jpg)
+
+**Figure 5—figure supplement 10.:** (A) AlphaFold2 prediction result of H3(240–279). (B) Circular dichroism (CD) results and secondary structure prediction of H3(240–279).
 
 Although AI-PoxBlock302 could not be successfully expressed, the remaining four inhibitors underwent further testing in FCM to evaluate their efficacy in inhibiting H3 binding to CHO-K1 cell surfaces. AI-PoxBlock723 stood out, significantly reducing H3 binding at a concentration of 10 μM, while the other inhibitors displayed no tendency to inhibit H3 binding to HS on cell surfaces (Figure 5B, Figure 5—figure supplement 4). Further analysis using biolayer interferometry (BLI) confirmed that AI-PoxBlock723 binds to H3 with an equilibrium dissociation constant (KD) of 9 μM (Figure 5C). To ensure specificity, we also assessed the interaction between AI-PoxBlock723 and a truncated version of H3 (residues 1–239), lacking the α-helical domain. BLI results indicated a marked reduction in binding, reinforcing the specificity of AI-PoxBlock723 for the helical domain (Figure 5—figure supplement 5). Circular dichroism (CD) spectroscopy also confirmed that AI-PoxBlock723 predominantly consists of α-helices, consistent with its design specifications (Figure 5—figure supplement 6).
 
@@ -105,7 +197,7 @@ Looking ahead, the methodologies and findings from this study are likely to cata
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 All genes were ordered from General Biosystems. H3(1–282) was constructed into the pCold-TF-tev vector using BamHI-BglII-KpnI three-restriction enzyme system and a Strep-Tag II was added to the C-terminus for protein purification. eGFP was ligated to the C-terminus of H3(1–282) by restriction enzyme system. Mutations in the basic amino acids of the helical domain were introduced by site-directed PCR mutagenesis. The pCold-TF-tev-POI-strep tag construct was transformed into BL21(DE3), and single colonies were picked and cultured overnight at 37°C in LB medium with ampicillin. The expanded culture was then transferred to 800 mL of ampicillin LB and continued to be incubated at 37°C with shaking for 2 hr. When the OD600 of the culture reached 0.6–0.8, it was cooled to 15°C in an ice-water bath. Then, IPTG was added to a final concentration of 0.5 mM and incubated overnight at 15°C on a shaker.
 
@@ -117,49 +209,49 @@ OaAEP1(C247A) is cysteine 247 to alanine mutant of asparaginyl endoproteases 1 f
 
 All H3 inhibitors designed via RFdiffusion were constructed into the pET30a vector, with C-terminal fusion of strep tag and His8 tag for protein purification and subsequent BLI immobilization. After transforming pET30-Inhibitor-strep tag II-His8 into BL21(DE3), the culture was grown at 37°C in kanamycin-resistant LB medium for 2 hr until the OD600 reached 0.6–0.8, then IPTG was added to a final concentration of 0.5 mM and the culture was incubated overnight at 18°C. The subsequent purification steps were as previously described, using STarm Sreptactin. The purified protein was exchanged into PBS buffer via ultrafiltration. 4 mg chemically synthesized peptide H3 (240–279) was ordered from GenScript Corporation.
 
-## Modeling and MD simulations of C-terminal insertion of the H3 into DPPC membrane
+### Modeling and MD simulations of C-terminal insertion of the H3 into DPPC membrane
 
 Using TMHMM2.0, we predicted the transmembrane region of H3 to span residues 283–306. We modeled this region using ESMFold, obtaining the helical structure of H3(283–306). Subsequently, by utilizing the previously obtained structures of H3(1–282) and H3(283–306), we performed multi-template modeling of the full-length H3 protein using MODELLER. Next, we employed CHARMM-GUI’s (O’Toole et al., 2023) Membrane Builder to construct the structure of H3 inserted into a 10×10 nm2 DPPC membrane, and simultaneously built a water box with a NaCl concentration of 0.15 M, generating input files (charmm36m force field and the TIP3P water model) suitable for MD simulations with GROMACS 2023.3.
 
 After energy minimization to reduce the maximum force below 1000 kJ/mol/nm, an NVT equilibration was conducted using the V-rescale thermostat method at 310 K. This was followed by a 500 ns NpT production simulation at 310 K using the V-rescale thermostat and the C-rescale barostat methods at 1 bar. During the 500 ns MD simulation, the time-dependent changes in the minimum distance between the helical region H3(240–273) and the DPPC membrane were calculated from the simulation trajectory using gmx mindist.
 
-## Molecular docking of H3 with HS
+### Molecular docking of H3 with HS
 
 An HS oligosaccharide with the structure -[IdoA2S-GlcNS6S-IdoA-GlcNS(3,6S)]5- was modeled using the CHARMM-GUI online website. The structure of H3(1–282) predicted by AF2 was refined through 500 ns of MD simulation, and the most frequently appearing conformation was obtained through structural clustering. Specifically, by calculating the RMSD values of H3 in the MD trajectory, and then clustering using the built-in gmx cluster program, the gromos clustering method was adopted with a cutoff set to 0.2 nm. The top three conformations obtained were used for the subsequent docking process.
 
 AutoDock Vina was called via the Chimera graphical interface to generate docking configuration files for HS and H3, with the center of each docking box set at the center of the GAGs binding motif, and the box size set to 8 nm. The energy_range was set to 3 kcal/mol, specifying that the energy difference from the current best conformation should be less than 3 kcal/mol. The docking results were ranked according to the energy scores generated by AutoDock Vina, and the best four conformations were selected.
 
-## MD simulations of the H3-HS complex
+### MD simulations of the H3-HS complex
 
 The docked H3-HS complex was uploaded to the CHARMM-GUI website for simulation system construction, utilizing the charmm36m force field and the TIP3P water model. A water box, 1 nm larger than the molecular boundaries of the complex, was constructed, and 0.15 M NaCl was used for charge balancing. The final output included structure and force field files suitable for GROMACS 2023.3 MD simulations. After energy minimization to reduce the maximum force below 1000 kJ/mol/nm, an NVT equilibration was conducted using the V-rescale thermostat method at 310 K for 1 ns. This was followed by a 1000 ns NpT production simulation at 310 K using the V-rescale thermostat and the C-rescale barostat methods at 1 bar. Three independent repetitions were performed for the production simulation.
 
 The RMSD values of HS were calculated using the built-in gmx rms program in GROMACS, maintaining the structural overlap of H3. To analyze salt bridges between HS and HS in this simulation, a Python script was used to calculate the distance between the negatively charged oxygen atoms on the side chains of HS and the nitrogen atoms on the side chains of basic amino acids of H3 throughout the trajectory. A distance less than the set cutoff of 0.35 nm was considered indicative of salt bridge formation.
 
-## Binding free energy of H3 with HS using umbrella sampling in MD simulations
+### Binding free energy of H3 with HS using umbrella sampling in MD simulations
 
 To calculate the stability of various binding conformations of H3-HS, the binding free energy was determined using the umbrella sampling method. The force field and solvent settings of the simulation system were consistent with the previously mentioned MD simulations, employing the charmm36m force field and TIP3 water model, and maintaining a simulation temperature of 310 K. These simulations were conducted using GROMACS 2023.3. Specifically, for umbrella sampling, steered molecular dynamics simulations were first carried out. During this process, H3 was held fixed (using a restraining potential), and a harmonic potential was applied to the HS molecule. This potential facilitated the constant velocity stretching of HS (1 nm/ns) along the z-axis, moving it 5 nm until complete separation from H3 was achieved. The size of the simulation box was designed to ensure that neither molecule crossed the boundaries during stretching. The stretching process generated a series of reaction coordinates, defined by the distance between the centroids of HS and H3. Biasing potentials were applied to these coordinates for 10 ns MD simulations. The outputs of these simulations, in the form of potential energy distributions, were then analyzed using the weighted histogram analysis method. This analysis produced a PMF profile, describing the free energy landscape as a function of the reaction coordinate, thus allowing for the calculation of the binding free energy of H3-HS.
 
-## REMD simulations
+### REMD simulations
 
 To further investigate the conformational changes of HS and the helical domain, we conducted REMD simulations. The simulation system was set up using CHARMM-GUI, employing the same force field and water model as the aforementioned MD simulations, and 0.15 M NaCl was used for charge balancing. The temperature range was set from 310 K to 387 K, generating a total of 64 replicas with a swap probability of 20%. Each simulation had a duration of 1 µs, resulting in a cumulative simulation time of 64 µs for all replicas.
 
 Simulations were executed using the MPI version of GROMACS 2023.3. Upon completion of the simulations, the replica at 310 K was selected for further analysis. Using GROMACS built-in tools, ‘distance’ and ‘rms’, we calculated the nearest distance between HS and Mg(II), and the RMSD of HS throughout the simulation trajectory, respectively. Subsequently, the gmx sham program was used to generate a free energy landscape from these two sets of data. This landscape effectively illustrates the dynamic binding changes between HS and H3, as well as the interaction between HS and Mg(II).
 
-## Poxviridae virus H3 sequence analysis
+### Poxviridae virus H3 sequence analysis
 
 A total of 66 available H3 sequences from Poxviridae viruses were obtained through a sequence search of the MPXV H3 sequence using NCBI’s BLAST. After removing duplicate sequence data, multiple sequence alignment was performed using MEGA11, with the ClustalW method employed for sequence alignment. The alignment results were uploaded to the WebLogo website for logo image generation. Acidic amino acids, basic amino acids, polar amino acids, and non-polar amino acids were represented in red, blue, green, and black, respectively. The font size in the logo corresponds to the probability of occurrence of the amino acid at that position, with larger fonts indicating greater conservation of the amino acid. The charge analysis of the amino acid sequences was conducted using the ProteinAnalysis function of the Biopython package. Surface charge maps of the H3 protein were generated using Chimera, and the charge distribution was calculated using APBS.
 
-## AFM-SMFS protein unfolding experiment
+### AFM-SMFS protein unfolding experiment
 
 The AFM cantilever/tip made of silicon nitride (MLCT-BIO-DC, Bruker Corp.) was used. The detailed protocol for AFM tip functionalization and protein immobilization on the glass coverslip can be found in the literature (Liu et al., 2024). In short, the tip and glass coverslip were coated with the amino group by amino-silanization. N3 is functionalized on the surface from the reaction between ImSO2N3·HCl and –NH2. Then, a heterobifunctional DBCO-PEGn-Mal can be reacted and adds the Mal group. Next, the peptide GL-ELP20-C or C-ELP20-NGL was reacted to the maleimide via the cysteine, respectively. The long ELP20 serves as a spacer to avoid non-specific interaction between the tip and the surface as well as a signature for the single-molecule event. Finally, target protein H3 with C-terminal NGL sequence or GB1-Doc with N-terminal GL sequence can be site-specifically linked to the coverslip or tip by AEP, respectively.
 
 Atomic force microscope (Nanowizard4, JPK) was used to acquire the force-extension curve. The D tip of the MLCT-Bio-DC cantilever was used. Its accurate spring constant was determined by a thermally induced fluctuation method. Typically, the tip contacted the protein-immobilized surface for 100 ms under an indentation force of 350 pN to ensure a site-specific interaction. Then, moving the tip up vertically at a constant velocity (1 µm/s), the polyprotein unfolded. Then, the tip moved to another place to repeat this cycle several thousands of times. As a result, a force-extension curve was obtained, which was analyzed using JPK data process analysis software.
 
-## AFM-SMFS unbinding experiment of H3-HS on CHO-K1
+### AFM-SMFS unbinding experiment of H3-HS on CHO-K1
 
 Force-extension-based AFM measurement on model surfaces was performed in PBS buffer at room temperature using functionalized D tip of MLCT-Bio-DC cantilever (Bruker, nominal spring constant of 0.030 N/m and actual spring constants calculated using thermal tune). AFM (Nanowizard4, JPK) operated in the force mapping (contact) mode was used. CHO-K1 cells were cultured in a 37°C CO2 incubator for 24 hr prior to force spectroscopy experiments. The relative positioning of the AFM probe and the adherent cells was determined using an inverted microscope. Areas of 5×5 µm2 were scanned, ramp size set to 350 nm, and set point force of 300 pN with a contact time of 200 ms, with a resolution of 32×32 pixels.
 
-## Flow cytometry experiment
+### Flow cytometry experiment
 
 Protein binding to GAGs expressed on the surface of CHO-K1 cells was assessed using FCM, following the previously described methods. H3-eGFP, H3(uncharged)-eGFP, and eGFP proteins (5 μM) were incubated with 1 million cells (200 μL) at 4°C for 20 min. Post-incubation, cell analysis was performed using the CytoFLEX flow cytometer (Beckman) to collect fluorescence signals in the FITC channel. A total of 15,000 events were collected using the CytExpert software (version 2.5; Beckman), with 10 sets of data collected in parallel. The data from the live-cell gating were analyzed using FlowJo software (version 10.6.2; Tree Star, San Carlos, CA, USA).
 
@@ -167,39 +259,39 @@ The FCM experiment to validate the inhibitory effects of inhibitors utilized the
 
 To further verify the concentration-dependent inhibitory effect of AI-Poxblock 723, we conducted a concentration-dependent FCM experiment. The final concentration of H3-eGFP remained at 2 μM, while 723 was tested at three final concentrations (100 μM, 50 μM, and 10 μM), with a total volume of 600 μL. The control group contained only 2 μM H3-eGFP without inhibitor. Data from five parallel experiments were collected, with 15,000 events recorded for each experiment. The mean fluorescence intensity in the FITC-area signal within the live-cell gate was analyzed using FlowJo software, normalizing the relative fluorescence intensity of the control group to 1.
 
-## Design of inhibitors targeting the H3 helical domain
+### Design of inhibitors targeting the H3 helical domain
 
 To design inhibitors targeting the helical domain of H3, hotspots information was first inputted into RFdiffusion. The selected residues for this purpose were 239, 242, 267, 266, 259 of H3, and the length of the inhibitor sequences was set to be 40–80 amino acids. This process generated 1000 backbone structures. After excluding single-stranded helical structures, the remaining 633 structures underwent sequence recovery using ProteinMPNN, producing 10 sequences per structure. All 6330 sequences were then subjected to structure prediction and scoring using AF2. Structures with an iPTM score greater than 0.9 and a PAE score less than 6 were selected, while sequences containing Cys were excluded to avoid the formation of disulfide bonds.
 
 RMSD calculations were performed between the predicted structures and the RFdiffusion-designed structures, and sequences with an RMSD greater than 1.5 nm were excluded to ensure consistency between the predicted and designed structures. Additionally, solubility assessments were conducted for all sequences. Specifically, a solubility parameter was assigned to each of the 20 natural amino acids, and an average was calculated for the entire sequence. The sequences with the highest solubility were selected for expression and interaction testing.
 
-## MD simulations of H3 and its inhibitors
+### MD simulations of H3 and its inhibitors
 
 The AF2-predicted structure of the H3-inhibitor complex was used for the MD simulations, utilizing the previously mentioned MD software and force field. The MD simulation was conducted at 310 K for 500 ns. Subsequently, the RMSD of the simulation trajectory was calculated using the built-in ‘rms’ program of GROMACS to analyze the stability of the inhibitor-H3 binding.
 
-## CD experiments
+### CD experiments
 
 For CD experiments, AI-Poxblock723 and H3(240–279) were diluted to 0.15 mg/mL and 0.1 mg/mL in 10 mM K-PO4 (pH 7.4) buffer, respectively. Spectra were acquired on a Chirascan V100 (Applied Photophysics). The data acquisition wavelength is set to 190–260 nm. All reported measurements were acquired within the linear range of the instrument.
 
-## BLI binding experiments
+### BLI binding experiments
 
 BLI experiments were conducted using Octet HIS1K Biosensors on the Octet system. The buffer used throughout the experiments was uniform PBS. The tips were first pre-equilibrated in PBS solution for 10 min, followed by a 60 s baseline, 60 s loading, 100 s baseline, 100 s association, and 120 s dissociation steps. Baseline measurements of unloaded tips were subtracted from their matched measurement of the loaded tip. The inhibitor concentration was determined using the BCA method before loading and prepared at a concentration of 0.1 mg/mL for the loading solution. The mass concentration of H3(1–282) and H3(1–239) was also determined using the BCA method, and their molar concentrations were calculated. The purity of H3 is above 60%. Various concentration samples were then prepared using a serial dilution method. After baseline correction and curve smoothing, a global fit was performed to calculate the KD.
 
-## Inhibition test for viral infection
+### Inhibition test for viral infection
 
 Vero E6 cells were seeded at 1.5×104 cells/well into 96-well plates and used the following day. AI-Poxblocks threefold serial diluted in maintenance medium were mixed with an equal volume of diluted live VACV or MPXV and then incubated at 37°C for 1 hr. Medium from 96-well plates was aspirated, and the inhibitor-virus mixture was added (100 μL/well), then the Vero E6 cells were incubated at 37°C for about 16 hr. Then cells were fixed with 4% paraformaldehyde solution, permeabilized with Perm/Wash buffer (BD Biosciences) containing 0.1% Triton X-100, incubated with the HRP-conjugated anti-VACV polyclonal antibodies (Invitrogen) diluted in the Perm/Wash buffer at room temperature for 2 hrs.
 
 The reactions were developed with KPL TrueBlue Peroxidase substrates (Seracare Life Sciences). The numbers of infected foci were calculated using an EliSpot reader (Cellular Technology Ltd). The 50% inhibitory concentration (IC50) was calculated using GraphPad Prism software using the log (inhibitor) vs. normalized response-variable slope (four parameters) model. Experiments with live MPXV were performed in a Biosafety Level 3 (BSL-3) facility following standard biosafety practices.
 
-## Animal experiments
+### Animal experiments
 
 Female BALB/c mice, 6–8 weeks of age, were obtained from GemPharmatech Co., Ltd (Guangdong, China). After arrival, all mice were acclimated for 3 days and then randomly assigned to experimental groups. For challenge, mice were anesthetized by intraperitoneal injection of 1.25% tribromoethanol solution with a dosage of 20 μL/g. Intranasal infections were performed by introduction of 50 μL of virus into one nostril. Mock-infected control animals were similarly inoculated with an equivalent volume of diluent. After infection, mic e were given intraperitoneally with single dose of 10 mg/kg of AI-Poxblock723 or PBS. Animals were euthanized 4 days after infection for the determination of pulmonary viral titers.
 
-## Animal ethics statement
+### Animal ethics statement
 
 Mice were housed in independent ventilation cages and utilized at five mice per treatment group. All animals were given food and water ad libitum throughout all experiments. All efforts were made to minimize animal suffering and to reduce the number of animals used. All animal procedures were approved by Shenzhen Third People’s Hospital’s Institutional Animal Care and Use Committee prior to the initiation of studies.
 
-## Infectious virus titration and viral load determination
+### Infectious virus titration and viral load determination
 
 The lungs from BALB/c mice were homogenized in 1 mL PBS with 3 mm zirconium beads using a tissue homogenizer (Omni, Bead Ruptor 24 Elite). After two cycles of freeze-thaw, the lung tissue homogenates were centrifuged to remove tissue debris. Supernatants were transferred into fresh tubes. Infectious viral titers were determined using focus-forming assay. Briefly, the Vero E6 cells were seeded in 96-well plates and incubated overnight. Ten-fold serial dilutions of the MPXV were prepared in the maintenance medium. The Vero E6 cells were inoculated with 100-fold diluted supernatants (100 μL/well). After 1 hr of adsorption, the samples were removed and cells were washed once with PBS. Then 100 μL/well maintenance medium was added. After 18 hrs incubation, the medium was aspirated and the cells were fixed with 4% paraformaldehyde solution for 30 min, permeabilized with Perm/Wash buffer (BD Biosciences) containing 0.1% Triton X-100, incubated with the HRP-conjugated anti-VACV polyclonal antibodies (Invitrogen) at room temperature for 2 hrs. The reactions were developed with KPL TrueBlue Peroxidase substrates (Seracare Life Sciences). The number of virus foci was counted using an ELISpot reader (Cellular Technology Ltd.).
 

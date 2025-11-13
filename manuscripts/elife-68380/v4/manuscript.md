@@ -29,21 +29,53 @@ Our previous work has shown the KDEL receptor has a transporter-like architectur
 
 ## Results
 
-## ER retrieval signals in mammalian cells
+### ER retrieval signals in mammalian cells
 
 To understand how the KDEL-receptor differentiates between cargo proteins, we first sought to define the major signal variants used in mammalian cells. For this purpose, we exploited luminal ER proteome datasets to investigate the relative abundance of retrieval signal variants (Itzhak et al., 2017; Itzhak et al., 2016). This confirmed that KDEL, HDEL and RDEL are the major variants in mammals, and the frequency of ER resident proteins with these variants of the retrieval signal at the −4 position is approximately equal (Figure 1a). However, this does not reflect the abundance of the proteins carrying the signal. Strikingly, the total concentration of KDEL bearing proteins is over five-fold higher than either HDEL or RDEL (Figure 1b). This largely reflects a small number of highly abundant ER-resident chaperones, BIP, PDI, and calreticulin (Figure 1—figure supplement 1a and b). Each of these proteins is present in the 5–10 µM range, far more abundant than the dominant KDELR receptor 2 (KDELR2) species which is estimated to be 0.2–0.3 µM (Figure 1—figure supplement 1c). In total, the concentration of retrieval signals thus exceeds that of the receptor by at least two orders of magnitude. In good agreement with previously reported studies on the mammalian KDEL receptor (Scheel and Pelham, 1998; Wilson et al., 1993), we found that HDEL has the highest affinity for the receptor KD 0.24 µM, followed by KDEL KD 1.94 µM and RDEL KD 2.71 µM (Figure 1c). Previous work has suggested DDEL binds to semi-purified human KDEL receptors in membrane fractions and can function as a retrieval signal when the receptor is overexpressed at high level in COS7 cells (Lewis and Pelham, 1992; Wilson et al., 1993). However, we find that DDEL binds with 60-fold lower affinity than HDEL (KD 14.9 µM) (Figure 1c), in agreement with other data for purified KDEL receptors (Scheel and Pelham, 1998). Thus, the receptor binds to the HDEL sequence with one order of magnitude greater affinity than the canonical KDEL ligand present on the most abundant ER resident proteins. Despite this difference in affinities, mScarlet fusions with KDEL, RDEL or HDEL signals all triggered similar changes to the steady-state distribution of the endogenous KDEL receptor in cells, driving almost complete retrieval from the Golgi to the ER (Figure 1d and e). By contrast, expression of ADEL or DDEL had little effect on the Golgi-ER distribution of the receptor (Figure 1d and e), consistent with the far lower affinity relative to HDEL. Similar results were obtained for assays performed with exogenous KDELR1 and R2 (Figure 1—figure supplement 2), the major variants present in the cells used. In line with these effects on the receptor, the mScarlet-KDEL, RDEL, and HDEL ligands were retrieved to the ER, whereas ADEL and DDEL showed predominantly Golgi and punctate localisation consistent with secretion (Figure 1d). These latter observations explain why there are no verified examples of endogenous ER proteins using ADEL and DDEL retrieval signals in mammalian cells.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig1-v4.jpg)
+
+**Figure 1.:** (a) Sequence logos for ER resident proteins with C-terminal KDEL retrieval signals and variants thereof calculated using frequency or protein abundance (Itzhak et al., 2017; Itzhak et al., 2016). (b) Combined cellular concentrations of ER resident proteins with canonical KDEL, RDEL, and HDEL retrieval sequences in HeLa cells and mouse brain. (c) Competition binding assays for [3H]-TAEHDEL and unlabelled TAEKDEL, TAERDEL, and TAEHDEL to the KDEL receptor. IC50 values for the competing peptides were used to calculate the apparent KDwith the Cheng-Prusoff equation (Cheng and Prusoff, 1973). (d) Endogenous KDEL receptor redistribution was measured in COS-7 cells in the absence (-ligand) or presence of K/R/H/A/DDEL (mScarlet-xDELsec). TGN46 was used as a Golgi marker. Scale bar is 10 µm. (e) The mean difference for K/R/H/A/DDEL comparisons against the shared no ligand control are shown as Cummings estimation plots. The individual data points for the fraction of KDEL receptor fluorescence in the Golgi are plotted on the upper axes with sample sizes and p values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The mean concentration of ER resident chaperones with the indicated ER retrieval sequence variant is plotted in the bar graph (Itzhak et al., 2017; Itzhak et al., 2016). (b) Combined cellular concentrations of ER resident proteins with canonical KDEL, RDEL, and HDEL retrieval sequences in HeLa cells and mouse brain. (c) The mean concentration of KDELR1, KDELR2, and KDELR3 in HeLa cells and mouse brain is plotted in the bar graph (Itzhak et al., 2017; Itzhak et al., 2016). (d) Cells and media collected from HeLa S3 cells expressing the xDEL variants (mScarlet-xDELsec) indicated in the figure were Western blotted for resident ER chaperones and KDELR. (e) A bar graph of xDEL secretion showing mean ± SEM (n = 3). (f). Endogenous ER chaperone secretion was measured by western blotting after challenge with different retrieval signals, and plotted as a bar graph showing mean ± SEM (n = 3).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig1-figsupp2-v4.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Distribution of human KDELR1 and (b) KDELR2 was measured in COS-7 cells in the absence (-ligand) or presence of K/R/H/A/DDEL retrieval signals (K/R/H/A/DDELsec). TGN46 was used as a Golgi marker. Scale bar is 10 µm. The fraction of KDEL receptor localised to the Golgi was measured before (no ligand) and after challenge with different retrieval signals as indicated. Golgi signal for KDEL receptor and ligand intensity are shown on the scatter plots with sample sizes. Effect sizes are shown as the mean difference for K/R/H/A/DDEL comparisons against the shared -ligand control with sample sizes and p-values.
 
 Given its higher affinity, why then is HDEL not the dominant ER retrieval signal, especially for crucial ER proteins such as BIP, PDI and calreticulin? We tested the idea that due to its higher binding affinity, increasing the concentration of HDEL bearing proteins would effectively compete for KDEL receptors in the Golgi, and prevent efficient ER retrieval of KDEL and RDEL containing proteins. To do this, we used our series of variant xDEL signals, where x at the −4 position is either K, R, H, A, or D. When expressed in cells, KDEL, RDEL, and HDEL are retained in the cell, whereas ADEL and DDEL are mostly secreted (Figure 1—figure supplement 1d and e). With the exception of HDEL this is broadly in line with their respective binding affinities. Despite binding to the receptor with a higher affinity (Figure 1c), HDEL was less efficiently retained than either KDEL or RDEL (Figure 1—figure supplement 1d and e). We then examined the effect of these ligands on the major ER proteins BIP and PDI as well as the less abundant chaperones ERP72 and ERP44 (Figure 1—figure supplement 1a). As predicted, ADEL and DDEL had little effect on ER retention, while HDEL caused secretion of all four proteins (Figure 1—figure supplement 1f).
 
 These results indicate that the retrieval system is selective yet not optimised for binding affinity, and instead has evolved to ensure optimal retrieval of a broad cohort of proteins of widely differing abundance. In human cells, ADEL and DDEL do not bind to the receptor with high affinity and do not function as retrieval signals, suggesting specific recognition of the −4 position is a key determinant for binding. Previously, it has been suggested that complementary charges at receptor position 50 and the −4 position of the signal explain this specificity (Lewis and Pelham, 1992; Semenza and Pelham, 1992). However, this mechanism does not obviously explain how ADEL, with no charged residue at the −4 position, functions as a signal in some organisms. How signal selectivity is achieved was therefore a crucial question we needed to answer.
 
-## HDEL and RDEL signals bind similarly to the canonical KDEL variant
+### HDEL and RDEL signals bind similarly to the canonical KDEL variant
 
 To understand the molecular basis for the affinity differences between retrieval signal variants, we first examined the pH dependence of binding using protein stability assays. This revealed that HDEL, KDEL and RDEL signals show similar pH dependent interaction with chicken KDELR2 (Figure 2—figure supplement 1). We then determined structures for chicken KDELR2 bound to HDEL and RDEL signals. These structures with TAEHDEL and TAERDEL peptides have resolutions of 2.24 and 2.31 Å, respectively (Figure 2a–c and Supplementary file 1). In both instances the overall structure of the receptor is similar to our previous complex with the TAEKDEL peptide (Figure 2d), with a root mean square deviation (R.M.S.D.) of 0.223 and 0.153 Å over 200 Cα atoms for the HDEL and RDEL structures, respectively. Both HDEL and RDEL peptides are bound in a vertical orientation with respect to the membrane, with the side chains clearly resolved in the electron density map (Figure 2—figure supplement 2a and b). Both the HDEL and RDEL peptides interact with the receptor through the same salt bridge interactions seen for the KDEL peptide (Figure 2b–d). Superimposing the three peptides reveals little movement of the peptide at the −1 and −2 positions when bound to the receptor (Figure 2e). For RDEL, we observe slight movement of the backbone Cα atom of the peptide to accommodate the larger arginine side chain, resulting in a minor repositioning of the glutamate at the −3 position in the receptor. Nonetheless, the position of the positive charge at the −4 position on all three peptides is identical relative to E117 and W120 within the receptor, supporting the view that a salt bridge is formed with E117 on TM5. D50 previously proposed to be important for recognition of the −4 position is >5 Å away, outside the region depicted in the figures, indicating it is unlikely to form a salt bridge and directly contribute to binding of the retrieval signal. Some studies have suggested the core tetrapeptide retrieval motif should be extended to include the −5 and −6 positions (Alanen et al., 2011). However, these positions are not conserved in retained ER luminal proteins (Figure 1a). In our structures, the glutamate at the −5 position sits close to S54, but would not obviously increase the binding affinity, whereas no contacts are made to the −6 position. In all cases, the free carboxy terminus and leucine residue at the −1 position form interactions to R47 and Y48 on TM2, as well as R159 and Y162 on TM6. The glutamate at position −2 forms a further salt bridge interaction to R5 on TM1 and a hydrogen bond to W166 on TM6, whereas the aspartate at −3 forms a salt bridge with R169, also on TM6. For the histidine side chain at the −4 position of HDEL, the imidazole group is predicted to form a π-π stacking interaction with W120 (Figure 2b). For RDEL, the arginine side chain sits in the same position as the amine group of KDEL and could thus interact with W120 via a cation-π interaction and E117 via a classical salt bridge interaction (Figure 2c). We therefore conclude that both E117 and W120 play a role in retrieval signal binding, and the only major difference between HDEL, RDEL, and KDEL is the precise nature of the interaction with W120 indicating that this may be a critical residue to explain the differences in affinity.
 
-## Probing the importance of E117 and W120 for signal binding
+![Figure 2.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig2-v4.jpg)
+
+**Figure 2.:** (a) Crystal structure of chicken KDELR2 viewed from the side with the transmembrane helices numbered and coloured from N-terminus (blue) to C-terminus (red). The predicted membrane-embedded region of the receptor is indicated by a grey shaded box, with labels at the luminal and cytoplasmic faces. The TAEHDEL peptide is shown in stick format, coloured grey. (b) Close up views of bound TAEHDEL (this study), (c) TAERDEL (this study), and (d) TAEKDEL (PDB:6I6H) peptides bound to the receptor are shown with contributing side chains labelled. Hydrogen bonds are indicated as dashed lines. The molecular orbitals of W120 and the −4 histidine on the peptide are shown as a dotted surface. (e) Superposition of the HDEL, RDEL, and KDEL peptides reveals near identical binding position within the receptor. Retrieval signal side chains are numbered counting down from the C-terminus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** Thermal stability of chicken KDEL2 was measured at pH 5.4, 5.9, 6.4, and 7.0 in the presence of TAEHDEL, TAEKDEL, and TAERDEL peptides. The difference in melting temperature to a no ligand control is plotted in the bar graph as mean ± SEM (n = 3).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig2-figsupp2-v4.jpg)
+
+**Figure 2—figure supplement 2.:** (a) The structure of the KDELR bound to the TAEHDEL peptide is shown as in Figure 2a. The mFo-DFc difference electron density used for model building is displayed (green mesh), contoured at 3σ. (b) Equivalent maps calculated for the RDEL peptide.
+
+### Probing the importance of E117 and W120 for signal binding
 
 To directly test the requirement for E117 and W120 in signal recognition, ligand binding assays using specific peptides and recombinant chicken wild type, E117 or W120 mutant KDELR2 were performed (Bräuer et al., 2019). All proteins had similar thermal stability indicating they were correctly folded. For the wild-type receptor at pH 5.4, KD for KDEL and HDEL peptides were 1.9 ± 0.46 µM and 0.26 ± 0.04 µM, respectively (Figure 3a and b). Conservative substitution of E117 with aspartate resulted in a slight reduction in binding for both KDEL and HDEL, with KD values of 2.1 ± 0.33 µM and 0.52 ± 0.02 µM, respectively (Figure 3a and b). Substitution of E117 with alanine had a greater effect on KDEL binding, KD ~9.3 ± 1.0 µM, compared to HDEL, KD 0.52 ± 0.02 µM (Figure 3a and b), suggesting that the salt bridge to E117 plays a greater role for KDEL than HDEL.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig3-v4.jpg)
+
+**Figure 3.:** (a) Normalised binding of [3H]-TAEKDEL and (b) [3H]-TAEHDEL signals to purified WT and the indicated E117 and W120 mutant variants of chicken KDELR2. Bar graphs show mean binding ± SEM (n = 3). Line graphs show titration binding assays. (c) The fraction of WT, E117, and W120 mutant KDEL receptor localised to the Golgi in COS-7 cells was measured before (no ligand) and after challenge with different retrieval signals (K/R/HDEL) as indicated. Effect sizes are shown as the mean difference for K/R/HDEL comparisons against the shared -ligand control with sample sizes and p-values. Also see Figure 3—figure supplements 1—source data 1 files. (d) The π-π interactions between W120 and the histidine were visualised using reduced density gradient analysis. The wild-type W120 exhibit stronger π-π interactions compared with W120F, while W120A shows no π-π interactions. (e) When W120 is changed to phenylalanine, the protonated histidine has a higher root mean squared fluctuation (RMSF) in the binding pocket, which is further increased for the W120A substitution. (f) Binding of [3H]-TAEHDEL to the KDEL receptor was measured at pH 5.4–7.0 and is plotted as a function of receptor concentration.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Distribution of WT, E117, and W120 mutant KDEL receptors was measured in COS-7 cells in the absence (-ligand) or presence of (b) KDEL, (c) RDEL, or (d) HDEL retrieval signals (K/R/HDELsec). TGN46 was used as a Golgi marker. Scale bar is 10 µm. The fraction of WT, E117 and W120 mutant KDEL receptor localised to the Golgi was measured before (no ligand) and after challenge with different retrieval signals (K/R/HDEL) as indicated. Golgi signal for KDEL receptor and ligand intensity are shown on the scatter plots with sample sizes. Effect sizes are shown as the mean difference for K/R/HDEL comparisons against the shared -ligand control with sample sizes and p-values. The Cumming estimation plots for this data are used in main Figure 3c.
 
 We next examined the contribution of W120 to signal recognition. Tryptophan side chains have long been recognised as important contributors in protein ligand interactions, as they are capable of interacting with ligands via both aromatic and charged forces (Dougherty, 1996; Liao et al., 2013; Okada et al., 2001). Our structures show that histidine, arginine or lysine side chains at the −4 position of the retrieval signal can in principle interact favourably with W120 via cation-π interactions. We reasoned that, given the additional π-π stacking observed with the imidazole group in the crystal structure, this interaction might explain the increased affinity observed for the HDEL signal variant. Accordingly, mutation of W120 to alanine resulted in loss of binding to the KDEL peptide and it was not possible to calculate a KD (Figure 3a). For the HDEL peptide, binding was reduced to 20% confirming that W120 plays an important role in mediating receptor-peptide interactions (Figure 3b). Consistent with the hypothesis that the histidine of HDEL undergoes π-π stacking interactions with W120, conserved substitution to phenylalanine supported 50% HDEL binding with KD 5.5 ± 0.57 µM, whereas no interaction was observed with the KDEL peptide (Figure 3a and b). Thus, W120 plays a crucial role in binding of both KDEL and HDEL and may explain the higher affinity of the receptor for HDEL signals. In contrast, E117 is less important than initially appeared and it is unclear why it is a conserved feature of the binding site.
 
@@ -53,25 +85,65 @@ To provide further support for this conclusion, we investigated the free energy 
 
 To quantify the strength of the π-π and cation-π interactions between W120 variants and the histidine, we decomposed the interactions using symmetry-adapted perturbation theory from quantum mechanics. Although both W120 and W120F form π-π and cation-π interactions with protonated histidine, W120F exhibits ~1.5 kcal.mol-1 weaker π-π interactions and ~0.5 kcal.mol-1 weaker cation-π interactions with the histidine (Figure 3d and Supplementary file 3). The consequence of these changes is that for W120F higher root mean squared fluctuations are seen (Figure 3e), indicative of less rigid binding. These fluctuations are further increased for W120A (Figure 3e), consistent with its greater effect on signal binding. These results support the hypothesis that the π-π interactions between the protonated histidine sidechain and W120 explain the higher affinity observed for HDEL signals. Further support for this interpretation comes from in vitro analysis of the pH-dependence of HDEL binding. At pH 6.4, HDEL shows ~ 60% maximal binding to the receptor (Figure 3f), compared to <20% seen at the same pH for KDEL (Bräuer et al., 2019). The level of HDEL binding seen at pH 7 would saturate the KDELR receptor in the ER if the most abundant luminal proteins such as BIP carried this signal variant. Our observation that W120 is also necessary for recognition of KDEL indicates that cation-π interactions to W120, rather than a salt bridge to E117, is the crucial determinant for recognition of the −4 position.
 
-## E117 plays a role in KDEL receptor selectivity
+### E117 plays a role in KDEL receptor selectivity
 
 This mode of signal binding involving W120 is different than previously proposed, where charge complementarity between D50 in the receptor and the −4 position of the signal was thought to be a key determinant of specificity in ER retrieval (Lewis and Pelham, 1992; Scheel and Pelham, 1998; Semenza and Pelham, 1992). However, as our crystal structures show, D50 is outside the immediate binding region for all retrieval signal variants and therefore unlikely to directly contribute to binding. Thus, the precise roles of D50 and E117 remain poorly defined. In this regard, the behaviour of ADEL signals is noteworthy due to the simple methyl side chain. Comparison of different retrieval signals shows that ADEL does not activate the wild-type human KDEL receptor (Figure 1d and e). The simplest explanation for this finding is that the −4 position is crucial for high-affinity binding of retrieval signals to the human receptor. Nonetheless, this simple view is unlikely to be correct. First, the KDEL, RDEL, and HDEL-bound receptor structures do not support the view that recognition of the −4 position requires D50, and instead provide an alternative possibility where E117 fulfils this role. Second, our biochemical and functional data show that E117 does not contribute greatly to signal binding affinity or retrieval in cells (Figure 3a–c). Therefore, rather than selecting for the sequence, E117 may be more important to select against unwanted signal variants, perhaps on the basis of their net charge. To test this idea, we examined the response of E117A mutant receptors to variant ADEL and DDEL signals. Remarkably, the E117A mutant receptor relocated to the ER in response to both KDEL and ADEL, but not DDEL signals (Figure 4a and b). In S. pombe and K. lactis, organisms where ADEL and DDEL are used for ER retrieval, the E117 position of the receptor is either an asparagine or a glutamine residue, and we therefore tested E117N and E117Q mutants. Similar to the results with E117A, E117Q, and E117N receptors move to the ER in response to KDEL or ADEL signals, yet interestingly still failed to respond to DDEL (Figure 4a and b). Ligand expression was in a similar range in all instances (Figure 4—figure supplement 1), and in the absence of ligand all three mutant receptors localised to the Golgi with a low ER background indicating normal folding and ER exit (Figure 4a).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig4-v4.jpg)
+
+**Figure 4.:** (a) E117Q, E117N, or E117A mutant KDEL receptors were tested for K/A/DDEL-induced redistribution from Golgi to ER in COS-7 cells. KDEL receptor distribution was followed in the absence (-ligand) or presence of K/A/DDELsec. TGN46 was used as a Golgi marker. Scale bar is 10 µm. (b) The fraction of E117Q, E117N or E117A mutant KDEL receptor localised to the Golgi was measured before (no ligand) and after challenge with different retrieval signals (K/A/DDEL). Effect sizes are shown as the mean difference for K/A/DDEL comparisons against the shared -ligand control with sample sizes and p values. .
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** Distribution of WT, E117A, E117Q, and E117N mutant KDEL receptors was measured in COS-7 cells in the absence (-ligand) or presence of KDEL, ADEL, and DDEL retrieval signals. The fraction of WT, E117 mutant KDEL receptor localised to the Golgi was measured before (no ligand) and after challenge with different retrieval signals. Ligand intensity was also measured and plotted against the Golgi fraction of KDEL receptor.
+
 Thus, E117 is important for determining which signals are rejected by the wild type human receptor based on the −4 position of the signal, but does not appear to play a major role in binding affinity. ADEL must bind to the E117A mutant receptors via the ‘DEL’ tri-carboxylate portion of the retrieval signal, suggesting this region may be the major contributor to binding affinity for all signal variants. For HDEL, the protonated histidine side chain makes additional π-π interactions with W120 to bind with higher affinity. Importantly, the lack of response to DDEL shows that signal selection and recognition must involve additional features in the S. pombe and K. lactis receptor, and we investigated this question further.
 
-## A charge screening mechanism for signal differentiation by the KDEL receptor
+### A charge screening mechanism for signal differentiation by the KDEL receptor
 
 To identify additional features that might play a role in signal selection, we performed a comparison of the receptors and most abundant cognate ligands of the HSPA5/BIP family of ER resident proteins in different species. Although most regions of the receptor are highly conserved, as noted previously (Semenza and Pelham, 1992), sequence alignment reveals two regions where there is covariation that may be related to the cognate tetrapeptide retrieval signal (Figure 5a). In receptors recognising ADEL and DDEL, D50 is changed for asparagine, E117 for glutamine or asparagine, and position 54 is a positively charged arginine or lysine rather than a polar side chain (Figure 5a). To understand the consequences of these changes we examined their positions relative to the bound TAEHDEL signal (Figure 5b). This reveals that E117 and S54 sit close to the −4 histidine and −5 glutamate, respectively and D50 is over 5 Å away from any residue in the signal in the final bound state (Figure 5b). Analysis of the charge distribution across the surface of the receptor shows a negatively charged feature above the positively charged binding cavity occupied by the DEL portion of the signal, with the −4 residue sited at the boundary to these two regions (Figure 5c). Strikingly, progressive introduction of changes in the human receptor to mimic the K. lactis receptor, D50N S/N54K E117Q erodes the negatively charged luminal feature (Figure 5d).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig5-v4.jpg)
+
+**Figure 5.:** (a) KDEL receptor sequence alignment showing two regions centred around amino acid D50 and W120 of the human proteins. Cognate retrieval signal variants are shown to the right of the alignment. (b) The structure of the KDEL receptor with bound TAEHDEL highlighting key residues involved in ligand binding and variant residues D50, N54, and E117. (c) The charged surface for the WT KDEL receptor and (d) N50, N50/K54 and N50/K54/Q117 mutants is shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig5-figsupp1-v4.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Schematic of the ER retrieval construct showing the human growth hormone signal sequence (hGHss), linker, mScarlet fluorescent protein, and 16 amino acid extension carrying a C-terminal (CT) retrieval signal from known human and yeast ER proteins. A sequence alignment shows the conservation of the retrieval signal. (b) WT KDEL receptor distribution was followed in the absence (-ligand) or presence of human BIP derived signals (K/R/H/A/DDELsec). (c) WT KDEL receptor distribution was followed in COS-7 cells in the absence (-ligand) or presence of yeast BIP derived signals K/R/HA/DDELsec. (d) The fraction of KDEL receptor localised to the Golgi was measured before (no ligand) and after challenge with the different retrieval signals tested in b. and c. Effect sizes are shown as the mean difference for retrieval signal comparisons against the shared -ligand control with sample sizes and p-values. (e) WT KDEL receptor distribution was followed in COS-7 cells in the absence (-ligand) or presence of ER retrieval signals from human FKBP family proteins. In all image panels, TGN46 was used as a Golgi marker and the scale bar is 10 µm.
 
 One simple explanation for this feature is that it extends the binding site to impart specificity for the region upstream of the core KDEL signal. However, analysis of different classes of ER luminal proteins from yeast and animal cells does not provide strong support for this possibility. The upstream sequences of many abundant ER proteins including human and yeast HSPA5/BIP homologues are acidic in nature, and not basic (Figure 5a and Figure 5—figure supplement 1a), making any interaction unfavourable. For the human signal, the −4 position is crucial and mutation to A or D abolishes ER retrieval of the receptor (Figure 5—figure supplement 1b and Figure 5—figure supplement 1d). Conversely, S. pombe and K. lactis BIP ADEL and DDEL signals become functional with the human receptor if the −4 position is changed to lysine confirming this is the critical residue, independent of upstream sequences (Figure 5—figure supplement 1c and d). In K. lactis BIP the −5 position is a bulky aromatic residue rather than a charged residue. Previous work has suggested that the budding yeast FEHDEL signal with a bulky aromatic residue at the −6 position does not function in mammalian cells (Wilson et al., 1993), however consistent with our other data we find this HDEL variant is also functional (Figure 5—figure supplement 1c). Extending this analysis to human FKBP family proteins with even more diverse upstream sequences reveals no obvious pattern of conservation other than the canonical C-terminal HDEL or HEEL retrieval signal (Figure 5—figure supplement 1e).
 
 To directly test the role of the charged luminal surface in signal selection, we made a series of mutants introducing the changes seen in K. lactis and S. pombe into the human receptor and tested these against KDEL, ADEL, and DDEL signals. A single D50N mutation abolished the response to all signal variants and the receptor remained in the Golgi (Figure 6a and b). Thus, like E117, D50 is not the sole determinant of signal selectivity. Similarly, N54K or N54R reduced the response to KDEL but did not result in ADEL or DDEL recognition (Figure 6a and b; Figure 6—figure supplement 1a and b). D50N N54K and D50N N54R double mutants showed a loss of specificity and gave a response to KDEL, ADEL, and DDEL signals, showing that it is possible to uncouple binding from selectivity at the −4 position (Figure 6b and Figure 6—figure supplement 1b). We then combined D50N or N54K with E117Q mutations. These K. lactis like double mutant receptors showed switched specificity towards ADEL and DDEL with only a residual response to KDEL (Figure 6a and b). Combination of D50N N54K and E117Q improved the response to ADEL and DDEL and further reduced that towards KDEL (Figure 6a and b). Comparable results were obtained with a S. pombe like D50N N54R E117N triple mutant receptor (Figure 6—figure supplement 2a and b). Both these altered specificity receptors responded to the cognate ADEL or DDEL variant of BIP for that organism, a response that was abolished solely by mutation of the −4 position of the signal (Figure 6—figure supplement 2a and b).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig6-v4.jpg)
+
+**Figure 6.:** (a) WT and a series of ‘K. lactis’-like mutant KDEL receptors were tested for K/A/DDEL-induced redistribution from Golgi to ER in COS-7 cells. KDEL receptor distribution was followed in the absence (-ligand) or presence of K/A/DDELsec. TGN46 was used as a Golgi marker. Scale bar is 10 µm. (b) The fraction of WT and mutant KDEL receptor localised to the Golgi was measured before (no ligand) after challenge with different retrieval signals (K/A/DDEL). Effect sizes are shown as the mean difference for K/A/DDEL comparisons against the shared -ligand control with sample sizes and p values.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig6-figsupp1-v4.jpg)
+
+**Figure 6—figure supplement 1.:** (a) WT KDEL receptors and a series of S. pombe like mutants were tested for K/A/DDEL-induced redistribution from Golgi to ER in COS-7 cells. KDEL receptor distribution was followed in the absence (-ligand) or presence of K/A/DDELsec. TGN46 was used as a Golgi marker. Scale bar is 10 µm. (b) The fraction of WT and mutant KDEL receptor localised to the Golgi was measured before (no ligand) after challenge with different retrieval signals (K/A/DDEL). Effect sizes are shown as the mean difference for K/A/DDEL comparisons against the shared -ligand control with sample sizes and p values.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig6-figsupp2-v4.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Triple mutant ‘K. lactis’ and (b) ‘S. pombe’-like KDEL receptors were tested for K/A/DDEL-induced redistribution from Golgi to ER in COS-7 cells. KDEL receptor distribution was followed in the absence (-ligand) or presence of the indicated ligands. TGN46 was used as a Golgi marker. Scale bar is 10 µm. The fraction of WT and mutant KDEL receptor localised to the Golgi was measured before (no ligand) after challenge with different retrieval signals.
+
 These results indicate that the −4 position of the signal is read out during initial signal binding and is important for exclusion of unwanted signals, but is less important for binding affinity. We therefore tested whether the mode of ADEL and DDEL binding to the switched specificity receptors still involves W120. A D50N N54K E117Q W120A K. lactis like mutant receptor does not relocate from the Golgi to the ER with KDEL and ADEL signals and shows only a small response to the DDEL signal (Figure 6a and b). Similar results were obtained with a S. pombe like D50N N54R E117N W120A mutant receptor, albeit with some remaining response to DDEL (Figure 6—figure supplement 1b). Together, these findings suggest a common mode of binding for all retrieval signal variants through conserved residues. Specificity for the −4 position is largely achieved through a proofreading mechanism involving gatekeeper residues, D50 and E117, as the signal enters the ligand-binding cavity. Additionally, S/N54 contributes to the exclusion of unwanted signal variants. An E117A substitution partially uncouples this mechanism and allows ADEL binding, whereas both D50 and E117 residues have to be changed to allow DDEL binding. Bringing together all our observations to this point, we conclude that the luminal surface of the receptor plays a crucial role in signal selectivity prior to adoption of the final activated state, perhaps by determining the rate of signal association from solution.
 
-## Initial retrieval signal capture by the free carboxyl terminus
+### Initial retrieval signal capture by the free carboxyl terminus
 
 To explore the initial interaction of retrieval signals with the KDEL receptor, we simulated an all-atom model of the KDEL signal with a free C-terminal carboxylate engaging with the receptor (Video 1). This simulation shows that the signal initially encounters the receptor through a salt bridge interaction from its C-terminal carboxyl group with R169 on TM6 of the receptor (Figure 7a,i.). The C-terminal carboxyl group then moves to engage R5 (Figure 7a,ii.), shortly followed by interaction of the glutamate −2 with R169 (Figure 7a,iii.). Finally, the C-terminus engages with R47 on TM4 enabling aspartate −3 to interact with R169 (Figure 7a, iv.). Thus, the carboxy-terminus of the retrieval signal sequentially engages R169, R5 and finally R47 (Figure 7c). Movement of the lysine at the −4 position towards E117 is concomitant with the final engagement of the carboxyl-terminus of the signal by R47, whereas D50 does not come in close proximity to the KDEL signal and there is only a transient interaction of S54 with the −5 position (Figure 7d).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig7-v4.jpg)
+
+**Figure 7.:** (a) Images depicting the key stages (i.-iv.) of TAEKDEL binding to the wild-type (WT) KDEL receptor simulated using molecular dynamics. Initial engagement of the C-terminus to R169 (i) is followed by transfer to R5 (ii), shortly followed by interaction of E −2 with R169 (iii). Finally, R47 engages the C-terminus allowing D −3 to interact with R169 (iv). See also Video 1. (b) A carton model depicting the key stages of retrieval signal binding and final pH-dependent locked state. (c) Occupancy of the hydrogen bonds between the C-terminus of the KDEL retrieval signal and R5, R47, and R169 is plotted as a function of signal position within the binding pocket. (d) The occupancy of potential hydrogen bonds between the different positions of the KDEL retrieval signal and D50, S54, and E117 is plotted as a function of signal position within the binding pocket. (e) Competition binding assays for [3H]-TAEHDEL and unlabelled TAEKDEL and TAEHDEL with a free (COOH) or amidated (CONH) C-terminus to chicken KDELR2 showing IC50 values for the competing peptides. (f) Normalised binding of [3H]-TAEHDEL and [3H]-TAEKDEL signals to the purified WT H12A, R169A, or R169K mutant chicken KDELR2. A mock binding control with no receptor indicates the background signal. (g) Distribution of WT, H12A, R169A, and R169K KDEL receptors was measured in COS-7 cells in the absence (-ligand) or presence of K/R/HDELsec. The mean differences for K/R/HDEL comparisons against the shared no ligand control are shown with sample sizes and p values. See also Figure 7—figure supplement 1 with accompanying source data.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-fig7-figsupp1-v4.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Distribution of WT, H12A, R169A, and R169K KDEL receptors was measured in COS-7 cells in the absence (-ligand) or presence of K/R/HDEL (mScarlet-xDELsec). TGN46 was used as a Golgi marker. Scale bar is 10 µm. (b) The raw data for the fraction of KDEL receptor fluorescence in the Golgi is plotted on the upper axes with sample sizes, with effect sizes shown in the lower graphs.
+
+![Video 1.](https://cdn.elifesciences.org/articles/68380/elife-68380-video1.mp4.jpg)
+
+**Video 1.:** Molecular dynamics simulation of TAEKDEL binding to the KDEL receptor simulated using molecular dynamics.
 
 We therefore propose a carboxyl-handover model for signal capture mediated by the ladder of arginine residues in the binding pocket (Figure 7b). As the carboxyl-terminus progresses further into the receptor-binding site, the carboxylate groups at positions −2 and −3 engage their respective positions in the D- and E-sites, respectively. Only the final stage of the binding, where the receptor closes around the signal locking it in place is pH dependent, all other stages are predicted to be freely and rapidly reversible. Because many proteins have a free C-terminal carboxylate, this highlights the importance of an initial proofreading stage where non-cognate signals are rejected, as we have already argued, due to their net charge.
 
@@ -79,7 +151,7 @@ To test these ideas, we investigated the importance of the retrieval signal C-te
 
 ## Discussion
 
-## A mechanism for initial signal capture and proofreading by the KDEL receptor
+### A mechanism for initial signal capture and proofreading by the KDEL receptor
 
 Canonical ER retrieval signals can be broken down into two components: the −4 position, which enables the receptor to distinguish between different populations of ER proteins, and a tri-carboxylate moiety formed by the −3 aspartate, −2 glutamate and −1 C-terminal carboxylate. We propose a relay handover mechanism for capture of this signal by the KDEL receptor wherein a ladder of three arginine residues in the receptor pairs with the three-carboxyl groups of the signal (Figure 8). During cargo capture, the receptor engages the retrieval signal in a stepwise process, with the C-terminal carboxyl group of the cargo protein moving between these three interaction sites. At neutral pH, C-terminal sequences will rapidly sample the binding site, a process that we imagine will occur in both the ER and Golgi apparatus. This is accompanied by a proofreading process depending on the net charge on the signal and the gatekeeper residues D50, S54, and E117 at the entrance of the ligand-binding pocket. Although D50 and S54 do not sit close to the signal in the final bound state, they are at a similar height to E117. Our structures presumably represent the end stage of the binding process with the lowest energy state, and we have used MD to probe intermediates in the binding process. This approach combined with our functional analysis suggests that D50 and S54, or the equivalent residues, make transient interactions to the retrieval signals and provide an entry point for the signal. If so, the mechanism could be equivalent to the insertion of a key, where the retrieval signal initially binds to D50 and S54, and the relay made of three negatively charged groups on the retrieval signal and three positively charged arginine residues in the receptor drives the key into the lock. The final step, locking the C-terminus of the signal in place depends on protonation of the receptor in the Golgi as we have explained previously (Bräuer et al., 2019). Finally, the −4 position would rotate towards E117 to adopt the most stable low energy binding pose. This mechanism explains why the retrieval signal must be located at the C-terminus of the cargo protein, and the defined requirement for either glutamate or aspartate residues at the −2 and −3 positions due to their carboxyl group containing side chains. Variation at the −4 position would not directly alter the initial capture and relay mechanism, possibly explaining why it is the key determinant for signal selectivity.
 
@@ -91,62 +163,903 @@ The structures we have obtained for the KDELR2 with bound HDEL, RDEL or KDEL sig
 
 Taken together, these data support a model for retrieval sequence recognition that explains both the importance of the free C-terminal carboxyl group and how changes at the −4 position can modulate binding to the receptor.
 
-## Upstream residues and retrieval specificity of KDEL receptor variants
+### Upstream residues and retrieval specificity of KDEL receptor variants
 
 There are some unanswered questions, predominantly related to the role of the −5 and −6 positions of retrieval signals, and the properties and function of KDELR3. Previous work has suggested that the −5 and −6 positions of the retrieval signal also play a key role in signal binding (Alanen et al., 2011), and that the individual human KDEL receptors have slightly different specificities (Raykhel et al., 2007). However, these properties are not completely consistent with the structures, pattern of sequence conservation, or wider analysis presented here. It is noteworthy that both those studies used a bimolecular fluorescence complementation approach where the signal and receptor are dimerised by a split YFP molecule that will likely contribute to the observed signal binding affinity. This will interfere with the initial proofreading mechanism described here, making comparison with our data difficult. Based on the structures it seems reasonable that the −5 position may contribute to signal proofreading in some cases. However, as we show, a wide variety of signals that lack any obvious conserved features upstream of the canonical tetrapeptide function efficiently to trigger ER retrieval of the receptor (Figure 1a and S5b-S5e), suggesting the −5 position modulates but does not play an essential role in signal recognition. Although the structures show that the mode of signal recognition involves residues conserved in all three human KDEL receptors, in KDELR3 the loop between helices 4 and 5 upstream of E117 is altered in sequence compared to KDELR1 and R2 (Figure 5a). This is close to other residues on the surface of the receptor important for signal selectivity. Previous work has indicated that KDELR3 is upregulated under stress conditions and may be more selective for HDEL signals than KDELR1 and KDELR2 (Raykhel et al., 2007; Trychta et al., 2018). The precise consequences of these differences and specific functional roles for KDELR3 remain unclear, and it thus deserves further investigation including new structural data.
 
-## Signal variants increase the dynamic range of the ER retrieval system
+### Signal variants increase the dynamic range of the ER retrieval system
 
 One important outcome from our work is the idea that KDEL receptors are not optimised for an individual signal and must retain the ability to differentiate variant high and low affinity ER retrieval signals. We propose that cells exploit these properties to maximise the retrieval efficiency of a broad range of ER resident proteins with widely different abundance, over 2 or 3 orders of magnitude. This idea provides an explanation for the functional significance of the affinity differences of retrieval signal variants in mammalian cells. The most abundant proteins use the KDEL retrieval signal, whereas lower abundance proteins tend to carry the HDEL signal. By artificially increasing the concentration of HDEL proteins, we can show that this effectively poisons the ER retrieval system, leading to the secretion of normally retained ER chaperones. This behaviour is reminiscent of other cellular regulatory systems, where substrate or signal binding properties are optimised for rate and turnover, rather than for the highest affinity which can reduce throughput of the pathway. Indeed, in some cases electrostatic properties are exploited to create rapid-binding high-affinity inhibitors that outcompete substrates (Cundell et al., 2016; Schreiber and Fersht, 1996). This may explain why histidine has been selected for the highest affinity variant of the signal to counteract this effect. For the HDEL variant, protonation of both histidine 12 in the receptor and histidine at the −4 position of the retrieval signal favour binding to the receptor in the Golgi. However, deprotonation of both the retrieval signal and receptor at pH 7.0 enable rapid release in the ER, and hence receptor recycling to the Golgi. Thus, HDEL binds more tightly than KDEL in the Golgi, but still releases rapidly in the ER. A signal with the same affinity as HDEL that was not proton dependent would strongly inhibit retrieval even at low concentration due to slow release at neutral pH. An alternative mechanism to capture low abundance ER proteins would have been to increase the cellular concentration of the KDEL receptor from the observed low levels. That would require receptors to be nearly stoichiometric with cargo, a problematic proposition considering the millimolar concentration of ER chaperones. These potential traps are avoided by the combination of pH-regulation of both the receptor and the high-affinity HDEL signal. Thus, the versatile binding site architecture of the KDEL receptor enables differentiation of both high and low affinity signals, thereby enabling efficient ER retrieval of both low and high abundance proteins in eukaryotic cells.
 
 ## Materials and methods
 
-## Mammalian cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL1-Blue Competent Cells</td>
+      <td>Agilent Technologies</td>
+      <td>200249</td>
+      <td>Used to prepare plasmid DNA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Bj5460</td>
+      <td>ATCC</td>
+      <td>208285</td>
+      <td>Used for KDELR protein expression</td>
+    </tr>
+    <tr>
+      <td>Cell line (African green monkey)</td>
+      <td>COS-7 kidney fibroblast-like cell line</td>
+      <td>ATCC</td>
+      <td>CRL-1651</td>
+      <td>ER retrieval assays</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HeLa S3 cervical adenocarcinoma</td>
+      <td>ATCC</td>
+      <td>CCL-2.2</td>
+      <td>Protein secretion assays</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TGN46 sheep polyclonal</td>
+      <td>Bio-rad (AbD Serotec)</td>
+      <td>AHP500G</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GRP78 BiP rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>ab21685</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PDI rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>#11245–1</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ERp72 rabbit monoclonal</td>
+      <td>Cell Signalling Technology</td>
+      <td>#5033S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ERp44 rabbit monoclonal</td>
+      <td>Cell Signalling Technology</td>
+      <td># 3798S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>KDEL receptor mouse monoclonal</td>
+      <td>Enzo Life Sciences</td>
+      <td>ADI-VAA-PT048</td>
+      <td>IF (1:1000) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RFP mouse monoclonal</td>
+      <td>Chromotek</td>
+      <td>6G6</td>
+      <td>WB (1:1000) Detects mScarlet on Western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>A-21202</td>
+      <td>IF (1:2000) Secondary</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Sheep IgG Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>A-21448</td>
+      <td>IF (1:2000) Secondary</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase-AffiniPure Donkey Anti-Rabbit IgG</td>
+      <td>Jackson Immuno Research</td>
+      <td>711-035-152-JIR</td>
+      <td>WB (1:2000) Secondary</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase-AffiniPure Donkey Anti-Mouse IgG</td>
+      <td>Jackson Immuno Research</td>
+      <td>711-035-152-JIR</td>
+      <td>WB (1:2000) Secondary</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase-AffiniPure Donkey Anti-Sheep IgG</td>
+      <td>Jackson Immuno Research</td>
+      <td>713-035-147-JIR</td>
+      <td>WB (1:2000) Secondary</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens BiP639-654</td>
+      <td>Bräuer et al., 2019</td>
+      <td>KDELSEC</td>
+      <td>PMID:30846601</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens BiP639-654 K651R</td>
+      <td>This paper</td>
+      <td>RDELSEC</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens BiP639-654 K651H</td>
+      <td>This paper</td>
+      <td>HDELSEC</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens BiP639-654K651A (ADELSEC)</td>
+      <td>This paper</td>
+      <td>ADELSEC</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens BiP639-654K651D (DDELSEC)</td>
+      <td>This paper</td>
+      <td>DDELSEC</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-S. cerevisiae BiP667-682</td>
+      <td>This paper</td>
+      <td>Yeast BiP</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-S. pombe BiP648-663</td>
+      <td>This paper</td>
+      <td>S. pombe BiP</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-S. pombe BiP648-663 A660K</td>
+      <td>This paper</td>
+      <td>S. pombe BiP A &gt; K</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-K. lactis BiP664-679</td>
+      <td>This paper</td>
+      <td>K. lactis BIP</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-K. lactis BiP664-679 D676K</td>
+      <td>This paper</td>
+      <td>K.lactis BiP D &gt; K</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens FKBP7207-222</td>
+      <td>This paper</td>
+      <td>FKBP7</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens FKBP9555-570</td>
+      <td>This paper</td>
+      <td>FKBP9</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens FKBP10567-582</td>
+      <td>This paper</td>
+      <td>FKBP10</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 hGHss-mScarlet-H. sapiens FKBP14196-211</td>
+      <td>This paper</td>
+      <td>FKBP14</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1-GFP</td>
+      <td>Bräuer et al., 2019</td>
+      <td>KDELR1</td>
+      <td>PMID:30846601</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR2-GFP</td>
+      <td>This paper</td>
+      <td>KDELR2</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 H12A-GFP</td>
+      <td>Bräuer et al., 2019</td>
+      <td>H12A</td>
+      <td>Expression in mammalian cells for functional assays; PMID:30846601</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N-GFP</td>
+      <td>This paper</td>
+      <td>D50N</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 N54K-GFP</td>
+      <td>This paper</td>
+      <td>N54K</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 N54R-GFP</td>
+      <td>This paper</td>
+      <td>N54R</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 E117Q-GFP</td>
+      <td>This paper</td>
+      <td>E117Q</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 E117D-GFP</td>
+      <td>This paper</td>
+      <td>E117D</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 E117A-GFP</td>
+      <td>This paper</td>
+      <td>E117A</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 E117N-GFP</td>
+      <td>This paper</td>
+      <td>E117N</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 W120F-GFP</td>
+      <td>This paper</td>
+      <td>W120F</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 W120A-GFP</td>
+      <td>This paper</td>
+      <td>W120A</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 R169K-GFP</td>
+      <td>This paper</td>
+      <td>R169K</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 R169A-GFP</td>
+      <td>This paper</td>
+      <td>R169A</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 E117A/W120A-GFP</td>
+      <td>This paper</td>
+      <td>E117A/W120A</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/N54K-GFP</td>
+      <td>This paper</td>
+      <td>D50N/N54K</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/N54R-GFP</td>
+      <td>This paper</td>
+      <td>D50N/N54R</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/E117Q-GFP</td>
+      <td>This paper</td>
+      <td>D50N/E117Q</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/E117N-GFP</td>
+      <td>This paper</td>
+      <td>D50N/E117N</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 N54K/E117Q-GFP</td>
+      <td>This paper</td>
+      <td>N54K/E117Q</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/N54K/E117Q-GFP</td>
+      <td>This paper</td>
+      <td>D50N/N54K/E117Q</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 N54R/E117N-GFP</td>
+      <td>This paper</td>
+      <td>N54R/E117N</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/N54R/E117N-GFP</td>
+      <td>This paper</td>
+      <td>D50N/N54R/E117N</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/N54K/E117Q/W120A-GFP</td>
+      <td>This paper</td>
+      <td>D50N/N54K/E117Q/W120A</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF5/FRT human KDELR1 D50N/N54R/E117N/W120A-GFP</td>
+      <td>This paper</td>
+      <td>D50N/N54R/E117N/W120A</td>
+      <td>Material and methods. Available from Barr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2</td>
+      <td>Addgene</td>
+      <td>123618</td>
+      <td>Protein expression in yeast for biochemical assays and structures</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_H12A</td>
+      <td>This paper</td>
+      <td>KDELR2_H12A</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_E117A</td>
+      <td>This paper</td>
+      <td>KDELR2_E117A</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_E117D</td>
+      <td>This paper</td>
+      <td>KDELR2_E117D</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_E117Q</td>
+      <td>This paper</td>
+      <td>KDELR2_E117Q</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_E127A</td>
+      <td>This paper</td>
+      <td>KDELR2_E127A</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_E127Q</td>
+      <td>This paper</td>
+      <td>KDELR2_E127Q</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_W120A</td>
+      <td>This paper</td>
+      <td>KDELR2_W120A</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_W120F</td>
+      <td>This paper</td>
+      <td>KDELR2_W120F</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_R169A</td>
+      <td>This paper</td>
+      <td>KDELR2_R169A</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDDGFP-Leu2d-GgKDELR2_R169K</td>
+      <td>This paper</td>
+      <td>KDELR2_R169K</td>
+      <td>Material and methods. Available from Newstead lab</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TEV Protease</td>
+      <td>Merck</td>
+      <td>T4455-10KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3H-TAEHDEL</td>
+      <td>Cambridge Research Biochemicals</td>
+      <td>custom synthesis</td>
+      <td>185 MBq 106 Ci/mmol</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3H-TAEKDEL</td>
+      <td>Cambridge Research Biochemicals</td>
+      <td>custom synthesis</td>
+      <td>185 MBq 128 Ci/mmol</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TAEHDEL</td>
+      <td>Cambridge peptides</td>
+      <td>custom synthesis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TAEKDEL</td>
+      <td>Cambridge peptides</td>
+      <td>custom synthesis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TAERDEL</td>
+      <td>Cambridge peptides</td>
+      <td>custom synthesis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TAEDDEL</td>
+      <td>Cambridge peptides</td>
+      <td>custom synthesis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TAEKDEL-CONH</td>
+      <td>Cambridge peptides</td>
+      <td>custom synthesis</td>
+      <td>C-amidated peptide variant.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TAEHDEL-CONH</td>
+      <td>Cambridge peptides</td>
+      <td>custom synthesis</td>
+      <td>C-amidated peptide variant.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium phosphate monobasic (NaH2PO4)</td>
+      <td>Sigma</td>
+      <td>S8282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium phosphate dibasic (Na2HPO4)</td>
+      <td>Sigma</td>
+      <td>71640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium periodate (NaIO4)</td>
+      <td>Sigma</td>
+      <td>311448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>16% (w/v) Formaldehyde</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>28908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Saponin</td>
+      <td>Sigma</td>
+      <td>S7900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Lysine monohydrochloride</td>
+      <td>Sigma</td>
+      <td>62929</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mowiol 4–88</td>
+      <td>Millipore</td>
+      <td>475904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichloroacetic acid</td>
+      <td>Sigma</td>
+      <td>T6399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dodecyl maltoside (DDM)</td>
+      <td>Glycon</td>
+      <td>D97002-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl hemisuccinate (CHS)</td>
+      <td>Sigma</td>
+      <td>C6512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monoolein</td>
+      <td>Sigma</td>
+      <td>M7765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph 7.5</td>
+      <td>Molecular Dynamics Inc</td>
+      <td>http://www.moleculardevices.com</td>
+      <td>Microscope image data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji 2.0.0-rc-49/1.52i</td>
+      <td>NIH Image</td>
+      <td>http://fiji.sc/</td>
+      <td>Microscope image data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td>http://www.graphpad.com</td>
+      <td>Graph plotting</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R project for statistical computing</td>
+      <td>https://www.r-project.org</td>
+      <td>Statistical analysis and graph plotting</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CC</td>
+      <td>Adobe Systems Inc</td>
+      <td>http://www.adobe.com</td>
+      <td>Figure preparation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CC</td>
+      <td>Adobe Systems Inc</td>
+      <td>http://www.adobe.com</td>
+      <td>Figure preparation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot</td>
+      <td>Macromolecular structure model building; PMID:20383002</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrodinger</td>
+      <td>https://pymol.org/2</td>
+      <td>Molecular visualisation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Buster</td>
+      <td>Global Phasing</td>
+      <td>https://www.globalphasing.com</td>
+      <td>Structure refinement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS</td>
+      <td>Abraham et al., 2015</td>
+      <td>https://www.gromacs.org</td>
+      <td>Molecular dynamics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GMX_lipid17.ff: GROMACS</td>
+      <td>Wu and Biggin, 2020</td>
+      <td>http://doi.org/10.5281/zenodo.3610470</td>
+      <td>Port of the Amber LIPID17 force field</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MDAnalysis 1.0</td>
+      <td>SciPy2016</td>
+      <td>https://conference.scipy.org/proceedings/scipy2016/oliver_beckstein.html</td>
+      <td>Analysis of molecular dynamics simulations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Modeller 9.21</td>
+      <td>Webb and Sali, 2016</td>
+      <td>https://salilab.org/modeller/</td>
+      <td>PMID:27322406</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ultima Gold Scintillation Fluid</td>
+      <td>Perkin Elmer</td>
+      <td>6013326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HisPurTM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>25214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HisTrap HP</td>
+      <td>Cytiva</td>
+      <td>17-5248-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 10/300 GL</td>
+      <td>Cytiva</td>
+      <td>28-9909-44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ultra-15 Centrifugal Filter Unit, 50K NMWC</td>
+      <td>Amicon</td>
+      <td>UFC905024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast Drop Out media -Ura</td>
+      <td>Formedium</td>
+      <td>DCS0169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast Drop Out media -Leu</td>
+      <td>Merck</td>
+      <td>Y1376-20G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tunair Flasks</td>
+      <td>Sigma</td>
+      <td>Z710822-4EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco's modified Eagle's medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>31966–047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Foetal Bovine Serum</td>
+      <td>Sigma</td>
+      <td>F9665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TrypLE Express Enzyme</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>12605036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Opti-MEM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11058021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EZ-PCR Mycoplasma Test Kit</td>
+      <td>Geneflow</td>
+      <td>K1-0210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TransIT-LT1</td>
+      <td>Mirus Bio LLC</td>
+      <td>MIR 2306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ECL western blotting reagent</td>
+      <td>Cytiva</td>
+      <td>RPN2106</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian cell lines
 
 African green monkey fibroblast-like kidney COS-7 cells (ATCC #CRL-1651) and human cervical adenocarcinoma HeLa cells (ATCC #CCL-2.2 confirmed by STR profiling) were cultured in DMEM (Invitrogen, Thermo Fisher Scientific) containing 10% [vol/vol] foetal bovine serum (Sigma) at 37°C and 5% CO2. For passaging, cells were washed once in PBS, and then removed from the dish by 5 min incubation with TripLE Express (Thermo Fisher Scientific). Mycoplasma negative status of cell lines was confirmed using the EZ-PCR Mycoplasma Test Kit with internal control (K1-0210, Geneflow).
 
-## ER retrieval assays
+### ER retrieval assays
 
 To create KDELR1-GFP and KDELR2-GFP, the reading frames for Homo sapiens KDELR1 (Uniprot: P24390) and KDELR2 (Uniprot: P33947) were cloned into the pEF5/FRT low level mammalian expression vector with a C-terminal 20 amino acid linker made up of 5 copies of Gly-Ser-Ser-Ser followed by GFP. Specific point mutations were introduced using the Quickchange protocol (Stratagene) and are described in the key resources table and figures. To create the mScarlet-KDELsec ligand construct, mScarlet with an N-terminal hGH signal peptide and the 16 C-terminal residues of human BiP at its C-terminus, containing the KDEL signal, was cloned into the pcDNA3.1 vector. This was then modified using site-directed mutagenesis or annealed oligo ligation to create C-terminal retrieval signal variants from known human and yeast ER proteins. For ER retrieval assays, COS-7 cells were grown on 10 mm diameter 0.16–0.19 mm thick glass coverslips in DMEM containing 10% [vol/vol] bovine calf serum at 37°C and 5% CO2. Cells were plated at 50,000 cells per well of a 6-well plate, each well containing two coverslips. The cells were transfected after 24 hr with 0.25 µg KDELR1-GFP or KDELR2-GFP and 0.5 µg mScarlet-ligand (+xDEL ligand) or 0.25 µg KDELR-GFP and 0.5 µg pcDNA3.1 (− ligand) diluted in 100 µl Opti-MEM and 3 µl TransIT LT1 (Mirus Bio LLC). After a further 18 hr, cells were washed twice with 2 mL of PBS, then fixed for 2 hr in 2 mL 2% wt/vol) formaldehyde in 87.5 mM lysine, 10 mM sodium periodate, buffered with 87.5 mM sodium phosphate pH 7.4. Subsequently, coverslips were washed three times in 2 mL permeabilisation solution 100 mM sodium phosphate pH 7.4, then permeabilised in 1 mg mL−1 BSA, 0.12 mg mL−1 saponin, and 100 mM sodium phosphate pH 7.4 for 30 min. Primary and secondary antibody staining was performed sequentially for 60 min in permeabilisation solution at 22°C, with three washes with 2 mL PBS in between. The Golgi marker protein TGN46 was detected by antibody (sheep anti-TGN46 AHP500G; AbD Serotec) and an Alexa 647 conjugated secondary anti-sheep secondary (A-21448, Invitrogen). In Figure 1d and e, endogenous KDELR was detected by antibody (mouse anti-KDELR ADI-VAA-PT048; Enzo Life Sciences) and Alexa 488 conjugated anti-mouse secondary antibody (A-21202, Invitrogen). For retrieval assays in other figures, KDELR-GFP fusion proteins were directly detected by fluorescence. The mScarlet-xDEL fusion proteins were directly detected by fluorescence. Coverslips were mounted on glass slides in Mowiol 4–88 and imaged with a 60×/1.35 NA oil immersion objective on an Olympus BX61 upright microscope (with filtersets for DAPI, GFP/Alexa-488,–555, −568, and −647 (Chroma Technology Corp.), a 2048 × 2048 pixel CMOS camera (PrimΣ; Photometrics), and MetaMorph 7.5 imaging software (Molecular Dynamics Inc). Illumination was provided by a wLS LED illumination unit (QImaging). Image stacks of 3–5 planes with 0.3 µm spacing through the ER and Golgi were taken. The image stacks were then maximum intensity projected and the selected channels merged to create 24-bit RGB TIFF files in MetaMorph. To produce the figures, images in 24-bit RGB format were cropped in Photoshop to show individual cells and then placed into Illustrator (Adobe Systems Inc). The signal for the KDEL receptor (integrated pixel intensity) was measured in individual cells using FIJI (Schindelin et al., 2012) for the Golgi region defined by the TGN46 Golgi marker and for the entire cell in the presence (+) and absence (-) of ligand. The fraction of KDEL receptor in the Golgi apparatus was calculated by dividing the Golgi signal by the total cell signal. These combined single cell data were then used for the statistical analysis of ER retrieval in R.
 
 To estimate the effect sizes and significance of receptor mutations for ligand-mediated ER retrieval, pooled data was analysed in R using the open-source package dabestr (Ho et al., 2019; R Core Development Team, 2017; Wickham, 2010). Data are presented as Cumming estimation plots, where the raw data is plotted on the upper axes and mean differences are plotted as bootstrap sampling distributions on the lower axes for 5000 bootstrap samples. Each mean difference is depicted as a dot. Each 95% confidence interval is indicated by the ends of the vertical error bars; the confidence interval is bias-corrected and accelerated. The p values reported are the likelihood of observing the effect size, if the null hypothesis of zero difference is true. For each permutation p value, 5000 reshuffles of the control and test labels were performed.
 
-## ER secretion assays
+### ER secretion assays
 
 For ER chaperone secretion assays, HeLa S3 cells were transfected with 0.5 µg mScarlet-ligand (+xDEL ligand) or 0.5 µg pcDNA3.1 (− ligand), and allowed to express the respective proteins for 24 hr. The media were TCA precipitated and both cell and media were resuspended and boiled in SDS-PAGE sample buffer. All samples were analysed by Western blotting (Trans-Blot Turbo transfer system, Bio-Rad) for xDEL ligand (mouse anti-RFP 6G6, Chromotek), resident ER chaperones BIP (rabbit #ab21685, Abcam), PDI (rabbit #11245–1, ProteinTech), ERP72 (rabbit #5033S, Cell Signalling Technology), ERP44 (rabbit #3798S, Cell Signalling Technology) and the KDEL receptor (mouse ADI-VAA-PT048, Enzo Life Sciences). HRP-conjugated secondary antibodies and the ECL reagent were used to detect signals on film. Films were then digitised and signals measured by densitometry in FIJI (Schindelin et al., 2012). Data were plotted as bar graphs in GraphPad Prism.
 
-## KDEL receptor crystallisation and structure determination
+### KDEL receptor crystallisation and structure determination
 
 Gg KDELR2 was expressed and purified as described previously (Bräuer et al., 2019), concentrated to 14.5 mg mL−1 and incubated with 6.4 mM TAEHDEL or RDEL peptide on ice for one hour prior to crystallisation. Crystals were set up at 20°C as above using precipitant 30% (v/v) PEG 600, 100 mM MES pH 6.0, 100 mM Sodium Nitrate. Phases were determined via molecular replacement using Phaser and employing PDB:6I6H as the search model with the TAEKDEL peptide removed from the search model. The TAEHDEL and TAERDEL peptides were built into difference density using Coot (Emsley et al., 2010), followed by refinement in BUSTER (Blanc et al., 2004).
 
-## Retrieval signal binding assays
+### Retrieval signal binding assays
 
 Binding assays were performed in 20 mM MES pH 5.4, 40 mM Sodium Chloride, 0.01% DDM 0.0005% CHS unless stated otherwise. Five µL of 3H-TAEKDEL or 3H-TAEHDEL (Cambridge peptides, UK) at 20 nM were incubated with 5 µL of Gg KDELR or variants thereof at the desired concentration at 20°C for 10 min. The reaction was then filtered through a 0.22 µm mixed cellulose ester filter (Millipore, USA) using a vacuum manifold. Filters were then washed with 2 × 500 µL buffer. The amount of bound peptide was measured using scintillation counting in Ultima Gold (Perkin Elmer). Experiments were performed a minimum of three times to generate an overall mean and standard deviation. Data was normalised to the maximal binding at pH 5.4 and fit with a four-parameter logistic non-linear regression model.
 
-## Thermal stability measurements
+### Thermal stability measurements
 
 Concentrated (~10 mg ml) GgKDELR2 was diluted to 0.2 mg/ml into buffer consisting of 10 mM citric acid, 20 mM di-sodium phosphate at pH 5.4, 5.9, 6.4, or 7.0 containing 0.01% DDM:CHS (20:1 ratio). To this 0.5 mM KDEL, RDEL, or HDEL peptide (diluted in water) was added, or water as a control. The sample was incubated at room temperature for 15 min. Thermal measurements were carried out in a range from 20°C to 90°C with 1°C/min steps using a Prometheus NT.48. The PR.ThermControl (NanoTemper) software was used to calculate the melting temperature for each condition. The data shown in the manuscript is the calculated melting temperature for each peptide at the given pH with the Tm for the water control at the same pH subtracted.
 
-## Relative binding free energy calculations
+### Relative binding free energy calculations
 
 To compute the free energy of the deprotonation of the histidine or lysine and the mutation of lysine to histidine, molecular-mechanics-based alchemical transformation was performed. The free energy difference was taken as the difference in the free energy of the transformation between the protein-peptide complex and the peptide in solution. The KDEL receptor in the protein-peptide complex was taken from the crystal structure (KDEL: 6I6B Bräuer et al., 2019; HDEL: 6Y7V). The C-terminus of the receptor was modelled to full length using Modeller 9.21 Webb and Sali, 2016; 100 models were created and the one with the best DOPE score was selected (Shen and Sali, 2006). The protein was then embedded into a lipid membrane containing 186 DMPC lipids using the procedure described by us previously (Wu et al., 2019). The system of peptide in solution was constructed by taking the coordinates of the peptide from the crystal structure and placing in a box, where the box edge was at least 2 nm from the peptide. Both systems were solvated and neutralised to final salt concentration of 150 mM NaCl. For the deprotonation calculations, the change in charge in the system was counteracted by simultaneously charging a sodium ion in the corner of the box (i.e. at the start of the process the charge was zero and by the end it was +1). To minimise the interactions between the histidine (or lysine) and this alchemical sodium ion, the histidine/lysine residues were restrained to the centre of the box via their Cα atom using a harmonic restraint of 1000 kJ/mol/nm2 and the alchemical sodium ion was either restrained to the edge of the box for the peptide in solution or restrained to the z-axis in the case of the peptide-protein complex.
 
 The Amber ff14SB force field (Maier et al., 2015) was used to describe the protein and alchemical transformation was done with pmx (Gapsys et al., 2015). Lipids were described by LIPID17, which was ported from Amber to GROMACS by us (GMX_lipid17.ff: GROMACS. Port of the Amber LIPID17 force field. Zenodo. http://doi.org/10.5281/zenodo.3610470). The simulations were run with GROMACS 2018 (Abraham et al., 2015). The simulation input parameters were set according to recommendations suggested by pmx. Since the equilibrium method was used, the sc-alpha and sc-sigma parameters were set to 0.5 and 0.3 respectively. For the lysine to histidine transformation, a total of 21 lambda windows with 0.05 equal spacing were used to transform the charge and the vdw parameters at the same time. A soft-core potential was used for the coulombic interactions to avoid singularity effects. For the deprotonation calculations, 11 equally spaced windows were used to change the partial charge and an addition window was used to complete the transformation. After energy minimisation, each window was run for 200 ps in the NVT ensemble and one ns in an NPT ensemble with positional restraints of 1000 kJ/mol/nm2 to reach a final temperature of 310 K and 1 bar. 30 ns production runs with replicate exchanges at intervals of 1 ps were then performed. Data were analysed using the Multistate Bennett Acceptance Ratio with alchemical analysis within the first five ns discarded (Klimovich et al., 2015). For each transformation, three replicates were performed and the result presented as the mean and standard deviation. For the LYS/HIP transformation, since both HDEL-bound and KDEL-bound structure were available, six simulations (three starting from KDEL-bound structure and three from HDEL-bound structure) were used to produce the results.
 
-To compute the free energy difference of KDEL to HDEL transformation, the total free energy difference of alchemically changing KDEL to HDEL is computed asΔGKDEL→HDEL=ΔGLYS→LYS/N+ΔGLYS→HIP-ΔGHIP→HIP/D/Ewhere ΔGHIP→LYS is the free energy difference of converting KDEL to HDEL when both lysine and histidine are in the protonated form. ΔGHIP→HIP/D/E and ΔGLYS→LYS/N is the free energy of converting protonated histidine or lysine from the protonated to an ensemble of protonated and deprotonated forms (for example we might calculate the energy to go from 100% protonated to an ensemble of 40% protonated and 60% deprotonated):ΔGLYS→LYS/N=wLYS0+wLYN(ΔGLYS→LYN-ΔGLYSoffset)-TΔSΔGHIP→HIP/D/E=wHIP0+wHID(ΔGHIP→HID-ΔGHIPoffset)+wHIE(ΔGHIP→HIE-ΔGHIPoffset)-TΔS
+To compute the free energy difference of KDEL to HDEL transformation, the total free energy difference of alchemically changing KDEL to HDEL is computed as
 
-The ΔGHIPoffset and ΔGLYSoffset are terms to calibrate the computational protonation free energy to the experimental microscopic pKa (histidine: 6.0; lysine: 8.95) and were defined as:ΔGoffset=2.303RT×(7.0-pka)w is the Boltzmann weight of each protonation state and is computed as:
+$$
+ΔG_{KDEL→HDEL}=ΔG_{LYS→LYS/N}+ΔG_{LYS→HIP}-ΔG_{HIP→HIP/D/E}
+$$
 
-w=e-ΔGRT∑e-ΔGRT and ΔS is the configurational entropy and is defined as:ΔS=-R∑wln⁡w
+where $ΔG_{HIP→LYS}$ is the free energy difference of converting KDEL to HDEL when both lysine and histidine are in the protonated form. $ΔG_{HIP→HIP/D/E}$ and $ΔG_{LYS→LYS/N}$ is the free energy of converting protonated histidine or lysine from the protonated to an ensemble of protonated and deprotonated forms (for example we might calculate the energy to go from 100% protonated to an ensemble of 40% protonated and 60% deprotonated):
 
-## Quantum mechanical calculations for the effect of HDEL protonation
+$$
+ΔG_{LYS→LYS/N}=w_{LYS}0+w_{LYN}(ΔG_{LYS→LYN}-ΔG_{LYS_{offset}})-TΔS
+$$
+
+
+
+$$
+ΔG_{HIP→HIP/D/E}=w_{HIP}0+w_{HID}(ΔG_{HIP→HID}-ΔG_{HIP_{offset}})+w_{HIE}(ΔG_{HIP→HIE}-ΔG_{HIP_{offset}})-TΔS
+$$
+
+The $ΔG_{HIP_{offset}}$ and $ΔG_{LYS_{offset}}$ are terms to calibrate the computational protonation free energy to the experimental microscopic pKa (histidine: 6.0; lysine: 8.95) and were defined as:
+
+$$
+ΔG_{offset}=2.303RT\times(7.0-pka)
+$$
+
+$w$ is the Boltzmann weight of each protonation state and is computed as:
+
+$w=\frac{e^{\frac{-ΔG}{RT}}}{\sume^{\frac{-ΔG}{RT}}}$ and $ΔS$ is the configurational entropy and is defined as:
+
+$$
+ΔS=-R\sumwln⁡w
+$$
+
+### Quantum mechanical calculations for the effect of HDEL protonation
 
 To explore the interactions between the signal and receptor, the histidine of the HDEL signal and tyrosine (W120) of the receptor were taken from the crystal structure and capped at both ends (with acetyl and amide groups the N and C-termini, respectively). The hydrogens were added to the complex and the three different protonation sates of the histidine were constructed with Maestro 2019.2. The capped three amino acid complex were geometry minimised with non-hydrogen atoms constrained at the RI-B3LYP-D3(BJ)/def2-TZVP theory level with geometry counterpoise (Grimme et al., 2010; Grimme et al., 2011; Kruse and Grimme, 2012; Weigend, 2006; Weigend and Ahlrichs, 2005) using ORCA 4.2.0 (Neese, 2012). The interactions between the three different protonation states of the histidine and W120 were computed at the SAPT2+/jun-cc-pVDZ (Parker et al., 2014) theory level from the geometry optimised structure using psi4 1.3.2 (Parrish et al., 2017).
 
-## Simulation of signal engagement with the binding site
+### Simulation of signal engagement with the binding site
 
 To obtain a converged view of how the KDEL peptide enters the KDEL receptor, umbrella sampling was used to enhance the sampling of the behaviour of the C-terminus in the binding pocket. The initial frames were generated by pulling the N-terminus of the KDEL peptide out of the binding pocket using a moving restraint with GROMACS 2019.4/plumed 2.6.0 (PLUMED consortium, 2019). The collective variable (CV) was defined as the distance between the N-terminus of the KDEL peptide (N atom) and the centre of the binding pocket, which was defined as the centre of the Cα atoms of residue 9, 44, 64, 124, and 162. Pulling was performed using a CV = 1.8 nm to 3.3 nm with a restraint strength of 1000 kJ/mol/nm2 for 100 ns. To prevent the complete dissociation of the peptide from the receptor, a one-side distance restraint was applied on the distance between the C-terminus of the peptide (atom C) and the binding pocket at 1.7 nm with a strength of 1000 kJ/mol/nm2. Sixteen windows were set up where the CV was varied from 1.8 nm to 3.3 nm with a step of 0.1 nm and were run for 500 ns. The results were analysed with MDAnalysis 1.0 (https://conference.scipy.org/proceedings/scipy2016/oliver_beckstein.html).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Details of the number of experimental repeats, numbers of cells analysed and the relevant statistics are detailed in the figure legends and specific method details.

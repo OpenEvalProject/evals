@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02mh9a093 Control-interception-attention team, Paris Brain Institute (ICM), UMR 7225, U1127, Institut National de la Santé et de la Recherche Médicale/Centre National de la Recherche Scientifique/Sorbonne Universités, Hôpital Pitié-Salpêtrière Paris France
-2. https://ror.org/02mh9a093 Département de Psychiatrie Adulte, Hôpital Pitié-Salpêtrière, Assistance Publique Hôpitaux de Paris (APHP) Paris France
+1. Control-interception-attention team, Paris Brain Institute (ICM), UMR 7225, U1127, Institut National de la Santé et de la Recherche Médicale/Centre National de la Recherche Scientifique/Sorbonne Universités, Hôpital Pitié-Salpêtrière Paris France ([ROR:02mh9a093](https://ror.org/02mh9a093))
+2. Département de Psychiatrie Adulte, Hôpital Pitié-Salpêtrière, Assistance Publique Hôpitaux de Paris (APHP) Paris France ([ROR:02mh9a093](https://ror.org/02mh9a093))
 
 † Corresponding author
 
@@ -39,23 +39,59 @@ We leveraged a belief-updating dataset from 123 participants tested between 2019
 
 ## Results
 
-## Effects of experiencing the COVID-19 pandemic on optimistically biased belief updating
+### Effects of experiencing the COVID-19 pandemic on optimistically biased belief updating
 
 A linear mixed effects (LME) model was fitted to belief updates to test whether belief updating was less or more biased during the COVID-19 pandemic. The model found a significant interaction estimation error valence by context (ß=–5.54, SE = 1.69, t(232) = –3.28, p=0.001, 95% CI [-8.87 to –2.21]; Appendix 7—table 2), which holds when further controlling for the distance variable (Appendix 7—table 3). The power of this effect was 75% leaving a 25% risk for type II errors. As shown in Figure 1a and b, optimistically biased belief updating disappeared during the COVID-19 pandemic compared to participants tested outside the pandemic. More specifically, it was decreased among participants tested during the initial COVID-19-related strict lockdown in March and April 2020 (EE valence by context 1: ß=–7.39, SE = 2.29, t(228) = –3.21, p=0.002, 95% CI [-11.91 to –2.86]; Appendix 7—table 4), as well as in May 2021 (EE valence by context 2: ß=–5.59, SE = 2.36, t(228) = –2.37, p=0.02, 95% CI [-10.24 to –0.93]; Appendix 7—table 4), compared to those tested before the outbreak in October 2019, respectively. The bias re-emerged among participants tested one year later at the time of the lift of the sanitary state of emergency in June 2022, returning to levels akin to those observed before the pandemic in October 2019 (EE valence by context 3: ß=–2.11, SE = 2.46, t(228) = –0.86, p=0.39, 95% CI [-6.95 to 2.73]; Figure 1a, Appendix 7—table 4). The effect of the COVID-19 pandemic on belief updating was driven by a significant decrease in belief updating following good news during the pandemic compared to participants tested outside the pandemic (t(121) = 2.66, p=0.009, Cohen’s d=0.48, two-sampled, two-tailed t-test, Figure 1b). No contextual group difference was observed for belief updating following bad news (t(121) = –1.77, p=0.08, Cohen’s d=–0.32, two-sampled, two-tailed t-test, Figure 1b). This effect could be reproduced when fitting an analogous LME to belief updates observed in the group of participants (n=28) who were tested both before and during the pandemic (EE valence by context interaction: ß=–7.66, SE = 1.49, t(103) = –5.13, p=1.35e-06, 95% CI [-10.62 to -4.70]; Figure 1—figure supplement 1, Appendix 7—table 5, Appendix 1). Moreover, previous studies of optimistically biased belief updating calculated the estimation error (EE) on the difference between the estimate for someone else (eBR) and the base rate (BR), following: EE = eBR - BR (Kuzmanovic et al., 2018; Kuzmanovic and Rigoux, 2017; Garrett and Sharot, 2014; Kuzmanovic et al., 2015). When categorizing trials as good or bad news based on this alternative EE calculation, the context-by-EE valence interaction remained significant (Appendix 7—table 6). Note that all effects were controlled for participants' age, years of higher education, gender, confidence in the base rates, belief updating task design, and estimation error magnitude.
 
-## Effects of experiencing the COVID-19 pandemic on belief updating variables
+![Figure 1.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig1-v1.jpg)
+
+**Figure 1.:** (a) Boxplots display the belief-updating bias (i.e. the difference between the belief update for good news and belief update for bad news) in each of the four participant groups, tested before the pandemic in October 2019 (n=30), during the first lockdown from March to April 2020 (n=34), with less restrictive measures in May 2021 (n=31), and at the end of the pandemic in June 2022 (n=28). (b) Belief updating for good and bad news during (n=65) and outside the pandemic (n=58). (c) Confidence ratings, and (d) estimation errors for bad and good news during and outside the pandemic. Boxplots in all panels display 95% confidence intervals, with boxes indicating the interquartile range from Q1 25th to Q3 75th percentile. The horizontal black lines indicate medians, and whiskers range from minimum to maximum values and span 1.5 times the interquartile range. The dots correspond to individual participants. The squares in the boxplots in (b) correspond to mean observed updates (purple) and mean modelled updates (blue; averaged across 1000 estimations) from the best-fitting models in each context, which were the optimistically biased RL-like model of belief updating outside and the rational Bayesian model of belief updating during the Covid-19 pandemic. The source data file provides exact values. *<0.05 two-sampled, two-tailed t-tests, * p<0.05 two-sampled, one-tailed t-tests.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Boxplots display 95% confidence intervals for belief updating after bad (left panel) and good (right panel) news and during and outside the pandemic. Boxes indicate the interquartile range from Q1 25th to Q3 75th percentile. The horizontal black lines indicate medians and whiskers range from minimum to maximum values and span 1.5 times the interquartile range. The dots correspond to individual participants. The source data file provides exact p-values. *p < 0.05 two-sampled, two-tailed t-tests.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** First estimates of the likelihood of and adverse life event happening to oneself (left) or someone else (right) and before (n=58) and during (n=65) the COVID-19 pandemic. Boxplots display 95% confidence intervals with boxes indicating the interquartile range from Q1 25th to Q3 75th percentile. The horizontal black lines indicate medians and whiskers range from minimum to maximum values and span 1.5 times the interquartile range. The individual dot and vertical line in the middle correspond to the means and standard errors. The contiguous dots correspond to individual participants.
+
+### Effects of experiencing the COVID-19 pandemic on belief updating variables
 
 As shown in Figure 1c, experiencing the COVID-19 pandemic influenced participants' confidence in the base rates, with significantly lower confidence ratings observed among those tested outside the pandemic compared to those tested during it (ß=14.11, SE = 4.52, t(233) = 3.12, p=0.002, 95% CI [5.19 to 23.02]; Appendix 7—table 7). Moreover, a significant interaction of EE valence by context (ß=2.19, SE = 0.67, t(233) = 3.28, p=0.001, 95% CI [0.88 to 3.51]; Appendix 7—table 8) was found for absolute estimation error magnitude. This finding indicated that participants tested during the pandemic overestimated their risk of experiencing adverse future life events relative to base rates more largely than participants tested outside the pandemic (t(121) = –3.01, p=0.003, Cohen’s d=–0.54, Figure 1d). On the contrary, the two groups did not differ significantly in the magnitude of negative estimation errors (i.e. initial underestimations relative to base rates; t(121) = –0.49, p=0.63, Cohen’s d=–0.09, two-sampled, two-tailed t-tests; Figure 1d). This finding contrasts with the observed difference in how often they made positive estimation errors (i.e. the number of good news trials). Participants tested during the pandemic overestimated less frequently than participants tested outside the pandemic (t(121) = 2.40, p=0.02, Cohen’s d=0.43, two-sampled, two-tailed t-test). No significant difference between groups was found for the frequency of underestimations (i.e. reflected by the number of bad news trials; t(121) = –1.85, p=0.07, Cohen’s d=–0.33, two-sampled, two-tailed t-test). These results indicated that participants held fewer but stronger negative future outlooks during the pandemic compared to those tested outside the pandemic.
 
-## Effects of experiencing the COVID-19 pandemic on putative mechanisms of belief updating
+### Effects of experiencing the COVID-19 pandemic on putative mechanisms of belief updating
 
 We then sought to identify which putative strategy participants used to update their beliefs about the future during and outside the pandemic. To answer this question, we used computational modeling and model comparisons to rule between 12 alternative models. This approach revealed that belief updating outside the pandemic was more RL-like and optimistic (pxp = 1, Ef = 0.77), while during the pandemic, it was best explained by a rational Bayesian updating model (pxp = 0.90, Ef = 0.43; Figure 2a–c). Similar findings were obtained when conducting model comparisons in the participants tested both before and during the lockdown (n=28; Appendix 1 , Figure 2—figure supplement 1).
 
-## Effects of experiencing the COVID-19 pandemic on hidden, latent variables of belief updating
+![Figure 2.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig2-v1.jpg)
+
+**Figure 2.:** Twelve alternative models from RL-like (blue) and Bayesian (orange) updating model families were fitted to observed belief updates for participants tested during the COVID-19 pandemic (left panel columns) and outside the pandemic (right column panels). (a) Protected exceedance probabilities for each of the 12 alternative models, which is the probability that the model predominates in the population above and beyond chance. (b) Posterior model attributions. Colored cells display the probability that individual participants (y-axis) will be best explained by a model version (x-axis). (c) Estimated model frequencies correspond to how many participants are expected to be best described by a model version, with error bars corresponding to standard deviations. The red line indicates the null hypothesis that all model versions are equally likely in the cohort (chance level). Labels on the x-axis of the histogram and bar graphs indicate the model versions with non-silenced parameters (S – scaling, A – asymmetry) and PR – personal relevance of events. The source data file provides exact values.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Posterior model attributions. Colored cells display the probability that individual participants (y-axis) will be best explained by a model version (x-axis). (b) Estimated model frequencies. The histograms display average posterior model frequencies that reflect how many participants are expected to be best described by a model version, with error bars corresponding to standard deviations. The red line indicates the null hypothesis that all model versions are equally likely in the cohort (chance level). Labels on the x-axis of the histograms indicate the model versions with non-silenced parameters (S – scaling, A–asymmetry), and PR – personal relevance factor.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The matrix displays the estimated model frequencies from the model recovery analysis. Each column represents the generative model used to simulate behavioral data, while each row indicates the model used to recover data during the fitting procedure. Higher values along the diagonal (blue) indicate successful recovery, confirming that each model can be reliably distinguished from the others. Off-diagonal values (gray) reflect potential misattributions.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** This figure illustrates the percentage of belief update for each participant (blue line) and the estimated belief update (black line) from the overall best fitting optimistically biased RL-like model of belief updating. The shaded blue area reflects the variance in observed data. The colored background highlights the four groups of participants tested in different contexts – before the COVID-19 pandemic (gray), during the 1st lockdown (red), at time of last lockdown release (beige), and one year later (green).
+
+### Effects of experiencing the COVID-19 pandemic on hidden, latent variables of belief updating
 
 Next, we compared the effects of experiencing the COVID-19 pandemic on the learning rates and its components. To show that this adverse context effect was indeed mediated by alterations in asymmetrical learning, we compared the scaling and asymmetry parameters obtained from the overall best-fitting model across the whole dataset of n=123 participants. This was Model 1 – the optimistically biased RL-like model of belief updating (pxp = 0.99, Ef = 0.40; Appendix 4, Figure 2—figure supplement 3).
 
 A linear mixed effects model (LME), analogous to the LME fitted to observed belief updates, was fitted to the learning rates and detected a main effect of EE valence (ß=0.09, SE = 0.01, t(236) = 7.14, p=1.18e-11, 95% CI [0.06 to 0.11]; Appendix 7—table 9), and a significant interaction EE valence by context (ß=–0.03, SE = 0.02, t(236) = –2.11, p=0.04, 95% CI [-0.07 to –0.002]; Figure 3a, Appendix 7—table 9). A main effect of EE valence (ß=0.08, SE = 0.02, t(105) = 3.22, p=0.002, 95% CI [0.03 to 0.12]; Appendix 7—table 10) and context (ß=–0.10, SE = 0.03, t(105) = –3.10, p=0.003, 95% CI [-0.17 to –0.04]; Appendix 7—table 10) on learning rates was detected when comparing the participants, who were tested both before and during the pandemic. As shown in Figure 3a, all participants' learning rates were lower in response to bad news than to good news. Still, the difference between good and bad news learning rates was significantly reduced for participants tested during the pandemic. In line with the observed belief updating after good and bad news, the effect of context on the learning rates was driven by a decrease in the learning rates from positive estimation errors in participants tested during the pandemic compared to participants tested outside the pandemic (t(121) = 2.17, p=0.03, Cohen’s d=0.39, two-sampled, two-tailed t-test). Both groups did not differ in their learning rates from negative estimation errors (t(121) = 0.87, p=0.39, Cohen’s d=0.16, two-sampled, two-tailed t-test).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig3-v1.jpg)
+
+**Figure 3.:** (a) Learning rates. Boxplots display 95% confidence intervals for learning rates from the RL-like updating model that assumed updating is proportional to the estimation error with an asymmetry and a scaling learning rate component. (b) Parameter recovery for learning rate components of the overall best fitting Model 1 (n=123). Pearson’s correlation between generating and recovered parameters for scaling (left panel) and asymmetry (right panel) learning rate component. r –Pearson’s correlation coefficient against zero. Source data and exact p-values are provided as a Source Data file. (c) Group comparisons for scaling and asymmetry components. Boxplots display 95% confidence intervals for the learning rate’s scaling (left panel) and the asymmetry (right panel) component. Boxes in all boxplots correspond to the interquartile range from Q1 (25th percentile) to Q3 (75th percentile). The horizontal black lines indicate medians, and whiskers range from minimum to maximum values and span 1.5 times the interquartile range. The dots correspond to individual participants. *p<0.05. p-values were obtained with two-sampled, two-tailed t-tests between groups, and exact values are provided in the source data file.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101157/elife-101157-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Pearson’s correlation between generating and recovered parameters for scaling (upper panel) and asymmetry (lower panel) learning rate component in participants tested outside (n = 58; left panel) and during (n = 65; right panel). The blue doted lines correspond to 95% confidence intervals. r – Pearson’s correlation coefficient against zero.
 
 Parameter recovery was successful for the scaling (r=0.92, p<0.001) and asymmetry (r=0.82, p<0.001) components of the learning rates (Figure 3b), which indicated that the model gave identifiable values for these parameters (parameter recovery was also conducted on each group and each model family separately, results are reported in Appendix 4 and Figure 3—figure supplement 1). We, therefore, were able to explore potential group differences in the learning rate components in more detail. Linear mixed effects modeling found a main effect of context for the asymmetry component (ß=–0.04, SE = 0.02, t(117) = –2.32, p=0.02, 95% CI [-0.07 to –0.01]; Figure 3c, Appendix 7—table 11), but not for the scaling component (ß=–0.07, SE = 0.05, t(117) = –1.54, p=0.13, 95% CI [-0.16 to 0.02]; Figure 3c, Appendix 7—table 12). The average asymmetry of learning rates was positive in both groups but significantly smaller in participants tested during the pandemic than those tested outside (t(121) = 2.00, p=0.048, Cohen’s d=0.36, two-sampled, two-tailed t-test, Figure 3c). This result indicated that participants considered positive estimation errors more than negative ones but less when experiencing the COVID-19 pandemic. Similar results were found in the within-subject group (n=28), with a significant main effect of context on asymmetry (ß=–0.06, SE = 0.02, t(51) = –3.72, p=0.001, 95% CI [-0.09 to –0.03]; Appendix 7—table 13), but not on scaling (ß=–0.10, SE = 0.05, t(51) = –1.96, p=0.06, 95% CI [-0.21 to 0.003]; Appendix 7—table 14).
 
@@ -79,15 +115,54 @@ In conclusion, our results provide insight into the resilience and adaptability 
 
 ## Methods
 
-## Ethical considerations
+### Ethical considerations
 
 The Local Ethics Committee of Sorbonne University approved the study. All participants provided informed consent and consent to publish. The study protocol followed the Declaration of Helsinki. The authors declare no competing interests.
 
-## Participants
+### Participants
 
 One hundred twenty-five participants (mean age = 37.50 ± 1.28, 99 females) allotted to four different groups were recruited for the study (see Table 1; Appendix 7—table 15) via a public advertisement. Two participants from the group tested in June 2022 were excluded from the analyses because they always indicated the same risk estimate for each event.
 
-## Experimental design
+**Table 1.**
+ Sociodemographic data for all four groups (N=123).♀: Female; ♂: Male; Note: education is the number of years completed in higher education after a high school diploma.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>October2019(N=30)</th>
+      <th>March – April 2020(N=34)</th>
+      <th>May2021(N=31)</th>
+      <th>June2022(N=28)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>34±2</td>
+      <td>42±3</td>
+      <td>42±3</td>
+      <td>35±3</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>18 ♀, 12 ♂</td>
+      <td>25 ♀, 9 ♂</td>
+      <td>20 ♀, 11 ♂</td>
+      <td>14 ♀, 14 ♂</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>5±0.4</td>
+      <td>4±0.3</td>
+      <td>5±0.2</td>
+      <td>4±0.4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design
 
 The first group of 30 participants (mean age = 33.73 ± 1.96, 18 females) was recruited in October 2019 before the COVID-19 outbreak in France (Figure 4a). These participants were tested in the laboratory. A second group of 34 participants (mean age = 42.24 ± 3.34, 25 females) was recruited from March to April 2020 for online testing during the first COVID-19-related lockdown of social and economic life, with schools closed. A third group of 31 participants (mean age = 42.42 ± 3.35, 20 females) was recruited and tested online immediately after the last lockdown and still during the COVID-19 pandemic in May 2021. A fourth group of 30 participants (mean age = 34.66 ± 2.71, 16 females) was recruited at the lift of the COVID-19 pandemic-related state of emergency and tested in the laboratory in June 2022 (Figure 4a). This group was also used to rule out an eventual effect of task design. Half of them (n=15) performed a one-run task design, and the other half (n=15) performed a two-run task design (e.g. see in more detail the belief updating task description below). Note the 30 participants tested before the COVID-19 pandemic were recontacted during the first strict lockdown to re-perform the belief updating task online (Figure 4a). This allowed us to check for the effects of experiencing a COVID-19-related lockdown within the same cohort of participants. Two of the 30 participants in this group did not respond. Therefore, the sample size for the within-group test-retest analyses was 28 participants.
 
@@ -95,11 +170,11 @@ The first group of 30 participants (mean age = 33.73 ± 1.96, 18 females) was re
 
 **Figure 4.:** (a) Timeline of testing. Four groups were tested, before the COVID-19 outbreak in October 2019, during the first complete lockdown of social and economic life in March and April 2020, after a partial lockdown in May 2021, and after the lift of the pandemic-related state of emergency in June 2022. (b) Belief updating task. Panels show subsequent appearances on the screen within a good news trial (left panels) and a bad news trial (right panel). Responses were self-paced. The task goal was to estimate the risk of experiencing different adverse future life events (e.g. tooth decay) for oneself (E1) and for somebody else (eBR) before and after (E2) being presented with information about the event’s prevalence in the general population (i.e. base rate (BR)).
 
-## Sample sizes
+### Sample sizes
 
 The sample sizes were determined by a power analysis using the power curve function in R (version 1.2.5033) and building on the good news/bad news bias observed in the first group tested in October 2019 before the COVID-19 outbreak in France. The sample size required to replicate a significant effect of estimation error valence on the updating with a power between 80% and 90% lay between 28 and 35 participants, respectively.
 
-## Belief updating task
+### Belief updating task
 
 All participants performed a belief-updating task (Figure 4b). For in-person testing, stimulus presentation and response recording were done with the Psychophysics toolbox in MATLAB (R2018b, Update 6, version 9.5.0.1265761). The online testing was done using Qualtrics (Qualtrics Software, version March 2020 of Qualtrics, Copyright 2020 Qualtrics. Available at https://www.qualtrics.com).
 
@@ -115,17 +190,29 @@ In the two-run task design, participants performed a first run of 40 trials. Eac
 
 The one-run task design is displayed in Figure 4b and consists of one run of 40 trials. Within each trial, participants first estimated the risk of experiencing a future adverse lifetime event for themselves (E1 rating) and for somebody else (eBR rating), were presented with the base rate for this event (BR), rated their confidence in the base rate and re-estimated their risk of experiencing the event in the future (E2 rating). Note that all analyses were controlled for these differences in task design, which had non-significant effects on belief updating, confidence ratings, estimation error magnitude, and learning rates (see corresponding tables in Appendix 7 with LME results).
 
-## Belief updating task measures of interest
+### Belief updating task measures of interest
 
-The estimation error indicated whether participants overestimated or underestimated their likelihood of experiencing an adverse event (E1) relative to its actual base rate (BR). The estimation error (EE) was calculated according to the equation i:(i)EE=E1−BR\begin{document}$$\displaystyle  \rm EE=E1-BR$$\end{document}
+The estimation error indicated whether participants overestimated or underestimated their likelihood of experiencing an adverse event (E1) relative to its actual base rate (BR). The estimation error (EE) was calculated according to the equation i:
+
+$$
+EE=E1−BR
+$$
 
 The estimation error was further used to categorize trials into good or bad news trials:
 
 For good news trials, the estimation error was positive (EE >0), which indicated an overestimation of one’s likelihood of experiencing an adverse life event relative to the base rate of that event (E1 >BR). For bad news trials, the estimation error was negative (EE <0), which indicated an underestimation of one’s likelihood of experiencing an adverse event relative to its actual base rate (E1 <BR).
 
-The main variable of interest was the magnitude of belief updating (UPD), which was calculated as the difference between the first (E1) and the second (E2) estimate after receiving information about the base rate (BR). Notably, the update was calculated for good and bad news trials, respectively, following equation ii:(ii)ifEE>0UDPgoodnews=E1−E2ifEE<0UDPbadnews=E2−E1\begin{document}$$\displaystyle  \begin{array}{ll}if\, EE>0\\\quad \quad \quad {\rm UDP_{good\, news}=E1-E2} \\ if \,EE<0\\\quad \quad \quad {\rm UDP_{bad\, news}=E2-E1}\end{array} $$\end{document}
+The main variable of interest was the magnitude of belief updating (UPD), which was calculated as the difference between the first (E1) and the second (E2) estimate after receiving information about the base rate (BR). Notably, the update was calculated for good and bad news trials, respectively, following equation ii:
 
-Lastly, the difference between updating after good and bad news was calculated to assess the updating bias following equation iii:(iii)UDB=UPDgoodnews−UPDbadnews\begin{document}$$\displaystyle  \rm UDB=UPD_{good \,news}-UPD_{bad \,news}$$\end{document}
+$$
+ifEE>0UDP_{goodnews}=E1−E2ifEE<0UDP_{badnews}=E2−E1
+$$
+
+Lastly, the difference between updating after good and bad news was calculated to assess the updating bias following equation iii:
+
+$$
+UDB=UPD_{goodnews}−UPD_{badnews}
+$$
 
 A positive difference indicated that participants updated their beliefs about their lifetime risk of experiencing adverse life events more frequently following good news than bad news.
 
@@ -133,13 +220,17 @@ For each participant, trials that did not receive a response (on average 0.44 tr
 
 The distance measured the extent to which participants consider their probability of experiencing a given adverse event (E1) different from the lifetime risk of someone from a similar socio-economic background (eBR). If positive, it reflected an optimistic bias in initial estimates. The following, distance = eBR – E1, was calculated. Additional analysis to control for this measure was added (Appendix 7—table 3).
 
-## Model-free statistical analyses of observed belief updating behavior
+### Model-free statistical analyses of observed belief updating behavior
 
 The main aim of this study was to assess how belief updating was affected by the context of experiencing the COVID-19 pandemic.
 
 We, therefore, conducted between-context analyses, contrasting groups tested during (i.e. during the first lockdown in March/April 2020 and immediately after the last lockdown in May 2021) and outside the pandemic context (i.e. before the outbreak in October 2019 and 1 year after the last lockdown in June 2022). All statistical tests were conducted using the MATLAB Statistical Toolbox (MATLAB 2018b, MathWorks) and JASP (JASP 0.16.4).
 
-A first linear mixed effects model (LME 1) was fitted to the belief updating, following equation iv:(iv)UPD=β0Intercept+βEE|EE|+βEEvalence+βcontextcontext+βdesigndesign+βageage+βgendergender+βeducationeducation+βEEvalence∗contextEEvalencebycontext+(1|subject)+(1+|EE||subject)+(1+EEvalence| subject)\begin{document}$$\displaystyle  \begin{array}{ll}\rm UPD=\beta_{0}\,Intercept \,+ \beta_{EE}\,|EE| +\beta_{EE} valence + \beta_{context}\,context+\beta_{design} \\ \rm design+\beta_{age}\,age +\beta_{gender}\,gender+\beta_{education}education\, +\rm \beta_{EE \,valence\,*\,context}\\\rm \,EE \,valence \, by\, context +(1\,|\,subject)+(1+\,|EE|\,|subject)+(1+EE \, valence \, | \ \\ \rm subject)\end{array}$$\end{document}
+A first linear mixed effects model (LME 1) was fitted to the belief updating, following equation iv:
+
+$$
+UPD=\beta_{0}Intercept+\beta_{EE}|EE|+\beta_{EE}valence+\beta_{context}context+\beta_{design}design+\beta_{age}age+\beta_{gender}gender+\beta_{education}education+\beta_{EEvalence∗context}EEvalencebycontext+(1|subject)+(1+|EE||subject)+(1+EEvalence| subject)
+$$
 
 The model included fixed effects for estimation error magnitude (|EE|), estimation error valence (EE valence, coded –1 for bad news trials and 1 for good news trials), context (coded 0 for outside and 1 for during the COVID-19 pandemic), task design (coded 1 for one-run, 2 for two-run design), age, gender (coded 0 for male, 1 for female participants), level of education, and the interaction of interest EE valence by context. The model also included random intercepts nested by subject number and random slopes for estimation error magnitude and valence.
 
@@ -147,64 +238,142 @@ Subsequently, the same Linear Mixed Effects (LME) model was applied again to the
 
 Post-hoc two-tailed and one-tailed t-tests were conducted to characterize the directionality of detected main effects and interactions.
 
-## Posthoc power analysis
+### Posthoc power analysis
 
 The best fitting computational models of belief updating in each context (i.e. during and outside the pandemic) and their free parameters were used to simulate new belief updates (Wilson and Collins, 2019). Simulations were repeated 1000 times. At each iteration, the above-described linear mixed effects model (equation iv) was fitted to the simulated belief updates. The frequency across 1000 iterations with which the LME detected a significant interaction of valence by context on simulated belief updating indicates the power of this interaction effect and the chance for type II errors of failing to reject the null hypothesis when the effect was there.
 
-## Model-based analyses of belief-updating behavior
+### Model-based analyses of belief-updating behavior
 
 To gain more insight into putative cognitive mechanisms of belief updating during and outside the COVID-19 pandemic, two families of non-linear computational models were fitted to observed belief updating behavior, which is specified below.
 
-## Model specifications
+### Model specifications
 
-## Reinforcement learning model of belief updating
+#### Reinforcement learning model of belief updating
 
-A Reinforcement learning-like model assumed that belief updating is proportional to the magnitude of the estimation error following Kuzmanovic and Rigoux, 2017. The learning rate scaled the effect of the estimation error on belief updating following the generic equation v:(v)UPD=LR∗EE\begin{document}$$\displaystyle  \rm UPD=LR*EE$$\end{document}
+A Reinforcement learning-like model assumed that belief updating is proportional to the magnitude of the estimation error following Kuzmanovic and Rigoux, 2017. The learning rate scaled the effect of the estimation error on belief updating following the generic equation v:
 
-Importantly, the learning rate was estimated for good and bad news trials separately and following equations vi and vii:(vi)LRgoodnews=S+A\begin{document}$$\displaystyle  \rm LR_{good \, news}=S+A$$\end{document}(vii)LRbadnews=S−A\begin{document}$$\displaystyle  \rm LR_{bad \, news}=S-A$$\end{document}
+$$
+UPD=LR∗EE
+$$
+
+Importantly, the learning rate was estimated for good and bad news trials separately and following equations vi and vii:
+
+$$
+LR_{goodnews}=S+A
+$$
+
+
+
+$$
+LR_{badnews}=S−A
+$$
 
 For both types of trials, the learning rate was composed of two components that varied across participants. The scaling parameter (S) measured the extent to which a participant took the estimation error into account when updating beliefs. The asymmetry parameter (A) indicated to what extent the belief updating differed for positive and negative estimation errors. The priors for scaling and asymmetry were untransformed and unbound. The mean of the prior distribution for scaling was set to one. Thus, a scaling of one meant that the updating magnitude equaled the estimation error magnitude. The mean of the prior distribution for the asymmetry parameter was set to zero. An asymmetry parameter value larger than zero meant positively biased updating, whereas an asymmetry parameter smaller than zero meant negatively biased belief updating.
 
-A version of the RL-like model of belief updating took the personal relevance (PR) of presented adverse future life events into account following equations viii and ix:(viii)UPDgoodnews=(S+A)∗EE∗(1−PR)\begin{document}$$\displaystyle  \rm UPD_{good\, news}=(S+A)* EE*(1-PR)$$\end{document}(ix)UPDbadnews=(S−A)∗EE∗(1−PR)\begin{document}$$\displaystyle  \rm UPD_{bad\, news}=(S-A)*EE*(1-PR)$$\end{document}
+A version of the RL-like model of belief updating took the personal relevance (PR) of presented adverse future life events into account following equations viii and ix:
 
-The PR weighed the estimation error (EE) and corresponded to the difference between the estimated base rate (eBR, the estimated risk for somebody else) and the initial estimate (E1, the estimated risk for oneself). Based on the sign of this difference between eBR and E1, the PR was calculated following equations x to xii:(x)IfeBr<E1PR=eBR−E1eBR−1\begin{document}$$\displaystyle  \begin{array}{ll}\, If \, eBr<E1\\ \quad \quad \quad PR=\frac{eBR- E1}{eBR- 1}\end{array}$$\end{document}(xi)IfeBR>E1PR=E1−eBR99−eBR\begin{document}$$\displaystyle  \begin{array}{ll}\, If\, eBR>E1 \\ \quad \quad \quad PR=\frac{E1- eBR}{99- eBR}\end {array}$$\end{document}(xii)IfeBR=E1PR=0\begin{document}$$\displaystyle  \begin{array}{ll}\, If\, eBR=E1\\ \quad \quad PR=0\end{array}$$\end{document}
+$$
+UPD_{goodnews}=(S+A)∗EE∗(1−PR)
+$$
 
-## Bayesian belief updating model
 
-A second family of computational models was fitted to belief updating behavior and assumed that belief updating was proportional or equal to the Bayes rule, following equations xiii and xiv (Kuzmanovic and Rigoux, 2017):(xiii)UPDgoodnews=(E1−E2b)∗(S+A)\begin{document}$$\displaystyle  \rm UPD_{good\, news}=(E1-E2b)*(S+A)$$\end{document}(xiv)UPDbadnews=(E2b−E1)∗(S−A)\begin{document}$$\displaystyle  \rm UPD_{bad\, news}=(E2b-E1)*(S-A)$$\end{document}
+
+$$
+UPD_{badnews}=(S−A)∗EE∗(1−PR)
+$$
+
+The PR weighed the estimation error (EE) and corresponded to the difference between the estimated base rate (eBR, the estimated risk for somebody else) and the initial estimate (E1, the estimated risk for oneself). Based on the sign of this difference between eBR and E1, the PR was calculated following equations x to xii:
+
+$$
+IfeBr<E1PR=\frac{eBR−E1}{eBR−1}
+$$
+
+
+
+$$
+IfeBR>E1PR=\frac{E1−eBR}{99−eBR}
+$$
+
+
+
+$$
+IfeBR=E1PR=0
+$$
+
+#### Bayesian belief updating model
+
+A second family of computational models was fitted to belief updating behavior and assumed that belief updating was proportional or equal to the Bayes rule, following equations xiii and xiv (Kuzmanovic and Rigoux, 2017):
+
+$$
+UPD_{goodnews}=(E1−E2b)∗(S+A)
+$$
+
+
+
+$$
+UPD_{badnews}=(E2b−E1)∗(S−A)
+$$
 
 The scaling parameter (S) corresponded to the tendency of participants to update their beliefs in response to the presented base rate following Bayes' rule. A scaling smaller than one (S<1) indicated lesser belief updating than what was predicted by the Bayes rule, and a scaling larger than one (S>1) indicated more updating than predicted by the Bayes rule.
 
-The Bayes rule was used to define a Bayesian second estimate (E2b, the updated belief), which was calculated following equations xv and xvi:(xv)E2b=Prior∗LHR\begin{document}$$\displaystyle  E2b=\rm Prior*LHR$$\end{document}(xvi)E2b=Prior∗LHR1+(Prior∗LHR)\begin{document}$$\displaystyle  E2b=\rm \frac{Prior*LHR}{1+(Prior*LHR)}$$\end{document}
+The Bayes rule was used to define a Bayesian second estimate (E2b, the updated belief), which was calculated following equations xv and xvi:
 
-With the Prior=P(BR), corresponding to the base rate (BR) of each event following equation xvii:(xvii)Prior=BR1−BR\begin{document}$$\displaystyle  Prior=\rm \frac{BR}{1-BR}$$\end{document}
+$$
+E2b=Prior∗LHR
+$$
 
-The Likelihood Ratio (LHR) indicates the probability of the initial estimate (E1) relative to the likelihood of the alternative estimated base rate (eBR) following equation xviii:(xviii)LHR=E11−E1eBR1−eBR\begin{document}$$\displaystyle  LHR=\rm \frac{\frac{E1}{1-E1}}{\frac{eBR}{1-eBR}}$$\end{document}
+
+
+$$
+E2b=\frac{Prior∗LHR}{1+(Prior∗LHR)}
+$$
+
+With the Prior=P(BR), corresponding to the base rate (BR) of each event following equation xvii:
+
+$$
+Prior=\frac{BR}{1−BR}
+$$
+
+The Likelihood Ratio (LHR) indicates the probability of the initial estimate (E1) relative to the likelihood of the alternative estimated base rate (eBR) following equation xviii:
+
+$$
+LHR=\frac{\frac{E1}{1−E1}}{\frac{eBR}{1−eBR}}
+$$
 
 Alternative models of these two model families (RL and Bayesian) were fitted to the observed belief-updating behavior. Each model alternative represented a different combination of free parameters composing the learning rate to test a total of 12 assumptions about the cognitive process underlying belief updating:
 
-## Model estimation
+### Model estimation
 
 Models were estimated following the procedure reported by Kuzmanovic and Rigoux, 2017 and Bottemanne et al., 2022. In short, models were not hierarchical, and parameter estimation was thus less sensitive to differences in group sample sizes. For each participant, optimal scaling and asymmetry parameter values were obtained using Bayesian variational inferences implemented in the VBA toolbox (Daunizeau et al., 2014).
 
-## Model comparisons
+### Model comparisons
 
 The free energy approximations for a model’s evidence in each participant were entered into a random effect Bayesian model comparison that yielded the two criteria considered for model selection: the estimated model frequency (Ef) in each group (estimate the frequency of each model in the population) and the protected exceedance probability (pxp), which corresponded to the probability that the hypothesis predominates in the population, above and beyond chance.
 
-## Parameter recovery
+### Parameter recovery
 
 Parameter recovery analysis was conducted to check whether the free parameters of the winning models were identifiable and described the data better than any other set of parameters. The procedure was the same as reported in Bottemanne et al., 2022. In short, to validate the accuracy of the fitting procedure in providing meaningful parameter values, simulated belief updating data was generated using the observed parameter values for both the optimistic RL model and the optimistic Bayesian updating model. Subsequently, we applied the fitting procedure to these simulated data to iteratively 'recover' the parameters. Thereby, the means of the parameters were set to correspond to the observed sample means (i.e. scaling = 0.39 ± 0.02, asymmetry = 0.07 ± 0.01 for the RL model; scaling = 0.42 ± 0.03, asymmetry = 0.05 ± 0.01 for the Bayesian model). This process was iterated to simulate 40 values of belief updates 123 times. The model was then inverted by fitting it to the simulated data, yielding a new set of recovered values for scaling and asymmetry. Finally, the recovered and estimated parameters were compared by assessing their correlation using Pearson’s correlation coefficients.
 
-## Parameter comparisons
+### Parameter comparisons
 
 To compare learning rates and learning rate components across groups, we used the parameters from the optimistically biased RL-like model (RL model 1), which performed best when fitted to the whole dataset (Ef = 0.40, pxp = 0.99) and reproduced the observed updating behavior as shown in Figure 2—figure supplement 3.
 
-Individual learning rates from this RL model 1 and their scaling and asymmetry components were the dependent variables (DV) of the following generic linear mixed effects model (equation xix and xx):(xix)LR=β0Intercept+βvalencevalence+βcontextcontext+βdesigndesign+βageage+βgendergender+βeducationeducation+βvalencevalencebycontext+(1|subject)\begin{document}$$\displaystyle  \begin{array}{ll} LR=\rm \beta_0 Intercept\,+\,\beta_{valence}\, valence\,+\, \beta_{context} \,context\,+\, \beta_{design}\,design\,+\beta_{age}\, age\, +\beta_{gender}\\ \rm gender\,+\,\beta_{education}\, education\,+\,\beta_{valence}\, valence\, by \, context +(1|\, subject)\end{array}$$\end{document}(xx)parameters=β0Intercept+βcontextcontext+βageageβgendergenderβeducationeducation+(1|subject)\begin{document}$$\displaystyle  \begin{array}{ll}parameters=\rm \beta_{0}Intercept\,+\beta_{context}\,context\,+\beta_{age}\, age\,\beta_{gender}\,gender\,\beta_{education}\\ \rm education\,+(1|subject)\end{array}$$\end{document}
+Individual learning rates from this RL model 1 and their scaling and asymmetry components were the dependent variables (DV) of the following generic linear mixed effects model (equation xix and xx):
+
+$$
+LR=\beta_{0}Intercept+\beta_{valence}valence+\beta_{context}context+\beta_{design}design+\beta_{age}age+\beta_{gender}gender+\beta_{education}education+\beta_{valence}valencebycontext+(1|subject)
+$$
+
+
+
+$$
+parameters=\beta_{0}Intercept+\beta_{context}context+\beta_{age}age\beta_{gender}gender\beta_{education}education+(1|subject)
+$$
 
 The model included fixed effects for news valence (valence, coded 1 for good news, –1 for bad news), context (coded 0 for outside the pandemic, 1 for during the pandemic), task design (coded 1 for one-run and 2 for two-run), age, gender (coded 0 for male, 1 for female participants), and level of education. It also tested the interaction of interest context by valence. The intercept was nested at random by subject number.
 
 Post-hoc one-sampled and two-sampled t-tests were conducted to characterize the directionality of effects.
 
-## Model recovery
+### Model recovery
 
 To check if the 12 models were identifiable, a model recovery analysis was conducted using the VBA toolbox (Daunizeau et al., 2014). In more detail, behavior was simulated using each of the 12 models with parameters estimated from participants' actual behavior. These simulated datasets were then refitted to all alternative models. The model comparison procedure was then performed to evaluate whether each model could accurately recover the parameters that generated the data. This resulted in a 12x12 confusion matrix that compared the performance of all models in fitting each simulated dataset (Figure 2—figure supplement 2). The matrix shows the estimated frequency when fitting to the 12 models (y axis), the behavior generated by each model (x axis), and provided evidence for strong recovery of nearly all models and, importantly, the two winning models: the optimistically biased RL-like model and the rational Bayesian model of belief updating. This analysis thus rules out that the two model families were confused and mitigates concerns about the validity of the model selection.

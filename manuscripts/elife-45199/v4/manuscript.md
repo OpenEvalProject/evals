@@ -45,6 +45,250 @@ Putatively orthologous (single-copy) genes (POGs) identified in RNA-seq data set
 
 In this paper, we compare the divergence patterns of genes identified as POGs in leaf transcriptomes of 20 allopatric species/variety pairs (or taxon pairs), all but four of which represent the EA-ENA floristic disjunction (Table 1). The 16 EA-ENA disjunct species or subspecies/variety pairs represent diverse clades of flowering genera with two to several species: Campsis (two spp.) – Lamiales, Convallaria (three vars. of 1 sp.) – Asparagales, Cornus (two subclades, Cornus-1 with eight spp., Cornus-2 with two spp.) – Cornales, Cotinus (two spp.) – Sapindales, Croomia (three spp.) – Pandanales, Gelsemium (three spp.) – Gentianales, Hamamelis (six spp.) – Saxifagales, Liquidambar (4–15 spp.) – Saxifragales, Liriodendron (two spp.) – Magnoliales, Meehania (seven spp.) – Lamiales, Menispermum (two spp.) – Ranunculales, Nelumbo (two spp.) – Proteales, Penthorum (two spp.)– Saxifragales, Phryma (two spp. or two vars. of 1 sp.) – Lamiales, Sassafras (three spp.) – Magnoliales, and Saururus (two spp.) – Piperales (Appendix 1—figure 1). These EA-ENA disjunct genera are among the classic examples of the EA-ENA floristic disjunction (Li, 1952; Wu, 1983; Wen, 1999) and have one to a few species isolated in the two areas, and in a few cases, a species also occurs in western North America (e.g., Cornus-1) and/or southwestern Asia and southeastern Europe (e.g., Convallaria, Liquidambar, Nelumbo). The species pairs we compared in these genera (Table 1) span a range of divergence times (Xiang et al., 2000; Wen, 2001; Milne and Abbott, 2002; Wen et al., 2010).
 
+**Table 1.**
+ List of biogeographic pairs and number of examined putative single copy orthologs (POGs) (sum from two species), maximum length (MAL), minimum length (MIL), and average length (AL) of POGs, number of POGs mapped to single copy genes in seed plants (NSP) and number of POGs that were mapped to single copy genes in 20 angiosperm plants (NAP).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genera</th>
+      <th>Species</th>
+      <th>Distribution</th>
+      <th>#of POGs</th>
+      <th>MAL of POGs (bp)</th>
+      <th>MIL of POGs (bp)</th>
+      <th>AL of POGs (bp)</th>
+      <th>NSP of POGs</th>
+      <th>NAP of POGs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acorus</td>
+      <td>A.calamus, A.gramineus</td>
+      <td>EA-Asia/America</td>
+      <td>17192/2</td>
+      <td>6213</td>
+      <td>102</td>
+      <td>874</td>
+      <td>77</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>Calycanthus</td>
+      <td>C.chinensis, C.occidentalis</td>
+      <td>EA-WNA</td>
+      <td>23116/2</td>
+      <td>6705</td>
+      <td>102</td>
+      <td>908</td>
+      <td>96</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>Campsis</td>
+      <td>C.grandiflora, C.radicans</td>
+      <td>EA-ENA</td>
+      <td>20840/2</td>
+      <td>5697</td>
+      <td>102</td>
+      <td>734</td>
+      <td>66</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>Convallaria</td>
+      <td>C.majalis var. keiskei, C.majalisvar. Montana</td>
+      <td>EA-ENA</td>
+      <td>30322/2</td>
+      <td>7041</td>
+      <td>102</td>
+      <td>502</td>
+      <td>53</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Cornus-1</td>
+      <td>C.ellipica, C.florida</td>
+      <td>EA-ENA</td>
+      <td>24398/2</td>
+      <td>5682</td>
+      <td>102</td>
+      <td>800</td>
+      <td>154</td>
+      <td>259</td>
+    </tr>
+    <tr>
+      <td>Cornus-2</td>
+      <td>C.alternifolia, C.controversa</td>
+      <td>EA-ENA</td>
+      <td>26490/2</td>
+      <td>7455</td>
+      <td>102</td>
+      <td>836</td>
+      <td>210</td>
+      <td>323</td>
+    </tr>
+    <tr>
+      <td>Cotinus</td>
+      <td>C.coggygria, C.obovatus</td>
+      <td>Eurasia-ENA</td>
+      <td>26494/2</td>
+      <td>7374</td>
+      <td>102</td>
+      <td>889</td>
+      <td>237</td>
+      <td>361</td>
+    </tr>
+    <tr>
+      <td>Croomia</td>
+      <td>C.japonica,C.paueiflora</td>
+      <td>EA-ENA</td>
+      <td>23160/2</td>
+      <td>6480</td>
+      <td>102</td>
+      <td>817</td>
+      <td>71</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>Dysosma</td>
+      <td>D.pleiantha, D.versipellis</td>
+      <td>Asia*</td>
+      <td>24270/2</td>
+      <td>11694</td>
+      <td>102</td>
+      <td>944</td>
+      <td>132</td>
+      <td>218</td>
+    </tr>
+    <tr>
+      <td>Gelsemium</td>
+      <td>G.elegans, G.sempervirens</td>
+      <td>EA-ENA</td>
+      <td>22774/2</td>
+      <td>6801</td>
+      <td>102</td>
+      <td>980</td>
+      <td>129</td>
+      <td>194</td>
+    </tr>
+    <tr>
+      <td>Hamamelis</td>
+      <td>H.japonica, H.vernalis</td>
+      <td>EA-ENA</td>
+      <td>23052/2</td>
+      <td>7308</td>
+      <td>102</td>
+      <td>955</td>
+      <td>221</td>
+      <td>365</td>
+    </tr>
+    <tr>
+      <td>Liquidarnbar</td>
+      <td>L.styraciflua, L.formosana</td>
+      <td>EA-ENA</td>
+      <td>24844/2</td>
+      <td>7041</td>
+      <td>102</td>
+      <td>893</td>
+      <td>196</td>
+      <td>343</td>
+    </tr>
+    <tr>
+      <td>Liriodendron</td>
+      <td>L.chinense, L.tulipifera</td>
+      <td>EA-ENA</td>
+      <td>23060/2</td>
+      <td>7053</td>
+      <td>102</td>
+      <td>748</td>
+      <td>77</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Meehania</td>
+      <td>M.fargesii, M.cordata</td>
+      <td>EA-ENA</td>
+      <td>25622/2</td>
+      <td>5562</td>
+      <td>102</td>
+      <td>919</td>
+      <td>97</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <td>Menispermum</td>
+      <td>M.canadense, M.dauricum</td>
+      <td>EA-ENA</td>
+      <td>27490/2</td>
+      <td>7347</td>
+      <td>102</td>
+      <td>449</td>
+      <td>60</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>Nelumbo</td>
+      <td>N.lutea, N.nucifera</td>
+      <td>EA-ENA</td>
+      <td>23988/2</td>
+      <td>7329</td>
+      <td>102</td>
+      <td>774</td>
+      <td>138</td>
+      <td>220</td>
+    </tr>
+    <tr>
+      <td>Penthorum</td>
+      <td>P.chinense, P.sedoides</td>
+      <td>EA-ENA</td>
+      <td>23288/2</td>
+      <td>15225</td>
+      <td>102</td>
+      <td>882</td>
+      <td>161</td>
+      <td>245</td>
+    </tr>
+    <tr>
+      <td>Phryma</td>
+      <td>P.aleptostachya, P.leptostachya</td>
+      <td>EA-ENA</td>
+      <td>25096/2</td>
+      <td>11445</td>
+      <td>102</td>
+      <td>863</td>
+      <td>106</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <td>Sassafras</td>
+      <td>S.albidum, S.tzumu</td>
+      <td>EA-ENA</td>
+      <td>25070/2</td>
+      <td>7524</td>
+      <td>102</td>
+      <td>809</td>
+      <td>104</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <td>Saururus</td>
+      <td>S.cernuus, S.chinensis</td>
+      <td>EA-ENA</td>
+      <td>19386/2</td>
+      <td>6300</td>
+      <td>102</td>
+      <td>888</td>
+      <td>53</td>
+      <td>84</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Evergreen-deciduous forests pair._
+
 As noted, four of the 20 pairs represent other allopatric pairs (i.e., Acorus, two spp. – Acorales, Calycanthus, three spp. – Laurales, Dysosma, seven spp. – Ranunculales). These additional pairs were included in the study to increase our sampling of geographically separated taxon pairs for comparison and to cover a wide window of times, from recent divergence of speciation to further divergence of the descendant species. The species pairs analyzed follow: one EA-Western North American (WNA) pair (Calycanthus chinensis – C. occidentalis), one Asia/S. Europe-ENA pair (Cotinus coggygria – C. obovatus), one EA-EA/NA pair (Acorus gramineus – A. calamus), and one Asian pair (Dysosma versipellis – D. pleiantha; Ranunculales) (Table 1). Species of Acorus and Dysosma partially overlap in their geographic ranges, but have diverged in habitat and do not occur together. Acorus calamus naturally occurs throughout China and adjacent countries, and in North America in swamps, pond sides, and standing water below 2800 m. Acorus gramineus occurs in eastern, southern, and western China, and adjacent countries of EA in dense forests, moist rocky stream banks, and meadows below 2600 m. Dysosma versipellis and D. pleiantha both occur in eastern, central, and southern China, but D. versipellis is found in deciduous forests while D. pleiantha occurs in evergreen forests.
 
 Additional information on the 20 taxon pairs and their distributions can be obtained from the Flora of China (http://www.efloras.org) and the Flora of North America (http://floranorthamerica.org/). The 20 taxon pairs we compared span a range of divergence times (Xiang et al., 1998; Xiang et al., 2000; Milne and Abbott, 2002; Donoghue and Smith, 2004; Wen et al., 2010; Harris et al., 2013; Wen et al., 2016), mostly representing sister species or varieties; however, in a few cases, the selected species represent sister clades of one vs. two species (Calycanthus, Gelsemium, Sassafras), one vs. a few species (Hamamelis), or two or three vs. a few species (Cornus-1, Liquidambar).
@@ -61,35 +305,315 @@ The number of POGs in the leaf transcriptomes of the 20 biogeographic taxon pair
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig1-v4.jpg)
 
-**Figure 1.:** Ks) of putative orthologs (POGs) from leaf transcriptomes of 20 species/variety pairs of angiosperms.
-
 ![Figure 2.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig2-v4.jpg)
-
-**Figure 2.:** Ka) of putative orthologs (POGs) of leaf transcriptomes from 20 species/variety pairs of angiosperms.
 
 The Ka/Ks ratios of the POGs exhibit high similarity in patterns of variation among the 20 taxon pairs. In all pairs, the ratios at peak frequencies are highly similar and more than 90% of the genes are overall under purifying selection (referred to as purifying selection in short) based on their average Ka/Ks ratios < 0.9 across all sites within the genes. The exception was Nelumbo, which has 87.6% of the genes with Ka/Ks ratios < 0.9. The greatest proportion of genes under purifying selection was observed in Gelsemium, which had 94.9% of the genes with Ka/Ks ratios < 0.9. A very small proportion, from 1.6% (in Acorus) to 3.7% (in Nelumbo), is evolving nearly neutrally with Ka/Ks ratios in the range of 0.9–1.1, and another small proportion, from 3.1% (in Gelsemium) to 8.8% (in Nelumbo), is under putative positive selection based on values of Ka/Ks ratios greater than 1.1. A very small proportion, from 0.6% (in Gelsemium) to 2.0% (in Nelumbo), is under putative strong positive selection with Ka/Ks ratios ranging from 2 to 7 and rarely to 17 (Figure 3). The proportion of genes under truly positive selection may be smaller the numbers reported here due to uncertainty in estimation of Ka/Ks ratios when Ks is small.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig3-v4.jpg)
 
-**Figure 3.:** Ka/Ks ratios of putative orthologs (POGs) from leaf transcriptomes of 20 species/variety pairs of angiosperms.
-
 We arbitrarily divided the genes under purifying selection into three categories, Ka/Ks < 0.1 as genes under strong purifying selection, 0.1 < Ka/Ks < 0.5 as genes under moderate purifying selection, and 0.5 < Ka/Ks < 0.9 as genes under relaxed purifying selection. Among the taxon pairs, we observed 41% (in Convallaria) to 68% (in Gelsemium) of the POGs fall into the category of moderate purifying selection, 11% (in Gelsemium) to 36% (in Convallaria) fall into the category of strong purifying selection, while 9.7% (in Acorus) to 19.5% (in Nelumbo) fall into the category of relaxed purifying selection. In all taxon pairs, the relative abundance of POGs under the different categories of selection pressures follows the same order, from high to low, as moderate purifying selection, strong purifying selection, relaxed purifying selection, weak/moderate positive selection, putatively neutral, and strong positive selection (Figure 4; Supplementary file 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig4-v4.jpg)
 
-**Figure 4.:** Ka/Ks values.Numbers of genes in each category are provided in Supplementary file 3.
+**Figure 4.:** Numbers of genes in each category are provided in Supplementary file 3.
 
 To investigate if variation in Ks values at peak frequency reflects variation in biogeographic isolation times of taxon pairs, phylogenetic analyses were conducted using the seven POGs shared by all taxa and the 79 POGs shared by >90% of the taxa, respectively. The results recovered the relationships of the 20 lineages congruent with the APG IV summary phylogeny and classification (The Angiosperm Phylogeny Group, 2016) (Figure 5; Figure 5—figure supplement 1). Divergence times of the biogeographic pairs estimated using total substitutions of these two sets of gene sequence data and BEAST (Drummond and Rambaut, 2007) were similar, with the results from 79 genes without the fossil constraint from Cornus slightly younger (Figure 5; Figure 5—figure supplement 1). The estimated divergence times suggested that isolation of the species pairs occurred in an interval between the late Miocene and Pleistocene (~10.67 –~1.69 mya; Figure 5). Species divergence time was positively correlated with the Ks value at peak frequency across taxon pairs (Figure 5; r = 0.8034; p<0.001; for values used for the correlation analysis, see Supplementary file 4). On the other hand, the Ks values at peak frequency of the taxon pairs are: (1) positively correlated with the abundance of genes under moderate purifying selection (0.1 < Ka/Ks <0.5; r = 0.9324; p<0.001), (2) negatively correlated with the abundance of genes under putative positive selection (Ka/Ks >=1.0, r = - 0.5344; p=0.015; 1.1 <= Ka/Ks <2, r = - 0.62; p=0.004), and (3) negatively correlated with the abundance of genes under putative strong purifying selection (Ka/Ks <0.1; r = - 0.7940; p<0.001) (Figure 6; Supplementary file 3, Supplementary file 10). The divergence times of taxon pairs are also positively correlated with the abundance of genes under moderate purifying selection (0.1 < Ka/Ks <0.5; r = 0.73; p<0.001) and negatively correlated with the abundance of genes under strong purifying selection (Ka/Ks <0.1; r = - 0.64; p<0.009; Figure 5; Supplementary file 4). The number of genes under strong positive selection (Ka/Ks >2) varies among the taxon pairs from 72 (in Campsis) to 184 (in Nelumbo) (Table 2). In each pair, approximately half of these genes have GO annotations (Table 2) that, in combination among all pairs, mapped to a total of 223 GO terms, varying from 21 (in Cornus-2) to 46 (in Convallaria) in each taxon pair (Supplementary file 5). Many of these GO terms are unique to a single lineage (100/223 = 44.8%).
 
+**Table 2.**
+ The number of POGs under strong positive selection (Ka/Ks > 2) in each taxon pair and results from Blast Search.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genera</th>
+      <th>Total</th>
+      <th>With blast (without hits)</th>
+      <th>With blast hits</th>
+      <th>With mapping</th>
+      <th>With GO annotation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acorus</td>
+      <td>101</td>
+      <td>18</td>
+      <td>20</td>
+      <td>17</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Calycanthus</td>
+      <td>115</td>
+      <td>14</td>
+      <td>20</td>
+      <td>25</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Campsis</td>
+      <td>72</td>
+      <td>5</td>
+      <td>15</td>
+      <td>10</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Convallaria</td>
+      <td>123</td>
+      <td>51</td>
+      <td>12</td>
+      <td>15</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Cornus-1</td>
+      <td>123</td>
+      <td>17</td>
+      <td>16</td>
+      <td>23</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>Cornus-2</td>
+      <td>116</td>
+      <td>7</td>
+      <td>12</td>
+      <td>29</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>Cotinus</td>
+      <td>124</td>
+      <td>40</td>
+      <td>11</td>
+      <td>13</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Croomia</td>
+      <td>170</td>
+      <td>32</td>
+      <td>29</td>
+      <td>20</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>Dysosma</td>
+      <td>108</td>
+      <td>36</td>
+      <td>14</td>
+      <td>18</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Gelsemium</td>
+      <td>67</td>
+      <td>5</td>
+      <td>10</td>
+      <td>8</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Hamamelis</td>
+      <td>114</td>
+      <td>28</td>
+      <td>15</td>
+      <td>26</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Liquidambar</td>
+      <td>122</td>
+      <td>23</td>
+      <td>19</td>
+      <td>21</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>Liriodendron</td>
+      <td>78</td>
+      <td>15</td>
+      <td>7</td>
+      <td>19</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>Meehania</td>
+      <td>85</td>
+      <td>12</td>
+      <td>14</td>
+      <td>7</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>Menispermum</td>
+      <td>106</td>
+      <td>18</td>
+      <td>6</td>
+      <td>19</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Nelumbo</td>
+      <td>184</td>
+      <td>9</td>
+      <td>32</td>
+      <td>39</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>Penthorum</td>
+      <td>93</td>
+      <td>5</td>
+      <td>16</td>
+      <td>9</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Phryma</td>
+      <td>119</td>
+      <td>4</td>
+      <td>24</td>
+      <td>16</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Sassafras</td>
+      <td>159</td>
+      <td>24</td>
+      <td>27</td>
+      <td>31</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>Saururus</td>
+      <td>102</td>
+      <td>7</td>
+      <td>21</td>
+      <td>16</td>
+      <td>58</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 5.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig5-v4.jpg)
+
+**Figure 5.:** (a) Dated global phylogeny and divergence times of taxon pairs estimated using BEAST program and seven single-copy orthologs shared by all 40 taxa with no missing data. Number 1, 2, and 3 indicate the crown node of Magnoliidae, crown node of Monocotyledoneae, and crown node of Eudicotyledoneae, respectively. (b – d). Correlation between divergence time and (b) Ks value at peak frequency of each genus, (c) abundance of POGs with Ka/Ks values between 0.1–0.5, and (d) abundance of POGs with Ka/Ks values < 0.1. Data used for the analyses are available in Supplementary file 4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig5-figsupp1-v4.jpg)
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig6-v4.jpg)
 
-**Figure 6.:** Ka/Ks values in the indicated ranges and Ks values of peak abundance (X-axis) in the 20 taxon pairs.The pattern remains when the modified Ks (see Materials and methods) is used. Data used for the analyses are available in Supplementary file 4.
+**Figure 6.:** The pattern remains when the modified Ks (see Materials and methods) is used. Data used for the analyses are available in Supplementary file 4.
 
 A majority (59) of these lineage-specific GO terms belongs to the Biological Process (BP) categorization, while 23 belong to the Molecular Function (MF) ontology, and 16 belong to the Cell Components (CC) ontology (Supplementary file 5). Fourteen of the BP GO terms were annotated to responses to various stimuli (biotic or abiotic, external or internal stimuli), defense response, immune process, or signal transduction and were distributed among 11 taxon pairs, with each term was present in 1–3 pairs. In all, 124 of the 223 GO terms (55.2%) are shared by two or more of the 20 taxon pairs. Among these, 12 were shared by 10–15 taxon pairs. These 12 genes were annotated to the nucleus, protein complex, hydrolase activity, zinc ion binding, RNA binding, ATP binding, structural constituent of ribosome, oxidoreductase activity, cellular protein modification process, translation, single-organism biosynthetic process, and oxidation-reduction process (Supplementary file 5). A single GO term is shared by all 20 taxon pairs and is annotated to integral component of membrane (ICM) in the CC category (Supplementary file 5). The specific genes and the relative abundance of genes within each of the CC, BP, and MP categories vary among the taxon pairs (Figure 7; Figure 7—figure supplement 1; Figure 7—figure supplement 2). However, within the CC category, all pairs have the greatest proportion annotated to ICM (Figure 7), although they vary in the exact number (Table 3). The analysis of the Ka/Ks > 2 genes using the variation cluster method (Wagner, 2007) showed most of them (>57% in all taxon pairs, >70% in 15 pairs) were also under positive selection (indicated by significant p value for test of clustered nucleotide substitutions) (Supplementary file 6).
 
+**Table 3.**
+ Number of genes with Ka/Ks > 2 ratios annotated to Integral Component of Membrane.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genera</th>
+      <th>Integral component of membrane</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acorus</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Calycanthus</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Campsis</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Convallaria</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Cornus-1</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Cornus-2</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Cotinus</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Croomia</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Dysosma</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Gelsemium</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Hamamelis</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Liquidarnbar</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Liriodendron</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Meehania</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Menispermum</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Nelumbo</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Penthorum</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Phryma</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Sassafras</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Saururus</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig7-v4.jpg)
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig7-figsupp1-v4.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig7-figsupp2-v4.jpg)
+
 ## Discussion
 
-## Conserved genomic pattern of evolutionary divergence following geographic speciation
+### Conserved genomic pattern of evolutionary divergence following geographic speciation
 
 Our results show a general trend of genome-wide molecular divergence in POGs among the phylogenetically divergent genera showing the EA-ENA floristic disjunction or other types of allopatric divergence. That is, similar frequency distributions of Ks, Ka, and Ka/Ks ratios were observed for the POGs expressed in leaves, with peaks clustered within a narrow range of small values (Ks: 0.001–0.05; Ka: 0.002–0.004; Ka/Ks: 0.15–0.25) and a long tail of larger values (Ks > 0.075, Ka >0.035, Ka/Ks > 0.5; Figure 1, Figure 2, Figure 3). The pattern we observed indicates that in each of the taxon pair, including the 16 EA-ENA pairs, most of the genes show shallow divergence or evolve slowly at a similar rate, while a small proportion of the genes evolve faster. This suggests that the molecular divergence in the POGs is generally low after geographic speciation. The peak frequency range of Ks, Ka, and Ka/Ks values revealed substantial differences in the magnitudes among genera, indicating that the taxon pairs have diverged to different extents, likely reflecting their relative timing of divergence and/or varying selection pressures among different genera. Evidence from divergence time estimation supported this prediction as discussed below.
 
@@ -107,7 +631,7 @@ Our observation of the length of time of species isolation is positively correla
 
 Unfortunately, our study cannot track the evolutionary fate of specific genes within a taxon pair through time to provide direct evidence for these explanations on the observed relationships. Nonetheless, we examined Ka/Ks values of the 79 POGs shared by 90% or more taxon pairs that diverged at different times to see if the same orthologous genes exhibit a relationship between variation of Ka/Ks values and time. A simple scattered plot in excel for the divergence times and the Ka/Ks values (with Ka/Ks values = 0, 99 removed) of the 79 POGs shared by 90% or more taxa revealed that eight of these genes had a correlation at r > 0.5, among which two correlations were positive and six were negative (Supplementary file 7). The Ka/Ks ratios of POGs that showed a correlation with times were all smaller than 1.0 (all <0.5 except for a couple of cases). These data provide another line of indirect evidence congruent with the hypothesis that some genes may have indeed shifted the pressure of purifying selection (intensified or relaxed) during the evolutionary divergence of the taxon pair. When only including Ka/Ks ratios smaller than 0.5 in the analysis of these 79 POGs, the number of genes showing correlation with time increased (9 positive and seven negative relationships with r > 0.5; Supplementary file 8). The relationships are strong in a few genes for either pattern. This observation suggests, perhaps, the presence and elimination of slightly deleterious nonsynonymous substitutions play a major role in the changes of Ka/Ks ratios. Lack of correlation between Ka/Ks ratios and time for most of the 79 POGs also suggests that the evolutionary fate of most of these POGs is more taxon-specific independent of time. Although most of them were under purifying selection, a handful cases were under putative positive selection with (Ka/Ks > 1; Supplementary file 7) which are more found in the aquatic Nelumbo and Saururus genera.
 
-## Genes under strong positive selection
+### Genes under strong positive selection
 
 The number and predicted functions of genes under strong positive selection (Ka/Ks > 2) varied among the disjunct pairs, and a large proportion of the GO terms are unique to a single genus, suggesting that the divergence and evolutionary adaptation of the species in each genus has been likely facilitated by different molecular mechanisms and biological processes. For example, among the 20 lineages we examined, the aquatic eudicot Nelumbo has the largest proportion of its POGs under positive selection and the smallest proportion of POGs under purifying selection, while the reverse is found in the terrestrial twining vine Gelsemium, a member of the asterid clade Gentianales. The two species of Nelumbo, N. nucifera (EA) and N. lutea (ENA), differ in four features of their reproductive structures, including tepal color and persistence, receptacle color, and fruit shape. Gene annotation identified 12 genes under strong positive selection for response to stimulus, nine for regulation of gene expression, seven for developmental process, eight for DNA-templated transcription, and eight for cellular lipid metabolic process. These genes may be interesting for future investigation into their roles in observed morphological divergence (Supplementary file 5). In Gelsemium, 12 morphological characters in reproductive structures (including inflorescence size, floral shape/size, fruit and seed morphology, etc.; see list in Wyatt et al., 1993) and two vegetative structures (petiole length and leaf shape) differ between the two disjunct species (Wyatt et al., 1993). Gene annotation for strong positive selection genes in this genus identified two for plastid organization, two for photosynthesis (light reaction), three for response to stress, two for establishment of localization in the cell, three for oxidation-reduction process, two for response to light stimulus, three for proteolysis, two for regulation of biological quality, two for negative regulation of metabolic process, three for signal transduction, and two for RNA processing, among others. The biological processes involving the positively selected genes all differ between the two genera except for DNA metabolic process, which was common to both, involving seven genes in Nelumbo and two genes in Gelsemium (Supplementary file 5).
 
@@ -117,7 +641,7 @@ The single GO term common to all 20 taxon pairs was annotated to integral compo
 
 Recent studies have revealed repeated patterns of genomic divergence associated with species formation (Pereira et al., 2016). Such patterns was considered as evidence suggesting that natural selection tends to target a set of available genes (Pereira et al., 2016). Our study found a set of genes was targeted for strong positive selection in each taxon pair, suggesting that these genes may play a role for the allopatric divergence of the studied taxon pairs. Although the set of genes differed among taxon pairs, 12 were shared by 10–15 pairs and one of them was share by all pairs. Whether these common targets reflect shared biological processes unique to the allopatric divergence of the studied taxa or general to allopatric or even sympatric divergence of all taxa need to be tested by further studies.
 
-## Uncertainty in gene copy, orthology, Ka/Ks estimation, and divergence time estimation
+### Uncertainty in gene copy, orthology, Ka/Ks estimation, and divergence time estimation
 
 We stress that the POGs in leaf transcriptomes analyzed here are putative orthologs between the two species of each biogeographic pair found in the transcriptomes by OrthoMCL followed by analyses using customized scripts (see Methods below). As discussed above, some of them may represent paralogous copies of the low-copy gene family, but such cases are expected to be uncommon due to the close relationship between the compared taxa of each pair. In these taxon pairs, conservation of expression of a gene copy in the same tissue of the same growth stage is likely. Rare cases of non-homology of POGs would not affect the conclusions derived from thousands of putatively orthologous comparisons. OrthoMCL is known to perform reasonably well in identifying orthologous genes (Chen et al., 2007; Altenhoff and Dessimoz, 2009). Unfortunately, we do not have genome sequences for any pairs of taxon to confirm the orthology via phylogenetic analyses of gene families. We conducted phylogenetic analyses of the seven POGs shared among the 20 taxon pairs and 79 POGs shared by >90% taxon pairs, respectively, using raxml. The results showed all taxon pairs were grouped as sister taxa in each of the gene trees, in accordance with the expectation that the sequence pairs are orthologous genes. Otherwise, we would have observed separation of sister taxa on the gene tree.
 
@@ -125,23 +649,23 @@ We are aware that uncertainty in Ka/Ks ratios is high when Ks is zero or close t
 
 We also recognize that the divergence times of each taxon pair calculated using BEAST (Drummond and Rambaut, 2007) and the global phylogeny including all 20 pairs may be somewhat underestimated due to sparse sampling of a deep phylogeny containing both very long and short branches and few calibrations only at deep nodes (see Methods and Xiang et al., 2011) that may fall beyond the smoothing capability of BEAST. However, the results are very similar to previous estimates based on rbcL sequences (Xiang et al., 2000). Despite the possible bias, the influence may be similar across the tree and does not renter their suitability for correlation analyses conducted in the study because the relative order of divergence of the species pairs estimated here is expected to be consistent. Although the divergence times may have been underestimated, we do not think it will not render the implication of a major pattern of BLB migration for the studied taxa because the divergence time need to be ~20–40 million years older for migration across the North Atlantic land bridge.
 
-## Conclusions
+### Conclusions
 
 Our comparative analyses of putative single-copy or low-copy genes from transcriptome data of 20 angiosperm lineages in Eurasia and North America reveal a consistent pattern of molecular divergence following allopatry, supporting a potential universal conservatism rule of genomic architecture governing the evolution of these genes. Our data of temporal isolation in the Neogene (or more recent) of the 16 EA-ENA taxon pairs also support an important role of the Bering Land Bridge for intercontinental migration of these taxa. We also identified a total of over 200 genes with annotation under putative strong positive selection following allopatric speciation across these genera, with some annotated to biological processes responding to various stimuli, providing a pool of candidates for future studies to understand the link between speciation and molecular and morphological divergence.
 
 ## Materials and methods
 
-## Sampling, RNA extraction, and transcriptome sequencing
+### Sampling, RNA extraction, and transcriptome sequencing
 
 Leaf materials were collected from wild or cultivated plants grown in botanical gardens or arboreta (Supplementary file 11) and flash frozen in liquid N2 and stored at −80°C until RNA extraction was conducted. Total RNA was then extracted from this tissue using the CTAB method of Jordon-Thaden et al. (Jordon-Thaden et al., 2015) (protocol number 2) with the addition of 20% sarkosyl. DNA was removed using a Turbo DNA-free kit (Invitrogen, Carlsbad, CA, USA). Extraction success was measured using Bioanalyzer metrics for the quality and quantity of RNA isolated (Agilent Technologies, Santa Clara, California, USA). The pure RNA was sent to BGI (Shenzhen, China) for library construction and sequencing after drying in specially coated tubes (i.e., GenVault, now renamed as GenTegra; IntegenX, Pleasanton, California, USA) that inhibit RNase activity and stabilize the RNA at room temperature. Ribosomal RNAs were removed from the total RNA by the Ribo-Zero rRNA removal kit for plant leaves (Epicentre, Madison, WI, USA) before cDNA library construction. Non-normalized mRNA libraries with insert sizes of ~200 bp were sequenced (paired-end, 100 bp) using the Illumina HiSeq 2000 platform to yield 4–8 Gb each.
 
-## Sequence assembly and identification of putative orthologous genes
+### Sequence assembly and identification of putative orthologous genes
 
 The flowchart of transcriptome data analyses is illustrated in Appendix 1—figure 2. For each species, prior to contig assembly, reads with poor quality were deleted from the data set, following the standard protocol of Illumina sequencing. Specifically, raw reads were trimmed at the 3’ end when the Phred quality score of a read dropped below Q = 20 (or 0.01 probability of error) for two consecutive bases. All 5’ and 3’ stretches of ambiguous ‘N’ nucleotides and sequences of less than 20 bp were removed from sequence trimming using CLC Genomics Workbench 4.6.1 (CLC Bio, Aarhus, Denmark). Reads of each species were assembled into contigs by Trinity software (Grabherr et al., 2011). Then, for each taxon pair, POGs were identified using orthoMCL (Li et al., 2003) and custom Perl scripts as follows. Generally, default parameters were selected for each step of this gene-selection pipeline. “OrthoMCL starts with reciprocal best hits within each transcriptome/genome as potential in-paralog/recent paralog pairs and reciprocal best hits across any two genomes as potential ortholog pairs. Related proteins are interlinked in a similarity graph. Then MCL (Markov Clustering algorithm,Van Dongen 2000; www.micans.org/mcl) is invoked to split mega-clusters’. The key steps in OrthoMCL included (1) ‘orthomclFilterFasta’ step: the program removes low-quality sequences with sequence length <30 bp and percent stop codons > 20%; (2) ‘blastall’ step: the program runs all-v-all Blastn with filtered sequences in the above step with default parameters ‘-v 100000 -b 100000 m 8 -e 1e-5’; (3) ‘orthomclPairs step: the program finds pairs of proteins that are potential orthologs, in-paralogs, or co-orthologs; (4) the ‘mcl’ program split mega-clusters into the final OrthoMCL ortholog groups; and (5) the ortholog groups file is outputted by OrthoMCL. In the ortholog groups file for a taxon pair, if a gene group contains a single gene from each taxon, this group was then picked as a ‘single-copy ortholog group’ using a custom Perl script. We refer here to these genes as putative orthologs (i.e. POGs) and note that they are ‘single-copy’ in the context of the comparisons – i.e., transcriptomes of a single tissue in a single taxon pair – and thus may not truly be single-copy genes within either of the taxa in each comparison. Each ‘single-copy’ ortholog of a taxon pair was further analyzed by scanning the ortholog groups file using the protein sequence-based ESTScan software (Lottaz et al., 2003) for CDS. The CDS sequences of each single-copy ortholog were aligned and converted into PAML format by MAFFT software (Katoh and Standley, 2013) and custom Perl scripts. The Perl scripts and complete pipeline (GDMET – Genome Duplication and Molecular Evolution by Transcriptome Sequences) developed for these data analyses is available at https://github.com/ybdong919/GDMETS/releases. The NCBI Bioproject number and Biosample numbers for the raw transcriptome data are provided in Supplementary file 11.
 
 To see how many of these POGs were represented in the ‘global’ single or low copy gene data sets of seed plants (Li et al., 2017); identified from a combination of genome and transcriptome data) and flowering plants (De Smet et al., 2013); identified from 20 angiosperm genomes), respectively, we performed the following mapping analyses. First, the single-copy or low-copy gene names of Arabidopsis thaliana shared by seed plants or flowering plants were downloaded from the respective publications. Second, the dataset including all cDNA sequences of Arabidopsis thaliana was downloaded from its genome database (TAIR10: https://www.arabidopsis.org/). Then the cDNA sequences of the single-copy or low-copy gene of A. thaliana shared by seed plants or flowering plants were selected out from the dataset of all cDNA using gene names by Perl script. Finally, the cDNA sequences from each of the 20 taxon-pairs were mapped against the selected gene cDNA sequences of Arabidopsis thaliana by Blast program, and those that were mapped by the cDNA from each of the 20 taxon pairs were selected and recorded by Perl script.
 
-## Molecular analyses of POGs – rate of substitution, selection, and gene annotation
+### Molecular analyses of POGs – rate of substitution, selection, and gene annotation
 
 To examine the level of molecular divergence and identify genes under positive selection following geographic isolation, synonymous substitutions per site (Ks), nonsynonymous substitutions per site (Ka), and the ratio (Ka/Ks) were calculated for each POGs with estimated standard error (SE) in each taxon pair. The ‘yn00’ model in the PAML package (Yang, 1997; Yang, 2007) was used to calculate Ks, Ka, and their ratio values. A complete pipeline (GDMET) was developed for these data analyses (available at https://github.com/ybdong919/GDMETS/releases). The yn2000 method (Yang and Nielsen, 2000) estimated synonymous and nonsynonymous substitution rates with corrections for multiple substitutions at the same site and takes into account of transition/transversion rate bias, base/codon frequency bias.
 
@@ -153,7 +677,7 @@ The POGs with Ka/Ks values greater than two were annotated by Blast2Go v5 (Cones
 
 The POGs with Ka/Ks values greater than two in each taxon pair were also analyzed with variation cluster method (Wagner, 2007) to see how many of these genes also contain significant signal of clustered substitutions, a deviation from neutral molecular evolution and expectation of positive expectation. For each pair of these POG sequences considered, we inferred a codon-preserving local alignment (Smith and Waterman, 1981), removed alignment gaps and identified all positions that differed in that alignment using a custom perl script. The coordinates of these differences were used as input to the varclus package (Wagner, 2007).
 
-## Phylogeny estimation and divergence times of taxon pairs
+### Phylogeny estimation and divergence times of taxon pairs
 
 The divergence time of each taxon pair was estimated from a phylogeny of all 20 taxon pairs inferred from (1) the seven POGs shared by all 40 samples and (2) those POGs shared by at least 90% of the 40 samples (79 genes) detected by GDMET. These gene sequences were aligned using MAFFT (https://mafft.cbrc.jp/alignment/software/ (Katoh and Standley, 2013), visualized and adjusted using Mesquite, and exported in Nexus format (Maddison and Maddison, 2017). The best model of molecular evolution (GTR model with a gamma rate parameter) was selected using jModeltest v2.1.6 (Posada, 2008), and BEAST v.1.8.2 (Drummond and Rambaut, 2007) was used to infer the phylogeny of the 20 genera and estimate the divergence times of each taxon pair (see more details below).
 
@@ -161,6 +685,6 @@ The ages for the crown node of Magnoliidae, crown node of Monocotyledoneae, and 
 
 The prior parameter settings for the analysis were checked with empty runs without the sequence data first, which resulted in divergence time estimates for the constrained nodes similar to the constrained values with ESS over 200. The distribution models of the other parameters, such as those on molecular evolution, resulting from the empty analyses were then implemented in the real analysis with data. The analysis with real data was run under a GTR model with a gamma rate parameter based on the results of jModelTest, with an uncorrelated lognormal relaxed clock (Drummond et al., 2006) and the yule process model (Stadler, 2010). The yule.birth rate was set as 0.06, the average rate for plants (De Vos et al., 2015). The analysis was run for 10 million generations, with sampling of trees every 1000 generations. The quality of the runs and parameter convergence were assessed using Tracer v. 1.6.0 (Rambaut and Drummond, 2009). The maximum credibility tree of mean heights was then constructed using TreeAnnotator after discarding 1000 trees as burn-in. The tree result was visualized in Figtree v 1.3 (Rambaut, 2010).
 
-## Availability of data and materials
+### Availability of data and materials
 
 The POG sequence pairs and values of dN, dS, and dN/dS are available at Dryad (https://datadryad.org//). Raw transcriptome data are available at NCBI SRA database with Bioproject number PRJNA508825 and Biosample number from SAMN10534244 to SAMN10534283 (Supplementary file 11). Other data sets supporting the conclusions of this article are included in the additional files of the article. Custom analysis scripts are available from GitHub: https://github.com/ybdong919/GDMETS/releases (Dong, 2018).

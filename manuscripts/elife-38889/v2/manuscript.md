@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.38889.001 Complex interplay between cardiac tissues is crucial for their integrity. The flow responsive transcription factor KLF2, which is expressed in the endocardium, is vital for cardiovascular development but its exact role remains to be defined. To this end, we mutated both klf2 paralogues in zebrafish, and while single mutants exhibit no obvious phenotype, double mutants display a novel phenotype of cardiomyocyte extrusion towards the abluminal side. This extrusion requires cardiac contractility and correlates with the mislocalization of N-cadherin from the lateral to the apical side of cardiomyocytes. Transgenic rescue data show that klf2 expression in endothelium, but not myocardium, prevents this cardiomyocyte extrusion phenotype. Transcriptome analysis of klf2 mutant hearts reveals that Fgf signaling is affected, and accordingly, we find that inhibition of Fgf signaling in wild-type animals can lead to abluminal cardiomyocyte extrusion. These studies provide new insights into how Klf2 regulates cardiovascular development and specifically myocardial wall integrity.
+Complex interplay between cardiac tissues is crucial for their integrity. The flow responsive transcription factor KLF2, which is expressed in the endocardium, is vital for cardiovascular development but its exact role remains to be defined. To this end, we mutated both klf2 paralogues in zebrafish, and while single mutants exhibit no obvious phenotype, double mutants display a novel phenotype of cardiomyocyte extrusion towards the abluminal side. This extrusion requires cardiac contractility and correlates with the mislocalization of N-cadherin from the lateral to the apical side of cardiomyocytes. Transgenic rescue data show that klf2 expression in endothelium, but not myocardium, prevents this cardiomyocyte extrusion phenotype. Transcriptome analysis of klf2 mutant hearts reveals that Fgf signaling is affected, and accordingly, we find that inhibition of Fgf signaling in wild-type animals can lead to abluminal cardiomyocyte extrusion. These studies provide new insights into how Klf2 regulates cardiovascular development and specifically myocardial wall integrity.
 
 ## Introduction
 
@@ -39,49 +39,157 @@ Taking a loss-of-function approach, we find that Klf2 is essential for myocardia
 
 ## Results
 
-## klf2 mutants exhibit a cardiomyocyte extrusion phenotype
+### klf2 mutants exhibit a cardiomyocyte extrusion phenotype
 
 Given the role of Klf2 in cardiovascular development in mouse (Lee et al., 2006), we used the Transcription Activator-Like Effector Nuclease (TALEN) technology (Cermak et al., 2011) to mutate both klf2 paralogues in zebrafish (Figure 1A–B and Figure 1—figure supplement 1A–B), and identified a klf2a Δ10 allele (bns11) and a klf2b Δ8 allele (bns12) (Kwon et al., 2016). Notably, the predicted truncated Klf2a bns11 protein lacks the transrepression and zinc finger domains (Figure 1A), and the predicted Klf2b bns12 protein contains only part of the transactivation domain (Figure 1B). Surprisingly, unlike the klf2a morphants which have been reported to exhibit pericardial edema and cardiac defects (Vermot et al., 2009), neither klf2abns11 nor klf2bbns12 mutants exhibit gross morphological defects (Figure 1—figure supplement 2A–C). Close examination revealed no obvious cardiovascular defects in klf2a or klf2b single mutants (Figure 1—figure supplement 2D–P) which can survive to become fertile adults. Quantitative PCR (qPCR) analysis of klf2a, klf2b and klf4a mRNA levels shows that klf2a transcript levels are significantly reduced in klf2abns11 mutants compared to their WT siblings, suggesting nonsense-mediated decay. In addition, the levels of klf2b and klf4a mRNA are increased in klf2abns11 mutants compared to their WT siblings (Figure 1—figure supplement 2Q), indicating that they could be compensating for the loss of Klf2a function. Similarly, klf2a and klf4a mRNA levels are increased in klf2bbns12 mutants compared to their WT siblings (Figure 1—figure supplement 2R). We thus decided to generate klf2abns11; klf2bbns12 double mutants (hereafter referred to as klf2 mutants). Unlike the single mutants, most double mutants exhibit pericardial edema by 96 hours post fertilization (hpf) (Figure 1C–D and Figure 1—figure supplement 3A). Abnormal atrioventricular (AV) canal elongation was observed at 48 hpf in approximately 10% of klf2 mutants (3/26). By 80 hpf, AV valve formation was clearly impaired in approximately 50% of klf2 mutants (17/36) as the canal appeared more elongated than in WT, and the multi-layering process leading to leaflet formation was also compromised in these animals (Figure 1—figure supplement 3B–E), consistent with previous observations in klf2a morphants (Vermot et al., 2009). Although the vascular network appeared unaffected in klf2 mutants, most of them died by 2 weeks post-fertilization and none survived to adulthood (Figure 1—figure supplement 3F–H). Upon closer examination of their hearts at 96 hpf, we found that approximately 90% of klf2 mutants exhibit a previously unreported phenotype of cardiomyocyte extrusion toward the abluminal side (69/75 mutant hearts) (Figure 1E–J). This phenotype first appears around 82 hpf in approximately 15% of klf2 mutants (11/67 mutant hearts), and the number of extruding cardiomyocytes, which are mostly located in the outer curvature of the ventricle, is variable and increases over time (Figure 1—figure supplement 4A–B). We also found that the size and circularity of klf2 mutant cardiomyocytes was significantly affected starting at 96 hpf (Figure 1—figure supplement 4C–D), possibly suggesting that the abnormally shaped cardiomyocytes represent an intermediate population on their way to extrusion.
 
-## Cardiac contractility is required for cardiomyocyte extrusion
+![Figure 1.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Partial sequence alignment of klf2abns11 (A) and klf2bbns12 (B) alleles with WT and schematics of their predicted protein products. (C–D) Representative brightfield images of a WT (C) and a klf2abns11/bns11; klf2bbns12/bns12 double mutant (hereafter referred to as klf2 mutant) at 96 hpf (D); lateral views, anterior to the left; arrowhead points to pericardial edema. (E–F’) Maximum intensity projections of 96 hpf klf2 WT (E–E’) and mutant (F–F’) hearts; (G–H’) Two-dimensional (2D) confocal images of 96 hpf klf2 WT (G–G’) and mutant (H–H’) hearts; ventricular outer curvature (dashed boxes) in (E, F, G and H) magnified in (E’, F’, G’ and H’), respectively. (I–J) Three-dimensional reconstructions from confocal images of 96 hpf klf2 mutant ventricular wall. Arrows point to extruding cardiomyocytes; V: ventricle; At: atrium; scale bars: 0.5 mm (C–D), 50 µm (E–H), 20 µm (I–J).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) klf2abns11 (A) and klf2bbns12 (B) mutant alleles can be identified by high-resolution melt analysis (HRMA) of PCR products. (C–D) Using different sets of primers (intronic), the klf2abns11 and klf2bbns12 alleles can be genotyped by PCR (C) and HRMA (D) in the presence of the klf2a-p2A-tdTomato (C) or klf2b-p2A-tdTomato (D) transgenes, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Brightfield images of 96 hpf larvae show that compared to their WT siblings (A), single klf2a mutant (B) or klf2b mutant (C) larvae do not exhibit any gross morphological defects. (D–F) Maximum intensity projections of confocal z-stacks of vascular networks in WT (D), klf2a mutant (E) and klf2b mutant (F) larvae at 80 hpf; lateral views, anterior to the left. (G–O) Confocal images of hearts from WT siblings (G, M) and klf2a (H, N) and klf2b (I, O) mutants show that cardiac development is not affected in these mutant alleles; maximum intensity projections of hearts in (G–I) are shown in (J-L). (P) Number of endocardial cells in the superior valve (dashed boxes) of WT sibling and klf2a and klf2b mutant hearts at 80 hpf;dots in this graph represent individual hearts. (Q–R) qPCR analysis of klf2a, klf2b and klf4a expression relative to WT, in klf2a (Q) and klf2b (R) mutants at 24 (Q) and 72 (R) hpf; n = 3 biological replicates; values represent means ±s.e.m.; *p≤0.05, ***, p≤0.001, ns (not significant), by Student’s t-test. Ct and dCt values are listed in Supplementary file 3. V: ventricle, At: atrium; scale bars: 0.5 mm (A–F), 50 µm (G–O).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Percentage of klf2 mutants exhibiting pericardial edema until five dpf (days post fertilization). (B–E) 2D confocal images of 80 hpf klf2 WT (B) and mutant (C) endocardial cells; superior valves are labeled with dashed boxes; maximum intensity projections of (B) and (D) are shown in (C) and (E). (F–G) Maximum intensity projections of confocal z-stacks of vascular network in klf2 WT (F) and mutant (G) animals at 80 hpf; lateral views, anterior to the left. (H) Survival rate of 90 dpf fish from klf2a+/-; klf2b-/- incrosses; W: wild-type, H: heterozygous, M: mutant. Scale bars: 50 µm (B–E), 0.5 mm (F–G).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Number of extruding cardiomyocytes in klf2 mutants at 60, 82, 96 and 118 hpf. (B) Number of extruding cardiomyocytes in inner and outer curvatures of 96 hpf klf2 mutant ventricles; dots in (A) and (B) represent individual hearts. (C–D) Size (C) and circularity (D) of ventricular (outer curvature) cardiomyocytes in klf2 WT and mutant animals at 82, 96 and 118 hpf; dots in (C) and (D) represent individual cardiomyocytes (n = 7 hearts per time point); values represent means ±s.e.m.; *p≤0.05, ***p≤0.001, ns (not significant), by Student’s t-test.
+
+### Cardiac contractility is required for cardiomyocyte extrusion
 
 Cardiac contractility/blood flow is vital for cardiac morphogenesis and function (Sehnert et al., 2002; Berdougo et al., 2003; Peshkovsky et al., 2011; Samsa et al., 2015; Collins and Stainier, 2016; Rasouli and Stainier, 2017). We found that around 60 percent of klf2 mutants exhibit impaired cardiac contractility at 96 hpf. In order to test whether the cardiomyocyte extrusion phenotype was secondary to impaired contractility, we first checked whether it could be induced in WT animals by modulating contractility with amhc morpholinos (MOs) which completely inhibit atrial contractility and cause secondary effects on ventricular contractility (Berdougo et al., 2003), as well as tnnt2a MOs which block both atrial and ventricular contractility (Sehnert et al., 2002). We observed that impaired contractility could not induce cardiomyocyte extrusion in WT animals (Figure 2—figure supplement 1), indicating that this phenotype is not secondary to impaired contractility. However, injecting tnnt2a MOs into klf2 mutants at the one-cell stage blocked cardiomyocyte extrusion (Figure 2A). In addition, short-term inhibition of cardiac contractility by BDM treatment from 100 to 102 hpf could also block cardiomyocyte extrusion (4/5 hearts) (Figure 2B). Overall, these data indicate that cardiac contractility is required for cardiomyocyte extrusion in klf2 mutants, and that this extrusion is reversible.
 
-## Cardiomyocyte extrusion correlates with N-cadherin mislocalization but not with cardiomyocyte death or proliferation
+![Figure 2.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig2-v2.jpg)
+
+**Figure 2.:** (A) Maximum intensity projections of confocal z-stacks of 96 hpf klf2 WT and mutant hearts, non-injected or injected with tnnt2a MO at the one-cell stage; part of ventricular outer curvature (dashed boxes) magnified on the right side of each panel. (B) Time-lapse 2D confocal images of a klf2 mutant heart during BDM treatment. Arrows point to an extruding cardiomyocyte returning to the compact layer upon inhibiting contraction; V: ventricle; At: atrium; scale bars: 50 µm (A), 10 µm (B).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–H’) Confocal images of hearts from 96 hpf klf2 WT (A, E and G) and mutant (C) animals, non-injected (A and C) or injected with amhc MO (E) or tnnt2a MO (G) at the one-cell stage; maximum intensity projections of hearts in (A), (C), (E) and G) are shown in (B), (D), (F) and H), respectively; magnified images of dashed boxes in (A–H) are shown in (A’–H’), respectively; arrows point to extruding cardiomyocytes.(I) Percentage of hearts with extruding cells in each condition; n = number of hearts. V: ventricle, At: atrium; scale bars, 50 µm.
+
+### Cardiomyocyte extrusion correlates with N-cadherin mislocalization but not with cardiomyocyte death or proliferation
 
 Cell death, crowding and loss of cell adhesion molecules have been implicated in epithelial cell extrusion (Rosenblatt et al., 2001; Semenza, 2008; Chien et al., 2008; Eisenhoffer et al., 2012; Marinari et al., 2012; Kuipers et al., 2014). In order to investigate the cause of the cardiomyocyte extrusion phenotype in klf2 mutants, we first performed Acridine Orange staining and found that the extruding cardiomyocytes in klf2 mutants did not appear to be dying (Figure 3A–D). To investigate cardiomyocyte proliferation, we used the Tg(myl7:mVenus-gmnn) line (Jiménez-Amilburu et al., 2016; Uribe et al., 2018) which allows one to visualize actively proliferating cardiomyocytes in green, and found that while the rate of atrial cardiomyocyte proliferation appeared unchanged in klf2 mutants compared to their WT siblings, the levels of ventricular cardiomyocyte proliferation were considerably reduced (Figure 3E–I), suggesting that crowding is not the cause of the cardiomyocyte extrusion phenotype in klf2 mutants. These observations are consistent with recent reports that inhibition of cardiomyocyte proliferation in zebrafish can reduce the total number of cardiomyocytes while not leading to their extrusion (Liu et al., 2010; Uribe et al., 2018).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) 2D (mid-sagittal sections) (A and C) and maximum intensity projections of confocal z-stacks (B and D) of 82 hpf klf2 WT (A–B) and mutant (C–D) hearts stained with Acridine Orange to visualize cell death; arrows point to extruding cardiomyocytes. (E–H) Confocal images of 96 hpf klf2 WT (E and G) and mutant (F and H) hearts to visualize cardiomyocyte proliferation. (I) Number of mVenus-gmnn positive ventricular and atrial cardiomyocytes in 96 hpf klf2 WT and mutant hearts; dots represent individual hearts; values represent means ±SEM; ***p≤0.001, ns (not significant), by Student’s t-test. (J–K’’) Mid-sagittal confocal sections of 96 hpf klf2 WT (J) and mutant (K) hearts. Higher magnification images of the outer curvature of the ventricular wall (white dashed boxes) in (J) and K) are shown in (J’), (J’’), (K’) and (K’’); arrows point to ectopic accumulation of Cdh2-EGFP proteins on the apical side of cardiomyocytes. (L–M’) 2D confocal views of 96 hpf klf2 WT (L) and mutant (M) hearts. Magnified images of dashed boxes in (L) and (M) are shown in (L’) and (M’), respectively. Arrows point to mislocalized Cdh2-GFP on the apical side of cardiomyocytes; V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Confocal images of 78 hpf hearts; non-injected (A and C) or injected with cdh2 MO at the one-cell stage (B and D); maximum intensity projections of hearts in (A) and (B) are shown in (C) and (D), respectively; dashed boxes are magnified in upper right corners; arrows point to extruding cardiomyocytes.V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–F) 2D confocal images (mid-sagittal views) of klf2 WT (A–C) and mutant (D–F) hearts at 96 hpf; magnified images of dashed boxes are shown on the right side of each panel; arrows point to a polarized extruding cardiomyocyte. V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–B’) klf2 WT (A) and mutant (B) hearts were imaged at 96 hpf; dashed boxes in (A) and (B) are magnified in (A’) and (B’), respectively.Arrows point to extruding cardiomyocytes; V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A–D) 2D confocal images (mid-sagittal sections) of WT hearts at 55 (A), 72 (B), 96 (C) and 118 (D) hpf; Maximum intensity projections of hearts in (A), (B), (C) and (D) are shown in (E), (F), (G) and (H), respectively. (i–l) Hearts from klf2 +/+ (i) and klf2 -/- (J) animals were imaged at 96 hpf; maximum intensity projections of hearts in (I) and (J) are shown in (K) and (L), respectively. (M) Number of ventricular tcf21-GFP positive cells; dots in this graph represent individual hearts. (N–R) 2D confocal images of 96 hpf WT hearts treated with DMSO (N and P) or MTZ (O) and (Q) from 48 to 96 hpf. MTZ treatment ablated almost all epicardial (mCherry-NTR positive) cells (O and Q); Maximum intensity projections of hearts in (N) and (O) are shown in (P) and (Q), respectively. (R) Number of extruding cardiomyocytes in WT animals after MTZ treatment compared to DMSO treatment, as well as in klf2 mutants at 96 hpf; dots in (R) represent individual hearts; values represent means ±s.e.m.; *p≤0.05, **p≤0.01, ***p≤0.001, by Student’s t-test. Arrows point to extruding cardiomyocytes; V: ventricle, At: atrium; scale bars, 50 µm.
+
 It has been reported that N-cadherin (Cdh2), an adhesion molecule, is highly enriched in mouse and zebrafish cardiomyocytes (Kostetskii et al., 2001; Bagatto et al., 2006; Cherian et al., 2016). We thus examined the distribution of Cdh2-EGFP molecules using the TgBAC(cdh2:cdh2-EGFP) line (Revenu et al., 2014), and found that while they are highly enriched on the lateral sides of WT cardiomyocytes at 96 hpf, they have become mislocalized from the lateral to the apical side of cardiomyocytes in klf2 mutants (Figure 3J–M’), suggesting that cardiomyocyte adhesion is affected. In addition, knockdown of N-cadherin by injecting cdh2 MO at the one-cell stage can also cause a cardiomyocyte extrusion phenotype in WT hearts (Figure 3—figure supplement 1). Overall, these data suggest that cardiomyocyte extrusion correlates with the mislocalization of N-cadherin on their membranes but not with cardiomyocyte cell death or proliferation.
 
-## The extruding cardiomyocytes appear polarized in the apicobasal axis
+### The extruding cardiomyocytes appear polarized in the apicobasal axis
 
 It has recently been shown that cardiomyocytes in the compact layer are polarized in their apicobasal axis whereas during the trabeculation process, they lose this polarity as they delaminate (Jiménez-Amilburu et al., 2016). In order to further investigate the extruding cardiomyocytes, we checked their apicobasal polarity by generating a myocardial-specific apical transgenic line, Tg(−0.2myl7:tdtomato-podxl), in which the apical protein podocalyxin is fused with tdTomato, and found that at 96 hpf, extruding cardiomyocytes do not lose their apical polarity (Figure 3—figure supplement 2).
 
-## Reduction of the cardiac jelly is not obviously affected in klf2 mutants
+### Reduction of the cardiac jelly is not obviously affected in klf2 mutants
 
 Reduction of the cardiac jelly, a gelatinous matrix between the endocardial and myocardial layers, is an important process during cardiac morphogenesis (Brutsaert et al., 1996; Stankunas et al., 2008; Bowers and Baudino, 2010; Tian and Morrisey, 2012; Rasouli and Stainier, 2017; Grassini et al., 2018). In order to investigate whether reduction of the cardiac jelly was affected in klf2 mutants, we used the TgBAC(etv2:EGFP) (Proulx et al., 2010) and Tg(myl7:mCherry-CAAX) (Uribe et al., 2018) lines to mark the endocardium and myocardium in green and red, respectively. Utilizing high-resolution confocal microscopy at 96 hpf, we observed that there was no significant difference in terms of cardiac jelly thickness between klf2 WT and mutant animals (Figure 3—figure supplement 3).
 
-## The epicardium is affected in klf2 mutants
+### The epicardium is affected in klf2 mutants
 
 The epicardium, the outer layer of vertebrate hearts, is known to be involved in the nourishment of the underlying myocardium (Peralta et al., 2014), the formation of coronaries (Ruiz-Villalba and Pérez-Pomares, 2012; González-Rosa et al., 2012), and tissue regeneration after cardiac injury (Schlueter and Brand, 2012; González-Rosa et al., 2012; Wang et al., 2015). In order to investigate the behavior of epicardial cells during early zebrafish heart development, we used high-resolution microscopy to image hearts in Tg(myl7:mCherry-CAAX);TgBAC(tcf21:NLS-EGFP) (Wang et al., 2015) animals, in which myocardial and epicardial cells are labeled in red and green, respectively. At 55 hpf, we observed a few tcf21-positive cells attaching to the abluminal side of the ventricle, which was fully covered by 96 hpf (Figure 3—figure supplement 4A–H), in agreement with previous studies (Virágh and Challice, 1981; Peralta et al., 2013; Peralta et al., 2014; Wang et al., 2015). At 96 hpf, we observed fewer tcf21-positive cells covering the klf2 mutant hearts compared to their WT siblings, and also a sparser distribution (Figure 3—figure supplement 4I–M), suggesting defective epicardial-myocardial interactions in the absence of Klf2 function. In order to investigate whether incomplete epicardial coverage could contribute to the cardiomyocyte extrusion phenotype observed in klf2 mutants, we used a genetic ablation approach to remove epicardial cells in Tg(myl7:EGFP-Has.HRAS) (D'Amico et al., 2007); TgBAC(tcf21:mCherry-NTR) (Wang et al., 2015) animals using metronidazole (MTZ) treatment from 48 to 96 hpf. We found that this epicardial ablation approach could also induce cardiomyocyte extrusion; however, the number of extruding cardiomyocytes after epicardial ablation was far lower than that observed in klf2 mutants (Figure 3—figure supplement 4N–R).
 
-## Klf2 functions cell non-autonomously to maintain the integrity of the myocardial wall
+### Klf2 functions cell non-autonomously to maintain the integrity of the myocardial wall
 
 To investigate where Klf2 function is required to maintain the integrity of the myocardial wall, we generated chimeric hearts by cell transplantation and examined the behavior of WT cardiomyocytes in klf2 mutant hearts, and vice versa (Figure 4). We first transplanted Tg(myl7:MKATE-CAAX) WT cells into Tg(myl7:LIFEACT-GFP); klf2+/?or klf2-/- hosts. Using confocal microscopy, we found that at 96 hpf some WT donor-derived cardiomyocytes were extruding from klf2-/- but not klf2+/? hearts (Figure 4A–E; n = 7 hearts). We also performed the converse experiment by transplanting Tg(myl7:LIFEACT-GFP); klf2+/?or klf2-/- cells into WT hosts and observed no extruding klf2-/- cardiomyocytes (Figure 4F–J; n = 9 hearts). These data indicate that Klf2 function is not required in cardiomyocytes to maintain the integrity of the myocardial wall. klf2b overexpression in endothelial cells can rescue the klf2 mutant cardiomyocyte extrusion phenotype
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig4-v2.jpg)
 
-**Figure 4.:** (A) Schematic representation of the experiment shown in (B–E). (B–E) Transplantation of Tg(myl7:MKATE-CAAX); klf2 donor cells into +/+Tg(myl7:LIFEACT-GFP); klf2 (+/?B and D) or klf2 (-/-C and E) hosts shown at 96 hpf; white arrows point to klf2 extruding cardiomyocytes in -/-klf2 heart, orange arrows point to -/-klf2 extruding cardiomyocytes in +/+klf2 hearts; maximum intensity projections of confocal z-stacks of hearts in (-/-B) and (C) are shown in (D) and (E), respectively. (F) Schematic representation of the experiment shown in (G-J). (G–J) Transplantation of Tg(myl7:LIFEACT-GFP); klf2 (+/?G and I) or klf2 (-/-H and J) donor cells into Tg(myl7:MKATE-CAAX); klf2 hosts shown at 96 hpf; maximum intensity projections of confocal z-stacks of hearts in (+/+G) and (H) are shown in (I) and (J), respectively. V: ventricle, At: atrium; scale bars, 50 µm.
+**Figure 4.:** (A) Schematic representation of the experiment shown in (B–E). (B–E) Transplantation of Tg(myl7:MKATE-CAAX); klf2+/+ donor cells into Tg(myl7:LIFEACT-GFP); klf2+/? (B and D) or klf2-/- (C and E) hosts shown at 96 hpf; white arrows point to klf2-/- extruding cardiomyocytes in klf2-/- heart, orange arrows point to klf2+/+ extruding cardiomyocytes in klf2-/- hearts; maximum intensity projections of confocal z-stacks of hearts in (B) and (C) are shown in (D) and (E), respectively. (F) Schematic representation of the experiment shown in (G-J). (G–J) Transplantation of Tg(myl7:LIFEACT-GFP); klf2+/? (G and I) or klf2-/- (H and J) donor cells into Tg(myl7:MKATE-CAAX); klf2+/+ hosts shown at 96 hpf; maximum intensity projections of confocal z-stacks of hearts in (G) and (H) are shown in (I) and (J), respectively. V: ventricle, At: atrium; scale bars, 50 µm.
 
 In zebrafish, as in mouse, klf2 is expressed in the endocardium (Lee et al., 2006; Vermot et al., 2009). Similar to klf2a, klf2b also becomes expressed in the zebrafish heart by 36 hpf (Figure 5—figure supplement 1). To investigate where Klf2 function is required to prevent the cardiomyocyte extrusion phenotype observed in klf2 mutants (Figure 5A–B and and E–F), we generated a Tg(fli1a:klf2b-p2A-tdTomato) line to specifically overexpress klf2b in all endothelial cells including the endocardium (Figure 5C–D and and G–H). We also generated Tg(myl7:klf2b-p2A-tdTomato) and Tg(myl7:klf2a-p2A-tdTomato) lines to overexpress klf2a and klf2b in cardiomyocytes (Figure 5I–P and Figure 1—figure supplement 1C–D). Unlike endothelial klf2b overexpression, myocardial klf2a and klf2b overexpression caused pericardial edema and impaired trabeculation in about forty percent of the F1 and F2 animals when observed at 96 hpf. These cardiac defects became milder beyond the F2 generation. Notably, we observed that endothelial, but not myocardial, klf2b overexpression rescued the pericardial edema as well as the cardiomyocyte extrusion phenotype observed in klf2 mutant hearts (Figure 5A–P), indicating the importance of endothelial/endocardial klf2 expression in maintaining myocardial wall integrity. We also quantified the number of proliferative cardiomyocytes in klf2 WT and mutant animals overexpressing klf2b in their endothelium and found that the reduction of ventricular cardiomyocyte proliferation observed in klf2 mutants was rescued by endothelial klf2b overexpression (Figure 5—figure supplement 2). Interestingly, endothelial klf2b overexpression also rescued the epicardial defects observed in klf2 mutants (Figure 5—figure supplement 3). Overall, these data indicate that endothelial/endocardial klf2 is required for myocardial wall integrity by regulating endocardial-myocardial-epicardial interactions. Although all klf2 mutant larvae die, we were able to rescue almost sixty percent of them to become adults using this endothelial rescue approach (Figure 5—figure supplement 4A–B). Dissecting the adult hearts, we did not observe any significant differences between klf2 WT and rescued mutant hearts, further suggesting the importance of endothelial klf2 expression in maintaining myocardial wall integrity (Figure 5Q–R’ and Figure 5—figure supplement 4C–F).
 
-## Increased Retinoic Acid signaling or inhibition of Hedgehog signaling does not cause a cardiomyocyte extrusion phenotype
+![Figure 5.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig5-v2.jpg)
+
+**Figure 5.:** (A–P) Endothelial- and myocardial-specific overexpression of klf2a or klf2b in klf2 WT and mutant hearts. Endothelial overexpression of klf2b (C–D, G–H). Myocardial overexpression of klf2a (K–L, O–P) or klf2b (I–J, M–N); maximum intensity projections of hearts in (A–D) and (I–L) are shown in (E–H) and (M–P), respectively. (Q–R’) Immunostaining of adult klf2 WT (Q–Q’) and rescued mutant (R–R’) heart sections for Caveolin1 to label epicardial cells and phalloidin for overall myocardial structure; magnified images of dashed boxes in (Q) and (R) are shown in (Q’) and (R’), respectively; arrows point to extruding cardiomyocytes; V: ventricle, At: atrium; scale bars: 50 µm (A–P), 300 µm (Q–R’).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Ventral views of in situ hybridization for klf2b expression at 36 (A), 48 (B) and 72 (C) hpf. V: ventricle, At: atrium; scale bars, 100 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–H) Confocal images (mid-sagittal sections) of 96 hpf klf2 WT (A, E, C and G) and mutant (B, F, D and H) hearts in the absence (A, B, E and F) or presence (C, D, G and H) of endothelial klf2b overexpression to examine cardiomyocyte proliferation. Maximum intensity projections of hearts in (A–D) are shown in (E-H). (I) Number of mVenus-gmnn positive ventricular and atrial cardiomyocytes in 96 hpf klf2 WT and mutant hearts in the absence or presence of fli1a:klf2b-p2a-tdTomato transgene; dots represent individual hearts; values represent means ±SEM; ***p≤0.001, ns (not significant), by Student’s t-test. V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–D) 2D confocal images (mid-sagittal sections) of 96 hpf klf2 WT (A, E, C and G) and mutant (B, F, D and H) hearts in the absence (A, B, E and F) or presence (C, D, G and H) of fli1a:klf2b-p2a-tdTomato transgene to examine cardiomyocyte proliferation. Maximum intensity projections of hearts in (A–D) are shown in (E-H). (I) Number of ventricular tcf21-GFP positive cells in 96 hpf animals plotted as a graph; dots represent individual hearts; values represent means ±SEM; **p≤0.01, ns (not significant), by Student’s t-test. V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A–B) Representative brightfield images of 120 dpf Tg(fli1a:klf2b-p2A-tdTomato); klf2 WT (A) and mutant (rescued by endothelial klf2b overexpression) (B) animals. (C–D) Adult Tg(fli1a:klf2b-p2A-tdTomato); klf2 WT (C) and rescued mutant (D) hearts from fish shown in (A and B), respectively. (E–F) Hematoxylin and eosin staining of adult klf2 WT (E) and rescued mutant (F) heart sections. V: ventricle, At: atrium, Av: atrioventricular canal; BA: bulbus arteriosus; scale bars: 5 mm (A–B), 200 µm (C–F).
+
+### Increased Retinoic Acid signaling or inhibition of Hedgehog signaling does not cause a cardiomyocyte extrusion phenotype
 
 To further understand how endothelial cells regulate myocardial wall integrity, we performed microarray analysis of 96 hpf klf2 WT and mutant hearts. Our transcriptome data show that aldh1a2 and cyp26b1, the highest expressing cyp26 gene in 96 hpf hearts, are respectively up- and down-regulated in klf2 mutant hearts (Figure 6—source data 1), suggesting an increase in retinoic acid (RA) levels. It has recently been reported that excess levels of RA in cyp26a1 and cyp26c1 morphants lead to the failure of second heart field progenitors to join the outflow tract as well as the extrusion of first heart field-derived cardiomyocytes from the ventricle at 48 hpf (Rydeen and Waxman, 2016). In order to test whether increased RA signaling causes cardiomyocyte extrusion at later stages, we treated WT zebrafish larvae with RA from 74 to 96 hpf but did not observe any extruding cardiomyocytes (Figure 6—figure supplement 1). The later onset of RA treatment used in our experiments likely explains the different outcome from that observed by Rydeen and Waxman, 2016. We also found that Hedgehog (Hh) signaling was downregulated in klf2 mutant hearts (Figure 6—figure supplement 2, Supplementary file 2 and Figure 6—source data 2); however, inhibition of this pathway in WT zebrafish from 75 to 96 hpf using Cyclopamine, a Hh signaling pathway inhibitor, did not cause cardiomyocyte extrusion (Figure 6—figure supplement 3). Together, these data indicate that by itself increased RA signaling or inhibition of Hh signaling does not cause the cardiomyocyte extrusion phenotype observed in klf2 mutants.
 
-## Inhibition of Fgfr signaling can lead to cardiomyocyte extrusion in WT animals
+### Inhibition of Fgfr signaling can lead to cardiomyocyte extrusion in WT animals
 
 Fgf signaling has been implicated in the formation of the compact myocardial layer as well as in cardiomyocyte differentiation and proliferation (Reifers et al., 2000; Lavine et al., 2005; Marques et al., 2008; Tirosh-Finkel et al., 2010; Pradhan et al., 2017). Transcriptomic analysis of klf2 WT and mutant hearts shows that Fgf signaling is affected in klf2 mutants (Figure 6—figure supplement 2, Figure 6—source data 3 and Supplementary file 2); follow up qPCR analysis shows that several fgf receptor and ligand genes are expressed at reduced levels in klf2 mutant compared to WT hearts (Figure 6—figure supplement 4). To test the role of Fgf signaling in myocardial wall integrity, we treated Tg(myl7:EGFP-Has.HRAS) larvae from 75 to 96 hpf with SU5402, a FGF receptor inhibitor, and observed cardiomyocyte extrusion (7/9 hearts; Figure 6A–D), as well as mislocalization of Cdh2-EGFP from the lateral to the apical side of cardiomyocytes (10/11 hearts; Figure 6—figure supplement 5). In addition, global overexpression of dominant negative Fgfr1, using the Tg(hsp70:dn-fgfr1-EGFP) line (Lee et al., 2005), could also cause cardiomyocyte extrusion (9/13 hearts; Figure 6E–H); however, the number of extruding cardiomyocytes in these animals was less than that observed in klf2 mutants or SU5402 treated animals (Figure 6—figure supplement 6A). While, this cardiomyocyte extrusion phenotype appeared in only a few SU5402 treated hearts by 82 hpf (7/36 hearts), the number of extruding cardiomyocytes increased over time, as in klf2 mutants (Figure 6—figure supplement 6B–D). These data indicate that inhibition of Fgfr signaling can cause cardiomyocyte extrusion, as in klf2 mutants. We also treated WT and klf2a+/-; klf2b-/- larvae with DMSO or increasing concentrations of SU5402 and found that klf2a+/-; klf2b-/- animals were more sensitive to Fgfr signaling inhibition, that is more prone to exhibit cardiomyocyte extrusion compared to WT (Figure 6I). We further treated WT larvae with SU5402 from 75 to 96 hpf and then stained their hearts with a pERK antibody. Our data show that Fgfr inhibition reduced pERK immunostaining (Figure 6—figure supplement 7), in agreement with previous reports (Shinya et al., 2001; Calmont et al., 2006). We also checked pERK immunostaining after dnfgfr1 overexpression and observed a reduction, although milder than that observed in SU5402-treated hearts (Figure 6—figure supplement 7). We further found that pERK immunostaining was significantly reduced in endocardial cells of klf2 mutants compared to WT (Figure 6J and K), and that it was rescued by endothelial klf2b overexpression (Figure 6L and M). Overall, these data suggest that Fgf signaling is required downstream of Klf2 to maintain myocardial wall integrity. By examining single-cell RNA sequencing data of early zebrafish embryos (https://kleintools.hms.harvard.edu/paper_websites/wagner_zebrafish_timecourse2018/mainpage.html; Wagner et al., 2018), we found that most fgf receptor genes and many fgf ligand genes are expressed in the zebrafish heart (Figure 6—figure supplement 8). Because the level of expression of most of these genes is rather low, and possibly challenging to detect by in situ hybridization, we performed qPCR analysis in cloche/npas4l mutant hearts which lack all endocardial cells (Stainier et al., 1995; Reischauer et al., 2016). As expected, myl7 expression levels were unaffected in npas4l mutant hearts compared to WT while fli1a levels were significantly reduced (Figure 6—figure supplement 9A). Expression levels of all fgf receptor genes were slightly increased in npas4l mutants (Figure 6—figure supplement 9B), suggesting that they are not expressed in the endocardium. Analyzing Fgf ligand genes which are clearly downregulated in klf2 mutants, we observed a reduction in fgf14 expression in npas4l mutant hearts (Figure 6—figure supplement 9C), suggesting its endocardial enrichment. We also observed an upregulation of fgf3 expression in npas4l mutant hearts (Figure 6—figure supplement 9C), suggesting that it is not expressed in the endocardium. Additional studies will be required to identify and analyze the precise role of the fgf receptor and ligand genes that potentially function downstream of Klf2 to maintain myocardial wall integrity. Transcriptomic analysis of klf2 WT and mutant hearts also indicates that genes associated with adherens junctions and focal adhesions are affected in klf2 mutants, further suggesting the importance of Klf2 in myocardial wall integrity (Figure 6—figure supplement 2). Overall, our data suggest that endocardial klf2 regulates myocardial wall integrity at least in part by modulating myocardial Fgfr signaling.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Confocal images of 96 hpf hearts; WT animals treated with DMSO as a control or FGFR inhibitor (SU5402) from 75 to 96 hpf; maximum intensity projections of hearts in (A) and (D) are shown in (C) and (D) respectively; arrows point to extruding cardiomyocytes. (E–H) 75 hpf Tg(myl7: mCherry-CAAX) (E–F) or Tg(hsp70:dn-fgfr1-EGFP);Tg(myl7: mCherry-CAAX) (G–H) animals were heat-stressed at 39°C for 1 hr (F and H) and their hearts imaged at 96 hpf; arrow in (H) points to an extruding cardiomyocyte (n = 9/13 hearts). (I) klf2a+/-; klf2b-/- animals are more likely than WT siblings to exhibit cardiomyocyte extrusion upon Fgfr inhibition; number of treated larvae for each condition is shown above the individual columns. (J–K) Hearts of 96 hpf Tg(myl7: mCherry-CAAX); klf2 +/+ or klf2 -/- animals immunostained for pERK. (L–M) Hearts of 96 hpf Tg(fli1a:klf2b-p2A-tdTomato);Tg(myl7:EGFP-Hsa.HRAS); klf2 +/+ or klf2 -/- animals immunostained for pERK. Arrows and arrowheads point to extruding cardiomyocytes and pERK positive endocardial cells, respectively; V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–F) 2D confocal images (mid-sagittal sections) of 96 hpf WT hearts, non-treated (n = 11 hearts) (A and D) or treated with retinoic acid (0.5 µM) (n = 13 hearts) (B and E) or (0.75 µM) (n = 10 hearts) (C and F) from 74 to 96 hpf; maximum intensity projections of hearts in (A) , (B) and (C) are shown in (D) , (E) and (F), respectively. V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–F) The Broad gene set enrichment algorithm (GSEA) was used to identify gene sets down-regulated in klf2 mutant hearts. The gene sets were selected at an FDR < 0.05 from the Hallmark, KEGG and Reactome databases. Enrichment plots show an ordered list of genes (black vertical bars) sorted from the most up-regulated (left) to the most down-regulated (right). Enrichment scores (green) show overrepresentation of down-regulated genes in these gene sets.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A–F) 2D confocal images (mid-sagittal sections) of 96 hpf WT hearts, treated with ethanol (n = 15 hearts) (A and D), or the Smoothened inhibitor Cyclopamine (5 µM) (n = 17 hearts) (B and E) or (10 µM) (n = 21 hearts) (C and F) from 75 to 96 hpf; maximum intensity projections of hearts in (A) , ( B) and (C) are shown in (D) , (E) and F), respectively. V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) qPCR analysis of fgfr1a, fgf1b, fgf3 and fgf14 expression in WT and klf2 mutant hearts at 96 hpf (95 embryos were pooled for each sample). Ct and dCt values are listed in Supplementary file 3.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A–F) 2D confocal images (mid-sagittal sections) of 96 hpf hearts treated with DMSO (A–C) or SU5402 (D–F) from 75 to 96 hpf; arrows point to extruding cardiomyocytes. V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** (A) Number of extruding cardiomyocytes in 96 hpf hearts. (B) Number of extruding cardiomyocytes upon inhibition of Fgfr signaling using the SU5402 inhibitor; dots in (A) and (B) represent individual hearts. Area (C) and circularity (D) of 96 hpf cardiomyocytes in ventricular outer curvature; dots in (C) and (D) represent individual cardiomyocytes.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A–C) pERK immunostaining of control, SU5402 treated and heat-shockedTg(hsp70:dn-fgfr1-EGFP) hearts. Arrows and arrowheads point to extruding cardiomyocytes and pERK-positive endocardial cells, respectively; V: ventricle, At: atrium; scale bars, 50 µm.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp8-v2.jpg)
+
+**Figure 6—figure supplement 8.:** (A–F) Single cell graphs of kdrl (A), myl7 (B), fgfr1a (C), fgfr2 (D), fgfr3 (E), fgfr4 (F), and fgf14 (G) genes; blue and red boxes outline endothelium and heart, respectively.
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/38889/elife-38889-fig6-figsupp9-v2.jpg)
+
+**Figure 6—figure supplement 9.:** (A–C) qPCR analysis of fli1a and myl7 (A), fgfr1a, fgfr1b, fgfr2, fgfr3 and fgfr4 (B), fgf 3, fgf1b and fgf14 (C) mRNA levels in 75 hpf npas4l WT and mutant hearts; n = 3 biological replicates; values represent means ±s.e.m.; *p≤0.05, ***, p≤0.001, ns (not significant), by Student’s t-test in (A) and (B); 75 embryos were pooled for each sample in (C). Ct and dCt values are listed in Supplementary file 3. V: ventricle, At: atrium; scale bars: 0.5 mm (A–F), 50 µm (G–O).
 
 ## Discussion
 
@@ -99,11 +207,189 @@ In summary, this study reveals a novel function for endothelial Klf2 in regulati
 
 ## Materials and methods
 
-## Zebrafish lines and constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>klf2abns11</td>
+      <td>(Kwon et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>klf2bbns12</td>
+      <td>(Kwon et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7: LIFEACT- GFP)s974</td>
+      <td>(Reischauer et al., 2014)</td>
+      <td>ZFIN ID: ZDB-ALT-150203–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7: mCherry- CAAX)bns7</td>
+      <td>(Uribe et al., 2018)</td>
+      <td>ZFIN ID: ZDB-ALT-181102–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7- MKATE- CAAX)sd11</td>
+      <td>(Lin et al., 2012)</td>
+      <td>ZFIN ID: ZDB-ALT-120320–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7:EGFP- Hsa.HRAS)s883</td>
+      <td>(D'Amico et al., 2007)</td>
+      <td>ZFIN ID: ZDB-ALT-070309–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>TgBAC (etv2-EGFP) ci1</td>
+      <td>(Proulx et al., 2010)</td>
+      <td>ZFIN ID: ZDB-ALT-110131–53</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(−0.8myl7: nlsDsRed Express)hsc4</td>
+      <td>(Takeuchi et al., 2011)</td>
+      <td>ZFIN ID: ZDB-ALT-110222–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7: mVenus- gmnn)ncv43</td>
+      <td>(Jiménez-Amilburu et al., 2016)</td>
+      <td>ZFIN ID: ZDB-ALT-170131–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>TgBAC(cdh2:cdh2- EGFP,crybb1: ECFP)zf517</td>
+      <td>(Revenu et al., 2014)</td>
+      <td>ZFIN ID: ZDB-ALT-141218–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(hsp70:dn- fgfr1-EGFP)pd1</td>
+      <td>(Lee et al., 2005)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(fli1a:klf2b- p2a-td Tomato)bns235</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Materials and  methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7:klf2a- p2a-td Tomato)bns200</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Materials and  methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7:klf2b- p2a-td Tomato)bns234</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Materials and  methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(−0.2myl7: tdTomato- podxl)bns197</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Materials and  methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>TgBAC(tcf21: NLS-EGFP)pd41</td>
+      <td>(Wang et al., 2015)</td>
+      <td>ZFIN ID: ZDB-ALT-110914–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>TgBAC(tcf21: mCherry- NTR) pd108</td>
+      <td>(Wang et al., 2015)</td>
+      <td>ZFIN ID: ZDB-ALT-150904–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tnnt2a morpholino</td>
+      <td>(Sehnert et al., 2002)</td>
+      <td>ZFIN ID: ZDB- MRPHLNO-060317–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>amhc morpholino</td>
+      <td>(Berdougo et al., 2003)</td>
+      <td>ZFIN ID: ZDB- MRPHLNO-061110–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cdh2 morpholino</td>
+      <td>(Lele et al., 2002)</td>
+      <td>ZFIN ID: ZDB- MRPHLNO-060815–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator kit</td>
+      <td>Zymo Research</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ZEN Blue 2012</td>
+      <td>Zeiss, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ZEN Black 2012</td>
+      <td>Zeiss, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines and constructs
 
 Zebrafish were raised and maintained under standard conditions (Westerfield, 2000). All animal experiments were done according to German Animal Protection Laws approved by the local governmental animal protection committee.
 
-## Zebrafish mutant and transgenic lines
+### Zebrafish mutant and transgenic lines
 
 We used the following mutant and transgenic lines: klf2abns11 and klf2bbns12 (Kwon et al., 2016), Tg(myl7:LIFEACT-GFP)s974 (Reischauer et al., 2014), Tg(myl7:mCherry-CAAX)bns7 (Uribe et al., 2018),Tg(myl7-MKATE-CAAX)sd11 (Lin et al., 2012), Tg(myl7:EGFP-Hsa.HRAS)s883 (D'Amico et al., 2007), TgBAC(etv2-EGFP)ci1 (Proulx et al., 2010), Tg(−0.8myl7:nlsDsRedExpress)hsc4 (Takeuchi et al., 2011), Tg(myl7:mVenus-gmnn)ncv43 (Jiménez-Amilburu et al., 2016), TgBAC(cdh2:cdh2-EGFP,crybb1:ECFP)zf517 (Revenu et al., 2014), Tg(hsp70:dn-fgfr1-EGFP)pd1 (Lee et al., 2005), Tg(fli1a:klf2b-p2a-tdTomato)bns235, Tg(myl7:klf2a-p2a-tdTomato)bns200, Tg(myl7:klf2b-p2a-tdTomato)bns234, Tg(−0.2myl7:tdTomato-podxl)bns197, TgBAC(tcf21:NLS-EGFP)pd41 and TgBAC(tcf21:mCherry-NTR) pd108 (Wang et al., 2015).
 
@@ -123,7 +409,7 @@ TALEN arm2: NG NN HD NG NN NI NN NI NG HD HD NG HD NN NG HD NI NG HD HD NG
 
 100 pg of total TALEN RNA and 50 pg of GFP RNA (used to monitor injection efficiency) were co-injected into the cell at the one-cell stage. The klf2abns11 and klf2bbns12 alleles were genotyped using high-resolution melt analysis (HRMA) with an Eco Real-Time PCR System (Illumina). The HRMA primers are listed in Supplementary file 1.
 
-## Generation of transgenic lines
+### Generation of transgenic lines
 
 To generate a myocardial specific klf2a or klf2b overexpressing construct, the coding sequence of klf2a or klf2b fused with a self-cleaving peptide 2A and tdTomato, was cloned in a mini tol2 plasmid harbouring a myl7 promoter using the Cold Fusion Cloning Kit (System Bioscience; MC101A-1-SB). We used the same cloning approach to generate an endothelial-specific klf2b overexpression line by putting klf2b-p2a-tdTomato under control of a fli1a promoter.
 
@@ -131,62 +417,62 @@ To generate the Tg(−0.2myl7:tdTomato-podxl) line, we constructed −0.2myl7:td
 
 A total of 15 pg of each aforementioned DNA construct was co-injected with 10 ng of Tol2 RNA into the cell at the one-cell stage. To establish the Tg(fli1a:klf2b-p2a-tdTomato)bns235, Tg(myl7:klf2a-p2a-tdTomato)bns200, Tg(myl7:klf2b-p2a-tdTomato)bns234, and Tg(−0.2myl7:tdTomato-podxl)bns197 lines, injected larvae (F0) were screened for tdTomato fluorescence and raised to adulthood.
 
-## Quantitative PCR analysis
+### Quantitative PCR analysis
 
 qPCR for cardiac expression of fgf ligand and receptor genes was performed in a CFX Connect Real-Time System (Biorad). RNA was isolated using TRIzol (Life Technologies) followed by phenol-chloroform extraction. In brief, 25 75 hpf hearts were lysed and homogenized in TRIzol using the NextAdvance Bullet Blender Homogenizer (Scientific instrument services). Chloroform was then added and phase separation was obtained following vortexing and centrifugation. The top (aqueous) phase (containing RNA) was isolated and purified using a Clean and Concentrator kit (Zymo). Purified RNA was then used for reverse transcription using the Maxima First Strand cDNA synthesis kit (Thermo). All reactions were performed in at least technical duplicates and the results represent biological triplicates. Gene expression values were normalized using the zebrafish rpl13 gene. The qPCR primers are listed in Supplementary file 1. Ct and dCt values are listed in Supplementary file 3. qPCR analysis for global expression of klf2a, klf2b, and klf4a was performed on cDNA obtained from 24 hpf klf2a WT and mutants and 72 hpf klf2b WT and mutants. RNA was extracted using a RNeasy Micro kit (QIAGEN). Gene expression values were normalized using the zebrafish 18S ribosomal RNA and gapdh genes. All reactions were performed in three technical replicates, and the results represent three independent biological samples (25 embryos were pooled for each sample). The qPCR primers are listed in Supplementary file 1. Ct and dCt values are listed in Supplementary file 3.
 
-## Morpholinos
+### Morpholinos
 
 1 nl in total volume of the following morpholinos (MOs) were injected at the one-cell stage: tnnt2a MO - 0.5 ng (5’-CATGTTTGCTCTGATCTGACACGCA-3’) (Sehnert et al., 2002) amhc MO - 1 ng (5′-ACTCTGCCATTAAAGCATCACCCAT-3′) (Berdougo et al., 2003) cdh2 MO - 1.5 ng (5’-TCTGTATAAAGAAACCGATAGAGTT-3’) (Lele et al., 2002).
 
-## Chemical treatments
+### Chemical treatments
 
 To prevent contractility for 2 hr, 100 hpf larvae were treated with 20 mM BDM (Higuchi and Takemori, 1989). To block Fgf and Hh signalling, zebrafish larvae were respectively exposed to SU5402 (15 µM) and Cyclopamine (5 and 10 µM) (Sigma-Aldrich) from 75 to 96 hpf. To increase retinoic acid signaling, dechorionated embryos were treated with 0.5 and 0.75 µM all-trans-retinoic acid (Sigma-Aldrich) from 74 to 96 hpf.
 
-## Heat-shock treatments
+### Heat-shock treatments
 
 For heat-shock treatments, 75 hpf larvae were heat-shocked at 39°C for 1 hr. After treatment, the larvae were incubated at 28°C and imaged at 96 hpf.
 
-## Acridine orange staining
+### Acridine orange staining
 
 96 hpf larvae were stained with acridine orange (Sigma) by placing them in a solution of the dye in E3 medium (2 mg/mL) for 30 min. The larvae were then washed carefully with E3 medium three times and imaged using confocal microscopy.
 
-## Heart isolation, RNA extraction and microarray profiling
+### Heart isolation, RNA extraction and microarray profiling
 
 500 hearts from 96 hpf klf2 WT and mutant larvae were extracted, pooled in 1.5 mL and frozen in −80°C as described (Burns and MacRae, 2006). RNA was isolated using Qiazol solution (Qiagen), followed by phenol-chloroform extraction. Briefly, pooled hearts from 96 hpf larvae were first mechanically dissociated and homogenized in Qiazol using the NextAdvance Bullet Blender Homogenizer (Scientific instrument services, inc.). Chloroform was then added and phase separation was obtained following vortexing and centrifugation. The top (aqueous) phase (containing RNA) was isolated and purified using a miRNeasy micro kit (Qiagen).
 
 Microarray analysis was performed by Oak Labs (Germany). The Low Input QuickAmp Labeling Kit (Agilent Technologies) was used to generate fluorescent cRNA (complementary RNA) following manufacturer’s protocol. For 1 st strand synthesis, oligo-dT primer or a random primer/oligo-dT primer mixture (WT primer) was used. After 2nd strand synthesis, an in vitro transcription for synthesis of cRNA labelled with cyanine 3-CTP was performed. The Agilent Gene Expression Hybridisation Kit (Agilent Technologies) was used following manufacturer’s protocol. cRNA was hybridised on a 8 × 60K microarray at 65°C for 17 hr using Agilent‘s recommended hybridisation chamber and oven. Finally, the microarray was washed once with the Agilent Gene Expression Wash Buffer one for one minute at ambient temperature followed by a second wash with preheated (37°C) Gene Expression Wash Buffer two for 1 min. Fluorescence signals on microarrays were detected by the SureScan Microarray Scanner G2600D (Agilent Technologies) at a resolution of 3 micron for SurePrint G3 Gene Expression Microarrays, generating a 20 bit TIFF file. The scanned images were analyzed with Feature Extraction Software 11.5.1.1 (Agilent) using default parameters to obtain background subtracted and spatially detrended processed signal intensities. The processed signal values were quantile normalized. In order to allow analyses at the gene level, the normalized probe values were collapsed to the isoform showing the highest mean signal considering all samples per gene.
 
-## Microarray gene set enrichment analysis (GSEA)
+### Microarray gene set enrichment analysis (GSEA)
 
 The Broad GSEA tool version 3 (Subramanian et al., 2005) was used to identify up- and down-regulated gene sets. The analysis was based on a pre-ranked list of genes scored by the log2 fold change multiplied with the mean normalized signal value. 1000 permutations were performed with a maximum gene set size of 500 and classic weighting versus hallmark and curated gene sets. Downregulated pathways in klf2 mutants are listed in Supplementary file 2.
 
-## Whole mount in situ hybridization
+### Whole mount in situ hybridization
 
 Whole mount in situ hybridization was performed as described before (Thisse and Thisse, 2008). 36, 48 and 72 hpf animals were fixed in 4% paraformaldehyde overnight at 4°C and subsequently dehydrated in 100% methanol at −20°C. Samples were rehydrated with 1X phosphate buffered saline (PBS) and permeabilized with proteinase K (10 µg/mL) at RT for 30 min. After washing with 1X PBT (1X PBS, 0.1% Tween 20 (vol/vol)), larvae were hybridized with 150 ng of klf2b antisense DIG-labeled RNA probe overnight at 70°C. The hybridized probes were then detected with alkaline phosphatase conjugated anti-Digoxigenin antibody (Roche, dilution 1:1,000) for 3 hr at RT, and the signal was visualized with BM purple (Roche). The probe for klf2b was amplified from 48 hpf heart cDNA using klf2b forward 5’-TGGCTTTACCTTGCCTTTTG −3’ and reverse 5’- CCGTGTGTTTACGGAAGTGA −3’ primers. The PCR fragment was then subcloned into pGEM-T.
 
-## Larval heart immunostaining
+### Larval heart immunostaining
 
 Right after stopping heart contraction with 0.2 percent tricaine, larvae were fixed in fish fix (4% paraformaldehyde (PFA)) overnight at 4°C. Fixed larvae were then washed three times with PBS/0.1% Tween. Washed larvae were then deyolked with forceps and permeablized with Proteinase K solution (3 µg/mL) in 1 mL PBS/Tween for 3 hr at RT. Further, the larvae were washed with PBDT (PBS/1% BSA/1% DMSO/0.5% Triton-X 100) and incubated in 2 mL of blocking solution (1.62 mL PBS/0.1% Tween +200 uL sheep serum +80 uL 20% Triton-X +100 µL 20% BSA) for 3 hr at RT. Next, the larvae were incubated in primary antibody overnight at 4°C. After washing with PBDT (four times), the larvae were incubated in secondary antibody for 3 hr at RT. For DAPI staining, larvae were incubated with DAPI (0.01 mg/mL in PBS, Sigma) and washed carefully with PBS/Tween (five times). After washing, larvae were mounted in 2% low melting agarose for imaging. Primary antibodies used for immunofluorescence were anti-GFP at 1:500 (Chicken; Aves Labs), anti-mCherry at 1:100 (mouse; Clontech), and anti-pERK (p44/42 MAPK (Erk1/2)) at 1:100 (rabbit, Cell Signaling). Secondary antibodies were used at 1:500 (Life Technologies).
 
-## Adult heart histology and immunostaining
+### Adult heart histology and immunostaining
 
 This protocol was adapted from Mateus et al. (2015) with the following modification: after 1 hr fixation with 4% PFA, adult hearts were saturated overnight in 30% sucrose (in PBS). Embedding was done in 7.5% gelatin in 15% sucrose (in PBS), followed by freezing in isopentane cooled in liquid nitrogen. Using a Leica Microtome, the hearts were sectioned at 10 µm and maintained at −20°C until further use. Prior to immunostaining, sections were thawed for 10 min at room temperature and washed twice in PBS at 37°C for 10 min to remove gelatin. Subsequently, sections were washed once in 0.1M glycine for 10 min and permeabilized in acetone for 7 min at −20°C. Sections were washed in 1% Bovine Serum Albumin (BSA, Sigma), 1% DMSO (Sigma) and 0.1% Triton-X100 in 0.5xPBS (PBDX), followed by 2 hr of blocking in PBDX with 5% goat serum. The samples were incubated overnight with phalloidin (1:200, conjugated with Alexa Fluor 488, Invitrogen) and anti-Caveolin one antibody (BD Biosciences, 1:200) at 4°C and counterstained with DAPI (0.001 mg/mL in PBS, Sigma). Secondary antibodies were used at 1:500 (Life Technologies). Slides were mounted with DAKO Fluorescence Mounting Media and imaged using a Zeiss LSM800 confocal microscope.
 
 For Hematoxylin and Eosin staining (H and E), cryosections were stained for 10 min with acidic hemalum (Wladeck), washed in running tap water until sections turned blue and rinsed in deionized water. Sections were subsequently stained for 6 min with an eosin solution (Waldeck), dehydrated in ethanol and cleared in roti-histol prior to mounting in Entellan (Merck). Sections were imaged using a Nikon SMZ25 and the NIS Elements software, and processed using FIJI.
 
-## Imaging, quantification and data processing
+### Imaging, quantification and data processing
 
 Zebrafish embryos and larvae were mounted and anesthetized in 2% low-melt agarose (Sigma) containing 0.2% tricaine on glass-bottom dishes. While mounting, samples were manually oriented towards the microscope lens to enhance optical access to the heart. Images were captured with Zeiss LSM780, LSM800, LSM 880 and spinning disk (CSU-X1 Yokogawa) confocal microscopes at 40X magnification. The confocal data were then processed with the ZEN 2012 software (black and blue edition). Adult fish and dissected hearts were imaged using a Nikon SMZ25 and the NIS Elements software and processed using FIJI software.
 
-## Cardiomyocyte size and circularity
+### Cardiomyocyte size and circularity
 
 Size and circularity of compact layer cardiomyocytes in the outer curvature of the ventricle were measured with ImageJ.
 
-## Cell transplantation
+### Cell transplantation
 
 WT embryos were obtained from Tg(myl7:MKATE-CAAX) incrosses. Mutant and heterozygous embryos were obtained by incrossing Tg(myl7:LIFEACT-GFP); klf2+/- animals. All embryos were dechorionated in pronase (1 mg/mL) for 5 min at 28°C and then incubated in agarose-coated dishes with 1/3 Ringer solution supplemented with penicillin (50 U/mL)/streptomycin (50 μg/mL). Donor cells were taken from embryos at mid-blastula stages and transplanted into age-matched host embryos. Using confocal microscopy, the chimeric hearts were then imaged at 96 hpf. Donors or hosts obtained from incrossing Tg(myl7:LIFEACT-GFP); klf2+/- animals were used for genotyping.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed with the Prism six software. Values are presented as mean ±s.e. P values (*p≤0.05, **p≤0.01, ***p≤0.001) were calculated by two-tailed Student’s t test.

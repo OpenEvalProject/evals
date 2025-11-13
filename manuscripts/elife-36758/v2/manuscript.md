@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.36758.001 The store-operated calcium (Ca 2+ ) channel Orai governs Ca 2+ influx through the plasma membrane of many non-excitable cells in metazoans. The channel opens in response to the depletion of Ca 2+ stored in the endoplasmic reticulum (ER). Loss- and gain-of-function mutants of Orai cause disease. Our previous work revealed the structure of Orai with a closed pore. Here, using a gain-of-function mutation that constitutively activates the channel, we present an X-ray structure of Drosophila melanogaster Orai in an open conformation. Well-defined electron density maps reveal that the pore is dramatically dilated on its cytosolic side in comparison to the slender closed pore. Cations and anions bind in different regions of the open pore, informing mechanisms for ion permeation and Ca 2+ selectivity. Opening of the pore requires the release of cytosolic latches. Together with additional X-ray structures of an unlatched-but-closed conformation, we propose a sequence for store-operated activation.
+The store-operated calcium (Ca2+) channel Orai governs Ca2+ influx through the plasma membrane of many non-excitable cells in metazoans. The channel opens in response to the depletion of Ca2+ stored in the endoplasmic reticulum (ER). Loss- and gain-of-function mutants of Orai cause disease. Our previous work revealed the structure of Orai with a closed pore. Here, using a gain-of-function mutation that constitutively activates the channel, we present an X-ray structure of Drosophila melanogaster Orai in an open conformation. Well-defined electron density maps reveal that the pore is dramatically dilated on its cytosolic side in comparison to the slender closed pore. Cations and anions bind in different regions of the open pore, informing mechanisms for ion permeation and Ca2+ selectivity. Opening of the pore requires the release of cytosolic latches. Together with additional X-ray structures of an unlatched-but-closed conformation, we propose a sequence for store-operated activation.
 
 ## Introduction
 
@@ -38,53 +38,600 @@ A structure of Orai with an open pore would markedly advance our understandings 
 
 ## Results
 
-## Constructs of Orai used for structural studies function as CRAC channels
+### Constructs of Orai used for structural studies function as CRAC channels
 
 Orai from Drosophila melanogaster (hereafter referred to as Orai) was selected for functional and structural studies on the basis of its good biochemical stability in detergent-containing solutions (Hou et al., 2012). The previously determined X-ray structure of Orai in the quiescent conformation was obtained using construct that contained the regions necessary for STIM-activation but its ability to be activated by STIM had not been evaluated (Hou et al., 2012; Li et al., 2007). In that construct (herein denoted ‘Oraicryst-RR’), a poorly conserved N-terminal region and a few C-terminal amino acids were removed, and two proline residues were replaced by arginine in the hypervariable M3-M4 loop (P276R and P277R mutations) in order to obtain well-diffracting crystals. The structures presented here are based on a nearly identical construct (herein denoted ‘Oraicryst’) that only differs from Oraicryst-RR in that the two M3-M4 residues are present as their wild-type proline counterparts. To assess the potential impact of the P276R/P277R mutations on the function of the channel, we co-expressed Orai and STIM in HEK239 cells and studied Ca2+ influx (Figure 2). We find that both the previously crystallized construct and one with a wild-type M3-M4 loop operate as CRAC channels that can be activated by STIM (Figure 2). Thus, the constructs used for crystallization possess the fundamental properties of previously studied Orai channels.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig2-v2.jpg)
 
-**Figure 2.:** 2+ influx measurements show that Drosophila Orai constructs function as CRAC channels when co-expressed with STIM.HEK293 cells were transfected with Orai and/or STIM as indicated (also see Materials and methods). Cytosolic [Ca2+] levels were detected using the genetically-encoded fluorescent Ca2+ indicator GCaMP6s (Chen et al., 2013); data are plotted as the change in fluorescence intensity relative to the initial value (ΔF/F0) versus time. Thapsigargin (TG), which is used to deplete ER calcium stores, and 2 mM CaCl2 were added at the indicated times (arrows). Ca2+ influx above the background level (vector alone) was observed for the co-expression of STIM with Oraicryst-RR or wild-type Orai, but not for the constitutively closed K163W mutant or for Orai or STIM alone. Signal from endogenous CRAC channels is apparent from the vector control (empty expression vector). Standard error, derived from three independent measurements, is shown.
+**Figure 2.:** HEK293 cells were transfected with Orai and/or STIM as indicated (also see Materials and methods). Cytosolic [Ca2+] levels were detected using the genetically-encoded fluorescent Ca2+ indicator GCaMP6s (Chen et al., 2013); data are plotted as the change in fluorescence intensity relative to the initial value (ΔF/F0) versus time. Thapsigargin (TG), which is used to deplete ER calcium stores, and 2 mM CaCl2 were added at the indicated times (arrows). Ca2+ influx above the background level (vector alone) was observed for the co-expression of STIM with Oraicryst-RR or wild-type Orai, but not for the constitutively closed K163W mutant or for Orai or STIM alone. Signal from endogenous CRAC channels is apparent from the vector control (empty expression vector). Standard error, derived from three independent measurements, is shown.
 
-## Activity of H206A Orai
+### Activity of H206A Orai
 
 We introduced the H206A mutation, which corresponds to gain-of-function H134A mutation of human Orai1 (Frischauf et al., 2017; Yeung et al., 2018), into Orai and studied the purified channel (H206A Oraicryst) in proteoliposomes to assess activity (Figure 3). Using divalent-free conditions, under which ionic currents through CRAC channels are more easily observed due to greater conductance of monovalent cations (e.g. Na+ or K+) than Ca2+ (Lepple-Wienhues and Cahalan, 1996; Prakriya and Lewis, 2006), we observed robust K+ flux through the channel. Ion flux was not observed for empty vesicles or through a channel without the H206A mutation (WT Oraicryst), as is expected without activation by STIM (Figure 3B). Similar to wild-type CRAC channels, K+ flux was blocked by the addition of Gd3+ (Figure 3C) (Yeromin et al., 2006). K+ flux through H206A Oraicryst was also inhibited by the addition of Mg2+ or Ca2+ (Figure 3C), which is in accord with the properties exhibited by STIM-activated channels and indicative of the channel’s selectivity for Ca2+ (Lepple-Wienhues and Cahalan, 1996; Prakriya and Lewis, 2006). Thus, as has been shown for the corresponding H134A mutation of human Orai1 (Frischauf et al., 2017; Yeung et al., 2018), H206A Oraicryst forms an open channel that recapitulates properties of STIM-activated Orai.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig3-v2.jpg)
 
-**Figure 3.:** cryst in liposomes.(a) Schematic of the fluorescence-based flux assay. Vesicles containing WT or H206A Oraicryst or those prepared without protein (empty vesicles) were loaded with 150 mM KCl and were diluted 50-fold into flux buffer containing a fluorescent pH indicator (ACMA) and 150 mM N-methyl-D-glucamine (NMDG) to establish a K+ gradient (Materials and methods). After stabilization of the fluorescence signal (150 s), a proton ionophore (CCCP) was added. An electric potential arising from K+ efflux was used to drive the uptake of protons, which quenches the fluorescence of ACMA. A red ‘X’ indicates that ACMA is not membrane-permeable in the protonated form. (b) K+ flux measurements for WT and H206A Oraicryst. The time-dependent decrease in fluorescence observed for H206A Oraicryst after the addition of CCCP is indicative of K+ flux. Valinomycin (val) was added after 990 s to render all vesicles permeable to K+ and establish a baseline fluorescence. Traces were normalized by dividing by the initial fluorescence value, which was within ±10% for each experiment. (c) K+ flux through H206A Oraicryst is inhibited by Ca2+, Mg2+ and Gd3+.
+**Figure 3.:** (a) Schematic of the fluorescence-based flux assay. Vesicles containing WT or H206A Oraicryst or those prepared without protein (empty vesicles) were loaded with 150 mM KCl and were diluted 50-fold into flux buffer containing a fluorescent pH indicator (ACMA) and 150 mM N-methyl-D-glucamine (NMDG) to establish a K+ gradient (Materials and methods). After stabilization of the fluorescence signal (150 s), a proton ionophore (CCCP) was added. An electric potential arising from K+ efflux was used to drive the uptake of protons, which quenches the fluorescence of ACMA. A red ‘X’ indicates that ACMA is not membrane-permeable in the protonated form. (b) K+ flux measurements for WT and H206A Oraicryst. The time-dependent decrease in fluorescence observed for H206A Oraicryst after the addition of CCCP is indicative of K+ flux. Valinomycin (val) was added after 990 s to render all vesicles permeable to K+ and establish a baseline fluorescence. Traces were normalized by dividing by the initial fluorescence value, which was within ±10% for each experiment. (c) K+ flux through H206A Oraicryst is inhibited by Ca2+, Mg2+ and Gd3+.
 
-## X-ray structure of H206A Oraicryst reveals an open conformation
+### X-ray structure of H206A Oraicryst reveals an open conformation
 
 Obtaining X-ray structural information for Orai has been challenging and visualizing an open conformation of the pore especially so. Extensive optimization of crystallization conditions improved the quality of H206A Oraicryst crystals from an initial diffraction limit of 20 Å resolution to 6.7 Å resolution. Despite the modest resolution of the optimized crystals, we were able to discern the conformation of the channel by calculating electron density maps using non-crystallographic symmetry averaging, which can be applied when there are multiple copies of the polypeptide in the crystallographic asymmetric unit (Bricogne, 1974). In this case, the asymmetric unit contains 24 Orai subunits, which are arranged as four complete channels. The 24-fold non-crystallographic symmetry allowed us to accurately determine the crystallographic phases and obtain electron density maps of excellent quality, which delineate all α-helices of the channel and resemble maps calculated using considerably higher resolution diffraction data (Figure 4A,B, Figure 4—video 1, Materials and methods). All four channels in the asymmetric unit adopt the same conformation. Since side chains are not visible in the maps, we collected a highly redundant dataset using an X-ray wavelength (λ = 1.7085 Å) that was chosen to optimize the anomalous diffraction signal from endogenous sulfur atoms in order to locate methionine and cysteine residues within the protein (Table 1). Anomalous-difference electron-density peaks corresponding to these amino acids indicate both the validity of the atomic model and the accuracy of the crystallographic phases that were used to generate the electron density maps of the channel (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig4-v2.jpg)
+
+**Figure 4.:** (a) Electron density map of H206A Oraicryst. The map (blue mesh, contoured at 1.4 σ, and covering one channel) was calculated from 20 to 6.7 Å using native-sharpened amplitudes and phases that were improved by 24-fold non-crystallographic symmetry (NCS) averaging, solvent flattening and histogram matching (Materials and methods). The atomic model is shown in Cα representation. Figure 4—video 1 shows a video of this Figure. (b) Side view showing two opposing subunits of H206A Oraicryst and the same electron density map. Asterisks mark the location of the H206A substitution. Amino acid side chains on the pore are shown only for reference (sticks). Approximate boundaries of the membrane are shown as horizontal bars. Helices are depicted as ribbons and colored as indicated. (c) Extracellular view showing the hexameric architecture. Helices are depicted as ribbons, with Glu178 side chains (sticks) and Ca2+ ion (green sphere) shown for reference. (d) Overall structure, shown in the same orientation as (a). The M1 helices are drawn as blue ribbons and the other helices are shown as cylinders.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** An anomalous-difference electron-density map was calculated from 25 to 10 Å resolution from highly redundant diffraction data collected with λ = 1.7085 Å X-rays (NaI experiment, Table 1) using anomalous differences as amplitudes and phases that were determined by MR-SAD, 24-fold NCS averaging, solvent flattening and histogram matching (Materials and methods). This map was then averaged in real-space according to the 24-fold NCS symmetry to yield the map shown. The map is contoured at 5.5 σ (gray mesh) and 8.5 σ (pink mesh) and shown in the vicinity of a subunit of Orai (red Cα trace). Methionine and cysteine residues are shown as sticks (colored yellow for carbon and green for sulfur atoms). Methionine residues on M4b and M4-ext are labeled. Portions of neighboring Orai subunits (gray Cα traces) are shown for reference with their helices labeled in parentheses. While their side chain conformations are hypothetical on account of the limited resolution of the diffraction data, anomalous-difference electron-density peaks for methionine and/or cysteine residues on each of the M1-M4 helices and on the M4-ext helix confirm the amino acid register of the atomic model.
+
+**Table 1.**
+ H206A Oraicryst data collection, phasing and refinement statistics.Data collection statistics are from HKL3000 (Otwinowski and Minor, 1997) or XDS (I- experiment) (Kabsch, 2010). Rsym = Σ | Ii- < Ii > | / Σ Ii, where < Ii > is the average intensity of symmetry-equivalent reflections. CC1/2, CCwork and CCfree are defined in (Karplus and Diederichs, 2012). Phasing power = RMS (|F|/ε), where |F| is the heavy-atom structure factor amplitude and ε is the residual lack of closure error. Rcullis is the mean residual lack of closure error divided by the dispersive or anomalous difference. Rwork = Σ | Fobs – Fcalc | / Σ | Fobs |, where Fobs and Fcalc are the observed and calculated structure factors, respectively. Rfree is calculated using a subset (~10%) of reflection data chosen randomly and omitted throughout refinement. Figure of merit is indicated after density modification and phase extension starting from 9.0 Å in DM. R.m.s.d: root mean square deviations from ideal geometry. Numbers in parentheses indicate the highest resolution shells and their statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">H206A Oraicryst</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Native</th>
+      <th>Ba2+</th>
+      <th>Gd3+</th>
+      <th>I-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>I41</td>
+      <td>I41</td>
+      <td>I41</td>
+      <td>I41</td>
+    </tr>
+    <tr>
+      <td>Datasets source</td>
+      <td>APS 24ID-C</td>
+      <td>APS 24ID-C</td>
+      <td>APS 23ID-D</td>
+      <td>APS 23ID-D</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.1000</td>
+      <td>1.7000</td>
+      <td>1.7000</td>
+      <td>1.7085</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>262.3, 262.3, 220.4</td>
+      <td>265.0, 265.0, 219.9</td>
+      <td>255.4, 255.4, 216.0</td>
+      <td>266.4, 266.4, 221.5</td>
+    </tr>
+    <tr>
+      <td>α= β= γ (°)</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–6.70 (6.82–6.70)</td>
+      <td>50–7.40 (7.53–7.40)</td>
+      <td>50–7.90 (8.04–7.90)</td>
+      <td>50–7.6 (7.68–7.60)</td>
+    </tr>
+    <tr>
+      <td>No. of crystals</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td>8.3 (&gt;100)</td>
+      <td>22.5 (&gt;100)</td>
+      <td>12.1 (&gt;100)</td>
+      <td>14.0 (&gt;100)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)</td>
+      <td>1.1 (57.0)</td>
+      <td>3.4 (46.7)</td>
+      <td>2.4 (42.8)</td>
+      <td>1.1 (62.0)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (in outer shell)</td>
+      <td>0.214</td>
+      <td>0.173</td>
+      <td>0.158</td>
+      <td>0.493</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>92.4 (1.1)</td>
+      <td>47.0 (1.4)</td>
+      <td>37.5 (2.0)</td>
+      <td>26.8 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100.0 (100.0)</td>
+      <td>100.0 (100.0)</td>
+      <td>100.0 (100.0)</td>
+      <td>99.9 (99.7)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>55.8 (58.7)</td>
+      <td>46.5 (51.8)</td>
+      <td>25.1 (26.0)</td>
+      <td>165.1 (172.5)</td>
+    </tr>
+    <tr>
+      <td>Figure of Merit (DM)</td>
+      <td>0.729 [20–6.7 Å]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td>PDB ID: 6BBF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>20–6.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>12844</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>30.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>33.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CCwork/CCfree (in outer shell)</td>
+      <td>0.285/0.220</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>27120</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>97.22</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>1.04</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s.d:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bond lengths (Å)</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bond angles (°)</td>
+      <td>1.15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The X-ray structure of H206A Oraicryst reveals a new conformation of the channel with a dilated pore that presumably represents an open conformation (Figure 4). The open channel is composed of a hexameric assembly of Orai subunits surrounding a single ion pore (Figure 4). The overall architecture of the channel is similar to the quiescent conformation, with each Orai subunit containing four transmembrane helices (M1-M4). The six M1 helices, one contributed by each subunit of the channel, form the walls of the open pore. Because the secondary structure of the polypeptide surrounding the pore is α-helical, amino acid side chains on M1 establish the chemical environment along the pore. In comparison to the closed pore (Hou et al., 2012), the pore is dramatically dilated on its cytosolic end, expanding by ~10 Å at Lys159 (Figure 5). The differences between the closed and open pores taper off toward the extracellular side such that, while subtle changes may occur when the pore opens, the location of the M1 helix at Glu178 is indistinguishable from the closed conformation at this resolution.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig5-v2.jpg)
+
+**Figure 5.:** (a) Superimposed structures of the quiescent (PDB ID: 4HKR) and open (H206A Oraicryst) conformations are drawn in ribbon representation. Two opposing subunits are shown, surrounding the pore, with the open conformation colored as indicated and the closed conformation in gray. Thin lines and a curved arrow highlight the outward rotation of subunits (with its fulcrum near Glu178) and the slight additional bend in M1. Conformational changes of M4/M4-ext are also apparent. Amino acids forming the walls of the closed pore (from the quiescent conformation) are shown as sticks, with corresponding regions of the pore indicated. Amino acids in parentheses denote human Orai1 counterparts. Horizontal bars indicate approximate boundaries of the plasma membrane. (b) Comparison of M1-M4a from individual subunits between the quiescent and open conformations. The region of an Orai subunit spanning M1 through M4a was superimposed between the quiescent (red ribbons, PDB ID 4HKR) and open (green ribbons, H206A Oraicryst) conformations. The slight additional bend in M1 of the open conformation is apparent at its N-terminal end. Otherwise the M1-to-M4b region of the two subunits superimpose within the error of the coordinates of the open conformation (the root-mean-squared deviation for the Cα positions of residues 163 to 288 superimposed in this manner is 1.1 Å).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Depiction of the closed pore (PDB ID 4HKR). M1 through M3 are drawn as ribbons for two opposing subunits. His206 (H206, pink) and the amino acid side chains within van der Waals distance (green) are drawn as sticks. A hydrogen bond made between His206 and Ser165 is shown as a dashed line. (b) Depiction of the open conformation (H206A Oraicryst), showing the corresponding regions as in (a). The conformations of the amino acid side chains in the atomic model are shown for reference to indicate plausibility despite the limited resolution of the diffraction data. Amino acid 206 is depicted as the wild-type histidine to indicate that this amino acid could be accommodated in the observed conformation of the channel without steric hindrance.
 
 The electron density indicates that the principal conformational change in the pore results from an outward rigid body rotation of the M1-M4a portion of each subunit away from the central axis and a slight additional outward bend of M1 on its intracellular half (Figure 5A). The packing of M1-M4a within an individual subunit is nearly indistinguishable from the packing in the closed conformation (Figure 5B). The rigid body motion suggests that the amino acids on M1 that form the walls of the pore in the closed conformation also do so in the open conformation Figure 4B and Figure 5A). The exposure of these residues to the ion pore in its open conformation is consistent with accessibility experiments of cysteine residues introduced into the M1 helix by mutagenesis (McNally et al., 2009; Zhou et al., 2010), and this is an indication that the pore of the H206A Oraicryst structure represents the conformation of the pore when the channel is activated by STIM, although further functional and structural analyses are warranted. Because we cannot visualize amino acid side chains due to the limited resolution of the structure, the data are silent on whether opening also involves a slight (~20°) rotation along the helical axis of M1 as has been suggested by electrophysiological studies using cysteine mutations (Yamashita et al., 2017). On the basis of the rigid body motion from the high-resolution structure of the quiescent conformation with a closed pore, the walls of the open pore would have four sections: a glutamate ring on the extracellular side that forms the selectivity filter (comprising Glu178 residues from the six subunits), a ~ 15 Å-long hydrophobic section, a ~ 15 Å-long basic section, and cytosolic section (Figure 5A).
 
 Residue 206 is located on the M2 helix and does not line the pore (Figure 4B). In the quiescent conformation, the wild-type histidine at this position forms a hydrogen bond with the side chain of Ser165, which is located on the side of M1 facing away from the pore (Figure 5—figure supplement 1A) (Hou et al., 2012). On the basis of the current structure, a histidine could be accommodated in the open conformation without steric interference, suggesting that the conformation of the pore observed for H206A Oraicryst could be adopted by wild-type Orai (e.g. when activated by STIM, Figure 5—figure supplement 1B). In accord with previous studies (Frischauf et al., 2017; Yeung et al., 2018), we surmise that interactions between non-pore-lining regions of the channel (e.g. M2-M1 interactions) influence pore opening.
 
-## Cation binding in the open pore
+### Cation binding in the open pore
 
 To investigate potential binding sites for cations in the open pore that underlie Ca2+-selectivity and block of the channel by trivalent lanthanides, we collected X-ray diffraction data from crystals of H206A Oraicryst containing Gd3+, which blocks the channel from the extracellular side (Aussel et al., 1996; Yeromin et al., 2006), and from crystals containing Ba2+, which is a permeant surrogate for Ca2+ (Hoth, 1995) that is more easily identified crystallographically. Anomalous-difference electron density maps, which pinpoint the location of these ions, contained strong density for Gd3+ and for Ba2+ in the selectivity filter (Figure 6A,B). Due to the limited resolution of the diffraction data, the electron densities could represent one or two Ba2+/Gd3+ ions that directly coordinate the side chains of the glutamate ring (Glu178 residues from the six subunits). The presence of Ba2+ and Gd3+ at this location provide evidence that the Glu178 side chains are oriented toward the pore when it is open. Ca2+-binding in this region likely underlies Orai’s high selectivity for Ca2+. Block of the open pore by Gd3+ appears to occur by competitive binding within the selectivity filter.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig6-v2.jpg)
+
+**Figure 6.:** (a–c) Anomalous-difference electron density maps (mesh) for crystals of H206A Oraicryst with Ba2+ (a), Gd3+ (b), and I- (c). M1 helices of two opposing subunits are shown as ribbons. Side chains proposed to line the pore (sticks) are drawn for reference; their conformations are hypothetical. The maps are contoured at 10 σ and calculated from 25 to 9 Å for (a–b), and at 7 σ and calculated from 25 to 10 Å for (c).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a–b) Anomalous-difference electron density for Ba2+ (green mesh) in open pore of H206A Oraicryst (from Figure 5A) and in the closed pore of the quiescent conformation (from Hou et al., 2012), respectively. M1 helices (amino acids 148 to 180) are depicted from two opposite subunits as ribbon representations. Pore-lining side chains (sticks) are drawn for reference in (a) since their conformations cannot be determined due to the limits of the diffraction data, and they are shown in (b) according to their observed conformations (Hou et al., 2012). (c–d) Analogous depictions for the anomalous-difference electron-density peaks for Gd3+ in the open pore (c), from Figure 5B and closed pore (d), from Hou et al. (2012).
+
 We showed previously that Gd3+, Ba2+ and Ca2+ bind near the glutamate ring when the pore is closed (Hou et al., 2012). While the positioning of Gd3+ is very similar between the open and closed pores, the positioning of Ba2+/Ca2+ is noticeably different (Figure 6, Figure 6—figure supplement 1). In the closed pore, the Ba2+/Ca2+ ion binds on the extracellular side of the selectivity filter, approximately 4 Å above the ring of glutamates, whereas in the open pore, the electron density is located within the glutamate ring rather than above it (Figure 6, Figure 6—figure supplement 1). The limits of the diffraction data prevent us from discerning differences in the conformations of the glutamate side chains between the open and closed pores but the apparent repositioning of Ba2+ is an indication that subtle changes within the selectivity filter occur when the pore opens. Subtle changes at the extracellular side of the pore have also been suggested by spectroscopic and electrophysiological studies when Orai is activated by STIM (Gudlur et al., 2014; McNally et al., 2012). We conclude that the transition in the pore between non-conductive and conductive conformations involves conformational changes along the length of the pore that introduce functionally important free-energy differences that affect Ca2+ selectivity and ion flow. These changes are most structurally pronounced at the cytoplasmic side but they extend energetically to the selectivity filter on the extracellular side.
 
-## Anion binding in the open pore
+### Anion binding in the open pore
 
 The basic region of the pore is highly unusual for a cation channel. We have shown previously that the basic region of the closed pore binds anions and that the crystallized protein contains an iron complex within the basic region that co-purifies with the channel (Hou et al., 2012). Anomalous difference electron density for iron is not observed in the structure of H206A Oraicryst, indicating that the iron complex is not present in the open pore, which is in accord with the dramatic widening of the basic region. To investigate the possibility that anions could bind in the basic region in the open pore, we collected diffraction data from H206A Oraicryst that was crystallized in iodide (I-). I- has similar properties to the cellularly abundant Cl- anion and would be identifiable by its anomalous X-ray scattering. We observed robust anomalous difference electron density for I- that is centrally located within the basic region of the open pore (Figure 6C). The presence of I- there provides evidence that the basic amino acids are exposed to the pore and that anion(s) can bind in the basic region when it is open. We suspect that a few anions would coat the sides of the basic region in a cellular context. In the open conformation, the basic region is large enough to accommodate a centrally located Ca2+ ion that is surrounded by anions and/or water molecules. (The Cα positions of Lys159 residues on opposite sides of the pore are ~24 Å apart). We hypothesize that cellular anions may shield the positive charge of the basic residues during the permeation of Ca2+ through the open pore.
 
-## Mutation of the basic region
+### Mutation of the basic region
 
 Because the open structure reveals substantial dilation of the basic region, we wondered what effect mutation of the basic residues would have and whether their substitution with serine would create a constitutively open channel. We simultaneously substituted all three basic residues with serine (R155S, K159S, K163S) and studied the purified channel (designated SSS Oraicryst) in proteoliposomes using an assay to measure Na+ flux under divalent-free conditions (Figure 7A). We chose serine because it is a small hydrophilic residue that would eliminate positive charge from this region and because the R91S mutation in human Orai1 (corresponding to K163S in Orai) forms a functional channel when expressed with STIM1 (Derler et al., 2009). However, we did not detect ion flux through SSS Oraicryst, suggesting that is not constitutively open (Figure 7A). This does not appear to be due to gross misfolding of the channel because protein solubilized by detergent from the proteoliposomes exhibits a monodisperse size-exclusion chromatography (SEC) profile that is analogous to the profile of protein that was used to determine the X-ray structures (Figure 7—figure supplement 1A). Furthermore, we find that Orai channels with the R155S/K159S/K163S (SSS) mutations do not form functional CRAC channels when co-expressed with STIM in HEK293 cells (Figure 7B). Flow cytometry using an antibody that binds to the extracellular side of Orai demonstrates that SSS Orai is expressed in the plasma membrane of the cells at a similar level to wild type Orai and SEC suggests that SSS Orai is properly folded in the cells (Figure 7—figure supplement 1B,C,D). The inability of SSS Orai to be activated by STIM could be due to constitutive closure of the pore and/or disruption of the interaction with STIM. These somewhat surprising results are an indication of the importance of the basic region in the function of the channel and provide fodder for further study.
 
-## Conformations of M4 and M4-ext identify Pro288 and SHK hinges
+![Figure 7.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig7-v2.jpg)
+
+**Figure 7.:** (a) Proteoliposome-based sodium (Na+) flux assay. Purified proteins were reconstituted into liposomes to assay for Na+ flux under divalent-free conditions (Materials and methods) as described previously (Hou et al., 2012). After stabilization of the fluorescence signal (150 s), the proton ionophore CCCP was added to the sample. A decrease in fluorescence is indicative of Na+ flux out of the proteoliposomes. The Na+ ionophore monensin was added after 990 s to render all vesicles permeable to Na+ and establish the minimum baseline fluorescence. The traces were normalized to the initial fluorescence value, which was within ±10% in the experiments. The signal for SSS Oraicryst (Oraicryst with the R155S, K159S, and K163S mutations) is comparable to what is observed for liposomes without protein (‘empty vesicles’). As a control for the assay, we observed Na+ flux through purified channels containing the V174A mutation of the hydrophobic region of the pore, which has previously been shown to produce leaky channels with diminished selectivity for Ca2+ (Hou et al., 2012; McNally et al., 2012). (b) Ca2+ influx measurements in HEK293 cells expressing indicated Orai and STIM constructs. Methods are identical to those for Figure 2. SSS Orai does not show Ca2+ uptake above the background level (vector control).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) SEC analysis of detergent (DDM)-solubilized proteoliposomes that were used for the assay show in Figure 7a. A monodisperse peak for SSS Oraicryst is observed at the appropriate elution volume. (b) FSEC analysis of Orai constructs transfected into HEK293 cells (e.g. used for the assay shown in Figure 7b). The leftward shift relative to (a) is due to the added mass of the mCherry tag. (c–d) Flow cytometry indicates that SSS Orai is expressed at the plasma membrane. A monoclonal antibody (17E5) that targets the M1-M2 extracellular loop of Drosophila Orai was used to detect surface expression. A monoclonal antibody (13C8) that targets the cytosolic region of Drosophila Orai was used as negative control. (c) Orai expression is indicated by mCherry fluorescence on the Y-axis. The cell-surface binding of primary antibodies was detected using an Alexa Fluor 488 secondary antibody (X-axis). (d) Histogram overlay, indicating cell-surface expression of Orai and SSS Orai. Histogram plots are shown for the boxed regions from (c). The rightward-shifts for Orai and SSS Orai in the presence of 17E5 indicate surface expression of these constructs. The percentages of cells that had strong mCherry fluorescence and were selected for the histogram plots are indicated below the boxed regions from (c).
+
+### Conformations of M4 and M4-ext identify Pro288 and SHK hinges
 
 Other differences between the quiescent and open conformations are changes in the conformations of the M4 and M4-ext helices. In the quiescent conformation, M4 and M4-ext form three helical segments: M4a and M4b, delineated by a bend in M4 at Pro288 near the midpoint of the membrane, and M4-ext, which follows a bend in a Ser306-His307-Lys308 (‘SHK’) motif between M4b and M4-ext (Figure 1A). In the quiescent conformation, the M4-ext helices pair with one another through an antiparallel coiled-coil interaction (Figure 1A). In the H206A Oraicryst structure, M4b and M4-ext are repositioned by straightenings of both bends such that the regions corresponding to M4a, M4b and M4-ext of each subunit form a continuous α-helix that traverses the membrane and extends ~45 Å into the cytosolic space (Figure 4B,D and Figure 5A). The conformational changes of the M4 and M4-ext helices identify the Pro288 residue and the SHK motif, both of which are conserved in Orai channels, as hinges.
 
-## Additional X-ray structures reveal an unlatched-closed conformation
+### Additional X-ray structures reveal an unlatched-closed conformation
 
 In the crystal of H206A Oraicryst, the cytosolic sides of two channels face one another and the M4-ext helices of different channels interact through anti-parallel coiled-coils (Figure 8A). These coiled-coil interactions are analogous to the pairing of M4-ext helices between adjacent subunits in the quiescent conformation (Figure 8—figure supplement 1). To exclude the possibility that the crystal contacts in the H206A Oraicryst structure were responsible for the conformational changes we observed in the pore, we determined the structures of wild-type (WT) Oraicryst and K163W Oraicryst grown in the same crystal form (I41). The K163W mutation corresponds to R91W in human Orai1, which is a loss of function mutation that causes a severe combined immune deficiency-like disorder (Feske et al., 2006). Well-defined electron density maps of WT and K163W Oraicryst were obtained using non-crystallographic symmetry averaging of modest (6.9 and 6.1 Å, respectively) resolution diffraction data in the same manner as for the H206A Oraicryst structure (Figure 9A,B). Anomalous-difference electron density peaks for sulfur atoms of methionine and cysteine residues in WT Oraicryst confirm the accuracy of the atomic model (Figure 9E). We also obtained crystals of K163W Oraicryst in a P42212 crystal form that diffracted X-rays to 4.35 Å resolution, which assisted with model building and was indistinguishable from the I41 structures of WT and K163W Oraicryst (Figure 9—figure supplement 1, and Table 2).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig8-v2.jpg)
+
+**Figure 8.:** (a) Crystal packing of H206A Oraicryst. The contents of the asymmetric unit, consisting of four complete channels, is shown. Each channel is colored a unique color and shown in ribbon representation. The channels interact with one another via coiled-coil interactions between their M4-ext helices. (b) Packing of WT Oraicryst in the crystal, showing the contents of the asymmetric unit, depicted analogously to a).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (a) Close-up view of a coiled-coil interaction between two M4-ext helices of the blue- and green-colored channels in the asymmetric unit of H206A Oraicryst (from Figure 7A). Ile316 and Leu319, which form the hydrophobic interface of the coiled-coil interaction on each of the M4-ext helices, are drawn as gray sticks for reference. (b) Analogous coiled-coil interaction between two M4-ext helices of the blue- and green-colored channels in the asymmetric unit of WT Oraicryst (from Figure 7B). (c) Coiled-coil interaction of two paired M4-ext helices observed in the quiescent conformation, which occurs between adjacent subunits of the same channel (from Figure 1, PDB ID 4HKR). (d) Superposition of the 24 individual subunits (from four hexameric channels) of H206A Oraicryst within the asymmetric unit, shown in Cα representation.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig9-v2.jpg)
+
+**Figure 9.:** (a) Electron density for WT Oraicryst, shown as blue mesh covering the channel (Cα representation). The map (contoured at 1.3 σ) was calculated from 20 to 6.9 Å using native sharpened amplitudes and phases that were determined by MR-SAD and improved by 24 fold NCS averaging, solvent flattening and histogram matching (Materials and methods). (b) Electron density, from (a) (blue mesh), covering two opposing subunits of WT Oraicryst (cartoon representation, colored as indicated in c). Anomalous-difference electron-density (from iron) in the basic region of the pore is shown as magenta mesh (map calculated from 25 to 9 Å and contoured at 5 σ). Conformations of pore residues are based on the quiescent conformation (PDB ID 4HKR). (c) Extracellular view of WT Oraicryst. Helices are drawn as ribbons and colored as indicated, with Glu178 side chains (sticks) and Ca2+ ion (green sphere) shown for reference. (d) Superposition of the quiescent conformation (PDB ID 4HKR) and the structure of the unlatched-closed conformation (WT Oraicryst). Two subunits of each channel are shown. The quiescent conformation is gray; the structure of WT Oraicryst is shown in colors. Amino acids lining the pore of the quiescent conformation are shown as sticks. A slight outward displacement of the intracellular side of M3 is observed in the structure of WT Oraicryst; otherwise the conformations of M1-M4a are indistinguishable within the resolution limits of the diffraction data (RMSD for Cα positions 148 to 288 is 0.9 Å). (e) Anomalous-difference electron-density peaks at cysteine and methionine residues confirms the amino acid register of the WT Oraicryst structure (stereo representation). An anomalous-difference electron-density map was calculated from 25 to 9 Å resolution from data collected with λ = 1.738 Å X-rays (Extended Data Table 2) using anomalous differences as amplitudes and phases from (a). This map was then averaged in real-space according to the 24-fold NCS symmetry to yield the map shown. The map is contoured at 5 σ (cyan mesh) and shown in the vicinity of a subunit of Orai (red Cα trace). Methionine and cysteine residues are shown as sticks (colored yellow for carbon and green for sulfur atoms). Methionine residues on M4b and M4-ext are labeled. Portions of neighboring Orai subunits (gray Cα traces) are shown for reference with their helices labeled in parentheses. Side chain conformations are hypothetical.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (a) Structure of K163W Oraicryst from the I41 crystal form. The map (contoured at 1.3 σ) was calculated from 20 to 6.1 Å using native-sharpened amplitudes and experimental phases that were determined by MIRAS and were improved by 24-fold NCS averaging, solvent flattening and histogram matching (Materials and methods). The atomic model is shown in Cα representation (yellow). The crystal form is analogous to crystals of H206A Oraicryst and WT Oraicryst, and has analogous crystal packing. The root-mean-squared deviation (RMSD) for Cα positions between the structures of WT Oraicryst and K163W Oraicryst is 0.5 Å. (b) 4.35 Å resolution structure of K163W Oraicryst in the P42212 crystal form. Electron density (mesh) covering the channel is shown. The map (contoured at 1.3 σ) was calculated from 20 to 4.35 Å using sharpened amplitudes and phases that were determined by MR and were improved by threefold non-crystallographic symmetry (NCS) averaging, solvent flattening and histogram matching (Materials and methods). (c) Two opposing subunits of K163W Oraicryst (P42212 crystal form), showing the pore, with electron density from (b). Amino acids on the pore are depicted as sticks (conformations based on PDB 4HKS; Materials and methods). Anomalous-difference electron density in the pore is shown as magenta mesh (calculated from 30 to 8 Å resolution using anomalous differences as amplitudes, and contoured at 3.8 σ). Asterisks mark the locations of K163W substitutions. (d) Packing of K163W Oraicryst in the P42212 crystal form. The contents of each asymmetric unit (three Orai subunits) are colored a unique color. Two asymmetric units (e.g. blue and red) form a complete channel. The channels interact with one another in the crystal lattice via coiled-coil interactions between their M4-ext helices. (e) Anomalous-difference electron-density for heavy atom derivatives of K163W Oraicryst in the I41 space group. One channel of the asymmetric unit is depicted as ribbons. The map for the platinum (Pt) derivative (magenta mesh, calculated from 25 to 8.0 Å, and contoured at 4.5 σ) was calculated from data collected from a crystal soaked in PIP (Table 2), using anomalous differences as amplitudes and phases from (a). The analogous map for the mercury (Hg) derivative (green mesh, calculated from 25 to 8.0 Å, and contoured at 5 σ) was calculated from data collected from a crystal soaked in PCMB (Table 2). Each channel in the asymmetric unit has anomalous-difference density at these sites (24 sites for each derivative, Table 2). Cys215 and Met321 residues, to which the heavy atoms presumably bind, are depicted as sticks.
+
+**Table 2.**
+ Data collection, phasing and refinement statistics for WT and K163W Oraicryst.Data collection statistics are from HKL3000 (Otwinowski and Minor, 1997). Rsym = Σ | Ii- < Ii > | / Σ Ii, where < Ii > is the average intensity of symmetry-equivalent reflections. CC1/2, CCwork and CCfree are defined in (Karplus and Diederichs, 2012). Phasing power = RMS (|F|/ε), where |F| is the heavy-atom structure factor amplitude and ε is the residual lack of closure error. Rcullis is the mean residual lack of closure error divided by the dispersive or anomalous difference. Rwork = Σ | Fobs – Fcalc | / Σ | Fobs |, where Fobs and Fcalc are the observed and calculated structure factors, respectively. Rfree is calculated using a subset (~10%) of reflection data chosen randomly and omitted throughout refinement. Figure of merit is indicated after density modification and phase extension starting from 8.0 Å in DM. R.m.s.d: root mean square deviations from ideal geometry. Numbers in parentheses indicate the highest resolution shells and their statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>K163W Oraicryst</th>
+      <th colspan="3">K163W Oraicryst</th>
+      <th>WT Oraicryst</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Native</th>
+      <th>Native</th>
+      <th>Derivative 1 PCMB</th>
+      <th>Derivative 2 PIP</th>
+      <th>Native</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P42212</td>
+      <td>I41</td>
+      <td>I41</td>
+      <td>I41</td>
+      <td>I41</td>
+    </tr>
+    <tr>
+      <td>Datasets source</td>
+      <td>NSLS X25</td>
+      <td>NSLS X25</td>
+      <td>NSLS X29</td>
+      <td>NSLS X29</td>
+      <td>NSLS X25</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.1000</td>
+      <td>1.1000</td>
+      <td>1.0074</td>
+      <td>1.0712</td>
+      <td>1.738</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>118.7, 118.7, 122.4</td>
+      <td>247.5, 247.5, 210.2</td>
+      <td>246.1, 246.1, 210.0</td>
+      <td>250.6, 250.6, 211.8</td>
+      <td>250.4, 250.4, 210.4</td>
+    </tr>
+    <tr>
+      <td>α= β= γ (°)</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>60–4.35 (4.42–4.35)</td>
+      <td>50–6.10 (6.20–6.10)</td>
+      <td>50–6.10 (6.20–6.10)</td>
+      <td>50–6.90 (7.02–6.90)</td>
+      <td>50–6.9 (7.02–6.90)</td>
+    </tr>
+    <tr>
+      <td>No. of crystals</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td>6.0 (&gt;100)</td>
+      <td>5.9 (&gt;100)</td>
+      <td>5.7 (&gt;100)</td>
+      <td>12.0 (&gt;100)</td>
+      <td>9.4 (&gt;100)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)</td>
+      <td>1.7 (55.7)</td>
+      <td>1.3 (&gt;100)</td>
+      <td>1.9 (&gt;100)</td>
+      <td>3.1 (&gt;100)</td>
+      <td>3.0 (&gt;100)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (in outer shell)</td>
+      <td>0.265</td>
+      <td>0.376</td>
+      <td>0.378</td>
+      <td>0.170</td>
+      <td>0.123</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>61.1 (1.0)</td>
+      <td>69.0 (1.0)</td>
+      <td>49.3 (0.7)</td>
+      <td>37.0 (.07)</td>
+      <td>39.1 (0.5)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100.0 (100.0)</td>
+      <td>100.0 (100.0)</td>
+      <td>99.9 (100)</td>
+      <td>99.9 (100)</td>
+      <td>99.7 (99.8)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>16.4 (16.9)</td>
+      <td>22.9 (23.9)</td>
+      <td>21.5 (20.5)</td>
+      <td>16.3 (16.7)</td>
+      <td>11.0 (11.6)</td>
+    </tr>
+    <tr>
+      <td>MIRAS Phasing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of sites</td>
+      <td></td>
+      <td></td>
+      <td>24</td>
+      <td>24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phasing power (iso/ano)</td>
+      <td></td>
+      <td></td>
+      <td>0.523/0.559</td>
+      <td>0.405/0.686</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rcullis (iso/ano)</td>
+      <td></td>
+      <td></td>
+      <td>0.764/0.945</td>
+      <td>0.952/0.919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure of Merit (DM)</td>
+      <td>0.627 [20–4.35 Å]</td>
+      <td>0.629 [20–6.1 Å]</td>
+      <td></td>
+      <td></td>
+      <td>0.777 [20–6.9 Å]</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td>PDB ID: 6BBI</td>
+      <td>PDB ID: 6BBH</td>
+      <td></td>
+      <td></td>
+      <td>PDB ID: 6BBG</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>20–4.35</td>
+      <td>20–6.1</td>
+      <td></td>
+      <td></td>
+      <td>20–6.9</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>6035</td>
+      <td>14682</td>
+      <td></td>
+      <td></td>
+      <td>10287</td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>30.6</td>
+      <td>31.4</td>
+      <td></td>
+      <td></td>
+      <td>33.4</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>32.9</td>
+      <td>34.0</td>
+      <td></td>
+      <td></td>
+      <td>35.4</td>
+    </tr>
+    <tr>
+      <td>CCwork/CCfree (in outer shell)</td>
+      <td>0.487/0.441</td>
+      <td>0.346/0.333</td>
+      <td></td>
+      <td></td>
+      <td>0.332/0.414</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>3338</td>
+      <td>27360</td>
+      <td></td>
+      <td></td>
+      <td>27240</td>
+    </tr>
+    <tr>
+      <td>Ramachandran (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>95.5</td>
+      <td>97.2</td>
+      <td></td>
+      <td></td>
+      <td>96.6</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.24</td>
+      <td>1.01</td>
+      <td></td>
+      <td></td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>R.m.s.d:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.006</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.15</td>
+      <td>1.06</td>
+      <td></td>
+      <td></td>
+      <td>1.07</td>
+    </tr>
+  </tbody>
+</table>
 
 The structures of WT and K163W Oraicryst reveal an ‘unlatched-closed’ conformation of the channel that resembles a hybrid of the quiescent and open conformations: the ion pores are closed as in the quiescent conformation but the M4/M4-ext regions have conformations like those observed in the H206A Oraicryst structure (Figure 9). The unlatched-closed conformation has analogous straightenings of M4/M4-ext as the open structure, and analogous crystal packing (Figure 8). The conformation of the M1-M4a portion of the channel, however, is like the quiescent conformation (Figure 9D), and as such, the pores of WT and K163W Oraicryst are closed and indistinguishable from the pore in the structure of the quiescent conformation (Figure 9B,D) (Hou et al., 2012). Therefore, contacts within the crystal and the straightening of M4/M4-ext are not responsible for the opening of the pore that is observed with H206A Oraicryst.
 
@@ -94,7 +641,7 @@ We wondered if the difference between the quiescent and unlatched-closed conform
 
 The X-ray structures of Orai suggest that an equilibrium exists between bent and unbent conformations of M4/M4-ext. Molecular constraints may bias this equilibrium during crystallization, and we hypothesize that STIM binding does so in a cellular context (as discussed later). In the absence of STIM, we suspect that fully bent (e.g. as observed in the quiescent structure) and fully straight (e.g. as observed in the unlatched-closed structure) conformations of M4/M4-ext are representative of a range of M4/M4-ext conformations that could be present in a cellular environment. Nevertheless, the ability of the M4 and M4-ext helices to adopt the configuration observed in the quiescent conformation, the sequence conservation of the hinges involved in the bends necessary to permit this conformation, and that the tendency of the M4-ext helices to pair is satisfied in the quiescent conformation, suggest physiological relevance for this conformation.
 
-## Unlatching of M4b/M4-ext is necessary for pore opening
+### Unlatching of M4b/M4-ext is necessary for pore opening
 
 Comparison of the structures of the quiescent, unlatched-closed and open conformations indicates that the M4b and M4-ext regions must undergo conformational changes for the pore to open. In the quiescent conformation, the three sets of paired M4-ext helices create an assembly surrounding the intracellular side of the channel (Figure 1A). Bends at both Pro288 and the SHK motif are necessary for this configuration. As a result of the bend at Pro288 observed in the quiescent conformation, M4b interacts with M3 (Figure 1A, Figure 10A). In the open structure, the interaction between M4b and M3 is no longer present due to the repositioning of M4b that is enabled by unbending at Pro288 and the unpairing of M4-ext helices (Figure 10C). If the interaction between M4b and M3 of the quiescent conformation were present, or if the M4-ext helices were paired, the rigid body motion of M1-M4a that underlies pore opening could not occur due to steric interference between M3 and M4b (Figure 10D). We conclude that the paired M4-ext helices and the concomitant interactions between M4b and M3 of the quiescent conformation constitute ‘latches’ that must be released for the pore to open. In belt-like fashion, the latches constrain the outer diameter of the intracellular portion of the channel and prevent the widening observed in the H206A structure. Thus, when the latches are fastened, they stabilize the pore in a closed conformation. Complete straightenings of the M4/M4-ext helices (e.g. analogous to the conformations of the M4/M4-ext helices observed in the structures of H206A, WT, and K163W Oraicryst) may not be necessary for the pore to open because there could be enough space for pore dilation with slight bends at the Pro288 and SHK hinges. Rather than forming rigid helices, we hypothesize that the Pro288 and SHK hinges provide flexibility to M4b and M4-ext when the latches are released. The straightened conformations of the M4/M4-ext helices in the crystal structures may represent only one conformation of these mobile regions along a continuum of unlatched conformations that would permit, and necessarily precede, the opening of the pore. The structures of the unlatched-closed conformation reveal that release of the latches does not necessarily open the pore: the pore is closed despite the M4b and M4-ext helices adopting the same conformation that they do in the H206A structure. Thus, while necessary, unlatching is not sufficient to open the pore.
 
@@ -122,41 +669,45 @@ An important finding from our work is that the pore cannot open from the quiesce
 
 Comparison of the three conformations of Orai revealed by the X-ray structures and the considerations mentioned above engender a hypothetical sequence for channel activation that proceeds from a quiescent state prior to interaction with STIM, through an unlatched conformation, and culminates with an open pore (Figure 12, Figure 12—video 1). In the quiescent conformation, clasped latches (e.g. the interactions between M4b and M3, which are stabilized by paired M4-ext helices) constrain the outer cytosolic diameter of the channel and prevent the pore from opening. Unlatching, that is, the release of the M4b-M3 interaction and the unpairing of M4-ext helices, could happen transiently and spontaneously, and would expose cytosolic docking sites for STIM. The engagement of STIM with Orai, via molecular interactions that remain to be resolved, would stabilize an unlatched conformation and the widening of the pore that permits Ca2+ influx. The structures provide insight into the remarkable molecular choreography by which Orai governs store-operated Ca2+ entry and a myriad of downstream cellular responses.
 
+![Figure 12.](https://cdn.elifesciences.org/articles/36758/elife-36758-fig12-v2.jpg)
+
+**Figure 12.:** (a) Quiescent conformation of Orai prior to binding of STIM (from PDB ID 4HKR, cylinders and ribbons). The pore (gray surface) is closed and the latches are fastened (two latches are indicated with dashed ovals). The M4 helices are bent at Pro288, delineating them into M4a and M4b. The M4b portions (orange) interact with the M3 helices (green), in six-fold fashion, and prevent the pore from opening by constraining the cytosolic region of the M3 helices. The interaction between M4b and M3 and the bend at Pro288 are stabilized by three sets of paired M4-ext helices. (b) An unlatched-closed conformation: structure of WT Oraicryst in which the pore is closed but the latches are released. Conformations of M1-M4a are indistinguishable from (a) (Figure 8D). When unlatched, mobile M4-ext regions are hypothesized to be available to interact with cytosolic regions of STIM that would become exposed as a result of depletion of Ca2+ from the ER. Spontaneous unlatching would not necessarily require STIM binding and does not necessarily open the pore. (c) Open conformation. The structure of H206A Oraicryst is shown (cylinders and ribbons), with approximate dimensions of the pore shown as a gray surface. Following store depletion, we hypothesize that STIM (blue shapes) engages with cytosolic regions of Orai and stabilizes the pore in an open conformation. Unlatching is required to allow the widening of the pore and the influx of Ca2+ (green spheres). Arrows between conformations denote equilibria and the horizontal rectangle indicates approximate boundaries of the plasma membrane. The depiction of the cytosolic region of STIM is conceptual and is not meant to imply stoichiometry or conformation.
+
 ## Materials and methods
 
-## Cloning, expression, purification and crystallization
+### Cloning, expression, purification and crystallization
 
 cDNA encoding Drosophila melanogaster Orai (amino acids 133–341) followed by a C-terminal YL½ antibody affinity tag (amino acids EGEEF)(Kilmartin et al., 1982) was cloned into the EcoRI and NotI restriction sites of the Pichia pastoris expression vector pPICZ-C (Invitrogen Life Technologies). Two non-conserved cysteine residues were mutated to improve protein stability (C224S and C283T). This construct, termed ‘WT Oraicryst’, differs from the one we used previously (Hou et al., 2012) only in that it contains wild-type Pro276 and Pro277 residues in the hypervariable M3-M4 loop rather than arginine substitutions at these positions. Constructs bearing the H206A or K163W mutations were made on the background of WT Oraicryst using standard molecular biology techniques (designated ‘H206A Oraicryst’ or ‘K163W Oraicryst’, accordingly). Transformations into P. pastoris, expression, and cell lysis were performed as previously described (Long et al., 2005).
 
 Lysed P. pastoris cells were re-suspended in buffer (3.3 ml buffer for each 1 g of cells) containing 150 mM KCl, 10 mM sodium phosphate, pH 7.0, 0.1 mg/ml deoxyribonuclease I (Sigma-Aldrich), 1:1000 dilution of Protease Inhibitor Cocktail Set III, EDTA free (CalBiochem), 1 mM benzamidine (Sigma-Aldrich), 0.5 mM 4-(2-aminoethyl) benzenesulfonyl fluoride hydrochloride (Gold Biotechnology) and 0.1 mg/ml soybean trypsin inhibitor (Sigma-Aldrich). Cell lysate was adjusted to pH 7.0 with 1 N KOH, 0.11 g n-dodecyl-β-D-maltopyranoside (DDM, Anatrace, solgrade) per 1 g of cells was added to the cell lysate, and the mixture was stirred at room temperature for 45 min to extract Orai from the membranes. The sample was then centrifuged at 30,000 g for 45 min at 17°C and the supernatant was filtered (0.45 μm polyethersulfone membrane). YL½ antibody (IgG, expressed from hybridoma cells and purified by ion exchange chromatography) was coupled to CNBr-activated sepharose beads (GE Healthcare) according to the manufacturer’s protocol. Approximately 0.4 ml of beads were added to the sample for each 1 g of P. pastoris cells and the mixture was rotated at room temperature for 1 hr. Beads were collected on a column, washed with five column-volumes of buffer containing 150 mM KCl, 10 mM sodium phosphate, pH 7.0, 5 mM DDM, 0.1 mg/ml lipids (3:1:1 molar ratio of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine, 1-Palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine, and 1-palmitoyl-2-oleoyl-sn-glycero-3-[phospho-rac-(1-glycerol)], obtained from Avanti) and eluted with buffer containing 150 mM KCl, 100 mM Tris-HCl, pH 8.5, 5 mM DDM, 0.1 mg/ml lipids and 5 mM Asp-Phe peptide (Sigma-Aldrich). The eluted protein was concentrated to ~25 mg/ml using a 100 kDa concentrator (Amicon Ultra, Millipore) and further purified on a Superdex-200 gel filtration column (GE Healthcare) in 75 mM KCl, 10 mM Tris-HCl, pH 8.5, 0.1 mg/ml lipids, and detergent: 4 mM octyl glucose neopentyl glycol (Anatrace, anagrade) to obtain crystals of K163W Oraicryst in space group P42212, or a mixture of 0.5 mM decyl maltose neopentyl glycol (Anatrace, anagrade) and 3 mM octyl glucose neopentyl glycol for crystals of WT and K163W Oraicryst in space group of I41, and 0.5 mM decyl maltose neopentyl glycol for H206A Oraicryst. For crystals of H206A Oraicryst, 3 mM octyl glucose neopentyl glycol was added into the purified H206A Oraicryst just before setting up crystallization trials. A typical prep, utilizing 20 g of cells, yielded ~2 mg of purified Orai. For the crystals of H206A Oraicryst with I−, NaI was substituted in place of KCl in the purification buffers. For crystals of H206A in Ba2+, 5 mM BaCl2 was added to the final purified protein before crystallization. Purified Orai proteins were concentrated to 10–20 mg/ml using 100 kDa Vivaspin-2 concentrators (Sartorius Stedim Biotech), and mixed 1:1 (250 nl: 250 nl) with crystallization solutions for hanging drop vapor diffusion crystallization. Crystals of WT Oraicryst grew in 32–35% PEG 400 (v/v) and 0.1 M potassium phosphate pH 7.5. Crystals of K163W Oraicryst in space group P42212 grew in 24–26% PEG 400 (v/v) and 0.2 M potassium phosphate pH 6.5. Crystals of K163W Oraicryst in space group I41 grew in 26–28% PEG 400 (v/v) and 150 mM NaCl and 100 mM N-2-hydroxyethylpiperazine-N-2’-ethanesulfonic acid (HEPES) pH 7.5. Native crystals of H206A Oraicryst grew in 36–38% PEG400, 500 mM NaCl and 100 mM Tris-HCl pH 9.0. The crystallization solution for H206A Oraicryst with NaI was 28–31% PEG400 and 100 mM Tris-HCl pH7.5. The crystallization solution for H206A Oraicryst with BaCl2 was 32–34% PEG400, 500 mM NaCl and 100 mM Tris-HCl pH 8.5.
 
-## Structure determination
+### Structure determination
 
-## Data collection and processing
+#### Data collection and processing
 
 All crystals were dehydrated and cryo-protected before flash-cooling in liquid nitrogen by serial transfer into solutions containing the buffer components of an equilibrated crystallization drop and increasing concentrations of PEG 400 (to 50% w/v) in nine steps with ~1 min intervals. For heavy atom derivatives, Crystals of K163W Oraicryst belonging to space group I41 were soaked in stabilization solution supplemented with ~18 μg/ml p-chloromercuribenzene sulfate (PCMB), or ~7 μg/ml di-μ-iodo-bis(ethylene-diamine)-di-platinum(II) nitrate (PIP) for 24 hr. For ion binding experiments, crystals of H206A Oraicryst were soaked in stabilization solution supplemented with 1 mM GdCl3 for 2 days. After soaking, the crystals were cryo-protected in the same solutions as native crystals and flash-cooled. Crystals of H206A Oraicryst that contained 5 mM BaCl2 were soaked in stabilization solution supplemented with 50 mM BaCl2 during dehydration steps and flash-cooled. X-ray diffraction data sets were collected using synchrotron radiation and were indexed, integrated and scaled with the HKL suite (Otwinowski & Minor, 1997) or XDS (Kabsch, 2010). Resolution limits of the diffraction data were estimated from the CC1/2 value (Karplus and Diederichs, 2012).
 
-## K163W Oraicryst (P42212 space group)
+#### K163W Oraicryst (P42212 space group)
 
 Initial phases for data collected from crystals of K163W Oraicryst belonging to space group P42212, were determined by molecular replacement (MR) with PHENIX (Adams et al., 2010) using residues 148–288 of the structure of K163W Drosophila Orai in the quiescent conformation (PDB ID: 4HKS) as a search model. The asymmetric unit contains three Orai subunits; these form a complete hexameric channel by a two-fold rotational symmetry operator of the P42212 space group. To improve the phases and reduce bias, the phases were improved with solvent flattening, histogram matching, and 3-fold non-crystallographic symmetry (NCS) averaging with the program DM (Cowtan, 1994). This yielded well-defined density for the channel (Figure 9—figure supplement 1). A B-factor sharpening value of −150 Å2 was applied to the electron density maps that are displayed (Figure 4, Figure 9, and Figure 9—figure supplement 1). The atomic model was adjusted in COOT (Emsley et al., 2010) and refined in CNS using a deformable elastic network (DEN) force field (Brünger et al., 1998; Brunger et al., 2012; Schröder et al., 2007; Schröder et al., 2010) and in PHENIX with NCS and secondary structure restraints. The final model contains residues 148–327 of Orai, excluding the following residues that did not have well-enough defined electron density to direct model building: 181–188 (the M1-M2 loop), 220–239 (the M2-M3 loop), and 314–327 of subunit B.
 
-## K163W Oraicryst (I41 space group)
+#### K163W Oraicryst (I41 space group)
 
 Initial phases for K163W Oraicryst in space group I41 were determined experimentally by the MIRAS (multiple isomorphous replacement with anomalous scattering) method using a native dataset and two derivative ones (PCMB and PIP) using SHARP (Vonrhein et al., 2007) (Table 2; Figure 9—figure supplement 1E). The asymmetric unit contains four hexameric channels (24 Orai subunits) for which density was apparent following solvent flattening with the program DM (Cowtan, 1994). The phases were improved and extended to 6.1 Å resolution using solvent flattening, histogram matching, and 24-fold NCS averaging with DM. This yielded continuous densities for all helices in all 24 Orai subunits within the asymmetric unit (Figure 9—figure supplement 1A). Anomalous-difference electron density maps of well-ordered platinum and mercury sites at Met321 and Cys215, respectively, helped establish the amino acid register. The quiescent conformation structure (PDB ID: 4HKS; determined at 3.35 Å) was used as a reference for modeling of the M1-M3 portion and the 4.35 Å structure in space group P42212 was used for M4/M4-ext. Minor adjustments of the M4 and M4-ext helices were made as necessary. Refinement was done using rigid body and DEN refinement in CNS utilizing NCS, helical secondary structure (backbone phi, psi) and phase restraints (Brünger et al., 1998; Brunger et al., 2012; Schröder et al., 2007; Schröder et al., 2010). Grouped B-factor and TLS refinement were performed (in PHENIX), for which each of the four channels was defined as a group, as is appropriate for modest-resolution data. The final model contains residues 148–327 of Orai, excluding the following residues that did not have well-enough defined electron density to direct model building: 181–188 (the M1-M2 loop) and 220–239 (the M2-M3 loop).
 
-## WT Oraicryst (I41 space group)
+#### WT Oraicryst (I41 space group)
 
 Initial phases for the structure of WT Oraicryst were determined by MR using the K163W Oraicryst structure (space group I41) as an initial model in the program PHENIX (Adams et al., 2010). Diffraction data were collected to maximize the anomalous scattering from iron (λ = 1.738 Å). Single-wavelength anomalous diffraction (SAD) phases derived from the anomalous density (presumably from iron) in the basic region of the pore were combined with the molecular replacement phases (MR-SAD method) using AutoSol of PHENIX (Adams et al., 2010). Potential phase bias was further minimized by density modification with solvent flattening, histogram matching, and 24-fold NCS averaging using the program DM (Cowtan, 1994). Model building was aided by the quiescent conformation (PDB ID: 4HKR; 3.35 Å resolution) and by the 4.35 Å resolution structure of K163W Oraicryst from the P42212 space group. Minor adjustments of the M4-ext helices were made in COOT (Emsley et al., 2010). Refinement was done using rigid body and DEN refinement in CNS (Brünger et al., 1998; Brunger et al., 2012; Schröder et al., 2007; Schröder et al., 2010). During refinement, NCS, helical secondary structure (backbone phi, psi) restraints and experimental phase restraints were applied. Grouped B-factor and TLS refinement were performed (in PHENIX), for which each of the four channels was defined as a group. The final model contains residues 148–327 of Orai, excluding the following residues that did not have well-enough defined electron density to direct model building: 181–191 (the M1-M2 loop) and 220–239 (the M2-M3 loop).
 
-## H206A Oraicryst (I41 space group)
+#### H206A Oraicryst (I41 space group)
 
 Initial phases for the structure of H206A Oraicryst were obtained with MR using a truncated structure (amino acids 148–309) of WT Oraicryst (I41 space group) as a search model in PHENIX. At this stage, electron density maps contained broken density for the four channels in the asymmetric unit. These phases were used to identify four Gd3+ sites (one site in the glutamate ring of each channel in the ASU) from the dataset collected from a crystal soaked in GdCl3 (Table 1) and the phases were improved using the MR-SAD method (using AutoSol in PHENIX). The phases were then improved using solvent flattening, histogram matching, and four-fold non-crystallographic symmetry (NCS) averaging with the program DM (Cowtan, 1994) using an entire channel as the reference region for NCS averaging. This yielded continuous electron density for helices. These phases were used as starting phases for the native dataset and were improved and extended to 6.7 Å resolution using the 24-fold NCS present within the asymmetric unit. For the 24-fold averaging, a single Orai subunit corresponding to amino acids 148–309 was used as the reference region (with solvent flattening, histogram matching, and NCS averaging performed in DM). This map (shown in Figure 4A,B) was used to direct model building. The initial model was generated by rigid body fit of WT Oraicryst subunits and adjusted manually in COOT (e.g. to account for the additional bend in M1) (Emsley et al., 2010). Side chain conformations cannot be determined from the electron density due to the limit of the diffraction data; side chains are included in the atomic model for reference, however, and their conformations are based on those observed in the quiescent conformation (PDB 4HKR) for amino acids in M1-M4a and those from the 4.35 Å resolution structure presented here (P42212 space group of K163W Oraicryst) for amino acids in M4b and M4-ext. Helical regions were modeled with ideal α-helical geometry and side chain rotamers were selected from frequently occurring conformations (Hintze et al., 2016) and to minimize steric clashes (Word et al., 1999). Refinement was done using rigid body and DEN refinement in CNS utilizing NCS and helical secondary structure (backbone phi, psi) restraints (Brünger et al., 1998; Brunger et al., 2012; Schröder et al., 2007; Schröder et al., 2010). Grouped B-factor and TLS refinement were performed (in PHENIX), for which each of the four channels was defined as a group. Highly redundant data allowed us to visualize anomalous-difference electron density arising from the sulfur atoms of methionine or cysteine residues on each of the M1-M4 helices and on the M4-ext helix (Table 1). These anomalous peaks confirm the assigned amino acid register and indicate the accuracy of the crystallographic phases (Figure 4—figure supplement 1). The model contains residues 148–327 of Orai, excluding the following residues that did not have well-enough defined electron density to direct model building: 181–191 (the M1-M2 loop) and 220–239 (the M2-M3 loop).
 
-## Anomalous-difference electron density maps for ion experiments
+#### Anomalous-difference electron density maps for ion experiments
 
 Phases for the three anomalous-difference electron density maps in Figure 6 (Table 1) were determined by MR-SAD (Phenix, using H206A Oraicryst for MR and the anomalous signal from ions), and were improved by 24-fold NCS averaging, solvent flattening and histogram matching in DM. Anomalous difference electron density for each ion was observed, with approximately the same sigma level and position, in all four channels of each asymmetric unit.
 
-## Reconstitution and flux assay
+### Reconstitution and flux assay
 
 Orai constructs were purified and reconstituted into lipid vesicles using a modified published procedure (Hou et al., 2012). A lipid mixture containing 15 mg/ml POPE (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine) and 5 mg/ml POPG (1-palmitoyl-2-oleoyl-sn-glycero-3-phospho(1’-rac-glycerol)) was prepared in water and solubilized with 8% (w/vol) n-decyl-β-D-maltopyranoside. Purified WT or H206A Oraicryst protein was mixed with the solubilized lipids to obtain a final protein concentration of 0.5 mg/ml and a lipid concentration of 10 mg/ml. Detergent was removed by dialysis (15 kDa molecular weight cutoff) at 4°C for 7 days against a reconstitution buffer containing 10 mM HEPES pH 7.0, 150 mM KCl and 0.2 mM ethylene glycol tetraacetic acid (EGTA), with daily buffer exchanges and utilizing a total volume of 14 l of reconstitution buffer. The reconstituted sample was sonicated (~30 s), aliquoted, flash-frozen in liquid nitrogen and stored at −80°C.
 
@@ -166,13 +717,13 @@ Flux experiments using V174A Oraicryst and Orai bearing the simultaneous R155S, 
 
 Incorporation of purified Orai proteins into proteoliposomes was assessed by solubilizing proteoliposomes containing 0.1 mg/ml Oraicyst or SSS Oraicryst in buffer containing 40 mM Tris-HCl pH8.5, 150 mM NaCl and 10 mM DDM at 4°C for 1 hr. After the samples were clarified by centrifugation at 20,800 g for 1 hr at 4°C before SEC analysis. Supernatants were loaded onto a Superose 6 Increase column (10/300 GL; GE healthcare) in buffer containing 10 mM Tris-HCl pH8.5, 150 mM NaCl and 1 mM DDM, using tryptophan fluorescence for protein detection.
 
-## Live cell Ca2+ influx measurements with GCaMP6s
+### Live cell Ca2+ influx measurements with GCaMP6s
 
 Orai constructs were expressed with N-terminal mCherry tags using a modified pNGFP-EU vector (Kawate and Gouaux, 2006) in which cDNA encoding GFP was replaced with that for mCherry (between the NotI and BglII restriction sites; vector denoted pNmCherry). The expression of Orai was checked using fluorescence-detection size exclusion chromatography using the mCherry fluorescence signal (e.g. Figure 7—figure supplement 1) (Kawate and Gouaux, 2006). The cDNA for full-length Drosophila melanogaster STIM was cloned into the pNGFP-EU vector using the NheI and PstI restriction sites and has no expression tag. The constructs of Orai are as follows: (1) Oraicryst-RR, the construct of Orai used to determine the quiescent structure (Hou et al., 2012); amino acids 133–341 with the following mutations: C224S, C283T, P276R and P277R. (2) Amino acids 120–351 of wild type Orai (denoted ‘Orai’ in Figure 2 and Figure 7—figure supplement 1). (3) Amino acids 120–351 of Orai with the following mutations: R155S, K159S, and K163S (denoted ‘SSS Orai’ in Figure 7).
 
 HEK293 cells were maintained in Dulbecco's Modified Eagle's medium (DMEM, the Media Preparation Core of MSKCC) supplemented with 10% fetal bovine serum (Gibco, catalog A31606-02). Approximately 1.5 × 106 cells were co-transfected (in a six-well dish) using the Lipofectamine 3000 transfection reagent (Invitrogen, catalog L3000-015) with 2 μg GCaMP6s plasmid (Chen et al., 2013) and 0.15 μg Orai-mCherry plasmid and/or 0.6 μg STIM plasmid (using the P3000 reagent according to the manufacturer’s protocol). Empty pNmCherry vector was co-transfected with GCaMP6s as a control. Approximately 16 hr after transfection, the cells were trypsinized (Corning, catalog 25–053 Cl), resuspended in FluoroBrite DMEM (GIBCO, catalog A18967-01) supplemented with 2 mM L-glutamine (GIBCO, catalog 25030–081), and seeded to a 384-well plate (~3×104 cells per well). Approximately 8 hr after seeding, the cells were gently rinsed once with 0Ca solution (10 mM HEPES pH 7.4, 150 mM NaCl, 4.5 mM KCl, 3 mM MgCl2, 0.5 mM EGTA and 10 mM D-glucose). After removing the rinse solution, 20 μl of 0Ca solution was added to each well and the cells were incubated for 30–40 min before fluorescence measurements. Fluorescence measurements were taken using Hamamatsu FDSS at Ex/Em = 480/527 nm. After recording for 5 min, 10 μl 0Ca solution containing thapsigargin (TG) was added to each well to yield a final concentration of 1 μM TG. After a 10 min incubation with TG, 10 μl solution containing 10 mM HEPES pH 7.4, 146 mM NaCl, 4.5 mM KCl, 10 mM CaCl2 and 10 mM D-glucose was added to each well to yield a final Ca2+ concentration of~2 mM. Another 8 min of recording was taken after the Ca2+ addition. Fluorescence was recorded every 2 s. The Gcamp6s intensity traces were generated from an average ±SEM of fluorescence reading from three wells. Data for each time point were plotted as ΔF/ F0 in the Y-axis, where F is the measured fluorescence, F0 is the initial fluorescence value, and ΔF = F F0.
 
-## Flow cytometry
+### Flow cytometry
 
 Murine monoclonal antibodies 17E5 and 13C8 were raised against purified Drosophila Orai by the Antibody and Bioresource core facility at Memorial Sloan Kettering Cancer Center. To assess the binding epitopes of these antibodies, constructs of Orai containing mutations or deletions were made within different parts of the channel and antibody binding was assessed by FSEC. These results indicated that 17E5 binds to the M1-M2 loop on the extracellular side of Orai and that 13C8 binds to a C-terminal region on the intracellular side of the channel.
 

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.32871.001 Nonmusclemyosin 2 (NM-2) powers cell motility and tissue morphogenesis by assembling into bipolar filaments that interact with actin. Although the enzymatic properties of purified NM-2 motor fragments have been determined, the emergent properties of filament ensembles are unknown. Using single myosin filament in vitro motility assays, we report fundamental differences in filaments formed of different NM-2 motors. Filaments consisting of NM2-B moved processively along actin, while under identical conditions, NM2-A filaments did not. By more closely mimicking the physiological milieu, either by increasing solution viscosity or by co-polymerization with NM2-B, NM2-A containing filaments moved processively. Our data demonstrate that both the kinetic and mechanical properties of these two myosins, in addition to the stochiometry of NM-2 subunits, can tune filament mechanical output. We propose altering NM-2 filament composition is a general cellular strategy for tailoring force production of filaments to specific functions, such as maintaining tension or remodeling actin.
+Nonmusclemyosin 2 (NM-2) powers cell motility and tissue morphogenesis by assembling into bipolar filaments that interact with actin. Although the enzymatic properties of purified NM-2 motor fragments have been determined, the emergent properties of filament ensembles are unknown. Using single myosin filament in vitro motility assays, we report fundamental differences in filaments formed of different NM-2 motors. Filaments consisting of NM2-B moved processively along actin, while under identical conditions, NM2-A filaments did not. By more closely mimicking the physiological milieu, either by increasing solution viscosity or by co-polymerization with NM2-B, NM2-A containing filaments moved processively. Our data demonstrate that both the kinetic and mechanical properties of these two myosins, in addition to the stochiometry of NM-2 subunits, can tune filament mechanical output. We propose altering NM-2 filament composition is a general cellular strategy for tailoring force production of filaments to specific functions, such as maintaining tension or remodeling actin.
 
 ## Introduction
 
@@ -35,47 +35,171 @@ To understand their individual mechanical properties, we used purified full-leng
 
 ## Results
 
-## NM2-B filaments move processively on actin filaments
+### NM2-B filaments move processively on actin filaments
 
 In a first set of experiments, we investigated the motility of NM2-B filaments using TIRF microscopy. We introduced a HaloTag at the N-terminus of the myosin heavy chain to allow for covalent labeling with dyes of different colors (Figure 1—figure supplement 1). The regulatory light chain (RLC) was phosphorylated using MLCK in order to activate the enzymatic activity of the myosin and to facilitate filament formation. We found that individual HaloTag-NM2-B filaments moved processively along fluorescently labeled actin filaments attached to a glass coverslip (Figure 1A and B; Video 1). The NM2-B filaments were slightly longer (~300 nm) than the diffraction limited resolution of our TIRF microscope and usually appeared as slightly elongated objects whose long and short axes could be readily distinguished. In the presence of 1 mM ATP, HaloTag-NM2-B filaments showed robust processive motility with a characteristic run length of 1.95 ± 0.12 μm (mean ± SEM) and a velocity of 43 ± 21 nm∙ s−1 (mean ± SD, n = 1463 filaments) (Figure 1C and D). This experiment confirms an earlier study showing that NM2-B filaments purified with an N-terminally fused GFP-RLC (GFP-RLC-NM2-B) also moved processively along actin (Nagy et al., 2013). To directly compare the movements of myosin filaments using these two labeling strategies, we re-examined the movement of GFP-RLC-NM2-B filaments under the same conditions (Figure 1—figure supplement 1, Figure 1—figure supplement 2, Video 2). GFP-RLC-NM2-B filaments showed the same level of processivity as HaloTag-NM2-B filaments. Both types of myosin labeling are being used in cell biological studies (Beach et al., 2017; Bruun et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig1-v2.jpg)
+
+**Figure 1.:** (A) Movie frames showing HaloTag-NM2-B filaments (individual filaments marked by colored arrows), moving along Alexa Fluor 647 phalloidin labeled actin filaments (blue). (B) Kymograph for NM2-B filaments showing clear processive movement (diagonal lines) and long run lengths. (C) Frequency distribution histogram of NM2-B filament velocity. Black line is the Gaussian fit to the data yielding a velocity of 43 ± 1 nm · s-1(mean ± SEM; SD = 27 nm · s−1, R2 = 0.98). (D) Frequency distribution histogram of NM2-B filament run length. Black line is the single exponential fit to the data. The characteristic velocity and run length with their standard errors obtained from the fits are indicated in the graphs (n = 1463, R2 = 0.99).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SDS-polyacrylamide gel of the constructs used in the experiments. The position of the RLC and the GFP-RLC are indicated. Lane 1, Molecular weight markers; lane 2, GFP-RLC-NM2-A; lane 3, HaloTag-NM2-A; lane 4, GFP-RLC-NM2-B; lane 5, HaloTag-NM2-B, lane 6 HaloTag-NM2-B Tail. (B) Negatively stained EM images of the bipolar filaments formed by GFP-RLC- and HaloTag-NM2-A and -NM2-B. For all constructs, the filaments have similar appearances and dimensions as unlabeled NM2-B filaments (Billington et al., 2013). Scale bars 100 nm. (C) Frequency distribution histograms of actin filaments velocity in the actin gliding assays. Black lines are the Gaussian fits to the data. The velocity and standard error obtained from the fit are indicated in each panel. The n value, SD and R2 values are 190, 9 nm · s−1, 0.99; 1617, 11 nm · s−1, 0.99; 471, 18 nm · s−1, 0.98; and 221, 15 nm · s−1, 0.98 for GFP-RLC-NM2-A, HaloTag NM2-A, GFP-RLC-NM2-B and HaloTag-NM2-B, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Movie frames showing GFP-RLC-NM2-B filaments (green and arrows), moving along rhodamine phalloidin-labeled actin filaments (red). (B) Kymograph for NM2-B filaments showing clear processive movement (diagonal lines) and long run lengths. (C) Frequency distribution histogram of NM2-B filaments run length. Black line is the single exponential fit to the data. The reported error is the S.E.M. (R2 = 0.94).
+
+![Video 1.](https://cdn.elifesciences.org/articles/32871/elife-32871-video1.mp4.jpg)
+
+**Video 1.:** The movie shows Alexa 488 labelled HaloTag-NM2-B filaments (green) moving along surface immobilized Alexa-647-labeled actin filaments (blue).
+
+![Video 2.](https://cdn.elifesciences.org/articles/32871/elife-32871-video2.mp4.jpg)
+
+**Video 2.:** Left panels are EM images of NM2-B filaments that interact with an actin filament using the myosin heads from one (upper panel) or both their ends (lower panel) (images taken from Billington et al., 2013). In the right panels, movies from single filament in vitro motility assays show several examples of GFP-RLC-NM2-B filaments (green) moving along actin filaments (red). It can be seen that NM2-B filaments were able to move with their long axis either perpendicular or parallel to the actin filaments according with the EM images. Moreover, upper and middle right panels show clearly GFP-RLC-NM2-B filaments that tumbled on actin filaments (arrows).
+
 Several interesting features of the NM2-B filament motility were observed in our timelapse recordings, reflecting possible behaviors of NM2 filaments in cells. A single NM2-B filament could move on actin with its long axis perpendicular or parallel to the actin filament and could flip back and forth between these two modes while moving (Video 2). In the case of perpendicular interactions only one side of the myosin filament interacted with actin. The polarity of the actin filament determines the direction the bipolar myosin filament moves even when the NM2 filament is interacting in a parallel manner with the actin filament where motors from each end of the bipolar filament are in proximity to actin. When NM2-B filaments encountered an intersection of two actin filaments, they often paused before continuing along the original filament or switching to the other (Video 3). Since the actin filaments in this assay were tethered to the coverslip surface this would be analogous to the myosin exerting isometric tension on two actin filaments in a cell. In support of this, when a NM2-B filament was bound to a surface-tethered actin filament, we observed that it could simultaneously propel the sliding of a free actin filament (Video 4). This represents an example for how NM2 filaments can remodel actin cytoskeletal networks, such as those in lamellipodia.
 
-## Merging and splitting of multi-filament structures
+![Video 3.](https://cdn.elifesciences.org/articles/32871/elife-32871-video3.mp4.jpg)
+
+**Video 3.:** Left panel shows an EM image of an NM2 filament interacting with two actin filaments simultaneously (image taken from Billington et al., 2013). The movies in the right panels show examples of GFP-RLC-NM2-B filaments (green) that move along an actin filament (red) and stop at the intersection with another actin filament with opposite polarity (magenta arrows). In this situation, as in the EM image on the right, the NM2-B filaments interact with their bipolar ends with two different actin filaments in an isometric condition.
+
+![Video 4.](https://cdn.elifesciences.org/articles/32871/elife-32871-video4.mp4.jpg)
+
+**Video 4.:** In this movie, an actin filament previously free in solution lands on a surface immobilized actin filament (blue arrow). The free actin filament is moved by an GFP-RLC-NM2-B filament that is bound to the immobilized actin filament. The NM2-B filament responsible for this movement is also translocating along the immobilized filament. Near the end of the movie, the free actin filament takes an abrupt turn as it is caught by a myosin filament that is bound to the surface close to the immobilized actin filament.
+
+### Merging and splitting of multi-filament structures
 
 In cells, individual myosin filaments can align vertically to form highly registered stacks (Fenix et al., 2016; Hu et al., 2017; Shutova et al., 2014; Verkhovsky et al., 1995). Stacking of filaments was also occasionally observed in preparations of pure NM2-B in the electron microscope (Billington et al., 2013). Video 5 shows an example where a bright stack of NM2-B myosin filaments landed next to an immobilized actin filament. An individual myosin filament unit delaminated from the stack and moved along the actin filament. Later in the same movie, another individual myosin filament landed on the actin filament, moves toward the stack and appeared to join it. We found that multi-filament structures dynamically formed in our in vitro motility assays when one myosin filament encountered another while moving along an actin filament (Video 6). In this movie, biotinylated-actin filaments bound to the surface were labeled with Alexa Fluor-647-phalloidin (blue) and untethered actin filaments were labeled with rhodamine phalloidin (red). The movie capture began as soon as possible after initiation of the assay. As the assay proceeded, the individual myosin filaments coalesced into discrete stacks. The stacks were dynamic and could lose myosin filaments units as they moved along actin (Video 7). These phenomena suggests that the interaction forces holding filament units together are similar in magnitude to the force that a myosin filament exerts on actin, and that myosin filaments passing in close proximity are sufficient for stack generation.
 
-## More than four NM2B motors are required for processive movement
+![Video 5.](https://cdn.elifesciences.org/articles/32871/elife-32871-video5.mp4.jpg)
 
-The duty ratio of a single NM2-B motor (subfragment-one) is a function of the actin and ADP concentration but is likely to be at least 0.23 (Wang et al., 2003). The apparent duty ratio of the filament, rf, is given by the following equation: (1)rf=(1−(1−r)n)where n = number of motor domains in the filament (Nagy et al., 2013). This equation assumes that each motor is capable of interacting with actin. In the presence of ATP, NM2-B molecules only interact with actin via one motor at a time (Nagy et al., 2013), so corrections for intrahead gating as shown by Kovács et al. (2007) do not have to be considered. The processive single molecule double-headed cargo motor, myosin 5a has a duty ratio of 0.9 calculated using the experimentally determined single-head duty ratio of 0.67 and Equation (1) (De La Cruz et al., 1999). Assuming that rf ≥ 0.9 is required to allow for processive movements, Equation (1) predicts that about nine NM2-B motors would need to be physically in a position to bind the actin filament to ensure that at least one of these motors is bound to actin at any given time. If no motors in a myosin filament are bound to actin, it would terminate a processive run and diffuse away from actin. Since there are, on average, 30 motors per half filament, it is not surprising that NM2-B filaments move processively as single units.
+**Video 5.:** Left panel shows an EM images of GFP-RLC-NM2 stacks. These supramolecular structures are formed by lateral and serial interactions of single NM filaments. The movie in the right panel shows an object larger and brighter than a single filament, likely a stack of NM2-B filaments, that lands near an actin filament (blue arrow). A single NM2-B filament can be seen leaving the stack, while another joined it (magenta arrows).
+
+![Video 6.](https://cdn.elifesciences.org/articles/32871/elife-32871-video6.mp4.jpg)
+
+**Video 6.:** Actin filaments bound to the surface are labeled with Alexa-647-phalloidin (blue). Free actin filaments are label with Rhodamine phalloidin (Red). The myosin filaments are HaloTag-NM2-B labeled with AlexaFluor488 (green). At the start of the assay, numerous individual NM2-B filaments are bound to and moving along the fixed actin filament and free actin filaments can be seen to be moved by these same myosins. Whenever an individual myosin filament overtakes another the two filaments merge to form a stack until finally, only a small number of myosin filament stacks remain.
+
+![Video 7.](https://cdn.elifesciences.org/articles/32871/elife-32871-video7.mp4.jpg)
+
+**Video 7.:** A bright stack of GFP-RLC-NM2B myosin filaments moving along an actin filament loses fluorescence intensity in quantal steps suggesting dissociation of one or more individual NM2-B units
+
+### More than four NM2B motors are required for processive movement
+
+The duty ratio of a single NM2-B motor (subfragment-one) is a function of the actin and ADP concentration but is likely to be at least 0.23 (Wang et al., 2003). The apparent duty ratio of the filament, rf, is given by the following equation: 
+
+$$
+r_{f}=(1−(1−r)^{n})
+$$
+
+where n = number of motor domains in the filament (Nagy et al., 2013). This equation assumes that each motor is capable of interacting with actin. In the presence of ATP, NM2-B molecules only interact with actin via one motor at a time (Nagy et al., 2013), so corrections for intrahead gating as shown by Kovács et al. (2007) do not have to be considered. The processive single molecule double-headed cargo motor, myosin 5a has a duty ratio of 0.9 calculated using the experimentally determined single-head duty ratio of 0.67 and Equation (1) (De La Cruz et al., 1999). Assuming that rf ≥ 0.9 is required to allow for processive movements, Equation (1) predicts that about nine NM2-B motors would need to be physically in a position to bind the actin filament to ensure that at least one of these motors is bound to actin at any given time. If no motors in a myosin filament are bound to actin, it would terminate a processive run and diffuse away from actin. Since there are, on average, 30 motors per half filament, it is not surprising that NM2-B filaments move processively as single units.
 
 To test this hypothesis directly, we artificially reduced the number of motors in a filament by co-polymerization of full-length NM2-B with a nonmuscle myosin-2B tail fragment which was N-terminally truncated and lacked the motor and neck domains. Numerous studies have shown that tail fragments from various myosins II do not form discrete 300 nm bipolar assemblies, but instead polymerize into large irregular aggregates or paracrystalline arrays (Cohen et al., 1970; Franke et al., 2005). We replaced the motor and light chain binding domains at the N-terminus of the myosin NM2-B heavy chain with a HaloTag. This chimeric myosin tail fragment polymerized into bipolar filaments with roughly the same length and number of molecules as wild-type NM2-B filaments (Figure 2A, middle panel). The HaloTag moieties (MW = 33 kDa) can be seen as discrete globular domains projecting away from the filament backbone.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig2-v2.jpg)
+
+**Figure 2.:** (A) Negative stain EM images of bipolar filaments formed by 100% HaloTag-NM2-B (left panel), 100% Halotag-NM2-B tail fragments (middle panel) and bipolar co-filament at 1:5 mixing ratio (NM2-B:Tail) (right panel). Arrows indicate a myosin motor domain. Arrowheads indicate a HaloTag moiety which can be seen as discrete globular domain smaller in size that the motor domain. (B) Frequency distribution histograms of NM2 co-filament run length. Black lines are the single exponential fit to the data. The mixing ratio and the characteristic run length obtained from the fit are indicated in each panel (n = 957, 378 and 113 for mixing ratios of 1:1, 1:2 and 1:5 NM2-B:Tail, respectively R2 = 0.99 for each fitting). (C) Characteristic run length is plotted as a function of number of motors per half filament. The black line is the linear fit to the data (R2 = 0.99). (D) Frequency distribution of velocity for all mixing ratios of co-filaments. The experimentally determined average number of motors per half filament are given for each mixing experiment in the inset. Lines are the Gaussian fits to the data. The velocity obtained from the fit is reported in Figure 2—figure supplement 2.. (E) The dependence of the characteristic velocity on the number of motors in a half filament. In all panels, errors represent S.E.M. and sample size is given above.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Frequency distributions of the total fluorescence intensity of Alexa Fluor 488 (AF488) labeled molecules from AF488-HaloTag-NM2-B filaments and co-filaments formed by mixing AF488-HaloTag-NM2-B full-length with tetramethylrhodamine (TMR)-labeled HaloTag-NM2-B myosin tail for the three mixing ratio. Only filaments moving along actin were chosen for this analysis. (B) Dependency of the number of NM2-B molecules that formed the co-filaments, calculated according to Equation (2), on the mixing ratio (black symbols). Black line is the linear fit to the data. The error bars are S.E.M. The red line is the calculated relation assuming that the co-polymerization of NM2-B molecules and tails and the subsequent association of these filaments with actin is unbiased. The error bars represent the S.E.M. The deviation from this line suggests that filaments with a higher percentage of NM2-B have a greater probability of binding to and moving along the actin filament.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Frequency distribution histograms at three mixing ratios. The velocity and S.E.M. are given above the histograms. The standard deviations and R2 values for the various mixing experiments are 17 nm.s−1, 0.99; 20 nm.s−1, 0.99; and 18 nm.s−1,, 0.99, respectively for the 2:1, 1:2 and 1:5 ratios of NM2-B full length:tail.
+
 We co-polymerized full-length HaloTag-NM2-B-labeled with Alexa Fluor 488 (AF488) and HaloTag-NM2-B tail fragments labeled with tetramethylrhodamine (TMR). Changing the ratio of NM2-B molecules to tail fragments allowed us to titrate the number of motor domains present in these co-filaments (Figure 2A, right panel). We define RNM2-B to be the average fraction of NM2-B motor domains in a co-filament relative to 100% NM2-B filaments. Three different mixing ratios were used in our experiments, 1:1, 1:2 and 1:5 (NM2-B molecules:NM2-B tails) that correspond to RNM2-B values of 0.5, 0.33 and 0.17, respectively, if the two molecular species polymerized randomly into filaments. We used the co-filaments to estimate the minimum number of myosin motor domains that are required for the NM2-B filaments to be processive. For all three mixing ratios, co-filaments were observed moving processively along actin filaments. The run length and velocity of co-filaments at different mixing ratios were then determined (Figure 2B and D, Videos 8–10).
 
-The RNM2-B values indicated in the previous paragraph are theoretical values calculated assuming that the co-polymerization of the HaloTag-NM2-B tail fragments and the HaloTag-NM2-B full-length myosin molecules was unbiased. To define the actual values of RNM2-B for filaments that were moving along the actin filaments, we first determined the average fluorescence intensity of 100% AF488-HaloTag-NM2-B filaments moving on actin (I2B). The average fluorescence intensity of co-filaments moving on actin was then measured in the same 488 nm excitation channel (I2B,cof) (Figure 2—figure supplement 1). We calculated RNM2-B according to the following equation:(2)RNM2-B= I2B,cofI2B
+![Video 8.](https://cdn.elifesciences.org/articles/32871/elife-32871-video8.mp4.jpg)
 
-We then calculated the average number of NM2-B motors domains per co-filament (n) according to Equation 3:(3)n=RNM2−B⋅ncwhere nc is the average number of motors present in filaments formed by NM2-B (=60) as estimated from EM studies (Billington et al., 2013). The values of RNM2-B and n at each mixing ratio are reported in Supplementary file 1 and Figure 2—figure supplement 2A. Figure 2—figure supplement 2B shows the relation between n and mixing ratio. We found that the average percentage of full-length NM2-B in moving filaments was slightly higher than predicted for random association of the HaloTag-NM2-B tail fragment and the full-length myosin molecule. This was particularly evident for mixtures containing a large excess of tail fragment.
+**Video 8.:** The movies show co-filaments (yellow) of HaloTag-NB2B (green) and HaloTag-Tail (red) at a mixing ratio of 1:1 moving along surface immobilized Alexa-647-labeled actin filaments (blue). The NM2-B molecules and tail fragments were labeled with AlexaFluor488 and TMR, respectively. In these conditions, the average number of NM2-B motors per co-filament, n, was 36 ± 2.
+
+![Video 9.](https://cdn.elifesciences.org/articles/32871/elife-32871-video9.mp4.jpg)
+
+**Video 9.:** The movies show co-filaments (yellow) of HaloTag-NB2B (green) and HaloTag-Tail (red) at a mixing ratio of 1:2 moving along surface immobilized Alexa-647-labeled actin filaments (blue). The NM2-B molecules and tail fragments were labeled with AlexaFluor488 and TMR, respectively. In these conditions, the average number of NM2-B motors per co-filament, n was 28 ± 2.
+
+![Video 10.](https://cdn.elifesciences.org/articles/32871/elife-32871-video10.mp4.jpg)
+
+**Video 10.:** The movies show co-filaments (yellow) of HaloTag-NB2B (green) and HaloTag-Tail (red) at a mixing ratio of 1:5 moving along surface immobilized Alexa-647-labeled actin filaments (blue). The NM2-B molecules and tail fragments were labeled with AlexaFluor488 and TMR, respectively. In these conditions, the average number of NM2-B motors per co-filament, n was 18 ± 4.
+
+The RNM2-B values indicated in the previous paragraph are theoretical values calculated assuming that the co-polymerization of the HaloTag-NM2-B tail fragments and the HaloTag-NM2-B full-length myosin molecules was unbiased. To define the actual values of RNM2-B for filaments that were moving along the actin filaments, we first determined the average fluorescence intensity of 100% AF488-HaloTag-NM2-B filaments moving on actin (I2B). The average fluorescence intensity of co-filaments moving on actin was then measured in the same 488 nm excitation channel (I2B,cof) (Figure 2—figure supplement 1). We calculated RNM2-B according to the following equation:
+
+$$
+R_{NM2-B}=\frac{I_{2B,cof}}{I_{2B}}
+$$
+
+We then calculated the average number of NM2-B motors domains per co-filament (n) according to Equation 3:
+
+$$
+n=R_{NM2−B}⋅n_{c}
+$$
+
+where nc is the average number of motors present in filaments formed by NM2-B (=60) as estimated from EM studies (Billington et al., 2013). The values of RNM2-B and n at each mixing ratio are reported in Supplementary file 1 and Figure 2—figure supplement 2A. Figure 2—figure supplement 2B shows the relation between n and mixing ratio. We found that the average percentage of full-length NM2-B in moving filaments was slightly higher than predicted for random association of the HaloTag-NM2-B tail fragment and the full-length myosin molecule. This was particularly evident for mixtures containing a large excess of tail fragment.
 
 For each mixing ratio examined, the filament run length was fit to a single exponential decay (Figure 2B). The characteristic run length decreased as the number of motor domains decreased from 0.98 ± 0.03 μm, when there were on average 18 motors per half filament, to 0.45 ± 0.04 μm at an average of 9 motors per half filament (Figure 2C). The data in Figure 2C were fit to a linear equation. The intercept of this line with the x axis is 4.1 ± 1.3 motors per half filament, suggesting that the minimum number of NM2-B motors that are required to maintain processive movement is at least 5. In contrast to the strong dependence of the run length on the number of NM2-B motors present in the co-filaments, the velocity of filament movement has little dependence on motor number (Figure 2D,E; and Figure 2—figure supplement 2).
 
-## NM2-A filaments do not move processively under conditions where NM2-B filaments are processive
+### NM2-A filaments do not move processively under conditions where NM2-B filaments are processive
 
 We next examined whether filaments formed of 100% NM2-A could move processively similar to our observations for NM2-B. Despite having similar numbers of motors/filament as NM2-B filaments, no processive movements of GFP-RLC-NM2-A filaments were observed under identical experimental conditions (Video 11). Strikingly, even binding events of the NM2-A filaments to the actin filaments were rarely observed. This was not due to lack of enzymatic or mechanical activity, since NM2-A monomers bound to a coverslip surface smoothly propelled actin filaments in the gliding assay (Video 12). We hypothesized that the absence of processive movement was not due to a lack of activity of the monomers, but rather an intrinsic difference in the kinetic properties of NM2-A versus NM2-B molecules. Note, that in contrast to a previous study (Diensthuber et al., 2011), we found no effect of phalloidin on the movement of actin filaments by NM2-A (Supplementary file 3).
 
-## NM2-A filaments move processively in buffer approximating cellular viscosity
+![Video 11.](https://cdn.elifesciences.org/articles/32871/elife-32871-video11.mp4.jpg)
+
+**Video 11.:** This movie shows that under the same experimental conditions used to study the movement of NM2-B filaments, GFP-RLC-NM2-A filaments (green) were not able to move processively along actin (red) and even binding events were rarely observed. It must be noted that the experimental conditions and concentrations were the same as for NM2-B filaments experiments.
+
+![Video 12.](https://cdn.elifesciences.org/articles/32871/elife-32871-video12.mp4.jpg)
+
+**Video 12.:** The movie shows actin filaments (red) moving as translocated by surface bound GFP-RLC-NM2-A monomers in an in vitro gliding assay. The actin filaments movement was smooth and continuous with only a small fraction of immobile filaments. This suggests that the absence of processive movement in the single filament TIRF experiments with GFP-RLC-NM2-A is not due to a lack of NM2-A activity.
+
+### NM2-A filaments move processively in buffer approximating cellular viscosity
 
 The environment that NM2 experiences in cells differs in several respects from our in vitro conditions explored thus far. The viscosity experienced by myosin filaments in cells is likely to be considerably higher than in the aqueous medium that was used for the in vitro motility studies (Kalwarczyk et al., 2011) and, in vivo, NM2 molecules can form heterotypic filaments that are composed of more than one myosin paralog (Beach et al., 2014; Shutova et al., 2014). Therefore, we first explored whether inclusion of 0.5% methylcellulose in the assay buffer, which gave a viscosity similar to that measured in the cytoplasm of cells for objects the size of NM2 filaments (see Materials and methods) (Kalwarczyk et al., 2011), would alter the motile properties of NM2-A and NM2-B filaments. Under these conditions, HaloTag-NM2-A filaments showed robust processive movement with an average velocity of 133 ± 75 nm ∙ s−1 (mean ± SD, n = 143) at 30°C (Figure 3A–C and Video 13). We were unable to measure an average run length since most of the NM2-A filaments moved to the end of the actin filaments or became stuck at actin-actin junctions (note vertical lines on kymographs in Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig3-v2.jpg)
 
-**Figure 3.:** (A) Movie frames showing HaloTag-NM2-A filaments (red, selected ones marked by blue and yellow arrows), moving along actin filaments (blue) in presence of 0.5% methylcellulose. Under these conditions, NM2-A filaments are able to move on actin for several microns without detaching. (B) Kymograph for NM2-A filaments in presence of 0.5% methylcellulose. (C) Frequency distribution histograms of NM2-A filament velocity (n = 143). The black line is the Gaussian fit to the data. The velocity is 133 ± 10 nm.s−1 (mean ± SEM; SD = 75 nm.s−1, R2 = 0.81, ). (D) Movie frames showing HaloTag-NM2-B filaments (individual filaments marked by arrows), moving along actin filaments (green) in presence of 0.5% methylcellulose. In these conditions, the processivity of the filaments is increased dramatically relative to experiments in the absence of methylcellulose. (E) Kymograph for NM2-B filaments in presence of 0.5% methylcellulose. Most of the NM2-B filaments reached and accumulated at the end of the actin filaments as shown by the increasing in fluorescence intensity at the end of the actin filament and the vertical line at the end of the kymograph.10.7554/eLife.32871.026Figure 3—source data 1.
+**Figure 3.:** (A) Movie frames showing HaloTag-NM2-A filaments (red, selected ones marked by blue and yellow arrows), moving along actin filaments (blue) in presence of 0.5% methylcellulose. Under these conditions, NM2-A filaments are able to move on actin for several microns without detaching. (B) Kymograph for NM2-A filaments in presence of 0.5% methylcellulose. (C) Frequency distribution histograms of NM2-A filament velocity (n = 143). The black line is the Gaussian fit to the data. The velocity is 133 ± 10 nm.s−1 (mean ± SEM; SD = 75 nm.s−1, R2 = 0.81, ). (D) Movie frames showing HaloTag-NM2-B filaments (individual filaments marked by arrows), moving along actin filaments (green) in presence of 0.5% methylcellulose. In these conditions, the processivity of the filaments is increased dramatically relative to experiments in the absence of methylcellulose. (E) Kymograph for NM2-B filaments in presence of 0.5% methylcellulose. Most of the NM2-B filaments reached and accumulated at the end of the actin filaments as shown by the increasing in fluorescence intensity at the end of the actin filament and the vertical line at the end of the kymograph.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig4-v2.jpg)
+
+**Figure 4.:** (A) Frequency distribution histograms of the run length for NM2-A:NM2-B co-filaments. Black lines are the single exponential fit to the data. The mixing ratio and the characteristic run length obtained from the fit are indicated in each panel (n, R2 = 1454, 0.98, 381, 0.99 and 1121, 0.99 for mixing ratios of 2:1, 1:1 and 1:2 NM2-B:NM2-A, respectively. The reported errors are the S.E.M. (B) Frequency distribution histograms of the velocity of mixed filaments for all mixing ratios. The FNM2-A (fraction of NM2-A in a filament) determined by quantification of the average NM2-A content per filament at each of the mixing ratios described in panel A is given in the insert The n values are 143, 1121, 381, 1454 and 1463 for FNM2-A of 1, 0.71, 0.36, 0.23, and 0, respectively. Lines are the Gaussian fit to the data. The distributions of these data are given in Figure 4—figure supplement 2. (C) The average velocity of co-filament movement as a function of FNM2-A. The velocity for 100% NM2-A is depicted in red and comes from experiments conducted in the presence of methycellulose. The error bars are S.E.M. (D) Dependence of the characteristic run length on FNM2-A. The run length decreases roughly linearly as fraction of NM2-A increases. The value for 100% NM2-A filaments, depicted in red, is set to 0 since NM2-A filaments do not move processively under these conditions. The error bars are S.E.M.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Frequency distributions of the fluorescence intensity of Halotag-NM2-A/NM2-B co-filaments at three mixing ratios and for NM2-A filaments alone. (B) Frequency distributions of the fluorescence intensity of AF488-HaloTag-NM2-B at three mixing ratio and for NM2-B filaments alone. (C) Measured versus expected fraction of NM2-A molecules in the co-filaments. FNM2-A, calculated according to Equation (4) (black symbols). Red line shows the expected values assuming random co-polymerisation of the two myosins. The error bars represent the S.E.M.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/32871/elife-32871-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Frequency distribution histograms of HaloTag-NM2-B:HaloTag-NM2A tail fragment co-filaments velocity at the three mixing ratios used in the experiments. Lines are the Gaussian fit to the data. The mixing ratio and the characteristic velocity (±standard error) obtained from the fit are reported in each panel. The n, S.D., and R2 values are 1454, 20 nm.s−1; 0.98) -, 381; 27 nm.s−1; 0.99; and 1121, 26 nm.s−1, 0.99 for mixing ratios of 2:1, 1:1 and 1:2 NM2-B:NM2A, respectively).
+
+![Video 13.](https://cdn.elifesciences.org/articles/32871/elife-32871-video13.mp4.jpg)
+
+**Video 13.:** The movie shows TMR-labeled HaloTag-NM2-A filaments (green) moves processively along surface immobilized Alexa-647-labeled actin filaments (blue) in presence of 0.5% methylcellulose.
 
 When 0.5% methylcellulose was used with HaloTag-NM2-B filaments, the processivity of the filaments greatly increased to the extent that virtually all NM2-B filaments moved the entire remaining length of the actin filament (Video 14 and Figure 3D,E). Similar results were obtained with GFP-RLC-NM2-B where many of the myosin filaments remained bound to the ends of the actin filament (Video 15). This is particularly notable from the bright vertical lines in the kymograph indicative of multiple NM2-B filaments accumulating at the ends (Figure 3E). Similar behavior was described for smooth muscle myosin filaments in the presence of methylcellulose (Haldeman et al., 2014).
 
-## Co-filaments of NM2-A and NM2-B move processively with intermediate motile properties determined by the proportion of each paralog
+![Video 14.](https://cdn.elifesciences.org/articles/32871/elife-32871-video14.mp4.jpg)
+
+**Video 14.:** The movie shows Alexa-488-labeled HaloTag-NM2-B filaments (green) moving along surface immobilized actin filaments (red) in presence of 0.5% methylcellulose. It can be seen that the processivity of the NM2-B filaments was further increased over that seen in the absence of methylcellulose with many filaments moving greater than 10 µm. Many of the NM2-B filaments reached the end of the filament and did not detach.
+
+![Video 15.](https://cdn.elifesciences.org/articles/32871/elife-32871-video15.mp4.jpg)
+
+**Video 15.:** The movie shows GFP-RLC-NM2B (green) moving along surface immobilized actin filaments (red) in the presence of 0.5% methylcellulose. Note the strong accumulation of myosin at the ends of the actin filaments as the assay proceeds.
+
+### Co-filaments of NM2-A and NM2-B move processively with intermediate motile properties determined by the proportion of each paralog
 
 Given the strikingly different behaviors of NM2-A and NM2-B filaments described above, we next investigated how co-filaments containing both myosin paralogs moved in our assay. We co-polymerized tetramethylrhodamine (TMR)-HaloTag-NM2-A and AF488-HaloTag-NM2-B at three different ratios (2:1, 1:1 and 1:2; NM2-B:NM2-A) to form co-filaments. These mixing ratios should result in an average fraction of NM2-A molecules in the filaments (FNM2-A) of 0.33, 0.5 and 0.67, respectively if the two paralogs co-polymerized randomly. Dual-wavelength analysis of NM2-A and NM2-B fluorescence intensities confirmed these filament compositions (Figure 4—figure supplement 1 and Supplementary file 2) and demonstrated that the two paralogs did co-polymerize randomly. We studied the motility of the mixed isoform filaments using the single filament TIRF assay in the absence of methylcellulose (Figure 4, Videos 16–18). Since NM2-B is the slower, but the more processive of the two NM2 isoforms, the velocity and run length of 100% NM2-B filaments (FNM2-A=0) previously measured represent the lower boundary for the velocity (Figure 1C,D) and the upper boundary for the run length (Figure 4D) of the mixed isoform filaments. The velocity for 100% HaloTag-NM2-A filaments (FNM2-A=1) was measured in the presence of methylcellulose since processive movements for this myosin were otherwise not observed (Figures 3C and 4D, red line and symbols and Video 13). Due to the lack of processivity of 100% NM2-A filaments in the absence of methylcelluose, run length was set to zero.
+
+![Video 16.](https://cdn.elifesciences.org/articles/32871/elife-32871-video16.mp4.jpg)
+
+**Video 16.:** The movies show mixed paralog NM filaments moving along surface immobilized Alexa-647-labeled actin filaments (blue) at a mixing ratio of 2:1. HaloTag-NM2-B and HaloTag-NM-2A molecules were labeled with Alexa 488 (green) and TMR (red), respectively. In these conditions the actual average fraction of NM2-A molecules in the filaments, FNM2-A, was 0.24 ± 0.03.
+
+![Video 17.](https://cdn.elifesciences.org/articles/32871/elife-32871-video17.mp4.jpg)
+
+**Video 17.:** The movies show mixed paralog NM filaments moving along surface immobilized Alexa 647 labelled actin filaments (blue) at a mixing ratio of 1:1. In these conditions FNM2-A was 0.37 ± 0.06.
+
+![Video 18.](https://cdn.elifesciences.org/articles/32871/elife-32871-video18.mp4.jpg)
+
+**Video 18.:** The movies show mixed paralog NM filaments moving along surface immobilized Alexa-647-labeled actin filaments (blue) at a mixing ratio of 1:2. In these conditions FNM2-A was 0.72 ± 0.03.
 
 For all three mixing ratios, the filaments showed a robust processivity that allowed run length and velocity to be measured. The isoform composition of each moving filament was determined by measurement of the intensities of the two colors and varied only slightly from the ratios expected for random co-polymerization (Figure 4—figure supplement 1). We did not see evidence for the filaments changing their isoform composition during an actin-attached processive movement. Run length distributions were well described by a single exponential decay (Figure 4A) and decreased linearly with increasing FNM2-A from 1.88 ± 0.14 μm (mean ± S.E.M., n = 1121) at FNM2-A = 0.72, to 0.79 ± 0.01 μm (n = 1454) at FNM2-A = 0.24)(Figure 4D). The distributions of the velocity of the filaments at each mixing ratio were not well fit to a single Gaussian (Figure 4—figure supplement 2). This is particularly evident at the 1:2 mixing ratio. For this reason, we decided to calculate the arithmetic mean velocity of all the filaments at a given mixing ratio to represent v. The velocity of the mixed filaments is largely determined by the velocity of the slower moving NM2-B (Figure 4C). This was consistent with previous results from actin gliding in vitro motility assays, which show that slower myosins dominate the velocity when myosin 2 isoforms of different inherent velocity are randomly bound to the coverslip surface, which was modeled by assuming the two myosin isoforms affect the attachment lifetimes of each other (Cuda et al., 1997). Our results show that the mechanical properties of single heterotypic NM2 filaments can be varied depending on the ratio of their paralogs.
 
@@ -107,11 +231,70 @@ In summary, a cell has several potential mechanisms to mechanically fine tune or
 
 ## Materials and methods
 
-## Generation of expression vectors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Indentifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Spodoptera fugiperda)</td>
+      <td>Sf9</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific 11496015</td>
+      <td>Maintained in Sf-900 III SFM</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac1-NM2-A</td>
+      <td>PMID: 24072716</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac1-NM2-B</td>
+      <td>PMID: 24072716</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac1-NM2-B tail</td>
+      <td>This paper</td>
+      <td>NM2-B tail</td>
+      <td>Progenitor: pFastBac1-NM2-B</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FAST</td>
+      <td>http://spudlab.stanford.edu/fast-for-automatic-motility-measurements</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>http://imageJ.nih.gov/ij</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of expression vectors
 
 For the preparation of GFP-RLC-NM2 full-length molecules, the cDNA of full-length NM2-A and NM2-B MHCs were amplified and cloned into a modified pFastBac1 vector (FLAG-pFastBac1) encoding an N-terminus Flag-tag (DYKDDDK) for purification. An EGFP moiety was amplified and ligated to the N-terminus of the mouse regulatory light chain (EGFP-RLC) (Kengyel et al., 2010). The GFP-RLC cDNA was amplified and then cloned in a linearized pFastBac1 vector. GFP-RLC-NM2-A and NM2-B molecules were obtained by co-expressing FLAG-tagged MHCs with GFP-RLC and chicken essential light chain (ELC). For HaloTag-labeled NM2 molecules, the cDNA of a HaloTag moiety (IDT, Integrated DNA Technology) was ligated with a linearized FLAG-pFastBac1 plasmid (FLAG-HaloTag-pFastBac1) so that the plasmid encoded for an N-terminal FLAG-HaloTag moiety. The cDNA of NM2-A and NM2-B MHCs were amplified and then cloned in the FLAG-HaloTag-pFastBac1. HaloTag-NM2-A and -NM2-B MHCs were co-expressed with chicken RLC and ELC to obtain HaloTag NM2 full-length molecules. For the HaloTag-NM2-B tails, the cDNA encoding for residues 844–1976 of NM2-B MHC was PCR amplified and ligated with FLAG-HaloTag-pFastBac1 plasmid. In all cases, the HaloTag was fused to the N-terminus. Amplifications of cDNA and cloning of amplicons were performed using Primestar HR (Takara) and InFusion Technology (Clontech), respectively. The DNA sequence of cloned cDNA fragments were confirmed for all constructs by sequencing.
 
-## Expression, purification and labeling of proteins
+### Expression, purification and labeling of proteins
 
 All constructs used in this paper were expressed using baculovirus/Sf9 cells system (Invitrogen). Plasmid DNA was transformed into DH10-Bac E. Coli cells and recombinant bacmid isolated following manufacturer’s protocols. First generation of baculovirus was generated by transfecting Sf9 cells with a mixture containing bacmid DNA and polyethylenimine (PEIMax, MW 40000; Polysciences) at a ratio of 1:9 in PBS buffer.
 
@@ -121,11 +304,11 @@ Before the experiments, frozen NM2 solutions were thawed and phosphorylated usin
 
 Skeletal muscle actin was purified from rabbit skeletal muscle (Pardee and Spudich, 1982). 10% biotinylated F-actin was prepared by polymerizing G-actin and biotinylated G-actin (Cytoskeleton) in KMEI buffer (50 mM KCl, 2 mM MgCl2, 1 mM EGTA, 10 mM DTT and 10 mM MOPS (pH 7.4)). F-actin was labeled with fluorescent phalloidin (Thermo Fisher).
 
-## Sliding actin in vitro motility assay
+### Sliding actin in vitro motility assay
 
 The sliding actin in vitro motility assay in which monomeric myosin is bound to the coverslip surface and the movement of fluorescently labeled actin filaments by this myosin is observed was conducted as described in Sellers, 2006). NM2-A bound to the coverslip surface was used in the experiments to determine whether phalloidin affects NM2-A motility. In one set of experiments, we separately added either Alexa-fluor-647-phalloidin-labeled actin filaments or filaments formed from actin monomers that were labeled with Atto-538 (Hypermol). In a second experiment preformed Alexa-Fluor-647-phalloidin-labeled actin filaments were mixed with preformed Atto-538-labeled actin filaments and then added to the in vitro motility flow chamber and the movement of both colored actin filaments were simultaneously measured.
 
-## Single filament TIRF assay
+### Single filament TIRF assay
 
 The single filament TIRF assay was performed in flow cells made with a microscope slide (Corning Frosted Microscope Slides 75 × 25 mm; Thickness 0.9–1.1 mm), a coverslip (18 × 18 mm #1.5; Fisher Scientific) and double-side adhesive tape as previously described (Kron and Spudich, 1986). In the assay, biotinylated actin filaments were attached to the surface of the coverslip. In this study, two alternative protocols for the functionalization and passivation of the coverslips were used. In the first, 0.1% nitrocellulose was smeared and allowed to dry on the coverslip. The functionalized coverslip was then used to build the flow cell and a solution containing 5 mg∙ml−1 of biotinylated BSA was applied to the flow cell. After 2 min, the flow cell was washed with motility buffer (20 mM MOPS (pH 7.4), 5 mM MgCl2, 0.1 mM EGTA) containing 50 mM KCl and then a solution containing 1 mg∙ml−1 BSA was applied to the flow cell to reduce nonspecific interaction. After a second wash with 50 mM KCl motility buffer a solution containing 2 mg∙ml−1 NeutrAvidin was added to the flow cell. After 5 mins of incubation, the flow cell was washed again with 50 mM KCl motility buffer and it was ready for the binding of biotinylated actin filaments. Alternatively, the coverslip was treated with biotinylated Polyethylene glycol (Biotin-PEG) according to previously published protocols (Breitsprecher et al., 2012; Haldeman et al., 2014) with the following modifications. The coverslip were washed by sequential sonication in 2% Hellmanex (Hellma GmbH and Co. KG), distillated water and 100% ethanol. In each step, the coverslips were sonicated for 10 min. After drying with N2, the coverslip were plasma cleaned for 10 min using a Plasma system ZEPTO (Diener electronic, Germany). The concentration of mPEG-silane (MW 2,000) and biotin-PEG-silane (MW 3,400) (both (Laysan Bio, Inc. Arab, AL) were 2 mg∙ml−1 and 10 μg∙ml−1, respectively. Prior to each experiment, a Biotin-PEG-treated coverslip was extensively rinsed with ddH2O, dried with N2 and used to build the flow cell. The flow cell was incubated with 10 mg∙ml−1 of BSA for 2 min. After washing with 50 mM KCl motility buffer a solution of 2 mg∙ml−1 NeutrAvidin was added and incubated for 5 min. The flow cell was then washed with 200 μl of 10 mg∙ml−1 BSA followed by 200 μl of 50 mM KCl buffer and it was ready for biotinylated actin binding. It is important to note that the Biotin-PEG treatment of the coverslips dramatically reduces the nonspecific interaction of NM2 filaments and the coverslip surface. Compare the number of myosin filaments stuck on the surface in Videos 1 and 4.
 
@@ -135,14 +318,20 @@ Movies of the NM2 filaments moving on actin were collected on an inverted Nikon 
 
 Movies of NM2 filament movement lasting 5–10 min were recorded and, depending on the experiments, two (488 nm and 561 nm) or three (488 nm, 561 nm and 640 nm) channels were simultaneously acquired. For each movie shown in this paper the acquired channels, time and frame of acquisition, exposure time and temperature are indicated in the captions.
 
-## Data analysis
+### Data analysis
 
 Before the movies were analyzed, background subtraction was performed as follows. For each fluorescence channel, 20 images of the field of view were captured using the same laser power and exposure time used for the experiments. The background images from each channel were then averaged and the resulting image was subtracted from the respective channel of the movies. Each movie was analyzed individually for tracking of fluorescently labelled NM2 filaments using the TrackMate plug-in for ImageJ (National Institutes of Health). The TrackMate plug-in settings used for the analysis of the movies were the following: detector: LoG detector (estimated blob diameter: 1 μm, Threshold: 50–200), initial threshold: not set, view: HyperStack Displayer, tracker: Simple LAP tracker (Linking max distance: 1 μm, gap-closing max distance: 0.5 μm, gap-closing max frame gap: 2), filters on the tracks: Track displacement (above 150 nm). Each track identified by the software using these settings was manually checked using the Trackscheme displayer tool. Only myosin filaments that were observed to bind to actin, move and dissociate before reaching the end of the actin filament were included in the analysis. NM2 filaments that reached the end of the actin and dissociated were excluded from the analysis. Thus, we are measuring a minimum estimate of the run length. For each manually selected filament, the total fluorescence intensity per frame of each filament was calculated from the average intensity per pixel and spot size provided by the TrackMate analysis. The average total fluorescence intensity of each filament, I, was then calculated averaging the total fluorescence intensity for the entire track.
 
 The fluorescence channels used for filament tracking varied according to the fluorophore used to label the NM2 filaments. For the experiments in which two fluorophores were used to label the molecules that form the NM2 filaments, filament tracking with TrackMate plug-in was performed using the 488 nm channel to measure the average velocity and run length and to calculate the intensity (I) of the Alexa Fluor 488 (AF488)-labeled molecules that form each filament. For the experiments with mixed isoform filaments, I of tetramethylrhodamine (TMR)-labeled molecules was instead calculated using a custom-written macro in ImageJ where the XY positions of the AF488 spots detected by TrackMate are used to draw a 1 μm squared ROI in the 561 nm channel around each filament. Then, for each ROI the macro calculated the total fluorescence intensity in each frame. I of TMR-labeled molecules that form each filament was then calculated averaging the total intensity of the respective ROI for the entire track.
 
-To determine the actual fraction of NM2-A (FNM2-A) in the co-filaments which were moving along actin in Figure 4 and Videos 16–18 we calculated at each mixing ratio the average total fluorescence intensity of TMR-labeled NM2-A molecules (I2A,mix) and AF488-labeled NM2-B molecules (I2B,mix) that form the filaments moving on actin. I2A,mix and I2B,mix are proportional to the number of NM2-A and NM2-B molecules, respectively, and FNM2-A was calculated according to the following equation:(4)FNM2-A= I2A,mixI2A,cI2A,mixI2A,c+I2B,mixI2B,cwhere I2A,c and I2B,c are the average total fluorescence intensities of the 100% TMR-NM2-A filaments and 100% Alexa488-NM2-B filaments, respectively. The values of FNM2-A at each mixing ratio
+To determine the actual fraction of NM2-A (FNM2-A) in the co-filaments which were moving along actin in Figure 4 and Videos 16–18 we calculated at each mixing ratio the average total fluorescence intensity of TMR-labeled NM2-A molecules (I2A,mix) and AF488-labeled NM2-B molecules (I2B,mix) that form the filaments moving on actin. I2A,mix and I2B,mix are proportional to the number of NM2-A and NM2-B molecules, respectively, and FNM2-A was calculated according to the following equation:
 
-## Electron microscopy
+$$
+F_{NM2-A}=\frac{\frac{I_{2A,mix}}{I_{2A,c}}}{\frac{I_{2A,mix}}{I_{2A,c}}+\frac{I_{2B,mix}}{I_{2B,c}}}
+$$
+
+where I2A,c and I2B,c are the average total fluorescence intensities of the 100% TMR-NM2-A filaments and 100% Alexa488-NM2-B filaments, respectively. The values of FNM2-A at each mixing ratio
+
+### Electron microscopy
 
 Full-length myosin and myosin tail fragments were mixed in buffer A containing 0.5 M NaCl to give the final molar ratios indicated in the text. The ionic strength was lowered by dilution into 10 mM MOPS (pH 7.0), 0.1 mM EGTA, 2 mM MgCl2 and the required concentration of NaCl such that the final NaCl concentration was 150 mM and the final myosin concentration (full-length plus tail fragment) was 100 nM. Samples were incubated for 30 min on ice prior to making EM grids. A 3 μl drop of sample was applied to UV-treated carbon-coated copper grids and stained with 1% Uranyl Acetate (45 min UV treatment using a type R51 UV lamp with 5 cm between the bulb and grid surface (UV Products, Pasadena, CA)). Micrographs were recorded on a JEOL 1200EX II microscope operating at room temperature. Data were recorded on an ATM XR-60 CCD camera.

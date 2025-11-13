@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0293rh119 Institute of Ecology and Evolution, University of Oregon Eugene United States
-2. https://ror.org/0293rh119 Department of Biology, University of Oregon Eugene United States
+1. Institute of Ecology and Evolution, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+2. Department of Biology, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
 
 † Corresponding author
 
 ## Abstract
 
-Stable adherence to epithelial surfaces is required for colonization by diverse host-associated microbes. Successful attachment of pathogenic microbes to host cells via adhesin molecules is also the first step in many devastating infections. Despite the primacy of epithelial adherence in establishing host-microbe associations, the evolutionary processes that shape this crucial interface remain enigmatic. Carcinoembryonic antigen-related cell adhesion molecules (CEACAMs) encompass a multifunctional family of vertebrate cell surface proteins which are recurrent targets of bacterial adhesins at epithelial barriers. Here, we show that multiple members of the primate CEACAM family exhibit evidence of repeated natural selection at protein surfaces targeted by bacteria, consistent with pathogen-driven evolution. Divergence of CEACAM proteins between even closely related great apes is sufficient to control molecular interactions with a range of bacterial adhesins. Phylogenetic analyses further reveal that repeated gene conversion of CEACAM extracellular domains during primate divergence plays a key role in limiting bacterial adhesin host tropism. Moreover, we demonstrate that gene conversion has continued to shape CEACAM diversity within human populations, with abundant human CEACAM1 variants mediating evasion of adhesins from pathogenic Neisseria . Together this work reveals a mechanism by which gene conversion shapes first contact between microbes and animal hosts.
+Stable adherence to epithelial surfaces is required for colonization by diverse host-associated microbes. Successful attachment of pathogenic microbes to host cells via adhesin molecules is also the first step in many devastating infections. Despite the primacy of epithelial adherence in establishing host-microbe associations, the evolutionary processes that shape this crucial interface remain enigmatic. Carcinoembryonic antigen-related cell adhesion molecules (CEACAMs) encompass a multifunctional family of vertebrate cell surface proteins which are recurrent targets of bacterial adhesins at epithelial barriers. Here, we show that multiple members of the primate CEACAM family exhibit evidence of repeated natural selection at protein surfaces targeted by bacteria, consistent with pathogen-driven evolution. Divergence of CEACAM proteins between even closely related great apes is sufficient to control molecular interactions with a range of bacterial adhesins. Phylogenetic analyses further reveal that repeated gene conversion of CEACAM extracellular domains during primate divergence plays a key role in limiting bacterial adhesin host tropism. Moreover, we demonstrate that gene conversion has continued to shape CEACAM diversity within human populations, with abundant human CEACAM1 variants mediating evasion of adhesins from pathogenic Neisseria. Together this work reveals a mechanism by which gene conversion shapes first contact between microbes and animal hosts.
 
 ## Introduction
 
@@ -41,15 +41,23 @@ Previous work has reported multiple instances of gene gain and loss as well as h
 
 ## Results
 
-## The CEACAM gene family has undergone repeated episodes of positive selection in primates
+### The CEACAM gene family has undergone repeated episodes of positive selection in primates
 
 To assess patterns of primate CEACAM gene evolution, we compiled sequences of human CEACAM orthologs present in publicly available genome databases (Figure 2—source data 1A-C). Nineteen representative species were analyzed including four New World monkeys, ten Old World monkeys, and five hominid species. Some orthologs of human CEACAMs were not identified in a subset of primate genomes, likely due to losses or gains of specific CEACAMs along different lineages or incomplete genome assembly. With the exception of CEACAM3, for which additional exons annotated in Old World monkeys were included (detailed in Materials and methods), only genomic sequences that aligned to annotated human exons were used for subsequent phylogenetic analyses. To determine if primate CEACAMs have been subject to positive selection, protein-coding sequences were analyzed using the PAML NS sites package (Yang, 2007). This program uses a maximum likelihood framework to estimate the rate of evolution of each gene or codon, expressed as the ratio of normalized nonsynonymous (dN) to synonymous (dS) nucleotide substitutions (dN/dS or ω), under different models of evolution. An excess of nonsynonymous substitutions relative to synonymous substitutions between orthologs can suggest that beneficial mutations have been repeatedly fixed by positive selection. A comparison of models that allow and disallow sites evolving under positive selection (ω > 1) can determine the likelihood that a particular protein-coding sequence has been evolving under positive selection. We found that eight of the twelve primate CEACAM paralogs in our dataset possess genetic signals of positive selection (p-value ≤ 0.05; Figure 2—source data 1D) including CEACAM1, CEACAM3, CEACAM5, and CEACAM6 which have previously been shown to interact with bacterial adhesins (Gray-Owen and Blumberg, 2006). In addition, we also identified elevated ω values for CEACAM7, CEACAM8, CEACAM18, and CEACAM20.
 
 To identify specific amino acid positions that contribute to signatures of positive selection, we analyzed CEACAM sequences using the Bayes empirical Bayes analysis as implemented in the PAML NS sites package, as well as the programs FUBAR and MEME from the HyPhy software package (Figure 2—source data 1E). To control for the potential impact of recombination on these inferences, we used the program GARD to identify potential breakpoints in our datasets and build phylogenies of gene segments based on predicted breakpoints. We then performed phylogenetic analyses using these GARD-informed phylogenies. Our analyses collectively revealed that sites with elevated ω were concentrated in the N-domain of many CEACAM proteins (Figure 2A; Figure 2—figure supplement 1). Sites under positive selection in CEACAM18 and CEACAM20 were more dispersed throughout the protein, not localizing to a specific domain. The statistical support for positive selection of CEACAM18 and CEACAM20 in primates was also modest compared to that for other CEACAM proteins.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig2-v3.jpg)
+
+**Figure 2.:** (A) Sites in CEACAM proteins exhibiting elevated ω. Domain structure of CEACAMs outlined in red (N-domain), light gray (IgC-like domains), dark gray (transmembrane domain), and black (cytoplasmic domain). All rapidly evolving sites identified by at least one phylogenetic analysis (PAML, FUBAR, or MEME) are marked by a white line, sites identified by two or three tests signified by gray and red asterisks, respectively. Blue line shows the proportion of rapidly evolving sites identified across a 10 amino acid sliding window. (B) Multiple sequence alignment of hominid CEACAM1 residues 26–98. Sites identified as evolving under positive selection and sites known to influence adhesin and host protein binding are highlighted (Figure 2—source data 1F). (C) Protein co-crystal structure of human CEACAM1 (gray) and the HopQ adhesin (purple) from Helicobacter pylori strain G27 (PDB ID: 6GBG). CEACAM1 sites identified as evolving under positive selection by two or more tests are highlighted.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Sites with elevated dN/dS in all human CEACAM proteins. (A) Sites in CEACAM proteins identified as evolving rapidly in specific domains by one (white line), two (gray asterisks), or three (red asterisks) evolutionary analyses. Dotted blue line indicates the proportion of sites identified as evolving rapidly across a 10 amino acid sliding window. Open triangles show GARD predictions of the approximate locations of recombination breakpoints. (B) Location of human CEACAM genes along chromosome 19. Other genes on chromosome 19 not shown.
+
 We next sought to determine the functional impact of divergence at rapidly evolving sites in the CEACAM N-domain. Residues that contribute to protein-protein interactions have been extensively annotated for CEACAM1, involving both host factors and bacterial adhesins. Overlaying sites under positive selection with known adhesin and host protein-binding sites (Figure 2—source data 1F) revealed extensive overlap between all three categories (Figure 2B) and demonstrates that sites with elevated ω tend to cluster on the protein-binding surface. Mapping rapidly evolving CEACAM1 residues onto a co-crystal structure of human CEACAM1 bound to the HopQ adhesin from H. pylori strain G27 (Moonens, 2018), we confirmed that multiple sites fall along the binding interface of the two proteins (Figure 2C). In summary, these results demonstrate that multiple primate CEACAM orthologs exhibit signatures of repeated positive selection within the N-domain which facilitates bacterial and host protein interactions.
 
-## CEACAM divergence impairs recognition by multiple bacterial adhesins
+### CEACAM divergence impairs recognition by multiple bacterial adhesins
 
 To assess how rapid divergence of primate CEACAMs influences recognition by bacterial adhesins, we focused on CEACAM1 which is widely expressed across different cell types (Gray-Owen and Blumberg, 2006) and has numerous well-documented microbial interactions (Figure 2—source data 1F). Recombinant GFP-tagged CEACAM1 N-domain proteins from a panel of primate species were expressed and purified from mammalian cells (see Materials and methods). Previous studies have demonstrated that the CEACAM N-domain is both necessary and sufficient to mediate interactions with bacterial adhesins (Javaheri et al., 2016; Kuespert et al., 2007; Markel et al., 2004). We focused our experiments on CEACAM1 binding to two distinct classes of bacterial adhesins: HopQ encoded by H. pylori and the Opa family adhesins expressed by Neisseria species.
 
@@ -59,29 +67,93 @@ Opa proteins are a highly diverse class of adhesins encoded by Neisseria species
 
 To assess pairwise interactions between primate CEACAMs and bacterial adhesins, we incubated recombinant CEACAM1 N-domain proteins with individual bacterial strains. Bacterial cells were washed, pelleted, and the presence of bound CEACAM1 protein was assessed by western blot. We observe that all bacterial strains tested bind to the human CEACAM1 N-domain, consistent with previous studies (Figure 3A). Incubation of H. pylori strain G27 with GFP alone fails to yield detectable signal, confirming that binding is CEACAM-dependent (Figure 3B). Furthermore, a Δhopq mutant of strain G27 does not exhibit significant CEACAM1 binding, consistent with previous reports that HopQ is the sole CEACAM-binding adhesin present in these strains (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig3-v3.jpg)
+
+**Figure 3.:** (A) Binding between primate GFP-tagged CEACAM1 N-domain orthologs and bacteria determined by pulldown assays and visualized by western blotting. Input is 10% CEACAM1 protein used in bacterial pulldowns. Primate species relationships indicated by phylogenetic tree. (B) Pulldown experiments of Helicobacter pylori strain G27 incubated with CEACAM1 N-domain constructs or GFP assayed by flow cytometry. Binding indicated by relative GFP fluorescence. Representative western blot and flow cytometry experiments are depicted. For flow cytometry all tests shown were performed as part of a single experiment using H. pylori strain G27 alone as a negative control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Binding assay to assess interactions between H. pylori strain G27 Δhopq and GFP-tagged CEACAM1 N-domain constructs for human, chimpanzee, and gorilla, by pulldown experiments and visualization by western blot.
+
 Examining non-human CEACAM1 bacterial binding, the chimpanzee CEACAM1 N-domain, which differs from the human protein at four amino acid positions, binds to all adhesin-expressing strains except Opa74. Gorilla CEACAM1, which differs from the human N-domain at five sites (three non-overlapping with chimpanzee), is also unable to bind Opa74 but does bind H. pylori strains and Opa52. Orangutan CEACAM1 is unable to interact with any bacterial strain tested, nor do baboon and squirrel monkey. We noted that despite the limited species divergence between bonobos and chimpanzees, bonobo CEACAM1 does not bind any of the tested bacterial strains (Figure 3A). Previous studies have found the results of CEACAM-binding assays to be consistent between western blotting and by flow cytometry (Adrian et al., 2019; Javaheri et al., 2016; Königer et al., 2016; Kuespert et al., 2007). We confirmed this for our system with H. pylori strain G27, using flow cytometry to detect specific binding of GFP-tagged CEACAMs on the bacterial cell surface (Figure 3B). These results demonstrate that CEACAM1 N-domain divergence between closely related primate species, even within the great apes, determines bacterial recognition in an adhesin-specific manner.
 
-## Recurrent gene conversion of primate CEACAM N-domains
+### Recurrent gene conversion of primate CEACAM N-domains
 
 The inability of H. pylori strains or N. gonorrhoeae adhesins to bind bonobo CEACAM1 was surprising given bonobo’s close phylogenetic relationship to both humans and chimpanzees. While archaic humans are believed to have diverged from our primate relatives at least 5 million years ago, the major divergence between chimpanzees and bonobos occurred only 1–2 million years ago (Prado-Martinez et al., 2013). Closer inspection revealed that the bonobo CEACAM1 N-domain sequence is unusually divergent from that of both humans and chimpanzees, while other regions of the coding sequence show higher degrees of identity (Figure 4—figure supplement 1A). To investigate bonobo CEACAM1 evolution further, we first validated the bonobo CEACAM1 N-domain sequence present in our bonobo reference genome through comparison of assemblies and sequencing reads from multiple bonobo individuals as well as through direct Sanger sequencing of the CEACAM1 N-domain from bonobo genomic DNA (see Materials and methods). Having confirmed the identity of the bonobo CEACAM1 reference sequence, we compared this gene to sequences from other hominids. Relative to its orthologs in humans and chimpanzees, bonobo CEACAM1 differs at nearly 20% of sites in the N-domain whereas humans and chimpanzees differ at only about 4% of sites. In contrast, outside of the N-domain bonobo CEACAM1 diverges from humans and chimpanzees at approximately 2% of sites, while human and chimpanzee CEACAM1 differ at around 1% of sites. We also noted that the number of divergent sites between bonobo and human in the N-domain (18 residues) is nearly identical to the number of divergent sites between bonobo and chimpanzee (20 residues), despite the closer phylogenetic relationship between bonobos and chimpanzees. In fact, the divergence between the bonobo and chimpanzee CEACAM1 N-domains is greater than that between chimpanzee and the earliest diverging member of the hominid clade, orangutan (81% versus 83% amino acid identity, respectively). A comparison of N-domain sequences for CEACAM5, another rapidly evolving CEACAM, further highlights the extreme divergence of bonobo CEACAM1. Between human CEACAM5 and the bonobo and chimpanzee CEACAM5 sequences, there are only ten and nine amino acid changes respectively, while bonobo and chimpanzee differ at only five sites along the entire length of the N-domain (Figure 4—figure supplement 1B).
 
 The degree of divergence within the N-domain of bonobo CEACAM1 suggests processes other than sequential accumulation of single nucleotide mutations could be responsible. One mechanism by which this could occur is through gene conversion, a form of homologous recombination in which genetic material from one location replaces sequence in a non-homologous location, often with substantial sequence similarity (Chen et al., 2007). Gene conversion can provide an important source of genetic novelty and a mechanism that can accelerate adaptation (Bittihn and Tsimring, 2017; Daugherty and Zanders, 2019; Gendreau et al., 2021). To determine if inter-locus recombination has shaped the evolution of CEACAM genes in primates, we looked for evidence of discordance between species and gene trees. Gene-species tree discordance can be an indication of multiple evolutionary processes, including a history of gene conversion between paralogs. In a maximum likelihood-based phylogeny of full-length CEACAM-coding sequences, clades containing single CEACAM paralogs were inferred with robust statistical support (Figure 4A, Figure 4—figure supplement 2). In general, the relationships between CEACAM homologs are inferred with high confidence and reflected species relationships as expected for the divergence of orthologous-coding sequences. To determine if there have been domain-specific instances of gene conversion, we constructed phylogenetic trees of individual CEACAM domains. Typically, we expect paralogs to form clearly defined clades reflecting species divergence. This is the pattern we observe for full-length CEACAM-coding sequences, indicating that overall the paralogs have remained distinct since their initial duplication and have steadily diverged between species. Specific CEACAM domain sequences generally follow this pattern (Figure 4B, Figure 4—figure supplements 3–6). However, the N-domains of CEACAM1, CEACAM3, CEACAM5, and CEACAM6 deviate strikingly from this norm and form a single monophyletic group (hereafter called CCM1356), albeit one with low bootstrap support (Figure 4B, Figure 4—figure supplements 3 and 4). Within the CCM1356 clade we observe that rather than clustering by paralog, N-domains are split into subclades representing the three major primate lineages (Figure 4C, Figure 4—figure supplement 4). In general, the close phylogenetic relationship of sequences within these clades is well supported. This topology suggests that these CEACAM N-domains are more similar to paralogous domains within the same species or primate lineage than they are to their respective orthologs across species. Several well-supported nodes provide further evidence that gene conversion is driving concerted evolution within the CCM1356 clade (Figure 4C). Certain pairs of N-domains, such as CEACAM3 and CEACAM1 in gorilla and CEACAM1 and CEACAM5 in orangutan, form monophyletic groups with strong bootstrap support. As these relationships are not observed for the other domains of these CEACAM proteins, this suggests conversion events affecting only the N-domains of these CEACAMs occurred in these species. New World monkeys provide the most striking phylogenetic evidence of gene conversion among primates. For each of the four New World monkey species examined, the N-domains of CEACAM1, CEACAM5, and CEACAM6 are all more closely related within species than to their orthologs in other species, suggesting gene conversion has independently acted on the N-domains of these three CEACAMs at least four times within this single clade (Figure 4C). These findings are consistent with N-domains of CEACAMs 1, 3, 5, and 6 undergoing widespread concerted evolution, likely facilitated by gene conversion.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig4-v3.jpg)
+
+**Figure 4.:** (A) Maximum likelihood-based phylogeny of full-length primate CEACAM protein-coding sequences. (B) Phylogeny of the IgV-like (N-domain) of primate CEACAM proteins. (C) Expanded cladogram view of the clade containing the N-domains of CEACAM1, CEACAM3, CEACAM5, and CEACAM6 from panel B. Arrows indicate nodes designating clades for Old World monkeys (OWM), hominoids (Hom), and New World monkeys (NWM). Specific subclades, gorilla CEACAM3 and CEACAM5, orangutan CEACAM5 and CEACAM1, and NWM are further magnified and highlighted with bootstrap support at nodes. (D) Domain structures of CEACAM proteins predicted to have undergone recombination by GARD analysis with sites of predicted breakpoints highlighted (blue arrows). CEACAM N-domains are denoted in red.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Human, chimpanzee, and bonobo CEACAM1 (A) and CEACAM5 (B) alignments by MAFFT translation alignment implemented in Geneious Prime 2020.2.2. Black lines mark differences from consensus. Lower bars show location of CEACAM domains.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Maximum likelihood-based phylogeny of full-length CEACAM protein-coding sequences as represented in Figure 4A, with clades expanded. Clades encompassing individual CEACAM orthologs are shown isolated and expanded.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Maximum likelihood-based phylogeny of CEACAM IgV-like (N-domain) sequences as represented in Figure 4B, with clades expanded. Clades encompassing individual CEACAM orthologs along with the CEACAM1, CEACAM3, CEACAM5, and CEACAM6 clade are shown isolated and expanded.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** Expanded view of CEACAM1, CEACAM3, CEACAM5, and CEACAM6 clade from Figure 4B.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** Maximum likelihood-based phylogeny of CEACAM IgC-like domain sequences. Expanded view of CEACAM20 clade shown.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig4-figsupp6-v3.jpg)
+
+**Figure 4—figure supplement 6.:** Maximum likelihood-based phylogeny of CEACAM cytoplasmic domain sequences. Clades encompassing individual CEACAM orthologs are shown isolated and expanded.
+
 To further test for evidence of gene conversion acting on primate CEACAM family members, we applied the GARD algorithm from the HyPhy software package. GARD detects topological changes between trees inferred from segments of a gene alignment, assesses the likelihood they are consistent with recombination, and identifies potential breakpoints. Consistent with our phylogenetic examination of CEACAM homologs, GARD detects strong evidence of recombination for CEACAM1, CEACAM3, CEACAM5, and CEACAM6 (Figure 4D, Figure 2—figure supplement 1A). In all cases, breakpoints were identified at the C-terminus of the N-domain or in immediately adjacent IgC domains. This pattern is consistent with repeated N-domain gene conversion between CCM1356 paralogs and is also in line with our phylogenetic reconstructions of CEACAM IgC domains (Figure 4—figure supplement 5). In addition to CEACAM1, CEACAM3, CEACAM5, and CEACAM6, GARD also indicates a recombination breakpoint for CEACAM7 that would encompass the N-domain. While we do not detect discordance in our N-domain gene tree that implicates gene conversion involving CEACAM7, there is a single instance in the IgC domain tree of a gorilla CEACAM5 IgC domain grouping more closely with homologs of the IgC domain of CEACAM7 (Figure 4—figure supplement 5). A breakpoint in this region is also consistent with CEACAMs with rapid N-domain evolution being involved in gene conversion events as well as previous analyses (Zid and Drouin, 2013). Together these results support a model in which gene conversion between rapidly diverging CEACAMs has contributed to N-domain diversification during primate evolution.
 
-## Rapidly evolving regions of CEACAM1 are sufficient to block bacterial adhesin recognition
+### Rapidly evolving regions of CEACAM1 are sufficient to block bacterial adhesin recognition
 
 Phylogenetic analyses confirm that the bonobo CEACAM1 N-domain is not closely related to other primate CEACAM1 sequences but fail to strongly support its relationship to any other single CEACAM N-domain. Reasoning that the extant bonobo CEACAM1 gene may have arisen from multiple iterative recombination events, we performed a BLAST search of genomes on the NCBI database using base pairs 103–303 of the bonobo CEACAM1 sequence (corresponding to resides 1–67 of the N-domain) as our query. Human and chimpanzee are roughly 86% identical to bonobo CEACAM1 in this region versus 99% identical (a single nucleotide change) in the remaining 120 base pairs (Figure 4—figure supplement 1). This search identifies orangutan CEACAM3 as the closest match. While the similarity between the first 120 bp of bonobo CEACAM1 and orangutan CEACAM3 is striking and the final third of the nucleotide sequence is nearly identical to human and chimpanzee CEACAM1, other segments of bonobo CEACAM1 are still quite divergent from all other N-domain sequences (Figure 5A). A BLAST search of this region in bonobo CEACAM1 (base pairs 221–380) indicates the greatest similarity is with the analogous region from rhesus macaque CEACAM6. However, the increased similarity of macaque CEACAM6 in this region compared to other CEACAMs is marginal (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig5-v3.jpg)
+
+**Figure 5.:** (A) Graph shows a fifty base pair sliding window plotting identity between bonobo CEACAM1 N-domain sequence and other CEACAM sequences. Asterisks mark locations of residues mutated for adhesin-binding assays. (B) Windows show amino acids and their structures at sites selected for mutational analysis in humans and bonobos. Lower right depicts a protein co-crystal structure of human CEACAM1 and Helicobacter pylori G27 HopQ with sites selected for mutagenesis highlighted. (C) Representative western blots of pulldown experiments assaying binding between chimeric human and bonobo CEACAM1 N-domain constructs and bacterial strains.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Multiple sequence alignment of carcinoembryonic antigen-related cell adhesion molecule (CEACAM)1, CEACAM3, CEACAM5, and CEACAM8 orthologs for human, bonobo, chimpanzee, gorilla, and orangutan. Translation of each nucleotide sequence is positioned on the line below. Sites known to influence adhesin and host protein binding (Figure 2—source data 1F) are indicated as are sites identified as evolving under positive selection.
 
 The extreme divergence of the bonobo CEACAM1 N-domain from other CEACAM1 homologs in even its closest relatives could indicate that this particular sequence has been evolving independently of other N-domain alleles for a long period of time as a result of balancing selection. This has been observed for other genes involved in host-pathogen conflicts, most notably major histocompatibility complex alleles (Meyer et al., 2018). In this case, we might expect to identify alleles similar to bonobo CEACAM1 currently circulating in other hominid populations, and likewise alleles similar to CEACAM1 sequences observed in humans and chimpanzees may be found in the larger bonobo population. In a search of human genetic variation data available through the International Genome Sample Resource (IGSR) accessed through the Ensembl webserver (https://www.ensembl.org), there is no evidence for any alleles with similarity to bonobo CEACAM1 circulating within human populations. Searching population data from the Great Apes Genome Project (Prado-Martinez et al., 2013), alleles similar to bonobo CEACAM1 are not found for chimpanzees, gorillas, or orangutans. Likewise, CEACAM1 alleles similar to those found in humans and chimpanzees are not observed in any of the bonobo genomes from the same dataset. Given the information at hand, it is difficult to precisely determine the series of mutational events that produced the bonobo CEACAM1 allele or determine the likely origin point of this allele in the diversification of hominids. However, these results are consistent with multiple independent instances of gene conversion giving rise to bonobo CEACAM1, with subsequent fixation of this haplotype in bonobo populations since their divergence from chimpanzees over the last million years.
 
 Given the large number of residue changes between human and bonobo CEACAM1, we next sought to determine if a subset of rapidly evolving sites are sufficient to either impair or restore recognition by bacterial adhesins. To test this, we generated CEACAM1 N-domain proteins in which a subset of residues between humans and bonobos were swapped. We focused on sites that are identical in humans and chimpanzees but differ in bonobos and which exhibit high ω across primates, resulting in a total of five tested sites (Figure 5A and B). Of these residues we chose to mutate adjacent amino acids 27–29 as a single group. This patch of sites is highly variable among the rapidly evolving CEACAMs, particularly CEACAM1, CEACAM3, and CEACAM5 (Figure 5—figure supplement 1). None of the ‘humanized’ mutants in the bonobo CEACAM1 background were sufficient to confer binding (Figure 5C). In contrast, introduction of bonobo residue 44 into human CEACAM1 (mutation Q44L) prevents binding by H. pylori and Opa-expressing strains, while introduction of bonobo variable sites 27–29 abolishes binding to Opa74 (Figure 5C). Mutation G51Q has no appreciable impact on binding by H. pylori strain G27 or Neisseria Opa74, but blocks binding by H. pylori strain Tx30a and reduces binding to J99 and Opa52. Collectively these results reveal that multiple single positions in human CEACAM1 exhibiting signatures of positive selection are sufficient to impair recognition by multiple bacterial adhesins. Moreover, these findings also demonstrate how instances of gene conversion between CEACAM paralogs could serve as large-effect adaptive mutations mediating microbial evasion.
 
-## Abundant human CEACAM1 polymorphisms impair bacterial recognition
+### Abundant human CEACAM1 polymorphisms impair bacterial recognition
 
 Pervasive evidence of positive selection acting on CEACAMs in primates raises the question as to whether CEACAM variants that evade pathogen recognition are currently segregating in human populations. To explore the existence of human CEACAM variants and their consequences for bacterial interactions, we queried human single nucleotide polymorphism (SNP) and haplotype data for rapidly evolving CEACAM paralogs available from the IGSR accessed through the Ensembl genome browser (see Materials and methods). We found that variation in the N-domains of CEACAM6, CEACAM7, and CEACAM8 predominantly consists of polymorphisms not shared with other CEACAM proteins and found on isolated haplotypes. In contrast, CEACAM1, CEACAM3, and CEACAM5 N-domain variation is composed primarily of extended haplotypes (Figure 6—figure supplements 1–4). Furthermore, these extended haplotypes increase similarity between CEACAM1, CEACAM3, and CEACAM5, consistent with possible gene conversion events. Indeed, some haplotypes not only have changes at nonsynonymous sites that increase similarity with these CEACAMs, but also include shared synonymous changes. These observations suggest that gene conversion among CEACAMs has occurred relatively recently and may be ongoing in human populations.
 
 A search of polymorphisms for CEACAM1 in human populations reveals three high-frequency nonsynonymous variants within the N-domain: Q1K (rs8111171), A49V (rs8110904), and Q89H (rs8111468) (Figure 6A). The haplotype containing all three alternative alleles is the most frequent non-reference CEACAM1 haplotype annotated, occurring in 14% of the human population overall and in up to 43% of individuals in African populations (Figure 6A). In total, nearly 17% of all sequenced individuals carry at least one of these high-frequency SNPs (Figure 6—figure supplement 2). Of the three variants, A49V and Q89H both lie within regions of CEACAM1 known to interact with bacterial adhesins suggesting they may alter bacterial adherence (Figure 6B). To determine if these high-frequency CEACAM1 polymorphisms affect bacterial recognition, we generated recombinant CEACAM1 N-domain variant proteins for use in our adhesin-binding assays. None of the variants are able to abolish CEACAM1 binding to our panel of H. pylori strains (Figure 6C). In contrast, Neisseria Opa-expressing strains exhibit highly variable recognition of multiple human CEACAM1 variants. The Q1K mutation alone has no impact on binding, while A49V abolishes recognition by Opa74, and variant Q89H abrogates binding to both Opa52 and Opa74 (Figure 6C). Combinatorial CEACAM1 variants reveal that these mutations behave in a dominant manner, with Q89H dominant over A49V (Figure 6C). Together these results demonstrate that high-frequency human polymorphisms in CEACAM1 are sufficient to impair binding by specific classes of bacterial adhesins present in human pathogens. These findings further suggest that high-frequency CEACAM variants could alter human colonization or infection by pathogenic Neisseria, including causative agents of gonorrhea and meningitis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig6-v3.jpg)
+
+**Figure 6.:** (A) Frequency of haplotypes containing variants Q1K, A49V, and Q89H across human populations (map from BioRender.com). (B) CEACAM1 crystal structure highlighting high-frequency human variants and sites found to be evolving under positive selection across simian primates. (C) Representative western blots of pulldown experiments testing binding between combinations of high-frequency human variants in the human CEACAM1 reference background and bacterial strains.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Other CEACAM-like human CEACAM1 haplotypes. Alignment of human CEACAM1, CEACAM3, and CEACAM5 N-domain reference nucleotide sequences with amino acid translations below. Long invariable alignment regions are removed. Sites that differ in CEACAM3 or CEACAM5 relative to CEACAM1 are bolded. Sites found in variant CEACAM1 haplotypes are in black. Changes that encode the high-frequency variants Q1K, A49V, and Q89H are in red. Below alignment each row is a unique human CEACAM1 N-domain haplotype. Lines indicate variant regions in CEACAM1. Only haplotypes that increase similarity to CEACAM3 or CEACAM5 are shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Frequency of variant human CEACAM1 haplotypes. (A) Overall frequency of CEACAM1 variants Q1K, 449V, Q89H, and other variant haplotypes in humans. The indicated CEACAM-like haplotypes are enumerated in Figure 6—figure supplement 1. (B) Frequency of CEACAM1 variants across different human populations.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** Human CEACAM1-like CEACAM3 haplotypes. (A) Alignment of human CEACAM1 and CEACAM3 reference sequences. Disagreements are bolded in red with the amino acid translation below each sequence. Below alignment each row represents a unique human CEACAM3 haplotype. Lines indicate variant regions that match the human CEACAM1 reference sequence. Only haplotypes that increase similarity to the human CEACAM1 reference sequence are shown. (B) Overall frequency of variant CEACAM3 haplotypes in humans. The CEACAM1-like haplotypes indicated are enumerated in panel A. (C) Frequency of CEACAM3 variants across different human populations.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/73330/elife-73330-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** Human CEACAM1-like CEACAM5 haplotypes. (A) Alignment of human CEACAM1 and CEACAM5 reference sequences. Disagreements are bolded in red with the amino acid translation below each sequence. Below alignment each row represents a unique human CEACAM5 haplotype. Lines indicate variant regions that match the human CEACAM1 reference sequence. Only haplotypes that increase similarity to the human CEACAM1 reference sequence are shown. (B) Overall frequency of variant CEACAM5 haplotypes in humans. The CEACAM1-like haplotypes indicated are enumerated in panel A. (C) Frequency of CEACAM5 variants across different human populations.
 
 ## Discussion
 
@@ -109,31 +181,251 @@ Collectively our study provides evidence that repeated adaptation among primate 
 
 ## Materials and methods
 
-## Primate comparative genetics
+**Key resources table**
 
-## Sequence identification
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Helicobacter pylori)</td>
+      <td>G27</td>
+      <td>Baltrus et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Helicobacter pylori)</td>
+      <td>J99</td>
+      <td>Alm et al., 1999</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Helicobacter pylori)</td>
+      <td>Tx30a</td>
+      <td>ATCC</td>
+      <td>51932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Helicobacter pylori)</td>
+      <td>omp27::cat-sacB in NSH57</td>
+      <td>Yang et al., 2019</td>
+      <td></td>
+      <td>H. pylori strain G27 with HopQ deletion</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta (DE3) pLyS</td>
+      <td>Lab collection</td>
+      <td></td>
+      <td>E. coli strain for outer membrane IPTG inducible expression of Neisserial Opa proteins</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>Lab collection</td>
+      <td></td>
+      <td>E. coli strain for maintenance and propagation of pET-28a plasmid constructs</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot Top10 Chemically Competent cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C404010</td>
+      <td>E. coli strain for cloning, maintenance and propagation of pcDNA3 GFP LIC plasmid constructs</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063; CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a (plasmid)</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>Plasmid backbone for expression of Neisserial Opa proteins</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3 GFP LIC (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_30127; #30,127</td>
+      <td>Plasmid backbone for expression of primate CEACAM1 N-domain constructs in HEK293T cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody mixture;Mouse α-GFP clones 7.1 and 13.1</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_390913; 11814460001</td>
+      <td>1:103 dilution; Primary antibody for visualization of GFP labeled CEACAM1 N-domain constructs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal antibody; goat α-mouse conjugated to horseradish peroxidase</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>RRID:AB_10015289; 115-035-003</td>
+      <td>1:104 dilution; Secondary antibody for visualization of GFP labeled CEACAM1 N-domain constructs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Advansta WesternBright ECL HRP Substrate</td>
+      <td>Thomas Scientific</td>
+      <td>K-12049-D50</td>
+      <td>Reagent to visualize proteins bound by secondary antibody in a western blot</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PAML4.9h</td>
+      <td>http://abacus.gene.ucl.ac.uk/software/paml.html Yang, 2007</td>
+      <td>RRID:SCR_014932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FUBAR</td>
+      <td>https://www.datamonkey.orgMurrell et al., 2013</td>
+      <td>RRID:SCR_010278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEME</td>
+      <td>classic.datamonkey.orgMurrell et al., 2012</td>
+      <td>RRID:SCR_010278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GARD</td>
+      <td>classic.datamonkey.org Kosakovsky Pond et al., 2006</td>
+      <td>RRID:SCR_010278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bon_gCCM1N_F3</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>Primer for initial amplification of bonobo CEACAM1 N-domain from genomic DNA [TTCACAGAGTGCGTGTACCC]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bon_gCCM1N_R2</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>Primer for initial amplification of bonobo CEACAM1 N-domain from genomic DNA [CCTCCCAGGTTCAAGCGATT]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bon_gCCM1N_F1</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>Primer for secondary amplification of bonobo CEACAM1 N-domain from genomic DNA [CAGTGGAGGGGTGAAGACAC]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bon_gCCM1N_R1</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>Primer for secondary amplification of bonobo CEACAM1 N-domain from genomic DNA [CATGTTGGTCAGGCTGGTCT]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bon_gCCM1N_seqF1</td>
+      <td>This paper</td>
+      <td>Sequencing primer</td>
+      <td>Primer to sequence bonobo CEACAM1 N-domain amplified from genomic DNA [CCCGTTTTTCCACCCTAATGC]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bon_gCCM1N_seqF4</td>
+      <td>This paper</td>
+      <td>Sequencing primer</td>
+      <td>Primer to sequence bonobo CEACAM1 N-domain amplified from genomic DNA [GGGGAAAGAGTGGATGGCAA]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>bon_gCCM1N_seqR2</td>
+      <td>This paper</td>
+      <td>Sequencing primer</td>
+      <td>Primer to sequence bonobo CEACAM1 N-domain amplified from genomic DNA [TGGGGGAATCACTCACGGTA]</td>
+    </tr>
+    <tr>
+      <td>Biological sample (pan paniscus)</td>
+      <td>AG05253</td>
+      <td>Nels Elde</td>
+      <td>RRID:CVCL_1G37</td>
+      <td>Bonobo genomic DNA sample</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v4.1.2</td>
+      <td>https://cran.r-project.org/</td>
+      <td>RRID:SCR_003005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.7</td>
+      <td>Python Software Foundation https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JupyterNotebook 5.7.4</td>
+      <td>Project Jupyter https://jupyter.org/</td>
+      <td>RRID:SCR_018315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AnacondaNavigator 1.9.12</td>
+      <td>Anaconda, Inc https://www.anaconda.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Primate comparative genetics
+
+#### Sequence identification
 
 Orthologs for human CEACAM genes were identified through BLAST searches of primate reference genomes available through the NCBI BLAST webserver (Boratyn et al., 2013). Full-length genomic regions for annotated human CEACAMs were used as query sequences. A full record of CEACAM orthologs identified and a partial record of BLAST results, including date accessed, query coverage and identity, as well as information on synteny, are listed in Figure 2—source data 1A-C. Orthology was established by sequence identity, reciprocal best-BLAST hit, as well as intron structure and synteny. In total, we were able to extract 186 primate CEACAM sequences for analysis. We could not identify orthologs of every human CEACAM in every primate species, in some cases because of lineage-specific gains and losses and in some cases likely because of incomplete genome assembly. As a result, the number of primate orthologs available for evolutionary analysis and phylogenetic reconstruction for each human CEACAM range from 11 to 19 (Figure 2—source data 1A).
 
-## Sequence alignment and trimming
+#### Sequence alignment and trimming
 
 Orthologous protein-coding sequences were extracted from CEACAM genes as follows. Multiple sequence alignments of the full-length gene were done using MAFFT alignment software as implemented in Geneious Prime 2020.2.2 with default settings. Alignments were manually corrected to correspond to human exon splice sites. Regions corresponding to human exons were then extracted, realigned, and minimally trimmed so all sequences were in-frame and orthologous codons aligned. So as not to exclude any protein-coding regions from evolutionary analysis, all human exons for a given CEACAM were concatenated and treated as a single protein-coding sequence. Consequently, representations of CEACAM proteins in figures are not necessarily indicative of mature peptides, but rather represent all parts of the CEACAM protein that could potentially have been subject to positive selection. Gaps in alignments were removed for evolutionary analyses (Figure 2—source data 2) but were retained for tree building (Figure 4—source data 1).
 
-## CEACAM3 exons
+#### CEACAM3 exons
 
 Almost all Old World monkey CEACAM3 genes analyzed had two extra exons annotated compared to humans. These exons are located between the exon encoding the N-domain and the transmembrane domain and are predicted by InterProScan (Quevillon et al., 2005), as implemented in Geneious Prime 2020.2.2, to encode the IgC-like domains typical of this region of CEACAM proteins. The majority of Old World monkeys have two exons annotated and all primates, including hominids, have strongly conserved sequences in this region, though hominids all encode premature stop codons. With the exception of the second IgC exon in colobus, these exons would allow for the translation of full-length CEACAM proteins. While exon annotation differences between primate CEACAM genes is not unusual, the conservation of these sequences across primates containing a CEACAM3 gene, including in hominids where they are not annotated, is striking. To the best of our knowledge CEACAM3 transcripts for humans or other primates including either of these extra IgC domains have not been reported. Indeed, the exon closest to the N-domain likely does not encode a functional protein in most hominids as a result of a premature stop codon. However, the strong conservation of these sequences across primates could indicate these exons encode functional protein segments in at least some species. For this reason, these exons and their orthologous sequences in hominids were included in downstream evolutionary analyses.
 
-## CEACAM5 trimming
+#### CEACAM5 trimming
 
 The differences in number and likely arrangement of IgC domains in primate CEACAM5 orthologs prevented alignment of all full-length CEACAM5 genes into a single multiple sequence alignment for extracting human orthologous protein-coding sequences. Instead, sequences were first aligned in three groups: New World monkeys, leaf-eating monkeys (black-and-white colobus, black snub-nosed monkey, and golden snub-nosed monkey), and the remaining Old World monkey sequences with the hominid sequences. There were enough similarities with human exons for orthologous exon sequences to be assigned and extracted for New World monkeys and the Old World monkey/Hominid group, but not for the leaf-eating monkeys group. For leaf-eating monkeys the predicted exons in common between species in this group were extracted. After extracting coding sequences for each group individually, the extracted sequences were then aligned in a single multiple sequence alignment. However, the large gaps caused by missing IgC sequences relative to human CEACAM5 posed a problem for evolutionary analyses which require gaps to be removed from sequences prior to analysis. We were concerned that choices made regarding which sequences were removed would unduly influence the results of evolutionary analyses or result in lower coverage of the evolutionary history of the entire coding sequence. To account for this, three strategies of trimming alignment gaps were carried out and the results of each used in separate evolutionary analyses. For the first strategy (datasets 1 and 4) every species whose sequence contained gaps corresponding to missing IgC domains was removed. These species were black-and-white colobus, black snub-nosed monkey, golden snub-nosed monkey, drill, sooty mangabey, and common marmoset. This resulted in the longest sequence for analysis (2 kb) including six predicted IgC domains, but the smallest number of species represented (12). In the second strategy (datasets 2 and 5) primate sequences with gaps corresponding to the largest number of missing IgC domains (4) were removed, while those with only two missing domains were retained, and the alignment region containing the sequence gap caused by the missing domains removed, giving a smaller alignment (1.4 kb, with four IgC domains), but more species (16). For this strategy sooty mangabey, and common marmoset were removed from the analysis. For the third strategy (datasets 3 and 6) all species for which complete CEACAM5 gene sequences could be identified were retained and all gaps corresponding to missing IgC domains removed. This gave the smallest sequence (0.9 kb, retaining two IgC domains), but provided the largest number of represented species (18). Evolutionary analyses for these strategies are included in Figure 2—figure supplement 1, Figure 2—source data 1A and B, and Figure 2—source data 3.
 
-## Alignment comparison between MAFFT and MUSCLE
+#### Alignment comparison between MAFFT and MUSCLE
 
 To confirm that our alignment method was not biasing the assignment of orthology of coding sequences to human exons, we compared the results of alignments of extracted exons using MAFFT (Katoh and Standley, 2013) and the alternative program MUSCLE (Edgar, 2004), both as implemented in Geneious Prime 2020.2.2. With the exceptions of CEACAM7 and CEACAM5, there were no drastic changes between alignments performed using MAFFT and those done using MUSCLE. Upon inspection the discrepancy between MAFFT and MUSCLE alignments for CEACAM7 could be attributed to an approximately 7 kb insertion in the orangutan CEACAM7 gene relative to all other primates. Upon removing this insertion alignments with both MAFFT and MUSCLE were in agreement. Discrepancies between alignments of CEACAM5 with MAFFT and MUSCLE were due to differences in how the programs aligned sequences corresponding to IgC domains, likely as a result of differences in the number and possibly the arrangement of these domains between primates. MAFFT and MUSCLE alignments were carried out for each of the three different trimmed versions of CEACAM5 (see above) and each set of sequence alignments was tested using each of the evolutionary analysis methods. All other evolutionary analyses were carried out using sequences trimmed according to MAFFT alignments.
 
 The results of CEACAM5 evolutionary analyses were largely similar regardless of which alignment or trimming method was employed, identifying similar patterns of selection (sites under selection concentrated in the N-domain) and many of the same sites under selection. Results presented in the paper are for dataset 1 (ds1) which contains the largest number of domains and using the MAFFT alignment to match the method used for other CEACAM analyses presented. Results for alternative CEACAM5 trimming and alignment methods are included in Figure 2—figure supplement 1, Figure 2—source data 1A and B, and Figure 2—source data 3.
 
-## Bonobo CEACAM1 N-domain sequence verification
+#### Bonobo CEACAM1 N-domain sequence verification
 
 For initial verification of the bonobo CEACAM1 N-domain sequence, we utilized currently available bonobo genome sequence data. Reads were not available for the genome assembly from which bonobo CEACAM sequences were identified for the evolutionary analyses described here. However, a more recent assembly of a different bonobo individual became available during the course of this study and sequencing reads for this new de novo assembly were deposited (Mao et al., 2021). The CEACAM1 genomic region of the newer assembly was 99% identical to the older version while the coding sequences differ at only a single nucleotide outside of the N-domain. Furthermore, examining the reads used to assemble the newer genome we confirmed that multiple reads covered the length of the bonobo CEACAM1 N-domain and included the highly diverged nucleotides of the binding region in contiguous reads. Additionally, we examined CEACAM1 sequences for the 13 bonobo individuals sequenced as part of the Great Apes Genome Project (Prado-Martinez et al., 2013). Genomes for these individuals were constructed using a reference-based assembly method to the human genome. The assembled sequences largely supported the highly diverged N-domain seen in the reference genome; however, there was a 31 bp region that was identical to the human CEACAM1 sequence rather than the two de novo bonobo sequences. Examining reads from these individuals failed to support human sequences at this position and in fact supported the more divergent sequence seen in the bonobo de novo assemblies.
 
@@ -141,50 +433,50 @@ To further validate our results, we directly sequenced the bonobo CEACAM1 N-doma
 
 Nucleotide BLAST searches on the NCBI webserver for bonobo N-domain sequences were performed with query sequences searching against the RefSeq Genome Database (refseq_genomes) for the organism groups ‘Homo/Pan/Gorilla groups’ (taxid: 207598) and ‘Primates’ (taxid: 9443), while excluding ‘bonobos’ (taxid: 9597), except in the case of searches within bonobo for potential gene conversion donor sequences.
 
-## Identification of human CEACAM N-domain variation
+#### Identification of human CEACAM N-domain variation
 
 Human haplotype data for CEACAM1, CEACAM3, CEACAM5, CEACAM6, CEACAM7, and CEACAM8, available through the IGSR (https://www.internationalgenome.org/) was accessed through the Ensemble genome browser (https://www.ensembl.org/). For each CEACAM the haplotypes identified for the Matched Annotation from NCBI and EMBL-EBI (MANE) Select v0.92 transcript were used (Figure 6—source data 1, Figure 6—figure supplement 3—source data 1, Figure 6—figure supplement 4—source data 1). All coding sequence haplotypes for the MANE Select transcript were downloaded and analyzed in excel as well as in R using custom scripts (Figure 6—source code 1, Figure 6—figure supplement 2—source code 1, Figure 6—figure supplement 3—source code 1, Figure 6—figure supplement 4—source code 1).
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
-## PAML/FUBAR/MEME/GARD
+#### PAML/FUBAR/MEME/GARD
 
 Evolutionary analyses were performed individually for each group of human CEACAM-coding sequence orthologs (Figure 2—source data 2). Only CEACAM21 was excluded from evolutionary analyses, since it was found only in hominid genomes and has likely been lost in the pan lineage (Figure 2—source data 1A and B) resulting in only three closely related sequences being available for comparison, insufficient for robust phylogenetic-based evolutionary analysis. CEACAM21 sequences were included in subsequent phylogenetic reconstructions.
 
 CEACAM-coding sequences and specific amino acids were tested for evidence of positive selection using the PAML NS sites program under the codon model F3 × 4 (Yang, 2007). A relevant primate species tree, based on primate species relationships detailed in Pecon-Slattery, 2014, was provided for each analysis (Figure 2—source data 2). To determine the likelihood a gene was evolving under positive selection, likelihood ratio tests were performed comparing the models of selection M1&M2 as well as M7&M8 (Figure 2—source data 1D; Bielawski, 2013). Sites evolving under positive selection (Figure 2—source data 1E) were identified by PAML using the Bayes empirical Bayes analysis as implemented in the NS sites package for evolutionary Model 2, which has been shown to be more robust to error due to recombination than the alternative, Model 8, when identifying sites under selection (Anisimova et al., 2003). In addition, sites under selection were identified using the HyPhy package programs FUBAR and MEME (Murrell et al., 2013; Murrell et al., 2012) as implemented on the Datamonkey web servers (https://www.datamonkey.org and classic.datamonkey.org, respectively) (Delport et al., 2010; Kosakovsky Pond and Frost, 2005; Pond et al., 2005; Weaver et al., 2018). For FUBAR and initial MEME analyses, species trees of the relevant primates were provided to inform analyses of evolution. HyPhy GARD analyses (classic.datamonkey.org) were used to identify evidence of recombination and the number and approximate locations of breakpoints (Figure 2—source data 1E, Figure 2—source data 3; Kosakovsky Pond et al., 2006). When GARD detects evidence of recombination the program splits sequence alignments at the predicted breakpoint and creates new phylogenies for each set of sequences. These updated GARD-informed phylogenies for CEACAM sequences were used for MEME analyses to account for errors in calling sites under selection due to recombination. Prior to running MEME and GARD analyses the ‘automatic model selection tool’ provided by classic.datamonkey.org was used to determine the most appropriate model of selection under which to run analyses. For PAML, sites with posterior probability >0.95 were considered to have strong support to be evolving under positive selection (Yang et al., 2005), while >0.9 posterior probability supported sites found by FUBAR (Murrell et al., 2013), and p-values ≤ 0.05 supported sites found by MEME (Murrell et al., 2012). Results files for evolutionary analyses (Figure 2—source data 3) were analyzed and visualized using custom R (R Development Core Team, 2019) and python scripts (Figure 2—source code 1, Figure 2—figure supplement 1—source code 1 , Figure 4—source code 1). Python code was run in a Jupyter notebook launched from the Anaconda Navigator.
 
-## Tree building
+#### Tree building
 
 Phylogenetic trees were constructed using our panel of primate CEACAM-coding sequences identified as described above. Multiple sequence alignments on which tree constructions were based were done by translation alignment using default settings of the MAFFT sequence alignment software as implemented in Geneious Prime 2020.2.2. For domain-specific phylogenetic reconstruction domains were identified using InterProScan (Quevillon et al., 2005) in Geneious Prime. Assignments for immunoglobulin-like domains, that is, the IgV-like (N-domain) and IgC domains were based on predictions by the Superfamily database (Wilson et al., 2009) and cytoplasmic domain assignments were based on the PHOBIUS database (Käll et al., 2004). Transmembrane domains were excluded from analyses due to their particularly small sequence length, which can make tree building unreliable due to limited phylogenetically informative sites. Indeed, relatively short sequence lengths for the other domains, typically around 300 bp or less, along with often high sequence similarity likely decreased the reliability and statistical support for our domain trees. However, even with these limitations in many cases relationships between domains were resolved with high bootstrap support, particularly for peripheral nodes and clades and for CEACAMs not found to be evolving rapidly. Phylogenetic reconstructions of sequence alignments (Figure 4—source data 1) were done using the PhyML 3.0 web browser (http://www.atgc-montpellier.fr/phyml/) with default settings and confidence testing by 1000 bootstrap replicates (Guindon et al., 2010).
 
-## Data visualization
+#### Data visualization
 
 Visualization of evolutionary analyses, phylogenetic trees, sequence identity, and haplotype frequencies was done in R (R Development Core Team, 2019) using the R packages BiocManager (Morgan, 2019), treeio (Wang et al., 2020), ggplot2 (Wickham, 2016), ggtree (Yu et al., 2018; Yu et al., 2017), evobiR (Blackmon and Adams, 2015), and ggforce (Pedersen, 2021). Protein structures were visualized using the UCSF Chimera package version 1.13.1. Chimera is developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco (supported by NIGMS P41-GM103311) (Pettersen et al., 2004).
 
-## CEACAM1-binding assays
+### CEACAM1-binding assays
 
-## CEACAM1 N-domain assembly PCR for expression plasmid construction
+#### CEACAM1 N-domain assembly PCR for expression plasmid construction
 
 Oligonucleotides were designed to assemble expression cassettes containing the human IgƘ signal sequence followed by a primate CEACAM1 N-terminal domain, and finally a STREPII tag and tobacco etch virus (TEV) protease site. Templates for primate CEACAM1, IgƘ, and the STREPII tag/TEV protease site were synthesized commercially (Genscript & Integrated DNA Technologies, Piscataway, NJ, USA). Oligonucleotides were designed to amplify each fragment with approximately 20 bp of template overlap for PCR assembly as detailed in Supplementary file 1A and B. Individual PCR fragments for IgƘ, the N-terminal domain of primate CEACAM1, and the STREPII/TEV tag were generated using the Phusion (Finnzymes) high-fidelity polymerase and were subsequently gel-purified (Gel DNA Extraction Kit, Zymo Research). For assembly, 0.2 µL of each purified PCR fragment was added as template in a Phusion PCR reaction with the outermost primer set (IgK pCDNA GFP LIC F and GFP STREP II CEACAM1N R3). The assembly PCR was separated on a 1% agarose gel and the band corresponding to the correct assembly length was gel extracted and purified.
 
-## LIC cloning in pcDNA3 GFP LIC vector
+#### LIC cloning in pcDNA3 GFP LIC vector
 
 The pcDNA3 GFP LIC vector (a gift from Scott Gradia; Addgene plasmid ##30127) is an empty LIC vector derived from pcDNA3.1(+) which adds a C-terminal GFP gene to the protein of interest. For vector preparation, the pcDNA3 GFP LIC vector was linearized with SspI (New England Biolabs) for 1 hr at 37°C and then purified (DNA Clean-up and Concentration, Zymo Research). The linearized vector was treated with T4-DNA Polymerase (New England Biolabs) and dGTP as per protocol (https://qb3.berkeley.edu/facility/qb3-macrolab/projects/lic-cloning-protocol/) and incubated at 22°C for 40 min. The enzyme was then heat-denatured at 75°C for 20 min. For insert preparation, purified products from the assembly PCR were similarly treated with T4 DNA Polymerase and dCTP per protocol. The annealing reaction was performed by combining 3 µL of treated vector, and 3 µL of treated PCR fragment in 20 µL total volume for 30 min at room temperature. Six µL of the annealing reaction were transformed into One Shot Top10 Chemically Competent cells per manufacturer’s instructions (Thermo Fisher Scientific). Single colonies were prepped (ZymoPURE Plasmid Miniprep Kit, Zymo Research) and proper insertion was confirmed by Sanger sequencing (GeneWiz, South Plainfield, NJ).
 
-## Introduction of variant residues into CEACAM1 constructs
+#### Introduction of variant residues into CEACAM1 constructs
 
 Mutations to introduce bonobo CEACAM1 residues and population variants into the human CEACAM1 reference as well human CEACAM1 residues into the bonobo CEACAM1 reference sequence were done by site-directed mutagenesis using mutation-specific primers designed using the Agilent QuikChange Primer Design tool (https://www.chem.agilent.com/store/primerDesignProgram.jsp), then transformed into One Shot Top10 chemically competent cells for amplification and sequence verification. Plasmids were extracted for further use using the ZymoPURE II Plasmid Maxiprep kit.
 
-## Protein expression
+#### Protein expression
 
 Recombinant CEACAM1 expression plasmids were transfected into human HEK293T cells using the Lipofectamine 3000 transfection kit following manufacturer’s instructions. Two days post transfection cell supernatant was collected and filter sterilized and cells were collected and lysed. Expression of proteins was confirmed by western blotting. The HEK293T cell line used in this study was obtained from ATCC which authenticated and screened the line for mycoplasma prior to shipping.
 
-## Bacterial strains and culture
+#### Bacterial strains and culture
 
 H. pylori strains G27 (Baltrus et al., 2009), J99 (Alm et al., 1999), Tx30a (ATCC 51932), and the G27 HopQ deletion strain (omp27::cat-sacB in NSH57) (Yang et al., 2019) were cultured microaerobically at 37°C on Columbia agar plates supplemented with 5% horse blood 0.2% beta cyclodextrin, 0.01% amphotericin B, and 0.02% vancomycin. To assay binding between recombinant primate CEACAM1 N-domain proteins and H. pylori strains, H. pylori strains were grown for 2–5 days on solid media, collected, and suspended in Brain Heart Infusion Media; 500 µL of bacterial suspension were then incubated with 100 µL of CEACAM protein for 30 min, rotating on a nutator. Bacteria were then washed twice with cold PBS. Samples to be visualized by western blotting were pelleted and resuspended in 1× Laemmli buffer. Samples to be examined by flow cytometry were suspended in 0.5–1 mL of PBS.
 
 The use of E. coli to express MS11 and VP1 N. gonorrhoeae Opa proteins was described previously (Roth et al., 2013). For this project plasmids expressing Opa proteins, Opa52 (Kupsch et al., 1993) and Opa74 (Roth et al., 2013), were synthesized in the pET-28a vector background by GeneScript. Synthesizing Opa expression plasmids bypassed the subcloning described in previous works that allowed outer membrane expression, so an N-terminal signal sequence from the OMP A protein, native to the outer membrane of E. coli, was added by the manufacturer to express Opa proteins on the outer membrane of E. coli. NcoI and HindIII restriction sites were used to add OMP A and Opa sequences to the pET-28a plasmid. Opa expression vectors were transformed into E. coli DH5α cells for maintenance, replication, and sequence verification. Plasmids were extracted for further use using the Zymo Research Zyppy Plasmid miniprep kit. For pulldown experiments Opa expression plasmids were transformed into Rosetta (DE3) pLysS E. coli cells to allow for inducible expression of Opa proteins. Cells were grown to an optical density of OD600 0.4–0.6, then IPTG (isopropyl β-d-1-thiogalactopyranoside) was added to a concentration of 100 mM to induce expression of Opa proteins. Bacterial cells were left to induce for 3 hr at 37°C. For pulldown assays 300 μL of induced E. coli cell culture was incubated with 100 μL of CEACAM1 protein construct as processed as described for H. pylori. All E. coli cells were cultured at 37°C in LB (Luria-Bertani) broth.
 
-## Western blotting and flow cytometry
+#### Western blotting and flow cytometry
 
 Pulldown experiments assayed by western blotting were visualized using a commercially available mixture of Mouse α-GFP clones 7.1 and 13.1 (Sigma-Aldrich) at a dilution of 1:103 for the primary antibody incubation followed by secondary incubation with goat α-mouse conjugated to horseradish peroxidase (1:104 dilution) (Jackson ImmunoResearch) and visualized by WesternBright ECL HRP Substrate (Thomas Scientific). For pulldowns visualized by western blotting, CEACAM1 protein input samples were prepared by mixing 20 µL of protein with 20 µL 2× Laemmli then boiled at 95°C for 5 min and centrifuged at max speed for 5 min, before visualization by western blotting alongside pulldown samples. GFP fluorescence of primate CEACAM1 constructs bound to H. pylori strain G27 was also measured by flow cytometry, with 10,000 events per sample measured. H. pylori strain G27 incubated alone was used as a negative control. Flow cytometry data was analyzed using FlowJo v10.5.3. Western blots and flow cytometry experiments depicted are representative of at least three independent replicates performed at different times.

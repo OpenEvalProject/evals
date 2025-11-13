@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/033n3pw66 Department of Molecular Biology and Genetics, Faculty of Science, University of South Bohemia České Budějovice Czech Republic
-2. https://ror.org/05pq4yn02 Laboratory of Analytical Biochemistry and Metabolomics, Institute of Entomology, Biology Centre, Czech Academy of Sciences České Budějovice Czech Republic
-3. https://ror.org/033n3pw66 Department of Applied Chemistry, Faculty of Agriculture and Technology, University of South Bohemia České Budějovice Czech Republic
+1. Department of Molecular Biology and Genetics, Faculty of Science, University of South Bohemia České Budějovice Czech Republic ([ROR:033n3pw66](https://ror.org/033n3pw66))
+2. Laboratory of Analytical Biochemistry and Metabolomics, Institute of Entomology, Biology Centre, Czech Academy of Sciences České Budějovice Czech Republic ([ROR:05pq4yn02](https://ror.org/05pq4yn02))
+3. Department of Applied Chemistry, Faculty of Agriculture and Technology, University of South Bohemia České Budějovice Czech Republic ([ROR:033n3pw66](https://ror.org/033n3pw66))
 
 † Corresponding author
 
@@ -40,9 +40,25 @@ We have previously shown that activated immune cells preferentially acquire nutr
 
 ## Results
 
-## SAM transmethylation pathway accelerates in activated hemocytes
+### SAM transmethylation pathway accelerates in activated hemocytes
 
 One of the important sources of adenosine in hemocytes is the SAM transmethylation pathway (Figure 2A). Putative methionine transporters, as well as all enzymes of this pathway, are strongly expressed in hemocytes, both in the resting and activated state (Figure 2B, Figure 2—figure supplement 1, Figure 2—figure supplement 1—source data 1 and Supplementary file 3). Methionine can be transported from the hemolymph to the cytosol by Drosophila L type amino acid transporters orthologs mnd (CG3297; FBgn0002778), Jhl-21 (CG12317; FBgn0028425), CG1607 (FBgn0039844), sbm (CG9413; FBgn0030574), or gb (CG6070; FBgn0039487). The expression of mnd and gb is particularly high and is further increased during infection (Figure 2B). SAM synthetase (Sam-S; CG2674; EC 2.5.1.6; FBgn0005278) converts methionine and ATP into SAM. SAM is used for methylation by a wide range of methyltransferases (EC 2.1.1.-), or in polyamine synthesis, by SAM decarboxylase (SamDC; CG5029; EC 4.1.1.50; FBgn0019932), producing 5‘-methylthioadenosine (MTA). The actual methylation, using SAM as a donor, is carried by various methyltransferases. Using our RNAseq of hemocytes, we checked the expression of 200 genes (S3 Table), which are categorized as Drosophila methyltransferases. We found that 43 methyltransferases (at least 24 of them categorized as SAM-dependent methyltransferases) significantly increased their expression in both 9 and 18 hpi (Figure 2—figure supplement 3). Methylation reactions produce SAH, a potent inhibitor of methyltransferases which must be quickly removed to keep the pathway running. Ahcy (Ahcy; CG11654; EC 3.3.1.1; FBgn0014455) hydrolyzes SAH into adenosine and homocysteine and shows the highest expression among SAM transmethylation pathway enzymes (Figure 2B). AhcyL1 (CG9977; FBgn0035371) and AhcyL2 (CG8956; FBgn0015011), which work as dominant-negative regulators of Ahcy Parkhitko et al., 2016 have a lower expression and are downregulated during infection (Figure 2B). When adenosine and homocysteine accumulate, Ahcy changes the activity in favor of SAH synthesis. Thus, adenosine and homocysteine must be rapidly metabolized (Kloor and Osswald, 2004). Homocysteine can be remethylated back to methionine, by betaine-homocysteine methyltransferase (Bhmt; CG10623; EC 2.1.1.5; FBgn0032727) or homocysteine S-methyltransferase (CG10621; EC 2.1.1.10; FBgn0032726). Alternatively, it is used as a substrate for Cystathionine β-synthase (Cbs; CG1753; EC 4.2.1.22; FBgn0031148) to produce cystathionine (CTH) in the transsulfuration pathway (Figure 2A). Overall, enzymes of the SAM transmethylation pathway, and its associated metabolic branches, are strongly expressed in hemocytes (Figure 2B) and possible increase in SAM transmethylation pathway can be suggested from RNAseq data (1) by increased expression of four transporters capable of transporting methionine, (2) by decreased expression of AhcyL2 (dominant-negative regulator of Ahcy), and (3) by increased expression of 43 out of 200 methyltransferases. Nevertheless, the actual metabolism cannot be determined based solely on the gene expression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the SAM transmethylation pathway with polyamine synthesis and transsulfuration branches and labeling with L-methionine-13C5 from media (red 13 represents the labeled carbon). Light blue CH3 represents the methyl group used during transmethylation or remethylation. Enzymes and processes are italicized. RNAi in blue rectangle represents adenosylhomocysteinase knockdown. (B) Expression heat map (bulk RNAseq) of methionine transporters and enzymes in circulating hemocytes from uninfected (Uninf) and infected (INF) third instar larvae collected at 0, 9 and 18 hpi (0 hpi = 72 hr after egg laying). Means of 6 replicates (10 replicates in case of 18 hr INF) shown in each cell are transcripts per million (TPM) - for comparison, only 20% of genes in RNAseq show expression higher than 15 TPM (data in Figure 2—source data 1 and Supplementary file 3). (C-E,K,M) 13C-labeling of metabolites in hemocytes, which were incubated ex vivo for 20 min in media containing 0.33 µM L-methionine-13C5. The graphs show the fraction of the compound with one (m+1), four (m+4), or five (m+5) 13C-labeled carbons – methionine m+5 (C), S-adenosylmethionine (SAM) m+5 (D), S-adenosylhomocysteine (SAH) m+4 (E), 5-methylthioadenosine (MTA) m+1 (K) and cystathionine (CTH) m+4 (M). (F) Methionine m+4 portion of total labeled methionine (m+4 and m+5) in media representing the labeling impurity of used methionine (white bar setting threshold - dashed line), and in hemocyte samples. (G-I,L,N) Total levels of methionine (G), SAM (H), SAH (I), MTA (L), and CTH (N) in hemocytes shown as the mean metabolite amounts expressed by the normalized peak area. (J) Methylation index calculated as the ratio of SAM:SAH levels (peak areas in H and I). (C-N) Bars represent mean values with 95% CI of uninfected (Uninf, light grey) and infected (INF, dark grey) control and uninfected (Uninf, light blue) and infected (INF, dark blue) Ahcy-RNAi samples; each dot represents one biological replicate (numerical values in Figure 2—source data 1 and Supplementary file 1); asterisks represent significant differences between samples tested by ordinary one-way ANOVA Tukey’s multiple comparison test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression analysis of enzymes in the SAM transmethylation pathway in circulating hemocytes from uninfected (Uninf; light gray) and infected (INF; dark gray) third instar larvae collected at 18 hpi by RT-qPCR. Bars show fold change compared to uninfected Ahcy samples (expression levels were normalized to RpL32 expression in each sample), each dot represents a biological replicate. Asterisks indicate significant differences between samples tested by multiple unpaired t-test. (B) Analysis of Ahcy knockdown efficiency at 0 and 18 hpi by RT-qPCR. RNAi was specifically induced in hemocytes by SrpD-Gal4 tubP-GAL80ts driven expression of UAS-Ahcy-RNAiHMS05799 in larvae maintained at 18 °C for the first 3 days of development and then transferred to 25 °C. RNAi reduces Ahcy expression to 16% of control at the onset of infection (0 hr). Bars represent means with 95% CI of uninfected (Uninf, light gray) and infected (INF, dark gray) control (driver crossed to P{CaryP}Msp300attP40 control without RNAi) and uninfected (Uninf, light blue) and infected (INF, dark blue) Ahcy-RNAi samples; each dot represents a biological replicate (numerical values in Figure 2—figure supplement 1—source data 1); asterisks indicate significant differences between samples tested by ordinary one-way ANOVA Tukey’s multiple comparison test (****p<0.0001).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** SrpD-Gal4 tubP-GAL80ts driven expression of UAS-GFP in 3rd-instar larvae maintained at 18 °C for the first 3 days of development and then transferred to 25 °C. GFP expression is detected in all lobes of lymph gland, pericardial cells and circulating and sessile hemocytes. Scale bar 250 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Expression heat map (bulk RNAseq) of 43 selected Drosophila methyltransferases in circulating hemocytes from uninfected (Uninf) and infected (INF) third instar larvae collected at 0, 9, and 18 hpi (0 hpi = 72 hr after egg laying). Means of 6 replicates (10 replicates in case of 18 hr INF) shown in each cell are transcripts per million (TPM) - for comparison, only 20% of genes in RNAseq show expression higher than 15 TPM (data in Figure 2—figure supplement 3—source data 1 and Supplementary file 3). These 43 selected methyltransferases out of 200 (Supplementary file 2) all significantly increase expression upon infection at both 9 and 18 hr (statistical data in Figure 2—figure supplement 3—source data 1). Asterisks after gene names indicate SAM-dependent methyltransferases as categorized in Flybase; some of the unlabeled genes may still belong to SAM-dependent methyltransferases.
 
 To analyze SAM transmethylation pathway metabolism, we used high pressure liquid chromatography coupled with tandem mass spectrometry (HPLC-MS/MS). In addition to detecting relative levels of metabolites, 13C-labeled methionine tracing was used to determine methionine usage in the SAM transmethylation pathway in hemocytes of infection and non-infected animals. Hemocytes were extracted by bleeding larvae at 20 hours post infection (hpi). Cells were incubated in media containing 0.33 µM 13C5 methionine for 20 min. This ex vivo incubation was designed to resemble physiological conditions. In control larvae, the labeled intracellular methionine fraction reached almost 70% in resting hemocytes and over 80% in activated hemocytes after 20 min of ex vivo incubation, demonstrating a substantial uptake of methionine into hemocytes (Figure 2C). Much of this methionine is used for SAM production and methylation, as indicated by the twofold increase of SAM and SAH in infected compared to control animals (Figure 2D and E); demonstrating an upregulation of the SAM transmethylation pathway in activated hemocytes. This is further supported by a significantly higher methylation index (ratio of SAM:SAH; Figure 2H–J) in activated hemocytes.
 
@@ -58,25 +74,25 @@ Knockdown of Ahcy leads to the accumulation of SAH and thus the production of ho
 
 In summary, activated hemocytes increase the uptake of methionine to ramp up the transmethylation pathway. SAM is not only a substrate for methylation, but is also used for polyamine synthesis. Homocysteine is not recycled back to methionine, but is further metabolized in the transsulfuration pathway. Interestingly, our data suggest an alternative link between methionine and CTH independent of Ahcy. Hemocyte-specific Ahcy-RNAi potently suppresses the SAM transmethylation pathway.
 
-## Ahcy produces adenosine as a systemic signal that influences the immune response
+### Ahcy produces adenosine as a systemic signal that influences the immune response
 
 In our previous work, we showed that activated hemocytes release increased amount of adenosine (Bajgar et al., 2015; Bajgar and Dolezal, 2018). This causes a systemic metabolic switch that slows the organism’s development, leaving energy for an effective immune response. Our results show that the SAM transmethylation pathway is enhanced in hemocytes after infection. This means that increased levels of adenosine is produced, as every methylation event results in the production of one adenosine molecule. At the same time, the cell must rapidly remove adenosine, along with homocysteine, to avoid reversing the direction of Ahcy enzyme activity, which would block methylation. This appears to be reflected in the significant reduction in intracellular adenosine levels after infection (Figure 3A). At least part of this reduction is likely due to the release of adenosine from the cell (via the equilibrative nucleoside transporter ENT2 Bajgar et al., 2015) since extracellular adenosine levels increase after infection (Figure 3B), as does the level of inosine, which is formed from adenosine by the action of the adenosine deaminase ADGF-A. We measured the extracellular adenosine production in hemocytes after 20 min of ex vivo incubation, when hemocytes were removed by centrifugation and adenosine and inosine were measured in the collected supernatants. We also chose to detect inosine because activated hemocytes produce the adenosine deaminase ADGF-A (Novakova and Dolezal, 2011). Therefore, some adenosine is always converted to inosine during sample processing, even when the adenosine deaminase inhibitor EHNA (erythro-9-(2-hydroxy-3-nonly)adenine) is used, otherwise it is difficult to detect any adenosine.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig3-v1.jpg)
 
-**Figure 3.:** (A) Levels of intracellular adenosine in hemocytes shown as the mean metabolite amount expressed by the normalized peak area at 20 hpi. Infection significantly decreases the level in control hemocytes (uninfected - Uninf - light gray vs. infected - INF - dark gray). Hemocyte-specific adenosylhomocysteinase knockdown (Ahcy RNAi; uninfected - Uninf - light blue and infected - INF - dark blue) significantly decreases intracellular adenosine in the uninfected state. (B) Levels of extracellular adenosine (right), released from hemocytes ex vivo after 20 min, and extracellular inosine (left) generated by adenosine deaminase ADGF-A. While infection leads to increased release of adenosine and generated inosine in the control (gray), no such increase is detected with Ahcy RNAi (blue). (C) Pupation is delayed upon infection in control larvae (n=270, uninfected dashed gray line and n=240, infected solid black line) but significantly less in hemocyte-specific Ahcy RNAi larvae (n=260, uninfected dashed blue line and n=265, infected solid blue line). Lines represent percentages of pupae at hours after egg laying (h AEL); rates were compared using Log-rank survival analysis. (D) The number of lamellocytes as well as encapsulation efficiency is significantly lower in infected Ahcy-RNAi (blue) larvae compared to infected control (gray). (E) Percentage of infected larvae surviving to adulthood is significantly lower in Ahcy-RNAi (blue) compared to control (gray) while the survival of uninfected individuals is not affected. (A,B,E) Bars represent means with SEM of uninfected (Uninf, light gray) and infected (INF, dark gray) control and uninfected (Uninf, light blue) and infected (INF, dark blue) Ahcy-RNAi samples; each dot represents a biological replicate; (D) dots represent the number of lamellocytes in a larva and the line mean; numerical values are in Figure 3—source data 1 and Supplementary file 1; asterisks represent significant differences between samples tested and unpaired t test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).Figure 3—source data 1.
+**Figure 3.:** (A) Levels of intracellular adenosine in hemocytes shown as the mean metabolite amount expressed by the normalized peak area at 20 hpi. Infection significantly decreases the level in control hemocytes (uninfected - Uninf - light gray vs. infected - INF - dark gray). Hemocyte-specific adenosylhomocysteinase knockdown (Ahcy RNAi; uninfected - Uninf - light blue and infected - INF - dark blue) significantly decreases intracellular adenosine in the uninfected state. (B) Levels of extracellular adenosine (right), released from hemocytes ex vivo after 20 min, and extracellular inosine (left) generated by adenosine deaminase ADGF-A. While infection leads to increased release of adenosine and generated inosine in the control (gray), no such increase is detected with Ahcy RNAi (blue). (C) Pupation is delayed upon infection in control larvae (n=270, uninfected dashed gray line and n=240, infected solid black line) but significantly less in hemocyte-specific Ahcy RNAi larvae (n=260, uninfected dashed blue line and n=265, infected solid blue line). Lines represent percentages of pupae at hours after egg laying (h AEL); rates were compared using Log-rank survival analysis. (D) The number of lamellocytes as well as encapsulation efficiency is significantly lower in infected Ahcy-RNAi (blue) larvae compared to infected control (gray). (E) Percentage of infected larvae surviving to adulthood is significantly lower in Ahcy-RNAi (blue) compared to control (gray) while the survival of uninfected individuals is not affected. (A,B,E) Bars represent means with SEM of uninfected (Uninf, light gray) and infected (INF, dark gray) control and uninfected (Uninf, light blue) and infected (INF, dark blue) Ahcy-RNAi samples; each dot represents a biological replicate; (D) dots represent the number of lamellocytes in a larva and the line mean; numerical values are in Figure 3—source data 1 and Supplementary file 1; asterisks represent significant differences between samples tested and unpaired t test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
 
 Hemocyte-specific Ahcy RNAi leads to a significant decrease in intracellular adenosine levels, confirming that a significant fraction of adenosine is generated by the SAM transmethylation pathway (Figure 3A). However, there is no increase in extracellular adenosine, or inosine levels upon Ahcy knockdown in hemocytes following infection (Figure 3B). This indicates that the SAM transmethylation pathway is responsible for the generation of this extracellular signal. This is further supported by the fact that silencing of Ahcy in hemocytes during infection leads to a significant reduction (by 6 hr) in developmental delay (Figure 3C), the hallmark of systemic effects of adenosine during infection. Similar to our previous work (Bajgar et al., 2015), this results in diminished host defense, which is associated with reduced production of lamellocytes and encapsulation of the parasitoid (Figure 3D) and reduced survival (Figure 3E). Interestingly, the induction of Ahcy RNAi in hemocytes accelerates development by approximately 2 hr, even in the absence of infection (Figure 3C), a result similar to silencing ENT2 specifically in hemocytes (Bajgar et al., 2015). The normal activity of hemocytes, associated with methylation and adenosine release, appears to slow the overall development of the organism.
 
 In summary, the SAM transmethylation pathway and Ahcy produce the majority of adenosine in Drosophila larval hemocytes and strongly participate in the production of extracellular adenosine as a systemic metabolic regulator. Knockdown of Ahcy in hemocytes reduces larval developmental delay associated with infection, demonstrating the lack in extracellular adenosine production. In addition, knockdown of Ahcy in hemocytes negatively impacts immune response.
 
-## Activated hemocytes recycle ATP and SAM from adenosine
+### Activated hemocytes recycle ATP and SAM from adenosine
 
 The above results demonstrate that the SAM transmethylation pathway is a major producer of adenosine in activated hemocytes. To maintain methylation, the cell must rapidly remove adenosine, some of which is released from the cell. This, of course, reduces the adenosyl pool of the cell; note that the SAM pathway is a major consumer of ATP when it combines methionine with ATP to form SAM (Figure 4A). Therefore, activated immune cells have active de novo purine production, as shown in mammalian macrophages and T lymphocytes (Yu et al., 2019; Roy et al., 2020). Our recent work showed increased pentose phosphate pathway activity is linked with nucleotide production in activated hemocytes (Kazek et al., 2024). However, this is very energy consuming and requires many steps, whereas the recycling of adenosine to AMP requires only one step and one ATP. Ahcy activity has indeed been linked to adenosine kinase activity, which produces AMP from Ado (Moffatt et al., 2002; Xu et al., 2017; Murugan et al., 2021). AMP can then be converted to ADP by adenylate kinase (Dzeja and Terzic, 2009) and finally to ATP by glycolysis or OXPHOS, which can again enter the transmethylation pathway.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig4-v1.jpg)
 
-**Figure 4.:** 13C isotope tracing.(A) Schematic representation of the SAM transmethylation pathway, de novo purine synthesis and adenosine recycling to ATP and SAM and labeling with adenosine-13C5 from media (red 13 represents the labeled carbon). Enzymes and processes are italicized. (B) Expression heat map (bulk RNAseq) of adenosine metabolizing enzymes and transporters in circulating hemocytes from uninfected (Uninf) and infected (INF) third instar larvae collected at 0, 9, and 18 hpi (0 hpi = 72 hr after egg laying). Means of 6 replicates (10 replicates in case of 18 hr INF) shown in each cell are transcripts per million (TPM) - for comparison, only 20% of genes in RNAseq show expression higher than 15 TPM (data in Figure 4—source data 1 and Supplementary file 3). (C, D) Expression analysis of adenosine kinases Adk2, 3 (C) and adenylate kinases Ak1, 2 (D) in circulating hemocytes from uninfected (Uninf) and infected (INF) third instar larvae collected at 0, 9, and 18 hpi by RT-qPCR. Bars show fold change compared to 0 hr Adk3 samples (expression levels were normalized to RpL32 expression in each sample), each dot represents a biological replicate. (E-H, L) Total levels of IMP (E), AMP (F), ADP (G), ATP (H) and S-adenosylmethionine - SAM (L) in hemocytes shown as the mean metabolite amounts expressed by the normalized peak area. (I-K) 13C-labeling of metabolites in hemocytes, which were incubated ex vivo for 20 min in media containing 10 µM adenosine-13C5. The graphs show the fraction of the compound with five 13C-labeled carbons – AMP m+5 (I), ATP m+5 (J) and SAM m+5 (K). (C-L) Bars represent mean values with 95% CI of uninfected (Uninf, light gray or pink) and infected (INF, dark gray or red) samples; each dot represents a biological replicate (numerical values in Figure 4—source data 1 and Supplementary file 1); asterisks represent significant differences between samples tested by tested by ordinary one-way ANOVA Sidak’s multiple comparison test (C,D) and unpaired t test (E-L) (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).Figure 4—source data 1.
+**Figure 4.:** (A) Schematic representation of the SAM transmethylation pathway, de novo purine synthesis and adenosine recycling to ATP and SAM and labeling with adenosine-13C5 from media (red 13 represents the labeled carbon). Enzymes and processes are italicized. (B) Expression heat map (bulk RNAseq) of adenosine metabolizing enzymes and transporters in circulating hemocytes from uninfected (Uninf) and infected (INF) third instar larvae collected at 0, 9, and 18 hpi (0 hpi = 72 hr after egg laying). Means of 6 replicates (10 replicates in case of 18 hr INF) shown in each cell are transcripts per million (TPM) - for comparison, only 20% of genes in RNAseq show expression higher than 15 TPM (data in Figure 4—source data 1 and Supplementary file 3). (C, D) Expression analysis of adenosine kinases Adk2, 3 (C) and adenylate kinases Ak1, 2 (D) in circulating hemocytes from uninfected (Uninf) and infected (INF) third instar larvae collected at 0, 9, and 18 hpi by RT-qPCR. Bars show fold change compared to 0 hr Adk3 samples (expression levels were normalized to RpL32 expression in each sample), each dot represents a biological replicate. (E-H, L) Total levels of IMP (E), AMP (F), ADP (G), ATP (H) and S-adenosylmethionine - SAM (L) in hemocytes shown as the mean metabolite amounts expressed by the normalized peak area. (I-K) 13C-labeling of metabolites in hemocytes, which were incubated ex vivo for 20 min in media containing 10 µM adenosine-13C5. The graphs show the fraction of the compound with five 13C-labeled carbons – AMP m+5 (I), ATP m+5 (J) and SAM m+5 (K). (C-L) Bars represent mean values with 95% CI of uninfected (Uninf, light gray or pink) and infected (INF, dark gray or red) samples; each dot represents a biological replicate (numerical values in Figure 4—source data 1 and Supplementary file 1); asterisks represent significant differences between samples tested by tested by ordinary one-way ANOVA Sidak’s multiple comparison test (C,D) and unpaired t test (E-L) (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
 
 The most striking expression change we detected in activated hemocytes was the increase of adenosine kinase Adk3 (Figure 4B and C) and cytosolic adenylate kinase Ak1 (Figure 4B and D). Another adenosine kinase, Adk2, which is not altered by infection, is also highly expressed in hemocytes, as is the mitochondrial adenylate kinase Ak2 (Figure 4B–D). Activated hemocytes have a system for recycling adenosine back to ATP, which appears to be further enhanced during infection. The increase of cytosolic Ak1 indicates at least partial redirection of energy metabolism from mitochondria (oxidative phosphorylation) into cytosol (aerobic glycolysis) in activated immune cells (Kornberg, 2020).
 
@@ -86,9 +102,17 @@ Resting hemocytes show a diminished fraction of labeled SAM derived from labeled
 
 In conclusion, both resting and activated hemocytes recycle adenosine to ATP. Activated hemocytes strongly upregulate the expression of Adk3 and cytosolic Ak1 and increase production of SAM from recycled adenosine.
 
-## Adenosine kinase and cytoplasmic adenylate kinase are important for SAM pathway and immune response
+### Adenosine kinase and cytoplasmic adenylate kinase are important for SAM pathway and immune response
 
 To determine the importance of adenosine kinase and adenylate kinase, which seem to be necessary for recycling of ATP from adenosine, we again used hemocyte-specific RNAi induced by Srp-Gal4Gal80. Adk3 RNAi reduces the infection-induced increase in expression almost eight times (Figure 5—figure supplement 1). Adk3 expression is low in hemocytes of uninfected larvae (Figure 4B and C), thus we did not observe any effect of Adk3 RNAi on the AMP level in uninfected larvae (Figure 5A). However, there is significantly lower level of AMP in hemocytes from the infected larvae (Figure 5A). Adk2 is also strongly expressed both in resting and activated hemocytes (Figure 4C) and that is, most likely, why we still see an infection-induced increase in AMP upon Adk3 RNAi (Figure 5A). This increase is also due to de novo purine synthesis. Nevertheless, the increase in AMP in Adk3 RNAi activated hemocytes is significantly smaller than that of controls, indicating that Adk3 activity is important for adenosine conversion to AMP in activated hemocytes. Increase in methylation index is abrogated upon Adk3 RNAi (Figure 5B), showing that Adk3 activity is required for the infection-induced increase in SAM transmethylation pathway. The consequences of Adk3 knockdown phenocopy those of Ahcy knockdown animals, as development is significantly less delayed during infection (Figure 5C) and number of lamellocytes (Figure 5D), as well as survival (Figure 5E) are decreased. We observe similar effects upon cytoplasmic Ak1 knockdown in hemocytes (Figure 5—figure supplement 1), another enzyme upregulated upon infection, which is likely involved in adenosine recycling. The methylation index is abrogated (Figure 5B), development is significantly less delayed during infection (Figure 5F), number of lamellocytes is decreased (Figure 5G) and survival is lower (Figure 5H) upon Ak1 RNAi-mediated knockdown. In summary, recycling of adenosine to AMP and potentially to ATP and SAM, using adenosine kinase and cytoplasmic adenylate kinase, appears to be important for activated hemocytes to increase the SAM transmethylation pathway and for effective immune response.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig5-v1.jpg)
+
+**Figure 5.:** (A) Total levels of AMP in hemocytes shown as the mean metabolite amounts expressed by the normalized peak area. Infection significantly increases the AMP level in control hemocytes (uninfected - Uninf - light gray vs. infected - INF - dark gray). Hemocyte-specific adenosine kinase Adk3 knockdown (Adk3 RNAi; uninfected - Uninf - light blue and infected - INF - dark blue) significantly decreases AMP during infection compared to control. (B) Methylation index, calculated as the ratio of SAM:SAH levels (peak areas; numerical values in Figure 5—source data 1 and Supplementary file 1), in control (uninfected - Uninf - light gray and infected - INF - dark gray) and in hemocyte-specific Adk3-RNAi and adenylate kinase Ak1-RNAi (uninfected - Uninf - light blue and infected - INF - dark blue). (C) Pupation is delayed (10 hr) upon infection in control larvae (n=270, uninfected dashed gray line and n=240, infected solid black line) but significantly less (7 hr) in hemocyte-specific Adk3 RNAi larvae (n=275, uninfected dashed blue line and n=275, infected solid blue line). (D) The number of lamellocytes is significantly lower in infected Adk3-RNAi (blue) larvae compared to infected control (gray). (E) Percentage of infected larvae surviving to adulthood is significantly lower in Adk3-RNAi (blue) compared to control (gray). (F) Pupation is delayed (9 hr) upon infection in control larvae (n=225, uninfected dashed gray line and n=270, infected solid black line) but significantly less (6 hr) in hemocyte-specific Ak1 RNAi larvae (n=195, uninfected dashed blue line and n=225, infected solid blue line). (G) The number of lamellocytes is significantly lower in infected Ak1-RNAi (blue) larvae compared to infected control (gray). (H) Percentage of infected larvae surviving to adulthood is significantly lower in Ak1-RNAi (blue) compared to control (gray). (A,B,D,E,G,H) Bars/lines represent mean values with 95% CI of uninfected (Uninf, light grey) and infected (INF, dark grey) control and uninfected (Uninf, light blue) and infected (INF, dark blue) Adk3-RNAi or Ak1-RNAi samples; each dot represents one biological replicate (numerical values in Figure 5—source data 1 and Supplementary file 1); asterisks represent significant differences between samples tested by unpaired t-test or ordinary one-way ANOVA Tukey’s multiple comparison test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). (C,F) Lines represent percentages of pupae at hours after egg laying (h AEL); rates were compared using Log-rank survival analysis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105039/elife-105039-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Analysis of Adk3 (A) and Ak1 (B) knockdown efficiency at 0 and 18 hpi by RT-qPCR. RNAi was specifically induced in hemocytes by SrpD-Gal4 tubP-GAL80ts driven expression of Adk3-RNAiHMC06354 or UAS-Ak1-RNAiGL00177 in larvae maintained at 18 °C for the first 3 days of development and then transferred to 25 °C. RNAi reduces Adk3 expression to 13% and Ak1 expression to 20% of control during infection (18 hpi). Bars represent means with 95% CI of uninfected (Uninf, light gray) and infected (INF, dark gray) control (driver crossed to P{CaryP}Msp300attP40 or P{CaryP}attP2 control without RNAi) and uninfected (Uninf, light blue) and infected (INF, dark blue) Ahcy-RNAi samples; each dot represents a biological replicate (numerical values in Figure 5—figure supplement 1—source data 1); asterisks indicate significant differences between samples tested by ordinary one-way ANOVA Tukey’s multiple comparison test (****p<0.0001). Development and survival to adulthood is not affected either by SrpD-Gal4 tubP-GAL80ts driven expression of Adk3-RNAiHMC06354 (C) or UAS-Ak1-RNAiGL00177(D).
 
 ## Discussion
 
@@ -122,27 +146,338 @@ The fate of adenosine is determined by biochemical properties and the expression
 
 ## Methods
 
-## Fly strains, cultivation, and parazitoid wasp infection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Ahcy</td>
+      <td>GenBank</td>
+      <td>FLYB: FBgn0014455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Ak1</td>
+      <td>GenBank</td>
+      <td>FLYB: FBgn0022709</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Adk3</td>
+      <td>GenBank</td>
+      <td>FLYB: FBgn0026602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Ahcy-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 67848 FLYB: FBti0186788</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Adk3-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 67755 FLYB: FBti0185498</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Adk2-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 35167 FLYB: FBti0144142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Ak1-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 35582 FLYB: FBti0144266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P{CaryP}attP2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 36303FLYB: FBst0036303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P{CaryP}Msp300attP40</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 36304 FLYB: FBst0036304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>SrpD-Gal4</td>
+      <td>Crozatier</td>
+      <td>FLYB: FBtp0020112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P{tubP-GAL80ts}2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 7017 FLYB: FBti0027797</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Leptopilina boulardi)</td>
+      <td>Leptopilina boulardi</td>
+      <td>Crozatier</td>
+      <td>NCBI:txid63433, RRID:NCBITaxon_63433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ahcy Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGCTGTCGCACAAATGGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ahcy Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCACGTTGTGCACCAGGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AhcyL1 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCGAGACGGAAGAGGACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AhcyL1 rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGAGAGCTGATAGAGACGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adk2 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AACTTCACCATCGATCACCTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adk2 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAGGAACGGTCGCTGTTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adk3 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGGACATGGAGAAACTCAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adk3 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAAGAAGAGCGCGTCTGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ak1 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTCGGCATTGATCGTAAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ak1 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGATCTGGCGCTGTACTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ak2 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTGAGAAGCTCGACACATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ak2 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTCCAGTGACATCGTCCGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ak3 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATCCAGCGATTCTTGACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ak3 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGGATAACCGAGGTAGGCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ArgK Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGGAGATGATGCGGAGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ArgK Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCGACGACCACTTCCTGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cbs Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGATTACGCCCAACATCCTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cbs Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AATGCGGTCCTTCACTGATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG10621 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CATCGAGCTGATAAAGAACACGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG10621 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AATGGAGGCAATGATCAAAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG20623 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGCCAAATTCTGGGTCTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG20623 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAAGGGGTCACGAATAGTGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RpL32 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGCTGTCGCACAAATGGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RpL32 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCACGTTGTGCACCAGGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SamDC Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAACGGTGACGATGATCTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SamDC Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGTTTTAAGGATCCATCGTCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SamS Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAATCAGCGACGCTATCTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SamS Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTCTCACGAACAACCTTCTGG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-methionine-13C5</td>
+      <td>Sigma-Aldrich</td>
+      <td>908339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>adenosine-13C5</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>CLM-3678</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains, cultivation, and parazitoid wasp infection
 
 Drosophila melanogaster strain w1118 (FBal0018186) in Canton S genetic background (FBst0064349) was used as a control line unless otherwise stated. Strains UAS-Ahcy-RNAi AhcyHMS05799 (FBti0186788), UAS-Adk3-RNAi Adk3HMC06354 (FBti0185498), UAS-Adk2-RNAi Adk2GL00036 (FBti0144142), UAS-Ak1-RNAi Ak1GL00177 (FBti0144266), and control lines for RNAi y1 v1; P{CaryP}attP2 (FBst0036303), and y1 v1; P{CaryP}Msp300attP40 (FBst0036304) were obtained from the Bloomington Drosophila Stock Center. The SrpD-Gal4 strain (FBtp0020112) was obtained from M. Crozatier, backcrossed into the w1118 background, and recombined with P{tubP-GAL80ts}2 (FBti0027797), which was also backcrossed into w1118 background, to generate the w1118; +/+; SrpD-Gal4 P{tubP-GAL80ts}2 line with Gal4 expression in all hemocytes but not in the fat body when kept at 18 °C for the first 3 days of development and then transferred to 25 °C (S Fig; expression in the fat body is only present at 29 °C in this line). All flies were grown on cornmeal medium (8% cornmeal, 5% glucose, 4% yeast, 1% agar, 0.16% methylparaben) at 25 °C. Parasitoid wasps Leptopilina boulardi were reared on sugar agar medium (6% sucrose, 1.5% agar, 0.75% methylparaben) and grown by infection of wild-type Drosophila larvae. Early third instar larvae (72 hr after egg laying) were infected with parasitoid wasps (=time point 0 hr). Weak infection (1–2 eggs per larva) was used for survival analysis. Strong infection (4–8 eggs per larva) was used for the rest of the experiments to obtain a strong and more uniform immune response. Infections were performed on 60 mm Petri dishes with standard cornmeal medium for 15 min for weak infection and 45 min for strong infection.
 
-## Hemocyte counting
+### Hemocyte counting
 
 Drosophila circulating hemocytes were counted at 20 hpi by bleeding one larva in 15 µL of PBS and using Neubauer hemocytometer (Brand GMBH) using differential interference contrast microscopy. Particular types of hemocytes were determined based on the cell morphology and since we were mainly interested in lamellocytes, we counted them 22–24 hr after infection, when most of the lamellocytes from the first wave are fully differentiated but still mostly in circulation, as they are just starting to adhere to the wasp egg.
 
-## Survival and developmental time analysis
+### Survival and developmental time analysis
 
 Infected and non-infected 3rd instar larvae were placed into fresh vials in a number of 30 larvae per vial, three vials per genotype with three to five independent experiments. Differences in larval development were determined by counting newly appeared pupae every 6 hr post infection. Percentage of pupae number per total used larvae number at particular time points was plotted and compared by Log-rank test. For survival, all emerged adult flies were counted and checked if they contain the melanized eggs to confirm they were infected. The ones without any egg were excluded from the analysis. Percentage of emerged adults number per total used infected individuals were plotted.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Based on the larval stage, 30–50 larvae were washed 3 x in PBS, transferred on microscope slide covered with parafilm and placed on ice. All larvae were opened with tweezers and released hemolymph with hemocytes were aspired with 10 µL pipette and transferred into 1.5 mL tube containing TRIzol Reagent (Life Technologies) for RNA extraction. RNA was purified with Direct-zol RNA Microprep (Zymo-Research). Total RNA was used for cDNA preparation by PrimeScript Revrese Transcriptase (Takara) with oligo(dT) primer. cDNA was used as a template for qPCR using TP SYBR 2 x Master Mix (Top-Bio) and C1000 Touch Thermal Cycler (Bio-Rad). Expression of a specific gene in each sample was normalized to expression of RpL32 (FBgn0002626) and relative gene expression was counted with ΔΔCt method. Graphs showing target gene expression and statistical analysis were made with GraphPad Prism.
 
-## Bulk RNAseq analysis
+### Bulk RNAseq analysis
 
 RNA was extracted from circulating hemocytes (72 hr after egg laying = time of infection = 0 hr, 81 hr after egg laying = 9 hr post infection/hpi and 90 hr after egg laying = 18 hpi) of uninfected and infected 3rd instar w1118 larvae (6–10 replicates) and barcoded 3'-end seq forward libraries were sequenced by deep uni-directional sequencing of 75-base long reads using Illumina NextSeq as described in details in Kazek et al., 2024. Raw data are available at The European Nucleotide Archive under study accession number: PRJEB74490 (secondary acc: ERP159178; https://www.ebi.ac.uk/ena/browser/view/PRJEB74490). Trimmed reads were mapped to the BDGP Drosophila melanogaster Release 6.29 genomic sequence using the Mapper for RNA Seq in Geneious prime software (Biomatters). Normalized counts of reads mapped to each gene annotation were calculated as transcripts per million (TPM), expression levels were compared using the DESeq2 method in Geneious prime software, and data were exported to an Excel file (S4 Data).
 
-## Metabolomics and stable 13C isotope tracing in hemocytes ex vivo
+### Metabolomics and stable 13C isotope tracing in hemocytes ex vivo
 
 Samples for metabolomics were collected 20 hours post infection. Larvae were washed first with distilled water and then with PBS to reduce contamination. Larval hemolymph was collected by carefully tearing the larvae on a glass microscope slide covered with parafilm. Hemolymph from 100 larvae was immediately collected into sterile 1.5 ml Eppendorf polypropylene centrifuge tubes prefilled with 100 µl PBS and centrifuged for 5 min at 25 °C, 360 x g. For experiments without 13 C isotope tracing, hemocytes were resuspended in 50 µL of HPLC water and three times frozen in liquid nitrogen/thawed at 37 °C (established for sufficient cell disruption and extraction of intracellular metabolites). 200 µl of cold acetonitrile-methanol (1:1) was added and stored at –80 °C until LC-HRMS analysis described in Kazek et al., 2024. For experiments with 13 C isotope tracing, the supernatant was removed and the cells were mixed with medium containing PBS, 5 mM trehalose, 0.5 mM glucose, 5 mM proline, 5 mM glutamine (Sigma/MERCK), supplemented with gentamicin (10 mg/ml; Gibco), amphotericin B (250 µg/ml; Gibco) and 0.1 mM phenylthiourea (PTU; Sigma/MERCK) to prevent melanization. Based on the experiment, medium further contained either 0.33 µM L-methionine-13C5 or 10 µM adenosine-13C5 and unlabeled 0.33 µM L-methionine. The concentrations are based on measurements of actual hemolymph concentrations in wild-type larvae in the case of methionine, and in the case of adenosine, we used a slightly higher concentration than measured in the adgf-a mutant (Dolezal et al., 2005) to have a sufficiently high concentration to allow adenosine to flow into the hemocytes.
 
@@ -150,6 +485,6 @@ The hemocytes were then incubated ex vivo for 20 min at 25 °C and 80–90% humi
 
 Raw data are available at https://doi.org/10.6084/m9.figshare.27291300.v1 and processed data in Supplementary file 1. For peak area analysis, the data were normalized to the total content of all screened unlabeled metabolites - the peak area of the metabolite in a particular sample was divided by the peak area of the same metabolite of the selected reference sample and this procedure was repeated for each individual unlabeled metabolite. These ratios of all metabolites in one particular sample were averaged to determine a normalization factor. We then divided the measured peak area by the normalization factor for that sample to obtain the normalized peak area values (normalization factors are reported in Supplementary file 1).
 
-## Data analysis
+### Data analysis
 
 Data were analyzed and graphed using GraphPad Prism (GraphPad Software), with specific statistical tests shown in the legend of each figure.

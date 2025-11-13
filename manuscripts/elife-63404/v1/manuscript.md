@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Cell and Developmental Biology, Penn Epigenetics Institute, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
+1. Department of Cell and Developmental Biology, Penn Epigenetics Institute, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
@@ -30,27 +30,59 @@ Previous work on transcriptional memory has primarily relied upon population-lev
 
 ## Results
 
-## Assessing Nup98-dependent transcriptional memory in absolute units
+### Assessing Nup98-dependent transcriptional memory in absolute units
 
 We have previously shown that ecdysone-inducible genes exhibit transcriptional memory, and that Nup98 is required for the proper establishment and/or maintenance of the primed memory state (Pascual-Garcia et al., 2017). To further investigate the role of Nup98 in modulating transcription, we examined the transcription dynamics of the ecdysone-responsive gene E74 during repeated hormone exposure in more detail. Drosophila S2 cells were exposed to synthetic 20E for a 4 hr initial induction, then washed and allowed to recover for 24 hr before re-exposure to 20E for an additional 4 hr (Figure 1A). We assayed E74 expression dynamics during both exposures by collecting cells every 30 min, isolating mRNA, and performing RT-qPCR on cells treated with dsRNA against the control white gene (dsWhite) or against Nup98 (dsNup98). To aid in quantitative analysis, we adapted a previously described protocol (Petkova et al., 2014) to estimate the absolute number of E74 mRNA molecules per cell. We performed RT-qPCR using known numbers of in vitro transcribed RNAs as template spanning six orders of magnitude. This allowed us to construct a calibration curve relating the qPCR threshold cycle Ct to the number of input molecules (Figure 1—figure supplement 1A; see Materials and methods). We measured the number of cells from which we extracted mRNA for each experimental condition and time point. We also estimated the mRNA recovery efficiency of the mRNA extraction step. Together, these measurements allowed us to convert experimental Ct values into absolute numbers of E74 mRNA molecules per cell, generating a detailed description of E74 expression dynamics during hormone exposure in control and Nup98 knockdown cells (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of ecdysone/20E treatment. Cells were treated with 5 μM 20E, then washed with fresh media and recovered for 24 hr. Memory response was assessed by incubating cells with 5 μM 20E after recovery period. (B). Absolute number of E74 mRNAs per cell as a function of time after the addition of 20E during either the first or second induction in control (dsWhite) and Nup98 knockdown (dsNup98) S2 cells. Samples were collected every 30 min. Error bars represent standard deviation of the mean of three experiments. (C). Schematic of smFISH labeling of sites of nascent transcription and spliced transcripts in either the nucleus or cytoplasm. (D). Representative images of E74 smFISH labeling in single cells during the first and second induction, displayed with the ImageJ ‘red fire’ look-up table. (E). Violin plots of E74 puncta per cell. Mean and median indicated by black and red horizontal lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Calibration of qPCR using known numbers of input DNA or in vitro transcribed RNA molecules. Ct (cycle threshold) refers to the number of cycles required for the fluorescent signal to cross the threshold at which all samples are compared. Note that the protocol is accurate across more than 6 orders of magnitude. (B). Nup98 expression was assessed relative to rp49 by qPCR following the experimental conditions detailed in Figure 1B. Error bars represent standard deviation. (C). Number of cells analyzed in Figure 1D. (D). p-Values for all possible pairwise comparisons of spot count distributions shown in Figure 1E were determined using the non-parametric Mann-Whitney U test. (E). Quantification of numbers of mRNA per spot detected by smFISH. Mean intensities of cytoplasmic puncta under uninduced conditions were used to normalize intensities of puncta under induction. Mean and median indicated by black and red horizontal lines respectively. (F). p-Values for all possible pairwise comparisons of mRNA per spot distributions shown in panel E were determined using the non-parametric Mann-Whitney U test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A-C) Representative images (A,B) and violin plots (C) for Rpt6 expression (A) and Pp4-19C expression (B) in uninduced and 20E induction. Mean and median indicated by black and red horizontal lines respectively. Mann-Whitney U test was used to compare similarities between uninduced and induced samples. (D–F). E74 smFISH spots are diffraction limited. (D): average images of all spots for each of 16 conditions displayed with the ‘red fire’ look-up table. (E, F) Cross-section of the eight images for control (dsWhite) are plotted with mean pixel values demarcated by symbols and fitted Gaussians as solid lines for either raw mean pixel values (E) or normalized such that the total area under each Gaussian equals unity (F). Vertical lines represent mean (dashed) and standard deviation (dot-dashed) of the full width at half maximum (FWHM, 110 ± 5 nm), essentially equivalent to the radius of a diffraction-limited object predicted from the Abbe limit (emission wavelength / numeric aperture = 105 m) independent of spot intensity. (G). Transcriptional noise, plotted as coefficient of variation CV (or standard deviation/mean) squared, as a function of mean number of mRNA molecules per cell, was assessed in control and Nup98 knockdown conditions in the first and second inductions. Error bars represent the standard deviation of the mean.
 
 Using this approach, we found as expected that the number of E74 mRNA molecules per cell reaches considerably higher amounts during re-induction than during initial induction in control dsWhite-treated cells (Figure 1B). E74 transcripts accumulate slowly during the first 2 hr of initial hormone exposure before increasing. Moreover, the accumulation trajectory in Nup98-depleted cells is not different from control during the first induction. In contrast, accumulation is rapidly onset during the second induction in control cells, whereas in Nup98 knockdown conditions, the second induction is more similar to the first induction (Figure 1B). This supports the proposed requirement for Nup98 in transcriptional memory, in agreement with previous work from our and other laboratories (Light et al., 2013; Pascual-Garcia et al., 2017). The efficiency of Nup98 depletion was similar during both the first and second inductions (Figure 1—figure supplement 1B), supporting our conclusion that the response of E74 to initial exposure does not require normal levels of Nup98; instead, cells require Nup98 to rapidly express E74 upon repeated exposure.
 
 In the simplest model of hormone-induced transcription, all loci would be rapidly activated upon hormone treatment and then begin producing mRNAs at a constant rate. If true, then mRNA content should be relatively uniform between cells, particularly at later times after induction, when cells will have ample opportunity for their expression levels to closely approach the mean level. To ask whether E74 expression is uniform between cells, and to gain insight into the nature of hormone-induced memory response, we employed smFISH to measure E74 expression in single cells. E74 mRNAs were labeled with a set of 67 probes complimentary to exon sequences (Figure 1C and Supplementary file 1) and imaged by confocal microscopy. smFISH reveals two classes of labeled objects: relatively dim, diffraction-limited puncta enriched in the cytoplasm representing mature mRNAs, and one or more bright nuclear-localized puncta corresponding to sites of nascent transcription (Figure 1C–D). To estimate E74 mRNA levels, we counted the number of mRNA puncta at 0, 1, 2, and 4 hr post-induction and observed that the average number of puncta per cell accumulated with dynamics that mirrored those obtained by absolute qPCR (Figure 1D–E and Figure 1—figure supplement 1C-D). mRNA content of puncta also increased in a manner consistent with qPCR (Figure 1—figure supplement 1E-F). As expected, during the first induction, dsWhite-treated and Nup98-depleted cells accumulated puncta at similar rates, while during the second induction, control cells accumulated mRNA puncta more rapidly and to higher levels than Nup98-depleted cells or cells undergoing the initial induction (Figure 1E). Such accumulation of mRNA puncta was not seen in smFISH of control probes against genes that do not respond to ecdysone (Shlyueva et al., 2014), which exhibited similar counts before and after ecdysone addition (Figure 1—figure supplement 2A-C). The validity of these smFISH counts is also supported by our demonstration that the detected objects are diffraction limited (Figure 1—figure supplement 2D-F, Petkova et al., 2014; Little et al., 2015). Importantly, we observed that E74 expression is heterogeneous between cells, with mRNA amounts exhibiting broad distribution at all times and under all induction conditions. Even under the most highly expressed condition at 4 hr after the second induction, 20% of cells possess 20 puncta or fewer, whereas <5% contain 100 or greater. These smFISH results validate our quantitative RT-qPCR data, but do not support the simple model of E74 activation or production occurring at a uniform rate. The observed heterogeneous mRNA levels across cells in all conditions also suggest that the role of Nup98 is to increase average expression levels without increasing the uniformity of the hormone response during the second induction. Consistently, analysis of transcriptional noise in the four conditions reveals that Nup98 knockdown does not alter variability in mRNA counts between cells (Figure 1—figure supplement 2G).
 
-## Nup98 modulates E74 mRNA production without affecting export or degradation
+### Nup98 modulates E74 mRNA production without affecting export or degradation
 
 To further explore the role of Nup98 in the memory response, we undertook additional quantitative measurements of E74 mRNA dynamics. Our preceding results (Figure 1) confirmed a Nup98-dependent increase in the rate of E74 mRNA accumulation during the second induction. Generally, the rate of mRNA accumulation depends on both mRNA production and degradation. Degradation of mRNA may be affected by the process of mRNA export, which interfaces with NPCs (Rodríguez-Navarro and Hurt, 2011; Tutucci and Stutz, 2011). Certain NPC components, including Nup98, have been previously implicated in mRNA export through interactions with the mRNA export machinery (Blevins et al., 2003; Chakraborty et al., 2006; Powers et al., 1997), and mRNA export could in turn affect mRNA stability either directly or indirectly. Since prior work has not addressed whether Nup98 affects E74 mRNA levels through these processes, we first asked whether Nup98 knockdown induces a change in E74 mRNA trafficking out of the nucleus or in the rate of degradation of E74.
 
 To answer these questions, we examined the smFISH images for evidence of altered nucleo-cytoplasmic transport by assessing the fraction of mRNA puncta that are found outside of the Hoechst-based mask out of the total amount of mRNA puncta per cell (Figure 2—figure supplement 1A). We found that this fraction does not change in control/dsWhite versus dsNup98 cells significantly in either induced condition, with >85% of mRNAs found in the cytoplasm across conditions (Figure 2A). Next, to determine whether E74 mRNA stability is altered upon Nup98 knockdown, we monitored E74 mRNA levels following transcriptional arrest. We inhibited transcriptional elongation by treating cells with flavopiridol (FP), a potent inhibitor of p-TEFb, which phosphorylates Ser2 of the C-terminal domain of RNA Pol II (Chao and Price, 2001). E74 mRNA synthesis was stimulated with 20E for 4 hr during the first or the second inductions, after which the hormone was washed out and transcription blocked with FP. As the mRNA levels of E74 declined, we monitored them for 240 min, with time points collected every 30 min, during the first or the second inductions in control or Nup98-depleted conditions (Figure 2B). We observed that the degradation rates were largely unchanged between Nup98-depleted and control cells during either induction, with no significant difference in E74 mRNA lifetimes, which were determined by fitting to a first-order reaction (Figure 2B and Figure 2—figure supplement 1B). We concluded that neither mRNA export nor mRNA degradation are major contributors to the phenotype of Nup98 in transcriptional memory. Instead, our data suggests that the role of Nup98 in transcriptional memory is mediated through regulation of transcription, which is supported by the previously identified binding of Nup98 to the promoters and enhancers of ecdysone-inducible genes (Pascual-Garcia et al., 2017).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig2-v1.jpg)
+
+**Figure 2.:** (A) Fraction of E74 mRNA found in cytoplasm, as assessed by smFISH, with Nup98 knockdown (+) or control knockdown (-) prior to the first induction (unind), after 4 hr (1st ind), 24 hr after hormone removal (recov), and 4 hr after 2nd induction. Error bars represent standard deviation of the mean. Welch’s t-test was used to calculate p-values. (B). Degradation rates of E74 mRNA assessed by qPCR. Cells from 1st induction or 2nd induction (as depicted in Figure 1A) were washed and collected every 30 min after the addition of 1 μM flavopiridol at zero minutes. Experiment was repeated three times and mRNA lifetimes were determined by fit to exponential curves. p-Values, determined by Welch’s t-test, have values > 0.2 for all pairs of fits. (C–D). E74 transcription rates increase during 20E exposure. Data points with error bars obtained by qPCR as shown in Figure 1B. Shaded bands indicate 95% confidence intervals for the fit rates P for the models indicated. Top row: first induction; second row: second induction. (C) Best fit of data to model of constant transcription rate P. (D): Best fit of data to model of time-dependent increasing E74 transcription rate. (E). Comparison of the rates of mRNA accumulation (left) and underlying transcription rates (right) between first and second induction in control and dsNup98 cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Illustration of procedure to calculate mRNA export. Hoechst staining (blue in upper left) was used to generate a mask representing nuclear volume. Centroids for individual puncta were assessed to find the number of puncta assigned to nuclear and non-nuclear volumes. (B). mRNA lifetime values derived from Figure 2B (comparing to dsNup98 second induction, p-values from two sample t-test are 0.2 and 0.2 for dsWhite first and second induction and 0.39 for dsNup98 first induction). (C). A model of constant production fails to describe E74 accumulation. Goodness-of-fit was calculated as one minus the relative error, where the relative error is the mean of the absolute value of deviation of the simulated value minus the mean of the measurement at each time point divided by the mean of the measurement.
+
 Our combined knowledge of the degradation rate with the accumulation dynamics in absolute units allowed us to test quantitative models describing the effect of Nup98 on transcription. In the simplest model, Nup98 would act to boost the average transcription rate from a low constant mRNA production rate during the first induction to a large constant rate during the second induction. To determine whether a model of constant production correctly describes the data, we found the best-fitting values for the production rates under each induction and knockdown combination (Figure 2C). In this straight forward model, the change in mRNA concentration per time equals mRNA production rate P minus the degradation rate, which was determined experimentally (Figure 2B). The estimate of the degradation rate permitted us to obtain best-fit values for P (Figure 2C). As expected, the value for production rate for the second induction in control cells was higher than during the first induction by a factor of 2.4 x, whereas the production rates are similar in first induction control and Nup98 knockdown conditions under both exposures. However, constant production rates provide a poor description of the data (Figure 2C and Figure 2—figure supplement 1C). In all cases, the constant production model predicts the fastest accumulation during the first 2 hr of expression, with gradual attenuation of the accumulation as transcript levels reach steady-state. The data instead exhibits a gradual and slow increase in the rate of accumulation during the majority of interval for hormone exposure. This is most obvious for the first induction in both control and Nup98 knockdown cells. The results indicate that the simplest explanation for Nup98 activity, boosting a constant production rate, is incompatible with observation.
 
 Instead of constant production rate, the data suggested that the production of E74 mRNA increases with time. We therefore fit a model in which production of new mRNAs increases linearly with time, and found that this model provided an excellent fit (Figure 2D and Figure 2—figure supplement 1C). We observed that the production rates increase at similar rates in three scenarios: first induction in control, and both inductions in Nup98 knockdown conditions. In contrast, during the second induction in control cells, the production rate increases at more than twice the rate of the first induction. This can be clearly visualized by taking the derivative of the fit accumulation curves to reveal the accumulation rate, that is the change in the average number of mRNAs per cell as a function of time (Figure 2E). The accumulation rates are similar in control first induction and dsNup98 first and second induction, but become increasingly fast in control second induction. The accumulation rates begin to stabilize at around 4 mRNAs per minute during the first induction but reach greater than 10 mRNAs per minute during the second induction in control cells (Figure 2E, left). During hormone exposure, the transcription rate climbs continuously, reaching only about 2 mRNAs per minute per locus during the first induction but climbing to 5 mRNA per minute per locus during the second induction in control cells (Figure 2E, right). By the end of the fourth hour of the second exposure, this corresponds to an average production rate per locus similar to that observed for the most highly expressed genes in Drosophila embryos (Little et al., 2013; Zoller et al., 2018). Overall, these results show that Nup98 changes transcription of E74 without affecting mRNA trafficking or stability. Moreover, normal levels of Nup98 are required not simply to promote a higher level of transcription, but to stimulate a continuous increase in transcription rates upon additional hormone exposure.
 
-## A two-state model for the mechanism of Nup98-dependent transcription rate increase
+### A two-state model for the mechanism of Nup98-dependent transcription rate increase
 
 We next sought to explore models describing the Nup98-dependent increase in the rate of mRNA production. We began with a two-state model in which loci switch between active and inactive states (Figure 3A–B). During the active state, new RNA Pol II molecules enter productive elongation at a rate given by kPol. For simplicity, we assumed that while hormone is present, the rate switching into the active state kA is much greater than the rate of switching into the inactive state k-A. This ensures that once active, loci are in essence irreversibly committed to the active state as long as the hormone is present. These assumptions are reasonable given the large but slow increase in transcript levels observed over the duration of the hormone exposure. In this model, the average production rate per locus is given by the loading rate kPol multiplied by the fraction of active loci (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig3-v1.jpg)
+
+**Figure 3.:** (A) A model utilizing two promoter states (active and inactive) contains two mechanisms that can account for the increase in the transcription rates observed by qPCR. Model 1: loci are slowly recruited into a transcriptionally active state upon first induction and more rapidly upon second induction. Once active, loci produce new mRNAs at a constant rate equivalent to the rate at which new RNA Pol II molecules enter productive elongation. Model 2: all cells are rapidly recruited into an active state, and the rate of transcription increases over time, slowly upon first induction and quickly upon second induction. (B). Model describing the rate of recruitment into the active state kA, into the inactive state k-A, and the rate of recruiting RNA Pol II molecules into productive elongation kPol. The presence of 20E permits kA to be larger than k-A. The production rate as a function of time is given by the RNA Pol II recruitment rate multiplied by the fraction of active loci. In Model 1, kA increases and kPol is constant during 20E exposure, whereas in Model 2, kPol increases and kA is constant. (C–N). Histograms (cyan) show distribution of measured total instantaneous transcriptional activity in normalized units (C.U.), obtained from smFISH of E74 as shown in Figure 1. Lines represent predicted values generated by simulation using best-fitting parameters for Model 1 (green) and Model 2 (magenta) under conditions of control (C–H) or Nup98 knockdown conditions (I–N) during the first (C,F,I,L), second (D,G,J,M), or fourth (E,H,K,N) hour of the first (C–E, I–K) or second (F–H, L–N) inductions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A). Best fit and 95% confident intervals of Model one to qPCR data. (B). Under Model 1, normal levels of Nup98 are required to ensure kA2 > kA1, yielding a faster recruitment of loci into the active state (left) upon second induction, whereas kPol is constant under all conditions (2.0±0.2 RNA Pol min–1). (C). Fit of Model two to data. (D). Under Model 2, kA is large and essentially identical between conditions (left), ensuring near-simultaneous activation of all loci (left). The role of Nup98 is to ensure a rapid increase in kPol upon second induction. (E). Best-fitting values and 95% confidence intervals for a Model 1 (constant kPol) and Model 2 (increase in kPol as a function of time). (F). Goodness-of-fit values for each of the two mechanisms of increasing the transcription rate under an assumption that k-A = 0. Values calculated as described in the legend to Figure 2—figure supplement 1C.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A-D) Estimated fraction of cells with inactive (P0) or 1,2,3, or 4 active transcription sites (P1–P4) under the first or second induction in control or Nup98 knock-down conditions, as indicated. Curves are generated using the rate of entering the active state derived from fitting data from each individual condition separately and with the same method as for fitting all conditions simultaneously, described in Figure 4—figure supplement 1 and accompanying text and methods. (E). Obtained kA values for fitting each of these conditions.
 
 There are then two basic ways in which the mRNA production rate can increase over time in a two-state model. The most straightforward is by recruitment of loci into the transcriptionally active state, while the loading rate kPol is held constant (Figure 3A, Model 1 and Figure 3B). In this scenario, what would change over time is the fraction of cells in a transcriptionally active state (Figure 3A, Model 1). Once a locus enters an active state, mRNA production would occur at a constant rate. The increased transcriptional output during re-induction would thus stem from a higher fraction of cells being active in post-memory conditions. This scenario requires a kA that is small such that any given locus is unlikely to enter the active state in any given minute. The gradual increase in the fraction of active loci would thus be proportional to the continuous increase in the average transcription rate (Figure 2E, right). Under Model 1, the role of Nup98 is to increase kA such that a larger fraction of loci become active sooner during the second induction.
 
@@ -62,7 +94,7 @@ To determine whether this scenario could explain our observations, we fit our qP
 
 Overall, both versions of the two-state model perform equally well at describing the qPCR data (Figure 3—figure supplement 1F). Additionally, the two versions are not mutually exclusive; our qPCR data would be equally well fit by many possible combinations of values for kA and kPol acceleration constants. To discern between these possibilities requires single-cell measurements of transcription provided by smFISH.
 
-## Single-cell analysis does not support the two-state model
+### Single-cell analysis does not support the two-state model
 
 To discern between possible versions of the model outlined above, we proceeded to determine whether they could account for the distribution of transcriptional activity observed in our smFISH analysis of E74 (Figure 1). We determined the instantaneous transcriptional activity in individual cells by summing the fluorescence intensity of all nascent transcription sites in each cell and normalizing to the intensity of single mRNAs (also see Materials and methods). The resulting values are the absolute amount of nascent RNA present at transcribing loci in units of the equivalent number of mature mRNAs (Little et al., 2013; Zoller et al., 2018). As mRNAs tend to be localized to the cytoplasm, the unit intensity is referred to as the ‘cytoplasmic unit’ intensity (C.U.). The number of C.U.s associated with each transcribing site depends on the number of probe binding sites present, and thus on how many RNA Pol II molecules are present and how much of the transcript has been synthesized by each Pol II. The normalization is possible because our probes target only exon sequences and thus the fluorescence intensity is not affected by mRNA splicing or the presence of introns (Figure 1C).
 
@@ -72,9 +104,17 @@ We examined the distribution of transcriptional activity across hormone treatmen
 
 We compared the distribution of the data to those predicted by each of the two-state models. Overall, the simulated distributions from either of the two two-state models provide a poor fit to data (Figure 3C–N, compare simulated green and violet curves to cyan bars of observed data, and Figure 4—figure supplement 1D). Model 1, with changing kA and constant kPol, consistently overestimates the fraction of cells with small numbers of transcripts at early times (green curves, Figure 3C,I, notice the early green ‘spike’). Model 2, with rapid kA and increasing kPol, suffers less from an overestimate of inactive cells. However, both models predict a narrowly distributed peak of highly active cells at 4-hr time point in all four conditions. In contrast, measurements reveal broadly distributed expression levels, with many cells showing less activity than predicted (Figure 3E, H, K and N). Furthermore, hybrid models combining both more rapid kA with more slowly increasing kPol suffer from both shortcomings in combination (data not shown). This stems from the failure of the two-state model to account for the large fraction of cells containing mRNAs in the first hour combined with an overestimate of narrowly distributed but highly active cells at late times. From the simulation results, we concluded that no two-state model correctly captures the transcription dynamics of the hormone response in either the first or second induction.
 
-## A four-state ‘Memory Switch’ model explains single-cell data of transcriptional memory
+### A four-state ‘Memory Switch’ model explains single-cell data of transcriptional memory
 
 Given the distribution of transcriptional states we observed in our single-cell smFISH analysis (Figure 3), we reasoned that loci may express E74 at two different rates, such that loci are either in the low- or high-expressing state in the presence of ecdysone. Both the low- and high-expressing rates would be larger than the very slow basal expression rate observed in the absence of ecdysone. The slow emergence of the high-expressing state during exposure to ecdysone would be consistent with the gradual increase in transcription rate we have observed (Figure 2E). Moreover, the rapid accumulation of transcripts upon hormone re-exposure suggests a mechanism for memory: loci that previously converted into the high-expressing state bypass the low-expressing state upon hormone re-exposure, and immediately enter the high-expressing state. We termed such converted state the induced memory (IM) state, whereas loci that have not converted remain in a default low-expressing state, which we called induced default (ID) state (Figure 4A). Importantly, the model also suggests that the high expression observed during the second induction results from the continuous accumulation of loci into the memory state even after the withdrawal of hormone. In this case, the role of Nup98 may be both to ensure that converted loci retain information about their conversion state and to enact the continuous conversion of loci after hormone withdrawal (Figure 4A, right). This would explain the strong resemblance of the first induction in controls cells to both inductions when Nup98 is depleted: in the absence of hormone, all loci reconvert to the default, non-memory state without Nup98 activity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig4-v1.jpg)
+
+**Figure 4.:** (A) Promoters can occupy one of four states: Uninduced and Induced (U and I), related to current presence of hormone; and Default and Memory (D and M), associated with prior hormone exposure. The Uninduced state is associated with a basal RNA Pol II rate kPolB, whereas the Induced state shows two independent RNA Pol II rates kPolL and kPolH associated with Default and Memory states, respectively. 20E has two roles: one, to activate transcription by ensuring kA >> k-A, as in earlier models; and two, to increase the rate of conversion from Default to Memory by ensuring kC >> k-C. The role of Nup98 is to maintain kC >> k-C upon withdrawal of 20E. (B–M). Histograms (cyan) show distribution of measured total instantaneous transcriptional activity in normalized units (C.U.), obtained from smFISH of E74 as shown in Figure 1. Lines represent predicted values generated by simulation using best-fitting parameters under the memory switch model.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A). Fitting of qPCR data to four-state model under each of four experimental conditions. (B). The rate of recruitment of loci into the active state is similar between all conditions (left). Rapid mRNA accumulation upon second induction in control cells results from the rapid increase in average mRNA production rates. (C). Best fit parameters with 95% confidence intervals. (D). Goodness-of-fit values for Models 1, 2 and the memory switch model. Goodness-of-fit is significantly improved for the memory model compared to either alternate model. (E). Memory model of E74 expression. Fraction of loci in either the default state (dashed lines) or memory state (solid lines) as a function of time. In the presence of Nup98, loci continuously transition into the memory state starting immediately upon 20E exposure.
 
 Based on this reasoning, we constructed a ‘memory switch’ model containing four states: two un-induced states in the absence of hormone, termed Un-induced Default (UD) and Un-induced Memory (UM) (both characterized by very low basal levels of transcription), in addition to the two induced states, IM and ID (Figure 4A). In this model, the basal level of expression in the absence of ecdysone is described by the transcription rate constant kpolB, while hormone exposure has two independent effects. First, similarly to the two-state model, hormone switches non-expressing loci into an expressing state at rate kA. As before, hormone ensures that the conversion to expression is irreversible as long as hormone is present. Second, hormone treatment converts loci from the default state (either UD or ID) into the memory state (either UM or IM). This conversion occurs at rate kC and is necessarily slow. The two induced states each have an associated rate of RNA Pol II loading, low kPolL for ID and high kPolH for IM. To account for the immediate entry of loci into the high expressing IM state upon second induction, the memory state is established irreversibly, with kC much greater than k-C in normal conditions. Moreover, the model implies that once the hormone is applied, the conversion of loci to the memory state continues even after the hormone has been withdrawn, so that after the 24 hr recovery period in our hormone treatment regimen, most loci are found in the memory state. Under this model, the primary role of Nup98 would be to maintain a high kC, or the probability that cells remain in the memory or high-expressing state, such that depletion of Nup98 abrogates the maintenance of the memory state upon removal of hormone. In the absence of Nup98, k-C becomes greater than kC, and loci do not remember their prior exposure once hormone is withdrawn (Figure 4A, right), which explains why the second induction strongly resembles the first in Nup98-depleted cells.
 
@@ -84,11 +124,19 @@ To verify the goodness of the model, we again performed Monte Carlo simulations 
 
 In summary, the four-state memory model encapsulates all the essential features of our observations. Our analysis puts forth a mathematical model that accurately describes the transcriptional memory behavior of ecdysone-inducible genes. The analysis predicts that in addition to activating default transcription, hormone exposure leads to a response event that drives a switch between non-memory and memory states.
 
-## The establishment of transcriptional memory is independent of transcriptional activity during the initial induction
+### The establishment of transcriptional memory is independent of transcriptional activity during the initial induction
 
 The memory switch model, described above, reveals novel mechanistic insights into how transcriptional memory is established and maintained, and allows us to make predictions that can be tested experimentally. Thus, to further validate our model, we proceeded to test two of its main predictions. The most striking and surprising prediction of the model is the independence of kC (the rate of conversion from the default state to the memory state) from kA and kPol, which are rate constants that describe the transcriptional process itself. Otherwise stated, the model suggests that the ability of cells to establish the transcriptional memory response is independent from the process or the extent of transcription itself. The model predicts that at individual loci, addition of ecdysone sets off the conversion into the high-expressing memory state, but the parameters governing the rate of the conversion should be independent from the transcription that takes place during the first induction.
 
 We tested this prediction by two different approaches. First, we varied the amount of transcription by varying the length of exposure to 20E during the initial induction. We assessed the transcriptional memory response of the E74 gene via RT-qPCR, using diminishing initial incubation times of 20E ranging from 4 hr to a minimum of 10 min, after which cells were recovered for 24 hr and re-induced as usual (Figure 5A). In agreement with the model, we observed that cells responded with a similarly robust increase of transcription during the second induction after all initial hormone incubation times. No large changes were found in the E74 transcriptional memory response between cells that were induced for 10 min versus 4 hr (Figure 5A), demonstrating that the memory state is established independently of the length of 20E incubation times and thus of the length of time these loci were engaged in active transcription.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig5-v1.jpg)
+
+**Figure 5.:** (A) E74 mRNAs measured by qPCR and normalized relative to rp49 with varying duration of 20E exposure during first induction. The data represent the mean of three independent experiments and the error bars the standard deviation of the mean. (B). Flavopiridol or Triptolide inhibitors were added 30 min prior 20E first induction at 1 μM and 5 μM, respectively. After 4 hr of induction, both, the hormone and the transcriptional inhibitors were washed-out and cells recovered for 24 hr. 20E re-induced cells were collected and, E74 expression was measured by qPCR from three independent experiments. Fold change values were normalized using rp49 and error bars represent the standard deviation of the mean. (C). Cells were treated with Flavopiridol or Triptolide as described in B and E74 mRNAs were monitored by smFISH. Error bars represent standard deviation of the mean. (D). E74 mRNAs levels were measured by qPCR and normalized against rp49 using two different recovery times (6 hr and 24 hr). The data represent the mean of three independent experiments ± standard deviation. (E). Calibrated Memory Index (CMI) of E74, E23, and E75 genes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63404/elife-63404-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Flavopiridol or Triptolide inhibitors were added 30 min prior to 20E induction and the nascent transcript of housekeeping gene rp49 was used to monitor the efficiency of transcriptional blockage. After 4 hr of induction, the hormone and inhibitor were washed out and cells allowed to recover for 24 hr. qPCR was normalized against spliced rp49 transcript. The data represent the mean of three independent experiments and the error bars the standard deviation of the mean. (B). Representative images of E74 gene in cells treated with Flavopiridol or Triptolide, and analyzed in Figure 5C. (C). Histograms showing the distribution of measured total instantaneous transcriptional activity in normalized units (C.U.) obtained from smFISH of E74 after 2 hr of second induction in untreated, Flavopiridol and Triptolide-treated cells. (D–E). Expression analysis of ecdysone-induced genes: E23 (D) and E75 (E) in cells treated as described in Figure 5B. The data represent the mean of three independent experiments ± standard deviation.
 
 Second, to address this prediction, we utilized the transcriptional inhibitor FP to prevent transcriptional elongation altogether. Cells were treated with FP for 30 min before as well as during 20E induction. We monitored E74 expression and observed no transcriptional activity in cells treated with FP during ecdysone induction, revealing the efficacy of FP blockage (Figure 5B). Cells were then washed, and we measured the transcriptional memory response after the usual 24 hr of recovery. Strikingly, we observed that blocking transcriptional elongation during the first induction does not substantially affect the ability of the cells to generate a robust memory response, indicating that the transition into the memory state is independent of mRNA production during the first induction (Figure 5B). Levels of E74 were normalized to transcript levels of the housekeeping gene rp49, expression of which has been shown to be unaffected by ecdysone exposure (Shlyueva et al., 2014; Figure 5—figure supplement 1A). In addition to FP, we tested another transcriptional inhibitor Triptolide (TPL), which is known to block transcription at an earlier, initiation-associated point by inhibiting TFIIH (Titov et al., 2011). Treatment with TPL during initial induction similarly resulted in the majority of transcriptional memory being preserved (Figure 5B), although at somewhat lower levels than FP, suggesting that transcriptional initiation may partially contribute to memory, but transcription itself does not. We further validated our RT-qPCR findings by smFISH analysis, which likewise yielded similar counts of E74 mRNA spots and transcriptional output during second induction, in control or after treatment with either FP or TPL in the initial induction (Figure 5C and Figure 5—figure supplement 1B-C). Importantly, we obtained very similar conclusions with two other ecdysone-inducible genes E23 and E75, which we previously found to depend on Nup98 for transcriptional memory (Pascual-Garcia et al., 2017) and which also retained most of their transcriptional memory after transcriptional inhibition (Figure 5—figure supplement 1D-E). Taken together, our experimental data support the prediction proposed by our modeling studies and reveal a previously unreported feature of transcriptional memory: that its establishment is independent from the extent of transcriptional activity during initial stimulation.
 
@@ -114,15 +162,144 @@ Our modeling study indicates that the transition between non-memory to memory st
 
 ## Materials and methods
 
-## Cell culture and chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Early gene 23 (E23)</td>
+      <td>Flybase</td>
+      <td>FBgn0020445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Ecdysone-induced protein 74EF(E74)</td>
+      <td>Flybase</td>
+      <td>FBgn0000567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Ecdysone-induced protein 75B(E75)</td>
+      <td>Flybase</td>
+      <td>FBgn0000568</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2-DRSC</td>
+      <td>Drosophila Genomics Resource Center (DGRC)</td>
+      <td>RRID: CVCL_Z992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>20-hydroxyecdysone (20E)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: H5142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Flavopiridol hydrochloride</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat#: 3,094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Triptolide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: T3652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Fugene HD</td>
+      <td>Promega</td>
+      <td>Cat#: E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Trizol</td>
+      <td>Ambion</td>
+      <td>Cat#: 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Megascript T7 kit</td>
+      <td>Ambion</td>
+      <td>Cat#: AM1334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Purelink RNA mini kit columns (; 12183018 A)</td>
+      <td>Ambion</td>
+      <td>Cat#: 12183018 A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>QuantiTect RT-PCR</td>
+      <td>Qiagen</td>
+      <td>Cat#: 205,311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>PowerSYBR Green PCR Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>Cat#: 4367659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Atto-565</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 72,464</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ProLong Gold mountant media</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: P36930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MATLAB</td>
+      <td></td>
+      <td>MathWorks</td>
+      <td></td>
+      <td>https://www.mathworks.com/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and chemicals
 
 We obtained Drosophila embryonic S2-DRSC cells from Drosophila Genomics Resource Center (DGRC) - this cell line is authenticated by DGRC and is one of the primary lines used by ModEncode and RNAi screens at DRSC (https://dgrc.bio.indiana.edu/product/View?product=181). We have confirmed mycoplasma negative status by PCR testing. Cells were grown at 25 °C in Schneider’s medium (Gibco; 21720), supplemented with 10% (v/v) heat inactivated fetal bovine serum (Gibco; 10438034) and 1% (v/v) of penicillin-streptomycin antibiotics (10,000 U/mL) (Gibco; 15140163). For ecdysone induction experiments, 20-hydroxyecdysone (Sigma-Aldrich; H5142) was dissolved in 100% ethanol and used at 5 μM. Flavopiridol hydrochloride (Tocris Bioscience; 30-941-0) and Triptolide (Sigma-Aldrich; T3652) were prepared in 100% DMSO and added at 1 μM and 5 μM, respectively.
 
-## dsRNA synthesis and transfection conditions
+### dsRNA synthesis and transfection conditions
 
 Double-stranded RNAs (dsRNA) fragments against Nup98 or white genes were synthesized with Megascript T7 kit (Ambion; AM1334) using a PCR-ed DNA template from fly genomic DNA (primers listed in Supplementary file 1). The integrity of the RNA was assessed by running the denatured product in a 1.2% agarose gel. To knock-down cells we mixed 10 μg of dsRNA per million cells with 7.5 μl of Fugene HD (Promega; E2311) in serum-free media and we incubated the dsRNA cocktail with exponentially growing cells for at least 3 days.
 
-## RNA extraction and quantitative PCR
+### RNA extraction and quantitative PCR
 
 Total RNA was isolated in 1 ml Trizol (Ambion; 15596018) and purified using Purelink RNA mini kit columns (Ambion; 12183018 A) following manufactured instructions. RNA concentration was determined by measuring absorbance at 260 nm with a NanoDrop 2000 (ThermoFisher; ND-2000). cDNAs were synthesized using one-step RT-PCR kit (Qiagen; 205311). To amplify specific cDNAs, primers were designed to span an exon-exon junction except for nascent rp49 qPCR experiment, where primers were designed to amplify the first intron-exon boundary (primers listed in Supplementary file 1). In this case, the RNA was pre-treated with 1 U of DNAseI (ThermoFisher; EN0525) and incubated at 37 C for 30 min before reverse transcription reaction. We verified the efficiency of this digestion by running control qPCRs with the DNAseI-treated RNA samples, and checked for the presence of insufficiently digested genomic DNA.
 
@@ -130,35 +307,51 @@ For absolute quantification analysis, the template for E74 synthetic RNA standar
 
 In all qPCR experiments, we used PowerSYBR Green PCR Master Mix (Applied Biosystems; 4367659) and QuantStudio 7 Flex thermal cycler (ThermoFisher; 4485701). Each qRT-PCR was repeated at least three times, the values were normalized to the rp49 transcript unless otherwise stated, and the error bars represent the standard deviation of the mean.
 
-To compare the impact of inhibiting transcription during the 20E reinduction between different ecdysone-responsive genes, we define the calibrated memory index (CMI) as the ratio of the Nup98-dependent memory in inhibitor-treated cells to untreated cells:CMI=F*MIRF=1-MN/MC,R=MC-MN
+To compare the impact of inhibiting transcription during the 20E reinduction between different ecdysone-responsive genes, we define the calibrated memory index (CMI) as the ratio of the Nup98-dependent memory in inhibitor-treated cells to untreated cells:
+
+$$
+CMI=\frac{F*M_{I}}{R}
+$$
+
+
+
+$$
+F=1-M_{N}/M_{C}
+$$
+
+
+
+$$
+R=M_{C}-M_{N}
+$$
 
 where M is the fit slope of the second induction response either in Nup98-depleted cells (MN), in control cells (MC), or in the presence of transcriptional inhibitors (MI). F represents the Nup-dependent fraction of the second induction response, whereas R is the absolute value of the Nup98-dependent fit slope upon second induction and is the value to which F * MI must be normalized for comparison among genes. The maximum and minimum of the responses are specific to each gene because each gene exhibits a different value for the increased slope in untreated cells and the extent of reliance on Nup98. For convenience, CMI is zero under Nup98-depletion and the maximum is 1. CMI therefore represents the fraction of memory that remains during the second induction upon transcriptional inhibition during the first induction.
 
-## Single-molecule RNA fluorescence in situ hybridization (SmRNA FISH)
+### Single-molecule RNA fluorescence in situ hybridization (SmRNA FISH)
 
 S2 cells were cytospun in poly-L-lysine treated coverslips and fixed with 4% para-formaldehyde for 10 min. Coverslips were rinsed 3 X in PBS and submerge in cold 70% EtOH for at least 24 hr. Complementary probes to the reading frame of eip74ef-RA were designed using Stellaris Probe Designer (https://www.biosearchtech.com/stellaris-designer), ordered from Biosearch and conjugated to Atto-565 (Sigma-Aldrich; 72464). Cells were washed twice with wash buffer [2 X SSC, 10% formamide, 0.01% Tween-20] and equilibrated with hybridization buffer [2 X SSC, 10% formamide, 10% dextran sulfate,1 μg/ml BSA]. The hybridization to probes was performed overnight at 37°C in a moisturized chamber at a concentration of about 1 nM. After hybridization, samples were washed 3 X in pre-warmed wash buffer and incubated at 37°C for 30 min. We performed a final wash with 2 X SSC, stained with Hoechst and mounted in ProLong gold (ThermoFisher; P36930). Imaging was performed by laser-scanning confocal microscopy on a Leica SP8 with a 63 x oil immersion objective using identical scanning parameters and laser power for all samples. Voxel dimensions are 76 × 76 × 250 nm.
 
-## Image Analysis
+### Image Analysis
 
-## mRNA detection and normalization
+#### mRNA detection and normalization
 
 By scanning confocal imaging, RNA puncta corresponding to single mRNAs, RNPs, and sites of nascent transcription all appear as diffraction-limited objects whose fluorescence intensities correlate with mRNA content (Little et al., 2015; Little et al., 2013; Little et al., 2011). Puncta were separated from imaging noise and centroids of true diffraction-limited objects were found with difference-of-Gaussian (DoG) thresholding using custom MATLAB scripts (Little et al., 2013) on deconvolved images followed by fluorescence intensity measurements using raw images as described (Little et al., 2015). Objects were classified as mRNA puncta or nascent transcription sites on the basis of DoG intensities as described (Zoller et al., 2018). Both the numbers and fluorescence intensities of non-nascent puncta increase during hormone induction. To obtain measurements of mRNA content of each individual puncta in absolute units by smFISH, we adapted a prior normalization technique (Little et al., 2015; Little et al., 2013; Little et al., 2011; Zoller et al., 2018). Briefly, we divide the fluorescence intensity of all puncta by the mean intensity of the non-nascent site puncta found during uninduced conditions, since, in the absence of hormone, the mean number of mRNAs detected by smFISH corresponds to the mean number measured by qPCR. Individual puncta are thus assigned a value corresponding to the equivalent number of finished, mature mRNAs they each contain. Because non-nascent puncta are mostly found in the cytoplasm, we term the units of this measurement ‘cytoplasmic units’ or C.U.s, the unit intensity of single mRNAs (Little et al., 2013). These measurements are thus in absolute units. When reporting transcriptional activity, we sum the fluorescence of all nascent site puncta assigned to each cell (Little et al., 2013; Zoller et al., 2018). This is advantageous because of the phenomenon of chromosome pairing, prevalent in Drosophila, in which homologous chromosomes are found in close physical association (Joyce et al., 2016). Pairing prevents unambiguous assignment of fluorescence to individual nascent sites, but does not preclude us from accurately assessing transcriptional activity in single cells. Objects were designated as sites of nascent transcription using a threshold of three times the intensity of single mRNAs. For nuclei that contain fewer than three objects that are greater than 3 x the average intensity of cytoplasmic spots, 1 or two spots are selected at random and assigned the status of transcription sites; the random assignment yields a more accurate assessment of transcription than an assertion that no transcription occurs, as previously described (Zoller et al., 2018). All transcriptional activity reported in Figures 3 and 4 is in units of C.U. per individual cell. In contrast, all parameter values derived from fitting are for individual loci, as described below.
 
-## Nuclear-cytoplasm segmentation
+#### Nuclear-cytoplasm segmentation
 
 Hoechst stain was used to determine pixels corresponding to nuclear volumes as described (Petrovic et al., 2019), and the same approach was applied to the low-level nonspecific cytoplasmic fluorescence in the RNA channel to delineate total cell volumes. All RNA puncta were assigned to the nearest nucleus using on the basis of nearest-neighbor comparisons of the positions in 3D space of the centroids of puncta and nuclei, as described (Petrovic et al., 2019).
 
-## Modeling
+### Modeling
 
-## mRNA degradation
+#### mRNA degradation
 
 mRNA stability was assessed for the first and second inductions by collecting cells for qPCR at 30 min intervals. After 4 hr of hormone treatment, cells were washed-out and treated with 1 μM Flavopiridol to disrupt transcription. qPCR was used to measure E74 levels relative to rp49 as a function of time following the start of transcription inhibition. qPCR was performed in triplicate on cells treated for 72 hr with dsRNA against Nup98 or white genes. The data were fit to a model of exponential decay using nonlinear regression to obtain mRNA lifetimes and 95% confidence reported in Figure 2B and Figure 2—figure supplement 1B.
 
-## mRNA export
+#### mRNA export
 
 Image segmentation of cells into nuclear and total cell volume described above was used to assign all non-nascent RNA puncta to either the nucleus or cytoplasm based on the centroid positions of puncta in three dimensions. Puncta densities in both volumes were calculated as the number of puncta per cubic micron, and the fraction of puncta found in cytoplasm calculated for individual cells. Under an assumption of unchanging mRNA degradation, the ratio of cytoplasmic to nuclear densities is constant regardless of expression level as long as RNA processing and transport are rapid compared to mRNA degradation (Aleman et al., 2021). Since degradation rates are slow and indistinguishable between Nup98 knockdown and control, we conclude that mRNA transport rates are unaffected by Nup98 depletion.
 
-## mRNA accumulation and production
+#### mRNA accumulation and production
 
 Fitting of qPCR data was performed using nonlinear regression and the measured mRNA degradation rate to obtain 95% confidence intervals for parameter values. Fits were performed for each experimental condition individually to produce the values displayed in the panels. S2 cells are tetraploid with a division time of 24 hr, spending similar amounts of time in G1 and G2 (Cherbas and Gong, 2014). We therefore performed all qPCR fits using the assumption that the average number of E74 loci per cell is six. All fit parameter values are reported in terms of individual loci. Curves shown in Figure 1B are piecewise polynomials. Models in Figure 2 each contain a single free parameter representing either the rate of constant mRNA production or the rate of linear increase in the mRNA production rate as a function of time. Both models in Figure 3 contain two free parameters. For the model of constant RNA Pol II loading, these are the first-order rate of conversion to the active state kA and the rate of RNA Pol II loading while active kPol. For the model of accelerating kPol, kA is fixed so as to virtually guarantee that all loci convert to the active state in 1 min (as noted in the text, Figure 3—figure supplement 1D is plotted with a much smaller kA for illustrative purposes). We introduced an additional parameter, the RNA Pol II footprint on the DNA template, to provide a natural limit on the maximum attainable kPol.
 

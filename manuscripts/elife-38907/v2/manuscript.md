@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.38907.001 The ability to speak coherently is essential for effective communication but declines with age: older people more frequently produce tangential, off-topic speech. The cognitive factors underpinning this decline are poorly understood. We predicted that maintaining coherence relies on effective regulation of activated semantic knowledge about the world, and particularly on the selection of currently relevant semantic representations to drive speech production. To test this, we collected 840 speech samples along with measures of executive and semantic ability from 60 young and older adults, using a novel computational method to quantify coherence. Semantic selection ability predicted coherence, as did level of semantic knowledge and a measure of domain-general executive ability. These factors fully accounted for the age-related coherence deficit. Our results indicate that maintaining coherence in speech becomes more challenging as people age because they accumulate more knowledge but are less able to effectively regulate how it is activated and used.
+The ability to speak coherently is essential for effective communication but declines with age: older people more frequently produce tangential, off-topic speech. The cognitive factors underpinning this decline are poorly understood. We predicted that maintaining coherence relies on effective regulation of activated semantic knowledge about the world, and particularly on the selection of currently relevant semantic representations to drive speech production. To test this, we collected 840 speech samples along with measures of executive and semantic ability from 60 young and older adults, using a novel computational method to quantify coherence. Semantic selection ability predicted coherence, as did level of semantic knowledge and a measure of domain-general executive ability. These factors fully accounted for the age-related coherence deficit. Our results indicate that maintaining coherence in speech becomes more challenging as people age because they accumulate more knowledge but are less able to effectively regulate how it is activated and used.
 
 ## Introduction
 
@@ -30,23 +30,292 @@ Recent studies therefore suggest that ageing is associated with both positive an
 
 ## Results
 
-## Assessments of cognitive and semantic ability
+### Assessments of cognitive and semantic ability
 
 Mean scores on a series of background cognitive tests are reported in Appendix 1—table 1. Young people were faster to respond in the Trails test and produced more items in category fluency. Older people produced slightly more words in letter fluency, however. There were no group differences in MMSE scores, with all participants scoring at least 26/30.
 
 Participants completed a series of semantic tasks that probed semantic selection ability, breadth of semantic knowledge and controlled retrieval of weak semantic associations. The full analysis of these tasks is reported in Appendix 5, with mean scores in each condition presented in Appendix 5—figure 1. The older group scored significantly higher on the vocabulary tests of semantic knowledge, indicating that they had a broader set of verbal semantic information available to them. Controlled retrieval was assessed by manipulating association strength during semantic judgements, since the detection of weak associations requires greater control over the retrieval of information from semantic memory (Badre and Wagner, 2007). This manipulation had similar effects in young and older people, suggesting that the ability to retrieve less salient semantic knowledge was equivalent in the two groups. Semantic selection was probed using a task in which participants were asked to match items based on particular semantic features (e.g., colour) (Thompson-Schill et al., 1997). Selection demands were highest when the correct target was incongruent with pre-existing semantic associations (e.g., salt goes with snow, not pepper). Older people showed a larger effect of the congruency manipulation, performing more poorly in the incongruent condition. This indicates that the older group had difficulty in selecting task-relevant semantic knowledge and inhibiting irrelevant associations.
 
-## Speech rate
+### Speech rate
 
 We now turn to analyses of the speech samples produced by participants. We first considered the effect of our experimental manipulations on rate of speech production (number of words produced per minute). The results are shown in Figure 1A. Mixed effects modelling indicated that speech rate was influenced both by age group (B = −7.74, se = 3.81, p=0.046), with older participants tending to speak more slowly, and by task (B = −1.93, se = 0.79, p=0.016), with fewer words produced under dual-task conditions. We therefore included speech rate as a covariate in subsequent analyses, to ensure that effects on coherence were not attributable to this variable.
 
-## Predictors of coherence
+### Predictors of coherence
 
 Coherence of speech was assessed using a novel computational approach (see Materials and methods and Figure 1). Measures of global coherence (GC) and local coherence (LC) were computed. We began by assessing the internal reliability of the GC and LC measures over the fourteen prompts used to elicit speech samples. Cronbach’s alpha was high for both measures (GC = 0.83; LC = 0.79), indicating that stable individual differences in coherence were present over the various topics about which participants were asked to speak. GC and LC values were also strongly correlated with one another (r = 0.79), suggesting that both are closely linked, as found in previous studies. In the older group, age was negatively correlated with GC (r = −0.64) and LC (r = −0.56).
 
 Next we investigated the effects of our experimental manipulations on the GC of participants’ speech. The first model included age group and task as predictors, with speech rate as an additional covariate (see Table 1 for results). Age group was a strong predictor of GC: as predicted, older participants produced markedly less coherent speech than young people (see Figure 2B). As shown in Table 1, the dual-task manipulation had no effect on GC. The interaction between age and task fell just short of statistical significance (p=0.052). This suggests that there may be a weak tendency for the effect of the task manipulation to be larger in older people. Speech rate was a negative predictor of GC, indicating that participants who spoke more quickly showed a greater tendency to deviate from the topic being probed.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/38907/elife-38907-fig1-v2.jpg)
+
+**Table 1.**
+ Results of mixed effects models predicting global and local coherence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Model 1</th>
+      <th colspan="3">Model 2</th>
+      <th colspan="3">Model 3</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>B</th>
+      <th>Se</th>
+      <th>P</th>
+      <th>B</th>
+      <th>Se</th>
+      <th>P</th>
+      <th>B</th>
+      <th>Se</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Global Coherence</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>44.6</td>
+      <td>1.45</td>
+      <td>&lt;0.001</td>
+      <td>44.6</td>
+      <td>1.43</td>
+      <td>&lt;0.001</td>
+      <td>44.6</td>
+      <td>1.42</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>−2.30</td>
+      <td>0.54</td>
+      <td>&lt;0.001</td>
+      <td>−1.97</td>
+      <td>0.50</td>
+      <td>&lt;0.001</td>
+      <td>−0.68</td>
+      <td>0.73</td>
+      <td>.35</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>−0.31</td>
+      <td>0.24</td>
+      <td>.20</td>
+      <td>−0.31</td>
+      <td>0.24</td>
+      <td>.20</td>
+      <td>−0.30</td>
+      <td>0.24</td>
+      <td>.21</td>
+    </tr>
+    <tr>
+      <td>Age*Task</td>
+      <td>−0.53</td>
+      <td>0.25</td>
+      <td>.056</td>
+      <td>−0.53</td>
+      <td>0.25</td>
+      <td>.052</td>
+      <td>−0.53</td>
+      <td>0.25</td>
+      <td>.052</td>
+    </tr>
+    <tr>
+      <td>Response length</td>
+      <td>−0.97</td>
+      <td>0.38</td>
+      <td>.014</td>
+      <td>−0.90</td>
+      <td>0.36</td>
+      <td>.016</td>
+      <td>−0.86</td>
+      <td>0.35</td>
+      <td>.019</td>
+    </tr>
+    <tr>
+      <td>Trails ratio</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−1.61</td>
+      <td>0.45</td>
+      <td>&lt;0.001</td>
+      <td>−1.71</td>
+      <td>0.42</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Semantic knowledge</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−1.63</td>
+      <td>0.73</td>
+      <td>.028</td>
+    </tr>
+    <tr>
+      <td>Semantic selection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.16</td>
+      <td>0.42</td>
+      <td>.007</td>
+    </tr>
+    <tr>
+      <td>Weak association</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.29</td>
+      <td>0.52</td>
+      <td>.58</td>
+    </tr>
+    <tr>
+      <td>Local Coherence</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>26.8</td>
+      <td>1.36</td>
+      <td>&lt;0.001</td>
+      <td>26.8</td>
+      <td>1.35</td>
+      <td>&lt;0.001</td>
+      <td>26.8</td>
+      <td>1.34</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>−2.51</td>
+      <td>0.58</td>
+      <td>&lt;0.001</td>
+      <td>−2.27</td>
+      <td>0.57</td>
+      <td>&lt;0.001</td>
+      <td>−1.42</td>
+      <td>0.80</td>
+      <td>.081</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>−0.16</td>
+      <td>0.34</td>
+      <td>.63</td>
+      <td>−0.16</td>
+      <td>0.33</td>
+      <td>.63</td>
+      <td>−0.16</td>
+      <td>0.34</td>
+      <td>.64</td>
+    </tr>
+    <tr>
+      <td>Age*Task</td>
+      <td>−0.55</td>
+      <td>0.32</td>
+      <td>.10</td>
+      <td>−0.55</td>
+      <td>0.32</td>
+      <td>.10</td>
+      <td>−0.55</td>
+      <td>0.32</td>
+      <td>.10</td>
+    </tr>
+    <tr>
+      <td>Response length</td>
+      <td>0.01</td>
+      <td>0.39</td>
+      <td>.98</td>
+      <td>0.09</td>
+      <td>0.38</td>
+      <td>.82</td>
+      <td>0.12</td>
+      <td>0.38</td>
+      <td>.74</td>
+    </tr>
+    <tr>
+      <td>Trails ratio</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−1.16</td>
+      <td>0.45</td>
+      <td>.012</td>
+      <td>−1.23</td>
+      <td>0.43</td>
+      <td>.006</td>
+    </tr>
+    <tr>
+      <td>Semantic knowledge</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−1.14</td>
+      <td>0.76</td>
+      <td>.14</td>
+    </tr>
+    <tr>
+      <td>Semantic selection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.94</td>
+      <td>0.43</td>
+      <td>.034</td>
+    </tr>
+    <tr>
+      <td>Weak association</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.54</td>
+      <td>.54</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/38907/elife-38907-fig2-v2.jpg)
 
@@ -56,7 +325,7 @@ The addition of Trails ratio scores (Model 2) significantly improved the fit of 
 
 LC measurements were subjected to the same sequence of analyses, with broadly similar results (see Table 1). The first model revealed an effect of age group with no effect of task and a non-significant interaction (see Figure 2C). In Model 2, Trails ratio was again a significant predictor of coherence, but a significant age effect remained. In contrast, the age group effect was not significant once semantic scores were included (Model 3). Scores on the semantic selection task were a significant predictor of LC, with participants who performed poorly on this task tending to be less coherent (see Figure 3).
 
-## Predictors of other speech measures
+### Predictors of other speech measures
 
 The purpose of this analysis was to establish whether the observed effects of executive and semantic abilities on coherence were specific to this aspect of speech, or whether they would be observed for other characteristics of speech. Principal components analysis was used to reduce the nine properties of speech into four latent factors, shown in Figure 4A. These were the only factors with eigenvalues greater than one and together they explained 81% of the variance. GC and LC loaded exclusively on Factor 2, confirming that coherence emerged as a discrete characteristic of speech. Factor 1 indexed the use of long, abstract, late-acquired words in speech, so appeared to reflect access to complex vocabulary. High scores on Factor 3 were associated with use of low frequency, concrete nouns that were low in semantic diversity. This factor may reflect the degree to which speech referenced highly specific concepts, so we labelled it semantic specificity. Finally, high scores on Factor 4 were characterised by high type:token ratio and a low proportion of closed-class words, which are indicative of greater lexical diversity.
 
@@ -66,7 +335,7 @@ The purpose of this analysis was to establish whether the observed effects of ex
 
 Scores on each factor were subjected to the same series of mixed effects analyses used for the analysis of GC and LC. The full results of these analyses are shown in Supplementary file 1, while the effects of participants’ semantic and executive scores on each factor are presented in Figure 4B. The results for Factor 2 (coherence) were the same as previously observed for GC and LC separately: lower coherence was associated with poorer Trails and semantic selection performance but with better semantic knowledge. Importantly, no other factor showed the same pattern. The only other significant effects were that semantic knowledge was positively correlated with scores on factors 1 (vocabulary) and 4 (lexical diversity), indicating that participants with broader semantic knowledge used a broader and more complex range of vocabulary when speaking. This analysis therefore confirms that the participants’ executive and semantic selection abilities had a specific effect on their coherence but not on other aspects of their speech production.
 
-## Secondary task performance
+### Secondary task performance
 
 Analysis of the secondary manual task is reported in Appendix 5. In brief, older people had slower RTs and both groups were slower when the task was combined with speaking. Importantly, however, there was no interaction between these factors, indicating that the requirement to perform two tasks affected both groups equally (see Appendix 5—figure 2). Participants’ GC and LC scores did not predict performance on the secondary task, ruling out the possibility of a trade-off between secondary task performance and maintenance of coherence.
 
@@ -94,11 +363,11 @@ Finally, it is important to consider an underlying assumption often made in the 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Thirty young adults, aged between 18 and 30 (mean = 19.3), were recruited from the undergraduate Psychology course at the University of Edinburgh and participated in the study in exchange for course credit. Thirty older adults, aged between 61 and 91 (mean = 76.0), were recruited from the Psychology department’s volunteer panel. These participants were a subset of a group taking part in a larger study of semantic processing, some data from which have been reported elsewhere (Hoffman, 2018). All participants reported to be in good health with no history of neurological or psychiatric illness. Demographic information for each group is shown in Appendix 1—table 1. Young and older adults did not differ significantly in years of education completed (t(58) = 0.93, p=0.36). Sample size was selected to be similar to comparable studies in the literature. All participants provided informed consent and the study was approved by the University of Edinburgh Psychology Research Ethics Committee (120-1415/3).
 
-## Assessments of cognitive and semantic ability
+### Assessments of cognitive and semantic ability
 
 Participants completed the following tests of general cognitive function and executive ability: Mini-Mental State Examination, Trail-making task, verbal fluency (see Appendix 1 for details). As a measure of domain-general executive function, we computed the ratio of completion times for Trails part B to Trails part A. High ratios indicated disproportionately slow performance on part B, indicative of poor executive function. A ratio rather than a difference score was used as this measure minimises the influence of differences in general processing speed (Arbuthnott and Frank, 2000; Salthouse, 2011). Participants also completed two tasks probed breadth of semantic knowledge: lexical decision (Baddeley et al., 1992) and synonym matching (adapted Mill Hill vocabulary scale; Raven et al., 1989) (for further details, see Appendix 1). As scores on these tasks were strongly correlated, they were averaged to give a single measure of breadth of semantic knowledge.
 
@@ -108,13 +377,13 @@ Semantic control was assessed using a 2 × 2 within-subjects experimental design
 
 **Figure 5.:** The correct response is highlighted in each case.
 
-## Speech elicitation task
+### Speech elicitation task
 
 Samples of speech were elicited under conditions of undivided and divided attention. On speech-only trials, participants were asked to speak for 60 s at a time in response to a written prompt (for full list of prompts, see Appendix 2). Prompts were designed to probe particular areas of semantic knowledge (e.g., What sort of things do you have to do to look after a dog?). Participants read each prompt on a computer monitor and pressed a key when ready to begin speaking. After 60 s, a tone sounded to signal the end of the trial. Participants were instructed to continue speaking until they heard the tone. On dual-task trials, participants were asked to complete an attention-demanding secondary task while speaking (Craik et al., 1996). On these trials, a horizontal array of four squares appeared on screen. Every 3 s, a red circle appeared in one of the squares and participants pressed a key corresponding to its location. This task was performed continuously throughout the speech elicitation period. Seven speech samples were obtained in the speech-only condition and seven in the dual-task condition. Finally, to obtain a baseline measure of secondary task performance, there were five secondary-only trials where the secondary task was performed without speech for 60 s. These trials were interspersed amongst the speech elicitation trials.
 
 Spoken responses were digitally recorded for later transcription. The main dependent variables analysed were computed measures of global and local coherence (GC and LC), as described below. A number of other speech markers were also computed and were included in supplementary analyses (see Appendix 3 for details).
 
-## Coherence computations
+### Coherence computations
 
 Measures of local and global coherence were generated using an automated computational linguistic approach. Analyses were implemented in R; the code is publicly available and can easily be applied to new samples (https://osf.io/8atfn/). Our approach used latent semantic analysis (LSA) (Landauer and Dumais, 1997), one of a number of computational techniques in which patterns of word co-occurrence are used to construct a high-dimensional semantic space. The LSA method utilises a large corpus of natural language divided into a number of discrete contexts. The corpus is used to generate a co-occurrence matrix registering how often each word appears in each context. Data reduction techniques are then applied to this matrix, with the result that each word is represented as a high-dimensional vector. Words that are used in similar contexts (and are thus assumed to have related meanings) are assigned similar vectors. Word similarities derived in this way are strong predictors of human judgements of semantic relatedness and human performance on a range of tasks (Bullinaria and Levy, 2007; Recchia and Jones, 2009).
 
@@ -126,7 +395,7 @@ Global coherence was defined as similarity of the vector for each window with th
 
 Once GC and LC had been calculated, the window moved one word to the right and the process was repeated, until all windows had been assessed. GC and LC values were averaged across windows to give overall values for each response, which were multiplied by 100 for ease of presentation. Examples of responses with high vs. low coherence values are provided in Appendix 3-Table 1. The LSA-based coherence measures were validated by comparing them with judgements of coherence provided by human raters for a subset of speech samples (see Appendix 4 for details). There was a strong correlation between rated GC and LSA-based GC (r = 0.68) and a somewhat weaker relationship between LSA-based LC and LC ratings (r = 0.37). Test-retest reliability was high (see Appendix 4).
 
-## Statistical analyses
+### Statistical analyses
 
 A series of linear mixed effects models were used to investigate the effects of the experimental manipulations and individual differences in semantic and executive ability on characteristics of speech. The dependent variable in the first analysis was speech rate in words per minute (WPM). This was analysed in a linear mixed model with a 2 × 2 (age group x task) factorial design. We performed this analysis because previous studies have found that older people speak more slowly than young people and that speech rate is reduced under dual-task conditions (Kemper et al., 2003; Kemper et al., 2010). It was important to investigate this possibility in our data as speech rate might have an impact on coherence. For example, participants who spoke very quickly could cover a wider range of topics in 60 s, increasing the likelihood that their response would lose coherence. Since we found that speech rate was indeed influenced by both age and task, this variable was included as a covariate in later analyses.
 

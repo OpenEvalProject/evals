@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 McKetta Department of Chemical Engineering, University of Texas at Austin Austin United States
-2. https://ror.org/00hj54h04 Interdisciplinary Life Sciences Graduate Program, University of Texas at Austin Austin United States
+1. McKetta Department of Chemical Engineering, University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+2. Interdisciplinary Life Sciences Graduate Program, University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
 
 † Corresponding author
 
@@ -35,6 +35,62 @@ In this article, we describe how we have implemented Pipettes and Problem Solvin
 ![Figure 1.](https://cdn.elifesciences.org/articles/100761/elife-100761-fig1-v1.jpg)
 
 **Figure 1.:** The leader presents a scenario in which a hypothetical experiment has produced unexpected results. Graduate students ask questions about the experimental setup and the results. The students then discuss the scenario and potential experiments that might help to isolate the problem that has caused the unexpected results. Once they have reached a consensus on a suitable experiment, the leader reveals the results of their proposed experiment. Based on these results, the students try to figure out the source of the problem that is leading to the unexpected results. If they are correct, the exercise is over. If they are wrong, the cycle can be repeated. Elements of luck or chance can be introduced by rolling dice to determine, for example, any time or budget constraints on the proposed experiments. The Pipettes and Problem Solving logo (top right) was designed by students.
+
+**Table 1.**
+ Resources for the eight scenarios listed in this table are provided in Supplementary file 1.The following is provided for each scenario: background information; a description of the scenario; the protocol for the experiment that produced the unexpected result; the results of the experiment; information on the source of the error; background information that can be used to answer questions; references; and example slides that can be used in real meetings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Key words</th>
+      <th>1/2/mundane</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MTT assay</td>
+      <td>Mammalian cell biology; cytotoxicity; analytical chemistry</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Membrane surface charge</td>
+      <td>Synthetic biology; bioelectronics; imaging electrochemical devices</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Streptavidin-conjugation assay</td>
+      <td>Antibody; molecular biology; biochemistry; immunology</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Golden gate cloning</td>
+      <td>Cloning; Golden Gate assembly; PCR; primers; synthetic biology</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Recombinant quorum sensing expression and activity verification</td>
+      <td>quorum sensing; synthetic biology; plasmid cloning structural biology</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Gibson cloning troubles</td>
+      <td>Synthetic biology; Gibson assembly; genetic engineering</td>
+      <td>Mundane</td>
+    </tr>
+    <tr>
+      <td>T cell cytokine release ELISA</td>
+      <td>Mammalian cell biology; T cell activation; cytokine release</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Metabolite tracking by aqueous FTIR spectroscopy</td>
+      <td>Fourier transform infrared (FTIR) spectroscopy; analytical chemistry; synthetic biology</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Pipettes and Problem Solving: The practicalities
 

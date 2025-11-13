@@ -44,9 +44,7 @@ Essential revisions:
 
 Further rationale for the parameters for the Mtb dynamics simulations and some type of validation or sensitivity analysis should be done. The doubling time of 565 hours (23-24 days!) in live cells is rather remarkable.
 
-The reviewers are correct that 565 hours is too exact a number given the interquartile range of the data, and the fact that at slow growth rates, small changes in slope are heavily magnified in terms of the doubling time, as shown in Author response image 1, around a slope of zero:10.7554/eLife.22028.035Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.22028.035
-
-DOI: http://dx.doi.org/10.7554/eLife.22028.035
+The reviewers are correct that 565 hours is too exact a number given the interquartile range of the data, and the fact that at slow growth rates, small changes in slope are heavily magnified in terms of the doubling time, as shown in Author response image 1, around a slope of zero:10.7554/eLife.22028.035Author response image 1.
 
 We therefore substitute 565 hours with a doubling time of >100 hours (Results section, subsection “Mtb clumps are not eliminated by macrophage death and rapidly grow inside the dead cell”, third paragraph). This doubling time, corresponding to a slope of ~0.07 (marked by blue vertical line in the figure), is before the doubling time becomes highly sensitive to the slope.
 

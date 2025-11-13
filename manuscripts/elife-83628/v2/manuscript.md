@@ -11,19 +11,19 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States
-2. https://ror.org/043mz5j54 Department of Microbiology and Immunology, University of California, San Francisco San Francisco United States
-3. https://ror.org/053r20n13 Ragon Institute of MGH, MIT, and Harvard Cambridge United States
+1. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Department of Microbiology and Immunology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Ragon Institute of MGH, MIT, and Harvard Cambridge United States ([ROR:053r20n13](https://ror.org/053r20n13))
 4. Department of Microbiology, Harvard Medical School Boston United States
-5. https://ror.org/03vek6s52 Department of Physics, Harvard University Cambridge United States
-6. https://ror.org/03vek6s52 NSF-Simons Center for Mathematical and Statistical Analysis of Biology, Harvard University Cambridge United States
-7. https://ror.org/03vek6s52 Quantitative Biology Initiative, Harvard University Cambridge United States
+5. Department of Physics, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+6. NSF-Simons Center for Mathematical and Statistical Analysis of Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+7. Quantitative Biology Initiative, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
 ## Abstract
 
-Broadly neutralizing antibodies (bnAbs) that neutralize diverse variants of a particular virus are of considerable therapeutic interest. Recent advances have enabled us to isolate and engineer these antibodies as therapeutics, but eliciting them through vaccination remains challenging, in part due to our limited understanding of how antibodies evolve breadth. Here, we analyze the landscape by which an anti-influenza receptor binding site (RBS) bnAb, CH65, evolved broad affinity to diverse H1 influenza strains. We do this by generating an antibody library of all possible evolutionary intermediates between the unmutated common ancestor (UCA) and the affinity-matured CH65 antibody and measure the affinity of each intermediate to three distinct H1 antigens. We find that affinity to each antigen requires a specific set of mutations – distributed across the variable light and heavy chains – that interact non-additively (i.e., epistatically). These sets of mutations form a hierarchical pattern across the antigens, with increasingly divergent antigens requiring additional epistatic mutations beyond those required to bind less divergent antigens. We investigate the underlying biochemical and structural basis for these hierarchical sets of epistatic mutations and find that epistasis between heavy chain mutations and a mutation in the light chain at the V H -V L interface is essential for binding a divergent H1. Collectively, this is the first work to comprehensively characterize epistasis between heavy and light chain mutations and shows that such interactions are both strong and widespread. Together with our previous study analyzing a different class of anti-influenza antibodies, our results implicate epistasis as a general feature of antibody sequence-affinity landscapes that can potentiate and constrain the evolution of breadth.
+Broadly neutralizing antibodies (bnAbs) that neutralize diverse variants of a particular virus are of considerable therapeutic interest. Recent advances have enabled us to isolate and engineer these antibodies as therapeutics, but eliciting them through vaccination remains challenging, in part due to our limited understanding of how antibodies evolve breadth. Here, we analyze the landscape by which an anti-influenza receptor binding site (RBS) bnAb, CH65, evolved broad affinity to diverse H1 influenza strains. We do this by generating an antibody library of all possible evolutionary intermediates between the unmutated common ancestor (UCA) and the affinity-matured CH65 antibody and measure the affinity of each intermediate to three distinct H1 antigens. We find that affinity to each antigen requires a specific set of mutations – distributed across the variable light and heavy chains – that interact non-additively (i.e., epistatically). These sets of mutations form a hierarchical pattern across the antigens, with increasingly divergent antigens requiring additional epistatic mutations beyond those required to bind less divergent antigens. We investigate the underlying biochemical and structural basis for these hierarchical sets of epistatic mutations and find that epistasis between heavy chain mutations and a mutation in the light chain at the VH-VL interface is essential for binding a divergent H1. Collectively, this is the first work to comprehensively characterize epistasis between heavy and light chain mutations and shows that such interactions are both strong and widespread. Together with our previous study analyzing a different class of anti-influenza antibodies, our results implicate epistasis as a general feature of antibody sequence-affinity landscapes that can potentiate and constrain the evolution of breadth.
 
 ## Introduction
 
@@ -53,23 +53,77 @@ Here, to elucidate the role of epistasis (both inter- and intra-chain) in shapin
 
 To comprehensively examine how epistasis may have shaped the evolution of CH65, we generated a combinatorially complete antibody library comprising all possible evolutionary intermediates from the UCA to CH65. This library contains all possible combinations of mutations present in both the variable heavy and light chains of CH65, less two mutations (Q1E and S75A in VH) distant from the paratope that do not significantly impact binding affinity (Figure 1A, Figure 1—figure supplement 1) or physically interact with other residues. Removing these mutations results in a final library size of 216, which is within the throughput limit of our methods.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig1-v2.jpg)
+
+**Figure 1.:** (A) Alignment of unmutated common ancestor (UCA), I-2, and CH65 VH (top) and VL (bottom) sequences. Mutations of interest are shown in purple and are numbered; gray mutations do not impact affinity and were excluded from the library. (B) -logKD for ~216 variants to each of the three antigens. Each point represents the mean -logKD of biological duplicates and is colored by the number of somatic mutations in the corresponding variant. The UCA, I-2, and CH65 are annotated as stars; N = 62,926 after filtering poor KD measurements from the Tite-Seq data (see 'Materials and methods'). Two-dimensional representations of the data are shown below the three-dimensional plot. (C) Distribution of -logKD for each antigen. Left: variant -logKD grouped by the number of somatic mutations; Right: -logKD histograms for variants that bind each antigen, with total number of binding variants (N) indicated on plot.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Isogenic measurements of -logKD for CH65 with (18-mut) and without (16-mut) Q1E and S75A to MA90 (p-value=0.82, t-stat = 0.26) and SI06 (p-value=1.0, t-stat = 0.0); ‘ns’ designates a p-value>0.05. Error bars indicate standard error between biological duplicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Combinatorially complete (N = 216 variants) antibody plasmid library is transformed into yeast and expression of antibodies is induced. Yeast antibody library is then labeled with HA (at varying concentrations) followed by fluorophores (FITC, which binds the Ab, and PE, which binds HA). Labeled yeast library is then gated to select single cells that express scFv. scFv-positive cells are then sorted according to HA binding (PE fluorescence) into four bins. Bin 1 corresponds to all HA-negative cells, HA-positive cells are split evenly between the remaining three bins. Each bin is then sequenced to determine variant frequency in each bin. KD is then inferred by fitting the mean bin each variant is observed in to the antigen concentration.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Correlation between biological duplicate Tite-Seq KD measurements before (top) and after (bottom) removing genotypes with -logKD differing by more than one-log between biological replicates. The latter set of measurements were used for all downstream analyses. N indicates the number of variants plotted, r indicates the correlation between biological replicates. (B) Correlation between Tite-Seq -logKD measurements and isogenic fluorescence-based -logKD measurements for a subset of mutants to one of the three antigens, as indicated in key. Points and error bars indicate the mean and SEM between biological replicates, respectively; SEM are generally smaller than the points. (C) Correlation between Tite-Seq -logKD measurements and BLI -logKD measurements for a subset of mutants to one of the three antigens, as indicated in key. Error bars indicate the SEM between biological replicates (for Tite-Seq) and the SE of the fit (for BLI) and are generally smaller than the points.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Sorting scheme for scFv expression. Library was sorted into four bins, each comprising 25% of the total population, along the log(fluorescence) axis corresponding to expression (FITC). (B) Correlation between Tite-Seq biological replicate measurements of expression for all variants in the CH65 library. (C) Correlation between mean Tite-Seq expression measurement and mean isogenic expression measurement for select variants. (D) Change in expression resulting from mutation as a function of the number of other mutations present. (E) Change in expression resulting from each mutation. Each violin contains 215 points corresponding to the effect of that mutation on the 215 other genetic backgrounds. White, gray, and black points show the impact of the mutation on expression on the unmutated common ancestor (UCA), I-2, and CH65 genetic backgrounds, respectively. (F) Relationship between expression and binding affinity for all variants in the CH65 library. (G) Relationship between mean change in expression and mean change in binding affinity resulting from each of the 16 mutations in CH65. Mutations are colored as in (E).
+
 To profile the breadth of the corresponding antibody library, we first transform this combinatorial plasmid library into yeast for antibody surface display in a single-chain variable fragment (scFv) format (Boder and Wittrup, 1997). We then use Tite-Seq (Adams et al., 2016), a high-throughput method that couples flow cytometry with sequencing, to measure equilibrium binding affinities to three H1 strains bound by CH65. We chose these strains to sample varying levels of antigenic change (Smith et al., 2004; Bedford et al., 2014): they include a strain that circulated early in the donor’s lifetime (A/Massachusetts/1/1990, 'MA90') and a strain that circulated 16 years later (A/Solomon Islands/3/2006, 'SI06') (Schmidt et al., 2013). Additionally, because affinity maturation has been shown to confer binding to antigens that escape less mutated members of the same lineage (Muecksch et al., 2021), we drove viral escape of MA90 in vitro using the UCA and found that CH65 could bind to the resulting strain (A/Massachusetts/1/1990 G189E, 'MA90-G189E') that escapes the UCA. We use the MA90-G189E antigen to profile incremental antigenic change from MA90 (one direct escape mutation), whereas SI06 represents more substantial antigenic change during natural evolution, including loss of K133a and the mutation E156G in the RBS.
 
 For each of these three antigens, we used Tite-Seq to measure equilibrium binding affinities for all 216 variants in biological duplicates (Figure 1—figure supplement 2). We log-transform the binding affinities and report -logKD, which is proportional to the free energy change of binding (and is thus expected to combine additively) (Wells, 1990; Olson et al., 2014). For each antigen, the Tite-Seq -logKD correlate well between biological replicates (r ~ 0.98 for all antigens; Figure 1—figure supplement 3A) and accurately reflect isogenic measurements made by flow cytometry (r = 0.97; Figure 1—figure supplement 3B), as well as recombinant IgG affinity measurements made by biolayer interferometry (r = 0.86; Figure 1—figure supplement 3C).
 
-## CH65 sequence-affinity landscape
+### CH65 sequence-affinity landscape
 
 Broadly, we find that increasingly divergent antigens require additional mutations to confer antigen binding. Consistent with previous work (Schmidt et al., 2013; Xu et al., 2015), the UCA has weak affinity for MA90 but does not bind MA90-G189E or SI06; I-2 (which contains G31D, M34I, and N52H (VH)) has improved affinity to MA90, weak affinity to MA90-G189E, and does not bind SI06; and CH65 has near maximal affinity amongst library variants for all three antigens (Figure 1B). While the entire library binds MA90, ~83% of variants bind MA90-G189E and ~51% of variants bind SI06 (Figure 1C). For all antigens, affinity is higher for more mutated variants, except for a subset of highly mutated variants that do not bind SI06 (Figure 1B, bottom right). There are ~2000 variants that bind MA90 with reduced affinity relative to the UCA; none of these variants have detectable affinity for SI06, and only one has detectable affinity for MA90-G189E (Figure 1B). Further, all variants that bind SI06 also bind MA90-G189E (Figure 1B) as variants can bind MA90-G189E with fewer mutations than SI06 (Figure 1C). This 'hierarchical' or 'nested' pattern, where mutations that enable binding to more antigenically divergent strains are dependent on mutations that enable binding to less divergent strains, is reminiscent of what we observed previously for the anti-stem bnAb CR9114 (Phillips et al., 2021), despite the comparatively subtle differences between the antigens examined here (83–96% epitope identity versus 52–61% for the CR9114 antigens) (Dreyfus et al., 2012; Schmidt et al., 2015a).
 
-## Mutational effects on CH65 affinity and breadth
+### Mutational effects on CH65 affinity and breadth
 
 To understand how specific mutations shape the sequence-affinity landscape, we computed the change in affinity resulting from each of the 16 mutations on all 215 genetic backgrounds at the other 15 sites. This analysis reveals that several mutations improve affinity to MA90 and MA90-G189E (e.g., Y35N, Y48C, D49Y (VL) and G31D, Y33H, H35N, N52H (VH)), and some of these distributions are multimodal, indicating that their effect on affinity depends on the presence of other mutations (Figure 2A). Consistent with this, some mutations improve affinity to MA90 and/or MA90-G189E on the UCA or I-2 backgrounds (e.g., Y35N (VL) and Y33H, H35N (VH)) and others on the CH65 background (Y48C, D49Y (VL)). For SI06, N52H dramatically improves affinity and most variants lacking this mutation do not have detectable affinity. Thus, several mutations (e.g., Y35N (VL)) improve affinity to SI06 in the I-2, but not the UCA, background (Figure 2A). In general, the effects of these mutations correlate between the different antigens, with mutations affecting affinity more substantially for MA90-G189E and SI06 compared to MA90 (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig2-v2.jpg)
+
+**Figure 2.:** (A) Change in -logKD resulting from each mutation on all ~215 genetic backgrounds. Impact of mutation on the unmutated common ancestor (UCA), I-2, and the CH65 genetic backgrounds are represented by white, gray, and black points, respectively. (B) Correlation of mean effect on -logKD for MA90, SI06, and MA90-G189E resulting from each mutation. Regression line and 95% confidence intervals are shown in gray. Mutations are colored as in (A). (C) Frequency of each mutation amongst variants that bind a given antigen with KD ≤ 1 nM. Error bars correspond to standard deviation across bootstrapped data (N = 10). (D) Mutations present at >55% frequency (p-value<0.05 from one-sided t-test) amongst binders for each antigen. Figure 2—figure supplement 1. Change in -logKD resulting from each mutation as a function of the number of other mutations present.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Line represents mean, and shading represents 95% confidence interval over all genetic backgrounds (N ~ 215).
 
 To assess which mutations confer affinity to a particular antigen, we computed the frequency of each mutation amongst binding variants in the library. Consistent with the landscapes in Figure 1B, we observe that the mutations enriched amongst binders form a hierarchical pattern between the antigens (Figure 2C). For example, a few mutations are enriched (≥55% frequency) amongst variants with nanomolar affinity for MA90 (e.g., Y35N, D49Y (VL) and Y33H, N52H (VH)), a few additional mutations are enriched amongst MA90-G189E binders (e.g., S29R (VL) and G31D, H35N, R87K (VH)), and still additional mutations are enriched amongst SI06 binders (e.g., N26D, Y48C, V98I (VL) and M34I, R85G (VH)) (Figure 2D). Thus, except for Y35N (VL), which is interestingly depleted amongst SI06 binders (Figure 2—figure supplement 1), the mutations that enhance affinity to the three antigens form a hierarchical pattern.
 
 We next characterized how epistasis between these mutations might impact affinity and result in this hierarchical pattern of breadth. To this end, we fit our measured -logKD to a standard biochemical model of epistasis (Sailer and Harms, 2017), which is a linear model defined as the sum of single mutational effects and epistatic terms up to a specified order (see 'Materials and methods'). Using a cross-validation approach, we find that the optimal order model for affinity is fourth-order for MA90 and fifth-order for MA90-G189E and SI06, and we report coefficients at each order from these best-fitting models (Figure 3A). The magnitude and sign of these coefficients correspond to effects on -logKD: for example, a second-order term of +1 means that two mutations occurring together improve -logKD by 1 unit, beyond the sum of their first-order effects. For all three antigens, we find widespread epistasis between mutations in the same chain and between mutations in different chains, with many epistatic terms exceeding first-order effects in magnitude (Figure 3). In contrast to our previous work on variable heavy-chain-only antibody landscapes (Phillips et al., 2021), we find many strong epistatic interactions between mutations that are too distant to physically interact (Figure 3—figure supplements 1–4).
 
-## Structural and biophysical basis of epistasis in CH65
+![Figure 3.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig3-v2.jpg)
+
+**Figure 3.:** (A) Significant first-order, pairwise, and higher-order mutational effects for each of the 16 mutations inferred from the optimal order model for each antigen. Higher-order effects are reported as a sum. Mutations present in I-2 are shown in bold. ‘R’ indicates that the mutation is required for binding (defined as being present in ≥90% of binding variants) and is thus excluded from the epistasis inference. (B) Structural context of significant first-order and epistatic effects. For each mutation, the upper triangle shows the first-order effect, the lower triangle shows the sum of the pairwise and higher-order effects, and the contact surface area with HA and HCDR3 are shown in the fourth and fifth columns. Significance in (A) and (B) indicates the coefficient 95% CIs do not include zero, see 'Materials and methods' and Figure 3—source data 1. Figure 3—figure supplement 1. Pairwise effects versus distance.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pairwise coefficients plotted as a function of the distance between alpha-carbons (in Angstroms) of the corresponding residues. Select outliers are annotated. (B) Left: mean pairwise coefficients between residues, binned according to the distance between alpha-carbons (in 4-Angstrom bins). Right: same data as left, but coefficients were permuted to generate null expectation. Error bars correspond to standard deviation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Sum of absolute value of statistically significant pairwise and higher-order coefficients for MA90, MA90-G189E, and SI06. Significant coefficients are defined as those with 95% CI that do not include zero. (B) Significant epistatic coefficients between mutations in the light chain (VL), heavy chain (VH), or between mutations spread across both chains (both). Percentage of insignificant coefficients is indicated below each swarm plot.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Significant first-order, pairwise, and higher-order mutational effects for each of the 16 mutations inferred from the optimal order model for each antigen. Higher-order effects are reported as a sum. Mutations present in I-2 are shown in bold. ‘R’ indicates that the mutation is required for binding (defined as being present in ≥90% of binding variants) and is thus excluded from the epistasis inference. Significant coefficients are defined as those with 95% CI that do not include zero.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Total number of statistically significant coefficients is plotted for each antigen and epistatic model. Significant coefficients are defined as those with 95% CI that do not include zero.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Absolute value of first-order mutational effects (A) and sum of absolute value of pairwise and higher-order (i.e., epistatic) mutational effects (B) on affinity to each antigen mapped onto the antibody-antigen co-crystal structure (5UGY). Mutations in CH65 relative to unmutated common ancestor (UCA) are shown as sticks; first-order and epistatic effects are colored on the same numeric color scale for each antigen.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig3-figsupp6-v2.jpg)
+
+### Structural and biophysical basis of epistasis in CH65
 
 Because there are substantial long-range epistatic interactions, our combinatorial approach identifies numerous interactions not previously known, in addition to confirming the few interactions characterized in earlier work (e.g., Y48C and D49Y (VL) have strong synergistic epistasis) (Schmidt et al., 2013; Xu et al., 2015). Here, we find strong epistasis between the I-2 mutations (G31D, M34I, N52H (VH)), neighboring mutations (Y33H, H35N (VH)), mutations known to stabilize light chain contacts (Y48C, D49Y) (Schmidt et al., 2013), as well as an uncharacterized light chain mutation (Y35N). When we examine the structural context of this epistasis, we find that mutations with strong first-order and epistatic effects often make contact with either HA or with the HCDR3 that engages the RBS (Figure 3B, Figure 3—figure supplement 5). This suggests that the effects of these mutations are either mediated through the contacts that they make with HA or through affecting the HCDR3 loop conformation. These mutations interact epistatically for each of the three antigens, though the magnitude of epistasis is higher for SI06 (explaining ~34% of the variance in KD, relative to ~24% for MA90, and ~25% for MA90-G189E, see Figure 3—figure supplement 6).
 
@@ -77,13 +131,57 @@ Importantly, these epistatic interactions are essential for the acquisition of a
 
 The I-2 intermediate (which contains G31D, M34I, N52H (VH)) is amongst the least-mutated variants that binds MA90-G189E (Figure 1B). The N52H mutation, which substantially improves affinity to MA90-G189E (Figure 4A), would potentially clash with one of the binding-incompatible HCDR3 conformations observed in crystal structures of the UCA and I-2; thus, this mutation may increase the occupancy of the binding-compatible HCDR3 conformation (Figure 4—figure supplement 1A). In the bound state, N52H π-stacks with Y33H and hydrogen bonds with G31D (Figure 4B and C, Figure 4—figure supplement 1B). Consequently, N52H and G31D, which together provide high affinity for MA90-G189E (Figure 4A), form a network of interactions between HCDR1, HCDR2, and the 150-loop of HA to stabilize the binding interaction (Figure 4C). Thus, while N52H alone confers affinity to MA90-G189E, G31D and M34I (I-2) reduce the dissociation rate by ~3.5–5-fold to improve affinity (Figure 4C, Figure 4—figure supplement 5). Notably, these interactions are distant (~15–20 Å) from the residue conferring viral escape, precluding any direct interaction (Figure 4C). Though these mutations are also important for affinity to the antigenically drifted SI06, they are insufficient to confer appreciable affinity in the absence of other epistatic mutations (Figure 4D, top).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig4-v2.jpg)
+
+**Figure 4.:** (A) Three mutations in I-2 (G31D, M34I, N52H) confer affinity to MA90-G189E. Each violin contains 64 genotypes that have the unmutated common ancestor (UCA) residue at positions 35, 48, 49 (VL) and 33, 35, 85, 87 (VH), and are variable at the remaining six positions. In (A) and (D), the white dots indicate the distribution means, and the gray and dotted lines indicate the additive and pairwise expectations, respectively. (B) Epistatic mutations that confer affinity to viral escape strains are distant from the sites of escape. Shown is CH65 bound to SI06 (PDB 5UGY; Whittle et al., 2011). Colored residues highlight the locations of the mutations shown in (A) and (D). Spheres highlight the locations of the viral escape mutations (G189E, ∆K133a, and E156G). (C) Top, left: mutations N52H and G31D establish a network of interactions between HCDR1, HCDR2, and HA. Top, right: distance between G189E and N52H or G31D precludes interaction. Alpha carbon distances are shown. Bottom: Binding kinetics against MA90-G189E for select variants at 30°C by biolayer interferometry using a bivalent analyte binding model. (D) Mutations in I-2 are insufficient for affinity to SI06 (top) but interact epistatically with Y35N and H35N to bind SI06 (bottom). Top: each violin contains 64 genotypes that have the UCA residue at positions 35, 48, 49 (VL) and 33, 35, 85, 87 (VH), and are variable at the remaining six positions. Bottom: each violin contains 64 genotypes that have the UCA residue at positions 48, 49 (VL) and 33, 85, 87 (VH), the CH65 residue at positions 31 and 34 (VH), and are variable at the remaining six positions. ‘$∅$’ and ‘+’ indicate mutations that have neutral or beneficial mean effects on -logKD, respectively. (E) Left: epistatic mutations Y35N and H35N are located at the VH-VL interface. Right: somatic mutations remove interactions with the HCDR3. Shown is the unbound I-2 structure (PDB 4HK3 Schmidt et al., 2013). Bottom: binding kinetics against SI06 for select variants at 30°C by biolayer interferometry using a bivalent analyte binding model.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The mutation N52H in CH65 (PDB 4WUK (unbound) and 5UGY (bound)) clashes with E102 in the HCDR3 conformations observed in the unbound crystal structures of the unmutated common ancestor (UCA) (PDB 4HK0) and I-2 (PDB 4HK3). (B) Residue 52H moves to π-stack with residue 33 in a T configuration in CH65 compared to hydrogen bonding between 52H and 33Y in unbound I-2. (C) Unbound Fab structures of several variants in the CH65 lineage. Cartoon volume is scaled by B factors. Previously reported structures show that the HCDR3 conformation in the UCA and I-2 is different than that in CH65, which matches the bound conformation (top). Although the UCA with the Y35N mutation confers affinity to MA90-G189E, the HCDR3 is not in the binding conformation and has exceedingly high B factors (bottom left). Similarly, although the I-2 with the mutations Y35N and H35N confer affinity to SI06, the HCDR3 lacked sufficient density and also had high B factors (bottom middle).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Black is the processed data and red is the global curve fit using the bivalent analyte model.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Black is the processed data and red is the global curve fit using the bivalent analyte model. For the unmutated common ancestor (UCA), there was no detectable binding.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Black is the processed data and red is the global curve fit using the bivalent analyte model. For the unmutated common ancestor (UCA) and I-2, any signal was too weak for analysis.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Error bars represent the standard error for kinetic parameters derived from global curve fitting with a bivalent analyte model using the analysis software supplied with the instrument (Sartorius Data Analysis HT 12.0.2.59). For some high-affinity variants, the dissociation time was too short to accurately measure the dissociation rate against MA90 accurately, especially at lower temperatures (left), resulting in inaccurate dissociation rates with large errors. Antibodies that did not bind MA90-G189E (middle) or SI06 (right) were not included in the plots.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Weak but detectable binding is observed for SI06.
+
 In examining the minimally mutated variants that can bind SI06, we find that Y35N in the light chain and H35N in the heavy chain interact synergistically with the I-2 mutations (G31D, M34I, N52H) to confer affinity to SI06 (Figure 4D, bottom). Thus, the hierarchical sets of mutations that confer broad reactivity to these antigens (Figure 2D) do so through epistasis. In particular, the germline residue Y35 in the light chain framework (FWR) 2 is part of a cluster of aromatic residues at the VH-VL interface and makes π-stacking, methionine–aromatic, and hydrogen bonding interactions between LFWR2 and LCDR3, HCDR3, and HFWR4 (Figure 4E). The somatic mutation Y35N effectively removes these interactions with the HCDR3. Although the loss of the aromatic moiety from tyrosine to asparagine likely has a destabilizing effect, we attribute the observed changes in affinity to the loss of hydrogen bonding between LFWR2 and HCDR3; this is in part because the lineage member CH67, which has similarly broad reactivity, acquires a Y35F mutation upon affinity maturation that is only a removal of a hydroxyl group, preventing the ability to form hydrogen bonding interactions through the side chain (Schmidt et al., 2013). Similarly, H35N removes a methionine–aromatic interaction, known to have a stabilizing effect in proteins (Valley et al., 2012), between the HFWR2 and HCDR3 (Figure 4E). Addition of Y35N and H35N into the UCA background did not confer affinity to SI06 (Figure 4D and E). However, the addition of H35N into the I-2 background produced weak but detectable affinity with an association rate that was improved upon addition of Y35N (Figure 4D and E, Figure 4—figure supplement 6). Notably, while Y35N confers affinity to SI06 for variants with few somatic mutations, the magnitude of this effect diminishes as the number of mutations increases. Indeed, Y35N is depleted amongst the highest affinity variants (Figure 2C, Figure 2—figure supplement 1) and in the context of a mutated background decreased the association rate and overall affinity (Figure 4E), suggesting that Y35N, which removes inter-chain contacts, is likely only beneficial during early rounds of affinity maturation.
 
 Previous studies on this lineage (Schmidt et al., 2013; Xu et al., 2015) showed that HCDR3 rigidification contributed to high-affinity binding to SI06: crystal structures of the unbound, affinity-matured Fabs had the same HCDR3 configurations as those in the antigen-bound state; the UCA and I-2, however, were either disordered or constrained, due to crystal packing, in a binding-incompatible state. To determine whether the mutations Y35N and H35N could stabilize a binding-compatible HCDR3 conformation, we determined X-ray crystal structures of unbound Fabs containing Y35N in the UCA background or Y35N and H35N in the I-2 background and compared them to previously determined structures (Figure 4—figure supplement 1C). These variants were insufficient to rigidify the HCDR3 as observed by the HCDR3 conformation and high B factors or the lack of density corresponding to the HCDR3 (Figure 4—figure supplement 1C). These data show that the I-2 mutations conferred affinity towards MA90-G189E by stabilizing the HCDR1 and HCDR2 with HA and were required for the addition of Y35N and H35N, which remove contacts with HCDR3, to confer affinity against SI06 without complete HCDR3 rigidification, revealing a biophysical mechanism through which inter-chain epistasis can determine broad affinity in a hierarchical manner.
 
-## Likelihood of mutational pathways to CH65
+### Likelihood of mutational pathways to CH65
 
 The extent of epistasis we observe suggests that the evolution of CH65 is contingent on mutations occurring in a particular order. Further, the hierarchical pattern of mutations that confer affinity to the different antigens indicates that the likelihood a mutation fixes depends on the selecting antigen. Because we measured affinities for a combinatorially complete library, we can infer the likelihood of all possible evolutionary trajectories from the UCA to CH65 (with and without the constraint of passing through the I-2 intermediate) in the context of various possible antigen selection scenarios (e.g., maturation to MA90 alone, or to SI06 alone, etc.). To this end, we implement a framework in which the probability of any mutational step is higher if -logKD increases and lower if -logKD decreases (see 'Materials and methods'; Phillips et al., 2021). We use -logKD to each antigen to compute the likelihood of all possible mutational trajectories in the context of each of the antigens, as well as in the context of all possible sequential selection scenarios, where the selecting antigen can change. We focus on scenarios involving the two antigens that the donor was likely exposed to (Figure 5) – MA90 early in their life and SI06 later in their life – but we also perform this analysis with the MA90-G189E data (Figure 5—figure supplement 1). Additionally, we consider selection resulting from a mixture of antigens, which we approximate by randomly selecting an antigen for each mutational step (Wang et al., 2015) and average this pathway likelihood over 1000 random draws.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig5-v2.jpg)
+
+**Figure 5.:** (A) Selection scenario likelihood. Total log probability (in arbitrary units) of all mutational paths from the unmutated common ancestor (UCA) to CH65 (left) or paths from the UCA to CH65 that pass through I-2 (right), assuming specific antigen selection scenarios are shown. 'Most likely' scenarios are those with the highest total probability; 'various orders' show the most likely scenarios for scenarios that begin with MA90 and alternatively, with SI06. Error bars indicate standard error obtained through bootstrap, see 'Materials and methods.' (B) -logKD for 25 most likely paths under designated antigen selection scenarios are shown with (right) and without (left) the constraint of passing through I-2. (C) Probability of each mutation occurring at a specific order under select antigen selection scenarios, with (right) and without (left) the constraint of passing through I-2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Selection scenario likelihood. Total log probability (in arbitrary units) of all mutational paths from the unmutated common ancestor (UCA) to CH65 (left) or paths from the UCA to CH65 that pass through I-2 (right), assuming specific antigen selection scenarios are shown. 'Most likely' scenarios are those with the highest total probability; 'various orders' show the most likely scenarios for all possible orders of antigen exposure. Error bars indicate standard error obtained through bootstrap; see 'Materials and methods.' (B) -logKD for 25 most likely paths under designated antigen selection scenarios are shown with (right) and without (left) the constraint of passing through I-2. (C) Probability of each mutation occurring at a specific order under select antigen selection scenarios, with (right) and without (left) the constraint of passing through I-2.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Histogram indicates number of 3-mutation variants with a given log-likelihood under the unconstrained moderate selection model presented in Figure 5. The log-likelihood corresponding to I-2, the expectation for a 3-mutation genotype chosen at random (1/560), and the median across all 3-mutation genotypes are indicated as vertical lines on the plot.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/83628/elife-83628-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Hierarchical mutations confer affinity to two distinct antigens. In this model, mutations a and b (mx) improve affinity to antigen-1; mutations a, b, c, and d improve affinity to antigen-2 (mt). (B) Mutations may confer affinity additively or epistatically. Given the hierarchical structure of mutational effects defined in (A), affinity to each antigen could theoretically be mediated by additive (top) and/or epistatic (bottom) effects. (C) Additive and epistatic models result in distinct sequence-affinity landscapes. The hypothetical additive and epistatic mutational effects presented in (C) would result in distinct sequence-affinity landscapes (compare with data in Figure 1B). Each point in the scatter plot represents one of the 16 possible genotypes, colored by the number of mutations it contains. (D) Graphical summary for epistasis-mediated breadth of CH65. The unmutated common ancestor (UCA) has affinity to MA90 and improves in affinity to MA90 through minimal mutations that are largely additive and low-order effects mediated by contacts with the antigen and HCDR3. After acquiring these mutations (mx), affinity to MA90 does not improve substantially, but additional mutations begin to improve affinity to SI06 through high-order synergistic epistasis mediated by multi-residue interactions.
 
 This pathway likelihood inference reveals that mutational trajectories leading to CH65 are most favorable in sequential selection scenarios that begin with MA90 and end with SI06, consistent with the donor’s likely exposure history (Schmidt et al., 2013; Schmidt et al., 2015a). This order is preferred regardless of whether paths are constrained to pass through I-2 (Figure 5A). Further, the MA90-SI06 sequential scenarios are considerably more likely than either antigen alone, a mixture of antigens, or SI06-MA90 sequential scenarios.
 
@@ -107,127 +205,316 @@ Finally, although epistasis can make evolution more difficult to predict (de Vis
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>EBY100</td>
+      <td>ATCC</td>
+      <td>Cat# MYA-4941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (influenza A virus)</td>
+      <td>Influenza A/Puerto Rico/8/1934 with A/Massachusetts/1/1990HA and A/Siena/10/1989 NA</td>
+      <td>Jesse Bloom and this paper</td>
+      <td></td>
+      <td>GenBank: L19027 (HA); GenBank: CY036823 (NA)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Canis lupus familiaris)</td>
+      <td>MDCK-SIAT1</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 05071502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Expi293F</td>
+      <td>Gibco</td>
+      <td>Cat# A14527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cMyc-FITC(mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-116-485</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCHA (plasmid)</td>
+      <td>Dane Wittrup Mata-Fink et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCHA_UCA860_scFv (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid map in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCHA_CH65_scFv (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid map in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CH65 golden gate primers</td>
+      <td>IDT</td>
+      <td></td>
+      <td>Sequences listed in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Illumina sequencing primers</td>
+      <td>IDT</td>
+      <td></td>
+      <td>Sequences listed in Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-RPE</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# S866</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>A/Massachusetts/1/1990 – MA90</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence in Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>A/Massachusetts/1/1990 – MA90-G189E</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence in Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>A/Solomon Islands/03/2006</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence in Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Various Fabs &amp; IgGs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Figure 4—source data 1 for specific sequences</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BirA500 kit</td>
+      <td>Avidity</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zymo Yeast Plasmid Miniprep II</td>
+      <td>Zymo Research</td>
+      <td>Cat# D2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom code</td>
+      <td>This paper</td>
+      <td></td>
+      <td>github.com/amphilli/CH65-comblib</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Interactive data browser</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://ch65-ma90-browser.netlify.app/</td>
+    </tr>
+  </tbody>
+</table>
+
 For all methods, ‘biological replicates’ refer to independent experiments performed on different days, and ‘technical replicates’ refer to multiple measurements of the same biological sample.
 
-## Antibody library production
+### Antibody library production
 
-## Antibody sequences and mutations of interest
+#### Antibody sequences and mutations of interest
 
 The UCA860 amino acid sequence (Whittle et al., 2011) was codon-optimized for expression in yeast. Amino acid substitutions corresponding to those in CH65 were encoded by ≥2 nucleotide mutations, when possible. The V98I mutation, which lies outside the region captured by 2 × 250 bp reads, was encoded by a synonymous mutation at Arg53. The Q1E and S75A mutations in VH were determined to minimally influence affinity (Figure 1—figure supplement 1) and were excluded from all subsequent experiments to reduce the library size.
 
-## Yeast display plasmid and strains
+#### Yeast display plasmid and strains
 
 Single-chain variable format (scFv) antibody constructs were cloned via Gibson Assembly (Gibson et al., 2009) into the pCHA yeast display vector (Van Deventer et al., 2015) with a C-terminal myc epitope tag and Aga-2 fusion (Supplementary files 1 and 2). These scFv constructs were displayed on the surface of the EBY100 yeast strain (Boder and Wittrup, 1997), as described below for the yeast library production. Unless otherwise noted, yeast were cultured by rotating at 30°C and were pelleted by centrifuging at 14,000 × g (1 min) or 3000 × g (10 min).
 
-## Combinatorial Golden Gate Assembly
+#### Combinatorial Golden Gate Assembly
 
 To assemble the combinatorially complete library containing all 216 = 65,536 variants, the scFv sequence was sectioned into five fragments of roughly equal length such that each fragment contained ≤5 mutations. Primers were designed to create all possible (≤25) versions of each fragment by adding mutations, a Bsa-I cleavage site, and a 4 bp overhang unique to each fragment (Supplementary file 3). Fragments were amplified from the UCA860 sequence via PCR using Q5 Polymerase (NEB, Ipswich, MA, #M0491). The resulting fragments were purified using a 2× ratio of Aline beads (Aline Biosciences, Woburn, MA, #C-1003-5), overnight DpnI digestion at 37°C (NEB #R0176), and a second 2× ratio bead cleanup. The backbone vector was prepared by replacing the scFv sequence in the pCHA yeast display vector with a ccdb counter-selection marker. Equimolar amounts of each fragment were then pooled and assembled into the backbone vector at a 2:1 molar ratio via Golden Gate Assembly (Engler et al., 2008; NEB #R3733). The assembly mix was then transformed into electrocompetent DH10B Escherichia coli in 5 × 25 uL cell aliquots (NEB #C3020). Each cell aliquot was recovered in 1 mL outgrowth media at 37°C for 1 hr and then transferred into 100 mL of molten LB (1% tryptone, 0.5% yeast extract, 1% NaCl, 100 g/L ampicillin [VWR # V0339], 0.4% SeaPrep agarose [VWR, Radnor, PA #12001-922]) in a 500 mL baffled flask. The bacteria–agar mixture was incubated at 4°C for 3 hr to gel the agar and was then incubated at 37°C for 16 hr. Each flask contained 1–2 million colonies (5–10 million colonies across five flasks; >100 times the library diversity) and was blended by shaking at 200 rpm for 1 hr. The cells were then pelleted by spinning at 3000 × g for 10 min, and plasmid DNA was extracted using the ZymoPURE II Plasmid Midiprep Kit (Zymo Research, Irvine, CA, #D4201).
 
-## Yeast library production
+#### Yeast library production
 
 One day prior to transformation, EBY100 cells were thawed by inoculating 5 mL YPD (1% Bacto yeast extract [VWR #90000-726], 2% Bacto peptone [VWR #90000-368], 2% dextrose [VWR #90000-904]) with 150 µL glycerol stock and rocking at 30°C for 12–24 hr. The scFv plasmid library was then transformed into EBY100 cells by the lithium acetate method (Gietz and Schiestl, 2007) and transformants were recovered in 100 mL molten SDCAA (1.71 g/L YNB without amino acids and ammonium sulfate [Sigma-Aldrich, St. Louis, MO, #Y1251], 5 g/L ammonium sulfate [Sigma-Aldrich #A4418], 2% dextrose [VWR #90000-904], 5 g/L Bacto casamino acids [VWR #223050], 100 g/L ampicillin [VWR # V0339], 0.4% SeaPrep agarose [VWR #12001-922]) in 500 mL baffled flasks. The yeast–agar mixture was incubated at 4°C for 3 hr to allow the agar to set and was then incubated at 30°C for 48 hr to allow for yeast colony growth. Each flask contained ~700,000 colonies, totaling about 7 million colonies across ten flasks (>100 times the library diversity). After disrupting the agar by shaking at 200 rpm for 1 hr, the yeast library was inoculated into liquid SDCAA (1.71 g/L YNB without amino acids and ammonium sulfate [Sigma-Aldrich #Y1251], 5 g/L ammonium sulfate [Sigma-Aldrich, #A4418], 2% dextrose [VWR #90000-904], 5 g/L Bacto casamino acids [VWR #223050], 100 g/L ampicillin [VWR # V0339], 5.4 g Na2HPO4 [Sigma-Aldrich, #S7907], 8.56 g NaH2PO4.H2O [Sigma-Aldrich, #S9638]) (Chao et al., 2006) and grown for five generations to saturation before freezing at –80°C in 1 mL aliquots containing 5% glycerol.
 
-## Viral escape
+### Viral escape
 
-## Cell lines and media
+#### Cell lines and media
 
 HEK293T cells (ATCC #CRL-3216; authenticated by STR profiling and verified mycoplasma-negative by manufacturer) were passaged in DMEM (Gibco, #11965126) supplemented with 10% fetal bovine serum (Peak Serum) and Penicillin-Streptomycin (Gibco, #15140163) subsequently referred to as 'D10.' MDCK-SIAT1 cells (Sigma, #05071502; authenticated by STR profiling and verified mycoplasma-negative by manufacturer) were passaged in D10 additionally supplemented with 1 mg/ml Geneticin (Gibco, #10131035). Prior to infection, Geneticin was not included in the MDCK-SIAT1 medium. Media used to propagate influenza, referred to as 'flu media,' contain Opti-MEM (Gibco, #31985088) supplemented with 0.3% BSA (Roche, #03117332001), 0.01% FBS, and Penicillin-Streptomycin. Prior to propagation, 1 µg/mL of TPCK-trypsin (Sigma, #T1426) was freshly added to flu media.
 
-## Generation of recombinant MA90 virus
+#### Generation of recombinant MA90 virus
 
 We used a standard eight plasmid reverse genetics system (Hoffmann et al., 2000) to generate a recombinant 6:2 virus bearing the PB2, PB1, PA, NP, M, and NS genomic segments from PR8 (A/Puerto Rico/8/1934; a kind gift from Jesse Bloom), MA90 HA (GenBank: L19027), and A/Siena/10/1989 NA (GenBank: CY036825). Because the sequencing of the MA90 HA was not complete, the C-terminus was extended with that of A/Siena/10/1989 (GenBank: CY036823). In a six-well plate treated with poly-L-lysine (Sigma, #P4707), 6 × 105 HEK293T cells and 1 × 105 MDCK-SIAT1 cells were added to wells six-well plates in D10. The next day, media was aspirated from the cells and fresh, pre-warmed D10 was added on top. For each transfection, 8 µL of Trans-IT LT1 (Mirus, #2300) was added to Opti-MEM (Gibco, #31985070) containing 0.5 µg of each plasmid and incubated at room temperature for 20 min. The mixture was then added dropwise to the cells. After ~5 hr, the media was aspirated from the cells and flu media freshly supplemented with 1 µg/mL TPCK-treated trypsin was added. After 2 days, dead cells were removed from the virus-containing media by centrifugation at 800 × g for 5 min. The supernatant was then supplemented with 1 µg/mL TPCK-treated trypsin and added to a confluent monolayer of MDCK-SIAT1 cells seeded 1 day before in a six-well plate and washed once with PBS (seeded at 7 × 105 cells per well). After ~4–5 hr, the supernatant was removed, and fresh flu media supplemented with 1 µg/mL TPCK-treated trypsin was added. One day later, successful rescue was judged by observing cytopathic effect. Multiple rescue transfections were pooled and added to 10 cm dishes containing a confluent monolayer of MDCK-SIAT1 cells seeded 1 day prior (at 3 × 106 cells per dish) as detailed above. Two days later, successful propagation was judged by cytopathic effect, the supernatant was clarified by centrifugation, and aliquots were frozen at –80°C.
 
-## Escape variant generation
+#### Escape variant generation
 
 Prior to infection, MA90 virus was incubated with a low concentration of antibody (started at 0.01 µg/mL of the UCA), a higher concentration of antibody (one half-log greater than the lower concentration), or no antibody (as a control for cell line adaptation mutations) in 500 µL of flu media supplemented with 1 µg/mL TPCK-treated trypsin for 1 hr at 37°C and 5% CO2. MDCK-SIAT1 cells seeded the day before were washed with PBS and then virus–antibody mixtures were added to the monolayers and incubated for 1 hr at 37°C and 5% CO2, rocking the plate every ~15 min to ensure that the cells did not dry out. Afterward, the viral inoculum was removed, and the cells were washed with PBS before adding fresh flu media supplemented with 1 µg/mL TPCK-treated trypsin. After 2 days, viral growth was judged by cytopathic effect. The well that grew with a higher concentration of antibody was selected for the next passage where the 'low' antibody concentration was the same as the previous passage and the 'high' concentration was a half-log higher. This process was repeated until viral growth was readily detectable at 100 µg/mL of the UCA. If necessary, a hemagglutination assay using turkey red blood cells (Lampire, #7249409) was run to determine whether virus was present. Briefly, twofold dilutions of the virus in PBS were mixed with 0.5% turkey red blood cells and incubated at room temperature for at least 30–45 min before visualization of red blood cell pellets to determine whether virus had grown significantly. Once the virus still grew in 100 µg/mL of the antibody, the virus was passaged one additional time and 100 µg/mL of antibody was additionally added to the media added after infection. The RNA from the escaped virus was isolated using a QIAamp viral RNA mini kit (QIAGEN, #52904), and the full-length HA was amplified using gene-specific primers and the OneStep RT-PCR kit (QIAGEN, #210212). The resulting PCR product was sequenced by Sanger sequencing (Genewiz). The mutation G189E was identified from the sequencing results and produced as a recombinant protein for subsequent experiments (see below).
 
-## Antigen and IgG production
+### Antigen and IgG production
 
-## Choice of HA antigens
+#### Choice of HA antigens
 
 Antibodies CH65, CH66, and CH67 were isolated from plasmablasts from donor TIV01 (Moody et al., 2011) after receiving the trivalent influenza vaccine in the 2007–2008 influenza season, which contained the A/Solomon Islands/3/2006 (SI06) H1N1 strain. The donor TIV01 was born in ~1990 and subsequent work identified that the inferred UCA of this lineage bound to the strain A/Massachusetts/1/1990 (MA90) circulating near the donor’s birth date and is suspected to be highly similar to the original immunogenic stimulus of this lineage (Schmidt et al., 2015a). However, the UCA did not bind SI06, which escaped the UCA and I-2 of this lineage (Schmidt et al., 2015a). To assess whether affinity maturation in this lineage is capable of accommodating for an escape mutation that abrogates binding to less mature variants, we drove viral escape from MA90 in vitro (see above) using the UCA and identified that matured variants of this lineage (e.g., CH65 and CH67) bound the escape variant (MA90-G189E) with high affinity. To understand how this antibody lineage evolved to compensate for viral escape mutations, we included MA90-G189E and SI06 in addition to MA90.
 
-## Recombinant protein cloning, expression, and purification
+#### Recombinant protein cloning, expression, and purification
 
 Variable heavy and light chains were synthesized as eBlocks (IDT). Full-length, codon-optimized HAs (A/Massachusetts/1/1990 – MA90 [Supplementary file 5], MA90-G189E [Supplementary file 6], and A/Solomon Islands/03/2006 – SI06 [Supplementary file 7]) and full-length human IgG1 heavy and light chains were cloned into a pVRC expression vector containing a C-terminal HRV 3C cleavage site, His tag, FoldOn trimerization domain, and AviTag for HAs and a HRV 3C cleavage site followed by a C-terminal His tag for antibody heavy chains. Recombinant proteins were produced in Expi293F cells (Gibco, #A14527; authenticated by STR profiling and verified mycoplasma-negative by the manufacturer) following the manufacturer’s directions. The trimeric HAs were purified from the supernatant using TALON metal affinity resin (Takara, #635653), washing with PBS, and eluting with PBS containing 200 mM imidazole (pH 7.4). After concentration, proteins were further purified over an S200 column on an AKTA pure (Cytiva). For yeast surface display assays, the HAs were further biotinylated and flash-frozen in liquid nitrogen (see below). For kinetics measurements, the HAs were used within 2 weeks of production and never frozen.
 
-## HA biotinylation
+#### HA biotinylation
 
 Biotinylation of the HAs was performed using the BirA500 kit (Avidity) following the manufacturer’s instructions. To compensate for the reduced activity in PBS, twice the amount of BirA was added and the reaction was additionally supplied with twice the amount of biotin using the supplied BIO-200. The biotinylation reaction was allowed to proceed for 1.5 hr at 30°C before 0.2 µm filtering and purification over an S200 column (Cytiva). The trimeric HAs were then concentrated and flash-frozen in liquid nitrogen for single-use aliquots. Biotinylated HAs were quality controlled by a gel shift assay. Approximately 2 µg of biotinylated HA was heated in non-reducing Laemmli buffer (Bio-Rad, #1610737) at 95°C for 5 min. Once cooled to room temperature, excess streptavidin was added and allowed to incubate for at least 5 min. As a control, samples were run with PBS added rather than streptavidin. The mixture was then run on a Mini-PROTEAN TGX Stain-Free gel (Bio-Rad, #4568096) and imaged. All biotinylated HAs shifted in the presence of streptavidin, indicating successful biotinylation.
 
-## Tite-Seq assays
+### Tite-Seq assays
 
 Tite-Seq assays were performed in biological duplicate (on different days) for each antigen, as previously described (Phillips et al., 2021; Adams et al., 2016) with some modifications described below.
 
-## Induction of antibody expression
+#### Induction of antibody expression
 
 On day 1, the yeast CH65 library and isogenic strains containing the pCHA-UCA860 or pCHA-CH65 plasmids were thawed by inoculating 5 mL SDCAA with 150 µL glycerol stock and rotating at 30°C for 24 hr. On day 2, yeast cultures were back-diluted to OD600 = 0.2 in 5 mL SDCAA and rotated at 30°C until they reached an OD600 = 0.4–0.6 (about 4 hr). Subsequently, 1.5 mL of these log-phase cultures were pelleted, resuspended in 4 mL SGDCAA (1.71 g/L YNB without amino acids and ammonium sulfate [Sigma-Aldrich #Y1251], 5 g/L ammonium sulfate [Sigma-Aldrich, #A4418], 1.8% galactose [Sigma-Aldrich #G0625], 0.2% dextrose [VWR #90000-904], 5 g/L Bacto casamino acids [VWR #223050], 100 g/L ampicillin [VWR # V0339], 5.4 g Na2HPO4 [Sigma-Aldrich, #S7907], 8.56 g NaH2PO4.H2O [Sigma-Aldrich, #S9638]) (Chao et al., 2006), and rotated at room temperature for 20–22 hr.
 
-## Primary antigen labeling
+#### Primary antigen labeling
 
 On day 3, following induction of scFv expression, cultures were pelleted, washed twice with cold 0.1% PBSA (VWR #45001-130, GoldBio, St. Louis, MO, #A-420-50), and resuspended to an OD600 of 1. For each concentration of antigen (0.75-log increments spanning 1 µM to 1 pM), 700 µL of the CH65 yeast library (OD600 = 1) were incubated with biotinylated HA by rocking at 4°C for 24 hr. Notably, the volume of each antigen concentration was adjusted such that the number of antigen molecules exceeded that of antibody molecules by at least tenfold (assuming 50,000 scFv/cell) (Boder and Wittrup, 1997).
 
-## Secondary fluorophore labeling
+#### Secondary fluorophore labeling
 
 On day 4, yeast-HA complexes were pelleted at 4°C and washed twice with 5% PBSA + 2 mM EDTA. Complexes were then incubated with Streptavidin-RPE (1:100, Thermo Fisher Scientific, Waltham, MA, #S866) and anti-cMyc-FITC (1:50, Miltenyi Biotec, Somerville, MA, #130-116-485) at 4°C for 45 min in the dark. Following incubation, complexes were washed twice with 5% PBSA + 2 mM EDTA and stored on ice in the dark until sorting.
 
-## Sorting
+#### Sorting
 
 Yeast-HA complexes were sorted on a BD FACS Aria Illu equipped with an 85 micron fixed nozzle and 405 nm, 440 nm, 488 nm, 561 nm, and 635 nm lasers. Single-color controls were used to compensate for minimal overlap between the FITC and PE channels. For all sorts, single cells were gated by FSC vs SSC, and the resulting population was sorted either by expression (FITC) or HA binding (PE). For the expression sort, ~1.6 million (~20× library diversity) single cells were sorted into four gates of equal width spanning the FITC-A axis. For the HA binding sort, ~1.6 million scFv-expressing cells were sorted into four gates spanning the PE-A axis, with one gate capturing all PE-negative cells, and the remaining three each capturing 33% of the PE-positive cells (Figure 1—figure supplement 2). All cells were sorted into 5 mL polypropylene tubes containing 1 mL of 2× SDCAA supplemented with 1% BSA and were stored on ice until recovery.
 
-## Recovery and plasmid extraction
+#### Recovery and plasmid extraction
 
 Following sorting, yeast were pelleted by spinning at 3000 × g for 10 min at 4°C. Supernatant was carefully removed by pipette, and the resulting pellet was resuspended in 4 mL SDCAA and transferred to a glass culture tube. A small amount of this resuspension (targeting 200–500 cells, based on sorting counts) was plated on SDCAA-agar and YPD-agar to quantify recovery efficiency and plasmid loss. Cultures were then rocked at 30°C until reaching OD600 = 0.8–2.
 
 After reaching the target OD600, 1.5 mL yeast culture was pelleted and frozen at –80°C for at least an hour. Plasmid was then extracted using the Zymo Yeast Plasmid Miniprep II kit (Zymo Research #D2004) following the manufacturer’s instructions, except for the following changes: 5 µL zymolyase was used per sample, zymolyase incubations were 2–3 hr, precipitate following neutralization was removed by centrifugation at 21,000 × g for 10 min, columns were washed using 650 µL wash buffer and dried by spinning at 16,000 × g for 3 min, and plasmid was eluted in 15 µL elution buffer.
 
-## Sequencing library preparation
+#### Sequencing library preparation
 
 ScFv amplicon sequencing libraries were then prepared by a two-step PCR as previously described (Nguyen Ba et al., 2019). The first PCR appended unique molecular identifiers (UMI), sample-specific inline indices, and a partial Illumina adapter to the scFv sequence, and was performed for five cycles to minimize PCR amplification bias. The second PCR appended the remainder of the Illumina adapter and sample-specific Illumina i5 and i7 indices, and was performed for 35 cycles to produce a sufficient amount of each amplicon library (primer sequences in Supplementary file 4). The first PCR used 5 µL plasmid DNA as template for a 20 µL reaction using Q5 polymerase according to the manufacturer’s instructions with the following cycling program: (1) 60 s at 98°C, (2) 10 s at 98°C, (3) 30 s at 67°C, (4) 60 s at 72°C, (5) GOTO 2, 4×, and (6) 60 s at 72°C. The product from PCR 1 was then brought up to 40 µL with MBG water, purified using Aline beads at a ratio of 1.2×, and eluted in 35 µL elution buffer. 33 µL of this elution was used as template for the second PCR, which was a 50 µL reaction using Kapa polymerase (Kapa Biosystems, Wilmington, MA, #K2502) as per the manufacturer’s instructions and the following cycling program: (1) 30 s at 98°C, (2) 20 s at 98°C, (3) 30 s at 62°C, (4) 30 s at 72°C, (5) GOTO 2, 34×, and (6) 300 s at 72°C. The resulting amplicons were purified using Aline beads at a ratio of 0.85×, and DNA concentration was determined using a fluorescent DNA-binding dye (Biotum, Fremont, CA, #31068) as per the manufacturer’s instructions. Amplicons were then pooled amongst the four bins for each concentration, based on the number of cells sorted into each gate, and then equimolar amounts of the resulting pools were combined to make the final pooled library. Prior to sequencing, the pool concentration was determined by Qubit and the size verified by Tapestation HS DNA 5000 and 1000. The pool was then sequenced on a NovaSeq SP (2x250 paired-end reads) with 10% PhiX spike-in; 2–4 curves were loaded onto a single flow cell to sequence each variant at at least 100× coverage.
 
-## Sequencing data processing
+#### Sequencing data processing
 
 Demultiplexed sequencing reads were parsed using a Snakemake pipeline as previously described (Moulana et al., 2022) (see github.com/amphilli/CH65-comblib for parameters). Briefly, UMI, inline indices, and genotypes were extracted from each read using (Friedl, 2009). Reads with incorrectly paired inline indices or unexpected mutations at the CH65 mutation sites were discarded. In all other regions of the read, all reads exceeding a 10% error rate were discarded. Following this filtering, reads were deduplicated by UMI to generate unique counts files for each sample.
 
-## Tite-Seq KD inference
+### Tite-Seq KD inference
 
-## Mean-bin approach
+#### Mean-bin approach
 
-To fit the dissociation constant (KD) for each variant in the library, we followed the same method as previously described (Phillips et al., 2021). Briefly, we use the sequencing counts and flow cytometry data to infer the mean log-fluorescence of each genotype s at each concentration c:F̄s,c = ∑bFb,c pb,s|c
+To fit the dissociation constant (KD) for each variant in the library, we followed the same method as previously described (Phillips et al., 2021). Briefly, we use the sequencing counts and flow cytometry data to infer the mean log-fluorescence of each genotype s at each concentration c:
 
-where Fb,c is the mean log-fluorescence of bin b at concentration c, and pb,s|c is the proportion of cells with genotype s sorted into bin b at concentration c, and is given by:pb,s|c=Rb,s,c∑sRb,s,cCb,c∑bRb,s,c∑sRb,s,cCb,c
+$$
+F̄_{s,c} = \sum_{b}F_{b,c} p_{b,s|c}
+$$
+
+where Fb,c is the mean log-fluorescence of bin b at concentration c, and pb,s|c is the proportion of cells with genotype s sorted into bin b at concentration c, and is given by:
+
+$$
+p_{b,s|c}=\frac{\frac{R_{b,s,c}}{\sum_{s}R_{b,s,c}}C_{b,c}}{\sum_{b}\frac{R_{b,s,c}}{\sum_{s}R_{b,s,c}}C_{b,c}}
+$$
 
 where Rb,s,c is the number of reads with genotype s found in bin b at concentration c, and cb,c is the number of cells sorted into bin b at concentration c.
 
-Uncertainty is then propagated in these mean bin estimate as:δF̄s,c =∑b( δFb,c2 pb,s|c2+ Fb,c2δpb,s|c2)
+Uncertainty is then propagated in these mean bin estimate as:
 
-where δFb,c is the standard deviation of log-fluorescence for cells sorted into bin b at concentration c. This is approximated by σFb,c and the error in pb,s|c results from sampling error, which is approximated as a Poisson process at sufficient sequencing coverage, yielding:δpb,s|c=pb,s|cRb,s,c
+$$
+\deltaF̄_{s,c} =\sqrt{\sum_{b}( \deltaF_{b,c}^{2} p_{b,s|c}^{2}+ F_{b,c}^{2}\deltap_{b,s|c}^{2})}
+$$
 
-The dissociation constant, KD,s, was inferred for each genotype by fitting the logarithm of the Hill function to the mean log-fluorescence:F̄s,c=log10⁡cc+KD,sAs+Bs
+where $\deltaF_{b,c}$ is the standard deviation of log-fluorescence for cells sorted into bin b at concentration c. This is approximated by $\sigmaF_{b,c}$ and the error in pb,s|c results from sampling error, which is approximated as a Poisson process at sufficient sequencing coverage, yielding:
+
+$$
+\deltap_{b,s|c}=\frac{p_{b,s|c}}{\sqrt{R_{b,s,c}}}
+$$
+
+The dissociation constant, KD,s, was inferred for each genotype by fitting the logarithm of the Hill function to the mean log-fluorescence:
+
+$$
+F̄_{s,c}=log_{10}⁡\frac{c}{c+K_{D,s}}A_{s}+B_{s}_{ }
+$$
 
 where As is the increase in fluorescence at antigen saturation and Bs is the background fluorescence in the absence of antigen. The fit was performed using the Python package scipy.optimize curve_fit function using the following boundary conditions: As (102 – 106), Bs (1 – 105), KD,s (10–14 – 10–5).
 
-## Data quality and filtering
+#### Data quality and filtering
 
 Following the KD,s inference, non-binding sequences with KD,s<6 or As – Bs <1 were pinned to the titration boundary with -logKD,s = 6. Subsequently, KD,s values resulting from poor fits (r2 < 0.8, σ > 1) were removed from the dataset, KD,s were averaged across biological replicates, and KD,s with large SEM (>0.5 log units) were excluded from subsequent analyses. This filtering retained 65,530, 63,840, and 64,619 genotypes for the MA90, G189E, and SI06 Tite-Seq experiments, respectively (Figure 1—source data 1).
 
-## Expression data
+#### Expression data
 
 Sequencing reads corresponding to the expression sort were handled identically to those from the HA binding sort, and the mean log-fluorescence was inferred as detailed above. Day-to-day variation in fluorophore labeling and detection were accounted for by normalizing mean log-fluorescence values by the average mean log-fluorescence of the corresponding biological replicate (Figure 1—source data 1).
 
-## Force-directed layouts
+#### Force-directed layouts
 
-To reduce the dimensionality of the sequence-affinity landscape, we implemented a force-directed layout, as previously described (Phillips et al., 2021). In these graphs, each variant sequence is represented by a node, and variants related by a single mutation are connected by an edge. Edge weights between nodes s and t are weighted by the change in binding affinity resulting from the corresponding mutation:ws,t= 10.01+log10⁡KD,s-log10⁡KD,t
+To reduce the dimensionality of the sequence-affinity landscape, we implemented a force-directed layout, as previously described (Phillips et al., 2021). In these graphs, each variant sequence is represented by a node, and variants related by a single mutation are connected by an edge. Edge weights between nodes s and t are weighted by the change in binding affinity resulting from the corresponding mutation:
+
+$$
+w_{s,t}= \frac{1}{0.01+log_{10}⁡K_{D,s}-log_{10}⁡K_{D,t}}
+$$
 
 To construct the force-directed layout, we use KD,s to MA90 to compute the weights. If a mutation from sequence s to t does not impact KD,s, those nodes will be close together, and vice versa. The layout coordinates for each variant were obtained using the Python package iGraph function layout_drl, and each node is associated with the corresponding KD,s to SI06 and G189E, as well as the mean expression. An interactive form of this graph is available as an online data browser at https://ch65-ma90-browser.netlify.app/.
 
-## Epistasis analysis
+### Epistasis analysis
 
-## Linear interaction models
+#### Linear interaction models
 
-We infer epistatic coefficients as previously described (Phillips et al., 2021). Briefly, we implement linear models to infer specific mutational effects and interactions that sum to the observed log-transformed binding affinities, -log(KD,s), which are proportional to free energy changes and hence expected to be additive (Wells, 1990; Olson et al., 2014). This additive model is given by:ys= β0+ ∑i=1Lβixi,s+ ε
+We infer epistatic coefficients as previously described (Phillips et al., 2021). Briefly, we implement linear models to infer specific mutational effects and interactions that sum to the observed log-transformed binding affinities, -log(KD,s), which are proportional to free energy changes and hence expected to be additive (Wells, 1990; Olson et al., 2014). This additive model is given by:
 
-where L is the number of mutations in CH65 (i.e., 16), β0 is an intercept, β i is the effect of mutation at site, i, xi,s is the genotype of variant s at site i, and ε represents independently and identically distributed errors. Our general epistatic model is thus given byys= β0+ ∑iβixi,s +∑i<jLβijxi,sxj,s +∑i<j<kLβijkxi,sxj,sxk,s + … + ε
+$$
+y_{s}= \beta_{0}+ \sumi=1L\beta_{i}x_{i,s}+ \epsilon
+$$
+
+where L is the number of mutations in CH65 (i.e., 16), β0 is an intercept, β i is the effect of mutation at site, i, xi,s is the genotype of variant s at site i, and ε represents independently and identically distributed errors. Our general epistatic model is thus given by
+
+$$
+y_{s}= \beta_{0}+ \sumi\beta_{i}x_{i,s} +\sumi<jL\beta_{ij}x_{i,s}x_{j,s} +\sumi<j<kL\beta_{ijk}x_{i,s}x_{j,s}x_{k,s} + … + \epsilon
+$$
 
 where βij are second-order interaction coefficients between sites i and j, βijk are third-order interaction coefficients between sites i, j, and k, and so on, up to a specified maximum order of interaction.
 
@@ -237,60 +524,92 @@ For both biochemical and statistical models, we take a conservative approach to 
 
 Practically, we perform this inference using the Python package stats models using ordinary least-squares regression. This yields the coefficient values and associated standard errors and 95% confidence intervals (Figure 3—source data 1); coefficients with 95% confidence intervals that do not cross zero are considered significant and are plotted in Figure 3 and Figure 3—figure supplements 2–3. For the SI06 data, we exclude N52H from the epistasis inference and perform the analysis on the remaining 15 mutations as >90% of sequences with any detectable binding affinity include mutation N52H and thus we do not have power to infer the effect of this mutation. In the statistical epistasis inference, the coefficients at different orders are statistically independent and so we partition the variance explained by the model for each interaction order (Figure 3—figure supplement 6).
 
-## Structural analysis of epistasis
+#### Structural analysis of epistasis
 
 To examine the structural context of the first-order and pairwise coefficients from the biochemical epistasis model, we performed two analyses using the co-crystal structure of CH65 with full-length Influenza A/Solomon Islands/3/2006 HA (PDB 5UGY; Whittle et al., 2011). First, we used ChimeraX (Pettersen et al., 2021) to compute the buried surface area between each mutation in CH65 and HA using the measure buriedarea function and the default probeRadius of 1.4 Angstroms. This area is plotted as the ‘HA contact surface area’ in Figure 3. We perform the same computation between each mutation in CH65 and the HCDR3, and plot this as the ‘CDR3 contact surface area’ in Figure 3. Second, we used PyMol (The PyMOL Molecular Graphics System, version 2.0 Schrödinger, LLC) to compute the distance between alpha-carbons, and plot this as a function of the pairwise interaction terms in Figure 3—figure supplement 1.
 
-## Pathway analysis
+### Pathway analysis
 
-## Selection models
+#### Selection models
 
-To assess the likelihood of mutational pathways from UCA860 to CH65, we assume a moderate selection model in the weak-mutation strong-selection regime as previously described (Phillips et al., 2021). Briefly, in this model, mutations fix independently of each other, and mutations are favored if they improve affinity, though both neutral and deleterious mutations are allowed. We use this model to compute the fixation probability of a mutation from sequence s to t (Kuraoka et al., 2016Kimura, 1962). This fixation probability is then used to compute the transition probability of the corresponding mutational step:pstepσ,N= 1- e-σ1- e-Nσ
+To assess the likelihood of mutational pathways from UCA860 to CH65, we assume a moderate selection model in the weak-mutation strong-selection regime as previously described (Phillips et al., 2021). Briefly, in this model, mutations fix independently of each other, and mutations are favored if they improve affinity, though both neutral and deleterious mutations are allowed. We use this model to compute the fixation probability of a mutation from sequence s to t (Kuraoka et al., 2016Kimura, 1962). This fixation probability is then used to compute the transition probability of the corresponding mutational step:
 
-We define the selection coefficient σ to be proportional to the difference in -logKD for a particular antigen between sequences s and t:σ=γΔs,tag= γ(-log10⁡KD,tag-(-log10⁡KD,sag))
+$$
+p_{step}\sigma,N= \frac{1- e^{-\sigma}}{1- e^{-N\sigma}}
+$$
 
-where N is the effective population size and γ corresponds to the strength of selection. For the moderate selection model applied here, we use N = 1000 and γ = 1. Additionally, to compute the total number of mutational paths that improve in affinity at each step, we use N → infinity and γ → infinity such that pstep = 1 if the mutation improves affinity and pstep = 0 otherwise. These fixation probabilities are then used to compute the transition probability for all sequences s,t over all antigens ag:Ps,tag={pstep(Δs,tag, γ, N),  if t has one more mutation than s0,  otherwise
+We define the selection coefficient σ to be proportional to the difference in -logKD for a particular antigen between sequences s and t:
 
-## Antigen selection scenario likelihood and mutation probabilities
+$$
+\sigma=\gammaΔ_{s,t}^{ag}= \gamma(-log_{10}⁡K_{D,t}^{ag}-(-log_{10}⁡K_{D,s}^{ag}))
+$$
 
-The transition probabilities described above were used to compute the total probability for a set of possible antigen selection scenarios, and for select antigen selection scenarios, the probability of each mutation occurring at a specific order (Figure 5). This was performed as previously described (Phillips et al., 2021), where the probabilities Ps,tag are stored as sparse transition matrices P ag of dimension 2N × 2N for each antigen, where entries are nonzero when sequence t has one more mutation than sequence s. To evaluate the total probability for a given antigen selection scenario, we compute the matrix product for all mutational steps i under a specific sequence of antigen selection contexts ag1, …, agL:Ρtot= ∑paths∏stepsPstep= ∏i=1LPagisg,ss
+where N is the effective population size and γ corresponds to the strength of selection. For the moderate selection model applied here, we use N = 1000 and γ = 1. Additionally, to compute the total number of mutational paths that improve in affinity at each step, we use N → infinity and γ → infinity such that pstep = 1 if the mutation improves affinity and pstep = 0 otherwise. These fixation probabilities are then used to compute the transition probability for all sequences s,t over all antigens ag:
+
+$$
+P_{s,t}^{ag}={p_{step}(Δ_{s,t}^{ag}, \gamma, N),  if t has one more mutation than s0,  otherwise
+$$
+
+#### Antigen selection scenario likelihood and mutation probabilities
+
+The transition probabilities described above were used to compute the total probability for a set of possible antigen selection scenarios, and for select antigen selection scenarios, the probability of each mutation occurring at a specific order (Figure 5). This was performed as previously described (Phillips et al., 2021), where the probabilities $P_{s,t}^{ag}$ are stored as sparse transition matrices $P_{ }^{ag}$ of dimension 2N × 2N for each antigen, where entries are nonzero when sequence t has one more mutation than sequence s. To evaluate the total probability for a given antigen selection scenario, we compute the matrix product for all mutational steps i under a specific sequence of antigen selection contexts ag1, …, agL:
+
+$$
+Ρ_{tot}= \sumpaths\prodstepsP_{step}= \prodi=1LP^{ag_{i}}_{s_{g},s_{s}}
+$$
 
 where [.]s,s’ represents the matrix element in the row corresponding to genotype s and the column corresponding to genotype s’. Notably, transition probabilities are not normalized at each step. Thus, many pathways will not reach the somatic CH65 sequence and the likelihood assesses the probability of reaching the CH65 somatic sequence.
 
 Here, we consider three classes of antigen selection scenarios. The simplest is a single-antigen selection scenario, in which all steps i use the same antigen. Second, we consider selection scenarios where steps can use different antigens in a non-repetitive manner. Finally, we consider a scenario that approximates exposure to a mixture of antigens (Wang et al., 2015; Wang, 2017; Kuraoka et al., 2016), in which an antigen is drawn at random for each mutational step i. We then calculate Ptot for 1000 randomly drawn scenarios, report the average log probability, and illustrate mutational paths and orders for a scenario near the median probability from the 1000 draws. For all antigen selection scenarios, the error of Ptot is estimated by resampling the binding affinity from a normal distribution corresponding to its value and standard deviation. We perform this bootstrapping over 10 iterations and report Ptot as the average.
 
-To identify the most likely paths under a given selection scenario (as plotted in Figure 5B), we construct a directed graph, where each sequence s is a node, and edges connect nodes s and t that are separated by one mutation. The edge weights are calculated from the transition probability, ws→t= -log⁡Ps,tag+ϵ. In this framework, we can use the shortest_simple_paths function in Python package networkx (Hagberg et al., 2022) to compute the most likely paths.
+To identify the most likely paths under a given selection scenario (as plotted in Figure 5B), we construct a directed graph, where each sequence s is a node, and edges connect nodes s and t that are separated by one mutation. The edge weights are calculated from the transition probability, $w_{s→t}= -log⁡P_{s,t}^{ag}+ϵ.$ In this framework, we can use the shortest_simple_paths function in Python package networkx (Hagberg et al., 2022) to compute the most likely paths.
 
-To calculate the probability that a mutation at site m happened at a specific step j, we normalize the transition matrix (i.e., all paths must reach the somatic CH65 sequence) for a given antigen selection context:P~s,tag= Ps,tag × ∑tPs,tag-1
+To calculate the probability that a mutation at site m happened at a specific step j, we normalize the transition matrix (i.e., all paths must reach the somatic CH65 sequence) for a given antigen selection context:
 
-For Ps,tag≠ 0 and 0 otherwise. The total relative probability for that site mutating at a specific step under an antigen exposure scenario is given byΡj,α= ∏i=1j-1P~agi ∙ P~αagj ∙ ∏i=j+1LP~agisg, ss
+$$
+P~_{s,t}^{ag}= P_{s,t}^{ag} \times \sumtP_{s,t}^{ag}^{-1}
+$$
 
-Finally, to determine the total probability of each variant (Figure 5—figure supplement 2), which is given by the sum of the probabilities of all paths passing through that variant in a specific antigen selection scenario:Ρs= ∏i=1jP~agisg, s∙∏i=j+1LP~agis,ss
+For $P_{s,t}^{ag}\neq$ 0 and 0 otherwise. The total relative probability for that site mutating at a specific step under an antigen exposure scenario is given by
 
-where j is the number of somatic mutations in variant s, the first term is the probability of reaching sequence s at mutational step j, and the second term is the probability of reaching the CH65 sequence after passing through sequence s. We perform an additional normalization, Ρs`= Ρs × nj , so that variants with different numbers of mutations can be compared. Ρs` is thus the probability of a specific variant in the selective model compared to a neutral model (e.g., sequences with log(Ρs`) > 0 are favored).
+$$
+Ρ_{j,\alpha}= \prodi=1j-1P~^{ag_{i}} ∙ P~_{\alpha}^{ag_{j}} ∙ \prodi=j+1LP~^{ag_{i}}_{s_{g}, s_{s}}
+$$
 
-## Isogenic KD measurements
+Finally, to determine the total probability of each variant (Figure 5—figure supplement 2), which is given by the sum of the probabilities of all paths passing through that variant in a specific antigen selection scenario:
+
+$$
+Ρ_{s}= \prodi=1jP~^{ag_{i}}_{s_{g}, s}∙\prodi=j+1LP~^{ag_{i}}_{s,s_{s}}
+$$
+
+where j is the number of somatic mutations in variant s, the first term is the probability of reaching sequence s at mutational step j, and the second term is the probability of reaching the CH65 sequence after passing through sequence s. We perform an additional normalization, $Ρ_{s}^{`}= Ρ_{s} \times n_{j}$ , so that variants with different numbers of mutations can be compared. $Ρ_{s}^{`}$ is thus the probability of a specific variant in the selective model compared to a neutral model (e.g., sequences with log($Ρ_{s}^{`}$) > 0 are favored).
+
+### Isogenic KD measurements
 
 To validate KD measurements made using Tite-Seq, we generated isogenic yeast strains encoding select variants in the CH65 scFv library and measured their affinity to HA using analytical flow cytometry. These variants were constructed by the same Golden Gate strategy used above for the library, but by pooling one version of each fragment rather than all versions of each fragment. The assembled plasmid was sequence-verified via Sanger, transformed into the EBY100 yeast strain, plated on SDCAA-agar, and incubated at 30°C for 48 hr. Single colonies were then restruck onto SDCAA-agar and grown for an additional 48 hr at 30°C for further selection. These restruck colonies were verified to contain the scFv plasmid by colony PCR. Verified colonies were then grown in 5 mL SDCAA with rotation at 30°C for 24 hr; strains were stored by freezing saturated cultures with 5% glycerol at –80°C.
 
-To measure KD, yeast strains were thawed and scFv were induced, incubated with HA antigen, and labeled with fluorophores as described above for the Tite-Seq assay, except yeast cell and antigen volumes were scaled down by a factor of 10. Yeast cell FITC and R-PE fluorescence intensity were then assayed on a BD LSR Fortessa equipped with four lasers (440, 488, 561, and 633 nm), sampling at least 10,000 events per concentration. The equilibrium dissociation constant, KD, were then inferred for each variant s by fitting the logarithm of a Hill function to the mean log R-PE fluorescence for the scFv-expression (FITC-positive) single yeast cells:mean log fluorescence = log10⁡Ascc+ KD,s+ Bs
+To measure KD, yeast strains were thawed and scFv were induced, incubated with HA antigen, and labeled with fluorophores as described above for the Tite-Seq assay, except yeast cell and antigen volumes were scaled down by a factor of 10. Yeast cell FITC and R-PE fluorescence intensity were then assayed on a BD LSR Fortessa equipped with four lasers (440, 488, 561, and 633 nm), sampling at least 10,000 events per concentration. The equilibrium dissociation constant, KD, were then inferred for each variant s by fitting the logarithm of a Hill function to the mean log R-PE fluorescence for the scFv-expression (FITC-positive) single yeast cells:
+
+$$
+mean log fluorescence = log_{10}⁡A_{s}\frac{c}{c+ K_{D,s}}+ B_{s}
+$$
 
 where c is the molarity of antigen, As is the increase in fluorescence due to saturation with antigen, and Bs is the background fluorescence. All isogenic KD measurements were made in 2–3 biological replicates (Figure 1—source data 2, Figure 1—figure supplement 3).
 
-## Fab structural characterization
+### Fab structural characterization
 
-## Fab production and purification
+#### Fab production and purification
 
 Antigen binding fragments were cloned and produced in Expi293F cells as above, except the variable heavy chain was cloned into a pVRC expression vector containing the CH1 domain followed by a HRV 3C cleavate site and a 6X His tag. Fabs were purified by cobalt chromatography (Takara) and further purified over an S200 column on an AKTA pure (Cytiva). To the purified Fabs, 1.2 μL HRV 3C protease (Thermo Scientific, #88947) per 200 μg of Fab was added and incubated overnight at 4°C on a roller. The next day, the cleaved Fab was passed over cobalt resin and purified again over an S200 column in 10 mM Tris HCl, 150 mM NaCl, pH 7.5. The resulting Fabs were concentrated to ~15 mg/mL prior to crystallization.
 
-## Fab crystallization
+#### Fab crystallization
 
 Fabs were crystallized by the hanging drop method. Crystals of unbound UCA Fab with the Y35N (LC) mutation and unbound I-2 Fab with H35N (HC) and Y35N (LC) mutations were grown over solutions of 0.1 M succinic acid (pH 7), 0.1 M bicine (pH 8.5), and 30% polyethylene glycol monomethyl ether 550 or 0.8 M lithium sulfate monohydrate, 0.1 M sodium acetate trihydrate (pH 4), and 4% polyethylene glycol 200 (Hampton Research, #HR2-084), respectively, in a 96-well plate (Greiner, #655101) with ViewDrop II plate seals (sptlabtech, #4150-05600). Crystals were apparent after ~5–7 days. Then, 1 μL of 12% (+/-)-2-methyl-2,4-pentanediol (MPD) in the corresponding solution was added for cryoprotection. The crystals were then harvested and flash-cooled in liquid nitrogen.
 
-## Fab structure determination
+#### Fab structure determination
 
 X-ray diffraction data was collected at the Advanced Photon Source using beam line 24-ID-E. Diffraction data was processed using XDSGUI (https://strucbio.biologie.uni-konstanz.de/xdswiki/index.php/XDSGUI). Both Fabs reported here were solved by molecular replacement using PHASER in the PHENIX-MR GUI (Adams et al., 2002; McCoy et al., 2007) by searching with the UCA Fab (PDB: 4HK0) (Schmidt et al., 2013) with the HCDR3 deleted and separated into the VH, VL, CH, and CL domains. Refinement was performed in PHENIX (Adams et al., 2002) by refining the coordinates and B factors before model building (i.e., the HCDR3) in COOT (Emsley et al., 2010). Additional placement of waters and Translation Libration Screw (TLS) refinement followed. The UCA with Y35N Fab showed density for the HCDR3, which was built, but this loop exhibited large B factors (Figure 4—figure supplement 1). The I-2 with H35N and Y35N Fab showed no clear density for the HCDR3 or the LCDR2 so these were removed from the structure. The resulting structures were validated using MolProbity (Chen et al., 2010) prior to deposition at the Protein Data Bank (8EK6 and 8EKH).
 
-## Antibody-antigen binding kinetics measurements
+### Antibody-antigen binding kinetics measurements
 
 Kinetics measurements were acquired on an Octet RED96e (Sartorius). To mimic the interaction between yeast-displayed scFv and trimeric HA, IgG was loaded onto Anti-Human Fc Capture (AHC) biosensors (Sartorius, #18-5060). To reduce the avidity effect, IgGs were loaded to a density of ~0.1 nm using a solution of 10 nM of IgG. All binding measurements were obtained in 'kinetics' buffer: PBS supplemented with 0.1% BSA and 0.01% Tween20. Binding measurements were acquired as follows with shaking at 1000 rpm – baseline: 60 s; loading: 30 s with threshold at 0.1 nm; baseline: 60 s; association: 360 s; dissociation: 600 s. Tips were regenerated a maximum of four times by alternating between 10 mM glycine (pH 1.7) and kinetics buffer three times with 10 s in each buffer. Kinetics measurements were obtained at four temperatures for each antibody: 20, 25, 30, and 35°C. Kinetics measurements for the UCA, I-2, and CH65 were also acquired at 40°C. Prior to each measurement, the plate was allowed to equilibrate to the set temperature for 20 min. Each full-length, trimeric HA (MA90, MA90-G189E, and SI06) was assayed at six concentrations: 500, 250, 125, 62.5, 31.25, and 15.625 nM. For each antibody against each HA, antibody assayed with buffer only was used as a reference for subtraction. Additionally, each run contained an irrelevant IgG (CR3022) at the highest HA concentration (500 nM) to detect any nonspecific interaction, which was at background level. To account for the multivalency of the analyte (trimeric HA), the bivalent analyte model was used for global curve fitting in the Sartorius Data Analysis HT software version 12.0.2.59.

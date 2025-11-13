@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/019whta54 Department of Ecology and Evolution, University of Lausanne Lausanne Switzerland
-2. https://ror.org/04d8ztx87 Agroecology and Environment, Agroscope Zurich Switzerland
-3. https://ror.org/03mcsbr76 Swiss Ornithological Institute Sempach Switzerland
-4. https://ror.org/012a77v79 Department of Biology, Lund University Lund Sweden
+1. Department of Ecology and Evolution, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
+2. Agroecology and Environment, Agroscope Zurich Switzerland ([ROR:04d8ztx87](https://ror.org/04d8ztx87))
+3. Swiss Ornithological Institute Sempach Switzerland ([ROR:03mcsbr76](https://ror.org/03mcsbr76))
+4. Department of Biology, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
 5. Les Ailes de l’Urga Marcilly-la-Campagne France
-6. https://ror.org/053fq8t95 Department of Biosciences, Swansea University Swansea United Kingdom
+6. Department of Biosciences, Swansea University Swansea United Kingdom ([ROR:053fq8t95](https://ror.org/053fq8t95))
 
 † Corresponding author
 
 ## Abstract
 
-Predator-prey arms races have led to the evolution of finely tuned disguise strategies. While the theoretical benefits of predator camouflage are well established, no study has yet been able to quantify its consequences for hunting success in natural conditions. We used high-resolution movement data to quantify how barn owls ( Tyto alba ) conceal their approach when using a sit-and-wait strategy. We hypothesized that hunting barn owls would modulate their landing force, potentially reducing noise levels in the vicinity of prey. Analysing 87,957 landings by 163 individuals equipped with GPS tags and accelerometers, we show that barn owls reduce their landing force as they approach their prey, and that landing force predicts the success of the following hunting attempt. Landing force also varied with the substrate, being lowest on man-made poles in field boundaries. The physical environment, therefore, affects the capacity for sound camouflage, providing an unexpected link between predator-prey interactions and land use. Finally, hunting strike forces in barn owls were the highest recorded in any bird, relative to body mass, highlighting the range of selective pressures that act on landings and the capacity of these predators to modulate their landing force. Overall, our results provide the first measurements of landing force in a wild setting, revealing a new form of motion-induced sound camouflage and its link to hunting success.
+Predator-prey arms races have led to the evolution of finely tuned disguise strategies. While the theoretical benefits of predator camouflage are well established, no study has yet been able to quantify its consequences for hunting success in natural conditions. We used high-resolution movement data to quantify how barn owls (Tyto alba) conceal their approach when using a sit-and-wait strategy. We hypothesized that hunting barn owls would modulate their landing force, potentially reducing noise levels in the vicinity of prey. Analysing 87,957 landings by 163 individuals equipped with GPS tags and accelerometers, we show that barn owls reduce their landing force as they approach their prey, and that landing force predicts the success of the following hunting attempt. Landing force also varied with the substrate, being lowest on man-made poles in field boundaries. The physical environment, therefore, affects the capacity for sound camouflage, providing an unexpected link between predator-prey interactions and land use. Finally, hunting strike forces in barn owls were the highest recorded in any bird, relative to body mass, highlighting the range of selective pressures that act on landings and the capacity of these predators to modulate their landing force. Overall, our results provide the first measurements of landing force in a wild setting, revealing a new form of motion-induced sound camouflage and its link to hunting success.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ The silent flight of owls is one of the most iconic examples of noise camouflage
 
 We used GPS loggers and accelerometers to record high-resolution movement data during two consecutive breeding seasons (May to August in 2019 and 2020) from 163 wild barn owls (79 males and 84 females) breeding in nest boxes across a 1000  km² intensive agricultural landscape in the western Swiss plateau. Of these individuals, 142 belonged to pairs for which data were recovered from both partners (71 pairs in total, 40 in 2019, 31 in 2020). The remaining 21 individuals belonged to pairs with data from one partner (11 females and 1 male in 2019; four females and five males in 2020).
 
-## Measurement of landing force
+### Measurement of landing force
 
 We used the acceleration data to identify 84,855 landings. These were further categorized into perching events (n=56,874) and hunting strikes (n=27,981), depending on whether barn owls were landing on a perch or attempting to strike prey on the ground (Figure 1A and B, see methods for specific details on behavioural classification). We extracted the peak vectorial sum of the raw acceleration during each landing and converted this to ground reaction force (hereafter ‘landing force’ in Newtons) using measurements of individual body mass (see methods for detailed description).
 
@@ -49,7 +49,7 @@ We used the acceleration data to identify 84,855 landings. These were further ca
 
 Hunting strikes had landing forces over four times higher than perching events (Figure 1C, Appendix 1—table 2, Appendix 1—table 3; ratio: 4.5, z-ratio: 486.3, p<0.001). When converted to multiples of body weight, hunting strikes had peak forces that were equivalent to approximately 13 times body weight, whereas perching events involved forces roughly three times body weight.
 
-## Determinants of landing force
+### Determinants of landing force
 
 We conducted two sets of analyses to investigate factors that influence the variation in landing force in different landing contexts: perching events and hunting strikes.
 
@@ -63,7 +63,7 @@ Importantly, within perch types, there was a reduction in landing force with tim
 
 Additionally, our analysis of hunting strike force showed that both hunting strategy and success were related to strike force (Appendix 1—table 6, Appendix 1—table 7). When hunting on the wing, successful strikes involved greater forces than unsuccessful strikes (ntot = 24,464; successful strikes: nsucc = 5830, 40.3 N, CI: 39.5–41.2 N; unsuccessful strikes: nunsucc = 18,634, 38.4 N, CI: 37.7–39.2 N). This was not the case when barn owls hunted from a perch (ntot = 3517; successful strikes: nsucc = 1042, 38.8 N, CI: 37.7–40.0 N; unsuccessful strikes: nunsucc = 2475, 38.5 N, CI: 37.6–39.5 N).
 
-## Sexual dimorphism and foraging behavior
+### Sexual dimorphism and foraging behavior
 
 Sexual dimorphism in body mass was marked among our sampled individuals. Males were lighter than females (84 females, average body mass: 322±22.6 g; 79 males, average body mass 281±16.5 g, Appendix 1—figure 6) and provided almost three times more prey per night than females (males: 8±5 prey per night; females: 3±3 prey per night; Appendix 1—figure 7). Males also displayed higher nightly hunting effort than females (Males: 46±16 hunting attempts per night, n=79; Females: 25±11 hunting attempts per night, n=84; Figure 3A, Appendix 1—figure 8). However, females were more likely to use a sit-and-wait strategy than males (females: 24%±15%, males: 13%±10%, Appendix 1—figure 9). As a result, the number of perching events per night was similar between males and females (Females: 76±23 perching events per night; Males: 69±20 perching events per night; Appendix 1—figure 8).
 
@@ -77,7 +77,7 @@ Landing force also varied with sex, with females generating landing forces that 
 
 Additionally. we performed two additional analyses to investigate potential variations in landing force and flight speed between sexes. We extracted the median ground speed (in m s–1) of each flight prior to each hunting attempt and analysed this in relation to the sex of the individual. This showed that males flew slightly more slowly than females when searching for prey on the wing. Males flew slower than females by 0.23 ms-1 (Average flight speed males: 5.24 ms–1, CI: 5.15 ms–1–5.33 ms–1; average flight speed females: 5.47 ms–1, CI: 5.38 ms–1–5.56 ms–1, Figure 3B, Appendix 1—table 12).
 
-## Pre-hunt landing force predicts hunting success for sit-and-wait strategy
+### Pre-hunt landing force predicts hunting success for sit-and-wait strategy
 
 Finally, we analysed whether the landing force in the last perching event before each hunting attempt (i.e. pre-hunt perching force) predicted variation in hunting success. Our results showed that hunting strategy was the strongest predictor of success (Figure 4, Appendix 1—table 10, Appendix 1—table 11, n=3040 hunting strikes from 151 individuals, see methods for details on data filtering). When hunting from the wing, the force applied during pre-hunt perching events had no effect on hunting success (Figure 4, Appendix 1—table 10, Appendix 1—table 11, odds ratio: 1.07, CI: 0.97–1.17, p=0.19). However, during sit-and-wait hunts, where the distance between the last perch and the prey is rather short (median distance 6.5 m, Appendix 1—figure 5), pre-hunt perching force predicted hunting success (Figure 4, Appendix 1—table 10 , Appendix 1—table 11). When barn owls hunted directly from a perch, the chance of success decreased by 15% for every 1 N increase in pre-hunt perching force (odds ratio: 0.85, CI: 0.79–0.99, p=0.04). Perch type and wind speed were dropped from the final model after model selection (Appendix 1—table 10, Appendix 1—table 11).
 
@@ -103,7 +103,7 @@ In conclusion, we use high-frequency movement data to propose a novel form of ac
 
 ## Materials and methods
 
-## Study area and tag deployment
+### Study area and tag deployment
 
 Data were collected from wild barn owls breeding in nest boxes across the Western Swiss plateau, an area of 1000 km2 characterized by an open and largely intensive agricultural landscape (Almasi et al., 2015). Over 380 nest boxes were checked for barn owl clutches between March and August in 2019 and 2020, following Frey and colleagues’ protocol (Frey et al., 2011). During the two breeding seasons, 163 breeding barn owls (84 females; 79 males) were equipped with data loggers (2019: 43 males and 49 females; 2020: 36 males and 35 females, Appendix 1—figure 1).
 
@@ -111,7 +111,7 @@ Adult barn owls were captured at their nest sites approximatiely 25 days after t
 
 In parallel to each logger deployment, motion-sensitive camera traps (Reconyx HC500 hyperfire, resolution of 3.1 megapixel) were positioned at the entrance of all nest boxes to document when animals returned to the nest with prey (Figure 1A). Camera traps were scheduled to record bursts of three pictures when motion was detected. Moreover, wind data were collected using portable weather stations (Vantage Vue, Davis Instruments Corp.) mounted 2.0 m from the ground (standard anemometer measurement height) within 100 m of each nest. Wind speed and direction were recorded every 10 min.
 
-## Behavioural classification
+### Behavioural classification
 
 We used Boolean-based algorithms (Wilson et al., 2018) to classify flight, landing, hunting strikes, and self-feeding from the onboard acceleration and GPS data (see below). Behaviours were summarized in 1 s intervals and linked to the closest GPS location in time. Flight, hunting, and self-feeding behaviours were ground-truthed using video footage of two captive barn owls equipped with the same data loggers. Further validations were undertaken for hunting behaviour (detailed below).
 
@@ -123,7 +123,7 @@ Landings were further classified as either perching events, where owls landed on
 
 Owls hunt to provision themselves and their offspring. Self-feeding was evident from multiple and regular acceleration peaks in the surge and heave axes (resulting in peaks in VeDBA values >0.2 g and <0.9 g, Appendix 1—figure 3D), with each peak corresponding to the movement of the head as the prey was swallowed whole. Prey provisioning events were identified from variations in the sway, corresponding to the owl walking inside the nest box (Appendix 1—figure 3C). Both start and end phases of the nest box visits were characterized by a rapid change in the pitch angle (enter: ∆ pitch angle <–1.5 °; exit:<0.5 °) along with an increase in the heave and VeDBA values (enter: ∆ VeDBA >0.5 g; exit: ∆ VeDBA <–0.9), as owls leapt in/out of the nest box. Successful provisioning hunts were further confirmed using nest box camera data when available and, in all cases, by manually checking that the GPS data matched the nest site to identify cases where the owls returned with a single prey for their offspring. Unsuccessful strikes were, therefore, inferred from identified hunting strikes that were not followed by a provisioning to the nest and/or self-feeding event (Figure 1A).
 
-## Data processing
+### Data processing
 
 Data from the onboard accelerometers can be used to estimate landing force during perching and hunting strikes (Figure 1B), as force is equal to the product of mass and acceleration. To estimate landing force, we extracted the peak vertical component of the ground reaction force in Newtons (N) for every landing event, taking the maximum value of the vectorial sum of the raw acceleration (in units of gravitational acceleration, g), multiplying this by the body mass of the bird (in kg) (Pouliot-Laforte et al., 2014; Banerjee et al., 2014).
 
@@ -131,7 +131,7 @@ Hunting strikes were categorized according to whether owls hunted on the wing or
 
 Finally, perch type was estimated by extracting the median location of each perching event. The habitat within 2 m was then classified according to the main perch type available: trees, roadsides, and pasture poles (hereafter referenced as ‘poles’), and buildings, and assigned as the perch type for each perching event. Habitat categories (roads, settlements, single trees, forest) were provided by the Swiss TLM3d catalogue (Swiss Topographic Landscape Model, resolution 1–3 m depending on the habitat feature) and habitat data were provided by the ‘Direction générale de l'agriculture, de la viticulture et des affaires vétérinaires (DGAV)’ and the ‘Direction des institutions, de l’agriculture et des forêts (DIAF),’ for states of Vaud and Fribourg, respectively.
 
-## Statistical analyses
+### Statistical analyses
 
 We first assessed how landing force varied between hunting strikes and perching events, before evaluating the factors that explained variation within each category. This excluded perching events made when owls were loaded with prey, where the landing force will likely be influenced by the extra mass carried.
 

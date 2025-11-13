@@ -57,15 +57,319 @@ Third, we focused on the two IMS who met the criteria for normotypical performan
 
 Fourth, we conducted a qualitative analysis of the performance of these two IMS (IMS 8, 10) in the facial expression recognition experiments. The aim of these analyses was to seek evidence that despite their quantitative normotypical performance, these IMS might have performed the task somewhat differently than the controls; for instance, that they used different facial diagnostic features. Any such processing differences would likely result in different patterns of behavioral responses to expressions and, in particular, in different patterns or errors. To explore this possibility, we computed response matrices between the six displayed facial expressions (in rows) and the six response alternatives (happiness, surprise, anger, sadness, fear, and disgust) for Experiments 1–3 separately for the control participants and for IMS 8 and 10 (Figure 2). Then, to examine the similarity between the controls’ and the IMS’s matrices, we vectorized the matrices and correlated them with each other. The resulting correlation coefficients were very high both when all responses were considered (all three Pearson’s Rs (36)>0.95; all ps < 0.001) and when only errors were considered (all three Pearson’s Rs (30)>0.63; all ps < 0.001), indicating that the groups consistently confused the same set of alternatives. Note that the confusion matrices of the other IMS were also strongly correlated to that of the control participants (all three Pearson’s Rs (36)>0.95; all ps < 0.001; see Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54687/elife-54687-fig2-v2.jpg)
+
+**Figure 2.:** (A, B, C) Distribution of control participants’ (left) and IMS 8 and 10’s (right) percentage of trials in which they chose each of the six response alternatives when faced with the six displayed facial expressions in Experiment 1 (A), 2 (B), and 3 (C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54687/elife-54687-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B, C) Distribution of control participants’ (left), IMS 8 and 10’s (middle) and the other IMS’s (right) percentage of trials in which they chose each of the six response alternatives when faced with the six displayed facial expressions in Experiment 1 (A), 2 (B), and 3 (C).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54687/elife-54687-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** IMS 8, 10 and 5 control participants were asked to imitate pictures of an actor’s face expressing one of six facial expressions (anger, disgust, fear, happiness, sadness, and surprise). Their imitation was video-recorded and, then, analyzed offline with OpenFace 2.1.0, an open source deep learning facial recognition system allowing automatic detection of action unit (AU) presence and intensity (Amos et al., 2016; Baltrusaitis et al., 2016). For each participant and facial expression, we first computed the average intensity of 12 facial action units relevant for facial expressions (AU01, 02, 04, 05, 06, 07, 09, 12, 15, 20, 23 and 26). Then, to obtain a measure of the similarity between the different facial expressions executed by each participant, we correlated the intensity of the 12 facial action units observed for the different facial expressions to each other. This allowed obtaining an objective measure of the similarity of the intensities of the different relevant action units when the IMS executed the different facial expressions. The results indicate that the intensity of the action units during the execution of the different facial expressions were highly correlated in the three IMS and much more correlated than in typical control participants. This supports the claim that although IMS 8 and 10 could execute some subtle facial movements, these movements were largely unspecific.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/54687/elife-54687-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Facial expression naming task. Control participants’ (six men, nine women, mean age = 26) were presented sequentially with a picture model from the Karolinska Directed Emotional Faces set (KDEF; Actress AF01, front view; Lundqvist et al., 1998) and video-clips of the IMS 8 and 10 (see Figure 2—figure supplement 1B-D) executing the six basic facial expressions (in rows) and were asked to choose the corresponding label (in column) among six alternatives (anger, disgust, fear, happiness, sadness, and surprise). Control participants categorized accurately the facial expressions of the picture model but erred most of the time when asked to categorize the facial expressions of the IMS. Under the (minimal) assumption that a facial expression is recognized accurately if (1) it is more often correctly than incorrectly labelled and (2) that its corresponding label is provided more often for that expression than for other ones, only the facial expression of anger in IMS8 (recognized by 36% of the control participants) has been recognized accurately by the controls. B. Facial expression sorting task. Control participants (five men, nine women) were presented simultaneously with the six facial expressions executed by a model (Actress AF01, front view from the KDEF; Lundqvist et al., 1998), by IMS8 or by IMS10 and were asked to associated the six pictures to their corresponding labels (anger, disgust, fear, happiness, sadness, and surprise). Each label could be used only once. Control participants categorized accurately the facial expressions of the picture model but erred most of the time when asked to categorize the facial expressions of the two IMS. Under the assumption that a facial expression is recognized accurately if (1) it is more often correctly than incorrectly labelled and (2) that its corresponding label is provided more often for that expression than for other ones, only the facial expressions of happiness in IMS8 (100% of the controls) and disgust, fear and surprise in IMS 10 (recognized by 43%, 64 and 50 of the control participants) have been recognized accurately by the controls.
+
 Fifth, we conducted additional tests and analyses of IMS 8 and 10’s facial movement abilities to explore the possibility that, despite their severe facial paralysis, they could nevertheless imitate some aspects of the facial expressions tested in Experiments 1–5, which would provide them with sufficient information to support facial expression recognition by simulation. In an additional orofacial motor examination that included attempted imitation of the six basic facial expressions, IMS 8 and 10 could execute a few (very) small facial movements. IMS eight was able to execute a mild combined backward/upward movement of the right angle of the mouth, a slight backward movement of the left angle of the mouth, a slight contraction of the mentalis and some slight movements of the upper eye lids. IMS10 was only able to execute a slight bilateral movement of the angles of the mouth backwards and downwards and some up and down movements of the superior eye lids. Importantly, however, these movements covered only a small part of the facial movements that would be required to imitate the different facial expressions of emotions (Supplementary file 2) and they were largely the same when they attempted to imitate the different facial expressions (sadness, happiness, anger, surprise, disgust, fear, see Figure 2—figure supplement 2). Control participants were unable to recognize video-clips showing the two IMS attempting to imitate the six same facial expressions (see Figure 2—figure supplement 3). In sum, the facial movements that the IMS were able to execute are small in amplitude, very limited in types, and do not discriminate different facial expressions.
 
 Sixth, we investigated whether the discrepant results between IMS 8 and 10 and the other IMS, who did not meet the criteria for ‘normotypical’ performance (i.e., they performed below 0.85 standard deviation from the controls’ mean performance in at least one experiment) could be because IMS 8 and 10 were affected by milder facial paralysis. This was clearly not the case: IMS 10 was among the participants with the most severe facial paralysis (see Table 1).
+
+**Table 1.**
+ Summary of the IMS participants’ facial movements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>IMS</th>
+      <th>Inf. lip</th>
+      <th>Sup. lip</th>
+      <th>Nose</th>
+      <th>Eyebrows</th>
+      <th>Forehead</th>
+      <th>R. cheek</th>
+      <th>L. cheek</th>
+      <th>Sup. R. eyelid</th>
+      <th>Inf. R. eyelid</th>
+      <th>Sup. L. eyelid</th>
+      <th>Inf. L. eyelid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IMS1</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS2</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+    </tr>
+    <tr>
+      <td>IMS3</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS4</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS5</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS6</td>
+      <td>Mild</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Mild</td>
+      <td>Mild</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS7</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Mild</td>
+      <td>None</td>
+      <td>Mild</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS8</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Mild</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+    </tr>
+    <tr>
+      <td>IMS9</td>
+      <td>Mild</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Mild</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS10</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>IMS11</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Slight</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
 
 Instructively, and by contrast, the performance of the IMS who performed more poorly than controls in Experiments 1–3 was strongly and significantly correlated with their respective performance on the mid-level perception screening test (three rs > 0.5, ps < 0.05), and 7/9 of the IMS participants (IMS1, 2, 4, 5, 6, 7, 9) who failed to meet the criteria for normotypical efficient facial expression recognition obtained also equally weak or weaker performance in the facial identity and/or the emotional speech recognition task (see Figure 1). Thus, the IMS’s performance variability seems to be at least partly due to associated visual and/or cognitive disorders, rather than to their facial paralysis. To further explore this possibility, we first performed a series of one-way ANCOVAs with Group as a fixed effect and participants’ performance in Experiments 6–8 as covariates. Participants performing below two absolute deviations from the median of their group were discarded in order to satisfy ANCOVA normality assumptions (Leys et al., 2013). In line with the possibility that the IMS’s performance variability is likely due to associated visual and/or cognitive disorders rather than to their facial paralysis, these analyses failed to reveal any significant effect of Group in Experiments 1, 2, 4 and 5 (all Fs <1; all ps > 0.37). The same analysis could not be performed on the results of Experiment three due to the low number of IMS who took part to this experiment. Then, to test more directly the possibility that at least some IMS may have some facial expression recognition impairment that cannot be explained by a visual or cognitive deficit, we used Crawford and Garthwaite, 2007 Bayesian Standardized Difference Test (BSDT) to test whether the performance of IMS1-7, 9 and 10 in at least some facial expression experiments may be comparatively less good than in the three control tasks. Only IMS1 performed significantly less well in Experiment five than in the three control experiments (Experiments 6–8). All other comparisons indicated either better performance in facial expression recognition experiments than in at least one of the control experiments (55% of the comparisons) or slightly but non-significantly weaker performance (45% of comparisons, all BSDTs > 0.1).
 
 ## Discussion
 
 According to popular motor theories of facial expression recognition, efficient recognition of others’ facial expressions cannot be achieved by visual analysis of the movements alone but requires additional unconscious covert imitation – motor simulation – of the observed movements. In this study, we tested a prediction drawn from these theories, namely, that any individual who has no motor representations of facial expressions due to congenital facial paralysis should be less efficient than typically developed individuals in recognizing facial expressions. We did this by assessing the performance of eleven individuals born with Moebius Syndrome, an extremely rare congenital nonprogressive condition resulting in severe or complete bilateral facial paralysis often accompanied by visual and mid-level perceptual deficits, in five challenging facial expression experiments. We compared their performances to that of 25 young and highly educated control participants. As in previous studies (Bate et al., 2013; Calder et al., 2000; Giannini et al., 1984; Nicolini et al., 2019), several IMS failed to recognize facial expressions as efficiently as control participants in one (IMS 1, 3, 5, 7) or several (IMS 2, 6, 9, 11) experiments (see Figure 1). Although these difficulties have to be interpreted with caution because the performance of these IMS was compared to that of highly educated young adults who performed Experiments 3 and 4 at a higher level of performance than previously published norms, this finding suggests that some individuals with Moebius Syndrome have difficulty in recognizing facial expressions in at least some tasks. Such association of deficits is interesting but is difficult to interpret because of the co-occurrence of motor, visual and perceptual deficits in the IMS we tested (Table 2) makes it difficult to establish unambiguously the (possibly multiple) origins of these difficulties. Nevertheless, and more interestingly, we also found that two of the IMS (IMS 8 and 10) fulfilled the criteria for ‘normotypical efficient facial expression recognition’: (1) they both scored above 0.85 standard deviations below the mean of the controls in all five facial expression recognition experiments; (2) they performed as well in these tasks as in other face-related visual tasks (face identity) and emotion recognition tasks (vocal emotion recognition); and (3) they performed these tasks in a way that is qualitatively similar to the controls. These two IMS had severe facial paralysis. They could not execute most of the facial movements that would be required to imitate the different facial expressions of emotions (Supplementary file 2). In addition, they executed largely the same inappropriate movements when they attempted to imitate the different facial expressions (sadness, happiness, anger, surprise, disgust, fear, see Figure 2—figure supplements 2–3). These dissociations challenge the central premise of the models of facial expression recognition centered on facial mimicry: they constitute existence proof that it is possible to account for efficient facial expression recognition without having to invoke a mechanism of ‘motor simulation’, even in very sensitive and challenging tasks requiring, for instance, the identification of a facial expression in 150 milliseconds, only from information available in the eye region, when the stimuli are morphs composed of a mixture of emotions, and when the task involves discriminating fake versus genuine smiles.
+
+**Table 2.**
+ Information regarding IMS participants’ visual and visuo-perceptual abilities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Vision</th>
+      <th>Reported best corrected acuity</th>
+      <th>Strabismus</th>
+      <th>Eye movements</th>
+      <th>Mid-level perception* (modified t-test)2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IMS1</td>
+      <td>Hypermetropy, astigmatism</td>
+      <td>Mild vision loss (7/10)</td>
+      <td>Slight</td>
+      <td>H: Absent; V: Reduced</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>IMS2</td>
+      <td>Hypermetropy, astigmatism</td>
+      <td>Normal vision</td>
+      <td>Slight</td>
+      <td>H: Absent; V: Reduced</td>
+      <td>−3.3</td>
+    </tr>
+    <tr>
+      <td>IMS3</td>
+      <td>Myopia</td>
+      <td>Normal vision</td>
+      <td>None</td>
+      <td>H: Absent; V: Reduced</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>IMS4</td>
+      <td>Hypermetropy, astigmatism</td>
+      <td>Mild vision loss (5/10)</td>
+      <td>None</td>
+      <td>H: Absent; V: Typical</td>
+      <td>−2.9</td>
+    </tr>
+    <tr>
+      <td>IMS5</td>
+      <td>Hypermetropy, astigmatism</td>
+      <td>Mild vision loss (8/10)</td>
+      <td>Slight</td>
+      <td>H: Very limited; V: Typical</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>IMS6</td>
+      <td>Hypermetropy, astigmatism</td>
+      <td>Normal vision</td>
+      <td>Slight</td>
+      <td>H: Typical; V: Typical</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>IMS7</td>
+      <td>Hypermetropy, astigmatism</td>
+      <td>Moderate vision loss of the left eye (2/10)</td>
+      <td>None</td>
+      <td>H: Typical; V: Typical</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>IMS8</td>
+      <td>Normal</td>
+      <td>Normal vision</td>
+      <td>None</td>
+      <td>H: Typical; V: Typical</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>IMS9</td>
+      <td>Normal</td>
+      <td>Normal vision</td>
+      <td>Slight</td>
+      <td>H: Absent; V: Absent</td>
+      <td>−3.3</td>
+    </tr>
+    <tr>
+      <td>IMS10</td>
+      <td>Myopia</td>
+      <td>Mild vision loss (8/10)</td>
+      <td>None</td>
+      <td>H: Absent; V: Typical</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>IMS11</td>
+      <td>Myopia, astigmatism</td>
+      <td>Mild vision loss: 6/10 right eye; 5/10 left eye</td>
+      <td>Slight</td>
+      <td>H: Reduced; V: Typical</td>
+      <td>−4.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Leuven Perceptual Organization Screening Test, L-POST (Torfs et al., 2014). 2(Crawford and Howell, 1998)._
 
 This conclusion is in line with previous reports of MS participants who achieved normal performance in facial expression recognition despite their congenital facial paralysis (Bate et al., 2013; Calder et al., 2000; Rives Bogart and Matsumoto, 2010). However, the interpretation of those findings was limited by the putative relative insensitivity of the facial expression recognition tasks used in those studies (Van Rysewyk, 2011; De Stefani et al., 2019). The findings reported herein go beyond this previous evidence and demonstrate that motor simulation contributes neither to the ease of facial expression recognition nor to its robustness in particularly challenging tasks.
 
@@ -75,11 +379,11 @@ In sum, our finding constitutes existence proof that the visuo-perceptual system
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We tested eleven individuals with severe to complete facial paralysis in the context of the Moebius Syndrome (IMS participants; eight females; all right-handed; various education levels; mean age ± SD: 27.7 ± 9.25 years) and compared their performance to that of 25 typically developed highly educated young adults (15 females; three left-handed; all college students or graduates without any history of psychiatric or neurological disorder; Mean age ± SD: 28.6 ± 6.5 years). All IMS were able to speak intelligibly and to convey emotions in their speech. Information regarding all participants’ neurological and psychiatric history and about the IMS’s medical, surgical and therapeutic history associated with the syndrome was obtained through a series of questionnaires (Supplementary file 1). Information about all participants’ visual and mid-level perceptual skills were obtained through questionnaires and a perceptual screening test (Table 2). Information about the IMS’s facial motor abilities was obtained through a facial movements examination (see supplemental methods for detail; Table 1).
 
-## Materials and procedures
+### Materials and procedures
 
 The experimental investigations were carried out from October 2015 to April 2019 in sessions lasting between 60 and 90 min. The study was approved by the biomedical ethics committee of the Cliniques Universitaires Saint-Luc, Brussels, Belgium and all participants gave written informed consent prior to the study.
 

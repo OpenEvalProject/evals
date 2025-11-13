@@ -17,15 +17,15 @@
 
 ## Abstract
 
-10.7554/eLife.13664.001 Artemisinin-based therapies are the only effective treatment for malaria, the most devastating disease in human history. To meet the growing demand for artemisinin and make it accessible to the poorest, an inexpensive and rapidly scalable production platform is urgently needed. Here we have developed a new synthetic biology approach, co mbinatorial s upertransformation of t ransplastomic re cipient l ines (COSTREL), and applied it to introduce the complete pathway for artemisinic acid, the precursor of artemisinin, into the high-biomass crop tobacco. We first introduced the core pathway of artemisinic acid biosynthesis into the chloroplast genome. The transplastomic plants were then combinatorially supertransformed with cassettes for all additional enzymes known to affect flux through the artemisinin pathway. By screening large populations of COSTREL lines, we isolated plants that produce more than 120 milligram artemisinic acid per kilogram biomass. Our work provides an efficient strategy for engineering complex biochemical pathways into plants and optimizing the metabolic output. DOI: http://dx.doi.org/10.7554/eLife.13664.001
+Artemisinin-based therapies are the only effective treatment for malaria, the most devastating disease in human history. To meet the growing demand for artemisinin and make it accessible to the poorest, an inexpensive and rapidly scalable production platform is urgently needed. Here we have developed a new synthetic biology approach, combinatorial supertransformation of transplastomic recipient lines (COSTREL), and applied it to introduce the complete pathway for artemisinic acid, the precursor of artemisinin, into the high-biomass crop tobacco. We first introduced the core pathway of artemisinic acid biosynthesis into the chloroplast genome. The transplastomic plants were then combinatorially supertransformed with cassettes for all additional enzymes known to affect flux through the artemisinin pathway. By screening large populations of COSTREL lines, we isolated plants that produce more than 120 milligram artemisinic acid per kilogram biomass. Our work provides an efficient strategy for engineering complex biochemical pathways into plants and optimizing the metabolic output.
 
 ## Introduction
 
-Artemisinin, a C
+Artemisinin, a C15 isoprenoid (sesquiterpene) naturally produced in the wild plant Artemisia annua (sweet wormwood, native to temperate Asia), is the main ingredient of artemisinin combination therapies (ACTs), currently the only effective cure of malaria (Okell et al., 2014). As ACTs are the mainstay of malaria treatment and no alternative to artemisinin derivatives is expected to enter the market in the foreseeable future, there is a steadily increasing demand for ACTs which reached nearly 400 million treatment courses in 2013 (http://www.who.int/malaria/publications/world_malaria_report_2014). The mechanism of action of artemisinin on the malaria parasites Plasmodium falciparium and P. vivax is not entirely clear, but it is generally believed that the reactive endoperoxide bridge present in the molecule (Figure 1) is responsible for its medicinal properties. In addition to their antimalarial activity, artemisinin and its derivatives are currently also considered as promising anti-cancer, antiviral and anti-inflammatory agents (e.g., Willoughby et al., 2009). In A. annua, artemisinin is produced in the cytosol of the glandular trichomes of leaves and flowers (Tang et al., 2014). The biosynthesis initiates with the conversion of the isoprenoid building blocks IPP and DMAPP into farnesyl pyrophosphate (FPP) which is then converted into amorpha-4,11-diene by amorphadiene synthase (ADS), the enzyme catalyzing the first committed step of the pathway (Figure 1). Amorpha-4,11-diene is a volatile compound that is oxidized to artemisinic alcohol and subsequently to artemisinic aldehyde by the cytochrome P450 monooxygenase CYP71AV1 (CYP) and its redox partner, the cytochrome P450 reductase (CPR). Artemisinic aldehyde is then further oxidized to artemisinic acid by the same enzyme pair, or alternatively, is reduced to dihydroartemisinic aldehyde by the double bond reductase 2 (DBR2; Figure 1; Zhang et al., 2008). Artemisinic acid can be efficiently and cheaply converted to artemisinin by chemical means (Paddon et al., 2013; Kopetzki et al., 2013) and, therefore, represents a high-value precursor for the industrial production of artemisinin-based pharmaceuticals (Paddon and Keasling, 2014).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig1-v1.jpg)
 
-**Figure 1.:** The canonical pathway of artemisinin synthesis starts with the conversion of IPP/DMAPP (C5 isoprenoids produced by the MVA pathway in the cytosol or the MEP pathway in the chloroplast) into farnesyl pyrophosphate (FPP), catalyzed by farnesyl pyrophosphate synthase (FPS). Amorpha-4,11-diene synthase (ADS) converts FPP into amorpha-4,11-diene in the first committed step of the pathway. Amorpha-4,11-diene is then successively oxidized to artemisinic alcohol, artemisinic aldehyde and artemisinic acid by the cytochrome P450 monooxygenase CYP71AV1 (CYP) and its redox partner, the cytochrome P450 reductase (CPR). In A. annua, artemisinic aldehyde is converted to dihydroartemisinic aldehyde by DBR2, and then to dihydroartemisinic acid by ALDH1. Artemisinin is generated by the spontaneous oxidation of dihydroartemisinic acid in planta, and can be produced by chemical conversion of artemisinic acid in vitro. Enzymes depicted in red improve the efficiency of different oxidation steps in yeast (Paddon et al., 2013; Paddon and Keasling, 2014). See text for details.DOI: http://dx.doi.org/10.7554/eLife.13664.003
+**Figure 1.:** The canonical pathway of artemisinin synthesis starts with the conversion of IPP/DMAPP (C5 isoprenoids produced by the MVA pathway in the cytosol or the MEP pathway in the chloroplast) into farnesyl pyrophosphate (FPP), catalyzed by farnesyl pyrophosphate synthase (FPS). Amorpha-4,11-diene synthase (ADS) converts FPP into amorpha-4,11-diene in the first committed step of the pathway. Amorpha-4,11-diene is then successively oxidized to artemisinic alcohol, artemisinic aldehyde and artemisinic acid by the cytochrome P450 monooxygenase CYP71AV1 (CYP) and its redox partner, the cytochrome P450 reductase (CPR). In A. annua, artemisinic aldehyde is converted to dihydroartemisinic aldehyde by DBR2, and then to dihydroartemisinic acid by ALDH1. Artemisinin is generated by the spontaneous oxidation of dihydroartemisinic acid in planta, and can be produced by chemical conversion of artemisinic acid in vitro. Enzymes depicted in red improve the efficiency of different oxidation steps in yeast (Paddon et al., 2013; Paddon and Keasling, 2014). See text for details.
 
 In view of the great medicinal value of artemisinic compounds, their low accumulation levels in A. annua and the unstable supply of the plant, enormous efforts have been undertaken to produce artemisinic compounds synthetically or in heterologous biological systems. Currently, the semisynthetic synthesis in yeast (Paddon et al., 2013) represents the most efficient heterologous production system for artemisinic acid, the immediate precursor of artemisinin (Figure 1). However, the production costs are still high and ACTs remain unaffordable to many people in the tropical and subtropical regions of Africa and Asia that are most severely afflicted with malaria. Since production in yeast requires large volumes of costly synthetic culture media and large-capacity bioreactors run under sterile conditions, production in plants can potentially provide a much cheaper, renewable and easily scalable source of artemisinic acid. Although the production of artemisinic compounds at low levels has been shown to be feasible in heterologous plant systems (Wu et al., 2006; van Herpen et al., 2010; Zhang et al., 2011; Farhi et al., 2011), the development of an efficient production system for the drug precursor artemisinic acid has not been achieved.
 
@@ -33,71 +33,569 @@ Here we have pursued a novel synthetic biology approach towards high-level produ
 
 ## Results
 
-## Expression of the core pathway for artemisinic acid synthesis from the plastid genome
+### Expression of the core pathway for artemisinic acid synthesis from the plastid genome
 
-The core enzymes to synthesize artemisinic acid are FPS, ADS, CYP and CPR (
+The core enzymes to synthesize artemisinic acid are FPS, ADS, CYP and CPR (Figure 1). Accessory enzymes (indicated in red in Figure 1) and additional enzymes facilitating more efficient biosynthesis of artemisinin are CYB5, ADH1, ALDH1 and DBR2. We first implemented the canonical pathway from FPP to artemisinic acid in tobacco chloroplasts using stable plastid genome transformation (Svab and Maliga, 1993; Bock, 2015). To this end, we designed a number of synthetic operons (Zhou et al., 2007; Lu et al., 2013) that combine the genes for the four core enzymes (FPS, ADS, CYP and CPR; Figure 1) in different arrangements and under the control of different expression signals (Figure 2A). Four synthetic artemisinic acid operon constructs (pAO1-4) were built and introduced into the chloroplast (plastid) genome of tobacco plants by particle gun-mediated transformation. Chloroplast-transformed (transplastomic) lines were selected on regeneration medium with spectinomycin and purified to homoplasmy by additional rounds of selection and regeneration (Svab and Maliga, 1993; Bock, 2015). Restriction fragment length polymorphism (RFLP) analysis verified integration of the synthetic operon constructs into the plastid genome by homologous recombination and successful elimination of all wild-type copies of the highly polyploid chloroplast genome (Figure 2B). Homoplasmy of the transplastomic lines was additionally verified by seed assays that confirmed lack of segregation of the spectinomycin resistance and uniparentally maternal inheritance (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig2-v1.jpg)
 
-**Figure 2.:** Synthetic codon-optimized genes for the four enzymes required to produce artemisinic acid (Figure 1) were introduced into the tobacco plastid genome by stable genetic transformation with four different synthetic operon constructs (pAO1-4). The constructs differ in gene arrangement and in the translation signals that drive synthesis of the key pathway enzyme (ADS) catalyzing the first committed step. (A) Physical map of the plastid genome region (ptDNA) used for integration of the synthetic artemisinic acid operons and maps of the transgenic loci in the generated transplastomic tobacco lines (Nt-AO1-4). The artemisinic acid operon genes are depicted as light blue boxes. Chloroplast promoters and terminators are shown in green, the aadA selectable marker gene for chloroplast transformation is represented as a white box, and genes in flanking plastid sequences used for transgene targeting via homologous recombination are in black. Genes above the line are transcribed from left to right, genes below the line are transcribed in the opposite direction. The four transgenes are arranged in two dicistronic operons. FPS and CYP are driven by the Chlamydomonas reinhardtii plastid ribosomal RNA operon promoter (Cr Prrn) and the g10 leader sequence from phage T7 (T7 Lg10). The second operon containing ADS and CPR is driven by the C. reinhardtii psbA promoter (Cr PpsbA) and either the T7 Lg10 or the psbA leader sequence from C. reinhardtii (Cr LpsbA). This operon is arranged either in sense and downstream of the first operon (AO1, 3) or in antisense, downstream of the aadA cassette (AO2, 4). The genes in each operon are separated by an intercistronic expression element (IEE) conferring intercistronic RNA processing and, in this way, enhancing expression of downstream cistrons of the operon (Zhou et al., 2007; Drechsel and Bock, 2010). The BamHI restriction sites used in RFLP analyses and the expected fragment sizes are indicated. The location of the hybridization probe is shown as a black bar. Cr: C. reinhardtii; Nt: N. tabacum; T7: bacteriophage T7; P: promoter; L: leader sequence; T: terminator; SD: Shine-Dalgarno sequence. (B) RFLP analysis of transplastomic plants. Two independently isolated transplastomic lines are shown for constructs pAO1-3 and one for pAO4. (C) Seed assays confirming the homoplasmic state of the transplastomic plants. Seeds were germinated on medium containing 500 mg/L spectinomycin (Nt-AO2-1, Nt-AO3-1, Nt-wt) or antibiotic-free medium (Nt-wt).DOI: http://dx.doi.org/10.7554/eLife.13664.004
+**Figure 2.:** Synthetic codon-optimized genes for the four enzymes required to produce artemisinic acid (Figure 1) were introduced into the tobacco plastid genome by stable genetic transformation with four different synthetic operon constructs (pAO1-4). The constructs differ in gene arrangement and in the translation signals that drive synthesis of the key pathway enzyme (ADS) catalyzing the first committed step. (A) Physical map of the plastid genome region (ptDNA) used for integration of the synthetic artemisinic acid operons and maps of the transgenic loci in the generated transplastomic tobacco lines (Nt-AO1-4). The artemisinic acid operon genes are depicted as light blue boxes. Chloroplast promoters and terminators are shown in green, the aadA selectable marker gene for chloroplast transformation is represented as a white box, and genes in flanking plastid sequences used for transgene targeting via homologous recombination are in black. Genes above the line are transcribed from left to right, genes below the line are transcribed in the opposite direction. The four transgenes are arranged in two dicistronic operons. FPS and CYP are driven by the Chlamydomonas reinhardtii plastid ribosomal RNA operon promoter (Cr Prrn) and the g10 leader sequence from phage T7 (T7 Lg10). The second operon containing ADS and CPR is driven by the C. reinhardtii psbA promoter (Cr PpsbA) and either the T7 Lg10 or the psbA leader sequence from C. reinhardtii (Cr LpsbA). This operon is arranged either in sense and downstream of the first operon (AO1, 3) or in antisense, downstream of the aadA cassette (AO2, 4). The genes in each operon are separated by an intercistronic expression element (IEE) conferring intercistronic RNA processing and, in this way, enhancing expression of downstream cistrons of the operon (Zhou et al., 2007; Drechsel and Bock, 2010). The BamHI restriction sites used in RFLP analyses and the expected fragment sizes are indicated. The location of the hybridization probe is shown as a black bar. Cr: C. reinhardtii; Nt: N. tabacum; T7: bacteriophage T7; P: promoter; L: leader sequence; T: terminator; SD: Shine-Dalgarno sequence. (B) RFLP analysis of transplastomic plants. Two independently isolated transplastomic lines are shown for constructs pAO1-3 and one for pAO4. (C) Seed assays confirming the homoplasmic state of the transplastomic plants. Seeds were germinated on medium containing 500 mg/L spectinomycin (Nt-AO2-1, Nt-AO3-1, Nt-wt) or antibiotic-free medium (Nt-wt).
 
-All homoplasmic transplastomic lines grew autotrophically under greenhouse conditions and produced viable seeds. However, transplastomic lines obtained with constructs pAO1 and pAO3 (
+All homoplasmic transplastomic lines grew autotrophically under greenhouse conditions and produced viable seeds. However, transplastomic lines obtained with constructs pAO1 and pAO3 (Figure 2A) displayed a slightly pale-green phenotype and a subtle growth delay at the juvenile stage (Figure 3A; Figure 3—figure supplement 1). This phenotype could be due to toxicity of artemisinic metabolites produced in these plants (Bharati et al., 2012) or, alternatively, depletion of isoprenoid precursors from other metabolic pathways in the cell, such as carotenoid and chlorophyll biosyntheses. Measurement of chlorophylls and carotenoids confirmed that, indeed, both pigment classes are significantly reduced in plants exhibiting the mild phenotype (Figure 3—figure supplements 1 and 2). Metabolite profiling (see Materials and Methods) of the transplastomic lines revealed that all lines accumulated the volatile artemisinic acid precursor amorpha-4,11-diene and its first oxidation product artemisinic alcohol (Figure 1; Figure 3). Interestingly, amorpha-4,11-diene accumulated to lower levels in the lines displaying the subtle phenotype, whereas artemisinic alcohol was detected in similar amounts in all transplastomic plants. Accumulation of artemisinic acid correlated with the altered phenotype in Nt-AO1-1 and Nt-AO3-1, suggesting that a more efficient conversion of amorpha-4,11-diene to downstream metabolites could be the cause of the phenotype. This hypothesis gained support from the analysis of a series of developmental stages and leaf ages which revealed that, while in Nt-AO2 plants, artemisinic acid accumulates only in mature leaves of young and flowering plants, it accumulates throughout development in Nt-AO3 plants. These analyses also confirmed the inverse relationship between artemisinic acid and amorpha-4,11-diene accumulation (Figure 4A–C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig3-v1.jpg)
 
-**Figure 3.:** (A) Transplastomic lines Nt-AO1-1 and Nt-AO3-1 display a slightly pale and growth-delayed phenotype at the juvenile stage. WAT: weeks after transfer from tissue culture to soil; scale bars: 10 cm. (B) Amorpha-4,11-diene is synthesized in all transplastomic lines, but accumulates to lower levels in the lines displaying an altered phenotype (purple bars). (C) Artemisinic alcohol is detected in similar amounts in all transplastomic plants. (D) Accumulation of artemisinic acid correlates with the altered phenotype of Nt-AO1-1 and Nt-AO3-1. Relative accumulation of amorpha-4,11-diene was profiled by GC-MS analysis of volatile organic compounds (VOCs). Relative accumulation of the sum of free and conjugated artemisinic alcohol and artemisinic acid were determined by GC-MS analysis of the soluble metabolite fraction after saponification (see Materials and methods; Figures 6 and 7). In agreement with previous reports (van Herpen et al., 2010), these compounds were found to be present mainly as conjugates. Expanding leaves of 5–6 plants per line were used for each measurement. Error bars represent the SD. Different letters above the bars indicate significant differences as determined by One-way ANOVA (p<0.001) and the Holm-Sidak post-hoc test.DOI: http://dx.doi.org/10.7554/eLife.13664.005
+**Figure 3.:** (A) Transplastomic lines Nt-AO1-1 and Nt-AO3-1 display a slightly pale and growth-delayed phenotype at the juvenile stage. WAT: weeks after transfer from tissue culture to soil; scale bars: 10 cm. (B) Amorpha-4,11-diene is synthesized in all transplastomic lines, but accumulates to lower levels in the lines displaying an altered phenotype (purple bars). (C) Artemisinic alcohol is detected in similar amounts in all transplastomic plants. (D) Accumulation of artemisinic acid correlates with the altered phenotype of Nt-AO1-1 and Nt-AO3-1. Relative accumulation of amorpha-4,11-diene was profiled by GC-MS analysis of volatile organic compounds (VOCs). Relative accumulation of the sum of free and conjugated artemisinic alcohol and artemisinic acid were determined by GC-MS analysis of the soluble metabolite fraction after saponification (see Materials and methods; Figures 6 and 7). In agreement with previous reports (van Herpen et al., 2010), these compounds were found to be present mainly as conjugates. Expanding leaves of 5–6 plants per line were used for each measurement. Error bars represent the SD. Different letters above the bars indicate significant differences as determined by One-way ANOVA (p<0.001) and the Holm-Sidak post-hoc test.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Nt-AO2-1 and Nt-AO3-1 plants throughout development.Six plants per line (Nt-wt, Nt-AO2-1 and Nt-AO3-1) were grown under standard greenhouse conditions and photographs were taken of one representative plant per line at different time points: young plants (before flowering, stage 1), flowering plants (stage 2) and old plants (seed capsules formed, stage 3). Light-green leaves and slightly delayed growth of line Nt-AO3-1 are more evident at the young stage. At later stages, all Nt-AO lines display a wild type-like phenotype and produce viable seeds in indistinguishable amounts. y: young leaf; i: expanding (intermediate) leaf; m: fully expanded (mature) leaf.DOI: http://dx.doi.org/10.7554/eLife.13664.006
+**Figure 3—figure supplement 1.:** Six plants per line (Nt-wt, Nt-AO2-1 and Nt-AO3-1) were grown under standard greenhouse conditions and photographs were taken of one representative plant per line at different time points: young plants (before flowering, stage 1), flowering plants (stage 2) and old plants (seed capsules formed, stage 3). Light-green leaves and slightly delayed growth of line Nt-AO3-1 are more evident at the young stage. At later stages, all Nt-AO lines display a wild type-like phenotype and produce viable seeds in indistinguishable amounts. y: young leaf; i: expanding (intermediate) leaf; m: fully expanded (mature) leaf.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Nicotiana tabacum plants (Nt-wt) and the transplastomic lines Nt-AO2-1 and Nt-AO3-1.Plants were grown under standard greenhouse conditions and samples were taken from young (y), expanding (i), and fully expanded (m) leaves at three developmental stages (1–3; cf. Figure 3—figure supplement 1). Metabolite levels were determined by UPLC analysis. The values represent the peak height for each compound divided by 10.000 and normalized to the fresh weight (FW), resulting in the normalized response/FW. Error bars represent the SD (n = 3 plants per line). Different letters above the bars indicate significant differences as determined by One-way ANOVA (p<0.05) and the Holm-Sidak post-test.DOI: http://dx.doi.org/10.7554/eLife.13664.007
+**Figure 3—figure supplement 2.:** Plants were grown under standard greenhouse conditions and samples were taken from young (y), expanding (i), and fully expanded (m) leaves at three developmental stages (1–3; cf. Figure 3—figure supplement 1). Metabolite levels were determined by UPLC analysis. The values represent the peak height for each compound divided by 10.000 and normalized to the fresh weight (FW), resulting in the normalized response/FW. Error bars represent the SD (n = 3 plants per line). Different letters above the bars indicate significant differences as determined by One-way ANOVA (p<0.05) and the Holm-Sidak post-test.
 
-To identify the molecular basis of the striking metabolic differences between the different operon constructs, a series of northern blot experiments was conducted. In view of the commonalities of the
+To identify the molecular basis of the striking metabolic differences between the different operon constructs, a series of northern blot experiments was conducted. In view of the commonalities of the Nt-AO2 and Nt-AO4 plants versus the Nt-AO1 and Nt-AO3 plants, it seemed reasonable to assume that the relative orientation of the two operons (Figure 2A) is causally responsible for the different visual and metabolic phenotypes. When the expression of the four transgenes was assayed, a striking difference was observed in the CYP/CPR expression ratio in that high artemisinic acid accumulation correlated with a high CYP/CPR expression ratio in Nt-AO3 plants (Figure 4D–G; Figure 4—figure supplement 1). In nature, CYPs are often found in excess to their CPR counterparts, with ratios of 10–100:1 or higher (reviewed, e.g., in Guengerich, 2002). Even though there is currently no consensus explanation for this observation, it is known that CPRs can activate molecular oxygen, thereby producing superoxide radicals and wasting redox capacity of the cell (Manoj et al., 2010). A high CYP/CPR ratio would prevent this CPR-mediated toxicity and result in a more efficient use of the redox power of the cell for artemisinic acid synthesis, as observed in our Nt-AO1 and Nt-AO3 transplastomic lines. This explanation is also in agreement with published data on transcript accumulation and protein abundance for these two enzymes in A. annua. While the levels of the CPR transcript and the CPR protein remain constant during development of the plant and in different organs, the transcript and protein levels of CYP increase in the developmental stages and organs where artemisinin synthesis is induced (Olofsson et al., 2011; Zeng et al., 2008). Especially the final oxidation step from artemisinic aldehyde to artemisinic acid appears to require an effective monooxygenase (Ting et al., 2013), suggesting that the higher levels of artemisinic acid in our transplastomic Nt-AO1 and Nt-AO3 lines are most likely related to their higher CYP/CPR expression ratio. However, determination of the CYP and CPR protein accumulation levels (and enzyme activities) would be necessary to precisely assess these ratios and ultimately confirm their impact on metabolite conversion in the pathway.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig4-v1.jpg)
 
-**Figure 4.:** CYP/CPR expression ratio.Artemisinic compounds and expression levels of the transgenes were measured in young (stage 1), flowering (stage 2) and old plants (stage 3; see Figure 3—figure supplement 1). (A) Amorpha-4,11-diene accumulates to higher levels in line Nt-AO2-1 than in Nt-AO3-1. (B) Artemisinic alcohol is present at similar levels in early (1) and late stages (3) of development in lines Nt-AO2-1 and Nt-AO3-1, but it is slightly higher in the flowering stage (2) of line Nt-AO3-1. (C) Artemisinic acid accumulates to high levels during all developmental stages of line Nt-AO3-1, whereas in line Nt-AO2-1, it is detectable only in mature leaves of young and flowering plants. Relative accumulation of amorpha-4,11-diene and artemisinic alcohol was profiled, the tissue content of artemisinic acid was quantified using an authenticated reference standard (n = 5–6 plants per line; Figures 6 and 7). The sum of free and conjugated artemisinic alcohol and artemisinic acid were determined. y: young leaf; i: expanding (intermediate) leaf; m: fully expanded (mature) leaf. Error bars represent the SD. (D–G) Northern blot analysis of the expression of the four transgenes. Total RNA samples from N. tabacum wild-type (Nt-wt) plants and the transplastomic lines Nt-AO2-1 and Nt-AO3-1 (at the developmental stages 1–3) were separated in denaturing 1.5% agarose gels, blotted and hybridized to strand-specific RNA probes. Below each blot, the rRNA-containing region of the ethidium bromide-stained gel prior to blotting is shown as a control for RNA integrity and equal loading. The Nt-wt sample corresponds to RNA extracted from a fully expanded leaf of a N. tabacum wild-type plant at developmental stage 2. The smallest labeled band in each blot corresponds to the monocistronic mRNA. Larger bands represent unprocessed polycistronic precursor transcripts and read-through transcripts (which are common in plastids; e.g., Elghabi et al., 2011; Lu et al., 2013). CYP transcripts accumulate to higher levels in line Nt-AO3-1, while CPR transcripts accumulate to higher levels in line Nt-AO2-1, resulting in a higher CYP/CPR expression ratio in line Nt-AO3-1.DOI: http://dx.doi.org/10.7554/eLife.13664.008
+**Figure 4.:** Artemisinic compounds and expression levels of the transgenes were measured in young (stage 1), flowering (stage 2) and old plants (stage 3; see Figure 3—figure supplement 1). (A) Amorpha-4,11-diene accumulates to higher levels in line Nt-AO2-1 than in Nt-AO3-1. (B) Artemisinic alcohol is present at similar levels in early (1) and late stages (3) of development in lines Nt-AO2-1 and Nt-AO3-1, but it is slightly higher in the flowering stage (2) of line Nt-AO3-1. (C) Artemisinic acid accumulates to high levels during all developmental stages of line Nt-AO3-1, whereas in line Nt-AO2-1, it is detectable only in mature leaves of young and flowering plants. Relative accumulation of amorpha-4,11-diene and artemisinic alcohol was profiled, the tissue content of artemisinic acid was quantified using an authenticated reference standard (n = 5–6 plants per line; Figures 6 and 7). The sum of free and conjugated artemisinic alcohol and artemisinic acid were determined. y: young leaf; i: expanding (intermediate) leaf; m: fully expanded (mature) leaf. Error bars represent the SD. (D–G) Northern blot analysis of the expression of the four transgenes. Total RNA samples from N. tabacum wild-type (Nt-wt) plants and the transplastomic lines Nt-AO2-1 and Nt-AO3-1 (at the developmental stages 1–3) were separated in denaturing 1.5% agarose gels, blotted and hybridized to strand-specific RNA probes. Below each blot, the rRNA-containing region of the ethidium bromide-stained gel prior to blotting is shown as a control for RNA integrity and equal loading. The Nt-wt sample corresponds to RNA extracted from a fully expanded leaf of a N. tabacum wild-type plant at developmental stage 2. The smallest labeled band in each blot corresponds to the monocistronic mRNA. Larger bands represent unprocessed polycistronic precursor transcripts and read-through transcripts (which are common in plastids; e.g., Elghabi et al., 2011; Lu et al., 2013). CYP transcripts accumulate to higher levels in line Nt-AO3-1, while CPR transcripts accumulate to higher levels in line Nt-AO2-1, resulting in a higher CYP/CPR expression ratio in line Nt-AO3-1.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** CYP and CPR by qRT-PCR analysis.Samples from young (y), expanding (intermediate; i) and fully expanded (mature; m) leaves were measured in three technical replicates for each line, in early, flowering and late developmental stages (1–3; cf. Figure 3—figure supplement 1). The wild-type sample (wt) corresponds to a sample from a fully expanded leaf of N. tabacum cv. Petit Havana at the flowering stage. The qRT-PCR data confirm the northern blot analyses that had revealed a higher CYP to CPR expression ratio in transplastomic line Nt-AO3-1 than in line Nt-AO2-1.DOI: http://dx.doi.org/10.7554/eLife.13664.009
+**Figure 4—figure supplement 1.:** Samples from young (y), expanding (intermediate; i) and fully expanded (mature; m) leaves were measured in three technical replicates for each line, in early, flowering and late developmental stages (1–3; cf. Figure 3—figure supplement 1). The wild-type sample (wt) corresponds to a sample from a fully expanded leaf of N. tabacum cv. Petit Havana at the flowering stage. The qRT-PCR data confirm the northern blot analyses that had revealed a higher CYP to CPR expression ratio in transplastomic line Nt-AO3-1 than in line Nt-AO2-1.
 
-## Pathway optimization by combinatorial supertransformation
+### Pathway optimization by combinatorial supertransformation
 
 Having successfully implemented the canonical pathway of artemisinic acid synthesis into the chloroplast of tobacco plants, we next sought to maximize artemisinic acid production. In our best-performing transplastomic plants (Nt-AO3), artemisinic acid accumulation reached a maximum of 2–4 mg/kg fresh weight (FW), equivalent to approximately 20–40 mg/kg dry weight (DW; or 0.002–0.004% DW), a level significantly lower than artemisinin accumulation in A. annua (varying between 0.01 and 1% DW; Liu et al., 2011; Bryant et al., 2015). Recently, a number of accessory A. annua enzymes have been identified that enhance the flux through the pathway, including a cytochrome b5 (CYB5) that promotes electron transfer to P450 monooxygenases (Schenkman and Jansson, 2003), a new alcohol dehydrogenase (ADH1) that improves the oxidation of artemisinic alcohol to artemisinic aldehyde (Paddon et al., 2013) and an aldehyde dehydrogenase (ALDH1) that catalyzes the conversion of dihydroartemisinic aldehyde into dihydroartemisinic acid and, in yeast, also enhances the conversion of artemisinic aldehyde into artemisinic acid (Paddon et al., 2013; Figure 1). We also considered two additional enzymes: The double bond reductase 2 (DBR2) from A. annua introduces a branch point into the pathway by reducing artemisinic aldehyde to dihydroartemisinic aldehyde (Zhang et al., 2008) and, therefore, potentially can lead to the synthesis of artemisinin (Figure 1). Finally, the 1-deoxy-D-xylulose-5-phosphate reductoisomerase (DXR) from the cyanobacterium Synechocystis, a key regulatory enzyme in the MEP pathway of isoprenoid biosynthesis, was selected because its expression may improve precursor availability (Figure 1). Since the quantitative contributions of these enzyme activities to artemisinic acid biosynthesis are not well understood and, moreover, the optimum enzyme activities required to mediate maximum flux through the pathway are unknown, we decided to pursue a combinatorial supertransformation approach. Combinatorial transformation involves the mixing of multiple single-gene transformation constructs and their biolistic co-transformation followed by large-scale screening of many transgenic lines by their metabolic (or other) phenotypes (Zhu et al., 2008; Naqvi et al., 2009). Individual transgenic lines generated by this approach differ in the transgene combination they harbor as well as in transgene copy numbers and expression levels, thus facilitating selection of optimized genotypes that condition the desired metabolic output (Naqvi et al., 2009). We applied combinatorial nuclear transformation to our transplastomic Nt-AO2-1 (high accumulation of amorpha-4,11-diene but low levels of artemisinic acid) and Nt-AO3-1 (low accumulation of amorpha-4,11-diene and high accumulation of artemisinic acid) lines, assuming that artemisinic acid production can be substantially increased by identifying the optimum combination and expression levels of the additional pathway enzymes. Combinatorial supertransformation of transplastomic lines encoding a canonical metabolic pathway with a plasmid cocktail containing additional and/or accessory pathway enzymes represents a new approach in synthetic biology that we refer to as COSTREL (for COmbinatorial Supertransformation of Transplastomic REcipient Lines).
 
 Genes for the five candidate enzymes (CYB5, ADH1, ALDH1, DBR2, DXR) were cloned into individual expression cassettes, the resulting plasmids were mixed and co-bombarded with a kanamycin resistance gene into the nuclear genomes of transplastomic Nt-AO2-1 and Nt-AO3-1 plants. 612 kanamycin-resistant shoots (Nt-AO-CS lines) were generated by supertransformation of the transplastomic recipient lines Nt-AO2-1 and Nt-AO3-1. After rooting in kanamycin-containing medium, 512 plantlets were transferred to soil and grown to maturity under standard greenhouse conditions. At the onset of flowering, a fully expanded leaf was harvested for preliminary profiling of artemisinic acid and its precursors by GC-MS (see Materials and Methods). Based on growth, phenotype and fertility of the plants, 199 COSTREL lines were selected for metabolic screening of artemisinic compounds: 79 Nt-AO2-CS and 120 Nt-AO3-CS lines (Figure 5—source data 1). The various lines displayed great variation with respect to the accumulation levels of the compounds assayed (amorpha-4,11-diene, artemisinic alcohol, dihydroartemisinic alcohol, dihydroartemisinic acid and artemisinic acid). Importantly, COSTREL lines could be identified that contained strongly increased levels of the drug precursor artemisinic acid (Figure 5—source data 1).
 
-In combinatorial transformation, all transgenes that simultaneously enter the nucleus of the recipient cell usually integrate into the same genomic locus (most likely into a transient DNA double-strand break), and therefore co-segregate into the next generation (
+In combinatorial transformation, all transgenes that simultaneously enter the nucleus of the recipient cell usually integrate into the same genomic locus (most likely into a transient DNA double-strand break), and therefore co-segregate into the next generation (Naqvi et al., 2009). This feature allowed us to raise a T1 generation of supertransformed lines from seeds and repeat the metabolite profiling with T1 leaf material grown under highly standardized conditions. These analyses confirmed the results obtained with the T0 plants and revealed that, in the case of the Nt-AO2-CS lines, the highest increase in artemisinic acid content occurred in line 132 showing a 33-fold increase compared to its transplastomic recipient line Nt-AO2-1, whereas among the Nt-AO3-CS lines, line 180 reached an even 77-fold increase compared to transplastomic line Nt-AO3-1 (Figure 5—source data 1; Figure 5A). The trait artemisinic acid content was stable across generations, and the highest producer, line Nt-AO3-CS180, reached levels of 120.4 ± 42 mg per kg FW in the T1 generation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig5-v1.jpg)
 
-**Figure 5.:** Transplastomic lines Nt-AO2-1 and Nt-AO3-1 were combinatorially supertransformed with genes for additional enzymes of the pathway (Figure 1) to facilitate large-scale screening for increased artemisinic acid production. (A) Relative artemisinic acid levels (given in response/FW; see Materials and methods) in the T1 generation of two combinatorially supertransformed lines obtained with transplastomic recipient line Nt-AO2-1 (Nt-AO2-CS) and eight lines obtained with transplastomic recipient line Nt-AO3-1 (Nt-AO3-CS). An up to 77-fold increase in artemisinic acid was achieved (line Nt-AO3-CS180) in comparison to recipient line Nt-AO3-1. For a complete list of screened supertransformed lines, see Figure 5—source data 1. (B) Inverse relationship between artemisinic acid accumulation and artemisinic alcohol accumulation in supertransformed lines. Fully expanded leaves of 5–6 plants per line (at the flowering stage) were used for metabolite profiling. The sum of free and conjugated artemisinic alcohol and artemisinic acid were determined. (C) qRT-PCR analysis of transgene expression suggests a predominant role of ALDH1 in boosting artemisinic acid synthesis. 2–3 plants per line were measured, and the expression levels were ranked after One-way ANOVA comparison (p<0.05). Brown color indicates absence of gene expression. (D) Combinatorially supertransformed lines with a high increase in artemisinic acid (Nt-AO2-CS132 and Nt-AO3-CS180) display a similar phenotype as the corresponding transplastomic recipient line. WAT: weeks after transfer from tissue culture to soil; scale bars: 10 cm.DOI: http://dx.doi.org/10.7554/eLife.13664.01010.7554/eLife.13664.011Figure 5—source data 1.Nt-AO-CS lines.The supertransformed lines Nt-AO2-CS and Nt-AO3-CS are arranged according to their artemisinic acid content, from low to high. Fresh weight corrected response values (R/FW) for amorpha-4,11-diene were multiplied by 1,000 and expressed as Rx1000/FW. Dihydroartemisinic acid was only detectable in line Nt-AO3-CS180 at a low level of 0.03 R/FW. Asterisks mark the selected candidate lines further analyzed in the T1 generation. Lines were clustered according to artemisinic acid content using hierarchical cluster analysis based on Ward’s method. Cnd: cluster nd (artemisinic acid not detected); C1: cluster 1; C2: cluster 2; C3: cluster 3; C4: cluster 4; C5: cluster 5. Genes detected in the genomic PCR assays are numbered as follows: 1: dxr; 2: CYB5; 3: ADH1; 4: ALDH1; 5: DBR2; 0: no gene detected; ?: unclear result. nd: not detected; nm: not measured; -: not determined. Amorpha-4,11-diene values are from one measurement per line, values for artemisinic alcohol, dihydroartemisinic alcohol and artemisinic acid represent averages of three technical replicates per line. SD: standard deviation.DOI: http://dx.doi.org/10.7554/eLife.13664.011
+**Figure 5.:** Transplastomic lines Nt-AO2-1 and Nt-AO3-1 were combinatorially supertransformed with genes for additional enzymes of the pathway (Figure 1) to facilitate large-scale screening for increased artemisinic acid production. (A) Relative artemisinic acid levels (given in response/FW; see Materials and methods) in the T1 generation of two combinatorially supertransformed lines obtained with transplastomic recipient line Nt-AO2-1 (Nt-AO2-CS) and eight lines obtained with transplastomic recipient line Nt-AO3-1 (Nt-AO3-CS). An up to 77-fold increase in artemisinic acid was achieved (line Nt-AO3-CS180) in comparison to recipient line Nt-AO3-1. For a complete list of screened supertransformed lines, see Figure 5—source data 1. (B) Inverse relationship between artemisinic acid accumulation and artemisinic alcohol accumulation in supertransformed lines. Fully expanded leaves of 5–6 plants per line (at the flowering stage) were used for metabolite profiling. The sum of free and conjugated artemisinic alcohol and artemisinic acid were determined. (C) qRT-PCR analysis of transgene expression suggests a predominant role of ALDH1 in boosting artemisinic acid synthesis. 2–3 plants per line were measured, and the expression levels were ranked after One-way ANOVA comparison (p<0.05). Brown color indicates absence of gene expression. (D) Combinatorially supertransformed lines with a high increase in artemisinic acid (Nt-AO2-CS132 and Nt-AO3-CS180) display a similar phenotype as the corresponding transplastomic recipient line. WAT: weeks after transfer from tissue culture to soil; scale bars: 10 cm.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Levels of amorpha-4,11-diene in Nt-AO-CS lines do not correlate with the strong increase in artemisinic acid (Figure 5). Dihydroartemisinic alcohol accumulates to higher levels in lines Nt-AO2-CS95 and Nt-AO3-CS145. Dihydroartemisinic acid is detectable only in two of the best-performing COSTREL lines. Amorpha-4,11-diene levels were determined by GC-MS of VOCs. Dihydroartemisinic alcohol and dihydroartemisinic acid were measured by GC-MS analysis of soluble saponified metabolites. The sum of free and conjugated artemisinic compounds was determined. Error bars represent the SD (n = 5–6 plants per line).DOI: http://dx.doi.org/10.7554/eLife.13664.012
+**Figure 5—figure supplement 1.:** Levels of amorpha-4,11-diene in Nt-AO-CS lines do not correlate with the strong increase in artemisinic acid (Figure 5). Dihydroartemisinic alcohol accumulates to higher levels in lines Nt-AO2-CS95 and Nt-AO3-CS145. Dihydroartemisinic acid is detectable only in two of the best-performing COSTREL lines. Amorpha-4,11-diene levels were determined by GC-MS of VOCs. Dihydroartemisinic alcohol and dihydroartemisinic acid were measured by GC-MS analysis of soluble saponified metabolites. The sum of free and conjugated artemisinic compounds was determined. Error bars represent the SD (n = 5–6 plants per line).
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** Nt-AO3-CS180 (progeny of four different T1 lines), its transplastomic progenitor line Nt-AO3-1 and the wild type (wt).(A) Comparison of plant height at the same age. Plants were measured when the wild type started to flower. (B) Comparison of plant height at the same developmental stage. Transplastomic line Nt-AO3-1 and COSTREL line Nt-AO3-CS180 were measured five days later than the wild type to compensate for their slightly delayed onset of flowering. (C) Comparison of total leaf biomass (fresh weight, FW) at the same plant age. Plants were measured when the wild type started to flower. (D) Comparison of total leaf biomass at the same developmental stage. Transplastomic line Nt-AO3-1 and COSTREL line Nt-AO3-CS180 were measured five days later than the wild type to compensate for their delayed flowering. Note that, at the same plant age, transplastomic line Nt-AO3-1 and COSTREL line Nt-AO3-CS180 are slightly shorter and produce less total leaf biomass than the wild type. Once the transplastomic plants and the COSTREL lines flower (same developmental stage, five days later), the COSTREL plants reach a height and a total leaf biomass that is close to the values measured for the wild type. On average, the COSTREL plants are 7% shorter and produce 13% less leaf biomass than wild-type plants. No significant difference in either height or total leaf FW was observed between COSTREL plants and their transplastomic progenitor line Nt-AO3-1. Error bars represent the SD (n = 6). Different letters above the bars indicate significant differences as determined by One-way ANOVA (p<0.05) and the Holm-Sidak post-hoc test.DOI: http://dx.doi.org/10.7554/eLife.13664.013
+**Figure 5—figure supplement 2.:** (A) Comparison of plant height at the same age. Plants were measured when the wild type started to flower. (B) Comparison of plant height at the same developmental stage. Transplastomic line Nt-AO3-1 and COSTREL line Nt-AO3-CS180 were measured five days later than the wild type to compensate for their slightly delayed onset of flowering. (C) Comparison of total leaf biomass (fresh weight, FW) at the same plant age. Plants were measured when the wild type started to flower. (D) Comparison of total leaf biomass at the same developmental stage. Transplastomic line Nt-AO3-1 and COSTREL line Nt-AO3-CS180 were measured five days later than the wild type to compensate for their delayed flowering. Note that, at the same plant age, transplastomic line Nt-AO3-1 and COSTREL line Nt-AO3-CS180 are slightly shorter and produce less total leaf biomass than the wild type. Once the transplastomic plants and the COSTREL lines flower (same developmental stage, five days later), the COSTREL plants reach a height and a total leaf biomass that is close to the values measured for the wild type. On average, the COSTREL plants are 7% shorter and produce 13% less leaf biomass than wild-type plants. No significant difference in either height or total leaf FW was observed between COSTREL plants and their transplastomic progenitor line Nt-AO3-1. Error bars represent the SD (n = 6). Different letters above the bars indicate significant differences as determined by One-way ANOVA (p<0.05) and the Holm-Sidak post-hoc test.
 
-## Identification of limiting steps in artemisinic acid biosynthesis
+### Identification of limiting steps in artemisinic acid biosynthesis
 
 To obtain insights into pathway regulation and identify bottlenecks in artemisinic acid synthesis, we investigated correlations between pathway metabolites and between artemisinic acid accumulation and the set of transgenes expressed in the nucleus of Nt-AO2-CS and Nt-AO3-CS COSTREL lines.
 
-Increased amounts of artemisinic acid in the
+Increased amounts of artemisinic acid in the Nt-AO-CS lines were negatively correlated with the accumulation of artemisinic alcohol (Figure 5A,B), indicating that the efficiency of oxidation of the alcohol represents a key bottleneck in the pathway that we alleviated by supertransformation with the additional pathway genes. Importantly, artemisinic alcohol was reduced to nearly undetectable levels in the best-performing line Nt-AO3-CS180 suggesting that maximum conversion efficiency has been achieved (Figure 5B; Figure 5—source data 1). Another significant correlation at the metabolite level was a strong positive correlation between amorpha-4,11-diene and artemisinic alcohol (Tables 1 and 2) which may be a consequence of the enzymatic limitation downstream of artemisinic alcohol. By contrast, amorpha-4,11-diene was not significantly correlated with artemisinic acid accumulation. Dihydroartemisinic alcohol (presumably generated by an endogenous enzymatic activity in tobacco; Ting et al., 2013; Zhang et al., 2011), while accumulating in some lines, showed only a weak positive correlation with artemisinic acid in the Nt-AO2-CS but not in the Nt-AO3-CS lines (Figure 5—figure supplement 1; Tables 1 and 2; Figures 6 and 7). Dihydroartemisinic acid, the direct precursor of artemisinin, was detected only in line Nt-AO3-CS180 in the T0 generation and in lines Nt-AO3-CS53 and Nt-AO3-CS180 in the T1 generation (Figure 5—source data 1 and Figure 5—figure supplement 1; Figure 7C), and therefore had to be excluded from the correlation analysis.
+
+**Table 1.**
+ Correlation analysis of artemisinic compounds and transgenes introduced into transplastomic line Nt-AO2-1 by combinatorial supertransformation. The levels of the artemisinic compounds amorpha-4,11-diene, artemisinic alcohol, dihydroartemisinic alcohol and artemisinic acid, and the presence of the transgenes dxr, CYB5, ADH1, ALDH1 and DBR2 were correlated using Spearman’s method in the 39 Nt-AO2-CS lines analyzed by genomic PCR in the T0 generation (see Figure 5—source data 1) using the SPSS software. Dihydroartemisinic acid was excluded from this analysis, because it was not detectable in any of the Nt-AO2-CS lines. CC: correlation coefficient. Positive values indicate positive correlations and negative values indicate negative correlations. *: p<0.05; **: p<0.01; N: number of samples where both variables are present.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nt-AO2-CS</th>
+      <th></th>
+      <th>Amorpha-4,11-diene</th>
+      <th>Artemisinic alcohol</th>
+      <th>Dihydroartemi-sinic alcohol</th>
+      <th>Artemisinic acid</th>
+      <th>dxr</th>
+      <th>CYB5</th>
+      <th>ADH1</th>
+      <th>ALDH1</th>
+      <th>DBR2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Amorpha-4,11-diene</td>
+      <td>CC</td>
+      <td>1.000</td>
+      <td>0.602**</td>
+      <td>0.147</td>
+      <td>-0.112</td>
+      <td>0.067</td>
+      <td>-0.020</td>
+      <td>-0.009</td>
+      <td>-0.015</td>
+      <td>0.156</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>35</td>
+      <td>29</td>
+      <td>13</td>
+      <td>24</td>
+      <td>35</td>
+      <td>35</td>
+      <td>35</td>
+      <td>35</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Art. alcohol</td>
+      <td>CC</td>
+      <td>0.602**</td>
+      <td>1.000</td>
+      <td>-0.557*</td>
+      <td>-0.141</td>
+      <td>-0.159</td>
+      <td>-0.165</td>
+      <td>-0.170</td>
+      <td>0.013</td>
+      <td>-0.217</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>29</td>
+      <td>29</td>
+      <td>13</td>
+      <td>24</td>
+      <td>29</td>
+      <td>29</td>
+      <td>29</td>
+      <td>29</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Dihydroart. alcohol</td>
+      <td>CC</td>
+      <td>0.147</td>
+      <td>-0.557*</td>
+      <td>1.000</td>
+      <td>0.642*</td>
+      <td>0.462</td>
+      <td>0.248</td>
+      <td>0.383</td>
+      <td>0.180</td>
+      <td>0.496</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Art. acid</td>
+      <td>CC</td>
+      <td>-0.112</td>
+      <td>-0.141</td>
+      <td>0.642*</td>
+      <td>1.000</td>
+      <td>0.404</td>
+      <td>0.159</td>
+      <td>0.179</td>
+      <td>0.207</td>
+      <td>0.317</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>24</td>
+      <td>24</td>
+      <td>13</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dxr</td>
+      <td>CC</td>
+      <td>0.067</td>
+      <td>-0.159</td>
+      <td>0.462</td>
+      <td>0.404</td>
+      <td>1.000</td>
+      <td>0.643**</td>
+      <td>0.402*</td>
+      <td>0.546**</td>
+      <td>0.578**</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>35</td>
+      <td>29</td>
+      <td>13</td>
+      <td>24</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CYB5</td>
+      <td>CC</td>
+      <td>-0.020</td>
+      <td>-0.165</td>
+      <td>0.248</td>
+      <td>0.159</td>
+      <td>0.643**</td>
+      <td>1.000</td>
+      <td>0.192</td>
+      <td>0.507**</td>
+      <td>0.793**</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>35</td>
+      <td>29</td>
+      <td>13</td>
+      <td>24</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ADH1</td>
+      <td>CC</td>
+      <td>-0.009</td>
+      <td>-0.170</td>
+      <td>0.383</td>
+      <td>0.179</td>
+      <td>0.402*</td>
+      <td>0.192</td>
+      <td>1.000</td>
+      <td>0.372*</td>
+      <td>0.270</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>35</td>
+      <td>29</td>
+      <td>13</td>
+      <td>24</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ALDH1</td>
+      <td>CC</td>
+      <td>-0.015</td>
+      <td>0.013</td>
+      <td>0.180</td>
+      <td>0.207</td>
+      <td>0.546**</td>
+      <td>0.507**</td>
+      <td>0.372*</td>
+      <td>1.000</td>
+      <td>0.420**</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>35</td>
+      <td>29</td>
+      <td>13</td>
+      <td>24</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DBR2</td>
+      <td>CC</td>
+      <td>0.156</td>
+      <td>-0.217</td>
+      <td>0.496</td>
+      <td>0.317</td>
+      <td>0.578**</td>
+      <td>0.793**</td>
+      <td>0.270</td>
+      <td>0.420**</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>35</td>
+      <td>29</td>
+      <td>13</td>
+      <td>24</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Correlation analysis of artemisinic compounds and transgenes introduced into transplastomic line Nt-AO3-1 by combinatorial supertransformation. The levels of the artemisinic compounds amorpha-4,11-diene, artemisinic alcohol, dihydroartemisinic alcohol and artemisinic acid, and the presence of the transgenes dxr, CYB5, ADH1, ALDH1 and DBR2 were correlated using Spearman’s method in the 61 Nt-AO3-CS lines analyzed by genomic PCR in the T0 generation (see Figure 5—source data 1) using the SPSS software. Dihydroartemisinic acid had to be excluded from this analysis, because it was detectable only in one of the Nt-AO3-CS lines in the T0 generation. Note that the negative correlation between artemisinic alcohol and artemisinic acid (Figure 5A,B) is restricted to those lines that display increased artemisinic acid contents, and therefore is not statistically significant over all COSTREL lines analyzed (cf. Figure 5—source data 1). CC: correlation coefficient. Positive values indicate positive correlations and negative values indicate negative correlations. *: p<0.05; **: p<0.01; N: number of samples where both variables are present.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nt-AO3-CS</th>
+      <th></th>
+      <th>Amorpha-4,11-diene</th>
+      <th>Artemisinic alcohol</th>
+      <th>Dihydroartemi-sinic alcohol</th>
+      <th>Artemisinic acid</th>
+      <th>dxr</th>
+      <th>CYB5</th>
+      <th>ADH1</th>
+      <th>ALDH1</th>
+      <th>DBR2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Amorpha-4,11-diene</td>
+      <td>CC</td>
+      <td>1.000</td>
+      <td>0.363**</td>
+      <td>0.079</td>
+      <td>0.237</td>
+      <td>0.006</td>
+      <td>0.082</td>
+      <td>0.439**</td>
+      <td>-0.032</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>60</td>
+      <td>58</td>
+      <td>39</td>
+      <td>59</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Art. alcohol</td>
+      <td>CC</td>
+      <td>0.363**</td>
+      <td>1.000</td>
+      <td>0.124</td>
+      <td>-0.081</td>
+      <td>-0.088</td>
+      <td>-0.119</td>
+      <td>0.086</td>
+      <td>0.026</td>
+      <td>-0.009</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>58</td>
+      <td>59</td>
+      <td>39</td>
+      <td>59</td>
+      <td>59</td>
+      <td>59</td>
+      <td>59</td>
+      <td>59</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Dihydroart. alcohol</td>
+      <td>CC</td>
+      <td>0.079</td>
+      <td>0.124</td>
+      <td>1.000</td>
+      <td>0.029</td>
+      <td>-0.169</td>
+      <td>0.153</td>
+      <td>0.306</td>
+      <td>0.195</td>
+      <td>0.219</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Art. acid</td>
+      <td>CC</td>
+      <td>0.237</td>
+      <td>-0.081</td>
+      <td>0.029</td>
+      <td>1.000</td>
+      <td>0.241</td>
+      <td>0.183</td>
+      <td>0.217</td>
+      <td>0.386**</td>
+      <td>0.141</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>59</td>
+      <td>59</td>
+      <td>39</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dxr</td>
+      <td>CC</td>
+      <td>0.006</td>
+      <td>-0.088</td>
+      <td>-0.169</td>
+      <td>0.241</td>
+      <td>1.000</td>
+      <td>0.153</td>
+      <td>0.224</td>
+      <td>0.415**</td>
+      <td>0.170</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>60</td>
+      <td>59</td>
+      <td>39</td>
+      <td>60</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CYB5</td>
+      <td>CC</td>
+      <td>0.082</td>
+      <td>-0.119</td>
+      <td>0.153</td>
+      <td>0.183</td>
+      <td>0.153</td>
+      <td>1.000</td>
+      <td>0.185</td>
+      <td>0.322*</td>
+      <td>0.503**</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>60</td>
+      <td>59</td>
+      <td>39</td>
+      <td>60</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ADH1</td>
+      <td>CC</td>
+      <td>0.439**</td>
+      <td>0.086</td>
+      <td>0.306</td>
+      <td>0.217</td>
+      <td>0.224</td>
+      <td>0.185</td>
+      <td>1.000</td>
+      <td>0.339**</td>
+      <td>0.252*</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>60</td>
+      <td>59</td>
+      <td>39</td>
+      <td>60</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ALDH1</td>
+      <td>CC</td>
+      <td>-0.032</td>
+      <td>0.026</td>
+      <td>0.195</td>
+      <td>0.386**</td>
+      <td>0.415**</td>
+      <td>0.322*</td>
+      <td>0.339**</td>
+      <td>1.000</td>
+      <td>0.444**</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>60</td>
+      <td>59</td>
+      <td>39</td>
+      <td>60</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DBR2</td>
+      <td>CC</td>
+      <td>0.049</td>
+      <td>-0.009</td>
+      <td>0.219</td>
+      <td>0.141</td>
+      <td>0.170</td>
+      <td>0.503**</td>
+      <td>0.252*</td>
+      <td>0.444**</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>60</td>
+      <td>59</td>
+      <td>39</td>
+      <td>60</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig6-v1.jpg)
 
-**Figure 6.:** Characteristic peaks for one specific fragment at the expected retention time or index are displayed for each compound. (A) Amorpha-4,11-diene-specific mass feature 119 at a retention time of 1564 s. This metabolite is present in all Nt-AO lines, and at slightly higher levels in lines Nt-AO2-1 and Nt-AO4-1. (B) Artemisinic alcohol-specific mass feature 202 at a retention index of 1784. The compound is present at similar levels in all Nt-AO lines. Both compounds are absent from the wild-type sample. In addition to the chromatograms, the characteristic mass spectrum (m/z) of each compound is shown for the standard and for one of the artemisinic acid operon lines. EPY224: yeast strain that produces amorpha-4,11-diene (Ro et al., 2006). One representative plant per line is depicted. Mass spectra and mass features of trimethylsilylated artemisinic alcohol are shown.DOI: http://dx.doi.org/10.7554/eLife.13664.016
+**Figure 6.:** Characteristic peaks for one specific fragment at the expected retention time or index are displayed for each compound. (A) Amorpha-4,11-diene-specific mass feature 119 at a retention time of 1564 s. This metabolite is present in all Nt-AO lines, and at slightly higher levels in lines Nt-AO2-1 and Nt-AO4-1. (B) Artemisinic alcohol-specific mass feature 202 at a retention index of 1784. The compound is present at similar levels in all Nt-AO lines. Both compounds are absent from the wild-type sample. In addition to the chromatograms, the characteristic mass spectrum (m/z) of each compound is shown for the standard and for one of the artemisinic acid operon lines. EPY224: yeast strain that produces amorpha-4,11-diene (Ro et al., 2006). One representative plant per line is depicted. Mass spectra and mass features of trimethylsilylated artemisinic alcohol are shown.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/13664/elife-13664-fig7-v1.jpg)
 
-**Figure 7.:** Characteristic peaks for one specific fragment at the expected retention index are shown for each compound. (A) Artemisinic acid-specific mass feature 216 is shown at a retention index of 1850. This compound accumulates to higher levels in lines Nt-AO1-1 and Nt-AO3-1. (B) Dihydroartemisinic alcohol-specific mass feature 162 at a retention index of 1789. The compound is present at high levels in COSTREL line Nt-AO2-CS95, but is absent from transplastomic line Nt-AO2-1. (C) Dihydroartemisinic acid-specific mass feature 163 at a retention index of 1859. This compound accumulates in COSTREL line Nt-AO3-CS180, but is absent from transplastomic line Nt-AO3-1. All compounds are absent from the wild-type sample. In addition to the chromatograms, the characteristic mass spectrum of each compound is shown for the standard and for one of the artemisinic acid operon lines. Mass spectra and mass features of trimethylsilylated artemisinic compounds are shown.DOI: http://dx.doi.org/10.7554/eLife.13664.017
+**Figure 7.:** Characteristic peaks for one specific fragment at the expected retention index are shown for each compound. (A) Artemisinic acid-specific mass feature 216 is shown at a retention index of 1850. This compound accumulates to higher levels in lines Nt-AO1-1 and Nt-AO3-1. (B) Dihydroartemisinic alcohol-specific mass feature 162 at a retention index of 1789. The compound is present at high levels in COSTREL line Nt-AO2-CS95, but is absent from transplastomic line Nt-AO2-1. (C) Dihydroartemisinic acid-specific mass feature 163 at a retention index of 1859. This compound accumulates in COSTREL line Nt-AO3-CS180, but is absent from transplastomic line Nt-AO3-1. All compounds are absent from the wild-type sample. In addition to the chromatograms, the characteristic mass spectrum of each compound is shown for the standard and for one of the artemisinic acid operon lines. Mass spectra and mass features of trimethylsilylated artemisinic compounds are shown.
 
 To correlate the genotype of the COSTREL lines with their metabolic phenotypes, the transgene sets present in the nucleus of Nt-AO2-CS and Nt-AO3-CS lines were determined (Figure 5—source data 1). Statistical analysis revealed that elevated artemisinic acid levels in Nt-AO3-CS lines were most strongly correlated with the presence of the ALDH1 transgene. Weaker (and statistically not significant) correlations were observed between high artemisinic acid levels and the presence of dxr and ADH1, and, in Nt-AO2-CS lines, also the DBR2 and ALDH1 transgenes (Tables 1 and 2). These results indicate that ALDH1 and dxr are most likely the genes with the greatest impact on the increase in artemisinic acid content. As transgene presence is not necessarily indicative of transgene expression, we measured mRNA accumulation in the T1 generation of a selected set of COSTREL lines by qRT-PCR analyses. The results support the importance of dxr, ADH1, ALDH1 and DBR2 in boosting artemisinic acid synthesis and revealed that the best-performing line (Nt-AO3-CS180) expresses dxr, ADH1, ALDH1 and DBR2 to high levels (Figure 5C).
 
@@ -119,11 +617,11 @@ By transplastomic introduction of the core pathway for artemisinic acid synthesi
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 Tobacco plants (Nicotiana tabacum cv. Petit Havana) were grown under sterile conditions on agar-solidified MS medium (Murashige and Skoog, 1962) supplemented with 30 g/L sucrose. Genetically modified plants were selected, propagated and rooted in the same medium containing additionally 500 mg/L spectinomycin (transplastomic plants) or 50 mg/L kanamycin (combinatorially supertransformed plants). For sampling and seed production, plants were transferred to soil and grown under standard greenhouse conditions.
 
-## Construction of transformation vectors
+### Construction of transformation vectors
 
 The synthetic operon constructs for chloroplast transformation (pAO1-4) are based on plastid transformation vector pKP9 (Zhou et al., 2008). They all contain the four genes required for the canonical artemisinic acid biosynthetic pathway in Artemisia annua: FPS (AF112881), ADS (AF138959), CYP71AV1 (CYP, DQ268763) and CPR (DQ318192; Figure 1). The genes were codon optimized for expression in the chloroplast and chemically synthesized (GeneArt, Regensburg, Germany). The four genes were then assembled into synthetic operons as follows. The CYP71AV1 (CYP) gene was synthesized with a Shine-Dalgarno (SD) sequence derived from the chloroplast rbcL gene and with the flanking restriction sites NheI (at the 5’ end) and XbaI (at the 3’ end). The gene was cloned into pZF1 replacing the P24 gene (Zhou et al., 2008) and generating construct pZF83. pZF1 is an intermediate cloning construct that contains the promoter from the rRNA operon from tobacco (Prrn), the leader sequence from the gene 10 of bacteriophage T7 (T7 Lg10), the P24 capsid protein gene of HIV-1 and the terminator of the chloroplast rbcL gene (TrbcL; Zhou et al., 2008). A fragment containing the rRNA operon promoter from Chlamydomonas reinhardtii (Cr Prrn), the T7 Lg10, the gfp gene, the terminator of the atpA gene from the chloroplast genome of C. reinhardtii (Cr TatpA) and the intercistronic expression element (IEE; Zhou et al., 2007) was excised with SacI and NheI from a modified version of construct pDK139 in which the ClaI, SalI and XhoI restriction sites between Cr TatpA and IEE were removed by XhoI/HindIII digestion and blunting of the overhanging ends by a fill-in reaction with Klenow enzyme. pDK139 is a chloroplast transformation construct based on vector pHK20 (Kuroda and Maliga, 2001). The excised fragment was cloned into pZF83, replacing the region spanning Prrn and T7 Lg10 and generating construct pZF84. Next, the FPS gene was synthesized flanked by NdeI and PacI restriction sites at the 5’ and 3’ ends, respectively. The excised NdeI/PacI restriction fragment was cloned into the identically digested pZF84, replacing the gfp gene and giving rise to plasmid pZF85. The complete fragment from Cr Prrn to TrbcL was then cut out from pZF85 with SacI and ClaI and ligated into chloroplast transformation vector pKP9 (Zhou et al., 2008), producing clone pZF90. The ADS gene was synthesized (flanked by NcoI and EcoRV restriction sites) and cloned into vector pKCZaphA-6, replacing the aphA-6 gene and giving rise to plasmid pZF86. pKCZaphA-6 (Fleischmann et al., 2011) is an intermediate cloning construct that contains the C. reinhardtii psbA promoter (Cr PpsbA), the C. reinhardtii psbA leader (Cr LpsbA), the aphA-6 gene for kanamycin resistance and the C. reinhardtii rbcL terminator (Cr TrbcL). Next, the terminator of the tobacco rps16 gene (Trps16) was amplified by PCR with primers containing EcoRV and PstI restriction sites at the 5’ and 3’ ends, respectively, and cloned into pZF86 digested with the same enzymes, generating vector pZF87. The CPR gene was synthesized as a PstI/SphI restriction fragment with the rbcL SD sequence and an IEE element at its 5’ end. The fragment was cloned into pZF87 digested with the same enzymes, giving rise to pZF88. Artemisinic acid operon constructs pAO1 and pAO2 were generated by digesting pZF88 with ClaI (releasing the cassette containing the ADS-CPR dicistron between Cr PpsbA and Cr TrbcL) and cloning this cassette into pZF90 digested with the same enzyme. In vector pAO1, the ADS-CPR cassette is integrated in sense orientation, downstream of the FPS-CYP cassette, whereas in construct pAO2, the fragment is integrated in antisense (Figure 2A). For generation of pAO3 and pAO4, the Cr PpsbA - Cr LpsbA fragment was eliminated from pZF88 by digestion with MluI and NcoI and subsequently replaced by a PCR-amplified Cr PpsbA - T7 Lg10 fragment obtained by digestion with the same enzymes, thus generating plasmid clone pZF89. pZF89 was then digested with ClaI and cloned into pZF90 in a similar way as for generation of pAO1 and pAO2. Construct pAO3 originates from integration of the ADS-CPR cassette in sense orientation, whereas pAO4 harbors the cassette in antisense orientation (Figure 2A).
 
@@ -131,39 +629,200 @@ Constructs pCS1-5 for combinatorial supertransformation contain the genes dxr (B
 
 The plasmid cocktail for combinatorial transformation was produced by mixing equal quantities of constructs pCS1-5 (each at a concentration of 2 µg/µL) and plasmid pPH200 that contains the nptII gene for kanamycin resistance between the CaMV 35S promoter and terminator.
 
-## Plastid transformation and selection of transplastomic tobacco plants
+### Plastid transformation and selection of transplastomic tobacco plants
 
 For chloroplast transformation, young leaves harvested from aseptically grown wild-type tobacco plants were bombarded with gold particles covered with plasmid-DNA (pAO1-4) using the DuPont PDS1000He biolistic gun. Spectinomycin-resistant shoots were selected on plant regeneration medium with 500 mg/L spectinomycin (Svab and Maliga, 1993). Primary transformants were identified by Southern blot analysis and at least one additional regeneration round was performed to obtain homoplasmic plants. Independently generated transplastomic lines are designated by the construct number followed by the number of the individual line (e.g., Nt-AO1-2 stands for Nicotiana tabacum plant obtained with construct pAO1, transplastomic line number 2). Homoplasmy was confirmed by Southern blot analyses and seed assays.
 
-## Combinatorial nuclear supertransformation and selection of transgenic tobacco plants
+### Combinatorial nuclear supertransformation and selection of transgenic tobacco plants
 
 Young leaves from transplastomic plants Nt-AO2-1 and Nt-AO3-1 grown under aseptic conditions were harvested and bombarded with gold particles coated with a plasmid DNA mixture containing pCS1-5 and pPH200 using the DuPont PDS1000He biolistic gun. Kanamycin-resistant shoots were selected on plant regeneration medium containing 50 mg/L kanamycin. Resistant shoots were rooted in the same medium, then transferred to soil and grown to maturity under standard greenhouse conditions. Material from T0 plants was used for initial molecular analyses and preliminary metabolite profiling experiments. To generate standardized material for metabolite measurements and molecular analysis of the T1 generation, seeds from candidate supertransformed lines were surface-sterilized and sown on MS medium with 200 mg/L kanamycin. After three weeks, six green (resistant) seedlings per line were transferred to soil and raised under standard greenhouse conditions.
 
-## Plant growth and biomass measurements
+### Plant growth and biomass measurements
 
 Plant height and total leaf biomass were determined for six plants each of N. tabacum wild type (wt), the transplastomic line Nt-AO3-1 and the progeny of four Nt-AO3-CS180 T1 lines. Measurements were performed at two different stages. The first measurement was done when the wild-type plants started to flower ('same age'). The second measurement was done when the Nt-AO3-1 and Nt-AO3-CS180 plants started to flower (typically five days after the first measurement), to compensate for the slightly delayed development of the transplastomic plants and the COSTREL plants. The height was measured from the top of the pot to the top of the inflorescence. The total leaf biomass (fresh weight, FW) was determined by weighing all leaves of an individual plant.
 
-## Isolation of nucleic acids
+### Isolation of nucleic acids
 
 Total plant DNA was extracted from frozen leaf material by a CTAB-based protocol (Doyle and Doyle, 1990). For total RNA extraction, samples of 300–400 mg of frozen powdered plant material were extracted with the peqGOLD Trifast reagent (Peqlab GmbH, Erlangen, Germany), following the manufacturer’s instructions. The RNA pellet was resuspended in 100 µL of RNase-free water and mixed with 250 µL buffer RA1 from the NucleoSpin RNA Plant kit (Macherey-Nagel, Düren, Germany). 350 µL of 70% EtOH were mixed with the RNA solution, passed through the RNA-binding column and purified following the protocol of the supplier. Finally, the RNA was eluted in 45 µL of RNase-free water and stored at -80°C until use.
 
-## cDNA synthesis
+### cDNA synthesis
 
 Prior to reverse transcription, isolated RNAs were tested for the presence of contaminating DNA by a standard PCR using 1 ng of RNA as template. If no DNA amplification was observed, cDNA was synthesized as follows. 1.5 µg of RNA were incubated with 1 µL of oligo(dT) primer (10 µM) and 1 µL of dNTPs (10 mM) for 5 min at 65°C. Then, 7 µL of a master mix were added (4 µL of 5x First Strand buffer, 1 µL 0.1 M DTT, 40 U RNaseOUT and 200 U SuperScript III Reverse Transcriptase; Invitrogen, Carlsbad, CA) and incubated for 1 hr at 50°C, followed by an inactivation step of 15 min at 70°C. Alternatively, cDNA was synthesized using the QuantiTect Reverse Transcription kit (Qiagen, Hilden, Germany) following the manufacturer's instructions. The quality of the cDNA was tested by standard PCR.
 
-## Quantitative real-time PCR (qRT-PCR)
+### Quantitative real-time PCR (qRT-PCR)
 
-Quantitative RT-PCR was performed in a LightCycler 480 (Roche, Mannheim, Germany) using cDNA as template in 5 µL reactions containing 1 µL of each gene-specific primer (1.25 µM; Table 3), 2.5 µL of the LightCycler 480 SYBR green I Master mix and 0.5 µL of a 1:50 cDNA dilution. Three biological (independent plants) and three technical replicates per line were analyzed. The relative transcript levels were determined using the formula (1+E)-ΔΔCt where E is the binding efficiency of the primers (Pfaffl, 2001). E was calculated from the slope of the expression level of each gene in a dilution series of a given cDNA. Results were normalized to the mRNA levels of ACTIN as a housekeeping gene (Table 3), and relative mRNA accumulation levels were calculated according to the delta-delta Ct method. To identify the key genes involved in the increased levels of artemisinic acid in supertransformed plants, the expression levels of each transgene (in all lines were it was present) were compared by One-way ANOVA analysis (p<0.05). The results were expressed as a heat map, where the darkest green color represents the highest expression level (brown: no expression).10.7554/eLife.13664.018Table 3.List of oligonucleotides used in this study. The reverse primers (_R) for amplification of the genes FPS, ADS, CYP and CPR contain the sequence of the T7 promoter (bold) to facilitate in vitro transcription.DOI: http://dx.doi.org/10.7554/eLife.13664.018GenePrimerSequence (5'→3')PurposedxrDXR_FCAACCTATGTACGTTGTTGGAGAAGAGGGqPCRDXR_RCTGGAGCACCAGCAATCAATGTCTCCYB5CYB5_FCCAGGAGGAGATGAAGTTCTTTTGGCTGqPCRCYB5_RGCTGGAGGAACGTAAGCTCTCTTCTTTGADH1qADH1_F2TCCAGGTCATGAAGGTGTTGqPCRqADH1_R2ATTGTCCACACTCACCAAGGALDH1ALDH1_FCCTGTTTCTTTGGAATTGGGTGGTAAGTCqPCRALDH1_RCAGCAACACACATCTCACCTTTGTTAGTGDBR2DBR2_FGAGCAAGTTGAGGGTTGGAAGAAAGTTGqPCRDBR2_RTAGAAGAGATAGGAGCAGCTCCACCTGCYPCYP_qFCCTGAACCTTGGAGATTACCqPCRCYP_qRGCCCATTTAGGAGAAGATACAACCPRCPR_qFCCTGTTGGAATGGGTGATGqPCRCPR_qRCCTACAGCAGCAGTATAAGGAGACTINqTac9actin fCCTGAGGTCCTTTTCCAACCAqPCRqTac9actin rGGATTCCGGCAGCTTCCATTFPSFPS_probe_FCCTGCTTTTGAATTTGATGATGRNA probeFPS_probe_RTAATACGACTCACTATAGGGCGAAACCAACAAGGTTGTCCADSADS_probe_FCTGAAGCTGTTGAAAGATGGTCRNA probeADS_probe_RTAATACGACTCACTATAGGGGGAGCAGATACAGCCCATTCCYPCYP_probe_FTCCTCATCGAGGAGTACGAGRNA probeCYP_probe_RTAATACGACTCACTATAGGGTTACAGGTCGTCCAGATCCAGCPRCPR_probe_FATGATTGGTCCTGGAACTGGRNA probeCPR_probe_RTAATACGACTCACTATAGGGGCCATTCCTTTAGCATCTCC
+Quantitative RT-PCR was performed in a LightCycler 480 (Roche, Mannheim, Germany) using cDNA as template in 5 µL reactions containing 1 µL of each gene-specific primer (1.25 µM; Table 3), 2.5 µL of the LightCycler 480 SYBR green I Master mix and 0.5 µL of a 1:50 cDNA dilution. Three biological (independent plants) and three technical replicates per line were analyzed. The relative transcript levels were determined using the formula (1+E)-ΔΔCt where E is the binding efficiency of the primers (Pfaffl, 2001). E was calculated from the slope of the expression level of each gene in a dilution series of a given cDNA. Results were normalized to the mRNA levels of ACTIN as a housekeeping gene (Table 3), and relative mRNA accumulation levels were calculated according to the delta-delta Ct method. To identify the key genes involved in the increased levels of artemisinic acid in supertransformed plants, the expression levels of each transgene (in all lines were it was present) were compared by One-way ANOVA analysis (p<0.05). The results were expressed as a heat map, where the darkest green color represents the highest expression level (brown: no expression).
 
-## Synthesis of hybridization probes and gel blot hybridizations
+**Table 3.**
+ List of oligonucleotides used in this study. The reverse primers (_R) for amplification of the genes FPS, ADS, CYP and CPR contain the sequence of the T7 promoter (bold) to facilitate in vitro transcription.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Primer</th>
+      <th>Sequence (5'→3')</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dxr</td>
+      <td>DXR_F</td>
+      <td>CAACCTATGTACGTTGTTGGAGAAGAGGG</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DXR_R</td>
+      <td>CTGGAGCACCAGCAATCAATGTCTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CYB5</td>
+      <td>CYB5_F</td>
+      <td>CCAGGAGGAGATGAAGTTCTTTTGGCTG</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CYB5_R</td>
+      <td>GCTGGAGGAACGTAAGCTCTCTTCTTTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADH1</td>
+      <td>qADH1_F2</td>
+      <td>TCCAGGTCATGAAGGTGTTG</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>qADH1_R2</td>
+      <td>ATTGTCCACACTCACCAAGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALDH1</td>
+      <td>ALDH1_F</td>
+      <td>CCTGTTTCTTTGGAATTGGGTGGTAAGTC</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ALDH1_R</td>
+      <td>CAGCAACACACATCTCACCTTTGTTAGTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DBR2</td>
+      <td>DBR2_F</td>
+      <td>GAGCAAGTTGAGGGTTGGAAGAAAGTTG</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DBR2_R</td>
+      <td>TAGAAGAGATAGGAGCAGCTCCACCTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CYP</td>
+      <td>CYP_qF</td>
+      <td>CCTGAACCTTGGAGATTACC</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CYP_qR</td>
+      <td>GCCCATTTAGGAGAAGATACAAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CPR</td>
+      <td>CPR_qF</td>
+      <td>CCTGTTGGAATGGGTGATG</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CPR_qR</td>
+      <td>CCTACAGCAGCAGTATAAGGAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACTIN</td>
+      <td>qTac9actin f</td>
+      <td>CCTGAGGTCCTTTTCCAACCA</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>qTac9actin r</td>
+      <td>GGATTCCGGCAGCTTCCATT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FPS</td>
+      <td>FPS_probe_F</td>
+      <td>CCTGCTTTTGAATTTGATGATG</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FPS_probe_R</td>
+      <td>TAATACGACTCACTATAGGGCGAAACCAACAAGGTTGTCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADS</td>
+      <td>ADS_probe_F</td>
+      <td>CTGAAGCTGTTGAAAGATGGTC</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ADS_probe_R</td>
+      <td>TAATACGACTCACTATAGGGGGAGCAGATACAGCCCATTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CYP</td>
+      <td>CYP_probe_F</td>
+      <td>TCCTCATCGAGGAGTACGAG</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CYP_probe_R</td>
+      <td>TAATACGACTCACTATAGGGTTACAGGTCGTCCAGATCCAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CPR</td>
+      <td>CPR_probe_F</td>
+      <td>ATGATTGGTCCTGGAACTGG</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CPR_probe_R</td>
+      <td>TAATACGACTCACTATAGGGGCCATTCCTTTAGCATCTCC</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Synthesis of hybridization probes and gel blot hybridizations
 
 For Southern blot analysis, samples of 2–3 µg DNA were digested with BamHI, separated by electrophoresis in 0.8% agarose gels and transferred onto Hybond XL nylon membranes (GE Healthcare, Little Chalfont, UK) by capillary blotting. For northern blot analysis, samples of 4–5 µg total RNA were separated in denaturing formaldehyde-containing agarose gels (1.5%) and transferred onto nylon membranes. As RFLP probe, a 550-bp fragment of the psaB gene was amplified by PCR using primer pair P7247 / P7244 (Wurbs et al., 2007) and purified. The probe was labeled with [α32P]dCTP by random priming (Multiprime DNA labeling kit; GE Healthcare). Probes for FPS, ADS, CYP and CPR were generated by in vitro transcription and radioactive labeling with [α32P]UTP. PCR fragments of 200–300 bp were amplified for each gene using specific primers (Table 3) that contain the T7 promoter sequence in the reverse primer. Radiolabeled probes were generated by incubating 5 µL PCR product with 4 µL H2O, 2 µL 10x buffer, 3 µL of an equimolar mixture of ATP, CTP and GTP, 2 µL T7 RNA polymerase (15 U/µL) and 4 µL [α32P]UTP (40 µCi) for 30 min at 37°C. Hybridizations were performed overnight at 65°C. Following standard washing steps, autoradiographic screens were exposed to the membranes for 3–4 hr and then scanned in a Typhoon TRIO+ scanner (GE Healthcare).
 
-## Cultivation of yeast reference strains
+### Cultivation of yeast reference strains
 
 The following genetically engineered strains of Saccharomyces cerevisiae were used as reference strains for artemisinic metabolites (Ro et al., 2008): (i) EPY300 (MATαα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 PGAL1-tHMGR PGAL1-upc2-1 erg9::PMET3-ERG9 PGAL1-tHMGR PGAL1-ERG20; Ro et al., 2008), a control strain that does not produce artemisinic compounds, (ii) EPY224 (EPY300 transformed with plasmid pRS425-Leu::ADS; Ro et al., 2006), a strain that produces amorpha-4,11-diene, and (iii) EPY302 (EPY300 transformed with plasmids pRS425-Leu::ADS and pESC-Ura::AMO/CPR; Ro et al., 2006), a strain that produces artemisinic acid and artemisinic acid pathway intermediates. Plasmid pRS425-Leu::ADS complements the leucine auxotrophy and plasmid pESC-Ura::AMO/CPR complements the uracil auxotrophy of strain EPY300. The three yeast strains were kindly provided by Dr. Jay D. Keasling (UC Berkley, USA). Yeast strains were maintained on solid synthetically defined (SD) medium supplemented with 2% (w/v) sucrose and 0.002% (w/v) uracil for EPY224, and additionally 0.01% (w/v) leucine for EPY300. Induction of the synthesis of artemisinic compounds in strains EPY224 and EPY302 was done by adding 1.8% (w/v) galactose and 1 mM methionine to liquid SD medium and reducing the sucrose content to 0.2% (w/v). Yeast strains were incubated for 120 hr at 30°C and 160 rpm, until they reached an OD600 of 1.4. Control strain EPY300 was incubated under the same conditions in liquid SD medium supplemented with 2% (w/v) sucrose, 0.002% (w/v) uracil and 0.01% (w/v) leucine.
 
-## GC-MS analyses
+### GC-MS analyses
 
 For GC-MS profiling of volatile organic compounds (VOCs), leaves of N. tabacum plants were collected, immediately frozen in liquid nitrogen and processed in a cryogenic grinding robot (Labman, North Yorkshire, UK). Aliquots of 500 ± 10 mg of frozen powdered leaf tissue were weighed in frozen microcentrifuge tubes, and then transferred to frozen 20 mL head-space screw cap vials. The powdered plant material was kept at 15°C in the closed vials for at least 1 hr and then incubated for 10 min at 50°C prior to VOC analysis. VOCs were sampled in a replicated randomized block sequence design by solid phase micro extraction (SPME) using a StableFlex™ SPME fiber with 65 μm polydimethylsiloxane/divinylbenzene coating (Supelco, Bellefonte, USA), and profiled as described previously (Agudelo-Romero et al., 2015; 2013) using a DB-624 capillary column of 60 m length, 0.25 mm internal diameter and 1.40 µm film thickness (Agilent Technologies Deutschland GmbH, Waldbronn, Germany). VOCs were analyzed by gas chromatography coupled to electron impact ionization/quadrupole mass spectrometry (GC-EI/QUAD-MS) using an Agilent 6890N24 gas chromatograph connected to an Agilent 5975B VL mass spectrometer (Agilent Technologies, Böblingen, Germany). Data files were visually controlled, exported in NetCDF file format and baseline-corrected using the Agilent ChemStation software and the MetAlign software (Lommen, 2009). Data processing into a standardized numerical data matrix and compound identification were performed using the TagFinder software (Luedemann et al., 2008). Criteria for manually supervised metabolite identification were the presence of at least three specific and selective mass fragments and a retention time deviation <1.0%. The relative accumulation of amorpha-4,11-diene in VOC profiles of leaf tissue was analyzed using the mass spectral intensity of specific and selective mass fragments (Response) after normalization to fresh weight (Response/FW).
 
@@ -177,6 +836,6 @@ For absolute quantification of artemisinic acid, we first determined the percent
 
 For identification of artemisinin or degradation products of artemisinin, aliquots of 1.2 ± 0.01 g of frozen powdered leaf tissue were placed in 20 mL head-space screw cap vials, mixed with 3.6 mL hexane and incubated for 1 hr in a water bath at 69°C. The tubes were shortly vortexed and opened every 10 min to release the vapor pressure. Samples were then centrifuged for 5 min at 14,000 rpm. 300 µL of the hexane extracts were transferred to 1.1 mL Chromacol vials and reduced to 50 µL under a mild flow of N2. For identification of artemisinin or its degradation products, 500, 1000 or 2500 ng of an artemisinin standard (1 mg/mL; Sigma-Aldrich, Steinheim, Germany) were subjected to the same procedure. GC-EI/TOF-MS profiling was performed as described for soluble metabolites using the whole tissue saponification protocol. As reported previously, only the degradation products of artemisinin (peaks A and B; Sipahimalani et al., 1991), were detected, likely due to thermal instability of artemisinin. Peaks A and B were only detected in samples that contained the artemisinin reference compound, but not in any of the plant samples.
 
-## UPLC analysis of isoprenoids
+### UPLC analysis of isoprenoids
 
 For UPLC analysis of pigments, samples of 40 ± 2 mg of frozen powdered leaf tissue were extracted with 500 µL HPLC grade acetone. A stainless steel ball was added to the mixture and the samples incubated for 20 min at 30°C and 1,400 rpm in the dark. After centrifugation for 5 min at 12,000 rpm and 4°C, the upper phase was collected in a new microcentrifuge tube and stored on ice in darkness. The acetone extraction was repeated two more times, using 250 µL of acetone each time and combining the three upper phases. Following centrifugation for 5 min at 12,000 rpm and 4°C to precipitate any remaining insoluble material, 600 µL of the acetone extracts were transferred to 9 mm glass vials. Samples were analyzed using a Waters UPLC Class H (Milford, USA) equipped with an autosampler, Quaternary Solvent Manager, and eλ PDA detector. Pigments were separated in a Waters ACQUITY UPLC BEH C18 1.7 µm C18 2.1 × 50 mm column at 28°C, using UPLC solutions A and B. Elution was carried out at a flow rate of 0.5 mL/min with the following gradient: 100–0% of solution A from 0 to 5 min, 100% solution B from 5 to 6 min, 0–100% solution A from 6 to 6.5 min, and 100% solution A from 6.5 to 7.5 min. Carotenoids were detected at 450 nm and chlorophylls at 640 nm. Three biological replicates (i.e., independent plants) per condition were measured and data were analyzed with the Empower 3 software.

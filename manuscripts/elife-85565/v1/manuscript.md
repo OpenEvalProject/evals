@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0243gzr89 Mutualisms Research Group, Max Planck Institute for Biology Tübingen Germany
+1. Mutualisms Research Group, Max Planck Institute for Biology Tübingen Germany ([ROR:0243gzr89](https://ror.org/0243gzr89))
 
 † Corresponding author
 

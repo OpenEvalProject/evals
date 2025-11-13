@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.38455.001 Atoh1 -null mice die at birth from respiratory failure, but the precise cause has remained elusive. Loss of Atoh1 from various components of the respiratory circuitry (e.g. the retrotrapezoid nucleus (RTN)) has so far produced at most 50% neonatal lethality. To identify other Atoh1 -lineage neurons that contribute to postnatal survival, we examined parabrachial complex neurons derived from the rostral rhombic lip (rRL) and found that they are activated during respiratory chemochallenges. Atoh1 -deletion from the rRL does not affect survival, but causes apneas and respiratory depression during hypoxia, likely due to loss of projections to the preBötzinger Complex and RTN. Atoh1 thus promotes the development of the neural circuits governing hypoxic (rRL) and hypercapnic (RTN) chemoresponses, and combined loss of Atoh1 from these regions causes fully penetrant neonatal lethality. This work underscores the importance of modulating respiratory rhythms in response to chemosensory information during early postnatal life.
+Atoh1-null mice die at birth from respiratory failure, but the precise cause has remained elusive. Loss of Atoh1 from various components of the respiratory circuitry (e.g. the retrotrapezoid nucleus (RTN)) has so far produced at most 50% neonatal lethality. To identify other Atoh1-lineage neurons that contribute to postnatal survival, we examined parabrachial complex neurons derived from the rostral rhombic lip (rRL) and found that they are activated during respiratory chemochallenges. Atoh1-deletion from the rRL does not affect survival, but causes apneas and respiratory depression during hypoxia, likely due to loss of projections to the preBötzinger Complex and RTN. Atoh1 thus promotes the development of the neural circuits governing hypoxic (rRL) and hypercapnic (RTN) chemoresponses, and combined loss of Atoh1 from these regions causes fully penetrant neonatal lethality. This work underscores the importance of modulating respiratory rhythms in response to chemosensory information during early postnatal life.
 
 ## Introduction
 
@@ -25,11 +25,23 @@ Hard-wired, transcriptionally defined neural circuit development is often comple
 
 For example, mice lacking the transcription factor Atonal homolog 1 (Atoh1) die at birth of respiratory failure even though they generate some respiratory movements (Ben-Arie et al., 1997; Rose et al., 2009b; Tupal et al., 2014). The precise cause of this fully penetrant lethality has eluded a number of studies, which have nonetheless deepened our understanding of Atoh1’s contributions to the respiratory circuit. Atoh1 is expressed in the developing hindbrain along the entire rostro-caudal rhombic lip, where it promotes the development of several nuclei involved in respiratory control (Gray, 2013; Rose et al., 2009a, 2009b; Wang et al., 2005). Atoh1 is also expressed in postmitotic neurons of two paramotor nuclei: the intertrigeminal region (ITR) and the retrotrapezoid nucleus (RTN) (Figure 1A and B) (Huang et al., 2012; Rose et al., 2009b). The chemosensitive RTN sends excitatory projections to the preBötzinger complex (preBötC), which generates inspiratory rhythms (Guyenet and Bayliss, 2015; Guyenet et al., 2010; Kumar et al., 2015; Onimaru and Homma, 2003). Atoh1 loss from the RTN impairs respiratory responses to hypercapnia, but, rather remarkably, causes only partial neonatal lethality (Huang et al., 2012).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of Atoh1-expression cells in the developing brainstem (E14.5). Red area represents proliferating cells in the rhombic lip. Blue cells are postmitotic neurons in paramotor nuclei. (B) Schematic of neural populations in the brainstem respiratory circuitry. Red nuclei represent rhombic lip, Atoh1-lineage neurons important for respiratory control. Blue nuclei are Atoh1-lineage neurons in two paramotor nuclei. (C) Atoh1-lineage neurons (tdTomato+) in three sub compartments of the parabrachial complex (i) lateral parabrachial, (ii) medial parabrachial and (iii) Kölliker Fuse) express the neural activity marker cFos selectively after a one-hour-exposure to hypoxia (10% O2, balanced N2) or hypercapnia (5% CO2, 21% O2, balanced N2). (D) Atoh1::En1-CKO mice are born and survive in Mendelian ratios. (E) X-gal staining in En1Cre/+;Rosalsl-LacZ reporter allele, Atoh1LacZ/+ and Atoh1::En1-CKO E14.5 embryos to visualize En1Cre expression and Atoh1-lineage cells in the developing brain. (F) Serial sections of X-gal-stained brains at the level of the pons in Atoh1LacZ/+ and Atoh1::En1-CKO mice. No Atoh1-lineage pontine PBC neurons develop in Atoh1::En1-CKO mice at E14.5. (G) Stain for NK1R receptor that is highly expressed in Atoh1-lineage PBC neurons. Loss of NK1R expression in Atoh1::En1-CKO mice at P21. Abbreviations: PBC, parabrachial complex; ITR, intertrigeminal region; RTN, retrotrapezoid nucleus; rVRG, rostral ventral respiratory group; LRt, lateral reticular; preBötC, preBötzinger complex; v, trigeminal motor nucleus; vii, facial motor nucleus.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Some Atoh1-lineage PBC neurons express the substance P receptor NK1R (tdTomato+ cells in Atoh1Cre/+;Rosalsl-tdTomato/+ mice). (B) All Atoh1-lineage PBC neurons express the peptide calcitonin gene-related peptide (CGRP). (C) Some Atoh1-lineage PBC neurons express the peptide pituitary adenylate cyclase-activating peptide (PACAP). (D) Number of Atoh1-lineage PBC neurons overlapping with the respective markers. N is total number of cells counted from 3 to 4 mice per marker.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Atoh1::En1-CKO mice have a small cerebellum. (B) Atoh1-lineage in the dentate nucleus are not activated during chemochallenges. (C) Atoh1-lineage granule cells are not activated during chemochallenges.
+
 We therefore set out to find other Atoh1-lineage neurons contributing to neonatal survival and further delineate Atoh1’s function in respiratory development using intersectional genetics. We found that loss of Atoh1-lineage neurons developing from the rostral rhombic lip (rRL) impairs both respiratory rhythm and chemoresponsiveness. Some of these neurons are specifically activated during respiratory chemoresponses and project to the Atoh1-lineage paramotor nuclei (ITR and RTN) as well as the preBötC. Yet only the combined deletion of Atoh1 from the rRL and RTN recapitulated the fully penetrant lethality of Atoh1-null mice. This confirms that developmentally defined neural lineages have distinct roles in respiratory control and that, in neonatal mice, integration of chemosensory information is essential for survival.
 
 ## Results
 
-## Rostral rhombic lip neurons are activated during chemochallenges
+### Rostral rhombic lip neurons are activated during chemochallenges
 
 Atoh1 is expressed along the entire rostro-caudal rhombic lip of the developing hindbrain (Figure 1A, red), where it functions as a proneural transcription factor. Loss of Atoh1 results in loss of proliferating cells in the rhombic lip. Among the rhombic lip derived Atoh1-lineage are three populations of neurons that have been implicated in respiratory control: the parabrachial complex (PBC), the rostral ventral respiratory group (rVRG) and the lateral reticular nucleus (LRt) (Figure 1B, red) (Rose et al., 2009b; Tupal et al., 2014). Two paramotor nuclei express Atoh1 during the postmitotic phase, and its expression is essential for their proper migration and connectivity from the RTN to the preBötC (Figure 1A and B, blue) (Huang et al., 2012; Rose et al., 2009b).
 
@@ -41,27 +53,43 @@ Next, we assessed whether these Atoh1-lineage neurons are required for neonatal 
 
 Atoh1::En1-CKO mice developed severe ataxia, dystonia and tremor in the second to third week after birth and died shortly after weaning (P22-25), probably because the motor phenotypes impair their ability to get proper amounts of food and water. These phenotypes were likely the result of loss of Atoh1-lineage cerebellar neurons including glutamatergic deep cerebellar nuclei and cerebellar granule cells (Figure 1—figure supplement 2A) (Ben-Arie et al., 1997; Wurst et al., 1994). Unlike Atoh1-lineage PBC neurons, however, these Atoh1-lineage cerebellar neurons are not activated during respiratory chemochallenges and are thus less likely to be important for respiratory chemoresponses (Figure 1—figure supplement 2B and C).
 
-## Rostral rhombic lip neurons contribute to respiratory rhythms
+### Rostral rhombic lip neurons contribute to respiratory rhythms
 
 Given that Atoh1::En1-CKO mice survive the early neonatal period, we were able to examine their respiration using unrestrained whole-body plethysmography (UWBP) at three weeks of age (Figure 2A). In room air, Atoh1::En1-CKO mice had a greater number of sigh-induced and spontaneous apneas, sighs, and irregular respiratory rhythms than their control littermates (Figure 2B). No other respiratory parameters were affected (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative plethysmography traces from a control and Atoh1::En1-CKO mouse. Example traces of apnea and sigh. (Bi) Atoh1::En1-CKO mice have more apneas following sighs and (Bii) spontaneous apneas per hour than control littermates. Caffeine treatment rescues apneas. (Biii) Atoh1::En1-CKO mice have more sighs per hour than control littermates, which was not be rescued by caffeine. (Biv) Atoh1::En1-CKO mice breathe more irregularly than control littermates, which can be rescued with caffeine treatment. Inter breath interval irregularity was defined as: absolute (breath length(n + 1) – breath length(n)/breath length(n). Significance was determined using a Two-way ANOVA (genotype*treatment), Tukey-Kramer post-hoc. *p<0.05. **p<0.01. ***p<0.001. ****p<0.0001. Error bars represent: mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** There was no significant difference in (A) inspiration time (TI), (B) expiration time (TE), (C) Tidal volume (TV), (D) respiratory frequency (Vf), or (E) minute ventilation (VE) between Atoh1::En1-CKO mice and control littermates at baseline. Caffeine treatment caused a slight, but statistically significant, increase in TI (A) resulting in an increase in Vf in control mice (D), and, conversely, a decrease in TI (A) and increase in Vf in Atoh1::En1-CKO mice (D). Caffeine treatment also caused a decrease in TV in both control and Atoh1::En1-CKO mice (C), resulting in a decrease in VE in control mice but not in Atoh1::En1-CKO mice (E) due to the observed increase in Vf (D). Significance was determined using a Two-way ANOVA (genotype*treatment), Tukey-Kramer post-hoc. *p<0.05. **p<0.01. ***p<0.001. ****p<0.0001. Error bars represent mean ± SEM.
 
 Apneas, sighs, and rhythmic irregularity are hallmarks of immature respiration that can occur in some human infants (Abu-Shaweesh and Martin, 2008; Martin et al., 2004; Abu-Shaweesh, 2004). When infants present with apnea of prematurity (AOP) in a clinical setting, they are treated with caffeine to stabilize their breathing rhythms (Aranda et al., 1977; Natarajan et al., 2007). We therefore tested whether caffeine treatment could rescue respiratory rhythms in Atoh1::En1-CKO mice by administering caffeine through the drinking water of lactating dams from P2 onward. This was sufficient to detect caffeine levels in the blood plasma of the pups (treated: 6.15 ± 2.1 mg/L caffeine; untreated: 0.15 ± 0.04 mg/L caffeine; p=0.02, two-tailed t-test). These levels are similar to those observed in infants treated with caffeine (Natarajan et al., 2007).
 
 Caffeine treatment normalized apnea frequency and irregular breathing rhythms, but not sighs (Figure 2B), showing that caffeine is sufficient to stabilize irregular breathing rhythms in our mice similar to human infants. Much to our surprise, this method of caffeine treatment also significantly decreased minute ventilation in control mice, as a result of both decreased tidal volume and breathing frequency (Figure 2—figure supplement 1). Although Atoh1::En1-CKO mice also showed a decrease in tidal volume, they seemingly compensated by increasing their rate of respiration, resulting in normal minute ventilation compared to control conditions.
 
-## Rostral rhombic lip neurons are essential for respiratory chemoresponsiveness
+### Rostral rhombic lip neurons are essential for respiratory chemoresponsiveness
 
 As Atoh1-lineage PBC neurons are specifically activated during hypoxia and hypercapnia, we hypothesized that these neurons also contribute to respiratory chemoresponses. We therefore assessed whether Atoh1::En1-CKO mice showed abnormal responses to hypoxia and whether the caffeine treatment rescued their irregular respiratory rhythms by restoring proper chemoresponses. Control mice had a short initial increase in tidal volume and breathing frequency that returned to baseline within several minutes of exposure to hypoxia (Figure 3A and B). This resulted in a bimodal response in minute ventilation (Figure 3C), similar to what others have reported in juvenile mice (Haddad and Mellins, 1984; Waters and Gozal, 2003). Atoh1::En1-CKO mice also showed a brief initial increase in tidal volume (Figure 3A), but this was accompanied by a rapid, sustained decrease in respiratory rate that repressed minute ventilation during hypoxia (Figure 3D). Interestingly, while caffeine treatment in control mice did prolong the respiratory response to hypoxia by limiting respiratory depression during exposure to hypoxic gas (Figure 3C), it did not improve respiratory chemoresponses in Atoh1::En1-CKO mice (Figure 3D). Respiratory depression in response to hypoxia resembles the suppression of fetal breathing movements during hypoxia in prenatal mammals (Gluckman and Johnston, 1987; Haddad and Mellins, 1984; Abu-Shaweesh, 2004; Waters and Gozal, 2003), underscoring how loss of rRL neurons recapitulates many aspects of immature breathing control.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig3-v2.jpg)
+
+**Figure 3.:** Normalized changes in tidal volume (TV) (A), respiratory frequency (Vf) (B), and minute ventilation (VE) (C and D) during hypoxic challenge (10% O2, balanced N2). Atoh1::En1-CKO mice show respiratory repression during hypoxia (B) that cannot be rescued by caffeine (D). Normalized changes in TV (E), Vf (F), and VE (G and H) during hypercapnic chemochallenge (5% CO2, 21% O2, balanced N2). Atoh1::En1-CKO mice have attenuated response to hypercapnia (E and F) that cannot be rescued by caffeine (H). Significance was determined using a t-test (2-tailed) at each individual time point, *p<0.0011 (0.05/44 for Bonferroni correction). Error bars represent mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mice with silenced Purkinje cells (Pcp2Cre/+;Slc32a1Flox/Flox) have slightly more irregular breathing rhythms (iii), but otherwise normal respiratory rhythms in room air. Significance for room air breathing parameters were determine using a t-test (2-tailed). *p<0.05. (B) Pcp2Cre/+;Slc32a1Flox/Flox have normal respiratory chemoresponses to hypoxia and hypercapnia. Significance was determined using a t-test (2-tailed) at each individual time point, *p<0.0011 (0.05/44 for Bonferroni correction). Error bars represent mean ± SEM.
 
 We next assessed how Atoh1::En1-CKO mice responded to hypercapnia. We found that control littermates showed a rapid increase in tidal volume and breathing frequency during hypercapnia, whereas respiratory chemoresponses of Atoh1::En1-CKO mice were severely attenuated (Figure 3E and F). Caffeine treatment delayed the return to baseline minute ventilation in control mice, but did not improve the hypercapnic chemoresponses of Atoh1::En1-CKO littermates (Figure 3G and H).
 
 Thus, the mechanism by which caffeine rescues apneas, sighs, and irregular respiratory rhythms in Atoh1::En1-CKO mice, cannot be through normalizing chemoresponses and these results confirm that Atoh1-lineage rRL neurons contribute to respiratory chemoresponses to low oxygen and high carbon dioxide.
 
-## The cerebellar cortex is not essential for respiratory chemoresponses
+### The cerebellar cortex is not essential for respiratory chemoresponses
 
 As neither Atoh1-lineage deep cerebellar nuclei nor cerebellar granule cells were activated during respiratory chemochallenges, we hypothesized that the abnormal chemoresponses, seen upon deletion of Atoh1 from the rRL, were not due to cerebellar dysfunction. To date, there is no Cre-line that can specifically delete Atoh1 from the pontine PBC without affecting the cerebellum, or vice versa. Therefore, we tested our hypothesis by silencing neurotransmission of Purkinje cells (PCs), which are the sole output of the cerebellar cortex. PCs receive input from granule cells and directly project onto deep cerebellar nuclei. These Pcp2Cre/+;Slc32a1Flox/Flox mice have no defects in cell types other than PCs, and loss of PC signaling results in abnormal motor control including ataxia and poor performance on the rotarod (White et al., 2014). Despite this abnormal cerebellar function, Pcp2Cre/+;Slc32a1Flox/Flox mice do not have more apneas or sighs than control littermates during room air breathing, although they have slightly more irregular respiratory rhythms than their control littermates (Figure 3—figure supplement 1Aiv). No other respiratory parameters (Figure 3—figure supplement 1A) such as respiratory chemoresponses to either hypoxia or hypercapnia were altered upon silencing of PCs (Figure 3—figure supplement 1B). Thus, abnormal cerebellar function or ataxia does not explain the abnormal respiratory chemoresponses observed in Atoh1::En1-CKO mice.
 
-## Rostral rhombic lip neurons are important for respiratory control in P7 mice
+### Rostral rhombic lip neurons are important for respiratory control in P7 mice
 
 Atoh1::En1-CKO mice display irregular breathing rhythms, sighs, and apneas, as well as respiratory depression in response to hypoxia and attenuated respiratory response to hypercapnia. As noted above, these features characterize immature respiration in some human infants, although they usually resolve on their own with time (Abu-Shaweesh and Martin, 2008; Abu-Shaweesh, 2004). Our results suggest that rRL neurons might play a prominent role in the postnatal maturation of respiratory control.
 
@@ -69,7 +97,7 @@ To test this hypothesis, we evaluated respiratory control in one-week-old (P7) A
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig4-v2.jpg)
 
-**Figure 4.:** Atoh1::En1-CKO mice have abnormal respiratory control.(A) Representative plethysmography traces from a control and Atoh1::En1-CKO mouse. Example traces of apnea and sigh. (B) One-week-old Atoh1::En1-CKO mice have significantly more apneas (i), longer inspiratory time (TI) (iii), smaller tidal volume (TV) (v), slower respiratory rhythms (Vf) (vi), and lower minute ventilation (VE) (vii). Number of sighs (ii) and expiratory time (TE) (iv) were not different. Significance for room air breathing parameters were determined using a t-test (2-tailed). *p<0.05. (C) One-week-old Atoh1::En1-CKO mice have enhanced respiratory depression in response to hypoxia through an enhanced decrease in TV (i) and Vf (ii), resulting in a decreased VE(iii). There were no significant differences in the respiratory chemoresponses to hypercapnia (iv to vi). Significance was determined using a t-test (2-tailed) at each individual time point, *p<0.01. Error bars represent mean ± SEM.10.7554/eLife.38455.014Figure 4—source data 1.
+**Figure 4.:** (A) Representative plethysmography traces from a control and Atoh1::En1-CKO mouse. Example traces of apnea and sigh. (B) One-week-old Atoh1::En1-CKO mice have significantly more apneas (i), longer inspiratory time (TI) (iii), smaller tidal volume (TV) (v), slower respiratory rhythms (Vf) (vi), and lower minute ventilation (VE) (vii). Number of sighs (ii) and expiratory time (TE) (iv) were not different. Significance for room air breathing parameters were determined using a t-test (2-tailed). *p<0.05. (C) One-week-old Atoh1::En1-CKO mice have enhanced respiratory depression in response to hypoxia through an enhanced decrease in TV (i) and Vf (ii), resulting in a decreased VE(iii). There were no significant differences in the respiratory chemoresponses to hypercapnia (iv to vi). Significance was determined using a t-test (2-tailed) at each individual time point, *p<0.01. Error bars represent mean ± SEM.
 
 In response to hypoxia, control mice showed the bimodal respiratory response we observed in P21 Atoh1::En1-CKO mice with an initial increase in tidal volume and respiratory frequency, followed by respiratory depression (Figure 4Ci to Ciii). Nevertheless, the decrease in tidal volume and respiratory frequency was initiated earlier during the hypoxic exposure and was more pronounced in Atoh1::En1-CKO mice. In contrast, there were no differences in respiratory response to hypercapnia between Atoh1::En1-CKO mice and control littermates at P7 (Figure 4Civ to Cvi).
 
@@ -77,13 +105,21 @@ Additionally, these results underscore our findings that cerebellar dysfunction 
 
 Our results show that P7 Atoh1::En1-CKO mice have abnormal respiratory control in room air and in response to hypoxia. This suggests that although some respiratory phenotypes of P21 Atoh1::En1-CKO mice (high number of sighs and abnormal hypercapnic chemoresponses) might indeed result from abnormal postnatal maturation, others (slow breathing rhythms and small tidal volume) might be self-resolving with maturation. Yet at all ages tested rRL neurons are essential to prevent apneas and respiratory depression during hypoxia.
 
-## Rostral rhombic lip neurons project to Atoh1-lineage paramotor nuclei and the preBötC
+### Rostral rhombic lip neurons project to Atoh1-lineage paramotor nuclei and the preBötC
 
 Oxygen sensors in the carotid body communicate with the nucleus tractus solitarius (NTS) to integrate the sensory information into the central respiratory circuit, which is necessary for hypoxic chemoresponses (Accorsi-Mendonça et al., 2015; Dutschmann et al., 2008; Ferreira et al., 2015; Mayer et al., 2015; Song et al., 2011). There is ample evidence that NTS neurons directly project to the PBC (Bianchi et al., 1995; Dutschmann et al., 2008; Roman et al., 2016; Song et al., 2011) and our results suggest that the Atoh1-lineage PBC neurons are necessary to prevent respiratory depression in response to hypoxia. Yet it is unknown whether they modulate respiratory rhythms through activation of downstream rhythmogenic or chemosensitive nuclei, or act directly as premotor neurons.
 
 To trace the projections from the Atoh1-lineage rRL neurons, we made use of an intersectional reporter allele (Ai65) that expresses tdTomato only after removal of both an FRT-flanked and a loxP-flanked stop-cassette (Madisen et al., 2015). We generated an Atoh1FlpO knock-in mouse line that expresses FlpO recombinase in place of Atoh1 under the Atoh1 promoter (Figure 5—figure supplement 1). This mouse line can be used to remove the first stop-cassette in the reporter allele, exclusively in Atoh1-lineage neurons (Figure 5A); the second stop-cassette is removed using En1Cre, so that only neurons in the Atoh1;En1 intersectional domain will be labeled with tdTomato (Figure 5A). We confirmed that the cell bodies of Atoh1-lineage parabrachial neurons were labeled red (Figure 5B) and tdTomato+ puncta overlapped with the synaptic marker synapsin, thus representing synapses on downstream neurons (Figure 5C). We then assessed whether any tdTomato+ puncta were found in key respiratory nuclei or motor nuclei involved in respiratory motor rhythms (Summarized in Figure 5D). We found tdTomato+ puncta in the Atoh1-lineage paramotor nuclei: the intertrigeminal region (ITR) and the chemosensitive retrotrapezoid nucleus (RTN) (Figure 5E and F). We also found projections towards the rhythmogenic preBötC (Figure 5G), but detected no feedback projections to the nucleus tractus solitarius (NTS) (Figure 5H). We found no tdTomato+ puncta in any of the motor nuclei in the respiratory circuitry (Figure 5I–L). This shows that the rRL neurons selectively innervate downstream neurons in the respiratory circuit that are important for chemoresponsive adaptations in the respiratory rhythm, but do not function directly as premotor neurons. Loss of activation from the PBC might subdue the respiratory responses, impairing adaptation to hypercapnia and hypoxia.
 
-## Atoh1-lineage intertrigeminal region neurons are not required for neonatal survival or normal respiratory chemoresponses
+![Figure 5.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig5-v2.jpg)
+
+**Figure 5.:** (A) Intersectional strategy to label only those neurons with a history of Atoh1 (FlpO) and En1 (Cre) expression. Representative whole-brain image of P21 Atoh1FlpO;En1Cre;Ai65/+ mouse on the right. (B) Cell bodies in the PBC are tdTomato+. (C) tdTomato+ puncta overlap with the synapse-marker synapsin. (D) Schematic of the respiratory circuitry. Solid red PBC is the only respiratory nucleus expressing tdTomato. Dotted nuclei are the nuclei in which tdTomato+ projections were observed. TdTomato+ puncta near cell bodies were observed in the (E) ITR, (F) RTN, and (G) preBötC. No tdTomato+puncta were observed in the (H) NTS, or in respiratory motor nuclei (I) mV, (J) mVII, (K), NA, (L), XII. Abbreviations: PBC, parabrachial complex; ITR, intertrigeminal region; RTN, retrotrapezoid nucleus; preBötC, preBötzinger Complex; NTS, nucleus tractus solitarius; mV, trigeminal motor nucleus; mVII, facial motor nucleus; NA, nucleus ambiguus; XII, hypoglossal motor nucleus.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) A FlpO-lox2722-PGK-Neo-lox2722 cassette was cloned in between the 5’ and 3’ homologues arm of the Atoh1 locus in a pBlueScript II KS+ vector. Through homologous recombination this sequence was targeted to the endogenous Atoh1 locus. Sox2Cre was used to excise the PGK-Neo cassette from the target sequence. (B) Representative PCR genotyping reaction from wild-type and Atoh1FlpO/+ mice.
+
+### Atoh1-lineage intertrigeminal region neurons are not required for neonatal survival or normal respiratory chemoresponses
 
 We found that rRL neurons project to the Atoh1-lineage intertrigeminal region (ITR) (Figure 5E), suggesting that part of the Atoh1::En1-CKO phenotype might be through loss of modulation of the ITR region. Loss of Atoh1 from the ITR was previously assessed only in Atoh1::Phox2b-CKO mice that also have impaired RTN development (Huang et al., 2012; Ruffault et al., 2015).
 
@@ -91,9 +127,25 @@ To assess the function of Atoh1-lineage ITR neurons, we generated an ITR-specifi
 
 Because Atoh1::HoxA2-CKO mice survived the neonatal period (Figure 6—figure supplement 2), we could test their breathing behavior using unrestrained whole-body plethysmography (UWBP) at three weeks of age. We found that Atoh1::HoxA2-CKO mice had more sigh-induced and spontaneous apneas, without a change in the number of sighs or inter breath interval irregularity (Figure 6Ai–Aiv). Interestingly, Atoh1::HoxA2-CKO mice did have a smaller tidal volume per breath, resulting in a smaller minute ventilation than control littermates (Figure 6Avi and Aviii), phenotypes that were observed neither in our Atoh1::En1-CKO mice nor in Atoh1::Phox2b-CKO mice. Nevertheless, Atoh1::HoxA2-CKO mice did not have abnormal respiratory chemoresponses (Figure 6B). Atoh1 is thus essential for normal ITR development, but loss of Atoh1 from the ITR does not impair neonatal survival or respiratory chemoresponses. The abnormal chemoresponses caused by loss of Atoh1 from the En1- or Phox2b-domain are thus caused by loss of rRL or abnormal development of RTN neurons, respectively.
 
-## Loss of Atoh1 from neurons involved in respiratory chemoresponses results in neonatal lethality
+![Figure 6.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig6-v2.jpg)
+
+**Figure 6.:** (A) Atoh1::HoxA2-CKO mice have more apneas following sighs (i) and spontaneous apneas (ii) than control littermates and a smaller tidal volume per breath (TV) (vi) resulting in smaller minute ventilation (VE) (Viii). Other breathing parameters were not affected. Significance for room air breathing parameters were determined using a t-test (2-tailed). *p<0.05, **p<0.01. (B) Atoh1::HoxA2-CKO mice have normal respiratory chemoresponses in hypoxia (i to iii) and hypercapnia (iv to vi). Significance was determined using a t-test (2-tailed) at each individual time point, *p<0.0011 (0.05/44 for Bonferroni correction). Error bars represent mean ± SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) In situ hybridization with an Atoh1 probe confirms loss of Atoh1 from the ITR in Atoh1::HoxA2-CKO E14.5 embryos. (B) X-gal stain in Atoh1LacZ/+ and Atoh1::HoxA2-CKO E14.5 embryos to visualize Atoh1-dependent cells in the developing brain. (C) Serial sections at the level of the ITR visualize an abnormal location of ITR neurons at the lateral site of the trigeminal motor neuron in Atoh1::HoxA2-CKO E14.5 embryos. Abbreviations: rRL, rostral rhombic lip; cRL, caudal rhombic lip; ITR, intertrigeminal region; RTN, retrotrapezoid nucleus.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Ratio of surviving offspring from Atoh1LacZ /+; HoxA2::CreTG/+ x Atoh1Flox/Flox cross: 9/85 (10.6%) surviving pups were Atoh1::HoxA2-CKO mice (B) Ratio of surviving offspring from Atoh1Flox/LacZ; HoxA2::CreTG/+ x Atoh1Flox/Flox cross: 18/41 surviving pups (43.9%) were Atoh1::HoxA2-CKO mice. Green text indicates Atoh1::HoxA2-CKO mice. These crosses indicate Atoh1::HoxA2-CKO mice are not neonatal lethal and that the HoxA2::CreTG allele is linked to the Atoh1 allele.
+
+### Loss of Atoh1 from neurons involved in respiratory chemoresponses results in neonatal lethality
 
 Through studying a series of conditional knockout mice, our lab has now mapped the role of all Atoh1-lineage neurons in neonatal survival (Figure 7). There is no single Atoh1-derived population that fully accounts for the perinatal death of Atoh1-null mice. In light of the fact that Atoh1 loss from either the En1 or Phox2b domains leads to abnormal chemoresponses, and that loss of Atoh1 from the Phox2b domain results in neonatal lethality in only about half of the mice, we hypothesized that combined loss of Atoh1-derived neurons involved in respiratory chemoresponsiveness might be responsible for the 100% neonatal lethality of Atoh1-nulls.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig7-v2.jpg)
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38455/elife-38455-fig7-figsupp1-v2.jpg)
 
 To test this hypothesis, we crossed Atoh1Flox/+;En1Cre/+ males with Atoh1LacZ/+;Phox2b::CreTG/+ females to obtain mice that lack Atoh1 from both the En1- and Phox2b-intersectional domains (Atoh1Flox/LacZ;En1Cre/+;Phox2b::CreTG/+ mice, hereafter Atoh1-dCKO mice). Out of nearly four hundred offspring observed, no Atoh1-dCKO mice survived past P1 (Figure 7—figure supplement 1). We did not find any alive Atoh1-dCKO mice, but several were found dead in the cage on the day of birth. These animals had turned blue and there was no visible milk spot, suggesting that they died of respiratory failure before drinking any milk. These results show that loss of Atoh1 from chemoresponsive nuclei accounts for the 100% neonatal death seen in Atoh1-null mice (Ben-Arie et al., 1997).
 
@@ -115,29 +167,207 @@ The breathing abnormalities of Atoh1::En1-CKO mice resemble those seen in premat
 
 ## Materials and methods
 
-## Mouse lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Rosalsl-tdTomato</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX:007914</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Atoh1Cre</td>
+      <td>Yang et al., 2001</td>
+      <td>RRID: MGI:4844110</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>En1 Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX:007916</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Rosalsl-LacZ</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:012429</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Atoh1LacZ</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:005970</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Atoh1Flox</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:MGI:4420944</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Slc32a1Flox</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:012897</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Pcp2::CreTG</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:004146</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>HoxA2::CreTG</td>
+      <td>Awatramani et al. (2003)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Phox2b::CreTG</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX:016223</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Atoh1FlpO</td>
+      <td>This paper: Figure 5—figure supplement 1</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>RosaFSF-LSL-tdTomato</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:021875</td>
+    </tr>
+    <tr>
+      <td>Strain: C57BL/6</td>
+      <td>Sox2::CreTG</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:MGI:3801167</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cFos (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>SC-52; RRID:AB_2106783</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NK1R (rabbit polyclonal)</td>
+      <td>Advanced Targeting Systems</td>
+      <td>AB-N04; RRID: AB_171801</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CGRP (rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>C8198; RRID:AB_259091</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PACAP (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab216589</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-synapsin (mouse monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>106 001; RRID:AB_2617071</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TH (rabbit polyclonal)</td>
+      <td>ImmunoStar</td>
+      <td>22941; RRID:AB_572268</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ChAT (goat polyclonal)</td>
+      <td>EMD millipore</td>
+      <td>AB144P; RRID:AB_2079751</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine</td>
+      <td>FISHER</td>
+      <td>S25215A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-gal</td>
+      <td>Gold Biotechnology</td>
+      <td>X4281C</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Caffeine/Pentoxifylline ELISA</td>
+      <td>Neogen</td>
+      <td>106419</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID: SCR_001622</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ponemah 3</td>
+      <td>DSI</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FinePoint</td>
+      <td>DSI</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID: SCR_003070</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse lines
 
 All animals were housed in a Level 3, AALAS-certified facility on a 14 hr light cycle. Husbandry, housing, euthanasia, and experimental guidelines were reviewed and approved by the Institutional Animal Care and Use Committee (IACUC) of Baylor College of Medicine. The following genetically engineered mouse lines were used: Rosalsl-tdTomato (Gt(ROSA)26Sortm9(CAG-tdTomato)Hze, JAX:007914), Atoh1Cre (Yang et al., 2001), En1Cre (En1tm2(cre)Wrst/J, JAX:007916):, Rosalsl-LacZ (Gt(ROSA)26Sortm1(CAG-lacZ,-EGFP)Glh, JAX:012429), Atoh1LacZ(Atoh1tm2Hzo, JAX:005970), Atoh1Flox(Atoh1tm3Hzo, MGI:4420944), Pcp2Cre (B6.129-Tg(Pcp2-cre)2Mpin/J, JAX: 004146), Slc32a1Flox (Slc32a1tm1Lowl/J, JAX: 012897), HoxA2::CreTG (Awatramani et al., 2003), Phox2b::CreTG (Tg(Phox2b-cre)3Jke, JAX:016223), Atoh1FlpO, Ai65 (Gt(ROSA)26Sortm65.1(CAG-tdTomato)Hze,JAX:021875), and Sox2::CreTG (Tg(Sox2-cre)1Amc, MGI:3801167). Ear tissue, collected from ear-marking, was used for PCR genotyping to minimalize stress on animals. For timed pregnancies, noon on the day of the vaginal plugging was set as embryonic day 0.5 (E0.5).
 
-## Generation of the Atoh1FlpO Mice
+### Generation of the Atoh1FlpO Mice
 
 The FlpO sequence from pQUAST-FLPo was ligated to a PGK-Neo cassette flanked by lox2722 sites in a pUC vector. This FlpO-PGK-Neo cassette was then cloned into a pre-existing pBlueScript II KS+ plasmid that contained the Atoh1 5’ and 3’ targeting arms without disrupting the Atoh1 transcriptional start site, identical to the approach previously described (Rose et al., 2009b). This construct was then electroporated into B57/6J ES cells with an agouti mutation. These ES cells were expanded under neomycin selection and screened for correct recombination by Southern blot using external 3’ probes, and internal 5’ PCR. Six clones were further expanded, tested correct recombination using PCR and sequence validated. Three clones were chosen to be injected into albino B57/6J blastocyst to generate chimeras. Chimeras were backcrossed to albino B57/6J females to generate heterozygote Atoh1FlpO-Neo mice. These were crossed to Sox2Cre to remove the PGK-Neo cassette. See Figure 5—figure supplement 1 for genomic targeting diagram, and example PCR genotyping (forward primer: CTTCGTTGCACGCGAC, reverse primer: CACAATTTATCGTGTAGCCG. WT: 2.2 kb, FlpO-KI: 2.6 kb).
 
-## Immunofluorescence (IF) Assays
+### Immunofluorescence (IF) Assays
 
 IF and cryosectioning were performed using previously described protocols (Huang et al., 2012). Mice older than one week were perfused with 4% PFA, after which brains were dissected and post-fixed overnight in 4% PFA at 4°C. Embryonic and P0 brains were directly dissected from pups and dropped fixed in 4% PFA at 4°C. After fixation brains were cryopreserved in 30% sucrose solution in PBS until sunk and frozen in OCT. Frozen sections were cut at 40 µm and kept at 4°C in the dark until used for immunostaining. For immunolabeling sections were first blocked in 5% normal donkey serum, 0.5% Triton-X in PBS for one hour at room temperature. Next, sections were incubated in primary antibody overnight at 4°C in blocking solution, followed by three washes and secondary labeling for at least two hours at room temperature. Nuclei were labeled using DAPI (1:10,000) and slides were mounted in DAPI-free mounting solution (Vectashield). The following antibodies and their dilutions were used: rabbit anti-cFos (1:5000, Santa Cruz), rabbit anti-NK1R (1:2000, Advanced Targeting Systems), mouse anti-Synapsin (1:1000, Synaptic Systems), goat anti-TPH2 (1:1000, Santa Cruz), mouse anti-TH (1:200, ImmunoStar), and goat anti-ChAT (1:200, EMD Millipore). Secondary antibodies were conjugated with Alexa Fluor 488 (1:1000, Molecular Probes). We used a Leica TCS SP5 confocal microscope system to image fluorescent signal. Image brightness and contrast were normalized using ImageJ.
 
-## X-gal staining
+### X-gal staining
 
 Embryos were collected at E14.5, brains were dissected and fixed for 10 min in ice-cold formalin followed by brief washing in PBS on ice and in room-temperature wash buffer. β-galactosidase activity was assayed by embedding and sectioning tissue as previously described (Ben-Arie et al., 2000). X-gal stained whole brains were stored at 70% ethanol. X-gal stained sections were first counterstained with nuclear fast red (Vector laboratories) and then imaged using a bright-field Axio Imager M2 microscope, equipped with an Axio Cam MRc5 color camera (Carl Zeiss, Germany). Contrast and saturation were adjusted using ImageJ and Adobe Photoshop.
 
 In situ hybridization (ISH) was performed on 25µm-thick sagittal sections cut from unfixed, fresh frozen E14.5 embryonic control and CKO mice covering the entire embryo. We generated digoxigenin (DIG)-labeled mRNA antisense probes against Atoh1 using reverse-transcribed mouse cDNA as a template and a RNA DIG-labeling kit from Roche. Primer and probe sequences for the probe is available on the Allen Brain Atlas website (www.brain-map.org) and were validated previously (Huang et al., 2012). ISH was performed by the RNA In Situ Hybridization Core at Baylor College of Medicine using an automated robotic platform as previously described (Yaylaoglu et al., 2005).
 
-## Assessing cFos expression
+### Assessing cFos expression
 
 To analyze in vivo hypoxia or hypercapnia induced cFos expression, adult animals (6–8 weeks old) were habituated to the plethysmography chambers five hours the day prior to the experiment and one hour on the day of the experiment. Freely moving mice were placed in whole-body plethysmography chambers (Buxco) through which fresh air was pumped at a basal flow rate of 0.5 L/min. Next, animals were exposed to either room air, hypoxia (10% O2, balance N2), or hypercapnia (5% CO2, 21% O2, balance N2) for 1 hr. Animals were sacrificed within 30 min of exposure and tissue was processed as described in ‘Immunofluorescence (IF) Assays.’
 
-## P21 juvenile unrestrained whole-body plethysmography (UWBP)
+### P21 juvenile unrestrained whole-body plethysmography (UWBP)
 
 Breathing analysis was performed using previously reported protocols with minor modifications (Huang et al., 2012; Orengo et al., 2018; Yeh et al., 2017). To test respiratory parameters, weaning age mice (P19-21) were placed in the plethysmography chambers and habituated for at least one hour prior to the experiment. After this habituation period, we recorded twenty minutes of room air breathing to determine the baseline. Next, we exposed animals to nine minutes in either hypoxia (10% O2, balance N2) or hypercapnia (5% CO2, 21% O2, balance N2). After this chemochallenge, we recorded breathing behavior for another fifteen-minute recovery period in room air. To determine changes in breathing behavior in response to the chemochallenge, we normalized all breathing parameters to baseline values using the following formula: normalized y(t)=y(x)/(average(y(xbaseline)), where y is the average value of a parameter during any given minute (x) and baseline is minutes one to twenty.
 
@@ -145,7 +375,7 @@ We used Phonemah three software (DSI) to identify breath waveforms and used cust
 
 Since we did not observe any difference in breathing parameters between male and female mice, or between Atoh1-heterozygote animals and any of the Cre-lines, we grouped these animals together in the analysis.
 
-## P7 neonatal unrestrained whole-body plethysmography (UWBP)
+### P7 neonatal unrestrained whole-body plethysmography (UWBP)
 
 Breathing analysis for neonatal mice was performed using a DSI pup-plethysmography set-up designed especially for these experiments. Specialized, small pup plethysmography chambers (DSI) were connected to a FinePointe Whole Body Plethysmography Unit with gas switch capability (DSI). The unit provided the pup plethysmograph chambers with a constant 1 L/min airflow and amplified breathing waveforms. P7 (day of birth is P0) animals were placed in the plethysmography chambers and could acclimate for 10 min, followed by 5 min of room air recording and a 5 min gas-challenge (hypoxia (10% O2, balance N2) or hypercapnia (5% CO2, 21% O2, balance N2)).
 
@@ -153,10 +383,10 @@ FinePointe software was used to define breaths and calculate basic breathing par
 
 Source data from the pup plethysmography analysis can be found in the source data file: Figure 4—source data 1.
 
-## Caffeine administration and ELISA
+### Caffeine administration and ELISA
 
 Caffeine was administered to pups through the drinking water of lactating dams (0.3 gram/L) from postnatal day three until weaning. Caffeine was dissolved in water provided by the animal facility and stored in special dark bottles to prevent photodegradation. Plasma levels of caffeine in pups were determined using a commercially available Caffeine/Pentoxifylline ELISA kit (Neogen). We obtained blood and isolated plasma from P19 pups raised in cages with normal water or caffeinated water.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All quantification and statistical analyses were performed using MATLAB (Mathworks). Data in text and figures represent the mean ± standard error of the mean (SEM). Student’s t-test was used when comparing two independent groups. Chi-square test were performed to test Mendelian ratios of surviving offspring. We used two-way ANOVA to determine interaction effects between genotype (control vs. conditional knockout) and treatment (no caffeine vs. caffeine), followed by a Tukey-Kramer post-hoc analysis in case significance was reached. To determine time-specific significant differences in respiratory chemoresponses, serial t-tests or ANOVA’s were performed and the p-value was Bonferroni adjusted for multiple comparisons. Statistical significance was accepted at p<0.05 for all other tests.

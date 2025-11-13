@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Immunology, University of Washington School of Medicine Seattle United States
-2. https://ror.org/05vkpd318 Center for Infectious Disease and Vaccine Research, La Jolla Institute for Immunology La Jolla United States
+1. Department of Immunology, University of Washington School of Medicine Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Center for Infectious Disease and Vaccine Research, La Jolla Institute for Immunology La Jolla United States ([ROR:05vkpd318](https://ror.org/05vkpd318))
 
 † Corresponding author
 
 ## Abstract
 
-Naturally acquired immunity to malaria develops only after many years and repeated exposures, raising the question of whether Plasmodium parasites, the etiological agents of malaria, suppress the ability of dendritic cells (DCs) to activate optimal T cell responses. We demonstrated recently that B cells, rather than DCs, are the principal activators of CD4 + T cells in murine malaria. In the present study, we further investigated factors that might prevent DCs from priming Plasmodium -specific T helper cell responses. We found that DCs were significantly less efficient at taking up infected red blood cells (iRBCs) compared to soluble antigen, whereas B cells more readily bound iRBCs. To assess whether DCs retained the capacity to present soluble antigen during malaria, we measured responses to a heterologous protein immunization administered to naïve mice or mice infected with P. chabaudi . Antigen uptake, DC activation, and expansion of immunogen-specific T cells were intact in infected mice, indicating DCs remained functional. However, polarization of the immunogen-specific response was dramatically altered, with a near-complete loss of germinal center T follicular helper cells specific for the immunogen, accompanied by significant reductions in antigen-specific B cells and antibody. Our results indicate that DCs remain competent to activate T cells during Plasmodium infection, but that T cell polarization and humoral responses are severely disrupted. This study provides mechanistic insight into the development of both Plasmodium -specific and heterologous adaptive responses in hosts with malaria.
+Naturally acquired immunity to malaria develops only after many years and repeated exposures, raising the question of whether Plasmodium parasites, the etiological agents of malaria, suppress the ability of dendritic cells (DCs) to activate optimal T cell responses. We demonstrated recently that B cells, rather than DCs, are the principal activators of CD4+ T cells in murine malaria. In the present study, we further investigated factors that might prevent DCs from priming Plasmodium-specific T helper cell responses. We found that DCs were significantly less efficient at taking up infected red blood cells (iRBCs) compared to soluble antigen, whereas B cells more readily bound iRBCs. To assess whether DCs retained the capacity to present soluble antigen during malaria, we measured responses to a heterologous protein immunization administered to naïve mice or mice infected with P. chabaudi. Antigen uptake, DC activation, and expansion of immunogen-specific T cells were intact in infected mice, indicating DCs remained functional. However, polarization of the immunogen-specific response was dramatically altered, with a near-complete loss of germinal center T follicular helper cells specific for the immunogen, accompanied by significant reductions in antigen-specific B cells and antibody. Our results indicate that DCs remain competent to activate T cells during Plasmodium infection, but that T cell polarization and humoral responses are severely disrupted. This study provides mechanistic insight into the development of both Plasmodium-specific and heterologous adaptive responses in hosts with malaria.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ Historically, the ability of B cells to present antigen to T cells has been stud
 
 ## Results
 
-## DCs do not efficiently capture infected RBCs in vivo
+### DCs do not efficiently capture infected RBCs in vivo
 
 We recently demonstrated that mice infected with the rodent-adapted parasite P. yoelii developed an antigen-specific CD4+ T cell response that was strongly polarized to a T follicular helper cell (Tfh) phenotype, specialized for assisting B cells with affinity maturation within germinal centers. In mice with malaria, these antigen-specific T cells possessed diminished proliferative capacity and longevity compared to T helper cells specific for the same epitope delivered in the context of an LCMV infection. Using genetically modified mice to selectively disrupt or restore antigen presentation in either DCs or B cells, we also determined that B cells, rather than DCs, were the primary APCs in this infection and orchestrated the striking Tfh polarization phenotype (Arroyo and Pepper, 2020).
 
@@ -37,21 +37,29 @@ We wished to better understand factors that favor B cells as the dominant APCs i
 
 Modifying the experimental approach of Borges da Silva et al., 2015, we used flow cytometry to examine how well various splenic APC subsets, including B cells, could bind to labeled RBCs infected with the parasite P. chabaudi. Like P. falciparum, P. chabaudi exports membrane proteins that render iRBCs cytoadherent (Stephens et al., 2012), a characteristic found to be important for interaction with (and suppression of) DCs in one study (Urban et al., 1999). We enriched iRBCs from the blood of infected mice (Figure 1—figure supplement 1A), labeled them with a fluorescent dye, and injected them intravenously into naïve mice. Differentially labeled naïve RBCs (nRBCs) were injected for comparison. We harvested spleens after 30 min and assessed association of labeled nRBCs and iRBCs with various splenic subsets, including B cells (defined as CD45+ Thy1.2- MHCII+ B220+ CD11clo/int), DCs (CD45+ Thy1.2- MHCIIhi CD11chi), and red pulp macrophages (RPMs; CD45+ Thy1.2- MHCII+ F4/80hi), which specialize in uptake and recycling of senescent RBCs (Figure 1A). We found that DCs made up only a small fraction of total RBC+ splenocytes; instead, RBCs were mostly distributed between RPMs and B cells (Figure 1B–D). Additional flow experiments examining Siglec-H+ plasmacytoid DCs did not detect significant association of iRBCs with these cells (data not shown). The frequencies of iRBC+ DCs that we measured were similar to those reported by Borges da Silva et al., 2015; however, that group did not perform a comparison with B cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83330/elife-83330-fig1-v1.jpg)
+
+**Figure 1.:** Red blood cells infected with Plasmodium chabaudi (iRBCs) were enriched from infected mice, labeled with a fluorescent dye, and injected intravenously into naïve C57Bl/6 J mice. Labeled naïve RBCs (nRBCs) were injected as a control. Splenocytes were analyzed 30 min later for fluorescent iRBC label by flow cytometry. (A) Representative gating of bulk dendritic cells (DCs), B cells, and red pulp macrophages (RPMs). (B) Representative plots showing the distribution of labeled iRBCs in DCs, B cells, and RPMs. (C) Quantification showing the percentage of the total RBC+ population that consisted of DCs, RPMs, or B cells as indicated. (D) Quantification of RBC+ DCs, RPMs, and B cells expressed as a percentage of total splenocytes. A and B depict representative plots from one of four independent experiments. C and D show pooled data (mean +/- SD) from all four experiments, with each symbol representing one mouse (n=12 mice for iRBC treatment, 14 for nRBC treatment). **, p<0.01 and ****, p<0.0001 by one-way ANOVA with Tukey’s post-test. n.s., not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83330/elife-83330-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Infected RBCs were enriched over a magnetic column and degree of enrichment was assessed by flow cytometry. An uninfected sample is shown for comparison to pre-and post-enrichment samples from an infected mouse. Plots shown are pre-gated on Ter119+ CD45+ cells; then iRBCs are identified by staining of nucleic acids with Hoescht. CD71 is used to identify reticulocytes. (B) B6 or MD4 splenocytes were incubated with labeled naive RBCs or enriched iRBCs and RBC binding to B cells was assessed by flow cytometry. (C–D) To test whether splenocyte binding of iRBCs occurs in vivo or during tissue processing, labeled iRBCs were injected into CD45.2+ mice. Each spleen was harvested after 30min and disrupted along with a spleen from an untreated CD45.1+ CD45.2+ mouse. Binding of iRBCs to splenic CD45+ cells was assessed by flow cytometry. True in vivo uptake should be observed only in CD45.2+ cells, whereas binding that occurs during tissue processing should be distributed between CD45.2+ and CD45.1+ CD45.2+ splenocytes. (C) Contribution of each donor spleen to the total splenocyte pool (left panel) and subset of iRBC+ RPMs (middle panel). iRBC+ RPMs from each donor spleen are quantified (right panel). (D) Flow plot (left) and quantification (right) of the proportion of iRBC+ B cells derived from each donor spleen. A depicts representative plots from one of many enrichments. B-D show representative plots and pooled quantification from two independent experiments. *, p<0.05 and ****, p<0.0001 by one-way ANOVA with Tukey’s post-test (B) or Mann-Whitney (C, D). n.s., not significant.
+
 In our in vivo experiments, DCs bound similar frequencies of nRBCs and iRBCs (Figure 1D). Interestingly, B cells bound significantly more iRBCs than nRBCs both in vivo and in vitro (Figure 1C–D and Figure 1—figure supplement 1B), although some apparent RBC binding to B cells in vivo was artifactual and occurred during processing (Figure 1—figure supplement 1C, D). To test whether B cell binding of iRBCs required the B cell receptor (BCR), we incubated nRBCs or iRBCs with transgenic B cells from MD4 mice, which express a BCR specific for hen egg lysozyme (Goodnow et al., 1988). This experiment revealed that preferential binding of iRBCs was independent of the BCR (Figure 1—figure supplement 1B), leading us to speculate that B cells may selectively interact with iRBCs through other, antigen-independent pathways such as complement receptors, Fc receptors, or scavenger receptors (Vijay et al., 2021; Shen et al., 2018). Altogether, these experiments show that of all the iRBCs interacting with APCs in the spleen, only a small percentage are associated with DCs.
 
-## DCs take up soluble antigen more efficiently than infected RBCs
+### DCs take up soluble antigen more efficiently than infected RBCs
 
 Because DCs are well-established as the primary APCs that activate naïve T cells in response to soluble antigens, we next tested how DC uptake of iRBCs compared to uptake of soluble protein. We simultaneously injected the easily traceable fluorescent molecule phycoerythrin (PE) along with labeled iRBCs intravenously into mice and measured uptake by splenic APC subsets after 30 min. Very few splenocytes acquired both PE and iRBC labels in our experiments; this could be due both to differences in a particular cell’s ability to take up either label, and to the overall low frequency of splenocytes that pick up any label (making a double positive cell even more rare). Gating separately on all MHCII+ cells that carried either the PE or the iRBC label, we further divided the labeled cells into APC populations (Figure 2A). A majority of both PE+ and iRBC+ events were B cells, reflecting the abundance of this subset, which comprises ~50% of splenocytes. However, DCs accounted for around 10% of PE+ events, despite comprising only 1–2% of splenocytes. In contrast, the iRBC+ population included very few DCs (1–3%, commensurate with their total splenic frequency), but many more RPMs (~20%) in addition to B cells (Figure 2A and B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83330/elife-83330-fig2-v1.jpg)
 
-**Figure 2.:** Mice were intravenously injected with enriched, fluorescently labeled iRBCs together with PE and splenocytes were analyzed 30 min later for acquisition of fluorescent signal. (A) Representative gating of PE+ or iRBC+ splenocytes, further subsetted into the indicated APC populations. (B) Quantification of the distribution of PE and iRBC labeling among DCs, B cells, and RPMs. (C) Alternative gating strategy showing DCs, B cells, and RPMs in untreated mice (top row) and 30 min after injection of PE and iRBCs (bottom panel). (D) Quantification showing the percentage of each APC subset that acquired iRBC or PE label, as gated in (C). (E) Ratio of the percentage of each subset that acquired PE signal to the percentage of that subset that acquired iRBC signal. (B, D, and E) show pooled data (mean +/- SD) from two independent experiments (n=5 per group). **, p<0.01 and ***, p<0.001 by Mann-Whitney (D) or one-way ANOVA with Tukey’s post-test (E). n.s., not significant.Figure 2—source data 1.
+**Figure 2.:** Mice were intravenously injected with enriched, fluorescently labeled iRBCs together with PE and splenocytes were analyzed 30 min later for acquisition of fluorescent signal. (A) Representative gating of PE+ or iRBC+ splenocytes, further subsetted into the indicated APC populations. (B) Quantification of the distribution of PE and iRBC labeling among DCs, B cells, and RPMs. (C) Alternative gating strategy showing DCs, B cells, and RPMs in untreated mice (top row) and 30 min after injection of PE and iRBCs (bottom panel). (D) Quantification showing the percentage of each APC subset that acquired iRBC or PE label, as gated in (C). (E) Ratio of the percentage of each subset that acquired PE signal to the percentage of that subset that acquired iRBC signal. (B, D, and E) show pooled data (mean +/- SD) from two independent experiments (n=5 per group). **, p<0.01 and ***, p<0.001 by Mann-Whitney (D) or one-way ANOVA with Tukey’s post-test (E). n.s., not significant.
 
 As a second way of analyzing these same data, we examined the fraction of each APC subset that acquired either PE or iRBC label. Whereas ~5% of CD11chi MHCIIhi splenic DCs had taken up IV-injected PE, the percentage of DCs labeling with iRBCs was virtually zero (Figure 2C and D). We considered that this difference in uptake could be due to different effective doses of PE and iRBCs. However, DCs capture a greater fraction of the total cell-associated PE than the total cell-associated iRBC signal, indicating a better ability to capture PE (Figure 2B). Further, the ratio of PE+ DCs to iRBC+ DCs within each mouse was significantly higher than the ratio of PE+ RPMs or B cells to iRBC+ RPMs or B cells, respectively, indicating that DCs are biased toward taking up PE more so than iRBCs, relative to the other APC subsets examined (Figure 2E). Thus, DCs do not capture iRBCs as efficiently as soluble antigen in vivo. Instead, the majority of iRBCs associate with other APC subsets, including B cells.
 
 It is possible that even a small amount of antigen uptake and presentation is sufficient to permit activation of naïve T cells, and indeed it has been shown that DCs from infected mice do acquire Plasmodium antigens in vivo (Pouniotis et al., 2004; Sponaas et al., 2012; Sponaas et al., 2006; Voisine et al., 2010; Perry et al., 2004). However, in light of our previous study identifying B cells as the primary APCs in mice with malaria (Arroyo and Pepper, 2020), as well as data showing that B cells preferentially present nanoparticle-associated antigens to T cells (Hong et al., 2018), we suggest that poor acquisition of iRBC-borne antigen may be one factor underlying the lack of substantial contribution from DCs to the antigen-specific CD4+ T cell response in Plasmodium-infected mice. It remains to be seen whether parasite antigens that are shed into the circulation might induce DC-dependent responses better than iRBC-associated epitopes such as the one we examined in our previous study (Arroyo and Pepper, 2020). Stephens et al. have reported that transgenic CD4+ T cells specific for the shed portion of the parasite coat protein MSP1 are capable of assisting B cells in antibody production (Stephens et al., 2005), but further characterization is needed to determine how these T cells are activated and polarized.
 
-## Monocyte-derived DCs take up majority of soluble antigen in Plasmodium-infected mice
+### Monocyte-derived DCs take up majority of soluble antigen in Plasmodium-infected mice
 
 Our initial experiments raised the possibility that differential uptake of parasite antigen might contribute to the prominence of B cells in antigen presentation during malaria. However, they did not address the question of whether DC activation, antigen presentation, upregulation of costimulatory molecules, and/or secretion of cytokines and chemokines are suppressed during Plasmodium infection, as has been suggested (Wykes and Good, 2008; Urban et al., 1999; Götz et al., 2017; Sponaas et al., 2012). To probe the question of whether DCs retain the capacity to present antigen and activate T cells in mice with malaria, independent of their ability to access or take up particulate antigen, we investigated antigen uptake, DC activation state, and initiation of T cell responses to a heterologous, soluble protein antigen delivered to naïve or P. chabaudi-infected mice.
 
@@ -59,27 +67,35 @@ First, we tested whether DC uptake of a soluble protein was altered in infected 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83330/elife-83330-fig3-v1.jpg)
 
-**Figure 3.:** Plasmodium-infected mice.(A) Mice were infected with 106 P. chabaudi-parasitized RBCs and parasitemia was monitored by thin blood smear. (B) DCs were enumerated by flow cytometry in the spleens of mice at homeostasis or 5 days after P. chabaudi infection (Pc D5). (C) Naive or day 5-infected mice were injected intraperitoneally (i.p.) with PE, and PE+ splenic DCs were quantified after 30 min by flow cytometry. Note log scale. (D) Mice were treated as in C, and PE+ splenic B cells were quantified after 30 minutes. (E) Representative gating of conventional CD64- DCs (cDC) and CD11bhi CD64+ monocyte-derived DCs (moDC) in naïve or infected mice injected with PE. Top plots show all DCs; bottom plots show PE+ DCs. (F) Plots depicting the percentage of total or PE+ DCs that are cDC or moDC in naïve or infected mice. (G) Histograms and quantification showing expression (median fluorescent intensity, MFI) of MHCII, CD80, and CD86 on cDC and moDC. moDC are shown only from infected mice due to their scarcity in naïve mice. A shows data from one experiment (n=3), representative of many. B-D, F,and G show mean +/- SD from at least three experiments (n=6 per group for C, D; 10 uninfected, 8 infected for all others). *, p<0.05, **, p<0.01, ***, p<0.001, ****, p<0.0001 by Mann-Whitney (B–D) or one-way ANOVA with Tukey’s post-test (G). n.s., not significant.Figure 3—source data 1.
+**Figure 3.:** (A) Mice were infected with 106 P. chabaudi-parasitized RBCs and parasitemia was monitored by thin blood smear. (B) DCs were enumerated by flow cytometry in the spleens of mice at homeostasis or 5 days after P. chabaudi infection (Pc D5). (C) Naive or day 5-infected mice were injected intraperitoneally (i.p.) with PE, and PE+ splenic DCs were quantified after 30 min by flow cytometry. Note log scale. (D) Mice were treated as in C, and PE+ splenic B cells were quantified after 30 minutes. (E) Representative gating of conventional CD64- DCs (cDC) and CD11bhi CD64+ monocyte-derived DCs (moDC) in naïve or infected mice injected with PE. Top plots show all DCs; bottom plots show PE+ DCs. (F) Plots depicting the percentage of total or PE+ DCs that are cDC or moDC in naïve or infected mice. (G) Histograms and quantification showing expression (median fluorescent intensity, MFI) of MHCII, CD80, and CD86 on cDC and moDC. moDC are shown only from infected mice due to their scarcity in naïve mice. A shows data from one experiment (n=3), representative of many. B-D, F,and G show mean +/- SD from at least three experiments (n=6 per group for C, D; 10 uninfected, 8 infected for all others). *, p<0.05, **, p<0.01, ***, p<0.001, ****, p<0.0001 by Mann-Whitney (B–D) or one-way ANOVA with Tukey’s post-test (G). n.s., not significant.
 
 Given this observation, we next questioned whether moDCs possessed the components to activate T cells. Flow cytometric analysis of surface markers revealed that moDCs expressed at least as much MHCII as cDCs, and had significantly higher expression of the costimulatory molecules CD80 and CD86 compared to cDCs from either uninfected or infected mice (Figure 3G). Altogether, our data demonstrate that DC uptake of soluble antigen remains intact after 5 days of P. chabaudi infection, but that the antigen-capturing subset shifts primarily from cDCs to moDCs. These moDCs express robust levels of MHCII and costimulatory molecules, and therefore possess the basic requirements for efficient T cell priming.
 
-## Intact CD4+ T cell expansion, but disrupted polarization, following heterologous immunization in infected mice
+### Intact CD4+ T cell expansion, but disrupted polarization, following heterologous immunization in infected mice
 
 We next examined whether the DCs that took up soluble antigens in infected mice retained the capacity to activate CD4+ T cells in vivo. For these experiments, we used a recombinant form of the glycoprotein (GP) from lymphocytic choriomeningitis virus (LCMV) because it contains the well-defined CD4+ T cell epitope GP66, permitting CD4+ T cells specific for this epitope to be detected with a fluorescently labeled peptide-MHCII tetramer (Zander et al., 2017). We previously characterized GP66-specific CD4+ T cell responses in mice infected with a transgenic P. yoelii parasite that expresses this epitope (Arroyo and Pepper, 2020); thus, we have extensive data on the phenotype and kinetics of GP66-specific CD4+ T cells when the epitope is delivered in the context of an iRBC. In the present study, administration of soluble recombinant GP with adjuvant during an infection with (non-transgenic) P. chabaudi allowed us to examine the same population of GP66-specific T cells as they responded to a soluble antigen presented by DCs, all within the context of a malaria-inflamed spleen.
 
 We injected uninfected or day 5-infected mice with GP plus adjuvant and analyzed splenic GP66-specific CD4+ T cells by flow cytometry 8 days after immunization (which was 13 days post-infection). GP66-specific T cells were rare in unimmunized mice but expanded dramatically following immunization in both uninfected and infected mice. No T cell expansion was observed in infected mice that did not receive GP. The total number of GP66-specific CD4+ T cells was not significantly different between uninfected and infected mice following immunization of both, indicating that the ability of DCs to present soluble antigen and activate T cells was roughly intact in infected mice (Figure 4A and B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83330/elife-83330-fig4-v1.jpg)
+
+**Figure 4.:** (A–G) Mice were immunized i.p. with recombinant LCMV glycoprotein (GP) plus adjuvant, either alone (GP Immunized) or 5 days after P. chabaudi infection (Infected +GP Immunized). GP66-specific CD4+ T cells were analyzed in spleen 8 days (A–D) or 23–35 days (E–G) after immunization. (A) Representative gating and (B) quantification of GP66+ CD4+ T cells from uninfected and infected mice with or without GP immunization. Note log scale in B. (C) Gating and (D) quantification of activated Tfh (CD44hi CXCR5+) and GC Tfh (CD44hi CXCR5+ PD-1hi) GP66-specific cells. (E–G) Total GP66-specific CD4+ T cells (E) and the frequency (F) and absolute number (G) of GP66-specific GC Tfh cells were quantified 23–35 days post-immunization. (H–J) Mice left uninfected or infected for 5 days with P. chabaudi were immunized with irradiated P. yoelii-parasitized RBCs expressing GP66 (IR-PyGP66), and splenic T cells were analyzed 8 days later. (H) Quantification of total GP66-specific CD4+ T cells. (I) Representative flow plot of CXCR5 and PD-1 expression on GP66-specific T cells. (J) Frequencies of GP66-specific Tfh cells (left graph) and GC Tfh cells (right graph). A-D represent data from four independent experiments (pooled n=10 “GP” mice, 12 “Infected +GP” mice). E–G show pooled results from one Day 23 experiment and one Day 35 experiment (n=5 “GP” mice, 7 “Infected +GP” mice). H–J show pooled results from two independent experiments (n=5 immunized, 7 infected +immunized). Red numbers within flow plot gates represent the frequency of cells within the gate. *, p<0.05, **, p<0.01 and ****, p<0.0001 by one-way ANOVA with Tukey’s post-test (B) or Mann-Whitney (others). n.s., not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83330/elife-83330-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Representative flow plot showing CXCR5 and PD-1 expression on bulk CD19- CD44hi CD4+ T cells in mice infected for 13 days with P. chabaudi. This timepoint corresponds to the time of analysis for GP66-specific T cells in mice immunized with GP 5 days after P. chabaudi infection, then harvested 8 days after immunization (Figure 4).
+
 We next examined the phenotype of GP66-specific T cells in uninfected and infected mice. Specifically, we measured polarization of CD4+ T cells into CXCR5+ PD-1hi germinal center (GC) Tfh cells. As expected, uninfected mice immunized with GP developed a distinct population of GC Tfh cells, as well as a sizeable subset of CXCR5+ PD-1lo Tfh cells. Strikingly, however, the Tfh and GC Tfh populations were virtually absent among GP66-specific cells in infected mice following GP immunization (Figure 4C and D). This was not due to a generalized loss of Tfh cells in infected mice, since abundant CXCR5+ T cells were observed in the bulk (non-tetramer-binding) T cell population (Figure 4—figure supplement 1) and our previous study found strong Tfh polarization of GP66-specific CD4+ T cells at similar timepoints after infection with GP66-expressing parasites (Arroyo and Pepper, 2020). We examined whether this disruption persisted over time by quantifying antigen-specific T cells 3–5 weeks post-immunization. At these late timepoints, the total number of GP66-specific CD4+ T cells was still not significantly different between mice that had concurrent P. chabaudi infection and those that did not, although there was a nonsignificant trend toward higher T cell numbers in infected mice (Figure 4E). The percentage of GP66-specific T cells exhibiting a GC Tfh phenotype remained sharply decreased in infected mice (Figure 4F), but the absolute number of GP66-specific GC Tfh cells was not significantly different between the two experimental groups, perhaps because of the slightly higher numbers of total GP66-specific T cells in the infected mice (Figure 4G). Together, these data demonstrate that an established P. chabaudi infection does not prevent expansion of T cells in response to a heterologous soluble antigen, but does temporarily disrupt the polarization of antigen-specific T cells into B cell-helping Tfh and GC Tfh cells.
 
 Previous work has shown that DCs can orchestrate initial differentiation of CXCR5+ Tfh cells 2–4 days after immunization, but that maintenance of the Tfh phenotype at day 8 requires both cognate and non-cognate interactions with B cells (Kerfoot et al., 2011; Pepper et al., 2011; von der Weid and Langhorne, 1993). Therefore, we hypothesized that interactions between DCs and T cells were intact in infected mice, allowing for T cell expansion, but that infection disrupted interactions between GP-specific T cells and B cells, preventing establishment of Tfh and GC Tfh populations. To further dissect B-T cognate interactions in the infected spleen, we treated uninfected mice, or mice infected for 5 days with P. chabaudi, with irradiated iRBCs containing nonreplicating transgenic GP66+ P. yoelii parasites (Hahn et al., 2018) and measured GP66-specific T cell responses 8 days later. Since iRBC-associated GP66 is primarily presented by B cells (Arroyo and Pepper, 2020), we reasoned that if interactions between newly activated B and T cells were disrupted in day 5-infected mice, expansion of GP66-specific CD4+ T cells should be defective. This was indeed what we observed (Figure 4H). CXCR5+ Tfh and GC Tfh subsets were also significantly diminished in infected mice, consistent with the loss of cognate and non-cognate B-T interactions that normally induce Tfh polarization (Figure 4I and J). Taken together, our data suggest that in an infected spleen, DCs remain competent for uptake and presentation of soluble antigens, but that the signals required for T cell polarization into Tfh cells—including both cognate and non-cognate interactions with B cells—are disrupted.
 
-## B cell expansion and GC formation in response to heterologous immunization are curtailed in infected mice
+### B cell expansion and GC formation in response to heterologous immunization are curtailed in infected mice
 
 Because antigen-specific GC Tfh cell responses are sharply diminished when antigen is administered during an established P. chabaudi infection (Figure 4C and D), we examined expansion of antigen-specific B cells and development of the GC B cell population after the same immunization scheme. A fluorescently labeled GP protein tetramer was used to identify GP-specific B cells (Figure 5A; Kim et al., 2019). These cells expanded robustly in number 8 days after GP immunization of uninfected mice, but not following GP immunization of mice infected for 5 days with P. chabaudi (Figure 5A and B). The frequency of CD138+ GP-specific plasmablasts was modest 8 days post-immunization and was not different between infected and uninfected mice (Figure 5C). In contrast, a sizeable population of GP-specific GC B cells (CD138- CD38- GL7+) appeared in uninfected, immunized mice, but was greatly decreased in infected mice following immunization (Figure 5D). Previous work from our group found that Plasmodium-specific GC B cells are readily detected at this time (i.e. 13 days after infection) (Krishnamurty et al., 2016). These data identify a functional consequence of the drastic decrease in GP66-specific GC Tfh cells in infected mice, as Tfh cells are required to sustain the repeated rounds of proliferation and selection that antigen-specific B cells undergo in GCs. Consistent with the decreases in total and GC B cell numbers, GP-specific serum IgG antibody titers were much lower in infected compared to uninfected mice 7 days after immunization (Figure 5E and F). A slight but significant defect in serum IgG persisted 14 days after immunization; however, after 3 weeks, titers in infected mice increased to the levels of those in uninfected mice, consistent with our observation that absolute numbers of GP66-specific GC Tfh cells have recovered in infected mice at this stage (Figure 4G). This timepoint corresponds roughly to the time that P. chabaudi parasitemia is cleared to sub-patent levels, although a low-grade chronic infection persists for several months in this model (Stephens et al., 2012). These data show that established Plasmodium infection significantly decreases expansion of B cells, establishment of germinal centers, and production of antibodies specific for a heterologous protein antigen.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83330/elife-83330-fig5-v1.jpg)
 
-**Figure 5.:** Mice were immunized with or without concurrent P. chabaudi infection, as in Figure 4. (A) Representative gating and (B) quantification of GP-specific splenic B cells 8 days post-immunization. In A, plots were pre-gated on B cells. (C, D) Gating (left panels) and quantification (right) of CD138+ plasmablasts (C) or CD38- GL7+ GC B cells (D) 8 days after immunization with GP. Plots in D were pre-gated on CD138- cells. (E) GP-specific IgG antibody was measured by ELISA in the serum of uninfected or infected mice without immunization or 7 days after immunization with GP. (F) GP-specific serum antibodies (expressed as Area Under the Curve, AUC) measured by ELISA at the indicated times post-immunization. A-D represent data from three independent experiments (n=7 GP, 6 Infected + GP); E and F are pooled from two experiments. Red numbers within flow plot gates represent the frequency of cells within the gate. *, p< 0.05, **, p < 0.01, ***, p < 0.001, and ****, p < 0.0001 by one-way ANOVA with Tukey’s post-test (B, F) or Mann-Whitney (others). n.s., not significant.Figure 5—source data 1.
+**Figure 5.:** Mice were immunized with or without concurrent P. chabaudi infection, as in Figure 4. (A) Representative gating and (B) quantification of GP-specific splenic B cells 8 days post-immunization. In A, plots were pre-gated on B cells. (C, D) Gating (left panels) and quantification (right) of CD138+ plasmablasts (C) or CD38- GL7+ GC B cells (D) 8 days after immunization with GP. Plots in D were pre-gated on CD138- cells. (E) GP-specific IgG antibody was measured by ELISA in the serum of uninfected or infected mice without immunization or 7 days after immunization with GP. (F) GP-specific serum antibodies (expressed as Area Under the Curve, AUC) measured by ELISA at the indicated times post-immunization. A-D represent data from three independent experiments (n=7 GP, 6 Infected + GP); E and F are pooled from two experiments. Red numbers within flow plot gates represent the frequency of cells within the gate. *, p< 0.05, **, p < 0.01, ***, p < 0.001, and ****, p < 0.0001 by one-way ANOVA with Tukey’s post-test (B, F) or Mann-Whitney (others). n.s., not significant.
 
 ## Discussion
 
@@ -99,38 +115,328 @@ One key aspect of our study with relevance for human health is its insight into 
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-B220 (RA3-6B2), rat monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 563892; RRID:AB_2738470</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD138 (281-2), rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 142516; RRID:AB_2562337</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD38 (90), rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 102717; RRID:AB_2072892</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-GL7 (GL-7), rat monoclonal</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-5902-80; RRID:AB_10854881</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-IgM (RMM-1), rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 406512; RRID:AB_2075943</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD4 (GK1.5), rat monoclonal</td>
+      <td>eBioscience</td>
+      <td>Cat# 19-0041-82; RRID:AB_469533</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD8 (53–6.7), rat monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 553034; RRID:AB_394572</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD11b (M1/70), rat monoclonal</td>
+      <td>eBioscience</td>
+      <td>Cat# 14-0112-81; RRID:AB_467107</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD86 (GL-1), rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 105013; RRID:AB_439782</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD45.1 (A20), mouse monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 560578; RRID:AB_1727488</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD45.2 (104), mouse monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 560696; RRID:AB_1727494</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD11c (HL3), Armenian hamster monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 553802; RRID:AB_395061</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD16/CD32 (2.4G2), rat monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 553142RRID:AB_394657</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD64 (X54-5/7.1), mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 139309RRID:AB_2562694</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Thy1.2 (53–2.10, rat monoclonal)</td>
+      <td>BD</td>
+      <td>Cat# 565257RRID:AB_2739136</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-MHCII (M5/114.15.2), rat monoclonal</td>
+      <td>eBioscience</td>
+      <td>Cat# 56-5321-82RRID:AB_494009</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-F4/80 (BM8), rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 123115RRID:AB_893493</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Siglec H (551), rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 129611RRID:AB_10643574</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD3e (500A2), Syrian hamster monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 553240RRID:AB_394729</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD80 (16–10 A1), Armenian hamster monoclonal</td>
+      <td>eBioscience</td>
+      <td>Cat# 12-0801-82RRID:AB_465752</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD19 (1D3), rat monoclonal</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-0193-82RRID:AB_10853189</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD44 (IM7), rat monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 560567RRID:AB_1727480</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD62L (MEL-14), rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 104440RRID:AB_2629685</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-PD-1 (J43), Armenian hamster monoclonal</td>
+      <td>eBioscience</td>
+      <td>Cat# 11-9985-85RRID:AB_465473</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CXCR5 (2G8), rat monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 560617RRID:AB_1727521</td>
+      <td>1:20 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD71 (R17217), rat monoclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat# 12-0711-83RRID:AB_465741</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-CD45 (30-F11), rat monoclonal</td>
+      <td>BD</td>
+      <td>Cat# 559864RRID:AB_398672</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Ter119 (Ter119), rat monoclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat# MA5-17822RRID:AB_2539206</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoescht 33342 Solution</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 62249</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LCMV Glycoprotein</td>
+      <td>E Ollman Saphire</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>I-A(b) LCMV GP 66–77 Monomer</td>
+      <td>NIH Tetramer Core Facility</td>
+      <td>N/A</td>
+      <td>Used at 1 uM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-APC</td>
+      <td>Agilent</td>
+      <td>Cat# PJ27S-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium yoelii)</td>
+      <td>Plasmodium yoelii (17 X NL) GP66</td>
+      <td>Hahn et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium chabaudi)</td>
+      <td>Plasmodium chabaudi AS</td>
+      <td>MR4 Stock Center</td>
+      <td>#MRA-743</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C56Bl/6 J (B6) mice</td>
+      <td>Jackson Labs</td>
+      <td>Stock #000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD45.1+mice</td>
+      <td>Jackson Labs</td>
+      <td>Stock #002014; RRID:IMSR_JAX:002014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6-Tg(IghelMD4)4Ccg/J (MD4) mice</td>
+      <td>Jackson Labs</td>
+      <td>Stock #002595;RRID:IMSR_JAX:002595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/; RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo 10</td>
+      <td>TreeStar</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Wild-type C57Bl/6 J (B6), CD45.1+, and MD4 mice were purchased from Jackson Laboratories. B6 and CD45.1+ mice were crossed in-house to generate CD45.1+ CD45.2+ mice. All mice were group-housed at the University of Washington on a twelve-hour light-dark cycle under specific pathogen-free conditions. 8–12 week old male and female mice were used for all experiments. Mice were age- and sex-matched within each experiment, and no significant differences were observed between sexes. Mice were randomly assigned to experimental groups. Sample sizes were determined by past experience. No mice were excluded from analysis. All mouse experiments were conducted with the approval of the UW Institutional Animal Care and Use Committee (Protocols 4412–01 to MFF and 4283–01 to MP) in accordance with the guidelines of the NIH Office of Laboratory Animal Welfare.
 
-## Plasmodium parasites
+### Plasmodium parasites
 
 Wild-type Plasmodium chabaudi AS was obtained from the MR4 Stock Center and passaged in B6 mice. Transgenic P. yoelii 17XNL-GP66 has been described (Hahn et al., 2018). For P. chabaudi infections, mice were injected intraperitoneally (i.p.) with 106 infected RBCs. Parasitemia was monitored by thin blood smear stained with Giemsa (Huang et al., 2015). For immunization with irradiated parasites, P. yoelii GP66-infected RBCs were suspended in Alsevers solution and subjected to 30,000 rad on ice. 107 irradiated iRBC were then injected i.p. into mice.
 
-## Enrichment and labeling of iRBCs
+### Enrichment and labeling of iRBCs
 
 Blood was collected by cardiac puncture from infected mice 6–7 days post-infection, when parasitemia was ~20–40%, and immediately diluted into 10 mL PBS. It was then spun, resuspended in PBS, and loaded onto pre-washed LD columns (Miltenyi). The bound fraction was washed with 4–5 mL PBS, eluted, spun down and resuspended at 5*107 RBC/mL in PBS. CFSE or CellTrace Violet (Invitrogen) was added to a final concentration of 5 μM and cells were labeled for 20 min at room temperature. Labeled RBCs were washed in five volumes of cold DMEM + 10% FBS, spun, and resuspended in PBS at 109 cells/mL for injection. Degree of enrichment was measured both by thin blood smear and by flow cytometry using Hoescht nucleic acid dye to identify iRBCs. To generate naïve RBCs, blood from a naïve mouse was collected and passed through an LD column. The flowthrough was collected and labeled as described for iRBCs. Injections of 108 labeled RBCs were performed via retroorbital vein. In some cases, labeled iRBCs were mixed with 100 μg PE (Agilent) prior to injection.
 
-## Detection of RBC binding during processing of spleens
+### Detection of RBC binding during processing of spleens
 
 CD45.2+ (B6) mice were injected with labeled, enriched iRBCs as described above. After 30 min, each spleen was removed and placed into 5 mL PBS on ice along with a freshly excised spleen from an untreated CD45.1+ CD45.2+ mouse. After harvests were complete, each pair of spleens was manually disrupted together, filtered through nylon mesh, and placed back on ice. Flow cytometric analysis was performed as described below.
 
-## In vitro RBC binding
+### In vitro RBC binding
 
 Spleens were aseptically removed from naïve B6 and MD4 mice after euthanasia according to approved methods. Single-cell suspensions were made, and 2*106 B6 or MD4 splenocytes were mixed with 107 labeled, enriched iRBCs or nRBCs in DMEM containing 10% FBS. The combined cells were incubated for 20 min at 37 degrees, followed by ACK lysis of RBCs and flow cytometric analysis (see below).
 
-## Protein immunizations
+### Protein immunizations
 
 10 μg recombinant LCMV glycoprotein in PBS was diluted 1:1 in Sigma Adjuvant System (Sigma) and administered i.p. B and T cell responses were analyzed in spleens 8 or more days after immunization, as indicated in figure legends.
 
-## Flow cytometry
+### Flow cytometry
 
 For experiments involving analysis of DCs and macrophages, excised spleens were cut into 6–8 pieces and digested for 15 min at 37 degrees in digest buffer (RPMI + 2% FBS +10 mM HEPES + 1 mg/mL Collagenase IV + 20 μg/mL DNase I). The tissue was then manually disrupted and passed through nylon mesh to obtain single-cell suspensions. The digest step was omitted when only lymphocytes were analyzed. RBCs were lysed in ACK buffer and samples were blocked with anti-CD16/CD32 prior to labeling with antibodies. To analyze antigen-specific T cells, splenocytes were labeled with I-A(b) LCMV GP 66–77 tetramer (NIH Tetramer Core Facility) conjugated to APC (Arroyo and Pepper, 2020). To analyze GP-specific B cells, splenocytes were incubated first with a decoy reagent labeled in-house with APC-Dylight755 (Taylor et al., 2012), then with a fluorescently labeled GP tetramer (Kim et al., 2019). Magnetic anti-APC beads (Miltenyi) were used to enrich tetramer-positive cells after labeling (Krishnamurty et al., 2016; Taylor et al., 2012). Following enrichment, cells were incubated with antibodies and washed. Data were collected on an LSRII or Symphony (BD) and analyzed using FlowJo software (Treestar). Antibodies are listed in the Key Resources Table.
 
-## ELISA
+### ELISA
 
 Blood was collected from the submental veins of mice and serum was snap-frozen until analysis. High-binding 96 well plates (Costar) were coated with recombinant GP (5 μg/mL in PBS). After washing, serially diluted serum was applied to plates and incubated at room temperature for 2 hr or overnight at 4 °C. Plates were washed and biotinylated anti-mouse IgG (1:1000; Biolegend) was added for 1 hr at room temperature, followed by streptavidin-HRP (1:500; Jackson) for 30 min at room temperature. After a final wash, plates were developed with TMB (Invitrogen), the reaction was stopped with 1 M HCl, and absorbance was measured at 450 nm. Area under the curve (AUC) was calculated with Graphpad Prism 9 software.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistics were calculated using Prism 9 software. The exact n and statistical test used for each analysis are listed in each figure legend. Exact p-values are noted in each figure, except where p<0.0001, which is indicated with ****.

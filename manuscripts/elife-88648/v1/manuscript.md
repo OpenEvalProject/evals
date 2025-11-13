@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05kzfa883 Center for Functional Connectomics, Brain Science Institute, Korea Institute of Science and Technology (KIST) Seoul Republic of Korea
-2. https://ror.org/000qzf213 Division of Bio-Medical Science and Technology, KIST School, Korea University of Science and Technology (UST) Seoul Republic of Korea
+1. Center for Functional Connectomics, Brain Science Institute, Korea Institute of Science and Technology (KIST) Seoul Republic of Korea ([ROR:05kzfa883](https://ror.org/05kzfa883))
+2. Division of Bio-Medical Science and Technology, KIST School, Korea University of Science and Technology (UST) Seoul Republic of Korea ([ROR:000qzf213](https://ror.org/000qzf213))
 
 † Corresponding author
 
@@ -27,21 +27,49 @@ To address these issues, we developed an automated variant of the Barnes maze an
 
 ## Results
 
-## Automated maze
+### Automated maze
 
 We developed a fully automated maze apparatus allowing to randomize the start and goal positions of individual trials without the need for experimenter intervention (Figure 1a, Figure 1—figure supplement 1). The maze consists of an enclosed arena with an array of 24 doors evenly spaced along the periphery, and two home boxes moving around the arena’s perimeter. Start positions are changed by rotating the arena and the home boxes (Figure 1b). Furthermore, the arena has a tinted cover that prevents mice from seeing room cues while still allowing for infrared tracking of mouse trajectories.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig1-v1.jpg)
+
+**Figure 1.:** (a) Scheme (left) and picture (right) showing a side view of the apparatus with its different components. The environmental cues are restricted to objects within the arena as the tinted cover blocks visual cues from the surrounding room. (b) Scheme showing the operation of the apparatus. A new start position is set by rotating the arena. The goal box is simultaneously moved to align with the goal location. The spatial information remains consistent across trials since the guiding objects are rotated together with the arena.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a–c) Pics of the entire apparatus (a) and of the side (b) and top views (c) of the apparatus. (d) Zoom on the side doors. (e–f) Zoom on the inside of one of the home boxes. (g–h) Side view of one of the home boxes.
+
 Our maze is similar to the Barnes maze in that mice explore an open arena and are required to navigate to a goal location chosen among an array of 24 doors evenly spaced along the periphery of the arena. However, unlike typical Barnes mazes where orienting cues are external to the maze and animals start at the center of the maze, our maze features two luminous objects inside the arena as orienting cues and start positions are located at the periphery of the arena.
 
-## Behavioral protocol
+### Behavioral protocol
 
 For a first block of 15 days (acquisition phase), mice performed 10 trials per day. In each trial, they entered the maze from a randomly chosen start position and navigated to the goal position to consume a water reward. After the 15 days, a probe test was conducted, during which the goal door remained closed and mice were allowed to explore the arena for 2 min. Next, for another block of 4 days (reversal phase), mice performed the same task as in the initial block of 15 days, but the goal position was changed. We recorded behavioral data from 10 male and 9 female mice (C57BL/6, 7–8 weeks old), and since very similar patterns were observed for the two groups, we pooled and analyzed the data together in the main figures (male and female groups are analyzed separately in the supplementary figures).
 
-## Segmentation of spatial trajectories
+### Segmentation of spatial trajectories
 
 To analyze the spatial behavior of mice, we decomposed their trajectories into segments that spanned from one vestibule to another, as mice tended to explore the arena and visit multiple vestibules before reaching the goal. To accomplish this, we first detected vestibule visits, and then measured the number of door-intervals each segment spanned, considering the direction of travel associated with the shortest distance. A segment could span from 1 to 12 door-intervals in either the clockwise or counterclockwise direction (Figure 2a). Positive door-interval values represented clockwise directions, while negative values represented counterclockwise directions.
 
-## Statistical characteristics of spatial trajectories across days
+![Figure 2.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig2-v1.jpg)
+
+**Figure 2.:** (a) Top view of the maze (left) and two example trajectories on top of an overlay of multiple trajectories (right) showing vestibules and trajectory segmentation. The goal is at vestibule 0. Running segments span between two vestibule visits. Segment size is defined as the number of door-intervals a segment covers in the clockwise (positive sign) or counterclockwise (negative sign) direction. Serial bouts are bouts of consecutive 1-door-long segments. (b) The average path length as a function of segment size for 3 time periods capturing the dynamic range of the distributions (lines) and across days (color coded). (c–f) Same display as in (b) for the distribution of trial lengths (the number of segments per trial) (c), the distribution of visits across vestibules (d) (notice the peak at vestibule 0, which is the goal location), the distribution of segment sizes (e), and the distribution of serial bout lengths (f).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) The average path length as a function of segment size across the 15 training days and 4 reversal days (color coded) and averaged across day 6–15 (lines) for male and female separately. (b–e) Same display as in (a) for the distribution of trial lengths (the number of segments per trial) (b), the distribution of visits across vestibules (c), the distribution of segment sizes (d), and the distribution of serial bout lengths (e).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Average path length per trial across days, for male (left) and female (right). (b) Average number of segments per trial across days, for male (left) and female (right). (mean ± standard deviation, two-tailed paired t-test).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Fraction of time spent in each quadrant of the arena during the probe test, for male (blue), female (red), and all mice (black). (b) Fraction of time spent in each vestibule during the probe tests, for male (blue), female (red), and all mice (black). (mean ± standard deviation, two-tailed paired t-test).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Top view of the arena (upper) and distribution of segment sizes (lower) for a leftward orientation of vestibules (red arrow). (b) Same as (a) for a rightward orientation of vestibules. Notice the reversal of the two peaks of the distributions, indicating that mice tend to visit consecutive vestibules via the clockwise (anti-clockwise) direction for the leftward (rightward) vestibule orientation.
+
+### Statistical characteristics of spatial trajectories across days
 
 We analyzed the statistical characteristics of spatial trajectories across days (Figure 2, Figure 2—figure supplements 1–4). We found that the path length of individual trials decreased across days, with the largest drop observed between day 1 and day 2 (Figure 2—figure supplement 2a), consistent with previous reports in the Barnes maze (Suzuki and Imayoshi, 2017; Koopmans et al., 2003; O’Leary and Brown, 2013). However, the path length of individual segments did not show substantial change across days when comparing segments of equivalent spans and directions (Figure 2b), suggesting that the overall decrease in trial path length was more associated with a decrease in the number of vestibule visits rather than an alteration of running paths. Next, we calculated the trial length (number of segments per trial). We found that the average trial length decreased across days, with the largest drop observed between day 1 and day 2 (Figure 2—figure supplement 2b). The distribution of trial lengths showed a peak for short trials followed by a progressive decline toward longer trials (Figure 2c). The proportion of short trials became higher across days, at the expense of longer trials, consistent with the average decrease in trial length.
 
@@ -53,11 +81,19 @@ Interestingly, we found that the peak of the segment length distribution was mor
 
 Additionally, we computed the length of serial bouts, defined as the number of consecutive one-door-interval-long segments, and found that the proportion of serial bouts sharply decayed as a function of serial bout length, with 1-segment-long bouts accounting for 82.62 ± 13.16% of the bouts on day 1 (Figure 2f). The proportion of longer bouts was increased across days, consistent with an increased usage of serial strategy (17.38 ± 13.16%, 29.34 ± 17.14%, 32.68 ± 11.38% for day 1, day 2, and days 6–15, respectively).
 
-## Statistical characteristics of spatial trajectories across trials
+### Statistical characteristics of spatial trajectories across trials
 
 To determine if the pattern of vestibule visits changed across individual trials within a session, we pulled together the data from days 6 to 15 and performed the same analyses as in Figure 2 for individual trials (Figure 3, Figure 3—figure supplement 1). We found that changes across trials were not observed for the distribution of trial lengths and vestibule visits (Figure 3b and c), but the distributions of segment length and serial bout length showed an evolution across trials that resembled the evolution across days. Specifically, the first trial showed profiles similar to day 1, and later trials showed profiles similar to later days (Figure 3d and e). Hence, a similar evolution of serial strategy was observed across days and trials.
 
-## Stochastic processes for random, spatial and serial strategies
+![Figure 3.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig3-v1.jpg)
+
+**Figure 3.:** (a) The average path length as a function of segment size for 2 time periods capturing the dynamic range of the distributions (lines) and across trials (color coded). The data from days 6 to 15 were used for this analysis. (b–e) Same display as in (a) for the distribution of trial lengths (the number of segments per trial) (b), the distribution of visits across vestibules (c), the distribution of segment sizes (d), and the distribution of serial bout lengths (e).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The average path length as a function of segment size across trials (color coded) and averaged across trials (lines) for male and female separately. The data from days 6 to 15 were used for this analysis. (b–e) Same display as in (a) for the distribution of trial lengths (the number of segments per trial) (b), the distribution of visits across vestibules (c), the distribution of segment sizes (d), and the distribution of serial bout lengths (e).
+
+### Stochastic processes for random, spatial and serial strategies
 
 To investigate if the observed pattern of vestibule visits could be explained by random, spatial, and serial strategies, we implemented three distinct stochastic processes (Figure 4a), performed simulations using same number of mice and trials and the same start positions as in the experiments, and performed the same analyses as Figure 2 on the simulated data (Figure 4b). Each strategy determined which vestibules would be visited next and was recursively run until the goal (vestibule 0) was reached.
 
@@ -67,25 +103,37 @@ To investigate if the observed pattern of vestibule visits could be explained by
 
 For the random strategy, the identity of the next vestibule was randomly picked based on a uniform probability distribution, which produced a relatively uniform distribution of vestibule visits, similar to day 1 of the experiment. For the spatial strategy, the identity of the next vestibule was randomly picked based on a probability distribution that exponentially decayed as a function of goal distance. This strategy reproduced the concentration of vestibule visits near the goal observed in days 2–15, and partially contributed to the peaks in the distribution of segment lengths. The serial strategy could manifest in either the clockwise or counterclockwise direction. The identity of the next vestibule was determined by incrementing the current vestibule number by a certain step, with the sign of the step being positive for the clockwise direction and negative for the counterclockwise direction, and the size of the step obtained by adding a normal random jitter to the value of 1.2 for the clockwise direction and 2 for the counterclockwise direction. To merge both directions into a single process, we randomly assigned the step’s sign with an 80% chance of it being positive and a 20% chance of it being negative. This strategy effectively reproduced the distribution of segment lengths.
 
-## Mixture model combining random, spatial, and serial stochastic processes
+### Mixture model combining random, spatial, and serial stochastic processes
 
 None of the individual strategies alone could fully reproduce all of the experimental distributions depicted in Figure 2. Thus, we implemented a mixture model that integrates the three strategies, selecting them stochastically based on a specific probability distribution and employing them for a defined number (N) of segments (Figure 5a). To determine the optimal probability distribution, we conducted simulations for all possible combinations of probabilities, with each probability ranging from 0 to 100% with an increment of 2. The optimal value of N was sought within a range from 1 to 15. For each probability distribution and N value tested, we conducted the same analyses as in Figure 2 and compared the results with experimental data through mean square error calculations (Figure 5b). The optimal probability distribution and N value were identified as those yielding the lowest mean square error. To mitigate overfitting errors, we repeated all simulations and error calculations 10 time and computed averages to obtain the final probability distribution and value of N.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig5-v1.jpg)
+
+**Figure 5.:** (a) Mixture model combining the stochastic processes associated with random, spatial and serial strategies. A vestibule sequence is generated in two alternating steps. In step 1, a strategy is drawn according to the set of probabilities P_random, P_serial and P_spatial. In step 2, the stochastic process associated with the selected strategy is used to draw the next N vestibules. The vestibule sequence terminates upon reaching vestibule 0. Start positions are the same as in experiments. (b) Fits of experimental distributions for 5 days examples (using N=6). Color coded, mean square error (m.s.e) of the fits for all combinations of random, serial and spatial strategies (note that P_spatial = 1 P_random - P_serial). Line plots, overlays of experimental (blue) and model (red) distributions, for the best fits. (c) Mean square error as a function of N (mean ± s.e.m of 10 simulations for each value of N). A minimum is reached for N=6 (dash lines). Asterisks, significance relative to this minimum (*p<0.05, **p<0.005, ***p<0.0005, two-tail unpaired t-test). (d) Proportions of each strategy across days, obtained from the best fits.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Fits of experimental distributions across the 15 training days and 4 reversal days, using the mixture model and a strategy draw occurring every N=6 segments. Color coded, mean square error (m.s.e) between model and experimental distributions for all combinations of random, serial and spatial strategies (note that P_spatial = 1 P_random - P_serial). Line plots, overlays of experimental (blue) and model (red) distributions, for the best fits. (b) Proportions of each strategy across days, obtained from the model best fits, for 10 repetitions of the simulation with N=6. (c) Proportions of each strategy across days, obtained from the model best fits for various values of N. (d) Criteria previously used to classify strategies in the Barnes maze. Trials with less than 3 vestibule visits are assigned a spatial strategy. Trials for which the goal is reached via a serial bout at least 3-door-long are assigned a serial strategy. The rest of the trials are assigned a random strategy. (e) Proportions of each strategy across days, calculated with the criteria described in (d).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88648/elife-88648-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Proportions of each strategy across days for individual animal, obtained from the best fits of the mixture model. (b) Average proportions of each strategy across male (upper left), female (lower left) and all mice (right) (note the similarity with the proportions of each strategy obtained using the pooled data shown in Figure 5d). (c) Proportion of each strategy on day1, day2 and day6-to-15 combined (bar, mean; circle, individual mice; two-tailed unpaired t-test). (d) Initial (day2 - day1) and later (day6:15 day2) changes in strategy proportions (two-tailed t-test).
+
 To track random, serial, and spatial strategies over the 15 days, we repeated all the processes described above for each day, using the same sequences of start positions as in the experiments. The mixture model reproduced the general features of experimental data across days (Figure 5b, Figure 5—figure supplement 1), with the optimal fit being reached for a value of N=6 (Figure 5c). These findings demonstrate that the combination of the three stochastic processes could account for the patterns of vestibule visits.
 
-## Evolution of search strategy across days
+### Evolution of search strategy across days
 
 Using the probabilities obtained from the mixture model, we examined how the proportion of random, spatial and serial strategies evolved across days. Overall, the spatial strategy was increased across days, from 13.4 ± 4.16% on day 1–53 ± 8.34% on day 15 (P=1.86 x 10−6, two-tailed paired t-test), largely at the expense of the random strategy, which decreased from 58.2 ± 3.58% on day 1–3.8 ± 4.16% on day 15 (p=6.94 x 10−11, two-tailed paired t-test), while the serial strategy increased mostly from day 1 to day 2 (28.4 ± 3.1% on day 1 vs 44.6 ± 3.27% on day 2, p=7.62 x 10−7, two-tailed paired t-test; Figure 5d, Figure 5—figure supplement 1).
 
 To compare our results with previous studies, we also assessed the proportions of random, spatial, and serial strategies using the methods used in those studies (Figure 5—figure supplement 1d, e). Specifically, we classified a trial as using a spatial strategy if the number of vestibule visits before reaching the goal was less than 3, a serial strategy if the goal was reached via a serial bout of at least 3 segments, and a random strategy if the number of vestibule visits exceeded 3 and no serial bout led to the goal. Consistent with our mixture model results, we found that the spatial and serial strategies increased across days, while the random strategy decreased. However, the proportions of the random strategy remained relatively high across all days (~46% on day 15), in contrast to the mixture model results.
 
-## Inter-animal variations in search strategy across days
+### Inter-animal variations in search strategy across days
 
 To assess the variability in search strategies across individual animals, we computed the evolution of search strategy for each mouse separately, using the mixture model (Figure 5—figure supplement 2). We observed considerable diversity in strategies among individual mice across days, which may partly stem from the lower reliability of model fits for distributions with smaller sample sizes when considering data at the individual mouse level. Nonetheless, discernible strategy preferences persisting across days were evident among the animals (Figure 5—figure supplement 2a). Furthermore, the average of all individual mouse distributions showed a trend similar to that obtained when pooling data from all mice (Figure 5—figure supplement 2b).
 
 Interestingly, we observed significant differences between male and female mice. Initially, male tended to use the random strategy more frequently and the spatial strategy less often than female (Figure 5—figure supplement 2c). Moreover, they showed a more pronounced decrease in random strategy across days (male, r=–0.67, p=0.0067, female, r=–0.38, p=0.16, Pearson correlation). Importantly, the progressive increase in spatial strategy was observed in male but not in female mice (male, r=0.895, p<0.0001, female, r=–0.17, p=0.54, Pearson correlation). Conversely, female mice showed larger increases in serial strategy (male, r=–0.25, p=0.36, female, r=0.5, p=0.055, Pearson correlation; Figure 5—figure supplement 2d).
 
-## Markov chain modeling of the evolution of search strategy within trials
+### Markov chain modeling of the evolution of search strategy within trials
 
 As the task and environment become familiar, it is conceivable that an efficient approach to reach the goal involves a specific sequence of strategies. While the mixture model effectively estimates strategy proportions, it lacks information on the sequence of strategies within trials. To address this aspect, we implemented a Markov chain model where strategies were nodes of a Markov chain and potentially changed after each vestibule visit according to a specific set of transition probabilities, and where vestibules were chosen based on the same stochastic processes as in the mixture model, though the clockwise and counterclockwise directions of the serial strategy were treated as distinct strategies (Figure 6a). To estimate the probabilities for both the initial strategy used in a trial and subsequent strategy transitions, we implemented a genetic algorithm that explored the range of possible probability sets and iteratively refined values in order to minimize mean square errors between experimental and simulated distributions (Figure 6b–d; see Materials and methods).
 
@@ -111,11 +159,11 @@ In conclusion, we have developed a fully automated variant of the Barnes maze al
 
 ## Materials and methods
 
-## Experimental subjects
+### Experimental subjects
 
 All experiments were conducted in accordance with institutional regulations (Institutional Animal Care and Use Committee of the Korea Institute of Science and Technology) and conformed to the Guide for the Care and Use of Laboratory Animals (NRC 2011). Ten female and ten male mice (C57BL/6, 7–8 weeks old, Jackson Laboratory) were initially used for the experiment. However, one female was excluded from the study due to exhibiting excessive circling and thigmotaxis behavior. The mice were housed in a vivarium with 5 mice per cage (males and females were kept separate) and maintained under a 12 hr light/dark cycle. All experiments were carried out during the light cycle.
 
-## Maze description
+### Maze description
 
 The maze apparatus consists of an aluminum frame, a central arena and two home boxes that can move around the arena (Figure 1a, Figure 1—figure supplement 1). The floor of the arena (a white acrylic disc 1-cm-thick and 95 cm wide) is supported by a mounted bearing (UC205-16, UCFT205-16) fixed to a central rod (2.54 cm-diameter, 23 cm-high, stainless steel) and by 4 wheels at a 14.5 cm distance from the periphery. One of the wheels is motorized (NEMA 17HS4401 Bipolar Stepper Motor) to control the rotation of the platform. The angular position of the floor is calculated from the motor increment signal and an LED-photodetector couple detecting the passages of 24 beam-breakers (2x0.5 × 20 mm plastic pieces) fixed under the floor at positions matching the arena doors.
 
@@ -129,53 +177,53 @@ The home boxes are coupled to the central axle of the maze through an aluminum a
 
 To control the maze, a microcontroller (Arduino mega 2560) is used. The home box electronics are connected to the microcontroller through a long ribbon cable, which is placed inside a flexible plastic accordion pipe (148 cm-long, 25 mm-diameter) to prevent cable entanglement during the rotation of the boxes.
 
-## Maze environment
+### Maze environment
 
 For the spatial navigation task, the arena was accessed via angled vestibules, which limited the visibility of doors from within the arena (Figure 1—figure supplement 1). Two luminous landmarks were placed on the arena, consisting of small (WxLxH, 5x5 × 5 cm) and large (10x15 × 5 cm) semi-transparent plastic boxes containing yellow and blue LEDs, respectively. They moved together with the arena when the arena was rotated.
 
-## Task and maze operation
+### Task and maze operation
 
 The task involved navigating from a random start position to a fixed goal position (Figure 1b). At the beginning of each session, a mouse was placed in one of the home boxes. The start position was adjusted by rotating the arena floor until the box was aligned with the desired start position, while the goal position was set by moving the other box until it was aligned with the desired goal position. The doors of the boxes opened to let the mouse navigate the maze and then closed when the mouse reached the lick port of the other box. For most trials, the box containing the mouse remained still while the other box and arena floor were moved. However, both boxes were moved when the rotation angle of one of the boxes was going to exceed 180° to limit the twisting of electric cables. All these steps were carried out automatically using a program uploaded to a microcontroller using Arduino IDE 1.8.19.
 
 Mice performed a total of 10 trials per session, for 19 sessions (1 session per day), with a distinct sequence of random start positions for each session. The goal position was kept the same for sessions 1–15 and then changed for sessions 16–19. The same sequence of start positions and the same goal positions were used for all mice. Start positions were randomly selected among vestibules at least 2 door-intervals away from the goal position.
 
-## Probe test
+### Probe test
 
 Probe tests were carried out 3 hr after the task, on day 15. The mice were placed in the arena and allowed to explore freely for 2 min, with all arena doors closed. The maze area was divided into 24 equal zones, with the goal position at the center of one of the zones. The time spent in each zone and quadrant was measured using Ethovision (Noldus, Spink, & Tegelenbosch, 2001).
 
-## Trajectory tracking
+### Trajectory tracking
 
 Animal behavior was recorded using an infrared video camera (Basler acA1300-60gm, 25 frame/s) and infrared lights (AP-XM722-WAB-U4), and synchronized with task signals from the microcontroller using the software Ethovision (Noldus, Spink, & Tegelenbosch, 2001). Mouse position tracking and further analyses were implemented in MATLAB (MathWorks Inc, MA, USA). Video frames from a period without the mouse (the period between stopping the rotations of the boxes/arena floor and the opening of the door) were used to compute an average baseline frame that was subtracted from subsequent video frames with the mouse on the arena. For each frame, pixels delineating the mouse area were detected (using a threshold) within a circular region (radius: 7 cm) centered initially on the start position and then on the previous mouse position. The mouse area was longitudinally divided into four equal segments, and the center of mass xy-coordinates were computed for each segment, allowing a tracking of mouse position and body orientation. For each trial, the xy-coordinates were rotated to align the maze environment and goal position across trials.
 
-## Trajectory segmentation
+### Trajectory segmentation
 
 On each trial, mice often visited several vestibules before reaching the goal box. We divided each trial’s trajectory into two distinct components: vestibule visits and running segments between vestibules. We defined vestibule entrances and exits as the points where the mice crossed a radial distance threshold of 47.5 cm from the center of the arena.
 
-## Path length
+### Path length
 
 Mouse displacement was computed for each time step based on Euclidean distance and integrated over the entire trajectory to obtain the path length. We measured path length for both individual trials and individual segments, defined as the path between two vestibules.
 
-## Trial length
+### Trial length
 
 The trial length was defined as the number of segments in a trial.
 
-## Segment length and direction
+### Segment length and direction
 
 The segment length was defined as the number of doors it spanned, considering the travel direction associated with the smallest number. Each segment could span from 1 to 12 doors, either in a clockwise or counterclockwise direction (see Figure 2a). A positive value of segment length indicated a clockwise direction, while a negative value indicated a counterclockwise direction.
 
-## Serial bout length
+### Serial bout length
 
 For each trial, we calculated the length of segments and identified consecutive 1-door-long segments, which we defined as serial bouts. We measured the length of serial bouts as the number of segments in the group, with a minimum length of 1 segment corresponding to single, isolated 1-door-long segments.
 
-## Stochastic process for random strategy
+### Stochastic process for random strategy
 
 To model the pattern of vestibule visits, stochastic processes were implemented to choose which of the vestibules was visited next (Figure 4a). For the random strategy, the identity of the next vestibule was randomly drawn from the uniform distribution in the range [1–24], using MATLAB function randi to generate uniformly distributed pseudorandom integers in the range [1–24].
 
-## Stochastic process for spatial strategy
+### Stochastic process for spatial strategy
 
 For the spatial strategy, the identity of the next vestibule was randomly drawn from a distribution P that exponentially decayed as a function of goal distance (number of door-intervals between the vestibule and the goal). The distribution P was characterized by two symmetrical negative exponentials exp(-x/tau) that decayed as a function of leftward/rightward goal distance. An integer was randomly drawn from the uniform distribution in the range [1 sum_of_the_distribution_P]. The goal distance was determined by the position x for which the cumulative sum of the distribution P reached the value of the integer. The decay rate (tau) of the exponentials was heuristically set to 2 through comparison of experimental and simulated data (Figures 2 and 4). Importantly, we assumed that the next vestibule could not be the same as the current vestibule for this goal oriented strategy. Therefore the stochastic process was run again if the current vestibule was selected as the next vestibule.
 
-## Stochastic process for serial strategy
+### Stochastic process for serial strategy
 
 For the serial strategy, the identity of the next vestibule was determined by incrementing the current vestibule number by a stochastically determined step.
 
@@ -187,7 +235,7 @@ The values of offsets, standard deviations, and sign probabilities were heuristi
 
 As for the spatial process, we assumed that the next vestibule could not be the same as the current vestibule, so the stochastic process was rerun if the current vestibule was selected as the next vestibule.
 
-## Mixture model
+### Mixture model
 
 We implemented a mixture model that combine three strategies (random, spatial and serial) to simulate the pattern of vestibule visits (Figure 5a). Each strategy was assigned a specific probability (P_random, P_spatial, P_serial) for a given simulation. To select the strategy, an integer x was randomly drawn from the uniform distribution in the range [0 100]. The strategy was random if x<P_random; it was serial if x>P_random +P_spatial; otherwise, the strategy was spatial.
 
@@ -195,7 +243,7 @@ The mixture model assumed that mice use the same strategy throughout a specific 
 
 We ran simulations of the mixture model for the same number of mice and trials as in the experiments, and used the same start positions as in the experiments.
 
-## Estimation of strategy proportion and number N of consecutive vestibules for the mixture model
+### Estimation of strategy proportion and number N of consecutive vestibules for the mixture model
 
 To determine the optimal probability values for each strategy (P_random, P_spatial, P_serial), we conducted a comprehensive simulation study, exploring a wide range of probability combinations. Specifically, we tested values of P_random, P_spatial, and P_serial ranging from 0 to 100 (percent) with an increment of 2, while ensuring that their sum was always equal to 100. For each combination of probabilities, we used the same analytical methods as in the experimental analysis and computed the mean square error between the simulated and experimental distributions. We selected the optimal probability values as those that produced the lowest mean square error between the simulated and experimental distributions.
 
@@ -203,11 +251,11 @@ To determine P_random, P_spatial and P_serial for each of the 19 days, all simul
 
 To determine the optimal number N of consecutive vestibules, we repeated all simulations and error calculations for values of N ranging from 1 to 15 and selected the value associated with the lowest mean square error between the simulated and experimental distributions (Figure 5c).
 
-## Markov chain model
+### Markov chain model
 
 The model incorporated four strategies: random, spatial, serial clockwise and serial counterclockwise. To generate vestibule sequences, the model iteratively draw a strategy and then a vestibule using the stochastic process associated with the selected strategy, repeating this operation until the goal (vestibule 0) was reached. At the beginning of the trials, the strategy was drawn according to a set of probabilities determining the initial strategy (Figure 6a, left). Otherwise, the model transitioned between strategies based on another set of probabilities (Figure 6a, right).
 
-## Genetic algorithm
+### Genetic algorithm
 
 A genetic algorithm was employed to estimate the probabilities for both the initial strategy and strategy transitions in the Markov chain model. It iteratively refined probability values to minimize mean square errors between experimental and simulated distributions.
 
@@ -219,6 +267,6 @@ Mutation involved adding random values (−0.1–0.1) to each element of the pro
 
 The final probability matrix was obtained by averaging the matrices of the 250 best individuals from the 500th generation. The reliability of the results was assessed by observing similar convergence of parameters across 10 repetitions of the algorithm.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed in Matlab (MathWorks). Number of animals were similar to those generally employed. For each distribution, a Kolmogorov-Smirnov test was used to test the null hypothesis that the sample distribution was derived from a standard normal distribution. If normality was uncertain, we used non-parametric tests as stated in the main text or figures. Otherwise, Student t-tests were used to test the sample mean. Correlations were computed using Pearson’s correlation coefficient.

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.33370.001 One general principle of sensory information processing is that the brain must optimize efficiency by reducing the number of neurons that process the same information. The sparseness of the sensory representations in a population of neurons reflects the efficiency of the neural code. Here, we employ large-scale two-photon calcium imaging to examine the responses of a large population of neurons within the superficial layers of area V1 with single-cell resolution, while simultaneously presenting a large set of natural visual stimuli, to provide the first direct measure of the population sparseness in awake primates. The results show that only 0.5% of neurons respond strongly to any given natural image — indicating a ten-fold increase in the inferred sparseness over previous measurements. These population activities are nevertheless necessary and sufficient to discriminate visual stimuli with high accuracy, suggesting that the neural code in the primary visual cortex is both super-sparse and highly efficient.
+One general principle of sensory information processing is that the brain must optimize efficiency by reducing the number of neurons that process the same information. The sparseness of the sensory representations in a population of neurons reflects the efficiency of the neural code. Here, we employ large-scale two-photon calcium imaging to examine the responses of a large population of neurons within the superficial layers of area V1 with single-cell resolution, while simultaneously presenting a large set of natural visual stimuli, to provide the first direct measure of the population sparseness in awake primates. The results show that only 0.5% of neurons respond strongly to any given natural image — indicating a ten-fold increase in the inferred sparseness over previous measurements. These population activities are nevertheless necessary and sufficient to discriminate visual stimuli with high accuracy, suggesting that the neural code in the primary visual cortex is both super-sparse and highly efficient.
 
 ## Introduction
 
@@ -36,11 +36,41 @@ Our 2P imaging of GCaMP5 recorded neuronal population calcium (Ca2+) responses t
 
 The receptive fields (RFs) of the neurons were characterized using oriented gratings and bars presented in various positions. The RF centers of the imaged neurons were located between 3o and 5o in eccentricity. In each trial, a stimulus of 4o x 4o in size was presented, randomly drawn from a set of 2250 natural image stimuli (Figure 1, Figure 1—figure supplement 1c). The entire set of stimuli was repeated three times. These natural images evoked robust visual responses in the imaged neurons (Figure 1a,b, Figure 1—figure supplement 1c).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-v2.jpg)
+
+**Figure 1.:** (a, b) Calcium images of the neuronal population response to two different natural images (shown in the insets). Typically, only a few neurons, among the nearly 1000 neurons measured (1225 neurons for Monkey A or 982 neurons for Monkey B), responded strongly to a single patch of natural scenes. (c) The overall neuronal population responses to all 2250 natural images. Each cell was color-coded according to the response intensity to its optimal stimulus. (d, e) The distributions of neuronal population responses to the two natural images. Abscissa indicates the 1225 neurons that showed a significant response to natural images, in ranked order according to their responses to each image. Ordinate indicates ΔF/F0. (f, g) Frequency histograms showing the distributions of the number of stimuli (out of 2250) (y-axis) with different population sparseness, measured by the number of neurons activated strongly (x-axis). On average, fewer than 0.5% of the cells (6 cells out of 1225 for monkey A, and 4.1 cells out of 982 for monkey B) responded above half of their peak responses for any given image.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b) Two-photon images of neurons expressing GCaMP5 at zoom 1X and 2X respectively. (c) Natural stimuli evoked robust neural activity that is probed by the calcium indicator GCaMP5.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a, b) An average two-photon image from monkey B at two levels of magnification. (c, d) Images showing different sparse strong neuronal responses to different natural stimuli.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig1-figsupp3-v2.jpg)
+
 We recorded data from 1225 neurons in monkey A and 982 neurons in monkey B, and found that only a few neurons in each monkey responded strongly to any given image (Figure 1a,b), though most of the neurons responded strongly to at least one of the images in the set (Figure 1c). The rank-ordered distributions of the population responses were always sharply peaked (Figure 1d,e). On average, the percentage of neurons that responded above each’s half-maximum was 0.49% (6.0/1,225) for monkey A and and 0.42% (4.1/982) for monkey B (Figure 1f,g). This is a measure of population sparseness that can capture the peakedness of the population response distribution (see 'Materials and methods'). In other words, only about 0.5% of the cells responded strongly to each image, indicating a very high degree of sparseness in the strong population responses or a very sharp population response distribution.
 
 We also examined each neuron’s stimulus specificity or life-time sparseness (Willmore et al., 2011). Interestingly, we found that most cells responded strongly to only a small number of images in the whole stimulus set (Figure 2a,b). The preferred images for individual neurons often shared common features. For example, neuron 653 of monkey A was most excited when its receptive field (0.8o in diameter) covered the lower rim of the cat’s eye (indicated by the red dashed line in the inset in Figure 2b). The neuron’s preference for the specific curve feature was further confirmed by checking its selectivity to a variety of artificial patterns (Figure 2b). Similarly, neuron 949 of Monkey A was selective to a different specific curvature embedded within the natural stimuli (Figure 2d). A more systematic characterization of these cells using artificial stimulus patterns has been reported previously (Tang et al., 2018), and this work showed that many of these neurons are highly selective to specific complex patterns. To measure the sharpness of each neuron’s stimulus tuning curve — its life-time response sparseness — we computed the percentage of the stimuli that excited each neuron to >50% of the peak response found from the entire stimulus set. This population average was 0.49% (11/2,250) for Monkey A and 0.41% (9.3/2,250) for Monkey B (Figure 2e,f). This suggests that a high degree of stimulus specificity or life-time sparseness goes hand-in-hand with a heightened population sparseness.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig2-v2.jpg)
+
+**Figure 2.:** (a, b) The response of one example cell (cell 653) to the entire set of natural scene stimuli, exhibiting a high level of stimulus specificity. (c, d) Another example cell (cell 949) also shows high stimulus specificity. (e, f) The distributions of the stimulus specificity of neurons, in terms of the half-height width of the stimulus tuning curves. Each cell would typically respond strongly to fewer than 0.5% of the natural images in our test set.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) The tuning curve of neuron #653’s responses (averaged across trials) to the 2250 stimuli. (b) The tuning curve computed from one random shuffle across all trials. (c) The ROC of original trials (red curve) against those of 99 shuffled trials (gray). The AUC of the original data is 0.999. The AUC of the example in (b), colored in blue, is 0.68. (d) The distribution of the AUC’s of all 1000 shuffled cases. The probability that the shuffled AUC can reach the raw data’s AUC is less than 0.001 (p<0.001) for neuron #653.
+
 To understand how much information was carried in the sparse ensemble of population activities, we evaluated how well the sparse neural responses allow a decoder to discriminate the 2250 stimuli (Quian Quiroga and Panzeri, 2009; Froudarakis et al., 2014). The entire population’s decoding accuracy was 54% for Monkey A and 38% for Monkey B, whereas the chance accuracy was 0.04% (1/2,250) (Figure 3a,b, horizontal dashed lines). These population decoding accuracies estimate the highest achievable decoding performance from the activities recorded for the full population, and serve as the upper limit of accuracy performance that can be achieved by decoders that are made from any subset of neurons in the population (Figure 3a,b, horizontal dashed lines).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig3-v2.jpg)
+
+**Figure 3.:** Y axes show the cross-validated decoding accuracy on the 2,250-way image classification task. Dash lines are the referential ‘achievable decoding performance’ in accuracy obtained using the original entire neural population responses; red lines (‘top only’ in key) show the decoding accuracies when different percentages of the top responses were kept and lower responses were removed (set to zero); blue lines (‘top excluded’ in legends) show the decoding accuracies when different percentages of top responses were removed (set to zero) and lower responses were kept. X axes show the percentage of top responses included (red curves) and excluded (blue curves). Check 'Materials and methods Decoding Analysis' for details. Gray vertical lines highlight the decoding accuracies including or excluding the top 0.5% responses. Since our classification task is a 2250-way one, the chance accuracy is 1/2,250, or about 0.4%.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33370/elife-33370-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** See 'Materials and methods' for details. Results were qualitatively similar to those shown in Figure 3.
 
 Now that we know the highest achievable decoding performance of the entire population, we can build on that idea to assess the contribution of strong sparse responses to the overall decoding accuracy. We zeroed all responses below the top 0.5% response threshold and built a new decoding model to discriminate the 2250 stimuli. Here, we assume that only the strong signals above the threshold would be conveyed to downstream neurons successfully. Remarkably, a decoding accuracy of 28% for monkey A and 21% for monkey B could be achieved with only the top 0.5% of the strongest signals included (Figure 3a,b vertical gray lines). This means that transmitting the top 0.5% of the strongest responses for each image was sufficient to realize 50% of the maximum achievable decoding performance for either monkey.
 
@@ -58,17 +88,62 @@ The high degree of population sparseness that we observed is consistent with tw
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Macaque)</td>
+      <td>Rhesus monkeys</td>
+      <td>Beijing Prima Biotech Inc</td>
+      <td>http://www.primasbio.com/cn/Default</td>
+      <td>http://www.primasbio.com/cn/Default</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.hSyn.GCaMP5G</td>
+      <td>Penn Vector Core</td>
+      <td>V5072MI-R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matab 7.12.0 (R2011a)</td>
+      <td>MathWorks</td>
+      <td>Matab 7.12.0 (R2011a)</td>
+      <td>https://www.mathworks.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Codes for the decoding analysis and image movement correction</td>
+      <td>This paper</td>
+      <td>Codes for the decoding analysis and image movement correction</td>
+      <td>https://github.com/leelabcnbc/sparse-coding-elife2018 (copy archived athttps://github.com/elifesciences-publications/sparse-coding-elife2018)</td>
+    </tr>
+  </tbody>
+</table>
+
 All experimental protocols were approved by the Peking University Animal Care and Use Committee, and approved by the Peking University Animal Care and Use Committee (LSC-TangSM-5).
 
-## Subjects
+### Subjects
 
 The study used two adult rhesus monkeys (A and B), who were 4 and 5 years of age and weighed 5 and 7 kg, respectively (Li et al., 2017). Two sequential surgeries were performed on each animal under general anesthesia and strictly sterile conditions. In the first surgery, a 16 mm hole was drilled in the skull over V1. The dura was opened to expose the cortex, into which 50–100 nl AAV1.hSynap.GCaMP5G.WPRE.SV40 (AV-1-PV2478, titer 2.37e13 (GC/ml), Penn Vector Core) was pressure-injected at a depth of ~500 μm. After AAV injection, the dura was sutured, the skull cap was placed back, and the scalp was sutured. Then the animal was returned to its cage for recovery. Antibiotic (Ceftriaxone sodium, Youcare Pharmaceutical Group Co. Ltd., China) was administered for one week. After 45 days, a second surgery was performed, in which three head-posts were implanted on each animal’s skull, two on the forehead and one on the back of the head. A T-shaped steel frame was connected to these head-posts for head stabilization during imaging. The skull and dura were later opened again to explore the cortex. A glass cover-slip (diameter 8 mm and thickness 0.17 mm) was glued to a titanium ring and gently pressed onto the cortical surface. A ring-shape GORE membrane (20 mm in outer diameter) was inserted under the dura. The titanium ring was glued to the dura and skull with dental acrylic to form an imaging chamber. The whole chamber (formed by thick dental acrylic) was covered by a steel shell to prevent breakage of the cover-slip when the animal was returned to the home cage.
 
-## Behavioral task
+### Behavioral task
 
 During imaging, each monkey sat in a standard primate chair with head restraint and performed a fixation task, which involved fixating on a small white spot (0.1°) within a window of 1° for over 2 s to obtain a juice reward. Eye position was monitored with an infrared eye-tracking system (ISCAN, Inc.) at 120 Hz.
 
-## Visual stimuli
+### Visual stimuli
 
 Visual stimuli were generated using the ViSaGe system (Cambridge Research Systems) and displayed on a 17’ LCD monitor (Acer V173, 80 Hz refresh rate) positioned 45 cm from the animal’s eyes. Each stimulus was presented for 1 s after a 1 s blank within a fixation period of 2 s. We estimated the RF sizes and positions of the imaged neurons with small drifting gratings and bars presented at different locations. The RFs were estimated to be 0.2° to 0.8° in size with RF locations between 3° and 5° in eccentricity for both monkeys.
 
@@ -76,31 +151,31 @@ Drifting and oriented gratings were tested to examine the visual responses of im
 
 A natural stimulus set (NS) of 2,250 4° × 4° stimulus patches extracted from different natural scene photos was used to examine the neuronal responses to natural stimuli. The order of the stimuli was randomized in each session. These stimuli were tested on monkeys A and B, each with at least three repetitions.
 
-## Eye movement control
+### Eye movement control
 
 We analyzed the distribution of eye-positions during stimulus ON periods. The monkeys’ fixation during stimulus presentation (from 1 to 2 s in the graph) was stable and accurate. The distribution of eye positions during stimulus presentation, with standard deviations smaller than 0.05°, was significantly smaller than the typical receptive field sizes (ranging from 0.2° to 0.8°) of neurons at 3–5° eccentricities. To examine whether the eye movement made a significant contribution to the distribution of neuronal population responses, we compared the standard deviations (stds) of eye position in different population response classes of neurons: (1) weak responses (ΔF/F0 <0.5), (2) sparse strong responses (one or two cells responded), (3) dense responses (more than ten cells responded). We found no statistically significant differences in the distribution of eye position data in these three classes (Tang et al., 2018), indicating that the observed effects were not caused by movement differences. The ROC and decoding analysis (Figure 1—figure supplement 2), demonstrating the reliability of the neural responses across trials, confirm that the sparse population responses were repeatedly evoked by stimuli, and not by random eye-movement jitters.
 
-## Two-photon imaging
+### Two-photon imaging
 
 After a recovery period of 10 days after the second surgery, the animals were trained to maintain eye-fixation. Two-photon imaging was performed using a Prairie Ultima IV (In Vivo) 2P microscope (Bruker Nano, Inc., FMBU, formerly Prairie Technologies) powered by a Ti: Sapphire laser (Mai Tai eHP, Spectra Physics). The wavelength of the laser was set at 1000 nm. With a 16 × objective (0.8 N.A., Nikon), an area of 850 μm × 850 μm was imaged. A standard slow galvonometer scanner was used to obtain static images of cells with high resolution (1024 × 1024). The fast and resonant scan (up to 32 frames per second) was used to obtain images of neuron activity. The images were recorded at 8 frames per second by averaging each 4 frames. Infected cells of up to 700 μm in depth were imaged. We primarily focused on cells that were 160 μm to 180 μm deep, which included a high density of infected cells.
 
-## Imaging data analysis
+### Imaging data analysis
 
 All data analyses were performed using customized Matlab software (The MathWorks, Natick, MA). The images from each session were first realigned to a template image (the average image of 1000 frames) using a normalized cross-correlation-based translation algorithm, this corrected the X-Y offset of images caused by the relative movements between the objective and the cortex (Li et al., 2017).
 
 The cell density was high in superficial V1, and many cell bodies were quite dim at rest. It was difficult to identify these cells directly by eye or by algorithm on the basis of their morphology as captured in static images. We therefore identified ROIs for cell bodies on the basis of their responses. The differential images (which were averaged frames of the ON stimulus period, from which we then subtracted the average of the stimulus OFF period, for each stimulus condition) were first filtered using low-pass and high-pass Gaussian filters (5 pixels and 50 pixels). Notably, these two filters were used solely for ROI identifications. In all further analyses, we used the raw data without any filtering. Connected subsets of pixels (>25 pixels) with average pixel value greater than 3 stds in these differential images were identified as active neuronal ROIs. Note that these 3 stds empirical value was used only for deciding the ROIs of the activated cells, and was not used as a cutoff threshold for measuring neuronal responses (Figure 1—figure supplement 3). The ratio of fluorescence change (ΔF/F0) of these ROIs was calculated for each activated cell. ΔF = F F0, where F0 is the baseline activity during the blank screen prior to stimulus onset in each trial and F is fluorescence activity in the ROI during stimulus presentation in the trial. A neuropil-correction was performed with an index of 0.7 (Chen et al., 2013).
 
-## Sparseness measure
+### Sparseness measure
 
 The sparseness measure is used to quantify the peakedness of the response distribution. There are several different definitions of sparseness and corresponding sparseness measures (Willmore et al., 2011). One intuitive one for sparse codes, described by Willmore et al., 2011, is that “the population response distribution that is elicited by each stimulus is peaked (exhibits population sparseness). A peaked distribution is one that contains many small (approximately zero) magnitude values and only a small number of large values. Thus, a neural code will have high population sparseness if only a small proportion of the neurons are strongly active at any given time." A measure consistent with this intuition is the percentage of neurons that responded strongly, above a certain threshold relative to their peak response. This measure has been used in other studies (Rust and DiCarlo, 2012), typically with a half-peak response threshold.
 
 The sparseness measures based on the calculation suggested by Rolls and Tovee (1995) and by Vinje and Gallant (2000) are popular for quantifying the sparseness of spiking data, but they are very sensitive to measurement noise and uncertain baselines because of nonlinearities and missing responses in the low spiking-rate range (<10 Hz) in calcium imaging (Li et al., 2017). The sparseness measure that we used in this study, which is based on the percentage of the cells or stimuli above the half-maximum of each neuron, is much less sensitive to low-level activities (iceberg effect) or baseline fluctuations in the calcium signal.
 
-## Stability and reliability of the neuronal measurements
+### Stability and reliability of the neuronal measurements
 
 For each single neuron, we examined whether the sparse strong responses (ΔF/F0 >50% max) observed across the 2250 stimuli were reliable across trials by performing the following ROC analysis (Quiroga et al., 2005). We set all the stimuli that produced mean responses greater than 50% of the observed maximum mean peak of the cell to be in the ON class, and all other stimuli to be in the OFF class. We computed the ROC for classifying the ON class against the OFF class based on the response of each single trial. If the responses above the half-maximum are stable across all trials, then the AUC (the area under the ROC curve) will be close to 1.0, because the ON and OFF classes are readily discriminable. The null hypothesis is that sparse strong responses will be spurious single-trial epileptic responses, and not repeatable across trials. To test this hypothesis, we shuffled all the responses against the stimulus labels, and recomputed the mean responses for all the stimuli across the trials. We performed 1000 shuffles. We found that most of the shuffled cases have much lower average peak responses because of the mismatch of the rigorous sparse responses across trials, suggesting that the sparse responses in the original data are reliable. To make an even stricter and more fair comparison with the original data on ROC terms, for each shuffle, we recomputed the maximum responses, and used the half of this mean maximum as the threshold to sort the stimuli into ON and OFF classes and repeated the ROC analysis to obtain the AUC for this shuffle. The probability of the null hypothesis is the percentage of the time that the AUCs of the 1000 shuffles reach the AUC of the original data. With this ROC analysis, we found >96% neurons that adhered to the null hypothesis (p<0.01) (Figure 1—figure supplement 2).
 
-## Decoding analysis
+### Decoding analysis
 
 We used a nearest centroid classifier to discriminate the 2250 images on the basis of the population responses in each trial. As each image was tested three times, the nearest centroid classifier was trained on the basis of two trials for all images and tested on the hold-out trials. We repeated the procedure for each trial, performing 3-fold cross-validations.
 
@@ -110,6 +185,6 @@ In our experiments, we first set the X(t)s defined above to be the original reco
 
 Given that the population sparseness was computed on the basis of the half-maximum of each individual neuron’s response, we also repeated the decoding experiment using a percentage threshold that is relative to each neuron’s peak response, rather than the absolute response threshold, to select the ‘top responding’ neurons to be included or excluded and reset the responses to be excluded in the data matrix to 0 accordingly for training and testing the decoder as before.
 
-## Software available
+### Software available
 
 The code used for the decoding analysis and image movement correction can be found in https://github.com/leelabcnbc/sparse-coding-elife2018 (Zhang et al., 2018; copy archived at https://github.com/elifesciences-publications/sparse-coding-elife2018).

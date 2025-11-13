@@ -78,49 +78,49 @@ The current findings support such an integrative model of hedonic touch also for
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty patients were recruited in accordance with the Health Research Authority National Research Ethics Service (study reference 14/NW/1247). The study was conducted in accordance with the Declaration of Helsinki. All patients were admitted to the Walton Centre, Liverpool, UK and suffered from intractable unilateral cancer-related pain below the cervical level C4 with an expected lifespan of less than 12 months. It was not possible to test one patient in the post-operative state. Of the 19 patients nine were female. The patients’ demographic and clinical details are shown in Supplementary file 1. No patient had pre-existing symptoms or signs of neurological impairment, including pain, in the region of sensory testing.All patients were medicated with regular and pro re nata opioids as well as a variety of non-opioid analgesia. The median and range for numeric rating scale of average 4 hr pain, maximum pain in the past 4 hr and current pain were 76 (20-90), 98 (79-100) and 50 (10-81) respectively. A large number (13/19) of patients had previously received chemotherapy with potential peripheral neurotoxicity although no patient described ongoing symptoms potentially attributable to this.
 
 Opioid treatment (Martel et al., 1995; Case et al., 2016), chronic pain (Case et al., 2016) and chemotherapy-induced neurotoxicity (Geber et al., 2013; Krøigård et al., 2014) could all, in principle, impact on sensory testing. However, pre-procedural thermal and thermal pain detection thresholds were normal in the area of sensory testing and there was no pre-procedural evidence of impaired sensory discriminative or affective touch (see main article). Furthermore, since the study paradigm compared lesioned versus non-lesioned sides and pre-versus post-lesion states one would expect a right-left or pre-post difference in measures of affective or discriminative touch to be detected even if there was an underlying subtle (drug or pain induced) baseline ‘abnormality’ in the function or processing of C-tactile afferents or a generalized procedural effect.
 
-## Spinothalamic tract ablation
+### Spinothalamic tract ablation
 
 Antero-lateral cordotomy (Bain et al., 2013) was performed at the cervical level C1/C2 contralateral to the cancer-related pain. The procedure was performed with sedation and local anesthesia. Following dural puncture with a 20G spinal needle the cordotomy electrode was advanced into the antero-lateral quadrant of the spinal cord (Figure 1). Positioning in the spinothalamic tract was verified by eliciting cold, heat or other painful sensations, encompassing the region of cancer-related pain, using 50 Hz electrical stimulation through the cordotomy electrode. Motor twitch threshold using 10 Hz stimulation was also performed to assess proximity to the corticospinal tract. Adjustments of the electrode were made to maximize location with the spinothalamic tract and minimize proximity to motor pathways. The spinothalamic tract was disrupted using a radiofrequency current which produces a heat-induced lesion. This was performed in steps, typically starting at 65°C for 25–30 s, with a maximum temperature of 85°C. Lesioning of the spinothalamic tract was confirmed in the operating theatre by demonstrating a contralateral loss of temperature sensation on clinical examination. Operative details for all cases are shown in Supplementary file 1.
 
-## Experimental design
+### Experimental design
 
 All patients underwent pre-procedure testing, either on the morning of or day before cordotomy. Post-cordotomy testing was undertaken at least four hours following the procedure to allow for recovery from operative sedation. All post-cordotomy assessments were performed within 72 hr of the procedure, when spinothalamic deficits are likely to be maximal. Pre-procedure and post-procedure testing lasted approximately 90 min. All assessments were performed on the dorsal aspect of both the right and left forearm. The order of testing with respect to right and left was randomized.
 
-## Pleasant touch
+### Pleasant touch
 
 Assessment of gentle dynamic touch was made using a 70 mm goat’s hair artist brush. Patients were prevented from seeing the tested extremity throughout the experiment. Stimuli were delivered manually in a proximal to distal direction over a 10 cm distance marked on the forearm at velocities of 0.3, 3 and 30 cm s−1, chosen to reflect C-tactile optimal (3 cm s−1) and sub-optimal (0.3 and 30 cm s−1) stimuli. A computerized visual meter was used during training and testing sessions. Six stimuli at each velocity were given on each side in a computer-generated pseudorandom order. An inter-stimulus interval of at least 10 s was allowed to prevent fatigue in C-tactile firing. After each stroke patients rated both the pleasantness and intensity of the stimulation using a 20 cm paper visual analogue scale. Anchor points for touch intensity were no sensation (0) and very intense (10). For pleasantness anchor points were ‘unpleasant’ (−10) and ‘pleasant’ (10) with 0 representing a neutral stimulus.
 
-## Tactile acuity and graphesthesia
+### Tactile acuity and graphesthesia
 
 Mechanical detection thresholds were determined using von Frey monofilaments (Optihair2- Set Nervtest, Germany) according to the ‘method of limits’ (Rolke et al., 2006). Two-point discrimination (TPD) was determined using mechanical sliding calipers. Five ascending and descending assessments, centred around the subject’s TPD threshold, were conducted. The geometric mean of the obtained values was calculated for the threshold. Graphesthesia was used as a test of dorsal column function (Bender et al., 1982). Participants were asked to identify numbers 3, 4 and 5 that were drawn on the skin, approximately 6 cm in top-bottom dimension, using the blunt end of a Neurotip (Owe Mumford Ltd, UK). Initially testing was performed with the eyes open to ensure that the task was understood. Each number was presented three times in a pseudorandom order with eyes closed.
 
-## Thermal threshold testing
+### Thermal threshold testing
 
 Innocuous cold and warm detection as well as cold and heat pain thresholds were measured using the method of limits with the MEDOC TSA II (Medoc, Ramat Yishai, Israel). The thermode had a surface area of 9.0 cm2 and baseline temperature of 32°C. Thresholds were obtained using ramped stimuli of 1 °C s−1, the patient terminating the ramp with a button press. The mean of three consecutive temperature thresholds was calculated. The maximum and minimum limit of the thermode was 50°C and 0°C. Once the maximum or minimum temperature had been attained the temperature of the thermode immediately started to return toward baseline.
 
-## Pinprick testing
+### Pinprick testing
 
 Assessment of pinprick sensation was made using a Neurotip (Owe Mumford Ltd, UK).
 
-## Itch
+### Itch
 
 Assessment of itch sensation was made using cowhage. Cowhage spicules contain the pruritogen mucunain (Reddy et al., 2008; Davidson and Giesler, 2010) and on skin contact induce a histamine independent itch via activation of proteinase-activated receptors-2 and −4 (Reddy et al., 2008; Davidson and Giesler, 2010). Recordings in primates have shown that cutaneous application of cowhage activates ascending spinothalamic projection neurons (Davidson et al., 2012). Approximately 20 cowhage spicules were collected onto a cotton bud and rubbed directly on a 1cm2 skin site for 20 s. Spicules were then immediately removed with a strip of lightly-adhesive paper tape (Micropore, 3M, USA). Assessments were made post-cordotomy only. Patients rated the intensity of itch on a numeric rating scale (0–100). If no perception of itch was elicited cowhage application was repeated up to a maximum of three times before the sensation was judged to be absent.
 
-## The touch perception task
+### The touch perception task
 
 The Touch Perception Task was developed as a validated descriptive scale for touch perception (Guest et al., 2011). The full Touch Perception Task consists of 26 sensory and 14 emotional descriptors that provide information about differing aspects of touch in relation to specific tactile stimulations. A shortened form consisting of 28 descriptors was administered omitting seven sensory (firm, gritty, jagged, lumpy, rubbery, sticky and vibrating) and five emotional (sexy, thrilling, enjoyable, soothing and relaxing) descriptors (Supplementary file 3a). Stimuli were administered using a manual tactile stimulator that delivers a force-controlled stimulus at 0.22N. To this either sandpaper (grade: P120, average particle diameter 120 μm) or artificial fur (soft 10 mm long hairs, average diameter approximately 50 μm) were attached with an application dimension of 80 × 50 mm. Artificial fur and sandpaper have been used previously to provide extremes of tactile stimuli (Ackerley et al., 2014b). The manual tactile stimulator was moved over the skin at 3 cm s−1 over a 10 cm distance in a proximal to distal direction. The order of testing with respect to the type of material was randomized.
 
-## Sample-size estimation
+### Sample-size estimation
 
 Using an F-test power calculator for repeated measures ANOVA, assuming correlation among repeated measures for pleasantness ratings (primary outcome) of 0.7, for significance level of 0.05 twenty participants would grant approximately 80% power for an effect size f of 0.25 or 90% power for an effect size f of 0.4. These are conservative estimates. Previous studies comparing individuals with Hereditary Sensory and Autonomic Neuropathy type V (a mix of heterozygous and homozygous carriers) to healthy controls have detected highly significant differences with ten participants per group (Morrison et al., 2011).
 
-## Data analysis
+### Data analysis
 
 Statistical analyses were carried out with SPSS (version 23; IBM, Armonk, NY), Excel 2010 (Microsoft TM) and Graphpad Prism (version 7.04; GraphPad Software, La Jolla, CA). Rating data for pleasantness and intensity were averaged for each participant and each velocity and these average values were used in the reported analysis of variance (ANOVA).
 

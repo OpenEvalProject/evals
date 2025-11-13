@@ -23,19 +23,19 @@
 
 ### Affiliations
 
-1. https://ror.org/01zgy1s35 Institute for Systems Neuroscience, University Medical Center Hamburg-Eppendorf Hamburg Germany
-2. https://ror.org/00fbnyb24 Department of Psychiatry, Psychosomatics and Psychotherapy, Center of Mental Health, University Hospital of Würzburg, University of Würzburg Würzburg Germany
-3. https://ror.org/0245cg223 Department of Psychiatry and Psychotherapy, Medical Center - University of Freiburg, Faculty of Medicine, University of Freiburg Freiburg Germany
-4. https://ror.org/00pd74e08 Institute for Translational Psychiatry, University of Münster Münster Germany
-5. https://ror.org/03f6n9m15 Department of Psychiatry, Psychosomatic Medicine and Psychotherapy, University Hospital Frankfurt – Goethe University Frankfurt am Main Germany
-6. https://ror.org/01hcx6992 Department of Psychology, Humboldt-Universität zu Berlin Berlin Germany
+1. Institute for Systems Neuroscience, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+2. Department of Psychiatry, Psychosomatics and Psychotherapy, Center of Mental Health, University Hospital of Würzburg, University of Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
+3. Department of Psychiatry and Psychotherapy, Medical Center - University of Freiburg, Faculty of Medicine, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+4. Institute for Translational Psychiatry, University of Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+5. Department of Psychiatry, Psychosomatic Medicine and Psychotherapy, University Hospital Frankfurt – Goethe University Frankfurt am Main Germany ([ROR:03f6n9m15](https://ror.org/03f6n9m15))
+6. Department of Psychology, Humboldt-Universität zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
 7. German Center of Mental Health (DZPG), partner site Berlin-Potsdam Berlin Germany
-8. https://ror.org/01s1h3j07 Fraunhofer Institute for Translational Medicine and Pharmacology ITMP Frankfurt am Main Germany
-9. https://ror.org/00fbnyb24 Department of Child and Adolescent Psychiatry, Psychosomatics and Psychotherapy, Center of Mental Health, University Hospital of Würzburg, University of Würzburg Würzburg Germany
+8. Fraunhofer Institute for Translational Medicine and Pharmacology ITMP Frankfurt am Main Germany ([ROR:01s1h3j07](https://ror.org/01s1h3j07))
+9. Department of Child and Adolescent Psychiatry, Psychosomatics and Psychotherapy, Center of Mental Health, University Hospital of Würzburg, University of Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
 10. Kbo Inn Salzach Hospital Clinical Center for Psychiatry Wasserburg am Inn Germany
-11. https://ror.org/05591te55 Department of Psychiatry, Ludwig-Maximilian-University Munich Munich Germany
-12. https://ror.org/00fbnyb24 Department of Psychology and Center of Mental Health, Julius-Maximilians-University of Würzburg Würzburg Germany
-13. https://ror.org/02hpadn98 Department of Psychology, Biological Psychology and Cognitive Neuroscience, University of Bielefeld Bielefeld Germany
+11. Department of Psychiatry, Ludwig-Maximilian-University Munich Munich Germany ([ROR:05591te55](https://ror.org/05591te55))
+12. Department of Psychology and Center of Mental Health, Julius-Maximilians-University of Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
+13. Department of Psychology, Biological Psychology and Cognitive Neuroscience, University of Bielefeld Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))
 
 † Corresponding author
 
@@ -63,27 +63,248 @@ We operationalized childhood adversity exposure through different approaches: Ou
 
 In addition, we provide exploratory analyses that attempt to translate dominant (verbal) theoretical accounts (McLaughlin et al., 2021; Pollak and Smith, 2021) on the impact of exposure to childhood adversity into statistical tests. At the same time, we acknowledge that such a translation is not unambiguous and these exploratory analyses should be considered as showcasing a set of plausible solutions. With this, we aim to facilitate comparability, replicability, and cumulative knowledge generation in the field as well as providing a solid base for hypothesis generation (Ruge et al., 2024) and refinement of theoretical accounts. More precisely, we attempted to exploratively translate (a) the cumulative risk approach, which is based on the assumed key role of cumulative childhood adversity exposure, (b) the specificity model, which considers specific types of exposure (in the present study: abuse and neglect), and (c) the dimensional model, which also considers specific exposure types but controls for the effects of one another, into statistical tests applied to our dataset. Furthermore, we compiled challenges that arise in the practical implementation of these verbal theories into statistical models (for more details, see Table 1).
 
+**Table 1.**
+ Operationalization of childhood adversity in different theoretical approaches and challenges of their statistical translation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Approach name and reference</th>
+      <th>Operationalization of childhood adversity</th>
+      <th>Challenges in translating theory into a statistical model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Main analyses</td>
+    </tr>
+    <tr>
+      <td>Moderate exposure based on CTQ (exposed vs. unexposed)</td>
+      <td>Short description: At least one subscale met the published cut-off for at least moderate exposure (Bernstein and Fink, 1998; Häuser et al., 2011). The moderate cut-off was chosen, as it was recently identified as the most commonly used in the literature (for a review see Ruge et al., 2024)Procedure: Dichotomization of the sample into exposed vs. unexposed individuals based on published cut-offs: emotional abuse ≥ 13, physical abuse ≥ 10, sexual abuse ≥ 8, emotional neglect ≥ 15, physical neglect ≥ 10. Such cut-off of moderate exposure was employed in previous work by our team (Koppold et al., 2023) and in the literature (Ruge et al., 2024)Statistical test: See Materials and methods: Statistical analyses</td>
+      <td>Not based on an existing theory but on what is commonly used in the literature (Ruge et al., 2024)Different cut-offs published (for a discussion, see Ruge et al., 2024)(Statistical) Challenges linked to dichotomization of an inherently continuous variable</td>
+    </tr>
+    <tr>
+      <td colspan="3">Exploratory analyses</td>
+    </tr>
+    <tr>
+      <td>Cumulative risk model(Evans et al., 2013; McEwen, 2003)</td>
+      <td>Short description: Based on the assumed key role of cumulative exposure (exposure intensity and frequency)Procedure (a): Classification into four severity groups (no, low, moderate, severe exposure) based on cut-offs published by Bernstein and Fink, 1998Statistical test (a): Comparison of conditioned responding of the four severity groups by using one-way ANOVAsProcedure (b): Number of subscales exceeding an at least moderate cut-off based on Bernstein and Fink, 1998 and Häuser et al., 2011Statistical test (b): Number of sub-scales exceeding an at least moderate cut-off as a predictor and conditioned responding as the criterion in simple linear regression models</td>
+      <td>Problem with CTQ sum score: it assigns the same ‘value’ to all CM types (see also ‘General operationalizational challenges’ below)Number of subscales exceeding cut-off: calculate ANOVA or regression?Cumulative risk scores are based on the implicit assumption that different types of adverse events affect the same mechanisms and are of equal impact</td>
+    </tr>
+    <tr>
+      <td>Specificity model(McMahon et al., 2003; Pollak et al., 2000; Pollak and Tolley-Schell, 2004)</td>
+      <td>Short description: Consideration of specific exposure types (abuse vs. neglect)Procedure: Summing up the CTQ subscales of emotional abuse, physical abuse, and sexual abuse yielding a composite score for exposure to ‘abuse’ and summing up the subscales of emotional neglect and physical neglect to yield a composite score for ‘neglect’ (or threat vs. deprivation as done by Sheridan et al., 2017)Statistical test: The abuse and neglect composite scores are tested for associations with conditioned responding in separate regression models.In our sample, n=52 and n=96 individuals were exposed to abuse only and neglect only, respectively, while n=55 reported to have experienced both abuse and neglect. We included all participants in all analyses as done previously (Sheridan et al., 2017)</td>
+      <td>What qualifies as a specific exposure type? (i.e. subscales or composite scales for neglect vs. abuse?)Which exposure subcategories are ‘too specific’ or ‘too broad’? (A heterogeneous category may obscure potentially relevant discrete associations)Include only participants who experienced only one specific type but not any other types despite this being rather artificial due to high co-occurrences of different exposure types and requiring extremely large samples? Which cut-off should be used then to define exposure? We decided to include all participants in the analyses as done in previous studies (Sheridan et al., 2017)Lack of specificity of exposure subtypes (e.g. sexual abuse also has an emotional component)</td>
+    </tr>
+    <tr>
+      <td>Dimensional model(McLaughlin et al., 2016; McLaughlin et al., 2021)</td>
+      <td>Short description: Consideration of specific exposure types (i.e. abuse and neglect) that are assumed to co-occur and be controlled for the effect of one another (as opposed to the specificity model)Procedure: See specificity modelStatistical test: Abuse and neglect scores are tested for associations with conditioned responding in a single linear regression model in which the influence of the other exposure type is controlled for</td>
+      <td>Ongoing debate on the multicollinearity of multiple types of childhood adversity in one model (McLaughlin et al., 2021; Pollak and Smith, 2021)</td>
+    </tr>
+    <tr>
+      <td>General operationalizational challenges</td>
+      <td colspan="2">Non-comparability of dimensional and categorical approaches: CTQ sum score assumes an equal contribution of all items which contradicts different thresholds for being considered as exposed for different subscales (e.g. lower cut-off for sexual abuse as compared to emotional neglect)Associations in a full sample may differ from associations in the group of exposed individuals only which is a challenge for the interpretation of dataMultiple cut-offs published (Bernstein et al., 1997; Bernstein and Fink, 1998)Specific challenges relating to abuse and neglect: Theyoften co-occurare not the only relevant dimensions (e.g. unpredictability, loss)are not strongly supported as distinct dimensions in the literature (Carozza et al., 2022; Smith and Pollak, 2021)Heterogeneity in the assessment of childhood adversity across studies - both with respect to the assessment tools (e.g. questionnaires, interviews) as well as with respect to the operationalization of adversity (i.e. definition)Different response formats (yes/no vs. specification of duration and frequency) and the number of trauma types/events included in assessment tools impact on prevalence rates and potentially also associations between the number of adverse experiences and symptom severity (e.g. Contractor et al., 2018)Distinction between stressful events and trauma is often unclear (Richter-Levin and Sandi, 2021)</td>
+    </tr>
+  </tbody>
+</table>
+
 Based on the recently reviewed literature (Ruge et al., 2024), we expected less discrimination between signals of danger (CS+) and safety (CS-) in exposed individuals as compared to those unexposed to childhood adversity - primarily due to reduced CS+ responses - during both the fear acquisition and the generalization phase. Based on the literature (Ruge et al., 2024), we did not expect group differences in generalization gradients.
 
 ## Results
 
-Exposed and unexposed participants were equally distributed across data recording sites (χ2(3)=3.72, p=0.293).
+Exposed and unexposed participants were equally distributed across data recording sites ($χ^{2}$(3)=3.72, p=0.293).
 
-## Main effect of task
+### Main effect of task
 
 In brief, and as reported previously (Herzog et al., 2021; Schiele et al., 2016a), the fear acquisition was successful in SCRs as well as ratings in the full sample (all p’s<0.001; see Appendix 1 for details). During fear generalization, the expected generalization gradient was observed with a gradual increase in SCRs and ratings with increasing similarity to the CS+ (all p’s<0.01 except for the comparisons of SCRs to CS- vs. GS4 as well as GS1 vs. GS2 which were non-significant; see Appendix 1).
 
-## Association between different outcomes and exposure to childhood adversity
+### Association between different outcomes and exposure to childhood adversity
 
-During both the acquisition training and generalization phase, CS discrimination in SCRs was significantly lower in individuals exposed to childhood adversity as compared to unexposed individuals (see Table 2 and Figure 1; for trial-by-trial responses, see Appendix 1—figure 4). Post hoc analyses (i.e. ANOVAs) revealed that childhood adversity exposure significantly interacted with stimulus type (acquisition training: F(1, 1400)=5.42, p=0.020, ηp2<0.01; generalization test: F(1, 1051)=5.37, p=0.021): SCRs to the CS + during both acquisition training and the generalization phase were significantly lower in exposed as compared to unexposed individuals (acquisition training: t(1400)=2.54, p=0.011, d=0.14; generalization test: t=(194.1)=3.51, p=0.001, explanatory measure of effect size=0.179; see Figure 2) but not for the CS- (acquisition training: t(1400)=0.75, p=0.452, d=0.04; generalization test: t(178.9)=1.63, p=0.104, explanatory measure of effect size=0.09). For ratings, no significant effects of exposure to childhood adversity were observed in CS discrimination (see Table 2).
+During both the acquisition training and generalization phase, CS discrimination in SCRs was significantly lower in individuals exposed to childhood adversity as compared to unexposed individuals (see Table 2 and Figure 1; for trial-by-trial responses, see Appendix 1—figure 4). Post hoc analyses (i.e. ANOVAs) revealed that childhood adversity exposure significantly interacted with stimulus type (acquisition training: F(1, 1400)=5.42, p=0.020, $η_{p}^{2}$<0.01; generalization test: F(1, 1051)=5.37, p=0.021): SCRs to the CS + during both acquisition training and the generalization phase were significantly lower in exposed as compared to unexposed individuals (acquisition training: t(1400)=2.54, p=0.011, d=0.14; generalization test: t=(194.1)=3.51, p=0.001, explanatory measure of effect size=0.179; see Figure 2) but not for the CS- (acquisition training: t(1400)=0.75, p=0.452, d=0.04; generalization test: t(178.9)=1.63, p=0.104, explanatory measure of effect size=0.09). For ratings, no significant effects of exposure to childhood adversity were observed in CS discrimination (see Table 2).
+
+**Table 2.**
+ Results of t-tests comparing conditioned stimulus (CS) discrimination, the linear deviation score (i.e. strength of generalization), and general reactivity between exposed and unexposed participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Phase</th>
+      <th>Measure</th>
+      <th>t</th>
+      <th>df</th>
+      <th>p</th>
+      <th>Cohen’s d</th>
+      <th>LL (95% CI)</th>
+      <th>UL (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">CS discrimination</td>
+      <td rowspan="4">ACQ</td>
+      <td>SCR</td>
+      <td>2.33</td>
+      <td>1,400</td>
+      <td>0.020</td>
+      <td>–0.18</td>
+      <td>–0.33</td>
+      <td>–0.03</td>
+    </tr>
+    <tr>
+      <td>Arousal ratings</td>
+      <td>–1.52</td>
+      <td>1,400</td>
+      <td>0.128</td>
+      <td>0.12</td>
+      <td>–0.03</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Valence ratings</td>
+      <td>0.20</td>
+      <td>1,400</td>
+      <td>0.845</td>
+      <td>–0.01</td>
+      <td>–0.16</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Contigency ratings</td>
+      <td>0.70</td>
+      <td>1,400</td>
+      <td>0.484</td>
+      <td>–0.05</td>
+      <td>–0.20</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td rowspan="4">GEN</td>
+      <td>SCR</td>
+      <td>2.34</td>
+      <td>1,400</td>
+      <td>0.020</td>
+      <td>–0.18</td>
+      <td>–0.33</td>
+      <td>–0.03</td>
+    </tr>
+    <tr>
+      <td>Arousal ratings</td>
+      <td>–0.28</td>
+      <td>1,400</td>
+      <td>0.777</td>
+      <td>0.02</td>
+      <td>–0.13</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Valence ratings</td>
+      <td>0.06</td>
+      <td>1,400</td>
+      <td>0.953</td>
+      <td>0.00</td>
+      <td>–0.15</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Contigency ratings</td>
+      <td>0.58</td>
+      <td>1,400</td>
+      <td>0.560</td>
+      <td>–0.04</td>
+      <td>–0.19</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td rowspan="4">LDS</td>
+      <td rowspan="4">GEN</td>
+      <td>SCR</td>
+      <td>1.41</td>
+      <td>295</td>
+      <td>0.158</td>
+      <td>–0.10</td>
+      <td>–0.25</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Arousal ratings</td>
+      <td>–0.62</td>
+      <td>1,400</td>
+      <td>0.538</td>
+      <td>0.05</td>
+      <td>–0.10</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Valence ratings</td>
+      <td>0.30</td>
+      <td>1,400</td>
+      <td>0.765</td>
+      <td>–0.02</td>
+      <td>–0.17</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Contigency ratings</td>
+      <td>–0.95</td>
+      <td>1,400</td>
+      <td>0.344</td>
+      <td>0.07</td>
+      <td>–0.08</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td rowspan="4">General reactivity</td>
+      <td rowspan="4">ALL</td>
+      <td>SCR</td>
+      <td>2.06</td>
+      <td>1,400</td>
+      <td>0.040</td>
+      <td>–0.16</td>
+      <td>–0.31</td>
+      <td>–0.01</td>
+    </tr>
+    <tr>
+      <td>Arousal ratings</td>
+      <td>–0.10</td>
+      <td>1,400</td>
+      <td>0.920</td>
+      <td>0.01</td>
+      <td>–0.14</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Valence ratings</td>
+      <td>0.83</td>
+      <td>1,400</td>
+      <td>0.408</td>
+      <td>–0.06</td>
+      <td>–0.21</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Contigency ratings</td>
+      <td>–0.97</td>
+      <td>250</td>
+      <td>0.334</td>
+      <td>0.07</td>
+      <td>–0.09</td>
+      <td>0.24</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. ACQ = acquisition training, GEN = generalization phase, LDS = linear deviation score. Bold numbers indicate significant results (p<0.05)._
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91425/elife-91425-fig1-v1.jpg)
 
-**Figure 1.:** A–B) and generalization phase (C–D) for individuals unexposed (gray) and exposed (pink) to childhood adversity.Barplots (A and C) with error bars represent means and standard errors of the means (SEMs) including nunexposed = 1199 and nexposed = 203, respectively. The statistical parameters presented in A and C are derived from two-tailed independent-samples t-tests. The a priori significance level was set to α = 0.05. Distributions of the data are illustrated in the raincloud plots (B and D). Points next to the densities represent the CS discrimination of each participant averaged across phases. Boxes of boxplots represent the interquartile range (IQR) crossed by the median as a bold line, ends of whiskers represent the minimum/maximum value in the data within the range of 25th/75th percentiles ± 1.5 IQR. For trial-by-trial SCRs across all phases, see Appendix 1—figure 4. log = log-transformed, rc = range-corrected.
+**Figure 1.:** Barplots (A and C) with error bars represent means and standard errors of the means (SEMs) including nunexposed = 1199 and nexposed = 203, respectively. The statistical parameters presented in A and C are derived from two-tailed independent-samples t-tests. The a priori significance level was set to α = 0.05. Distributions of the data are illustrated in the raincloud plots (B and D). Points next to the densities represent the CS discrimination of each participant averaged across phases. Boxes of boxplots represent the interquartile range (IQR) crossed by the median as a bold line, ends of whiskers represent the minimum/maximum value in the data within the range of 25th/75th percentiles ± 1.5 IQR. For trial-by-trial SCRs across all phases, see Appendix 1—figure 4. log = log-transformed, rc = range-corrected.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91425/elife-91425-fig2-v1.jpg)
 
-**Figure 2.:** A–B) and the generalization phase (C–D) for individuals unexposed (gray) and exposed (pink) to childhood adversity separated by stimulus types (CS+: dark shades, CS-: light shades).Barplots (A and C) with error bars represent means and standard errors of the means (SEMs) including nunexposed = 1199 and nexposed = 203, respectively. The presented statistical parameters are derived from a two-tailed independent-samples t-test (A) and a Yuen independent-samples t-test for trimmed means (C). The a priori significance level was set to α = 0.05. Distributions of the data are illustrated in the raincloud plots (B and D). Points next to the densities represent the SCRs of each participant as a function of stimulus type averaged across phases. Boxes of boxplots represent the interquartile range (IQR) crossed by the median as a bold line, ends of whiskers represent the minimum/maximum value in the data within the range of 25th/75th percentiles ± 1.5 IQR. CS = conditioned stimulus, log = log-transformed, rc = range-corrected.
+**Figure 2.:** Barplots (A and C) with error bars represent means and standard errors of the means (SEMs) including nunexposed = 1199 and nexposed = 203, respectively. The presented statistical parameters are derived from a two-tailed independent-samples t-test (A) and a Yuen independent-samples t-test for trimmed means (C). The a priori significance level was set to α = 0.05. Distributions of the data are illustrated in the raincloud plots (B and D). Points next to the densities represent the SCRs of each participant as a function of stimulus type averaged across phases. Boxes of boxplots represent the interquartile range (IQR) crossed by the median as a bold line, ends of whiskers represent the minimum/maximum value in the data within the range of 25th/75th percentiles ± 1.5 IQR. CS = conditioned stimulus, log = log-transformed, rc = range-corrected.
 
 No significant effect of exposure to childhood adversity in either SCRs or ratings was observed for generalization gradients (see Table 2 and Figure 3). It is, however, also evident from the generalization gradients that both groups differ specifically in reactivity to the CS+ (see above and Figure 3).
 
@@ -99,33 +320,82 @@ In addition, general physiological reactivity in SCRs (i.e. raw amplitudes) was 
 
 At the request of a reviewer, we repeated our main analyses by using linear mixed models including age, sex, school degree (i.e. to approximate socioeconomic status, SES), and exposure to childhood adversity as fixed effects as well as site as random effect. These analyses yielded comparable results demonstrating a significant effect of childhood adversity on CS discrimination during acquisition training and the generalization phase as well as on general reactivity, but not on the generalization gradients in SCRs (see Appendix 1—table 2A). Consistent with the results of the main analyses reported in our manuscript, we did not observe any significant effects of childhood adversity on the different types of ratings when using mixed models (see Appendix 1—table 2B–D). Some of the mixed model analyses showed significantly lower CS discrimination during acquisition training and generalization, and lower general reactivity in males compared to females (see Appendix 1—table 2 for details).
 
-## Exploratory analyses
+#### Exploratory analyses
 
 The cumulative risk model operationalized through the different cut-offs for no, low, moderate, and severe exposure (Bernstein and Fink, 1998) did not yield any significant results for any outcome measure and experimental phase (see Appendix 1—table 3). However, on a descriptive level (see Figure 5), it seems that indeed exposure to an at least moderate cut-off level may induce behavioral and physiological changes (see main analysis, Bernstein and Fink, 1998). This might suggest that the cut-off for exposure commonly applied in the literature (see Ruge et al., 2024) may indeed represent a reasonable approach.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/91425/elife-91425-fig5-v1.jpg)
 
-**Figure 5.:** A) and the generalization phase (B), Linear deviation score (LDS) (C), and general reactivity in SCRs (D) for the four Childhood Trauma Questionnaire (CTQ) severity groups, respectively.The dashed line indicates the moderate CTQ cut-off frequently used in the literature and hence also employed in our main analyses: On a descriptive level, CS discrimination in SCRs during acquisition training and generalization test, as well as the strength of generalization (i.e. LDS) and the general reactivity are lower in all groups exposed to childhood adversity at an at least moderate level as compared to those with no or low exposure - which corresponds to the main analyses (see above). log = log-transformed, rc = range-corrected.
+**Figure 5.:** The dashed line indicates the moderate CTQ cut-off frequently used in the literature and hence also employed in our main analyses: On a descriptive level, CS discrimination in SCRs during acquisition training and generalization test, as well as the strength of generalization (i.e. LDS) and the general reactivity are lower in all groups exposed to childhood adversity at an at least moderate level as compared to those with no or low exposure - which corresponds to the main analyses (see above). log = log-transformed, rc = range-corrected.
 
 Cumulative risk operationalized as the number of CTQ subscales exceeding the moderate cut-off (Bernstein and Fink, 1998), however, revealed that a higher number of subscales exceeding the cut-off predicted lower CS discrimination in SCRs (F(1, 1400)=6.86, p=0.009, R2=0.005) and contingency ratings (F(1, 1400)=4.08, p=0.044, R2=0.003) during acquisition training (see Appendix 1—table 4 and Figure 6 for an exemplary illustration of SCRs during acquisition training). This was driven by significantly lower SCRs to the CS+ (F(1, 1400)=5.42, p=0.02, R2=0.004) while for contingency ratings no significant post hoc tests were identified (all p>0.05). For an illustration of how the different adversity types (i.e. subscales) are distributed among the different numbers of subscales, see Appendix 1—figure 5.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91425/elife-91425-fig6-v1.jpg)
 
-**Figure 6.:** Häuser et al., 2011) and conditioned stimulus (CS) discrimination in skin conductance responses (SCRs) (A) as well as SCRs to the CS+ (B) and CS- (C) during acquisition training.log = log-transformed, rc = range-corrected.
+**Figure 6.:** log = log-transformed, rc = range-corrected.
 
 The operationalization of childhood adversity in the context of the specificity model tests the association between exposure to abuse and neglect experiences on conditioned responding statistically independently, while the dimensional model controls for each other’s impact (see Table 2 for details and Figure 7 for an exemplary illustration of SCRs during acquisition training). Despite these conceptual and operationalizational differences, results are converging. More precisely, no significant effect of exposure to abuse was observed on CS discrimination, the strength of generalization (i.e. LDS), or general reactivity in any of the outcome measures and in any experimental phase (see Appendix 1—table 5; Appendix 1—table 7). In contrast, a significant negative association between exposure to neglect and CS discrimination in SCRs was observed during acquisition training (specificity model: F(1, 1400)=6.4, p=0.012, R2=0.005; dimensional model: F(3, 1398)=2.91, p=0.234, R2=0.006), which is contrary to the predictions of the dimensional model, that posits a specific role for abuse but not neglect (Machlin et al., 2019; McLaughlin et al., 2021). Post hoc tests revealed that in both models, effects were driven by significantly lower SCRs to the CS+ (specificity model: F(1, 1400)=6.13, p=0.013, R2=0.004, dimensional model: ß=–0.004, t(1398)=–1.97, p=0.049, r=–0.07). Within the dimensional model framework, the issue of multicollinearity among predictors (i.e. different childhood adversity types) is frequently discussed (McLaughlin et al., 2021; Smith and Pollak, 2021). If we apply the rule of thumb of a variance inflation factor (VIF) >10, which is often used in the literature to indicate concerning multicollinearity (e.g. Hair et al., 1995; Mason et al., 1989; Neter et al., 1989), we can assume that multicollinearity was not a concern in our study (abuse: VIF=8.64; neglect: VIF=7.93). However, some authors state that VIFs should not exceed a value of 5 (e.g. Akinwande et al., 2015), while others suggest that these rules of thumb are rather arbitrary (O’brien, 2007).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/91425/elife-91425-fig7-v1.jpg)
 
-**Figure 7.:** A and B) as well as SCRs to the CS+ (C and D) and CS- (E and F) during acquisition training.Note that the different ranges of CTQ composite scores result from summing up two and three subscales for the neglect and abuse composite scores, respectively (see also Table 1 for more details). log = log-transformed, rc = range-corrected, R squ.=R squared.
+**Figure 7.:** Note that the different ranges of CTQ composite scores result from summing up two and three subscales for the neglect and abuse composite scores, respectively (see also Table 1 for more details). log = log-transformed, rc = range-corrected, R squ.=R squared.
 
 Furthermore, the statistical analyses of the specificity model additionally revealed that greater exposure to neglect significantly predicted a generally lower SCR reactivity (F(1, 1400)=4.3, p=0.038, R2=0.003) as well as a lower CS discrimination in contingency ratings during both acquisition training (F(1, 1400)=5.58, p=0.018, R2=0.004) and the generalization test (F(1, 1400)=6.33, p=0.012, R2=0.005; see Appendix 1—table 6). These were driven by significantly higher CS- responding in contingency ratings (acquisition training: F(1, 1400)=4.62, p=0.032, R2=0.003; generalization test: F(1, 1400)=8.38, p=0.004, R2=0.006) in individuals exposed to neglect.
 
 To explore the explanatory power of different theories, we exemplarily compared the absolute values of Cohen’s d of all exploratory analyses including CS discrimination in SCRs during acquisition training with the absolute values of the Cohen’s d confidence intervals of our main analyses. We chose CS discrimination during fear acquisition training for this test, because the most convergent results across theories were observed during this experimental phase. None of the effect sizes from the exploratory analyses (cumulative risk, severity groups: d=0.14; cumulative risk, number of subscales exceeding an at least moderate cut-off: d=0.20; specificity model, abuse: d=0.10; specificity model, neglect: d=0.19; dimensional model: d=0.18) fell outside the confidence intervals of our main results (i.e. an at least moderate childhood adversity exposure: [0.03; 0.33]). Hence, we found no evidence of differential explanatory strengths among theories.
 
-## Analyses of trait anxiety and depression symptoms
+### Analyses of trait anxiety and depression symptoms
 
 As expected, participants exposed to childhood adversity reported significantly higher trait anxiety and depression levels than unexposed participants (all p’s<0.001; see Table 3 and Appendix 1—figure 6). This pattern remained unchanged when childhood adversity was operationalized differently - following the cumulative risk approach, the specificity, and the dimensional model (see the Materials and methods section). These additional analyses all indicated a significant positive relationship between exposure to childhood adversity and trait anxiety as well as depression scores irrespective of the specific operationalization of ‘exposure’ (see Appendix 1—figure 7).
+
+**Table 3.**
+ Descriptive information on the subsamples being exposed or unexposed to childhood adversity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Exposed</th>
+      <th>Unexposed</th>
+      <th>Statistics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>203 (14%)</td>
+      <td>1199 (86%)</td>
+      <td>Χ2(1)=707.57, p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Female/Male</td>
+      <td>124 (61%) / 79 (39%)</td>
+      <td>721 (61%) / 478 (39%)</td>
+      <td>Χ2(1)=0.03, p=0.858</td>
+    </tr>
+    <tr>
+      <td>Age (M/SD)</td>
+      <td>26.80 (6.99)</td>
+      <td>25.14 (5.50)</td>
+      <td>t(246.1)=–3.21, p&lt;0.001, d=0.29</td>
+    </tr>
+    <tr>
+      <td>STAI-T sum (M/SD)</td>
+      <td>38.73 (9.52)</td>
+      <td>34.04 (7.83)</td>
+      <td>t(250.4)=–6.65, p&lt;0.001, d=0.58</td>
+    </tr>
+    <tr>
+      <td>ADS-K sum (M/SD)</td>
+      <td>8.71 (6.31)</td>
+      <td>6.69 (5.70)</td>
+      <td>t(261)=–4.28, p&lt;0.001, d=0.35</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. STAI-T = State-Trait Anxiety Inventory, Trait scale (Spielberger, 1983), ADS-K = Allgemeine Depressionsskala - Kurzform (short version of the Center for Epidemiological Studies-Depression Scale, CES-D; Hautzinger and Bailer, 1993). Individuals were classified as exposed to childhood adversity if at least one subscale met the published cut-off (Bernstein and Fink, 1998; Häuser et al., 2011) for an at least moderate exposure (i.e. emotional abuse ≥13, physical abuse ≥10, sexual abuse ≥8, emotional neglect ≥15, physical neglect ≥10)._
 
 CS discrimination during acquisition training and the generalization phase, generalization gradients, and general reactivity in SCRs were unrelated to trait anxiety and depression scores in this sample with the exception of a significant association between depression scores and CS discrimination during fear acquisition training (see Appendix 1—table 8). More precisely, a very small but significant negative correlation was observed indicating that high levels of depression were associated with reduced levels of CS discrimination (r=–0.057, p=0.033). The correlation between trait anxiety levels and CS discrimination during fear acquisition training was not statistically significant but on a descriptive level, high trait anxiety scores were also linked to lower CS discrimination scores (r=–0.05, p=0.06) although we highlight that this should not be overinterpreted in light of the large sample. However, both correlations (i.e. CS discrimination during fear acquisition training and trait anxiety as well as depression, respectively) did not statistically differ from each other (z=0.303, p=0.762, Dunn and Clark, 1969). Interestingly, and consistent with our results showing that the relationship between childhood adversity and CS discrimination was mainly driven by significantly lower CS+ responses in exposed individuals, trait anxiety and depression scores were significantly associated with SCRs to the CS+, but not to the CS- during acquisition training (see Appendix 1—table 8).
 
@@ -157,45 +427,45 @@ In sum, when ultimately aiming to understand the impact of exposure to adversity
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 In total, 1678 healthy participants (ageM=25.26 years, ageSD=5.58 years, female=60.10%, male=39.30%) were recruited in a multi-centric study at the Universities of Münster, Würzburg, and Hamburg, Germany (SFB TRR58). Data from parts of the Würzburg sample have been reported previously (Herzog et al., 2021; Imholze et al., 2023; Schiele et al., 2020; Schiele et al., 2016a; Schiele et al., 2016b; Stegmann et al., 2019). These previous reports, also those focusing on experimental fear conditioning (Schiele et al., 2016a; Stegmann et al., 2019), addressed, however, research questions different from the ones investigated here (see also Appendix 1 for details). The study was approved by the local ethics committees of the three Universities (Münster: 2016–131-b-S, Ethics Committee Westfalen-Lippe; Würzburg: Votum 07/08, Ethics Committee of the Medical Faculty of the University of Würzburg; Hamburg: PV2755, Ethics Committee of the General Medical Council Hamburg) and was conducted in agreement with the Declaration of Helsinki. Current and/or lifetime diagnosis of DSM-IV mental Axis-I disorders, as assessed by the German version of the Mini International Psychiatric Interview (Sheehan et al., 1998), led to exclusion from the study (see Appendix 1 for additional exclusion criteria). All participants provided written informed consent and received 50 € as compensation.
 
 A reduced number of 1402 participants (ageM=25.38 years, ageSD=5.76 years, female=60.30%, male=39.70%) were included in the statistical analyses because 276 participants were excluded due to missing data (CTQ: n=21, ratings: n=78, SCRs: n=182), for technical reasons, and due to deviating from the study protocol. Five participants had missing CTQ and missing SCR data. Thus, the sum of exclusions in specific outcome measures does not add up to the total number of exclusions. We did not exclude physiological SCR non-responders or non-learners, as this procedure has been shown to induce bias through predominantly excluding specific subpopulations (e.g. high trait anxiety), which may be particularly prevalent in individuals exposed to childhood adversity (Lonsdorf et al., 2019). See Table 3 and Appendix 1 for additional sample information including trait anxiety and depression scores (see Appendix 1—figures 6 and 7), zero-order correlations (Pearson’s correlation coefficient) between trait anxiety, depression scores, and childhood adversity (see Appendix 1—figure 1) as well as information on SES (see Appendix 1—figure 2).
 
-## Procedure
+### Procedure
 
-## Fear conditioning and generalization paradigm
+#### Fear conditioning and generalization paradigm
 
 Participants underwent a fear conditioning and generalization paradigm which was adapted from Lau et al., 2008 and described previously in detail (Herzog et al., 2021; Schiele et al., 2016a; Stegmann et al., 2019). Details are also provided in brief in the Appendix 1 (see also Appendix 1—figure 3).
 
-## Ratings
+#### Ratings
 
 At the end of each experimental phase (habituation, acquisition training, and generalization) as well as after half of the total acquisition and generalization trials, participants provided ratings of the faces with regards to valence, arousal (9-point Likert-scales; from 1=very unpleasant/very calm to 9=very pleasant/very arousing) and US contingencies (11-point Likert-scale; from 0 to 100% in 10% increments). As the US did not occur during the habituation phase, contingency ratings were not provided after this phase. For reasons of comparability, valence ratings were inverted.
 
-## Physiological data recordings and processing
+### Physiological data recordings and processing
 
 Skin conductance was recorded continuously using Brainproducts V-Amp-16 and Vision Recorder software (Brainproducts, Gilching, Germany) at a sampling rate of 1000 Hz from the non-dominant hand (thenar and hypothenar eminences) using two Ag/AgCl electrodes. Data were analyzed offline using BrainVision Analyzer 2 software (Brainproducts, Gilching, Germany). The signal was filtered offline with a high cut-off filter of 1 Hz and a notch filter of 50 Hz. Amplitudes of SCRs were quantified by using the Trough-to-peak (TTP) approach. According to published guidelines (Boucsein et al., 2012), the response onset was defined as between 900–4000 ms after stimulus onset and the peak between 2000–6000 ms after stimulus onset. A minimum response criterion of 0.02 μS was applied, with lower individual responses scored as zero (i.e. non-responses). Note that previous work using this sample (Schiele et al., 2016a; Stegmann et al., 2019) had used square-root transformations but we decided to employ a log-transformation and range-correction (i.e. dividing each SCR by the maximum SCR per participant). We used log-transformation and range-correction for SCR data because these transformations are standard practice in our laboratory and we strive for methodological consistency across different projects (e.g. Ehlers et al., 2020; Kuhn et al., 2016; Scharfenort et al., 2016; Sjouwerman and Lonsdorf, 2020; Sjouwerman et al., 2015). Additionally, log-transformed and range-corrected data are generally assumed to approximate a normal distribution more closely and exhibit lower error variance, which leads to larger effect sizes (Lykken, 1972; Lykken and Venables, 1971; Sjouwerman et al., 2022). Additionally, on a descriptive level, this combination of transformations appears to offer greater reliability compared to using raw data alone (Klingelhöfer-Jens et al., 2022).
 
-## Psychometric assessment
+### Psychometric assessment
 
 Participants completed a computerized battery of questionnaires (for a full list, see Stegmann et al., 2019) prior to the experiment including a questionnaire with general questions asking, for example, about the SES, the German versions of the trait version of the State-Trait Anxiety Inventory (STAI-T, Spielberger, 1983), the CTQ-SF (Bernstein et al., 2003; Wingenfeld et al., 2010) and the short version of the Center for Epidemiological Studies-Depression Scale (CES-D, in Germany: Allgemeine Depressionsskala - Kurzform, ADS-K; Hautzinger and Bailer, 1993). The CTQ contains 28 items for the retrospective assessment of childhood adversity across five subscales (emotional, physical, and sexual abuse, as well as emotional and physical neglect; for internal consistency, see Appendix 1), and a control scale. The STAI-T consists of 20 items addressing trait anxiety (Laux and Spielberger, 1981; Spielberger, 1983), and the ADS-K includes 15 items assessing depressiveness during the past 7 d.
 
-## Operationalization of ‘exposure’
+### Operationalization of ‘exposure’
 
 We implemented different approaches to operationalize exposure to childhood adversity in the main analyses and exploratory analyses (see Table 1). In the main analyses, we followed the approach most commonly employed in the field of research on childhood adversity and threat learning - using the moderate exposure cut-off of the CTQ (for a recent review see Ruge et al., 2024). In addition, the heterogeneous operationalizations of classifying individuals into exposed and unexposed to childhood adversity in the literature (Koppold et al., 2023; Ruge et al., 2024) hampers comparison across studies and hence cumulative knowledge generation. Therefore, we also provide exploratory analyses (see below) in which we employ different operationalizations of childhood adversity exposure.
 
-## Statistical analyses
+### Statistical analyses
 
 Manipulation checks were performed to test for successful fear acquisition and generalization (for more details, see Appendix 1). Following previous studies (Imholze et al., 2023; Stegmann et al., 2019), we calculated three different outcomes for each participant for SCRs and ratings: CS discrimination (for acquisition training and the generalization phase), the linear deviation score (LDS; only for the generalization phase) as an index of the linearity of the generalization gradient (Kaczkurkin et al., 2017), and the general reactivity (across all phases including habituation, acquisition training and the generalization phase). CS discrimination was calculated by separately averaging responses to CS+ and CS- across trials (except the first acquisition trial) and subtracting averaged CS- responses from averaged CS+ responses. The first acquisition trial was excluded as no learning could possibly have taken place due to the delay conditioning paradigm. The LDS was calculated by subtracting the mean responses to all GSs from the mean responses to both CSs during the generalization phase. To calculate the general reactivity in SCRs and ratings, trials were averaged across all stimuli (CSs and GSs) and phases (i.e. habituation, acquisition training, and generalization phase). Note that raw SCRs were used for analyses of general physiological reactivity.
 
 CS discrimination during acquisition training and the generalization phase, LDS, and general reactivity were compared between participants who were exposed and unexposed to childhood adversity by using two-tailed independent-samples t-tests. For CS discrimination in SCRs, a two-way mixed ANOVA was conducted to examine the effect of childhood adversity exposure on responses to the CS+ and CS- by including CS type and childhood adversity exposure as independent variables. As the interaction between CS type and childhood adversity exposure was statistically significant, post hoc two-tailed paired t-tests were used to compare SCRs between CS+ and CS- within each group and independent-samples t-tests to contrast responses to each CS between exposed and unexposed participants.
 
-## Exploratory analyses
+### Exploratory analyses
 
 Additionally, the different ways of classifying individuals as exposed or unexposed to childhood adversity in the literature (Koppold et al., 2023; for discussion see Ruge et al., 2024) hinder comparison across studies and hence cumulative knowledge generation. Therefore, we also conducted exploratory analyses using different approaches to operationalize exposure to childhood adversity (see Table 1 for details). Note that no correction for alpha inflation was applied in these analyses, given their exploratory nature. To compare the explanatory strengths of the included theories, all effect sizes from the exploratory tests were converted to the absolute value of Cohen’s d as the direction is not relevant in this context. When their value fell outside the confidence intervals of the effect sizes of the main analysis (LeBel et al., 2018), this was inferred as meaningful differences in explanatory strengths.
 
-## Analyses of trait anxiety and depression symptoms
+### Analyses of trait anxiety and depression symptoms
 
 To further characterize our sample, we compared individuals being unexposed to those exposed to childhood adversity on trait anxiety and depression scores by using Welch's tests due to unequal variances.
 

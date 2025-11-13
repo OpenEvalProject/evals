@@ -24,7 +24,7 @@
 
 ## Abstract
 
-TMEM120A, a member of the transmembrane protein 120 (TMEM120) family, has a pivotal function in adipocyte differentiation and metabolism, and may also contribute to sensing mechanical pain by functioning as an ion channel named TACAN. Here we report that expression of TMEM120A is not sufficient in mediating poking- or stretch-induced currents in cells and have solved cryo-electron microscopy (cryo-EM) structures of human TMEM120A ( Hs TMEM120A) in complex with an endogenous metabolic cofactor (coenzyme A, CoASH) and in the apo form. Hs TMEM120A forms a symmetrical homodimer with each monomer containing an amino-terminal coiled-coil motif followed by a transmembrane domain with six membrane-spanning helices. Within the transmembrane domain, a CoASH molecule is hosted in a deep cavity and forms specific interactions with nearby amino acid residues. Mutation of a central tryptophan residue involved in binding CoASH dramatically reduced the binding affinity of Hs TMEM120A with CoASH. Hs TMEM120A exhibits distinct conformations at the states with or without CoASH bound. Our results suggest that TMEM120A may have alternative functional roles potentially involved in CoASH transport, sensing, or metabolism.
+TMEM120A, a member of the transmembrane protein 120 (TMEM120) family, has a pivotal function in adipocyte differentiation and metabolism, and may also contribute to sensing mechanical pain by functioning as an ion channel named TACAN. Here we report that expression of TMEM120A is not sufficient in mediating poking- or stretch-induced currents in cells and have solved cryo-electron microscopy (cryo-EM) structures of human TMEM120A (HsTMEM120A) in complex with an endogenous metabolic cofactor (coenzyme A, CoASH) and in the apo form. HsTMEM120A forms a symmetrical homodimer with each monomer containing an amino-terminal coiled-coil motif followed by a transmembrane domain with six membrane-spanning helices. Within the transmembrane domain, a CoASH molecule is hosted in a deep cavity and forms specific interactions with nearby amino acid residues. Mutation of a central tryptophan residue involved in binding CoASH dramatically reduced the binding affinity of HsTMEM120A with CoASH. HsTMEM120A exhibits distinct conformations at the states with or without CoASH bound. Our results suggest that TMEM120A may have alternative functional roles potentially involved in CoASH transport, sensing, or metabolism.
 
 ## Introduction
 
@@ -34,25 +34,81 @@ Transmembrane protein 120 (TMEM120) is a family of membrane proteins wide sprea
 
 ## Results
 
-## Functional characterizations of TMEM120A
+### Functional characterizations of TMEM120A
 
 When expressed heterologously in cell lines including CHO, HEK293T, and COS9, HsTMEM120A only appeared to cause a pico-ampere level of increase in stretch-induced currents (Beaulieu-Laroche et al., 2020), prompting us to verify the role of TMEM120A in mediating mechanically activated (MA) currents. To exclude any endogenous Piezo1-mediated MA currents, we have chosen the previously reported Piezo1 knockout HEK293T cells (P1-KO-HEK) (Cahalan et al., 2015) as our heterologous expression system. Using a piezo-driven blunted glass pipette to mechanically probe the cell membrane under a whole-cell recording configuration, we recorded robust MA currents from the P1-KO-HEK cells transfected with the construct of either Piezo1 or Piezo2 (Figure 1A–C). By contrast, similarly to vector-transfected cells, none of the cells transfected with the construct of either mouse TMEM120A (MmTMEM120A, with or without C-terminal fusion of fluorescent protein; MmTMEM120A-mCherry, with mCherry fused to the C-terminal region of MmTMEM120A; MmTMEM120A-ires-GFP, MmTMEM120A and green fluorescent protein (GFP) were translated as two independent proteins not fused to each other, due to the presence of an internal ribosome entry site/ires) or HsTMEM120A-mCherry showed poking-induced currents (Figure 1A–C). These data suggest that TMEM120A is not sufficient to mediate poking-induced currents. To examine whether TMEM120A might specifically mediate stretch-induced currents as originally reported (Beaulieu-Laroche et al., 2020), we measured stretch-induced currents by applying negative pressure from 0 to −120 mmHg to the membrane patch under either cell-attached (Figure 1D–F) or inside-out (Figure 1G–I) patch-clamp configurations. As a positive control, Piezo1 mediated robust stretch-induced currents under both cell-attached and inside-out recording configurations (Figure 1D–I). Consistent with the previous report that human TMEM63a (HsTMEM63a) serves as a high-threshold mechanosensitive channel (Murthy et al., 2018), we indeed found that HsTMEM63a-transfected cells reliably showed slowly activated stretch-induced currents, despite the maximal current amplitude being smaller than that of Piezo1-mediated currents (20.4 ± 2.2 vs 64.1 ± 7.4 pA) (Figure 1D–F). By contrast, under either cell-attached or inside-out patch configurations, none of the MmTMEM120A- or HsTMEM120A-transfected cells (a total of 57 cells) showed stretch-induced currents, similar to vector-transfected cells (Figure 1D–I). Given that none of the four different versions of TMEM120A constructs (MmTMEM120A-mCherry, MmTMEM120A-ires-GFP, HsTMEM120A-mCherry, and GFP-HsTMEM120A) exhibited poking- or stretch-induced currents in the cells, the lack of TMEM120A-mediated currents is highly unlikely due to the influence of the fusion tags. Thus, under our experimental conditions with the use of Piezo channels and HsTMEM63a as proper positive controls, we conclude that TMEM120A is not sufficient to mediate poking- or stretch-induced currents in P1-KO-HEK cells.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative poking-evoked whole-cell currents from P1-KO-HEK cells transfected with the indicated constructs. (B) Current-displacement curves showing poking-evoked whole-cell currents from P1-KO-HEK cells transfected with the indicated constructs in response to the increased probe displacement steps. The MmTMEM120A group includes data from both MmTMEM120A-mCherry- and MmTMEM120A-ires-GFP-transfected cells. (C) Scatter plot of the maximal poking-evoked whole-cell currents. (D) Representative stretch-induced currents from P1-KO-HEK cells transfected with the indicated constructs under the cell-attached patch configuration. (E) Current-pressure curves showing stretch-induced currents under cell-attached patch configuration from P1-KO-HEK cells transfected with the indicated constructs in response to the increased negative pressures. The MmTMEM120A group includes data from both MmTMEM120A-mCherry- and MmTMEM120A-ires-GFP-transfected cells, while the HsTMEM120A group includes data from both HsTMEM120A-mCherry- and GFP-HsTMEM120A-transfected cells. (F) Scatter plot of the maximal stretch-induced currents. (G) Representative stretch-induced currents from P1-KO-HEK cells transfected with the indicated constructs under the inside-out patch configuration. (H) Current-pressure curves showing stretch-induced currents under inside-out patch configuration from P1-KO-HEK cells transfected with the indicated constructs in response to the increased negative pressures. (I) Scatter plot of the maximal stretch-induced currents. In panels (C), (F), and (I), each bar represents mean ± sem, and the recorded cell number is labeled above the bar. One-way analysis of variance (ANOVA) with comparison to the vector. ***p<0.001; ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Traces of ion channel activities responding to the increase of negative pressure at both +80 and −80 mV. (B) A different patch of membrane exhibiting distinct behaviors of ion channel activities at +80 and −80 mV. While the trace recorded at −80 mV exhibits stimulated channel activities in response to increasing pressures, the one at +80 mV appears to be insensitive to increasing pressure. (C) A silent patch with no pressure-dependent ion channel activities. The traces from three representative patches were obtained by holding the patch at −80 mV and +80 mV with a pressure pulse protocol shown at the bottom: −22.5 to −97.5 mmHg with −7.5 mmHg step. All recordings were performed with a symmetrical pipette and a bath solution containing 500 mM NaCl, 10 mM CaCl2, and 10 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) (pH 7.4, ~300 Osm/l).
 
 Purified TMEM120A proteins were shown to mediate spontaneous channel activities with an estimated single-channel conductance of ~250 pS, which is drastically different from the single-channel conductance of 11.5 pS measured in cells (Beaulieu-Laroche et al., 2020). To verify whether purified TMEM120A proteins might mediate channel activities when reconstituted into lipid bilayers (Beaulieu-Laroche et al., 2020), we reconstituted purified HsTMEM120A proteins into giant unilamellar vesicles (GUVs) and carried out single-channel recording on the inside-out excised membrane patch by applying a negative pressure on the membrane. As shown in Figure 1—figure supplement 1, out of over 200 (ie, 217) patches measured, only two exhibited pressure-dependent mini-conductance channel activities. In one patch, the channel became more active in response to the increasing negative pressure at both −80 and +80 mV (Figure 1—figure supplement 1A), whereas the other patch only responded to the increasing negative pressure at −80 mV but not at +80 mV (Figure 1—figure supplement 1B). Most other patches were either silent and insensitive to the negative pressure applied (Figure 1—figure supplement 1C) or exhibited leaky signals, suggesting that the overall channel activity of the protein reconstituted in GUVs is fairly low.
 
 Taken together, our functional characterizations did not verify the previous report indicating that TMEM120A might form a mechanically activated ion channel.
 
-## Overall structure of TMEM120A
+### Overall structure of TMEM120A
 
 To further investigate whether TMEM120A might form an ion channel or not, we went on to solve the cryo-EM structure of HsTMEM120A with the hope to obtain hints about the function of TMEM120A through a structural approach. As shown in Figure 2 (and Figure 2—figure supplement 1, Supplementary file 1), the cryo-EM structure of HsTMEM120A protein reconstituted in lipid nanodiscs forms a homodimeric assembly with an overall shape resembling a seesaw rocker. The two monomers of HsTMEM120A proteins are related by a twofold symmetry axis running through their interface and perpendicular to the membrane plane. Each monomer contains an N-terminal soluble domain (NTD) on the cytosolic side and a transmembrane domain (TMD) embedded in a lipid bilayer (Figure 3A). There are two α-helices (intracellular helices 1 and 2, IH1 and IH2) in the NTD of each monomer (Figure 3—figure supplement 1). The long α-helix (IH1) of NTD intertwines with the symmetry-related one and interacts closely with the shorter one (IH2). IH1, IH2, and their symmetry-related ones in the adjacent monomer collectively form a coiled-coil structure with the long axis running approximately parallel to the membrane plane (Figure 3B). The TMD contains a bundle of six transmembrane helices (TM1-6) forming an asymmetric funnel with a wide opening on the intracellular side and a bottleneck on the extracellular side (Figure 3D). Between NTD and TMD, there is a hinge-like motif (HM) with two long loops and a short amphipathic α-helix positioned near the membrane surface on the intracellular side. The HM intercalates at the gap between the TMDs of two adjacent monomers and serves to stabilize the dimer by interacting with both subunits (Figure 3C).
 
-## Identification of a CoASH-binding site in HsTMEM120A
+![Figure 2.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cryo-electron microscopy (cryo-EM) density of HsTMEM120A-CoASH complex dimer embedded in a lipid nanodisc. The densities of two HsTMEM120A protein subunits are colored blue and pink, while those of coenzyme A (CoASH) and the lipid nanodisc are colored silver. Side view along membrane plane, top view from extracellular side, and bottom view from intracellular side are shown from left to right. (B) Cartoon representations of the HsTMEM120A-CoASH complex structure. The proteins are shown as cartoon models, whereas CoASH molecules are presented as sphere models. The views are the same as the corresponding ones in (A).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Size-exclusion chromatography of the HsTMEM120A-CoASH complex reconstituted in nanodiscs. The image of sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) analysis of the peak fraction is shown on the right. (B) Representative cryo-electron microscopy (cryo-EM) image of the HsTMEM120A-CoASH complex in nanodiscs and 2D classification images. (C) The flow chart of data processing, 3D classification, and refinement. (D) The gold standard Fourier shell correlation (GSFSC) curves for the 3D refinement of the final cryo-EM map. Blue, the FSC curve obtained without application of a mask; orange, the FSC curve obtained with a spherical mask; green and red, the FSC curve obtained with loose and tight masks around the protein density, respectively; purple, the FSC curve obtained with a corrected mask. (E) Angular distribution of the particles used for the final reconstruction. (F) The FSC curves between the structural model and full map as well as two half maps. (G) Estimation of the local resolution of the final cryo-EM map. The unit for the numbers labeled nearby the gradient color bar is Å.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig3-v2.jpg)
+
+**Figure 3.:** (A) The topology of HsTMEM120A monomer and arrangement of different parts relative to the membrane. The α-helices are presented as cylinder models. IH1-3, the intracellular helices 1–3; TM1-6, transmembrane helices 1–6; IL1-5, intracellular loops 1–6; EL1-3, extracellular loops 1–3. (B) The N-terminal domain (NTD) with two long and two short α-helices. (C) The role of hinge-like motif (HM) in mediating dimerization of HsTMEM120A at the monomer-monomer interface. The solid elliptical rings in (B) and (C) indicate the central twofold axis of HsTMEM120A homodimer. (D) The transmembrane domain with a bundle of six transmembrane helices. TM1, TM2, and TM3 are related to TM6, TM5, and TM4 through a pseudo-C2 axis as indicated in the lower half.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The refined structural models superposed on the map are shown as stick models. The map is contoured at 6.7–13.1 rmsd level. TM2 (158–184), TM3 (191–209), TM4 (214–244), and EL2 (210–213), 13.1 rmsd; hinge motif (101–122), TM1 (123–154), and TM5 (271–298), 11.0 rmsd; TM6 (305–334), EL1 (155–157), and IL4 (185–190), 9.1 rmsd; IH1 (7–68), IH2 (74–100), IL1 (69–73), and EL3 (299–304), 6.73 rmsd; IL5 (252–261), 4.33 rmsd.
+
+### Identification of a CoASH-binding site in HsTMEM120A
 
 Unexpectedly, the HsTMEM120A protein reconstituted in nanodiscs contains a CoASH molecule per monomer that is from an endogenous cellular source and copurified along with the protein (Figure 4A). Firstly, a small-molecule density is observed in the intracellular funnel-like cavity of each monomer and the density matches well with the CoASH model (Figure 4B) but not with the CoA derivatives (such as acetyl-CoA or fatty acyl CoA) or other nucleotide analogs (Figure 4—figure supplement 1). Secondly, mass spectrometry (MS) analysis on the perchloric acid extract of the purified HsTMEM120A protein indicates that the protein does contain CoASH (Figure 4C). Thirdly, the CoASH molecule can bind to the ligand-free HsTMEM120A protein with a dissociation constant (Kd) of 0.69 ± 0.05 μM (Figure 4D). The endogenous CoASH in the protein sample can be removed by purifying the protein through the size-exclusion chromatography in a detergent solution (see 'Materials and methods' for details), as indicated by the decrease of A260/A280 (absorbance at 260 nm/absorbance at 280 nm) value from 0.88 to 0.58 (note: while the protein absorption maximum is at ~280 nm, the absorption maximum of CoASH is at ~260 nm; Zarzycki et al., 2008). As shown in Figure 4B, the CoASH molecule assumes a bent conformation and forms numerous specific interactions with amino acid residues on the lumen surface of the cavity (Figure 4E–G). The amino acid residues involved in binding CoASH are highly conserved among various TMEM120A and TMEM120B homologs from different species (Figure 4—figure supplements 2 and 3). The 5-pyrophosphate and 3-phosphate groups of CoASH are positioned at the entrance of the cavity, while the adenosine and cysteamine groups of CoASH are inserted deep in the intracellular cavity pocket of HsTMEM120A in a key-lock mode (Figure 4B,E–G). Trp193 of HsTMEM120A forms a strong π-π stacking interaction with the adenine group of CoASH. Mutation of the Trp193 to Ala dramatically reduced the affinity between CoASH and the protein (Figure 4—figure supplement 4). Therefore, the TMD of HsTMEM120A harbors a specific CoASH-binding site, potentially related to the function of TMEM120A protein.
 
-## Conformational change of HsTMEM120A upon dissociation of CoASH
+![Figure 4.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig4-v2.jpg)
+
+**Figure 4.:** (A) Electrostatic potential surface presentation of HsTMEM120A dimer reveals a deep coenzyme A (CoASH)-binding cavity with an electropositive surface. Left, side view; right, top view along the membrane normal from the intracellular side. The CoASH molecules are presented as sphere models. (B) The cryo-electron microscopy (cryo-EM) density of the ligand molecule bound to HsTMEM120A fitted with a refined structural model of CoASH. (C) Mass spectrometry analysis of the small molecule extracted from the purified HsTMEM120A protein. The chemical models of CoASH molecule and its fragments are shown above the corresponding peaks with m/z values 768.1232, 428.0344, and 261.1280. (D) Isothermal titration calorimetry analysis on the kinetic interactions between CoASH and HsTMEM120A. The background heat of control was subtracted from the heat generated during binding of CoASH to HsTMEM120A. The result is fit with the single-site-binding isotherm model with ΔH = –31.09 ± 0.97 kcal/mol and Kd = 0.685 ± 0.045 μM. (E) Top view of the CoASH-binding site from the cytosolic side. The cryo-EM densities of CoASH and the surrounding amino acid residues (contoured at 9.5 rmsd) are superposed on the structural model. (F, G) Side views of the detailed interactions between CoASH and the adjacent amino acid residues of HsTMEM120A from two different angles. The blue dotted lines indicate the hydrogen bonds or the salt bridge between Lys130 NZ and CoASH O2B (3.6 Å), Lys130 NZ and CoASH O8A (3.4 Å), and Gln237 NE2 and CoASH N1A (3.8 Å). The purple dotted line shows the π-π interaction between Trp193 and CoASH at 4.2–4.5 Å distances. The pink dotted lines exhibit the non-polar interactions between CoASH and the adjacent residues (Arg188, Ile189, Leu279, and Val328) at <4 Å distance.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Coenzyme A (CoASH). (B) Acetyl-CoA. The area in the dashed box indicates the local region with clashes between the acetyl group of acetyl-CoA model and Gly282-His283 region of the protein. (C) Propionyl-CoA. The local region in the dashed box at the bottom right has a clash between the propionyl group of propionyl-CoA model and the protein. For palmitoyl- or oleoyl-CoA, the fatty acyl group is too long to fit in the density. (D) Adenosine triphosphate (ATP). There is an extra density of the cofactor not covered by the ATP model. (E) Nicotinamide adenine dinucleotide (NAD). Note that the bulky nicotinamide group does not match with the cofactor density. (F) Flavin adenine dinucleotide (FAD). The bulky flavin group of FAD is not covered by the cofactor density. In (A-F), the cryo-electron microscopy (cryo-EM) map of HsTMEM120A in the nanodisc is contoured at 6.4 rmsd level.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Sequence alignment of HsTMEM120A with other homologs from different species. The highly conserved amino acid residues are highlighted in a dark background. The triangles denote the coenzyme A (CoASH)-binding residues, and the color code is the same as the one for ConSurf conservation score bar shown in (B). The circles indicate the amino acid residues located in the narrowest region of channel pore. The α-helices and associated loops are indicated by the helical ribbons and dark lines labeled above the sequences, respectively. Accession codes: Homo sapiens (NP_114131.1), Mus musculus (NP_766129.1), Gallus gallus (XP_040543083.1), Xenopus laevis (NP_001091170.1), Danio rerio (NP_001076452.1), Drosophila melanogaster (NP_001245509.1), Caenorhabditis elegans (NP_001370801.1), and Arabidopsis thaliana (CAD5314357.1). (B) Mapping of the conserved amino acid residues on the surface of HsTMEM120A structure. The conserved residues are shown in dark pink, while the variable ones are in cyan. (C, D) The amino acid residues located at the CoASH-binding site and the constriction area, respectively.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Hs, Homo sapiens (NP_001074294.2); Mm, Mus musculus (NP_001034812.1); Gg, Gallus gallus (NP_001376307.1); Xl, Xenopus laevis (NP_001086700.1); Dr, Danio rerio (XP_005169279.1).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) and western blot analyses of the purified W193A protein. (B) Isothermal titration calorimetry (ITC) analysis of W193A protein sample titrated with coenzyme A (CoASH). The data were fit with the single-site-binding isotherm model with Kd = 198.41 ± 0.81 μM.
+
+### Conformational change of HsTMEM120A upon dissociation of CoASH
 
 Does HsTMEM120A change its conformation upon dissociation of CoASH? To address this question, we solved the structure of HsTMEM120A in a detergent micelle with no CoASH bound (Figure 5 and Figure 5—figure supplement 1A–D, Supplementary file 1). The sample in the detergent exhibits an A260/A280 ratio much lower than the one in nanodiscs (Figure 5—figure supplement 1E,F), and no CoASH density is observed in the cavity (Figure 5—figure supplement 1G,H). In the CoASH-free structure (Figure 5A and B), the IL5 loop between TM4 and TM5 switches from the outward position to an inward position, partially covering the entrance of the intracellular cavity of HsTMEM120A (Figure 5C and D). The absence of CoASH creates a spacious vacant lumen in the intracellular cavity of HsTMEM120A protein, potentially allowing water and ions to enter through the cytoplasmic entrance (Figure 5—figure supplement 2A). Meanwhile, the cavity appears to be constricted at a narrow region on the extracellular side mainly by four amino acid residues, namely Met207, Trp210 and Phe219, and Cys310 (Figure 5—figure supplement 2A–C). Among them, only Trp210 is highly conserved across different species, while the other three are less conserved (Figure 4—figure supplements 2 and 3). In the presence of CoASH, the intracellular cavity of HsTMEM120A is not only constricted by the four residues at the extracellular side but also blocked by the bulky adenosine 3-phosphate 5-pyrophosphate group of CoASH as well as its cysteamine and pantothenate groups (Figure 5—figure supplement 2A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) The overall structure of HsTMEM120A without coenzyme A (CoASH) bound. The side view (A) and bottom view from intracellular side (B) are shown. The two monomers are colored light and dark green, respectively, while the intracellular loop IL5 is highlighted in orange. (C) Superposition of the structures of HsTMEM120A at the CoASH-free state (green for the bulk region and orange for IL5) and CoASH-bound state (silver). The view is similar to the one in the dashed box of panel (A). (D) Surface presentation of the region around the CoASH-binding site in the CoASH-free (left) and CoASH-bound (right) HsTMEM120A structures. The IL5 loop region is highlighted in orange. (E) Cryo-electron microscopy (cryo-EM) densities of the IL5 loop in the CoASH-free (left, contoured at 4.5 rmsd) and CoASH-bound (right, contoured at 3.3 rmsd) HsTMEM120A structures.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The flow chart of data collection, 2D classification, 3D classification, and refinement process. A total of 12,156 movie stacks were collected, and a representative motion-corrected micrograph is shown. Particles were subjected to several rounds of 2D and 3D classifications. The final map was generated by applying local refine procedure in cisTEM. (B) Angular distribution diagram of the particles contributing to the final reconstruction. (C) Estimation of the local resolution in the sharpened 4.0 Å cryo-electron microscopy (cryo-EM) map of HsTMEM120A protein. (D) The Fourier shell correlation (FSC) curves of the map with (red) or without (blue) an applied mask. The resolution was estimated according to the gold standard Fourier shell correlation (GSFSC) (FSC = 0.143) criterion. (E) Gel filtration profile ofHsTMEM120A protein eluted in a detergent solution. (F) Gel filtration profile of HsTMEM120A reconstituted in nanodiscs. Note the apparently lower A260/A280 peak ratio in (E) when compared to the one in (F). (G) The local area in the coenzyme A (CoASH)-binding cavity of the HsTMEM120A structure solved in the detergent. The elliptical dash ring indicates the CoASH-binding site as observed in the structure of the nanodisc complex. (H) A CoASH model from the nanodisc complex structure is superposed on the map region shown in (G). Note that there is no density feature accounting for the CoASH molecule in the cavity. The cryo-EM map at 4.0 Å shown in (G) and (H) is contoured at 5.0 V/4.5 rmsd level, while the other map at 4.2 Å resolution contoured at 0.25 V/3.5 rmsd level shows a similar weak density feature in the cavity and a more continuous density for the IL5 loop.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71474/elife-71474-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Hole profiles of the coenzyme A (CoASH)-bound (left) and CoASH-free (right) HsTMEM120A structures. Red, pore radius < 1.15 Å; green, 1.15 Å < pore radius < 2.30 Å; blue, pore radius > 2.30 Å. The amino acid residues surrounding the narrowest site on the extracellular side and the CoASH molecule are shown as stick models in orange and pink, respectively. (B) Distribution of the pore radius along the central axes of the HsTMEM120A-CoASH complex and CoASH-free HsTMEM120A. The constricted area around CoASH on the intracellular side and four amino acid residues on the extracellular side are labeled on the right. (C) Cryo-electron microscopy (cryo-EM) densities of the four amino acid residues at the narrowest site on the extracellular side of HsTMEM120A at the CoASH-bound (left, contoured at 12.4 rmsd) and CoASH-free (right, contoured at 3.5 rmsd) states. (D) A mechanistic model accounting for two different functional states of TMEM120A in the cells.
 
 ## Discussion
 
@@ -62,13 +118,492 @@ Recently, it has been reported that TMEM120 protein shares structural similariti
 
 ## Materials and methods
 
-## Constructs and molecular cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HsTMEM120A-pFastBac Dual</td>
+      <td>Synthetic/ Genscript</td>
+      <td>N/A</td>
+      <td>Custom-synthesized cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>HsTMEM120A-mCherry-pDEST</td>
+      <td>Yulong Li lab in Peking University</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>MmTMEM120A-pEG BacMam</td>
+      <td>Synthetic</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>MmTMEM120A- pcDNA3.1</td>
+      <td>Synthetic</td>
+      <td>N/A</td>
+      <td>FP: gccctctagactcgagcggccgcgccaccATGCAGTCCCCGCCCCCGGAC RP: GGCGCGCCAAGCTTCTAGTCCTTCTTGTTCCCGTGCTGCTGGCTG</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>MmPiezo1-mRuby2 pcDNA3.1</td>
+      <td>Zhao et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>MmPiezo2-GST-ires-GFP pcDNA3.1</td>
+      <td>Wang et al., 2019</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>HsTMEM63A-mCherry-pDEST</td>
+      <td>Yulong Li lab in Peking University</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Turbo Chemically Competent Cell</td>
+      <td>AngYuBio</td>
+      <td>Cat# X17012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH10Bac Chemically Competent Cell</td>
+      <td>AngYuBio</td>
+      <td>Cat# G6006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1711 RRID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T-Piezo1-KO</td>
+      <td>Cahalan et al., 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>THE NWSHPQFEK Tag Antibody [HRP] (mouse monoclonal)</td>
+      <td>Genscript</td>
+      <td>Cat# A01742 RRID:AB_2622218</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsTMEM120A W193A-pFastBac Dual</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Construct made and maintained in Z Liu lab</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>W193A _Forward</td>
+      <td>Beijing Genomics Institution</td>
+      <td>PCR primers</td>
+      <td>CGTATCAAGGGTTGGGCCGTGTTCCACCACTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>W193A_Reverse</td>
+      <td>Beijing Genomics Institution</td>
+      <td>PCR primers</td>
+      <td>GTAGTGGTGGAACACGGCCCAACCCTTGATACG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cellfectin II Reagent</td>
+      <td>Gibco</td>
+      <td>Cat# 11605102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ESF 921 Insect Cell Culture Medium, Protein Free</td>
+      <td>Expression Systems</td>
+      <td>Cat# 96-001-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Grace's Insect Medium, supplemented</td>
+      <td>Gibco</td>
+      <td>Cat# 11605102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-β-D-Maltopyranoside (β-DDM)</td>
+      <td>Anatrace</td>
+      <td>Cat# D310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl Hemisuccinate (CHS)</td>
+      <td>Anatrace</td>
+      <td>Cat# CH210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHAPS</td>
+      <td>Anatrace</td>
+      <td>Cat# C316</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDN</td>
+      <td>Anatrace</td>
+      <td>Cat# GDN101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin Beads 6FF</td>
+      <td>Smart Lifesciences</td>
+      <td>Cat# SA021100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>d-Desthiobiotin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D1411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>18:1 (Δ9-Cis) PE (DOPE)</td>
+      <td>Avanti</td>
+      <td>Cat# 850725</td>
+      <td>Powder</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>16:0-18:1 PS (POPS)</td>
+      <td>Avanti</td>
+      <td>Cat# 840034</td>
+      <td>Powder</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>16:0-18:1 PC (POPC)</td>
+      <td>Avanti</td>
+      <td>Cat# 850457</td>
+      <td>Powder</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bio-Beads SM-2 adsorbents</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1523920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Perchloric acid</td>
+      <td>SCR</td>
+      <td>Cat# 10015160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coenzyme A sodium salt hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C4780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine3000 transfection kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>poly-D-lysine</td>
+      <td>Beyotime</td>
+      <td>Cat# C0312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-α-phosphatidylcholine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P3644</td>
+      <td>Powder</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C8667</td>
+      <td>Powder</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4ME 16:0 PC (DPhPC)</td>
+      <td>Avanti</td>
+      <td>Cat# 850356</td>
+      <td>Powder</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Serial EM</td>
+      <td>http://bio3d.colorado.edu/SerialEM</td>
+      <td>RRID:SCR_017293</td>
+      <td>https://doi.org/10.1016/j.jsb.2005.07.007</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+      <td>RRID:SCR_016499</td>
+      <td>https://doi.org/10.1038/nmeth.4193</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND 4.1.10</td>
+      <td>http://grigoriefflab.janelia.org/ctffind4</td>
+      <td>RRID:SCR_016732</td>
+      <td>https://doi.org/10.1016/j.jsb.2015.08.008</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v3.1</td>
+      <td>https://cryosparc.com/</td>
+      <td>RRID:SCR_016501</td>
+      <td>https://doi.org/10.1038/nmeth.4169</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>https://www.cgl.ucsf.edu/chimera/download.html</td>
+      <td>RRID:SCR_004097</td>
+      <td>https://doi.org/10.1002/jcc.20084</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>https://www.mrclmb.cam.ac.uk/kzhang/Gctf/</td>
+      <td>RRID:SCR_016500</td>
+      <td>https://doi.org/10.1016/j.jsb.2015.11.003</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gautomatch</td>
+      <td>https://hpc.nih.gov/apps/gautomatch.html</td>
+      <td>N/A</td>
+      <td>http://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Topaz</td>
+      <td>http://cb.csail.mit.edu/cb/topaz/</td>
+      <td>N/A</td>
+      <td>https://doi.org/10.1038/s41592-019-0575-8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cisTEM</td>
+      <td>https://cistem.org/</td>
+      <td>RRID:SCR_016502</td>
+      <td>https://doi.org/10.7554/eLife.35383</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MonoRes</td>
+      <td>http://scipion.i2pc.es/</td>
+      <td>N/A</td>
+      <td>https://doi.org/10.1016/j.str.2017.12.018</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT 0.8.9</td>
+      <td>http://www2.mrclmb.cam.ac.uk/personal/pemsley/coot</td>
+      <td>RRID:SCR_014222</td>
+      <td>https://doi.org/10.1107/S0907444910007493</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PSIPRED 4.0</td>
+      <td>http://bioinf.cs.ucl.ac.uk/psipred</td>
+      <td>RRID:SCR_010246</td>
+      <td>https://doi.org/10.1093/nar/gkz297</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>https://www.phenix-online.org</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://doi.org/10.1107/S0907444909052925</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOLE</td>
+      <td>http://www.holeprogram.org/</td>
+      <td>N/A</td>
+      <td>https://doi.org/10.1016/s0263-7855(97)00009-x</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>https://www.rbvi.ucsf.edu/chimerax/</td>
+      <td>RRID:SCR_015872</td>
+      <td>https://doi.org/10.1002/pro.3943</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol 2.1.1</td>
+      <td>Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>https://pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Peakview 2.1</td>
+      <td>https://sciex.com/products/software/peakview-software</td>
+      <td>RRID:SCR_015786</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicroCal ITC200</td>
+      <td>https://www.malvernpanalytical.com/</td>
+      <td>RRID:SCR_020260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ESPript 3</td>
+      <td>https://espript.ibcp.fr</td>
+      <td>RRID:SCR_006587</td>
+      <td>https://doi.org/10.1093/nar/gku316</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>T-COFFEE</td>
+      <td>http://tcoffee.crg.cat/apps/tcoffee/index.html</td>
+      <td>RRID:SCR_019024</td>
+      <td>https://doi.org/10.1006/jmbi.2000.4042</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>The ConSurf Server</td>
+      <td>https://consurf.tau.ac.il/</td>
+      <td>RRID:SCR_002320</td>
+      <td>https://doi.org/10.1093/nar/gkw408</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VMD 1.9.3</td>
+      <td>https://www.ks.uiuc.edu/Research/vmd/</td>
+      <td>RRID:SCR_001820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PatchMaster</td>
+      <td>HEKA http://www.heka.com/downloads/downloads_main.html#down_patchmaster</td>
+      <td>RRID:SCR_000034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software Inc http://www.graphpad.com/scientific-software/prism/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 9.2</td>
+      <td>OriginLab http://www.originlab.com/</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>WaveMetrics https://www.wavemetrics.com/</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Structural model of human TMEM120A in the CoASH-bound state and the corresponding cryo-EM map</td>
+      <td>This study</td>
+      <td>PDB ID 7F3T, EMD-31440</td>
+      <td>Available for download in the webpage https://www.rcsb.org/structure/7F3T</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Structural model of human TMEM120A in the CoASH-free state and the corresponding cryo-EM map</td>
+      <td>This study</td>
+      <td>PDB ID 7F3U, EMD-31441</td>
+      <td>Available for download in the webpage https://www.rcsb.org/structure/7F3U</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>R1.2/1.3 100 Holey Carbon Films Cu 200 mesh</td>
+      <td>Quantifoil</td>
+      <td>Cat# Q56244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>R1.2/1.3 100 Holey Carbon Films Cu 300 mesh</td>
+      <td>Quantifoil</td>
+      <td>Cat# Q55987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon-PSQtransfer membrane</td>
+      <td>Merck Millipore</td>
+      <td>Cat# ISEQ00010</td>
+      <td>Filter type: PVDF</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs and molecular cloning
 
 The HsTMEM120A-mCherry and HsTMEM63A-mCherry constructs used for electrophysiological experiments were cloned from the complementary DNA (cDNA) library of human ORF 8.1 (a gift from Yulong Li's lab at the Peking University). Through gateway reactions, the coding sequence of HsTMEM120A or HsTMEM63A was cloned into the pDEST-mCherry expression vector, resulting in fusion of mCherry at the C-terminus of HsTMEM120A or HsTMEM63A. Compared to the amino acid sequence of HsTMEM120A reported by Beaulieu-Laroche et al., 2020, the HsTMEM120A-mCherry construct contained a natural variation of residue 201 (A201 instead of T201). To exclude the possibility that this variation might affect mechanically activated channel activities of HsTMEM120A, we also synthesized the cDNA of HsTMEM120A (with codons optimized for expression in HEK293 cells) encoding the exact same amino acid sequence as that reported by Beaulieu-Laroche et al., 2020 and cloned it into the pcDNA3.1 vector with an upstream GFP-encoding sequence (GFP-HsTMEM120A). Both HsTMEM120A (T201A variant)-mCherry and GFP-HsTMEM120A were tested for the function in mediating stretch-induced currents. The cDNA of MmTMEM120A was amplified from a mouse cDNA library and subcloned into modified pEG BacMam vectors, yielding two constructs with the coding regions of mCherry-StrepII and ires-GFP being fused to the 3’-region of the target gene, respectively (MmTMEM120A-mCherry and MmTMEM120A-ires-GFP). The constructs were verified by sequencing. MmPiezo1-mRuby2 and MmPiezo2-GST-ires-GFP were reported in our previous studies (Geng et al., 2020; Wang et al., 2019; Zhao et al., 2018).
 
 To express HsTMEM120A protein in the Spodoptera frugiperda Sf9 insect cells (RRID:CVCL_0549) for cryo-EM, isothermal titration calorimetry (ITC), and single-channel electrophysiology studies, the cDNA encoding the full-length Homo sapiens TMEM120A (HsTMEM120A) was synthesized with codon optimization for S. frugiperda (Genescript). The cDNA was cloned into pFastBac Dual vector between the 5’ BamH1 and 3’ EcoR1 sites, and an N-terminal FLAG followed by twin-Strep-tags was fused with the target protein in the product.
 
-## Protein expression and purification
+### Protein expression and purification
 
 After purification, the HsTMEM120A-pFastBac Dual plasmid DNA was used to transform DH10Bac cells to generate the recombinant bacmid. Positive clones containing desired genes were identified by blue/white selection, and the recombinant bacmids were amplified and purified under sterile conditions. After three generations of amplification, the recombinant baculoviruses were used for transfection of Sf9 cells adapted to suspension culture. To increase protein expression level, the Sf9 cells were cultured at 27℃ for 24 hr and then at 20℃ for 48 hr before being harvested.
 
@@ -78,11 +613,11 @@ The presence of CoASH in the purified HsTMEM120A sample was monitored by measuri
 
 For reconstitution of the HsTMEM120A protein in nanodiscs, the protocol for protein solubilization and binding to the Streptactin resin as well as column washing was the same as the one described above. During the washing step, 5 ml washing buffer was added into the column so that the final volume of the mixture was made ~10 ml (containing 5 ml Streptactin beads). For nanodisc preparation, membrane scaffold protein 1E3D1 (MSP1E3D1) was expressed in Escherichia coli cell, purified through immobilized metal affinity chromatography, and the His-tag was cleaved by the Tobacco Etch Virus (TEV) protease. The optimal ratio of HsTMEM120A monomer:MSP1E3D1:phospholipid was 1:2:150 (molar ratio). Initially, 2 ml of 10 mM phospholipid mixture (1,2-dioleoyl-sn-glycero-3-phosphoethanolamine/DOPE:1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine/POPS:1-palmitoyl-2-oleoyl-glycero-3-phosphocholine/POPC = 2:1:1, molar ratio, solubilized in 1% GDN and 2% β-DDM with ddH2O) was added into the column loaded with HsTMEM120A protein and incubated for 30 min with constant rotation. Subsequently, the scaffold protein (MSP1E3D1) and bio-beads (100 mg) were added into the column to trigger formation of nanodiscs by removing detergents from the system. The mixture was incubated for 2 hr with constant rotation. Another batch of bio-beads (50 mg) was subsequently added and the mixture was incubate for one more hour. To remove the residual components and empty the nanodiscs (without target protein), the column was mounted vertically on the stand and the solution on the column was separated from the resin through gravity flow. Afterwards, the resin on the column was washed with 10 CV of washing buffer with 50 mM NaCl, 20 mM HEPES (pH 7.5), 1 mM EDTA (pH 7.5), and Protease Inhibitor Cocktail. The HsTMEM120A-nanodisc complex assembled on the Streptactin beads was eluted by applying 5 CV of elution buffer with 50 mM NaCl, 20 mM HEPES (pH 7.5), 1 mM EDTA (pH 7.5), and Protease Inhibitor Cocktail. The purified nanodisc sample was concentrated with a 100-kDa MWCO concentrator to 3.5 mg/ml through centrifugation at 2500 ×g. To analyze the homogeneity of nanodiscs, the sample was run through size-exclusion chromatography (Superdex 200 increase 10/300 GL) and eluted in a solution with 50 mM NaCl, 20 mM HEPES (pH 7.5), 1 mM EDTA (pH 7.5), and Protease Inhibitor Cocktail. The major peak fraction was collected and concentrated to 3.5–4.5 mg ml−1 in a 100-kDa MWCO Amicon concentrator. The purity of the protein sample was assessed by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE). For western blots, the NWSHPQFEK tag antibody (HRP) (Genscript, 1:10,000 dilution; RRID:AB_2622218) was used to probe the target protein bands on the polyvinylidene fluoride (PVDF) membranes (Merck-Millipore) after the proteins were transferred from SDS-PAGE gels to the membranes.
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 For cryo-EM sample preparation, 3 μl of purified HsTMEM120A sample was applied to the grid glow-discharged in H2/O2 for 60 s (Gatan Solarus 950). The Quantifoil 1.2/1.3 μm holey carbon grids (300 mesh, copper) were selected for preparing the HsTMEM120A sample in the detergent, and 200 mesh grids of the same type were used for HsTMEM120A-nanodisc sample. After having applied to the grids, the samples were blotted for 8 s with a Vitrobot (Vitrobot Mark IV; Thermo Fisher) after waiting for 10 s in the chamber at 4℃ with 100% humidity. The grid was plunge frozen in liquid ethane pre-cooled by liquid nitrogen. Cryo-EM images of the HsTMEM120A particles in the detergent were collected on a Titan Krios transmission electron microscope operated at 300 kV. The images were recorded by using SerialEM program (Mastronarde, 2003) (RRID:SCR_017293) at a nominal magnification of SA29000 in super-resolution counting mode and yielding a physical pixel size of 0.82 Å (0.41 Å super-resolution pixel size) using a K3 Summit direct electron detector camera (Gatan). The total dose on the camera was set to be 60 e- Å−2 on the specimen, and each image was fractioned into 32 subframes, which were recorded with a defocus value at a range of −1.2 μm to −1.8 μm. The nominal magnification for the images of HsTMEM120A-nanodisc sample was set to be SA22500 in super-resolution counting mode and yielding a physical pixel size of 1.07 Å (0.535 Å super-resolution pixel size). All the images were recorded by using a high-throughput beam-image shift data collection method (Wu et al., 2019). For cryo-EM data collection, the sample size represents the number of different grids loaded with the same batch of protein samples. Two different grids were used for collecting the cryo-EM data of HsTMEM120A-nanodisc sample, whereas three different grids were used for collecting the data of HsTMEM120A protein in the detergent.
 
-## Image processing
+### Image processing
 
 Two datasets (datasets 1 and 2) were collected for the HsTMEM120A-nanodisc sample. For dataset 1, a total of 4169 cryo-EM movies were aligned with dose-weighting using MotionCor2 program (Zheng et al., 2017) (RRID:SCR_016499). Micrograph contrast transfer function (CTF) estimations were performed by using CTFFIND 4.1.10 program (Rohou and Grigorieff, 2015) (RRID:SCR_016732). The procedures described below were performed by using cryoSPARC v3.1 program (Punjani et al., 2017) (RRID:SCR_016501) unless stated otherwise. After manual inspection of the micrographs, 3940 were selected and 230 particles were picked manually from the micrograph and sorted into 2D classes. The best classes were selected and used as references for autopicking procedure. After the process, 3,837,005 particles were autopicked and extracted using a box size of 256 pixels. Six rounds of 2D classification were performed to remove ice spots, contaminants, aggregates, and obscure classes, yielding 269,838 particles for further refinement. The particles were classified into three classes using ab-initio reconstruction, and the reference models were generated by low-pass filtering of the maps of the three individual classes (including one well-resolved and two junk classes) to 20 Å for the subsequent refinement processes. Consequently, 64,716 particles corresponding to the well-resolved class were selected for further refinement. By using the reference model generated from the map of the prior well-resolved class, non-uniform (NU) refinement was performed with C2 symmetry imposed and resulted in a 6.2 Å cryo-EM density map.
 
@@ -90,7 +625,7 @@ In order to improve map resolution, a sequential heterogeneous refinement approa
 
 For the HsTMEM120A sample in the detergent, a total of 12,156 movie stacks were collected, followed by motion correction using MotionCor2 (Zheng et al., 2017) and CTF estimation using the graphics processing unit (GPU)-accelerated contrast transfer function (GCTF) program (Zhang, 2016) (RRID:SCR_016500). Particles were picked using Gautomatch (Zhang, 2017) and Topaz (Bepler et al., 2019) programs. Multiple rounds of 2D and 3D classifications were performed to clean up the particles. The first round of 3D classification generated eight classes, and class 7 (21.5%) showed well-resolved structural features including transmembrane helices and intracellular amphipathic helices. A second round of multi-reference 3D classification was then performed to improve the quality of the map, giving rise to a subset of 78.3% particles. The next round of 3D classification was conducted without image alignment, resulting in four classes. A 3D mask covering the protein region was applied to exclude the detergent micelle density. The class 1 (50.5%) and class 4 (14.7%) maps displayed continuous transmembrane and amphipathic helices and thus were selected for further processing. Particles were subsequently imported to cryoSPARC (Punjani et al., 2017) and the NU refinement was carried out to yield a map at 4.3 Å resolution. The final map was generated through a subsequent local refinement in cisTEM (Grant et al., 2018) (RRID:SCR_016502) and was reported at 4.0 Å resolution according to the gold standard Fourier shell correlation (GSFSC) criterion. The local resolution of the map was estimated using the MonoRes program integrated in the Scipion framework (Vilas et al., 2018).
 
-## Model building, refinement, and validation
+### Model building, refinement, and validation
 
 Ab-initio model building of HsTMEM120A was carried out in COOT 0.8.9 (Emsley et al., 2010) (RRID:SCR_014222) by referring to the 3.7 Å cryo-EM map and the secondary structure prediction by PSIPRED 4.0 (Buchan and Jones, 2019) (RRID:SCR_010246). The cryo-EM densities for the TMD were well defined and provided detailed features for model building and real-space refinement. Register of amino acid residues was guided mainly by the clearly defined densities of residues with bulky side chains such as Trp, Phe, Tyr, and Arg. The density of IL5 (residues 250–263) was insufficient for assignment of the side chains; only the backbone of the polypeptide chain was built for this region. For the N-terminal domain (residues 7–100), some local regions were not well resolved in the cryo-EM map, involving about 40% amino acid residues of the domain. While the backbones of these residues were built in the model by referring to the density feature at a high contour level (0.6034 V or 5.13 rmsd), their side chains remained uninterpreted.
 
@@ -98,28 +633,28 @@ For the structure of HsTMEM120A in the detergent, the overall resolution of cry
 
 The models were refined against the corresponding cryo-EM maps by using the phenix.real_space_refine program (Adams et al., 2010) (RRID:SCR_014224) followed by manual adjustment in COOT to improve the overall geometry and fitting of models with the cryo-EM maps. The final models of the two HsTMEM120A structures contained the bulk region of the protein covering amino acid residues 7–336. The pore profiles of the two structures were calculated by using HOLE program (Smart et al., 1996), and the narrowest site was defined as the location of the smallest pore radius. The electrostatic potential surface representations were calculated by ChimeraX (Goddard et al., 2018; Pettersen et al., 2021) (RRID:SCR_015872) or the APBS (Baker et al., 2001) plugin in PyMOL (The PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC; RRID:SCR_000305). The statistics for data collection and processing, refinement, and validation of the two HsTMEM120A structures are summarized in Supplementary file 1.
 
-## Mass spectrometry
+### Mass spectrometry
 
 The endogenous ligand (CoASH) bound to HsTMEM120A protein was extracted from the purified HsTMEM120A protein sample by using perchloric acid (72%) as described in a previous study (Shurubor et al., 2017). The purified HsTMEM120A protein (in detergent) with an A260/A280 value of 0.88 was concentrated to ~2 mg/ml. To extract the ligand, 1 ml HsTMEM120A sample was mixed with perchloric acid to give a final concentration of perchloric acid of 5%. The mixture was incubated on ice for 10 min before being vortexed for 10–15 min and centrifuged at 21,000 ×g for 10 min at 4℃. The supernatant was removed and used for MS analysis immediately. The sample was analyzed by using a high-performance liquid chromatograph (HPLC) (Dionex Ultimate 3000) equipped with a high-resolution mass spectrometer (SCIEX TripleTOF 5600). The HPLC separation was carried out on an ACQUITY UPLC CSH C18 reversed-phase column (2.1 mm×100 mm, 1.7 µm [Waters]) at a flow rate of 0.25 ml/min. The column was maintained at 30℃. The mobile phase consisted of two components, namely phase A (50 mM ammonium acetate aqueous) and phase B (acetonitrile [ACN]). All solvents were of liquid chromatography–mass spectrometry (LC/MS) grade. The column was eluted for 0–3.1 min with a linear gradient from 0% to 5% B, 3.1–9.0 min from 5% to 25% B, 9.0–11.0 min from 25% to 40% B, and 11.0–15.0 min held at 40% B, followed by an equilibration step from 15.1 to 22 min at 0% B. The MS analysis was performed in positive ion mode at a resolution of 3000 for the full MS scan in an information-dependent acquisition (IDA) mode. The scan range for MS analysis was 50–1200 m/z with an accumulation time of 250 ms in the time-of-flight mass spectrometry (TOF MS) type and 100 ms in product ion type. Ion spray voltage was set at 5.5 kV in the positive mode, and the source temperature was 600℃. The ion source gas 1 and 2 were both set at 60 psi, and the curtain gas was set at 35 psi. In the product ion mode, the collision energy was set at 35 V, while the collision energy spread was set at 15 V. Analysis of the LC/MS data was performed by using Peakview 2.1 software (RRID:SCR_015786). The identification of CoASH was achieved on the bases of three criteria, namely exact mass, product ion peak pattern, and isotope spectrum. Values for m/z were matched within five ppm to identify the CoASH. The exact mass was 768.12 based on the protonated molecular ion [M+H]+, [C21H36N7O16P3S+H]+. The spectral data obtained from tandem mass spectrometry (MS/MS) showed two main product ion peaks at m/z 428.03 and m/z 261.13, corresponding to the fragments of CoASH.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 The HsTMEM120A protein was purified in the detergent conditions as described above. After gel filtration, the concentrated protein at 4.6 mg/ml was dialyzed overnight at 4℃ against 2 l dialysis buffer containing 50 mM NaCl, 20 mM HEPES (pH 7.5), 1 mM EDTA (pH 7.5), Protease Inhibitor Cocktail (MedChemExpress, 1 ml 100× stock solution per 150 ml solution), 0.006% GDN, 0.006% CHAPS, and 0.001% CHS. After concentration, the molar concentration of HsTMEM120A monomer was 120 μM and A260/A280 was 0.58, and the molar concentration of W193A mutant monomer was 17.6 μM and A260/A280 was 0.62. Such a low A260/A280 value is close to the value (~0.6) for a pure protein, suggesting that the endogenous CoASH bound to HsTMEM120A protein is largely removed during the purification process. For the ITC assay, the powder of coenzyme A (sodium salt hydrate; Sigma-Aldrich) was dissolved in the dialysis buffer to a final concentration of 6 mM as the stock solution and then subjected to serial dilution for the specific experimental requirements. All solutions were filtered with a 0.22-μm filter membrane and then degassed prior to use. Measurements of enthalpy change (ΔH°) upon CoASH binding were performed by a MicroCal ITC200 (Malvern). In order to ensure that the HsTMEM120A protein was saturated with CoASH at a reasonable rate, the optimized ratio of protein to CoASH was adjusted to 1:1 (mol:mol). The sample cell was rinsed repeatedly by the dialysis buffer and 350 μl protein sample was loaded carefully into the cell to avoid formation of any bubbles. The injection syringe was filled with 120 μM CoASH solution for wild-type HsTMEM120A or 17.6 μM CoASH solution for W193A mutant. The experimental temperature was set at 20℃. The total number of injections was 20, and the volume of each injection was 2 μl except that the first injection was of 0.4 μl. The CoASH solution was titrated into the HsTMEM120A protein solution and the mixture was stirred at 700 rpm. The experimental data were analyzed by MicroCal ITC200 (RRID:SCR_020260). The heat change of the last four injections was so weak that the protein was regarded as completely saturated with CoASH despite that the heat produced did not go to zero. Thus, the heat generated by the last injection was subtracted from the heat generated by each injection. As a control, the dialysis buffer was titrated with CoASH under identical experimental conditions, and the weak background heat was also subtracted from the protein-CoASH binding data in the final results.
 
-## Whole-cell electrophysiology and mechanical stimulation
+### Whole-cell electrophysiology and mechanical stimulation
 
 The P1-KO-HEK293T cells (Cahalan et al., 2015) were grown in poly-D-lysine-coated coverslips in Dulbecco's modified Eagle medium (DMEM) supplemented with 10% fetal bovine serum (FBS), 100 units/ml penicillin, and 10 µg/ml streptomycin at 37°C and 5% CO2. DNA constructs including MmPiezo1-mRuby2, MmPiezo2-GST-ires-GFP, HsTMEM63a-mCherry, MmTMEM120A-mCherry, MmTMEM120A-ires-GFP, HsTMEM120A-mCherry, and vector were transfected using Lipofectamine 2000 (Thermo Fisher Technology). 24 hr or 36 hr after transfection and prior to electrophysiology, the cells were briefly digested with trypsin and sparsely re-plated onto poly-D-lysine-coated coverslips to obtain individual cells for recording. Electrophysiological recordings normally started about 2 hr later after re-plating the cells. The patch-clamp experiments were carried out with HEKA EPC10 as previously described (Zhao et al., 2016). For whole-cell patch-clamp recordings, the recording electrodes had a resistance of 2–6 MΩ when filled with the internal solution composed of (in mM) 133 CsCl, 1 CaCl2, 1 MgCl2, 5 ethylene glycol tetraacetic acid (EGTA), 10 HEPES (pH 7.3 with CsOH), 4 MgATP, and 0.4 Na2GTP. The extracellular solution was composed of (in mM) 133 NaCl, 3 KCl, 2.5 CaCl2, 1 MgCl2, 10 HEPES (pH 7.3 with NaOH), and 10 glucose. All experiments were performed at room temperature. The currents were sampled at 20 kHz, filtered at 2 kHz using the Patchmaster software (RRID:SCR_000034). Leak currents before mechanical stimulations were subtracted off-line from the current traces. Voltages were not corrected for the liquid junction potential.
 
 Mechanical stimulation was delivered to the cell during the patch clamp being recorded at an angle of 80° using a fire-polished glass pipette (tip diameter 3–4 μm) as described. Downward movement of the probe toward the cell was driven by a Clampex-controlled piezo-electric crystal micro-stage (E625 LVPZT Controller/Amplifier; Physik Instrument). The probe had a velocity of 1 μm/ms during the downward and upward motion, and the stimulus was maintained for 150 ms. A series of mechanical steps in 1 μm increments was applied every 10 s, and currents were recorded at a holding potential of −60 mV.
 
-## Cell-attached electrophysiology
+### Cell-attached electrophysiology
 
 Stretch-activated currents were recorded in the cell-attached or inside-out patch-clamp configuration using the HEKA EPC10 and the Patchmaster software as previously described (Zhao et al., 2016). The currents were sampled at 20 kHz and filtered at 1 kHz. The recording electrodes had a resistance of 2–5 MΩ when filled with a standard pipette solution consisting of (in mM) 130 NaCl, 5 KCl, 10 HEPES, 1 CaCl2, 1 MgCl2, and 10 tetraethylammonium chloride (TEA-Cl) (pH 7.3, balanced with NaOH). To maintain the membrane potential near 0 mV, the external solution consisted of (in mM) 140 KCl, 10 HEPES, 1 MgCl2, and 10 glucose (pH 7.3 with KOH). All experiments were carried out at room temperature. Membrane patches with a seal resistance of at least 2 GΩ were held at −80 mV and stimulated with 200 ms or 500 ms negative pressure pulses given at either 5 or 10 mmHg steps from 0 to −120 mmHg through the recording electrode using a Patchmaster-controlled pressure clamp HSPC-1 device (ALA-scientific). Statistical analysis was performed in Prism 6 (RRID:SCR_002798) and statistical details can be found in Figure 1 legend. Reported n values are labeled in Figure 1B,D and F. The sample sizes represent the number of cells tested in the whole-cell and cell-attached recordings as well as the inside-out patch configuration. The number of cells tested was determined based on the magnitude of the effect observed and the variance among data points. The sizes were chosen based on the consistency of data across different conditions and multiple experiments. Samples were grouped based on the plasmids transfected into the cells. The investigators were not blinded to group allocation.
 
-## Single-channel electrophysiology on proteoliposome vesicles
+### Single-channel electrophysiology on proteoliposome vesicles
 
 The purified HsTMEM120A protein was reconstituted into the membrane of GUVs by using a mixture of cholesterol:DPhPC:azolectin (w:w:w) at a ratio of 1:5:17 or 1:10:15 with a protein:azolectin ratio of 1:85 (w/w) through a modified sucrose method (Battle et al., 2009). The bath and pipette solutions contained 500 mM NaCl, 10 mM CaCl2, and 10 mM HEPES-NaOH (pH 7.4). Patch pipettes with resistances of 5–6 MΩ were used, and the patch resistance was increased to ~2 GΩ after the pipette was sealed tightly with the GUV membrane. A negative pressure was applied through a Suction Control Pro pump (Nanion) with a stepwise or linear protocol while data were recorded at a constant holding potential. The data were acquired at 50 kHz with a 0.5-kHz filter and a HumBug 50/60 Hz Noise Eliminator (Quest Scientific), using an EPC-10 amplifier (HEKA). The Clampfit Version 10.0 (Axon Instruments) was used for data analysis and Igor Pro 6.37A (WaveMetrics; RRID:SCR_000325) was used for making the graphs. The sample size represents the number of patches tested in the inside-out recordings. The number of patches tested was determined based on the observation of channel activities upon application of the negative pressure. Samples were grouped based on the proteins of interest reconstituted into the GUVs. The investigators were not blinded to group allocation.
 
-## Cell lines
+### Cell lines
 
 The Piezo1-KO-HEK293 cells in which the endogenous Piezo1 gene was disrupted were obtained from Dr. Ardem Patapoutian Laboratory (Cahalan et al., 2015). The cells were cultured in DMEM supplemented with 10% FBS, 100 U ml−1 penicillin, and 100 μg ml−1 streptomycin. Piezo1-KO-HEK293 cells were free from mycoplasma and other microorganisms.

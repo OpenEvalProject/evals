@@ -35,7 +35,7 @@ Dynamic homology methods for morphological data have thus far been rarely explor
 
 Here, we present an approach to dynamic homology within a Bayesian tip-dating framework, which we use to test the alternative conjectures of placoderm jaw bone homologies. The homology relations of placoderm jaw bones have implications for our understanding of character evolution in early vertebrates. In particular, homology of placoderm supragnathal bones with the marginal jaw bones of osteichthyans suggests a deep (early) origin for these bones. Zhu et al., 2016 proposed their hypothesis within the framework of placoderm paraphyly (Brazeau, 2009; Davis et al., 2012; Zhu et al., 2013), but an alternative hypothesis of placoderm monophyly (excluding maxillate placoderms) is supported by an essentially equivalent amount of morphological data, and is strongly supported under Bayesian tip-dated methods (King et al., 2017). The implications of the hypothesis of Zhu et al., 2016 within the framework of placoderm monophyly have not been discussed. We therefore simultaneously estimated a credible set of phenotypes for the (apomorphy-defined) gnathostome common ancestor to explore character evolution in early gnathostomes while accounting for phylogenetic uncertainty, divergence date uncertainty, and alternative placoderm jaw bone homologies.
 
-## Dynamic homology
+### Dynamic homology
 
 We implemented a method for dynamic homology of morphological characters within the open source BEAST2 software package homology (https://github.com/king-ben/homology; King, 2021; copy archived at swh:1:rev:6e6dbd77443b0d963640b3cb603c4310b5a4b47e). The method takes as inputs alternative character coding alignments, here called homology alignments, which are alternative character codings corresponding to alternative homology hypotheses for morphological features (for example placoderm jaw bones). Homology alignments can be included alongside fixed alignments (Figure 2), such that only a subset of characters has dynamic homology. During a BEAST2 MCMC run, the homology alignment used to calculate the posterior is determined by a homology state parameter, which is changed by an operator (Figure 2). The MCMC will spend more time in the homology state corresponding to the homology alignment that returns the highest tree likelihood.
 
@@ -74,6 +74,72 @@ We used ancestral sequence logging in BEAST2 to reconstruct the phenotype of the
 Plotting the raw distance measures shows that maxillate placoderms are the most similar taxa to the reconstructed ancestors (Figure 6C). The individual taxon with the lowest distance to the reconstructed ancestor (in each sample from the posterior, n = 1801) was a maxillate placoderm for 95% of the reconstructed ancestors (Figure 6D). This suggests that of the known gnathostome fossils, the maxillate placoderms (in particular Entelognathus) are the least divergent known descendants of the gnathostome common ancestor.
 
 The reconstructed ancestors also allow us to calculate the posterior probability of particular character states at the gnathostome node (i.e. the proportion of reconstructed ancestors with a particular character state). Table 1 displays a number of characters of interest, including characters of the upper jaw bones and characters possessed by some core placoderms, argued to be retained plesiomorphies under the hypothesis of placoderm paraphyly (Brazeau, 2009; Dupret et al., 2014). Results for all characters are available in the supplementary information (Table 1; Source data 1). Our results suggest that the gnathostome ancestor had a premaxilla and maxilla with both palatal and facial laminae, no vomer-dermopalatine series, anterior/ventral nasal capsules and lateral orbits not surrounded by neurocranium. Putative core placoderm synapomorphies (claspers, optic fissure) are reconstructed as absent at the gnathostome node with moderate support (Table 1). This uncertainty is likely due to the high proportion of missing data for these characters. Critically, it is unknown whether or not maxillate placoderms possessed these putative core placoderm synapomorphies.
+
+**Table 1.**
+ Character states reconstructed at the common ancestor of apomorphy-defined gnathostomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Character</th>
+      <th>Reconstructed ancestral state</th>
+      <th>Posterior probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Premaxilla</td>
+      <td>Present</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Maxilla</td>
+      <td>Present</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Facial laminae</td>
+      <td>Present</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Palatal laminae</td>
+      <td>Present</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>Vomer</td>
+      <td>Absent</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>Dermopalatine</td>
+      <td>Absent</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Nasal capsules</td>
+      <td>Anterior/ventral</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Orbit dorsal, surrounded by neurocranium</td>
+      <td>Absent</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Claspers</td>
+      <td>Absent</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>Optic fissure</td>
+      <td>Absent</td>
+      <td>0.78</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 

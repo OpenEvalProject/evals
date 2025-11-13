@@ -43,7 +43,7 @@ The biguanide drug metformin is widely used to treat diabetes and also appears t
 
 ## Results
 
-## In vitro aging results in senescence and mitochondrial dysfunction while physiological aging induces early oxidative stress in ASCs
+### In vitro aging results in senescence and mitochondrial dysfunction while physiological aging induces early oxidative stress in ASCs
 
 In order to determine the impact of aging on ASCs, we evaluated three cellular models: (i) ASCs isolated from human SCAT samples obtained from young adults (under the age of 25- referred as ‘young-donor’) that were cultured in vitro from early (P3) to late passage (P11); (ii) physiologically aged ASCs that were isolated from older adults (over the age of 60- referred as ‘aged-donor’) at early passage, (iii) and, finally, aged-donor ASCs cultured from P3 to P11.
 
@@ -51,7 +51,7 @@ First, we observed that the in vitro increased passage number of young ASCs led 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig1-v2.jpg)
 
-**Figure 1.:** After isolation from the abdominal subcutaneous adipose tissue (SCAT) of young (gray circles or bars) and aged (black circles or bars) donors, ASCs were cultured from passages (P) 3–11. (A). Calculation of the mean ± standard error of the mean (SEM) population doubling time (PDT) is described in the Materials and methods section. Times were determined at the indicated passage (n = 9, in triplicate). (B) The % inhibition of cell proliferation was calculated for aged-donor ASCs by determining the increase in total cell number that occurred after 7 days, compared to young-donor ASCs. (C) Senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and expressed as the proportion (in %) of SA-β-galactosidase-positive cells at pH 6 in aged-donor ASCs vs. young-donor ASCs at the same passage (at P3, P7, and P11). (D) Representative micrographs of SA-β-galactosidase-positive cells. (E) Lysosomal accumulation (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed with the Lysotracker fluorescence probe and expressed as the fluorescence ratio for aged-donor ASCs vs. young-donor ASCs at P3. (F) Whole-cell lysates of aged-donor and young-donor ASCs at P3, P7, and P11 were analyzed by immunoblotting. Representative immunoblots of the cell cycle arrest markers p16INK4A and p21WAF1, prelamin A, and tubulin (the loading control) from three donors in each group are shown. (G) Quantification of western blot was normalized to young-donor ASCs at P3. (H) Reactive oxygen species production (normalized against DAPI) was assessed by the oxidation of CM-H2DCFDA and expressed as a ratio relative to young-donor ASCs at P3. (I) Mitochondrial mass (normalized against DAPI) was evaluated with Mitotracker Red-Probe and expressed as a ratio relative to young-donor ASCs at P3. (J) The cationic dye JC1 was used to evaluate the mitochondrial membrane potential. The results are expressed as the ratio of aggregate/monomer fluorescence. Results are quoted as the mean ± SEM. *p < 0.05, **p < 0.01, ***p < 0.001 for aged- vs. young-donor ASCs, #p < 0.05, ##p < 0.01, ###p < 0.001 vs. young- or aged-donor ASCs at P3. All experiments were performed in triplicate with ASCs isolated from four different donors in each group.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1—source data 4.
+**Figure 1.:** After isolation from the abdominal subcutaneous adipose tissue (SCAT) of young (gray circles or bars) and aged (black circles or bars) donors, ASCs were cultured from passages (P) 3–11. (A). Calculation of the mean ± standard error of the mean (SEM) population doubling time (PDT) is described in the Materials and methods section. Times were determined at the indicated passage (n = 9, in triplicate). (B) The % inhibition of cell proliferation was calculated for aged-donor ASCs by determining the increase in total cell number that occurred after 7 days, compared to young-donor ASCs. (C) Senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and expressed as the proportion (in %) of SA-β-galactosidase-positive cells at pH 6 in aged-donor ASCs vs. young-donor ASCs at the same passage (at P3, P7, and P11). (D) Representative micrographs of SA-β-galactosidase-positive cells. (E) Lysosomal accumulation (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed with the Lysotracker fluorescence probe and expressed as the fluorescence ratio for aged-donor ASCs vs. young-donor ASCs at P3. (F) Whole-cell lysates of aged-donor and young-donor ASCs at P3, P7, and P11 were analyzed by immunoblotting. Representative immunoblots of the cell cycle arrest markers p16INK4A and p21WAF1, prelamin A, and tubulin (the loading control) from three donors in each group are shown. (G) Quantification of western blot was normalized to young-donor ASCs at P3. (H) Reactive oxygen species production (normalized against DAPI) was assessed by the oxidation of CM-H2DCFDA and expressed as a ratio relative to young-donor ASCs at P3. (I) Mitochondrial mass (normalized against DAPI) was evaluated with Mitotracker Red-Probe and expressed as a ratio relative to young-donor ASCs at P3. (J) The cationic dye JC1 was used to evaluate the mitochondrial membrane potential. The results are expressed as the ratio of aggregate/monomer fluorescence. Results are quoted as the mean ± SEM. *p < 0.05, **p < 0.01, ***p < 0.001 for aged- vs. young-donor ASCs, #p < 0.05, ##p < 0.01, ###p < 0.001 vs. young- or aged-donor ASCs at P3. All experiments were performed in triplicate with ASCs isolated from four different donors in each group.
 
 At P3, aged-donor and young-donor ASCs had similar proliferative abilities and thus a similar PDT (Figure 1A–B). Aged-donor ASCs presented a mild senescent phenotype as compared to young-donor ASCs, characterized by a slight increase in senescent cell count, greater lysosome accumulation, and higher expression of p16INK4, p21WAF1, and prelamin A (Figure 1C–G). This mild senescence was not associated with mitochondrial dysfunction (Figure 1I–J). In agreement, a Seahorse experiment performed in young-donor and aged-donor ASCs at P3 did not reveal any difference in basal oxygen consumption rate (OCR) and maximal respiration measured after the addition of the uncoupling agent carbonyl cyanide 4-trifluoromethoxyphenylhydrazone (FCCP) (Figure 2). It is noteworthy that, unlike young-donor ASCs, aged-donor ASCs presented early oxidative stress (Figure 1H).
 
@@ -63,7 +63,7 @@ Finally, increased cell passages of aged-donor ASCs resulted in both physiologic
 
 Taken as a whole, these results show that only physiological aging led to senescence associated with oxidative stress and that during long-term in vitro culture, aged-donor ASCs expressed senescence earlier and more intensely than young-donor ASCs did.
 
-## In vitro senescence is responsible for altered adipocyte differentiation, while physiological aging is associated with preserved differentiation but dysfunction in adipocyte-differentiated ASCs
+### In vitro senescence is responsible for altered adipocyte differentiation, while physiological aging is associated with preserved differentiation but dysfunction in adipocyte-differentiated ASCs
 
 We next evaluated the impact of in vitro and physiological aging on the ASCs’ ability to differentiate in vitro into mature adipocytes. At P3, P7, or P11, confluent cells were induced to differentiate for 14 days in a pro-adipogenic medium.
 
@@ -71,7 +71,7 @@ Increasing in vitro passage was associated with lower lipid accumulation in adip
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig3-v2.jpg)
 
-**Figure 3.:** The ASCs were differentiated into adipocytes for 14 days at P3, P7, and P11. (A) Cells were stained with Oil-Red-O to visualize lipid droplets 14 days post-induction, and representative micrographs are shown. (B) Quantification of Oil-Red-O staining of adipocytes differentiated from ASCs and representative scans of wells are shown. (C) Whole-cell lysates, at day 14 post-induction, of adipocytes differentiated from ASCs isolated from young and aged donors, cultured until P3, P7, and P11, were analyzed by immunoblotting. Representative immunoblots of C/EBPα, SREBP-1c, PPARγ, and tubulin (loading control) are shown. (D) Quantification of western blot was normalized to young-donor ASCs at P3. (E) Reactive oxygen species (ROS) production, normalized against 4′,6-diamidino-2-phenylindole dihydrochloride (DAPI). (F) Mitochondrial mass (normalized against DAPI) and (G) mitochondrial membrane potential were assessed in adipocytes derived from aged-donor ASCs as described in Figure 1. (H) Whole-cell lysates (extracted at day 14 post-induction) of adipocytes differentiated from young- and aged-donor ASCs and stimulated (or not) with insulin were analyzed with immunoblotting. Representative immunoblots of Akt and phospho-Akt (Ser473) are shown. (I) The phosphorylated Akt/total Akt ratio was determined in a densitometric analysis. (J) Insulin sensitivity at P11 in adipocytes differentiated from young- and aged-donor ASCs was evaluated by measuring glucose uptake in basal and insulin-stimulated conditions as described in the Materials and methods section. The insulin fold induction was determined. Results are quoted as the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001 for aged-donor vs. young-donor ASCs, #p < 0.05, ##p < 0.01, ###p < 0.001 vs. young- or aged-donor ASCs at P3. All experiments were performed in duplicate or triplicate with ASCs isolated from four different donors in each group.Figure 3—source data 1.
+**Figure 3.:** The ASCs were differentiated into adipocytes for 14 days at P3, P7, and P11. (A) Cells were stained with Oil-Red-O to visualize lipid droplets 14 days post-induction, and representative micrographs are shown. (B) Quantification of Oil-Red-O staining of adipocytes differentiated from ASCs and representative scans of wells are shown. (C) Whole-cell lysates, at day 14 post-induction, of adipocytes differentiated from ASCs isolated from young and aged donors, cultured until P3, P7, and P11, were analyzed by immunoblotting. Representative immunoblots of C/EBPα, SREBP-1c, PPARγ, and tubulin (loading control) are shown. (D) Quantification of western blot was normalized to young-donor ASCs at P3. (E) Reactive oxygen species (ROS) production, normalized against 4′,6-diamidino-2-phenylindole dihydrochloride (DAPI). (F) Mitochondrial mass (normalized against DAPI) and (G) mitochondrial membrane potential were assessed in adipocytes derived from aged-donor ASCs as described in Figure 1. (H) Whole-cell lysates (extracted at day 14 post-induction) of adipocytes differentiated from young- and aged-donor ASCs and stimulated (or not) with insulin were analyzed with immunoblotting. Representative immunoblots of Akt and phospho-Akt (Ser473) are shown. (I) The phosphorylated Akt/total Akt ratio was determined in a densitometric analysis. (J) Insulin sensitivity at P11 in adipocytes differentiated from young- and aged-donor ASCs was evaluated by measuring glucose uptake in basal and insulin-stimulated conditions as described in the Materials and methods section. The insulin fold induction was determined. Results are quoted as the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001 for aged-donor vs. young-donor ASCs, #p < 0.05, ##p < 0.01, ###p < 0.001 vs. young- or aged-donor ASCs at P3. All experiments were performed in duplicate or triplicate with ASCs isolated from four different donors in each group.
 
 Interestingly, in vitro aging of young-donor ASCs, that resulted in ASC senescence, was not associated with early mitochondrial dysfunction in derived adipocytes (at P7, Figure 3F and G), thus disentangling ASC senescence and adipocyte mitochondrial dysfunction.
 
@@ -87,27 +87,45 @@ To further delineate the link between oxidative stress and senescence of ASCs an
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig5-v2.jpg)
 
-**Figure 5.:** ASCs were treated during 30 days with DMSO or PIs: lopinavir (LPV) or darunavir (DRV) associated with a low dose of ritonavir (LPV/r or DRV/r) (A–D). The ASCs were then differentiated into adipocytes for 14 days in the absence of PIs (E–H). (A) ASCs’ senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and expressed as the proportion (in %) of SA-β-galactosidase-positive cells at pH 6. (B) Reactive oxygen species (ROS) production (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed by the oxidation of CM-H2DCFDA and expressed as a ratio relative to DMSO. (C) Mitochondrial mass (normalized against DAPI) was evaluated with Mitotracker Red-Probe and expressed as a ratio relative to DMSO. (D) The cationic dye JC1 was used to evaluate the mitochondrial membrane potential. In ASC-derived adipocytes, 14 days post-induction, (E) ROS production (F) mitochondrial mass, and (G) mitochondrial membrane potential normalized to DAPI were evaluated. (H) Cells were stained with Oil-Red-O to visualize lipid droplets. Results are quoted as the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001 vs. DMSO. All experiments were performed in triplicate with ASCs isolated from three different donors in each group.Figure 5—source data 1.
+**Figure 5.:** ASCs were treated during 30 days with DMSO or PIs: lopinavir (LPV) or darunavir (DRV) associated with a low dose of ritonavir (LPV/r or DRV/r) (A–D). The ASCs were then differentiated into adipocytes for 14 days in the absence of PIs (E–H). (A) ASCs’ senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and expressed as the proportion (in %) of SA-β-galactosidase-positive cells at pH 6. (B) Reactive oxygen species (ROS) production (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed by the oxidation of CM-H2DCFDA and expressed as a ratio relative to DMSO. (C) Mitochondrial mass (normalized against DAPI) was evaluated with Mitotracker Red-Probe and expressed as a ratio relative to DMSO. (D) The cationic dye JC1 was used to evaluate the mitochondrial membrane potential. In ASC-derived adipocytes, 14 days post-induction, (E) ROS production (F) mitochondrial mass, and (G) mitochondrial membrane potential normalized to DAPI were evaluated. (H) Cells were stained with Oil-Red-O to visualize lipid droplets. Results are quoted as the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001 vs. DMSO. All experiments were performed in triplicate with ASCs isolated from three different donors in each group.
 
-## Metformin prevents the onset of senescence and associated dysfunctions in ASCs isolated from aged donors but not in ASCs from young donors
+### Metformin prevents the onset of senescence and associated dysfunctions in ASCs isolated from aged donors but not in ASCs from young donors
 
 Next, we evaluated whether metformin could alleviate cellular senescence in ASCs. To that end, ASCs were treated with metformin from P3 to P11. As shown in Figure 6A–B, metformin did not modify the PDT of young-donor ASCs and had no effect on the level of senescence or oxidative stress and a mild effect on mitochondrial dysfunction (Figure 6C–I).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig6-v2.jpg)
 
-**Figure 6.:** Metformin (25 µmol/L) was added to the culture medium of aged-donor and young-donor ASCs from P3 onward (young-donor ASC: gray dots and bars in the absence of metformin, gray dotted lines or gray striped bars in the presence of metformin; aged-donor: black circles and bars in the absence of metformin, black dotted lines and striped bars in the presence of metformin). Mean population doubling times (PDT) were determined at the indicated passages in aged-donor and young-donor ASCs treated (or not) with metformin at the same passage. (B) The % inhibition of cell proliferation was calculated for aged-donor ASCs and young-donor ASCs treated by metformin by determining the increase in total cell number that occurred after 7 days, compared to young-donor ASCs. (C) Senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and expressed as the proportion (in %) of SA-β-galactosidase-positive cells at pH 6 in metformin-treated ASCs vs. non-treated ASCs at P11. (D) Representative micrographs of SA-β-galactosidase positive cells. (E) Lysosomal accumulation (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed with the Lysotracker fluorescence probe in metformin-treated ASCs vs. non-treated ASCs at P11. (F) Whole-cell lysates of aged-donor and young-donor ASCs treated (or not) with metformin were analyzed at P11 by immunoblotting. Representative immunoblots of the cell cycle arrest markers p16INK4A and p21WAF1 and of tubulin (the loading control) for two donors in each group are shown. Quantitation of western blots, normalized against the values for non-treated young-donor ASCs at P11. (G) Reactive oxygen species (ROS) production, (H) mitochondrial mass (both normalized against DAPI) and (I) mitochondrial membrane potential were assessed as described in Figure 1 in metformin-treated ASCs vs. non-treated ASCs at P11. The results correspond to the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001 for aged-donor vs. young-donor ASCs, §p < 0.05, §§p < 0.01 metformin-treated vs. non-treated ASCs. All experiments were performed in duplicate or triplicate in ASCs isolated from three different donors in each group.Figure 6—source data 1.Figure 6—source data 2.Figure 6—source data 3.
+**Figure 6.:** Metformin (25 µmol/L) was added to the culture medium of aged-donor and young-donor ASCs from P3 onward (young-donor ASC: gray dots and bars in the absence of metformin, gray dotted lines or gray striped bars in the presence of metformin; aged-donor: black circles and bars in the absence of metformin, black dotted lines and striped bars in the presence of metformin). Mean population doubling times (PDT) were determined at the indicated passages in aged-donor and young-donor ASCs treated (or not) with metformin at the same passage. (B) The % inhibition of cell proliferation was calculated for aged-donor ASCs and young-donor ASCs treated by metformin by determining the increase in total cell number that occurred after 7 days, compared to young-donor ASCs. (C) Senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and expressed as the proportion (in %) of SA-β-galactosidase-positive cells at pH 6 in metformin-treated ASCs vs. non-treated ASCs at P11. (D) Representative micrographs of SA-β-galactosidase positive cells. (E) Lysosomal accumulation (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed with the Lysotracker fluorescence probe in metformin-treated ASCs vs. non-treated ASCs at P11. (F) Whole-cell lysates of aged-donor and young-donor ASCs treated (or not) with metformin were analyzed at P11 by immunoblotting. Representative immunoblots of the cell cycle arrest markers p16INK4A and p21WAF1 and of tubulin (the loading control) for two donors in each group are shown. Quantitation of western blots, normalized against the values for non-treated young-donor ASCs at P11. (G) Reactive oxygen species (ROS) production, (H) mitochondrial mass (both normalized against DAPI) and (I) mitochondrial membrane potential were assessed as described in Figure 1 in metformin-treated ASCs vs. non-treated ASCs at P11. The results correspond to the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01, ***p < 0.001 for aged-donor vs. young-donor ASCs, §p < 0.05, §§p < 0.01 metformin-treated vs. non-treated ASCs. All experiments were performed in duplicate or triplicate in ASCs isolated from three different donors in each group.
 
 Conversely, metformin prevented the above-mentioned relative decrease in cell proliferation in aged-donor ASCs presenting stress-induced senescence (Figure 6A–B). Accordingly, metformin rescued the higher percentage of senescent cells (Figure 6C–D), the greater lysosome accumulation (Figure 6E), and the higher expression of cell cycle inhibitors p21WAF1 and p16INK4 (Figure 6F) previously observed at P11.
 
 Taken as a whole, these data show that in aged-donor ASCs, metformin reversed the dysfunction associated with oxidative stress-induced senescence. Indeed, metformin treatment reversed oxidative stress and mitochondrial dysfunction to the levels observed in young-donor ASCs whereas it did not reverse senescence features in young-donor ASCs which do not display enhanced oxidative stress (Figure 6G–I).
 
-## Metformin restores the ability of aged-donor but not young-donor ASCs to differentiate into adipocytes
+### Metformin restores the ability of aged-donor but not young-donor ASCs to differentiate into adipocytes
 
 We checked whether metformin pre-treatment was able to rescue the altered adipogenesis potential of young-donor and aged-donor ASCs. At first, ASCs were treated with metformin, then adipogenesis was induced at P11 in the absence of the drug to bypass its anti-adipogenic impact (Marycz et al., 2016; Chen et al., 2018) (Figure 7—figure supplement 1). First, we observed that metformin was unable to rescue the altered adipogenesis observed in adipocytes derived from young-donor ASCs at P11 (Figure 7A–B). Conversely, metformin restored the adipogenic capacity of aged-donor ASCs at P11 to the level observed in young-donor ASCs. Indeed, metformin treatment during the proliferation state increased lipid accumulation (Figure 7A–B) and increased C/EBPα, and SREBP1c expression (Figure 7C–D). Lastly, metformin pre-treatment lowered levels of oxidative stress (Figure 7G), leading to a partial rescue of the insulin sensibility in adipocytes-differentiated ASCs (Figure 7E–F) but did not restore mitochondrial function (Figure 7H–I).
 
-## The beneficial effect of metformin on ASC senescence is mediated by AMPK activation
+![Figure 7.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig7-v2.jpg)
+
+**Figure 7.:** Metformin was added to the culture medium of young- and aged-donor ASCs from P3 onward. The ASCs were differentiated into adipocytes for 14 days at P11, in the absence of metformin (young-donor ASC: gray bars in the absence of metformin, gray striped bars in the presence of metformin; aged-donor: black bars in the absence of metformin, black striped bars in the presence of metformin). (A) Cells were stained with Oil-Red-O to visualize lipid droplets 14 days post-induction, and representative micrographs are shown. (B) Quantification of Oil-Red-O staining and representative scans of wells are shown. (C) Whole-cell lysates on day 14 post-induction from adipocytes differentiated from non-treated young-donor and aged-donor ASCs at P11 and treated (or not) with metformin were analyzed by immunoblotting. Representative immunoblots of C/EBPα, SREBP-1c, PPARγ, and tubulin (the loading control) are shown. (D) Quantification of western blots is shown. (E) Whole-cell lysates extracted at day 14 post-induction stimulated (or not) by insulin from differentiated ASCs were analyzed by immunoblotting. Representative immunoblots of Akt and phospho-Akt (Ser473) and quantification of the pAkt/Akt are shown. (F) Insulin sensitivity was evaluated at P11 in adipocytes differentiated from non-treated young-donor and aged-donor ASCs treated (or not) with metformin, by measuring the glucose uptake in response to insulin and calculating the insulin fold induction, as described in the Materials and methods section. (G) Reactive oxygen species (ROS) production, (H) mitochondrial mass, and (I) mitochondrial membrane potential (both normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) were assessed as described in Figure 1. The results are expressed as the mean ± standard error of the mean (SEM). *p < 0.05 for adipocytes differentiated from aged-donor vs. adipocytes differentiated from young-donor ASCs, §p < 0.05, §§p < 0.01, §§§p < 0.001 metformin-treated vs. non-treated adipocytes differentiated from ASCs. All experiments were performed in duplicate on cells isolated from three different donors in each group.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig7-figsupp1-v2.jpg)
+
+### The beneficial effect of metformin on ASC senescence is mediated by AMPK activation
 
 We hypothesized that, in mechanistic terms, metformin’s action might be based on (among other things) the phosphorylation and thus activation of AMPK. As shown in Figure 8A, metformin treatment was associated with (i) greater AMPK expression in both young-donor and aged-donor ASCs but (ii) greater AMPK phosphorylation in aged-donor ASCs only. These findings are in line with metformin’s beneficial effect on aged-donor ASCs and lack of effect on young-donor ASCs, as reported above.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig8-v2.jpg)
+
+**Figure 8.:** Metformin was added to the culture medium of aged-donor and young-donor ASCs from P3 onward. To evaluate the role of AMPK activation, compound C was added at P11. After 7 days of treatment, the experiments on ASCs were carried out (young-donor ASC: gray bars in the absence of metformin or in the presence of compound C, gray striped bars in the presence of metformin or metformin and compound C; aged-donor: black bars in the absence of metformin or in the presence of compound C, black striped bars in the presence of metformin or metformin and compound C). (A) Whole-cell lysates of aged-donor and young-donor ASCs treated (or not) with metformin and compound C at P11 were analyzed by immunoblotting. Representative immunoblots of AMPK, phospho-AMPK, and tubulin (the loading control) and a graph quantifying AMPK (normalized against tubulin) and the pAMPK/AMPK ratio are shown. (B) The % inhibition of cell proliferation was calculated for aged-donor ASCs and young-donor ASCs treated or not with metformin or compound C, by determining the increase in total cell number that occurred after 7 days, compared to young-donor ASCs. (C) Senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and was expressed as described in Figure 1. (D) Lysosomal accumulation (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed with the Lysotracker fluorescence probe. (E) Reactive oxygen species (ROS) production, (F) mitochondrial mass (both normalized against DAPI), and (G) mitochondrial membrane potential were assessed as described in Figure 1. (H) The ASCs were then differentiated into adipocytes on P11 in the absence of metformin and compound C. Cells were stained with Oil-Red-O to visualize lipid droplets 14 days post-induction. Quantification of Oil-Red-O staining and representative scans of wells are shown. (I) Insulin sensitivity was evaluated at P11 in adipocytes differentiated from non-treated young-donor and aged-donor ASCs treated (or not) with metformin and/or compound C, by measuring the glucose uptake in response to insulin and calculating the insulin fold induction, as described in the Materials and methods section. Results are expressed as the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01 for aged-donor vs. young-donor ASCs, §p < 0.05, §§p < 0.01 for metformin-treated ASCs vs. non-treated ASCs. #p < 0.05, ##p < 0.01 for compound C and metformin-treated ASCs vs. metformin-treated ASCs. All experiments were performed in duplicate or triplicate on ASCs isolated from at three different donors in each group.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Metformin or AICAR were added to the culture medium of aged-donor and young-donor ASCs at P11. After 7 days of treatment, the experiments on ASCs were carried out. (A) Whole-cell lysates of aged-donor and young-donor ASCs treated (or not) with metformin and AICAR at P11 were analyzed by immunoblotting. Representative immunoblots of AMP-activated protein kinase (AMPK) and phospho-AMPK (pAMPK), and (B) the pAMPK/AMPK ratio are shown. (C) Senescence was evaluated in terms of senescence-associated (SA)-β-galactosidase activity and was expressed as described in Figure 1. (D) Lysosomal accumulation (normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]) was assessed with the Lysotracker fluorescence probe. (E) Representative immunoblots of the cell cycle arrest markers p16INK4A and p21WAF1 and tubulin (the loading control) are shown. (F) Quantification of western blot was normalized to young-donor ASCs. (G) Reactive oxygen species production (normalized against DAPI) was assessed by the oxidation of CM-H2DCFDA and expressed as a ratio relative to young-donor ASCs. (H) Mitochondrial mass (normalized against DAPI) expressed as a ratio relative to young-donor ASCs. (I) Mitochondrial membrane potential expressed as a ratio relative to young-donor ASCs. Results are expressed as the mean ± standard error of the mean (SEM). *p < 0.05, ***p < 0.001 for aged-donor vs. young-donor ASCs, §p < 0.05, for metformin-treated ASCs vs. non-treated ASCs. #p < 0.05, ##p < 0.01 for AICAR-treated ASCs vs. non-treated ASCs. All experiments were performed in duplicate or triplicate on ASCs isolated from three different donors in each group.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/62635/elife-62635-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Metformin or AICAR were added to the culture medium of aged-donor and young-donor ASCs at P11. The ASCs were differentiated into adipocytes for 14 days at P11, in the absence of metformin or AICAR. (A) Cells were stained with Oil-Red-O to visualize lipid droplets 14 days post-induction. (B) Representative scans of wells quantification of Oil-Red-O staining are shown. (C) Reactive oxygen species (ROS) production, (D) mitochondrial mass (both normalized against 4′,6-diamidino-2-phenylindole dihydrochloride [DAPI]), and (E) mitochondrial membrane potential were assessed as described in Figure 1. Results are expressed as the mean ± standard error of the mean (SEM). *p < 0.05, **p < 0.01 for aged-donor vs. young-donor ASCs, §p < 0.05 for metformin-treated ASCs vs. non-treated ASCs. #p < 0.05, ###p < 0.001 for AICAR-treated ASCs vs. non-treated ASCs. All experiments were performed in duplicate or triplicate on ASCs isolated from three different donors in each group.
 
 To confirm AMPK’s potential role in the action of metformin, we determined whether the drug’s effects were influenced by treatment with the AMPK inhibitor compound C. Indeed, we observed that in aged-donor ASCs, treatment with compound C counteracted the beneficial effect of metformin on cell proliferation (Figure 8B), senescence marker levels (Figure 8C–D), oxidative stress (Figure 8E), and mitochondrial dysfunction (Figure 8F–G). Interestingly, adipocytes differentiated from aged-donor ASCs, then pre-treated with both metformin and compound C during proliferation but not during differentiation did not show metformin’s beneficial effect on adipogenesis (Figure 8H) and insulin-stimulated glucose uptake (Figure 8I). Accordingly, we showed that AMPK constitutive activation with AICAR (5-aminoimidazole-4-carboxyamide ribonucleoside), an agonist of the AMPK pathway (Merrill et al., 1997), induced a decrease of aged-donor ASCs senescence and mitochondrial dysfunction at P11 (Figure 8—figure supplement 1) leading to increased triglycerides and decreased ROS production in adipocytes differentiated from aged-donor ASCs (Figure 8—figure supplement 2). These findings highlighted AMPK’s role in the beneficial action of metformin on aged-donor ASCs and the derived adipocytes.
 
@@ -139,36 +157,431 @@ Aging is associated with the induction of senescence and associated disorders (i
 
 ## Materials and methods
 
-## Isolation, culture, and treatment of ASCs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin (Mouse monoclonal)</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>T5168, RRID:AB_477579</td>
+      <td>WB (1:10 000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P21 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>554262, RRID:AB_395331</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P16 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>551154, RRID:AB_394078</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-prelamin A (Goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-6214, RRID:AB_648150</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C/EBPA (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-61, RRID:AB_631233</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PPARG (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-7196, RRID:AB_654710</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SREBP1 (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-366, RRID:AB_2194229</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat IgG, HRP-linked</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2354, RRID:AB_628490</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-AMPK (Thr172) (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>4188, RRID:AB_2169396</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AMPK (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>2532, RRID:AB_330331</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9272, RRID:AB_329827</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-Akt (Ser473) (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9271, RRID:AB_329825</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked</td>
+      <td>Cell Signaling</td>
+      <td>7074, RRID:AB_2099233</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked</td>
+      <td>Cell Signaling</td>
+      <td>7076, RRID:AB_330924</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-Gal 40 mg/mL DMF</td>
+      <td>Euromedex</td>
+      <td>UX-1000–05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycine</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>O4876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP)</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>C2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rotenone</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>R8875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antimycine A</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>A8674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metformin hydrochloride</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>PHR1084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>D8418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Isobutyl-1-methylxanthine</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>I5879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexametasone</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rosiglitazone</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>R2408</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase B</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>11088815001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formalin Solution, Neutral Buffered</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>HT-501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oil-Red-O</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>O9755</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropanol</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>563935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lopinavir</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-207831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ritonavir</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-208310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Darunavir</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-218079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AICAR</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-200659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Compound C</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-361173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CM-H2-DCFDA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C6827</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTacker</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M7512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JC-1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>T3168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lysotracker</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L7526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose Uptake-Glo Assay</td>
+      <td>Promega</td>
+      <td>J1341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human Insulin</td>
+      <td>Merck – Sigma-Aldrich</td>
+      <td>I9278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human FGF-basic</td>
+      <td>Peprotech</td>
+      <td>100-18B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>Image J</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Prism</td>
+      <td>RRID:SCR_005375</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation, culture, and treatment of ASCs
 
 The human SCAT samples from which ASCs were isolated were obtained from 10 healthy women undergoing plastic surgery. The women were young adults (n = 5; mean ± standard error of the mean [SEM] age: 21.2 ± 3.2 years; mean ± SEM BMI: 23.6 ± 1.2 kg/m2) or aged adults (n = 5; mean ± SEM age: 60.0 ± 0.7 years; mean ± SEM BMI: 25.4 ± 0.4 kg/m2) (see Table 1 for details).
 
+**Table 1.**
+ Main characteristics of subcutaneous adipose tissue (SCAT) donors used for adipose-derived stromal cell (ASC) isolation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sex</th>
+      <th>Age(years)</th>
+      <th>BMI(kg/m2)</th>
+      <th>Ethnicity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F</td>
+      <td>29</td>
+      <td>23.5</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>16</td>
+      <td>23.7</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>16</td>
+      <td>26.6</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>16</td>
+      <td>24.6</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>29</td>
+      <td>19.3</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>61</td>
+      <td>26.0</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>62</td>
+      <td>26.6</td>
+      <td>Sub-Saharan African</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>58</td>
+      <td>24.9</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>60</td>
+      <td>24.4</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>59</td>
+      <td>24.6</td>
+      <td>Caucasian</td>
+    </tr>
+  </tbody>
+</table>
+
 Before surgery, all donors provided informed written consent to use of their tissue specimens for research purposes. The study was performed in compliance with the principles of the Declaration of Helsinki and was approved by the local independent ethics committee. The ASCs were isolated using collagenase B (0.1%) (Roche Diagnostics, Basel, Switzerland) digestion technique, as described previously (Gorwood et al., 2019; Gorwood et al., 2020). After centrifugation, stromal vascular fraction was filtered, rinsed, and plated (10,000 cells/cm2) in Eagle’s Minimum Essential Medium alpha (Thermo Fisher Scientific, Courtaboeuf, France) supplemented with 10% fetal bovine serum (FBS) (PAN-Biotech, Aidenbach, Germany), 2 mmol/L glutamine, 100 U/mL penicillin/streptomycin, 10 mmol/L HEPES (Thermo Fisher Scientific), and 2.5 ng/mL FGF2 (PeproTech, Rocky Hill, NJ). On average, we isolated 65,000 cells per mL of SCAT liposuction sample, with similar yield between SCAT from aged or young donors. Upon confluence, adherent cells were trypsinized (Thermo Fisher Scientific) and seeded at a density of 2000/cm2 for the study of proliferating ASCs and of 4000 cells/cm2 prior to the induction of adipogenesis. During expansion, cells were exposed (or not) to 25 µmol/L metformin (Merck, Sigma-Aldrich, St Quentin Fallavier, France). The metformin concentration chosen in our study is close to Cmax observed in elderly subjects, which exhibited higher average Cmax than younger subjects (Jang et al., 2016). At a late passage (P11), cells were exposed (or not) to 0.1 µmol/L of compound C (Merck, Sigma-Aldrich). Proliferating ASCs were exposed for 30 days (from P3 to P9) to DMSO (0.01%) or the PIs: lopinavir (LPV/r 10 µmol/L) or darunavir (DRV/r 10 µmol/L) in association with 2 µmol/L ritonavir (Merck, Sigma-Aldrich), at clinically relevant concentrations near Cmax (Hernandez-Vallejo et al., 2013). Proliferating ASCs isolated from young and aged donor were cultured at P11 with or without AICAR (100 mmol/L) (Santa Cruz Biotechnology) for 1 week and analyzed as described in Figure 8—figure supplement 1. ASCs were induced to differentiate into adipocyte differentiation for 14 days without AICAR. Upon day 14, adipocyte-derived ASCs were analyzed as described in Figure 8—figure supplement 2.
 
-## Adipocyte differentiation
+### Adipocyte differentiation
 
 Differentiation of ASCs was induced by the addition of pro-adipogenic Dulbecco’s modified Eagle medium (DMEM), 4.5 g/L glucose (Thermo Fisher Scientific), 10% FBS, 2 mmol/L glutamine, 100 U/mL penicillin/streptomycin, 10 mmol/L HEPES, 1 µmol/L dexamethasone, 250 µmol/L 3-isobutyl-1-methylxanthine (IBMX), 1 µmol/L rosiglitazone, 1 µmol/L insulin (Merck, Sigma-Aldrich) for 5 days, and then maintained in DMEM with rosiglitazone and insulin until day 14. Cells were then stained for Oil-Red-O (Merck, Sigma-Aldrich) and quantified at 520 nm as described previously (Gorwood et al., 2019; Gorwood et al., 2020). To analyze the impact of ASC senescence and oxidative stress on adipogenesis, adipocytes were differentiated in the absence of metformin (Figure 7—figure supplement 1).
 
-## Cellular proliferation and senescence
+### Cellular proliferation and senescence
 
 Cellular senescence was evaluated in terms of the cell PDT at each cell passage, as described previously (Gorwood et al., 2020). The positive blue staining of SA-β-galactosidase has been used as a biomarker of cellular senescence. To detect SA-β-galactosidase activity, cells were incubated in an appropriate buffer solution at pH 6 containing bromo-4-chloro-3-indolyl-β-D-galactopyranoside (Euromedex, Souffelweyersheim, France), as described previously (Gorwood et al., 2020). The percentage of blue SA-β-galactosidase-positive cells was estimated by cell counting in at least three random-selected fields at a magnification of 20×. The acidotropic dye Lysotracker (Invitrogen Corporation, Carlsbad, CA) was used to evaluate the lysosomal mass. Cells cultured in 96-well plates (Corning, New York, NY) were incubated with Lysotracker for 2 hr at 37°C. The fluorescence was quantified on a plate reader at 504–570 nm (Tecan, Trappes, France), and normalized against 4′,6-diamidino-2-phenylindole dihydrochloride (DAPI) fluorescence at 345–458 nm.
 
-## Mitochondrial dysfunctions and oxidative stress
+### Mitochondrial dysfunctions and oxidative stress
 
 The cationic dye tetra-chloro-tetra-ethyl-benzimidazolyl-carbocyanine iodide (JC1) was used to evaluate the mitochondrial membrane potential, and the Mitotracker Red probe (both from Invitrogen Corporation) was used to measure the mitochondrial mass. The production of ROS was assessed by the oxidation of 5–6-chloromethyl-2,7-dichlorodihydrofluorescein diacetate (CM-H2DCFDA) (Invitrogen Corporation). Cells cultured in 96-well plates were incubated with JC1, Mitotracker, or CM-H2DCFDA for 2 hr at 37°C. The fluorescence was quantified on a plate reader at 520–595 nm for JC1 aggregates, 485–535 nm for JC1 monomers, 575–620 nm for Mitotracker, and 485–520 nm for CM-H2DCFDA. The results were normalized against DAPI fluorescence.
 
-## Mitochondrial bioenergetics analysis
+### Mitochondrial bioenergetics analysis
 
 Cellular bioenergetic profiles were determined using the Seahorse XF Cell Mito Stress Test and the Bioscience XF24 Analyzer (Agilent), providing real-time measurement of the OCR. ASCs seeded or submitted to adipocyte differentiation in XF24 Microplates (2000 cells/well) were washed two times and incubated for 1 hr in FBS- and bicarbonate-free DMEM (pH 7.4) supplemented with 1 g/L (for ASCs) or 4.5 g/L (for adipocytes) glucose respectively, 1% GlutaMax and 1% pyruvate (Gibco). OCR was then evaluated using the Seahorse XF Cell Mito Stress Test (Agilent) at baseline and after sequential addition of 1 μmol/L oligomycin (inhibitor of ATP synthase), 0.63 μmol/L carbonyl cyanide FCCP (uncoupling agent), and 1 μmol/L rotenone/antimycin A (R/AA, inhibitors of the respiratory chain complexes I and III, respectively).
 
-## Protein extraction and western blotting
+### Protein extraction and western blotting
 
 Proteins were extracted from cell monolayers as described previously (Gorwood et al., 2019; Gorwood et al., 2020). After SDS-PAGE, the proteins were transferred to nitrocellulose membranes. Specific proteins were detected using antibodies against p16INK4A, p21WAF1 (BD Bioscience, Franklin Lakes, NJ), prelamin A, PPARγ, CEBPα, SREBP1c, AMPK, phospho-AMPK (Cell Signaling Technology, Danvers, MA), and the protein loading control tubulin (Merck, Sigma-Aldrich). Immunoreactive complexes were detected using HRP-conjugated secondary antibodies (Cell Signaling Technology, Danvers, MA) and enhanced chemiluminescence (Thermo Fisher Scientific).
 
-## Insulin signaling and glucose transport
+### Insulin signaling and glucose transport
 
 The insulin sensitivity of adipocyte-derived ASCs at late passage (P11) was evaluated by the phosphorylation of Akt. On day 14, the adipocytes were serum-starved for 18 hr and stimulated or not for 7 min with 100 nmol/L insulin. Cell lysates were immunoblotted with antibodies against the activated forms (Ser473 phosphorylation) of Akt (Cell Signaling Technology). Protein expression was checked using antibodies against Akt (Cell Signaling Technology). Insulin-stimulated glucose uptake was measured using the Glucose Uptake-Glo assay kit (Promega, Fitchburg, WI), according to the manufacturer’s instructions. Briefly, on day 14, adipocytes were serum-starved for 18 hr. Prior to the experiment, cells were incubated for 1 hr in glucose-free DMEM (Thermo Fisher Scientific). Next, 100 nmol/L insulin and 2-deoxyglucose mix were successively added for 60 and 10 min, respectively. In parallel with the insulin-stimulated and non-stimulated conditions, 50 µmol/L of the actin-disrupting agent cytochalasin B (Merck, Sigma-Aldrich) was added as a negative control and enabled determination of the net insulin-stimulated glucose uptake. The reaction was stopped with neutralization buffer and detection reagent mix was added and incubated for 1 hr at room temperature prior to measurement of luminescence on a plate reader.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were performed in duplicate or triplicate on ASCs isolated from at least three or five different donors from each age group. All data were expressed as the mean ± SEM. The statistical significance of intergroup differences or changes over time was determined by applying a non-parametric test (the Mann–Whitney test), as appropriate.

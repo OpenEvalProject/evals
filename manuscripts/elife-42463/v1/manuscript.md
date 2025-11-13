@@ -74,7 +74,7 @@
 
 ## Abstract
 
-10.7554/eLife.42463.001 Hepatitis C virus (HCV) is a highly variable pathogen that frequently establishes chronic infection. This genetic variability is affected by the adaptive immune response but the contribution of other host factors is unclear. Here, we examined the role played by interferon lambda-4 (IFN-λ4) on HCV diversity; IFN-λ4 plays a crucial role in spontaneous clearance or establishment of chronicity following acute infection. We performed viral genome-wide association studies using human and viral data from 485 patients of white ancestry infected with HCV genotype 3a. We demonstrate that combinations of host genetic variants, which determine IFN-λ4 protein production and activity, influence amino acid variation across the viral polyprotein - not restricted to specific viral proteins or HLA restricted epitopes - and modulate viral load. We also observed an association with viral di-nucleotide proportions. These results support a direct role for IFN-λ4 in exerting selective pressure across the viral genome, possibly by a novel mechanism.
+Hepatitis C virus (HCV) is a highly variable pathogen that frequently establishes chronic infection. This genetic variability is affected by the adaptive immune response but the contribution of other host factors is unclear. Here, we examined the role played by interferon lambda-4 (IFN-λ4) on HCV diversity; IFN-λ4 plays a crucial role in spontaneous clearance or establishment of chronicity following acute infection. We performed viral genome-wide association studies using human and viral data from 485 patients of white ancestry infected with HCV genotype 3a. We demonstrate that combinations of host genetic variants, which determine IFN-λ4 protein production and activity, influence amino acid variation across the viral polyprotein - not restricted to specific viral proteins or HLA restricted epitopes - and modulate viral load. We also observed an association with viral di-nucleotide proportions. These results support a direct role for IFN-λ4 in exerting selective pressure across the viral genome, possibly by a novel mechanism.
 
 ## Introduction
 
@@ -88,15 +88,51 @@ In this study, we report a large number of associations between HCV-encoded amin
 
 ## Results
 
-## Host and virus genetic structures
+### Host and virus genetic structures
 
 To ensure that host and virus population structures had a minimal impact on our results, we used paired genome-wide human and viral genetic data in a homogenous group of 485 patients with self reported white ancestry, infected with HCV genotype 3a from two cohorts [BOSON (Foster et al., 2015) and Expanded Access Program (EAP) (Foster et al., 2016) cohorts, NBOSON = 411, NEAP = 74, see Supplementary file 1 and Materials and methods for a description of the cohorts]. To control for both human and virus population structures, we performed principal component analysis (PCA) on each of the host and viral genetic data (Materials and methods). The host PCA defined a largely homogenous group corresponding to self-reported white ancestry (Figure 1—figure supplement 1a). The first and second viral principal components (PCs) explained around 3% and 2% of variance in HCV nucleotide diversity respectively (Figure 1—figure supplement 1b), indicating a homogenous group of isolates as observed by the long terminal and short internal branches of the phylogenetic tree (Figure 1—figure supplement 2a). The viral sequences from the two cohorts were non-randomly distributed on the tree as one clade was underrepresented in the EAP cohort sequences; this clade corresponded to isolates in the BOSON cohort from outside the United Kingdom (treeBreaker Bayes factor = 249, see Materials and methods for an explanation on how to interpret Bayes factor and Figure 1—figure supplement 3a). This observation was not reflected in host IFNL4 SNP rs12979860 genotypes, which were randomly distributed on the viral phylogenetic tree (treeBreaker Bayes factor = 1.1, Figure 1—figure supplement 3b). However, we did observe associations between the host IFNL4 SNP rs12979860 and the fifth and seventh viral PCs (p=1.3×10−15 and 7.2 × 10−9, respectively), which were not directed by host-virus population co-structuring, suggesting that the IFNL4 locus drives HCV nucleotide diversity (Figure 1—figure supplement 2b–d and Appendix 1).
 
-## The IFNL4 locus affects virus-encoded amino acids at specific sites across the HCV polyprotein
+### The IFNL4 locus affects virus-encoded amino acids at specific sites across the HCV polyprotein
 
 A major advantage of determining entire HCV genomic sequence data is the possibility to perform footprinting analysis at a genome-wide scale. The nucleotide and amino acid frequencies at polymorphic viral sites in the two cohorts were similar and no systematic differences were observed (Figure 1—figure supplement 4). We used logistic regression to test for association between IFNL4 SNP rs12979860 genotypes (CC vs. non-CC) and virus-encoded amino acids, including the first two viral PCs and the first three host PCs as covariates to account for host-virus population co-structuring. Presence or absence of each viral amino acid was used as the response variable; 977 tests were performed at 471 viral sites. To test for possible confounders we separately added each of the cirrhosis status of patients, cohorts (BOSON vs. EAP), gender and age to the model as covariates. These covariates were not associated with any specific amino acids at a 10% FDR (data not shown).
 
 At a 5% FDR, 42 of the viral sites tested were associated with IFNL4 SNP rs12979860, increasing to 76 sites at a 10% FDR (Figure 1 and Supplementary file 2). This represented 1.4% at a 5% FDR and 2.5% at a 10% FDR of all the viral amino acids in the HCV genotype 3a polyprotein (N = 3021), reflecting a large impact of the host IFNL4 locus on the amino acids encoded at variable sites on the viral polyprotein. The most associated viral site was at position 2570 in the NS5B protein (p=1.32×10−8, log(OR)=1.19), as previously reported (Ansari et al., 2017). Notably, 26 of the 76 sites (34%) associated with the IFNL4 SNP rs12979860 at a 10% FDR lie within the HCV E2 glycoprotein (Appendix 1 and Figure 1—figure supplement 5). However, we did not observe significantly enhanced enrichment or depletion for association signals in any specific viral protein, or in previously reported HLA restricted epitope regions in HCV genotype 3a (von Delft et al., 2016) (Supplementary file 3 and Materials and methods).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-v1.jpg)
+
+**Figure 1.:** (a) Manhattan plot. The dashed line indicates 5% FDR. At this level 42 sites on the virus polyprotein are significantly associated with IFNL4 SNP. (b) Schematic of the HCV polyprotein.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Host first and second PCs. (b) Proportion of variance explained by the viral principal components (PCs). The first and second PCs explain 3% and 2% of variation in the nucleotide sequences respectively which indicates there is little clustering of the viral sequences. This is also consistent with the virus phylogenetic tree, which is star-like.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Virus phylogenetic tree, cohort (black EAP, grey BOSON), IFNL4 SNP rs12979860 (CC white, non-CC black) and the first 10 viral PCs (the colours are mapped such that dark blue represents the smallest number and bright yellow represents the largest number for each PC). (b) P-value of univariate association tests between viral PCs and the host SNPs. Black and grey dots are for association tests between the viral PCs and the IFNL4 SNP rs12979860 and 500 SNPs with minor allele frequency (MAF) similar to IFNL4 SNP rs12979860 MAF, respectively. Dashed line shows the 10% FDR line and the dotted line shows the nominal significance of p=0.05. Distribution of the fifth (c) and seventh (d) PCs stratified by the host IFNL4 SNP rs12979860 genotypes. Black dot and lines show the mean and 95% confidence interval for each group.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The thickness and redness of the branches are proportional to the posterior probability that the distribution of the trait of interest on the tips of the tree is different under that clade. (a) Bayes factor of the alternative (where there is one or more branches which have a different distribution of sequences from the BOSON and EAP cohorts) to null model (where the distribution of sequences from the BOSON and EAP cohorts is the same everywhere on the tree) is 249, indicating that the alternative model is supported. There is a branch (thick and red) on the tree, representing a clade within which there are very few EAP sequences as well as sequences from UK patients in the BOSON cohort. (b) There is no evidence that any part of the tree has a distinct distribution in terms of the host IFNL4 SNP rs12979860 genotypes, the estimated Bayes factor for alternative model (where there is one or more branches which have a different distribution of host IFNL4 genotypes) to null model (where the distribution of IFNL4 SNP rs12979860 genotypes is the same everywhere on the tree) is 1.1 which indicates that the null model that host IFNL4 SNP rs12979860 genotypes are randomly distributed on the virus tree is better supported.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Viral nucleotide and (b) amino acid frequencies in the BOSON and EAP cohorts. The red dots represent the 10 amino acids previously reported to be associated with IFNL4 genotype. The black dot represents position 2576, which was identified in our previous study as a site associated with IFNL4 genotype (Ansari et al., 2017) but was not tested in the present study.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** The core E2 structure (PDB 4MWF) is shown in grey, (A) shows the protein surface as a mesh (B) shows the ribbon structure. IFNL4 associated residues are highlighted as follows: L438 and F442 in Epitope 2 (red), K500 and S501 in orange, R521 in cyan, A524 and L546 in Epitope 3 (blue), T558 in purple and D576, N577, T578 and L580 in the igVR (green).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** QQ-plots for association tests between the host SNPs and viral amino acid (a) host SNPs and change from the most common viral codon to (b) non-synonymous codons and (c) synonymous codons. First two viral PCs and first three host PCs were used as covariates in all three analyses. The black circles show the QQ-plot for the virus GWAS against IFNL4 SNP rs12979860 and the grey circles show the QQ-plot for the virus GWASs against 500 frequency-matched SNPs.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** The effect size is measured for non-CC relative to CC group.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** The effect size is measured for non-CC relative to CC group. The square indicates the effect size in the BOSON cohort and the circle indicates the effect size in the EAP cohort.
 
 To ensure that host-virus population co-structuring or some other systematic bias was not confounding our results, we performed the same tests against the HCV amino acids for 500 host SNPs from across the human genome with a minor allele frequency (MAF) similar to IFNL4 SNP rs12979860 MAF, further referred to as ‘the 500 frequency-matched SNPs’. In effect we performed 500 viral GWASs, one for each of the 500 frequency-matched SNPs. Using a 5% FDR (calculated independently for each of the 500 viral GWASs), we observed no significant associations for 491 of the host SNPs tested against the HCV polyprotein. The remaining nine host SNPs were associated with one HCV amino acid each (Supplementary file 4). However, these associations are likely to be false positives as multiple testing corrections were performed for each viral GWAS independently. Additionally, the distribution of P-values for the association tests between HCV amino acids and the 500 frequency-matched SNPs followed the null distribution of no associations (Figure 1—figure supplement 6a), confirming that there was no systematic bias in our analysis. By comparison, the distribution of the P-values for the association tests between HCV amino acids and IFNL4 SNP rs12979860 deviated from the null distribution of no associations. This observation and the large number of HCV amino acids significantly associated with IFNL4 SNP rs12979860 genotypes highlighted that the broad impact of the IFNL4 locus on HCV-encoded amino acids was authentic and not driven by host-virus population co-structuring.
 
@@ -104,7 +140,7 @@ We then explored nucleotide sequences at the codon level to distinguish the impa
 
 We hypothesised that the observed impact of IFNL4 SNP rs12979860 on viral nucleotide sequences might be induced through dinucleotide sensing mechanisms. Most viruses suppress genomic CpG and UpA dinucleotide frequencies, supposedly to mimic host mRNA composition and avoid the immune response (Simmonds et al., 2013). To explore this possibility, we tested the association between the dinucleotide frequencies in each viral sequence and the host IFNL4 SNP rs12979860 (Materials and methods). The viral UpA dinucleotide frequency (estimated as the ratio of observed to expected frequencies) was significantly lower in the host individuals with IFNL4 SNP rs12979860 non-CC group compared to the CC group (p=1.5×10−6, Figure 1—figure supplement 7). By contrast, the viral UpG dinucleotide frequency was significantly higher in the IFNL4 SNP rs12979860 non-CC group compared to the CC group (p=1.5×10−5). The viral CpC and CpA dinucleotide frequencies were also significantly different between the individuals with IFNL4 SNP rs12979860 CC and non-CC genotypes (p=3.3×10−4 and p=3.3×10−4, respectively). Similar results were observed by analysing the cohorts independently (Appendix 1 and Figure 1—figure supplement 8).
 
-## IFN-λ4 protein impacts on viral amino acid variation and viral load
+### IFN-λ4 protein impacts on viral amino acid variation and viral load
 
 We then investigated the impact of the different haplotypes of IFNL4 on HCV amino acid diversity and viral load to refine its possible role. After imputing and phasing IFNL4 rs368234815 and rs117648444 (Materials and methods), we observed three haplotypes: TT/G (IFN-λ4-Null); ΔG/G (IFN-λ4-P70) and ΔG/A (IFN-λ4-S70). HCV-infected patients were classified into three groups according to their predicted ability to produce IFN-λ4 protein: (i) no IFN-λ4 (two allelic copies of IFN-λ4-Null, NBOSON = 145, NEAP = 41), (ii) IFN-λ4–S70 (two copies of IFN-λ4-S70 or one copy of IFN-λ4-S70 and one copy of IFN-λ4-Null, NBOSON = 48, NEAP = 7), and (iii) IFN-λ4-P70 (at least one copy of IFN-λ4-P70, NBOSON = 218, NEAP = 26) (Supplementary file 7).
 
@@ -115,6 +151,14 @@ Since IFN-λ4-S70 can be distinguished phenotypically from IFN-λ4-P70 both in v
 **Figure 2.:** The circles show the log(OR) estimates and the grey lines indicate the 95% confidence intervals. The dashed line is the y = x line which has a slope of one. The solid black line shows the linear regression line, which has a slope of 0.77 that is significantly different from one (y = x line, p=9.6×10−7).
 
 We then investigated the effects of IFN-λ4 haplotypes on viral load. For this analysis, the EAP cohort was excluded as these patients had advanced liver disease with consistently lower viral loads relative to the BOSON cohort (Figure 3—figure supplement 1). We observed no difference in mean viral load between patients carrying IFN-λ4-S70 and IFN-λ4-Null haplotypes (p=0.61). However, the viral load in patients carrying IFN-λ4-P70 was significantly lower than in the other two groups (PIFN-λ4-S70 = 1.6×10−4 and PIFN-λ4-Null = 3.9×10−10), with IFN-λ4-P70 conferring an approximately 2.3-fold decrease in viral load compared to IFN-λ4-S70 (mean for IFN-λ4-P70 = 2,905,333, IFN-λ4-S70 = 6,703,875 and IFN-λ4-Null = 6,256,523 IU/ml, Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig3-v1.jpg)
+
+**Figure 3.:** (a) Pretreatment viral load stratified by the host IFN-λ4 variants. The black dots and lines indicate the mean and 95% confidence interval (CI) for each group. (b) The posterior probability of the five tested models from (a) stacked on top of each other (from model 1 to model 5; posterior probabilities of models 1, 2 and 5 are too small to be labelled on this plot). Models where the posterior probability is higher or lower than the prior probability are coloured as dark grey and light grey respectively. Only model 3 (as indicated) has a posterior probability bigger than its prior probability and it assumes that the mean viral load is identical in IFN-λ4-Null and IFN-λ4-S70 groups and different from the mean viral load of IFN-λ4-P70 group. (c) Viral load stratified by the host IFNL-λ4 variants and the presence and absence of serine at the viral amino acid site 2414. The black dots and lines indicate the mean and 95% CI for each group. (d) The posterior probability of the 58 tested models from (c) stacked on top of each other (from model 1 to model 58; only models where the posterior probability is higher than the prior probability are labelled on this plot). Models where the posterior probability is higher or lower than the prior probability are coloured as dark grey and light grey respectively. Model 5 has the highest posterior probability and it assumes that the mean viral load is only different in ‘IFN-λ4-P70 + 2414 serine’ group and identical in other groups.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42463/elife-42463-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The viral load in the EAP cohort (N = 74) is significantly lower than that of the BOSON cohort (N = 411) (p=1.49×10−13).
 
 We used a Bayesian approach to investigate the relationship between the effect sizes of the three IFN-λ4 haplotypes on viral load (Figure 3b). In essence, this method weighs up the evidence that the genetic effects of the IFN-λ4-Null, IFN-λ4-S70 and IFN-λ4-P70 haplotypes are the same or not relative to each other (Materials and methods). We tested five models; the effects of the three haplotypes are identical (model 1), the effects of IFN-λ4-P70 and IFN-λ4-Null are identical and different from the effect of IFN-λ4-S70 (model 2), the effects of IFN-λ4-S70 and IFN-λ4-Null are identical and different from the effect of IFN-λ4-P70 (model 3), all three haplotypes have different effect sizes (model 4) and the effects of IFN-λ4-P70 and IFN-λ4-S70 are the same but different from the effect of IFN-λ4-Null haplotype (model 5). Equal prior probabilities were used for all models. Model 3 had the highest posterior probability of 0.82 (Figure 3b).
 
@@ -144,7 +188,7 @@ There are now multiple studies suggesting that the IFNL3-IFNL4 locus could be a 
 
 ## Materials and methods
 
-## Patient cohorts
+### Patient cohorts
 
 For this study, we used patient data from the BOSON and EAP cohorts that have been described elsewhere (Foster et al., 2015; Foster et al., 2016). All patients provided written informed consent before undertaking any study-related procedures. The BOSON study protocol was approved by each institution’s review board or ethics committee before study initiation. The study was conducted in accordance with the International Conference on Harmonisation Good Clinical Practice Guidelines and the Declaration of Helsinki (clinical trial registration number: NCT01962441). The EAP study conforms to the ethical guidelines of the 1975 Declaration of Helsinki as reflected in a priori approval by the institution’s human research committee. The EAP patients were enrolled by consent into the HCV Research UK registry. Ethics approval for HCV Research UK was given by NRES Committee East Midlands - Derby 1 (Research Ethics Committee reference 11/EM/0314).
 
@@ -154,17 +198,17 @@ To limit the potential impact of population structure, we restricted the analysi
 
 The majority of the patients from the BOSON cohort have no or mild liver disease (compensated liver cirrhosis). The EAP cohort on the other hand consists of HCV-infected patients with advanced liver disease, the majority of whom had decompensated cirrhosis.
 
-## Host genotyping and imputation
+### Host genotyping and imputation
 
 Informed consent for genetic analysis was obtained from all patients. Genomic DNA was extracted from buffy coat using Maxwell RSC Buffy Coat DNA Kit (Promega) as per the manufacturer's protocol and quantified using Qubit (Thermofisher). DNA samples from patients were genotyped using the Affymetrix UK Biobank array, as described elsewhere (Ansari et al., 2017). Phasing and imputation was performed using SHAPEIT2 (Delaneau et al., 2013)Dao Thi et al., 2011 and IMPUTE2 (Howie et al., 2009) version 2.3.1 using default settings and the 1000 Genomes Phase III dataset as a reference population (Auton et al., 2015). Imputation quality was high for both rs117648444 and rs368234815 variants (information 0.974 and 0.994 respectively and certainty 0.995 and 0.997 respectively). Patients from the EAP cohort from whom enough DNA was available (62/74) were also independently genotyped for both rs117648444 and rs368234815 variants. Genotyping of IFNL4 rs368234815 and rs117648444 was performed on DNA using the TaqMan SNP genotyping assay and sequences described previously (Prokunina-Olsson et al., 2013) with Type‐it Fast SNP Probe PCR Master Mix (Qiagen). The concordance between genotyped and imputed genotypes was 100% for both variants.
 
-## Virus sequencing
+### Virus sequencing
 
 The generation and assembly of viral sequences from HCV-infected clinical samples for the BOSON and EAP cohorts have been described previously (Ansari et al., 2017; Singer et al., 2019).
 
-## Statistical analysis
+### Statistical analysis
 
-## Human and viral population structure
+#### Human and viral population structure
 
 For the viral data, principal component analysis (PCA) was performed on the nucleotide data as follows. The presence and absence of each viral nucleotide at all variable sites in the alignment was coded as a binary variable such that a bi-allelic site on the viral genome was converted into two binary variables (one for each nucleotide), a tri-allelic site into three binary variables and a quad-allelic site into four binary variables. R (version 3.4.3, https://www.r-project.org) was then used to perform the PCA using the prcomp function with default settings. PCA was performed using flashpca (Abraham and Inouye, 2014) for human genotype data.
 
@@ -172,7 +216,7 @@ Whole-genome viral consensus sequences for each patient were aligned using MAFFT
 
 We used treeBreaker software (Ansari and Didelot, 2016) (https://github.com/ansariazim/treeBreaker) to measure the association between the virus phylogenetic tree and the host IFNL4 SNP (CC vs. non-CC) and with the cohort from which the viral sequence was obtained (BOSON vs. EAP). This software uses a Bayesian model to infer whether the phenotype of interest is randomly distributed on the tips of the tree and to estimate which clades, if any, have a distinct distribution of the phenotype of interest from the rest of the tree. This software also performs Bayesian model comparison. It provides a Bayes factor for the alternative model (there is at least one or more branches with distinct distribution of the phenotype of interest) to the null model (there are no branches with distinct phenotype distribution on the tree). Bayes factor is a summary of the evidence provided by the data in favour of one model compared to another. In other words, the higher the Bayes factor, the more support there is for one model against another. Assuming that we are testing an alternative model against a null model, it has been suggested that the Bayes factor can be divided into four categories (Kass and Raftery, 1995). Bayes factor: 1 to 3.2, very little evidence against the null model. Bayes factor: 3.2 to 10, substantial evidence against null model and in favour of the alternative model. Bayes factor: 10 to 100, strong evidence against null model and in favour of the alternative model. Bayes factor:>100, decisive evidence against null model and in favour of the alternative model.
 
-## Association tests
+#### Association tests
 
 The univariate association between the IFNL4 SNP rs12979860 (CC vs. non-CC) and the viral PCs was tested using logistic regression in R. We used the qvalue function from the qvalue package in R to perform the FDR analysis.
 
@@ -182,15 +226,15 @@ To test for association between the virus amino acids and the host SNPs we used 
 
 To test for enrichment or depletion of the association signals in a viral protein or the epitope regions, we used Fisher’s exact test. Each tested site is either within the target region or not and it is either classified as significant or not. The resulting 2 × 2 contingency table was tested using fisher.test function in R.
 
-## Codon level analysis
+#### Codon level analysis
 
 To separate the impact of the IFNL4 SNP rs12979860 on amino acids from nucleotides we investigated the nucleotide sequences at the codon level. At each codon site (where the most common codon had at least 20 synonymous and 20 non-synonymous codons) we used logistic regression to test for association between IFNL4 SNP rs12979860 (CC vs. non-CC) and the changes from the most common codon to synonymous and non-synonymous codons. The IFNL4 SNP rs12979860 was denoted as the response variable and the codons were used as a categorical explanatory variable with three levels. The effect sizes (log(OR)) and P-values were estimated for the synonymous and non-synonymous codons relative to the most common codon. We included the first two viral PCs and the first three host PCs as covariates in this analysis.
 
-## Di-nucleotides analysis
+#### Di-nucleotides analysis
 
 To estimate the viral dinucleotide frequencies, the observed proportion of each dinucleotide was normalised by its expected proportion (assuming the nucleotides are independent the expected proportion can be calculated by multiplying the observed proportions for the relevant nucleotides). To test for association with IFNL4 SNP rs12979860 genotype we used a linear regression where the normalised dinucleotide proportions were used as the response variable and the IFNL4 SNP rs12979860 genotype as a categorical explanatory variable. We included the first two viral PCs and the first three host PCs as covariates.
 
-## Effect of the three IFN-λ4 protein variants
+#### Effect of the three IFN-λ4 protein variants
 
 To estimate the effect of the IFN-λ4 protein variants on the encoded HCV amino acids, we used the 76 sites associated with IFNL4 SNP rs12979860 at a 10% FDR. HCV-infected patients were classified into three groups according to their predicted ability to produce IFN-λ4 protein: (i) no IFN-λ4 (two allelic copies of IFN-λ4-Null, NBOSON = 145, NEAP = 41), (ii) IFN-λ4–S70 (two copies of IFN-λ4-S70 or one copy of IFN-λ4-S70 and one copy of IFN-λ4-Null, NBOSON = 48, NEAP = 7), and (iii) IFN-λ4-P70 (at least one copy of IFN-λ4-P70, NBOSON = 218, NEAP = 26). We then used logistic regression to estimate the effect sizes (log(OR)) for IFN-λ4-P70 and IFN-λ4-S70 on the virus amino acids relative to IFN-λ4-Null. The presence and absence of the reported viral amino acid was used as the response variable and the host IFN-λ4 status was used as the explanatory variable with the IFN-λ4-Null used as the base level and the log(OR) for IFN-λ4-P70 and IFN-λ4-S70 were estimated relative to the IFN-λ4-Null base level. We included the first two viral PCs and the first three host PCs as covariates to account for host-virus populations co-structuring.
 
@@ -200,6 +244,6 @@ To assess whether the mean viral load was different in the three patient groups 
 
 To assess the evidence for interaction between host IFN-λ4 variants and viral amino acid site 2414, we used the same Bayesian framework detailed above. The patients were grouped into six categories based on the host IFN-λ4 variants and the presence or absence of serine at viral site 2414. We standardised the log10(viral load) so that it had a mean of zero and standard deviation of one. We used linear regression to get maximum likelihood estimates of the effects of ‘IFN-λ4-Null + 2414 not serine’, ‘IFN-λ4-P70 + 2414 not serine’, ‘IFN-λ4-P70 + 2414 serine’, ‘IFN-λ4-S70 + 2414 not serine’, ‘IFN-λ4-S70 + 2414 serine’ groups relative to the ‘IFN-λ4-Null + 2414 serine’ group. The estimates were adjusted for cirrhosis status and population structure including the first two viral PCs and the first three host PCs in the regression as covariates. The prior covariance matrix determined the prior model assumptions. The elements of the covariance matrix were chosen such that the relevant prior model was set (see Appendix 1 for details).
 
-## Materials and correspondence
+### Materials and correspondence
 
 Correspondence and material requests should be addressed by contacting STOP-HCV http://www.stop-hcv.ox.ac.uk/contact.

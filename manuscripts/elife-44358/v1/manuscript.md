@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.44358.001 The light environment greatly impacts human alertness, mood, and cognition by both acute regulation of physiology and indirect alignment of circadian rhythms. These processes require the melanopsin-expressing intrinsically photosensitive retinal ganglion cells (ipRGCs), but the relevant downstream brain areas involved remain elusive. ipRGCs project widely in the brain, including to the central circadian pacemaker, the suprachiasmatic nucleus (SCN). Here we show that body temperature and sleep responses to acute light exposure are absent after genetic ablation of all ipRGCs except a subpopulation that projects to the SCN. Furthermore, by chemogenetic activation of the ipRGCs that avoid the SCN, we show that these cells are sufficient for acute changes in body temperature. Our results challenge the idea that the SCN is a major relay for the acute effects of light on non-image forming behaviors and identify the sensory cells that initiate light’s profound effects on body temperature and sleep.
+The light environment greatly impacts human alertness, mood, and cognition by both acute regulation of physiology and indirect alignment of circadian rhythms. These processes require the melanopsin-expressing intrinsically photosensitive retinal ganglion cells (ipRGCs), but the relevant downstream brain areas involved remain elusive. ipRGCs project widely in the brain, including to the central circadian pacemaker, the suprachiasmatic nucleus (SCN). Here we show that body temperature and sleep responses to acute light exposure are absent after genetic ablation of all ipRGCs except a subpopulation that projects to the SCN. Furthermore, by chemogenetic activation of the ipRGCs that avoid the SCN, we show that these cells are sufficient for acute changes in body temperature. Our results challenge the idea that the SCN is a major relay for the acute effects of light on non-image forming behaviors and identify the sensory cells that initiate light’s profound effects on body temperature and sleep.
 
 ## Introduction
 
@@ -37,9 +37,21 @@ It is currently unknown whether distinct ipRGC subpopulations mediate both the a
 
 ## Results
 
-## Brn3b-positive ipRGCs are required for light’s acute effects on thermoregulation
+### Brn3b-positive ipRGCs are required for light’s acute effects on thermoregulation
 
 To identify mechanisms of acute thermoregulation, we maintained mice on a 12 hr/12 hr light/dark cycle and then presented a 3 hr light pulse two hours into the night (Zeitgeber time 14, ZT14) while measuring core body temperature (Figure 1A). The nocturnal light pulse paradigm is well-established for studying acute regulation of sleep and wheel-running activity (Mrosovsky et al., 1999; Mrosovsky and Hattar, 2003; Altimus et al., 2008; Lupi et al., 2008). We focused first on body temperature because of its critical role in cognition and alertness (Wright et al., 2002; Darwent et al., 2010), sleep induction and quality (Kräuchi et al., 1999), metabolic control (Kooijman et al., 2015), and circadian resetting (Buhr et al., 2010).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig1-v1.jpg)
+
+**Figure 1.:** (A) Paradigm to measure body temperature continuously in a 12:12 light dark cycle with a 3 hr light pulse at ZT14. (B) 48 hr of continuous body temperature monitoring in wildtype male mice (n = 13) (C) Relative body temperature in WT during light pulse, compared to baseline (ZT14). p<0.001, paired t-test of mean temperature compared to previous night. (D) Melanopsin-only mice (Gnat1-/-; Gnat2-/-, n = 11) and (E) melanopsin knockout (Opn4-/-, n = 6) 48 hr diurnal body temperature. (F) Diurnal body temperature amplitude in the three groups. p>0.347 for effect of group by one-way ANOVA. (G) Body temperature in melanopsin-only during light pulse, relative to baseline (ZT14). (H) Paired comparison of mean body temperature during light pulse compared to previous night. p<0.001 by paired t-test. (I) Body temperature in melanopsin knockout during light pulse, relative to baseline (ZT14). (J) Paired comparison of mean body temperature during light pulse compared to previous night. All summarized data are mean ± standard deviation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental paradigm consisting of a 12 hr/12 hr light/dark cycle with a single 3 hr light pulse starting at Zeitgeber time (ZT) 14 (i.e. 2 hr after lights-off). Each experimental night, a light pulse was given at a specific environmental light intensity ranging from 1 to 1000 lux in log10 increments. (B) Mean body temperature for wildtype mice (n = 4) that were administered a light pulse at ZT14 of varying intensity (shown as shades of gray). Robust thermoregulation by light only occurs at bright intensities. Black and white bars on the x axis refer to time of lights-off and lights-on. (C) Quantification of the mean body temperature during the 3 hr light pulse for the wildtype mice in B) (n = 4, mean ± SD) fit with a smooth regression curve (LOESS). There is a statistically significant effect of light intensity on body temperature (p<0.001), as determined by a linear mixed model with fixed effect of light intensity and random effect of mouse.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Relative change from ZT14 in mean body temperature in Wildtype (n = 15), Melanopsin-only (Gnat1-/-;Gnat2-/-, n = 11) or Melanopsin KO (Opn4-/-, n = 6) for the 3 hr during the light pulse (Light) or during the previous control night (Ctrl; ZT14–17). Columns and error bars represent mean ± standard deviation and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.
 
 Body temperature photoentrains to the light/dark cycle with peaks during the night and troughs during the day (Figure 1B). Both rodents and humans utilize ocular light detection to acutely adjust body temperature in response to a nocturnal light pulse (Dijk et al., 1991; Cajochen et al., 2005), though how this body temperature change is initiated by the retina and relayed to the brain is unknown. When we presented wildtype mice with a nocturnal light pulse, we observed a decrease in both body temperature and general activity compared to the previous night (Figure 1C). The decrease in body temperature and activity was sustained for the entire 3 hr stimulus, with moderate rundown (Figure 1C).
 
@@ -49,15 +61,51 @@ ipRGCs comprise multiple subtypes (M1-M6) with distinct gene expression profiles
 
 When we measured body temperature in Brn3b-DTA mice, we found that their body temperature was photoentrained with a similar amplitude to controls (Figure 2A–C). However, despite the presence of melanopsin in the Brn3b(-) ipRGCs of Brn3b-DTA mice (Opn4Cre/+;Brn3bzDTA/+), they did not acutely decrease body temperature in response to a nocturnal light pulse (Figure 2F,G). Importantly, melanopsin heterozygous littermate controls (Opn4Cre/+) displayed normal acute thermoregulation by light (Figure 2D,E), indicating that halving melanopsin gene dosage is not the cause of the impaired body temperature decrease in Brn3b-DTA mice. Additionally, when we compared the change in body temperature of Control to Brn3b-DTA mice during that light pulse, we found that Control mice showed a significantly larger decrease in body temperature (Figure 2—figure supplement 1). These results demonstrate that Brn3b(+) ipRGCs are required for acute thermoregulation by light but not photoentrainment of body temperature and reveal that light information to the SCN is sufficient for circadian photoentrainment of body temperature, but not its acute regulation.
 
-## Brn3b-positive ipRGCs are sufficient for acute thermoregulation
+![Figure 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig2-v1.jpg)
+
+**Figure 2.:** (A) Diurnal body temperature in control (Opn4Cre/+, n = 9) and (B) Brn3b-DTA (Opn4Cre/+;Brn3bDTA/+, n = 7). (C) Diurnal body temperature amplitude in the two groups. p=0.223 by t-test. (D) Body temperature in control during light pulse, relative to baseline (ZT14). (E) Paired comparison of mean body temperature during light pulse compared to previous night. p=0.001 by paired t-test. (F) Body temperature in Brn3b-DTA during light pulse, relative to baseline (ZT14). (G) Paired comparison of mean body temperature during light pulse compared to previous night. p=0.287 by paired t-test. All summarized data are mean ± standard deviation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Relative change from ZT14 in mean body temperature in Control (Opn4Cre/+, n = 9) or Brn3b-DTA mice (Opn4Cre/+;Brn3bzDTA/+, n = 7) for the 3 hr during the light pulse (Light) or during the previous control night (Ctrl; ZT14-17). Columns and error bars represent mean ± standard deviation and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.
+
+### Brn3b-positive ipRGCs are sufficient for acute thermoregulation
 
 Our data thus far suggest that there are two functionally distinct populations of ipRGCs that regulate thermoregulation: (1) Brn3b(–) ipRGCs that project to the SCN to mediate circadian photoentrainment of body temperature and (2) Brn3b(+) ipRGCs that project elsewhere in the brain and are necessary to mediate acute thermoregulation. If Brn3b(+) ipRGCs are not just necessary, but also sufficient, for acute thermoregulation, then activation of this population at ZT14 should result in a body temperature decrease. To test if Brn3b(+) ipRGCs are sufficient for acute thermoregulation, we expressed a chemogenetic activator in Brn3b(+) RGCs (Figure 3A, Brn3bCre/+ with intravitreal AAV2-hSyn-DIO-hM3Dq-mCherry, we refer to these mice as Brn3b-hM3Dq). As a control, we also injected this virus into Control (Brn3b+/+) littermates. We then injected both genotypes first with PBS at ZT14 on the first night, and CNO at ZT14 on the second night. This technique allowed for statistical within animal comparisons of body temperature changes in response to PBS versus CNO injection. Importantly, CNO did not cause a significant decrease in body temperature in the absence of hM3Dq (Figure 3—figure supplement 1). This technique allowed us to acutely activate the Brn3b(+) RGCs with the DREADD agonist clozapine N-oxide (CNO) (Armbruster et al., 2007). We found that after intravitreal viral delivery, many RGCs were infected, including melanopsin-expressing ipRGCs (Figure 3A and Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig3-v1.jpg)
+
+**Figure 3.:** (A) Diagram of intravitreal delivery of AAV2-hSyn-DIO-hM3Dq-mCherry to Brn3bCre/+ mice, and confirmation of infection of ipRGCs. (B) 54 hr continuous diurnal body temperature recordings in Brn3b-hM3Dq mice, with injections of PBS then CNO on consecutive nights at ZT14. (C) Change in body temperature after PBS injection, relative to baseline (time of injection). (D) Change in body temperature after CNO injection, relative to baseline (time of injection). (E) Paired comparison of the change in body temperature with either PBS or CNO injection, compared to temperature at injection time. p=0.002 by paired t-test. All summarized data are mean ± standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) mCherry expression (magenta) from Brn3b-Cre with AAV-DIO-hM3D(Gq)-mCherry injected in to the retina and colocalized with melanopsin (OPN4, green). Scale bar = 50 µm. (B) Quantification of mCherry/OPN4 colocalization (n = 3) mice. (C) The same data as in B, expressed as the fraction of OPN4 +cells that colocalize with mCherry expression (n = 3 mice). (D) Relative change in mean body temperature in Control (n = 9) or Brn3b-Cre mice (n = 8) injected with AAV-DIO-hM3D(Gq)-mCherry for the 6 hr following PBS or CNO injection, compared to temperature at injection time. Columns and error bars represent mean ± standard deviation and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Body temperature of wildtype mice (n = 9) was monitored continuously and PBS was injected on night one at ZT14, followed by CNO injection (1 mg/kg) on night two at ZT14. (B,C) Normalized body temperature of either (B) PBS or (C) CNO injection, relative to baseline temperature prior to injection. Both injections generate a rapid body temperature increase, followed by a dip below the reference value, before returning to normal. (D) Paired comparisons of body temperature changes in response to either PBS or CNO administration, relative to temperature at baseline. All summarized data are mean ± standard deviation.
+
 The body temperature of Brn3b-hM3Dq mice photoentrained to a normal light/dark cycle (Figure 3B). Following CNO administration to Brn3b-hM3Dq mice at ZT14 to depolarize Brn3b(+) RGCs, we observed a robust decrease in body temperature that lasted at least 6 hr (Figure 3D). Importantly, PBS administration in Brn3b-hM3Dq mice (Figure 3C) and nocturnal CNO administration in wildtype control mice (Figure 3—figure supplement 2) had no measurable effect on body temperature, while CNO administration significantly decreased body temperature in Brn3b-hM3Dq compared to pre-injection temperature (Figure 3—figure supplement 2). Together, these results demonstrate that Brn3b(+) ipRGCs mediate the acute effects of light on body temperature though extra-SCN projection(s), while Brn3b(–) ipRGCs mediate circadian photoentrainment of body temperature by projections to the SCN and/or IGL.
 
-## Brn3b-positive ipRGCs are required for light’s acute effects on sleep
+### Brn3b-positive ipRGCs are required for light’s acute effects on sleep
 
 We next examined the contribution of Brn3b(+) and Brn3b(-) ipRGCs to sleep. To do this, we used EEG and EMG recordings to compare the sleep behavior of Control (Opn4Cre/+) and Brn3b-DTA mice. We first analyzed the daily sleep patterns and proportion of rapid eye movement (REM) and non-REM (NREM) sleep in Control and littermate Brn3b-DTA animals. We found that Brn3b-DTA mice show normal photoentrainment of sleep and similar percent time of sleep across the 24 hour day, with only one 30 min bin at ZT12 (light offset) showing a significant difference between Control and Brn3b-DTA animals (Figure 4A,B). This is consistent with previous reports of normal circadian photoentrainment of daily activity rhythms in Brn3b-DTA mice (Chen et al., 2011). Control and Brn3b-DTA mice also showed similar total percent time awake or asleep across an entire day (Figure 4C), though Brn3b-DTA mice showed a small, but significant, increase in the proportion of total sleep that was classified as NREM and decrease in the proportion of total sleep that was classified as REM (Figure 4—figure supplement 1A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) Percent time spent asleep in 1 hr bins across the 24 hr day for (A) Control (black) mice (n = 14) and (B) Brn3b-DTA (blue) mice (n = 13) lacking Brn3b-positive ipRGCs. Both lines showed normal photoentrainment of sleep, with no main effect of genotype compared to Control by repeated-measures two-way ANOVA (F (1, 25)=1.108, p=0.303). Brn3b-DTA mice showed a significant reduction in sleep only at lights off (ZT 12) by Sidak’s multiple comparisons test (p=0.029). (C) Percent time spent awake and asleep in Control (black) and Brn3b-DTA mice (blue). No differences were observed between genotypes by t-test (p=0.316). (D–G) Percent time spent asleep for (D) Control mice (black) and (F) Brn3b-DTA mice (blue) at baseline (dark line) and during the three hour light pulse (light line). Significant difference from baseline determined by repeated measures two-way ANOVA. Significant effect of treatment for Controls (F (1, 13)=38.09, p<0.001), but not for Brn3b-DTA (F (1, 12)=0.8496, p=0.375). (E) Control mice show significantly more sleep and less wake during a light pulse (paired t-test) while (G) Brn3b-DTA mice showed no change in percent sleep or wake during the same period. Data are mean for ZT14–17. All summarized data are mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Percent sleep recorded across the 24 hour day as NREM vs. REM in Control (black) and Brn3b-DTA mice (blue). Brn3b-DTA mice showed a small but significant increase in NREM and decrease in REM sleep compared to Control mice. REM: rapid eye movement, NREM: non-REM. Control: n = 14. Brn3b-DTA: n = 13. *p=0.011 by t-test. (B, C) Sleep stage quantification during ZT14-17, either baseline night or light pulse. No significant differences were seen in either (B) Control or (C) Brn3b-DTA mice by paired t-test. All summarized data are mean ± SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Relative change in sleep time in Control (Opn4Cre/+, n = 14) or Brn3b-DTA mice (Opn4Cre/+;Brn3bzDTA/+, n = 13) for the 3 hr during the light pulse or during the previous control night (ZT14-17). Columns and errorbars represent mean ± SEM and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Control (Opn4Cre/+, n = 5) and (B) Brn3b-DTA (Opn4Cre/+;Brn3bDTA/+, n = 6) were housed in a 12:12 LD cycle and subjected to a 3 hr light pulse starting at ZT14. (C) Activity counts in 30 min bins for both groups. Wheel revolutions were normalized to the average activity for the 1 hr preceding the light pulse. Shading represents SEM. While both groups display robust wheel-running inhibition in response to the light pulse, Brn3b-DTA mice had a mild deficit compared to Controls (p=0.039 by linear mixed model).
 
 We hypothesized that this small difference in sleep at lights-off in Brn3b-DTA mice could be due to a defect in their acute response to light for sleep modulation. To test this, we subjected mice to a 3 hr light pulse from ZT14–17 (Altimus et al., 2008), when the homeostatic drive for sleep is low and Control and Brn3b-DTA animals display similar amounts of sleep (Figure 4A,B). We found that in Control mice, a light pulse decreased time awake and increased time asleep relative to baseline (previous day) (Figure 4C,D), while in Brn3b-DTA mice a light pulse caused no change in total percent time asleep or awake (Figure 4F,G), but moderately increased sleep in the first 30 min bin (Figure 4F). Importantly, when we compared the time spent asleep during the light pulse between control and Brn3b-DTA animals, the control mice slept significantly more (Figure 4—figure supplement 2). Neither Control nor Brn3b-DTA animals showed any change in proportion of non-REM or REM sleep in response to the light pulse (Figure 4—figure supplement 1B,C). These data show that Brn3b(+) ipRGCs are necessary for the acute light induction of sleep. Consistent with our body temperature data, although Brn3b-DTA mice have apparently normal input to the SCN and show normal circadian photoentrainment of wheel-running activity (Chen et al., 2011), body temperature (Figure 2), and sleep (Figure 4), this ipRGC innervation of the SCN is not sufficient to drive the normal light induction of sleep. These disruptions in light’s acute effects on thermoregulation and sleep are circuit specific effects because Brn3b-DTA mice showed robust inhibition of wheel running behavior to a 3 hr light pulse delivered from ZT14-17 (Figure 4—figure supplement 3).
 
@@ -79,11 +127,99 @@ Together, our identification of the photopigment and the retinal circuits mediat
 
 ## Materials and methods
 
-## Animals (body temperature)
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Opn4tauLacZ</td>
+      <td>Hattar et al., 2002</td>
+      <td>Jax: 021153 RRID:MGI:5520170</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gnat1-/-</td>
+      <td>PMID: 11095744</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gnat2Cpfl3</td>
+      <td>PMID: 17065522</td>
+      <td>Jax: 006795</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Opn4Cre</td>
+      <td>Ecker et al., 2010</td>
+      <td>RRID:MGI:5285910</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Brn3bzDTA</td>
+      <td>Chen et al., 2011</td>
+      <td>RRID:MGI:5285910</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Brn3bCre</td>
+      <td>PMID: 24608965</td>
+      <td>RRID:IMSR_JAX:030357</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-OPN4 (rabbit polyclonal)</td>
+      <td>Advanced Targeting Systems</td>
+      <td>AB-N38 (1:1000) RRID:AB_1608077</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 488, anti-rabbit (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>A-11008 (1:1000) RRID:AB_143165</td>
+    </tr>
+    <tr>
+      <td>Viral reagent</td>
+      <td>AAV2-hSyn-DIO-hM3Dq-mCherry</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozpine-N-oxide</td>
+      <td>Sigma</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>R 3.5.2</td>
+      <td>https://cran.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Graphpad Prism 7.0</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals (body temperature)
 
 All procedures were conducted in accordance with NIH guidelines and approved by the Institutional Animal Care and Use Committee of Johns Hopkins University. All mice were maintained on a mixed C57Bl/6J; 129Sv/J background and kept on ad libitum food and water under a 12 hr/12 hr light/dark cycle in group housing until experimentation, with temperature and humidity control. Male and female mice between the ages of 2 and 6 months were used for analysis.
 
-## Body temperature recordings
+### Body temperature recordings
 
 Each mouse was single-housed at the time of experiment. Surgery was conducted under tribromoethanol (Avertin) anestheshia and a telemetric probe (Starr G2 E-Mitter) was implanted in the peritoneal cavity to monitor core body temperature and general activity. Data were collected in continuous 1- or 2 min bins using VitalVIEW software and analyzed in Microsoft Excel. All experiments were conducted at least 10 days after surgery. Lights were controlled by a programmable timer and all lights were 6500K CFL bulbs illuminated each cage at ~500 lux. Light intensity (Figure 1—figure supplement 1) was modulated using neutral density filters (Roscolux).
 
@@ -93,26 +229,26 @@ Diurnal amplitude was measured by subtracting the mean body temperature for the 
 
 Clozapine-N-oxide (Sigma) was prepared as a 0.1 mg/ml solution in PBS and injected at 1 mg/kg intraperitoneally at ZT14.
 
-## Animals (Sleep)
+### Animals (Sleep)
 
 All procedures were conducted in accordance with NIH guidelines and approved by the Institutional Animal Care and Use Committee of Northwestern University. Opn4Cre and Brn3bz-dta were maintained on a mixed C57Bl/6J; 129Sv/J background (Hattar et al., 2002; Hattar et al., 2006; Mu et al., 2005). Male and female littermate Opn4Cre/+ and Opn4Cre/+; Brn3bz-dta/+ animals between the ages of 2 and 3 months were used for sleep analysis.
 
-## Sleep recording
+### Sleep recording
 
 Male and female littermate Opn4Cre/+ and Opn4Cre/+; Brn3bz-dta/+ mice were used for sleep recordings. Electroencephalogram (EEG) and electromyogram (EMG) electrode implantation was performed simultaneously at 8 weeks of age. Mice were anesthetized with a ketamine/xylazine (98 and10 mg/kg respectively) and a 2-channel EEG and 1-channel EMG implant (Pinnacle Technology) was affixed to the skull. Mice were transferred to the sleep-recording cage 6 days after surgery, tethered with a preamplifier, and allowed 3 days to acclimate to the new cage and tether. Mice were housed in 12:12 light/dark conditions before and after EEG implantation. EEG and EMG recording began simultaneously at the end of the habituation period, which were displayed on a monitor and stored in a computer for analysis of sleep states. The high pass filter setting for both EEG channels was set at 0.5 Hz and low pass filtering was set at 100 Hz. EMG signals were high pass filtered at 10 Hz and subjected to a 100 Hz low pass cutoff. EEG and EMG recordings were collected in PAL 8200 sleep recording software (Pinnacle Technology) and scored, using a previously described, multiple classifier, automatic sleep scoring system, into 10 s epochs as wakefulness, NREM sleep, or REM sleep on the basis of rodent sleep criteria (Gao et al., 2016). Light source for all sleep experiments was a 3000 Kelvin light source at 500 lux.
 
-## Wheel-running activity and masking experiment
+### Wheel-running activity and masking experiment
 
 Mice were placed in cages with a 4.5-inch running wheel, and their activity was monitored with VitalView software (MiniMitter). Analyses of wheel running activity were calculated with ClockLab (Actimetrics). We used 500 lux light intensity. Mice were initially placed under 12:12 LD masking experiments. Mice were exposed, in their home cage, to a timer-controlled 3 hr light pulse at ZT14-ZT17. Percent activity for each mouse was normalized to its own activity at ZT13 (1 hr before light pulse), and analyzed in 30 min bins.
 
-## Tissue staining and imaging
+### Tissue staining and imaging
 
 Animals were anesthetized with Avertin and euthanized prior to fresh dissection of retinas in PBS. Retinas were fixed in 4% paraformaldehyde (Sigma) for at least 1 hr on ice. Retinas were then washed in PBS before staining overnight in anti-OPN4 antibody (1:1000, Advanced Targeting Systems) and then washed prior to 2 hr in secondary antibody (1:1000 goat anti-rabbit AlexaFluor 488, Life Technologies). Retinas were then flat-mounted on slides and imaged on a Zeiss LSM 710 confocal microscope.
 
-## Statistics
+### Statistics
 
 All statistical tests were performed in Graphpad Prism or R 3.4.4. Specific tests are listed in the text and figure legends. Linear mixed models were performed with the R packages lme4 1.1–21 and emmeans 1.3.4.
 
-## Data availability
+### Data availability
 
 All raw data are linked to this manuscript and available online.

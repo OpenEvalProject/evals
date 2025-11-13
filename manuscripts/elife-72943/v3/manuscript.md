@@ -46,11 +46,21 @@ Altogether, these data provide evidence of a new pivotal role for LDs in cancer 
 
 ## Results
 
-## X-ray radiation treatment enhances LDs
+### X-ray radiation treatment enhances LDs
 
 To verify whether LD content was affected by ionizing radiation treatment, H4 (neuroglioma), H460 (lung), MCF7 (breast), PC3 (prostate), and T24 (bladder) cancer cells were treated with 6 Gy X-ray and left in culture for 72 hours (hrs) in order to select only surviving and resistant cells. Treated and untreated cancer cells were stained with LD540 and imaged at the confocal microscope for the detection of LDs.
 
 As shown by z-projection confocal microscopy images, surviving cancer cells were characterized by a significant increase of LDs for all the aforementioned cell lines (Figure 1A). Although the LD increase was a common feature observed in all cell lines, the relative LD ratio between treated and untreated cells showed little differences, with H460 exhibiting the highest amount (Figure 1B). LD modulation after radiation was further investigated at the gene level. Perilipin (PLIN) genes code for the proteins associated with LD surface and they are involved in their biogenesis as well as in several other roles (Kimmel and Sztalryd, 2016). Differences in tissue expression have been reported for all the PLIN genes (PLIN 1–5). Accordingly, we observed that, after 6 Gy radiation treatment, PLIN1 was upregulated in H460, MCF7, PC3, and T24; PLIN2 was downregulated in H460; PLIN3 showed mRNA increased expression in H4 and MCF7; PLIN4 expression was incremented in MCF7 and T24; PLIN5 resulted downregulated in MCF7 and upregulated in PC3 and T24.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig1-v3.jpg)
+
+**Figure 1.:** Cancer cells have been irradiated with 6 Gy X-ray and left in culture for 72 hrs. Afterwards, surviving and untreated cells have been stained with LD540 and imaged at the fluorescence confocal microscope. Z-projection of the z-stack acquisitions for untreated and 6 Gy treated cells are reported in column (A) (Scale bar, 20 μM). (B) For each cell line, 50 cells have been randomly imaged, and their LD number counted by using FiJi software. (C) qPCR analysis of the PLIN genes in the indicated cell lines. PLIN5 in the H4 6 Gy treated cells is not reported in the graph because it was not expressed. Error bars represent the means ± SD from three independent experiments. *≤0.05; **≤0.01; ***≤0.001, and ****≤0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig1-figsupp2-v3.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig1-figsupp3-v3.jpg)
 
 It is well known that photon radiation acts, at the molecular level, producing reactive oxygen species (ROS) (Schonberg, 2015). In this regard, we found that cytoplasmatic ROS, measured by means of fluorogenic CM-H2DCFDA probe, were significantly upregulated in H4, H460, MCF7, and PC3, while no differences were detected in T24, after radiation (Figure 1—figure supplement 1A). Moreover, H4, H460, and PC3 showed upregulated levels of SOD1, SOD2, and catalase, respectively. SOD2 mRNA was also upregulated in T24, despite the fact that general ROS levels were not altered 72 hrs after radiation treatment, while SOD expression was downregulated in radiation-treated MCF7. (Figure 1—figure supplement 1B).
 
@@ -58,7 +68,7 @@ In order to deal with this ROS increase, cancer cells need to tune their ROS sca
 
 Previous works reported that ionizing radiation could selectively enrich the cancer cell population of cells with stem-like properties (Ghisolfi et al., 2012; Krause et al., 2017; Woodward et al., 2007). Thus, we have analyzed the expression of some of the most common markers used to identify CSCs. In particular, we found that CD44 was upregulated in 6 Gy treated H4, H460, MCF7 and T24; CD133 mRNA increased in H4 and H460-irradiated cells; CD166 expression was upregulated in MCF7 and T24; ALDH1 was incremented in MCF7. On the contrary, PC3 RR cells did not display significant increase in the expression of such CSC markers (Figure 1—figure supplement 3).
 
-## LDhigh subpopulation retains the highest clonogenic potential
+### LDhigh subpopulation retains the highest clonogenic potential
 
 LD modulation following X-ray treatment raised the question if LD accumulation was a consequence of radiation treatment or if such a feature was already present in some cells within the heterogeneous cancer populations, thus suggesting that LD content could participate in conferring a higher radiation resistance.
 
@@ -68,11 +78,17 @@ To better define the role played by LDs in RR cells and to address the question,
 
 **Figure 2.:** All cancer cell lines were stained with LD540 and then sorted in the 10% highest and lowest LD-containing cells (box up-left). For each cell line, the two LD sub-populations were irradiated at 2, 4, and 6 Gy X-ray and their survival fraction calculated. Survival fractions are reported in log-linear scale. Error bar represents the means ± SD from three independent experiments. *≤0.05; **≤0.01; ***≤0.001, and ****≤0.0001.
 
-## Ferritin heavy chain (FTH1) affects LD accumulation and cell radio-response
+### Ferritin heavy chain (FTH1) affects LD accumulation and cell radio-response
 
 One of the main cellular ROS sources is the Fenton reaction, in which the Fe2+ reacts with hydrogen peroxide (H2O2) to produce Fe3+ and highly reactive radicals, such as the hydroxyl radical (∙OH). Since the Ferritin is the main intracellular iron storage protein, we investigated the FTH1 role in radiation resistance.
 
 We found that FTH1 protein was upregulated in all resistant cell lines after 72 hrs from 6 Gy exposure, as reported in Figure 3A,B. Moreover, H460 and MCF7, sorted on the basis of their LD content, were characterized by an increase in the mRNA level of FTH1 in the LDhigh subpopulation compared to the LDlow cells (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig3-v3.jpg)
+
+**Figure 3.:** (A, B) Wester blotting analysis and quantification of FTH1 expression in MCF7−, H460−, H4−, PC3−, T24- 0 Gy vs 6 Gy X-ray-treated cells. HSC70 was used as a loading control. (C) H460 and MCF7 were sorted in the 10% Highest (H460 LDHigh and MCF7 LDHigh) and Lowest (H460 LDLow and MCF7 LDLow) LD-containing cells and then FTH1 mRNA expression measured by qRT-PCR in all four sub-populations. Primer sequences are listed in Key resource table. (D) H460 and MCF7 were silenced for FTH1 by lentiviral-driven shRNA strategy. PCR results showed that in H460 shFTH1 and MCF shFTH1 there was a clear FTH1 mRNA reduction compared with their relative controls. (E, F) LD content was measured and quantified in H460 shFTH1 and MCF7 shFTH1 by confocal microscopy. LD540 staining revealed that the FTH1 gene silencing caused a LD decrease in both cell systems. (Scale bars 20 μM). (G) Cellular irradiation response in H460 and MCF7 silenced for FTH1 was investigated by radiobiological clonogenic assay and compared with H460 shRNA and MCF7 shRNA, respectively. Survival fraction (in log-linear scale) is reported in (G). Error bar represents the means ± SD from three independent experiments. *≤0.05; **≤0.01; ***≤0.001, and ****≤0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig3-figsupp1-v3.jpg)
 
 To better clarify this link, FTH1 silencing in H460 and MCF7 (H460shFTH1 and MCF7shFTH1), the efficiency of which is shown in Figure 3D, was performed. FTH1 silencing resulted in influencing cell ability to deal with free cytoplasmic iron, as demonstrated by the downregulation of Transferrin Receptor 1 (TfR1) mRNA and the upregulation of Ferroportin (FPN) mRNA, all involved in proper iron homeostasis (Figure 3—figure supplement 1A,B).
 
@@ -80,7 +96,7 @@ Interestingly, in FTH1 silenced H460 and MCF7, the amount of FTH1 directly corre
 
 Summarizing, we show that LD content was dependent on the FTH1 expression and thus linked to the free cytoplasmic iron. When the levels of the main protein responsible for iron storage decreased, LDs were also reduced and this significantly impaired cancer RR.
 
-## Iron imbalance as well as FTH1 reconstitution re-establish LD expression and radiation resistance
+### Iron imbalance as well as FTH1 reconstitution re-establish LD expression and radiation resistance
 
 As well known, the FTH1 role is crucial for the iron storage within the cell and the maintenance of the redox homeostasis. When its expression is downregulated, the balance between the iron uptake and release is compromised. By consequence, the free cellular iron amount becomes critical for the correct cellular functions (Wang et al., 2010; Rouault, 2006).
 
@@ -88,7 +104,7 @@ Here we found that this iron imbalance assumed also a central role in the LD acc
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig4-v3.jpg)
 
-**Figure 4.:** (A-B) Western Blotting analysis and quantification of FTH1 expression in MCF7 shFTH1/pcDNA3FTH1 and H460 shFTH1/pcDNA3FTH1. HSC70 was used as loading control. (C) Z-stack representative confocal fluorescence images of LD detection and quantification (D) in MCF7 shFTH1/pcDNA3FTH1 and H460 shFTH1/pcDNA3FTH1 cells and their H460 shFTH1/pcDNA3 and MCF7 shFTH1/pcDNA3 controls. (Scale bars 20 mM). (E) Survival fractions (in log-linear scale) after FTH1 reconstitution in MCF7- and H460- shFTH1 cells. (F) Z-stack representative confocal fluorescence images of LD detection and quantification (G) in MCF7 shFTH1 and H460 shFTH1 treated with DFO (Scale bar 20 mM). (H) Survival curves (in log-linear scale) of FTH1-silenced MCF7 and H460 cells after DFO treatment. F. Error bar represents the means ± SD from three independent experiments. *£ 0.05; **£ 0.01; ***£ 0.001 and ****£ 0.0001.Figure 4—source data 1.Figure 4A.
+**Figure 4.:** (A-B) Western Blotting analysis and quantification of FTH1 expression in MCF7 shFTH1/pcDNA3FTH1 and H460 shFTH1/pcDNA3FTH1. HSC70 was used as loading control. (C) Z-stack representative confocal fluorescence images of LD detection and quantification (D) in MCF7 shFTH1/pcDNA3FTH1 and H460 shFTH1/pcDNA3FTH1 cells and their H460 shFTH1/pcDNA3 and MCF7 shFTH1/pcDNA3 controls. (Scale bars 20 mM). (E) Survival fractions (in log-linear scale) after FTH1 reconstitution in MCF7- and H460- shFTH1 cells. (F) Z-stack representative confocal fluorescence images of LD detection and quantification (G) in MCF7 shFTH1 and H460 shFTH1 treated with DFO (Scale bar 20 mM). (H) Survival curves (in log-linear scale) of FTH1-silenced MCF7 and H460 cells after DFO treatment. F. Error bar represents the means ± SD from three independent experiments. *£ 0.05; **£ 0.01; ***£ 0.001 and ****£ 0.0001.
 
 Moreover, such an overexpression fully restored the LD pool (Figure 4C–D) in both cell lines, which also reacquired a higher RR (Figure 4E).
 
@@ -110,6 +126,10 @@ Previous studies showed a crucial role for FTH1 in cancer aggressiveness. FTH1-s
 
 In this work, we investigated the effects of X-ray radiation on RR cancer cells in order to determine a possible relationship between FTH1 and LDs. We found that surviving cells in all lines showed an upregulation, although at different extents, of FTH1 protein. Moreover, in both MCF7- and H460-LDHigh fractions, FTH1 resulted upregulated as compared to the MCF7- and H460-LDLow counterparts. The link between FTH1 and LDs was further confirmed by the reduction of LD accumulation in FTH1-silenced cells. Moreover, FTH1 downregulation associated with the downregulation of transferrin receptor that mediates extracellular iron uptake and the upregulation of ferroportin, responsible for iron release, indicating that most likely iron levels in FTH1-silenced cells were unbalanced. In such conditions, cells were significantly more sensitive to ionizing radiation than the relative controls. These findings show a strong correlation between FTH1 expression and LD content in radioresistant cells and, indirectly, suggest that unbalanced intracellular availability of iron produced effects on lipid pathways, mainly on LD accumulation. These data were then corroborated by the overexpression of FTH1 protein in silenced H460 and MCF7 cell lines, where we observed a restored LD content together with an increased clonogenic response. Our findings support the idea that the two cell states (LDHigh/FTH1High and LDLow/FTH1Low) (Figure 5) are not irreversible processes, but they are reversible mechanisms where the big player is the cytoplasmic iron pool.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/72943/elife-72943-fig5-v3.jpg)
+
+![Figure 5—figure supplement 1](https://cdn.elifesciences.org/articles/72943/elife-72943-fig5-figsupp1-v3.jpg)
+
 Alteration in FTH1 expression induces changes of intracellular free Fe levels. Excess iron is cytotoxic, mainly because of the production of ROS, and in our study, cells with reduced ability to store iron also showed reduced RR. However, in the absence of adequate levels of FTH1, treatment with an iron chelator was able to reduce the iron excess inside cells, and this caused a significant LD re-accumulation in both FTH1-silenced (MCF7 and H460) cell lines. Once again, re-established LD content and iron storage resulted in increased RR of both cell lines. Therefore, iron homeostasis is strongly correlated with the surviving ability of the RR cells and LDs are important mediators in these processes.
 
 Although the data reported here need to be validated in more physiologically complex systems, they provide novel insights about LD involvement in the RR of cancer cells and show that this feature is common to different tumor cells analyzed in the present study.
@@ -124,7 +144,290 @@ Lastly, a common effort has to be put forth in the identification of robust and 
 
 ## Materials and methods
 
-## Cell cultures and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF-7</td>
+      <td>ATCC</td>
+      <td>Cat# HTB-22 RRID:CVCL_0031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H4</td>
+      <td>ATCC</td>
+      <td>Cat# HTB-148 RRID:CVCL_1239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H460</td>
+      <td>ATCC</td>
+      <td>Cat# HTB-177 RRID:CVCL_0459</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>T24</td>
+      <td>ATCC</td>
+      <td>Cat# HTB-4 RRID:CVCL_0554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>PC3</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1435 RRID:CVCL_0035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-human FTH1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-14416 RRID:AB_2107172</td>
+      <td>WB(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-human HSC70</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-1059 RRID:AB_2120291</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-mouse IgG-HRP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-20550 RRID:AB_631738</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1</td>
+      <td>Addgene (gift from F.S. Costanzo) Di Sanzo et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3</td>
+      <td>Addgene (gift from F.S. Costanzo) Aversa et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CM-H2DCFDA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C6827</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nile Red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# N1142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deferoxaminemesylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin dihydrochloride</td>
+      <td>Acros organics</td>
+      <td>Cat# BP2965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Power SYBR Green PCR Master mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 4367659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LD540</td>
+      <td>Synthetised by Enamine</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 23,225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Pure isolation RNA kit</td>
+      <td>Roche</td>
+      <td>Cat# 11828665001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RT2 First strand Kit (50)</td>
+      <td>Qiagen</td>
+      <td>Cat# 330,404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# L3000075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – GAPDH</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-GCATCCTGGGCTACACTGAG-3' Reverse – 5'-AAAGTGGTCGTTGAGGGCA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – FTH1</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5′-CATCAACCGCCAGATCAAC-3 Reverse –5′-GATGGCTTTCACCTGCTCAT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – TfR1</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-CTGGTAAACTGGTCCATGCT-3' Reverse – 5'-GTGATTTTCCCTGCTCTGAC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – FPN</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-GGTGTCTGTGTTTCTGGT-3' Reverse – 5'-GTCTAGCATTCTTGTCCAC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – CD24</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5’-CCTGTCAGAGCTGTGTGGAC-3’ Reverse – 5’-GCTGGGTAGAGTGGTGTGT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – CD44</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5’-GGGTTCATAGAAGGGCACGT-3’ Reverse – 5’-GGGAGGTGTTGGATGTGAGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – CD133</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5’-AAGCATTGGCATCTTCTATGG-3’ Reverse – 5‘-AGAGAGTTCGCAAGTCCTTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – CD166</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5‘-CGATGAGGCAGACGAGATAAG-3’ Reverse – 5‘-TAGACGACACCAGCAACAAG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – ALDH1</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5’-AACTGGAATGTGGAGGAGGC-3’ Reverse – 5’-ATGATTTGCTGCACTGGTCC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – PLIN1</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-GACAAGGAAGAGTCAGCCCC-3' Reverse – 5'-GAGAGGGTGTTGGTCAGAGC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – PLIN2</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-ACAGGGGTGATGGACAAGAC-3' Reverse – 5'-ATCATCCGACTCCCCAAGAC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – PLIN3</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-CACCATGTTCCGGGACATTG-3' Reverse – 5'-GCACCTGGTCCTTCACATTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – PLIN4</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5’- GTTCCAGGACCACAGACA-3’ Reverse – 5’CCTACACTGAGCACATCC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – PLIN5</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-GATCACTTCCTGCCCATGAC-3' Reverse – 5'-GCTGTCTCCTCTGATCCTCC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – SOD1</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-GCAGATGACTTGGGCAAAGG-3' Reverse – 5'-TGGGCGATCCCAATTACACC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – SOD2</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-CTGGAACCTCACATCAACGC-3' Reverse – 5'-CCTGGTACTTCTCCTCGGTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – GPX1</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5’-CCCAAGCTCATCACCTGGTC-3’ Reverse – 5’-TGTCAATGGTCTGGAAGCGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom-made qPCR primers – Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Forward – 5'-CGTGCTGAATGAGGAACAG-3' Reverse – 5'-GACCGCTTTCTTCTGGATG-3'</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell cultures and transfection
 
 MCF7 human breast adenocarcinoma and H4 neuroglioma cell lines (ATCC) were cultured in DMEM medium (Thermo Fischer Scientific) supplemented with fetal bovine serum (FBS) 10% (Thermo Fischer Scientific), Pen/Strep 1% (Thermo Fischer Scientific). H460 human non-small lung cancer cells (ATCC) were cultured in RPMI 1640 (Thermo Fischer Scientific) medium supplemented with 10% FBS and 1% penicillin–streptomycin (Thermo Fischer Scientific). T24 bladder carcinoma cell line (ATCC) was cultured in McCoy’s medium (Thermo Fischer Scientific) supplemented with FBS 10% (Thermo Fischer Scientific), Pen/Strep 1% (Thermo Fischer Scientific), and Hepes 1% (Thermo Fischer Scientific). PC3 prostate adenocarcinoma cells (ATCC) were cultured in F-12K medium (Thermo Fischer Scientific), supplemented with FBS 10% (Thermo Fischer Scientific) and Pen/Strep 1% (Thermo Fischer Scientific). All these cell lines were maintained at 37°C in a humidified 5% CO2 atmosphere and cultured following ATCC recommendations.
 
@@ -132,13 +435,13 @@ Lentiviral transduced MCF7 and H460 were kindly provided by the laboratory heade
 
 All cell lines used in the manuscript have been authenticated by means of Multiplex human Cell line Authentication (MCA) test and analyzed for mycoplasma contamination by EZ-PCR Mycoplasma Test Kit (Biological Industries).
 
-## Radiation treatment and clonogenic assay
+### Radiation treatment and clonogenic assay
 
 Irradiation has been carried out using a Multi Rad 225kV irradiator. Cells, seeded at a density of 3.5 × 105 and 1.0 × 106 cells for 0 and 6 Gy, respectively, were irradiated with 6 Gy at room temperature and left in culture for 72 hrs in order to get only surviving cells at the end of the culturing time. Fresh medium was replaced every day.
 
 Cell survival was evaluated using a standard colony forming assay. H4 LDHigh and LDLow, H460 LDHigh and LDLow, MCF7 LDHigh and LDLow, PC3 LDHigh and LDLow, T24 LDHigh and LDLow, H460 shRNA, H460 shFTH1, H460 shFTH1+ DFO, H460 shFTH1/pcDNA3, H460 shFTH1/pcDNA3FTH1, MCF7 shRNA, MCF7 shFTH1, MCF7 shFTH1+ DFO, MCF7 shFTH1/pcDNA3, and MCF7 shFTH1/pcDNA3FTH1 populations were collected soon after sorting. Cells were seeded into six-well plates (Corning) at a density of 2 × 102–1 × 104 cells/well, irradiated (2, 4, and 6 Gy single dose) with a Multi Rad 225kV irradiator and incubated for 7–12 days at 37°C in a humidified atmosphere with 5% CO2. Following incubation, colonies were fixed in 100% ethanol and stained using a 0.05% crystal violet solution. Only the colonies with more than 35 cells were counted. Surviving fractions were calculated after correction for plating efficiency of control cells. At least three independent experiments, each in duplicate, have been performed for the above-mentioned cell samples.
 
-## Cell sorting
+### Cell sorting
 
 T24, MCF7, H460, H4, PC3 cell suspensions were washed in phosphate-buffered saline (PBS) (Thermo Fischer Scientific). Cells were then stained with LD540 for 10 min at 37°C in the incubator. The excess of dye was washed away with PBS, and cells were resuspended in sorting buffer (PBS Ca/Mg-free, BSA 0.5%, EDTA 2 mM, and Hepes 15 mM).
 
@@ -146,23 +449,23 @@ Cells were sorted in two populations (LDHigh and LDLow) using a FACSAria Fusion 
 
 All cell sorting experiments have been carried out within 1 hr upon sorting to avoid that sorted cells could start becoming heterogeneous again.
 
-## LD staining
+### LD staining
 
 Depending on the project needs, LD content was assessed by staining cells with two different dyes: LD540 and Nile Red. For FACS measurements, 4 × 105 cells have been harvested, washed with PBS, and then stained with 0.1 μg/mL LD540 or 1/500 (from a saturated stock solution in acetone) Nile Red. Stained cells were analyzed at the FACS Canto II (BD Bioscience). Instead, for the confocal microscopy analysis, 4 × 103 cells have been cultured on a 35 mm Glass Bottom Dishes (MatTek Life Science) and then fixed with PFA 4%. After washing out the PFA, fixed cells were stained with 0.1 μg/mL LD540 and 1 μg/mL Hoechst 33,342 (Thermo Fischer Scientific). Cells were imaged by a Leica SP5 or a Zeiss LSM710 confocal microscope systems.
 
-## ROS staining
+### ROS staining
 
 Intracellular ROS content was measured by freshly prepared chloromethyl dichlorodihydrofluorescein diacetate (CM-H2DCFDA, Thermo Fisher Scientific) dye resuspended in anhydrous dimethyl sulfoxide (Thermo Fisher Scientific). Briefly, 4 × 105 cells were collected and washed three times with PBS Ca+/Mg+-free 1× and soon after incubated with 3.5 μM CM-H2DCFDA in pre-warmed Hank’s balanced salt solution (HBSS, Thermo Fischer Scientific) for 20 min at 37°C, in the dark. The samples were analyzed, after having washed them with PBS, by using a FACSCanto II flow cytometer (BD Biosciences).
 
-## LD and ROS co-staining
+### LD and ROS co-staining
 
 4 × 105 cells were harvested, washed with PBS 1×, and soon after stained with 1/500 (from a saturated stock solution in acetone) of Nile Red for 20 min at 37°C in the dark. Stained cells were washed three times and then incubated with 3.5 μM of CM-H2DFCDA in HBSS for 20 min at 37°C in the dark. After one wash in PBS 1×, cells were analyzed using a FACS Canto II (BD Bioscience).
 
-## Antibodies and western blot analysis
+### Antibodies and western blot analysis
 
 H4 0 and 6 Gy, H460 0 and 6 Gy, MCF7 0 and 6 Gy, PC3 0 and 6 Gy, T24 0 and 6 Gy, MCF7 shRNA, MCF7 shFTH1/pcDNA3, MCF7 shFTH1/pcDNA3FTH1, H460 shRNA, H460 shFTH1/pcDNA3, and H460 shFTH1/pcDNA3FTH1 cells were washed twice with cold PBS and incubated for 20 min with 300 μL of 1× Ripa Buffer (Cell Signaling) additioned with HaltTM Protease Inhibitor Single-Use Cocktail (Thermo Fisher Scientific) and HaltTM Phosphatase Inhibitor Single-Use Cocktail (Thermo Fisher Scientific), both diluted 1:100. Cells were then transferred to tubes and, after centrifugation at 14,000 × g at 4°C for 20 min, the supernatants were collected. Protein concentration was measured by BCA Protein assay kit (Thermo Fisher Scientific) at 562 nm using BSA to produce a standard curve. For protein analysis, 15 μg of whole-cell extracts for each sample were electrophoresed under reducing condition in 10% SDS–polyacrylamide gels and then electrophoretically transferred onto PVDF membrane filters (Bio-Rad Laboratories), using Trans-Blot Turbo Transfer System (Bio-Rad Laboratories, Hercules, CA). In order to prevent the non-specific antibody binding, blots were blocked for 1 hr with BSA blocking buffer, 5% in PBS, with 0.1% Tween-20 (TWEEN 20 Bio-Rad Laboratories). Membranes were washed with PBS-0.1% Tween and incubated with antibodies in blocking solution overnight at 4°C. Antibody used was a rabbit anti H- ferritin (1:200; Santa Cruz Biotechnology, Dallas, TX). PBS-0.1% Tween-20 was used to remove the excess of primary antibody and then the membranes were incubated in blocking solution with goat anti-mouse IgG-HRP (1:2000, Santa Cruz Biotechnology) secondary antibody. Subsequently, blots were rinsed with 0.1% PBS-Tween and developed with Clarity Western ECL Substrate (Bio-Rad Laboratories) using Amersham Imager 680. Protein levels were analyzed by ImageJ 1.52 p software.
 
-## RNA isolation and real-time PCR (qRT-PCR)
+### RNA isolation and real-time PCR (qRT-PCR)
 
 Total RNA was isolated from 6 Gy irradiated and non-irradiated cells, LDHigh and LDLow sorted cells, MCF7 shRNA and MCF-7 shFTH1 as well as H460 shRNA and H460 shFTH1 using the High Pure RNA isolation kit (Roche) according to the manufacturer´s instructions. All the RNA samples were treated with DNase-1 to remove any contaminating genomic DNA and the RNA purity was checked spectroscopically. Then, 1 μg of purified RNA was reverse transcribed using RT 2 First Strand Kit (Qiagen) according to the manufacturer´s instructions.
 
@@ -170,23 +473,23 @@ Gene expression analysis was assessed by Real-Time PCR (qRT-PCR) using the cDNA 
 
 Twenty nanograms of cDNA was amplified in 15 μL of reaction mix containing Power SYBR Green PCR Master mix (ThermoFisher Scientific), 20 pmol of each primer pair and nuclease-free water on a StepOne Plus System (ThermoFisher scientific). The thermal profile consisted of 1 cycle at 95°C for 10 min followed by 40 cycles at 95°C for 15 s, 60°C for 1 min. Relative gene expression was normalized to that of the gene encoding the human GAPDH which served as an internal control. Data analysis was performed using the 2-ΔΔCt method.
 
-## Widefield and confocal microscopy
+### Widefield and confocal microscopy
 
 T24, H4, PC3, MCF7, MCF7 shRNA, MCF7 shFTH1, H460, H460 shRNA, and H460 shFTH1 were seeded and stained with LD540 as reported in the Lipid Droplet Staining section. Zeiss LSM710 and Leica SP5 microscopes, both equipped with a 40× and 63×, were used to image LDs.
 
-## Image analysis
+### Image analysis
 
 Z-stack images of LD540-stained cells were taken using a Leica SP5 confocal-laser-scanning microscope equipped with a 40× oil immersion i-Plan Apochromat (numerical aperture 1.40) objective. LD540 were visualized using the 488 nm line of an Argon laser and a 505–530 nm BP filter. Twelve-bit images were acquired and post processed for the LD quantification. Briefly, the background was subtracted using ImageJ’s Rolling ball radius tool. The images were further processed with Gaussian filter, thresholded, and segmented with Find Maxima tool. Finally, images were analyzed with Analyze Particles tools. All the image processing was performed automatically with constant settings using in-house developed macro for Fiji generously provided by Dr. Damir Krunic.
 
 Student’s t-test with unequal variances was used for the calculation of statistical significances. Differences of two groups with p-values below 0.05 were considered statistically significant.
 
-## FTH1 reconstitution
+### FTH1 reconstitution
 
 MCF7 shFTH1 and H460 shFTH1 cells were seeded in six-well plates at 3 × 105 cells/well and grown overnight prior to transfection.
 
 All plasmids were transfected with Lipofectamine 3000 transfection reagent (Thermo Fisher Scientific) following manufacturer’s instructions. FTH1 reconstitution was performed using 2.5 μg/μl of the expression vector containing the coding sequence of human FTH1 cDNA (pcDNA3/FTH1) (MCF-7 shFTH1/pcDNA3FTH1 and H460 shFTH1/pcDNA3FTH1), while 2.5 μg/μl of pcDNA3 plasmid was used as negative control (MCF-7 shFTH1/pcDNA3 and H460 shFTH1/pcDNA3). Transfection efficiency was tested by western blot and qPCR after 48 hrs. All transfection experiments were repeated in triplicate.
 
-## Deferoxamine treatment
+### Deferoxamine treatment
 
 MCF-7-Wt, MCF-7-shRNA, MCF-7-shFTH1, H460-Wt, H460-shRNA, and H460-shFTH1 cells were seeded in 100 mm2 petri dishes (Corning) at a concentration of 1.5 × 106 cells/plate containing 10 mL of DMEM or RPMI-1640 (supplemented with 10% FBS) and incubated for 24 hrs. Then, cells were treated with 50 μM DFO (deferoxaminemesylate salt). Cells cultured in normal medium were used as control. After 24 hrs of treatment, cells were collected and used for ROS and LD detection.
 
@@ -194,6 +497,6 @@ Analysis of the association between SP and PLIN1-5, FTH1, TFR1, and FPN genes in
 
 The association between the SP of individual PLIN1-5, FTH1, TFR1, and FPN genes in breast, bladder, low-grade glioma, prostate, and lung cancer samples from patients was explored by Kaplan–Meier plotter on the TCGAportal. Briefly, each of the genes above mentioned was, respectively, entered into the database in order to get the Kaplan–Meier SP plots. All different cancer patients were divided into the ‘low’ and ‘high’ expression groups based on the mRNA expression levels of the individual gene. Afterward, the Kaplan–Meier method, together with the log-rank test, was used for univariate SP analysis. A p-value of <0.05 was considered to be statistically significant.
 
-## Statistics
+### Statistics
 
 All data here presented are shown as mean values ± SD of the irradiated or ‘treated’ samples relative to the untreated control. Statistical and data analysis was carried out using GraphPad Prism nine software. Statistical differences between treated and untreated samples were assessed by T-test and one-way ANOVA. The threshold for statistical significance was set to p=0.05.

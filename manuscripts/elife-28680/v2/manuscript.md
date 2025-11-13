@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.28680.001 At synapses throughout the mammalian brain, AMPA receptors form complexes with auxiliary proteins, including TARPs. However, how TARPs modulate AMPA receptor gating remains poorly understood. We built structural models of TARP-AMPA receptor complexes for TARPs γ2 and γ8, combining recent structural studies and de novo structure predictions. These models, combined with peptide binding assays, provide evidence for multiple interactions between GluA2 and variable extracellular loops of TARPs. Substitutions and deletions of these loops had surprisingly rich effects on the kinetics of glutamate-activated currents, without any effect on assembly. Critically, by altering the two interacting loops of γ2 and γ8, we could entirely remove all allosteric modulation of GluA2, without affecting formation of AMPA receptor-TARP complexes. Likewise, substitutions in the linker domains of GluA2 completely removed any effect of γ2 on receptor kinetics, indicating a dominant role for this previously overlooked site proximal to the AMPA receptor channel gate.
+At synapses throughout the mammalian brain, AMPA receptors form complexes with auxiliary proteins, including TARPs. However, how TARPs modulate AMPA receptor gating remains poorly understood. We built structural models of TARP-AMPA receptor complexes for TARPs γ2 and γ8, combining recent structural studies and de novo structure predictions. These models, combined with peptide binding assays, provide evidence for multiple interactions between GluA2 and variable extracellular loops of TARPs. Substitutions and deletions of these loops had surprisingly rich effects on the kinetics of glutamate-activated currents, without any effect on assembly. Critically, by altering the two interacting loops of γ2 and γ8, we could entirely remove all allosteric modulation of GluA2, without affecting formation of AMPA receptor-TARP complexes. Likewise, substitutions in the linker domains of GluA2 completely removed any effect of γ2 on receptor kinetics, indicating a dominant role for this previously overlooked site proximal to the AMPA receptor channel gate.
 
 ## Introduction
 
@@ -32,9 +32,29 @@ Two of the predominant TARPs in the brain are the auxiliary proteins γ2 and γ8
 
 ## Results
 
-## A model of auxiliary protein interactions
+### A model of auxiliary protein interactions
 
 Previous studies of TARP modulation of AMPA receptors have identified extracellular regions as potential interaction motifs. Crystal structures of Claudins, proteins with close homology to TARPs, enabled a more refined view, defining a folded extracellular ‘cap’ (Suzuki et al., 2014; Saitoh et al., 2015; Shinoda et al., 2016) that substantially limits the sections of the extracellular portion of TARPs that are able to interact with the AMPA receptor, and therefore the likely range of these interactions. More recently, cryo-EM/single particle analysis of GluA2-TARP complexes allowed unambiguous positioning of TARPs at the periphery of the GluA2 pore, and partially resolved the extracellular domains of TARPs (Twomey et al., 2016; Zhao et al., 2016). The major sequence and structural differences between Claudin and TARP proteins, and between TARPs with different modulatory effects, are found in the variable extracellular loops between β1 and β2 (Loop 1), and between TM3 and β5 (Loop 2, Figure 1A). We sought to identify interactions between TARPs and the extracellular regions of the GluA2 receptor on this basis.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig1-v2.jpg)
+
+**Figure 1.:** (A) Topology of TARP γ2 (red) and γ8 (blue). Membrane helices numbered from 1 to 4. The first extracellular segment includes a flexible loop (L1, thick section, longer in γ8). Transmembrane helices 2 and 3 are connected by loop 2 (L2) (B) The middle panel shows TARPs γ2 (red) and γ8 (blue) positioned between equivalent receptor subunits (A and D and B and C) based on the cryo-EM complex structure (5kk2). The predicted L1 of γ8 is longer than in γ2 enabling it to reach more extensive regions of the receptor. To account for its flexibility we modeled L1 in two extreme positions (indicated by the double-headed arrows), either between the LBD dimer (colored like the respective TARP) or underneath the lower lobe of the LBD (purple; left panel for γ2, right panel for γ8). Potential L1 interactions with the LBD depend on its location in the complex (for example, between subunits A and B or A and D; see Figure 1—figure supplement 1A). (C) Membranes spotted with overlapping hexameric peptides of the extracellular segments of γ2 (1–75) and γ8 (76–165) were incubated with either monomeric (left) or dimeric His-tagged GluA2 LBD (right). Interacting peptides give a dark spot on the membrane (darker spots indicate stronger binding) when developed with an HRP-conjugated antibody against the His-tag (see Materials and methods). Spots from 66 to 69 and 153–157 did not contain any peptides. The colored boxes indicate peptides location, with β-sheets (green), loop1 (purple), β4-TM2 loop containing the sequence of the negative patch (light blue) and L2 (cyan). See also panel D and Figure 1—figure supplement 1C. Quantitation of the spot arrays is found in Figure 1—source data 1. (D) Close up view on the modeled extracellular region of γ2 (left) and γ8 (right). Secondary structure elements are shown in cartoon representation in the same color code as in panel C. Positive peptide hits in L1 are indicated by thicker loop-representation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The middle panel shows TARPs γ2 (red) and γ8 (blue) positioned between equivalent receptor subunits (A and B and C and D). We modeled L1 in two positions, either between the LBD dimer (colored as the respective TARP) or underneath the lower lobe of the LBD (purple; left panel γ2, right panel γ8). (B) The model suggests L2 of both γ2 (red, left panel) and γ8 (blue, right panel) engages in similar interactions, independent from the TARP’s location in the complex. L2 is sandwiched between the receptor linkers (S1–M1 and S2–M4) connecting the LBD to the pore-forming TMD. (C) Sequences of the hexameric TARP peptides used in the peptide mapping array are listed according to their position in the array. Secondary structure elements are shown in the same color code as in Figure 1C and D. Peptide sequences and quantitation are found in Figure 1—source data 1. Positive peptide hits are indicated as bold sequences.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The sequence of the β4-TM2 loop of γ2 with the secondary element is shown here. The residues mutated in the negative patch (NP, black box) are marked (diamonds, D88G, E90S and D92G) and the sequence of the mutated γ2 NP_GSG is shown underneath. The γ2 membrane topology shows the location of the three negatively charged residues (diamonds) that were neutralized within the negative patch. (B) Representative traces from γ2 NP_GSG coexpressed with GluA2 (red) in response to a 500 ms pulse of 10 mM Glutamate show a substantial reduction in desensitization rate and extent (kdes = 43 s−1; Iss = 48%) compared to wild-type γ2 (dashed grey line). (C) Partially neutralizing the negative patch increased γ2-mediated superactivation more than two-fold. The grey trace represents wild type γ2. (D) Bar graphs showing the effects of neutralization of the γ2 negative patch on desensitization, steady-state current, superactivation. The rectification index was not changed, indicating relief of polyamine block was intact. Filled symbols correspond to the traces shown in A) and B). **p<0.01, ***p<0.001, against γ2. Source data for kinetic data in panel C is found in Table 1–source data 1. Source data for rectification indices in panel C is found in Figure 1–figure supplement 2–source data 1. Error bars represent s.e.m.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** TARP sequences (from rat) encompassing the loop 2 are aligned with secondary structure elements on top. Conserved residues are marked by grey boxes and positively and negatively charged residues are colored blue and red, respectively.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The sequences of the extracellular regions Loop1 (L1, purple) and Loop2 (L2, cyan) of γ2 (red) and γ8 (blue) are aligned with the secondary structural elements on top. Conserved residues are in bold. Constructs carrying deletions (L1, indicated by scissors), neutralization (L2, glycine-serine (GS)-Linker) and chimeras (switching L1 between the TARPs) and combinations of these are shown below.
 
 To understand the scope of TARP interactions with the AMPA receptor, we began by modeling the loops of γ2 and γ8 into a hybrid structure composed of Claudins and GluA2. Based on the crystal structure of the related claudin15 (PDB code: 4P79) we first generated structural models of TARP γ2 and γ8 including the presumably flexible loop 1, which is not resolved in the cryo-EM AMPA-γ2 complex structures (PDB code: 5KBU and 5KK2). To ensure that the models obeyed good stereochemistry, we analyzed them with MolProbity (Chen et al., 2010). The analysis of the in silico models revealed bad bonds and angles of 0.3% and 1.4% for γ2 and 0.2% and 1.6% for γ8. These TARP models were superposed onto the γ2 chains in the cryo-EM GluA2-γ2 complex (PDB code: 5KK2). L1 had to be repositioned in order to avoid a steric clash with the LBD. We show two extreme conformations of L1 in Figure 1B, purely to illustrate the reach of L1, which seems likely a function of its length (compare L1 of γ2 and γ8). The principal advantage of building these models was to enable us to concentrate on a range of physically-plausible interactions at the linkers and the lower regions of the LBD layer, and effectively rule out ATD contacts, because the unstructured loops are too short.
 
@@ -44,11 +64,273 @@ Repeated peptide mapping array assays indicated no clear preference for either m
 
 We also tested L2 of γ2 and γ8 in the peptide mapping array for possible interactions with the LBDs because of its conserved charged features (4 and 7 charges), which are less prominent in γ5 and γ7 (3 and 1 charges respectively) (Figure 1—figure supplement 3). Considering L2 being positioned distant underneath the LBD (around 15 Å, measured between Cα of GluA2 Pro717 and γ2 Lys170 in the complex from PDB code: 5KBU [Twomey et al., 2016]) in the cryo-EM structures, it was not surprising that we found no interaction between L2 peptides and the GluA2 LBD. According to our GluA2-TARP models, in both γ2 and γ8, L2 is adjacent to the receptor S1-M1 and S2-M4 linkers (Figure 1—figure supplement 1A and B), which are outside the realms of our LBD construct.
 
-## Modulation of fast AMPA receptor gating by TARP L1 and L2 segments
+### Modulation of fast AMPA receptor gating by TARP L1 and L2 segments
 
 To investigate the role of the extracellular domain of TARPs in controlling AMPA receptor activation, we made a series of chimeras and deletion mutants between γ2 and γ8. We first targeted the long loop in the first extracellular segment L1 (Figure 1) that has markedly different lengths and sequence content across the TARP family and its homologs. We also investigated the role of the shorter unstructured region in the second extracellular segment L2 (Figure 1), which is poised to interact with the LBD-TMD linkers of the AMPA receptor.
 
 We first swapped L1 between γ2 and γ8 (Figure 2A and Figure 1—figure supplement 4), and assessed effects on desensitization. Although γ2 and γ8 apparently affect AMPA receptor desensitization similarly, γ8 slows down entry to desensitization more than γ2 (60 ± 5 s–1 and 40 ± 5 s–1, n = 24 and 9, for γ2 and γ8, respectively; Table 1). These chimeras exhibited asymmetric effects on desensitization. When activated by 10 mM glutamate, the chimera of γ2 with L1 from γ8 had steady-state current of 50 ± 5% (n = 30; Figure 2A and D and Table 1), twice as large as γ2 alone (25 ± 2%, n = 24 patches), and the rate of entry to desensitization was approximately halved (35 ± 5 s−1, n = 30; Figure 2C and Table 1). In contrast, the γ8 chimera with L1 from γ2 maintained the original desensitization behavior of the parent TARP (45 ± 1 s–1, n = 28; Figure 2A and C and Table 1). Deletion of L1 from γ2 and γ8 approximately halved the steady state current (15 ± 2 and 15 ± 3%, n = 11 and 15, for γ2 ΔL1 and γ8 ΔL1, respectively; Figure 2B and D and Table 1), with a barely detectable speeding up of entry to desensitization (60 ± 5 s–1, n = 11 and 15, for γ2 ΔL1 and γ8 ΔL1, respectively; Figure 2B and C and Table 1). These results suggested that L1 can influence desensitization of complexes, as shown recently for GSG1L (Twomey et al., 2017a) but the absence of a simple exchange in desensitization behavior suggested that this loop functions in concert with other modulatory elements.
+
+**Table 1.**
+ Kinetic properties of wild type and chimeric TARPs and GluA2 linker mutants.kdes is rate of desensitization, Iss the steady state current expressed as percentage of the peak current and "Superact." the extent of superactivation expressed as the slow increase in steady state current during prolonged exposure to glutamate (see Materials and methods for details). The number of patches recorded for each condition is shown in brackets. Values are shown as mean ± s.e.m. p values (from Student’s t test) are calculated as follows: § against the parent TARP; ∆ against GluA2 WT; # against GluA2 WT + TARP. Currents recorded in the presence of TARPs were held at +50 mV in the presence of 50 µM spermine in the pipette solution. Recordings in the absence of TARPs were done at –60 mV without intracellular polyamines. Source data for Table 1 is found in Table 1–source data 1.Table 1–source data 1.Kinetics and steady state currents from electrophysiological recordings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>kdes (s-1)</th>
+      <th>P</th>
+      <th>Iss (%)</th>
+      <th>P</th>
+      <th>Superact. (%)</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A2 wt</td>
+      <td>120 ± 15 (9)</td>
+      <td></td>
+      <td>5 ± 1</td>
+      <td></td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>γ2</td>
+      <td>60 ± 5 (24)</td>
+      <td></td>
+      <td>25 ± 2</td>
+      <td></td>
+      <td>7 ± 2 (10)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>γ8</td>
+      <td>40 ± 5 (9)</td>
+      <td></td>
+      <td>25 ± 5</td>
+      <td></td>
+      <td>30 ± 6 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>γ2 β4 TM2 §</td>
+      <td>40 ± 5 (7)</td>
+      <td>0.004</td>
+      <td>50 ± 5</td>
+      <td>1 × 10–5</td>
+      <td>17 ± 4 (5)</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>L1 γ8 in γ2 §</td>
+      <td>35 ± 5 (30)</td>
+      <td>5 × 10–6</td>
+      <td>50 ± 5</td>
+      <td>7 × 10–6</td>
+      <td>27 ± 6 (10)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>L1 γ2 in γ8 §</td>
+      <td>45 ± 1 (28)</td>
+      <td>0.34</td>
+      <td>25 ± 3</td>
+      <td>0.86</td>
+      <td>16 ± 1 (16)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>γ2 ΔL1 §</td>
+      <td>60 ± 5 (11)</td>
+      <td>0.90</td>
+      <td>15 ± 2</td>
+      <td>0.008</td>
+      <td>6 ± 2 (6)</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>γ8 ΔL1 §</td>
+      <td>60 ± 5 (15)</td>
+      <td>0.002</td>
+      <td>15 ± 3</td>
+      <td>0.03</td>
+      <td>16 ± 3 (6)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>γ2 L2_GS §</td>
+      <td>65 ± 5 (15)</td>
+      <td>0.49</td>
+      <td>5 ± 1</td>
+      <td>1 × 10–6</td>
+      <td>1.3 ± 0.6 (8)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>γ8 L2_GS §</td>
+      <td>25 ± 5 (6)</td>
+      <td>0.002</td>
+      <td>40 ± 4</td>
+      <td>0.07</td>
+      <td>12 ± 2 (4)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>L1 γ8 in γ2 L2_GS §</td>
+      <td>10 ± 0.5 (7)</td>
+      <td>6 × 10–10</td>
+      <td>45 ± 3</td>
+      <td>6 × 10–5</td>
+      <td>4 ± 2 (6)</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>L1 γ2 in γ8 L2_GS §</td>
+      <td>85 ± 5 (6)</td>
+      <td>1 × 10–5</td>
+      <td>5 ± 1</td>
+      <td>0.001</td>
+      <td>1 ± 0.7 (6)</td>
+      <td>9 × 10–5</td>
+    </tr>
+    <tr>
+      <td>γ2 ΔL1 L2_GS §</td>
+      <td>80 ± 20 (5)</td>
+      <td>0.03</td>
+      <td>2 ± 1</td>
+      <td>4 × 10–4</td>
+      <td>0 (4)</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>γ8 ΔL1 L2_GS §</td>
+      <td>60 ± 10 (5)</td>
+      <td>0.02</td>
+      <td>10 ± 5</td>
+      <td>0.02</td>
+      <td>3 ± 1 (4)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>A2 K509A ∆</td>
+      <td>100 ± 5 (5)</td>
+      <td>0.34</td>
+      <td>3 ± 0.5</td>
+      <td>0.71</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>A2 508GAG510 ∆</td>
+      <td>145 ± 35 (3)</td>
+      <td>0.42</td>
+      <td>1 ± 0.5</td>
+      <td>0.27</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>A2 781GSG783 ∆</td>
+      <td>110 ± 15 (3)</td>
+      <td>0.76</td>
+      <td>2 ± 1</td>
+      <td>0.46</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>A2 GAG/GSG ∆</td>
+      <td>150 ± 20 (5)</td>
+      <td>0.20</td>
+      <td>2 ± 1</td>
+      <td>0.44</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>A2 K509A + γ2 #</td>
+      <td>30 ± 10 (5)</td>
+      <td>3 × 10–4</td>
+      <td>45 ± 3</td>
+      <td>2 × 10–4</td>
+      <td>5 ± 5 (4)</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>A2 508GAG510 + γ2 #</td>
+      <td>70 ± 5 (4)</td>
+      <td>0.39</td>
+      <td>10 ± 5</td>
+      <td>0.07</td>
+      <td>0 (3)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>A2 781GSG783 + γ2 #</td>
+      <td>60 ± 5 (9)</td>
+      <td>0.60</td>
+      <td>10 ± 1</td>
+      <td>0.001</td>
+      <td>2 ± 0.5 (8)</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>A2 GAG/GSG + γ2 #</td>
+      <td>80 ± 5 (8)</td>
+      <td>0.01</td>
+      <td>5 ± 1</td>
+      <td>9 × 10–5</td>
+      <td>0 (4)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>A2 GAG/GSG + L1 γ8 in γ2 #</td>
+      <td>12 ± 0.5 (5)</td>
+      <td>4 × 10–8</td>
+      <td>30 ± 5</td>
+      <td>0.21</td>
+      <td>2 ± 2 (4)</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td>A2 GAG/GSG + γ8 #</td>
+      <td>45 ± 2 (5)</td>
+      <td>0.30</td>
+      <td>12 ± 3</td>
+      <td>0.03</td>
+      <td>25 ± 5 (5)</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>A2 GAG/GSG + L1 γ2 in γ8 #</td>
+      <td>72 ± 5 (5)</td>
+      <td>8 × 10–5</td>
+      <td>4 ± 1</td>
+      <td>0.001</td>
+      <td>1 ± 1 (4)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>A2 GAG/GSG + γ2 L2_GS #</td>
+      <td>90 ± 10 (9)</td>
+      <td>3 × 10–4</td>
+      <td>2 ± 1</td>
+      <td>5 × 10–6</td>
+      <td>0 (4)</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative traces from L1 γ8 in γ2 (red) and L1 γ2 in γ8 (blue) coexpressed with GluA2 in response to a 500 ms pulse of 10 mM Glutamate (kdes = 13 and 55 s−1; Iss = 50% and 30%, respectively). Example traces recorded from the parent TARPs coexpressed with GluA2 are shown in grey for comparison (kdes = 41 and 30 s−1; Iss = 30% and 30%, for γ2 and γ8, respectively). (B) Representative traces from γ2 ∆L1 (red) and γ8 ∆L1 (blue) coexpressed with GluA2 in response to a 500 ms pulse of 10 mM Glutamate (kdes = 55 and 45 s−1; Iss = 10% and 15%, respectively). The wild type constructs coexpressed with GluA2 are shown as dashed lines for comparison. (C) Bar graph summarizing the effects of the L1 mutation on the desensitization kinetics. (D) Bar graph summarizing the effects of the loop1 mutations on the steady state current of the complexes. Currents were recorded at +50 mV in the presence of 50 µM spermine in the pipette solution. For panels C and D, filled symbols correspond to the traces shown in (A) and (B). ***p<0.001, **p<0.01, against γ2; ∆ p<0.05, ∆∆ p<0.01, against γ8. Source data for panels C and D is found in Table 1–source data 1. Error bars represent s.e.m.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Normalised conductance-voltage plots show that TARP γ2 (red) is better at relieving the polyamine (PA) block of unedited GluA2 receptors (grey) than γ8 (blue). (B) Relief of PA block by γ2 L1 mutants (filled symbols) is indistinguishable from that of the wild type construct (dashed line). GluA2 WT is shown in grey for comparison. (C) Replacing L1 of γ8 with that of γ2 or deleting it does not affect its ability to relief PA block of GluA2(Q) receptors. (D) Neutralizing L2 in γ2, alone or in combination with L1 from γ8, does not affect PA block. (E) Neutralizing L2 in γ8 and in γ8 with L1 from γ2 show similar PA block relief as γ8 wild type. (F) Bar graph summarizing the rectification index (RI, calculated as the ratio between the current recorded at +60 mV and that recorded at −60 mV) of γ2 (in red) and γ8 (in blue) loop mutants coexpressed with GluA2(Q). Currents were recorded in the presence of 50 µM spermine in the pipette solution. *p<0.05, **p<0.01, ***p<0.001, against GluA2(Q). Source data for panel F is found in Figure 2—figure supplement 1. Error bars represent s.e.m.
 
 Seeking a further explanation for the modulation of desensitization by TARPs, we investigated the effects of altering the 8-residue stretch in the second extracellular segment of TARPs (L2), which connects TM3 to β5 in the extracellular domain. Replacement of the L2 segment with a flexible Gly-Ser linker, predicted to be of sufficient length not to disrupt the overall structure of the extracellular domain, had a striking effect on γ2. The rate of entry to desensitization was still slower than in receptors formed of GluA2 wild type (WT) alone (65 ± 5 s−1 and 120 ± 15 s−1, n = 15 and 9 patches for A2 + γ2 L2_GS and A2 WT, respectively; Figure 3A and C and Table 1), but the steady state current was reduced to the level of receptors without any TARP present (5 ± 1% and 5 ± 1%, n = 15 and 9 for A2 + γ2 L2_GS and A2 WT, respectively; Figure 3A and D and Table 1). In contrast, there was no detectable effect on γ8 of mutating this loop, except for a further slowing down of the desensitization rate (kdes = 25 ± 5 s−1, Iss = 40 ± 4%, n = 6, for γ8 L2_GS; Figure 3A,C and D and Table 1).
 
@@ -62,7 +344,7 @@ The steady-state current was the same magnitude as for receptors that did not ha
 
 Although we performed all measurements at +50 mV, isolating receptors associated to TARPs by selecting for complexes with strong relief of polyamine block, we were concerned that some of the effects that we saw (particularly reduced or absent modulation) could be due to an altered stoichiometry of complexes, perhaps due to poor chimera expression. To assess these possibilities, we measured the G-V relations for all the chimeras and deletion mutants (Figure 2—figure supplement 1). Importantly, all mutants gave responses that were strongly reduced in rectification, indicating that complex formation between mutant TARPs and AMPAR subunits was normal. Broadly, each chimera closely followed the polyamine relief induced by the parent TARP, with γ2 chimeras producing populations of receptors that exhibited a greater rectification index than those based on γ8 (Figure 2—figure supplement 1). A complication is that modulation of gating and block could depend differently on TARP content within complexes. These results do not address the question of stoichiometry but do strongly suggest that the mutations we made did not change the propensity of γ2 and γ8 to form complexes with AMPAR subunits.
 
-## Superactivation of AMPA-TARP complexes
+### Superactivation of AMPA-TARP complexes
 
 TARPs induce a subtype-specific superactivation of the GluA2 homomeric receptor. γ8 is a much stronger modifier of this slow gating mode than γ2 (Kato et al., 2010; Carbone and Plested, 2016). We investigated the role of the extracellular domain in superactivation using the same set of TARP mutants, but using 7 s applications of glutamate to measure the equilibrium level reached following superactivation. Our hypothesis was that the difference in superactivation between γ2 and γ8 would be specified by the sequence element most divergent between these two TARPs, L1.
 
@@ -84,13 +366,25 @@ The TARP chimeras that exhibited the least power to slow desensitization kinetic
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig6-v2.jpg)
 
-**Figure 6.:** (A) Mutation of both L1 and L2 in γ2 (left) and γ8 (right) did not change association of TARPs with AMPA receptors, as assessed by the G-V curve. GluA2 WT is shown in grey. (B) Bar graph summarizing the rectification index of the dual loop mutations. (C) Example traces of γ2 ΔL1 L2_GS (left) and γ8 ΔL1 L2_GS (right) in response to 7 s application of 10 mM glutamate. Corresponding wild-type TARPs are shown as dashed lines. (D) Bar graphs summarizing the effects of the dual loop mutation in γ2 (red) and γ8 (blue) on superactivation. (E) Representative traces from γ2 ΔL1 L2_GS (left) and γ8 ∆L1 L2_GS (right) coexpressed with GluA2 in response to a 500 ms pulse of 10 mM Glutamate (kdes = 74 and 50 s−1 Iss = 1.5% and 16%, respectively). Currents from the parent TARPs are shown in grey. (F) Bar graphs summarizing the effects of the dual loop mutation in γ2 (red) and γ8 (blue) on desensitization decay and the steady state current. Currents were recorded at +50 mV in the presence of 50 µM spermine in the pipette solution. For panels D, F and G, filled symbols correspond to the traces shown in (C) and (E). ***p<0.001, **p<0.01, *p<0.05, against γ2. Source data for panel B is found in Figure 6—source data 1. Source data for panels D, F and G is found in Table 1–source data 1. Error bars represent s.e.m.10.7554/eLife.28680.018Figure 6—source data 1.
+**Figure 6.:** (A) Mutation of both L1 and L2 in γ2 (left) and γ8 (right) did not change association of TARPs with AMPA receptors, as assessed by the G-V curve. GluA2 WT is shown in grey. (B) Bar graph summarizing the rectification index of the dual loop mutations. (C) Example traces of γ2 ΔL1 L2_GS (left) and γ8 ΔL1 L2_GS (right) in response to 7 s application of 10 mM glutamate. Corresponding wild-type TARPs are shown as dashed lines. (D) Bar graphs summarizing the effects of the dual loop mutation in γ2 (red) and γ8 (blue) on superactivation. (E) Representative traces from γ2 ΔL1 L2_GS (left) and γ8 ∆L1 L2_GS (right) coexpressed with GluA2 in response to a 500 ms pulse of 10 mM Glutamate (kdes = 74 and 50 s−1 Iss = 1.5% and 16%, respectively). Currents from the parent TARPs are shown in grey. (F) Bar graphs summarizing the effects of the dual loop mutation in γ2 (red) and γ8 (blue) on desensitization decay and the steady state current. Currents were recorded at +50 mV in the presence of 50 µM spermine in the pipette solution. For panels D, F and G, filled symbols correspond to the traces shown in (C) and (E). ***p<0.001, **p<0.01, *p<0.05, against γ2. Source data for panel B is found in Figure 6—source data 1. Source data for panels D, F and G is found in Table 1–source data 1. Error bars represent s.e.m.
 
-## L2 controls gating through interaction with linkers proximal to the channel gate
+### L2 controls gating through interaction with linkers proximal to the channel gate
 
 From our models, a range of sites on GluA2 could interact with L1, including the KGK motif in the LBD (Twomey et al., 2017a; Dawe et al., 2016). Substitutions at L2 of γ2 and γ8 had profound effects on gating of TARP complexes and are well placed to interact with gating machinery (Figure 1B and Figure 1—figure supplement 1B). Particularly, we expected from our structural models and other available structural data (Twomey et al., 2016; Zhao et al., 2016) that L2 should interact with the S1-M1 linker and the S2-M4 linker in the AMPA receptor. Previous work has shown the importance of these linkers in glutamate receptor gating (Balannik et al., 2005; Schmid et al., 2007; Talukder et al., 2010). The L2 sequence has an alternating charge motif (see Figure 1—figure supplement 3) that is mirrored in two parts of the GluA2 linkers 508QKS510 and 781KEK783. These segments are immediately adjacent to the TARP L2 in all four subunits suggesting possible direct electrostatic interactions between opposed charged residues.
 
 Replacement of 508QKS510 (conserved among AMPA receptor subunits) to GAG in the S1-M1 linker (GluA2 508GAG510, Figure 7A) produced a GluA2 receptor with normal kinetics and that associated normally with γ2 and γ8 (Figure 7—figure supplement 1). Strikingly, in complexes with WT γ2, this mutant phenocopied the neutralizing truncation of L2 in TARPs well (see Figure 3), abolishing superactivation and reducing the steady state current (0% and 10 ± 5%, n = 3 and 4, for superactivation and Iss, respectively; Figure 7C–E and Table 1). In contrast, a point mutant K509A, also with normal gating (Figure 7—figure supplement 1), was more strongly modulated by γ2, providing further indication that a second site was potentially involved (Figure 7E and Table 1). Our model suggested that the S2-M4 linker of GluA2 was equally well positioned to interact with L2 from γ2. To test the importance of the alternating charges in the S2-M4 linker, we made another triple mutation replacing 781KEK783 (KDK in GluA1, A3, A4) to GSG (GluA2 781GSG783, Figure 7B). This mutant again had normal kinetics in the absence of γ2 (Figure 7—figure supplement 1), but also exhibited a reduced steady state current and negligible superactivation (10 ± 1% and 2 ± 0.5%, n = 9 and 8, for Iss and superactivation respectively; Figure 7C–E and Table 1). Importantly, the combination of these two triple mutants, abolished the entire modulatory effect of γ2 on the AMPA receptor, reducing superactivation and the instantaneous steady-state current to the same level as GluA2 in the absence of TARP (0% and 5 ± 1%, n = 4 and 8, for superactivation and Iss, respectively; Figure 7C–E and Table 1). This mutant receptor retained ostensibly normal gating and association to TARPs (Figure 7—figure supplement 1), despite the absence of gating modulation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig7-v2.jpg)
+
+**Figure 7.:** (A) Residues in the S1-M1 linker (Gln508, Ser509, and Lys510 represented as yellow atomic spheres) are in close proximity to the L2 of TARPs (L2 of γ2 is shown in red). (B) Residues in the S2-M4 linker (Lys781, Glu782 and Lys783) predicted to interact with L2 are labeled and shown as yellow atomic spheres. (C) Example responses from linker mutants coexpressed with γ2, γ8 and loop 1 chimeras to 500 ms 10 mM Glutamate. (D) Representative responses from linker mutants coexpressed with γ2, γ8 and loop 1 chimeras to a 7 s pulse of 10 mM Glutamate. The extent of superactivation is indicated. (E) Bar graphs summarizing the desensitization properties (top panel), steady state current (central) and superactivation (bottom). Colors are as in panel C. Filled symbols correspond to the traces shown in panels C and D; dashed lines represent GluA2 wild-type. ***p<0.001, **p<0.01, *p<0.05, against γ2; ∆∆∆ p<0.001, ∆ p<0.05, against γ8. Source data for panel E is found in Table 1–source data 1. Error bars represent s.e.m.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative traces from GluA2 linker mutants in response to 500 ms pulses of 10 mM Glutamate. GluA2 WT is shown in grey. (B) Bar graph summarizing the desensitization kinetics and the level of steady state current for GluA2 linker mutants. Filled dots represent the traces shown in A). (C) and (D) GV responses and rectification index for GluA2 mutants in complex with γ2 WT or L1 γ8 in γ2 chimera (left) and γ8 WT and L1 γ2 in γ8 chimera (right). **p<0.01, against γ2; ∆ p<0.05, against γ8. Source data for panel C is found in Table 1 – source data 1 and source data for panel D is found in Figure 7—figure supplement 1. Error bars represent s.e.m.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/28680/elife-28680-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Illustration of the four conditions used to construct the thermodynamic cycle. Receptor (cyan) and γ2 (red) were cotransfected in wild type and mutant forms. (B) Normalised currents in response to a 500 ms pulse of 10 mM glutamate. The steady state current at the end of the pulse is magnified in the inset. (C) Bar plot of the steady state currents. A2 GAG/GSG mutant has a 2-fold lower steady state current than wild-type GluA2. Efficacies for channel opening are indicated on the cycle, with the coupling energy. See Materials and methods for details of calculations. (D) Superactivation in response to a long (7 s) pulse of 10 mM glutamate. Inset shows current levels displaced. (E) Bar plot of superactivation extents. Superactivation was too small to measure for A2 GAG/GSG in either condition. For the coupling analysis, efficacy was calculated with the most conservative reduction in superactivation (to 1%).
 
 To test our hypothesis of a direct interaction, we examined receptor responses in the case of both L2 and the receptors linkers being mutated, and constructed thermodynamic cycles to estimate coupling energies for both the steady state current and the superactive current (Hidalgo and MacKinnon, 1995). With the caveat that we can at best measure a level of current of about 1% of the peak current, limiting the resolution of the reduction in current upon mutation, we could detect only weak coupling for the steady-state current, but coupling of approximately 4.5 kJ/Mol in the case of superactivation (Figure 7—figure supplement 2).
 
@@ -124,40 +418,52 @@ Our results allow us to construct a tentative model for the distinct forms of mo
 
 This work has produced mutant TARPs and AMPA receptors that both lack modulatory properties, and also those that have greatly enhanced modulation. Both these signatures of activity should be useful tools for investigating TARP action in synapses, including understanding the relative importance of assembly into complexes for anchoring (Opazo et al., 2010) as opposed to kinetic modulation, for clarifying the consequences of TARP modulation for short term plasticity (Devi et al., 2016), and for better identifying TARPs in ternary complexes with other auxiliary subunits (Khodosevich et al., 2014; Herring et al., 2013).
 
-## Note
+### Note
 
 Whilst this manuscript was being revised, an open AMPAR structure in complex with TARP γ2 was released (Twomey et al., 2017b). The loops that we analyze here are not resolved, but this structure (like previous closed state structures) places the unstructured L2 in close apposition with the linker regions of the AMPAR, consistent with our idea of state-dependent L2 interactions and modulation.
 
 ## Materials and methods
 
-## Molecular biology
+### Molecular biology
 
 We used GluA2 flip receptors, unedited at the pore site (Q-containing) in the pRK vector also expressing eGFP following an internal ribosomal entry site (IRES) sequence. Mouse γ2 was the kind gift of Susumu Tomita and was expressed from an IRES-dsRed construct as previously described (Carbone and Plested, 2016). Mouse γ8 (the kind gift of Roger Nicoll) was expressed the same way. Point mutations and chimeras were created by overlap PCR and confirmed by double-stranded sequencing. The construct boundaries of the chimeras used are shown in Figure 1—figure supplement 4. Residues in GluA2 were numbered based on the assumption that the signal peptide is 21 residues.
 
-## Patch clamp electrophysiology
+### Patch clamp electrophysiology
 
 Wild type or mutant GluA2 and TARP constructs were co-transfected with PEI in HEK 293 cells (obtained from the Leibniz-Institut DSMZ - Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH; DSMZ no.: ACC 305). Cell identity was confirmed by immunology and multiplex PCR by DSMZ. 293 cells were tested negative for mycoplasma, both by DSMZ and in-house. The ratios of co-transfection were 1:2 for GluA2-γ2 and 1:5 for GluA2-γ8, up to 2 μg total DNA per 35 mm dish. The same ratios were maintained for all the reciprocal mutants. Cells were supplemented with 40 μM NBQX to reduce TARP-induced cytotoxicity. Recordings were performed 24–48 hr after transfection. The external recording solution contained (in mM): 150 NaCl, 0.1 MgCl2, 0.1 CaCl2 and 5 HEPES, titrated to pH 7.3 with NaOH. The pipette solution contained (in mM): 120 NaCl, 10 NaF, 0.5 CaCl2, 5 Na4BAPTA, 5 HEPES and 0.05 spermine, pH 7.3. 10 mM glutamate was applied to outside-out patches with a piezo-driven fast perfusion system (PI, Germany). In order to isolate currents exclusively mediated by AMPAR-TARP complexes, patches were voltage-clamped at a holding potential of +50 mV. Currents were low-pass filtered at 5 kHz using an Axopatch 200B amplifier (Molecular Devices, U.S.A.) and acquired with Axograph X software (Axograph Scientific, U.S.A.). Typical 10–90% solution exchange times were faster than 300 µs, as measured from junction potentials at the open tip of the patch pipette.
 
-## Data analysis
+#### Data analysis
 
 To measure receptor desensitization we applied 10 mM glutamate for 500 ms. Desensitization rate and steady-state current were then obtained by fitting the traces with a sum of two, and when necessary three, exponentials. Rates constants are expressed as weighted mean of multiple components. Superactivation was measured during a 7 s application of glutamate and was defined as the excess steady-state amplitude following the desensitization trough, normalized to the peak current. The GV relationships were calculated as the ratio between the current amplitude and the voltage step at which it was measured (−80 /+120), normalized against the value obtained at −80 mV. The value at 0 mV was omitted because very close to the reversal potential. The rectification index (RI) was calculated as the ratio between the current amplitude recorded at +60 mV and that recorded at −60 mV. A triple exponential function was used to fit the slowly augmenting current of superactivation measurements. To account for possible variability in the response and expression of the complexes, we tried to record at least 5–6 patches from at least three different transfections for each condition. For experiments with very low success rates (that is, worse than 1 patch in 20 giving an acceptable recording), in the presence of γ8, at least three patches were collected. No data were excluded, except from patches where recordings were unstable, had excessive rundown or solution exchange slower than 0.5 ms as measured after the experiment.
 
-The thermodynamic coupling constant (Ω) was calculated from the ratio of equilibrium constants in the different conditions:Ω=Ewt.wt×Emut.mutEmut.wt×Ewt.mut
+The thermodynamic coupling constant ($Ω$) was calculated from the ratio of equilibrium constants in the different conditions:
 
-where E is the efficacy of channel opening calculated from the fraction of open receptors (P0):E=P01−Po
+$$
+Ω=\frac{E_{wt.wt}\timesE_{mut.mut}}{E_{mut.wt}\timesE_{wt.mut}}
+$$
 
-We made the same calculation for the efficacy of receptor superactivation in each condition, using the fraction of superactive receptors in place of P0. The coupling free energy was then calculated as follows:ΔΔG=RT.ln(Ω)
+where E is the efficacy of channel opening calculated from the fraction of open receptors ($P_{0}$):
+
+$$
+E=\frac{P_{0}}{1−P_{o}}
+$$
+
+We made the same calculation for the efficacy of receptor superactivation in each condition, using the fraction of superactive receptors in place of $P_{0}$. The coupling free energy was then calculated as follows:
+
+$$
+ΔΔG=RT.ln(Ω)
+$$
 
 Results are shown as mean ± standard error of the mean (s.e.m.) and statistical significance was assessed with a two-tailed Student's t-test as specified in Table 1.
 
-## Protein expression and purification of soluble LBDs
+### Protein expression and purification of soluble LBDs
 
 Using the flop isoform of rat GluA2 ligand binding domain (S1S2 fusion) in pET22b vector (kindly provided by E. Gouaux) as a base, we inserted the flip mutations N744T, A745P, N754S, L758V, and added the C-terminal residues Lys776-Gly779 (GluA2_LBD) and the non-desensitizing mutation L483Y (GluA2_LBD_LY) by overlap mutagenesis. Protein expression and purification was carried out as described previously (Salazar et al., 2017). Briefly, monomeric and dimeric (L483Y) LBDs were expressed in E. coli Origami B (DE3). Cells were harvested by centrifugation, lysed and subjected to metal affinity chromatography and size exclusion chromatography. Fractions containing the N-terminal His8-tagged protein were pooled and dialyzed against protein buffer (20 mM Tris pH7.4, 150 mM, NaCl, 10 mM glutamate). The purity was determined to >98% by SDS-PAGE analysis.
 
-## Peptide spot array
+### Peptide spot array
 
 Peptides covering the extracellular parts of γ2 and γ8 were spotted onto amino modified Whatman cellulose membranes (Figure 1C and Figure 1—figure supplement 1C) using a fully automatic Spot synthesizer (Intavis, Köln, Germany). The spot array consisted of hexameric overlapping peptides shifted by one residue. Peptide spotted membranes were rinsed with ethanol for 5 min, following three times 10 min washing with TBS and incubation with blocking buffer (Casein Blocking buffer (Sigma B6429), 150 mM Saccharose, in TBS) for 3 hr at RT. The blocking buffer was removed by three wash steps with TBS before the membranes were incubated overnight at 4°C with either 50 µg/ml His-tagged protein (GluA2_LBD or GluA2_LBD_LY) in blocking buffer or blocking buffer only for control (to exclude non-specific binding from the antibodies to the peptides). Membranes were washed three times in TBS and incubated for 1.5 hr at RT with anti-poly_His Antibody (Sigma H1029) diluted 1:6000 in blocking solution followed by three washes (a’ 10 min) with TBS. Finally, membranes were incubated for 1.5 hr at RT with HRP-conjugated anti-mouse IgG Antibody (Sigma A5906; 1:1000 dilution in blocking buffer) and washed with TBS (three times a’ 10 min). Visualization of protein-binding was carried out using a chemo-luminescence substrate (Pierce ECL, ThermoFisher Scientific) and a Lumi-Imager instrument (Boehringer Mannheim, Germany). Spot-signal intensities were measured in Boehringer Light Units (BLU) and the software GeneSpotter 2.6.0 (MicroDiscovery, Berlin, Germany) was applied for data processing. The peptide spot array is a semiquantitative method to determine binding affinities in the range from nM to higher µM values (the darker the spots the stronger the interaction). As the His-tagged protein is applied in casein containing blocking buffer the detected signals from the His-tagged protein must be higher affine than the unspecific binding from casein to the peptides. Hits from peptides located within β-sheets were taken to be false positives, because when isolated these peptides likely form unphysiological β-sheets in a non-specific manner with existing structures in the GluA2 LBD. To have an idea about reproducibility of this assay, we performed it twice with comparable results (source data is provided). The negative control (incubation of the membrane in blocking buffer only) showed no signal, indicating no unspecific binding of the anti-poly His antibody to the peptides.
 
-## Structural modeling
+### Structural modeling
 
 Initial γ2 and γ8 models were generated based on the crystal structure of claudin15 (PDB code: 4P79) using the SWISS-MODEL (Arnold et al., 2006) and ProtMod server (part of the FFAS server, [Jaroszewski et al., 2011]). Both models were incomplete (either lacking linker structures or failing to correctly trace transmembrane helix 3, TM3). Thus, we used COOT (version 0.8.7) to superpose the two generated models and to build the final model with an intact helix 3 and plausible extracellular loops 1 and 2. Superposing our final TARP models onto the γ2 molecules present in the AMPA-TARP cryo-EM structure (PDB code: 5KK2) in PyMOL (v1.6) yielded in the AMPA-TARP complexes shown in our Figures. The two extreme different possible orientations of Loop 1 were modeled using COOT. The TARP models were validated using MolProbity (Chen et al., 2010). Unfortunately the LBD to TMD connecting linkers (S1-TM1 and S2-TM4) are not resolved in the AMPA-TARP cryo-EM structure. To better understand the Loop 2 participation in AMPA receptor regulation we used the crystal structure of GluA2 (PDB code: 3KG2) with resolved linkers and superposed it onto the receptor of our AMPA-TARP complex model (Figure 1—figure supplement 2). As the side chains of the possible interacting residues (507-QKS-510, 781KSK-783) located in the LBD-TMD linkers were not resolved in 3KG2 we modeled the most likely side chain conformations of these residues (Figure 7A and B). All figures were prepared with PyMOL or IGOR Pro. Sequence alignment was done with MultAlin (Corpet, 1988).

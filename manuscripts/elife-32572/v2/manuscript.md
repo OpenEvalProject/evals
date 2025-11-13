@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.32572.001 Cytochrome c oxidase of the mitochondrial oxidative phosphorylation system reduces molecular oxygen with redox equivalent-derived electrons. The conserved mitochondrial-encoded COX1- and COX2-subunits are the heme- and copper-center containing core subunits that catalyze water formation. COX1 and COX2 initially follow independent biogenesis pathways creating assembly modules with subunit-specific, chaperone-like assembly factors that assist in redox centers formation. Here, we find that COX16, a protein required for cytochrome c oxidase assembly, interacts specifically with newly synthesized COX2 and its copper center-forming metallochaperones SCO1, SCO2, and COA6. The recruitment of SCO1 to the COX2-module is COX16- dependent and patient-mimicking mutations in SCO1 affect interaction with COX16. These findings implicate COX16 in Cu A -site formation. Surprisingly, COX16 is also found in COX1-containing assembly intermediates and COX2 recruitment to COX1. We conclude that COX16 participates in merging the COX1 and COX2 assembly lines.
+Cytochrome c oxidase of the mitochondrial oxidative phosphorylation system reduces molecular oxygen with redox equivalent-derived electrons. The conserved mitochondrial-encoded COX1- and COX2-subunits are the heme- and copper-center containing core subunits that catalyze water formation. COX1 and COX2 initially follow independent biogenesis pathways creating assembly modules with subunit-specific, chaperone-like assembly factors that assist in redox centers formation. Here, we find that COX16, a protein required for cytochrome c oxidase assembly, interacts specifically with newly synthesized COX2 and its copper center-forming metallochaperones SCO1, SCO2, and COA6. The recruitment of SCO1 to the COX2-module is COX16- dependent and patient-mimicking mutations in SCO1 affect interaction with COX16. These findings implicate COX16 in CuA-site formation. Surprisingly, COX16 is also found in COX1-containing assembly intermediates and COX2 recruitment to COX1. We conclude that COX16 participates in merging the COX1 and COX2 assembly lines.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ COX16 is a conserved protein initially identified in yeast as required for the b
 
 ## Results
 
-## COX16 interacts with the MITRAC complex
+### COX16 interacts with the MITRAC complex
 
 In S. cerevisiae, Cox16 has been implicated in the biogenesis of cytochrome c oxidase (Baertling et al., 2015; Carlson et al., 2003). Human COX16 has so far not been analyzed for its function. Recent work on ScCox16 suggested a role in Cox1 biogenesis (Stiburek et al., 2009; Su and Tzagoloff, 2017). In agreement with this suggestion, we identified human COX16 in affinity purified MITRAC12-containing complexes by quantitative mass spectrometry using stable isotope labeling by amino acids in cell culture (SILAC) (Mick et al., 2012; Valnot et al., 2000). Accordingly, we identified COX16 among proteins that copurified specifically with COX1-containing assembly intermediates. To confirm the mass spectrometric data, we performed immunoisolation of MITRAC12, C12ORF62 and MITRAC7, all representing assembly factors for COX1 at different stages of the assembly process, from solubilized mitochondria. Established MITRAC components, such as COX1, COX4-1, as well as mitochondrial ribosomes, were efficiently copurified with the baits (Figure 1A). However, we observed that COX16 copuridfied solely with MITRAC12. Thus, we confirmed the mass spectrometric data but revealed that COX16 apparently only associates with a specific COX1 assembly state and is not a constitutive COX1-associated factor.
 
@@ -44,17 +44,17 @@ In S. cerevisiae, Cox16 has been implicated in the biogenesis of cytochrome c ox
 
 In Saccharomyces cerevisiae, Cox16 is an integral innermembrane protein with a mitochondrial targeting sequence at the N-terminus (Kim et al., 2012; Su and Tzagoloff, 2017; Tiranti et al., 1999). However, a comparison between the yeast and human primary sequence showed that human COX16 lacks a predictable Nterminal presequence (Figure 1B). Since, the human COX16 does not complement the yeast mutant strain (Carlson et al., 2003) we tested the submitochondrial localization of COX16. To this end, we performed hypo-osmotic swelling and carbonate extraction experiments. The recovery of COX16 in each sample was determined by western blot analysis using an antiserum directed against the C-terminus of the protein. COX16 was present in isolated mitochondria and only became accessible to protease treatment when the outer membrane was disrupted (Figure 1C). Since COX16 was resistant to carbonate extraction (Figure 1D) and has a predicted single transmembrane span, we concluded that Cox16 is an inner mitochondrial membrane protein with its C-terminus facing the intermembrane space (IMS).
 
-## COX16 is required for cytochrome c oxidase biogenesis
+### COX16 is required for cytochrome c oxidase biogenesis
 
 To assess the function of COX16, we generated a knockout of COX16 using CRISPR/Cas9-mediated disruption of both the alleles in HEK-293T cells. The first exon of the gene was targeted and the selected knockout clone was a compound heterozygote for 26-nucleotide deletion (16_42del) and a single nucleotide insertion (16_17insT). A premature stop codon was introduced in all alleles as a result of the mutations, leading to a complete lack of COX16 in these cells. We carried out steady state analyses of mitochondrial proteins isolated from wild type and COX16–/– cells. COX16–/– mitochondria displayed a marked reduction in the levels of the mitochondrially-encoded COX subunit COX2 and late assembling nuclear-encoded subunits such as COX6C (Figure 2A). In the course of our analyses, we also noted that the amount of FAM36A in mitochondria was varied between different mitochondrial preparations. Based on the comparison of several experiments, the slight reduction of FAM36A seen here did not appear to be linked to the presence or absence of COX16. In agreement with the observed reduction of COX proteins in the absence of COX16, COX16–/– cells also displayed growth retardation on glucose- and galactose-containing media (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32572/elife-32572-fig2-v2.jpg)
 
-**Figure 2.:** c oxidase biogenesis.(A) Isolated wild-type (WT), COX16 knockout (COX16–/–) and COX16 knockout expressing WT COX16 from the T-REx locus (COX16–/– Resc.) mitochondria were analyzed by western blotting. (Β) Cell count of wild-type (WT) and COX16 knockout (COX16–/–) grown in medium containing either glucose (left) or galactose (right). (C) Isolated mitochondria from (A), solubilized in 1% Digitonin and analyzed by BN-PAGE and western blotting, subjected with antisera against COX1, ATP5B and VDAC. CIV, complex IV. (D) Isolated mitochondria from (A), solubilized in 1% Digitonin and analyzed by BN-PAGE and in-gel activity assays for complex I (CI), IV (CIV) and V (CV). (E) Isolated mitochondria from (A), were solubilized in 1% N-Dodecyl β-D-maltoside (DDM) and analyzed by BN-PAGE and western blotting with indicated antisera. (F) Measurement of relative amount of cytochrome c oxidase (right) and enzyme activity (left); the mitochondria were isolated as mentioned in (A) (mean ±SEM and n = 3).
+**Figure 2.:** (A) Isolated wild-type (WT), COX16 knockout (COX16–/–) and COX16 knockout expressing WT COX16 from the T-REx locus (COX16–/– Resc.) mitochondria were analyzed by western blotting. (Β) Cell count of wild-type (WT) and COX16 knockout (COX16–/–) grown in medium containing either glucose (left) or galactose (right). (C) Isolated mitochondria from (A), solubilized in 1% Digitonin and analyzed by BN-PAGE and western blotting, subjected with antisera against COX1, ATP5B and VDAC. CIV, complex IV. (D) Isolated mitochondria from (A), solubilized in 1% Digitonin and analyzed by BN-PAGE and in-gel activity assays for complex I (CI), IV (CIV) and V (CV). (E) Isolated mitochondria from (A), were solubilized in 1% N-Dodecyl β-D-maltoside (DDM) and analyzed by BN-PAGE and western blotting with indicated antisera. (F) Measurement of relative amount of cytochrome c oxidase (right) and enzyme activity (left); the mitochondria were isolated as mentioned in (A) (mean ±SEM and n = 3).
 
 When we analyzed mitochondrial protein complexes by Blue Native-PAGE (BN-PAGE) and western blotting, we observed that mature cytochrome c oxidase was drastically reduced in the COX16–/– cells. As a loading control, the membranes were probed for VDAC. It is interesting to note that most of the COX1 in COX16–/– cells comigrated with the MITRAC assembly intermediate complex (Figure 2C). Moreover, we separated solubilized respiratory chain complexes by BN-PAGE and performed in-gel activity staining for complexes I, IV, and V. While the activities of complex V were similar between wild type and COX16 knockout mitochondria, complex IV activity appeared significantly reduced and complex I activity slightly increased at the level of the supercomplex (Figure 2D). When mitochondria were solubilized in DDM to dissociate supercomplexes, we observed that the absolute amount of mature cytochrome c oxidase was drastically affted in the COX16–/– cells and that COX1 was mainly present in faster migrating complexes (Figure 2E). For a quantitative assessment, we measured cytochrome c oxidase activity and quantified the amount of enzyme by ELISA. In COX16 knockout cells, the cytochrome c oxidase amount was reduced to ∼50% compared to the wild type control (Figure 2F, left). This reduction directly correlated with the reduction of complex IV activity to ∼65%, as compared to the control (Figure 2F, right). In view of all these results, we concluded that loss of COX16 in HEK-293T cells lead to a severe reduction of cytochrome c oxidase.
 
-## COX16 is required for COX2 assembly
+### COX16 is required for COX2 assembly
 
 To analyze the effect of absence of COX16 on mitochondrial protein synthesis, mitochondrial translation products were pulsed labeled with [35S]methionine. However, no significant differences were observed in the synthesis of either COX1, COX2, or any other protein (Figure 3A). This was further supported by quantifications of the labeled proteins. Since protein synthesis was apparently not affected, we addressed whether the reduction of COX1 or COX2 in COX16–/– cells was a result of reduced protein stability. Pulse chase analysis was carried out to follow the fate of newly synthesized COX1 or COX2 over the course of 24 hr (Figure 3B). (Surprisingly, we observed enhanced synthesis and stability of ATP6 and ATP8 in the absence of COX16.) Newly synthesized subunits are usually incorporated into the mature complex in the chosen time frame (Dennerlein et al., 2015; Leary et al., 2009). Interestingly, COX2 showed a marked reduction in stability in the absence of COX16 (Figure 3C). A similar but non significant reduction was observed for COX1; however, proteins such as ND3 remained unaffected.
 
@@ -64,7 +64,7 @@ To analyze the effect of absence of COX16 on mitochondrial protein synthesis, mi
 
 To address whether the observed reduction in COX2 amounts correlated with a defect in the assembly process, labeled mitochondria-encoded proteins that assembled into mitochondrial protein complexes were analyzed by BN-PAGE followed by separation on the second dimension using SDS-PAGE. These analyses revealed a notable reduction of newly synthesized COX2 in mature cytochrome c oxidase (Figure 3D). To further analyze mitochondrial protein complexes with respect to the presence of nuclear-encoded proteins, mitochondria from wild type and COX16–/– cells were analysed by 2D-BN/SDS-PAGE and western blotting. In agreement with our previous result, the ratios of COX1 present in the mature monomeric protein complex IV and in MITRAC complexes changed significantly in absence of COX16. This finding suggested that COX1 accumulated in MITRAC complexes in these cells. Similarly, COX2 was barely visible in the mature cytochrome c oxidase. Based on these findings, we concluded that a lack of COX16 impacts the maturation of COX1-containing assembly intermediates.
 
-## COX16 is required for SCO1 interaction with COX2
+### COX16 is required for SCO1 interaction with COX2
 
 To clarify, if COX16 participated in the biogenesis of COX1 directly, we assessed association of COX16 with mitochondrial translation products. Therefore, we performed immunoisolations of COX16 from wild type cells after radiolabeling of mitochondrial translation products. Unexpectedly, in these analyses COX16 solely associated with the newly synthesized COX2 (Figure 4A). Accordingly, COX16 is involved in the biogenesis of the COX2 assembly module.
 
@@ -78,7 +78,7 @@ To address the fate of newly synthesized COX2 in the absence of COX16, we carrie
 
 Pathogenic mutations have been reported for both SCO1 and COA6 - the two proteins with which COX16 apparently predominantly associates. SCO1 patients suffer from hypertrophic cardiomyopathy, neonatal hepatopathy, and ketoacidotic comas, whereas mutations in COA6 cause fatal infantile cardioencephalomyopathy (Baertling et al., 2015; Banci et al., 2007; Calvo et al., 2012; Cobine et al., 2006; Stiburek et al., 2009; Valnot et al., 2000). Since the clinical presentation of the patients differed markedly, it was intriguing to assess if COX16-association was selectively disturbed. Therefore, we transiently expressed C-terminally FLAG-tagged COA6 or SCO1 along with variants harboring individual pathogenic substitutions - W59C (Ghosh et al., 2014) and W66R (Baertling et al., 2015) in case of COA6, G132S (Stiburek et al., 2009) and P174L (Valnot et al., 2000) in SCO1. We performed immunoisolations of the FLAG-tagged proteins. Interestingly, we observed a considerable loss of association of COX16 with the pathogenic variants of SCO1. At the same time, the mutant versions of SCO1 maintained their association with COX2 (Figure 4F). This finding indicated that the developed pathology in these patients was not due to defective COX2 recruitment but rather lack of association with COX16. In contrast, association of COX16 with pathogenic variants of COA6 was lost with a concomitant loss of interaction with COX2. In summary, COX16 is part of and directly involved in the biogenesis of the COX2 assembly module. Loss of COX16 association with SCO1 is a hallmark of the tested SCO1 patient models. To assess if COX16 was associated with respiratory chain supercomplexes, we isolated supercomplexes via the RIESKE protein of complex III. RIESKE purification led to coisolation of complex IV and I components. However, COX16 was not copurified in contrast to immunoisolation with the metallochaperone COA6 (Figure 4G). We conclude that COX16 does not act on respiratory chain supercomplexes.
 
-## COX16 facilitates integration of COX2 into MITRAC-COX1 modules
+### COX16 facilitates integration of COX2 into MITRAC-COX1 modules
 
 Based on the above considerations, we hypothesized that a block in early stages of COX1 assembly may reflect accumulation of intermediates in COX2 assembly, which can not engage with COX1 to promote further maturation steps. To test this directly, we utilized SURF–/– cells (Kim et al., 2012; Tiranti et al., 1999) and immunoisolated endogenous COX16 and COA6 after radiolabeling of mitochondrial translation products. In both cases, COX2 was specifically enriched in COX16 and COA6 eluates from wild type cells. However, the amount of COX2 was significantly enriched in COX16 and COA6 eluates from SURF–/– cells (Figure 5A). Hence, a block in COX1 assembly lead to accumulation of COX2-containing assembly modules containing COX16 or COA6. To substantiate the idea that COX16 associates with the MITRAC complexes only upon association with COX2, we targeted early steps of COX2 assembly. FAM36A is an early chaperone crucial for synthesis of COX2 (Bourens et al., 2014). Hence, we performed immunoisolations of MITRAC12 from wildtype and FAM36A–/– mitochondria. Upon loss of COX16, COX2 was no longer copurified with MITRAC12, indicating that COX16 interacted with MITRAC12 only after associating with COX2 (Figure 5B). To this end, we compared the amount of COX16, that associated with COX2 pathway constituents to that in complex with MITRAC12. Both COX16 and COX2, associated with MITRAC12 to a significantly lower magnitude as compared to other COX2 associated proteins (Figure 5C), indicating that this interaction might be a fairly transient one. We were able to enrich the MITRAC12-COX16 complex when we applied native purification via MITRAC12FLAG (Figure 5D). Under these conditions, we were able to also detect COX16 in complex with C12ORF62 (Figure 5E), which had not been apparent in the immunosiolations using the C12ORF62 antiserum (Figure 1A).
 
@@ -104,34 +104,457 @@ The finding of an interaction between human COX16 and COX1-containing assembly i
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>COX16</td>
+      <td>NCBI</td>
+      <td>NCBI Gene ID: 51241</td>
+      <td>First study to adress Human COX16</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293-Flp-InTM T-RexTM (HEK293T) Cell Line</td>
+      <td>ThermoFisher Scientific</td>
+      <td>RRID:CVCL_U421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293-Flp-InTM T-RexTM (HEK293T)-COX16-/-</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Cell line generated as described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293-Flp-InTM T-RexTM (HEK293T)-COX16-/- COX16 OE</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Cell line generated as described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pX330-COX16 gRNA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>cloning described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEGFPN1</td>
+      <td>Clonetech</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA5-COX16</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated from amplifying COX16 from WT HEK cDNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA5-COA6-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated from amplifying COA6 from WT HEK cDNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA5-COA6-W59C-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-COA6-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA5-COA6-W66R-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-COA6-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA5-SCO1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated from amplifying SCO1 from WT HEK cDNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA5-SCO1-G132S-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-SCO1-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCDNA5-SCO1-P174L-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-SCO1-FLAG</td>
+    </tr>
+    <tr>
+      <td>Biological sample ()</td>
+      <td>N/A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MITRAC12</td>
+      <td>self made</td>
+      <td>PRAB3761</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>C12ORF62</td>
+      <td>self made</td>
+      <td>PRAB4844</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MITRAC7</td>
+      <td>self made</td>
+      <td>PRAB4843</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX16</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_10666854</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX1</td>
+      <td>self made</td>
+      <td>PRAB2035</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX4-1</td>
+      <td>self made</td>
+      <td>PRAB1522</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MRPL23</td>
+      <td>self made</td>
+      <td>PRAB1716</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MRPL1</td>
+      <td>self made</td>
+      <td>PRAB4969</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TOM70</td>
+      <td>self made</td>
+      <td>PRAB3280</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TACO1</td>
+      <td>self made</td>
+      <td>PRAB3627</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MITRAC15</td>
+      <td>self made</td>
+      <td>PRAB4814</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AB_259529</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX2</td>
+      <td>Abcam</td>
+      <td>ab110258</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM21</td>
+      <td>self made</td>
+      <td>PRAB3674</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VDAC</td>
+      <td>self made</td>
+      <td>PRAB1515</td>
+      <td>(1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SDHA</td>
+      <td>self made</td>
+      <td>PRAB4978</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rieske</td>
+      <td>self made</td>
+      <td>PRAB1512</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATP5B</td>
+      <td>self made</td>
+      <td>PRAB4826</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM44</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2204679</td>
+      <td>(1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NDUFB8</td>
+      <td>self made</td>
+      <td>PRAB3764</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NDUFA9</td>
+      <td>self made</td>
+      <td>PRAB1524</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LETM1</td>
+      <td>self made</td>
+      <td>PRAB538</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM23</td>
+      <td>self made</td>
+      <td>PRAB1527</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SCO1</td>
+      <td>self made</td>
+      <td>PRAB4980</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COA6</td>
+      <td>self made</td>
+      <td>PRAB5007</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX6C</td>
+      <td>self made</td>
+      <td>PRAB4950</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SCO2</td>
+      <td>self made</td>
+      <td>PRAB4982</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FAM36A</td>
+      <td>self made</td>
+      <td>PRAB4490</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SURF1</td>
+      <td>self made</td>
+      <td>PRAB1528</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>QuikChange Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>210515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KOD Hot Start DNA Polymerase</td>
+      <td>Merck</td>
+      <td>71086–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>First Strand cDNA Synthesis kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>K1612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Complex IV activity kit</td>
+      <td>Abcam</td>
+      <td>ab109910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GeneJuice</td>
+      <td>Merck</td>
+      <td>70967–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-FLAG M2 Affinity Gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>ThermoFisher Scientific</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protein-A SepharoseTM CL-4B</td>
+      <td>GE Healthcare</td>
+      <td>17-0963-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[35S]methionine</td>
+      <td>Hartmann Analytic</td>
+      <td>SCM-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetine dihydrochloride hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>219282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anisomycin</td>
+      <td>AppliChem</td>
+      <td>A7650,0025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuantTL 7.0 software</td>
+      <td>GE Healthcare</td>
+      <td>RRID:SCR_014246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.47 v</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>Biomatters Ltd</td>
+      <td>RRID:SCR_010519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism5</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HEK Flp-In T-REx 293 (Invitrogen, Carlsbad, CA) (HEK-293T) were cultured in DMEM, supplemented with 10% [v/v] fetal bovine serum (FBS) (GIBCO, Invitrogen), 2 mM L-glutamine and 50 μg/ml uridine at 37°C under a 5% CO2 humidified atmosphere. The cell lines were authenticated by STR profiling using eight different and highly polymorphic short tandem repeat loci at the Leibniz-Institut DSMZ, Braunschweig, Germany. All cell lines were regularly monitored for mycoplasma. Cell were treated either with 20 μg/ml emetine (Sigma-Aldrich GmbH, Munich, Germany) for 6 hr or with 50 μg/ml thiamphenicol (Sigma-Aldrich) for 2 days in DMEM medium, for inhibition of cytosolic or mitochondrial translation, respectively. Transfections were performed according to manufacturer’s recommendations using GeneJuice (Novagen, Merck KGaA, Darmstadt, Germany). Briefly, approximately 300,000 cells/25 cm2 were transfected using 4 μl of transfection reagent and 1 μg of DNA. Cells were either harvested or subjected to drug selection, 48 hr after transfections. COX16-/- HEK-293T cell line was generated applying the CRISPR/Cas9 technology as previously described (Ran et al., 2013; Richter-Dennerlein et al., 2016). Briefly, oligonucleotides GCGAAAAGCACGCATCACCG and CGGTGATGCGTGCTTTTCGC containing the guide sequences were annealed and ligated into the pX330 vector. HEK-293T cells were co-transfected with pX330 and with the pEGFP-N1 plasmid. After three days, single cells expressing GFP were sorted by flowcytometry into 96-well plates. After colony expansion, single colonies were screened by immunoblotting.
 
-## Mitochondrial isolation and protein localization assays
+### Mitochondrial isolation and protein localization assays
 
 Isolation of mitochondria from cultured cells was performed as described previously (Dennerlein et al., 2015; Richter-Dennerlein et al., 2016). Bradford analysis using BSA as a standard was used to measure protein concentrations. Carbonate extraction and mitochondrial swelling experiments were implemented as described previously (Fiumera et al., 2007; Mick et al., 2012; Soto et al., 2012). Briefly, for carbonate extraction of proteins, isolated mitochondria were incubated in 100 mM Na2CO3 (pH 10.8 or 11.5) followed by centrifugation for 30 min at 100,000 x g at 4°C. Analysis of submitochondrial localization of proteins was performed by protease protection assay using proteinase K (PK). Isolated mitochondria were resuspended either in SEM buffer (250 mM sucrose, 1 mM EDTA, and 10 mM MOPS [pH 7.2]), to osmotically stabilize them, or in EM buffer (1 mM EDTA, and 10 mM MOPS [pH 7.2]), to rupture the outer mitochondrial membrane. As a positive control, mitochondrial membranes disrupted either by 1% Triton X-100 for carbonate extraction experiments or by sonication for submitochondrial localization experiments.
 
-## In vivo labeling of mitochondrial translation products with [35S]methionine
+### In vivo labeling of mitochondrial translation products with [35S]methionine
 
 In vivo labeling in human cells was performed as described previously (Chomyn, 1996; Fiumera et al., 2009; Khalimonchuk and Winge, 2008). Inhibition of cytosolic translation was achieved by treating cells either with 100 μg/ml emetine during pulse experiments, or with 100 μg/ml anisomycin (Sigma-Aldrich) in pulse chase experiments. Mitochondrial translation products were labeled with 0.2 mCi/ml [35S]methionine for 1 hr. For chase experiments, the radioactive medium was substituted by adding fresh growth medium, followed by incubation at 37°C under 5% CO2 for the indicated time points. The cells were harvested in 1 mM EDTA/PBS. The samples were further analyzed either by SDS- or BN-PAGE and processed for affinity purification procedures. Signals were obtained by auto-radiography.
 
-## BN-PAGE analysis
+### BN-PAGE analysis
 
 Standard protocol for BN-PAGE analysis was followed as previously described (Baertling et al., 2015; Ghosh et al., 2016; Mick et al., 2012; Pacheu-Grau et al., 2015; Stroud et al., 2015). In short, to separate native protein complexes, whole cells or isolated mitochondria were incubated in lysis buffer (1% digitonin, 50 mM Tris-HCl [pH 7.4], 20 mM MgCl2, 50 mM NaCl, 10% glycerol, and 1 mM PMSF). To remove the non-solubilized material the lysate was centrifuged at 20,000 xg for 15 min at 4°C. The supernatant was mixed with BN-loading buffer (0.5% Coomassie Brilliant Blue G-250, 50 mM 6-aminocaproic acid, 10 mM Bis-Tris/HCl [pH 7]) and subjected to BN-PAGE analysis. In-gel activity assays were performed according to published procedures (Bourens et al., 2014; Wittig et al., 2006).
 
-## Cytochrome C Oxidase activity and quantitation assay
+### Cytochrome C Oxidase activity and quantitation assay
 
 Specific activity and relative amount of cytochrome c oxidase were determined according to the manufacturer’s instructions using Complex IV Human Specific Activity Microplate Assay Kit (Mitosciences, Abcam, Cambridge, United Kingdom). Total 15 μg of cell lysate was loaded per well. Cytochrome c oxidase activity was calculated by measuring the oxidization of cytochrome c and the decrease of absorbance at 550 nm. To measure the relative COX amounts, the lysates from the same batch were incubated with a specific cytochrome c oxidase antibody, conjugated to alkaline phosphatase. The increase of absorbance at 405 nm was measured.
 
-## Affinity purification procedures
+### Affinity purification procedures
 
 Whole cells or isolated mitochondria (0.5 mg) were resuspended in lysis-buffer (50 mM Tris-HCl [pH 7.4], 150 mM NaCl, 0.1 mM EDTA, 10% glycerol, 1 mM PMSF, and 1% digitonin) to a final concentration of 1 mg/ml. This was followed by an incubation at 30 min at 4°C under mild agitation. Non-solubilized material was removed by centrifugation at 20,000 xg, 4°C for 15 min. Supernatants were incubated with anti-FLAG-agarose (Sigma-Aldrich) or ProteinA-Sepharose (GE Healthcare, Chicago, IL) conjugated with specific or control antibodies. After washing of the resin, proteins were eluted with FLAG peptides or by pH shift (0.1 M Glycin [pH 2.8]).
 
-## Miscellaneous
+### Miscellaneous
 
 SDS-PAGE and western-blotting of proteins to PVDF membranes (Millipore, Merck KGaA, Darmstadt, Germany) was performed using standard methods. Primary antibodies were raised in rabbits or purchased (anti-COX16, Protientech). HRP-coupled secondary antibodies applied to antigen–antibody complexes and detected by enhanced chemiluminescence on X-ray films.
 
-## Statistical analyses
+### Statistical analyses
 
 Data are expressed as mean ± SEM. Significant differences between groups were analyzed using Prism five software (GraphPad Software, San Diego, CA) by unpaired Student t test and ANOVA, unless otherwise noted.

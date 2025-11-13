@@ -52,23 +52,143 @@ Previous experiments in corvids have demonstrated prosocial behavior in azure-wi
 
 Here, we present the first systematic comparison of prosocial behavior across multiple species in a taxonomic group outside the primate order. We measured prosociality in 11 social groups of eight corvid species (total N = 72 individuals), which were all highly social (i.e. living and foraging in social groups during at least some stages of their life history; Komeda et al., 1987; Uhl et al., 2019; Kubitza et al., 2015; Clayton and Emery, 2007; Braun et al., 2012; Miyazawa et al., 2020; Holzhaider et al., 2011; Ekman and Griesser, 2016), but varied in the expression of cooperative breeding and colonial nesting (Figure 1d). We used a standardized experimental paradigm developed in primates (i.e. the GSP; Burkart et al., 2014), which has recently been adapted and successfully applied in birds (Horn et al., 2016). To keep the results comparable, we kept the procedures as similar as possible to the original study with primates (Burkart et al., 2014). In the prosocial test of the GSP, individuals can land on the provisioning perch of the apparatus, and consequently make food available to their group members via a seesaw mechanism (Figure 1a). Crucially, the bird on the provisioning perch cannot obtain any food itself and it has to remain on the provisioning perch until another individual arrives on the other side of the apparatus (position 1; see Figure 1b) to take the food (see Video 1; see Materials and methods section for details). Habituation, training and two control conditions (i.e. empty control: no food available; blocked control: access to food blocked; see Video 2 and Video 3) ascertain that the individuals understand the experimental task and that landing on the provisioning perch in the prosocial test does not reflect the absence of sufficient inhibitory control (Figure 1c). In addition to prosocial tendencies, the GSP also measures how even the access to sequentially provided food is across the individuals of a given social group (i.e. whether one or few individuals monopolize the food source and obtain most of the food or whether similar numbers of food pieces are obtained by all group members; Figure 1c). In primates, this evenness score has been used as a proxy for social tolerance (Burkart et al., 2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58139/elife-58139-fig1-v2.jpg)
+
+**Figure 1.:** (a) Experimental set-up as seen from the inside of the aviary with a bird sitting on the provisioning perch, thereby making food available to the group. (b) Schematic of the apparatus with location of positions 0 and 1 in relation to the provisioning perch. (c) Experimental procedure; habituation and training phases are given in blue, test phases are given in yellow; subjects needed to reach a given criterion to be included in the analysis of phases II and IV-VI; see supplementary information for details. (d) Overview of the tested species and their key social system differences; orange boxes represent the presence of obligate or facultative cooperative breeding for the respective species, green boxes represent the presence of colonial nesting.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58139/elife-58139-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Phylogenetic relationships were taken from an analysis of 34 corvid species based on DNA sequences of the mitochondrial control region (Haring et al., 2012). Orange boxes represent the presence of obligate or facultative cooperative breeding for the respective species, green boxes represent the presence of colonial nesting.
+
+![Video 1.](https://cdn.elifesciences.org/articles/58139/elife-58139-video1.mp4.jpg)
+
+**Video 1.:** Example videos of prosocial test trials taken from three species (i.e. azure-winged magpies, carrion crows, common ravens). Food is placed on the recipient side (position 1). Food can be provided to a group member, if an individual lands on the provisioning perch.
+
+![Video 2.](https://cdn.elifesciences.org/articles/58139/elife-58139-video2.mp4.jpg)
+
+**Video 2.:** Example videos of empty control trials taken from three species (i.e. azure-winged magpies, carrion crows, common ravens). No food is placed on the recipient side (position 1). Therefore, no food can be provided to group members.
+
+![Video 3.](https://cdn.elifesciences.org/articles/58139/elife-58139-video3.mp4.jpg)
+
+**Video 3.:** Example videos of blocked control trials taken from three species (i.e. azure-winged magpies, carrion crows, common ravens). Food is placed on the recipient side (position 1), but access to the food is blocked with a fine net. Therefore, although food is visible, no food can be provided to the group members.
+
 To assess the explanatory value of cooperative breeding and colonial nesting for prosocial behavior in corvids, we used linear regression models and an information-theoretic approach to model selection and model averaging. Additionally, since sex differences have been observed in prosocial food sharing in natural observations (von Bayern et al., 2007; Scheid et al., 2008; Chiarati et al., 2011) and experiments (Schwab et al., 2012), we also included the individuals’ sex into the model. Further, to test the extent to which common ancestry affected the birds’ prosocial tendencies, we calculated a phylogenetically controlled mixed-effects model (for phylogenetic relationships between the tested species, see Figure 1—figure supplement 1). Finally, because within a species prosocial behavior might be expressed differently between the sexes (Massen et al., 2020; Schwab et al., 2012; von Bayern et al., 2007) and between age classes (Chiarati et al., 2011), we also examined intraspecific provisioning patterns.
 
 Our results demonstrate that cooperative breeding is positively associated with the expression of prosocial behavior in corvids, although this effect is qualified by interactions between sex and both the factors cooperative breeding and colonial nesting, which were also important for explaining the occurrence of prosocial behavior in the birds. Additional separate analyses for the two sexes showed that both cooperative breeding and colonial nesting positively affected prosociality, albeit differently for the two sexes. While the effect of cooperative breeding seemed to be driven by females’ prosociality, colonial nesting only predicted males’ prosocial actions. The phylogenetically controlled model confirmed the importance of both cooperative breeding and colonial nesting and showed that the phylogenetic signal was weak in terms of prosocial behaviors in corvids. Same-sex provisioning dyads were equally common as opposite-sex dyads and we observed both provisioning from adults to juveniles and vice versa. Our results highlight that both alloparental care and increased social tolerance are important evolutionary trajectories for the emergence of prosocial behavior in birds.
 
 ## Results
 
-## Between-species variation in prosocial provisioning and evenness of access to food
+### Between-species variation in prosocial provisioning and evenness of access to food
 
 Across all species and groups, the amount of food provided by those birds that discriminated between the prosocial test and both control conditions (i.e. landed significantly more often on the provisioning perch when they could provide food to their group members than when there was no food or when access to the food was blocked for the recipient; N = 12; four azure-winged magpies, two carrion crows, two Eurasian jackdaws, one rook, one New-Caledonian crow, one common raven, one large-billed crow; see Appendix 1—table 1), showed high variability and ranged from 0% to 98% (Table 1). The evenness of the birds’ access to food within the group, which was measured in a different phase of the experiment (see Appendix 2) and which has been proposed as a proxy for social tolerance in primates in the original study (Burkart et al., 2014), was medium to high in all tested species (cf. 20; Table 1) and was not correlated with provided food values across groups (Spearman’s rho = −0.326, p=0.327, N = 11).
 
-## Linking cooperative breeding and colonial nesting with prosocial behavior
+**Table 1.**
+ Prosocial food provisioning and evenness of access to food across all tested species and groups.Given are the classifications of cooperative breeding and nesting type for the tested species, as well as the percentage of food provided in the prosocial test and Pielou’s J’ as a measure for evenness of access to food for each of the groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Cooperative breeding*</th>
+      <th>Nesting type†</th>
+      <th>Group (N)</th>
+      <th>Phase IV provided food‡</th>
+      <th>Phase II Pielou’s J’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Azure-winged magpie</td>
+      <td rowspan="2">Yes</td>
+      <td rowspan="2">Colonial</td>
+      <td>1 (5)</td>
+      <td>98%</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>2 (4)</td>
+      <td>64%</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Carrion crow</td>
+      <td>yes</td>
+      <td>Territorial</td>
+      <td>1 (6)</td>
+      <td>57%</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>Eurasian jackdaw</td>
+      <td>no</td>
+      <td>Colonial</td>
+      <td>1 (14)</td>
+      <td>33%</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Rook</td>
+      <td>no</td>
+      <td>Colonial</td>
+      <td>1 (12)</td>
+      <td>2%</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td rowspan="2">New-Caledonian crow</td>
+      <td rowspan="2">no§</td>
+      <td rowspan="2">Territorial</td>
+      <td>1 (3)</td>
+      <td>70%</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>2 (2)</td>
+      <td>0%</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>Common raven</td>
+      <td>no</td>
+      <td>Territorial</td>
+      <td>1 (9)</td>
+      <td>21%</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Large-billed crow</td>
+      <td>no</td>
+      <td>Territorial</td>
+      <td>1 (9)</td>
+      <td>16%</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Siberian jay</td>
+      <td rowspan="2">no</td>
+      <td rowspan="2">Territorial</td>
+      <td>1 (5)</td>
+      <td>0%</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>2 (3)</td>
+      <td>0%</td>
+      <td>0.91</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Classifications after (Cockburn, 2006).†Classifications after (Madge and Burn, 1999).‡In line with the original publication (Burkart et al., 2014), provided food was calculated as the corrected percentage of food provisioning per group in the last two test sessions of the prosocial test, only by those individuals that passed the criterion of landing significantly more often in the test compared to both control conditions. Note that raw and corrected measures of food provisioning are highly correlated (Spearman’s rho = 0.892, p≤0.001, N = 11).§Occurrence of cooperative breeding is classified as unknown, but assumed as absent according to Cockburn, 2006._
+
+### Linking cooperative breeding and colonial nesting with prosocial behavior
 
 The averaged model identified the main factors sex and cooperative breeding as having a high explanatory degree for the number of landings on the provisioning perch in the prosocial test (i.e. making food available for conspecifics; see Figure 1a and Video 1; model results in Figure 2—source data 1). Overall, individuals from cooperatively breeding species landed more often on the provisioning perch than individuals from non-cooperatively breeding species (Figure 2a), and males landed more often than females (Figure 2b). These main effects were qualified by the high explanatory degree of the interaction terms of both cooperative breeding and nesting type with sex (Figure 2—source data 1), meaning that the main effects were conditional upon one another.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58139/elife-58139-fig2-v2.jpg)
 
-**Figure 2.:** The box plots represent medians (horizontal lines), inter-quartile ranges (boxes), as well as minima and maxima (whiskers). All data are represented with dots. Dots not encompassed by the whiskers are outliers. Dot colors in all panels indicate the species according to the legend in the top right panel.Figure 2—source data 1.Given are estimates, standard errors (SE), z-values, sum of AICc weights (SWAICc), and number of models containing the specific factor (NModels) after model averaging. Factors with a sum of AICc weights larger than 0.5 and whose SE of the estimates did not overlap 0 were considered to have a high explanatory degree and are given in bold. Number of individuals: N = 51.Figure 2—source data 2.A) and male birds (B).Given are estimates, standard errors (SE), z-values, sum of AICc weights (SWAICc), and number of models containing the specific factor (NModels) after model averaging. Factors with a sum of AICc weights larger than 0.5 and whose SE of the estimates did not overlap 0 were considered to have a high explanatory degree and are given in bold.
+**Figure 2.:** The box plots represent medians (horizontal lines), inter-quartile ranges (boxes), as well as minima and maxima (whiskers). All data are represented with dots. Dots not encompassed by the whiskers are outliers. Dot colors in all panels indicate the species according to the legend in the top right panel.
 
 In order to ascertain the robustness of our model, we re-did the analysis, always excluding one species at a time. Four out of eight models had the same results as before (removed species: Siberian jays, N = 48; rooks, N = 48; common ravens, N = 44; carrion crows, N = 45), while nesting type had an added high explanatory degree in two models (removed species: New-Caledonian crows, N = 46; azure-winged magpies, N = 43). In one model nesting type, sex, and the interaction between these two factors had a high explanatory degree, while cooperative breeding and the interaction between cooperative breeding and sex were only marginally important (i.e. SWAICc = 0.44; removed species: large-billed crows, N = 42). Finally, in one model the intercept-only model was included in the selection of best-fitting models (removed species: Eurasian jackdaws, N = 41), implying that the averaged model was not robust. Overall, these results are consistent and corroborate the robustness of our original results. We specifically note that the Siberian jays were the only species tested in the wild and that they did not successfully provide food to their group members, which could have been an artifact of them being tested in the wild rather than their social system. The fact that the results remained practically identical after excluding the Siberian jays (see Appendix 1—table 4) suggests that the results obtained with the complete dataset were not driven by the Siberian jays per se.
 
@@ -76,17 +196,17 @@ When splitting the data by sex due to the high explanatory degree of the interac
 
 When looking only at the landings of the birds that discriminated between the prosocial test and both control conditions (N = 12), we found that there was a non-significant trend for the birds from colonial species to land more often on the provisioning perch (N = 7, median = 30, IQR = 29–34) than the birds from territorial species (N = 5, median = 23, IQR = 22–24; Mann-Whitney: W = 30, p=0.0505). The birds from cooperatively breeding species (N = 6, median = 29.5, IQR = 24–35) did not differ significantly in the number of their landings from the individuals from species that do not breed cooperatively (N = 6, median = 26.5, IQR = 22.5–29; Mann-Whitney: W = 13, p=0.470).
 
-## Testing the effect of phylogeny on prosocial behavior
+### Testing the effect of phylogeny on prosocial behavior
 
 As in the original model, also a phylogenetically controlled model showed that the main factors cooperative breeding and sex significantly predicted the number of landings on the provisioning perch in the prosocial test (cooperative breeding: estimate = 10.001, 95% HPD interval [0.082, 19.886], Pmcmc = 0.048; sex: estimate = 19.660, 95% HPD interval [8.899, 30.292], Pmcmc = 0.0002), and that these main effects were again qualified by significant interactions between both cooperative breeding and sex (Estimate = −16.394, 95% HPD interval [−30.183,–2.329], Pmcmc = 0.020) and nesting type and sex (Estimate = −20.576, 95% HPD interval [−33.588,–8.551], Pmcmc = 0.002; see Appendix 1—table 5 for full model results). The phylogenetic signal was weak (mean λ = 0.035; posterior mode = 0.001; 95% HPD interval [0.000, 0.185]).
 
-## Dyad-level variation in prosocial provisioning
+### Dyad-level variation in prosocial provisioning
 
 Opposite-sex provisioning did not occur more often than same-sex provisioning in the tested species, both when considering all individuals in each group (Wilcoxon: N = 7, T+=7, p=0.271) and when only considering provisioning by these individuals that discriminated between the test and the control conditions in each group (N = 7, T+=10, p=0.553). There were species differences in the distribution of sex dyad types, which could, however, not be linked back to either cooperative breeding or nesting type (see Figure 3 and Figure 3—source data 1 for details). With regard to age-dependent provisioning, we had very little data, as only five groups from three species contained juvenile individuals (i.e. azure-winged magpie group 2; New Caledonian crow groups 1 and 2; Siberian jay groups 1 and 2). While there was no uniform pattern among those four groups, we did witness a juvenile providing food to adults in the azure-winged magpie group (33% of total provided food) and the one New Caledonian crow group where provisioning occurred (95% of total provided food).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58139/elife-58139-fig3-v2.jpg)
 
-**Figure 3.:** The bars represent the percentage of food provided in the last two test sessions of the prosocial test in those seven groups where provisioning occurred and for which we had data on the individuals’ sex and the dyad identities. Full bars comprise the individuals that passed the criterion of landing significantly more in the test versus both control conditions. Striped bars comprise all individuals. Dyad types: male donor – male recipient (MM), female donor – female recipient (FF), male donor – female recipient (MF), female donor – male recipient (FM). All possible dyads: azure-winged magpies, group 1, 3 MM, 1FF, 6MF/FM; azure-winged magpies, group 2, 0 MM, 3FF, 3MF/FM; carrion crows, 1 MM, 6FF, 8MF/FM; Eurasian jackdaws, 21 MM, 21FF, 49MF/FM; rooks 15 MM, 15FF, 36MF/FM; common ravens, 6 MM, 10FF, 20MF/FM; New Caledonian crows, group 1, 1 MM, 0FF, 2MF/FM.Figure 3—source data 1.
+**Figure 3.:** The bars represent the percentage of food provided in the last two test sessions of the prosocial test in those seven groups where provisioning occurred and for which we had data on the individuals’ sex and the dyad identities. Full bars comprise the individuals that passed the criterion of landing significantly more in the test versus both control conditions. Striped bars comprise all individuals. Dyad types: male donor – male recipient (MM), female donor – female recipient (FF), male donor – female recipient (MF), female donor – male recipient (FM). All possible dyads: azure-winged magpies, group 1, 3 MM, 1FF, 6MF/FM; azure-winged magpies, group 2, 0 MM, 3FF, 3MF/FM; carrion crows, 1 MM, 6FF, 8MF/FM; Eurasian jackdaws, 21 MM, 21FF, 49MF/FM; rooks 15 MM, 15FF, 36MF/FM; common ravens, 6 MM, 10FF, 20MF/FM; New Caledonian crows, group 1, 1 MM, 0FF, 2MF/FM.
 
 ## Discussion
 
@@ -112,17 +232,17 @@ The current study is a first attempt to determine how generalizable the predicti
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 We tested 11 social groups of 8 corvid species (total N = 72 individuals: azure-winged magpies: group 1 N = 5, group 2 N = 4; carrion crows: N = 6; rooks: N = 12; Eurasian jackdaws: N = 14; New-Caledonian crows: group 1 N = 3, group 2 N = 2; common ravens: N = 9; large-billed crows: N = 9; Siberian jays: group 1 N = 5, group 2 N = 3; see Appendix 2—table 1 for information on study sites, subject and husbandry details, and testing period for all study groups). We recruited and tested as many species and birds per species as possible, which resulted in the sample we describe here. Consequently, we did not perform any a priori sample size calculations. Biological replications could be performed for the three species for which we could test two independent social groups (i.e. azure-winged magpies, New-Caledonian crows, Siberian jays).
 
 Besides Siberian jays, all species were tested in captivity, in their home aviary and social group prior to their first feeding of the day. High-quality food reward was used to encourage participation in the experiment. The two Siberian jay groups were tested in the wild near the center of their territory. Here, less preferred food was provided near the apparatus to keep the group near the apparatus. The birds from all species were well habituated to participating in behavioral experiments (see Appendix 2 for habituation procedures and criteria).
 
-## Ethical note
+### Ethical note
 
 The study followed the Guidelines for the Use of Animals (Vitale et al., 2018), in accordance with national legislations. All animal care and data collection protocols were reviewed and approved by the ethical boards of the respective research institutions (see Appendix 2—table 1).
 
-## Apparatus and procedure
+### Apparatus and procedure
 
 We used the same apparatus with a seesaw mechanism as a previous study (Horn et al., 2016; Figure 1a), adjusted in size and weight to the different species. The apparatus consisted of a board outside the aviary, on which the food item was placed, and two sticks reaching through the wire mesh into the aviary on one side of the board with a provisioning perch fixed at their end. For the Siberian jays, the board was placed inside a wire mesh container, preventing individuals to access the board, but allowing them to freely access the provisioning perch on the outside. The apparatus’ mechanism was balanced so that in the starting position the perch pointed up and the board pointed down. When a bird landed on the provisioning perch, its weight moved the seesaw down (Figure 1a). As soon as the bird left the perch, the apparatus automatically moved back to its original position. Near the other side of the board, inside the aviary, were perches that were not connected to the apparatus’ seesaw mechanism. Food could be put on the board in two positions: one in front of the provisioning perch (Position 0) and one on the other side of the board (Position 1) out of reach from the perch. If food was placed in position 0, a subject could deliver food to itself by landing on the provisioning perch, after which the food slid toward the wire mesh and in reach. If food was placed in position 1 and a bird landed on the provisioning perch, it could not obtain the food itself. If it stayed on the perch long enough for another group member to arrive in position 1, it made food available to this group member (Figure 1b, Video 1). However, if the bird left the provisioning perch before another group member arrived, the apparatus moved back in the starting position and the food became unavailable. Therefore, multiple landings on the provisioning perch were possible within one trial.
 
@@ -130,7 +250,7 @@ We replicated the procedures of a previous study (Horn et al., 2016). The experi
 
 In the access to food assessment (phase II) the apparatus’ seesaw mechanism was fixed so that any bird landing in position one could obtain food. In two sessions, we placed food pieces sequentially in position one and recorded how many food pieces each group member obtained. In the group service test (phase IV), the seesaw mechanism was fully released and food was placed in position 1, so that a bird landing on the provisioning perch could only make food available to the group, not to itself (Video 1). On alternating days, we conducted empty control sessions, which were identical to test sessions except that no food was placed on the apparatus and therefore no food was available to be provided for the group members (Video 2). In the blocked control (phase V), access to food in position one was blocked with a fine net. Therefore, although food was visible, no food could be provided for the group members (Video 3). This was done to test whether landing was simply elicited by the presence of food. To ensure that the birds had comparable motivation levels (e.g. hunger) in all conditions, we conducted all sessions at the same testing times per day for each respective species. For the analysis of phases IV and V, we used only the summed data from the last two sessions (sessions 4 and 5) of each condition, because by then each bird had had the opportunity to learn about the consequences of operating the apparatus. The group service retest (phase VI) represents a technical replication and was identical to phase IV and consisted of two prosocial test and two empty control sessions. In all sessions of phases IV to VI, we interspersed motivation trials after every five regular trials where food was placed in position 0 to ensure that the birds were still motivated to participate in the experiment (see Appendix 1—table 6). We recorded how often each individual landed on the provisioning perch during the regular trials. Additionally, we recorded which animal obtained the food and which animal provided the food in phases IV and VI.
 
-## Data analysis
+### Data analysis
 
 Providing/receiving of food and landings on the apparatus were scored live by the experimenter and confirmed via later video scoring. A second rater, who was not the experimenter for the respective group, scored the behavioral variables for 24% of all 270 test sessions, which included 50% of all sessions on which the main analyses were based. Inter-rater reliabilities were excellent across all groups (mean ICCGroup ± SD = 0.975±0.041, minimum ICCGroup = 0.878, maximum ICCGroup = 0.998). All analyses were based on the data from the first rater. Results from the two groups of azure-winged magpies were previously reported in Horn et al., 2016.
 

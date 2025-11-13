@@ -36,21 +36,21 @@ Computational modeling is a powerful technique, but it can never replace good ex
 
 So, how should you go about designing a good experiment with computational modeling in mind? While this process will always be something of an art form, we suggest that you ask yourself the following questions in order to optimize your experimental design:
 
-## What scientific question are you asking?
+### What scientific question are you asking?
 
 Although this sounds obvious, it is easy to get sucked into an experimental design without ever asking the most basic questions about your goals. What cognitive process are you targeting? What aspect of behavior are you trying to capture? What hypotheses are you trying to pick apart? For example, you may be trying to identify how working memory contributes to learning or how behavioral variability can be used to explore. Keeping your scientific goals in mind when you design the task can save much time later on.
 
-## Does your experiment engage the targeted processes?
+### Does your experiment engage the targeted processes?
 
 This may be a difficult question to answer, and it may require expert knowledge or piloting. However, you need to know that the experimental design actually engages the processes that you are trying to model.
 
-## Will signatures of the targeted processes be evident from the simple statistics of the data?
+### Will signatures of the targeted processes be evident from the simple statistics of the data?
 
 In addition to engaging the processes of interest, the best experiments make these processes identifiable in classical analyses of the behavioral data (Palminteri et al., 2017). For example, if you are investigating working memory contributions to learning, you may look for a signature of load on behavior by constructing an experimental design that varies load, to increase chances of probing working memory’s role in learning. Seeing signs of the computations of interest in simple analyses of behavior builds confidence that the modeling process will actually work. In our experience, computational modeling is rarely informative when there is no evidence of an effect in model-independent analyses of behavior.
 
 To answer these questions, it is important to have a clear theoretical hypothesis of what phenomenon is to be modeled. In fact, although designing a good experiment is the first step, it goes hand-in-hand with designing a good model, and the two steps should ideally be done in parallel.
 
-## But what if I’m not an experimentalist?
+### But what if I’m not an experimentalist?
 
 Computational modeling is hard and many of the best modelers are specialists who never run experiments of their own. Instead these researchers test their models against published findings, publicly available datasets, or even, if they are lucky, unpublished data from their experimental colleagues. Such specialist modelers might feel that they can safely ignore this first point about experimental design and instead focus on explaining the data they can get. We strongly urge them not to. Instead we urge these specialist modelers to always be considering better ways in which their models could be tested. Such experimental thinking helps you to be more concrete in your ideas and to think about how your model might apply outside of the context for which it was designed. In addition, thinking experimentally — and even better talking with experimentalists — forces you to engage with behavior as it actually is rather than as you would like it to be, which in turn can lead to new insights. Finally, by proposing concrete experimental designs, it is easier to convince your experimental colleagues to actually test your ideas, which is surely the goal if we are to move the field forward.
 
@@ -58,9 +58,9 @@ Computational modeling is hard and many of the best modelers are specialists who
 
 The ten rules in this paper are quite general, but we will illustrate many of our points using simple examples from our own field of reinforcement learning. Code for implementing all of these examples is available on GitHub (https://github.com/AnneCollins/TenSimpleRulesModeling) (Collins and Wilson, 2019; copy archived at https://github.com/elifesciences-publications/TenSimpleRulesModeling). The goal of these example studies is to understand how people learn to maximize their rewards in a case where the most rewarding choice is initially unknown.
 
-More specifically, we consider the case in which a participant makes a series of T choices between K slot machines, or ‘one-armed bandits’, to try to maximize their earnings. If played on trial t, each slot machine, k, pays out a reward, rt, which is one with reward probability, μtk, and otherwise 0. The reward probabilities are different for each slot machine and are initially unknown to the subject. In the simplest version of the task, the reward probabilities are fixed over time.
+More specifically, we consider the case in which a participant makes a series of $T$ choices between $K$ slot machines, or ‘one-armed bandits’, to try to maximize their earnings. If played on trial $t$, each slot machine, $k$, pays out a reward, $r_{t}$, which is one with reward probability, $\mu_{t}^{k}$, and otherwise 0. The reward probabilities are different for each slot machine and are initially unknown to the subject. In the simplest version of the task, the reward probabilities are fixed over time.
 
-The three experimental parameters of this task are: the number of trials, T, the number of slot machines, K, and the reward probabilities of the different options, μtk, which may or may not change over time. The settings of these parameters will be important for determining exactly what information we can extract from the experiment. In this example, we will assume that T=1000, K=2, and that the reward probabilities are μt1=0.2 for slot machine 1 and μt2=0.8 for slot machine 2.
+The three experimental parameters of this task are: the number of trials, $T$, the number of slot machines, $K$, and the reward probabilities of the different options, $\mu_{t}^{k}$, which may or may not change over time. The settings of these parameters will be important for determining exactly what information we can extract from the experiment. In this example, we will assume that $T=1000$, $K=2$, and that the reward probabilities are $\mu_{t}^{1}=0.2$ for slot machine 1 and $\mu_{t}^{2}=0.8$ for slot machine 2.
 
 ## Design good models
 
@@ -72,15 +72,15 @@ More pragmatically, there are a number of different approaches for designing mod
 
 Regardless of the approach (or, better yet, approaches) that you take to design your models, it is important to keep the following points in mind:
 
-## A computational model should be as simple as possible, but no simpler
+### A computational model should be as simple as possible, but no simpler
 
 Einstein’s old edict applies equally to models of the mind as it does to models of physical systems. Simpler, more parsimonious models are easier to fit and easier to interpret and should always be included in the set of models under consideration. Indeed, formal model comparison techniques (described in detail in Appendix 2) include a penalty for overly complex models, which are more likely to overfit the data and generalize poorly, and favor simpler models so long as they can account for the data.
 
-## A computational model should be interpretable (as much as possible)
+### A computational model should be interpretable (as much as possible)
 
 In the process of developing models that can account for the behavioral data, researchers run the risk of adding components to a model that are not interpretable as a sensible manipulation of information. For example, a negative learning rate is difficult to interpret in the framework of reinforcement learning. Although such uninterpretable models may sometimes improve fits, nonsensical parameter values may indicate that something important is missing from your model, or that a different cognitive process altogether is at play.
 
-## The models should capture all the hypotheses that you plan to test
+### The models should capture all the hypotheses that you plan to test
 
 While it is obviously important to design models that can capture your main hypothesis, it is even more important to design models that capture competing hypotheses. Crucially, competing models should not be strawmen — they should have a genuine chance of relating to behavior in the task environment, and they should embody a number of reasonable, graded hypotheses. You should of course put equal effort into fitting these models as you do your favored hypothesis. Better yet, you shouldn’t have a favored hypothesis at all — let the data determine which model is the best fit, not your a priori commitment to one model or another.
 
@@ -88,15 +88,15 @@ While it is obviously important to design models that can capture your main hypo
 
 Once you have an experimental design and a set of computational models, a really important step is to create fake, or surrogate data (Palminteri et al., 2017). That is, you should use the models to simulate the behavior of participants in the experiment, and to observe how behavior changes with different models, different model parameters, and different variants of the experiment. This step will allow you to refine the first two steps: confirming that the experimental design elicits the behaviors assumed to be captured by the computational model. To do this, here are some important steps.
 
-## Define model-independent measures that capture key aspects of the processes you are trying to model
+### Define model-independent measures that capture key aspects of the processes you are trying to model
 
 Finding qualitative signatures (and there will often be more than one) of the model is crucial. By studying these measures with simulated data, you will have greater intuition about what is going on when you use the same model-independent measures to analyze real behavior (Daw et al., 2011; Collins and Frank, 2012; Collins and Frank, 2013; Nassar et al., 2018; Lee and Webb, 2005).
 
-## Simulate the model across the range of parameter values
+### Simulate the model across the range of parameter values
 
-Then, visualize behavior as a function of the parameters. Almost all models have free parameters. Understanding how changes to these parameters affect behavior will help you to better interpret your data and to understand individual differences in fit parameters. For example, in probabilistic reinforcement learning tasks modeled with a simple delta-rule model (Model 3; Equation 3), the learning rate parameter, α, can relate to both the speed of learning and noisiness in asymptotic behavior, as can the inverse temperature parameter, β (in Equation 4), as seen in Box 2—figure 1B.
+Then, visualize behavior as a function of the parameters. Almost all models have free parameters. Understanding how changes to these parameters affect behavior will help you to better interpret your data and to understand individual differences in fit parameters. For example, in probabilistic reinforcement learning tasks modeled with a simple delta-rule model (Model 3; Equation 3), the learning rate parameter, $\alpha$, can relate to both the speed of learning and noisiness in asymptotic behavior, as can the inverse temperature parameter, $\beta$ (in Equation 4), as seen in Box 2—figure 1B.
 
-## Visualize the simulated behavior of different models
+### Visualize the simulated behavior of different models
 
 This will allow you to verify that behavior is qualitatively different for different models, making their predictions in the experimental setup different (Box 2—figure 1A). If the behavior of different models is not qualitatively different, this is a sign that you should try to design a better experiment. Although not always possible, distinguishing between models on the basis of qualitative patterns in the data is always preferable to quantitative model comparison (Navarro, 2019; Palminteri et al., 2017).
 
@@ -106,55 +106,61 @@ More generally, the goal of the simulation process is to clarify how the models 
 
 A key component of computational modeling is estimating the values of the parameters that best describe your behavioral data. There are a number of different ways of estimating parameters, but here we focus on the maximum-likelihood approach, although almost all of our points apply to other methods such as Markov Chain Monte Carlo approaches (Lee and Wagenmakers, 2014). Mathematical details, as well as additional discussion of other approaches to model fitting can be found in Appendix 1.
 
-In the maximum likelihood approach to model fitting, our goal is to find the parameter values of model m, 𝜽^mM⁢L⁢E, that maximize the likelihood of the data, d1:T, given the parameters, p⁢(d1:T|𝜽m,m). Maximizing the likelihood is equivalent to maximizing the log of the likelihood, L⁢L=log⁡p⁢(d1:T|𝜽m,m), which is numerically more tractable. (The likelihood is a product of many numbers smaller than 1, which can be rounded to 0 with limited precision computing. By contrast, the log-likelihood is a sum of negative numbers, which is usually tractable and will not be rounded to 0.) A simple mathematical derivation shows that this log-likelihood can be written in terms of the choice probabilities of the individual model as(8)L⁢L=log⁡p⁢(d1:T|𝜽m,m)=∑t=1Tlog⁡p⁢(ct|d1:t-1,st,𝜽m,m)where p⁢(ct|d1:t-1,st,𝜽m,m) is the probability of each individual choice given the parameters of the model and the information available up to that choice, which is at the heart of the definition of each model (for example in Equations 1-7).
+In the maximum likelihood approach to model fitting, our goal is to find the parameter values of model $m$, $𝜽^_{m}^{M⁢L⁢E}$, that maximize the likelihood of the data, $d_{1:T}$, given the parameters, $p⁢(d_{1:T}|𝜽_{m},m)$. Maximizing the likelihood is equivalent to maximizing the log of the likelihood, $L⁢L=log⁡p⁢(d_{1:T}|𝜽_{m},m)$, which is numerically more tractable. (The likelihood is a product of many numbers smaller than 1, which can be rounded to 0 with limited precision computing. By contrast, the log-likelihood is a sum of negative numbers, which is usually tractable and will not be rounded to 0.) A simple mathematical derivation shows that this log-likelihood can be written in terms of the choice probabilities of the individual model as
 
-In principle, finding the maximum likelihood parameters is as ‘simple’ as maximizing L⁢L. In practice, of course, finding the maximum of a function is not a trivial process. The simplest approach, a brute force search of the entire parameter space, is occasionally useful, and may help you to understand how different parameters interact (see Box 3—figure 1). However, this approach is unfeasible outside of the simplest cases (e.g. one or two parameters with tight bounds) because of the high computational costs of evaluating the likelihood function at a large number of points.
+$$
+L⁢L=log⁡p⁢(d_{1:T}|𝜽_{m},m)=\sumt=1Tlog⁡p⁢(c_{t}|d_{1:t-1},s_{t},𝜽_{m},m)
+$$
 
-Fortunately, a number of tools exist for finding local maxima (and minima) of functions quickly using variations on gradient ascent (or descent). For example, Matlab’s fmincon function can use a variety of sophisticated optimization algorithms (e.g. Moré and Sorensen, 1983; Byrd et al., 2000) to find the minimum of a function (and other factors such as the Hessian that can be useful in some situations [Daw, 2011]). So long as one remembers to feed fmincon the negative log-likelihood (whose minimum is at the same parameter values as the maximum of the positive log-likelihood), using tools such as fmincon can greatly speed up model fitting. Even here, though, a number of problems can arise when trying to maximize L⁢L that can be reduced by using the tips and tricks described below. Most of the tips come from understanding that optimization algorithms are not foolproof and in particular are subject to numerical constraints. They generalize to other black box optimization functions in other languages, for example the Python scipy.optimize package or the optim function in R.
+where $p⁢(c_{t}|d_{1:t-1},s_{t},𝜽_{m},m)$ is the probability of each individual choice given the parameters of the model and the information available up to that choice, which is at the heart of the definition of each model (for example in Equations 1-7).
 
-## Be sure that your initial conditions give finite log-likelihoods
+In principle, finding the maximum likelihood parameters is as ‘simple’ as maximizing $L⁢L$. In practice, of course, finding the maximum of a function is not a trivial process. The simplest approach, a brute force search of the entire parameter space, is occasionally useful, and may help you to understand how different parameters interact (see Box 3—figure 1). However, this approach is unfeasible outside of the simplest cases (e.g. one or two parameters with tight bounds) because of the high computational costs of evaluating the likelihood function at a large number of points.
+
+Fortunately, a number of tools exist for finding local maxima (and minima) of functions quickly using variations on gradient ascent (or descent). For example, Matlab’s fmincon function can use a variety of sophisticated optimization algorithms (e.g. Moré and Sorensen, 1983; Byrd et al., 2000) to find the minimum of a function (and other factors such as the Hessian that can be useful in some situations [Daw, 2011]). So long as one remembers to feed fmincon the negative log-likelihood (whose minimum is at the same parameter values as the maximum of the positive log-likelihood), using tools such as fmincon can greatly speed up model fitting. Even here, though, a number of problems can arise when trying to maximize $L⁢L$ that can be reduced by using the tips and tricks described below. Most of the tips come from understanding that optimization algorithms are not foolproof and in particular are subject to numerical constraints. They generalize to other black box optimization functions in other languages, for example the Python scipy.optimize package or the optim function in R.
+
+### Be sure that your initial conditions give finite log-likelihoods
 
 Optimizers such as fmincon require you to specify initial parameter values from which to start the search. Perhaps the simplest way in which the search process can fail is if these initial parameters give log-likelihoods that are not finite numbers (e.g. infinities or NaNs, not a number in Matlab speak). If your fitting procedure fails, this can often be the cause.
 
-## Beware rounding errors, zeros and infinities
+### Beware rounding errors, zeros and infinities
 
-More generally, the fitting procedure can go wrong if it encounters infinities or NaNs during the parameter search. This can occur if a choice probability is rounded down to zero, thus making the log of the choice probability -∞. Likewise, if your model involves exponentials (e.g. the softmax choice rule in Equation 4), this can lead to errors whereby the exponential of a very large number is ‘rounded up’ to infinity. One way to avoid these issues is by constraining parameter values to always give finite choice probabilities and log-likelihoods at the boundaries. One way to diagnose these issues is to include checks in the code for valid log-likelihoods.
+More generally, the fitting procedure can go wrong if it encounters infinities or NaNs during the parameter search. This can occur if a choice probability is rounded down to zero, thus making the log of the choice probability $-∞$. Likewise, if your model involves exponentials (e.g. the softmax choice rule in Equation 4), this can lead to errors whereby the exponential of a very large number is ‘rounded up’ to infinity. One way to avoid these issues is by constraining parameter values to always give finite choice probabilities and log-likelihoods at the boundaries. One way to diagnose these issues is to include checks in the code for valid log-likelihoods.
 
-## Be careful with constraints on parameters
+### Be careful with constraints on parameters
 
 If the constraints are ill chosen, it is possible that the solution will be at the bounds, which is often, but not always, a red flag.
 
 Only include parameters that have an influence on the likelihood. If only two parameters impact the likelihood, but the optimizer attempts to fit three, it will usually find the optimum for the two relevant parameters and a random value for the third; however, it will lead to slower and less efficient fitting.
 
-## Beware local minima!
+### Beware local minima!
 
 Finally, a key limitation of optimization algorithms is that they are only guaranteed to find local minima, which are not guaranteed to be the global minima corresponding to the best fitting parameters. One way to mitigate this issue is to run the fitting procedure multiple times with random initial conditions, recording the best fitting log-likelihood for each run. The best fitting parameters are then the parameters corresponding to the run with the highest log-likelihood. There is no hard-and-fast rule for knowing how many starting points to use in a given situation, besides the fact that more complex models will require more starting points. Thus, this number must be determined empirically in each case. One way to validate the number of starting points is by plotting the best likelihood score as a function of the number of starting points. As the number of initial conditions increases, the best-fitting likelihood (and corresponding the parameters) will improve up to an asymptote close to the true maximum of the function (e.g. Box 3—figure 1).
 
 ## Check that you can recover your parameters
 
-Before reading too much into the best-fitting parameter values, 𝜽mM⁢L⁢E, it is important to check whether the fitting procedure gives meaningful parameter values in the best case scenario, -that is, when fitting fake data where the ‘true’ parameter values are known (Nilsson et al., 2011). Such a procedure is known as ‘Parameter Recovery’, and is a crucial part of any model-based analysis.
+Before reading too much into the best-fitting parameter values, $𝜽_{m}^{M⁢L⁢E}$, it is important to check whether the fitting procedure gives meaningful parameter values in the best case scenario, -that is, when fitting fake data where the ‘true’ parameter values are known (Nilsson et al., 2011). Such a procedure is known as ‘Parameter Recovery’, and is a crucial part of any model-based analysis.
 
 In principle, the recipe for parameter recovery is quite simple. First, simulate fake data with known parameter values. Next, fit the model to these fake data to try to ‘recover’ the parameters. Finally, compare the recovered parameters to their true values. In a perfect world, the simulated and recovered parameters will be tightly correlated, with no bias. If there is only a weak correlation between the simulated and recovered parameters and/or a significant bias, then this is an indication that there is either a bug in your code (which from our own experience is fairly likely) or the experiment is underpowered to assess this model.
 
 To make the most of your parameter recovery analysis, we suggest the following tips:
 
-## Make sure your simulation parameters are in the right range
+### Make sure your simulation parameters are in the right range
 
-An important choice for parameter recovery is the range of simulation parameters that you wish to recover. Some models/experiments only give good parameter recovery for parameters in a particular range — if the simulation parameters are too big or too small, they can be hard to recover. An illustration of this is the softmax parameter, β, where very large β values lead to almost identical behavior in most experiments. Thus parameter recovery may fail for large β values but work well for small β values. Of course, selecting only the range of parameters that can be recovered by your model is not necessarily the right choice, especially if the parameter values you obtain when fitting real data are outside of this range! For this reason, we have the following recommendations for choosing simulation parameter values:
+An important choice for parameter recovery is the range of simulation parameters that you wish to recover. Some models/experiments only give good parameter recovery for parameters in a particular range — if the simulation parameters are too big or too small, they can be hard to recover. An illustration of this is the softmax parameter, $\beta$, where very large $\beta$ values lead to almost identical behavior in most experiments. Thus parameter recovery may fail for large $\beta$ values but work well for small $\beta$ values. Of course, selecting only the range of parameters that can be recovered by your model is not necessarily the right choice, especially if the parameter values you obtain when fitting real data are outside of this range! For this reason, we have the following recommendations for choosing simulation parameter values:
 
 Note that it is not necessarily problematic if a model’s parameters are not recoverable in a full parameter space, as long as they are recoverable in the range that matters for real data.
 
-## Plot the correlations between simulated and recovered parameters
+### Plot the correlations between simulated and recovered parameters
 
 While the correlation coefficient between simulated and recovered parameters is a useful number for summarizing parameter recovery, we also strongly recommend that you actually plot the simulated vs recovered parameters. This makes the correlation clear, and also reveals whether the correlation holds in some parameter regimes but not others. It also reveals any existing bias (for example, a tendency to recover higher or lower values in average).
 
-## Make sure the recovery process does not introduce correlations between parameters
+### Make sure the recovery process does not introduce correlations between parameters
 
 In addition to looking at the correlations between simulated and recovered parameters, we also recommend looking at the correlation between the recovered parameters themselves. If the simulation parameters are uncorrelated with one another, correlation between the recovered parameters is an indication that the parameters in the model are trading off against one another (Daw, 2011). Such trade-offs can sometimes be avoided by reparameterizing the model (e.g. Otto et al., 2013) or redesigning the experiment. Sometimes, however, such trade-offs are unavoidable. In these cases, it is crucial to report the trade-off in parameters so that a ‘correlation’ between fit parameter values is not over-interpreted in real data.
 
 A note about parameter differences between different populations or conditions: a growing use of model fitting is to compare parameter values between populations (e.g. schizophrenia patients vs healthy controls [Collins et al., 2014]) or conditions (e.g., transcranial magnetic stimulation to one area or another [Zajkowski et al., 2017]). If your primary interest is a difference like this, then parameter recovery can be used to give an estimate of statistical power. In particular, for a proposed effect size (e.g., on the average difference in one parameter between groups or conditions) you can simulate and recover parameters for the groups or conditions and then perform statistical tests to detect group differences in this simulated data set. The power for this effect size is then the frequency with which the statistical tests detect no effect given that the effect is there.
 
-## Remember that even successful parameter recovery represents a best-case scenario!
+### Remember that even successful parameter recovery represents a best-case scenario!
 
 What does successful parameter recovery tell you? That data generated by a known model with given parameters can be fit to recover those parameters. This is the best case you could possibly hope for in the model-based analysis and it is unlikely to ever occur as the ‘true’ generative process for behavior — that is, the inner workings of the mind and brain — is likely much more complex than any model you could conceive. There’s no easy answer to this problem. We only advise that you remember to be humble when you present your results!
 
@@ -162,29 +168,35 @@ What does successful parameter recovery tell you? That data generated by a known
 
 In model comparison, our goal is to determine which model, out of a set of possible models, is most likely to have generated the data. There are a number of different ways to make this comparison (summarized in more detail in Appendix 2) that involve different approximations to the Bayesian evidence for each model (e.g., Daw, 2011; Rigoux et al., 2014). Here, we focus on the most common method which is related to the log-likelihood computed in 'Fit the parameters'.
 
-A simplistic approach to model comparison would be to compare the log-likelihoods of each model at the best fitting parameter settings, p⁢(d1:T|𝜽^m,m). However, if the data, d1:T, used to evaluate the log-likelihood are the same as those used to fit the parameters, then this approach will lead to overfitting, as the model with the most free parameters will almost always fit this ‘training’ data best. As an extreme example, consider the case of a model with one ‘parameter’ per choice, which is the identity of the choice the person actually made. Such a ‘model’ would fit the data perfectly, but would of course tell us nothing about how the choices were actually determined and would make no predictions about what choices would be made in a different setting. Overfitting is a problem in that it decreases the generalizability of the model: it makes it less likely that the conclusions drawn would apply to a different sample.
+A simplistic approach to model comparison would be to compare the log-likelihoods of each model at the best fitting parameter settings, $p⁢(d_{1:T}|𝜽^_{m},m)$. However, if the data, $d_{1:T}$, used to evaluate the log-likelihood are the same as those used to fit the parameters, then this approach will lead to overfitting, as the model with the most free parameters will almost always fit this ‘training’ data best. As an extreme example, consider the case of a model with one ‘parameter’ per choice, which is the identity of the choice the person actually made. Such a ‘model’ would fit the data perfectly, but would of course tell us nothing about how the choices were actually determined and would make no predictions about what choices would be made in a different setting. Overfitting is a problem in that it decreases the generalizability of the model: it makes it less likely that the conclusions drawn would apply to a different sample.
 
-One way to avoid overfitting is to perform cross-validation: by measuring fit on held-out data, we directly test generalizability. However, this is not always possible for practical reasons (number of samples) or more fundamental ones (dependence between data points). Thus, other methods mitigate the risk of overfitting by approximately accounting for the degrees of freedom in the model. There are several methods for doing this (including penalties for free parameters), which are discussed in more detail in the Appendices. There is a rich theoretical literature debating which method is best (Wagenmakers and Farrell, 2004; Vandekerckhove et al., 2015). Here, we do not position ourselves in this theoretical debate, and instead focus on one of the simplest methods, the Bayes Information Criterion, B⁢I⁢C, which has an explicit penalty for free parameters.(10)B⁢I⁢C=-2⁢log⁡L⁢L^+km⁢log⁡(T)where L⁢L^ is the log-likelihood value at the best fitting parameter settings, and km is the number of parameters in model m. The model with the smallest B⁢I⁢C score is the model that best fits the data. Thus, the positive effect of km in the last term corresponds to a penalty for models with large numbers of parameters.
+One way to avoid overfitting is to perform cross-validation: by measuring fit on held-out data, we directly test generalizability. However, this is not always possible for practical reasons (number of samples) or more fundamental ones (dependence between data points). Thus, other methods mitigate the risk of overfitting by approximately accounting for the degrees of freedom in the model. There are several methods for doing this (including penalties for free parameters), which are discussed in more detail in the Appendices. There is a rich theoretical literature debating which method is best (Wagenmakers and Farrell, 2004; Vandekerckhove et al., 2015). Here, we do not position ourselves in this theoretical debate, and instead focus on one of the simplest methods, the Bayes Information Criterion, $B⁢I⁢C$, which has an explicit penalty for free parameters.
+
+$$
+B⁢I⁢C=-2⁢log⁡L⁢L^+k_{m}⁢log⁡(T)
+$$
+
+where $L⁢L^$ is the log-likelihood value at the best fitting parameter settings, and $k_{m}$ is the number of parameters in model $m$. The model with the smallest $B⁢I⁢C$ score is the model that best fits the data. Thus, the positive effect of $k_{m}$ in the last term corresponds to a penalty for models with large numbers of parameters.
 
 While Equation 10 is simple enough to apply in order to find the model that, apparently, best fits your data, it is important to check that your model comparison process gives sensible results for simulated data. Just as parameter fitting should be validated by parameter recovery on simulated data, so model comparison should be validated by model recovery on simulated data.
 
-More specifically, model recovery involves simulating data from all models (with a range of parameter values carefully selected as in the case of parameter recovery) and then fitting that data with all models to determine the extent to which fake data generated from model A is best fit by model A as opposed to model B. This process can be summarized in a confusion matrix (see Box 5—figure 1 below for an example) that quantifies the probability that each model is the best fit to data generated from the other models, that is, p(fit model=B|simulated model=A). In a perfect world, the confusion matrix will be the identity matrix, but in practice, this is not always the case (e.g., Wilson and Niv, 2011).
+More specifically, model recovery involves simulating data from all models (with a range of parameter values carefully selected as in the case of parameter recovery) and then fitting that data with all models to determine the extent to which fake data generated from model $A$ is best fit by model $A$ as opposed to model $B$. This process can be summarized in a confusion matrix (see Box 5—figure 1 below for an example) that quantifies the probability that each model is the best fit to data generated from the other models, that is, $p(fit model=B|simulated model=A)$. In a perfect world, the confusion matrix will be the identity matrix, but in practice, this is not always the case (e.g., Wilson and Niv, 2011).
 
 When computing and interpreting a confusion matrix it is important to keep the following points in mind:
 
-## Compare different methods of model comparison
+### Compare different methods of model comparison
 
 If the confusion matrix has large off-diagonal components, then you have a problem with model recovery. There are a number of factors that could cause this problem, ranging from a bug in the code to an underpowered experimental design. However, one cause that is worth investigating is whether you are using the wrong method for penalizing free parameters. In particular, different measures penalize parameters in different ways that are ‘correct’ under different assumptions. If your confusion matrix is not diagonal, it may be that the assumptions underlying your measures (e.g. BIC) do not hold for your models, in which case it might be worth trying another metric for model comparison (e.g., AIC [Wagenmakers and Farrell, 2004]; see Appendix 2).
 
-## Be careful with the choice of parameters when computing the confusion matrix
+### Be careful with the choice of parameters when computing the confusion matrix
 
 Just as parameter recovery may only be successful in certain parameter regimes, so too can model recovery depend critically on the parameters chosen to simulate the models. In some parameter regimes, two models may lead to very different behavior, but they may be indistinguishable in other parameter regimes (see Box 5—figure 1 below). As with parameter recovery, we believe that the best approach is to match the range of the parameters to the range seen in your data, or to the range that you expect from prior work.
 
-## A note on interpreting the confusion matrix
+### A note on interpreting the confusion matrix
 
-As described above, and in keeping with standard practice from statistics, the confusion matrix is defined as the probability that data simulated by one model is best fit by another, that is, p⁢(fit model|simulated model). However, when we fit a model to real data, we are usually more interested in making the reverse inference — that is, given that model B fits our data best, which model is most likely to have generated the data? This is equivalent to computing p⁢(simulated model|fit model). Note that this measure, which we term the ‘inversion matrix’ to distinguish it from the confusion matrix, is not the same as the confusion matrix unless model recovery is perfect. Of course, the inversion matrix can be computed from the confusion matrix using Bayes rule (see Appendix 3) and it may be useful to report it in cases where the confusion matrix is not diagonal.
+As described above, and in keeping with standard practice from statistics, the confusion matrix is defined as the probability that data simulated by one model is best fit by another, that is, $p⁢(fit model|simulated model)$. However, when we fit a model to real data, we are usually more interested in making the reverse inference — that is, given that model $B$ fits our data best, which model is most likely to have generated the data? This is equivalent to computing $p⁢(simulated model|fit model)$. Note that this measure, which we term the ‘inversion matrix’ to distinguish it from the confusion matrix, is not the same as the confusion matrix unless model recovery is perfect. Of course, the inversion matrix can be computed from the confusion matrix using Bayes rule (see Appendix 3) and it may be useful to report it in cases where the confusion matrix is not diagonal.
 
-## The elephant in the room with model comparison
+### The elephant in the room with model comparison
 
 As wonderful as it is to find that your model ‘best’ fits the behavioral data, the elephant in the room (or perhaps more correctly not in the room) with all model comparison is that it only tells you which of the models you considered fits the data best. In and of itself, this is rather limited information as there are infinitely many other models that you did not consider. This makes it imperative to start with a good set of models that rigorously capture the competing hypotheses (that is, think hard in Step 2). In addition, it will be essential to validate (at least) your winning model (see Step 9) to show how simulating its behavior can generate the patterns seen in the data that you did not explicitly fit, and thus obtain an absolute measure of how well your model relates to your data.
 
@@ -206,7 +218,7 @@ One method for model validation is computing the average trial likelihood as an 
 
 A better method to validate a model is to simulate it with the fit parameter values (Palminteri et al., 2017; Nassar and Frank, 2016; Navarro, 2019), a procedure long performed by statisticians as part of the ‘posterior predictive check’ (Roecker, 1991; Gelman et al., 1996). You should then analyze the simulated data in the same way that you analyzed the empirical data, to verify that all important behavioral effects are qualitatively and quantitatively captured by the simulations with the fit parameters. For example, if you observe a qualitative difference between two conditions empirically, the model should reproduce it. Likewise, if a learning curve reaches a quantitative asymptote of 0.7, simulations shouldn’t reach a vastly different one.
 
-Some researchers analyze the posterior prediction of the model conditioned on the past history, instead of simulated data. In our previous notation, they evaluate the likelihood of choice ct given past data, d1:t-1, where the past data includes choices made by the subject, not choices made by the model, p⁢(ct|d1:t-1,st,𝜽m,m). In some cases, this approach leads to very similar results to simulations, because simulations sample choices on the basis of a very similar probability, where the past data, d1:t-1, include choices made by the model. However, it can also be dramatically different if the path of actions sampled by the participant is widely different from the paths likely to be selected by the model (leading to very different past histories).
+Some researchers analyze the posterior prediction of the model conditioned on the past history, instead of simulated data. In our previous notation, they evaluate the likelihood of choice $c_{t}$ given past data, $d_{1:t-1}$, where the past data includes choices made by the subject, not choices made by the model, $p⁢(c_{t}|d_{1:t-1},s_{t},𝜽_{m},m)$. In some cases, this approach leads to very similar results to simulations, because simulations sample choices on the basis of a very similar probability, where the past data, $d_{1:t-1}$, include choices made by the model. However, it can also be dramatically different if the path of actions sampled by the participant is widely different from the paths likely to be selected by the model (leading to very different past histories).
 
 Palminteri and colleagues (Palminteri et al., 2017) offer a striking example of this effect, where Model A fits better than Model B by any quantitative measure of model comparison, but is completely unable to capture the essence of the behavior. In their example, data are generated with a reinforcement learning agent (which takes the place of the subject) on a reversal learning task (where a choice that was previously good becomes bad, and reciprocally). These data are then fit with either a win-stay lose-shift model (model B), or a simplistic choice kernel model, which assumes that previous choices tend to be repeated (model A). Because of the autocorrelation in the choices made by the reinforcement learning agent, model A, which tends to repeat previous actions, fits better than model B, whose win-stay-lose-shift choices only depend on the action and outcome from the last trial. However, model A is completely insensitive to reward, and thus is unable to generate a reversal behavior when it is simulated with the fit model parameters. Thus, in this case, model A should be discarded, despite a greater quantitative fit. Nevertheless, the fact that the best validating model B captures less variance than model A should serve as a warning that model B is missing crucial components of the data and that a better model probably exists. This should incite the researcher to go back to the drawing board to develop a better model, for example one that combines elements of both models or a different model entirely, and perhaps a better experiment to test it.
 
@@ -226,89 +238,89 @@ Other model-dependent analyzes include studying individual differences as captur
 
 Congratulations! You have developed, simulated, and fit your model (and maybe several other competing models) to your data. You have estimated parameters, computed model comparison scores, and validated whether your model can generate realistic-looking behavior. It’s time to start writing! But what exactly should you report in your paper? And how should you report it?
 
-## Model selection
+### Model selection
 
 In many modeling papers, a key conclusion from the work is that one model fits the data better than other competing models. To make this point convincingly, we recommend including the following things in your paper, either as main results or in the supplementary material.
 
-## Model recovery analysis
+#### Model recovery analysis
 
-## Confusion matrix
+##### Confusion matrix
 
 Before anyone should believe your model comparison results, you need to demonstrate the ability of your analysis/experiment to distinguish between models under ideal conditions of simulated data. The best way to visualize these results is with a confusion matrix, as outlined in section 'Can you arbitrate between different models'? If the model comparison result is central to your paper, we recommend including the confusion matrix as a figure in the main text. If model comparison is less important, we recommend including it in the supplementary materials.
 
-## Number of subjects best fit by each model
+##### Number of subjects best fit by each model
 
 The simplest way to visualize how well the winning model fits the data is with a histogram showing the number of subjects best fit by each model. Obviously if all subjects are best fit with one model, the story is simple. The more likely scenario is that some subjects will be best fit by other models. Such a result is important to acknowledge in the paper as it may reflect the use of different strategies by different people or that the ‘correct’ model lies somewhere in between the models you have considered.
 
-## Group level statistics
+#### Group level statistics
 
-## Exceedance probabilities
+##### Exceedance probabilities
 
 A more sophisticated and less biased (Piray et al., 2018) way to report model comparison results is by computing the probability that a single model best describes all the data. This is clearly an assumption whose merits should be discussed in your paper. In cases where it is valid, the method of Rigoux et al. (2014) computes these ‘Exceedance Probabilities’, the probability that each model generated all the data. These probabilities can also be reported in histogram or table form.
 
 Model-independent measures of simulated data. The cleanest way to demonstrate the superiority of one model is if that model can account for qualitative patterns in the data that are not captured by other models (see section 'Validate (at least) the winning model').
 
-## Parameter fits
+### Parameter fits
 
 Many modeling papers involve fitting parameters to behavioral data. In some cases this is the main point of the paper, for example to show that parameter values differ between groups or treatments, in other cases parameter fitting is secondary to model comparison. In all cases, we recommend reporting the fit parameter values in as transparent a way as possible (i.e. more than just the means and standard errors).
 
-## Report distributions of parameter values
+#### Report distributions of parameter values
 
 The simplest way to report parameter fits is to plot a distribution of all fit parameter values, for example in the form of a histogram (e.g. Figure S1 in Wilson et al., 2013 and Nassar et al., 2018) or a cloud of points (e.g. Figure 5 in Huys et al., 2011). This gives a great sense of the variability in each parameter across the population and can also illustrate problems with fitting. For example, if a large number of fit parameters are clustered around the upper and lower bounds, this may indicate a problem with the model.
 
-## Plot pairwise correlations between fit parameter values
+#### Plot pairwise correlations between fit parameter values
 
 A deeper understanding of the relationships between fit parameters can be obtained by making scatter plots of the pairwise correlations between parameters. As with histograms of individual parameters, this approach gives a sense of the distribution of parameters, and can provide evidence of problems with the model; for example, if two parameters trade off against one another, it is a sign that these parameters may be unidentifiable in the experiment.
 
-## Report parameter recovery
+#### Report parameter recovery
 
 Finally, all parameter fit analyses should sit on the shoulders of a comprehensive parameter recovery analysis with simulated data. If parameters cannot be recovered in the ideal case of simulated data, there is little that they can tell us about real behavior.
 
-## Share your data and code!
+### Share your data and code!
 
 The most direct way to communicate your results is to share the data and code. This approach encourages transparency and ensures that others can see exactly what you did. Sharing data and code also allows others to extend your analyses easily, by applying it to their own data or adding new models into the mix.
 
 Ideally the data you share should be the raw data for the experiment, with minimal or no preprocessing (apart from the removal of identifying information). The code you share should reproduce all steps in your analysis, including any preprocessing/outlier exclusion you may have performed and generating all of the main and supplementary figures in the paper. In a perfect world, both data and code would be shared publicly on sites such as GitHub, DataVerse and so on. However, this is not always possible, for example, if the data come from collaborators who do not agree to data sharing, or if further analyses are planned using the same data set. In this case, we recommend having a clean set of ‘shareable’ code (and hopefully data too) that can be sent via email upon request.
 
-## Should you always report all of your modeling results?
+### Should you always report all of your modeling results?
 
 Finally, if you are using an established model, it can be tempting to skip many of the steps outlined above and report only the most exciting results. This temptation can be even greater if you are using code developed by someone else that, perhaps, you do not fully understand. In our opinion, taking shortcuts like this is dangerous. For one thing, your experiment or population may be different and the model may perform differently in this regime. For another, quite often ‘established’ models (in the sense that they have been published before), have not been validated in a systematic way. More generally, as with any research technique, when using computational modeling you need to demonstrate that you are applying the method correctly, and the that steps we outline here can help. In conclusion, even if developing the model is not the central point of your paper, you should report all of your modeling results.
 
 ## What now?
 
-## Looping back
+### Looping back
 
 A modeler’s work is never done. To paraphrase George Box, there are no correct models, there are only useful models (Box, 1979). To make your model more useful, there are a number of next steps to consider to test whether your model really does describe a process in the mind.
 
-## Improve the model to account for discrepancies with your existing data set
+#### Improve the model to account for discrepancies with your existing data set
 
 Model fits are never perfect and, even in the best cases, there are often small discrepancies with actual data. The simplest next step is to try to address these discrepancies by improving the model, either by including additional factors (such as side bias or lapse rates) or by devising new models entirely.
 
-## Use your model to make predictions
+#### Use your model to make predictions
 
 The best models don’t just explain data in one experiment, they predict data in completely new situations. If your model does not easily generalize to new situations, try to understand why that is and how it could be adjusted to be more general. If your model does generalize, test its predictions against new data — either data you collect yourself from a new experiment or data from other studies that (hopefully) have been shared online.
 
-## Using advanced techniques
+### Using advanced techniques
 
 Another potential next step is to use more powerful modeling techniques. We focused here on the simplest techniques (maximum likelihood estimation and model comparison by BIC) because of their accessibility to beginners, and because most of the advice we give here generalizes to more advanced techniques. In particular, no matter how advanced the modeling technique used, validation is essential (Palminteri et al., 2017; Nassar and Frank, 2016; Huys, 2017). Nevertheless, the simple methods described here have known limitations. More advanced techniques attempt to remedy them, but come with their own pitfalls. A complete review of these advanced techniques is beyond the scope of this paper; instead we provide pointers to a few of the most interesting techniques for the ambitious reader to pursue.
 
-## Compute maximum a posteriori (MAP) parameter values
+#### Compute maximum a posteriori (MAP) parameter values
 
 Perhaps the simplest step for improving parameter estimates is to include prior information about parameter values. When combined with the likelihood, these priors allow us to compute the posterior, which we can use to find the maximum a posteriori (MAP) parameter values. Although they are still point estimates, with good priors, MAP parameters can be more accurate than parameters estimated with maximum likelihood approaches (Gershman, 2016; Daw, 2011), although when the priors are bad, this method has problems of its own (Katahira, 2016).
 
-## Approximate the full posterior by sampling
+#### Approximate the full posterior by sampling
 
 Point estimates of model parameters, such as those obtained with MLE or MAP, lose interesting information about uncertainty over the parameter distribution. Sampling approaches (such as Markov Chain Monte Carlo or MCMC) provide this richer information; furthermore, they allow modelers to investigate more complex assumptions. For example, hierarchical Bayesian approaches make it possible to fit all participants simultaneously, integrating assumptions about their dependence (e.g. one single group, multiple groups, effects of covariates of interest such as age and so on; Lee, 2011; Lee and Wagenmakers, 2014; Wiecki et al., 2013).
 
-## Advanced optimizers and approximate likelihood
+#### Advanced optimizers and approximate likelihood
 
 Some models have intractable likelihoods, for example if the choice state has too many dimensions, as in continuous movements, or if the model included unobservable choices. There exist methods to approximate likelihoods to relate them quantitatively to data, such as the ABC method (Turner and Sederberg, 2012; Sunnåker et al., 2013). There are also advanced methods for finding best fit parameters in a sample-efficient manner when computing the likelihood is expensive (Acerbi and Ji, 2017; Acerbi, 2018).
 
-## Model selection
+#### Model selection
 
 Bayesian model selection provides less biased, statistically more accurate ways of identifying which model is best at the group level (Rigoux et al., 2014). This may be particularly important when comparing model selection between groups, for example between patients and controls (Piray et al., 2018).
 
-## Incorporating other types of data
+#### Incorporating other types of data
 
 We focused on modeling a single type of observable data, choices. However, there is a rich literature on fitting models to other measurements, such as reaction times (Ratcliff, 1978; Ratcliff and Rouder, 1998), but also to eye movements and neural data (Turner et al., 2016). Furthermore, fitting more than one measurement at a time provides additional constraints to the model, and as such may provide better fit (Ballard and McClure, 2019). However, fitting additional data can increase the complexity of the model-fitting process and additional care must be taken to determine exactly how different types of data should be combined (Viejo et al., 2015).
 

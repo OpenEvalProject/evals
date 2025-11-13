@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05cy4wa09 Wellcome Sanger Institute, Wellcome Genome Campus Hinxton United Kingdom
-2. https://ror.org/00vtgdb53 School of Infection and Immunity, College of Medical, Veterinary & Life Sciences, University of Glasgow Glasgow United Kingdom
-3. https://ror.org/046dg4z72 Josephine Bay Paul Center, Marine Biological Laboratory Woods Hole United States
-4. https://ror.org/00vtgdb53 School of Biodiversity, One Health and Veterinary Medicine, College of Medical, Veterinary & Life Sciences, University of Glasgow Glasgow United Kingdom
-5. https://ror.org/015m2p889 Department of Life Sciences, Aberystwyth University Aberystwyth United Kingdom
+1. Wellcome Sanger Institute, Wellcome Genome Campus Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
+2. School of Infection and Immunity, College of Medical, Veterinary & Life Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+3. Josephine Bay Paul Center, Marine Biological Laboratory Woods Hole United States ([ROR:046dg4z72](https://ror.org/046dg4z72))
+4. School of Biodiversity, One Health and Veterinary Medicine, College of Medical, Veterinary & Life Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+5. Department of Life Sciences, Aberystwyth University Aberystwyth United Kingdom ([ROR:015m2p889](https://ror.org/015m2p889))
 
 † Corresponding author
 
@@ -41,9 +41,17 @@ To characterise this critical transmission stage, we have generated a single-cel
 
 ## Results
 
-## Single-cell RNA-seq of 20,478 miracidia cells reveals 19 cell types
+### Single-cell RNA-seq of 20,478 miracidia cells reveals 19 cell types
 
 There are ~365 nuclei in a miracidium (median = 365, larva #1: 342, larva #2: 365, larva #3: 377). Some cell types, such as the apical gland and epithelial/tegument cells, are multinucleate; and others, such as the ciliary plates may be anucleate (Pan, 1980, but cf Meuleman et al., 1978). Therefore, the number of nuclei provides an approximation for the actual number of cells (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig1-v1.jpg)
+
+**Figure 1.:** (A) The miracidium is composed of ~365 cells; (i) differential interference contrast (DIC) microscopy image of miracidium, (ii) a maximum intensity projection (MIP) of a confocal z-stack of miracidium, stained with 4′,6-diamidino-2-phenylindole (DAPI), and with nuclei segmented to enable counting (larval anterior pole at the top in all images). (B) Experimental scheme describing the parasite’s life cycle (images of developmental stages not to scale), parasite dissociation, single-cell analysis of miracidium, and validation pipeline. An average of 9975 miracidia per sample were dissociated; two samples were enriched for live cells (propidium iodide negative) using fluorescence-activated cell sorting (FACS), another two samples were unsorted. Cells were loaded according to the 10X Chromium single-cell 3′ protocol. Clustering was carried out to identify distinct populations and population-specific markers. Validation of population-specific markers was performed by in situ hybridisation (ISH). (C) Uniform Manifold Approximation and Projection (UMAP) representation of 20,478 miracidium single cells. Cell clusters are coloured and distinctively labelled by cluster identity. (D) Gene expression profiles of the top population markers identified for each cell cluster (gene identifiers shown in parenthesis but with ‘Smp_’ prefix removed for brevity). The colours represent the expression level from yellow (high expression) to dark blue (low expression). Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0). The sizes of the circles represent the percentages of cells in those clusters that expressed a specific gene.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** This figure uses the same UMAP topology as presented in Figure 1C. (A) Shows contribution of sorted cells to labelled clusters, (B) shows contribution of unsorted cells to labelled clusters. (C) UMAP where cells are coloured by sorted and unsorted treatment. (D) UMAP where cells are coloured by sample of origin (samples 1 and 4 are sorted, samples 2 and 3 are unsorted).
 
 We performed scRNA-seq on a pool of ~20,000 mixed-sex miracidia, collected within 4 hr of hatching from eggs (Figure 1B). Following dissociation, four samples of the cell suspensions were collected; two were enriched for live cells using fluorescence-activated cell sorting, and two were left unsorted to capture the maximum cellular diversity for the atlas (Figure 1B). Using the droplet-based 10X Genomics Chromium platform, transcriptome-sequencing data were generated from a total of 33,391 cells, of which 20,478 passed strict quality control (QC) filters, resulting in a median of 858 genes and 1761 median unique molecular identifier (UMI) counts per cell (Supplementary file 1a). Given that an individual miracidium comprises ~365 cells (Figure 1A), the number of quality-controlled cells theoretically represents >56-fold coverage of each cell in the larva.
 
@@ -51,9 +59,13 @@ Using Seurat (version 4.3.0) (Hao et al., 2021), 19 distinct clusters of cells w
 
 There were contributions from sorted and unsorted samples in almost all clusters (except ciliary plates). We found that some cell/tissue types had similar recovery from both methods (e.g. Stem A, Muscle 2, and Tegument), others were preferentially recovered by sorting (e.g. Neuron 1, Neuron 4, and Stem E), and some were depleted by sorting (e.g. Parenchyma 1, Protonephridia, and Ciliary plates) (Figure 1—figure supplement 1, Supplementary file 1d). This variation in recovery, therefore, enabled us to maximise the discovery and inclusion of different cell types in the atlas.
 
-## Orthogonal body wall muscle fibres are transcriptionally distinct
+### Orthogonal body wall muscle fibres are transcriptionally distinct
 
 The two muscle clusters were identified based on the expression of previously described muscle-specific genes; paramyosin (Smp_085540), troponin t (Smp_179810), and titin (Smp_126240) (Wendt et al., 2020; Diaz Soria et al., 2020; Diaz Soria et al., 2024), as well as other differentially expressed markers; for example, a putative collagen alpha chain (Smp_159600) (Figure 2A). A crp1/csrp1/crip1 homologue (Smp_087250), encoding a conserved transcriptional regulator of muscle (Tarashansky et al., 2021) was also expressed in both muscle clusters. High expression of paramyosin (PRM; Smp_085540) was seen in muscle cell clusters 1 and 2 (Figure 2A). In situ hybridisation (ISH) (Figure 2B, C; Figure 2—video 1) and image analysis (Figure 2—video 2) identified 74 nuclei surrounded by PRM transcripts (i.e. ~19% of cells in a miracidium are muscle cells). Counterstaining with phalloidin (to label F-actin filaments) revealed an orthogonal grid of circular and longitudinal body wall muscles (BWMs) and from this we identified which PRM+ nuclei belonged to each muscle subtype. The nuclei of the circular muscles formed two distinct bilaterally symmetrical lines that ran peripherally from pole to pole of the larva (~28 nuclei in total). Thirty-three more PRM+ nuclei sat regularly spaced between the circular muscle nuclei and corresponded to longitudinal muscles. Another 13 PRM+ nuclei formed a unilateral cluster adjacent to the apical gland cell (identifiable by its four nuclei; Pan, 1980; Figure 2Cii; Figure 2—videos 1 and 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig2-v1.jpg)
+
+**Figure 2.:** (A) Dot plot depicting the expression profiles of specific or enriched marker genes in the two muscle clusters. Genes validated by in situ hybridisation (ISH) are marked in red. Gene identifiers shown in parenthesis but with ‘Smp_’ prefix removed for brevity. Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0). (B, i, ii) Wholemount ISH (WISH) of paramyosin PRM+ and counterstaining with phalloidin reveals the nuclei of the circular BWMs, which form two distinct bilaterally symmetrical lines that run peripherally from the pole of the larva to the other (arrowheads in ii). The longitudinal BWM nuclei (ii – arrows) are spaced regularly between the lines of the circular BWM nuclei and their actin fibres run orthogonally to the circular muscles. These patterns were seen in 100% of individuals examined, n = 50. (C, i) Segmentation of the PRM+ cells in one miracidium shows 74 muscle cells in total: ~28 circular (segmented in orange), 33 longitudinal (yellow), and (ii) 13 in an anterior unilateral cluster (inside dashed cyan line) adjacent to the apical gland cell (identifiable by its four nuclei, inside dashed red circle). (D) Expression of markers for muscle 1 cluster; (i) Kunitz-type protease inhibitor is expressed in circular BWM and wnt-11-1 is expressed in seven Kunitz-type protease inhibitor+ cells at the posterior pole; (ii) close-up of posterior end of another miracidium showing the co-expression of Kunitz-type protease inhibitor and wnt-11-1. In 100% of individuals examined, n = 30. (E, i–iii) Notum, an inhibitor of wnt signalling, is expressed highly at the opposite pole to wnt-11-1 in the cluster of 13 muscle nuclei adjacent to the apical gland cell (nuclei in dashed red circle). In 100% of individuals examined, n = 30. (F) Expression of markers for muscle 2 cluster; a calcium-activated potassium channel (Smp_156150) and the transcription factor myoD (Smp_167400) show co-expression in longitudinal BWMs (arrowheads). In 100% of individuals examined, n = 30. Scale shown in B also applies to C, Di, E, and Fi.
 
 Muscle cluster 1 (2407 cells) was distinguished from muscle cluster 2 by markedly higher expression of a Kunitz-type protease inhibitor (Smp_052230; Figure 2A), and ISH showed Smp_052230 transcripts along the two peripheral lines of circular muscle nuclei (Figure 2D). Subpopulations of muscle cluster 1 also expressed orthologues of Wnt-11-1 (Smp_156540) and Notum (Smp_015820), known anterior–posterior body axis patterning genes, where Notum acts as an inhibitor of Wnt signalling (Petersen and Reddien, 2009; Kakugawa et al., 2015; Figure 2A). Notum (Smp_015820) was highly expressed in the cluster of 13 muscle nuclei adjacent to the apical gland cell (Figure 2E). Wnt-11-1 (Smp_156540) was expressed at the posterior pole, in seven of the Kunitz-type protease inhibitor-expressing circular muscle cells (Figure 2D; Figure 2—video 3). Notum was also expressed, albeit weakly, in some nuclei of circular muscles, including those expressing Wnt-11-1 (Figure 2—video 4).
 
@@ -61,9 +73,37 @@ Muscle cluster 2 (1355 cells) was distinguished by higher expression of genes en
 
 The higher expression of Muscle 1 markers in circular BWMs and Muscle 2 genes in the longitudinal BWM revealed distinct transcriptomic signatures for these two types of myocyte that make up the orthogonal body wall musculature. In fact, differential expression analysis showed that Wnt-11-1 (circular) and MyoD (longitudinal) were amongst the most differentially expressed genes between the two muscle clusters (Supplementary file 1e).
 
-## Neural abundance and diversity
+### Neural abundance and diversity
 
 We uncovered five clusters expressing the neural markers Complexin (cpx; Smp_050220), prohormone convertase 2 (PC2; Smp_077980), and Smp_068500 (a neural marker in adult worms, Wendt et al., 2020; Figure 3A). Complexin was expressed in and around at least 209 nuclei, indicating that 57% of cells in the miracidium were neurons; out of which 129 cpx+ nuclei formed the nuclear rind of the brain (or neural mass/ring), and the remaining 80 were situated peripherally, either anterior or posterior to the brain (Figure 3B). Sensory organelles were identified for peripheral neural cell types. We were able to validate neuron clusters 2–5 using ISH of specific marker genes and performed an in silico analysis of Neuron 1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig3-v1.jpg)
+
+**Figure 3.:** (A) Expression profiles of cell marker genes that are specific or enriched in the five neuronal clusters and ciliary plates. Genes validated by in situ hybridisation (ISH) are marked in red. Gene identifiers shown in parenthesis but with ‘Smp_’ prefix removed for brevity. Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0). Complexin (cpx) is expressed in all five nerve clusters and is a neural marker in the adult (Wendt et al., 2020). (B, i) A dorso-ventral view of wholemount in situ hybridisation (WISH) of cpx shows expression in the brain, to the anterior – with projections around the three gland cells, and in two posterior clusters (100% of individuals examined, n = 50). (ii) Segmentation of cpx+ cells (in magenta) in one miracidium (lateral view) reveals that at least 209 of the 365 cells that make up the larva are neural and that the clusters of cpx cells that are located posterior to the brain, and send projections to the posterior pole, sit perpendicular to the circular muscle cell nuclei (blue dashed lines). (C) Multiplexed ISH for top markers for neuron 2 (NPP 43, Smp_201600) and neuron 3 (NPP 26, Smp_071050) shows expression in multiple cells of the brain, including cells adjacent to each other. NPP 26 (Smp_071050) is also expressed in the apical gland cell (red dashed circle). 100% of individuals examined, n = 30. (D) The top marker for neuron 4, Smp_319480, is expressed in four cells anteriorly (arrows) and ~22 that sit lateral and just posterior to the brain; these later cells send projections into the brain and out to the body wall at the latitude between the second and third tiers of ciliary plates (iii) seen here expressing the ciliary plate marker gene Smp_096390. 100% of individuals examined, n > 30. (E) Neuron 5 marker Smp_343710, an EF-hand domain-containing protein, is expressed in (i) 10–20 cells whose nuclei sit outside of, and anterior to, the brain, in and around the paired lateral glands and their secretory ducts, and (Eii, iii, F) in a pair of bilaterally symmetrical bulbous protrusions. 100% of individuals examined, n = 30. (F) Summary schematic of the in situ expression of marker genes for the neural cell clusters. (G, i) A top marker for ciliary plates, a calcium-binding protein (Smp_096390), shows transcripts expressed in all the ciliary plates of all four tiers (brackets) and in six cells towards the anterior pole. (ii, iii) Counterstaining with phalloidin shows that the nuclei of these anterior cells sit beneath the body wall muscle and send a projection externally between the first and second tiers of ciliary plates (arrowheads). 100% of individuals examined, n > 30. Scale shown in B also applies to C, D, Ei, and Gi.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The Neuron 1 cluster was analysed using SAM algorithm, and Leiden clustering indicated 16 subpopulations. Library size was normalised and gene expression values were log-normalised using SAM (v1.0.1) and Scanpy (v1.8.2). (B) The top 5 marker genes for each of the subpopulations. (C) Expression of NPP PWamide, the top marker for subcluster 14. (D) Expression of neuropeptide Y, the top marker for subcluster 13. (E) Expression of neuropeptide F, the second top marker for subcluster 8. Although this cluster was difficult to define, this analysis suggests that there may be several small neural subpopulations within this cluster.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) Top markers for cell cluster Neuron 1 include the neuropeptides precursor genes for Neuropeptide F, PWamide, and Neuropeptide Y. ISH of these genes shows expression in cells that make up the brain. (C) G-alpha-q antibody staining reveals a girdle of 23 multi-ciliated nerve endings that sit between the second and third tiers of ciliary plates. (D) Neuron 4 marker Smp_319480 (putative mTORC1) transcripts are expressed at the base of these cilia; and (E) some transcripts also reach the nuclei of circular body wall muscles. (F) The expression of p25 alpha which is a marker for ciliated cells in adult worms, Wendt et al., 2020 in the submuscular cells suggest that they may be ciliated. Scale bars = 20 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** There are four Schistosoma mansoni opsins that are expressed in two subclusters of Neuron 1; our analysis shows that three belong to the rhabdomeric opsin clade and the fourth is a peropsin. Scale bar shows branch lengths in expected amino acid substitutions per site. Shading of circles at internal nodes shows percentage support for the partition implied by that node from 1000 non-parametric bootstrap samples.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** STRING analysis of the top 100 marker genes for each of the neural populations whose predicted networks have functional enrichment. (A) Neuron 4, (B) Neuron 5, (C) Ciliary plates, and (D) Neuron 3. Neuron 1 is not a defined cluster and Neuron 2 showed no functional enrichment. Lines (edges) connecting nodes are based on evidence of the function of homologues. Functional enrichment (FDR = false discovery rate) as provided by STRING (PPI = predicted protein interaction). Minimum interaction (confidence) score of 0.7, corresponding to a high level of confidence, 0.4 medium level of confidence.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Polycystins 1 and 2 are co-expressed in Neuron 4 cells, orthologues in other animals form heterodimers in ciliated cells that function to detect flow sheer and vibrations (Kim et al., 2016; Bezares-Calderón et al., 2018). Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0). (B) In planaria, a transcription factor Sox B1-2 regulates polycystin genes and together function in sensory neurons that detect flow. The co-expression of polycystin genes with a Sox transcription factor in Neuron 4 cells indicates that this transcription factor may regulate these polycystin genes in the miracidium.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Heatmap showing the gene expression, by transcripts per million, detected in the ciliary plates and gland cells hand-picked for plate-based single-cell RNA sequencing (scRNA-seq). Genes included: the top 20 significant genes between gland cell and ciliary plates, two neural markers, five VAL genes, five significant genes between gland cells and other cells, eight genes previously reported to produce secreted proteins in the miracidia (Wang et al., 2016; Wu et al., 2009), and five top marker genes from the ciliary plate cluster.
 
 Neuron cluster 1 was large (1470 cells), and expressed neuron-marker complexin, the neuroendocrine precursor 7B2 (Smp_073270) and an uncharacterised gene (Smp_068500). At this resolution, there were no clear marker genes restricted to Neuron 1. We explored whether Neuron 1 could be further subdivided into transcriptionally distinct cells by subclustering (Figure 3—figure supplement 1; Supplementary file 1f) using the self-assembling manifold (SAM) algorithm (Tarashansky et al., 2019) with ScanPy (Wolf et al., 2018), given its reported strength in discerning subtle variation in gene expression (Tarashansky et al., 2019), although a similar topology was subsequently found using Seurat. Three subclusters of Neuron 1 expressed neuropeptide precursor genes amongst their top 5 markers; PWamide (Smp_340860) (Wang et al., 2016) in subcluster 14, Neuropeptide F (Smp_088360) in subcluster 8, and Neuropeptide Y (Smp_159950) in subcluster 13 (Figure 3—figure supplement 1); and each was expressed in the nuclear rind of the brain (Figure 3—figure supplement 2). Another subcluster was composed of putative photoreceptor cells (subcluster 7, Figure 3—figure supplement 1, Supplementary file 1f) because their top 10 markers include two opsins (Smp_180350 and Smp_332250) – identified here as a rhabdomeric opsin and a peropsin, respectively (Figure 3—figure supplement 3). Subcluster 7 also expressed other conserved phototransduction cascade genes, such as a 1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase (Smp_245900) and a beta-arrestin (Smp_152280) (Figure 3—figure supplement 1, Supplementary file 1f).
 
@@ -77,25 +117,73 @@ Neuron 5 cluster comprised 276 cells. An EF-hand domain-containing protein, Smp_
 
 We expected to find a discrete cluster(s) for the penetration glands, and that it would show similarities to the neural clusters (as glandular cells arise from neuroglandular precursor cells in other animals, such as the sea anemone, Nematostella vectensis, Steger et al., 2022). There are three gland cells per miracidium – one apical and two lateral (Pan, 1980). While the top marker gene for Neuron 3 was expressed in the four nuclei of the apical gland (Figure 3Ci), and there was expression of a Neuron 5 marker in the lateral glands (Figure 3Fi), these genes were expressed in many other cells as well. This suggests that gland cells are either subclusters of Neurons 3 and 5 or they were not captured in the 10X GEMs. To characterise the transcriptomes of the gland cells, we carried out plate-based single-cell RNA-seq (New England BioLabs) on 37 manually selected gland cells (Supplementary file 1h). The biological process GO terms enriched in the most abundant genes (top 200 genes by median transcripts per million [TPM], Supplementary file 1h) included translation, protein folding and ATP synthesis coupled electron transport (Supplementary file 1i). The gland cells showed co-expression of neural markers (Complexin and 7B2) and muscle markers Myosin light chain 1 (Smp_045200), Troponin t (Smp_179810), and Actin-2 (Smp_307020) (Figure 3—figure supplement 6). To identify genes that were specific to gland cells, we searched for differentially expressed genes in the gland cells compared to the other cells in the plate-based scRNA-seq data (i.e. ciliary plates and unknown cells) (Supplementary file 1j and k), and then looked at their expression in the 10X-based scRNA-seq data. A lack of, or minimal, expression of these markers in the 10X-based scRNA-seq data, would support the hypothesis that they were specific to the gland cells. Five venom antigen-like (VAL) genes (belonging to the SCP/TAPS or (CAP) superfamily) were expressed in the gland cells: Smp_120670 (VAL 5) and Smp_070250 (VAL 15) in over 60% of the gland cells, and Smp_176180 (VAL 9), Smp_002630 (VAL 2), and Smp_331830 (SCP protein) in less than 50%. Many gland cells expressed multiple VAL genes (Figure 3—figure supplement 6). In the 10X-based scRNA-seq data, very few cells expressed these VAL genes (one to five cells for each gene, distributed between Neurons 1 and 5, Muscle 1, Parenchyma 2, and Stems F and G clusters). The VAL genes expressed in the gland cells are uniquely expressed during the egg, miracidia, and sporocyst stages (Yoshino et al., 2014; Lu and Berriman, 2018; Buddenborg et al., 2023), and it has been reported that VAL 9 (Smp_176180) induces the differential expression of an extracellular matrix remodelling gene in the snail host (Yoshino et al., 2014). Other differentially expressed genes in the gland cells included Smp_303400 (an HSP70 homologue), Smp_179250 (α-galactosidase/α-N-acetylgalactominidase), Smp_317530 (uncharacterised protein), and two putative major egg antigens Smp_185680 and Smp_303690 (Figure 3—figure supplement 6). Eight putative secreted proteins previously identified in miracidia and in vitro transformed miracidia (Wang et al., 2016; Wu et al., 2009) were expressed in the glands cells (and not in other cell types based on the 10X data), and five of these showed relatively high expression; Smp_302170 (HSP70 homologue), Smp_303400 (HSP70 homologue), Smp_049230 (HSP20), Smp_304250 (purine nucleoside phosphorylase), and Smp_302180 (putative heat shock protein 70)(Figure 3—figure supplement 6). Typical of venom glands in other animals, the transcriptomes of the miracidia gland cells are enriched in genes involved in protein translation, stabilisation, and stress response to cope with mass protein production (Zancolli et al., 2022).
 
-## Ciliary plate gene marker identifies six submuscular cell bodies
+### Ciliary plate gene marker identifies six submuscular cell bodies
 
 A small cluster of 40 cells (almost exclusively from the unsorted samples) was identified near the tegument cluster (Figure 1C). The top markers were Smp_096390, a 16-kDa calcium-binding protein (CaBP) and p25 alpha (Smp_097490, a marker for ciliated neurons in adult worms, Wendt et al., 2020; Figure 3A). In situ hybridisation revealed CaBP and p25 alpha expression in the ciliary plates; epithelial cells with thousands of motile cilia used for swimming (Figure 3G and Figure 3—figure supplement 2). Both genes were also expressed in six previously undescribed cells that sent a projection out to the exterior (between the first and second tiers of ciliary plates as seen with phalloidin staining, Figure 3G) and whose nuclei sat below the body wall musculature (Figure 3—videos 2; 3 ; Figure 3—figure supplement 2F). Given the association of p25 alpha with ciliated neurons in adults (Wendt et al., 2020), expression in the submuscular cells suggests they project cilia into the external environment and may be sensory cells. The expression of CaBP and p25 in both the ciliary plates and submuscular cells suggests that these anatomical structures are functionally linked. GO terms for this cluster were related to ‘mitochondrial transmembrane transport’ and ‘microtubule-based process’ (Supplementary file 1g), and STRING analysis showed two interaction networks: one associated with ‘carbon metabolism and mitochondria envelope’, the second associated with ‘cytoplasmic dynein complex’ and ‘dynein light chain superfamily’ (Figure 3—figure supplement 4). Further plate-based scRNA-seq of 21 individual ciliary plates confirmed the high expression of CaBP (Smp_096390) and p25 alpha (Smp_097490), with more than twofold higher expression of CaBP than any other gene by median TPM (Supplementary file 1l). Although the ciliary plates expressed p25 (a ciliated neuron marker in the adult, Wendt et al., 2020), they did not express many of the typical neural markers, for example complexin and 7B2 (Figure 3—figure supplement 6).
 
-## Tegumental cells expressed MEG6 and are located in the posterior two-thirds of the larva
+### Tegumental cells expressed MEG6 and are located in the posterior two-thirds of the larva
 
 We identified a cluster of 366 cells as tegumental based on the expression of markers for tegument (skin) in the adult worm (Wendt et al., 2020), for example genes encoding dynein light chain (Smp_302860, Smp_200180), a DUF3421 domain-containing protein (Smp_331910), and micro exon gene MEG6 (Smp_163710). Two other dynein light chain genes were top markers (Smp_201060, Smp_312630), and both a tetraspanin (Smp_303290) and Gelsolin (Smp_008660) were specific to this cluster. Meg6 (Smp_163710) was expressed in 66% of the cells in this cluster; ISH showed 46 Meg6+ cells, and the nuclei were in the posterior two-thirds of the larva. The nuclei sat below the BWM, and cytoplasmic protrusions reached between muscle filaments and formed the epidermal ridges between the ciliary plates (Figure 4C, D). These cells correspond to the epidermal ridge cells described by Pan, 1980. A second tegument marker, a dynein light chain (Smp_200180), showed overlapping expression with Meg6 (Figure 4—video 4). Enriched GO terms for tegument genes included ‘microtubule-based process’ and ‘protein folding’ (Supplementary file 1g). STRING analysis revealed a network of 25 genes associated with protein localisation to the ER, folding, export and post-translational protein targeting to the membrane (Figure 4—figure supplement 1).
 
-## Spatial localisation of top marker transcripts identifies a simple protonephridial system
+![Figure 4.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig4-v1.jpg)
+
+**Figure 4.:** (A) Expression profiles of cell marker genes specific or enriched in these cell-type clusters. Genes validated by in situ hybridisation are in red. Gene identifiers shown in parenthesis but with ‘Smp_’ prefix removed for brevity. Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0). (B) Segmentation of nuclei of the cells expressing the marker genes for: (i) protonephridia and tegument (multiplexed) show that six cells express Smp_335600 (ShKT-domain protein, a marker for protonephridia), 46 cells express Meg-6 (a marker for tegument) (segmentation of 1 larva), and (ii) seven cells that express an uncharacterised gene, Smp_318890 (a marker for parenchymal cells)(segmentation of 1 larva). (C, D) The tegument marker Meg-6 shows expression around nuclei in the posterior two-thirds of the larvae. The nuclei are below the body wall muscle, and cytoplasmic protrusions reach between muscle filaments (arrows) and form the epidermal ridges (arrowheads) between the ciliary plates (which are visible in Dii, iii expressing the ciliary plate marker Smp_096390) (asterisks). 100% of individuals examined, n > 30. (E) The protonephridial marker Smp_335600 shows ‘S’-shaped expression with transcripts extending from the nucleus of the anterior flame cell (AFC) along the excretory tubule and its nucleus (ETN) to the posterior flame cell (PFC), (Eii) it is expressed around the nuclei (arrow) rather than the barrels (arrowhead) of the flame cells. 100% of individuals examined, n > 30. (Fi) The pan-parenchymal marker, Smp_318890, was expressed in two anterior cells (one on either side of the brain) and five to seven cells posterior to the brain. (Fii) These cells have long cytoplasmic protrusions that reach between all the other cells, (Fiii) including the ago2-1+ stem cells. 100% of individuals examined, n > 30. Scale shown in B also applies to C, D, Ei, and F.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** STRING analysis of the top 100 marker genes for (A) tegument and (B) protonephridia. Lines (edges) connecting nodes are based on evidence of the function of homologues. Functional enrichment (FDR) as provided by STRING (PPI = predicted protein interaction). Minimum interaction (confidence) score of 0.7, corresponding to a high level of confidence, 0.4 medium level of confidence.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** STRING analysis of the top 100 marker genes for (A) Parenchyma 1 and (B) Parenchyma 2. Lines (edges) connecting nodes are based on evidence of the function of homologues. Functional enrichment (FDR) as provided by STRING (PPI = predicted protein interaction). Minimum interaction (confidence) score of 0.7, corresponding to a high level of confidence, 0.4 medium level of confidence.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** GO analysis was performed on each cluster using genes with a minimum area under curve (AUC) score of 0.7. Enriched biological process (BP) GO terms are shown for each cluster, and have been filtered to only show terms supported by a minimum of two genes. Top panels (left to right) show parenchyma, muscle, and tegument clusters, middle panels (left to right) show ciliary plate, neuron, and protonephridia clusters, and the bottom panel shows stem clusters. Full list of GO terms available in Supplementary file 1g.
+
+### Spatial localisation of top marker transcripts identifies a simple protonephridial system
 
 There were 536 cells in the protonephridial cluster, expressing genes common to excretory systems in other animals (Gąsiorowski et al., 2021), for example, the structural protein nephrin (Smp_130070) and the transcription factor odd-skipped-related (Smp_152210). Eighty percent of the cells expressed the protonephridia marker Smp_335600 (ShKT-domain-containing protein) (Nanes Sarfati et al., 2021; Figure 4A). Smp_335600 was expressed around six nuclei in a bilaterally symmetrical pattern (Figure 4Ei; Figure 4—video 1). On each side, Smp_335600 transcripts were distributed along the s-shaped path of an excretory tubule, passing its nucleus, and connecting the anterior and posterior flame cells (Figure 4Ei). Within the flame cells, expression was detected around the nuclei rather than the barrel (Figure 4Eii). The four ciliated flame cells and two excretory ducts comprise the excretory system of the miracidium. Accordingly, STRING (Figure 4—figure supplement 1) and GO analyses (Supplementary file 1g) of this cluster confirmed enrichment for terms including ‘cilium organisation’, ‘axoneme assembly’, ‘cytoskeleton organisation’, and ‘microtubule-based process’.
 
-## Two distinct parenchyma clusters predicted in the miracidium
+### Two distinct parenchyma clusters predicted in the miracidium
 
 We identified two clusters of cells (1093 cells from Parenchyma 1 and 605 cells from Parenchyma 2) that were transcriptionally similar to the parenchymal cells found in later developmental stages; for example, they express hypothetical protein (Smp_063330), cathepsin B-like cysteine proteinase (Smp_141610), and serpin (Smp_090080) (Diaz Soria et al., 2020; Wendt et al., 2020; Diaz Soria et al., 2024). All top marker genes for Parenchyma 1 were also expressed in Parenchyma 2 but at lower levels, whereas the DUF2955 domain-containing protein (Smp_191970) was uniquely expressed in Parenchyma 2 (Figure 4A). A gene encoding a Zinc transporter Slc39a7 (Smp_318890) was a top marker for both clusters, with expression confirmed in situ within seven to nine cells; two of which were located anteriorly on either side of the brain and five to seven located posterior to the brain (Figure 4B, F). These parenchyma cells have long cytoplasmic protrusions that reach between all the other cells, filling the intercellular space (Figure 4Fii, iii; Figure 4—videos 2; 3). Pan, 1980 called these the interstitial cells and, observing abundant glycogen particles and lipid droplets, proposed they function as sources of energy for the non-feeding larva and as nurse cells for the stem cells during the first few days post-infection of the snail. We performed ISH for two Parenchyma 2 markers, Smp_191970 and Smp_320330, but the first showed no detectable signal, and the second had broad expression across all cells with no specific overlap with the pan-parenchymal marker Smp_318890. Therefore, by ISH, we could only identify parenchymal cells in general and could not identify the two clusters in situ. STRING analysis for the Parenchyma 1 showed enrichment in networks for ‘carbohydrate metabolic process’ and ‘hydrolase’, and for Parenchyma 2: ‘phagosome’, ’mTOR signalling pathway’, ‘mitochondrial inner membrane’, and ‘proton-transporting two sector atpase complex’ (Figure 4—figure supplement 2). Analysis of GO annotations was able to distinguish between the two parenchyma subpopulations, with Parenchyma 1 genes enriched for ‘extracellular region’ and ‘endopeptidase inhibitor activity’, and Parenchyma 2 genes enriched for processes that are ‘dynein complex’ and ‘microtubule-based process’ (Supplementary file 1g; Figure 4—figure supplement 3).
 
-## Two major stem cell populations in the miracidium that clustered by sex
+### Two major stem cell populations in the miracidium that clustered by sex
 
 We identified stem cells based on the expression of known stem cell markers for the mother sporocyst stage, for example ago2-1 (Smp_179320), nanos-2 (Smp_051920), fgfrA (Smp_175590), fgfrB (Smp_157300), klf (Smp_172480), and hesl (Smp_024860) (Wang et al., 2013; Wang et al., 2018; Figure 5A). The mother sporocyst has been reported to have three stem cell populations: Kappa (klf+, nanos-2+), Delta (fgfrA+, fgfrB+, and nanos-2+), and Phi (fgfrA+, fgfrB+, and hesl+) based on scRNA-seq of 35 stem cells (Wang et al., 2018). Wang et al., 2018 suggest that the Kappa population serve as ‘embryonic’ stem cells that give rise to both the Delta and Phi populations; Delta cells generate somatic tissues and Phi produce temporary larval tissues, including tegument. In the miracidium, we identified seven stem cell clusters by expression of ago2-1 (10,686 cells): Stems A and B are klf+ and nanos-2+ (i.e. Kappa-like); Stems C and D are nanos-2+, fgfrA+, fgfrB+, and hesl+ (i.e. they resembled both Delta and Phi) (Figure 5A, Figure 5—figure supplement 1); as well as Stems E, F, and G (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-v1.jpg)
+
+**Figure 5.:** (A) Expression profiles of cell marker genes that are specific or enriched in the stem cell clusters. Genes specific to the W (female-specific) sex chromosome are highlighted in blue. Genes validated by ISH are marked in red. Gene identifiers shown in parenthesis but with ‘Smp_’ prefix removed for brevity. Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0). (Bi) UMAP including all genes shows that there are two Delta/Phi and two Kappa stem clusters, (ii) UMAP showing that removal of all genes specific to the W and Z sex chromosomes results in one Delta/Phi and one Kappa cluster, indicating that the stem cells are transcriptionally different in male and female miracidia due to the expression of sex-linked genes. (C, D) Multiplexed ISH showing three stem cell markers simultaneously in the same individual: ago2-1 (Smp_179320) (pan-stem), p53 (Smp_139530) (Delta/Phi), and Uridine phosphorylase A (UPPA, Smp_308140) (Kappa). (Ci) Ago2-1 expression reveals stem cells lateral and posterior to the brain (Optical section). 100% of individuals examined, n > 30. (ii) MIP with segmentation of the 23 ago2-1+ cells. (Di) P53 and UPPA expression shows the two stem cell populations intermingled in 100% of individuals examined, n > 30. (ii) MIP and segmentation reveal there are more p53+ cells than UPPA+ cells (in this larva,15 are p53+ and 9 are UPPA+). Scale shown in C also applies to D.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–F) Three stem cell classes were identified in the mother sporocyst stage and were named based upon their respective markers: Kappa (klf+, nanos-2+), Delta (nanos-2+ and fgfrA+, fgfrB+ and nanos-2+) and Phi (fgfrA+and, fgfrB+ and hesl+), as well as pan-stem marker ago2-1 (Wang et al., 2018; Nanes Sarfati et al., 2021). In the miracidium, we identified seven stem cell clusters by expression of ago2-1: Stems A and B are klf+ and nanos-2+ (i.e. Kappa-like), Stems C and D are nanos-2+, fgfrA+, fgfrB+, and hesl+ (i.e. they resembled both Delta and Phi). Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Schistosoma mansoni has seven pairs of autosomes and one pair of sex chromosomes; males have ZZ and females have ZW (Buddenborg et al., 2021). The sex chromosomes are composed of sex-specific regions that are unique to each chromosome flanked by pseudoautosomal regions that are common to both Z and W. The W-specific region (WSR) is a large, highly repetitive region that contains 38 genes, most of which are gametologs (genes with homologous copies on the WSR and Z-specific region [ZSR]). The ZSR contains 941 genes, of which only 35 are gametologs. The proportion of reads mapping to the WSR and ZSR across all cell-type clusters shows (A) putative male cells (Stems A and C i.e. those that lack WSR gene expression) and (B) evidence of incomplete ZSR gene dosage compensation in the male stem cells. (C) To determine whether any of the WSR genes were responsible for the clustering pattern, we excluded them from the mapping reference. The impact on the overall UMAP clustering was minimal. We repeated this excluding the (D) ZSR genes, (E) gametologues, and (F) ZSR genes, except the gametologues, in turn. In all four scenarios, the stem cell clusters remained separated by sex. ZSR or WSR expression is therefore sufficient on their own to split these stem clusters in two.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** To identify whether stem cell clusters A and B, and C and D, still split down A/B and C/D lines despite the apparent collapsing of clusters after removing ZSR and WSR genes, we ran de novo clustering at several resolutions. Even once clusters were oversplitting, there was not a separation between stem cluster A/B and C/D. This was run using Seurat(v5.0.2), so the overall topology is not identical to that shown in Figure 5, though the same number of principal components (PCs) is used. (A) Shows the UMAP topology labelled by original cluster ID, (B) shows the de novo clusters at resolution = 0.6, and (C) shows the de novo clusters at resolution = 1.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) The percentage of reads mapping to W-specific genes by cluster. The blue line at 0.2% indicates where the data were split into W+ and W− categories, that is Stems B and D contain cells with reads mapping to W-specific genes (and are likely cells from female miracidia), whereas most cells in Stems A and C do not have reads mapping to W-specific genes (cells from male miracidia). (B) UMAP showing the clusters by W+ and W− categories. Almost complete separation can be seen in the main stem cell clusters, and the categories are mixed in most other clusters.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Four-hour EdU pulse on miracidia 0–6 hr post-hatching shows no EdU incorporation in any cells. (B) Negative control. (C) Positive control, 3-day EdU pulse on freshly transformed mother sporocysts shows many dividing cells incorporating EdU, all treatments n = 30. Scale bar = 10 µm.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** (A) Sixty-one of the top markers of Stems C and D combined (i.e. Delta/Phi-like) and (B) 37 for Stems A and B combined (i.e. Kappa-like) form large predicted interactions enriched for translation, ribosome biogenesis, and nucleic acid binding. Lines (edges) connecting nodes are based on evidence of the function of homologues. Functional enrichment (FDR) as provided by STRING. PPI = predicted protein interaction. Minimum interaction (confidence) score of 0.7, corresponding to a high level of confidence.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** (A) Heatmap of top differentially expressed genes (by adjusted p-value) from each of Delta/Phi and Kappa populations show a high number of transcription factors (bold) in Delta/Phi and enrichment of lipid and glycolytic metabolism genes in Kappa. Gene expression has been log-normalised and scaled using Seurat(v. 4.3.0). (B) Gene ontology analysis of DEG (adj p < 0.001) revealed that upregulated genes in Delta/Phi were related to the structural constituent of the ribosome and translation, while upregulated genes in Kappa were related to transcription and metabolism.
 
 Working with the latest version of S. mansoni genome (v10), where the sex chromosomes Z and W have been resolved (Buddenborg et al., 2021), we were able to determine that the Delta/Phi- and Kappa-like populations are each composed of two well-separated clusters that can be distinguished based on the expression of sex-linked genes (Figure 5A; Figure 5—figure supplement 2). S. mansoni has seven pairs of autosomes and one pair of sex chromosomes; males are homogametic (ZZ) and females heterogametic (ZW) (Buddenborg et al., 2021). The sex chromosomes are composed of sex-specific regions that are unique to each chromosome flanked by pseudoautosomal regions that are common to both Z and W. To unveil the genes contributing to the sex-driven clustering we removed in turn different sex chromosome regions from the analysis. When all Z-specific region (ZSR) and W-specific region (WSR) genes were removed from the dataset and the cells reclustered, the two Delta/Phi-like and two Kappa-like clusters each collapsed into single stem cell clusters, giving five stem cell clusters in total (i.e. Delta/Phi, Kappa, E, F, and G; Figure 5B, Figure 5—figure supplement 3). Removing from the dataset genes located solely on the WSR (n ≈ 35), the ZSR (n ≈ 900), or just the ~35 pairs of genes with homologous copies on the WSR and ZSR did not impact the overall UMAP topology, that is in all three scenarios the stem cell clusters remained separated by sex (Figure 5—figure supplement 2). ZSR or WSR expression is therefore sufficient on their own to split each of these stem clusters in two (Figure 5—figure supplement 2).
 
@@ -109,11 +197,39 @@ A lack of EdU incorporation into miracidia cells (Figure 5—figure supplement 5
 
 Many top markers for the Delta/Phi and Kappa stem clusters were ribosomal proteins (Figure 5A). STRING analysis showed that most of the top 100 markers of each cluster both formed large single networks enriched for genes involved in translation, ribosome biogenesis, and gene expression, and this was particularly striking in the Delta/Phi cluster (Figure 5—figure supplement 6). Amongst the top genes differentially expressed between Kappa and Delta/Phi (Figure 5—figure supplement 7A; Supplementary file 1n) were six transcription factors upregulated in Delta/Phi: an orthologue of lin-39 (Smp_247590), tiptop (Smp_180690), hes-related (Smp_024860), p53-1 (Smp_139530), Zfp-1 (Smp_145470), and a putative homothorax homeobox protein/six-3–1 (Smp_147790). The simultaneous co-expression of multiple transcription factors indicates a multipotent progenitor stage (Kumar et al., 2017). Enriched in, or specific to, Kappa cells were genes involved in glycolysis and lipid metabolism, that is malate dehydrogenase (Smp_129610), 14 kDa fatty acid-binding protein (Smp_095360) and a very long-chain fatty acid elongase (Smp_051810). GO analysis of differentially expressed genes (Supplementary file 1o) revealed that the most significantly upregulated genes in Delta/Phi were related to the structural component of the ribosome and translation; these are the first markers of a pre-activation stage in stem cells (Shin et al., 2015). Whereas GO analysis showed that upregulated genes in Kappa are involved in transcription and metabolism (Figure 5—figure supplement 7B), which indicated quiescent rather than primed and activated stem cells (Llorens-Bobadilla et al., 2015).
 
-## One miracidia stem population contributes to somatic tissues and the other to the germline
+### One miracidia stem population contributes to somatic tissues and the other to the germline
 
 The Delta/Phi stem population simultaneously co-expressed three transcription factors that are known to be specific to the flatworm tegument/epidermal lineage, that is p53-1, zfp-1, and six3-1 (Cheng et al., 2018; Collins et al., 2016; Wendt et al., 2018). This suggests that the Delta/Phi stem population may have been the origin of the miracidia tegument cells and may be the source of new tegument cells in the mother sporocyst stage. To explore the fates of the two miracidia stem populations, we investigated the dynamics of their gene expression in stem and tegument cells across the transition from miracidia to sporocyst. To do this, we combined single-cell data from these developmental stages and cell types (this study and Diaz Soria et al., 2024) and used RNA velocity analysis (La Manno et al., 2018; Bergen et al., 2020) to estimate relative induction/repression and timing of gene expression in this dataset.
 
 A UMAP plot of the combined clustering shows the gene expression dynamics of the miracidia and sporocyst tegument and stem cells (Figure 6) (batch-corrected samples showed similar results, Figure 6—figure supplement 1). The velocity field and latent time representations indicate the progression of some miracidia Delta/Phi stem cells towards the miracidia tegument cells and a high speed of differentiation was inferred from the miracidia tegument cells to the sporocyst tegument (Figure 6B, C). This suggests that the miracidia tegument cluster may contain cells that range from post-mitotic stem cell progeny to tegument progenitors to terminally differentiated tegumental cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig6-v1.jpg)
+
+**Figure 6.:** (A) UMAP shows the life cycle stage origin of cells and cell cluster identity from Seurat analysis. (B) RNA velocity analysis flow field shows the generalised direction of RNA velocity. (C) Latent time analysis shows an estimated temporal relationship between cells. (B and C) are based on the expression of both spliced and unspliced transcripts, and their expression dynamics across cells and genes. The phase plot, velocity, and expression were calculated for (D) p53-1, (E) Zfp-1, (F) p-53-2, and (G) eled (no batch correction). Gene expression has been normalised using counts per million (CPM Expanded and re-phrased) and log-transformed using scvelo(v. 0.2.4). For all of (D–G), the phase plot (left plot) shows the proportion of spliced and unspliced transcripts in each cell, where each point is a cell and is coloured by the clusters in (B). The purple almond-shape overlaid represents the processes of transcription, splicing, and degradation, where this can be modelled. The dashed line shows the estimated steady state where RNA transcription is constant. The middle panel shows the RNA velocity, which for each gene is based on how the observations deviated from the estimated steady state towards induction or repression. The right panel shows gene expression. p53-1 and zfp-1 are predominantly expressed in the Delta/Phi-like miracidia stem cells and some miracidia tegument, and velocity indicates active expression of p53-1 but downregulation of zfp-1 in the stem cells. p53-2 is most highly expressed in the Kappa-like miracidia stem cells, and velocity indicates this gene is being actively transcribed. eled expression is very low and only spliced transcripts have been detected, but is generally restricted to the Kappa-like miracidia stem cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) UMAP shows the life cycle stage origin of cells and cell cluster identity from Seurat analysis. (B) RNA velocity analysis flow field shows generalised direction of RNA velocity. (C) Latent time analysis shows an estimated temporal relationship between cells. The phase plot, velocity, and expression were calculated for (D) p53-1, (E) Zfp-1, (F) p-53-2, and (G) eled. Gene expression has been normalised (CPM) and log-transformed using scvelo(v. 0.2.4). p53-1 and zfp-1 are predominantly expressed in the Delta/Phi-like miracidia stem cells and miracidia tegument, and velocity indicates active expression of p53-1 butdownregulation of zfp-1 in the stem cells. p53-2 is most highly expressed in the Kappa-like miracidia stem cells, and velocity indicates this gene is being actively transcribed. eled expression is very low and only spliced transcripts have been detected, but is generally restricted to the Kappa-like miracidia stem cells.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) UMAP shows the life cycle stage origin of cells and cell cluster identity from Seurat analysis. (B) RNA velocity analysis flow field shows generalised direction of RNA velocity. Phase plot, velocity, and expression as calculated for genes mentioned in text: blue outline = known molecular regulators of tegument development and tegument markers in adult S. mansoni and planaria. Green outline = miracidia and sporocyst tegument marker genes. Red outline = genes revealed by RNA velocity analysis to be highly dynamic in the Delta/Phi, miracidia, and sporocyst tegument cells. Gene expression has been normalised (CPM) and log-transformed using scvelo(v. 0.2.4).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) UMAP shows the life cycle stage origin of cells and cell cluster identity from Seurat analysis. (B) RNA velocity analysis flow field shows generalised direction of RNA velocity. Phase plot, velocity, and expression as calculated for genes that are mentioned in the text: red outline = known molecular regulators of germline stem cells in adult S. mansoni. Blue outline = pluripotency gene. Oc-1 expression is low with little velocity signal, but the expression is predominantly seen in the Kappa-like miracidia stem cells (and Stem G). Irx is also primarily expressed in the Kappa-like miracidia stem cells with velocity results indicating an accumulation of spliced transcripts. Irx transcripts are also detected in Stem G and the sporocyst stem/germinal cells. Akkn expression is low and largely seen in the Kappa-like and Stem G miracidia stem clusters. Lsm14 domain-containing protein transcripts are most consistently expressed in the Kappa-like miracidia stem cells. Klf is most highly expressed in sporocyst stem/germinal cells, and the Kappa-like miracidia stem cluster. Gene expression has been normalised (CPM) and log-transformed using scvelo(v. 0.2.4).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) UMAP shows the life cycle stage origin of cells and (B) shows cell cluster identity from Seurat analysis. (C) RNA velocity analysis flow field shows the generalised direction of RNA velocity. (D) Latent time analysis shows an estimated temporal relationship between cells. Phase plot, velocity, and expression as calculated for (E) p53-1, (F) Zfp-1, (G) p-53-2, and (H) eled (no batch correction, sporocyst cells combined with miracidia sample 1 cells). P53-1 is most highly expressed in the Delta/phi-like miracidia stem clusters and some of the miracidia tegument cells, and the velocity indicates active transcription. Zfp-1 is expressed most highly in the same clusters, but velocity suggests that the majority of transcripts are spliced. P53-2 expression is highest in the Kappa-like miracidia stem clusters, but the expression is detected in several other clusters, including muscle, neuron, and other stem clusters. Velocity indicates that this gene is being actively transcribed in the majority of these clusters. Eled expression is very low, but restricted to the Kappa-like miracidia stem clusters. Gene expression has been normalised (CPM) and log-transformed using scvelo(v. 0.2.4).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A) UMAP shows the life cycle stage origin of cells and (B) shows cell cluster identity from Seurat analysis. (C) RNA velocity analysis flow field shows the generalised direction of RNA velocity. Phase plot, velocity, and expression as calculated for (D) oc-1, (E) boule, (F) irx, (G) akkn, and (H) an FDF domain-containing protein (no batch correction, sporocyst cells combined with miracidia sample 1 cells.). Oc-1 expression is low but generally specific to the two Kappa-like miracidia stem cell clusters, and Stem G. Only spliced Boule transcripts were detected, and with low expression, predominantly in the Stem B and E clusters. Irx was most highly expressed in Kappa-like miracidia stem clusters, as well as Stem E, Stem G, and sporocyst stem/germinal cells. Akkn is also largely expressed in the Kappa-like miracidia stem clusters. The FDF domain-containing protein expression is low, but seen most in Kappa-like miracidia stem clusters, Stem G, and several neural clusters. Gene expression has been normalised (CPM) and log-transformed using scvelo(v. 0.2.4).
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** (A) UMAP shows the life cycle stage origin of cells and (B) shows cell cluster identity from Seurat analysis. (C) RNA velocity analysis flow field shows the generalised direction of RNA velocity. (D) Latent time analysis shows an estimated temporal relationship between cells. Phase plot, velocity, and expression as calculated for (E) p53-1, (F) Zfp-1, (G) p-53-2, and (H) eled (no batch correction, sporocyst cells combined with miracidia sample four cells). p53-1 and zfp-1 are predominantly in the Delta/Phi-like miracidia stem cell clusters (Stems C and D) and also in the miracidia tegument. Velocity indicates that p53-1 is being induced in the stem cells and repressed in the tegument, while zfp-1 shows a gradient of velocity in the stem cells and repression in the tegument. P53-2 is most highly expressed in the Kappa-like miracidia stem cells (Stems A and B) and Stem F, with velocity results indicating active transcription. eled expression was very low, but primarily in the Kappa-like miracidia stem cells (particularly Stem A). Gene expression has been normalised (CPM) and log-transformed using scvelo(v. 0.2.4).
 
 Investigations into tegument development in adult schistosomes has revealed key regulators and genes associated with different development states (Collins et al., 2016; Wendt et al., 2018; Wendt et al., 2022). We examined the dynamics of these genes in the combined miracidia/mother sporocyst dataset using RNA velocity and found that the velocities of these genes show different temporal dynamics. P53-1 (Smp_139530) was induced in the Delta/Phi stem cells but repressed in some miracidia tegument cells and expression decreased in a continuum across the miracidia tegument cells (Figure 6D). The flatworm-specific transcription factor Zfp-1 (Smp_145470) showed a similar expression pattern to p53-1, except that the predominance of spliced copies (Figure 6E) suggested that transcription happened earlier, during embryogenesis. A second zinc finger protein, Zfp-1-1 (Smp_049580) was expressed in tegumental cells more than stem cells, which suggested a role in stem cell progeny and tegument progenitors (Figure 6—figure supplement 2). In adults, tegument cells are renewed continuously by a population of tsp2+ (Smp_335630) progenitor cells that fuse with the tegument (Wendt et al., 2018). In the miracidia, tsp2 was expressed in the Delta/Phi stem cells as well as tegument cells (Figure 6—figure supplement 2), suggesting earlier expression than in the adult, or that Delta/Phi are progenitor cells. Several markers of mature tegument cells in the adult were expressed in the miracidia and sporocyst tegument cells but not in the stem cells, for example annexin (Smp_077720), calpain (Smp_241190), and endophilin B (Smp_003230) (Figure 6—figure supplement 2). Annexin is specific to the tegument cells, and the phase plot showed the accumulation of mature transcripts in the sporocyst tegument, while there was evidence of recent transcription in the miracidia tegument (Figure 6—figure supplement 2). A putative orthologue of a planaria transcription factor six-3-1 (Smp_147790), a marker for early epidermal progenitors (Cheng et al., 2018) was expressed in the Delta/Phi stem cells and miracidia tegument (Figure 6—figure supplement 2). All of these genes showed little expression in the Kappa stem population (Figure 6—figure supplement 2). The expression of these known tegument/epidermal development and lineage-specific genes in the Delta/Phi stem cluster, and the indication that zfp-1 transcription occurred pre-hatching, suggested that this stem population was the origin of the miracidia tegument cells and is the source of the tegumental lineage. This, together with the observation that more than 80% of protein-coding genes in the genome are detected in these miracidia data, suggests that similar molecular programmes for the development of tissues in the miracidia and mother sporocyst may be redeployed multiple times across the life cycle.
 
@@ -125,11 +241,15 @@ Together, these data suggest that the Delta/Phi population is the origin of the 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig7-v1.jpg)
 
-**Figure 7.:** Adding single-cell data for miracidia stem cells (this study) to existing stem cell scenarios on Schistosoma mansoni development (Wang et al., 2018; Li et al., 2021) show the continuum of the Kappa (κ) population from the miracidium, through the intra-molluscan stages to the juvenile and adult stages inside the mammalian host. Wang et al., 2018 proposed that the κ cells give rise to epsilon (ε), eled cells in the juvenile primordial testes, ovaries, and vitellaria (germline), as well as in a gradient increasing towards the posterior growth zone (soma). They suggested that germ cells may be derived from ε-cells early in juvenile development, and +,eled is the earliest germline marker yet identified in schistosomes. This led to the idea that S. mansoni does not specify its germline until the juvenile stage (Wang et al., 2018) and a germline-specific regulatory programme (including eled, oc-1, akkn, nanos-1, boule) was identified in intra-mammalian stages (Wang et al., 2018; Li et al., 2021). We show expression of these genes in κ stem cells in the miracidium. This suggests that after ~6 days of embryogenesis, at hatching of the miracidium, the cells that may contribute to the germline might already be segregated into the κ population and the molecular regulatory programme that differentiates somatic (delta/phi, δ/ᵩ) and germ cell (κ) lineages is present. Furthermore, as p53-2 plays a genotoxic stress response role in adult reproductive cells (Wendt et al., 2022), its expression in κ cells in the miracidia is another line of evidence that indicates that this population may contain the pluripotent stem cells that likely give rise to the germline.
+**Figure 7.:** Adding single-cell data for miracidia stem cells (this study) to existing stem cell scenarios on Schistosoma mansoni development (Wang et al., 2018; Li et al., 2021) show the continuum of the Kappa (κ) population from the miracidium, through the intra-molluscan stages to the juvenile and adult stages inside the mammalian host. Wang et al., 2018 proposed that the κ cells give rise to epsilon (ε), eled+, cells in the juvenile primordial testes, ovaries, and vitellaria (germline), as well as in a gradient increasing towards the posterior growth zone (soma). They suggested that germ cells may be derived from ε-cells early in juvenile development, and eled is the earliest germline marker yet identified in schistosomes. This led to the idea that S. mansoni does not specify its germline until the juvenile stage (Wang et al., 2018) and a germline-specific regulatory programme (including eled, oc-1, akkn, nanos-1, boule) was identified in intra-mammalian stages (Wang et al., 2018; Li et al., 2021). We show expression of these genes in κ stem cells in the miracidium. This suggests that after ~6 days of embryogenesis, at hatching of the miracidium, the cells that may contribute to the germline might already be segregated into the κ population and the molecular regulatory programme that differentiates somatic (delta/phi, δ/ᵩ) and germ cell (κ) lineages is present. Furthermore, as p53-2 plays a genotoxic stress response role in adult reproductive cells (Wendt et al., 2022), its expression in κ cells in the miracidia is another line of evidence that indicates that this population may contain the pluripotent stem cells that likely give rise to the germline.
 
 ## Discussion
 
 Schistosomes are complex metazoan parasites, with adult worms of S. mansoni characterised into 68 transcriptionally distinct cell clusters (Wendt et al., 2020). Understanding the genes involved in the development and maintenance of these cell types is a promising approach for identifying novel therapeutic targets (Wendt et al., 2020). Here we have shown that the miracidium larva is composed of ~365 cells. Compared to later life cycle stages, where the cercariae is made up of ~1600 cells, the schistosomulum ~900 (Diaz Soria et al., 2020) and the adults tens of thousands of cells (unpublished data), the miracidium is a simple stage of the life cycle. We identified and spatially resolved 19 transcriptionally distinct cell types, revealing the relative contribution of each tissue type to the larva (Figure 8). The miracidium, therefore, with its diversity of differentiated cells present in relatively low numbers, makes a simple and tractable system with which to gain a fundamental understanding of the biology and spatial architecture of schistosome cells, and their transcriptomes.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/95628/elife-95628-fig8-v1.jpg)
+
+**Figure 8.:** In situ hybridisation using HCR (hybridisation chain reaction) enabled multiple tissue-level marker genes to be visualised simultaneously in the same larva. The nuclei of the cells of each tissue type were manually segmented using TrakEM2 in ImageJ (Cardona et al., 2012).
 
 Nineteen cell types may be a conservative characterisation, but at this resolution most cell types formed clearly defined clusters. There was sufficient sensitivity to detect cell types with as few as six cells per larva, for example, Neurons 2 and 3, and the protonephridial system. Some rarer cell types are embedded in existing clusters, particularly in Neuron 1, and a complete neural cell atlas and a study of the putative photoreceptor cells is in progress (Rawlinson et al., in prep). Some cell types were preferentially recovered, for example the stem cells; ISH revealed that they comprise only 7% of the total cell number in the larva, yet they accounted for ~52% of the scRNA-seq data (Supplementary file 1q). Preferential recovery may be due to differences in the robustness of different cell types to dissociation, cell sorting, and/or the microfluidics of the 10X GEM capture process. The ciliary plates, for instance, were only found in sufficient numbers to be defined as a cluster in unsorted samples. Therefore, there are clear benefits to including unsorted cell samples to discover the diversity of cell types in a tissue, organ, or organism, especially when cell types may be fragile, sticky, or unusually shaped. Even with the inclusion of unsorted cells, some known cell types were not captured, that is the penetration glands. With three gland cells per larva and a theoretical 56× coverage of each cell, we would have expected ~168 gland cells in the dataset. These cells were easily identified after dissociation by their distinct flask shape but were not identifiable in these 10X data. Perhaps, because of their large size (20 × 50 µm) and irregular shape, they were not incorporated into the 10X GEMs. Therefore, we used plate-based scRNA-seq for the penetration glands to complete the cell-type transcriptome atlas for all known cell types. Together, we have transcriptomically characterised the anatomical systems described by Pan, 1980, and we discuss key findings below.
 
@@ -149,15 +269,179 @@ The current understanding of schistosome development is that differentiated soma
 
 ## Methods
 
-## Parasite material
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Schistosoma mansoni)</td>
+      <td>NMRI strain</td>
+      <td>Wellcome Sanger Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Probes used for in situ hybridisation</td>
+      <td>Molecular Instruments</td>
+      <td>Lot numbers in Supplementary file 1r</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Next GEM Single Cell 3′ Reagent Kits v3.1, 10X Genomics4 rxns</td>
+      <td>10X Genomics</td>
+      <td>Cat# PN-1000128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Native Bacillus licheniformis Protease</td>
+      <td>Creative Enzymes</td>
+      <td>Cat# NATE-0633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Liberase TM (Thermolysin Medium)</td>
+      <td>Roche</td>
+      <td>Cat# LIBTM-RO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB Next Cell Lysis Buffer</td>
+      <td>NEB</td>
+      <td>E6428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB low input RNA kit</td>
+      <td>NEB</td>
+      <td>E6420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II FS DNA Library Prep Kit for Illumina</td>
+      <td>NEB</td>
+      <td>E7805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji) Version 2.1.0</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 3.6.2</td>
+      <td>The R foundation</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio 1.3.1056</td>
+      <td>Rstudio</td>
+      <td>https://rstudio.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.8.5</td>
+      <td>Python</td>
+      <td>https://www.python.org/downloads/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger 6.0.1</td>
+      <td>Cell Ranger</td>
+      <td>https://www.10xgenomics.com/support/software/cell-ranger/latest</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat 4.3.0</td>
+      <td>Seurat</td>
+      <td>https://satijalab.org/seurat/articles/install.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto bustools 0.27.3</td>
+      <td>kallisto bustools</td>
+      <td>https://www.kallistobus.tools/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scanpy 1.8.2</td>
+      <td>Scanpy</td>
+      <td>https://scanpy.readthedocs.io/en/stable/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scvelo 0.2.4</td>
+      <td>scvelo</td>
+      <td>https://scvelo.readthedocs.io/en/stable/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto 0.44.0</td>
+      <td>kallisto; Melsted et al., 2021</td>
+      <td>https://pachterlab.github.io/kallisto/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAM 1.0.1</td>
+      <td>SAM; Tarashansky et al., 2019; Zanini and Tarashansky, 2022</td>
+      <td>https://github.com/atarashansky/self-assembling-manifold</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>WormBase ParaSiteRelease 18</td>
+      <td>WormBase ParaSite</td>
+      <td>https://parasite.wormbase.org/Schistosoma_mansoni_prjea36577/Info/Index/</td>
+      <td>Genome version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Creative Cloud</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Parasite material
 
 S. mansoni (NMRI strain) eggs were isolated from livers collected from experimentally infected mice perfused 40 days post-infection. All animal-regulated procedures, including the experimental mouse infections at the Wellcome Sanger Institute, were conducted under Home Office Project Licence No. P77E8A062 held by GR. All the protocols were presented and approved by the Animal Welfare and Ethical Review Body (AWERB) of the Wellcome Sanger Institute. The AWERB is constituted as required by the UK Animals (Scientific Procedures) Act 1986 Amendment Regulations 2012.
 
-## Nuclei count
+### Nuclei count
 
 S. mansoni eggs isolated from infected mouse livers were hatched under light in freshwater (Mann et al., 2010), and the miracidia collected within 4 hr of hatching. The sample was put on ice for an hour to sink and concentrate the larvae, and all but 1 ml of the water was removed. One ml of 8% paraformaldehyde (4% final PFA concentration) was added to fix the miracidia for 30 min at room temperature. The larvae were rinsed in phosphate-buffered saline (PBS)/Tween (0.1%) and mounted in DAPI Fluoromount for confocal imaging. The whole mounts were imaged on a Leica Sp8 using a ×40 objective with the pinhole set to 1 AU, and a 30–50% overlap between Z slices. The z-stacks were imported into ImageJ, and each nucleus was manually segmented and counted using the plugin TrakEM2 (Cardona et al., 2012).
 
-## Single-cell tissue dissociation
+### Single-cell tissue dissociation
 
 S. mansoni miracidia for single-cell dissociation were collected as described above. Eggs isolated from mouse livers were hatched in nuclease-free water (NFW) and collected within 4 hr of hatching. Two samples of miracidia were collected; sample 1 contained approximately ~8250 individuals, and sample 2–11,700. The samples (live miracidia in NFW in Low Protein Binding 15 ml Falcon Tubes [cat# 30122216]) were placed on ice for an hour to sink and concentrate the larvae, and all but 20 μl of water was then removed.
 
@@ -165,17 +449,17 @@ Three hundred µl of digestion buffer (2.5 µl of 0.5 M Ethylenediaminetetraacet
 
 Sample 1 cell suspension was sorted; 200 µl was used for a no-stain control for autofluorescence during cell counting and sorting. The remaining 500 µl of cell suspension was stained with 1 μg/ml of propidium iodide (PI; Sigma P4864) to label dead/dying cells. Sample 1 was sorted into an eppendorf tube using the BD Influx cell sorter (Becton Dickinson, NJ) by enriching for PI negative cells (i.e. live cells). It took ~3 hr from the beginning of the enzymatic digestion to generating single-cell suspensions ready for library preparation on the 10X Genomics Chromium platform. Sample 2 cell suspension was not sorted.
 
-## 10X Genomics library preparation and sequencing
+### 10X Genomics library preparation and sequencing
 
 The 10X Genomics protocol (‘Chromium Next GEM Single Cell 3′ Reagent Kits v3.1 User Guide’ available from https://assets.ctfassets.net/an68im79xiti/1eX2FPdpeCgnCJtw4fj9Hx/7cb84edaa9eca04b607f9193162994de/CG000204_ChromiumNextGEMSingleCell3_v3.1_Rev_D.pdf) was followed to create gel in emulsion beads (GEMs) containing single cells, hydrogel beads and reagents for reverse transcription, perform barcoded cDNA synthesis, and produce sequencing libraries from pooled cDNAs. The concentration of single-cell suspensions was approximately 119 cells/μl (sample 1) and 122 cells/μl (sample 2), as estimated by flow cytometry-based counting (Beckman Coulter Cytoflex S). We concentrated both samples to 732 cells/μl. We loaded two aliquots of sample 1 and two of sample 2 into four 10X reactions according to the 10X protocol (Chromium Single Cell 3′ Reagent Kits v3.1), intending to capture approximately 10,000 cells per reaction.
 
 Library construction (following GEM breakage) using 10X reagents following the ‘Single Cell 3′ Reagent Kits v3.1 User Guide’. The four libraries were sequenced on one lane of Illumina Novaseq XP (28 bp read 1, 90 bp read 2, 10 bp index 1, 10 bp index 2). All raw sequence data are deposited in the ENA under study accession PRJEB45615.
 
-## Mapping and quantification of single-cell RNA-seq
+### Mapping and quantification of single-cell RNA-seq
 
 We mapped the single-cell RNA-seq data to version 10 of the S. mansoni reference genome (Buddenborg et al., 2021 and WormBase ParaSite Howe et al., 2016; Howe et al., 2017) using 10X Genomics Cell Ranger (version 6.0.1) (Zheng et al., 2017). Before mapping, exon 8 was removed from Smp_323380 and the 3′ end was trimmed from Smp_337410 to reduce erroneous mapping to the W chromosome from Z gametologs. The Cell Ranger implementation of EmptyDrops (Lun et al., 2019) was used to detect cells and empty droplets. Across the four samples, on average 63.88% of the reads mapped confidently to the transcriptome (63.4% for sorted, 64.35% for unsorted), and an average 83.65% of reads were associated with a cell. There were an average of 118,395 reads per cell. Across the four samples, we captured an estimated 33,319 cells: 8815 and 24,504 cells from sorted and unsorted samples, respectively. The median gene count was 1660, and the median UMI count was 5343. Following QC, 20,478 cells remained for onward analysis.
 
-## QC and clustering using Seurat
+### QC and clustering using Seurat
 
 The four samples were imported into Seurat (version 4.3.0) (Hao et al., 2021) using R (version 4.1.3) in RStudio (version 1.4.1106) for QC, clustering, and marker gene identification. The four samples were initially processed separately. Cells with less than 200 genes expressed and genes in less than three cells were removed. QC metrics, including gene distribution and UMI counts per cell, were inspected visually and used to select QC cut-offs. Following a preliminary analysis without further cell filtering, cells with fewer than 500 UMIs were removed, and a maximum mitochondrial threshold of 5% was applied. This was based on data distribution, best practices from the authors of the software, and other similar studies; here, we were aiming to remove low-quality cells while being relatively permissive as there may be cell types in these data outside of standard filtering parameters. Based on existing knowledge of this larva, we were expecting both multinucleate and anucleate cell type(s) as well as single-nuclei cells (Pan, 1980). The data were normalised, scaled (regressing for mitochondrial gene percentage), and variable genes were identified for clustering following Seurat guidelines. Throughout the analysis of these data, several tools were used to select the optimal number of PCs to use: Seurat’s ElbowPlot and JackStraw, and molecular cross-validation (https://github.com/constantAmateur/MCVR/blob/master/code.R; Young, 2022), and Seurat’s clustree tool was used to assess the stability of clusters with increasing resolution. We employed DoubletFinder (McGinnis et al., 2019) to identify multiplets, which can lead to spurious signals. The estimated doublet rate was calculated based on 10X loading guidelines and adjusted for our sample concentrations; we estimated multiplet rates at 8% for sorted samples and 52.8% for unsorted samples. We used paramSweep, as recommended, to identify the optimum parameters for each sample in our data and removed cells classified as multiplets. DoubletFinder removed 299 and 303 cells from the two sorted samples, and 6069 and 5496 cells from the two unsorted samples.
 
@@ -183,15 +467,15 @@ We then combined the two sorted samples and the two unsorted samples (producing 
 
 Following integration, principal component analysis (PCA) was run for up to 100 PCs. The data were explored using a range of PCs and resolutions and using the tools listed above, 55 PCs and a resolution of 1 were selected for the analysis. We manually segmented out the cells in the Neuron 3 cluster based on clear differences in gene expression. Top markers were identified using Seurat’s FindAllMarkers (min.pct = 0.0, logfc.threshold = 0.0, test.use = "roc") as recommended by Seurat best practices (https://satijalab.org/seurat/) to capture subtle differences in gene expression, and were sorted by AUC. We used the identity and expression of top marker genes (as identified by AUC), along with previously published cell- and tissue-type marker gene expression, to determine the identity of the cell clusters. To link gene description and chromosome locations to gene IDs, the GFF for the latest publicly available genome version was downloaded from WBPS (WBPS18 release, Howe et al., 2016; Howe et al., 2017).
 
-## Sex-effect analysis
+### Sex-effect analysis
 
 To investigate sex effects on the single-cell transcriptome, the cells were categorised as W+ or W− (an approximation of female and male cells, respectively, as males lack WSR genes). As ground-truth data were absent, the % of reads mapping to ZSR and WSR was calculated using Seurat’s PercentageFeatureSet. Cells with 0.2% or more reads mapping to the WSR were classified as W+, and the remaining cells were classified as W−. The 0.2% threshold was selected (Figure 5—figure supplement 4) to avoid classifying ZZ cells with a few transcripts erroneously mapping to a gene on the WSR as W+. This produced 8702 cells labelled as W+, and 11,776 cells labelled as W−.
 
-## SAM algorithm
+### SAM algorithm
 
 The count data from the QC-filtered Seurat analysis were exported for SAM (v1.0.1) analysis. For each SAM analysis, the raw count data were imported as a SAM object, standard preprocessing done (using default SAM parameters), and the SAM algorithm (Tarashansky et al., 2019) run. For further analysis, the object was converted into a Scanpy (v 1.8.2) (Wolf et al., 2018) object, top markers extracted, and metadata from the Seurat analysis were attached. This method was repeated on the Neuron 1 cluster alone, to better understand the transcriptome heterogeneity.
 
-## RNA velocity
+### RNA velocity
 
 All four miracidia samples and the raw data from the mother sporocyst (Diaz Soria et al., 2024) were pseudo-mapped using kallisto bustools (v 0.27.3) Melsted et al., 2021 using the lamanno workflow to the version 10 S. mansoni genome (WBPS18 release Howe et al., 2016; Howe et al., 2017, with the same amendments as listed above). The filtered spliced and unspliced matrices for each sample individually were imported to R. DropletUtils (v 1.20.0) (Lun et al., 2019) and BUSpaRse (v 1.14.1) (Moses, 2023) were used to process and QC the matrices, and filter out cells and genes with few reads. The matrices were then converted to Seurat objects and further filtered so only cells with the cell barcodes that passed QC filtering in the primary Seurat analysis were retained. The metadata and raw counts of the unspliced and spliced reads following filtering were exported as CSV files. The same method was performed on the mother sporocyst samples, which were combined before exporting. For the joint analyses of miracidia and sporocyst cells, the combined sporocyst Seurat object was merged with each of the four miracidia samples separately (due to the mismatch in sample size and batch effect between sorted and unsorted samples) and all were exported.
 
@@ -201,26 +485,26 @@ To focus on the stem/germinal and tegument clusters, the same method as above wa
 
 We present the stem and tegument cells from the sporocyst stage merged with sample 1 (sorted). The equivalent results from sporocysts merged with sample 4 of the miracidia and results with all cells from those two conditions are available in the supplementary data (Figure 6—figure supplements 4–6).
 
-## EdU-staining experiment
+### EdU-staining experiment
 
 Miracidia were collected as described above for 2 hr. As miracidia continually hatched over this time period, they ranged from 0 to 2 hr post-hatching. The miracidia were collected and split into two samples: one for EdU labelling and the second for a negative control (miracidia in water without EdU). Sample one was pulsed with 500 µM EdU in water for 4 hr. Sample two was kept in water for 4 hr. Both samples were fixed in 4% PFA for 30 min at room temperature. EdU incorporation was detected by click reaction with 25 µM Alexa Fluor488 Azide conjugates (Invitrogen) for 30 min. As a positive control, we pulsed freshly transformed mother sporocysts in EdU for 3 days (Wang et al., 2013). Three biological replicates were carried out, with 20 miracidia and 20 mother sporocysts per treatment examined for each replicate.
 
-## Plate-based scRNAseq analysis of individually isolated cells
+### Plate-based scRNAseq analysis of individually isolated cells
 
 A sample of thousands of miracidia was dissociated into a single-cell suspension using the dissociation protocol described above. Individual gland cells, ciliary plates, and unknown cells were picked up one at time using an EZ Grip transfer pipette set to aspirate a 3-µl volume (Research Instruments Ltd 7-72-2800). Each cell was placed in a well of a 96-well plate containing a lysis buffer (NEBNext Cell Lysis Buffer, E6428). cDNA was generated using the NEB low input RNA kit (E6420). DNA library construction was carried out using the NEBNext Ultra II FS DNA Library Prep Kit for Illumina (E7805). The libraries were sequenced on one lane of NovaSeq SP. The reads from the 96 samples were pseudoaligned to the version 10 S. mansoni genome (WBPS18 release Howe et al., 2016; Howe et al., 2017, with the same amendments as listed above using kallisto (v 0.44.0) Bray et al., 2016). These were imported into R (v4.3.1) and the metadata were inspected, after which only samples coming from a single cell with a minimum of 20% reads pseudoaligned were retained (n = 76). The samples were then processed using sleuth (v0.30.1) Pimentel et al., 2017 following guidance from sleuth tutorials, including the steps for normalising, fitting error models, and differential analysis. Differential analysis was used to identify significant genes between the cell types, which were visualised, along with known genes of interest, using sleuth’s heatmap function. Furthermore, the kallisto outputs were used to calculate the top 200 genes by median TPM of the two key cell types of interest, ciliary plates and gland cells, and these were used for GO term analysis following the method described below.
 
-## In situ hybridisation
+### In situ hybridisation
 
 Miracidia collected as described above within 4 hr of hatching were fixed in 4% PFA in 2 μm filtered PBSTw (1× PBS + 0.1% Tween) at room temperature for 30 min on a rocker. The larvae were transferred to incubation baskets (Intavis, 35 µm mesh) in a 24-well plate, rinsed 3 × 5 min in PBSTw, and incubated in 5 μg/ml Proteinase K (Invitrogen) in 1× PBSTw for 5 min at room temperature. They were post-fixed in 4% Formaldehyde in PBSTx for 10 min at room temperature and then rinsed in PBSTw for 10 min. From this point on, the in situ hybridisation experiments followed the protocol described by Choi et al., 2016 and developed for wholemount nematode larvae. We carried out fluorescent in situ hybridisation on 27 cell-type marker genes. Probes, buffers, and hairpins for third-generation in situ hybridisation chain reaction experiments were purchased from Molecular Instruments (Los Angeles, California, USA) (Choi et al., 2018). Molecular Instruments designed probes against the sequences on WormBase ParaSite (WBPS version 18, WS271, Howe et al., 2017; Supplementary file 1R). We subsequently labelled some larvae with phalloidin by adding 1 µl phalloidin to 1 ml 5× SSCT (Sodium Chloride and Sodium Citrate buffer [Invitrogen AM9763] + 0.1% Tween) (for an hour at room temperature in the dark, then rinsing 6 × 30 min in SSCT, incubating overnight at 4°C in DAPI fluoromount-G (Southern Biotech) and then mounting and imaging on a confocal laser microscope (Leica Sp8)). We carried out at more than three in situ hybridisation experiments for each marker gene we validated (each experiment was a biological replicate). From each experiment, we imaged (by confocal microscopy) 10 miracidia (technical replicates) per marker gene experiment. To count the number of cells belonging to each tissue type we imported confocal z-stacks of tissue marker gene expression (Figure 8—videos 1–3) into ImageJ, and using the plugin TrakEM2 (Cardona et al., 2012), manually segmented each nucleus that was expressing, and was surrounded, by the transcripts.
 
-## Opsin phylogeny
+### Opsin phylogeny
 
 Amino acid sequences for selected metazoan opsin proteins were obtained from the GenBank database and aligned using the – auto mode of MAFFT v7.450 (Katoh and Standley, 2013), then trimmed using trimAl v1.4.rev22 (Capella-Gutiérrez et al., 2009) to remove alignment columns with more than 50% gap characters ensuring at least 50% of alignment columns were maintained in the final alignment. Phylogenetic analysis of this alignment was performed using RaxML v8.2.12 (Stamatakis, 2014). The best-fitting empirical amino acid substitution model was identified as maximising the log-likelihood of the data under a model incorporating gamma-distributed variation in substitution rates across sites, and this optimal model (Le Gascuel,LG) was used for subsequent inference. The maximum-likelihood tree and branch lengths were identified as the highest likelihood from 25 independent searches starting from different random starting tree topologies, and support for partitions on this tree was estimated using 1000 bootstrap replicates of resampling alignment positions with replacement, using the fast bootstrap (−x) algorithm implemented in RaxML.
 
-## Protein–protein interaction analysis
+### Protein–protein interaction analysis
 
 Protein interactions were predicted using the online search tool STRING https://www.string-db.org/; V 11; Szklarczyk et al., 2019 for the following well-defined cell clusters: Neurons 3–5, ciliary plates, protonephridia, Parenchyma 1 and 2, tegument, and the two main stem cell populations, Delta/Phi and Kappa. Protein sequences for the top 100 marker genes for each cell cluster were collected from WormBase ParaSite. The protein sequences were entered as a multiple protein search. Default settings were used to predict interactions with either a minimum interaction (confidence) score of 0.4 or 0.7, corresponding to a medium or high level of confidence.
 
-## GO enrichment analysis
+### GO enrichment analysis
 
 Each cluster’s list of marker genes was filtered to focus on specific cluster markers. Genes were retained for analysis if they had a minimum AUC score of 0.7. To compare the functional enrichment in Stem 1 vs Stem 2, Stem A was combined with Stem B and Stem C was combined with Stem D, and the differentially expressed markers were identified using Seurat’s FindMarkers. These markers were filtered (with adjusted p-values <0.001) and used as the basis for GO enrichment analysis in the Delta/Phi and Kappa stem clusters. TopGO (version 2.46.0) (Alexa and Rahnenfuhrer, 2023) was used in R with the weight01 method to identify enriched GO terms. Node size was set to a minimum of five terms, and analysis was run for each cluster on the Biological Process and Molecular Function categories. Fisher’s exact test was used to assess the statistical significance of overrepresented terms, with an FDR threshold set <0.05. The same method was used to identify overrepresented terms in the WSR genes, ZSR genes, and WSR together with ZSR genes for the BP, MF, and Cellular Component categories.

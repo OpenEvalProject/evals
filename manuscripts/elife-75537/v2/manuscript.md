@@ -20,9 +20,9 @@
 
 ### Affiliations
 
-1. https://ror.org/043z4tv69 Laboratory of Virology, Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rocky Mountain Laboratories Hamilton United States
+1. Laboratory of Virology, Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rocky Mountain Laboratories Hamilton United States ([ROR:043z4tv69](https://ror.org/043z4tv69))
 2. HDT Bio Seattle United States
-3. https://ror.org/043z4tv69 Rocky Mountain Veterinary Branch, Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rocky Mountain Laboratories Hamilton United States
+3. Rocky Mountain Veterinary Branch, Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rocky Mountain Laboratories Hamilton United States ([ROR:043z4tv69](https://ror.org/043z4tv69))
 4. Department of Microbiology, University of Washington School of Medicine Seattle United States
 5. Center for Innate Immunity and Immune Disease, Department of Immunology, University of Washington School of Medicine Seattle United States
 
@@ -42,55 +42,152 @@ In this report we evaluated repRNA vaccine expressing the SARS-CoV2 spike protei
 
 ## Results
 
-## Design and production of VoC-targeted repRNA-CoV2S
+### Design and production of VoC-targeted repRNA-CoV2S
 
 Using sequences deposited on GISAID, we designed variant spike open reading frames described in Figure 1A for cloning into our previously described repRNA-CoV2S (Erasmus et al., 2020a). Following synthesis and cloning, we sequence-verified each construct prior to production of RNA for in vitro qualification using an in vitro potency assay that utilizes a sandwich enzyme linked immunosorbent assay (ELISA) to quantify cell surface-expressed SARS-CoV2 spike (Figure 1B and C). While differences in cell surface spike expression were observed at higher concentrations of LION/repRNA (Figure 1B), the relative potencies, in terms of half-maximal effective concentration (EC50), were not significantly different from each other, ranging from 15 to 21 ng of repRNA per well. The differences at higher concentrations could either be due to variability in antibody binding or related to the mutations present in each spike, including the KV995PP mutation which was associated with an increased signal at the higher concentrations (optical densities of 0.6–2.1 for constructs 600 vs. 604, and 0.6–1.0 for constructs 675 vs. 676). To determine whether this apparent enhancement of cell surface-expressed spike, conferred by the KV995PP mutation, can contribute to enhanced immunogenicity, either in terms of magnitude and/or breadth, we included the non-2P-stabilized as well as the 2P-stablized spike of the B.1 spike in the subsequent mouse immunogenicity study, as well as the 2P-stabilized B.1.1.7 and B.1.351 spikes.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75537/elife-75537-fig1-v2.jpg)
 
-**Figure 1.:** (A) Using the full-length, pre-fusion-stabilized (KV995PP) spike (S) of the original A.1 lineage of SARS-CoV2 as a reference, including the signal peptide (sp) and regions corresponding to S1, S2, transmembrane (TM), and cytoplasmic (CD) domains, the various deletions and/or substitutions corresponding to the B.1, B.1.1.7, and B.1.351 lineages were introduced. Additionally, a subset of constructs were prepared on the native version of spike. These six open reading frames were cloned into the replicating RNA (repRNA) backbone downstream of the sub-genomic promoter prior to production of capped mRNA. (B) RNA of each construct was then formulated with lipid inorganic nanoparticle (LION) and serial dilutions added to monolayers of baby hamster kidney cells. Cell surface-bound spike was then measured by sandwich enzyme linked immunosorbent assay (ELISA) of cell lysates harvested at 24 hr post-transfection and (C) half-maximal effective concentrations (EC50) determined for each RNA construct.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Using the full-length, pre-fusion-stabilized (KV995PP) spike (S) of the original A.1 lineage of SARS-CoV2 as a reference, including the signal peptide (sp) and regions corresponding to S1, S2, transmembrane (TM), and cytoplasmic (CD) domains, the various deletions and/or substitutions corresponding to the B.1, B.1.1.7, and B.1.351 lineages were introduced. Additionally, a subset of constructs were prepared on the native version of spike. These six open reading frames were cloned into the replicating RNA (repRNA) backbone downstream of the sub-genomic promoter prior to production of capped mRNA. (B) RNA of each construct was then formulated with lipid inorganic nanoparticle (LION) and serial dilutions added to monolayers of baby hamster kidney cells. Cell surface-bound spike was then measured by sandwich enzyme linked immunosorbent assay (ELISA) of cell lysates harvested at 24 hr post-transfection and (C) half-maximal effective concentrations (EC50) determined for each RNA construct.
 
-## Variant-specific immunization provides distinct binding and cross-neutralization profiles
+### Variant-specific immunization provides distinct binding and cross-neutralization profiles
 
 To evaluate homologous and heterologous neutralization following prime and boost vaccination, we immunized mice with LION/repRNA expressing the SARS-CoV2 spike from several VoC, including the native spikes of A.1 or B.1 lineages as well as the pre-fusion spikes of B.1, B.1.1.7, or B.1.351 lineage viruses. Mice were vaccinated with 1 μg of RNA and boosted with the identical immunogens 28 days later. At 14 days post-boost, serum samples were assayed by ELISA for binding to the A.1 spike (S) or its S1, S2, or receptor-binding (RBD) domains (Figure 2A). Samples were also assayed by 80% plaque reduction neutralization test (PRNT80) against A.1, B.1, B.1.1.7, or B.1.351 viruses (Figure 2B–F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75537/elife-75537-fig2-v2.jpg)
 
-**Figure 2.:** C57BL/6 mice (n = 8/group) received a 1 µg intramuscular injection on days 0 and 28 of lipid inorganic nanoparticle (LION)/replicating RNA (repRNA) encoding either the native conformation of spike derived from A.1, or B.1 viruses, or the pre-fusion-stabilized conformation of spike derived from B.1, B.1.1.7, or B.1.351 viruses, corresponding to repRNAs 600, 675, 676, 673, and 671, respectively. Mice were bled 14 days after the boost immunization and (A) A.1 spike (S)-, S1 domain-, S2 domain-, or receptor-binding domain (RBD)-binding antibody responses measured by enzyme linked immunosorbent assay (ELISA). Neutralizing antibody responses (B–F) measured by 80% plaque reduction neutralization tests (PRNT80) against A.1, B.1, B.1.1.7, or B.1.351 viruses in samples from mice vaccinated with native A.1 (B), native B.1 (C), pre-fusion B.1 (D), pre-fusion B.1.1.7 (E), or pre-fusion B.1.351 (F) spike-derived vaccines. Data in A are presented as geometric means (±geometric standard deviations) along with each individual sample and differences in S-, S1-, S2-, or RBD-binding titers between the 600 A.1 group and other groups were compared by two-way ANOVA (*p < 0.05). Data in B–F are presented as each individual sample connected by black lines with the geometric mean depicted in red and differences between geometric means were compared by Student’s t test.Figure 2—source data 1.Figure 2.
+**Figure 2.:** C57BL/6 mice (n = 8/group) received a 1 µg intramuscular injection on days 0 and 28 of lipid inorganic nanoparticle (LION)/replicating RNA (repRNA) encoding either the native conformation of spike derived from A.1, or B.1 viruses, or the pre-fusion-stabilized conformation of spike derived from B.1, B.1.1.7, or B.1.351 viruses, corresponding to repRNAs 600, 675, 676, 673, and 671, respectively. Mice were bled 14 days after the boost immunization and (A) A.1 spike (S)-, S1 domain-, S2 domain-, or receptor-binding domain (RBD)-binding antibody responses measured by enzyme linked immunosorbent assay (ELISA). Neutralizing antibody responses (B–F) measured by 80% plaque reduction neutralization tests (PRNT80) against A.1, B.1, B.1.1.7, or B.1.351 viruses in samples from mice vaccinated with native A.1 (B), native B.1 (C), pre-fusion B.1 (D), pre-fusion B.1.1.7 (E), or pre-fusion B.1.351 (F) spike-derived vaccines. Data in A are presented as geometric means (±geometric standard deviations) along with each individual sample and differences in S-, S1-, S2-, or RBD-binding titers between the 600 A.1 group and other groups were compared by two-way ANOVA (*p < 0.05). Data in B–F are presented as each individual sample connected by black lines with the geometric mean depicted in red and differences between geometric means were compared by Student’s t test.
 
 In terms of the binding antibody characteristics, similar binding responses to the full-length S or to the S2 domain and RBD were observed between vaccine groups (Figure 2A), however the B.1.1.7- or B.1.351-vaccinated mice appeared to mount higher responses to the S1 domain with significantly higher S1-binding responses in the B.1.1.7-vaccinated mice compared to the ancestral A.1-vaccinated group. In terms of neutralization, in native A.1 spike-vaccinated mice, we observed similar neutralization activity against B.1 challenge virus compared to homologous A.1 challenge, while we found a significant 4.4-fold and 14.7-fold drop in neutralization activity against B.1.1.7 and B.1.351 challenge virus, respectively (Figure 2B). In native- or pre-fusion B.1-spike-vaccinated mice, we observed similar magnitudes of neutralizing responses against A.1, B.1, and B.1.1.7 viruses between the two vaccines (Figure 2C and D), however the pre-fusion-stabilized B.1 spike appeared to induce more breadth in specificity with only a 5.7-fold drop in neutralizing activity against B.1.351 virus (Figure 2D), compared to a 29.3-fold drop in neutralizing activity against B.1.351 virus in mice that received the native conformation of the B.1 spike (Figure 2C). In pre-fusion B.1.1.7-vaccinated mice, we found a significant 11.3-fold drop in neutralization activity against the B.1.351 VoC compared to homologous B.1.1.7 virus (Figure 2C). In B.1.351-vaccinated mice, we found a significant 12.3-fold and 4-fold drop in neutralization activity against the B.1.1.7 and A.1 challenge virus, respectively (Figure 2D). Cumulatively, our data show that the B.1.351 VoC was the most resistant to nAbs elicited by A.1, B.1, or B.1.1.7 vaccination.
 
-## Vaccination induces homologous and heterologous neutralizing antibodies in hamsters
+### Vaccination induces homologous and heterologous neutralizing antibodies in hamsters
 
 Given the distinct nAb profiles of the B.1.1.7 and B.1.351 vaccines, relative to each other, we next evaluated these two candidates, as well as a reference A.1 lineage spike, on the same pre-fusion-stabilized spike backbone, in the Syrian Golden hamster model of SARS-CoV2 infection. Hamsters were vaccinated with 20 μg of LION/repRNA via IM injections and boosted with identical immunizations 4 weeks later (Figure 3A). To evaluate immunogenicity of LION/repRNA in hamsters, at day 14 post-boost, serum samples were assayed by PRNT80 against A.1, B.1.351, or B.1.1.7 viruses as well as the more recently described B.1.617.2 virus (Delta) variant. Against homologous virus, each vaccine candidate elicited robust nAb titers ranging from 1:320 to 1:10,240 with 2- to 14-fold reductions when measured against heterologous virus (Figure 3B). As observed in mice, the most ‘vaccine-resistant’ VoC was the B.1.351 strain, where 13- to 14-fold reductions in nAb titers were observed in hamsters immunized with A.1- or B.1.1.7-specific vaccines, respectively (Figure 3B). The A.1 and B.1.1.7 strains of SARS-CoV2 were similarly neutralized by A.1 or B.1.1.7 vaccination exhibiting a roughly 2-fold reduction in neutralizing activity when comparing homologous to heterologous challenge, however, an ~4- to 5-fold reduction in nAb titer was observed against these viruses in hamsters receiving the B.1.351-specific vaccine (Figure 3), recapitulating observations in mice (Figure 2). Against the B.1.617.2 VoC, the A.1 and B.1.1.7 spike-vaccinated hamsters had a 4- to 6-fold reduction in serum neutralization titer compared to homologous virus challenge while hamsters vaccinated with the B.1.351 spike had a 10-fold reduction in neutralization titer (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75537/elife-75537-fig3-v2.jpg)
 
-**Figure 3.:** Sera from animals immunized with lipid inorganic nanoparticle (LION) complexed with replicating RNA (repRNA) vaccine variants A.1, B.1.1.7, or B.1.351 were incubated with live virus of variant A.1 (black), B.1.1.7 (pink), B.1.351 (green), or B.1.617.2 (purple) as indicated. Plaque-reduction neutralizing titers are indicated by individual symbols with geometric mean titers represented by the height of the bars. Indicated statistical comparisons performed using a two-way ANOVA with Tukey’s multiple comparisons test. ns p > 0.05, *p < 0.05, ***p < 0.001, ****p < 0.0001.Figure 3—source data 1.Figure 3.
+**Figure 3.:** Sera from animals immunized with lipid inorganic nanoparticle (LION) complexed with replicating RNA (repRNA) vaccine variants A.1, B.1.1.7, or B.1.351 were incubated with live virus of variant A.1 (black), B.1.1.7 (pink), B.1.351 (green), or B.1.617.2 (purple) as indicated. Plaque-reduction neutralizing titers are indicated by individual symbols with geometric mean titers represented by the height of the bars. Indicated statistical comparisons performed using a two-way ANOVA with Tukey’s multiple comparisons test. ns p > 0.05, *p < 0.05, ***p < 0.001, ****p < 0.0001.
 
-## Vaccination significantly reduced viral shedding
+### Vaccination significantly reduced viral shedding
 
 To determine the protective benefit of the candidate vaccines, hamsters were challenged with 1000 tissue-culture infectious dose 50 assay (TCID50) of the A.1 strain or the B.1.351 or B.1.1.7 VoC 4 weeks after boosting (Figure 3A). Thus, all RNA vaccines would be evaluated against homologous and heterologous SARS-CoV2 challenge. For reference, the median infectious dose (ID50) in hamsters for the A.1 strain is 5 TCID50 (Rosenke et al., 2020). A significant criterion of an effective SARS-CoV2 vaccine is an ability to reduce transmission of the virus from vaccinated individuals to susceptible persons by protecting the upper airway from infection. To evaluate whether vaccination could reduce viral shedding in the upper airway of SARS-CoV2 challenged hamsters oral swabs were collected on days 2 and 4 post-infection (PI) and viral loads quantified by qRT-PCR to measure sub-genomic (Sg) RNA indicative of active viral replication and infectious virus by TCID50 assay. In addition, we also reported samples with any detectable infectious virus, even when <1 TCID50 to distinguish animals with no infectious virus from those with low levels of infectious virus (Table 1).
+
+**Table 1.**
+ Fraction of hamster samples with any detectable infectious virus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Challenge</th>
+      <th rowspan="2">RNA</th>
+      <th colspan="2">Oral swabs</th>
+      <th>Lung tissue</th>
+    </tr>
+    <tr>
+      <th>D2</th>
+      <th>D4</th>
+      <th>D4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">A.1</td>
+      <td>Mock</td>
+      <td>6/6</td>
+      <td>6/6</td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td>A.1 (604)</td>
+      <td>6/6</td>
+      <td>2/6</td>
+      <td>1/6</td>
+    </tr>
+    <tr>
+      <td>B.1.351 (671)</td>
+      <td>6/6</td>
+      <td>6/6</td>
+      <td>1/6</td>
+    </tr>
+    <tr>
+      <td>B.1.17 (673)</td>
+      <td>3/6</td>
+      <td>0/6</td>
+      <td>0/6</td>
+    </tr>
+    <tr>
+      <td rowspan="4">B.1.351</td>
+      <td>Mock</td>
+      <td>5/5</td>
+      <td>5/5</td>
+      <td>5/5</td>
+    </tr>
+    <tr>
+      <td>A.1 (604)</td>
+      <td>6/6</td>
+      <td>2/6</td>
+      <td>0/6</td>
+    </tr>
+    <tr>
+      <td>B.1.351 (671)</td>
+      <td>2/6</td>
+      <td>2/6</td>
+      <td>0/6</td>
+    </tr>
+    <tr>
+      <td>B.1.17 (673)</td>
+      <td>3/6</td>
+      <td>2/6</td>
+      <td>0/6</td>
+    </tr>
+    <tr>
+      <td rowspan="4">B.1.1.7</td>
+      <td>Mock</td>
+      <td>6/6</td>
+      <td>6/6</td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td>A.1 (604)</td>
+      <td>6/6</td>
+      <td>2/6</td>
+      <td>0/6</td>
+    </tr>
+    <tr>
+      <td>B.1.351 (671)</td>
+      <td>2/6</td>
+      <td>3/6</td>
+      <td>0/6</td>
+    </tr>
+    <tr>
+      <td>B.1.17 (673)</td>
+      <td>1/6</td>
+      <td>3/6</td>
+      <td>0/6</td>
+    </tr>
+  </tbody>
+</table>
 
 Against the A.1 strain, only vaccination with the B.1.1.7 repRNA significantly reduced Sg RNA levels (Figure 4A). It is unclear why we only observed significant reduction of A.1 viral RNA in the swabs of hamsters vaccinated with the B.1.1.7 repRNA and not the A.1 repRNA but we found non-significant differences in neutralizing activity against the A.1 strain in hamsters vaccinated with either the A.1- or B.1.1.7-specific repRNA (Figure 3) consistent with significant cross-protection. Additionally, the B.1.1.7-vaccinated mice did drive significantly higher A.1 S1-binding antibody responses compared to the A.1-vaccinated animals (Figure 2A), correlating with the significant reduction in Sg RNA levels in the oral swabs. However, all three repRNAs significantly reduced shedding of infectious virus in the oral cavity at day 2 PI and both the A.1 and B.1.1.7 repRNAs significantly reduced infectious virus at day 4 PI (Figure 4B). Notably, no infectious virus could be isolated from the swabs of B.1.17 repRNA-vaccinated animals at day 4 PI (Table 1), indicating rapid control of viral shedding. These data indicate that against the SARS-CoV2 A.1 strain, vaccination with any of the three repRNAs can significantly reduce viral shedding.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75537/elife-75537-fig4-v2.jpg)
 
-**Figure 4.:** Mock or repRNA-vaccinated hamsters were challenged with 1000 tissue-culture infectious dose 50 assay (TCID50) of the indicated SARS-CoV2 strains via the IN route. At day 2 or 4 post-infection (PI), oral swabs were collected. SARS-CoV2 in the swabs was quantified by qRT-PCR specific for the sub-genomic (SgE) RNA (A, C, E) or infectious virus by TCID50 assay (B, D, F). N = 5 (mock-vaccinated, B.1.351 challenge) or 6 (all other groups). A two-way ANOVA with Dunnett’s multiple comparison test against mock-vaccinated hamsters was performed. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. Comparisons without indicated p-values were considered non-significant (p > 0.05).Figure 4—source data 1.Figure 4.
+**Figure 4.:** Mock or repRNA-vaccinated hamsters were challenged with 1000 tissue-culture infectious dose 50 assay (TCID50) of the indicated SARS-CoV2 strains via the IN route. At day 2 or 4 post-infection (PI), oral swabs were collected. SARS-CoV2 in the swabs was quantified by qRT-PCR specific for the sub-genomic (SgE) RNA (A, C, E) or infectious virus by TCID50 assay (B, D, F). N = 5 (mock-vaccinated, B.1.351 challenge) or 6 (all other groups). A two-way ANOVA with Dunnett’s multiple comparison test against mock-vaccinated hamsters was performed. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. Comparisons without indicated p-values were considered non-significant (p > 0.05).
 
 Against the B.1.351 variant, compared to mock-vaccinated hamsters at day 2 PI, hamsters vaccinated with the homologous B.1.351 repRNA had significantly reduced Sg RNA (Figure 4C) and by day 4 PI, significantly reduced viral RNA was seen in all vaccinated hamsters (Figure 4C). Similar to the A.1 challenge, against the B.1.351 variant challenge, vaccination with any of the repRNAs significantly reduced infectious virus at both day 2 and 4 PI (Figure 4D). Notably, at day 2 PI, infectious virus could only be isolated from the oral cavity of 2 of 6 hamsters vaccinated with the B.1.351 repRNA, while virus was isolated from 6 of 6 vaccinated with the A.1 or 3 of 6 vaccinated with the B.1.1.7 vaccine (Table 1), suggesting more rapid clearance of virus in B.1.351-infected hamsters vaccinated with B.1.351 repRNA.
 
 Finally, against the B.1.1.7 variant, the B.1.351 and B.1.1.7 vaccine repRNAs significantly reduced Sg RNA at day 2 PI, and at day 4 PI both the A.1 and B.1.351 repRNAs significantly reduced Sg RNA (Figure 4E). Similar to A.1 or B.1.351 variant challenges, vaccination with any of the repRNAs lead to significantly reduced titers of infectious virus in oral swabs at both day 2 and 4 PI (Figure 4F), and more rapid clearance of virus was observed in vaccine-matched B.1.1.7-vaccinated/challenged animals, with live virus isolated in oral cavities only 1 of 6 B.1.1.7-vaccinated hamsters. In contrast, live virus could be isolated in 6 of 6 A.1- or 2 of 6 B.1.351-vaccinated hamsters challenged with the B.1.1.7 VoC at day 2 PI (Table 1). Overall, across all three SARS-CoV2 challenges, 19 of 54 and 32 of 54 vaccinated hamsters had no detectable infectious virus in their swabs at day 2 and 4 PI, respectively (Table 1). Cumulatively, these data demonstrate that vaccination with any of the three repRNAs significantly reduced viral shedding against homologous and heterologous SARS-CoV2 challenge with more rapid clearance observed in vaccine-matched VoC challenges.
 
-## Vaccination significantly reduced viral burden in lung tissue
+### Vaccination significantly reduced viral burden in lung tissue
 
 As the hamster model of SARS-CoV2 infection is not lethal, we performed a timed necropsy on day 4 PI to evaluate viral burdens in the lungs of infected hamsters via qRT-PCR and measured infectious virus in the lungs by TCID50. All three vaccine repRNAs significantly reduced Sg viral RNA in the lungs of hamsters challenged with any of the three variants of SARS-CoV2 (Figure 5A, C and E). Notably, the majority of vaccinated animals across the three SARS-CoV2 variant challenges had no detectable Sg RNA, suggestive of substantial immunity in the lungs of these animals. We also quantified the amount of infectious virus in the lungs and found that all three RNA vaccines significantly reduced infectious virus in animals challenged with any of the three SARS-CoV2 variants (Figure 5B, D and F). Against infection with the B.1.351 and B.1.1.7 variants, no infectious virus was detected in the lungs of any vaccinated hamster (Figure 5B, D and F and Table 1). Against the A.1 strain, infectious virus was only found in the lungs of 1 of 6 animals in the A.1 and B.1.351 repRNA-vaccinated animals and 0 of 6 animals in the B.1.1.7 repRNA-vaccinated animals (Table 1). Cumulatively, by highly sensitive qRT-PCR for Sg RNA and by measurement of infectious virus, vaccination with any of the repRNAs resulted in significant reduction of SARS-CoV2 burden in the lungs indicating that the LION/repRNA vaccine platform is highly protective against SARS-CoV2 infection in the lung.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75537/elife-75537-fig5-v2.jpg)
 
-**Figure 5.:** Mock or repRNA-vaccinated hamsters were challenged with 1000 tissue-culture infectious dose 50 assay (TCID50) of the indicated SARS-CoV2 strains via the IN route. At day 4 post-infection (PI), hamsters were euthanized, and lung tissue collected. SARS-CoV2 burden in the lung was quantified by qRT-PCR specific for the sub-genomic (SgE) RNA (A, C, E). Infectious virus in the lungs was quantified by TCID50 assay (B, D, F). Indicated statistical comparisons performed using a one-way ANOVA with Dunnett’s multiple comparison test against mock-vaccinated hamsters. *p < 0.05, ****p < 0.0001. Comparisons without indicated p-values were non-significant (p > 0.05).Figure 5—source data 1.Figure 5.
+**Figure 5.:** Mock or repRNA-vaccinated hamsters were challenged with 1000 tissue-culture infectious dose 50 assay (TCID50) of the indicated SARS-CoV2 strains via the IN route. At day 4 post-infection (PI), hamsters were euthanized, and lung tissue collected. SARS-CoV2 burden in the lung was quantified by qRT-PCR specific for the sub-genomic (SgE) RNA (A, C, E). Infectious virus in the lungs was quantified by TCID50 assay (B, D, F). Indicated statistical comparisons performed using a one-way ANOVA with Dunnett’s multiple comparison test against mock-vaccinated hamsters. *p < 0.05, ****p < 0.0001. Comparisons without indicated p-values were non-significant (p > 0.05).
 
-## Vaccination protected against lung pathology
+### Vaccination protected against lung pathology
 
 We further evaluated vaccine efficacy by evaluating lung pathology by H&E staining, immunohistochemistry (IHC) for viral antigen, and by lung-to-body weight ratio (Figure 6). H&E staining of lung sections demonstrated that among mock-vaccinated hamsters challenged with A.1 or B.1.1.7 strains of SARS-CoV2 developed lesions typical of SARS-CoV2 with the A.1 and B.1.1.7 variant-infected hamsters developing more, and more severe, lesions than those infected with the B.1.351 variant. The lesions were multifocal and consisted of inflammatory cells, mostly viable and degenerate neutrophils, filling alveoli and alveolar septa were thickened by edema, fibrin, alveolar and septal macrophages, and variable amounts of type II pneumocyte hyperplasia. Bronchiolitis was present in most hamsters as was vasculitis in, or adjacent to, affected areas (Figure 6). In contrast, hamsters vaccinated with any of the repRNAs were protected from lung pathology and had diminished viral antigen (Figure 6). The majority of hamsters had no evident lesions and no detectable viral antigen and in the few that had lesions or IHC reactivity, they were minor (Figure 6). The complete histological and IHC findings are provided in Supplementary file 1.
 
@@ -102,7 +199,7 @@ To quantify lung pathology, we measured lung-to-body weight ratio, expressed as 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/75537/elife-75537-fig7-v2.jpg)
 
-**Figure 7.:** Mock or repRNA-vaccinated hamsters were challenged with 1000 tissue-culture infectious dose 50 assay (TCID50) of the indicated SARS-CoV2 strains via the IN route. At day 4 post-infection (PI), hamsters were euthanized, lung weighed and lungs formalin-fixed and paraffin-embedded. Lung weights as percentage of body weight are reported (A–C). Lung sections were stained with H&E (D–F) or for SARS-CoV2 viral antigen (G–I). Sections were scored by a pathologist blind to study groups and assigned a score for percent area affected by SARS-CoV2 lesions and cumulative score presented (A–C) or presence of viral antigen (D–F). Indicated statistical comparisons performed using a one-way ANOVA with Dunnett’s multiple comparison test against mock-vaccinated hamsters. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. Comparisons without indicated p-values were considered non-significant (p > 0.05).Figure 7—source data 1.Figure 7.
+**Figure 7.:** Mock or repRNA-vaccinated hamsters were challenged with 1000 tissue-culture infectious dose 50 assay (TCID50) of the indicated SARS-CoV2 strains via the IN route. At day 4 post-infection (PI), hamsters were euthanized, lung weighed and lungs formalin-fixed and paraffin-embedded. Lung weights as percentage of body weight are reported (A–C). Lung sections were stained with H&E (D–F) or for SARS-CoV2 viral antigen (G–I). Sections were scored by a pathologist blind to study groups and assigned a score for percent area affected by SARS-CoV2 lesions and cumulative score presented (A–C) or presence of viral antigen (D–F). Indicated statistical comparisons performed using a one-way ANOVA with Dunnett’s multiple comparison test against mock-vaccinated hamsters. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. Comparisons without indicated p-values were considered non-significant (p > 0.05).
 
 ## Discussion
 
@@ -122,46 +219,46 @@ Together our data demonstrate that LION/repRNA vaccines can induce broadly prote
 
 ## Materials and methods
 
-## Biosafety and ethics
+### Biosafety and ethics
 
 All procedures with infectious SARS-CoV2 were conducted under high biocontainment conditions in accordance with established operating procedures approved by the Rocky Mountain Laboratories (RML) Institutional Biosafety Committee (IBC). Sample inactivation followed IBC approved protocols (Haddock et al., 2021). Animal experiments were approved by the corresponding institutional animal care and use committee and performed by experienced personnel under veterinary oversight. Mice were group-housed, maintained in specific pathogen-free conditions, and entered experiments at 6–8 weeks of age. Hamsters were group-housed in HEPA-filtered cage systems and acclimatized to high containment conditions prior to start of SARS-CoV2 challenge. They were provided with nesting material and food and water ad libitum.
 
-## Viruses and cells
+### Viruses and cells
 
 Viruses used for hamster challenge were as described previously (Hansen et al., 2021). For in vitro assays: Vero USAMRIID (a gift from Ralph Baric, UNC-Chapel Hill), VeroE6-TMPRSS2 (JCRB1819, JCRB Cell Bank, NIBIOHN), and Vero-hACE2-TMPRSS2 (a gift from Michael Diamond, Washington University) cells were cultured at 37°C in DMEM supplemented with 10% FBS, and 100 U/ml of penicillin-streptomycin. In addition, VeroE6-TMPRSS2 and Vero-hACE2-TMPRSS2 cells were cultured in the presence of 1 mg/ml G418 and 10 µg/ml puromycin, respectively. Cell line identity was not authenticated. The SARS-CoV-2 Isolate hCoV-19/Germany/BavPat1/2020 (B.1) (NR-52370, BEI Resources), hCoV-19/England/204820464/2020 (B.1.1.7) (NR-54000, BEI Resources), and hCoV-19/USA/PHC658/2021 (B.1.617.2) (NR-55612, BEI Resources) were obtained from BEI Resources. Virus stocks were generated by expanding the virus in Vero-USAMRIID cells. Isolate 501Y.V2.HV001 (B.1.351) was obtained from Alex Sigal, AHRI (African Health Research Institute) and amplified in Vero-hACE2-TMPRSS2 cells upon reception. Virus stocks generated were tittered on VeroE6-TMPRSS2 cells. Viral RNAs were purified from the stock virus by using Quick-RNA viral kit (Zymo Research) and sent for RNA-seq for verification (University of Washington).
 
-## Vaccine constructs
+### Vaccine constructs
 
 Spike variants were constructed on the background of either the KV995PP substitution to stabilize the pre-fusion conformation of spike, or the native spike without pre-fusion stabilizing substitutions. The full-length spike open reading frame derived from the original Washington isolate was used as the reference A.1 lineage spike, and the various deletions and substitutions that define the B.1, B.1.1.7, and B.1.351 lineages are depicted in Figure 1. All constructs were cloned by Gibson assembly of three overlapping fragments synthesized on a bioxp (Codex DNA) and codon optimized for human codon usage. Plasmids were then Sanger sequenced to confirm nucleotide identity and then linearized by NotI digestion prior to transcription and capping as described (Erasmus et al., 2020b).
 
-## LION/repRNA potency assay
+### LION/repRNA potency assay
 
 Serial dilutions of LION/repRNA were incubated on a monolayer of BHK cells in a 96-well plate. Twenty-four hours later, cell lysates were added to an ELISA plate coated with anti-SARS-CoV2 Spike (S1 domain) monoclonal antibody. Following a primary incubation and washes, a polyclonal anti-SARS-CoV2 Spike (full-length S) primary antibody was added. Following a secondary incubation and washes, a secondary horse radish peroxidase (HRP)-conjugated antibody was used to detect S-specific binding. Following a final incubation, HRP activity was assayed by TMB/HCL detection and absorbance measured by plate reader (ELX808, Bio-Tek Instruments Inc) at 450 nm.
 
-## Mouse studies
+### Mouse studies
 
 For mouse studies, 6- to 8-week-old female C57BL/6 mice (Jackson laboratory) received 1 μg of each vaccine, as outlined in Table 1, via IM injections on days 0 and 28. Animals were then bled 2 weeks after the booster immunization and sera was evaluated for nAb responses by plaque reduction neutralization test against A.1, B.1, B.1.1.7, and B.1.351 viruses.
 
-## Hamster studies
+### Hamster studies
 
 For hamster studies, 7- to 8-week-old male Syrian Golden hamsters were purchased from Envigo. Hamsters were randomly assigned to study groups and acclimatized for several days prior to vaccination. Hamsters were vaccinated with 20 μg of indicated repRNA complexed to LION. RNA was diluted in water and LION diluted in 40% sucrose and 100 mM sodium citrate to achieve a theoretical nitrogen:phosphate (N:P) ratio of 15. RNA and LION were allowed to complex for 30 min at 4°C. Hamsters were primed with a 50 μl IM injection to each hind limb on day 0 and boosted 4 weeks later. Mock-vaccinated hamsters received identical IM immunizations with saline. To monitor antibody responses to vaccination, blood was collected via retroorbital bleeds 25 days after prime vaccination and 14 and 21 days after boost vaccination. Hamsters were monitored daily for appetite, activity, and weight loss, and no adverse events were observed among the LION/repRNA-vaccinated groups. Following the first vaccination, one mock-vaccinated hamster developed a testicular abscess and per veterinarian recommendation was euthanized. Data from this hamster was excluded from all analyses. For SARS-CoV2 challenge, hamsters were inoculated with 1000 TCID50 indicated SARS-CoV2 variant via 50 μl intranasal instillation. Following challenge, hamsters were weighed and monitored daily. Hamsters were orally swabbed on days 2 and 4 PI. Swabs were placed in 1 ml DMEM without additives. A scheduled necropsy at day 4 PI was performed on all animals to harvest blood and lung tissue. Studies were performed once.
 
-## Viral RNA quantification
+### Viral RNA quantification
 
 Viral RNA from swabs was isolated using Qiamp RNA mini kit (Qiagen) and viral RNA was isolated from tissues using RNEasy mini kit (Qiagen) according to provided protocols. Viral RNA was quantified by one-step qRT-PCR using QuantiFast Probe PCR reagents (Qiagen) and primers and probes specific for the SARS-CoV2 Sg E RNA as previously described (Corman et al., 2020). For both assays, cycling conditions were as follows: initial hold of 50°C for 10 min, initial denaturation of 95°C for 5 min, and 40 cycles of 95°C for 15 s followed by 60°C 30 s. SARS-CoV2 RNA standards with known copy number were prepared in house, diluted, and run alongside samples for quantification. The limit of detection was based on the standard curve and defined as the quantity of RNA that would give a Ct value of 40.
 
-## Infectious virus titration
+### Infectious virus titration
 
 Infectious virus in swabs or tissues was quantified by TCID50 on Vero cells. Tissues were weighed and homogenized in 1 ml DMEM supplemented with 2% FBS and penicillin and streptomycin. Homogenate was clarified of large debris by centrifugation. Samples were then serially 10-fold diluted in DMEM 2% FBS and applied to wells beginning with the 1:10 dilution in triplicate. Cells were incubated for 6 days before cytopathic effect (CPE) was read. TCID50 was determined by the Reed and Muench method (Reed and Muench, 1938). The limit of detection was defined as at least two wells positive in the 1:10 dilution. To distinguish samples with no detectable infectious virus from those with single positive wells (<1 median TCID), Table 1 reports the fraction of samples from each group with any wells positive for CPE.
 
-## Plaque reduction neutralization tests
+### Plaque reduction neutralization tests
 
 Two-fold serial dilutions of heat-inactivated serum and 600 plaque-forming units (PFU)/ml solution of A.1, B.1, B.1.1.7, B.1.351, or B.1.617.2 viruses were mixed 1:1 in DMEM and incubated for 30 min at 37°C. Serum/virus mixtures were added, along with virus-only and mock controls, to Vero E6-TMPRSS2 cells (ATCC) in 12-well plates and incubated for 30 min at 37°C. Following adsorption, plates were overlayed with a 0.2% agarose DMEM solution supplemented with penicillin/streptomycin (Fisher Scientific). Plates were then incubated for 2 days at 37°C. Following incubation, 10% formaldehyde (Sigma-Aldrich) in DPBS was added to cells and incubated for 30 min at room temperature. Plates were then stained with 1% crystal violet (Sigma-Aldrich) in 20% EtOH (Fisher Scientific). Plaques were enumerated and percent neutralization was calculated relative to the virus-only control.
 
-## Histology and IHC
+### Histology and IHC
 
 At time of necropsy, lungs were dissected and insufflated with 10% neutral buffered formalin and then submerged in 10% neutral buffered formalin for a minimum of 7 days with two changes. Tissues were placed in cassettes and processed with a Sakura VIP-6 Tissue Tek, on a 12 hr automated schedule, using a graded series of ethanol, xylene, and ParaPlast Extra. Prior to staining, embedded tissues were sectioned at 5 µm and dried overnight at 42°C. Using GenScript U864YFA140-4/CB2093 NP-1 (1:1000) specific anti-CoV immunoreactivity was detected using the Vector Laboratories ImPress VR anti-rabbit IgG polymer (#MP-6401) as secondary antibody. The tissues were then processed using the Discovery Ultra automated processor (Ventana Medical Systems) with a ChromoMap DAB kit Roche Tissue Diagnostics (#760–159). Sections were scored by certified pathologists who were blinded to study groups.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses as described in the figure legends were performed using Prism v9 (GraphPad).

@@ -45,7 +45,7 @@
 
 ## Abstract
 
-Adaptations of the lower back to bipedalism are frequently discussed but infrequently demonstrated in early fossil hominins. Newly discovered lumbar vertebrae contribute to a near-complete lower back of Malapa Hominin 2 (MH2), offering additional insights into posture and locomotion in Australopithecus sediba . We show that MH2 possessed a lower back consistent with lumbar lordosis and other adaptations to bipedalism, including an increase in the width of intervertebral articular facets from the upper to lower lumbar column (‘pyramidal configuration’). These results contrast with some recent work on lordosis in fossil hominins, where MH2 was argued to demonstrate no appreciable lordosis (‘hypolordosis’) similar to Neandertals. Our three-dimensional geometric morphometric (3D GM) analyses show that MH2’s nearly complete middle lumbar vertebra is human-like in overall shape but its vertebral body is somewhat intermediate in shape between modern humans and great apes. Additionally, it bears long, cranially and ventrally oriented costal (transverse) processes, implying powerful trunk musculature. We interpret this combination of features to indicate that A. sediba used its lower back in both bipedal and arboreal positional behaviors, as previously suggested based on multiple lines of evidence from other parts of the skeleton and reconstructed paleobiology of A. sediba .
+Adaptations of the lower back to bipedalism are frequently discussed but infrequently demonstrated in early fossil hominins. Newly discovered lumbar vertebrae contribute to a near-complete lower back of Malapa Hominin 2 (MH2), offering additional insights into posture and locomotion in Australopithecus sediba. We show that MH2 possessed a lower back consistent with lumbar lordosis and other adaptations to bipedalism, including an increase in the width of intervertebral articular facets from the upper to lower lumbar column (‘pyramidal configuration’). These results contrast with some recent work on lordosis in fossil hominins, where MH2 was argued to demonstrate no appreciable lordosis (‘hypolordosis’) similar to Neandertals. Our three-dimensional geometric morphometric (3D GM) analyses show that MH2’s nearly complete middle lumbar vertebra is human-like in overall shape but its vertebral body is somewhat intermediate in shape between modern humans and great apes. Additionally, it bears long, cranially and ventrally oriented costal (transverse) processes, implying powerful trunk musculature. We interpret this combination of features to indicate that A. sediba used its lower back in both bipedal and arboreal positional behaviors, as previously suggested based on multiple lines of evidence from other parts of the skeleton and reconstructed paleobiology of A. sediba.
 
 ## Introduction
 
@@ -63,11 +63,272 @@ Here, we report the discovery of portions of four lumbar vertebrae from two ex s
 
 The newly discovered vertebrae (second and third lumbar) are preserved in articulation with each other (Figure 2, Figure 2—figure supplement 1) and refit at multiple contacts with the previously known penultimate (fourth) lumbar vertebra (Figure 3). Together, the new and previously known (Williams et al., 2013; Williams et al., 2018b) vertebral elements form a continuous series from the antepenultimate thoracic vertebra through the fifth sacral element, with only the first lumbar vertebra missing major components of morphology (Figure 3—figure supplement 1). The presence of a nearly complete lower back of MH2 allows us to more comprehensively evaluate the functional morphology and evolution of purported adaptations to bipedalism in A. sediba and test the hypotheses that the following fundamental features are similar to modern humans (Homo sapiens) and distinct from extant great apes: (1) lumbar lordosis, (2) progressive widening of the articular facets and laminae (pyramidal configuration) of the lower back, and (3) overall middle lumbar vertebra shape. Specifically, for these hypotheses, we predict that measurements of combined lumbar wedging (representing degree of lordosis ascertained from available lumbar vertebrae) will fall within the human range (H1), that the configuration of the articular facets and laminae will progressively widen caudally (rather than remaining constant or becoming increasingly narrow) as seen in modern humans (H2), and that the most complete lumbar vertebra of MH2 (U.W.88–233) will fall within the human range of variation in shape analyses (H3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig2-v1.jpg)
+
+**Figure 2.:** Vertebrae in (A) superior, (B) inferior, (C) ventral, (D) dorsal, (E) left lateral, and (F) right lateral views. The partial inferior articular facets of the first lumbar vertebra are embedded in matrix (see Figure 2—figure supplement 1). The second lumbar vertebra (U.W.88–232) is in the superior-most (top) position, the third lumbar vertebra (U.W.88–233) is in the middle, and portions of the upper neural arch of the fourth lumbar vertebra (U.W.88–234) are in the inferior-most (bottom) position. These fossils are curated and available for study at the University of the Witwatersrand.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Two matrix blocks were micro-CT scanned: a lower thoracic block containing the antepenultimate (T10; U.W.88–114), penultimate (T11; U.W.88–43), last thoracic vertebra (T12; U.W.88–44), and vertebral body fragment of the first lumbar vertebra (L1; U.W.88–280), and the new lumbar block, containing the partial inferior articular facets of L1 (U.W.88–281), second lumbar vertebra (L2; U.W.88–232), third lumbar vertebra (L3; U.W.88–233), and portions of the upper neural arch of the fourth lumbar vertebra (L4; U.W.88–234). High-quality surface models of these vertebrae can be downloaded on MorphoSource.org.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig3-v1.jpg)
+
+**Figure 3.:** New second and third lumbar vertebrae (U.W.88–232, U.W.88–233) are positioned at the top, and U.W.88–234 contributes to the upper portion of the fourth lumbar vertebra (U.W.88–127/153/234). The fifth lumbar vertebra (U.W.88–126/138) sits atop the sacrum (U.W.88–137/125). The lower back elements are preserved together in four blocks, each containing multiple elements held together in matrix and/or in partial articulation: (1) The vertebral body fragment of L1 (U.W.88–280) is preserved within the matrix of a block containing the lower thoracic vertebrae (U.W.88–43/114 and U.W.88–44) (Figure 2—figure supplement 1, Figure 3—figure supplement 1); (2) L1 inferior neural arch (U.W.88–281; concealed in matrix), L2 (U.W.88–232), L3 (U.W.88–233), and upper neural arch of L4 (U.W.88–234); (3) the L4 (U.W.88–127) and L5 (U.W.88–126) vertebral bodies, and partial S1 body (U.W.88–125); (4) most of the sacrum (U.W.88–137), the neural arch of L5 (U.W.88–153), the inferior portion of the neural arch of L4 (U.W.88–138).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Components of the L1 vertebra (U.W.88–280/281) are shown in green, the L2 (U.W.88–232) is shown in blue, the L3 (U.W.88–233) is shown in red, and the new component of L4 (U.W.88–234) is shown in yellow. The previously known aspects of L4 (U.W.88–127/153), the L5 (U.W.88–126/138), sacrum (U.W.88–137/125), and lower thoracic vertebrae (T10–T12) are fully published in Williams et al., 2018b. Fossils are shown in their original condition and refitted at contact points but not reconstructed. Three-dimensional models of all these vertebrae can be downloaded on MorphoSource.org.
+
 ## Results
 
 The five new fossils, U.W.88–232, U.W.88–233, U.W.88–234, U.W.88–280, and U.W.88–281, are described below and shown in Figure 4. Measurements are included in Table 1. A depiction of the anatomical features mentioned in the descriptions below and throughout the manuscript is shown in Figure 4—figure supplement 1.
 
-## Descriptions of new fossil material
+![Figure 4.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig4-v1.jpg)
+
+**Figure 4.:** (A) U.W.88–232 (L2) and (B) U.W.88–233 (L3) shown in ventral (top left), dorsal (top right), superior (middle left), inferior (middle right), left lateral (bottom left), and right lateral (bottom right) views. (C) U.W.88–234 (L4) in ventral (top left), dorsal (top right), superior (top middle), left lateral (bottom left), right lateral (bottom right), and inferior (bottom middle) views. (D) Left half of U.W.88–233 showing the 48 landmarks used in the three-dimensional geometric morphometric (3D GM) analyses.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** A human middle lumbar vertebra (L3) is shown in dorsal (upper left), cranial (upper right), ventral (lower left), and left lateral (lower right) views.
+
+**Table 1.**
+ Measurements on lumbar vertebrae in mm for linear data and degrees for angles (measurement definitions are included in the supplementary material).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>U.W.88–232(L2)</th>
+      <th>U.W.88–233(L3)</th>
+      <th>U.W.88-127/153/234(L4)</th>
+      <th>U.W.88-126/138(L5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Body sup. transv. width</td>
+      <td>29.5</td>
+      <td>30.1</td>
+      <td>31.4</td>
+      <td>32.8</td>
+    </tr>
+    <tr>
+      <td>2. Body sup. dorsoven. dia.</td>
+      <td>20.8</td>
+      <td>21.4</td>
+      <td>22.2</td>
+      <td>21.4</td>
+    </tr>
+    <tr>
+      <td>3. Body inf. transv. width</td>
+      <td>29.0</td>
+      <td>31.4</td>
+      <td>32.4</td>
+      <td>28.8</td>
+    </tr>
+    <tr>
+      <td>4. Body inf. dorsoven. dia.</td>
+      <td>21.1</td>
+      <td>21.0</td>
+      <td>21.2</td>
+      <td>19.8</td>
+    </tr>
+    <tr>
+      <td>5. Body ventral height</td>
+      <td>21.0</td>
+      <td>21.75</td>
+      <td>22.1</td>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <td>6. Body dorsal height</td>
+      <td>22.5</td>
+      <td>22.25</td>
+      <td>21.5</td>
+      <td>17.0</td>
+    </tr>
+    <tr>
+      <td>7. Body wedging angle (calculated)</td>
+      <td>4.1°</td>
+      <td>1.3°</td>
+      <td>–1.6°</td>
+      <td>–10.7°</td>
+    </tr>
+    <tr>
+      <td>8. Vertebral foramen dorsoven. dia.</td>
+      <td>10.5</td>
+      <td>8.85</td>
+      <td>–</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <td>9. Vertebral foramen transv. dia.</td>
+      <td>17.6</td>
+      <td>17.3</td>
+      <td>–</td>
+      <td>16.3</td>
+    </tr>
+    <tr>
+      <td>10. Sup.-inf. inter-AF height</td>
+      <td>–</td>
+      <td>37.0</td>
+      <td>32.6</td>
+      <td>31.5</td>
+    </tr>
+    <tr>
+      <td>11. Max. inter-SAF dist.</td>
+      <td>–</td>
+      <td>24.0</td>
+      <td>–</td>
+      <td>28.5</td>
+    </tr>
+    <tr>
+      <td>12. Min. inter-SAF dist.</td>
+      <td>–</td>
+      <td>14.5</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>13. Max. inter-IAF dist.</td>
+      <td>23.0</td>
+      <td>25.0</td>
+      <td>(28.0)*</td>
+      <td>(33.0)</td>
+    </tr>
+    <tr>
+      <td>14. Min. inter-IAF dist.</td>
+      <td>11.0</td>
+      <td>9.5</td>
+      <td>11.6</td>
+      <td>15.6</td>
+    </tr>
+    <tr>
+      <td>15. SAF sup.-inf. dia.</td>
+      <td>–</td>
+      <td>12.8</td>
+      <td>–</td>
+      <td>13.4</td>
+    </tr>
+    <tr>
+      <td>16. SAF transv. dia.</td>
+      <td>–</td>
+      <td>11.5</td>
+      <td>–</td>
+      <td>10.8</td>
+    </tr>
+    <tr>
+      <td>17. IAF sup.-inf. dia.</td>
+      <td>11.5</td>
+      <td>11.5</td>
+      <td>14.7</td>
+      <td>14.4</td>
+    </tr>
+    <tr>
+      <td>18. IAF transv. dia.</td>
+      <td>8.1</td>
+      <td>8.9</td>
+      <td>9.2</td>
+      <td>11.7</td>
+    </tr>
+    <tr>
+      <td>19. Spinous process angle</td>
+      <td>176°</td>
+      <td>160°</td>
+      <td>163°</td>
+      <td>166°</td>
+    </tr>
+    <tr>
+      <td>20. Spinous process length</td>
+      <td>27.0</td>
+      <td>28.0</td>
+      <td>28.0</td>
+      <td>23.6</td>
+    </tr>
+    <tr>
+      <td>21. Spinous process terminal trans. width</td>
+      <td>6.9</td>
+      <td>7.4</td>
+      <td>8.1</td>
+      <td>6.85</td>
+    </tr>
+    <tr>
+      <td>22. Spinous process terminal sup.-inf. height</td>
+      <td>13.8</td>
+      <td>11.75</td>
+      <td>12.7</td>
+      <td>7.15</td>
+    </tr>
+    <tr>
+      <td>23. Costal process base sup.-inf. height</td>
+      <td>11.5</td>
+      <td>12.2</td>
+      <td>–</td>
+      <td>13.9</td>
+    </tr>
+    <tr>
+      <td>24. Costal process angle</td>
+      <td>78°</td>
+      <td>82°</td>
+      <td>–</td>
+      <td>50°</td>
+    </tr>
+    <tr>
+      <td>25. Costal process length</td>
+      <td>–</td>
+      <td>31.0</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>26. SAF orientation (in degrees)</td>
+      <td>–</td>
+      <td>31°</td>
+      <td>33°</td>
+      <td>26°</td>
+    </tr>
+    <tr>
+      <td>27. Pedicle sup.-inf. height</td>
+      <td>10.9</td>
+      <td>10.6</td>
+      <td>–</td>
+      <td>11.2</td>
+    </tr>
+    <tr>
+      <td>28. Pedicle transv. width</td>
+      <td>5.9</td>
+      <td>7.1</td>
+      <td>9.0</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td>29. Pedicle dorsoven. length</td>
+      <td>5.0</td>
+      <td>5.6</td>
+      <td>6.5</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>30. Lamina sup.-inf. height</td>
+      <td>16.1</td>
+      <td>15.4</td>
+      <td>–</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <td>31. Lamina transv. width</td>
+      <td>20.0</td>
+      <td>22.0</td>
+      <td>–</td>
+      <td>30.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Parentheses indicate that the structure is incomplete and its measurement if estimated._
+
+### Descriptions of new fossil material
 
 We determine the seriation of the vertebrae described here based on their direct articulation with one another and refits with previously known vertebrae. Most of the sacrum (U.W.88–137) is preserved in articulation with the neural arch of the last lumbar vertebra (U.W.88–138), which articulates in turn with the inferior portion of the neural arch of the penultimate lumbar vertebra (U.W.88–154). Corresponding vertebral bodies (U.W.88–126 and U.W.88–127, respectively) are preserved together and can be refitted with the neural arches (Williams et al., 2013). The new lumbar vertebrae are preserved in partial articulation, including an upper neural arch that refits in two places with U.W.88–154. Therefore, portions of five vertebrae are preserved, followed by a sacrum and preceded by at least three lower thoracic vertebrae (Williams et al., 2018b).
 
@@ -81,23 +342,337 @@ U.W.88–233: This is the L3 and the most complete vertebra in the lumbar series
 
 U.W.88–234: This is a partial neural arch of the previously known penultimate lumbar vertebra (L4) (U.W.88-127/153). U.W.88–234 refits in two places with the previously known L4: its partial pedicle with the vertebral body (U.W.88–127) and its spinous process with the inferior base of the spinous process and inferior articular processes (U.W.88–153) (Figures 2–3). Only the spinous process and right pedicle, costal process, superior articular processes, and partial lamina are present and in articulation with U.W.88–233. Matrix adheres to the spinous process and costal process, so for this element µCT data were used to visualize and virtually refit it with U.W.88-127/153, forming a partial L4 missing the left superior articular process, costal process, most of the pedicle, the right lateral aspect of the inferior articular process, a portion of the lamina, the inferior aspect of the costal process, and a wedge-shaped area of the lateral body-pedicle border. Preserved standard measurements are reported in Table 1.
 
-## Wedging angles and inferred lumbar lordosis
+### Wedging angles and inferred lumbar lordosis
 
 Wedging of articulated vertebrae contribute to the multiple sagittal curvatures of the human spine, with dorsal wedging of lower lumbar vertebrae contributing to a ventrally convex curvature of the lumbar spine (lumbar lordosis). This sinusoidal configuration passively balances the upper body over the pelvis and allows for the unique system of weight bearing and force transmission found in members of the human lineage (Davis, 1961; Robinson, 1972; Pal and Routal, 1987; Latimer and Ward, 1993; Shapiro, 1993a; Lovejoy, 2005; Whitcome et al., 2007; Masharawi et al., 2010; Been et al., 2014; Tardieu et al., 2017). Wedging angles for individual lumbar vertebrae (L2-L5) and combined L2-L5 wedging were calculated for A. sediba and the comparative sample and are presented in (Figure 5, Figure 5—figure supplement 1, Figure 5—figure supplement 2) and Table 2 and Table 3. MH2 possesses the greatest (i.e., most negative) combined wedging value of any adult early hominin (–6.8°). Although all fossil hominins fall within the 95% prediction intervals of modern humans, only MH2 falls outside the 95% prediction intervals of great apes in combined L2-L5 wedging (Figure 5).
 
+**Table 2.**
+ Summary statistics for lumbar wedging angles of the extant comparative sample.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Group/fossil</th>
+      <th>Human ♂ (48)</th>
+      <th>Human ♀ (31)</th>
+      <th>Pan (43)</th>
+      <th>Gorilla (31)</th>
+      <th>Pongo (10)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L2</td>
+      <td>Mean (stdev)</td>
+      <td>4.4 (3.3)</td>
+      <td>2.1 (2.1)</td>
+      <td>4.6 (3.0)</td>
+      <td>2.3 (2.7)</td>
+      <td>5.3 (4.7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% PI</td>
+      <td>–2.1, 10.9</td>
+      <td>–2.0, 6.2</td>
+      <td>–1.3,10.5</td>
+      <td>–3.0, 7.6</td>
+      <td>–3.9, 14.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Min, max</td>
+      <td>–3.4, 12.8</td>
+      <td>–2.1, 6.0</td>
+      <td>–1.1, 12.4</td>
+      <td>–4.0, 8.3</td>
+      <td>–0.4, 14.4</td>
+    </tr>
+    <tr>
+      <td>L3</td>
+      <td>Mean (stdev)</td>
+      <td>2.4 (3.1)</td>
+      <td>1.3 (2.6)</td>
+      <td>4.5 (3.1)</td>
+      <td>2.6 (2.0)</td>
+      <td>6.1 (2.0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% PI</td>
+      <td>–3.7, 8.5</td>
+      <td>–3.8, 6.4</td>
+      <td>–1.6, 10.6</td>
+      <td>–1.3, 6.5</td>
+      <td>2.2, 10.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Min, max</td>
+      <td>–4.8, 11.2</td>
+      <td>–3.4, 6.6</td>
+      <td>–2.4, 10.9</td>
+      <td>–2.2, 7.5</td>
+      <td>3.2, 8.6</td>
+    </tr>
+    <tr>
+      <td>L4</td>
+      <td>Mean (stdev)</td>
+      <td>–0.5 (2.8)</td>
+      <td>–1.5 (2.9)</td>
+      <td>3.5 (3.4)</td>
+      <td>1.3 (2.5)</td>
+      <td>4.8 (3.8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% PI</td>
+      <td>–6.0, 5.0</td>
+      <td>–7.2, 4.2</td>
+      <td>–3.2, 10.2</td>
+      <td>–3.6, 6.2</td>
+      <td>–2.6, 12.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Min, max</td>
+      <td>–8.3, 4.8</td>
+      <td>–7.9, 4.6</td>
+      <td>–3.6, 10.9</td>
+      <td>–3.9, 7.1</td>
+      <td>–1.0, 11.3</td>
+    </tr>
+    <tr>
+      <td>L5</td>
+      <td>Mean (stdev)</td>
+      <td>–5.9 (2.9)</td>
+      <td>–6.5 (3.1)</td>
+      <td>–0.5 (2.8)</td>
+      <td>–0.8 (2.2)</td>
+      <td>2.0 (4.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% PI</td>
+      <td>−11.6,–0.2</td>
+      <td>−12.6,–0.4</td>
+      <td>–6.0, 5.0</td>
+      <td>–5.1, 3.5</td>
+      <td>–6.0, 10.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Min,max</td>
+      <td>–11.6, 1.8</td>
+      <td>–12.3, 2.2</td>
+      <td>–5.9, 7.0</td>
+      <td>–6.2, 3.5</td>
+      <td>–5.2, 8.0</td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td>Mean (stdev)</td>
+      <td>0.4 (7.8)</td>
+      <td>–4.9 (8.1)</td>
+      <td>12.1 (8.8)</td>
+      <td>5.4 (5.7)</td>
+      <td>18.1 (9.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>95% PI</td>
+      <td>–15.0, 15.7</td>
+      <td>–20.8, 11.0</td>
+      <td>–5.1, 29.3</td>
+      <td>–5.8, 16.6</td>
+      <td>8.6, 27.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Min, max</td>
+      <td>–15.6, 15.5</td>
+      <td>–18.2, 11.2</td>
+      <td>–5.2, 31.7</td>
+      <td>–8.1, 15.7</td>
+      <td>0.04, 36.0</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig5-v1.jpg)
+
+**Figure 5.:** Lumbar vertebral body wedging angles are summed from levels L2 through L5. Only fossil specimens preserving the last four lumbar vertebrae are included (Australopithecus africanus: Sts 14, StW 431; Australopithecus sediba: MH2; Neandertals: Kebara 2, Shanidar 3). For the extant taxa, 95% prediction intervals are shown with bars. Table 2 includes summary statistics, Table 3 fossil hominin data, and Figure 5—source data 1 provides the raw data.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Fossil individuals represented by one vertebra are shown in black symbols (Australopithecus = hexagons; Paranthropus/fossil Homo = circles) and labeled directly in the plot: Australopithecus afarensis: A.L. 288–1, A.L. 333–73; Australopithecus africanus: StW 8, StW 572, StW 656, StW 600 (Pickering et al., 2019); Paranthropus robustus: SK 3981b; Homo naledi: LES1 (Hawks et al., 2017), whereas those known from multiple vertebrae lending themselves to measurement are listed in the legend; 95% prediction intervals of the means of male (white) and female (gray) are shown. See Table 2 for summary statistics and Figure 5—source data 1 for the raw data.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Fossil individuals represented by one vertebra are shown in black symbols (Australopithecus = hexagons; Paranthropus/fossil Homo = circles) and labeled directly in the plot: Australopithecus afarensis: A.L. 288–1, A.L. 333–73; Australopithecus africanus: StW 8, StW 572, StW 656, StW 600 (Pickering et al., 2019); Paranthropus robustus: SK 3981b; Homo naledi: LES1 (Hawks et al., 2017), whereas those known from multiple vertebrae lending themselves to measurement are listed in the legend. Because the great apes included possess just four lumbar vertebrae, and hominins possess five, the lumbar levels are labeled relative to the last (ultimate) lumbar vertebra (L4 in great apes, L5 in hominins). Therefore, the preantepenultimate vertebra is L1 in great apes and L2 in hominins; 95% prediction intervals of the means of orangutans (white), chimpanzees (light gray), and gorillas (dark gray) are shown. See Table 2 for summary statistics and Figure 5—source data 1 for the raw data.
+
+**Table 3.**
+ Lumbar wedging angles and combined wedging of fossil hominin specimens.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>L2</th>
+      <th>L3</th>
+      <th>L4</th>
+      <th>L5</th>
+      <th>Combined</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kebara 2</td>
+      <td>8.1</td>
+      <td>6.9</td>
+      <td>4.5</td>
+      <td>–10.6</td>
+      <td>8.9</td>
+    </tr>
+    <tr>
+      <td>Shanidar 3</td>
+      <td>8.0</td>
+      <td>5.1</td>
+      <td>0.1</td>
+      <td>–4.9</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td>La Chapelle-aux-Saints 1</td>
+      <td>–</td>
+      <td>4.7</td>
+      <td>0.0</td>
+      <td>–7.8</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>KNM-WT 15000</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–8.3</td>
+      <td>–11.8</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>LES1</td>
+      <td>3.0</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>SK 3981b</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–3.5</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>MH2</td>
+      <td>4.1</td>
+      <td>1.4</td>
+      <td>–1.6</td>
+      <td>–11.2</td>
+      <td>–7.3</td>
+    </tr>
+    <tr>
+      <td>Sts 14</td>
+      <td>2.3</td>
+      <td>1.7</td>
+      <td>–0.9</td>
+      <td>–6.9</td>
+      <td>–3.8</td>
+    </tr>
+    <tr>
+      <td>StW 431</td>
+      <td>2.0</td>
+      <td>2.3</td>
+      <td>0.9</td>
+      <td>–4.2</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>StW 8</td>
+      <td>5.2</td>
+      <td>3.6</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>StW 572</td>
+      <td>4.8</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>StW 656/600</td>
+      <td>–</td>
+      <td>4.2</td>
+      <td>–</td>
+      <td>–6.2</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>A.L. 288–1</td>
+      <td>–</td>
+      <td>7.2</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>A.L. 333–73</td>
+      <td>–</td>
+      <td>2.8</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
 Patterns of change across lumbar levels demonstrate that MH2’s vertebrae transition from ventral (kyphotic) to dorsal (lordotic) wedging between the L3 and L4 levels; however, all adult fossil hominins fall within the 95% prediction intervals of modern humans (Figure 5, Figure 5—figure supplement 1). As shown previously (Williams et al., 2013), the last lumbar vertebra of MH2 is strongly dorsally wedged like that of the Kebara 2 Neandertal and the juvenile specimen KNM-WT 15000, whereas other fossil hominins do not demonstrate this pattern. Although vertebral wedging is characterized by high levels of variation within groups, especially in combined L2-L5 wedging (Figure 5, Table 2), the pattern of lumbar wedging angles observed in MH2 (i.e., transition from penultimate to ultimate lumbar level) and its combined L2-L5 wedging fall within the modern human 95% PIs and outside those of great apes (Figure 5, Figure 5—figure supplement 1, Figure 5—figure supplement 2). The hypothesis that A. sediba is human-like in lumbar wedging, therefore, cannot be rejected.
 
-## Configuration of the neural arch
+### Configuration of the neural arch
 
 The recovery of new lumbar vertebrae of MH2 allows for the quantification and comparison of inter-articular facet width increase in A. sediba. Humans are characterized by a pyramidal configuration of the articular facets such that they increase in transverse width progressively down the lumbar column (i.e., from cranial to caudal) (Latimer and Ward, 1993; Ward and Latimer, 2005). Using an index of the last lumbar-sacrum inter-articular maximum distance relative to that of lumbar vertebrae three levels higher (L2-L3 in hominins, L1-L2 in chimpanzees and gorillas), we show that Australopithecus africanus (Sts 14 and StW 431; average = 1.42) and A. sediba (1.43) fall at the low end of the range of modern human variation in this trait (Figure 6). We note that A.L. 288–1 (Australopithecus afarensis) falls at the low end of human variation near other australopiths if the preserved lumbar vertebra (A.L. 288-1aa/ak/al) is treated as an L3 (Latimer and Ward, 1993; Lovejoy, 2005; Johanson et al., 1982; Meyer et al., 2015), but outside the range of human variation and within that of orangutans if it is treated as an L2 (Cook et al., 1983). Homo erectus and Neandertals fall well within the range of modern human variation. The presence of a pyramidal configuration of the lumbar articular facets is therefore present in MH2, supporting our hypothesis that A. sediba was adapted to a human-like configuration of the neural arch.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig6-v1.jpg)
 
-**Figure 6.:** The inter-articular facets of the last lumbar/sacrum and those of lumbar vertebrae three elements higher in the column (L1-L2 in chimpanzees and gorillas with four lumbar vertebrae; L2-L3 in hominins) are included as the numerator and denominator, respectively, in a lumbar inter-articular facet index. These levels are highlighted on the left in red in both a human (top) and a chimpanzee (bottom). The gray box highlights the range of variation observed in the modern human sample. All great apes are significantly different from modern humans (<0.001). The ratio data for inter-articular facet spacing can be found in Figure 6—source data 1.Figure 6—source data 1.
+**Figure 6.:** The inter-articular facets of the last lumbar/sacrum and those of lumbar vertebrae three elements higher in the column (L1-L2 in chimpanzees and gorillas with four lumbar vertebrae; L2-L3 in hominins) are included as the numerator and denominator, respectively, in a lumbar inter-articular facet index. These levels are highlighted on the left in red in both a human (top) and a chimpanzee (bottom). The gray box highlights the range of variation observed in the modern human sample. All great apes are significantly different from modern humans (<0.001). The ratio data for inter-articular facet spacing can be found in Figure 6—source data 1.
 
-## Middle lumbar vertebra (L3) comparative morphology
+### Middle lumbar vertebra (L3) comparative morphology
 
 The new middle lumbar vertebra, U.W.88–233, is complete, and although the neural arch is compressed ventrally into the vertebral foramen space, it can be reasonably reconstructed from µCT data (see Materials and methods). We used three-dimensional geometric morphometrics (3D GM) to evaluate the shape affinities of U.W.88–233 among humans, great apes, and fossil hominins. The results of our principal components analysis (PCA) on Procrustes-aligned shape coordinates reveal that A. sediba falls within or near the human distribution on the first three principal components (PC1–3) (Figure 7). PC1 explains 31% of the variance in the dataset, and along it hominins are characterized by more sagittally oriented and concave superior articular facets (SAF), more dorsally oriented costal processes, a dorsoventrally shorter and cranially oriented spinous process, craniocaudally shorter, dorsoventrally longer vertebral body, and more caudally positioned SAF and IAF relative to the vertebral body compared to great apes.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig7-v1.jpg)
+
+**Figure 7.:** (A–C) PCA on the full set of 48 landmarks, including Sts 14 (Australopithecus africanus), U.W.88–233 (Australopithecus sediba), and Shanidar 3 (Neandertal). (A–B) Hominins separate from great apes on PC1 (wireframes in lateral view), African apes and hominins separate from orangutans on PC2 (wireframes in lateral view), and (C) Australopithecus species separate from other hominids on PC4 (wireframes in posterior view). Note that spinous and costal process lengths and orientations drive much of the variance in middle lumbar vertebrae. (D) PCA on a reduced landmark set (excluding spinous and costal process landmarks) to include A.L. 288–1 (Australopithecus afarensis), StW 431 (A. africanus), and Kebara 2 (Neandertal). Notice that Australopithecus specimens fall outside the modern human convex hulls, with Sts 14 and MH2 close to those of the African apes. 3D landmark data were subjected to Procrustes transformation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Procrustes distances between U.W.88–233 and extant and fossil middle lumbar vertebrae. Sts14 is closest to U.W.88–233 in overall Procrustes distance. (B) Average modern human middle lumbar morphology compared to U.W.88–233. (C) Procrustes distances within (Homo, Pan) and between (Pan and Homo) extant taxa and between U.W.88–233 and other fossil hominin middle lumbar vertebrae. (D) Average Pan middle lumbar vertebra morphology compared to U.W.88–233.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) A hominin-only principal components analysis (PCA) demonstrates a similar position of MH2 (U.W.88–233) and Sts 14 middle lumbar vertebrae (L3) along PC2 as PC4 in the larger comparative dataset (Figure 7). A 95% confidence ellipse of the modern human data encompasses the Neandertal Shandiar 3 but not MH2 and Sts 14. (B) Wireframes representing PC2 extremes in superior (left) and posterior (right) views. A hypothetical muscle force vector for psoas major and quadratus lumborum (M) whose length, magnitude, and orientation are unknown is depicted here for illustrative purposes only; and r represents a hypothetical moment arm of the muscle force vector. The elongated, and more cranially and ventrally oriented costal processes of U.W.88–233 and, to a slightly lesser extent, Sts 14 increase the length of the muscle force vector’s moment arm relative to modern humans (and Shanidar 3).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/70447/elife-70447-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Wireframes represent the maximum and minimum shape predictions derived from a multivariate regression of shape coordinates on centroid size. Larger centroid sizes are associated with longer, more projecting spinous and costal processes. The elongated and cranially oriented costal processes of U.W.88–233 (Australopithecus sediba) and Sts 14c (Australopithecus africanus) are not explained by centroid size. Homo = gray circles, Pan = purple circles, Gorilla = green circles, Pongo = orange circles.
 
 PC2 explains 13% of the variance and contrasts long spinous processes and relatively neutrally wedged (~0° ± 1°) vertebral bodies of hominins and African apes with the shorter spinous processes and strongly ventrally wedged vertebral bodies of orangutans. PC3 explains 8% of the variance and largely contrasts dorsoventrally longer vertebral bodies with caudally oriented spinous processes in gorillas with dorsoventrally shorter vertebral bodies and less caudally oriented spinous processes in chimpanzees and orangutans; hominins fall intermediate between these groups.
 
@@ -108,6 +683,77 @@ To provide a more in-depth comparison of the morphometric affinities of U.W.88�
 To include other fossil hominins with broken processes, we ran a second 3D GM analysis excluding the majority of costal process and spinous process landmarks. This analysis, which includes landmarks on the vertebral body, SAF and IAF, and the bases of the costal and spinous processes, produces a similar pattern compared to the analysis on the full landmark set (Figure 7). Humans and great apes separate along PC1, which is largely explained by vertebral body heights (including vertebral wedging) and SI position of the articular facets relative to the vertebral body. U.W.88–233, like other early hominins included in this study, falls intermediately between modern humans and great apes along PC1.
 
 We used a Procrustes distance-based analysis of variance (ANOVA) to evaluate the effect of centroid size on lumbar shape (Goodall, 1991). The results show significant effects of centroid size (F = 9.83; p < 0.001), genus (with hominins pooled; F = 27.7; p < 0.001), and an interaction between genus and centroid size (F = 1.48; p = 0.01), implying unique shape allometries within genera (Table 4). We plotted standardized shape scores derived from a multivariate regression of shape on centroid size against centroid size to visualize shape changes (Drake and Klingenberg, 2008; Figure 7—figure supplement 3). In general, larger centroid sizes are associated with 3D shape changes including dorsoventrally longer and more caudally projecting spinous processes, more cranially oriented and less sagittally oriented costal processes, and less caudally projecting IAF. Importantly, however, the cranially oriented costal processes of U.W.88–233 (and Sts 14) appear not to be explained by centroid size given its relatively small size and overlap with Pan in standardized shape scores (Figure 7—figure supplement 3).
+
+**Table 4.**
+ Procrustes analysis of variance (ANOVA) results of centroid size and middle lumbar vertebra shape.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Df</th>
+      <th>SS</th>
+      <th>MS</th>
+      <th>R2</th>
+      <th>F</th>
+      <th>Z</th>
+      <th>Pr (&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Centroid size</td>
+      <td>1</td>
+      <td>0.11917</td>
+      <td>0.11917</td>
+      <td>0.0452</td>
+      <td>9.8252</td>
+      <td>5.5237</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Genus</td>
+      <td>3</td>
+      <td>1.00793</td>
+      <td>0.33598</td>
+      <td>0.38234</td>
+      <td>27.7009</td>
+      <td>12.0794</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Centroid size:genus</td>
+      <td>3</td>
+      <td>0.0537</td>
+      <td>0.0179</td>
+      <td>0.02037</td>
+      <td>1.4759</td>
+      <td>2.2858</td>
+      <td>0.0109</td>
+    </tr>
+    <tr>
+      <td>Residuals</td>
+      <td>120</td>
+      <td>1.45545</td>
+      <td>0.01213</td>
+      <td>0.55209</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>127</td>
+      <td>2.63626</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -127,7 +773,7 @@ Previous work has shown that the adult, presumed female individual from Malapa (
 
 ## Materials and methods
 
-## Wedging angle and neural arch configuration
+### Wedging angle and neural arch configuration
 
 Original fossil material was studied in all cases with the exception of two Neandertal specimens (Kebara 2 and Shanidar 3), for which high-quality casts were used. The A. sediba fossils belonging to MH2 (U.W.88-280/281, L1; U.W.88–232, L2; U.W.88–233, L3; U.W.88-127/153/234, L4; U.W.88-126/138, L5) were studied at the University of the Witwatersrand (Johannesburg), as was LES1 Homo naledi (U.W.102a-154B, L1) and fossils purportedly belonging to A. africanus: StW 431 (StW 431r, L1; StW 431s, L2; StW 431t, L3; StW 431u, L4; StW 431v, L5), StW 8 (StW8a, L1; StW8b, L2; StW8c, L3; StW8d, L4), StW 572 (L2), StW 656 (L3), and StW 600 (L5). The A. africanus specimen Sts 14 (Sts 14e, L1; Sts 14d, L2; Sts 14c, L3; Sts 14b, L4; Sts 14a, L5) and possible Paranthropus robustus or early Homo specimen SK 3981b (L5) were studied at the Ditsong National Museum of Natural History, A. afarensis specimens (A.L. 288-1aa/ak/al, L3; A.L. 333–73, L3) at the National Museum of Ethiopia, the H. erectus juvenile individual KNM-WT 15000 (AV/AA, L1; Z/BW, L2; AB, L3; BM, L4; AC, L5) at the National Museums of Kenya, and La Chapelle-aux-Saints 1 at Musée de l’Homme (Paris).
 
@@ -137,7 +783,7 @@ Following Digiovanni et al., 1989, we calculated wedging angles for lumbar verte
 
 Inter-articular facet spacing was measured across the lateral borders of the IAF of lumbar vertebrae three levels apart: on the last lumbar vertebra and on L1 in great apes with four lumbar vertebrae and on L2 in hominins. This is done to estimate the difference in inter-articular facet width at upper and lower lumbar levels and thus quantify neural arch configuration. Due to preservation, this measurement was estimated from the SAF of the L3 vertebra and/or the sacrum in a selection of fossils (A.L. 288–1, Sts 14). In instances of partial preservation, the relevant adjacent elements were articulated to estimate the measurement (MH2, StW 431; KNM-WT 15000). An index was created by dividing the last lumbar-sacrum interarticular facet mediolateral width by that of the upper lumbar vertebrae.
 
-## 3D reconstruction and geometric morphometric analysis
+### 3D reconstruction and geometric morphometric analysis
 
 For 3D GM analyses, we used subsets of middle lumbar vertebrae that were scanned at the aforementioned institutions using an Artec Space Spider 3D scanner (Source Graphics, Anaheim, CA). The middle lumbar vertebra of hominins with five lumbar vertebrae is the third lumbar vertebra, and that of chimpanzees and gorillas with three lumbar vertebrae is L2. Many chimpanzees and bonobos, western gorillas, and orangutans have four lumbar vertebrae (Williams et al., 2019), and we use L2 in these individuals as well for consistency. Thirty-six modern humans, 28 chimpanzees, 26 western gorillas, and 8 orangutans were included. For this analysis, we also utilized a sample of 23 bonobos (Pan paniscus) and 7 eastern gorillas (G. beringei).
 

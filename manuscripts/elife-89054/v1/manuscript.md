@@ -7,15 +7,15 @@
 
 ### Affiliations
 
-1. https://ror.org/04xhy8q59 Laboratoire de Paléontologie, Évolution, Paléoécosystèmes et Paléoprimatologie (PALEVOPRIM), UMR 7262 CNRS & University of Poitiers Poitiers France
-2. https://ror.org/013meh722 Department of Archaeology, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/03rp50x72 School of Geography, Archaeology and Environmental Studies, University of the Witwatersrand Johannesburg South Africa
+1. Laboratoire de Paléontologie, Évolution, Paléoécosystèmes et Paléoprimatologie (PALEVOPRIM), UMR 7262 CNRS & University of Poitiers Poitiers France ([ROR:04xhy8q59](https://ror.org/04xhy8q59))
+2. Department of Archaeology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. School of Geography, Archaeology and Environmental Studies, University of the Witwatersrand Johannesburg South Africa ([ROR:03rp50x72](https://ror.org/03rp50x72))
 
 † Corresponding author
 
 ## Abstract
 
-Because brain tissues rarely fossilize, pinpointing when and how modern human cerebral traits emerged in the hominin lineage is particularly challenging. The fragmentary nature of the fossil material, coupled with the difficulty of characterizing such a complex organ, has been the source of long-standing debates. Prominent among them are the uncertainties around the derived or primitive state of the brain organization in the earliest representatives of the genus Homo , more particularly in key regions such as the Broca’s area. By revisiting a particularly well-preserved fossil endocast from the Turkana basin (Kenya), here we confirm that early Homo in Africa had a primitive organization of the Broca’s area ca. 1.9 million years ago. Additionally, our description of KNM-ER 3732 adds further information about the variation pattern of the inferior frontal gyrus in fossil hominins, with implications for early Homo taxic diversity (i.e. one or two Homo species at Koobi Fora) and the nature of the mechanisms involved in the emergence of derived cerebral traits.
+Because brain tissues rarely fossilize, pinpointing when and how modern human cerebral traits emerged in the hominin lineage is particularly challenging. The fragmentary nature of the fossil material, coupled with the difficulty of characterizing such a complex organ, has been the source of long-standing debates. Prominent among them are the uncertainties around the derived or primitive state of the brain organization in the earliest representatives of the genus Homo, more particularly in key regions such as the Broca’s area. By revisiting a particularly well-preserved fossil endocast from the Turkana basin (Kenya), here we confirm that early Homo in Africa had a primitive organization of the Broca’s area ca. 1.9 million years ago. Additionally, our description of KNM-ER 3732 adds further information about the variation pattern of the inferior frontal gyrus in fossil hominins, with implications for early Homo taxic diversity (i.e. one or two Homo species at Koobi Fora) and the nature of the mechanisms involved in the emergence of derived cerebral traits.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Testing the hypothesis of Ponce de León et al., 2021 of a primitive brain in th
 
 ## Results
 
-## KNM-ER 3732 offers a glimpse of early Homo prefrontal organization
+### KNM-ER 3732 offers a glimpse of early Homo prefrontal organization
 
 The natural endocast of KNM-ER 3732, initially described by Holloway et al., 2004, preserves the dorsal part but misses the frontal pole, the occipital and temporal lobes, as well as the entire ventral surface (Figure 1). Holloway et al., 2004 estimated the endocranial volume as about 750–800 cc but pointed out the low reliability of their estimate. Wood, 1991 (Page 132) identified an ‘irregular bony excrescence on the surface of the right parietal at the level of lambda and 32 mm from the midline. It projects 6 mm from the surface of the bone, and may be an example of myositis ossificans associated with damage to the overlying temporal muscle.’ Because of the location (right parietal) and nature (traumatic) of the outgrowth, it does not affect our area of study (i.e. left frontal bone) (Walczak et al., 2015). The gyral and sulcal details are well-preserved, particularly in the prefrontal region. The superior, middle, and inferior frontal sulci are visible on both hemispheres. On the left hemisphere, the Broca’s cap is prominent. A vertical groove, identified as the precentral sulcus, separates the Broca’s cap in half (Figure 2A). On both hemispheres, the central sulcus intersects the inter-hemispheric scissure and the post-central sulcus seems to be connected to the lateral fissure. The intra-parietal sulcus can be found in the parieto-occipital region of both hemispheres. The examination of the internal surface of the braincase (Figure 2B) confirms the pattern described on the natural endocast.
 
@@ -39,30 +39,30 @@ The natural endocast of KNM-ER 3732, initially described by Holloway et al., 200
 
 **Figure 2.:** The natural endocast (A) and braincase (B) of KNM-ER 3732 are compared to the virtual endocasts of extant human (C) and chimpanzee (D) individuals. Images not to scale. ar: ascending ramus of the lateral fissure; c: central sulcus; co: coronal suture; fi: inferior frontal sulcus; fm: middle frontal sulcus; ip: intra-parietal sulcus; pc: pre-central sulcus; pt: post-central sulcus. Scale bar: 2 cm.
 
-## KNM-ER 3732 has a primitive prefrontal cortex
+### KNM-ER 3732 has a primitive prefrontal cortex
 
 When compared to extant human and chimpanzee sulcal patterns, KNM-ER 3732 closely resembles the latter (Figure 2C–D). In extant human brains and endocasts, the inferior frontal sulcus often transects the Broca’s cap, while the ascending ramus of the lateral fissure caudally borders the prominence (Figure 2C–D; Connolly, 1950; de Jager et al., 2019; de Jager et al., 2022). In chimpanzees, the central sulcus is placed more rostrally, and the inferior portion of the precentral sulcus bisects the Broca’s cap that is bordered rostrally by the inferior frontal sulcus (Figure 2E–F; Connolly, 1950; Falk et al., 2018). The coronal suture runs in between the precentral and central sulci in KNM-ER 3732, which points towards the primitive configuration described in Ponce de León et al., 2021. The sulcal pattern seen in the prefrontal cortex of KNM-ER 3732, that was detected in both the natural endocast and the inner surface of the cranium (Figure 2A–B), and more particularly the deeply marked precentral sulcus that incised the Broca’s cap, is not found in any of the early Homo specimens described in Ponce de León et al., 2021 but approximates the condition seen in the Dmanisi cranium D2282 (Fig. S1B in Ponce de León et al., 2021). However, this pattern is seen in a contemporaneous non-Homo hominin specimen in South Africa, i.e. Australopithecus sediba (Falk, 2014).
 
 ## Discussion
 
-## Paleoneuroanatomy supports taxic diversity within early Homo
+### Paleoneuroanatomy supports taxic diversity within early Homo
 
 Overall, the present study not only demonstrates that Ponce de León et al.’s (2021) hypothesis of a primitive brain of early Homo cannot be rejected, but also adds information about the variation pattern of the inferior frontal gyrus. In particular, the diversity of the prefrontal sulcal patterns of hominin endocasts at Koobi Fora revives the debate about the possible presence of two early Homo species in this locality (i.e. Homo habilis sensu stricto and Homo rudolfensis). In 1983, Falk, 1983 published the description of the endocasts of two Homo specimens from Koobi Fora, KNM-ER 1470 and KNM-ER 1805. Her analysis supported the co-existence of two morphs, KNM-ER 1470 representing a more derived human-like sulcal pattern. Interestingly, cerebral evidence brought up by her analysis matched other studies that emphasized the more derived craniodental anatomy of specimens attributed to Homo rudolfensis as opposed to the more primitive (Australopithecus-like) traits identified within Homo habilis sensu stricto (Leakey et al., 2012). While describing the external morphology of the neurocranium, (Leakey, 1976: 575) noted that KNM-ER 3732 was ‘strikingly similar to KNM-ER 1470.’ This resemblance is not reflected in their cerebral organization since the present study rather suggests a primitive organization of the Broca’s cap in KNM-ER 3732. If KNM-ER 1470 had indeed a derived brain, taxic diversity as a source of variation cannot be discarded. If we go further down that route, the similarities between KNM-ER 3732 and Australopithecus sediba suggested by our study could be an argument supporting the presence of Australopithecus in Koobi Fora or the absence of a definite threshold between the two genera based on the morphoarchitecture of their endocasts (Wood and Collard, 1999).
 
-## The evolutionary history of the human Broca’s area unraveled
+### The evolutionary history of the human Broca’s area unraveled
 
 Beyond the taxonomic aspect, variation detected in Koobi Fora could provide information about underlying evolutionary mechanisms, and more specifically the process of fixation of an adaptive variant, i.e. a new organization of the Broca’s area and the increase of neural interconnectivity in this region (Essen, 1997). Such neurological changes might have had deep implications for the emergence of novel behaviors, such as articulated language (Beaudet, 2017; Beaudet, 2021). Within this scenario, the study from Ponce de León et al., 2021 would suggest that this trait became stabilized by 1.5 million years ago. The identification of protracted brain growth as early as in Australopithecus afarensis (Gunz et al., 2020), inducing longer exposure to the social environment during brain maturation (rev. in Hublin et al., 2015), could be consistent with a derived organization of the Broca’s area being selected as a response to social environmental stimuli through developmental plasticity, culminating in this variant becoming dominant within Homo. In parallel, the possibility of allometric scaling and the influence of brain size on sulcal patterns in early Homo has to be further explored.
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 KNM-ER 3732 is currently housed in the National Museums of Kenya in Nairobi (Kenya). We used brain and endocast atlases published in Connolly, 1950, Falk et al., 2018, and de Jager et al., 2019; de Jager et al., 2022; see also https://www.endomap.org/ for comparing the pattern identified in KNM-ER 3732 to those described in extant humans and chimpanzees. To the best of our knowledge, these atlases are the most extensive atlases of extant human and chimpanzee brains/endocasts available to date and are widely used in the literature to explore variability in sulcal patterns. In Figure 2, the extant human and chimpanzee conditions are illustrated by one extant human (adult female) and one extant chimpanzee (adult female) specimens from the Pretoria Bone Collection at the University of Pretoria (South Africa) and from the Royal Museum for Central Africa in Tervuren (Belgium), respectively (Beaudet et al., 2018).
 
-## Digitization
+### Digitization
 
 Both the natural endocast and the cranium of KNM-ER 3732 were scanned using an Artec Space Spider 3D scanner and reconstructed with the software Artec Studio 16 X. The 3D mesh can be viewed on MorphoSource. The comparative specimens were imaged by microfocus X-ray tomography (Beaudet et al., 2018) at the South African Nuclear Energy Corporation in Pelindaba (South Africa) and at the Centre for X-ray Tomography of Ghent University (UGCT) in Ghent (Belgium). Virtual endocasts were generated using Endex software (Subsol et al., 2010).
 
-## Detection and identification of sulcal imprints
+### Detection and identification of sulcal imprints
 
 Sulcal imprints were automatically detected through a geometry-based method using curvature lines computed from the natural endocast and the inner surface of the cranium. Sulcal imprints, considered as variation points of the surface on a triangle mesh, were detected through a geometry-based method using curvature lines defined as salient subsets of the extrema of the principal curvatures on surfaces (Yoshizawa et al., 2008; Beaudet et al., 2016). Vascular imprints and non-anatomical structures (e.g. fractures) were manually removed through a customized script written in MATLAB R2013a (Mathworks) that is available online (Dumoncel, 2019; https://gitlab.com/jeandumoncel/curve-editor).

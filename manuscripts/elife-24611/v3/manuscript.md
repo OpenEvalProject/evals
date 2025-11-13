@@ -32,7 +32,7 @@
 
 ## Abstract
 
-10.7554/eLife.24611.001 Many discoveries in the life sciences have been made using material from living stock collections. These collections provide a uniform and stable supply of living organisms and related materials that enhance the reproducibility of research and minimize the need for repetitive calibration. While collections differ in many ways, they all require expertise in maintaining living organisms and good logistical systems for keeping track of stocks and fulfilling requests for specimens. Here, we review some of the contributions made by living stock collections to research across all branches of the tree of life, and outline the challenges they face. DOI: http://dx.doi.org/10.7554/eLife.24611.001
+Many discoveries in the life sciences have been made using material from living stock collections. These collections provide a uniform and stable supply of living organisms and related materials that enhance the reproducibility of research and minimize the need for repetitive calibration. While collections differ in many ways, they all require expertise in maintaining living organisms and good logistical systems for keeping track of stocks and fulfilling requests for specimens. Here, we review some of the contributions made by living stock collections to research across all branches of the tree of life, and outline the challenges they face.
 
 ## Introduction
 
@@ -46,7 +46,181 @@ Living collections are funded by a number of mechanisms. In the United States, f
 
 The global research and development community values living collections as demonstrated by recent progress in the development of networks to create a global microbial research commons (Dedeurwaerdere, 2010; Uhlir, 2011). These efforts are bearing fruit in the number of growing networks, consortia and even international treaties on access to genetic resources. The ratification and activation of the Nagoya Protocol on Access and Benefit Sharing in 2014 (Dedeurwaerdere et al., 2012), and of the International Treaty on Plant Genetic Resources for Food and Agriculture in 2004 (Mekouar, 2002), has required that research and development consider the place of origin in sourcing research materials. Living collections are key partners in ensuring that materials are ethically and legally procured (Boundy-Mills et al., 2016).
 
-Our focus here is on open living research collections in the USA that are funded by a combination of competitive grants and community user fees (Table 1). Many of these collections were assembled over multiple decades and would be difficult or impossible to replace. We emphasize that these resource centers are essential for the long-term maintenance of key living resources for research and scientific replication and as such they are highly vulnerable to policy and funding changes. This creates dangerous uncertainty for the communities affected.10.7554/eLife.24611.002Table 1.A selection of public living research collections in the USA.DOI: http://dx.doi.org/10.7554/eLife.24611.002Collection nameAcronymHoldingsHostSupportMicrobial collectionsAmerican Type Culture CollectionATCC18,000 bacterial and 7,600 fungal type strainsATCCUsers, government contractsBEI ResourcesBEI13,000 strains and reagents for emerging pathogen researchATCCNIAIDFungal Genetics Stock CenterFGSC25,000 filamentous fungi including mutants, genetic testers, wild strains, plasmids and mutant setsKansas State UniversityNSF (1961–2014), KSU, user feesPhaff Yeast Culture CollectionUCDFST7,500 wild-type yeastUniversity of California, DavisUC, NSF, user feesE. coli Genetic Stock CenterCGSC8,000 mutant and wild K12 E. coliYale UniversityNSF, user feesBacillus Genetic Stock CenterBGSC2,600 mutant and wild Bacillus subtilisThe Ohio State UniversityNSF, user feesInternational Culture Collection of (Vesicular) Arbuscular Mycorrhizal FungiINVAM1,112 vesicular arbuscular mycorrhizal fungiWest Virginia UniversityNSF, user feesWorld Phytophthora CollectionWPC10,000 wild oomycete fungiUniversity of California, RiversideUCRUSDA ARS Culture CollectionNRRL95,000 agricultural and industrial fungi and bacteriaUSDA National Center for Agricultural Utilization ResearchUSDAUSDA ARS Collection of Entomopathogenic Fungal CulturesARSEF13,000 fungal culturesUSDA Robert W. Holley Center CenterUSDAUTEX Culture Collection of AlgaeUTEX3,000 freshwater algaeUniversity of Texas, AustinNSF, user feesNational Center for Marine Algae and MicrobiotaNCMA2,800 algal cultures, viral and bacterial associatesBigelow Laboratory for Ocean SciencesNSF, user feesThe Chlamydomonas Resource CenterChlamy4,000 mutant and wild type strainsUniversity of MinnesotaNSF, user feesAnimal and cell line collectionsBloomington Drosophila Stock CenterBDSCOver 50,000 Drosophila genetic stocksIndiana UniversityNIH, user fees, HHMIDuke Lemur CenterDLC250 living and 4,000 historic individual Strepsirrhine primates, with a biosample bank of >10,000 samplesDuke UniversityNSF, user feesDrosophila Species Stock CenterDSSCFliesUniversity of California San DiegoNSF, user feesJackson LaboratoriesJAXMiceJackson LabsUser feesPeromyscus Genetic Stock CenterPGSCAt least 4 species and several coat color and behavioral mutants of deer miceUniversity of South CarolinaNSF, user feesPlant collections and seed banksArabidopsis Biological Resource CenterABRC~1 million Seeds and DNA StocksThe Ohio State UniversityNSF, user feesMaize Genetics Cooperation Stock CenterMGCSCOver 100,000 maize variantsUniversity of Illinois, Urbana/ChampaignUSDA-ARSNational Plant Germplasm SystemNPGS576,991 Plant accessionsDistributed around the US and backed up at the USDA NLGRP in Ft. CollinsUSDA-ARS
+Our focus here is on open living research collections in the USA that are funded by a combination of competitive grants and community user fees (Table 1). Many of these collections were assembled over multiple decades and would be difficult or impossible to replace. We emphasize that these resource centers are essential for the long-term maintenance of key living resources for research and scientific replication and as such they are highly vulnerable to policy and funding changes. This creates dangerous uncertainty for the communities affected.
+
+**Table 1.**
+ A selection of public living research collections in the USA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Collection name</th>
+      <th>Acronym</th>
+      <th>Holdings</th>
+      <th>Host</th>
+      <th>Support</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Microbial collections</td>
+    </tr>
+    <tr>
+      <td>American Type Culture Collection</td>
+      <td>ATCC</td>
+      <td>18,000 bacterial and 7,600 fungal type strains</td>
+      <td>ATCC</td>
+      <td>Users, government contracts</td>
+    </tr>
+    <tr>
+      <td>BEI Resources</td>
+      <td>BEI</td>
+      <td>13,000 strains and reagents for emerging pathogen research</td>
+      <td>ATCC</td>
+      <td>NIAID</td>
+    </tr>
+    <tr>
+      <td>Fungal Genetics Stock Center</td>
+      <td>FGSC</td>
+      <td>25,000 filamentous fungi including mutants, genetic testers, wild strains, plasmids and mutant sets</td>
+      <td>Kansas State University</td>
+      <td>NSF (1961–2014), KSU, user fees</td>
+    </tr>
+    <tr>
+      <td>Phaff Yeast Culture Collection</td>
+      <td>UCDFST</td>
+      <td>7,500 wild-type yeast</td>
+      <td>University of California, Davis</td>
+      <td>UC, NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>E. coli Genetic Stock Center</td>
+      <td>CGSC</td>
+      <td>8,000 mutant and wild K12 E. coli</td>
+      <td>Yale University</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>Bacillus Genetic Stock Center</td>
+      <td>BGSC</td>
+      <td>2,600 mutant and wild Bacillus subtilis</td>
+      <td>The Ohio State University</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>International Culture Collection of (Vesicular) Arbuscular Mycorrhizal Fungi</td>
+      <td>INVAM</td>
+      <td>1,112 vesicular arbuscular mycorrhizal fungi</td>
+      <td>West Virginia University</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>World Phytophthora Collection</td>
+      <td>WPC</td>
+      <td>10,000 wild oomycete fungi</td>
+      <td>University of California, Riverside</td>
+      <td>UCR</td>
+    </tr>
+    <tr>
+      <td>USDA ARS Culture Collection</td>
+      <td>NRRL</td>
+      <td>95,000 agricultural and industrial fungi and bacteria</td>
+      <td>USDA National Center for Agricultural Utilization Research</td>
+      <td>USDA</td>
+    </tr>
+    <tr>
+      <td>USDA ARS Collection of Entomopathogenic Fungal Cultures</td>
+      <td>ARSEF</td>
+      <td>13,000 fungal cultures</td>
+      <td>USDA Robert W. Holley Center Center</td>
+      <td>USDA</td>
+    </tr>
+    <tr>
+      <td>UTEX Culture Collection of Algae</td>
+      <td>UTEX</td>
+      <td>3,000 freshwater algae</td>
+      <td>University of Texas, Austin</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>National Center for Marine Algae and Microbiota</td>
+      <td>NCMA</td>
+      <td>2,800 algal cultures, viral and bacterial associates</td>
+      <td>Bigelow Laboratory for Ocean Sciences</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>The Chlamydomonas Resource Center</td>
+      <td>Chlamy</td>
+      <td>4,000 mutant and wild type strains</td>
+      <td>University of Minnesota</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td colspan="5">Animal and cell line collections</td>
+    </tr>
+    <tr>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC</td>
+      <td>Over 50,000 Drosophila genetic stocks</td>
+      <td>Indiana University</td>
+      <td>NIH, user fees, HHMI</td>
+    </tr>
+    <tr>
+      <td>Duke Lemur Center</td>
+      <td>DLC</td>
+      <td>250 living and 4,000 historic individual Strepsirrhine primates, with a biosample bank of &gt;10,000 samples</td>
+      <td>Duke University</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>Drosophila Species Stock Center</td>
+      <td>DSSC</td>
+      <td>Flies</td>
+      <td>University of California San Diego</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>Jackson Laboratories</td>
+      <td>JAX</td>
+      <td>Mice</td>
+      <td>Jackson Labs</td>
+      <td>User fees</td>
+    </tr>
+    <tr>
+      <td>Peromyscus Genetic Stock Center</td>
+      <td>PGSC</td>
+      <td>At least 4 species and several coat color and behavioral mutants of deer mice</td>
+      <td>University of South Carolina</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td colspan="5">Plant collections and seed banks</td>
+    </tr>
+    <tr>
+      <td>Arabidopsis Biological Resource Center</td>
+      <td>ABRC</td>
+      <td>~1 million Seeds and DNA Stocks</td>
+      <td>The Ohio State University</td>
+      <td>NSF, user fees</td>
+    </tr>
+    <tr>
+      <td>Maize Genetics Cooperation Stock Center</td>
+      <td>MGCSC</td>
+      <td>Over 100,000 maize variants</td>
+      <td>University of Illinois, Urbana/Champaign</td>
+      <td>USDA-ARS</td>
+    </tr>
+    <tr>
+      <td>National Plant Germplasm System</td>
+      <td>NPGS</td>
+      <td>576,991 Plant accessions</td>
+      <td>Distributed around the US and backed up at the USDA NLGRP in Ft. Collins</td>
+      <td>USDA-ARS</td>
+    </tr>
+  </tbody>
+</table>
 
 If the centers that harbor these collections cease to exist, or even if their operations must be reduced below a certain critical threshold, the negative consequences to the scientific community are unavoidable. For example, without stock centers there is an increased risk of researchers using inauthentic materials (such as contaminated or improperly identified stocks), research communities may become more exclusive, and it may cost more to generate key strains, clones, lines or varieties. Ultimately, this makes it harder for researchers to reproduce key results (Sheppard, 2013).
 

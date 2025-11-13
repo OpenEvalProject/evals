@@ -32,9 +32,17 @@ Here, we show that the WRC is required for Slit-Robo1 repulsive signaling at the
 
 ## Results
 
-## The WRC interacts genetically with Slit, Robo1, and SOS
+### The WRC interacts genetically with Slit, Robo1, and SOS
 
 WRC members are enriched in the Drosophila ventral nerve cord during embryonic stages 12–17, encompassing the developmental window when midline crossing decisions are being made (Schenck et al., 2004). To confirm these previously published observations, we examined the expression of Scar by immunofluorescence and observed strong axonal staining throughout embryonic stages when midline axon guidance occurs (Figure 1—figure supplement 1A). To investigate the potential role of the WRC in Slit-Robo repulsion at the midline, we tested for genetic interactions between cyfip and hspc300, two members of the WRC, and the Slit-Robo signaling pathway. In wild-type embryos, FasII-positive ipsilateral axons project longitudinally and never cross the midline (Figure 1A). In robo1 mutants, axons in the medial most Fas-II bundle frequently cross and re-cross the midline, resulting in a very strong ectopic crossing phenotype (Kidd et al., 1998; Figure 1B). In slit, robo1/+ embryos, where the slit and robo1 gene dosage is reduced by half, the phenotype is milder (Figure 1D). This represents a sensitized background in which we can detect enhancers or suppressors of the Slit-Robo pathway (Chance and Bashaw, 2015; Coleman et al., 2010; Fan et al., 2003; Hsouna et al., 2003). While we see no crossing errors in FasII-positive axons in hspc300 mutants alone (Figure 1C), in the slit, robo1/+ sensitized background, hspc300 mutants exhibit a significant enhancement of the ectopic crossing defects (Figure 1E). These interactions are dosage sensitive as removing one copy of hspc300 results in a moderate enhancement of crossing errors while removing both copies of hspc300 results in a much stronger phenotype (Figure 1F). Similarly, we see almost no crossing errors in FasII-positive axons in cyfip mutants alone (Figure 1G); however, in the slit, robo1/+ sensitized background (Figure 1H), cyfip mutants show a strong dose-dependent enhancement of the ectopic crossing defects (Figure 1I, J). Strikingly, removing both copies of cyfip in this background results in a very strong phenotype with ectopic crossing defects in nearly 100% of segments, similar to the robo1 mutant phenotype (Figure 1B, J). These ectopic crossing defects can be significantly rescued by the transgenic expression of UAS-CYFIP using the pan-neuronal elav-Gal4 driver (Figure 1K, L). This suggests that the neuronal function of CYFIP is important for Slit-Robo-mediated repulsion at the midline. It is important to note that zygotic hspc300 and cyfip mutants, like mutants for all other members of the WRC, still have significant amounts of the protein remaining due to maternal deposition (Schenck et al., 2004; Zallen et al., 2002). This likely explains why these zygotic mutants have no phenotype on their own. This can be seen in scar zygotic mutants where the overall Scar protein level is significantly reduced but there is still a considerable amount of Scar protein remaining in central nervous system (CNS) axons (Figure 1—figure supplement 1B, C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig1-v2.jpg)
+
+**Figure 1.:** (A–E, G–K) Stage 17 Drosophila embryos stained with anti-FasII to label ipsilateral axons. (A, C) Wild-type and hspc300 homozygous mutant embryos show three FasII-positive tracts that do not cross the midline. (B) Robo homozygous mutants show severe ectopic FasII crossing defects in 100% of segments (white arrowheads). (D) Slit, robo transheterozygous embryos show a mild loss-of-repulsion phenotype with ectopic FasII crossing in 31% of nerve cord segments. (E) Hscp300 homozygous mutants that are simultaneously heterozygous for slit and robo show ectopic FasII crossing in significantly more segments of the nerve cord (58%). (G) Cyfip embryos have almost no ectopic crossing defects and appear like wild-type embryos. (H) Double heterozygous slit, robo embryos show a mild loss-of-repulsion phenotype with ectopic FasII crossing in 22% of nerve cord segments. Removing (I) one and (J) two copies of cyfip in a slit, robo background results in a dose-dependent enhancement of the ectopic FasII crossing defects (30 and 95%, respectively). (K) Driving UAS-CYFIP expression in neurons using the pan-neuronal elav-Gal4 driver results in a partial rescue of the ectopic FasII crossing defects (60%). (F, L) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 15, 10, 15, 15, 12 (for F) and 17, 27, 13, 21, 12 (for L). Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (M–P) Stage 17 embryos carrying apGal4 and UAS-CD8GFP transgenes stained with anti-GFP, which labels the apterous (ap) cell bodies and axons, and anti-HRP, which labels all central nervous system (CNS) axons. (M) Wild-type embryos show ap axons that normally project ipsilaterally without crossing the midline. (N) Double heterozygous slit, robo embryos show a mild ectopic ap crossing phenotype of 39% (yellow arrowheads) while HRP (Horse radish peroxidase) depicts a wild type arrangement of longitudinal and commissural axon pathways. (O) Cyfip homozygous mutants in a slit, robo background show a strong enhancement of the ectopic ap crossing defects to 85% and HRP shows abnormal thickening and fusion of the commissures (asterisk). (P) Ap-specific expression of UAS-CYFIP significantly rescues the ectopic ap crossing defects (57%) but not the pan-neuronal HRP defects. (Q) Quantitation shows percentage of segments with ectopic apterous crossing defects. Data are presented as mean ± SEM, number of embryos, n = 12, 13, 15, 13. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. Scale bars in (A) and (M) represent 20 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Wild-type embryos across developmental stages 12–17 stained with anti-Scar and anti-HRP show Scar enrichment in developing central nervous system (CNS) axons. (B) Stage 16 wild-type and scar mutant embryos stained with anti-Scar and anti-HRP. Scar protein levels are reduced in scar mutant embryos. (C) Quantification of relative fluorescence intensity of Scar in CNS axons of stage 16/17 embryos calculated as Scar fluorescence intensity normalized to HRP fluorescence intensity. Data are presented as mean ± SEM, number of embryos, n = 7, 6. Significance was assessed using Student’s t-test. Scale bars in (A) and (B) represent 20 µm.
 
 To determine whether CYFIP is required cell-autonomously, we examined a more restricted subset of ipsilateral axons, the apterous (ap) axons. Just like FasII axons, ap axons are sensitive to a partial loss of repulsion. Reducing the slit and robo1 gene dosage by half in slit, robo1/+ embryos results in a mild phenotype where ectopic midline crossing of ap axons is seen in approximately 40% of segments (Figure 1N, Q). Homozygous cyfip mutants in this sensitized background show a strong enhancement of the ectopic ap crossing defects with 85% of segments exhibiting ectopic crossing (Figure 1O). We also visualized all CNS axons using HRP and observed abnormal thickening and fusion of the commissures, a phenotype that bears strong resemblance to robo1 mutants. Importantly, ap-specific expression of UAS-CYFIP significantly rescues the ectopic ap crossing defects but not the pan-neuronal HRP defects (Figure 1P, Q) providing strong support for a cell-autonomous role for CYFIP in Slit-Robo1 signaling. Together, these genetic data suggest that the WRC functions in the Slit-Robo1 pathway at the Drosophila midline.
 
@@ -42,39 +50,87 @@ Previous work has identified Rac1 as an important effector of Robo1 signaling in
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig2-v2.jpg)
 
-**Figure 2.:** wave regulatory complex genetically interacts with sos and robo2.(A, B, D, E) Stage 17 embryos stained with anti-FasII and anti-HRP. (A) Sos embryos show mild ectopic crossing defects of 15% in FasII axons (arrowheads) and no phenotype in HRP. (B) Simultaneous removal of sos and cyfip results in a very strong enhancement of the ectopic FasII crossing defects to 82% and a strong HRP phenotype with thickening and fusion of commissures (asterisk). Similarly, (D) robo2 mutants show mild ectopic crossing defects of 17% in FasII axons and a mildly disorganized axon scaffold in HRP while (E) double mutants for robo2 and cyfip show strong ectopic FasII crossing defects of 77% and thickening and fusion of commissures in HRP. (C, F) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 15 and 16 (for E) and 20 and 9 (for F). Significance was assessed using Student’s t-test. Scale bars in (A) and (D) represent 20 µm.
+**Figure 2.:** (A, B, D, E) Stage 17 embryos stained with anti-FasII and anti-HRP. (A) Sos embryos show mild ectopic crossing defects of 15% in FasII axons (arrowheads) and no phenotype in HRP. (B) Simultaneous removal of sos and cyfip results in a very strong enhancement of the ectopic FasII crossing defects to 82% and a strong HRP phenotype with thickening and fusion of commissures (asterisk). Similarly, (D) robo2 mutants show mild ectopic crossing defects of 17% in FasII axons and a mildly disorganized axon scaffold in HRP while (E) double mutants for robo2 and cyfip show strong ectopic FasII crossing defects of 77% and thickening and fusion of commissures in HRP. (C, F) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 15 and 16 (for E) and 20 and 9 (for F). Significance was assessed using Student’s t-test. Scale bars in (A) and (D) represent 20 µm.
 
 In Drosophila embryos, both Robo1 and, to a lesser extent, Robo2 contribute to midline repulsion in response to Slit (Rajagopalan et al., 2000; Simpson et al., 2000). Indeed, on their own robo2 mutants exhibit only mild phenotypes; however, robo1, robo2 double mutants exhibit a complete collapse of all CNS axons at the midline, phenocopying the slit mutant phenotype. Therefore, mutations in genes that contribute to robo1 repulsion would be expected to strongly enhance the mild phenotype observed in robo2 mutants. In robo2 mutant embryos, FasII-positive axons ectopically cross the midline in approximately 17% of segments (Figure 2D). In robo2, cyfip double mutant embryos, ectopic crossing defects are greatly increased to approximately 75% of segments (Figure 2E, F) and axon commissures are thicker and frequently fused, providing additional support for a role for the WRC in midline repulsion. Taken together, these genetic interaction results strongly suggest that the WRC functions in Slit-Robo1-mediated repulsive signaling at the midline.
 
-## The WIRS motif in Robo1 is important for its interaction with the WRC
+### The WIRS motif in Robo1 is important for its interaction with the WRC
 
 The cytoplasmic tail of Robo1 contains a WIRS motif, which is conserved in vertebrates (Figure 3A). The purified cytoplasmic tail of human Robo1 directly interacts with the WRC in pulldown assays via its WIRS motif (Chen et al., 2014a). To determine if this WIRS-dependent interaction with the WRC is conserved in Drosophila Robo1, we performed co-immunoprecipitation assays in Drosophila embryonic S2R+ cells (DGRC, #150) using tagged constructs of Robo1 and HSPC300. The relatively small size of HSPC300 facilitated consistent levels of expression and reduced trial-to-trial variability. We found that Robo1 immunoprecipitated with HSPC300, indicating that Drosophila Robo1, like human Robo1, can also interact with the WRC (Figure 3C). Next, we introduced point mutations into the WIRS motif of Robo1 (Robo1ΔWIRS; Figure 3B) and found a significant decrease in the amount of Robo1 that immunoprecipitated with HSPC300 (Figure 3C, E). Thus, mutating the WIRS motif substantially disrupts the binding of Robo1 to the WRC, indicating that Robo1 interacts with the WRC partly via the WIRS motif. In contrast, the previously published interaction data for human Robo1 (Chen et al., 2014a) showed that mutating the WIRS motif completely abolishes binding to the WRC. We speculate that there may be a small amount of indirect binding of Robo1 to the WRC via Ena or DOCK, which are known interactors of Robo1 (Bashaw et al., 2000; Fan et al., 2003). Previous work has identified interactions between Ena and Abi (Chen et al., 2014b) and between the DOCK homolog Nck and Nap1 (Kitamura et al., 1996). Both Abi and Nap1 are members of the WRC. As the pulldown assay with human Robo1 was done using purified proteins, any indirect binding will not be detected. Support for this notion comes from our co-immunoprecipitation results of Robo2 and HSPC300. Drosophila Robo2 is structurally similar to Robo1 except that it lacks the CC motifs CC2 and CC3 present in Robo1 that serve as the interaction sites for Ena and DOCK (Bashaw et al., 2000; Fan et al., 2003; Figure 3—figure supplement 1A). Indeed, we find that Robo2 can also interact with HSPC300 though mutating the WIRS motif of Robo2 almost completely abolishes this interaction (Figure 3—figure supplement 1B, C). This result is consistent with the idea that there might be indirect binding of the WRC to Robo1 via its interaction with other WRC partners but not to Robo2 that lacks any such interactions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig3-v2.jpg)
+
+**Figure 3.:** (A) Sequence alignments of the cytoplasmic tail of Robo1 showing that the WIRS motif is conserved across species. (B) Schematic depicting the residues of the WIRS motif that are mutated in the Robo1ΔWIRS variant. (C) Drosophila S2R+ cell lysates co-expressing HSPC300-GFP with either wild-type Robo1-MYC or Robo1ΔWIRS-MYC were immunoprecipitated with an anti-GFP antibody. The first three lanes show the individual proteins expressed alone. The fourth lane shows wild-type Robo1 co-immunoprecipitating with HSPC300 while the fifth lane shows that mutating the WIRS motif decreases this binding. (D) Cell lysates were immunoprecipitated with anti-GFP following a 12 min bath application of mock conditioned media or conditioned media obtained from Slit-expressing cells. The interaction between wild-type Robo1 and HSPC300 is increased in the presence of Slit; however, no significant increase is noted with Robo1ΔWIRS. (E, F) Quantitation of band intensities of the MYC-tagged Robo1 variants in the immunoprecipitates normalized to wild-type Robo1-MYC. Data were normalized to lysate levels of the Robo1 variants and HSPC300 levels in the immunoprecipitates. Error bars represent SEM. Number of trials, n = 4. Significance was assessed using Student’s t-test (for E) and one-way ANOVA with Tukey’s multiple comparisons test (for F). (G) Lysates from Drosophila embryos with elavGal4 pan-neuronally driving the expression of HSPC300-GFP alone (lane 1), with wild-type HA-Robo1 (lane 2) or with HA-Robo1ΔWIRS (lane 3), were immunoprecipitated with anti-GFP. Wild-type Robo1 co-immunoprecipitates with HSPC300 and mutating the WIRS motif decreases this binding. (H) Quantitation of band intensities of the HA-tagged Robo1 variants in the imunnoprecipitates normalized to wild-type HA-Robo1. Data were normalized to the lysate levels of the Robo1 variants and HSPC300 levels in the immunoprecipitates. Error bars represent SEM. Number of trials, n = 5. Significance was assessed using Student’s t-test. Normalized values for the co-immunoprecipitation data are provided in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of Drosophila Robo1 and Robo2 receptors. Both Robo1 and Robo2 have a WIRS motif between CC0 and CC1 but Robo2 lacks the CC2 and CC3 motifs that are present in Robo1. (B) Drosophila S2R+ cell lysates co-expressing HSPC300-GFP with either wild-type Robo2-MYC or Robo2ΔWIRS -MYC were immunoprecipitated with an anti-GFP antibody. The first three lanes show the individual proteins expressed alone. The fourth lane shows wild-type Robo2 co-immunoprecipitating with HSPC300 while the fifth lane shows that mutating the WIRS motif completely abolishes this binding. (C) Quantitative representations of band intensities of the MYC-tagged Robo2 variants in the immunoprecipitates normalized to wild-type Robo2-MYC. Data were normalized to lysate levels of the Robo2 variants and HSPC300 levels in the immunoprecipitates. Error bars represent SEM. Number of trials, n = 2. Significance was assessed using Student’s t-test. (D) Western blotting of proteins harvested from the media of Drosophila S2R+ cells transfected with or without a Slit construct with an anti-Slit antibody reveals low levels of Slit in mock conditioned media.
 
 Next, we wanted to test whether the Robo1-WRC interaction is regulated by the Robo ligand Slit. We treated S2R+ cells with bath application of Slit-conditioned media (Slit-CM) and found a substantial increase in the interaction between Robo1 and HSPC300 as compared to cells treated with mock-CM (Figure 3D, F). By contrast, Robo1ΔWIRS shows no significant increase in binding to HSPC300 upon Slit-CM treatment. As there is significant variability in the activity of Slit-CM with each preparation, we see different levels of enhancement in binding obtained with each Slit treatment. Nevertheless, Slit application consistently increases the interaction between Robo1 and HSPC300. These results suggest that upon Slit binding the WRC is recruited to Robo1 via its WIRS motif.
 
 Finally, to test whether this interaction occurs in vivo, we performed co-immunoprecipitation assays using Drosophila embryonic protein lysates. We generated transgenic flies using the GFP-tagged HSPC300 construct and HA-tagged Robo1 constructs. The pan-neuronal elav-Gal4 driver was used to drive expression of UAS-HSPC300-GFP either alone or with the wild-type UAS-HA-Robo1 or UAS-HA-Robo1ΔWIRS transgenes in Drosophila embryos. While wild-type Robo1 co-immunoprecipitates with HSPC300, mutating the WIRS motif results in a significant decrease in this binding (Figure 3G, H). These results indicate that Robo1 interacts with the WRC in vivo as well and that this interaction is partly dependent on the WIRS motif.
 
-## The WIRS motif is essential for Robo1 function in vivo
+### The WIRS motif is essential for Robo1 function in vivo
 
 To test whether this interaction with the WRC is required for Robo1 function in vivo, we compared the gain-of-function and rescue phenotypes of wild-type Robo1 and Robo1ΔWIRS in specific neuronal subsets in the Drosophila ventral nerve cord. We generated transgenic flies with wild-type UAS-Robo1 or UAS-Robo1ΔWIRS constructs. Both the transgenes are tagged with an HA epitope and inserted into the same genomic locus. Immunostaining for HA shows that both transgenes are expressed at comparable levels (Figure 4D, E). Using the eg-Gal4 driver, we expressed these transgenes in eagle neurons, a subset of commissural neurons. Eagle neurons, visualized here using a GFP reporter, consist of two populations: the EG population, which extends its axons in the anterior commissure of a segment, and the EW population, which extends axons in the posterior commissure (Figure 4A). Overexpression of wild-type Robo1 in these neurons causes ectopic repulsion from the midline, resulting in a strong gain-of-function phenotype where almost all EW axons fail to cross the midline (Figure 4B). In contrast, overexpression of Robo1ΔWIRS results in a significantly weaker gain-of-function phenotype where EW axons in approximately 70% of segments fail to cross the midline (Figure 4C, F). Thus, mutating the WRC interaction site on Robo1 hampers its ability to induce ectopic repulsion in vivo.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Stage 16 Drosophila embryos carrying egGal4 and UAS-TauMycGFP transgenes stained with anti-GFP, which labels cell bodies and axons of the eagle neurons (EG and EW). EG neurons project through the anterior commissure of each segment while EW neurons project through the posterior commissure. (A) EW neurons cross in 100% of segments in wild-type embryos. (B) Misexpression of wild-type HA-tagged Robo1 in eagle neurons results in a strong disruption of midline crossing where EW axons fail to cross in almost all segments of the nerve cord (93%; asterisk). (C) Misexpressing HA-tagged Robo1ΔWIRS results in a significantly milder disruption with fewer segments showing EW non-crossing defects (71%). (D, E) Embryos stained with anti-HA show comparable expression of the HA-tagged Robo1 variants that were inserted into the same genomic locus. (F) Quantitation shows the percentage of segments in which EW axons fail to cross the midline. Data are presented as mean ± SEM, number of embryos, n = 17, 13, 23. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (G–J) Stage 17 embryos stained with anti-FasII and anti-HRP. (G) Wild-type embryos show no ectopic FasII crossing defects and no phenotype in HRP. (H) Robo mutants show severe ectopic FasII crossing defects in 100% of segments (arrowheads) and a strong HRP phenotype with thickening and fusion of commissures (asterisk). (I) Pan-neuronal expression of wild-type 5XUAS-Robo1 significantly rescues the robo mutant phenotype in FasII (to 25%) as well as HRP; however, (J) 5XUAS-Robo1ΔWIRS fails to rescue the robo mutant phenotype as efficiently as wild-type Robo1 with frequent ectopic crossing in FasII (71%) and thickened commissures in HRP still evident in these embryos. (K) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 11, 14, 15. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. Scale bars in (A) and (G) represent 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Stage 17 embryos stained with anti-FasII. (A) Wild-type embryos show no phenotype in FasII. (B) Robo mutants show severe ectopic FasII crossing defects in 100% of segments (arrowheads). (C) Pan-neuronal expression of wild-type 10xUAS-Robo1 completely rescues the robo mutant phenotype in FasII. (D) Pan-neuronal expression of 10xUAS-Robo1ΔWIRS results in a mildly weaker rescue with a small number of FasII bundles still crossing the midline. (E) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 14, 11, 16, 18. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (F–I) Stage 17 embryos stained with anti-HRP. (F) Wild-type embryos show no phenotype in HRP. (G) Robo mutants show a strong HRP phenotype with thickening and fusion of commissures (asterisk). (H) Pan-neuronal expression of wild-type 10xUAS-Robo1 gives the opposite phenotype with strong ectopic repulsion of commissural axons resulting in segments with a complete absence of commissures (arrows). (I) In contrast, pan-neuronal expression of 10xUAS-Robo1ΔWIRS shows a significantly reduced ability to induce ectopic repulsion in commissural axons, resulting in much fewer segments with missing commissures. (J) Quantitation shows the percentage of segments with missing commissures. Data are presented as mean ± SEM, number of embryos, n = 16, 18. Significance was assessed using Student’s t-test. Scale bar in (A) represents 20 µm.
+
 Next, we assessed the ability of Robo1ΔWIRS to rescue the ectopic crossing defects of FasII-positive axons seen in robo1 mutant embryos. Unlike in wild-type embryos, where FasII axons never cross the midline (Figure 4G), in robo1 mutants, axons in the medial most fascicle freely cross and recross the midline in 100% of segments (Figure 4H). Re-expressing wild-type Robo1 with the pan-neuronal driver elav-Gal4 restores the ipsilateral projection pattern in most of the segments, lowering the frequency of ectopic crossing to 25% of segments (Figure 4I). In contrast, re-expression of Robo1ΔWIRS fails to rescue the crossing defects in 70% of segments (Figure 4J, K). This indicates that in the absence of a functional WIRS motif Robo1 is not nearly as effective at restoring repulsive signaling in ipsilateral axons in vivo. Altogether, these results suggest a role for the WIRS motif in Robo1 repulsive signaling at the midline.
 
-## Mutating the endogenous WIRS motif disrupts Robo1 function in vivo
+### Mutating the endogenous WIRS motif disrupts Robo1 function in vivo
 
 Our in vivo results obtained so far have relied on misexpression or overexpression of Robo1 that likely is not subject to the adequate spatial and temporal regulation that is critical for guidance receptor function. Further, such unregulated high levels of Robo1 expression on the cell surface could potentially mask dysfunction in receptor activity. We see this especially for the rescue experiments with our UAS-Robo1 transgenes. While the difference in rescue activity between 5XUAS-Robo1 and 5XUAS-Robo1ΔWIRS is around 50% (Figure 4K), performing this rescue assay with 10XUAS-Robo1 and 10XUAS-Robo1ΔWIRS transgenes, which have double the number of UAS enhancer sites and express much higher levels of the Robo1 variants, gives a much more modest difference of 13% (Figure 4—figure supplement 1A–E). Indeed, in rescue experiments using 10XUAS-Robo1 transgenes, we see strong gain-of-function effects that lead to both rescue of abnormal crossing of FasII-positive axons, as well as ectopic repulsion of commissural axons (Figure 4—figure supplement 1F–J). Notably, the ectopic repulsion of commissural axons induced by the 10XUAS-Robo1ΔWIRS transgene is significantly weaker than the ectopic repulsion induced by the wild-type receptor (Figure 4—figure supplement 1H–J). Given these caveats, we sought to analyze the function of the WIRS motif in Robo1 signaling in a more endogenous context. First, we performed a rescue assay with an HA-tagged genomic rescue construct of robo1 that contains upstream and downstream regulatory regions of Robo1 in addition to the Robo1 coding sequence (Brown et al., 2015). Transgenics created with this construct show a Robo1 expression pattern that closely resembles that of endogenous Robo1 (Brown et al., 2015). We mutated the WIRS motif in this robo1 genomic rescue construct and inserted the transgene into the same genomic site as the wild-type construct. Both transgenes show comparable levels of Robo1 expression upon HA immunostaining (Figure 5—figure supplement 1A, B). We tested the ability of these transgenes to rescue the robo1 mutant phenotype in FasII-positive axons (Figure 5B). One copy of the wild-type robo1 genomic rescue construct (genRobo) was able to rescue ectopic crossing of FasII-positive axons in almost all segments with only 6% still showing defects (Figure 5C) while robo1ΔWIRS genomic rescue construct (genRoboΔWIRS) was unable to rescue ectopic crossing defects in over 70% of segments (Figure 5D, E). Similarly, for HRP stained axons, the frequent thickening and fusion of the anterior and posterior commissures in robo1 mutants (Figure 5B) can be rescued with the wild-type genRobo but not with genRoboΔWIRS (Figure 5C, D). These results, in more physiologically relevant contexts, demonstrate a marked decline in Robo1 function upon disruption of the WRC binding site.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) Stage 17 embryos stained with anti-FasII and anti-HRP. (A) Wild-type embryos showing no phenotype in FasII or HRP. (B) Robo mutants show severe ectopic FasII crossing defects in 100% of segments (arrowheads) and a strong HRP phenotype with thickening and fusion of commissures (asterisk). (C) The strong FasII and HRP phenotypes seen in robo mutant embryos can be completely rescued with one copy of a wild-type genomic Robo1 rescue construct (genRobo) that contains additional upstream and downstream regulatory regions of robo1, more closely mimicking the endogenous Robo1 expression pattern (8%). (D) In contrast, the genomic Robo1 rescue construct containing mutations in the WIRS motif of Robo1 (genRoboΔWIRS) fails to rescue the robo mutant phenotype in both FasII (77%) and HRP. (E) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 14, 11, 16, 16. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (F, G) Stage 17 embryos stained with anti-FasII and anti-HRP. (F) CRISPR embryos with mutations in the endogenous WIRS motif of robo1 show severe phenotypes in FasII and HRP bearing strong resemblance to robo mutants. (G) The phenotypes seen in these CRISPR roboΔWIRS embryos can be completely rescued with one copy of the wild-type genomic Robo1 rescue construct (8%). (H) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 14, 11, 14, 20. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. Scale bars in (A) and (F) represent 20 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Stage 17 embryo expressing the genomic HA-tagged Roundabout (Robo) rescue transgene stained with anti-HA and anti-HRP. The HA expression pattern closely resembles that of endogenous Robo. (B) Stage 17 embryo expressing the genomic HA-tagged RoboΔWIRS rescue transgene shows comparable HA staining to wild-type genomic HA-tagged Robo.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Schematic for CRSIPR-Cas9 mutagenesis of the WRC-interacting receptor sequence (WIRS) motif in the endogenous robo1 locus. Four amino acids in the WIRS motif were mutated, and deletion of the small intron 16 occurred during mutagenesis. (B–D) Stage 14 embryos stained with anti-Robo1 and anti-HRP. (E–G) Stage 17 embryos stained with anti-Robo1 and anti-HRP. (B, E) Wild-type embryos show Robo1 staining enriched in the longitudinal tracts and no HRP phenotype. (C, F) robo mutant embryos show a complete loss of Robo1 staining along with a strong loss-of-repulsion phenotype in HRP with thickening and fusion of commissures (asterisk). (D, G) In contrast, CRISPR roboΔWIRS embryos show a strong loss-of-repulsion phenotype in HRP but strong Robo1 staining on longitudinal tracts as well as on commissures, demonstrating that the phenotype is not due to loss of protein production. Scale bar in (A) represents 20 µm.
+
 Finally, using the CRISPR-Cas9 system, we mutated the WIRS motif in the endogenous robo1 locus. We used a single-guide RNA that targets the endogenous WIRS motif and a single-stranded oligonucleotide template to introduce point mutations in the WIRS motif (Figure 5—figure supplement 2A). We sequenced the regions surrounding the WIRS motif to verify that we had successfully mutated the WIRS motif without introducing any unwanted frameshift mutations or deletions. While we found no frameshifts, we did notice that our strategy had resulted in an unexplained loss of the smaller intron 16 (Figure 5—figure supplement 2A). Since the genRobo constructs and the previously used robo swap alleles (Spitzweck et al., 2010) that can restore Robo1 function fully do not contain any intronic sequences, we believe that it is extremely unlikely that the loss of this intron affects Robo1 function. Next, we analyzed the phenotypes of both HRP and FasII-positive axons in these roboΔWIRS CRISPR embryos. We see a surprisingly strong ectopic crossing phenotype in these embryos with defects in almost 100% of segments, showing that they fully phenocopy the robo mutant embryos (Figure 5B, F). We were able to achieve a near perfect rescue with the introduction of one copy of genRobo, indicating that this phenotype is not a result of any off-target effects arising from Cas9-mediated cleavage (Figure 5G, H). This result also supports our interpretation that the loss of intron 16 in our CRISPR allele has no effect on Robo1 function since the genRobo construct does not include any introns. As an additional control, we also tested whether the roboΔWIRS CRISPR mutations disrupt normal Robo1 expression. To investigate this, we immunostained for Robo1 expression using a monoclonal Robo1 antibody. Unlike the robo mutants in which no Robo1 protein can be detected (Figure 5—figure supplement 2C, F), we see substantial Robo1 staining in the roboΔWIRS CRISPR mutants, suggesting that the phenotype is not due to a failure in protein production (Figure 5—figure supplement 2D, G). Unlike in wild-type embryos where Robo1 expression is seen primarily on longitudinal tracts and is downregulated on commissures (Figure 5—figure supplement 2B, E), in the roboΔWIRS CRISPR mutant embryos, we see Robo1 also being expressed on commissures (Figure 5—figure supplement 2D, G). While interesting, this observation is not necessarily surprising to us as this altered Robo1 localization on commissures has also been noted in previous studies when Robo1 signaling is disrupted (Coleman et al., 2010). Altogether, our genomic Robo rescue assays and roboΔWIRS CRISPR mutant phenotypes strongly suggest an important role for the WIRS motif in Robo1 repulsive function in vivo.
 
-## The Arp2/3 complex interacts genetically and physically with the Slit-Robo pathway
+### The Arp2/3 complex interacts genetically and physically with the Slit-Robo pathway
 
 We have shown that the WRC is an important component of the Slit-Robo1 repulsive pathway at the midline. But what happens after the WRC is recruited to Robo1? Is the WRC acting via Arp2/3 to promote branched actin polymerization downstream of Robo1? To address this question, we tested for genetic interactions between arpc2, a member of the Arp2/3 complex and the Slit-Robo pathway. Similar to members of the WRC, arpc2 mutants alone have no ectopic crossing phenotype in FasII axons; however, when introduced into the slit, robo/+ sensitized background, arpc2 homozygous mutants show a significant enhancement of the ectopic FasII crossing defects (Figure 6A–C), suggesting that the Arp2/3 complex functions in the Slit-Robo repulsive pathway. Additionally, when we remove one copy of arpc2 together with one copy of cyfip, we again observe a significant enhancement of the slit, robo/+ ectopic crossing defects (Figure 6—figure supplement 1A–C). This genetic interaction between arpc2 and cyfip suggests a cooperative effect of the WRC and Arp2/3 in the Slit-Robo1 signaling pathway at the midline. Next, we overexpressed Robo1 in eagle neurons, which results in a strong gain-of-function phenotype where almost all EW neurons fail to cross the midline. In contrast, overexpressing Robo1 in arpc2 mutants results in a small but significant suppression of this phenotype (Figure 6—figure supplement 1D–F) that is similar to the suppression seen in cyfip mutants (Figure 6—figure supplement 1G–I), demonstrating a reduction in Robo1’s ability to induce ectopic repulsion. Together, these genetic data strongly suggest that the Arp2/3 complex functions in the Slit-Robo1 repulsive pathway.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig6-v2.jpg)
+
+**Figure 6.:** (A, B) Stage 17 Drosophila embryos stained with anti-FasII and anti-HRP. (A) Slit, robo transheterozygous embryos show a mild loss-of-repulsion phenotype with ectopic FasII crossing in 31% of nerve cord segments (arrowheads). (B) Arpc2 homozygous mutants that are simultaneously heterozygous for slit and robo show ectopic FasII crossing in significantly more segments of the nerve cord (55%). (C) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 15 and 20. Significance was assessed using Student’s t-test. Scale bar in (A) represents 20 µm. (D) Drosophila S2R+ cell lysates co-expressing Arp3-GFP with either wild-type Robo1-MYC or Robo1ΔWIRS-MYC were immunoprecipitated with an anti-GFP antibody. The first two lanes show the individual Robo1 variants expressed alone. The third lane shows wild-type Robo1 co-immunoprecipitating with Arp3 while the fourth lane shows that mutating the WIRS motif decreases this binding. Asterisk indicates non-specific bands. (F) Cell lysates were immunoprecipitated with anti-GFP following a 12 min bath application of mock conditioned media or conditioned media obtained from Slit-expressing cells. The interaction between wild-type Robo1 and Arp3 is increased in the presence of Slit; however, no significant increase is noted with Robo1ΔWIRS. (E, G) Quantitation of band intensities of the MYC-tagged Robo1 variants in the immunoprecipitates normalized to wild-type Robo1-MYC. Data were normalized to lysate levels of the Robo1 variants and Arp3 levels in the immunoprecipitates. Error bars represent SEM. Number of trials, n = 7. Significance was assessed using Student’s t-test (for E) and one-way ANOVA with Tukey’s multiple comparisons test (for G). Normalized values for the co-immunoprecipitation data are provided in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Stage 17 embryos stained with anti-FasII and anti-HRP. (A) Double heterozygous slit, robo embryos show a mild loss-of-repulsion phenotype with ectopic FasII crossing in 22% of nerve cord segments (arrowheads). (B) Removing one copy of arpc2 and one copy of cyfip in embryos that are simultaneously heterozygous for slit and robo show ectopic FasII crossing in significantly more segments of the nerve cord (47%). (C) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline. Data are presented as mean ± SEM, number of embryos, n = 27, 13, 13, 15. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (D, E, G, H) Stage 16 Drosophila embryos carrying egGal4 and UAS-TauMycGFP transgenes stained with anti-GFP, which labels cell bodies and axons of the eagle neurons. (D, G) Misexpression of wild-type HA-tagged Robo1 in eagle neurons results in a strong disruption of midline crossing where EW axons fail to cross in almost all segments of the nerve cord (93%; asterisk). (E) In contrast, overexpressing Robo1 in arpc2 mutants results in a small but significant suppression of this phenotype with fewer segments showing EW non-crossing defects (81%). (H) Similarly, overexpressing Robo1 in cyfip mutants results in a similar suppression of this phenotype (83%). (F, I) Quantitation shows the percentage of segments in which EW axons fail to cross the midline. Data are presented as mean ± SEM, number of embryos, n = 13, 19 (for F) and 13, 15 (for I). Significance was assessed using Student’s t-test. (J) Quantitation shows the percentage of segments in which FasII axons ectopically cross the midline for fmr1mutants in a slit, robo sensitized background. Removing one or both copies of fmr1 has no effect on the slit, robo ectopic FasII crossing phenotype. Data are presented as mean ± SEM, number of embryos, n = 27, 10, 13. Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. Scale bars in (A), (E), and (H) represent 20 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Drosophila embryos expressing genomic HA-tagged Roundabout (Robo) rescue transgenes stained for surface HA and HRP. Embryos were dissected live, and surface expression of Robo was visualized by staining the N-terminal HA tag before fixation and permeabilization. (B) Quantitation of surface Robo represented as mean fluorescence intensity of HA normalized to HRP shows no difference in surface expression of wild-type Robo and RoboΔWIRS. Data are presented as mean ± SEM, number of embryos, n = 5 and 8. Significance was assessed using Student’s t-test. Scale bars represent 5 mm in (A) and 20 mm in (C). (C) E12 dorsal commissural neurons electroporated either with MYC-tagged hRobo1 or with MYC-tagged hRobo1ΔWIRS. Following a 30 min treatment with Slit, surface expression of hRobo1 was visualized by staining the N-terminal MYC tag before fixation and permeabilization. (D) Quantitation of surface hRobo1 represented as mean fluorescence intensity of MYC shows no difference in surface expression of wild-type hRobo1 and hRobo1ΔWIRS. Only Robo3-positive commissural neurons were quantified for MYC intensity. Data are presented as mean ± SEM, number of neurons, n = 42 (from two independent trials). Significance was assessed using Student’s t-test.
+
 To determine whether the Arp2/3 complex can physically interact with Robo, we performed co-immunoprecipitation assays in Drosophila embryonic S2R+ cells using tagged constructs of Robo1 and Arp3, another component of the Arp2/3 complex. We found that Robo immunoprecipitated with Arp3, suggesting that the Arp2/3 complex can physically interact with Robo (Figure 6D). We reasoned that if the Arp2/3 complex was being recruited by the WRC to Robo, we would expect that mutating the WIRS motif would disrupt this interaction between Arp2/3 and Robo. Indeed, we found a significant decrease in the amount of RoboΔWIRS that immunoprecipitated with Arp3 as compared to wild-type Robo (Figure 6D, E). Furthermore, we can detect an increase in the interaction between Robo and Arp3 in the presence of Slit-CM as compared to mock-CM, suggesting that similar to the WRC, the Arp2/3 complex is also recruited to Robo in response to Slit. By contrast, RoboΔWIRS shows no significant increase in binding to Arp3 in the presence of Slit, demonstrating that the WIRS motif is important for this Slit-dependent recruitment of the Arp2/3 complex to Robo. Together, these observations support the model that upon Slit binding the WRC is recruited to the WIRS motif of Robo and activated, which is in turn responsible for the recruitment of the Arp2/3 complex to facilitate cytoskeletal remodeling downstream of Robo. One possible outcome of initiating localized actin polymerization is the endocytosis and recycling of transmembrane receptors. Indeed, both Drosophila Robo as well vertebrate Robo1 have been previously shown to undergo endocytosis following Slit stimulation (Chance and Bashaw, 2015; Kinoshita-Kawada et al., 2019). Furthermore, the WRC has been shown to play a role in initiating receptor endocytosis (Basquin et al., 2015; Xu et al., 2016). Thus, to further evaluate the mechanism of WRC function in Slit-Robo signaling, we investigated whether mutating the WIRS motif in Robo could disrupt signaling by preventing Robo endocytosis. To address this question, we tested whether RoboΔWIRS displays increased surface localization compared to wild-type Robo in both Drosophila embryonic neurons and in cultured dorsal commissural neurons from mice. First, we tested whether Drosophila embryos expressing the genomic HA-tagged Robo rescue transgenes display any difference in surface localization. We dissected embryos live and visualized surface expression of Robo by staining the N-terminal HA tag before fixation and permeabilization (Figure 6—figure supplement 2A). Surface Robo was quantified as the mean fluorescence intensity of HA normalized to HRP. We observed no significant difference in the surface expression of Robo and RoboΔWIRS (Figure 6—figure supplement 2B). We next cultured E12 mouse dorsal commissural neurons that were electroporated with either wild-type MYC-tagged human Robo1 (hRobo1) or MYC-tagged hRobo1ΔWIRS. Following a 30 min bath application with Slit, we visualized surface expression of hRobo1 by staining the N-terminal MYC tag before fixation and permeabilization (Figure 6—figure supplement 2C). Surface hRobo1 was quantified as the mean fluorescence intensity of MYC, and the analysis was limited to Robo3-positive commissural neurons. Here again, we observed no significant difference in the surface localization of hRobo1 and hRobo1ΔWIRS (Figure 6—figure supplement 2D), suggesting that the WIRS motif has no detectable effect on Robo1 surface levels. Together, these observations point to a non-endocytic role for the WRC in promoting Robo repulsion.
 
-## The WIRS motif is required for Slit-dependent repulsion in mouse spinal commissural axons
+### The WIRS motif is required for Slit-dependent repulsion in mouse spinal commissural axons
 
 The WIRS motif in the Robo1 receptor is conserved in vertebrates, raising the possibility for a potential role in vertebrate Robo1 signaling. Indeed, the cytoplasmic tail of human Robo1 can bind to the WRC via its WIRS motif (Chen et al., 2014a). Thus, to address the question of whether the WIRS motif is important for vertebrate Robo1 signaling, we introduced point mutations into the WIRS motif of hRobo1 and performed gain-of-function experiments with wild-type hRobo1 and hRobo1ΔWIRS constructs. We electroporated E12 mouse spinal cords with wild-type hRobo1 or hRobo1ΔWIRS, along with RFP as a reporter for efficiency of electroporation and cultured dorsal spinal cord explants next to mock 293 T cell aggregates or cell aggregates expressing Slit (Figure 7A). We observe poor penetration of the anti-MYC antibody in explants and hence use RFP as a measure of electroporation efficiency. We observe comparable levels of RFP staining in explants (Figure 7—figure supplement 1A). Explants cultured adjacent to mock cell aggregates show uniform outgrowth on all sides of the explant (Figure 7B). In contrast, explants cultured adjacent to Slit-expressing aggregates show decreased outgrowth on the side proximal to the Slit-expressing aggregate as compared to the distal side (Figure 7C). Explants electroporated with wild-type hRobo1 show an increased repulsive response to Slit with even less outgrowth on the proximal side and a significantly lower proximal/distal outgrowth ratio (Figure 7D, F). In contrast, explants electroporated with hRobo1ΔWIRS show no such gain-of-function response to Slit and have a proximal/distal outgrowth ratio similar to that seen for RFP electroporated explants (Figure 7E, F), suggesting that the WIRS motif is important for the Slit-induced repulsive response of vertebrate Robo1. Next, to assess whether the WIRS motif is also important for the collapsing activity of Robo1 in response to Slit, we performed Slit-induced collapse assays using dissociated E12 mouse dorsal spinal commissural neurons (Figure 7G, H). In our control cultures, 38% of Robo3-positive commissural axons show collapsed growth cones (Figure 7I). Following a 30 min treatment with recombinant Slit2, we see an increase in the collapse rate to 62%. Neurons electroporated with wild-type MYC-tagged hRobo1 show a further increase in collapse rate with 77% of Robo3- and MYC-positive axons ending in collapsed growth cones. In contrast, we saw no increase in the number of collapsed growth cones in neurons electroporated with MYC-tagged hRobo1ΔWIRS (Figure 7I), suggesting that the WIRS motif is also important for the Slit-induced collapsing activity of Robo1. The hRobo1 variants show comparable levels of MYC staining in neurons (Figure 7—figure supplement 1B, C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic of electroporation and culture of spinal cord explants. Dotted lines show cut sites to obtain dorsal spinal cord explants. The image on the right depicts the arrangement of explants cultured around a 293 T cell aggregate (control or Slit-expressing) embedded in collagen. (B–E) E12 dorsal spinal cord explants labeled with anti-tubulin to visualize axon outgrowth. Dotted lines indicate the position of the cell aggregate. (B) RFP electroporated explant cultured next to a mock cell aggregate shows uniform outgrowth on all sides of the explant. (C) RFP electroporated explant cultured next to a Slit-expressing cell aggregate shows decreased outgrowth on the quadrant proximal to the aggregate as compared to the quadrant distal to it (0.47). (D) Explant electroporated with wild-type hRobo1 cultured next to a Slit-expressing cell aggregate shows even less outgrowth on the proximal quadrant demonstrating increased responsiveness to Slit (0.14). (E) Explant electroporated with hRobo1ΔWIRS cultured next to a Slit-expressing cell aggregate shows no such increase in Slit responsiveness as the proximal: distal outgrowth ratio is similar to that seen for RFP electroporated explants (0.54). (F) Quantification shows the proximal:distal outgrowth ratio for explants cultured next to control cell aggregates (white) and Slit-expressing cell aggregates (gray). Data are presented as mean ± SEM, number of explants, n = 29, 39, 33, 39, 29, 41 (from three independent experiments). Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (G, H) Growth cone collapse in response to Slit in E12-dissociated commissural axons. Growth cone morphology was examined by staining for the commissural marker Robo3. (I) Quantification shows percentage of axons with collapsed growth cones. Unelectroporated neurons show an increased level of collapse when treated with Slit (from 38% without Slit to 62% with bath application of Slit). Neurons electroporated with wild-type hRobo1 show a gain-of-function response to Slit with an even higher collapse level (77%). In contrast, neurons electroporated with hRobo1ΔWIRS show no gain-of-function and a collapse level similar to unelectroporated neurons (52%). For neurons electroporated with the MYC-tagged hRobo1 variants, only Robo3- and MYC-positive axons were analyzed. Data are presented as mean ± SEM, number of trials, n = 3 (over 30 neurons for each condition/trial). Significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. Scale bars represent 100 µm in (B) and 5 µm in (G).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64474/elife-64474-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) E12 dorsal spinal cord explants electroporated with RFP and either MYC-tagged hRobo1 or with MYC-tagged hRobo1ΔWIRS show comparable levels of RFP staining across explants. (B) E12 dorsal commissural neurons electroporated either with MYC-tagged hRobo1 or with MYC-tagged hRobo1ΔWIRS stained with anti-MYC. (C) Quantitation of total levels of hRobo1 represented as mean fluorescence intensity of MYC shows comparable expression levels of wild-type hRobo1 and hRobo1ΔWIRS in dissociated neurons. Only Robo3-positive commissural neurons were quantified for MYC intensity. Data are presented as mean ± SEM, number of neurons, n = 20 (from two independent trials). Significance was assessed using Student’s t-test. Scale bars represent 100 µm in (A) and 5 µm in (B).
 
 To study the function of the Robo1 WIRS motif in an in vivo context, we examined its role in commissural axon guidance in the embryonic chicken spinal cord. We reasoned that unilateral expression of Robo1 in pre-crossing commissural neurons would prevent their axons from crossing the floor plate by inducing a premature responsiveness to midline-secreted Slits (Brose et al., 1999; Long et al., 2004). To do this, we used in ovo electroporation to introduce a GFP expression plasmid either alone (Control) or with MYC-tagged wild-type human Robo1 or human Robo1ΔWIRS expression constructs into pre-crossing commissural neurons at Hamburger–Hamilton (HH) stage 14 (Hamburger and Hamilton, 1951). At HH stage 22–23, a ‘crossing index’ was calculated by measuring GFP and MYC signal in the contralateral side of the spinal cord as a fraction of GFP and MYC signal on the electroporated side (Figure 8D). We found that ectopic expression of wild-type Robo1 and GFP resulted in a GFP crossing index of 0.21 ± 0.13% (mean ± SD, n = 6), which was significantly less than that of GFP alone (Control), with a crossing index of 1.8 ± 1.1% (n = 6, p=0.004), indicating that Robo1 expression was sufficient to block commissural crossing (Figure 8A, B, E). Robo1ΔWIRS and GFP overexpression resulted in a GFP crossing index of 0.68 ± 0.60% (n = 8), which was not significantly different from that of wild-type Robo1 (p=0.472; Figure 8C, E). However, quantification of the crossing index based on the MYC tag fused to the wild-type Robo1 and Robo1ΔWIRS constructs resulted in a significantly higher MYC crossing index of Robo1ΔWIRS-expressing neurons (1.7 ± 0.97%, n = 8) compared to that of wild-type Robo1-expressing neurons (0.53 ± 0.36%, n = 6, p=0.013; Figure 8F). The disparity between the effects of the WIRS mutation calculated using GFP and MYC-based quantification may reflect a greater efficiency of GFP plasmid transduction and expression compared to the Robo1 expression constructs. These data demonstrate a significant reduction in Robo1’s ability to prevent spinal commissural crossing in the absence of the WIRS motif.
 
@@ -106,37 +162,852 @@ In addition to Robo1, other Robo receptors also contain WIRS motifs in their cyt
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-3216</td>
+      <td>RRID:CVCL_0063 Authenticated via STR profiling using ATCC services</td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila melanogaster)</td>
+      <td>S2R+</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>Cat#150</td>
+      <td>RRID:CVCL_Z831 Authenticated by morphology and doubling time</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>CD-1 line</td>
+      <td>Charles River</td>
+      <td>Stock#022</td>
+      <td>RRID:IMSR_CRL:022</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: w1118</td>
+      <td>Chance and Bashaw, 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: roboGA285</td>
+      <td>Chance and Bashaw, 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: slit2</td>
+      <td>Chance and Bashaw, 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: sos4G</td>
+      <td>Yang and Bashaw, 2006</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: robo2x123</td>
+      <td>Evans and Bashaw, 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: scarΔ37</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 8754</td>
+      <td>RRID:BDSC_8754</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: arpc2KG04658</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 13978</td>
+      <td>RRID:BDSC_13978</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster:hspc300Δ54.3</td>
+      <td>Kind gift from A. Giangrande</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster:cyfipΔ85.1</td>
+      <td>Kind gift from A. Giangrande</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster:fmr13</td>
+      <td>Kind gift from T. Jongens</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster:apGal4</td>
+      <td>Evans and Bashaw, 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster:egGal4</td>
+      <td>Evans and Bashaw, 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: UAS-CD8GFP</td>
+      <td>Evans and Bashaw, 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: UAS-TauMycGFP</td>
+      <td>Evans and Bashaw, 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: 10XUAS-HA-Robo1 86 F8</td>
+      <td>Evans and Bashaw, 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: 10XUAS-HA-Robo1ΔWIRS 86 F8</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw lab; methods: genetic stocks</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: 5XUAS-HA-Robo1 86 F8</td>
+      <td>Chance and Bashaw, 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: 5XUAS-HA-Robo1ΔWIRS 86 F8</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: genetic stocks</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: UAS-CYFIP</td>
+      <td>Kind gift from A. Giangrande</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: robo1::HArobo1 28E7</td>
+      <td>Kind gift from T. Evans</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: robo1::HArobo1ΔWIRS 28E7</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw lab; methods: genetic stocks</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D. melanogaster: robo1ΔWIRS CRISPR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: genetic stocks</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pCAG-MYC-hRobo1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pCAG-MYC-hRobo1ΔWIRS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pCAG-RFP</td>
+      <td>Kind gift from A. Jaworski</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pSecTagB-hSlit2-MYC</td>
+      <td>Kind gift from A. Chedotal</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UASTattB-HA-Robo1</td>
+      <td>Evans and Bashaw, 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UASTattB-HA-Robo1ΔWIRS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UAST-HSPC300-GFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p5UASTattB-HA-Robo1</td>
+      <td>Chance and Bashaw, 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UASTattB-HA-Robo1ΔWIRS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pUAST-Slit</td>
+      <td>Chance and Bashaw, 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pMT-Gal4</td>
+      <td>Chance and Bashaw, 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: robo1 genomic rescue construct</td>
+      <td>Kind gift from T. Evans</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: robo1ΔWIRS genomic rescue construct</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pCFD3-dU6:3gRNA</td>
+      <td>Addgene</td>
+      <td>Plasmid#49410</td>
+      <td>RRID:Addgene_49410</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UASTattB-Robo1-MYC</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UASTattB-Robo1ΔWIRS-MYC</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UASTattB-Robo2-MYC</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: p10UASTattB-Robo2ΔWIRS-MYC</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available from Bashaw Lab; methods: molecular biology</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-MYC</td>
+      <td>DSHB</td>
+      <td>Cat#9E10-C</td>
+      <td>IF (1:500), WB (1:1000), RRID:AB_2266850</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA</td>
+      <td>BioLegend</td>
+      <td>Cat#901502</td>
+      <td>IF (1:500), WB (1:1000), RRID:AB_2565007</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-beta tubulin</td>
+      <td>DSHB</td>
+      <td>Cat#E7-S</td>
+      <td>IF (1:300), WB (1:1000), RRID:AB_528499</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chick polyclonal anti-beta gal</td>
+      <td>Abcam</td>
+      <td>Cat#ab9361</td>
+      <td>IF (1:500), RRID:AB_307210</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Fasciclin II</td>
+      <td>DSHB</td>
+      <td>1D4</td>
+      <td>IF (1:50), RRID:AB_528235</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Invitrogen</td>
+      <td>Cat#a11122</td>
+      <td>IF (1:250), WB (1:500), IP (1:500), RRID:AB_221569</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-dsRed</td>
+      <td>Takara</td>
+      <td>Cat#632496</td>
+      <td>IF (1:200), RRID:AB_10013483</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Scar (supernatant)</td>
+      <td>DSHB</td>
+      <td>Cat#P1C1</td>
+      <td>IF (1:50), RRID:AB_2618386</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Robo (supernatant)</td>
+      <td>DSHB</td>
+      <td>Cat#13C9</td>
+      <td>IF (1:50), RRID:AB_2181861</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Slit (supernatant)</td>
+      <td>DSHB</td>
+      <td>Cat#C555.6D</td>
+      <td>WB (1:100), RRID:AB_528470</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Robo3</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#AF3076</td>
+      <td>IF (1:200), RRID:AB_2181865</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa647 Goat polyclonal anti-HRP</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#123-605-021</td>
+      <td>IF (1:500), RRID:AB_2338967</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Mouse HRP</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#115-035-146</td>
+      <td>WB (1:10,000), RRID:AB_2307392</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Rabbit HRP</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#111-035-003</td>
+      <td>WB (1:10,000), RRID:AB_2313567</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>488 Donkey polyclonal anti-Mouse</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#715-545-150</td>
+      <td>IF (1:500), RRID:AB_2340846</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>488 Donkey polyclonal anti-Goat</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#705-165-147</td>
+      <td>IF (1:500), RRID:AB_2307351</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa488 Goat polyclonal anti-Rabbit</td>
+      <td>Invitrogen</td>
+      <td>Cat#A11034</td>
+      <td>IF (1:500), RRID:AB_2576217</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa488 Goat polyclonal anti-Mouse</td>
+      <td>Invitrogen</td>
+      <td>Cat#A11029</td>
+      <td>IF (1:500), RRID:AB_138404</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa488 Goat polyclonal anti-Chick</td>
+      <td>Invitrogen</td>
+      <td>Cat#A11039</td>
+      <td>IF (1:500), RRID:AB_142924</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 Goat polyclonal anti-Mouse</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#115-165-003</td>
+      <td>IF (1:500), RRID:AB_2338680</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 Goat polyclonal anti-Rabbit</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#111-165-003</td>
+      <td>IF (1:500), RRID:AB_2338000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 Goat polyclonal anti-Chick</td>
+      <td>Abcam</td>
+      <td>Cat#ab97145</td>
+      <td>IF (1:500), RRID:AB_10679516</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Poly-D-lysine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#P6407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>N-Cadherin</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#1388-NC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Netrin-1</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#1109-N1/CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Slit2N</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#5444-SL-050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#BP366-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#BP214-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#BP299-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L15 media</td>
+      <td>Gibco</td>
+      <td>Cat#11415-064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Horse serum</td>
+      <td>Gibco</td>
+      <td>Cat#16050122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fastgreen dye</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#F99-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Opti-MEM</td>
+      <td>Gibco</td>
+      <td>Cat#31985-070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>F12</td>
+      <td>Gibco</td>
+      <td>Cat#11765-054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#D16-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>100x Pen/Strep/Glutamine</td>
+      <td>Gibco</td>
+      <td>Cat#10378-016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HBSS</td>
+      <td>Gibco</td>
+      <td>Cat#14175-079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin</td>
+      <td>Gibco</td>
+      <td>Cat#25300054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNAse I</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0303L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgSO4</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#7487-88-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobasal</td>
+      <td>Gibco</td>
+      <td>Cat#21103-049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>Gibco</td>
+      <td>Cat#10437-028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-27</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A3582801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Effectene Transfection Reagent</td>
+      <td>Qiagen</td>
+      <td>Cat#301425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rat Tail Collagen</td>
+      <td>Corning</td>
+      <td>Cat#354249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde 16% solution, EM grade</td>
+      <td>Electron Microscopy Services</td>
+      <td>Cat#15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amicon Ultracel 30K filters</td>
+      <td>Millipore</td>
+      <td>Cat#UFC903096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Drosophila Schneider’s Media</td>
+      <td>Life Technologies</td>
+      <td>Cat#21720024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Surfact-AMPS NP40</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#85124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor (Complete)</td>
+      <td>Roche</td>
+      <td>Cat#11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2x Laemmli Sample Buffer</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1610737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4x Laemmli Sample Buffer</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1610747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clarity Western ECL Substrate</td>
+      <td>Bio-Rad</td>
+      <td>Cat#1705061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NotI</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R3189S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XbaI</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R0145S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BglII</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R0144S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XhoI</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R0146S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BbsI</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R3539S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MfeI</td>
+      <td>New England Biolabs</td>
+      <td>Cat#R3589S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Roche Diagnostics</td>
+      <td>Cat#03115828001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protein A Agarose beads</td>
+      <td>Invitrogen</td>
+      <td>Cat#15918-014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rProteinG Agarose beads</td>
+      <td>Invitrogen</td>
+      <td>Cat#15920–010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quikchange II site-directed mutagenesis kit</td>
+      <td>Agilent</td>
+      <td>Cat#200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J Fiji</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>RRID:SCR_002285</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+      <td>RRID:SCR_014199</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bio-Rad Image Lab</td>
+      <td>Bio-Rad</td>
+      <td>http://www.bio-rad.com/zh-cn/product/image-lab-software</td>
+      <td>RRID:SCR_014210</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>GraphPad software</td>
+      <td>https://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChemiDoc Imaging System</td>
+      <td>Bio-Rad</td>
+      <td>Cat#171001401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity Software</td>
+      <td>Perkin Elmer</td>
+      <td>http://cellularimaging.perkinelmer.com/downloads/</td>
+      <td>RRID:SCR_002668</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BTX Electroporator</td>
+      <td>BTX Harvard Apparatus</td>
+      <td>Cat#45-0662</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nikon Ti-U microscope</td>
+      <td>Nikon</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to the lead contact, Greg J. Bashaw (gbashaw@pennmedicine.upenn.edu).
 
-## Genetic stocks
+### Genetic stocks
 
 The following Drosophila strains were used: w1118, roboGA285, slit2, sos4G, robo2x123, scarΔ37, arpc2KG04658, apGal4, egGal4, UAS-CD8GFP II, UAS-TauMycGFP III, 10XUAS-HA-Robo1 86F8, and 5XUAS-HA-Robo1 86F8. Fly strains hspc300Δ54.3, cyfipΔ85.1, and UAS-CYFIP were a kind gift from A. Giangrande. The fmr13 strain was a kind gift from T. Jongens. The genomic robo1 rescue strain robo1::HArobo1 28E7 was a kind gift from T. Evans. The following transgenic stocks were generated: 10UAS-HA-RoboΔWIRS 86F8, 5UAS-HA-RoboΔWIRS 86F8, robo1::HArobo1ΔWIRS 28E7, 10UAS-HSPC300-GFP 86F8. Transgenic flies were generated by BestGene Inc (Chino Hills, CA) using ΦC31-directed site-specific integration into landing sites at cytological position 86F8 (For UAS-Robo constructs) or 28E7 (for genomic robo1 rescue constructs). Genomic robo1::HArobo1ΔWIRS 28E7 rescue transgene was introduced onto a roboGA285 chromosome via meiotic recombination, and the presence of theroboGA285 mutation was confirmed in all recombinant lines by DNA sequencing. The CRISPR line robo1ΔWIRS was generated by cloning a guide targeting the WIRS motif into a pCFD3-dU6:3 backbone (Addgene, #49410) and sending positive clones to BestGene Inc for injection. Flies were screened by PCR and restriction digest followed by DNA sequencing. All crosses were carried out at 25°C.
 
-## Mice
+### Mice
 
 Timed pregnant female CD-1 mice were obtained from Charles River. All animal work was approved by the Institutional Animal Care and Use Committee (IACUC) of the University of Pennsylvania. Embryos of both sexes were randomly used for spinal cord explants and primary dissociated neuron cultures.
 
-## Chicken
+### Chicken
 
 All animal experiments were carried out in accordance with the Canadian Council on Animal Care guidelines and approved by the IRCM Animal Care Committee and the McGill University Animal Care Committee. Fertilized chicken eggs (FERME GMS, Saint-Liboire, QC, Canada) were incubated (Lyon Technologies, model PRFWD) at 39°C according to standard protocols.
 
-## Dissociated commissural neuron culture
+### Dissociated commissural neuron culture
 
 Primary commissural neuron cultures were prepared as described previously (Langlois 2010) and maintained at 5% CO2 in a humidified incubator. Briefly, commissural neurons were isolated from E12.5 dorsal spinal cords and plated on acid-washed, poly-D-lysine (Sigma, #P6407) and 2 μg/ml N-cadherin (R&D, #1388-NC) coated coverslips. Neurons were cultured in Neurobasal medium supplemented with 10% heat-inactivated FBS (Gibco, #10437-028) and 1X penicillin/streptomycin/glutamine (Gibco, #10378-016). After ~20 hr, the medium was replaced with Neurobasal supplemented with 1X B-27 (Thermo, #A3582801) and the neurons were used for experiments 1 hr later.
 
-## Explant culture
+### Explant culture
 
 Dorsal spinal cord explants from E12.5 embryos were dissected and cultured in collagen gels as described previously (Serafini 1994). Briefly, explants were cultured in 50% OptiMEM (Gibco, #31985-070) and 45% Ham’s F-12 (Gibco, #11765-054) media supplemented with 5% horse serum (HS, Gibco, #16050122), 0.75% glucose (Thermo, #D16-500), and 1X penicillin/streptomycin/glutamine for 48 hr with 500 ng/ml Netrin-1 (R&D, #1109-N1/CF).
 
-## Cell culture
+### Cell culture
 
 Drosophila S2R+ cells (DGRC, Cat#150) were maintained at 25°C in Schneider’s media (Life Technologies, #21720024) supplemented with 10% (vol/vol) FBS and a mixture of 1% penicillin and streptomycin. Morphology and doubling time were used for validation of the cell line. The cells grow as a loose semi-adherent monolayer with a doubling time of about 40 hr. 293 T cells (ATCC CRL-3216) were maintained at 37°C and 5% CO2 in a humidified incubator in DMEM (Gibco, #11965084) supplemented with 10% (vol/vol) FBS and a mixture of 1% penicillin and streptomycin. Cells were authenticated by STR profiling using ATCC Cell Line Authentication services. Mycoplasma testing was negative for both cell lines.
 
-## Method details
+### Method details
 
-## Molecular biology
+#### Molecular biology
 
 For making the p10UAST-HA-Robo1ΔWIRS, p10UAST-Robo1ΔWIRS-MYC, and the p5UAST-HA-Robo1ΔWIRSconstructs, the wild-type Robo1 coding sequences from p10UAST-HA-Robo1, p10UAST-Robo1-MYC, and the p5UAST-HA-Robo1 constructs were subcloned into the smaller pBlueScript backbone and point mutations were introduced into the WIRS motif of the Robo coding sequences with the Quikchange II site-directed mutagenesis kit (Agilent, #200523) using the following primers: GACACCCGTAACGCTACCGCCGCCTACGCTTGTCGCAAG and CTTGCGACAAGCGTAGGCGGTAGCGTTACGGGTGTC. The mutated Robo1 coding sequences were then subcloned back into the respective vectors with 10xUAS or 5xUAS sequences and an attB site for ΦC31-directed site-specific integration. A similar strategy was used for making p10UAST-Robo2ΔWIRS-MYC using the following primers: ACCGACTATGCAGAGGCGTCCGCTGCTGGCAAGGCA and TGCCTTGCCAGCAGCGGACGCCTCTGCATAGTCGGT. For the genomic rescue robo1::HArobo1ΔWIRS construct, the same Robo1 primers mentioned above were used to mutate the WIRS motif using Quikchange and the mutated Robo1 coding sequence was cloned into the genomic rescue construct backbone (kind gift from T. Evans) using BglII.
 
@@ -144,17 +1015,17 @@ For MYC-hRobo1ΔWIRS, the following primers were used for Quikchange: AACAAAATCA
 
 For making the p10UAST-HSPC300-GFP construct, hspc300 cDNA was PCR amplified from the pOT2 BGDP Gold Collection (clone# FI14118) and tagged with a C-terminal GFP separated by a linker using overlap extension PCR with the following primers: TATATAGCGGCCGCCACCATGAGTGGGGCT and CGCGCGTCTAGATCACTTGTACAGCTCGTC and overlapping primers GGTGAAACATTAACGGGACATATGGGAGGAATGGTGAGCAAGGGC and GCCCTTGCTCACCATTCCTCCCATATGTCCCGTTAATGTTTCACC. This PCR fragment was then cloned into a p10UAST plasmid containing an attB site using NotI/XbaI sites. For making the p10UAST-Arp3-GFP construct, arp3 cDNA was PCR amplified from the pOT2 BGDP Gold Collection (clone# LD35711) and cloned into the p10UAST-HSPC300-GFP vector described above by swapping out the hspc300 insert using NotI/NdeI sites and the following primers: TATATA-GCGGCCGC-CACC-ATGGCAGGCAGGCTAC and GGTCCATATGTGTCATGGTGCCAAAGACGGGATTGT.
 
-## CRISPR Cas9-mediated mutagenesis
+### CRISPR Cas9-mediated mutagenesis
 
 For synthesizing the guide RNA to target the WIRS motif in the endogenous robo1 locus, the following sense and antisense oligonucleotides were used: GTCGGCGTACGGCGTGGGATTAT and AAACATAATCCCACGCCGTACGC. This guide RNA was selected with zero predicted off-target effects using http://targetfinder.flycrispr.neuro.brown.edu. The oligos were annealed and cloned into a BbsI-digested pCFD3-dU6:3 vector. A single-stranded oligonucleotide template was designed to introduce point mutations into the WIRS motif. These mutations also destroy the gRNA target sequence and the PAM sequence to prevent subsequent cleavages by Cas9. An MfeI site is mutated, which was used for screening potential CRISPR flies. The sequence of the template used is: CAATCCAACTACAATAACTCCGATGGAGGAACCGATTATGCAGAAGTTGACACCCGTAATGCTACCGCCGCCTACGCTTGTCGCAAGGTGAGGATCATATGAATTGCATCACACAACAATTTC. The template along with the pCFD3 vector containing the guide RNA was sent to BestGene Inc for injection. The progeny from these flies were crossed to balancer stocks to generate stable lines. Flies from these lines were then screened with MfeI following genomic DNA extraction, and positive hits were sent for DNA sequencing.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 S2R+ cells were transiently transfected with Effectene transfection reagent (Qiagen, Valencia, CA, #301425) and induced 24 hr later with 0.5 mM copper sulfate. 24 hr after induction, cells were lysed in TBS-V (150 mM NaCl, 10 mM Tris pH-8, 1 mM ortho-vanadate) supplemented with 0.5% Surfact-AMPS NP40 (Thermo, Waltham, MA, #85124) and 1x Complete Protease Inhibitor (Roche, #11697498001) for 20 min at 4°C. Soluble proteins were recovered by centrifugation at 15,000 × g for 10 min at 4°C. Lysates were pre-cleared with 30 μl of a 50% slurry of protein A (Invitrogen, #15918-014) and protein G agarose beads (Invitrogen, #15920-010) by incubation for 20 min at 4°C. Pre-cleared lysates were then incubated with 0.7 μg of rabbit anti-GFP antibody for 2 hr at 4°C to precipitate HSPC300-GFP. After incubation, 30 μl of a 50% slurry of protein A and protein G agarose beads was added and samples were incubated for an additional 30 min at 4°C. The immunocomplexes were washed three times with lysis buffer, boiled for 10 min in 2x Laemmli SDS sample buffer (Bio-Rad, #1610737), and analyzed by western blotting. Proteins were resolved by SDS-PAGE and transferred to nitrocellulose membrane (Amersham, #10600032). Membranes were blocked with 5% dry milk and 0.1% Tween 20 in PBS for 1 hr at room temperature and incubated with primary antibodies overnight at 4°C. Following three washes with PBS/0.1% Tween 20, membranes were incubated with the appropriate HRP-conjugated secondary antibody at room temperature for 1 hr. Signals were detected using Clarity ECL (Bio-Rad, #1705061) according to manufacturer’s instructions. For preparation of Slit-CM, cells were transfected with a pUAST-Slit vector and a PMT-Gal4 vector using Effectene transfection reagent. Gal4 was induced 24 hr later with 0.5 mM copper sulfate. 24 hr after induction, Slit-CM was collected and concentrated using Amicon filters (Amicon Ultracel 30K, Millipore, #UFC903096). For CM treatment, cells were incubated with control-CM (prepared using an empty pUAST vector) or Slit-CM on an orbital shaker at room temperature for 12 min, then lysed for immunoprecipitation as described above. Antibodies used: for immunoprecipitation, rabbit anti-GFP and for western blot, rabbit anti-GFP (1:500, Invitrogen, #a11122), mouse anti-MYC (1:1000, DSHB, #9E10-C), mouse anti-Slit (1:50, DSHB, #C555.6D), HRP goat anti-rabbit (1:10,000, Jackson Immunoresearch, #111-035-003), and HRP goat anti-mouse (1:10,000, Jackson Immunoresearch, #115-035-146).
 
 For co-immunoprecipitation assays in Drosophila embryos, embryonic protein lysates were prepared from approximately 100 μl of embryos overexpressing UAS-HSPC300-GFP alone or with the HA-tagged UAS-Robo1 variants in all neurons. Embryos were lysed in 0.5 ml TBS-V (150 mM NaCl, 10 mM Tris pH 8.0, 1 mM ortho-vanadate) supplemented with 1% Surfact-AMPS NP40 and protease inhibitors by manual homogenization using a plastic pestle. Homogenized samples were incubated with gentle rocking at 4°C for 10 min and centrifuged at 15,000 × g for 10 min in a pre-chilled rotor. Supernatants were collected after centrifugation, and immunoprecipitations and western blotting were performed as described above. Antibodies used: for immunoprecipitation, rabbit anti-GFP (1:500, Invitrogen, #a11122) and for western blot, rabbit anti-GFP (1:500, Invitrogen, #a11122), mouse anti-HA (1:1000, BioLegend, #901502), mouse anti-beta tubulin (1:1000, DSHB, #E7), HRP goat anti-rabbit (1:10,000, Jackson Immunoresearch, #111-035-003), and HRP goat anti-mouse (1:10,000, Jackson Immunoresearch, #115-035-146).
 
-## Immunostaining
+### Immunostaining
 
 Dechorionated, formaldehyde-fixed Drosophila embryos were fluorescently stained using standard methods. The following antibodies were used: rabbit anti-GFP (1:250, Invitrogen, #a11122), mouse anti-HA (1:500, BioLegend,#901502), chick anti-beta gal (1:500, Abcam, #ab9361), mouse anti-Scar (1:50, DSHB, #P1C1), mouse anti-Robo (1:50, DSHB, #13C9), Alexa647 goat anti-HRP (1:500, Jackson Immunoresearch, #123-605-021), Alexa488 goat anti-rabbit (1:500, Invitrogen, #A11034), Alexa488 goat anti-mouse (1:500, Invitrogen, #A11029), Alexa488 goat anti-chick (1:500, Invitrogen, #A11039), Cy3 goat anti-mouse (1:500, Jackson Immunoresearch, #115-165-003), Cy3 goat anti-Chick (1:500, Abcam, #ab97145), and 647 goat anti-HRP (1:1000, Jackson Immunoresearch, #123-605-021). Embryos were filleted and mounted in 70% glycerol/1× PBS. Surface staining of the HA-tagged genomic Robo rescue transgenes in Drosophila embryos was carried out as previously described (Bashaw, 2010). Briefly, embryos were dissected live, blocked with in 5% normal goat serum (NGS) in PBS for 15 min at 4°C, and stained with mouse anti-HA (1:500, BioLegend, #901502) in PBS for 30 min at 4°C. Following washes with PBS, embryos were fixed in 4% paraformaldehyde (Electron Microscopy Services, #15710) for 15 min at 4°C. Following washes with PBS, fixed embryos were then permeabilized with 0.1% Triton X-100 in PBS (PBT) for 10 min and stained with 647 goat anti-HRP (1:1000, Jackson Immunoresearch, #123-605-021) in 5% NGS in PBT overnight at 4°C. Following washes with PBT, secondary antibody consisting of Alexa488 goat anti-mouse (1:500, Invitrogen, #A11029) diluted in 5% NGS in PBT was added and incubated for 1 hr at room temperature. Embryos were then washed with PBT and mounted in Aquamount.
 
@@ -164,22 +1035,22 @@ Collagen-embedded explants were fixed in 4% paraformaldehyde overnight at 4°C a
 
 Fixed samples of Drosophila embryo nerve cords, mouse-dissociated commissural neurons, and mouse dorsal spinal cord explants were imaged using a spinning disk confocal system (Perkin Elmer) built on a Nikon Ti-U inverted microscope using a Nikon ×40 objective (for nerve cords and neurons) and a ×10 objective (for explants) with Volocity imaging software. Images were processed using NIH ImageJ software.
 
-## Electroporation of mouse embryos and primary neuron culture
+### Electroporation of mouse embryos and primary neuron culture
 
 E12.5 embryos were electroporated ex utero by injecting 100 ng/μl DNA in electroporation buffer (30 mM HEPES pH 7.5 [Thermo, #BP299-1], 300 mM KCl [Thermo, #BP366-1], 1 mM MgCl2[Thermo, #BP214-500], and 0.1% Fast Green FCF [Thermo, #F99-10]) into the central canal of the neural tube. A BTX ECM 830 electroporator (BTX Harvard Apparatus, #45-0662) was used for bilateral electroporation into spinal cord neurons (five 30 V pulses, each of 50 ms duration for each half of the spinal cord). Following electroporation, dorsal spinal cords were dissected out and cut into explants for the explant outgrowth assay or used for preparation of dissociated neuronal cultures. For neuron culture, dissected spinal cords were washed in Hanks’ Balanced Salt Solution (HBSS, Gibco, #14175-079) and digested with 0.05% trypsin (Gibco, #25300054) for 7 min at 37°C. 1 μl of DNase I (NEB, #M0303L) and 0.15% MgSO4 (Thermo, #7487-88-9) was added for an additional minute, and the samples were centrifuged at 400 × g for 4 min. Samples were washed with pre-warmed HBSS, and a small fire-polished Pasteur pipette was used to triturate the tissue and dissociate it into single cells. Cells were plated on acid-washed, poly-D-lysine and N-cadherin-coated coverslips and cultured in plating media (Neurobasal [Gibco, #21103-049] medium supplemented with 10% heat-inactivated FBS and 1X penicillin/streptomycin/glutamine).
 
-## Explant outgrowth assay
+### Explant outgrowth assay
 
 Dorsal spinal cord explants form E12.5 mouse embryos were dissected and cultured in collagen gels as previously described (Serafini 1994). Briefly, explants were embedded in rat tail collagen (Corning, #354249) gels at a distance of one explant diameter away from a mock 293 T cell aggregate (ATCC, CRL-3216) or a cell aggregate expressing Slit (pSecTagB-hSlit2-MYC, kind gift from A. Chedotal). Explants were grown in 50% OptiMEM and 45% Ham’s F-12 media supplemented with 5% HS, 0.75% glucose, and 1X penicillin/streptomycin/glutamine for 48 hr with 500 ng/ml Netrin-1. Explants were subsequently fixed and stained as described above. For preparation of 293 T cell aggregates, cells were trypsinized and resuspended in a rat tail collagen solution, drawn into a glass Pasteur pipette, and allowed to polymerize. The collagen-embedded cells were released from the pipette using a rubber bulb and the aggregates cut into 1 mm clusters.
 
-## Collapse assay
+### Collapse assay
 
 Dissociated commissural neurons from E12.5 mouse embryos were cultured in plating media (Neurobasal medium supplemented with 10% heat-inactivated FBS and 1X penicillin/streptomycin/glutamine) for 1 day in vitro. Plating media was replaced with Neurobasal supplemented with 1X B-27 for 1 hr. Neurons were treated with recombinant hSlit2-N (R&D, #5444-SL-050) at 2 μg/ml for 30 min at 37°C. Neurons were fixed immediately and immunostained for Robo3 (a marker for commissural neurons) and MYC to identify commissural neurons that had been successfully electroporated with the hRobo1-MYC or hRobo1ΔWIRS-MYC expression constructs.
 
-## Chicken in ovo electroporation
+### Chicken in ovo electroporation
 
 Chicken in ovo electroporations were carried out as previously described (Croteau et al., 2019) at HH stage 14 and embryos were harvested at HH stage 22–23. Chicken embryos were electroporated with either pCAGGS, pCAGGS-hRobo1 wild-type or pCAGGS-hRobo1 WIRS-deletion constructs combined with pN2-eGFP at a 4:1 DNA weight ratio. Spinal cords were sectioned and stained with DAPI, anti-GFP (A11122, 1:5,000, Thermo Fisher) and anti-MYC (9E10, 1:200, DSHB) antibodies.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 For analysis of Drosophila nerve cord phenotypes, image analysis was conducted blind to the genotype. Data are presented as mean values ± SEM. For statistical analysis, comparisons were made between two groups using the Student’s t-test. For multiple comparisons, significance was assessed using one-way ANOVA with Tukey’s post-hoc tests. Differences were considered significant when p<0.05. For quantitation of Scar intensity or surface HA intensity in Drosophila embryos, mean gray value for Scar or HA was obtained using ImageJ and normalized to the mean gray value for HRP. Data are presented as mean values ± SEM. For statistical analysis, comparisons were made between two groups using the Student’s t-test. Differences were considered significant when p<0.05. For the collapse assay, only Robo3-positive (and MYC-positive for neurons electroporated with hRobo1 variants) axons were imaged and analyzed. Growth cones were defined by the presence of lamellipodia and/or filopodia. Three trials were conducted and at least 30 neurons per condition were scored in each trial. Data are presented as mean values ± SEM. For statistical analysis, comparisons were made between groups using one-way ANOVA with Tukey’s post-hoc tests. Differences were considered significant when p<0.05. To measure MYC signal intensity for total hRobo1 or surface hRobo1 quantitation in dissociated neurons, Robo3-positive neurons were carefully traced in ImageJ and integrated signal density in the traced region was obtained. Background signals were subtracted and mean fluorescence intensity calculated as integrated signal density per area is presented in graphs. Data are presented as mean values ± SEM. For statistical analysis, comparisons were made between two groups using the Student’s t-test. Differences were considered significant when p<0.05. For the explant outgrowth assay, explants images were converted to black-and-white composites using the Threshold function. Each experimental set was quantified using the same threshold parameters. Explant quadrants were delineated by placing a right-angled crosshair at the center of each explant with the proximal quadrant directly facing the cell aggregate. The total area of black pixels was measured for the proximal and distal quadrants using the Analyze Particles function. The particles showing axonal outgrowth were then erased using the Eraser tool, and the total area of black particles was measured again. The difference was recorded as total area of axonal outgrowth. Next, the length of each quadrant was measured by tracing the border of the quadrant using the Freehand Line tool. Values for total area of outgrowth were normalized to length of the quadrant, and these final values were used to obtain the proximal/distal ratios for each explant. The measurements for each explant in a set were averaged, and the ratios of experimental conditions compared with control condition were calculated. Data are presented as mean ± SEM. Total number of explants for RFP control, RFP Slit, hRobo1 control, hRobo1 Slit, hRobo1ΔWIRS control, and hRobo1ΔWIRS Slit is 29, 39, 33, 39, 29, and 41, respectively (from three independent experiments). For statistical analysis, comparisons were made between groups using one-way ANOVA with Tukey’s post-hoc tests. Differences were considered significant when p<0.05. For western blots, densitometric analysis was performed and band intensities of co-immunoprecipitating proteins in the immunoprecipitates were normalized to band intensities of HSPC300 in the immunoprecipitates as well as to lysate levels of the co-immunoprecipitating proteins. For each independent experiment, values were compared with wild-type Robo1 normalized values. Data are presented as mean ± SEM. For statistical analysis, comparisons were made between two groups using the Student’s t-test. For multiple comparisons, significance was assessed using one-way ANOVA with Tukey’s post-hoc tests. Differences were considered significant when p<0.05. For analysis of crossing index in chicken embryos, fluorescence intensities were generated by pixels above threshold using ImageJ. Five sections of each embryo were analyzed. For GFP crossing index, statistical significance was calculated using one-way ANOVA with post-hoc multiple comparisons. And for MYC crossing index, unpaired t-test was used. For all graphs, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.

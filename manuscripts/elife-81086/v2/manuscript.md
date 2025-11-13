@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-2. https://ror.org/00hj8s172 Department of Biological Sciences, Columbia University New York United States
-3. https://ror.org/01an7q238 California Institute for Quantitative Biosciences (QB3), University of California, Berkley Berkley United States
-4. https://ror.org/01an7q238 Center for Computational Biology, University of California, Berkeley Berkeley United States
+1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Department of Biological Sciences, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. California Institute for Quantitative Biosciences (QB3), University of California, Berkley Berkley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. Center for Computational Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
 ## Abstract
 
-Targeted selection-based genome-editing approaches have enabled many fundamental discoveries and are used routinely with high precision. We found, however, that replacement of DBP1 with a common selection cassette in budding yeast led to reduced expression and function for the adjacent gene, MRP51 , despite all MRP51 coding and regulatory sequences remaining intact. Cassette-induced repression of MRP51 drove all mutant phenotypes detected in cells deleted for DBP1 . This behavior resembled the ‘neighboring gene effect’ (NGE), a phenomenon of unknown mechanism whereby cassette insertion at one locus reduces the expression of a neighboring gene. Here, we leveraged strong off-target mutant phenotypes resulting from cassette replacement of DBP1 to provide mechanistic insight into the NGE. We found that the inherent bidirectionality of promoters, including those in expression cassettes, drives a divergent transcript that represses MRP51 through combined transcriptional interference and translational repression mediated by production of a long undecoded transcript isoform (LUTI). Divergent transcript production driving this off-target effect is general to yeast expression cassettes and occurs ubiquitously with insertion. Despite this, off-target effects are often naturally prevented by local sequence features, such as those that terminate divergent transcripts between the site of cassette insertion and the neighboring gene. Thus, cassette-induced off-target effects can be eliminated by the insertion of transcription terminator sequences into the cassette, flanking the promoter. Because the driving features of this off-target effect are broadly conserved, our study suggests it should be considered in the design and interpretation of experiments using integrated expression cassettes in other eukaryotic systems, including human cells.
+Targeted selection-based genome-editing approaches have enabled many fundamental discoveries and are used routinely with high precision. We found, however, that replacement of DBP1 with a common selection cassette in budding yeast led to reduced expression and function for the adjacent gene, MRP51, despite all MRP51 coding and regulatory sequences remaining intact. Cassette-induced repression of MRP51 drove all mutant phenotypes detected in cells deleted for DBP1. This behavior resembled the ‘neighboring gene effect’ (NGE), a phenomenon of unknown mechanism whereby cassette insertion at one locus reduces the expression of a neighboring gene. Here, we leveraged strong off-target mutant phenotypes resulting from cassette replacement of DBP1 to provide mechanistic insight into the NGE. We found that the inherent bidirectionality of promoters, including those in expression cassettes, drives a divergent transcript that represses MRP51 through combined transcriptional interference and translational repression mediated by production of a long undecoded transcript isoform (LUTI). Divergent transcript production driving this off-target effect is general to yeast expression cassettes and occurs ubiquitously with insertion. Despite this, off-target effects are often naturally prevented by local sequence features, such as those that terminate divergent transcripts between the site of cassette insertion and the neighboring gene. Thus, cassette-induced off-target effects can be eliminated by the insertion of transcription terminator sequences into the cassette, flanking the promoter. Because the driving features of this off-target effect are broadly conserved, our study suggests it should be considered in the design and interpretation of experiments using integrated expression cassettes in other eukaryotic systems, including human cells.
 
 ## Introduction
 
@@ -39,17 +39,37 @@ These data point to an undesirable feature of expression cassette insertion that
 
 ## Results
 
-## Insertion of a resistance cassette at the DBP1 locus causes aberrant transcription and reduced protein production from MRP51, a neighboring gene
+### Insertion of a resistance cassette at the DBP1 locus causes aberrant transcription and reduced protein production from MRP51, a neighboring gene
 
 We had previously observed upregulation of the Dbp1 RNA helicase in meiotic yeast cells, coincident with downregulation of its paralog, Ded1 (Brar et al., 2012). Ded1 is important for translation initiation, and has been well studied under conditions of mitotic exponential growth (de la Cruz et al., 1997). In contrast, the role of Dbp1 has remained less clear, partially a result of its absent or low expression under commonly studied laboratory conditions. Based on the identity of Dbp1 as an RNA helicase (Jamieson and Beggs, 1991), we predicted that Dbp1 could have a role in regulating gene expression during meiosis. To test this, we deleted DBP1 by replacing the ORF (from start to stop codon) with a standard cassette-encoding Geneticin (G418) resistance, amplified from the pFA6a-kanMX6 plasmid (Longtine et al., 1998), in the SK1 budding yeast strain background (Padmore et al., 1991). We then compared gene expression profiles of wild-type and dbp1Δ::kanMX6 cells during meiosis, using ribosome profiling and mRNA-sequencing (mRNA-seq). To our surprise, MRP51, the gene located directly adjacent to DBP1, exhibited a profound decrease in translation in the dbp1Δ::kanMX6 strain relative to wild-type controls (Figure 1A). Translation of MRP51 was 8.4-fold lower in dbp1Δ::kanMX6 cells despite a 1.8-fold increase in MRP51 mRNA abundance (Figure 1A,B). These changes reflected a 15-fold decrease in MRP51 translation efficiency (TE) in the dbp1Δ::kanMX6 cells compared to the wild-type control (Figure 1C; TE: ribosome footprint RPKM/mRNA RPKM) and led to a reduction in Mrp51 protein level compared to wild-type, as assessed by western blotting (Figure 1D). Because of the close genomic proximity of these genes, we hypothesized that this change in TE could be due to cis- effects from the dbp1Δ::kanMX6 insertion rather than reflecting regulation of MRP51 by Dbp1 protein. Upon closer examination of the mRNA transcripts produced at this locus, we found that replacing the DBP1 ORF with the kanMX6 resistance cassette led to production of a 5′ extended MRP51 mRNA compared to that in wild-type cells. The extended transcript contained 3 AUG-initiated uORFs not present on the wild-type transcript, which were translated at the expense of the MRP51 ORF in dbp1Δ::kanMX6 cells (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig1-v2.jpg)
+
+**Figure 1.:** (A) Translation (ribosome profiling, footprint) and (B) mRNA abundance (mRNA-seq) reads per kilobase million mapped reads (RPKM) for every ORF expressed in wild-type and dbp1Δ::kanMX6 cells is plotted. (C) Fold-change of translation efficiency (TE: FP RPKM/mRNA RPKM) for all expressed genes. (A–C) Data represent RPKM values from a single experiment, for RPKM values for all quantified genes, see Figure 1—source data 1. (D) Quantification of Mrp51 levels in wild-type and dbp1∆::kanMX6 cells undergoing mitotic growth as determined by western blotting. Mrp51 levels were normalized to alpha tubulin and three independent biological replicates were quantified. Statistical significance was determined by a ratio paired t-test with a reported two-tailed p < 0.05. For representative blot see Figure 1—figure supplement 1A. (E) mRNA and FP reads mapped to the DBP1/MRP51 locus in wild-type (gray/black) and dbp1Δ::kanMX6 (purple) cells. Note that MRP51 transcripts are 5′ extended in the dbp1Δ::kanMX6 cells compared to wild-type (see inset mRNA tracks). The extended transcript contains three AUG-initiated upstream ORFs (uORFs) translated at the expense of the MRP51 ORF (see FP tracks and inset). (F) Model: replacement of DBP1 ORF with a resistance cassette causes aberrant expression of a long undecoded transcript isoform (LUTI) for MRP51, which results in lower Mrp51 protein expression as an off-target effect.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative western blot demonstrating wild-type and dbp1∆::kanMX6 levels of Mrp51, with replicates quantified in Figure 1D. For uncropped blot image see Figure 1—figure supplement 1—source data 1. (B–E) Ribosome profiling and mRNA-seq of dbp1Δ::hphMX4 and wild-type S288C budding yeast during mitotic growth from Sen et al., 2019. (A) Translation (FP RPKM) and (B) mRNA RPKM counts of all genes expressed. (C) Fold-change TE (translation efficiency; FP RPKM/mRNA RPKM) for every gene expressed in dbp1Δ::hphMX4 and wild-type cells. (D) mRNA and FP reads aligned to the DBP1/MRP51 loci for wild-type (gray/black) and dbp1Δ::hphMX4 (purple). Note the MRP51 mRNA is 5′ extended in the dbp1Δ::hphMX4 cells (mRNA tracks) and the translation of upstream ORFs (uORFs) not present on the wild-type mRNA but MRP51 ORF translation is higher in wild-type cells (FP tracks).
 
 These data suggest that kanMX6 cassette insertion at the DBP1 locus drives the transcription of an aberrant 5′ extended MRP51 mRNA containing repressive uORFs and causes reduced Mrp51 protein production. Thus, the features of MRP51 mis-regulation in this strain mimicked the natural LUTI-based mode of regulation that conditionally downregulates protein synthesis from many genes in yeast (Figure 1F; Chia et al., 2017; Chen et al., 2017; Cheng et al., 2018; Van Dalfsen et al., 2018). Here, the primary difference was that repression of MRP51 expression appeared to occur constitutively as result of kanMX6 insertion at the neighboring DBP1 ORF, rather than resulting from temporally regulated toggling between two TSSs.
 
 We were surprised to observe this dramatic off-target mis-regulation because of the widespread and long-term use of cassette-mediated gene deletion and the detailed quality control measures that were used in construction of our strains to prevent off-target effects caused by background mutations or improper cassette insertion. To confirm aberrant MRP51 regulation was not an artifact of our strain, experimental conditions, or selection cassette, we analyzed a published ribosome profiling and mRNA-seq dataset comparing wild-type and dbp1Δ cells of the S288C budding yeast background. These dbp1Δ cells were generated by replacement of the DBP1 ORF with a cassette-encoding resistance to Hygromycin (dbp1Δ::hphMX4) (Sen et al., 2019). Consistent with our data, insertion of hphMX4 to replace the DBP1 ORF caused mis-regulation of the adjacent gene MRP51. Despite levels of the Mrp51-encoding transcript remaining similar to wild-type in dbp1Δ::hphMX4 cells, translation of MRP51 was decreased 4.4-fold in these conditions (Figure 1—figure supplement 1B,C). The 3.7-fold decrease in TE of MRP51 in dbp1Δ::hphMX4 cells in this study led to the interpretation that the canonical MRP51 transcript is highly dependent on Dbp1 for its translation (Figure 1—figure supplement 1D; Sen et al., 2019). A closer look at the transcripts produced from this locus, however, revealed the presence of a 5′-extended MRP51 LUTI in the dbp1Δ::hphMX4 cells, like the one we had observed. This 5′ extended MRP51 transcript contained competitive AUG-initiated uORFs that were translated in place of the MRP51 ORF, as in our experiments (Figure 1—figure supplement 1E). These findings confirmed that the off-target effects seen in dbp1∆::kanMX6 mutants were not an artifact of our strain background, selection cassette, or experimental conditions.
 
-## Selection-cassette-induced mis-regulation of MRP51 leads to systemic phenotypic consequences
+### Selection-cassette-induced mis-regulation of MRP51 leads to systemic phenotypic consequences
 
 We next sought to determine whether the mutant phenotypes we observed in dbp1Δ::kanMX6 cells were due to loss of DBP1 function or resistance cassette-dependent mis-regulation of MRP51, a gene encoding a mitochondrial small subunit ribosome protein (mt-SSU) (Green-Willms et al., 1998). Polysome analysis of dbp1Δ::kanMX6 cells during meiosis demonstrated that overall translation rates were diminished relative to wild-type cells, as determined by lower polysome peaks in the mutant (Figure 2A; right, fractions 5 and 6). Consistent with this finding, measurement of radioactive amino acid incorporation rates revealed a 24% decrease in bulk translation in dbp1Δ::kanMX6 cells (Figure 2—figure supplement 1A). Polysome traces also indicated differences in the accumulation of a ribonucleoprotein (RNP) species roughly the size of the cytoplasmic large 60S subunit (Figure 2A; LSU, fraction 3) and a decrease in cytoplasmic small 40S subunit signal (Figure 2A; SSU, fraction 2). We performed label-free mass spectrometry on fractionated wild-type and dbp1Δ::kanMX6 polysomes and used hierarchical clustering of the data to assess global differences in polysome composition. We found that a prominent cluster of proteins enriched in fraction 3 of polysomes from dbp1Δ::kanMX6 cells compared to wild-type was highly enriched for the mitochondrial large ribosome subunit (mt-LSU). This cluster contained 34 of the 42 proteinaceous mt-LSU components quantified in our study (Figure 2A; left). Further analysis of fraction 3 revealed that every mitochondrial 54S protein quantified was enriched in dbp1Δ::kanMX6 cells compared to the wild-type control (Figure 2—figure supplement 1C). These data suggest the accumulated RNP observed in dbp1Δ::kanMX6 cells is the mt-LSU. A previous study from our laboratory observed that when individual cytoplasmic SSU proteins are lost, free cytoplasmic 60S LSUs accumulate, presumably a result of their inability to find an SSU to complex with and form fully assembled 80S species (Cheng et al., 2019). The build-up of free mt-LSU in dbp1Δ::kanMX6 cells, which express lower amounts of mitochondrial small subunit (mt-SSU) component Mrp51 is reminiscent of that effect. Furthermore, we identified a small cluster of cytoplasmically translated mitochondrial proteins that were decreased in dbp1Δ::kanMX6 high polysome fractions compared to wild-type, hinting at effects of broader mitochondrial dysfunction (Figure 2A). These data suggested the cassette-mediated mis-regulation of MRP51 in dbp1Δ::kanMX6 cells may have been responsible for the mutant phenotypes we observed, rather than loss of Dbp1 protein.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig2-v2.jpg)
+
+**Figure 2.:** (A) Label-free mass spectrometry of fractionated polysomes from wild-type and dbp1Δ::kanMX6 cells during meiosis (4 hr in sporulation media). Note decreased polysomes, accumulation of mitochondrial 54S subunit (fraction 3) in dbp1Δ::kanMX6 cells, at right. Two biological replicates were analyzed, data from one are shown. Data were subjected to hierarchical clustering and normalized per protein. Mass spectrometry replicates and their agreement by spearman correlation are shown in Figure 2—figure supplement 1B. For entire dataset see Figure 2—source data 1. (B, C) Analysis of wild-type, dbp1Δ::kanMX6, dbp1Δ::kanMX6 leu2::pDBP1-DBP1, and dbp1Δ::kanMX6 leu2::pMRP51-MRP51 cells under conditions where dbp1Δ::kanMX6 mutant phenotypes were observed. (B) Representative growth curves in the non-fermentable carbon source glycerol (left), and ethanol (right: post-diauxic). Three or four independent biological replicates were performed for each experiment and data for all replicates are shown as doubling time (glycerol) or final culture absorbance (post-diauxic) in Figure 2—figure supplement 2A,B. (C) Twenty-four-hour sporulation efficiency counts, data shown are the average of three biological replicates with error bars showing SD. Statistical significance was determined by a one-way analysis of variance (ANOVA) adjusted for multiple comparisons with Dunnett’s multiple comparison test where a reported **padj < 0.005, and ***padj < 0.0005. (D) Representative growth curves of wild-type and varied dbp1∆ cassette replaced mutants in the non-fermentable carbon source glycerol, cassette makeup is shown on the right. For this experiment four independent biological replicates were analyzed and the doubling time for each replicate is shown in Figure 2—figure supplement 2E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) S35 amino acid incorporation of dbp1Δ::kanMX6 and wild-type cells during meiosis. Statistical significance was determined by a ratio paired t-test with a reported two-tailed *p < 0.05. Data from three independent biological replicates are shown. (B) Spearman correlation of two biological replicates from label-free quantification (LFQ) of fractionated polysome mass spectrometry experiment shown in Figure 2A. (C) Normalized LFQ of all proteins quantified in fraction 3 in wild-type and dbp1Δ::kanMX6 cells. Data shown are the average of two biological replicates. All quantified mtLSU components are colored in black. Growth curves of wild-type and dbp1Δ::kanMX6 cells in non-fermentable carbon sources (D) and fermentable (E: before diauxic shift) and non-fermentable (E: post-diauxic shift) carbon sources; these experiments were performed once.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Analysis of wild-type, dbp1∆::kanMX6, dbp1∆::kanMX6 leu2::pDBP1-DBP1, and dbp1∆::kanMX6 leu2::pMRP51-MRP51 strains under conditions for which dbp1∆::kanMX6 cells exhibited phenotypes. (A) Calculated doubling times for cells growing in the non-fermentable carbon source glycerol. Data from three independent biological replicates are shown and statistical significance was determined by a one-way analysis of variance (ANOVA) and corrected for multiple comparisons using Dunnett’s multiple comparisons test where *padj < 0.05. (B) Twenty-four-hour absorbance at 600 nm wavelength measurements of wild-type and mutant cells to measure total growth in the post-diauxic growth phase. Data from five independent biological replicates are shown and statistical significance was determined by a one-way ANOVA and corrected for multiple comparisons using Dunnett’s multiple comparisons test where a *padj < 0.05. (C) Polysome profiles of wild-type and mutant strains during meiosis; these data are from one biological replicate. (D) Quantitation of Dbp1 levels when expressed from tagged alleles at its endogenous locus or from the exogenous LEU2 locus (dbp1∆::kanMX6 leu2::pDBP1-DBP1-3V5) as determined by western blotting. Data represent an average of three biological replicates and error bars show SD. Statistical significance was determined by a two-way ANOVA corrected for multiple comparisons with the Šidák multiple comparison test where a *padj < 0.05. (E) Calculated doubling times for various cassette replaced mutants in the non-fermentable carbon source glycerol. Four independent biological replicates were analyzed and statistical significance was determined by a one-way ANOVA and adjusted for multiple comparisons with Dunnett’s multiple comparison test reported *padj < 0.05 and **padj < 0.005.
 
 Disruption of mitochondrial translation, and ultimately function, would be expected to lead to cellular fitness defects. Based on the apparent mitochondrial defects observed in the mass spectrometry data, we hypothesized that dbp1Δ::kanMX6 cells would grow poorly in conditions in which elevated mitochondrial function is required. Consistently, dbp1Δ::kanMX6 cells exhibited severe growth defects in media containing only non-fermentable carbon sources, such as glycerol or acetate (Figure 2—figure supplement 1D). Additionally, growth defects were evident in dbp1Δ::kanMX6 cells grown in rich media (YEP dextrose or sucrose) during post-diauxic growth stages, after saturated cultures have exhausted fermentable carbon source availability and begin to utilize ethanol through respiration (Figure 2—figure supplement 1E). To determine whether these phenotypes were due to cassette-induced MRP51 mis-regulation or loss of Dbp1 protein, we tested whether they could be rescued by exogenous expression of either Dbp1 or Mrp51. All dbp1Δ::kanMX6 growth defects observed in conditions requiring elevated mitochondrial function remained similar with and without exogenous Dbp1 expression. In contrast, exogenous expression of Mrp51 rescued all previously observed respiratory growth defects of the dbp1Δ::kanMX6 strain, confirming these phenotypes resulted from disrupted expression of Mrp51, rather than lack of Dbp1 protein (Figure 2B; Figure 2—figure supplement 2A,B).
 
@@ -59,23 +79,47 @@ To ensure that the inability of Dbp1 to rescue phenotypes in dbp1Δ::kanMX6 cell
 
 To assess whether cassette-driven off-target effects were common to a specific feature of the kanMX6 and hphMX4 cassettes, we replaced the DBP1 ORF in wild-type cells with two additional cassettes, including one (natMX6; Figure 2D) that shared the pTEF and tTEF regulatory regions with kanMX6 and hphMX4 and one (TRP1; Figure 2D) that did not and is relatively lowly expressed. Insertion of either additional cassette led to a growth defect in non-fermentable carbon source compared to wild-type cells that was similar to that seen with kanMX6 insertion (Figure 2D, Figure 2—figure supplement 2E). As all reported cases of NGE have represented gene replacements with the commonly used kanMX modules, it was previously unclear whether this effect simply represented a problematic feature of kanMX. Our data indicate that the aberrant-transcript-driven mis-regulation of MRP51 is a general consequence of expression cassette insertion rather than a specific result of any sparticular cassette feature .
 
-## Transcription-terminator-flanked cassettes prevent adjacent gene mis-regulation
+### Transcription-terminator-flanked cassettes prevent adjacent gene mis-regulation
 
 We reasoned that if the expression cassette inserted at the DBP1 locus drove transcription that altered neighboring gene expression, ‘insulation’ of neighboring genomic regions from transcriptional activity of the cassette should prevent these off-target effects. Toward this end, we placed strong transcription terminator sequences flanking both ends of the resistance cassette (Song et al., 2016). This included placing a portion of the DEG1 terminator 5′ to the TEF promoter, and either the same DEG1 terminator or the CYC1 terminator sequence 3′ to the TEF terminator within the kanMX6 cassette (Figure 3A). We named these plasmids ‘kanMX6-ins1’ and ‘kanMX6-ins2’ and used them to replace DBP1 using the same primers and insertion location as before. Both dbp1Δ::kanMX6-ins strains grew at wild-type rates in the non-fermentable carbon source, glycerol, in contrast to cells housing the original cassette replacement (Figure 3B, Figure 3—figure supplement 1A). Consistent with this finding, levels of Mrp51 protein in the dbp1Δ::kanMX6-ins strains were similar to those in wild-type cells (Figure 3C, D). Finally, 5′ rapid amplification of cDNA ends (5′RACE) confirmed that the MRP51 transcript produced in the dbp1Δ::kanMX6-ins strains was the same as that seen in wild-type cells, as opposed to the synthetic MRP51 LUTI in the initial cassette-inserted strains (Figure 3E, Figure 3—figure supplement 1B,C). To facilitate the use of this strategy and prevent aberrant transcription and neighboring gene mis-regulation in future studies, we created three additional ‘insulated’ cassettes housing the selection markers TRP1, his5+ (S. pombe HIS5; which complements S. cerevisiae his3), and natr (nourseothricin resistance) within the classic ‘MX6’ backbone (Longtine et al., 1998; Wach et al., 1997; Wach et al., 1994; Figure 3F).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig3-v2.jpg)
+
+**Figure 3.:** (A) Design of ‘insulated’ kanMX6-ins cassettes and proposed model. The DEG1 transcription terminator sequence was inserted 5′ of the TEF promoter and either the DEG1 or CYC1 terminator was inserted 3′ of the TEF terminator in pFA6a-kanMX6 (Longtine et al., 1998). “goi” in the cartoon is an abreviation for “gene of interest”. (B) A single representative trace showing growth of dbp1Δ::kanMX6 and dbp1Δ::kanMX6-ins strains compared to wild-type in YEP glycerol. Three independent replicates were performed and the doubling time for each replicate is shown in Figure 3—figure supplement 1A. (C) Western blots for Mrp51-3v5 levels in dbp1Δ::kanMX6 and dbp1Δ::kanMX6-ins cells compared to wild-type during mitotic exponential growth in rich media. For full blot scans see Figure 3—source data 1. (D) Quantification of western blots as in (C), with Mrp51 normalized to Tub1 (alpha tubulin). Data shown are two independent biological replicates. Statistical significance was determined by a one-way analysis of variance (ANOVA) adjusted for multiple comparisons using Dunnett’s multiple comparisons test where **padj < 0.005. (E) 5′ rapid amplification of cDNA ends (RACE) demonstrates the 5′ ends of transcripts produced in wild-type, dbp1Δ::kanMX6, and dbp1Δ::kanMX6-ins strains. Gel demonstrating 5′ end products sequenced for each sample and the exact 5′ mRNA end sequences listed in Figure 3—figure supplement 1B,C. (F) Schematics of improved selection cassettes cloned with terminators insulating the 5′ and 3′ cassette ends. (G) Top: schematic of the reversed orientation cassette inserted at the DBP1 locus. Bottom: a single representative growth curve of wild-type, dbp1∆::kanMX6, and dbp1∆::rev-kanMX6 cells grown in the non-fermentable carbon source glycerol. Four independent biological replicates were analyzed and doubling times for each replicate are shown in Figure 3—figure supplement 2A. (H) Design of two additional cassettes with minimal sequence overlap, to enable their paired use in the same strain, and insulated only on the 5′ cassette end. Growth data for these new cassettes in Figure 3—figure supplement 2B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Calculated doubling times of wild-type, dbp1∆::kanMX6, and dbp1∆::kanMX6-ins strains in the non-fermentable carbon source glycerol. Data from three independent replicates are shown and statistical significance was determined by one-way analysis of variance (ANOVA) corrected for multiple comparisons with Dunnett’s multiple comparison test where a *padj < 0.05. (B) PCR amplified 5′ ends of cDNA from wild-type, dbp1Δ::kanMX6, dbp1Δ::natMX6, dbp1Δ::kanMX6-ins1, and dbp1Δ::kanMX6ins-2. Colored dots represent the color each sample is depicted with in Figure 3E. Bottom image is darker exposure of the same gel to demonstrate lack of MRP51 LUTI in insulated cassette samples. See Figure 3—figure supplement 1—source data 1 for uncropped of gels. (C) The exact 5′ ends of transcripts sequenced to identify the start site of each transcript as well as the number of transcripts analyzed that mapped to a given position.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Calculated doubling times of wild-type, dbp1∆::kanMX6, and dbp1∆::rev-kanMX6 strains in the non-fermentable carbon source glycerol. Data from four independent replicates are shown and statistical significance was determined by use of a one-way analysis of variance (ANOVA) corrected for multiple comparisons with Dunnett’s multiple comparison test where a **padj < 0.005. (B) Growth curves of forward and reverse oriented 5′ insulated kanMX6 cassettes inserted at the DBP1 locus in the non-fermentable carbon source glycerol. For this experiment, a single biological replicate was analyzed. Cassettes used are shown in Figure 3H.
+
 While flanking both ends of the cassette with transcription terminator sequences was sufficient to prevent off-target mutant phenotypes at the DBP1/MRP51 locus, we wished to identify the root cause of neighboring gene mis-regulation. Previous work had suggested that the unusually high expression level of the kanMX6 cassette could cause gross chromatin changes that lead to local changes in transcription, and the NGE (Ben-Shitrit et al., 2012; Egorov et al., 2021). However, the similar off-target respiratory growth phenotype observed when DBP1 was replaced with either the kanMX6 or TRP1 cassettes, driven by the A. gossypii TEF and S. cerevisiae TRP1 promoters, respectively, led us to disfavor this model, as pTRP1 expression is several-fold lower than pTEF. Because bidirectional transcription has been shown to occur from most, if not all, promoters (Neil et al., 2009; Xu et al., 2009; Wei et al., 2011; Teodorovic et al., 2007; Preker et al., 2008; Core et al., 2008; Seila et al., 2008), and the observed aberrant transcript originated from the promoter-proximal end of the cassette, we hypothesized that bidirectional promoter activity from the TEF promoter was the most likely cause of MRP51 LUTI-based repression. Consistent with this model, both S. cerevisiae pTEF1 and pTRP1 display bidirectional activity at their endogenous loci, as determined by tiling array analysis and nascent transcript sequencing (NETseq) (Xu et al., 2009; Churchman and Weissman, 2011). We first tested this model by inserting a kanMX6 cassette in the reverse orientation at the DBP1 locus. This would not be expected to prevent gross chromatin changes caused by extremely high expression of the kanr gene but would move pTEF away from MRP51 (Figure 3G, Figure 3—figure supplement 2A). Indeed, we found that replacing DBP1 with the reversed kanMX6 cassette did not result in a respiratory growth defect (Figure 3G; Figure 3—figure supplement 2A). Considering these data, and the knowledge that shared homology between cassettes can reduce the efficiency of targeted insertions when used sequentially, we constructed two more ‘insulated’ cassettes containing only a single additional terminator (tDEG1 or tCYC1) (Song et al., 2016) flanking each promoter and sharing no regulatory sequences with each other. Furthermore, to prevent the possibility of recombination between endogenous sequences and these new cassettes, we used the PGK1 promoter and terminator sequence from C. glabrata to drive resistance ORF expression (Figure 3H). Use of these two new insulated cassettes to replace DBP1 in the forward and reverse orientation confirmed that neither cassette caused a respiratory growth defect, in either orientation (Figure 3—figure supplement 2B).
 
-## Cassette insertion drives the production of divergent transcripts at all loci but local sequence features determine their length and stability
+### Cassette insertion drives the production of divergent transcripts at all loci but local sequence features determine their length and stability
 
 Though severe off-target effects driven by a stable divergent transcript were observed with cassette replacement of DBP1, cassette replacement occurs at many loci without neighboring gene disruption. To better understand how the mis-regulation occurring with cassette insertion at the DBP1 locus compared to effects at other loci, we analyzed mRNA-seq and ribosome profiling data over genomic intervals surrounding cassette insertions from 18 additional cassette-replacement mutant datasets from our laboratory (Cheng et al., 2019), and one case in which only mRNA-seq data were available. All analyzed mutants contained a single ORF replaced with either the kanMX6 or natMX6 resistance cassettes and samples were collected during mitotic exponential growth. mRNA-seq data revealed stable divergent transcripts stemming from cassette-mediated gene replacements at 5 of these 19 loci (Figure 4A–E). For all five of these examples, the aberrant transcript was driven from the 5′ end of the resistance cassette, like in dbp1Δ::kanMX6 cells (Figure 1E; Figure 4A–E), and consistent with a model whereby bidirectional transcription from the cassette promoter drives aberrant neighboring transcripts. However, unlike the strong mis-regulation of MRP51 seen with DBP1 ORF replacement, these divergent transcription events had no obvious effect on the translation of adjacent genes, and a lack of apparent uORF translation in the extended 5′ mRNA regions (Figure 4A–D). For four of these new cases in which aberrant transcription resulted from a cassette-based deletion, the adjacent gene was positioned in the same orientation as the aberrant TSS thus it would be possible for synthetic LUTI-based repression to occur as was observed for MRP51. Although, we also note that for three of these four cases, expression of the adjacent ORF was low, even in wild-type cells, and thus mis-regulation of these genes may be difficult to detect under these conditions (Figure 4B–D). For the last case, in which UPF1 was replaced with the natMX6 cassette, an abundant cassette-induced divergent transcript was observed. However, the adjacent ISF1 gene was oriented antisense to this transcript and there was no evidence of its transcription with or without natMX6 insertion at UPF1 (Figure 4E); hence, there was no baseline expression to disrupt. Together, these data suggest that stable cassette-induced divergent transcripts are fairly common (occurring at 6/20 of loci analyzed here), but that severe phenotypic consequences are more rare.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig4-v2.jpg)
 
-**Figure 4.:** (A–D) 18 ribosomal protein deletions generated by ORF replacement with kanMX6 from Cheng et al., 2019 were observed for cassette-driven divergent transcription events. Left, ribosome profiling footprint (FP) and mRNA-seq reads aligned to the ORF-replaced locus for each strain. Right, FP RPKM for every ORF expressed in the mutant and wild-type strains with the deleted ORF and its potentially disrupted genomic neighbor marked in black. Data were collected from vegetative exponentially growing cells. (D) Note: RPL41B is not quantified in translation graph because the ORF is only 25 amino acids long. (E) mRNA-seq reads aligned to the replaced locus in a upf1Δ::natMX6 mutant. Data were collected from vegetative exponentially growing cells. For raw data see Figure 4—source data 1. (A–E) Data shown here represent a single biological replicate for each experiment and pink arrows denote likely divergent transcription start site (TSS).Figure 4—source data 1.UPF1 locus in wild-type and upf1Δ::natMX6 cells.txt (wiggle files) used to generate Figure 4E genome browser track figure. UPF1 ORF coordinates 415,257–418,173 on chr 13. 2 kb upstream of UPF1 and 1 kb downstream of UPF1 are included.
+**Figure 4.:** (A–D) 18 ribosomal protein deletions generated by ORF replacement with kanMX6 from Cheng et al., 2019 were observed for cassette-driven divergent transcription events. Left, ribosome profiling footprint (FP) and mRNA-seq reads aligned to the ORF-replaced locus for each strain. Right, FP RPKM for every ORF expressed in the mutant and wild-type strains with the deleted ORF and its potentially disrupted genomic neighbor marked in black. Data were collected from vegetative exponentially growing cells. (D) Note: RPL41B is not quantified in translation graph because the ORF is only 25 amino acids long. (E) mRNA-seq reads aligned to the replaced locus in a upf1Δ::natMX6 mutant. Data were collected from vegetative exponentially growing cells. For raw data see Figure 4—source data 1. (A–E) Data shown here represent a single biological replicate for each experiment and pink arrows denote likely divergent transcription start site (TSS).
 
 We noted that the divergent transcript observed with cassette insertion at the UPF1 locus (Figure 4E), which encodes a gene that drives nonsense-mediated RNA decay (NMD) (Hug et al., 2016), was more abundant than any other example we found. This combined with the lack of stable divergent transcripts at ~70% of cassette-inserted loci, led us to wonder if RNA degradation could mask aberrant transcription events. Although NMD might be expected to target a subset of aberrant transcripts that reach the cytosol, nuclear exosome activity seemed likely to be a more major contributor (Hug et al., 2016; Gudipati et al., 2012; Wyers et al., 2005). In fact, one of the studies that initially identified bidirectional transcription as a feature of eukaryotic promoters relied on cells lacking nuclear exosome activity by loss of function of the nuclear catalytic subunit Rrp6 (Xu et al., 2009). It subsequently became clear that an alternative transcription termination mechanism, the ‘NNS’ pathway—named for complex subunits Nrd1, Nab3, and Sen1—leads to termination of most divergent transcripts and their rapid degradation by the Rrp6/exosome (Gudipati et al., 2012; Porrua and Libri, 2015; Wyers et al., 2005; Schulz et al., 2013; Steinmetz et al., 2001).
 
 To test if Rrp6/exosome-mediated degradation was masking divergent transcripts produced from cassette insertion, we analyzed published global mRNA data from strain backgrounds with cassette insertions in an rrp6∆ strain background. For four cassette-replaced loci, control data were also available for the cassette replacement in the presence of RRP6 (Figure 5A–D; Malabat et al., 2015; Wang et al., 2020; Rege et al., 2015). For all of these cases, a divergent transcript from the site of cassette insertion was observed in rrp6∆ cells that either was absent or less abundant in the RRP6 control (Figure 5A–D). Interestingly, this included a case in which UPF1 was deleted by cassette insertion and 5′ transcript ends were sequenced (Figure 5D; Malabat et al., 2015). Here, the divergent transcript’s 5′ end was observed in the RRP6 control, consistent with our data, but was even more abundant in rrp6∆ cells (Figure 4E; Figure 5D). In the three other cases, for which data were available for cassette insertions in a rrp6∆ background but not a RRP6 control strain, including data for a rrp6∆::kanMX6 mutant itself, cassette-induced divergent transcripts were apparent (Figure 5—figure supplement 1A–C; Wang et al., 2020; Schmidt et al., 2012). Thus, for 7/7 (100%) of loci, replaced with a variety of cassettes, divergent transcripts were observed from inserted cassettes when nuclear exosome function was absent (achieved by rrp6∆; Figure 5A–D, Figure 5—figure supplement 1A–C). Although this sample size is not large (n = 7: rrp6∆, n = 20: RRP6), this result supports the model that expression cassette insertion always leads to production of a divergent transcript, driven by bidirectional promoter activity, but that these transcripts are usually terminated and degraded in cells with normal nuclear exosome activity. Together, these data argue that all loci are susceptible to cassette-induced bidirectional-promoter-driven production of divergent transcripts, but additional local characteristics at many loci prevent divergent transcription from disrupting neighboring genes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) Global mRNA data for cassette-inserted mutants in the presence and absence of Rrp6-mediated RNA decay. Pink arrows indicate cassette-driven divergent transcripts enriched in rrp6∆ backgrounds. (A) mRNA-seq data for wild-type, mpk1∆::kanMX4, and mpk1∆::kanMX4 rrp6∆::hphMX4 cells from Wang et al., 2020 are shown over the genomic region including MPK1 and its neighboring gene. (B) Tiling array data for wild-type, swr1∆::kanMX6, and swr1∆::kanMX6 rrp6∆::natMX6 cells from Rege et al., 2015 are shown over the genomic region including SWR1 and its neighboring gene. (C) Tiling array data for wild-type, rtt109∆::hphMX6, and rtt109∆::hphMX6 rrp6∆::natMX6 cells from Rege et al., 2015 are shown over the genomic region including RTT109 and its neighboring gene. (D) 5prime-seq data for wild-type, upf1∆::kanMX6, and upf1∆::kanMX6 rrp6∆::hphMX6 cells from Malabat et al., 2015 are shown over the genomic region including UPF1 and its neighboring genes. (E) Top: tiling array data for wild-type and rrp6∆::kanMX6 cells from Xu et al., 2009 are shown for the genomic region surrounding S. cerevisiae pTEF1. The TEF1 ORF shares high sequence homology with TEF2, leading to the lack of unique mapped reads in that region. Position of the natural divergent unstable transcript (CUT910) in relation to the long and short pTEF1 regions used below. Middle: schematics of constructs including the short and long S. cerevisiae pTEF1 regions in place of pTEF in the kanMX6 cassette are shown, as is a version of kanMX6 in which the NNS termination site for SNR13 is inserted flanking pTEF. Bottom: representative growth curves of wild-type, dbp1∆::long-pTEF1-kanMX6, dbp1∆::short-pTEF1-kanMX6, and dbp1∆::NNS-pTEF-kanMX6 cells are shown in YEP glycerol. Four independent replicates were analyzed and calculated doubling time for each replicate is shown in Figure 5—figure supplement 1D.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Global mRNA-seq data of cassette insertions in rrp6∆ backgrounds, pink arrows denote cassette-driven divergent transcripts. (A) Data for wild-type and air1∆::loxP-bler-loxP rrp6∆::LEU2 from Schmidt et al., 2012 are shown over the genomic region for AIR1. Note that the loxP-flanked cassette was not removed in this study. (B) Data for wild-type and air2∆::loxP-bler-loxP rrp6∆::LEU2 from Schmidt et al., 2012 are shown over the genomic region for AIR2. Note that the loxP-flanked cassette was not removed in this study. (C) mRNA-seq data for wild-type and rrp6∆::kanMX6 cells from Wang et al., 2020 are shown over the genomic region including RRP6 and its neighboring gene. (D) Calculated doubling times of wild-type, dbp1∆::NNS-kanMX6, dbp1∆::long-pTEF1-kanMX6, and dbp1∆::short-pTEF1-kanMX6 strains, defined in Figure 5E, grown in the non-fermentable carbon source glycerol. Data from three independent replicates are shown and statistical significance was determined by one-way analysis of variance (ANOVA) corrected for multiple comparisons with Dunnett’s multiple comparison test where a *padj < 0.05.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/81086/elife-81086-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Ribosome profiling footprint (FP) and mRNA-seq reads mapped to the DBP1 locus in wild-type and dbp1Δ (ORF removed with no resistance marker inserted) cells. Samples were collected during meiosis. (B) Translation (FP RPKM) for all genes expressed in dbp1Δ and wild-type cells during meiosis. See Figure 5—figure supplement 2—source data 1 for all quantified genes.
 
 Placement of large regions of DNA from other yeast species into S. cerevisiae results in an increased amount of divergent transcription from the foreign promoters, relative to endogenous S. cerevisiae promoters in the same cells (Jin et al., 2017). Because the pTEF version in commonly used budding yeast expression cassettes, including kanMX, is derived from A. gossypii, we wondered if species-specific regulation exacerbates the divergent transcription that we observe with cassette insertion (Wach et al., 1994). To test this, we swapped the pTEF in kanMX6, with the homologus S. cerevisiae pTEF1 region and inserted the new cassette at the DBP1 locus (Figure 5E; short-pTEF1). Insertion of the S. cerevisiae TEF1 promoter caused an even stronger respiratory growth defect than was observed with the original A. gossypii pTEF (Figure 5E, Figure 5—figure supplement 1D). This result is consistent with our finding that the S. cerevisiae TRP1 promoter can drive divergent transcription and neighboring gene disruption (Figure 2D, Figure 2—figure supplement 2E), and argues that off-target effects stemming from expression cassette insertion are not solely a result of inserting a foreign promoter sequence into S. cerevisiae.
 
@@ -105,31 +149,370 @@ The bidirectional nature of commonly used expression cassette promoters, includi
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-kanMX6</td>
+      <td>Longtine et al., 1998</td>
+      <td>pUB1</td>
+      <td>pFA6a backbone expressing kanr (Geneticin resistance) from TEF promoter and terminator</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-natMX6</td>
+      <td>Longtine et al., 1998</td>
+      <td>pUB153</td>
+      <td>pFA6a backbone expressing natr (Nourseothricin resistance) from TEF promoter and terminator</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-his3MX</td>
+      <td>Longtine et al., 1998</td>
+      <td>pUB3</td>
+      <td>pFA6a backbone expressing S. pombe HIS5 (complements S. cerevisiae his3) from TEF promoter and terminator</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-TRP1</td>
+      <td>Longtine et al., 1998</td>
+      <td>pUB2</td>
+      <td>pFA6a backbone expressing TRP1 from TRP1 promoter and terminator</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>kanMX6-ins1</td>
+      <td>This paper</td>
+      <td>pUB2255</td>
+      <td>pFA6a backbone with tDEG1 insulators flanking insert expressing KANr (Geneticin resistance) from TEF promoter and terminator (pFA6a-tDEG1-kanMX6-tDEG1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>kanMX6-ins2</td>
+      <td>This paper</td>
+      <td>pUB2272</td>
+      <td>pFA6a backbone with tDEG1 and tCYC1 insulators flanking insert expressing kanr (Geneticin resistance) from TEF promoter and terminator (pFA6a-tDEG1-kanMX6-tCYC1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TRP1MX6-ins4</td>
+      <td>This paper</td>
+      <td>pUB2308</td>
+      <td>pFA6a backbone with tDEG1 and tCYC1 insulators flanking insert expressing TRP1 from TEF promoter and terminator (pFA6a-tDEG1-TRP1MX6-tCYC1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>his3MX6-ins3</td>
+      <td>This paper</td>
+      <td>pUB2309</td>
+      <td>pFA6a backbone with tDEG1 and tCYC1 insulators flanking insert expressing S. pombe HIS5 (complements S. cerevisiae his3) from TEF promoter and terminator (pFA6a-tDEG1-HISMX6-tCYC1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>natMX6-ins5</td>
+      <td>This paper</td>
+      <td>pUB2310</td>
+      <td>pFA6a backbone with tDEG1 and tCYC1 insulators flanking insert expressing natr (Clonat resistance) from TEF promoter and terminator (pFA6a-tDEG1-NATMX6-tCYC1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDBP1-DBP1</td>
+      <td>This paper</td>
+      <td>pUB1761</td>
+      <td>leu2::LEU2 single integration vector, expresses DBP1 ORF from natural regulatory sequences (~1 kb upstream and ~1 kb downstream of ORF)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDBP1-DBP1-3V5</td>
+      <td>This paper</td>
+      <td>pUB1831</td>
+      <td>leu2::LEU2 single integration vector, expresses DBP1 ORF tagged with 3v5 expressed from natural regulatory sequences (~1 kb upstream and ~1 kb downstream of ORF)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMRP51-MRP51</td>
+      <td>This paper</td>
+      <td>pUB2401</td>
+      <td>leu2::LEU2 single integration vector, expresses MRP51 ORF from natural regulatory sequences (~0.5 kb upstream and ~0.5 kb downstream of ORF)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>kanMX6-ins6</td>
+      <td>This paper</td>
+      <td>pUB2434</td>
+      <td>pFA6a backbone with tDEG1 insulator flanking TEF promoter that expresses kanr (Geneticin resistance) (pFA6a-tDEG1-kanMX6)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>natMX6-ins7</td>
+      <td>This paper</td>
+      <td>pUB2435</td>
+      <td>pFA6a backbone with tCYC1 flanking pPGK1 from C. glabrata which expresses natr and is terminated by tPGK1 from C. glabrata (pFA6a-tCYC1-pPGK1-natR-tPGK1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>short-pTEF1-kanMX6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pFA6a backbone but with S. cerevisiae short pTEF1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>long-pTEF1-kanMX6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pFA6a backbone but with S. cerevisiae long pTEF1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NNS-kanMX6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pFA6a backbone but with SNR13 NNS termination site inserted 5′ of the pTEF from A. gossypii</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F deletion primer DBP1</td>
+      <td>This paper</td>
+      <td>7009</td>
+      <td>AAGGAGTTCTATATTTGGGTTACTCTTTTGTTCTTTCAGCgaattcgagctcgtttaaac</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R deletion primer DBP1</td>
+      <td>This paper</td>
+      <td>6678</td>
+      <td>TAAAAAAAAAACCCTTTGAGTGAAAGTATTACAAGAAAAACGGATCCCCGGGTTAATTAA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Wild-type</td>
+      <td>Padmore et al., 1991</td>
+      <td>UB13</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG (SK1 wild-type)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Wild-type</td>
+      <td>Brar et al., 2012</td>
+      <td>UB15</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, leu2::hisG/leu2::hisG, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG (SK1 wild-type)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6</td>
+      <td>This paper</td>
+      <td>UB15798</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, leu2::hisG/leu2::hisG, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG, dbp1∆::kanMX6/dbp1∆::kanMX6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Wild-type, MRP51-3V5</td>
+      <td>This paper</td>
+      <td>UB32228</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, MRP51-3V5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6, MRP51-3V5</td>
+      <td>This paper</td>
+      <td>UB32229</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::kanMX6, MRP51-3V5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Wild-type</td>
+      <td>This paper</td>
+      <td>UB22843</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, LEU2/LEU2, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG, DED1::DED1-3V5::HIS3/DED1::DED1-3V5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6</td>
+      <td>This paper</td>
+      <td>UB22958</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, LEU2/LEU2, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG, dbp1∆::kanMX6/dbp1∆::kanMX6, DED1::DED1-3V5::HIS3/DED1::DED1-3V5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6, leu2::pDBP1-DBP1-3V5::LEU2</td>
+      <td>This paper</td>
+      <td>UB23951</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, leu2::hisG/leu2::hisG, HIS3/HIS3, trp1::hisG/trp1::hisG, dbp1∆::kanMX6/dbp1∆::kanMX6, leu2::pDBP1-DBP1-3V5::LEU2/leu2::pDBP1-DBP1-3V5::LEU2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6, leu2::pMRP51-MRP51::LEU2</td>
+      <td>This paper</td>
+      <td>UB34918</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, leu2::hisG/leu2::hisG, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG, dbp1∆::kanMX6/dbp1∆::kanMX6, leu2::pMRP51-MRP51::LEU2/leu2::pMRP51-MRP51::LEU2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6, leu2::pDBP1-DBP1::LEU2</td>
+      <td>This paper</td>
+      <td>UB24206</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, leu2::hisG/leu2::hisG, HIS3/HIS3, trp1::hisG/trp1::hisG, dbp1∆::kanMX6/dbp1∆::kanMX6, leu2::pDBP1-DBP1::LEU2/leu2::pDBP1-DBP1::LEU2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6</td>
+      <td>This paper</td>
+      <td>UB15008</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::kanMX6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::natMX6</td>
+      <td>This paper</td>
+      <td>UB24358</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::natMX6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::his3MX</td>
+      <td>This paper</td>
+      <td>UB24360</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::his3MX</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::TRP1</td>
+      <td>This paper</td>
+      <td>UB24362</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::TRP1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>upf1∆::natMX6</td>
+      <td>This paper</td>
+      <td>UB25148</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, leu2::hisG/leu2::hisG, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG, upf1∆::natMX6/upf1∆::natMX6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Wild type</td>
+      <td>This paper</td>
+      <td>UB24955</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, LEU2/LEU2, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆</td>
+      <td>This paper</td>
+      <td>UB24950</td>
+      <td>MATa/MATalpha, ho::LYS2/ho::LYS2, lys2/lys2, ura3/ura3, LEU2/LEU2, his3::hisG/his3::hisG, trp1::hisG/trp1::hisG, dbp1∆/dbp1∆</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::tDEG1-kanMX6-tDEG1, MRP51-3V5</td>
+      <td>This paper</td>
+      <td>UB32497</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::tDEG1-kanMX6-tDEG1, MRP51-3V5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::tDEG1-kanMX6-tCYC1, MRP51-3V5</td>
+      <td>This paper</td>
+      <td>UB32498</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::tDEG1-kanMX6-tCYC1, MRP51-3V5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::rev-kanMX6</td>
+      <td>This paper</td>
+      <td>UB35165</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::rev-kanMX6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::kanMX6-ins6</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::kanMX6-ins6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::rev-kanMX6-ins6</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::rev-kanMX6-ins6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::natMX6-ins7</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::NATMX6-ins7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::rev-natMX6-ins7</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::rev-NATMX6-ins7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::short-pTEF1-kanMX6</td>
+      <td>This paper</td>
+      <td>UB35339</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::short-pTEF1-kanMX6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::long-pTEF1-kanMX6</td>
+      <td>This paper</td>
+      <td>UB35337</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::long-pTEF1-kanMX6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>dbp1∆::NNS-kanMX6</td>
+      <td>This paper</td>
+      <td>UB35331</td>
+      <td>MATa, ho::LYS2, lys2, ura3, leu2::hisG, his3::hisG, trp1::hisG, dbp1∆::NNS-kanMX6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 All strains were derived from the Saccharomyces cerevisiae SK1 background (Padmore et al., 1991). Detailed strain genotypes can be found in Key resources table. Strains were diploid MATa/alpha unless otherwise specified as haploid (MATa). Selection-mediated loss of function mutants were created by transforming wild-type haploids with a linear PCR fragment encoding a selection cassette that would replace the ORF of interest via homologous DNA repair mechanisms (Longtine et al., 1998; Wach et al., 1997; Wach et al., 1994; Baudin et al., 1993; Lorenz et al., 1995). Sequences directly upstream and downstream of each replaced ORF were always left intact. Genotypes for all strains were confirmed using PCR and mutants were backcrossed to a wild-type strain of the opposite mating type to ensure clearance of possible background mutations from transformation. The marker-less dbp1Δ was created by transforming a wild-type haploid with a plasmid-encoding Cas9 and a sgRNA targeting the DBP1 ORF, alongside a linear repair fragment that removes the DBP1 ORF while preserving the upstream and downstream adjacent sequence. Strains containing the Mrp51-3v5 allele were created by transforming wild-type or the selection replaced dbp1Δ strain of interest with a plasmid-encoding Cas9 and a sgRNA targeting MRP51, alongside a linear repair template that carboxy-terminally tags Mrp51 with the 3v5 sequence and introduces a synonomous mutation in the guide target sequence to prevent re-editing. Strains expressing exogenous Dbp1 or Mrp51 from the LEU2 locus were created by cloning the ORF of interest as well as ~1 kb of upstream and downstream regulatory sequence (for DBP1), or 500 bp of upstream and downstream regulatory sequence (for MRP51) into a single integration plasmid targeted to LEU2. This plasmid was linearized by digestion with SwaI nuclease (NEB, Ipswich, MA) and transformed into the dbp1Δ::kanMX6 strain.
 
-## Yeast growth conditions
+### Yeast growth conditions
 
 Yeast were grown for experiments as in Powers and Brar, 2021. Briefly, strains were thawed on YPG plates from glycerol stocks overnight, then grown on YPD plates for a day before use in experiments. All growth experiments were carried out at 30°C using YEP media supplemented with 2% (wt/vol) of the carbon source, except for glycerol which was used at 3% (vol/vol). All growth experiments shown were repeated at least twice with one representative growth curve shown for each. Synchronous sporulating cells were prepared by first growing cells in YEP 2% dextrose for 24 hr at room temperature then diluted into BYTA at OD600 = 0.25 and grown overnight at 30°C. Next, cells were pelleted, washed with water, and resuspended in sporulation (SPO) medium: either (0.5% KAc [pH = 7.0] supplemented with 0.02% raffinose) for Figure 1 ribosome profiling and mRNA-seq experiments, or rich SPO medium (2% KAc [pH = 7.0] supplemented with 40 mg/l adenine), 40 mg/l uracil, 20 mg/l histidine, 20 mg/l leucine, 20 mg/l tryptophan for sporulation efficiency, polysome experiments, and ribosome profiling in Figure 5—figure supplement 2. Sporulation efficiency was counted at 24 hr after induction into SPO media and 200 cells were counted per sample for three independent biological replicates. Samples were blinded prior to counting.
 
-## Ribosome profiling and mRNA-seq
+### Ribosome profiling and mRNA-seq
 
 Meiotic yeast cells were harvested after 4 or 6 hr in sporulation medium (Figure 1 data: 4 hr; Figure 3—figure supplement 1: 6 hr), by brief treatment with 100 µg/ml cycloheximide then flash freezing. They were subjected to ribosome profiling and mRNA-seq as described in Powers and Brar, 2021. Reads per ORF were determined following mapping of all reads to the SK1 genome. RPKM values for ribosome footprints (FP) and mRNA reads were calculated by dividing the number of raw reads per gene by the total number of million mapped reads per sample and by the length in kilobases of each gene. TE was calculated by dividing the FP RPKM/mRNA RPKM for each gene. Data visualization of genome tracts was made using MochiView (Homann and Johnson, 2010).
 
-## Immunoblotting
+### Immunoblotting
 
 Trichloroacetic acid (TCA) extractions were performed to collect total protein from samples as described in Chen et al., 2017; Chen et al., 2017. Briefly, ~2.5 OD600 of yeast were treated with 5% TCA at 4°C overnight, washed with acetone, dried then lysed in lysis buffer (50 mM Tris–HCl [pH 7.5], 1 mM ethylenediaminetetraacetic acid (EDTA)), 2.75 mM dithiothreitol (DTT), protease inhibitor cocktail (cOmplete EDTA-free, Roche) for 5 min on a Mini-Beadbeater-96 (Biospec Products). Next, 3× sodium dodecyl sulfate (SDS) sample buffer (187.5 mM Tris [pH 6.8], 6% β-mercaptoethanol, 30% glycerol, 9% SDS, 0.05% bromophenol blue) was added to 1× and the cell lysate was boiled for 5 min. Proteins were run on 4–12% Bis-Tris Bolt gels (Thermo Fisher) then transferred to 0.45 µM nitrocellulose membranes using the 30 min mixed molecular weight protocol on the Trans-Blot Turbo System from Bio-Rad. Membranes were blocked with Intercept (phosphate-buffered saline, PBS) blocking buffer (LI-COR Biosciences, Lincoln, NE) at room temperature then incubated overnight at 4°C with mouse anti-v5 (1:1000, Invitrogen, RRID:AB_2556564) and rat anti-tubulin alpha (1:10,000, Serotec, RRID:AB_325005). Membranes were washed in PBS-0.08% Tween then incubated with an anti-mouse secondary antibody conjugated to IR Dye 800 (RRID:AB_621842) at a 1:15,000 dilution, and either an anti-rat secondary antibody conjugated to IR Dye 680 (RRID:AB_10956590) at a 1:15,000 dilution at room temperature for 1–2 hr (LI-COR Biosciences). Immunoblot images were generated and quantified using the Odyssey system (LI-COR Biosciences).
 
-## Polysome analysis
+### Polysome analysis
 
 Cells were treated with 100 µg/ml cycloheximide for 30 s then filter collected, flash frozen, lysed, and prepared for sucrose gradient centrifugation of as in Hughes et al., 2019, with the following exceptions. Samples were thawed just prior to their loading on sucrose gradients, and SUPERase·In was added as for ‘mock digested samples’. Also, the polysome lysis buffer used was modified to contain protease and phosphatase inhibitors and is as follows: 20 mM Tris pH 8, 140 mM KCl, 1.5 mM MgCl2, 100 µg/ml cycloheximide, 1% Triton X-100, 2 µg/ml Aprotinin, 10 µg/ml Leupeptin, 1 mM phenylmethylsulfonyl flouride (PMSF), 1:100 PIC2, and 1:100 PIC3. Lysates were loaded onto 7–47% sucrose gradients and spun in a SW 41 Ti rotor for 3 hr at 35,000 rcf at 4°C. Following the spin, samples were kept at 4°C and immediately collected using the Gradient Master gradient station from BioComp while monitoring 260 nm absorbance with the Bio-Rad EM-1 Economonitor. Samples were fractionated as shown in Figure 2, flash frozen, and submitted for mass spectrometry analysis.
 
-## Polysome fraction processing for LC–MS/MS measurements
+### Polysome fraction processing for LC–MS/MS measurements
 
 Proteins were precipitated and desalted using the SP3 method for liquid chomatography with tandem mass spectrometry (LC-MS/MS) as described in Hughes et al., 2019; Cox and Mann, 2008. 50% from each polysome fraction (volume) were processed. Disulfide bonds were reduced with 5 mM dithiothreitol and cysteines were subsequently alkylated with 10 mM iodoacetamide. Proteins were precipitated on 0.5 µg/µl speedBead magnetic carboxylated modified beads (1:1 mix of hydrophobic and hydrophilic beads, cat# 6515215050250, 45152105050250, GE) by addition of 100% ethanol in a 1:1 (vol:vol) sample:ethanol ratio followed by 15 min incubation at 25°C, 1000 rpm. Protein-bound beads were washed in 80% ethanol and proteins were digested off the beads by addition of 0.8 µg sequencing grade modified trypsin (Promega) in 100 mM ammonium bicarbonate, incubated 16 hr at 25°C, 600 rpm. Beads were removed and the resulting tryptic peptides evaporated to dryness in a vacuum concentrator. Dried peptides were further desalted by another round of SP3 precipitation; peptides were reconstituted in 200 µl of 95% acetonitrile (ACN), followed by addition of bead-mix to a final concentration of 0.5 µg/µl and incubated 15 min at 25 °C, 1000 rpm. Beads were subsequently washed in 80% ethanol, peptides were eluted off the beads in 50 µl 2% dimethyl sulfoxide and samples were evaporated to dryness in a vacuum concentrator. Dried peptides were then reconstituted in 3% ACN/0.2% formic acid to a final concentration of 0.5 µg/µl.
 
-## LC–MS/MS analysis on a Q-Exactive HF
+### LC–MS/MS analysis on a Q-Exactive HF
 
 About 1 μg of total peptides were analyzed on a Waters M-Class UPLC using a 25 cm Ionopticks Aurora column coupled to a benchtop Thermo Fisher Scientific Orbitrap Q Exactive HF mass spectrometer. Peptides were separated at a flow rate of 400 nl/min with a 190-min gradient, including sample loading and column equilibration times. Data were acquired in data-dependent mode using Xcalibur software. MS1 Spectra were measured with a resolution of 120,000, an AGC target of 3e6 and a mass range from 300 to 1800 m/z. Up to 12 MS2 spectra per duty cycle were triggered at a resolution of 15,000, an AGC target of 1e5, an isolation window of 1.6 m/z and a normalized collision energy of 27.
 
@@ -137,18 +520,18 @@ All raw data were analyzed with MaxQuant software version 1.6.10.43 (de Hoon et 
 
 LFQ normalized values were then clustered with Cluster 3.0 (Saldanha, 2004) and visualized with Java TreeView (Song et al., 2016). Proteins not quantified in 2 or more samples were excluded in clustering. GO enrichment was assessed on the clusters specified (June 2022) and compared to the background population of all proteins quantified in the experiment (Boyle et al., 2004).
 
-## Radioactive amino acid incorporation assays
+### Radioactive amino acid incorporation assays
 
 Cells were transferred to sporulation (SPO) media and incubated at 30°C for 4 hr. To metabolically label the cells 5 µL of EasyTag EXPRESS 35S protein labeling mix (PerkinElmer), was added to 10 ml of SPO cultures and incubated with shaking for 10 min at 30°C. Protein was precipitated by addition of 100 µl 100% TCA to 900 µl SPO culture and incubated at 95°C with shaking. Samples were chilled on ice then pelleted and washed with cold 10% TCA, followed by a wash in cold 100% ethanol. Samples were resuspended in 5 ml of Econo-Safe scintillation fluid (RPI). Scintillation was counted for 2 min and the 35S incorporation rates were derived from counts per minute normalized to cell density between samples and to wild-type measurements.
 
-## Design and testing of insulated selection cassettes
+### Design and testing of insulated selection cassettes
 
 Based on the previous report that the DEG1 and CYC1 terminators can be used as insulator sequences (Song et al., 2016), we amplified these terminators from wild-type yeast and placed them into the 5′ and 3′ ends of the pFA6a-kanMX6 backbone using gibson assembly. Insulators were placed just inside the standard F1 and R1 primer amplification sites such that they would be useable with any primers designed to the previous system (pFA6a; Longtine et al., 1998). Insulated plasmids were fully sequenced over cloning junctions and the entire region to be amplified and integrated into yeast during transformation. To test the ability of these insulators to prevent aberrant transcription at the DBP1 locus, the kanMX6-ins cassettes were amplified and transformed into yeast exactly as had been done for the previous kanMX6 selection cassettes used in this study. When used to replace DBP1 ORF, Mrp51-3v5 levels and 5′ RACE confirmed the efficacy of the kanMX6-ins cassettes in preventing aberrant LUTI regulation of MRP51. We then replaced kanr in the insulated plasmids with three additional markers for selection (including S. pombe HIS5 amplified from pFA6a-HIS3MX6): complements S. cerevisiae his3, TRP1 amplified from pFA6a-TRP1, and natr such that they can be used conveniently in combination as was done for the original toolkit (Longtine et al., 1998; Wach et al., 1994). To clone kanMX6-ins6 primers were used to amplify the entire kanMX6-ins2 except for the 3′ tCYC1 terminator and the Q5 Site-Directed Mutagenesis Kit was used to circularize the plasmid. For natMX6-ins7 a gBlocks Gene Fragment containing the PGK1 promoter and terminator from C. glabrata expressing natr and 5′ flanked by the S. cerevisiae CYC1 terminator was cloned into the pFA6a backbone. Detailed descriptions of these plasmids and can be found in Key resources table.
 
-## 5′ RACE
+### 5′ RACE
 
 5′ RACE was performed with total RNA extracted from samples using phenol–chloroform precipitation and the GeneRacer Kit with SuperScript III RT and Topo TA Cloning Kit for Sequencing. For each sample, 4.8 µg of total RNA was used. Random primers were used to reverse transcribe the decapped cDNA library. The 5′ ends of the MRP51 cDNA were then amplified using the GeneRacer 5′ primer and a reverse gene-specific primer (5′ ACCGTCCAAGCAACTCTGCCAATGTC 3′) in a reaction with Platinum Taq High Fidelity DNA Polymerase. Amplified 5′ ends were then cloned into a Topo TA Cloning vector and clones were miniprepped and sequenced using Sanger sequencing. SnapGene was used to visualize and align the sequenced cDNA ends to the corresponding genomic position.
 
-## Materials availability
+### Materials availability
 
 All newly created materials are available upon request. Newly created ‘Insulated’ selection cassettes will also be deposited to Addgene and made publicly available.

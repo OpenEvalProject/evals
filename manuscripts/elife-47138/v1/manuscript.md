@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.47138.001 The testis is a peculiar tissue in many respects. It shows patterns of rapid gene evolution and provides a hotspot for the origination of genetic novelties such as de novo genes, duplications and mutations. To investigate the expression patterns of genetic novelties across cell types, we performed single-cell RNA-sequencing of adult Drosophila testis. We found that new genes were expressed in various cell types, the patterns of which may be influenced by their mode of origination. In particular, lineage-specific de novo genes are commonly expressed in early spermatocytes, while young duplicated genes are often bimodally expressed. Analysis of germline substitutions suggests that spermatogenesis is a highly reparative process, with the mutational load of germ cells decreasing as spermatogenesis progresses. By elucidating the distribution of genetic novelties across spermatogenesis, this study provides a deeper understanding of how the testis maintains its core reproductive function while being a hotbed of evolutionary innovation.
+The testis is a peculiar tissue in many respects. It shows patterns of rapid gene evolution and provides a hotspot for the origination of genetic novelties such as de novo genes, duplications and mutations. To investigate the expression patterns of genetic novelties across cell types, we performed single-cell RNA-sequencing of adult Drosophila testis. We found that new genes were expressed in various cell types, the patterns of which may be influenced by their mode of origination. In particular, lineage-specific de novo genes are commonly expressed in early spermatocytes, while young duplicated genes are often bimodally expressed. Analysis of germline substitutions suggests that spermatogenesis is a highly reparative process, with the mutational load of germ cells decreasing as spermatogenesis progresses. By elucidating the distribution of genetic novelties across spermatogenesis, this study provides a deeper understanding of how the testis maintains its core reproductive function while being a hotbed of evolutionary innovation.
 
 ## Introduction
 
@@ -35,11 +35,27 @@ These patterns of mutation and de novo gene expression augment and enrich our cu
 
 ## Results
 
-## Unsupervised clustering elucidates the distribution of de novo genes across cell types
+### Unsupervised clustering elucidates the distribution of de novo genes across cell types
 
 We prepared a single-cell suspension from freshly dissected testes of 48-hours-old D. melanogaster adult males (Figure 1—figure supplement 1, also see Materials and methods). The cell suspension was then made into a library and sequenced. We recovered 426,563,073 reads from a total of 5000 cells. On average, we mapped 85,312 reads per cell and detected the expression of an average of 4185 genes per cell. The dataset correlates well with bulk testis RNA-seq and a separate testis single-cell RNA-seq library, with a Pearson’s R of 0.97, indicating high reproducibility (Figure 1—figure supplement 2). Using t-Stochastic-Neighbor Embedding (t-SNE) in Seurat (Van Der Maaten and Hinton, 2008; Satija et al., 2015) we reduced the dimensionality of the gene/cell expression matrix to two primary axes and grouped cells by their similarity across their thousands of unique gene expression profiles. Grouping similar cells into clusters, we observed marker genes enriched in particular clusters, allowing us to infer the identity of the cells within each cluster (see Materials and methods).
 
 Based on the clustering results, we inferred the presence of germline stem cells, spermatogonia, spermatocytes, and spermatids (germ cells) as well as cyst stem cells, terminal epithelial cells, and hub cells (somatic cells) (Figure 1A and B). We confirmed that the top 50 most highly enriched genes in cell clusters from each cell type (Supplementary file 1) were consistent with previous knowledge of marker genes. For instance, cup genes were biased toward late spermatids (Barreau et al., 2008), and Hsp23 and MtnA were highly expressed in the epithelial cells (Faisal et al., 2014; Michaud et al., 1997). Cell clusters from each developmental stage in the t-SNE map are near each other, suggesting that cell progression through spermatogenesis is a continuous process. The expression of marker genes confirmed the assignment of cell clusters (Figure 1C and D). Germline Stem Cells (GSCs) and early spermatogonia clustered together due to 1) high transcriptional similarity, 2) the relatively low numbers of GSCs within the tissue, and 3) the sparse expression of GSC-specific marker genes. Different types of somatic cells clustered close to each other in the t-SNE graph, suggesting distinct transcriptional patterns compared to germ cells. A principal component analysis of variable genes in the testis is presented in Figure 1—figure supplement 3.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig1-v1.jpg)
+
+**Figure 1.:** (A) An illustration of the major cell types in the testis, and the marker genes we used to identify them are in brackets. Somatic cells are hub, cyst, and epithelial cells. Spermatogenesis begins with germline stem cells which undergo mitotic divisions to form spermatogonia. These become spermatocytes which undergo meiosis and differentiate into spermatids. (B) A t-SNE projection of every cell type identified in the data. (C) Examples of marker genes that vary throughout spermatogenesis. His2Av is most active in early spermatogenesis, fzo and soti are active in intermediate and late stages, respectively, and p-cup is exclusively enriched in late spermatids. (D) Dotplot of scaled expression of marker genes in each inferred cell type. The size of each dot refers to the proportion of cells expressing a gene, and the color of each dot represents the calculated scaled expression value; blue is lowest, red is highest. 0 is the gene’s mean scaled expression across all cells and the numbers in the scale are z scores. The cutoffs shown here were chosen to emphasize cell-type-specific enrichment of key marker genes. The genes used to assign each cell type are detailed in the Materials and methods section.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative images of single cell suspensions from two D. melanogaster strains, RAL 517 (A) and our lab’s wild strain (B). Dissected testes were treated with proteases followed by straining and washes (see Materials and methods). The images contain single cells of various developmental stages, some with tails of various lengths. Cells were imaged using a 40X magnification and scale bars represent 10 μm. Since cells are present in many focal planes, the size of some cells may not correspond to the scale bar shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Correlation between DESeq2 regularized log-transformed TPM (transcripts per million) of genes in 517 whole-tissue RNA-seq data and our single-cell RNA-seq data. Despite different library strategies and sequencing methods our data correlate extremely well with whole-tissue RNA-seq data indicating that our dataset has captured an accurate sampling of testis-expressed genes and our results are reproducible. (B) Correlation between our RAL517 single-cell library and a library of a wild D. melanogaster strain from our lab. Despite being from different strains, the libraries show a high correlation in normalized TPM. This result shows, however, that many genes vary between D. melanogaster strains, necessitating further work to understand transcriptome evolution on a single-cell level.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Horizontally, each line is 500 randomly selected cells, and vertically, the expression of the 15 genes with the highest positive and negative scores for the principal component. For PC 1, one interpretation could be that soti, a marker of late spermatocytes/early spermatids, is negatively correlated with the expression of many ribosomal protein genes. This is consistent with our finding that ribosomal protein genes peak in early spermatogenesis. It is worth noting that the higher numbered PCs become more and more diffuse, as they each explain a smaller proportion of variance than the PCs 1 and 2.
 
 To gauge the accuracy of our cell type assignments, we queried if various cell types utilize biological pathways known to be important in spermatogenesis. Using a PANTHER Gene Ontology (GO) search of all significantly enriched genes for each cell type, we found that the most enriched GO terms for GSC, early and late spermatogonia tend to involve translation, transcription, and ATP synthesis (Supplementary file 2), supporting high levels of cellular activity. Early spermatocytes showed an enrichment for ubiquitin-independent proteasomal catabolism; late spermatocytes were enriched for genes involved in spermatid motility and differentiation (Supplementary file 2). Early spermatids were enriched in GO terms for spermatogenesis, gamete generation, and cellular movement, and late spermatids showed no enrichment in any GO terms (Supplementary file 2).
 
@@ -53,17 +69,127 @@ Since most de novo genes in Drosophila are expressed in the testis (Zhao et al.,
 
 After calculating the cell-type-specific expression profile for every detectable gene, we asked whether a given cell expresses similar proportions of de novo genes, testis-specific genes, and all other annotated genes. We observed that in most cell types, segregating de novo genes were the least commonly expressed group of genes, fixed de novo genes were more common, and testis-specific genes were most commonly expressed (Figure 2C). Early and late spermatocytes, however, express similar proportions of fixed de novo genes and testis-specific genes. Moreover, spermatocytes also show the highest relative abundance of segregating de novo genes compared to other cell types. Altogether, the high proportion of de novo genes expressed in spermatocytes suggests that such genes may play functional roles in these cells and development stage.
 
-## Developmental trajectories show de novo gene expression bias during spermatogenesis
+### Developmental trajectories show de novo gene expression bias during spermatogenesis
 
 To study the transcriptomic path that a progenitor cell would take during its differentiation process, we reconstructed the developmental trajectory of spermatogenesis using monocle (Trapnell et al., 2014), which uses a graph-based minimum-spanning tree to align cells along an inferred path called pseudotime (Figure 3A, Figure 3—figure supplement 1). Pseudotime does not correspond to the actual timing of developmental processes; rather, it is a roadmap of cell differentiation as a function of transcriptomic changes. As an initial step to verify the accuracy of our pseudotime map, we plotted the number of UMIs detected as a function of pseudotime as a proxy of RNA content throughout spermatogenesis (Figure 3B). We saw that the number of UMIs starts fairly low, increases dramatically, and then decreases towards the end of pseudotime. This is consistent with the known post-meiotic downregulation of most transcription during spermatogenesis (Barreau et al., 2008).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig3-v1.jpg)
+
+**Figure 3.:** (A) We aligned every cell from our testis sample along an unsupervised developmental trajectory. From the expression of marker genes, we found somatic cells (blue) which were forced onto the developmental trajectory. For further analysis we disregard this branch (See Materials and methods, Figure 3—figure supplement 1). Spermatogenesis begins at the far-left end of the trajectory. (B) The relative RNA content per cell peaks in mid-spermatogenesis, and declines during spermatid maturation, as approximated by the number of UMIs detected per cell. The number of genes expressed declines as well. The black line is a Loess-smoothed regression of the data, which should be thought of as a general trend among stochastic data and not a mathematical model. (C) Loess-smoothed expression of marker genes along the red germ cell lineage assigned in panel A. Along this lineage, the relative expression of marker genes is consistent with their temporal dynamics inferred from previous work. (D) Fixed de novo genes show a variety of expression patterns, including biphasic, early-biased, and late-biased. (E) Segregating de novo genes are often biased towards early/mid spermatogenesis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** This is the same pseudotime developmental trajectory from Figure 3A, but each cell has been colored according to its expression of MtnA, a marker of somatic cells. This led us to conclude that state three in Figure 2A is mostly somatic cells and is not part of the germ lineage since it is enriched in MtnA.
 
 By plotting inferred gene expression in every cell as a function of pseudotime, we approximated the behavior of individual genes throughout spermatogenesis. Marker genes consistently show a similar profile in pseudotime and the Seurat analysis. For instance, bam, vas, and His2Av enrichment denote the beginnings of spermatogenesis, and fzo and twe denote early and late spermatocytes, respectively (Figure 3C). Confident that our calculated pseudotime is an accurate representation of spermatogenesis, we proceeded to use it to query how the expression of de novo genes changes throughout spermatogenesis.
 
 If a given novel gene is functional, one would expect it to be biased towards meiotic cells, since germline stem cell-specific genes may not undergo long-term and recurrent positive selection (Choi and Aquadro, 2015). If these genes confer limited beneficial effects, we predict that they may show stochastic transcription pattern in a large variety of cell types. Consistent with our predicted expression patterns of functional novel genes, we found that a large number of de novo genes are expressed specifically in a stage-biased manner, with a significant bias towards meiotic germ cells. Fixed annotated de novo genes show a variety of expression patterns over pseudotime (Figure 3D), with some showing bias towards early stages (CG44174), some with a bimodal expression pattern (CG44329), and some biased towards late spermatogenesis (CR44412). The top five most differentially expressed segregating de novo genes show a variety of expression patterns, but four of the five are biased towards early/middle pseudotime (Figure 3E).
 
-## Gene age and mode of origination affects gene expression bias across cell types
+### Gene age and mode of origination affects gene expression bias across cell types
 
 Our prior observation that many de novo genes are enriched in GSC/early spermatogonia led us to ask whether the expression patterns of de novo genes differ from the expression patterns of other genes. Although individual de novo genes show a variety of expression patterns, we found that, compared to testis-specific genes, segregating de novo genes are less expressed in germline stem cells (p.adj = 9.35E-04) and slightly enriched in early spermatids (p.adj = 1.70E-02) (Figure 4A, Table 1). By contrast, the scaled expression of fixed de novo genes is not statistically different from that of testis-specific genes (Figure 4B, Table 1). These results suggest that cell-type expression patterns may impact the likelihood that a de novo gene will reach fixation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig4-v1.jpg)
+
+**Figure 4.:** Spermatogenesis starts at GSC, early spermatogonia and proceeds rightward. (A) The scaled expression distribution of segregating de novo genes in each cell type, compared with the distribution of every other gene and testis-specific genes. For every gene, 0 is its mean scaled expression in a cell type, and the Y axis corresponds to Z scores of deviations higher or lower than that mean value. Asterixis represent Hochberg-corrected p values. The color of the asterixis indicates which gene set is being compared to de novo genes, and their placement above or below the boxplots indicates that gene set’s relationship (higher or lower) to de novo genes. By this measure, de novo genes are biased downwards in early spermatogenesis and upwards in early spermatids. (B) The scaled expression patterns of fixed de novo genes are typical of testis-specific genes. (C) The scaled expression of detected fixed de novo genes across pseudotime (left to right), clustered by monocle’s plot_pseudotime_heatmap function. While most de novo genes are biased towards intermediate cell-types, a small portion of de novo genes are most expressed during early and late spermatogenesis. (D) The scaled expression of melanogaster-specific duplicate genes over pseudotime. Despite being a similar evolutionary age to fixed de novo genes, young duplicate genes are more likely to be biased towards early and late spermatogenesis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** A row is a gene, shown as it progresses along pseudotime from left to right. (A) The scaled expression of a set of parental copies of duplicated genes, plotted in pseudotime. (B) The scaled expression of the derived copies of duplicated genes.
+
+**Table 1.**
+ Adjusted p values and direction of bias for gene expression biases of selected gene groups in germ cells.Spermatogenesis progresses downward from GSC/Early spermatogonia and ends in late spermatids. Upwards arrows indicate that the top group of genes is biased upwards compared to the bottom group, and downwards arrows indicate that it is biased downward according to a directional Hochberg test. For example, ribosomal proteins are more expressed in late spermatogonia than all other genes, with an adjusted p value of 1.24E-75. Note that while segregating de novo genes are expressed differently from testis-specific genes in GSC, early spermatogonia and early spermatids, fixed de novo genes do not significantly deviate from expression patterns of testis-specific genes in any cell type.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Versus:</th>
+      <th colspan="2">Ribosomal protein genes</th>
+      <th colspan="2">Segregating de novo genes</th>
+      <th colspan="2">Fixed de novo genes</th>
+      <th colspan="2">DNA repair genes</th>
+    </tr>
+    <tr>
+      <th>All other genes</th>
+      <th>Testis-specific genes</th>
+      <th>All other genes</th>
+      <th>Testis-specific genes</th>
+      <th>All other genes</th>
+      <th>Testis-specific genes</th>
+      <th>All other genes</th>
+      <th>Testis-specific genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GSC, early spermatogonia</td>
+      <td>↑ 1.13E-82</td>
+      <td>↑ 1.44E-84</td>
+      <td>↓ 1.46E-21</td>
+      <td>↑ 9.35E-04</td>
+      <td>↓ 2.92E-22</td>
+      <td>ns</td>
+      <td>↑ 4.69E-26</td>
+      <td>↑ 8.14E-62</td>
+    </tr>
+    <tr>
+      <td>Late spermatogonia</td>
+      <td>↑ 1.24E-75</td>
+      <td>↑ 1.62E-74</td>
+      <td>↓ 8.22E-19</td>
+      <td>ns</td>
+      <td>↓ 5.89E-18</td>
+      <td>ns</td>
+      <td>↑ 2.30E-20</td>
+      <td>↑ 5.80E-44</td>
+    </tr>
+    <tr>
+      <td>Early spermatocytes</td>
+      <td>↓ 2.53E-76</td>
+      <td>↓ 1.08E-71</td>
+      <td>↑ 4.08E-15</td>
+      <td>ns</td>
+      <td>↑ 5.31E-13</td>
+      <td>ns</td>
+      <td>↓ 6.50E-23</td>
+      <td>↓ 1.75E-38</td>
+    </tr>
+    <tr>
+      <td>Late spermatocytes</td>
+      <td>↓ 2.51E-57</td>
+      <td>↓ 1.90E-58</td>
+      <td>↑ 1.09E-10</td>
+      <td>ns</td>
+      <td>↑ 2.17E-15</td>
+      <td>ns</td>
+      <td>↓ 3.96E-09</td>
+      <td>↓ 4.58E-29</td>
+    </tr>
+    <tr>
+      <td>Early spermatids</td>
+      <td>↓ 8.94E-03</td>
+      <td>↓ 1.57E-08</td>
+      <td>ns</td>
+      <td>↓ 1.70E-02</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>↑ 5.89E-08</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Late spermatids</td>
+      <td>↓ 7.40E-10</td>
+      <td>↓ 1.70E-02</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+  </tbody>
+</table>
 
 We also asked whether this spermatocyte-biased expression is driven by segregating or fixed de novo genes. We quantified gene expression bias for segregating and fixed de novo genes separately and found that both groups of genes display the same direction of bias and a similar degree of statistical significance in every cell type (Table 1, Supplementary file 3). These results suggest that cell-type expression patterns do not impact the likelihood that a de novo gene will reach fixation, rather, the function and fitness effect may play an important role in the process of fixation.
 
@@ -71,13 +197,62 @@ Given a general trend for meiotic enrichment of de novo genes, we asked what pro
 
 Given that de novo genes, like typical testis-specific genes, are usually maximally expressed during meiosis, we asked if the expression dynamics of recently duplicated genes, another class of young genes, are similar (Figure 4D). Using a list of D. melanogaster-specific ‘child’ genes and their parental copies (Zhou et al., 2008), we queried expression of the parental and derived copies of duplicated genes over pseudotime (Figure 4—figure supplement 1). We classified gene expression patterns into ‘early’, ‘late’ ‘middle’ and ‘bimodal’ for each group. Only 2/14 ‘child’ genes whose expression could be detected in testis had the same expression pattern as their parental copy, indicating that most derived gene copies are regulated by different mechanisms than their parental copy. All parental genes exhibited an early or late expression pattern, but child genes were a mixture of early, late, middle and bimodal expression patterns. (Table 2, Figure 4—figure supplement 1).
 
+**Table 2.**
+ Frequency of pseudotime expression patterns for melanogaster-specific fixed de novo genes and melanogaster-specific duplicate genes.For genes in Figure 4C and D, we counted the number of genes showing a strong bias for early pseudotime, late pseudotime, mid-pseudotime, or a bimodal expression pattern. Fixed de novo genes are most frequently biased towards mid-pseudotime and the plurality of melanogaster-specific child duplicate genes show a bimodal expression pattern. Pseudotime expression plots of the parent-child duplicate gene pairs used in this analysis are in Figure 4—figure supplement 1. Proportions are rounded to two decimal places and may not add up to 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pattern</th>
+      <th>Fixed de novo proportion</th>
+      <th>Parental duplicate proportion</th>
+      <th>melanogaster-specific child duplicate proportion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Early</td>
+      <td>0.26</td>
+      <td>0.37</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Mid</td>
+      <td>0.62</td>
+      <td>0.00</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Late</td>
+      <td>0.11</td>
+      <td>0.63</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Bimodal</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.43</td>
+    </tr>
+  </tbody>
+</table>
+
 Bimodal expression (a peak in early and middle/late stages) is the most frequent expression pattern for child genes (43%), a pattern we did not observe for any parental genes. It is possible that these bimodal genes were originally expressed with the same pattern as their parental copy and later acquired expression in a different stage, consistent with neofunctionalization (Ding et al., 2010; Lynch and Conery, 2000).
 
 We also observed strikingly different expression patterns for young genes depending on their mode of origination (duplication vs. de novo). To compare young genes of a similar age group, we quantified expression patterns for fixed melanogaster-specific de novo genes from Zhao et al. (2014), and melanogaster-specific gene duplicates from Zhou et al. (2008). We found that fixed de novo genes are most frequency biased towards mid-spermatogenesis (Table 2), and melanogaster-specific duplicate genes are most commonly bimodally expressed. This result indicates that a gene’s expression pattern is influenced by its mode of origination. De novo genes often build regulatory sequences from scratch, but young gene duplicates may co-opt flanking promoter and enhancer sequences from their parental copy.
 
-## Mutational load decreases throughout spermatogenesis
+### Mutational load decreases throughout spermatogenesis
 
 Since evolutionary innovations largely depend on novelties occurring at the DNA sequence level, we asked if the mutational load of germ cells varies during the process of sperm development. From our single-cell RNA-seq data, we identified 73 high-confidence substitutions that likely arose de novo. While the reference allele for every variant was present in somatic cells, the variant form of each of them was exclusively found in germ cells, and each inferred substitution is unlikely to be an RNA editing event or unrepaired transcriptional error (see Materials and methods). These substitutions were not present in population-level genome sequencing or previous whole-tissue RNA-seq of RAL517 testis, and the variant form of each substitution was also not present in any of our 3 types of somatic cells. We observed several instances of tightly clustered substitutions (<20 bp apart) present in the same cells, which we interpreted as single mutational events (Supplementary file 2, Figure 5—figure supplement 1). These substitution clusters could be the result of replicative errors resulting from the misincorporation of bi-nucleotides or multi-nucleotides, or due to the recruitment of an error-prone repair pathway at a double-strand break or bulky lesion. After counting clustered mutations as one mutational event, we obtained 44 mutational events present in one or more cell types (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig5-v1.jpg)
+
+**Figure 5.:** (A) For every cell type, the total number of high-quality polymorphisms identified. Out of 2590 candidate variants, we excluded all substitutions that could be found in any somatic cell, leaving 73 variants. We then counted clustered polymorphisms as single mutational events and removed variants that could have resulted from RNA editing. See Materials and methods for details. (B) Dividing the number of polymorphisms in a cell type by the number of cells of that type, and the number of bases covered with at least 10 reads in that cell type (Supplementary file 5) yields an approximate relative substitution frequency for each cell type. By this metric, substitutions are most prevalent in early spermatogenesis, and decrease in relative abundance during spermatid development. This could be due to the apoptosis of mutated cells, or the systematic repair of DNA lesions during spermatogenesis. (C) The proportion of cells of each type with at least one identified germline lesion. Error bars are the 95 percent confidence intervals for each proportion. A Chi-square test for trend in proportions gives a p value of 2.20E-16, indicating strong evidence of a linear downward trend. (D) DNA repair genes are generally biased towards early spermatogenesis, statistically enriched compared to the distribution of all other genes. (Wilcoxon adjusted p value < 0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47138/elife-47138-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** For the 73 germline SNPS, we plotted every cell containing the SNP according to its pseudotime value inferred by monocle. Some SNPs are found in multiple cell types. Other SNPs are actually clustered close to other SNPS found in the same cells, such as the SNPS from 2L_13902470 to 2L_13902482. For the purposes of calculating mutational abundance in Figure 5, we considered clusters of SNPS within 10 bp of each other to be a single mutational event, to prevent clusters of SNPs from biasing our inferred mutational abundance. Raw numbers of SNPs per cell type and corrected mutational events for each cell type are available in Supplementary file 5.
 
 Putative de novo mutations are each likely unique to an individual. If a mutation were found in multiple individuals, it would likely be an inherited somatic variant and we would catch such mutated alleles in somatic cells. For each of the mutations, we identified reads from somatic cells with the WT allele at that position, and the mutated allele is only present in germ cells. Each variant is also supported by multiple germ cell reads with different UMIs.
 
@@ -85,7 +260,7 @@ To approximate per-base mutation load of each cell type, we accounted for two fa
 
 Importantly, while we detected 30% (22/73) of inferred germline substitutions in early spermatids, we detected no germline variants in late spermatids. This means that either 1) most lesions are corrected by this stage, or 2) cells with lesions were removed by programmed cell death, or 3) that we captured insufficient quantities of mature spermatid mRNA to detect remaining variants. Although we found that early and late spermatids have similar RNA content, the low abundance of late spermatids makes either explanation possible. Since we observed a steady downward trend of mutation abundance during the progression of spermatogenesis, it is reasonable to infer that late spermatids have a mutational burden equal to or less than that of early spermatids. We counted the number of cells of each type carrying mutations throughout spermatogenesis. We observed that the relative proportion of cells carrying mutations drops consistently throughout spermatogenesis (Figure 5C), indicating that mutational load decreases during spermatogenesis. A chi-square test of the trend in proportions shows that the relative numbers of mutated cells follow a linear trend (p value = 2.20E-16). This result is highly statistically significant and lends credence to our other observations of dwindling mutational load during spermatogenic progression. This trend could be the result of active lesion repair, or the death of cells carrying unrepaired lesions.
 
-## DNA repair genes and ribosomal protein genes show an early expression bias
+### DNA repair genes and ribosomal protein genes show an early expression bias
 
 We asked whether two key programs, DNA repair, and translation, show signatures of expression bias during spermatogenesis. We hypothesized that both programs are critical to the production of healthy spermatids, which must undergo heavy periods of growth and division without accumulating mutations.
 
@@ -109,29 +284,123 @@ Since we observed that the transcription of 211 DNA repair genes drops during me
 
 ## Materials and methods
 
-## Preparation and sequencing of testis single-cell RNA-seq libraries
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster, male)</td>
+      <td>RAL517</td>
+      <td>Mackay et al., 2012</td>
+      <td>BDSC:25197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>10X chromium 3' kit V2</td>
+      <td>10X genomics</td>
+      <td>10X genomics product number CG00052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco Collagenase, type I</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher catalog number 17018029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin LE</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher catalog number 12605036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger</td>
+      <td>10X genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hisat2</td>
+      <td>PMID:25751142</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stringtie</td>
+      <td>PMID:25690850</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>Satija et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcftools</td>
+      <td>PMID:28205675</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samJDK</td>
+      <td>Lindenbaum and Redon, 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle</td>
+      <td>Trapnell et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation and sequencing of testis single-cell RNA-seq libraries
 
 We used 2- to 3- day-old DGRP-RAL517 flies in this study (Mackay et al., 2012). Testes from 50 male flies were dissected in cold PBS. The resulting 50 testes were de-sheathed in 200 μl of lysis buffer (Trypsin LE + 2 mg/ml collagenase). The samples were incubated in lysis buffer for 30 min at room temperature with gentle vortex mixing every 10 min. The samples were filtered through a 30 μm tissue culture filter followed by a 7 min centrifugation at 1200 rpm. The cells were washed with 200 μl of cold HBSS and pelleted again for 7 min at 1200 rpm. The resulting cell preparation was re-suspended in 20 μl of HBSS before further processing. For cell counting, 5 μl of the single cell suspension were mixed with 5 μl of the exclusion dye trypan blue and the total cell number as well as the ratio between live and dead cells were analyzed using an automated cell counter (Logos Biosystems). For imaging, 15 μl of the cell suspension were transferred to a slide and imaged in a Zeiss upright light microscope. This method yielded high numbers of single cells with an average of 93–96% viability. We then submitted 8000 cells (sequenced 5000 cells) for library preparation with the 10X Genomics chromium 3’ kit, followed by sequencing with Illumina Nextseq 98 bp paired-end chemistry.
 
-## Preparation of custom annotation file for de novo gene analysis
+### Preparation of custom annotation file for de novo gene analysis
 
 We analyzed de novo genes identified in Zhao et al. (2014), by converting the gene coordinates to D. melanogaster version six reference genome with FlyBase coordinates converter. Strand data and splicing information is not present for those reference genes, so we chose to proceed only with genes whose expression could be detected in our D. melanogaster testis single-cell sequencing data. Using whole-tissue RNA-seq data from multiple strains of Drosophila testis, we used Stringtie merged to create a merged transcriptome GTF containing unannotated transcripts and used BLAST to compare the novel transcripts against converted coordinates for the Zhao et al. (2014) genes. For genes with a match between the converted 2014 coordinates and the new merged transcriptome, we added the coordinates from the merged GTF to the FlyBase dmel_r6.15 reference GTF. Since a single-exon de novo genes could be on either strand, we created a plus and minus strand version of every verified de novo gene. Our custom annotation file thus contains all the standard FlyBase dmel_r6.15 genes, plus a set of assembled transcripts known to correspond to de novo genes.
 
 Our study only seeks to analyze previously characterized de novo genes, and will inherit the limitations of identification of de novo genes using bulk RNA-seq data. Zhao et al. (2014), the source paper for these segregating and fixed de novo genes, detected de novo genes from bulk testis RNA-seq of multiple D. melanogaster strains, meaning that de novo genes that are enriched in a rare cell type may not be counted as de novo genes if their expression in the whole tissue does not reach a certain threshold. Despite this possibility we still observe many de novo genes with maximum expression in rare cell types such as germ line stem cells and spermatogonia.
 
-## Quantification of reproducibility
+### Quantification of reproducibility
 
 If single-cell suspension results to relatively unbiased ratios of cell types compared to in vivo cell types, one would expect a relatively high correlation of single-cell RNA-seq and bulk RNA-seq data. To verify this, we aligned the single-cell RNA-seq reads and bulk RNA-seq reads of RAL517 separately to the reference genome using Hisat2, calculated gene TPMs with Stringtie, and then used DEseq2 to regularized-log transform the TPM values from both datasets. After that, we plot the correlation of normalized gene expression and calculated the Pearson’s R (Figure 1—figure supplement 2A). Using the same method, we also compared our dataset to a second single-cell library prepared from testis of a wild D. melanogaster strain from our lab (Figure 1—figure supplement 2B).
 
-## Processing of single-cell data
+### Processing of single-cell data
 
 Illumina BCL files were converted into fastq files using Cellranger mkfastq. A reference genome was created with Cellranger mkref, with all genes from the FlyBase D. melanogaster reference. To this reference, we added all segregating and fixed de novo genes from Zhao et al. (2014). We used the custom reference to run Cellranger count, which demultiplexed the single cell reads into a usable format for Seurat. Going forward, we kept all genes expressed in at least 3 cells and all cells with at least 200 genes expressed. We ran Seurat ScaleData and NormalizeData with default parameters. According to the Seurat documentation, ‘Feature counts for each cell are divided by the total counts for that cell and multiplied by the scale.factor (default = 10,000). This is then natural-log transformed using log1p.’ We then ran Seurat’s default t-SNE function and found clusters based on the first nine principal components (resolution = 2). Of the parameters we tried, most produced a similar t-SNE clustering pattern, but nine principal components generated the best separation between different cell types.
 
-## Identification of cell types in single-cell RNA-seq data
+### Identification of cell types in single-cell RNA-seq data
 
 We used marker genes to infer the predominant cell type within each cluster in Seurat. Aubergine (aub) is a marker of germline stem cells (Rojas-Ríos et al., 2017), and Bag of Marbles (bam) is a marker of spermatogonia (Kawase et al., 2004). A cluster enriched in vasa (Ohlstein and McKearin, 1997) and bam but not aub was annotated as late spermatogonia. Clusters most enriched in fuzzy onions (fzo) were inferred to be early spermatocytes (Hwa et al., 2002), and clusters with enrichment of twine (twe) but not fzo were inferred to be late spermatocytes (Courtot et al., 1992). The literature is clear that transcription of fzo and twe peaks in spermatocytes, but it is less clear which marker denotes early and late spermatocytes, respectively. To resolve this ambiguity, we used monocle (Trapnell et al., 2014) to align our cells on a developmental trajectory called pseudotime (rho = 68, delta = 5, ordered using the top 1000 differentially expressed genes). We found that twe expression peaked later in spermatogenesis than fzo, and concluded that clusters expressing twe but not fzo were late spermatocytes. Epithelial cells were defined based on enrichment of MntA and Hsp23, Hub cells were defined based on Fas3, and Cyst cells were defined by enrichment of zfh1 (Zhao et al., 2010). Late spermatids were marked by p-cup, a post-meiotically transcribed gene.
 
-## Analysis of the spermatogenic developmental trajectory
+### Analysis of the spermatogenic developmental trajectory
 
 The adult testis contains both somatic and germ cells, but lacks the common progenitor cells for each lineage. Therefore, when constructing a lineage tree for all cells in our tissue, we would expect to see a separate branch containing somatic cells erroneously branching from somewhere along the inferred lineage of more common germ cells. In the somatic cell branch from Figure 3A, MtnA is enriched (Figure 3—figure supplement 1), leading us to infer that this state is mainly somatic cells. As such, we ignored this branch for our analysis of gene expression during germ cell development in Figure 3. One should not interpret this result as evidence that somatic cells in the testis arose from germ cell progenitors, rather, this is a consequence of Monocle’s algorithm that forces a minimum spanning tree for all cells in a sample, regardless of their real cell-type of origin. Since the original common progenitor for the germ lineage and somatic testis cells is not present in adult tissues, Monocle placed the somatic cells to their closest germ cell neighbors, in this case late germ cells. As shown in Figure 3, there is a gap between the group of somatic cells and the tightly clustered lineage of germ cells, indicating that the cells are indeed from a different lineage.
 
@@ -139,13 +408,13 @@ To construct the trajectory, we used the following parameters:
 
 To order the cells, we used the top 1000 genes with the highest q value of being differentially expressed between clusters.
 
-## Calculation of cell-type bias of gene groups
+### Calculation of cell-type bias of gene groups
 
 Testing whether gene expression is biased across cell types requires overcoming two challenges. Firstly, different cell types have varying levels of RNA and global transcription, so it is important to account for the behavior of other genes in a cell type when calculating expression bias of a group of genes. Additionally, the calculated expression values for different groups of genes will vary by orders of magnitude. Expression values must be scaled across the dataset on a per-gene basis, with 0 representing a gene’s mean expression across the tissue, and positive or negative values corresponding to the Z-score of a calculated expression value. To address the confounding effect of global variation in gene expression, we compared groups of genes against all other genes within a cell type, and asked if some groups of genes behave as outliers in a given cell type. For de novo genes, we compared the scaled, average expression of putative de novo genes to every other gene within a cell type using a signed Wilcoxon test (Wilcoxon, 1945).
 
 For groups of genes (e.g. de novo genes, DNA repair genes), we asked whether their scaled expression distribution in a cell type was statistically different from that of other genes. For every gene, we calculated its average scaled expression within each cell type, and then performed a Wilcoxon signed test to determine if the mean scaled expression of genes in the cell type was statistically higher or lower than all other genes in the same cell type. For each gene group and cell type, we adjusted the resulting p-values with Hochberg’s correction (Haynes, 2013). This shows the direction and statistical significance of each cell-type specific bias of a gene group. For the raw and adjusted p values of every gene group tested, please refer to Supplementary file 3. For germline cells, the direction of bias and adjusted p values are given in Table 1. Gene lists used are in Supplementary file 6.
 
-## Calculation of base substitution rate for individual cells
+### Calculation of base substitution rate for individual cells
 
 Using the demultiplexed, aligned reads generated by Cellranger, we ran bcftools mpileup (Narasimhan et al., 2016) with a minimum quality cutoff of 25 to find nucleotide polymorphisms from our RNA-seq data. We filtered the calls to exclude variants known to be segregating in populations of D. melanogaster DGRP-RAL517 (Mackay et al., 2012). We also filtered the variant calls against a D. melanogaster DGRP-RAL517 population genome dataset we generated recently. We also excluded variants whose read coverage for the reference allele was less than 10. With the remaining 2590 polymorphisms, we used samjdk (Lindenbaum and Redon, 2018) to extract reads containing the variant allele and match the cell barcode to the cell identities from our Seurat analysis. To remove variants that likely arose prior to the collection of this data, we excluded variants found in somatic cells (hub, cyst, epithelial cells). The numbers of variants remaining after each filtering step is given in Supplementary file 4.
 
@@ -155,6 +424,6 @@ To ensure that our inferred mutations are not uncorrected transcriptional errors
 
 We performed the following steps to remove possible RNA editing events from our samples. Recurrent RNA editing events would be present in whole-tissue RNA-seq data, so we ran bcftools mpileup with the same parameters on whole-tissue testis RNA seq data of D. melanogaster RAL 517. Four of our seventy-seven inferred germline variants were present in the whole-tissue data, so we removed them for downstream steps. The final list does not show a high level of A > G substitution, which would be expected from RNA editing (Tan et al., 2017).
 
-## Calculation of the proportion of mutated cells, by type
+### Calculation of the proportion of mutated cells, by type
 
 We manually checked every SNP with every cellular barcode within which the alternate allele was found. Using cellular identities that we inferred using Seurat, we counted the number of cells of each type containing at least one substitution. This number, divided by the total cells identified as that type, yields the proportion of mutated cells shown in Figure 5C and Supplementary file 5.

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.43738.001 The germ line provides the cellular link between generations of multicellular organisms, its cells entering the meiotic cell cycle only once each generation. However, the mechanisms governing this initiation of meiosis remain poorly understood. Here, we examined cells undergoing meiotic initiation in mice, and we found that initiation involves the dramatic upregulation of a transcriptional network of thousands of genes whose expression is not limited to meiosis. This broad gene expression program is directly upregulated by STRA8, encoded by a germ cell-specific gene required for meiotic initiation. STRA8 binds its own promoter and those of thousands of other genes, including meiotic prophase genes, factors mediating DNA replication and the G1-S cell-cycle transition, and genes that promote the lengthy prophase unique to meiosis I. We conclude that, in mice, the robust amplification of this extraordinarily broad transcription program by a common factor triggers initiation of meiosis.
+The germ line provides the cellular link between generations of multicellular organisms, its cells entering the meiotic cell cycle only once each generation. However, the mechanisms governing this initiation of meiosis remain poorly understood. Here, we examined cells undergoing meiotic initiation in mice, and we found that initiation involves the dramatic upregulation of a transcriptional network of thousands of genes whose expression is not limited to meiosis. This broad gene expression program is directly upregulated by STRA8, encoded by a germ cell-specific gene required for meiotic initiation. STRA8 binds its own promoter and those of thousands of other genes, including meiotic prophase genes, factors mediating DNA replication and the G1-S cell-cycle transition, and genes that promote the lengthy prophase unique to meiosis I. We conclude that, in mice, the robust amplification of this extraordinarily broad transcription program by a common factor triggers initiation of meiosis.
 
 ## Introduction
 
@@ -32,9 +32,21 @@ Here, we isolate preleptotene stage germ cells — the cells initiating meiosis 
 
 ## Results
 
-## Transcriptional changes at the start of the meiotic cell cycle
+### Transcriptional changes at the start of the meiotic cell cycle
 
 To better understand how mouse germ cells initiate meiosis, we sought to identify transcriptional changes occurring at meiotic initiation in vivo. For this, we isolated male germ cells entering meiosis using developmental synchronization of spermatogenesis (Romer et al., 2018). By chemically modulating the levels of retinoic acid, which is required for spermatogonial differentiation (Endo et al., 2015; van Pelt and de Rooij, 1990), we can induce synchronous progression of germ cells through spermatogenesis and collect testes enriched for preleptotene cells (Figure 1A) (Hogarth et al., 2013; Romer et al., 2018). By histologically ‘staging’ a small tissue biopsy, we verified enrichment of desired cell types (Romer et al., 2018) and found that, in properly synchronized and staged (‘2S’) testes, preleptotene cells expressing the meiotic initiation marker STRA8 account for ~44% of all cells; they comprise only an estimated ~1.4% of cells in unperturbed adult testes (Figure 1B,C). Synchronization thus yields 31-fold enrichment in vivo of meiosis-initiating cells, enabling biochemical analyses of meiotic initiation with improved signal and decreased background noise. Importantly, preleptotene-enriched samples are not contaminated with any later stage germ cells, which might complicate efforts to understand meiotic initiation. By adding a sorting step to the 2S protocol — together called ‘3S’ — we can isolate preleptotene cells with >90% purity (Figure 1D) (Romer et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic for synchronization of spermatogenesis by WIN18,446 and retinoic acid (RA) to enrich for preleptotene cells. (B) STRA8 immunohistochemistry (IHC) of an unperturbed adult testis, left, and a synchronized and staged (2S) testis, right. The synchronized testis is highly enriched for meiosis-initiating preleptotene spermatocytes that express STRA8. Scale bar = 100 μm. (C) Percent of all cells that are STRA8-expressing preleptotene cells, in adult testes or in 2S testes. Synchronization results in a 31-fold increase in the proportion of these cells. (D) Schematic for collection of pure preleptotene populations by synchronization, staging, and sorting (3S) for RNA-seq. Germ-cell lineage tracing allows for sorting of pure preleptotene populations from Stra8+/- or Stra8-deficient ('KO’) testes. See Figure 1—figure supplement 1 for cell sorting schematic. (E) Transcriptional changes associated with meiotic initiation. Volcano plot represents gene expression changes between Stra8+/- preleptotene cells with high levels of STRA8 (high STRA8) and Stra8 KO preleptotene cells. Genes that are significantly (FDR < 0.05) downregulated or upregulated at meiotic initiation are in pink or green, respectively. Shown are 12,545 genes expressed in at least one preleptotene sample at transcripts per million (TPM) level ≥ 1. (F) Expression levels of genes upregulated at meiotic initiation, in KO and high-STRA8 preleptotene cells. Boxplots show sample medians and interquartile ranges (IQRs), with whiskers extending no more than 1.5 × IQR and outliers suppressed. ****p<2.2×10−16, one-tailed Mann-Whitney U test. See Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Schematic depicting the sorting strategy used in the 3S (synchronization, staging, and sorting) method. Preleptotene spermatocyes are sorted from preleptotene-enriched 2S testes. P1 represents the live cell fraction, and P2 represents the preleptotene cell population that is collected for RNA-seq.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Staging of testis samples from which sorted ‘3S’ preleptotene cells were isolated for RNA-seq. IHC for STRA8 (antibody ab49405) reveals synchronized Stra8+/- testes with ‘high’ and ‘low’ (almost indistinguishable from background staining) levels of STRA8. Shown are tubule cross sections. Select preleptotene cells are labeled with arrowheads: white, Stra8-deficient; dark green, high STRA8; light green, low STRA8. (B) Stra8 expression levels (TPM) in individual RNA-seq samples from sorted Stra8 KO (n = 3), high-STRA8 (n = 2), or low-STRA8 (n = 2) preleptotene cells. Horizontal bars represent the mean level per sample type, and dots indicate values in individual replicates. (C) Principal component analysis of the RNA-seq data. The first two components are shown. (D) Correlations between biological replicates of expression values (TPM) for all protein-coding genes. Pearson’s correlation coefficients are shown. (E) Correlation between gene expression changes between high-STRA8 and Stra8 KO preleptotene cells and expression changes between Stra8+/- preleptotene spermatocytes with high or low levels of STRA8. Pearson’s correlation coefficient is shown. (F) Volcano plot showing gene expression differences between preleptotene cells with high or low STRA8 expression. Shown are the genes that are significantly up or downregulated at meiotic initiation between high-STRA8 and KO preleptotene cells (see Figure 1E).
 
 We utilized Stra8-deficient mice as a genetic tool to reveal changes associated with meiotic initiation. Because cells deficient for Stra8 reach the preleptotene stage but fail to initiate meiosis (Anderson et al., 2008), we can use RNA-seq to characterize the expression profiles of preleptotene cells with and without Stra8 to identify gene expression changes at meiotic initiation. To do this, we purified preleptotene cells from Stra8-deficient and Stra8+/- testes using the 3S method (Figure 1D and Figure 1—figure supplement 1) (Romer et al., 2018); preleptotene cells from Stra8+/- testes were further categorized as displaying ‘low STRA8’ (early preleptotene stage, directly before meiotic initiation) or ‘high STRA8’ levels (mid or late preleptotene stage, after meiotic initiation) (Figure 1D and Figure 1—figure supplement 2A). In total, we profiled three biological replicates of Stra8-deficient, two of ‘low-STRA8,’ and two of ‘high-STRA8’ preleptotene samples. STRA8 protein level differences in the preleptotene samples paralleled Stra8 mRNA level differences (average expression in ‘low-STRA8’ samples = 275 transcripts per million [TPM], and in ‘high-STRA8’ samples = 1,173 TPM; Figure 1—figure supplement 2B). Altogether, 12,545 genes were expressed at greater than one TPM in at least one preleptotene sample (Supplementary file 1).
 
@@ -42,9 +54,29 @@ To identify transcriptional changes at meiotic initiation, we first identified g
 
 To further characterize changes in the preleptotene cells, we asked how many of the upregulated genes were ‘off’ in the absence of meiotic initiation. To our surprise, we discovered that 97% of upregulated genes were expressed (at TPM levels greater than one; median expression level 38 TPM) in Stra8-deficient preleptotene cells that had not initiated meiosis (Figure 1F). This suggests that transcriptional upregulation at meiotic initiation mostly entails amplification of gene expression, rather than ‘turning on’ genes that were previously not expressed.
 
-## Identifying the targets of a meiotic initiation factor
+### Identifying the targets of a meiotic initiation factor
 
 We sought to determine whether the transcriptional changes we discovered at meiotic initiation were direct consequences of STRA8 action. STRA8 has been hypothesized to be a transcription factor (Baltus et al., 2006; Soh et al., 2015) and displays transcriptional activity in vitro; in cultured HEK293 cells, mouse STRA8 fused to a GAL4 DNA binding domain will activate transcription of a reporter gene (Tedesco et al., 2009). However, whether STRA8 directly regulates transcription in vivo remains unknown. To facilitate biochemical analyses of STRA8, we generated an N-terminal epitope-tagged allele, which we verified encodes a functional STRA8 protein (Stra8FLAG; Figure 2—figure supplement 1) that is readily detected by the FLAG antibody (Figure 2A). Both male and female Stra8FLAG/FLAG mice were fully fertile and produced viable offspring, and their gonads displayed normal histology (Figure 2—figure supplement 1D,F).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig2-v1.jpg)
+
+**Figure 2.:** (A) FLAG IHC of preleptotene-enriched tubules in wild-type or Stra8FLAG/FLAG 2S testes. Preleptotene germ cells are marked by arrowheads, and spermatogonia by arrows. Scale bar = 20 μm. (B) Schematic for STRA8 ChIP-seq experiments using preleptotene-enriched testes. (C) Percent of ChIP-seq peaks at protein-coding gene promoters, defined as the window within 1 kb of annotated transcription start sites (TSS). Bar heights represent the average of three replicates, and dots indicate values in individual replicates. For comparison, 2.3% of the mouse genome lies within these regions. See also Figure 2—figure supplement 4. (D) Average Stra8FLAG/FLAG and Stra8+/+ ChIP seq profiles over the TSS of genes. Sequencing reads were pooled from three ChIP replicates. See Figure 2—figure supplement 4 for profiles of individual replicates. (E) Overlap of promoter-bound genes identified in Stra8FLAG/FLAG ChIP-seq replicates. Genes identified in at least two of the three replicates are considered ‘STRA8-bound genes’. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic for generation of the Stra8FLAG allele. The FLAG sequence was inserted directly after the ATG in exon 2. (B) PCR genotyping for the Stra8FLAG allele. (C) Western blot showing STRA8 (ab49405) and FLAG signal in protein lysates prepared from P10 wild-type and Stra8FLAG/FLAG testes. α-tubulin was used as a loading control. The long STRA8 isoform, which is required for meiosis (see Figure 2—figure supplement 2), is tagged by FLAG. Stra8FLAG/FLAG testes show reduced expression of the shorter STRA8 isoform, perhaps due to splicing changes caused by the FLAG insertion close to the start of exon 2. (D) Hematoxylin and periodic acid-Schiff (He/PAS)-stained sections from an 8 week Stra8+/FLAG ovary, left, and a Stra8FLAG/FLAG ovary, right. Scale bar = 100 μm. (E) Immunofluorescence (IF) staining for meiotic markers in E14.5 and E15.5 ovaries. Germ cells (marked by DDX4/VASA) in both Stra8+/FLAG (left) and Stra8FLAG/FLAG (right) ovaries express STRA8 and initiate meiosis; they show robust DMC1 and γ-H2AX staining. Scale bar = 10 μm. (F) He/PAS-stained testes from 8 week Stra8+/FLAG and Stra8FLAG/FLAG testes. Scale bar = 100 μm. (G) IF for meiotic markers in Stra8+/FLAG and Stra8FLAG/FLAG adult testes. In both genotypes, germ cells (marked by DDX4) initiate meiosis; they show STRA8, DMC1, and γ-H2AX staining. Scale bar = 20 μm. (H) IHC for STRA8 and FLAG, with hematoxylin counterstaining, of consecutive serial sections from an E14.5 Stra8FLAG/FLAG fetal ovary. Scale bar = 200 μm. (I) FLAG IHC of the adult Stra8FLAG/FLAG testis, with He/PAS counterstaining. Roman numerals indicate the seminiferous tubule stage. STRA8FLAG is robustly expressed in preleptotene stage spermatocytes (yellow arrowheads) and in leptotene stage spermatocytes (green arrowheads). STRA8FLAG is also expressed in spermatogonia (white arrowheads). Scale bar = 10 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Two Stra8 splice isoforms in wild-type mice. The Stra8Δ121 allele cannot express the longer protein isoform. The locations of peptides against which STRA8 antibodies were raised are marked. (B) STRA8 has a putative basic helix-loop-helix (bHLH) domain, a glutamic acid-rich region, and a putative high-mobility group (HMG) box domain (see Appendix 1). Shown are peptides recognized by antibodies, and regions required for nuclear localization and transactivation activity in vitro, as characterized by Tedesco et al. (2009). (C) Western blots showing isoforms detected by STRA8 antibodies. Lysates were prepared from murine embryonic stem cells treated with DMSO (-) or RA (+) to induce STRA8 expression. (D) PCR genotyping of the Stra8Δ121 allele. (E) He/PAS-stained 8 week wild-type and Stra8Δ121/Δ121 ovaries. Scale bar = 100 μm. (F) IF staining, in control (Stra8+/+ or Stra8+/Δ121) and Stra8Δ121/Δ121 embryonic ovaries, for the long STRA8 isoform (antibody ab49602), germ cell marker DDX4, and meiotic markers γ-H2AX, DMC1 and SCP3. Control germ cells express the long STRA8 isoform, are marked by γ-H2AX and DMC1 staining, and load the synaptonemal complex protein SCP3 onto condensed chromosomes. Stra8Δ121/Δ121 germ cells, which do not express the long isoform, do not show these signs of meiotic initiation. Scale bars = 10 μm. (G) He/PAS staining of 3 month wild-type and Stra8Δ121/Δ121 testes. Scale bar = 100 μm. (H) IF with antibodies for STRA8 (ab49602), γ-H2AX, DMC1, and DDX4 in adult testes (3 months). Scale bars = 20 μm. (I) STRA8 IHC, with hematoxylin counterstaining, of wild-type and Stra8Δ121/Δ121 P12 testes. Staining of consecutive serial sections with the ab49602 and ab49405 antibodies indicates that Stra8Δ121/Δ121 testes express only the shorter STRA8 isoform. Scale bar = 100 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) IF staining of P12 testes using an antibody for the cytoplasmic germ cell marker DDX4 (VASA) and the STRA8 ab49405 antibody, which detects both STRA8 isoforms. Shown are images from a wild-type testis, which expresses both isoforms, and from a Stra8Δ121/Δ121 testis, which expresses only the short isoform that is missing the first 111 amino acids. Scale bar = 20 μm. (B) Model representing the region of the longer STRA8 protein (393 aa) that is required for STRA8’s nuclear localization.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Staging of samples used for ChIP-seq. 2S testes were analyzed by IHC, using STRA8 antibody ab49405. See Figure 1B for another image of Stra8+/+, replicate 2. (B) Cellular composition of the 2S samples used for Stra8FLAG/FLAG ChIP-seq, and calculation of the percent of all cells that are STRA8-expressing preleptotene cells. See also Figure 1C. See Materials and methods for description of cell counting method. (C) ChIP-seq analyses of the six biological replicates (three each of Stra8FLAG/FLAG and Stra8+/+). ChIP-seq peaks were identified by MACS. A peak was assigned to a gene promoter if it was within 1 kb of an annotated TSS for that gene. Genes that were identified in any of the three Stra8+/+ replicates (likely a result of non-specific binding) were filtered out of the list of promoter-bound genes in the Stra8FLAG/FLAG replicates. A peak was assigned to an enhancer if it overlapped an H3K4me1 peak not at a gene promoter; a total of 39,272 enhancers were identified. (D) Average ChIP-seq profile from Stra8FLAG/FLAG and Stra8+/+ samples over the TSS of genes, indicating an enrichment of reads at the TSS. Each replicate is shown separately. See Figure 2D for profiles with reads from all replicates pooled together. (E) Input-subtracted ChIP-seq signal at Dmc1 in all six replicates. Track heights are the same for all samples. (F) Correlations between biological replicates of normalized, input-subtracted Stra8FLAG/FLAG ChIP-seq signal (in reads per million, rpm) at the promoters of all genes. The 100 genes that were STRA8-bound in any of the negative control replicates were excluded from this analysis. Pearson’s correlation coefficients are shown. (G) Average ChIP-seq signal over the TSS in each Stra8FLAG/FLAG replicate. Genes were binned by number of replicates that exhibited STRA8 binding.
 
 Our N-terminal epitope tags only the longer of two STRA8 isoforms, which we found is the one critical for meiotic initiation. We generated a Stra8 allele that selectively eliminates the longer isoform (Figure 2—figure supplement 1A–D). Mice homozygous for this new allele retained expression of the shorter STRA8 isoform but phenocopied Stra8-deficient mice, which express neither isoform (Figure 2—figure supplement 2E–I) (Anderson et al., 2008; Baltus et al., 2006). Although STRA8 is both nuclear and cytoplasmic in wild-type preleptotene cells, the protein was predominantly cytoplasmic in mice expressing only the short isoform (Figure 2—figure supplement 3A,B). Thus, the first 111 amino acids, unique to the long isoform, are required for STRA8’s function and nuclear localization in vivo (see Appendix 1). This critical region contains the putative bHLH domain, suggesting that STRA8 regulates transcription.
 
@@ -54,17 +86,37 @@ Our ChIP-seq analyses reveal that, in preleptotene cells, STRA8 binds genomic re
 
 To define the scope of the STRA8-regulated transcriptional program, we catalogued the STRA8-bound genes. We identified 4,884 protein-coding genes with a STRA8 peak (Figure 2E and Figure 2—figure supplement 4C). Even genes that were bound in only one replicate are likely true STRA8 targets; their promoters display ChIP-seq signal (Figure 2—figure supplement 4G). However, to ensure robust conclusions regarding the effects of STRA8 binding, we focus our analyses on target genes that overlapped between ChIP-seq biological replicates (p<1×10−320 for all pairwise overlaps between replicates, one-tailed hypergeometric tests). We refer to the 2,845 genes with peaks in at least two replicates as ‘STRA8-bound genes’ (Figure 2E), of which 2,809 were expressed in preleptotene cells.
 
-## A broad gene expression program upregulated at meiotic initiation is directly bound by a common factor
+### A broad gene expression program upregulated at meiotic initiation is directly bound by a common factor
 
 To determine whether transcriptional changes at meiotic initiation are directly regulated by STRA8, we asked whether STRA8 binding could account for the up- and downregulation of gene expression at meiotic initiation; we tested for significant overlap between the differentially expressed genes and the STRA8-bound genes. Genes upregulated at meiotic initiation significantly overlapped with the upregulated STRA8-bound genes (p<6.8×10−322, one-tailed hypergeometric test; Figure 3A): 1,351 of the 2,361 upregulated genes (57.2%) were STRA8-bound (Supplementary file 1). If we relax our ChIP-seq criterion to include all genes with a STRA8 peak in any of the ChIP-seq replicates, 72.8% of upregulated genes may be directly activated by STRA8. Conversely, genes downregulated at meiotic initiation were significantly depleted for STRA8 binding (p<7.5×10−99, one tailed hypergeometric test; Figure 3B). Altogether, these analyses reveal a strong association between the program upregulated at meiotic initiation and STRA8 binding.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig3-v1.jpg)
+
+**Figure 3.:** (A) Overlap between the genes upregulated at meiotic initiation (see Figure 1E) and the STRA8-bound genes (see Figure 2E). The two gene lists significantly overlap, with 1,351 ‘STRA8-activated genes’ that are directly bound and upregulated at meiotic initiation by STRA8 (p<6.8×10−322; one-tailed hypergeometric test). (B) Overlap between genes downregulated at meiotic initiation (see Figure 1E) and STRA8-bound genes. Downregulated genes are significantly depleted for STRA8-bound genes (p<7.5×10−99; one-tailed hypergeometric test). (C) Volcano plots, for STRA8-bound genes and all other genes, representing gene expression changes at meiotic initiation. Only expressed genes are shown. (D) Overlap between expressed STRA8-bound genes and genes differentially expressed at meiotic initiation. STRA8-bound genes are primarily upregulated; p<2.2×10−16, Fisher’s exact test. (E) Gene expression fold changes at meiotic initiation. Boxplots show sample medians and interquartile ranges (IQRs), with whiskers extending no more than 1.5 × IQR and outliers suppressed. ***p<2.2×10−16, one-tailed Mann-Whitney U test. (F) Volcano plot showing expression changes of ‘STRA8-activated genes’ in Stra8+/- preleptotene cells with high or low STRA8 levels. See Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Gene expression changes at meiotic initiation, represented as the fold change of gene expression (log2 scale) in high-STRA8 preleptotene cells compared to KO preleptotene cells. Genes are binned by the number of ChIP-seq replicates in which their promoters were bound by STRA8. Only expressed genes are shown. ***p<2.2×10−16, two-tailed Mann-Whitney U test. (B) Volcano plots for the gene groups in (A) showing the expression fold changes at meiotic initiation. (C) Number of STRA8-bound and STRA8-activated genes identified at different cutoffs for ChIP-seq (the number of replicates in which a STRA8 peak was observed) and RNA-seq (FDR cutoff to compare gene expression changes).
 
 Inverting the analysis, our data provide evidence that STRA8 functions primarily as a transcriptional activator. Of expressed STRA8-bound genes that were differentially expressed at meiotic initiation, 89% were upregulated. In contrast, among the set of differentially expressed genes that were not STRA8-bound, only 32.4% were upregulated (Figure 3C,D). STRA8-bound genes are thus strongly biased towards upregulation at the start of meiosis (odds ratio = 17.1, 95% confidence interval 14.3–20.6, p<2.2×10−16, two-tailed Fisher’s exact test; Figure 3D). In addition, expressed STRA8-bound genes, compared to a control set of other expressed genes, were more significantly upregulated (p<2.2×10−16, one-tailed Mann Whitney U; Figure 3E).
 
 Our data reveal the breadth of the gene expression program robustly upregulated at meiotic initiation by a common factor: as many as 3128 genes may be directly activated by STRA8, if we use relaxed ChIP-seq and RNA-seq criteria (Figure 3—figure supplement 1). However, we focused subsequent analyses on a stringently validated set of 1,351 genes that displayed STRA8 binding in at least two of the three ChIP-seq replicates, with significantly higher expression in high-STRA8 compared to Stra8-deficient preleptotene cells (Figure 3A). 96% of these genes were also upregulated between low-STRA8 and high-STRA8 preleptotene cells (Figure 3F), corroborating their upregulation at meiotic initiation. We consider these 1,351 genes to be the set of ‘STRA8-activated genes’.
 
-## Mechanisms of gene activation at meiotic initiation
+### Mechanisms of gene activation at meiotic initiation
 
 We sought to better understand how gene expression is upregulated at meiotic initiation. First, we asked whether STRA8 turns on genes that are otherwise silent. We found that 98% of STRA8-bound genes were expressed (at TPM levels greater than one; median expression level 104 TPM) even in Stra8-deficient cells that had not initiated meiosis (Figure 4A). Thus, STRA8 likely binds open chromatin regions and is unlikely to be a pioneer factor that initiates transcription of unexpressed genes. Rather, STRA8 functions to amplify transcriptional levels. This finding echoes our earlier analyses (Figure 1F), which revealed that upregulation at meiotic initiation primarily involves amplification of gene expression.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig4-v1.jpg)
+
+**Figure 4.:** (A) Expression levels of genes in Stra8 KO and high-STRA8 preleptotene cells. Genes are binned by whether they are STRA8-bound or not. (B) Identification of potential STRA8 binding sequences by HOMER de novo motif analysis. We searched the STRA8 binding peaks within promoters of STRA8-activated genes. Shown is a graphical depiction of the input to the motif-finding algorithm: the 100 bp windows surrounding the summits of ChIP-seq peaks. The top enriched motif has the consensus sequence CNCCTCAG. See Figure 4—figure supplement 1 for other enriched motifs. (C) STRA8 ChIP-seq signal at gene promoters, with genes grouped by the number of promoter CNCCTCAG (perfect match) motifs. Boxplots show sample medians and interquartile ranges (IQRs), with whiskers extending no more than 1.5 × IQR; outliers are suppressed. *p<0.01, , ***p<1×10−4, ****p<1×10−5, two-tailed Mann-Whitney U tests. (D) The expression fold change of genes at meiotic initiation, with genes grouped by number of promoter CNCCTCAG (perfect match) motifs. *p<0.01, **p<0.001, ****p<1×10−5, two-tailed Mann-Whitney U tests. See Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HOMER de novo motif analysis (as in Figure 4B) for identification of a STRA8 binding motif near ChIP-seq peaks at STRA8-activated gene promoters. Shown are the top five de novo motifs, with HOMER’s predictions for the closest motif. (B) The top five enriched motifs in the 400 bp surrounding the TSS of the 1,351 STRA8-activated genes, compared to the corresponding regions of all other preleptotene-expressed genes. The top motif is similar to the top enriched motif in (A). (C) The number of CNCCTCAG motifs in the 100 bp surrounding ChIP-seq peak summits is associated with the peak score (as represented by –log10 (peak P-value from MACS)). Only peaks at the promoters of STRA8-activated genes are shown. Spearman’s correlation between the motif counts and peak scores is 0.24, p<1×10−6 by permutation testing. The addition of CNCCTCAG motifs at the peak results in statistically significant changes in the peak score, as determined by two-tailed Mann-Whitney U tests. (D) Percent of genes with annotated CpG islands (CGI) at their promoters. (E) ChIP-seq signal at promoters and the log2 expression fold change at meiotic initiation. Genes are binned by whether the promoter contains a CpG island (CGI) and by the number of promoter CNCCTCAG motifs. (F) Comparison of gene groups in (E). P-values were calculated by two-tailed Mann-Whitney U tests.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Comparison of the top enriched motif at STRA8 binding sites (see Figure 4A and Figure 4—figure supplement 1A) with the closest known motif, that of TCFAP2E (also known as TFAP2E, or AP-2E; motif PB0088.1 in the Jaspar database). TCFAP2E is an AP-2 family transcription factor. Note that the AP-2 binding motif is palindromic, while the STRA8 motif is not. (B) The consensus AP-2 family motif (GCCNNNGGC; Eckert et al., 2005) is not enriched at STRA8 binding sites. The number of consensus AP-2 family motifs (GCCNNNGGC) in the 100 bp surrounding STRA8 ChIP-seq peak summits is not associated with the peak score (as represented by –log10 (peak P-value from MACS)). Only peaks at the promoters of STRA8-activated genes are shown. Spearman’s correlation between the motif counts and peak scores is −0.04, p<0.93 by permutation testing. P-values between groups were determined by two-tailed Mann-Whitney U tests. Compare with Figure 4—figure supplement 1C, which depicts CNCCTCAG motif enrichment at STRA8 binding sites. (C) Expression level, in TPM units, of AP-2 transcription factor genes. Note that none of the AP-2 transcription factors is highly expressed in preleptotene cells.
 
 We then tested whether gene expression is upregulated in a sequence-specific manner. We searched for de novo motifs at the peaks of ChIP-seq read density near STRA8-activated promoters. The most enriched motif was concentrated at such peaks (p<1×10−140; Figure 4B and Figure 4—figure supplement 1A), and a similar sequence was the most enriched motif in the 400 bp window surrounding the TSS of STRA8-activated genes (Figure 4—figure supplement 1B). This motif features the core sequence CNCCTCAG. [Although the motif most closely resembles that of AP-2 family transcription factors (Eckert et al., 2005), the consensus AP-2 motif is not enriched at STRA8 binding sites, and AP-2 factors are not highly expressed in preleptotene cells (Figure 4—figure supplement 2A–C).]
 
@@ -72,19 +124,31 @@ If the CNCCTCAG motif mediates activation by STRA8 at meiotic initiation, then i
 
 We note that upregulation at meiotic initiation is associated with CpG islands (CGI), stretches of DNA with high CpG dinucleotide frequency. 97% of STRA8-bound genes have CGI promoters, and the effect of the CNCCTCAG motif on transcriptional upregulation is accentuated in the vicinity of a CGI (Figure 4—figure supplement 1D–F).
 
-## Amplification of a broad gene expression program at meiotic initiation
+### Amplification of a broad gene expression program at meiotic initiation
 
 To understand the biological ramifications of the transcriptional changes at meiotic initiation, we explored the functions of the upregulated genes. We performed Gene Ontology (GO) analysis to identify cellular processes that were overrepresented among the 1,351 STRA8-activated genes, relative to all other expressed genes. Given our focus on meiotic initiation, we expected that meiosis-specific processes would be the most enriched. Meiosis-related categories (e.g. ‘meiotic nuclear division,’ ‘meiosis I,’ and ‘meiotic cell cycle process’) were indeed among the top categories, but the most significantly enriched category was ‘cell cycle process’ (2.2-fold enrichment, p<2.7×10−17, one-tailed binomial test with Bonferroni correction; Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig5-v1.jpg)
 
-**Figure 5.:** (A) The top 15 enriched Gene Ontology biological processes among the 1,351 STRA8-activated genes, compared to all preleptotene-expressed genes. P-values are from binomial tests with Bonferroni correction. (B) Fraction of genes that are testis-biased. See Figure 5—source data 1.10.7554/eLife.43738.020Figure 5—source data 1.
+**Figure 5.:** (A) The top 15 enriched Gene Ontology biological processes among the 1,351 STRA8-activated genes, compared to all preleptotene-expressed genes. P-values are from binomial tests with Bonferroni correction. (B) Fraction of genes that are testis-biased. See Figure 5—source data 1.
 
 This led us to investigate whether genes upregulated at meiotic initiation have functions outside of germ cells. We asked whether STRA8-activated genes are expressed predominantly in the testis, because testis-specific gene expression in the adult can serve as a proxy for germ cell-specific function. Using a published RNA-seq dataset spanning nine adult male mouse tissues (eight somatic tissues plus testis) (Merkin et al., 2012), we considered a gene to be ‘testis-biased’ if its testis expression constituted more than half of its total expression summed across all nine tissues. As expected, the majority of catalogued meiotic prophase genes (Soh et al., 2015) are testis-biased (70%; Figure 5B). In contrast, only 16% of STRA8-activated genes are testis-biased, a percentage similar to that of all preleptotene-expressed genes, of which 12% are testis-biased (Figure 5B). Thus, this factor plays a key role in amplifying a program that includes but is not limited to meiosis genes.
 
-## Transcriptional amplification of meiotic prophase factors at meiotic initiation
+### Transcriptional amplification of meiotic prophase factors at meiotic initiation
 
 Our analyses suggested that a common factor upregulates the program orchestrating meiotic chromosomal events. Although the Stra8 gene is known to be required for robust expression of canonical meiotic genes (Anderson et al., 2008; Baltus et al., 2006; Soh et al., 2015), it was previously unknown whether the STRA8 protein directly activates their expression. To address this question, we compared STRA8 binding data against a published list of meiotic prophase genes, comprising 103 protein coding genes upregulated during meiotic prophase I in fetal ovarian germ cells (Soh et al., 2015). We find that, in males, 76 of these 103 genes are STRA8-bound, and 68 are STRA8-activated (p<1.2×10−28 and p<8.2×10−38, respectively, one-tailed hypergeometric test; Figure 6A; Supplementary file 3). STRA8 therefore directly upregulates this transcriptional program. Although the 68 STRA8-activated factors were robustly amplified, with a median fold-change of 3.8, 66 were expressed even in Stra8-deficient preleptotene cells (Figure 6B). These results are consistent with our earlier finding that nearly all upregulated genes are expressed even in the absence of meiotic initiation (Figure 1F), and with published reports of meiotic gene expression even in mitotically dividing germ cells (Evans et al., 2014; Wang et al., 2001).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig6-v1.jpg)
+
+**Figure 6.:** (A) Volcano plot depicting gene expression differences between high-STRA8 and Stra8 KO preleptotene cells. Shown are 103 genes associated with meiotic prophase I in the fetal ovary (Soh et al., 2015), with 76 STRA8-bound genes shaded light blue. (B) Comparison of expression levels of meiotic prophase genes in high-STRA8 and KO preleptotene cells. The light gray region identifies genes that are not expressed in the KO. (C) Input-subtracted STRA8 ChIP-seq signal at promoters of key meiotic genes. Sequencing reads were pooled from three Stra8FLAG/FLAG ChIP replicates. Red arrows mark the TSS. (D) Lack of STRA8 ChIP-seq signal at Rec8 gene. (E) STRA8 ChIP-seq signal at its own promoter. (F) STRA8 ChIP-seq signal at promoters of Meioc and Ythdc2..
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Comparison of the gene structures of the mouse Taf7, Taf7l, and 4933416C03Rik (now called Taf7l2) genes. Coding regions are colored, and the 5’ and 3’ untranslated regions are shown in white. Shown are the percent identities, in the coding region, of the nucleotide (nt) and amino acid (aa) sequences. Taf7 is a known functional retrogene of Taf7l (Cheng et al., 2007), and Taf7l2 also appears to be a retrogene of Taf7l. The Taf7l sequence is more similar to that of Taf7l2 than to the Taf7 sequence. (B) Maximum likelihood phylogenetic tree showing evolutionary relationships among genes of the Taf7l family in human, mouse, rat, and hamster. The rodent Taf7l2 genes cluster with rodent Taf7l genes, and no Taf7l2 ortholog was found in human, indicating that Taf7l2 arose from a retrotransposition event in the rodent lineage. (C) Expression level, in TPM units, of Taf7, Taf7l, and Taf7l2 genes in sorted mouse preleptotene cells. All three genes are robustly expressed.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) The fraction of genes with at least one STRA8 motif (CNCCTCAG) at the promoter, at meiotic prophase I genes (Soh et al., 2015) and at all other genes. In both mouse and human, the majority of meiotic genes have CNCCTCAG motifs (exact match) at their promoters. Only genes with known 1:1 orthologs between mouse and human are shown. (B) Comparison of distributions of promoter STRA8 motifs between meiotic prophase I genes and all other genes, in mouse and in human. Meiotic genes are significantly enriched for CNCCTCAG motifs (p<3.5×10−16 and 1.1×10−8 in mouse and human, respectively). P-values between groups were determined by two-tailed Mann-Whitney U tests.
 
 Previous data from fetal ovaries suggested a regulatory logic for the meiotic transcriptional program, with upregulation of most meiotic prophase genes being ‘Stra8-dependent,’ but a select few being completely ‘Stra8-independent’ (Soh et al., 2015). This model predicted STRA8’s direct upregulation of Stra8-dependent genes (e.g. Dmc1, Sycp3, and Hormad1) but not of Stra8-independent genes (e.g. Rec8). We tested these predictions with our STRA8 ChIP-seq data, in the context of male meiosis. All nine genes that had been validated, by single-cell experiments, as Stra8-dependent in female meiosis (Soh et al., 2015) were STRA8-bound in male meiosis, and eight were significantly upregulated at male meiotic initiation. In fact, Dmc1 was directly upregulated 7.3-fold, to 309 TPM (Figure 6C; Supplementary file 3). (The ninth gene, Sycp1, was upregulated by 1.4-fold at FDR q-value = 0.056.) In contrast, the Stra8-independent gene Rec8 (Koubova et al., 2014; Soh et al., 2015) did not have a STRA8 ChIP-seq peak anywhere within 10 kb of its TSS (Figure 6D) and was significantly downregulated (1.6-fold) at meiotic initiation, as was observed in the embryonic ovary (Soh et al., 2015). Rec8 expression thus appears to be completely independent of STRA8. Together, our ChIP-seq and RNA-seq data corroborate the nuanced control of the meiotic prophase transcriptional program, and suggest a similar regulatory logic in female (Soh et al., 2015) and male meiotic transcriptional programs: most but not all of the program is directly amplified by STRA8. We also found that STRA8 directly bound its own promoter (Figure 6E), suggesting a positive feedback loop in upregulation of this gene expression program.
 
@@ -96,13 +160,13 @@ Finally, we observed that, at meiotic initiation, STRA8 binds and upregulates th
 
 Upregulation of meiotic genes likely depends on STRA8 binding to the CNCCTCAG motif. We observed that most meiotic prophase genes have at least one CNCCTCAG motif at the promoter, and that meiotic gene promoters are significantly enriched for CNCCTCAG motifs compared to all other genes (p<3.5×10−16, two-tailed Mann Whitney U test; Figure 6—figure supplement 2A,B). Several meiotic genes had more than six STRA8 binding motifs at their promoters, including 4930447C04Rik/Six6os1 (14 motifs), Pparg (8), M1ap (7), Prdm9 (6), Syce3 (6), and 4933416C03Rik/Taf7l2 (6) (Supplementary file 3). Furthermore, human orthologs of meiotic genes were also enriched for CNCCTCAG motifs (p<1.1×10−8, two-tailed Mann-Whitney U test; Figure 6—figure supplement 2A,B), suggesting that upregulation of meiotic genes by STRA8 binding to the CNCCTCAG motif is conserved in humans.
 
-## Upregulation of cell cycle-associated genes at meiotic initiation
+### Upregulation of cell cycle-associated genes at meiotic initiation
 
 The most enriched GO category in the ensemble of genes upregulated at meiotic initiation by STRA8 was ‘cell cycle,’ raising the possibility that STRA8 also amplifies the expression of general cell-cycle genes that function in both mitotic and meiotic cell cycles. To exclude the possibility that this enrichment was simply due to an enrichment of canonical meiotic prophase genes within the broader ‘cell cycle’ category, we tested this association in two ways. First, we asked whether STRA8-activated genes are enriched for cell-cycle genes after excluding genes associated with the term ‘meiotic cell cycle’. Indeed, non-meiotic cell-cycle genes were still overrepresented among STRA8-activated genes (p<5.0×10−6, one-tailed binomial test with Bonferroni correction; Figure 7A). Next, we compared the STRA8-activated genes with an independently curated list of ~200 genes associated with cellular division, which includes genes extensively studied in non-meiotic contexts that function in DNA replication, cell-cycle regulation, DNA damage, cytokinesis, or at the kinetochore (McKinley and Cheeseman, 2017). STRA8-activated genes were significantly enriched in this curated list (p<9.1×10−9, one-tailed hypergeometric test; Figure 7A), confirming STRA8’s direct role in upregulating a cell cycle-associated program.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/43738/elife-43738-fig7-v1.jpg)
 
-**Figure 7.:** (A) Overlap of STRA8-activated genes at meiotic initiation with cell-cycle associated gene lists. P-value for the non-meiotic cell cycle GO terms was calculated using a binomial test with Bonferroni correction. P-value for overlap with a list of representative cell-cycle genes was calculated using a one-tailed hypergeometric test. (B) Input-subtracted STRA8 ChIP signal showing STRA8 binding at promoters of key G1-S transition genes. Sequencing reads were pooled from the three Stra8 ChIP replicates. (FLAG/FLAGC) Expression changes of key G1-S genes at meiotic initiation. (D) Stra8 ChIP-seq signal at promoters of other key cell-cycle genes. (FLAG/FLAGE) Overlap of STRA8-activated genes with targets of known cell cycle-driving transcription factors. E2F4-, E2F1-, and FOXM1-bound genes were identified from ENCODE consortium ChIP-seq datasets. P-values were obtained by one-tailed hypergeometric tests. (F) Top five known motifs enriched near the TSS of STRA8-activated genes, compared to all other expressed genes. Enrichment of E2F transcription factor motifs suggests STRA8’s role in regulating a cell cycle-associated transcriptional program. Note that the E2F6 motif enrichment could also reflect the known role of E2F6, a non-canonical E2F factor, in regulating the expression of meiotic genes (Kehoe et al., 2008; Pohlers et al., 2005).
+**Figure 7.:** (A) Overlap of STRA8-activated genes at meiotic initiation with cell-cycle associated gene lists. P-value for the non-meiotic cell cycle GO terms was calculated using a binomial test with Bonferroni correction. P-value for overlap with a list of representative cell-cycle genes was calculated using a one-tailed hypergeometric test. (B) Input-subtracted STRA8 ChIP signal showing STRA8 binding at promoters of key G1-S transition genes. Sequencing reads were pooled from the three Stra8FLAG/FLAG ChIP replicates. (C) Expression changes of key G1-S genes at meiotic initiation. (D) Stra8FLAG/FLAG ChIP-seq signal at promoters of other key cell-cycle genes. (E) Overlap of STRA8-activated genes with targets of known cell cycle-driving transcription factors. E2F4-, E2F1-, and FOXM1-bound genes were identified from ENCODE consortium ChIP-seq datasets. P-values were obtained by one-tailed hypergeometric tests. (F) Top five known motifs enriched near the TSS of STRA8-activated genes, compared to all other expressed genes. Enrichment of E2F transcription factor motifs suggests STRA8’s role in regulating a cell cycle-associated transcriptional program. Note that the E2F6 motif enrichment could also reflect the known role of E2F6, a non-canonical E2F factor, in regulating the expression of meiotic genes (Kehoe et al., 2008; Pohlers et al., 2005).
 
 Motivated by previous findings that Stra8 is genetically required for meiotic S phase (Baltus et al., 2006; Dokshin et al., 2013), we asked whether STRA8 directly regulates the G1-S transition of the cell cycle. We found evidence for its upregulation of G1-S regulators and DNA-replication genes. STRA8 bound and amplified by 3.0-fold the expression of E2f1, a key transcription factor that induces G1-S gene expression (Figure 7B,C) (Bracken et al., 2004). STRA8 binding also was associated with significant upregulation of Ccne1 and Ccne2 (Figure 7B,C and Supplementary file 2), which encode cyclins that regulate the cyclin dependent kinase CDK2 at the G1-S transition (Caldon and Musgrove, 2010); Cdk2 itself is also STRA8-activated at meiotic initiation (Figure 7D). Furthermore, STRA8 upregulates components of the pre-replicative complex for DNA replication: members of the origin recognition complex (ORC4 and ORC6), subunits of the replicative helicase (MCM4, MCM5, and MCM6), and CDC6. Genes that encode DBF4 and CDC7, which together stimulate the MCM complex to initiate DNA replication, are also upregulated by STRA8 (Figure 7D and Supplementary file 2).
 
@@ -128,19 +192,484 @@ The far-reaching role of a common factor – STRA8 – in coordinating broad tra
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Stimulated by retinoic acid 8 (Stra8)</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:107917</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6</td>
+      <td>Taconic</td>
+      <td>TAC: B6-F</td>
+      <td>C57BL/6NTac</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6/129</td>
+      <td>Taconic</td>
+      <td>TAC: B6129-F</td>
+      <td>B6129F1/Tac</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>CD-1</td>
+      <td>Charles River Laboratories</td>
+      <td>CRL: 022</td>
+      <td>Crl:CD1(ICR)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Stra8FLAG</td>
+      <td>this paper</td>
+      <td></td>
+      <td>FLAG-tagged knock-in allelegenerated by CRISPR/Cas9</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Stra8Δ121</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Stra8 allele with a121-bp deletion generated by CRISPR/Cas9</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Stra8-deficient allele, Stra8-</td>
+      <td>The JacksonLaboratory</td>
+      <td>JAX: 023805; MGI:3622304</td>
+      <td>Stra8tm1Dcp</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ddx4-Cre</td>
+      <td>PMID:23858447</td>
+      <td>MGI:5554579</td>
+      <td>Ddx4tm1.1(cre/mOrange)Dcp'</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26-tdTomato</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 007914</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>v6.5 embryonic stem cells</td>
+      <td>other</td>
+      <td>RRID:CVCL_C865</td>
+      <td>Jaenisch Lab, Whitehead Institute</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>CF6Neo Mouse Embryonic Fibroblasts (MEF), Mitomycin C Treated</td>
+      <td>MTI-GlobalStem</td>
+      <td>GlobalStem:GSC-6105M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STRA8 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab49405; RRID:AB_945677</td>
+      <td>(IF 1:250; IHC 1:500: WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STRA8 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab49602; RRID:AB_945678</td>
+      <td>(IF 1:250; IHC 1:500: WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG M2 (mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:F1804; RRID:AB_262044</td>
+      <td>(IHC 1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG M2, HRP-conjugated (mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:A8592; RRID: AB_439702</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DMC1 H100 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SantaCruz:sc-22768; RRID:AB_2277191</td>
+      <td>(IF 1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SCP3 D-1 (mouse monoclonal)</td>
+      <td>Santa CruzBiotechnology</td>
+      <td>SantaCruz:sc-74569; RRID:AB_2197353</td>
+      <td>(IF 1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-histone H2AX (Ser139), clone JBW301 (mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:05–636; RRID:AB_309864</td>
+      <td>(IF1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DDX4/MVH (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>R and D Systems:AF2030; RRID:AB_2277369</td>
+      <td>(IF 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha tubulin, HRP-conjugated (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab40742; RRID:AB_880625</td>
+      <td>(WB 1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat Alexa Flour 488 (donkey polyclonal)</td>
+      <td>JacksonImmunoResearch</td>
+      <td>JacksonImmunoResearch:705-546-147</td>
+      <td>(IF 1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Rhodamine Red-X (RRX) (donkey polyclonal)</td>
+      <td>JacksonImmunoResearch</td>
+      <td>JacksonImmunoResearch:711-295-152</td>
+      <td>(IF 1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Cy5 (donkey polyclonal)</td>
+      <td>JacksonImmunoResearch</td>
+      <td>JacksonImmunoResearch:715-175-150</td>
+      <td>(IF 1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit, peroxidase -conjugated (donkey polyclonal)</td>
+      <td>JacksonImmunoResearch</td>
+      <td>JacksonImmunoResearch:711-035-152</td>
+      <td>(WB 1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-U6-Chimeric_BB- CBh-hSpCas9 (plasmid)</td>
+      <td>Addgene</td>
+      <td>Addgene:42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>primers and oligonucleotides used in this study</td>
+      <td>this paper</td>
+      <td></td>
+      <td>All primers and oligonucleotides used in this study are available in Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N′-Octamethylenebis(2,2-dichloroacetamide) [Win18,446]</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SantaCruz:sc-295819</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinoic acid</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:R2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTX Toolkit</td>
+      <td>other</td>
+      <td>RRID:SCR_005534</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie1 (v.1.2.0)</td>
+      <td>PMID:19261174</td>
+      <td>RRID:SCR_005476</td>
+      <td>http://bowtie-bio.sourceforge.net/index.shtml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools (v1.5)</td>
+      <td>PMID:19505943</td>
+      <td>RRID:SCR_002105</td>
+      <td>http://samtools.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2 (v2.1.1.20160309)</td>
+      <td>PMID:18798982</td>
+      <td>RRID:SCR_013291</td>
+      <td>https://github.com/taoliu/MACS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>htseq count (v0.8.0)</td>
+      <td>PMID:25260700</td>
+      <td>RRID:SCR_011867</td>
+      <td>https://htseq.readthedocs.io</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto (v0.43.0)</td>
+      <td>PMID:27043002</td>
+      <td>RRID:SCR_016582</td>
+      <td>https://pachterlab.github.io/kallisto/about</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 (v1.18.1)</td>
+      <td>PMID:25516281</td>
+      <td>RRID:SCR_015687</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PANTHER (v13.1)</td>
+      <td>PMID:27899595</td>
+      <td>RRID:SCR_004869</td>
+      <td>http://www.pantherdb.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER (v4.9.1)</td>
+      <td>PMID: 20513432</td>
+      <td>RRID:SCR_010881</td>
+      <td>http://biowhat.ucsd.edu/homer/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools (v2.5.3)</td>
+      <td>PMID:27079975</td>
+      <td>RRID:SCR_016366</td>
+      <td>http://deeptools.readthedocs.io/en/latest/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio v1.1.414</td>
+      <td>RStudio</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHYLIP (v3.66)</td>
+      <td>Other</td>
+      <td>RRID:SCR_006244</td>
+      <td>Distributed by J Felsenstein. http://evolution.genetics.washington.edu/phylip.html</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Periodic Acid-Schiff (PAS) Kit</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:395B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse on Mouse ImmPRESS HRP (Peroxidase) Polymer Kit</td>
+      <td>VECTOR Laboratories</td>
+      <td>VectorLabs:MP2400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImmPRESS HRP Anti-Rabbit IgG (Peroxidase) Polymer Detection Kit, made in Horse</td>
+      <td>VECTOR Laboratories</td>
+      <td>VectorLabs:MP-7401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ThermoFisher:AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAshortscript T7 Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ThermoFisher:AM1354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAclear Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ThermoFisher:AM1908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChIP DNA Clean and Concentrator Kit</td>
+      <td>Zymo Research</td>
+      <td>Zymo:D5205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq ChIP Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Illumina:IP-202–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Accel-NGS 2S Plus DNA Library Kit</td>
+      <td>Swift Biosciences</td>
+      <td>SwiftBio:21024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>Illumina:20020594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hematoxylin</td>
+      <td>Life Technologies</td>
+      <td>LifeTech:008011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2.5% Normal Horse Serum Blocking Solution</td>
+      <td>VECTOR Laboratories</td>
+      <td>VectorLabs:S-2012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ImmPACT DAB Peroxidase (HRP) Substrate</td>
+      <td>VECTOR Laboratories</td>
+      <td>VectorLabs:SK-4105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal donkey serum</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>JacksonImmunoResearch:017000121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VECTASHIELD Antifade Mounting Media for Fluorescence</td>
+      <td>VECTOR Laboratories</td>
+      <td>VectorLabs:H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagenase, Type I</td>
+      <td>Worthington Biochemical</td>
+      <td>Worthington:LS004196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hyaluronidase</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:H3506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNaseI</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:D5025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Benzonase Nuclease</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:70664–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protease inhibitor, EDTA Free</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma: 11836170001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ESGRO Recombinant Mouse LIF Protein</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:ESG1107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G for Immunoprecipitation</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ThermoFisher:10004D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lumi-Light Western Blotting Substrate</td>
+      <td>MilliporeSigma</td>
+      <td>MilliporeSigma:12015200001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DirectPCR Lysis Reagent (Mouse Tail)</td>
+      <td>Viagen Biotech</td>
+      <td>Viagen:102 T</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mouse experiments were approved by the Massachusetts Institute of Technology (MIT) Division of Comparative Medicine, which is overseen by the MIT Institutional Animal Care and Use Committee (IACUC). For embryonic gonad collection, females were housed with males overnight, and 12:00 p.m. (noon) of the day the vaginal plug was observed was considered to be embryonic day 0.5. To generate Stra8FLAG/FLAG mice, we either mated Stra8FLAG/FLAG homozygous mice to each other or mated Stra8+/FLAG heterozygous mice to each other. To generate Stra8 Δ121/Δ121 mice, which do not express the long STRA8 isoform, Stra8+/Δ121 heterozygous mice were mated to each other. Stra8FLAG and Stra8 Δ121 alleles used in phenotypic characterizations of Stra8FLAG/FLAG and Stra8 Δ121/Δ121 mice were backcrossed to C57BL/6NTac (B6) for at least seven generations (>99.5% B6); ChIP data were generated from mice that were >96% B6. For lineage sorting of germ cells, we used the Ddx4Cre allele (official allele name Ddx4tm1.1(cre/mOrange)Dcp) (Hu et al., 2013), backcrossed at least nine generations to B6, and the Rosa26tdTomato allele (B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J from the Jackson Laboratory, Bar Harbor, ME) (Madisen et al., 2010), backcrossed at least 10 generations to B6. The Stra8tm1Dcp allele (Baltus et al., 2006) was backcrossed to B6 at least 28 generations to generate Stra8-deficient (Stra8-/-) mice. B6 and B6129F1/Tac (B6/129) mice were obtained from Taconic Biosciences (Rensselaer, NY), and Crl:CD1(ICR) (CD-1) mice were obtained from Charles River Laboratories (Wilmington, MA).
 
-## Mouse genotyping
+### Mouse genotyping
 
 An ear biopsy (for postnatal mice) or a tail piece (from embryonic samples) was lysed in DirectPCR Lysis Reagent (Mouse Tail) (Viagen Biotech, Los Angeles, CA) supplemented with 400 μg/mL Proteinase K at 55°C overnight and then incubated at 85°C for 45 min. This crude lysate was used for genotyping by PCR with the primers listed in Supplementary file 6.
 
-## Generation of Stra8FLAG and Stra8 Δ121 alleles
+### Generation of Stra8FLAG and Stra8 Δ121 alleles
 
 Modified Stra8 mouse alleles were generated by one-cell embryo injection of CRISPR/Cas9 reagents, following published protocols (Wang et al., 2013; Yang et al., 2013). Briefly, an oligonucleotide pair targeting exon 2 of Stra8 was cloned into the guide RNA (gRNA) cassette of the vector pX330 (Addgene, Cambridge, MA), which also contains a Cas9 expression cassette (Cong et al., 2013). gRNA and Cas9 RNAs were transcribed in vitro using the MEGAshortscript T7 kit (Thermo Fisher, Waltham, MA) and mMESSAGE mMACHINE T7 ULTRA kit (Thermo Fisher), respectively, and purified using the MEGAclear kit (Thermo Fisher). RNAs were eluted in RNase free water. To obtain embryos for injection, superovulated female B6/129 mice (~9 weeks of age) were mated to B6 stud males. Fertilized one-cell embryos were injected cytoplasmically with a mixture of gRNA (50 ng/μL), Cas9 (50 ng/μL), and a 200 bp single-stranded oligo (100 ng/μL) for homology directed repair (HDR) following Cas9-mediated double-strand break (DSB) formation. This oligo, ordered as an Ultramer DNA oligo from Integrated DNA Technologies (Coralville, IA), encodes a FLAG peptide and an 8-aa linker sequence (GSGSGSGS), flanked on both sides by ~75 bp of sequence homologous to the Stra8 locus. The injected embryos were cultured at 37°C under 5% CO2 until 3.5 days post coitum (dpc), at which time they were at blastocyst stage. These blastocysts were transferred into the uteri of 2.5-dpc pseudopregnant CD-1 females. Genotyping of post-natal mice was performed by PCR amplification followed by sequencing, which confirmed the generation of the mutant Stra8 alleles: Stra8FLAG (by successful repair of the Cas9-mediated DSB by HDR with the oligo) and Stra8Δ121 (by repair of the DSB with non-homologous end joining, resulting in a 121 bp deletion). See Supplementary file 6 for a list of oligos and primers used.
 
-## Histological analysis
+### Histological analysis
 
 Dissected tissues were fixed in Bouin’s solution at room temperature (3 hr or overnight) or in 4% (wt/vol) paraformaldehyde at 4°C (overnight). Fixed tissues were embedded in paraffin and sectioned to 5 μm thickness. Slides were dewaxed in xylenes, rehydrated with an ethanol gradient, and heated in citrate buffer (10 mM sodium citrate, 0.05% Tween 20, pH 6.0) in the microwave.
 
@@ -148,13 +677,13 @@ For fluorescent detection, slides were first blocked with 5% donkey serum (Jacks
 
 For colorimetric detection of STRA8, slides were treated with 3% hydrogen peroxide for 10 min, blocked with 2.5% horse serum (Vector Laboratories), and incubated for 30 min at room temperature with primary antibodies (ab49405, Abcam; ab49602, Abcam) diluted 1:500 in 2.5% horse serum. The slides were then washed with PBS, incubated with ImmPRESS peroxidase-conjugated secondary antibodies (Vector Laboratories), and incubated with DAB substrate (Vector Laboratories). For detection with a mouse antibody, the Mouse on Mouse ImmPRESS kit (Vector Laboratories) was used following manufacturer’s instructions, with a 1:200 dilution of the FLAG M2 antibody (F1804, MilliporeSigma). Slides were counterstained with periodic acid-Schiff (MilliporeSigma), and/or with Mayer's hematoxylin (Thermo Fisher Scientific). Slides were dehydrated and mounted with Permount (Thermo Fisher Scientific).
 
-## Spermatogenesis synchronization
+### Spermatogenesis synchronization
 
 Synchronization of spermatogenesis for 2S and 3S was performed following a synchronization protocol (Hogarth et al., 2013) that was subsequently modified (Romer et al., 2018). Briefly, male mice were injected daily from postnatal day (P) two to P8 with WIN18,446 (Santa Cruz Biotechnology; 0.1 mg/gram body weight) and on P9 with retinoic acid (RA) (MilliporeSigma; 0.0125 μg/gram body weight). All injections were performed subcutaneously over the shoulders. Mice were euthanized ~6.75 days (d) after the RA injection to obtain testes enriched for preleptotene cells. Each pair of synchronized testes yielded roughly five million cells. From each mouse, a small tissue biopsy was reserved for histology to confirm proper enrichment of preleptotene stage spermatocytes, and the rest was used for ChIP-seq or cell sorting followed by RNA-seq.
 
 To quantify the extent of preleptotene cell enrichment, testis tissue was fixed in Bouin’s solution for 3 hr. Testis sections were stained with STRA8 antibody (Abcam ab49405) and counter-stained with hematoxylin. For each sample, all cells in five microscope fields (100X magnification) were counted and classified according to morphology (Russell, 1990) and STRA8 expression status. The fraction of all cells that are STRA8-expressing preleptotene cells was obtained by dividing the number of preleptotene cells with robust STRA8 staining by the total number of cells (somatic and germ cells combined).
 
-## Estimating the fraction of cells initiating meiosis in the adult testis
+### Estimating the fraction of cells initiating meiosis in the adult testis
 
 The fraction of all cells in the unperturbed adult testis that are STRA8-expressing preleptotene spermatocytes was estimated using known parameters for testis cell-type composition and the duration of various states within germ-cell development. First, the total number of cells in an adult mouse testis was estimated by summing the numbers of individual testis cell types (from Tegelenbosch and de Rooij, 1993: 3×106 Sertoli cells, 2.8×106 spermatogonia, 25×106 spermatocytes, 99×106 spermatids; from Vergouwen et al., 1993: 3.5×106 interstitial cells), yielding 133.3×106 cells per testis. Spermatocytes comprise 18.8% of this total.
 
@@ -162,25 +691,25 @@ Next, the proportion of preleptotene spermatocytes among all spermatocytes was e
 
 Finally, the proportion of cells expressing STRA8 among all preleptotene cells was estimated. STRA8-positive spermatocytes are found in 0% of stage VI tubules, 71% of stage VII tubules, and 100% of stage VIII tubules (Endo et al., 2015). The duration of STRA8 expression can be estimated as (0.71 × (length of stage VII)) + (0.5 × (length of stage VIII)) = ~25 hr. Thus, STRA8-positive cells represent 25/40 = 62.5% of all preleptotene cells. The total number of STRA8-expressing preleptotene cells is therefore 0.625 × 3.0×106 = 1.88×106 per testis. We use these numbers to estimate that STRA8-expressing preleptotene spermatocytes comprise 1.88×106 /133.3×106 = ~1.4% of all cells in the adult testis.
 
-## Isolation of sorted preleptotene cells
+### Isolation of sorted preleptotene cells
 
 Purified preleptotene cell populations for RNA-seq were obtained following the ‘3S’ protocol (Romer et al., 2018). With this system, the estimated purity of sorted preleptotene cells is ~90%. Germ-cell lineage sorting was achieved with the Ddx4Cre and Rosa26tdTomato alleles: Rosa26tdTomato contains a loxP-STOP-loxP-tdTomato construct at the endogenous Rosa26 locus, such that the STOP codon is excised in the presence of Cre recombinase. When combined with the Ddx4Cre allele, the Rosa26tdTomato allele yields mice with tdTomato expression only in germ cells. We mated Ddx4Cre/+Stra8+/- mice with Rosa26tdTomato/tdTomato Stra8+/- mice, and we then treated their male offspring with WIN18,446/RA to synchronize spermatogenesis. We used synchronized testes from Ddx4Cre/+Rosa26tdTomato/+ mice that were either heterozygous (Stra8+/-) or homozygous (Stra8-/-) for the Stra8-deficient allele. Testes were collected ~6.75 d after injecting RA and reduced to a single-cell suspension using collagenase, trypsin, and DNaseI. DAPI was added to cells prior to cell sorting on the FACSAria SORP (BD Biosciences, San Jose, CA). Single cells were first gated based on light scatter (forward and side scatter), and high DAPI fluorescence (dead) cells were excluded. We then used tdTomato fluorescence intensity to sort only the preleptotene stage spermatocytes.
 
-## Cell culture
+### Cell culture
 
 v6.5 embryonic stem cells (ESCs) were cultured at 37°C in 5% CO2 in Dulbecco’s modified Eagle’s medium supplemented with 15% fetal bovine serum, 2 mM L-glutamine, 0.1 mM non-essential amino acids, 1% penicillin/streptomycin, 0.1 mM β–mercaptoethanol, and 1,000 U/mL leukemia inhibitory factor (ESGRO, MilliporeSigma). Cells were initially cultured on mitocyin C-treated CF6Neo mouse embryonic fibroblasts (MTI-GlobalStem). To induce STRA8 expression, ESCs were transferred to gelatin-coated culture dishes and treated with culture medium containing 10 μM retinoic acid dissolved in DMSO. For an uninduced negative control, an equivalent volume of DMSO was added to the culture medium.
 
-## Immunoblotting
+### Immunoblotting
 
 To prepare protein lysates, testes (snap frozen in liquid nitrogen and subsequently thawed) or ESCs were homogenized in lysis buffer [50 mM HEPES (pH 7.4), 1 mM EGTA, 1 mM MgCl2, 100 mM KCl, 10% glycerol, 0.05% NP-40] supplemented with EDTA-free protease inhibitor (Roche Diagnostics, Risch-Rotkreuz, Switzerland) and Benzonase nuclease (MilliporeSigma), incubated at 4°C with rotation for 30 min, and then centrifuged at 20000 g for 15 min at 4°C. The soluble fraction was used as the lysate. Proteins were denatured in sample buffer for 10 min at 70°C, resolved on a NuPAGE 4–12% Bis-Tris gel (Thermo Fisher Scientific), and transferred to a nitrocellulose membrane. The membrane was blocked in 5% BSA/Tris-buffered saline containing 0.1% Tween-20 (TBST) for 1 hr at room temperature and then incubated with a primary antibody solution prepared in 5% BSA/TBST. STRA8 antibodies (ab49602 or ab49405, Abcam) were used at a 1:1000 dilution with an overnight incubation at 4°C, followed by a 1 hr room-temperature incubation with a 1:5000 dilution of a peroxidase-conjugated anti-rabbit secondary antibody (Jackson ImmunoResearch). Primary antibody incubation with FLAG-HRP (1:1000; A8592, MilliporeSigma) was performed overnight at 4°C. Incubation with alpha tubulin-HRP (1:5000; ab40742, Abcam) was performed at room temperature for 1 hr. Proteins on the membranes were detected by addition of Lumi-Light Western Blotting Substrate (Roche).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 ChIP-seq was performed using a modification of a small-scale ChIP protocol described previously (Lesch et al., 2013). Synchronized testes were dissected into PBS and dissociated into a single-cell suspension in 0.25% trypsin + 0.1 mM EDTA with collagenase (type 1) (Worthington Biochemical, Lakewood, NJ) and 0.1% hyaluronidase (MilliporeSigma). Dissociated cells were washed in PBS and crosslinked for 8 min in 1% formaldehyde at room temperature. Crosslinking was quenched by addition of glycine (to a concentration of 0.125 M) for 5 min at room temperature. Cell pellets were frozen at −80°C. To perform ChIP, frozen cell pellets were thawed on ice for 5 min and resuspended in 100 μL of ChIP lysis buffer [1% SDS, 10 mM EDTA, 50 mM Tris-HCl (pH 8.1)]. ChIP dilution buffer [0.01% SDS, 1.1% (vol/vol) Triton X-100, 1.2 mM EDTA, 16.7 mM Tris-HCl (pH 8.1), 167 mM NaCl] was then added to achieve a total volume of 300 μL. Samples were sonicated in a Bioruptor (Diagenode, Liege, Belgium) for 12 min, 30 s on/30 s off. For each, the volume was then brought up to 1 mL with dilution buffer plus protease inhibitors, and 50 μL of this reaction was set aside as an input chromatin control. To prepare antibody-bound beads for ChIP, 25 μL of Dynabeads Protein G (Thermo Fisher) were washed three times in block solution (0.5% BSA in PBS), resuspended in 100 μL of block solution, and incubated with antibody [2.5 μg of FLAG M2 antibody (F1804, MilliporeSigma)] for 8 hr at 4°C with rotation. These beads were then washed three times in 200 μL of block solution, resuspended in 50 μL dilution buffer, and added to sonicated chromatin. The immunoprecipitation reactions were incubated overnight, rotating, at 4°C. After overnight incubation, beads were washed two times in 700 μL low-salt immune complex wash buffer [0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl (pH 8.1), 150 mM NaCl], two times in LiCl wash buffer [0.25 M LiCl, 1% Nonidet P-40, 1% deoxycholate, 1 mM EDTA, 10 mM Tris·HCl (pH 8.1)], and two times in TE (10 mM Tris-HCl, 1 mM EDTA, pH 8.0). Unbound fractions were used to evaluate fragmentation. Bound chromatin was eluted twice (for 10 min each elution) in 125 μL elution buffer (0.2% SDS, 0.1 M NaHCO3, 5 mM DTT in TE) at 65°C. Crosslinking was reversed by incubation for 8 hr at 65°C with 400 rpm shaking. ChIP and input samples were treated with 0.2 mg/mL RNase A for 2 hr at 37°C and with 0.1 mg/mL proteinase K for 2 hr at 55°C. The DNA samples (from ChIP and input chromatin) were purified using the ChIP Clean and Concentrator kit (Zymo Research, Irvine, CA) and eluted in 13 μL of the kit’s elution buffer.
 
 ChIP-seq with the FLAG antibody was performed on three biological replicates for each condition (Stra8+/+ and Stra8FLAG/FLAG) with ~5 million cells for each replicate. For ChIP-seq, we chose our sample size of three replicates before beginning our study, because this number exceeds the suggested ENCODE guideline of two replicates. To minimize batch-specific variation, each Stra8FLAG/FLAG ChIP replicate was processed in parallel with a Stra8+/+ ChIP replicate: the two ChIP experiments were performed in parallel, the sequencing libraries (from the two samples and their corresponding two input controls) were prepared in parallel, and a pool of the four barcoded libraries was run on a single flow cell. The three biological replicates were processed in three different batches. Libraries for ChIP samples and input controls were prepared using the TruSeq ChIP Sample Preparation Kit (Illumina, San Diego, CA) (replicates 1 and 2) or the Accel-NGS 2S Plus DNA Library Kit (Swift Biosciences, Ann Arbor, MI) (replicate 3) according to the manufacturer’s instructions. The sequencing libraries were sequenced with 40 bp or 80 bp single-end reads on an Illumina HiSeq 2500 machine.
 
-## Data analysis: ChIP-seq
+### Data analysis: ChIP-seq
 
 For ChIP-seq analysis, low-quality sequencing reads were filtered out using the FASTX-Toolkit v0.0.14 (http://hannonlab.cshl.edu/fastx_toolkit/index.html), and reads were trimmed to 40 bp. Remaining reads were aligned to the mm10 mouse genome using bowtie1 v1.2.0, allowing one mismatch per read (Langmead et al., 2009). For every ChIP-seq replicate, peaks of read density were identified using MACS2 v2.1.1.20160309 (Zhang et al., 2008) using the corresponding input chromatin as the control sample and the default P-value cutoff of 1×10−5. Peaks overlapping blacklist regions (Supplementary file 5) were then removed. To determine whether peaks were associated with transcript start sites (TSSs), TSS coordinates were downloaded from Ensembl (release 90, GRCm38.p5), considering only protein-coding transcripts on the reference chromosomes belonging to the ‘GENCODE basic’ annotation. The TSS for the germ-cell gene Gcna (Carmell et al., 2016) (Genbank accession number KX981576.1, TSS at chrX:101,695,571) was added. A peak was associated with a TSS if the summit of the peak (defined by MACS2) was located within one kilobase (kb) of the TSS (either upstream or downstream). If a peak summit was within 1 kb of multiple TSSs, the peak was assigned to all associated transcripts.
 
@@ -194,38 +723,38 @@ To visualize the input-subtracted normalized ChIP-seq signal, we generated a big
 
 To determine whether the promoters of STRA8-bound genes were enriched for CpG islands (CGIs), the coordinates of CpG islands in the mouse genome (mm10) were downloaded using the UCSC Table Browser (Karolchik et al., 2004) at http://genome.ucsc.edu/. A gene was considered to have a CGI promoter if a CGI overlapped the 2 kb window surrounding the TSS for at least one of its transcripts.
 
-## RNA-seq sample preparation
+### RNA-seq sample preparation
 
 For RNA extraction, preleptotene cells were sorted into 500 μL of PBS with 1% BSA, plus 3.5 μL of RNAseOut (Thermo Fisher). RNA extraction was performed using a QIAshredder homogenizer (Qiagen, Hilden, Germany) and RNeasy Plus Micro kit (Qiagen), and RNA was eluted in 14 μL of RNase-free water. Prior to library preparation, RNA was stored at −80°C so that all RNA-seq libraries could be prepared together. RNA-seq libraries were prepared with the TruSeq Stranded mRNA kit (Illumina) with poly-A selection. To avoid batch effects, all seven barcoded libraries were pooled together, and this pool was sequenced with 40 bp single-end reads across two flow-cell lanes on an Illumina HiSeq 2500 machine. For each library, sequencing reads from the two lanes were combined prior to data analysis.
 
-## Data analysis: RNA-seq
+### Data analysis: RNA-seq
 
 For RNA-seq analysis, high-quality reads were first filtered using the FASTX-Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/index.html). Expression levels of all transcripts in the Ensembl release 90 annotation (GENCODE basic subset, with the addition of mouse Gcna [Genbank accession KX981576.1]) were estimated using Kallisto v0.43.0 (Bray et al., 2016) with sequence-bias correction. Expression levels for protein-coding transcripts on reference chromosomes (mm10) were extracted, summed by gene using tximport v1.6.0 (Soneson et al., 2016), and re-normalized to transcript-per-million (TPM) units. To calculate fold-changes in expression level between different genotypes/conditions, the estimated count values from kallisto were supplied to DESeq2 v1.18.1 (Love et al., 2014) with default parameters. An FDR cutoff of q < 0.05 was used to determine statistically significant gene expression changes.
 
 To calculate the degree of testis-biased expression for each gene, RNA-seq datasets from Merkin et al. (2012) were downloaded for nine adult mouse tissues: brain, colon, heart, kidney, liver, lung, skeletal muscle, spleen, and testis. Expression levels for all cDNA transcripts annotated in Ensembl release 84 were estimated with kallisto. Genes from Ensembl release 84 were matched to genes in release 90 by Ensembl gene ID. The expression level of each gene in each tissue was estimated as its median expression level (in TPM units) across three individuals. A gene was considered to be testis-biased if its expression level in the testis was greater than its summed expression level across the eight remaining tissues (i.e., TPM in the testis > 0.5 of summed TPM values across all tissues).
 
-## Data analysis: ENCODE ChIP-seq datasets
+### Data analysis: ENCODE ChIP-seq datasets
 
 To identify potential enhancer sites, we downloaded replicated H3K4me1 peaks from adult mouse testis from the ENCODE Consortium (ENCODE Project Consortium, 2012) and removed peaks that overlap blacklist regions. H3K4me1 peaks were called as enhancer sites if they did not overlap the promoters of protein-coding genes, which were defined as the 2 kb window surrounding the TSS. TSS coordinates were the same as those in the STRA8 ChIP-seq analysis.
 
 To identify cell-cycle transcription factor targets, ENCODE ChIP-seq data for E2F4 (mouse), E2F1 (human), and FOXM1 (human) were used. To obtain a high-confidence list of target genes, we downloaded the coordinates of IDR-thresholded peaks (optimal or pseudoreplicated), removed any peaks that overlapped blacklist regions, and identified the transcripts whose promoters overlapped the summits of the ChIP-seq peaks. For human, all hg19 genome coordinates were first converted to GRCh38 coordinates using the UCSC Genome Browser LiftOver tool. Peaks were mapped to transcripts/genes using TSS coordinates downloaded from Ensembl release 90 (GRCh38.p10), limiting the analysis to protein-coding transcripts on the reference chromosomes in the ‘GENCODE basic’ annotation. One-to-one mouse orthologs of human genes were identified using the BioMart database (Smedley et al., 2015) (Ensembl release 90). See Supplementary file 5 for the list of ENCODE datasets used.
 
-## Gene list analysis
+### Gene list analysis
 
 Gene Ontology analysis was performed with PANTHER over-representation test v13.1 (Mi et al., 2017) to identify biological processes that are enriched among the 1,351 STRA8-activated genes compared to a background list of 12,545 preleptotene-expressed genes (all genes expressed at TPM > 1 in at least one of the seven preleptotene samples). P-values for overrepresentation were calculated using one-tailed binomial tests with Bonferroni correction. To determine whether non-meiotic cell cycle genes were overrepresented, a custom Gene Ontology category was generated by subtracting all terms that mapped to the process ‘meiotic cell cycle’ (GO: 0051321) from the terms that mapped to the process ‘cell cycle’ (GO: 0007049). To determine whether STRA8-activated genes are enriched for representative cell-cycle genes, we used the one-to-one mouse orthologs of the human cell-cycle genes in Table S2 from McKinley and Cheeseman (2017). The P-value for this enrichment was calculated using a one-tailed hypergeometric test.
 
-## Motif analysis
+### Motif analysis
 
 DNA motifs enriched in target genomic regions were identified using the HOMER motif discovery software package v4.9.1 (Heinz et al., 2010) with the mm10 genome configuration v5.10. Motif scores were calculated using the binomial distribution. To identify motifs enriched at the STRA8 binding sites, we first pooled all sequencing reads from the three Stra8FLAG/FLAG ChIP-seq samples, identified peaks of binding using MACS2 (Zhang et al., 2008) v2.1.1.20160309 at a P-value cutoff of < 1×10−5, and then identified all peak summits that were at the promoter (within 1 kb of the TSS) of the 1,351 STRA8-activated genes. The findMotifsGenome tool was used to identify motifs de novo that were enriched among the 100 bp windows surrounding these summits (50 bp on each side of the summit); for this analysis, the background set consisted of 100 bp sequences that were matched for GC-content. For identification of motifs enriched near the TSS (−200 bp to +200 bp) of the STRA8-activated genes, the findMotifs.pl tool was used, using a target gene list of the 1,351 STRA8-activated genes and a background list of all other genes expressed in preleptotene samples. To determine the number of motifs at a gene’s promoter, we used the scanMotifGenomeWide.pl tool to determine all locations of the motif across the genome and counted the number of motif instances at the promoter (2 kb surrounding the TSS) for each annotated transcript. For genes associated with multiple transcripts, we used the motif count from the transcript with the most promoter motifs. To determine the number of promoter motifs at human genes, one-to-one human orthologs of mouse genes were identified using the BioMart database (Smedley et al., 2015) (Ensembl release 90).
 
-## Statistical tests
+### Statistical tests
 
 Statistical tests were conducted using RStudio v1.1.414 as described here, unless otherwise noted. Overlaps of gene lists were computed using one-tailed hypergeometric tests. Analysis of contingency tables was conducted using Fisher’s exact tests. One- or two-sided Mann-Whitney U tests (Wilcoxon rank sum tests) were used to determine if values from one sample are higher or lower than values from a second sample. Correlations among ChIP-seq and RNA-seq biological replicates were assessed with the Pearson correlation coefficient. The correlation between motif count and ChIP-seq score was calculated using the Spearman correlation coefficient; the P-value for this correlation was obtained by permutation testing. All box plots show sample medians and interquartile ranges (IQRs), with whiskers extending no more than 1.5 × IQR and outliers suppressed.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Nucleotide and amino acid percent identities were calculated using BLAST (NCBI). Phylogenetic trees were constructed using open reading frame sequences. Sequences used for the tree are available in Supplementary file 4. Maximum likelihood tree lengths were calculated using the DNAML program from the PHYLIP package, version 3.66.
 
-## Data availability
+### Data availability
 
 The ChIP-seq and RNA-seq data generated in this study are available at NCBI Gene Expression Omnibus (accession number GSE115928). Gene lists generated in this study, including lists of genes differentially expressed at meiotic initiation, STRA8-bound genes, and STRA8-activated genes are available in Supplementary file 1. RNA-seq results and STRA8 binding status for all protein-coding genes are available in Supplementary file 2, as are the numbers of CNCCTCAG promoter motifs for all genes. Data for a meiotic prophase gene list described previously (Soh et al., 2015) are available in Supplementary file 3.
